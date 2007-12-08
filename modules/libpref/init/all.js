@@ -1457,6 +1457,7 @@ pref("javascript.options.ion",              true);
 pref("javascript.options.ion.threshold",    1000);
 //Duplicated in JitOptions - ensure both match.
 pref("javascript.options.ion.frequent_bailout_threshold", 10);
+pref("javascript.options.showInConsole",    true);
 pref("javascript.options.asmjs",            true);
 pref("javascript.options.wasm",             true);
 pref("javascript.options.wasm_ionjit",      true);
