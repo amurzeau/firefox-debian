@@ -7331,7 +7331,7 @@
 # interpretation of physical units such as "pt".
 - name: layout.css.dpi
   type: int32_t
-  value: -1
+  value: 0
   mirror: always
 
 # Whether non-standard caption-side values are enabled
