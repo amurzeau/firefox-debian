@@ -2863,7 +2863,7 @@ pref("layout.css.report_errors", true);
 // A value of 0 means use the system DPI. A positive value is used as the DPI.
 // This sets the physical size of a device pixel and thus controls the
 // interpretation of physical units such as "pt".
-pref("layout.css.dpi", -1);
+pref("layout.css.dpi", 0);
 
 // Set the threshold distance in CSS pixels below which scrolling will snap to
 // an edge, when scroll snapping is set to "proximity".
