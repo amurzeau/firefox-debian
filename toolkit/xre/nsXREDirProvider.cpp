@@ -765,6 +765,7 @@ static const char* const kAppendPrefDir[] = {"defaults", "preferences",
 static const char* const kAppendBackgroundTasksPrefDir[] = {
     "defaults", "backgroundtasks", nullptr};
 #endif
+static const char *const kAppendSysPrefDir[] = { "defaults", "syspref", nullptr };
 
 nsresult nsXREDirProvider::GetFilesInternal(const char* aProperty,
                                             nsISimpleEnumerator** aResult) {
@@ -781,6 +782,7 @@ nsresult nsXREDirProvider::GetFilesInternal(const char* aProperty,
       LoadDirIntoArray(mXULAppDir, kAppendBackgroundTasksPrefDir, directories);
     }
 #endif
+    LoadDirIntoArray(mXULAppDir, kAppendSysPrefDir, directories);
 
     rv = NS_NewArrayEnumerator(aResult, directories, NS_GET_IID(nsIFile));
   } else if (!strcmp(aProperty, NS_APP_CHROME_DIR_LIST)) {
