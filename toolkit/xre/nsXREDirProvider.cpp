@@ -848,6 +848,7 @@ static nsresult DeleteDirIfExists(nsIFile* dir) {
 
 static const char* const kAppendPrefDir[] = {"defaults", "preferences",
                                              nullptr};
+static const char *const kAppendSysPrefDir[] = { "defaults", "syspref", nullptr };
 
 #ifdef DEBUG_bsmedberg
 static void DumpFileArray(const char* key, nsCOMArray<nsIFile> dirs) {
@@ -879,6 +880,7 @@ nsresult nsXREDirProvider::GetFilesInternal(const char* aProperty,
 
     LoadDirIntoArray(mXULAppDir, kAppendPrefDir, directories);
     LoadDirsIntoArray(mAppBundleDirectories, kAppendPrefDir, directories);
+    LoadDirIntoArray(mXULAppDir, kAppendSysPrefDir, directories);
 
     rv = NS_NewArrayEnumerator(aResult, directories, NS_GET_IID(nsIFile));
   } else if (!strcmp(aProperty, NS_APP_CHROME_DIR_LIST)) {
