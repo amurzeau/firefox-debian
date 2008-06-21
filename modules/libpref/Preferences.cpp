@@ -1185,7 +1185,8 @@ PREF_ReaderCallback(void* aClosure,
                     PrefValue aValue,
                     PrefType aType,
                     bool aIsDefault,
-                    bool aIsStickyDefault)
+                    bool aIsStickyDefault,
+                    bool aIsLocked)
 {
   uint32_t flags = 0;
   if (aIsDefault) {
@@ -1197,6 +1198,9 @@ PREF_ReaderCallback(void* aClosure,
     flags |= kPrefForceSet;
   }
   pref_SetPref(aPref, aValue, aType, flags);
+  if (aIsLocked) {
+    PREF_LockPref(aPref, true);
+  }
 }
 
 //===========================================================================
@@ -1218,7 +1222,8 @@ typedef void (*PrefReader)(void* aClosure,
                            PrefValue aValue,
                            PrefType aType,
                            bool aIsDefault,
-                           bool aIsStickyDefault);
+                           bool aIsStickyDefault,
+                           bool aIsLocked);
 
 // Report any errors or warnings we encounter during parsing.
 typedef void (*PrefParseErrorReporter)(const char* aMessage,
@@ -1246,6 +1251,7 @@ struct PrefParseState
   PrefType mVtype;       // PREF_{STRING,INT,BOOL}
   bool mIsDefault;       // true if (default) pref
   bool mIsStickyDefault; // true if (sticky) pref
+  bool mIsLocked;        // true if (locked) pref
 };
 
 // Pref parser states.
@@ -1275,6 +1281,7 @@ enum
 #define BITS_PER_HEX_DIGIT 4
 
 static const char kUserPref[] = "user_pref";
+static const char kLockPref[] = "lockPref";
 static const char kPref[] = "pref";
 static const char kPrefSticky[] = "sticky_pref";
 static const char kTrue[] = "true";
@@ -1422,6 +1429,7 @@ PREF_ParseBuf(PrefParseState* aPS, const char* aBuf, int aBufLen)
           aPS->mVtype = PrefType::Invalid;
           aPS->mIsDefault = false;
           aPS->mIsStickyDefault = false;
+          aPS->mIsLocked = false;
         }
         switch (c) {
           case '/': // begin comment block or line?
@@ -1433,10 +1441,13 @@ PREF_ParseBuf(PrefParseState* aPS, const char* aBuf, int aBufLen)
           case 'u': // indicating user_pref
           case 's': // indicating sticky_pref
           case 'p': // indicating pref
+          case 'l': // indicating lockPref
             if (c == 'u') {
               aPS->mStrMatch = kUserPref;
             } else if (c == 's') {
               aPS->mStrMatch = kPrefSticky;
+            } else if (c == 'l') {
+              aPS->mStrMatch = kLockPref;
             } else {
               aPS->mStrMatch = kPref;
             }
@@ -1485,8 +1496,10 @@ PREF_ParseBuf(PrefParseState* aPS, const char* aBuf, int aBufLen)
       case PREF_PARSE_UNTIL_NAME:
         if (c == '\"' || c == '\'') {
           aPS->mIsDefault =
-            (aPS->mStrMatch == kPref || aPS->mStrMatch == kPrefSticky);
+            (aPS->mStrMatch == kPref || aPS->mStrMatch == kPrefSticky ||
+             aPS->mStrMatch == kLockPref);
           aPS->mIsStickyDefault = (aPS->mStrMatch == kPrefSticky);
+          aPS->mIsLocked = (aPS->mStrMatch == kLockPref);
           aPS->mQuoteChar = c;
           aPS->mNextState = PREF_PARSE_UNTIL_COMMA; // return here when done
           state = PREF_PARSE_QUOTED_STRING;
@@ -1815,7 +1828,8 @@ PREF_ParseBuf(PrefParseState* aPS, const char* aBuf, int aBufLen)
                        value,
                        aPS->mVtype,
                        aPS->mIsDefault,
-                       aPS->mIsStickyDefault);
+                       aPS->mIsStickyDefault,
+                       aPS->mIsLocked);
 
           state = PREF_PARSE_INIT;
         } else if (c == '/') {
