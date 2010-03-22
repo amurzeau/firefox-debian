@@ -184,6 +184,7 @@ already_AddRefed<Service> Service::getSingleton() {
     return do_AddRef(gService);
   }
 
+#if 0
   // Ensure that we are using the same version of SQLite that we compiled with
   // or newer.  Our configure check ensures we are using a new enough version
   // at compile time.
@@ -208,6 +209,7 @@ already_AddRefed<Service> Service::getSingleton() {
     }
     MOZ_CRASH("SQLite Version Error");
   }
+#endif
 
   // The first reference to the storage service must be obtained on the
   // main thread.
