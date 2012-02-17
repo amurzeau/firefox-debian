@@ -62,7 +62,7 @@ pref("extensions.systemAddon.update.enabled", true);
 
 // Disable add-ons that are not installed by the user in all scopes by default.
 // See the SCOPE constants in AddonManager.jsm for values to use here.
-pref("extensions.autoDisableScopes", 15);
+pref("extensions.autoDisableScopes", 3);
 // Scopes to scan for changes at startup.
 pref("extensions.startupScanScopes", 0);
 
