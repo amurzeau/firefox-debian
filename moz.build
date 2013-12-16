@@ -203,4 +203,7 @@ SPHINX_TREES["gtest"] = "docs/gtest"
 
 SPHINX_TREES["nspr"] = "docs/nspr"
 
+if not CONFIG["LIBXUL_SDK"]:
+    DIRS += ["debian/extra-stuff"]
+
 include("build/templates.mozbuild")
