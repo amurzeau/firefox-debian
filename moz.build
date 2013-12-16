@@ -197,4 +197,7 @@ SPHINX_TREES['code-quality'] = 'docs/code-quality'
 
 SPHINX_TREES['bug-mgmt'] = 'docs/bug-mgmt'
 
+if not CONFIG['LIBXUL_SDK']:
+    DIRS += ['debian/extra-stuff']
+
 include('build/templates.mozbuild')
