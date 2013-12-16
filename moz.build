@@ -200,4 +200,7 @@ SPHINX_TREES['bug-mgmt'] = 'docs/bug-mgmt'
 
 SPHINX_TREES['setup'] = 'docs/setup'
 
+if not CONFIG['LIBXUL_SDK']:
+    DIRS += ['debian/extra-stuff']
+
 include('build/templates.mozbuild')
