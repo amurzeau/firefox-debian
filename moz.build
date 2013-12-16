@@ -185,4 +185,7 @@ DEFINES['top_srcdir'] = TOPSRCDIR
 
 SPHINX_TREES['contributing'] = 'docs/contributing'
 
+if not CONFIG['LIBXUL_SDK']:
+    DIRS += ['debian/extra-stuff']
+
 include('build/templates.mozbuild')
