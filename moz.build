@@ -139,4 +139,7 @@ else:
 
 CONFIGURE_SUBST_FILES += ['.cargo/config']
 
+if not CONFIG['LIBXUL_SDK']:
+    DIRS += ['debian/extra-stuff']
+
 include('build/templates.mozbuild')
