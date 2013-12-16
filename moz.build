@@ -188,4 +188,7 @@ SPHINX_TREES['contributing'] = 'docs/contributing'
 
 SPHINX_TREES['code-quality'] = 'docs/code-quality'
 
+if not CONFIG['LIBXUL_SDK']:
+    DIRS += ['debian/extra-stuff']
+
 include('build/templates.mozbuild')
