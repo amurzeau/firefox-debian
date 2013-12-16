@@ -195,4 +195,7 @@ SPHINX_TREES["setup"] = "docs/setup"
 
 SPHINX_TREES["crash-reporting"] = "docs/crash-reporting"
 
+if not CONFIG["LIBXUL_SDK"]:
+    DIRS += ["debian/extra-stuff"]
+
 include("build/templates.mozbuild")
