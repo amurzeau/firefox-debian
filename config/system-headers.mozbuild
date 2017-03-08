@@ -1345,3 +1345,7 @@ if CONFIG['MOZ_WAYLAND']:
         'wayland-client.h',
         'wayland-egl.h',
     ]
+
+system_headers += [
+    'json/json.h',
+]
