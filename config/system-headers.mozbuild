@@ -1367,3 +1367,7 @@ if CONFIG['MOZ_LIB_SECRET']:
         'libsecret/secret-value.h',
         'libsecret/secret-service.h',
     ]
+
+system_headers += [
+    'json/json.h',
+]
