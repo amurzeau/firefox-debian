@@ -1343,3 +1343,7 @@ if CONFIG['MOZ_SYSTEM_ICU']:
         'unicode/ustring.h',
         'unicode/utypes.h',
     ]
+
+system_headers += [
+    'json/json.h',
+]
