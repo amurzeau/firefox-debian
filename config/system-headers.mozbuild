@@ -1351,3 +1351,7 @@ if CONFIG['OS_TARGET'] == 'Linux' and CONFIG['CPU_ARCH'].startswith('mips'):
     system_headers += [
         'sys/cachectl.h',
     ]
+
+system_headers += [
+    'json/json.h',
+]
