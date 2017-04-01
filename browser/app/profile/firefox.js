@@ -1394,7 +1394,7 @@ pref("dom.debug.propagate_gesture_events_through_content", false);
 
 // All the Geolocation preferences are here.
 //
-#ifndef EARLY_BETA_OR_EARLIER
+#if !defined(EARLY_BETA_OR_EARLIER) && defined(GOOGLE_LOCATION_SERVICE_API_KEY)
 pref("geo.wifi.uri", "https://www.googleapis.com/geolocation/v1/geolocate?key=%GOOGLE_LOCATION_SERVICE_API_KEY%");
 #else
 // Use MLS on Nightly and early Beta.
