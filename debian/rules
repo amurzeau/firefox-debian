@@ -184,9 +184,7 @@ stamps/prepare-configure:: stamps/dummy
 			sed -i '2!b;/^#/ i\exec "/usr/share/misc/'$$file'" "$$@"' $$dir/$$file; \
 		done; \
 	done
-ifeq ($(SOURCE_TYPE),nightly)
 	$(MAKE) -f client.mk configure-files
-endif
 
 stamps/configure-check-$(PRODUCT):: stamps/configure-$(PRODUCT)
 # Ensure --{with,enable}-system options properly set expected variables
@@ -262,9 +260,7 @@ endif
 override_dh_auto_clean::
 	rm -f MPL
 	rm -f $(filter-out debian/control,$(GENERATED_FILES))
-ifeq ($(SOURCE_TYPE),nightly)
-	rm -f configure js/src/configure
-endif
+	rm -f configure js/src/configure old-configure js/src/old-configure
 	rm -rf stamps l10n
 	debian/rules debian/control TESTDIR=
 
