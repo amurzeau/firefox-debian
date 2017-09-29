@@ -38,10 +38,10 @@ Build-Depends: autotools-dev,
                libnspr4-dev (>= 2:4.16~),
 %endif
 %if USE_SYSTEM_NSS
-               libnss3-dev (>= 2:3.32.1~),
+               libnss3-dev (>= 2:3.33~),
 %endif
 %if USE_SYSTEM_SQLITE
-               libsqlite3-dev (>= 3.19.3),
+               libsqlite3-dev (>= 3.20.1),
 %endif
 %if USE_SYSTEM_VPX
                libvpx-dev (>= 1.5.0),
@@ -63,8 +63,8 @@ Build-Depends: autotools-dev,
                mesa-common-dev,
                libpulse-dev,
                yasm (>= 1.1),
-               rustc (>= 1.17),
-               cargo (>= 0.18),
+               rustc (>= 1.19),
+               cargo (>= 0.20),
                llvm-4.0-dev,
                libclang-4.0-dev,
                clang-4.0,
