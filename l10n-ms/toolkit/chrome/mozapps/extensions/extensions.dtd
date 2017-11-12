@@ -9,7 +9,7 @@
      The search command key should match findOnCmd.commandkey from browser.dtd -->
 <!ENTITY search.commandkey                    "f">
 
-<!ENTITY loading.label                        "Memuatkan...">
+<!ENTITY loading.label                        "Memuatkan…">
 <!ENTITY listEmpty.installed.label            "Anda tidak mempunyai add-ons jenis ini yang dipasang">
 <!ENTITY listEmpty.availableUpdates.label     "Tiada kemaskini ditemui">
 <!ENTITY listEmpty.recentUpdates.label        "Anda tidak ada mengemaskini sebarang add-on baru-baru ini">
@@ -24,7 +24,8 @@
 <!ENTITY getThemes.learnMore                  "Pilih satu daripada ribuan tema yang disediakan.">
 
 <!ENTITY cmd.back.tooltip                     "Undur satu halaman">
-<!ENTITY cmd.forward.tooltip                  "Pergi ke halaman seterusnya">
+<!ENTITY cmd.forward.tooltip                  "Langkau satu halaman">
+
 
 <!ENTITY showUnsignedExtensions.button.label  "Beberapa ekstensi tidak dapat disahkan">
 <!ENTITY showAllExtensions.button.label       "Papar semua ekstensi">
@@ -105,7 +106,7 @@
 <!ENTITY cmd.installAddon.label               "Pasang">
 <!ENTITY cmd.installAddon.accesskey           "g">
 <!ENTITY cmd.uninstallAddon.label             "Buang">
-<!ENTITY cmd.uninstallAddon.accesskey         "R">
+<!ENTITY cmd.uninstallAddon.accesskey         "B">
 <!ENTITY cmd.showPreferencesWin.label         "Pilihan">
 <!ENTITY cmd.showPreferencesWin.tooltip       "Tukar pilihan add-on ini">
 <!ENTITY cmd.showPreferencesUnix.label        "Keutamaan">
@@ -134,7 +135,7 @@
 <!ENTITY detail.lastupdated.label             "Kemaskini Terakhir">
 <!ENTITY detail.creator.label                 "Pembangun">
 <!ENTITY detail.homepage.label                "Halaman utama">
-<!ENTITY detail.numberOfDownloads.label       "Muat Turun">
+<!ENTITY detail.numberOfDownloads.label       "Muat turun">
 
 <!ENTITY detail.contributions.description     "Pembangun aplikasi tambahan ini meminta anda bantuan untuk menyokong pembangunan yang berterusan dengan memberikan sedikit sumbangan.">
 
@@ -191,7 +192,7 @@
 <!-- LOCALIZATION NOTE (addon.legacy.label): This appears in a badge next
      to the add-on name for extensions that are not webextensions, which
      will stop working in Firefox 57. -->
-<!ENTITY addon.legacy.label                   "LEGACY">
+<!ENTITY addon.legacy.label                   "LEGASI">
 <!-- LOCALIZATION NOTE (addon.disabled.postfix): This is used in a normal list
      to signify that an add-on is disabled, in the form
      "<Addon name> <1.0> (disabled)" -->
@@ -214,7 +215,7 @@
 <!ENTITY addon.updateAvailable.label          "Kemaskini tersedia">
 <!ENTITY addon.checkingForUpdates.label       "Menyemak kemaskini…">
 <!ENTITY addon.releaseNotes.label             "Nota Pelepasan:">
-<!ENTITY addon.loadingReleaseNotes.label      "Loading">
+<!ENTITY addon.loadingReleaseNotes.label      "Memuatkan…">
 <!ENTITY addon.errorLoadingReleaseNotes.label "Maaf, ada ralat memuatkan nota pelepasan.">
 
 <!ENTITY addon.createdBy.label                "Oleh ">
@@ -257,7 +258,6 @@
 <!ENTITY pluginDeprecation.description "Ada sesuatu yang tidak kena? Ada plugin yang tidak lagi disokong oleh &brandShortName;.">
 <!ENTITY pluginDeprecation.learnMore "Ketahui Selanjutnya.">
 
-<!ENTITY legacyWarning.description "Ada sesuatu yang tidak kena? Ada ekstensi tidak lagi disokong oleh &brandShortName;.">
 <!ENTITY legacyWarning.showLegacy "Pamerkan ekstensi legasi">
 <!ENTITY legacyExtensions.title "Ekstensi Legasi">
 <!ENTITY legacyExtensions.description "Ekstensi berikut tidak memenuhi piawai &brandShortName; oleh itu dinyahaktifkan.">

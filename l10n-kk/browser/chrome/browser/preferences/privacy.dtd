@@ -14,8 +14,8 @@
 <!ENTITY  trackingProtectionLearnMore.label    "Көбірек білу">
 <!ENTITY  trackingProtectionExceptions.label   "Ережелерден бөлек…">
 <!ENTITY  trackingProtectionExceptions.accesskey "Е">
-<!-- LOCALIZATION NOTE (trackingProtectionPBM5.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel. -->
 
+<!-- LOCALIZATION NOTE (trackingProtectionPBM5.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel. -->
 <!ENTITY trackingProtectionPBM5.label         "Жекелік шолу терезелерінде бақылаудан қорғанысты қолдану">
 <!ENTITY trackingProtectionPBM5.accesskey     "v">
 <!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the nightly channel. -->
@@ -46,17 +46,17 @@
 
 <!ENTITY  suggestionSettings2.label     "Іздеу жүйесінің ұсыныстары үшін қалауларды өз&amp;герту">
 
-<!ENTITY  acceptCookies2.label          "Вебсайттардан cookies қабылдау">
+<!ENTITY  acceptCookies2.label          "Веб-сайттардан cookies файлдарын қабылдау">
 <!ENTITY  acceptCookies2.accesskey      "д">
 
-<!ENTITY  acceptThirdParty.pre.label      "Үшінші жақты cookies қабылдау:">
-<!ENTITY  acceptThirdParty.pre.accesskey  "ш">
+<!ENTITY  acceptThirdParty2.pre.label     "Үшінші жақты cookies файлдарын қабылдау">
+<!ENTITY  acceptThirdParty2.pre.accesskey "ш">
 <!ENTITY  acceptThirdParty.always.label   "Әрқашан">
 <!ENTITY  acceptThirdParty.never.label    "Ешқашан">
 <!ENTITY  acceptThirdParty.visited.label  "Мен болған жерден ғана">
 
-<!ENTITY  keepUntil.label               "Дейін сақтау:">
-<!ENTITY  keepUntil.accesskey           "н">
+<!ENTITY  keepUntil2.label              "Дейін сақтау">
+<!ENTITY  keepUntil2.accesskey          "н">
 
 <!ENTITY  expire.label                  "олардың мерзімі аяқталғанша дейін">
 <!ENTITY  close.label                   "Мен &brandShortName; жапқанға дейін">
@@ -64,7 +64,7 @@
 <!ENTITY  cookieExceptions.label        "Ережелерден бөлек…">
 <!ENTITY  cookieExceptions.accesskey    "Е">
 
-<!ENTITY  showCookies.label             "Cookies көрсету…">
+<!ENTITY  showCookies.label             "Cookies файлдарын көрсету…">
 <!ENTITY  showCookies.accesskey         "р">
 
 <!ENTITY  historyHeader2.pre.label         "&brandShortName;">
@@ -74,21 +74,21 @@
 <!ENTITY  historyHeader.custom.label       "қолдан көрсетілген тарих баптауын қолданады">
 <!ENTITY  historyHeader.post.label         "">
 
-<!ENTITY  rememberDescription.label      "&brandShortName; қаралған веб-парақ, жүктеме, форма, іздеу тарихын және cookies файлдарын сақтайтын болады.">
+<!ENTITY  rememberDescription.label      "&brandShortName; қаралған веб-беті, жүктеме, форма, іздеу тарихын және cookies файлдарын сақтайтын болады.">
+
 <!-- LOCALIZATION NOTE (rememberActions.pre.label): include a trailing space as needed -->
 <!-- LOCALIZATION NOTE (rememberActions.middle.label): include a starting and trailing space as needed -->
 <!-- LOCALIZATION NOTE (rememberActions.post.label): include a starting space as needed -->
-
 <!ENTITY  rememberActions.pre.label           "Сонымен қатар, ">
 <!ENTITY  rememberActions.clearHistory.label  "жуырдағы тарихты тазарту">
 <!ENTITY  rememberActions.middle.label        ", немесе ">
-<!ENTITY  rememberActions.removeCookies.label "жекеленген cookies файлдарын өшіруді қалайтын шығарсыз">
+<!ENTITY  rememberActions.removeCookies.label "жеке-жеке cookies файлдарын өшіруге болады">
 <!ENTITY  rememberActions.post.label          ".">
 
 <!ENTITY  dontrememberDescription.label  "&brandShortName; жекелік шолу режимінің баптауын пайдаланады, яғни браузер тарихына ешқандай мәлімет сақталмайды.">
+
 <!-- LOCALIZATION NOTE (dontrememberActions.pre.label): include a trailing space as needed -->
 <!-- LOCALIZATION NOTE (dontrememberActions.post.label): include a starting space as needed -->
-
 <!ENTITY  dontrememberActions.pre.label          "Сонымен қатар ">
 <!ENTITY  dontrememberActions.clearHistory.label "тарихты да тазарту">
 <!ENTITY  dontrememberActions.post.label         ".">
@@ -113,3 +113,8 @@
 <!ENTITY  browserContainersEnabled.accesskey    "е">
 <!ENTITY  browserContainersSettings.label        "Баптаулар…">
 <!ENTITY  browserContainersSettings.accesskey    "п">
+
+<!ENTITY  a11yPrivacy.checkbox.label     "Қолжетерлілік қызметтеріне сіздің браузеріңізге қатынауға тыйым салу">
+<!ENTITY  a11yPrivacy.checkbox.accesskey "а">
+<!ENTITY  a11yPrivacy.learnmore.label    "Көбірек білу">
+<!ENTITY enableSafeBrowsingLearnMore.label "Көбірек білу">

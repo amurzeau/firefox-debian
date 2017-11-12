@@ -39,7 +39,7 @@ signedInUnverified.aftername.label): these two string are used respectively
 before and after the account email address. Localizers can use one of them, or
 both, to better adapt this sentence to their language.
 -->
-<!ENTITY signedInUnverified.beforename.label "‌">
+<!ENTITY signedInUnverified.beforename.label "">
 <!ENTITY signedInUnverified.aftername.label "चाचणी झाली नाही.">
 
 <!-- LOCALIZATION NOTE (signedInLoginFailure.beforename.label,
@@ -48,7 +48,7 @@ before and after the account email address. Localizers can use one of them, or
 both, to better adapt this sentence to their language.
 -->
 <!ENTITY signedInLoginFailure.beforename.label "पुन्हा जोडणीकरिता कृपया साइन करा">
-<!ENTITY signedInLoginFailure.aftername.label "‌">
+<!ENTITY signedInLoginFailure.aftername.label "">
 
 <!ENTITY notSignedIn.label           "आपण साइन इन केले नाही.">
 <!ENTITY signIn.label                "साइन इन">
@@ -66,10 +66,10 @@ both, to better adapt this sentence to their language.
 <!ENTITY signedOut.caption            "आपला वेब आपल्याबरोबर घेऊन चला">
 <!ENTITY signedOut.description        "आपल्या सर्व साधणांकरीता आपल्या वाचनखूणा, इतिहास, टॅब, पासवर्ड, ॲड-ऑन्स्, आणि प्राधान्ये समक्रमित करा.">
 <!ENTITY signedOut.accountBox.title   "&syncBrand.fxAccount.label; सह जोडा">
-<!ENTITY signedOut.accountBox.create  "खाते बनवा">
-<!ENTITY signedOut.accountBox.create.accesskey  "C">
-<!ENTITY signedOut.accountBox.signin  "साइन इन">
-<!ENTITY signedOut.accountBox.signin.accesskey  "I">
+<!ENTITY signedOut.accountBox.create2 "खाते नाही? सुरु करूया">
+<!ENTITY signedOut.accountBox.create2.accesskey "C">
+<!ENTITY signedOut.accountBox.signin2 "साइन इन…">
+<!ENTITY signedOut.accountBox.signin2.accesskey "I">
 
 <!ENTITY signedIn.settings.label       "ताळमेळ सेटिंग्ज">
 <!ENTITY signedIn.settings.description "&brandShortName; वापरून आपल्या उपकरणांवर काय सिंक्रोनाईझ करायचे ते निवडा.">

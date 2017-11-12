@@ -5,15 +5,24 @@
 <!ENTITY permissions.label "Permisos">
 <!ENTITY blockPopups.label "Bloquear ventanas emergentes">
 <!ENTITY blockPopups.accesskey "B">
-<!ENTITY notificationsPolicyLearnMore.label "Saber más">
-<!ENTITY notificationsPolicyDesc4.label "Elija qué sitios web tiene permitido enviarle notificaciones">
-<!ENTITY notificationsPolicyButton.accesskey "E">
-<!ENTITY notificationsPolicyButton.label "Elegir…">
 <!ENTITY notificationsDoNotDisturb.label "No molestarme">
 <!ENTITY notificationsDoNotDisturb.accesskey "N">
 <!ENTITY notificationsDoNotDisturbDetails.value "No se mostrarán más notificaciones hasta que reinicie &brandShortName;">
 <!ENTITY popupExceptions.label "Excepciones…">
 <!ENTITY popupExceptions.accesskey "E">
+<!ENTITY notificationPermissions.label "Notificaciones">
+<!ENTITY notificationSettingsButton.label "Configuración…">
+<!ENTITY notificationSettingsButton.accesskey "u">
+<!ENTITY notificationPermissionsLearnMore.label "Saber más">
+<!ENTITY locationPermissions.label "Ubicación">
+<!ENTITY locationSettingsButton.label "Configuración…">
+<!ENTITY locationSettingsButton.accesskey "u">
+<!ENTITY cameraPermissions.label "Cámara">
+<!ENTITY cameraSettingsButton.label "Configuración…">
+<!ENTITY cameraSettingsButton.accesskey "u">
+<!ENTITY microphonePermissions.label "Micrófono">
+<!ENTITY microphoneSettingsButton.label "Configuración…">
+<!ENTITY microphoneSettingsButton.accesskey "u">
 <!ENTITY fontsAndColors.label "Tipografías y colores">
 <!ENTITY defaultFont2.label "Tipografía predeterminada">
 <!ENTITY defaultFont2.accesskey "T">

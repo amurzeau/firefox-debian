@@ -35,18 +35,18 @@
 <!ENTITY locbar.bookmarks.accesskey "M">
 <!ENTITY locbar.openpage.label "Abrir pestañas">
 <!ENTITY locbar.openpage.accesskey "A">
-<!ENTITY locbar.searches.label "Búsquedas relacionadas del buscador por defecto">
+<!ENTITY locbar.searches.label "Búsquedas relacionadas del buscador por omisión">
 <!ENTITY locbar.searches.accesskey "B">
 <!ENTITY suggestionSettings2.label "Cambiar preferencias de sugerencias de buscadores">
 <!ENTITY acceptCookies2.label "Aceptar cookies de sitios web">
 <!ENTITY acceptCookies2.accesskey "k">
-<!ENTITY acceptThirdParty.pre.label "Aceptar las cookies de terceras partes:">
-<!ENTITY acceptThirdParty.pre.accesskey "c">
+<!ENTITY acceptThirdParty2.pre.label "Aceptar las cookies de terceras partes">
+<!ENTITY acceptThirdParty2.pre.accesskey "p">
 <!ENTITY acceptThirdParty.always.label "Siempre">
 <!ENTITY acceptThirdParty.never.label "Nunca">
 <!ENTITY acceptThirdParty.visited.label "De los visitados">
-<!ENTITY keepUntil.label "Mantener hasta que:">
-<!ENTITY keepUntil.accesskey "M">
+<!ENTITY keepUntil2.label "Mantener hasta que">
+<!ENTITY keepUntil2.accesskey "q">
 <!ENTITY expire.label "caduquen">
 <!ENTITY close.label "cierre &brandShortName;">
 <!ENTITY cookieExceptions.label "Excepciones…">
@@ -84,3 +84,7 @@
 <!ENTITY browserContainersEnabled.accesskey "ñ">
 <!ENTITY browserContainersSettings.label "Configuración…">
 <!ENTITY browserContainersSettings.accesskey "C">
+<!ENTITY a11yPrivacy.checkbox.label "Impedir que los servicios de accesibilidad accedan a su navegador">
+<!ENTITY a11yPrivacy.checkbox.accesskey "I">
+<!ENTITY a11yPrivacy.learnmore.label "Saber más">
+<!ENTITY enableSafeBrowsingLearnMore.label "Saber más">

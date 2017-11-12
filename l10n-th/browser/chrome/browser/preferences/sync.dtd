@@ -5,9 +5,9 @@
 <!-- The page shown when logged in... -->
 
 <!ENTITY engine.bookmarks.label     "ที่คั่นหน้า">
-<!ENTITY engine.bookmarks.accesskey "ค">
-<!ENTITY engine.tabs.label2         "แท็บที่เปิด">
-<!ENTITY engine.tabs.accesskey      "ท">
+<!ENTITY engine.bookmarks.accesskey "ท">
+<!ENTITY engine.tabs.label2         "แท็บที่เปิดอยู่">
+<!ENTITY engine.tabs.accesskey      "บ">
 <!ENTITY engine.history.label       "ประวัติ">
 <!ENTITY engine.history.accesskey   "ป">
 <!ENTITY engine.logins.label        "การเข้าสู่ระบบ">
@@ -17,7 +17,9 @@
 <!ENTITY engine.addons.label        "ส่วนเสริม">
 <!ENTITY engine.addons.accesskey    "ส">
 <!ENTITY engine.addresses.label     "ที่อยู่">
+<!ENTITY engine.addresses.accesskey "อ">
 <!ENTITY engine.creditcards.label   "บัตรเครดิต">
+<!ENTITY engine.creditcards.accesskey "ต">
 
 <!-- Device Settings -->
 <!ENTITY fxaSyncDeviceName.label       "ชื่ออุปกรณ์">
@@ -38,7 +40,7 @@ before and after the account email address. Localizers can use one of them, or
 both, to better adapt this sentence to their language.
 -->
 <!ENTITY signedInUnverified.beforename.label "">
-<!ENTITY signedInUnverified.aftername.label "ยังไม่ยืนยัน">
+<!ENTITY signedInUnverified.aftername.label "ยังไม่ได้รับการยืนยัน">
 
 <!-- LOCALIZATION NOTE (signedInLoginFailure.beforename.label,
 signedInLoginFailure.aftername.label): these two string are used respectively
@@ -56,18 +58,18 @@ both, to better adapt this sentence to their language.
 <!ENTITY verifiedManage.accesskey    "จ">
 <!ENTITY disconnect3.label           "ตัดการเชื่อมต่อ…">
 <!ENTITY disconnect3.accesskey       "ต">
-<!ENTITY verify.label                "ตรวจสอบอีเมล">
-<!ENTITY verify.accesskey            "ร">
+<!ENTITY verify.label                "ยืนยันอีเมล">
+<!ENTITY verify.accesskey            "ย">
 <!ENTITY forget.label                "ลืมอีเมลนี้">
 <!ENTITY forget.accesskey            "ล">
 
-<!ENTITY signedOut.caption            "นำเว็บไปกับคุณ">
+<!ENTITY signedOut.caption            "นำเว็บของคุณไปกับคุณ">
 <!ENTITY signedOut.description        "ประสานที่คั่นหน้า, ประวัติ, แท็บ, รหัสผ่าน, ส่วนเสริม และค่ากำหนดระหว่างอุปกรณ์ทั้งหมดของคุณ">
 <!ENTITY signedOut.accountBox.title   "เชื่อมต่อกับ &syncBrand.fxAccount.label;">
-<!ENTITY signedOut.accountBox.create  "สร้างบัญชี">
-<!ENTITY signedOut.accountBox.create.accesskey  "ส">
-<!ENTITY signedOut.accountBox.signin  "ลงชื่อเข้า">
-<!ENTITY signedOut.accountBox.signin.accesskey  "ล">
+<!ENTITY signedOut.accountBox.create2 "ไม่มีบัญชี? เริ่มต้นใช้งาน">
+<!ENTITY signedOut.accountBox.create2.accesskey "ม">
+<!ENTITY signedOut.accountBox.signin2 "ลงชื่อเข้า…">
+<!ENTITY signedOut.accountBox.signin2.accesskey "ล">
 
 <!ENTITY signedIn.settings.label       "การตั้งค่า Sync">
 <!ENTITY signedIn.settings.description "เลือกสิ่งที่คุณต้องการจะประสานบนอุปกรณ์ของคุณโดยใช้ &brandShortName;">

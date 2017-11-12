@@ -11,7 +11,7 @@
 <!ENTITY engine.history.label       "ისტორია">
 <!ENTITY engine.history.accesskey   "ი">
 <!ENTITY engine.logins.label        "შესვლები">
-<!ENTITY engine.logins.accesskey    "დ">
+<!ENTITY engine.logins.accesskey    "შ">
 <!ENTITY engine.prefs.label         "პარამეტრები">
 <!ENTITY engine.prefs.accesskey     "პ">
 <!ENTITY engine.addons.label        "დამატებები">
@@ -66,10 +66,10 @@ both, to better adapt this sentence to their language.
 <!ENTITY signedOut.caption            "წაიყოლეთ თქვენი მონაცემები თან">
 <!ENTITY signedOut.description        "დაასინქრონეთ თქვენი სანიშნეები, ისტორია, ჩანართები, პაროლები, დამატებები და პარამეტრები ყველა მოწყობილობაზე.">
 <!ENTITY signedOut.accountBox.title   "&syncBrand.fxAccount.label; - დაკავშირება">
-<!ENTITY signedOut.accountBox.create  "ანგარიშის შექმნა">
-<!ENTITY signedOut.accountBox.create.accesskey  "ქ">
-<!ENTITY signedOut.accountBox.signin  "შესვლა">
-<!ENTITY signedOut.accountBox.signin.accesskey  "ლ">
+<!ENTITY signedOut.accountBox.create2 "არ გაქვთ ანგარიში? შექმენით">
+<!ENTITY signedOut.accountBox.create2.accesskey "ქ">
+<!ENTITY signedOut.accountBox.signin2 "შესვლა">
+<!ENTITY signedOut.accountBox.signin2.accesskey "შ">
 
 <!ENTITY signedIn.settings.label       "სინქრონიზაციის პარამეტრები">
 <!ENTITY signedIn.settings.description "აირჩიეთ, რისი დასინქრონება გსურთ &brandShortName;-ით თქვენს მოწყობილობაზე.">
@@ -88,4 +88,4 @@ both, to better adapt this sentence to their language.
 <!-- LOCALIZATION NOTE (mobilePromo3.iOSLink): This is a link title that links to https://www.mozilla.org/firefox/ios/ -->
 <!ENTITY mobilePromo3.iOSLink          "iOS-ისთვის">
 
-<!ENTITY mobilePromo3.end              " თქვენ მობილურ მოწყობილობასთან სინქრონიზაციისთვის.">
+<!ENTITY mobilePromo3.end              " თქვენს მობილურ მოწყობილობასთან სინქრონიზაციისთვის.">

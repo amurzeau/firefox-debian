@@ -15,7 +15,10 @@
 <!ENTITY aboutUrlClassifier.cacheRefreshBtn             "తాజాపరుచు">
 <!ENTITY aboutUrlClassifier.cacheClearBtn               "శుభ్రపరుచు">
 <!ENTITY aboutUrlClassifier.cacheTableName              "పట్టిక పేరు">
+<!ENTITY aboutUrlClassifier.cacheShowEntries            "ఎంట్రీలను చూపించు">
+<!ENTITY aboutUrlClassifier.cacheEntries                "క్యాషె ఎంట్రీలు">
 <!ENTITY aboutUrlClassifier.cachePrefix                 "ఉపసర్గ">
+<!ENTITY aboutUrlClassifier.cacheNCacheExpiry           "ప్రతికూల క్యాషె గడువు పూర్తి">
 <!ENTITY aboutUrlClassifier.cacheFullhash               "Full hash">
 <!ENTITY aboutUrlClassifier.cachePCacheExpiry           "అనుకూల క్యాషె గడువు పూర్తి">
 <!ENTITY aboutUrlClassifier.debugTitle                  "డీబగ్">

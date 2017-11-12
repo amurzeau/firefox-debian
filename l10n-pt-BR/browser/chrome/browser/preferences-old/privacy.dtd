@@ -56,7 +56,7 @@
 <!ENTITY  keepUntil.accesskey           "P">
 
 <!ENTITY  expire.label                  "expirarem">
-<!ENTITY  close.label                   "Sair do &brandShortName;">
+<!ENTITY  close.label                   "sair do &brandShortName;">
 
 <!ENTITY  cookieExceptions.label        "Exceções…">
 <!ENTITY  cookieExceptions.accesskey    "E">
@@ -105,9 +105,9 @@
 <!ENTITY  clearOnCloseSettings.label     "Configurar…">
 <!ENTITY  clearOnCloseSettings.accesskey "C">
 
-<!ENTITY  browserContainersHeader.label         "Abas contêineres">
+<!ENTITY  browserContainersHeader.label         "Abas contêiner">
 <!ENTITY  browserContainersLearnMore.label      "Saber mais">
-<!ENTITY  browserContainersEnabled.label        "Habilitar abas contêineres">
+<!ENTITY  browserContainersEnabled.label        "Habilitar abas contêiner">
 <!ENTITY  browserContainersEnabled.accesskey    "n">
 <!ENTITY  browserContainersSettings.label        "Configurações…">
 <!ENTITY  browserContainersSettings.accesskey    "i">

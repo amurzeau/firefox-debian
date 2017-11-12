@@ -8,6 +8,7 @@
 <!ENTITY aboutUrlClassifier.provider                    "Piegādātājs">
 <!ENTITY aboutUrlClassifier.providerLastUpdateTime      "Pēdējās atjaunināšanas laiks">
 <!ENTITY aboutUrlClassifier.providerNextUpdateTime      "Pēdējās atjaunināšanas laiks">
+<!ENTITY aboutUrlClassifier.providerBackOffTime         "Atkāpšanās laiks">
 <!ENTITY aboutUrlClassifier.providerLastUpdateStatus    "Pēdējās atjaunināšanas statuss">
 <!ENTITY aboutUrlClassifier.providerUpdateBtn           "Atjauninājums">
 <!ENTITY aboutUrlClassifier.cacheTitle                  "Kešatmiņa">

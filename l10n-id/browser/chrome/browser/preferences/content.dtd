@@ -7,16 +7,29 @@
 <!ENTITY  blockPopups.label           "Blokir jendela pop-up">
 <!ENTITY  blockPopups.accesskey       "B">
 
-<!ENTITY  notificationsPolicyLearnMore.label   "Pelajari lebih lanjut">
-<!ENTITY  notificationsPolicyDesc3.label       "Pilih situs yang diizinkan untuk mengirimkan notifikasi">
-<!ENTITY  notificationsPolicyButton.accesskey  "P">
-<!ENTITY  notificationsPolicyButton.label      "Pilih…">
 <!ENTITY  notificationsDoNotDisturb.label      "Jangan ganggu">
 <!ENTITY  notificationsDoNotDisturb.accesskey  "n">
 <!ENTITY  notificationsDoNotDisturbDetails.value "Tidak ada notifikasi ditampilkan hingga Anda memulai ulang &brandShortName;">
 
-<!ENTITY  popupExceptions.label       "Pengecualian…">
-<!ENTITY  popupExceptions.accesskey   "e">
+<!ENTITY  popupExceptions.label                                 "Pengecualian…">
+<!ENTITY  popupExceptions.accesskey                             "e">
+
+<!ENTITY  notificationPermissions.label                         "Notifikasi">
+<!ENTITY  notificationSettingsButton.label                      "Setelan…">
+<!ENTITY  notificationSettingsButton.accesskey                  "t">
+<!ENTITY  notificationPermissionsLearnMore.label                "Pelajari lebih lanjut">
+
+<!ENTITY  locationPermissions.label                             "Lokasi">
+<!ENTITY  locationSettingsButton.label                          "Setelan…">
+<!ENTITY  locationSettingsButton.accesskey                      "t">
+
+<!ENTITY  cameraPermissions.label                               "Kamera">
+<!ENTITY  cameraSettingsButton.label                            "Setelan…">
+<!ENTITY  cameraSettingsButton.accesskey                        "t">
+
+<!ENTITY  microphonePermissions.label                           "Mikrofon">
+<!ENTITY  microphoneSettingsButton.label                        "Setelan…">
+<!ENTITY  microphoneSettingsButton.accesskey                    "t">
 
 <!ENTITY  fontsAndColors.label        "Huruf &amp; Warna">
 
@@ -54,4 +67,6 @@
 
 <!ENTITY  drmContent2.label              "Konten Digital Rights Management (DRM)">
 
+<!ENTITY  playDRMContent2.label          "Putar konten DRM-terkontrol">
+<!ENTITY  playDRMContent2.accesskey      "P">
 <!ENTITY  playDRMContent.learnMore.label "Pelajari lebih lanjut">

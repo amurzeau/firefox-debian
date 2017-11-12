@@ -2,16 +2,25 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
+<!ENTITY searchBar.label                       "Barrenn glask">
+
+<!ENTITY searchBar.hidden.label                "Arverañ ar varrenn chomlec'hioù evit ar c'hlaskoù hag ar merdeiñ">
+<!ENTITY searchBar.shown.label                 "Ouzhpennañ ar varrenn glask er varrenn ostilhoù">
+
 <!ENTITY defaultSearchEngine.label             "Keflusker enklask dre ziouer">
 
+<!ENTITY chooseYourDefaultSearchEngine2.label   "Dibab al lusker klask dre ziouer da arverañ er varrenn chomlec'hioù hag er varrenn glask.">
 
 <!ENTITY provideSearchSuggestions.label        "Kinnig alioù enklask">
 <!ENTITY provideSearchSuggestions.accesskey    "a">
 
-
+<!ENTITY showURLBarSuggestions2.label           "Diskouez ar c'hinnigoù enklask e disoc'hoù ar varenn chomlec'hioù">
+<!ENTITY showURLBarSuggestions2.accesskey       "D">
 <!ENTITY urlBarSuggestionsPermanentPB.label    "Ne vo ket skrammet ar c'hinnigoù enklask e disoc'hoù ar varrenn chomlec'hioù dre m'ho peus kefluniet &brandShortName;  evit ma ne zalc'hfe ket soñj eus ho roll istor.">
 
+<!ENTITY oneClickSearchEngines.label           "Luskerioù enklask ur-c'hlik">
 
+<!ENTITY chooseWhichOneToDisplay2.label         "Dibabit al luskerioù enklask all diskouezet dindan ar varrenn chomlec'hioù hag ar varrenn glask pa grogit da skrivañ ur ger.">
 
 <!ENTITY engineNameColumn.label                "Keflusker enklask">
 <!ENTITY engineKeywordColumn.label             "Ger-alc'hwez">
@@ -22,3 +31,4 @@
 <!ENTITY removeEngine.label                    "Dilemel">
 <!ENTITY removeEngine.accesskey                "D">
 
+<!ENTITY findMoreSearchEngines.label           "Klask luskerioù klask all">

@@ -6,16 +6,17 @@
 
 <!-- LOCALIZATION NOTE: The title is intended to be apologetic and disarming, expressing dismay
      and regret that we are unable to restore the session for the user -->
-<!ENTITY restorepage.errorTitle     "哎呀，出了点意外。">
-<!ENTITY restorepage.problemDesc    "&brandShortName; 无法恢复您的窗口和标签页。这通常为最近打开的某个网页所致。">
-<!ENTITY restorepage.tryThis        "您可以试试：">
-<!ENTITY restorepage.restoreSome    "取消勾选您认为可能引发此问题的标签页">
-<!ENTITY restorepage.startNew       "不作恢复，开始一次全新的浏览">
+<!ENTITY restorepage.errorTitle2    "很抱歉，我们在恢复您的页面时遇到了问题。">
+<!ENTITY restorepage.problemDesc2   "我们在恢复您上次的浏览状态时遇到问题。选择“恢复浏览状态”可再试一次。">
+<!ENTITY restorepage.tryThis2       "还是无法恢复浏览状态？有时这是某个标签页所导致。请检查下列的先前打开标签页中有哪些不必要恢复，取消勾选后再试一次。">
 
-<!ENTITY restorepage.tryagainButton "恢复">
-<!ENTITY restorepage.restore.access "R">
-<!ENTITY restorepage.closeButton    "关闭">
-<!ENTITY restorepage.close.access   "C">
+<!ENTITY restorepage.hideTabs       "隐藏先前的标签页">
+<!ENTITY restorepage.showTabs       "查看先前的标签页">
+
+<!ENTITY restorepage.tryagainButton2 "恢复浏览状态">
+<!ENTITY restorepage.restore.access2 "R">
+<!ENTITY restorepage.closeButton2    "开始新一次浏览">
+<!ENTITY restorepage.close.access2   "N">
 
 <!ENTITY restorepage.restoreHeader  "恢复">
 <!ENTITY restorepage.listHeader     "窗口和标签页">

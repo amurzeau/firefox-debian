@@ -23,6 +23,8 @@
 
 <!ENTITY clearDataSettings2.label     "При излизане от &brandShortName; автоматично да бъдат изчиствани:">
 
+<!ENTITY clearDataSettings3.label     "При излизане от &brandShortName; автоматично да бъдат изчиствани">
+
 <!-- XXX rearrange entities to match physical layout when l10n isn't an issue -->
 <!-- LOCALIZATION NOTE (clearTimeDuration.*): "Time range to clear" dropdown.
      See UI mockup at bug 480169 -->
@@ -46,7 +48,7 @@ that require it.  -->
 <!ENTITY historySection.label         "История">
 <!ENTITY dataSection.label            "Данни">
 
-<!ENTITY itemHistoryAndDownloads.label     "История на сърфиране и изтегляния">
+<!ENTITY itemHistoryAndDownloads.label     "История на разглеждане и изтегляния">
 <!ENTITY itemHistoryAndDownloads.accesskey "с">
 <!ENTITY itemFormSearchHistory.label       "История на формуляри и търсения">
 <!ENTITY itemFormSearchHistory.accesskey   "ф">

@@ -4,13 +4,15 @@
 
 <!ENTITY  security.label                 "Kisal">
 
-
+<!ENTITY  warnOnAddonInstall2.label       "Jeertin-maa so lowe etiima aafde ɓeyditte">
+<!ENTITY  warnOnAddonInstall2.accesskey   "J">
 
 <!-- LOCALIZATION NOTE (enableSafeBrowsing.label, blockDownloads.label, blockUncommonUnwanted.label):
   It is important that wording follows the guidelines outlined on this page:
   https://developers.google.com/safe-browsing/developers_guide_v2#AcceptableUsage
 -->
 
+<!ENTITY  browsingProtection.label        "Ndeenka Loowdi Puuntoori e Topateeri Mbonnoori">
 <!ENTITY  enableSafeBrowsing.label        "Falo loowi mbonndi e puuntoori">
 <!ENTITY  enableSafeBrowsing.accesskey    "F">
 
@@ -26,7 +28,8 @@
 
 <!ENTITY  formsAndPasswords.label       "Formileeruuji &amp; pinle">
 
-
+<!ENTITY  rememberLogins2.label         "Siiftor baccooje e finndeeji lowe geese">
+<!ENTITY  rememberLogins2.accesskey     "R">
 <!ENTITY  passwordExceptions.label      "Paltooje…">
 <!ENTITY  passwordExceptions.accesskey  "a">
 

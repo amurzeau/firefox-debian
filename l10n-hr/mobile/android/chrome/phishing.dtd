@@ -6,6 +6,7 @@
 <!ENTITY safeb.palm.decline.label "Zanemari ovo upozorenje">
 <!ENTITY safeb.palm.reportPage.label "Zašto je ova stranica blokirana?">
 <!-- Localization note (safeb.palm.advisory.desc) - Please don't translate <a id="advisory_provider"/> tag.  It will be replaced at runtime with advisory link-->
+<!ENTITY safeb.palm.advisory.desc "Savjetovanje pruža <a id='advisory_provider'/>">
 
 <!ENTITY safeb.blocked.malwarePage.title "Prijavljena zloćudna stranica!">
 <!-- Localization note (safeb.blocked.malware.shortDesc) - Please don't translate the contents of the <span id="malware_sitename"/> tag.  It will be replaced at runtime with a domain name (e.g. www.badsite.com) -->
@@ -22,3 +23,5 @@
 <!ENTITY safeb.blocked.unwantedPage.shortDesc "Web stranica <span id='unwanted_sitename'/> je prijavljena kao nesigurna stranica i blokirana je na temelju vaših sigurnosnih postavki.">
 <!ENTITY safeb.blocked.unwantedPage.longDesc "Nesigurne stranice pokušavaju instalirati programe koju su zavaravajući i mogu utjecati na vaš sustav na neočekivane načine.">
 
+<!ENTITY safeb.blocked.harmfulPage.title "Sljedeća stranica može sadržavati zlonamjerni softver">
+<!ENTITY safeb.blocked.harmfulPage.shortDesc "&brandShortName; je blokirao ovu stranicu iz razloga što će možda pokušati instalirati zlonamjerne aplikacije koje kradu ili brišu vaše podatke (na primjer slike, lozinke, poruke ili kreditne kartice).">

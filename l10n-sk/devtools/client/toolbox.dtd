@@ -82,12 +82,6 @@
 <!ENTITY options.enableRemote.label3    "Povoliť vzdialené ladenie">
 <!ENTITY options.enableRemote.tooltip2  "Zapnutie tejto voľby vám umožní používať vývojárske nástroje na ladenie vzdialených inštancií, napr. Firefox OS">
 
-<!-- LOCALIZATION NOTE (options.enableWorkers.label): This is the label for the
-  -  checkbox that toggles worker debugging, i.e. devtools.debugger.workers
-  -  boolean preference in about:config, in the options panel. -->
-<!ENTITY options.enableWorkers.label    "Povoliť ladenie workerov (vo vývoji)">
-<!ENTITY options.enableWorkers.tooltip  "Zapnutie tejto voľby vám umožní používať vývojárske nástroje na ladenie workerov">
-
 <!-- LOCALIZATION NOTE (options.disableJavaScript.label,
   -  options.disableJavaScript.tooltip): This is the options panel label and
   -  tooltip for the checkbox that toggles JavaScript on or off. -->
@@ -151,19 +145,14 @@
 <!ENTITY options.debugger.label            "Ladenie">
 
 <!-- LOCALIZATION NOTE (options.sourceMap.label): This is the
-   - label for the checkbox that toggles source maps in the Debugger -->
+   - label for the checkbox that toggles source maps in all tools -->
 <!ENTITY options.sourceMaps.label      "Povoliť zdrojové mapy">
-<!ENTITY options.sourceMaps.tooltip    "Ak túto voľbu zapnete, zdroje budú mapované v nástroji ladenia a v konzole.">
+<!ENTITY options.sourceMaps.tooltip1   "Ak túto voľbu zapnete, zdroje budú mapované v nástrojoch.">
 
 <!-- LOCALIZATION NOTE (options.styleeditor.label): This is the label for the
   -  heading of the group of Style Editor preferences in the options
   -  panel. -->
 <!ENTITY options.styleeditor.label            "Editor štýlov">
-
-<!-- LOCALIZATION NOTE (options.stylesheetSourceMaps.label): This is the
-   - label for the checkbox that toggles showing original sources in the Style Editor -->
-<!ENTITY options.stylesheetSourceMaps.label      "Zobraziť pôvodné zdroje">
-<!ENTITY options.stylesheetSourceMaps.tooltip    "Zobrazí pôvodné zdroje (e.g. súbory Sass) v Editore štýlov a v okne Prieskumníka">
 
 <!-- LOCALIZATION NOTE (options.stylesheetAutocompletion.label): This is the
    - label for the checkbox that toggles autocompletion of css in the Style Editor -->
@@ -184,18 +173,6 @@
    - label for the checkbox that toggles the camera shutter audio for screenshot tool -->
 <!ENTITY options.screenshot.audio.label      "Prehrať zvuk spúšte fotoaparátu">
 <!ENTITY options.screenshot.audio.tooltip    "Povolí zvuk fotoaparátu pri tvorbe snímok obrazovky">
-
-<!-- LOCALIZATION NOTE (options.commonprefs): This is the label for the heading
-      of all preferences that affect both the Web Console and the Network
-      Monitor -->
-<!ENTITY options.commonPrefs.label           "Bežné nastavenia">
-
-<!-- LOCALIZATION NOTE (options.enablePersistentLogs.label): This is the
-  -  label for the checkbox that toggles persistent logs in the Web Console and
-  -  network monitor,  i.e. devtools.webconsole.persistlog a boolean preference in
-  -  about:config, in the options panel. -->
-<!ENTITY options.enablePersistentLogs.label    "Povoliť trvalé záznamy">
-<!ENTITY options.enablePersistentLogs.tooltip  "Ak povolíte túto možnosť, Webová konzola ani Monitor sieťovej aktivity nebudú vymazávať výstup pri každej návšteve novej stránky">
 
 <!-- LOCALIZATION NOTE (options.showPlatformData.label): This is the
   -  label for the checkbox that toggles the display of the platform data in the,

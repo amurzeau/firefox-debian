@@ -12,15 +12,14 @@
 <!ENTITY window.title         "Προσθήκη νέας θεματικής ενότητας">
 <!ENTITY window.width         "45em">
 
-<!ENTITY name.label           "Όνομα:">
-<!ENTITY name.accesskey       "Ο">
+<!ENTITY name2.label          "Όνομα">
+<!ENTITY name2.accesskey      "Ο">
 <!ENTITY name.placeholder     "Εισάγετε όνομα θεματικής ενότητας">
-<!ENTITY icon.label           "Εικονίδιο:">
-<!ENTITY icon.accesskey       "Ε">
-<!ENTITY color.label          "Χρώμα:">
-<!ENTITY color.accesskey      "ρ">
-<!ENTITY windowClose.key      "κ">
+<!ENTITY icon2.label          "Εικονίδιο">
+<!ENTITY icon2.accesskey      "Ε">
+<!ENTITY color2.label         "Χρώμα">
+<!ENTITY color2.accesskey     "ρ">
+<!ENTITY windowClose.key      "w">
 
 <!ENTITY button.ok.label      "Τέλος">
 <!ENTITY button.ok.accesskey  "Τ">
-

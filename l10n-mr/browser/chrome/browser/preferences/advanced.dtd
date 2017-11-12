@@ -29,15 +29,15 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "माहिती अहवाल देणे या बांधणी संरचनेमध्ये निष्क्रिय केलेले आहे">
 
-<!ENTITY enableHealthReport1.label       "Mozilla ला आपोआप तांत्रिक आणि परस्परसंवादाबद्दल माहिती पाठवण्याची &brandShortName; ला परवानगी द्या.">
-<!ENTITY enableHealthReport1.accesskey   "r">
+<!ENTITY enableHealthReport2.label       "Mozilla ला तांत्रिक व परस्परसंवाद माहिती पाठविण्यासाठी &brandShortName; ला परवानगी द्या">
+<!ENTITY enableHealthReport2.accesskey   "r">
 <!ENTITY healthReportLearnMore.label     "आणखी जाणा">
 
 <!ENTITY dataCollection.label            "&brandShortName; माहिती संग्रह आणि वापर">
 <!ENTITY dataCollectionDesc.label        "आम्ही आपल्याला पर्याय उपलब्ध करण्यासाठी प्रयत्न करतो आणि सर्वांसाठी &brandShortName; उपलब्ध होण्यासाठी आणि सुधारण्यासाठी गरजेपुरतेच गोळा करतो. वैयक्तिक माहिती घेण्याआधी आम्ही नेहमी परवानगी विचारतो.">
 <!ENTITY dataCollectionPrivacyNotice.label    "गोपनीयता सूचना">
 
-<!ENTITY alwaysSubmitCrashReports1.label  "Mozilla ला क्रॅश रिपोर्ट्स पाठवण्याची परवानगी &brandShortName; ला द्या">
+<!ENTITY alwaysSubmitCrashReports1.label  "Mozilla ला क्रॅश रिपोर्ट्स पाठवण्याची &brandShortName; ला परवानगी द्या">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "c">
 <!ENTITY crashReporterLearnMore.label    "आणखी जाणा">
 
@@ -93,7 +93,7 @@ available. -->
 <!ENTITY updateApplicationDescription.label
                                          "सर्वोत्तम कामगिरी, स्थिरता आणि सुरक्षिततेसाठी &brandShortName; अद्ययावत ठेवा.">
 <!ENTITY updateApplication.version.pre   "आवृत्ती">
-<!ENTITY updateApplication.version.post  "‌">
+<!ENTITY updateApplication.version.post  "">
 <!ENTITY updateApplication.description   "&brandShortName; ला परवानगी द्या">
 <!ENTITY updateAuto3.label               "स्वयं अद्ययावत करा (शिफारस)">
 <!ENTITY updateAuto3.accesskey           "A">
@@ -116,7 +116,7 @@ available. -->
 <!ENTITY offlineStorageNotifyExceptions.label     "अपवाद…">
 <!ENTITY offlineStorageNotifyExceptions.accesskey "x">
 
-<!ENTITY offlineAppsList2.label          "खालील संकेतस्थळांना ऑफलाइन वापरकरीता डाटा साठवण्यास परवानगी आहे:">
+<!ENTITY offlineAppsList3.label          "खालील संकेतस्थळांना ऑफलाइन वापरकरीता डाटा साठवण्यास परवानगी आहे">
 <!ENTITY offlineAppsList.height          "7em">
 <!ENTITY offlineAppsListRemove.label     "काढून टाका…">
 <!ENTITY offlineAppsListRemove.accesskey "R">
@@ -130,9 +130,9 @@ available. -->
 <!ENTITY selectCerts.ask.accesskey       "A">
 <!ENTITY enableOCSP.label                "क्वेरी OCSP रेसपाँडर सध्याच्या प्रमाणपत्रांची वैधताची खात्री करते">
 <!ENTITY enableOCSP.accesskey            "Q">
-<!ENTITY viewCerts2.label                "प्रमाणपत्र पहा…">
+<!ENTITY viewCerts2.label                "प्रमाणपत्रे बघा">
 <!ENTITY viewCerts2.accesskey            "C">
-<!ENTITY viewSecurityDevices2.label      "सुरक्षा साधने…">
+<!ENTITY viewSecurityDevices2.label      "सुरक्षा साधने">
 <!ENTITY viewSecurityDevices2.accesskey  "D">
 
 <!ENTITY performance.label               "कार्यक्षमता">

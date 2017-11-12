@@ -17,7 +17,7 @@
 <!ENTITY engine.addons.label        "Kiegészítők">
 <!ENTITY engine.addons.accesskey    "K">
 <!ENTITY engine.addresses.label     "Címek">
-<!ENTITY engine.addresses.accesskey "C">
+<!ENTITY engine.addresses.accesskey "e">
 <!ENTITY engine.creditcards.label   "Bankkártyák">
 <!ENTITY engine.creditcards.accesskey "B">
 
@@ -66,10 +66,10 @@ both, to better adapt this sentence to their language.
 <!ENTITY signedOut.caption            "Vigye magával a webet">
 <!ENTITY signedOut.description        "Szinkronizálja könyvjelzőit, előzményeit, lapjait, jelszavait, kiegészítőit és beállításait minden eszközén.">
 <!ENTITY signedOut.accountBox.title   "Kapcsolódjon egy &syncBrand.fxAccount.label;kal">
-<!ENTITY signedOut.accountBox.create  "Fiók létrehozása">
-<!ENTITY signedOut.accountBox.create.accesskey  "F">
-<!ENTITY signedOut.accountBox.signin  "Bejelentkezés">
-<!ENTITY signedOut.accountBox.signin.accesskey  "B">
+<!ENTITY signedOut.accountBox.create2 "Nincs felhasználóneve? Kezdjen neki">
+<!ENTITY signedOut.accountBox.create2.accesskey "K">
+<!ENTITY signedOut.accountBox.signin2 "Bejelentkezés…">
+<!ENTITY signedOut.accountBox.signin2.accesskey "B">
 
 <!ENTITY signedIn.settings.label       "Sync beállítások">
 <!ENTITY signedIn.settings.description "Válassza ki, mit szeretne szinkronizálni eszközei között a &brandShortName; segítségével.">

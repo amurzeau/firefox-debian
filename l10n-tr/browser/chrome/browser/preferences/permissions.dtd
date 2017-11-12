@@ -5,14 +5,14 @@
 <!ENTITY window.title                 "İstisnalar">
 <!ENTITY window.width                 "45em">
 
-<!ENTITY treehead.sitename2.label     "Site">
+<!ENTITY treehead.sitename2.label     "Web sitesi">
 <!ENTITY treehead.status.label        "Durum">
-<!ENTITY removepermission2.label      "Siteyi kaldır">
-<!ENTITY removepermission2.accesskey  "K">
-<!ENTITY removeallpermissions2.label  "Tüm siteleri kaldır">
-<!ENTITY removeallpermissions2.accesskey "d">
-<!ENTITY address.label                "Site adresi:">
-<!ENTITY address.accesskey            "d">
+<!ENTITY removepermission2.label      "Siteyi sil">
+<!ENTITY removepermission2.accesskey  "S">
+<!ENTITY removeallpermissions2.label  "Tüm siteleri sil">
+<!ENTITY removeallpermissions2.accesskey "e">
+<!ENTITY address2.label               "Site adresi">
+<!ENTITY address2.accesskey           "d">
 <!ENTITY block.label                  "Engelle">
 <!ENTITY block.accesskey              "E">
 <!ENTITY session.label                "Oturum boyunca izin ver">
@@ -26,3 +26,4 @@
 <!ENTITY button.ok.label              "Değişiklikleri kaydet">
 <!ENTITY button.ok.accesskey          "D">
 
+<!ENTITY searchbox.placeholder        "Sitede ara">

@@ -63,7 +63,7 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 <!ENTITY aboutSupport.appBasicsPerformance "წარმადობა">
 
 <!-- LOCALIZATION NOTE the term "Service Workers" should not be translated. -->
-<!ENTITY aboutSupport.appBasicsServiceWorkers "რეგისტრირებული Service Workers">
+<!ENTITY aboutSupport.appBasicsServiceWorkers "დარეგისტრებული Service Workers">
 
 <!ENTITY aboutSupport.appBasicsProfiles "პროფილები">
 
@@ -97,7 +97,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.lockedPrefsName "სახელი">
 <!ENTITY aboutSupport.lockedPrefsValue "მნიშვნელობა">
 
-<!ENTITY aboutSupport.graphicsTitle "გრაფიკები">
+<!ENTITY aboutSupport.graphicsTitle "გამოსახულებები">
 
 <!ENTITY aboutSupport.placeDatabaseTitle "Places მონაცემთა ბაზა">
 <!ENTITY aboutSupport.placeDatabaseIntegrity "მთლიანობა">
@@ -110,13 +110,14 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.a11yActivated "აქტივირებული">
 <!ENTITY aboutSupport.a11yForceDisabled "დამხმარე საშუალებების აკრძალვა">
 <!ENTITY aboutSupport.a11yHandlerUsed "გამოყენებულია ხელმისაწვდომი დამმუშავებელი">
+<!ENTITY aboutSupport.a11yInstantiator "დამხმარე Instantiator">
 
 <!ENTITY aboutSupport.libraryVersionsTitle "ბიბლიოთეკის ვერსიები">
 
 <!ENTITY aboutSupport.installationHistoryTitle "დაყენების ისტორია">
 <!ENTITY aboutSupport.updateHistoryTitle "განახლების ისტორია">
 
-<!ENTITY aboutSupport.copyTextToClipboard.label "დატექსტის ბუფერში კოპირება">
+<!ENTITY aboutSupport.copyTextToClipboard.label "ტექსტის ბუფერში დაკოპირება">
 <!ENTITY aboutSupport.copyRawDataToClipboard.label "ნედლი მონაცემების ბუფერში დაკოპირება">
 
 <!ENTITY aboutSupport.sandboxTitle "იზოლირებული გარემო">
@@ -148,7 +149,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.mediaDeviceGroup "ჯგუფი">
 <!ENTITY aboutSupport.mediaDeviceVendor "მწარმოებელი">
 <!ENTITY aboutSupport.mediaDeviceState "მდგომარეობა">
-<!ENTITY aboutSupport.mediaDevicePreferred "უპირატესი">
+<!ENTITY aboutSupport.mediaDevicePreferred "სასურველი">
 <!ENTITY aboutSupport.mediaDeviceFormat "ფორმატი">
 <!ENTITY aboutSupport.mediaDeviceChannels "არხები">
 <!ENTITY aboutSupport.mediaDeviceRate "სიხშირე">

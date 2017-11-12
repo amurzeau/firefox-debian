@@ -75,9 +75,7 @@
 <!ENTITY projectPanel_tabs "ٹیبیں">
 <!ENTITY runtimePanel_usb "USB کے الات">
 <!ENTITY runtimePanel_wifi "وائی فائی آلات">
-<!ENTITY runtimePanel_simulator "سمیلیٹرز">
 <!ENTITY runtimePanel_other "دیگر">
-<!ENTITY runtimePanel_installsimulator "سمیولیٹر کو تنصیب کریں">
 <!ENTITY runtimePanel_noadbhelper "ADB مددگار تنصیب کریں">
 <!ENTITY runtimePanel_nousbdevice "آپ کے آلے کو نہیں دیکھ سکتے؟">
 <!ENTITY runtimePanel_refreshDevices_label " الات تازہ کریں">
@@ -174,19 +172,3 @@
 
 <!-- Logs panel -->
 <!ENTITY logs_title "پری پیکیجنگ حکم لاگز">
-
-<!-- Simulator Options -->
-<!ENTITY simulator_title "سملیٹر اختیارات">
-<!ENTITY simulator_remove "سملیٹر حذف کریں">
-<!ENTITY simulator_reset "طےشدہ بحال کریں">
-<!ENTITY simulator_name "نام">
-<!ENTITY simulator_software "سافٹ ویئر">
-<!ENTITY simulator_version "ورژن">
-<!ENTITY simulator_profile "پروفائل">
-<!ENTITY simulator_hardware "ہاڑڈویئر">
-<!ENTITY simulator_device "آلہ">
-<!ENTITY simulator_screenSize "سکرین">
-<!ENTITY simulator_pixelRatio "دانہ کا تناسب">
-<!ENTITY simulator_tv_data "ٹی وی تخروپن">
-<!ENTITY simulator_tv_data_open "موافقت پذیری ڈیٹا">
-<!ENTITY simulator_tv_data_open_button "کھولیں تشکیل ڈائرکٹری ...">

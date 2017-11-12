@@ -1,8 +1,8 @@
 <!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<!-- LOCALIZATION NOTE (places.library.title): use "Library", "Archive" or "Repository" -->
 
+<!-- LOCALIZATION NOTE (places.library.title): use "Library", "Archive" or "Repository" -->
 <!ENTITY places.library.title  "Biblioteka">
 <!ENTITY places.library.width  "700">
 <!ENTITY places.library.height "500">
@@ -36,7 +36,7 @@
 
 <!ENTITY cmd.backup.label               "Backup…">
 <!ENTITY cmd.backup.accesskey           "B">
-<!ENTITY cmd.restore2.label             "Povrati">
+<!ENTITY cmd.restore2.label             "Vrati">
 <!ENTITY cmd.restore2.accesskey         "r">
 <!ENTITY cmd.restoreFromFile.label      "Izaberi fajl…">
 <!ENTITY cmd.restoreFromFile.accesskey  "I">
@@ -85,6 +85,8 @@
 <!ENTITY col.dateadded.label     "Dodato">
 <!ENTITY col.lastmodified.label  "Zadnja izmjena">
 
+<!ENTITY historySearch.placeholder  "Pretraži historiju">
+<!ENTITY bookmarksSearch.placeholder  "Pretraži zabilješke">
 
 <!ENTITY cmd.find.key  "f">
 

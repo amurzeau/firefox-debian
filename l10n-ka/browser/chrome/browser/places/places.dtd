@@ -18,7 +18,7 @@
 <!ENTITY views.tooltip                  "შეცვალეთ ხედი">
 <!ENTITY view.columns.label             "სვეტების ჩვენება">
 <!ENTITY view.columns.accesskey         "ს">
-<!ENTITY view.sort.label                "დახარისხდება">
+<!ENTITY view.sort.label                "დახარისხება">
 <!ENTITY view.sort.accesskey            "რ">
 <!ENTITY view.unsorted.label            "დაუხარისხებლად">
 <!ENTITY view.unsorted.accesskey        "ლ">
@@ -29,7 +29,7 @@
 
 <!ENTITY importBookmarksFromHTML.label     "სანიშნეების შემოტანა HTML ფაილიდან…">
 <!ENTITY importBookmarksFromHTML.accesskey "შ">
-<!ENTITY exportBookmarksToHTML.label       "სანიშნეების გატანა HTML ფაილში…">
+<!ENTITY exportBookmarksToHTML.label       "სანიშნეების შენახვა HTML ფაილად…">
 <!ENTITY exportBookmarksToHTML.accesskey   "გ">
 <!ENTITY importOtherBrowser.label          "მონაცემების გადმოტანა სხვა ბრაუზერიდან…">
 <!ENTITY importOtherBrowser.accesskey      "ს">
@@ -85,7 +85,8 @@
 <!ENTITY col.dateadded.label     "დამატებული">
 <!ENTITY col.lastmodified.label  "ბოლო ცვლილება">
 
-<!ENTITY search.placeholder  "ძიება">
+<!ENTITY historySearch.placeholder  "ძიება ისტორიაში">
+<!ENTITY bookmarksSearch.placeholder  "სანიშნეების ძიება">
 
 <!ENTITY cmd.find.key  "f">
 

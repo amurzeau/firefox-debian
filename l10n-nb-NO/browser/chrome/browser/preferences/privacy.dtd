@@ -27,7 +27,7 @@
 
 <!ENTITY  doNotTrack.description        "Send nettsider et «Ikke spor»-signal om at du ikke vil bli sporet">
 <!ENTITY  doNotTrack.learnMore.label    "Les mer">
-<!ENTITY  doNotTrack.default.label      "Berre når du bruker sporingsbeskyttelse">
+<!ENTITY  doNotTrack.default.label      "Bare når du bruker sporingsbeskyttelse">
 <!ENTITY  doNotTrack.always.label       "Alltid">
 
 <!ENTITY  history.label                 "Historikk">
@@ -49,14 +49,14 @@
 <!ENTITY  acceptCookies2.label          "Tillat infokapsler fra nettsteder">
 <!ENTITY  acceptCookies2.accesskey      "T">
 
-<!ENTITY  acceptThirdParty.pre.label      "Tillat infokapsler fra tredjepart:">
-<!ENTITY  acceptThirdParty.pre.accesskey  "l">
+<!ENTITY  acceptThirdParty2.pre.label     "Tillat tredjeparts infokapsler">
+<!ENTITY  acceptThirdParty2.pre.accesskey "T">
 <!ENTITY  acceptThirdParty.always.label   "Alltid">
 <!ENTITY  acceptThirdParty.never.label    "Aldri">
 <!ENTITY  acceptThirdParty.visited.label  "Fra besøkte">
 
-<!ENTITY  keepUntil.label               "Behold de inntil:">
-<!ENTITY  keepUntil.accesskey           "B">
+<!ENTITY  keepUntil2.label              "Behold inntil">
+<!ENTITY  keepUntil2.accesskey          "e">
 
 <!ENTITY  expire.label                  "de utløper på dato">
 <!ENTITY  close.label                   "&brandShortName; avsluttes">
@@ -113,3 +113,8 @@
 <!ENTITY  browserContainersEnabled.accesskey    "k">
 <!ENTITY  browserContainersSettings.label        "Innstillinger …">
 <!ENTITY  browserContainersSettings.accesskey    "I">
+
+<!ENTITY  a11yPrivacy.checkbox.label     "Hindre tilgangstjenester tilgang til nettleseren din">
+<!ENTITY  a11yPrivacy.checkbox.accesskey "a">
+<!ENTITY  a11yPrivacy.learnmore.label    "Les mer">
+<!ENTITY enableSafeBrowsingLearnMore.label "Les mer">

@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!-- LOCALIZATION NOTE : FILE This file contains the browser main menu items -->
-<!-- LOCALIZATION NOTE : FILE Do not translate commandkeys --> 
+<!-- LOCALIZATION NOTE : FILE Do not translate commandkeys -->
 
 <!-- LOCALIZATION NOTE (mainWindow.title): DONT_TRANSLATE -->
 <!ENTITY mainWindow.title "&brandFullName;">
@@ -23,6 +23,10 @@
 <!ENTITY  reloadTab.accesskey                "А">
 <!ENTITY  reloadAllTabs.label                "Перачытаць усе карткі">
 <!ENTITY  reloadAllTabs.accesskey            "у">
+<!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
+a tab (i.e. it is a verb, not adjective). -->
+<!ENTITY  duplicateTab.label                 "Дубляваць картку">
+<!ENTITY  duplicateTab.accesskey             "Д">
 <!-- LOCALIZATION NOTE (closeTabsToTheEnd.label): This should indicate the
 direction in which tabs are closed, i.e. locales that use RTL mode should say
 left instead of right. -->
@@ -46,6 +50,7 @@ can reach it easily. -->
 <!ENTITY  sendPageToDevice.accesskey         "п">
 <!ENTITY  sendLinkToDevice.label             "Даслаць спасылку на прыладу">
 <!ENTITY  sendLinkToDevice.accesskey         "п">
+<!ENTITY  sendToDeviceFeedback.label         "Адпраўлена!">
 <!ENTITY  moveToNewWindow.label              "Перанесці ў новае акно">
 <!ENTITY  moveToNewWindow.accesskey          "а">
 <!ENTITY  bookmarkAllTabs.label              "Закладкі на ўсе карткі…">
@@ -95,6 +100,13 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY pageSourceCmd.label "Зыходны код старонкі">
 <!ENTITY pageSourceCmd.accesskey "ы">
 <!ENTITY pageSourceCmd.commandkey "u">
+<!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
+Option+Command keyboard shortcut letter that Safari and Chrome use for "View
+Source" on macOS. pageSourceCmd.commandkey above is Firefox's official keyboard
+shortcut shown in the GUI. SafariCommandKey is an alias provided for the
+convenience of Safari and Chrome users on macOS. See bug 1398988. -->
+<!ENTITY pageSourceCmd.SafariCommandKey "u">
+
 <!ENTITY pageInfoCmd.label "Звесткі пра старонку">
 <!ENTITY pageInfoCmd.accesskey "З">
 <!ENTITY pageInfoCmd.commandkey "i">
@@ -160,24 +172,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarksMenu.accesskey "З">
 <!ENTITY bookmarkThisPageCmd.label "Дадаць закладку на старонку">
 <!ENTITY editThisBookmarkCmd.label "Правіць гэтую закладку">
-<!ENTITY bookmarkThisPageCmd.commandkey "в">
-<!-- LOCALIZATION NOTE (findShareServices.label):
-  -  Use the unicode ellipsis char, \u2026,
-  -  or use "..." if \u2026 doesn't suit traditions in your locale. -->
-<!ENTITY findShareServices.label "Шукаць больш сэрвісаў супольнага захоўвання…">
-<!ENTITY sharePageCmd.label "Падзяліцца старонкай">
-<!ENTITY sharePageCmd.commandkey "П">
-<!ENTITY sharePageCmd.accesskey "с">
-<!-- LOCALIZATION NOTE (shareLink.accesskey): must be different than the following share access keys -->
-<!ENTITY shareLink.label "Падзяліцца гэтай спасылкай">
-<!ENTITY shareLink.accesskey "а">
-<!ENTITY shareImage.label "Падзяліцца гэтай выявай">
-<!ENTITY shareImage.accesskey "ц">
-<!ENTITY shareSelect.label "Падзяліцца вылучэннем">
-<!ENTITY shareSelect.accesskey "ц">
-<!ENTITY shareVideo.label "Падзяліцца гэтым відэа">
-<!ENTITY shareVideo.accesskey "ц">
-<!ENTITY feedsMenu2.label "Падпісацца на гэту старонку">
+<!ENTITY bookmarkThisPageCmd.commandkey "d">
+
 <!ENTITY subscribeToPageMenupopup.label "Падпісацца на гэтую старонку">
 <!ENTITY subscribeToPageMenuitem.label "Падпісацца на гэтую старонку…">
 <!ENTITY addCurPagesCmd.label "Закладкі на ўсе карткі…">
@@ -209,6 +205,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.defaultNotificationAnchor.tooltip         "Адкрыць панэль паведамленняў">
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "Адкрыць панэль запытаў месцазнаходжання">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "Адкрыць панэль паведамленняў аб усталяванні дадатка">
+<!ENTITY urlbar.canvasNotificationAnchor.tooltip          "Кіраванне доступам да інфармацыі ў canvas">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "Адкрыць панэль паведамленняў пазасеткавага сховішча">
 <!ENTITY urlbar.passwordNotificationAnchor.tooltip        "Адкрыць панэль паведамленняў аб захаванні пароля">
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Кіраваць выкарыстаннем плагіна">
@@ -233,6 +230,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Вы заблакавалі апавяшчэнні з гэтага вэб-сайта.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Вы заблакавалі захоўванне звестак для гэтага вэб-сайта.">
 
+<!ENTITY urlbar.popupBlocked.tooltip             "Вы заблакавалі выплыўныя вокны для гэтага вэб-сайта.">
+
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Паказаць гісторыю">
 
 <!ENTITY searchItem.title             "Пошук">
@@ -243,31 +242,38 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarksButton.label          "Закладкі">
 <!ENTITY bookmarksCmd.commandkey "b">
 
-<!ENTITY bookmarksMenuButton.label          "Закладкі">
-<!ENTITY bookmarksMenuButton.other.label "Іншыя закладкі">
-<!ENTITY bookmarksMenuButton.mobile.label "Мабільныя закладкі">
+<!ENTITY bookmarksSubview.label             "Закладкі">
+<!ENTITY bookmarksMenuButton2.label         "Меню закладак">
+<!ENTITY bookmarksMenuButton.other.label    "Іншыя закладкі">
+<!ENTITY bookmarksMenuButton.mobile.label   "Мабільныя закладкі">
 <!ENTITY viewBookmarksSidebar2.label        "Паказаць бакавую панэль закладак">
+<!ENTITY hideBookmarksSidebar.label         "Схаваць бакавую панэль закладак">
 <!ENTITY viewBookmarksToolbar.label         "Паказаць паліцу закладак">
+<!ENTITY hideBookmarksToolbar.label         "Схаваць бакавую панэль закладак">
 <!ENTITY searchBookmarks.label              "Шукаць у закладках">
-
-<!ENTITY containersMenu.label "Кантэйнеры">
+<!ENTITY bookmarkingTools.label             "Прылады закладак">
+<!ENTITY addBookmarksMenu.label             "Дадаць меню закладак на паліцу прылад">
+<!ENTITY removeBookmarksMenu.label          "Прыбраць меню закладак з паліцы прылад">
 
 <!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
-<!ENTITY bookmarksGtkCmd.commandkey "а">
+<!ENTITY bookmarksGtkCmd.commandkey "o">
 <!ENTITY bookmarksWinCmd.commandkey "i">
 
 <!ENTITY historyButton.label            "Гісторыя">
 <!ENTITY historySidebarCmd.commandKey   "h">
 
 <!ENTITY toolsMenu.label              "Прылады">
-<!ENTITY toolsMenu.accesskey          "л"> 
+<!ENTITY toolsMenu.accesskey          "л">
 
 <!ENTITY keywordfield.label           "Дадаць ключавое слова для гэтага пошуку…">
 <!ENTITY keywordfield.accesskey       "к">
 
 <!ENTITY downloads.label              "Сцягванні">
+<!-- LOCALIZATION NOTE (libraryDownloads.label): This label is similar to
+  -  downloads.label, but used in the Library panel. -->
+<!ENTITY libraryDownloads.label       "Сцягванні">
 <!ENTITY downloads.accesskey          "С">
 <!ENTITY downloads.commandkey         "j">
 <!ENTITY downloadsUnix.commandkey     "y">
@@ -281,7 +287,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY inspectContextMenu.label     "Даследаваць элемент">
 <!ENTITY inspectContextMenu.accesskey "Д">
 
-<!ENTITY fileMenu.label         "Файл"> 
+<!ENTITY fileMenu.label         "Файл">
 <!ENTITY fileMenu.accesskey       "Ф">
 <!ENTITY newUserContext.label             "Новая картка кантэйнера">
 <!ENTITY newUserContext.accesskey         "К">
@@ -292,45 +298,45 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY newPrivateWindow.accesskey "а">
 <!ENTITY newNonRemoteWindow.label   "Новае не-e10s акно">
 
-<!ENTITY editMenu.label         "Праўка"> 
-<!ENTITY editMenu.accesskey       "р"> 
-<!ENTITY undoCmd.label            "Адмяніць">  
-<!ENTITY undoCmd.key            "Z">  
-<!ENTITY undoCmd.accesskey          "м"> 
-<!ENTITY redoCmd.label            "Вярнуць">  
-<!ENTITY redoCmd.key            "Y">  
-<!ENTITY redoCmd.accesskey          "р"> 
-<!ENTITY cutCmd.label           "Выразаць">  
-<!ENTITY cutCmd.key             "X">  
-<!ENTITY cutCmd.accesskey         "р"> 
-<!ENTITY copyCmd.label            "Капіяваць">  
-<!ENTITY copyCmd.key            "C">  
-<!ENTITY copyCmd.accesskey          "К"> 
-<!ENTITY pasteCmd.label           "Уставіць">  
-<!ENTITY pasteCmd.key           "V">  
-<!ENTITY pasteCmd.accesskey         "У"> 
-<!ENTITY deleteCmd.label          "Выдаліць">  
-<!ENTITY deleteCmd.key            "D">  
-<!ENTITY deleteCmd.accesskey        "д"> 
-<!ENTITY selectAllCmd.label         "Вылучыць усё">  
-<!ENTITY selectAllCmd.key         "A">  
-<!ENTITY selectAllCmd.accesskey       "ё"> 
+<!ENTITY editMenu.label         "Праўка">
+<!ENTITY editMenu.accesskey       "р">
+<!ENTITY undoCmd.label            "Адмяніць">
+<!ENTITY undoCmd.key            "Z">
+<!ENTITY undoCmd.accesskey          "м">
+<!ENTITY redoCmd.label            "Вярнуць">
+<!ENTITY redoCmd.key            "Y">
+<!ENTITY redoCmd.accesskey          "р">
+<!ENTITY cutCmd.label           "Выразаць">
+<!ENTITY cutCmd.key             "X">
+<!ENTITY cutCmd.accesskey         "р">
+<!ENTITY copyCmd.label            "Капіяваць">
+<!ENTITY copyCmd.key            "C">
+<!ENTITY copyCmd.accesskey          "К">
+<!ENTITY pasteCmd.label           "Уставіць">
+<!ENTITY pasteCmd.key           "V">
+<!ENTITY pasteCmd.accesskey         "У">
+<!ENTITY deleteCmd.label          "Выдаліць">
+<!ENTITY deleteCmd.key            "D">
+<!ENTITY deleteCmd.accesskey        "д">
+<!ENTITY selectAllCmd.label         "Вылучыць усё">
+<!ENTITY selectAllCmd.key         "A">
+<!ENTITY selectAllCmd.accesskey       "ё">
 <!ENTITY preferencesCmd2.label       "Налады">
 <!ENTITY preferencesCmd2.accesskey     "Н">
 <!ENTITY preferencesCmdUnix.label       "Налады">
-<!ENTITY preferencesCmdUnix.accesskey     "л"> 
+<!ENTITY preferencesCmdUnix.accesskey     "л">
 
 <!ENTITY clearRecentHistory.label               "Ачысціць нядаўнюю гісторыю…">
 
-<!ENTITY privateBrowsingCmd.commandkey          "А">
+<!ENTITY privateBrowsingCmd.commandkey          "P">
 
-<!ENTITY viewMenu.label         "Прагляд"> 
-<!ENTITY viewMenu.accesskey       "П"> 
-<!ENTITY viewToolbarsMenu.label       "Паліцы прылад"> 
-<!ENTITY viewToolbarsMenu.accesskey     "л"> 
+<!ENTITY viewMenu.label         "Прагляд">
+<!ENTITY viewMenu.accesskey       "П">
+<!ENTITY viewToolbarsMenu.label       "Паліцы прылад">
+<!ENTITY viewToolbarsMenu.accesskey     "л">
 <!ENTITY viewSidebarMenu.label "Бакавая панэль">
 <!ENTITY viewSidebarMenu.accesskey "п">
-<!ENTITY viewCustomizeToolbar.label       "Уладкаваць…"> 
+<!ENTITY viewCustomizeToolbar.label       "Уладкаваць…">
 <!ENTITY viewCustomizeToolbar.accesskey     "л">
 <!ENTITY overflowCustomizeToolbar.label       "Уладкаванне паліцы прылад…">
 <!ENTITY overflowCustomizeToolbar.accesskey   "У">
@@ -343,13 +349,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY historyRestoreLastSession.label "Аднавіць папярэдні сеанс">
 
 <!ENTITY showAllHistoryCmd2.label "Паказаць усю гісторыю">
-<!ENTITY showAllHistoryCmd.commandkey "г">
+<!ENTITY showAllHistoryCmd.commandkey "H">
 
 <!ENTITY appMenuCustomize.label "Уладкаваць">
 <!ENTITY appMenuCustomize.tooltip "Наладзіць меню і паліцы прылад">
 <!ENTITY appMenuCustomizeExit.label "Скончыць уладкаванне">
 <!ENTITY appMenuCustomizeExit.tooltip "Завяршэнне ўладкавання">
-<!ENTITY appMenuHistory.label "Гісторыя">
 <!ENTITY appMenuHistory.showAll.label "Паказаць усю гісторыю">
 <!ENTITY appMenuHistory.clearRecent.label "Ачысціць нядаўнюю гісторыю…">
 <!ENTITY appMenuHistory.restoreSession.label "Аднавіць папярэдні сеанс">
@@ -383,6 +388,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Увайсці ў Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Кіраваць прыладамі...">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Паказаць бакавую панэль сінхранізаваных картак">
+
+<!ENTITY appMenuRecentHighlights.label "Апошнія падсвятленні">
 
 <!ENTITY customizeMenu.addToToolbar.label "Дадаць на паліцу прылад">
 <!ENTITY customizeMenu.addToToolbar.accesskey "Д">
@@ -526,12 +533,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY openLinkCmdInContainerTab.accesskey "ы">
 <!ENTITY showOnlyThisFrameCmd.label     "Паказваць толькі гэтую рамку">
 <!ENTITY showOnlyThisFrameCmd.accesskey "г">
-<!ENTITY reloadCmd.commandkey         "к">
+<!ENTITY reloadCmd.commandkey         "r">
 <!ENTITY reloadFrameCmd.label         "Абнавіць рамку">
 <!ENTITY reloadFrameCmd.accesskey     "А">
 <!ENTITY viewPartialSourceForSelectionCmd.label "Праглядзець зыходнік вылучэння">
 <!ENTITY viewPartialSourceForMathMLCmd.label    "Праглядзець зыходнік MathML">
-<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both 
+<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both
          viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label -->
 <!ENTITY viewPartialSourceCmd.accesskey "л">
 <!ENTITY viewPageSourceCmd.label      "Праглядзець зыходнік старонкі">
@@ -561,7 +568,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisLinkCmd.accesskey  "с">
 <!ENTITY bookmarkThisFrameCmd.label      "Дадаць закладку на гэту рамку">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "р">
-<!ENTITY copyURLCmd.label             "Капіяваць URL">
+<!ENTITY pageAction.copyLink.label    "Капіяваць спасылку">
+<!ENTITY copyURLFeedback.label        "Скапіявана!">
 <!ENTITY emailPageCmd.label           "Даслаць спасылку эл.поштай…">
 <!ENTITY emailPageCmd.accesskey       "с">
 <!ENTITY savePageCmd.label            "Захаваць старонку як…">
@@ -585,8 +593,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY emailImageCmd.accesskey      "Д">
 <!ENTITY emailVideoCmd.label          "Даслаць відэа эл.поштай…">
 <!ENTITY emailVideoCmd.accesskey      "д">
-<!ENTITY castVideoCmd.label           "Даслаць відэа на прыладу">
-<!ENTITY castVideoCmd.accesskey       "а">
 <!ENTITY emailAudioCmd.label          "Даслаць гук эл.поштай…">
 <!ENTITY emailAudioCmd.accesskey      "Д">
 <!ENTITY playPluginCmd.label          "Задзейнічаць плагін">
@@ -598,7 +604,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY copyImageCmd.label           "Капіяваць спасылку на выяву">
 <!ENTITY copyImageCmd.accesskey       "а">
 <!ENTITY copyImageContentsCmd.label   "Капіяваць выяву">
-<!ENTITY copyImageContentsCmd.accesskey  "я"> 
+<!ENTITY copyImageContentsCmd.accesskey  "я">
 <!ENTITY copyVideoURLCmd.label        "Капіяваць спасылку на відэа">
 <!ENTITY copyVideoURLCmd.accesskey    "К">
 <!ENTITY copyAudioURLCmd.label        "Капіяваць спасылку на аўдыё">
@@ -694,13 +700,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY quitApplicationCmdWin2.tooltip     "Выйсці з &brandShorterName;">
 <!ENTITY goBackCmd.commandKey "[">
 <!ENTITY goForwardCmd.commandKey "]">
-<!ENTITY quitApplicationCmd.label       "Выйсці"> 
+<!ENTITY quitApplicationCmd.label       "Выйсці">
 <!ENTITY quitApplicationCmd.accesskey   "В">
 <!ENTITY quitApplicationCmdMac2.label   "Выйсці з &brandShorterName;">
 <!ENTITY quitApplicationCmd.key         "Q">
 
-<!ENTITY closeCmd.label                 "Закрыць">  
-<!ENTITY closeCmd.key                   "W">  
+<!ENTITY closeCmd.label                 "Закрыць">
+<!ENTITY closeCmd.key                   "W">
 <!ENTITY closeCmd.accesskey             "ч">
 
 <!ENTITY toggleMuteCmd.key              "Ь">
@@ -802,6 +808,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Уключыце сінхранізацыю картак, каб бачыць спіс картак з вашых іншых прылад.">
+<!ENTITY syncedTabs.sidebar.searchPlaceholder  "Шукаць у сінхранізаваных картках">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
                         syncedTabs.context.openAllInTabs.accesskey):
@@ -836,20 +843,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncReAuthItem.accesskey     "П">
 <!ENTITY syncToolbarButton.label      "Sync">
 
-<!ENTITY social.addons.label "Кіраваць сэрвісамі…">
-
-<!ENTITY social.directory.label "Каталог актывацый">
-<!ENTITY social.directory.text "Вы можаце актываваць сэрвісы сумеснага доступу з каталога.">
-<!ENTITY social.directory.button "Перанесці мяне туды!">
-<!ENTITY social.directory.introText "Націсніце на службу, каб дадаць яе ў &brandShortName;.">
-<!ENTITY social.directory.viewmore.text "Паказаць больш">
-
-<!ENTITY customizeMode.menuAndToolbars.header2 "Дадатковыя прылады і магчымасці">
+<!ENTITY customizeMode.menuAndToolbars.header3 "Перацягнуць любімыя элементы на паліцу прылад або ў меню перапаўнення.">
 <!ENTITY customizeMode.menuAndToolbars.empty "Хочаце іншыя прылады?">
 <!ENTITY customizeMode.menuAndToolbars.emptyLink "Выберыце з тысяч дадаткаў">
 <!ENTITY customizeMode.restoreDefaults "Аднавіць прадвызначаныя">
 <!ENTITY customizeMode.done "Гатова">
 <!ENTITY customizeMode.titlebar "Панэль загалоўка">
+<!ENTITY customizeMode.extraDragSpace "Перацягніце прагал">
 <!ENTITY customizeMode.toolbars2 "Паліцы прылад">
 <!ENTITY customizeMode.lwthemes "Тэмы">
 <!ENTITY customizeMode.lwthemes.myThemes "Мае тэмы">
@@ -859,6 +859,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.lwthemes.menuGetMore "Атрымаць больш тэм">
 <!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "А">
 <!ENTITY customizeMode.emptyOverflowList.description "Перацягніце элементы сюды, каб трымаць іх пад рукой, але не на паліцы прылад…">
+<!ENTITY customizeMode.overflowList.title2 "Меню перапаўнення">
+<!ENTITY customizeMode.overflowList.description "Перацягніце элементы сюды, каб трымаць іх пад рукой, але не на паліцы прылад…">
 <!ENTITY customizeMode.uidensity "Шчыльнасць">
 <!-- LOCALIZATION NOTE (customizeMode.uidensity.menuNormal.*):
      “Normal” is displayed in the Customize screen, under the Density menu. -->
@@ -879,6 +881,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.uidensity.menuTouch.tooltip "Дотык">
 <!ENTITY customizeMode.uidensity.menuTouch.accessKey "Д">
 <!ENTITY customizeMode.uidensity.autoTouchMode.checkbox.label "Выкарыстоўваць дотык для планшэтнага рэжыму">
+
+<!ENTITY customizeMode.autoHideDownloadsButton.label "Хаваць аўтаматычна">
 
 <!ENTITY getUserMedia.selectCamera.label "Да якой камеры даць доступ:">
 <!ENTITY getUserMedia.selectCamera.accesskey "З">
@@ -904,16 +908,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY trackingProtection.block2.label "Уключыць ахову">
 <!ENTITY trackingProtection.block2.accesskey "У">
 
-<!ENTITY trackingContentBlocked.message "Асочванне">
-<!ENTITY trackingContentBlocked.moreinfo "Часткі старонкі, якія асочвалі вашы дзеянні ў інтэрнэце, былі заблакаваны.">
-<!ENTITY trackingContentBlocked.learnMore "Даведацца больш">
-<!ENTITY trackingContentBlocked.options "Налады">
-<!ENTITY trackingContentBlocked.unblock2.label "Адключыць ахову для гэтага сайта">
-<!ENTITY trackingContentBlocked.unblock2.accesskey "А">
-<!ENTITY trackingContentBlocked.block.label "Уключыць ахову">
-<!ENTITY trackingContentBlocked.block.accesskey "У">
-<!ENTITY trackingContentBlocked.disabled.message "Ахова ад сачэння адключана">
-
 <!ENTITY pluginNotification.showAll.label "Паказаць усе">
 <!ENTITY pluginNotification.showAll.accesskey "у">
 
@@ -930,8 +924,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pluginNotification.width "35em">
 
 <!ENTITY uiTour.infoPanel.close "Закрыць">
-
-<!ENTITY appMenuSidebars.label         "Бакавыя панэлі">
 
 <!-- LOCALIZATION NOTE: (panicButton.view.mainTimeframeDesc, panicButton.view.5min, panicButton.view.2hr, panicButton.view.day):
      The .mainTimeframeDesc string combined with any of the 3 others is meant to form a complete sentence, e.g. "Forget the last: Five minutes".
@@ -979,7 +971,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateManual.cancelButton.accesskey "Н">
 <!ENTITY updateManual.panelUI.label "Атрымаць свежую копію &brandShorterName;">
 
-<!ENTITY updateRestart.message "Пасля хуткага перазапуску &brandShorterName; адновіць ўсе адкрытыя карткі і вокны.">
+<!ENTITY updateRestart.message2 "Пасля хуткага перазапуску &brandShorterName; адновіць ўсе адкрытыя карткі і вокны, якія не былі адчынены ў рэжыме прыватнага аглядання.">
 <!ENTITY updateRestart.header.message2 "Перазапуск для абнаўлення &brandShorterName;.">
 <!ENTITY updateRestart.acceptButton.label "Перазапусціць і аднавіць">
 <!ENTITY updateRestart.acceptButton.accesskey "К">
@@ -991,5 +983,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageAction.addToUrlbar.label "Дадаць у адрасны радок">
 <!ENTITY pageAction.removeFromUrlbar.label "Выдаліць з адраснага радка">
 
-<!ENTITY sendToDevice.label2 "Даслаць на прыладу">
+<!ENTITY pageAction.sendTabToDevice.label "Даслаць картку на прыладу">
 <!ENTITY sendToDevice.syncNotReady.label "Сінхранізацыя прылад…">
+
+<!ENTITY libraryButton.tooltip "Пабачыць гісторыю, запісаныя закладкі і іншае">
+
+<!-- LOCALIZATION NOTE: (accessibilityIndicator.tooltip): This is used to
+     display a tooltip for accessibility indicator in toolbar/tabbar. It is also
+     used as a textual label for the indicator used by assistive technology
+     users. -->
+<!ENTITY accessibilityIndicator.tooltip "Магчымасці даступнасці ўключаны">

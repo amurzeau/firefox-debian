@@ -2,21 +2,34 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY  permissions.label           "უფლებები">
+<!ENTITY  permissions.label           "ნებართვები">
 
 <!ENTITY  blockPopups.label           "ამომხტომი ფირნიშების შეზღუდვა">
 <!ENTITY  blockPopups.accesskey       "დ">
 
-<!ENTITY  notificationsPolicyLearnMore.label   "შეიტყვეთ მეტი">
-<!ENTITY  notificationsPolicyDesc4.label       "საიტები, რომელთაგანაც შეტყობინებების მიღება დაშვებულია">
-<!ENTITY  notificationsPolicyButton.accesskey  "რ">
-<!ENTITY  notificationsPolicyButton.label      "არჩევა…">
 <!ENTITY  notificationsDoNotDisturb.label      "არ შემაწუხოთ">
 <!ENTITY  notificationsDoNotDisturb.accesskey  "წ">
-<!ENTITY  notificationsDoNotDisturbDetails.value "&brandShortName;-ის ხელახლა ჩართვამდე შეტყობინებები არ გამოჩნდება">
+<!ENTITY  notificationsDoNotDisturbDetails.value "&brandShortName;-ის ხელახლა გაშვებამდე შეტყობინებები არ გამოჩნდება">
 
-<!ENTITY  popupExceptions.label       "გამონაკლისები…">
-<!ENTITY  popupExceptions.accesskey   "გ">
+<!ENTITY  popupExceptions.label                                 "გამონაკლისები…">
+<!ENTITY  popupExceptions.accesskey                             "გ">
+
+<!ENTITY  notificationPermissions.label                         "შეტყობინებები">
+<!ENTITY  notificationSettingsButton.label                      "პარამეტრები…">
+<!ENTITY  notificationSettingsButton.accesskey                  "პ">
+<!ENTITY  notificationPermissionsLearnMore.label                "შეიტყვეთ მეტი">
+
+<!ENTITY  locationPermissions.label                             "მდებარეობა">
+<!ENTITY  locationSettingsButton.label                          "პარამეტრები…">
+<!ENTITY  locationSettingsButton.accesskey                      "პ">
+
+<!ENTITY  cameraPermissions.label                               "კამერა">
+<!ENTITY  cameraSettingsButton.label                            "პარამეტრები…">
+<!ENTITY  cameraSettingsButton.accesskey                        "პ">
+
+<!ENTITY  microphonePermissions.label                           "მიკროფონი">
+<!ENTITY  microphoneSettingsButton.label                        "პარამეტრები…">
+<!ENTITY  microphoneSettingsButton.accesskey                    "პ">
 
 <!ENTITY  fontsAndColors.label        "შრიფტები &amp; ფერები">
 
@@ -25,7 +38,7 @@
 <!ENTITY  defaultSize2.label          "ზომა">
 <!ENTITY  defaultSize2.accesskey      "ზ">
 
-<!ENTITY  advancedFonts.label         "დამატებითი…">
+<!ENTITY  advancedFonts.label         "დამატებით…">
 <!ENTITY  advancedFonts.accesskey     "დ">
 
 <!ENTITY  colors.label                "ფერები…">

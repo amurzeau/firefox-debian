@@ -3,17 +3,23 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY firstrun_panel_title_welcome "Chào mừng">
-
-<!ENTITY firstrun_urlbar_message "Chào mừng đến với &brandShortName;">
-<!ENTITY firstrun_urlbar_subtext "Tìm kiếm mọi thứ nhanh hơn với các gợi ý tìm kiếm.">
+<!ENTITY firstrun_urlbar_message2 "Cảm ơn bạn đã chọn &brandShortName;">
+<!ENTITY firstrun_urlbar_subtext2 "Một trình duyệt di động hiện đại từ Mozilla, chúng tôi cam kết mang đến một trang web tự do và mở.">
+<!ENTITY firstrun_panel_title_privacy "Riêng tư">
+<!ENTITY firstrun_privacy_message "Duyệt web không để lại dấu vết">
+<!ENTITY firstrun_privacy_subtext "Duyệt web riêng tư với trình chống theo dõi sẽ ngăn chặn các trình theo dõi trong khi bạn duyệt web và sẽ không ghi nhớ lược sử duyệt web của bạn.">
+<!ENTITY firstrun_panel_title_customize "Tùy chỉnh">
+<!ENTITY firstrun_customize_message "Tạo ra &brandShortName; theo cách của riêng bạn.">
+<!ENTITY firstrun_customize_subtext "Tùy chỉnh &brandShortName; với các tiện ích. Chặn quảng cáo, thêm các tính năng, hoặc chọn một diện mạo mới để phản ánh cá tính của bạn.">
 <!ENTITY firstrun_bookmarks_title "Lược sử">
+<!ENTITY firstrun_bookmarks_message "Những gì bạn yêu thích ngay trước mặt bạn">
 <!ENTITY firstrun_bookmarks_subtext "Lấy kết quả từ trang đánh dấu và lược sử của bạn khi bạn tìm kiếm.">
 <!ENTITY firstrun_data_title "Dữ liệu">
 <!ENTITY firstrun_data_message "Dữ liệu ít hơn, tiết kiệm nhiều hơn">
 <!ENTITY firstrun_data_subtext2 "Tắt ảnh để giảm dữ liệu mà bạn cần tải cho mỗi trang">
 <!ENTITY firstrun_sync_title "Đồng bộ">
-<!ENTITY firstrun_sync_message "&brandShortName;, luôn luôn ở bên bạn">
-<!ENTITY firstrun_sync_subtext "Đồng bộ thẻ, mật khẩu, và các thành phần khác để bạn có thể dùng chúng ở bất cứ đâu.">
+<!ENTITY firstrun_sync_message2 "Tiếp tục trang mà bạn vừa rời khỏi.">
+<!ENTITY firstrun_sync_subtext2 "Sử dụng đồng bộ hóa để tìm trang đánh dấu, mật khẩu và những thứ bạn lưu vào &brandShortName; trên tất cả các thiết bị của bạn.">
 <!ENTITY firstrun_signin_message "Thiết lập kết nối và bắt đầu">
 <!ENTITY firstrun_signin_button "Đăng nhập để đồng bộ">
 <!ENTITY  onboard_start_button_browser "Bắt đầu duyệt web">
@@ -23,11 +29,15 @@
 <!ENTITY firstrun_tabqueue_title "Liên kết">
 <!-- Localization note (firstrun_tabqueue_message): 'Tab queue' is a feature that allows users to queue up or save links from outside of Firefox (without switching apps) - these links will be loaded in Firefox the next time Firefox is opened. -->
 <!ENTITY firstrun_tabqueue_message_off "Bật hàng đợi thẻ">
+<!ENTITY firstrun_tabqueue_subtext_off "Lưu liên kết trong &brandShortName; để xem sau khi bạn truy cập chúng trong các ứng dụng khác.">
 
 <!ENTITY firstrun_tabqueue_message_on "Thành công!">
+<!ENTITY firstrun_tabqueue_subtext_on "Bạn có thể tắt hoàn toàn trong &settings; dưới &pref_category_general;.">
 
 <!ENTITY firstrun_readerview_title "Bài viết">
 <!-- Localization note (firstrun_readerview_message): This is a casual way of describing getting rid of unnecessary things, and is referring to simplifying websites so only the article text and images are visible, removing unnecessary headers or ads. -->
+<!ENTITY firstrun_readerview_message "Giảm sự lộn xộn">
+<!ENTITY firstrun_readerview_subtext "Dùng chế độ đọc để giúp bài viết đẹp hơn để đọc \u2014 kể cả khi ngoại tuyến.">
 
 <!-- Localization note (firstrun_devices_title): This is a casual way of addressing the user, somewhat referring to their online identity (which would include other devices, Firefox usage, accounts, etc). -->
 <!ENTITY firstrun_account_title "Bạn">
@@ -43,6 +53,7 @@
 <!ENTITY  switch_to_tab "Chuyển sang thẻ">
 
 <!-- Localization note: Shown in a snackbar when tab is loaded from cache while device was offline. -->
+<!ENTITY  tab_offline_version "Đang hiển thị phiên bản ngoại tuyến">
 
 <!ENTITY  crash_reporter_title "Trình báo cáo lỗi &brandShortName;">
 <!ENTITY  crash_message2 "&brandShortName; đã gặp sự cố. Thẻ của bạn sẽ được liệt kê trên trang Khởi động &brandShortName; khi bạn khởi động lại.">
@@ -81,6 +92,7 @@
      in the folder. -->
 <!ENTITY bookmark_folder_items "&formatD; thẻ">
 <!ENTITY bookmark_folder_one_item "1 mục">
+<!ENTITY bookmark_folder_updated "Thư mục đã cập nhật">
 <!ENTITY bookmark_parent_folder "Thư mục cha">
 <!ENTITY bookmark_add_folder "Thêm thư mục mới">
 
@@ -195,8 +207,6 @@
 <!ENTITY pref_category_advanced_summary3 "Khôi phục thẻ, tiết kiệm dữ liệu, công cụ phát triển">
 <!ENTITY pref_category_notifications "Thông báo">
 <!ENTITY pref_category_notifications_summary "Tính năng mới, cập nhật của trang">
-<!ENTITY pref_content_notifications "Cập nhật của trang">
-<!ENTITY pref_content_notifications_summary2 "Khám phá nội dung mới từ các trang hỗ trợ">
 <!ENTITY pref_developer_remotedebugging_usb "Gỡ rối từ xa qua USB">
 <!ENTITY pref_developer_remotedebugging_wifi "Gỡ rối từ xa qua WiFi">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Gỡ rồi qua WiFi yêu cầu thiết bị phải có một ứng dụng đọc mã QR được cài đặt.">
@@ -213,6 +223,7 @@
 <!ENTITY pref_category_home_homepage "Trang chủ">
 <!-- Localization note (home_homepage_every_new_tab): The user will see a switch to determine if the
      home page will be use in every new tab. -->
+<!ENTITY home_homepage_every_new_tab "Cũng sử dụng cho các tab mới">
 <!ENTITY home_homepage_title "Đặt trang chủ">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
@@ -231,6 +242,7 @@
 <!ENTITY home_homepage_hint_user_address "Nhập địa chỉ hoặc từ khóa tìm kiếm">
 
 <!-- Localization note: These are shown in the left sidebar on tablets -->
+<!ENTITY pref_header_general "Chung">
 <!ENTITY pref_header_search "Tìm kiếm">
 <!ENTITY pref_header_privacy_short "Riêng tư">
 <!ENTITY pref_header_accessibility "Khả năng truy cập">
@@ -257,9 +269,9 @@
 <!ENTITY pref_tap_to_load_images_disabled2 "Bị chặn">
 
 <!ENTITY pref_show_web_fonts "Hiển thị phông của web">
+<!ENTITY pref_show_web_fonts_summary2 "Tải xuống phông chữ từ xa khi đang tải một trang">
 
 <!ENTITY pref_tracking_protection_title2 "Chống theo dõi">
-<!ENTITY pref_tracking_protection_summary3 "Đã bật chế độ riêng tư">
 <!ENTITY pref_donottrack_title "Không theo dõi">
 <!ENTITY pref_donottrack_summary "&brandShortName; sẽ báo với trang rằng bạn không muốn bị theo dõi">
 
@@ -274,10 +286,6 @@
      for experimental features. -->
 <!ENTITY pref_category_experimental "Các tính năng thử nghiệm">
 
-<!-- Custom Tabs is an Android API for allowing third-party apps to open URLs in a customized UI.
-     Instead of switching to the browser it appears as if the user stays in the third-party app.
-     For more see: https://developer.chrome.com/multidevice/android/customtabs -->
-<!ENTITY pref_custom_tabs "Tùy biến thẻ">
 <!-- Localization note (custom_tabs_menu_item_open_in): The variable is replaced by the name of
      default browser from user's preference, such as "Open in Firefox" -->
 <!ENTITY custom_tabs_menu_item_open_in "Mở trong &formatS;">
@@ -285,15 +293,22 @@
 <!-- Long-click title of CustomTabsActivity will copy URL to clipboard and display this hint -->
 <!ENTITY custom_tabs_hint_url_copy "Đã sao chép URL">
 
+<!ENTITY pref_pwa "Ứng dụng web tiên tiến">
+<!ENTITY pref_pwa_summary "Cho phép ứng dụng web có thể được thêm vào màn hình chính">
 
-<!-- Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream  -->
-
+<!ENTITY tracking_protection_prompt_title "Bây giờ với trình chống theo dõi">
+<!ENTITY tracking_protection_prompt_text "Chủ động chặn các phần tử theo dõi để bạn không phải lo lắng.">
+<!ENTITY tracking_protection_prompt_tip_text "Đi đến cài đặt Riêng tư để tìm hiểu thêm">
 <!ENTITY tracking_protection_prompt_action_button "Hiểu rồi!">
 
+<!ENTITY tab_queue_toast_message3 "Tab được lưu trong &brandShortName;">
 <!ENTITY tab_queue_toast_action "Mở ngay">
 <!ENTITY tab_queue_prompt_title "Mở nhiều liên kết cùng lúc?">
+<!ENTITY tab_queue_prompt_text4 "Lưu chúng đến lần tiếp theo bạn mở &brandShortName;.">
+<!ENTITY tab_queue_prompt_tip_text2 "Bạn có thể thay đổi nó sau trong mục cấu hình">
 <!-- Localization note (tab_queue_prompt_permit_drawing_over_apps): This additional text is shown if the
      user needs to enable an Android setting in order to enable tab queues. -->
+<!ENTITY tab_queue_prompt_permit_drawing_over_apps "Bật thiết lập cho phép vẽ trên các ứng dụng khác">
 <!ENTITY tab_queue_prompt_positive_action_button "Bật">
 <!ENTITY tab_queue_prompt_negative_action_button "Không phải bây giờ">
 <!-- Localization note (tab_queue_prompt_settings_button): This button is shown if the user needs to
@@ -311,21 +326,7 @@
 
 <!-- Localization note (tab_queue_notification_settings): This notification text is shown if a tab
      has been queued but we are missing the system permission to show an overlay. -->
-
-<!ENTITY content_notification_summary "&brandShortName;">
-<!-- Localization note (content_notification_title_plural): &formatD; will be replaced with the number of websites that
-     have been updated (new content is available). The number of websites is always more than one (>= 2). For a single
-     update the website title is used instead of this string.
-     We can't use Android plural forms, sadly. See Bug #753859. -->
-<!-- Localization note (content_notification_action_settings2): This label will be shown as an action in a content notification.
-     Clicking the action will jump to the notification settings of the app. -->
-<!ENTITY content_notification_action_settings2 "Thiết lập">
-<!-- Localization note(content_notification_action_read_now): This label will be shown as an action in a content notification.
-     Clicking the action will open all new content in the browser. -->
-<!ENTITY content_notification_action_read_now "Đọc ngay">
-<!-- Localization note (content_notification_updated_on): &formatS; will be replaced with a medium sized version of the
-     date, depending on locale. For en_US this is for example: Feb 24, 2016. For more details see the Android developer
-     documentation for DateFormat.getMediumDateFormat(). -->
+<!ENTITY tab_queue_notification_settings "Để \&quot;Mở nhiều liên kết\&quot;, vui lòng bật tính năng \&apos;Vẽ trên các ứng dụng khác\&apos; cho &brandShortName;">
 
 <!ENTITY pref_char_encoding "Mã ký tự">
 <!ENTITY pref_char_encoding_on "Hiển thị trình đơn">
@@ -335,7 +336,7 @@
      The action is shown below a header saying "Clear private data"; See pref_clear_private_data -->
 <!ENTITY pref_clear_private_data_now_tablet "Xóa ngay">
 <!ENTITY pref_clear_on_exit_title3 "Xóa dữ liệu riêng tư khi thoát">
-<!ENTITY pref_clear_on_exit_summary2 "&brandShortName; sẽ tự động xóa dữ liệu của bạn khi bạn chọn \u0022Thoát\u0022 khỏi ứng dụng">
+<!ENTITY pref_clear_on_exit_summary2 "&brandShortName; sẽ tự động xóa dữ liệu của bạn khi bạn chọn \&quot;Thoát\&quot; khỏi ứng dụng">
 <!ENTITY pref_clear_on_exit_dialog_title "Chọn dữ liệu để xóa">
 <!ENTITY pref_restore_tabs "Khôi phục thẻ">
 <!ENTITY pref_restore_always "Luôn khôi phục">
@@ -344,9 +345,14 @@
 <!-- Localization note (pref_use_system_font_size, pref_use_system_font_size_summary):
      Font size here refers to the name of the corresponding Android system setting. -->
 <!ENTITY pref_use_system_font_size "Sử dụng cỡ phông hệ thống">
+<!ENTITY pref_use_system_font_size_summary "Co dãn nội dung trang web dựa vào kích thước phông chữ hệ thống">
 
 <!ENTITY pref_media_autoplay_enabled "Cho phép tự động phát">
+<!ENTITY pref_media_autoplay_enabled_summary "Kiểm soát nếu trang web có thể tự động phát video và nội dung đa phương tiện khác">
 <!ENTITY pref_zoom_force_enabled "Luôn cho phép phóng to">
+<!ENTITY pref_zoom_force_enabled_summary "Buộc ghi đè để bạn có thể thu phóng ở bất kì trang nào">
+<!ENTITY pref_voice_input "Nhập liệu giọng nói">
+<!ENTITY pref_voice_input_summary2 "Cho phép ghi âm giọng nói trong thanh URL">
 <!ENTITY pref_qrcode_enabled "Bộ đọc mã QR">
 <!ENTITY pref_qrcode_enabled_summary2 "Cho phép máy quét QR trong thanh URL">
 
@@ -380,6 +386,9 @@
 <!ENTITY pref_dialog_set_default "Đặt làm mặc định">
 <!ENTITY pref_dialog_default "Mặc định">
 <!ENTITY pref_dialog_remove "Loại bỏ">
+<!ENTITY pref_dialog_activitystream_header_content "Nội dung bổ sung">
+<!ENTITY pref_dialog_activitystream_recentBookmarks "Trang đánh dấu gần đây">
+<!ENTITY pref_dialog_activitystream_visited "Đã truy cập">
 
 <!ENTITY pref_search_last_toast "Bạn không thể xóa hoặc hoặc vô hiệu hóa công cụ tìm kiếm cuối cùng.">
 
@@ -408,6 +417,8 @@
 <!ENTITY datareporting_fhr_summary2 "Chia sẻ dữ liệu với &vendorShortName; về tình trạng của trình duyệt và giúp bạn hiểu về hiệu suất của phần mềm">
 <!ENTITY datareporting_abouthr_title "Xem báo cáo tình trạng của tôi">
 <!ENTITY datareporting_telemetry_title "Hệ thống từ xa">
+<!ENTITY datareporting_telemetry_summary "Chia sẻ hiệu năng, cách sử dụng, phần cứng và dữ liệu tùy biến liên quan đến trình duyệt của bạn với &vendorShortName; để giúp chúng tôi tạo ra &brandShortName; tốt hơn">
+<!ENTITY datareporting_crashreporter_summary "&brandShortName; nộp báo cáo sự cố để giúp &vendorShortName; làm cho trình duyệt của bạn ổn định và an toàn hơn">
 <!-- Localization note (datareporting_crashreporter_title_short) : This string matches
      (crashReporterSection.label) in en-US/chrome/browser/preferences/advanced.dtd.-->
 <!ENTITY datareporting_crashreporter_title_short "Báo cáo hỏng hóc">
@@ -479,7 +490,17 @@
 <!ENTITY contextmenu_top_sites_edit "Chỉnh sửa">
 <!ENTITY contextmenu_top_sites_pin "Ghim trang">
 <!ENTITY contextmenu_top_sites_unpin "Bỏ ghim trang">
+<!-- Localization note (contextmenu_pin_to_top_sites, contextmenu_unpin_from_top_sites): These strings are used to
+     pin/unpin items from top sites when the user is not on the top sites screen so they'd be missing context on what
+     just "Pin Site" or "Unpin Site" would mean. -->
+<!ENTITY contextmenu_pin_to_top_sites "Ghim các trang web hàng đầu">
+<!ENTITY contextmenu_unpin_from_top_sites "Bỏ ghim các trang web hàng đầu">
 <!ENTITY contextmenu_add_search_engine "Thêm công cụ tìm kiếm">
+
+<!-- Localization note (pinned_page_to_top_sites, unpinned_page_from_top_sites): These strings are shown in a snackbar
+     after the user pins/unpins the currently displayed page from top sites. -->
+<!ENTITY pinned_page_to_top_sites "Đã ghim trang vào danh sách những trang web hàng đầu">
+<!ENTITY unpinned_page_from_top_sites "Đã bỏ ghim trang khỏi danh sách những trang web hàng đầu">
 
 <!-- Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
      where normally a username would be displayed. In this case, no username was found, and this placeholder
@@ -500,9 +521,12 @@
 <!ENTITY pref_scroll_title_bar_summary2 "Ẩn thanh công cụ của &brandShortName; khi kéo trang xuống dưới">
 
 <!ENTITY pref_tab_queue_title3 "Hàng đợi thẻ">
+<!ENTITY pref_tab_queue_summary4 "Lưu liên kết cho lần mở &brandShortName; tiếp theo">
 
 <!-- Localization note (pref_compact_tabs): Label for setting that controls whether 1 wide column or
      2 narrower (compact) columns are used for tabs in the tabs tray in portrait mode on phones. -->
+<!ENTITY pref_compact_tabs "Thu gọn thẻ">
+<!ENTITY pref_compact_tabs_summary2 "Sắp xếp các thẻ thành hai cột ở chế độ màn hình dọc">
 
 <!-- Localization note (page_removed): This string appears in a toast message when
      any page is removed frome about:home. This includes pages that are in history,
@@ -566,6 +590,7 @@
 <!ENTITY home_most_recent_empty "Các trang bạn vào nhiều gần đây được hiển thị ở đây.">
 <!-- Localization note (home_most_recent_emptyhint2): "Psst" is a sound that might be used to attract someone's attention unobtrusively, and intended to hint at Private Browsing to the user.
      The placeholders &formatS1; and &formatS2; are used to mark the location of text underlining. -->
+<!ENTITY home_most_recent_emptyhint2 "Mẹo: sử dụng &formatS1;Thẻ riêng tư mới&formatS2; sẽ không lưu lịch sử của bạn.">
 
 <!-- Localization note (home_default_empty): This string is used as the default text when there
      is no data to show in an about:home panel that was created by an add-on. -->
@@ -590,8 +615,11 @@
 <!-- Localization note (home_pinned_site) : This is a snackbar label displayed after
     a site is pinned or unpinned. -->
 <!ENTITY home_pinned_site "Đã ghim web">
+<!ENTITY home_unpinned_site "Trang đã bỏ ghim">
 
 <!ENTITY remote_tabs_panel_moved_title "Các thẻ của tôi đã đi đâu?">
+<!ENTITY remote_tabs_panel_moved_desc "Chúng tôi đã di chuyển các thẻ của bạn từ các thiết bị khác vào bảng điều khiển trên trang chủ giúp bạn có thể dễ dàng truy cập mỗi khi mở một thẻ mới.">
+<!ENTITY remote_tabs_panel_moved_link "Đưa tôi đến bảng điều khiển mới của tôi.">
 
 <!ENTITY pin_site_dialog_hint "Nhập từ khóa tìm kiếm">
 
@@ -685,6 +713,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY guest_session_dialog_continue "Tiếp tục">
 <!ENTITY guest_session_dialog_cancel "Hủy bỏ">
 <!ENTITY new_guest_session_title "&brandShortName; sẽ khởi động lại bây giờ">
+<!ENTITY new_guest_session_text2 "Người sử dụng nó sẽ không thể thấy bất kỳ dữ liệu duyệt web cá nhân nào của bạn (như những thông tin đăng nhập đã lưu, lịch sử hoặc trang đánh dấu).\n\nKhi khách của bạn xong phiên làm việc, dữ liệu duyệt web của họ sẽ bị xóa và phiên của bạn sẽ được khôi phục.">
 <!ENTITY guest_browsing_notification_title "Duyệt web dành cho khách đã được bật">
 <!ENTITY guest_browsing_notification_text "Chạm để thoát">
 
@@ -743,11 +772,15 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- Localization note: These are features the device owner (e.g. parent) can enable or disable for
      a restricted profile (e.g. child). Used inside the Android settings UI. -->
 <!ENTITY restrictable_feature_addons_installation "Tiện ích">
+<!ENTITY restrictable_feature_addons_installation_description "Thêm các tính năng hoặc chức năng cho Firefox. Lưu ý: tiện ích có thể vô hiệu hóa các hạn chế nào đó.">
 <!ENTITY restrictable_feature_private_browsing "Duyệt web Riêng tư">
+<!ENTITY restrictable_feature_private_browsing_description "Cho phép các thành viên trong gia đình duyệt web mà không lưu thông tin về những trang mà họ đã truy cập.">
 <!ENTITY restrictable_feature_clear_history "Xóa lịch sử">
 <!ENTITY restrictable_feature_clear_history_description "Cho phép các thành viên gia đình xóa thông tin về những trang mà họ đã truy cập.">
 <!ENTITY restrictable_feature_advanced_settings "Cài đặt nâng cao">
+<!ENTITY restrictable_feature_advanced_settings_description "Điều này bao gồm việc nhập các trang đánh dấu, phục hồi các thẻ và các bản cập nhật tự động. Tắt bỏ chế độ này để đơn giản hóa việc cài đặt cho bất kỳ thành viên nào trong gia đình.">
 <!ENTITY restrictable_feature_camera_microphone "Máy quay &amp; Micrô">
+<!ENTITY restrictable_feature_camera_microphone_description "Cho phép các thành viên trong gia đình tham gia vào các cuộc trò chuyện trực tuyến trên trang web.">
 <!ENTITY restrictable_feature_block_list "Danh sách chặn">
 <!ENTITY restrictable_feature_block_list_description "Chặn trang web chứa nội dung nhạy cảm.">
 
@@ -759,6 +792,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- LOCALIZATION NOTE (bookmarks_support): link title for https://support.mozilla.org/ -->
 <!ENTITY bookmarks_support "Firefox: Hỗ trợ">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_support): link title for https://support.mozilla.org/kb/controlledaccess -->
+<!ENTITY bookmarks_restricted_support2 "Trợ giúp và hỗ trợ Firefox cho các hồ sơ bị giới hạn trên máy tính bảng Android">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_webmaker):link title for https://webmaker.org -->
 <!ENTITY bookmarks_restricted_webmaker "Tìm hiểu về Web: Mozilla Webmaker">
 
@@ -778,12 +812,20 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY promotion_add_to_homescreen "Thêm vào màn hình chính">
 
 <!ENTITY helper_first_offline_bookmark_title "Đọc ngoại tuyến">
+<!ENTITY helper_first_offline_bookmark_message "Tìm các mục ở chế độ đọc trong trang đánh dấu, ngay cả khi ngoại tuyến.">
 <!ENTITY helper_first_offline_bookmark_button "Đi đến trang đánh dấu">
 
+<!ENTITY helper_triple_readerview_open_title "Khả dụng khi ngoại tuyết">
+<!ENTITY helper_triple_readerview_open_message "Đánh dấu các mục ở chế độ đọc để đọc chúng khi ngoại tuyến.">
 <!ENTITY helper_triple_readerview_open_button "Thêm vào trang đánh dấu">
 
 <!ENTITY activity_stream_topsites "Các trang vào nhiều nhất">
+<!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->
+<!ENTITY activity_stream_topstories "Khuyên dùng bởi &brandPocket;">
 <!ENTITY activity_stream_highlights "Nổi bật">
+
+<!-- LOCALIZATION NOTE (activity_stream_link_more1): Link-like text displayed to take user to a website with more content from Pocket. -->
+<!ENTITY activity_stream_link_more1 "MORE">
 
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_bookmarked): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
@@ -791,10 +833,20 @@ Stream list for highlights sourced from th user's bookmarks. -->
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_visited): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
 <!ENTITY activity_stream_highlight_label_visited "Đã thăm">
+<!-- LOCALIZATION NOTE (activity_stream_highlight_label_trending): This label is shown in the Activity Stream list for highlights sourced from a recommendations engine. -->
+<!ENTITY activity_stream_highlight_label_trending "Xu hướng">
+<!-- LOCALIZATION NOTE (activity_stream_highlights_empty): This text is shown when we could not find highlights for this user. This is also shown on first run. -->
+<!ENTITY activity_stream_highlights_empty "Bắt đầu duyệt web, và chúng tôi sẽ hiển thị một số bài báo, video và các trang khác mà bạn vừa truy cập hoặc đã đánh dấu tại đây.">
 
-<!-- LOCALIZATION NOTE (activity_stream_dismiss): This label is shown in the Activity Stream context menu,
+<!-- LOCALIZATION NOTE (activity_stream_remove): This label is shown in the Activity Stream context menu,
 and allows hiding a URL/page from highlights or topsites. The page remains in history/bookmarks, but
 is simply hidden from the Activity Stream panel. -->
-<!ENTITY activity_stream_dismiss "Bỏ qua">
+<!ENTITY activity_stream_remove "Xóa">
 <!ENTITY activity_stream_delete_history "Xóa khỏi lịch sử">
 
+<!ENTITY private_tab_panel_title "Duyệt web riêng tư + Trình chống theo dõi">
+<!ENTITY private_tab_panel_description "&brandShortName; chặn các phần của các trang web có thể theo dõi hoạt động duyệt web của bạn.">
+<!ENTITY private_tab_panel_description2 "Chúng tôi sẽ không lưu bất kỳ lịch sử nào, nhưng tệp đã tải xuống và trang đánh dấu mới sẽ vẫn được lưu vào thiết bị của bạn.">
+<!ENTITY private_tab_learn_more "Muốn tìm hiểu thêm?">
+
+<!ENTITY fullscreen_warning "Đã vào chế độ toàn màn hình">

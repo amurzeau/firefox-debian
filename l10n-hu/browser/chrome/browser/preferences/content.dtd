@@ -7,16 +7,29 @@
 <!ENTITY  blockPopups.label           "Felugró ablakok tiltása">
 <!ENTITY  blockPopups.accesskey       "F">
 
-<!ENTITY  notificationsPolicyLearnMore.label   "További tudnivalók">
-<!ENTITY  notificationsPolicyDesc4.label       "Válassza ki, mely webhelyek küldhetnek Önnek értesítést">
-<!ENTITY  notificationsPolicyButton.accesskey  "T">
-<!ENTITY  notificationsPolicyButton.label      "Tallózás…">
 <!ENTITY  notificationsDoNotDisturb.label      "Ne zavarjanak">
 <!ENTITY  notificationsDoNotDisturb.accesskey  "z">
 <!ENTITY  notificationsDoNotDisturbDetails.value "Nem jelenik meg értesítés a &brandShortName; újraindításáig">
 
-<!ENTITY  popupExceptions.label       "Kivételek…">
-<!ENTITY  popupExceptions.accesskey   "K">
+<!ENTITY  popupExceptions.label                                 "Kivételek…">
+<!ENTITY  popupExceptions.accesskey                             "K">
+
+<!ENTITY  notificationPermissions.label                         "Értesítések">
+<!ENTITY  notificationSettingsButton.label                      "Beállítások…">
+<!ENTITY  notificationSettingsButton.accesskey                  "e">
+<!ENTITY  notificationPermissionsLearnMore.label                "További tudnivalók">
+
+<!ENTITY  locationPermissions.label                             "Hely">
+<!ENTITY  locationSettingsButton.label                          "Beállítások…">
+<!ENTITY  locationSettingsButton.accesskey                      "H">
+
+<!ENTITY  cameraPermissions.label                               "Kamera">
+<!ENTITY  cameraSettingsButton.label                            "Beállítások…">
+<!ENTITY  cameraSettingsButton.accesskey                        "K">
+
+<!ENTITY  microphonePermissions.label                           "Mikrofon">
+<!ENTITY  microphoneSettingsButton.label                        "Beállítások…">
+<!ENTITY  microphoneSettingsButton.accesskey                    "m">
 
 <!ENTITY  fontsAndColors.label        "Betűk és színek">
 

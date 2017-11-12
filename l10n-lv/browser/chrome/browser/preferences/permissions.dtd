@@ -8,11 +8,11 @@
 <!ENTITY treehead.sitename2.label     "Mājas lapa">
 <!ENTITY treehead.status.label        "Statuss">
 <!ENTITY removepermission2.label      "Aizvākt lapu">
-<!ENTITY removepermission2.accesskey  "L">
+<!ENTITY removepermission2.accesskey  "Z">
 <!ENTITY removeallpermissions2.label  "Aizvākt visas lapas">
-<!ENTITY removeallpermissions2.accesskey "v">
-<!ENTITY address.label                "Tīmekļa vietnes adrese:">
-<!ENTITY address.accesskey            "d">
+<!ENTITY removeallpermissions2.accesskey "k">
+<!ENTITY address2.label               "Mājas lapas adrese">
+<!ENTITY address2.accesskey           "d">
 <!ENTITY block.label                  "Bloķēt">
 <!ENTITY block.accesskey              "B">
 <!ENTITY session.label                "Atļaut tikai šīs sesijas laikā">
@@ -26,3 +26,4 @@
 <!ENTITY button.ok.label              "Saglabāt izmaiņas">
 <!ENTITY button.ok.accesskey          "S">
 
+<!ENTITY searchbox.placeholder        "Meklēt lapas">

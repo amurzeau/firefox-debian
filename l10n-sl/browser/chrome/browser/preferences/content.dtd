@@ -7,16 +7,29 @@
 <!ENTITY  blockPopups.label           "Prepovej pojavna okna">
 <!ENTITY  blockPopups.accesskey       "r">
 
-<!ENTITY  notificationsPolicyLearnMore.label   "Več o tem">
-<!ENTITY  notificationsPolicyDesc4.label       "Izberite, katere spletne strani vam lahko pošiljajo obvestila">
-<!ENTITY  notificationsPolicyButton.accesskey  "z">
-<!ENTITY  notificationsPolicyButton.label      "Izberi …">
 <!ENTITY  notificationsDoNotDisturb.label      "Ne moti me">
 <!ENTITY  notificationsDoNotDisturb.accesskey  "N">
 <!ENTITY  notificationsDoNotDisturbDetails.value "Obvestila se ne bodo prikazovala do ponovnega zagona &brandShortName;a">
 
-<!ENTITY  popupExceptions.label       "Izjeme …">
-<!ENTITY  popupExceptions.accesskey   "I">
+<!ENTITY  popupExceptions.label                                 "Izjeme …">
+<!ENTITY  popupExceptions.accesskey                             "I">
+
+<!ENTITY  notificationPermissions.label                         "Obvestila">
+<!ENTITY  notificationSettingsButton.label                      "Nastavitve …">
+<!ENTITY  notificationSettingsButton.accesskey                  "t">
+<!ENTITY  notificationPermissionsLearnMore.label                "Več o tem">
+
+<!ENTITY  locationPermissions.label                             "Lokacija">
+<!ENTITY  locationSettingsButton.label                          "Nastavitve …">
+<!ENTITY  locationSettingsButton.accesskey                      "t">
+
+<!ENTITY  cameraPermissions.label                               "Kamera">
+<!ENTITY  cameraSettingsButton.label                            "Nastavitve …">
+<!ENTITY  cameraSettingsButton.accesskey                        "t">
+
+<!ENTITY  microphonePermissions.label                           "Mikrofon">
+<!ENTITY  microphoneSettingsButton.label                        "Nastavitve …">
+<!ENTITY  microphoneSettingsButton.accesskey                    "t">
 
 <!ENTITY  fontsAndColors.label        "Pisave in barve">
 

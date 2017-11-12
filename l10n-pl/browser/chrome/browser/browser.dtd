@@ -14,6 +14,8 @@
 <!ENTITY reloadTab.accesskey                 "d" >
 <!ENTITY reloadAllTabs.label                 "Odśwież wszystkie karty" >
 <!ENTITY reloadAllTabs.accesskey             "w" >
+<!ENTITY duplicateTab.label "Duplikuj kartę">
+<!ENTITY duplicateTab.accesskey "D">
 <!ENTITY closeTabsToTheEnd.label "Zamknij karty po prawej stronie">
 <!ENTITY closeTabsToTheEnd.accesskey "p">
 <!ENTITY closeOtherTabs.label                "Zamknij inne karty" >
@@ -29,6 +31,7 @@
 <!ENTITY sendPageToDevice.accesskey "P">
 <!ENTITY sendLinkToDevice.label "Prześlij odnośnik do">
 <!ENTITY sendLinkToDevice.accesskey "P">
+<!ENTITY sendToDeviceFeedback.label "Przesłano!">
 <!ENTITY moveToNewWindow.label "Przenieś do nowego okna">
 <!ENTITY moveToNewWindow.accesskey "o">
 <!ENTITY bookmarkAllTabs.label               "Dodaj zakładki do wszystkich kart…">
@@ -75,6 +78,7 @@
 <!ENTITY pageSourceCmd.label "Źródło strony" >
 <!ENTITY pageSourceCmd.accesskey "d" >
 <!ENTITY pageSourceCmd.commandkey "u" >
+<!ENTITY pageSourceCmd.SafariCommandKey "u">
 <!ENTITY pageInfoCmd.label "Informacje o stronie" >
 <!ENTITY pageInfoCmd.accesskey "m" >
 <!ENTITY pageInfoCmd.commandkey "i" >
@@ -126,19 +130,6 @@
 <!ENTITY bookmarkThisPageCmd.label "Dodaj zakładkę" >
 <!ENTITY editThisBookmarkCmd.label "Edytuj zakładkę">
 <!ENTITY bookmarkThisPageCmd.commandkey "d" >
-<!ENTITY findShareServices.label "Więcej serwisów udostępniania…">
-<!ENTITY sharePageCmd.label "Udostępnij tę stronę">
-<!ENTITY sharePageCmd.commandkey "S">
-<!ENTITY sharePageCmd.accesskey "U">
-<!ENTITY shareLink.label "Udostępnij ten odnośnik">
-<!ENTITY shareLink.accesskey "U">
-<!ENTITY shareImage.label "Udostępnij ten obraz">
-<!ENTITY shareImage.accesskey "s">
-<!ENTITY shareSelect.label "Udostępnij zaznaczenie">
-<!ENTITY shareSelect.accesskey "s">
-<!ENTITY shareVideo.label "Udostępnij to wideo">
-<!ENTITY shareVideo.accesskey "s">
-<!ENTITY feedsMenu2.label "Subskrybuj tę stronę">
 <!ENTITY subscribeToPageMenupopup.label "Subskrybuj tę stronę">
 <!ENTITY subscribeToPageMenuitem.label "Subskrybuj tę stronę…">
 <!ENTITY addCurPagesCmd.label "Dodaj zakładki do wszystkich kart…">
@@ -169,6 +160,7 @@
 <!ENTITY urlbar.defaultNotificationAnchor.tooltip "Wyświetl powiadomienie">
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip "Wyświetl zapytanie o położenie">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip "Wyświetl zapytanie o instalację dodatków">
+<!ENTITY urlbar.canvasNotificationAnchor.tooltip "Zarządzaj uprawnieniami odczytu danych canvas">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip "Wyświetl zapytanie o przechowywanie danych offline">
 <!ENTITY urlbar.passwordNotificationAnchor.tooltip "Określ, czy zachować hasło">
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip "Zarządzaj wtyczkami używanymi na tej stronie">
@@ -189,6 +181,7 @@
 <!ENTITY urlbar.indexedDBBlocked.tooltip "Przechowywanie danych offline przez tę witrynę zostało zablokowane">
 <!ENTITY urlbar.webNotificationsBlocked.tooltip "Powiadomienia z tej witryny zostały zablokowane">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Przechowywanie danych na komputerze przez witrynę zostało zablokowane">
+<!ENTITY urlbar.popupBlocked.tooltip "Wyskakujące okna na tej stronie są blokowane">
 <!ENTITY urlbar.openHistoryPopup.tooltip "Wyświetl historię">
 
 <!ENTITY searchItem.title "Znajdź" >
@@ -198,14 +191,18 @@
 <!ENTITY bookmarksButton.label          "Zakładki">
 <!ENTITY bookmarksCmd.commandkey        "b">
 
-<!ENTITY bookmarksMenuButton.label          "Zakładki">
+<!ENTITY bookmarksSubview.label "Zakładki">
+<!ENTITY bookmarksMenuButton2.label "Menu zakładki">
 <!ENTITY bookmarksMenuButton.other.label "Pozostałe zakładki">
 <!ENTITY bookmarksMenuButton.mobile.label "Zakładki z urządzeń przenośnych">
 <!ENTITY viewBookmarksSidebar2.label "Wyświetl panel zakładek">
+<!ENTITY hideBookmarksSidebar.label "Ukryj panel zakładek">
 <!ENTITY viewBookmarksToolbar.label         "Wyświetl pasek zakładek">
+<!ENTITY hideBookmarksToolbar.label "Ukryj pasek zakładek">
 <!ENTITY searchBookmarks.label "Szukaj w zakładkach">
-
-<!ENTITY containersMenu.label "Konteksty">
+<!ENTITY bookmarkingTools.label "Narzędzia zakładek">
+<!ENTITY addBookmarksMenu.label "Dodaj menu Zakładki do paska narzędzi">
+<!ENTITY removeBookmarksMenu.label "Usuń menu Zakładki z paska narzędzi">
 
 <!ENTITY bookmarksGtkCmd.commandkey "o">
 <!ENTITY bookmarksWinCmd.commandkey "i">
@@ -220,6 +217,7 @@
 <!ENTITY keywordfield.accesskey "U">
 
 <!ENTITY downloads.label "Pobieranie plików" >
+<!ENTITY libraryDownloads.label "Pobrane">
 <!ENTITY downloads.accesskey "P" >
 <!ENTITY downloads.commandkey         "j">
 <!ENTITY downloadsUnix.commandkey     "y">
@@ -300,7 +298,6 @@
 <!ENTITY appMenuCustomize.tooltip "Dostosuj menu i paski narzędzi">
 <!ENTITY appMenuCustomizeExit.label "Zakończ dostosowywanie">
 <!ENTITY appMenuCustomizeExit.tooltip "Zakończ dostosowywanie">
-<!ENTITY appMenuHistory.label "Historia">
 <!ENTITY appMenuHistory.showAll.label "Wyświetl całą historię">
 <!ENTITY appMenuHistory.clearRecent.label "Wyczyść historię przeglądania…">
 <!ENTITY appMenuHistory.restoreSession.label "Przywróć poprzednią sesję">
@@ -323,6 +320,8 @@
 <!ENTITY appMenuRemoteTabs.signin.label "Zaloguj się do synchronizacji">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Zarządzaj urządzeniami…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Wyświetl karty z innych urządzeń w panelu bocznym">
+
+<!ENTITY appMenuRecentHighlights.label "Ostatnio wyróżnione">
 
 <!ENTITY customizeMenu.addToToolbar.label "Dodaj do paska narzędzi">
 <!ENTITY customizeMenu.addToToolbar.accesskey "D">
@@ -440,7 +439,8 @@
 <!ENTITY bookmarkThisLinkCmd.accesskey "a">
 <!ENTITY bookmarkThisFrameCmd.label "Dodaj zakładkę do ramki">
 <!ENTITY bookmarkThisFrameCmd.accesskey "D">
-<!ENTITY copyURLCmd.label "Kopiuj adres">
+<!ENTITY pageAction.copyLink.label "Kopiuj odnośnik">
+<!ENTITY copyURLFeedback.label "Skopiowano!">
 <!ENTITY emailPageCmd.label "Wyślij odnośnik…">
 <!ENTITY emailPageCmd.accesskey "n">
 <!ENTITY savePageCmd.label "Zapisz stronę jako…" >
@@ -463,8 +463,6 @@
 <!ENTITY emailImageCmd.accesskey "o">
 <!ENTITY emailVideoCmd.label "Wyślij wideo…">
 <!ENTITY emailVideoCmd.accesskey "o">
-<!ENTITY castVideoCmd.label "Odtwórz wideo na urządzeniu">
-<!ENTITY castVideoCmd.accesskey "u">
 <!ENTITY emailAudioCmd.label "Wyślij dźwięk…">
 <!ENTITY emailAudioCmd.accesskey "d">
 <!ENTITY playPluginCmd.label          "Aktywuj tę wtyczkę">
@@ -647,6 +645,7 @@
 <!ENTITY syncedTabs.sidebar.notabs.label "Brak otwartych kart">
 <!ENTITY syncedTabs.sidebar.openprefs.label "Otwórz ustawienia synchronizacji">
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label "Włącz synchronizację kart, aby wyświetlać listę otwartych na innych urządzeniach.">
+<!ENTITY syncedTabs.sidebar.searchPlaceholder "Szukaj w synchronizowanych kartach">
 
 <!ENTITY syncedTabs.context.open.label "Otwórz">
 <!ENTITY syncedTabs.context.open.accesskey "O">
@@ -674,20 +673,13 @@
 <!ENTITY syncReAuthItem.accesskey "Z">
 <!ENTITY syncToolbarButton.label      "Synchronizuj">
 
-<!ENTITY social.addons.label "Zarządzaj usługami…">
-
-<!ENTITY social.directory.label "Katalog aktywowania">
-<!ENTITY social.directory.text "Poprzez katalog można dodać obsługę serwisów udostępniania.">
-<!ENTITY social.directory.button "Przejdź">
-<!ENTITY social.directory.introText "Wybierz serwis, by dodać go do programu &brandShortName;.">
-<!ENTITY social.directory.viewmore.text "Więcej">
-
-<!ENTITY customizeMode.menuAndToolbars.header2 "Dodatkowe funkcje i opcje">
+<!ENTITY customizeMode.menuAndToolbars.header3 "Przeciągaj swoje ulubione elementy na pasek narzędzi lub do menu ukrywania.">
 <!ENTITY customizeMode.menuAndToolbars.empty "Jeszcze więcej narzędzi?">
 <!ENTITY customizeMode.menuAndToolbars.emptyLink "Możesz wybierać spośród tysięcy dodatków">
 <!ENTITY customizeMode.restoreDefaults "Przywróć domyślne">
 <!ENTITY customizeMode.done "Gotowe">
 <!ENTITY customizeMode.titlebar "Pasek tytułu">
+<!ENTITY customizeMode.extraDragSpace "Pasek przeciągania okna">
 <!ENTITY customizeMode.toolbars2 "Paski narzędzi">
 <!ENTITY customizeMode.lwthemes "Motywy">
 <!ENTITY customizeMode.lwthemes.myThemes "Zainstalowane motywy">
@@ -697,6 +689,9 @@
 <!ENTITY customizeMode.lwthemes.menuGetMore "Pobierz więcej">
 <!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "P">
 <!ENTITY customizeMode.emptyOverflowList.description "Przeciągaj tutaj rzeczy, aby były pod ręką, ale nie zabierały miejsca na pasku narzędzi…">
+<!ENTITY customizeMode.overflowList.title "Menu ukrywania">
+<!ENTITY customizeMode.overflowList.title2 "Menu ukrywania">
+<!ENTITY customizeMode.overflowList.description "Przeciągaj tutaj rzeczy, aby były pod ręką, ale nie zabierały miejsca na pasku narzędzi…">
 <!ENTITY customizeMode.uidensity "Gęstość i upakowanie">
 <!ENTITY customizeMode.uidensity.menuNormal.label "Normalne">
 <!ENTITY customizeMode.uidensity.menuNormal.tooltip "Normalne">
@@ -708,6 +703,8 @@
 <!ENTITY customizeMode.uidensity.menuTouch.tooltip "Dotykowe">
 <!ENTITY customizeMode.uidensity.menuTouch.accessKey "D">
 <!ENTITY customizeMode.uidensity.autoTouchMode.checkbox.label "Dotykowe w trybie tabletowym">
+
+<!ENTITY customizeMode.autoHideDownloadsButton.label "Automatyczne ukrywanie">
 
 <!ENTITY getUserMedia.selectCamera.label "Kamera do udostępnienia:">
 <!ENTITY getUserMedia.selectCamera.accesskey "K">
@@ -727,16 +724,6 @@
 <!ENTITY trackingProtection.block2.label "Włącz ochronę dla tej witryny">
 <!ENTITY trackingProtection.block2.accesskey "W">
 
-<!ENTITY trackingContentBlocked.message "Śledzenie">
-<!ENTITY trackingContentBlocked.moreinfo "Części strony odpowiedzialne za śledzenie aktywności użytkowników zostały zablokowane.">
-<!ENTITY trackingContentBlocked.learnMore "Więcej informacji">
-<!ENTITY trackingContentBlocked.options "Ustawienia">
-<!ENTITY trackingContentBlocked.unblock2.label "Wyłącz ochronę dla tej witryny">
-<!ENTITY trackingContentBlocked.unblock2.accesskey "W">
-<!ENTITY trackingContentBlocked.block.label "Włącz ochronę">
-<!ENTITY trackingContentBlocked.block.accesskey "W">
-<!ENTITY trackingContentBlocked.disabled.message "Ochrona przed śledzeniem jest wyłączona">
-
 <!ENTITY pluginNotification.showAll.label "Wyświetl wszystkie">
 <!ENTITY pluginNotification.showAll.accesskey "W">
 
@@ -746,8 +733,6 @@
 <!ENTITY pluginNotification.width "28em">
 
 <!ENTITY uiTour.infoPanel.close "Zamknij">
-
-<!ENTITY appMenuSidebars.label "Panele boczne">
 
 <!ENTITY panicButton.view.mainTimeframeDesc "Wyczyść historię przeglądania ostatnich:">
 <!ENTITY panicButton.view.5min "Pięciu minut">
@@ -785,7 +770,7 @@
 <!ENTITY updateManual.cancelButton.accesskey "N">
 <!ENTITY updateManual.panelUI.label "Pobierz świeżą kopię programu &brandShorterName;">
 
-<!ENTITY updateRestart.message "&brandShorterName; po ponownym uruchomieniu przywróci wszystkie karty i okna.">
+<!ENTITY updateRestart.message2 "&brandShorterName; po ponownym uruchomieniu przywróci wszystkie karty i okna (oprócz okien prywatnych).">
 <!ENTITY updateRestart.header.message2 "Uruchom ponownie program &brandShorterName;, aby go uaktualnić.">
 <!ENTITY updateRestart.acceptButton.label "Uruchom i przywróć">
 <!ENTITY updateRestart.acceptButton.accesskey "U">
@@ -797,5 +782,9 @@
 <!ENTITY pageAction.addToUrlbar.label "Dodaj do paska adresu">
 <!ENTITY pageAction.removeFromUrlbar.label "Usuń z paska adresu">
 
-<!ENTITY sendToDevice.label2 "Wyślij na urządzenie">
+<!ENTITY pageAction.sendTabToDevice.label "Wyślij stronę na urządzenie">
 <!ENTITY sendToDevice.syncNotReady.label "Synchronizowanie urządzeń…">
+
+<!ENTITY libraryButton.tooltip "Wyświetl historię, zapisane zakładki i jeszcze więcej">
+
+<!ENTITY accessibilityIndicator.tooltip "Aktywne usługi ułatwień dostępu">

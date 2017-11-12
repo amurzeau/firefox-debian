@@ -6,16 +6,17 @@
 
 <!-- LOCALIZATION NOTE: The title is intended to be apologetic and disarming, expressing dismay
      and regret that we are unable to restore the session for the user -->
-<!ENTITY restorepage.errorTitle     "ოჰო, რაღაც ხარვეზებია.">
-<!ENTITY restorepage.problemDesc    "&brandShortName; ბრაუზერი ვერ ახერხებს წინა სეანსის ფანჯრების და ჩანართების აღდგენას. ჩვეულებრივ, ამის მიზეზი ბოლოს გახსნილი ვებგვერდია.">
-<!ENTITY restorepage.tryThis        "შეგიძლიათ სცადოთ:">
-<!ENTITY restorepage.restoreSome    "მოაცილეთ ის ჩანართები, რომელთა გაუმართაობაზეც ეჭვობთ">
-<!ENTITY restorepage.startNew       "დაიწყოთ სრულიად ახალი სეანსი">
+<!ENTITY restorepage.errorTitle2    "ვწუხვართ. თქვენი გვერდების დაბრუნება, ვერ მოხერხდა.">
+<!ENTITY restorepage.problemDesc2   "ბოლო სეანსის აღდგენისას მოხდა შეცდომა. დააჭირეთ აღდგენას, ხელახლა საცდელად.">
+<!ENTITY restorepage.tryThis2       "ისევ ვერ მოხერხდა სეანსის აღდგენა? შესაძლოა რომელიმე ჩანართის ბრალი იყოს. გადახედეთ აღსადგენ ჩანართებს, მოხსენით მონიშვნა იმათ, რომელიც არ გჭირდებათ და შემდეგ დააჭირეთ აღდგენას.">
 
-<!ENTITY restorepage.tryagainButton "აღდგენა">
-<!ENTITY restorepage.restore.access "ა">
-<!ENTITY restorepage.closeButton    "დახურვა">
-<!ENTITY restorepage.close.access   "დ">
+<!ENTITY restorepage.hideTabs       "ძველი ჩანართების დამალვა">
+<!ENTITY restorepage.showTabs       "ძველი ჩანართების ნახვა">
+
+<!ENTITY restorepage.tryagainButton2 "სეანსის აღდგენა">
+<!ENTITY restorepage.restore.access2 "ღ">
+<!ENTITY restorepage.closeButton2    "ახალი სეანსი">
+<!ENTITY restorepage.close.access2   "ხ">
 
 <!ENTITY restorepage.restoreHeader  "აღდგენა">
 <!ENTITY restorepage.listHeader     "ფანჯრები და ჩანართები">

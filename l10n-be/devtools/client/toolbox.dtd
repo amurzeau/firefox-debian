@@ -82,12 +82,6 @@
 <!ENTITY options.enableRemote.label3    "Уключыць аддаленую адладку">
 <!ENTITY options.enableRemote.tooltip2  "Калі ўключана, дазваляе прыладам распрацоўшчыка адладжваць аддаленыя экзэмпляры, такія як Firefox OS">
 
-<!-- LOCALIZATION NOTE (options.enableWorkers.label): This is the label for the
-  -  checkbox that toggles worker debugging, i.e. devtools.debugger.workers
-  -  boolean preference in about:config, in the options panel. -->
-<!ENTITY options.enableWorkers.label    "Уключыць адладку воркераў (у распрацоўцы)">
-<!ENTITY options.enableWorkers.tooltip  "Калі ўключана, дазваляе прыладам распрацоўшчыка адладжваць воркеры">
-
 <!-- LOCALIZATION NOTE (options.disableJavaScript.label,
   -  options.disableJavaScript.tooltip): This is the options panel label and
   -  tooltip for the checkbox that toggles JavaScript on or off. -->
@@ -151,19 +145,14 @@
 <!ENTITY options.debugger.label            "Адладчык">
 
 <!-- LOCALIZATION NOTE (options.sourceMap.label): This is the
-   - label for the checkbox that toggles source maps in the Debugger -->
+   - label for the checkbox that toggles source maps in all tools -->
 <!ENTITY options.sourceMaps.label      "Уключыць мапы зыходнага коду">
-<!ENTITY options.sourceMaps.tooltip    "Калі ўключана, зыходныя коды будуць супастаўлены ў Адладчыку і Кансолі.">
+<!ENTITY options.sourceMaps.tooltip1   "Калі ўключана, зыходныя коды будуць супастаўлены ў інструментах.">
 
 <!-- LOCALIZATION NOTE (options.styleeditor.label): This is the label for the
   -  heading of the group of Style Editor preferences in the options
   -  panel. -->
 <!ENTITY options.styleeditor.label            "Рэдактар стыляў">
-
-<!-- LOCALIZATION NOTE (options.stylesheetSourceMaps.label): This is the
-   - label for the checkbox that toggles showing original sources in the Style Editor -->
-<!ENTITY options.stylesheetSourceMaps.label      "Паказваць першапачатковыя зыходнікі">
-<!ENTITY options.stylesheetSourceMaps.tooltip    "Паказваць першапачатковыя зыходнікі (напрклад файлы Sass) у праўніку стыляў і даследчыку">
 
 <!-- LOCALIZATION NOTE (options.stylesheetAutocompletion.label): This is the
    - label for the checkbox that toggles autocompletion of css in the Style Editor -->
@@ -184,18 +173,6 @@
    - label for the checkbox that toggles the camera shutter audio for screenshot tool -->
 <!ENTITY options.screenshot.audio.label      "Прайграваць гук затвора камеры">
 <!ENTITY options.screenshot.audio.tooltip    "Уключае гук затвора камеры, калі робіцца здымак экрана">
-
-<!-- LOCALIZATION NOTE (options.commonprefs): This is the label for the heading
-      of all preferences that affect both the Web Console and the Network
-      Monitor -->
-<!ENTITY options.commonPrefs.label           "Агульныя налады">
-
-<!-- LOCALIZATION NOTE (options.enablePersistentLogs.label): This is the
-  -  label for the checkbox that toggles persistent logs in the Web Console and
-  -  network monitor,  i.e. devtools.webconsole.persistlog a boolean preference in
-  -  about:config, in the options panel. -->
-<!ENTITY options.enablePersistentLogs.label    "Уключыць пастаянныя журналы">
-<!ENTITY options.enablePersistentLogs.tooltip  "Калі ўключана, кансоль сеціва і манітор сеткі не будуць ачышчацца кожны раз, калі вы пераходзіце да новай старонкі">
 
 <!-- LOCALIZATION NOTE (options.showPlatformData.label): This is the
   -  label for the checkbox that toggles the display of the platform data in the,

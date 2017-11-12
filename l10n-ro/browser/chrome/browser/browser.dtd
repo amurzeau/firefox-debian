@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!-- LOCALIZATION NOTE : FILE This file contains the browser main menu items -->
-<!-- LOCALIZATION NOTE : FILE Do not translate commandkeys --> 
+<!-- LOCALIZATION NOTE : FILE Do not translate commandkeys -->
 
 <!-- LOCALIZATION NOTE (mainWindow.title): DONT_TRANSLATE -->
 <!ENTITY mainWindow.title "&brandFullName;">
@@ -16,13 +16,17 @@
 <!ENTITY mainWindow.titlePrivateBrowsingSuffix "(Navigare privată)">
 
 <!ENTITY appmenu.tooltip                     "Deschide meniul">
-<!ENTITY navbarOverflow.label                "Mai multe unelte…">
+<!ENTITY navbarOverflow.label                "Mai multe instrumente…">
 
 <!-- Tab context menu -->
 <!ENTITY  reloadTab.label                    "Reîncarcă fila">
 <!ENTITY  reloadTab.accesskey                "R">
 <!ENTITY  reloadAllTabs.label                "Reîncarcă toate filele">
 <!ENTITY  reloadAllTabs.accesskey            "a">
+<!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
+a tab (i.e. it is a verb, not adjective). -->
+<!ENTITY  duplicateTab.label                 "Duplică fila">
+<!ENTITY  duplicateTab.accesskey             "D">
 <!-- LOCALIZATION NOTE (closeTabsToTheEnd.label): This should indicate the
 direction in which tabs are closed, i.e. locales that use RTL mode should say
 left instead of right. -->
@@ -46,6 +50,7 @@ can reach it easily. -->
 <!ENTITY  sendPageToDevice.accesskey         "d">
 <!ENTITY  sendLinkToDevice.label             "Trimite linkul pe dispozitiv">
 <!ENTITY  sendLinkToDevice.accesskey         "d">
+<!ENTITY  sendToDeviceFeedback.label         "Trimis!">
 <!ENTITY  moveToNewWindow.label              "Mută într-o fereastră nouă">
 <!ENTITY  moveToNewWindow.accesskey          "W">
 <!ENTITY  bookmarkAllTabs.label              "Marchează toate filele…">
@@ -80,10 +85,10 @@ when there are no windows but Firefox is still running. -->
 
 <!ENTITY menubarCmd.label "Bara meniului">
 <!ENTITY menubarCmd.accesskey "m">
-<!ENTITY navbarCmd.label "Bară de navigare">
-<!ENTITY personalbarCmd.label "Bara marcajelor">
+<!ENTITY navbarCmd.label "Bara de navigare">
+<!ENTITY personalbarCmd.label "Bara de marcaje">
 <!ENTITY personalbarCmd.accesskey "B">
-<!ENTITY bookmarksToolbarItem.label "Elemente pe bara marcajelor">
+<!ENTITY bookmarksToolbarItem.label "Elemente pe bara de marcaje">
 
 <!ENTITY toolbarContextMenu.reloadAllTabs.label "Reîncarcă toate filele">
 <!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "a">
@@ -95,6 +100,13 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY pageSourceCmd.label "Sursa paginii">
 <!ENTITY pageSourceCmd.accesskey "u">
 <!ENTITY pageSourceCmd.commandkey "u">
+<!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
+Option+Command keyboard shortcut letter that Safari and Chrome use for "View
+Source" on macOS. pageSourceCmd.commandkey above is Firefox's official keyboard
+shortcut shown in the GUI. SafariCommandKey is an alias provided for the
+convenience of Safari and Chrome users on macOS. See bug 1398988. -->
+<!ENTITY pageSourceCmd.SafariCommandKey "u">
+
 <!ENTITY pageInfoCmd.label "Informații privind pagina">
 <!ENTITY pageInfoCmd.accesskey "I">
 <!ENTITY pageInfoCmd.commandkey "i">
@@ -122,7 +134,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenMinimize.tooltip "Minimizează">
 <!ENTITY fullScreenRestore.tooltip "Restaurează">
 <!ENTITY fullScreenClose.tooltip "Închide">
-<!ENTITY fullScreenAutohide.label "Ascunde barele de unelte">
+<!ENTITY fullScreenAutohide.label "Ascunde barele de instrumente">
 <!ENTITY fullScreenAutohide.accesskey "H">
 <!ENTITY fullScreenExit.label "Ieși din modul ecran complet">
 <!ENTITY fullScreenExit.accesskey "F">
@@ -161,23 +173,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisPageCmd.label "Marchează această pagină">
 <!ENTITY editThisBookmarkCmd.label "Editează acest marcaj">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
-<!-- LOCALIZATION NOTE (findShareServices.label):
-  -  Use the unicode ellipsis char, \u2026,
-  -  or use "..." if \u2026 doesn't suit traditions in your locale. -->
-<!ENTITY findShareServices.label "Găsește mai multe servicii de partajare…">
-<!ENTITY sharePageCmd.label "Împărtășește această pagină">
-<!ENTITY sharePageCmd.commandkey "S">
-<!ENTITY sharePageCmd.accesskey "s">
-<!-- LOCALIZATION NOTE (shareLink.accesskey): must be different than the following share access keys -->
-<!ENTITY shareLink.label "Împărtășește acest link">
-<!ENTITY shareLink.accesskey "h">
-<!ENTITY shareImage.label "Împărtășește această imagine">
-<!ENTITY shareImage.accesskey "r">
-<!ENTITY shareSelect.label "Împărtășește selecția">
-<!ENTITY shareSelect.accesskey "r">
-<!ENTITY shareVideo.label "Împărtășește acest videoclip">
-<!ENTITY shareVideo.accesskey "r">
-<!ENTITY feedsMenu2.label "Abonează-te la această pagină">
+
 <!ENTITY subscribeToPageMenupopup.label "Abonează-te la această pagină">
 <!ENTITY subscribeToPageMenuitem.label "Abonează-te la această pagină…">
 <!ENTITY addCurPagesCmd.label "Marchează toate filele…">
@@ -185,7 +181,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY recentBookmarks.label "Recent marcate">
 <!ENTITY otherBookmarksCmd.label "Alte marcaje">
 <!ENTITY mobileBookmarksCmd.label "Marcaje mobile">
-<!ENTITY bookmarksToolbarChevron.tooltip "Arată mai multe marcaje">
+<!ENTITY bookmarksToolbarChevron.tooltip "Afișează mai multe marcaje">
 <!ENTITY showRecentlyBookmarked.label     "Afișează cele recent marcate">
 <!ENTITY showRecentlyBookmarked.accesskey "h">
 <!ENTITY hideRecentlyBookmarked.label     "Ascunde cele recent marcate">
@@ -214,6 +210,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Gestionează utilizarea pluginurilor">
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "Schimbă dacă nu mai dorești notificări de la acest site">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Stochează date în stocarea persistentă">
+<!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Browserul este sub control de la distanță">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Gestionează partajarea camerei și/sau microfonului cu acest site">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Gestionează partajarea microfonului cu acest site">
@@ -232,24 +229,29 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Ai blocat notificările pentru acest site web.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Ai blocat stocarea persistentă de date pentru acest site web.">
 
+
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Afișează istoricul">
 
 <!ENTITY searchItem.title             "Caută">
 
 <!-- Toolbar items -->
-<!ENTITY homeButton.label             "Acasă">
+<!ENTITY homeButton.label             "Pagina de start">
 
 <!ENTITY bookmarksButton.label          "Marcaje">
 <!ENTITY bookmarksCmd.commandkey "b">
 
-<!ENTITY bookmarksMenuButton.label          "Marcaje">
-<!ENTITY bookmarksMenuButton.other.label "Alte marcaje">
-<!ENTITY bookmarksMenuButton.mobile.label "Marcaje mobile">
+<!ENTITY bookmarksSubview.label             "Marcaje">
+<!ENTITY bookmarksMenuButton2.label         "Meniu pentru marcaje">
+<!ENTITY bookmarksMenuButton.other.label    "Alte marcaje">
+<!ENTITY bookmarksMenuButton.mobile.label   "Marcaje mobile">
 <!ENTITY viewBookmarksSidebar2.label        "Vezi bara laterală cu marcaje">
+<!ENTITY hideBookmarksSidebar.label         "Ascunde bara laterală cu marcaje">
 <!ENTITY viewBookmarksToolbar.label         "Vezi bara cu marcaje">
-<!ENTITY searchBookmarks.label              "Caută în marcaje">
-
-<!ENTITY containersMenu.label "Containere">
+<!ENTITY hideBookmarksToolbar.label         "Ascunde bara cu marcaje">
+<!ENTITY searchBookmarks.label              "Caută marcaje">
+<!ENTITY bookmarkingTools.label             "Instrumente pentru marcaje">
+<!ENTITY addBookmarksMenu.label             "Adaugă meniul pentru marcaje în bara de instrumente">
+<!ENTITY removeBookmarksMenu.label          "Elimină meniul pentru marcaje din bara de instrumente">
 
 <!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
@@ -261,12 +263,15 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY historySidebarCmd.commandKey   "h">
 
 <!ENTITY toolsMenu.label              "Unelte">
-<!ENTITY toolsMenu.accesskey          "t"> 
+<!ENTITY toolsMenu.accesskey          "t">
 
 <!ENTITY keywordfield.label           "Adaugă un cuvânt cheie pentru această căutare…">
 <!ENTITY keywordfield.accesskey       "K">
 
 <!ENTITY downloads.label              "Descărcări">
+<!-- LOCALIZATION NOTE (libraryDownloads.label): This label is similar to
+  -  downloads.label, but used in the Library panel. -->
+<!ENTITY libraryDownloads.label       "Descărcări">
 <!ENTITY downloads.accesskey          "D">
 <!ENTITY downloads.commandkey         "j">
 <!ENTITY downloadsUnix.commandkey     "y">
@@ -280,7 +285,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY inspectContextMenu.label     "Inspectează elementul">
 <!ENTITY inspectContextMenu.accesskey "S">
 
-<!ENTITY fileMenu.label         "Fișier"> 
+<!ENTITY fileMenu.label         "Fișier">
 <!ENTITY fileMenu.accesskey       "F">
 <!ENTITY newUserContext.label             "Filă container nouă">
 <!ENTITY newUserContext.accesskey         "b">
@@ -291,47 +296,47 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY newPrivateWindow.accesskey "W">
 <!ENTITY newNonRemoteWindow.label   "Fereastră non e10s nouă">
 
-<!ENTITY editMenu.label         "Editare"> 
-<!ENTITY editMenu.accesskey       "E"> 
-<!ENTITY undoCmd.label            "Anulează">  
-<!ENTITY undoCmd.key            "Z">  
-<!ENTITY undoCmd.accesskey          "u"> 
-<!ENTITY redoCmd.label            "Refă">  
-<!ENTITY redoCmd.key            "Y">  
-<!ENTITY redoCmd.accesskey          "R"> 
-<!ENTITY cutCmd.label           "Taie">  
-<!ENTITY cutCmd.key             "X">  
-<!ENTITY cutCmd.accesskey         "T"> 
-<!ENTITY copyCmd.label            "Copiază">  
-  
-<!ENTITY copyCmd.accesskey          "C"> 
-<!ENTITY pasteCmd.label           "Lipește">  
-<!ENTITY pasteCmd.key           "V">  
-<!ENTITY pasteCmd.accesskey         "p"> 
-<!ENTITY deleteCmd.label          "Șterge">  
-<!ENTITY deleteCmd.key            "D">  
-<!ENTITY deleteCmd.accesskey        "D"> 
-<!ENTITY selectAllCmd.label         "Selectează tot">  
-<!ENTITY selectAllCmd.key         "A">  
-<!ENTITY selectAllCmd.accesskey       "a"> 
+<!ENTITY editMenu.label         "Editare">
+<!ENTITY editMenu.accesskey       "E">
+<!ENTITY undoCmd.label            "Anulează">
+<!ENTITY undoCmd.key            "Z">
+<!ENTITY undoCmd.accesskey          "u">
+<!ENTITY redoCmd.label            "Refă">
+<!ENTITY redoCmd.key            "Y">
+<!ENTITY redoCmd.accesskey          "R">
+<!ENTITY cutCmd.label           "Taie">
+<!ENTITY cutCmd.key             "X">
+<!ENTITY cutCmd.accesskey         "T">
+<!ENTITY copyCmd.label            "Copiază">
+<!ENTITY copyCmd.key            "C">
+<!ENTITY copyCmd.accesskey          "C">
+<!ENTITY pasteCmd.label           "Lipește">
+<!ENTITY pasteCmd.key           "V">
+<!ENTITY pasteCmd.accesskey         "p">
+<!ENTITY deleteCmd.label          "Șterge">
+<!ENTITY deleteCmd.key            "D">
+<!ENTITY deleteCmd.accesskey        "D">
+<!ENTITY selectAllCmd.label         "Selectează tot">
+<!ENTITY selectAllCmd.key         "A">
+<!ENTITY selectAllCmd.accesskey       "a">
 <!ENTITY preferencesCmd2.label       "Opțiuni">
 <!ENTITY preferencesCmd2.accesskey     "O">
 <!ENTITY preferencesCmdUnix.label       "Preferințe">
-<!ENTITY preferencesCmdUnix.accesskey     "n"> 
+<!ENTITY preferencesCmdUnix.accesskey     "n">
 
 <!ENTITY clearRecentHistory.label               "Șterge istoricul recent…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
 
-<!ENTITY viewMenu.label         "Vizualizare"> 
-<!ENTITY viewMenu.accesskey       "V"> 
-<!ENTITY viewToolbarsMenu.label       "Bare de unelte"> 
-<!ENTITY viewToolbarsMenu.accesskey     "t"> 
+<!ENTITY viewMenu.label         "Vizualizare">
+<!ENTITY viewMenu.accesskey       "V">
+<!ENTITY viewToolbarsMenu.label       "Bare de instrumente">
+<!ENTITY viewToolbarsMenu.accesskey     "t">
 <!ENTITY viewSidebarMenu.label "Bară laterală">
 <!ENTITY viewSidebarMenu.accesskey "e">
-<!ENTITY viewCustomizeToolbar.label       "Personalizează…"> 
+<!ENTITY viewCustomizeToolbar.label       "Personalizează…">
 <!ENTITY viewCustomizeToolbar.accesskey     "C">
-<!ENTITY overflowCustomizeToolbar.label       "Personalizează bara de unelte…">
+<!ENTITY overflowCustomizeToolbar.label       "Personalizează bara de instrumente…">
 <!ENTITY overflowCustomizeToolbar.accesskey   "C">
 
 <!ENTITY historyMenu.label "Istoric">
@@ -345,14 +350,14 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllHistoryCmd.commandkey "H">
 
 <!ENTITY appMenuCustomize.label "Personalizare">
-<!ENTITY appMenuCustomize.tooltip "Personalizează meniul și bara de unelte">
+<!ENTITY appMenuCustomize.tooltip "Personalizează meniul și bara de instrumente">
 <!ENTITY appMenuCustomizeExit.label "Ieși din personalizare">
 <!ENTITY appMenuCustomizeExit.tooltip "Finalizează personalizarea">
-<!ENTITY appMenuHistory.label "Istoric">
 <!ENTITY appMenuHistory.showAll.label "Afișează tot istoricul">
 <!ENTITY appMenuHistory.clearRecent.label "Șterge istoricul recent…">
 <!ENTITY appMenuHistory.restoreSession.label "Restaurează sesiunea anterioară">
 <!ENTITY appMenuHistory.viewSidebar.label "Vezi bara laterală cu istoricul">
+<!ENTITY appMenuHistory.recentHistory.label "Istoric recent">
 <!ENTITY appMenuHelp.label "Ajutor">
 <!ENTITY appMenuHelp.tooltip "Deschide meniul Ajutor">
 
@@ -362,8 +367,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.notabs.label "Nicio filă deschisă">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.showMore.label, appMenuRemoteTabs.showMore.tooltip):
      This is shown after the tabs list if we can display more tabs by clicking on the button -->
-<!ENTITY appMenuRemoteTabs.showMore.label "Arată mai multe">
-<!ENTITY appMenuRemoteTabs.showMore.tooltip "Arată mai multe file de pe acest dispozitiv">
+<!ENTITY appMenuRemoteTabs.showMore.label "Afișează mai multe">
+<!ENTITY appMenuRemoteTabs.showMore.tooltip "Afișează mai multe file de pe acest dispozitiv">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.showAll.label, appMenuRemoteTabs.showAll.tooltip):
      This is shown after the tabs list if we can all the remaining tabs by clicking on the button -->
 <!ENTITY appMenuRemoteTabs.showAll.label "Arată-le pe toate">
@@ -382,7 +387,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.managedevices.label "Gestionează dispozitivele…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Vezi bara laterală cu file sincronizate">
 
-<!ENTITY customizeMenu.addToToolbar.label "Adaugă în bara de unelte">
+<!ENTITY appMenuRecentHighlights.label "Evidențieri recente">
+
+<!ENTITY customizeMenu.addToToolbar.label "Adaugă în bara de instrumente">
 <!ENTITY customizeMenu.addToToolbar.accesskey "A">
 <!ENTITY customizeMenu.addToPanel.label "Adaugă în meniu">
 <!ENTITY customizeMenu.addToPanel.accesskey "m">
@@ -393,7 +400,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      items into this menu permanently (pinned). -->
 <!ENTITY customizeMenu.addToOverflowMenu.label "Adaugă în meniul excedentar">
 <!ENTITY customizeMenu.addToOverflowMenu.accesskey "m">
-<!ENTITY customizeMenu.moveToToolbar.label "Mută în bara de unelte">
+<!ENTITY customizeMenu.moveToToolbar.label "Mută în bara de instrumente">
 <!ENTITY customizeMenu.moveToToolbar.accesskey "o">
 <!-- LOCALIZATION NOTE (customizeMenu.moveToPanel.accesskey, customizeMenu.pinToOverflowMenu.accesskey)
      can appear on the same context menu as menubarCmd and personalbarCmd,
@@ -406,7 +413,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.pinToOverflowMenu.accesskey "P">
 <!ENTITY customizeMenu.unpinFromOverflowMenu.label "Anulează fixarea din meniul excedentar">
 <!ENTITY customizeMenu.unpinFromOverflowMenu.accesskey "u">
-<!ENTITY customizeMenu.removeFromToolbar.label "Elimină din bara de unelte">
+<!ENTITY customizeMenu.removeFromToolbar.label "Elimină din bara de instrumente">
 <!ENTITY customizeMenu.removeFromToolbar.accesskey "r">
 <!ENTITY customizeMenu.removeFromMenu.label "Elimină din meniu">
 <!ENTITY customizeMenu.removeFromMenu.accesskey "R">
@@ -529,7 +536,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY reloadFrameCmd.accesskey     "R">
 <!ENTITY viewPartialSourceForSelectionCmd.label "Vezi sursa selecției">
 <!ENTITY viewPartialSourceForMathMLCmd.label    "Vezi sursa MathML">
-<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both 
+<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both
          viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label -->
 <!ENTITY viewPartialSourceCmd.accesskey "e">
 <!ENTITY viewPageSourceCmd.label      "Vezi sursa paginii">
@@ -544,7 +551,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY reloadImageCmd.accesskey     "R">
 <!ENTITY viewImageCmd.label           "Vezi imaginea">
 <!ENTITY viewImageCmd.accesskey       "i">
-<!ENTITY viewImageInfoCmd.label       "Vezi informații despre imagine">
+<!ENTITY viewImageInfoCmd.label       "Vezi informații privind imaginea">
 <!ENTITY viewImageInfoCmd.accesskey   "f">
 <!ENTITY viewImageDescCmd.label       "Vezi descrierea">
 <!ENTITY viewImageDescCmd.accesskey   "d">
@@ -559,7 +566,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisLinkCmd.accesskey  "l">
 <!ENTITY bookmarkThisFrameCmd.label      "Marchează acest cadru">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "M">
-<!ENTITY copyURLCmd.label             "Copiază URL-ul">
+<!ENTITY pageAction.copyLink.label    "Copiază linkul">
+<!ENTITY copyURLFeedback.label        "Copiat!">
 <!ENTITY emailPageCmd.label           "Trimite e-mail cu linkul…">
 <!ENTITY emailPageCmd.accesskey       "e">
 <!ENTITY savePageCmd.label            "Salvează pagina ca…">
@@ -583,8 +591,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY emailImageCmd.accesskey      "g">
 <!ENTITY emailVideoCmd.label          "Trimite e-mail cu videoclipul…">
 <!ENTITY emailVideoCmd.accesskey      "a">
-<!ENTITY castVideoCmd.label           "Trimite videoclipul către dispozitiv">
-<!ENTITY castVideoCmd.accesskey       "e">
 <!ENTITY emailAudioCmd.label          "Trimite e-mail cu audioul…">
 <!ENTITY emailAudioCmd.accesskey      "a">
 <!ENTITY playPluginCmd.label          "Activează acest plugin">
@@ -596,7 +602,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY copyImageCmd.label           "Copiază locația imaginii">
 <!ENTITY copyImageCmd.accesskey       "o">
 <!ENTITY copyImageContentsCmd.label   "Copiază imaginea">
-<!ENTITY copyImageContentsCmd.accesskey  "y"> 
+<!ENTITY copyImageContentsCmd.accesskey  "y">
 <!ENTITY copyVideoURLCmd.label        "Copiază locația videoclipului">
 <!ENTITY copyVideoURLCmd.accesskey    "o">
 <!ENTITY copyAudioURLCmd.label        "Copiază locația audioului">
@@ -625,6 +631,8 @@ items are mutually exclusive. -->
 <!ENTITY mediaPlaybackRate2.accesskey "d">
 <!ENTITY mediaPlaybackRate050x2.label "Lent (0,5×)">
 <!ENTITY mediaPlaybackRate050x2.accesskey "S">
+<!ENTITY mediaPlaybackRate100x2.label "Normal">
+<!ENTITY mediaPlaybackRate100x2.accesskey "N">
 <!ENTITY mediaPlaybackRate125x2.label "Rapid (1,25×)">
 <!ENTITY mediaPlaybackRate125x2.accesskey "F">
 <!ENTITY mediaPlaybackRate150x2.label "Mai repede (1,5×)">
@@ -683,18 +691,20 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY fullZoom.accesskey             "Z">
 
 <!ENTITY sidebarCloseButton.tooltip     "Închide bara laterală">
+<!ENTITY sidebarMenuClose.label         "Închide bara laterală">
 
 <!ENTITY quitApplicationCmdWin2.label       "Ieșire">
 <!ENTITY quitApplicationCmdWin2.accesskey   "x">
 <!ENTITY quitApplicationCmdWin2.tooltip     "Ieși din &brandShorterName;">
 <!ENTITY goBackCmd.commandKey "[">
 <!ENTITY goForwardCmd.commandKey "]">
-<!ENTITY quitApplicationCmd.label       "Ieși"> 
+<!ENTITY quitApplicationCmd.label       "Ieși">
 <!ENTITY quitApplicationCmd.accesskey   "Q">
 <!ENTITY quitApplicationCmdMac2.label   "Ieși din &brandShorterName;">
+<!ENTITY quitApplicationCmd.key         "Q">
 
-<!ENTITY closeCmd.label                 "Închide">  
-<!ENTITY closeCmd.key                   "W">  
+<!ENTITY closeCmd.label                 "Închide">
+<!ENTITY closeCmd.key                   "W">
 <!ENTITY closeCmd.accesskey             "c">
 
 <!ENTITY toggleMuteCmd.key              "M">
@@ -753,7 +763,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.weakEncryption "Această pagină folosește criptare slabă.">
 
 <!-- Strings for connection state warnings in the subview. -->
-<!ENTITY identity.description.insecure "Conexiunea la acest site nu este privată. Informațiile pe care le trimiți pot fi văzute de alții (cum ar fi parolele, mesajele, carduri de credit, etc.).">
+<!ENTITY identity.description.insecure "Conexiunea la acest site nu este privată. Informațiile pe care le trimiți pot fi văzute de alții (cum ar fi parolele, mesajele, cardurile de credit, etc.).">
 <!ENTITY identity.description.insecureLoginForms "Informațiile de autentificare pe care le introduci pe această pagină nu sunt securizate și pot fi compromise.">
 <!ENTITY identity.description.weakCipher "Conexiunea la acest site web folosește criptare slabă și nu este privată.">
 <!ENTITY identity.description.weakCipher2 "Alte persoane pot vedea informațiile tale sau pot modifica comportamentul site-ului web.">
@@ -796,6 +806,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Activează sincronizarea filelor pentru a vedea o listă de file de celelalte dispozitive ale tale.">
+<!ENTITY syncedTabs.sidebar.searchPlaceholder  "Caută în filele sincronizate">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
                         syncedTabs.context.openAllInTabs.accesskey):
@@ -817,6 +828,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncedTabs.context.openAllInTabs.label              "Deschide toate în file">
 <!ENTITY syncedTabs.context.openAllInTabs.accesskey          "o">
 <!ENTITY syncedTabs.context.managedevices.label              "Gestionează dispozitivele…">
+<!ENTITY syncedTabs.context.managedevices.accesskey          "D">
 
 
 <!ENTITY syncBrand.shortName.label    "Sincronizare">
@@ -829,21 +841,14 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncReAuthItem.accesskey     "R">
 <!ENTITY syncToolbarButton.label      "Sincronizare">
 
-<!ENTITY social.addons.label "Gestionează servicii…">
-
-<!ENTITY social.directory.label "Dosar de activări">
-<!ENTITY social.directory.text "Poți activa serviciile de partajare din dosar.">
-<!ENTITY social.directory.button "Du-mă acolo!">
-<!ENTITY social.directory.introText "Clic pe un serviciu pentru a-l adăuga în &brandShortName;.">
-<!ENTITY social.directory.viewmore.text "Vezi mai multe">
-
-<!ENTITY customizeMode.menuAndToolbars.header2 "Funcționalități și unelte suplimentare">
-<!ENTITY customizeMode.menuAndToolbars.empty "Dorești mai multe unelte?">
+<!ENTITY customizeMode.menuAndToolbars.header3 "Trage elementele favorite în bara de instrumente sau în meniul excedentar.">
+<!ENTITY customizeMode.menuAndToolbars.empty "Dorești mai multe instrumente?">
 <!ENTITY customizeMode.menuAndToolbars.emptyLink "Alege din mii de suplimente">
 <!ENTITY customizeMode.restoreDefaults "Restaurează valorile implicite">
 <!ENTITY customizeMode.done "Terminat">
 <!ENTITY customizeMode.titlebar "Bara de titlu">
-<!ENTITY customizeMode.toolbars2 "Bare de unelte">
+<!ENTITY customizeMode.extraDragSpace "Spațiu de tragere">
+<!ENTITY customizeMode.toolbars2 "Bare de instrumente">
 <!ENTITY customizeMode.lwthemes "Teme">
 <!ENTITY customizeMode.lwthemes.myThemes "Temele mele">
 <!ENTITY customizeMode.lwthemes.recommended "Recomandate">
@@ -851,7 +856,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.lwthemes.menuManage.accessKey "G">
 <!ENTITY customizeMode.lwthemes.menuGetMore "Obține mai multe teme">
 <!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "T">
-<!ENTITY customizeMode.emptyOverflowList.description "Trage și plasează elementele aici pentru a le păstra la îndemână, însă în afara barei de unelte…">
+<!ENTITY customizeMode.emptyOverflowList.description "Trage și plasează elementele aici pentru a le păstra la îndemână, însă în afara barei de instrumente…">
+<!ENTITY customizeMode.overflowList.title2 "Meniu excedentar">
+<!ENTITY customizeMode.overflowList.description "Trage și plasează elementele aici pentru a le păstra la îndemână, însă în afara barei de instrumente…">
 <!ENTITY customizeMode.uidensity "Densitate">
 <!-- LOCALIZATION NOTE (customizeMode.uidensity.menuNormal.*):
      “Normal” is displayed in the Customize screen, under the Density menu. -->
@@ -872,6 +879,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.uidensity.menuTouch.tooltip "Tactil">
 <!ENTITY customizeMode.uidensity.menuTouch.accessKey "T">
 <!ENTITY customizeMode.uidensity.autoTouchMode.checkbox.label "Folosește tactil pentru modul tabletă">
+
+<!ENTITY customizeMode.autoHideDownloadsButton.label "Ascunde automat">
 
 <!ENTITY getUserMedia.selectCamera.label "Camera spre partajare:">
 <!ENTITY getUserMedia.selectCamera.accesskey "C">
@@ -897,16 +906,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY trackingProtection.block2.label "Activează protecția">
 <!ENTITY trackingProtection.block2.accesskey "e">
 
-<!ENTITY trackingContentBlocked.message "Urmărire">
-<!ENTITY trackingContentBlocked.moreinfo "Părți ale paginii care îți urmăresc activitatea online au fost blocate.">
-<!ENTITY trackingContentBlocked.learnMore "Află mai multe">
-<!ENTITY trackingContentBlocked.options "Opțiuni">
-<!ENTITY trackingContentBlocked.unblock2.label "Dezactivează protecția pentru acest site">
-<!ENTITY trackingContentBlocked.unblock2.accesskey "D">
-<!ENTITY trackingContentBlocked.block.label "Activează protecția">
-<!ENTITY trackingContentBlocked.block.accesskey "e">
-<!ENTITY trackingContentBlocked.disabled.message "Protecția față de urmărire este dezactivată">
-
 <!ENTITY pluginNotification.showAll.label "Arată-le pe toate">
 <!ENTITY pluginNotification.showAll.accesskey "S">
 
@@ -923,8 +922,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pluginNotification.width "28em">
 
 <!ENTITY uiTour.infoPanel.close "Închide">
-
-<!ENTITY appMenuSidebars.label         "Bare laterale">
 
 <!-- LOCALIZATION NOTE: (panicButton.view.mainTimeframeDesc, panicButton.view.5min, panicButton.view.2hr, panicButton.view.day):
      The .mainTimeframeDesc string combined with any of the 3 others is meant to form a complete sentence, e.g. "Forget the last: Five minutes".
@@ -972,7 +969,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateManual.cancelButton.accesskey "N">
 <!ENTITY updateManual.panelUI.label "Descarcă o copie nouă de &brandShorterName;">
 
-<!ENTITY updateRestart.message "După o repornire rapidă, &brandShorterName; îți va restaura toate filele și ferestrele deschise.">
+<!ENTITY updateRestart.message2 "După o repornire rapidă &brandShorterName; va restaura toate filele tale deschise şi ferestrele care nu sunt în modul de navigare privată.">
 <!ENTITY updateRestart.header.message2 "Repornește pentru a actualiza &brandShorterName;.">
 <!ENTITY updateRestart.acceptButton.label "Repornește și restaurează">
 <!ENTITY updateRestart.acceptButton.accesskey "R">
@@ -981,5 +978,16 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.panelUI.label2 "Repornește pentru a actualiza &brandShorterName;">
 
 <!ENTITY pageActionButton.tooltip "Acțiuni pentru pagină">
+<!ENTITY pageAction.addToUrlbar.label "Adaugă la bara de adresă">
+<!ENTITY pageAction.removeFromUrlbar.label "Elimină din bara de adresă">
 
-<!ENTITY sendToDevice.label2 "Trimite pe dispozitiv">
+<!ENTITY pageAction.sendTabToDevice.label "Trimite fila pe dispozitiv">
+<!ENTITY sendToDevice.syncNotReady.label "Se sincronizează dispozitivele…">
+
+<!ENTITY libraryButton.tooltip "Vezi istoricul, marcajele salvate şi mai multe">
+
+<!-- LOCALIZATION NOTE: (accessibilityIndicator.tooltip): This is used to
+     display a tooltip for accessibility indicator in toolbar/tabbar. It is also
+     used as a textual label for the indicator used by assistive technology
+     users. -->
+<!ENTITY accessibilityIndicator.tooltip "Funcţii de accesibilitate activate">

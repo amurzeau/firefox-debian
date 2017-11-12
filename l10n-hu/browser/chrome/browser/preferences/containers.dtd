@@ -12,15 +12,14 @@
 <!ENTITY window.title         "Új konténer hozzáadása">
 <!ENTITY window.width         "45em">
 
-<!ENTITY name.label           "Név:">
-<!ENTITY name.accesskey       "N">
+<!ENTITY name2.label          "Név">
+<!ENTITY name2.accesskey      "N">
 <!ENTITY name.placeholder     "Adjon meg egy konténernevet">
-<!ENTITY icon.label           "Ikon:">
-<!ENTITY icon.accesskey       "I">
-<!ENTITY color.label          "Szín:">
-<!ENTITY color.accesskey      "z">
+<!ENTITY icon2.label          "Ikon">
+<!ENTITY icon2.accesskey      "I">
+<!ENTITY color2.label         "Szín">
+<!ENTITY color2.accesskey     "z">
 <!ENTITY windowClose.key      "w">
 
 <!ENTITY button.ok.label      "Kész">
 <!ENTITY button.ok.accesskey  "K">
-

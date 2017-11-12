@@ -7,16 +7,29 @@
 <!ENTITY  blockPopups.label           "Bloķēt jaunos logus">
 <!ENTITY  blockPopups.accesskey       "B">
 
-<!ENTITY  notificationsPolicyLearnMore.label   "Uzzināt vairāk">
-<!ENTITY  notificationsPolicyDesc4.label       "Izvēlieties, kuras lapas var rādīt paziņojumus">
-<!ENTITY  notificationsPolicyButton.accesskey  "v">
-<!ENTITY  notificationsPolicyButton.label      "Izvēlēties...">
 <!ENTITY  notificationsDoNotDisturb.label      "Netraucēt">
 <!ENTITY  notificationsDoNotDisturb.accesskey  "N">
 <!ENTITY  notificationsDoNotDisturbDetails.value "Paziņojumi netiks rādīti līdz brīdim, kad pārstartēsiet &brandShortName;">
 
-<!ENTITY  popupExceptions.label       "Izņēmumi...">
-<!ENTITY  popupExceptions.accesskey   "I">
+<!ENTITY  popupExceptions.label                                 "Izņēmumi...">
+<!ENTITY  popupExceptions.accesskey                             "I">
+
+<!ENTITY  notificationPermissions.label                         "Paziņojumi">
+<!ENTITY  notificationSettingsButton.label                      "Iestatījumi…">
+<!ENTITY  notificationSettingsButton.accesskey                  "z">
+<!ENTITY  notificationPermissionsLearnMore.label                "Uzzināt vairāk">
+
+<!ENTITY  locationPermissions.label                             "Atrašanās vieta">
+<!ENTITY  locationSettingsButton.label                          "Iestatījumi…">
+<!ENTITY  locationSettingsButton.accesskey                      "t">
+
+<!ENTITY  cameraPermissions.label                               "Kamera">
+<!ENTITY  cameraSettingsButton.label                            "Iestatījumi…">
+<!ENTITY  cameraSettingsButton.accesskey                        "t">
+
+<!ENTITY  microphonePermissions.label                           "Mikrofons">
+<!ENTITY  microphoneSettingsButton.label                        "Iestatījumi…">
+<!ENTITY  microphoneSettingsButton.accesskey                    "t">
 
 <!ENTITY  fontsAndColors.label        "Fonti un krāsas">
 
@@ -55,5 +68,5 @@
 <!ENTITY  drmContent2.label              "Digitālā satura tiesību pārvaldības (DRM) saturs">
 
 <!ENTITY  playDRMContent2.label          "Atskaņot DRM kontrolētu saturu">
-<!ENTITY  playDRMContent2.accesskey      "A">
+<!ENTITY  playDRMContent2.accesskey      "P">
 <!ENTITY  playDRMContent.learnMore.label "Uzzināt vairāk">

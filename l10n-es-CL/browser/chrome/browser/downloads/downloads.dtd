@@ -56,6 +56,7 @@
 <!ENTITY cmd.show.accesskey               "F">
 <!ENTITY cmd.showMac.label                "Mostrar en el Finder">
 <!ENTITY cmd.showMac.accesskey            "F">
+<!ENTITY cmd.showDownloads.label          "Mostrar carpeta de descargas">
 <!ENTITY cmd.retry.label                  "Reintentar">
 <!ENTITY cmd.goToDownloadPage.label       "Ir a la página de la descarga">
 <!ENTITY cmd.goToDownloadPage.accesskey   "I">
@@ -134,7 +135,17 @@
 <!ENTITY downloadsHistory.label           "Mostrar todas las descargas">
 <!ENTITY downloadsHistory.accesskey       "M">
 
-<!ENTITY openDownloadsFolder.label       "Abrir la carpeta de descargas">
+<!-- LOCALIZATION NOTE (downloadDetails.label):
+     This string is shown at the top of the Download Details Panel, to indicate
+     that we are showing the details of a single download.
+     -->
+<!ENTITY downloadDetails.label            "Detalles de la descarga">
+
+<!-- LOCALIZATION NOTE (openDownloadsFolder.label):
+     This command is not currently available in the user interface, but the
+     string was preserved by bug 1362207 to be used in a future version.
+     -->
+<!ENTITY openDownloadsFolder.label        "Abrir la carpeta de descargas">
 
 <!ENTITY clearDownloadsButton.label       "Limpiar descargas">
 <!ENTITY clearDownloadsButton.tooltip     "Limpia las descargas completadas, canceladas y fallidas">

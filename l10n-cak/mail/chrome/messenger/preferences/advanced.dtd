@@ -1,0 +1,99 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!ENTITY itemGeneral.label       "Chijun">
+<!ENTITY dataChoicesTab.label    "Kicha'ik taq Tzij">
+<!ENTITY itemUpdate.label        "Tik'ex">
+<!ENTITY itemNetworking.label    "K'amab'ey &amp; Rupam Rujolom">
+<!ENTITY itemCertificates.label  "Taq ruwujil b'i'aj">
+
+<!-- General Settings -->
+<!ENTITY allowHWAccel.label            "Tokisäx rupararexik ch'akulakem toq xtiwachin pe">
+<!ENTITY allowHWAccel.accesskey        "c">
+
+<!ENTITY useAutoScroll.label           "Tokisäx ruyonil rusiloxik">
+<!ENTITY useAutoScroll.accesskey       "T">
+<!ENTITY useSmoothScrolling.label      "Tokisäx jeb'ël q'axanïk">
+<!ENTITY useSmoothScrolling.accesskey  "j">
+
+<!ENTITY searchIntegration.label       "Tiya' q'ij chi re &searchIntegration.engineName; richin yerukanoj taq tzijol">
+<!ENTITY searchIntegration.accesskey   "S">
+<!ENTITY checkDefaultsNow.label        "Tinik'öx Wakami…">
+<!ENTITY checkDefaultsNow.accesskey    "W">
+<!ENTITY configEditDesc.label          "Q'axinäq Nuk'ulem">
+<!ENTITY configEdit.label              "Tib'an runuk'ulem ri Nuk'unel…">
+<!ENTITY configEdit.accesskey          "r">
+
+<!-- Data Choices -->
+<!ENTITY telemetrySection.label          "Etataqonel">
+<!ENTITY enableTelemetry.label           "Titzij Telemetry">
+<!ENTITY enableTelemetry.accesskey       "T">
+<!ENTITY telemetryLearnMore.label        "Tetamäx Ch'aqa' Chik">
+
+<!ENTITY crashReporterSection.label      "Rutzijol Sachoj">
+<!ENTITY crashReporterLearnMore.label    "Tetamäx Ch'aqa' Chik">
+
+<!-- Update -->
+<!-- LOCALIZATION NOTE (updateApp.label):
+  Strings from aboutDialog.dtd are displayed in this section of the preferences.
+  Please check for possible accesskey conflicts.
+-->
+<!ENTITY updateApp2.label                "&brandShortName; Taq Ruk'exoj">
+<!-- LOCALIZATION NOTE (updateApp.version.*): updateApp.version.pre is
+  followed by a version number, keep the trailing space or replace it with
+  a different character as needed. updateApp.version.post is displayed after
+  the version number, and is empty on purpose for English. You can use it
+  if required by your language.
+ -->
+<!ENTITY updateApp.version.pre           "Ruwäch ">
+<!ENTITY updateApp.version.post          "">
+<!ENTITY updateAuto.label                "Keyak ruyonil taq k'exoj ruwäch (chilab'en: utzilan jikimal)">
+<!ENTITY updateAuto.accesskey            "r">
+<!ENTITY updateCheck.label               "Kenik'öx ri taq k'exoj, xa xe chi tiya' q'ij chwe we ninwajo' chi yenyäk">
+<!ENTITY updateCheck.accesskey           "K">
+<!ENTITY updateManual.label              "Mani nikanöx taq k'exoj ruwäch (man chilab'en ta: ruk'ayewal chajinïk)">
+<!ENTITY updateManual.accesskey          "M">
+<!ENTITY updateHistory.label             "Tik'ut pe ri Kinatab'al taq K'exoj">
+<!ENTITY updateHistory.accesskey         "x">
+
+<!ENTITY useService.label                "Tokisäx jun samaj pa ruka'n b'ey richin yeyak ri taq k'exoj">
+<!ENTITY useService.accesskey            "n">
+
+<!-- Networking and Disk Space -->
+<!ENTITY showSettings.label            "Taq nuk'ulem…">
+<!ENTITY showSettings.accesskey        "n">
+<!ENTITY proxiesConfigure.label        "Tanuk'samajij ri rub'eyal nok ri &brandShortName; pa k'amaya'l">
+<!ENTITY connectionsInfo.caption       "Okem">
+<!ENTITY offlineInfo.caption           "Chupül">
+<!ENTITY showOffline.label             "Chupül…">
+<!ENTITY showOffline.accesskey         "C">
+
+<!ENTITY Diskspace                       "Rupam Rujolom">
+<!ENTITY offlineCompactFoldersMB.label   "MB chi ronojel">
+
+<!-- LOCALIZATION NOTE:
+  The entities useCacheBefore.label and useCacheAfter.label appear on a single
+  line in preferences as follows:
+
+  &useCacheBefore.label  [ textbox for cache size in MB ]   &useCacheAfter.label;
+-->
+<!ENTITY useCacheBefore.label            "Tokisäx k'a">
+<!ENTITY useCacheBefore.accesskey        "T">
+<!ENTITY useCacheAfter.label             "MB rupam richin ri jumejyak">
+<!ENTITY overrideSmartCacheSize.label    "Tiyuj runuk'samajixïk ruyonil jumejyak">
+<!ENTITY overrideSmartCacheSize.accesskey "y">
+<!ENTITY clearCacheNow.label             "Tijosq'ïx Wakami">
+<!ENTITY clearCacheNow.accesskey         "j">
+
+<!-- Certificates -->
+<!ENTITY certSelection.description       "Toq ri ruk'u'x samaj xtrajo' pe ri ruwujil nub'i':">
+<!ENTITY certs.auto                      "Pa ruyonil ticha' jun">
+<!ENTITY certs.auto.accesskey            "t">
+<!ENTITY certs.ask                       "Junelïk tik'utüx pe chwe">
+<!ENTITY certs.ask.accesskey             "t">
+<!ENTITY enableOCSP.label                "Rutzolixik rutzij ri OCSP peyon tzij, ri ruk'u'x taq samaj nikijikib'a' ri kutzil ri taq ruwujil rub'i'">
+<!ENTITY enableOCSP.accesskey            "R">
+
+<!ENTITY viewSecurityDevices.label "Kokisaxel Jikomal">
+<!ENTITY viewSecurityDevices.accesskey "K">

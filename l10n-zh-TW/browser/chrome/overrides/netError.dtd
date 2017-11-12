@@ -18,15 +18,15 @@
 <!ENTITY deniedPortAccess.title "此網址已被限制">
 <!ENTITY deniedPortAccess.longDesc "">
 
-<!ENTITY dnsNotFound.title "找不到伺服器">
-<!ENTITY dnsNotFound.longDesc "<ul>
-   <li>請檢查網址是否有打錯？例如把
-   <strong>www</strong>.example.com 打成
-   <strong>ww</strong>.example.com</li>
-   <li>若無法載入任何網站，請檢查您的網路連線狀態。</li>
-   <li>若電腦或網路被防火牆或 Proxy 保護，請確定
-   &brandShortName; 被允許存取網路。</li> </ul>
-                    ">
+<!ENTITY dnsNotFound.pageTitle "找不到伺服器">
+<!-- Localization note (dnsNotFound.title1) - "Hmm" is a sound made when considering or puzzling over something. You don't have to include it in your translation if your language does not have a written word like this. -->
+<!ENTITY dnsNotFound.title1 "呃…找不到這個網站。">
+<!ENTITY dnsNotFound.longDesc1 "<strong>若網址正確無誤，還可試試下列方式:</strong>
+<ul>
+  <li>稍候再試。</li>
+  <li>檢查網路連線是否正常。</li>
+  <li>若透過防火牆連線，請檢查 &brandShortName; 是否有權連線到網際網路。</li>
+</ul>">
 
 <!ENTITY fileNotFound.title "找不到檔案">
 <!ENTITY fileNotFound.longDesc "
@@ -49,14 +49,9 @@
 
 <!ENTITY openPortalLoginPage.label2 "開啟網路登入頁面">
 
-<!ENTITY malformedURI.title "不正確的網址">
-<!ENTITY malformedURI.longDesc "<ul>
-   <li>網址通常長得像
-      <strong>http://www.example.com/</strong>。</li>
-   <li>請確定您用的是斜線 (例:
-      <strong>/</strong>)。</li>
-</ul>
-                ">
+<!ENTITY malformedURI.pageTitle "網址無效">
+<!-- Localization note (malformedURI.title1) - "Hmm" is a sound made when considering or puzzling over something. You don't have to include it in your translation if your language does not have a written word like this. -->
+<!ENTITY malformedURI.title1 "呃…這個網址好像有錯。">
 
 <!ENTITY netInterrupt.title "資料傳輸中斷">
 <!ENTITY netInterrupt.longDesc "&sharedLongDesc;">
@@ -172,7 +167,7 @@ was trying to connect. -->
                         certerror.wrongSystemTimeWithoutReference) - The <span id='..' />
      tags will be injected with actual values, please leave them unchanged. -->
 <!ENTITY certerror.wrongSystemTime2 "<p>您的系統時間不正確，&brandShortName; 無法與 <span id='wrongSystemTime_URL'/> 建立安全連線。</p> <p>您的電腦時間目前為 <span id='wrongSystemTime_systemDate'/>，但應該是 <span id='wrongSystemTime_actualDate'/>。請將您的系統設定為正確時間來修正此問題。</p>">
-<!ENTITY certerror.wrongSystemTimeWithoutReference "<p>您的系統時間不正確，&brandShortName; 無法與 <span id='wrongSystemTime_URL'/> 建立安全連線。</p> <p>您的電腦時間目前為 <span id='wrongSystemTimeWithoutReference_systemDate'/>。請將您的系統設定為正確時間來修正此問題。</p>">
+<!ENTITY certerror.wrongSystemTimeWithoutReference "<p>您的系統時間不正確，&brandShortName; 無法與<span id='wrongSystemTimeWithoutReference_URL'/>建立安全連線。</p> <p>您的系統時間目前為<span id='wrongSystemTimeWithoutReference_systemDate'/>，請設定為正確的日期與時間來修正此問題。</p>">
 
 <!ENTITY certerror.pagetitle1  "不安全的連線">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "此網站透過 HTTP Strict Transport Security (HSTS) 要求 &brandShortName; 僅能透過安全連線連結到該網站，所以無法將此憑證加入例外清單。">

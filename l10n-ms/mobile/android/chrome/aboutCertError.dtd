@@ -10,16 +10,16 @@
 a replacement for the standard security certificate errors produced
 by NSS/PSM via netError.xhtml. -->
 
-<!ENTITY certerror.pagetitle  "Sambungan tidak dipercayai">
-<!ENTITY certerror.longpagetitle "Sambungan Ini Tidak Dipercayai">
+<!ENTITY certerror.pagetitle  "Sambungan Tidak Dipercayai">
+<!ENTITY certerror.longpagetitle "Sambungan ini Tidak Dipercayai">
 
 <!-- Localization note (certerror.introPara1) - The string "#1" will
 be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
-<!ENTITY certerror.introPara1 "Anda meminta &brandShortName; untuk menyambung
-secara selamat ke <b>#1</b>, tetapi kami tidak dapat mengesahkan sambungan anda itu selamat.">
+<!ENTITY certerror.introPara1 "Anda minta &brandShortName; untuk membuat sambungan
+selamat ke <b>#1</b>, tapi kami tidak dapat mengesahkan bahawa sambungan ini selamat.">
 
-<!ENTITY certerror.whatShouldIDo.heading "Apa perlu saya buat?">
+<!ENTITY certerror.whatShouldIDo.heading "Apa Perlu Saya Buat?">
 <!ENTITY certerror.whatShouldIDo.content "Jika kebiasaanya anda disambung ke
 laman ini tanpa masalah, ralat ini bermakna ada seseorang
 cuba menyamar sebagai laman ini, dan anda tidak perlu teruskan.">
@@ -35,4 +35,4 @@ anda tahu ada alasan yang bagus laman ini tidak menggunakan pengenalan yang dipe
 <!ENTITY certerror.addTemporaryException.label "Lawat laman">
 <!ENTITY certerror.addPermanentException.label "Tambah pengecualian kekal">
 
-<!ENTITY certerror.technical.heading "Maklumat Teknikal">
+<!ENTITY certerror.technical.heading "Butiran Teknikal">

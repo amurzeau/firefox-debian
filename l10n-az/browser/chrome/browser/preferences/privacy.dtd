@@ -22,8 +22,8 @@
 <!ENTITY trackingProtectionPBM6.label         "Bilinən izləyiciləri bloklamaq üçün Məxfi Səyahətdə İzlənmə Qorumasını işlədin">
 <!ENTITY trackingProtectionPBM6.accesskey     "v">
 <!ENTITY trackingProtectionPBMLearnMore.label "Ətraflı öyrən">
-<!ENTITY changeBlockList.label          "Qara Siyahını Dəyiş">
-<!ENTITY changeBlockList.accesskey      "D">
+<!ENTITY changeBlockList2.label               "Qara Siyahını Dəyiş…">
+<!ENTITY changeBlockList2.accesskey           "C">
 
 <!ENTITY  doNotTrack.description        'Saytlara "Məni İzləmə" siqnalı göndərərək izlənmək istəmədiyinizi bildirin'>
 <!ENTITY  doNotTrack.learnMore.label    "Ətraflı öyrən">
@@ -35,8 +35,8 @@
 
 <!ENTITY  addressBar.label              "Ünvan Sətri">
 <!ENTITY  addressBar.suggest.label      "Ünvan sətrindən istifadə edərkən bunları təklif et:">
-<!ENTITY  locbar.history.label          "Tarixçə">
-<!ENTITY  locbar.history.accesskey      "T">
+<!ENTITY  locbar.history2.label         "Səyahət tarixçəsi">
+<!ENTITY  locbar.history2.accesskey     "H">
 <!ENTITY  locbar.bookmarks.label        "Əlfəcinlər">
 <!ENTITY  locbar.bookmarks.accesskey    "l">
 <!ENTITY  locbar.openpage.label         "Açıq vərəqlər">
@@ -46,17 +46,17 @@
 
 <!ENTITY  suggestionSettings2.label     "Axtarış mühərriyi təklifləri üçün nizamlamaları dəyiş">
 
-<!ENTITY  acceptCookies.label           "Saytlardan çərəzləri qəbul et">
-<!ENTITY  acceptCookies.accesskey       "e">
+<!ENTITY  acceptCookies2.label          "Saytlardan çərəzləri qəbul et">
+<!ENTITY  acceptCookies2.accesskey      "A">
 
-<!ENTITY  acceptThirdParty.pre.label      "Üçüncü tərəf çərəzlərini qəbul et:">
-<!ENTITY  acceptThirdParty.pre.accesskey  "l">
+<!ENTITY  acceptThirdParty2.pre.label     "Üçüncü tərəf çərəzlərini qəbul et">
+<!ENTITY  acceptThirdParty2.pre.accesskey "y">
 <!ENTITY  acceptThirdParty.always.label   "Həmişə">
 <!ENTITY  acceptThirdParty.never.label    "Heç vaxt">
 <!ENTITY  acceptThirdParty.visited.label  "Baxılanlardan">
 
-<!ENTITY  keepUntil.label               "Saxlama limiti:">
-<!ENTITY  keepUntil.accesskey           "t">
+<!ENTITY  keepUntil2.label              "Saxlama limiti">
+<!ENTITY  keepUntil2.accesskey          "u">
 
 <!ENTITY  expire.label                  "vaxtı bitənədək">
 <!ENTITY  close.label                   "&brandShortName; qapatanadək">
@@ -113,3 +113,8 @@
 <!ENTITY  browserContainersEnabled.accesskey    "n">
 <!ENTITY  browserContainersSettings.label        "Tənzimləmələr…">
 <!ENTITY  browserContainersSettings.accesskey    "i">
+
+<!ENTITY  a11yPrivacy.checkbox.label     "Əlçatanlıq xidmətlərinin səyyahınıza girişə icazə verilməsinin qabağın al">
+<!ENTITY  a11yPrivacy.checkbox.accesskey "a">
+<!ENTITY  a11yPrivacy.learnmore.label    "Ətraflı öyrən">
+<!ENTITY enableSafeBrowsingLearnMore.label "Ətraflı öyrən">

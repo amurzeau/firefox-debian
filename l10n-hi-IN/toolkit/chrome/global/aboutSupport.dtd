@@ -21,6 +21,7 @@ This is likely the same like id.heading in crashes.dtd. -->
 <!ENTITY aboutSupport.extensionVersion "संस्करण">
 <!ENTITY aboutSupport.extensionId "आईडी">
 
+<!ENTITY aboutSupport.featuresTitle "&brandShortName; विशेषताएं">
 <!ENTITY aboutSupport.featureName "नाम">
 <!ENTITY aboutSupport.featureVersion "संस्करण">
 <!ENTITY aboutSupport.featureId "ID">
@@ -65,8 +66,10 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 
 <!ENTITY aboutSupport.appBasicsMultiProcessSupport "बहुप्रक्रिया विंडोज़">
 
+<!ENTITY aboutSupport.appBasicsProcessCount "वेब सामग्री प्रक्रियाएं">
 
 <!ENTITY aboutSupport.appBasicsKeyGoogle "गूगल कुंजी">
+<!ENTITY aboutSupport.appBasicsKeyMozilla "Mozilla अवस्थिति सेवा कुंजी">
 
 <!ENTITY aboutSupport.appBasicsSafeMode "सेफ मोड">
 
@@ -103,6 +106,8 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.a11yTitle "पहुँच">
 <!ENTITY aboutSupport.a11yActivated "सक्रिय">
 <!ENTITY aboutSupport.a11yForceDisabled "पहुँच रोकें">
+<!ENTITY aboutSupport.a11yHandlerUsed "सुगम संचालक प्रयुक्त">
+<!ENTITY aboutSupport.a11yInstantiator "अभिगम्यता दृष्टांतकर्ता">
 
 <!ENTITY aboutSupport.libraryVersionsTitle "लाइब्रेरी संस्करण">
 
@@ -113,12 +118,14 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.copyRawDataToClipboard.label "कच्चे डाटा क्लिपबोर्ड में नक़ल लें">
 
 <!ENTITY aboutSupport.sandboxTitle "सैंडबॉक्स ">
+<!ENTITY aboutSupport.sandboxSyscallLogTitle "अस्वीकृत सिस्टम कॉल">
 <!ENTITY aboutSupport.sandboxSyscallIndex "#">
-<!ENTITY aboutSupport.sandboxSyscallAge "सेकंड पहले">
+<!ENTITY aboutSupport.sandboxSyscallAge "क्षण पहले">
 <!ENTITY aboutSupport.sandboxSyscallPID "PID">
 <!ENTITY aboutSupport.sandboxSyscallTID "TID">
-<!ENTITY aboutSupport.sandboxSyscallProcType "प्रक्रिया प्रकार">
-<!ENTITY aboutSupport.sandboxSyscallArgs "तर्क">
+<!ENTITY aboutSupport.sandboxSyscallProcType "प्रक्रिया का प्रकार">
+<!ENTITY aboutSupport.sandboxSyscallNumber "सिसकॉल">
+<!ENTITY aboutSupport.sandboxSyscallArgs "मापदंड">
 
 <!ENTITY aboutSupport.safeModeTitle "सुरक्षित मोड में कोशिश करें">
 <!ENTITY aboutSupport.restartInSafeMode.label "निष्क्रिय सहयुक्तियों के साथ फिर आरंभ करें...">
@@ -138,8 +145,8 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.mediaDeviceName "नाम">
 <!ENTITY aboutSupport.mediaDeviceGroup "समूह">
 <!ENTITY aboutSupport.mediaDeviceVendor "विक्रेता">
-<!ENTITY aboutSupport.mediaDeviceState "स्थिति">
-<!ENTITY aboutSupport.mediaDevicePreferred "वरीयता">
+<!ENTITY aboutSupport.mediaDeviceState "अवस्था">
+<!ENTITY aboutSupport.mediaDevicePreferred "पसंदीदा">
 <!ENTITY aboutSupport.mediaDeviceFormat "प्रारूप">
 <!ENTITY aboutSupport.mediaDeviceChannels "चैनल्स">
 <!ENTITY aboutSupport.mediaDeviceRate "दर">

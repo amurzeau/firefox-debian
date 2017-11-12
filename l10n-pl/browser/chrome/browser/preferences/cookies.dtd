@@ -4,7 +4,7 @@
 
 <!ENTITY window.width "32em">
 
-<!ENTITY     cookiesonsystem.label          "Na tym komputerze przechowywane są następujące ciasteczka:">
+<!ENTITY cookiesonsystem2.label "Na tym komputerze przechowywane są następujące ciasteczka:">
 <!ENTITY     cookiename.label               "Nazwa ciasteczka">
 <!ENTITY     cookiedomain.label             "Witryna">
 
@@ -19,7 +19,6 @@
 <!ENTITY     window.title                   "Ciasteczka">
 <!ENTITY     windowClose.key                "w">
 <!ENTITY     focusSearch1.key               "f">
-<!ENTITY     focusSearch2.key               "k">
 
 <!ENTITY searchFilter.label "Szukaj">
 <!ENTITY searchFilter.accesskey "">

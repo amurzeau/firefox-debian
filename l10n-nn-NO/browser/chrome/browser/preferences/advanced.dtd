@@ -29,13 +29,13 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "Datarapportering er deaktivert for denne byggekonfigurasjonen">
 
-<!ENTITY enableHealthReport1.label       "Tillat &brandShortName; å automatisk sende teknisk- og interaksjonsdata til Mozilla">
-<!ENTITY enableHealthReport1.accesskey   "T">
+<!ENTITY enableHealthReport2.label       "Tillat &brandShortName; å sende teknisk- og interaksjonsdata til Mozilla">
+<!ENTITY enableHealthReport2.accesskey   "r">
 <!ENTITY healthReportLearnMore.label     "Les meir">
 
 <!ENTITY dataCollection.label            "Datainnsamling og bruk for &brandShortName;">
-<!ENTITY dataCollectionDesc.label        "Vi prøver alltid å gje deg val og samlar berre det vi treng for å levere og forbetre &brandShortName; for alle. Vi ber alltid om løyve før vi aksepterer personopplysningar.">
-<!ENTITY dataCollectionPrivacyNotice.label    "Personvernpraksis">
+<!ENTITY dataCollectionDesc.label        "Vi prøver alltid å gje deg val og samlar inn berre det vi treng for å levere og forbetre &brandShortName; for alle. Vi ber alltid om løyve før vi får personopplysningar.">
+<!ENTITY dataCollectionPrivacyNotice.label    "Personvernerklæring">
 
 <!ENTITY alwaysSubmitCrashReports1.label  "Tillat &brandShortName; å sende krasjrapportar til Mozilla">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "T">
@@ -45,7 +45,7 @@ available. -->
 
 <!ENTITY networkProxy.label              "Nettverksproxy">
 
-<!ENTITY connectionDesc.label            "Still inn korleis &brandShortName; koplar seg til Internett">
+<!ENTITY connectionDesc.label            "Still inn korleis &brandShortName; koplar seg til internett">
 <!ENTITY connectionSettings.label        "Innstillingar…">
 <!ENTITY connectionSettings.accesskey    "I">
 
@@ -108,7 +108,7 @@ available. -->
 <!ENTITY useService.label                "Bruk ei bakgrunnsteneste for å installere oppdateringar">
 <!ENTITY useService.accesskey            "B">
 
-<!ENTITY enableSearchUpdate2.label       "Oppdater søkemotorar automatisk">
+<!ENTITY enableSearchUpdate2.label       "Oppdater søkjemotorar automatisk">
 <!ENTITY enableSearchUpdate2.accesskey   "e">
 
 <!ENTITY offlineStorageNotify.label               "Fortel meg når ein nettstad ber om å lagre data for fråkopla bruk">
@@ -116,7 +116,7 @@ available. -->
 <!ENTITY offlineStorageNotifyExceptions.label     "Unntak…">
 <!ENTITY offlineStorageNotifyExceptions.accesskey "U">
 
-<!ENTITY offlineAppsList2.label          "Følgjande nettstad har løyve til å lagre data for fråkopla bruk:">
+<!ENTITY offlineAppsList3.label          "Følgjande nettsider har løyve til å lagre datafiler for fråkopla bruk">
 <!ENTITY offlineAppsList.height          "7em">
 <!ENTITY offlineAppsListRemove.label     "Slett…">
 <!ENTITY offlineAppsListRemove.accesskey "S">
@@ -124,7 +124,7 @@ available. -->
 
 <!ENTITY certificateTab.label            "Sertifikat">
 <!ENTITY certPersonal2.description       "Når ein server ber om det personlege sertifikatet ditt">
-<!ENTITY selectCerts.auto                "Vel eit automastisk">
+<!ENTITY selectCerts.auto                "Vel eit automatisk">
 <!ENTITY selectCerts.auto.accesskey      "s">
 <!ENTITY selectCerts.ask                 "Spør kvar gong">
 <!ENTITY selectCerts.ask.accesskey       "S">
@@ -137,9 +137,9 @@ available. -->
 
 <!ENTITY performance.label               "Yting">
 <!ENTITY useRecommendedPerformanceSettings2.label
-                                         "Bruk tilrådde ytingsinnstillingar">
+                                         "Bruk tilrådde ytings-innstillingar">
 <!ENTITY useRecommendedPerformanceSettings2.description
-                                         "Desse innstillingane er skreddarsydd til datamaskinas maskinvare og operativsystem.">
+                                         "Desse innstillingane er skreddarsydde for maskinvare og operativsystem i datamaskina di.">
 <!ENTITY useRecommendedPerformanceSettings2.accesskey
                                          "B">
 <!ENTITY performanceSettingsLearnMore.label
@@ -147,7 +147,7 @@ available. -->
 <!ENTITY limitContentProcessOption.label "Grense for innhaldsprosessar">
 <!ENTITY limitContentProcessOption.description
                                          "Ytterlegere innhaldsprosessar kan forbetre ytinga når du brukar fleire faner, men vil også bruke meir minne.">
-<!ENTITY limitContentProcessOption.accesskey   "Y">
+<!ENTITY limitContentProcessOption.accesskey   "G">
 <!ENTITY limitContentProcessOption.disabledDescription
                                          "Endring av talet på innhaldsprosessar kan berre gjerast med multiprosess &brandShortName;.">
 <!ENTITY limitContentProcessOption.disabledDescriptionLink

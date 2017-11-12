@@ -2,7 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY aboutSupport.pageTitle "Информация за отстраняване на неизправности">
+<!ENTITY aboutSupport.pageTitle "Отстраняване на неизправности">
 
 <!-- LOCALIZATION NOTE (aboutSupport.pageSubtitle): don't change the 'supportLink' id. -->
 <!ENTITY aboutSupport.pageSubtitle "Тази страница съдържа техническа информация, която може да ви е от полза, когато се опитвате да решите проблем. Ако търсите отговори на често задавани въпроси за &brandShortName;, проверете в нашата <a id='supportLink'>страница за поддръжка</a>.">
@@ -16,18 +16,18 @@ This is likely the same like id.heading in crashes.dtd. -->
 <!ENTITY aboutSupport.crashes.noConfig "Приложението не е настроено да показва доклади за сривове.">
 
 <!ENTITY aboutSupport.extensionsTitle "Разширения">
-<!ENTITY aboutSupport.extensionName "Име">
+<!ENTITY aboutSupport.extensionName "Наименование">
 <!ENTITY aboutSupport.extensionEnabled "Включено">
 <!ENTITY aboutSupport.extensionVersion "Версия">
 <!ENTITY aboutSupport.extensionId "ID">
 
 <!ENTITY aboutSupport.featuresTitle "Възможности на &brandShortName;">
-<!ENTITY aboutSupport.featureName "Име">
+<!ENTITY aboutSupport.featureName "Наименование">
 <!ENTITY aboutSupport.featureVersion "Версия">
 <!ENTITY aboutSupport.featureId "ID">
 
 <!ENTITY aboutSupport.experimentsTitle "Експериментални възможности">
-<!ENTITY aboutSupport.experimentName "Име">
+<!ENTITY aboutSupport.experimentName "Наименование">
 <!ENTITY aboutSupport.experimentId "ID">
 <!ENTITY aboutSupport.experimentDescription "Описание">
 <!ENTITY aboutSupport.experimentActive "Включен">
@@ -36,9 +36,9 @@ This is likely the same like id.heading in crashes.dtd. -->
 <!ENTITY aboutSupport.experimentBranch "Клон">
 
 <!ENTITY aboutSupport.appBasicsTitle "Основни за приложението">
-<!ENTITY aboutSupport.appBasicsName "Име">
+<!ENTITY aboutSupport.appBasicsName "Наименование">
 <!ENTITY aboutSupport.appBasicsVersion "Версия">
-<!ENTITY aboutSupport.appBasicsBuildID "Build идентификатор">
+<!ENTITY aboutSupport.appBasicsBuildID "Идентификатор на компилиране">
 
 <!-- LOCALIZATION NOTE (aboutSupport.appBasicsUpdateChannel, aboutSupport.appBasicsUpdateHistory, aboutSupport.appBasicsShowUpdateHistory):
 "Update" is a noun here, not a verb. -->
@@ -83,7 +83,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.showWin2.label "Отваряне на папката">
 
 <!ENTITY aboutSupport.modifiedKeyPrefsTitle "Важни променени настройки">
-<!ENTITY aboutSupport.modifiedPrefsName "Име">
+<!ENTITY aboutSupport.modifiedPrefsName "Наименование">
 <!ENTITY aboutSupport.modifiedPrefsValue "Стойност">
 
 <!-- LOCALIZATION NOTE (aboutSupport.userJSTitle, aboutSupport.userJSDescription): user.js is the name of the preference override file being checked. -->
@@ -91,7 +91,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.userJSDescription "Папката с вашия профил съдържа файла <a id='prefs-user-js-link'>user.js</a>, в който има потребителски, не създадени от &brandShortName; настройки.">
 
 <!ENTITY aboutSupport.lockedKeyPrefsTitle "Важни заключени настройки">
-<!ENTITY aboutSupport.lockedPrefsName "Име">
+<!ENTITY aboutSupport.lockedPrefsName "Наименование">
 <!ENTITY aboutSupport.lockedPrefsValue "Стойност">
 
 <!ENTITY aboutSupport.graphicsTitle "Изчертаване">
@@ -106,7 +106,8 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.a11yTitle "Достъпност">
 <!ENTITY aboutSupport.a11yActivated "Включено">
 <!ENTITY aboutSupport.a11yForceDisabled "Предотвратяване на достъпност">
-<!ENTITY aboutSupport.a11yHandlerUsed "Използвано устройство за достъпност">
+<!ENTITY aboutSupport.a11yHandlerUsed "Използвано устройство">
+<!ENTITY aboutSupport.a11yInstantiator "Изпълним файл">
 
 <!ENTITY aboutSupport.libraryVersionsTitle "Версии на библиотеки">
 

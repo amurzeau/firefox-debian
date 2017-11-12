@@ -15,7 +15,7 @@
 <!ENTITY view.columns.accesskey         "c">
 <!ENTITY view.sort.label                "Ordenar">
 <!ENTITY view.sort.accesskey            "O">
-<!ENTITY view.unsorted.label            "Não ordenar">
+<!ENTITY view.unsorted.label            "Não ordenados">
 <!ENTITY view.unsorted.accesskey        "N">
 <!ENTITY view.sortAscending.label       "Ordenar de A a Z">
 <!ENTITY view.sortAscending.accesskey   "a">
@@ -100,7 +100,7 @@
 
 <!ENTITY cmd.find.key  "f">
 
-<!ENTITY backButton.tooltip  "Recuar">
+<!ENTITY backButton.tooltip  "Retroceder">
 <!ENTITY forwardButton.tooltip  "Avançar">
 
 <!ENTITY detailsPane.more.label "Mais">

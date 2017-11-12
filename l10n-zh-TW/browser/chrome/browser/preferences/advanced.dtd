@@ -29,8 +29,8 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "進行編譯設定時，已停用了資料回報功能">
 
-<!ENTITY enableHealthReport1.label       "允許 &brandShortName; 自動傳送技術與互動資料給 Mozilla">
-<!ENTITY enableHealthReport1.accesskey   "r">
+<!ENTITY enableHealthReport2.label       "允許 &brandShortName; 傳送技術與互動資料給 Mozilla">
+<!ENTITY enableHealthReport2.accesskey   "r">
 <!ENTITY healthReportLearnMore.label     "更多資訊">
 
 <!ENTITY dataCollection.label            "&brandShortName; 資料收集與使用">
@@ -93,7 +93,7 @@ available. -->
 <!ENTITY updateApplicationDescription.label
                                          "保持更新 &brandShortName;，獲得最佳效能、穩定度以及安全性。">
 <!ENTITY updateApplication.version.pre   "">
-<!ENTITY updateApplication.version.post  " 版">
+<!ENTITY updateApplication.version.post  "版">
 <!ENTITY updateApplication.description   "讓 &brandShortName;:">
 <!ENTITY updateAuto3.label               "自動安裝更新（推薦）">
 <!ENTITY updateAuto3.accesskey           "A">
@@ -116,7 +116,7 @@ available. -->
 <!ENTITY offlineStorageNotifyExceptions.label     "例外網站…">
 <!ENTITY offlineStorageNotifyExceptions.accesskey "x">
 
-<!ENTITY offlineAppsList2.label          "允許下列網站儲存資料供離線使用:">
+<!ENTITY offlineAppsList3.label          "已允許下列網站儲存資料離線使用">
 <!ENTITY offlineAppsList.height          "7em">
 <!ENTITY offlineAppsListRemove.label     "移除…">
 <!ENTITY offlineAppsListRemove.accesskey "R">

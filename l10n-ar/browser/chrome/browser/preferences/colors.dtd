@@ -6,25 +6,25 @@
 <!ENTITY  window.width                    "38em">
 <!ENTITY  window.macWidth                 "41em">
 
-<!ENTITY  overrideDefaultPageColors.label        "استبدل الألوان التي تحددها الصفحات باختياراتي أعلاه:">
-<!ENTITY  overrideDefaultPageColors.accesskey    "س">
+<!ENTITY  overrideDefaultPageColors2.label       "استبدل الألوان التي تحددها الصفحات باختياراتي أعلاه">
+<!ENTITY  overrideDefaultPageColors2.accesskey   "س">
 
 <!ENTITY  overrideDefaultPageColors.always.label "دائمًا">
 <!ENTITY  overrideDefaultPageColors.auto.label   "مع السمات عالية التباين فقط">
 <!ENTITY  overrideDefaultPageColors.never.label  "أبدًا">
 
 <!ENTITY  color                           "النّصّ و الخلفيّة">
-<!ENTITY  textColor.label                 "النّص:">
-<!ENTITY  textColor.accesskey             "ن">
-<!ENTITY  backgroundColor.label           "الخلفية:">
-<!ENTITY  backgroundColor.accesskey       "خ">
+<!ENTITY  textColor2.label                "النّص">
+<!ENTITY  textColor2.accesskey            "ن">
+<!ENTITY  backgroundColor2.label          "الخلفية">
+<!ENTITY  backgroundColor2.accesskey      "خ">
 <!ENTITY  useSystemColors.label           "استخدم ألوان النظام">
 <!ENTITY  useSystemColors.accesskey       "ظ">
 
 <!ENTITY  underlineLinks.label            "سطّر الروابط">
 <!ENTITY  underlineLinks.accesskey        "ط">
 <!ENTITY  links                           "ألوان الروابط">
-<!ENTITY  linkColor.label                 "الروابط غير المزارة:">
-<!ENTITY  linkColor.accesskey             "غ">
-<!ENTITY  visitedLinkColor.label          "الروابط المزارة:">
-<!ENTITY  visitedLinkColor.accesskey      "م">
+<!ENTITY  linkColor2.label                "الروابط غير المزارة">
+<!ENTITY  linkColor2.accesskey            "غ">
+<!ENTITY  visitedLinkColor2.label         "الروابط المزارة">
+<!ENTITY  visitedLinkColor2.accesskey     "م">

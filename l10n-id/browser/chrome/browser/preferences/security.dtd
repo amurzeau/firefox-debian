@@ -4,13 +4,15 @@
 
 <!ENTITY  security.label                 "Keamanan">
 
-<!ENTITY  warnOnAddonInstall.label        "Ingatkan ketika situs mencoba memasang pengaya">
-<!ENTITY  warnOnAddonInstall.accesskey    "I">
+<!ENTITY  warnOnAddonInstall2.label       "Ingatkan ketika situs web mencoba memasang pengaya">
+<!ENTITY  warnOnAddonInstall2.accesskey   "I">
 
 <!-- LOCALIZATION NOTE (enableSafeBrowsing.label, blockDownloads.label, blockUncommonUnwanted.label):
   It is important that wording follows the guidelines outlined on this page:
   https://developers.google.com/safe-browsing/developers_guide_v2#AcceptableUsage
 -->
+
+<!ENTITY  browsingProtection.label        "Perlindungan Konten Penipuan dan Perangkat Lunak Berbahaya">
 <!ENTITY  enableSafeBrowsing.label        "Blokir konten berbahaya dan tidak dapat dipercaya">
 <!ENTITY  enableSafeBrowsing.accesskey    "B">
 
@@ -26,8 +28,8 @@
 
 <!ENTITY  formsAndPasswords.label       "Formulir &amp; Sandi">
 
-<!ENTITY  rememberLogins1.label          "Ingat log masuk dan sandi situs">
-<!ENTITY  rememberLogins1.accesskey      "I">
+<!ENTITY  rememberLogins2.label         "Ingat info masuk dan sandi untuk situs web">
+<!ENTITY  rememberLogins2.accesskey     "I">
 <!ENTITY  passwordExceptions.label      "Pengecualian…">
 <!ENTITY  passwordExceptions.accesskey  "c">
 

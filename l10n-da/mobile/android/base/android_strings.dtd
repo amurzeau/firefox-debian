@@ -3,9 +3,14 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY firstrun_panel_title_welcome "Velkommen">
-
-<!ENTITY firstrun_urlbar_message "Velkommen til &brandShortName;">
-<!ENTITY firstrun_urlbar_subtext "Find tingene hurtigere ved hjælp af søgeforslag.">
+<!ENTITY firstrun_urlbar_message2 "Tak for at du valgte &brandShortName;">
+<!ENTITY firstrun_urlbar_subtext2 "En moderne mobil browser fra Mozilla, nonprofit-organisationen der er dedikeret til et frit og åbent internet.">
+<!ENTITY firstrun_panel_title_privacy "Privatliv">
+<!ENTITY firstrun_privacy_message "Surf på nettet uden at føle dig overvåget">
+<!ENTITY firstrun_privacy_subtext "Privat browsing med beskyttelse mod sporing blokerer for elementer, der registrerer data om dig, og din historik gemmes ikke, når du er færdig.">
+<!ENTITY firstrun_panel_title_customize "Tilpas">
+<!ENTITY firstrun_customize_message "Gør &brandShortName; til din egen.">
+<!ENTITY firstrun_customize_subtext "Tilpas &brandShortName; med tilføjelser. Bloker annoncer, tilføj funktioner eller vælg et tema, der passer til dig.">
 <!ENTITY firstrun_bookmarks_title "Historik">
 <!ENTITY firstrun_bookmarks_message "Nem adgang til dine favorit-websteder">
 <!ENTITY firstrun_bookmarks_subtext "Få resultater fra dine bogmærker og din historik, når du søger.">
@@ -13,8 +18,8 @@
 <!ENTITY firstrun_data_message "Færre data, hurtigere internet">
 <!ENTITY firstrun_data_subtext2 "Blokér billeder, så der skal hentes færre data fra de besøgte sider.">
 <!ENTITY firstrun_sync_title "Sync">
-<!ENTITY firstrun_sync_message "&brandShortName;, altid på din side">
-<!ENTITY firstrun_sync_subtext "Synkroniser dine faneblade, adgangskoder mm. så du altid har dem hos dig.">
+<!ENTITY firstrun_sync_message2 "Fortsæt hvor du slap.">
+<!ENTITY firstrun_sync_subtext2 "Brug Sync til at finde bogmærker, adgangskoder og andet du har gemt i &brandShortName; på alle dine enheder.">
 <!ENTITY firstrun_signin_message "Bliv forbundet, start">
 <!ENTITY firstrun_signin_button "Log ind på Sync">
 <!ENTITY  onboard_start_button_browser "Start surfing">
@@ -87,6 +92,7 @@
      in the folder. -->
 <!ENTITY bookmark_folder_items "&formatD; elementer">
 <!ENTITY bookmark_folder_one_item "1 element">
+<!ENTITY bookmark_folder_updated "Mappe opdateret">
 <!ENTITY bookmark_parent_folder "Overordnet mappe">
 <!ENTITY bookmark_add_folder "Tilføj ny mappe">
 
@@ -195,16 +201,14 @@
      it is applicable. -->
 <!ENTITY pref_search_hint2 "Tip: Du kan tilføje et websted til din liste over søgetjenester ved at trykke og holde på dets søgefelt og så trykke på ikonet &formatI;.">
 <!ENTITY pref_category_advanced "Avanceret">
-<!-- Localization note (pref_category_advanced_summary3): "data saver" in this
+<!-- Localization note (pref_category_advanced_summary3): “data saver” in this
      context means consuming less data, e.g. by not loading images, not
-     "storing data". -->
+     “storing data”. -->
 <!ENTITY pref_category_advanced_summary3 "Gendan faneblade, data-sparer, udviklerværktøjer">
 <!ENTITY pref_category_notifications "Beskeder">
 <!ENTITY pref_category_notifications_summary "Nye funktioner, opdatering af websteder">
-<!ENTITY pref_content_notifications "Opdatering af websteder">
-<!ENTITY pref_content_notifications_summary2 "Find nyt indhold fra understøttede websteder">
-<!ENTITY pref_developer_remotedebugging_usb "Remote debugging via USB">
-<!ENTITY pref_developer_remotedebugging_wifi "Remote debugging via wi-fi">
+<!ENTITY pref_developer_remotedebugging_usb "Ekstern debugging via USB">
+<!ENTITY pref_developer_remotedebugging_wifi "Ekstern debugging via wi-fi">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Debugging via wi-fi kræver, at din enhed har en app til skanning af QR-koder installeret.">
 <!ENTITY pref_remember_signons2 "Husk logins">
 <!ENTITY pref_manage_logins "Håndter logins">
@@ -249,12 +253,12 @@
 
 <!ENTITY pref_cookies_menu "Cookies">
 <!ENTITY pref_cookies_accept_all "Aktiveret">
-<!ENTITY pref_cookies_not_accept_foreign "Aktiver, men stop 3. parts cookies">
+<!ENTITY pref_cookies_not_accept_foreign "Aktiver, men stop tredjeparts cookies">
 <!ENTITY pref_cookies_disabled "Deaktiveret">
 
-<!-- Localization note (pref_category_data_saver): "data saver" in this
+<!-- Localization note (pref_category_data_saver): “data saver” in this
      context means consuming less data, e.g. by not loading images, not
-     "storing data". -->
+     “storing data”. -->
 <!ENTITY pref_category_data_saver "Data-sparer">
 <!ENTITY pref_category_media "Medie">
 <!ENTITY pref_category_developer_tools "Udviklerværktøjer">
@@ -268,7 +272,6 @@
 <!ENTITY pref_show_web_fonts_summary2 "Hent webskrifttyper ved indlæsning af en webside">
 
 <!ENTITY pref_tracking_protection_title2 "Beskyttelse mod sporing">
-<!ENTITY pref_tracking_protection_summary3 "Aktiveret i privat browsing">
 <!ENTITY pref_donottrack_title "Spor mig ikke">
 <!ENTITY pref_donottrack_summary "&brandShortName; vil fortælle websteder, at du ikke vil spores">
 
@@ -286,8 +289,9 @@
 <!-- Custom Tabs is an Android API for allowing third-party apps to open URLs in a customized UI.
      Instead of switching to the browser it appears as if the user stays in the third-party app.
      For more see: https://developer.chrome.com/multidevice/android/customtabs -->
-<!ENTITY pref_custom_tabs "Tilpassede faneblade">
-<!ENTITY pref_custom_tabs_summary3 "Tillad at apps kan åbne websteder med en tilpasset version af &brandShortName;">
+<!ENTITY pref_custom_tabs2 "Tilpassede faneblade">
+<!ENTITY pref_custom_tabs_summary4 "Tillad apps at åbne indhold fra nettet på et tilpasset og hurtigt indlæst faneblad.">
+
 <!-- Localization note (custom_tabs_menu_item_open_in): The variable is replaced by the name of
      default browser from user's preference, such as "Open in Firefox" -->
 <!ENTITY custom_tabs_menu_item_open_in "Åbn i &formatS;">
@@ -297,10 +301,6 @@
 
 <!ENTITY pref_pwa "Progressive web-apps">
 <!ENTITY pref_pwa_summary "Tillad at web-apps føjes til startskærmen">
-
-<!-- Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream  -->
-<!ENTITY pref_activity_stream "Aktivitetsstrøm">
-<!ENTITY pref_activity_stream_summary "En udvidet historik, der gør det nemmere at finde, hvad du leder efter i &brandShortName;.">
 
 <!ENTITY tracking_protection_prompt_title "Nu med beskyttelse mod sporing">
 <!ENTITY tracking_protection_prompt_text "Sporingselementer blokeres automatisk, så du ikke behøver at bekymre dig.">
@@ -314,7 +314,7 @@
 <!ENTITY tab_queue_prompt_tip_text2 "Du kan senere ændre dette i indstillingerne">
 <!-- Localization note (tab_queue_prompt_permit_drawing_over_apps): This additional text is shown if the
      user needs to enable an Android setting in order to enable tab queues. -->
-<!ENTITY tab_queue_prompt_permit_drawing_over_apps "Aktiver Ignorere andre apps">
+<!ENTITY tab_queue_prompt_permit_drawing_over_apps "Tillad at indhold åbnes på skærmen, mens andre apps er aktive">
 <!ENTITY tab_queue_prompt_positive_action_button "Aktiver">
 <!ENTITY tab_queue_prompt_negative_action_button "Ikke nu">
 <!-- Localization note (tab_queue_prompt_settings_button): This button is shown if the user needs to
@@ -334,23 +334,6 @@
      has been queued but we are missing the system permission to show an overlay. -->
 <!ENTITY tab_queue_notification_settings "Du skal aktivere tilladelsen \&apos;Ignorere andre apps\&apos; i &brandShortName; for at kunne åbne flere links ad gangen.">
 
-<!ENTITY content_notification_summary "&brandShortName;">
-<!-- Localization note (content_notification_title_plural): &formatD; will be replaced with the number of websites that
-     have been updated (new content is available). The number of websites is always more than one (>= 2). For a single
-     update the website title is used instead of this string.
-     We can't use Android plural forms, sadly. See Bug #753859. -->
-<!ENTITY content_notification_title_plural "&formatD; websteder er blevet opdateret">
-<!-- Localization note (content_notification_action_settings2): This label will be shown as an action in a content notification.
-     Clicking the action will jump to the notification settings of the app. -->
-<!ENTITY content_notification_action_settings2 "Indstillinger">
-<!-- Localization note(content_notification_action_read_now): This label will be shown as an action in a content notification.
-     Clicking the action will open all new content in the browser. -->
-<!ENTITY content_notification_action_read_now "Læs nu">
-<!-- Localization note (content_notification_updated_on): &formatS; will be replaced with a medium sized version of the
-     date, depending on locale. For en_US this is for example: Feb 24, 2016. For more details see the Android developer
-     documentation for DateFormat.getMediumDateFormat(). -->
-<!ENTITY content_notification_updated_on "Opdateret d. &formatS;">
-
 <!ENTITY pref_char_encoding "Tegnkodning">
 <!ENTITY pref_char_encoding_on "Vis menu">
 <!ENTITY pref_char_encoding_off "Vis ikke menu">
@@ -359,7 +342,7 @@
      The action is shown below a header saying "Clear private data"; See pref_clear_private_data -->
 <!ENTITY pref_clear_private_data_now_tablet "Ryd nu">
 <!ENTITY pref_clear_on_exit_title3 "Ryd private data ved lukning">
-<!ENTITY pref_clear_on_exit_summary2 "&brandShortName; vil automatisk rydde dine data, når du lukker ved at vælge \u0022Afslut\u0022 i menuen">
+<!ENTITY pref_clear_on_exit_summary2 "&brandShortName; vil automatisk rydde dine data, når du lukker ved at vælge \&quot;Afslut\&quot; i menuen">
 <!ENTITY pref_clear_on_exit_dialog_title "Vælg hvilke data, du vil have ryddet">
 <!ENTITY pref_restore_tabs "Gendan faneblade">
 <!ENTITY pref_restore_always "Gendan altid">
@@ -380,6 +363,7 @@
 <!ENTITY pref_qrcode_enabled_summary2 "Tillad QR-skanner i adressefeltet">
 
 <!ENTITY pref_use_master_password "Brug hovedadgangskode">
+<!ENTITY pref_sync_default_title "Firefox-konto">
 <!ENTITY pref_sync2 "Log ind">
 <!ENTITY pref_sync_summary2 "Synkroniser dine faneblade, bogmærker, logins og historik">
 <!ENTITY pref_search_suggestions "Vis søgeforslag">
@@ -409,6 +393,9 @@
 <!ENTITY pref_dialog_set_default "Brug som standard">
 <!ENTITY pref_dialog_default "Standard">
 <!ENTITY pref_dialog_remove "Fjern">
+<!ENTITY pref_dialog_activitystream_header_content "Ekstra indhold">
+<!ENTITY pref_dialog_activitystream_recentBookmarks "Seneste bogmærker">
+<!ENTITY pref_dialog_activitystream_visited "Besøgt">
 
 <!ENTITY pref_search_last_toast "Du kan ikke fjerne eller deaktivere din sidste søgetjeneste.">
 
@@ -499,6 +486,7 @@
 <!ENTITY contextmenu_open_private_tab "Åbn i privat faneblad">
 <!ENTITY contextmenu_remove "Fjern">
 <!ENTITY contextmenu_add_to_launcher "Føj til startskærmen">
+<!ENTITY contextmenu_add_page_shortcut "Tilføj genvej til side">
 <!ENTITY contextmenu_set_as_homepage "Angiv som startside">
 <!ENTITY contextmenu_share "Del">
 <!ENTITY contextmenu_pasteandgo "Indsæt og gå">
@@ -510,7 +498,17 @@
 <!ENTITY contextmenu_top_sites_edit "Rediger">
 <!ENTITY contextmenu_top_sites_pin "Fastgør webside">
 <!ENTITY contextmenu_top_sites_unpin "Frigør webside">
+<!-- Localization note (contextmenu_pin_to_top_sites, contextmenu_unpin_from_top_sites): These strings are used to
+     pin/unpin items from top sites when the user is not on the top sites screen so they'd be missing context on what
+     just "Pin Site" or "Unpin Site" would mean. -->
+<!ENTITY contextmenu_pin_to_top_sites "Fastgør til dine mest besøgte sider">
+<!ENTITY contextmenu_unpin_from_top_sites "Frigør fra dine mest besøgte sider">
 <!ENTITY contextmenu_add_search_engine "Tilføj en søgetjeneste">
+
+<!-- Localization note (pinned_page_to_top_sites, unpinned_page_from_top_sites): These strings are shown in a snackbar
+     after the user pins/unpins the currently displayed page from top sites. -->
+<!ENTITY pinned_page_to_top_sites "Fastgjort til dine mest besøgte sider">
+<!ENTITY unpinned_page_from_top_sites "Frigjort fra dine mest besøgte sider">
 
 <!-- Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
      where normally a username would be displayed. In this case, no username was found, and this placeholder
@@ -547,7 +545,7 @@
 <!ENTITY bookmark_edit_folder_title "Rediger mappe">
 <!ENTITY bookmark_edit_name "Navn">
 <!ENTITY bookmark_edit_location "Adresse">
-<!ENTITY bookmark_edit_keyword "Stikord">
+<!ENTITY bookmark_edit_keyword "Genvej">
 <!ENTITY bookmark_select_folder "Vælg mappe">
 
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
@@ -814,7 +812,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      replaced by the Android OS version (e.g., 14)-->
 <!ENTITY unsupported_sdk_version "Vi beklager, &brandShortName; virker ikke på denne enhed (&formatS1;, &formatS2;). Hent en korrekt version.">
 
-<!ENTITY eol_notification_title2 "&brandShortName; vil ikke længere blive opdateet">
+<!ENTITY eol_notification_title2 "&brandShortName; opdateres ikke længere">
 <!ENTITY eol_notification_summary "Tryk for at læse mere">
 
 <!-- LOCALIZATION NOTE (whatsnew_notification_title, whatsnew_notification_summary): These strings
@@ -823,6 +821,8 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY whatsnew_notification_summary "Læs om nyhederne i denne version">
 
 <!ENTITY promotion_add_to_homescreen "Føj til startskærm">
+
+<!ENTITY promotion_add_page_shortcut "Tilføj genvej til side">
 
 <!ENTITY helper_first_offline_bookmark_title "Læs offline">
 <!ENTITY helper_first_offline_bookmark_message "Find ting fra din læseliste i bogmærkerne, også når du er offline.">
@@ -833,7 +833,12 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_button "Føj til bogmærker">
 
 <!ENTITY activity_stream_topsites "Mest besøgte websider">
-<!ENTITY activity_stream_highlights "Højdepunkter">
+<!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->
+<!ENTITY activity_stream_topstories "Anbefalet af &brandPocket;">
+<!ENTITY activity_stream_highlights "Fremhævede">
+
+<!-- LOCALIZATION NOTE (activity_stream_link_more1): Link-like text displayed to take user to a website with more content from Pocket. -->
+<!ENTITY activity_stream_link_more1 "MERE">
 
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_bookmarked): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
@@ -841,12 +846,30 @@ Stream list for highlights sourced from th user's bookmarks. -->
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_visited): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
 <!ENTITY activity_stream_highlight_label_visited "Besøgt">
+<!-- LOCALIZATION NOTE (activity_stream_highlight_label_trending): This label is shown in the Activity Stream list for highlights sourced from a recommendations engine. -->
+<!ENTITY activity_stream_highlight_label_trending "Populært">
+<!-- LOCALIZATION NOTE (activity_stream_highlights_empty): This text is shown when we could not find highlights for this user. This is also shown on first run. -->
+<!ENTITY activity_stream_highlights_empty "Start med at browse, og vi vil her vise nogle af de artikler, videoer og andre sider du besøgt for nylig eller oprettet bogmærke til.">
 
-<!-- LOCALIZATION NOTE (activity_stream_dismiss): This label is shown in the Activity Stream context menu,
+<!-- LOCALIZATION NOTE (activity_stream_remove): This label is shown in the Activity Stream context menu,
 and allows hiding a URL/page from highlights or topsites. The page remains in history/bookmarks, but
 is simply hidden from the Activity Stream panel. -->
-<!ENTITY activity_stream_dismiss "Slå fra">
+<!ENTITY activity_stream_remove "Fjern">
 <!ENTITY activity_stream_delete_history "Slet fra historikken">
 
-<!ENTITY activity_stream_welcome_title "Højdepunkter">
-<!ENTITY activity_stream_welcome_content1 "&brandShortName; opretter nu højdepunkter med ting, som du har fundet på nettet, så du altid kan finde tilbage til interessante artikler, videoer, bogmærker og andre websider.">
+<!ENTITY private_tab_panel_title "Privat browsing + sporingsbeskyttelse">
+<!ENTITY private_tab_panel_description "&brandShortName; blokerer elementer på sider, der måske sporer, hvad du laver på nettet.">
+<!ENTITY private_tab_panel_description2 "Vi gemmer ikke din historik, men hentede filer og nye bogmærker gemmes som normalt på din enhed.">
+<!ENTITY private_tab_learn_more "Vil du vide mere?">
+
+<!ENTITY fullscreen_warning "Fuldskærmstilstand aktiveret">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_confirm): The plus sign here is part of UI design -->
+<!ENTITY pwa_add_to_launcher_confirm "+ Føj til startskærm">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_badge2): Used as label in the page actions dropdown list,
+displayed when there are more than 3 actions available for a page.
+See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
+<!ENTITY pwa_add_to_launcher_badge2 "Føj til startskærm">
+<!ENTITY pwa_continue_to_website "Fortsæt til websted">
+<!ENTITY pwa_onboarding_sumo "Du kan nemt føje dette websted til din startskærm for at have hurtig adgang til det og browse hurtigere med en app-lignende oplevelse.">

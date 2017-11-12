@@ -10,9 +10,10 @@
 <!ENTITY cmd.resume.label "Riprendi">
 <!ENTITY cmd.resume.accesskey "R">
 <!ENTITY cmd.cancel.label "Annulla">
-<!ENTITY cmd.show.label "Apri cartella">
+<!ENTITY cmd.show.label "Apri cartella di destinazione">
 <!ENTITY cmd.show.accesskey "A">
 <!ENTITY cmd.showMac.label "Mostra nel Finder">
+<!ENTITY cmd.showDownloads.label "Visualizza cartella di download">
 <!ENTITY cmd.showMac.accesskey "F">
 <!ENTITY cmd.retry.label "Riprova">
 <!ENTITY cmd.goToDownloadPage.label "Vai alla pagina di download">
@@ -38,6 +39,7 @@
 <!ENTITY learnMore.label "Ulteriori informazioni">
 <!ENTITY downloadsHistory.label "Visualizza tutti i download">
 <!ENTITY downloadsHistory.accesskey "V">
+<!ENTITY downloadDetails.label "Dettagli download">
 <!ENTITY openDownloadsFolder.label "Apri la cartella dei download">
 <!ENTITY clearDownloadsButton.label "Cancella elenco download">
 <!ENTITY clearDownloadsButton.tooltip "Rimuovi dall’elenco i download completati, annullati o non riusciti">

@@ -19,9 +19,9 @@
 <!ENTITY trackingProtectionPBMLearnMore.label "आणखी शिका">
 <!ENTITY changeBlockList.label          "अवरोधित सूचीमध्ये बदल करा">
 <!ENTITY changeBlockList.accesskey      "C">
-
 <!-- LOCALIZATION NOTE (doNotTrack.pre.label): include a trailing space as needed -->
 <!-- LOCALIZATION NOTE (doNotTrack.post.label): include a starting space as needed -->
+
 <!ENTITY  doNotTrack.pre.label          "आपण सुद्धा ">
 <!ENTITY  doNotTrack.settings.label     "आपल्या मागोवा नका घेउ सेटिंग्स व्यवस्थापन करा">
 <!ENTITY  doNotTrack.post.label         ".">
@@ -43,7 +43,7 @@
 <!ENTITY  suggestionSettings.label      "शोध इंजिन साठी सूचनांचा असलेला प्राधान्यक्रम बदला…">
 <!ENTITY  suggestionSettings.accesskey  "g">
 
-<!ENTITY  acceptCookies2.label          "वेबसाईटकडून कूकीज स्वीकारा">
+<!ENTITY  acceptCookies2.label          "स्थळांकडून कूकीज स्वीकारा">
 <!ENTITY  acceptCookies2.accesskey      "A">
 
 <!ENTITY  acceptThirdParty.pre.label      "तिसरे-पक्षीय कूकिज स्वीकारा:">
@@ -72,10 +72,10 @@
 <!ENTITY  historyHeader.post.label         "‌">
 
 <!ENTITY  rememberDescription.label      "&brandShortName; आपली तपासणी, डाऊनलोड, फॉर्म व शोध इतिहास, व आपण भेट दिलेल्या संकेत स्थळांचे कुकीज संग्रहीत करतो.">
-
 <!-- LOCALIZATION NOTE (rememberActions.pre.label): include a trailing space as needed -->
 <!-- LOCALIZATION NOTE (rememberActions.middle.label): include a starting and trailing space as needed -->
 <!-- LOCALIZATION NOTE (rememberActions.post.label): include a starting space as needed -->
+
 <!ENTITY  rememberActions.pre.label           "आपणास कदाचित ">
 <!ENTITY  rememberActions.clearHistory.label  "अलिकडील इतिहास नष्ट करा">
 <!ENTITY  rememberActions.middle.label        ", किंवा ">
@@ -83,9 +83,9 @@
 <!ENTITY  rememberActions.post.label          ".">
 
 <!ENTITY  dontrememberDescription.label  "&brandShortName; समान संयोजना खाजगी ब्राउझिंग म्हणून वापरतो, व वेब चाळतेवेळी कुठलाही इतिहास लक्षात ठेवत नाही.">
-
 <!-- LOCALIZATION NOTE (dontrememberActions.pre.label): include a trailing space as needed -->
 <!-- LOCALIZATION NOTE (dontrememberActions.post.label): include a starting space as needed -->
+
 <!ENTITY  dontrememberActions.pre.label          "आपण खालील देखील करू शकता ">
 <!ENTITY  dontrememberActions.clearHistory.label "सर्व वर्तमान इतिहास नष्ट करा">
 <!ENTITY  dontrememberActions.post.label         ".">

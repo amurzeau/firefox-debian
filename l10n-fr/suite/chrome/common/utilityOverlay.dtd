@@ -23,7 +23,7 @@
 <!ENTITY newNavigatorCmd.key "n">
 <!ENTITY newNavigatorCmd.accesskey "N">
 <!ENTITY newPrivateWindowCmd.label "Fenêtre de navigation privée">
-<!ENTITY newPrivateWindowCmd.key "p">
+<!ENTITY newPrivateWindowCmd.key "B">
 <!ENTITY newPrivateWindowCmd.accesskey "p">
 <!ENTITY printSetupCmd.label "Mise en page…">
 <!ENTITY printSetupCmd.accesskey "M">
@@ -50,7 +50,7 @@
 <!ENTITY pasteCmd.label                   "Coller">
 <!ENTITY pasteCmd.key                     "V">
 <!ENTITY pasteCmd.accesskey               "o">
-<!ENTITY pasteGoCmd.label                 "Coller et aller">
+<!ENTITY pasteGoCmd.label                 "Coller et ouvrir">
 <!ENTITY pasteGoCmd.accesskey             "e">
 
 <!-- LOCALIZATION NOTE (pasteSearchCmd): "Search" is a verb, this is the

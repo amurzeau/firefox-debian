@@ -6,25 +6,25 @@
 <!ENTITY  window.width                    "38em">
 <!ENTITY  window.macWidth                 "41em">
 
-<!ENTITY  overrideDefaultPageColors.label        "שימוש בצבעים הנבחרים מעלה במקום הצבעים שצוינו בדף:">
-<!ENTITY  overrideDefaultPageColors.accesskey    "ש">
+<!ENTITY  overrideDefaultPageColors2.label       "דריסת הצבעים שצוינו על ידי העמוד עם הבחירה שלך להלן">
+<!ENTITY  overrideDefaultPageColors2.accesskey   "צ">
 
 <!ENTITY  overrideDefaultPageColors.always.label "תמיד">
 <!ENTITY  overrideDefaultPageColors.auto.label   "רק עם ערכות נושא בעלות ניגודיות גבוהה">
 <!ENTITY  overrideDefaultPageColors.never.label  "לעולם לא">
 
 <!ENTITY  color                           "טקסט ורקע">
-<!ENTITY  textColor.label                 "טקסט:">
-<!ENTITY  textColor.accesskey             "ט">
-<!ENTITY  backgroundColor.label           "רקע:">
-<!ENTITY  backgroundColor.accesskey       "ר">
+<!ENTITY  textColor2.label                "טקסט">
+<!ENTITY  textColor2.accesskey            "ט">
+<!ENTITY  backgroundColor2.label          "רקע">
+<!ENTITY  backgroundColor2.accesskey      "ר">
 <!ENTITY  useSystemColors.label           "שימוש בצבעי המערכת">
 <!ENTITY  useSystemColors.accesskey       "ה">
 
 <!ENTITY  underlineLinks.label            "סמן קישורים בקו תחתי">
 <!ENTITY  underlineLinks.accesskey        "ס">
 <!ENTITY  links                           "צבעי קישור">
-<!ENTITY  linkColor.label                 "קישורים שלא ביקרתי:">
-<!ENTITY  linkColor.accesskey             "ש">
-<!ENTITY  visitedLinkColor.label          "קישורים שביקרתי:">
-<!ENTITY  visitedLinkColor.accesskey      "ב">
+<!ENTITY  linkColor2.label                "קישורים שלא ביקרנו בהם">
+<!ENTITY  linkColor2.accesskey            "ל">
+<!ENTITY  visitedLinkColor2.label         "קישורים שביקרנו בהם">
+<!ENTITY  visitedLinkColor2.accesskey     "ב">

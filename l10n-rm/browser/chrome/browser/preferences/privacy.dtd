@@ -20,10 +20,10 @@
 <!ENTITY trackingProtectionPBM5.accesskey     "v">
 <!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the nightly channel. -->
 <!ENTITY trackingProtectionPBM6.label         "Utilisar la protecziun encunter il fastizar en il modus privat per bloccar mecanissems da fastizar enconuschents">
-<!ENTITY trackingProtectionPBM6.accesskey     "v">
+<!ENTITY trackingProtectionPBM6.accesskey     "z">
 <!ENTITY trackingProtectionPBMLearnMore.label "Ulteriuras infurmaziuns">
 <!ENTITY changeBlockList2.label               "Midar la glista da bloccar…">
-<!ENTITY changeBlockList2.accesskey           "c">
+<!ENTITY changeBlockList2.accesskey           "M">
 
 <!ENTITY  doNotTrack.description        "Trametter a websites il signal «Do Not Track» per inditgar che ti na vuls betg vegnir fastizà">
 <!ENTITY  doNotTrack.learnMore.label    "Ulteriuras infurmaziuns">
@@ -49,14 +49,14 @@
 <!ENTITY  acceptCookies2.label          "Acceptar cookies da websites">
 <!ENTITY  acceptCookies2.accesskey      "A">
 
-<!ENTITY  acceptThirdParty.pre.label      "Permetter cookies da terzs:">
-<!ENTITY  acceptThirdParty.pre.accesskey  "c">
+<!ENTITY  acceptThirdParty2.pre.label     "Acceptar cookies da terzs">
+<!ENTITY  acceptThirdParty2.pre.accesskey "k">
 <!ENTITY  acceptThirdParty.always.label   "Adina">
 <!ENTITY  acceptThirdParty.never.label    "Mai">
 <!ENTITY  acceptThirdParty.visited.label  "Da visitads">
 
-<!ENTITY  keepUntil.label               "Memorisar fin che:">
-<!ENTITY  keepUntil.accesskey           "M">
+<!ENTITY  keepUntil2.label              "Memorisar enfin che">
+<!ENTITY  keepUntil2.accesskey          "e">
 
 <!ENTITY  expire.label                  "els n'èn betg pli valids">
 <!ENTITY  close.label                   "&brandShortName; vegn serrà">
@@ -106,10 +106,15 @@
 <!ENTITY  clearOnClose.accesskey         "S">
 
 <!ENTITY  clearOnCloseSettings.label     "Parameters…">
-<!ENTITY  clearOnCloseSettings.accesskey "z">
+<!ENTITY  clearOnCloseSettings.accesskey "m">
 
 <!ENTITY  browserContainersLearnMore.label      "Ulteriuras infurmaziuns">
 <!ENTITY  browserContainersEnabled.label        "Activar ils tabs da container">
 <!ENTITY  browserContainersEnabled.accesskey    "r">
 <!ENTITY  browserContainersSettings.label        "Parameters…">
 <!ENTITY  browserContainersSettings.accesskey    "r">
+
+<!ENTITY  a11yPrivacy.checkbox.label     "Impedir che servetschs d'accessabilitad accedian a tes navigatur">
+<!ENTITY  a11yPrivacy.checkbox.accesskey "a">
+<!ENTITY  a11yPrivacy.learnmore.label    "Ulteriuras infurmaziuns">
+<!ENTITY enableSafeBrowsingLearnMore.label "Ulteriuras infurmaziuns">

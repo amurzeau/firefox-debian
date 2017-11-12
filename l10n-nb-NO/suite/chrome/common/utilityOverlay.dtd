@@ -23,7 +23,7 @@
 <!ENTITY newNavigatorCmd.key "N">
 <!ENTITY newNavigatorCmd.accesskey "N">
 <!ENTITY newPrivateWindowCmd.label "Privat vindu">
-<!ENTITY newPrivateWindowCmd.key "P">
+<!ENTITY newPrivateWindowCmd.key "B">
 <!ENTITY newPrivateWindowCmd.accesskey "v">
 <!ENTITY printSetupCmd.label "Utskriftsformat …">
 <!ENTITY printSetupCmd.accesskey "k">
@@ -129,7 +129,7 @@
 <!ENTITY bidiSwitchTextDirectionItem.accesskey    "e">
 <!ENTITY bidiSwitchTextDirectionItem.commandkey   "X">
 
-<!ENTITY customizeToolbarContext.label            "Tilpass …">
+<!ENTITY customizeToolbarContext.label            "Tilpass…">
 <!ENTITY customizeToolbarContext.accesskey        "T">
 
 <!ENTITY customizeToolbar.toolbarmode.label       "Innstillinger for denne verktøylinjen">

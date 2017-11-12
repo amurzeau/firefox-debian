@@ -66,7 +66,7 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 
 <!ENTITY aboutSupport.appBasicsMultiProcessSupport "Több folyamatú ablakok">
 
-<!ENTITY aboutSupport.appBasicsProcessCount "Webes tartalomfolyamatok">
+<!ENTITY aboutSupport.appBasicsProcessCount "Webes tartalomfolyamat">
 
 <!ENTITY aboutSupport.appBasicsKeyGoogle "Google kulcs">
 <!ENTITY aboutSupport.appBasicsKeyMozilla "Mozilla helymeghatározási szolgáltatás kulcs">
@@ -107,6 +107,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.a11yActivated "Aktiválva">
 <!ENTITY aboutSupport.a11yForceDisabled "Kisegítő lehetőségek letiltása">
 <!ENTITY aboutSupport.a11yHandlerUsed "Használt akadálymentesítés-kezelő">
+<!ENTITY aboutSupport.a11yInstantiator "Kisegítő lehetőségek kezdeményezője">
 
 <!ENTITY aboutSupport.libraryVersionsTitle "Könyvtárak verziói">
 

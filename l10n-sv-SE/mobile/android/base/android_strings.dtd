@@ -3,9 +3,14 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY firstrun_panel_title_welcome "Välkommen">
-
-<!ENTITY firstrun_urlbar_message "Välkommen till &brandShortName;">
-<!ENTITY firstrun_urlbar_subtext "Hitta saker snabbare med hjälp av sökförslagsgenvägar.">
+<!ENTITY firstrun_urlbar_message2 "Tack för att du valde &brandShortName;">
+<!ENTITY firstrun_urlbar_subtext2 "En modern webbläsare från Mozilla, en ideell organisation engagerad i en fri och öppen webb.">
+<!ENTITY firstrun_panel_title_privacy "Sekretess">
+<!ENTITY firstrun_privacy_message "Surfa utan att känna dig övervakad">
+<!ENTITY firstrun_privacy_subtext "Privat surfning med spårningsskydd som blockerar trackers medan du surfar och raderar all historik när du slutar surfa.">
+<!ENTITY firstrun_panel_title_customize "Anpassa">
+<!ENTITY firstrun_customize_message "Gör &brandShortName; till din egen.">
+<!ENTITY firstrun_customize_subtext "Anpassa &brandShortName; med tillägg. Blockera annonser, lägg till funktioner eller välj ett nytt tema som speglar din personlighet.">
 <!ENTITY firstrun_bookmarks_title "Historik">
 <!ENTITY firstrun_bookmarks_message "Dina favoriter, där dom är mest viktiga">
 <!ENTITY firstrun_bookmarks_subtext "Få resultat från dina bokmärken och historik då du söker.">
@@ -13,8 +18,8 @@
 <!ENTITY firstrun_data_message "Mindre data, mer sparat">
 <!ENTITY firstrun_data_subtext2 "Stäng av bilderna för att spendera mindre data på varje webbplats du besöker.">
 <!ENTITY firstrun_sync_title "Sync">
-<!ENTITY firstrun_sync_message "&brandShortName;, alltid vid din sida">
-<!ENTITY firstrun_sync_subtext "Synka dina flikar, lösenord och mer överallt där du använder dom.">
+<!ENTITY firstrun_sync_message2 "Fortsätt där du slutade.">
+<!ENTITY firstrun_sync_subtext2 "Använd Sync för att hitta bokmärken, lösenord och andra saker som du sparar till &brandShortName; på alla dina enheter.">
 <!ENTITY firstrun_signin_message "Anslut och kom igång">
 <!ENTITY firstrun_signin_button "Logga in till Sync">
 <!ENTITY  onboard_start_button_browser "Börja surfa">
@@ -87,6 +92,7 @@
      in the folder. -->
 <!ENTITY bookmark_folder_items "&formatD; flikar">
 <!ENTITY bookmark_folder_one_item "1 objekt">
+<!ENTITY bookmark_folder_updated "Mapp uppdaterad">
 <!ENTITY bookmark_parent_folder "Överordnad mapp">
 <!ENTITY bookmark_add_folder "Lägg till ny mapp">
 
@@ -201,8 +207,6 @@
 <!ENTITY pref_category_advanced_summary3 "Återställ flikar, insticksmoduler, utvecklarverktyg">
 <!ENTITY pref_category_notifications "Notifieringar">
 <!ENTITY pref_category_notifications_summary "Nya funktioner, webbplatsuppdateringar">
-<!ENTITY pref_content_notifications "Webbplatsuppdateringar">
-<!ENTITY pref_content_notifications_summary2 "Upptäck nytt innehåll från webbplatser som stöds">
 <!ENTITY pref_developer_remotedebugging_usb "Fjärrfelsökning via USB">
 <!ENTITY pref_developer_remotedebugging_wifi "Fjärrfelsökning via Wi-Fi">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Wi-Fi-felsökning kräver att din enhet har en app för QR-kodläsning installerad.">
@@ -268,7 +272,6 @@
 <!ENTITY pref_show_web_fonts_summary2 "Ladda ner externa typsnitt vid laddning av sida">
 
 <!ENTITY pref_tracking_protection_title2 "Spårningsskydd">
-<!ENTITY pref_tracking_protection_summary3 "Påslaget i privat surfning">
 <!ENTITY pref_donottrack_title "Spåra inte">
 <!ENTITY pref_donottrack_summary "&brandShortName; kommer att informera hemsidor att du inte vill bli spårad">
 
@@ -286,8 +289,9 @@
 <!-- Custom Tabs is an Android API for allowing third-party apps to open URLs in a customized UI.
      Instead of switching to the browser it appears as if the user stays in the third-party app.
      For more see: https://developer.chrome.com/multidevice/android/customtabs -->
-<!ENTITY pref_custom_tabs "Anpassade flikar">
-<!ENTITY pref_custom_tabs_summary3 "Tillåt appar att öppna webbplatser som använder en anpassad version av &brandShortName;">
+<!ENTITY pref_custom_tabs2 "Anpassade flikar">
+<!ENTITY pref_custom_tabs_summary4 "Tillåt att appar öppnar webbinnehåll i en snabbladdad anpassad flik.">
+
 <!-- Localization note (custom_tabs_menu_item_open_in): The variable is replaced by the name of
      default browser from user's preference, such as "Open in Firefox" -->
 <!ENTITY custom_tabs_menu_item_open_in "Öppna i &formatS;">
@@ -297,10 +301,6 @@
 
 <!ENTITY pref_pwa "Progressiva webbappar">
 <!ENTITY pref_pwa_summary "Tillåt att webappar läggs till på startskärmen">
-
-<!-- Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream  -->
-<!ENTITY pref_activity_stream "Aktivitetsflöde">
-<!ENTITY pref_activity_stream_summary "En rik visuell historik och en återskapad startsida gör det enklare än någonsin att hitta exakt vad du letar efter i &brandShortName;.">
 
 <!ENTITY tracking_protection_prompt_title "Nu med Spårningsskydd">
 <!ENTITY tracking_protection_prompt_text "Aktivt blockera spårningselement så att du inte behöver oroa dig.">
@@ -332,24 +332,7 @@
 
 <!-- Localization note (tab_queue_notification_settings): This notification text is shown if a tab
      has been queued but we are missing the system permission to show an overlay. -->
-<!ENTITY tab_queue_notification_settings "För att \&quot;Öppna flera länkar\&quot;, aktivera \u0027Rita över andra appar\u0027 tillståndet för &brandShortName;">
-
-<!ENTITY content_notification_summary "&brandShortName;">
-<!-- Localization note (content_notification_title_plural): &formatD; will be replaced with the number of websites that
-     have been updated (new content is available). The number of websites is always more than one (>= 2). For a single
-     update the website title is used instead of this string.
-     We can't use Android plural forms, sadly. See Bug #753859. -->
-<!ENTITY content_notification_title_plural "&formatD; webbsidor uppdaterade">
-<!-- Localization note (content_notification_action_settings2): This label will be shown as an action in a content notification.
-     Clicking the action will jump to the notification settings of the app. -->
-<!ENTITY content_notification_action_settings2 "Inställningar">
-<!-- Localization note(content_notification_action_read_now): This label will be shown as an action in a content notification.
-     Clicking the action will open all new content in the browser. -->
-<!ENTITY content_notification_action_read_now "Läs nu">
-<!-- Localization note (content_notification_updated_on): &formatS; will be replaced with a medium sized version of the
-     date, depending on locale. For en_US this is for example: Feb 24, 2016. For more details see the Android developer
-     documentation for DateFormat.getMediumDateFormat(). -->
-<!ENTITY content_notification_updated_on "Uppdaterad senast &formatS;">
+<!ENTITY tab_queue_notification_settings "För att \&quot;Öppna flera länkar\&quot;, aktivera \&apos;Rita över andra appar\&apos; tillståndet för &brandShortName;">
 
 <!ENTITY pref_char_encoding "Teckenkodning">
 <!ENTITY pref_char_encoding_on "Visa meny">
@@ -359,12 +342,8 @@
      The action is shown below a header saying "Clear private data"; See pref_clear_private_data -->
 <!ENTITY pref_clear_private_data_now_tablet "Rensa nu">
 <!ENTITY pref_clear_on_exit_title3 "Rensa privat data vid avslut">
-<!ENTITY pref_clear_on_exit_summary2 "&brandShortName; kommer automatiskt rensa din data när du väljer \u0022Avsluta\u0022 från huvudmenyn">
+<!ENTITY pref_clear_on_exit_summary2 "&brandShortName; kommer automatiskt rensa din data när du väljer \&quot;Avsluta\&quot; från huvudmenyn">
 <!ENTITY pref_clear_on_exit_dialog_title "Välj vilken data som ska rensas">
-<!ENTITY pref_plugins "Insticksmoduler">
-<!ENTITY pref_plugins_enabled "Aktiverad">
-<!ENTITY pref_plugins_tap_to_play2 "Tryck för att spela">
-<!ENTITY pref_plugins_disabled "Inaktiverat">
 <!ENTITY pref_restore_tabs "Återställ flikar">
 <!ENTITY pref_restore_always "Återställ alltid">
 <!ENTITY pref_restore_quit "Återställ inte när &brandShortName; avslutats">
@@ -384,6 +363,7 @@
 <!ENTITY pref_qrcode_enabled_summary2 "Tillåt QR skanner i adressfältet">
 
 <!ENTITY pref_use_master_password "Använd huvudlösenord">
+<!ENTITY pref_sync_default_title "Firefox-konto">
 <!ENTITY pref_sync2 "Logga in">
 <!ENTITY pref_sync_summary2 "Synka dina flikar, bokmärken, inloggningar, historik">
 <!ENTITY pref_search_suggestions "Visa sökförslag">
@@ -413,6 +393,9 @@
 <!ENTITY pref_dialog_set_default "Ange som standard">
 <!ENTITY pref_dialog_default "Standard">
 <!ENTITY pref_dialog_remove "Ta bort">
+<!ENTITY pref_dialog_activitystream_header_content "Ytterligare innehåll">
+<!ENTITY pref_dialog_activitystream_recentBookmarks "Senaste bokmärken">
+<!ENTITY pref_dialog_activitystream_visited "Besökt">
 
 <!ENTITY pref_search_last_toast "Du kan inte ta bort eller inaktivera din sista sökmotor.">
 
@@ -503,6 +486,7 @@
 <!ENTITY contextmenu_open_private_tab "Öppna i privat flik">
 <!ENTITY contextmenu_remove "Ta bort">
 <!ENTITY contextmenu_add_to_launcher "Lägg till på startsidan">
+<!ENTITY contextmenu_add_page_shortcut "Lägg till genväg till sida">
 <!ENTITY contextmenu_set_as_homepage "Ange som startsida">
 <!ENTITY contextmenu_share "Dela">
 <!ENTITY contextmenu_pasteandgo "Klistra in och öppna">
@@ -514,7 +498,17 @@
 <!ENTITY contextmenu_top_sites_edit "Redigera">
 <!ENTITY contextmenu_top_sites_pin "Fäst webbplats">
 <!ENTITY contextmenu_top_sites_unpin "Lösgör webbplats">
+<!-- Localization note (contextmenu_pin_to_top_sites, contextmenu_unpin_from_top_sites): These strings are used to
+     pin/unpin items from top sites when the user is not on the top sites screen so they'd be missing context on what
+     just "Pin Site" or "Unpin Site" would mean. -->
+<!ENTITY contextmenu_pin_to_top_sites "Fäst till Mest besökta">
+<!ENTITY contextmenu_unpin_from_top_sites "Lösgör från Mest besökta">
 <!ENTITY contextmenu_add_search_engine "Lägg till en sökmotor">
+
+<!-- Localization note (pinned_page_to_top_sites, unpinned_page_from_top_sites): These strings are shown in a snackbar
+     after the user pins/unpins the currently displayed page from top sites. -->
+<!ENTITY pinned_page_to_top_sites "Fäst sida till Mest besökta">
+<!ENTITY unpinned_page_from_top_sites "Lösgjort sida från Mest besökta">
 
 <!-- Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
      where normally a username would be displayed. In this case, no username was found, and this placeholder
@@ -825,6 +819,8 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 
 <!ENTITY promotion_add_to_homescreen "Lägg till på startsidan">
 
+<!ENTITY promotion_add_page_shortcut "Lägg till genväg till sida">
+
 <!ENTITY helper_first_offline_bookmark_title "Läs offline">
 <!ENTITY helper_first_offline_bookmark_message "Hitta innehållet i din läsvy i bokmärken, även offline.">
 <!ENTITY helper_first_offline_bookmark_button "Gå till bokmärken">
@@ -834,7 +830,12 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_button "Lägg till i bokmärken">
 
 <!ENTITY activity_stream_topsites "Mest besökta">
+<!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->
+<!ENTITY activity_stream_topstories "Rekommenderas av &brandPocket;">
 <!ENTITY activity_stream_highlights "Höjdpunkter">
+
+<!-- LOCALIZATION NOTE (activity_stream_link_more1): Link-like text displayed to take user to a website with more content from Pocket. -->
+<!ENTITY activity_stream_link_more1 "MER">
 
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_bookmarked): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
@@ -842,12 +843,30 @@ Stream list for highlights sourced from th user's bookmarks. -->
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_visited): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
 <!ENTITY activity_stream_highlight_label_visited "Besökt">
+<!-- LOCALIZATION NOTE (activity_stream_highlight_label_trending): This label is shown in the Activity Stream list for highlights sourced from a recommendations engine. -->
+<!ENTITY activity_stream_highlight_label_trending "Trend">
+<!-- LOCALIZATION NOTE (activity_stream_highlights_empty): This text is shown when we could not find highlights for this user. This is also shown on first run. -->
+<!ENTITY activity_stream_highlights_empty "Börja surfa, och vi visar några av de bästa artiklarna, videoklippen och andra sidor du nyligen har besökt eller bokmärkt här.">
 
-<!-- LOCALIZATION NOTE (activity_stream_dismiss): This label is shown in the Activity Stream context menu,
+<!-- LOCALIZATION NOTE (activity_stream_remove): This label is shown in the Activity Stream context menu,
 and allows hiding a URL/page from highlights or topsites. The page remains in history/bookmarks, but
 is simply hidden from the Activity Stream panel. -->
-<!ENTITY activity_stream_dismiss "Ignorera">
+<!ENTITY activity_stream_remove "Ta bort">
 <!ENTITY activity_stream_delete_history "Ta bort från historik">
 
-<!ENTITY activity_stream_welcome_title "Välkommen till dina höjdpunkter">
-<!ENTITY activity_stream_welcome_content1 "&brandShortName; skapar nu höjdpunkter av saker som du har upptäckt på webben så att du kan hitta tillbaka till bra artiklar, filmer, bokmärken och andra sidor.">
+<!ENTITY private_tab_panel_title "Privat surfning + spårningsskydd">
+<!ENTITY private_tab_panel_description "&brandShortName; blockerar delar av sidor som kan spåra din surfningsaktivitet.">
+<!ENTITY private_tab_panel_description2 "Vi kommer inte komma ihåg någon historik, men nedladdade filer och nya bokmärken sparas fortfarande på din enhet.">
+<!ENTITY private_tab_learn_more "Vill du veta mer?">
+
+<!ENTITY fullscreen_warning "Fullskärmsläge startad">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_confirm): The plus sign here is part of UI design -->
+<!ENTITY pwa_add_to_launcher_confirm "+ Lägg till på startsidan">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_badge2): Used as label in the page actions dropdown list,
+displayed when there are more than 3 actions available for a page.
+See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
+<!ENTITY pwa_add_to_launcher_badge2 "Lägg till på startsidan">
+<!ENTITY pwa_continue_to_website "Fortsätt till webbsidan">
+<!ENTITY pwa_onboarding_sumo "Du kan enkelt lägga till den här webbplatsen på din startsida för att få snabb åtkomst och surfa snabbare med en appliknande upplevelse.">

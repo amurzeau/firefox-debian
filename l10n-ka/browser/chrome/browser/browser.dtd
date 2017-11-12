@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!-- LOCALIZATION NOTE : FILE This file contains the browser main menu items -->
-<!-- LOCALIZATION NOTE : FILE Do not translate commandkeys --> 
+<!-- LOCALIZATION NOTE : FILE Do not translate commandkeys -->
 
 <!-- LOCALIZATION NOTE (mainWindow.title): DONT_TRANSLATE -->
 <!ENTITY mainWindow.title "&brandFullName;">
@@ -23,6 +23,10 @@
 <!ENTITY  reloadTab.accesskey                "გ">
 <!ENTITY  reloadAllTabs.label                "ყველა ჩანართის განახლება">
 <!ENTITY  reloadAllTabs.accesskey            "ყ">
+<!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
+a tab (i.e. it is a verb, not adjective). -->
+<!ENTITY  duplicateTab.label                 "ჩანართის გაორმაგება">
+<!ENTITY  duplicateTab.accesskey             "გ">
 <!-- LOCALIZATION NOTE (closeTabsToTheEnd.label): This should indicate the
 direction in which tabs are closed, i.e. locales that use RTL mode should say
 left instead of right. -->
@@ -37,21 +41,22 @@ left edge of the tabstrip. Really we just want the string to express the idea
 that this is a lightweight and reversible action that keeps your tab where you
 can reach it easily. -->
 <!ENTITY  pinTab.label                       "ჩანართის მიმაგრება">
-<!ENTITY  pinTab.accesskey                   "რ">
+<!ENTITY  pinTab.accesskey                   "მ">
 <!ENTITY  unpinTab.label                     "ჩანართის მოხსნა">
 <!ENTITY  unpinTab.accesskey                 "ხ">
 <!ENTITY  sendTabToDevice.label              "ჩანართის გაგზავნა მოწყობილობაზე">
-<!ENTITY  sendTabToDevice.accesskey          "ჩ">
+<!ENTITY  sendTabToDevice.accesskey          "წ">
 <!ENTITY  sendPageToDevice.label             "გვერდის გაგზავნა მოწყობილობაზე">
 <!ENTITY  sendPageToDevice.accesskey         "გ">
 <!ENTITY  sendLinkToDevice.label             "ბმულის გაგზავნა მოწყობილობაზე">
-<!ENTITY  sendLinkToDevice.accesskey         "ბ">
+<!ENTITY  sendLinkToDevice.accesskey         "წ">
+<!ENTITY  sendToDeviceFeedback.label         "გაგზავნილია!">
 <!ENTITY  moveToNewWindow.label              "ახალ ფანჯარაში გადატანა">
 <!ENTITY  moveToNewWindow.accesskey          "ფ">
 <!ENTITY  bookmarkAllTabs.label              "ყველა ჩანართის ჩანიშვნა…">
-<!ENTITY  bookmarkAllTabs.accesskey          "ყ">
+<!ENTITY  bookmarkAllTabs.accesskey          "შ">
 <!ENTITY  undoCloseTab.label                 "დახურული ჩანართის დაბრუნება">
-<!ENTITY  undoCloseTab.accesskey             "დ">
+<!ENTITY  undoCloseTab.accesskey             "ხ">
 <!ENTITY  closeTab.label                     "ჩანართის დახურვა">
 <!ENTITY  closeTab.accesskey                 "უ">
 
@@ -69,8 +74,8 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY openFileCmd.commandkey "o">
 <!ENTITY printSetupCmd.label "გვერდის პარამეტრები...">
 <!ENTITY printSetupCmd.accesskey "ტ">
-<!ENTITY printPreviewCmd.label "ნახვა ამობეჭდვამდე">
-<!ENTITY printPreviewCmd.accesskey "ს">
+<!ENTITY printPreviewCmd.label "შეთვალიერება ამობეჭდვამდე">
+<!ENTITY printPreviewCmd.accesskey "ჭ">
 <!ENTITY printCmd.label "ამობეჭდვა…">
 <!ENTITY printCmd.accesskey "ა">
 <!ENTITY printCmd.commandkey "p">
@@ -79,7 +84,7 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY goOfflineCmd.accesskey "გ">
 
 <!ENTITY menubarCmd.label "მენიუს ზოლი">
-<!ENTITY menubarCmd.accesskey "მ">
+<!ENTITY menubarCmd.accesskey "ზ">
 <!ENTITY navbarCmd.label "ნავიგაციის ხელსაწყოთა ზოლი">
 <!ENTITY personalbarCmd.label "სანიშნეების ხელსაწყოთა ზოლი">
 <!ENTITY personalbarCmd.accesskey "ს">
@@ -88,13 +93,20 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY toolbarContextMenu.reloadAllTabs.label "ყველა ჩანართის განახლება">
 <!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "ყ">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.label "ყველა ჩანართის ჩანიშვნა…">
-<!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "ა">
+<!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "შ">
 <!ENTITY toolbarContextMenu.undoCloseTab.label "დახურული ჩანართის დაბრუნება">
 <!ENTITY toolbarContextMenu.undoCloseTab.accesskey "დ">
 
 <!ENTITY pageSourceCmd.label "გვერდის წყარო">
 <!ENTITY pageSourceCmd.accesskey "წ">
 <!ENTITY pageSourceCmd.commandkey "u">
+<!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
+Option+Command keyboard shortcut letter that Safari and Chrome use for "View
+Source" on macOS. pageSourceCmd.commandkey above is Firefox's official keyboard
+shortcut shown in the GUI. SafariCommandKey is an alias provided for the
+convenience of Safari and Chrome users on macOS. See bug 1398988. -->
+<!ENTITY pageSourceCmd.SafariCommandKey "u">
+
 <!ENTITY pageInfoCmd.label "გვერდის მონაცემები">
 <!ENTITY pageInfoCmd.accesskey "ი">
 <!ENTITY pageInfoCmd.commandkey "i">
@@ -161,23 +173,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisPageCmd.label "გვერდის ჩანიშვნა">
 <!ENTITY editThisBookmarkCmd.label "სანიშნის ჩასწორება">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
-<!-- LOCALIZATION NOTE (findShareServices.label):
-  -  Use the unicode ellipsis char, \u2026,
-  -  or use "..." if \u2026 doesn't suit traditions in your locale. -->
-<!ENTITY findShareServices.label "სხვა გაზიარების მომსახურებების მოძიება…">
-<!ENTITY sharePageCmd.label "გვერდის გაზიარება">
-<!ENTITY sharePageCmd.commandkey "S">
-<!ENTITY sharePageCmd.accesskey "გ">
-<!-- LOCALIZATION NOTE (shareLink.accesskey): must be different than the following share access keys -->
-<!ENTITY shareLink.label "ბმულის გაზიარება">
-<!ENTITY shareLink.accesskey "ბ">
-<!ENTITY shareImage.label "სურათის გაზიარება">
-<!ENTITY shareImage.accesskey "ს">
-<!ENTITY shareSelect.label "არჩეულის გაზიარება">
-<!ENTITY shareSelect.accesskey "ა">
-<!ENTITY shareVideo.label "ვიდეოს გაზიარება">
-<!ENTITY shareVideo.accesskey "ვ">
-<!ENTITY feedsMenu2.label "გვერდის გამოწერა">
+
 <!ENTITY subscribeToPageMenupopup.label "გვერდის გამოწერა">
 <!ENTITY subscribeToPageMenuitem.label "გვერდის გამოწერა...">
 <!ENTITY addCurPagesCmd.label "ყველა ჩანართის ჩანიშვნა...">
@@ -209,6 +205,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.defaultNotificationAnchor.tooltip         "შეტყობინებების პანელის გახსნა">
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "მდებარეობის მოთხოვნის პანელის გახსნა">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "დამატების ჩადგმისას შეტყობინების არის გახსნა">
+<!ENTITY urlbar.canvasNotificationAnchor.tooltip          "გრაფიკული ელემენტების გამოსახვის უფლებების მართვა">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "კავშირგარეშე საცავის შეტყობინების პანელის გახსნა">
 <!ENTITY urlbar.passwordNotificationAnchor.tooltip        "პაროლის შენახვის შეტყობინების პანელის გახსნა">
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "გამოყენებული მოდულების მართვა">
@@ -233,6 +230,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "ამ საიტისთვის შეტყობინებების ჩვენების უფლება შეზღუდული გაქვთ.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "ამ საიტისთვის, მუდმივ მეხსიერებასთან წვდომა შეზღუდული გაქვთ.">
 
+<!ENTITY urlbar.popupBlocked.tooltip             "ამ საიტზე, ამომხტომი ფირნიშები შეზღუდული გაქვთ.">
+
 <!ENTITY urlbar.openHistoryPopup.tooltip                "ისტორიის ჩვენება">
 
 <!ENTITY searchItem.title             "ძიება">
@@ -243,14 +242,18 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarksButton.label          "სანიშნეები">
 <!ENTITY bookmarksCmd.commandkey "b">
 
-<!ENTITY bookmarksMenuButton.label          "სანიშნეები">
-<!ENTITY bookmarksMenuButton.other.label "სხვა სანიშნეები">
-<!ENTITY bookmarksMenuButton.mobile.label "მობილურის სანიშნეები">
+<!ENTITY bookmarksSubview.label             "სანიშნეები">
+<!ENTITY bookmarksMenuButton2.label         "სანიშნეების მენიუ">
+<!ENTITY bookmarksMenuButton.other.label    "სხვა სანიშნეები">
+<!ENTITY bookmarksMenuButton.mobile.label   "მობილურის სანიშნეები">
 <!ENTITY viewBookmarksSidebar2.label        "სანიშნეთა გვერდითი ზოლის ჩვენება">
+<!ENTITY hideBookmarksSidebar.label         "სანიშნეთა გვერდითი ზოლის დამალვა">
 <!ENTITY viewBookmarksToolbar.label         "სანიშნეთა ხელსაწყოთა ზოლის ჩვენება">
+<!ENTITY hideBookmarksToolbar.label         "სანიშნეთა ხელსაწყოთა ზოლის დამალვა">
 <!ENTITY searchBookmarks.label              "სანიშნეების ძიება">
-
-<!ENTITY containersMenu.label "სათავსები">
+<!ENTITY bookmarkingTools.label             "სანიშნეების ხელსაწყოები">
+<!ENTITY addBookmarksMenu.label             "სანიშნეთა მენიუს, ხელსაწყოთა ზოლში დამატება">
+<!ENTITY removeBookmarksMenu.label          "სანიშნეთა მენიუს, ხელსაწყოთა ზოლიდან ამოღება">
 
 <!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
@@ -262,17 +265,20 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY historySidebarCmd.commandKey   "h">
 
 <!ENTITY toolsMenu.label              "ხელსაწყოები">
-<!ENTITY toolsMenu.accesskey          "ხ"> 
+<!ENTITY toolsMenu.accesskey          "ხ">
 
 <!ENTITY keywordfield.label           "ძიებისთვის მალსახმობის შექმნა…">
 <!ENTITY keywordfield.accesskey       "მ">
 
 <!ENTITY downloads.label              "ჩამოტვირთვები">
+<!-- LOCALIZATION NOTE (libraryDownloads.label): This label is similar to
+  -  downloads.label, but used in the Library panel. -->
+<!ENTITY libraryDownloads.label       "ჩამოტვირთვები">
 <!ENTITY downloads.accesskey          "ჩ">
 <!ENTITY downloads.commandkey         "j">
 <!ENTITY downloadsUnix.commandkey     "y">
 <!ENTITY addons.label                 "დამატებები">
-<!ENTITY addons.accesskey             "მ">
+<!ENTITY addons.accesskey             "დ">
 <!ENTITY addons.commandkey            "A">
 
 <!ENTITY webDeveloperMenu.label       "ვებდეველოპერი">
@@ -281,7 +287,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY inspectContextMenu.label     "ელემენტზე დაკვირვება">
 <!ENTITY inspectContextMenu.accesskey "ტ">
 
-<!ENTITY fileMenu.label         "ფაილი"> 
+<!ENTITY fileMenu.label         "ფაილი">
 <!ENTITY fileMenu.accesskey       "ფ">
 <!ENTITY newUserContext.label             "ახალი სათავსი ჩანართი">
 <!ENTITY newUserContext.accesskey         "ს">
@@ -292,45 +298,45 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY newPrivateWindow.accesskey "ფ">
 <!ENTITY newNonRemoteWindow.label   "ერთპროცესიანი ფანჯარა">
 
-<!ENTITY editMenu.label         "ჩასწორება"> 
-<!ENTITY editMenu.accesskey       "რ"> 
-<!ENTITY undoCmd.label            "დაბრუნება">  
-<!ENTITY undoCmd.key            "Z">  
-<!ENTITY undoCmd.accesskey          "დ"> 
-<!ENTITY redoCmd.label            "კვლავ შესრულება">  
-<!ENTITY redoCmd.key            "Y">  
-<!ENTITY redoCmd.accesskey          "კ"> 
-<!ENTITY cutCmd.label           "ამოჭრა">  
-<!ENTITY cutCmd.key             "X">  
-<!ENTITY cutCmd.accesskey         "ა"> 
-<!ENTITY copyCmd.label            "დაკოპირება">  
-<!ENTITY copyCmd.key            "C">  
-<!ENTITY copyCmd.accesskey          "კ"> 
-<!ENTITY pasteCmd.label           "ჩასმა">  
-<!ENTITY pasteCmd.key           "V">  
-<!ENTITY pasteCmd.accesskey         "ჩ"> 
-<!ENTITY deleteCmd.label          "წაშლა">  
-<!ENTITY deleteCmd.key            "D">  
-<!ENTITY deleteCmd.accesskey        "წ"> 
-<!ENTITY selectAllCmd.label         "ყველაფრის მონიშვნა">  
-<!ENTITY selectAllCmd.key         "A">  
-<!ENTITY selectAllCmd.accesskey       "მ"> 
+<!ENTITY editMenu.label         "ჩასწორება">
+<!ENTITY editMenu.accesskey       "რ">
+<!ENTITY undoCmd.label            "დაბრუნება">
+<!ENTITY undoCmd.key            "Z">
+<!ENTITY undoCmd.accesskey          "დ">
+<!ENTITY redoCmd.label            "კვლავ შესრულება">
+<!ENTITY redoCmd.key            "Y">
+<!ENTITY redoCmd.accesskey          "კ">
+<!ENTITY cutCmd.label           "ამოჭრა">
+<!ENTITY cutCmd.key             "X">
+<!ENTITY cutCmd.accesskey         "ა">
+<!ENTITY copyCmd.label            "დაკოპირება">
+<!ENTITY copyCmd.key            "C">
+<!ENTITY copyCmd.accesskey          "კ">
+<!ENTITY pasteCmd.label           "ჩასმა">
+<!ENTITY pasteCmd.key           "V">
+<!ENTITY pasteCmd.accesskey         "ჩ">
+<!ENTITY deleteCmd.label          "წაშლა">
+<!ENTITY deleteCmd.key            "D">
+<!ENTITY deleteCmd.accesskey        "წ">
+<!ENTITY selectAllCmd.label         "ყველაფრის მონიშვნა">
+<!ENTITY selectAllCmd.key         "A">
+<!ENTITY selectAllCmd.accesskey       "მ">
 <!ENTITY preferencesCmd2.label       "პარამეტრები">
 <!ENTITY preferencesCmd2.accesskey     "პ">
 <!ENTITY preferencesCmdUnix.label       "პარამეტრები">
-<!ENTITY preferencesCmdUnix.accesskey     "ტ"> 
+<!ENTITY preferencesCmdUnix.accesskey     "ტ">
 
 <!ENTITY clearRecentHistory.label               "უახლესი ისტორიის გასუფთავება...">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
 
-<!ENTITY viewMenu.label         "ხედი"> 
-<!ENTITY viewMenu.accesskey       "ხ"> 
-<!ENTITY viewToolbarsMenu.label       "ხელსაწყოთა ზოლები"> 
-<!ENTITY viewToolbarsMenu.accesskey     "ხ"> 
+<!ENTITY viewMenu.label         "ხედი">
+<!ENTITY viewMenu.accesskey       "ხ">
+<!ENTITY viewToolbarsMenu.label       "ხელსაწყოთა ზოლები">
+<!ENTITY viewToolbarsMenu.accesskey     "ხ">
 <!ENTITY viewSidebarMenu.label "გვერდითი ზოლი">
 <!ENTITY viewSidebarMenu.accesskey "ზ">
-<!ENTITY viewCustomizeToolbar.label       "მორგება…"> 
+<!ENTITY viewCustomizeToolbar.label       "მორგება…">
 <!ENTITY viewCustomizeToolbar.accesskey     "მ">
 <!ENTITY overflowCustomizeToolbar.label       "ხელსაწყოთა ზოლის მორგება…">
 <!ENTITY overflowCustomizeToolbar.accesskey   "ზ">
@@ -349,7 +355,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuCustomize.tooltip "მენიუს და ხელსაწყოთა ზოლების მორგება">
 <!ENTITY appMenuCustomizeExit.label "მორგებიდან გამოსვლა">
 <!ENTITY appMenuCustomizeExit.tooltip "მორგების დასრულება">
-<!ENTITY appMenuHistory.label "ისტორია">
 <!ENTITY appMenuHistory.showAll.label "სრული ისტორიის ჩვენება">
 <!ENTITY appMenuHistory.clearRecent.label "უახლესი ისტორიის გასუფთავება…">
 <!ENTITY appMenuHistory.restoreSession.label "წინა სეანსის აღდგენა">
@@ -384,6 +389,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.managedevices.label "მოწყობილობების მართვა…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "დასინქრონებული ჩანართების გვერდითი ზოლის ნახვა">
 
+<!ENTITY appMenuRecentHighlights.label "გამორჩეული სიახლეები">
+
 <!ENTITY customizeMenu.addToToolbar.label "ხელსაწყოთა ზოლში დამატება">
 <!ENTITY customizeMenu.addToToolbar.accesskey "დ">
 <!ENTITY customizeMenu.addToPanel.label "მენიუში დამატება">
@@ -393,8 +400,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      The overflow menu is the menu that appears if you click the chevron (>> button)
      in the location bar. These labels are only used in Photon, where you can put
      items into this menu permanently (pinned). -->
-<!ENTITY customizeMenu.addToOverflowMenu.label "მენიუს დაფარულ არეში დამატება">
-<!ENTITY customizeMenu.addToOverflowMenu.accesskey "დ">
+<!ENTITY customizeMenu.addToOverflowMenu.label "ჩამოსაშლელ მენიუში დამატება">
+<!ENTITY customizeMenu.addToOverflowMenu.accesskey "ჩ">
 <!ENTITY customizeMenu.moveToToolbar.label "ხელსაწყოთა ზოლში გადატანა">
 <!ENTITY customizeMenu.moveToToolbar.accesskey "გ">
 <!-- LOCALIZATION NOTE (customizeMenu.moveToPanel.accesskey, customizeMenu.pinToOverflowMenu.accesskey)
@@ -404,10 +411,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      keys.  -->
 <!ENTITY customizeMenu.moveToPanel.label "მენიუში გადატანა">
 <!ENTITY customizeMenu.moveToPanel.accesskey "გ">
-<!ENTITY customizeMenu.pinToOverflowMenu.label "მენიუს დაფარულ არეში მიმაგრება">
-<!ENTITY customizeMenu.pinToOverflowMenu.accesskey "მ">
-<!ENTITY customizeMenu.unpinFromOverflowMenu.label "მენიუს დაფარული არიდან ამოღება">
-<!ENTITY customizeMenu.unpinFromOverflowMenu.accesskey "ა">
+<!ENTITY customizeMenu.pinToOverflowMenu.label "ჩამოსაშლელ მენიუში მიმაგრება">
+<!ENTITY customizeMenu.pinToOverflowMenu.accesskey "გ">
+<!ENTITY customizeMenu.unpinFromOverflowMenu.label "ჩამოსაშლელი მენიუდან ამოღება">
+<!ENTITY customizeMenu.unpinFromOverflowMenu.accesskey "ღ">
 <!ENTITY customizeMenu.removeFromToolbar.label "ხელსაწყოთა ზოლიდან ამოღება">
 <!ENTITY customizeMenu.removeFromToolbar.accesskey "ა">
 <!ENTITY customizeMenu.removeFromMenu.label "მენიუდან ამოღება">
@@ -438,7 +445,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (urlbar.searchSuggestionsNotification.hintPrefix): Shown just before the suggestions opt-out hint. -->
 <!ENTITY urlbar.searchSuggestionsNotification.hintPrefix "რჩევა:">
 <!-- LOCALIZATION NOTE (urlbar.searchSuggestionsNotification.hint): &#x1F50E; is the magnifier icon emoji, please don't change it. -->
-<!ENTITY urlbar.searchSuggestionsNotification.hint "გაიადვილეთ ძებნა! მონახეთ &#x1F50E; შემოთავაზებული შედეგების გვერდით.">
+<!ENTITY urlbar.searchSuggestionsNotification.hint "გაიადვილეთ ძებნა! მონახეთ &#x1F50E; ნიშანი, შემოთავაზებული შედეგების გვერდით.">
 <!ENTITY urlbar.searchSuggestionsNotification.changeSettingsWin "პარამეტრების შეცვლა…">
 <!ENTITY urlbar.searchSuggestionsNotification.changeSettingsWin.accesskey "პ">
 <!ENTITY urlbar.searchSuggestionsNotification.changeSettingsUnix "პარამეტრების შეცვლა…">
@@ -531,7 +538,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY reloadFrameCmd.accesskey     "ხ">
 <!ENTITY viewPartialSourceForSelectionCmd.label "მონიშნულის წყაროს ჩვენება">
 <!ENTITY viewPartialSourceForMathMLCmd.label    "MathML წყაროს ჩვენება">
-<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both 
+<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both
          viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label -->
 <!ENTITY viewPartialSourceCmd.accesskey "წ">
 <!ENTITY viewPageSourceCmd.label      "გვერდის წყაროს ჩვენება">
@@ -550,8 +557,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY viewImageInfoCmd.accesskey   "ხ">
 <!ENTITY viewImageDescCmd.label       "აღწერის ნახვა">
 <!ENTITY viewImageDescCmd.accesskey   "ა">
-<!ENTITY viewVideoCmd.label           "ვიდეოს ჩვენება">
-<!ENTITY viewVideoCmd.accesskey       "ვ">
+<!ENTITY viewVideoCmd.label           "ვიდეოს ნახვა">
+<!ENTITY viewVideoCmd.accesskey       "ნ">
 <!ENTITY viewBGImageCmd.label         "ფონური სურათის ნახვა">
 <!ENTITY viewBGImageCmd.accesskey     "ფ">
 <!ENTITY setDesktopBackgroundCmd.label      "ფონად დაყენება სამუშაო მაგიდაზე…">
@@ -561,7 +568,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisLinkCmd.accesskey  "ბ">
 <!ENTITY bookmarkThisFrameCmd.label      "ჩარჩოს ჩანიშვნა">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "ჩ">
-<!ENTITY copyURLCmd.label             "URL-ს დაკოპირება">
+<!ENTITY pageAction.copyLink.label    "ბმულის დაკოპირება">
+<!ENTITY copyURLFeedback.label        "დაკოპირდა!">
 <!ENTITY emailPageCmd.label           "ბმულის გაგზავნა ელფოსტით…">
 <!ENTITY emailPageCmd.accesskey       "ე">
 <!ENTITY savePageCmd.label            "გვერდის შენახვა როგორც…">
@@ -584,9 +592,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY emailImageCmd.label          "სურათის გაგზავნა ელფოსტით…">
 <!ENTITY emailImageCmd.accesskey      "ს">
 <!ENTITY emailVideoCmd.label          "ვიდეოს გაგზავნა ელფოსტით…">
-<!ENTITY emailVideoCmd.accesskey      "ვ">
-<!ENTITY castVideoCmd.label           "ვიდეოს გაგზავნა მოწყობილობაში">
-<!ENTITY castVideoCmd.accesskey       "წ">
+<!ENTITY emailVideoCmd.accesskey      "ე">
 <!ENTITY emailAudioCmd.label          "აუდიოს გაგზავნა ელფოსტით…">
 <!ENTITY emailAudioCmd.accesskey      "ა">
 <!ENTITY playPluginCmd.label          "ამ მოდულის ჩართვა">
@@ -598,7 +604,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY copyImageCmd.label           "სურათის მისამართის დაკოპირება">
 <!ENTITY copyImageCmd.accesskey       "კ">
 <!ENTITY copyImageContentsCmd.label   "სურათის დაკოპირება">
-<!ENTITY copyImageContentsCmd.accesskey  "ს"> 
+<!ENTITY copyImageContentsCmd.accesskey  "ს">
 <!ENTITY copyVideoURLCmd.label        "ვიდეოს მისამართის დაკოპირება">
 <!ENTITY copyVideoURLCmd.accesskey    "კ">
 <!ENTITY copyAudioURLCmd.label        "აუდიოს მისამართის დაკოპირება">
@@ -612,8 +618,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE: The access keys for "Play" and
 "Pause" are the same because the two context-menu
 items are mutually exclusive. -->
-<!ENTITY mediaPlay.label             "დაკვრა">
-<!ENTITY mediaPlay.accesskey         "დ">
+<!ENTITY mediaPlay.label             "გაშვება">
+<!ENTITY mediaPlay.accesskey         "გ">
 <!ENTITY mediaPause.label            "შეჩერება">
 <!ENTITY mediaPause.accesskey        "შ">
 <!-- LOCALIZATION NOTE: The access keys for "Mute" and
@@ -643,13 +649,13 @@ fast. -->
 <!-- LOCALIZATION NOTE: The access keys for "Show Controls" and
 "Hide Controls" are the same because the two context-menu
 items are mutually exclusive. -->
-<!ENTITY mediaShowControls.label     "სამართავის ჩვენება">
-<!ENTITY mediaShowControls.accesskey "ჩ">
-<!ENTITY mediaHideControls.label     "სამართავის დამალვა">
-<!ENTITY mediaHideControls.accesskey "დ">
+<!ENTITY mediaShowControls.label     "სამართავი ზოლის გამოჩენა">
+<!ENTITY mediaShowControls.accesskey "ღ">
+<!ENTITY mediaHideControls.label     "სამართავი ზოლის დამალვა">
+<!ENTITY mediaHideControls.accesskey "ღ">
 <!ENTITY videoFullScreen.label       "სრული ეკრანი">
 <!ENTITY videoFullScreen.accesskey   "ს">
-<!ENTITY videoSaveImage.label        "ანაბეჭდის შენახვა როგორც…">
+<!ENTITY videoSaveImage.label        "კადრის შენახვა როგორც…">
 <!ENTITY videoSaveImage.accesskey    "ა">
 <!-- LOCALIZATION NOTE: The access keys for "Show Statistics" and
 "Hide Statistics" are the same because the two context-menu
@@ -694,13 +700,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY quitApplicationCmdWin2.tooltip     "&brandShorterName;-დან გამოსვლა">
 <!ENTITY goBackCmd.commandKey "[">
 <!ENTITY goForwardCmd.commandKey "]">
-<!ENTITY quitApplicationCmd.label       "გამოსვლა"> 
+<!ENTITY quitApplicationCmd.label       "გამოსვლა">
 <!ENTITY quitApplicationCmd.accesskey   "გ">
 <!ENTITY quitApplicationCmdMac2.label   "&brandShorterName;-დან გამოსვლა">
 <!ENTITY quitApplicationCmd.key         "Q">
 
-<!ENTITY closeCmd.label                 "დახურვა">  
-<!ENTITY closeCmd.key                   "W">  
+<!ENTITY closeCmd.label                 "დახურვა">
+<!ENTITY closeCmd.key                   "W">
 <!ENTITY closeCmd.accesskey             "დ">
 
 <!ENTITY toggleMuteCmd.key              "M">
@@ -747,10 +753,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.connectionSecure "დაცული კავშირი">
 <!ENTITY identity.connectionNotSecure "კავშირი დაუცველია">
 <!ENTITY identity.connectionFile "ეს გვერდი თქვენს კომპიუტერშია შენახული.">
-<!ENTITY identity.connectionVerified2 "თქვენ საიმედოდ ხართ დაკავშირებული საიტთან, რომელის მფლობელიცაა:">
-<!ENTITY identity.connectionInternal "ეს &brandShortName;-ს დაცული გვერდია.">
+<!ENTITY identity.connectionVerified2 "თქვენ საიმედოდ ხართ დაკავშირებული საიტთან, რომლის მფლობელიცაა:">
+<!ENTITY identity.connectionInternal "ეს &brandShortName;-ის უსაფრთხო გვერდია.">
 <!ENTITY identity.extensionPage "ეს გვერდი გახსნილია გაფართოების მიერ.">
-<!ENTITY identity.insecureLoginForms2 "ამ გვერდზე შეყვანილი შესვლის მონაცემები შესაძლოა მოიპარონ.">
+<!ENTITY identity.insecureLoginForms2 "ამ გვერდზე შეყვანილი ანგარიშის მონაცემები შესაძლოა მოიპარონ.">
 
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "&brandShortName;-მა გვერდის დაუცველი ნაწილები შეზღუდა.">
@@ -760,7 +766,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!-- Strings for connection state warnings in the subview. -->
 <!ENTITY identity.description.insecure "კავშირი ამ საიტთან დაცული არ არის. თქვენ მიერ გადაგზავნილი ინფორმაცია შესაძლოა სხვებმაც ნახონ (მაგალითად პაროლები, შეტყობინებები, საკრედიტო ბარათები, ა.შ.).">
-<!ENTITY identity.description.insecureLoginForms "ამ გვერდზე შეყვანილი შესვლის მონაცემები დაუცველია და შესაძლოა მოიპარონ.">
+<!ENTITY identity.description.insecureLoginForms "ამ გვერდზე შეყვანილი ანგარიშის მონაცემები დაუცველია და შესაძლოა მოიპარონ.">
 <!ENTITY identity.description.weakCipher "ამ ვებსაიტთან კავშირი სუსტ დაშიფვრას იყენებს და დაუცველია.">
 <!ENTITY identity.description.weakCipher2 "სხვებსაც შეუძლიათ თქვენი ინფორმაციის ნახვა ან ვებსაიტის ქცევის შეცვლა.">
 <!ENTITY identity.description.activeBlocked "&brandShortName;-მა გვერდის დაუცველი ნაწილები შეზღუდა.">
@@ -781,7 +787,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.moreInfoLinkText2 "მეტი ინფორმაცია">
 
-<!ENTITY identity.permissions "უფლებები">
+<!ENTITY identity.permissions "ნებართვები">
 <!ENTITY identity.permissionsEmpty "ამ საიტისთვის განსაკუთრებული უფლებები არ მიგიციათ.">
 <!ENTITY identity.permissionsReloadHint "ცვლილებების ასამოქმედებლად შესაძლოა გვერდის ხელახლა ჩატვირთვა დაგჭირდეთ.">
 
@@ -802,6 +808,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "ჩართეთ ჩანართების სინქრონიზაცია თქვენი სხვა მოწყობილობებიდან ჩანართების სიის სანახავად.">
+<!ENTITY syncedTabs.sidebar.searchPlaceholder  "დასინქრონებული ჩანართების მოძიება">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
                         syncedTabs.context.openAllInTabs.accesskey):
@@ -836,29 +843,24 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncReAuthItem.accesskey     "ხ">
 <!ENTITY syncToolbarButton.label      "სინქრონიზაცია">
 
-<!ENTITY social.addons.label "მომსახურებების მართვა…">
-
-<!ENTITY social.directory.label "აქტივაციების დირექტორია">
-<!ENTITY social.directory.text "გაზიარების მომსახურებების გააქტიურება დირექტორიიდან შეგიძლიათ.">
-<!ENTITY social.directory.button "იქ გადამიყვანეთ!">
-<!ENTITY social.directory.introText "დააწკაპეთ მომსახურებს &brandShortName;-ს დასამატებლად.">
-<!ENTITY social.directory.viewmore.text "მეტის ნახვა">
-
-<!ENTITY customizeMode.menuAndToolbars.header2 "დამატებითი ხელსაწყოები და ფუნქციები">
+<!ENTITY customizeMode.menuAndToolbars.header3 "გადმოიტანეთ რჩეული ელემენტები ხელსაწყოთა ზოლში ან ჩამოსაშლელ მენიუში.">
 <!ENTITY customizeMode.menuAndToolbars.empty "მეტი ხელსაწყო გსურთ?">
-<!ENTITY customizeMode.menuAndToolbars.emptyLink "აირჩიეთ სასურველი ათასობით დამატებიდან">
-<!ENTITY customizeMode.restoreDefaults "ნაგულისხმევების აღდგენა">
+<!ENTITY customizeMode.menuAndToolbars.emptyLink "აირჩიეთ სასურველი, ათასობით დამატებიდან">
+<!ENTITY customizeMode.restoreDefaults "ნაგულისხმევის აღდგენა">
 <!ENTITY customizeMode.done "მზადაა">
 <!ENTITY customizeMode.titlebar "სათაურის ზოლი">
+<!ENTITY customizeMode.extraDragSpace "დამატებითი სივრცე ფანჯრის გადასაადგილებლად">
 <!ENTITY customizeMode.toolbars2 "ხელსაწყოთა ზოლები">
 <!ENTITY customizeMode.lwthemes "თემები">
-<!ENTITY customizeMode.lwthemes.myThemes "ჩემი დეკორაციები">
-<!ENTITY customizeMode.lwthemes.recommended "რეკომენდებული">
+<!ENTITY customizeMode.lwthemes.myThemes "ჩემი თემები">
+<!ENTITY customizeMode.lwthemes.recommended "სასურველია">
 <!ENTITY customizeMode.lwthemes.menuManage "მართვა">
 <!ENTITY customizeMode.lwthemes.menuManage.accessKey "მ">
-<!ENTITY customizeMode.lwthemes.menuGetMore "მეტი გაფორმებები">
+<!ENTITY customizeMode.lwthemes.menuGetMore "მეტი გაფორმების მოძიება">
 <!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "ფ">
-<!ENTITY customizeMode.emptyOverflowList.description "გადმოიტანეთ და მოათავსეთ ხელსაწყოები აქ, მეტი ხელმისაწვდომობისთვის, ხელსაწყოთა ზოლის გარეთ…">
+<!ENTITY customizeMode.emptyOverflowList.description "გადმოიტანეთ და მოათავსეთ ელემენტები აქ, ხელსაწყოთა ზოლის გარეთ, თუმცა მასთან ახლოს…">
+<!ENTITY customizeMode.overflowList.title2 "ჩამოსაშლელი მენიუ">
+<!ENTITY customizeMode.overflowList.description "გადმოიტანეთ და მოათავსეთ ელემენტები აქ, ხელსაწყოთა ზოლის გარეთ, თუმცა მასთან ახლოს…">
 <!ENTITY customizeMode.uidensity "სიმჭიდროვე">
 <!-- LOCALIZATION NOTE (customizeMode.uidensity.menuNormal.*):
      “Normal” is displayed in the Customize screen, under the Density menu. -->
@@ -880,6 +882,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.uidensity.menuTouch.accessKey "შ">
 <!ENTITY customizeMode.uidensity.autoTouchMode.checkbox.label "შეხებაზე რეაგირება პლანშეტის რეჟიმისას">
 
+<!ENTITY customizeMode.autoHideDownloadsButton.label "თვითდამალვა">
+
 <!ENTITY getUserMedia.selectCamera.label "გასაზიარებელი კამერა:">
 <!ENTITY getUserMedia.selectCamera.accesskey "კ">
 <!ENTITY getUserMedia.selectMicrophone.label "გასაზიარებელი მიკროფონი:">
@@ -887,9 +891,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.audioCapture.label "ჩანართიდან აუდიო გაზიარდება.">
 <!ENTITY getUserMedia.allWindowsShared.message "ეკრანზე ნაჩვენები ყველა ფანჯარა გაზიარდება.">
 
-<!ENTITY trackingProtection.title "თვალყურისგან დაცვა">
+<!ENTITY trackingProtection.title "თვალთვალისგან დაცვა">
 <!ENTITY trackingProtection.detectedBlocked3 "&brandShortName; ზღუდავს საიტის იმ ნაწილებს, რომლებსაც თქვენს მოქმედებებზე თვალყურის დევნება შეუძლია.">
-<!ENTITY trackingProtection.detectedNotBlocked3 "საიტი შეიცავს ნაწილებს, რომელის შესაძლოა თქვენს მოქმედებებს აღრიცხავდეს. თქვენ გამორთული გაქვთ დაცვა.">
+<!ENTITY trackingProtection.detectedNotBlocked3 "საიტი შეიცავს ნაწილებს, რომელიც შესაძლოა თქვენს მოქმედებებს აღრიცხავდეს. დაცვა ამჟამად, გამორთული გაქვთ.">
 <!ENTITY trackingProtection.notDetected3 "ამ გვერდზე მოთვალთვალე ელემენტები არ აღმოჩენილა.">
 <!-- LOCALIZATION NOTE (trackingProtection.unblock.label, trackingProtection.unblock.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
@@ -903,16 +907,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY trackingProtection.unblockPrivate.accesskey "გ">
 <!ENTITY trackingProtection.block2.label "დაცვის ჩართვა">
 <!ENTITY trackingProtection.block2.accesskey "რ">
-
-<!ENTITY trackingContentBlocked.message "თვალყური">
-<!ENTITY trackingContentBlocked.moreinfo "გვერდის ნაწილები, რომელიც შესაძლოა თქვენს მოქმედებებს აღრიცხავდეს, შეიზღუდა.">
-<!ENTITY trackingContentBlocked.learnMore "გაიგეთ მეტი">
-<!ENTITY trackingContentBlocked.options "პარამეტრები">
-<!ENTITY trackingContentBlocked.unblock2.label "ამ საიტზე დაცვის გამორთვა">
-<!ENTITY trackingContentBlocked.unblock2.accesskey "გ">
-<!ENTITY trackingContentBlocked.block.label "დაცვის ჩართვა">
-<!ENTITY trackingContentBlocked.block.accesskey "რ">
-<!ENTITY trackingContentBlocked.disabled.message "თვალყურისგან დაცვა გამორთულია">
 
 <!ENTITY pluginNotification.showAll.label "ყველას ჩვენება">
 <!ENTITY pluginNotification.showAll.accesskey "ყ">
@@ -930,8 +924,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pluginNotification.width "28em">
 
 <!ENTITY uiTour.infoPanel.close "დახურვა">
-
-<!ENTITY appMenuSidebars.label         "გვერდითი პანელები">
 
 <!-- LOCALIZATION NOTE: (panicButton.view.mainTimeframeDesc, panicButton.view.5min, panicButton.view.2hr, panicButton.view.day):
      The .mainTimeframeDesc string combined with any of the 3 others is meant to form a complete sentence, e.g. "Forget the last: Five minutes".
@@ -979,7 +971,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateManual.cancelButton.accesskey "ა">
 <!ENTITY updateManual.panelUI.label "&brandShorterName; -ის ახალი ვერსიის ჩამოტვირთვა">
 
-<!ENTITY updateRestart.message "ხელმეორედ სწრაფად გაშვების შემდეგ, &brandShorterName; ყველა თქვენს მიერ გახსნილ ჩანართს და ფანჯარას აღადგენს.">
+<!ENTITY updateRestart.message2 "ხელახლა გაშვების შემდეგ, &brandShorterName; აღადგენს თქვენს ყველა გახსნილ ჩანართსა და ფანჯარას, პირადი ჩანართებისა და ფანჯრების გარდა.">
 <!ENTITY updateRestart.header.message2 "&brandShorterName;-ის გასაახლებლად, გაუშვით ხელახლა.">
 <!ENTITY updateRestart.acceptButton.label "ხელახლა გაშვება და აღდგენა">
 <!ENTITY updateRestart.acceptButton.accesskey "ხ">
@@ -991,5 +983,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageAction.addToUrlbar.label "მისამართების ზოლში დამატება">
 <!ENTITY pageAction.removeFromUrlbar.label "მისამართების ზოლიდან ამოღება">
 
-<!ENTITY sendToDevice.label2 "მოწყობილობაზე გაგზავნა">
+<!ENTITY pageAction.sendTabToDevice.label "ჩანართის გაგზავნა მოწყობილობაზე">
 <!ENTITY sendToDevice.syncNotReady.label "მოწყობილობების დასინქრონება…">
+
+<!ENTITY libraryButton.tooltip "იხილეთ ისტორია, შენახული სანიშნეები და ა.შ.">
+
+<!-- LOCALIZATION NOTE: (accessibilityIndicator.tooltip): This is used to
+     display a tooltip for accessibility indicator in toolbar/tabbar. It is also
+     used as a textual label for the indicator used by assistive technology
+     users. -->
+<!ENTITY accessibilityIndicator.tooltip "დამხმარე საშუალებები ჩართულია">

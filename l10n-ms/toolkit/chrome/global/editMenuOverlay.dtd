@@ -7,9 +7,9 @@
 <!ENTITY undoCmd.label             "Batal">
 <!ENTITY undoCmd.key               "Z">
 <!ENTITY undoCmd.accesskey         "B">
-<!ENTITY redoCmd.label             "Buat semula">
+<!ENTITY redoCmd.label             "Ulang">
 <!ENTITY redoCmd.key               "Y">
-<!ENTITY redoCmd.accesskey         "b">
+<!ENTITY redoCmd.accesskey         "l">
 <!ENTITY cutCmd.label              "Potong">
 <!ENTITY cutCmd.key                "X">
 <!ENTITY cutCmd.accesskey          "t">
@@ -31,5 +31,5 @@
 <!ENTITY findAgainCmd.key          "G">
 <!ENTITY findAgainCmd.key2         "VK_F3">
 <!ENTITY findAgainCmd.accesskey    "g">
-<!ENTITY findPreviousCmd.label     "Cari Terdahulu">
+<!ENTITY findPreviousCmd.label     "Cari Dahulu">
 <!ENTITY findPreviousCmd.accesskey "a">

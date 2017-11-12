@@ -4,25 +4,25 @@
 
 <!ENTITY  fontsDialog.title                       "ಅಕ್ಷರ ಶೈಲಿಗಳು">
 
-<!ENTITY  language.label                          "ಇದಕ್ಕಾಗಿನ ಅಕ್ಷರಶೈಲಿಗಳು:">
-<!ENTITY  language.accesskey                      "F">
+<!ENTITY  fonts.label                             "ಇದಕ್ಕಾಗಿನ ಅಕ್ಷರಶೈಲಿಗಳು">
+<!ENTITY  fonts.accesskey                         "F">
 
-<!ENTITY  size.label                              "ಗಾತ್ರ:">
+<!ENTITY  size2.label                             "ಗಾತ್ರ">
 <!ENTITY  sizeProportional.accesskey              "z">
 <!ENTITY  sizeMonospace.accesskey                 "e">
 
-<!ENTITY  proportional.label                      "ಸರಿಯಾದ ಪ್ರಮಾಣದೊಂದಿಗೆ:">
-<!ENTITY  proportional.accesskey                  "P">
+<!ENTITY  proportional2.label                     "ಸಮಪ್ರಮಾಣದ">
+<!ENTITY  proportional2.accesskey                 "P">
 
-<!ENTITY  serif.label                             "ಸೆರಿಫ್:">
-<!ENTITY  serif.accesskey                         "S">
-<!ENTITY  sans-serif.label                        "ಸಾನ್ಸ್‍-ಸೆರಿಫ್:">
-<!ENTITY  sans-serif.accesskey                    "n">
-<!ENTITY  monospace.label                         "ಮೋನೊಸ್ಪೇಸ್‍:">
-<!ENTITY  monospace.accesskey                     "M">
+<!ENTITY  serif2.label                            "ಸೆರಿಫ್">
+<!ENTITY  serif2.accesskey                        "S">
+<!ENTITY  sans-serif2.label                       "ಸಾನ್ಸ್‍-ಸೆರಿಫ್">
+<!ENTITY  sans-serif2.accesskey                   "n">
+<!ENTITY  monospace2.label                        "ಮೊನೊಸ್ಪೇಸ್">
+<!ENTITY  monospace2.accesskey                    "M">
+
 <!-- LOCALIZATION NOTE (font.langGroup.latin) :
      Translate "Latin" as the name of Latin (Roman) script, not as the name of the Latin language. -->
-
 <!ENTITY  font.langGroup.latin                    "ಲ್ಯಾಟಿನ್">
 <!ENTITY  font.langGroup.japanese                 "ಜಾಪನೀಸ್‍">
 <!ENTITY  font.langGroup.trad-chinese             "ಸಾಂಪ್ರದಾಯಿಕ ಚೈನೀಸ್ (ತೈವಾನ್‍)">
@@ -53,19 +53,19 @@
 <!ENTITY  font.langGroup.sinhala                  "ಸಿಂಹಳ">
 <!ENTITY  font.langGroup.tibetan                  "ಟಿಬೆಟಿಯನ್">
 <!-- Minimum font size -->
-<!ENTITY minSize.label                            "ಅಕ್ಷರದ ಕನಿಷ್ಠ  ಗಾತ್ರ:">
-<!ENTITY minSize.accesskey                        "o">
+<!ENTITY minSize2.label                           "ಅಕ್ಷರದ ಕನಿಷ್ಠ ಗಾತ್ರ">
+<!ENTITY minSize2.accesskey                       "o">
 <!ENTITY minSize.none                             "ಯಾವುದೂ ಇಲ್ಲ">
-<!-- default font type -->
 
+<!-- default font type -->
 <!ENTITY  useDefaultFontSerif.label               "ಸೆರಿಫ್">
 <!ENTITY  useDefaultFontSansSerif.label           "ಸಾನ್ಸ್‍ ಸೆರಿಫ್">
 
-
+<!ENTITY  allowPagesToUseOwn.accesskey            "A">
 
 <!ENTITY languages.customize.Fallback2.grouplabel "ಸಾಂಪ್ರದಾಯಿಕ ವಿಷಯಕ್ಕಾಗಿ ಟೆಕ್ಸ್ಟ್ ಎನ್ಕೋಡಿಂಗ್">
-<!ENTITY languages.customize.Fallback2.label      "ಹಿಮ್ಮರಳುವ Text ಎನ್ಕೋಡಿಂಗ್‌:">
-<!ENTITY languages.customize.Fallback2.accesskey  "T">
+<!ENTITY languages.customize.Fallback3.label      "ಹಿಮ್ಮರಳುವ Text ಎನ್ಕೋಡಿಂಗ್‌">
+<!ENTITY languages.customize.Fallback3.accesskey  "T">
 <!ENTITY languages.customize.Fallback2.desc       "ತಮ್ಮಲ್ಲಿರುವ ಎನ್ಕೋಡಿಂಗ್‌ಗಳನ್ನು ಘೋಷಿಸದೆ ಇರುವ ಸಾಂಪ್ರದಾಯಿಕ ವಿಷಯಕ್ಕಾಗಿ ಈ ಕ್ಯಾರೆಕ್ಟರ್ ಎನ್ಕೋಡಿಂಗ್ ಅನ್ನು ಬಳಸಲಾಗುತ್ತದೆ.">
 
 <!ENTITY languages.customize.Fallback.auto        "ಪ್ರಸಕ್ತ ಲೊಕ್ಯಾಲ್‌ಗಾಗಿ ಪೂರ್ವನಿಯೋಜಿತ">

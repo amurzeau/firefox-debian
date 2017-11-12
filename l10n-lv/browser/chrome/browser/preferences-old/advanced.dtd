@@ -28,11 +28,6 @@
 
 <!ENTITY dataChoicesTab.label            "Datu izvēle">
 
-<!-- LOCALIZATION NOTE (healthReportingDisabled.label): This message is displayed above
-disabled data sharing options in developer builds or builds with no Telemetry support
-available. -->
-<!ENTITY healthReportingDisabled.label   "Datu ziņošana ir atspējota šajā būvējuma konfigurācija">
-
 <!ENTITY healthReportDesc.label          "Palīdz izprast jūsu pārlūka veiktspēju un sūta šos datus par pārlūka stāvokli &vendorShortName;">
 <!ENTITY enableHealthReport.label        "Aktivēt &brandShortName; stāvokļa ziņojumu">
 <!ENTITY enableHealthReport.accesskey    "v">
@@ -129,22 +124,5 @@ available. -->
 <!ENTITY viewSecurityDevices.label       "Drošības ierīces">
 <!ENTITY viewSecurityDevices.accesskey   "D">
 
-<!ENTITY performance.label               "Veiktspēja">
-<!ENTITY useRecommendedPerformanceSettings.label
-                                         "Izmantot ieteiktos veiktspējas iestatījumus">
-<!ENTITY useRecommendedPerformanceSettings.description
-                                         "Šie iestatījumi ir pielāgoti jūsu datora aparatūrai un operētājsistēmai.">
-<!ENTITY useRecommendedPerformanceSettings.accesskey
-                                         "U">
-<!ENTITY performanceSettingsLearnMore.label
-                                         "Uzzināt vairāk">
-<!ENTITY limitContentProcessOption.label "Satura procesu limits">
-<!ENTITY limitContentProcessOption.description
-                                         "Papildu satura procesi var palielināt veiktspēju izmantojot vairākas cilnes, bet prasīs arī papildu atmiņu.">
-<!ENTITY limitContentProcessOption.accesskey   "L">
-<!ENTITY limitContentProcessOption.disabledDescription
-                                         "Modificēt satura procesu skaitu ir iespējama tikai ar vairāku procesu &brandShortName;.">
-<!ENTITY limitContentProcessOption.disabledDescriptionLink
-                                         "Kā pārbaudīt, vai pieejams vairāku procesu režīms">
 <!ENTITY allowHWAccel.label              "Ja pieejams, izmantot aparatūras paātrinājumu">
 <!ENTITY allowHWAccel.accesskey          "j">

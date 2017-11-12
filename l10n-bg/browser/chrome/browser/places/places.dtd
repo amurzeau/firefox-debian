@@ -41,7 +41,7 @@
 <!ENTITY cmd.restoreFromFile.label      "Избиране на файл…">
 <!ENTITY cmd.restoreFromFile.accesskey  "И">
 
-<!ENTITY cmd.deleteDomainData.label     "Забравяне за този сайт">
+<!ENTITY cmd.deleteDomainData.label     "Забравяне на страницата">
 <!ENTITY cmd.deleteDomainData.accesskey "З">
 
 <!ENTITY cmd.open.label                  "Отваряне">
@@ -76,7 +76,7 @@
 <!ENTITY cmd.moveBookmarks.label                  "Преместване…">
 <!ENTITY cmd.moveBookmarks.accesskey              "П">
 
-<!ENTITY col.name.label          "Име">
+<!ENTITY col.name.label          "Наименование">
 <!ENTITY col.tags.label          "Етикети">
 <!ENTITY col.url.label           "Местоположение">
 <!ENTITY col.mostrecentvisit.label "Последно посещение">
@@ -85,7 +85,8 @@
 <!ENTITY col.dateadded.label     "Добавена на">
 <!ENTITY col.lastmodified.label  "Последна промяна">
 
-<!ENTITY search.placeholder  "Търсене">
+<!ENTITY historySearch.placeholder  "Търсене в историята">
+<!ENTITY bookmarksSearch.placeholder  "Търсене в отметките">
 
 <!ENTITY cmd.find.key  "f">
 

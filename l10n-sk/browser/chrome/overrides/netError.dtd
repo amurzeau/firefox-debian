@@ -18,14 +18,15 @@
 <!ENTITY deniedPortAccess.title "Táto adresa je zakázaná">
 <!ENTITY deniedPortAccess.longDesc "">
 
-<!ENTITY dnsNotFound.title "Server sa nenašiel">
-<!ENTITY dnsNotFound.longDesc "
+<!ENTITY dnsNotFound.pageTitle "Server sa nenašiel">
+<!-- Localization note (dnsNotFound.title1) - "Hmm" is a sound made when considering or puzzling over something. You don't have to include it in your translation if your language does not have a written word like this. -->
+<!ENTITY dnsNotFound.title1 "Hmm, túto stránku sa nám nepodarilo nájsť.">
+<!ENTITY dnsNotFound.longDesc1 "
+<strong>Ak je táto adresa správna, môžete skúsiť nasledujúce:</strong>
 <ul>
-  <li>Skontrolujte, či ste nezadali napr.
-    <strong>ww</strong>.example.com namiesto
-    <strong>www</strong>.example.com</li>
-  <li>Ak sa nedá načítať žiadna stránka, skontrolujte pripojenie počítača k sieti.</li>
-  <li>Ak sú počítač alebo sieť chránené bránou firewall alebo serverom proxy, uistite sa, že &brandShortName; má povolený prístup k webu.</li>
+  <li>Skúsiť to znova neskôr.</li>
+  <li>Skontrolovať svoje pripojenie k sieti.</li>
+  <li>Ak ste pripojení pomocou firewallu, skontrolujte, či má &brandShortName; povolený prístup na web.</li>
 </ul>
 ">
 
@@ -56,14 +57,9 @@
 
 <!ENTITY openPortalLoginPage.label2 "Otvoriť prihlasovaciu stránku k sieti">
 
-<!ENTITY malformedURI.title "Adresa nie je platná">
-<!ENTITY malformedURI.longDesc "
-<ul>
-  <li>Webové adresy sú zvyčajne zadávané v tvare
-    <strong>http://www.example.com/</strong></li>
-  <li>Skontrolujte, či používate správne lomky (t.j. <strong>/</strong>). </li>
-</ul>
-">
+<!ENTITY malformedURI.pageTitle "Neplatná URL adresa">
+<!-- Localization note (malformedURI.title1) - "Hmm" is a sound made when considering or puzzling over something. You don't have to include it in your translation if your language does not have a written word like this. -->
+<!ENTITY malformedURI.title1 "Hmm, táto adresa nevyzerá v poriadku.">
 
 <!ENTITY netInterrupt.title "Pripojenie bolo prerušené">
 <!ENTITY netInterrupt.longDesc "&sharedLongDesc;">
@@ -149,13 +145,13 @@
 <!-- Localization note (certerror.introPara) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
-<!ENTITY certerror.introPara "Vlastník servera <span class='hostname'/> nakonfiguroval svoju stránku nesprávne. Kvôli ochrane vašich údajov pred odcudzením &brandShortName; blokuje pripojenie k tejto webovej stránke.">
+<!ENTITY certerror.introPara "Vlastník stránky <span class='hostname'/> nakonfiguroval svoju stránku nesprávne.  Kvôli ochrane vašich údajov pred odcudzením blokuje &brandShortName; pripojenie k tejto webovej stránke.">
 
 <!ENTITY sharedLongDesc "
 <ul>
-  <li>Server môže byť dočasne nedostupný alebo zaneprázdnený. Svoj pokus opakujte neskôr.</li>
+  <li>Stránka môže byť dočasne nedostupná alebo zaneprázdnená. Svoj pokus opakujte neskôr.</li>
   <li>Ak sa nedá načítať žiadna stránka, skontrolujte pripojenie počítača k sieti.</li>
-  <li>Ak sú počítač alebo sieť chránené bránou firewall alebo serverom proxy, uistite sa, či má &brandShortName; povolený prístup k webu.</li>
+  <li>Ak sú počítač alebo sieť chránené firewallom alebo serverom proxy, uistite sa, či má &brandShortName; povolený prístup k webu.</li>
 </ul>
 ">
 
@@ -163,7 +159,7 @@ was trying to connect. -->
 <!ENTITY cspBlocked.longDesc "<p>Prehliadač &brandShortName; nepovolil načítanie stránky týmto spôsobom, pretože stránka obsahuje zásady ochrany obsahu, ktoré takéto načítanie neumožňujú.</p>">
 
 <!ENTITY corruptedContentErrorv2.title "Poškodený obsah stránky">
-<!ENTITY corruptedContentErrorv2.longDesc "<p>Požadovanú stránku nemožno zobraziť, pretože pri prenose údajov došlo k chybe.</p><ul><li>Kontaktujte prosím vlastníkov webového servera a informujte ich o tomto probléme.</li></ul>">
+<!ENTITY corruptedContentErrorv2.longDesc "<p>Požadovanú stránku nemožno zobraziť, pretože pri prenose údajov došlo k chybe.</p><ul><li>Kontaktujte prosím vlastníkov webovej stránky a informujte ich o tomto probléme.</li></ul>">
 
 
 <!ENTITY securityOverride.exceptionButtonLabel "Pridať výnimku…">

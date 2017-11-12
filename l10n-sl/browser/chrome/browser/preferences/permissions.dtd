@@ -11,8 +11,8 @@
 <!ENTITY removepermission2.accesskey  "O">
 <!ENTITY removeallpermissions2.label  "Odstrani vse spletne strani">
 <!ENTITY removeallpermissions2.accesskey "v">
-<!ENTITY address.label                "Naslov strani:">
-<!ENTITY address.accesskey            "N">
+<!ENTITY address2.label               "Naslov spletne strani">
+<!ENTITY address2.accesskey           "N">
 <!ENTITY block.label                  "Prepovej">
 <!ENTITY block.accesskey              "P">
 <!ENTITY session.label                "Dovoli v tej seji">
@@ -26,3 +26,4 @@
 <!ENTITY button.ok.label              "Shrani spremembe">
 <!ENTITY button.ok.accesskey          "S">
 
+<!ENTITY searchbox.placeholder        "Išči po spletni strani">

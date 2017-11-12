@@ -22,7 +22,7 @@
      -->
 <!ENTITY moveToNewWindow.label "Преместване в нов прозорец">
 <!ENTITY moveToNewWindow.accesskey "п">
-<!ENTITY newVirtualFolderCmd.label "Записани търсения…">
+<!ENTITY newVirtualFolderCmd.label "Запазени търсения…">
 <!ENTITY newVirtualFolderCmd.accesskey "З">
 <!ENTITY newOtherAccountsCmd.label "Други регистрации…">
 <!ENTITY newOtherAccountsCmd.accesskey "Д">
@@ -36,9 +36,9 @@
 <!ENTITY newFeedAccountCmd.accesskey "е">
 <!ENTITY newIMContactCmd.label "Контакт за разговор…">
 <!ENTITY newIMContactCmd.accesskey "К">
-<!ENTITY openMessageFileCmd.label "Отваряне на записано писмо…">
+<!ENTITY openMessageFileCmd.label "Отваряне на запазено писмо…">
 <!ENTITY openMessageFileCmd.accesskey "О">
-<!ENTITY saveAsMenu.label "Запис като">
+<!ENTITY saveAsMenu.label "Запазване като">
 <!ENTITY saveAsMenu.accesskey "а">
 <!ENTITY saveAsFileCmd.label "Файл">
 <!ENTITY saveAsFileCmd.accesskey "Ф">
@@ -111,9 +111,9 @@
 <!ENTITY menuFavoriteFolder.label "Любима папка">
 <!ENTITY menuFavoriteFolder.accesskey "ю">
 <!ENTITY folderPropsCmd2.label "Свойства">
-<!ENTITY folderPropsFolderCmd2.label "Свойства за папка">
+<!ENTITY folderPropsFolderCmd2.label "Свойства на папка">
 <!ENTITY folderPropsNewsgroupCmd2.label "Свойства за дискусионна група">
-<!ENTITY folderPropsCmd.accesskey "o">
+<!ENTITY folderPropsCmd.accesskey "о">
 <!ENTITY undoDeleteMsgCmd.label "Отмяна Изтриване на писмо">
 <!ENTITY redoDeleteMsgCmd.label "Повторение Изтриване на писмо">
 <!ENTITY undoMoveMsgCmd.label "Отмяна Преместване на писмо">
@@ -227,10 +227,10 @@
 <!ENTITY unreadMsgsCmd.accesskey "Н">
 <!ENTITY threadsWithUnreadCmd.label "Дискусии с непрочетени писма">
 <!ENTITY threadsWithUnreadCmd.accesskey "Д">
-<!ENTITY watchedThreadsWithUnreadCmd.label "Наблюдавана дискусия с непрочетени">
+<!ENTITY watchedThreadsWithUnreadCmd.label "Наблюдавани дискусии с непрочетени">
 <!ENTITY watchedThreadsWithUnreadCmd.accesskey "б">
-<!ENTITY ignoredThreadsCmd.label "Игнорирани дискусии">
-<!ENTITY ignoredThreadsCmd.accesskey "И">
+<!ENTITY ignoredThreadsCmd.label "Пренебрегнати дискусии">
+<!ENTITY ignoredThreadsCmd.accesskey "д">
 
 <!ENTITY headersMenu.label "Заглавки">
 <!ENTITY headersMenu.accesskey "З">
@@ -366,6 +366,8 @@
 <!ENTITY editAsNewMsgCmd.key "e">
 <!ENTITY editDraftMsgCmd.label "Редактиране на чернова на съобщение">
 <!ENTITY editDraftMsgCmd.accesskey "ч">
+<!ENTITY newMsgFromTemplateCmd.label "Съобщение от шаблон">
+<!ENTITY newMsgFromTemplateCmd.keycode "VK_RETURN"><!-- do not change "VK_RETURN" -->
 <!ENTITY createFilter.label "Създаване на филтър от писмо…">
 <!ENTITY createFilter.accesskey "з">
 <!ENTITY moveMsgToMenu.label "Преместване в">
@@ -382,7 +384,7 @@
 <!ENTITY killThreadMenu.label "Пренебрегване на дискусия">
 <!ENTITY killThreadMenu.accesskey "П">
 <!ENTITY killThreadMenu.key "k">
-<!ENTITY killSubthreadMenu.label "Игнориране на поддискусия">
+<!ENTITY killSubthreadMenu.label "Пренебрегване на поддискусия">
 <!ENTITY killSubthreadMenu.accesskey "о">
 <!ENTITY killSubthreadMenu.key "k">
 <!ENTITY watchThreadMenu.label "Наблюдаване на дискусия">
@@ -467,7 +469,7 @@
 <!ENTITY imStatus.showAccounts       "Показване на сметките…">
 <!ENTITY joinChatCmd.label "Присъединяване към разговор…">
 <!ENTITY joinChatCmd.accesskey "П">
-<!ENTITY savedFiles.label "Записани файлове">
+<!ENTITY savedFiles.label "Запазени файлове">
 <!ENTITY savedFiles.accesskey "й">
 <!ENTITY savedFiles.key "j">
 <!ENTITY filtersCmd2.label "Филтриране на писма">
@@ -569,7 +571,7 @@
 <!ENTITY forwardButton.tooltip "Препращане на избраното писмо">
 <!ENTITY forwardAsInline.tooltip "Препращане на избраното съобщение като вложен текст">
 <!ENTITY forwardAsAttachment.tooltip "Препращане на избраното съобщение като притурка">
-<!ENTITY fileButton.tooltip "Записване като файл">
+<!ENTITY fileButton.tooltip "Запазване като файл">
 <!ENTITY archiveButton.tooltip "Архивиране на избраните съобщения">
 <!ENTITY openConversationButton.tooltip "Показване на разговора на избраното съобщение">
 <!ENTITY nextButton.tooltip "Напред към следващото непрочетено писмо">
@@ -637,7 +639,7 @@
 <!ENTITY folderContextPauseAllUpdates.label "Спиране на всякакво обновяване">
 <!ENTITY folderContextPauseUpdates.label "Спиране на обновяване">
 <!ENTITY folderContextPauseUpdates.accesskey "о">
-<!ENTITY folderContextOpenInNewWindow.label "Отваряне в нов прозорец">
+<!ENTITY folderContextOpenInNewWindow.label "Отваряне в прозорец">
 <!ENTITY folderContextOpenInNewWindow.accesskey "О">
 <!ENTITY folderContextOpenNewTab.label "Отваряне в раздел">
 <!ENTITY folderContextOpenNewTab.accesskey "р">
@@ -686,7 +688,7 @@
 <!ENTITY searchRecipient.label "До или Копие">
 <!ENTITY searchSubjectOrRecipientMenu.label "Тема, До или Копие">
 <!ENTITY searchMessageBody.label "Цялото писмо">
-<!ENTITY saveAsVirtualFolderMenu.label "Запис на търсенето като папка…">
+<!ENTITY saveAsVirtualFolderMenu.label "Запазване на търсенето като папка…">
 
 <!-- Thread Pane -->
 <!ENTITY threadColumn.label "Дискусия">
@@ -734,12 +736,13 @@
 <!ENTITY attachmentColumn2.tooltip "Сортиране по притурки">
 
 <!-- Thread Pane Context Menu -->
+<!ENTITY contextNewMsgFromTemplate.label "Съобщение от шаблон">
 <!ENTITY contextOpenNewWindow.label "Отваряне на писмото в нов прозорец">
 <!ENTITY contextOpenNewWindow.accesskey "о">
-<!-- The key potentially conflicts with cutCmd.accessKey which is defined in
-     textcontext.dtd from toolkit. Right now, both menu items can't be visible
-     at the same time, but should someone enable copy/paste of message, this key
-     would probably need to be changed. -->
+<!-- The contextOpenNewTab.accesskey ("T") potentially conflicts with
+     cutCmd.accessKey which is defined in textcontext.dtd from toolkit. Right
+     now, both menu items can't be visible at the same time, but should someone
+     enable copy/paste of message, this key would probably need to be changed. -->
 <!ENTITY contextOpenNewTab.label "Отваряне на писмото раздел">
 <!ENTITY contextOpenNewTab.accesskey "р">
 <!ENTITY contextOpenConversation.label "Отваряне на писмото в диалога">
@@ -775,17 +778,17 @@
 <!ENTITY contextMoveCopyMsgRecentMenu.accesskey "П">
 <!ENTITY contextCopyMsgMenu.label "Копиране в">
 <!ENTITY contextCopyMsgMenu.accesskey "и">
-<!ENTITY contextKillThreadMenu.label "Пренебрегване на дискусия">
-<!ENTITY contextKillSubthreadMenu.accesskey "г">
+<!ENTITY contextKillThreadMenu.label "Пренебрегване на дискусията">
+<!ENTITY contextKillSubthreadMenu.accesskey "о">
 <!ENTITY contextKillThreadMenu.accesskey "П">
-<!ENTITY contextKillSubthreadMenu.label "Игнориране на поддискусия">
+<!ENTITY contextKillSubthreadMenu.label "Пренебрегване на поддискусия">
 <!ENTITY contextWatchThreadMenu.label "Наблюдаване на дискусия">
 <!-- LOCALIZATION NOTE (contextWatchThreadMenu.accesskey):
      In the en-US locale we ran out of access keys, so there is an empty access key for
      Watch Thread. Localizers can pick a suitable key
   -->
 <!ENTITY contextWatchThreadMenu.accesskey "">
-<!ENTITY contextSaveAs.label "Запис като…">
+<!ENTITY contextSaveAs.label "Запазване като…">
 <!ENTITY contextSaveAs.accesskey "а">
 <!ENTITY contextPrint.label "Печат…">
 <!ENTITY contextPrint.accesskey "П">
@@ -909,7 +912,7 @@
 <!ENTITY spellAddDictionaries.accesskey "Д">
 
 <!-- Content Pane Context Menu -->
-<!ENTITY saveLinkAsCmd.label "Запис на връзка като…">
+<!ENTITY saveLinkAsCmd.label "Запазване на препратката като…">
 <!ENTITY saveLinkAsCmd.accesskey "к">
 <!ENTITY saveImageAsCmd.label "Запазване на изображението…">
 <!ENTITY saveImageAsCmd.accesskey "ж">
@@ -951,4 +954,6 @@
 <!ENTITY showAllAppsCmdMac.label        "Показване на всички">
 
 <!-- Mac OS X Dock Icon pop-up menu -->
-<!ENTITY dockOptions.label              "Настройки на иконката на приложението…">
+<!ENTITY dockOptions.label              "Настройки на пиктограмата на приложението…">
+<!ENTITY writeNewMessageDock.label      "Писане на писмо">
+<!ENTITY openAddressBookDock.label      "Отваряне на адресник">

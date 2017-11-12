@@ -8,7 +8,7 @@
 <!ENTITY aboutUrlClassifier.provider                    "فراهم‌کننده">
 <!ENTITY aboutUrlClassifier.providerLastUpdateTime      "آخرین زمان بروزرسانی">
 <!ENTITY aboutUrlClassifier.providerNextUpdateTime      "زمان بروزرسانی بعدی">
-<!ENTITY aboutUrlClassifier.providerBackOffTime         "بازگشت به عقب">
+<!ENTITY aboutUrlClassifier.providerBackOffTime         "زمانBack-off">
 <!ENTITY aboutUrlClassifier.providerLastUpdateStatus    "آخرین وضعیت بروزرسانی">
 <!ENTITY aboutUrlClassifier.providerUpdateBtn           "بروزرسانی">
 <!ENTITY aboutUrlClassifier.cacheTitle                  "حافظهٔ نهان">
@@ -20,9 +20,9 @@
 <!ENTITY aboutUrlClassifier.cacheShowEntries            "نمایش ورودی‌ها">
 <!ENTITY aboutUrlClassifier.cacheEntries                "ورودی‌های نهان">
 <!ENTITY aboutUrlClassifier.cachePrefix                 "پیشوند">
-<!ENTITY aboutUrlClassifier.cacheNCacheExpiry           "انقضا منفی حافظه موقت">
-<!ENTITY aboutUrlClassifier.cacheFullhash               "کاملا hash شده">
-<!ENTITY aboutUrlClassifier.cachePCacheExpiry           "انقضا مثبت حافظه موقت">
+<!ENTITY aboutUrlClassifier.cacheNCacheExpiry           " زمان انقضا ذخیره سازی موقت منفی">
+<!ENTITY aboutUrlClassifier.cacheFullhash               "هش کامل">
+<!ENTITY aboutUrlClassifier.cachePCacheExpiry           "زمان انقضا ذخیره سازی موقت مثبت">
 <!ENTITY aboutUrlClassifier.debugTitle                  "اشکال‌زدایی">
 <!ENTITY aboutUrlClassifier.debugModuleBtn              "تنظیم ماژول‌های وقایع">
 <!ENTITY aboutUrlClassifier.debugFileBtn                "تنظیم پرونده وقایع">

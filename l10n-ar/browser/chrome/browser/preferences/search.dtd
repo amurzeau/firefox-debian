@@ -2,6 +2,11 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
+<!ENTITY searchBar.label                       "شريط البحث">
+
+<!ENTITY searchBar.hidden.label                "استخدم شريط العنوان للبحث و التنقل">
+<!ENTITY searchBar.shown.label                 "أضف شريط البحث إلى شريط الأدوات">
+
 <!ENTITY defaultSearchEngine.label             "محرك البحث المبدئي">
 
 <!ENTITY chooseYourDefaultSearchEngine2.label   "اختر محرك البحث المبدئي في شريطي العنواوين و البحث.">

@@ -12,15 +12,14 @@
 <!ENTITY window.title         "Pridėti naują sudėtinį rodinį">
 <!ENTITY window.width         "45em">
 
-<!ENTITY name.label           "Pavadinimas:">
-<!ENTITY name.accesskey       "v">
+<!ENTITY name2.label          "Pavadinimas">
+<!ENTITY name2.accesskey      "P">
 <!ENTITY name.placeholder     "Įveskite sudėtinio rodinio pavadinimą">
-<!ENTITY icon.label           "Piktograma:">
-<!ENTITY icon.accesskey       "i">
-<!ENTITY color.label          "Spalva:">
-<!ENTITY color.accesskey      "S">
+<!ENTITY icon2.label          "Piktograma">
+<!ENTITY icon2.accesskey      "i">
+<!ENTITY color2.label         "Spalva">
+<!ENTITY color2.accesskey     "v">
 <!ENTITY windowClose.key      "w">
 
 <!ENTITY button.ok.label      "Atlikta">
 <!ENTITY button.ok.accesskey  "A">
-

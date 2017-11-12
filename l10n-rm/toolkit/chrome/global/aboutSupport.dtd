@@ -111,6 +111,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.a11yActivated "Activà">
 <!ENTITY aboutSupport.a11yForceDisabled "Impedir l'accessibladad">
 <!ENTITY aboutSupport.a11yHandlerUsed "Handler utilisà per l'accessibladad">
+<!ENTITY aboutSupport.a11yInstantiator "Generatur d'accessibladad">
 
 <!ENTITY aboutSupport.libraryVersionsTitle "Versiuns da bibliotecas">
 
@@ -142,7 +143,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.graphicsCrashGuardsTitle "Funcziunalitads deactivadas da la protecziun cunter collaps">
 <!ENTITY aboutSupport.graphicsWorkaroundsTitle "Soluziuns">
 
-<!ENTITY aboutSupport.mediaTitle "Media">
+<!ENTITY aboutSupport.mediaTitle "Multimedia">
 <!ENTITY aboutSupport.mediaOutputDevicesTitle "Apparats da sortida">
 <!ENTITY aboutSupport.mediaInputDevicesTitle "Apparats d'entrada">
 <!ENTITY aboutSupport.mediaDeviceName "Num">
@@ -153,4 +154,4 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.mediaDeviceFormat "Format">
 <!ENTITY aboutSupport.mediaDeviceChannels "Chanals">
 <!ENTITY aboutSupport.mediaDeviceRate "Frequenza">
-<!ENTITY aboutSupport.mediaDeviceLatency "Latency">
+<!ENTITY aboutSupport.mediaDeviceLatency "Latenza">

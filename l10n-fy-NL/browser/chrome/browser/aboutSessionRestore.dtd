@@ -6,16 +6,17 @@
 
 <!-- LOCALIZATION NOTE: The title is intended to be apologetic and disarming, expressing dismay
      and regret that we are unable to restore the session for the user -->
-<!ENTITY restorepage.errorTitle     "No, dit is ûnnoflik.">
-<!ENTITY restorepage.problemDesc    "&brandShortName; hat muoite om jo skermen en ljepblêden werom te bringen. Dit bart faaks troch in resint iepene webside.">
-<!ENTITY restorepage.tryThis        "Jo kinne probearje om:">
-<!ENTITY restorepage.restoreSome    "Ien of mear ljepblêden te sluten dêr't jo fan tinke dat se it probleem feroarsaakje">
-<!ENTITY restorepage.startNew       "Te starten mei in folslein nije sneupsesje">
+<!ENTITY restorepage.errorTitle2    "Sorry. I doch ús swier om jo siden werom te krijen.">
+<!ENTITY restorepage.problemDesc2   "Wy hawwe problemen by it werstellen fan jo lêste browsersesje. Selektearje Sesje werstelle om it opnij te probearjen.">
+<!ENTITY restorepage.tryThis2       "Kinne jo jo sesje noch hieltyd net werstelle? Somtiden feroarsaket ien ljepblêd it probleem. Besjoch foarige ljepblêden, helje it finkje neist de ljepblêden dy't jo net nedich hawwe, en werstel dêrnei.">
 
-<!ENTITY restorepage.tryagainButton "Werom bringe">
-<!ENTITY restorepage.restore.access "W">
-<!ENTITY restorepage.closeButton    "Slute">
-<!ENTITY restorepage.close.access   "S">
+<!ENTITY restorepage.hideTabs       "Foarige ljepblêden ferstopje">
+<!ENTITY restorepage.showTabs       "Foarige ljepblêden toane">
+
+<!ENTITY restorepage.tryagainButton2 "Sesje werstelle">
+<!ENTITY restorepage.restore.access2 "S">
+<!ENTITY restorepage.closeButton2    "Nije sesje starte">
+<!ENTITY restorepage.close.access2   "N">
 
 <!ENTITY restorepage.restoreHeader  "Werom bringe">
 <!ENTITY restorepage.listHeader     "Skermen en ljepblêden">

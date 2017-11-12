@@ -4,7 +4,7 @@
 
 <!ENTITY  button-back-mac.label        "Undur">
 <!ENTITY  button-back-mac.accesskey    "U">
-<!ENTITY  button-next-mac.label        "Sambung">
+<!ENTITY  button-next-mac.label        "Teruskan">
 <!ENTITY  button-next-mac.accesskey    "a">
 <!ENTITY  button-finish-mac.label      "Selesai">
 <!ENTITY  button-cancel-mac.label      "Batal">
@@ -13,12 +13,12 @@
 <!ENTITY  button-back-unix.accesskey   "d">
 <!ENTITY  button-next-unix.label       "Berikut">
 <!ENTITY  button-next-unix.accesskey   "B">
-<!ENTITY  button-finish-unix.label     "Tamat">
+<!ENTITY  button-finish-unix.label     "Selesai">
 <!ENTITY  button-cancel-unix.label     "Batal">
 
 <!ENTITY  button-back-win.label        "&lt; Undur">
 <!ENTITY  button-back-win.accesskey    "U">
 <!ENTITY  button-next-win.label        "Berikut &gt;">
 <!ENTITY  button-next-win.accesskey    "B">
-<!ENTITY  button-finish-win.label      "Tamat">
+<!ENTITY  button-finish-win.label      "Selesai">
 <!ENTITY  button-cancel-win.label      "Batal">

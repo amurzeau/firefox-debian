@@ -3,9 +3,14 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY firstrun_panel_title_welcome "Добродошли">
-
-<!ENTITY firstrun_urlbar_message "Добродошли на &brandShortName;">
-<!ENTITY firstrun_urlbar_subtext "Пронађите ствари брже са овим корисним пречицама.">
+<!ENTITY firstrun_urlbar_message2 "Хвала вам што се изабрали &brandShortName;">
+<!ENTITY firstrun_urlbar_subtext2 "Модеран прегледач за мобилне уређаје од Mozilla-е, непрофитне организације посвећене слободном и отвореном вебу.">
+<!ENTITY firstrun_panel_title_privacy "Приватност">
+<!ENTITY firstrun_privacy_message "Прегледајте као да вас нико не надгледа">
+<!ENTITY firstrun_privacy_subtext "Приватно прегледање са заштитом од праћења блокира пратиоце док сурфујете и неће памтити ваш историјат након што завршите са сурфовањем.">
+<!ENTITY firstrun_panel_title_customize "Прилагоди">
+<!ENTITY firstrun_customize_message "Прилагодите &brandShortName; себи.">
+<!ENTITY firstrun_customize_subtext "Прилагодите &brandShortName; са додацима. Блокирајте рекламе, додајте могућности или изаберите тему која вам највише лежи.">
 <!ENTITY firstrun_bookmarks_title "Историјат">
 <!ENTITY firstrun_bookmarks_message "Ваше омиљене">
 <!ENTITY firstrun_bookmarks_subtext "Приказује резултате из ваших забелешки и историјата када претражујете.">
@@ -13,8 +18,8 @@
 <!ENTITY firstrun_data_message "Мање података, више штедње">
 <!ENTITY firstrun_data_subtext2 "Искључите приказивање слика да потрошите мање података на сваком сајту који посећујете.">
 <!ENTITY firstrun_sync_title "Sync">
-<!ENTITY firstrun_sync_message "&brandShortName;, увек уз вас">
-<!ENTITY firstrun_sync_subtext "Синхронизујте језичке, лозинке и још много тога.">
+<!ENTITY firstrun_sync_message2 "Наставите тамо где сте стали.">
+<!ENTITY firstrun_sync_subtext2 "Искористите Sync да нађете забелешке, лозинке и друге ствари које сте сачували у &brandShortName;-у на свим вашим уређајима.">
 <!ENTITY firstrun_signin_message "Повежите се, започните">
 <!ENTITY firstrun_signin_button "Пријави се на Sync">
 <!ENTITY  onboard_start_button_browser "Започните прегледање">
@@ -87,6 +92,7 @@
      in the folder. -->
 <!ENTITY bookmark_folder_items "&formatD; ставки">
 <!ENTITY bookmark_folder_one_item "1 ставка">
+<!ENTITY bookmark_folder_updated "Фасцикла ажурирана">
 <!ENTITY bookmark_parent_folder "Родитељски директоријум">
 <!ENTITY bookmark_add_folder "Додајте нову фасциклу">
 
@@ -170,7 +176,7 @@
 <!-- Localization note (overlay_no_synced_devices) : Used when the menu option
      to send a tab to a synced device is pressed and no other synced devices
      are found. -->
-<!ENTITY overlay_no_synced_devices "Није пронађен ни један повезан уређај са Firefox налогом">
+<!ENTITY overlay_no_synced_devices "Није пронађен ниједан повезан уређај са Firefox налогом">
 
 <!ENTITY pref_category_search3 "Претрага">
 <!ENTITY pref_category_search_summary2 "Додавање и приказ предлога">
@@ -201,8 +207,6 @@
 <!ENTITY pref_category_advanced_summary3 "Обнова језичака, штедња података, алати за развој">
 <!ENTITY pref_category_notifications "Обавештења">
 <!ENTITY pref_category_notifications_summary "Нове могућности, ажурирања веб сајта">
-<!ENTITY pref_content_notifications "Ажурирања веб сајта">
-<!ENTITY pref_content_notifications_summary2 "Откријте нови садржај од подржаних веб сајтова">
 <!ENTITY pref_developer_remotedebugging_usb "USB отклањање греш.">
 <!ENTITY pref_developer_remotedebugging_wifi "Wi-Fi отклањање греш.">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Wi-Fi отклањање грешака захтева да уређај има инсталиран читач QR кода.">
@@ -268,7 +272,6 @@
 <!ENTITY pref_show_web_fonts_summary2 "Преузми фонтове при учитавању странице">
 
 <!ENTITY pref_tracking_protection_title2 "Заштита од праћења">
-<!ENTITY pref_tracking_protection_summary3 "Омогућена у приватном прегледању">
 <!ENTITY pref_donottrack_title "Не желим да ме прате">
 <!ENTITY pref_donottrack_summary "&brandShortName; ће рећи сајтовима да не желите да будете праћени">
 
@@ -286,8 +289,9 @@
 <!-- Custom Tabs is an Android API for allowing third-party apps to open URLs in a customized UI.
      Instead of switching to the browser it appears as if the user stays in the third-party app.
      For more see: https://developer.chrome.com/multidevice/android/customtabs -->
-<!ENTITY pref_custom_tabs "Прилагођени језичци">
-<!ENTITY pref_custom_tabs_summary3 "Дозволи апликацији да отвори веб сајт користећи прилагођену верзију &brandShortName;">
+<!ENTITY pref_custom_tabs2 "Прилагођени језичци">
+<!ENTITY pref_custom_tabs_summary4 "Дозволи апликацијама да отворе веб садржај у брзо учитаном прилагођеном језичку.">
+
 <!-- Localization note (custom_tabs_menu_item_open_in): The variable is replaced by the name of
      default browser from user's preference, such as "Open in Firefox" -->
 <!ENTITY custom_tabs_menu_item_open_in "Отвори у &formatS;">
@@ -297,10 +301,6 @@
 
 <!ENTITY pref_pwa "Прогресивне веб апликације">
 <!ENTITY pref_pwa_summary "Омогући веб апликацијама да буду додате на екран телефона">
-
-<!-- Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream  -->
-<!ENTITY pref_activity_stream "Ток активости">
-<!ENTITY pref_activity_stream_summary "Богат визуелни извор историје и побољшана почетна страница која ће вам помоћи да нађете све што тражите у &brandShortName;-у.">
 
 <!ENTITY tracking_protection_prompt_title "Сада са заштитом од праћења">
 <!ENTITY tracking_protection_prompt_text "Активно блокира елементе који вас прате, немате бриге.">
@@ -334,23 +334,6 @@
      has been queued but we are missing the system permission to show an overlay. -->
 <!ENTITY tab_queue_notification_settings "За “Отвори више веза”, укључите дозволу “Превлачење преко други апликација” за &brandShortName;">
 
-<!ENTITY content_notification_summary "&brandShortName;">
-<!-- Localization note (content_notification_title_plural): &formatD; will be replaced with the number of websites that
-     have been updated (new content is available). The number of websites is always more than one (>= 2). For a single
-     update the website title is used instead of this string.
-     We can't use Android plural forms, sadly. See Bug #753859. -->
-<!ENTITY content_notification_title_plural "&formatD; веб сајтова ажурирано">
-<!-- Localization note (content_notification_action_settings2): This label will be shown as an action in a content notification.
-     Clicking the action will jump to the notification settings of the app. -->
-<!ENTITY content_notification_action_settings2 "Поставке">
-<!-- Localization note(content_notification_action_read_now): This label will be shown as an action in a content notification.
-     Clicking the action will open all new content in the browser. -->
-<!ENTITY content_notification_action_read_now "Прочитај сада">
-<!-- Localization note (content_notification_updated_on): &formatS; will be replaced with a medium sized version of the
-     date, depending on locale. For en_US this is for example: Feb 24, 2016. For more details see the Android developer
-     documentation for DateFormat.getMediumDateFormat(). -->
-<!ENTITY content_notification_updated_on "Ажурирано датума &formatS;">
-
 <!ENTITY pref_char_encoding "Кодирање карактера">
 <!ENTITY pref_char_encoding_on "Прикажи мени">
 <!ENTITY pref_char_encoding_off "Немој приказати мени">
@@ -361,10 +344,6 @@
 <!ENTITY pref_clear_on_exit_title3 "Брисање на изласку">
 <!ENTITY pref_clear_on_exit_summary2 "&brandShortName; ће аутоматски обрисати податке сваки пут када изаберете Изађи из главног менија">
 <!ENTITY pref_clear_on_exit_dialog_title "Изаберите који подаци да се бришу">
-<!ENTITY pref_plugins "Прикључци">
-<!ENTITY pref_plugins_enabled "Омогућени">
-<!ENTITY pref_plugins_tap_to_play2 "Притисните">
-<!ENTITY pref_plugins_disabled "Онемогућени">
 <!ENTITY pref_restore_tabs "Обнови језичке">
 <!ENTITY pref_restore_always "Увек обнови">
 <!ENTITY pref_restore_quit "Немој након затварања">
@@ -384,6 +363,7 @@
 <!ENTITY pref_qrcode_enabled_summary2 "Дозволи QR скенер у URL траци">
 
 <!ENTITY pref_use_master_password "Користи главну лозинку">
+<!ENTITY pref_sync_default_title "Firefox налог">
 <!ENTITY pref_sync2 "Пријави се">
 <!ENTITY pref_sync_summary2 "Синхронизација језичака, забелешки, пријава, историјата">
 <!ENTITY pref_search_suggestions "Предлози претраге">
@@ -413,6 +393,9 @@
 <!ENTITY pref_dialog_set_default "Постави као подразумевано">
 <!ENTITY pref_dialog_default "Подразумевано">
 <!ENTITY pref_dialog_remove "Уклони">
+<!ENTITY pref_dialog_activitystream_header_content "Додатни садржај">
+<!ENTITY pref_dialog_activitystream_recentBookmarks "Недавне забелешке">
+<!ENTITY pref_dialog_activitystream_visited "Посећено">
 
 <!ENTITY pref_search_last_toast "Не можете уклонити или онемогућити последњи претраживач.">
 
@@ -503,6 +486,7 @@
 <!ENTITY contextmenu_open_private_tab "Отвори у приватном језичку">
 <!ENTITY contextmenu_remove "Уклони">
 <!ENTITY contextmenu_add_to_launcher "Додај на екран телефона">
+<!ENTITY contextmenu_add_page_shortcut "Додај пречицу ка страници">
 <!ENTITY contextmenu_set_as_homepage "Постави као почетну">
 <!ENTITY contextmenu_share "Подели">
 <!ENTITY contextmenu_pasteandgo "Налепи и посети">
@@ -514,7 +498,17 @@
 <!ENTITY contextmenu_top_sites_edit "Уреди">
 <!ENTITY contextmenu_top_sites_pin "Закачи сајт">
 <!ENTITY contextmenu_top_sites_unpin "Откачи сајт">
+<!-- Localization note (contextmenu_pin_to_top_sites, contextmenu_unpin_from_top_sites): These strings are used to
+     pin/unpin items from top sites when the user is not on the top sites screen so they'd be missing context on what
+     just "Pin Site" or "Unpin Site" would mean. -->
+<!ENTITY contextmenu_pin_to_top_sites "Закачи на омиљене сајтове">
+<!ENTITY contextmenu_unpin_from_top_sites "Откачи са омиљених сајтова">
 <!ENTITY contextmenu_add_search_engine "Додај претраживач">
+
+<!-- Localization note (pinned_page_to_top_sites, unpinned_page_from_top_sites): These strings are shown in a snackbar
+     after the user pins/unpins the currently displayed page from top sites. -->
+<!ENTITY pinned_page_to_top_sites "Страница закачена на омиљене сајтове">
+<!ENTITY unpinned_page_from_top_sites "Страница откачена са омиљених сајтова">
 
 <!-- Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
      where normally a username would be displayed. In this case, no username was found, and this placeholder
@@ -578,7 +572,7 @@
 <!ENTITY button_clear "Обриши">
 <!ENTITY button_copy "Копирај">
 
-<!ENTITY home_top_sites_title "Популарни сајтови">
+<!ENTITY home_top_sites_title "Омиљени сајтови">
 <!-- Localization note (home_top_sites_add): This string is used as placeholder
      text underneath empty thumbnails in the Top Sites page on about:home. -->
 <!ENTITY home_top_sites_add "Додај сајт">
@@ -828,6 +822,8 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 
 <!ENTITY promotion_add_to_homescreen "Додај на почетни екран">
 
+<!ENTITY promotion_add_page_shortcut "Додај пречицу ка страници">
+
 <!ENTITY helper_first_offline_bookmark_title "Читај ван мреже">
 <!ENTITY helper_first_offline_bookmark_message "Пронађите ставке читача у забелешкама, чак и ван мреже.">
 <!ENTITY helper_first_offline_bookmark_button "Забелешке">
@@ -836,21 +832,44 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_message "Ставке читача забелешки се могу прочитати и ван мреже.">
 <!ENTITY helper_triple_readerview_open_button "Додај забелешкама">
 
-<!ENTITY activity_stream_topsites "Популарни сајтови">
-<!ENTITY activity_stream_highlights "Истакнути">
+<!ENTITY activity_stream_topsites "Омиљени сајтови">
+<!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->
+<!ENTITY activity_stream_topstories "Препоручено од стране &brandPocket;-а">
+<!ENTITY activity_stream_highlights "Истакнуто">
+
+<!-- LOCALIZATION NOTE (activity_stream_link_more1): Link-like text displayed to take user to a website with more content from Pocket. -->
+<!ENTITY activity_stream_link_more1 "MORE">
 
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_bookmarked): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
 <!ENTITY activity_stream_highlight_label_bookmarked "Забележено">
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_visited): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
-<!ENTITY activity_stream_highlight_label_visited "Посећене">
+<!ENTITY activity_stream_highlight_label_visited "Посећено">
+<!-- LOCALIZATION NOTE (activity_stream_highlight_label_trending): This label is shown in the Activity Stream list for highlights sourced from a recommendations engine. -->
+<!ENTITY activity_stream_highlight_label_trending "У тренду">
+<!-- LOCALIZATION NOTE (activity_stream_highlights_empty): This text is shown when we could not find highlights for this user. This is also shown on first run. -->
+<!ENTITY activity_stream_highlights_empty "Почните са прегледањем и ми ћемо вам овде приказати неке од сјајних чланака, видео записа и других страница које сте скоро посетили или забележили.">
 
-<!-- LOCALIZATION NOTE (activity_stream_dismiss): This label is shown in the Activity Stream context menu,
+<!-- LOCALIZATION NOTE (activity_stream_remove): This label is shown in the Activity Stream context menu,
 and allows hiding a URL/page from highlights or topsites. The page remains in history/bookmarks, but
 is simply hidden from the Activity Stream panel. -->
-<!ENTITY activity_stream_dismiss "Занемари">
+<!ENTITY activity_stream_remove "Уклони">
 <!ENTITY activity_stream_delete_history "Уклони из историјата">
 
-<!ENTITY activity_stream_welcome_title "Добродошли у ваше истакнуте моменте">
-<!ENTITY activity_stream_welcome_content1 "&brandShortName; истиче ствари које сте открили на вебу да би вам помогао да поново пронађете сјајне чланке, видео снимке, забелешке и остале странице.">
+<!ENTITY private_tab_panel_title "Приватно прегледање + Заштита од праћења">
+<!ENTITY private_tab_panel_description "&brandShortName; блокира делове странице који могу пратити ваше прегледање.">
+<!ENTITY private_tab_panel_description2 "Нећемо памтити историјат али ће преузете датотеке и забелешке остати сачуване на вашем уређају.">
+<!ENTITY private_tab_learn_more "Желите да сазнате више?">
+
+<!ENTITY fullscreen_warning "Режим целог екрана омогућен">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_confirm): The plus sign here is part of UI design -->
+<!ENTITY pwa_add_to_launcher_confirm "+ Додај на почетни екран">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_badge2): Used as label in the page actions dropdown list,
+displayed when there are more than 3 actions available for a page.
+See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
+<!ENTITY pwa_add_to_launcher_badge2 "Додај на почетни екран">
+<!ENTITY pwa_continue_to_website "Настави на веб сајт">
+<!ENTITY pwa_onboarding_sumo "Можете лако додати овај веб сајт на почетни екран вашег телефона како бисте лако приступили и сурфовали брже.">

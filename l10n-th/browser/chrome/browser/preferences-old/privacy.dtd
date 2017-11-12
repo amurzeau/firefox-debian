@@ -2,28 +2,28 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY  trackingProtectionHeader.label       "ใช้การป้องกันการตามรอย">
+<!ENTITY  trackingProtectionHeader.label       "ใช้การป้องกันการติดตาม">
 <!ENTITY  trackingProtectionAlways.label       "เสมอ">
-<!ENTITY  trackingProtectionAlways.accesskey   "y">
+<!ENTITY  trackingProtectionAlways.accesskey   "ส">
 <!ENTITY  trackingProtectionPrivate.label      "เฉพาะในหน้าต่างส่วนตัว">
-<!ENTITY  trackingProtectionPrivate.accesskey  "l">
+<!ENTITY  trackingProtectionPrivate.accesskey  "พ">
 <!ENTITY  trackingProtectionNever.label        "ไม่เลย">
-<!ENTITY  trackingProtectionNever.accesskey    "n">
+<!ENTITY  trackingProtectionNever.accesskey    "ม">
 <!ENTITY  trackingProtectionLearnMore.label    "เรียนรู้เพิ่มเติม">
 <!ENTITY  trackingProtectionExceptions.label   "ข้อยกเว้น…">
 <!ENTITY  trackingProtectionExceptions.accesskey "อ">
 
-<!ENTITY tracking.label                 "การตามรอย">
-<!ENTITY trackingProtectionPBM5.label         "ใช้การป้องกันการตามรอยในหน้าต่างส่วนตัว">
-<!ENTITY trackingProtectionPBM5.accesskey     "v">
+<!ENTITY tracking.label                 "การติดตาม">
+<!ENTITY trackingProtectionPBM5.label         "ใช้การป้องกันการติดตามในหน้าต่างส่วนตัว">
+<!ENTITY trackingProtectionPBM5.accesskey     "ช">
 <!ENTITY trackingProtectionPBMLearnMore.label "เรียนรู้เพิ่มเติม">
 <!ENTITY changeBlockList.label          "เปลี่ยนรายการการปิดกั้น">
-<!ENTITY changeBlockList.accesskey      "C">
+<!ENTITY changeBlockList.accesskey      "ร">
 
 <!-- LOCALIZATION NOTE (doNotTrack.pre.label): include a trailing space as needed -->
 <!-- LOCALIZATION NOTE (doNotTrack.post.label): include a starting space as needed -->
 <!ENTITY  doNotTrack.pre.label          "คุณยังสามารถ ">
-<!ENTITY  doNotTrack.settings.label     "จัดการการตั้งค่าอย่าตามรอยของคุณ">
+<!ENTITY  doNotTrack.settings.label     "จัดการการตั้งค่าไม่ติดตามของคุณ">
 <!ENTITY  doNotTrack.post.label         "">
 
 <!ENTITY  history.label                 "ประวัติ">
@@ -32,28 +32,28 @@
 
 <!ENTITY  locbar.suggest.label          "เมื่อใช้แถบตำแหน่งที่ตั้ง เสนอแนะ:">
 <!ENTITY  locbar.history.label          "ประวัติ">
-<!ENTITY  locbar.history.accesskey      "H">
+<!ENTITY  locbar.history.accesskey      "ว">
 <!ENTITY  locbar.bookmarks.label        "ที่คั่นหน้า">
-<!ENTITY  locbar.bookmarks.accesskey    "k">
+<!ENTITY  locbar.bookmarks.accesskey    "ท">
 <!ENTITY  locbar.openpage.label         "แท็บที่เปิด">
-<!ENTITY  locbar.openpage.accesskey     "O">
+<!ENTITY  locbar.openpage.accesskey     "บ">
 <!ENTITY  locbar.searches.label         "การค้นหาที่เกี่ยวข้องจากเครื่องมือค้นหาเริ่มต้น">
-<!ENTITY  locbar.searches.accesskey     "d">
+<!ENTITY  locbar.searches.accesskey     "ก">
 
 <!ENTITY  suggestionSettings.label      "เปลี่ยนค่ากำหนดข้อเสนอแนะจากเครื่องมือค้นหา…">
 <!ENTITY  suggestionSettings.accesskey  "ล">
 
-<!ENTITY  acceptCookies.label           "ยอมรับคุกกี้จากไซต์">
-<!ENTITY  acceptCookies.accesskey       "A">
+<!ENTITY  acceptCookies2.label          "ยอมรับคุกกี้จากเว็บไซต์">
+<!ENTITY  acceptCookies2.accesskey      "ย">
 
 <!ENTITY  acceptThirdParty.pre.label      "ยอมรับคุกกี้จากบุคคลที่สาม:">
-<!ENTITY  acceptThirdParty.pre.accesskey  "y">
+<!ENTITY  acceptThirdParty.pre.accesskey  "อ">
 <!ENTITY  acceptThirdParty.always.label   "เสมอ">
 <!ENTITY  acceptThirdParty.never.label    "ไม่เลย">
 <!ENTITY  acceptThirdParty.visited.label  "จากที่เยี่ยมชม">
 
 <!ENTITY  keepUntil.label               "เก็บจนกระทั่ง:">
-<!ENTITY  keepUntil.accesskey           "u">
+<!ENTITY  keepUntil.accesskey           "ก">
 
 <!ENTITY  expire.label                  "คุกกี้หมดอายุ">
 <!ENTITY  close.label                   "ฉันปิด &brandShortName;">
@@ -62,7 +62,7 @@
 <!ENTITY  cookieExceptions.accesskey    "ข">
 
 <!ENTITY  showCookies.label             "แสดงคุกกี้…">
-<!ENTITY  showCookies.accesskey         "S">
+<!ENTITY  showCookies.accesskey         "ส">
 
 <!ENTITY  historyHeader.pre.label          "&brandShortName; จะ:">
 <!ENTITY  historyHeader.pre.accesskey      "จ">
@@ -86,28 +86,28 @@
 
 <!-- LOCALIZATION NOTE (dontrememberActions.pre.label): include a trailing space as needed -->
 <!-- LOCALIZATION NOTE (dontrememberActions.post.label): include a starting space as needed -->
-<!ENTITY  dontrememberActions.pre.label          "คุณยังอาจต้องการ ">
+<!ENTITY  dontrememberActions.pre.label          "คุณยังอาจต้องการ ">
 <!ENTITY  dontrememberActions.clearHistory.label "ล้างประวัติปัจจุบันทั้งหมด">
 <!ENTITY  dontrememberActions.post.label         "">
 
 <!ENTITY  privateBrowsingPermanent2.label "ใช้โหมดการท่องเว็บแบบส่วนตัวเสมอ">
-<!ENTITY  privateBrowsingPermanent2.accesskey "p">
+<!ENTITY  privateBrowsingPermanent2.accesskey "ช">
 
 <!ENTITY  rememberHistory2.label      "จดจำประวัติการท่องเว็บและการดาวน์โหลดของฉัน">
-<!ENTITY  rememberHistory2.accesskey  "b">
+<!ENTITY  rememberHistory2.accesskey  "จ">
 
 <!ENTITY  rememberSearchForm.label       "จดจำประวัติการค้นหาและแบบฟอร์ม">
-<!ENTITY  rememberSearchForm.accesskey   "f">
+<!ENTITY  rememberSearchForm.accesskey   "ด">
 
 <!ENTITY  clearOnClose.label             "ล้างประวัติเมื่อปิด &brandShortName;">
 <!ENTITY  clearOnClose.accesskey         "r">
 
 <!ENTITY  clearOnCloseSettings.label     "การตั้งค่า…">
-<!ENTITY  clearOnCloseSettings.accesskey "t">
+<!ENTITY  clearOnCloseSettings.accesskey "ก">
 
 <!ENTITY  browserContainersHeader.label         "แท็บแยกข้อมูล">
 <!ENTITY  browserContainersLearnMore.label      "เรียนรู้เพิ่มเติม">
 <!ENTITY  browserContainersEnabled.label        "เปิดใช้งานแท็บแยกข้อมูล">
 <!ENTITY  browserContainersEnabled.accesskey    "ย">
 <!ENTITY  browserContainersSettings.label        "การตั้งค่า…">
-<!ENTITY  browserContainersSettings.accesskey    "i">
+<!ENTITY  browserContainersSettings.accesskey    "ต">

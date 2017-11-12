@@ -10,9 +10,9 @@
 <!ENTITY removepermission2.label      "Website fuortsmite">
 <!ENTITY removepermission2.accesskey  "W">
 <!ENTITY removeallpermissions2.label  "Alle websites fuortsmite">
-<!ENTITY removeallpermissions2.accesskey "f">
-<!ENTITY address.label                "Adres fan de website:">
-<!ENTITY address.accesskey            "d">
+<!ENTITY removeallpermissions2.accesskey "s">
+<!ENTITY address2.label               "Adres fan de website">
+<!ENTITY address2.accesskey           "d">
 <!ENTITY block.label                  "Blokkearje">
 <!ENTITY block.accesskey              "B">
 <!ENTITY session.label                "Tastean foar sesje">
@@ -26,3 +26,4 @@
 <!ENTITY button.ok.label              "Wizigingen bewarje">
 <!ENTITY button.ok.accesskey          "i">
 
+<!ENTITY searchbox.placeholder        "Websites trochsykje">

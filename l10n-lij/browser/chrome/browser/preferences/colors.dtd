@@ -6,25 +6,25 @@
 <!ENTITY  window.width                    "38em">
 <!ENTITY  window.macWidth                 "41em">
 
-<!ENTITY  overrideDefaultPageColors.label        "Cangia i coî specificæ da pagina con quelli che ti seleçionn-i chi:">
-<!ENTITY  overrideDefaultPageColors.accesskey    "C">
+<!ENTITY  overrideDefaultPageColors2.label       "Scrivi sorvia a- coî specificæ da pagina con quelli che ti çerni chi sorvia">
+<!ENTITY  overrideDefaultPageColors2.accesskey   "S">
 
 <!ENTITY  overrideDefaultPageColors.always.label "De longo">
 <!ENTITY  overrideDefaultPageColors.auto.label   "Solo co-i temi a Erto Contrasto">
 <!ENTITY  overrideDefaultPageColors.never.label  "Mai">
 
 <!ENTITY  color                           "Testo e sfondo">
-<!ENTITY  textColor.label                 "Testo:">
-<!ENTITY  textColor.accesskey             "T">
-<!ENTITY  backgroundColor.label           "Sfondo:">
-<!ENTITY  backgroundColor.accesskey       "S">
+<!ENTITY  textColor2.label                "Testo">
+<!ENTITY  textColor2.accesskey            "T">
+<!ENTITY  backgroundColor2.label          "Sfondo">
+<!ENTITY  backgroundColor2.accesskey      "S">
 <!ENTITY  useSystemColors.label           "Adeuvia i coî de scistema">
 <!ENTITY  useSystemColors.accesskey       "c">
 
 <!ENTITY  underlineLinks.label            "Sotolinia colegamenti">
 <!ENTITY  underlineLinks.accesskey        "g">
 <!ENTITY  links                           "Coî di colegamenti">
-<!ENTITY  linkColor.label                 "Colegamenti no vixitæ:">
-<!ENTITY  linkColor.accesskey             "l">
-<!ENTITY  visitedLinkColor.label          "Colegamenti vixitæ:">
-<!ENTITY  visitedLinkColor.accesskey      "v">
+<!ENTITY  linkColor2.label                "Colegamenti no vixitæ">
+<!ENTITY  linkColor2.accesskey            "n">
+<!ENTITY  visitedLinkColor2.label         "Colegamenti vixitæ">
+<!ENTITY  visitedLinkColor2.accesskey     "v">

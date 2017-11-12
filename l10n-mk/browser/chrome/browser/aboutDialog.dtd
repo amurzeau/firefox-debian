@@ -5,7 +5,7 @@
 
 <!-- LOCALIZATION NOTE (update.*):
 # These strings are also used in the update pane of preferences.
-# See about:preferences#advanced.
+# See about:preferences#general.
 -->
 <!-- LOCALIZATION NOTE (update.checkForUpdatesButton.*, update.updateButton.*):
 # Only one button is present at a time.
@@ -14,15 +14,14 @@
 -->
 <!ENTITY update.checkForUpdatesButton.label       "Провери за ажурирања">
 <!ENTITY update.checkForUpdatesButton.accesskey   "П">
-<!ENTITY update.updateButton.label3               "Рестартирај за да го надградиш &brandShorterName;">
+<!ENTITY update.updateButton.label3               "Рестартирај за да се надгради &brandShorterName;">
 <!ENTITY update.updateButton.accesskey            "Р">
 
 
 <!-- LOCALIZATION NOTE (warningDesc.version): This is a warning about the experimental nature of Nightly and Aurora builds. It is only shown in those versions. -->
 <!ENTITY warningDesc.version        "&brandShortName; е експериментален и може да е нестабилен.">
 <!-- LOCALIZATION NOTE (warningDesc.telemetryDesc): This is a notification that Nightly/Aurora builds automatically send Telemetry data back to Mozilla. It is only shown in those versions. "It" refers to brandShortName. -->
-<!ENTITY warningDesc.telemetryDesc  "Тоа автоматски испраќа информации за перформанси, хардвер, употреба и приагодувања
-до &vendorShortName; за да помогне &brandShortName; да биде подобар.">
+<!ENTITY warningDesc.telemetryDesc  "Автоматски испраќа информации за перформанси, хардвер, употреба и приагодувања до &vendorShortName; за да помогне &brandShortName; да биде подобар.">
 
 <!-- LOCALIZATION NOTE (community.exp.*) This paragraph is shown in "experimental" builds, i.e. Nightly and Aurora builds, instead of the other "community.*" strings below. -->
 <!ENTITY community.exp.start        "">
@@ -65,7 +64,7 @@
 <!-- LOCALIZATION NOTE (update.noUpdatesFound): try to make the localized text short (see bug 596813 for screenshots). -->
 <!ENTITY update.noUpdatesFound      "Нема надградби за &brandShortName;">
 <!-- LOCALIZATION NOTE (update.adminDisabled): try to make the localized text short (see bug 596813 for screenshots). -->
-<!ENTITY update.adminDisabled       "Вашиот систем администратор ги има оневозможено надградбите">
+<!ENTITY update.adminDisabled       "Вашиот системски администратор ги има оневозможено надградбите">
 <!-- LOCALIZATION NOTE (update.otherInstanceHandlingUpdates): try to make the localized text short -->
 <!ENTITY update.otherInstanceHandlingUpdates "&brandShortName; се ажурира од друга инстанца">
 <!ENTITY update.restarting          "Рестартирам…">
@@ -109,5 +108,5 @@
 <!-- LOCALIZATION NOTE (channel.description.start,channel.description.end): channel.description.start and
      channel.description.end create one sentence, with the current channel label inserted in between.
      example: You are currently on the _Stable_ update channel. -->
-<!ENTITY channel.description.start  "Моментално сте на ">
-<!ENTITY channel.description.end    " каналот за надградби. ">
+<!ENTITY channel.description.start  "Моментално сте на каналот за надградби ">
+<!ENTITY channel.description.end    ". ">

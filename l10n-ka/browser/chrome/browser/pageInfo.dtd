@@ -30,7 +30,7 @@
 <!ENTITY  mediaTab              "მედია">
 <!ENTITY  mediaTab.accesskey    "მ">
 <!ENTITY  mediaLocation         "მდებარეობა:">
-<!ENTITY  mediaText             "ასოცირებული ტექსტი:">
+<!ENTITY  mediaText             "ალტერნატული ტექსტი:">
 <!ENTITY  mediaAltHeader        "ალტერნატული ტექსტი">
 <!ENTITY  mediaAddress          "მისამართი">
 <!ENTITY  mediaType             "ტიპი">
@@ -42,7 +42,7 @@
 <!ENTITY  mediaSaveAs           "შენახვა როგორც…">
 <!ENTITY  mediaSaveAs.accesskey "რ">
 <!ENTITY  mediaSaveAs2.accesskey "ე">
-<!ENTITY  mediaPreview          "გამოსახულების გადახედვა:">
+<!ENTITY  mediaPreview          "გამოსახულების შეთვალიერება:">
 
 <!ENTITY  feedTab               "ლენტები">
 <!ENTITY  feedTab.accesskey     "ლ">
@@ -56,7 +56,7 @@
 <!ENTITY  permAllow             "დაშვება">
 <!ENTITY  permAllowSession      "დაშვება სეანსზე">
 <!ENTITY  permBlock             "აკრძალვა">
-<!ENTITY  permissionsFor        "უფლებები საიტისთვის:">
+<!ENTITY  permissionsFor        "ნებართვები საიტისთვის:">
 <!ENTITY  permPlugins           "მოდულების გააქტიურება">
 
 <!ENTITY  permClearStorage           "საცავის გასუფთავება">

@@ -5,15 +5,15 @@
 <!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd">
 %brandDTD;
 
-<!ENTITY loadError.label "Masalah memuat halaman">
+<!ENTITY loadError.label "Masalah memuatkan halaman">
 <!ENTITY retry.label "Cuba Lagi">
 
 <!-- Specific error messages -->
 
-<!ENTITY connectionFailure.title "Tidak dapat menyambung ">
+<!ENTITY connectionFailure.title "Tidak dapat menyambung">
 <!ENTITY connectionFailure.longDesc2 "&sharedLongDesc3;">
 
-<!ENTITY deniedPortAccess.title "Alamat ini dihadkan.">
+<!ENTITY deniedPortAccess.title "Alamat ini dihadkan">
 <!ENTITY deniedPortAccess.longDesc "">
 
 <!ENTITY dnsNotFound.title "Pelayan tidak ditemui">
@@ -34,17 +34,22 @@
 <!ENTITY fileNotFound.title "Fail tidak ditemui">
 <!ENTITY fileNotFound.longDesc "
 <ul>
-  <li>Semak huruf besar nama atau ralat taip lain.</li>
-  <li>Semak samada fail telah dipindah, dinamakan semula atau dihapuskan.</li>
+  <li>Semak ralat huruf besar nama fail atau ralat menaip lain.</li>
+  <li>Semak samada fail telah dipindahkan, dinamakan semula atau dibuang.</li>
 </ul>
 ">
 
-<!ENTITY fileAccessDenied.title "Akses kepada fail ini disekat">
-<!ENTITY fileAccessDenied.longDesc "<ul>
-  <li>Mungkin telah dialih keluar, dipindahkan, atau kebenaran fail mungkin menghalang akses.</li> </ul>">
+<!ENTITY fileAccessDenied.title "Akses kepada fail ditolak">
+<!ENTITY fileAccessDenied.longDesc "
+<ul>
+  <li>Mungkin telah dibuang, dipindahkan, atau keizinan fail yang menghalang akses.</li>
+</ul>
+">
 
-<!ENTITY generic.title "Oops.">
-<!ENTITY generic.longDesc "<p>&brandShortName; tidak dapat memuat halaman ini atas beberapa alasan.</p>">
+<!ENTITY generic.title "Maaf.">
+<!ENTITY generic.longDesc "
+<p>&brandShortName; tidak dapat memuat halaman ini atas beberapa alasan.</p>
+">
 
 <!ENTITY malformedURI.title "Alamat ini tidak sah">
 <!-- LOCALIZATION NOTE (malformedURI.longDesc2) This string contains markup including widgets for searching
@@ -80,12 +85,16 @@
 ">
 
 <!ENTITY contentEncodingError.title "Ralat Pengekodan Kandungan">
-<!ENTITY contentEncodingError.longDesc "<ul> <li>Sila hubungi pemilik tapak web untuk memaklumkan masalah ini.</li> </ul>">
+<!ENTITY contentEncodingError.longDesc "
+<ul>
+  <li>Sila hubungi pemilik laman web untuk memaklumkan masalah ini.</li>
+</ul>
+">
 
 <!ENTITY unsafeContentType.title "Jenis Fail Tidak Selamat">
 <!ENTITY unsafeContentType.longDesc "
 <ul>
-  <li>Sila hubungi pemilik tapak web untuk memaklumkan masalah ini.</li>
+  <li>Sila hubungi pemilik laman web untuk memaklumkan masalah ini.</li>
 </ul>
 ">
 
@@ -98,12 +107,18 @@
 <!ENTITY unknownProtocolFound.title "Alamat tidak difahami">
 <!ENTITY unknownProtocolFound.longDesc "
 <ul>
-  <li>Anda perlu memasang perisian lain untuk membuka alamat ini.</li>
+  <li>Anda mungkin perlu pasang perisian lain untuk membuka alamat ini.</li>
 </ul>
 ">
 
 <!ENTITY proxyConnectFailure.title "Pelayan proksi menolak sambungan">
-<!ENTITY proxyConnectFailure.longDesc "<ul> <li>Periksa tetapan proksi untuk memastikan yang ianya telah betul.</li> <li>Hubungi pentadbir rangkaian anda unutuk pastikan yang proksi berfungsi.</li> </ul>">
+<!ENTITY proxyConnectFailure.longDesc "
+<ul>
+  <li>Semak tetapan proksi untuk memastikan tetapan itu betul.</li>
+  <li>Hubungi pentadbir rangkaian untuk memastikan bahawa pelayan proksi
+    berfungsi.</li>
+</ul>
+">
 
 <!ENTITY proxyResolveFailure.title "Tidak dapat menemui pelayan proksi">
 <!-- LOCALIZATION NOTE (proxyResolveFailure.longDesc3) This string contains markup including widgets for enabling wifi connections.
@@ -113,7 +128,7 @@
 <!ENTITY redirectLoop.title "Halaman tidak diarahkan semula dengan betul">
 <!ENTITY redirectLoop.longDesc "
 <ul>
-  <li>Masalah ini kadang kala disebabkan oleh menyahdaya atau tidak mahu menerima
+  <li>Masalah ini kadangkala disebabkan oleh menyahaktifkan atau tidak mahu menerima
     kuki.</li>
 </ul>
 ">
@@ -121,21 +136,21 @@
 <!ENTITY unknownSocketType.title "Respon tidak dijangka daripada pelayan">
 <!ENTITY unknownSocketType.longDesc "
 <ul>
-  <li>Semak untuk pastikan sistem anda ada Pengurus Keselamatan Peribadi yang
-    sudah dipasang.</li>
-  <li>Ini mungkin kerana konfigurasi bukan-standard pada pelayan.</li>
+  <li>Semak untuk memastikan sistem sudah ada Pengurus Keselamatan Peribadi
+    yang dipasang.</li>
+  <li>Ini mungkin kerana konfigurasi bukan-piawai dalam pelayar.</li>
 </ul>
 ">
 
-<!ENTITY nssFailure2.title "Sambungan Selamat Gagal">
+<!ENTITY nssFailure2.title "Gagal Disambung Dengan Selamat">
 <!ENTITY nssFailure2.longDesc2 "
 <ul>
-  <li>Halaman yang anda cuba lihat tidak boleh dipaparkan kerana autentisiti data yang diterima tidak dapat disahkan.</li>
+  <li>Halaman yang anda mahu lihat tidak dapat dipaparkan kerana autentisiti data yang diterima tidak dapat disahkan.</li>
   <li>Sila hubungi pemilik laman web untuk memaklumkan masalah ini.</li>
 </ul>
 ">
 
-<!ENTITY nssBadCert.title "Sambungan Selamat Gagal">
+<!ENTITY nssBadCert.title "Gagal Disambung Dengan Selamat">
 <!ENTITY nssBadCert.longDesc2 "
 <ul>
   <li>Ini mungkin masalah konfigurasi pelayan, atau mungkin
@@ -157,14 +172,14 @@ sementara, dan anda boleh cuba lagi nanti.</li>
 ">
 
 <!ENTITY cspBlocked.title "Disekat oleh Polisi Keselamatan Kandungan">
-<!ENTITY cspBlocked.longDesc "<p>&brandShortName; menghalang halaman ini daripada dipaparkan kerana ada kandungan yang tidak dibenarkan oleh polisi keselamatan.</p>">
+<!ENTITY cspBlocked.longDesc "<p>&brandShortName; menghalang halaman ini daripada dimuatkan kerana ada kandungan yang tidak dibenarkan oleh polisi keselamatan.</p>">
 
 <!ENTITY corruptedContentErrorv2.title "Ralat Kandungan Rosak">
-<!ENTITY corruptedContentErrorv2.longDesc "<p>Laman yang anda cuba untuk lihat tidak dapat dipamer kerana ada kesilapan dalam penghantaran data telah dikesan.</p><ul><li>Sila hubungi pemilik tapak web ini untuk memaklumkannya mengenai masalah ini.</li></ul>">
+<!ENTITY corruptedContentErrorv2.longDesc "<p>Halaman yang anda cuba lihat tidak dapat dipaparkan kerana ada ralat dalam transmisi data.</p><ul><li>Sila hubungi pemilik laman web untuk memaklumkan masalah ini.</li></ul>">
 
 <!ENTITY securityOverride.linkText "Atau anda boleh tambah pengecualian…">
 <!ENTITY securityOverride.getMeOutOfHereButton "Keluarkan saya dari sini!">
-<!ENTITY securityOverride.exceptionButtonLabel "Tambah Pengecualian...">
+<!ENTITY securityOverride.exceptionButtonLabel "Tambah Pengecualian…">
 
 <!-- LOCALIZATION NOTE (securityOverride.warningContent) - Do not translate the
 contents of the <xul:button> tags.  The only language content is the label= field,
@@ -178,20 +193,20 @@ netError.xhtml) because it exposes functionality specific to firefox. -->
 <button id='exceptionDialogButton'>&securityOverride.exceptionButtonLabel;</button>
 ">
 
-<!ENTITY remoteXUL.title "XUL Jarak Jauh">
+<!ENTITY remoteXUL.title "Capaian jauh XUL">
 <!ENTITY remoteXUL.longDesc "<p><ul><li>Sila hubungi pemilik laman web untuk memaklumkan masalah ini.</li></ul></p>">
 
 <!ENTITY sslv3Used.title "Tidak dapat Disambung dengan Selamat">
 <!-- LOCALIZATION NOTE (sslv3Used.longDesc) - Do not translate
      "SSL_ERROR_UNSUPPORTED_VERSION". -->
-<!ENTITY sslv3Used.longDesc "Info Lanjutan: SSL_ERROR_UNSUPPORTED_VERSION">
+<!ENTITY sslv3Used.longDesc "Info lanjutan: SSL_ERROR_UNSUPPORTED_VERSION">
 
 <!ENTITY weakCryptoUsed.title "Sambungan internet anda tidak selamat">
 <!-- LOCALIZATION NOTE (weakCryptoUsed.longDesc) - Do not translate
      "SSL_ERROR_NO_CYPHER_OVERLAP". -->
 <!ENTITY weakCryptoUsed.longDesc "Info Lanjutan: SSL_ERROR_NO_CYPHER_OVERLAP">
 
-<!ENTITY inadequateSecurityError.title "Sambungan anda tidak selamat">
+<!ENTITY inadequateSecurityError.title "Sambungan internet anda tidak selamat">
 <!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
      "NS_ERROR_NET_INADEQUATE_SECURITY". -->
-<!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> menggunakan teknologi keselamatan yang usang dan rentan kepada serangan. Penyerang dengan mudah mendedahkan maklumat yang anda fikir selamat. Pentadbir laman web perlu membaiki pelayan terlebih dahulu sebelum anda boleh melawat laman ini.</p><p>Error code: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
+<!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> menggunakan teknologi keselamatan yang usang dan terdedah kepada serangan. Penyerang dengan mudah boleh mendedahkan maklumat yang anda fikir selamat. Pentadbir laman web perlu membaiki pelayan terlebih dahulu sebelum anda boleh melawat laman ini.</p><p>Kod ralat: NS_ERROR_NET_INADEQUATE_SECURITY</p>">

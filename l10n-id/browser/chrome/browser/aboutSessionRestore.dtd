@@ -2,22 +2,23 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY restorepage.tabtitle       "Pengembalian Sesi">
+<!ENTITY restorepage.tabtitle       "Pulihkan Sesi">
 
 <!-- LOCALIZATION NOTE: The title is intended to be apologetic and disarming, expressing dismay
      and regret that we are unable to restore the session for the user -->
-<!ENTITY restorepage.errorTitle     "Tampaknya hal ini cukup memalukan.">
-<!ENTITY restorepage.problemDesc    "&brandShortName; mengalami masalah saat mencoba mengembalikan jendela dan tab dari sesi sebelumnya. Umumnya masalah ini disebabkan oleh laman web terakhir yang dibuka.">
-<!ENTITY restorepage.tryThis        "Anda bisa mencoba untuk:">
-<!ENTITY restorepage.restoreSome    "Membuang satu atau beberapa tab yang mungkin menyebabkan masalah ini">
-<!ENTITY restorepage.startNew       "Memulai sesi penjelajahan baru">
+<!ENTITY restorepage.errorTitle2    "Maaf. Kami kesulitan mendapatkan kembali laman Anda.">
+<!ENTITY restorepage.problemDesc2   "Kami kesulitan memulihkan sesi penjelajahan terakhir Anda. Pilih Pulihkan Sesi untuk mencoba lagi.">
+<!ENTITY restorepage.tryThis2       "Masih tidak bisa memulihkan sesi Anda? Kadang tab adalah penyebabnya. Lihat tab sebelumnya, hapus centang dari tab yang tidak Anda perlukan, dan kemudian pulihkan.">
 
-<!ENTITY restorepage.tryagainButton "Kembalikan">
-<!ENTITY restorepage.restore.access "K">
-<!ENTITY restorepage.closeButton    "Tutup">
-<!ENTITY restorepage.close.access   "T">
+<!ENTITY restorepage.hideTabs       "Sembunyikan Tab Sebelumnya">
+<!ENTITY restorepage.showTabs       "Lihat Tab Sebelumnya">
 
-<!ENTITY restorepage.restoreHeader  "Kembalikan">
+<!ENTITY restorepage.tryagainButton2 "Pulihkan Sesi">
+<!ENTITY restorepage.restore.access2 "P">
+<!ENTITY restorepage.closeButton2    "Mulai Sesi Baru">
+<!ENTITY restorepage.close.access2   "B">
+
+<!ENTITY restorepage.restoreHeader  "Pulihkan">
 <!ENTITY restorepage.listHeader     "Judul Jendela dan Tab">
 <!-- LOCALIZATION NOTE: &#37;S will be replaced with a number. -->
 <!ENTITY restorepage.windowLabel    "Jendela &#037;S">

@@ -82,17 +82,11 @@
 <!ENTITY options.enableRemote.label3    "Rmed taseɣtit tanmeggagt">
 <!ENTITY options.enableRemote.tooltip2  "Armad n uɣewwaṛ-agi ad k-yeǧǧ ad tesqedceḍ ifecka n tneflit di tseɣtit n tummant tanmeggagt am Firefox OS">
 
-<!-- LOCALIZATION NOTE (options.enableWorkers.label): This is the label for the
-  -  checkbox that toggles worker debugging, i.e. devtools.debugger.workers
-  -  boolean preference in about:config, in the options panel. -->
-<!ENTITY options.enableWorkers.label    "Rmen tasertit worker (di tneflit)">
-<!ENTITY options.enableWorkers.tooltip  "Ma tremdeḍ asfren-a. Aya ad isireg ifecka n tneflit akken ad seɣtin inmahalen">
-
 <!-- LOCALIZATION NOTE (options.disableJavaScript.label,
   -  options.disableJavaScript.tooltip): This is the options panel label and
   -  tooltip for the checkbox that toggles JavaScript on or off. -->
 <!ENTITY options.disableJavaScript.label     "Ssens JavaScript *">
-<!ENTITY options.disableJavaScript.tooltip   "Armad n uɣewwaṛ-agi ad irermed JavaScript i yiccer amiran. Aɣewwaṛ-agi ad ittwattu ticki tmedleḍ iccer neɣ tanaka n ifecka.">
+<!ENTITY options.disableJavaScript.tooltip   "Armad n uɣewwaṛ-agi ad isens JavaScript i yiccer amiran. Aɣewwaṛ-agi ad ittwattu ticki tmedleḍ iccer neɣ tanaka n ifecka.">
 
 <!-- LOCALIZATION NOTE (options.disableHTTPCache.label,
   -  options.disableHTTPCache.tooltip): This is the options panel label and
@@ -151,19 +145,14 @@
 <!ENTITY options.debugger.label            "Tamseɣtayt">
 
 <!-- LOCALIZATION NOTE (options.sourceMap.label): This is the
-   - label for the checkbox that toggles source maps in the Debugger -->
+   - label for the checkbox that toggles source maps in all tools -->
 <!ENTITY options.sourceMaps.label      "Rmed aɣbalu n tifelwiyi ">
-<!ENTITY options.sourceMaps.tooltip    "Ma tremdeḍ aɣewwaṛ-agi, iɣbula ad ttwaqqnen di temseɣtayt akked tdiwent.">
+<!ENTITY options.sourceMaps.tooltip1   "Ma tremdeḍ aɣewwar-agi Taɣbalut ad tt-ttwacreḍ deg ufecku.">
 
 <!-- LOCALIZATION NOTE (options.styleeditor.label): This is the label for the
   -  heading of the group of Style Editor preferences in the options
   -  panel. -->
 <!ENTITY options.styleeditor.label            "Amaẓrag n uɣanib">
-
-<!-- LOCALIZATION NOTE (options.stylesheetSourceMaps.label): This is the
-   - label for the checkbox that toggles showing original sources in the Style Editor -->
-<!ENTITY options.stylesheetSourceMaps.label      "Sken tiɣbula tinezliyin">
-<!ENTITY options.stylesheetSourceMaps.tooltip    "Sken ti qbula tinezliyin (amedya: ifuyla Sass) deg umaẓrag n uɣanib d umaswaḍ">
 
 <!-- LOCALIZATION NOTE (options.stylesheetAutocompletion.label): This is the
    - label for the checkbox that toggles autocompletion of css in the Style Editor -->
@@ -184,18 +173,6 @@
    - label for the checkbox that toggles the camera shutter audio for screenshot tool -->
 <!ENTITY options.screenshot.audio.label      "Γeṛ ameslaw n tkamirat">
 <!ENTITY options.screenshot.audio.tooltip    "Ad irmed amesalw n tkamirat m'ara ad teṭfeḍ agdil">
-
-<!-- LOCALIZATION NOTE (options.commonprefs): This is the label for the heading
-      of all preferences that affect both the Web Console and the Network
-      Monitor -->
-<!ENTITY options.commonPrefs.label           "Ismentifen imatuten">
-
-<!-- LOCALIZATION NOTE (options.enablePersistentLogs.label): This is the
-  -  label for the checkbox that toggles persistent logs in the Web Console and
-  -  network monitor,  i.e. devtools.webconsole.persistlog a boolean preference in
-  -  about:config, in the options panel. -->
-<!ENTITY options.enablePersistentLogs.label    "Rmed asniɣmes yezgan">
-<!ENTITY options.enablePersistentLogs.tooltip  "Ma tremdeḍ aɣewwar-agi, tadiwent web d asekrak n uẓeṭṭa ur isfaḍ ara inekcam yal tikelt ad tinigeḍ ɣeṛ usebter amaynut">
 
 <!-- LOCALIZATION NOTE (options.showPlatformData.label): This is the
   -  label for the checkbox that toggles the display of the platform data in the,

@@ -59,8 +59,8 @@
 <!ENTITY cmd.properties.accesskey  "і">
 
 <!ENTITY cmd.sortby_name.label              "Впорядкувати за назвою">
-<!ENTITY cmd.sortby_name.accesskey          "о">
-<!ENTITY cmd.context_sortby_name.accesskey  "С">
+<!ENTITY cmd.sortby_name.accesskey          "В">
+<!ENTITY cmd.context_sortby_name.accesskey  "В">
 
 <!ENTITY cmd.new_bookmark.label            "Нова закладка…">
 <!ENTITY cmd.new_bookmark.accesskey        "з">
@@ -85,7 +85,8 @@
 <!ENTITY col.dateadded.label     "Додано">
 <!ENTITY col.lastmodified.label  "Остання зміна">
 
-<!ENTITY search.placeholder  "Пошук">
+<!ENTITY historySearch.placeholder  "Шукати в історії">
+<!ENTITY bookmarksSearch.placeholder  "Шукати закладки">
 
 <!ENTITY cmd.find.key  "f">
 

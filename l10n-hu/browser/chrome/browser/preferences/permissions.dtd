@@ -5,14 +5,14 @@
 <!ENTITY window.title                 "Kivételek">
 <!ENTITY window.width                 "55em">
 
-<!ENTITY treehead.sitename2.label     "Webhely">
+<!ENTITY treehead.sitename2.label     "Weboldal">
 <!ENTITY treehead.status.label        "Állapot">
-<!ENTITY removepermission2.label      "Webhely eltávolítása">
-<!ENTITY removepermission2.accesskey  "e">
-<!ENTITY removeallpermissions2.label  "Összes webhely eltávolítása">
-<!ENTITY removeallpermissions2.accesskey "t">
-<!ENTITY address.label                "Webhely címe:">
-<!ENTITY address.accesskey            "h">
+<!ENTITY removepermission2.label      "Weboldal eltávolítása">
+<!ENTITY removepermission2.accesskey  "v">
+<!ENTITY removeallpermissions2.label  "Minden weboldal eltávolítása">
+<!ENTITY removeallpermissions2.accesskey "M">
+<!ENTITY address2.label               "Weboldal címe">
+<!ENTITY address2.accesskey           "o">
 <!ENTITY block.label                  "Tiltás">
 <!ENTITY block.accesskey              "T">
 <!ENTITY session.label                "Engedélyezés a munkamenetben">
@@ -26,3 +26,4 @@
 <!ENTITY button.ok.label              "Változtatások mentése">
 <!ENTITY button.ok.accesskey          "V">
 
+<!ENTITY searchbox.placeholder        "Weboldal keresése">

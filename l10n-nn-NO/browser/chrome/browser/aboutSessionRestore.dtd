@@ -6,16 +6,17 @@
 
 <!-- LOCALIZATION NOTE: The title is intended to be apologetic and disarming, expressing dismay
      and regret that we are unable to restore the session for the user -->
-<!ENTITY restorepage.errorTitle     "Ein greidde diverre ikkje å byggje oppatt fanene.">
-<!ENTITY restorepage.problemDesc    "&brandShortName; klarer ikkje å byggje oppatt vindauge og faner. Dette skuldast vanlegvis ei nyleg opna nettside.">
-<!ENTITY restorepage.tryThis        "Du kan prøve å:">
-<!ENTITY restorepage.restoreSome    "fjerne ei eller fleire faner som du trur kan ha vore årsak til problemet">
-<!ENTITY restorepage.startNew       "starte ei heilt ny nettlesarøkt">
+<!ENTITY restorepage.errorTitle2    "Beklagar. Vi har problem med å få sidene dine tilbake.">
+<!ENTITY restorepage.problemDesc2   "Vi har probleme med å byggje oppatt den siste nettlesarøkta di. Velg Bygg oppatt programøkt for å prøve på nytt.">
+<!ENTITY restorepage.tryThis2       "Kan du framleis ikkje byggje oppat programøkta di? Nokre gongar er ei fane orsak til problemet. Sjå over tidlegare faner, fjern merket frå fanene du ikkje treng å byggje oppatt, og bygg oppatt deretter.">
 
-<!ENTITY restorepage.tryagainButton "Bygg oppatt">
-<!ENTITY restorepage.restore.access "G">
-<!ENTITY restorepage.closeButton    "Lukk">
-<!ENTITY restorepage.close.access   "L">
+<!ENTITY restorepage.hideTabs       "Gøym tidlegare faner">
+<!ENTITY restorepage.showTabs       "Vis tidlegare faner">
+
+<!ENTITY restorepage.tryagainButton2 "Bygg oppatt programøkta">
+<!ENTITY restorepage.restore.access2 "B">
+<!ENTITY restorepage.closeButton2    "Start ny programøkt">
+<!ENTITY restorepage.close.access2   "n">
 
 <!ENTITY restorepage.restoreHeader  "Bygg oppatt">
 <!ENTITY restorepage.listHeader     "Vindauge og faner">
@@ -31,8 +32,8 @@
 
 <!ENTITY welcomeback2.tabtitle      "Vellykka!">
 
-<!ENTITY welcomeback2.pageTitle     "Vellukka!">
-<!ENTITY welcomeback2.pageInfo1     "&brandShortName; er klar for å køyre.">
+<!ENTITY welcomeback2.pageTitle     "Vellykka!">
+<!ENTITY welcomeback2.pageInfo1     "&brandShortName; er klar.">
 
 <!ENTITY welcomeback2.restoreAll.label  "Bygg oppatt alle vindauge og faner">
 <!ENTITY welcomeback2.restoreSome.label "Bygg oppatt berre dei du ønskjer å ha">

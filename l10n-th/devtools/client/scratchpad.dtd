@@ -48,7 +48,7 @@
 
 <!ENTITY closeCmd.label               "ปิด">
 <!ENTITY closeCmd.key                 "W">
-<!ENTITY closeCmd.accesskey           "ด">
+<!ENTITY closeCmd.accesskey           "ป">
 
 <!ENTITY viewMenu.label               "มุมมอง">
 <!ENTITY viewMenu.accesskey           "ม">
@@ -59,12 +59,19 @@
 <!ENTITY wordWrap.label                "ตัดคำข้อความ">
 <!ENTITY wordWrap.accesskey            "ต">
 
+<!ENTITY highlightTrailingSpace.accesskey "H">
 
+<!ENTITY largerFont.label             "ฟอนต์ใหญ่ขึ้น">
+<!ENTITY largerFont.accesskey         "a">
 <!ENTITY largerFont.commandkey        "+">
 <!ENTITY largerFont.commandkey2       "="> <!-- + is above this key on many keyboards -->
 
+<!ENTITY smallerFont.label            "ฟอนต์เล็กลง">
+<!ENTITY smallerFont.accesskey        "M">
 <!ENTITY smallerFont.commandkey       "-">
 
+<!ENTITY normalSize.label             "ขนาดปกติ">
+<!ENTITY normalSize.accesskey         "N">
 <!ENTITY normalSize.commandkey        "0">
 
 <!ENTITY editMenu.label               "แก้ไข">
@@ -82,6 +89,7 @@
 <!ENTITY display.accesskey            "ส">
 <!ENTITY display.key                  "l">
 
+<!ENTITY pprint.key                   "p">
 
 <!-- LOCALIZATION NOTE (environmentMenu.label, accesskey): This menu item was
   -  renamed from "Context" to avoid confusion with the right-click context
@@ -139,3 +147,4 @@
 <!-- LOCALIZATION NOTE (evalFunction.label): This command allows the developer
   -  to evaluate the top-level function that the cursor is currently at.
   -->
+<!ENTITY evalFunction.key "e">

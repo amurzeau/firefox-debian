@@ -255,8 +255,7 @@
 <!ENTITY pluginDeprecation.description "Kaut kas pietrūkst? Dažus spraudņus &brandShortName; vairs neatbalsta.">
 <!ENTITY pluginDeprecation.learnMore "Uzzināt vairāk.">
 
-<!ENTITY legacyWarning.description "Kaut kas pietrūkst? Dažus spraudņus &brandShortName; vairs neatbalsta.">
-<!ENTITY legacyWarning.showLegacy "Rādīt visus papildinājumus">
+<!ENTITY legacyWarning.showLegacy "Rādīt vēsturiskos papildinājumus">
 <!ENTITY legacyExtensions.title "Vēsturiskie papildinājumi">
 <!ENTITY legacyExtensions.description "Šie paplašinājumi neatbilst pašreizējiem &brandShortName; standartiem, tāpēc tie tika deaktivizēti.">
 <!ENTITY legacyExtensions.learnMore "Uzzināt vairāk par papildinājumu izmaiņām">

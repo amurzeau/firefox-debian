@@ -14,16 +14,16 @@
 <!ENTITY  trackingProtectionLearnMore.label    "Fræðast meira">
 <!ENTITY  trackingProtectionExceptions.label   "Undanþágur…">
 <!ENTITY  trackingProtectionExceptions.accesskey "U">
-<!-- LOCALIZATION NOTE (trackingProtectionPBM5.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel. -->
 
+<!-- LOCALIZATION NOTE (trackingProtectionPBM5.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel. -->
 <!ENTITY trackingProtectionPBM5.label         "Nota vörn gegn gagnasöfnun í huliðsgluggum">
 <!ENTITY trackingProtectionPBM5.accesskey     "v">
 <!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the nightly channel. -->
 <!ENTITY trackingProtectionPBM6.label         "Nota vörn gegn gagnasöfnun í huliðsgluggum til að loka á þekkta gagnasafnara">
 <!ENTITY trackingProtectionPBM6.accesskey     "v">
 <!ENTITY trackingProtectionPBMLearnMore.label "Fræðast meira">
-
-
+<!ENTITY changeBlockList2.label               "Breyta lokunarlista…">
+<!ENTITY changeBlockList2.accesskey           "B">
 
 <!ENTITY  doNotTrack.description        "Senda vefsvæðum “Do Not Track” merki um að þú viljir ekki láta fylgjast með þér">
 <!ENTITY  doNotTrack.learnMore.label    "Fræðast meira">
@@ -33,9 +33,10 @@
 <!ENTITY  history.label                 "Ferill">
 <!ENTITY  permissions.label             "Heimildir">
 
+<!ENTITY  addressBar.label              "Staðsetningarslá">
 <!ENTITY  addressBar.suggest.label      "Þegar ég nota staðsetningarslá, stinga upp á:">
-
-
+<!ENTITY  locbar.history2.label         "Leitarsaga">
+<!ENTITY  locbar.history2.accesskey     "L">
 <!ENTITY  locbar.bookmarks.label        "Bókamerki">
 <!ENTITY  locbar.bookmarks.accesskey    "k">
 <!ENTITY  locbar.openpage.label         "Opnir flipar">
@@ -45,16 +46,17 @@
 
 <!ENTITY  suggestionSettings2.label     "Breyta stillingum fyrir ábendingar leitarvéla">
 
+<!ENTITY  acceptCookies2.label          "Þiggja smákökur frá vefsvæðum">
+<!ENTITY  acceptCookies2.accesskey      "Þ">
 
-
-<!ENTITY  acceptThirdParty.pre.label      "Þiggja smákökur frá þriðja aðila:">
-<!ENTITY  acceptThirdParty.pre.accesskey  "Þ">
+<!ENTITY  acceptThirdParty2.pre.label     "Þiggja smákökur frá þriðja aðila">
+<!ENTITY  acceptThirdParty2.pre.accesskey "Þ">
 <!ENTITY  acceptThirdParty.always.label   "Alltaf">
 <!ENTITY  acceptThirdParty.never.label    "Aldrei">
 <!ENTITY  acceptThirdParty.visited.label  "Frá heimsóttum síðum">
 
-<!ENTITY  keepUntil.label               "Eiga þangað til:">
-<!ENTITY  keepUntil.accesskey           "E">
+<!ENTITY  keepUntil2.label              "Eiga þangað til">
+<!ENTITY  keepUntil2.accesskey          "E">
 
 <!ENTITY  expire.label                  "þær renna út">
 <!ENTITY  close.label                   "ég loka &brandShortName;">
@@ -73,10 +75,10 @@
 <!ENTITY  historyHeader.post.label         "">
 
 <!ENTITY  rememberDescription.label      "&brandShortName; mun geyma vöfrun, niðurhal, eyðublöð og leitarferil, og geyma smákökur frá þeim vefsvæðum sem þú heimsækir.">
+
 <!-- LOCALIZATION NOTE (rememberActions.pre.label): include a trailing space as needed -->
 <!-- LOCALIZATION NOTE (rememberActions.middle.label): include a starting and trailing space as needed -->
 <!-- LOCALIZATION NOTE (rememberActions.post.label): include a starting space as needed -->
-
 <!ENTITY  rememberActions.pre.label           "Ef þú vilt getur þú ">
 <!ENTITY  rememberActions.clearHistory.label  "hreinsað nýlega ferla">
 <!ENTITY  rememberActions.middle.label        ", eða ">
@@ -84,9 +86,9 @@
 <!ENTITY  rememberActions.post.label          ".">
 
 <!ENTITY  dontrememberDescription.label  "&brandShortName; mun nota sömu stillingar og í huliðsstillingu, og geyma ekki vafraferil.">
+
 <!-- LOCALIZATION NOTE (dontrememberActions.pre.label): include a trailing space as needed -->
 <!-- LOCALIZATION NOTE (dontrememberActions.post.label): include a starting space as needed -->
-
 <!ENTITY  dontrememberActions.pre.label          "Þú getur líka ">
 <!ENTITY  dontrememberActions.clearHistory.label "hreinsað núverandi feril">
 <!ENTITY  dontrememberActions.post.label         ".">
@@ -111,3 +113,8 @@
 <!ENTITY  browserContainersEnabled.accesskey    "n">
 <!ENTITY  browserContainersSettings.label        "Stillingar…">
 <!ENTITY  browserContainersSettings.accesskey    "i">
+
+<!ENTITY  a11yPrivacy.checkbox.label     "Koma í veg fyrir að aðgengis þjónustur geti skoðað vafra">
+<!ENTITY  a11yPrivacy.checkbox.accesskey "a">
+<!ENTITY  a11yPrivacy.learnmore.label    "Fræðast meira">
+<!ENTITY enableSafeBrowsingLearnMore.label "Fræðast meira">

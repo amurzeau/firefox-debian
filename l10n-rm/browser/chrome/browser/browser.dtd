@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!-- LOCALIZATION NOTE : FILE This file contains the browser main menu items -->
-<!-- LOCALIZATION NOTE : FILE Do not translate commandkeys --> 
+<!-- LOCALIZATION NOTE : FILE Do not translate commandkeys -->
 
 <!-- LOCALIZATION NOTE (mainWindow.title): DONT_TRANSLATE -->
 <!ENTITY mainWindow.title "&brandFullName;">
@@ -23,6 +23,10 @@
 <!ENTITY  reloadTab.accesskey                "r">
 <!ENTITY  reloadAllTabs.label                "Chargiar danovamain tut ils tabs">
 <!ENTITY  reloadAllTabs.accesskey            "t">
+<!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
+a tab (i.e. it is a verb, not adjective). -->
+<!ENTITY  duplicateTab.label                 "Duplitgar il tab">
+<!ENTITY  duplicateTab.accesskey             "D">
 <!-- LOCALIZATION NOTE (closeTabsToTheEnd.label): This should indicate the
 direction in which tabs are closed, i.e. locales that use RTL mode should say
 left instead of right. -->
@@ -46,6 +50,7 @@ can reach it easily. -->
 <!ENTITY  sendPageToDevice.accesskey         "a">
 <!ENTITY  sendLinkToDevice.label             "Trametter la colliaziun ad in apparat">
 <!ENTITY  sendLinkToDevice.accesskey         "a">
+<!ENTITY  sendToDeviceFeedback.label         "Tramess!">
 <!ENTITY  moveToNewWindow.label              "Spustar en ina nova fanestra">
 <!ENTITY  moveToNewWindow.accesskey          "n">
 <!ENTITY  bookmarkAllTabs.label              "Agiuntar in segnapagina per mintga tab…">
@@ -95,6 +100,13 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY pageSourceCmd.label "Mussar il code da funtauna da la pagina">
 <!ENTITY pageSourceCmd.accesskey "c">
 <!ENTITY pageSourceCmd.commandkey "u">
+<!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
+Option+Command keyboard shortcut letter that Safari and Chrome use for "View
+Source" on macOS. pageSourceCmd.commandkey above is Firefox's official keyboard
+shortcut shown in the GUI. SafariCommandKey is an alias provided for the
+convenience of Safari and Chrome users on macOS. See bug 1398988. -->
+<!ENTITY pageSourceCmd.SafariCommandKey "u">
+
 <!ENTITY pageInfoCmd.label "Infurmaziuns davart la pagina">
 <!ENTITY pageInfoCmd.accesskey "s">
 <!ENTITY pageInfoCmd.commandkey "i">
@@ -161,23 +173,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisPageCmd.label "Agiuntar in segnapagina…">
 <!ENTITY editThisBookmarkCmd.label "Modifitgar quest segnapagina">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
-<!-- LOCALIZATION NOTE (findShareServices.label):
-  -  Use the unicode ellipsis char, \u2026,
-  -  or use "..." if \u2026 doesn't suit traditions in your locale. -->
-<!ENTITY findShareServices.label "Dapli servetschs da cundivider…">
-<!ENTITY sharePageCmd.label "Cundivider questa pagina">
-<!ENTITY sharePageCmd.commandkey "S">
-<!ENTITY sharePageCmd.accesskey "s">
-<!-- LOCALIZATION NOTE (shareLink.accesskey): must be different than the following share access keys -->
-<!ENTITY shareLink.label "Cundivider questa colliaziun">
-<!ENTITY shareLink.accesskey "c">
-<!ENTITY shareImage.label "Cundivider quest maletg">
-<!ENTITY shareImage.accesskey "s">
-<!ENTITY shareSelect.label "Cundivider la selecziun">
-<!ENTITY shareSelect.accesskey "s">
-<!ENTITY shareVideo.label "Cundivider quest video">
-<!ENTITY shareVideo.accesskey "s">
-<!ENTITY feedsMenu2.label "Abunar questa pagina">
+
 <!ENTITY subscribeToPageMenupopup.label "Abunar questa pagina">
 <!ENTITY subscribeToPageMenuitem.label "Abunar questa pagina…">
 <!ENTITY addCurPagesCmd.label "Agiuntar segnapaginas per tut ils tabs…">
@@ -243,14 +239,18 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarksButton.label          "Segnapaginas">
 <!ENTITY bookmarksCmd.commandkey "b">
 
-<!ENTITY bookmarksMenuButton.label          "Segnapaginas">
-<!ENTITY bookmarksMenuButton.other.label "Auters segnapaginas">
-<!ENTITY bookmarksMenuButton.mobile.label "Segnapaginas mobils">
+<!ENTITY bookmarksSubview.label             "Segnapaginas">
+<!ENTITY bookmarksMenuButton2.label         "Menu da segnapaginas">
+<!ENTITY bookmarksMenuButton.other.label    "Auters segnapaginas">
+<!ENTITY bookmarksMenuButton.mobile.label   "Segnapaginas mobils">
 <!ENTITY viewBookmarksSidebar2.label        "Mussar la trav laterala da segnapaginas">
+<!ENTITY hideBookmarksSidebar.label         "Zuppentar la trav laterala dals segnapaginas">
 <!ENTITY viewBookmarksToolbar.label         "Mussar la trav d'utensils da segnapaginas">
+<!ENTITY hideBookmarksToolbar.label         "Zuppentar la trav d'utensils da segnapaginas">
 <!ENTITY searchBookmarks.label              "Tschertgar en ils segnapaginas">
-
-<!ENTITY containersMenu.label "Containers">
+<!ENTITY bookmarkingTools.label             "Utensils da segnapaginas">
+<!ENTITY addBookmarksMenu.label             "Agiuntar il menu da segnapaginas a la trav d'utensils">
+<!ENTITY removeBookmarksMenu.label          "Allontanar il menu da segnapaginas da la trav d'utensils">
 
 <!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
@@ -262,18 +262,21 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY historySidebarCmd.commandKey   "H">
 
 <!ENTITY toolsMenu.label              "Utensils">
-<!ENTITY toolsMenu.accesskey          "U"> 
+<!ENTITY toolsMenu.accesskey          "U">
 
 <!ENTITY keywordfield.label           "Agiuntar in pled magic per questa tschertga…">
 <!ENTITY keywordfield.accesskey       "s">
 
 <!ENTITY downloads.label              "Telechargiadas">
+<!-- LOCALIZATION NOTE (libraryDownloads.label): This label is similar to
+  -  downloads.label, but used in the Library panel. -->
+<!ENTITY libraryDownloads.label       "Telechargiadas">
 <!ENTITY downloads.accesskey          "D">
 <!ENTITY downloads.commandkey         "j">
 <!ENTITY downloadsUnix.commandkey     "y">
 <!ENTITY addons.label                 "Supplements">
 <!ENTITY addons.accesskey             "S">
-<!ENTITY addons.commandkey            "S">
+<!ENTITY addons.commandkey            "A">
 
 <!ENTITY webDeveloperMenu.label       "Sviluppaders dal web">
 <!ENTITY webDeveloperMenu.accesskey   "w">
@@ -281,7 +284,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY inspectContextMenu.label     "Inspectar l'element">
 <!ENTITY inspectContextMenu.accesskey "I">
 
-<!ENTITY fileMenu.label         "Datoteca"> 
+<!ENTITY fileMenu.label         "Datoteca">
 <!ENTITY fileMenu.accesskey       "D">
 <!ENTITY newUserContext.label             "Nov tab da container">
 <!ENTITY newUserContext.accesskey         "C">
@@ -292,45 +295,45 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY newPrivateWindow.accesskey "e">
 <!ENTITY newNonRemoteWindow.label   "Nova fanestra betg e10s">
 
-<!ENTITY editMenu.label         "Modifitgar"> 
-<!ENTITY editMenu.accesskey       "M"> 
-<!ENTITY undoCmd.label            "Revocar">  
-<!ENTITY undoCmd.key            "Z">  
-<!ENTITY undoCmd.accesskey          "R"> 
-<!ENTITY redoCmd.label            "Restituir">  
-<!ENTITY redoCmd.key            "Y">  
-<!ENTITY redoCmd.accesskey          "R"> 
-<!ENTITY cutCmd.label           "Tagliar ora">  
-<!ENTITY cutCmd.key             "X">  
-<!ENTITY cutCmd.accesskey         "a"> 
-<!ENTITY copyCmd.label            "Copiar">  
-<!ENTITY copyCmd.key            "C">  
-<!ENTITY copyCmd.accesskey          "C"> 
-<!ENTITY pasteCmd.label           "Encollar">  
-<!ENTITY pasteCmd.key           "V">  
-<!ENTITY pasteCmd.accesskey         "E"> 
-<!ENTITY deleteCmd.label          "Stizzar">  
-<!ENTITY deleteCmd.key            "D">  
-<!ENTITY deleteCmd.accesskey        "S"> 
-<!ENTITY selectAllCmd.label         "Selecziunar tut">  
-<!ENTITY selectAllCmd.key         "A">  
-<!ENTITY selectAllCmd.accesskey       "t"> 
+<!ENTITY editMenu.label         "Modifitgar">
+<!ENTITY editMenu.accesskey       "M">
+<!ENTITY undoCmd.label            "Revocar">
+<!ENTITY undoCmd.key            "Z">
+<!ENTITY undoCmd.accesskey          "R">
+<!ENTITY redoCmd.label            "Restituir">
+<!ENTITY redoCmd.key            "Y">
+<!ENTITY redoCmd.accesskey          "R">
+<!ENTITY cutCmd.label           "Tagliar ora">
+<!ENTITY cutCmd.key             "X">
+<!ENTITY cutCmd.accesskey         "a">
+<!ENTITY copyCmd.label            "Copiar">
+<!ENTITY copyCmd.key            "C">
+<!ENTITY copyCmd.accesskey          "C">
+<!ENTITY pasteCmd.label           "Encollar">
+<!ENTITY pasteCmd.key           "V">
+<!ENTITY pasteCmd.accesskey         "E">
+<!ENTITY deleteCmd.label          "Stizzar">
+<!ENTITY deleteCmd.key            "D">
+<!ENTITY deleteCmd.accesskey        "S">
+<!ENTITY selectAllCmd.label         "Selecziunar tut">
+<!ENTITY selectAllCmd.key         "A">
+<!ENTITY selectAllCmd.accesskey       "t">
 <!ENTITY preferencesCmd2.label       "Preferenzas">
 <!ENTITY preferencesCmd2.accesskey     "e">
 <!ENTITY preferencesCmdUnix.label       "Preferenzas">
-<!ENTITY preferencesCmdUnix.accesskey     "e"> 
+<!ENTITY preferencesCmdUnix.accesskey     "e">
 
 <!ENTITY clearRecentHistory.label               "Stizzar la cronologia pli nova…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
 
-<!ENTITY viewMenu.label         "Vista"> 
-<!ENTITY viewMenu.accesskey       "V"> 
-<!ENTITY viewToolbarsMenu.label       "Travs da simbols"> 
-<!ENTITY viewToolbarsMenu.accesskey     "T"> 
+<!ENTITY viewMenu.label         "Vista">
+<!ENTITY viewMenu.accesskey       "V">
+<!ENTITY viewToolbarsMenu.label       "Travs da simbols">
+<!ENTITY viewToolbarsMenu.accesskey     "T">
 <!ENTITY viewSidebarMenu.label "Trav laterala">
 <!ENTITY viewSidebarMenu.accesskey "T">
-<!ENTITY viewCustomizeToolbar.label       "Persunalisar…"> 
+<!ENTITY viewCustomizeToolbar.label       "Persunalisar…">
 <!ENTITY viewCustomizeToolbar.accesskey     "a">
 <!ENTITY overflowCustomizeToolbar.label       "Modifitgar la trav da simbols…">
 <!ENTITY overflowCustomizeToolbar.accesskey   "M">
@@ -349,7 +352,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuCustomize.tooltip "Persunalisar il menu e las travs d'utensils">
 <!ENTITY appMenuCustomizeExit.label "Serrar il modus da persunalisar">
 <!ENTITY appMenuCustomizeExit.tooltip "Terminar il persunalisar">
-<!ENTITY appMenuHistory.label "Cronologia">
 <!ENTITY appMenuHistory.showAll.label "Mussar l'entira cronologia">
 <!ENTITY appMenuHistory.clearRecent.label "Stizzar la cronologia la pli nova…">
 <!ENTITY appMenuHistory.restoreSession.label "Restaurar l'ultima sesida">
@@ -383,6 +385,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "S'annunziar tar Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Administrar apparats…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Mussar la trav laterala dals tabs sincronisads">
+
+<!ENTITY appMenuRecentHighlights.label "Ultims accents">
 
 <!ENTITY customizeMenu.addToToolbar.label "Agiuntar a la trav d'utensils">
 <!ENTITY customizeMenu.addToToolbar.accesskey "A">
@@ -531,7 +535,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY reloadFrameCmd.accesskey     "r">
 <!ENTITY viewPartialSourceForSelectionCmd.label "Mussar il code da funtauna da la selecziun">
 <!ENTITY viewPartialSourceForMathMLCmd.label    "Mussar la funtauna MathML">
-<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both 
+<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both
          viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label -->
 <!ENTITY viewPartialSourceCmd.accesskey "A">
 <!ENTITY viewPageSourceCmd.label      "Mussar il code da funtauna da la pagina">
@@ -561,7 +565,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisLinkCmd.accesskey  "l">
 <!ENTITY bookmarkThisFrameCmd.label      "Agiuntar in segnapagina per il frame">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "A">
-<!ENTITY copyURLCmd.label             "Copiar l'URL">
+<!ENTITY pageAction.copyLink.label    "Copiar la colliaziun">
+<!ENTITY copyURLFeedback.label        "Copià!">
 <!ENTITY emailPageCmd.label           "Trametter la colliaziun per e-mail…">
 <!ENTITY emailPageCmd.accesskey       "E">
 <!ENTITY savePageCmd.label            "Memorisar la pagina sut…">
@@ -585,8 +590,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY emailImageCmd.accesskey      "a">
 <!ENTITY emailVideoCmd.label          "Trametter il video per e-mail…">
 <!ENTITY emailVideoCmd.accesskey      "a">
-<!ENTITY castVideoCmd.label           "Trametter il video ad in apparat">
-<!ENTITY castVideoCmd.accesskey       "e">
 <!ENTITY emailAudioCmd.label          "Trametter l'audio per e-mail…">
 <!ENTITY emailAudioCmd.accesskey      "a">
 <!ENTITY playPluginCmd.label          "Activar quest plug-in">
@@ -598,7 +601,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY copyImageCmd.label           "Copiar l'adressa da la grafica">
 <!ENTITY copyImageCmd.accesskey       "d">
 <!ENTITY copyImageContentsCmd.label   "Copiar la grafica">
-<!ENTITY copyImageContentsCmd.accesskey  "C"> 
+<!ENTITY copyImageContentsCmd.accesskey  "C">
 <!ENTITY copyVideoURLCmd.label        "Copiar l'adressa dal video">
 <!ENTITY copyVideoURLCmd.accesskey    "o">
 <!ENTITY copyAudioURLCmd.label        "Copiar l'adressa da l'audio">
@@ -694,13 +697,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY quitApplicationCmdWin2.tooltip     "Terminar &brandShorterName;">
 <!ENTITY goBackCmd.commandKey "[">
 <!ENTITY goForwardCmd.commandKey "]">
-<!ENTITY quitApplicationCmd.label       "Terminar"> 
+<!ENTITY quitApplicationCmd.label       "Terminar">
 <!ENTITY quitApplicationCmd.accesskey   "T">
 <!ENTITY quitApplicationCmdMac2.label   "Terminar &brandShorterName;">
 <!ENTITY quitApplicationCmd.key         "Q">
 
-<!ENTITY closeCmd.label                 "Serrar">  
-<!ENTITY closeCmd.key                   "W">  
+<!ENTITY closeCmd.label                 "Serrar">
+<!ENTITY closeCmd.key                   "W">
 <!ENTITY closeCmd.accesskey             "S">
 
 <!ENTITY toggleMuteCmd.key              "M">
@@ -802,6 +805,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Activescha la sincronisaziun da tabs per vesair ina glista dals tabs da tes auters apparats.">
+<!ENTITY syncedTabs.sidebar.searchPlaceholder  "Tschertgar en ils tabs sincronisads">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
                         syncedTabs.context.openAllInTabs.accesskey):
@@ -836,20 +840,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncReAuthItem.accesskey     "R">
 <!ENTITY syncToolbarButton.label      "Sincronisar">
 
-<!ENTITY social.addons.label "Administrar servertschs…">
-
-<!ENTITY social.directory.label "Register da servetschs">
-<!ENTITY social.directory.text "Ti pos activar servetschs da cundivider en il register.">
-<!ENTITY social.directory.button "Mussar il register">
-<!ENTITY social.directory.introText "Clicca sin in servetsch per al agiuntar a &brandShortName;.">
-<!ENTITY social.directory.viewmore.text "Mussar dapli">
-
-<!ENTITY customizeMode.menuAndToolbars.header2 "Ulteriurs utensils e funcziuns">
+<!ENTITY customizeMode.menuAndToolbars.header3 "Tira tes elements preferids en la trav d'utensils u en il menu extra.">
 <!ENTITY customizeMode.menuAndToolbars.empty "Vuls dapli utensils?">
 <!ENTITY customizeMode.menuAndToolbars.emptyLink "Tscherna da millis supplements">
 <!ENTITY customizeMode.restoreDefaults "Restaurar il standard">
 <!ENTITY customizeMode.done "Finì">
 <!ENTITY customizeMode.titlebar "Trav dal titel">
+<!ENTITY customizeMode.extraDragSpace "Spazi sur ils tabs per trair la fanestra">
 <!ENTITY customizeMode.toolbars2 "Travs d'utensils">
 <!ENTITY customizeMode.lwthemes "Designs">
 <!ENTITY customizeMode.lwthemes.myThemes "Mes designs">
@@ -880,6 +877,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.uidensity.menuTouch.accessKey "T">
 <!ENTITY customizeMode.uidensity.autoTouchMode.checkbox.label "Utilisar «Touch» per tablets">
 
+<!ENTITY customizeMode.autoHideDownloadsButton.label "Zuppar automaticamain">
+
 <!ENTITY getUserMedia.selectCamera.label "Camera per cundivider:">
 <!ENTITY getUserMedia.selectCamera.accesskey "C">
 <!ENTITY getUserMedia.selectMicrophone.label "Microfon per cundivider:">
@@ -904,16 +903,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY trackingProtection.block2.label "Activar la protecziun">
 <!ENTITY trackingProtection.block2.accesskey "A">
 
-<!ENTITY trackingContentBlocked.message "Fastizar">
-<!ENTITY trackingContentBlocked.moreinfo "Las parts da questa pagina che suondan tias activitads online èn vegnidas bloccadas.">
-<!ENTITY trackingContentBlocked.learnMore "Ulteriuras infurmaziuns">
-<!ENTITY trackingContentBlocked.options "Opziuns">
-<!ENTITY trackingContentBlocked.unblock2.label "Deactivar la protecziun per questa pagina">
-<!ENTITY trackingContentBlocked.unblock2.accesskey "D">
-<!ENTITY trackingContentBlocked.block.label "Activar la protecziun">
-<!ENTITY trackingContentBlocked.block.accesskey "E">
-<!ENTITY trackingContentBlocked.disabled.message "La protecziun cunter il fastizar è deactivada">
-
 <!ENTITY pluginNotification.showAll.label "Mussar tuts">
 <!ENTITY pluginNotification.showAll.accesskey "S">
 
@@ -930,8 +919,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pluginNotification.width "28em">
 
 <!ENTITY uiTour.infoPanel.close "Serrar">
-
-<!ENTITY appMenuSidebars.label         "Travs lateralas">
 
 <!-- LOCALIZATION NOTE: (panicButton.view.mainTimeframeDesc, panicButton.view.5min, panicButton.view.2hr, panicButton.view.day):
      The .mainTimeframeDesc string combined with any of the 3 others is meant to form a complete sentence, e.g. "Forget the last: Five minutes".
@@ -968,18 +955,18 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.acceptButton.accesskey "T">
 <!ENTITY updateAvailable.cancelButton.label "Betg ussa">
 <!ENTITY updateAvailable.cancelButton.accesskey "B">
-<!ENTITY updateAvailable.panelUI.label "Telechargiar l'actualisaziun da &brandShortName;">
+<!ENTITY updateAvailable.panelUI.label "Telechargiar l'actualisaziun da &brandShorterName;">
 
 <!ENTITY updateManual.message "Telechargia ina copia frestga da &brandShorterName; e nus ta gidain da l'installar.">
 <!ENTITY updateManual.whatsnew.label "Vesair las novaziuns.">
 <!ENTITY updateManual.header.message "Impussibel dad actualisar &brandShorterName; a la pli nova versiun.">
-<!ENTITY updateManual.acceptButton.label "Telechargiar &brandShortName;">
+<!ENTITY updateManual.acceptButton.label "Telechargiar &brandShorterName;">
 <!ENTITY updateManual.acceptButton.accesskey "T">
 <!ENTITY updateManual.cancelButton.label "Betg ussa">
 <!ENTITY updateManual.cancelButton.accesskey "B">
 <!ENTITY updateManual.panelUI.label "Telechargiar ina copia frestga da &brandShorterName;">
 
-<!ENTITY updateRestart.message "Suenter avair reavià &brandShorterName; vegnan ils tabs e las fanestras avertas restauradas.">
+<!ENTITY updateRestart.message2 "Suenter reaviar restaurescha &brandShorterName; tut tes tabs e tias fanestras avertas che n'èn betg en il modus privat.">
 <!ENTITY updateRestart.header.message2 "Reaviar per actualisar &brandShorterName;.">
 <!ENTITY updateRestart.acceptButton.label "Reaviar e restaurar">
 <!ENTITY updateRestart.acceptButton.accesskey "R">
@@ -991,5 +978,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageAction.addToUrlbar.label "Agiuntar a la trav d'adressas">
 <!ENTITY pageAction.removeFromUrlbar.label "Allontanar da la trav d'adressas">
 
-<!ENTITY sendToDevice.label2 "Trametter ad in apparat">
+<!ENTITY pageAction.sendTabToDevice.label "Trametter il tab ad in apparat">
 <!ENTITY sendToDevice.syncNotReady.label "Sincronisar apparats…">
+
+<!ENTITY libraryButton.tooltip "Mussar la cronologia, ils segnapaginas e dapli">
+
+<!-- LOCALIZATION NOTE: (accessibilityIndicator.tooltip): This is used to
+     display a tooltip for accessibility indicator in toolbar/tabbar. It is also
+     used as a textual label for the indicator used by assistive technology
+     users. -->
+<!ENTITY accessibilityIndicator.tooltip "Activà las funcziuns d'accessibilitad">

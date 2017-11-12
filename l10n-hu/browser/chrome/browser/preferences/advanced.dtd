@@ -29,8 +29,8 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "Az adatjelentést letiltották ehhez a binárishoz">
 
-<!ENTITY enableHealthReport1.label       "A &brandShortName; automatikusan technikai és interakciós adatokat küldhet a Mozillának">
-<!ENTITY enableHealthReport1.accesskey   "u">
+<!ENTITY enableHealthReport2.label       "Engedélyezés, hogy a &brandShortName; műszaki és interakciós adatokat küldjön a Mozillának">
+<!ENTITY enableHealthReport2.accesskey   "E">
 <!ENTITY healthReportLearnMore.label     "További tudnivalók">
 
 <!ENTITY dataCollection.label            "&brandShortName; adatgyűjtés és felhasználás">
@@ -96,7 +96,7 @@ available. -->
 <!ENTITY updateApplication.version.post  "">
 <!ENTITY updateApplication.description   "A következők engedélyezése a &brandShortName;nak:">
 <!ENTITY updateAuto3.label               "Frissítések automatikus telepítése (ajánlott)">
-<!ENTITY updateAuto3.accesskey           "a">
+<!ENTITY updateAuto3.accesskey           "A">
 <!ENTITY updateCheckChoose2.label        "Frissítések keresése, de a telepítés jóváhagyással történik">
 <!ENTITY updateCheckChoose2.accesskey    "k">
 <!ENTITY updateManual2.label             "Ne legyen frissítve (nem ajánlott)">
@@ -116,7 +116,7 @@ available. -->
 <!ENTITY offlineStorageNotifyExceptions.label     "Kivételek…">
 <!ENTITY offlineStorageNotifyExceptions.accesskey "K">
 
-<!ENTITY offlineAppsList2.label          "A következő webhelyek tárolhatnak adatokat kapcsolat nélküli használatra:">
+<!ENTITY offlineAppsList3.label          "A következő webhelyek tárolhatnak adatokat kapcsolat nélküli használatra">
 <!ENTITY offlineAppsList.height          "7em">
 <!ENTITY offlineAppsListRemove.label     "Eltávolítás…">
 <!ENTITY offlineAppsListRemove.accesskey "E">

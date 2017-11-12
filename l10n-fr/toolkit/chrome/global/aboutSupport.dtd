@@ -68,7 +68,7 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 
 <!ENTITY aboutSupport.appBasicsProfiles "Profils">
 
-<!ENTITY aboutSupport.appBasicsMultiProcessSupport "Fenêtres multi-processus">
+<!ENTITY aboutSupport.appBasicsMultiProcessSupport "Fenêtres multiprocessus">
 
 <!ENTITY aboutSupport.appBasicsProcessCount "Processus de contenu web">
 
@@ -111,6 +111,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.a11yActivated "Activée">
 <!ENTITY aboutSupport.a11yForceDisabled "Empêcher l’accessibilité">
 <!ENTITY aboutSupport.a11yHandlerUsed "Utilisation d’un gestionnaire accessible">
+<!ENTITY aboutSupport.a11yInstantiator "Générateur d’accessibilité">
 
 <!ENTITY aboutSupport.libraryVersionsTitle "Versions des bibliothèques">
 

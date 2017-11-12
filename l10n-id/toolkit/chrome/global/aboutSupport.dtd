@@ -66,6 +66,7 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 
 <!ENTITY aboutSupport.appBasicsMultiProcessSupport "Jendela Multiproses">
 
+<!ENTITY aboutSupport.appBasicsProcessCount "Proses Konten Web">
 
 <!ENTITY aboutSupport.appBasicsKeyGoogle "Kunci Google">
 <!ENTITY aboutSupport.appBasicsKeyMozilla "Kunci Layanan Lokasi Mozilla">
@@ -106,6 +107,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.a11yActivated "Aktif">
 <!ENTITY aboutSupport.a11yForceDisabled "Aksesibilitas Dicegah">
 <!ENTITY aboutSupport.a11yHandlerUsed "Penanganan Terakses Digunakan">
+<!ENTITY aboutSupport.a11yInstantiator "Accessibility Instantiator">
 
 <!ENTITY aboutSupport.libraryVersionsTitle "Versi Pustaka">
 
@@ -138,9 +140,13 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.graphicsWorkaroundsTitle "Solusi sementara">
 
 <!ENTITY aboutSupport.mediaTitle "Media">
+<!ENTITY aboutSupport.mediaOutputDevicesTitle "Peranti Keluaran">
+<!ENTITY aboutSupport.mediaInputDevicesTitle "Peranti Masukan">
 <!ENTITY aboutSupport.mediaDeviceName "Nama">
 <!ENTITY aboutSupport.mediaDeviceGroup "Grup">
 <!ENTITY aboutSupport.mediaDeviceVendor "Vendor">
+<!ENTITY aboutSupport.mediaDeviceState "Provinsi">
+<!ENTITY aboutSupport.mediaDevicePreferred "Disukai">
 <!ENTITY aboutSupport.mediaDeviceFormat "Format">
 <!ENTITY aboutSupport.mediaDeviceChannels "Kanal">
 <!ENTITY aboutSupport.mediaDeviceRate "Nilai">

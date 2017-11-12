@@ -56,13 +56,14 @@
 <!ENTITY cmd.show.accesskey               "F">
 <!ENTITY cmd.showMac.label                "Papar Dalam Finder">
 <!ENTITY cmd.showMac.accesskey            "F">
-<!ENTITY cmd.retry.label                  "Cuba semula">
+<!ENTITY cmd.showDownloads.label          "Papar Folder Muat turun">
+<!ENTITY cmd.retry.label                  "Cuba lagi">
 <!ENTITY cmd.goToDownloadPage.label       "Pergi Ke Halaman Muat turun">
 <!ENTITY cmd.goToDownloadPage.accesskey   "P">
 <!ENTITY cmd.copyDownloadLink.label       "Salin Pautan Muat Turun">
 <!ENTITY cmd.copyDownloadLink.accesskey   "P">
 <!ENTITY cmd.removeFromHistory.label      "Buang Daripada Sejarah">
-<!ENTITY cmd.removeFromHistory.accesskey  "e">
+<!ENTITY cmd.removeFromHistory.accesskey  "u">
 <!ENTITY cmd.clearList2.label             "Buang Panel Previu">
 <!ENTITY cmd.clearList2.accesskey         "a">
 <!ENTITY cmd.clearDownloads.label         "Buang Muat turun">
@@ -75,7 +76,7 @@
 <!-- LOCALIZATION NOTE (cmd.removeFile.label):
      This is the tooltip of the action button shown when malware is blocked.
      -->
-<!ENTITY cmd.removeFile.label             "Buang Fail">
+<!ENTITY cmd.removeFile.label             "Alih keluar Fail">
 <!-- LOCALIZATION NOTE (cmd.chooseUnblock.tooltip):
      This is the tooltip of the action button shown when potentially unwanted
      downloads are blocked. This opens a dialog where the user can choose
@@ -105,7 +106,7 @@
      Displayed when hovering a download which is able to be retried by users,
      indicates that it's possible to download this file again.
      -->
-<!ENTITY retryDownload.label              "Cuba semula Muat turun">
+<!ENTITY retryDownload.label              "Muat turun Sekali lagi">
 
 <!-- LOCALIZATION NOTE (cancelDownload.label):
      Displayed when hovering a download which is able to be cancelled by users,
@@ -117,7 +118,7 @@
      Shown as a tag before the file name for some types of blocked downloads.
      Note: This string doesn't exist in the UI yet.  See bug 1053890.
      -->
-<!ENTITY blocked.label                    "BLOCKED">
+<!ENTITY blocked.label                    "DISEKAT">
 
 <!-- LOCALIZATION NOTE (learnMore.label):
      Shown as a text link for some types of blocked downloads, for example
@@ -134,13 +135,19 @@
 <!ENTITY downloadsHistory.label           "Papar Semua Muat turun">
 <!ENTITY downloadsHistory.accesskey       "S">
 
+<!-- LOCALIZATION NOTE (downloadDetails.label):
+     This string is shown at the top of the Download Details Panel, to indicate
+     that we are showing the details of a single download.
+     -->
+<!ENTITY downloadDetails.label            "Butiran Muat turun">
+
 <!-- LOCALIZATION NOTE (openDownloadsFolder.label):
      This command is not currently available in the user interface, but the
      string was preserved by bug 1362207 to be used in a future version.
      -->
 <!ENTITY openDownloadsFolder.label        "Buka Folder Muat turun">
 
-<!ENTITY clearDownloadsButton.label       "Padam Muat turun">
+<!ENTITY clearDownloadsButton.label       "Buang Muat turun">
 <!ENTITY clearDownloadsButton.tooltip     "Hapuskan yang telah selesai, batal dan gagalkan muat turun">
 
 <!-- LOCALIZATION NOTE (downloadsListEmpty.label):

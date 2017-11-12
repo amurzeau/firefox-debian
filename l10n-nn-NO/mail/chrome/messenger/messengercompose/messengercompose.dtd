@@ -33,10 +33,10 @@
 <!ENTITY closeCmd.label "Lukk">
 <!ENTITY closeCmd.key "W">
 <!ENTITY closeCmd.accesskey "L">
-<!ENTITY saveCmd.label "Lagra">
+<!ENTITY saveCmd.label "Lagre">
 <!ENTITY saveCmd.key "S">
 <!ENTITY saveCmd.accesskey "a">
-<!ENTITY saveAsCmd.label "Lagra som">
+<!ENTITY saveAsCmd.label "Lagre som">
 <!ENTITY saveAsCmd.accesskey "s">
 <!ENTITY saveAsFileCmd.label "Fil …">
 <!ENTITY saveAsFileCmd.accesskey "F">
@@ -82,7 +82,7 @@
 <!ENTITY deleteCmd.label "Slett">
 <!ENTITY deleteCmd.accesskey "S">
 <!ENTITY editRewrapCmd.label "Tekstbryting">
-<!ENTITY editRewrapCmd.key "T">
+<!ENTITY editRewrapCmd.key "R">
 <!ENTITY renameAttachmentCmd.label "Endra namn på vedlegg …">
 <!ENTITY renameAttachmentCmd.accesskey "E">
 <!ENTITY selectAllCmd.label "Merk alt">
@@ -215,8 +215,7 @@
 <!ENTITY addressButton.tooltip "Vel mottakar frå ei adressebok">
 <!ENTITY attachButton.tooltip "Ta med vedlegg">
 <!ENTITY spellingButton.tooltip "Kontroller staving av merkt tekst eller heile meldinga">
-<!ENTITY statusLanguageText.tooltip "Stavekontrollspråk">
-<!ENTITY saveButton.tooltip "Lagra meldinga">
+<!ENTITY saveButton.tooltip "Lagre meldinga">
 <!ENTITY cutButton.tooltip              "Klipp ut">
 <!ENTITY copyButton.tooltip             "Kopier">
 <!ENTITY pasteButton.tooltip            "Lim inn">
@@ -265,7 +264,7 @@
 <!ENTITY spellCheckIgnoreWord.accesskey "I">
 <!ENTITY spellCheckAddToDictionary.label "Legg til i ordboka">
 <!ENTITY spellCheckAddToDictionary.accesskey "L">
-<!ENTITY undo.label "Angra">
+<!ENTITY undo.label "Angre">
 <!ENTITY undo.accesskey "A">
 <!ENTITY cut.label "Klipp ut">
 <!ENTITY cut.accesskey "u">
@@ -276,7 +275,7 @@
 <!ENTITY pasteQuote.label "Lim inn som sitat">
 <!ENTITY pasteQuote.accesskey "t">
 
-<!ENTITY openAttachment.label "Opna">
+<!ENTITY openAttachment.label "Opne">
 <!ENTITY openAttachment.accesskey "O">
 <!ENTITY delete.label "Slett">
 <!ENTITY delete.accesskey "S">
@@ -307,5 +306,9 @@
 <!ENTITY addressesSidebarTitle.label "Kontaktar">
 
 <!-- Identity popup customize menuitem -->
-<!ENTITY customizeFromAddress.label "Tilpass frå adressa …">
+<!ENTITY customizeFromAddress.label "Tilpass frå adressa…">
 <!ENTITY customizeFromAddress.accesskey "T">
+
+<!-- Status Bar -->
+<!ENTITY languageStatusButton.tooltip "Stavekontrollspråk">
+<!ENTITY encodingStatusPanel.tooltip "Tekstkoding">

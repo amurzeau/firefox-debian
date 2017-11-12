@@ -8,7 +8,7 @@
 <!ENTITY places.library.height "500">
 <!ENTITY organize.label        "Организирање">
 <!ENTITY organize.accesskey    "О">
-<!ENTITY organize.tooltip      "Ораганизирајте ги Вашите обележувачи">
+<!ENTITY organize.tooltip      "Ораганизирајте ги вашите обележувачи">
 
 <!ENTITY file.close.label               "Затвори">
 <!ENTITY file.close.accesskey           "З">
@@ -48,6 +48,8 @@
 <!ENTITY cmd.open.accesskey              "О">
 <!ENTITY cmd.open_window.label           "Отвори во нов прозорец">
 <!ENTITY cmd.open_window.accesskey       "н">
+<!ENTITY cmd.open_private_window.label     "Отвори во нов приватен прозорец">
+<!ENTITY cmd.open_private_window.accesskey "П">
 <!ENTITY cmd.open_tab.label              "Отвори во ново јазиче">
 <!ENTITY cmd.open_tab.accesskey          "в">
 <!ENTITY cmd.open_all_in_tabs.label      "Отвори во јазичиња">
@@ -77,19 +79,20 @@
 <!ENTITY col.name.label          "Име">
 <!ENTITY col.tags.label          "Етикети">
 <!ENTITY col.url.label           "Локација">
+<!ENTITY col.mostrecentvisit.label "Последна посета">
 <!ENTITY col.visitcount.label    "Број на посети">
 <!ENTITY col.description.label   "Опис">
 <!ENTITY col.dateadded.label     "Додадено">
 <!ENTITY col.lastmodified.label  "Последна промена">
 
-<!ENTITY search.label                              "Барај:">
-<!ENTITY search.accesskey                          "Б">
+<!ENTITY historySearch.placeholder  "Барај во историјата">
+<!ENTITY bookmarksSearch.placeholder  "Барај во обележувачите">
 
 <!ENTITY cmd.find.key  "f">
 
 <!ENTITY maintenance.label      "Увоз и резерва">
 <!ENTITY maintenance.accesskey  "з">
-<!ENTITY maintenance.tooltip    "Увезее ги и направете резерва од Вашите обележувачи">
+<!ENTITY maintenance.tooltip    "Увезее ги и направете резерва од вашите обележувачи">
 
 <!ENTITY backButton.tooltip  "Оди назад">
 
@@ -101,8 +104,6 @@
 <!ENTITY detailsPane.less.accesskey "о">
 <!ENTITY detailsPane.selectAnItemText.description "Одберете ставка за преглед и уредете ги нејзините својства">
 
-<!ENTITY find.label               "Барај:">
-<!ENTITY find.accesskey           "Б">
 <!ENTITY view.label               "Поглед">
 <!ENTITY view.accesskey           "П">
 <!ENTITY byDate.label             "Датум">

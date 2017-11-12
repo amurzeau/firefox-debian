@@ -29,11 +29,16 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "Pelaporan data dinonaktifkan untuk konfigurasi build ini">
 
-<!ENTITY enableHealthReport1.label       "Izinkan &brandShortName; agar secara otomatis mengirim data teknis dan interaksi ke Mozilla">
+<!ENTITY enableHealthReport2.label       "Izinkan &brandShortName; mengirim data teknis dan interaksi ke Mozilla">
+<!ENTITY enableHealthReport2.accesskey   "r">
 <!ENTITY healthReportLearnMore.label     "Pelajari Lebih Lanjut">
 
+<!ENTITY dataCollection.label            "&brandShortName; Pengumpulan dan Penggunaan Data">
+<!ENTITY dataCollectionDesc.label        "Kami berusaha memberi Anda pilihan dan mengumpulkan hanya apa yang kami butuhkan untuk menyediakan dan meningkatkan &brandShortName; bagi semua orang. Kami selalu meminta izin sebelum menerima informasi pribadi.">
 <!ENTITY dataCollectionPrivacyNotice.label    "Pemberitahuan Privasi">
 
+<!ENTITY alwaysSubmitCrashReports1.label  "Izinkan &brandShortName; untuk mengirim laporan mogok ke Mozilla">
+<!ENTITY alwaysSubmitCrashReports1.accesskey "r">
 <!ENTITY crashReporterLearnMore.label    "Pelajari Lebih Lanjut">
 
 <!ENTITY networkTab.label                "Jaringan">
@@ -42,7 +47,7 @@ available. -->
 
 <!ENTITY connectionDesc.label            "Atur cara &brandShortName; tersambung ke Internet">
 <!ENTITY connectionSettings.label        "Setelan…">
-<!ENTITY connectionSettings.accesskey    "u">
+<!ENTITY connectionSettings.accesskey    "S">
 
 <!ENTITY httpCache.label                 "Konten Web Tembolok">
 
@@ -85,6 +90,8 @@ available. -->
 # after the version number, and is empty on purpose for English. You can use it
 # if required by your language.
  -->
+<!ENTITY updateApplicationDescription.label
+                                         "Pastikan &brandShortName; selalu mutakhir demi kinerja, stabilitas, dan keamanan terbaik.">
 <!ENTITY updateApplication.version.pre   "Versi ">
 <!ENTITY updateApplication.version.post  "">
 <!ENTITY updateApplication.description   "Izinkan &brandShortName; untuk">
@@ -109,7 +116,7 @@ available. -->
 <!ENTITY offlineStorageNotifyExceptions.label     "Pengecualian…">
 <!ENTITY offlineStorageNotifyExceptions.accesskey "c">
 
-<!ENTITY offlineAppsList2.label          "Situs web berikut telah diizinkan untuk menyimpan data untuk penggunaan luring:">
+<!ENTITY offlineAppsList3.label          "Situs web berikut ini diizinkan menyimpan data untuk penggunaan luring">
 <!ENTITY offlineAppsList.height          "7em">
 <!ENTITY offlineAppsListRemove.label     "Hapus…">
 <!ENTITY offlineAppsListRemove.accesskey "H">
@@ -121,8 +128,12 @@ available. -->
 <!ENTITY selectCerts.auto.accesskey      "s">
 <!ENTITY selectCerts.ask                 "Tanyakan setiap saat">
 <!ENTITY selectCerts.ask.accesskey       "T">
-<!ENTITY enableOCSP.label                "Kueri server penjawab OCSP untuk mengonfirmasukan validitas sertifikat">
+<!ENTITY enableOCSP.label                "Kueri peladen penjawab OCSP untuk mengonfirmasikan validitas sertifikat">
 <!ENTITY enableOCSP.accesskey            "v">
+<!ENTITY viewCerts2.label                "Tampilkan Sertifikat…">
+<!ENTITY viewCerts2.accesskey            "S">
+<!ENTITY viewSecurityDevices2.label      "Peranti Keamanan…">
+<!ENTITY viewSecurityDevices2.accesskey  "P">
 
 <!ENTITY performance.label               "Kinerja">
 <!ENTITY useRecommendedPerformanceSettings2.label

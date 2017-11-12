@@ -20,6 +20,8 @@
 <!ENTITY restoreDefault.label      "Restaurar il standard">
 <!ENTITY restoreDefault.accesskey  "R">
 
+<!ENTITY disableExtension.label    "Deactivar l'extensiun">
+
 <!ENTITY downloads.label     "Telechargiadas">
 
 <!ENTITY saveTo.label "Memorisar las datotecas en il suandant ordinatur:">
@@ -34,7 +36,7 @@
 <!ENTITY alwaysCheckDefault2.label        "Adina controllar sche &brandShortName; è il navigatur da standard">
 <!ENTITY alwaysCheckDefault2.accesskey    "d">
 <!ENTITY setAsMyDefaultBrowser3.label     "Definir sco standard…">
-<!ENTITY setAsMyDefaultBrowser3.accesskey "D">
+<!ENTITY setAsMyDefaultBrowser3.accesskey "s">
 <!ENTITY isDefault.label                  "&brandShortName; è actualmain il navigatur da standard">
 <!ENTITY isNotDefault.label               "&brandShortName; n'è betg il navigatur da standard">
 

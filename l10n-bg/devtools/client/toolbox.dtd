@@ -74,19 +74,13 @@
   -  checkbox that toggles chrome debugging, i.e. devtools.chrome.enabled
   -  boolean preference in about:config, in the options panel. -->
 <!ENTITY options.enableChrome.label5    "Включване на кутията с дебъгващи инструменти за браузърния хром и добавките">
-<!ENTITY options.enableChrome.tooltip3  "Отмятането на тази настройка ще ви позволи да използвате различни развойни инструменти в контекста на браузъра (чрез Инструменти > Уебразработчик > Кутия с инструменти) и за дебъгване на добавки от управлението на добавки">
+<!ENTITY options.enableChrome.tooltip3  "Отмятането на тази настройка ще ви позволи да използвате различни развойни инструменти в контекста на браузъра (чрез Инструменти > Разработчик > Кутия с инструменти) и за дебъгване на добавки от управлението на добавки">
 
 <!-- LOCALIZATION NOTE (options.enableRemote.label3): This is the label for the
   -  checkbox that toggles remote debugging, i.e. devtools.debugger.remote-enabled
   -  boolean preference in about:config, in the options panel. -->
 <!ENTITY options.enableRemote.label3    "Включване отдалеченото дебъгване">
 <!ENTITY options.enableRemote.tooltip2  "Включването на тази настройка ще ви позволи да използвате развойните инструменти за дебъгване на отдалечени екземпляри на Firefox, като Firefox OS">
-
-<!-- LOCALIZATION NOTE (options.enableWorkers.label): This is the label for the
-  -  checkbox that toggles worker debugging, i.e. devtools.debugger.workers
-  -  boolean preference in about:config, in the options panel. -->
-<!ENTITY options.enableWorkers.label    "Включване на дебъгването на обслужващи нишки (в разработка)">
-<!ENTITY options.enableWorkers.tooltip  "Отмятането на тази настройка ще ви позволи да използвате различни развойни инструменти за откриване на дефекти в обслужващи нишки">
 
 <!-- LOCALIZATION NOTE (options.disableJavaScript.label,
   -  options.disableJavaScript.tooltip): This is the options panel label and
@@ -151,19 +145,14 @@
 <!ENTITY options.debugger.label            "Дебъгер">
 
 <!-- LOCALIZATION NOTE (options.sourceMap.label): This is the
-   - label for the checkbox that toggles source maps in the Debugger -->
+   - label for the checkbox that toggles source maps in all tools -->
 <!ENTITY options.sourceMaps.label      "Включване на Source Maps">
-<!ENTITY options.sourceMaps.tooltip    "Ако е отметнато source maps ще бъдат използвани в дебъгера и конзолата.">
+<!ENTITY options.sourceMaps.tooltip1   "Ако е отметнато source maps ще бъдат използвани в инструментите.">
 
 <!-- LOCALIZATION NOTE (options.styleeditor.label): This is the label for the
   -  heading of the group of Style Editor preferences in the options
   -  panel. -->
 <!ENTITY options.styleeditor.label            "Стилове">
-
-<!-- LOCALIZATION NOTE (options.stylesheetSourceMaps.label): This is the
-   - label for the checkbox that toggles showing original sources in the Style Editor -->
-<!ENTITY options.stylesheetSourceMaps.label      "Показване на изходния код">
-<!ENTITY options.stylesheetSourceMaps.tooltip    "Показва се оригиналния изходен код (напр. файлове Sass) в редактора и инспектора на стилове">
 
 <!-- LOCALIZATION NOTE (options.stylesheetAutocompletion.label): This is the
    - label for the checkbox that toggles autocompletion of css in the Style Editor -->
@@ -185,18 +174,6 @@
 <!ENTITY options.screenshot.audio.label      "Звук от затвора на фотоапарат">
 <!ENTITY options.screenshot.audio.tooltip    "Включва звук от затвора на фотоапарат при правене на снимка на екрана">
 
-<!-- LOCALIZATION NOTE (options.commonprefs): This is the label for the heading
-      of all preferences that affect both the Web Console and the Network
-      Monitor -->
-<!ENTITY options.commonPrefs.label           "Общи настройки">
-
-<!-- LOCALIZATION NOTE (options.enablePersistentLogs.label): This is the
-  -  label for the checkbox that toggles persistent logs in the Web Console and
-  -  network monitor,  i.e. devtools.webconsole.persistlog a boolean preference in
-  -  about:config, in the options panel. -->
-<!ENTITY options.enablePersistentLogs.label    "Постоянни журнали">
-<!ENTITY options.enablePersistentLogs.tooltip  "Ако е отметнато уеб конзолата и мрежовия монитор няма да изчистват изхода си при всяко отваряне на нова страница">
-
 <!-- LOCALIZATION NOTE (options.showPlatformData.label): This is the
   -  label for the checkbox that toggles the display of the platform data in the,
   -  Profiler i.e. devtools.profiler.ui.show-platform-data a boolean preference
@@ -209,7 +186,7 @@
 
 <!ENTITY options.sourceeditor.label                     "Настройки на редактора">
 <!ENTITY options.sourceeditor.detectindentation.label   "Разпознаване на отстъп">
-<!ENTITY options.sourceeditor.detectindentation.tooltip "Предполагане на използваният отстъп, изследвайки съдържанието на кода">
+<!ENTITY options.sourceeditor.detectindentation.tooltip "Предугаждане на използвания отстъп, чрез изследване на кода">
 <!ENTITY options.sourceeditor.autoclosebrackets.label   "Автоматично затваряне на скоби">
 <!ENTITY options.sourceeditor.autoclosebrackets.tooltip "Автоматично вмъкване на затваряща скоба">
 <!ENTITY options.sourceeditor.expandtab.label           "Интервали за отстъп">

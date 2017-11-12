@@ -5,7 +5,7 @@
 <!ENTITY  general.label                 "General">
 
 <!ENTITY  warnOnAddonInstall2.label       "Avertir, sche websites emprovan d'installar supplements">
-<!ENTITY  warnOnAddonInstall2.accesskey   "A">
+<!ENTITY  warnOnAddonInstall2.accesskey   "v">
 
 <!-- LOCALIZATION NOTE (enableSafeBrowsing.label, blockDownloads.label, blockUncommonUnwanted.label):
   It is important that wording follows the guidelines outlined on this page:

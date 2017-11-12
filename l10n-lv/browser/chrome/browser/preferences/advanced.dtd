@@ -29,12 +29,12 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "Datu ziņošana ir atspējota šajā būvējuma konfigurācija">
 
-<!ENTITY enableHealthReport1.label       "Atļaut &brandShortName; automātiski sūtīt tehnisku un mijiedarbību informāciju Mozilla">
-<!ENTITY enableHealthReport1.accesskey   "r">
+<!ENTITY enableHealthReport2.label       "Atļaut &brandShortName; automātiski sūtīt tehnisku un mijiedarbību informāciju Mozilla">
+<!ENTITY enableHealthReport2.accesskey   "r">
 <!ENTITY healthReportLearnMore.label     "Uzzināt vairāk">
 
 <!ENTITY dataCollection.label            "&brandShortName; datu vākšana un izmantošana">
-<!ENTITY dataCollectionDesc.label        "Mēs cenšamies sniegt jums izvēli un vācam tikai to, kas mums ir nepieciešams, lai uzlabotu &brandShortName; ikvienam. Mēs vienmēr lūgsim atļauju, pirms personiskas informācijas apkopošanas.">
+<!ENTITY dataCollectionDesc.label        "Mēs cenšamies piedāvāt jums izvēles iespēju un vācam tikai tos datus, kas ir nepieciešami, lai uzlabotu &brandShortName;. Mēs vienmēr jautāsim atļauju pirms privātu datu ievākšanas.">
 <!ENTITY dataCollectionPrivacyNotice.label    "Privātuma piezīme">
 
 <!ENTITY alwaysSubmitCrashReports1.label  "Ļaut &brandShortName; sūtīt avārijas ziņojumus Mozilla">
@@ -116,7 +116,7 @@ available. -->
 <!ENTITY offlineStorageNotifyExceptions.label     "Izņēmumi...">
 <!ENTITY offlineStorageNotifyExceptions.accesskey "z">
 
-<!ENTITY offlineAppsList2.label          "Šīm mājas lapām ir atļauts glabāt datus izmantošanai nesaistē:">
+<!ENTITY offlineAppsList3.label          "Šīm mājas lapām ir atļauts glabāt datus izmantošanai nesaistē">
 <!ENTITY offlineAppsList.height          "7em">
 <!ENTITY offlineAppsListRemove.label     "Aizvākt...">
 <!ENTITY offlineAppsListRemove.accesskey "A">
@@ -131,7 +131,7 @@ available. -->
 <!ENTITY enableOCSP.label                "Vaicāt OCSP atbildes serveriem, lai pārbaudītu pašreizējo sertifikātu derīgumu">
 <!ENTITY enableOCSP.accesskey            "V">
 <!ENTITY viewCerts2.label                "Aplūkot sertifikātus…">
-<!ENTITY viewCerts2.accesskey            "S">
+<!ENTITY viewCerts2.accesskey            "C">
 <!ENTITY viewSecurityDevices2.label      "Drošības ierīces…">
 <!ENTITY viewSecurityDevices2.accesskey  "D">
 

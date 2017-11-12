@@ -222,7 +222,7 @@
 <!ENTITY expandAllThreadsCmd.key "*">
 <!ENTITY collapseAllThreadsCmd.label "Zwijaj wszystkie wątki">
 <!ENTITY collapseAllThreadsCmd.accesskey "Z">
-<!ENTITY collapseAllThreadsCmd.key "/">
+<!ENTITY collapseAllThreadsCmd.key "\">
 <!ENTITY unreadMsgsCmd.label "Nieprzeczytane">
 <!ENTITY unreadMsgsCmd.accesskey "N">
 <!ENTITY threadsWithUnreadCmd.label "Przeczytane z nowymi wiadomościami">
@@ -361,6 +361,8 @@
 <!ENTITY editAsNewMsgCmd.key "e">
 <!ENTITY editDraftMsgCmd.label "Edytuj szkic">
 <!ENTITY editDraftMsgCmd.accesskey "s">
+<!ENTITY newMsgFromTemplateCmd.label "Nowa wiadomość z szablonu">
+<!ENTITY newMsgFromTemplateCmd.keycode "VK_RETURN">
 <!ENTITY createFilter.label "Utwórz filtr na podstawie wiadomości…">
 <!ENTITY createFilter.accesskey "U">
 <!ENTITY moveMsgToMenu.label "Przenieś do">
@@ -413,7 +415,7 @@
 <!ENTITY markAllReadCmd.key "c">
 <!ENTITY markStarredCmd.label "Oznacz gwiazdką">
 <!ENTITY markStarredCmd.accesskey "O">
-<!ENTITY markStarredCmd.key "i">
+<!ENTITY markStarredCmd.key "S">
 <!ENTITY markAsJunkCmd.label "Jako niechcianą">
 <!ENTITY markAsJunkCmd.accesskey "J">
 <!ENTITY markAsJunkCmd.key "j">
@@ -699,6 +701,7 @@
 <!ENTITY idColumn2.tooltip "Sortowanie według kolejności otrzymania">
 <!ENTITY attachmentColumn2.tooltip "Sortowanie według załącznika">
 
+<!ENTITY contextNewMsgFromTemplate.label "Nowa wiadomość z szablonu">
 <!ENTITY contextOpenNewWindow.label "Otwórz wiadomość w nowym oknie">
 <!ENTITY contextOpenNewWindow.accesskey "O">
 <!ENTITY contextOpenNewTab.label "Otwórz wiadomość w nowej karcie">

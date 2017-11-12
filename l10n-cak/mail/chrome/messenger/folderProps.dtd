@@ -1,0 +1,41 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!ENTITY folderProps.windowtitle.label           "Taq ichinil">
+
+<!ENTITY generalInfo.label                       "Chijun Etamab'äl">
+<!ENTITY folderCharsetFallback2.label            "Rucholajil rucholajem tzij, ri kan k'o wi:">
+<!ENTITY folderCharsetFallback2.accesskey        "R">
+
+<!ENTITY retentionUseAccount.label  "Tinwokisaj kinuk'ulem ri rub'i' nutaqoya'l">
+<!ENTITY retentionUseAccount.accesskey "o">
+<!ENTITY daysOld.label "ojer taq q'ij">
+<!ENTITY message.label "taq tzijol">
+<!ENTITY retentionKeepAll.label "Man keyuj taq tzijol">
+<!ENTITY retentionKeepAll.accesskey "A">
+
+
+<!ENTITY offlineFolder.button.label              "Tajin Niqasan">
+<!ENTITY offlineFolder.button.accesskey          "q">
+
+<!ENTITY offlineNewsgroup.button.label           "Tajin Niqasan">
+<!ENTITY offlineNewsgroup.button.accesskey       "q">
+
+<!ENTITY folderProps.name.label                  "B'i'aj:">
+<!ENTITY folderProps.name.accesskey              "B">
+<!ENTITY folderProps.location.label              "K'ojlib'äl:">
+<!ENTITY folderProps.location.accesskey          "K">
+
+<!ENTITY folderSharingTab.label                  "Tajin nikomonïx">
+<!ENTITY privileges.button.label                 "Ya'on kiq'ij…">
+<!ENTITY privileges.button.accesskey             "Y">
+<!ENTITY folderType.label                        "Ruwäch Yakwuj:">
+
+<!ENTITY folderQuotaStatus.label                 "B'anikil:">
+
+<!ENTITY numberOfMessages.label                  "Kajilab'al rutzijol:">
+<!-- LOCALIZATION NOTE: When the number of messages can't be determined, this string is displayed as the number -->
+<!ENTITY numberUnknown.label                     "man etaman ta ruwäch">
+<!-- LOCALIZATION NOTE: When the size can't be determined, this string is displayed as the size -->
+<!ENTITY sizeUnknown.label                       "man etaman ta ruwäch">

@@ -107,8 +107,9 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.a11yActivated "सुरू केले">
 <!ENTITY aboutSupport.a11yForceDisabled "ॲक्सेसिबिलिटि टाळा">
 <!ENTITY aboutSupport.a11yHandlerUsed "सुलभ हाताळणारा वापरला">
+<!ENTITY aboutSupport.a11yInstantiator "सुलभता इंस्टंशिएटर">
 
-<!ENTITY aboutSupport.libraryVersionsTitle "लाइब्ररि आवृत्ती">
+<!ENTITY aboutSupport.libraryVersionsTitle "वाचनालय आवृत्ती">
 
 <!ENTITY aboutSupport.installationHistoryTitle "प्रतिष्ठापन इतिहास">
 <!ENTITY aboutSupport.updateHistoryTitle "इतिहास सुधारीत करा">
@@ -138,15 +139,15 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.graphicsCrashGuardsTitle "क्रॅश गार्ड निष्क्रिय वैशिष्ट्ये">
 <!ENTITY aboutSupport.graphicsWorkaroundsTitle "वर्कअरोउंड्स">
 
-<!ENTITY aboutSupport.mediaTitle "मिडीया">
+<!ENTITY aboutSupport.mediaTitle "मीडिया">
 <!ENTITY aboutSupport.mediaOutputDevicesTitle "आऊटपुट साधने">
 <!ENTITY aboutSupport.mediaInputDevicesTitle "इनपुट साधने">
 <!ENTITY aboutSupport.mediaDeviceName "नाव">
-<!ENTITY aboutSupport.mediaDeviceGroup "गट">
+<!ENTITY aboutSupport.mediaDeviceGroup "समूह">
 <!ENTITY aboutSupport.mediaDeviceVendor "पुरवठादार">
-<!ENTITY aboutSupport.mediaDeviceState "राज्य">
-<!ENTITY aboutSupport.mediaDevicePreferred "पसंतीचे">
-<!ENTITY aboutSupport.mediaDeviceFormat "स्वरुप(फॉरमॅट)">
+<!ENTITY aboutSupport.mediaDeviceState "स्थिती">
+<!ENTITY aboutSupport.mediaDevicePreferred "प्राधान्यतेचे">
+<!ENTITY aboutSupport.mediaDeviceFormat "स्वरूप">
 <!ENTITY aboutSupport.mediaDeviceChannels "माध्यम">
 <!ENTITY aboutSupport.mediaDeviceRate "दर">
-<!ENTITY aboutSupport.mediaDeviceLatency "लेटन्सी">
+<!ENTITY aboutSupport.mediaDeviceLatency "विलंब">

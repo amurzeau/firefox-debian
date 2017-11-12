@@ -4,7 +4,7 @@
 
 <!ENTITY  general.label                 "Основни">
 
-<!ENTITY  warnOnAddonInstall2.label       "Предупреждаване при опит на уебстраница да инсталира добавки">
+<!ENTITY  warnOnAddonInstall2.label       "Предупреждаване при опит на уебсайт да инсталира добавки">
 <!ENTITY  warnOnAddonInstall2.accesskey   "д">
 
 <!-- LOCALIZATION NOTE (enableSafeBrowsing.label, blockDownloads.label, blockUncommonUnwanted.label):
@@ -26,8 +26,8 @@
 
 <!ENTITY  logins.label                  "Регистрации">
 
-<!ENTITY  rememberLogins2.label         "Запомняне на регистрации в уебстраници">
-<!ENTITY  rememberLogins2.accesskey     "р">
+<!ENTITY  rememberLogins2.label         "Запомняне на регистрации в уебсайтове">
+<!ENTITY  rememberLogins2.accesskey     "З">
 <!ENTITY  passwordExceptions.label      "Изключения…">
 <!ENTITY  passwordExceptions.accesskey  "к">
 

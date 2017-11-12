@@ -4,8 +4,8 @@
 
 <!ENTITY startup.label             "გაშვება">
 
-<!ENTITY startupPage2.label        "როცა &brandShortName; გაეშვება">
-<!ENTITY startupPage2.accesskey    "ე">
+<!ENTITY startupPage2.label        "&brandShortName;-ის გახსნისას">
+<!ENTITY startupPage2.accesskey    "ხ">
 <!ENTITY startupUserHomePage.label "მთავარი გვერდის ჩვენება">
 <!ENTITY startupBlankPage.label    "ცარიელი გვერდის ჩვენება">
 <!ENTITY startupPrevSession.label  "ბოლოს დახურული ფანჯრებისა და ჩანართების ჩვენება">
@@ -19,6 +19,8 @@
 <!ENTITY chooseBookmark.accesskey  "ს">
 <!ENTITY restoreDefault.label      "ნაგულისხმევის აღდგენა">
 <!ENTITY restoreDefault.accesskey  "ა">
+
+<!ENTITY disableExtension.label    "გაფართოების ამორთვა">
 
 <!ENTITY downloads.label     "ჩამოტვირთვები">
 

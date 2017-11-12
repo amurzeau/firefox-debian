@@ -18,37 +18,36 @@
 <!ENTITY deniedPortAccess.title "Alamat ini dihadkan">
 <!ENTITY deniedPortAccess.longDesc "">
 
-<!ENTITY dnsNotFound.title "Pelayan tidak ditemui">
-<!ENTITY dnsNotFound.longDesc "
+<!ENTITY dnsNotFound.pageTitle "Pelayan Tidak Ditemui">
+<!-- Localization note (dnsNotFound.title1) - "Hmm" is a sound made when considering or puzzling over something. You don't have to include it in your translation if your language does not have a written word like this. -->
+<!ENTITY dnsNotFound.title1 "Hmmm. Kami menghadapi masalah untuk mencari laman ini.">
+<!ENTITY dnsNotFound.longDesc1 "
+<strong>Jika alamat ini betul, ada tiga cara yang anda boleh cuba:</strong>
 <ul>
-  <li>Semak ralat menaip alamat seperti contohnya
-    <strong>ww</strong>.example.com bukannya
-    <strong>www</strong>.example.com</li>
-  <li>Jika anda tidak dapat memuat sebarang halaman, semak sambungan rangkaian
-    komputer.</li>
-  <li>Jika komputer atau rangkaian dilindungi firewall atau proksi, sila pastikan
-    bahawa &brandShortName; diberi izin mengakses Web.</li>
+  <li>Cuba lagi nanti.</li>
+  <li>Semak sambungan rangkaian.</li>
+  <li>Jika anda sudah disambungkan tetapi ada firewall, semak samada &brandShortName; telah diberi izin untuk mengakses Web ini.</li>
 </ul>
 ">
 
 <!ENTITY fileNotFound.title "Fail tidak ditemui">
 <!ENTITY fileNotFound.longDesc "
 <ul>
-  <li>Semak huruf besar nama atau ralat taip lain.</li>
-  <li>Semak samada fail telah dipindah, dinamakan semula atau dihapuskan.</li>
+  <li>Semak ralat huruf besar nama fail atau ralat menaip lain.</li>
+  <li>Semak samada fail telah dipindahkan, dinamakan semula atau dibuang.</li>
 </ul>
 ">
 
 <!ENTITY fileAccessDenied.title "Akses kepada fail ditolak">
 <!ENTITY fileAccessDenied.longDesc "
 <ul>
-  <li>Mungkin telah dialih keluar, dipindah atau keizinan fail yang menyekat akses.</li>
+  <li>Mungkin telah dibuang, dipindahkan, atau keizinan fail yang menghalang akses.</li>
 </ul>
 ">
 
-<!ENTITY generic.title "Oops.">
+<!ENTITY generic.title "Maaf.">
 <!ENTITY generic.longDesc "
-<p>&brandShortName; tidak dapat memuat halaman ini atas beberapa sebab.</p>
+<p>&brandShortName; tidak dapat memuat halaman ini atas beberapa alasan.</p>
 ">
 
 <!ENTITY captivePortal.title "Log masuk ke rangkaian">
@@ -56,37 +55,31 @@
 
 <!ENTITY openPortalLoginPage.label2 "Buka Halaman Log Masuk Rangkaian">
 
-<!ENTITY malformedURI.title "Alamat tidak sah">
-<!ENTITY malformedURI.longDesc "
-<ul>
-  <li>Alamat Web biasanya ditulis seperti
-    <strong>http://www.example.com/</strong></li>
-  <li>Pastikan anda gunakan garis miring (i.e.
-    <strong>/</strong>).</li>
-</ul>
-">
+<!ENTITY malformedURI.pageTitle "URL tak sah">
+<!-- Localization note (malformedURI.title1) - "Hmm" is a sound made when considering or puzzling over something. You don't have to include it in your translation if your language does not have a written word like this. -->
+<!ENTITY malformedURI.title1 "Hmmm. Alamat ini nampaknya tidak betul.">
 
 <!ENTITY netInterrupt.title "Sambungan terganggu">
 <!ENTITY netInterrupt.longDesc "&sharedLongDesc;">
 
 <!ENTITY notCached.title "Dokumen Luput">
-<!ENTITY notCached.longDesc "<p>Dokumen yang diminta tiada dalam cache &brandShortName;.</p><ul><li>Sebagai langkah keselamatan, &brandShortName; tidak akan meminta semula dokumen yang sensitif secara automatik.</li><li>Klik butang Cuba Lagi untuk meminta semula dokumen dari laman web.</li></ul>">
+<!ENTITY notCached.longDesc "<p>Dokumen yang diminta tidak ada dalam cache &brandShortName;.</p><ul><li>Sebagai langkah keselamatan, &brandShortName; tidak akan meminta semula dokumen yang sensitif secara automatik.</li><li>Klik Cuba Lagi untuk meminta semula dokumen daripada laman web.</li></ul>">
 
 <!ENTITY netOffline.title "Mod luar talian">
 <!ENTITY netOffline.longDesc2 "
 <ul>
-  <li>Tekan &quot;Cuba Lagi &quot; untuk menukar ke mod atas talian dan muat semula halaman.</li>
+  <li>Tekan &quot;Cuba Lagi&quot; untuk bertukar ke mod atas talian dan memuatkan halaman.</li>
 </ul>
 ">
 
-<!ENTITY contentEncodingError.title "Mengandungi Ralat Pengekodan">
+<!ENTITY contentEncodingError.title "Ralat Pengekodan Kandungan">
 <!ENTITY contentEncodingError.longDesc "
 <ul>
   <li>Sila hubungi pemilik laman web untuk memaklumkan masalah ini.</li>
 </ul>
 ">
 
-<!ENTITY unsafeContentType.title "Jenis Fail yang Tidak Selamat">
+<!ENTITY unsafeContentType.title "Jenis Fail Tidak Selamat">
 <!ENTITY unsafeContentType.longDesc "
 <ul>
   <li>Sila hubungi pemilik laman web untuk memaklumkan masalah ini.</li>
@@ -102,7 +95,7 @@
 <!ENTITY unknownProtocolFound.title "Alamat tidak difahami">
 <!ENTITY unknownProtocolFound.longDesc "
 <ul>
-  <li>Anda mungkin perlu memasang perisian lain untuk membuka alamat ini.</li>
+  <li>Anda mungkin perlu pasang perisian lain untuk membuka alamat ini.</li>
 </ul>
 ">
 
@@ -110,7 +103,7 @@
 <!ENTITY proxyConnectFailure.longDesc "
 <ul>
   <li>Semak tetapan proksi untuk memastikan tetapan itu betul.</li>
-  <li>Hubungi pentadbir rangkaian anda untuk memastikan pelayan proksi
+  <li>Hubungi pentadbir rangkaian untuk memastikan bahawa pelayan proksi
     berfungsi.</li>
 </ul>
 ">
@@ -118,17 +111,17 @@
 <!ENTITY proxyResolveFailure.title "Tidak dapat menemui pelayan proksi">
 <!ENTITY proxyResolveFailure.longDesc "
 <ul>
-  <li>Semak tetapan proksi untuk memastikan tetapan itu betul.</li>
-  <li>Semak untuk memastikan komputer anda ada sambungan rangkaian yang berfungsi.</li>
-  <li>Jika komputer atau rangkaian anda dilindungi oleh firewall atau proksi, pastikan
-    bahawa &brandShortName; diberi izin untuk mengakses Web.</li>
+  <li>Semak tetapan proksi untuk memastikan tetapan adalah betul.</li>
+  <li>Pastikan komputer anda ada sambungan rangkaian yang berfungsi.</li>
+  <li>Jika komputer atau rangkaian dilindungi firewall atau proksi, pastikan
+   bahawa &brandShortName; diberi izin mengakses Web.</li>
 </ul>
 ">
 
 <!ENTITY redirectLoop.title "Halaman tidak diarahkan semula dengan betul">
 <!ENTITY redirectLoop.longDesc "
 <ul>
-  <li>Masalah ini kadang kala berpunca daripada menyahdayakan atau tidak mahu menerima
+  <li>Masalah ini kadangkala disebabkan oleh menyahaktifkan atau tidak mahu menerima
     kuki.</li>
 </ul>
 ">
@@ -136,16 +129,16 @@
 <!ENTITY unknownSocketType.title "Respon tidak dijangka daripada pelayan">
 <!ENTITY unknownSocketType.longDesc "
 <ul>
-  <li>Semak untuk memastikan sistem anda ada Personal Security Manager
+  <li>Semak untuk memastikan sistem sudah ada Pengurus Keselamatan Peribadi
     yang dipasang.</li>
-  <li>Masalah ini mungkin kerana konfigurasi non-standard pada pelayan.</li>
+  <li>Ini mungkin kerana konfigurasi bukan-piawai dalam pelayar.</li>
 </ul>
 ">
 
 <!ENTITY nssFailure2.title "Gagal Disambung Dengan Selamat">
 <!ENTITY nssFailure2.longDesc2 "
 <ul>
-  <li>Halaman yang mahu anda lihat tidak dapat dipapar kerana autentisiti data yang diterima tidak dapat disahkan.</li>
+  <li>Halaman yang anda mahu lihat tidak dapat dipaparkan kerana autentisiti data yang diterima tidak dapat disahkan.</li>
   <li>Sila hubungi pemilik laman web untuk memaklumkan masalah ini.</li>
 </ul>
 ">
@@ -160,7 +153,7 @@ was trying to connect. -->
 <ul>
   <li>Laman ini tidak ada buat sementara waktu atau terlalu sibuk. Cuba lagi dalam beberapa
     ketika.</li>
-  <li>Jika anda tidak dapat memuat sebarang halaman, semak sambungan rangkaian
+  <li>Jika anda tidak dapat memuatkan sebarang halaman, semak sambungan rangkaian
     komputer.</li>
   <li>Jika komputer atau rangkaian anda dilindungi firewall atau proksi, sila pastikan
     bahawa &brandShortName; diberi izin mengakses Web.</li>
@@ -168,10 +161,10 @@ was trying to connect. -->
 ">
 
 <!ENTITY cspBlocked.title "Disekat oleh Polisi Keselamatan Kandungan">
-<!ENTITY cspBlocked.longDesc "<p>&brandShortName; menyekat halaman ini daripada dipaparkan kerana ada kandungan yang tidak dibenarkan oleh polisi keselamatan.</p>">
+<!ENTITY cspBlocked.longDesc "<p>&brandShortName; menghalang halaman ini daripada dimuatkan kerana ada kandungan yang tidak dibenarkan oleh polisi keselamatan.</p>">
 
 <!ENTITY corruptedContentErrorv2.title "Ralat Kandungan Rosak">
-<!ENTITY corruptedContentErrorv2.longDesc "<p>Halaman yang anda cuba lihat tidak dapat dipapar kerana ada ralat dalam transmisi data.</p><ul><li>Sila hubungi pemilik laman web ini untuk memaklumkan masalah ini.</li></ul>">
+<!ENTITY corruptedContentErrorv2.longDesc "<p>Halaman yang anda cuba lihat tidak dapat dipaparkan kerana ada ralat dalam transmisi data.</p><ul><li>Sila hubungi pemilik laman web untuk memaklumkan masalah ini.</li></ul>">
 
 
 <!ENTITY securityOverride.exceptionButtonLabel "Tambah Pengecualian…">
@@ -179,10 +172,10 @@ was trying to connect. -->
 <!ENTITY errorReporting.automatic2 "Laporkan ralat seperti ini untuk membantu Mozilla mengenal pasti dan menyekat laman berbahaya">
 <!ENTITY errorReporting.learnMore "Ketahui selanjutnya…">
 
-<!ENTITY remoteXUL.title "Remote XUL">
-<!ENTITY remoteXUL.longDesc "<p><ul><li>Sila hubungi pemilik laman web dan memaklumkan masalah ini.</li></ul></p>">
+<!ENTITY remoteXUL.title "Capaian jauh XUL">
+<!ENTITY remoteXUL.longDesc "<p><ul><li>Sila hubungi pemilik laman web untuk memaklumkan masalah ini.</li></ul></p>">
 
-<!ENTITY sslv3Used.title "Tidak boleh bersambung dengan selamat">
+<!ENTITY sslv3Used.title "Tidak dapat Disambung dengan Selamat">
 <!-- LOCALIZATION NOTE (sslv3Used.longDesc2) - Do not translate
      "SSL_ERROR_UNSUPPORTED_VERSION". -->
 <!ENTITY sslv3Used.longDesc2 "Info lanjutan: SSL_ERROR_UNSUPPORTED_VERSION">

@@ -4,12 +4,13 @@
 
 <!ENTITY startup.label             "आरंभन">
 
-<!ENTITY startupPage2.accesskey    "s">
+<!ENTITY startupPage2.label        "जब &brandShortName; आरंभ होता है: ">
+<!ENTITY startupPage2.accesskey    "आ">
 <!ENTITY startupUserHomePage.label "आपका होम पेज दिखाएँ">
 <!ENTITY startupBlankPage.label    "खाली पृष्ठ दिखाएँ">
 <!ENTITY startupPrevSession.label  "पिछले समय से आपके विंडोज़ और टैब्स दिखाएँ">
 
-<!ENTITY homepage2.label           "होमपेज">
+<!ENTITY homepage2.label           "मुख पृष्ठ">
 <!ENTITY homepage2.accesskey       "P">
 <!ENTITY useCurrentPage.label      "मौजूदा पृष्ठ का उपयोग करें">
 <!ENTITY useCurrentPage.accesskey  "C">
@@ -18,6 +19,8 @@
 <!ENTITY chooseBookmark.accesskey  "B">
 <!ENTITY restoreDefault.label      "डिफ़ॉल्ट पुनर्स्थापित करें">
 <!ENTITY restoreDefault.accesskey  "R">
+
+<!ENTITY disableExtension.label    "एक्सटेंशन अक्षम करें">
 
 <!ENTITY downloads.label     "डाउनलोड">
 
@@ -39,5 +42,7 @@
 
 <!ENTITY separateProfileMode.label        "&brandShortName; और Firefox को एक ही समय में चलने के लिए स्वीकारें">
 <!ENTITY useFirefoxSync.label             "संकेत: यह अलग प्रोफाइल का उपयोग करता है. उनके बीच आँकड़ा साझा करने के लिए सिंक का उपयोग करें.">
+<!ENTITY getStarted.notloggedin.label     "&syncBrand.shortName.label; में साइन इन करें…">
+<!ENTITY getStarted.configured.label      "&syncBrand.shortName.label; वरीयताएँ खोलें">
 
 <!ENTITY e10sEnabled.label                "बहु-प्रक्रिया को सक्रिय करें &brandShortName;">

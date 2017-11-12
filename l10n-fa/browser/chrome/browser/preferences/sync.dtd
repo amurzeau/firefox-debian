@@ -16,10 +16,10 @@
 <!ENTITY engine.prefs.accesskey     "ت">
 <!ENTITY engine.addons.label        "افزودنی‌ها">
 <!ENTITY engine.addons.accesskey    "ا">
-<!ENTITY engine.addresses.label     "نشانی‌ها">
-<!ENTITY engine.addresses.accesskey "e">
-<!ENTITY engine.creditcards.label   "کارت‌های اعتباری">
-<!ENTITY engine.creditcards.accesskey "C">
+<!ENTITY engine.addresses.label     "آدرس‌ها">
+<!ENTITY engine.addresses.accesskey "آ">
+<!ENTITY engine.creditcards.label   "کارت اعتباری">
+<!ENTITY engine.creditcards.accesskey "ک">
 
 <!-- Device Settings -->
 <!ENTITY fxaSyncDeviceName.label       "نام دستگاه">
@@ -55,7 +55,7 @@ both, to better adapt this sentence to their language.
 <!ENTITY signIn.accesskey            "و">
 <!ENTITY profilePicture.tooltip      "تغییرتصویر نمایه">
 <!ENTITY verifiedManage.label        "مدیریت حساب">
-<!ENTITY verifiedManage.accesskey    "o">
+<!ENTITY verifiedManage.accesskey    "ح">
 <!ENTITY disconnect3.label           "قطع ارتباط…">
 <!ENTITY disconnect3.accesskey       "ق">
 <!ENTITY verify.label                "تایید پست‌الکترونیکی">
@@ -66,10 +66,10 @@ both, to better adapt this sentence to their language.
 <!ENTITY signedOut.caption            "وب را با خودتان همراه کنید">
 <!ENTITY signedOut.description        "نشانک‌ها، تاریخچه، زبانه‌ها، گذرواژه‌ها، افزونه‌ها و ترجیحات خود را در تمام دستگاه‌هایتان همگام کنید.">
 <!ENTITY signedOut.accountBox.title   "اتصال به یک &syncBrand.fxAccount.label;">
-<!ENTITY signedOut.accountBox.create  "ساخت حساب">
-<!ENTITY signedOut.accountBox.create.accesskey  "C">
-<!ENTITY signedOut.accountBox.signin  "ورود">
-<!ENTITY signedOut.accountBox.signin.accesskey  "I">
+<!ENTITY signedOut.accountBox.create2 "حساب کاربری ندارید؟ شروع کنید">
+<!ENTITY signedOut.accountBox.create2.accesskey "C">
+<!ENTITY signedOut.accountBox.signin2 "ورود…">
+<!ENTITY signedOut.accountBox.signin2.accesskey "I">
 
 <!ENTITY signedIn.settings.label       "تنظیمات همگام‌سازی">
 <!ENTITY signedIn.settings.description "اینکه چه چیزهایی بر روی دستگاه‌هایتان توسط &brandShortName; همگام‌سازی شوند را انتخاب کنید.">

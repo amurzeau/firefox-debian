@@ -18,7 +18,8 @@
 <!-- LOCALIZATION NOTE (trackingProtectionPBM5.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel. -->
 <!ENTITY trackingProtectionPBM5.label         "Utiliser la protection contre le pistage dans les fenêtres de navigation privée">
 <!ENTITY trackingProtectionPBM5.accesskey     "i">
-<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the nightly channel. -->
+
+<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the release and beta channel. -->
 <!ENTITY trackingProtectionPBM6.label         "Utiliser la protection contre le pistage en navigation privée pour bloquer les traqueurs connus">
 <!ENTITY trackingProtectionPBM6.accesskey     "i">
 <!ENTITY trackingProtectionPBMLearnMore.label "En savoir plus">
@@ -34,12 +35,12 @@
 <!ENTITY  permissions.label             "Permissions">
 
 <!ENTITY  addressBar.label              "Barre d’adresse">
-<!ENTITY  addressBar.suggest.label      "Lors de l’utilisation de la barre d’adresse, suggérer">
-<!ENTITY  locbar.history2.label         "Historique de navigation">
+<!ENTITY  addressBar.suggest.label      "Lors de l’utilisation de la barre d’adresse, afficher des suggestions depuis">
+<!ENTITY  locbar.history2.label         "L’historique de navigation">
 <!ENTITY  locbar.history2.accesskey     "H">
-<!ENTITY  locbar.bookmarks.label        "Marque-pages">
+<!ENTITY  locbar.bookmarks.label        "Les marque-pages">
 <!ENTITY  locbar.bookmarks.accesskey    "M">
-<!ENTITY  locbar.openpage.label         "Onglets ouverts">
+<!ENTITY  locbar.openpage.label         "Les onglets ouverts">
 <!ENTITY  locbar.openpage.accesskey     "O">
 <!ENTITY  locbar.searches.label         "Recherches similaires du moteur de recherche par défaut">
 <!ENTITY  locbar.searches.accesskey     "d">
@@ -49,17 +50,17 @@
 <!ENTITY  acceptCookies2.label          "Accepter les cookies">
 <!ENTITY  acceptCookies2.accesskey      "A">
 
-<!ENTITY  acceptThirdParty.pre.label      "Accepter les cookies tiers :">
-<!ENTITY  acceptThirdParty.pre.accesskey  "e">
-<!ENTITY  acceptThirdParty.always.label   "toujours">
-<!ENTITY  acceptThirdParty.never.label    "jamais">
-<!ENTITY  acceptThirdParty.visited.label  "depuis les sites visités">
+<!ENTITY  acceptThirdParty2.pre.label     "Accepter les cookies tiers">
+<!ENTITY  acceptThirdParty2.pre.accesskey "e">
+<!ENTITY  acceptThirdParty.always.label   "Toujours">
+<!ENTITY  acceptThirdParty.never.label    "Jamais">
+<!ENTITY  acceptThirdParty.visited.label  "Depuis les sites visités">
 
-<!ENTITY  keepUntil.label               "Les conserver jusqu’à :">
-<!ENTITY  keepUntil.accesskey           "L">
+<!ENTITY  keepUntil2.label              "Les conserver jusqu’à">
+<!ENTITY  keepUntil2.accesskey          "L">
 
-<!ENTITY  expire.label                  "leur expiration">
-<!ENTITY  close.label                   "la fermeture de &brandShortName;">
+<!ENTITY  expire.label                  "Leur expiration">
+<!ENTITY  close.label                   "La fermeture de &brandShortName;">
 
 <!ENTITY  cookieExceptions.label        "Exceptions…">
 <!ENTITY  cookieExceptions.accesskey    "x">
@@ -113,3 +114,8 @@
 <!ENTITY  browserContainersEnabled.accesskey    "g">
 <!ENTITY  browserContainersSettings.label        "Paramètres…">
 <!ENTITY  browserContainersSettings.accesskey    "s">
+
+<!ENTITY  a11yPrivacy.checkbox.label     "Empêcher les services d’accessibilité d’avoir accès à votre navigateur">
+<!ENTITY  a11yPrivacy.checkbox.accesskey "a">
+<!ENTITY  a11yPrivacy.learnmore.label    "En savoir plus">
+<!ENTITY enableSafeBrowsingLearnMore.label "En savoir plus">

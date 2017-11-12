@@ -145,19 +145,14 @@
 <!ENTITY options.debugger.label            "Depurador">
 
 <!-- LOCALIZATION NOTE (options.sourceMap.label): This is the
-   - label for the checkbox that toggles source maps in the Debugger -->
+   - label for the checkbox that toggles source maps in all tools -->
 <!ENTITY options.sourceMaps.label      "Habilitar mapas de fuentes">
-<!ENTITY options.sourceMaps.tooltip    "Si habilita esta opción, fuentes serán mapeados en el depurador y consola.">
+<!ENTITY options.sourceMaps.tooltip1   "Si habilita esta opción, las fuentes serán mapeadas en las herramientas.">
 
 <!-- LOCALIZATION NOTE (options.styleeditor.label): This is the label for the
   -  heading of the group of Style Editor preferences in the options
   -  panel. -->
 <!ENTITY options.styleeditor.label            "Editor de estilos">
-
-<!-- LOCALIZATION NOTE (options.stylesheetSourceMaps.label): This is the
-   - label for the checkbox that toggles showing original sources in the Style Editor -->
-<!ENTITY options.stylesheetSourceMaps.label      "Mostrar fuentes originales">
-<!ENTITY options.stylesheetSourceMaps.tooltip    "Mostrar fuentes originales (ej. Archivos sass) en el editor de estilos y el inspector">
 
 <!-- LOCALIZATION NOTE (options.stylesheetAutocompletion.label): This is the
    - label for the checkbox that toggles autocompletion of css in the Style Editor -->
@@ -178,18 +173,6 @@
    - label for the checkbox that toggles the camera shutter audio for screenshot tool -->
 <!ENTITY options.screenshot.audio.label      "Reproducir sonido de obturador de cámara">
 <!ENTITY options.screenshot.audio.tooltip    "Habilita el sonido de cámara al hacer una captura de pantalla">
-
-<!-- LOCALIZATION NOTE (options.commonprefs): This is the label for the heading
-      of all preferences that affect both the Web Console and the Network
-      Monitor -->
-<!ENTITY options.commonPrefs.label           "Preferencias comunes">
-
-<!-- LOCALIZATION NOTE (options.enablePersistentLogs.label): This is the
-  -  label for the checkbox that toggles persistent logs in the Web Console and
-  -  network monitor,  i.e. devtools.webconsole.persistlog a boolean preference in
-  -  about:config, in the options panel. -->
-<!ENTITY options.enablePersistentLogs.label    "Habilitar registros persitentes">
-<!ENTITY options.enablePersistentLogs.tooltip  "Si habiltia esta opción las consolas web y red no borrarán la salida cada vez que se navegue a una nueva página">
 
 <!-- LOCALIZATION NOTE (options.showPlatformData.label): This is the
   -  label for the checkbox that toggles the display of the platform data in the,

@@ -3,9 +3,14 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY firstrun_panel_title_welcome "歡迎">
-
-<!ENTITY firstrun_urlbar_message "歡迎使用 &brandShortName;">
-<!ENTITY firstrun_urlbar_subtext "透過好用的搜尋建議捷徑，更快找到想要的東西。">
+<!ENTITY firstrun_urlbar_message2 "感謝選用 &brandShortName;">
+<!ENTITY firstrun_urlbar_subtext2 "來自 Mozilla 的現代行動瀏覽器。Mozilla 是一個致力於自由與開放 Web 的非營利組織。">
+<!ENTITY firstrun_panel_title_privacy "隱私權">
+<!ENTITY firstrun_privacy_message "隱私瀏覽不留痕跡">
+<!ENTITY firstrun_privacy_subtext "打開隱私分頁，不僅可阻擋追蹤廣告，也不會留下瀏覽紀錄，上網好安心。">
+<!ENTITY firstrun_panel_title_customize "自訂">
+<!ENTITY firstrun_customize_message "讓 &brandShortName; 有您的風格。">
+<!ENTITY firstrun_customize_subtext "使用附加元件自訂 &brandShortName;。您可封鎖廣告、新增功能，或選擇一套新的佈景主題來展現您的個性。">
 <!ENTITY firstrun_bookmarks_title "瀏覽紀錄">
 <!ENTITY firstrun_bookmarks_message "您的最愛，就在正中央">
 <!ENTITY firstrun_bookmarks_subtext "搜尋時，同步在書籤與瀏覽紀錄中尋找">
@@ -13,8 +18,8 @@
 <!ENTITY firstrun_data_message "網路用得更少，幫您省得更多">
 <!ENTITY firstrun_data_subtext2 "關閉圖片載入，開啟網站時花費更少流量。">
 <!ENTITY firstrun_sync_title "Sync">
-<!ENTITY firstrun_sync_message "&brandShortName; 總是站在您這邊">
-<!ENTITY firstrun_sync_subtext "隨處同步您的分頁、密碼。">
+<!ENTITY firstrun_sync_message2 "從結束的地方繼續。">
+<!ENTITY firstrun_sync_subtext2 "使用 Sync 來尋找您在任何裝置中，儲存到 &brandShortName; 的書籤、密碼，還有更多東西。">
 <!ENTITY firstrun_signin_message "開始連線使用">
 <!ENTITY firstrun_signin_button "登入至 Sync">
 <!ENTITY  onboard_start_button_browser "開始瀏覽">
@@ -87,6 +92,7 @@
      in the folder. -->
 <!ENTITY bookmark_folder_items "&formatD; 個項目">
 <!ENTITY bookmark_folder_one_item "1 個項目">
+<!ENTITY bookmark_folder_updated "已更新資料夾">
 <!ENTITY bookmark_parent_folder "上層資料夾">
 <!ENTITY bookmark_add_folder "新增資料夾">
 
@@ -201,8 +207,6 @@
 <!ENTITY pref_category_advanced_summary3 "還原分頁、節省流量、開發者工具">
 <!ENTITY pref_category_notifications "通知">
 <!ENTITY pref_category_notifications_summary "新功能、網站更新">
-<!ENTITY pref_content_notifications "網站更新">
-<!ENTITY pref_content_notifications_summary2 "探索來自不同網站的新內容">
 <!ENTITY pref_developer_remotedebugging_usb "透過 USB 進行遠端除錯">
 <!ENTITY pref_developer_remotedebugging_wifi "透過 Wi-Fi 進行遠端除錯">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "您的裝置需要安裝 QR Code 掃描程式才能使用 Wi-Fi 除錯。">
@@ -215,7 +219,7 @@
 <!ENTITY pref_category_home_add_ons "附加元件">
 <!ENTITY pref_home_updates2 "內容更新">
 <!ENTITY pref_home_updates_enabled "啟用">
-<!ENTITY pref_home_updates_wifi "僅透過 Wi-Fi 連線">
+<!ENTITY pref_home_updates_wifi "僅在透過 Wi-Fi 連線時">
 <!ENTITY pref_category_home_homepage "首頁">
 <!-- Localization note (home_homepage_every_new_tab): The user will see a switch to determine if the
      home page will be use in every new tab. -->
@@ -260,15 +264,14 @@
 <!ENTITY pref_category_developer_tools "開發者工具">
 
 <!ENTITY pref_tap_to_load_images_title2 "顯示圖片">
-<!ENTITY pref_tap_to_load_images_enabled "總是">
-<!ENTITY pref_tap_to_load_images_data "僅透過 Wi-Fi 連線">
+<!ENTITY pref_tap_to_load_images_enabled "一律顯示">
+<!ENTITY pref_tap_to_load_images_data "僅在透過 Wi-Fi 連線時">
 <!ENTITY pref_tap_to_load_images_disabled2 "封鎖">
 
 <!ENTITY pref_show_web_fonts "顯示網路字型">
 <!ENTITY pref_show_web_fonts_summary2 "載入頁面時下載遠端字型">
 
 <!ENTITY pref_tracking_protection_title2 "追蹤保護">
-<!ENTITY pref_tracking_protection_summary3 "在隱私瀏覽模式中使用">
 <!ENTITY pref_donottrack_title "Do not track">
 <!ENTITY pref_donottrack_summary "&brandShortName; 將會告訴網站您不想被追蹤">
 
@@ -286,8 +289,9 @@
 <!-- Custom Tabs is an Android API for allowing third-party apps to open URLs in a customized UI.
      Instead of switching to the browser it appears as if the user stays in the third-party app.
      For more see: https://developer.chrome.com/multidevice/android/customtabs -->
-<!ENTITY pref_custom_tabs "自訂分頁">
-<!ENTITY pref_custom_tabs_summary3 "允許應用程式使用自訂版本的 &brandShortName; 開啟網站">
+<!ENTITY pref_custom_tabs2 "自訂分頁">
+<!ENTITY pref_custom_tabs_summary4 "允許應用程式在自訂分頁中，快速載入網頁內容。">
+
 <!-- Localization note (custom_tabs_menu_item_open_in): The variable is replaced by the name of
      default browser from user's preference, such as "Open in Firefox" -->
 <!ENTITY custom_tabs_menu_item_open_in "使用 &formatS; 開啟">
@@ -297,10 +301,6 @@
 
 <!ENTITY pref_pwa "Progressive Web Apps">
 <!ENTITY pref_pwa_summary "允許將 Web App 新增至裝置主畫面">
-
-<!-- Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream  -->
-<!ENTITY pref_activity_stream "Activity Stream">
-<!ENTITY pref_activity_stream_summary "將您的上網紀錄視覺化並重新發想首頁設計，讓您可以更簡單在 &brandShortName; 找到想找的東西。">
 
 <!ENTITY tracking_protection_prompt_title "現在開始提供追蹤保護功能">
 <!ENTITY tracking_protection_prompt_text "主動封鎖網頁中的追蹤元素，這樣您就不用再擔心了。">
@@ -334,23 +334,6 @@
      has been queued but we are missing the system permission to show an overlay. -->
 <!ENTITY tab_queue_notification_settings "若要開啟多個鏈結，請授權 &brandShortName; 取得「蓋過其他應用程式」的權限">
 
-<!ENTITY content_notification_summary "&brandShortName;">
-<!-- Localization note (content_notification_title_plural): &formatD; will be replaced with the number of websites that
-     have been updated (new content is available). The number of websites is always more than one (>= 2). For a single
-     update the website title is used instead of this string.
-     We can't use Android plural forms, sadly. See Bug #753859. -->
-<!ENTITY content_notification_title_plural "&formatD; 網站更新">
-<!-- Localization note (content_notification_action_settings2): This label will be shown as an action in a content notification.
-     Clicking the action will jump to the notification settings of the app. -->
-<!ENTITY content_notification_action_settings2 "設定">
-<!-- Localization note(content_notification_action_read_now): This label will be shown as an action in a content notification.
-     Clicking the action will open all new content in the browser. -->
-<!ENTITY content_notification_action_read_now "立刻閱讀">
-<!-- Localization note (content_notification_updated_on): &formatS; will be replaced with a medium sized version of the
-     date, depending on locale. For en_US this is for example: Feb 24, 2016. For more details see the Android developer
-     documentation for DateFormat.getMediumDateFormat(). -->
-<!ENTITY content_notification_updated_on "更新 &formatS;">
-
 <!ENTITY pref_char_encoding "語言及字元編碼">
 <!ENTITY pref_char_encoding_on "顯示選單">
 <!ENTITY pref_char_encoding_off "不顯示選單">
@@ -362,7 +345,7 @@
 <!ENTITY pref_clear_on_exit_summary2 "&brandShortName; 將會在您選擇主選單中的「離開」時自動清除您的資料">
 <!ENTITY pref_clear_on_exit_dialog_title "選擇要清除的資料">
 <!ENTITY pref_restore_tabs "還原分頁">
-<!ENTITY pref_restore_always "總是還原">
+<!ENTITY pref_restore_always "一律還原">
 <!ENTITY pref_restore_quit "不要在離開 &brandShortName; 後還原">
 
 <!-- Localization note (pref_use_system_font_size, pref_use_system_font_size_summary):
@@ -372,14 +355,15 @@
 
 <!ENTITY pref_media_autoplay_enabled "允許自動播放">
 <!ENTITY pref_media_autoplay_enabled_summary "控制網站是否能夠自動播放影片或其他媒體內容">
-<!ENTITY pref_zoom_force_enabled "總是啟用縮放">
+<!ENTITY pref_zoom_force_enabled "隨時啟用縮放">
 <!ENTITY pref_zoom_force_enabled_summary "強制讓所有網頁都能縮放大小">
 <!ENTITY pref_voice_input "語音輸入">
 <!ENTITY pref_voice_input_summary2 "允許在網址列使用語音輸入">
 <!ENTITY pref_qrcode_enabled "QR Code 掃描器">
-<!ENTITY pref_qrcode_enabled_summary2 "允許在網址列使用 QR 碼掃描器">
+<!ENTITY pref_qrcode_enabled_summary2 "允許在網址列使用 QR Code 掃描器">
 
 <!ENTITY pref_use_master_password "使用主控密碼">
+<!ENTITY pref_sync_default_title "Firefox 帳號">
 <!ENTITY pref_sync2 "登入">
 <!ENTITY pref_sync_summary2 "同步您的分頁、書籤、登入資訊、瀏覽紀錄">
 <!ENTITY pref_search_suggestions "顯示搜尋建議">
@@ -388,17 +372,17 @@
 <!ENTITY pref_import_android_summary "自內建瀏覽器匯入書籤與瀏覽紀錄">
 <!-- Localization note (pref_private_data_openTabs): Open tabs is an option in
      the Clear Private Data  dialog and refers to currently open tabs. -->
-<!ENTITY pref_private_data_openTabs "開啟分頁">
-<!ENTITY pref_private_data_history2 "瀏覽歷史紀錄">
+<!ENTITY pref_private_data_openTabs "開啟的分頁">
+<!ENTITY pref_private_data_history2 "瀏覽紀錄">
 <!ENTITY pref_private_data_searchHistory "搜尋紀錄">
 <!ENTITY pref_private_data_formdata2 "表單填寫紀錄">
-<!ENTITY pref_private_data_cookies2 "Cookie 與目前的登入狀況">
-<!ENTITY pref_private_data_passwords2 "已存密碼">
+<!ENTITY pref_private_data_cookies2 "Cookie 與目前的網站登入狀態">
+<!ENTITY pref_private_data_passwords2 "儲存的登入資訊">
 <!ENTITY pref_private_data_cache "快取">
 <!ENTITY pref_private_data_offlineApps "網站離線資料">
 <!ENTITY pref_private_data_siteSettings2 "網站設定">
 <!ENTITY pref_private_data_downloadFiles2 "下載項目">
-<!ENTITY pref_private_data_syncedTabs "已同步的分頁">
+<!ENTITY pref_private_data_syncedTabs "同步的分頁">
 
 <!ENTITY pref_default_browser "設為預設瀏覽器">
 <!ENTITY pref_default_browser_mozilla_support_tablet "前往 Mozilla 技術支援站">
@@ -409,6 +393,9 @@
 <!ENTITY pref_dialog_set_default "設為預設">
 <!ENTITY pref_dialog_default "預設">
 <!ENTITY pref_dialog_remove "移除">
+<!ENTITY pref_dialog_activitystream_header_content "其他內容">
+<!ENTITY pref_dialog_activitystream_recentBookmarks "近期加入書籤">
+<!ENTITY pref_dialog_activitystream_visited "造訪過">
 
 <!ENTITY pref_search_last_toast "您不能移除或停用您的最後一個搜尋引擎。">
 
@@ -443,14 +430,14 @@
      (crashReporterSection.label) in en-US/chrome/browser/preferences/advanced.dtd.-->
 <!ENTITY datareporting_crashreporter_title_short "程式錯誤回報員">
 <!ENTITY datareporting_wifi_title2 "&vendorShortName; Location Service">
-<!ENTITY datareporting_wifi_geolocation_summary4 "一起來幫忙 &vendorShortName; 畫出全世界的地圖！請分享您的裝置的大略 Wi-Fi 與行動基地台位置，以幫助我們改善地理位置定位服務。">
+<!ENTITY datareporting_wifi_geolocation_summary4 "一起來幫忙 &vendorShortName; 畫出全世界的地圖！請分享您的裝置的大略 Wi-Fi 與行動基地台位置，以幫助我們改善地理位置定位服務">
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
 <!ENTITY pref_update_autodownload3 "自動更新">
-<!ENTITY pref_update_autodownload_wifi "僅透過 Wi-Fi 連線">
+<!ENTITY pref_update_autodownload_wifi "僅在透過 Wi-Fi 連線時">
 <!ENTITY pref_update_autodownload_never "永不">
-<!ENTITY pref_update_autodownload_always "總是">
+<!ENTITY pref_update_autodownload_always "一律下載">
 
 <!-- Localization note (help_menu) : This string is used in the main menu-->
 <!ENTITY help_menu "說明">
@@ -499,6 +486,7 @@
 <!ENTITY contextmenu_open_private_tab "用新隱私分頁開啟">
 <!ENTITY contextmenu_remove "移除">
 <!ENTITY contextmenu_add_to_launcher "新增至裝置主畫面">
+<!ENTITY contextmenu_add_page_shortcut "新增頁面捷徑">
 <!ENTITY contextmenu_set_as_homepage "設為首頁">
 <!ENTITY contextmenu_share "分享">
 <!ENTITY contextmenu_pasteandgo "貼上並瀏覽">
@@ -510,7 +498,17 @@
 <!ENTITY contextmenu_top_sites_edit "編輯">
 <!ENTITY contextmenu_top_sites_pin "釘選">
 <!ENTITY contextmenu_top_sites_unpin "解除釘選">
+<!-- Localization note (contextmenu_pin_to_top_sites, contextmenu_unpin_from_top_sites): These strings are used to
+     pin/unpin items from top sites when the user is not on the top sites screen so they'd be missing context on what
+     just "Pin Site" or "Unpin Site" would mean. -->
+<!ENTITY contextmenu_pin_to_top_sites "釘選至熱門網站">
+<!ENTITY contextmenu_unpin_from_top_sites "從熱門網站取消釘選">
 <!ENTITY contextmenu_add_search_engine "新增搜尋引擎">
+
+<!-- Localization note (pinned_page_to_top_sites, unpinned_page_from_top_sites): These strings are shown in a snackbar
+     after the user pins/unpins the currently displayed page from top sites. -->
+<!ENTITY pinned_page_to_top_sites "已將頁面釘選至熱門網站">
+<!ENTITY unpinned_page_from_top_sites "已將頁面從熱門網站取消釘選">
 
 <!-- Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
      where normally a username would be displayed. In this case, no username was found, and this placeholder
@@ -530,13 +528,13 @@
 <!ENTITY pref_scroll_title_bar2 "全螢幕瀏覽">
 <!ENTITY pref_scroll_title_bar_summary2 "捲動網頁時隱藏 &brandShortName; 工具列">
 
-<!ENTITY pref_tab_queue_title3 "分頁佇列">
+<!ENTITY pref_tab_queue_title3 "稍候開啟分頁">
 <!ENTITY pref_tab_queue_summary4 "儲存鏈結直至您下次開啟 &brandShortName;">
 
 <!-- Localization note (pref_compact_tabs): Label for setting that controls whether 1 wide column or
      2 narrower (compact) columns are used for tabs in the tabs tray in portrait mode on phones. -->
 <!ENTITY pref_compact_tabs "精簡分頁">
-<!ENTITY pref_compact_tabs_summary2 "垂直使用螢幕時，將分頁排成兩欄">
+<!ENTITY pref_compact_tabs_summary2 "垂直使用螢幕時，將分頁清單排成兩欄">
 
 <!-- Localization note (page_removed): This string appears in a toast message when
      any page is removed frome about:home. This includes pages that are in history,
@@ -821,6 +819,8 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 
 <!ENTITY promotion_add_to_homescreen "新增至裝置主畫面">
 
+<!ENTITY promotion_add_page_shortcut "新增頁面捷徑">
+
 <!ENTITY helper_first_offline_bookmark_title "離線閱讀">
 <!ENTITY helper_first_offline_bookmark_message "就算離線時，您的閱讀畫面項目也會保存在書籤當中。">
 <!ENTITY helper_first_offline_bookmark_button "前往書籤">
@@ -829,22 +829,44 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_message "將閱讀畫面項目加入書籤，以在離線時閱讀。">
 <!ENTITY helper_triple_readerview_open_button "加入書籤">
 
-<!ENTITY activity_stream_topsites "最常造訪">
-<!ENTITY activity_stream_highlights "熱門網站">
+<!ENTITY activity_stream_topsites "最常瀏覽">
+<!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->
+<!ENTITY activity_stream_topstories "&brandPocket; 推薦">
+<!ENTITY activity_stream_highlights "精選網站">
+
+<!-- LOCALIZATION NOTE (activity_stream_link_more1): Link-like text displayed to take user to a website with more content from Pocket. -->
+<!ENTITY activity_stream_link_more1 "更多">
 
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_bookmarked): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
 <!ENTITY activity_stream_highlight_label_bookmarked "已加入書籤">
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_visited): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
-<!ENTITY activity_stream_highlight_label_visited "已造訪">
+<!ENTITY activity_stream_highlight_label_visited "造訪過">
+<!-- LOCALIZATION NOTE (activity_stream_highlight_label_trending): This label is shown in the Activity Stream list for highlights sourced from a recommendations engine. -->
+<!ENTITY activity_stream_highlight_label_trending "熱門趨勢">
+<!-- LOCALIZATION NOTE (activity_stream_highlights_empty): This text is shown when we could not find highlights for this user. This is also shown on first run. -->
+<!ENTITY activity_stream_highlights_empty "開始上網，我們就會把您在網路上發現的好文章、影片、剛加入書籤的頁面顯示於此處。">
 
-<!-- LOCALIZATION NOTE (activity_stream_dismiss): This label is shown in the Activity Stream context menu,
+<!-- LOCALIZATION NOTE (activity_stream_remove): This label is shown in the Activity Stream context menu,
 and allows hiding a URL/page from highlights or topsites. The page remains in history/bookmarks, but
 is simply hidden from the Activity Stream panel. -->
-<!ENTITY activity_stream_dismiss "隱藏">
+<!ENTITY activity_stream_remove "移除">
 <!ENTITY activity_stream_delete_history "從瀏覽紀錄刪除">
 
-<!ENTITY activity_stream_welcome_title "歡迎來到您的重點事項清單">
-<!ENTITY activity_stream_welcome_content1 "現在起，&brandShortName; 會為您在網路上發現的新事物建立重點事項清單，這樣您就可以快速地回到這些文章、影片、書籤等頁面。">
+<!ENTITY private_tab_panel_title "隱私瀏覽 + 追蹤保護">
+<!ENTITY private_tab_panel_description "&brandShortName; 會封鎖頁面中部分元素，以防止您的瀏覽行為被其追蹤。">
+<!ENTITY private_tab_panel_description2 "我們不會記住任何瀏覽紀錄，但下載的檔案與新建立的書籤還是會保留在裝置中。">
+<!ENTITY private_tab_learn_more "想了解更多資訊？">
+
 <!ENTITY fullscreen_warning "已進入全螢幕模式">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_confirm): The plus sign here is part of UI design -->
+<!ENTITY pwa_add_to_launcher_confirm "+ 新增至裝置主畫面">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_badge2): Used as label in the page actions dropdown list,
+displayed when there are more than 3 actions available for a page.
+See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
+<!ENTITY pwa_add_to_launcher_badge2 "新增至裝置主畫面">
+<!ENTITY pwa_continue_to_website "繼續前往網站">
+<!ENTITY pwa_onboarding_sumo "您可將此網站加入裝置主畫面，方便快速開啟，或是以類似 App 的方式使用。">

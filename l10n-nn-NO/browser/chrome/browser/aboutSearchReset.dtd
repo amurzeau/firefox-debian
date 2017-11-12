@@ -6,12 +6,12 @@
 
 <!ENTITY searchreset.pageTitle      "Vil du byggje oppatt søkjeinnstillingane?">
 
-<!ENTITY searchreset.pageInfo1      "Søkjeinnstillingane dine er kanskje gamle. &brandShortName; kan hjelpe deg med å byggje oppatt søjkeinnstillingane.">
+<!ENTITY searchreset.pageInfo1      "Søkjeinnstillingane dine er kanskje gamle. &brandShortName; kan hjelpe deg med å byggje oppatt søkjeinnstillingane.">
 
 
 <!-- LOCALIZATION NOTE (searchreset.selector.label): this string is
 followed by a dropdown of all the built-in search engines. -->
-<!ENTITY searchreset.selector.label "Dette vil stille inn standard søkemotor til">
+<!ENTITY searchreset.selector.label "Dette vil stille inn standard søkjemotor til">
 
 <!-- LOCALIZATION NOTE (searchreset.beforelink.pageInfo,
 searchreset.afterlink.pageInfo): these two string are used respectively

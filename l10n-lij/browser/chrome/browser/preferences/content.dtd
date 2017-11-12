@@ -2,22 +2,34 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY  popups.label                "Barcon de pop-up">
+<!ENTITY  permissions.label           "Permissi">
 
 <!ENTITY  blockPopups.label           "Blòcca i barcoin de pop-up">
 <!ENTITY  blockPopups.accesskey       "B">
 
-<!ENTITY  notificationsPolicy.label            "Notifiche">
-<!ENTITY  notificationsPolicyLearnMore.label   "Atre informaçioin">
-<!ENTITY  notificationsPolicyDesc3.label       "Çerni di sciti aotorizæ a mandâ notifiche">
-<!ENTITY  notificationsPolicyButton.accesskey  "e">
-<!ENTITY  notificationsPolicyButton.label      "Çerni…">
 <!ENTITY  notificationsDoNotDisturb.label      "No ronpime">
 <!ENTITY  notificationsDoNotDisturb.accesskey  "N">
 <!ENTITY  notificationsDoNotDisturbDetails.value "No saiâ mostrâ nisciunn-a notifica fin a quande arvi torna &brandShortName;">
 
-<!ENTITY  popupExceptions.label       "Eceçioin…">
-<!ENTITY  popupExceptions.accesskey   "E">
+<!ENTITY  popupExceptions.label                                 "Eceçioin…">
+<!ENTITY  popupExceptions.accesskey                             "E">
+
+<!ENTITY  notificationPermissions.label                         "Notifiche">
+<!ENTITY  notificationSettingsButton.label                      "Inpostaçioin…">
+<!ENTITY  notificationSettingsButton.accesskey                  "t">
+<!ENTITY  notificationPermissionsLearnMore.label                "Atre informaçioin">
+
+<!ENTITY  locationPermissions.label                             "Indirisso">
+<!ENTITY  locationSettingsButton.label                          "Inpostaçioin…">
+<!ENTITY  locationSettingsButton.accesskey                      "t">
+
+<!ENTITY  cameraPermissions.label                               "Fòtocamera">
+<!ENTITY  cameraSettingsButton.label                            "Inpostaçioin…">
+<!ENTITY  cameraSettingsButton.accesskey                        "t">
+
+<!ENTITY  microphonePermissions.label                           "Micròfono">
+<!ENTITY  microphoneSettingsButton.label                        "Inpostaçioin…">
+<!ENTITY  microphoneSettingsButton.accesskey                    "t">
 
 <!ENTITY  fontsAndColors.label        "Coî e testo">
 
@@ -33,7 +45,7 @@
 <!ENTITY  colors.accesskey            "C">
 
 
-<!ENTITY languages.label              "Lengoe">
+<!ENTITY language2.label              "Lengoa">
 <!ENTITY chooseLanguage.label         "Çerni a lengoa preferia pe-e pagine">
 <!ENTITY chooseButton.label           "Çerni…">
 <!ENTITY chooseButton.accesskey       "i">
@@ -53,8 +65,8 @@
 <!ENTITY translation.options.attribution.beforeLogo "Traduçioin a cura de">
 <!ENTITY translation.options.attribution.afterLogo "">
 
-<!ENTITY  drmContent.label             "Contegnui con DRM">
+<!ENTITY  drmContent2.label              "Contenguo da Gestion di Diritti Digitali (DRM)">
 
-<!ENTITY  playDRMContent.label         "Riproduci contegnui con DRM">
-<!ENTITY  playDRMContent.accesskey     "R">
+<!ENTITY  playDRMContent2.label          "Riproduxi o contegnuo DRM-controlled">
+<!ENTITY  playDRMContent2.accesskey      "R">
 <!ENTITY  playDRMContent.learnMore.label "Atre informaçioin">

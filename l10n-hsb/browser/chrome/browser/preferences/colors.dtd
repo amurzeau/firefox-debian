@@ -6,25 +6,25 @@
 <!ENTITY  window.width                    "38em">
 <!ENTITY  window.macWidth                 "41em">
 
-<!ENTITY  overrideDefaultPageColors.label        "Barby podate přez stronu přez mój wuběry horjeka přepisać:">
-<!ENTITY  overrideDefaultPageColors.accesskey    "B">
+<!ENTITY  overrideDefaultPageColors2.label       "Barby podate přez stronu přez mój wuběry horjeka přepisać">
+<!ENTITY  overrideDefaultPageColors2.accesskey   "B">
 
 <!ENTITY  overrideDefaultPageColors.always.label "Přeco">
 <!ENTITY  overrideDefaultPageColors.auto.label   "Jenož z drastami z wysokim kontrastom">
 <!ENTITY  overrideDefaultPageColors.never.label  "Ženje">
 
 <!ENTITY  color                           "Tekst a pozadk">
-<!ENTITY  textColor.label                 "Tekst:">
-<!ENTITY  textColor.accesskey             "T">
-<!ENTITY  backgroundColor.label           "Pozadk:">
-<!ENTITY  backgroundColor.accesskey       "P">
+<!ENTITY  textColor2.label                "Tekst">
+<!ENTITY  textColor2.accesskey            "T">
+<!ENTITY  backgroundColor2.label          "Pozadk">
+<!ENTITY  backgroundColor2.accesskey      "P">
 <!ENTITY  useSystemColors.label           "Systemowe barby wužiwać">
 <!ENTITY  useSystemColors.accesskey       "S">
 
 <!ENTITY  underlineLinks.label            "Wotkazy podšmórnyć">
 <!ENTITY  underlineLinks.accesskey        "m">
 <!ENTITY  links                           "Barby wotkazow">
-<!ENTITY  linkColor.label                 "Njewopytane wotkazy:">
-<!ENTITY  linkColor.accesskey             "N">
-<!ENTITY  visitedLinkColor.label          "Wopytane wotkazy:">
-<!ENTITY  visitedLinkColor.accesskey      "W">
+<!ENTITY  linkColor2.label                "Njewopytane wotkazy">
+<!ENTITY  linkColor2.accesskey            "N">
+<!ENTITY  visitedLinkColor2.label         "Wopytane wotkazy">
+<!ENTITY  visitedLinkColor2.accesskey     "W">

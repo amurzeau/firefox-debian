@@ -7,16 +7,29 @@
 <!ENTITY  blockPopups.label           "Hüpikaknad blokitakse">
 <!ENTITY  blockPopups.accesskey       "H">
 
-<!ENTITY  notificationsPolicyLearnMore.label   "Rohkem teavet">
-<!ENTITY  notificationsPolicyDesc4.label       "Vali, millised saidid võivad teavitusi saata">
-<!ENTITY  notificationsPolicyButton.accesskey  "a">
-<!ENTITY  notificationsPolicyButton.label      "Vali…">
 <!ENTITY  notificationsDoNotDisturb.label      "Keela teavitused ajutiselt">
 <!ENTITY  notificationsDoNotDisturb.accesskey  "K">
 <!ENTITY  notificationsDoNotDisturbDetails.value "&brandShortName; taaskäivitamiseni teavitusi ei kuvata">
 
-<!ENTITY  popupExceptions.label       "Erandid…">
-<!ENTITY  popupExceptions.accesskey   "E">
+<!ENTITY  popupExceptions.label                                 "Erandid…">
+<!ENTITY  popupExceptions.accesskey                             "E">
+
+<!ENTITY  notificationPermissions.label                         "Teavitused">
+<!ENTITY  notificationSettingsButton.label                      "Sätted…">
+<!ENTITY  notificationSettingsButton.accesskey                  "t">
+<!ENTITY  notificationPermissionsLearnMore.label                "Rohkem teavet">
+
+<!ENTITY  locationPermissions.label                             "Asukoht">
+<!ENTITY  locationSettingsButton.label                          "Sätted…">
+<!ENTITY  locationSettingsButton.accesskey                      "t">
+
+<!ENTITY  cameraPermissions.label                               "Kaamera">
+<!ENTITY  cameraSettingsButton.label                            "Sätted…">
+<!ENTITY  cameraSettingsButton.accesskey                        "t">
+
+<!ENTITY  microphonePermissions.label                           "Mikrofon">
+<!ENTITY  microphoneSettingsButton.label                        "Sätted…">
+<!ENTITY  microphoneSettingsButton.accesskey                    "t">
 
 <!ENTITY  fontsAndColors.label        "Fondid ja värvid">
 

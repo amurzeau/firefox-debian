@@ -3,8 +3,14 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY firstrun_panel_title_welcome "Benvenuto">
-<!ENTITY firstrun_urlbar_message "Benvenuto in &brandShortName;">
-<!ENTITY firstrun_urlbar_subtext "Trova tutto ciò che ti serve più velocemente con suggerimenti e scorciatoie di ricerca.">
+<!ENTITY firstrun_urlbar_message2 "Grazie per aver scelto &brandShortName;">
+<!ENTITY firstrun_urlbar_subtext2 "Un browser mobile moderno realizzato da Mozilla, l’organizzazione non-profit che si impegna per mantenere il Web libero e aperto.">
+<!ENTITY firstrun_panel_title_privacy "Privacy">
+<!ENTITY firstrun_privacy_message "Naviga come se nessuno stesse guardando">
+<!ENTITY firstrun_privacy_subtext "La navigaziona anonima con protezione antitracciamento blocca gli elementi traccianti durante la navigazione e non conserva alcuna cronologia quando hai finito.">
+<!ENTITY firstrun_panel_title_customize "Personalizza">
+<!ENTITY firstrun_customize_message "Trasforma &brandShortName; nel ”tuo” browser.">
+<!ENTITY firstrun_customize_subtext "Personalizza &brandShortName; con i componenti aggiuntivi: blocca le pubblicità, aggiungi nuove funzioni o scegli un tema che rifletta la tua personalità.">
 <!ENTITY firstrun_bookmarks_title "Cronologia">
 <!ENTITY firstrun_bookmarks_message "I tuoi preferiti in primo piano">
 <!ENTITY firstrun_bookmarks_subtext "Mostra risultati da segnalibri e cronologia durante le ricerche.">
@@ -12,8 +18,8 @@
 <!ENTITY firstrun_data_message "Risparmia sulla connessione">
 <!ENTITY firstrun_data_subtext2 "Disattiva le immagini per consumare meno dati ogni volta che visiti un sito.">
 <!ENTITY firstrun_sync_title "Sync">
-<!ENTITY firstrun_sync_message "&brandShortName;, sempre al tuo fianco">
-<!ENTITY firstrun_sync_subtext "Sincronizza schede, password e molto altro ancora ovunque lo utilizzi.">
+<!ENTITY firstrun_sync_message2 "Riprendi da dove ti eri interrotto">
+<!ENTITY firstrun_sync_subtext2 "Utilizza Sync per accedere da tutti i dispositivi a segnalibri, password e altre informazioni salvate in &brandShortName;.">
 <!ENTITY firstrun_signin_message "Connettiti e inizia">
 <!ENTITY firstrun_signin_button "Accedi a Sync">
 <!ENTITY onboard_start_button_browser "Inizia a navigare">
@@ -60,6 +66,7 @@
 <!ENTITY screenshot_folder_label_in_bookmarks "Schermate">
 <!ENTITY readinglist_smartfolder_label_in_bookmarks "Elenco lettura">
 <!ENTITY bookmark_folder_items "&formatD; elementi">
+<!ENTITY bookmark_folder_updated "Cartella aggiornata">
 <!ENTITY bookmark_folder_one_item "1 elemento">
 <!ENTITY bookmark_parent_folder "Cartella superiore">
 <!ENTITY bookmark_add_folder "Nuova cartella">
@@ -123,8 +130,6 @@
 <!ENTITY pref_category_advanced_summary3 "Ripristino schede, risparmio dati, strumenti di sviluppo">
 <!ENTITY pref_category_notifications "Notifiche">
 <!ENTITY pref_category_notifications_summary "Nuove funzioni, aggiornamenti dai siti web">
-<!ENTITY pref_content_notifications "Aggiornamenti siti web">
-<!ENTITY pref_content_notifications_summary2 "Scopri nuovi contenuti dai siti web supportati">
 <!ENTITY pref_developer_remotedebugging_usb "Debug remoto tramite USB">
 <!ENTITY pref_developer_remotedebugging_wifi "Debug remoto tramite Wi-Fi">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Il debug tramite Wi-Fi richiede la presenza sul dispositivo di un’app per la scansione di codici QR.">
@@ -164,7 +169,6 @@
 <!ENTITY pref_show_web_fonts "Visualizza web font">
 <!ENTITY pref_show_web_fonts_summary2 "Scarica i caratteri da remoto durante il caricamento delle pagine">
 <!ENTITY pref_tracking_protection_title2 "Protezione antitracciamento">
-<!ENTITY pref_tracking_protection_summary3 "Attiva in modalità Navigazione anonima">
 <!ENTITY pref_donottrack_title "Antitracciamento">
 <!ENTITY pref_donottrack_summary "Richiedi ai siti di non effettuare alcun tracciamento">
 <!ENTITY pref_tracking_protection_enabled "Attiva">
@@ -173,15 +177,13 @@
 <!ENTITY pref_whats_new_notification "Novità di &brandShortName;">
 <!ENTITY pref_whats_new_notification_summary "Visualizza informazioni sulle nuove caratteristiche dopo un aggiornamento">
 <!ENTITY pref_category_experimental "Caratteristiche sperimentali">
-<!ENTITY pref_custom_tabs "Schede personalizzate">
-<!ENTITY pref_custom_tabs_summary3 "Consenti alle app di aprire siti web in una versione personalizzata di &brandShortName;.">
+<!ENTITY pref_custom_tabs2 "Schede personalizzate">
+<!ENTITY pref_custom_tabs_summary4 "Consenti alle app di aprire contenuti web in schede personalizzate">
 <!ENTITY custom_tabs_menu_item_open_in "Apri in &formatS;">
 <!ENTITY custom_tabs_menu_footer "Con tecnologia &brandShortName;">
 <!ENTITY custom_tabs_hint_url_copy "Indirizzo copiato">
 <!ENTITY pref_pwa "Web app progressive">
 <!ENTITY pref_pwa_summary "Consenti di aggiungere web app alla pagina iniziale">
-<!ENTITY pref_activity_stream "Flusso attività">
-<!ENTITY pref_activity_stream_summary "Una visualizzazione della cronologia ricca di informazioni e una pagina iniziale completamente ripensata rendono ancora più semplice trovare tutto ciò che serve in &brandShortName;.">
 <!ENTITY tracking_protection_prompt_title "Ora con protezione antitracciamento">
 <!ENTITY tracking_protection_prompt_text "Blocca in modo attivo gli elementi traccianti, rimuovendo ogni preoccupazione per l’utente.">
 <!ENTITY tracking_protection_prompt_tip_text "Per ulteriori informazioni visita la sezione Privacy delle impostazioni">
@@ -199,11 +201,6 @@
 <!ENTITY tab_queue_notification_text_plural2 "&formatD; schede in attesa">
 <!ENTITY tab_queue_notification_text_singular2 "1 scheda in attesa">
 <!ENTITY tab_queue_notification_settings "Per attivare la funzione “Apertura di più link” garantire a &brandShortName; il permesso “Consenti spostamento su altre app”">
-<!ENTITY content_notification_summary "&brandShortName;">
-<!ENTITY content_notification_title_plural "&formatD; siti aggiornati">
-<!ENTITY content_notification_action_settings2 "Impostazioni">
-<!ENTITY content_notification_action_read_now "Leggi adesso">
-<!ENTITY content_notification_updated_on "Aggiornato il &formatS;">
 <!ENTITY pref_char_encoding "Codifica caratteri">
 <!ENTITY pref_char_encoding_on "Visualizza menu">
 <!ENTITY pref_char_encoding_off "Non visualizzare menu">
@@ -226,6 +223,7 @@
 <!ENTITY pref_qrcode_enabled "Scansione codici QR">
 <!ENTITY pref_qrcode_enabled_summary2 "Consenti la scansione di codici QR nella barra degli indirizzi">
 <!ENTITY pref_use_master_password "Usa password principale">
+<!ENTITY pref_sync_default_title "Account Firefox">
 <!ENTITY pref_sync2 "Accedi">
 <!ENTITY pref_sync_summary2 "Sincronizza schede, segnalibri, accessi, cronologia">
 <!ENTITY pref_search_suggestions "Mostra suggerimenti di ricerca">
@@ -251,6 +249,9 @@
 <!ENTITY pref_dialog_set_default "Imposta come predefinito">
 <!ENTITY pref_dialog_default "Predefinito">
 <!ENTITY pref_dialog_remove "Rimuovi">
+<!ENTITY pref_dialog_activitystream_header_content "Contenuti aggiuntivi">
+<!ENTITY pref_dialog_activitystream_recentBookmarks "Segnalibri recenti">
+<!ENTITY pref_dialog_activitystream_visited "Visitati">
 <!ENTITY pref_search_last_toast "Non è possibile rimuovere o disattivare l’ultimo motore di ricerca.">
 <!ENTITY pref_panels_show "Mostra">
 <!ENTITY pref_panels_hide "Nascondi">
@@ -311,6 +312,7 @@
 <!ENTITY contextmenu_open_private_tab "Apri in scheda anonima">
 <!ENTITY contextmenu_remove "Rimuovi">
 <!ENTITY contextmenu_add_to_launcher "Agg. a schermata principale">
+<!ENTITY contextmenu_add_page_shortcut "Agg. scorciatoia alla pagina">
 <!ENTITY contextmenu_set_as_homepage "Imposta come pagina iniziale">
 <!ENTITY contextmenu_share "Condividi">
 <!ENTITY contextmenu_pasteandgo "Incolla e vai">
@@ -322,15 +324,19 @@
 <!ENTITY contextmenu_top_sites_edit "Modifica">
 <!ENTITY contextmenu_top_sites_pin "Blocca sito">
 <!ENTITY contextmenu_top_sites_unpin "Sblocca sito">
+<!ENTITY contextmenu_pin_to_top_sites "Aggiungi ai siti principali">
+<!ENTITY contextmenu_unpin_from_top_sites "Rimuovi dai siti principali">
 <!ENTITY contextmenu_add_search_engine "Aggiungi motore di ricerca">
+<!ENTITY pinned_page_to_top_sites "Aggiunto ai siti principali">
+<!ENTITY unpinned_page_from_top_sites "Rimosso dai siti principali">
 <!ENTITY doorhanger_login_no_username "[nessun nome utente]">
-<!ENTITY doorhanger_login_edit_title "Modifica accesso">
+<!ENTITY doorhanger_login_edit_title "Modifica credenziali">
 <!ENTITY doorhanger_login_edit_username_hint "Nome utente">
 <!ENTITY doorhanger_login_edit_password_hint "Password">
 <!ENTITY doorhanger_login_edit_toggle "Mostra password">
 <!ENTITY doorhanger_login_select_message "Copiare la password da &formatS;?">
 <!ENTITY doorhanger_login_select_toast_copy "Password copiata negli appunti">
-<!ENTITY doorhanger_login_select_action_text "Seleziona un altro accesso">
+<!ENTITY doorhanger_login_select_action_text "Seleziona altre credenziali di accesso">
 <!ENTITY doorhanger_login_select_title "Copia password da">
 <!ENTITY pref_scroll_title_bar2 "Navigazione a schermo intero">
 <!ENTITY pref_scroll_title_bar_summary2 "Nascondi la barra degli strumenti di &brandShortName; quando si scorre una pagina verso il basso">
@@ -339,6 +345,7 @@
 <!ENTITY pref_compact_tabs "Schede compatte">
 <!ENTITY pref_compact_tabs_summary2 "Visualizza le schede su due colonne in modalità verticale">
 <!ENTITY page_removed "Pagina rimossa">
+<!ENTITY folder_removed "Cartella rimossa">
 <!ENTITY bookmark_edit_title "Modifica segnalibro">
 <!ENTITY bookmark_edit_folder_title "Modifica cartella">
 <!ENTITY bookmark_edit_name "Nome">
@@ -473,6 +480,7 @@
 <!ENTITY whatsnew_notification_title "&brandShortName; è aggiornato">
 <!ENTITY whatsnew_notification_summary "Scopri le novità in questa versione">
 <!ENTITY promotion_add_to_homescreen "Agg. a schermata principale">
+<!ENTITY promotion_add_page_shortcut "Agg. scorciatoia alla pagina">
 <!ENTITY helper_first_offline_bookmark_title "Lettura non in linea">
 <!ENTITY helper_first_offline_bookmark_message "Gli elementi salvati in Elenco lettura sono disponibili nei segnalibri, anche non in linea.">
 <!ENTITY helper_first_offline_bookmark_button "Vai ai segnalibri">
@@ -480,10 +488,21 @@
 <!ENTITY helper_triple_readerview_open_message "Aggiungi ai segnalibri articoli da Modalità lettura per leggerli anche senza connessione a Internet.">
 <!ENTITY helper_triple_readerview_open_button "Aggiungi ai segnalibri">
 <!ENTITY activity_stream_topsites "Siti principali">
+<!ENTITY activity_stream_topstories "Consigliati da &brandPocket;">
 <!ENTITY activity_stream_highlights "In evidenza">
+<!ENTITY activity_stream_link_more1 "ALTRO">
 <!ENTITY activity_stream_highlight_label_bookmarked "Nei segnalibri">
 <!ENTITY activity_stream_highlight_label_visited "Visitato">
-<!ENTITY activity_stream_dismiss "Elimina">
+<!ENTITY activity_stream_highlight_label_trending "Di tendenza">
+<!ENTITY activity_stream_highlights_empty "Inizia a navigare e, in questa sezione, verranno visualizzati articoli, video e altre pagine visitate di recente o aggiunte ai segnalibri.">
+<!ENTITY activity_stream_remove "Rimuovi">
 <!ENTITY activity_stream_delete_history "Elimina dalla cronologia">
-<!ENTITY activity_stream_welcome_title "Contenuti in evidenza">
-<!ENTITY activity_stream_welcome_content1 "&brandShortName; crea un elenco di contenuti in evidenza sulla base dei siti visitati. In questo modo sarà facile ritrovare elementi interessanti come articoli, video, segnalibri e altre pagine.">
+<!ENTITY private_tab_panel_title "Navigazione anonima + Protezione antitracciamento">
+<!ENTITY private_tab_panel_description "&brandShortName; blocca gli elementi della pagina in grado di tracciare la navigazione." >
+<!ENTITY private_tab_panel_description2 "Non verrà salvata alcuna cronologia, ma i file scaricati e i nuovi segnalibri verranno comunque conservati sul dispositivo." >
+<!ENTITY private_tab_learn_more "Ulteriori informazioni">
+<!ENTITY fullscreen_warning "Attivata modalità schermo intero">
+<!ENTITY pwa_add_to_launcher_confirm "+ Agg. a schermata principale">
+<!ENTITY pwa_add_to_launcher_badge2 "Agg. a schermata principale">
+<!ENTITY pwa_continue_to_website "Vai al sito web">
+<!ENTITY pwa_onboarding_sumo "È possibile aggiungere questo sito web alla schermata principale, per accedervi più rapidamente e con un’esperienza simile alle app.">

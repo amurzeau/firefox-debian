@@ -16,6 +16,7 @@
 <!ENTITY engine.prefs.accesskey     "ت">
 <!ENTITY engine.addons.label        "ایڈ اون">
 <!ENTITY engine.addons.accesskey    "ا">
+<!ENTITY engine.addresses.label     "پتے">
 <!ENTITY engine.addresses.accesskey "e">
 <!ENTITY engine.creditcards.accesskey "C">
 

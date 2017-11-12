@@ -29,13 +29,13 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "O relatório de dados está desabilitado nesta configuração">
 
-<!ENTITY enableHealthReport1.label       "Permitir que o &brandShortName; automaticamente envie dados técnicos e de interação para a Mozilla">
-<!ENTITY enableHealthReport1.accesskey   "r">
+<!ENTITY enableHealthReport2.label       "Permitir que o &brandShortName; envie dados técnicos e de interação para a Mozilla">
+<!ENTITY enableHealthReport2.accesskey   "r">
 <!ENTITY healthReportLearnMore.label     "Saber mais">
 
 <!ENTITY dataCollection.label            "Coleta e Uso de Dados pelo &brandShortName;">
 <!ENTITY dataCollectionDesc.label        "Nós nos esforçamos para lhe proporcionar escolhas e coletar somente o que precisamos para fornecer e melhorar o &brandShortName; para todos. Nós sempre pedimos permissão antes de receber informações pessoais.">
-<!ENTITY dataCollectionPrivacyNotice.label    "Política de Privacidade">
+<!ENTITY dataCollectionPrivacyNotice.label    "Nota sobre privacidade">
 
 <!ENTITY alwaysSubmitCrashReports1.label  "Permitir que o &brandShortName; envie relatórios de travamento para a Mozilla">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "t">
@@ -116,7 +116,7 @@ available. -->
 <!ENTITY offlineStorageNotifyExceptions.label     "Exceções…">
 <!ENTITY offlineStorageNotifyExceptions.accesskey "x">
 
-<!ENTITY offlineAppsList2.label          "Estes sites estão autorizados a armazenar dados para uso offline:">
+<!ENTITY offlineAppsList3.label          "Estes sites tem permissão de armazenar dados para uso off-line">
 <!ENTITY offlineAppsList.height          "7em">
 <!ENTITY offlineAppsListRemove.label     "Remover…">
 <!ENTITY offlineAppsListRemove.accesskey "R">

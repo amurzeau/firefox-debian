@@ -6,25 +6,25 @@
 <!ENTITY  window.width                    "38em">
 <!ENTITY  window.macWidth                 "41em">
 
-<!ENTITY  overrideDefaultPageColors.label        "Sayt tərəfindən seçilmiş rənglər sizin aşağıdakı seçimlərinizlə dəyişdirilsin:">
-<!ENTITY  overrideDefaultPageColors.accesskey    "O">
+<!ENTITY  overrideDefaultPageColors2.label       "Sayt tərəfindən seçilmiş rənglər sizin aşağıdakı seçimlərinizlə dəyişdirilsin">
+<!ENTITY  overrideDefaultPageColors2.accesskey   "O">
 
 <!ENTITY  overrideDefaultPageColors.always.label "Həmişə">
 <!ENTITY  overrideDefaultPageColors.auto.label   "Ancaq yüksək kontrastlı mövzular ilə">
 <!ENTITY  overrideDefaultPageColors.never.label  "Heç vaxt">
 
 <!ENTITY  color                           "Mətn və arxa fon">
-<!ENTITY  textColor.label                 "Mətn:">
-<!ENTITY  textColor.accesskey             "t">
-<!ENTITY  backgroundColor.label           "Arxa fon:">
-<!ENTITY  backgroundColor.accesskey       "A">
+<!ENTITY  textColor2.label                "Mətn">
+<!ENTITY  textColor2.accesskey            "T">
+<!ENTITY  backgroundColor2.label          "Arxa fon">
+<!ENTITY  backgroundColor2.accesskey      "B">
 <!ENTITY  useSystemColors.label           "Sistem rənglərindən istifadə et">
 <!ENTITY  useSystemColors.accesskey       "S">
 
 <!ENTITY  underlineLinks.label            "Bağlantıların altını xətlə">
 <!ENTITY  underlineLinks.accesskey        "ı">
 <!ENTITY  links                           "Keçid rəngləri">
-<!ENTITY  linkColor.label                 "Baxılmamış keçidlər:">
-<!ENTITY  linkColor.accesskey             "k">
-<!ENTITY  visitedLinkColor.label          "Baxılmış keçidlər:">
-<!ENTITY  visitedLinkColor.accesskey      "B">
+<!ENTITY  linkColor2.label                "Baxılmamış keçidlər">
+<!ENTITY  linkColor2.accesskey            "L">
+<!ENTITY  visitedLinkColor2.label         "Baxılmış keçidlər">
+<!ENTITY  visitedLinkColor2.accesskey     "V">

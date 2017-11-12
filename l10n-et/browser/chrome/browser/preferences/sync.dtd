@@ -4,17 +4,17 @@
 
 <!-- The page shown when logged in... -->
 
-<!ENTITY engine.bookmarks.label     "järjehoidjad">
+<!ENTITY engine.bookmarks.label     "Järjehoidjad">
 <!ENTITY engine.bookmarks.accesskey "j">
 <!ENTITY engine.tabs.label2         "Avatud kaardid">
 <!ENTITY engine.tabs.accesskey      "r">
-<!ENTITY engine.history.label       "ajalugu">
+<!ENTITY engine.history.label       "Ajalugu">
 <!ENTITY engine.history.accesskey   "a">
 <!ENTITY engine.logins.label        "Kasutajakontod">
-<!ENTITY engine.logins.accesskey    "K">
-<!ENTITY engine.prefs.label         "eelistused">
+<!ENTITY engine.logins.accesskey    "u">
+<!ENTITY engine.prefs.label         "Eelistused">
 <!ENTITY engine.prefs.accesskey     "e">
-<!ENTITY engine.addons.label        "lisad">
+<!ENTITY engine.addons.label        "Lisad">
 <!ENTITY engine.addons.accesskey    "i">
 <!ENTITY engine.addresses.label     "Aadressid">
 <!ENTITY engine.addresses.accesskey "d">
@@ -66,10 +66,10 @@ both, to better adapt this sentence to their language.
 <!ENTITY signedOut.caption            "Võta oma veeb endaga kaasa">
 <!ENTITY signedOut.description        "Sync võimaldab sul sünkroniseerida järjehoidjad, ajaloo, kaardid, paroolid, lisad ja sätted kõigis sinu seadmetes.">
 <!ENTITY signedOut.accountBox.title   "Ühendu &syncBrand.fxAccount.label;ga">
-<!ENTITY signedOut.accountBox.create  "Loo konto">
-<!ENTITY signedOut.accountBox.create.accesskey  "k">
-<!ENTITY signedOut.accountBox.signin  "Logi sisse">
-<!ENTITY signedOut.accountBox.signin.accesskey  "i">
+<!ENTITY signedOut.accountBox.create2 "Sul pole kontot? Tee algust">
+<!ENTITY signedOut.accountBox.create2.accesskey "T">
+<!ENTITY signedOut.accountBox.signin2 "Logi sisse…">
+<!ENTITY signedOut.accountBox.signin2.accesskey "o">
 
 <!ENTITY signedIn.settings.label       "Sünkroniseerimise sätted">
 <!ENTITY signedIn.settings.description "Vali &brandShortName;i poolt sünkroniseeritavad andmed.">

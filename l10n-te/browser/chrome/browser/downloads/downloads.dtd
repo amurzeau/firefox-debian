@@ -57,9 +57,9 @@
 <!ENTITY cmd.showMac.label                "ఫైండర్‌లో చూపించు">
 <!ENTITY cmd.showMac.accesskey            "F">
 <!ENTITY cmd.retry.label                  "మళ్ళీ ప్రయత్నించు">
-<!ENTITY cmd.goToDownloadPage.label       "డౌనులోడు పేజీకి వెళ్ళు">
+<!ENTITY cmd.goToDownloadPage.label       "దింపుకోళ్ళ పేజీకి వెళ్ళు">
 <!ENTITY cmd.goToDownloadPage.accesskey   "G">
-<!ENTITY cmd.copyDownloadLink.label       "దింపుకోలు లంకెను నకలుతీయి">
+<!ENTITY cmd.copyDownloadLink.label       "డౌనులోడు లింకును కాపీచేయి">
 <!ENTITY cmd.copyDownloadLink.accesskey   "L">
 <!ENTITY cmd.removeFromHistory.label      "చరిత్ర నుండి తొలగించు">
 <!ENTITY cmd.removeFromHistory.accesskey  "e">
@@ -133,6 +133,11 @@
      -->
 <!ENTITY downloadsHistory.label           "దింపుకోళ్ళంటినీ చూపించు">
 <!ENTITY downloadsHistory.accesskey       "S">
+
+<!-- LOCALIZATION NOTE (downloadDetails.label):
+     This string is shown at the top of the Download Details Panel, to indicate
+     that we are showing the details of a single download.
+     -->
 
 <!-- LOCALIZATION NOTE (openDownloadsFolder.label):
      This command is not currently available in the user interface, but the

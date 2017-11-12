@@ -8,8 +8,8 @@
 <!ENTITY  trackingProtectionAlways.label       "Sentiasa">
 <!ENTITY  trackingProtectionAlways.accesskey   "n">
 <!ENTITY  trackingProtectionPrivate.label      "Hanya dalam tertingkap persendirian">
-<!ENTITY  trackingProtectionPrivate.accesskey  "l">
-<!ENTITY  trackingProtectionNever.label        "Tidak sekali">
+<!ENTITY  trackingProtectionPrivate.accesskey  "y">
+<!ENTITY  trackingProtectionNever.label        "Jangan sesekali">
 <!ENTITY  trackingProtectionNever.accesskey    "k">
 <!ENTITY  trackingProtectionLearnMore.label    "Ketahui selanjutnya">
 <!ENTITY  trackingProtectionExceptions.label   "Pengecualian…">
@@ -18,7 +18,8 @@
 <!-- LOCALIZATION NOTE (trackingProtectionPBM5.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel. -->
 <!ENTITY trackingProtectionPBM5.label         "Guna Perlindungan Penjejakan dalam Tetingkap Persendirian">
 <!ENTITY trackingProtectionPBM5.accesskey     "k">
-<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the nightly channel. -->
+
+<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the release and beta channel. -->
 <!ENTITY trackingProtectionPBM6.label         "Gunakan Perlindungan Penjejakan dalam Pelayaran Peribadi untuk menyekat penjejak dikenali">
 <!ENTITY trackingProtectionPBM6.accesskey     "b">
 <!ENTITY trackingProtectionPBMLearnMore.label "Ketahui selanjutnya">
@@ -49,16 +50,16 @@
 <!ENTITY  acceptCookies2.label          "Terima kuki dari laman web">
 <!ENTITY  acceptCookies2.accesskey      "T">
 
-<!ENTITY  acceptThirdParty.pre.label      "Menerima kuki pihak ketiga:">
-<!ENTITY  acceptThirdParty.pre.accesskey  "M">
+<!ENTITY  acceptThirdParty2.pre.label     "Terima kuki pihak ketiga">
+<!ENTITY  acceptThirdParty2.pre.accesskey "t">
 <!ENTITY  acceptThirdParty.always.label   "Sentiasa">
-<!ENTITY  acceptThirdParty.never.label    "Tidak sekali">
+<!ENTITY  acceptThirdParty.never.label    "Jangan sesekali">
 <!ENTITY  acceptThirdParty.visited.label  "Daripada yang dilawati">
 
-<!ENTITY  keepUntil.label               "Kekalkan sehingga:">
-<!ENTITY  keepUntil.accesskey           "h">
+<!ENTITY  keepUntil2.label              "Kekalkan sehingga">
+<!ENTITY  keepUntil2.accesskey          "s">
 
-<!ENTITY  expire.label                  "ianya luput">
+<!ENTITY  expire.label                  "luput">
 <!ENTITY  close.label                   "Saya tutup &brandShortName;">
 
 <!ENTITY  cookieExceptions.label        "Pengecualian…">
@@ -85,7 +86,7 @@
 <!ENTITY  rememberActions.removeCookies.label "buang kuki individu">
 <!ENTITY  rememberActions.post.label          ".">
 
-<!ENTITY  dontrememberDescription.label  "&brandShortName; akan menggunakan tetapan yang sama untuk layaran peribadi dan tidak akan mengingati sejarah layaran semasa anda melayari Web.">
+<!ENTITY  dontrememberDescription.label  "&brandShortName; akan menggunakan tetapan yang sama untuk pelayaran peribadi dan tidak akan mengingati sejarah pelayaran semasa anda melayari Web.">
 
 <!-- LOCALIZATION NOTE (dontrememberActions.pre.label): include a trailing space as needed -->
 <!-- LOCALIZATION NOTE (dontrememberActions.post.label): include a starting space as needed -->
@@ -109,7 +110,12 @@
 <!ENTITY  clearOnCloseSettings.accesskey "t">
 
 <!ENTITY  browserContainersLearnMore.label      "Ketahui selanjutnya">
-<!ENTITY  browserContainersEnabled.label        "Dayakan Tab Kontena">
+<!ENTITY  browserContainersEnabled.label        "Dayakan Tab Penyimpan">
 <!ENTITY  browserContainersEnabled.accesskey    "n">
 <!ENTITY  browserContainersSettings.label        "Tetapan…">
 <!ENTITY  browserContainersSettings.accesskey    "p">
+
+<!ENTITY  a11yPrivacy.checkbox.label     "Halang perkhidmatan daripada mengakses pelayar anda">
+<!ENTITY  a11yPrivacy.checkbox.accesskey "a">
+<!ENTITY  a11yPrivacy.learnmore.label    "Ketahui selanjutnya">
+<!ENTITY enableSafeBrowsingLearnMore.label "Ketahui selanjutnya">

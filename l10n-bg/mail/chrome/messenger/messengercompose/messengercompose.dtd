@@ -33,11 +33,11 @@
 <!ENTITY closeCmd.label "Затваряне">
 <!ENTITY closeCmd.key "W">
 <!ENTITY closeCmd.accesskey "З">
-<!ENTITY saveCmd.label "Запис">
+<!ENTITY saveCmd.label "Запазване">
 <!ENTITY saveCmd.key "S">
 <!ENTITY saveCmd.accesskey "а">
-<!ENTITY saveAsCmd.label "Запис като">
-<!ENTITY saveAsCmd.accesskey "и">
+<!ENTITY saveAsCmd.label "Запазване като">
+<!ENTITY saveAsCmd.accesskey "к">
 <!ENTITY saveAsFileCmd.label "Файл…">
 <!ENTITY saveAsFileCmd.accesskey "Ф">
 <!ENTITY saveAsDraftCmd.label "Чернова">
@@ -173,7 +173,7 @@
 <!ENTITY highestPriorityCmd.accesskey "П">
 <!ENTITY fileCarbonCopyCmd.label "Изпращане копие до">
 <!ENTITY fileCarbonCopyCmd.accesskey "щ">
-<!ENTITY fileHereMenu.label "Записване тук">
+<!ENTITY fileHereMenu.label "Запазване тук">
 
 <!-- Tools Menu -->
 <!ENTITY tasksMenu.label "Инструменти">
@@ -205,7 +205,7 @@
 <!ENTITY addressButton.label "Контакти">
 <!ENTITY attachButton.label "Прилагане">
 <!ENTITY spellingButton.label "Правопис">
-<!ENTITY saveButton.label "Запис">
+<!ENTITY saveButton.label "Запазване">
 <!ENTITY printButton.label "Отпечатване">
 
 <!-- Mail Toolbar Tooltips -->
@@ -215,8 +215,7 @@
 <!ENTITY addressButton.tooltip "Изберете получател от адресника">
 <!ENTITY attachButton.tooltip "Добавяне на прикачен файл">
 <!ENTITY spellingButton.tooltip "Правописна проверка на маркировката или цялото писмо">
-<!ENTITY statusLanguageText.tooltip "Език за проверка на правописа">
-<!ENTITY saveButton.tooltip "Запис на писмото">
+<!ENTITY saveButton.tooltip "Запазване на писмото">
 <!ENTITY cutButton.tooltip              "Изрязване">
 <!ENTITY copyButton.tooltip             "Копиране">
 <!ENTITY pasteButton.tooltip            "Поставяне">
@@ -261,10 +260,10 @@
 
 <!-- Message Pane Context Menu -->
 <!ENTITY spellCheckNoSuggestions.label "Няма предложения">
-<!ENTITY spellCheckIgnoreWord.label "Игнориране на дума">
-<!ENTITY spellCheckIgnoreWord.accesskey "И">
-<!ENTITY spellCheckAddToDictionary.label "Добавяне в речника">
-<!ENTITY spellCheckAddToDictionary.accesskey "ч">
+<!ENTITY spellCheckIgnoreWord.label "Пренебрегване на думата">
+<!ENTITY spellCheckIgnoreWord.accesskey "д">
+<!ENTITY spellCheckAddToDictionary.label "Добавяне към речника">
+<!ENTITY spellCheckAddToDictionary.accesskey "р">
 <!ENTITY undo.label "Отмяна">
 <!ENTITY undo.accesskey "О">
 <!ENTITY cut.label "Изрязване">
@@ -307,5 +306,9 @@
 <!ENTITY addressesSidebarTitle.label "Контакти">
 
 <!-- Identity popup customize menuitem -->
-<!ENTITY customizeFromAddress.label "Потребителски От адрес…">
+<!ENTITY customizeFromAddress.label "Изпращане от друго име…">
 <!ENTITY customizeFromAddress.accesskey "а">
+
+<!-- Status Bar -->
+<!ENTITY languageStatusButton.tooltip "Език за проверка на правописа">
+<!ENTITY encodingStatusPanel.tooltip "Кодиране на текста">

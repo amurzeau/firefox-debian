@@ -14,16 +14,17 @@
 <!ENTITY  trackingProtectionLearnMore.label    "மேலும் அறி">
 <!ENTITY  trackingProtectionExceptions.label   "விதிவிலக்குகள்…">
 <!ENTITY  trackingProtectionExceptions.accesskey "x">
-<!-- LOCALIZATION NOTE (trackingProtectionPBM5.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel. -->
 
+<!-- LOCALIZATION NOTE (trackingProtectionPBM5.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel. -->
 <!ENTITY trackingProtectionPBM5.label         "அந்தரங்க சாளரத்தில் தடமறியல் பாதுகாப்பைப் பாவி">
 <!ENTITY trackingProtectionPBM5.accesskey     "v">
-<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the nightly channel. -->
+
+<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the release and beta channel. -->
 <!ENTITY trackingProtectionPBM6.label         "அறியப்பட்ட தடமறிவான்களை முடக்க தனிப்பட்ட உலாவலில் தடமறியல் பாதுகாப்பைப் பயன்படுத்தவும்">
 <!ENTITY trackingProtectionPBM6.accesskey     "v">
 <!ENTITY trackingProtectionPBMLearnMore.label "மேலும் அறிய">
-
-
+<!ENTITY changeBlockList2.label               "தடை பட்டியலை மாற்று...">
+<!ENTITY changeBlockList2.accesskey           "C">
 
 <!ENTITY  doNotTrack.description        "நீங்கள் தடமறியப்பட விரும்பவில்லையென்று வலைத்தளங்களுக்கு “தடமறியாதே” சைகையை அனுப்பு">
 <!ENTITY  doNotTrack.learnMore.label    "மேலும் அறிய">
@@ -35,8 +36,8 @@
 
 <!ENTITY  addressBar.label              "முகவரி பட்டை">
 <!ENTITY  addressBar.suggest.label      "இடப்பட்டையைப் பயன்படுத்தும் போது, பரிந்துரைக்கவும்">
-
-
+<!ENTITY  locbar.history2.label         "உலாவல் வரலாறு">
+<!ENTITY  locbar.history2.accesskey     "h">
 <!ENTITY  locbar.bookmarks.label        "புத்தகக்குறிகள்">
 <!ENTITY  locbar.bookmarks.accesskey    "k">
 <!ENTITY  locbar.openpage.label         "கீற்றுகளைத் திற">
@@ -46,16 +47,17 @@
 
 <!ENTITY  suggestionSettings2.label     "தேடுபொறி பரிந்துரைத்துலுக்கான முன்னுரிமைகளை மாற்று">
 
+<!ENTITY  acceptCookies2.label          "தளங்களிலிருந்து நினைவிகளை ஏற்றுக்கொள்">
+<!ENTITY  acceptCookies2.accesskey      "A">
 
-
-<!ENTITY  acceptThirdParty.pre.label      "மூன்றாம் தரப்பு நினைவிகளை அனுமதிக்கவும்:">
-<!ENTITY  acceptThirdParty.pre.accesskey  "y">
+<!ENTITY  acceptThirdParty2.pre.label     "மூன்றாம் தரப்பு நினைவிகளை அனுமதி">
+<!ENTITY  acceptThirdParty2.pre.accesskey "y">
 <!ENTITY  acceptThirdParty.always.label   "எப்போதும்">
 <!ENTITY  acceptThirdParty.never.label    "ஒரு போதும் இல்லை">
 <!ENTITY  acceptThirdParty.visited.label  "பார்வையிட்டதிலிருந்து">
 
-<!ENTITY  keepUntil.label               "அதுவரை வைத்திரு:">
-<!ENTITY  keepUntil.accesskey           "u">
+<!ENTITY  keepUntil2.label              "அதுவரை வைத்திரு">
+<!ENTITY  keepUntil2.accesskey          "u">
 
 <!ENTITY  expire.label                  "அவை காலாவதியாகிவிட்டது">
 <!ENTITY  close.label                   "நான் &brandShortName;ஐ மூடுகிறேன்">
@@ -74,10 +76,10 @@
 <!ENTITY  historyHeader.post.label         "">
 
 <!ENTITY  rememberDescription.label      "&brandShortName; உங்கள் உலாவும், பதிவிறக்கும், படிவ மற்றும் தேடும் வரலாற்றை நினைவில் வைத்து நீங்கள் பார்வையிடும் இணைய தளங்களின் நினைவிகளையும் வைத்திருக்கும்.">
+
 <!-- LOCALIZATION NOTE (rememberActions.pre.label): include a trailing space as needed -->
 <!-- LOCALIZATION NOTE (rememberActions.middle.label): include a starting and trailing space as needed -->
 <!-- LOCALIZATION NOTE (rememberActions.post.label): include a starting space as needed -->
-
 <!ENTITY  rememberActions.pre.label           "நீங்கள் இதற்கு விரும்பலாம்">
 <!ENTITY  rememberActions.clearHistory.label  "உங்கள் சமீபத்திய வரலாற்றை துடை">
 <!ENTITY  rememberActions.middle.label        ", அல்லது">
@@ -85,9 +87,9 @@
 <!ENTITY  rememberActions.post.label          ".">
 
 <!ENTITY  dontrememberDescription.label  "&brandShortName; தனி உலாவல் அமைப்புகளையே பயன்படுத்தும் , மற்றும் நீங்கள் இணையத்தை உலாவும் போது எந்த வரலாற்றையும் நினைவில் கொள்ளாது.">
+
 <!-- LOCALIZATION NOTE (dontrememberActions.pre.label): include a trailing space as needed -->
 <!-- LOCALIZATION NOTE (dontrememberActions.post.label): include a starting space as needed -->
-
 <!ENTITY  dontrememberActions.pre.label          "நீங்களும் இதற்கு விரும்பலாம்">
 <!ENTITY  dontrememberActions.clearHistory.label "நடப்பு வரலாற்று அனைத்தையும் துடை">
 <!ENTITY  dontrememberActions.post.label         ".">
@@ -112,3 +114,8 @@
 <!ENTITY  browserContainersEnabled.accesskey    "n">
 <!ENTITY  browserContainersSettings.label        "அமைவுகள்…">
 <!ENTITY  browserContainersSettings.accesskey    "i">
+
+<!ENTITY  a11yPrivacy.checkbox.label     "அணுகல்தன்மை சேவைகள் உங்கள் உலாவியை அணுகவதிலிருந்தும் தடுக்கவும்">
+<!ENTITY  a11yPrivacy.checkbox.accesskey "a">
+<!ENTITY  a11yPrivacy.learnmore.label    "மேலும் அறிய">
+<!ENTITY enableSafeBrowsingLearnMore.label "மேலும் அறிய">

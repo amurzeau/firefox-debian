@@ -29,8 +29,8 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "Докладването да данни е изключено за тази конфигурация на изданието">
 
-<!ENTITY enableHealthReport1.label       "Разрешаване на &brandShortName; автоматично да изпраща техническа информация и данни за използването към Mozilla">
-<!ENTITY enableHealthReport1.accesskey   "т">
+<!ENTITY enableHealthReport2.label       "Разрешаване на &brandShortName; да изпраща техническа информация и данни за използването към Mozilla">
+<!ENTITY enableHealthReport2.accesskey   "т">
 <!ENTITY healthReportLearnMore.label     "Научете повече">
 
 <!ENTITY dataCollection.label            "Събиране и използване на данни от &brandShortName;">
@@ -45,11 +45,11 @@ available. -->
 
 <!ENTITY networkProxy.label              "Прокси">
 
-<!ENTITY connectionDesc.label            "Настройване на начина, по който &brandShortName; достъпва Мрежата">
+<!ENTITY connectionDesc.label            "Настройки на &brandShortName; за достъп до Мрежата">
 <!ENTITY connectionSettings.label        "Настройки…">
 <!ENTITY connectionSettings.accesskey    "Н">
 
-<!ENTITY httpCache.label                 "Кеширано уеб съдържание">
+<!ENTITY httpCache.label                 "Буферирано съдържание от интернет">
 
 <!ENTITY offlineStorage2.label           "Уеб съдържание при работа извън мрежа и потребителски данни">
 
@@ -116,7 +116,7 @@ available. -->
 <!ENTITY offlineStorageNotifyExceptions.label     "Изключения…">
 <!ENTITY offlineStorageNotifyExceptions.accesskey "з">
 
-<!ENTITY offlineAppsList2.label          "На следните сайтове е позволено да съхраняват информация за работа извън мрежата:">
+<!ENTITY offlineAppsList3.label          "Страници с разрешение да съхраняват информация за работа извън мрежата">
 <!ENTITY offlineAppsList.height          "7em">
 <!ENTITY offlineAppsListRemove.label     "Изчистване…">
 <!ENTITY offlineAppsListRemove.accesskey "И">
