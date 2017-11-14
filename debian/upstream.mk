@@ -104,7 +104,6 @@ ifneq (,$(filter %~a1, $(VERSION)))
 SOURCE_TYPE := nightly
 SHORT_SOURCE_CHANNEL := central
 DOWNLOAD_SOURCE := nightly
-L10N_REPO := https://hg.mozilla.org/l10n-central
 else
 # Release
 SOURCE_TYPE := releases
@@ -146,7 +145,7 @@ SOURCE_REPO = $(patsubst %/,%,$(dir $(patsubst %/,%,$(dir $(SOURCE_URL)))))
 endif
 endif
 
-L10N_REPO ?= $(subst $(SOURCE_CHANNEL),l10n/mozilla-$(SHORT_L10N_CHANNEL),$(SOURCE_REPO))
+L10N_REPO := https://hg.mozilla.org/l10n-central
 
 ifneq (,$(filter dump dump-% import download,$(MAKECMDGOALS)))
 ifneq (,$(filter-out $(VERSION),$(UPSTREAM_RELEASE))$(filter $(SOURCE_CHANNEL),aurora central))
