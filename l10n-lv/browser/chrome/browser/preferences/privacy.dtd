@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY  trackingProtectionHeader2.label      "Izsekošanas aizsardzība">
-<!ENTITY  trackingProtection2.description      "Izsekošanas informācija sastāv no jūsu pārlūkošanas datiem dažādās lapās. Šo informāciju var izmantot, lai rādītu jums pielāgotu saturu, piemēram reklāmas.">
+<!ENTITY  trackingProtection2.description      "Izsekotāji vāc datus par jums dažādās lapās. Šo informāciju var izmantot, lai veidotu jūsu profilu un attēlotu pielāgotu saturu un reklāmas.">
 <!ENTITY  trackingProtection2.radioGroupLabel  "Izmantot izsekošanas aizsardzību, lai bloķētu zināmos izsekotājus">
 <!ENTITY  trackingProtectionAlways.label       "Vienmēr">
 <!ENTITY  trackingProtectionAlways.accesskey   "m">
@@ -20,7 +20,7 @@
 <!ENTITY trackingProtectionPBM5.accesskey     "v">
 <!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the nightly channel. -->
 <!ENTITY trackingProtectionPBM6.label         "Izmantot izsekošanas aizsardzību, lai bloķētu zināmos izsekotājus">
-<!ENTITY trackingProtectionPBM6.accesskey     "v">
+<!ENTITY trackingProtectionPBM6.accesskey     "t">
 <!ENTITY trackingProtectionPBMLearnMore.label "Uzzināt vairāk">
 <!ENTITY changeBlockList2.label               "Mainīt bloķēto sarakstu…">
 <!ENTITY changeBlockList2.accesskey           "M">
@@ -33,9 +33,10 @@
 <!ENTITY  history.label                 "Vēsture">
 <!ENTITY  permissions.label             "Atļaujas">
 
-<!ENTITY  addressBar.label              "Adrešu joslā">
+<!ENTITY  addressBar.label              "Adrešu josla">
 <!ENTITY  addressBar.suggest.label      "Meklējot adreses joslā, ieteikt">
 <!ENTITY  locbar.history2.label         "Pārlūkošanas vēsturi">
+<!ENTITY  locbar.history2.accesskey     "V">
 <!ENTITY  locbar.bookmarks.label        "Grāmatzīmes">
 <!ENTITY  locbar.bookmarks.accesskey    "m">
 <!ENTITY  locbar.openpage.label         "Atvērtās cilnes">
@@ -45,15 +46,17 @@
 
 <!ENTITY  suggestionSettings2.label     "Izmainiet meklētāju iestatījumus">
 
+<!ENTITY  acceptCookies2.label          "Pieņemt sīkdatnes no lapām">
+<!ENTITY  acceptCookies2.accesskey      "P">
 
-<!ENTITY  acceptThirdParty.pre.label      "Pieņemt trešo pušu sīkdatnes:">
-<!ENTITY  acceptThirdParty.pre.accesskey  "t">
+<!ENTITY  acceptThirdParty2.pre.label     "Pieņemt trešo pušu sīkdatnes">
+<!ENTITY  acceptThirdParty2.pre.accesskey "p">
 <!ENTITY  acceptThirdParty.always.label   "Vienmēr">
 <!ENTITY  acceptThirdParty.never.label    "Nekad">
 <!ENTITY  acceptThirdParty.visited.label  "Tikai no lapām, kuras esmu apmeklējis">
 
-<!ENTITY  keepUntil.label               "Glabāt līdz:">
-<!ENTITY  keepUntil.accesskey           "G">
+<!ENTITY  keepUntil2.label              "Glabāt līdz">
+<!ENTITY  keepUntil2.accesskey          "l">
 
 <!ENTITY  expire.label                  "beidzas to derīgums">
 <!ENTITY  close.label                   "es aizveru &brandShortName;">
@@ -110,3 +113,8 @@
 <!ENTITY  browserContainersEnabled.accesskey    "u">
 <!ENTITY  browserContainersSettings.label        "Iestatījumi...">
 <!ENTITY  browserContainersSettings.accesskey    "i">
+
+<!ENTITY  a11yPrivacy.checkbox.label     "Neļaut pieejamības rīkiem piekļūt pārlūkam">
+<!ENTITY  a11yPrivacy.checkbox.accesskey "p">
+<!ENTITY  a11yPrivacy.learnmore.label    "Uzzināt vairāk">
+<!ENTITY enableSafeBrowsingLearnMore.label "Uzzināt vairāk">

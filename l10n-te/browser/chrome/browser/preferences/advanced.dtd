@@ -47,7 +47,7 @@ available. -->
 <!ENTITY connectionSettings.label        "అమరికలు…">
 <!ENTITY connectionSettings.accesskey    "e">
 
-<!ENTITY httpCache.label                 "క్యాచీ చేసిన వెబ్ విషయం">
+<!ENTITY httpCache.label                 "క్యాషేచేసిన వెబ్ విషయం">
 
 <!ENTITY offlineStorage2.label           "ఆఫ్‌లైన్ వెబ్ విషయం మరియు వాడుకరి దత్తాంశం">
 
@@ -72,7 +72,7 @@ available. -->
 <!ENTITY clearCacheNow.accesskey         "C">
 <!ENTITY clearOfflineAppCacheNow.label   "ఇప్పుడు శుభ్రంచేయి">
 <!ENTITY clearOfflineAppCacheNow.accesskey "N">
-<!ENTITY overrideSmartCacheSize.label    "స్వయంచాలక క్యాచీ నిర్వహణను వోవర్‌రైడ్ చేయి">
+<!ENTITY overrideSmartCacheSize.label    "స్వయంచాలక క్యాషె నిర్వహణను వోవర్‌రైడ్ చేయి">
 <!ENTITY overrideSmartCacheSize.accesskey "O">
 
 <!ENTITY updateTab.label                 "నవీకరణ">
@@ -119,6 +119,7 @@ available. -->
 <!ENTITY offlineAppRemove.confirm        "ఆఫ్‌లైన్ డాటాను తీసివేయి">
 
 <!ENTITY certificateTab.label            "ధృవీకరణ పత్రాలు">
+<!ENTITY certPersonal2.description       "సెర్వెర్ మీ వ్యక్తగిత ధృవీకరణపత్రం అభ్యర్ధించినప్పుడు">
 <!ENTITY selectCerts.auto                "స్వయంచాలకంగా ఒక దానిని ఎంపికచేయి">
 <!ENTITY selectCerts.auto.accesskey      "S">
 <!ENTITY selectCerts.ask                 "ప్రతిసారీ మిమ్మల్ని అడుగును">
@@ -131,10 +132,17 @@ available. -->
 <!ENTITY viewSecurityDevices2.accesskey  "D">
 
 <!ENTITY performance.label               "పనితనం">
+<!ENTITY useRecommendedPerformanceSettings2.label
+                                         "సిఫారసు చేయబడిన పనితనపు అమరికలను వాడండి">
+<!ENTITY useRecommendedPerformanceSettings2.description
+                                         "ఈ సెట్టింగులు మీ కంప్యూటర్ హార్డ్వేర్ మరియు ఆపరేటింగ్ సిస్టంకు అనుగుణంగా ఉంటాయి.">
 <!ENTITY useRecommendedPerformanceSettings2.accesskey
                                          "U">
 <!ENTITY performanceSettingsLearnMore.label
                                          "ఇంకా తెలుసుకోండి">
+<!ENTITY limitContentProcessOption.label "కంటెంట్ ప్రాసెస్ పరిమితి">
+<!ENTITY limitContentProcessOption.description
+                                         "బహుళ ట్యాబ్లను ఉపయోగిస్తున్నప్పుడు అదనపు కంటెంట్ ప్రాసెస్లు పనితీరును మెరుగుపరుస్తాయి, అయితే మరింత మెమరీని కూడా ఉపయోగిస్తాయి.">
 <!ENTITY limitContentProcessOption.accesskey   "L">
 <!ENTITY allowHWAccel.label              "అందుబాటులో ఉన్నప్పుడు హార్డువేర్ యాక్సెలరేషన్ ఉపయోగించు">
 <!ENTITY allowHWAccel.accesskey          "r">

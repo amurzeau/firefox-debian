@@ -14,14 +14,14 @@
 <!ENTITY  closeWindow.key       "w">
 
 <!ENTITY  generalTab            "Umum">
-<!ENTITY  generalTab.accesskey  "G">
+<!ENTITY  generalTab.accesskey  "U">
 <!ENTITY  generalTitle          "Tajuk:">
 <!ENTITY  generalURL            "Alamat:">
 <!ENTITY  generalType           "Jenis:">
-<!ENTITY  generalMode           "Mod Jadikan:">
+<!ENTITY  generalMode           "Mod Penghuraian:">
 <!ENTITY  generalSize           "Saiz:">
-<!ENTITY  generalReferrer       "Merujuk URL:">
-<!ENTITY  generalSource         "sumber disorok:">
+<!ENTITY  generalReferrer       "URL Perujuk:">
+<!ENTITY  generalSource         "Sumber Cache:">
 <!ENTITY  generalModified       "Diubahsuai:">
 <!ENTITY  generalEncoding2      "Pengekodan Teks:">
 <!ENTITY  generalMetaName       "Nama">
@@ -31,33 +31,33 @@
 <!ENTITY  mediaTab.accesskey    "M">
 <!ENTITY  mediaLocation         "Lokasi:">
 <!ENTITY  mediaText             "Teks Berkaitan:">
-<!ENTITY  mediaAltHeader        "Teks Ganti">
+<!ENTITY  mediaAltHeader        "Teks Alternatif">
 <!ENTITY  mediaAddress          "Alamat">
 <!ENTITY  mediaType             "Jenis">
 <!ENTITY  mediaSize             "Saiz">
-<!ENTITY  mediaCount            "Kira">
-<!ENTITY  mediaDimension        "Dimensi-dimensi:">
-<!ENTITY  mediaLongdesc         "Perihal secara panjang lebar:">
+<!ENTITY  mediaCount            "Kiraan">
+<!ENTITY  mediaDimension        "Dimensi:">
+<!ENTITY  mediaLongdesc         "Keterangan:">
 <!ENTITY  mediaBlockImage.accesskey "B">
-<!ENTITY  mediaSaveAs           "Simpan Sebagai...">
-<!ENTITY  mediaSaveAs.accesskey "A">
+<!ENTITY  mediaSaveAs           "Simpan Sebagai…">
+<!ENTITY  mediaSaveAs.accesskey "S">
 <!ENTITY  mediaSaveAs2.accesskey "e">
 <!ENTITY  mediaPreview          "Previu Media:">
 
 <!ENTITY  feedTab               "Suapan">
-<!ENTITY  feedTab.accesskey     "F">
+<!ENTITY  feedTab.accesskey     "S">
 <!ENTITY  feedSubscribe         "Langgan">
-<!ENTITY  feedSubscribe.accesskey "u">
+<!ENTITY  feedSubscribe.accesskey "g">
 
 <!ENTITY  permTab               "Keizinan">
-<!ENTITY  permTab.accesskey     "P">
+<!ENTITY  permTab.accesskey     "K">
 <!ENTITY  permUseDefault        "Guna Piawai">
-<!ENTITY  permAskAlways         "sentiasa menanya">
+<!ENTITY  permAskAlways         "Sentiasa tanya">
 <!ENTITY  permAllow             "Izinkan">
 <!ENTITY  permAllowSession      "Izinkan Sesi ini">
 <!ENTITY  permBlock             "Sekat">
 <!ENTITY  permissionsFor        "Keizinan untuk:">
-<!ENTITY  permPlugins           "Plugin Aktif">
+<!ENTITY  permPlugins           "Aktifkan Plugin">
 
 <!ENTITY  permClearStorage           "Buang Storan">
 <!ENTITY  permClearStorage.accesskey "S">
@@ -71,18 +71,18 @@
 
 <!ENTITY  securityView.identity.header   "Identiti Laman Web">
 <!ENTITY  securityView.identity.owner    "Pemilik:">
-<!ENTITY  securityView.identity.domain   "Laman Web:">
+<!ENTITY  securityView.identity.domain   "Laman web:">
 <!ENTITY  securityView.identity.verifier "Disahkan oleh:">
 <!ENTITY  securityView.identity.validity "Luput pada:">
 
-<!ENTITY  securityView.privacy.header                   "Peribadi &amp; Sejarah">
+<!ENTITY  securityView.privacy.header                   "Privasi &amp; Sejarah">
 <!ENTITY  securityView.privacy.history                  "Adakah saya pernah lawati laman web ini sebelum ini?">
-<!ENTITY  securityView.privacy.cookies                  "Adakah laman web ini menyimpan maklumat (kuki) pada komputer saya?">
-<!ENTITY  securityView.privacy.viewCookies              "Papar Cookies">
+<!ENTITY  securityView.privacy.cookies                  "Adakah laman web ini menyimpan maklumat (kuki) dalam komputer saya?">
+<!ENTITY  securityView.privacy.viewCookies              "Papar Kuki">
 <!ENTITY  securityView.privacy.viewCookies.accessKey    "k">
 <!ENTITY  securityView.privacy.passwords                "Adakah saya pernah simpan kata laluan bagi laman web ini?">
-<!ENTITY  securityView.privacy.viewPasswords            "Papar kata laluan yang telah disimpan">
-<!ENTITY  securityView.privacy.viewPasswords.accessKey  "w">
+<!ENTITY  securityView.privacy.viewPasswords            "Papar Kata laluan yang Disimpan">
+<!ENTITY  securityView.privacy.viewPasswords.accessKey  "p">
 
 <!ENTITY  securityView.technical.header                 "Butiran Teknikal">
 

@@ -101,7 +101,7 @@ available. -->
 <!ENTITY useService.accesskey            "B">
 
 <!ENTITY autoUpdateOthers.label          "Automatisk oppdatering">
-<!ENTITY enableSearchUpdate.label        "Søkemotorar">
+<!ENTITY enableSearchUpdate.label        "Søkjemotorar">
 <!ENTITY enableSearchUpdate.accesskey    "m">
 
 <!ENTITY offlineStorageNotify.label               "Fortel meg når ein nettstad ber om å lagre data for fråkopla bruk">
@@ -118,7 +118,7 @@ available. -->
 <!ENTITY certificateTab.label            "Sertifikat">
 <!ENTITY certPersonal.label              "Førespurnadar">
 <!ENTITY certPersonal.description        "Når ein nettstad ber om det personlege sertifikatet ditt:">
-<!ENTITY selectCerts.auto                "Vel eit automastisk">
+<!ENTITY selectCerts.auto                "Vel eit automatisk">
 <!ENTITY selectCerts.auto.accesskey      "s">
 <!ENTITY selectCerts.ask                 "Spør kvar gong">
 <!ENTITY selectCerts.ask.accesskey       "S">
@@ -131,7 +131,7 @@ available. -->
 
 <!ENTITY performance.label               "Yting">
 <!ENTITY useRecommendedPerformanceSettings.label
-                                         "Bruk tilrådde ytingsinnstillingar">
+                                         "Bruk tilrådde ytings-innstillingar">
 <!ENTITY useRecommendedPerformanceSettings.description
                                          "Desse innstillingane er skreddarsydde for maskinvare og operativsystem i datamaskina di.">
 <!ENTITY useRecommendedPerformanceSettings.accesskey

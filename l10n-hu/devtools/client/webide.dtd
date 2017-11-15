@@ -35,7 +35,7 @@
 <!ENTITY runtimeMenu_takeScreenshot_label "Képernyőkép">
 <!ENTITY runtimeMenu_takeScreenshot_accesskey "K">
 <!ENTITY runtimeMenu_showDetails_label "Futtatókörnyezet infó">
-<!ENTITY runtimeMenu_showDetails_accesskey "u">
+<!ENTITY runtimeMenu_showDetails_accesskey "t">
 <!ENTITY runtimeMenu_showMonitor_label "Figyelés">
 <!ENTITY runtimeMenu_showMonitor_accesskey "F">
 <!ENTITY runtimeMenu_showDevicePrefs_label "Eszközbeállítások">

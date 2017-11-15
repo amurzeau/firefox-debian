@@ -46,6 +46,13 @@
 <!ENTITY aboutNetworking.rcwnCacheWonCount     "Cache won count">
 <!ENTITY aboutNetworking.rcwnNetWonCount       "Net won count">
 <!ENTITY aboutNetworking.totalNetworkRequests  "Total jumlah permintaan jaringan">
+<!ENTITY aboutNetworking.rcwnOperation         "Operasi Tembolok">
 <!ENTITY aboutNetworking.rcwnPerfOpen          "Buka">
 <!ENTITY aboutNetworking.rcwnPerfRead          "Baca">
 <!ENTITY aboutNetworking.rcwnPerfWrite         "Tulis">
+<!ENTITY aboutNetworking.rcwnPerfEntryOpen     "Entri Terbuka">
+<!ENTITY aboutNetworking.rcwnAvgShort          "Rata-rata Pendek">
+<!ENTITY aboutNetworking.rcwnAvgLong           "Rata-rata Panjang">
+<!ENTITY aboutNetworking.rcwnStddevLong        "Deviasi Standar Panjang">
+<!ENTITY aboutNetworking.rcwnCacheSlow         "Tembolok hitung lambat">
+<!ENTITY aboutNetworking.rcwnCacheNotSlow      "Tembolok hitung tidak lambat">

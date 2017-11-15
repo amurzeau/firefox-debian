@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY  trackingProtectionHeader2.label      "Sporingsvern">
-<!ENTITY  trackingProtection2.description      "Sporing er ei samling av dine nettlesardata frå fleire nettsider. Sporing kan brukast til å byggje ein profil, og å vise innhald basert på nettlesinga di og din eigen personlege informasjon.">
+<!ENTITY  trackingProtection2.description      "Sporing er ei innsamling av nettlesardataa dine frå fleire nettsider. Sporing kan brukast til å byggje ein profil, og å vise innhald basert på nettlesinga di og din eigen personlege informasjon.">
 <!ENTITY  trackingProtection2.radioGroupLabel  "Bruk sporingsvern til å blokkere kjende sporfølgjarar">
 <!ENTITY  trackingProtectionAlways.label       "Alltid">
 <!ENTITY  trackingProtectionAlways.accesskey   "l">
@@ -18,7 +18,8 @@
 <!-- LOCALIZATION NOTE (trackingProtectionPBM5.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel. -->
 <!ENTITY trackingProtectionPBM5.label         "Bruk sporingsvern i private vindauge">
 <!ENTITY trackingProtectionPBM5.accesskey     "u">
-<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the nightly channel. -->
+
+<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the release and beta channel. -->
 <!ENTITY trackingProtectionPBM6.label         "Bruk sporingsvern i Privat nettlesing for å blokkere kjende sporfølgjarar">
 <!ENTITY trackingProtectionPBM6.accesskey     "v">
 <!ENTITY trackingProtectionPBMLearnMore.label "Les meir">
@@ -41,7 +42,7 @@
 <!ENTITY  locbar.bookmarks.accesskey    "k">
 <!ENTITY  locbar.openpage.label         "Opne faner">
 <!ENTITY  locbar.openpage.accesskey     "O">
-<!ENTITY  locbar.searches.label         "Liknande søk frå standardsøkemotoren">
+<!ENTITY  locbar.searches.label         "Liknande søk frå standard-søkjemotoren">
 <!ENTITY  locbar.searches.accesskey     "L">
 
 <!ENTITY  suggestionSettings2.label     "Endre innstillingar for søkjeforslag">
@@ -49,14 +50,14 @@
 <!ENTITY  acceptCookies2.label          "Godta infokapslar frå nettsider">
 <!ENTITY  acceptCookies2.accesskey      "G">
 
-<!ENTITY  acceptThirdParty.pre.label      "Tillat infokapslar frå tredjepart:">
-<!ENTITY  acceptThirdParty.pre.accesskey  "T">
+<!ENTITY  acceptThirdParty2.pre.label     "Godta tredjeparts infokapslar">
+<!ENTITY  acceptThirdParty2.pre.accesskey "G">
 <!ENTITY  acceptThirdParty.always.label   "Alltid">
 <!ENTITY  acceptThirdParty.never.label    "Aldri">
 <!ENTITY  acceptThirdParty.visited.label  "Frå besøkte">
 
-<!ENTITY  keepUntil.label               "Behald dei til:">
-<!ENTITY  keepUntil.accesskey           "B">
+<!ENTITY  keepUntil2.label              "Behald til">
+<!ENTITY  keepUntil2.accesskey          "B">
 
 <!ENTITY  expire.label                  "dei går ut på dato">
 <!ENTITY  close.label                   "eg avsluttar &brandShortName;">
@@ -74,7 +75,7 @@
 <!ENTITY  historyHeader.custom.label       "Bruke eigne innstillingar for historikk">
 <!ENTITY  historyHeader.post.label         "">
 
-<!ENTITY  rememberDescription.label      "&brandShortName; vil hugse nettlesing, nedlasting, skjema og søkehistorikk, og ta vare på infokapslar frå nettsider du besøker.">
+<!ENTITY  rememberDescription.label      "&brandShortName; vil hugse nettlesing, nedlasting, skjema og søkjehistorikk, og ta vare på infokapslar frå nettsider du besøkjer.">
 
 <!-- LOCALIZATION NOTE (rememberActions.pre.label): include a trailing space as needed -->
 <!-- LOCALIZATION NOTE (rememberActions.middle.label): include a starting and trailing space as needed -->
@@ -99,7 +100,7 @@
 <!ENTITY  rememberHistory2.label      "Hugse nettlesar- og nedlastingshistorikk">
 <!ENTITY  rememberHistory2.accesskey  "H">
 
-<!ENTITY  rememberSearchForm.label       "Hugse søke- og skjemahistorikk">
+<!ENTITY  rememberSearchForm.label       "Hugse søkje- og skjemahistorikk">
 <!ENTITY  rememberSearchForm.accesskey   "ø">
 
 <!ENTITY  clearOnClose.label             "Slette historikk når &brandShortName; avsluttar">
@@ -113,3 +114,8 @@
 <!ENTITY  browserContainersEnabled.accesskey    "k">
 <!ENTITY  browserContainersSettings.label        "Innstillingar…">
 <!ENTITY  browserContainersSettings.accesskey    "I">
+
+<!ENTITY  a11yPrivacy.checkbox.label     "Hindre tilgangstenester tilgjenge til nettlesaren din">
+<!ENTITY  a11yPrivacy.checkbox.accesskey "H">
+<!ENTITY  a11yPrivacy.learnmore.label    "Les meir">
+<!ENTITY enableSafeBrowsingLearnMore.label "Les meir">

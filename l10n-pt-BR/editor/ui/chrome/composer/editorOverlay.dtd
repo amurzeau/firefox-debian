@@ -18,9 +18,9 @@
 <!ENTITY pasteAsQuotationCmd.key "O">
 <!ENTITY findBarCmd.label "Localizar…">
 <!ENTITY findReplaceCmd.label "Localizar e substituir…">
-<!ENTITY enableInlineSpellChecker.label "Verificar ortografia ao digitar">
+<!ENTITY enableInlineSpellChecker.label "Verificar a ortografia ao digitar">
 <!ENTITY enableInlineSpellChecker.accesskey "e">
-<!ENTITY checkSpellingCmd2.label "Verificar ortografia…">
+<!ENTITY checkSpellingCmd2.label "Verificar a ortografia…">
 <!ENTITY checkSpellingCmd2.accesskey "V">
 <!ENTITY checkSpellingCmd2.key "p">
 
@@ -44,13 +44,13 @@
 <!ENTITY insertMathCmd.accesskey "M">
 <!ENTITY insertCharsCmd.label "Caracteres e símbolos…">
 <!ENTITY insertCharsCmd.accesskey "C">
-<!ENTITY insertBreakAllCmd.label "Quebrar abaixo da imagem">
+<!ENTITY insertBreakAllCmd.label "Quebrar abaixo da(s) imagem(ns)">
 <!ENTITY insertBreakAllCmd.accesskey "Q">
 
 <!-- Used just in context popup. -->
 <!ENTITY createLinkCmd.label "Criar um link…">
 <!ENTITY createLinkCmd.accesskey "l">
-<!ENTITY editLinkCmd.label "Editar link em nova janela">
+<!ENTITY editLinkCmd.label "Editar o link num novo Composer">
 <!ENTITY editLinkCmd.accesskey "i">
 
 <!-- Font Face SubMenu -->
@@ -70,12 +70,12 @@
 <!ENTITY fontCourier.accesskey "C">
 
 <!-- Font Size SubMenu -->
-<!ENTITY FontSizeSelect.tooltip "Selecionar o tamanho da fonte">
-<!ENTITY decreaseFontSize.label "Diminuir">
+<!ENTITY FontSizeSelect.tooltip "Escolha um tamanho da fonte">
+<!ENTITY decreaseFontSize.label "Menor">
 <!ENTITY decreaseFontSize.accesskey "D">
 <!ENTITY decrementFontSize.key "&lt;">
 <!ENTITY decrementFontSize.key2 ","> <!-- < is above this key on many keyboards -->
-<!ENTITY increaseFontSize.label "Aumentar">
+<!ENTITY increaseFontSize.label "Maior">
 <!ENTITY increaseFontSize.accesskey "A">
 <!ENTITY incrementFontSize.key "&gt;">
 <!ENTITY incrementFontSize.key2 "."> <!-- > is above this key on many keyboards -->
@@ -113,11 +113,11 @@
 <!ENTITY styleSuperscriptCmd.accesskey "o">
 <!ENTITY styleSubscriptCmd.label "Subscrito">
 <!ENTITY styleSubscriptCmd.accesskey "u">
-<!ENTITY styleNonbreakingCmd.label "Não quebrar linha">
+<!ENTITY styleNonbreakingCmd.label "Sem quebra">
 <!ENTITY styleNonbreakingCmd.accesskey "l">
 <!ENTITY styleEm.label "Ênfase">
 <!ENTITY styleEm.accesskey "e">
-<!ENTITY styleStrong.label "Ênfase forte">
+<!ENTITY styleStrong.label "Ênfase mais forte">
 <!ENTITY styleStrong.accesskey "f">
 <!ENTITY styleCite.label "Citação">
 <!ENTITY styleCite.accesskey "C">
@@ -180,12 +180,12 @@
 <!ENTITY listPropsCmd.label "Propriedades da lista…">
 <!ENTITY listPropsCmd.accesskey "P">
 
-<!ENTITY ParagraphSelect.tooltip "Selecionar um formato de parágrafo">
+<!ENTITY ParagraphSelect.tooltip "Escolher um formato de parágrafo">
 <!-- Shared in Paragraph, and Toolbar menulist -->
 <!ENTITY bodyTextCmd.label "Corpo do texto">
 <!ENTITY bodyTextCmd.accesskey "N">
 <!-- isn't used in menu now, but may be added in future -->
-<!ENTITY advancedPropertiesCmd.label "Propriedades avançadas…">
+<!ENTITY advancedPropertiesCmd.label "Propriedades avançadas">
 <!ENTITY advancedPropertiesCmd.accesskey "v">
 
 <!-- Align menu items -->
@@ -275,7 +275,7 @@
 -->
 <!ENTITY tableJoinCells.label "m">
 <!ENTITY tableJoinCells.accesskey "m">
-<!ENTITY tableSplitCell.label "Dividir célula">
+<!ENTITY tableSplitCell.label "Dividir a célula">
 <!ENTITY tableSplitCell.accesskey "D">
 <!ENTITY convertToTable.label "Criar tabela a partir da seleção">
 <!ENTITY convertToTable.accesskey "t">
@@ -291,7 +291,7 @@
 <!ENTITY printToolbarCmd.label "Imprimir">
 <!ENTITY printToolbarCmd.tooltip "Imprimir esta página">
 <!ENTITY findToolbarCmd.label "Localizar">
-<!ENTITY findToolbarCmd.tooltip "Localizar e substituir">
+<!ENTITY findToolbarCmd.tooltip "Localizar texto na página">
 <!ENTITY spellToolbarCmd.label "Ortografia">
 <!ENTITY spellToolbarCmd.tooltip "Verificar a ortografia da seleção ou da página inteira">
 <!ENTITY imageToolbarCmd.label "Imagem">
@@ -342,5 +342,5 @@
 <!ENTITY updateTOC.accesskey      "A">
 <!ENTITY removeTOC.label          "Remover">
 <!ENTITY removeTOC.accesskey      "R">
-<!ENTITY tocMenu.label            "Sumário">
+<!ENTITY tocMenu.label            "Sumário…">
 <!ENTITY tocMenu.accesskey        "S">

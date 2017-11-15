@@ -142,7 +142,7 @@
   -  in the source editor's context menu for the variables focus operation. -->
 <!ENTITY debuggerUI.focusVariables           "Фокусиране върху дървото на променливите">
 <!ENTITY debuggerUI.focusVariables.key       "V">
-<!ENTITY debuggerUI.focusVariables.accesskey "V">
+<!ENTITY debuggerUI.focusVariables.accesskey "д">
 
 <!-- LOCALIZATION NOTE (debuggerUI.condBreakPanelTitle): This is the text that
   -  appears in the conditional breakpoint panel popup as a description. -->
@@ -181,7 +181,7 @@
 <!-- LOCALIZATION NOTE (debuggerUI.addWatch): This is the text that
   -  appears in the watch expressions context menu for adding an expression. -->
 <!ENTITY debuggerUI.addWatch            "Добавяне на израз за проследяване">
-<!ENTITY debuggerUI.addWatch.accesskey  "E">
+<!ENTITY debuggerUI.addWatch.accesskey  "з">
 
 <!-- LOCALIZATION NOTE (debuggerUI.removeWatch): This is the text that
   -  appears in the watch expressions context menu for removing all expressions. -->
@@ -202,7 +202,7 @@
   -  debugger sources side menu. This should be the same as
   -  netmonitorUI.context.newTab  -->
 <!ENTITY debuggerUI.context.newTab           "Отваряне в раздел">
-<!ENTITY debuggerUI.context.newTab.accesskey "п">
+<!ENTITY debuggerUI.context.newTab.accesskey "р">
 
 <!-- LOCALIZATION NOTE (debuggerUI.context.copyUrl): This is the label displayed
   -  on the context menu that copies the selected request's url. This should be

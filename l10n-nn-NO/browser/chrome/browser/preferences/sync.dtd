@@ -22,7 +22,7 @@
 <!ENTITY engine.creditcards.accesskey "K">
 
 <!-- Device Settings -->
-<!ENTITY fxaSyncDeviceName.label       "Einingsnamn">
+<!ENTITY fxaSyncDeviceName.label       "Namn på eininga">
 <!ENTITY changeSyncDeviceName2.label "Endre namn på eininga…">
 <!ENTITY changeSyncDeviceName2.accesskey "E">
 <!ENTITY cancelChangeSyncDeviceName.label "Avbryt">
@@ -32,7 +32,7 @@
 
 <!-- Footer stuff -->
 <!ENTITY prefs.tosLink.label        "Tenestevilkår">
-<!ENTITY fxaPrivacyNotice.link.label "Personvern">
+<!ENTITY fxaPrivacyNotice.link.label "Personvernerklæring">
 
 <!-- LOCALIZATION NOTE (signedInUnverified.beforename.label,
 signedInUnverified.aftername.label): these two string are used respectively
@@ -66,10 +66,10 @@ both, to better adapt this sentence to their language.
 <!ENTITY signedOut.caption            "Ta med deg nettet">
 <!ENTITY signedOut.description        "Synkroniser bokmerke, historikk, faner, passord, utvidingar og innstillingar på tvers av alle einingane dine.">
 <!ENTITY signedOut.accountBox.title   "Kople til ein &syncBrand.fxAccount.label;">
-<!ENTITY signedOut.accountBox.create  "Lag konto">
-<!ENTITY signedOut.accountBox.create.accesskey  "L">
-<!ENTITY signedOut.accountBox.signin  "Logg inn">
-<!ENTITY signedOut.accountBox.signin.accesskey  "I">
+<!ENTITY signedOut.accountBox.create2 "Har du ikkje ein konto? Kom i gang">
+<!ENTITY signedOut.accountBox.create2.accesskey "H">
+<!ENTITY signedOut.accountBox.signin2 "Logg inn…">
+<!ENTITY signedOut.accountBox.signin2.accesskey "i">
 
 <!ENTITY signedIn.settings.label       "Sync-innstillingar">
 <!ENTITY signedIn.settings.description "Vel kva du vil synkronisere på einingane dine med &brandShortName;.">

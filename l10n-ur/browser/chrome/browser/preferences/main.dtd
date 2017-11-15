@@ -9,6 +9,7 @@
 <!ENTITY startupBlankPage.label    "خالی صفحہ دکھائیں">
 <!ENTITY startupPrevSession.label  "اپنا دریچہ اور آخری وقت کے ٹیب دکھائیں">
 
+<!ENTITY homepage2.label           "ابتدائی صفحہ">
 <!ENTITY homepage2.accesskey       "P">
 <!ENTITY useCurrentPage.label      "حالیہ صفحہ برتیں">
 <!ENTITY useCurrentPage.accesskey  "ح">
@@ -17,6 +18,8 @@
 <!ENTITY chooseBookmark.accesskey  "ن">
 <!ENTITY restoreDefault.label      "طے شدہ بحال کریں">
 <!ENTITY restoreDefault.accesskey  "ب">
+
+<!ENTITY disableExtension.label    "توسیعات نا اہل بنائیں">
 
 <!ENTITY downloads.label     "ڈاؤن لوڈ">
 
@@ -31,6 +34,7 @@
 
 <!ENTITY alwaysCheckDefault2.label        "ہمیشہ جانچ پڑتال کریں کہ &brandShortName; آپ کا پہلے سے طے شدہ براؤزر ہے">
 <!ENTITY alwaysCheckDefault2.accesskey    "ی">
+<!ENTITY setAsMyDefaultBrowser3.label     "طے شدہ بنائیں…">
 <!ENTITY setAsMyDefaultBrowser3.accesskey "D">
 <!ENTITY isDefault.label                  "&brandShortName; اس وقت آپ کا طےشدہ براؤزر ہے">
 <!ENTITY isNotDefault.label               "&brandShortName; اس وقت آپ کا طےشدہ  براؤزر نھیں ہے">

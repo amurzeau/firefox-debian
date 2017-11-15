@@ -11,8 +11,8 @@
 <!ENTITY removepermission2.accesskey  "Z">
 <!ENTITY removeallpermissions2.label  "Kkes akk ismal web">
 <!ENTITY removeallpermissions2.accesskey "w">
-<!ENTITY address.label                "Tansa n usmel web.">
-<!ENTITY address.accesskey            "T">
+<!ENTITY address2.label               "Tansa n usmel web">
+<!ENTITY address2.accesskey           "d">
 <!ENTITY block.label                  "Sewḥel">
 <!ENTITY block.accesskey              "S">
 <!ENTITY session.label                "Sireg i tɣimit">
@@ -26,3 +26,4 @@
 <!ENTITY button.ok.label              "Sekles asnifel">
 <!ENTITY button.ok.accesskey          "S">
 
+<!ENTITY searchbox.placeholder        "Nadi asmel web">

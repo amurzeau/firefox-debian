@@ -5,14 +5,14 @@
 <!ENTITY window.title                 "Осыдан бөлек">
 <!ENTITY window.width                 "55em">
 
-<!ENTITY treehead.sitename2.label     "Вебсайт">
+<!ENTITY treehead.sitename2.label     "Веб сайт">
 <!ENTITY treehead.status.label        "Статус">
 <!ENTITY removepermission2.label      "Вебсайтты өшіру">
 <!ENTITY removepermission2.accesskey  "ш">
 <!ENTITY removeallpermissions2.label  "Барлық вебсайттарды өшіру">
 <!ENTITY removeallpermissions2.accesskey "р">
-<!ENTITY address.label                "Сайт адресі:">
-<!ENTITY address.accesskey            "д">
+<!ENTITY address2.label               "Сайт адресі">
+<!ENTITY address2.accesskey           "д">
 <!ENTITY block.label                  "Блоктау">
 <!ENTITY block.accesskey              "Б">
 <!ENTITY session.label                "Тек осы сессияға рұқсат беру">
@@ -26,3 +26,4 @@
 <!ENTITY button.ok.label              "Өзгерістерді сақтау">
 <!ENTITY button.ok.accesskey          "с">
 
+<!ENTITY searchbox.placeholder        "Вебсайттан іздеу">

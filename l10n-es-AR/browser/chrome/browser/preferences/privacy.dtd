@@ -49,14 +49,14 @@
 <!ENTITY  acceptCookies2.label          "Aceptar cookies de sitios web">
 <!ENTITY  acceptCookies2.accesskey      "A">
 
-<!ENTITY  acceptThirdParty.pre.label      "Aceptar cookies de terceros:">
-<!ENTITY  acceptThirdParty.pre.accesskey  "c">
+<!ENTITY  acceptThirdParty2.pre.label     "Aceptar cookies de terceros">
+<!ENTITY  acceptThirdParty2.pre.accesskey "p">
 <!ENTITY  acceptThirdParty.always.label   "Siempre">
 <!ENTITY  acceptThirdParty.never.label    "Nunca">
 <!ENTITY  acceptThirdParty.visited.label  "De visitados">
 
-<!ENTITY  keepUntil.label               "Conservar hasta:">
-<!ENTITY  keepUntil.accesskey           "n">
+<!ENTITY  keepUntil2.label              "Mantener hasta">
+<!ENTITY  keepUntil2.accesskey          "h">
 
 <!ENTITY  expire.label                  "que expiren">
 <!ENTITY  close.label                   "que cierre &brandShortName;">
@@ -113,3 +113,8 @@
 <!ENTITY  browserContainersEnabled.accesskey    "n">
 <!ENTITY  browserContainersSettings.label        "Configuración…">
 <!ENTITY  browserContainersSettings.accesskey    "i">
+
+<!ENTITY  a11yPrivacy.checkbox.label     "Evitar servicios de acceslo acceso a su navegador">
+<!ENTITY  a11yPrivacy.checkbox.accesskey "a">
+<!ENTITY  a11yPrivacy.learnmore.label    "Conocer más">
+<!ENTITY enableSafeBrowsingLearnMore.label "Conocer más">

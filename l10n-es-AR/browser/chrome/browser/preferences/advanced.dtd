@@ -29,8 +29,8 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "La información de datos está deshabilitado para esta configuración de compilación">
 
-<!ENTITY enableHealthReport1.label       "Permitir que &brandShortName; envíe automáticamente datos técnicos y de interacción a Mozilla">
-<!ENTITY enableHealthReport1.accesskey   "r">
+<!ENTITY enableHealthReport2.label       "Permitir que &brandShortName; envíe información técnica y de interacción a Mozilla">
+<!ENTITY enableHealthReport2.accesskey   "r">
 <!ENTITY healthReportLearnMore.label     "Conocer más">
 
 <!ENTITY dataCollection.label            "Recolección de datos y uso de &brandShortName;">
@@ -99,7 +99,7 @@ available. -->
 <!ENTITY updateAuto3.accesskey           "a">
 <!ENTITY updateCheckChoose2.label        "Busque actualizaciones pero dejarme elegir si las instalo">
 <!ENTITY updateCheckChoose2.accesskey    "C">
-<!ENTITY updateManual2.label             "Nunca busqie actualizaciones (no recomendado)">
+<!ENTITY updateManual2.label             "No buscar actualizaciones (no recomendado)">
 <!ENTITY updateManual2.accesskey         "N">
 
 <!ENTITY updateHistory2.label            "Mostrar historial de actualizaciones…">
@@ -116,7 +116,7 @@ available. -->
 <!ENTITY offlineStorageNotifyExceptions.label     "Excepciones…">
 <!ENTITY offlineStorageNotifyExceptions.accesskey "x">
 
-<!ENTITY offlineAppsList2.label          "Los siguientes sitios tienen permitido guardar datos para uso sin conexión:">
+<!ENTITY offlineAppsList3.label          "Los siguientes sitios tienen permitido guardar datos para uso sin conexión">
 <!ENTITY offlineAppsList.height          "7em">
 <!ENTITY offlineAppsListRemove.label     "Eliminar…">
 <!ENTITY offlineAppsListRemove.accesskey "r">

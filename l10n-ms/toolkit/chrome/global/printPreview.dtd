@@ -2,9 +2,9 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY print.label          "Cetak">
+<!ENTITY print.label          "Cetak…">
 <!ENTITY print.accesskey      "C">
-<!ENTITY pageSetup.label      "Tatacara Halaman…">
+<!ENTITY pageSetup.label      "Penetapan Halaman…">
 <!ENTITY pageSetup.accesskey  "T">
 <!ENTITY page.label           "Halaman:">
 <!ENTITY page.accesskey       "a">
@@ -29,15 +29,15 @@
 <!ENTITY p150.label           "150&#037;">
 <!ENTITY p175.label           "175&#037;">
 <!ENTITY p200.label           "200&#037;">
-<!ENTITY Custom.label         "Adat...">
+<!ENTITY Custom.label         "Penyesuaian…">
 <!ENTITY ShrinkToFit.label    "Mengecil Untuk Muat">
-<!ENTITY customPrompt.title   "Custom Scale…">
+<!ENTITY customPrompt.title   "Skala Penyesuaian…">
 <!ENTITY simplifyPage.label   "Permudahkan Halaman">
 <!ENTITY simplifyPage.accesskey "p">
 <!ENTITY simplifyPage.enabled.tooltip  "Tukar susun atur untuk pembacaan mudah">
 <!ENTITY simplifyPage.disabled.tooltip "Laman ini tidak dapat dipermudahkan secara automatik">
 
-<!ENTITY homearrow.tooltip    "Laman Pertama">
-<!ENTITY endarrow.tooltip     "Laman Terakhir">
-<!ENTITY nextarrow.tooltip    "Muka seterusnya">
-<!ENTITY previousarrow.tooltip "Muka sebelum">
+<!ENTITY homearrow.tooltip    "Halaman pertama">
+<!ENTITY endarrow.tooltip     "Halaman terakhir">
+<!ENTITY nextarrow.tooltip    "Halaman berikut">
+<!ENTITY previousarrow.tooltip "Halaman dahulu">

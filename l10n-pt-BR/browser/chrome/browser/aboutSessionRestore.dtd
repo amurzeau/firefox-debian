@@ -6,16 +6,17 @@
 
 <!-- LOCALIZATION NOTE: The title is intended to be apologetic and disarming, expressing dismay
      and regret that we are unable to restore the session for the user -->
-<!ENTITY restorepage.errorTitle     "Bem, isto é constrangedor.">
-<!ENTITY restorepage.problemDesc    "O &brandShortName; está tendo problemas para recuperar suas janelas e abas. Normalmente isto é causado por uma página aberta recentemente.">
-<!ENTITY restorepage.tryThis        "Você pode tentar:">
-<!ENTITY restorepage.restoreSome    "Remover uma ou mais abas que suspeite estarem causando o problema">
-<!ENTITY restorepage.startNew       "Iniciar uma nova sessão de navegação">
+<!ENTITY restorepage.errorTitle2    "Desculpe. Estamos tendo problemas ao restaurar suas páginas.">
+<!ENTITY restorepage.problemDesc2   "Nós estamos tendo problemas ao restaurar sua última sessão. Selecione Restaurar Sessão para tentar novamente.">
+<!ENTITY restorepage.tryThis2       "Ainda não foi possível restaurar sua sessão? Às vezes uma aba está causando o problema. Veja as abas anteriores, remova a marcação das abas que você não precisa recuperar, e em seguida, restaure.">
 
-<!ENTITY restorepage.tryagainButton "Restaurar">
-<!ENTITY restorepage.restore.access "R">
-<!ENTITY restorepage.closeButton    "Fechar">
-<!ENTITY restorepage.close.access   "F">
+<!ENTITY restorepage.hideTabs       "Ocultar aba anterior">
+<!ENTITY restorepage.showTabs       "Exibir aba anterior">
+
+<!ENTITY restorepage.tryagainButton2 "Restaurar sessão">
+<!ENTITY restorepage.restore.access2 "R">
+<!ENTITY restorepage.closeButton2    "Iniciar nova sessão">
+<!ENTITY restorepage.close.access2   "N">
 
 <!ENTITY restorepage.restoreHeader  "Restaurar">
 <!ENTITY restorepage.listHeader     "Janelas e abas">
@@ -47,5 +48,5 @@ their language.
 <!ENTITY welcomeback2.beforelink.pageInfo2  "Suas extensões e personalizações foram removidas e as configurações do navegador foram restauradas. Se isto não resolver seu problema, ">
 <!ENTITY welcomeback2.afterlink.pageInfo2   "">
 
-<!ENTITY welcomeback2.link.pageInfo2        "saber mais sobre o que você pode fazer.">
+<!ENTITY welcomeback2.link.pageInfo2        "saiba mais sobre o que você pode fazer.">
 

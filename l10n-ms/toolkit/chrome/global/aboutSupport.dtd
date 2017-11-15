@@ -17,7 +17,7 @@ This is likely the same like id.heading in crashes.dtd. -->
 <!ENTITY aboutSupport.crashes.id "ID Laporan">
 <!ENTITY aboutSupport.crashes.sendDate "Dihantar">
 <!ENTITY aboutSupport.crashes.allReports "Semua Laporan Ranap">
-<!ENTITY aboutSupport.crashes.noConfig "Aplikasi ini tidak dikonfigurasikan untuk memaparkan laporan ranap.">
+<!ENTITY aboutSupport.crashes.noConfig "APlikasi ini tidak dikonfigurkan untuk memaparkan laporan nahas.">
 
 <!ENTITY aboutSupport.extensionsTitle "Ekstensi">
 <!ENTITY aboutSupport.extensionName "Nama">
@@ -25,7 +25,7 @@ This is likely the same like id.heading in crashes.dtd. -->
 <!ENTITY aboutSupport.extensionVersion "Versi">
 <!ENTITY aboutSupport.extensionId "ID">
 
-<!ENTITY aboutSupport.featuresTitle "Ciri &brandShortName;">
+<!ENTITY aboutSupport.featuresTitle "Ciri &brandShortName; ">
 <!ENTITY aboutSupport.featureName "Nama">
 <!ENTITY aboutSupport.featureVersion "Versi">
 <!ENTITY aboutSupport.featureId "ID">
@@ -33,7 +33,7 @@ This is likely the same like id.heading in crashes.dtd. -->
 <!ENTITY aboutSupport.experimentsTitle "Ciri-ciri Eksperimen">
 <!ENTITY aboutSupport.experimentName "Nama">
 <!ENTITY aboutSupport.experimentId "ID">
-<!ENTITY aboutSupport.experimentDescription "Huraian">
+<!ENTITY aboutSupport.experimentDescription "Keterangan">
 <!ENTITY aboutSupport.experimentActive "Aktif">
 <!ENTITY aboutSupport.experimentEndDate "Tarikh Akhir">
 <!ENTITY aboutSupport.experimentHomepage "Halaman utama">
@@ -64,7 +64,7 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 <!ENTITY aboutSupport.appBasicsPerformance "Prestasi">
 
 <!-- LOCALIZATION NOTE the term "Service Workers" should not be translated. -->
-<!ENTITY aboutSupport.appBasicsServiceWorkers "Service Worker Berdaftar">
+<!ENTITY aboutSupport.appBasicsServiceWorkers "Service Workers Berdaftar">
 
 <!ENTITY aboutSupport.appBasicsProfiles "Profil">
 
@@ -105,17 +105,18 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.placeDatabaseVerifyIntegrity "Sahkan Integriti">
 
 <!ENTITY aboutSupport.jsTitle "JavaScript">
-<!ENTITY aboutSupport.jsIncrementalGC "Penambahan GC">
+<!ENTITY aboutSupport.jsIncrementalGC "Tokokan GC">
 
 <!ENTITY aboutSupport.a11yTitle "Ketercapaian">
 <!ENTITY aboutSupport.a11yActivated "Diaktifkan">
 <!ENTITY aboutSupport.a11yForceDisabled "Halang Ketercapaian">
 <!ENTITY aboutSupport.a11yHandlerUsed "Menggunakan Accessible Handler">
+<!ENTITY aboutSupport.a11yInstantiator "Penyegera Ketercapaian">
 
 <!ENTITY aboutSupport.libraryVersionsTitle "Versi Pustaka">
 
 <!ENTITY aboutSupport.installationHistoryTitle "Sejarah Pemasangan">
-<!ENTITY aboutSupport.updateHistoryTitle "Kemaskini Sejarah">
+<!ENTITY aboutSupport.updateHistoryTitle "Sejarah Kemaskini">
 
 <!ENTITY aboutSupport.copyTextToClipboard.label "Salin teks ke klipbod">
 <!ENTITY aboutSupport.copyRawDataToClipboard.label "Salin data mentah kepada klipbod">
@@ -133,7 +134,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.safeModeTitle "Cuba Mod Selamat">
 <!ENTITY aboutSupport.restartInSafeMode.label "Mula semula dengan Add-ons Dinyahdayakan…">
 
-<!ENTITY aboutSupport.graphicsFeaturesTitle "Ciri-ciri">
+<!ENTITY aboutSupport.graphicsFeaturesTitle "Ciri">
 <!ENTITY aboutSupport.graphicsDiagnosticsTitle "Diagnostik">
 <!ENTITY aboutSupport.graphicsFailureLogTitle "Log Kegagalan">
 <!ENTITY aboutSupport.graphicsGPU1Title "GPU #1">
@@ -148,7 +149,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.mediaDeviceName "Nama">
 <!ENTITY aboutSupport.mediaDeviceGroup "Kumpulan">
 <!ENTITY aboutSupport.mediaDeviceVendor "Pembekal">
-<!ENTITY aboutSupport.mediaDeviceState "Keadaan">
+<!ENTITY aboutSupport.mediaDeviceState "Negara">
 <!ENTITY aboutSupport.mediaDevicePreferred "Diutamakan">
 <!ENTITY aboutSupport.mediaDeviceFormat "Format">
 <!ENTITY aboutSupport.mediaDeviceChannels "Saluran">

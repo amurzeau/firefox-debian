@@ -56,6 +56,7 @@
 <!ENTITY cmd.show.accesskey               "т">
 <!ENTITY cmd.showMac.label                "Показати у Finder">
 <!ENTITY cmd.showMac.accesskey            "F">
+<!ENTITY cmd.showDownloads.label          "Показати теку завантажень">
 <!ENTITY cmd.retry.label                  "Повторити">
 <!ENTITY cmd.goToDownloadPage.label       "Перейти на сторінку завантаження">
 <!ENTITY cmd.goToDownloadPage.accesskey   "с">
@@ -134,7 +135,17 @@
 <!ENTITY downloadsHistory.label           "Показати всі завантаження">
 <!ENTITY downloadsHistory.accesskey       "в">
 
-<!ENTITY openDownloadsFolder.label       "Відкрити теку завантажень">
+<!-- LOCALIZATION NOTE (downloadDetails.label):
+     This string is shown at the top of the Download Details Panel, to indicate
+     that we are showing the details of a single download.
+     -->
+<!ENTITY downloadDetails.label            "Завантажити подробиці">
+
+<!-- LOCALIZATION NOTE (openDownloadsFolder.label):
+     This command is not currently available in the user interface, but the
+     string was preserved by bug 1362207 to be used in a future version.
+     -->
+<!ENTITY openDownloadsFolder.label        "Відкрити теку завантажень">
 
 <!ENTITY clearDownloadsButton.label       "Очистити завантаження">
 <!ENTITY clearDownloadsButton.tooltip     "Очистити завершені, скасовані та невдалі завантаження">

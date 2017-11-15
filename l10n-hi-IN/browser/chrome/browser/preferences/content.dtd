@@ -7,15 +7,29 @@
 <!ENTITY  blockPopups.label           "पॉपअप विंडो को अवरोधित करें">
 <!ENTITY  blockPopups.accesskey       "B">
 
-<!ENTITY  notificationsPolicyLearnMore.label   "अधिक जानें">
-<!ENTITY  notificationsPolicyButton.accesskey  "h">
-<!ENTITY  notificationsPolicyButton.label      "चुनें…">
 <!ENTITY  notificationsDoNotDisturb.label      "परेशान नहीं करें">
 <!ENTITY  notificationsDoNotDisturb.accesskey  "n">
 <!ENTITY  notificationsDoNotDisturbDetails.value "कोई अधिसूचना नहीं दिखेगा जब तक फिर से &brandShortName; नहीं चालू करेंगे;">
 
-<!ENTITY  popupExceptions.label       "अपवाद...">
-<!ENTITY  popupExceptions.accesskey   "E">
+<!ENTITY  popupExceptions.label                                 "अपवाद...">
+<!ENTITY  popupExceptions.accesskey                             "E">
+
+<!ENTITY  notificationPermissions.label                         "अधिसूचना">
+<!ENTITY  notificationSettingsButton.label                      "सेटिंग…">
+<!ENTITY  notificationSettingsButton.accesskey                  "t">
+<!ENTITY  notificationPermissionsLearnMore.label                "अधिक जानें">
+
+<!ENTITY  locationPermissions.label                             "स्थान">
+<!ENTITY  locationSettingsButton.label                          "सेटिंग…">
+<!ENTITY  locationSettingsButton.accesskey                      "t">
+
+<!ENTITY  cameraPermissions.label                               "कैमरा">
+<!ENTITY  cameraSettingsButton.label                            "सेटिंग…">
+<!ENTITY  cameraSettingsButton.accesskey                        "t">
+
+<!ENTITY  microphonePermissions.label                           "माइक्रोफोन">
+<!ENTITY  microphoneSettingsButton.label                        "सेटिंग…">
+<!ENTITY  microphoneSettingsButton.accesskey                    "t">
 
 <!ENTITY  fontsAndColors.label        "फ़ॉन्ट व रंग">
 
@@ -51,6 +65,8 @@
 <!ENTITY translation.options.attribution.beforeLogo "अनूदित">
 <!ENTITY translation.options.attribution.afterLogo "">
 
+<!ENTITY  drmContent2.label              "डिजिटल राइट्स मैनेजमेंट (DRM) सामग्री">
 
+<!ENTITY  playDRMContent2.label          "DRM-नियंत्रित सामग्री चलाएं">
 <!ENTITY  playDRMContent2.accesskey      "P">
 <!ENTITY  playDRMContent.learnMore.label "अधिक जानें">

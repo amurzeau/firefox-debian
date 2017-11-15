@@ -6,16 +6,17 @@
 
 <!-- LOCALIZATION NOTE: The title is intended to be apologetic and disarming, expressing dismay
      and regret that we are unable to restore the session for the user -->
-<!ENTITY restorepage.errorTitle     "טוב, זה מביך.">
-<!ENTITY restorepage.problemDesc    "ל־&brandShortName; יש בעיות בשחזור החלונות והלשוניות שלך. דבר זה קורה לרוב בעקבות לשונית שפתחת לאחרונה.">
-<!ENTITY restorepage.tryThis        "באפשרותך לנסות:">
-<!ENTITY restorepage.restoreSome    "להסיר לשונית אחת או יותר שייתכן שגורמות לבעיה">
-<!ENTITY restorepage.startNew       "להתחיל גלישה חדשה לחלוטין">
+<!ENTITY restorepage.errorTitle2    "אנו מצטערים, אך אירעה צרה בעת שחזור הדפים שלך בחזרה.">
+<!ENTITY restorepage.problemDesc2   "אירעה צרה בעת שחזור ההפעלה הקודמת שלך. נא לבחור באפשרות שחזור ההפעלה כדי לנסות שוב.">
+<!ENTITY restorepage.tryThis2       "עדיין אין באפשרותך לשחזר את ההפעלה? לעתים אחת מהלשוניות היא הגורם לתקלה. נא לעבור על רשימת הלשוניות הקודמות ולהסיר את הסימון מלשוניות שאין בהן צורך עוד, ואז לנסות שוב לשחזר.">
 
-<!ENTITY restorepage.tryagainButton "שחזור">
-<!ENTITY restorepage.restore.access "ש">
-<!ENTITY restorepage.closeButton    "סגירה">
-<!ENTITY restorepage.close.access   "ס">
+<!ENTITY restorepage.hideTabs       "הסתרת הלשוניות הקודמות">
+<!ENTITY restorepage.showTabs       "הצגת הלשוניות הקודמות">
+
+<!ENTITY restorepage.tryagainButton2 "שחזור הפעלה">
+<!ENTITY restorepage.restore.access2 "ש">
+<!ENTITY restorepage.closeButton2    "התחלת הפעלה חדשה">
+<!ENTITY restorepage.close.access2   "ח">
 
 <!ENTITY restorepage.restoreHeader  "שחזור">
 <!ENTITY restorepage.listHeader     "חלונות ולשוניות">

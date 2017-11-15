@@ -7,16 +7,29 @@
 <!ENTITY  blockPopups.label           "ปิดกั้นหน้าต่างป๊อปอัป">
 <!ENTITY  blockPopups.accesskey       "ป">
 
-<!ENTITY  notificationsPolicyLearnMore.label   "เรียนรู้เพิ่มเติม">
-<!ENTITY  notificationsPolicyDesc3.label       "เลือกว่าไซต์ใดที่อนุญาตให้ส่งการแจ้งเตือนมาให้คุณ">
-<!ENTITY  notificationsPolicyButton.accesskey  "ล">
-<!ENTITY  notificationsPolicyButton.label      "เลือก…">
 <!ENTITY  notificationsDoNotDisturb.label      "ห้ามรบกวนฉัน">
 <!ENTITY  notificationsDoNotDisturb.accesskey  "ห">
 <!ENTITY  notificationsDoNotDisturbDetails.value "การแจ้งเตือนจะไม่ถูกแสดงจนกว่าคุณจะเริ่มการทำงาน &brandShortName; ใหม่">
 
-<!ENTITY  popupExceptions.label       "ข้อยกเว้น…">
-<!ENTITY  popupExceptions.accesskey   "ข">
+<!ENTITY  popupExceptions.label                                 "ข้อยกเว้น…">
+<!ENTITY  popupExceptions.accesskey                             "ข">
+
+<!ENTITY  notificationPermissions.label                         "การแจ้งเตือน">
+<!ENTITY  notificationSettingsButton.label                      "การตั้งค่า…">
+<!ENTITY  notificationSettingsButton.accesskey                  "ร">
+<!ENTITY  notificationPermissionsLearnMore.label                "เรียนรู้เพิ่มเติม">
+
+<!ENTITY  locationPermissions.label                             "ตำแหน่งที่ตั้ง">
+<!ENTITY  locationSettingsButton.label                          "การตั้งค่า…">
+<!ENTITY  locationSettingsButton.accesskey                      "ต">
+
+<!ENTITY  cameraPermissions.label                               "กล้อง">
+<!ENTITY  cameraSettingsButton.label                            "การตั้งค่า…">
+<!ENTITY  cameraSettingsButton.accesskey                        "ก">
+
+<!ENTITY  microphonePermissions.label                           "ไมโครโฟน">
+<!ENTITY  microphoneSettingsButton.label                        "การตั้งค่า…">
+<!ENTITY  microphoneSettingsButton.accesskey                    "ค">
 
 <!ENTITY  fontsAndColors.label        "แบบอักษรและสี">
 

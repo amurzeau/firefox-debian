@@ -6,25 +6,25 @@
 <!ENTITY  window.width                    "38em">
 <!ENTITY  window.macWidth                 "41em">
 
-<!ENTITY  overrideDefaultPageColors.label        "Použít vámi nastavené barvy místo definovaných stránkou:">
-<!ENTITY  overrideDefaultPageColors.accesskey    "o">
+<!ENTITY  overrideDefaultPageColors2.label       "Použít vámi nastavené barvy místo definovaných stránkou">
+<!ENTITY  overrideDefaultPageColors2.accesskey   "o">
 
 <!ENTITY  overrideDefaultPageColors.always.label "Vždy">
-<!ENTITY  overrideDefaultPageColors.auto.label   "Pouze pro motivy s vysokým kontrastem">
+<!ENTITY  overrideDefaultPageColors.auto.label   "Pouze pro motivy vzhledu s vysokým kontrastem">
 <!ENTITY  overrideDefaultPageColors.never.label  "Nikdy">
 
 <!ENTITY  color                           "Text a pozadí">
-<!ENTITY  textColor.label                 "Text:">
-<!ENTITY  textColor.accesskey             "T">
-<!ENTITY  backgroundColor.label           "Pozadí:">
-<!ENTITY  backgroundColor.accesskey       "P">
+<!ENTITY  textColor2.label                "Text">
+<!ENTITY  textColor2.accesskey            "T">
+<!ENTITY  backgroundColor2.label          "Pozadí">
+<!ENTITY  backgroundColor2.accesskey      "P">
 <!ENTITY  useSystemColors.label           "Použít systémové barvy">
 <!ENTITY  useSystemColors.accesskey       "s">
 
 <!ENTITY  underlineLinks.label            "Podtrhávat odkazy">
 <!ENTITY  underlineLinks.accesskey        "d">
 <!ENTITY  links                           "Barvy odkazů">
-<!ENTITY  linkColor.label                 "Nenavštívené odkazy:">
-<!ENTITY  linkColor.accesskey             "e">
-<!ENTITY  visitedLinkColor.label          "Navštívené odkazy:">
-<!ENTITY  visitedLinkColor.accesskey      "a">
+<!ENTITY  linkColor2.label                "Nenavštívené odkazy">
+<!ENTITY  linkColor2.accesskey            "e">
+<!ENTITY  visitedLinkColor2.label         "Navštívené odkazy">
+<!ENTITY  visitedLinkColor2.accesskey     "a">

@@ -85,7 +85,8 @@
 <!ENTITY col.dateadded.label     "Προσθήκη">
 <!ENTITY col.lastmodified.label  "Τελευταία τροποποίηση">
 
-<!ENTITY search.placeholder  "Αναζήτηση">
+<!ENTITY historySearch.placeholder  "Ιστορικό αναζήτησης">
+<!ENTITY bookmarksSearch.placeholder  "Αναζήτηση σελιδοδεικτών">
 
 <!ENTITY cmd.find.key  "f">
 

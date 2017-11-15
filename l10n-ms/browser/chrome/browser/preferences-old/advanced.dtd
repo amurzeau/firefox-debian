@@ -17,7 +17,7 @@
 <!ENTITY useOnScreenKeyboard.label       "Papar papan kekunci sentuh apabila perlu">
 <!ENTITY useOnScreenKeyboard.accesskey   "k">
 
-<!ENTITY browsing.label                  "Menyemak">
+<!ENTITY browsing.label                  "Melungsur">
 
 <!ENTITY useAutoScroll.label             "Guna autoskrol">
 <!ENTITY useAutoScroll.accesskey         "a">
@@ -78,9 +78,9 @@ available. -->
 <!ENTITY limitCacheSizeBefore.accesskey  "d">
 <!ENTITY limitCacheSizeAfter.label       "MB daripada ruang">
 <!ENTITY clearCacheNow.label             "Buang Sekarang">
-<!ENTITY clearCacheNow.accesskey         "B">
+<!ENTITY clearCacheNow.accesskey         "g">
 <!ENTITY clearOfflineAppCacheNow.label   "Buang Sekarang">
-<!ENTITY clearOfflineAppCacheNow.accesskey "S">
+<!ENTITY clearOfflineAppCacheNow.accesskey "N">
 <!ENTITY overrideSmartCacheSize.label    "Sampukan automatik pengurusan cache">
 <!ENTITY overrideSmartCacheSize.accesskey "O">
 
@@ -111,9 +111,9 @@ available. -->
 
 <!ENTITY offlineAppsList2.label          "Laman web yang berikut telah dibenarkan untuk menyimpan data untuk digunakan ketika luar talian:">
 <!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "Buang…">
-<!ENTITY offlineAppsListRemove.accesskey "B">
-<!ENTITY offlineAppRemove.confirm        "Buang data luar talian">
+<!ENTITY offlineAppsListRemove.label     "Alih keluar…">
+<!ENTITY offlineAppsListRemove.accesskey "R">
+<!ENTITY offlineAppRemove.confirm        "Alih keluar data luar talian">
 
 <!ENTITY certificateTab.label            "Sijil">
 <!ENTITY certPersonal.label              "Permintaan">

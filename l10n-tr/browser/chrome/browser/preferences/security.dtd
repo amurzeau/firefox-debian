@@ -3,15 +3,16 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY  security.label                 "Güvenlik">
-<!ENTITY  phishingProtection.label       "Dolandırıcılık koruması">
 
-<!ENTITY  warnOnAddonInstall2.label       "Siteler eklenti kurmayı denediğinde uyar">
-<!ENTITY  warnOnAddonInstall2.accesskey   "U">
+<!ENTITY  warnOnAddonInstall2.label       "Siteler eklenti yüklemeye çalıştığında beni uyar">
+<!ENTITY  warnOnAddonInstall2.accesskey   "u">
 
 <!-- LOCALIZATION NOTE (enableSafeBrowsing.label, blockDownloads.label, blockUncommonUnwanted.label):
   It is important that wording follows the guidelines outlined on this page:
   https://developers.google.com/safe-browsing/developers_guide_v2#AcceptableUsage
 -->
+
+<!ENTITY  browsingProtection.label        "Aldatıcı içerik ve tehlikeli yazılım koruması">
 <!ENTITY  enableSafeBrowsing.label        "Tehlikeli ve aldatıcı içerikleri engelle">
 <!ENTITY  enableSafeBrowsing.accesskey    "T">
 
@@ -27,8 +28,8 @@
 
 <!ENTITY  formsAndPasswords.label       "Formlar ve parolalar">
 
-<!ENTITY  rememberLogins2.label         "Site giriş bilgilerini hatırla">
-<!ENTITY  rememberLogins2.accesskey     "H">
+<!ENTITY  rememberLogins2.label         "Sitelerdeki kullanıcı adlarını ve parolaları hatırla">
+<!ENTITY  rememberLogins2.accesskey     "k">
 <!ENTITY  passwordExceptions.label      "İstisnalar…">
 <!ENTITY  passwordExceptions.accesskey  "s">
 

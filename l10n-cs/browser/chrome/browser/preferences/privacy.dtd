@@ -18,7 +18,8 @@
 <!-- LOCALIZATION NOTE (trackingProtectionPBM5.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel. -->
 <!ENTITY trackingProtectionPBM5.label         "Používat ochranu proti sledování v anonymním okně">
 <!ENTITY trackingProtectionPBM5.accesskey     "v">
-<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the nightly channel. -->
+
+<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the release and beta channel. -->
 <!ENTITY trackingProtectionPBM6.label         "Používat ochranu proti sledování známými sledovacími prvky při anonymním prohlížení">
 <!ENTITY trackingProtectionPBM6.accesskey     "v">
 <!ENTITY trackingProtectionPBMLearnMore.label "Zjistit více">
@@ -46,17 +47,17 @@
 
 <!ENTITY  suggestionSettings2.label     "Změnit předvolby našeptávání vyhledávače">
 
-<!ENTITY  acceptCookies2.label          "Povolit serverům nastavovat cookies">
+<!ENTITY  acceptCookies2.label          "Povolit serverům ukládat cookies">
 <!ENTITY  acceptCookies2.accesskey      "a">
 
-<!ENTITY  acceptThirdParty.pre.label      "Cookies třetích stran">
-<!ENTITY  acceptThirdParty.pre.accesskey  "t">
+<!ENTITY  acceptThirdParty2.pre.label     "Cookies třetích stran">
+<!ENTITY  acceptThirdParty2.pre.accesskey "t">
 <!ENTITY  acceptThirdParty.always.label   "povolit vždy">
 <!ENTITY  acceptThirdParty.never.label    "nikdy nepovolovat">
 <!ENTITY  acceptThirdParty.visited.label  "povolit pouze navštívené">
 
-<!ENTITY  keepUntil.label               "Cookies ponechat do">
-<!ENTITY  keepUntil.accesskey           "d">
+<!ENTITY  keepUntil2.label              "Cookies ponechat do">
+<!ENTITY  keepUntil2.accesskey          "d">
 
 <!ENTITY  expire.label                  "konce doby platnosti">
 <!ENTITY  close.label                   "ukončení aplikace &brandShortName;">
@@ -82,7 +83,7 @@
 <!ENTITY  rememberActions.pre.label           "Můžete ">
 <!ENTITY  rememberActions.clearHistory.label  "vymazat nedávnou historii">
 <!ENTITY  rememberActions.middle.label        " nebo ">
-<!ENTITY  rememberActions.removeCookies.label "odebrat některé cookies">
+<!ENTITY  rememberActions.removeCookies.label "odstranit některé cookies">
 <!ENTITY  rememberActions.post.label          ".">
 
 <!ENTITY  dontrememberDescription.label  "&brandShortName; použije stejné nastavení jako v režimu anonymního prohlížení a nebude si pamatovat žádnou historii prohlížení.">
@@ -113,3 +114,8 @@
 <!ENTITY  browserContainersEnabled.accesskey    "n">
 <!ENTITY  browserContainersSettings.label        "Nastavení…">
 <!ENTITY  browserContainersSettings.accesskey    "v">
+
+<!ENTITY  a11yPrivacy.checkbox.label     "Zabránit službám pro přístupnost v přístupu k vašemu prohlížeči">
+<!ENTITY  a11yPrivacy.checkbox.accesskey "a">
+<!ENTITY  a11yPrivacy.learnmore.label    "Zjistit více">
+<!ENTITY enableSafeBrowsingLearnMore.label "Zjistit více">

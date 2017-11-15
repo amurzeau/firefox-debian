@@ -18,8 +18,8 @@
 <!ENTITY checkUserSpelling.accesskey "C">
 <!ENTITY dataChoicesTab.label "Condivisione dati">
 <!ENTITY healthReportingDisabled.label "L’invio dei dati è stato disattivato nella configurazione utilizzata per questa build">
-<!ENTITY enableHealthReport1.label "Consenti a &brandShortName; di inviare automaticamente a Mozilla dati tecnici e relativi all’interazione con il browser">
-<!ENTITY enableHealthReport1.accesskey "v">
+<!ENTITY enableHealthReport2.label "Consenti a &brandShortName; di inviare a Mozilla dati tecnici e relativi all’interazione con il browser">
+<!ENTITY enableHealthReport2.accesskey "v">
 <!ENTITY healthReportLearnMore.label "Ulteriori informazioni">
 <!ENTITY dataCollection.label "Raccolta e utilizzo dati di &brandShortName;">
 <!ENTITY dataCollectionDesc.label "Cerchiamo di garantire agli utenti la possibilità di scegliere, raccogliendo solo i dati necessari per realizzare e migliorare &brandShortName; per tutti. Chiediamo sempre l’autorizzazione prima di raccogliere dati personali.">
@@ -71,7 +71,7 @@
 <!ENTITY offlineStorageNotify.accesskey "A">
 <!ENTITY offlineStorageNotifyExceptions.label "Eccezioni…">
 <!ENTITY offlineStorageNotifyExceptions.accesskey "E">
-<!ENTITY offlineAppsList2.label "I seguenti siti web hanno il permesso di salvare dati per l’utilizzo non in linea:">
+<!ENTITY offlineAppsList3.label "I seguenti siti web hanno il permesso di salvare dati per l’utilizzo non in linea">
 <!ENTITY offlineAppsList.height "7em">
 <!ENTITY offlineAppsListRemove.label "Rimuovi…">
 <!ENTITY offlineAppsListRemove.accesskey "R">

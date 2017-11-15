@@ -23,15 +23,17 @@
 
 <!ENTITY clearDataSettings2.label     "Apabila saya keluar &brandShortName;, sepatutnya dibuang secara automatik:">
 
+<!ENTITY clearDataSettings3.label     "Apabila saya keluar &brandShortName;, sepatutnya dibuang secara automatik">
+
 <!-- XXX rearrange entities to match physical layout when l10n isn't an issue -->
 <!-- LOCALIZATION NOTE (clearTimeDuration.*): "Time range to clear" dropdown.
      See UI mockup at bug 480169 -->
 <!ENTITY clearTimeDuration.label          "Julat masa untuk menghapuskan: ">
 <!ENTITY clearTimeDuration.accesskey      "J">
-<!ENTITY clearTimeDuration.lastHour       "Jam yang terakhir">
-<!ENTITY clearTimeDuration.last2Hours     "Dua jam yang lepas">
-<!ENTITY clearTimeDuration.last4Hours     "Empat Jam yang Lepas">
-<!ENTITY clearTimeDuration.today          "Hari Ini">
+<!ENTITY clearTimeDuration.lastHour       "Satu Jam Lepas">
+<!ENTITY clearTimeDuration.last2Hours     "Dua Jam Lepas">
+<!ENTITY clearTimeDuration.last4Hours     "Empat Jam Lepas">
+<!ENTITY clearTimeDuration.today          "Hari ini">
 <!ENTITY clearTimeDuration.everything     "Semua">
 <!-- Localization note (clearTimeDuration.suffix) - trailing entity for languages
 that require it.  -->
@@ -54,7 +56,7 @@ that require it.  -->
 <!ENTITY itemCookies.accesskey             "K">
 <!ENTITY itemCache.label                   "Cache">
 <!ENTITY itemCache.accesskey               "A">
-<!ENTITY itemOfflineApps.label             "Data Laman web Luar Talian">
+<!ENTITY itemOfflineApps.label             "Data Laman web Luar talian">
 <!ENTITY itemOfflineApps.accesskey         "D">
 <!ENTITY itemActiveLogins.label            "Log masuk Aktif">
 <!ENTITY itemActiveLogins.accesskey        "L">

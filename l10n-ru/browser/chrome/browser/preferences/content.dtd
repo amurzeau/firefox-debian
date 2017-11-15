@@ -7,16 +7,29 @@
 <!ENTITY  blockPopups.label           "Блокировать всплывающие окна">
 <!ENTITY  blockPopups.accesskey       "о">
 
-<!ENTITY  notificationsPolicyLearnMore.label   "Подробнее">
-<!ENTITY  notificationsPolicyDesc4.label       "Выберите, каким веб-сайтам разрешено отправлять вам уведомления">
-<!ENTITY  notificationsPolicyButton.accesskey  "а">
-<!ENTITY  notificationsPolicyButton.label      "Выбрать…">
 <!ENTITY  notificationsDoNotDisturb.label      "Не беспокоить">
 <!ENTITY  notificationsDoNotDisturb.accesskey  "е">
 <!ENTITY  notificationsDoNotDisturbDetails.value "Не показывать уведомления пока вы не перезапустите &brandShortName;">
 
-<!ENTITY  popupExceptions.label       "Исключения…">
-<!ENTITY  popupExceptions.accesskey   "ю">
+<!ENTITY  popupExceptions.label                                 "Исключения…">
+<!ENTITY  popupExceptions.accesskey                             "ю">
+
+<!ENTITY  notificationPermissions.label                         "Уведомления">
+<!ENTITY  notificationSettingsButton.label                      "Параметры…">
+<!ENTITY  notificationSettingsButton.accesskey                  "е">
+<!ENTITY  notificationPermissionsLearnMore.label                "Подробнее">
+
+<!ENTITY  locationPermissions.label                             "Местоположение">
+<!ENTITY  locationSettingsButton.label                          "Параметры…">
+<!ENTITY  locationSettingsButton.accesskey                      "м">
+
+<!ENTITY  cameraPermissions.label                               "Камера">
+<!ENTITY  cameraSettingsButton.label                            "Параметры…">
+<!ENTITY  cameraSettingsButton.accesskey                        "а">
+
+<!ENTITY  microphonePermissions.label                           "Микрофон">
+<!ENTITY  microphoneSettingsButton.label                        "Параметры…">
+<!ENTITY  microphoneSettingsButton.accesskey                    "ы">
 
 <!ENTITY  fontsAndColors.label        "Шрифты и цвета">
 

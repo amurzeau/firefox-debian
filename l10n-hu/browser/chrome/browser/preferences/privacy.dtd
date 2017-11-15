@@ -20,13 +20,13 @@
 <!ENTITY trackingProtectionPBM5.accesskey     "p">
 <!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the nightly channel. -->
 <!ENTITY trackingProtectionPBM6.label         "Követésvédelem használata privát böngészésben, az ismert követők blokkolására">
-<!ENTITY trackingProtectionPBM6.accesskey     "p">
+<!ENTITY trackingProtectionPBM6.accesskey     "v">
 <!ENTITY trackingProtectionPBMLearnMore.label "További tudnivalók">
 <!ENTITY changeBlockList2.label               "Blokkolási lista módosítása…">
 <!ENTITY changeBlockList2.accesskey           "m">
 
 <!ENTITY  doNotTrack.description        "„Do Not Track” jelzés küldése a webhelyeknek, jelezve, hogy nem szeretné, hogy kövessék">
-<!ENTITY  doNotTrack.learnMore.label    "További tudnivalók">
+<!ENTITY  doNotTrack.learnMore.label    "További információk">
 <!ENTITY  doNotTrack.default.label      "Csak, ha követésvédelmet használ">
 <!ENTITY  doNotTrack.always.label       "Mindig">
 
@@ -47,16 +47,16 @@
 <!ENTITY  suggestionSettings2.label     "Keresőszolgáltatás-javaslatok beállításainak módosítása">
 
 <!ENTITY  acceptCookies2.label          "Sütik elfogadása webhelyekről">
-<!ENTITY  acceptCookies2.accesskey      "e">
+<!ENTITY  acceptCookies2.accesskey      "w">
 
-<!ENTITY  acceptThirdParty.pre.label      "Harmadik féltől származó sütik elfogadása:">
-<!ENTITY  acceptThirdParty.pre.accesskey  "H">
+<!ENTITY  acceptThirdParty2.pre.label     "Harmadik féltől származó sütik elfogadása">
+<!ENTITY  acceptThirdParty2.pre.accesskey "H">
 <!ENTITY  acceptThirdParty.always.label   "Mindig">
 <!ENTITY  acceptThirdParty.never.label    "Soha">
 <!ENTITY  acceptThirdParty.visited.label  "Meglátogatottól">
 
-<!ENTITY  keepUntil.label               "Sütik megtartása:">
-<!ENTITY  keepUntil.accesskey           "m">
+<!ENTITY  keepUntil2.label              "Sütik megtartása">
+<!ENTITY  keepUntil2.accesskey          "m">
 
 <!ENTITY  expire.label                  "amíg le nem járnak">
 <!ENTITY  close.label                   "a &brandShortName; bezárásáig">
@@ -113,3 +113,8 @@
 <!ENTITY  browserContainersEnabled.accesskey    "n">
 <!ENTITY  browserContainersSettings.label        "Beállítások…">
 <!ENTITY  browserContainersSettings.accesskey    "B">
+
+<!ENTITY  a11yPrivacy.checkbox.label     "Az akadálymentesítési szolgáltatások ne férjenek hozzá a böngészőhöz">
+<!ENTITY  a11yPrivacy.checkbox.accesskey "a">
+<!ENTITY  a11yPrivacy.learnmore.label    "További tudnivalók">
+<!ENTITY enableSafeBrowsingLearnMore.label "További tudnivalók">

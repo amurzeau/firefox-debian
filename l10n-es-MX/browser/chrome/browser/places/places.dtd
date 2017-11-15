@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!-- LOCALIZATION NOTE (places.library.title): use "Library", "Archive" or "Repository" -->
-<!ENTITY places.library.title  "Catálogo">
+<!ENTITY places.library.title  "Biblioteca">
 <!ENTITY places.library.width  "700">
 <!ENTITY places.library.height "500">
 <!ENTITY organize.label        "Organizar">
@@ -85,7 +85,8 @@
 <!ENTITY col.dateadded.label     "Añadido">
 <!ENTITY col.lastmodified.label  "Última modificación">
 
-<!ENTITY search.placeholder  "Buscar">
+<!ENTITY historySearch.placeholder  "Buscar historial">
+<!ENTITY bookmarksSearch.placeholder  "Buscar marcadores">
 
 <!ENTITY cmd.find.key  "f">
 

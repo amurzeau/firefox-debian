@@ -85,7 +85,8 @@
 <!ENTITY col.dateadded.label     "Pievienota">
 <!ENTITY col.lastmodified.label  "Pēdējo reizi labota">
 
-<!ENTITY search.placeholder  "Meklēt">
+<!ENTITY historySearch.placeholder  "Meklēšanas vēsture">
+<!ENTITY bookmarksSearch.placeholder  "Meklēt grāmatzīmes">
 
 <!ENTITY cmd.find.key  "f">
 

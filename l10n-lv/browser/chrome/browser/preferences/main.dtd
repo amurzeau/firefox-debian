@@ -20,6 +20,8 @@
 <!ENTITY restoreDefault.label      "Atjaunot uz noklusēto">
 <!ENTITY restoreDefault.accesskey  "A">
 
+<!ENTITY disableExtension.label    "Deaktivēt paplašinājumu">
+
 <!ENTITY downloads.label     "Lejupielādes">
 
 <!ENTITY saveTo.label "Vieta, kur saglabāt failus:">

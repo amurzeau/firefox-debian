@@ -4,12 +4,12 @@
 
 
 <!ENTITY  history.title             "Historijat nadogradnji">
-<!ENTITY  history.intro             "Sljedeći updatei su instalirani:">
+<!ENTITY  history2.intro            "Sljedeće nadogradnje su instalirane">
 <!ENTITY  closebutton.label         "Zatvori">
-                                     
-<!ENTITY  noupdates.label           "Nijedan update još nije instaliran">
 
-<!ENTITY  name.header               "Ime updatea">
+<!ENTITY  noupdates.label           "Nijedna nadogradnja još nije instalirana">
+
+<!ENTITY  name.header               "Naziv nadogradnje">
 <!ENTITY  date.header               "Datum instalacije">
 <!ENTITY  type.header               "Tip">
 <!ENTITY  state.header              "Stanje">

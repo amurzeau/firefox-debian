@@ -38,11 +38,11 @@
   -  the toolbar. It shows or hides messages that the web developer inserted on
   -  the page for debugging purposes, using calls such console.log() and
   -  console.error(). -->
-<!ENTITY btnPageLogging.label   "Penglogan">
+<!ENTITY btnPageLogging.label   "Menglog">
 <!ENTITY btnPageLogging.tooltip "Log mesej dihantar untuk window.console object">
 <!ENTITY btnPageLogging.accesskey3 "L">
 <!ENTITY btnConsoleErrors       "Ralat">
-<!ENTITY btnConsoleInfo         "Maklumat">
+<!ENTITY btnConsoleInfo         "Info">
 <!ENTITY btnConsoleWarnings     "Amaran">
 <!ENTITY btnConsoleLog          "Log">
 <!ENTITY btnConsoleXhr          "XHR">
@@ -53,9 +53,9 @@
   -  the page for debugging purposes, using calls on the HTTP server. -->
 <!ENTITY btnServerLogging.label       "Pelayan">
 <!ENTITY btnServerLogging.tooltip     "Log mesej yang diterima dari pelayan web">
-<!ENTITY btnServerLogging.accesskey   "S">
+<!ENTITY btnServerLogging.accesskey   "P">
 <!ENTITY btnServerErrors              "Ralat">
-<!ENTITY btnServerInfo                "Maklumat">
+<!ENTITY btnServerInfo                "Info">
 <!ENTITY btnServerWarnings            "Amaran">
 <!ENTITY btnServerLog                 "Log">
 
@@ -72,7 +72,7 @@
 <!ENTITY filterOutput.placeholder "Tapis output">
 <!ENTITY btnClear.label        "Buang">
 <!ENTITY btnClear.tooltip      "Buang output Konsol Web">
-<!ENTITY btnClear.accesskey    "r">
+<!ENTITY btnClear.accesskey    "g">
 
 <!ENTITY fullZoomEnlargeCmd.commandkey  "+">
 <!ENTITY fullZoomEnlargeCmd.commandkey2 "="> <!-- + is above this key on many keyboards -->

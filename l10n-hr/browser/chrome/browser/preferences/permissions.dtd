@@ -5,13 +5,14 @@
 <!ENTITY window.title                 "Iznimke">
 <!ENTITY window.width                 "41em">
 
+<!ENTITY treehead.sitename2.label     "Web stranica">
 <!ENTITY treehead.status.label        "Stanje">
-
-
-
-
-<!ENTITY address.label                "Adresa web stranice:">
-<!ENTITY address.accesskey            "d">
+<!ENTITY removepermission2.label      "Ukloni stranicu">
+<!ENTITY removepermission2.accesskey  "U">
+<!ENTITY removeallpermissions2.label  "Ukloni sve stranice">
+<!ENTITY removeallpermissions2.accesskey "e">
+<!ENTITY address2.label               "Adresa web stranice">
+<!ENTITY address2.accesskey           "d">
 <!ENTITY block.label                  "Blokiraj">
 <!ENTITY block.accesskey              "B">
 <!ENTITY session.label                "Dopusti za sesiju">
@@ -25,3 +26,4 @@
 <!ENTITY button.ok.label              "Spremi promjene">
 <!ENTITY button.ok.accesskey          "S">
 
+<!ENTITY searchbox.placeholder        "Pretraži web stranicu">

@@ -4,12 +4,12 @@
 
 <!ENTITY aboutAddons.title2                     "Tilføjelser">
 <!ENTITY aboutAddons.header2                    "Dine tilføjelser">
-<!ENTITY aboutAddons.options                    "Indstillinger">
 
 <!ENTITY addonAction.enable                     "Aktiver">
 <!ENTITY addonAction.disable                    "Deaktiver">
 <!ENTITY addonAction.uninstall                  "Afinstaller">
 <!ENTITY addonAction.undo                       "Fortryd">
+<!ENTITY addonAction.update                     "Opdater">
 
 <!ENTITY addonUnsigned.message                  "Denne tilføjelse kunne ikke bekræftes af &brandShortName;.">
 <!ENTITY addonUnsigned.learnMore                "Læs mere">

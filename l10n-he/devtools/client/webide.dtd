@@ -39,13 +39,18 @@
 <!ENTITY runtimeMenu_showMonitor_label "צג">
 <!ENTITY runtimeMenu_showMonitor_accesskey "צ">
 <!ENTITY runtimeMenu_showDevicePrefs_label "העדפות התקן">
+<!ENTITY runtimeMenu_showDevicePrefs_accesskey "ת">
 <!ENTITY runtimeMenu_showSettings_label "הגדרות התקן">
+<!ENTITY runtimeMenu_showSettings_accesskey "ג">
 
 <!ENTITY viewMenu_label "תצוגה">
 <!ENTITY viewMenu_accesskey "ת">
 <!ENTITY viewMenu_zoomin_label "התקרבות">
+<!ENTITY viewMenu_zoomin_accesskey "פ">
 <!ENTITY viewMenu_zoomout_label "התרחקות">
+<!ENTITY viewMenu_zoomout_accesskey "ח">
 <!ENTITY viewMenu_resetzoom_label "איפוס מרחק מתצוגה">
+<!ENTITY viewMenu_resetzoom_accesskey "א">
 
 <!ENTITY projectButton_label "פתיחת יישום">
 <!ENTITY runtimeButton_label "בחירת זמן ריצה">
@@ -70,9 +75,7 @@
 <!ENTITY projectPanel_tabs "לשוניות">
 <!ENTITY runtimePanel_usb "התקני USB">
 <!ENTITY runtimePanel_wifi "התקני Wi-Fi">
-<!ENTITY runtimePanel_simulator "הדמיות">
 <!ENTITY runtimePanel_other "אחר">
-<!ENTITY runtimePanel_installsimulator "התקנת מדמה">
 <!ENTITY runtimePanel_noadbhelper "התקנת מסייע ADB">
 <!ENTITY runtimePanel_nousbdevice "ההתקן שלך לא מופיע ברשימה?">
 <!ENTITY runtimePanel_refreshDevices_label "רענון התקנים">
@@ -85,7 +88,6 @@
 <!ENTITY details_location "מיקום">
 <!ENTITY details_manifestURL "מזהה יישום">
 <!ENTITY details_removeProject_button "הסרת פרויקט">
-<!ENTITY details_showPrepackageLog_button "הצגת יומן טרום אריזה">
 
 <!-- New App -->
 <!ENTITY newAppWindowTitle "יישום חדש">
@@ -164,21 +166,7 @@
 <!ENTITY wifi_auth_yes_scanner "מופיעה בפניך הצעה לסריקת QR?">
 <!-- LOCALIZATION NOTE (wifi_auth_token_request): Instructions requesting the
      user to transfer authentication info by transferring a token. -->
+<!ENTITY wifi_auth_qr_size_note "אם קוד ה־QR קטן מכדי שהקמת החיבור תצליח, ניתן לנסות להתקרב או להגדיל את החלון.">
 
 <!-- Logs panel -->
-
-<!-- Simulator Options -->
-<!ENTITY simulator_title "אפשרויות מדמה">
-<!ENTITY simulator_remove "מחיקת מדמה">
-<!ENTITY simulator_reset "שחזור בררות מחדל">
-<!ENTITY simulator_name "שם">
-<!ENTITY simulator_software "תכנה">
-<!ENTITY simulator_version "גרסה">
-<!ENTITY simulator_profile "פרופיל">
-<!ENTITY simulator_hardware "חומרה">
-<!ENTITY simulator_device "התקן">
-<!ENTITY simulator_screenSize "מסך">
-<!ENTITY simulator_pixelRatio "יחס פיקסלים">
-<!ENTITY simulator_tv_data "הדמיית טלוויזיה">
-<!ENTITY simulator_tv_data_open "נתוני תצורה">
-<!ENTITY simulator_tv_data_open_button "פתיחת תיקיית התצורה…">
+<!ENTITY logs_title "יומני פקודות טרום אריזה">

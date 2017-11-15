@@ -2,6 +2,11 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
+<!ENTITY searchBar.label                       "Otsinguriba">
+
+<!ENTITY searchBar.hidden.label                "Aadressiriba kasutatakse otsimiseks ja navigeerimiseks">
+<!ENTITY searchBar.shown.label                 "Kasutatakse eraldi otsinguriba">
+
 <!ENTITY defaultSearchEngine.label             "Vaikeotsingumootor">
 
 <!ENTITY chooseYourDefaultSearchEngine2.label   "Vali vaikeotsingumootor, mida kasutatakse aadressi- ja otsinguribal.">
@@ -10,7 +15,7 @@
 <!ENTITY provideSearchSuggestions.accesskey    "P">
 
 <!ENTITY showURLBarSuggestions2.label           "Aadressiriba tulemustes kuvatakse otsingusoovitusi">
-<!ENTITY showURLBarSuggestions2.accesskey       "t">
+<!ENTITY showURLBarSuggestions2.accesskey       "k">
 <!ENTITY urlBarSuggestionsPermanentPB.label    "Otsingusoovitusi asukohariba tulemuste seas ei kuvata, sest &brandShortName; ei ole häälestatud ajalugu säilitama.">
 
 <!ENTITY oneClickSearchEngines.label           "Ühe klõpsu otsingumootorid">

@@ -7,16 +7,29 @@
 <!ENTITY  blockPopups.label           "Açılır pencereleri engelle">
 <!ENTITY  blockPopups.accesskey       "n">
 
-<!ENTITY  notificationsPolicyLearnMore.label   "Daha fazla bilgi al">
-<!ENTITY  notificationsPolicyDesc4.label       "Hangi sitelerin size bildirimde bulunabileceğini seçin">
-<!ENTITY  notificationsPolicyButton.accesskey  "e">
-<!ENTITY  notificationsPolicyButton.label      "Seç…">
 <!ENTITY  notificationsDoNotDisturb.label      "Beni rahatsız etme">
 <!ENTITY  notificationsDoNotDisturb.accesskey  "h">
 <!ENTITY  notificationsDoNotDisturbDetails.value "&brandShortName; yeniden başlatılana kadar hiçbir bildirim gösterilmeyecektir">
 
-<!ENTITY  popupExceptions.label       "İstisnalar…">
-<!ENTITY  popupExceptions.accesskey   "a">
+<!ENTITY  popupExceptions.label                                 "İstisnalar…">
+<!ENTITY  popupExceptions.accesskey                             "a">
+
+<!ENTITY  notificationPermissions.label                         "Bildirimler">
+<!ENTITY  notificationSettingsButton.label                      "Ayarlar…">
+<!ENTITY  notificationSettingsButton.accesskey                  "r">
+<!ENTITY  notificationPermissionsLearnMore.label                "Daha fazlası">
+
+<!ENTITY  locationPermissions.label                             "Konum">
+<!ENTITY  locationSettingsButton.label                          "Ayarlar…">
+<!ENTITY  locationSettingsButton.accesskey                      "r">
+
+<!ENTITY  cameraPermissions.label                               "Kamera">
+<!ENTITY  cameraSettingsButton.label                            "Ayarlar…">
+<!ENTITY  cameraSettingsButton.accesskey                        "r">
+
+<!ENTITY  microphonePermissions.label                           "Mikrofon">
+<!ENTITY  microphoneSettingsButton.label                        "Ayarlar…">
+<!ENTITY  microphoneSettingsButton.accesskey                    "r">
 
 <!ENTITY  fontsAndColors.label        "Yazı tipleri ve renkler">
 
@@ -33,7 +46,7 @@
 
 
 <!ENTITY language2.label              "Dil">
-<!ENTITY chooseLanguage.label         "Sayfaların gösteriminde kullanılacak dili seçin">
+<!ENTITY chooseLanguage.label         "Sayfaları hangi dilde görmeyi tercih ettiğinizi seçin">
 <!ENTITY chooseButton.label           "Seç…">
 <!ENTITY chooseButton.accesskey       "S">
 

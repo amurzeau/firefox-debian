@@ -3,9 +3,14 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY firstrun_panel_title_welcome "Bienvenue">
-
-<!ENTITY firstrun_urlbar_message "Bienvenue sur &brandShortName;">
-<!ENTITY firstrun_urlbar_subtext "Trouvez plus rapidement ce que vous recherchez grâce aux suggestions de recherche.">
+<!ENTITY firstrun_urlbar_message2 "Merci d’avoir choisi &brandShortName;">
+<!ENTITY firstrun_urlbar_subtext2 "Un navigateur mobile et moderne par Mozilla, l’organisation à but non lucratif qui s’engage à défendre un Web libre et ouvert.">
+<!ENTITY firstrun_panel_title_privacy "Vie privée">
+<!ENTITY firstrun_privacy_message "Naviguez comme si personne ne vous regardait">
+<!ENTITY firstrun_privacy_subtext "La navigation privée avec la protection contre le pistage bloque les traqueurs lorsque vous naviguez et ne conserve pas votre historique lorsque vous avez terminé.">
+<!ENTITY firstrun_panel_title_customize "Personnalisation">
+<!ENTITY firstrun_customize_message "Personnalisez &brandShortName;">
+<!ENTITY firstrun_customize_subtext "Modifiez &brandShortName; grâce aux modules complémentaires. Bloquez les publicités, ajoutez des fonctionnalités ou choisissez un nouveau thème qui reflète votre personnalité.">
 <!ENTITY firstrun_bookmarks_title "Historique">
 <!ENTITY firstrun_bookmarks_message "Vos sites préférés, directement">
 <!ENTITY firstrun_bookmarks_subtext "Obtenez des résultats parmi vos marque-pages et votre historique lorsque vous effectuez des recherches.">
@@ -13,8 +18,8 @@
 <!ENTITY firstrun_data_message "Moins de données, plus d’économies">
 <!ENTITY firstrun_data_subtext2 "Désactivez les images afin de consommer moins de données sur les sites que vous visitez.">
 <!ENTITY firstrun_sync_title "Synchronisation">
-<!ENTITY firstrun_sync_message "&brandShortName;, toujours à vos côtés">
-<!ENTITY firstrun_sync_subtext "Synchronisez vos onglets, mots de passe et d’autres données partout où vous l’utilisez.">
+<!ENTITY firstrun_sync_message2 "Reprenez là où vous en étiez.">
+<!ENTITY firstrun_sync_subtext2 "Utilisez Sync pour accéder aux marque-pages, mots de passe et autres données que vous conservez dans &brandShortName; sur vos autres appareils.">
 <!ENTITY firstrun_signin_message "Connectez-vous, lancez-vous">
 <!ENTITY firstrun_signin_button "Se connecter à Sync">
 <!ENTITY  onboard_start_button_browser "Commencer la navigation">
@@ -87,6 +92,7 @@
      in the folder. -->
 <!ENTITY bookmark_folder_items "&formatD; éléments">
 <!ENTITY bookmark_folder_one_item "1 élément">
+<!ENTITY bookmark_folder_updated "Dossier mis à jour">
 <!ENTITY bookmark_parent_folder "Dossier parent">
 <!ENTITY bookmark_add_folder "Ajouter un nouveau dossier">
 
@@ -201,8 +207,6 @@
 <!ENTITY pref_category_advanced_summary3 "Restauration d’onglets, économies de données, outils de développement">
 <!ENTITY pref_category_notifications "Notifications">
 <!ENTITY pref_category_notifications_summary "Nouvelles fonctionnalités, actualités des sites web">
-<!ENTITY pref_content_notifications "Actualités des sites web">
-<!ENTITY pref_content_notifications_summary2 "Découvrir de nouveaux contenus depuis les sites pris en charge">
 <!ENTITY pref_developer_remotedebugging_usb "Débogage distant par USB">
 <!ENTITY pref_developer_remotedebugging_wifi "Débogage distant par Wi-Fi">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Le débogage par Wi-Fi nécessite que votre appareil dispose d’une application permettant de lire les QR codes.">
@@ -268,7 +272,6 @@
 <!ENTITY pref_show_web_fonts_summary2 "Télécharger les polices distantes lors du chargement de la page">
 
 <!ENTITY pref_tracking_protection_title2 "Protection contre le pistage">
-<!ENTITY pref_tracking_protection_summary3 "Activée pour la navigation privée">
 <!ENTITY pref_donottrack_title "Ne pas me pister">
 <!ENTITY pref_donottrack_summary "&brandShortName; indiquera aux sites que vous ne souhaitez pas être pisté.">
 
@@ -286,8 +289,9 @@
 <!-- Custom Tabs is an Android API for allowing third-party apps to open URLs in a customized UI.
      Instead of switching to the browser it appears as if the user stays in the third-party app.
      For more see: https://developer.chrome.com/multidevice/android/customtabs -->
-<!ENTITY pref_custom_tabs "Onglets personnalisés">
-<!ENTITY pref_custom_tabs_summary3 "Autoriser les applications à ouvrir les sites web en utilisant une version personnalisée de &brandShortName;">
+<!ENTITY pref_custom_tabs2 "Onglets personnalisés">
+<!ENTITY pref_custom_tabs_summary4 "Autoriser les applications à ouvrir du contenu web rapidement dans un onglet personnalisé.">
+
 <!-- Localization note (custom_tabs_menu_item_open_in): The variable is replaced by the name of
      default browser from user's preference, such as "Open in Firefox" -->
 <!ENTITY custom_tabs_menu_item_open_in "Ouvrir dans &formatS;">
@@ -297,10 +301,6 @@
 
 <!ENTITY pref_pwa "Applications web progressives">
 <!ENTITY pref_pwa_summary "Autoriser l’ajout d’applications web sur l’écran d’accueil">
-
-<!-- Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream  -->
-<!ENTITY pref_activity_stream "Flux d’activité">
-<!ENTITY pref_activity_stream_summary "Un historique visuel et une page d’accueil repensée vous permettent de trouver plus facilement ce que vous recherchez dans &brandShortName;.">
 
 <!ENTITY tracking_protection_prompt_title "Désormais avec protection contre le pistage">
 <!ENTITY tracking_protection_prompt_text "Les éléments pouvant pister votre navigation sont bloqués afin que vous n’ayez pas à vous en préoccuper.">
@@ -334,23 +334,6 @@
      has been queued but we are missing the system permission to show an overlay. -->
 <!ENTITY tab_queue_notification_settings "Pour pouvoir « Ouvrir plusieurs liens », vous devez activer la permission « Se superposer aux autres applis » pour &brandShortName;.">
 
-<!ENTITY content_notification_summary "&brandShortName;">
-<!-- Localization note (content_notification_title_plural): &formatD; will be replaced with the number of websites that
-     have been updated (new content is available). The number of websites is always more than one (>= 2). For a single
-     update the website title is used instead of this string.
-     We can't use Android plural forms, sadly. See Bug #753859. -->
-<!ENTITY content_notification_title_plural "&formatD; sites web mis à jour">
-<!-- Localization note (content_notification_action_settings2): This label will be shown as an action in a content notification.
-     Clicking the action will jump to the notification settings of the app. -->
-<!ENTITY content_notification_action_settings2 "Paramètres">
-<!-- Localization note(content_notification_action_read_now): This label will be shown as an action in a content notification.
-     Clicking the action will open all new content in the browser. -->
-<!ENTITY content_notification_action_read_now "Lire">
-<!-- Localization note (content_notification_updated_on): &formatS; will be replaced with a medium sized version of the
-     date, depending on locale. For en_US this is for example: Feb 24, 2016. For more details see the Android developer
-     documentation for DateFormat.getMediumDateFormat(). -->
-<!ENTITY content_notification_updated_on "Mis à jour le &formatS;">
-
 <!ENTITY pref_char_encoding "Encodage du texte">
 <!ENTITY pref_char_encoding_on "Afficher le menu">
 <!ENTITY pref_char_encoding_off "Masquer le menu">
@@ -361,10 +344,6 @@
 <!ENTITY pref_clear_on_exit_title3 "Effacer mes traces à la fermeture">
 <!ENTITY pref_clear_on_exit_summary2 "&brandShortName; effacera automatiquement vos données lorsque vous sélectionnerez « Quitter » depuis le menu principal.">
 <!ENTITY pref_clear_on_exit_dialog_title "Sélectionner les données à effacer">
-<!ENTITY pref_plugins "Plugins">
-<!ENTITY pref_plugins_enabled "Activés">
-<!ENTITY pref_plugins_tap_to_play2 "Appuyer pour lancer la lecture">
-<!ENTITY pref_plugins_disabled "Désactivés">
 <!ENTITY pref_restore_tabs "Restaurer les onglets">
 <!ENTITY pref_restore_always "Toujours restaurer">
 <!ENTITY pref_restore_quit "Ne pas restaurer après avoir quitté &brandShortName;">
@@ -384,6 +363,7 @@
 <!ENTITY pref_qrcode_enabled_summary2 "Permettre la lecture des QR codes depuis la barre d’adresse">
 
 <!ENTITY pref_use_master_password "Mot de passe principal">
+<!ENTITY pref_sync_default_title "Compte Firefox">
 <!ENTITY pref_sync2 "Se connecter">
 <!ENTITY pref_sync_summary2 "Synchroniser onglets, marque-pages, identifiants, historique">
 <!ENTITY pref_search_suggestions "Suggestions de recherche">
@@ -413,6 +393,9 @@
 <!ENTITY pref_dialog_set_default "Définir par défaut">
 <!ENTITY pref_dialog_default "Par défaut">
 <!ENTITY pref_dialog_remove "Supprimer">
+<!ENTITY pref_dialog_activitystream_header_content "Contenu supplémentaire">
+<!ENTITY pref_dialog_activitystream_recentBookmarks "Marque-pages récents">
+<!ENTITY pref_dialog_activitystream_visited "Visité">
 
 <!ENTITY pref_search_last_toast "Vous ne pouvez pas supprimer ou désactiver votre dernier moteur de recherche.">
 
@@ -503,6 +486,7 @@
 <!ENTITY contextmenu_open_private_tab "Ouvrir en navigation privée">
 <!ENTITY contextmenu_remove "Supprimer">
 <!ENTITY contextmenu_add_to_launcher "Ajouter à l’écran d’accueil">
+<!ENTITY contextmenu_add_page_shortcut "Ajouter un raccourci vers la page">
 <!ENTITY contextmenu_set_as_homepage "Définir comme page d’accueil">
 <!ENTITY contextmenu_share "Partager">
 <!ENTITY contextmenu_pasteandgo "Coller et ouvrir">
@@ -514,7 +498,17 @@
 <!ENTITY contextmenu_top_sites_edit "Modifier">
 <!ENTITY contextmenu_top_sites_pin "Épingler ce site">
 <!ENTITY contextmenu_top_sites_unpin "Relâcher ce site">
+<!-- Localization note (contextmenu_pin_to_top_sites, contextmenu_unpin_from_top_sites): These strings are used to
+     pin/unpin items from top sites when the user is not on the top sites screen so they'd be missing context on what
+     just "Pin Site" or "Unpin Site" would mean. -->
+<!ENTITY contextmenu_pin_to_top_sites "Épingler comme site populaire">
+<!ENTITY contextmenu_unpin_from_top_sites "Retirer des sites populaires">
 <!ENTITY contextmenu_add_search_engine "Ajouter moteur recherche">
+
+<!-- Localization note (pinned_page_to_top_sites, unpinned_page_from_top_sites): These strings are shown in a snackbar
+     after the user pins/unpins the currently displayed page from top sites. -->
+<!ENTITY pinned_page_to_top_sites "Page épinglée comme site populaire">
+<!ENTITY unpinned_page_from_top_sites "Page retirée des sites populaires">
 
 <!-- Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
      where normally a username would be displayed. In this case, no username was found, and this placeholder
@@ -825,6 +819,8 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 
 <!ENTITY promotion_add_to_homescreen "Ajouter à l’écran d’accueil">
 
+<!ENTITY promotion_add_page_shortcut "Ajouter un raccourci vers la page">
+
 <!ENTITY helper_first_offline_bookmark_title "Lire hors connexion">
 <!ENTITY helper_first_offline_bookmark_message "Retrouvez les pages du mode lecture dans les marque-pages, même hors connexion.">
 <!ENTITY helper_first_offline_bookmark_button "Ouvrir les marque-pages">
@@ -834,20 +830,43 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_button "Ajouter aux marque-pages">
 
 <!ENTITY activity_stream_topsites "Les plus visités">
-<!ENTITY activity_stream_highlights "Éléments clés">
+<!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->
+<!ENTITY activity_stream_topstories "Recommandations par &brandPocket;">
+<!ENTITY activity_stream_highlights "Éléments-clés">
+
+<!-- LOCALIZATION NOTE (activity_stream_link_more1): Link-like text displayed to take user to a website with more content from Pocket. -->
+<!ENTITY activity_stream_link_more1 "PLUS">
 
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_bookmarked): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
-<!ENTITY activity_stream_highlight_label_bookmarked "Ajoutés aux marque-pages">
+<!ENTITY activity_stream_highlight_label_bookmarked "Ajouté aux marque-pages">
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_visited): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
 <!ENTITY activity_stream_highlight_label_visited "Visités">
+<!-- LOCALIZATION NOTE (activity_stream_highlight_label_trending): This label is shown in the Activity Stream list for highlights sourced from a recommendations engine. -->
+<!ENTITY activity_stream_highlight_label_trending "Tendance">
+<!-- LOCALIZATION NOTE (activity_stream_highlights_empty): This text is shown when we could not find highlights for this user. This is also shown on first run. -->
+<!ENTITY activity_stream_highlights_empty "Au fur et à mesure de votre navigation, nous afficherons ici certains éléments parmi les articles, les vidéos et les autres pages que vous avez visités ou ajoutés aux marque-pages.">
 
-<!-- LOCALIZATION NOTE (activity_stream_dismiss): This label is shown in the Activity Stream context menu,
+<!-- LOCALIZATION NOTE (activity_stream_remove): This label is shown in the Activity Stream context menu,
 and allows hiding a URL/page from highlights or topsites. The page remains in history/bookmarks, but
 is simply hidden from the Activity Stream panel. -->
-<!ENTITY activity_stream_dismiss "Retirer">
+<!ENTITY activity_stream_remove "Retirer">
 <!ENTITY activity_stream_delete_history "Supprimer de l’historique">
 
-<!ENTITY activity_stream_welcome_title "Découvrez les éléments mis en avant">
-<!ENTITY activity_stream_welcome_content1 "&brandShortName; met désormais en avant des éléments-clés que vous avez découverts sur le Web, afin que vous puissiez retrouver facilement des articles, vidéos, marque-pages et d’autres pages.">
+<!ENTITY private_tab_panel_title "Navigation privée avec protection contre le pistage">
+<!ENTITY private_tab_panel_description "&brandShortName; bloque certaines parties des pages qui peuvent pister votre activité en ligne.">
+<!ENTITY private_tab_panel_description2 "Nous ne conserverons aucun historique, cependant les fichiers téléchargés et les marque-pages ajoutés seront toujours enregistrés sur votre appareil.">
+<!ENTITY private_tab_learn_more "Vous souhaitez en savoir plus ?">
+
+<!ENTITY fullscreen_warning "Mode plein écran activé">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_confirm): The plus sign here is part of UI design -->
+<!ENTITY pwa_add_to_launcher_confirm "+ Ajouter à l’écran d’accueil">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_badge2): Used as label in the page actions dropdown list,
+displayed when there are more than 3 actions available for a page.
+See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
+<!ENTITY pwa_add_to_launcher_badge2 "Ajouter à l’écran d’accueil">
+<!ENTITY pwa_continue_to_website "Continuer vers le site web">
+<!ENTITY pwa_onboarding_sumo "Vous pouvez facilement ajouter ce site à votre écran d’accueil pour y avoir accès directement et naviguer plus rapidement, comme si vous étiez dans l’application.">

@@ -49,14 +49,14 @@
 <!ENTITY  acceptCookies2.label          "Прымаць кукі з вэб-сайтаў">
 <!ENTITY  acceptCookies2.accesskey      "П">
 
-<!ENTITY  acceptThirdParty.pre.label      "Прымаць кукі з пабочных сайтаў:">
-<!ENTITY  acceptThirdParty.pre.accesskey  "п">
+<!ENTITY  acceptThirdParty2.pre.label     "Прымаць кукі з пабочных сайтаў">
+<!ENTITY  acceptThirdParty2.pre.accesskey "ч">
 <!ENTITY  acceptThirdParty.always.label   "заўсёды">
 <!ENTITY  acceptThirdParty.never.label    "ніколі">
 <!ENTITY  acceptThirdParty.visited.label  "з наведаных">
 
-<!ENTITY  keepUntil.label               "Трымаць пакуль:">
-<!ENTITY  keepUntil.accesskey           "Т">
+<!ENTITY  keepUntil2.label              "Трымаць пакуль">
+<!ENTITY  keepUntil2.accesskey          "п">
 
 <!ENTITY  expire.label                  "яны не састарэюць">
 <!ENTITY  close.label                   "я не закрыю &brandShortName;">
@@ -113,3 +113,8 @@
 <!ENTITY  browserContainersEnabled.accesskey    "т">
 <!ENTITY  browserContainersSettings.label        "Налады…">
 <!ENTITY  browserContainersSettings.accesskey    "а">
+
+<!ENTITY  a11yPrivacy.checkbox.label     "Забараніць сэрвісам даступнасці доступ з вашага браўзера">
+<!ENTITY  a11yPrivacy.checkbox.accesskey "а">
+<!ENTITY  a11yPrivacy.learnmore.label    "Падрабязней">
+<!ENTITY enableSafeBrowsingLearnMore.label "Даведацца больш">

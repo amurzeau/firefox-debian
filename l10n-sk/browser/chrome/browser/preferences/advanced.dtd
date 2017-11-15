@@ -10,7 +10,7 @@
 <!ENTITY useCursorNavigation.accesskey   "V">
 <!ENTITY searchOnStartTyping.label       "Povoliť vyhľadávanie textu počas písania">
 <!ENTITY searchOnStartTyping.accesskey   "x">
-<!ENTITY useOnScreenKeyboard.label       "Zobraziť dotykovú klávesnicu, keď je to potrebné">
+<!ENTITY useOnScreenKeyboard.label       "V prípade potreby zobraziť dotykovú klávesnicu">
 <!ENTITY useOnScreenKeyboard.accesskey   "d">
 
 <!ENTITY browsing.label                  "Prehliadanie">
@@ -29,8 +29,8 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "Odosielanie údajov je v konfigurácii tohto zostavenia zakázané">
 
-<!ENTITY enableHealthReport1.label       "Povoliť aplikácii &brandShortName; automaticky odosielať Mozille technické údaje a údaje o interakciách">
-<!ENTITY enableHealthReport1.accesskey   "r">
+<!ENTITY enableHealthReport2.label       "Povoliť aplikácii &brandShortName; odosielať Mozille technické údaje a údaje o interakciách">
+<!ENTITY enableHealthReport2.accesskey   "o">
 <!ENTITY healthReportLearnMore.label     "Ďalšie informácie">
 
 <!ENTITY dataCollection.label            "Zber a použitie údajov o aplikácii &brandShortName;">
@@ -45,7 +45,7 @@ available. -->
 
 <!ENTITY networkProxy.label              "Nastavenie pripojenia">
 
-<!ENTITY connectionDesc.label            "Nastaviť spôsob, akým sa &brandShortName; pripája k sieti Internet">
+<!ENTITY connectionDesc.label            "Konfigurovať pripojenie aplikácie &brandShortName; k internetu">
 <!ENTITY connectionSettings.label        "Nastavenia…">
 <!ENTITY connectionSettings.accesskey    "N">
 
@@ -116,14 +116,14 @@ available. -->
 <!ENTITY offlineStorageNotifyExceptions.label     "Výnimky…">
 <!ENTITY offlineStorageNotifyExceptions.accesskey "V">
 
-<!ENTITY offlineAppsList2.label          "Tieto webové stránky môžu ukladať údaje na použitie v režime offline:">
+<!ENTITY offlineAppsList3.label          "Tieto webové stránky môžu ukladať údaje na použitie v režime offline">
 <!ENTITY offlineAppsList.height          "7em">
 <!ENTITY offlineAppsListRemove.label     "Odstrániť…">
 <!ENTITY offlineAppsListRemove.accesskey "O">
 <!ENTITY offlineAppRemove.confirm        "Odstránenie údajov pre režim offline">
 
 <!ENTITY certificateTab.label            "Certifikáty">
-<!ENTITY certPersonal2.description       "Pokiaľ stránka požaduje môj osobný certifikát">
+<!ENTITY certPersonal2.description       "Pokiaľ server požaduje môj osobný certifikát">
 <!ENTITY selectCerts.auto                "Vybrať automaticky">
 <!ENTITY selectCerts.auto.accesskey      "m">
 <!ENTITY selectCerts.ask                 "Vždy sa opýtať">

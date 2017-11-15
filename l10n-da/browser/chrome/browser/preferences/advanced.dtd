@@ -29,8 +29,8 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "Data-rapportering er deaktiveret for denne build-konfiguration">
 
-<!ENTITY enableHealthReport1.label       "Tillad at &brandShortName; automatisk indsender tekniske data og data om brug til Mozilla">
-<!ENTITY enableHealthReport1.accesskey   "d">
+<!ENTITY enableHealthReport2.label       "Tillad at &brandShortName; indsender tekniske data og data om brug til Mozilla">
+<!ENTITY enableHealthReport2.accesskey   "d">
 <!ENTITY healthReportLearnMore.label     "Læs mere">
 
 <!ENTITY dataCollection.label            "Indsamling og brug af data i &brandShortName;">
@@ -105,7 +105,7 @@ available. -->
 <!ENTITY updateHistory2.label             "Vis opdateringshistorik…">
 <!ENTITY updateHistory2.accesskey         "V">
 
-<!ENTITY useService.label                "Brug en baggrundsservice til at installere opdateringer">
+<!ENTITY useService.label                "bruge en baggrundsservice til at installere opdateringer">
 <!ENTITY useService.accesskey            "b">
 
 <!ENTITY enableSearchUpdate2.label        "opdatere søgetjenester automatisk">
@@ -116,7 +116,7 @@ available. -->
 <!ENTITY offlineStorageNotifyExceptions.label     "Undtagelser…">
 <!ENTITY offlineStorageNotifyExceptions.accesskey "U">
 
-<!ENTITY offlineAppsList2.label           "Følgende websteder har tilladelse til at gemme data til brug offline:">
+<!ENTITY offlineAppsList3.label           "Følgende websteder har tilladelse til at gemme data til brug offline">
 <!ENTITY offlineAppsList.height          "7em">
 <!ENTITY offlineAppsListRemove.label     "Fjern…">
 <!ENTITY offlineAppsListRemove.accesskey "F">
@@ -144,7 +144,7 @@ available. -->
                                          "a">
 <!ENTITY performanceSettingsLearnMore.label
                                          "Læs mere">
-<!ENTITY limitContentProcessOption.label "Begrænsing af indholds-processer">
+<!ENTITY limitContentProcessOption.label "Begrænsning af indholds-processer">
 <!ENTITY limitContentProcessOption.description
                                          "Når du har mange faneblade åbne samtidig, kan brugen af flere indholdsprocesser forbedre ydelsen, men de vil til gengæld bruge mere hukommelse.">
 <!ENTITY limitContentProcessOption.accesskey   "i">

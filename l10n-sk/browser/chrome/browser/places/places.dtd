@@ -53,7 +53,7 @@
 <!ENTITY cmd.open_tab.label              "Otvoriť na novej karte">
 <!ENTITY cmd.open_tab.accesskey          "v">
 <!ENTITY cmd.open_all_in_tabs.label      "Otvoriť všetko na kartách">
-<!ENTITY cmd.open_all_in_tabs.accesskey  "c">
+<!ENTITY cmd.open_all_in_tabs.accesskey  "k">
 
 <!ENTITY cmd.properties.label      "Vlastnosti">
 <!ENTITY cmd.properties.accesskey  "l">
@@ -85,7 +85,8 @@
 <!ENTITY col.dateadded.label     "Pridané">
 <!ENTITY col.lastmodified.label  "Posledná úprava">
 
-<!ENTITY search.placeholder  "Hľadať">
+<!ENTITY historySearch.placeholder  "Hľadať v histórii">
+<!ENTITY bookmarksSearch.placeholder  "Hľadať v záložkách">
 
 <!ENTITY cmd.find.key  "f">
 
@@ -100,18 +101,18 @@
 <!ENTITY detailsPane.more.label "Viac">
 <!ENTITY detailsPane.more.accesskey "V">
 <!ENTITY detailsPane.less.label "Menej">
-<!ENTITY detailsPane.less.accesskey "M">
+<!ENTITY detailsPane.less.accesskey "e">
 <!ENTITY detailsPane.selectAnItemText.description "Vyberte položku, ktorej vlastnosti chcete zobraziť alebo upraviť">
 
 <!ENTITY view.label               "Zobraziť">
 <!ENTITY view.accesskey           "b">
 <!ENTITY byDate.label             "podľa dátumu">
 <!ENTITY byDate.accesskey         "d">
-<!ENTITY bySite.label             "podľa servera">
+<!ENTITY bySite.label             "podľa názvu stránky">
 <!ENTITY bySite.accesskey         "s">
 <!ENTITY byMostVisited.label      "podľa počtu návštev">
 <!ENTITY byMostVisited.accesskey  "a">
 <!ENTITY byLastVisited.label      "podľa poslednej návštevy">
 <!ENTITY byLastVisited.accesskey  "l">
-<!ENTITY byDayAndSite.label       "podľa dátumu a servera">
-<!ENTITY byDayAndSite.accesskey   "m">
+<!ENTITY byDayAndSite.label       "podľa dátumu a názvu stránky">
+<!ENTITY byDayAndSite.accesskey   "t">

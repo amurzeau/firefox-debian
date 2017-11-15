@@ -3,18 +3,23 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY firstrun_panel_title_welcome "Witamy">
-
-<!ENTITY firstrun_urlbar_message "Witamy w przeglądarce &brandShortName;">
-<!ENTITY firstrun_urlbar_subtext "Wyszukuj szybciej dzięki pomocnym podpowiedziom.">
+<!ENTITY firstrun_urlbar_message2 "Dziękujemy za wybranie\nprzeglądarki &brandShortName;">
+<!ENTITY firstrun_urlbar_subtext2 "Nowoczesna przeglądarka od Mozilli, organizacji non-profit oddanej wolnemu i otwartemu Internetowi.">
+<!ENTITY firstrun_panel_title_privacy "Prywatność">
+<!ENTITY firstrun_privacy_message "Przeglądaj, jak gdyby\nnikt nie patrzył">
+<!ENTITY firstrun_privacy_subtext "Przeglądanie prywatne z ochroną przed śledzeniem blokuje elementy śledzące użytkownika i nie zachowuje historii.">
+<!ENTITY firstrun_panel_title_customize "Dodatki">
+<!ENTITY firstrun_customize_message "Używaj przeglądarki &brandShortName;\npo swojemu">
+<!ENTITY firstrun_customize_subtext "Dostosuj przeglądarkę &brandShortName; dodatkami. Blokuj reklamy, dodawaj funkcje lub wybierz motyw, który do Ciebie pasuje.">
 <!ENTITY firstrun_bookmarks_title "Historia">
-<!ENTITY firstrun_bookmarks_message "Ulubione strony, zawsze dostępne">
+<!ENTITY firstrun_bookmarks_message "Ulubione strony,\nzawsze dostępne">
 <!ENTITY firstrun_bookmarks_subtext "Wyświetlaj wyniki z zakładek i historii podczas wyszukiwania.">
 <!ENTITY firstrun_data_title "Dane">
-<!ENTITY firstrun_data_message "Mniej danych, więcej oszczędności">
+<!ENTITY firstrun_data_message "Mniej danych,\nwięcej oszczędności">
 <!ENTITY firstrun_data_subtext2 "Wyłącz obrazy, aby zmniejszyć zużycie danych.">
 <!ENTITY firstrun_sync_title "Sync">
-<!ENTITY firstrun_sync_message "&brandShortName;, zawsze blisko">
-<!ENTITY firstrun_sync_subtext "Synchronizuj karty, hasła i wiele więcej między wszystkimi urządzeniami.">
+<!ENTITY firstrun_sync_message2 "Kontynuuj przeglądanie">
+<!ENTITY firstrun_sync_subtext2 "Użyj synchronizacji, aby mieć zakładki, hasła i inne rzeczy zachowane w przeglądarce &brandShortName; na wszystkich urządzeniach.">
 <!ENTITY firstrun_signin_message "Połącz z innymi urządzeniami">
 <!ENTITY firstrun_signin_button "Zaloguj się do synchronizacji">
 <!ENTITY onboard_start_button_browser "Zacznij przeglądać Internet">
@@ -59,7 +64,7 @@
 
 <!ENTITY url_bar_default_text2 "Wpisz adres lub szukaj">
 
-<!ENTITY bookmark "Zakładka">
+<!ENTITY bookmark "Dodaj zakładkę">
 <!ENTITY bookmark_remove "Usuń zakładkę">
 <!ENTITY bookmark_added "Dodano zakładkę">
 <!ENTITY bookmark_already_added "Zakładka już istnieje">
@@ -73,6 +78,7 @@
 
 <!ENTITY bookmark_folder_items "Zakładki: &formatD;">
 <!ENTITY bookmark_folder_one_item "Zakładki: 1">
+<!ENTITY bookmark_folder_updated "Zaktualizowano folder">
 <!ENTITY bookmark_parent_folder "Folder nadrzędny">
 <!ENTITY bookmark_add_folder "Dodaj nowy folder">
 
@@ -145,8 +151,6 @@
 <!ENTITY pref_category_advanced_summary3 "Przywracanie kart, oszczędzanie danych, narzędzia dla programistów">
 <!ENTITY pref_category_notifications "Powiadomienia">
 <!ENTITY pref_category_notifications_summary "Powiadomienia ze stron i o nowych funkcjach">
-<!ENTITY pref_content_notifications "Powiadomienia ze stron">
-<!ENTITY pref_content_notifications_summary2 "Umożliwia obsługiwanym stronom wyświetlanie powiadomień">
 <!ENTITY pref_developer_remotedebugging_usb "Zdalne debugowanie przez USB">
 <!ENTITY pref_developer_remotedebugging_wifi "Zdalne debugowanie przez Wi-Fi">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Debugowanie przez Wi-Fi wymaga zainstalowania czytnika kodów QR na urządzeniu.">
@@ -195,7 +199,6 @@
 <!ENTITY pref_show_web_fonts_summary2 "Pobieranie zdalnych czcionek podczas wczytywania strony">
 
 <!ENTITY pref_tracking_protection_title2 "Ochrona przed śledzeniem">
-<!ENTITY pref_tracking_protection_summary3 "Włączona w trybie prywatnym">
 <!ENTITY pref_donottrack_title "Ograniczanie śledzenia">
 <!ENTITY pref_donottrack_summary "Informowanie witryn, że użytkownik nie chce być śledzony">
 
@@ -208,17 +211,15 @@
 
 <!ENTITY pref_category_experimental "Funkcje eksperymentalne">
 
-<!ENTITY pref_custom_tabs "Niestandardowe karty">
-<!ENTITY pref_custom_tabs_summary3 "Aplikacje mogą otwierać strony za pomocą niestandardowej wersji przeglądarki &brandShortName;">
+<!ENTITY pref_custom_tabs2 "Niestandardowe karty">
+<!ENTITY pref_custom_tabs_summary4 "Aplikacje mogą otwierać strony w szybko wczytywanej niestandardowej karcie.">
+
 <!ENTITY custom_tabs_menu_item_open_in "Otwórz w przeglądarce &formatS;">
 <!ENTITY custom_tabs_menu_footer "Funkcja programu &brandShortName;">
 <!ENTITY custom_tabs_hint_url_copy "Skopiowano adres">
 
 <!ENTITY pref_pwa "Nowoczesne aplikacje internetowe">
 <!ENTITY pref_pwa_summary "Umożliwia dodawanie aplikacji internetowych do ekranu głównego">
-
-<!ENTITY pref_activity_stream "Activity Stream">
-<!ENTITY pref_activity_stream_summary "Wizualna historia i nowa strona domowa, ułatwiające wyszukiwanie treści w przeglądarce &brandShortName;.">
 
 <!ENTITY tracking_protection_prompt_title "Nowa ochrona przed śledzeniem">
 <!ENTITY tracking_protection_prompt_text "Aktywne blokowanie elementów śledzących aktywność użytkownika.">
@@ -239,12 +240,6 @@
 <!ENTITY tab_queue_notification_text_singular2 "Jedna oczekująca karta">
 
 <!ENTITY tab_queue_notification_settings "Proszę włączyć uprawnienie „Wyświetlanie nad innymi aplikacjami” dla aplikacji &brandShortName;, aby móc używać funkcji „Otwieranie wielu odnośników”">
-
-<!ENTITY content_notification_summary "&brandShortName;">
-<!ENTITY content_notification_title_plural "Zaktualizowane strony: &formatD;">
-<!ENTITY content_notification_action_settings2 "Ustawienia">
-<!ENTITY content_notification_action_read_now "Wyświetl">
-<!ENTITY content_notification_updated_on "Zaktualizowano: &formatS;">
 
 <!ENTITY pref_char_encoding "Kodowanie znaków">
 <!ENTITY pref_char_encoding_on "Pokazywanie">
@@ -271,6 +266,7 @@
 <!ENTITY pref_qrcode_enabled_summary2 "Umożliwia używanie skanera kodów QR w pasku adresu">
 
 <!ENTITY pref_use_master_password "Hasło główne">
+<!ENTITY pref_sync_default_title "Konto Firefoksa">
 <!ENTITY pref_sync2 "Zaloguj się">
 <!ENTITY pref_sync_summary2 "Synchronizowanie kart, zakładek, danych logowania, historii">
 <!ENTITY pref_search_suggestions "Podpowiedzi wyszukiwania">
@@ -294,9 +290,14 @@
 <!ENTITY pref_about_firefox "O programie &brandShortName;">
 <!ENTITY pref_vendor_faqs "Najczęściej zadawane pytania">
 <!ENTITY pref_vendor_feedback "Wyślij opinię">
+
 <!ENTITY pref_dialog_set_default "Ustaw jako domyślną">
 <!ENTITY pref_dialog_default "Domyślna">
 <!ENTITY pref_dialog_remove "Usuń">
+<!ENTITY pref_dialog_activitystream_header_content "Dodatkowe treści">
+<!ENTITY pref_dialog_activitystream_recentBookmarks "Ostatnie zakładki">
+<!ENTITY pref_dialog_activitystream_visited "Odwiedzone">
+
 <!ENTITY pref_search_last_toast "Nie można usunąć lub wyłączyć ostatniej wyszukiwarki.">
 
 <!ENTITY pref_panels_show "Pokaż">
@@ -308,7 +309,7 @@
 <!ENTITY datareporting_notification_title "&brandShortName;: statystyki i dane">
 <!ENTITY datareporting_notification_action "Wybierz, co chcesz udostępniać">
 <!ENTITY datareporting_notification_action_long "Wybierz informacje, które chcesz udostępniać">
-<!ENTITY datareporting_notification_summary "Aby ulepszyć przeglądarkę &brandShortName;, &vendorShortName; automatycznie pobiera pewne informacje.">
+<!ENTITY datareporting_notification_summary "Aby ulepszać przeglądarkę &brandShortName;, &vendorShortName; automatycznie pobiera pewne informacje.">
 <!ENTITY datareporting_notification_ticker_text "&datareporting_notification_title;. &datareporting_notification_action_long;">
 
 <!ENTITY datareporting_fhr_title "Raport o zdrowiu programu &brandShortName;">
@@ -361,6 +362,7 @@
 <!ENTITY contextmenu_open_new_tab "Otwórz w nowej karcie">
 <!ENTITY contextmenu_remove "Usuń">
 <!ENTITY contextmenu_add_to_launcher "Dodaj do ekranu głównego">
+<!ENTITY contextmenu_add_page_shortcut "Dodaj skrót do strony">
 <!ENTITY contextmenu_set_as_homepage "Ustaw jako stronę domową">
 <!ENTITY contextmenu_share "Udostępnij">
 <!ENTITY contextmenu_pasteandgo "Wklej i przejdź do strony">
@@ -373,7 +375,11 @@
 <!ENTITY contextmenu_top_sites_edit "Edytuj">
 <!ENTITY contextmenu_top_sites_pin "Przypnij stronę">
 <!ENTITY contextmenu_top_sites_unpin "Odepnij stronę">
+<!ENTITY contextmenu_pin_to_top_sites "Przypnij do popularnych stron">
+<!ENTITY contextmenu_unpin_from_top_sites "Odepnij od popularnych stron">
 <!ENTITY contextmenu_add_search_engine "Dodaj wyszukiwarkę">
+<!ENTITY pinned_page_to_top_sites "Przypięto do popularnych stron">
+<!ENTITY unpinned_page_from_top_sites "Odpięto od popularnych stron">
 
 <!ENTITY doorhanger_login_no_username "[brak nazwy użytkownika]">
 <!ENTITY doorhanger_login_edit_title "Edycja danych logowania">
@@ -531,7 +537,7 @@
 <!ENTITY guest_session_dialog_continue "Kontynuuj">
 <!ENTITY guest_session_dialog_cancel "Anuluj">
 <!ENTITY new_guest_session_title "&brandShortName; zostanie uruchomiony ponownie">
-<!ENTITY new_guest_session_text2 "Osoba korzystająca z przeglądarki nie będzie widziała Twoich prywatnych informacji (takich, jak zachowane dane logowania, historia przeglądania czy zakładki). Kiedy gość skończy korzystać z przeglądarki, dane o sesji zostaną usunięte, a Twoja sesja zostanie przywrócona.">
+<!ENTITY new_guest_session_text2 "Osoba korzystająca z przeglądarki nie będzie widziała Twoich prywatnych informacji (takich jak zachowane dane logowania, historia przeglądania czy zakładki). Kiedy gość skończy korzystać z przeglądarki, dane o sesji zostaną usunięte, a Twoja sesja zostanie przywrócona.">
 <!ENTITY guest_browsing_notification_title "Włączono tryb gościnny">
 <!ENTITY guest_browsing_notification_text "Stuknij, aby wyjść">
 
@@ -583,6 +589,8 @@
 
 <!ENTITY promotion_add_to_homescreen "Dodaj do ekranu głównego">
 
+<!ENTITY promotion_add_page_shortcut "Dodaj skrót do strony">
+
 <!ENTITY helper_first_offline_bookmark_title "Przeglądanie w trybie offline">
 <!ENTITY helper_first_offline_bookmark_message "Strony zachowane na później można znaleźć w zakładkach, nawet bez Internetu.">
 <!ENTITY helper_first_offline_bookmark_button "Przejdź do zakładek">
@@ -592,13 +600,27 @@
 <!ENTITY helper_triple_readerview_open_button "Dodaj zakładkę">
 
 <!ENTITY activity_stream_topsites "Popularne">
+<!ENTITY activity_stream_topstories "Poleca &brandPocket;">
 <!ENTITY activity_stream_highlights "Wyróżnione">
+
+<!ENTITY activity_stream_link_more1 "WIĘCEJ">
 
 <!ENTITY activity_stream_highlight_label_bookmarked "Zakładka">
 <!ENTITY activity_stream_highlight_label_visited "Odwiedzone">
+<!ENTITY activity_stream_highlight_label_trending "Na czasie">
+<!ENTITY activity_stream_highlights_empty "Zacznij przeglądać Internet, a pojawią się tutaj niedawno dodane zakładki i odwiedzone artykuły, filmy i inne strony.">
 
-<!ENTITY activity_stream_dismiss "Zamknij">
+<!ENTITY activity_stream_remove "Usuń">
 <!ENTITY activity_stream_delete_history "Usuń z historii">
 
-<!ENTITY activity_stream_welcome_title "Witaj na liście wyróżnień">
-<!ENTITY activity_stream_welcome_content1 "&brandShortName; zawiera teraz listę rzeczy odkrytych w Internecie, aby zawsze można było wrócić do ciekawych artykułów, filmów, zakładek i innych stron.">
+<!ENTITY private_tab_panel_title "Tryb prywatny i ochrona przed śledzeniem">
+<!ENTITY private_tab_panel_description "&brandShortName; blokuje części stron, które mogą śledzić aktywność użytkownika.">
+<!ENTITY private_tab_panel_description2 "Historia nie będzie zachowywana, ale pobrane pliki i dodane zakładki zostaną zachowane na urządzeniu.">
+<!ENTITY private_tab_learn_more "Więcej informacji">
+
+<!ENTITY fullscreen_warning "Włączono tryb pełnoekranowy">
+
+<!ENTITY pwa_add_to_launcher_confirm "+ Dodaj do ekranu głównego">
+<!ENTITY pwa_add_to_launcher_badge2 "Dodaj do ekranu głównego">
+<!ENTITY pwa_continue_to_website "Wróć do strony">
+<!ENTITY pwa_onboarding_sumo "Można łatwo dodać tę stronę do ekranu głównego, aby mieć do niej bezpośredni dostęp i używać jej jak aplikację.">

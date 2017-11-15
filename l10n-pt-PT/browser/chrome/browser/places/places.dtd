@@ -1,8 +1,8 @@
 <!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<!-- LOCALIZATION NOTE (places.library.title): use "Library", "Archive" or "Repository" -->
 
+<!-- LOCALIZATION NOTE (places.library.title): use "Library", "Archive" or "Repository" -->
 <!ENTITY places.library.title  "Biblioteca">
 <!ENTITY places.library.width  "700">
 <!ENTITY places.library.height "500">
@@ -46,11 +46,11 @@
 
 <!ENTITY cmd.open.label                  "Abrir">
 <!ENTITY cmd.open.accesskey              "A">
-<!ENTITY cmd.open_window.label           "Abrir em nova janela">
+<!ENTITY cmd.open_window.label           "Abrir numa nova janela">
 <!ENTITY cmd.open_window.accesskey       "n">
-<!ENTITY cmd.open_private_window.label     "Abrir em nova janela privada">
+<!ENTITY cmd.open_private_window.label     "Abrir numa nova janela privada">
 <!ENTITY cmd.open_private_window.accesskey "p">
-<!ENTITY cmd.open_tab.label              "Abrir em novo separador">
+<!ENTITY cmd.open_tab.label              "Abrir num novo separador">
 <!ENTITY cmd.open_tab.accesskey          "s">
 <!ENTITY cmd.open_all_in_tabs.label      "Abrir tudo em separadores">
 <!ENTITY cmd.open_all_in_tabs.accesskey  "o">
@@ -85,7 +85,8 @@
 <!ENTITY col.dateadded.label     "Adicionado">
 <!ENTITY col.lastmodified.label  "Última modificação">
 
-<!ENTITY search.placeholder  "Pesquisar">
+<!ENTITY historySearch.placeholder  "Pesquisar histórico">
+<!ENTITY bookmarksSearch.placeholder  "Pesquisar marcadores">
 
 <!ENTITY cmd.find.key  "f">
 

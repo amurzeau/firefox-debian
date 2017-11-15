@@ -23,3 +23,5 @@
 <!ENTITY safeb.blocked.unwantedPage.shortDesc "Tiu ĉi retpaĝo ĉe <span id='unwanted_sitename'/> estis denuncita kiel programtruda, kaj ĝi estis blokita surbaze de viaj sekurecaj preferoj.">
 <!ENTITY safeb.blocked.unwantedPage.longDesc "Programtrudaj paĝoj klopodas instali programojn kiuj povas esti trompaj aŭ efiki neantaŭvideble sur via sistemo.">
 
+<!ENTITY safeb.blocked.harmfulPage.title "La vizitota retejo povus enhavi fiprogramojn">
+<!ENTITY safeb.blocked.harmfulPage.shortDesc "&brandShortName; blokis tiun ĉi paĝon ĉar povus klopodi instali danĝerajn programojn, kiuj ŝtelas aŭ forigas viajn datumojn (ekzemple fotojn, pasvortojn, mesaĝojn kaj kreditkartojn).">

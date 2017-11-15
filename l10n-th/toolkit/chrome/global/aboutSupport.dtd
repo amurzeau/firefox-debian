@@ -22,6 +22,9 @@ This is likely the same like id.heading in crashes.dtd. -->
 <!ENTITY aboutSupport.extensionId "ID">
 
 <!ENTITY aboutSupport.featuresTitle "คุณลักษณะของ &brandShortName;">
+<!ENTITY aboutSupport.featureName "ชื่อ">
+<!ENTITY aboutSupport.featureVersion "รุ่น">
+<!ENTITY aboutSupport.featureId "ID">
 
 <!ENTITY aboutSupport.experimentsTitle "คุณลักษณะทดลอง">
 <!ENTITY aboutSupport.experimentName "ชื่อ">
@@ -49,7 +52,7 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 <!ENTITY aboutSupport.appBasicsProfileDirWinMac "โฟลเดอร์โปรไฟล์">
 
 <!ENTITY aboutSupport.appBasicsEnabledPlugins "ปลั๊กอินที่เปิดใช้งาน">
-<!ENTITY aboutSupport.appBasicsBuildConfig "Build Configuration">
+<!ENTITY aboutSupport.appBasicsBuildConfig "การกำหนดค่าการสร้าง">
 <!ENTITY aboutSupport.appBasicsUserAgent "User Agent">
 <!ENTITY aboutSupport.appBasicsOS "ระบบปฏิบัติการ">
 <!ENTITY aboutSupport.appBasicsMemoryUse "หน่วยความจำที่ใช้">
@@ -61,6 +64,8 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 <!ENTITY aboutSupport.appBasicsProfiles "โปรไฟล์">
 
 <!ENTITY aboutSupport.appBasicsMultiProcessSupport "หน้าต่างแบบหลายโปรเซส">
+
+<!ENTITY aboutSupport.appBasicsProcessCount "โปรเซสเนื้อหาเว็บ">
 
 
 <!ENTITY aboutSupport.appBasicsSafeMode "โหมดปลอดภัย">
@@ -93,9 +98,9 @@ variant of aboutSupport.showDir.label. -->
 
 <!ENTITY aboutSupport.jsTitle "JavaScript">
 
-<!ENTITY aboutSupport.a11yTitle "การช่วยเข้าถึง">
+<!ENTITY aboutSupport.a11yTitle "การช่วยการเข้าถึง">
 <!ENTITY aboutSupport.a11yActivated "ถูกเปิดใช้งาน">
-<!ENTITY aboutSupport.a11yForceDisabled "ป้องกันการช่วยเข้าถึง">
+<!ENTITY aboutSupport.a11yForceDisabled "ป้องกันการช่วยการเข้าถึง">
 
 <!ENTITY aboutSupport.libraryVersionsTitle "รุ่น Library">
 
@@ -106,11 +111,18 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.copyRawDataToClipboard.label "คัดลอกข้อมูลดิบไปยังคลิปบอร์ด">
 
 <!ENTITY aboutSupport.sandboxTitle "กระบะทราย">
+<!ENTITY aboutSupport.sandboxSyscallPID "PID">
+<!ENTITY aboutSupport.sandboxSyscallTID "TID">
 
 <!ENTITY aboutSupport.safeModeTitle "ลองใช้โหมดปลอดภัย">
-<!ENTITY aboutSupport.restartInSafeMode.label "เริ่มการทำงานใหม่และปิดใช้งานส่วนเสริม…">
+<!ENTITY aboutSupport.restartInSafeMode.label "เริ่มการทำงานใหม่พร้อมปิดใช้งานส่วนเสริม…">
 
 <!ENTITY aboutSupport.graphicsFeaturesTitle "คุณลักษณะ">
 <!ENTITY aboutSupport.graphicsDiagnosticsTitle "การวินิจฉัย">
 <!ENTITY aboutSupport.graphicsGPU1Title "GPU #1">
 <!ENTITY aboutSupport.graphicsGPU2Title "GPU #2">
+
+<!ENTITY aboutSupport.mediaTitle "สื่อ">
+<!ENTITY aboutSupport.mediaDeviceName "ชื่อ">
+<!ENTITY aboutSupport.mediaDeviceGroup "กลุ่ม">
+<!ENTITY aboutSupport.mediaDeviceVendor "ผู้จำหน่าย">

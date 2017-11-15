@@ -145,24 +145,19 @@
 <!ENTITY options.debugger.label            "Penyahpepijat">
 
 <!-- LOCALIZATION NOTE (options.sourceMap.label): This is the
-   - label for the checkbox that toggles source maps in the Debugger -->
+   - label for the checkbox that toggles source maps in all tools -->
 <!ENTITY options.sourceMaps.label      "Dayakan Sumber Peta">
-<!ENTITY options.sourceMaps.tooltip    "Jika anda aktifkan pilihan ini, sumber akan dipeta dalam Penyahpepijat dan Konsol.">
+<!ENTITY options.sourceMaps.tooltip1   "Jika anda aktifkan pilihan ini, sumber ini akan dipetakan di dalam alatan.">
 
 <!-- LOCALIZATION NOTE (options.styleeditor.label): This is the label for the
   -  heading of the group of Style Editor preferences in the options
   -  panel. -->
 <!ENTITY options.styleeditor.label            "Editor Gaya">
 
-<!-- LOCALIZATION NOTE (options.stylesheetSourceMaps.label): This is the
-   - label for the checkbox that toggles showing original sources in the Style Editor -->
-<!ENTITY options.stylesheetSourceMaps.label      "Papar sumber asal">
-<!ENTITY options.stylesheetSourceMaps.tooltip    "Papar sumber asal (iaitu fail Sass) di dalam Style Editor dan Inspektor">
-
 <!-- LOCALIZATION NOTE (options.stylesheetAutocompletion.label): This is the
    - label for the checkbox that toggles autocompletion of css in the Style Editor -->
 <!ENTITY options.stylesheetAutocompletion.label      "CSS Auto-lengkap">
-<!ENTITY options.stylesheetAutocompletion.tooltip    "Ciri, nilai dan pemilih auto-lengkap CSS dalam Editor Gaya sebaik sahaja anda menaip">
+<!ENTITY options.stylesheetAutocompletion.tooltip    "Ciri, nilai dan pemilih CSS auto-lengkap dalam Editor Gaya sebaik sahaja anda menaip">
 
 <!-- LOCALIZATION NOTE (options.screenshot.label): This is the label for the
    -  heading of the group of Screenshot preferences in the options
@@ -178,18 +173,6 @@
    - label for the checkbox that toggles the camera shutter audio for screenshot tool -->
 <!ENTITY options.screenshot.audio.label      "Mainkan bunyi pengatup kamera">
 <!ENTITY options.screenshot.audio.tooltip    "Dayakan audio kamera apabila mengambil skrinshot">
-
-<!-- LOCALIZATION NOTE (options.commonprefs): This is the label for the heading
-      of all preferences that affect both the Web Console and the Network
-      Monitor -->
-<!ENTITY options.commonPrefs.label           "Keutamaan Lazim">
-
-<!-- LOCALIZATION NOTE (options.enablePersistentLogs.label): This is the
-  -  label for the checkbox that toggles persistent logs in the Web Console and
-  -  network monitor,  i.e. devtools.webconsole.persistlog a boolean preference in
-  -  about:config, in the options panel. -->
-<!ENTITY options.enablePersistentLogs.label    "Dayakan log kekal">
-<!ENTITY options.enablePersistentLogs.tooltip  "Jika anda membolehkan pilihan ini Konsol Web dan Pemantau Rangkaian tidak akan melapangkan output setiap kali anda melayari laman baru">
 
 <!-- LOCALIZATION NOTE (options.showPlatformData.label): This is the
   -  label for the checkbox that toggles the display of the platform data in the,

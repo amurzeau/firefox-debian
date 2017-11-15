@@ -3,9 +3,14 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY firstrun_panel_title_welcome "ಸ್ವಾಗತ">
-
-<!ENTITY firstrun_urlbar_message "&brandShortName; ಗೆ ಸ್ವಾಗತ">
-<!ENTITY firstrun_urlbar_subtext "ಉಪಯುಕ್ತ ಹುಡುಕು ಸಲಹೆ ಶಾರ್ಟ್‌ಕಟ್‌ಗಳಿಂದ ವೇಗವಾಗಿ ಹುಡುಕಿ.">
+<!ENTITY firstrun_urlbar_message2 "ಆಯ್ಕೆ ಮಾಡಿದ್ದಕ್ಕೆ ಧನ್ಯವಾದಗಳು &brandShortName;‍">
+<!ENTITY firstrun_urlbar_subtext2 "ಸ್ವತಂತ್ರ ಮತ್ತು ಮುಕ್ತ ಜಾಲಕ್ಕಾಗಿ ಬದ್ಧವಾಗಿರುವ ಲಾಭರಹಿತವಾದ ಮೊಜಿಲ್ಲಾದಿಂದ ಒಂದು ಆಧುನಿಕ ಮೊಬೈಲ್ ಬ್ರೌಸರ್.">
+<!ENTITY firstrun_panel_title_privacy "ಗೌಪ್ಯತೆ">
+<!ENTITY firstrun_privacy_message "ಯಾರೂ ನೋಡದಿರುವಂತೆ ಜಾಲಾಡಿ">
+<!ENTITY firstrun_privacy_subtext "ನೀವು ಟ್ರ್ಯಾಕಿಂಗ್ ಸಂರಕ್ಷಣೆಯೊಂದಿಗೆ ಖಾಸಗಿ ಜಾಲಾಟ ಮಾಡುವುದರಿಂದ ನಿಮ್ಮ ಜಾಲವೀಕ್ಷಣಾ ವರ್ತನೆಯ ಬಗ್ಗೆ ಮಾಹಿತಿಯನ್ನು ಸಂಗ್ರಹಿಸುವ ಟ್ರ್ಯಾಕರ್‌ಗಳನ್ನು ನಿರ್ಬಂಧಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ನೀವು ಜಾಲವೀಕ್ಷಣೆಯನ್ನು ಮುಗಿಸಿದಾಗ ನಿಮ್ಮ ಜಾಲವೀಕ್ಷಣಾ ಇತಿಹಾಸವನ್ನು ಮರೆಯುತ್ತದೆ.">
+<!ENTITY firstrun_panel_title_customize "ಅಗತ್ಯಾನುಗುಣಗೊಳಿಸು">
+<!ENTITY firstrun_customize_message "&brandShortName; ಅನ್ನು ನಿಮ್ಮದಾಗಿಸಿಕೊಳ್ಳಿ.">
+<!ENTITY firstrun_customize_subtext "ಆಡ್-ಆನ್‍ಗಳೊಂದಿಗೆ &brandShortName; ಅನ್ನು ಅಗತ್ಯಾನುಗುಣಗೊಳಿಸಿ. ಜಾಹಿರಾತುಗಳನ್ನು ನಿರ್ಬಂಧಿಸಿ, ವೈಶಿಷ್ಟ್ಯತೆಯನ್ನು ಸೇರಿಸಿ, ಅಥವಾ ನಿಮ್ಮ ವ್ಯಕ್ತಿತ್ವವನ್ನು ಪ್ರತಿಬಿಂಬಿಸುವಂತೆ ಹೊಸ ಥೀಮ್ಅನ್ನು ಆಯ್ಕೆಮಾಡಿಕೊಳ್ಳಿ.">
 <!ENTITY firstrun_bookmarks_title "ಇತಿಹಾಸ">
 <!ENTITY firstrun_bookmarks_message "ನಿಮ್ಮ ಮೆಚ್ಚಿನವು, ಮುಂ‍ಭಾಗ ಮತ್ತು ಮಧ್ಯೆ">
 <!ENTITY firstrun_bookmarks_subtext "ನೀವು ಹುಡುಕುವಾಗ ನಿಮ್ಮ ಪುಟಗುರುತುಗಳು ಮತ್ತು ಇತಿಹಾಸದಿಂದ ಫಲಿತಾಂಶ ಪಡೆಯಿರಿ.">
@@ -13,8 +18,8 @@
 <!ENTITY firstrun_data_message "ಕಡಿಮೆ ದತ್ತಾಂಶ, ಹೆಚ್ಚು ಉಳಿತಾಯ">
 <!ENTITY firstrun_data_subtext2 "‍ನೀವು ವಿಹರಿಸುವ ಪ್ರತಿಯೊಂದೂ ತಾಣದಲ್ಲಿ ಕಡಿಮೆ ಡೇಟಾ ವ್ಯಯಿಸಲು ಚಿತ್ರಗಳನ್ನು ಅಡಗಿಸಿ. ">
 <!ENTITY firstrun_sync_title "ಸಿಂಕ್">
-<!ENTITY firstrun_sync_message "&brandShortName;, ಯಾವಾಗಲೂ ನಿಮ್ಮ ಜೊತೆ">
-<!ENTITY firstrun_sync_subtext "‍ನೀವು ಬಳಸುವೆಲ್ಲೆಡೆಗಳಿಂದ ನಿಮ್ಮ ಟ್ಯಾಬ್‌ಗಳನ್ನು, ಗುಪ್ತಪದಗಳನ್ನು ಮತ್ತು ಇನ್ನಷ್ಟನ್ನು ಸಿಂಕ್ ಮಾಡಿ.">
+<!ENTITY firstrun_sync_message2 "ನೀವು ಬಿಟ್ಟು ಹೋದಲ್ಲಿಂದ ಮುಂದುವರೆಸಿ.">
+<!ENTITY firstrun_sync_subtext2 "ನಿಮ್ಮ ಎಲ್ಲಾ ಸಾಧನಗಳಲ್ಲಿ &brandShortName; ಗೆ ನೀವು ಉಳಿಸುವ ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳು, ಗುಪ್ತಪದಗಳು ಮತ್ತು ಇತರ ವಿಷಯಗಳನ್ನು ಹುಡುಕಲು ಸಿಂಕ್ ಅನ್ನು ಬಳಸಿ.">
 <!ENTITY firstrun_signin_message "ಸಂಪರ್ಕಕ್ಕೆ ಬನ್ನಿ, ಪ್ರಾರಂಭಿಸಲು ಅನುವಾಗಿ">
 <!ENTITY firstrun_signin_button "ಸಿಂಕ್ ಮಾಡಲು ಸೈನ್ ಇನ್ ಆಗಿ">
 <!ENTITY  onboard_start_button_browser "ಅಂತರ್ಜಾಲದ ವೀಕ್ಷಣೆಯನ್ನು ಪ್ರಾರಂಭಿಸಿ">
@@ -87,6 +92,7 @@
      in the folder. -->
 <!ENTITY bookmark_folder_items "&formatD; ಅಂಶಗಳು">
 <!ENTITY bookmark_folder_one_item "೧ ಅಂಶ">
+<!ENTITY bookmark_folder_updated "ಕಡತಕೋಶದ ಪರಿಷ್ಕರಿಸಲಾಗಿದೆ">
 <!ENTITY bookmark_parent_folder "ಪೋಷಕ ಕಡತಕೋಶ">
 <!ENTITY bookmark_add_folder "ಕಡತ ಕೋಶ ಸೇರಿಸು">
 
@@ -201,8 +207,6 @@
 <!ENTITY pref_category_advanced_summary3 "ಟ್ಯಾಬ್‌ಗಳನ್ನು, ದತ್ತಾಂಶ ಉಳಿಕೆ, ಡೆವೆಲಪರ್ ಸಲಕರಣೆಗಳನ್ನು ಮರುಸ್ಥಾಪಿಸಿ">
 <!ENTITY pref_category_notifications "ಸೂಚನೆಗಳು">
 <!ENTITY pref_category_notifications_summary "ಹೊಸ ವೈಶಿಷ್ಟ್ಯತೆಗಳು, ಜಾಲತಾಣ ಪರಿಷ್ಕರಣೆಗಳು">
-<!ENTITY pref_content_notifications "ತಾಣದ ಪರಿಷ್ಕರಣೆಗಳು">
-<!ENTITY pref_content_notifications_summary2 "ಬೆಂಬಲಿತ ತಾಣಗಳಿಂದ ಬರುವ ಹೊಸ ವಿಷಯಗಳನ್ನು ಶೋಧಿಸು">
 <!ENTITY pref_developer_remotedebugging_usb "ರಿಮೋಟ್ ಡೀಬಗ್ಗಿಂಗ್ USB ಮೂಲಕ">
 <!ENTITY pref_developer_remotedebugging_wifi "ರಿಮೋಟ್ ಡೀಬಗ್ಗಿಂಗ್ Wi-Fi ಮೂಲಕ">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "ವೈ-ಫೈ ಡೀಬಗಿಂಗ್‌ಗೆ ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿ ‌QR ಕೋಡ್ ರೀಡರ್ ಅಪ್ ಸ್ಥಾಪಿತಗೊಂಡಿರಬೇಕು.">
@@ -268,7 +272,6 @@
 <!ENTITY pref_show_web_fonts_summary2 "ಪುಟವನ್ನು ತುಂಬಿಸುವಾಗ ದೂರದ ಅಕ್ಷರ ಶೈಲಿಗಳನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿಕೊ">
 
 <!ENTITY pref_tracking_protection_title2 "ಜಾಡು ಇರಿಸುವಿಕೆ ಇಂದ ರಕ್ಷಣೆ">
-<!ENTITY pref_tracking_protection_summary3 "ಖಾಸಗಿ ವೀಕ್ಷಣೆಯಲ್ಲಿ ಸಕ್ರಿಯಗೊಳಿಸು">
 <!ENTITY pref_donottrack_title "ಜಾಡು ಇರಿಸಬೇಡ">
 <!ENTITY pref_donottrack_summary "&brandShortName; ನಿಮ್ಮ ಜಾಡನ್ನು ಇರಿಸದಂತೆ ಜಾಲಗಳಿಗೆ ತಿಳಿಸುತ್ತದೆ">
 
@@ -286,8 +289,8 @@
 <!-- Custom Tabs is an Android API for allowing third-party apps to open URLs in a customized UI.
      Instead of switching to the browser it appears as if the user stays in the third-party app.
      For more see: https://developer.chrome.com/multidevice/android/customtabs -->
-<!ENTITY pref_custom_tabs "ಇಚ್ಛೆಯ ಟ್ಯಾಬ್‍‍‍ಗಳು">
-<!ENTITY pref_custom_tabs_summary3 "ಅನ್ವಯಗಳನ್ನು ಅಗತ್ಯಾನುಗುಣಗೊಳಿಸಿದ &brandShortName; ನ ಆವೃತ್ತಿಯಲ್ಲಿ ಜಾಲತಾಣಗಳನ್ನು‍ ತೆರೆಯಲು ಅನುಮತಿಸು‍">
+<!ENTITY pref_custom_tabs2 "ಇಚ್ಛೆಯ ಟ್ಯಾಬ್‍‍‍ಗಳು">
+
 <!-- Localization note (custom_tabs_menu_item_open_in): The variable is replaced by the name of
      default browser from user's preference, such as "Open in Firefox" -->
 <!ENTITY custom_tabs_menu_item_open_in "&formatS; ನಲ್ಲಿ ">
@@ -297,10 +300,6 @@
 
 <!ENTITY pref_pwa "ಪ್ರೋಗ್ರೆಸಿವ್ ಜಾಲ ">
 <!ENTITY pref_pwa_summary "ಜಾಲ ಅನ್ವಯಗಳನ್ನು ಮುಖಪುಟದ ಪರದೆಗೆ ಸೇರಿಸುವುದನ್ನು ">
-
-<!-- Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream  -->
-<!ENTITY pref_activity_stream "ಚಟುವಟಿಕೆ ಹರಿವು">
-<!ENTITY pref_activity_stream_summary "ಒಂದು ಸಮೃದ್ಧ ದೃಷ್ಟಿಗೋಚರ ಇತಿಹಾಸದ ಫೀಡ್ ಮತ್ತು ಒಂದು ಮರುಕಲ್ಪನೆಯ ಮುಖ ಪುಟ &brandShortName; ನಲ್ಲಿ ನೀವು ಹುಡುಕುತ್ತಿರುವುದನ್ನು ಬಹಳ ಸುಲಭವಾಗಿ ಸಿಗುವಂತೆ ಮಾಡುತ್ತದೆ.">
 
 <!ENTITY tracking_protection_prompt_title "ಈಗ ಜಾಡು ಇರಿಸುವಿಕೆಗೆ ರಕ್ಷಣೆ ಜೊತೆಗೆ">
 <!ENTITY tracking_protection_prompt_text "ಸಕ್ರಿಯವಾಗಿ ಜಾಡುಹಿಡಿಯುವ ಅಂಶಗಳನ್ನು ನಿರ್ಬಂಧಿಸಿ ನೀವು ಚಿಂತಿಸುವುದನ್ನು ಬಿಡಬಹುದು.">
@@ -333,23 +332,6 @@
 <!-- Localization note (tab_queue_notification_settings): This notification text is shown if a tab
      has been queued but we are missing the system permission to show an overlay. -->
 <!ENTITY tab_queue_notification_settings "ನೀವು \&quot;ಒಂದಕ್ಕಿಂತ ಹೆಚ್ಚು ಕೊಂಡಿಗಳನ್ನು ತೆರೆ\&quot;‌ಯಲು, ದಯವಿಟ್ಟು \&apos;ಇತರೆ ಅನ್ವಯಗಳ ಮೇಲೆ ಚಿತ್ರಿಸು\&apos; ಅನುಮತಿಯನ್ನು ‍&brandShortName; ಗೆ ಸಕ್ರಿಯಗೊಳಿಸಿ">
-
-<!ENTITY content_notification_summary "&brandShortName;">
-<!-- Localization note (content_notification_title_plural): &formatD; will be replaced with the number of websites that
-     have been updated (new content is available). The number of websites is always more than one (>= 2). For a single
-     update the website title is used instead of this string.
-     We can't use Android plural forms, sadly. See Bug #753859. -->
-<!ENTITY content_notification_title_plural "&formatD; ಜಾಲತಾಣಗಳನ್ನು ಪರಿಷ್ಕರಿಸಲಾಗಿದೆ">
-<!-- Localization note (content_notification_action_settings2): This label will be shown as an action in a content notification.
-     Clicking the action will jump to the notification settings of the app. -->
-<!ENTITY content_notification_action_settings2 "ಸಿದ್ಧತೆಗಳು">
-<!-- Localization note(content_notification_action_read_now): This label will be shown as an action in a content notification.
-     Clicking the action will open all new content in the browser. -->
-<!ENTITY content_notification_action_read_now "ಈಗ ಓದು">
-<!-- Localization note (content_notification_updated_on): &formatS; will be replaced with a medium sized version of the
-     date, depending on locale. For en_US this is for example: Feb 24, 2016. For more details see the Android developer
-     documentation for DateFormat.getMediumDateFormat(). -->
-<!ENTITY content_notification_updated_on "&formatS; ಮೇಲೆ ಪರಿಷ್ಕರಿಸಲಾಗಿದೆ">
 
 <!ENTITY pref_char_encoding "ಅಕ್ಷರದ ಎನ್ಕೋಡಿಂಗ್">
 <!ENTITY pref_char_encoding_on "ಪರಿವಿಡಿ ತೋರಿಸು">
@@ -409,6 +391,9 @@
 <!ENTITY pref_dialog_set_default "ಪೂರ್ವನಿಯೋಜಿತವಾಗಿ ಹೊಂದಿಸು">
 <!ENTITY pref_dialog_default "ಪೂರ್ವನಿಯೋಜಿತ">
 <!ENTITY pref_dialog_remove "ತೆಗೆದು ಹಾಕು">
+<!ENTITY pref_dialog_activitystream_header_content "ಹೆಚ್ಚುವರಿ ವಿಷಯಗಳು">
+<!ENTITY pref_dialog_activitystream_recentBookmarks "ಇತ್ತೀಚಿನ ಬುಕ್‌ಮಾರ್ಕುಗಳು">
+<!ENTITY pref_dialog_activitystream_visited "ಭೇಟಿ ನೀಡಲಾದ‍">
 
 <!ENTITY pref_search_last_toast "ನಿಮ್ಮ ಕೊನೆಯ ಸರ್ಚ್ ಎಂಜಿನ್‌ ಅನ್ನು ನೀವು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲು ಅಥವ ತೆಗೆದುಹಾಕುಲು ಸಾಧ್ಯವಿಲ್ಲ.">
 
@@ -510,7 +495,17 @@
 <!ENTITY contextmenu_top_sites_edit "ಸಂಪಾದನೆ">
 <!ENTITY contextmenu_top_sites_pin "ತಾಣವನ್ನು ಹಿಡಿದಿಡು">
 <!ENTITY contextmenu_top_sites_unpin "ತಾಣವನ್ನು ಬಿಡುಗಡೆಗೊಳಿಸು">
+<!-- Localization note (contextmenu_pin_to_top_sites, contextmenu_unpin_from_top_sites): These strings are used to
+     pin/unpin items from top sites when the user is not on the top sites screen so they'd be missing context on what
+     just "Pin Site" or "Unpin Site" would mean. -->
+<!ENTITY contextmenu_pin_to_top_sites "ಅಗ್ರತಾಣಗಳಿಗೆ ಪಿನ್ ಮಾಡಿ">
+<!ENTITY contextmenu_unpin_from_top_sites "ಅಗ್ರತಾಣಗಳಿಂದ ಪಿನ್ ಮಾಡಿರುವುದನ್ನು ತೆಗೆಯಿರಿ">
 <!ENTITY contextmenu_add_search_engine "ಹುಡುಕು ಸಾಧನವನ್ನು ಸೇರಿಸಿ">
+
+<!-- Localization note (pinned_page_to_top_sites, unpinned_page_from_top_sites): These strings are shown in a snackbar
+     after the user pins/unpins the currently displayed page from top sites. -->
+<!ENTITY pinned_page_to_top_sites "ಪುಟವನ್ನು ಅಗ್ರತಾಣಗಳಿಗೆ ಪಿನ್ ಮಾಡಿ">
+<!ENTITY unpinned_page_from_top_sites "ಪುಟವನ್ನು ಅಗ್ರತಾಣಗಳಿಂ ತೆಗೆಯಿರಿ">
 
 <!-- Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
      where normally a username would be displayed. In this case, no username was found, and this placeholder
@@ -624,7 +619,7 @@
 
 <!-- Localization note (home_pinned_site) : This is a snackbar label displayed after
     a site is pinned or unpinned. -->
-<!ENTITY home_pinned_site "ಪಿನ್ ಮಾಡಿದ ತಾಣ">
+<!ENTITY home_pinned_site "ಪಿನ್‌ ಮಾಡಲಾದ ತಾಣ">
 <!ENTITY home_unpinned_site "ಪಿನ್‌ ತೆಗೆದ ತಾಣ">
 
 <!ENTITY remote_tabs_panel_moved_title "ನನ್ನ ಹಾಳೆಗಳು ಎಲ್ಲಿ ಹೋದವು?">
@@ -821,6 +816,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 
 <!ENTITY promotion_add_to_homescreen "ಮುಖ್ಯ ತೆರೆಗೆ ಸೇರಿಸು">
 
+
 <!ENTITY helper_first_offline_bookmark_title "ಆಫ್‍‌‍ಲೈನ್ ಓದು">
 <!ENTITY helper_first_offline_bookmark_message "ಆಫ್‌ಲೈನ್ ಇದ್ದಾಗ್ಯೂ, ನಿಮ್ಮ ಪುಟಗುರುತುಗಳಲ್ಲಿನ ಓದುಗ ನೋಟದ ಅಂಶಗಳನ್ನು ಹುಡುಕಿರಿ.">
 <!ENTITY helper_first_offline_bookmark_button "ಪುಟಗುರುತುಗಳಿಗೆ ಸಾಗು">
@@ -830,7 +826,12 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_button "ಪುಟಗುರುತುಗಳಿಗೆ ಸಾಗು">
 
 <!ENTITY activity_stream_topsites "ಪ್ರಮುಖ ತಾಣಗಳು">
+<!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->
+<!ENTITY activity_stream_topstories "&brandPocket; ಇಂದ ಶಿಫಾರಸು ಮಾಡಲಾಗಿದೆ">
 <!ENTITY activity_stream_highlights "ಮುಖ್ಯಾಂಶಗಳು">
+
+<!-- LOCALIZATION NOTE (activity_stream_link_more1): Link-like text displayed to take user to a website with more content from Pocket. -->
+<!ENTITY activity_stream_link_more1 "ಹೆಚ್ಚು">
 
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_bookmarked): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
@@ -838,13 +839,26 @@ Stream list for highlights sourced from th user's bookmarks. -->
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_visited): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
 <!ENTITY activity_stream_highlight_label_visited "ಭೇಟಿ ನೀಡಲಾದ‍">
+<!-- LOCALIZATION NOTE (activity_stream_highlight_label_trending): This label is shown in the Activity Stream list for highlights sourced from a recommendations engine. -->
+<!ENTITY activity_stream_highlight_label_trending "ಪ್ರಚಲಿತ">
+<!-- LOCALIZATION NOTE (activity_stream_highlights_empty): This text is shown when we could not find highlights for this user. This is also shown on first run. -->
+<!ENTITY activity_stream_highlights_empty "ವೀಕ್ಷಣೆ ಮಾಡಲು ಶುರುಮಾಡಿ, ಮತ್ತು ನಾವು ಇತ್ತೀಚೆಗೆ ಭೇಟಿ ನೀಡಿದ ಅಥವಾ ಬುಕ್‌ಮಾರ್ಕ್ ಮಾಡಲಾದ ಕೆಲವು ಶ್ರೇಷ್ಠ ಲೇಖನಗಳು, ವೀಡಿಯೊಗಳು ಮತ್ತು ಇತರ ಪುಟಗಳನ್ನು ನಾವು ತೋರಿಸುತ್ತೇವೆ.">
 
-<!-- LOCALIZATION NOTE (activity_stream_dismiss): This label is shown in the Activity Stream context menu,
+<!-- LOCALIZATION NOTE (activity_stream_remove): This label is shown in the Activity Stream context menu,
 and allows hiding a URL/page from highlights or topsites. The page remains in history/bookmarks, but
 is simply hidden from the Activity Stream panel. -->
-<!ENTITY activity_stream_dismiss "ವಜಾಗೊಳಿಸು‍">
+<!ENTITY activity_stream_remove "ತೆಗೆದು ಹಾಕು">
 <!ENTITY activity_stream_delete_history "ಇತಿಹಾಸದಿಂದ ಅಳಿಸು‍">
 
-<!ENTITY activity_stream_welcome_title "‍ನಿಮ್ಮ ಹೈಲೈಟ್ಸ್‌ಗಳಿಗೆ ಸ್ವಾಗತ">
-<!ENTITY activity_stream_welcome_content1 "&brandShortName; ಈಗ ನೀವು ಜಾಲದಲ್ಲಿ ಅನ್ವೇಷಿಸಿದ್ದನ್ನು ಹೈಲೈಟ್ಸ್‌ಗಳನ್ನಾಗಿ ಸೃಷ್ಟಿಸುವುದರಿಂದ ನೀವು ಅತ್ಯುತ್ತಮ ಲೇಖನಗಳನ್ನು, ವಿಡಿಯೋಗಳನ್ನು, ಪುಟಗುರುತುಗಳನ್ನು ಮತ್ತು ಇತರೆ ಪುಟಗಳನ್ನು ಸುಲಭವಾಗಿ ಹುಡುಕಬಹುದು.">
+<!ENTITY private_tab_panel_title "ಖಾಸಗಿ ಜಾಲಾಟ + ಜಾಡುಹಿಡಿಯುವಿಕೆ ಸುರಕ್ಷತೆ">
+<!ENTITY private_tab_panel_description "&brandShortName; ನಿಮ್ಮ ಜಾಲಾಟದ ಜಾಡನ್ನು ಇರಿಸಿಕೊಳ್ಳುವ ಪುಟದ ಕೆಲವು ಭಾಗಗಳನ್ನು ನಿರ್ಬಂಧಿಸುತ್ತಿದೆ.">
+<!ENTITY private_tab_panel_description2 "ನಾವು ಹಿಂದಿನ ಇತಿಹಾಸ ನೆನಪಿನಲ್ಲಿಡುವುದಿಲ್ಲ, ಆದರೆ ಡೌನ್ಲೋಡ್ ಮಾಡಿದ ಕಡತಗಳು ಮತ್ತು ಹೊಸ ಪುಟಗುರುತುಗಳು ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿ ಉಳಿದುಕೊಳ್ಳುತ್ತವೆ.">
+<!ENTITY private_tab_learn_more "ಹೆಚ್ಚಿನದನ್ನು ಕಲಿಯಬೇಕೆ?">
+
 <!ENTITY fullscreen_warning "ಪೂರ್ಣಪರದೆಗೆ ಪ್ರವೇಶಿಸಿದೆ">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_confirm): The plus sign here is part of UI design -->
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_badge2): Used as label in the page actions dropdown list,
+displayed when there are more than 3 actions available for a page.
+See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->

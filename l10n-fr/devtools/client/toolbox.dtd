@@ -82,12 +82,6 @@
 <!ENTITY options.enableRemote.label3    "Activer le débogage distant">
 <!ENTITY options.enableRemote.tooltip2  "Activer cette option permettra de déboguer grâce aux outils de développement, une instance distante telle que Firefox OS">
 
-<!-- LOCALIZATION NOTE (options.enableWorkers.label): This is the label for the
-  -  checkbox that toggles worker debugging, i.e. devtools.debugger.workers
-  -  boolean preference in about:config, in the options panel. -->
-<!ENTITY options.enableWorkers.label    "Activer le débogage des workers (en développement)">
-<!ENTITY options.enableWorkers.tooltip  "Activer cette option permettra aux outils de développement de déboguer les workers">
-
 <!-- LOCALIZATION NOTE (options.disableJavaScript.label,
   -  options.disableJavaScript.tooltip): This is the options panel label and
   -  tooltip for the checkbox that toggles JavaScript on or off. -->
@@ -151,19 +145,14 @@
 <!ENTITY options.debugger.label            "Débogueur">
 
 <!-- LOCALIZATION NOTE (options.sourceMap.label): This is the
-   - label for the checkbox that toggles source maps in the Debugger -->
+   - label for the checkbox that toggles source maps in all tools -->
 <!ENTITY options.sourceMaps.label      "Activer les liens vers les sources">
-<!ENTITY options.sourceMaps.tooltip    "Si vous activez cette option, les sources seront accessibles depuis le débogueur et la console">
+<!ENTITY options.sourceMaps.tooltip1   "En activant cette option, les sources seront liées dans les outils.">
 
 <!-- LOCALIZATION NOTE (options.styleeditor.label): This is the label for the
   -  heading of the group of Style Editor preferences in the options
   -  panel. -->
 <!ENTITY options.styleeditor.label            "Éditeur de style">
-
-<!-- LOCALIZATION NOTE (options.stylesheetSourceMaps.label): This is the
-   - label for the checkbox that toggles showing original sources in the Style Editor -->
-<!ENTITY options.stylesheetSourceMaps.label      "Afficher les sources originales">
-<!ENTITY options.stylesheetSourceMaps.tooltip    "Afficher les sources originales (les fichiers Sass, par exemple) dans l’éditeur de style et l’inspecteur">
 
 <!-- LOCALIZATION NOTE (options.stylesheetAutocompletion.label): This is the
    - label for the checkbox that toggles autocompletion of css in the Style Editor -->
@@ -184,18 +173,6 @@
    - label for the checkbox that toggles the camera shutter audio for screenshot tool -->
 <!ENTITY options.screenshot.audio.label      "Jouer un son d’obturateur d’appareil photo">
 <!ENTITY options.screenshot.audio.tooltip    "Activer le son d’un obturateur d’appareil photo lors de la capture d’écran">
-
-<!-- LOCALIZATION NOTE (options.commonprefs): This is the label for the heading
-      of all preferences that affect both the Web Console and the Network
-      Monitor -->
-<!ENTITY options.commonPrefs.label           "Préférences générales">
-
-<!-- LOCALIZATION NOTE (options.enablePersistentLogs.label): This is the
-  -  label for the checkbox that toggles persistent logs in the Web Console and
-  -  network monitor,  i.e. devtools.webconsole.persistlog a boolean preference in
-  -  about:config, in the options panel. -->
-<!ENTITY options.enablePersistentLogs.label    "Activer les journaux persistants">
-<!ENTITY options.enablePersistentLogs.tooltip  "Si vous activez cette option, la console web et le moniteur réseau ne videront pas les sorties à chaque fois que vous changerez de page">
 
 <!-- LOCALIZATION NOTE (options.showPlatformData.label): This is the
   -  label for the checkbox that toggles the display of the platform data in the,

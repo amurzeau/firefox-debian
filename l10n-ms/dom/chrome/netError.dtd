@@ -2,7 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY loadError.label "Ralat Memuat Halaman">
+<!ENTITY loadError.label "Ralat Memuatkan Halaman">
 <!ENTITY retry.label "Cuba Lagi">
 
 <!-- Specific error messages -->
@@ -16,7 +16,7 @@
 <!ENTITY dnsNotFound.title "Alamat Tidak Ditemui">
 <!ENTITY dnsNotFound.longDesc "<p>Pelayar tidak menemui hos pelayan  alamat yang diberi.</p><ul><li>Adakah anda telah melakukan kesilapan menaip domain? (e.g. <q><strong>ww</strong>.mozilla.org</q> Sepatutnya  <q><strong>www</strong>.mozilla.org</q>)</li><li>Adakah anda pasti alamat ini wujud?  Pendaftarannya mungkin telah luput.</li><li>Adakah anda tidak dapat melayari laman lain?  Semak sambungan rangkaian dan tetapan pelayan DNS.</li><li>Adakah komputer atau rangkaian anda dilindungi oleh firewall atau proksi?  Tetapan yang tidak betul boleh mengganggu pelayaran Web.</li></ul>">
 
-<!ENTITY fileNotFound.title "Fail tidak ditemui">
+<!ENTITY fileNotFound.title "Fail Tidak Ditemui">
 <!ENTITY fileNotFound.longDesc "<ul><li>Adakah item boleh dinamakan, dialih keluar, atau dipindahkan?</li><li>Adakah terdapat kesilapan ejaan, penggunaan huruf besar, atau kesilapan menaip alamat?</li><li>Adakah anda memiliki keizinan yang mencukupi untuk memohon item?</li></ul>">
 
 <!ENTITY fileAccessDenied.title "Akses kepada fail ditolak">
@@ -37,13 +37,13 @@
 <!ENTITY netOffline.title "Mod Luar Talian">
 <!ENTITY netOffline.longDesc2 "<p>Pelayar ini beroperasi dalam mod offline dan tidak boleh disambungkan ke item yang diminta.</p><ul><li>Komputer ini bersambung dengan jaringan aktif?</li><li>Tekan &quot;Cuba Lagi&quot; untuk tukar ke mod di talian dan memuatkan laman kembali.</li></ul>">
 
-<!ENTITY contentEncodingError.title "Mengandungi Ralat Pengekodan">
+<!ENTITY contentEncodingError.title "Ralat Pengekodan Kandungan">
 <!ENTITY contentEncodingError.longDesc "<p>Halaman yang anda cuba lihat tidak dapat dipaparkan kerana menggunakan bentuk pemampatan yang tidak sah atau tidak disokong.</p><ul><li>Sila hubungi pemilik laman web untuk memaklumkan masalah ini.</li></ul>">
 
-<!ENTITY unsafeContentType.title "Jenis Fail yang Tidak Selamat">
+<!ENTITY unsafeContentType.title "Jenis Fail Tidak Selamat">
 <!ENTITY unsafeContentType.longDesc "
 <ul>
-  <li>Sila hubungi pemilik laman web untuk menyelesaikan masalah ini.</li>
+  <li>Sila hubungi pemilik laman web untuk memaklumkan masalah ini.</li>
 </ul>
 ">
 
@@ -68,10 +68,10 @@
 <!ENTITY unknownSocketType.title "Tindak Balas Salah">
 <!ENTITY unknownSocketType.longDesc "<p>Laman memberi respons kepada rangkaian yang meminta dengan cara yang tidak dijangka dan pelayar  tidak dapat diteruskan.</p>">
 
-<!ENTITY nssFailure2.title "Sambungan yang selamat gagal">
+<!ENTITY nssFailure2.title "Gagal Disambung Dengan Selamat">
 <!ENTITY nssFailure2.longDesc2 "<p>Halaman yang anda sedang lihat tidak dapat ditunjuk kerana data penerima tidak boleh disahkan</p><ul><li>Sila hubungi pemilik laman web tentang masalah ini.</li></ul>">
 
-<!ENTITY nssBadCert.title "Sambungan yang selamat gagal">
+<!ENTITY nssBadCert.title "Gagal Disambung Dengan Selamat">
 <!ENTITY nssBadCert.longDesc2 "<ul> <li>Ini kemungkinan masalah pada konfigurasi server, atau mungkin seseorang cuba menyamar server tersebut</li> <li>Jikalau anda berjaya bersambung dengan server dahulu, kesalahan ini mungkin berlaku seketika, anda boleh cuba semula nanti.</li> </ul>">
 
 <!ENTITY securityOverride.linkText "Atau anda boleh tambah pengecualian…">
@@ -84,12 +84,12 @@
 <!ENTITY cspBlocked.longDesc "<p>Pelayar menghalang laman ini daripada dipaparkan kerana ia mempunyai kandungan yang tidak dibenarkan oleh polisi keselamatan.</p>">
 
 <!ENTITY corruptedContentErrorv2.title "Ralat Kandungan Rosak">
-<!ENTITY corruptedContentErrorv2.longDesc "<p>Halaman yang anda cuba lihat tidak dapat dipapar kerana disyaki ada ralat dalam transmisi data.</p><ul><li>Sila hubungi pemilik laman web ini untuk memaklumkan  masalah ini.</li></ul>">
+<!ENTITY corruptedContentErrorv2.longDesc "<p>Halaman yang anda cuba lihat tidak dapat dipaparkan kerana ada ralat dalam transmisi data.</p><ul><li>Sila hubungi pemilik laman web untuk memaklumkan masalah ini.</li></ul>">
 
 <!ENTITY remoteXUL.title "Capaian jauh XUL">
-<!ENTITY remoteXUL.longDesc "<p><ul><li>Sila hubungi pemilik laman web dan memaklumkan masalah ini.</li></ul></p>">
+<!ENTITY remoteXUL.longDesc "<p><ul><li>Sila hubungi pemilik laman web untuk memaklumkan masalah ini.</li></ul></p>">
 
 <!ENTITY inadequateSecurityError.title "Sambungan internet anda tidak selamat">
 <!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
      "NS_ERROR_NET_INADEQUATE_SECURITY". -->
-<!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> menggunakan teknologi keselamatan yang sudah usang dan terdedah kepada serangan. Penyerang boleh mendedahkan maklumat yang anda fikir selamat. Pentadbir laman web perlu membaik pulih pelayan terlebih dulu sebelum anda boleh melawat laman ini. </p><p> Kod ralat: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
+<!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> menggunakan teknologi keselamatan yang usang dan terdedah kepada serangan. Penyerang dengan mudah boleh mendedahkan maklumat yang anda fikir selamat. Pentadbir laman web perlu membaiki pelayan terlebih dahulu sebelum anda boleh melawat laman ini.</p><p>Kod ralat: NS_ERROR_NET_INADEQUATE_SECURITY</p>">

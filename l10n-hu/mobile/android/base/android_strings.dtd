@@ -3,9 +3,14 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY firstrun_panel_title_welcome "Üdvözöljük">
-
-<!ENTITY firstrun_urlbar_message "Üdvözli a &brandShortName;!">
-<!ENTITY firstrun_urlbar_subtext "Keressen gyorsabban a praktikus keresési javaslatokkal.">
+<!ENTITY firstrun_urlbar_message2 "Köszönjük hogy a &brandShortName;ot választotta">
+<!ENTITY firstrun_urlbar_subtext2 "Egy modern mobil böngésző a Mozillától, a nonprofit szervezettől, amely elkötelezett a szabad és nyílt web mellett.">
+<!ENTITY firstrun_panel_title_privacy "Adatvédelem">
+<!ENTITY firstrun_privacy_message "Böngésszen úgy, mintha senki sem figyelné">
+<!ENTITY firstrun_privacy_subtext "A követésvédelemmel ellátott privát böngészés blokkolja a követőket miközben böngészik, és azután sem jegyzi meg az előzményeket, ha befejezi a böngészést.">
+<!ENTITY firstrun_panel_title_customize "Testreszabás">
+<!ENTITY firstrun_customize_message "Tegye a sajátjává a &brandShortName;ot.">
+<!ENTITY firstrun_customize_subtext "Szabja testre a &brandShortName;ot kiegészítőkkel. Blokkolja a hirdetéseket, adjon hozzá funkciókat, vagy válasszon egy témát, amely tükrözi a személyiségét.">
 <!ENTITY firstrun_bookmarks_title "Előzmény">
 <!ENTITY firstrun_bookmarks_message "Kedvencei a középpontban">
 <!ENTITY firstrun_bookmarks_subtext "A keresés könyvjelzői és előzményei közt is szétnéz.">
@@ -13,8 +18,8 @@
 <!ENTITY firstrun_data_message "Kevesebb adat, több spórolás">
 <!ENTITY firstrun_data_subtext2 "Kapcsolja ki a képeket az adatforgalommal való spóroláshoz.">
 <!ENTITY firstrun_sync_title "Sync">
-<!ENTITY firstrun_sync_message "A &brandShortName;, mindig Ön mellett">
-<!ENTITY firstrun_sync_subtext "Szinkronizálja lapjait, jelszavait és egyebeket mindenütt, ahol csak használja.">
+<!ENTITY firstrun_sync_message2 "Folytassa ott, ahol abbahagyta.">
+<!ENTITY firstrun_sync_subtext2 "Használja a Syncet a könyjzők, jelszavak, és más dolgok megtalálására, amelyeket a &brandShortName;ba ment az összes eszközén.">
 <!ENTITY firstrun_signin_message "Kapcsolódjon, vágjon bele">
 <!ENTITY firstrun_signin_button "Jelentkezzen be a Syncbe">
 <!ENTITY  onboard_start_button_browser "Böngészés megkezdése">
@@ -87,6 +92,7 @@
      in the folder. -->
 <!ENTITY bookmark_folder_items "&formatD; elem">
 <!ENTITY bookmark_folder_one_item "1 elem">
+<!ENTITY bookmark_folder_updated "Mappa frissítve">
 <!ENTITY bookmark_parent_folder "Szülőmappa">
 <!ENTITY bookmark_add_folder "Új mappa hozzáadása">
 
@@ -201,8 +207,6 @@
 <!ENTITY pref_category_advanced_summary3 "Lapok helyreállítása, adatspórolás, fejlesztői eszközök">
 <!ENTITY pref_category_notifications "Értesítések">
 <!ENTITY pref_category_notifications_summary "Új funkciók, weboldal frissítések">
-<!ENTITY pref_content_notifications "Weboldal frissítések">
-<!ENTITY pref_content_notifications_summary2 "Új tartalom felfedezése támogatói oldalakról">
 <!ENTITY pref_developer_remotedebugging_usb "Távoli hibakeresés USB-n">
 <!ENTITY pref_developer_remotedebugging_wifi "Távoli hibakeresés Wi-Fi-n">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "A Wi-Fi hibakereséshez egy, a készülékére telepített QR kódolvasó app szükséges.">
@@ -267,8 +271,7 @@
 <!ENTITY pref_show_web_fonts "Webes betűk megjelenítése">
 <!ENTITY pref_show_web_fonts_summary2 "Távoli betűkészletek letöltése az oldal betöltésekor">
 
-<!ENTITY pref_tracking_protection_title2 "Védelem követés ellen">
-<!ENTITY pref_tracking_protection_summary3 "Engedélyezve privát böngészésben">
+<!ENTITY pref_tracking_protection_title2 "Követés elleni védelem">
 <!ENTITY pref_donottrack_title "Ne kövessenek">
 <!ENTITY pref_donottrack_summary "A &brandShortName; közli a webhelyekkel, hogy Ön nem szeretné, ha követnék">
 
@@ -286,8 +289,9 @@
 <!-- Custom Tabs is an Android API for allowing third-party apps to open URLs in a customized UI.
      Instead of switching to the browser it appears as if the user stays in the third-party app.
      For more see: https://developer.chrome.com/multidevice/android/customtabs -->
-<!ENTITY pref_custom_tabs "Egyéni lapok">
-<!ENTITY pref_custom_tabs_summary3 "Az appok megnyithatnak weboldalakat a &brandShortName; személyre szabott verziójával">
+<!ENTITY pref_custom_tabs2 "Egyéni lapok">
+<!ENTITY pref_custom_tabs_summary4 "Appok is megnyithatják a webes tartalmat, egy gyorsan betöltődő egyéni lapon.">
+
 <!-- Localization note (custom_tabs_menu_item_open_in): The variable is replaced by the name of
      default browser from user's preference, such as "Open in Firefox" -->
 <!ENTITY custom_tabs_menu_item_open_in "Megnyitás ebben: &formatS;">
@@ -297,10 +301,6 @@
 
 <!ENTITY pref_pwa "Progresszív webappok">
 <!ENTITY pref_pwa_summary "Webappok kezdőképernyőhöz adásának engedélyezése">
-
-<!-- Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream  -->
-<!ENTITY pref_activity_stream "Tevékenységfolyam">
-<!ENTITY pref_activity_stream_summary "A részletes előzményfolyam és az újratervezett kezdőlap mindennél egyszerűbbé teszik mindannak megtalálását, amit a &brandShortName;ban keres.">
 
 <!ENTITY tracking_protection_prompt_title "Most követés elleni védelemmel">
 <!ENTITY tracking_protection_prompt_text "Aktívan blokkolja a követő elemeket, hogy ne kelljen aggódnia.">
@@ -334,23 +334,6 @@
      has been queued but we are missing the system permission to show an overlay. -->
 <!ENTITY tab_queue_notification_settings "Több hivatkozás megnyitásához engedélyezze a „Rajzolás más appok fölött” jogosultságot a &brandShortName;hoz">
 
-<!ENTITY content_notification_summary "&brandShortName;">
-<!-- Localization note (content_notification_title_plural): &formatD; will be replaced with the number of websites that
-     have been updated (new content is available). The number of websites is always more than one (>= 2). For a single
-     update the website title is used instead of this string.
-     We can't use Android plural forms, sadly. See Bug #753859. -->
-<!ENTITY content_notification_title_plural "&formatD; weboldal frissítve">
-<!-- Localization note (content_notification_action_settings2): This label will be shown as an action in a content notification.
-     Clicking the action will jump to the notification settings of the app. -->
-<!ENTITY content_notification_action_settings2 "Beállítások">
-<!-- Localization note(content_notification_action_read_now): This label will be shown as an action in a content notification.
-     Clicking the action will open all new content in the browser. -->
-<!ENTITY content_notification_action_read_now "Olvasás most">
-<!-- Localization note (content_notification_updated_on): &formatS; will be replaced with a medium sized version of the
-     date, depending on locale. For en_US this is for example: Feb 24, 2016. For more details see the Android developer
-     documentation for DateFormat.getMediumDateFormat(). -->
-<!ENTITY content_notification_updated_on "Frissítve ekkor: &formatS;">
-
 <!ENTITY pref_char_encoding "Karakterkódolás">
 <!ENTITY pref_char_encoding_on "Menü megjelenítése">
 <!ENTITY pref_char_encoding_off "Menü elrejtése">
@@ -380,6 +363,7 @@
 <!ENTITY pref_qrcode_enabled_summary2 "QR olvasó bekapcsolása a címsávban">
 
 <!ENTITY pref_use_master_password "Mesterjelszó használata">
+<!ENTITY pref_sync_default_title "Firefox fiók">
 <!ENTITY pref_sync2 "Bejelentkezés">
 <!ENTITY pref_sync_summary2 "Lapok, könyvjelzők, bejelentkezések, előzmények szinkronizálása">
 <!ENTITY pref_search_suggestions "Keresési javaslatok">
@@ -409,6 +393,9 @@
 <!ENTITY pref_dialog_set_default "Legyen ez az alapértelmezett">
 <!ENTITY pref_dialog_default "Alapértelmezett">
 <!ENTITY pref_dialog_remove "Eltávolítás">
+<!ENTITY pref_dialog_activitystream_header_content "További tartalom">
+<!ENTITY pref_dialog_activitystream_recentBookmarks "Friss könyvjelzők">
+<!ENTITY pref_dialog_activitystream_visited "Meglátogatva">
 
 <!ENTITY pref_search_last_toast "Nem távolíthatja el vagy tilthatja le az utolsó keresőt.">
 
@@ -499,6 +486,7 @@
 <!ENTITY contextmenu_open_private_tab "Megnyitás privát lapon">
 <!ENTITY contextmenu_remove "Eltávolítás">
 <!ENTITY contextmenu_add_to_launcher "Kezdőképernyőhöz adás">
+<!ENTITY contextmenu_add_page_shortcut "Lap ikon hozzáadása">
 <!ENTITY contextmenu_set_as_homepage "Beállítás kezdőlapként">
 <!ENTITY contextmenu_share "Megosztás">
 <!ENTITY contextmenu_pasteandgo "Beillesztés és ugrás">
@@ -510,7 +498,17 @@
 <!ENTITY contextmenu_top_sites_edit "Szerkesztés">
 <!ENTITY contextmenu_top_sites_pin "Oldal rögzítése">
 <!ENTITY contextmenu_top_sites_unpin "Rögzítés feloldása">
+<!-- Localization note (contextmenu_pin_to_top_sites, contextmenu_unpin_from_top_sites): These strings are used to
+     pin/unpin items from top sites when the user is not on the top sites screen so they'd be missing context on what
+     just "Pin Site" or "Unpin Site" would mean. -->
+<!ENTITY contextmenu_pin_to_top_sites "Rögzítés a Népszerű oldalakhoz">
+<!ENTITY contextmenu_unpin_from_top_sites "Eltávolítás a Népszerű oldalak közül">
 <!ENTITY contextmenu_add_search_engine "Keresőszolgáltatás hozzáadása">
+
+<!-- Localization note (pinned_page_to_top_sites, unpinned_page_from_top_sites): These strings are shown in a snackbar
+     after the user pins/unpins the currently displayed page from top sites. -->
+<!ENTITY pinned_page_to_top_sites "Rögzítve a Népszerű oldalakhoz">
+<!ENTITY unpinned_page_from_top_sites "Eltávolítva a Népszerű oldalak közül">
 
 <!-- Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
      where normally a username would be displayed. In this case, no username was found, and this placeholder
@@ -662,7 +660,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY mixed_content_protection_disabled1 "Kikapcsolta a nem biztonságos tartalmak elleni védelmet.">
 
 <!-- Tracking content notifications in site identity popup -->
-<!ENTITY doorhanger_tracking_title2 "Védelem követés ellen">
+<!ENTITY doorhanger_tracking_title2 "Követés elleni védelem">
 <!ENTITY doorhanger_tracking_state_enabled "Engedélyezve">
 <!ENTITY doorhanger_tracking_state_disabled "Tiltva">
 <!ENTITY doorhanger_tracking_message_enabled1 "Az online viselkedésének követésére irányuló kísérletek blokkolva lettek.">
@@ -821,6 +819,8 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 
 <!ENTITY promotion_add_to_homescreen "Kezdőképernyőhöz adás">
 
+<!ENTITY promotion_add_page_shortcut "Lap ikon hozzáadása">
+
 <!ENTITY helper_first_offline_bookmark_title "Olvasás kapcsolat nélkül">
 <!ENTITY helper_first_offline_bookmark_message "Találja meg az olvasónézet elemeit a könyvjelzőknél, kapcsolat nélkül is.">
 <!ENTITY helper_first_offline_bookmark_button "Ugrás a könyvjelzőkhöz.">
@@ -830,7 +830,12 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_button "Hozzáadás a könyvjelzőkhöz">
 
 <!ENTITY activity_stream_topsites "Népszerű oldalak">
+<!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->
+<!ENTITY activity_stream_topstories "A &brandPocket; ajánlásával">
 <!ENTITY activity_stream_highlights "Kiemelések">
+
+<!-- LOCALIZATION NOTE (activity_stream_link_more1): Link-like text displayed to take user to a website with more content from Pocket. -->
+<!ENTITY activity_stream_link_more1 "TOVÁBBIAK">
 
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_bookmarked): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
@@ -838,13 +843,30 @@ Stream list for highlights sourced from th user's bookmarks. -->
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_visited): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
 <!ENTITY activity_stream_highlight_label_visited "Meglátogatva">
+<!-- LOCALIZATION NOTE (activity_stream_highlight_label_trending): This label is shown in the Activity Stream list for highlights sourced from a recommendations engine. -->
+<!ENTITY activity_stream_highlight_label_trending "Népszerű">
+<!-- LOCALIZATION NOTE (activity_stream_highlights_empty): This text is shown when we could not find highlights for this user. This is also shown on first run. -->
+<!ENTITY activity_stream_highlights_empty "Kezdjen el böngészni, és itt fognak megjelenni azok a nagyszerű cikkek, videók és más lapok, amelyeket nemrég meglátogatott vagy könyvjelzőzött.">
 
-<!-- LOCALIZATION NOTE (activity_stream_dismiss): This label is shown in the Activity Stream context menu,
+<!-- LOCALIZATION NOTE (activity_stream_remove): This label is shown in the Activity Stream context menu,
 and allows hiding a URL/page from highlights or topsites. The page remains in history/bookmarks, but
 is simply hidden from the Activity Stream panel. -->
-<!ENTITY activity_stream_dismiss "Bezárás">
+<!ENTITY activity_stream_remove "Eltávolítás">
 <!ENTITY activity_stream_delete_history "Előzményekből törlés">
 
-<!ENTITY activity_stream_welcome_title "Üdvözöljük a Kiemeléseknél">
-<!ENTITY activity_stream_welcome_content1 "A &brandShortName; kiemeléseket készít a weben felfedezett tartalmakról, így könnyedén visszatalálhat a remek cikkekhez, videókhoz, könyvjelzőkhöz és más oldalakhoz.">
+<!ENTITY private_tab_panel_title "Privát böngészés + követés elleni védelem">
+<!ENTITY private_tab_panel_description "A &brandShortName; blokkolja az oldalak olyan részeit, amelyek követhetik az Ön böngészési tevékenységét.">
+<!ENTITY private_tab_panel_description2 "Nem jegyzünk meg előzményeket, de a letöltött fájlok és az új könyvjelzők továbbra is a készülékére lesznek mentve.">
+<!ENTITY private_tab_learn_more "Szeretne többet tudni?">
+
 <!ENTITY fullscreen_warning "Teljes képernyős módba lépve">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_confirm): The plus sign here is part of UI design -->
+<!ENTITY pwa_add_to_launcher_confirm "+ Kezdőképernyőhöz adás">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_badge2): Used as label in the page actions dropdown list,
+displayed when there are more than 3 actions available for a page.
+See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
+<!ENTITY pwa_add_to_launcher_badge2 "Kezdőképernyőhöz adás">
+<!ENTITY pwa_continue_to_website "Tovább a weblapra">
+<!ENTITY pwa_onboarding_sumo "Könnyedén hozzáadhatja ezt a weboldalt a Kezdőképernyőhöz, és azonnal elérheti azt, így gyorsabban böngészve, miközben app-szerű élményt kap.">

@@ -6,25 +6,25 @@
 <!ENTITY  window.width                    "38em">
 <!ENTITY  window.macWidth                 "41em">
 
-<!ENTITY  overrideDefaultPageColors.label        "Överskrid färgerna som specificerats på sidan med dina val ovan:">
-<!ENTITY  overrideDefaultPageColors.accesskey    "v">
+<!ENTITY  overrideDefaultPageColors2.label       "Överskrid färgerna som specificerats på sidan med dina val ovan">
+<!ENTITY  overrideDefaultPageColors2.accesskey   "v">
 
 <!ENTITY  overrideDefaultPageColors.always.label "Alltid">
 <!ENTITY  overrideDefaultPageColors.auto.label   "Endast med teman med hög kontrast">
 <!ENTITY  overrideDefaultPageColors.never.label  "Aldrig">
 
 <!ENTITY  color                           "Text och bakgrund">
-<!ENTITY  textColor.label                 "Text:">
-<!ENTITY  textColor.accesskey             "T">
-<!ENTITY  backgroundColor.label           "Bakgrund:">
-<!ENTITY  backgroundColor.accesskey       "d">
+<!ENTITY  textColor2.label                "Text">
+<!ENTITY  textColor2.accesskey            "T">
+<!ENTITY  backgroundColor2.label          "Bakgrund">
+<!ENTITY  backgroundColor2.accesskey      "B">
 <!ENTITY  useSystemColors.label           "Använd systemfärgerna">
 <!ENTITY  useSystemColors.accesskey       "s">
 
 <!ENTITY  underlineLinks.label            "Stryk under länkar">
 <!ENTITY  underlineLinks.accesskey        "u">
 <!ENTITY  links                           "Länkfärger">
-<!ENTITY  linkColor.label                 "Obesökta länkar:">
-<!ENTITY  linkColor.accesskey             "O">
-<!ENTITY  visitedLinkColor.label          "Besökta länkar:">
-<!ENTITY  visitedLinkColor.accesskey      "B">
+<!ENTITY  linkColor2.label                "Obesökta länkar">
+<!ENTITY  linkColor2.accesskey            "O">
+<!ENTITY  visitedLinkColor2.label         "Besökta länkar">
+<!ENTITY  visitedLinkColor2.accesskey     "e">

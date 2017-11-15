@@ -29,8 +29,8 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "Selle kompileerimise konfiguratsiooniga on andmete raporteerimine keelatud">
 
-<!ENTITY enableHealthReport1.label       "&brandShortName;il lubatakse automaatselt saata tehnilisi andmeid Mozillale">
-<!ENTITY enableHealthReport1.accesskey   "t">
+<!ENTITY enableHealthReport2.label       "&brandShortName;il lubatakse automaatselt saata tehnilisi andmeid Mozillale">
+<!ENTITY enableHealthReport2.accesskey   "u">
 <!ENTITY healthReportLearnMore.label     "Rohkem teavet">
 
 <!ENTITY dataCollection.label            "&brandShortName;i andmete kogumine ja kasutamine">
@@ -96,11 +96,11 @@ available. -->
 <!ENTITY updateApplication.version.post  "">
 <!ENTITY updateApplication.description   "&brandShortName;i uuendused">
 <!ENTITY updateAuto3.label               "Uuendused paigaldatakse automaatselt (soovitatav)">
-<!ENTITY updateAuto3.accesskey           "A">
+<!ENTITY updateAuto3.accesskey           "U">
 <!ENTITY updateCheckChoose2.label        "Kontrollitakse uuenduste olemasolu, paigaldamise kohta küsitakse kinnitust">
 <!ENTITY updateCheckChoose2.accesskey    "K">
-<!ENTITY updateManual2.label             "Ära otsi värskendusi (mittesoovitatav)">
-<!ENTITY updateManual2.accesskey         "r">
+<!ENTITY updateManual2.label             "Uuendusi ei otsita (mittesoovitatav)">
+<!ENTITY updateManual2.accesskey         "e">
 
 <!ENTITY updateHistory2.label            "Näita uuenduste ajalugu…">
 <!ENTITY updateHistory2.accesskey        "N">
@@ -116,7 +116,7 @@ available. -->
 <!ENTITY offlineStorageNotifyExceptions.label     "Erandid…">
 <!ENTITY offlineStorageNotifyExceptions.accesskey "r">
 
-<!ENTITY offlineAppsList2.label          "Järgmistel veebilehtedel on lubatud salvestada andmeid võrguta režiimis kasutamiseks:">
+<!ENTITY offlineAppsList3.label          "Järgmistel veebilehtedel on lubatud salvestada andmeid võrguta režiimis kasutamiseks">
 <!ENTITY offlineAppsList.height          "7em">
 <!ENTITY offlineAppsListRemove.label     "Eemalda">
 <!ENTITY offlineAppsListRemove.accesskey "E">
@@ -131,7 +131,7 @@ available. -->
 <!ENTITY enableOCSP.label                "Sertifikaatide valideeruvust kontrollitakse OCSP abil">
 <!ENTITY enableOCSP.accesskey            "e">
 <!ENTITY viewCerts2.label                "Kuva sertifikaate…">
-<!ENTITY viewCerts2.accesskey            "s">
+<!ENTITY viewCerts2.accesskey            "K">
 <!ENTITY viewSecurityDevices2.label      "Turvaseadmed…">
 <!ENTITY viewSecurityDevices2.accesskey  "T">
 
@@ -141,13 +141,13 @@ available. -->
 <!ENTITY useRecommendedPerformanceSettings2.description
                                          "Need sätted on kohandatud sinu arvuti riistvarale ja operatsioonisüsteemile.">
 <!ENTITY useRecommendedPerformanceSettings2.accesskey
-                                         "j">
+                                         "u">
 <!ENTITY performanceSettingsLearnMore.label
                                          "Rohkem teavet">
 <!ENTITY limitContentProcessOption.label "Sisu protsesside limiit">
 <!ENTITY limitContentProcessOption.description
                                          "Täiendavad sisu protsessid võivad parandada võimekust mitme kaardi kasutamisel, aga kasutavad ka rohkem mälu.">
-<!ENTITY limitContentProcessOption.accesskey   "s">
+<!ENTITY limitContentProcessOption.accesskey   "l">
 <!ENTITY limitContentProcessOption.disabledDescription
                                          "Sisu protsesside arvu muutmine on võimalik ainult mitme protsessi toega &brandShortName;is.">
 <!ENTITY limitContentProcessOption.disabledDescriptionLink

@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!-- LOCALIZATION NOTE : FILE This file contains the browser main menu items -->
-<!-- LOCALIZATION NOTE : FILE Do not translate commandkeys --> 
+<!-- LOCALIZATION NOTE : FILE Do not translate commandkeys -->
 
 <!-- LOCALIZATION NOTE (mainWindow.title): DONT_TRANSLATE -->
 <!ENTITY mainWindow.title "&brandFullName;">
@@ -22,13 +22,17 @@
 <!ENTITY  reloadTab.label                    "Oppdater fane">
 <!ENTITY  reloadTab.accesskey                "O">
 <!ENTITY  reloadAllTabs.label                "Oppdater alle faner">
-<!ENTITY  reloadAllTabs.accesskey            "a">
+<!ENTITY  reloadAllTabs.accesskey            "d">
+<!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
+a tab (i.e. it is a verb, not adjective). -->
+<!ENTITY  duplicateTab.label                 "Dupliser fane">
+<!ENTITY  duplicateTab.accesskey             "D">
 <!-- LOCALIZATION NOTE (closeTabsToTheEnd.label): This should indicate the
 direction in which tabs are closed, i.e. locales that use RTL mode should say
 left instead of right. -->
-<!ENTITY  closeTabsToTheEnd.label            "Lukk faner til høgre">
-<!ENTITY  closeTabsToTheEnd.accesskey        "u">
-<!ENTITY  closeOtherTabs.label               "Lukk andre faner">
+<!ENTITY  closeTabsToTheEnd.label            "Lat att faner til høgre">
+<!ENTITY  closeTabsToTheEnd.accesskey        "h">
+<!ENTITY  closeOtherTabs.label               "Lat att andre faner">
 <!ENTITY  closeOtherTabs.accesskey           "a">
 
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
@@ -46,14 +50,15 @@ can reach it easily. -->
 <!ENTITY  sendPageToDevice.accesskey         "e">
 <!ENTITY  sendLinkToDevice.label             "Send lenke til eining">
 <!ENTITY  sendLinkToDevice.accesskey         "e">
+<!ENTITY  sendToDeviceFeedback.label         "Sendt!">
 <!ENTITY  moveToNewWindow.label              "Flytt til eit nytt vindauge">
-<!ENTITY  moveToNewWindow.accesskey          "t">
+<!ENTITY  moveToNewWindow.accesskey          "F">
 <!ENTITY  bookmarkAllTabs.label              "Bokmerk alle faner…">
 <!ENTITY  bookmarkAllTabs.accesskey          "o">
-<!ENTITY  undoCloseTab.label                 "Angre lukking av fane">
-<!ENTITY  undoCloseTab.accesskey             "A">
-<!ENTITY  closeTab.label                     "Lukk fana">
-<!ENTITY  closeTab.accesskey                 "L">
+<!ENTITY  undoCloseTab.label                 "Angre attlating av fane">
+<!ENTITY  undoCloseTab.accesskey             "r">
+<!ENTITY  closeTab.label                     "Lat att fana">
+<!ENTITY  closeTab.accesskey                 "n">
 
 <!ENTITY  listAllTabs.label      "Vis liste over alle faner">
 
@@ -89,12 +94,19 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "L">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.label "Bokmerk alle faner…">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "B">
-<!ENTITY toolbarContextMenu.undoCloseTab.label "Angre lukking av fane">
+<!ENTITY toolbarContextMenu.undoCloseTab.label "Angre attlating av fane">
 <!ENTITY toolbarContextMenu.undoCloseTab.accesskey "n">
 
 <!ENTITY pageSourceCmd.label "Kjeldekode">
 <!ENTITY pageSourceCmd.accesskey "d">
 <!ENTITY pageSourceCmd.commandkey "u">
+<!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
+Option+Command keyboard shortcut letter that Safari and Chrome use for "View
+Source" on macOS. pageSourceCmd.commandkey above is Firefox's official keyboard
+shortcut shown in the GUI. SafariCommandKey is an alias provided for the
+convenience of Safari and Chrome users on macOS. See bug 1398988. -->
+<!ENTITY pageSourceCmd.SafariCommandKey "u">
+
 <!ENTITY pageInfoCmd.label "Sideinformasjon">
 <!ENTITY pageInfoCmd.accesskey "d">
 <!ENTITY pageInfoCmd.commandkey "i">
@@ -111,7 +123,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenCmd.macCommandKey "f">
 <!ENTITY showAllTabsCmd.label "Vis alle faner">
 <!ENTITY showAllTabsCmd.accesskey "V">
-<!ENTITY toggleReaderMode.key "L">
+<!ENTITY toggleReaderMode.key "R">
 
 <!ENTITY fxaSignIn.label "Logg inn på &syncBrand.shortName.label;">
 <!ENTITY fxaSignedIn.tooltip "Opne &syncBrand.shortName.label;-innstillingar">
@@ -121,7 +133,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY fullScreenMinimize.tooltip "Minimer">
 <!ENTITY fullScreenRestore.tooltip "Bygg oppatt">
-<!ENTITY fullScreenClose.tooltip "Lukk">
+<!ENTITY fullScreenClose.tooltip "Lat att">
 <!ENTITY fullScreenAutohide.label "Gøym verktøylinjer">
 <!ENTITY fullScreenAutohide.accesskey "G">
 <!ENTITY fullScreenExit.label "Avslutt fullskjermmodus">
@@ -153,7 +165,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY pointerlockWarning.afterDomain.label "har kontroll over peikaren din. Trykk Esc for å ta tilbake kontrollen.">
 <!ENTITY pointerlockWarning.generic.label "Dette dokumentet har kontroll over musepeikaren. Trykk på Esc for å ta tilbake kontrollen.">
 
-<!ENTITY closeWindow.label "Lukk vindauge">
+<!ENTITY closeWindow.label "Lat att vindauge">
 <!ENTITY closeWindow.accesskey "L">
 
 <!ENTITY bookmarksMenu.label "Bokmerke">
@@ -161,27 +173,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisPageCmd.label "Bokmerk denne sida">
 <!ENTITY editThisBookmarkCmd.label "Rediger dette bokmerket">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
-<!-- LOCALIZATION NOTE (findShareServices.label):
-  -  Use the unicode ellipsis char, \u2026,
-  -  or use "..." if \u2026 doesn't suit traditions in your locale. -->
-<!ENTITY findShareServices.label "Finn fleire deletenester…">
-<!ENTITY sharePageCmd.label "Del denne sida">
-<!ENTITY sharePageCmd.commandkey "l">
-<!ENTITY sharePageCmd.accesskey "D">
-<!-- LOCALIZATION NOTE (shareLink.accesskey): must be different than the following share access keys -->
-<!ENTITY shareLink.label "Del denne lenka">
-<!ENTITY shareLink.accesskey "l">
-<!ENTITY shareImage.label "Del dette bildet">
-<!ENTITY shareImage.accesskey "b">
-<!ENTITY shareSelect.label "Del utval">
-<!ENTITY shareSelect.accesskey "u">
-<!ENTITY shareVideo.label "Del denne videoen">
-<!ENTITY shareVideo.accesskey "v">
-<!ENTITY feedsMenu2.label "Abonner denne sida">
+
 <!ENTITY subscribeToPageMenupopup.label "Abonner på denne sida">
 <!ENTITY subscribeToPageMenuitem.label "Abonner på denne sida…">
 <!ENTITY addCurPagesCmd.label "Bokmerk alle faner…">
-<!ENTITY showAllBookmarks2.label "Vis alle bokmerke">
+<!ENTITY showAllBookmarks2.label "Vis alle bokmerka">
 <!ENTITY recentBookmarks.label "Nyleg bokmerkt">
 <!ENTITY otherBookmarksCmd.label "Andre bokmerke">
 <!ENTITY mobileBookmarksCmd.label "Mobile bokmerke">
@@ -209,6 +205,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.defaultNotificationAnchor.tooltip         "Opne meldingspanel">
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "Opne panel for plasseringsførespurnad">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "Opne meldingspanel for utvidingsinstallasjon">
+<!ENTITY urlbar.canvasNotificationAnchor.tooltip          "Handter rettar for canvas-utdraging">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "Opne meldingspanel for fråkopla data">
 <!ENTITY urlbar.passwordNotificationAnchor.tooltip        "Opne meldingspanel for lagring av passord">
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Administrer bruk av programtillegg">
@@ -233,6 +230,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Du har blokkert meldingar for denne nettstaden.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Du har blokkert vedvarande lagring for denne nettsida.">
 
+<!ENTITY urlbar.popupBlocked.tooltip             "Du har blokkert sprettoppvindauge for denne nettstaden.">
+
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Vis historikk">
 
 <!ENTITY searchItem.title             "Søk">
@@ -243,14 +242,18 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarksButton.label          "Bokmerke">
 <!ENTITY bookmarksCmd.commandkey "b">
 
-<!ENTITY bookmarksMenuButton.label          "Bokmerke">
-<!ENTITY bookmarksMenuButton.other.label "Andre bokmerke">
-<!ENTITY bookmarksMenuButton.mobile.label "Mobile bokmerke">
+<!ENTITY bookmarksSubview.label             "Bokmerke">
+<!ENTITY bookmarksMenuButton2.label         "Bokmerkemeny">
+<!ENTITY bookmarksMenuButton.other.label    "Andre bokmerke">
+<!ENTITY bookmarksMenuButton.mobile.label   "Mobile bokmerke">
 <!ENTITY viewBookmarksSidebar2.label        "Vis sidestolpe for bokmerke">
+<!ENTITY hideBookmarksSidebar.label         "Gøym bokmerkesidestolpen">
 <!ENTITY viewBookmarksToolbar.label         "Vis verktøylinje for bokmerke">
+<!ENTITY hideBookmarksToolbar.label         "Gøym bokmerkeverktøylinja">
 <!ENTITY searchBookmarks.label              "Søk i bokmerke">
-
-<!ENTITY containersMenu.label "Konteinarar">
+<!ENTITY bookmarkingTools.label             "Verktøy for bokmerke">
+<!ENTITY addBookmarksMenu.label             "Legg til bokmerkemeny i verktøylinja">
+<!ENTITY removeBookmarksMenu.label          "Fjern bokmerkemeny frå verktøylinja">
 
 <!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
@@ -262,12 +265,15 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY historySidebarCmd.commandKey   "h">
 
 <!ENTITY toolsMenu.label              "Verktøy">
-<!ENTITY toolsMenu.accesskey          "e"> 
+<!ENTITY toolsMenu.accesskey          "e">
 
 <!ENTITY keywordfield.label           "Lag nykelord for dette søket…">
 <!ENTITY keywordfield.accesskey       "L">
 
 <!ENTITY downloads.label              "Nedlastingar">
+<!-- LOCALIZATION NOTE (libraryDownloads.label): This label is similar to
+  -  downloads.label, but used in the Library panel. -->
+<!ENTITY libraryDownloads.label       "Nedlastingar">
 <!ENTITY downloads.accesskey          "N">
 <!ENTITY downloads.commandkey         "j">
 <!ENTITY downloadsUnix.commandkey     "y">
@@ -281,7 +287,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY inspectContextMenu.label     "Inspiser element">
 <!ENTITY inspectContextMenu.accesskey "I">
 
-<!ENTITY fileMenu.label         "Fil"> 
+<!ENTITY fileMenu.label         "Fil">
 <!ENTITY fileMenu.accesskey       "F">
 <!ENTITY newUserContext.label             "Ny innhaldsfane">
 <!ENTITY newUserContext.accesskey         "i">
@@ -292,47 +298,47 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY newPrivateWindow.accesskey "v">
 <!ENTITY newNonRemoteWindow.label   "Nytt Ikkje-e10s vindauge">
 
-<!ENTITY editMenu.label         "Rediger"> 
-<!ENTITY editMenu.accesskey       "R"> 
-<!ENTITY undoCmd.label            "Angre">  
-<!ENTITY undoCmd.key            "Z">  
-<!ENTITY undoCmd.accesskey          "A"> 
-<!ENTITY redoCmd.label            "Gjenta">  
-<!ENTITY redoCmd.key            "Y">  
-<!ENTITY redoCmd.accesskey          "G"> 
-<!ENTITY cutCmd.label           "Klipp ut">  
-<!ENTITY cutCmd.key             "X">  
-<!ENTITY cutCmd.accesskey         "u"> 
-<!ENTITY copyCmd.label            "Kopier">  
-<!ENTITY copyCmd.key            "C">  
-<!ENTITY copyCmd.accesskey          "K"> 
-<!ENTITY pasteCmd.label           "Lim inn">  
-<!ENTITY pasteCmd.key           "V">  
-<!ENTITY pasteCmd.accesskey         "L"> 
-<!ENTITY deleteCmd.label          "Slett">  
-<!ENTITY deleteCmd.key            "D">  
-<!ENTITY deleteCmd.accesskey        "t"> 
-<!ENTITY selectAllCmd.label         "Merk alt">  
-<!ENTITY selectAllCmd.key         "A">  
-<!ENTITY selectAllCmd.accesskey       "M"> 
+<!ENTITY editMenu.label         "Rediger">
+<!ENTITY editMenu.accesskey       "R">
+<!ENTITY undoCmd.label            "Angre">
+<!ENTITY undoCmd.key            "Z">
+<!ENTITY undoCmd.accesskey          "A">
+<!ENTITY redoCmd.label            "Gjenta">
+<!ENTITY redoCmd.key            "Y">
+<!ENTITY redoCmd.accesskey          "G">
+<!ENTITY cutCmd.label           "Klipp ut">
+<!ENTITY cutCmd.key             "X">
+<!ENTITY cutCmd.accesskey         "u">
+<!ENTITY copyCmd.label            "Kopier">
+<!ENTITY copyCmd.key            "C">
+<!ENTITY copyCmd.accesskey          "K">
+<!ENTITY pasteCmd.label           "Lim inn">
+<!ENTITY pasteCmd.key           "V">
+<!ENTITY pasteCmd.accesskey         "L">
+<!ENTITY deleteCmd.label          "Slett">
+<!ENTITY deleteCmd.key            "D">
+<!ENTITY deleteCmd.accesskey        "t">
+<!ENTITY selectAllCmd.label         "Merk alt">
+<!ENTITY selectAllCmd.key         "A">
+<!ENTITY selectAllCmd.accesskey       "M">
 <!ENTITY preferencesCmd2.label       "Innstillingar">
 <!ENTITY preferencesCmd2.accesskey     "I">
 <!ENTITY preferencesCmdUnix.label       "Innstillingar">
-<!ENTITY preferencesCmdUnix.accesskey     "I"> 
+<!ENTITY preferencesCmdUnix.accesskey     "I">
 
 <!ENTITY clearRecentHistory.label               "Slett nyleg historikk…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
 
-<!ENTITY viewMenu.label         "Vis"> 
-<!ENTITY viewMenu.accesskey       "V"> 
-<!ENTITY viewToolbarsMenu.label       "Verktøylinjer"> 
-<!ENTITY viewToolbarsMenu.accesskey     "V"> 
+<!ENTITY viewMenu.label         "Vis">
+<!ENTITY viewMenu.accesskey       "V">
+<!ENTITY viewToolbarsMenu.label       "Verktøylinjer">
+<!ENTITY viewToolbarsMenu.accesskey     "V">
 <!ENTITY viewSidebarMenu.label "Sidestolpe">
 <!ENTITY viewSidebarMenu.accesskey "d">
-<!ENTITY viewCustomizeToolbar.label       "Tilpass…"> 
+<!ENTITY viewCustomizeToolbar.label       "Tilpass…">
 <!ENTITY viewCustomizeToolbar.accesskey     "T">
-<!ENTITY overflowCustomizeToolbar.label       "Tilpassverktøylinje…">
+<!ENTITY overflowCustomizeToolbar.label       "Tilpass verktøylinja…">
 <!ENTITY overflowCustomizeToolbar.accesskey   "T">
 
 <!ENTITY historyMenu.label "Historikk">
@@ -349,7 +355,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuCustomize.tooltip "Tilpass meny og verktøylinjer">
 <!ENTITY appMenuCustomizeExit.label "Avslutt tilpasning">
 <!ENTITY appMenuCustomizeExit.tooltip "Fullfør tilpassing">
-<!ENTITY appMenuHistory.label "Historikk">
 <!ENTITY appMenuHistory.showAll.label "Vis all historikk">
 <!ENTITY appMenuHistory.clearRecent.label "Tøm nyleg historikk…">
 <!ENTITY appMenuHistory.restoreSession.label "Bygg oppatt siste programøkt">
@@ -372,7 +377,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.showAll.tooltip "Vis alle faner frå denne eininga">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
-<!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Skru på fane-synkronisering for å sjå ei liste over faner frå dei andre einingane dine.">
+<!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Slå på fane-synkronisering for å sjå ei liste over faner frå dei andre einingane dine.">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
@@ -383,6 +388,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Logg inn på Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Handter einingar…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Vis sidestolpe for synkroniserte faner">
+
+<!ENTITY appMenuRecentHighlights.label "Siste høgdepunkt">
 
 <!ENTITY customizeMenu.addToToolbar.label "Legg til i verktøylinje">
 <!ENTITY customizeMenu.addToToolbar.accesskey "L">
@@ -427,7 +434,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.extension.label       "Utviding:">
 <!ENTITY urlbar.switchToTab.label     "Byt til fane:">
 
-<!ENTITY urlbar.searchSuggestionsNotification.question "Vil du forbetre søkeopplevinga di med søkeforslag?">
+<!ENTITY urlbar.searchSuggestionsNotification.question "Vil du forbetre søkjeopplevinga di med søkjeforslag?">
 <!ENTITY urlbar.searchSuggestionsNotification.learnMore "Les meir…">
 <!ENTITY urlbar.searchSuggestionsNotification.learnMore.accesskey "l">
 <!ENTITY urlbar.searchSuggestionsNotification.disable "Nei">
@@ -438,7 +445,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (urlbar.searchSuggestionsNotification.hintPrefix): Shown just before the suggestions opt-out hint. -->
 <!ENTITY urlbar.searchSuggestionsNotification.hintPrefix "Tips:">
 <!-- LOCALIZATION NOTE (urlbar.searchSuggestionsNotification.hint): &#x1F50E; is the magnifier icon emoji, please don't change it. -->
-<!ENTITY urlbar.searchSuggestionsNotification.hint "Få hjelp til å finne ting! Sjå etter &#x1F50E; ved sida av søkeforslag.">
+<!ENTITY urlbar.searchSuggestionsNotification.hint "Få hjelp til å finne ting! Sjå etter &#x1F50E; ved sida av søkjeforslag.">
 <!ENTITY urlbar.searchSuggestionsNotification.changeSettingsWin "Endre innstillingar…">
 <!ENTITY urlbar.searchSuggestionsNotification.changeSettingsWin.accesskey "E">
 <!ENTITY urlbar.searchSuggestionsNotification.changeSettingsUnix "Endre innstillingar…">
@@ -471,7 +478,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (contentSearchInput.label):
      This is set as the aria-label attribute for the search input box in the
      in-content search UI, to be used by screen readers. -->
-<!ENTITY contentSearchInput.label     "Søkeførespurnad">
+<!ENTITY contentSearchInput.label     "Søkjeførespurnad">
 <!ENTITY contentSearchSubmit.tooltip  "Send søk">
 
 <!-- LOCALIZATION NOTE (searchInput.placeholder):
@@ -502,12 +509,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (changeSearchSettings.button):
      This string won't wrap, so if the translated string is longer,
      consider translating it as if it said only "Search Settings". -->
-<!ENTITY changeSearchSettings.button  "Endre søkeinnstillingar">
-<!ENTITY changeSearchSettings.tooltip "Endre søkeinnstillingar">
+<!ENTITY changeSearchSettings.button  "Endre søkjeinnstillingar">
+<!ENTITY changeSearchSettings.tooltip "Endre søkjeinnstillingar">
 
 <!ENTITY searchInNewTab.label         "Søk i ny fane">
 <!ENTITY searchInNewTab.accesskey     "ø">
-<!ENTITY searchSetAsDefault.label     "Bruk som standard søkemotor">
+<!ENTITY searchSetAsDefault.label     "Bruk som standard søkjemotor">
 <!ENTITY searchSetAsDefault.accesskey "B">
 
 <!ENTITY openLinkCmdInTab.label       "Opne lenke i ny fane">
@@ -531,7 +538,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY reloadFrameCmd.accesskey     "O">
 <!ENTITY viewPartialSourceForSelectionCmd.label "Vis kjeldekode for vald tekst">
 <!ENTITY viewPartialSourceForMathMLCmd.label    "Vis MathML-kjeldekode">
-<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both 
+<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both
          viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label -->
 <!ENTITY viewPartialSourceCmd.accesskey "k">
 <!ENTITY viewPageSourceCmd.label      "Vis kjeldekode">
@@ -561,7 +568,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisLinkCmd.accesskey  "B">
 <!ENTITY bookmarkThisFrameCmd.label      "Bokmerk denne ramma">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "B">
-<!ENTITY copyURLCmd.label             "Kopier URL">
+<!ENTITY pageAction.copyLink.label    "Kopier lenke">
+<!ENTITY copyURLFeedback.label        "Kopiert!">
 <!ENTITY emailPageCmd.label           "Send lenke på e-post…">
 <!ENTITY emailPageCmd.accesskey       "e">
 <!ENTITY savePageCmd.label            "Lagre sida som…">
@@ -573,9 +581,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY saveFrameCmd.accesskey       "a">
 <!ENTITY printFrameCmd.label          "Skriv ut ramma…">
 <!ENTITY printFrameCmd.accesskey      "k">
-<!ENTITY saveLinkCmd.label            "Lagra lenka som…">
+<!ENTITY saveLinkCmd.label            "Lagre lenka som…">
 <!ENTITY saveLinkCmd.accesskey        "L">
-<!ENTITY saveImageCmd.label           "Lagra bildet som…">
+<!ENTITY saveImageCmd.label           "Lagre bildet som…">
 <!ENTITY saveImageCmd.accesskey       "b">
 <!ENTITY saveVideoCmd.label           "Lagre videoen som…">
 <!ENTITY saveVideoCmd.accesskey       "a">
@@ -585,8 +593,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY emailImageCmd.accesskey      "i">
 <!ENTITY emailVideoCmd.label          "Send videoen…">
 <!ENTITY emailVideoCmd.accesskey      "n">
-<!ENTITY castVideoCmd.label           "Send videoen til ei eining">
-<!ENTITY castVideoCmd.accesskey       "e">
 <!ENTITY emailAudioCmd.label          "Send lydfila med e-post…">
 <!ENTITY emailAudioCmd.accesskey      "n">
 <!ENTITY playPluginCmd.label          "Slå på dette programtillegget">
@@ -598,7 +604,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY copyImageCmd.label           "Kopier bildeadressa">
 <!ENTITY copyImageCmd.accesskey       "o">
 <!ENTITY copyImageContentsCmd.label   "Kopier bildet">
-<!ENTITY copyImageContentsCmd.accesskey  "b"> 
+<!ENTITY copyImageContentsCmd.accesskey  "b">
 <!ENTITY copyVideoURLCmd.label        "Kopier videoadressa">
 <!ENTITY copyVideoURLCmd.accesskey    "o">
 <!ENTITY copyAudioURLCmd.label        "Kopier lydadressa">
@@ -686,21 +692,21 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY fullZoom.label                 "Skalering">
 <!ENTITY fullZoom.accesskey             "r">
 
-<!ENTITY sidebarCloseButton.tooltip     "Lukk sidestolpen">
-<!ENTITY sidebarMenuClose.label         "Lukk sidestolpe">
+<!ENTITY sidebarCloseButton.tooltip     "Lat att sidestolpen">
+<!ENTITY sidebarMenuClose.label         "Lat att sidestolpen">
 
 <!ENTITY quitApplicationCmdWin2.label       "Avslutt">
 <!ENTITY quitApplicationCmdWin2.accesskey   "t">
 <!ENTITY quitApplicationCmdWin2.tooltip     "Avslutt &brandShorterName;">
 <!ENTITY goBackCmd.commandKey "[">
 <!ENTITY goForwardCmd.commandKey "]">
-<!ENTITY quitApplicationCmd.label       "Avslutt"> 
+<!ENTITY quitApplicationCmd.label       "Avslutt">
 <!ENTITY quitApplicationCmd.accesskey   "t">
 <!ENTITY quitApplicationCmdMac2.label   "Avslutt &brandShorterName;">
 <!ENTITY quitApplicationCmd.key         "Q">
 
-<!ENTITY closeCmd.label                 "Lukk">  
-<!ENTITY closeCmd.key                   "W">  
+<!ENTITY closeCmd.label                 "Lat att">
+<!ENTITY closeCmd.key                   "W">
 <!ENTITY closeCmd.accesskey             "L">
 
 <!ENTITY toggleMuteCmd.key              "M">
@@ -802,6 +808,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Slå på fane-sync for å vise ei liste over faner frå dei andre einingane dine.">
+<!ENTITY syncedTabs.sidebar.searchPlaceholder  "Søk synkroniserte faner">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
                         syncedTabs.context.openAllInTabs.accesskey):
@@ -811,7 +818,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncedTabs.context.open.accesskey                   "O">
 <!ENTITY syncedTabs.context.openInNewTab.label               "Opne i ny fane">
 <!ENTITY syncedTabs.context.openInNewTab.accesskey           "a">
-<!ENTITY syncedTabs.context.openInNewWindow.label            "Opna lenke i nytt vindauge">
+<!ENTITY syncedTabs.context.openInNewWindow.label            "Opne lenka i nytt vindauge">
 <!ENTITY syncedTabs.context.openInNewWindow.accesskey        "O">
 <!ENTITY syncedTabs.context.openInNewPrivateWindow.label     "Opne lenka i eit nytt privat vindauge">
 <!ENTITY syncedTabs.context.openInNewPrivateWindow.accesskey "p">
@@ -836,30 +843,25 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncReAuthItem.accesskey     "R">
 <!ENTITY syncToolbarButton.label      "Synkroniser">
 
-<!ENTITY social.addons.label "Handter tenester…">
-
-<!ENTITY social.directory.label "Aktiveringskatalog">
-<!ENTITY social.directory.text "Du kan slå på tenester for deling frå katalogen.">
-<!ENTITY social.directory.button "Ta meg dit!">
-<!ENTITY social.directory.introText "Trykk på ei teneste for å legge ho til i &brandShortName;.">
-<!ENTITY social.directory.viewmore.text "Vis fleire">
-
-<!ENTITY customizeMode.menuAndToolbars.header2 "Fleire verktøy og funksjonar">
+<!ENTITY customizeMode.menuAndToolbars.header3 "Dra favorittobjekta dine til verktøylinja eller overflytsmenyen.">
 <!ENTITY customizeMode.menuAndToolbars.empty "Vil du ha fleire verktøy">
 <!ENTITY customizeMode.menuAndToolbars.emptyLink "Vel frå tusenvis av utvidingar">
 <!ENTITY customizeMode.restoreDefaults "Still tilbake til standard">
 <!ENTITY customizeMode.done "Ferdig">
 <!ENTITY customizeMode.titlebar "Tittellinje">
+<!ENTITY customizeMode.extraDragSpace "Dra-og-slepp-område">
 <!ENTITY customizeMode.toolbars2 "Verktøylinjer">
 <!ENTITY customizeMode.lwthemes "Tema">
 <!ENTITY customizeMode.lwthemes.myThemes "Mine tema">
 <!ENTITY customizeMode.lwthemes.recommended "Tilrådd">
-<!ENTITY customizeMode.lwthemes.menuManage "Handsam">
+<!ENTITY customizeMode.lwthemes.menuManage "Handter">
 <!ENTITY customizeMode.lwthemes.menuManage.accessKey "H">
 <!ENTITY customizeMode.lwthemes.menuGetMore "Hent fleire tema">
 <!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "e">
 <!ENTITY customizeMode.emptyOverflowList.description "Drag og slepp element her for å ha dei innan rekkjevidde, men utanfor verktøylinja…">
-<!ENTITY customizeMode.uidensity "Tettheit">
+<!ENTITY customizeMode.overflowList.title2 "Overflytsmeny">
+<!ENTITY customizeMode.overflowList.description "Drag og slepp element her for å ha dei innan rekkjevidde, men ute av verktøylinja…">
+<!ENTITY customizeMode.uidensity "Densitet">
 <!-- LOCALIZATION NOTE (customizeMode.uidensity.menuNormal.*):
      “Normal” is displayed in the Customize screen, under the Density menu. -->
 <!ENTITY customizeMode.uidensity.menuNormal.label "Normal">
@@ -879,6 +881,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.uidensity.menuTouch.tooltip "Tøtsj">
 <!ENTITY customizeMode.uidensity.menuTouch.accessKey "T">
 <!ENTITY customizeMode.uidensity.autoTouchMode.checkbox.label "Bruk tøtsj for nettbrettmodus">
+
+<!ENTITY customizeMode.autoHideDownloadsButton.label "Gøym automatisk">
 
 <!ENTITY getUserMedia.selectCamera.label "Kamera som vert delt:">
 <!ENTITY getUserMedia.selectCamera.accesskey "K">
@@ -904,16 +908,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY trackingProtection.block2.label "Slå på vern">
 <!ENTITY trackingProtection.block2.accesskey "å">
 
-<!ENTITY trackingContentBlocked.message "Sporing">
-<!ENTITY trackingContentBlocked.moreinfo "Delar av sida som sporar online-aktiviteten din på nettet er blokkert.">
-<!ENTITY trackingContentBlocked.learnMore "Lær meir">
-<!ENTITY trackingContentBlocked.options "Innstillingar">
-<!ENTITY trackingContentBlocked.unblock2.label "Slå av vern for denne nettstaden">
-<!ENTITY trackingContentBlocked.unblock2.accesskey "S">
-<!ENTITY trackingContentBlocked.block.label "Slå på vern">
-<!ENTITY trackingContentBlocked.block.accesskey "l">
-<!ENTITY trackingContentBlocked.disabled.message "Sporingsvern er slått av">
-
 <!ENTITY pluginNotification.showAll.label "Vis alle">
 <!ENTITY pluginNotification.showAll.accesskey "V">
 
@@ -931,8 +925,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY uiTour.infoPanel.close "Lat att">
 
-<!ENTITY appMenuSidebars.label         "Sidestolpar">
-
 <!-- LOCALIZATION NOTE: (panicButton.view.mainTimeframeDesc, panicButton.view.5min, panicButton.view.2hr, panicButton.view.day):
      The .mainTimeframeDesc string combined with any of the 3 others is meant to form a complete sentence, e.g. "Forget the last: Five minutes".
      Please ensure that this remains the case in the translation. -->
@@ -948,7 +940,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY panicButton.view.mainActionDesc          "Om du held fram vil:">
 <!ENTITY panicButton.view.deleteCookies           "Siste <html:strong>infokapslar</html:strong> slettast">
 <!ENTITY panicButton.view.deleteHistory           "Nyleg <html:strong>historikk</html:strong> slettast">
-<!ENTITY panicButton.view.deleteTabsAndWindows    "Lukke alle <html:strong>faner</html:strong> og <html:strong>vindauge</html:strong>">
+<!ENTITY panicButton.view.deleteTabsAndWindows    "Lat att alle <html:strong>faner</html:strong> og <html:strong>vindauge</html:strong>">
 <!ENTITY panicButton.view.openNewWindow           "Opne eit nytt, friskt vindauge">
 
 <!ENTITY panicButton.view.undoWarning             "Denne handlinga kan ikkje angrast.">
@@ -970,7 +962,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.cancelButton.accesskey "k">
 <!ENTITY updateAvailable.panelUI.label "Last ned &brandShorterName;-oppdatering">
 
-<!ENTITY updateManual.message "Last ned eit heilt nytt eksemplar av &brandShorterName; og vi vil hjelpe deg med å installere den.">
+<!ENTITY updateManual.message "Last ned eit heilt nytt eksemplar av &brandShorterName; og vi vil hjelpe deg med å installere han.">
 <!ENTITY updateManual.whatsnew.label "Sjå kva som er nytt.">
 <!ENTITY updateManual.header.message "&brandShorterName; kan ikkje oppdaterast til siste versjon.">
 <!ENTITY updateManual.acceptButton.label "Last ned &brandShorterName;">
@@ -979,7 +971,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateManual.cancelButton.accesskey "n">
 <!ENTITY updateManual.panelUI.label "Last ned eit heilt nytt eksemplar av &brandShorterName;">
 
-<!ENTITY updateRestart.message "Etter ein rask omstart, vil &brandShorterName; byggje oppatt alle opne faner og vindauge.">
+<!ENTITY updateRestart.message2 "Etter ein rask omstart, vil &brandShorterName; byggje oppatt alle opne faner og vindauge som ikkje er i privat nettlesingsmodus.">
 <!ENTITY updateRestart.header.message2 "Start på nytt for å oppdatere &brandShorterName;.">
 <!ENTITY updateRestart.acceptButton.label "Start på nytt og bygg oppatt">
 <!ENTITY updateRestart.acceptButton.accesskey "r">
@@ -991,5 +983,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageAction.addToUrlbar.label "Legg til i adresselinja">
 <!ENTITY pageAction.removeFromUrlbar.label "Fjern fra adresselinja">
 
-<!ENTITY sendToDevice.label2 "Send til eining">
+<!ENTITY pageAction.sendTabToDevice.label "Send fane til eining">
 <!ENTITY sendToDevice.syncNotReady.label "Synkroniserer einingar…">
+
+<!ENTITY libraryButton.tooltip "Vis historikk, lagra bokmerker med meir">
+
+<!-- LOCALIZATION NOTE: (accessibilityIndicator.tooltip): This is used to
+     display a tooltip for accessibility indicator in toolbar/tabbar. It is also
+     used as a textual label for the indicator used by assistive technology
+     users. -->
+<!ENTITY accessibilityIndicator.tooltip "Tilgjengefunksjonar aktiverte">

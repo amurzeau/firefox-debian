@@ -15,7 +15,7 @@
 
 <!ENTITY browsing.label                  "Menyemak">
 
-<!ENTITY useAutoScroll.label             "Guna autoskrol">
+<!ENTITY useAutoScroll.label             "Guna auto-skrol">
 <!ENTITY useAutoScroll.accesskey         "a">
 <!ENTITY useSmoothScrolling.label        "Guna skrol lancar">
 <!ENTITY useSmoothScrolling.accesskey    "G">
@@ -29,9 +29,9 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "Laporan data dinyahdayakan bagi konfigurasi binaan ini">
 
-<!ENTITY enableHealthReport1.label       "Izinkan &brandShortName; secara automatik menghantar data teknikal dan interaksi kepada Mozilla">
-<!ENTITY enableHealthReport1.accesskey   "r">
-<!ENTITY healthReportLearnMore.label     "Ketahui Selanjutnya">
+<!ENTITY enableHealthReport2.label       "Izinkan&brandShortName; supaya secara automatik akan menghantarkan data teknikal dan interaksi kepada Mozilla">
+<!ENTITY enableHealthReport2.accesskey   "r">
+<!ENTITY healthReportLearnMore.label     "Ketahui selanjutnya">
 
 <!ENTITY dataCollection.label            "Pengumpulan dan penggunaan data &brandShortName;">
 <!ENTITY dataCollectionDesc.label        "Kami berusaha untuk menyediakan anda dengan pilihan dan hanya mengumpulkan apa yang kami perlukan, dan memajukan &brandShortName; untuk semua orang. Kami sentiasa meminta izin sebelum menerima maklumat peribadi.">
@@ -39,15 +39,15 @@ available. -->
 
 <!ENTITY alwaysSubmitCrashReports1.label  "Izinkan &brandShortName; menghantar laporan ranap kepada Mozilla">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "l">
-<!ENTITY crashReporterLearnMore.label    "Ketahui Selanjutnya">
+<!ENTITY crashReporterLearnMore.label    "Ketahui selanjutnya">
 
 <!ENTITY networkTab.label                "Rangkaian">
 
 <!ENTITY networkProxy.label              "Proksi Rangkaian">
 
-<!ENTITY connectionDesc.label            "Konfigur cara &brandShortName; menyambung ke Internet">
-<!ENTITY connectionSettings.label        "Ubah suai…">
-<!ENTITY connectionSettings.accesskey    "U">
+<!ENTITY connectionDesc.label            "Tentukan cara &brandShortName; menyambung ke Internet">
+<!ENTITY connectionSettings.label        "Tetapan…">
+<!ENTITY connectionSettings.accesskey    "t">
 
 <!ENTITY httpCache.label                 "Cache Kandungan Web">
 
@@ -74,7 +74,7 @@ available. -->
 <!ENTITY clearCacheNow.accesskey         "B">
 <!ENTITY clearOfflineAppCacheNow.label   "Buang Sekarang">
 <!ENTITY clearOfflineAppCacheNow.accesskey "S">
-<!ENTITY overrideSmartCacheSize.label    "Sampukan automatik pengurusan cache">
+<!ENTITY overrideSmartCacheSize.label    "Terbalikkan pengurusan cache automatik">
 <!ENTITY overrideSmartCacheSize.accesskey "O">
 
 <!ENTITY updateTab.label                 "Kemaskini">
@@ -83,7 +83,7 @@ available. -->
   Strings from aboutDialog.dtd are displayed in this section of the preferences.
   Please check for possible accesskey conflicts.
 -->
-<!ENTITY updateApplication.label         "&brandShortName; kemaskini">
+<!ENTITY updateApplication.label         "Kemaskini &brandShortName;">
 <!-- LOCALIZATION NOTE (updateApplication.version.*): updateApplication.version.pre
 # is followed by a version number, keep the trailing space or replace it with a
 # different character as needed. updateApplication.version.post is displayed
@@ -114,9 +114,9 @@ available. -->
 <!ENTITY offlineStorageNotify.label               "Maklumkan anda apabila laman web mahu menyimpan data bagi kegunaan luar talian">
 <!ENTITY offlineStorageNotify.accesskey           "B">
 <!ENTITY offlineStorageNotifyExceptions.label     "Pengecualian…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "k">
+<!ENTITY offlineStorageNotifyExceptions.accesskey "c">
 
-<!ENTITY offlineAppsList2.label          "Laman web yang berikut telah dibenarkan untuk menyimpan data untuk digunakan ketika luar talian:">
+<!ENTITY offlineAppsList3.label          "Laman web yang berikut telah dibenarkan untuk menyimpan data untuk digunakan ketika luar talian">
 <!ENTITY offlineAppsList.height          "7em">
 <!ENTITY offlineAppsListRemove.label     "Buang…">
 <!ENTITY offlineAppsListRemove.accesskey "B">
@@ -128,8 +128,8 @@ available. -->
 <!ENTITY selectCerts.auto.accesskey      "P">
 <!ENTITY selectCerts.ask                 "Tanya setiap kali">
 <!ENTITY selectCerts.ask.accesskey       "T">
-<!ENTITY enableOCSP.label                "Tanya pelayan responder OCSP untuk memastikan kesahihan sijil semasa">
-<!ENTITY enableOCSP.accesskey            "Q">
+<!ENTITY enableOCSP.label                "Minta penggerak balas pelayan OCSP untuk mengesahkan kesahihan sijil semasa">
+<!ENTITY enableOCSP.accesskey            "T">
 <!ENTITY viewCerts2.label                "Papar Sijil…">
 <!ENTITY viewCerts2.accesskey            "S">
 <!ENTITY viewSecurityDevices2.label      "Peranti Keselamatan…">
@@ -152,5 +152,5 @@ available. -->
                                          "Mengubah bilangan proses kandungan hanya boleh dilakukan dengan multi proses &brandShortName;.">
 <!ENTITY limitContentProcessOption.disabledDescriptionLink
                                          "Ketahui cara untuk menyemak samada multi proses didayakan">
-<!ENTITY allowHWAccel.label              "Guna pecutan perkakasan bila tersedia">
+<!ENTITY allowHWAccel.label              "Guna pecutan perkakasan, jika tersedia">
 <!ENTITY allowHWAccel.accesskey          "r">

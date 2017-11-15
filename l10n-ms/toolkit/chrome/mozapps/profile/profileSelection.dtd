@@ -14,9 +14,9 @@
 
 <!ENTITY            availprofiles.label    "Profil Yang Ada">
 
-<!ENTITY            newButton.label        "Mencipta Profil…">
+<!ENTITY            newButton.label        "Cipta Profil…">
 <!ENTITY            newButton.accesskey    "C">
-<!ENTITY            renameButton.label     "Menamakan Profil…">
+<!ENTITY            renameButton.label     "Namakan semula Profil…">
 <!ENTITY            renameButton.accesskey "R">
 <!ENTITY            deleteButton.label     "Buang Profil…">
 <!ENTITY            deleteButton.accesskey "B">
@@ -24,8 +24,8 @@
 <!-- manager entities -->
 <!ENTITY            pmDescription.label    "&brandShortName; menyimpan maklumat perihal tetapan anda, keutamaan, dan item pengguna lain dalam profil pengguna anda.">
 
-<!ENTITY            offlineState.label    "Bekerja Luar Talian">
-<!ENTITY            offlineState.accesskey "B">
+<!ENTITY            offlineState.label    "Kerja luar talian">
+<!ENTITY            offlineState.accesskey "l">
 
 <!ENTITY            useSelected.label       "Mengunakan profil yang dipilih tanpa meminta pada permulaan">
 <!ENTITY            useSelected.accesskey   "u">

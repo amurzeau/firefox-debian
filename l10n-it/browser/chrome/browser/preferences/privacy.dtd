@@ -40,20 +40,20 @@
 <!ENTITY suggestionSettings2.label "Modifica le impostazioni relative ai suggerimenti dei motori di ricerca">
 <!ENTITY acceptCookies2.label "Accetta i cookie dai siti web">
 <!ENTITY acceptCookies2.accesskey "k">
-<!ENTITY acceptThirdParty.pre.label "Accetta i cookie di terze parti:">
-<!ENTITY acceptThirdParty.pre.accesskey "t">
+<!ENTITY acceptThirdParty2.pre.label "Accetta i cookie di terze parti">
+<!ENTITY acceptThirdParty2.pre.accesskey "t">
 <!ENTITY acceptThirdParty.always.label "sempre">
 <!ENTITY acceptThirdParty.never.label "mai">
 <!ENTITY acceptThirdParty.visited.label "dai siti visitati">
-<!ENTITY keepUntil.label "Conservali fino:">
-<!ENTITY keepUntil.accesskey "v">
+<!ENTITY keepUntil2.label "Conservali fino">
+<!ENTITY keepUntil2.accesskey "v">
 <!ENTITY expire.label "alla loro scadenza">
 <!ENTITY close.label "alla chiusura di &brandShortName;">
 <!ENTITY cookieExceptions.label "Eccezioni…">
 <!ENTITY cookieExceptions.accesskey "z">
 <!ENTITY showCookies.label "Mostra i cookie…">
 <!ENTITY showCookies.accesskey "r">
-<!ENTITY historyHeader2.pre.label "Impostazioni cronologia">
+<!ENTITY historyHeader2.pre.label "Impostazioni cronologia:">
 <!ENTITY historyHeader2.pre.accesskey "m">
 <!ENTITY historyHeader.remember.label "salva la cronologia">
 <!ENTITY historyHeader.dontremember.label "non salvare la cronologia">
@@ -84,3 +84,7 @@
 <!ENTITY browserContainersEnabled.accesskey "h">
 <!ENTITY browserContainersSettings.label "Impostazioni…">
 <!ENTITY browserContainersSettings.accesskey "o">
+<!ENTITY a11yPrivacy.checkbox.label "Impedisci ai servizi di accessibilità di accedere al browser">
+<!ENTITY a11yPrivacy.checkbox.accesskey "b">
+<!ENTITY a11yPrivacy.learnmore.label "Ulteriori informazioni">
+<!ENTITY enableSafeBrowsingLearnMore.label "Ulteriori informazioni">

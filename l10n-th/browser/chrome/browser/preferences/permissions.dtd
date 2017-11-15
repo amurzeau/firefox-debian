@@ -5,18 +5,18 @@
 <!ENTITY window.title                 "ข้อยกเว้น">
 <!ENTITY window.width                 "45em">
 
-<!ENTITY treehead.sitename.label      "ไซต์">
+<!ENTITY treehead.sitename2.label     "เว็บไซต์">
 <!ENTITY treehead.status.label        "สถานะ">
-<!ENTITY removepermission.label       "เอาไซต์ออก">
-<!ENTITY removepermission.accesskey   "ต">
-<!ENTITY removeallpermissions.label   "เอาไซต์ทั้งหมดออก">
-<!ENTITY removeallpermissions.accesskey "ง">
-<!ENTITY address.label                "ที่อยู่เว็บไซต์:">
-<!ENTITY address.accesskey            "ท">
+<!ENTITY removepermission2.label      "เอาเว็บไซต์ออก">
+<!ENTITY removepermission2.accesskey  "อ">
+<!ENTITY removeallpermissions2.label  "เอาเว็บไซต์ทั้งหมดออก">
+<!ENTITY removeallpermissions2.accesskey "ว">
+<!ENTITY address2.label               "ที่อยู่เว็บไซต์">
+<!ENTITY address2.accesskey           "ท">
 <!ENTITY block.label                  "ปิดกั้น">
 <!ENTITY block.accesskey              "ป">
 <!ENTITY session.label                "อนุญาตในวาระ">
-<!ENTITY session.accesskey            "ว">
+<!ENTITY session.accesskey            "น">
 <!ENTITY allow.label                  "อนุญาต">
 <!ENTITY allow.accesskey              "อ">
 <!ENTITY windowClose.key              "w">
@@ -26,3 +26,4 @@
 <!ENTITY button.ok.label              "บันทึกการเปลี่ยนแปลง">
 <!ENTITY button.ok.accesskey          "บ">
 
+<!ENTITY searchbox.placeholder        "ค้นหาเว็บไซต์">

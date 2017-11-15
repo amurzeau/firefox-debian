@@ -6,21 +6,22 @@
 
 <!-- LOCALIZATION NOTE: The title is intended to be apologetic and disarming, expressing dismay
      and regret that we are unable to restore the session for the user -->
-<!ENTITY restorepage.errorTitle     "Nampaknya, ini agak memalukan.">
-<!ENTITY restorepage.problemDesc    "&brandShortName; sedang mengalami masalah memulihkan tetingkap dan tab anda. Kebiasaannya ini berpunca dari halaman web terkini yang dibuka.">
-<!ENTITY restorepage.tryThis        "Anda boleh cuba:">
-<!ENTITY restorepage.restoreSome    "Menghapuskan satu atau lebih tab yang anda fikir menjadi punca kepada masalah ini">
-<!ENTITY restorepage.startNew       "Memulakan keseluruhan sesi pelayaran baru">
+<!ENTITY restorepage.errorTitle2    "Maaf. Kami menghadapi masalah untuk mendapatkan semula halaman anda.">
+<!ENTITY restorepage.problemDesc2   "Kami menghadapi masalah memulihkan sesi pelayaran anda sebelum ini. Pilih Pulih Sesi dan cuba lagi.">
+<!ENTITY restorepage.tryThis2       "Masih tidak boleh memulihkan sesi anda? Kadang-kadang, tab yang menjadi punca masalah ini. Lihat tab sebelum ini, buangkan tanda pada tab yang anda tidak mahu pulihkan, dan kemudian pulih semula yang lain.">
 
-<!ENTITY restorepage.tryagainButton "Pulih">
-<!ENTITY restorepage.restore.access "P">
-<!ENTITY restorepage.closeButton    "Tutup">
-<!ENTITY restorepage.close.access   "T">
+<!ENTITY restorepage.hideTabs       "Sorok Tab Dahulu">
+<!ENTITY restorepage.showTabs       "Papar Tab Dahulu">
 
-<!ENTITY restorepage.restoreHeader  "Kembalikan semula">
+<!ENTITY restorepage.tryagainButton2 "Pulih Sesi">
+<!ENTITY restorepage.restore.access2 "P">
+<!ENTITY restorepage.closeButton2    "Mulakan Sesi Baru">
+<!ENTITY restorepage.close.access2   "B">
+
+<!ENTITY restorepage.restoreHeader  "Pulih">
 <!ENTITY restorepage.listHeader     "Tetingkap dan Tab">
 <!-- LOCALIZATION NOTE: &#37;S will be replaced with a number. -->
-<!ENTITY restorepage.windowLabel    "Tetingkap &#037;S">
+<!ENTITY restorepage.windowLabel    "Tetingkap &#37;S">
 
 
 <!-- LOCALIZATION NOTE: The following 'welcomeback2' strings are for about:welcomeback,

@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!-- LOCALIZATION NOTE : FILE This file contains the browser main menu items -->
-<!-- LOCALIZATION NOTE : FILE Do not translate commandkeys --> 
+<!-- LOCALIZATION NOTE : FILE Do not translate commandkeys -->
 
 <!-- LOCALIZATION NOTE (mainWindow.title): DONT_TRANSLATE -->
 <!ENTITY mainWindow.title "&brandFullName;">
@@ -20,16 +20,20 @@
 
 <!-- Tab context menu -->
 <!ENTITY  reloadTab.label                    "Tải lại thẻ">
-<!ENTITY  reloadTab.accesskey                "T">
+<!ENTITY  reloadTab.accesskey                "R">
 <!ENTITY  reloadAllTabs.label                "Tải lại tất cả các thẻ">
-<!ENTITY  reloadAllTabs.accesskey            "l">
+<!ENTITY  reloadAllTabs.accesskey            "A">
+<!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
+a tab (i.e. it is a verb, not adjective). -->
+<!ENTITY  duplicateTab.label                 "Nhân đôi thẻ">
+<!ENTITY  duplicateTab.accesskey             "D">
 <!-- LOCALIZATION NOTE (closeTabsToTheEnd.label): This should indicate the
 direction in which tabs are closed, i.e. locales that use RTL mode should say
 left instead of right. -->
 <!ENTITY  closeTabsToTheEnd.label            "Đóng các thẻ ở bên phải">
-<!ENTITY  closeTabsToTheEnd.accesskey        "p">
+<!ENTITY  closeTabsToTheEnd.accesskey        "i">
 <!ENTITY  closeOtherTabs.label               "Đóng các thẻ khác">
-<!ENTITY  closeOtherTabs.accesskey           "k">
+<!ENTITY  closeOtherTabs.accesskey           "o">
 
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
@@ -37,23 +41,24 @@ left edge of the tabstrip. Really we just want the string to express the idea
 that this is a lightweight and reversible action that keeps your tab where you
 can reach it easily. -->
 <!ENTITY  pinTab.label                       "Ghim thẻ">
-<!ENTITY  pinTab.accesskey                   "G">
+<!ENTITY  pinTab.accesskey                   "P">
 <!ENTITY  unpinTab.label                     "Gỡ thẻ">
-<!ENTITY  unpinTab.accesskey                 "G">
+<!ENTITY  unpinTab.accesskey                 "b">
 <!ENTITY  sendTabToDevice.label              "Gửi thẻ tới thiết bị">
-<!ENTITY  sendTabToDevice.accesskey          "t">
+<!ENTITY  sendTabToDevice.accesskey          "D">
 <!ENTITY  sendPageToDevice.label             "Gửi trang tới thiết bị">
-<!ENTITY  sendPageToDevice.accesskey         "r">
+<!ENTITY  sendPageToDevice.accesskey         "D">
 <!ENTITY  sendLinkToDevice.label             "Gửi đường dẫn tới thiết bị">
-<!ENTITY  sendLinkToDevice.accesskey         "n">
+<!ENTITY  sendLinkToDevice.accesskey         "D">
+<!ENTITY  sendToDeviceFeedback.label         "Đã gửi!">
 <!ENTITY  moveToNewWindow.label              "Di chuyển sang cửa sổ mới">
-<!ENTITY  moveToNewWindow.accesskey          "c">
+<!ENTITY  moveToNewWindow.accesskey          "W">
 <!ENTITY  bookmarkAllTabs.label              "Đánh dấu tất cả các thẻ…">
-<!ENTITY  bookmarkAllTabs.accesskey          "u">
+<!ENTITY  bookmarkAllTabs.accesskey          "T">
 <!ENTITY  undoCloseTab.label                 "Mở lại thẻ vừa đóng">
-<!ENTITY  undoCloseTab.accesskey             "M">
+<!ENTITY  undoCloseTab.accesskey             "U">
 <!ENTITY  closeTab.label                     "Đóng thẻ">
-<!ENTITY  closeTab.accesskey                 "g">
+<!ENTITY  closeTab.accesskey                 "c">
 
 <!ENTITY  listAllTabs.label      "Liệt kê tất cả các thẻ">
 
@@ -65,52 +70,59 @@ displayed on OS X, and only on windows that aren't main browser windows, or
 when there are no windows but Firefox is still running. -->
 <!ENTITY openLocationCmd.label "Mở địa chỉ…">
 <!ENTITY openFileCmd.label "Mở tập tin…">
-<!ENTITY openFileCmd.accesskey "M">
+<!ENTITY openFileCmd.accesskey "O">
 <!ENTITY openFileCmd.commandkey "o">
 <!ENTITY printSetupCmd.label "Thiết lập trang in…">
-<!ENTITY printSetupCmd.accesskey "p">
+<!ENTITY printSetupCmd.accesskey "u">
 <!ENTITY printPreviewCmd.label "Xem thử trước khi in">
-<!ENTITY printPreviewCmd.accesskey "X">
+<!ENTITY printPreviewCmd.accesskey "v">
 <!ENTITY printCmd.label "In…">
-<!ENTITY printCmd.accesskey "I">
+<!ENTITY printCmd.accesskey "P">
 <!ENTITY printCmd.commandkey "p">
 
 <!ENTITY goOfflineCmd.label "Duyệt web ngoại tuyến">
-<!ENTITY goOfflineCmd.accesskey "w">
+<!ENTITY goOfflineCmd.accesskey "k">
 
 <!ENTITY menubarCmd.label "Thanh menu">
-<!ENTITY menubarCmd.accesskey "m">
+<!ENTITY menubarCmd.accesskey "M">
 <!ENTITY navbarCmd.label "Thanh định &amp;hướng">
 <!ENTITY personalbarCmd.label "Thanh đánh dấu">
-<!ENTITY personalbarCmd.accesskey "u">
+<!ENTITY personalbarCmd.accesskey "B">
 <!ENTITY bookmarksToolbarItem.label "Các mục của thanh đánh dấu">
 
 <!ENTITY toolbarContextMenu.reloadAllTabs.label "Tải lại tất cả các thẻ">
-<!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "l">
+<!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "A">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.label "Đánh dấu tất cả các thẻ…">
-<!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "u">
+<!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "T">
 <!ENTITY toolbarContextMenu.undoCloseTab.label "Mở lại thẻ vừa đóng">
-<!ENTITY toolbarContextMenu.undoCloseTab.accesskey "M">
+<!ENTITY toolbarContextMenu.undoCloseTab.accesskey "U">
 
 <!ENTITY pageSourceCmd.label "Mở mã nguồn">
-<!ENTITY pageSourceCmd.accesskey "M">
+<!ENTITY pageSourceCmd.accesskey "o">
 <!ENTITY pageSourceCmd.commandkey "u">
+<!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
+Option+Command keyboard shortcut letter that Safari and Chrome use for "View
+Source" on macOS. pageSourceCmd.commandkey above is Firefox's official keyboard
+shortcut shown in the GUI. SafariCommandKey is an alias provided for the
+convenience of Safari and Chrome users on macOS. See bug 1398988. -->
+<!ENTITY pageSourceCmd.SafariCommandKey "u">
+
 <!ENTITY pageInfoCmd.label "Thông tin về trang này">
-<!ENTITY pageInfoCmd.accesskey "v">
+<!ENTITY pageInfoCmd.accesskey "I">
 <!ENTITY pageInfoCmd.commandkey "i">
 <!ENTITY mirrorTabCmd.label "Nhân đôi thẻ">
-<!ENTITY mirrorTabCmd.accesskey "N">
+<!ENTITY mirrorTabCmd.accesskey "m">
 <!-- LOCALIZATION NOTE (enterFullScreenCmd.label, exitFullScreenCmd.label):
 These should match what Safari and other Apple applications use on OS X Lion. -->
 <!ENTITY enterFullScreenCmd.label "Mở rộng toàn màn hình">
-<!ENTITY enterFullScreenCmd.accesskey "n">
-<!ENTITY exitFullScreenCmd.label "Thu nhỏ lại">
-<!ENTITY exitFullScreenCmd.accesskey "n">
+<!ENTITY enterFullScreenCmd.accesskey "F">
+<!ENTITY exitFullScreenCmd.label "Thoát chế độ toàn màn hình">
+<!ENTITY exitFullScreenCmd.accesskey "F">
 <!ENTITY fullScreenCmd.label "Toàn màn hình">
-<!ENTITY fullScreenCmd.accesskey "T">
+<!ENTITY fullScreenCmd.accesskey "F">
 <!ENTITY fullScreenCmd.macCommandKey "f">
 <!ENTITY showAllTabsCmd.label "Hiện tất cả các thẻ">
-<!ENTITY showAllTabsCmd.accesskey "H">
+<!ENTITY showAllTabsCmd.accesskey "A">
 <!ENTITY toggleReaderMode.key "R">
 
 <!ENTITY fxaSignIn.label "Đăng nhập vào &syncBrand.shortName.label;">
@@ -123,9 +135,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenRestore.tooltip "Khôi phục">
 <!ENTITY fullScreenClose.tooltip "Đóng">
 <!ENTITY fullScreenAutohide.label "Ẩn thanh công cụ">
-<!ENTITY fullScreenAutohide.accesskey "h">
+<!ENTITY fullScreenAutohide.accesskey "H">
 <!ENTITY fullScreenExit.label "Thoát chế độ toàn màn hình">
-<!ENTITY fullScreenExit.accesskey "c">
+<!ENTITY fullScreenExit.accesskey "F">
 
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
@@ -154,31 +166,15 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY pointerlockWarning.generic.label "Trang này có quyền điều khiển con trỏ của bạn. Ấn Esc để lấy lại quyền điều khiển.">
 
 <!ENTITY closeWindow.label "Đóng cửa sổ">
-<!ENTITY closeWindow.accesskey "c">
+<!ENTITY closeWindow.accesskey "d">
 
 <!ENTITY bookmarksMenu.label "Trang đánh dấu">
-<!ENTITY bookmarksMenu.accesskey "d">
+<!ENTITY bookmarksMenu.accesskey "B">
 <!ENTITY bookmarkThisPageCmd.label "Đánh dấu trang này">
-<!ENTITY editThisBookmarkCmd.label "Chỉnh sửa trang đánh dấu này">
+<!ENTITY editThisBookmarkCmd.label "Chỉnh sửa dấu trang này">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
-<!-- LOCALIZATION NOTE (findShareServices.label):
-  -  Use the unicode ellipsis char, \u2026,
-  -  or use "..." if \u2026 doesn't suit traditions in your locale. -->
-<!ENTITY findShareServices.label "Tìm thêm các dịch vụ chia sẻ…">
-<!ENTITY sharePageCmd.label "Chia sẻ trang này">
-<!ENTITY sharePageCmd.commandkey "S">
-<!ENTITY sharePageCmd.accesskey "s">
-<!-- LOCALIZATION NOTE (shareLink.accesskey): must be different than the following share access keys -->
-<!ENTITY shareLink.label "Chia sẻ liên kết này">
-<!ENTITY shareLink.accesskey "k">
-<!ENTITY shareImage.label "Chia sẻ ảnh này">
-<!ENTITY shareImage.accesskey "n">
-<!ENTITY shareSelect.label "Chia sẻ đoạn bôi đen">
-<!ENTITY shareSelect.accesskey "b">
-<!ENTITY shareVideo.label "Chia sẻ video này">
-<!ENTITY shareVideo.accesskey "v">
-<!ENTITY feedsMenu2.label "Đăng kí nhận tin từ trang này">
-<!ENTITY subscribeToPageMenupopup.label "Đăng kí nhận tin từ trang này">
+
+<!ENTITY subscribeToPageMenupopup.label "Đăng kí theo dõi trang này">
 <!ENTITY subscribeToPageMenuitem.label "Đăng kí theo dõi trang này…">
 <!ENTITY addCurPagesCmd.label "Đánh dấu tất cả các thẻ…">
 <!ENTITY showAllBookmarks2.label "Xem tất cả trang đánh dấu">
@@ -187,14 +183,14 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY mobileBookmarksCmd.label "Trang đánh dấu trên điện thoại di động">
 <!ENTITY bookmarksToolbarChevron.tooltip "Hiện thêm các trang đánh dấu">
 <!ENTITY showRecentlyBookmarked.label     "Xem trang đánh dấu gần đây">
-<!ENTITY showRecentlyBookmarked.accesskey "e">
+<!ENTITY showRecentlyBookmarked.accesskey "h">
 <!ENTITY hideRecentlyBookmarked.label     "Ẩn trang đánh dấu gần đây">
-<!ENTITY hideRecentlyBookmarked.accesskey "n">
+<!ENTITY hideRecentlyBookmarked.accesskey "H">
 
-<!ENTITY backCmd.label                "Lùi">
+<!ENTITY backCmd.label                "Trở lại">
 <!ENTITY backButton.tooltip           "Trở lại trang trước">
-<!ENTITY forwardCmd.label             "Tiến">
-<!ENTITY forwardButton.tooltip        "Tiến một trang">
+<!ENTITY forwardCmd.label             "Tiếc tục">
+<!ENTITY forwardButton.tooltip        "Tiến đến một trang">
 <!ENTITY backForwardButtonMenu.tooltip "Nhấn chuột phải hoặc kéo xuống để hiển thị lịch sử">
 <!ENTITY backForwardButtonMenuMac.tooltip "Kéo xuống để xem lịch sử">
 <!ENTITY reloadCmd.label              "Tải lại">
@@ -213,6 +209,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.passwordNotificationAnchor.tooltip        "Mở bảng thông báo lưu mật khẩu">
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Quản lý sử dụng phần bổ trợ">
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "Thay đổi liệu bạn có thể nhận thông báo từ trang web hay không">
+<!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Lưu dữ liệu vào Bộ nhớ lâu dài">
+<!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Trình duyệt đang ở trong chế độ truy cập từ xa">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Quản lý chia sẻ máy ảnh và/hoặc micrô với trang">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Quản lý chia sẻ micrô của bạn với trang">
@@ -229,6 +227,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.geolocationBlocked.tooltip       "Bạn đã chặn thông tin địa điểm ở trang này.">
 <!ENTITY urlbar.indexedDBBlocked.tooltip         "Bạn đã chặn lưu trữ dữ liệu ở trang này.">
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Bạn đã chặn thông báo ở trang này.">
+<!ENTITY urlbar.persistentStorageBlocked.tooltip "Bạn đã chặn lưu dữ liệu lâu dài ở trang này.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Xem lịch sử">
 
@@ -240,14 +239,18 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarksButton.label          "Trang đánh dấu">
 <!ENTITY bookmarksCmd.commandkey "b">
 
-<!ENTITY bookmarksMenuButton.label          "Trang đánh dấu">
-<!ENTITY bookmarksMenuButton.other.label "Trang đánh dấu khác">
-<!ENTITY bookmarksMenuButton.mobile.label "Trang đánh dấu trên điện thoại di động">
+<!ENTITY bookmarksSubview.label             "Trang đánh dấu">
+<!ENTITY bookmarksMenuButton2.label         "Bảng chọn trang đánh dấu">
+<!ENTITY bookmarksMenuButton.other.label    "Trang đánh dấu khác">
+<!ENTITY bookmarksMenuButton.mobile.label   "Trang đánh dấu trên điện thoại di động">
 <!ENTITY viewBookmarksSidebar2.label        "Hiển thị thanh lề trang đánh dấu">
+<!ENTITY hideBookmarksSidebar.label         "Ẩn thanh lề trang đánh dấu">
 <!ENTITY viewBookmarksToolbar.label         "Hiển thị thanh công cụ trang đánh dấu">
+<!ENTITY hideBookmarksToolbar.label         "Ẩn thanh công cụ trang đánh dấu">
 <!ENTITY searchBookmarks.label              "Tìm kiếm trang đánh dấu">
-
-<!ENTITY containersMenu.label "Ngăn chứa">
+<!ENTITY bookmarkingTools.label             "Công cụ đánh dấu trang">
+<!ENTITY addBookmarksMenu.label             "Thêm bảng chọn trang đánh dấu vào thanh công cụ">
+<!ENTITY removeBookmarksMenu.label          "Xóa bảng chọn trang đánh dấu từ thanh công cụ">
 
 <!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
@@ -259,79 +262,84 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY historySidebarCmd.commandKey   "h">
 
 <!ENTITY toolsMenu.label              "Công cụ">
-<!ENTITY toolsMenu.accesskey          "C"> 
+<!ENTITY toolsMenu.accesskey          "T">
 
 <!ENTITY keywordfield.label           "Tạo từ khóa cho chuỗi tìm kiếm này…">
-<!ENTITY keywordfield.accesskey       "k">
+<!ENTITY keywordfield.accesskey       "K">
 
 <!ENTITY downloads.label              "Tập tin tải về">
-<!ENTITY downloads.accesskey          "v">
+<!-- LOCALIZATION NOTE (libraryDownloads.label): This label is similar to
+  -  downloads.label, but used in the Library panel. -->
+<!ENTITY libraryDownloads.label       "Tải xuống">
+<!ENTITY downloads.accesskey          "D">
 <!ENTITY downloads.commandkey         "j">
 <!ENTITY downloadsUnix.commandkey     "y">
 <!ENTITY addons.label                 "Tiện ích">
-<!ENTITY addons.accesskey             "T">
+<!ENTITY addons.accesskey             "A">
 <!ENTITY addons.commandkey            "A">
 
 <!ENTITY webDeveloperMenu.label       "Nhà phát triển Web">
 <!ENTITY webDeveloperMenu.accesskey   "W">
 
 <!ENTITY inspectContextMenu.label     "Kiểm tra phần tử HTML">
-<!ENTITY inspectContextMenu.accesskey "T">
+<!ENTITY inspectContextMenu.accesskey "Q">
 
-<!ENTITY fileMenu.label         "Tập tin"> 
-<!ENTITY fileMenu.accesskey       "T">
+<!ENTITY fileMenu.label         "Tập tin">
+<!ENTITY fileMenu.accesskey       "F">
 <!ENTITY newUserContext.label             "Thẻ ngăn chứa mới">
-<!ENTITY newUserContext.accesskey         "c">
+<!ENTITY newUserContext.accesskey         "B">
 <!ENTITY newNavigatorCmd.label        "Cửa sổ mới">
 <!ENTITY newNavigatorCmd.key        "N">
-<!ENTITY newNavigatorCmd.accesskey      "m">
+<!ENTITY newNavigatorCmd.accesskey      "N">
 <!ENTITY newPrivateWindow.label     "Cửa sổ riêng tư mới">
 <!ENTITY newPrivateWindow.accesskey "W">
 <!ENTITY newNonRemoteWindow.label   "Cửa sổ không e10s mới">
 
-<!ENTITY editMenu.label         "Chỉnh sửa"> 
-<!ENTITY editMenu.accesskey       "C"> 
-<!ENTITY undoCmd.label            "Hoàn tác">  
-<!ENTITY undoCmd.key            "Z">  
-<!ENTITY undoCmd.accesskey          "H"> 
-<!ENTITY redoCmd.label            "Làm lại">  
-<!ENTITY redoCmd.key            "Y">  
-<!ENTITY redoCmd.accesskey          "L"> 
-<!ENTITY cutCmd.label           "Cắt">  
-<!ENTITY cutCmd.key             "X">  
-<!ENTITY cutCmd.accesskey         "t"> 
-<!ENTITY copyCmd.label            "Sao chép">  
-<!ENTITY copyCmd.key            "C">  
-<!ENTITY copyCmd.accesskey          "C"> 
-<!ENTITY pasteCmd.label           "Dán">  
-<!ENTITY pasteCmd.key           "V">  
-<!ENTITY pasteCmd.accesskey         "D"> 
-<!ENTITY deleteCmd.label          "Xóa">  
-<!ENTITY deleteCmd.key            "D">  
-<!ENTITY deleteCmd.accesskey        "X"> 
-<!ENTITY selectAllCmd.label         "Bôi đen hết">  
-<!ENTITY selectAllCmd.key         "A">  
-<!ENTITY selectAllCmd.accesskey       "h"> 
-<!ENTITY preferencesCmd2.label       "Tùy chỉnh">
-<!ENTITY preferencesCmd2.accesskey     "y">
+<!ENTITY editMenu.label         "Chỉnh sửa">
+<!ENTITY editMenu.accesskey       "E">
+<!ENTITY undoCmd.label            "Hoàn tác">
+<!ENTITY undoCmd.key            "Z">
+<!ENTITY undoCmd.accesskey          "U">
+<!ENTITY redoCmd.label            "Làm lại">
+<!ENTITY redoCmd.key            "Y">
+<!ENTITY redoCmd.accesskey          "R">
+<!ENTITY cutCmd.label           "Cắt">
+<!ENTITY cutCmd.key             "X">
+<!ENTITY cutCmd.accesskey         "t">
+<!ENTITY copyCmd.label            "Sao chép">
+<!ENTITY copyCmd.key            "C">
+<!ENTITY copyCmd.accesskey          "C">
+<!ENTITY pasteCmd.label           "Dán">
+<!ENTITY pasteCmd.key           "V">
+<!ENTITY pasteCmd.accesskey         "P">
+<!ENTITY deleteCmd.label          "Xóa">
+<!ENTITY deleteCmd.key            "D">
+<!ENTITY deleteCmd.accesskey        "D">
+<!ENTITY selectAllCmd.label         "Chọn tất cả">
+<!ENTITY selectAllCmd.key         "A">
+<!ENTITY selectAllCmd.accesskey       "A">
+<!ENTITY preferencesCmd2.label       "Tùy chọn">
+<!ENTITY preferencesCmd2.accesskey     "O">
 <!ENTITY preferencesCmdUnix.label       "Tùy chỉnh">
-<!ENTITY preferencesCmdUnix.accesskey     "y"> 
+<!ENTITY preferencesCmdUnix.accesskey     "n">
 
 <!ENTITY clearRecentHistory.label               "Xóa lịch sử gần đây…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
 
-<!ENTITY viewMenu.label         "Hiển thị"> 
-<!ENTITY viewMenu.accesskey       "H"> 
-<!ENTITY viewToolbarsMenu.label       "Thanh công cụ"> 
-<!ENTITY viewToolbarsMenu.accesskey     "c"> 
+<!ENTITY viewMenu.label         "Hiển thị">
+<!ENTITY viewMenu.accesskey       "V">
+<!ENTITY viewToolbarsMenu.label       "Thanh công cụ">
+<!ENTITY viewToolbarsMenu.accesskey     "T">
 <!ENTITY viewSidebarMenu.label "Thanh lề">
-<!ENTITY viewSidebarMenu.accesskey "l">
-<!ENTITY viewCustomizeToolbar.label       "Tùy biến…"> 
-<!ENTITY viewCustomizeToolbar.accesskey     "b">
+<!ENTITY viewSidebarMenu.accesskey "e">
+<!ENTITY viewCustomizeToolbar.label       "Tùy biến…">
+<!ENTITY viewCustomizeToolbar.accesskey     "C">
+<!ENTITY overflowCustomizeToolbar.label       "Tùy biến Thanh công cụ…">
+<!ENTITY overflowCustomizeToolbar.accesskey   "C">
 
-<!ENTITY historyMenu.label "Lược sử">
-<!ENTITY historyMenu.accesskey "L">
+<!ENTITY historyMenu.label "Lịch sử">
+<!ENTITY historyMenu.accesskey "s">
 <!ENTITY historyUndoMenu.label "Thẻ mới đóng gần đây">
 <!-- LOCALIZATION NOTE (historyUndoWindowMenu): see bug 394759 -->
 <!ENTITY historyUndoWindowMenu.label "Các cửa sổ mới đóng">
@@ -344,11 +352,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuCustomize.tooltip "Tùy biến thanh menu và công cụ">
 <!ENTITY appMenuCustomizeExit.label "Thoát chế độ tùy biến">
 <!ENTITY appMenuCustomizeExit.tooltip "Chấp nhận tùy biến">
-<!ENTITY appMenuHistory.label "Lược sử">
 <!ENTITY appMenuHistory.showAll.label "Xem toàn bộ lược sử">
 <!ENTITY appMenuHistory.clearRecent.label "Xóa lược sử gần đây…">
 <!ENTITY appMenuHistory.restoreSession.label "Khôi phục phiên làm việc trước">
 <!ENTITY appMenuHistory.viewSidebar.label "Hiển thị thanh lề lược sử">
+<!ENTITY appMenuHistory.recentHistory.label "Lịch sử gần đây">
 <!ENTITY appMenuHelp.label "Trợ giúp">
 <!ENTITY appMenuHelp.tooltip "Mở menu trợ giúp">
 
@@ -376,17 +384,20 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Đăng nhập để xem danh sách thẻ từ các thiết bị khác của bạn.">
 <!ENTITY appMenuRemoteTabs.signin.label "Đăng nhập vào đồng bộ hóa">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Quản lý thiết bị…">
-<!ENTITY appMenuRemoteTabs.sidebar.label "Xem thanh lề thẻ đã đồng bộ">
+<!ENTITY appMenuRemoteTabs.sidebar.label "Xem các thẻ trên thanh lề đã đồng bộ">
+
+<!ENTITY appMenuRecentHighlights.label "Nổi bật gần đây">
 
 <!ENTITY customizeMenu.addToToolbar.label "Thêm vào thanh công cụ">
-<!ENTITY customizeMenu.addToToolbar.accesskey "c">
+<!ENTITY customizeMenu.addToToolbar.accesskey "A">
 <!ENTITY customizeMenu.addToPanel.label "Thêm vào menu">
-<!ENTITY customizeMenu.addToPanel.accesskey "m">
+<!ENTITY customizeMenu.addToPanel.accesskey "M">
 <!-- LOCALIZATION NOTE (customizeMenu.addToOverflowMenu.label,
      customizeMenu.pinToOverflowMenu.label, customizeMenu.unpinFromOverflowMenu.label)
      The overflow menu is the menu that appears if you click the chevron (>> button)
      in the location bar. These labels are only used in Photon, where you can put
      items into this menu permanently (pinned). -->
+<!ENTITY customizeMenu.addToOverflowMenu.label "Thêm vào menu gợi ý trên thanh địa chỉ">
 <!ENTITY customizeMenu.addToOverflowMenu.accesskey "M">
 <!ENTITY customizeMenu.moveToToolbar.label "Di chuyển vào thanh công cụ">
 <!ENTITY customizeMenu.moveToToolbar.accesskey "D">
@@ -397,12 +408,14 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      keys.  -->
 <!ENTITY customizeMenu.moveToPanel.label "Di chuyển vào menu">
 <!ENTITY customizeMenu.moveToPanel.accesskey "m">
+<!ENTITY customizeMenu.pinToOverflowMenu.label "Gim vào menu gợi ý trên thanh địa chỉ">
 <!ENTITY customizeMenu.pinToOverflowMenu.accesskey "P">
+<!ENTITY customizeMenu.unpinFromOverflowMenu.label "Gỡ khỏi menu gợi ý trên thanh địa chỉ">
 <!ENTITY customizeMenu.unpinFromOverflowMenu.accesskey "U">
 <!ENTITY customizeMenu.removeFromToolbar.label "Xóa khỏi thanh công cụ">
-<!ENTITY customizeMenu.removeFromToolbar.accesskey "X">
+<!ENTITY customizeMenu.removeFromToolbar.accesskey "R">
 <!ENTITY customizeMenu.removeFromMenu.label "Xóa khỏi menu">
-<!ENTITY customizeMenu.removeFromMenu.accesskey "m">
+<!ENTITY customizeMenu.removeFromMenu.accesskey "R">
 <!ENTITY customizeMenu.addMoreItems.label "Thêm mục mới…">
 <!ENTITY customizeMenu.addMoreItems.accesskey "A">
 
@@ -429,6 +442,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (urlbar.searchSuggestionsNotification.hintPrefix): Shown just before the suggestions opt-out hint. -->
 <!ENTITY urlbar.searchSuggestionsNotification.hintPrefix "Mẹo:">
 <!-- LOCALIZATION NOTE (urlbar.searchSuggestionsNotification.hint): &#x1F50E; is the magnifier icon emoji, please don't change it. -->
+<!ENTITY urlbar.searchSuggestionsNotification.hint "Trợ giúp việc tìm kiếm mọi thứ! Tìm icon &#x1F50E; bên cạnh các đề xuất tìm kiếm.">
 <!ENTITY urlbar.searchSuggestionsNotification.changeSettingsWin "Thay đổi tùy chọn…">
 <!ENTITY urlbar.searchSuggestionsNotification.changeSettingsWin.accesskey "C">
 <!ENTITY urlbar.searchSuggestionsNotification.changeSettingsUnix "Thay đổi tùy chỉnh…">
@@ -481,7 +495,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      intentionally left empty for en-US and can be used by other localizations to
      display a string after the search engine name.  This string will be displayed
      as:  "Search <selected engine name><searchAfter.label text>" -->
-<!ENTITY search.label                 "Tìm với ">
+<!ENTITY search.label                 "Tìm ">
 <!ENTITY searchAfter.label            "">
 
 <!-- LOCALIZATION NOTE (searchWithHeader.label):
@@ -496,150 +510,150 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY changeSearchSettings.tooltip "Thay đổi cài đặt tìm kiếm">
 
 <!ENTITY searchInNewTab.label         "Tìm trong thẻ mới">
-<!ENTITY searchInNewTab.accesskey     "t">
+<!ENTITY searchInNewTab.accesskey     "T">
 <!ENTITY searchSetAsDefault.label     "Đặt làm công cụ tìm kiếm mặc định">
-<!ENTITY searchSetAsDefault.accesskey "m">
+<!ENTITY searchSetAsDefault.accesskey "D">
 
 <!ENTITY openLinkCmdInTab.label       "Mở liên kết trong thẻ mới">
-<!ENTITY openLinkCmdInTab.accesskey   "t">
+<!ENTITY openLinkCmdInTab.accesskey   "T">
 <!ENTITY openLinkCmd.label            "Mở liên kết trong cửa sổ mới">
-<!ENTITY openLinkCmd.accesskey        "s">
+<!ENTITY openLinkCmd.accesskey        "W">
 <!ENTITY openLinkInPrivateWindowCmd.label "Mở liên kết trong cửa sổ riêng tư mới">
-<!ENTITY openLinkInPrivateWindowCmd.accesskey "r">
+<!ENTITY openLinkInPrivateWindowCmd.accesskey "P">
 <!ENTITY openLinkCmdInCurrent.label     "Mở liên kết">
-<!ENTITY openLinkCmdInCurrent.accesskey "l">
+<!ENTITY openLinkCmdInCurrent.accesskey "O">
 <!ENTITY openFrameCmdInTab.label      "Mở khung trong thẻ mới">
-<!ENTITY openFrameCmdInTab.accesskey  "t">
+<!ENTITY openFrameCmdInTab.accesskey  "T">
 <!ENTITY openFrameCmd.label           "Mở khung trong cửa sổ mới">
-<!ENTITY openFrameCmd.accesskey       "s">
+<!ENTITY openFrameCmd.accesskey       "W">
+<!ENTITY openLinkCmdInContainerTab.label "Mở lên kết trong thẻ chứa mới">
 <!ENTITY openLinkCmdInContainerTab.accesskey "b">
 <!ENTITY showOnlyThisFrameCmd.label     "Chỉ hiện khung này">
-<!ENTITY showOnlyThisFrameCmd.accesskey "C">
+<!ENTITY showOnlyThisFrameCmd.accesskey "S">
 <!ENTITY reloadCmd.commandkey         "r">
 <!ENTITY reloadFrameCmd.label         "Tải lại khung">
-<!ENTITY reloadFrameCmd.accesskey     "k">
+<!ENTITY reloadFrameCmd.accesskey     "R">
 <!ENTITY viewPartialSourceForSelectionCmd.label "Xem mã nguồn của đoạn bôi đen">
 <!ENTITY viewPartialSourceForMathMLCmd.label    "Xem mã nguồn MathML">
-<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both 
+<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both
          viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label -->
-<!ENTITY viewPartialSourceCmd.accesskey "X">
+<!ENTITY viewPartialSourceCmd.accesskey "e">
 <!ENTITY viewPageSourceCmd.label      "Xem mã nguồn trang">
-<!ENTITY viewPageSourceCmd.accesskey  "m">
+<!ENTITY viewPageSourceCmd.accesskey  "V">
 <!ENTITY viewFrameSourceCmd.label     "Xem mã nguồn khung">
 <!ENTITY viewFrameSourceCmd.accesskey "m">
 <!ENTITY viewPageInfoCmd.label        "Xem thông tin về trang">
-<!ENTITY viewPageInfoCmd.accesskey    "t">
+<!ENTITY viewPageInfoCmd.accesskey    "I">
 <!ENTITY viewFrameInfoCmd.label       "Xem thông tin về khung">
-<!ENTITY viewFrameInfoCmd.accesskey   "v">
+<!ENTITY viewFrameInfoCmd.accesskey   "I">
 <!ENTITY reloadImageCmd.label         "Tải lại hình ảnh">
-<!ENTITY reloadImageCmd.accesskey     "T">
+<!ENTITY reloadImageCmd.accesskey     "R">
 <!ENTITY viewImageCmd.label           "Xem ảnh">
-<!ENTITY viewImageCmd.accesskey       "e">
+<!ENTITY viewImageCmd.accesskey       "I">
 <!ENTITY viewImageInfoCmd.label       "Xem thông tin của ảnh">
-<!ENTITY viewImageInfoCmd.accesskey   "e">
+<!ENTITY viewImageInfoCmd.accesskey   "f">
 <!ENTITY viewImageDescCmd.label       "Xem mô tả">
-<!ENTITY viewImageDescCmd.accesskey   "m">
+<!ENTITY viewImageDescCmd.accesskey   "D">
 <!ENTITY viewVideoCmd.label           "Xem video">
-<!ENTITY viewVideoCmd.accesskey       "e">
+<!ENTITY viewVideoCmd.accesskey       "I">
 <!ENTITY viewBGImageCmd.label         "Xem ảnh nền">
-<!ENTITY viewBGImageCmd.accesskey     "e">
+<!ENTITY viewBGImageCmd.accesskey     "w">
 <!ENTITY setDesktopBackgroundCmd.label      "Đặt làm ảnh nền desktop…">
-<!ENTITY setDesktopBackgroundCmd.accesskey  "d">
+<!ENTITY setDesktopBackgroundCmd.accesskey  "S">
 <!ENTITY bookmarkPageCmd2.label       "Đánh dấu trang này">
 <!ENTITY bookmarkThisLinkCmd.label      "Đánh dấu liên kết này">
-<!ENTITY bookmarkThisLinkCmd.accesskey  "u">
+<!ENTITY bookmarkThisLinkCmd.accesskey  "L">
 <!ENTITY bookmarkThisFrameCmd.label      "Đánh dấu khung này">
-<!ENTITY bookmarkThisFrameCmd.accesskey  "u">
-<!ENTITY copyURLCmd.label             "Sao chép URL">
+<!ENTITY bookmarkThisFrameCmd.accesskey  "m">
+<!ENTITY pageAction.copyLink.label    "Sao chép liên kết">
+<!ENTITY copyURLFeedback.label        "Đã sao chép!">
 <!ENTITY emailPageCmd.label           "Gửi liên kết qua email…">
-<!ENTITY emailPageCmd.accesskey       "e">
+<!ENTITY emailPageCmd.accesskey       "E">
 <!ENTITY savePageCmd.label            "Lưu trang…">
-<!ENTITY savePageCmd.accesskey        "r">
+<!ENTITY savePageCmd.accesskey        "A">
 <!-- alternate for content area context menu -->
-<!ENTITY savePageCmd.accesskey2       "r">
+<!ENTITY savePageCmd.accesskey2       "P">
 <!ENTITY savePageCmd.commandkey       "s">
 <!ENTITY saveFrameCmd.label           "Lưu khung thành…">
-<!ENTITY saveFrameCmd.accesskey       "k">
+<!ENTITY saveFrameCmd.accesskey       "F">
 <!ENTITY printFrameCmd.label          "In khung…">
-<!ENTITY printFrameCmd.accesskey      "I">
+<!ENTITY printFrameCmd.accesskey      "P">
 <!ENTITY saveLinkCmd.label            "Lưu liên kết…">
-<!ENTITY saveLinkCmd.accesskey        "L">
+<!ENTITY saveLinkCmd.accesskey        "k">
 <!ENTITY saveImageCmd.label           "Lưu ảnh…">
-<!ENTITY saveImageCmd.accesskey       "n">
+<!ENTITY saveImageCmd.accesskey       "v">
 <!ENTITY saveVideoCmd.label           "Lưu video…">
-<!ENTITY saveVideoCmd.accesskey       "u">
+<!ENTITY saveVideoCmd.accesskey       "v">
 <!ENTITY saveAudioCmd.label           "Lưu audio…">
 <!ENTITY saveAudioCmd.accesskey       "v">
 <!ENTITY emailImageCmd.label          "Gửi ảnh qua email…">
-<!ENTITY emailImageCmd.accesskey      "q">
+<!ENTITY emailImageCmd.accesskey      "g">
 <!ENTITY emailVideoCmd.label          "Gửi video qua email…">
-<!ENTITY emailVideoCmd.accesskey      "v">
-<!ENTITY castVideoCmd.label           "Gửi video tới thiết bị">
-<!ENTITY castVideoCmd.accesskey       "G">
+<!ENTITY emailVideoCmd.accesskey      "a">
 <!ENTITY emailAudioCmd.label          "Gửi audio qua email…">
 <!ENTITY emailAudioCmd.accesskey      "a">
 <!ENTITY playPluginCmd.label          "Kích hoạt plugin này">
 <!ENTITY playPluginCmd.accesskey      "K">
 <!ENTITY hidePluginCmd.label          "Ẩn plugin này">
-<!ENTITY hidePluginCmd.accesskey      "l">
+<!ENTITY hidePluginCmd.accesskey      "H">
 <!ENTITY copyLinkCmd.label            "Sao chép địa chỉ liên kết">
 <!ENTITY copyLinkCmd.accesskey        "a">
 <!ENTITY copyImageCmd.label           "Sao chép địa chỉ ảnh">
-<!ENTITY copyImageCmd.accesskey       "p">
+<!ENTITY copyImageCmd.accesskey       "o">
 <!ENTITY copyImageContentsCmd.label   "Sao chép ảnh">
-<!ENTITY copyImageContentsCmd.accesskey  "c"> 
+<!ENTITY copyImageContentsCmd.accesskey  "y">
 <!ENTITY copyVideoURLCmd.label        "Chép địa chỉ video">
-<!ENTITY copyVideoURLCmd.accesskey    "C">
+<!ENTITY copyVideoURLCmd.accesskey    "o">
 <!ENTITY copyAudioURLCmd.label        "Chép địa chỉ audio">
-<!ENTITY copyAudioURLCmd.accesskey    "p">
+<!ENTITY copyAudioURLCmd.accesskey    "o">
 <!ENTITY copyEmailCmd.label           "Chép địa chỉ email">
-<!ENTITY copyEmailCmd.accesskey       "e">
+<!ENTITY copyEmailCmd.accesskey       "E">
 <!ENTITY thisFrameMenu.label              "Khung này">
-<!ENTITY thisFrameMenu.accesskey          "y">
+<!ENTITY thisFrameMenu.accesskey          "h">
 
 <!-- Media (video/audio) controls -->
 <!-- LOCALIZATION NOTE: The access keys for "Play" and
 "Pause" are the same because the two context-menu
 items are mutually exclusive. -->
-<!ENTITY mediaPlay.label             "Bật">
-<!ENTITY mediaPlay.accesskey         "B">
+<!ENTITY mediaPlay.label             "Phát">
+<!ENTITY mediaPlay.accesskey         "P">
 <!ENTITY mediaPause.label            "Tạm dừng">
 <!ENTITY mediaPause.accesskey        "m">
 <!-- LOCALIZATION NOTE: The access keys for "Mute" and
 "Unmute" are the same because the two context-menu
 items are mutually exclusive. -->
 <!ENTITY mediaMute.label             "Tắt tiếng">
-<!ENTITY mediaMute.accesskey         "T">
+<!ENTITY mediaMute.accesskey         "M">
 <!ENTITY mediaUnmute.label           "Bật tiếng">
-<!ENTITY mediaUnmute.accesskey       "B">
+<!ENTITY mediaUnmute.accesskey       "m">
 <!ENTITY mediaPlaybackRate2.label     "Tốc độ phát">
-<!ENTITY mediaPlaybackRate2.accesskey "t">
+<!ENTITY mediaPlaybackRate2.accesskey "d">
 <!ENTITY mediaPlaybackRate050x2.label "Chậm (0,5×)">
-<!ENTITY mediaPlaybackRate050x2.accesskey "C">
+<!ENTITY mediaPlaybackRate050x2.accesskey "S">
 <!ENTITY mediaPlaybackRate100x2.label "Bình thường">
 <!ENTITY mediaPlaybackRate100x2.accesskey "N">
 <!ENTITY mediaPlaybackRate125x2.label "Nhanh (1,25×)">
-<!ENTITY mediaPlaybackRate125x2.accesskey "N">
+<!ENTITY mediaPlaybackRate125x2.accesskey "F">
 <!ENTITY mediaPlaybackRate150x2.label "Nhanh hơn (1,5×)">
-<!ENTITY mediaPlaybackRate150x2.accesskey "h">
+<!ENTITY mediaPlaybackRate150x2.accesskey "a">
 <!-- LOCALIZATION NOTE: "Ludicrous" is a reference to the
 movie "Space Balls" and is meant to say that this speed is very
 fast. -->
 <!ENTITY mediaPlaybackRate200x2.label "Rất nhanh (2×)">
-<!ENTITY mediaPlaybackRate200x2.accesskey "R">
+<!ENTITY mediaPlaybackRate200x2.accesskey "L">
 <!ENTITY mediaLoop.label             "Lặp">
 <!ENTITY mediaLoop.accesskey         "L">
 <!-- LOCALIZATION NOTE: The access keys for "Show Controls" and
 "Hide Controls" are the same because the two context-menu
 items are mutually exclusive. -->
 <!ENTITY mediaShowControls.label     "Hiện điều khiển">
-<!ENTITY mediaShowControls.accesskey "k">
+<!ENTITY mediaShowControls.accesskey "C">
 <!ENTITY mediaHideControls.label     "Ẩn điều khiển">
-<!ENTITY mediaHideControls.accesskey "k">
+<!ENTITY mediaHideControls.accesskey "C">
 <!ENTITY videoFullScreen.label       "Toàn màn hình">
-<!ENTITY videoFullScreen.accesskey   "o">
+<!ENTITY videoFullScreen.accesskey   "F">
 <!ENTITY videoSaveImage.label        "Lưu ảnh chụp màn hình…">
-<!ENTITY videoSaveImage.accesskey    "L">
+<!ENTITY videoSaveImage.accesskey    "S">
 <!-- LOCALIZATION NOTE: The access keys for "Show Statistics" and
 "Hide Statistics" are the same because the two context-menu
 items are mutually exclusive. -->
@@ -655,42 +669,42 @@ If shift key is needed with your locale popular keyboard for them,
 you can use these alternative items. Otherwise, their values should be empty.  -->
 
 <!ENTITY fullZoomEnlargeCmd.label       "Phóng to">
-<!ENTITY fullZoomEnlargeCmd.accesskey   "P">
+<!ENTITY fullZoomEnlargeCmd.accesskey   "I">
 <!ENTITY fullZoomEnlargeCmd.commandkey  "+">
 <!ENTITY fullZoomEnlargeCmd.commandkey2 "="> <!-- + is above this key on many keyboards -->
 <!ENTITY fullZoomEnlargeCmd.commandkey3 "">
 
 <!ENTITY fullZoomReduceCmd.label        "Thu nhỏ">
-<!ENTITY fullZoomReduceCmd.accesskey    "T">
+<!ENTITY fullZoomReduceCmd.accesskey    "O">
 <!ENTITY fullZoomReduceCmd.commandkey   "-">
 <!ENTITY fullZoomReduceCmd.commandkey2  "">
 
-<!ENTITY fullZoomResetCmd.label         "Mặc định">
-<!ENTITY fullZoomResetCmd.accesskey     "M">
+<!ENTITY fullZoomResetCmd.label         "Đặt lại">
+<!ENTITY fullZoomResetCmd.accesskey     "R">
 <!ENTITY fullZoomResetCmd.commandkey    "0">
 <!ENTITY fullZoomResetCmd.commandkey2   "">
 
-<!ENTITY fullZoomToggleCmd.label        "Chỉ áp dụng cho văn bản">
-<!ENTITY fullZoomToggleCmd.accesskey    "v">
+<!ENTITY fullZoomToggleCmd.label        "Chỉ phóng to văn bản">
+<!ENTITY fullZoomToggleCmd.accesskey    "T">
 <!ENTITY fullZoom.label                 "Chỉnh kích thước">
-<!ENTITY fullZoom.accesskey             "C">
+<!ENTITY fullZoom.accesskey             "Z">
 
 <!ENTITY sidebarCloseButton.tooltip     "Đóng thanh lề">
-<!ENTITY sidebarMenuClose.label         "Đóng thanh lề">
+<!ENTITY sidebarMenuClose.label         "Đóng Thanh lề">
 
 <!ENTITY quitApplicationCmdWin2.label       "Thoát">
 <!ENTITY quitApplicationCmdWin2.accesskey   "o">
 <!ENTITY quitApplicationCmdWin2.tooltip     "Thoát &brandShorterName;">
 <!ENTITY goBackCmd.commandKey "[">
 <!ENTITY goForwardCmd.commandKey "]">
-<!ENTITY quitApplicationCmd.label       "Thoát"> 
-<!ENTITY quitApplicationCmd.accesskey   "o">
+<!ENTITY quitApplicationCmd.label       "Thoát">
+<!ENTITY quitApplicationCmd.accesskey   "Q">
 <!ENTITY quitApplicationCmdMac2.label   "Thoát &brandShorterName;">
 <!ENTITY quitApplicationCmd.key         "Q">
 
-<!ENTITY closeCmd.label                 "Đóng">  
-<!ENTITY closeCmd.key                   "W">  
-<!ENTITY closeCmd.accesskey             "g">
+<!ENTITY closeCmd.label                 "Đóng">
+<!ENTITY closeCmd.key                   "W">
+<!ENTITY closeCmd.accesskey             "C">
 
 <!ENTITY toggleMuteCmd.key              "M">
 
@@ -709,26 +723,26 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      over into this string, which is used in the "popup blocked" info bar . -->
 <!ENTITY editPopupSettingsUnix.label "Tùy chỉnh chặn popup…">
 <!ENTITY editPopupSettings.label "Tùy chỉnh chặn popup…">
-<!ENTITY editPopupSettings.accesskey "c">
-<!ENTITY dontShowMessage.accesskey "K">
+<!ENTITY editPopupSettings.accesskey "E">
+<!ENTITY dontShowMessage.accesskey "D">
 
 <!ENTITY bidiSwitchPageDirectionItem.label        "Đổi hướng của trang">
-<!ENTITY bidiSwitchPageDirectionItem.accesskey    "h">
+<!ENTITY bidiSwitchPageDirectionItem.accesskey    "D">
 <!ENTITY bidiSwitchTextDirectionItem.label        "Đổi hướng của văn bản">
-<!ENTITY bidiSwitchTextDirectionItem.accesskey    "v">
+<!ENTITY bidiSwitchTextDirectionItem.accesskey    "w">
 <!ENTITY bidiSwitchTextDirectionItem.commandkey   "X">
 
 <!ENTITY findOnCmd.label     "Tìm trong trang này…">
-<!ENTITY findOnCmd.accesskey "T">
+<!ENTITY findOnCmd.accesskey "F">
 <!ENTITY findOnCmd.commandkey "f">
 <!ENTITY findAgainCmd.label  "Tìm lại">
-<!ENTITY findAgainCmd.accesskey "i">
+<!ENTITY findAgainCmd.accesskey "g">
 <!ENTITY findAgainCmd.commandkey "g">
 <!ENTITY findAgainCmd.commandkey2 "VK_F3">
 <!ENTITY findSelectionCmd.commandkey "e">
 
 <!ENTITY spellAddDictionaries.label "Thêm từ điển…">
-<!ENTITY spellAddDictionaries.accesskey "T">
+<!ENTITY spellAddDictionaries.accesskey "A">
 
 <!ENTITY editBookmark.done.label                     "Xong">
 <!ENTITY editBookmark.removeBookmark.accessKey       "R">
@@ -760,13 +774,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.description.activeLoaded2 "Thông tin bạn chia sẻ với trang này có thể bị thấy bởi người khác (ví dụ: mật khẩu, tin nhắn, thẻ tín dụng).">
 
 <!ENTITY identity.enableMixedContentBlocking.label "Bật bảo vệ">
-<!ENTITY identity.enableMixedContentBlocking.accesskey "B">
+<!ENTITY identity.enableMixedContentBlocking.accesskey "E">
 <!ENTITY identity.disableMixedContentBlocking.label "Tạm thời tắt bảo vệ">
-<!ENTITY identity.disableMixedContentBlocking.accesskey "T">
+<!ENTITY identity.disableMixedContentBlocking.accesskey "D">
 <!ENTITY identity.learnMore "Tìm hiểu thêm">
 
 <!ENTITY identity.removeCertException.label "Loại bỏ ngoại lệ">
-<!ENTITY identity.removeCertException.accesskey "o">
+<!ENTITY identity.removeCertException.accesskey "R">
 
 <!ENTITY identity.moreInfoLinkText2 "Thông tin thêm">
 
@@ -791,21 +805,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Bật đồng bộ thẻ để xem danh sách thẻ từ các thiết bị khác của bạn.">
+<!ENTITY syncedTabs.sidebar.searchPlaceholder  "Tìm các thẻ đã đồng bộ">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
                         syncedTabs.context.openAllInTabs.accesskey):
      These access keys are identical because their associated menu items are
      mutually exclusive -->
 <!ENTITY syncedTabs.context.open.label                       "Mở">
-<!ENTITY syncedTabs.context.open.accesskey                   "M">
+<!ENTITY syncedTabs.context.open.accesskey                   "O">
 <!ENTITY syncedTabs.context.openInNewTab.label               "Mở trong thẻ mới">
-<!ENTITY syncedTabs.context.openInNewTab.accesskey           "o">
+<!ENTITY syncedTabs.context.openInNewTab.accesskey           "w">
 <!ENTITY syncedTabs.context.openInNewWindow.label            "Mở trong cửa sổ mới">
-<!ENTITY syncedTabs.context.openInNewWindow.accesskey        "m">
+<!ENTITY syncedTabs.context.openInNewWindow.accesskey        "N">
 <!ENTITY syncedTabs.context.openInNewPrivateWindow.label     "Mở trong cửa sổ riêng tư mới">
-<!ENTITY syncedTabs.context.openInNewPrivateWindow.accesskey "r">
+<!ENTITY syncedTabs.context.openInNewPrivateWindow.accesskey "P">
 <!ENTITY syncedTabs.context.bookmarkSingleTab.label          "Đánh dấu thẻ này…">
-<!ENTITY syncedTabs.context.bookmarkSingleTab.accesskey      "d">
+<!ENTITY syncedTabs.context.bookmarkSingleTab.accesskey      "B">
 <!ENTITY syncedTabs.context.copy.label                       "Sao chép">
 <!ENTITY syncedTabs.context.copy.accesskey                   "C">
 
@@ -815,30 +830,23 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncedTabs.context.managedevices.accesskey          "D">
 
 
-<!ENTITY syncBrand.shortName.label    "Sync">
+<!ENTITY syncBrand.shortName.label    "Đồng bộ">
 
 <!ENTITY syncSignIn.label             "Đăng nhập vào &syncBrand.shortName.label;…">
 <!ENTITY syncSignIn.accesskey         "Y">
 <!ENTITY syncSyncNowItem.label        "Đồng bộ Ngay">
-<!ENTITY syncSyncNowItem.accesskey    "a">
+<!ENTITY syncSyncNowItem.accesskey    "S">
 <!ENTITY syncReAuthItem.label         "Kết nối lại với &syncBrand.shortName.label;…">
 <!ENTITY syncReAuthItem.accesskey     "R">
 <!ENTITY syncToolbarButton.label      "Đồng bộ">
 
-<!ENTITY social.addons.label "Quản lý dịch vụ...">
-
-<!ENTITY social.directory.label "Danh mục các dịch vụ mạng xã hội">
-<!ENTITY social.directory.text "Bạn có thể thêm các dịch vụ chia sẻ từ danh mục.">
-<!ENTITY social.directory.button "Truy cập ngay!">
-<!ENTITY social.directory.introText "Nhấn vào một dịch vụ để thêm vào &brandShortName;.">
-<!ENTITY social.directory.viewmore.text "Xem thêm">
-
-<!ENTITY customizeMode.menuAndToolbars.header2 "Các công cụ và tính năng bổ trợ">
+<!ENTITY customizeMode.menuAndToolbars.header3 "Kéo mục yêu thích của bạn vào thanh công cụ hoặc bảng chọn.">
 <!ENTITY customizeMode.menuAndToolbars.empty "Bạn muốn có thêm nhiều công cụ?">
 <!ENTITY customizeMode.menuAndToolbars.emptyLink "Lựa chọn từ hàng ngàn tiện ích khác nhau">
 <!ENTITY customizeMode.restoreDefaults "Khôi phục &amp;mặc định">
 <!ENTITY customizeMode.done "Hoàn tất">
 <!ENTITY customizeMode.titlebar "Thanh tiêu đề">
+<!ENTITY customizeMode.extraDragSpace "Kéo khoảng trắng">
 <!ENTITY customizeMode.toolbars2 "Thanh công cụ">
 <!ENTITY customizeMode.lwthemes "Diện mạo">
 <!ENTITY customizeMode.lwthemes.myThemes "Diện mạo của tôi">
@@ -847,6 +855,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.lwthemes.menuManage.accessKey "Q">
 <!ENTITY customizeMode.lwthemes.menuGetMore "Tải thêm các diện mạo">
 <!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "T">
+<!ENTITY customizeMode.emptyOverflowList.description "Kéo và thả các mục dưới đây để giữ chúng trong tầm tay, nhưng ra khỏi thanh công cụ của bạn…">
 <!ENTITY customizeMode.uidensity "Mật độ">
 <!-- LOCALIZATION NOTE (customizeMode.uidensity.menuNormal.*):
      “Normal” is displayed in the Customize screen, under the Density menu. -->
@@ -866,6 +875,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.uidensity.menuTouch.label "Chạm">
 <!ENTITY customizeMode.uidensity.menuTouch.tooltip "Chạm">
 <!ENTITY customizeMode.uidensity.menuTouch.accessKey "T">
+<!ENTITY customizeMode.uidensity.autoTouchMode.checkbox.label "Sử dụng Cảm ứng cho chế độ máy tính bảng">
+
+<!ENTITY customizeMode.autoHideDownloadsButton.label "Tự động ẩn">
 
 <!ENTITY getUserMedia.selectCamera.label "Chia sẻ camera:">
 <!ENTITY getUserMedia.selectCamera.accesskey "c">
@@ -882,27 +894,17 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in NON-private browsing mode. -->
 <!ENTITY trackingProtection.unblock.label "Tắt bảo vệ cho trang này">
-<!ENTITY trackingProtection.unblock.accesskey "T">
+<!ENTITY trackingProtection.unblock.accesskey "D">
 <!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate.label, trackingProtection.unblockPrivate.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in PRIVATE browsing mode. -->
 <!ENTITY trackingProtection.unblockPrivate.label "Tắt bảo vệ cho phiên này">
-<!ENTITY trackingProtection.unblockPrivate.accesskey "T">
+<!ENTITY trackingProtection.unblockPrivate.accesskey "D">
 <!ENTITY trackingProtection.block2.label "Bật bảo vệ">
-<!ENTITY trackingProtection.block2.accesskey "B">
-
-<!ENTITY trackingContentBlocked.message "Theo dõi">
-<!ENTITY trackingContentBlocked.moreinfo "Một số thành phần của trang web này có thể theo dõi hoạt động trên mạng của bạn và đã bị chặn.">
-<!ENTITY trackingContentBlocked.learnMore "Tìm hiểu thêm">
-<!ENTITY trackingContentBlocked.options "Tùy chỉnh">
-<!ENTITY trackingContentBlocked.unblock2.label "Tắt bảo vệ cho trang web này">
-<!ENTITY trackingContentBlocked.unblock2.accesskey "T">
-<!ENTITY trackingContentBlocked.block.label "Bật bảo vệ">
-<!ENTITY trackingContentBlocked.block.accesskey "B">
-<!ENTITY trackingContentBlocked.disabled.message "Chế độ chống theo dõi đã bị tắt">
+<!ENTITY trackingProtection.block2.accesskey "E">
 
 <!ENTITY pluginNotification.showAll.label "Hiện tất cả">
-<!ENTITY pluginNotification.showAll.accesskey "H">
+<!ENTITY pluginNotification.showAll.accesskey "S">
 
 <!-- LOCALIZATION NOTE (pluginActivateNow.label, pluginActivateAlways.label, pluginBlockNow.label): These should be the same as the matching strings in browser.properties -->
 <!ENTITY pluginActivateNow.label "Cho phép một lần">
@@ -917,8 +919,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pluginNotification.width "28em">
 
 <!ENTITY uiTour.infoPanel.close "Đóng">
-
-<!ENTITY appMenuSidebars.label         "Thanh lề">
 
 <!-- LOCALIZATION NOTE: (panicButton.view.mainTimeframeDesc, panicButton.view.5min, panicButton.view.2hr, panicButton.view.day):
      The .mainTimeframeDesc string combined with any of the 3 others is meant to form a complete sentence, e.g. "Forget the last: Five minutes".
@@ -948,6 +948,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY emeLearnMoreContextMenu.label            "Tìm hiểu thêm về DRM…">
 <!ENTITY emeLearnMoreContextMenu.accesskey        "D">
 
+<!ENTITY updateAvailable.message "Cập nhật &brandShorterName; bản mới nhất để cải thiện tốc độ và bảo mật.">
 <!ENTITY updateAvailable.whatsnew.label "Xem có gì mới.">
 <!ENTITY updateAvailable.header.message "Một bản cập nhật &brandShorterName; mới đã sẵn sàng.">
 <!ENTITY updateAvailable.acceptButton.label "Tải bản cập nhật">
@@ -956,13 +957,16 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.cancelButton.accesskey "N">
 <!ENTITY updateAvailable.panelUI.label "Tải bản cập nhật &brandShorterName;">
 
+<!ENTITY updateManual.message "Tải về bản sao của &brandShorterName; và chúng tôi sẽ giúp bạn cài đặt nó.">
 <!ENTITY updateManual.whatsnew.label "Xem có gì mới.">
 <!ENTITY updateManual.header.message "&brandShorterName; không thể cập nhật lên phiên bản mới nhất.">
 <!ENTITY updateManual.acceptButton.label "Tải &brandShorterName;">
 <!ENTITY updateManual.acceptButton.accesskey "D">
 <!ENTITY updateManual.cancelButton.label "Không phải bây giờ">
 <!ENTITY updateManual.cancelButton.accesskey "N">
+<!ENTITY updateManual.panelUI.label "Tải về bản sao của &brandShorterName;">
 
+<!ENTITY updateRestart.message2 "Sau khi khởi động lại, &brandShorterName; sẽ khôi phục toàn bộ những thẻ đang mở và cửa sổ của bạn mà không ở chế độ duyệt web riêng tư.">
 <!ENTITY updateRestart.header.message2 "Khởi động lại để cập nhật &brandShorterName;.">
 <!ENTITY updateRestart.acceptButton.label "Khởi động lại và khôi phục">
 <!ENTITY updateRestart.acceptButton.accesskey "R">
@@ -970,9 +974,17 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "N">
 <!ENTITY updateRestart.panelUI.label2 "Khởi động lại để cập nhật &brandShorterName;">
 
+<!ENTITY pageActionButton.tooltip "Hành động trên trang">
+<!ENTITY pageAction.addToUrlbar.label "Thêm vào thanh địa chỉ">
+<!ENTITY pageAction.removeFromUrlbar.label "Xóa khỏi thanh địa chỉ">
 
-<!ENTITY sendToDevice.label2 "Gửi đến thiết bị">
-<!ENTITY sendToDevice.viewTitle "Gửi tới thiết bị">
-<!ENTITY sendToDevice.fxaRequired.label "Cần thiết">
-<!ENTITY sendToDevice.noDevices.label "Không có sẵn thiết bị nào">
+<!ENTITY pageAction.sendTabToDevice.label "Gửi thẻ tới thiết bị">
 <!ENTITY sendToDevice.syncNotReady.label "Đang đồng bộ các thiết bị…">
+
+<!ENTITY libraryButton.tooltip "Xem lịch sử, lưu trang đánh dấu và nhiều hơn nữa">
+
+<!-- LOCALIZATION NOTE: (accessibilityIndicator.tooltip): This is used to
+     display a tooltip for accessibility indicator in toolbar/tabbar. It is also
+     used as a textual label for the indicator used by assistive technology
+     users. -->
+<!ENTITY accessibilityIndicator.tooltip "Chức năng về khả năng truy cập đã được bật">

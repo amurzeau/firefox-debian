@@ -5,7 +5,7 @@
 <!ENTITY  security.label                 "Tekorosã">
 <!ENTITY  phishingProtection.label       "Ñemo'ã phishing rovak">
 
-<!ENTITY  warnOnAddonInstall2.label       "Ehechakuaa oĩ jave ñanduti renda omohendaséva moĩmbaha">
+<!ENTITY  warnOnAddonInstall2.label       "Ehechakuaa oĩ jave tenda omohendaséva moĩmbaha.">
 <!ENTITY  warnOnAddonInstall2.accesskey   "E">
 <!-- LOCALIZATION NOTE (enableSafeBrowsing.label, blockDownloads.label, blockUncommonUnwanted.label):
   It is important that wording follows the guidelines outlined on this page:

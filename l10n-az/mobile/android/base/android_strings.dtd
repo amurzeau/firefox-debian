@@ -3,9 +3,14 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY firstrun_panel_title_welcome "Xoş Gəldiniz">
-
-<!ENTITY firstrun_urlbar_message "&brandShortName; səyyahına xoş gəlmisiniz">
-<!ENTITY firstrun_urlbar_subtext "Axtarış təklifləri qısa yolları ilə hər şeyi daha sürətli tapın.">
+<!ENTITY firstrun_urlbar_message2 "&brandShortName; seçdiyiniz üçün təşəkkürlər">
+<!ENTITY firstrun_urlbar_subtext2 "Azad və açıq internet üçün əlləşən qeyri-kommersiyal Mozilladan müasir mobil səyyah.">
+<!ENTITY firstrun_panel_title_privacy "Məxfilik">
+<!ENTITY firstrun_privacy_message "Başqalarınız izləməsindən narahat olmadan internetdə gəzin">
+<!ENTITY firstrun_privacy_subtext "İzlənmə Qoruması ilə Məxfi Səyahət internetdə gəzərkən izləyiciləri bloklayır və işiniz bitdikdən sonra hər şeyi unudur.">
+<!ENTITY firstrun_panel_title_customize "Fərdiləşdir">
+<!ENTITY firstrun_customize_message "&brandShortName; səyyahını zövqünüzə görə dəyişdirin.">
+<!ENTITY firstrun_customize_subtext "&brandShortName; səyyahını əlavələrlə fərdiləşdirin. Reklamları bloklayın, yeni özəlliklər əlavə edin və ya zövqünüzə uyğun mövzuları seçin.">
 <!ENTITY firstrun_bookmarks_title "Tarixçə">
 <!ENTITY firstrun_bookmarks_message "Sizin istəyiniz, ön və mərkəz">
 <!ENTITY firstrun_bookmarks_subtext "Axtarış zamanı əlfəcin və tarixçənizdən nəticələr əldə edin.">
@@ -13,8 +18,8 @@
 <!ENTITY firstrun_data_message "Az data, çox qənaət">
 <!ENTITY firstrun_data_subtext2 "Şəkilləri söndürərək ziyarət etdiyiniz hər saytda daha az data xərcləyin.">
 <!ENTITY firstrun_sync_title "Sync">
-<!ENTITY firstrun_sync_message "&brandShortName;, hər zaman sizin tərəfinizdə">
-<!ENTITY firstrun_sync_subtext "İşlətdiyiniz hər yerdə vərəq, parol və daha məlumatınızı sinxronlaşdırın.">
+<!ENTITY firstrun_sync_message2 "Qaldığınız yerdən davam edin.">
+<!ENTITY firstrun_sync_subtext2 "Sync ilə istədiyiniz cihazınızdan &brandShortName; səyyahına saxladığınız əlfəcin, parol və digər şeyləri rahatlıqla tapın.">
 <!ENTITY firstrun_signin_message "Qoşul, Başla">
 <!ENTITY firstrun_signin_button "Sync-ə Daxil ol">
 <!ENTITY  onboard_start_button_browser "Səyahətə Başla">
@@ -87,6 +92,7 @@
      in the folder. -->
 <!ENTITY bookmark_folder_items "&formatD; element">
 <!ENTITY bookmark_folder_one_item "1 element">
+<!ENTITY bookmark_folder_updated "Qovluq yeniləndi">
 <!ENTITY bookmark_parent_folder "Üst Qovluq">
 <!ENTITY bookmark_add_folder "Yeni qovluq əlavə et">
 
@@ -201,8 +207,6 @@
 <!ENTITY pref_category_advanced_summary3 "Vərəqləri bərpa et, məlumat saxlayıcısı, tərtibatçı alətləri">
 <!ENTITY pref_category_notifications "Bildirişlər">
 <!ENTITY pref_category_notifications_summary "Yeni özəlliklər, sayt yeniləmələri">
-<!ENTITY pref_content_notifications "Sayt yeniləmələri">
-<!ENTITY pref_content_notifications_summary2 "Dəstəklənən saytlardan yeni məzmunları kəşf et">
 <!ENTITY pref_developer_remotedebugging_usb "USB ilə məsafəli sazlama">
 <!ENTITY pref_developer_remotedebugging_wifi "Wi-Fi ilə məsafəli sazlama">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Wi-Fi sazlama üçün cihazınızda QR kod oxuyucu tətbiqi qurulmalıdır.">
@@ -268,7 +272,6 @@
 <!ENTITY pref_show_web_fonts_summary2 "Səhifəni yükləyərkən uzaq şriftləri endir">
 
 <!ENTITY pref_tracking_protection_title2 "İzlənmə Qoruması">
-<!ENTITY pref_tracking_protection_summary3 "Məxfi Səyahətdə aktivdir">
 <!ENTITY pref_donottrack_title "Məni izləmə">
 <!ENTITY pref_donottrack_summary "&brandShortName; saytlara izlənmək istəmədiyinizi xəbər edəcək">
 
@@ -283,11 +286,6 @@
      for experimental features. -->
 <!ENTITY pref_category_experimental "Eksperimental özəlliklər">
 
-<!-- Custom Tabs is an Android API for allowing third-party apps to open URLs in a customized UI.
-     Instead of switching to the browser it appears as if the user stays in the third-party app.
-     For more see: https://developer.chrome.com/multidevice/android/customtabs -->
-<!ENTITY pref_custom_tabs "Fərdi Vərəqlər">
-<!ENTITY pref_custom_tabs_summary3 "Tətbiqlərə saytları &brandShortName; səyyahının fərdiləşdirilmiş versiyası ilə açmağa icazə ver">
 <!-- Localization note (custom_tabs_menu_item_open_in): The variable is replaced by the name of
      default browser from user's preference, such as "Open in Firefox" -->
 <!ENTITY custom_tabs_menu_item_open_in "&formatS; ilə aç">
@@ -297,10 +295,6 @@
 
 <!ENTITY pref_pwa "Proqressiv Web Tətbiqlər">
 <!ENTITY pref_pwa_summary "Web tətbiqlərin ana ekrana əlavə edilməsinə icazə ver">
-
-<!-- Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream  -->
-<!ENTITY pref_activity_stream "Aktivlik Axını">
-<!ENTITY pref_activity_stream_summary "Zəngin vizual tarixçə axını və yenidən qurulmuş ana səhifə &brandShortName; səyyahında axtardığınız şeyləri həmişəkindən çox daha asan tapmağı təmin edir.">
 
 <!ENTITY tracking_protection_prompt_title "Artıq İzləmə Qoruması ilə">
 <!ENTITY tracking_protection_prompt_text "İzləmə elementlərini aktiv əngəlləyin və narahat olmanıza əsas qalmasın.">
@@ -334,23 +328,6 @@
      has been queued but we are missing the system permission to show an overlay. -->
 <!ENTITY tab_queue_notification_settings "Çox keçidi açmaq üçün lütfən &brandShortName; səyyahı üçün Digər tətbiqlərin üzərinə çəkmə (Draw over other apps) icazəsi verin">
 
-<!ENTITY content_notification_summary "&brandShortName;">
-<!-- Localization note (content_notification_title_plural): &formatD; will be replaced with the number of websites that
-     have been updated (new content is available). The number of websites is always more than one (>= 2). For a single
-     update the website title is used instead of this string.
-     We can't use Android plural forms, sadly. See Bug #753859. -->
-<!ENTITY content_notification_title_plural "&formatD; sayt yenilənib">
-<!-- Localization note (content_notification_action_settings2): This label will be shown as an action in a content notification.
-     Clicking the action will jump to the notification settings of the app. -->
-<!ENTITY content_notification_action_settings2 "Tənzimləmələr">
-<!-- Localization note(content_notification_action_read_now): This label will be shown as an action in a content notification.
-     Clicking the action will open all new content in the browser. -->
-<!ENTITY content_notification_action_read_now "İndi oxu">
-<!-- Localization note (content_notification_updated_on): &formatS; will be replaced with a medium sized version of the
-     date, depending on locale. For en_US this is for example: Feb 24, 2016. For more details see the Android developer
-     documentation for DateFormat.getMediumDateFormat(). -->
-<!ENTITY content_notification_updated_on "&formatS; tarixində yenilənib">
-
 <!ENTITY pref_char_encoding "Simvol kodlaşdırması">
 <!ENTITY pref_char_encoding_on "Menyunu göstər">
 <!ENTITY pref_char_encoding_off "Menyunu göstərmə">
@@ -359,12 +336,8 @@
      The action is shown below a header saying "Clear private data"; See pref_clear_private_data -->
 <!ENTITY pref_clear_private_data_now_tablet "İndi təmizlə">
 <!ENTITY pref_clear_on_exit_title3 "Şəxsi məlumatları çıxışda təmizlə">
-<!ENTITY pref_clear_on_exit_summary2 "Əsas menyudan \u0022Çıx\u0022 seçdiyiniz zaman &brandShortName; sizin məlumatlarınız avtomatik təmizləyəcək">
+<!ENTITY pref_clear_on_exit_summary2 "Əsas menyudan \&quot;Çıx\&quot; seçdiyiniz zaman &brandShortName; sizin məlumatlarınız avtomatik təmizləyəcək">
 <!ENTITY pref_clear_on_exit_dialog_title "Hansı məlumatın təmizlənəcəyini seçin">
-<!ENTITY pref_plugins "Qoşmalar">
-<!ENTITY pref_plugins_enabled "Aktiv">
-<!ENTITY pref_plugins_tap_to_play2 "Oxutmaq üçün toxun">
-<!ENTITY pref_plugins_disabled "Söndürülüb">
 <!ENTITY pref_restore_tabs "Vərəqləri bərpa et">
 <!ENTITY pref_restore_always "Həmişə bərpa et">
 <!ENTITY pref_restore_quit "&brandShortName; səyyahından çıxdıqdan sonra bərpa etmə">
@@ -413,6 +386,9 @@
 <!ENTITY pref_dialog_set_default "Ön qurğulu olaraq seç">
 <!ENTITY pref_dialog_default "İlkin hal">
 <!ENTITY pref_dialog_remove "Sil">
+<!ENTITY pref_dialog_activitystream_header_content "Əlavə məzmun">
+<!ENTITY pref_dialog_activitystream_recentBookmarks "Yeni Əlfəcinlər">
+<!ENTITY pref_dialog_activitystream_visited "Ziyarət edilmiş">
 
 <!ENTITY pref_search_last_toast "Sonuncu axtarış mühərrikinizi silə və ya passivləşdirə bilməzsiniz.">
 
@@ -500,7 +476,7 @@
 <!ENTITY media_stop "Dayan">
 
 <!ENTITY contextmenu_open_new_tab "Yeni vərəqdə aç">
-<!ENTITY contextmenu_open_private_tab "Məxvi vərəqdə aç">
+<!ENTITY contextmenu_open_private_tab "Məxfi Vərəqdə Aç">
 <!ENTITY contextmenu_remove "Sil">
 <!ENTITY contextmenu_add_to_launcher "Ana ekrana əlavə et">
 <!ENTITY contextmenu_set_as_homepage "Ana səhifə olaraq qur">
@@ -514,7 +490,17 @@
 <!ENTITY contextmenu_top_sites_edit "Düzəlt">
 <!ENTITY contextmenu_top_sites_pin "Saytı bərkid">
 <!ENTITY contextmenu_top_sites_unpin "Saytı pindən çıxart">
+<!-- Localization note (contextmenu_pin_to_top_sites, contextmenu_unpin_from_top_sites): These strings are used to
+     pin/unpin items from top sites when the user is not on the top sites screen so they'd be missing context on what
+     just "Pin Site" or "Unpin Site" would mean. -->
+<!ENTITY contextmenu_pin_to_top_sites "Qabaqcıl Saytlara bərkid">
+<!ENTITY contextmenu_unpin_from_top_sites "Qabaqcıl Saytlardan çıxart">
 <!ENTITY contextmenu_add_search_engine "Axtarış mühərriyi əlavə et">
+
+<!-- Localization note (pinned_page_to_top_sites, unpinned_page_from_top_sites): These strings are shown in a snackbar
+     after the user pins/unpins the currently displayed page from top sites. -->
+<!ENTITY pinned_page_to_top_sites "Səhifə Qabaqcıl Saytlara bərkidildi">
+<!ENTITY unpinned_page_from_top_sites "Səhifə Qabaqcıl Saytlardan çıxardıldı">
 
 <!-- Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
      where normally a username would be displayed. In this case, no username was found, and this placeholder
@@ -572,7 +558,7 @@
 <!ENTITY button_ok "Tamam">
 <!ENTITY button_cancel "Ləğv et">
 <!ENTITY button_yes "Hə">
-<!ENTITY button_no "Xeyir">
+<!ENTITY button_no "Xeyr">
 <!ENTITY button_clear_data "Məlumatları təmizlə">
 <!ENTITY button_set "Qur">
 <!ENTITY button_clear "Təmizlə">
@@ -834,7 +820,12 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_button "Əlfəcinlərə Get">
 
 <!ENTITY activity_stream_topsites "Qabaqcıl Saytlar">
+<!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->
+<!ENTITY activity_stream_topstories "&brandPocket; məsləhət görür">
 <!ENTITY activity_stream_highlights "Seçilmişlər">
+
+<!-- LOCALIZATION NOTE (activity_stream_link_more1): Link-like text displayed to take user to a website with more content from Pocket. -->
+<!ENTITY activity_stream_link_more1 "Daha çox">
 
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_bookmarked): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
@@ -842,12 +833,20 @@ Stream list for highlights sourced from th user's bookmarks. -->
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_visited): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
 <!ENTITY activity_stream_highlight_label_visited "Ziyarət edildi">
+<!-- LOCALIZATION NOTE (activity_stream_highlight_label_trending): This label is shown in the Activity Stream list for highlights sourced from a recommendations engine. -->
+<!ENTITY activity_stream_highlight_label_trending "Populyar">
+<!-- LOCALIZATION NOTE (activity_stream_highlights_empty): This text is shown when we could not find highlights for this user. This is also shown on first run. -->
+<!ENTITY activity_stream_highlights_empty "İnternetdə gəzməyə başlayın, burada ziyarət edəcəyiniz və ya əlfəcinləyəcəyiniz məqalə, video və digər səhifələri göstərəcəyik.">
 
-<!-- LOCALIZATION NOTE (activity_stream_dismiss): This label is shown in the Activity Stream context menu,
+<!-- LOCALIZATION NOTE (activity_stream_remove): This label is shown in the Activity Stream context menu,
 and allows hiding a URL/page from highlights or topsites. The page remains in history/bookmarks, but
 is simply hidden from the Activity Stream panel. -->
-<!ENTITY activity_stream_dismiss "Qapat">
+<!ENTITY activity_stream_remove "Sil">
 <!ENTITY activity_stream_delete_history "Tarixçədən sil">
 
-<!ENTITY activity_stream_welcome_title "Seçilmişlərinizə xoş gəldiniz">
-<!ENTITY activity_stream_welcome_content1 "&brandShortName; artıq internetdə kəşf etdiyiniz şeyləri işıqlandıraraq gözəl məqalə, video, əlfəcin və digər səhifələrə geri qayıtmağınızı asandlaşdırır.">
+<!ENTITY private_tab_panel_title "Məxfi Səyahət + İzlənmə Qoruması">
+<!ENTITY private_tab_panel_description "&brandShortName; səhifələrin səyahətinizi izləyə biləcək hissələrini əngəlləyir.">
+<!ENTITY private_tab_panel_description2 "Sizin tarixçənizi yadda saxlamayacıq, amma endirilən fayllar və yeni əlfəcinlər yenə də cihazınızda saxlanacaqdır.">
+<!ENTITY private_tab_learn_more "Ətraflı öyrənmək istərdiniz?">
+
+<!ENTITY fullscreen_warning "Tam ekrana daxil oldu">

@@ -21,8 +21,8 @@
      or enabling wifi connections. The text inside tags should be localized.  Do not change the ids. -->
 <!ENTITY dnsNotFound.longDesc4 "<ul>
   <li>Проверете адреса за правописни грешки, като например
-    <strong>ww</strong>. example.com вместо
-    <strong>www</strong>. example.com
+    <strong>ww</strong>.example.com вместо
+    <strong>www</strong>.example.com
     <div id='searchbox'>
       <input id='searchtext' type='search'></input>
       <button id='searchbutton'>Търсене</button>
@@ -87,7 +87,7 @@
 <!ENTITY netReset.title "Връзката е прекъсната">
 <!ENTITY netReset.longDesc2 "&sharedLongDesc3;">
 
-<!ENTITY netTimeout.title "Времето за изчакване при свързване изтече">
+<!ENTITY netTimeout.title "Времето за изчакване на връзка изтече">
 <!ENTITY netTimeout.longDesc2 "&sharedLongDesc3;">
 
 <!ENTITY unknownProtocolFound.title "Адресът не е разпознат">

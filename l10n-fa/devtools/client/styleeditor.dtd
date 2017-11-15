@@ -11,7 +11,7 @@
      on web development on the web. -->
 
 <!ENTITY newButton.label            "جدید">
-<!ENTITY newButton.tooltip          "ایجاد و اضافه کردن یک سبک جدید به این سند">
+<!ENTITY newButton.tooltip          "ایجاد و اضافه کرن یک سبک جدید به سند">
 <!ENTITY newButton.accesskey        "ج">
 
 <!ENTITY importButton.label         "وارد کردن…">

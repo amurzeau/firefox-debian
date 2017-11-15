@@ -2,8 +2,9 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY  trackingProtectionHeader2.label      "การป้องกันการตามรอย">
-<!ENTITY  trackingProtection2.radioGroupLabel  "ใช้การป้องกันการตามรอยเพื่อปิดกั้นตัวติดตามที่รู้จัก">
+<!ENTITY  trackingProtectionHeader2.label      "การป้องกันการติดตาม">
+<!ENTITY  trackingProtection2.description      "การติดตามคือการเก็บรวบรวมข้อมูลการท่องเว็บของคุณระหว่างหลายเว็บไซต์ การติดตามสามารถนำมาใช้เพื่อสร้างโปรไฟล์และแสดงผลเนื้อหาตามการท่องเว็บและข้อมูลส่วนบุคคลของคุณ">
+<!ENTITY  trackingProtection2.radioGroupLabel  "ใช้การป้องกันการติดตามเพื่อปิดกั้นตัวติดตามที่รู้จัก">
 <!ENTITY  trackingProtectionAlways.label       "เสมอ">
 <!ENTITY  trackingProtectionAlways.accesskey   "ส">
 <!ENTITY  trackingProtectionPrivate.label      "เฉพาะในหน้าต่างส่วนตัว">
@@ -15,15 +16,19 @@
 <!ENTITY  trackingProtectionExceptions.accesskey "อ">
 
 <!-- LOCALIZATION NOTE (trackingProtectionPBM5.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel. -->
-<!ENTITY trackingProtectionPBM5.label         "ใช้การป้องกันการตามรอยในหน้าต่างส่วนตัว">
-<!ENTITY trackingProtectionPBM5.accesskey     "v">
-<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the nightly channel. -->
-<!ENTITY trackingProtectionPBM6.label         "ใช้การป้องกันการตามรอยในการท่องเว็บแบบส่วนตัวเพื่อปิดกั้นตัวติดตามที่รู้จัก">
+<!ENTITY trackingProtectionPBM5.label         "ใช้การป้องกันการติดตามในหน้าต่างส่วนตัว">
+<!ENTITY trackingProtectionPBM5.accesskey     "ช">
+
+<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the release and beta channel. -->
+<!ENTITY trackingProtectionPBM6.label         "ใช้การป้องกันการติดตามในการท่องเว็บแบบส่วนตัวเพื่อปิดกั้นตัวติดตามที่รู้จัก">
+<!ENTITY trackingProtectionPBM6.accesskey     "ช">
 <!ENTITY trackingProtectionPBMLearnMore.label "เรียนรู้เพิ่มเติม">
 <!ENTITY changeBlockList2.label               "เปลี่ยนรายการการปิดกั้น…">
+<!ENTITY changeBlockList2.accesskey           "ร">
 
+<!ENTITY  doNotTrack.description        "ส่งสัญญาณ “ไม่ติดตาม” ให้กับเว็บไซต์ว่าคุณไม่ต้องการถูกติดตาม">
 <!ENTITY  doNotTrack.learnMore.label    "เรียนรู้เพิ่มเติม">
-<!ENTITY  doNotTrack.default.label      "เฉพาะเมื่อใช้การป้องกันการตามรอย">
+<!ENTITY  doNotTrack.default.label      "เฉพาะเมื่อใช้การป้องกันการติดตาม">
 <!ENTITY  doNotTrack.always.label       "เสมอ">
 
 <!ENTITY  history.label                 "ประวัติ">
@@ -32,27 +37,27 @@
 <!ENTITY  addressBar.label              "แถบที่อยู่">
 <!ENTITY  addressBar.suggest.label      "เมื่อใช้แถบที่อยู่ เสนอแนะ">
 <!ENTITY  locbar.history2.label         "ประวัติการท่องเว็บ">
-<!ENTITY  locbar.history2.accesskey     "ป">
+<!ENTITY  locbar.history2.accesskey     "ว">
 <!ENTITY  locbar.bookmarks.label        "ที่คั่นหน้า">
 <!ENTITY  locbar.bookmarks.accesskey    "ท">
-<!ENTITY  locbar.openpage.label         "แท็บที่เปิด">
+<!ENTITY  locbar.openpage.label         "แท็บที่เปิดอยู่">
 <!ENTITY  locbar.openpage.accesskey     "บ">
 <!ENTITY  locbar.searches.label         "การค้นหาที่เกี่ยวข้องจากเครื่องมือค้นหาเริ่มต้น">
-<!ENTITY  locbar.searches.accesskey     "d">
+<!ENTITY  locbar.searches.accesskey     "ก">
 
 <!ENTITY  suggestionSettings2.label     "เปลี่ยนค่ากำหนดข้อเสนอแนะจากเครื่องมือค้นหา">
 
-<!ENTITY  acceptCookies.label           "ยอมรับคุกกี้จากไซต์">
-<!ENTITY  acceptCookies.accesskey       "ย">
+<!ENTITY  acceptCookies2.label          "ยอมรับคุกกี้จากเว็บไซต์">
+<!ENTITY  acceptCookies2.accesskey      "ย">
 
-<!ENTITY  acceptThirdParty.pre.label      "ยอมรับคุกกี้จากบุคคลที่สาม:">
-<!ENTITY  acceptThirdParty.pre.accesskey  "อ">
+<!ENTITY  acceptThirdParty2.pre.label     "ยอมรับคุกกี้จากบุคคลที่สาม">
+<!ENTITY  acceptThirdParty2.pre.accesskey "อ">
 <!ENTITY  acceptThirdParty.always.label   "เสมอ">
 <!ENTITY  acceptThirdParty.never.label    "ไม่เลย">
 <!ENTITY  acceptThirdParty.visited.label  "จากที่เยี่ยมชม">
 
-<!ENTITY  keepUntil.label               "เก็บจนกระทั่ง:">
-<!ENTITY  keepUntil.accesskey           "ก">
+<!ENTITY  keepUntil2.label              "เก็บจนกระทั่ง">
+<!ENTITY  keepUntil2.accesskey          "ก">
 
 <!ENTITY  expire.label                  "คุกกี้หมดอายุ">
 <!ENTITY  close.label                   "ฉันปิด &brandShortName;">
@@ -76,7 +81,7 @@
 <!-- LOCALIZATION NOTE (rememberActions.middle.label): include a starting and trailing space as needed -->
 <!-- LOCALIZATION NOTE (rememberActions.post.label): include a starting space as needed -->
 <!ENTITY  rememberActions.pre.label           "คุณอาจต้องการ ">
-<!ENTITY  rememberActions.clearHistory.label  "ล้างประวัติเมื่อเร็ว ๆ นี้ของคุณ">
+<!ENTITY  rememberActions.clearHistory.label  "ล้างประวัติล่าสุดของคุณ">
 <!ENTITY  rememberActions.middle.label        " หรือ ">
 <!ENTITY  rememberActions.removeCookies.label "เอาคุกกี้แต่ละตัวออก">
 <!ENTITY  rememberActions.post.label          "">
@@ -85,7 +90,7 @@
 
 <!-- LOCALIZATION NOTE (dontrememberActions.pre.label): include a trailing space as needed -->
 <!-- LOCALIZATION NOTE (dontrememberActions.post.label): include a starting space as needed -->
-<!ENTITY  dontrememberActions.pre.label          "คุณยังอาจต้องการ ">
+<!ENTITY  dontrememberActions.pre.label          "คุณยังอาจต้องการ ">
 <!ENTITY  dontrememberActions.clearHistory.label "ล้างประวัติปัจจุบันทั้งหมด">
 <!ENTITY  dontrememberActions.post.label         "">
 
@@ -109,3 +114,8 @@
 <!ENTITY  browserContainersEnabled.accesskey    "ย">
 <!ENTITY  browserContainersSettings.label        "การตั้งค่า…">
 <!ENTITY  browserContainersSettings.accesskey    "ต">
+
+<!ENTITY  a11yPrivacy.checkbox.label     "ป้องกันบริการการช่วยการเข้าถึงจากการเข้าถึงเบราว์เซอร์ของคุณ">
+<!ENTITY  a11yPrivacy.checkbox.accesskey "อ">
+<!ENTITY  a11yPrivacy.learnmore.label    "เรียนรู้เพิ่มเติม">
+<!ENTITY enableSafeBrowsingLearnMore.label "เรียนรู้เพิ่มเติม">

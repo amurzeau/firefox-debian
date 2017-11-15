@@ -11,8 +11,8 @@
 <!ENTITY removepermission2.accesskey  "E">
 <!ENTITY removeallpermissions2.label  "Eemalda kõik saidid">
 <!ENTITY removeallpermissions2.accesskey "k">
-<!ENTITY address.label                "Veebilehe aadress:">
-<!ENTITY address.accesskey            "d">
+<!ENTITY address2.label               "Saidi aadress">
+<!ENTITY address2.accesskey           "a">
 <!ENTITY block.label                  "Bloki">
 <!ENTITY block.accesskey              "B">
 <!ENTITY session.label                "Luba selleks seansiks">
@@ -26,3 +26,4 @@
 <!ENTITY button.ok.label              "Salvesta muudatused">
 <!ENTITY button.ok.accesskey          "S">
 
+<!ENTITY searchbox.placeholder        "Otsi saiti">

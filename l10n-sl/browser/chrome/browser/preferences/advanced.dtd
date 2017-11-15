@@ -29,8 +29,8 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "Pošiljanje podatkov je onemogočeno za to nastavitev graditve">
 
-<!ENTITY enableHealthReport1.label       "&brandShortName;u dovoli samodejno pošiljanje tehničnih podatkov in podatkov o uporabi Mozilli">
-<!ENTITY enableHealthReport1.accesskey   "t">
+<!ENTITY enableHealthReport2.label       "Dovoli &brandShortName;u pošiljanje tehničnih podatkov in podatkov o uporabi Mozilli">
+<!ENTITY enableHealthReport2.accesskey   "h">
 <!ENTITY healthReportLearnMore.label     "Več o tem">
 
 <!ENTITY dataCollection.label            "Zbiranje in uporaba podatkov &brandShortName;a">
@@ -95,11 +95,11 @@ available. -->
 <!ENTITY updateApplication.version.pre   "Različica ">
 <!ENTITY updateApplication.version.post  "">
 <!ENTITY updateApplication.description   "&brandShortName; naj">
-<!ENTITY updateAuto3.label               "Samodejno nameščaj posodobitve (priporočeno)">
+<!ENTITY updateAuto3.label               "samodejno namešča posodobitve (priporočeno)">
 <!ENTITY updateAuto3.accesskey           "S">
-<!ENTITY updateCheckChoose2.label        "Preverja posodobitve, vendar vam prepusti odločitev o nameščanju">
+<!ENTITY updateCheckChoose2.label        "preverja posodobitve, vendar vam prepusti odločitev o nameščanju">
 <!ENTITY updateCheckChoose2.accesskey    "o">
-<!ENTITY updateManual2.label             "Nikoli ne preverja posodobitev (ni priporočeno)">
+<!ENTITY updateManual2.label             "nikoli ne preverja posodobitev (ni priporočeno)">
 <!ENTITY updateManual2.accesskey         "N">
 
 <!ENTITY updateHistory2.label            "Prikaži zgodovino posodobitev …">
@@ -116,7 +116,7 @@ available. -->
 <!ENTITY offlineStorageNotifyExceptions.label     "Izjeme …">
 <!ENTITY offlineStorageNotifyExceptions.accesskey "I">
 
-<!ENTITY offlineAppsList2.label          "Naslednje strani lahko shranjujejo podatke za delo brez povezave:">
+<!ENTITY offlineAppsList3.label          "Naslednje spletne strani lahko shranjujejo podatke za delo brez povezave">
 <!ENTITY offlineAppsList.height          "7em">
 <!ENTITY offlineAppsListRemove.label     "Odstrani ...">
 <!ENTITY offlineAppsListRemove.accesskey "R">

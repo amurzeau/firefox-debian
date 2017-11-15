@@ -6,19 +6,34 @@
 <!ENTITY  blockPopups.label           "پوپ اپ دریچے بلاک کیجیے">
 <!ENTITY  blockPopups.accesskey       "ب">
 
-<!ENTITY  notificationsPolicyLearnMore.label   "مزید سیکھیں">
-<!ENTITY  notificationsPolicyButton.accesskey  "ا">
-<!ENTITY  notificationsPolicyButton.label      "انتخاب کریں…">
 <!ENTITY  notificationsDoNotDisturb.label      "مجھے خلل نہ ڈالیے">
 <!ENTITY  notificationsDoNotDisturb.accesskey  "n">
 <!ENTITY  notificationsDoNotDisturbDetails.value "جب تک آپ &brandShortName; دوباره شروع نہیں کرتے تب تک اطلاعت نہیں دکھائی دینگے">
 
-<!ENTITY  popupExceptions.label       "استثنیات…">
-<!ENTITY  popupExceptions.accesskey   "ا">
+<!ENTITY  popupExceptions.label                                 "استثنیات…">
+<!ENTITY  popupExceptions.accesskey                             "ا">
+
+<!ENTITY  notificationSettingsButton.label                      "سیٹنگیں…">
+<!ENTITY  notificationSettingsButton.accesskey                  "t">
+<!ENTITY  notificationPermissionsLearnMore.label                "مزید سیکھیں">
+
+<!ENTITY  locationPermissions.label                             "محل وقوع">
+<!ENTITY  locationSettingsButton.label                          "سیٹنگیں…">
+<!ENTITY  locationSettingsButton.accesskey                      "t">
+
+<!ENTITY  cameraPermissions.label                               "کیمرہ">
+<!ENTITY  cameraSettingsButton.label                            "سیٹنگیں…">
+<!ENTITY  cameraSettingsButton.accesskey                        "t">
+
+<!ENTITY  microphonePermissions.label                           "مائیکروفون">
+<!ENTITY  microphoneSettingsButton.label                        "سیٹنگیں…">
+<!ENTITY  microphoneSettingsButton.accesskey                    "t">
 
 <!ENTITY  fontsAndColors.label        "فانٹ اور رنگ">
 
+<!ENTITY  defaultFont2.label          "طےشدہ فانٹ">
 <!ENTITY  defaultFont2.accesskey      "D">
+<!ENTITY  defaultSize2.label          "ماپ">
 <!ENTITY  defaultSize2.accesskey      "S">
 
 <!ENTITY  advancedFonts.label         "اعلٰی…">
@@ -28,6 +43,7 @@
 <!ENTITY  colors.accesskey            "ر">
 
 
+<!ENTITY language2.label              "زبان">
 <!ENTITY chooseLanguage.label         "صفحہ دکھانے کے لیے اپنی زبان چنیں">
 <!ENTITY chooseButton.label           "انتخاب کریں…">
 <!ENTITY chooseButton.accesskey       "ا">

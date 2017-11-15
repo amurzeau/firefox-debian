@@ -37,10 +37,10 @@
 <!ENTITY  locbar.bookmarks.accesskey    "k">
 <!ENTITY  locbar.openpage.label         "Opne faner">
 <!ENTITY  locbar.openpage.accesskey     "O">
-<!ENTITY  locbar.searches.label         "Liknande søk frå standardsøkemotoren">
+<!ENTITY  locbar.searches.label         "Liknande søk frå standard søkjemotor">
 <!ENTITY  locbar.searches.accesskey     "L">
 
-<!ENTITY  suggestionSettings.label      "Endre innstillingar for forslag frå søkemotoren…">
+<!ENTITY  suggestionSettings.label      "Endre innstillingar for forslag frå søkjemotoren…">
 <!ENTITY  suggestionSettings.accesskey  "g">
 
 <!ENTITY  acceptCookies2.label          "Godta infokapslar frå nettsider">
@@ -96,7 +96,7 @@
 <!ENTITY  rememberHistory2.label      "Hugse nettlesar- og nedlastingshistorikk">
 <!ENTITY  rememberHistory2.accesskey  "H">
 
-<!ENTITY  rememberSearchForm.label       "Hugse søke- og skjemahistorikk">
+<!ENTITY  rememberSearchForm.label       "Hugse søkje- og skjemahistorikk">
 <!ENTITY  rememberSearchForm.accesskey   "ø">
 
 <!ENTITY  clearOnClose.label             "Slette historikk når &brandShortName; avsluttar">

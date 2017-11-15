@@ -4,14 +4,14 @@ Subject: Make powerpc not use static page sizes in mozjemalloc
 
 Closes: #763900
 ---
- memory/mozjemalloc/mozjemalloc.cpp | 2 +-
+ memory/build/mozjemalloc.cpp | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
-diff --git a/memory/mozjemalloc/mozjemalloc.cpp b/memory/mozjemalloc/mozjemalloc.cpp
-index b24fc357c487..b3cda951b970 100644
---- a/memory/mozjemalloc/mozjemalloc.cpp
-+++ b/memory/mozjemalloc/mozjemalloc.cpp
-@@ -773,7 +773,7 @@ struct arena_s {
+diff --git a/memory/build/mozjemalloc.cpp b/memory/build/mozjemalloc.cpp
+index f2402c6ffaa0..586bedcda2c7 100644
+--- a/memory/build/mozjemalloc.cpp
++++ b/memory/build/mozjemalloc.cpp
+@@ -780,7 +780,7 @@ struct arena_t {
   * controlling the malloc behavior are defined as compile-time constants
   * for best performance and cannot be altered at runtime.
   */

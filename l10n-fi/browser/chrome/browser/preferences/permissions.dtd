@@ -11,8 +11,8 @@
 <!ENTITY removepermission2.accesskey  "P">
 <!ENTITY removeallpermissions2.label  "Poista kaikki sivustot">
 <!ENTITY removeallpermissions2.accesskey "k">
-<!ENTITY address.label                "Sivuston osoite:">
-<!ENTITY address.accesskey            "i">
+<!ENTITY address2.label               "Sivuston osoite">
+<!ENTITY address2.accesskey           "i">
 <!ENTITY block.label                  "Estä">
 <!ENTITY block.accesskey              "E">
 <!ENTITY session.label                "Salli istunnon ajaksi">
@@ -26,3 +26,4 @@
 <!ENTITY button.ok.label              "Tallenna muutokset">
 <!ENTITY button.ok.accesskey          "T">
 
+<!ENTITY searchbox.placeholder        "Etsi sivustoa">

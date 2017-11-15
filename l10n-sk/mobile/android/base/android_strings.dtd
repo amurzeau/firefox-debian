@@ -3,9 +3,14 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY firstrun_panel_title_welcome "Vitajte">
-
-<!ENTITY firstrun_urlbar_message "Víta vás &brandShortName;">
-<!ENTITY firstrun_urlbar_subtext "Nájdite hľadané výrazy rýchlejšie pomocou užitočných návrhov vyhľadávania.">
+<!ENTITY firstrun_urlbar_message2 "Ďakujeme, že ste si vybrali &brandShortName;">
+<!ENTITY firstrun_urlbar_subtext2 "Moderný mobilný prehliadač od Mozilly - neziskovej organizácie, odhodlanej chrániť slobodný a otvorený web.">
+<!ENTITY firstrun_panel_title_privacy "Súkromie">
+<!ENTITY firstrun_privacy_message "Prehliadajte, akoby sa nikto nepozeral">
+<!ENTITY firstrun_privacy_subtext "Súkromné prehliadanie s Ochranou pred sledovaním blokuje sledovacie prvky a po ukončení prehliadania si nebude pamätať históriu.">
+<!ENTITY firstrun_panel_title_customize "Prispôsobenie">
+<!ENTITY firstrun_customize_message "Prispôsobte si svoj prehliadač &brandShortName;.">
+<!ENTITY firstrun_customize_subtext "Prispôsobte si svoj prehliadač &brandShortName; pomocou doplnkov. Blokujte reklamy, pridajte si doň funkcie alebo si vyberte tému vzhľadu, ktorá korešponduje s vašou osobnosťou.">
 <!ENTITY firstrun_bookmarks_title "História">
 <!ENTITY firstrun_bookmarks_message "Všetky vaše obľúbené stránky, vpredu a v strede">
 <!ENTITY firstrun_bookmarks_subtext "Pri vyhľadávaní získavate výsledky zo záložiek a histórie.">
@@ -13,8 +18,8 @@
 <!ENTITY firstrun_data_message "Menej prenesených dát, väčšia úspora">
 <!ENTITY firstrun_data_subtext2 "Vypnutím obrázkov prenesiete menej dát na každej stránke, ktorú navštívite.">
 <!ENTITY firstrun_sync_title "Synchronizácia">
-<!ENTITY firstrun_sync_message "&brandShortName;, vždy na vašej strane">
-<!ENTITY firstrun_sync_subtext "Synchronizujte svoje záložky, heslá a ďalšie položky všade, kde ho používate.">
+<!ENTITY firstrun_sync_message2 "Pokračujte tam, kde ste prestali.">
+<!ENTITY firstrun_sync_subtext2 "Nájdite pomocou služby Sync záložky, heslá a ďalšie veci, ktoré ste si uložili do prehliadača &brandShortName; na všetkých svojich zariadeniach.">
 <!ENTITY firstrun_signin_message "Pripojte sa a začnite">
 <!ENTITY firstrun_signin_button "Prihlásiť sa k službe Sync">
 <!ENTITY  onboard_start_button_browser "Začať prehliadať">
@@ -87,6 +92,7 @@
      in the folder. -->
 <!ENTITY bookmark_folder_items "&formatD; položiek">
 <!ENTITY bookmark_folder_one_item "1 položka">
+<!ENTITY bookmark_folder_updated "Priečinok bol aktualizovaný">
 <!ENTITY bookmark_parent_folder "Nadradený priečinok">
 <!ENTITY bookmark_add_folder "Pridať nový priečinok">
 
@@ -201,8 +207,6 @@
 <!ENTITY pref_category_advanced_summary3 "Obnovenie kariet, šetrenie dát, nástroje pre vývojárov">
 <!ENTITY pref_category_notifications "Upozornenia">
 <!ENTITY pref_category_notifications_summary "Nové funkcie, aktualizácie webových stránok">
-<!ENTITY pref_content_notifications "Aktualizácie webových stránok">
-<!ENTITY pref_content_notifications_summary2 "Objavte nový obsah z podporovaných stránok">
 <!ENTITY pref_developer_remotedebugging_usb "Vzdialené ladenie cez USB">
 <!ENTITY pref_developer_remotedebugging_wifi "Vzdialené ladenie cez Wi-Fi">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Ladenie cez sieť Wi-Fi vyžaduje, aby vaše zariadenie malo nainštalovanú aplikáciu čítačky kódov QR.">
@@ -268,7 +272,6 @@
 <!ENTITY pref_show_web_fonts_summary2 "Pri načítaní stránky preberať vzdialené písma">
 
 <!ENTITY pref_tracking_protection_title2 "Ochrana pred sledovaním">
-<!ENTITY pref_tracking_protection_summary3 "Povolená v režime Súkromné prehliadanie">
 <!ENTITY pref_donottrack_title "Funkcia Do not track">
 <!ENTITY pref_donottrack_summary "&brandShortName; požiada webové stránky, aby nesledovali vašu aktivitu">
 
@@ -286,8 +289,9 @@
 <!-- Custom Tabs is an Android API for allowing third-party apps to open URLs in a customized UI.
      Instead of switching to the browser it appears as if the user stays in the third-party app.
      For more see: https://developer.chrome.com/multidevice/android/customtabs -->
-<!ENTITY pref_custom_tabs "Vlastné karty">
-<!ENTITY pref_custom_tabs_summary3 "Umožňuje aplikáciám otvárať webové stránky s použitím upravenej verzie aplikácie &brandShortName;">
+<!ENTITY pref_custom_tabs2 "Vlastné karty">
+<!ENTITY pref_custom_tabs_summary4 "Povoliť aplikáciám otvárať webový obsah vo vlastných kartách.">
+
 <!-- Localization note (custom_tabs_menu_item_open_in): The variable is replaced by the name of
      default browser from user's preference, such as "Open in Firefox" -->
 <!ENTITY custom_tabs_menu_item_open_in "Otvoriť v aplikácii &formatS;">
@@ -297,10 +301,6 @@
 
 <!ENTITY pref_pwa "Progresívne webové aplikácie">
 <!ENTITY pref_pwa_summary "Umožňuje webovým aplikáciám, aby boli pridané na domovskú obrazovku">
-
-<!-- Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream  -->
-<!ENTITY pref_activity_stream "Activity Stream">
-<!ENTITY pref_activity_stream_summary "Bohatý vizuálny výpis z histórie a upravená domovská stránka robia vyhľadávanie v prehliadači &brandShortName; príťažlivejšie než kedykoľvek predtým.">
 
 <!ENTITY tracking_protection_prompt_title "Teraz s Ochranou pred sledovaním">
 <!ENTITY tracking_protection_prompt_text "Aktívne blokuje prvky umožňujúce sledovanie, takže sa už viac nemusíte obávať.">
@@ -334,23 +334,6 @@
      has been queued but we are missing the system permission to show an overlay. -->
 <!ENTITY tab_queue_notification_settings "Ak chcete \&quot;otvoriť viacero odkazov naraz\&quot;, povoľte pre &brandShortName; oprávnenie \&apos;Vykresľovať nad ostatné aplikácie\&apos;">
 
-<!ENTITY content_notification_summary "&brandShortName;">
-<!-- Localization note (content_notification_title_plural): &formatD; will be replaced with the number of websites that
-     have been updated (new content is available). The number of websites is always more than one (>= 2). For a single
-     update the website title is used instead of this string.
-     We can't use Android plural forms, sadly. See Bug #753859. -->
-<!ENTITY content_notification_title_plural "&formatD; aktualizovaných webových stránok">
-<!-- Localization note (content_notification_action_settings2): This label will be shown as an action in a content notification.
-     Clicking the action will jump to the notification settings of the app. -->
-<!ENTITY content_notification_action_settings2 "Nastavenia">
-<!-- Localization note(content_notification_action_read_now): This label will be shown as an action in a content notification.
-     Clicking the action will open all new content in the browser. -->
-<!ENTITY content_notification_action_read_now "Prečítať teraz">
-<!-- Localization note (content_notification_updated_on): &formatS; will be replaced with a medium sized version of the
-     date, depending on locale. For en_US this is for example: Feb 24, 2016. For more details see the Android developer
-     documentation for DateFormat.getMediumDateFormat(). -->
-<!ENTITY content_notification_updated_on "Aktualizované &formatS;">
-
 <!ENTITY pref_char_encoding "Kódovanie znakov">
 <!ENTITY pref_char_encoding_on "Zobrazovať ponuku">
 <!ENTITY pref_char_encoding_off "Nezobrazovať ponuku">
@@ -380,6 +363,7 @@
 <!ENTITY pref_qrcode_enabled_summary2 "Povolí čítačku kódov QR v paneli s adresou">
 
 <!ENTITY pref_use_master_password "Používať hlavné heslo">
+<!ENTITY pref_sync_default_title "Účet Firefox">
 <!ENTITY pref_sync2 "Prihlásiť sa">
 <!ENTITY pref_sync_summary2 "Synchronizácia kariet, záložiek, prihlasovacích údajov, histórie">
 <!ENTITY pref_search_suggestions "Zobrazovať návrhy vyhľadávania">
@@ -409,6 +393,9 @@
 <!ENTITY pref_dialog_set_default "Nastaviť ako predvolený">
 <!ENTITY pref_dialog_default "Predvolený">
 <!ENTITY pref_dialog_remove "Odstrániť">
+<!ENTITY pref_dialog_activitystream_header_content "Ďalší obsah">
+<!ENTITY pref_dialog_activitystream_recentBookmarks "Nedávno pridané medzi záložky">
+<!ENTITY pref_dialog_activitystream_visited "Navštívené">
 
 <!ENTITY pref_search_last_toast "Nie je možné odstrániť alebo zakázať posledný vyhľadávací modul.">
 
@@ -443,7 +430,7 @@
      (crashReporterSection.label) in en-US/chrome/browser/preferences/advanced.dtd.-->
 <!ENTITY datareporting_crashreporter_title_short "Správy o zlyhaní">
 <!ENTITY datareporting_wifi_title2 "Služba zisťovania polohy &vendorShortName;">
-<!ENTITY datareporting_wifi_geolocation_summary4 "Pomôžte spoločnosti &vendorShortName; mapovať svet. Zdieľajte približnú polohu vášho zariadenia na základe údajov zo siete operátora a Wi-Fi s cieľom vylepšiť presnosť Služby zisťovania polohy.">
+<!ENTITY datareporting_wifi_geolocation_summary4 "Pomôžte spoločnosti &vendorShortName; mapovať svet. Zdieľajte približnú polohu vášho zariadenia na základe údajov zo siete operátora a Wi-Fi s cieľom vylepšiť presnosť služby zisťovania polohy.">
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -468,7 +455,7 @@
 <!ENTITY save_as_pdf "Uložiť ako PDF">
 <!ENTITY print "Tlačiť">
 <!ENTITY find_in_page "Hľadať na stránke">
-<!ENTITY desktop_mode "Plná verzia stránky">
+<!ENTITY desktop_mode "Verzia stránky pre počítače">
 <!ENTITY page "Stránka">
 <!ENTITY tools "Nástroje">
 <!ENTITY new_tab "Nová karta">
@@ -499,6 +486,7 @@
 <!ENTITY contextmenu_open_private_tab "Otvoriť na súkromnej karte">
 <!ENTITY contextmenu_remove "Odstrániť">
 <!ENTITY contextmenu_add_to_launcher "Pridať na úvodnú obrazovku">
+<!ENTITY contextmenu_add_page_shortcut "Pridať odkaz na stránku">
 <!ENTITY contextmenu_set_as_homepage "Nastaviť ako domovskú stránku">
 <!ENTITY contextmenu_share "Zdieľať">
 <!ENTITY contextmenu_pasteandgo "Prilepiť a prejsť">
@@ -510,7 +498,17 @@
 <!ENTITY contextmenu_top_sites_edit "Upraviť">
 <!ENTITY contextmenu_top_sites_pin "Pripnúť stránku">
 <!ENTITY contextmenu_top_sites_unpin "Zrušiť pripnutie stránky">
+<!-- Localization note (contextmenu_pin_to_top_sites, contextmenu_unpin_from_top_sites): These strings are used to
+     pin/unpin items from top sites when the user is not on the top sites screen so they'd be missing context on what
+     just "Pin Site" or "Unpin Site" would mean. -->
+<!ENTITY contextmenu_pin_to_top_sites "Pripnúť medzi top stránky">
+<!ENTITY contextmenu_unpin_from_top_sites "Odopnúť z top stránok">
 <!ENTITY contextmenu_add_search_engine "Pridať vyhľadávací modul">
+
+<!-- Localization note (pinned_page_to_top_sites, unpinned_page_from_top_sites): These strings are shown in a snackbar
+     after the user pins/unpins the currently displayed page from top sites. -->
+<!ENTITY pinned_page_to_top_sites "Stránka bola pripnutá medzi top stránky">
+<!ENTITY unpinned_page_from_top_sites "Stránka bola odopnutá z top stránok">
 
 <!-- Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
      where normally a username would be displayed. In this case, no username was found, and this placeholder
@@ -523,7 +521,7 @@
 <!ENTITY doorhanger_login_select_message "Kopírovať heslo z &formatS;?">
 <!ENTITY doorhanger_login_select_toast_copy "Heslo bolo skopírované do schránky">
 <!ENTITY doorhanger_login_select_action_text "Zvoliť iné prihlasovacie údaje">
-<!ENTITY doorhanger_login_select_title "Skopírovať heslo z">
+<!ENTITY doorhanger_login_select_title "Kopírovať heslo z">
 
 <!-- Localization note (pref_scroll_title_bar2): Label for setting that controls
      whether or not the dynamic toolbar is enabled. -->
@@ -821,6 +819,8 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 
 <!ENTITY promotion_add_to_homescreen "Pridať na úvodnú obrazovku">
 
+<!ENTITY promotion_add_page_shortcut "Pridať odkaz na stránku">
+
 <!ENTITY helper_first_offline_bookmark_title "Prečítať offline">
 <!ENTITY helper_first_offline_bookmark_message "Nájdite svoje položky zo Zoznamu na prečítanie medzi Záložkami, aj v režime offline.">
 <!ENTITY helper_first_offline_bookmark_button "Prejsť medzi Záložky">
@@ -830,7 +830,12 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_button "Pridať medzi záložky">
 
 <!ENTITY activity_stream_topsites "Top stránky">
+<!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->
+<!ENTITY activity_stream_topstories "Odporúčané službou &brandPocket;">
 <!ENTITY activity_stream_highlights "Vybrané stránky">
+
+<!-- LOCALIZATION NOTE (activity_stream_link_more1): Link-like text displayed to take user to a website with more content from Pocket. -->
+<!ENTITY activity_stream_link_more1 "VIAC">
 
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_bookmarked): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
@@ -838,13 +843,30 @@ Stream list for highlights sourced from th user's bookmarks. -->
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_visited): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
 <!ENTITY activity_stream_highlight_label_visited "Navštívené">
+<!-- LOCALIZATION NOTE (activity_stream_highlight_label_trending): This label is shown in the Activity Stream list for highlights sourced from a recommendations engine. -->
+<!ENTITY activity_stream_highlight_label_trending "Trendy">
+<!-- LOCALIZATION NOTE (activity_stream_highlights_empty): This text is shown when we could not find highlights for this user. This is also shown on first run. -->
+<!ENTITY activity_stream_highlights_empty "Začnite s prehliadaním a my vám na tomto mieste ukážeme skvelé články, videá a ostatné stránky, ktoré ste nedávno navštívili alebo pridali medzi záložky.">
 
-<!-- LOCALIZATION NOTE (activity_stream_dismiss): This label is shown in the Activity Stream context menu,
+<!-- LOCALIZATION NOTE (activity_stream_remove): This label is shown in the Activity Stream context menu,
 and allows hiding a URL/page from highlights or topsites. The page remains in history/bookmarks, but
 is simply hidden from the Activity Stream panel. -->
-<!ENTITY activity_stream_dismiss "Skryť">
+<!ENTITY activity_stream_remove "Odstrániť">
 <!ENTITY activity_stream_delete_history "Odstrániť z histórie">
 
-<!ENTITY activity_stream_welcome_title "Vitajte vo vybraných stránkach">
-<!ENTITY activity_stream_welcome_content1 "&brandShortName; odteraz vytvára výber vecí, ktoré ste na webe objavili. Ľahko sa tak môžete dostať naspäť k zaujímavým článkom, videám, záložkám a iným stránkam.">
+<!ENTITY private_tab_panel_title "Súkromné prehliadanie + Ochrana pred sledovaním">
+<!ENTITY private_tab_panel_description "&brandShortName; blokuje tie časti stránok, ktoré môžu sledovať vašu aktivitu na webe.">
+<!ENTITY private_tab_panel_description2 "Neukladáme vašu históriu prehliadania, v zariadení zachováme len prevzaté súbory a novo vytvorené záložky.">
+<!ENTITY private_tab_learn_more "Chcete sa dozvedieť viac?">
+
 <!ENTITY fullscreen_warning "Bol spustený režim celej obrazovky">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_confirm): The plus sign here is part of UI design -->
+<!ENTITY pwa_add_to_launcher_confirm "+ Pridať na úvodnú obrazovku">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_badge2): Used as label in the page actions dropdown list,
+displayed when there are more than 3 actions available for a page.
+See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
+<!ENTITY pwa_add_to_launcher_badge2 "Pridať na úvodnú obrazovku">
+<!ENTITY pwa_continue_to_website "Pokračovať na webovú stránku">
+<!ENTITY pwa_onboarding_sumo "Túto webovú stránku si môžete jednoducho pridať na svoju úvodnú obrazovku a mať tak okamžitý prístup k prehliadaniu.">

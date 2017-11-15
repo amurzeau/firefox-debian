@@ -20,7 +20,7 @@
   -  "Scratchpad" in your locale. You should feel free to find a close
   -  approximation to it or choose a word (or words) that means
   -  "simple discardable text editor". -->
-<!ENTITY window.title                 "چرک‌نویس">
+<!ENTITY window.title                 "دفترچه یادداشت کد">
 
 <!ENTITY fileMenu.label               "پرونده">
 <!ENTITY fileMenu.accesskey           "پ">
@@ -56,7 +56,7 @@
 <!ENTITY lineNumbers.label             "نمایش شماره‌ی خطوط">
 <!ENTITY lineNumbers.accesskey         "ش">
 
-<!ENTITY wordWrap.label                "سطربندی متن">
+<!ENTITY wordWrap.label                "بسته بندی کردن متن">
 <!ENTITY wordWrap.accesskey            "W">
 
 <!ENTITY highlightTrailingSpace.label     "برجسته سازی فضای Trailing">
@@ -124,7 +124,7 @@
 <!ENTITY helpMenuWin.label            "راهنما">
 <!ENTITY helpMenuWin.accesskey        "ر">
 
-<!ENTITY documentationLink.label      "راهنمای چرک‌نویس روی MDN">
+<!ENTITY documentationLink.label      "نمایش راهنما دفترچه راهنما کد بر روی MDN">
 <!ENTITY documentationLink.accesskey  "D">
 
 

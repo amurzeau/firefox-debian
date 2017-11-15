@@ -5,7 +5,7 @@
 
 <!-- LOCALIZATION NOTE (update.*):
 # These strings are also used in the update pane of preferences.
-# See about:preferences#advanced.
+# See about:preferences#general.
 -->
 <!-- LOCALIZATION NOTE (update.checkForUpdatesButton.*, update.updateButton.*):
 # Only one button is present at a time.
@@ -29,15 +29,15 @@
 <!ENTITY community.exp.mozillaLink  "&vendorShortName;">
 <!ENTITY community.exp.middle       " არის ">
 <!-- LOCALIZATION NOTE (community.exp.creditslink): This is a link title that links to about:credits. -->
-<!ENTITY community.exp.creditsLink  "გლობალური ერთობა">
+<!ENTITY community.exp.creditsLink  "საერთაშორისო ერთობა">
 <!ENTITY community.exp.end          " რომელიც მუშაობს იმისთვის, რომ ინტერნეტი დარჩეს გახსნილი, საჯარო და ყველასთვის ხელმისაწვდომი.">
 
-<!ENTITY community.start2           "&brandShortName; შექმნილია">
+<!ENTITY community.start2           "&brandShortName;-ის შემქმნელია ">
 <!-- LOCALIZATION NOTE (community.mozillaLink): This is a link title that links to http://www.mozilla.org/. -->
 <!ENTITY community.mozillaLink      "&vendorShortName;">
 <!ENTITY community.middle2          " — ">
 <!-- LOCALIZATION NOTE (community.creditsLink): This is a link title that links to about:credits. -->
-<!ENTITY community.creditsLink      "გლობალური ერთობა">
+<!ENTITY community.creditsLink      "საერთაშორისო ერთობა">
 <!ENTITY community.end3             " რომელიც მუშაობს იმისთვის, რომ ინტერნეტი დარჩეს გახსნილი, საჯარო და ყველასთვის ხელმისაწვდომი.">
 
 <!ENTITY helpus.start               "გსურთ დახმარება? ">

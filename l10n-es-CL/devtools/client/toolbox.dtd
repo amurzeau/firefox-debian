@@ -82,12 +82,6 @@
 <!ENTITY options.enableRemote.label3    "Activar depuración remota">
 <!ENTITY options.enableRemote.tooltip2  "Activar esta opción permitirá a las herramientas de desarrollador depurar una instancia remota como Firefox OS">
 
-<!-- LOCALIZATION NOTE (options.enableWorkers.label): This is the label for the
-  -  checkbox that toggles worker debugging, i.e. devtools.debugger.workers
-  -  boolean preference in about:config, in the options panel. -->
-<!ENTITY options.enableWorkers.label    "Activar depuración de worker (en desarrollo)">
-<!ENTITY options.enableWorkers.tooltip  "Activar esta opción permitirá a las herramientas de desarrollador depurar workers">
-
 <!-- LOCALIZATION NOTE (options.disableJavaScript.label,
   -  options.disableJavaScript.tooltip): This is the options panel label and
   -  tooltip for the checkbox that toggles JavaScript on or off. -->
@@ -151,19 +145,14 @@
 <!ENTITY options.debugger.label            "Depurador">
 
 <!-- LOCALIZATION NOTE (options.sourceMap.label): This is the
-   - label for the checkbox that toggles source maps in the Debugger -->
+   - label for the checkbox that toggles source maps in all tools -->
 <!ENTITY options.sourceMaps.label      "Activar mapas de fuentes">
-<!ENTITY options.sourceMaps.tooltip    "Si activas esta opción, las fuentes serán mapeadas en el Depurador y en la Consola.">
+<!ENTITY options.sourceMaps.tooltip1   "Si activas esta opción, las fuentes serán mapeadas en las herramientas.">
 
 <!-- LOCALIZATION NOTE (options.styleeditor.label): This is the label for the
   -  heading of the group of Style Editor preferences in the options
   -  panel. -->
 <!ENTITY options.styleeditor.label            "Editor de estilo">
-
-<!-- LOCALIZATION NOTE (options.stylesheetSourceMaps.label): This is the
-   - label for the checkbox that toggles showing original sources in the Style Editor -->
-<!ENTITY options.stylesheetSourceMaps.label      "Mostrar fuentes originales">
-<!ENTITY options.stylesheetSourceMaps.tooltip    "Mostrar fuentes originales (por ejemplo: archivos Sass) en el Editor de estilo y en el Inspector">
 
 <!-- LOCALIZATION NOTE (options.stylesheetAutocompletion.label): This is the
    - label for the checkbox that toggles autocompletion of css in the Style Editor -->
@@ -184,18 +173,6 @@
    - label for the checkbox that toggles the camera shutter audio for screenshot tool -->
 <!ENTITY options.screenshot.audio.label      "Reproducir sonido de cámara">
 <!ENTITY options.screenshot.audio.tooltip    "Activa la reproducción del sonido del disparador de una cámara al tomar una captura de pantalla">
-
-<!-- LOCALIZATION NOTE (options.commonprefs): This is the label for the heading
-      of all preferences that affect both the Web Console and the Network
-      Monitor -->
-<!ENTITY options.commonPrefs.label           "Preferencias comunes">
-
-<!-- LOCALIZATION NOTE (options.enablePersistentLogs.label): This is the
-  -  label for the checkbox that toggles persistent logs in the Web Console and
-  -  network monitor,  i.e. devtools.webconsole.persistlog a boolean preference in
-  -  about:config, in the options panel. -->
-<!ENTITY options.enablePersistentLogs.label    "Activar registros permanentes">
-<!ENTITY options.enablePersistentLogs.tooltip  "Si activa esta opción la consola web y el monitor de red no limpiarán el texto de salida cada vez que navegue a una página nueva">
 
 <!-- LOCALIZATION NOTE (options.showPlatformData.label): This is the
   -  label for the checkbox that toggles the display of the platform data in the,

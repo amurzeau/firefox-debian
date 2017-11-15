@@ -44,19 +44,19 @@
 <!ENTITY  locbar.searches.label         "Подобни търсения от стандартната търсеща машина">
 <!ENTITY  locbar.searches.accesskey     "П">
 
-<!ENTITY  suggestionSettings2.label     "Промяна настройките на подсказките от търсещите машини">
+<!ENTITY  suggestionSettings2.label     "Настройки на предложенията от търсещите машини">
 
 <!ENTITY  acceptCookies2.label          "Разрешаване на бисквитките">
 <!ENTITY  acceptCookies2.accesskey      "б">
 
-<!ENTITY  acceptThirdParty.pre.label      "Разрешаване на бисквитки от трети страни:">
-<!ENTITY  acceptThirdParty.pre.accesskey  "т">
+<!ENTITY  acceptThirdParty2.pre.label     "Разрешаване на бисквитки от трети страни">
+<!ENTITY  acceptThirdParty2.pre.accesskey "т">
 <!ENTITY  acceptThirdParty.always.label   "Винаги">
 <!ENTITY  acceptThirdParty.never.label    "Никога">
 <!ENTITY  acceptThirdParty.visited.label  "От посетените">
 
-<!ENTITY  keepUntil.label               "Пазене до:">
-<!ENTITY  keepUntil.accesskey           "П">
+<!ENTITY  keepUntil2.label              "Пазене до">
+<!ENTITY  keepUntil2.accesskey          "а">
 
 <!ENTITY  expire.label                  "загуба на валидност">
 <!ENTITY  close.label                   "затваряне на &brandShortName;">
@@ -74,7 +74,7 @@
 <!ENTITY  historyHeader.custom.label       "Използва потребителски настройки">
 <!ENTITY  historyHeader.post.label         "">
 
-<!ENTITY  rememberDescription.label      "&brandShortName; ще помни историята на сърфирането, изтеглянията, формулярите и търсенията и ще съхранява бисквитките на страниците, които посещавате.">
+<!ENTITY  rememberDescription.label      "&brandShortName; ще помни историята на разглеждането, изтеглянията, формулярите и търсенията и ще съхранява бисквитките на страниците, които посещавате.">
 
 <!-- LOCALIZATION NOTE (rememberActions.pre.label): include a trailing space as needed -->
 <!-- LOCALIZATION NOTE (rememberActions.middle.label): include a starting and trailing space as needed -->
@@ -113,3 +113,8 @@
 <!ENTITY  browserContainersEnabled.accesskey    "к">
 <!ENTITY  browserContainersSettings.label        "Настройки…">
 <!ENTITY  browserContainersSettings.accesskey    "а">
+
+<!ENTITY  a11yPrivacy.checkbox.label     "Забраняване на услуги за достъпността достъпа до четеца">
+<!ENTITY  a11yPrivacy.checkbox.accesskey "б">
+<!ENTITY  a11yPrivacy.learnmore.label    "Научете повече">
+<!ENTITY enableSafeBrowsingLearnMore.label "Научете повече">

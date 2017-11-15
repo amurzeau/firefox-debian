@@ -3,7 +3,6 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY  security.label                 "Biztonság">
-<!ENTITY  phishingProtection.label       "Adathalászat elleni védelem">
 
 <!ENTITY  warnOnAddonInstall2.label       "Figyelmeztetés kiegészítők telepítése előtt">
 <!ENTITY  warnOnAddonInstall2.accesskey   "F">
@@ -12,6 +11,8 @@
   It is important that wording follows the guidelines outlined on this page:
   https://developers.google.com/safe-browsing/developers_guide_v2#AcceptableUsage
 -->
+
+<!ENTITY  browsingProtection.label        "Félrevezető tartalom és veszélyes szoftver elleni védelem">
 <!ENTITY  enableSafeBrowsing.label        "Veszélyes és félrevezető tartalom blokkolása">
 <!ENTITY  enableSafeBrowsing.accesskey    "V">
 
@@ -28,7 +29,7 @@
 <!ENTITY  formsAndPasswords.label       "Űrlapok és jelszavak">
 
 <!ENTITY  rememberLogins2.label         "Felhasználónevek és jelszavak megjegyzése az oldalakhoz">
-<!ENTITY  rememberLogins2.accesskey     "m">
+<!ENTITY  rememberLogins2.accesskey     "F">
 <!ENTITY  passwordExceptions.label      "Kivételek…">
 <!ENTITY  passwordExceptions.accesskey  "v">
 

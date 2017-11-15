@@ -9,13 +9,13 @@
 <!ENTITY pasteCmd.label "Tampal">
 <!ENTITY pasteCmd.accesskey "p">
 <!ENTITY undoCmd.label "Batal">
-<!ENTITY undoCmd.accesskey "e">
+<!ENTITY undoCmd.accesskey "t">
 <!ENTITY selectAllCmd.label "Pilih Semua">
 <!ENTITY selectAllCmd.accesskey "a">
 <!ENTITY deleteCmd.label "Buang">
 <!ENTITY deleteCmd.accesskey "g">
 
-<!ENTITY spellAddToDictionary.label "Tambah kepada kamus">
+<!ENTITY spellAddToDictionary.label "Tambah dalam Kamus">
 <!ENTITY spellAddToDictionary.accesskey "a">
 <!ENTITY spellUndoAddToDictionary.label "Batal Tambah Dalam Kamus">
 <!ENTITY spellUndoAddToDictionary.accesskey "a">

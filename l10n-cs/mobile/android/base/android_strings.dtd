@@ -3,9 +3,14 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY firstrun_panel_title_welcome "Vítejte">
-
-<!ENTITY firstrun_urlbar_message "Vítá vás &brandShortName;">
-<!ENTITY firstrun_urlbar_subtext "Najděte věci rychleji s pomocí užitečných návrhů vyhledávání.">
+<!ENTITY firstrun_urlbar_message2 "Děkujeme, že jste si zvolili &brandShortName;">
+<!ENTITY firstrun_urlbar_subtext2 "Moderní mobilní prohlížeč od Mozilly, neziskové organizace zaměřené na otevřený web.">
+<!ENTITY firstrun_panel_title_privacy "Soukromí">
+<!ENTITY firstrun_privacy_message "Prohlížejte web, jako když se nikdo nedívá">
+<!ENTITY firstrun_privacy_subtext "Anonymní prohlížení s funkcí Ochrana proti sledování blokuje sledující prvky, zatímco procházíte web, a nebude si pamatovat vaši historii.">
+<!ENTITY firstrun_panel_title_customize "Přizpůsobení">
+<!ENTITY firstrun_customize_message "Udělejte si aplikaci &brandShortName; podle sebe.">
+<!ENTITY firstrun_customize_subtext "Přizpůsobte si aplikaci &brandShortName; s doplňky. Blokujte reklamy, přidávejte funkce, nebo si vyberte nový motiv, který bude odrazem vaší osobnosti.">
 <!ENTITY firstrun_bookmarks_title "Historie">
 <!ENTITY firstrun_bookmarks_message "Vše, co máte rádi, přímo na očích">
 <!ENTITY firstrun_bookmarks_subtext "Při vyhledávání získáváte výsledky ze záložek a historie.">
@@ -13,8 +18,8 @@
 <!ENTITY firstrun_data_message "Méně přenesených dat, větší úspora">
 <!ENTITY firstrun_data_subtext2 "Vypnutím obrázků přenesete méně dat na každé stránce, kterou navštívíte.">
 <!ENTITY firstrun_sync_title "Synchronizace">
-<!ENTITY firstrun_sync_message "&brandShortName;, vždy na vaší straně">
-<!ENTITY firstrun_sync_subtext "Synchronizujte svoje záložky, hesla a další, všude, kde ho používáte.">
+<!ENTITY firstrun_sync_message2 "Pokračujte tam, kde jste skončili.">
+<!ENTITY firstrun_sync_subtext2 "Používejte Sync k nalezení záložek, hesel a dalších věcí uložených v aplikaci &brandShortName; na všech vašich zařízeních.">
 <!ENTITY firstrun_signin_message "Připojte se a začněte">
 <!ENTITY firstrun_signin_button "Přihlásit se ke službě Sync">
 <!ENTITY  onboard_start_button_browser "Začít prohlížet">
@@ -23,7 +28,7 @@
 
 <!ENTITY firstrun_tabqueue_title "Odkazy">
 <!-- Localization note (firstrun_tabqueue_message): 'Tab queue' is a feature that allows users to queue up or save links from outside of Firefox (without switching apps) - these links will be loaded in Firefox the next time Firefox is opened. -->
-<!ENTITY firstrun_tabqueue_message_off "Zapnout frontu karet">
+<!ENTITY firstrun_tabqueue_message_off "Zapnout frontu panelů">
 <!ENTITY firstrun_tabqueue_subtext_off "Uložte si odkazy ve &brandShortName; na později při klepání na ně v jiných aplikacích.">
 
 <!ENTITY firstrun_tabqueue_message_on "Úspěch!">
@@ -50,7 +55,7 @@
 <!-- Localization note: Shown in a snackbar when tab is loaded from cache while device was offline. -->
 <!ENTITY  tab_offline_version "Zobrazuje se offline verze">
 
-<!ENTITY  crash_reporter_title "Hlášení pádů">
+<!ENTITY  crash_reporter_title "Hlášení pádů aplikace &brandShortName;">
 <!ENTITY  crash_message2 "Aplikace &brandShortName; spadla. Po restartu aplikace &brandShortName; budou otevřené panely uvedeny na startovní stránce.">
 <!ENTITY  crash_send_report_message3 "Odeslat organizaci &vendorShortName; hlášení o pádu, aby jej mohla opravit">
 <!ENTITY  crash_include_url2 "Zahrnout i adresu stránky, kde došlo k pádu">
@@ -87,6 +92,7 @@
      in the folder. -->
 <!ENTITY bookmark_folder_items "&formatD; položky">
 <!ENTITY bookmark_folder_one_item "1 položka">
+<!ENTITY bookmark_folder_updated "Složka aktualizována">
 <!ENTITY bookmark_parent_folder "Nadřazená složka">
 <!ENTITY bookmark_add_folder "Přidat novou složku">
 
@@ -133,7 +139,7 @@
 <!ENTITY settings "Nastavení">
 <!ENTITY settings_title "Nastavení">
 <!ENTITY pref_category_general "Obecné">
-<!ENTITY pref_category_general_summary3 "Úvodní stránka, jazyk, pole adresy">
+<!ENTITY pref_category_general_summary3 "Úvodní stránka, jazyk, fronta panelů">
 
 <!-- Localization note (pref_category_language) : This is the preferences
      section in which the user picks the locale in which to display Firefox
@@ -150,14 +156,14 @@
 <!-- Localization note (overlay_share_label) : This is the label that appears
      in Android's intent chooser when sending a link to Firefox to bookmark,
      send to another device, or add to Reading List. -->
-<!ENTITY overlay_share_label "Přidat do aplikace &brandShortName;">
+<!ENTITY overlay_share_label "&brandShortName;">
 
 <!-- Localization note (overlay_share_bookmark_btn_label) : This string is
      used in the share overlay menu to select an action. It is the verb
      "to bookmark", not the noun "a bookmark". -->
 <!ENTITY overlay_share_bookmark_btn_label "Přidat do záložek">
 <!ENTITY overlay_share_bookmark_btn_label_already "Již přidána">
-<!ENTITY overlay_share_send_other "Odeslat do jiných zařízení">
+<!ENTITY overlay_share_send_other "Do jiných zařízení">
 
 <!ENTITY overlay_share_open_browser_btn_label "Otevřít v aplikaci &brandShortName;">
 <!-- Localization note (overlay_share_send_tab_btn_label) : Used on the
@@ -201,8 +207,6 @@
 <!ENTITY pref_category_advanced_summary3 "Obnova panelů, spořič dat, nástroje vývojáře">
 <!ENTITY pref_category_notifications "Oznámení">
 <!ENTITY pref_category_notifications_summary "Nové funkce, aktualizace webových stránek">
-<!ENTITY pref_content_notifications "Aktualizace webových stránek">
-<!ENTITY pref_content_notifications_summary2 "Objevte nový obsah z podporovaných serverů">
 <!ENTITY pref_developer_remotedebugging_usb "Vzdálené ladění pomocí USB">
 <!ENTITY pref_developer_remotedebugging_wifi "Vzdálené ladění pomocí Wi-Fi">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Ladění pomocí Wi-Fi vyžaduje, aby vaše zařízení mělo nainstalovanou čtečku QR kódů.">
@@ -268,7 +272,6 @@
 <!ENTITY pref_show_web_fonts_summary2 "Stahovat vzdálené fonty při načítání stránky">
 
 <!ENTITY pref_tracking_protection_title2 "Ochrana proti sledování">
-<!ENTITY pref_tracking_protection_summary3 "Povolena v režimu anonymního prohlížení">
 <!ENTITY pref_donottrack_title "Funkce Do not track">
 <!ENTITY pref_donottrack_summary "&brandShortName; požádá webové stránky, aby nesledovaly vaši aktivitu">
 
@@ -286,8 +289,9 @@
 <!-- Custom Tabs is an Android API for allowing third-party apps to open URLs in a customized UI.
      Instead of switching to the browser it appears as if the user stays in the third-party app.
      For more see: https://developer.chrome.com/multidevice/android/customtabs -->
-<!ENTITY pref_custom_tabs "Vlastní panely">
-<!ENTITY pref_custom_tabs_summary3 "Povolit aplikacím otevírat webové stránky s použitím upravené verze aplikace &brandShortName;">
+<!ENTITY pref_custom_tabs2 "Vlastní panely">
+<!ENTITY pref_custom_tabs_summary4 "Povolí aplikacím otevírat webový obsah v rychle se načítajícím vlastním panelu">
+
 <!-- Localization note (custom_tabs_menu_item_open_in): The variable is replaced by the name of
      default browser from user's preference, such as "Open in Firefox" -->
 <!ENTITY custom_tabs_menu_item_open_in "Otevřít v aplikaci &formatS;">
@@ -298,12 +302,8 @@
 <!ENTITY pref_pwa "Progresivní webové aplikace">
 <!ENTITY pref_pwa_summary "Povolit webovým aplikacím přidání na domovskou obrazovku">
 
-<!-- Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream  -->
-<!ENTITY pref_activity_stream "Tok událostí">
-<!ENTITY pref_activity_stream_summary "Bohatý vizuální výpis historie a upravená domovská stránka dělají hledání přesně toho, co v aplikaci &brandShortName; chcete, snazší, než kdy dříve.">
-
 <!ENTITY tracking_protection_prompt_title "Nyní s Ochranou proti sledování">
-<!ENTITY tracking_protection_prompt_text "Aktivně blokuje prvky, které vás mohou sledovat, abyste se o ně více nemusely starat.">
+<!ENTITY tracking_protection_prompt_text "Aktivně blokuje prvky, které vás mohou sledovat, abyste se o ně nemuseli starat.">
 <!ENTITY tracking_protection_prompt_tip_text "Pro více informací se navštivte nastavení Soukromí">
 <!ENTITY tracking_protection_prompt_action_button "Rozumím">
 
@@ -334,23 +334,6 @@
      has been queued but we are missing the system permission to show an overlay. -->
 <!ENTITY tab_queue_notification_settings "Pro \&quot;Otevření více odkazů\&quot; prosím zapněte \&apos;Vykreslování nad ostatní aplikace\&apos; pro &brandShortName;">
 
-<!ENTITY content_notification_summary "&brandShortName;">
-<!-- Localization note (content_notification_title_plural): &formatD; will be replaced with the number of websites that
-     have been updated (new content is available). The number of websites is always more than one (>= 2). For a single
-     update the website title is used instead of this string.
-     We can't use Android plural forms, sadly. See Bug #753859. -->
-<!ENTITY content_notification_title_plural "&formatD; webových stránek aktualizováno">
-<!-- Localization note (content_notification_action_settings2): This label will be shown as an action in a content notification.
-     Clicking the action will jump to the notification settings of the app. -->
-<!ENTITY content_notification_action_settings2 "Nastavení">
-<!-- Localization note(content_notification_action_read_now): This label will be shown as an action in a content notification.
-     Clicking the action will open all new content in the browser. -->
-<!ENTITY content_notification_action_read_now "Přečíst nyní">
-<!-- Localization note (content_notification_updated_on): &formatS; will be replaced with a medium sized version of the
-     date, depending on locale. For en_US this is for example: Feb 24, 2016. For more details see the Android developer
-     documentation for DateFormat.getMediumDateFormat(). -->
-<!ENTITY content_notification_updated_on "Aktualizováno &formatS;">
-
 <!ENTITY pref_char_encoding "Znaková sada">
 <!ENTITY pref_char_encoding_on "Zobrazit nabídku">
 <!ENTITY pref_char_encoding_off "Nezobrazovat nabídku">
@@ -359,12 +342,8 @@
      The action is shown below a header saying "Clear private data"; See pref_clear_private_data -->
 <!ENTITY pref_clear_private_data_now_tablet "Vymazat">
 <!ENTITY pref_clear_on_exit_title3 "Vymazat soukromá data při ukončení">
-<!ENTITY pref_clear_on_exit_summary2 "Aplikace &brandShortName; automaticky vymaže vaše data kdykoliv, kdy zvolíte \u0022Ukončit\u0022 z hlavní nabídky">
+<!ENTITY pref_clear_on_exit_summary2 "Aplikace &brandShortName; automaticky vymaže vaše data kdykoliv, kdy zvolíte \&quot;Ukončit\&quot; z hlavní nabídky">
 <!ENTITY pref_clear_on_exit_dialog_title "Vyberte data, která chcete vymazat">
-<!ENTITY pref_plugins "Zásuvné moduly">
-<!ENTITY pref_plugins_enabled "Povoleny">
-<!ENTITY pref_plugins_tap_to_play2 "Spustit po klepnutí">
-<!ENTITY pref_plugins_disabled "Zakázány">
 <!ENTITY pref_restore_tabs "Obnovit panely">
 <!ENTITY pref_restore_always "Vždy obnovit">
 <!ENTITY pref_restore_quit "Neobnovovat po ukončení aplikace &brandShortName;">
@@ -384,6 +363,7 @@
 <!ENTITY pref_qrcode_enabled_summary2 "Povolit skener QR v poli adresy">
 
 <!ENTITY pref_use_master_password "Použít hlavní heslo">
+<!ENTITY pref_sync_default_title "Účet Firefoxu">
 <!ENTITY pref_sync2 "Přihlásit se">
 <!ENTITY pref_sync_summary2 "Synchronizace vašich panelů, záložek, hesel a historie">
 <!ENTITY pref_search_suggestions "Povolit našeptávání">
@@ -413,6 +393,9 @@
 <!ENTITY pref_dialog_set_default "Nastavit jako výchozí">
 <!ENTITY pref_dialog_default "Výchozí">
 <!ENTITY pref_dialog_remove "Odebrat">
+<!ENTITY pref_dialog_activitystream_header_content "Doplňkový obsah">
+<!ENTITY pref_dialog_activitystream_recentBookmarks "Nedávné záložky">
+<!ENTITY pref_dialog_activitystream_visited "Navštívené">
 
 <!ENTITY pref_search_last_toast "Nemůžete odebrat nebo zakázat váš poslední vyhledávací modul.">
 
@@ -447,7 +430,7 @@
      (crashReporterSection.label) in en-US/chrome/browser/preferences/advanced.dtd.-->
 <!ENTITY datareporting_crashreporter_title_short "Hlášení pádů">
 <!ENTITY datareporting_wifi_title2 "Geolokační služba &vendorShortName;">
-<!ENTITY datareporting_wifi_geolocation_summary4 "Pomozte organizaci &vendorShortName; mapovat svět! Sdílejte přibližná umístění mobilních a wi-fi sítí v okolí vašeho zařízení a pomozte tak vylepšit naše geolokační služby.">
+<!ENTITY datareporting_wifi_geolocation_summary4 "Pomozte organizaci &vendorShortName; mapovat svět! Sdílejte přibližnou polohu mobilních a Wi-Fi sítí v okolí vašeho zařízení a pomozte tak vylepšit naše geolokační služby.">
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -472,7 +455,7 @@
 <!ENTITY save_as_pdf "Uložit jako PDF">
 <!ENTITY print "Tisk">
 <!ENTITY find_in_page "Najít na stránce">
-<!ENTITY desktop_mode "Desktopová verze">
+<!ENTITY desktop_mode "Verze stránky pro počítač">
 <!ENTITY page "Stránka">
 <!ENTITY tools "Nástroje">
 <!ENTITY new_tab "Nový panel">
@@ -503,6 +486,7 @@
 <!ENTITY contextmenu_open_private_tab "Otevřít v anonymním panelu">
 <!ENTITY contextmenu_remove "Odebrat">
 <!ENTITY contextmenu_add_to_launcher "Přidat na úvodní obrazovku">
+<!ENTITY contextmenu_add_page_shortcut "Přidat zkratku stránky">
 <!ENTITY contextmenu_set_as_homepage "Nastavit jako domovskou stránku">
 <!ENTITY contextmenu_share "Sdílet">
 <!ENTITY contextmenu_pasteandgo "Vložit a přejít">
@@ -514,7 +498,17 @@
 <!ENTITY contextmenu_top_sites_edit "Upravit">
 <!ENTITY contextmenu_top_sites_pin "Připnout stránku">
 <!ENTITY contextmenu_top_sites_unpin "Odepnout stránku">
+<!-- Localization note (contextmenu_pin_to_top_sites, contextmenu_unpin_from_top_sites): These strings are used to
+     pin/unpin items from top sites when the user is not on the top sites screen so they'd be missing context on what
+     just "Pin Site" or "Unpin Site" would mean. -->
+<!ENTITY contextmenu_pin_to_top_sites "Připnout do Top stránek">
+<!ENTITY contextmenu_unpin_from_top_sites "Odepnout z Top stránek">
 <!ENTITY contextmenu_add_search_engine "Přidat vyhledávací modul">
+
+<!-- Localization note (pinned_page_to_top_sites, unpinned_page_from_top_sites): These strings are shown in a snackbar
+     after the user pins/unpins the currently displayed page from top sites. -->
+<!ENTITY pinned_page_to_top_sites "Stránka připnuta do Top stránek">
+<!ENTITY unpinned_page_from_top_sites "Stránka odepnuta z top stránek">
 
 <!-- Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
      where normally a username would be displayed. In this case, no username was found, and this placeholder
@@ -534,7 +528,7 @@
 <!ENTITY pref_scroll_title_bar2 "Prohlížení přes celou obrazovku">
 <!ENTITY pref_scroll_title_bar_summary2 "Při skrolování dolů skrýt lištu prohlížeče &brandShortName;">
 
-<!ENTITY pref_tab_queue_title3 "Fronta karet">
+<!ENTITY pref_tab_queue_title3 "Fronta panelů">
 <!ENTITY pref_tab_queue_summary4 "Uložte si odkazy do příštího otevření aplikace &brandShortName;">
 
 <!-- Localization note (pref_compact_tabs): Label for setting that controls whether 1 wide column or
@@ -825,6 +819,8 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 
 <!ENTITY promotion_add_to_homescreen "Přidat na domovskou obrazovku">
 
+<!ENTITY promotion_add_page_shortcut "Přidat zkratku stránky">
+
 <!ENTITY helper_first_offline_bookmark_title "Číst offline">
 <!ENTITY helper_first_offline_bookmark_message "Najděte vaše Zobrazení čtečky v záložkách, i když jste offline.">
 <!ENTITY helper_first_offline_bookmark_button "Přejít do záložek">
@@ -834,7 +830,12 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_button "Přidat do záložek">
 
 <!ENTITY activity_stream_topsites "Top stránky">
+<!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->
+<!ENTITY activity_stream_topstories "Doporučení ze služby &brandPocket;">
 <!ENTITY activity_stream_highlights "Vybrané">
+
+<!-- LOCALIZATION NOTE (activity_stream_link_more1): Link-like text displayed to take user to a website with more content from Pocket. -->
+<!ENTITY activity_stream_link_more1 "VÍCE">
 
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_bookmarked): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
@@ -842,12 +843,30 @@ Stream list for highlights sourced from th user's bookmarks. -->
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_visited): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
 <!ENTITY activity_stream_highlight_label_visited "Zobrazeno">
+<!-- LOCALIZATION NOTE (activity_stream_highlight_label_trending): This label is shown in the Activity Stream list for highlights sourced from a recommendations engine. -->
+<!ENTITY activity_stream_highlight_label_trending "Populární">
+<!-- LOCALIZATION NOTE (activity_stream_highlights_empty): This text is shown when we could not find highlights for this user. This is also shown on first run. -->
+<!ENTITY activity_stream_highlights_empty "Začněte prohlížet a my vám zde ukážeme některé skvělé články, videa a další stránky, které jste nedávno viděli nebo uložili do záložek.">
 
-<!-- LOCALIZATION NOTE (activity_stream_dismiss): This label is shown in the Activity Stream context menu,
+<!-- LOCALIZATION NOTE (activity_stream_remove): This label is shown in the Activity Stream context menu,
 and allows hiding a URL/page from highlights or topsites. The page remains in history/bookmarks, but
 is simply hidden from the Activity Stream panel. -->
-<!ENTITY activity_stream_dismiss "Skrýt">
+<!ENTITY activity_stream_remove "Odebrat">
 <!ENTITY activity_stream_delete_history "Smazat z historie">
 
-<!ENTITY activity_stream_welcome_title "Vítejte ve vašich Vybraných">
-<!ENTITY activity_stream_welcome_content1 "Aplikace &brandShortName; nyní vytváří výběr věcí, které jste na webu objevili, takže snadno naleznete cestu zpět ke skvělým článkům, videím, záložkám a ostatním stránkám.">
+<!ENTITY private_tab_panel_title "Anonymní prohlížení + Ochrana proti sledování">
+<!ENTITY private_tab_panel_description "&brandShortName; blokuje ty součásti stránek, které mohou sledovat vaše chování při prohlížení.">
+<!ENTITY private_tab_panel_description2 "Neukládáme vaši historii prohlížení, pouze stažené soubory a nové záložky zůstanou ve vašem zařízení zachovány.">
+<!ENTITY private_tab_learn_more "Chcete se dozvědět více?">
+
+<!ENTITY fullscreen_warning "Byl spuštěn režim celé obrazovky">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_confirm): The plus sign here is part of UI design -->
+<!ENTITY pwa_add_to_launcher_confirm "+ Přidat na domovskou obrazovku">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_badge2): Used as label in the page actions dropdown list,
+displayed when there are more than 3 actions available for a page.
+See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
+<!ENTITY pwa_add_to_launcher_badge2 "Přidat na domovskou obrazovku">
+<!ENTITY pwa_continue_to_website "Pokračovat na webovou stránku">
+<!ENTITY pwa_onboarding_sumo "Tuto stránku si můžete snadno přidat na vaši domovskou obrazovku. Budete k ní mít okamžitý přístup a prohlížení bude rychlejší se zážitkem jako v aplikaci.">

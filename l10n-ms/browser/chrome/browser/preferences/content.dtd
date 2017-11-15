@@ -7,16 +7,29 @@
 <!ENTITY  blockPopups.label           "Sekat tetingkap popup">
 <!ENTITY  blockPopups.accesskey       "S">
 
-<!ENTITY  notificationsPolicyLearnMore.label   "Ketahui selanjutnya">
-<!ENTITY  notificationsPolicyDesc4.label       "Pilih laman web yang diberi izin untuk menghantar notifikasi">
-<!ENTITY  notificationsPolicyButton.accesskey  "h">
-<!ENTITY  notificationsPolicyButton.label      "Pilih…">
 <!ENTITY  notificationsDoNotDisturb.label      "Jangan ganggu saya">
 <!ENTITY  notificationsDoNotDisturb.accesskey  "n">
 <!ENTITY  notificationsDoNotDisturbDetails.value "Tiada notifikasi akan dipaparkan sehingga anda mula semula &brandShortName;">
 
-<!ENTITY  popupExceptions.label       "Pengecualian…">
-<!ENTITY  popupExceptions.accesskey   "E">
+<!ENTITY  popupExceptions.label                                 "Pengecualian…">
+<!ENTITY  popupExceptions.accesskey                             "E">
+
+<!ENTITY  notificationPermissions.label                         "Notifikasi">
+<!ENTITY  notificationSettingsButton.label                      "Tetapan…">
+<!ENTITY  notificationSettingsButton.accesskey                  "t">
+<!ENTITY  notificationPermissionsLearnMore.label                "Ketahui selanjutnya">
+
+<!ENTITY  locationPermissions.label                             "Lokasi">
+<!ENTITY  locationSettingsButton.label                          "Tetapan…">
+<!ENTITY  locationSettingsButton.accesskey                      "t">
+
+<!ENTITY  cameraPermissions.label                               "Kamera">
+<!ENTITY  cameraSettingsButton.label                            "Tetapan…">
+<!ENTITY  cameraSettingsButton.accesskey                        "t">
+
+<!ENTITY  microphonePermissions.label                           "Mikrofon">
+<!ENTITY  microphoneSettingsButton.label                        "Tetapan…">
+<!ENTITY  microphoneSettingsButton.accesskey                    "t">
 
 <!ENTITY  fontsAndColors.label        "Fon &amp; Warna">
 

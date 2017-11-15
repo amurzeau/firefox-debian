@@ -18,12 +18,13 @@
 <!-- LOCALIZATION NOTE (trackingProtectionPBM5.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel. -->
 <!ENTITY trackingProtectionPBM5.label         "Gizli pencerelerde izlenme korumasını kullan">
 <!ENTITY trackingProtectionPBM5.accesskey     "G">
-<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the nightly channel. -->
+
+<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the release and beta channel. -->
 <!ENTITY trackingProtectionPBM6.label         "Gizli Gezinti’de bilinen takipçileri engellemek için İzlenme Koruması’nı kullan">
 <!ENTITY trackingProtectionPBM6.accesskey     "G">
 <!ENTITY trackingProtectionPBMLearnMore.label "Daha fazla bilgi al">
 <!ENTITY changeBlockList2.label               "Engelleme listesini değiştir…">
-<!ENTITY changeBlockList2.accesskey           "D">
+<!ENTITY changeBlockList2.accesskey           "E">
 
 <!ENTITY  doNotTrack.description        "Web sitelerine izlenmek istemediğimi bildiren “Do Not Track” sinyalini gönder">
 <!ENTITY  doNotTrack.learnMore.label    "Daha fazla bilgi al">
@@ -35,7 +36,7 @@
 
 <!ENTITY  addressBar.label              "Adres çubuğu">
 <!ENTITY  addressBar.suggest.label      "Adres çubuğunu kullanırken şunları öner:">
-<!ENTITY  locbar.history2.label         "Tarama geçmişi">
+<!ENTITY  locbar.history2.label         "Gezinti geçmişi">
 <!ENTITY  locbar.history2.accesskey     "G">
 <!ENTITY  locbar.bookmarks.label        "Yer imleri">
 <!ENTITY  locbar.bookmarks.accesskey    "Y">
@@ -47,16 +48,16 @@
 <!ENTITY  suggestionSettings2.label     "Arama motoru önerileri için tercihleri değiştir">
 
 <!ENTITY  acceptCookies2.label          "Sitelerden çerezleri kabul et">
-<!ENTITY  acceptCookies2.accesskey      "K">
+<!ENTITY  acceptCookies2.accesskey      "S">
 
-<!ENTITY  acceptThirdParty.pre.label      "Üçüncü taraf çerezlerini kabul et:">
-<!ENTITY  acceptThirdParty.pre.accesskey  "c">
+<!ENTITY  acceptThirdParty2.pre.label     "Üçüncü taraf çerezlerini kabul et">
+<!ENTITY  acceptThirdParty2.pre.accesskey "c">
 <!ENTITY  acceptThirdParty.always.label   "Her zaman">
 <!ENTITY  acceptThirdParty.never.label    "Asla">
 <!ENTITY  acceptThirdParty.visited.label  "Ziyaret edilenlerden">
 
-<!ENTITY  keepUntil.label               "Tutma sınırı:">
-<!ENTITY  keepUntil.accesskey           "T">
+<!ENTITY  keepUntil2.label              "Tutma sınırı">
+<!ENTITY  keepUntil2.accesskey          "u">
 
 <!ENTITY  expire.label                  "Süresi dolana dek">
 <!ENTITY  close.label                   "&brandShortName; kapatılana dek">
@@ -74,7 +75,7 @@
 <!ENTITY  historyHeader.custom.label       "geçmiş için özel ayarları kullansın">
 <!ENTITY  historyHeader.post.label         "">
 
-<!ENTITY  rememberDescription.label      "&brandShortName; tarama, indirme, form ve arama geçmişlerinizi hatırlayacak; ziyaret ettiğiniz web sitelerinin çerezlerini saklayacak.">
+<!ENTITY  rememberDescription.label      "&brandShortName; gezinti, indirme, form ve arama geçmişlerinizi hatırlayacak; ziyaret ettiğiniz web sitelerinin çerezlerini saklayacak.">
 
 <!-- LOCALIZATION NOTE (rememberActions.pre.label): include a trailing space as needed -->
 <!-- LOCALIZATION NOTE (rememberActions.middle.label): include a starting and trailing space as needed -->
@@ -96,7 +97,7 @@
 <!ENTITY  privateBrowsingPermanent2.label "Her zaman gizli gezinti kipini kullan">
 <!ENTITY  privateBrowsingPermanent2.accesskey "m">
 
-<!ENTITY  rememberHistory2.label      "Tarama ve indirme geçmişimi hatırla">
+<!ENTITY  rememberHistory2.label      "Gezinti ve indirme geçmişimi hatırla">
 <!ENTITY  rememberHistory2.accesskey  "h">
 
 <!ENTITY  rememberSearchForm.label       "Arama ve form geçmişini hatırla">
@@ -113,3 +114,8 @@
 <!ENTITY  browserContainersEnabled.accesskey    "K">
 <!ENTITY  browserContainersSettings.label        "Ayarlar…">
 <!ENTITY  browserContainersSettings.accesskey    "A">
+
+<!ENTITY  a11yPrivacy.checkbox.label     "Erişilebilirlik hizmetlerinin tarayıcıma erişmesini engelle">
+<!ENTITY  a11yPrivacy.checkbox.accesskey "E">
+<!ENTITY  a11yPrivacy.learnmore.label    "Daha fazla bilgi al">
+<!ENTITY enableSafeBrowsingLearnMore.label "Daha fazla bilgi al">

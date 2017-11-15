@@ -10,18 +10,19 @@
 <!ENTITY engine.tabs.accesskey      "T">
 <!ENTITY engine.history.label       "Riwayat">
 <!ENTITY engine.history.accesskey   "w">
-<!ENTITY engine.logins.label        "Log masuk">
-<!ENTITY engine.logins.accesskey    "L">
+<!ENTITY engine.logins.label        "Info masuk">
+<!ENTITY engine.logins.accesskey    "I">
 <!ENTITY engine.prefs.label         "Pengaturan">
 <!ENTITY engine.prefs.accesskey     "P">
 <!ENTITY engine.addons.label        "Pengaya">
 <!ENTITY engine.addons.accesskey    "y">
 <!ENTITY engine.addresses.label     "Alamat">
+<!ENTITY engine.addresses.accesskey "a">
 <!ENTITY engine.creditcards.label   "Kartu kredit">
 <!ENTITY engine.creditcards.accesskey "K">
 
 <!-- Device Settings -->
-<!ENTITY fxaSyncDeviceName.label       "Nama Perangkat">
+<!ENTITY fxaSyncDeviceName.label       "Nama Peranti">
 <!ENTITY changeSyncDeviceName2.label "Ubah Nama Peranti…">
 <!ENTITY changeSyncDeviceName2.accesskey "h">
 <!ENTITY cancelChangeSyncDeviceName.label "Batal">
@@ -63,15 +64,15 @@ both, to better adapt this sentence to their language.
 <!ENTITY forget.accesskey            "L">
 
 <!ENTITY signedOut.caption            "Bawalah Web bersama Anda">
-<!ENTITY signedOut.description        "Sinkronkan markah, riwayat, tab, sandi, pengaya, dan preferensi di berbagai perangkat Anda.">
+<!ENTITY signedOut.description        "Sinkronkan markah, riwayat, tab, sandi, pengaya, dan preferensi di berbagai peranti Anda.">
 <!ENTITY signedOut.accountBox.title   "Sambungkan dengan &syncBrand.fxAccount.label;">
-<!ENTITY signedOut.accountBox.create  "Buat Akun">
-<!ENTITY signedOut.accountBox.create.accesskey  "B">
-<!ENTITY signedOut.accountBox.signin  "Masuk">
-<!ENTITY signedOut.accountBox.signin.accesskey  "M">
+<!ENTITY signedOut.accountBox.create2 "Tidak punya akun? Buatlah">
+<!ENTITY signedOut.accountBox.create2.accesskey "B">
+<!ENTITY signedOut.accountBox.signin2 "Masuk…">
+<!ENTITY signedOut.accountBox.signin2.accesskey "M">
 
 <!ENTITY signedIn.settings.label       "Pengaturan Sinkronisasi">
-<!ENTITY signedIn.settings.description "Pilih apa saja yang akan disinkronkan pada perangkat Anda yang menggunakan &brandShortName;.">
+<!ENTITY signedIn.settings.description "Pilih apa saja yang akan disinkronkan pada peranti Anda yang menggunakan &brandShortName;.">
 
 <!-- LOCALIZATION NOTE (mobilePromo3.*): the following strings will be used to
      create a single sentence with active links.
@@ -87,4 +88,4 @@ both, to better adapt this sentence to their language.
 <!-- LOCALIZATION NOTE (mobilePromo3.iOSLink): This is a link title that links to https://www.mozilla.org/firefox/ios/ -->
 <!ENTITY mobilePromo3.iOSLink          "iOS">
 
-<!ENTITY mobilePromo3.end              " untuk menyinkronkan dengan perangkat seluler Anda.">
+<!ENTITY mobilePromo3.end              " untuk menyinkronkan dengan peranti seluler Anda.">

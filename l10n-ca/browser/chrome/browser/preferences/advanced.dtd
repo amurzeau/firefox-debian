@@ -96,7 +96,7 @@ available. -->
 <!ENTITY updateApplication.version.post  "">
 <!ENTITY updateApplication.description   "Actualitzacions del &brandShortName;">
 <!ENTITY updateAuto3.label               "Instal·la les actualitzacions automàticament (recomanat)">
-<!ENTITY updateAuto3.accesskey           "A">
+<!ENTITY updateAuto3.accesskey           "a">
 <!ENTITY updateCheckChoose2.label        "Cerca actualitzacions, però demana'm si vull instal·lar-les">
 <!ENTITY updateCheckChoose2.accesskey    "C">
 <!ENTITY updateManual2.label             "No cerquis mai actualitzacions (no recomanat)">
@@ -116,7 +116,7 @@ available. -->
 <!ENTITY offlineStorageNotifyExceptions.label     "Excepcions…">
 <!ENTITY offlineStorageNotifyExceptions.accesskey "x">
 
-<!ENTITY offlineAppsList2.label          "Els llocs web següents poden desar dades per utilitzar-les fora de línia:">
+<!ENTITY offlineAppsList3.label          "Els llocs web següents poden desar dades per utilitzar-les fora de línia">
 <!ENTITY offlineAppsList.height          "8em">
 <!ENTITY offlineAppsListRemove.label     "Suprimeix…">
 <!ENTITY offlineAppsListRemove.accesskey "u">

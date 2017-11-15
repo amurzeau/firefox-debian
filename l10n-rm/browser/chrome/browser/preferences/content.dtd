@@ -7,16 +7,29 @@
 <!ENTITY  blockPopups.label           "Bloccar fanestras pop-up">
 <!ENTITY  blockPopups.accesskey       "p">
 
-<!ENTITY  notificationsPolicyLearnMore.label   "Ulteriuras infurmaziuns">
-<!ENTITY  notificationsPolicyDesc4.label       "Tscherna las paginas che ta dastgan trametter communicaziuns">
-<!ENTITY  notificationsPolicyButton.accesskey  "h">
-<!ENTITY  notificationsPolicyButton.label      "Tscherner…">
 <!ENTITY  notificationsDoNotDisturb.label      "Betg disturbar">
 <!ENTITY  notificationsDoNotDisturb.accesskey  "b">
 <!ENTITY  notificationsDoNotDisturbDetails.value "Naginas communicaziuns na vegnan mussadas enfin che ti reavieschas &brandShortName;">
 
-<!ENTITY  popupExceptions.label       "Excepziuns…">
-<!ENTITY  popupExceptions.accesskey   "E">
+<!ENTITY  popupExceptions.label                                 "Excepziuns…">
+<!ENTITY  popupExceptions.accesskey                             "E">
+
+<!ENTITY  notificationPermissions.label                         "Communicaziuns">
+<!ENTITY  notificationSettingsButton.label                      "Parameters…">
+<!ENTITY  notificationSettingsButton.accesskey                  "m">
+<!ENTITY  notificationPermissionsLearnMore.label                "Ulteriuras infurmaziuns">
+
+<!ENTITY  locationPermissions.label                             "Posiziun">
+<!ENTITY  locationSettingsButton.label                          "Parameters…">
+<!ENTITY  locationSettingsButton.accesskey                      "m">
+
+<!ENTITY  cameraPermissions.label                               "Camera">
+<!ENTITY  cameraSettingsButton.label                            "Parameters…">
+<!ENTITY  cameraSettingsButton.accesskey                        "m">
+
+<!ENTITY  microphonePermissions.label                           "Microfon">
+<!ENTITY  microphoneSettingsButton.label                        "Parameters…">
+<!ENTITY  microphoneSettingsButton.accesskey                    "m">
 
 <!ENTITY  fontsAndColors.label        "Scrittiras &amp; colurs">
 

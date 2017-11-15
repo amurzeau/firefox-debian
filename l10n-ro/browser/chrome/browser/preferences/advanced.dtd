@@ -1,8 +1,8 @@
 <!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<!-- Note: each tab panel must contain unique accesskeys -->
 
+<!-- Note: each tab panel must contain unique accesskeys -->
 
 <!ENTITY generalTab.label                "General">
 
@@ -23,12 +23,14 @@
 <!ENTITY checkUserSpelling.accesskey     "t">
 
 <!ENTITY dataChoicesTab.label            "Împărtășire de date">
+
 <!-- LOCALIZATION NOTE (healthReportingDisabled.label): This message is displayed above
 disabled data sharing options in developer builds or builds with no Telemetry support
 available. -->
+<!ENTITY healthReportingDisabled.label   "Raportarea datelor este dezactivată în configurația folosită">
 
-<!ENTITY enableHealthReport1.label       "Permite lui &brandShortName; să trimită automat Mozillei date tehnice și date despre interacțiuni">
-<!ENTITY enableHealthReport1.accesskey   "r">
+<!ENTITY enableHealthReport2.label       "Permite &brandShortName; să trimită informații tehnice și interactive către Mozilla">
+<!ENTITY enableHealthReport2.accesskey   "r">
 <!ENTITY healthReportLearnMore.label     "Află mai multe">
 
 <!ENTITY dataCollection.label            "Colectarea și utilizarea de date din &brandShortName;">
@@ -50,21 +52,21 @@ available. -->
 <!ENTITY httpCache.label                 "Conținut web în cache">
 
 <!ENTITY offlineStorage2.label           "Conținut web offline și datele utilizatorului">
-<!--  Site Data section manages sites using Storage API and is under Network -->
 
-<!ENTITY siteData.label                  "Datele site-urilor">
+<!--  Site Data section manages sites using Storage API and is under Network -->
+<!ENTITY siteData.label                  "Date privind site-urile">
 <!ENTITY clearSiteData.label             "Șterge toate datele">
 <!ENTITY clearSiteData.accesskey         "l">
 <!ENTITY siteDataSettings.label          "Setări…">
 <!ENTITY siteDataSettings.accesskey      "e">
 <!ENTITY siteDataLearnMoreLink.label     "Află mai multe">
+
 <!-- LOCALIZATION NOTE:
   The entities limitCacheSizeBefore.label and limitCacheSizeAfter.label appear on a single
   line in preferences as follows:
 
   &limitCacheSizeBefore.label [textbox for cache size in MB] &limitCacheSizeAfter.label;
 -->
-
 <!ENTITY limitCacheSizeBefore.label      "Limitează memoria cache la">
 <!ENTITY limitCacheSizeBefore.accesskey  "L">
 <!ENTITY limitCacheSizeAfter.label       "MB din spațiu">
@@ -76,11 +78,11 @@ available. -->
 <!ENTITY overrideSmartCacheSize.accesskey "o">
 
 <!ENTITY updateTab.label                 "Actualizare">
+
 <!-- LOCALIZATION NOTE (updateApplication.label):
   Strings from aboutDialog.dtd are displayed in this section of the preferences.
   Please check for possible accesskey conflicts.
 -->
-
 <!ENTITY updateApplication.label         "Actualizări &brandShortName;">
 <!-- LOCALIZATION NOTE (updateApplication.version.*): updateApplication.version.pre
 # is followed by a version number, keep the trailing space or replace it with a
@@ -88,12 +90,13 @@ available. -->
 # after the version number, and is empty on purpose for English. You can use it
 # if required by your language.
  -->
-<!ENTITY updateApplicationDescription.label "Menține &brandShortName; actualizat pentru cea mai bună performanță, stabilitate și securitate.">
+<!ENTITY updateApplicationDescription.label
+                                         "Menține &brandShortName; actualizat pentru cea mai bună performanță, stabilitate și securitate.">
 <!ENTITY updateApplication.version.pre   "Versiunea ">
 <!ENTITY updateApplication.version.post  "">
 <!ENTITY updateApplication.description   "Permite ca &brandShortName; să">
 <!ENTITY updateAuto3.label               "Instaleze automat actualizări (recomandat)">
-<!ENTITY updateAuto3.accesskey           "a">
+<!ENTITY updateAuto3.accesskey           "A">
 <!ENTITY updateCheckChoose2.label        "Caute actualizări, dar să te lase să decizi dacă le instalezi">
 <!ENTITY updateCheckChoose2.accesskey    "C">
 <!ENTITY updateManual2.label             "Nu caute niciodată actualizări (nerecomandat)">
@@ -113,7 +116,7 @@ available. -->
 <!ENTITY offlineStorageNotifyExceptions.label     "Excepții…">
 <!ENTITY offlineStorageNotifyExceptions.accesskey "x">
 
-<!ENTITY offlineAppsList2.label          "Următoarele site-uri web au permisiunea de a stoca date pentru utilizare offline:">
+<!ENTITY offlineAppsList3.label          "Următoarele site-uri web au permisiunea de a stoca date pentru utilizare offline">
 <!ENTITY offlineAppsList.height          "7em">
 <!ENTITY offlineAppsListRemove.label     "Elimină…">
 <!ENTITY offlineAppsListRemove.accesskey "R">
@@ -133,14 +136,21 @@ available. -->
 <!ENTITY viewSecurityDevices2.accesskey  "D">
 
 <!ENTITY performance.label               "Performanță">
-<!ENTITY useRecommendedPerformanceSettings2.label "Folosește setările recomandate de performanță">
-<!ENTITY useRecommendedPerformanceSettings2.description "Aceste setări sunt adaptate pentru hardware-ul și sistemul de operare al calculatorului.">
-<!ENTITY useRecommendedPerformanceSettings2.accesskey "U">
-<!ENTITY performanceSettingsLearnMore.label "Află mai multe">
+<!ENTITY useRecommendedPerformanceSettings2.label
+                                         "Folosește setările recomandate de performanță">
+<!ENTITY useRecommendedPerformanceSettings2.description
+                                         "Aceste setări sunt adaptate pentru hardware-ul și sistemul de operare al calculatorului.">
+<!ENTITY useRecommendedPerformanceSettings2.accesskey
+                                         "U">
+<!ENTITY performanceSettingsLearnMore.label
+                                         "Află mai multe">
 <!ENTITY limitContentProcessOption.label "Limita proceselor pentru conținut">
-<!ENTITY limitContentProcessOption.description "Procesele adiționale pentru conținut pot îmbunătăți performanța atunci când se folosesc mai multe file, însă va consuma și mai multă memorie.">
+<!ENTITY limitContentProcessOption.description
+                                         "Procesele adiționale pentru conținut pot îmbunătăți performanța atunci când se folosesc mai multe file, însă va consuma și mai multă memorie.">
 <!ENTITY limitContentProcessOption.accesskey   "L">
-<!ENTITY limitContentProcessOption.disabledDescription "Modificarea numărului de procese pentru conținut este posibilă doar cu funcția de multiprocese din &brandShortName;.">
-
+<!ENTITY limitContentProcessOption.disabledDescription
+                                         "Modificarea numărului de procese pentru conținut este posibilă doar cu funcția de multiprocese din &brandShortName;.">
+<!ENTITY limitContentProcessOption.disabledDescriptionLink
+                                         "Învaţă cum să verifici dacă funcția de multiprocese este activată">
 <!ENTITY allowHWAccel.label              "Folosește accelerarea hardware atunci când este disponibilă">
 <!ENTITY allowHWAccel.accesskey          "h">

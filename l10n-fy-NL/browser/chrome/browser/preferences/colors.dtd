@@ -6,25 +6,25 @@
 <!ENTITY  window.width                    "43em">
 <!ENTITY  window.macWidth                 "41em">
 
-<!ENTITY  overrideDefaultPageColors.label        "De kleuren opjûn troch de side oerskriuwe mei myn seleksjes hjirboppe:">
-<!ENTITY  overrideDefaultPageColors.accesskey    "D">
+<!ENTITY  overrideDefaultPageColors2.label       "De kleuren opjûn troch de side oerskriuwe mei myn seleksjes hjirboppe">
+<!ENTITY  overrideDefaultPageColors2.accesskey   "k">
 
 <!ENTITY  overrideDefaultPageColors.always.label "Altyd">
 <!ENTITY  overrideDefaultPageColors.auto.label   "Allinnich by tema’s mei heech kontrast">
 <!ENTITY  overrideDefaultPageColors.never.label  "Nea">
 
 <!ENTITY  color                           "Tekst en eftergrûn">
-<!ENTITY  textColor.label                 "Tekst:">
-<!ENTITY  textColor.accesskey             "T">
-<!ENTITY  backgroundColor.label           "Eftergrûn:">
-<!ENTITY  backgroundColor.accesskey       "E">
+<!ENTITY  textColor2.label                "Tekst">
+<!ENTITY  textColor2.accesskey            "T">
+<!ENTITY  backgroundColor2.label          "Achtergrûn">
+<!ENTITY  backgroundColor2.accesskey      "A">
 <!ENTITY  useSystemColors.label           "Systeemkleuren brûke">
 <!ENTITY  useSystemColors.accesskey       "S">
 
 <!ENTITY  underlineLinks.label            "Keppelingen ûnderstreekje">
 <!ENTITY  underlineLinks.accesskey        "K">
 <!ENTITY  links                           "Keppelingskleuren">
-<!ENTITY  linkColor.label                 "Net-besochte keppelingen:">
-<!ENTITY  linkColor.accesskey             "N">
-<!ENTITY  visitedLinkColor.label          "Besochte keppelingen:">
-<!ENTITY  visitedLinkColor.accesskey      "B">
+<!ENTITY  linkColor2.label                "Net-besochte keppelingen">
+<!ENTITY  linkColor2.accesskey            "N">
+<!ENTITY  visitedLinkColor2.label         "Besochte keppelingen">
+<!ENTITY  visitedLinkColor2.accesskey     "B">

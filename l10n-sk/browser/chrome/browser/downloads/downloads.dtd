@@ -45,7 +45,7 @@
 <!ENTITY cmd.pause.label                  "Pozastaviť">
 <!ENTITY cmd.pause.accesskey              "P">
 <!ENTITY cmd.resume.label                 "Pokračovať">
-<!ENTITY cmd.resume.accesskey             "P">
+<!ENTITY cmd.resume.accesskey             "o">
 <!ENTITY cmd.cancel.label                 "Zrušiť">
 <!-- LOCALIZATION NOTE (cmd.show.label, cmd.show.accesskey, cmd.showMac.label,
      cmd.showMac.accesskey):
@@ -53,9 +53,10 @@
      the same access key (though the two access keys can also be different).
      -->
 <!ENTITY cmd.show.label                   "Otvoriť priečinok so súborom">
-<!ENTITY cmd.show.accesskey               "t">
+<!ENTITY cmd.show.accesskey               "b">
 <!ENTITY cmd.showMac.label                "Zobraziť vo Finderi">
-<!ENTITY cmd.showMac.accesskey            "b">
+<!ENTITY cmd.showMac.accesskey            "F">
+<!ENTITY cmd.showDownloads.label          "Otvoriť priečinok s prevzatými súbormi">
 <!ENTITY cmd.retry.label                  "Znova">
 <!ENTITY cmd.goToDownloadPage.label       "Prejsť na stránku so súborom">
 <!ENTITY cmd.goToDownloadPage.accesskey   "r">
@@ -134,7 +135,17 @@
 <!ENTITY downloadsHistory.label           "Zobraziť všetky prevzaté súbory">
 <!ENTITY downloadsHistory.accesskey       "Z">
 
-<!ENTITY openDownloadsFolder.label       "Otvoriť priečinok s prevzatými súbormi">
+<!-- LOCALIZATION NOTE (downloadDetails.label):
+     This string is shown at the top of the Download Details Panel, to indicate
+     that we are showing the details of a single download.
+     -->
+<!ENTITY downloadDetails.label            "Podrobnosti o preberaní">
+
+<!-- LOCALIZATION NOTE (openDownloadsFolder.label):
+     This command is not currently available in the user interface, but the
+     string was preserved by bug 1362207 to be used in a future version.
+     -->
+<!ENTITY openDownloadsFolder.label        "Otvoriť priečinok s prevzatými súbormi">
 
 <!ENTITY clearDownloadsButton.label       "Vymazať zoznam">
 <!ENTITY clearDownloadsButton.tooltip     "Vymaže zoznam dokončených, zrušených a zlyhaných preberaní súborov">
@@ -143,15 +154,15 @@
      This string is shown when there are no items in the Downloads view, when it
      is displayed inside a browser tab.
      -->
-<!ENTITY downloadsListEmpty.label         "Žiadne prevzaté súbory">
+<!ENTITY downloadsListEmpty.label         "Žiadne prevzaté súbory.">
 
 <!-- LOCALIZATION NOTE (downloadsPanelEmpty.label):
      This string is shown when there are no items in the Downloads Panel.
      -->
-<!ENTITY downloadsPanelEmpty.label        "Žiadne prevzaté súbory v tejto relácii">
+<!ENTITY downloadsPanelEmpty.label        "Žiadne prevzaté súbory v tejto relácii.">
 
 <!-- LOCALIZATION NOTE (downloadsListNoMatch.label):
      This string is shown when some search terms are specified, but there are no
      results in the Downloads view.
      -->
-<!ENTITY downloadsListNoMatch.label       "Žiadne nájdené výsledky">
+<!ENTITY downloadsListNoMatch.label       "Nepodarilo sa nájsť špecifikované preberania.">

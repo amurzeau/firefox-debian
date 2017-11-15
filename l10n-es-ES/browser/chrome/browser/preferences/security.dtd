@@ -3,9 +3,9 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY security.label "Seguridad">
-<!ENTITY phishingProtection.label "Protección contra phishing">
 <!ENTITY warnOnAddonInstall2.label "Advertirle cuando los sitios web intenten instalar complementos">
 <!ENTITY warnOnAddonInstall2.accesskey "A">
+<!ENTITY browsingProtection.label "Protección contra contenido engañoso y software peligroso">
 <!ENTITY enableSafeBrowsing.label "Bloquear contenido peligroso y engañoso">
 <!ENTITY enableSafeBrowsing.accesskey "B">
 <!ENTITY blockDownloads.label "Bloquear descargas peligrosas">
