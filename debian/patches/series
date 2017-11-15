@@ -22,3 +22,4 @@ debian-hacks/Set-program-name-from-the-remoting-name.patch
 debian-hacks/Build-against-system-libjsoncpp.patch
 debian-hacks/Use-the-Mozilla-Location-Service-key-when-the-Google.patch
 debian-hacks/Add-ppc64el-target-for-rust-code.patch
+debian-hacks/Allow-to-build-against-nspr-4.16.patch

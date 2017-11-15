@@ -1,0 +1,35 @@
+From: Mike Hommey <mh@glandium.org>
+Date: Fri, 29 Sep 2017 11:27:52 +0900
+Subject: Allow to build against nspr 4.16
+
+---
+ old-configure    | 2 +-
+ old-configure.in | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/old-configure b/old-configure
+index 1d95405f84cf..7fc947636078 100644
+--- a/old-configure
++++ b/old-configure
+@@ -953,7 +953,7 @@ _SUBDIR_CONFIG_ARGS="$ac_configure_args"
+ MOZJPEG=62
+ MOZPNG=10631
+ NSPR_VERSION=4
+-NSPR_MINVER=4.17
++NSPR_MINVER=4.16
+ NSS_VERSION=3
+ 
+ GLIB_VERSION=2.22
+diff --git a/old-configure.in b/old-configure.in
+index a092294f0ad8..d217aed3c118 100644
+--- a/old-configure.in
++++ b/old-configure.in
+@@ -48,7 +48,7 @@ dnl ========================================================
+ MOZJPEG=62
+ MOZPNG=10631
+ NSPR_VERSION=4
+-NSPR_MINVER=4.17
++NSPR_MINVER=4.16
+ NSS_VERSION=3
+ 
+ dnl Set the minimum version of toolkit libs used by mozilla
