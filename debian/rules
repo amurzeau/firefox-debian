@@ -212,7 +212,6 @@ endif
 	ASFLAGS="-g" \
 	$(CONFIGURE_ENV) \
 	../configure --target=$(DEB_HOST_GNU_TYPE) --host=$(DEB_BUILD_GNU_TYPE) --prefix=/usr $(CONFIGURE_FLAGS) \
-		--with-default-mozilla-five-home=$(LIB_DIR) \
 		$(BRANDING_CONFIGURE_FLAG)
 	sed -i "/MOZ_APP_REMOTINGNAME/s/'[^']*',/'$(MOZ_APP_REMOTINGNAME)',/" build-$(PRODUCT)/config.status
 
