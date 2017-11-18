@@ -177,7 +177,8 @@ stamps/prepare-configure:: stamps/dummy
 			sed -i '2!b;/^#/ i\exec "/usr/share/misc/'$$file'" "$$@"' $$dir/$$file; \
 		done; \
 	done
-	$(MAKE) -f client.mk configure-files
+	cp -f configure.in configure && chmod +x configure
+	cp -f js/src/configure.in js/src/configure && chmod +x js/src/configure
 
 stamps/configure-check-$(PRODUCT):: stamps/configure-$(PRODUCT)
 # Ensure --{with,enable}-system options properly set expected variables
