@@ -38,7 +38,7 @@ Build-Depends: autotools-dev,
                libnspr4-dev (>= 2:4.16~),
 %endif
 %if USE_SYSTEM_NSS
-               libnss3-dev (>= 2:3.33~),
+               libnss3-dev (>= 2:3.34.1~),
 %endif
 %if USE_SYSTEM_SQLITE
                libsqlite3-dev (>= 3.20.1),
@@ -59,8 +59,8 @@ Build-Depends: autotools-dev,
                libjsoncpp-dev,
                libpulse-dev,
                yasm (>= 1.1),
-               rustc (>= 1.19),
-               cargo (>= 0.20),
+               rustc (>= 1.21),
+               cargo (>= 0.22),
                llvm-4.0-dev,
                libclang-4.0-dev,
                clang-4.0,
