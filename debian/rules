@@ -96,7 +96,7 @@ endif
 ifneq (,$(filter debug,$(DEB_BUILD_OPTIONS)))
 	CONFIGURE_FLAGS += --enable-debug
 endif
-ifneq (,$(filter %i386 %amd64,$(DEB_HOST_ARCH)))
+ifneq (,$(filter %i386 %amd64 armel armhf arm64,$(DEB_HOST_ARCH)))
 	MOZ_FFVPX = 1
 endif
 ifneq (,$(filter i386 amd64 armel armhf,$(DEB_HOST_ARCH)))
