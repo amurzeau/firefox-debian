@@ -89,7 +89,8 @@ Depends: ${shlibs:Depends},
          fontconfig,
          procps,
          debianutils (>= 1.16),
-         libsqlite3-0 (>= 3.7.12-1~)
+         libsqlite3-0 (>= 3.7.12-1~),
+         libnss3 (>= 2:3.34~)
 Suggests: fonts-stix | otf-stix,
           fonts-lmodern,
           mozplugger,
