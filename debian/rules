@@ -290,8 +290,6 @@ endif
 	dh_auto_install --builddirectory=build-$(PRODUCT) -- installdir=$(LIB_DIR) \
 		MOZ_APP_BASE_VERSION=$(GRE_VERSION) \
 		MOZ_PKG_MANIFEST=$(CURDIR)/$< \
-		MOZ_NONLOCALIZED_PKG_LIST="xpcom debian" \
-		MOZ_LOCALIZED_PKG_LIST=en-US \
 		TAR_CREATE_FLAGS="--exclude=.mkdir.done --hard-dereference -chf" \
 		SIGN_NSS=
 
