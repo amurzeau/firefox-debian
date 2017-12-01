@@ -1,3 +1,14 @@
+firefox (57.0.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2017-27, also known as:
+  * CVE-2017-7843, CVE-2017-7844.
+
+  * debian/rules: Don't pass unused variables during make install.
+  * debian/installer/Makefile.in: Small path correctness fixup.
+
+ -- Mike Hommey <glandium@debian.org>  Fri, 01 Dec 2017 14:35:58 +0900
+
 firefox (57.0-1) unstable; urgency=medium
 
   * New upstream release.
