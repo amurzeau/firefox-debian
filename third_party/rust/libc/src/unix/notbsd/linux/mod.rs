@@ -391,6 +391,12 @@ s! {
         #[cfg(target_pointer_width = "32")]
         pub u: [u32; 7],
     }
+
+    pub struct ucred {
+        pub pid: ::pid_t,
+        pub uid: ::uid_t,
+        pub gid: ::gid_t,
+    }
 }
 
 pub const ABDAY_1: ::nl_item = 0x20000;
