@@ -1,3 +1,9 @@
+firefox (57.0.3-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Hommey <glandium@debian.org>  Sat, 30 Dec 2017 12:06:22 +0900
+
 firefox (57.0.1-1) unstable; urgency=medium
 
   * New upstream release.
