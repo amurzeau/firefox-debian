@@ -173,9 +173,6 @@ debian/iceweasel-l10n-%.maintscript: debian/removed_conffiles
 	grep -i searchplugins/locale/$* $< | awk '{print "rm_conffile /etc/iceweasel/" $$0, "45.0esr-2~", "iceweasel-l10n-$*"}' > $@
 endif
 
-%/package-manifest:
-	$(MAKE) -C $*
-
 override_dh_auto_configure:
 
 stamps/prepare-configure:: stamps/dummy
@@ -284,13 +281,13 @@ override_dh_clean:
 
 override_dh_auto_install: stamps/install-$(PRODUCT)
 
-stamps/install-$(PRODUCT):: build-$(PRODUCT)/debian/installer/package-manifest
+stamps/install-$(PRODUCT)::
 ifneq (,$(filter mips,$(DEB_BUILD_ARCH)))
 	sed -i '/"javascript.options.\(baselinejit\|ion\)"/s/true/false/' build-$(PRODUCT)/dist/bin/greprefs.js
 endif
 	dh_auto_install --builddirectory=build-$(PRODUCT) -- installdir=$(LIB_DIR) \
 		MOZ_APP_BASE_VERSION=$(GRE_VERSION) \
-		MOZ_PKG_MANIFEST=$(CURDIR)/$< \
+		MOZ_PKG_MANIFEST=$(CURDIR)/debian/installer/package-manifest.$(PRODUCT) \
 		TAR_CREATE_FLAGS="--exclude=.mkdir.done --hard-dereference -chf" \
 		SIGN_NSS=
 
