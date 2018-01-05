@@ -50,9 +50,6 @@ Build-Depends: autotools-dev,
                libhunspell-dev (>= 1.5),
 %endif
                libdbus-glib-1-dev,
-               libasound2-dev [linux-any],
-               libiw-dev [linux-any],
-               libnotify-dev,
 %if USE_SYSTEM_FFI
                libffi-dev,
 %endif
@@ -60,7 +57,6 @@ Build-Depends: autotools-dev,
                libevent-dev (>= 1.4.1),
 %endif
                libjsoncpp-dev,
-               mesa-common-dev,
                libpulse-dev,
                yasm (>= 1.1),
                rustc (>= 1.19),
