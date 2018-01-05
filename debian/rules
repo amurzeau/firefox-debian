@@ -270,6 +270,7 @@ ifeq ($(DEB_BUILD_ARCH_ENDIAN),big)
 endif
 
 	dh_auto_clean --builddirectory=build-$(PRODUCT)
+	dh_auto_clean --builddirectory=build-l10n
 	find . -name "*.pyc" -o -name "*.pyo" | xargs --no-run-if-empty rm -f
 
 	for dir in $(AUTOCONF_DIRS); do \
