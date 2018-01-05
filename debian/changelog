@@ -1,3 +1,17 @@
+firefox (57.0.4-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2018-01, mitigating "Spectre" side-channel attack.
+
+  * debian/control*: Remove build dependencies on unused -dev packages.
+  * debian/rules: Clean l10n build directory.
+  * debian/installer/Makefile.in,
+    debian/installer/package-manifest.browser, debian/rules, moz.build:
+    Let upstream packaging step preprocess our package manifest, instead  
+    of preprocessing it manually first.
+
+ -- Mike Hommey <glandium@debian.org>  Fri, 05 Jan 2018 15:55:05 +0900
+
 firefox (57.0.3-1) unstable; urgency=medium
 
   * New upstream release.
