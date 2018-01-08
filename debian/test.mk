@@ -16,7 +16,7 @@ endif
 xpcshell-tests: export LC_ALL=$(LOCALE)
 $(APP_TESTS) xpcshell-tests: XVFB_RUN = xvfb-run -s "-screen 0 1024x768x24"
 
-ifeq ($(DEB_BUILD_ARCH),armel)
+ifeq ($(DEB_HOST_ARCH),armel)
 # Force armel JIT to compile ARMv4T instructions at runtime even when the buildd
 # is > ARMv4T
 $(TESTS): export ARM_FORCE_PLATFORM=4

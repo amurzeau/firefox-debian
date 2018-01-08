@@ -42,7 +42,7 @@ usr/lib/@browser@/liblgpllibs.so
 usr/lib/@browser@/libmozavcodec.so
 usr/lib/@browser@/libmozavutil.so
 %endif
-%if DEB_BUILD_ARCH == i386 || DEB_BUILD_ARCH == amd64
+%if DEB_HOST_ARCH == i386 || DEB_HOST_ARCH == amd64
 usr/lib/@browser@/libmozsandbox.so
 %endif
 
