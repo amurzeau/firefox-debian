@@ -51,6 +51,7 @@ can reach it easily. -->
 <!ENTITY  sendLinkToDevice.label             "Envoyer le lien à un appareil">
 <!ENTITY  sendLinkToDevice.accesskey         "v">
 <!ENTITY  sendToDeviceFeedback.label         "Envoyé !">
+<!ENTITY  sendToDeviceOfflineFeedback.label  "Mis en attente (hors connexion)">
 <!ENTITY  moveToNewWindow.label              "Déplacer vers une nouvelle fenêtre">
 <!ENTITY  moveToNewWindow.accesskey          "n">
 <!ENTITY  bookmarkAllTabs.label              "Marquer tous les onglets…">
@@ -188,13 +189,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hideRecentlyBookmarked.accesskey "M">
 
 <!ENTITY backCmd.label                "Page précédente">
+<!ENTITY backCmd.accesskey            "P">
 <!ENTITY backButton.tooltip           "Reculer d’une page">
 <!ENTITY forwardCmd.label             "Page suivante">
+<!ENTITY forwardCmd.accesskey         "s">
 <!ENTITY forwardButton.tooltip        "Avancer d’une page">
 <!ENTITY backForwardButtonMenu.tooltip "Faire un clic droit ou cliquer en déplaçant la souris vers le bas pour afficher l’historique">
 <!ENTITY backForwardButtonMenuMac.tooltip "Cliquer tout en déplaçant la souris vers le bas pour afficher l’historique">
 <!ENTITY reloadCmd.label              "Actualiser">
+<!ENTITY reloadCmd.accesskey          "u">
 <!ENTITY stopCmd.label                "Arrêter">
+<!ENTITY stopCmd.accesskey            "r">
 <!ENTITY stopCmd.macCommandKey        ".">
 <!ENTITY goEndCap.tooltip             "Se rendre à la page indiquée dans la barre d’adresse">
 <!ENTITY printButton.label            "Imprimer">
@@ -231,6 +236,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Vous avez empêché ce site d’utiliser le stockage persistant.">
 
 <!ENTITY urlbar.popupBlocked.tooltip             "Vous avez bloqué des popups pour ce site web.">
+
+<!ENTITY urlbar.canvasBlocked.tooltip            "Vous avez empêché ce site d’extraire des informations de canvas.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Afficher l’historique">
 
@@ -355,6 +362,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuCustomize.tooltip "Personnaliser le menu et les barres d’outils">
 <!ENTITY appMenuCustomizeExit.label "Quitter la personnalisation">
 <!ENTITY appMenuCustomizeExit.tooltip "Terminer la personnalisation">
+
 <!ENTITY appMenuHistory.showAll.label "Afficher l’historique">
 <!ENTITY appMenuHistory.clearRecent.label "Effacer l’historique récent…">
 <!ENTITY appMenuHistory.restoreSession.label "Restaurer la session précédente">
@@ -385,9 +393,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Vous souhaitez afficher ici les onglets de vos autres appareils ?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Préférences de synchronisation">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Connectez-vous pour afficher la liste des onglets de vos autres appareils.">
+<!ENTITY appMenuRemoteTabs.unverified.label "Votre compte doit être vérifié.">
 <!ENTITY appMenuRemoteTabs.signin.label "Se connecter à Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Gérer les appareils…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Panneau latéral des onglets synchronisés">
+
+<!ENTITY appMenuRemoteTabs.connectdevice.label "Connecter un autre appareil">
 
 <!ENTITY appMenuRecentHighlights.label "Éléments-clés récents">
 
@@ -564,12 +575,13 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY setDesktopBackgroundCmd.label      "Choisir l’image comme fond d’écran">
 <!ENTITY setDesktopBackgroundCmd.accesskey  "d">
 <!ENTITY bookmarkPageCmd2.label       "Marquer cette page">
+<!ENTITY bookmarkPageCmd2.accesskey   "c">
 <!ENTITY bookmarkThisLinkCmd.label      "Marque-page sur ce lien">
 <!ENTITY bookmarkThisLinkCmd.accesskey  "M">
 <!ENTITY bookmarkThisFrameCmd.label      "Marque-page sur ce cadre">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "M">
 <!ENTITY pageAction.copyLink.label    "Copier le lien">
-<!ENTITY copyURLFeedback.label        "Copiée !">
+<!ENTITY copyURLFeedback.label        "Copié !">
 <!ENTITY emailPageCmd.label           "Envoyer par courriel un lien vers la page…">
 <!ENTITY emailPageCmd.accesskey       "c">
 <!ENTITY savePageCmd.label            "Enregistrer sous…">
@@ -750,6 +762,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY editBookmark.done.label                     "Terminer">
 <!ENTITY editBookmark.removeBookmark.accessKey       "R">
 
+<!-- LOCALIZATION NOTE (identity.securityView.label)
+     This is the header of the security subview in the Site Identity panel. -->
+<!ENTITY identity.securityView.label "Sécurité du site">
+
 <!ENTITY identity.connectionSecure "Connexion sécurisée">
 <!ENTITY identity.connectionNotSecure "Connexion non sécurisée">
 <!ENTITY identity.connectionFile "Cette page est stockée sur votre ordinateur.">
@@ -803,12 +819,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncedTabs.sidebar.noclients.title    "Aucun onglet synchronisé pour l’instant.">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Vous souhaitez afficher ici les onglets de vos autres appareils ?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Connectez-vous pour afficher la liste des onglets de vos autres appareils.">
+<!ENTITY syncedTabs.sidebar.unverified.label   "Votre compte doit être vérifié.">
 <!ENTITY syncedTabs.sidebar.notabs.label       "Aucun onglet ouvert">
 <!ENTITY syncedTabs.sidebar.openprefs.label    "Ouvrir les préférences de &syncBrand.shortName.label;">
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Activez la synchronisation des onglets pour afficher la liste des onglets de vos autres appareils.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Rechercher dans les onglets synchronisés">
+
+<!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Connecter un autre appareil">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
                         syncedTabs.context.openAllInTabs.accesskey):
@@ -979,9 +998,20 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "P">
 <!ENTITY updateRestart.panelUI.label2 "Redémarrer pour mettre à jour &brandShorterName;">
 
+<!ENTITY newTabControlled.message "Une extension a modifié la page qui s’affiche lorsque vous ouvrez un nouvel onglet. Vous pouvez restaurer vos paramètres si vous n’acceptez pas ces modifications.">
+<!ENTITY newTabControlled.header.message "La page Nouvel onglet a été modifiée.">
+<!ENTITY newTabControlled.keepButton.label "Conserver les modifications">
+<!ENTITY newTabControlled.keepButton.accesskey "C">
+<!ENTITY newTabControlled.restoreButton.label "Restaurer les paramètres">
+<!ENTITY newTabControlled.restoreButton.accesskey "R">
+
 <!ENTITY pageActionButton.tooltip "Actions pour la page">
 <!ENTITY pageAction.addToUrlbar.label "Ajouter à la barre d’adresse">
 <!ENTITY pageAction.removeFromUrlbar.label "Retirer de la barre d’adresse">
+
+<!ENTITY pageAction.allowInUrlbar.label "Afficher dans la barre d’adresse">
+<!ENTITY pageAction.disallowInUrlbar.label "Ne pas afficher dans la barre d’adresse">
+<!ENTITY pageAction.manageExtension.label "Gérer l’extension…">
 
 <!ENTITY pageAction.sendTabToDevice.label "Envoyer l’onglet vers un appareil">
 <!ENTITY sendToDevice.syncNotReady.label "Synchronisation des appareils…">

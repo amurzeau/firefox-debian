@@ -2,7 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY  trackingProtectionHeader2.label      "Kontraŭspura protekto">
+<!ENTITY  trackingProtectionHeader2.label      "Protekto kontraŭ spurado">
 <!ENTITY  trackingProtection2.description      "Spurado estas la kolekto de viaj retumaj datumoj tra pluraj retejoj. Spurado povas esti uzita por konstrui profilon kaj montri enhavon surbaze de viaj retumaj kaj personaj informoj.">
 <!ENTITY  trackingProtection2.radioGroupLabel  "Uzi protekton kontraŭ spurado por bloki konatajn spurilojn">
 <!ENTITY  trackingProtectionAlways.label       "Ĉiam">
@@ -75,7 +75,7 @@
 <!ENTITY  historyHeader.custom.label       "uzos personajn agordojn por la historio">
 <!ENTITY  historyHeader.post.label         "">
 
-<!ENTITY  rememberDescription.label      "&brandShortName; memoros la historion de via retumado, elŝutado, serĉadoj kaj formularoj, kaj ĝi konservos kuketojn de retejoj kiujn vi vizitas.">
+<!ENTITY  rememberDescription.label      "&brandShortName; memoros la historion de via retumo, elŝutoj, serĉoj kaj formularoj, kaj ĝi konservos kuketojn de retejoj kiujn vi vizitas.">
 
 <!-- LOCALIZATION NOTE (rememberActions.pre.label): include a trailing space as needed -->
 <!-- LOCALIZATION NOTE (rememberActions.middle.label): include a starting and trailing space as needed -->
@@ -86,7 +86,7 @@
 <!ENTITY  rememberActions.removeCookies.label "forviŝi individuajn kuketojn">
 <!ENTITY  rememberActions.post.label          ".">
 
-<!ENTITY  dontrememberDescription.label  "&brandShortName; uzos la samajn agordojn de privata retumado, kaj ĝi ne memoros iun historion dum vi esploras la reton.">
+<!ENTITY  dontrememberDescription.label  "&brandShortName; uzos la samajn agordojn de privata retumo, kaj ĝi ne memoros iun historion dum vi esploras la reton.">
 
 <!-- LOCALIZATION NOTE (dontrememberActions.pre.label): include a trailing space as needed -->
 <!-- LOCALIZATION NOTE (dontrememberActions.post.label): include a starting space as needed -->
@@ -94,10 +94,10 @@
 <!ENTITY  dontrememberActions.clearHistory.label "forviŝi la tutan aktualan historion">
 <!ENTITY  dontrememberActions.post.label         ".">
 
-<!ENTITY  privateBrowsingPermanent2.label "Ĉiam uzi la reĝimon de privata retumado">
+<!ENTITY  privateBrowsingPermanent2.label "Ĉiam uzi la reĝimon de privata retumo">
 <!ENTITY  privateBrowsingPermanent2.accesskey "p">
 
-<!ENTITY  rememberHistory2.label      "Memori mian historion de retumado kaj elŝutado">
+<!ENTITY  rememberHistory2.label      "Memori mian historion de retumo kaj elŝutoj">
 <!ENTITY  rememberHistory2.accesskey  "h">
 
 <!ENTITY  rememberSearchForm.label       "Memori historion de serĉadoj kaj formularoj">

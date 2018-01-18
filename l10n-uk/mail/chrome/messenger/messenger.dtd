@@ -318,6 +318,7 @@
 <!ENTITY goChatCmd.label "Чат">
 <!ENTITY goChatCmd.accesskey "Ч">
 <!ENTITY goChatCmd.key "I">
+<!ENTITY goChatCmd2.key "H">
 <!ENTITY prevStarredMsgCmd.label "Лист з зіркою">
 <!ENTITY prevStarredMsgCmd.accesskey "З">
 <!ENTITY folderMenu.label "Тека">
@@ -366,6 +367,8 @@
 <!ENTITY editAsNewMsgCmd.key "e">
 <!ENTITY editDraftMsgCmd.label "Редагувати чернетку">
 <!ENTITY editDraftMsgCmd.accesskey "г">
+<!ENTITY newMsgFromTemplateCmd.label "Створити повідомлення з шаблону">
+<!ENTITY newMsgFromTemplateCmd.keycode "VK_RETURN"><!-- do not change "VK_RETURN" -->
 <!ENTITY createFilter.label "Створити фільтр…">
 <!ENTITY createFilter.accesskey "ф">
 <!ENTITY moveMsgToMenu.label "Перемістити до">
@@ -457,6 +460,11 @@
 <!ENTITY addressBookCmd.key "B">
 <!ENTITY addons.label "Додатки">
 <!ENTITY addons.accesskey "Д">
+<!ENTITY addonPrefs.label "Налаштування додатків">
+<!ENTITY addonPrefs.accesskey "ш">
+<!ENTITY addonPrefsUnix.label "Налаштування додатків">
+<!ENTITY addonPrefsUnix.accesskey "ш">
+<!ENTITY addonNoPrefs.label "Не знайдено налаштувань додатків.">
 <!ENTITY activitymanager.label "Менеджер діяльності">
 <!ENTITY activitymanager.accesskey "д">
 <!ENTITY imAccountsStatus.label "Стан у чаті">
@@ -502,6 +510,8 @@
 <!ENTITY devToolboxCmd.commandkey "i">
 <!ENTITY addonDebugCmd.label "Зневадження додатків">
 <!ENTITY addonDebugCmd.accesskey "З">
+<!ENTITY debugAddonsCmd.label "Зневадження додатків">
+<!ENTITY debugAddonsCmd.accesskey "З">
 <!ENTITY tabsDebugCmd.label "Зневаджувач фрейму вмісту">
 <!ENTITY tabsDebugCmd.accesskey "ж">
 <!ENTITY errorConsoleCmd.label "Консоль помилок">
@@ -734,12 +744,13 @@
 <!ENTITY attachmentColumn2.tooltip "Сортувати за вкладеннями">
 
 <!-- Thread Pane Context Menu -->
+<!ENTITY contextNewMsgFromTemplate.label "Створити повідомлення з шаблону">
 <!ENTITY contextOpenNewWindow.label "Відкрити лист в новому вікні">
 <!ENTITY contextOpenNewWindow.accesskey "н">
-<!-- The key potentially conflicts with cutCmd.accessKey which is defined in
-     textcontext.dtd from toolkit. Right now, both menu items can't be visible
-     at the same time, but should someone enable copy/paste of message, this key
-     would probably need to be changed. -->
+<!-- The contextOpenNewTab.accesskey ("T") potentially conflicts with
+     cutCmd.accessKey which is defined in textcontext.dtd from toolkit. Right
+     now, both menu items can't be visible at the same time, but should someone
+     enable copy/paste of message, this key would probably need to be changed. -->
 <!ENTITY contextOpenNewTab.label "Відкрити лист в новій вкладці">
 <!ENTITY contextOpenNewTab.accesskey "к">
 <!ENTITY contextOpenConversation.label "Відкрити повідомлення в розмові">

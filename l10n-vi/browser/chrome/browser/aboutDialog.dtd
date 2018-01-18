@@ -5,7 +5,7 @@
 
 <!-- LOCALIZATION NOTE (update.*):
 # These strings are also used in the update pane of preferences.
-# See about:preferences#advanced.
+# See about:preferences#general.
 -->
 <!-- LOCALIZATION NOTE (update.checkForUpdatesButton.*, update.updateButton.*):
 # Only one button is present at a time.
@@ -13,7 +13,7 @@
 # the about dialog (see bug 596813 for screenshots).
 -->
 <!ENTITY update.checkForUpdatesButton.label       "Kiểm tra cập nhật">
-<!ENTITY update.checkForUpdatesButton.accesskey   "c">
+<!ENTITY update.checkForUpdatesButton.accesskey   "C">
 <!ENTITY update.updateButton.label3               "Khởi động lại để cập nhật &brandShorterName;">
 <!ENTITY update.updateButton.accesskey            "R">
 
@@ -41,7 +41,7 @@
 <!ENTITY community.end3             " cùng chung sức bảo vệ Web mở và cho phép ai cũng truy cập được.">
 
 <!ENTITY helpus.start               "Bạn muốn giúp đỡ? ">
-<!-- LOCALIZATION NOTE (helpus.donateLink): This is a link title that links to https://sendto.mozilla.org/page/contribute/Give-Now?source=mozillaorg_default_footer&ref=firefox_about&utm_campaign=firefox_about&utm_source=firefox&utm_medium=referral&utm_content=20140929_FireFoxAbout. -->
+<!-- LOCALIZATION NOTE (helpus.donateLink): This is a link title that links to https://donate.mozilla.org/?utm_source=firefox&utm_medium=referral&utm_campaign=firefox_about&utm_content=firefox_about. -->
 <!ENTITY helpus.donateLink          "Quyên góp tài chính">
 <!ENTITY helpus.middle              ", hoặc ">
 <!-- LOCALIZATION NOTE (helpus.getInvolvedLink): This is a link title that links to http://www.mozilla.org/contribute/. -->
@@ -51,7 +51,7 @@
 <!ENTITY releaseNotes.link          "Có gì mới">
 
 <!-- LOCALIZATION NOTE (bottomLinks.license): This is a link title that links to about:license. -->
-<!ENTITY bottomLinks.license        "Thông tin Giấy phép">
+<!ENTITY bottomLinks.license        "Thông tin giấy phép">
 
 <!-- LOCALIZATION NOTE (bottomLinks.rights): This is a link title that links to about:rights. -->
 <!ENTITY bottomLinks.rights         "Quyền hạn người dùng cuối">
@@ -74,7 +74,7 @@
      one line with linkText being wrapped in an anchor that links to a site to download
      the latest version of Firefox (e.g. http://www.firefox.com). As this is all in
      one line, try to make the localized text short (see bug 596813 for screenshots). -->
-<!ENTITY update.failed.start        "Cập nhật bị thất bại. ">
+<!ENTITY update.failed.start        "Cập nhật thất bại. ">
 <!ENTITY update.failed.linkText     "Tải phiên bản mới nhất">
 <!ENTITY update.failed.end          "">
 

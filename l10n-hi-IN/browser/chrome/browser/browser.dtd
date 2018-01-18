@@ -51,6 +51,7 @@ can reach it easily. -->
 <!ENTITY  sendLinkToDevice.label             "Device में कड़ी भेजें">
 <!ENTITY  sendLinkToDevice.accesskey         "D">
 <!ENTITY  sendToDeviceFeedback.label         "भेज दिया!">
+<!ENTITY  sendToDeviceOfflineFeedback.label  "पंक्तिबद्ध (ऑफ़लाइन)">
 <!ENTITY  moveToNewWindow.label              "नए विंडो में खिसकाएँ">
 <!ENTITY  moveToNewWindow.accesskey          "W">
 <!ENTITY  bookmarkAllTabs.label              "सभी टैब पुस्तचिह्नित करें…">
@@ -188,13 +189,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hideRecentlyBookmarked.accesskey "H">
 
 <!ENTITY backCmd.label                "पीछे">
+<!ENTITY backCmd.accesskey            "B">
 <!ENTITY backButton.tooltip           "एक पृष्ठ पीछे जाएँ">
 <!ENTITY forwardCmd.label             "आगे">
+<!ENTITY forwardCmd.accesskey         "F">
 <!ENTITY forwardButton.tooltip        "एक पृष्ठ आगे जाएँ">
 <!ENTITY backForwardButtonMenu.tooltip "इतिहास दिखाने के लिए दाहिना क्लिक करें या पुल डाउन करें">
 <!ENTITY backForwardButtonMenuMac.tooltip "इतिहास दिखाने के लिए पुल डाउन करें">
 <!ENTITY reloadCmd.label              "फिर लोड करें">
+<!ENTITY reloadCmd.accesskey          "R">
 <!ENTITY stopCmd.label                "रूकें">
+<!ENTITY stopCmd.accesskey            "S">
 <!ENTITY stopCmd.macCommandKey        ".">
 <!ENTITY goEndCap.tooltip             "स्थान पट्टी पर पता में जाएँ">
 <!ENTITY printButton.label            "छापें">
@@ -231,6 +236,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "आपने इस वेबसाइट के लिए सतत संग्रहण को अवरुद्ध किया है.">
 
 <!ENTITY urlbar.popupBlocked.tooltip             "आपने इस वेबसाइट पर पॉप-अप अवरुद्ध किए हैं.">
+
+<!ENTITY urlbar.canvasBlocked.tooltip            "आपने इस वेबसाइट के लिए कैनवास डेटा निष्कर्षण को अवरोधित किया है.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "इतिहास दिखाएँ">
 
@@ -284,7 +291,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY webDeveloperMenu.label       "वेब डेवलेपर">
 <!ENTITY webDeveloperMenu.accesskey   "W">
 
-<!ENTITY inspectContextMenu.label     "तत्व जाँचें">
+<!ENTITY inspectContextMenu.label     "इंस्पेक्ट एलिमेंट">
 <!ENTITY inspectContextMenu.accesskey "Q">
 
 <!ENTITY fileMenu.label         "फ़ाइल">
@@ -309,7 +316,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY cutCmd.label           "काटें">
 <!ENTITY cutCmd.key             "X">
 <!ENTITY cutCmd.accesskey         "t">
-<!ENTITY copyCmd.label            "नक़ल करें">
+<!ENTITY copyCmd.label            "नकल करें">
 <!ENTITY copyCmd.key            "C">
 <!ENTITY copyCmd.accesskey          "C">
 <!ENTITY pasteCmd.label           "चिपकाएँ">
@@ -355,6 +362,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuCustomize.tooltip "मेनू और उपकरण पट्टियाँ अनुकूलित">
 <!ENTITY appMenuCustomizeExit.label "अनुकूलित निकास">
 <!ENTITY appMenuCustomizeExit.tooltip "अनुकूलित समाप्त करें">
+
 <!ENTITY appMenuHistory.showAll.label "सभी इतिहास दिखाएँ">
 <!ENTITY appMenuHistory.clearRecent.label "हालिया इतिहास साफ करें...">
 <!ENTITY appMenuHistory.restoreSession.label "पिछला सत्र पुनर्बहाल करें">
@@ -385,9 +393,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "यहाँ अन्य डिवाइस से अपना टैब देखना चाहते हैं?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "प्राथमिकताएँ सिंक कीजिए">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "टैब्स की सूची देखने के लिए अपने दुसरे उपकरणों से साइन इन करें.">
+<!ENTITY appMenuRemoteTabs.unverified.label "आपके खाते की पृष्टि करने की आवश्यकता है.">
 <!ENTITY appMenuRemoteTabs.signin.label "सिंक करने के लिए साइन इन करें">
 <!ENTITY appMenuRemoteTabs.managedevices.label "उपकरणों का प्रबंधन करें…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "संकलित टैब्स बाज़ू पट्टी पर देखें">
+
+<!ENTITY appMenuRemoteTabs.connectdevice.label "अन्य उपकरण जोड़ें">
 
 <!ENTITY appMenuRecentHighlights.label "हाल की झलकियाँ">
 
@@ -564,11 +575,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY setDesktopBackgroundCmd.label      "बतौर डेस्कटॉप पृष्ठभूमि सेट करें…">
 <!ENTITY setDesktopBackgroundCmd.accesskey  "S">
 <!ENTITY bookmarkPageCmd2.label       "यह पृष्ठ पुस्तचिह्नित करें">
+<!ENTITY bookmarkPageCmd2.accesskey   "m">
 <!ENTITY bookmarkThisLinkCmd.label      "यह कड़ी पुस्तचिह्नित करें">
 <!ENTITY bookmarkThisLinkCmd.accesskey  "L">
 <!ENTITY bookmarkThisFrameCmd.label      "यह फ्रेम पुस्तचिह्नित करें">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "m">
-<!ENTITY pageAction.copyLink.label    "कड़ी नक़ल करें">
+<!ENTITY pageAction.copyLink.label    "कड़ी नकल करें">
 <!ENTITY copyURLFeedback.label        "प्रतिलिपि!">
 <!ENTITY emailPageCmd.label           "कड़ी ईमेल करें…">
 <!ENTITY emailPageCmd.accesskey       "E">
@@ -603,13 +615,13 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY copyLinkCmd.accesskey        "a">
 <!ENTITY copyImageCmd.label           "छवि स्थान की नक़ल लें">
 <!ENTITY copyImageCmd.accesskey       "o">
-<!ENTITY copyImageContentsCmd.label   "छवि की नक़ल लें">
+<!ENTITY copyImageContentsCmd.label   "छवि की नकल लें">
 <!ENTITY copyImageContentsCmd.accesskey  "y">
-<!ENTITY copyVideoURLCmd.label        "वीडियो स्थान की नक़ल लें">
+<!ENTITY copyVideoURLCmd.label        "वीडियो स्थान की नकल लें">
 <!ENTITY copyVideoURLCmd.accesskey    "o">
-<!ENTITY copyAudioURLCmd.label        "ऑडियो स्थान की नक़ल लें">
+<!ENTITY copyAudioURLCmd.label        "ऑडियो स्थान की नकल लें">
 <!ENTITY copyAudioURLCmd.accesskey    "o">
-<!ENTITY copyEmailCmd.label           "ईमेल पता की नक़ल लें">
+<!ENTITY copyEmailCmd.label           "ईमेल पता की नकल लें">
 <!ENTITY copyEmailCmd.accesskey       "E">
 <!ENTITY thisFrameMenu.label              "यह फ्रेम">
 <!ENTITY thisFrameMenu.accesskey          "h">
@@ -750,6 +762,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY editBookmark.done.label                     "संपन्न">
 <!ENTITY editBookmark.removeBookmark.accessKey       "R">
 
+<!-- LOCALIZATION NOTE (identity.securityView.label)
+     This is the header of the security subview in the Site Identity panel. -->
+<!ENTITY identity.securityView.label "साइट सुरक्षा">
+
 <!ENTITY identity.connectionSecure "रिमोट कनेक्शन">
 <!ENTITY identity.connectionNotSecure "आपका कनेक्शन असुरक्षित है">
 <!ENTITY identity.connectionFile "यह पेज आपके कंप्यूटर में सहेजा जाता हैं.">
@@ -803,12 +819,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncedTabs.sidebar.noclients.title    "अभी तक! कोई समन्वयित टैब नहीं...">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "यहाँ अन्य डिवाइस से अपना टैब देखना चाहते हैं?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "टैब्स की सूची देखने के लिए अपने दूसरे उपकरणों से साइन इन करें.">
+<!ENTITY syncedTabs.sidebar.unverified.label   "आपके खाते की पृष्टि करने की आवश्यकता है.">
 <!ENTITY syncedTabs.sidebar.notabs.label       "कोई खुला टैब नहीं">
 <!ENTITY syncedTabs.sidebar.openprefs.label    "खोलें &syncBrand.shortName.label; वरीयताएँ">
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "टैब्स की सूची देखने हेतु अपने दुसरे उपकरणों से साइन इन करें.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "सिंक किये हुए टैबों को खोजें">
+
+<!ENTITY syncedTabs.sidebar.connectAnotherDevice  "अन्य उपकरण जोड़ें">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
                         syncedTabs.context.openAllInTabs.accesskey):
@@ -824,7 +843,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncedTabs.context.openInNewPrivateWindow.accesskey "P">
 <!ENTITY syncedTabs.context.bookmarkSingleTab.label          "यह टैब पुस्तचिह्नित करें...">
 <!ENTITY syncedTabs.context.bookmarkSingleTab.accesskey      "B">
-<!ENTITY syncedTabs.context.copy.label                       "नक़ल करें">
+<!ENTITY syncedTabs.context.copy.label                       "नकल करें">
 <!ENTITY syncedTabs.context.copy.accesskey                   "C">
 
 <!ENTITY syncedTabs.context.openAllInTabs.label              "सभी टैब में खोलें">
@@ -979,9 +998,16 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "N">
 <!ENTITY updateRestart.panelUI.label2 "&brandShorterName; अद्यतन करने के लिए पुन: प्रारंभ करें">
 
+<!ENTITY newTabControlled.keepButton.accesskey "K">
+<!ENTITY newTabControlled.restoreButton.accesskey "R">
+
 <!ENTITY pageActionButton.tooltip "पृष्ठ क्रियाएँ">
 <!ENTITY pageAction.addToUrlbar.label "पतापट्टी में जोड़े">
 <!ENTITY pageAction.removeFromUrlbar.label "पतापट्टी से हटायें">
+
+<!ENTITY pageAction.allowInUrlbar.label "पतापट्टी में दिखाएँ">
+<!ENTITY pageAction.disallowInUrlbar.label "पता पट्टी में न दिखाएँ">
+<!ENTITY pageAction.manageExtension.label "एक्सटेंशन प्रबंधित करें …">
 
 <!ENTITY pageAction.sendTabToDevice.label "टैब को उपकरण में भेजें">
 <!ENTITY sendToDevice.syncNotReady.label "उपकरण सिंक हो रहा है…">

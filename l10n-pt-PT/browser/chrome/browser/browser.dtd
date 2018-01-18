@@ -51,6 +51,7 @@ can reach it easily. -->
 <!ENTITY  sendLinkToDevice.label             "Enviar ligação para dispositivo">
 <!ENTITY  sendLinkToDevice.accesskey         "d">
 <!ENTITY  sendToDeviceFeedback.label         "Enviado!">
+<!ENTITY  sendToDeviceOfflineFeedback.label  "Na fila (offline)">
 <!ENTITY  moveToNewWindow.label              "Mover para nova janela">
 <!ENTITY  moveToNewWindow.accesskey          "j">
 <!ENTITY  bookmarkAllTabs.label              "Criar marcadores para todos os separadores…">
@@ -162,8 +163,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      Localizers can use one of them, or both, to better adapt this
      sentence to their language. -->
 <!ENTITY pointerlockWarning.beforeDomain.label "">
-<!ENTITY pointerlockWarning.afterDomain.label "tem controlo do seu apontador. Pressione Esc para tomar o controlo de volta.">
-<!ENTITY pointerlockWarning.generic.label "Este documento tem controlo do seu apontador. Pressione Esc para tomar o controlo de volta.">
+<!ENTITY pointerlockWarning.afterDomain.label "tem controlo do seu apontador. Pressione Esc para retomar o controlo.">
+<!ENTITY pointerlockWarning.generic.label "Este documento tem controlo do seu apontador. Pressione Esc para retomar o controlo.">
 
 <!ENTITY closeWindow.label "Fechar janela">
 <!ENTITY closeWindow.accesskey "j">
@@ -174,7 +175,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY editThisBookmarkCmd.label "Editar este marcador">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
 
-<!ENTITY subscribeToPageMenupopup.label "Subscrever a esta página">
+<!ENTITY subscribeToPageMenupopup.label "Subscrever esta página">
 <!ENTITY subscribeToPageMenuitem.label "Subscrever esta página…">
 <!ENTITY addCurPagesCmd.label "Criar marcadores para todos os separadores…">
 <!ENTITY showAllBookmarks2.label "Mostrar todos os marcadores">
@@ -187,14 +188,18 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hideRecentlyBookmarked.label     "Ocultar marcadores recentemente adicionados">
 <!ENTITY hideRecentlyBookmarked.accesskey "c">
 
-<!ENTITY backCmd.label                "Retroceder">
+<!ENTITY backCmd.label                "Anterior">
+<!ENTITY backCmd.accesskey            "A">
 <!ENTITY backButton.tooltip           "Retroceder uma página">
 <!ENTITY forwardCmd.label             "Seguinte">
+<!ENTITY forwardCmd.accesskey         "S">
 <!ENTITY forwardButton.tooltip        "Ir para a página seguinte">
 <!ENTITY backForwardButtonMenu.tooltip "Clique com o botão direito ou desloque para baixo para mostrar o histórico">
 <!ENTITY backForwardButtonMenuMac.tooltip "Desloque para baixo para mostrar o histórico">
 <!ENTITY reloadCmd.label              "Recarregar">
+<!ENTITY reloadCmd.accesskey          "R">
 <!ENTITY stopCmd.label                "Parar">
+<!ENTITY stopCmd.accesskey            "P">
 <!ENTITY stopCmd.macCommandKey        ".">
 <!ENTITY goEndCap.tooltip             "Ir para o endereço da barra de localização">
 <!ENTITY printButton.label            "Imprimir">
@@ -231,6 +236,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Bloqueou o armazenamento de dados para este website.">
 
 <!ENTITY urlbar.popupBlocked.tooltip             "Bloqueou pop-ups para este website.">
+
+<!ENTITY urlbar.canvasBlocked.tooltip            "Bloqueou a extração de dados da tela para este website.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Mostrar histórico">
 
@@ -270,11 +277,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY keywordfield.label           "Adicionar uma palavra-chave para esta pesquisa…">
 <!ENTITY keywordfield.accesskey       "A">
 
-<!ENTITY downloads.label              "Descargas">
+<!ENTITY downloads.label              "Transferências">
 <!-- LOCALIZATION NOTE (libraryDownloads.label): This label is similar to
   -  downloads.label, but used in the Library panel. -->
-<!ENTITY libraryDownloads.label       "Descargas">
-<!ENTITY downloads.accesskey          "D">
+<!ENTITY libraryDownloads.label       "Transferências">
+<!ENTITY downloads.accesskey          "T">
 <!ENTITY downloads.commandkey         "j">
 <!ENTITY downloadsUnix.commandkey     "y">
 <!ENTITY addons.label                 "Extras">
@@ -355,6 +362,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuCustomize.tooltip "Personalizar menu e barras de ferramentas">
 <!ENTITY appMenuCustomizeExit.label "Sair da personalização">
 <!ENTITY appMenuCustomizeExit.tooltip "Concluir personalização">
+
 <!ENTITY appMenuHistory.showAll.label "Mostrar todo o histórico">
 <!ENTITY appMenuHistory.clearRecent.label "Limpar histórico recente…">
 <!ENTITY appMenuHistory.restoreSession.label "Restaurar sessão anterior">
@@ -385,9 +393,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Pretende ver os seus separadores de outros dispositivos aqui?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Preferências do Sync">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Inicie sessão para ver uma lista de separadores a partir dos seus outros dispositivos.">
+<!ENTITY appMenuRemoteTabs.unverified.label "A sua conta necessita de ser verificada.">
 <!ENTITY appMenuRemoteTabs.signin.label "Iniciar sessão no Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Gerir dispositivos…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Ver barra lateral de separadores sincronizados">
+
+<!ENTITY appMenuRemoteTabs.connectdevice.label "Ligar outro dispositivo">
 
 <!ENTITY appMenuRecentHighlights.label "Destaques recentes">
 
@@ -564,13 +575,14 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY setDesktopBackgroundCmd.label      "Definir como fundo do ambiente de trabalho…">
 <!ENTITY setDesktopBackgroundCmd.accesskey  "e">
 <!ENTITY bookmarkPageCmd2.label       "Guardar esta página nos marcadores">
+<!ENTITY bookmarkPageCmd2.accesskey   "m">
 <!ENTITY bookmarkThisLinkCmd.label      "Guardar esta ligação nos marcadores">
 <!ENTITY bookmarkThisLinkCmd.accesskey  "l">
-<!ENTITY bookmarkThisFrameCmd.label      "Guardar endereço desta frame nos marcadores">
+<!ENTITY bookmarkThisFrameCmd.label      "Guardar este frame nos marcadores">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "m">
 <!ENTITY pageAction.copyLink.label    "Copiar ligação">
 <!ENTITY copyURLFeedback.label        "Copiado!">
-<!ENTITY emailPageCmd.label           "Enviar ligação por e-mail…">
+<!ENTITY emailPageCmd.label           "Enviar ligação por email…">
 <!ENTITY emailPageCmd.accesskey       "E">
 <!ENTITY savePageCmd.label            "Guardar página como…">
 <!ENTITY savePageCmd.accesskey        "a">
@@ -599,17 +611,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY playPluginCmd.accesskey      "t">
 <!ENTITY hidePluginCmd.label          "Ocultar este plugin">
 <!ENTITY hidePluginCmd.accesskey      "u">
-<!ENTITY copyLinkCmd.label            "Copiar localização da ligação">
+<!ENTITY copyLinkCmd.label            "Copiar ligação">
 <!ENTITY copyLinkCmd.accesskey        "a">
-<!ENTITY copyImageCmd.label           "Copiar localização da imagem">
+<!ENTITY copyImageCmd.label           "Copiar ligação da imagem">
 <!ENTITY copyImageCmd.accesskey       "o">
 <!ENTITY copyImageContentsCmd.label   "Copiar imagem">
 <!ENTITY copyImageContentsCmd.accesskey  "o">
-<!ENTITY copyVideoURLCmd.label        "Copiar localização do vídeo">
+<!ENTITY copyVideoURLCmd.label        "Copiar ligação do vídeo">
 <!ENTITY copyVideoURLCmd.accesskey    "o">
-<!ENTITY copyAudioURLCmd.label        "Copiar localização do áudio">
+<!ENTITY copyAudioURLCmd.label        "Copiar ligação do áudio">
 <!ENTITY copyAudioURLCmd.accesskey    "o">
-<!ENTITY copyEmailCmd.label           "Copiar endereço de e-mail">
+<!ENTITY copyEmailCmd.label           "Copiar endereço de email">
 <!ENTITY copyEmailCmd.accesskey       "e">
 <!ENTITY thisFrameMenu.label              "Este frame">
 <!ENTITY thisFrameMenu.accesskey          "t">
@@ -735,11 +747,11 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY bidiSwitchTextDirectionItem.accesskey    "x">
 <!ENTITY bidiSwitchTextDirectionItem.commandkey   "X">
 
-<!ENTITY findOnCmd.label     "Encontrar nesta página…">
-<!ENTITY findOnCmd.accesskey "n">
+<!ENTITY findOnCmd.label     "Localizar nesta página…">
+<!ENTITY findOnCmd.accesskey "E">
 <!ENTITY findOnCmd.commandkey "f">
-<!ENTITY findAgainCmd.label  "Encontrar novamente">
-<!ENTITY findAgainCmd.accesskey "m">
+<!ENTITY findAgainCmd.label  "Localizar novamente">
+<!ENTITY findAgainCmd.accesskey "g">
 <!ENTITY findAgainCmd.commandkey "g">
 <!ENTITY findAgainCmd.commandkey2 "VK_F3">
 <!ENTITY findSelectionCmd.commandkey "e">
@@ -749,6 +761,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY editBookmark.done.label                     "Feito">
 <!ENTITY editBookmark.removeBookmark.accessKey       "R">
+
+<!-- LOCALIZATION NOTE (identity.securityView.label)
+     This is the header of the security subview in the Site Identity panel. -->
+<!ENTITY identity.securityView.label "Segurança do site">
 
 <!ENTITY identity.connectionSecure "Ligação segura">
 <!ENTITY identity.connectionNotSecure "Ligação não segura">
@@ -803,12 +819,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncedTabs.sidebar.noclients.title    "Sem separadores sincronizados... ainda!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Pretende ver os seus separadores de outros dispositivos aqui?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Inicie sessão para ver uma lista de separadores a partir dos seus outros dispositivos.">
+<!ENTITY syncedTabs.sidebar.unverified.label   "A sua conta necessita de ser verificada.">
 <!ENTITY syncedTabs.sidebar.notabs.label       "Sem separadores abertos">
 <!ENTITY syncedTabs.sidebar.openprefs.label    "Abrir as preferências do &syncBrand.shortName.label;">
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Ative a sincronização de separadores para ver uma lista de separadores dos seus outros dispositivos.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Pesquisar separadores sincronizados">
+
+<!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Ligar outro dispositivo">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
                         syncedTabs.context.openAllInTabs.accesskey):
@@ -956,20 +975,20 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.message "Atualize o seu &brandShorterName; para o mais recente em velocidade e privacidade">
 <!ENTITY updateAvailable.whatsnew.label "Veja as novidades.">
 <!ENTITY updateAvailable.header.message "Uma nova atualização do &brandShorterName; está disponível.">
-<!ENTITY updateAvailable.acceptButton.label "Descarregar atualização">
+<!ENTITY updateAvailable.acceptButton.label "Transferir atualização">
 <!ENTITY updateAvailable.acceptButton.accesskey "D">
 <!ENTITY updateAvailable.cancelButton.label "Agora não">
 <!ENTITY updateAvailable.cancelButton.accesskey "n">
-<!ENTITY updateAvailable.panelUI.label "Descarregar a atualização do &brandShorterName;">
+<!ENTITY updateAvailable.panelUI.label "Transferir atualização do &brandShorterName;">
 
-<!ENTITY updateManual.message "Descarregue uma nova cópia do &brandShorterName; e iremos ajudar-lhe a instalá-lo.">
+<!ENTITY updateManual.message "Transfira uma nova cópia do &brandShorterName; e iremos ajudar-lhe a instalá-lo.">
 <!ENTITY updateManual.whatsnew.label "Veja as novidades.">
 <!ENTITY updateManual.header.message "O &brandShorterName; não consegue atualizar para a versão mais recente.">
-<!ENTITY updateManual.acceptButton.label "Descarregar o &brandShorterName;">
+<!ENTITY updateManual.acceptButton.label "Transferir o &brandShorterName;">
 <!ENTITY updateManual.acceptButton.accesskey "D">
 <!ENTITY updateManual.cancelButton.label "Agora não">
 <!ENTITY updateManual.cancelButton.accesskey "n">
-<!ENTITY updateManual.panelUI.label "Descarregar uma nova cópia do &brandShorterName;">
+<!ENTITY updateManual.panelUI.label "Transferir uma nova cópia do &brandShorterName;">
 
 <!ENTITY updateRestart.message2 "Após um reinício rápido, o &brandShorterName; irá restaurar todos os seus separadores abertos e janelas que não estão no modo de navegação privada.">
 <!ENTITY updateRestart.header.message2 "Reiniciar para atualizar o &brandShorterName;.">
@@ -979,9 +998,20 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "n">
 <!ENTITY updateRestart.panelUI.label2 "Reiniciar para atualizar o &brandShorterName;">
 
+<!ENTITY newTabControlled.message "Uma extensão alterou a página que vê quando abre um novo separador. Pode restaurar as suas definições se não quiser esta alteração.">
+<!ENTITY newTabControlled.header.message "O seu novo separador foi alterado.">
+<!ENTITY newTabControlled.keepButton.label "Manter alterações">
+<!ENTITY newTabControlled.keepButton.accesskey "M">
+<!ENTITY newTabControlled.restoreButton.label "Restaurar definições">
+<!ENTITY newTabControlled.restoreButton.accesskey "R">
+
 <!ENTITY pageActionButton.tooltip "Ações da página">
 <!ENTITY pageAction.addToUrlbar.label "Adicionar à barra de endereço">
 <!ENTITY pageAction.removeFromUrlbar.label "Remover da barra de endereço">
+
+<!ENTITY pageAction.allowInUrlbar.label "Mostrar na barra de endereço">
+<!ENTITY pageAction.disallowInUrlbar.label "Não mostrar na barra de endereço">
+<!ENTITY pageAction.manageExtension.label "Gerir extensão…">
 
 <!ENTITY pageAction.sendTabToDevice.label "Enviar separador para dispositivo">
 <!ENTITY sendToDevice.syncNotReady.label "A sincronizar dispositivos…">

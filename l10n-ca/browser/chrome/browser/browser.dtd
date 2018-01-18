@@ -51,6 +51,7 @@ can reach it easily. -->
 <!ENTITY  sendLinkToDevice.label             "Envia l'enllaç al dispositiu">
 <!ENTITY  sendLinkToDevice.accesskey         "d">
 <!ENTITY  sendToDeviceFeedback.label         "S'ha enviat!">
+<!ENTITY  sendToDeviceOfflineFeedback.label  "En cua (fora de línia)">
 <!ENTITY  moveToNewWindow.label              "Mou a una finestra nova">
 <!ENTITY  moveToNewWindow.accesskey          "v">
 <!ENTITY  bookmarkAllTabs.label              "Afegeix totes les pestanyes a les adreces d'interès…">
@@ -100,6 +101,13 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY pageSourceCmd.label "Codi font de la pàgina">
 <!ENTITY pageSourceCmd.accesskey "o">
 <!ENTITY pageSourceCmd.commandkey "u">
+<!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
+Option+Command keyboard shortcut letter that Safari and Chrome use for "View
+Source" on macOS. pageSourceCmd.commandkey above is Firefox's official keyboard
+shortcut shown in the GUI. SafariCommandKey is an alias provided for the
+convenience of Safari and Chrome users on macOS. See bug 1398988. -->
+<!ENTITY pageSourceCmd.SafariCommandKey "u">
+
 <!ENTITY pageInfoCmd.label "Informació de la pàgina">
 <!ENTITY pageInfoCmd.accesskey "I">
 <!ENTITY pageInfoCmd.commandkey "i">
@@ -181,13 +189,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hideRecentlyBookmarked.accesskey "m">
 
 <!ENTITY backCmd.label                "Enrere">
+<!ENTITY backCmd.accesskey            "r">
 <!ENTITY backButton.tooltip           "Vés una pàgina enrere">
 <!ENTITY forwardCmd.label             "Endavant">
+<!ENTITY forwardCmd.accesskey         "d">
 <!ENTITY forwardButton.tooltip        "Vés una pàgina endavant">
 <!ENTITY backForwardButtonMenu.tooltip "Premeu amb el botó dret o arrossegueu cap avall per veure l'historial">
 <!ENTITY backForwardButtonMenuMac.tooltip "Arrossegueu cap avall per veure l'historial">
 <!ENTITY reloadCmd.label              "Actualitza">
+<!ENTITY reloadCmd.accesskey          "z">
 <!ENTITY stopCmd.label                "Atura">
+<!ENTITY stopCmd.accesskey            "A">
 <!ENTITY stopCmd.macCommandKey        ".">
 <!ENTITY goEndCap.tooltip             "Vés a l'adreça de la barra d'ubicació">
 <!ENTITY printButton.label            "Imprimeix">
@@ -198,6 +210,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.defaultNotificationAnchor.tooltip         "Obre la subfinestra del missatge">
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "Obre la subfinestra de la sol·licitud d'ubicació">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "Obre la subfinestra del missatge d'instal·lació del complement">
+<!ENTITY urlbar.canvasNotificationAnchor.tooltip          "Gestiona el permís d'extracció de llenç">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "Obre la subfinestra del missatge d'emmagatzematge fora de línia">
 <!ENTITY urlbar.passwordNotificationAnchor.tooltip        "Obre la subfinestra del missatge de desar la contrasenya">
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Gestiona l'ús dels complements">
@@ -221,6 +234,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.indexedDBBlocked.tooltip         "Heu blocat l'emmagatzematge de dades per a aquest lloc web.">
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Heu blocat les notificacions per a aquest lloc web.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Heu blocat l'emmagatzematge persistent per a aquest lloc web.">
+
+<!ENTITY urlbar.popupBlocked.tooltip             "Heu blocat les finestres emergents per a aquest lloc web.">
+
+<!ENTITY urlbar.canvasBlocked.tooltip            "Heu blocat l'extracció de dades de llenç (canvas) per a aquest lloc web.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Mostra l'historial">
 
@@ -345,6 +362,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuCustomize.tooltip "Personalitza el menú i les barres d'eines">
 <!ENTITY appMenuCustomizeExit.label "Surt de la personalització">
 <!ENTITY appMenuCustomizeExit.tooltip "Acaba la personalització">
+
 <!ENTITY appMenuHistory.showAll.label "Mostra tot l'historial">
 <!ENTITY appMenuHistory.clearRecent.label "Neteja l'historial recent…">
 <!ENTITY appMenuHistory.restoreSession.label "Restaura la sessió anterior">
@@ -375,9 +393,14 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Voleu veure aquí les pestanyes d'altres dispositius?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Preferències del Sync">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Inicieu la sessió per veure una llista de les pestanyes que teniu obertes en altres dispositius.">
+<!ENTITY appMenuRemoteTabs.unverified.label "Cal que verifiqueu el compte.">
 <!ENTITY appMenuRemoteTabs.signin.label "Inicia la sessió al Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Gestiona els dispositius…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Mostra la barra lateral «Pestanyes sincronitzades»">
+
+<!ENTITY appMenuRemoteTabs.connectdevice.label "Connecta un altre dispositiu">
+
+<!ENTITY appMenuRecentHighlights.label "Destacats recents">
 
 <!ENTITY customizeMenu.addToToolbar.label "Afegeix a la barra d'eines">
 <!ENTITY customizeMenu.addToToolbar.accesskey "A">
@@ -552,6 +575,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY setDesktopBackgroundCmd.label      "Defineix com a fons d'escriptori…">
 <!ENTITY setDesktopBackgroundCmd.accesskey  "D">
 <!ENTITY bookmarkPageCmd2.label       "Afegeix la pàgina a les adreces d'interès">
+<!ENTITY bookmarkPageCmd2.accesskey   "d">
 <!ENTITY bookmarkThisLinkCmd.label      "Afegeix l'enllaç a les adreces d'interès">
 <!ENTITY bookmarkThisLinkCmd.accesskey  "l">
 <!ENTITY bookmarkThisFrameCmd.label      "Afegeix el marc a les adreces d'interès">
@@ -738,6 +762,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY editBookmark.done.label                     "Fet">
 <!ENTITY editBookmark.removeBookmark.accessKey       "r">
 
+<!-- LOCALIZATION NOTE (identity.securityView.label)
+     This is the header of the security subview in the Site Identity panel. -->
+<!ENTITY identity.securityView.label "Seguretat del lloc">
+
 <!ENTITY identity.connectionSecure "Connexió segura">
 <!ENTITY identity.connectionNotSecure "La connexió no és segura">
 <!ENTITY identity.connectionFile "Aquesta pàgina està desada a l'ordinador.">
@@ -791,11 +819,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncedTabs.sidebar.noclients.title    "Encara no hi ha cap pestanya sincronitzada.">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Voleu veure aquí les pestanyes d'altres dispositius?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Inicieu la sessió per veure una llista de les pestanyes que teniu obertes en altres dispositius.">
+<!ENTITY syncedTabs.sidebar.unverified.label   "Cal que verifiqueu el compte.">
 <!ENTITY syncedTabs.sidebar.notabs.label       "No hi ha cap pestanya oberta">
 <!ENTITY syncedTabs.sidebar.openprefs.label    "Obre les preferències del &syncBrand.shortName.label;">
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Activeu la sincronització de pestanyes per veure una llista de les pestanyes que teniu obertes en altres dispositius.">
+<!ENTITY syncedTabs.sidebar.searchPlaceholder  "Cerca en les pestanyes sincronitzades">
+
+<!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Connecta un altre dispositiu">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
                         syncedTabs.context.openAllInTabs.accesskey):
@@ -836,6 +868,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.restoreDefaults "Restaura els valors per defecte">
 <!ENTITY customizeMode.done "Fet">
 <!ENTITY customizeMode.titlebar "Barra de títol">
+<!ENTITY customizeMode.extraDragSpace "Espai per arrossegar la finestra">
 <!ENTITY customizeMode.toolbars2 "Barres d'eines">
 <!ENTITY customizeMode.lwthemes "Temes">
 <!ENTITY customizeMode.lwthemes.myThemes "Els meus temes">
@@ -845,6 +878,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.lwthemes.menuGetMore "Baixa més temes">
 <!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "B">
 <!ENTITY customizeMode.emptyOverflowList.description "Arrossegueu elements i deixeu-los anar aquí per tenir-los a mà, però fora de la barra d'eines…">
+<!ENTITY customizeMode.overflowList.title2 "Menú d'eines addicionals (»)">
+<!ENTITY customizeMode.overflowList.description "Arrossegueu elements i deixeu-los anar aquí per tenir-los a mà, però fora de la barra d'eines…">
 <!ENTITY customizeMode.uidensity "Densitat">
 <!-- LOCALIZATION NOTE (customizeMode.uidensity.menuNormal.*):
      “Normal” is displayed in the Customize screen, under the Density menu. -->
@@ -891,16 +926,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY trackingProtection.unblockPrivate.accesskey "D">
 <!ENTITY trackingProtection.block2.label "Activa la protecció">
 <!ENTITY trackingProtection.block2.accesskey "v">
-
-<!ENTITY trackingContentBlocked.message "Seguiment">
-<!ENTITY trackingContentBlocked.moreinfo "S'han blocat les parts de la pàgina que fan el seguiment de la vostra activitat a Internet.">
-<!ENTITY trackingContentBlocked.learnMore "Més informació">
-<!ENTITY trackingContentBlocked.options "Opcions">
-<!ENTITY trackingContentBlocked.unblock2.label "Desactiva la protecció per a aquest lloc">
-<!ENTITY trackingContentBlocked.unblock2.accesskey "D">
-<!ENTITY trackingContentBlocked.block.label "Activa la protecció">
-<!ENTITY trackingContentBlocked.block.accesskey "v">
-<!ENTITY trackingContentBlocked.disabled.message "La protecció contra el seguiment està desactivada">
 
 <!ENTITY pluginNotification.showAll.label "Mostra-ho tot">
 <!ENTITY pluginNotification.showAll.accesskey "s">
@@ -973,11 +998,28 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "n">
 <!ENTITY updateRestart.panelUI.label2 "Reinicia per actualitzar el &brandShorterName;">
 
+<!ENTITY newTabControlled.message "Una extensió ha canviat la pàgina que es mostra en obrir una pestanya nova. Si no voleu acceptar aquest canvi, podeu restaurar els vostres paràmetres.">
+<!ENTITY newTabControlled.header.message "La pàgina de «Pestanya nova» ha canviat.">
+<!ENTITY newTabControlled.keepButton.label "Mantén els canvis">
+<!ENTITY newTabControlled.keepButton.accesskey "M">
+<!ENTITY newTabControlled.restoreButton.label "Restaura els paràmetres">
+<!ENTITY newTabControlled.restoreButton.accesskey "R">
+
 <!ENTITY pageActionButton.tooltip "Accions de la pàgina">
 <!ENTITY pageAction.addToUrlbar.label "Afegeix a la barra d'adreces">
 <!ENTITY pageAction.removeFromUrlbar.label "Elimina de la barra d'adreces">
+
+<!ENTITY pageAction.allowInUrlbar.label "Mostra a la barra d'adreces">
+<!ENTITY pageAction.disallowInUrlbar.label "No mostris a la barra d'adreces">
+<!ENTITY pageAction.manageExtension.label "Gestiona l'extensió…">
 
 <!ENTITY pageAction.sendTabToDevice.label "Envia la pestanya al dispositiu">
 <!ENTITY sendToDevice.syncNotReady.label "S'estan sincronitzant els dispositius…">
 
 <!ENTITY libraryButton.tooltip "Mostra l'historial, les adreces d'interès desades i més">
+
+<!-- LOCALIZATION NOTE: (accessibilityIndicator.tooltip): This is used to
+     display a tooltip for accessibility indicator in toolbar/tabbar. It is also
+     used as a textual label for the indicator used by assistive technology
+     users. -->
+<!ENTITY accessibilityIndicator.tooltip "Funcions d'accessibilitat activades">

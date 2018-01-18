@@ -7,18 +7,30 @@
 <!ENTITY engine.bookmarks.label     "Záložky">
 <!ENTITY engine.bookmarks.accesskey "Z">
 <!ENTITY engine.tabs.label2         "Otvorené karty">
+<!ENTITY engine.tabs.title          "Zoznam otvorených kariet v synchronizovaných zariadeniach">
 <!ENTITY engine.tabs.accesskey      "t">
 <!ENTITY engine.history.label       "História prehliadania">
 <!ENTITY engine.history.accesskey   "H">
 <!ENTITY engine.logins.label        "Prihlasovacie údaje">
+<!ENTITY engine.logins.title        "Uložené používateľské mená a heslá">
 <!ENTITY engine.logins.accesskey    "l">
+<!-- On Windows we use the term "Options" to describe settings, but
+     on Linux and Mac OS X we use "Preferences" - carry that distinction
+     over into this string, used as the checkbox which indicates if prefs are synced
+-->
+<!ENTITY engine.prefsWin.label      "Možnosti">
+<!ENTITY engine.prefsWin.accesskey  "M">
 <!ENTITY engine.prefs.label         "Nastavenia">
 <!ENTITY engine.prefs.accesskey     "N">
+<!ENTITY engine.prefs.title         "Možnosti v sekciách Všeobecné, Súkromie a bezpečnosť, ktoré boli zmenené">
 <!ENTITY engine.addons.label        "Doplnky">
+<!ENTITY engine.addons.title        "Rozšírenia a témy vzhľadu pre Firefox pre počítače">
 <!ENTITY engine.addons.accesskey    "D">
 <!ENTITY engine.addresses.label     "Adresy">
+<!ENTITY engine.addresses.title     "Uložené poštové adresy (len pre počítače)">
 <!ENTITY engine.addresses.accesskey "e">
 <!ENTITY engine.creditcards.label   "Platobné karty">
+<!ENTITY engine.creditcards.title   "Mená, čísla a dátumy expirácie (len na počítači)">
 <!ENTITY engine.creditcards.accesskey "k">
 
 <!-- Device Settings -->
@@ -50,18 +62,23 @@ both, to better adapt this sentence to their language.
 <!ENTITY signedInLoginFailure.beforename.label "Ak sa chcete pripojiť k">
 <!ENTITY signedInLoginFailure.aftername.label ", musíte sa prihlásiť.">
 
-<!ENTITY notSignedIn.label           "Nie ste prihlásený.">
-<!ENTITY signIn.label                "Prihlásiť sa">
-<!ENTITY signIn.accesskey            "i">
-<!ENTITY profilePicture.tooltip      "Zmeniť obrázok profilu">
-<!ENTITY verifiedManage.label        "Spravovať účet">
-<!ENTITY verifiedManage.accesskey    "p">
-<!ENTITY disconnect3.label           "Odpojiť…">
-<!ENTITY disconnect3.accesskey       "d">
+<!ENTITY notSignedIn.label            "Nie ste prihlásený.">
+<!ENTITY signIn.label                 "Prihlásiť sa">
+<!ENTITY signIn.accesskey             "i">
+<!ENTITY profilePicture.tooltip       "Zmeniť obrázok profilu">
+<!ENTITY verifiedManage.label         "Spravovať účet">
+<!ENTITY verifiedManage.accesskey     "p">
+<!ENTITY disconnect3.label            "Odpojiť…">
+<!ENTITY disconnect3.accesskey        "d">
 <!ENTITY verify.label                "Overiť e-mailovú adresu">
 <!ENTITY verify.accesskey            "a">
 <!ENTITY forget.label                "Zabudnúť na túto e-mailovú adresu">
 <!ENTITY forget.accesskey            "b">
+
+<!ENTITY resendVerification.label     "Znova odoslať overenie">
+<!ENTITY resendVerification.accesskey "d">
+<!ENTITY cancelSetup.label            "Zrušiť nastavenie">
+<!ENTITY cancelSetup.accesskey        "e">
 
 <!ENTITY signedOut.caption            "Vezmite si svoj web so sebou">
 <!ENTITY signedOut.description        "Synchronizujte si svoje záložky, históriu, karty, heslá, doplnky a nastavenia so všetkými svojimi zariadeniami.">

@@ -14,7 +14,8 @@
 
 <!ENTITY  manualUpdate.title              "నవీకరణ చేయలేకపోతున్నది">
 <!ENTITY  manualUpdate.desc               "సిఫారస్ చేయబడిన రక్షణ మరియి  మెరుగైన  నవీకరణ  అందుబాటులో ఉంది. అది స్థాపించుటకు  నీకు అనుమతులు లేవు.  మీ సిస్టమ్ నిర్వహణాధికారిని  అడుగు లేక అనుమతికలిగిన వేరే ఎకౌంటు నుండి  ప్రయత్నించు.">
-<!ENTITY  manualUpdate.space.desc         "సిఫార్సు చేయబడిన రక్షణ మరియు స్థిరత్వపు నవీకరణ అందుబాటులో ఉంది, అయితే దానిని సంస్థాపించుటకు మీ వద్ద సరిపోవునంత జాగాలేదు.">
+<!ENTITY  manualUpdate.space.desc         "సిఫార్సు చేయబడిన రక్షణ మరియు స్థిరత్వపు తాజాకరణ అందుబాటులో ఉంది, కానీ దానిని స్థాపించుకోడానికి
+                                           తగినంత జాగా మీ వద్ద లేదు.">
 <!ENTITY  manualUpdateGetMsg.label        "&brandShortName; తాజా నవీకరణ మీకు ఎప్పుడు దొరకు స్థలము:">
 
 <!ENTITY  unsupported.title               "వ్యవస్థ తోడ్పాటులేదు">
@@ -46,10 +47,11 @@
 <!ENTITY  genericBackgroundError.label    "నవీకరణ అందుబాటులో వుందో లేదో &brandShortName; నిర్థారించలేక పోవుచున్నది. మీరు 
                                            &brandShortName; యొక్క సరికొత్త వర్షన్‌ను యిచట నుండి కలిగివుండునట్లు చూచుకొనుము:">
 
-<!ENTITY  finishedPage.title              "నవీకరణ సంస్థాపనకు సిద్దంగా వున్నది">
+<!ENTITY  finishedPage.title              "తాజాకరణ స్థాపనకు తయారుగా ఉంది">
 <!ENTITY  finishedPage.text               "&brandShortName;  పునఃప్రారంభం చేసినపుడు ఈ నవీకరణ స్థాపించబడుతుంది. మీరు &brandShortName;ను ఇప్పుడు   పునఃప్రారంభం చేయండి లేక  పని కొనసాగించి ఆతరువాత పునఃప్రారంభం చేయండి.">
 
-<!ENTITY  finishedBackgroundPage.text     "&brandShortName; కొరకు ఒక రక్షణ మరియు స్థిరత్వపు నవీకరణ దింపుకొనబడింది మరియు సంస్థాపనకు సిద్ధంగా ఉంది.">
+<!ENTITY  finishedBackgroundPage.text     "&brandShortName; కొరకు ఒక భద్రత మరియు స్థిరత్వపు తాజాకరణ
+                                           దింపుకొనబడి స్థాపనకు తయారుగా ఉంది.">
 <!ENTITY  finishedBackground.name         "తాజాకరణ:">
 <!-- LOCALIZATION NOTE (finishedBackground.more): This string describes the button labels defined by restartNowButton and restartLaterButton in updates.properties. -->
 <!ENTITY  finishedBackground.more         "&brandShortName;  పునఃప్రారంభం    చేసినపుడు ఈ నవీకరణ స్థాపించబడుతుంది . మీరు &brandShortName; ను ఇప్పుడు   పునఃప్రారంభం చేయండి లేక  పని కొనసాగించి ఆతరువాత   పునఃప్రారంభం చేయండి.">
@@ -59,5 +61,5 @@
                                             క్షీణిస్తుంది.">
 
 <!ENTITY  update.details.label            "వివరాలు">
-<!ENTITY  update.installedOn.label        "సంస్థాపించబడింది:">
+<!ENTITY  update.installedOn.label        "స్థాపితం:">
 <!ENTITY  update.status.label             "స్థితి:">

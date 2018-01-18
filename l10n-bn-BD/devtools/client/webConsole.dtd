@@ -9,7 +9,7 @@
 <!ENTITY window.title "ওয়েব কনসোল">
 <!-- LOCALIZATION NOTE (openURL.label): You can see this string in the Web
    - Console context menu. -->
-<!ENTITY openURL.label     "নতুন ট্যাবে URL লিংক খোলা হবে T">
+<!ENTITY openURL.label     "URL নতুন ট্যাবে খুলুন">
 <!ENTITY openURL.accesskey "T">
 <!-- LOCALIZATION NOTE (btnPageNet.label): This string is used for the menu
   -  button that allows users to toggle the network logging output.
@@ -76,7 +76,7 @@
 
 <!ENTITY fullZoomEnlargeCmd.commandkey  "+">
 <!ENTITY fullZoomEnlargeCmd.commandkey2 "="> <!-- + is above this key on many keyboards -->
-<!ENTITY fullZoomEnlargeCmd.commandkey3 "‍">
+<!ENTITY fullZoomEnlargeCmd.commandkey3 "">
 
 <!ENTITY fullZoomReduceCmd.commandkey   "-">
 <!ENTITY fullZoomReduceCmd.commandkey2  "">
@@ -84,7 +84,7 @@
 <!ENTITY fullZoomResetCmd.commandkey    "0">
 <!ENTITY fullZoomResetCmd.commandkey2   "">
 
-<!ENTITY copyURLCmd.label     "লিংকের ঠিকানা অনুলিপি (a)">
+<!ENTITY copyURLCmd.label     "লিঙ্কের ঠিকানা অনুলিপি">
 <!ENTITY copyURLCmd.accesskey "a">
 
 <!ENTITY closeCmd.key         "W">
@@ -92,5 +92,5 @@
 <!ENTITY clearOutputCtrl.key  "L">
 <!ENTITY openInVarViewCmd.label "Variables প্রদর্শনীতে খুলুন">
 <!ENTITY openInVarViewCmd.accesskey "V">
-<!ENTITY storeAsGlobalVar.label "গ্লোবাল ভেরিয়েবল হিসেবে সংরক্ষণ S">
+<!ENTITY storeAsGlobalVar.label "গ্লোবাল ভেরিয়েবল হিসেবে সংরক্ষণ">
 <!ENTITY storeAsGlobalVar.accesskey "S">

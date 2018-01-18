@@ -13,7 +13,7 @@
 <!ENTITY mainWindow.titlemodifiermenuseparator " - ">
 <!-- LOCALIZATION NOTE (mainWindow.titlePrivateBrowsingSuffix): This will be appended to the window's title
                                                                 inside the private browsing mode -->
-<!ENTITY mainWindow.titlePrivateBrowsingSuffix "(Privata retumado)">
+<!ENTITY mainWindow.titlePrivateBrowsingSuffix "(Privata retumo)">
 
 <!ENTITY appmenu.tooltip                     "Malfermi menuon">
 <!ENTITY navbarOverflow.label                "Pli da iloj…">
@@ -51,6 +51,7 @@ can reach it easily. -->
 <!ENTITY  sendLinkToDevice.label             "Sendi ligilon al aparato">
 <!ENTITY  sendLinkToDevice.accesskey         "a">
 <!ENTITY  sendToDeviceFeedback.label         "Sendita!">
+<!ENTITY  sendToDeviceOfflineFeedback.label  "Vicigita (malkonektite)">
 <!ENTITY  moveToNewWindow.label              "Movi al nova fenestro">
 <!ENTITY  moveToNewWindow.accesskey          "n">
 <!ENTITY  bookmarkAllTabs.label              "Aldoni legosignon por ĉiuj langetoj…">
@@ -188,13 +189,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hideRecentlyBookmarked.accesskey "K">
 
 <!ENTITY backCmd.label                "Malantaŭen">
+<!ENTITY backCmd.accesskey            "M">
 <!ENTITY backButton.tooltip           "Unu paĝo malantaŭen">
 <!ENTITY forwardCmd.label             "Antaŭen">
+<!ENTITY forwardCmd.accesskey         "A">
 <!ENTITY forwardButton.tooltip        "Unu paĝo antaŭen">
 <!ENTITY backForwardButtonMenu.tooltip "Alklaku per la dekstra butono aŭ tiru malsupren por montri la historion">
 <!ENTITY backForwardButtonMenuMac.tooltip "Tiru malsupren por montri la historion">
 <!ENTITY reloadCmd.label              "Reŝargi">
+<!ENTITY reloadCmd.accesskey          "R">
 <!ENTITY stopCmd.label                "Halti">
+<!ENTITY stopCmd.accesskey            "H">
 <!ENTITY stopCmd.macCommandKey        ".">
 <!ENTITY goEndCap.tooltip             "Iri al la adreso en la retadresa strio">
 <!ENTITY printButton.label            "Presi">
@@ -231,6 +236,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Vi blokis la daŭran konservejon por ĉi tiu retejo.">
 
 <!ENTITY urlbar.popupBlocked.tooltip             "Vi blokis ŝprucfenestrojn por tiu ĉi retejo.">
+
+<!ENTITY urlbar.canvasBlocked.tooltip            "Vi blokis la eltiron de datumoj el kanvaso por tiu ĉi retejo.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Montri historion">
 
@@ -316,7 +323,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY pasteCmd.key           "V">
 <!ENTITY pasteCmd.accesskey         "A">
 <!ENTITY deleteCmd.label          "Forviŝi">
-<!ENTITY deleteCmd.key            "N">
+<!ENTITY deleteCmd.key            "D">
 <!ENTITY deleteCmd.accesskey        "F">
 <!ENTITY selectAllCmd.label         "Elekti ĉion">
 <!ENTITY selectAllCmd.key         "A">
@@ -355,6 +362,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuCustomize.tooltip "Personecigi la menuon kaj ilarstriojn">
 <!ENTITY appMenuCustomizeExit.label "Fini personecigon">
 <!ENTITY appMenuCustomizeExit.tooltip "Fini personecigon">
+
 <!ENTITY appMenuHistory.showAll.label "Montri tutan historion">
 <!ENTITY appMenuHistory.clearRecent.label "Viŝi ĵusan historion…">
 <!ENTITY appMenuHistory.restoreSession.label "Restarigi antaŭan seancon">
@@ -385,9 +393,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Ĉu vi volas vidi ĉi tie viajn langetojn el aliaj aparatoj?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Preferoj de Spegulado">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Komencu seancon por vidi liston de langetoj el viaj aliaj aparatoj.">
+<!ENTITY appMenuRemoteTabs.unverified.label "Via konto bezonas esti kontrolita.">
 <!ENTITY appMenuRemoteTabs.signin.label "Komencu seancon en Spegulado">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Administri aparatojn…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Vidi flankan strion de spegulitaj langetoj">
+
+<!ENTITY appMenuRemoteTabs.connectdevice.label "Konekti alian aparaton">
 
 <!ENTITY appMenuRecentHighlights.label "Ĵusaj elstaraĵoj">
 
@@ -564,6 +575,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY setDesktopBackgroundCmd.label      "Difini kiel skribotablan fonan bildon…">
 <!ENTITY setDesktopBackgroundCmd.accesskey  "D">
 <!ENTITY bookmarkPageCmd2.label       "Aldoni legosignon por tiu ĉi paĝo">
+<!ENTITY bookmarkPageCmd2.accesskey   "l">
 <!ENTITY bookmarkThisLinkCmd.label      "Aldoni legosignon por tiu ĉi ligilo">
 <!ENTITY bookmarkThisLinkCmd.accesskey  "l">
 <!ENTITY bookmarkThisFrameCmd.label      "Aldoni legosignon por tiu ĉi kadro">
@@ -750,6 +762,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY editBookmark.done.label                     "Preta">
 <!ENTITY editBookmark.removeBookmark.accessKey       "F">
 
+<!-- LOCALIZATION NOTE (identity.securityView.label)
+     This is the header of the security subview in the Site Identity panel. -->
+<!ENTITY identity.securityView.label "Sekureco de retejo">
+
 <!ENTITY identity.connectionSecure "Sekura konekto">
 <!ENTITY identity.connectionNotSecure "Nesekura konekto">
 <!ENTITY identity.connectionFile "Tiu ĉi paĝo estas konservita en via komputilo.">
@@ -803,12 +819,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncedTabs.sidebar.noclients.title    "Neniu spegulita langeto… ankoraŭ!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Ĉu vi volas vidi ĉi tie viajn langetojn el aliaj aparatoj?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Komencu seancon por vidi liston de langetoj el viaj aliaj aparatoj.">
+<!ENTITY syncedTabs.sidebar.unverified.label   "Via konto bezonas esti kontrolita.">
 <!ENTITY syncedTabs.sidebar.notabs.label       "Neniu malfermita langeto">
 <!ENTITY syncedTabs.sidebar.openprefs.label    "Malfermi preferojn de &syncBrand.shortName.label;">
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Ŝaltu la speguladon de langetoj por vidi liston de langetoj el viaj aliaj aparatoj.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Serĉi spegulitajn langetojn">
+
+<!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Konekti alian aparaton">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
                         syncedTabs.context.openAllInTabs.accesskey):
@@ -892,8 +911,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.allWindowsShared.message "Ĉiuj videblaj fenestroj en via ekrano estos dividitaj.">
 
 <!ENTITY trackingProtection.title "Protekto kontraŭ spurado">
-<!ENTITY trackingProtection.detectedBlocked3 "&brandShortName; blokas partojn de la paĝo kiuj povus spuri vian retumadon.">
-<!ENTITY trackingProtection.detectedNotBlocked3 "Tiu ĉi retejo enhavas elementojn kiuj povus spuri vian retumadon. Vi malaktivigis la protekton.">
+<!ENTITY trackingProtection.detectedBlocked3 "&brandShortName; blokas partojn de la paĝo kiuj povus spuri vian retumon.">
+<!ENTITY trackingProtection.detectedNotBlocked3 "Tiu ĉi retejo enhavas elementojn kiuj povus spuri vian retumon. Vi malaktivigis la protekton.">
 <!ENTITY trackingProtection.notDetected3 "Neniu spura elemento en tiu ĉi paĝo.">
 <!-- LOCALIZATION NOTE (trackingProtection.unblock.label, trackingProtection.unblock.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
@@ -979,9 +998,20 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "N">
 <!ENTITY updateRestart.panelUI.label2 "Restartigu por ĝisdatigi &brandShorterName;">
 
+<!ENTITY newTabControlled.message "Etendaĵo ŝanĝis la paĝon, kiun vi vidas kiam vi malfermas novan langeton. Vi povas remeti viajn agordojn se vi ne volas tiun ĉi ŝanĝon.">
+<!ENTITY newTabControlled.header.message "Via nova langeto ŝanĝiĝis.">
+<!ENTITY newTabControlled.keepButton.label "Gardi ŝanĝojn">
+<!ENTITY newTabControlled.keepButton.accesskey "G">
+<!ENTITY newTabControlled.restoreButton.label "Remeti agordojn">
+<!ENTITY newTabControlled.restoreButton.accesskey "R">
+
 <!ENTITY pageActionButton.tooltip "Retpaĝaj agoj">
 <!ENTITY pageAction.addToUrlbar.label "Aldoni al adresa strio">
 <!ENTITY pageAction.removeFromUrlbar.label "Forigi el adresa strio">
+
+<!ENTITY pageAction.allowInUrlbar.label "Montri en la adresa strio">
+<!ENTITY pageAction.disallowInUrlbar.label "Ne montri en la adresa strio">
+<!ENTITY pageAction.manageExtension.label "Administri etendaĵon…">
 
 <!ENTITY pageAction.sendTabToDevice.label "Sendi langeton al aparato">
 <!ENTITY sendToDevice.syncNotReady.label "Aparatoj spegulataj…">

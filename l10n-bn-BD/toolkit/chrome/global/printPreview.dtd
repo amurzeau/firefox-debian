@@ -9,13 +9,13 @@
 <!ENTITY page.label           "পাতা:">
 <!ENTITY page.accesskey       "a">
 <!ENTITY of.label             "সর্বমোট">
-<!ENTITY scale.label          "আকার পরিবর্তন: (S)">
+<!ENTITY scale.label          "আকার পরিবর্তন:">
 <!ENTITY scale.accesskey      "S">
 <!ENTITY portrait.label       "লম্বালম্বি (o)">
 <!ENTITY portrait.accesskey   "o">
 <!ENTITY landscape.label      "আড়াআড়ি (L)">
 <!ENTITY landscape.accesskey  "L">
-<!ENTITY close.label          "বন্ধ (C)">
+<!ENTITY close.label          "বন্ধ">
 <!ENTITY close.accesskey      "C">
 <!ENTITY p30.label            "30&#037;">
 <!ENTITY p40.label            "40&#037;">

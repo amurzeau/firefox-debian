@@ -17,7 +17,7 @@
 <!ENTITY  generalTab.accesskey  "ზ">
 <!ENTITY  generalTitle          "სათაური:">
 <!ENTITY  generalURL            "მისამართი:">
-<!ENTITY  generalType           "ტიპი:">
+<!ENTITY  generalType           "სახეობა:">
 <!ENTITY  generalMode           "ასახვის რეჟიმი:">
 <!ENTITY  generalSize           "ზომა:">
 <!ENTITY  generalReferrer       "დამოწმების URL:">
@@ -33,10 +33,10 @@
 <!ENTITY  mediaText             "ალტერნატული ტექსტი:">
 <!ENTITY  mediaAltHeader        "ალტერნატული ტექსტი">
 <!ENTITY  mediaAddress          "მისამართი">
-<!ENTITY  mediaType             "ტიპი">
+<!ENTITY  mediaType             "სახეობა">
 <!ENTITY  mediaSize             "ზომა">
 <!ENTITY  mediaCount            "რაოდენობა">
-<!ENTITY  mediaDimension        "სიგრძე/სიგანე:">
+<!ENTITY  mediaDimension        "სიგრძე-სიგანე:">
 <!ENTITY  mediaLongdesc         "ვრცელი აღწერა:">
 <!ENTITY  mediaBlockImage.accesskey "ბ">
 <!ENTITY  mediaSaveAs           "შენახვა როგორც…">
@@ -55,16 +55,17 @@
 <!ENTITY  permAskAlways         "შეკითხვა ყოველ ჯერზე">
 <!ENTITY  permAllow             "დაშვება">
 <!ENTITY  permAllowSession      "დაშვება სეანსზე">
+<!ENTITY  permHide              "დამალვა">
 <!ENTITY  permBlock             "აკრძალვა">
 <!ENTITY  permissionsFor        "ნებართვები საიტისთვის:">
-<!ENTITY  permPlugins           "მოდულების გააქტიურება">
+<!ENTITY  permPlugins           "მოდულების ამოქმედება">
 
 <!ENTITY  permClearStorage           "საცავის გასუფთავება">
 <!ENTITY  permClearStorage.accesskey "გ">
 
 <!ENTITY  securityTab           "უსაფრთხოება">
 <!ENTITY  securityTab.accesskey "უ">
-<!ENTITY  securityView.certView "სერთიფიკატის ნახვა">
+<!ENTITY  securityView.certView "სერტიფიკატის ნახვა">
 <!ENTITY  securityView.accesskey "ნ">
 <!ENTITY  securityView.unknown   "უცნობია">
 

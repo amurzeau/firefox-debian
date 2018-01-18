@@ -4,18 +4,20 @@
 <!ENTITY addons.windowTitle                   "დამატებების მმართველი">
 
 <!ENTITY search.placeholder                   "ძიება ყველა დამატებას შორის">
+
+<!ENTITY search.placeholder2                  "addons.mozilla.org საიტზე მოძიება">
 <!ENTITY search.buttonlabel                   "ძიება">
 <!-- LOCALIZATION NOTE (search.commandKey):
      The search command key should match findOnCmd.commandkey from browser.dtd -->
 <!ENTITY search.commandkey                    "f">
 
 <!ENTITY loading.label                        "იტვირთება…">
-<!ENTITY listEmpty.installed.label            "ამ ტიპის არცერთი დამატება არ გაქვთ დაყენებული.">
+<!ENTITY listEmpty.installed.label            "ამ სახის არცერთი დამატება არ გაქვთ დაყენებული">
 <!ENTITY listEmpty.availableUpdates.label     "განახლებები ვერ მოიძებნა">
 <!ENTITY listEmpty.recentUpdates.label        "ბოლო დროს, არცერთი დამატება არ განგიახლებიათ.">
 <!ENTITY listEmpty.findUpdates.label          "განახლებების შემოწმება">
-<!ENTITY listEmpty.search.label               "შესაბამისი დაამტებები ვერ მოიძებნა">
-<!ENTITY listEmpty.button.label               "შეიტყვეთ მეტი დამატებების შესახებ">
+<!ENTITY listEmpty.search.label               "შესაბამისი დამატებები ვერ მოიძებნა">
+<!ENTITY listEmpty.button.label               "იხილეთ ვრცლად, დამატებების შესახებ">
 <!ENTITY installAddonFromFile.label           "დამატების დაყენება ფაილის მეშვეობით…">
 <!ENTITY installAddonFromFile.accesskey       "ფ">
 <!ENTITY toolsMenu.tooltip                    "ხელსაწყოები ყველა დამატებისთვის">
@@ -25,6 +27,7 @@
 
 <!ENTITY cmd.back.tooltip                     "უკან ერთი გვერდით">
 <!ENTITY cmd.forward.tooltip                  "წინ ერთი გვერდით">
+
 
 <!ENTITY showUnsignedExtensions.button.label  "ზოგიერთი გაფართოება ვერ გადამოწმდა">
 <!ENTITY showAllExtensions.button.label       "ყველა გაფართოების ჩვენება">
@@ -36,7 +39,7 @@
 <!ENTITY warning.checkcompatibility.label          "დამატებების თავსებადობის შემოწმება გამორთულია. შესაძლოა არათავსებადი დამატებები გქონდეთ.">
 <!ENTITY warning.checkcompatibility.enable.label   "ჩართვა">
 <!ENTITY warning.checkcompatibility.enable.tooltip "დამატებების თავსებადობის შემოწმების ჩართვა">
-<!ENTITY warning.updatesecurity.label              "მოდულის განახლების უსაფრთხოების შემოწმება ამორთულია. განახლებამ შესაძლებელია ზიანი მოგაყენოთ.">
+<!ENTITY warning.updatesecurity.label              "დამატების განახლების უსაფრთხოების შემოწმება გამორთულია. განახლებამ შესაძლოა ზიანი მოგაყენოთ.">
 <!ENTITY warning.updatesecurity.enable.label       "ჩართვა">
 <!ENTITY warning.updatesecurity.enable.tooltip     "დამატებების განახლების უსაფრთხოების შემოწმების ჩართვა">
 
@@ -112,7 +115,7 @@
 <!ENTITY cmd.showPreferencesUnix.tooltip      "ამ დამატების პარამეტრების შეცვლა">
 <!ENTITY cmd.contribute.label                 "მონაწილეობა">
 <!ENTITY cmd.contribute.accesskey             "წ">
-<!ENTITY cmd.contribute.tooltip               "მიიღეთ მონაწილეობა ამ დამატების დეველოპემნტში.">
+<!ENTITY cmd.contribute.tooltip               "შეიტანეთ წვლილი ამ დამატების შემუშავებაში">
 
 <!ENTITY cmd.showReleaseNotes.label           "გამოშვების შენიშვნების ჩვენება">
 <!ENTITY cmd.showReleaseNotes.tooltip         "ამ განახლების შესახებ შენიშვნების ჩვენება">
@@ -133,13 +136,13 @@
 <!-- detail view -->
 <!ENTITY detail.version.label                 "ვერსია">
 <!ENTITY detail.lastupdated.label             "ბოლო განახლება">
-<!ENTITY detail.creator.label                 "დეველოპერი">
+<!ENTITY detail.creator.label                 "შემმუშავებელი">
 <!ENTITY detail.homepage.label                "მთავარი გვერდი">
 <!ENTITY detail.numberOfDownloads.label       "ჩამოტვირთვები">
 
 <!ENTITY detail.contributions.description     "ამ დამატების შემქმნელი, პროგრამის მომავალი განვითარებისთვის, გთხოვთ მხარდაჭერას, მცირეოდენი შემოწირულობის სახით.">
 
-<!ENTITY detail.updateType                    "ავტომატური განახლება">
+<!ENTITY detail.updateType                    "თვითგანახლებები">
 <!ENTITY detail.updateDefault.label           "ნაგულისხმევი">
 <!ENTITY detail.updateDefault.tooltip         "განახლებების ავტომატურად დაყენება, თუ ნაგულისხმევადაა მითითებული.">
 <!ENTITY detail.updateAutomatic.label         "ჩართვა">
@@ -192,7 +195,7 @@
 <!-- LOCALIZATION NOTE (addon.legacy.label): This appears in a badge next
      to the add-on name for extensions that are not webextensions, which
      will stop working in Firefox 57. -->
-<!ENTITY addon.legacy.label                   "LEGACY">
+<!ENTITY addon.legacy.label                   "მოძველებული">
 <!-- LOCALIZATION NOTE (addon.disabled.postfix): This is used in a normal list
      to signify that an add-on is disabled, in the form
      "<Addon name> <1.0> (disabled)" -->

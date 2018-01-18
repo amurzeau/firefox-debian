@@ -7,18 +7,30 @@
 <!ENTITY engine.bookmarks.label     "Marcadores">
 <!ENTITY engine.bookmarks.accesskey "M">
 <!ENTITY engine.tabs.label2         "Abrir pestañas">
+<!ENTITY engine.tabs.title          "Una lista de qué está abierto en todos los dispositivos sincronizados">
 <!ENTITY engine.tabs.accesskey      "t">
 <!ENTITY engine.history.label       "Historial">
 <!ENTITY engine.history.accesskey   "r">
 <!ENTITY engine.logins.label        "Inicios de sesión">
+<!ENTITY engine.logins.title        "Usuarios y contraseñas que has guardado">
 <!ENTITY engine.logins.accesskey    "L">
+<!-- On Windows we use the term "Options" to describe settings, but
+     on Linux and Mac OS X we use "Preferences" - carry that distinction
+     over into this string, used as the checkbox which indicates if prefs are synced
+-->
+<!ENTITY engine.prefsWin.label      "Opciones">
+<!ENTITY engine.prefsWin.accesskey  "S">
 <!ENTITY engine.prefs.label         "Preferencias">
 <!ENTITY engine.prefs.accesskey     "s">
+<!ENTITY engine.prefs.title         "Configuraciones generales, de privacidad y de seguridad que has cambiado">
 <!ENTITY engine.addons.label        "Complementos">
+<!ENTITY engine.addons.title        "Extensiones y temas para Firefox para escritorio">
 <!ENTITY engine.addons.accesskey    "C">
 <!ENTITY engine.addresses.label     "Direcciones">
+<!ENTITY engine.addresses.title     "Direcciones postales que guardaste (sólo escritorio)">
 <!ENTITY engine.addresses.accesskey "e">
 <!ENTITY engine.creditcards.label   "Tarjetas de crédito">
+<!ENTITY engine.creditcards.title   "Nombre, números y fechas de expiración (sólo escritorio)">
 <!ENTITY engine.creditcards.accesskey "C">
 
 <!-- Device Settings -->
@@ -50,18 +62,23 @@ both, to better adapt this sentence to their language.
 <!ENTITY signedInLoginFailure.beforename.label "Inicia sesión para reconectar">
 <!ENTITY signedInLoginFailure.aftername.label "Favor de iniciar la sesión para reconectar">
 
-<!ENTITY notSignedIn.label           "No has iniciado sesión.">
-<!ENTITY signIn.label                "Iniciar sesión">
-<!ENTITY signIn.accesskey            "g">
-<!ENTITY profilePicture.tooltip      "Cambiar imagen de perfil">
-<!ENTITY verifiedManage.label        "Administrar cuenta">
-<!ENTITY verifiedManage.accesskey    "o">
-<!ENTITY disconnect3.label           "Desconectar…">
-<!ENTITY disconnect3.accesskey       "D">
+<!ENTITY notSignedIn.label            "No has iniciado sesión.">
+<!ENTITY signIn.label                 "Iniciar sesión">
+<!ENTITY signIn.accesskey             "g">
+<!ENTITY profilePicture.tooltip       "Cambiar imagen de perfil">
+<!ENTITY verifiedManage.label         "Administrar cuenta">
+<!ENTITY verifiedManage.accesskey     "o">
+<!ENTITY disconnect3.label            "Desconectar…">
+<!ENTITY disconnect3.accesskey        "D">
 <!ENTITY verify.label                "Verificar correo electrónico">
 <!ENTITY verify.accesskey            "V">
 <!ENTITY forget.label                "Olvidar este correo electrónico">
 <!ENTITY forget.accesskey            "F">
+
+<!ENTITY resendVerification.label     "Enviar verificación nuevamente">
+<!ENTITY resendVerification.accesskey "d">
+<!ENTITY cancelSetup.label            "Cancelar configuración">
+<!ENTITY cancelSetup.accesskey        "p">
 
 <!ENTITY signedOut.caption            "Lleva la Web contigo">
 <!ENTITY signedOut.description        "Sincroniza tus marcadores, historial, pestañas, contraseñas, complementos y preferencias entre todos tus dispositivos.">

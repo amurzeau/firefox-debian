@@ -21,7 +21,7 @@
 <!-- LOCALIZATION NOTE (warningDesc.version): This is a warning about the experimental nature of Nightly and Aurora builds. It is only shown in those versions. -->
 <!ENTITY warningDesc.version        "&brandShortName; হচ্ছে পরীক্ষামূলক এবং সম্ভবত পরিবর্তনশীল।">
 <!-- LOCALIZATION NOTE (warningDesc.telemetryDesc): This is a notification that Nightly/Aurora builds automatically send Telemetry data back to Mozilla. It is only shown in those versions. "It" refers to brandShortName. -->
-<!ENTITY warningDesc.telemetryDesc  "এটি স্বয়ংক্রিয়ভাবে কার্যকারীতা, হার্ডওয়ার, ব্যবহার এবং স্বনির্বাচনগুলোর তথ্য &vendorShortName; এর নিকটপ্রদান করে; যাতে &brandShortName; কে আরো ভালভাবে তৈরী করা যায়।">
+<!ENTITY warningDesc.telemetryDesc  "এটি স্বয়ংক্রিয়ভাবে কার্যকারীতা, হার্ডওয়ার, ব্যবহার এবং স্বনির্বাচনগুলোর তথ্য &vendorShortName; এর নিকটপ্রদান করে; যাতে &brandShortName; কে আরও ভালভাবে তৈরী করা যায়।">
 
 <!-- LOCALIZATION NOTE (community.exp.*) This paragraph is shown in "experimental" builds, i.e. Nightly and Aurora builds, instead of the other "community.*" strings below. -->
 <!ENTITY community.exp.start        "">
@@ -76,14 +76,14 @@
      one line, try to make the localized text short (see bug 596813 for screenshots). -->
 <!ENTITY update.failed.start        "হালনাগাদ ব্যর্থ। ">
 <!ENTITY update.failed.linkText     "সর্বশেষ সংস্করণ ডাউনলোড করুন">
-<!ENTITY update.failed.end          "‍">
+<!ENTITY update.failed.end          "">
 
 <!-- LOCALIZATION NOTE (update.manual.start,update.manual.end): update.manual.start and update.manual.end
      all go into one line and have an anchor in between with text that is the same as the link to a site
      to download the latest version of Firefox (e.g. http://www.firefox.com). As this is all in one line,
      try to make the localized text short (see bug 596813 for screenshots). -->
 <!ENTITY update.manual.start        "হালনাগাদ যেখানে পাওয়া যাবে ">
-<!ENTITY update.manual.end          "‍">
+<!ENTITY update.manual.end          "">
 
 <!-- LOCALIZATION NOTE (update.unsupported.start,update.unsupported.linkText,update.unsupported.end):
      update.unsupported.start, update.unsupported.linkText, and
@@ -93,7 +93,7 @@
      make the localized text short (see bug 843497 for screenshots). -->
 <!ENTITY update.unsupported.start    "আপনি এই সিস্টেমে আর হালনাগাদ করতে পারবেন না। ">
 <!ENTITY update.unsupported.linkText "আরও জানুন">
-<!ENTITY update.unsupported.end      "‍">
+<!ENTITY update.unsupported.end      "">
 
 <!-- LOCALIZATION NOTE (update.downloading.start,update.downloading.end): update.downloading.start and
      update.downloading.end all go into one line, with the amount downloaded inserted in between. As this

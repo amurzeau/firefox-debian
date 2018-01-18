@@ -21,7 +21,7 @@
 <!-- LOCALIZATION NOTE (warningDesc.version): This is a warning about the experimental nature of Nightly and Aurora builds. It is only shown in those versions. -->
 <!ENTITY warningDesc.version        "&brandShortName; საცდელია და შესაძლოა არამდგრადი იყოს.">
 <!-- LOCALIZATION NOTE (warningDesc.telemetryDesc): This is a notification that Nightly/Aurora builds automatically send Telemetry data back to Mozilla. It is only shown in those versions. "It" refers to brandShortName. -->
-<!ENTITY warningDesc.telemetryDesc  "იგი ავტომატურად უგზავნის &vendorShortName; -ს ინფორმაციას წარმადობის, აპარატურის, მორგებისა და გამოყენების შესახებ &brandShortName; -ის გასაუმჯობესებლად.">
+<!ENTITY warningDesc.telemetryDesc  "იგი ავტომატურად უგზავნის &vendorShortName;-ს მონაცემებს წარმადობის, აპარატურის, მორგებისა და გამოყენების შესახებ &brandShortName;-ის გასაუმჯობესებლად.">
 
 <!-- LOCALIZATION NOTE (community.exp.*) This paragraph is shown in "experimental" builds, i.e. Nightly and Aurora builds, instead of the other "community.*" strings below. -->
 <!ENTITY community.exp.start        "">
@@ -30,7 +30,7 @@
 <!ENTITY community.exp.middle       " არის ">
 <!-- LOCALIZATION NOTE (community.exp.creditslink): This is a link title that links to about:credits. -->
 <!ENTITY community.exp.creditsLink  "საერთაშორისო ერთობა">
-<!ENTITY community.exp.end          " რომელიც მუშაობს იმისთვის, რომ ინტერნეტი დარჩეს გახსნილი, საჯარო და ყველასთვის ხელმისაწვდომი.">
+<!ENTITY community.exp.end          ", რომელიც მუშაობს იმისთვის, რომ ინტერნეტი დარჩეს გახსნილი, საჯარო და საყოველთაოდ ხელმისაწვდომი.">
 
 <!ENTITY community.start2           "&brandShortName;-ის შემქმნელია ">
 <!-- LOCALIZATION NOTE (community.mozillaLink): This is a link title that links to http://www.mozilla.org/. -->
@@ -38,14 +38,14 @@
 <!ENTITY community.middle2          " — ">
 <!-- LOCALIZATION NOTE (community.creditsLink): This is a link title that links to about:credits. -->
 <!ENTITY community.creditsLink      "საერთაშორისო ერთობა">
-<!ENTITY community.end3             " რომელიც მუშაობს იმისთვის, რომ ინტერნეტი დარჩეს გახსნილი, საჯარო და ყველასთვის ხელმისაწვდომი.">
+<!ENTITY community.end3             ", რომელიც მუშაობს იმისთვის, რომ ინტერნეტი დარჩეს გახსნილი, საჯარო და საყოველთაოდ ხელმისაწვდომი.">
 
 <!ENTITY helpus.start               "გსურთ დახმარება? ">
-<!-- LOCALIZATION NOTE (helpus.donateLink): This is a link title that links to https://sendto.mozilla.org/page/contribute/Give-Now?source=mozillaorg_default_footer&ref=firefox_about&utm_campaign=firefox_about&utm_source=firefox&utm_medium=referral&utm_content=20140929_FireFoxAbout. -->
+<!-- LOCALIZATION NOTE (helpus.donateLink): This is a link title that links to https://donate.mozilla.org/?utm_source=firefox&utm_medium=referral&utm_campaign=firefox_about&utm_content=firefox_about. -->
 <!ENTITY helpus.donateLink          "გააკეთეთ შემოწირულება">
 <!ENTITY helpus.middle              " ან ">
 <!-- LOCALIZATION NOTE (helpus.getInvolvedLink): This is a link title that links to http://www.mozilla.org/contribute/. -->
-<!ENTITY helpus.getInvolvedLink     "შემოგვიერთდი!">
+<!ENTITY helpus.getInvolvedLink     "შემოგვიერთდით!">
 <!ENTITY helpus.end                 "">
 
 <!ENTITY releaseNotes.link          "რა არის ახალი">
@@ -62,7 +62,7 @@
 <!-- LOCALIZATION NOTE (update.checkingForUpdates): try to make the localized text short (see bug 596813 for screenshots). -->
 <!ENTITY update.checkingForUpdates  "მიმდინარეობს განახლებების შემოწმება...">
 <!-- LOCALIZATION NOTE (update.noUpdatesFound): try to make the localized text short (see bug 596813 for screenshots). -->
-<!ENTITY update.noUpdatesFound      "&brandShortName; უახლესი ვერსიაა">
+<!ENTITY update.noUpdatesFound      "&brandShortName; განახლებულია">
 <!-- LOCALIZATION NOTE (update.adminDisabled): try to make the localized text short (see bug 596813 for screenshots). -->
 <!ENTITY update.adminDisabled       "განახლებები აკრძალულია თქვენი სისტემური ადმინისტრატორის მიერ">
 <!-- LOCALIZATION NOTE (update.otherInstanceHandlingUpdates): try to make the localized text short -->
@@ -92,7 +92,7 @@
      why the system is no longer supported. As this is all in one line, try to
      make the localized text short (see bug 843497 for screenshots). -->
 <!ENTITY update.unsupported.start    "თქვენ ამ სისტემაზე დამატებითი განახლებების შესრულებაც შეგიძლიათ. ">
-<!ENTITY update.unsupported.linkText "გაიგეთ მეტი">
+<!ENTITY update.unsupported.linkText "ვრცლად">
 <!ENTITY update.unsupported.end      "">
 
 <!-- LOCALIZATION NOTE (update.downloading.start,update.downloading.end): update.downloading.start and
@@ -103,7 +103,7 @@
 <!ENTITY update.downloading.start   "განახლების ჩამოტვირთვა — ">
 <!ENTITY update.downloading.end     "">
 
-<!ENTITY update.applying            "განახლების გააქტიურება...">
+<!ENTITY update.applying            "განახლების ამოქმედება…">
 
 <!-- LOCALIZATION NOTE (channel.description.start,channel.description.end): channel.description.start and
      channel.description.end create one sentence, with the current channel label inserted in between.

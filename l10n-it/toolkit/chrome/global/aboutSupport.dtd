@@ -67,7 +67,7 @@
 <!ENTITY aboutSupport.jsIncrementalGC "GC incrementale">
 <!ENTITY aboutSupport.a11yTitle "Accessibilità">
 <!ENTITY aboutSupport.a11yActivated "Attivato">
-<!ENTITY aboutSupport.a11yForceDisabled "Impedisci accessibilità">
+<!ENTITY aboutSupport.a11yForceDisabled "Blocca servizi accessibilità">
 <!ENTITY aboutSupport.a11yHandlerUsed "Handler accessibilità utilizzato">
 <!ENTITY aboutSupport.a11yInstantiator "Istanziatore accessibilità">
 <!ENTITY aboutSupport.libraryVersionsTitle "Versioni librerie">
@@ -106,3 +106,12 @@
 <!ENTITY aboutSupport.mediaDeviceChannels "Canali">
 <!ENTITY aboutSupport.mediaDeviceRate "Frequenza">
 <!ENTITY aboutSupport.mediaDeviceLatency "Latenza">
+<!ENTITY aboutSupport.intlTitle "Internazionalizzazione e localizzazione">
+<!ENTITY aboutSupport.intlAppTitle "Impostazioni dell’applicazione">
+<!ENTITY aboutSupport.intlLocalesRequested "Lingue richieste">
+<!ENTITY aboutSupport.intlLocalesAvailable "Lingue disponibili">
+<!ENTITY aboutSupport.intlLocalesSupported "Lingue applicazione">
+<!ENTITY aboutSupport.intlLocalesDefault "Lingua predefinita">
+<!ENTITY aboutSupport.intlOSTitle "Sistema operativo">
+<!ENTITY aboutSupport.intlOSPrefsSystemLocales "Lingue del sistema">
+<!ENTITY aboutSupport.intlRegionalPrefs "Impostazioni internazionali">

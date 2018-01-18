@@ -85,6 +85,9 @@
 <!ENTITY editRewrapCmd.key "R">
 <!ENTITY renameAttachmentCmd.label "Snifel isem n tceqquft yeddan…">
 <!ENTITY renameAttachmentCmd.accesskey "f">
+<!ENTITY reorderAttachmentsCmd.label "Ales asmizzwer n ifuyla yeddan…">
+<!ENTITY reorderAttachmentsCmd.accesskey "s">
+<!ENTITY reorderAttachmentsCmd.key "x">
 <!ENTITY selectAllCmd.label "Fren Imaṛṛa">
 <!ENTITY selectAllCmd.key "A">
 <!ENTITY selectAllCmd.accesskey "I">
@@ -102,6 +105,33 @@
 <!ENTITY findPrevCmd.accesskey "d">
 <!ENTITY findPrevCmd.key "G">
 <!ENTITY findPrevCmd.key2 "VK_F3">
+
+<!-- Reorder Attachment Panel -->
+<!ENTITY reorderAttachmentsPanel.label "Smizwer imeddayen">
+<!ENTITY moveAttachmentTopPanelBtn.label "Senkez s afella">
+<!ENTITY moveAttachmentTopPanelBtn.accesskey "T">
+<!ENTITY moveAttachmentUpPanelBtn.label "Ali">
+<!ENTITY moveAttachmentUpPanelBtn.accesskey "U">
+<!ENTITY moveAttachmentBundleUpPanelBtn.label "Senkez akk">
+<!ENTITY moveAttachmentBundleUpPanelBtn.accesskey "v">
+<!ENTITY moveAttachmentDownPanelBtn.label "Ader">
+<!ENTITY moveAttachmentDownPanelBtn.accesskey "D">
+<!ENTITY moveAttachmentBottomPanelBtn.label "Senkez s adda">
+<!ENTITY moveAttachmentBottomPanelBtn.accesskey "B">
+<!-- LOCALIZATION NOTE (sortAttachmentsTogglePanelBtn.AZ.label):
+     Please ensure that this translation matches
+     sortAttachmentsTogglePanelBtn.ZA.label, except for the sort direction. -->
+<!-- LOCALIZATION NOTE (sortAttachmentsTogglePanelBtn.AZ.accesskey):
+     This accesskey should be the same like
+     sortAttachmentsTogglePanelBtn.ZA.accesskey, and it should be taken from
+     the "Sort Selection:" part of the label, not from the sort direction part. -->
+
+<!-- LOCALIZATION NOTE (sortAttachmentsPanelBtn.Sort.AZ.label):
+     Please ensure that this translation matches
+     sortAttachmentsPanelBtn.Sort.ZA.label, except for the sort direction. -->
+<!-- LOCALIZATION NOTE (sortAttachmentsPanelBtn.SortSelection.AZ.label):
+     Please ensure that this translation matches
+     sortAttachmentsPanelBtn.SortSelection.ZA.label, except for the sort direction. -->
 
 <!-- View Menu -->
 <!ENTITY viewMenu.label "Sken">
@@ -283,6 +313,7 @@
 <!ENTITY removeAttachment.accesskey "d">
 <!ENTITY renameAttachment.label "Snifel isem…">
 <!ENTITY renameAttachment.accesskey "n">
+<!ENTITY reorderAttachments.label "Smizwer imeddayen…">
 <!ENTITY selectAll.label "Fren Imaṛṛa">
 <!ENTITY selectAll.accesskey "I">
 <!ENTITY attachFile.label "Seddu afaylu (i-a)…">

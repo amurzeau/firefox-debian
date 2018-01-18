@@ -7,18 +7,29 @@
 <!ENTITY engine.bookmarks.label     "Sinedoù">
 <!ENTITY engine.bookmarks.accesskey "S">
 <!ENTITY engine.tabs.label2         "Digeriñ ivinelloù">
+<!ENTITY engine.tabs.title          "Ur roll eus ar pezh a zo digor war an holl drevnadoù goubredet">
 <!ENTITY engine.tabs.accesskey      "D">
 <!ENTITY engine.history.label       "Roll istor">
 <!ENTITY engine.history.accesskey   "R">
 <!ENTITY engine.logins.label        "Titouroù kennaskañ">
+<!ENTITY engine.logins.title        "Anvioù implijer ha gerioù-tremen enrollet ganeoc'h">
 <!ENTITY engine.logins.accesskey    "T">
+<!-- On Windows we use the term "Options" to describe settings, but
+     on Linux and Mac OS X we use "Preferences" - carry that distinction
+     over into this string, used as the checkbox which indicates if prefs are synced
+-->
+<!ENTITY engine.prefsWin.label      "Dibarzhioù">
 <!ENTITY engine.prefs.label         "Gwellvezioù">
 <!ENTITY engine.prefs.accesskey     "G">
+<!ENTITY engine.prefs.title         "Arventennoù hollek, buhez prevez ha diogelroez kemmet ganeoc'h">
 <!ENTITY engine.addons.label        "Askouezhioù">
+<!ENTITY engine.addons.title        "Askouezhioù ha neuzioù evit Firefox war burev">
 <!ENTITY engine.addons.accesskey    "A">
 <!ENTITY engine.addresses.label     "Chomlec'hioù">
+<!ENTITY engine.addresses.title     "Chomlec'hioù post enrollet (burev hepken)">
 <!ENTITY engine.addresses.accesskey "C">
 <!ENTITY engine.creditcards.label   "Kartennoù kred">
+<!ENTITY engine.creditcards.title   "Anvioù, niveroù ha deiziadoù diamzeriñ (burev hepken)">
 <!ENTITY engine.creditcards.accesskey "K">
 
 <!-- Device Settings -->

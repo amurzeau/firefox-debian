@@ -31,26 +31,26 @@
 <!ENTITY  microphoneSettingsButton.label                        "সেটিং…">
 <!ENTITY  microphoneSettingsButton.accesskey                    "t">
 
-<!ENTITY  fontsAndColors.label        "ফন্ট এবং রং">
+<!ENTITY  fontsAndColors.label        "ফন্ট ও রঙ">
 
 <!ENTITY  defaultFont2.label          "ডিফল্ট ফন্ট">
 <!ENTITY  defaultFont2.accesskey      "D">
 <!ENTITY  defaultSize2.label          "আকার">
 <!ENTITY  defaultSize2.accesskey      "S">
 
-<!ENTITY  advancedFonts.label         "A উচ্চপর্যায়ের...">
+<!ENTITY  advancedFonts.label         "উচ্চপর্যায়...">
 <!ENTITY  advancedFonts.accesskey     "A">
 
-<!ENTITY  colors.label                "রং... C">
+<!ENTITY  colors.label                "রঙ...">
 <!ENTITY  colors.accesskey            "C">
 
 
 <!ENTITY language2.label              "ভাষা">
 <!ENTITY chooseLanguage.label         "পাতা প্রদর্শনে পছন্দসই ভাষা নির্বাচন করুন">
-<!ENTITY chooseButton.label           "নির্বাচন… o">
+<!ENTITY chooseButton.label           "নির্বাচন…">
 <!ENTITY chooseButton.accesskey       "o">
 
-<!ENTITY translateWebPages.label      "ওয়েব বিষয়বস্তু অনুবাদ করুন T">
+<!ENTITY translateWebPages.label      "ওয়েব কন্টেন্ট অনুবাদ করুন T">
 <!ENTITY translateWebPages.accesskey  "T">
 <!ENTITY translateExceptions.label    "ব্যতিক্রম... x">
 <!ENTITY translateExceptions.accesskey "x">
@@ -63,9 +63,9 @@
   -  browser/translation.dtd
   -->
 <!ENTITY translation.options.attribution.beforeLogo "অনুবাদ করেছেন">
-<!ENTITY translation.options.attribution.afterLogo "‍">
+<!ENTITY translation.options.attribution.afterLogo "">
 
-<!ENTITY  drmContent2.label              "Digital Rights Management (DRM) কন্টেন্ট">
+<!ENTITY  drmContent2.label              "ডিজিটাল অধিকার ব্যবস্থাপনা (DRM) কন্টেন্ট">
 
 <!ENTITY  playDRMContent2.label          "DRM-নিয়ন্ত্রিত কন্টেন্ট প্লে করুন">
 <!ENTITY  playDRMContent2.accesskey      "P">

@@ -21,7 +21,7 @@
 <!-- Tab context menu -->
 <!ENTITY  reloadTab.label                    "ટૅબને પુન:લોડ કરો">
 <!ENTITY  reloadTab.accesskey                "R">
-<!ENTITY  reloadAllTabs.label                "બધા ટૅબને પુન:લોડ કરો">
+<!ENTITY  reloadAllTabs.label                "બધા ટૅબ્સને પુન:લોડ કરો">
 <!ENTITY  reloadAllTabs.accesskey            "A">
 <!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
 a tab (i.e. it is a verb, not adjective). -->
@@ -30,9 +30,9 @@ a tab (i.e. it is a verb, not adjective). -->
 <!-- LOCALIZATION NOTE (closeTabsToTheEnd.label): This should indicate the
 direction in which tabs are closed, i.e. locales that use RTL mode should say
 left instead of right. -->
-<!ENTITY  closeTabsToTheEnd.label            "જમણેથી ટૅબ બંધ કરો">
+<!ENTITY  closeTabsToTheEnd.label            "જમણેથી ટૅબ્સ બંધ કરો">
 <!ENTITY  closeTabsToTheEnd.accesskey        "i">
-<!ENTITY  closeOtherTabs.label               "બીજા ટૅબને બંધ કરો">
+<!ENTITY  closeOtherTabs.label               "બીજા ટૅબ્સને બંધ કરો">
 <!ENTITY  closeOtherTabs.accesskey           "o">
 
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
@@ -51,16 +51,17 @@ can reach it easily. -->
 <!ENTITY  sendLinkToDevice.label             "ઉપકરણ પર લિંક મોકલો">
 <!ENTITY  sendLinkToDevice.accesskey         "D">
 <!ENTITY  sendToDeviceFeedback.label         "મોકલ્યું!">
+<!ENTITY  sendToDeviceOfflineFeedback.label  "કતારબદ્ધ (ઑફલાઇન)">
 <!ENTITY  moveToNewWindow.label              "નવી વિન્ડોમાં ખસેડો">
 <!ENTITY  moveToNewWindow.accesskey          "W">
-<!ENTITY  bookmarkAllTabs.label              "બધા ટૅબને બુકમાર્ક કરો…">
+<!ENTITY  bookmarkAllTabs.label              "બધા ટૅબ્સને બુકમાર્ક કરો…">
 <!ENTITY  bookmarkAllTabs.accesskey          "T">
 <!ENTITY  undoCloseTab.label                 "બંધ કરેલ ટૅબને ફરીથી શરૂ કરો">
 <!ENTITY  undoCloseTab.accesskey             "U">
 <!ENTITY  closeTab.label                     "ટૅબને બંધ કરો">
 <!ENTITY  closeTab.accesskey                 "C">
 
-<!ENTITY  listAllTabs.label      "બધા ટૅબની યાદી કરો">
+<!ENTITY  listAllTabs.label      "બધા ટૅબ્સની યાદી કરો">
 
 <!ENTITY tabCmd.label "નવી ટૅબ">
 <!ENTITY tabCmd.accesskey "T">
@@ -90,9 +91,9 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY personalbarCmd.accesskey "B">
 <!ENTITY bookmarksToolbarItem.label "બુકમાર્ક્સ સાધનપટ્ટી વસ્તુઓ">
 
-<!ENTITY toolbarContextMenu.reloadAllTabs.label "બધા ટૅબને ફરી લાવો">
+<!ENTITY toolbarContextMenu.reloadAllTabs.label "બધા ટૅબ્સને ફરી લાવો">
 <!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "A">
-<!ENTITY toolbarContextMenu.bookmarkAllTabs.label "બધા ટૅબને બુકમાર્ક કરો…">
+<!ENTITY toolbarContextMenu.bookmarkAllTabs.label "બધા ટૅબ્સને બુકમાર્ક કરો…">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "T">
 <!ENTITY toolbarContextMenu.undoCloseTab.label "બંધ ટૅબને ફરી લાવો">
 <!ENTITY toolbarContextMenu.undoCloseTab.accesskey "U">
@@ -121,7 +122,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenCmd.label "પૂર્ણ સ્ક્રીન">
 <!ENTITY fullScreenCmd.accesskey "F">
 <!ENTITY fullScreenCmd.macCommandKey "f">
-<!ENTITY showAllTabsCmd.label "બધા ટૅબને બતાવો">
+<!ENTITY showAllTabsCmd.label "બધા ટૅબ્સને બતાવો">
 <!ENTITY showAllTabsCmd.accesskey "A">
 <!ENTITY toggleReaderMode.key "R">
 
@@ -176,7 +177,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY subscribeToPageMenupopup.label "આ પાનાંમાં ઉમેદવારી નોંધાવો">
 <!ENTITY subscribeToPageMenuitem.label "આ પાનાંમાં ઉમેદવારી નોંધાવો…">
-<!ENTITY addCurPagesCmd.label "બધી ટૅબ બુકમાર્ક કરો...">
+<!ENTITY addCurPagesCmd.label "બધા ટૅબ્સને બુકમાર્ક કરો…">
 <!ENTITY showAllBookmarks2.label "બધા બુકમાર્ક્સને બતાવો">
 <!ENTITY recentBookmarks.label "તાજેતરમાં કરેલ બુકમાર્ક">
 <!ENTITY otherBookmarksCmd.label "અન્ય બુકમાર્ક્સ">
@@ -188,13 +189,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hideRecentlyBookmarked.accesskey "H">
 
 <!ENTITY backCmd.label                "પાછળ">
+<!ENTITY backCmd.accesskey            "B">
 <!ENTITY backButton.tooltip           "એક પાનું પાછળ જાવ">
 <!ENTITY forwardCmd.label             "આગળ">
+<!ENTITY forwardCmd.accesskey         "F">
 <!ENTITY forwardButton.tooltip        "એક પાનું આગળ જાવ">
 <!ENTITY backForwardButtonMenu.tooltip "ઇતિહાસ બતાવવા માટે જમણું ક્લિક કરો અથવા નીચે ખેંચો">
 <!ENTITY backForwardButtonMenuMac.tooltip "ઇતિહાસ બતાવવા માટે નીચે ખેંચો">
 <!ENTITY reloadCmd.label              "પુનઃલાવો">
+<!ENTITY reloadCmd.accesskey          "R">
 <!ENTITY stopCmd.label                "અટકાવો">
+<!ENTITY stopCmd.accesskey            "S">
 <!ENTITY stopCmd.macCommandKey        ".">
 <!ENTITY goEndCap.tooltip             "સ્થાન પટ્ટીમાં સરનામા પર જાવ">
 <!ENTITY printButton.label            "છાપો">
@@ -231,6 +236,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "તમે આ વેબસાઇટ માટે સતત સંગ્રહ અવરોધિત કર્યા છે.">
 
 <!ENTITY urlbar.popupBlocked.tooltip             "તમે આ વેબસાઇટ માટે પોપ-અપ્સને અવરોધિત કર્યા છે.">
+
+<!ENTITY urlbar.canvasBlocked.tooltip            "તમે આ વેબસાઇટ માટે કેનવાસ ડેટા નિષ્કર્ષણને અવરોધિત કર્યો છે.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "ઇતિહાસ બતાવો">
 
@@ -343,7 +350,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY historyMenu.label "ઇતિહાસ">
 <!ENTITY historyMenu.accesskey "s">
-<!ENTITY historyUndoMenu.label "છેલ્લે બધ થયેલ ટૅબ">
+<!ENTITY historyUndoMenu.label "છેલ્લે બધ થયેલ ટૅબ્સ">
 <!-- LOCALIZATION NOTE (historyUndoWindowMenu): see bug 394759 -->
 <!ENTITY historyUndoWindowMenu.label "છેલ્લે બંધ થયેલ વિન્ડો">
 <!ENTITY historyRestoreLastSession.label "પહેલાનાં સત્રને પુન:સંગ્રહો">
@@ -355,6 +362,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuCustomize.tooltip "મેનુ અને સાધનપટ્ટીને વૈવિધ્યપૂર્ણ બનાવો">
 <!ENTITY appMenuCustomizeExit.label "વૈવિધ્યપૂર્ણ કરવાનું બંધ કરો">
 <!ENTITY appMenuCustomizeExit.tooltip "વૈવિધ્યપૂર્ણ કરવાનું સમાપ્ત કરો">
+
 <!ENTITY appMenuHistory.showAll.label "બધા ઇતિહાસને બતાવો">
 <!ENTITY appMenuHistory.clearRecent.label "તાજેતરનાં ઇતિહાસને સાફ કરો…">
 <!ENTITY appMenuHistory.restoreSession.label "પહેલાનાં સત્રને પુન:સંગ્રહો">
@@ -385,9 +393,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "અહીં અન્ય ઉપકરણોથી તમારા ટેબ્સ જોવા માંગો છો?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "પસંદગીઓનો સમન્વયન">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "તમારા અન્ય ઉપકરણોમાંથી ટેબ્સની સૂચિ જોવા માટે સાઇન ઇન કરો.">
+<!ENTITY appMenuRemoteTabs.unverified.label "તમારા એકાઉન્ટને ચકાસવાની જરૂર છે.">
 <!ENTITY appMenuRemoteTabs.signin.label "સમન્વયન માટે સાઇન ઇન કરો">
 <!ENTITY appMenuRemoteTabs.managedevices.label "ઉપકરણો સંચાલિત કરો…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "સમન્વિત ટૅબ્સ સાઇડબાર જુઓ">
+
+<!ENTITY appMenuRemoteTabs.connectdevice.label "બીજા ઉપકરણ સાથે જોડાણ કરો">
 
 <!ENTITY appMenuRecentHighlights.label "તાજેતરના હાઈલાઈટ્સ">
 
@@ -564,6 +575,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY setDesktopBackgroundCmd.label      "ડેસ્કટોપ પાશ્વ ભાગ તરીકે સુયોજિત કરો...">
 <!ENTITY setDesktopBackgroundCmd.accesskey  "S">
 <!ENTITY bookmarkPageCmd2.label       "આ પાનું બુકમાર્ક કરો...">
+<!ENTITY bookmarkPageCmd2.accesskey   "m">
 <!ENTITY bookmarkThisLinkCmd.label      "આ કડી બુકમાર્ક કરો...">
 <!ENTITY bookmarkThisLinkCmd.accesskey  "L">
 <!ENTITY bookmarkThisFrameCmd.label      "આ ચોકઠું બુકમાર્ક કરો...">
@@ -750,6 +762,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY editBookmark.done.label                     "પૂર્ણ થયું">
 <!ENTITY editBookmark.removeBookmark.accessKey       "R">
 
+<!-- LOCALIZATION NOTE (identity.securityView.label)
+     This is the header of the security subview in the Site Identity panel. -->
+<!ENTITY identity.securityView.label "સાઇટ સુરક્ષા">
+
 <!ENTITY identity.connectionSecure "સુરક્ષિત જોડાણ">
 <!ENTITY identity.connectionNotSecure "જોડાણ સુરક્ષિત નથી">
 <!ENTITY identity.connectionFile "આ પૃષ્ઠને તમારા કમ્પ્યુટર પર સંગ્રહિત છે.">
@@ -793,7 +809,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
-<!ENTITY tabsToolbar.label "બ્રાઉઝર ટૅબ">
+<!ENTITY tabsToolbar.label "બ્રાઉઝર ટૅબ્સ">
 
 <!-- LOCALIZATION NOTE (syncTabsMenu3.label): This appears in the history menu -->
 <!ENTITY syncTabsMenu3.label     "સમન્વિત કરેલા ટૅબ્સ">
@@ -803,12 +819,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncedTabs.sidebar.noclients.title    "કોઈ સમન્વયિત ટેબ્સ નથી...હજી!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "અહીં અન્ય ઉપકરણોથી તમારા ટેબ્સ જોવા માંગો છો?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "તમારા અન્ય ઉપકરણોમાંથી ટેબ્સની સૂચિ જોવા માટે સાઇન ઇન કરો.">
+<!ENTITY syncedTabs.sidebar.unverified.label   "તમારા એકાઉન્ટને ચકાસવાની જરૂર છે.">
 <!ENTITY syncedTabs.sidebar.notabs.label       "કોઈ ટૅબ્સ ખુલ્લા નથી">
 <!ENTITY syncedTabs.sidebar.openprefs.label    "ખોલો &syncBrand.shortName.label; પસંદગીઓ">
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "તમારા અન્ય ઉપકરણોમાંથી ટેબ્સની સૂચિ જોવા માટે ટેબ સમન્વયન ચાલુ કરો.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "સમન્વયિત ટેબ્સ શોધો">
+
+<!ENTITY syncedTabs.sidebar.connectAnotherDevice  "બીજા ઉપકરણ સાથે જોડાણ કરો">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
                         syncedTabs.context.openAllInTabs.accesskey):
@@ -833,15 +852,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncedTabs.context.managedevices.accesskey          "D">
 
 
-<!ENTITY syncBrand.shortName.label    "સીંક">
+<!ENTITY syncBrand.shortName.label    "સમન્વય">
 
 <!ENTITY syncSignIn.label             "&syncBrand.shortName.label; માં પ્રવેશો…">
 <!ENTITY syncSignIn.accesskey         "Y">
-<!ENTITY syncSyncNowItem.label        "હવે સીંક કરો">
+<!ENTITY syncSyncNowItem.label        "હમણાં સમન્વયિત કરો">
 <!ENTITY syncSyncNowItem.accesskey    "S">
 <!ENTITY syncReAuthItem.label         "&syncBrand.shortName.label; માં પુન:જોડાવો…">
 <!ENTITY syncReAuthItem.accesskey     "R">
-<!ENTITY syncToolbarButton.label      "સીંક">
+<!ENTITY syncToolbarButton.label      "સમન્વય">
 
 <!ENTITY customizeMode.menuAndToolbars.header3 "તમારી મનપસંદ વસ્તુઓ ટૂલબાર અથવા ઓવરફ્લો મેનૂમાં ખેંચો.">
 <!ENTITY customizeMode.menuAndToolbars.empty "વધારે સાધનો ઇચ્છો છો?">
@@ -979,9 +998,20 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "N">
 <!ENTITY updateRestart.panelUI.label2 "અપડેટ કરવા માટે પુનઃપ્રારંભ કરો &brandShorterName;">
 
+<!ENTITY newTabControlled.message "જ્યારે તમે નવી ટૅબ ખોલો છો ત્યારે તમે જોઈ રહ્યાં છો તે પૃષ્ઠનુ એક્સટેન્શન બદલ્યું છે. જો તમે આ ફેરફાર ન ઇચ્છતા હો તો તમે તમારી સેટિંગ્સને પુનઃસ્થાપિત કરી શકો છો.">
+<!ENTITY newTabControlled.header.message "તમારી નવી ટૅબ બદલાઈ ગઈ છે.">
+<!ENTITY newTabControlled.keepButton.label "પરિવર્તનો રાખો">
+<!ENTITY newTabControlled.keepButton.accesskey "K">
+<!ENTITY newTabControlled.restoreButton.label "સેટિંગ્સ પુનઃસ્થાપિત કરો">
+<!ENTITY newTabControlled.restoreButton.accesskey "R">
+
 <!ENTITY pageActionButton.tooltip "પૃષ્ઠ ક્રિયાઓ">
 <!ENTITY pageAction.addToUrlbar.label "સરનામાં બારમાં ઉમેરો">
 <!ENTITY pageAction.removeFromUrlbar.label "સરનામાં બારમાંથી દૂર કરો">
+
+<!ENTITY pageAction.allowInUrlbar.label "સરનામાં બારમાં બતાવો">
+<!ENTITY pageAction.disallowInUrlbar.label "સરનામાં બારમાં બતાવશો નહીં">
+<!ENTITY pageAction.manageExtension.label "એક્સ્ટેંશનનો વહીવટ કરો…">
 
 <!ENTITY pageAction.sendTabToDevice.label "ઉપકરણ પર ટેબ મોકલો">
 <!ENTITY sendToDevice.syncNotReady.label "સમન્વય કરતા ઉપકરણો…">

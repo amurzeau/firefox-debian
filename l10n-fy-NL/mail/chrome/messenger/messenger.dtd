@@ -318,6 +318,7 @@
 <!ENTITY goChatCmd.label "Chat">
 <!ENTITY goChatCmd.accesskey "c">
 <!ENTITY goChatCmd.key "I">
+<!ENTITY goChatCmd2.key "H">
 <!ENTITY prevStarredMsgCmd.label "Berjocht mei stjer">
 <!ENTITY prevStarredMsgCmd.accesskey "s">
 <!ENTITY folderMenu.label "Map">
@@ -459,6 +460,11 @@
 <!ENTITY addressBookCmd.key "b">
 <!ENTITY addons.label "Add-ons">
 <!ENTITY addons.accesskey "A">
+<!ENTITY addonPrefs.label "Add-onopsjes">
+<!ENTITY addonPrefs.accesskey "A">
+<!ENTITY addonPrefsUnix.label "Add-onfoarkarren">
+<!ENTITY addonPrefsUnix.accesskey "f">
+<!ENTITY addonNoPrefs.label "Gjin add-onynstellingen fûn.">
 <!ENTITY activitymanager.label "Aktiviteitebehearder">
 <!ENTITY activitymanager.accesskey "a">
 <!ENTITY imAccountsStatus.label "Chatsteat">
@@ -504,6 +510,8 @@
 <!ENTITY devToolboxCmd.commandkey "i">
 <!ENTITY addonDebugCmd.label "Add-on-debugger">
 <!ENTITY addonDebugCmd.accesskey "A">
+<!ENTITY debugAddonsCmd.label "Add-ons debugge">
+<!ENTITY debugAddonsCmd.accesskey "A">
 <!ENTITY tabsDebugCmd.label "Frame-ynhâlds-debugger">
 <!ENTITY tabsDebugCmd.accesskey "F">
 <!ENTITY errorConsoleCmd.label "Flaterkonsole">

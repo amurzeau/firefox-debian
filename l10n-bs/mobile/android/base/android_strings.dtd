@@ -10,14 +10,14 @@
 <!ENTITY firstrun_privacy_subtext "Privatno pretraživanje sa zaštitom od praćenja blokira pratioce dok pretražujete i neće pamtiti vašu historiju nakon što završite sa pretraživanjem.">
 <!ENTITY firstrun_panel_title_customize "Prilagodi">
 <!ENTITY firstrun_customize_message "Prilagodite &brandShortName; sebi.">
-<!ENTITY firstrun_customize_subtext "Prilagodite &brandShortName; sa dodacima. Blokirajte reklame, dodatje mogućnosti ili izaberite temu koja vam najviše leži.">
+<!ENTITY firstrun_customize_subtext "Prilagodite &brandShortName; sa dodacima. Blokirajte reklame, dodajte mogućnosti ili izaberite temu koja vam najviše leži.">
 <!ENTITY firstrun_bookmarks_title "Historija">
-<!ENTITY firstrun_bookmarks_message "Tvoji favoriti, naprijed i centar">
-<!ENTITY firstrun_bookmarks_subtext "Uzmi rezultate od svojih oznaka i historije kada pretražuješ.">
+<!ENTITY firstrun_bookmarks_message "Vaši favoriti, naprijed i u sredini">
+<!ENTITY firstrun_bookmarks_subtext "Dobijte rezultate iz vaših zabilješki i historije kada pretražujete.">
 <!ENTITY firstrun_data_title "Podatak">
 <!ENTITY firstrun_data_message "Manje podataka, veća ušteda">
 <!ENTITY firstrun_data_subtext2 "Onemogućite slike da bi trošili manje podataka na svakoj stranici koju posjetite.">
-<!ENTITY firstrun_sync_title "Sync">
+<!ENTITY firstrun_sync_title "Sinhronizacija">
 <!ENTITY firstrun_sync_message2 "Nastavite gdje ste stali.">
 <!ENTITY firstrun_sync_subtext2 "Iskoristite Sinhronizaciju da nađete zabilješke, lozinke i druge stvari koje ste sačuvali u &brandShortName; na svim vašim uređajima.">
 <!ENTITY firstrun_signin_message "Povežite se, započnite">
@@ -62,7 +62,7 @@
 <!ENTITY  crash_sorry "Žao nam je">
 <!ENTITY  crash_comment "Dodajte komentar (komentari su javno vidljivi)">
 <!ENTITY  crash_allow_contact2 "Dozvoli &vendorShortName; da me kontaktira vezano za ovaj izvještaj">
-<!ENTITY  crash_email "Vaš email">
+<!ENTITY  crash_email "Vaša e-pošta">
 <!ENTITY  crash_closing_alert "Izađi bez slanja izvještaja o rušenju?">
 <!ENTITY  sending_crash_report "Šaljem izvještaj o rušenju\u2026">
 <!ENTITY  crash_close_label "Zatvori">
@@ -145,8 +145,8 @@
      section in which the user picks the locale in which to display Firefox
      UI. The locale includes both language and region concepts. -->
 <!ENTITY pref_category_language "Jezik">
-<!ENTITY pref_category_language_summary "Promijenite jezik vašeg browsera">
-<!ENTITY pref_browser_locale "Jezik browsera">
+<!ENTITY pref_category_language_summary "Promijenite jezik vašeg pretraživača">
+<!ENTITY pref_browser_locale "Jezik pretraživača">
 
 <!-- Localization note (locale_system_default) : This string indicates that
      Firefox will use the locale currently selected in Android's settings
@@ -207,9 +207,9 @@
 <!ENTITY pref_category_advanced_summary3 "Vrati kartice, uštede na prijenosu podataka, alati za razvoj">
 <!ENTITY pref_category_notifications "Obavijesti">
 <!ENTITY pref_category_notifications_summary "Nove mogućnosti, ažuriranja stranice">
-<!ENTITY pref_developer_remotedebugging_usb "Udaljeno debagiranje preko USB-a">
-<!ENTITY pref_developer_remotedebugging_wifi "Udaljeno debagiranje preko Wi-Fi">
-<!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Wi-Fi debagiranje zahtijeva d vaš uređaj ima instaliran čitač QR koda.">
+<!ENTITY pref_developer_remotedebugging_usb "Udaljeno otklanjanje grešaka putem USB-a">
+<!ENTITY pref_developer_remotedebugging_wifi "Udaljeno otklanjanje grešaka putem Wi-Fi">
+<!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Udaljeno otklanjanje grešaka putem Wi-Fi zahtjeva da vaš uređaj ima instaliranu aplikaciju za čitanje QR kodova.">
 <!ENTITY pref_remember_signons2 "Zapamti prijave">
 <!ENTITY pref_manage_logins "Upravljanje prijavama">
 
@@ -307,7 +307,7 @@
 <!ENTITY tracking_protection_prompt_tip_text "Posjetite postavke privatnosti da saznate više">
 <!ENTITY tracking_protection_prompt_action_button "Razumijem!">
 
-<!ENTITY tab_queue_toast_message3 "Tab spašen u &brandShortName;">
+<!ENTITY tab_queue_toast_message3 "Tab sačuvan u &brandShortName;">
 <!ENTITY tab_queue_toast_action "Otvori odmah">
 <!ENTITY tab_queue_prompt_title "Otvori više linkova?">
 <!ENTITY tab_queue_prompt_text4 "Spasite ih do sljedećeg pokretanja &brandShortName;a.">
@@ -340,7 +340,7 @@
 <!ENTITY pref_clear_private_data2 "Očisti privatne podatke">
 <!-- Localization note (pref_clear_private_data_now_tablet): This action to clear private data is only shown on tablets.
      The action is shown below a header saying "Clear private data"; See pref_clear_private_data -->
-<!ENTITY pref_clear_private_data_now_tablet "Obriši odmah">
+<!ENTITY pref_clear_private_data_now_tablet "Očisti odmah">
 <!ENTITY pref_clear_on_exit_title3 "Očisti privatne podatke prilikom izlaza">
 <!ENTITY pref_clear_on_exit_summary2 "&brandShortName; će automatski brisati vaše podatke svaki put kada izaberete \&quot;Quit\&quot; u glavnom meniju">
 <!ENTITY pref_clear_on_exit_dialog_title "Izaberite podatke za brisanje">
@@ -353,7 +353,7 @@
 <!ENTITY pref_use_system_font_size "Koristi sistemski određenu veličinu fonta">
 <!ENTITY pref_use_system_font_size_summary "Prilagodi sadržaj prema sistemski određenoj veličini fonta">
 
-<!ENTITY pref_media_autoplay_enabled "Dozvoli autoplay">
+<!ENTITY pref_media_autoplay_enabled "Dozvoli automatsku reprodukciju">
 <!ENTITY pref_media_autoplay_enabled_summary "Kontrolišite da li web stranice mogu automatski reproducirati video i drugi medijski sadržaj">
 <!ENTITY pref_zoom_force_enabled "Uvijek omogući zumiranje">
 <!ENTITY pref_zoom_force_enabled_summary "Prisilno zaobiđi postavke da bi mogli zumirati svaku stranicu">
@@ -369,7 +369,7 @@
 <!ENTITY pref_search_suggestions "Prikaži prijedloge pretraživanja">
 <!ENTITY pref_history_search_suggestions "Prikaži historiju pretraživanja">
 <!ENTITY pref_import_options "Opcije uvoza">
-<!ENTITY pref_import_android_summary "Uvezi zabilješke i historiju iz nativnog browsera">
+<!ENTITY pref_import_android_summary "Uvezi zabilješke i historiju iz izvornog pretraživača">
 <!-- Localization note (pref_private_data_openTabs): Open tabs is an option in
      the Clear Private Data  dialog and refers to currently open tabs. -->
 <!ENTITY pref_private_data_openTabs "Otvoreni tabovi">
@@ -379,7 +379,7 @@
 <!ENTITY pref_private_data_cookies2 "Kolačići i aktivne prijave">
 <!ENTITY pref_private_data_passwords2 "Spašene prijave">
 <!ENTITY pref_private_data_cache "Keš">
-<!ENTITY pref_private_data_offlineApps "Offline podaci web stranice">
+<!ENTITY pref_private_data_offlineApps "Vanmrežni podaci web stranice">
 <!ENTITY pref_private_data_siteSettings2 "Postavke stranice">
 <!ENTITY pref_private_data_downloadFiles2 "Preuzimanja">
 <!ENTITY pref_private_data_syncedTabs "Sinhronizovani tabovi">
@@ -390,8 +390,8 @@
 <!ENTITY pref_vendor_faqs "Često postavljena pitanja">
 <!ENTITY pref_vendor_feedback "Dajte povratnu informaciju">
 
-<!ENTITY pref_dialog_set_default "Postavi kao glavno">
-<!ENTITY pref_dialog_default "Izvorno">
+<!ENTITY pref_dialog_set_default "Postavi kao zadano">
+<!ENTITY pref_dialog_default "Zadano">
 <!ENTITY pref_dialog_remove "Ukloni">
 <!ENTITY pref_dialog_activitystream_header_content "Dodatni sadržaj">
 <!ENTITY pref_dialog_activitystream_recentBookmarks "Nedavne zabilješke">
@@ -403,7 +403,7 @@
 <!ENTITY pref_panels_hide "Sakrij">
 <!ENTITY pref_panels_reorder "Promijeni redoslijed">
 <!ENTITY pref_panels_move_up "Pomjeri gore">
-<!ENTITY pref_panels_move_down "Pomjeri dolje">
+<!ENTITY pref_panels_move_down "Pomjeri dole">
 
 <!ENTITY datareporting_notification_title "&brandShortName; statistika i podaci">
 <!ENTITY datareporting_notification_action "Izaberite šta ćete dijeliti">
@@ -465,7 +465,7 @@
 <!ENTITY tabs_normal "Tabovi">
 <!ENTITY tabs_private "Privatno">
 <!ENTITY set_image_fail "Ne mogu postaviti sliku">
-<!ENTITY set_image_path_fail "Ne mogu spasiti sliku">
+<!ENTITY set_image_path_fail "Ne mogu sačuvati sliku">
 <!ENTITY set_image_chooser_title "Postavi sliku kao">
 
 <!-- Localization note (find_text, find_prev, find_next, find_close) : These strings are used
@@ -478,7 +478,7 @@
 <!-- Localization note (media_sending_to, media_play, media_pause, media_stop) : These strings are used
      as alternate text for accessibility. They are not visible in the UI. -->
 <!ENTITY media_sending_to "Šaljem na uređaj">
-<!ENTITY media_play "Play">
+<!ENTITY media_play "Pokreni">
 <!ENTITY media_pause "Pauza">
 <!ENTITY media_stop "Zaustavi">
 
@@ -508,7 +508,7 @@
 <!-- Localization note (pinned_page_to_top_sites, unpinned_page_from_top_sites): These strings are shown in a snackbar
      after the user pins/unpins the currently displayed page from top sites. -->
 <!ENTITY pinned_page_to_top_sites "Stranica zakačena na najpopularnije stranice">
-<!ENTITY unpinned_page_from_top_sites "Stranica otkačena sa najpopularnijih stranica">
+<!ENTITY unpinned_page_from_top_sites "Stranica otkačena s najpopularnijih stranica">
 
 <!-- Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
      where normally a username would be displayed. In this case, no username was found, and this placeholder
@@ -519,7 +519,7 @@
 <!ENTITY doorhanger_login_edit_password_hint "Lozinka">
 <!ENTITY doorhanger_login_edit_toggle "Prikaži lozinku">
 <!ENTITY doorhanger_login_select_message "Kopiraj lozinku iz &formatS;?">
-<!ENTITY doorhanger_login_select_toast_copy "Lozinka kopirana u clipboard">
+<!ENTITY doorhanger_login_select_toast_copy "Lozinka kopirana u međuspremnik">
 <!ENTITY doorhanger_login_select_action_text "Izaberite drugu prijavu">
 <!ENTITY doorhanger_login_select_title "Kopiraj lozinku iz">
 
@@ -541,6 +541,8 @@
      bookmarks, or reading list. -->
 <!ENTITY page_removed "Stranica uklonjena">
 
+<!ENTITY folder_removed "Direktorij uklonjen">
+
 <!ENTITY bookmark_edit_title "Uredi zabilješku">
 <!ENTITY bookmark_edit_folder_title "Uredi direktorij">
 <!ENTITY bookmark_edit_name "Naziv">
@@ -552,7 +554,7 @@
      dialog that appears after selecting the "Edit Site Settings" context menu item. -->
 <!ENTITY site_settings_title3       "Postavke stranice">
 <!ENTITY site_settings_cancel       "Otkaži">
-<!ENTITY site_settings_clear        "Obriši">
+<!ENTITY site_settings_clear        "Očisti">
 
 <!-- Localization note : These strings are used as alternate text for accessibility.
      They are not visible in the UI. -->
@@ -563,13 +565,13 @@
 <!ENTITY masterpassword_password "Lozinka">
 <!ENTITY masterpassword_confirm "Potvrdite lozinku">
 
-<!ENTITY button_ok "OK">
+<!ENTITY button_ok "U redu">
 <!ENTITY button_cancel "Otkaži">
 <!ENTITY button_yes "Da">
 <!ENTITY button_no "Ne">
-<!ENTITY button_clear_data "Obriši podatke">
+<!ENTITY button_clear_data "Očisti podatke">
 <!ENTITY button_set "Postavi">
-<!ENTITY button_clear "Obriši">
+<!ENTITY button_clear "Očisti">
 <!ENTITY button_copy "Kopiraj">
 
 <!ENTITY home_top_sites_title "Najpopularnije stranice">
@@ -581,13 +583,13 @@
      with the page title defined in aboutHome.dtd -->
 <!ENTITY home_title "&brandShortName; početna stranica">
 <!ENTITY home_history_title "Historija">
-<!ENTITY home_synced_devices_smartfolder "Sinhronizirani uređaji">
+<!ENTITY home_synced_devices_smartfolder "Sinhronizovani uređaji">
 <!ENTITY home_synced_devices_number "&formatD; uređaja">
 <!-- Localization note (home_synced_devices_one_device): This is the singular version of home_synced_devices_number, referring to the number of devices a user has synced. -->
 <!ENTITY home_synced_devices_one "1 uređaj">
 <!ENTITY home_history_back_to2 "Nazad do pune historije">
-<!ENTITY home_clear_history_button "Obriši historiju surfanja">
-<!ENTITY home_clear_history_confirm "Da li ste sigurni da želite obrisati vašu historiju?">
+<!ENTITY home_clear_history_button "Očisti historiju pretraživanja">
+<!ENTITY home_clear_history_confirm "Da li ste sigurni da želite očistiti vašu historiju?">
 <!ENTITY home_bookmarks_empty "Zabilješke koje spasite se pojave ovdje.">
 <!ENTITY home_closed_tabs_title2 "Nedavno zatvoreni tabovi">
 <!ENTITY home_last_tabs_empty "Vaši nedavno korišteni tabovi se pojave ovdje.">
@@ -663,16 +665,16 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY doorhanger_tracking_title2 "Zaštita od praćenja">
 <!ENTITY doorhanger_tracking_state_enabled "Omogućeno">
 <!ENTITY doorhanger_tracking_state_disabled "Onemogućeno">
-<!ENTITY doorhanger_tracking_message_enabled1 "Blokirani su pokušaju praćenja vašeg online ponašanja.">
-<!ENTITY doorhanger_tracking_message_disabled2 "Ova stranica sadrži elemente koji bi mogli pratiti vaše surfanje.">
+<!ENTITY doorhanger_tracking_message_enabled1 "Blokirani su pokušaji praćenja vašeg ponašanja na mreži.">
+<!ENTITY doorhanger_tracking_message_disabled2 "Ova stranica sadrži elemente koji bi mogli pratiti vaše pretraživanje.">
 
 <!-- Common mixed and tracking content strings in site identity popup -->
 <!ENTITY learn_more "Saznajte više">
 <!ENTITY enable_protection "Omogući zaštitu">
 <!ENTITY disable_protection "Onemogući zaštitu">
 
-<!ENTITY private_data_success "Privatni podaci obrisani">
-<!ENTITY private_data_fail "Neki privatni podaci nisu mogli biti obrisani">
+<!ENTITY private_data_success "Privatni podaci očišćeni">
+<!ENTITY private_data_fail "Neki privatni podaci nisu mogli biti očišćeni">
 
 <!ENTITY bookmarkhistory_button_import "Uvoz">
 <!ENTITY bookmarkhistory_import_both "Uvoz zabilješki i historije iz Androida">
@@ -721,12 +723,12 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY guest_session_dialog_continue "Nastavi">
 <!ENTITY guest_session_dialog_cancel "Otkaži">
 <!ENTITY new_guest_session_title "&brandShortName; će se restartovati">
-<!ENTITY new_guest_session_text2 "Osoba koja koristi uređaj neće moći vidjeti vaše privatne podatke o surfanju (poput spašenih prijava, historije ili zabilješki).\n\nKada vaš gost završi, njihovi podaci o surfanju će biti obrisani, a vaša sesija vraćena.">
-<!ENTITY guest_browsing_notification_title "Gostujuće surfanje je omogućeno">
+<!ENTITY new_guest_session_text2 "Osoba koja koristi uređaj neće moći vidjeti vaše privatne podatke o pretraživanju (poput spašenih prijava, historije ili zabilješki).\n\nKada vaš gost završi, njihovi podaci o pretraživanju će biti izbrisani, a vaša sesija vraćena.">
+<!ENTITY guest_browsing_notification_title "Gostujuće pretraživanje je omogućeno">
 <!ENTITY guest_browsing_notification_text "Dodirnite za izlaz">
 
 <!ENTITY exit_guest_session_title "&brandShortName; će se restartovati">
-<!ENTITY exit_guest_session_text "Podaci o surfanju iz ove sesije će biti obrisani.">
+<!ENTITY exit_guest_session_text "Podaci o pretraživanju iz ove sesije će biti izbrisani.">
 
 <!-- Miscellaneous -->
 <!-- LOCALIZATION NOTE (ellipsis): This text is appended to a piece of text that does not fit in the

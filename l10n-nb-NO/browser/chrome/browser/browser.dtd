@@ -51,6 +51,7 @@ can reach it easily. -->
 <!ENTITY  sendLinkToDevice.label             "Send lenke til enhet">
 <!ENTITY  sendLinkToDevice.accesskey         "e">
 <!ENTITY  sendToDeviceFeedback.label         "Sendt!">
+<!ENTITY  sendToDeviceOfflineFeedback.label  "I kø (frakoblet)">
 <!ENTITY  moveToNewWindow.label              "Flytt til et nytt vindu">
 <!ENTITY  moveToNewWindow.accesskey          "t">
 <!ENTITY  bookmarkAllTabs.label              "Bokmerk alle faner …">
@@ -188,13 +189,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hideRecentlyBookmarked.accesskey "S">
 
 <!ENTITY backCmd.label                "Tilbake">
+<!ENTITY backCmd.accesskey            "b">
 <!ENTITY backButton.tooltip           "Gå tilbake en side">
 <!ENTITY forwardCmd.label             "Frem">
+<!ENTITY forwardCmd.accesskey         "F">
 <!ENTITY forwardButton.tooltip        "Gå frem en side">
 <!ENTITY backForwardButtonMenu.tooltip "Høyreklikk eller trekk ned for å vise historikk">
 <!ENTITY backForwardButtonMenuMac.tooltip "Trekk ned for å vise historikk">
 <!ENTITY reloadCmd.label              "Oppdater">
+<!ENTITY reloadCmd.accesskey          "r">
 <!ENTITY stopCmd.label                "Stopp">
+<!ENTITY stopCmd.accesskey            "S">
 <!ENTITY stopCmd.macCommandKey        ".">
 <!ENTITY goEndCap.tooltip             "Gå til adressen i adresselinjen">
 <!ENTITY printButton.label            "Skriv ut">
@@ -205,7 +210,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.defaultNotificationAnchor.tooltip         "Åpne meldingspanel">
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "Åpne panel for stedsforespørsel">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "Åpne meldingspanel for utvidelsesinstallasjon">
-<!ENTITY urlbar.canvasNotificationAnchor.tooltip          "Håndter rettigheter for canvas-utdraging">
+<!ENTITY urlbar.canvasNotificationAnchor.tooltip          "Håndter rettigheter for canvas-datautdraging">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "Åpne meldingspanel for frakoblet data">
 <!ENTITY urlbar.passwordNotificationAnchor.tooltip        "Åpne meldingspanel for lagring av passord">
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Administrer bruk av programtillegg">
@@ -231,6 +236,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Du har blokkert vedvarende lagring for denne nettsiden.">
 
 <!ENTITY urlbar.popupBlocked.tooltip             "Du har blokkert sprettoppvinduer for dette nettstedet.">
+
+<!ENTITY urlbar.canvasBlocked.tooltip            "Du har blokkert canvas-datauthenting for dette nettstedet.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Vis historikk">
 
@@ -355,6 +362,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuCustomize.tooltip "Tilpass meny og verktøylinjer">
 <!ENTITY appMenuCustomizeExit.label "Avslutt tilpasning">
 <!ENTITY appMenuCustomizeExit.tooltip "Fullfør tilpasning">
+
 <!ENTITY appMenuHistory.showAll.label "Vis all historikk">
 <!ENTITY appMenuHistory.clearRecent.label "Tøm nylig historikk …">
 <!ENTITY appMenuHistory.restoreSession.label "Gjenopprett forrige programøkt">
@@ -385,9 +393,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Vil du se faner fra de andre enhetene dine her?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Synkroniseringsinnstillinger">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Logg inn for å vise en liste over faner fra andre enheter.">
+<!ENTITY appMenuRemoteTabs.unverified.label "Kontoen din må verifiseres.">
 <!ENTITY appMenuRemoteTabs.signin.label "Logg inn på Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Administrer enheter …">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Vis sidestolpe med synkroniserte faner">
+
+<!ENTITY appMenuRemoteTabs.connectdevice.label "Koble til en annen enhet">
 
 <!ENTITY appMenuRecentHighlights.label "Siste høydepunkter">
 
@@ -564,6 +575,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY setDesktopBackgroundCmd.label      "Bruk som skrivebordsbakgrunn …">
 <!ENTITY setDesktopBackgroundCmd.accesskey  "m">
 <!ENTITY bookmarkPageCmd2.label       "Bokmerk denne siden">
+<!ENTITY bookmarkPageCmd2.accesskey   "m">
 <!ENTITY bookmarkThisLinkCmd.label      "Bokmerk denne lenken">
 <!ENTITY bookmarkThisLinkCmd.accesskey  "B">
 <!ENTITY bookmarkThisFrameCmd.label      "Bokmerk denne rammen">
@@ -750,6 +762,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY editBookmark.done.label                     "Ferdig">
 <!ENTITY editBookmark.removeBookmark.accessKey       "R">
 
+<!-- LOCALIZATION NOTE (identity.securityView.label)
+     This is the header of the security subview in the Site Identity panel. -->
+<!ENTITY identity.securityView.label "Nettstedssikkerhet">
+
 <!ENTITY identity.connectionSecure "Sikker tilkobling">
 <!ENTITY identity.connectionNotSecure "Tilkoblingen er ikke sikker">
 <!ENTITY identity.connectionFile "Denne siden lagres på datamaskinen din.">
@@ -803,12 +819,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncedTabs.sidebar.noclients.title    "Ingen synkroniserte faner … ennå!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Vil du se faner fra de andre enhetene dine her?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Logg inn for å vise en liste over faner fra andre enheter.">
+<!ENTITY syncedTabs.sidebar.unverified.label   "Kontoen din må verifiseres.">
 <!ENTITY syncedTabs.sidebar.notabs.label       "Ingen åpne faner">
 <!ENTITY syncedTabs.sidebar.openprefs.label    "Åpne innstillinger for &syncBrand.shortName.label;">
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Skru på fane-synkronisering for å vise en liste over faner fra dine andre enheter.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Søk synkroniserte faner">
+
+<!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Koble til en annen enhet">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
                         syncedTabs.context.openAllInTabs.accesskey):
@@ -979,9 +998,20 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "n">
 <!ENTITY updateRestart.panelUI.label2 "Start om for å oppdatere &brandShorterName;">
 
+<!ENTITY newTabControlled.message "En utvidelse har endret den siden du ser når du åpner en ny fane. Du kan tilbakestille innstillingene dine om du ikke vil ha denne endringen.">
+<!ENTITY newTabControlled.header.message "Din ny fane-side har blitt endret.">
+<!ENTITY newTabControlled.keepButton.label "Behold endringer">
+<!ENTITY newTabControlled.keepButton.accesskey "B">
+<!ENTITY newTabControlled.restoreButton.label "Gjenopprett innstillinger">
+<!ENTITY newTabControlled.restoreButton.accesskey "r">
+
 <!ENTITY pageActionButton.tooltip "Sidehandlinger">
 <!ENTITY pageAction.addToUrlbar.label "Legg til i adresselinjen">
 <!ENTITY pageAction.removeFromUrlbar.label "Fjern fra adresselinjen">
+
+<!ENTITY pageAction.allowInUrlbar.label "Vis i adresselinjen">
+<!ENTITY pageAction.disallowInUrlbar.label "Ikke vis i adresselinjen">
+<!ENTITY pageAction.manageExtension.label "Behandle utvidelser…">
 
 <!ENTITY pageAction.sendTabToDevice.label "Send fane til enhet">
 <!ENTITY sendToDevice.syncNotReady.label "Synkroniserer enheter…">

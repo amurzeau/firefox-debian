@@ -113,8 +113,8 @@
   -  enabled via the devtools.chrome.enabled preference. Formerly, this label
   -  was called "Chrome".
   -->
-<!ENTITY browserContext.label         "Браузър">
-<!ENTITY browserContext.accesskey     "Б">
+<!ENTITY browserContext.label         "Четец">
+<!ENTITY browserContext.accesskey     "ч">
 
 <!-- LOCALIZATION NOTE some localizations of Windows (ex:french, german) use "?"
   -  for the help button in the menubar but Gnome does not.

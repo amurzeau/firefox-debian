@@ -29,12 +29,12 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "L'informe de dades està desactivat en la configuració d'aquesta versió">
 
-<!ENTITY enableHealthReport1.label       "Permet que el &brandShortName; enviï automàticament dades tècniques i d'interacció a Mozilla">
-<!ENTITY enableHealthReport1.accesskey   "r">
+<!ENTITY enableHealthReport2.label       "Permet que el &brandShortName; enviï dades tècniques i d'interacció a Mozilla">
+<!ENTITY enableHealthReport2.accesskey   "r">
 <!ENTITY healthReportLearnMore.label     "Més informació">
 
 <!ENTITY dataCollection.label            "Ús i recollida de dades i del &brandShortName;">
-<!ENTITY dataCollectionDesc.label        "Ens esforcem per oferir-vos opcions i recollir només allò que necessitem per proporcionar el &brandShortName; per a tothom i i millorar-lo. Sempre demanem permís abans de rebre informació personal.">
+<!ENTITY dataCollectionDesc.label        "Ens esforcem per oferir-vos opcions i recollir només allò que necessitem per proporcionar i millorar el &brandShortName; per a tothom. Sempre demanem permís abans de rebre informació personal.">
 <!ENTITY dataCollectionPrivacyNotice.label    "Avís de privadesa">
 
 <!ENTITY alwaysSubmitCrashReports1.label  "Permet que el &brandShortName; enviï informes de fallada a Mozilla">

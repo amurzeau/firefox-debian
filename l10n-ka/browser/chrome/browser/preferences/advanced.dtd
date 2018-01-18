@@ -6,14 +6,14 @@
 
 <!ENTITY generalTab.label                "ზოგადი">
 
-<!ENTITY useCursorNavigation.label       "გვერდებზე გადაადგილებისას, ყოველთვის მაჩვენებლის ღილაკების გამოყენება">
+<!ENTITY useCursorNavigation.label       "გვერდზე გადაადგილებისას, ყოველთვის მაჩვენებლის ღილაკების გამოყენება">
 <!ENTITY useCursorNavigation.accesskey   "რ">
 <!ENTITY searchOnStartTyping.label       "ტექსტის ძიება აკრეფის დაწყებისთანავე">
 <!ENTITY searchOnStartTyping.accesskey   "ტ">
 <!ENTITY useOnScreenKeyboard.label       "სენსორული კლავიატურის ჩვენება საჭიროების შემთხვევაში">
 <!ENTITY useOnScreenKeyboard.accesskey   "კ">
 
-<!ENTITY browsing.label                  "ჩვენება">
+<!ENTITY browsing.label                  "გვერდების მონახულება">
 
 <!ENTITY useAutoScroll.label             "თვითგადაადგილების გამოყენება">
 <!ENTITY useAutoScroll.accesskey         "თ">
@@ -35,11 +35,11 @@ available. -->
 
 <!ENTITY dataCollection.label            "&brandShortName; მონაცემთა აღრიცხვა და გამოყენება">
 <!ENTITY dataCollectionDesc.label        "ჩვენ ვცდილობთ მოგცეთ არჩევანის უფლება და აღვრიცხოთ მხოლოდ ის მონაცემები, რაც საჭიროა &brandShortName;-ის გასაუმჯობესებლად. ჩვენ ყოველთვის დაგეკითხებით, პირადი ინფორმაციის მიღებამდე.">
-<!ENTITY dataCollectionPrivacyNotice.label    "პირადი მონაცემების დაცვის დებულება">
+<!ENTITY dataCollectionPrivacyNotice.label    "პირადი მონაცემების დაცვის შესახებ">
 
-<!ENTITY alwaysSubmitCrashReports1.label  "&brandShortName;-ისთვის ნების დართვა, ავარიული დახურვების მოხსენების გასაგზავნად Mozilla-სთვის">
+<!ENTITY alwaysSubmitCrashReports1.label  "&brandShortName;-ისთვის ნების დართვა, ავარიული დახურვის მოხსენებების გასაგზავნად Mozilla-სთვის">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "ვ">
-<!ENTITY crashReporterLearnMore.label    "შეიტყვეთ მეტი">
+<!ENTITY crashReporterLearnMore.label    "ვრცლად">
 
 <!ENTITY networkTab.label                "ქსელი">
 
@@ -51,7 +51,7 @@ available. -->
 
 <!ENTITY httpCache.label                 "კეშირებული ვებშიგთავსი">
 
-<!ENTITY offlineStorage2.label           "კავშირგარეშე ვებშიგთავსი და მომხმარებლის მონაცემები">
+<!ENTITY offlineStorage2.label           "ვებშიგთავსი და მომხმარებლის მონაცემები, კავშირგარეშე წვდომისთვის">
 
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "საიტის მონაცემები">
@@ -74,7 +74,7 @@ available. -->
 <!ENTITY clearCacheNow.accesskey         "ფ">
 <!ENTITY clearOfflineAppCacheNow.label   "გასუფთავება">
 <!ENTITY clearOfflineAppCacheNow.accesskey "გ">
-<!ENTITY overrideSmartCacheSize.label    "კეშის ზომის ავტომატურად განსაზღვრის უგულებელყოფა">
+<!ENTITY overrideSmartCacheSize.label    "კეშის ზომის თვითგანსაზღვრის უგულებელყოფა">
 <!ENTITY overrideSmartCacheSize.accesskey "უ">
 
 <!ENTITY updateTab.label                 "განახლება">
@@ -95,10 +95,10 @@ available. -->
 <!ENTITY updateApplication.version.pre   "ვერსია ">
 <!ENTITY updateApplication.version.post  "">
 <!ENTITY updateApplication.description   "ნების დართვა &brandShortName;-ისთვის">
-<!ENTITY updateAuto3.label               "ავტომატურად დააყენოს განახლებები (სასურველია)">
-<!ENTITY updateAuto3.accesskey           "ტ">
-<!ENTITY updateCheckChoose2.label        "შემოწმდეს განახლებებზე, მაგრამ თავად მიუთითებთ, დაყენდეს თუ არა">
-<!ENTITY updateCheckChoose2.accesskey    "ე">
+<!ENTITY updateAuto3.label               "თავად დააყენოს განახლებები (სასურველია)">
+<!ENTITY updateAuto3.accesskey           "თ">
+<!ENTITY updateCheckChoose2.label        "შემოწმდეს განახლებებზე, მაგრამ დაგეკითხოთ, დაყენებამდე">
+<!ENTITY updateCheckChoose2.accesskey    "შ">
 <!ENTITY updateManual2.label             "არასდროს შემოწმდეს განახლებებზე (არაა სასურველი)">
 <!ENTITY updateManual2.accesskey         "ა">
 
@@ -108,29 +108,29 @@ available. -->
 <!ENTITY useService.label                "განახლებების დასაყენებლად ფონური მომსახურების გამოყენება">
 <!ENTITY useService.accesskey            "ფ">
 
-<!ENTITY enableSearchUpdate2.label       "საძიებო სისტემების ავტომატური განახლება">
+<!ENTITY enableSearchUpdate2.label       "საძიებო სისტემების თვითგანახლება">
 <!ENTITY enableSearchUpdate2.accesskey   "ს">
 
-<!ENTITY offlineStorageNotify.label               "გაფრთხილება, საიტის მიერ მონაცემების კავშირგარეშე გამოყენებისთვის შენახვისას">
+<!ENTITY offlineStorageNotify.label               "გაფრთხილება, საიტის მიერ მონაცემების კავშირგარეშე წვდომისთვის შენახვისას">
 <!ENTITY offlineStorageNotify.accesskey           "ფ">
 <!ENTITY offlineStorageNotifyExceptions.label     "გამონაკლისები…">
 <!ENTITY offlineStorageNotifyExceptions.accesskey "ნ">
 
-<!ENTITY offlineAppsList3.label          "მოცემულ ვებსაიტებს, მონაცემების კავშირგარეშე გამოყენებისთვის შენახვის უფლება აქვთ">
+<!ENTITY offlineAppsList3.label          "მოცემულ ვებსაიტებს, მონაცემების კავშირგარეშე წვდომისთვის შენახვის უფლება აქვთ">
 <!ENTITY offlineAppsList.height          "7em">
 <!ENTITY offlineAppsListRemove.label     "ამოღება…">
 <!ENTITY offlineAppsListRemove.accesskey "ა">
-<!ENTITY offlineAppRemove.confirm        "კავშირგარეშე მონაცემთა წაშლა">
+<!ENTITY offlineAppRemove.confirm        "კავშირგარეშე წვდომის მონაცემთა წაშლა">
 
-<!ENTITY certificateTab.label            "სერთიფიკატები">
-<!ENTITY certPersonal2.description       "როცა სერვერი თქვენს პირად სერთიფიკატს ითხოვს">
-<!ENTITY selectCerts.auto                "შეირჩეს ავტომატურად">
-<!ENTITY selectCerts.auto.accesskey      "ა">
+<!ENTITY certificateTab.label            "სერტიფიკატები">
+<!ENTITY certPersonal2.description       "როცა სერვერი თქვენს პირად სერტიფიკატს ითხოვს">
+<!ENTITY selectCerts.auto                "თვითშერჩევა">
+<!ENTITY selectCerts.auto.accesskey      "თ">
 <!ENTITY selectCerts.ask                 "ყოველ ჯერზე კითხვა">
 <!ENTITY selectCerts.ask.accesskey       "ყ">
-<!ENTITY enableOCSP.label                "OCSP სერვერებისთვის სერთიფიკატების დამოწმების მოთხოვნა">
+<!ENTITY enableOCSP.label                "OCSP სერვერებისთვის სერტიფიკატების დამოწმების მოთხოვნა">
 <!ENTITY enableOCSP.accesskey            "O">
-<!ENTITY viewCerts2.label                "სერთიფიკატების ნახვა…">
+<!ENTITY viewCerts2.label                "სერტიფიკატების ნახვა…">
 <!ENTITY viewCerts2.accesskey            "ნ">
 <!ENTITY viewSecurityDevices2.label      "უსაფრთხოების მოწყობილობები…">
 <!ENTITY viewSecurityDevices2.accesskey  "მ">
@@ -143,7 +143,7 @@ available. -->
 <!ENTITY useRecommendedPerformanceSettings2.accesskey
                                          "წ">
 <!ENTITY performanceSettingsLearnMore.label
-                                         "შეიტყვეთ მეტი">
+                                         "იხილეთ ვრცლად">
 <!ENTITY limitContentProcessOption.label "შიგთავსის პროცესების შეზღუდვა">
 <!ENTITY limitContentProcessOption.description
                                          "შიგთავსის დამატებით პროცესებს, ბევრი ჩანართით სარგებლობისას, შეუძლია წარმადობის გაუმჯობესება, მაგრამ ასევე გამოიყენებს მეტ მეხსიერებას.">

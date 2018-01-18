@@ -14,15 +14,15 @@
 <!ENTITY homepage2.accesskey       "P">
 <!ENTITY useCurrentPage.label      "Utilizar a página atual">
 <!ENTITY useCurrentPage.accesskey  "u">
-<!ENTITY useMultiple.label         "Utilizar as páginas atuais">
-<!ENTITY chooseBookmark.label      "Utilizar um marcador…">
+<!ENTITY useMultiple.label         "Utilizar páginas atuais">
+<!ENTITY chooseBookmark.label      "Utilizar marcador…">
 <!ENTITY chooseBookmark.accesskey  "m">
 <!ENTITY restoreDefault.label      "Restaurar predefinição">
 <!ENTITY restoreDefault.accesskey  "R">
 
 <!ENTITY disableExtension.label    "Desativar extensão">
 
-<!ENTITY downloads.label     "Descargas">
+<!ENTITY downloads.label     "Transferências">
 
 <!ENTITY saveTo.label "Guardar ficheiros em">
 <!ENTITY saveTo.accesskey "f">

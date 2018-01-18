@@ -355,7 +355,7 @@
 
 <!ENTITY pref_media_autoplay_enabled "Caniatáu awtochwarae">
 <!ENTITY pref_media_autoplay_enabled_summary "Rheoli os yw gwefannau yn awtochwarae fideos neu gynnwys cyfrwng arall">
-<!ENTITY pref_zoom_force_enabled "Galluogi chwyno bob tro">
+<!ENTITY pref_zoom_force_enabled "Galluogi chwyddo bob tro">
 <!ENTITY pref_zoom_force_enabled_summary "Gorfodi gwrthwneud er mwyn gallu chwyddo unrhyw dudalen">
 <!ENTITY pref_voice_input "Mewnbwn llais">
 <!ENTITY pref_voice_input_summary2 "Caniatáu llefaru yn y bar URL">
@@ -540,6 +540,8 @@
      any page is removed frome about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "Wedi tynnu\&apos;r dudalen">
+
+<!ENTITY folder_removed "Tynnwyd y ffolder">
 
 <!ENTITY bookmark_edit_title "Golygu Nod Tudalen">
 <!ENTITY bookmark_edit_folder_title "Golygu Ffolder">

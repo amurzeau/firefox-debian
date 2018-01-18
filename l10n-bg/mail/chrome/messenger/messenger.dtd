@@ -81,7 +81,7 @@
 <!ENTITY printCmd.label "Печат…">
 <!ENTITY printCmd.accesskey "П">
 <!ENTITY printCmd.key "p">
-<!ENTITY printPreviewCmd.label "Преглед за отпечатване">
+<!ENTITY printPreviewCmd.label "Преглед преди отпечатване">
 <!ENTITY printPreviewCmd.accesskey "г">
 <!ENTITY printSetupCmd.label "Настройки на отпечатване…">
 <!ENTITY printSetupCmd.accesskey "К">
@@ -99,7 +99,7 @@
 <!ENTITY deleteFolderCmd.accesskey "з">
 <!ENTITY unsubscribeNewsgroupCmd.label "Отписване">
 <!ENTITY unsubscribeNewsgroupCmd.accesskey "О">
-<!ENTITY selectMenu.label "Избор">
+<!ENTITY selectMenu.label "Избиране">
 <!ENTITY selectMenu.accesskey "И">
 <!ENTITY all.label "Всичко">
 <!ENTITY all.accesskey "В">
@@ -253,7 +253,7 @@
 <!ENTITY bodyMenuFeed.accesskey "Т">
 <!ENTITY viewFeedWebPage.label "Уеб страница">
 <!ENTITY viewFeedWebPage.accesskey "У">
-<!ENTITY viewFeedSummary.label "Извлечение">
+<!ENTITY viewFeedSummary.label "Обобщение">
 <!ENTITY viewFeedSummary.accesskey "з">
 <!ENTITY viewFeedSummaryFeedPropsPref.label "Стандартен формат">
 <!ENTITY viewFeedSummaryFeedPropsPref.accesskey "С">
@@ -318,6 +318,7 @@
 <!ENTITY goChatCmd.label "Разговор">
 <!ENTITY goChatCmd.accesskey "Р">
 <!ENTITY goChatCmd.key "I">
+<!ENTITY goChatCmd2.key "H">
 <!ENTITY prevStarredMsgCmd.label "Писмо със звезда">
 <!ENTITY prevStarredMsgCmd.accesskey "з">
 <!ENTITY folderMenu.label "Папка">
@@ -361,7 +362,7 @@
 <!ENTITY forwardAsInline.accesskey "В">
 <!ENTITY forwardAsAttachmentCmd.label "Прикачен файл">
 <!ENTITY forwardAsAttachmentCmd.accesskey "ф">
-<!ENTITY editAsNewMsgCmd.label "Редактиране като ново">
+<!ENTITY editAsNewMsgCmd.label "Редактиране като ново съобщение">
 <!ENTITY editAsNewMsgCmd.accesskey "н">
 <!ENTITY editAsNewMsgCmd.key "e">
 <!ENTITY editDraftMsgCmd.label "Редактиране на чернова на съобщение">
@@ -591,7 +592,7 @@
 <!ENTITY chatButton.tooltip "Показване на раздела за разговори">
 <!ENTITY tagButton.tooltip "Поставяне на етикети">
 <!ENTITY compactButton.tooltip "Премахване на изтритите писма от избраната папка">
-<!ENTITY appmenuButton1.tooltip "Показване менюто на &brandShortName;">
+<!ENTITY appmenuButton1.tooltip "Показване на менюто на &brandShortName;">
 
 <!-- Toolbar Button Popup -->
 <!ENTITY buttonMenuForwardAsInline.label "Препращане като вложено">
@@ -792,7 +793,7 @@
 <!ENTITY contextSaveAs.accesskey "а">
 <!ENTITY contextPrint.label "Печат…">
 <!ENTITY contextPrint.accesskey "П">
-<!ENTITY contextPrintPreview.label "Преглед за отпечатване">
+<!ENTITY contextPrintPreview.label "Преглед преди отпечатване">
 <!ENTITY contextPrintPreview.accesskey "г">
 
 <!-- Thread Pane Column Picker -->
@@ -914,7 +915,7 @@
 <!-- Content Pane Context Menu -->
 <!ENTITY saveLinkAsCmd.label "Запазване на препратката като…">
 <!ENTITY saveLinkAsCmd.accesskey "к">
-<!ENTITY saveImageAsCmd.label "Запазване на изображението…">
+<!ENTITY saveImageAsCmd.label "Запазване на изображението като…">
 <!ENTITY saveImageAsCmd.accesskey "ж">
 <!ENTITY copyLinkCmd.label "Копиране на препратката">
 <!ENTITY copyLinkCmd.accesskey "К">

@@ -66,7 +66,7 @@
 <!ENTITY netInterrupt.longDesc2 "&sharedLongDesc3;">
 
 <!ENTITY notCached.title "文档已过期">
-<!ENTITY notCached.longDesc "<p>您请求的文档已无法在 &brandShortName; 的缓存中找到。</p><ul><li>作为一个安全上的预防措施，&brandShortName; 不会自动重新获取敏感信息文档。</li><li>您可以点击“重试”来重新请求从网站获取该文档。</li></ul>">
+<!ENTITY notCached.longDesc "<p>您请求的文档已无法在 &brandShortName; 的缓存中找到。</p><ul><li>为了您的安全，&brandShortName; 不会自动重新获取敏感信息文档。</li><li>您可以点击“重试”来重新请求从网站获取该文档。</li></ul>">
 
 <!ENTITY netOffline.title "脱机模式">
 <!-- LOCALIZATION NOTE (netOffline.longDesc3) This string contains markup including widgets enabling wifi connections.
@@ -143,7 +143,7 @@
 <!ENTITY corruptedContentErrorv2.title "内容损坏错误">
 <!ENTITY corruptedContentErrorv2.longDesc "<p>您尝试查看的页面无法显示，因为检测到传输的数据含有错误。</p><ul><li>建议向此网站的管理员反馈这个问题。</li></ul>">
 
-<!ENTITY securityOverride.linkText "或者，您可以添加一个例外…">
+<!ENTITY securityOverride.linkText "或者，您可以将此网站设为例外…">
 <!ENTITY securityOverride.getMeOutOfHereButton "带我离开！">
 <!ENTITY securityOverride.exceptionButtonLabel "添加例外…">
 
@@ -152,7 +152,7 @@ contents of the <xul:button> tags.  The only language content is the label= fiel
 which uses strings already defined above. The button is included here (instead of
 netError.xhtml) because it exposes functionality specific to firefox. -->
 
-<!ENTITY securityOverride.warningContent "<p>如果您使用的是一个您不能完全信任的互联网连接，或者您并不使用警告的此服务器，您不应该添加一个例外。</p> 
+<!ENTITY securityOverride.warningContent "<p>您不应在使用您不完全信任的互联网连接时，或在不曾看到关于此服务器的警告的情况下添加例外。</p> 
  
 <button id='getMeOutOfHereButton'>&securityOverride.getMeOutOfHereButton;</button> 
 <button id='exceptionDialogButton'>&securityOverride.exceptionButtonLabel;</button>">

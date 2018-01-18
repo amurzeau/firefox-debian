@@ -7,9 +7,9 @@
    - your editor isn't using UTF-8 encoding and may munge up the document!
   -->
 
-<!ENTITY pref.categories.add.title "კატეგორიის დამატება">
-<!ENTITY pref.categories.addButton.label "დამატება…">
-<!ENTITY pref.categories.addButton.accesskey "A">
+<!ENTITY pref.categories.new.title "ახალი კატეგორია">
+<!ENTITY pref.categories.newButton.label "ახალი…">
+<!ENTITY pref.categories.newButton.accesskey "ხ">
 <!ENTITY pref.categories.edit.title "კატეგორიის რედაქტირება">
 <!ENTITY pref.categories.editButton.label "რედაქტირება…">
 <!ENTITY pref.categories.editButton.accesskey "E">
@@ -20,5 +20,5 @@
 <!ENTITY pref.categories.usecolor.label "ფერის გამოყენება">
 <!ENTITY pref.categories.none.label "(არა)">
 <!ENTITY pref.categories.overwrite "კატეგორია ამ სახელით უკვე არსებობს. \n გნებავთ მისი ჩანაცვლება?">
-<!ENTITY pref.categories.overwrite.title "გაფრთხილება: დუბლირებული სახელი">
+<!ENTITY pref.categories.overwrite.title "გაფრთხილება: ერთნაირი დასახელება">
 <!ENTITY pref.categories.noBlankCategories "უნდა მიუთითოთ კატეგორიის სახელი.">

@@ -50,14 +50,14 @@
 <!ENTITY calendar.unifinder.tree.location.label            "Местоположение">
 <!ENTITY calendar.unifinder.tree.location.tooltip2         "Сортиране по местоположение">
 <!ENTITY calendar.unifinder.tree.status.label              "Статус">
-<!ENTITY calendar.unifinder.tree.status.tooltip2           "Сортиране по статус">
+<!ENTITY calendar.unifinder.tree.status.tooltip2           "Сортиране по състояние">
 <!ENTITY calendar.unifinder.tree.calendarname.label        "Име на календара">
 <!ENTITY calendar.unifinder.tree.calendarname.tooltip2     "Сортиране по име на календар">
 <!ENTITY calendar.unifinder.tree.duration.label            "До">
 <!ENTITY calendar.unifinder.tree.duration.tooltip2         "Сортиране по време до крайния срок">
 <!ENTITY calendar.unifinder.close.tooltip                  "Затваряне на търсенето и списъка на събития">
 
-<!ENTITY calendar.today.button.tooltip          "Отиване на днес" >
+<!ENTITY calendar.today.button.tooltip          "Отваряне на днешния ден" >
 <!ENTITY calendar.todaypane.button.tooltip      "Показване на дневния график" >
 
 <!ENTITY calendar.day.button.tooltip            "Превключване към дневен изглед" >

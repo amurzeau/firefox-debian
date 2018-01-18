@@ -7,18 +7,30 @@
 <!ENTITY engine.bookmarks.label     "Закладкі">
 <!ENTITY engine.bookmarks.accesskey "З">
 <!ENTITY engine.tabs.label2         "Адкрытыя карткі">
+<!ENTITY engine.tabs.title          "Спіс адкрытага на ўсіх сінхранізаваных прыладах">
 <!ENTITY engine.tabs.accesskey      "к">
 <!ENTITY engine.history.label       "Гісторыя">
 <!ENTITY engine.history.accesskey   "Г">
 <!ENTITY engine.logins.label        "Лагіны">
+<!ENTITY engine.logins.title        "Імёны карыстальніка і паролі, якія вы захавалі">
 <!ENTITY engine.logins.accesskey    "Л">
+<!-- On Windows we use the term "Options" to describe settings, but
+     on Linux and Mac OS X we use "Preferences" - carry that distinction
+     over into this string, used as the checkbox which indicates if prefs are synced
+-->
+<!ENTITY engine.prefsWin.label      "Налады">
+<!ENTITY engine.prefsWin.accesskey  "Н">
 <!ENTITY engine.prefs.label         "Налады">
 <!ENTITY engine.prefs.accesskey     "Н">
+<!ENTITY engine.prefs.title         "Змененыя вамі налады: Агульныя, Прыватнасць і бяспека">
 <!ENTITY engine.addons.label        "Дадаткі">
+<!ENTITY engine.addons.title        "Пашырэнні і тэмы для настольнага Firefox">
 <!ENTITY engine.addons.accesskey    "Д">
 <!ENTITY engine.addresses.label     "Адрасы">
+<!ENTITY engine.addresses.title     "Паштовыя адрасы, якія вы захавалі (толькі для камп'ютара)">
 <!ENTITY engine.addresses.accesskey "а">
 <!ENTITY engine.creditcards.label   "Крэдытныя карты">
+<!ENTITY engine.creditcards.title   "Імёны, нумары і тэрміны дзеяння (толькі для камп'ютара)">
 <!ENTITY engine.creditcards.accesskey "К">
 
 <!-- Device Settings -->
@@ -50,18 +62,23 @@ both, to better adapt this sentence to their language.
 <!ENTITY signedInLoginFailure.beforename.label "Увайдіце, калі ласка, каб перазлучыцца">
 <!ENTITY signedInLoginFailure.aftername.label "">
 
-<!ENTITY notSignedIn.label           "Вы не ўвайшлі.">
-<!ENTITY signIn.label                "Увайсці">
-<!ENTITY signIn.accesskey            "і">
-<!ENTITY profilePicture.tooltip      "Змяніць профільную выяву">
-<!ENTITY verifiedManage.label        "Кіраванне ўліковым запісам">
-<!ENTITY verifiedManage.accesskey    "а">
-<!ENTITY disconnect3.label           "Адлучыцца…">
-<!ENTITY disconnect3.accesskey       "А">
+<!ENTITY notSignedIn.label            "Вы не ўвайшлі.">
+<!ENTITY signIn.label                 "Увайсці">
+<!ENTITY signIn.accesskey             "і">
+<!ENTITY profilePicture.tooltip       "Змяніць профільную выяву">
+<!ENTITY verifiedManage.label         "Кіраванне ўліковым запісам">
+<!ENTITY verifiedManage.accesskey     "а">
+<!ENTITY disconnect3.label            "Адлучыцца…">
+<!ENTITY disconnect3.accesskey        "А">
 <!ENTITY verify.label                "Пацвердзіць эл.пошту">
 <!ENTITY verify.accesskey            "П">
 <!ENTITY forget.label                "Забыць гэты адрас эл.пошты">
 <!ENTITY forget.accesskey            "З">
+
+<!ENTITY resendVerification.label     "Паўторна адправіць пацвярджэнне">
+<!ENTITY resendVerification.accesskey "т">
+<!ENTITY cancelSetup.label            "Скасаваць наладку">
+<!ENTITY cancelSetup.accesskey        "к">
 
 <!ENTITY signedOut.caption            "Вазьміце сваё Сеціва з сабой">
 <!ENTITY signedOut.description        "Сінхранізуйце свае закладкі, гісторыю, карткі, паролі, дадаткі і налады на ўсіх вашых прыладах.">

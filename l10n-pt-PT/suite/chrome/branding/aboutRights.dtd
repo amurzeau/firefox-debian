@@ -37,7 +37,7 @@
 <!ENTITY rights.intro-point4b "termos do serviço">
 <!ENTITY rights.intro-point4c ".">
 
-<!ENTITY rights.webservices-header "Serviços web do &brandFullName;">
+<!ENTITY rights.webservices-header "Serviços de websites do &brandFullName;">
 
 <!-- Note that this paragraph references entities from extensions.dtd,
      preferences.dtd, pref-smartupdate.dtd, and pref-security.dtd,

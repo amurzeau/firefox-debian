@@ -7,18 +7,30 @@
 <!ENTITY engine.bookmarks.label     "Maantore am">
 <!ENTITY engine.bookmarks.accesskey "t">
 <!ENTITY engine.tabs.label2         "Uddit tabbe">
+<!ENTITY engine.tabs.title          "Doggol ko udditii e masiŋaaji maa jahdinaaɗi fof">
 <!ENTITY engine.tabs.accesskey      "N">
 <!ENTITY engine.history.label       "Aslol">
 <!ENTITY engine.history.accesskey   "o">
 <!ENTITY engine.logins.label        "Ceŋorɗe">
+<!ENTITY engine.logins.title        "Inle kuutoro kam e finndeeji ɗi dannduɗaa">
 <!ENTITY engine.logins.accesskey    "C">
+<!-- On Windows we use the term "Options" to describe settings, but
+     on Linux and Mac OS X we use "Preferences" - carry that distinction
+     over into this string, used as the checkbox which indicates if prefs are synced
+-->
+<!ENTITY engine.prefsWin.label      "Cuɓe">
+<!ENTITY engine.prefsWin.accesskey  "S">
 <!ENTITY engine.prefs.label         "Cuɓoraaɗe">
 <!ENTITY engine.prefs.accesskey     "e">
+<!ENTITY engine.prefs.title         "Teelte Kuuɓɗe Suturo kam e Kisal ɗe mbayluɗaa">
 <!ENTITY engine.addons.label        "Ɓeyditte">
+<!ENTITY engine.addons.title        "Timmitte kam e ciŋkooje wonande ordinateer">
 <!ENTITY engine.addons.accesskey    "Ɓ">
 <!ENTITY engine.addresses.label     "Ñiiɓirɗe">
+<!ENTITY engine.addresses.title     "Xiiɓirde maa posto dannduɗaa (ordinateer tan)">
 <!ENTITY engine.addresses.accesskey "e">
 <!ENTITY engine.creditcards.label   "Karte banke">
+<!ENTITY engine.creditcards.title   "Inɗe, tonngooɗe kam e buntugol laje (ordinateer tan)">
 <!ENTITY engine.creditcards.accesskey "K">
 
 <!-- Device Settings -->
