@@ -5,9 +5,9 @@
 <!ENTITY window.title                 "Изключения">
 <!ENTITY window.width                 "45em">
 
-<!ENTITY treehead.sitename.label      "Сайт">
+<!ENTITY treehead.sitename.label      "Страница">
 <!ENTITY treehead.status.label        "Състояние">
-<!ENTITY removepermission.label       "Премахване">
+<!ENTITY removepermission.label       "Премахване на сайт">
 <!ENTITY removepermission.accesskey   "П">
 <!ENTITY removeallpermissions.label   "Премахване на всички">
 <!ENTITY removeallpermissions.accesskey "р">

@@ -4,6 +4,8 @@
 <!ENTITY addons.windowTitle                   "Gestor de extras">
 
 <!ENTITY search.placeholder                   "Pesquisar todos os extras">
+
+<!ENTITY search.placeholder2                  "Pesquisar em addons.mozilla.org">
 <!ENTITY search.buttonlabel                   "Pesquisar">
 <!-- LOCALIZATION NOTE (search.commandKey):
      The search command key should match findOnCmd.commandkey from browser.dtd -->
@@ -25,6 +27,7 @@
 
 <!ENTITY cmd.back.tooltip                     "Retroceder uma página">
 <!ENTITY cmd.forward.tooltip                  "Avançar uma página">
+
 
 <!ENTITY showUnsignedExtensions.button.label  "Algumas extensões não foram verificadas">
 <!ENTITY showAllExtensions.button.label       "Mostrar todas as extensões">
@@ -68,7 +71,7 @@
 <!ENTITY updates.resetUpdatesToManual.accesskey      "R">
 <!ENTITY updates.updating.label               "A atualizar extras">
 <!ENTITY updates.installed.label              "Os seus extras foram atualizados.">
-<!ENTITY updates.downloaded.label             "As atualizações dos seus extras foram descarregadas.">
+<!ENTITY updates.downloaded.label             "As atualizações dos seus extras foram transferidas.">
 <!ENTITY updates.restart.label                "Reiniciar agora para completar a instalação">
 <!ENTITY updates.noneFound.label              "Nenhuma atualização encontrada">
 <!ENTITY updates.manualUpdatesFound.label     "Ver atualizações disponíveis">
@@ -132,7 +135,7 @@
 <!ENTITY detail.lastupdated.label             "Última atualização">
 <!ENTITY detail.creator.label                 "Programador">
 <!ENTITY detail.homepage.label                "Página inicial">
-<!ENTITY detail.numberOfDownloads.label       "Descargas">
+<!ENTITY detail.numberOfDownloads.label       "Transferências">
 
 <!ENTITY detail.contributions.description     "O programador deste extra pede para o ajudar no desenvolvimento com uma pequena contribuição.">
 
@@ -162,7 +165,7 @@
 <!ENTITY rating2.label                        "Avaliação">
 
 <!-- download/install progress -->
-<!ENTITY progress.pause.tooltip               "Pausa">
+<!ENTITY progress.pause.tooltip               "Pausar">
 <!ENTITY progress.cancel.tooltip              "Cancelar">
 
 
@@ -255,7 +258,6 @@
 <!ENTITY pluginDeprecation.description "Falta alguma coisa? Alguns plugins deixaram de ser suportados pelo &brandShortName;.">
 <!ENTITY pluginDeprecation.learnMore "Saber mais.">
 
-<!ENTITY legacyWarning.description "Falta alguma coisa? Algumas extensões deixaram de ser suportadas pelo &brandShortName;.">
 <!ENTITY legacyWarning.showLegacy "Mostrar extensões de legado">
 <!ENTITY legacyExtensions.title "Extensões de legado">
 <!ENTITY legacyExtensions.description "Estas extensões não atendem aos padrões atuais do &brandShortName; por isso foram desativadas">

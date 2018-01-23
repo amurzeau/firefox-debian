@@ -7,18 +7,30 @@
 <!ENTITY engine.bookmarks.label     "Marcaje">
 <!ENTITY engine.bookmarks.accesskey "M">
 <!ENTITY engine.tabs.label2         "File deschise">
+<!ENTITY engine.tabs.title          "O listă cu ce este deschis pe toate dispozitivele sincronizate">
 <!ENTITY engine.tabs.accesskey      "T">
 <!ENTITY engine.history.label       "Istoric">
 <!ENTITY engine.history.accesskey   "r">
 <!ENTITY engine.logins.label        "Autentificări">
+<!ENTITY engine.logins.title        "Numele de utilizatori și parolele pe care le-ai salvat">
 <!ENTITY engine.logins.accesskey    "L">
+<!-- On Windows we use the term "Options" to describe settings, but
+     on Linux and Mac OS X we use "Preferences" - carry that distinction
+     over into this string, used as the checkbox which indicates if prefs are synced
+-->
+<!ENTITY engine.prefsWin.label      "Opțiuni">
+<!ENTITY engine.prefsWin.accesskey  "S">
 <!ENTITY engine.prefs.label         "Preferințe">
 <!ENTITY engine.prefs.accesskey     "s">
+<!ENTITY engine.prefs.title         "Setările generale, de confidențialitate și securitate pe care le-ai schimbat">
 <!ENTITY engine.addons.label        "Suplimente">
+<!ENTITY engine.addons.title        "Extensii și teme pentru Firefox desktop">
 <!ENTITY engine.addons.accesskey    "A">
 <!ENTITY engine.addresses.label     "Adrese">
+<!ENTITY engine.addresses.title     "Adrese poștale salvate (doar desktop)">
 <!ENTITY engine.addresses.accesskey "e">
 <!ENTITY engine.creditcards.label   "Carduri de credit">
+<!ENTITY engine.creditcards.title   "Nume, numere și date de expirare (doar desktop)">
 <!ENTITY engine.creditcards.accesskey "c">
 
 <!-- Device Settings -->
@@ -50,18 +62,23 @@ both, to better adapt this sentence to their language.
 <!ENTITY signedInLoginFailure.beforename.label "Te rugăm să te autentifici pentru reconectare">
 <!ENTITY signedInLoginFailure.aftername.label "">
 
-<!ENTITY notSignedIn.label           "Nu ești autentificat.">
-<!ENTITY signIn.label                "Autentifică-te">
-<!ENTITY signIn.accesskey            "g">
-<!ENTITY profilePicture.tooltip      "Schimbă fotografia de profil">
-<!ENTITY verifiedManage.label        "Gestionează contul">
-<!ENTITY verifiedManage.accesskey    "o">
-<!ENTITY disconnect3.label           "Deconectează-te…">
-<!ENTITY disconnect3.accesskey       "D">
+<!ENTITY notSignedIn.label            "Nu ești autentificat.">
+<!ENTITY signIn.label                 "Autentifică-te">
+<!ENTITY signIn.accesskey             "g">
+<!ENTITY profilePicture.tooltip       "Schimbă fotografia de profil">
+<!ENTITY verifiedManage.label         "Gestionează contul">
+<!ENTITY verifiedManage.accesskey     "o">
+<!ENTITY disconnect3.label            "Deconectează-te…">
+<!ENTITY disconnect3.accesskey        "D">
 <!ENTITY verify.label                "Verifică e-mailul">
 <!ENTITY verify.accesskey            "V">
 <!ENTITY forget.label                "Uită acest e-mail">
 <!ENTITY forget.accesskey            "F">
+
+<!ENTITY resendVerification.label     "Retrimite verificarea">
+<!ENTITY resendVerification.accesskey "d">
+<!ENTITY cancelSetup.label            "Anulează configurarea">
+<!ENTITY cancelSetup.accesskey        "p">
 
 <!ENTITY signedOut.caption            "Ia webul cu tine">
 <!ENTITY signedOut.description        "Sincronizează marcajele, istoricul, filele, parolele, suplimentele și preferințele pe toate dispozitivele.">

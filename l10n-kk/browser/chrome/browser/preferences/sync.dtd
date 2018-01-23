@@ -7,18 +7,30 @@
 <!ENTITY engine.bookmarks.label     "Бетбелгілер">
 <!ENTITY engine.bookmarks.accesskey "т">
 <!ENTITY engine.tabs.label2         "Ашық беттер">
+<!ENTITY engine.tabs.title          "Барлық синхрондалған құрылғыларда ашылған нәрселер тізімі">
 <!ENTITY engine.tabs.accesskey      "т">
 <!ENTITY engine.history.label       "Тарих">
 <!ENTITY engine.history.accesskey   "и">
 <!ENTITY engine.logins.label        "Логиндер">
+<!ENTITY engine.logins.title        "Сіз сақтаған пайдаланушы аттары және парольдер">
 <!ENTITY engine.logins.accesskey    "Л">
+<!-- On Windows we use the term "Options" to describe settings, but
+     on Linux and Mac OS X we use "Preferences" - carry that distinction
+     over into this string, used as the checkbox which indicates if prefs are synced
+-->
+<!ENTITY engine.prefsWin.label      "Баптаулар">
+<!ENTITY engine.prefsWin.accesskey  "й">
 <!ENTITY engine.prefs.label         "Баптаулар">
 <!ENTITY engine.prefs.accesskey     "а">
+<!ENTITY engine.prefs.title         "Сіз өзгерткен негізгі, жекелік және қауіпсіздік баптаулары">
 <!ENTITY engine.addons.label        "Қосымшалар">
+<!ENTITY engine.addons.title        "Firefox жұмыс үстелі үшін кеңейтулер және темалар">
 <!ENTITY engine.addons.accesskey    "о">
 <!ENTITY engine.addresses.label     "Адрестер">
+<!ENTITY engine.addresses.title     "Сіз сақтаған пошта адрестері (тек жұмыс үстелі)">
 <!ENTITY engine.addresses.accesskey "е">
 <!ENTITY engine.creditcards.label   "Несиелік карталар">
+<!ENTITY engine.creditcards.title   "Аттар, сандар және мерзімі аяқталу күндері (тек жұмыс үстелі)">
 <!ENTITY engine.creditcards.accesskey "Н">
 
 <!-- Device Settings -->
@@ -50,18 +62,23 @@ both, to better adapt this sentence to their language.
 <!ENTITY signedInLoginFailure.beforename.label "Байланысты қайта орнатуға үшін кіріңіз">
 <!ENTITY signedInLoginFailure.aftername.label "">
 
-<!ENTITY notSignedIn.label           "Сіз кірген жоқсыз.">
-<!ENTITY signIn.label                "Кіру">
-<!ENTITY signIn.accesskey            "К">
-<!ENTITY profilePicture.tooltip      "Профиль суретін ауыстыру">
-<!ENTITY verifiedManage.label        "Тіркелгіні басқару">
-<!ENTITY verifiedManage.accesskey    "к">
-<!ENTITY disconnect3.label           "Байланысты үзу…">
-<!ENTITY disconnect3.accesskey       "з">
+<!ENTITY notSignedIn.label            "Сіз кірген жоқсыз.">
+<!ENTITY signIn.label                 "Кіру">
+<!ENTITY signIn.accesskey             "К">
+<!ENTITY profilePicture.tooltip       "Профиль суретін ауыстыру">
+<!ENTITY verifiedManage.label         "Тіркелгіні басқару">
+<!ENTITY verifiedManage.accesskey     "к">
+<!ENTITY disconnect3.label            "Байланысты үзу…">
+<!ENTITY disconnect3.accesskey        "з">
 <!ENTITY verify.label                "Эл. поштаны растау">
 <!ENTITY verify.accesskey            "р">
 <!ENTITY forget.label                "Бұл эл. поштаны алып тастау">
 <!ENTITY forget.accesskey            "у">
+
+<!ENTITY resendVerification.label     "Растауды қайта жіберу">
+<!ENTITY resendVerification.accesskey "д">
+<!ENTITY cancelSetup.label            "Баптаудан бас тарту">
+<!ENTITY cancelSetup.accesskey        "п">
 
 <!ENTITY signedOut.caption            "Өз интернетіңізді өзіңізбен бірге ұстаңыз">
 <!ENTITY signedOut.description        "Өзіңіздің бетбелгілер, тарих, беттер, парольдер және қосымшаларыңызды барлық құрылғыларыңыз арасында синхрондаңыз.">

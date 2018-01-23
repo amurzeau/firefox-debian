@@ -155,3 +155,13 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.mediaDeviceChannels "Kanále">
 <!ENTITY aboutSupport.mediaDeviceRate "Miera">
 <!ENTITY aboutSupport.mediaDeviceLatency "Oneskorenie">
+
+<!ENTITY aboutSupport.intlTitle "Internacionalizácia a lokalizácia">
+<!ENTITY aboutSupport.intlAppTitle "Nastavenia aplikácie">
+<!ENTITY aboutSupport.intlLocalesRequested "Požadované jazyky">
+<!ENTITY aboutSupport.intlLocalesAvailable "Dostupné jazyky">
+<!ENTITY aboutSupport.intlLocalesSupported "Jazyky aplikácie">
+<!ENTITY aboutSupport.intlLocalesDefault "Predvolený jazyk">
+<!ENTITY aboutSupport.intlOSTitle "Operačný systém">
+<!ENTITY aboutSupport.intlOSPrefsSystemLocales "Jazyky systému">
+<!ENTITY aboutSupport.intlRegionalPrefs "Miestne nastavenia">

@@ -65,7 +65,7 @@
 <!ENTITY  crash_email "আপনার ইমেইল">
 <!ENTITY  crash_closing_alert "ক্র্যাশ প্রতিবেদন না পাঠিয়ে প্রস্থান করবেন?">
 <!ENTITY  sending_crash_report "ক্র্যাশ প্রতিবেদন পাঠানো হচ্ছে\u2026">
-<!ENTITY  crash_close_label "বন্ধ করুন">
+<!ENTITY  crash_close_label "বন্ধ">
 <!ENTITY  crash_restart_label "&brandShortName; পুনরায় চালু করুন">
 
 <!ENTITY url_bar_default_text2 "অনুসন্ধান বা ঠিকানা দিন">
@@ -180,7 +180,7 @@
 
 <!ENTITY pref_category_search3 "অনুসন্ধান করুন">
 <!ENTITY pref_category_search_summary2 "যোগ, ডিফল্ট সেট, পরামর্শ দেখাও">
-<!ENTITY pref_category_accessibility "প্রবেশযোগ্যতা">
+<!ENTITY pref_category_accessibility "অভিগম্যতা">
 <!ENTITY pref_category_accessibility_summary2 "টেক্সটের আকার, জুম করা, ভয়েস ইনপুট">
 <!ENTITY pref_category_privacy_short "গোপনীয়তা">
 <!ENTITY pref_category_privacy_summary4 "ট্র্যাকিং, লগইন, ডাটা পছন্দ">
@@ -245,7 +245,7 @@
 <!ENTITY pref_header_general "সাধারণ">
 <!ENTITY pref_header_search "অনুসন্ধান">
 <!ENTITY pref_header_privacy_short "গোপনীয়তা">
-<!ENTITY pref_header_accessibility "প্রবেশযোগ্যতা">
+<!ENTITY pref_header_accessibility "অভিগম্যতা">
 <!ENTITY pref_header_notifications "ঘোষণা">
 <!ENTITY pref_header_advanced "উচ্চপর্যায়">
 <!ENTITY pref_header_help "সহায়তা">
@@ -373,7 +373,7 @@
 <!-- Localization note (pref_private_data_openTabs): Open tabs is an option in
      the Clear Private Data  dialog and refers to currently open tabs. -->
 <!ENTITY pref_private_data_openTabs "ট্যাব খুলুন">
-<!ENTITY pref_private_data_history2 "ব্রাউজিং এর ইতিহাস">
+<!ENTITY pref_private_data_history2 "ব্রাউজ ইতিহাস">
 <!ENTITY pref_private_data_searchHistory "অনুসন্ধান ইতিহাস">
 <!ENTITY pref_private_data_formdata2 "ফর্মের ইতিহাস">
 <!ENTITY pref_private_data_cookies2 "কুকি এবং সক্রিয় লগইন">
@@ -540,6 +540,8 @@
      any page is removed frome about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "পাতা অপসারিত হয়েছে">
+
+<!ENTITY folder_removed "ফোল্ডার অপসারিত">
 
 <!ENTITY bookmark_edit_title "বুকমার্ক সম্পাদনা">
 <!ENTITY bookmark_edit_folder_title "ফোল্ডার সম্পাদনা">

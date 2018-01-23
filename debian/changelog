@@ -1,3 +1,18 @@
+firefox (58.0-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2018-02, also known as:
+    CVE-2018-5091, CVE-2018-5092, CVE-2018-5093, CVE-2018-5094,
+    CVE-2018-5095, CVE-2018-5097, CVE-2018-5098, CVE-2018-5099,
+    CVE-2018-5100, CVE-2018-5101, CVE-2018-5102, CVE-2018-5103,
+    CVE-2018-5104, CVE-2018-5105, CVE-2018-5106, CVE-2018-5107,
+    CVE-2018-5108, CVE-2018-5109, CVE-2018-5111, CVE-2018-5112,
+    CVE-2018-5113, CVE-2018-5114, CVE-2018-5115, CVE-2018-5116,
+    CVE-2018-5117, CVE-2018-5118, CVE-2018-5119, CVE-2018-5122,
+    CVE-2018-5090, CVE-2018-5089.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 24 Jan 2018 08:07:10 +0900
+
 firefox (57.0.4-1) unstable; urgency=medium
 
   * New upstream release.

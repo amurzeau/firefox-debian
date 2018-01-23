@@ -5,14 +5,14 @@
 <!ENTITY window.title                 "Esceiciones">
 <!ENTITY window.width                 "36em">
 
-<!ENTITY treehead.sitename.label      "Sitiu">
+<!ENTITY treehead.sitename2.label     "Sitiu web">
 <!ENTITY treehead.status.label        "Estáu">
-<!ENTITY removepermission.label       "Desaniciar sitiu">
-<!ENTITY removepermission.accesskey   "e">
-<!ENTITY removeallpermissions.label   "Desaniciar tolos sitios">
-<!ENTITY removeallpermissions.accesskey "l">
-<!ENTITY address.label                "Direición del sitiu web:">
-<!ENTITY address.accesskey            "d">
+<!ENTITY removepermission2.label      "Desaniciar sitiu web">
+<!ENTITY removepermission2.accesskey  "R">
+<!ENTITY removeallpermissions2.label  "Desaniciar tolos sitios web">
+<!ENTITY removeallpermissions2.accesskey "e">
+<!ENTITY address2.label               "Direición del sitiu web">
+<!ENTITY address2.accesskey           "D">
 <!ENTITY block.label                  "Bloquiar">
 <!ENTITY block.accesskey              "B">
 <!ENTITY session.label                "Permitir na sesión">
@@ -26,3 +26,4 @@
 <!ENTITY button.ok.label              "Guardar cambeos">
 <!ENTITY button.ok.accesskey          "G">
 
+<!ENTITY searchbox.placeholder        "Guetar sitiu web">

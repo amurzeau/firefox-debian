@@ -49,9 +49,9 @@ available. -->
 <!ENTITY connectionSettings.label        "Definições…">
 <!ENTITY connectionSettings.accesskey    "e">
 
-<!ENTITY httpCache.label                 "Conteúdo web em cache">
+<!ENTITY httpCache.label                 "Conteúdo Web em cache">
 
-<!ENTITY offlineStorage2.label           "Conteúdo web offline e dados do utilizador">
+<!ENTITY offlineStorage2.label           "Conteúdo Web offline e dados do utilizador">
 
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "Dados de sites">
@@ -126,7 +126,7 @@ available. -->
 <!ENTITY certPersonal2.description       "Quando um servidor solicitar o seu certificado pessoal">
 <!ENTITY selectCerts.auto                "Selecionar um automaticamente">
 <!ENTITY selectCerts.auto.accesskey      "S">
-<!ENTITY selectCerts.ask                 "Perguntar-me sempre">
+<!ENTITY selectCerts.ask                 "Perguntar-lhe sempre">
 <!ENTITY selectCerts.ask.accesskey       "A">
 <!ENTITY enableOCSP.label                "Consultar os servidores de resposta OCSP para confirmar a validade de certificados">
 <!ENTITY enableOCSP.accesskey            "O">

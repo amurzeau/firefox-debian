@@ -43,7 +43,7 @@ available. -->
 
 <!ENTITY networkTab.label                "Мрежа">
 
-<!ENTITY networkProxy.label              "Прокси">
+<!ENTITY networkProxy.label              "Мрежов посредник">
 
 <!ENTITY connectionDesc.label            "Настройки на &brandShortName; за достъп до Мрежата">
 <!ENTITY connectionSettings.label        "Настройки…">
@@ -67,14 +67,14 @@ available. -->
 
   &limitCacheSizeBefore.label [textbox for cache size in MB] &limitCacheSizeAfter.label;
 -->
-<!ENTITY limitCacheSizeBefore.label      "Ограничаване на кеша до">
+<!ENTITY limitCacheSizeBefore.label      "Ограничаване на буфера до">
 <!ENTITY limitCacheSizeBefore.accesskey  "О">
 <!ENTITY limitCacheSizeAfter.label       "МБ пространство">
 <!ENTITY clearCacheNow.label             "Изчистване">
 <!ENTITY clearCacheNow.accesskey         "И">
 <!ENTITY clearOfflineAppCacheNow.label   "Изчистване">
 <!ENTITY clearOfflineAppCacheNow.accesskey "ч">
-<!ENTITY overrideSmartCacheSize.label    "Незачитане на автоматичното управление на кеша">
+<!ENTITY overrideSmartCacheSize.label    "Незачитане на автоматичното управление на буфера">
 <!ENTITY overrideSmartCacheSize.accesskey "Н">
 
 <!ENTITY updateTab.label                 "Обновяване">
@@ -92,12 +92,12 @@ available. -->
  -->
 <!ENTITY updateApplicationDescription.label
                                          "За най-добра производителност, стабилност и защита поддържайте вашия &brandShortName; обновен.">
-<!ENTITY updateApplication.version.pre   "Версия ">
+<!ENTITY updateApplication.version.pre   "Издание ">
 <!ENTITY updateApplication.version.post  "">
 <!ENTITY updateApplication.description   "Разрешаване на &brandShortName;">
 <!ENTITY updateAuto3.label               "Да инсталира обновяванията автоматично (препоръчва се)">
 <!ENTITY updateAuto3.accesskey           "и">
-<!ENTITY updateCheckChoose2.label        "Да прави проверка за обновяванията, на да дава избор дали да бъдат инсталирани">
+<!ENTITY updateCheckChoose2.label        "Да прави проверка за обновяванията, но да дава избор дали да бъдат инсталирани">
 <!ENTITY updateCheckChoose2.accesskey    "п">
 <!ENTITY updateManual2.label             "Никога да не прави проверка за обновявания (непрепоръчително)">
 <!ENTITY updateManual2.accesskey         "Н">
@@ -105,7 +105,7 @@ available. -->
 <!ENTITY updateHistory2.label            "Хронология на обновяванията…">
 <!ENTITY updateHistory2.accesskey        "х">
 
-<!ENTITY useService.label                "Използване на услуга на заден план за инсталиране на обновявания">
+<!ENTITY useService.label                "Използване на услуга във фонов режим за инсталиране на обновявания">
 <!ENTITY useService.accesskey            "у">
 
 <!ENTITY enableSearchUpdate2.label       "Автоматично обновяване на търсещите машини">

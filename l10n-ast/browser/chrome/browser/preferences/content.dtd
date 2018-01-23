@@ -2,25 +2,40 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY  popups.label                "Ventanes emerxentes">
+<!ENTITY  permissions.label           "Permisos">
 
 <!ENTITY  blockPopups.label           "Bloquiar ventanes emerxentes">
 <!ENTITY  blockPopups.accesskey       "B">
 
-<!ENTITY  notificationsPolicy.label            "Avisos">
-<!ENTITY  notificationsPolicyLearnMore.label   "Deprendi más">
-<!ENTITY  notificationsPolicyDesc3.label       "Escueyi qué sitios tienen permisu pa unviate avisos">
-<!ENTITY  notificationsPolicyButton.accesskey  "c">
-<!ENTITY  notificationsPolicyButton.label      "Escoyer…">
 <!ENTITY  notificationsDoNotDisturb.label      "Nun me cafiar">
 <!ENTITY  notificationsDoNotDisturb.accesskey  "m">
 <!ENTITY  notificationsDoNotDisturbDetails.value "Nun s'amosará avisu dalu fasta que reanicies &brandShortName;">
 
-<!ENTITY  popupExceptions.label       "Esceiciones…">
-<!ENTITY  popupExceptions.accesskey   "E">
+<!ENTITY  popupExceptions.label                                 "Esceiciones…">
+<!ENTITY  popupExceptions.accesskey                             "E">
+
+<!ENTITY  notificationPermissions.label                         "Avisos">
+<!ENTITY  notificationSettingsButton.label                      "Axustes…">
+<!ENTITY  notificationSettingsButton.accesskey                  "t">
+<!ENTITY  notificationPermissionsLearnMore.label                "Deprendi más">
+
+<!ENTITY  locationPermissions.label                             "Allugamientu">
+<!ENTITY  locationSettingsButton.label                          "Axustes…">
+<!ENTITY  locationSettingsButton.accesskey                      "t">
+
+<!ENTITY  cameraPermissions.label                               "Cámara">
+<!ENTITY  cameraSettingsButton.label                            "Axustes…">
+<!ENTITY  cameraSettingsButton.accesskey                        "t">
+
+<!ENTITY  microphonePermissions.label                           "Micrófonu">
+<!ENTITY  microphoneSettingsButton.label                        "Axustes…">
+<!ENTITY  microphoneSettingsButton.accesskey                    "t">
 
 <!ENTITY  fontsAndColors.label        "Fontes y colores">
 
+<!ENTITY  defaultFont2.label          "Fonte predeterminada">
+<!ENTITY  defaultSize2.label          "Tamañu">
+<!ENTITY  defaultSize2.accesskey      "T">
 
 <!ENTITY  advancedFonts.label         "Avanzaes…">
 <!ENTITY  advancedFonts.accesskey     "v">
@@ -29,7 +44,7 @@
 <!ENTITY  colors.accesskey            "C">
 
 
-<!ENTITY languages.label              "Llingües">
+<!ENTITY language2.label              "Llingua">
 <!ENTITY chooseLanguage.label         "Escoyer llingua preferida p'amosar les páxines web">
 <!ENTITY chooseButton.label           "Escoyer…">
 <!ENTITY chooseButton.accesskey       "o">
@@ -49,8 +64,7 @@
 <!ENTITY translation.options.attribution.beforeLogo "Traducciones de">
 <!ENTITY translation.options.attribution.afterLogo "">
 
-<!ENTITY  drmContent.label             "Conteníu DRM">
+<!ENTITY  drmContent2.label              "Conteníu con Digital Rights Management (DRM)">
 
-<!ENTITY  playDRMContent.label         "Reproducir conteníu DRM">
-<!ENTITY  playDRMContent.accesskey     "P">
+<!ENTITY  playDRMContent2.label          "Reproducir conteníu remanáu per DRM">
 <!ENTITY  playDRMContent.learnMore.label "Deprender más">

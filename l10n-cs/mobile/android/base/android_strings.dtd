@@ -7,7 +7,7 @@
 <!ENTITY firstrun_urlbar_subtext2 "Moderní mobilní prohlížeč od Mozilly, neziskové organizace zaměřené na otevřený web.">
 <!ENTITY firstrun_panel_title_privacy "Soukromí">
 <!ENTITY firstrun_privacy_message "Prohlížejte web, jako když se nikdo nedívá">
-<!ENTITY firstrun_privacy_subtext "Anonymní prohlížení s funkcí Ochrana proti sledování blokuje sledující prvky, zatímco procházíte web, a nebude si pamatovat vaši historii.">
+<!ENTITY firstrun_privacy_subtext "Anonymní prohlížení s funkcí Ochrana proti sledování blokuje sledující prvky, zatímco prohlížíte web, a nebude si pamatovat vaši historii.">
 <!ENTITY firstrun_panel_title_customize "Přizpůsobení">
 <!ENTITY firstrun_customize_message "Udělejte si aplikaci &brandShortName; podle sebe.">
 <!ENTITY firstrun_customize_subtext "Přizpůsobte si aplikaci &brandShortName; s doplňky. Blokujte reklamy, přidávejte funkce, nebo si vyberte nový motiv, který bude odrazem vaší osobnosti.">
@@ -541,6 +541,8 @@
      bookmarks, or reading list. -->
 <!ENTITY page_removed "Stránka odebrána">
 
+<!ENTITY folder_removed "Složka byla odebrána">
+
 <!ENTITY bookmark_edit_title "Upravit záložku">
 <!ENTITY bookmark_edit_folder_title "Upravit složku">
 <!ENTITY bookmark_edit_name "Název">
@@ -559,7 +561,7 @@
 <!ENTITY page_action_dropmarker_description "Další akce">
 
 <!ENTITY masterpassword_create_title "Vytvořit hlavní heslo">
-<!ENTITY masterpassword_remove_title "Zrušit hlavní heslo">
+<!ENTITY masterpassword_remove_title "Odstranit hlavní heslo">
 <!ENTITY masterpassword_password "Heslo">
 <!ENTITY masterpassword_confirm "Potvrzení hesla">
 

@@ -7,8 +7,10 @@
 <!ENTITY firstrun_urlbar_subtext2 "ਮੋਜ਼ੀਲਾ, ਮੁਫ਼ਤ ਅਤੇ ਆਜ਼ਾਦ ਵੈੱਬ ਲਈ ਗ਼ੇੈਰ-ਫਾਇਦੇ ਨਾਲ ਵਚਨਬੱਧ, ਵਲੋਂ ਨਵਾਂ ਨਕੋਰ ਮੋਬਾਈਲ ਬਰਾਊਜ਼ਰ।">
 <!ENTITY firstrun_panel_title_privacy "ਪਰਦੇਦਾਰੀ">
 <!ENTITY firstrun_privacy_message "ਬਰਾਊਜ਼ ਇੰਝ ਕਰੋ ਕਿ ਕੋਈ ਨਾ ਵੇਖੇ">
+<!ENTITY firstrun_privacy_subtext "ਟਰੈਕਿੰਗ ਸੁਰੱਖਿਆ ਨਾਲ ਪ੍ਰਾਈਵੇਟ ਬਰਾਊਜ਼ਿੰਗ ਤੁਹਾਡੇ ਵਲੋਂ ਬਰਾਊਜ਼ ਕਰਨ ਦੇ ਦੌਰਾਨ ਟਰੈਕਾਂ ਉੱਤੇ ਪਾਬੰਦੀ ਲਗਾਉਂਦੀ ਹੈ ਅਤੇ ਤੁਹਾਡੇ ਵਲੋਂ ਬਰਾਊਜ਼ ਕਰਨਾ ਪੂਰਾ ਕਰਨ \&apos;ਤੇ ਤੁਹਾਡੇ ਅਤੀਤ ਨੂੰ ਯਾਦ ਨਹੀਂ ਰੱਖੇਗਾ।">
 <!ENTITY firstrun_panel_title_customize "ਕਸਟਮਾਈਜ਼">
 <!ENTITY firstrun_customize_message "&brandShortName; ਨੂੰ ਆਪਣਾ ਬਣਾਓ।">
+<!ENTITY firstrun_customize_subtext "ਐਡ-ਆਨ ਰਾਹੀਂ &brandShortName; ਨੂੰ ਕਸਟਮਾਈਜ਼ ਕਰੋ। ਇਸ਼ਤਿਹਾਰਾਂ \&apos;ਤੇ ਪਾਬੰਦੀ ਲਗਾਓ, ਫੀਚਰ ਜੋੜੋ ਜਾਂ ਨਵਾਂ ਥੀਮ ਚੁਣੋ, ਜੋ ਕਿ ਤੁਹਾਡੇ ਸੁਭਾਅ ਦੇ ਮੁਤਾਬਕ ਹੋਵੇ।">
 <!ENTITY firstrun_bookmarks_title "ਅਤੀਤ">
 <!ENTITY firstrun_bookmarks_message "ਤੁਹਾਡੇ ਮਨਪਸੰਦ, ਅੱਗੇ ਅਤੇ ਕੇਂਦਰ ਵਿੱਚ">
 <!ENTITY firstrun_bookmarks_subtext "ਆਪਣੇ ਬੁੱਕਮਾਰਕਾਂ ਅਤੇ ਅਤੀਤ ਤੋਂ ਨਤੀਜੇ ਲਵੋ, ਜਦੋਂ ਤੁਸੀਂ ਲੱਭਦੇ ਹੋ।">
@@ -539,6 +541,8 @@
      bookmarks, or reading list. -->
 <!ENTITY page_removed "ਸਫ਼ਾ ਹਟਾਇਆ">
 
+<!ENTITY folder_removed "ਫੋਲਡਰ ਹਟਾਇਆ ਗਿਆ">
+
 <!ENTITY bookmark_edit_title "ਬੁੱਕਮਾਰਕ ਨੂੰ ਸੋਧੋ">
 <!ENTITY bookmark_edit_folder_title "ਫੋਲਡਰ ਸੋਧੋ">
 <!ENTITY bookmark_edit_name "ਨਾਂ">
@@ -830,7 +834,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_message "ਰੀਡਰ ਝਲਕ ਆਈਤਮਾਂ ਨੂੰ ਆਫ਼ਲਾਈਨ ਪੜ੍ਹਨ ਵਾਸਤੇ ਬੁੱਕਮਾਰਕ ਕਰੋ।">
 <!ENTITY helper_triple_readerview_open_button "ਬੁੱਕਮਾਰਕ ਵਿੱਚ ਜੋੜੋ">
 
-<!ENTITY activity_stream_topsites "ਚੋਟੀ ਦੀਆਂ ਸਟਾਈਆਂ">
+<!ENTITY activity_stream_topsites "ਚੋਟੀ ਦੀਆਂ ਸਾਈਟਾਂ">
 <!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->
 <!ENTITY activity_stream_topstories "&brandPocket; ਵਲੋਂ ਸਿਫਾਰਸ਼ੀ">
 <!ENTITY activity_stream_highlights "ਸੁਰਖੀਆਂ">
@@ -847,6 +851,7 @@ Stream list for highlights sourced from th user's bookmarks. -->
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_trending): This label is shown in the Activity Stream list for highlights sourced from a recommendations engine. -->
 <!ENTITY activity_stream_highlight_label_trending "ਰੁਝਾਨ">
 <!-- LOCALIZATION NOTE (activity_stream_highlights_empty): This text is shown when we could not find highlights for this user. This is also shown on first run. -->
+<!ENTITY activity_stream_highlights_empty "ਬਰਾਊਜ਼ ਕਰਨਾ ਸ਼ੁਰੂ ਕਰੋ ਅਤੇ ਅਸੀਂ ਤੁਹਾਨੂੰ ਵਧੀਆ ਲੇਖ, ਵੀਡੀਓ ਅਤੇ ਤੁਹਾਡੇ ਵਲੋਂ ਤਾਜ਼ਾ ਖੋਲ੍ਹੇ ਸਫ਼ੇ ਜਾਂ ਬੁੱਕਮਾਰਕ ਇੱਥੇ ਦਿਖਾਵਾਂਗੇ।">
 
 <!-- LOCALIZATION NOTE (activity_stream_remove): This label is shown in the Activity Stream context menu,
 and allows hiding a URL/page from highlights or topsites. The page remains in history/bookmarks, but
@@ -855,6 +860,8 @@ is simply hidden from the Activity Stream panel. -->
 <!ENTITY activity_stream_delete_history "ਅਤੀਤ ਚੋਂ ਹਟਾਓ">
 
 <!ENTITY private_tab_panel_title "ਪ੍ਰਾਈਵੇਟ ਬਰਾਊਜ਼ਿੰਗ + ਟਰੈਕਿੰਗ ਸੁਰੱਖਿਆ">
+<!ENTITY private_tab_panel_description "&brandShortName; ਸਫ਼ੇ ਦੇ ਹਿੱਸਿਆਂ \&apos;ਤੇ ਪਾਬੰਦੀ ਲਗਾਉਂਦਾ ਹੈ, ਜੋ ਕਿ ਤੁਹਾਡੀ ਬਰਾਊਜ਼ ਕਰਨ ਦੀ ਸਰਗਰਮੀ ਨੂੰ ਟਰੈਕ ਕਰ ਸਕਦਾ ਹੈ।">
+<!ENTITY private_tab_panel_description2 "ਅਸੀਂ ਕਿਸੇ ਵੀ ਅਤੀਤ ਨੂੰ ਯਾਦ ਨਹੀਂ ਰੱਖਾਂਗੇ, ਪਰ ਡਾਊਨਲੋਡ ਕੀਤੀਆਂ ਫ਼ਾਈਲਾਂ ਅਤੇ ਨਵੇਂ ਬੁੱਕਮਾਰਕਾਂ ਨੂੰ ਹਾਲੇ ਵੀ ਤੁਹਾਡੇ ਡਿਵਾਈਸ \&apos;ਤੇ ਸੰਭਾਲਿਆ ਜਾਵੇਗਾ।">
 <!ENTITY private_tab_learn_more "ਹੋਰ ਸਿੱਖਣਾ ਚਾਹੁੰਦੇ ਹੋ?">
 
 <!ENTITY fullscreen_warning "ਪੂਰੀ ਸਕਰੀਨ \&apos;ਤੇ">
@@ -867,3 +874,4 @@ displayed when there are more than 3 actions available for a page.
 See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "ਮੁੱਖ ਸਕਰੀਨ \&apos;ਤੇ ਜੋੜੋ">
 <!ENTITY pwa_continue_to_website "ਵੈੱਬਸਾਈਟ ਨਾਲ ਜਾਰੀ ਰੱਖੋ">
+<!ENTITY pwa_onboarding_sumo "ਤੁਸੀਂ ਇਸ ਵੈੱਬਸਾਈਟ ਨੂੰ ਸੌਖੀ ਤਰ੍ਹਾਂ ਆਪਣੀ ਮੁੱਖ ਸਕਰੀਨ \&apos;ਤੇ ਜੋੜ ਸਕਦੇ ਹੋ ਤਾਂ ਕਿ ਐਪ ਵਰਗੇ ਤਜਰਬੇ ਵਾਸਤੇ ਤੁਰੰਤ ਪਹੁੰਚ ਅਤੇ ਤੇਜ਼ੀ ਨਾਲ ਬਰਾਊਜ਼ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾ ਸਕੇ।">

@@ -7,18 +7,30 @@
 <!ENTITY engine.bookmarks.label     "બુકમાર્ક્સ">
 <!ENTITY engine.bookmarks.accesskey "m">
 <!ENTITY engine.tabs.label2         "ટૅબ્સ ખોલો">
+<!ENTITY engine.tabs.title          "બધા સમન્વયિત ઉપકરણો પર શું ખુલ્લું છે તેની સૂચિ">
 <!ENTITY engine.tabs.accesskey      "T">
 <!ENTITY engine.history.label       "ઇતિહાસ">
 <!ENTITY engine.history.accesskey   "r">
 <!ENTITY engine.logins.label        "પ્રવેશો">
+<!ENTITY engine.logins.title        "તમે સાચવેલ વપરાશકર્તાનામો અને પાસવર્ડ્સ">
 <!ENTITY engine.logins.accesskey    "L">
+<!-- On Windows we use the term "Options" to describe settings, but
+     on Linux and Mac OS X we use "Preferences" - carry that distinction
+     over into this string, used as the checkbox which indicates if prefs are synced
+-->
+<!ENTITY engine.prefsWin.label      "વિકલ્પો">
+<!ENTITY engine.prefsWin.accesskey  "S">
 <!ENTITY engine.prefs.label         "પસંદગીઓ">
 <!ENTITY engine.prefs.accesskey     "s">
+<!ENTITY engine.prefs.title         "સામાન્ય, ગોપનીયતા અને સુરક્ષા સેટિંગ્સ જે તમે બદલ્યાં છે">
 <!ENTITY engine.addons.label        "ઍડ-ઓન">
+<!ENTITY engine.addons.title        "Firefox ડેસ્કટૉપ માટે વિસ્તરક અને થીમ્સ">
 <!ENTITY engine.addons.accesskey    "A">
 <!ENTITY engine.addresses.label     "સરનામાઓ">
+<!ENTITY engine.addresses.title     "તમે સાચવેલા પોસ્ટલ સરનામા (ફક્ત ડેસ્કટૉપ)">
 <!ENTITY engine.addresses.accesskey "e">
 <!ENTITY engine.creditcards.label   "ક્રડિટ કાર્ડ્ઝ">
+<!ENTITY engine.creditcards.title   "નામ, નંબર અને સમાપ્તિની તારીખ (ફક્ત ડેસ્કટૉપ)">
 <!ENTITY engine.creditcards.accesskey "C">
 
 <!-- Device Settings -->
@@ -50,18 +62,23 @@ both, to better adapt this sentence to their language.
 <!ENTITY signedInLoginFailure.beforename.label "મહેરબાની કરીને ફરી જોડાણ માટે પ્રવેશો">
 <!ENTITY signedInLoginFailure.aftername.label "">
 
-<!ENTITY notSignedIn.label           "તમે પ્રવેશેલ નથી.">
-<!ENTITY signIn.label                "સાઇન ઇન કરો">
-<!ENTITY signIn.accesskey            "g">
-<!ENTITY profilePicture.tooltip      "પ્રોફાઇલ ચિત્ર બદલો">
-<!ENTITY verifiedManage.label        "ખાતાને સંચાલિત કરો">
-<!ENTITY verifiedManage.accesskey    "o">
-<!ENTITY disconnect3.label           "જોડાણ તોડી નાખો…">
-<!ENTITY disconnect3.accesskey       "D">
+<!ENTITY notSignedIn.label            "તમે પ્રવેશેલ નથી.">
+<!ENTITY signIn.label                 "સાઇન ઇન કરો">
+<!ENTITY signIn.accesskey             "g">
+<!ENTITY profilePicture.tooltip       "પ્રોફાઇલ ચિત્ર બદલો">
+<!ENTITY verifiedManage.label         "ખાતાને સંચાલિત કરો">
+<!ENTITY verifiedManage.accesskey     "o">
+<!ENTITY disconnect3.label            "જોડાણ તોડી નાખો…">
+<!ENTITY disconnect3.accesskey        "D">
 <!ENTITY verify.label                "ઈમેલ ચકાસો">
 <!ENTITY verify.accesskey            "V">
 <!ENTITY forget.label                "આ ઇમેઇલ ભૂલી જાઓ">
 <!ENTITY forget.accesskey            "F">
+
+<!ENTITY resendVerification.label     "ચકાસણી ફરી મોકલો">
+<!ENTITY resendVerification.accesskey "d">
+<!ENTITY cancelSetup.label            "સેટઅપ રદ કરો">
+<!ENTITY cancelSetup.accesskey        "p">
 
 <!ENTITY signedOut.caption            "તમે તમારા વેબ ને લો">
 <!ENTITY signedOut.description        "તમારા બધા ઉપકરણો પર તમારા બુકમાર્ક્સ, ઇતિહાસ, ટૅબ્સ, પાસવર્ડ્સ, ઍડ-ઑન્સ અને પસંદગીઓને સમન્વયિત કરો.">

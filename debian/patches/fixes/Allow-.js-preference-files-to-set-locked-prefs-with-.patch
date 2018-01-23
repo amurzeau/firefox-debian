@@ -3,125 +3,100 @@ Date: Sat, 21 Jun 2008 02:48:46 +0200
 Subject: Allow .js preference files to set locked prefs with lockPref()
 
 ---
- modules/libpref/prefapi.cpp  |  6 ++++--
- modules/libpref/prefapi.h    |  3 ++-
- modules/libpref/prefread.cpp | 13 ++++++++++---
- modules/libpref/prefread.h   |  4 +++-
- 4 files changed, 19 insertions(+), 7 deletions(-)
+ modules/libpref/Preferences.cpp | 22 ++++++++++++++++++----
+ 1 file changed, 18 insertions(+), 4 deletions(-)
 
-diff --git a/modules/libpref/prefapi.cpp b/modules/libpref/prefapi.cpp
-index 9aeed4f1d79e..4657ebdd8489 100644
---- a/modules/libpref/prefapi.cpp
-+++ b/modules/libpref/prefapi.cpp
-@@ -1028,8 +1028,8 @@ void PREF_ReaderCallback(void       *closure,
-                          PrefValue   value,
-                          PrefType    type,
-                          bool        isDefault,
--                         bool        isStickyDefault)
--
-+                         bool        isStickyDefault,
-+                         bool        isLocked)
+diff --git a/modules/libpref/Preferences.cpp b/modules/libpref/Preferences.cpp
+index d20355c2c24d..71752f2fb1f3 100644
+--- a/modules/libpref/Preferences.cpp
++++ b/modules/libpref/Preferences.cpp
+@@ -1185,7 +1185,8 @@ PREF_ReaderCallback(void* aClosure,
+                     PrefValue aValue,
+                     PrefType aType,
+                     bool aIsDefault,
+-                    bool aIsStickyDefault)
++                    bool aIsStickyDefault,
++                    bool aIsLocked)
  {
-     uint32_t flags = 0;
-     if (isDefault) {
-@@ -1041,4 +1041,6 @@ void PREF_ReaderCallback(void       *closure,
-         flags |= kPrefForceSet;
-     }
-     pref_HashPref(pref, value, type, flags);
-+    if (isLocked)
-+        PREF_LockPref(pref, true);
+   uint32_t flags = 0;
+   if (aIsDefault) {
+@@ -1197,6 +1198,9 @@ PREF_ReaderCallback(void* aClosure,
+     flags |= kPrefForceSet;
+   }
+   pref_SetPref(aPref, aValue, aType, flags);
++  if (aIsLocked) {
++    PREF_LockPref(aPref, true);
++  }
  }
-diff --git a/modules/libpref/prefapi.h b/modules/libpref/prefapi.h
-index ab525bbcc5c9..cc49678acc74 100644
---- a/modules/libpref/prefapi.h
-+++ b/modules/libpref/prefapi.h
-@@ -246,7 +246,8 @@ void PREF_ReaderCallback( void *closure,
-                           PrefValue   value,
-                           PrefType    type,
-                           bool        isDefault,
--                          bool        isStickyDefault);
-+                          bool        isStickyDefault,
-+                          bool        isLocked);
  
+ //===========================================================================
+@@ -1218,7 +1222,8 @@ typedef void (*PrefReader)(void* aClosure,
+                            PrefValue aValue,
+                            PrefType aType,
+                            bool aIsDefault,
+-                           bool aIsStickyDefault);
++                           bool aIsStickyDefault,
++                           bool aIsLocked);
  
- /*
-diff --git a/modules/libpref/prefread.cpp b/modules/libpref/prefread.cpp
-index 1f29b8e07cd8..e1ec9d529394 100644
---- a/modules/libpref/prefread.cpp
-+++ b/modules/libpref/prefread.cpp
-@@ -43,6 +43,7 @@ enum {
- #define BITS_PER_HEX_DIGIT      4
+ // Report any errors or warnings we encounter during parsing.
+ typedef void (*PrefParseErrorReporter)(const char* aMessage,
+@@ -1246,6 +1251,7 @@ struct PrefParseState
+   PrefType mVtype;       // PREF_{STRING,INT,BOOL}
+   bool mIsDefault;       // true if (default) pref
+   bool mIsStickyDefault; // true if (sticky) pref
++  bool mIsLocked;        // true if (locked) pref
+ };
+ 
+ // Pref parser states.
+@@ -1275,6 +1281,7 @@ enum
+ #define BITS_PER_HEX_DIGIT 4
  
  static const char kUserPref[] = "user_pref";
 +static const char kLockPref[] = "lockPref";
  static const char kPref[] = "pref";
  static const char kPrefSticky[] = "sticky_pref";
  static const char kTrue[] = "true";
-@@ -146,7 +147,7 @@ pref_DoCallback(PrefParseState *ps)
-         break;
-     }
-     (*ps->reader)(ps->closure, ps->lb, value, ps->vtype, ps->fdefault,
--                  ps->fstickydefault);
-+                  ps->fstickydefault, ps->flock);
-     return true;
- }
- 
-@@ -215,6 +216,7 @@ PREF_ParseBuf(PrefParseState *ps, const char *buf, int bufLen)
-                 ps->vtype = PrefType::Invalid;
-                 ps->fdefault = false;
-                 ps->fstickydefault = false;
-+                ps->flock = false;
+@@ -1422,6 +1429,7 @@ PREF_ParseBuf(PrefParseState* aPS, const char* aBuf, int aBufLen)
+           aPS->mVtype = PrefType::Invalid;
+           aPS->mIsDefault = false;
+           aPS->mIsStickyDefault = false;
++          aPS->mIsLocked = false;
+         }
+         switch (c) {
+           case '/': // begin comment block or line?
+@@ -1433,10 +1441,13 @@ PREF_ParseBuf(PrefParseState* aPS, const char* aBuf, int aBufLen)
+           case 'u': // indicating user_pref
+           case 's': // indicating sticky_pref
+           case 'p': // indicating pref
++          case 'l': // indicating lockPref
+             if (c == 'u') {
+               aPS->mStrMatch = kUserPref;
+             } else if (c == 's') {
+               aPS->mStrMatch = kPrefSticky;
++            } else if (c == 'l') {
++              aPS->mStrMatch = kLockPref;
+             } else {
+               aPS->mStrMatch = kPref;
              }
-             switch (c) {
-             case '/':       /* begin comment block or line? */
-@@ -226,12 +228,15 @@ PREF_ParseBuf(PrefParseState *ps, const char *buf, int bufLen)
-             case 'u':       /* indicating user_pref */
-             case 's':       /* indicating sticky_pref */
-             case 'p':       /* indicating pref */
-+            case 'l':       /* indicating lockPref */
-                 if (c == 'u') {
-                   ps->smatch = kUserPref;
-                 } else if (c == 's') {
-                   ps->smatch = kPrefSticky;
--                } else {
-+                } else if (c == 'p') {
-                   ps->smatch = kPref;
-+                } else {
-+                  ps->smatch = kLockPref;
-                 }
-                 ps->sindex = 1;
-                 ps->nextstate = PREF_PARSE_UNTIL_OPEN_PAREN;
-@@ -277,8 +282,10 @@ PREF_ParseBuf(PrefParseState *ps, const char *buf, int bufLen)
-         /* name parsing */
-         case PREF_PARSE_UNTIL_NAME:
-             if (c == '\"' || c == '\'') {
--                ps->fdefault = (ps->smatch == kPref || ps->smatch == kPrefSticky);
-+                ps->fdefault = (ps->smatch == kPref || ps->smatch == kPrefSticky
-+                                || ps->smatch == kLockPref);
-                 ps->fstickydefault = (ps->smatch == kPrefSticky);
-+                ps->flock = (ps->smatch == kLockPref);
-                 ps->quotechar = c;
-                 ps->nextstate = PREF_PARSE_UNTIL_COMMA; /* return here when done */
-                 state = PREF_PARSE_QUOTED_STRING;
-diff --git a/modules/libpref/prefread.h b/modules/libpref/prefread.h
-index f9027fda3be0..ecd6e8bfe771 100644
---- a/modules/libpref/prefread.h
-+++ b/modules/libpref/prefread.h
-@@ -34,7 +34,8 @@ typedef void (*PrefReader)(void       *closure,
-                            PrefValue   val,
-                            PrefType    type,
-                            bool        defPref,
--                           bool        stickyPref);
-+                           bool        stickyPref,
-+                           bool        lockPref);
+@@ -1485,8 +1496,10 @@ PREF_ParseBuf(PrefParseState* aPS, const char* aBuf, int aBufLen)
+       case PREF_PARSE_UNTIL_NAME:
+         if (c == '\"' || c == '\'') {
+           aPS->mIsDefault =
+-            (aPS->mStrMatch == kPref || aPS->mStrMatch == kPrefSticky);
++            (aPS->mStrMatch == kPref || aPS->mStrMatch == kPrefSticky ||
++             aPS->mStrMatch == kLockPref);
+           aPS->mIsStickyDefault = (aPS->mStrMatch == kPrefSticky);
++          aPS->mIsLocked = (aPS->mStrMatch == kLockPref);
+           aPS->mQuoteChar = c;
+           aPS->mNextState = PREF_PARSE_UNTIL_COMMA; // return here when done
+           state = PREF_PARSE_QUOTED_STRING;
+@@ -1815,7 +1828,8 @@ PREF_ParseBuf(PrefParseState* aPS, const char* aBuf, int aBufLen)
+                        value,
+                        aPS->mVtype,
+                        aPS->mIsDefault,
+-                       aPS->mIsStickyDefault);
++                       aPS->mIsStickyDefault,
++                       aPS->mIsLocked);
  
- /**
-  * Report any errors or warnings we encounter during parsing.
-@@ -62,6 +63,7 @@ typedef struct PrefParseState {
-     PrefType    vtype;      /* PREF_STRING,INT,BOOL          */
-     bool        fdefault;   /* true if (default) pref        */
-     bool        fstickydefault; /* true if (sticky) pref     */
-+    bool        flock;      /* true if pref to be locked     */
- } PrefParseState;
- 
- /**
+           state = PREF_PARSE_INIT;
+         } else if (c == '/') {

@@ -46,7 +46,7 @@
 
 <!ENTITY  feedTab               "Fluxuri">
 <!ENTITY  feedTab.accesskey     "F">
-<!ENTITY  feedSubscribe         "Abonare">
+<!ENTITY  feedSubscribe         "Abonează-te">
 <!ENTITY  feedSubscribe.accesskey "A">
 
 <!ENTITY  permTab               "Permisiuni">
@@ -55,6 +55,7 @@
 <!ENTITY  permAskAlways         "Întreabă întotdeauna">
 <!ENTITY  permAllow             "Permite">
 <!ENTITY  permAllowSession      "Permite pentru sesiune">
+<!ENTITY  permHide              "Ascunde">
 <!ENTITY  permBlock             "Blochează">
 <!ENTITY  permissionsFor        "Permisiuni pentru:">
 <!ENTITY  permPlugins           "Activează pluginurile">

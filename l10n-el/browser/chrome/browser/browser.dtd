@@ -51,6 +51,7 @@ can reach it easily. -->
 <!ENTITY  sendLinkToDevice.label             "Αποστολή συνδέσμου σε συσκευή">
 <!ENTITY  sendLinkToDevice.accesskey         "μ">
 <!ENTITY  sendToDeviceFeedback.label         "Απεστάλη!">
+<!ENTITY  sendToDeviceOfflineFeedback.label  "Σε ουρά (εκτός σύνδεσης)">
 <!ENTITY  moveToNewWindow.label              "Μετακίνηση σε νέο παράθυρο">
 <!ENTITY  moveToNewWindow.accesskey          "π">
 <!ENTITY  bookmarkAllTabs.label              "Προσθήκη όλων των καρτελών στους σελιδοδείκτες…">
@@ -83,12 +84,12 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY goOfflineCmd.label "Εργασία χωρίς σύνδεση">
 <!ENTITY goOfflineCmd.accesskey "χ">
 
-<!ENTITY menubarCmd.label "Γραμμή εργαλείων μενού">
-<!ENTITY menubarCmd.accesskey "θ">
-<!ENTITY navbarCmd.label "Γραμμή εργαλείων πλοήγησης">
+<!ENTITY menubarCmd.label "Γραμμή μενού">
+<!ENTITY menubarCmd.accesskey "μ">
+<!ENTITY navbarCmd.label "Γραμμή πλοήγησης">
 <!ENTITY personalbarCmd.label "Γραμμή σελιδοδεικτών">
 <!ENTITY personalbarCmd.accesskey "γ">
-<!ENTITY bookmarksToolbarItem.label "Στοιχεία γραμμής εργαλείων σελιδοδεικτών">
+<!ENTITY bookmarksToolbarItem.label "Στοιχεία γραμμής σελιδοδεικτών">
 
 <!ENTITY toolbarContextMenu.reloadAllTabs.label "Ανανέωση όλων των καρτελών">
 <!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "ο">
@@ -143,7 +144,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      respectively before and after the domain requiring fullscreen.
      Localizers can use one of them, or both, to better adapt this
      sentence to their language. -->
-<!ENTITY fullscreenWarning.beforeDomain.label "">
+<!ENTITY fullscreenWarning.beforeDomain.label "Το ">
 <!ENTITY fullscreenWarning.afterDomain.label "εκτελείται σε πλήρη οθόνη">
 <!ENTITY fullscreenWarning.generic.label "Αυτό το έγγραφο εμφανίζεται σε πλήρη οθόνη">
 
@@ -160,7 +161,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      respectively before and after the domain requiring pointerlock.
      Localizers can use one of them, or both, to better adapt this
      sentence to their language. -->
-<!ENTITY pointerlockWarning.beforeDomain.label "Ο τομέας">
+<!ENTITY pointerlockWarning.beforeDomain.label "Το ">
 <!ENTITY pointerlockWarning.afterDomain.label "ελέγχει τον κέρσορα. Πατήστε Esc για ανάκτηση ελέγχου.">
 <!ENTITY pointerlockWarning.generic.label "Αυτό το έγγραφο ελέγχει τον κέρσορα. Πατήστε Esc για ανάκτηση ελέγχου.">
 
@@ -171,7 +172,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarksMenu.accesskey "Σ">
 <!ENTITY bookmarkThisPageCmd.label "Προσθήκη στους σελιδοδείκτες">
 <!ENTITY editThisBookmarkCmd.label "Επεξεργασία σελιδοδείκτη">
-<!ENTITY bookmarkThisPageCmd.commandkey "d">
+<!ENTITY bookmarkThisPageCmd.commandkey "π">
 
 <!ENTITY subscribeToPageMenupopup.label "Συνδρομή σε αυτή τη σελίδα">
 <!ENTITY subscribeToPageMenuitem.label "Συνδρομή σε αυτή τη σελίδα…">
@@ -206,7 +207,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "Άνοιγμα πλαισίου μηνυμάτων εγκατάστασης προσθέτων">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "Άνοιγμα πλαισίου μηνυμάτων αποθηκευμένων εκτός σύνδεσης">
 <!ENTITY urlbar.passwordNotificationAnchor.tooltip        "Άνοιγμα πλαισίου μηνυμάτων αποθήκευσης συνθηματικού">
-<!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Διαχείριση χρήσης πρόσθετων λειτουργιών">
+<!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Διαχείριση χρήσης αρθρωμάτων">
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "Αλλαγή του αν θα λαμβάνετε ειδοποιήσεις από τον ιστοτόπο">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Αποθήκευση δεδομένων στην Επίμονη Αποθήκευση">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Το πρόγραμμα περιήγησης ελέγχεται απομακρυσμένα">
@@ -229,6 +230,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Έχετε αποκλείσει την επίμονη αποθήκευση για αυτή την ιστοσελίδα.">
 
 
+
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Προβολή ιστορικού">
 
 <!ENTITY searchItem.title             "Αναζήτηση">
@@ -245,7 +247,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarksMenuButton.mobile.label   "Σελιδοδείκτες κινητού">
 <!ENTITY viewBookmarksSidebar2.label        "Προβολή πλευρικής στήλης σελιδοδεικτών">
 <!ENTITY hideBookmarksSidebar.label         "Απόκρυψη πλευρικής στήλης σελιδοδεικτών">
-<!ENTITY viewBookmarksToolbar.label         "Προβολή εργαλειοθήκης σελιδοδεικτών">
+<!ENTITY viewBookmarksToolbar.label         "Προβολή γραμμής σελιδοδεικτών">
 <!ENTITY hideBookmarksToolbar.label         "Απόκρυψη γραμμής σελιδοδεικτών">
 <!ENTITY searchBookmarks.label              "Αναζήτηση σελιδοδεικτών">
 <!ENTITY bookmarkingTools.label             "Εργαλεία σελιδοδεικτών">
@@ -329,7 +331,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY viewMenu.label         "Προβολή">
 <!ENTITY viewMenu.accesskey       "ρ">
-<!ENTITY viewToolbarsMenu.label       "Εργαλειοθήκες">
+<!ENTITY viewToolbarsMenu.label       "Γραμμές εργαλείων">
 <!ENTITY viewToolbarsMenu.accesskey     "ρ">
 <!ENTITY viewSidebarMenu.label "Πλευρική στήλη">
 <!ENTITY viewSidebarMenu.accesskey "ε">
@@ -352,6 +354,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuCustomize.tooltip "Προσαρμογή του μενού και των γραμμών εργαλείων">
 <!ENTITY appMenuCustomizeExit.label "Τέλος προσαρμογής">
 <!ENTITY appMenuCustomizeExit.tooltip "Ολοκλήρωση προσαρμογής">
+
 <!ENTITY appMenuHistory.showAll.label "Προβολή όλου του ιστορικού">
 <!ENTITY appMenuHistory.clearRecent.label "Εκκαθάριση πρόσφατου ιστορικού…">
 <!ENTITY appMenuHistory.restoreSession.label "Επαναφορά προηγούμενης συνεδρίας">
@@ -387,7 +390,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.sidebar.label "Δείτε την πλευρική στήλη του Συγχρονισμού">
 
 
-<!ENTITY customizeMenu.addToToolbar.label "Προσθήκη στην εργαλειοθήκη">
+
+<!ENTITY customizeMenu.addToToolbar.label "Προσθήκη στη γραμμή εργαλείων">
 <!ENTITY customizeMenu.addToToolbar.accesskey "Α">
 <!ENTITY customizeMenu.addToPanel.label "Προσθήκη στο μενού">
 <!ENTITY customizeMenu.addToPanel.accesskey "Μ">
@@ -396,9 +400,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      The overflow menu is the menu that appears if you click the chevron (>> button)
      in the location bar. These labels are only used in Photon, where you can put
      items into this menu permanently (pinned). -->
-<!ENTITY customizeMenu.addToOverflowMenu.label "Προσθήκη στο μενού">
+<!ENTITY customizeMenu.addToOverflowMenu.label "Προσθήκη στο αναδυόμενο μενού">
 <!ENTITY customizeMenu.addToOverflowMenu.accesskey "Μ">
-<!ENTITY customizeMenu.moveToToolbar.label "Μετακίνηση στην εργαλειοθήκη">
+<!ENTITY customizeMenu.moveToToolbar.label "Μετακίνηση στη γραμμή εργαλείων">
 <!ENTITY customizeMenu.moveToToolbar.accesskey "ο">
 <!-- LOCALIZATION NOTE (customizeMenu.moveToPanel.accesskey, customizeMenu.pinToOverflowMenu.accesskey)
      can appear on the same context menu as menubarCmd and personalbarCmd,
@@ -407,9 +411,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      keys.  -->
 <!ENTITY customizeMenu.moveToPanel.label "Μετακίνηση στο μενού">
 <!ENTITY customizeMenu.moveToPanel.accesskey "ο">
-<!ENTITY customizeMenu.pinToOverflowMenu.label "Καρφίτσωμα στο μενού">
+<!ENTITY customizeMenu.pinToOverflowMenu.label "Καρφίτσωμα στο αναδυόμενο μενού">
 <!ENTITY customizeMenu.pinToOverflowMenu.accesskey "Κ">
-<!ENTITY customizeMenu.unpinFromOverflowMenu.label "Ξεκαρφίτσωμα από το μενού">
+<!ENTITY customizeMenu.unpinFromOverflowMenu.label "Ξεκαρφίτσωμα από το αναδυόμενο μενού">
 <!ENTITY customizeMenu.unpinFromOverflowMenu.accesskey "Ξ">
 <!ENTITY customizeMenu.removeFromToolbar.label "Αφαίρεση από τη γραμμή εργαλείων">
 <!ENTITY customizeMenu.removeFromToolbar.accesskey "R">
@@ -513,19 +517,19 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY searchSetAsDefault.label     "Ορισμός ως προκαθορισμένη μηχανή αναζήτησης">
 <!ENTITY searchSetAsDefault.accesskey "D">
 
-<!ENTITY openLinkCmdInTab.label       "Άνοιγμα δεσμού σε νέα καρτέλα">
+<!ENTITY openLinkCmdInTab.label       "Άνοιγμα συνδέσμου σε νέα καρτέλα">
 <!ENTITY openLinkCmdInTab.accesskey   "τ">
 <!ENTITY openLinkCmd.label            "Άνοιγμα συνδέσμου σε νέο παράθυρο">
 <!ENTITY openLinkCmd.accesskey        "δ">
 <!ENTITY openLinkInPrivateWindowCmd.label "Άνοιγμα συνδέσμου σε νέο ιδιωτικό παράθυρο">
 <!ENTITY openLinkInPrivateWindowCmd.accesskey "δ">
-<!ENTITY openLinkCmdInCurrent.label     "Άνοιγμα δεσμού">
+<!ENTITY openLinkCmdInCurrent.label     "Άνοιγμα συνδέσμου">
 <!ENTITY openLinkCmdInCurrent.accesskey "ο">
 <!ENTITY openFrameCmdInTab.label      "Άνοιγμα πλαισίου σε νέα καρτέλα">
 <!ENTITY openFrameCmdInTab.accesskey  "π">
 <!ENTITY openFrameCmd.label           "Άνοιγμα πλαισίου σε νέο παράθυρο">
 <!ENTITY openFrameCmd.accesskey       "ν">
-<!ENTITY openLinkCmdInContainerTab.label "Άνοιγμα δεσμού σε νέα καρτέλα εντός περιβάλλοντος">
+<!ENTITY openLinkCmdInContainerTab.label "Άνοιγμα συνδέσμου σε νέα θεματική καρτέλα">
 <!ENTITY openLinkCmdInContainerTab.accesskey "κ">
 <!ENTITY showOnlyThisFrameCmd.label     "Προβολή μόνο αυτού του πλαισίου">
 <!ENTITY showOnlyThisFrameCmd.accesskey "ν">
@@ -577,7 +581,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY saveFrameCmd.accesskey       "π">
 <!ENTITY printFrameCmd.label          "Εκτύπωση πλαισίου…">
 <!ENTITY printFrameCmd.accesskey      "λ">
-<!ENTITY saveLinkCmd.label            "Αποθήκευση δεσμού ως…">
+<!ENTITY saveLinkCmd.label            "Αποθήκευση συνδέσμου ως…">
 <!ENTITY saveLinkCmd.accesskey        "θ">
 <!ENTITY saveImageCmd.label           "Αποθήκευση εικόνας ως…">
 <!ENTITY saveImageCmd.accesskey       "θ">
@@ -591,11 +595,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY emailVideoCmd.accesskey      "σ">
 <!ENTITY emailAudioCmd.label          "Αποστολή ήχου…">
 <!ENTITY emailAudioCmd.accesskey      "χ">
-<!ENTITY playPluginCmd.label          "Ενεργοποίηση αυτής της πρόσθετης λειτουργίας">
+<!ENTITY playPluginCmd.label          "Ενεργοποίηση αρθρώματος">
 <!ENTITY playPluginCmd.accesskey      "γ">
-<!ENTITY hidePluginCmd.label          "Απόκρυψη αυτής της πρόσθετης λειτουργίας">
+<!ENTITY hidePluginCmd.label          "Απόκρυψη αρθρώματος">
 <!ENTITY hidePluginCmd.accesskey      "π">
-<!ENTITY copyLinkCmd.label            "Αντιγραφή τοποθεσίας δεσμού">
+<!ENTITY copyLinkCmd.label            "Αντιγραφή τοποθεσίας συνδέσμου">
 <!ENTITY copyLinkCmd.accesskey        "γ">
 <!ENTITY copyImageCmd.label           "Αντιγραφή τοποθεσίας εικόνας">
 <!ENTITY copyImageCmd.accesskey       "ν">
@@ -746,6 +750,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY editBookmark.done.label                     "Προσθήκη">
 <!ENTITY editBookmark.removeBookmark.accessKey       "ρ">
 
+<!-- LOCALIZATION NOTE (identity.securityView.label)
+     This is the header of the security subview in the Site Identity panel. -->
+<!ENTITY identity.securityView.label "Ασφάλεια ιστοσελίδας">
+
 <!ENTITY identity.connectionSecure "Ασφαλής σύνδεση">
 <!ENTITY identity.connectionNotSecure "Η σύνδεση δεν είναι ασφαλής">
 <!ENTITY identity.connectionFile "Αυτή η σελίδα είναι αποθηκευμένη στον υπολογιστή σας.">
@@ -755,7 +763,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.insecureLoginForms2 "Τα στοιχεία σύνδεσης που πληκτρολογήσατε σε αυτή την σελίδα μπορεί να διαρεύσουν.">
 
 <!-- Strings for connection state warnings. -->
-<!ENTITY identity.activeBlocked "Ο &brandShortName; έχει εμποδίσει τμήματα αυτής της σελίδας που δεν είναι ασφαλή.">
+<!ENTITY identity.activeBlocked "Το &brandShortName; έχει αποκλείσει επισφαλή τμήματα αυτής της σελίδας.">
 <!ENTITY identity.passiveLoaded "Κάποια τμήματα αυτής της σελίδας δεν είναι ασφαλή (π.χ. κάποιες εικόνες).">
 <!ENTITY identity.activeLoaded "Έχετε απενεργοποιήσει την προστασία σε αυτή τη σελίδα.">
 <!ENTITY identity.weakEncryption "Αυτή η σελίδα χρησιμοποιεί μη ισχυρή κρυπτογράφηση.">
@@ -765,10 +773,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.description.insecureLoginForms "Τα στοιχεία σύνδεσης που εισάγατε στη σελίδα δεν είναι ασφαλή και μπορεί να τεθούν σε κίνδυνο.">
 <!ENTITY identity.description.weakCipher "Η σύνδεση σας σε αυτή τη σελίδα χρησιμοποιεί μη ισχυρή κρυπτογράφηση και δεν είναι ασφαλής.">
 <!ENTITY identity.description.weakCipher2 "Τρίτοι μπορούν να δουν τις πληροφορίες σας ή να τροποποιήσουν την συμπεριφορά αυτής της ιστοσελίδας.">
-<!ENTITY identity.description.activeBlocked "Ο &brandShortName; έχει εμποδίσει τμήματα αυτής της σελίδας που δεν είναι ασφαλή.">
+<!ENTITY identity.description.activeBlocked "Το &brandShortName; έχει αποκλείσει επισφαλή τμήματα αυτής της σελίδας.">
 <!ENTITY identity.description.passiveLoaded "Η σύνδεσή σας δεν είναι ασφαλής και πληροφορίες που μοιράζεστε με αυτή τη σελίδα μπορεί να είναι ορατές από τρίτους.">
 <!ENTITY identity.description.passiveLoaded2 "Αυτή η σελίδα έχει περιεχόμενο που δεν είναι ασφαλές (π.χ. εικόνες).">
-<!ENTITY identity.description.passiveLoaded3 "Παρόλο που ο &brandShortName; έχει εμποδίσει τμήματα του περιεχομένου, υπάρχουν ακόμα κάποια τμήματα που δεν είναι ασφαλή (π.χ. εικόνες).">
+<!ENTITY identity.description.passiveLoaded3 "Παρόλο που το &brandShortName; έχει αποκλείσει ορισμένο περιεχόμενο, υπάρχει ακόμη επισφαλές περιεχόμενο (π.χ. εικόνες).">
 <!ENTITY identity.description.activeLoaded "Αυτή η ιστοσελίδα έχει περιεχόμενο που δεν είναι ασφαλές (π.χ. scripts) και η σύνδεσή σας δεν είναι ασφαλής.">
 <!ENTITY identity.description.activeLoaded2 "Πληροφορίες που μοιράζεστε με αυτή τη σελίδα μπορεί να είναι ορατές από τρίτους (όπως κωδικοί, μηνύματα, πιστωτικές κάρτες κ.α.).">
 
@@ -792,19 +800,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY tabsToolbar.label "Καρτέλες περιηγητή">
 
 <!-- LOCALIZATION NOTE (syncTabsMenu3.label): This appears in the history menu -->
-<!ENTITY syncTabsMenu3.label     "Συγχρονισμένες καρτέλλες">
+<!ENTITY syncTabsMenu3.label     "Συγχρονισμένες καρτέλες">
 
-<!ENTITY syncedTabs.sidebar.label              "Συγχρονισμένες καρτέλλες">
+<!ENTITY syncedTabs.sidebar.label              "Συγχρονισμένες καρτέλες">
 <!ENTITY syncedTabs.sidebar.noclients.label    "Συνδεθείτε στο Firefox από τις άλλες συσκευές σας για να δείτε τις καρτέλες τους εδώ.">
 <!ENTITY syncedTabs.sidebar.noclients.title    "Καμία συγχρονισμένη καρτέλα… ακόμη!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Θέλετε να δείτε τις καρτέλες σας από άλλες συσκευές εδώ;">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Συνδεθείτε για να δείτε μια λίστα καρτελών από τις άλλες συσκευές σας.">
+<!ENTITY syncedTabs.sidebar.unverified.label   "Ο λογαριασμός σας πρέπει να επαληθευτεί.">
 <!ENTITY syncedTabs.sidebar.notabs.label       "Δεν υπάρχουν ανοικτές καρτέλες">
 <!ENTITY syncedTabs.sidebar.openprefs.label    "Ανοίξτε τις προτιμήσεις του &syncBrand.shortName.label;">
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Ενεργοποιήστε τον συγχρονισμό καρτελών για να δείτε μια λίστα από καρτέλες από τις άλλες σας συσκευές.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Αναζήτηση συγχρονισμένων καρτελών">
+
+<!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Σύνδεση άλλης συσκευής">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
                         syncedTabs.context.openAllInTabs.accesskey):
@@ -839,21 +850,24 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncReAuthItem.accesskey     "Ρ">
 <!ENTITY syncToolbarButton.label      "Sync">
 
-<!ENTITY customizeMode.menuAndToolbars.header3 "Σύρετε τα αγαπημένα σας στοιχεία στη γραμμή εργαλείων ή το αναδιπλούμενο μενού.">
+<!ENTITY customizeMode.menuAndToolbars.header3 "Σύρετε τα αγαπημένα σας στοιχεία στη γραμμή εργαλείων ή το αναδυόμενο μενού.">
 <!ENTITY customizeMode.menuAndToolbars.empty "Θέλετε περισσότερα εργαλεία;">
-<!ENTITY customizeMode.menuAndToolbars.emptyLink "Επιλέξτε ανάμεσα από χιλιάδες πρόσθετα">
+<!ENTITY customizeMode.menuAndToolbars.emptyLink "Επιλέξτε ανάμεσα σε χιλιάδες πρόσθετα">
 <!ENTITY customizeMode.restoreDefaults "Επαναφορά προεπιλογών">
 <!ENTITY customizeMode.done "Τέλος">
 <!ENTITY customizeMode.titlebar "Γραμμή τίτλου">
+<!ENTITY customizeMode.extraDragSpace "Χώρος μεταφοράς">
 <!ENTITY customizeMode.toolbars2 "Γραμμές εργαλειών">
 <!ENTITY customizeMode.lwthemes "Θέματα">
 <!ENTITY customizeMode.lwthemes.myThemes "Τα θέματά μου">
 <!ENTITY customizeMode.lwthemes.recommended "Προτεινόμενα">
 <!ENTITY customizeMode.lwthemes.menuManage "Διαχείριση">
-<!ENTITY customizeMode.lwthemes.menuManage.accessKey "μ">
+<!ENTITY customizeMode.lwthemes.menuManage.accessKey "χ">
 <!ENTITY customizeMode.lwthemes.menuGetMore "Λήψη περισσότερων θεμάτων">
-<!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "γ">
+<!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "Λ">
 <!ENTITY customizeMode.emptyOverflowList.description "Σύρετε και εναποθέστε στοιχεία εδώ για να τα έχετε πάντα κοντά, αλλά όχι στη γραμμή εργαλείων…">
+<!ENTITY customizeMode.overflowList.title2 "Αναδυόμενο μενού">
+<!ENTITY customizeMode.overflowList.description "Σύρετε και εναποθέστε στοιχεία εδώ για να τα έχετε πάντα κοντά, αλλά όχι στη γραμμή εργαλείων…">
 <!ENTITY customizeMode.uidensity "Πυκνότητα">
 <!-- LOCALIZATION NOTE (customizeMode.uidensity.menuNormal.*):
      “Normal” is displayed in the Customize screen, under the Density menu. -->
@@ -885,7 +899,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.allWindowsShared.message "Θα μοιραστούν όλα τα ορατά παράθυρα της οθόνη σας.">
 
 <!ENTITY trackingProtection.title "Προστασία από παρακολούθηση">
-<!ENTITY trackingProtection.detectedBlocked3 "Ο &brandShortName; εμποδίζει τμήματα της σελίδας που μπορούν να καταγράψουν τη συμπεριφορά σας.">
+<!ENTITY trackingProtection.detectedBlocked3 "Το &brandShortName; αποκλείει τμήματα της σελίδας που ίσως παρακολουθούν την περιήγησή σας.">
 <!ENTITY trackingProtection.detectedNotBlocked3 "Αυτή η ιστοσελίδα περιέχει στοιχεία που μπορούν να καταγράψουν τη συμπεριφορά σας. Έχετε απενεργοποιήσει την προστασία.">
 <!ENTITY trackingProtection.notDetected3 "Κανένα στοιχείο καταγραφής σε αυτή τη σελίδα.">
 <!-- LOCALIZATION NOTE (trackingProtection.unblock.label, trackingProtection.unblock.accesskey):
@@ -907,7 +921,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- LOCALIZATION NOTE (pluginActivateNow.label, pluginActivateAlways.label, pluginBlockNow.label): These should be the same as the matching strings in browser.properties -->
 <!ENTITY pluginActivateNow.label "Να επιτρέπεται για τώρα">
 <!ENTITY pluginActivateAlways.label "Να επιτρέπεται πάντα">
-<!ENTITY pluginBlockNow.label "Φραγή πρόσθετης λειτουργίας">
+<!ENTITY pluginBlockNow.label "Φραγή αρθρώματος">
 
 <!-- LOCALIZATION NOTE: (pluginNotification.width): This is used to determine the
      width of the plugin popup notification that can appear if a plugin has been
@@ -969,12 +983,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.acceptButton.label "Επανεκκίνηση και επαναφορά">
 <!ENTITY updateRestart.acceptButton.accesskey "Ε">
 <!ENTITY updateRestart.cancelButton.label "Όχι τώρα">
-<!ENTITY updateRestart.cancelButton.accesskey "Ο">
+<!ENTITY updateRestart.cancelButton.accesskey "Ό">
 <!ENTITY updateRestart.panelUI.label2 "Επανεκκίνηση για ενημέρωση του &brandShorterName;">
+
+<!ENTITY newTabControlled.header.message "Η νέα σας καρτέλα έχει αλλάξει.">
+<!ENTITY newTabControlled.keepButton.label "Διατήρηση αλλαγών">
+<!ENTITY newTabControlled.keepButton.accesskey "Δ">
+<!ENTITY newTabControlled.restoreButton.label "Επαναφορά ρυθμίσεων">
+<!ENTITY newTabControlled.restoreButton.accesskey "Ε">
 
 <!ENTITY pageActionButton.tooltip "Ενέργειες σελίδας">
 <!ENTITY pageAction.addToUrlbar.label "Προσθήκη στη γραμμή διευθύνσεων">
 <!ENTITY pageAction.removeFromUrlbar.label "Αφαίρεση από τη γραμμή διευθύνσεων">
+
+<!ENTITY pageAction.allowInUrlbar.label "Εμφάνιση στη γραμμή διευθύνσεων">
+<!ENTITY pageAction.disallowInUrlbar.label "Απόκρυψη από τη γραμμή διευθύνσεων">
+<!ENTITY pageAction.manageExtension.label "Διαχείριση επέκτασης…">
 
 <!ENTITY pageAction.sendTabToDevice.label "Αποστολή καρτέλας σε συσκευή">
 <!ENTITY sendToDevice.syncNotReady.label "Συγχρονισμός συσκευών…">
@@ -985,3 +1009,4 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      display a tooltip for accessibility indicator in toolbar/tabbar. It is also
      used as a textual label for the indicator used by assistive technology
      users. -->
+<!ENTITY accessibilityIndicator.tooltip "Οι λειτουργίες προσβασιμότητας ενεργοποιήθηκαν">

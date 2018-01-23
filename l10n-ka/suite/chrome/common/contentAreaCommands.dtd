@@ -59,11 +59,11 @@
 <!ENTITY viewBGImageCmd.accesskey     "w">
 <!ENTITY setDesktopBackgroundCmd.label     "სამუშაო ფონის მითითება…">
 <!ENTITY setDesktopBackgroundCmd.accesskey "a">
-<!ENTITY bookmarkPageCmd.label        "გვერდის სანიშნეებში შეტანა…">
+<!ENTITY bookmarkPageCmd.label        "გვერდის ჩანიშვნა…">
 <!ENTITY bookmarkPageCmd.accesskey    "m">
-<!ENTITY bookmarkLinkCmd.label        "ბმის სანიშნეებში შეტანა…">
+<!ENTITY bookmarkLinkCmd.label        "ბმულის ჩანიშვნა…">
 <!ENTITY bookmarkLinkCmd.accesskey    "B">
-<!ENTITY bookmarkFrameCmd.label       "ბლოკის სანიშნეებში შეტანა…">
+<!ENTITY bookmarkFrameCmd.label       "ჩარჩოს ჩანიშვნა…">
 <!ENTITY bookmarkFrameCmd.accesskey   "m">
 <!ENTITY savePageAsCmd.label          "გვერდის შენახვა როგორც…">
 <!ENTITY savePageCmd.label            "გვერდის შენახვა…">
@@ -72,6 +72,8 @@
 <!ENTITY saveFrameAsCmd.label         "ბლოკის შენახვა როგორც…">
 <!ENTITY saveFrameCmd.label           "ბლოკის შენახვა…">
 <!ENTITY saveFrameCmd.accesskey       "a">
+<!ENTITY printFrameCmd.label          "ჩარჩოს ამობეჭდვა…">
+<!ENTITY printFrameCmd.accesskey      "ჭ">
 <!ENTITY saveLinkAsCmd.label          "ბმის შენახვა როგორც…">
 <!ENTITY saveLinkCmd.label            "ბმის შენახვა…">
 <!ENTITY saveLinkCmd.accesskey        "S">
@@ -108,12 +110,16 @@
 <!ENTITY mediaPlaybackRate.accesskey    "b">
 <!ENTITY mediaPlaybackRate050.label     "შენელებული (½×)">
 <!ENTITY mediaPlaybackRate050.accesskey "S">
-<!ENTITY mediaPlaybackRate100.label     "ჩვეულებრი">
-<!ENTITY mediaPlaybackRate100.accesskey "N">
-<!ENTITY mediaPlaybackRate150.label     "დაჩაქარებული (1½×)">
-<!ENTITY mediaPlaybackRate150.accesskey "H">
-<!ENTITY mediaPlaybackRate200.label     "ორმაგი სიჩქარე">
-<!ENTITY mediaPlaybackRate200.accesskey "D">
+<!ENTITY mediaPlaybackRate100.label     "ჩვეულებრივი">
+<!ENTITY mediaPlaybackRate100.accesskey "ჩ">
+<!ENTITY mediaPlaybackRate125.label     "სწრაფი (1¼×)">
+<!ENTITY mediaPlaybackRate125.accesskey "წ">
+<!ENTITY mediaPlaybackRate150.label     "უფრო სწრაფი (1½×)">
+<!ENTITY mediaPlaybackRate150.accesskey "უ">
+<!ENTITY mediaPlaybackRate200.label     "ორმაგი სიჩქარის">
+<!ENTITY mediaPlaybackRate200.accesskey "ო">
+<!ENTITY mediaLoop.label              "ციკლი">
+<!ENTITY mediaLoop.accesskey          "ც">
 <!-- LOCALIZATION NOTE: The access keys for "Show Controls" and
 "Hide Controls" are the same because the two context-menu
 items are mutually exclusive. -->
@@ -147,3 +153,6 @@ items are mutually exclusive. -->
 <!ENTITY spellDictionaries.accesskey    "L">
 <!ENTITY spellAddDictionaries.label     "სხვა ლექსიკონების ჩამოტვირთვა…">
 <!ENTITY spellAddDictionaries.accesskey "D">
+<!-- Developer Tools -->
+<!ENTITY devtoolsInspect.label          "ელემენტზე დაკვირვება">
+<!ENTITY devtoolsInspect.accesskey      "ე">

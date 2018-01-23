@@ -51,6 +51,7 @@ can reach it easily. -->
 <!ENTITY  sendLinkToDevice.label             "Bidali lotura gailura">
 <!ENTITY  sendLinkToDevice.accesskey         "g">
 <!ENTITY  sendToDeviceFeedback.label         "Bidalita!">
+<!ENTITY  sendToDeviceOfflineFeedback.label  "Ilaratuta (lineaz kanpo)">
 <!ENTITY  moveToNewWindow.label              "Eraman leiho berrira">
 <!ENTITY  moveToNewWindow.accesskey          "h">
 <!ENTITY  bookmarkAllTabs.label              "Egin fitxa guztien laster-marka…">
@@ -105,6 +106,7 @@ Option+Command keyboard shortcut letter that Safari and Chrome use for "View
 Source" on macOS. pageSourceCmd.commandkey above is Firefox's official keyboard
 shortcut shown in the GUI. SafariCommandKey is an alias provided for the
 convenience of Safari and Chrome users on macOS. See bug 1398988. -->
+<!ENTITY pageSourceCmd.SafariCommandKey "u">
 
 <!ENTITY pageInfoCmd.label "Orriaren informazioa">
 <!ENTITY pageInfoCmd.accesskey "i">
@@ -187,13 +189,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hideRecentlyBookmarked.accesskey "z">
 
 <!ENTITY backCmd.label                "Atzera">
+<!ENTITY backCmd.accesskey            "z">
 <!ENTITY backButton.tooltip           "Joan orri bat atzera">
 <!ENTITY forwardCmd.label             "Aurrera">
+<!ENTITY forwardCmd.accesskey         "A">
 <!ENTITY forwardButton.tooltip        "Joan orri bat aurrera">
 <!ENTITY backForwardButtonMenu.tooltip "Egin eskuin-klika edo ekarri behera historia erakusteko">
 <!ENTITY backForwardButtonMenuMac.tooltip "Ekarri behera historia erakusteko">
 <!ENTITY reloadCmd.label              "Berritu">
+<!ENTITY reloadCmd.accesskey          "r">
 <!ENTITY stopCmd.label                "Gelditu">
+<!ENTITY stopCmd.accesskey            "G">
 <!ENTITY stopCmd.macCommandKey        ".">
 <!ENTITY goEndCap.tooltip             "Joan kokapen-barrako helbidera">
 <!ENTITY printButton.label            "Inprimatu">
@@ -204,6 +210,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.defaultNotificationAnchor.tooltip         "Ireki mezuen panela">
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "Ireki helbide-eskaeren panela">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "Ireki gehigarrien instalazio-mezuen panela">
+<!ENTITY urlbar.canvasNotificationAnchor.tooltip          "Kudeatu canvas-etik erauzteko baimenak">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "Ireki lineaz kanpoko biltegiratzearen mezuen panela">
 <!ENTITY urlbar.passwordNotificationAnchor.tooltip        "Ireki pasahitza gordetzeko mezuen panela">
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Kudeatu pluginen erabilera">
@@ -227,6 +234,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.indexedDBBlocked.tooltip         "Datuen biltegiratzea blokeatuta daukazu webgune honetarako.">
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Jakinarazpenak blokeatuta dauzkazu webgune honetarako.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Datuen biltegiratze iraunkorra blokeatuta daukazu webgune honetarako.">
+
+<!ENTITY urlbar.popupBlocked.tooltip             "Popup leihoak blokeatuta dauzkazu webgune honetarako.">
+
+<!ENTITY urlbar.canvasBlocked.tooltip            "Canvas-eko datuen erauzketa blokeatuta daukazu webgune honetarako.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Erakutsi historia">
 
@@ -351,6 +362,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuCustomize.tooltip "Pertsonalizatu menua eta tresna-barrak">
 <!ENTITY appMenuCustomizeExit.label "Irten pertsonalizatzetik">
 <!ENTITY appMenuCustomizeExit.tooltip "Amaitu pertsonalizatzen">
+
 <!ENTITY appMenuHistory.showAll.label "Erakutsi historia guztia">
 <!ENTITY appMenuHistory.clearRecent.label "Garbitu azken historia…">
 <!ENTITY appMenuHistory.restoreSession.label "Berreskuratu aurreko saioa">
@@ -381,9 +393,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Beste gailuetako zure fitxak hemen ikusi nahi dituzu?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Sync hobespenak">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Hasi saioa zure beste gailuetako fitxak ikusteko.">
+<!ENTITY appMenuRemoteTabs.unverified.label "Zure kontua egiaztatu egin behar da.">
 <!ENTITY appMenuRemoteTabs.signin.label "Hasi saioa Sync-en">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Kudeatu gailuak…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Ikusi sinkronizatutako fitxen alboko barra">
+
+<!ENTITY appMenuRemoteTabs.connectdevice.label "Konektatu beste gailu bat">
 
 <!ENTITY appMenuRecentHighlights.label "Nabarmendutako azkenak">
 
@@ -560,6 +575,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY setDesktopBackgroundCmd.label      "Jarri idazmahaiaren atzeko planoan…">
 <!ENTITY setDesktopBackgroundCmd.accesskey  "J">
 <!ENTITY bookmarkPageCmd2.label       "Egin orri honen laster-marka">
+<!ENTITY bookmarkPageCmd2.accesskey   "E">
 <!ENTITY bookmarkThisLinkCmd.label      "Egin lotura honen laster-marka">
 <!ENTITY bookmarkThisLinkCmd.accesskey  "l">
 <!ENTITY bookmarkThisFrameCmd.label      "Egin marko honen laster-marka">
@@ -746,6 +762,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY editBookmark.done.label                     "Eginda">
 <!ENTITY editBookmark.removeBookmark.accessKey       "K">
 
+<!-- LOCALIZATION NOTE (identity.securityView.label)
+     This is the header of the security subview in the Site Identity panel. -->
+<!ENTITY identity.securityView.label "Gunearen segurtasuna">
+
 <!ENTITY identity.connectionSecure "Konexio segurua">
 <!ENTITY identity.connectionNotSecure "Konexioa ez da segurua">
 <!ENTITY identity.connectionFile "Orri hau zure ordenagailuan biltegiratuta dago.">
@@ -799,12 +819,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncedTabs.sidebar.noclients.title    "Sinkronizatutako fitxarik ez... momentuz!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Beste gailuetako zure fitxak hemen ikusi nahi dituzu?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Hasi saioa zure beste gailuetako fitxak ikusteko.">
+<!ENTITY syncedTabs.sidebar.unverified.label   "Zure kontua egiaztatu egin behar da.">
 <!ENTITY syncedTabs.sidebar.notabs.label       "Irekitako fitxarik ez">
 <!ENTITY syncedTabs.sidebar.openprefs.label    "Ireki &syncBrand.shortName.label; hobespenak">
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Aktibatu fitxak sinkronizatzea zure beste gailuetako fitxen zerrenda ikusteko.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Bilatu sinkronizatutako fitxak">
+
+<!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Konektatu beste gailu bat">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
                         syncedTabs.context.openAllInTabs.accesskey):
@@ -855,6 +878,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.lwthemes.menuGetMore "Lortu itxura gehiago">
 <!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "L">
 <!ENTITY customizeMode.emptyOverflowList.description "Elementuak eskura izan baina tresna-barratik kanpo mantentzeko, arrasta eta jaregin itzazu hona…">
+<!ENTITY customizeMode.overflowList.title2 "Gainezkatzearen menua">
+<!ENTITY customizeMode.overflowList.description "Elementuak eskura izan baina tresna-barratik kanpo mantentzeko, arrasta eta jaregin itzazu hona…">
 <!ENTITY customizeMode.uidensity "Dentsitatea">
 <!-- LOCALIZATION NOTE (customizeMode.uidensity.menuNormal.*):
      “Normal” is displayed in the Customize screen, under the Density menu. -->
@@ -973,9 +998,20 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "z">
 <!ENTITY updateRestart.panelUI.label2 "Berrabiarazi &brandShorterName; eguneratzeko">
 
+<!ENTITY newTabControlled.message "Fitxa berriak irekitzen dituzunean ikusten duzun orria aldatu du hedapen batek. Zure ezarpenak lehenera ditzakezu ez baduzu aldaketa hau nahi.">
+<!ENTITY newTabControlled.header.message "Zure fitxa berria aldatu egin da.">
+<!ENTITY newTabControlled.keepButton.label "Mantendu aldaketak">
+<!ENTITY newTabControlled.keepButton.accesskey "M">
+<!ENTITY newTabControlled.restoreButton.label "Berrezarri ezarpenak">
+<!ENTITY newTabControlled.restoreButton.accesskey "B">
+
 <!ENTITY pageActionButton.tooltip "Orri-ekintzak">
 <!ENTITY pageAction.addToUrlbar.label "Gehitu helbide-barran">
 <!ENTITY pageAction.removeFromUrlbar.label "Kendu helbide-barratik">
+
+<!ENTITY pageAction.allowInUrlbar.label "Erakutsi helbide-barran">
+<!ENTITY pageAction.disallowInUrlbar.label "Ez erakutsi helbide-barran">
+<!ENTITY pageAction.manageExtension.label "Kudeatu hedapena…">
 
 <!ENTITY pageAction.sendTabToDevice.label "Bidali fitxa gailura">
 <!ENTITY sendToDevice.syncNotReady.label "Gailuak sinkronizatzen…">

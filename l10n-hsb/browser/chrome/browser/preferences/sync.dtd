@@ -7,18 +7,30 @@
 <!ENTITY engine.bookmarks.label     "Zapołožki">
 <!ENTITY engine.bookmarks.accesskey "Z">
 <!ENTITY engine.tabs.label2         "Wotewrjene rajtarki">
+<!ENTITY engine.tabs.title          "Lisćina ze wšěm, štož je wočinjene na wšěch synchronizowanych gratach">
 <!ENTITY engine.tabs.accesskey      "r">
 <!ENTITY engine.history.label       "Historiju">
 <!ENTITY engine.history.accesskey   "t">
 <!ENTITY engine.logins.label        "Přizjewjenja">
-<!ENTITY engine.logins.accesskey    "P">
+<!ENTITY engine.logins.title        "Wužiwarske mjena a hesła, kotrež sće składował">
+<!ENTITY engine.logins.accesskey    "h">
+<!-- On Windows we use the term "Options" to describe settings, but
+     on Linux and Mac OS X we use "Preferences" - carry that distinction
+     over into this string, used as the checkbox which indicates if prefs are synced
+-->
+<!ENTITY engine.prefsWin.label      "Nastajenja">
+<!ENTITY engine.prefsWin.accesskey  "N">
 <!ENTITY engine.prefs.label         "Nastajenja">
 <!ENTITY engine.prefs.accesskey     "N">
+<!ENTITY engine.prefs.title         "Powšitkowne nastajenja, nastajenja priwatnosće a wěstoty, kotrež sće změnił">
 <!ENTITY engine.addons.label        "Přidatki">
+<!ENTITY engine.addons.title        "Rozšěrjenja a drasty za desktopowy Firefox">
 <!ENTITY engine.addons.accesskey    "P">
 <!ENTITY engine.addresses.label     "Adresy">
+<!ENTITY engine.addresses.title     "Póstowe adresy, kotrež sće składował (jenož desktop)">
 <!ENTITY engine.addresses.accesskey "e">
 <!ENTITY engine.creditcards.label   "Kreditne karty">
+<!ENTITY engine.creditcards.title   "Mjena, ličby a datumy spadnjenja (jenož desktop)">
 <!ENTITY engine.creditcards.accesskey "K">
 
 <!-- Device Settings -->
@@ -50,18 +62,23 @@ both, to better adapt this sentence to their language.
 <!ENTITY signedInLoginFailure.beforename.label "Prošu zregistrujće so, zo byšće znowa zwjazał">
 <!ENTITY signedInLoginFailure.aftername.label "">
 
-<!ENTITY notSignedIn.label           "Njejsće so zregistrował.">
-<!ENTITY signIn.label                "Přizjewić">
-<!ENTITY signIn.accesskey            "z">
-<!ENTITY profilePicture.tooltip      "Profilowy wobraz změnić">
-<!ENTITY verifiedManage.label        "Konto rjadować">
-<!ENTITY verifiedManage.accesskey    "o">
-<!ENTITY disconnect3.label           "Zwisk dźělić…">
-<!ENTITY disconnect3.accesskey       "Z">
+<!ENTITY notSignedIn.label            "Njejsće so zregistrował.">
+<!ENTITY signIn.label                 "Přizjewić">
+<!ENTITY signIn.accesskey             "z">
+<!ENTITY profilePicture.tooltip       "Profilowy wobraz změnić">
+<!ENTITY verifiedManage.label         "Konto rjadować">
+<!ENTITY verifiedManage.accesskey     "o">
+<!ENTITY disconnect3.label            "Zwisk dźělić…">
+<!ENTITY disconnect3.accesskey        "Z">
 <!ENTITY verify.label                "E-mejl přepruwować">
 <!ENTITY verify.accesskey            "E">
 <!ENTITY forget.label                "Tutu e-mejl zabyć">
 <!ENTITY forget.accesskey            "z">
+
+<!ENTITY resendVerification.label     "Wobkrućenje znowa pósłać">
+<!ENTITY resendVerification.accesskey "s">
+<!ENTITY cancelSetup.label            "Instalaciju přetorhnyć">
+<!ENTITY cancelSetup.accesskey        "s">
 
 <!ENTITY signedOut.caption            "Wzmiće swój web sobu">
 <!ENTITY signedOut.description        "Synchronizujće swoje zapołožki, historiju, rajtarki, hesła, přidatki a nastajenja mjez wšěmi wašimi gratami.">

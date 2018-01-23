@@ -8,6 +8,7 @@
 <!ENTITY projectMenu_accesskey "P">
 <!ENTITY projectMenu_newApp_label "નવી એપ્લિકેશન…">
 <!ENTITY projectMenu_newApp_accesskey "N">
+<!ENTITY projectMenu_importPackagedApp_label "પેક થયેલ એપ્લિકેશન ખોલો…">
 <!ENTITY projectMenu_importPackagedApp_accesskey "P">
 <!ENTITY projectMenu_importHostedApp_label "યજમાનિત થયેલ એપ્લિકેશન ખોલો…">
 <!ENTITY projectMenu_importHostedApp_accesskey "H">
@@ -23,8 +24,9 @@
 <!ENTITY projectMenu_remove_accesskey "R">
 <!ENTITY projectMenu_showPrefs_label "પસંદગીઓ">
 <!ENTITY projectMenu_showPrefs_accesskey "e">
+<!ENTITY projectMenu_manageComponents_label "વધારાના ઘટકોનું સંચાલન કરો">
 <!ENTITY projectMenu_manageComponents_accesskey "M">
-<!ENTITY projectMenu_refreshTabs_label "ટૅબ્સ તાજુ કરો">
+<!ENTITY projectMenu_refreshTabs_label "ટૅબ્સ તાજી કરો">
 
 <!ENTITY runtimeMenu_label "રનટાઈમ">
 <!ENTITY runtimeMenu_accesskey "R">
@@ -119,6 +121,10 @@
 <!ENTITY runtimedetails_title "રનટાઇમ માહિતી">
 <!ENTITY runtimedetails_adbIsRoot "ADB મૂળ છે: ">
 <!ENTITY runtimedetails_summonADBRoot "મૂળ ઉપકરણ">
+<!ENTITY runtimedetails_ADBRootWarning "(ખુલ્લા બુટલોડરની જરૂર છે)">
+<!ENTITY runtimedetails_unrestrictedPrivileges "પ્રતિબંધિત DevTools અધિકારો: ">
+<!ENTITY runtimedetails_requestPrivileges "ઉચ્ચ વિશેષાધિકારોની વિનંતી કરો">
+<!ENTITY runtimedetails_privilegesWarning "(ઉપકરણ ફરીથી ચાલુ થશે. રૂટ અધિકારની જરૂર છે.)">
 
 <!-- Device Preferences and Settings -->
 <!ENTITY device_typeboolean "બુલિયન">
@@ -149,13 +155,20 @@
 <!-- LOCALIZATION NOTE (wifi_auth_header): The header displayed on the dialog
      that instructs the user to transfer an authentication token to the
      server. -->
+<!ENTITY wifi_auth_header "ગ્રાહકની ઓળખ">
 <!-- LOCALIZATION NOTE (wifi_auth_scan_request): Instructions requesting the
      user to transfer authentication info by scanning a QR code. -->
+<!ENTITY wifi_auth_scan_request "તમે જે અંત બિંદુ જોડાણ કરો છો તે પ્રમાણિત કરવા માટે વધુ માહિતીની જરૂર છે.  તમારા અન્ય ઉપકરણ પર પ્રોમ્પ્ટ દ્વારા કૃપા કરીને નીચેના QR કોડને સ્કેન કરો.">
 <!-- LOCALIZATION NOTE (wifi_auth_no_scanner): Link text to assist users with
      devices that can't scan a QR code. -->
+<!ENTITY wifi_auth_no_scanner "કોઈ QR સ્કેનર પ્રોમ્પ્ટ નથી?">
 <!-- LOCALIZATION NOTE (wifi_auth_yes_scanner): Link text to assist users with
      devices that can scan a QR code. -->
+<!ENTITY wifi_auth_yes_scanner "તમારી પાસે QR સ્કેનર પ્રોમ્પ્ટ છે?">
 <!-- LOCALIZATION NOTE (wifi_auth_token_request): Instructions requesting the
      user to transfer authentication info by transferring a token. -->
+<!ENTITY wifi_auth_token_request "જો તમારું બીજું ઉપકરણ QR કોડને સ્કેન કરવાને બદલે ટોકન માટે પૂછે છે, તો કૃપા કરીને નીચેની ઉપકરણની કિંમત અન્ય ઉપકરણ પર નકલ કરો:">
+<!ENTITY wifi_auth_qr_size_note "જો જોડાણ સફળતાપૂર્વક સ્થાપિત થવા માટે QR કોડ ખૂબ નાનું દેખાય છે, તો વિન્ડો ઝૂમ અથવા મોટું કરો.">
 
 <!-- Logs panel -->
+<!ENTITY logs_title "પ્રી-પેકેજિંગ કમાન્ડ લૉગ્સ">

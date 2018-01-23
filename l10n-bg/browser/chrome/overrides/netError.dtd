@@ -6,7 +6,7 @@
 %brandDTD;
 
 <!ENTITY loadError.label "Проблем при зареждане на страница">
-<!ENTITY retry.label "Нов опит">
+<!ENTITY retry.label "Повторен опит">
 <!ENTITY returnToPreviousPage.label "Връщане назад">
 <!ENTITY advanced.label "Подробности">
 
@@ -20,7 +20,7 @@
 
 <!ENTITY dnsNotFound.pageTitle "Сървърът не е намерен">
 <!-- Localization note (dnsNotFound.title1) - "Hmm" is a sound made when considering or puzzling over something. You don't have to include it in your translation if your language does not have a written word like this. -->
-<!ENTITY dnsNotFound.title1 "Хм. Страницата не е намерена">
+<!ENTITY dnsNotFound.title1 "Хмм. Страницата не е намерена">
 <!ENTITY dnsNotFound.longDesc1 "<strong>Ако адресът е правилен има други три неща, които да направите</strong>
 <ul>
   <li>опитайте по-късно</li>
@@ -56,10 +56,16 @@
 <!ENTITY netInterrupt.longDesc "&sharedLongDesc;">
 
 <!ENTITY notCached.title "Документът е с изтекъл срок на валидност">
-<!ENTITY notCached.longDesc "<p>Търсеният документ не е наличен в кеша на &brandShortName;.</p><ul><li>Като предпазна мярка &brandShortName; не прави повторна заявка на документи с поверително съдържание.</li><li>Натиснете Нов опит за нова заявка на документа от сайта.</li></ul>">
+<!ENTITY notCached.longDesc "<p>Търсеният документ не е наличен в буфера на &brandShortName;.</p>
+<ul>
+  <li>Като предпазна мярка &brandShortName; не прави повторна заявка на документи с поверително съдържание.</li>
+  <li>Натиснете „Повторен опит“ за нова заявка на документа от страницата.</li>
+</ul>">
 
 <!ENTITY netOffline.title "Работа извън мрежата">
-<!ENTITY netOffline.longDesc2 "<ul> <li>Натиснете „Нов опит“, за да превключите към режим с връзка и да презаредите страницата.</li> </ul>">
+<!ENTITY netOffline.longDesc2 "<ul>
+  <li>Натиснете „Повторен опит“, за да превключите към режим с връзка и да презаредите страницата.</li>
+</ul>">
 
 <!ENTITY contentEncodingError.title "Грешка в кодировката на съдържанието">
 <!ENTITY contentEncodingError.longDesc "<ul> <li>Моля, свържете се със собствениците на сайта, за да ги информирате за проблема.</li> </ul>">
@@ -76,14 +82,18 @@
 <!ENTITY unknownProtocolFound.title "Адресът не е разпознат">
 <!ENTITY unknownProtocolFound.longDesc "<ul> <li>Вероятно ще трябва да инсталирате друг софтуер, за да отворите този адрес.</li> </ul>">
 
-<!ENTITY proxyConnectFailure.title "Прокси сървърът отказва връзката">
+<!ENTITY proxyConnectFailure.title "Мрежовият посредник отказва връзката">
 <!ENTITY proxyConnectFailure.longDesc "<ul>
-  <li>Уверете се, че настройките на прокси сървъра са правилни.</li>
-  <li>Свържете се с мрежовия администратор и проверете дали прокси сървърът работи.</li>
+  <li>Уверете се, че настройките на мрежовия посредник са правилни.</li>
+  <li>Свържете се с мрежовия администратор и проверете дали мрежовият посредник работи.</li>
 </ul>">
 
-<!ENTITY proxyResolveFailure.title "Прокси сървърът не може да бъде открит">
-<!ENTITY proxyResolveFailure.longDesc "<ul><li>Уверете се, че настройките на прокси сървъра са правилни.</li><li>Проверете дали връзката на компютъра с мрежата е наред.</li><li>Ако компютърът или мрежата ви са зад защитна стена или прокси проверете дали &brandShortName; има право на достъп до Интернет.</li></ul>">
+<!ENTITY proxyResolveFailure.title "Мрежовия посредник не може да бъде открит">
+<!ENTITY proxyResolveFailure.longDesc "<ul>
+  <li>Уверете се, че настройките на мрежовия посредник са правилни.</li>
+  <li>Проверете дали връзката на компютъра с мрежата е наред.</li>
+  <li>Ако компютърът или мрежата ви са зад защитна стена или мрежов посредник проверете дали &brandShortName; има право на достъп до Интернет.</li>
+</ul>">
 
 <!ENTITY redirectLoop.title "Страницата не пренасочва правилно">
 <!ENTITY redirectLoop.longDesc "<ul><li>Такъв проблем може да е причинен от изключване или забраняване на бисквитките.</li></ul>">
@@ -101,9 +111,9 @@ was trying to connect. -->
 <!ENTITY certerror.introPara "Собственикът на <span class='hostname'/> е настроил страницата неправилно. За да ви защити от кражба на информация, &brandShortName; отказа връзката с тази страница.">
 
 <!ENTITY sharedLongDesc "<ul>
-  <li>Сайтът може да е временно недостъпен или натоварен. Опитайте отново след малко.</li>
-  <li>Ако не може да отворите друга страница, проверете връзката си с Интернет.</li>
-  <li>Ако компютърът или мрежата ви са зад защитна стена или прокси проверете дали &brandShortName; има право на достъп до Интернет.</li>
+  <li>Страницата може да е временно недостъпна или натоварена. Опитайте отново след малко.</li>
+  <li>Ако не може да отворите друга страница, проверете връзката си с интернет.</li>
+  <li>Ако компютърът или мрежата ви са зад защитна стена или мрежов посредник проверете дали &brandShortName; има право на достъп до Интернет.</li>
 </ul>">
 
 <!ENTITY cspBlocked.title "Блокирано от Content Security Policy">

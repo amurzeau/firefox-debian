@@ -2,10 +2,10 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY startup.label             "გაშვება">
+<!ENTITY startup.label             "ჩართვისას">
 
-<!ENTITY startupPage2.label        "&brandShortName;-ის გახსნისას">
-<!ENTITY startupPage2.accesskey    "ხ">
+<!ENTITY startupPage2.label        "&brandShortName;-ის გაშვებისას">
+<!ENTITY startupPage2.accesskey    "ვ">
 <!ENTITY startupUserHomePage.label "მთავარი გვერდის ჩვენება">
 <!ENTITY startupBlankPage.label    "ცარიელი გვერდის ჩვენება">
 <!ENTITY startupPrevSession.label  "ბოლოს დახურული ფანჯრებისა და ჩანართების ჩვენება">
@@ -17,7 +17,7 @@
 <!ENTITY useMultiple.label         "მიმდინარე გვერდების გამოყენება">
 <!ENTITY chooseBookmark.label      "სანიშნის გამოყენება…">
 <!ENTITY chooseBookmark.accesskey  "ს">
-<!ENTITY restoreDefault.label      "ნაგულისხმევის აღდგენა">
+<!ENTITY restoreDefault.label      "ნაგულისხმევი">
 <!ENTITY restoreDefault.accesskey  "ა">
 
 <!ENTITY disableExtension.label    "გაფართოების ამორთვა">

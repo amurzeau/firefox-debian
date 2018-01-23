@@ -21,15 +21,15 @@
 
 <!ENTITY  locationPermissions.label                             "Městno">
 <!ENTITY  locationSettingsButton.label                          "Nastajenja…">
-<!ENTITY  locationSettingsButton.accesskey                      "M">
+<!ENTITY  locationSettingsButton.accesskey                      "t">
 
 <!ENTITY  cameraPermissions.label                               "Kamera">
 <!ENTITY  cameraSettingsButton.label                            "Nastajenja…">
-<!ENTITY  cameraSettingsButton.accesskey                        "k">
+<!ENTITY  cameraSettingsButton.accesskey                        "t">
 
 <!ENTITY  microphonePermissions.label                           "Mikrofon">
 <!ENTITY  microphoneSettingsButton.label                        "Nastajenja…">
-<!ENTITY  microphoneSettingsButton.accesskey                    "M">
+<!ENTITY  microphoneSettingsButton.accesskey                    "t">
 
 <!ENTITY  fontsAndColors.label        "Pisma a barby">
 
@@ -65,7 +65,7 @@
 <!ENTITY translation.options.attribution.beforeLogo "Přełožki wot">
 <!ENTITY translation.options.attribution.afterLogo "">
 
-<!ENTITY  drmContent2.label              "Wobsha Digital Right Management (DRM)">
+<!ENTITY  drmContent2.label              "Wobsah Digital Right Management (DRM)">
 
 <!ENTITY  playDRMContent2.label          "Wobsah wodźeny přez DRM wothrać">
 <!ENTITY  playDRMContent2.accesskey      "h">

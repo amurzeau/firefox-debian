@@ -186,7 +186,7 @@ because displayed names don't have the comma in between. -->
 <!ENTITY Addrbook.accesskey                             "А">
 <!ENTITY GeneratedName.label                            "Име">
 <!ENTITY GeneratedName.accesskey                        "И">
-<!ENTITY PrimaryEmail.label                             "Е-поща">
+<!ENTITY PrimaryEmail.label                             "Ел. адрес">
 <!ENTITY PrimaryEmail.accesskey                         "Е">
 <!ENTITY ChatName.label                                 "Име за разговор">
 <!ENTITY ChatName.accesskey                             "И">
@@ -239,5 +239,5 @@ because displayed names don't have the comma in between. -->
 <!ENTITY windowMenu.label                               "Прозорец">
 <!ENTITY minimizeWindow.label                           "Минимизиране">
 <!ENTITY minimizeWindow.key                             "m">
-<!ENTITY bringAllToFront.label                          "Извежда всичко на преден план">
+<!ENTITY bringAllToFront.label                          "Извеждане всичко на преден план">
 <!ENTITY zoomWindow.label                               "Мащабиране">

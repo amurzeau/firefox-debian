@@ -52,9 +52,10 @@
 <!ENTITY  permTab               "הרשאות">
 <!ENTITY  permTab.accesskey     "ר">
 <!ENTITY  permUseDefault        "בררת מחדל">
-<!ENTITY  permAskAlways         "שאל תמיד">
+<!ENTITY  permAskAlways         "לשאול תמיד">
 <!ENTITY  permAllow             "אפשר">
 <!ENTITY  permAllowSession      "אפשר להפעלה זו">
+<!ENTITY  permHide              "הסתרה">
 <!ENTITY  permBlock             "חסום">
 <!ENTITY  permissionsFor        "הרשאות עבור:">
 <!ENTITY  permPlugins           "הפעלת תוספים חיצוניים">

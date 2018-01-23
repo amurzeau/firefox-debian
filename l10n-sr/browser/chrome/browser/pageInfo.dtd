@@ -11,7 +11,7 @@
 <!ENTITY  selectall.key         "A">
 <!ENTITY  selectall.label       "Изабери све">
 <!ENTITY  selectall.accesskey   "И">
-<!ENTITY  closeWindow.key       "З">
+<!ENTITY  closeWindow.key       "w">
 
 <!ENTITY  generalTab            "Опште">
 <!ENTITY  generalTab.accesskey  "О">
@@ -55,6 +55,7 @@
 <!ENTITY  permAskAlways         "Увек питај">
 <!ENTITY  permAllow             "Дозволи">
 <!ENTITY  permAllowSession      "Дозволи за ову сесију">
+<!ENTITY  permHide              "Сакриј">
 <!ENTITY  permBlock             "Блокирај">
 <!ENTITY  permissionsFor        "Дозволе за:">
 <!ENTITY  permPlugins           "Активирај прикључке">

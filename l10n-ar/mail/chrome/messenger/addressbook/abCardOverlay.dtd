@@ -44,7 +44,7 @@
 <!ENTITY PreferMailFormat.accesskey     "ف">
 <!ENTITY PlainText.label                "نص صرف">
 <!ENTITY HTML.label                     "HTML">
-<!ENTITY Unknown.label                  "مجهول">
+<!ENTITY Unknown.label                  "غير معروف">
 <!ENTITY chatName.label                 "اسم الدردشة:">
 
 <!ENTITY WorkPhone.label                "العمل:">
@@ -147,7 +147,7 @@
 <!ENTITY DefaultPhoto.label             "مبدئية">
 <!ENTITY PhotoFile.label                "في هذا الحاسوب">
 <!ENTITY PhotoFile.accesskey            "ف">
-<!ENTITY BrowsePhoto.label              "استعرض">
+<!ENTITY BrowsePhoto.label              "تصفّح">
 <!ENTITY BrowsePhoto.accesskey          "ر">
 <!ENTITY PhotoURL.label                 "في الوب">
 <!ENTITY PhotoURL.accesskey             "و">

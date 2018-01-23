@@ -8,15 +8,15 @@ Closes: #763900
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/memory/build/mozjemalloc.cpp b/memory/build/mozjemalloc.cpp
-index f2402c6ffaa0..586bedcda2c7 100644
+index 55e3034f5f64..b1bec36a323d 100644
 --- a/memory/build/mozjemalloc.cpp
 +++ b/memory/build/mozjemalloc.cpp
-@@ -780,7 +780,7 @@ struct arena_t {
-  * controlling the malloc behavior are defined as compile-time constants
-  * for best performance and cannot be altered at runtime.
-  */
--#if !defined(__ia64__) && !defined(__sparc__) && !defined(__mips__) && !defined(__aarch64__)
-+#if !defined(__ia64__) && !defined(__sparc__) && !defined(__mips__) && !defined(__aarch64__) && !defined(__powerpc__)
- #define MALLOC_STATIC_SIZES 1
+@@ -180,7 +180,7 @@ using namespace mozilla;
+ // Debug builds are opted out too, for test coverage.
+ #ifndef MOZ_DEBUG
+ #if !defined(__ia64__) && !defined(__sparc__) && !defined(__mips__) &&         \
+-  !defined(__aarch64__)
++  !defined(__aarch64__) && !defined(__powerpc__)
+ #define MALLOC_STATIC_PAGESIZE 1
  #endif
- 
+ #endif

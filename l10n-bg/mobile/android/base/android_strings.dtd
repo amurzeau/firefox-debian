@@ -113,7 +113,7 @@
 <!ENTITY menu "Меню">
 <!ENTITY back "Назад">
 <!ENTITY stop "Спиране">
-<!ENTITY site_security "Сигурност на сайта">
+<!ENTITY site_security "Защита на страницата">
 <!ENTITY edit_mode_cancel "Отказ">
 
 <!ENTITY close_tab "Затваряне на раздела">
@@ -156,7 +156,7 @@
 <!-- Localization note (overlay_share_label) : This is the label that appears
      in Android's intent chooser when sending a link to Firefox to bookmark,
      send to another device, or add to Reading List. -->
-<!ENTITY overlay_share_label "Добавяне към &brandShortName;">
+<!ENTITY overlay_share_label "Изпращане към &brandShortName;">
 
 <!-- Localization note (overlay_share_bookmark_btn_label) : This string is
      used in the share overlay menu to select an action. It is the verb
@@ -279,7 +279,7 @@
 <!ENTITY pref_tracking_protection_enabled_pb "Включено при поверително разглеждане">
 <!ENTITY pref_tracking_protection_disabled "Изключено">
 
-<!ENTITY pref_whats_new_notification "Какво е новото във &brandShortName;">
+<!ENTITY pref_whats_new_notification "Новото в това издание на &brandShortName;">
 <!ENTITY pref_whats_new_notification_summary "Научете за новите възможности след обновяване">
 
 <!-- Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
@@ -541,6 +541,8 @@
      bookmarks, or reading list. -->
 <!ENTITY page_removed "Страницата е премахната">
 
+<!ENTITY folder_removed "Папката е премахната">
+
 <!ENTITY bookmark_edit_title "Редактиране на отметка">
 <!ENTITY bookmark_edit_folder_title "Редактиране на папка">
 <!ENTITY bookmark_edit_name "Име">
@@ -706,7 +708,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY updater_downloading_title2 "Изтегляне на &brandShortName;">
 <!ENTITY updater_downloading_title_failed2 "Грешка при изтегляне">
 <!ENTITY updater_downloading_select2 "Докоснете за инсталиране след това">
-<!ENTITY updater_downloading_retry2 "Докоснете за нов опит">
+<!ENTITY updater_downloading_retry2 "Докоснете за повторен опит">
 
 <!ENTITY updater_apply_title3 "Изтеглено е обновяване за &brandShortName;">
 <!ENTITY updater_apply_select3 "Докоснете за инсталиране">
@@ -817,8 +819,8 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 
 <!-- LOCALIZATION NOTE (whatsnew_notification_title, whatsnew_notification_summary): These strings
      are used for a system notification that's shown to users after the app updates. -->
-<!ENTITY whatsnew_notification_title "Версията на &brandShortName; е актуална">
-<!ENTITY whatsnew_notification_summary "Разберете какво е новото в тази версия">
+<!ENTITY whatsnew_notification_title "Използвате последното издание на &brandShortName;">
+<!ENTITY whatsnew_notification_summary "Разберете какво е новото в това издание">
 
 <!ENTITY promotion_add_to_homescreen "Връзка на началния екран">
 

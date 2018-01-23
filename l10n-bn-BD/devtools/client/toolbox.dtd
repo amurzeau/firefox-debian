@@ -16,7 +16,7 @@
 
 <!-- LOCALIZATION NOTE (options.context.advancedSettings): This is the label for
   -  the heading of the advanced settings group in the options panel. -->
-<!ENTITY options.context.advancedSettings "উন্নত সেটিংস">
+<!ENTITY options.context.advancedSettings "উন্নত সেটিং">
 
 <!-- LOCALIZATION NOTE (options.context.inspector): This is the label for
   -  the heading of the Inspector group in the options panel. -->
@@ -103,7 +103,7 @@
 <!-- LOCALIZATION NOTE (options.selectDefaultTools.label2): This is the label for
   -  the heading of group of checkboxes corresponding to the default developer
   -  tools. -->
-<!ENTITY options.selectDefaultTools.label2    "পূর্বনির্ধারিত ডেভেলপার টুলসমূহ">
+<!ENTITY options.selectDefaultTools.label2    "ডিফল্ট ডেভেলপার টুলসমূহ">
 
 <!-- LOCALIZATION NOTE (options.selectAdditionalTools.label): This is the label for
   -  the heading of group of checkboxes corresponding to the developer tools
@@ -147,6 +147,7 @@
 <!-- LOCALIZATION NOTE (options.sourceMap.label): This is the
    - label for the checkbox that toggles source maps in all tools -->
 <!ENTITY options.sourceMaps.label      "উৎস ম্যাপ সক্রিয় করুন">
+<!ENTITY options.sourceMaps.tooltip1   "আপনি যদি এই অপশন সক্রিয় করেন টুলে সোর্স ম্যাপড হবে।">
 
 <!-- LOCALIZATION NOTE (options.styleeditor.label): This is the label for the
   -  heading of the group of Style Editor preferences in the options
@@ -185,13 +186,13 @@
 
 <!ENTITY options.sourceeditor.label                     "এডিটর পছন্দসমূহ">
 <!ENTITY options.sourceeditor.detectindentation.label   "ইনডেন্টেশন শনাক্তকরণ">
-<!ENTITY options.sourceeditor.detectindentation.tooltip "উৎসের বিষয়বস্তুর ভিত্তিতে ইনডেন্টেশন ধারণা করুন">
+<!ENTITY options.sourceeditor.detectindentation.tooltip "উৎসের কন্টেন্টের ভিত্তিতে ইনডেন্টেশন ধারণা করুন">
 <!ENTITY options.sourceeditor.autoclosebrackets.label   "অটোক্লোজ ব্র্যাকেট">
 <!ENTITY options.sourceeditor.autoclosebrackets.tooltip "স্বয়ংক্রিয়ভাবে ক্লোজিং ব্র্যাকেট দিন">
 <!ENTITY options.sourceeditor.expandtab.label           "ফাঁকাস্থান ব্যবহার করে ইনডেন্ট করুন">
 <!ENTITY options.sourceeditor.expandtab.tooltip         "ট্যাব ক্যারেক্টারের পরিবর্তে স্পেস ব্যবহার করুন">
-<!ENTITY options.sourceeditor.tabsize.label             "ট্যাবের আকার T">
+<!ENTITY options.sourceeditor.tabsize.label             "ট্যাবের আকার">
 <!ENTITY options.sourceeditor.tabsize.accesskey         "T">
 <!ENTITY options.sourceeditor.keybinding.label          "কীবাইন্ডিং">
 <!ENTITY options.sourceeditor.keybinding.accesskey      "K">
-<!ENTITY options.sourceeditor.keybinding.default.label  "পূর্বনির্ধারিত">
+<!ENTITY options.sourceeditor.keybinding.default.label  "ডিফল্ট">

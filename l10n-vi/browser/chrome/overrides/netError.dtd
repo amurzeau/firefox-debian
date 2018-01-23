@@ -9,8 +9,8 @@
 <!ENTITY retry.label "Thử lại">
 <!ENTITY returnToPreviousPage.label "Trở lại">
 <!ENTITY advanced.label "Nâng cao">
-<!-- Specific error messages -->
 
+<!-- Specific error messages -->
 
 <!ENTITY connectionFailure.title "Không thể kết nối">
 <!ENTITY connectionFailure.longDesc "&sharedLongDesc;">
@@ -18,22 +18,33 @@
 <!ENTITY deniedPortAccess.title "Địa chỉ này đã bị chặn">
 <!ENTITY deniedPortAccess.longDesc "">
 
-<!ENTITY dnsNotFound.title "Không tìm thấy máy chủ">
-<!ENTITY dnsNotFound.longDesc "<ul> <li>Xin kiểm tra các lỗi gõ địa chỉ như là <strong>ww</strong>.example.com thay vì gõ đúng phải là <strong>www</strong>.example.com</li> <li>Nếu bạn không thể mở bất kì trang nào, hãy kiểm tra  kết nối mạng.</li> <li>Nếu máy tính hoặc mạng được bảo vệ bởi tường lửa hoặc proxy, hãy chắc rằng  &brandShortName; được phép truy cập Web.</li> </ul>">
+<!ENTITY dnsNotFound.pageTitle "Không tìm thấy máy chủ">
+<!-- Localization note (dnsNotFound.title1) - "Hmm" is a sound made when considering or puzzling over something. You don't have to include it in your translation if your language does not have a written word like this. -->
+<!ENTITY dnsNotFound.title1 "Chúng tôi gặp khó khăn khi tìm trang web đó.">
+<!ENTITY dnsNotFound.longDesc1 "<strong>Nếu địa chỉ đúng, có ba việc bạn có thể thử:</strong> <ul>
+  <li>Thử lại sau.</li>
+  <li>Kiểm tra kết nối mạng của bạn.</li>
+  <li>Nếu bạn đã kết nối mạng nhưng có cài đặt tường lửa, hãy kiểm tra &brandShortName; có quyền truy cập web không.</li> </ul>">
 
 <!ENTITY fileNotFound.title "Không tìm thấy tập tin">
 <!ENTITY fileNotFound.longDesc "<ul> <li>Kiểm tra tên xem có lỗi gõ HOA-thường hay lỗi nào khác không.</li> <li>Kiểm tra xem tập tin có bị di chuyển, đổi tên hay bị xóa không.</li> </ul>">
 
+<!ENTITY fileAccessDenied.title "Truy cập tập tin bị từ chối">
 <!ENTITY fileAccessDenied.longDesc "<ul> <li>Nó có thể đã bị xóa, chuyển đi, hay quyền truy cập tập tin đã bị chặn.</li> </ul>">
 
 <!ENTITY generic.title "Lỗi.">
 <!ENTITY generic.longDesc "<p>Vì lý do nào đó, &brandShortName; không thể mở trang này.</p>">
 
+<!ENTITY captivePortal.title "Đăng nhập vào mạng">
+<!ENTITY captivePortal.longDesc2 "
+<p>Bạn cần đăng nhập vào mạng trước khi có thể truy cập Internet.</p>
+">
 
+<!ENTITY openPortalLoginPage.label2 "Mở trang đăng nhập mạng">
 
-
-<!ENTITY malformedURI.title "Địa chỉ không hợp lệ">
-<!ENTITY malformedURI.longDesc "<ul> <li>Địa chỉ Web thường được viết như sau <strong>http://www.mozilla.com/</strong></li> <li>Hãy chắc chắn rằng bạn đang dùng đúng dấu xổ chéo (tức là dấu <strong>/</strong>).</li> </ul>">
+<!ENTITY malformedURI.pageTitle "URL không hợp lệ">
+<!-- Localization note (malformedURI.title1) - "Hmm" is a sound made when considering or puzzling over something. You don't have to include it in your translation if your language does not have a written word like this. -->
+<!ENTITY malformedURI.title1 "Hmm. Địa chỉ không đúng.">
 
 <!ENTITY netInterrupt.title "Kết nối bị ngắt">
 <!ENTITY netInterrupt.longDesc "&sharedLongDesc;">
@@ -71,6 +82,7 @@
 <!ENTITY unknownSocketType.title "Nhận được phản hồi lạ từ máy chủ">
 <!ENTITY unknownSocketType.longDesc "<ul> <li>Kiểm tra để chắc chắn rằng hệ thống của bạn có Trình quản lí Bảo mật Cá nhân đã được cài đặt.</li> <li>Điều này có thể là do cấu hình không chuẩn trên máy chủ.</li> </ul>">
 
+<!ENTITY nssFailure2.title "Không thể kết nối an toàn">
 <!ENTITY nssFailure2.longDesc2 "<ul><li>Không thể hiển thị trang bạn muốn xem vì không thể kiểm tra tính xác thực của dữ liệu nhận được.</li><li>Vui lòng liên hệ chủ trang web để báo với họ vấn đề này.</li></ul>">
 
 <!ENTITY certerror.longpagetitle1 "Kết nối của bạn không an toàn">
@@ -99,10 +111,13 @@ was trying to connect. -->
 <!ENTITY sslv3Used.title "Không thể kết nối một cách an toàn">
 <!-- LOCALIZATION NOTE (sslv3Used.longDesc2) - Do not translate
      "SSL_ERROR_UNSUPPORTED_VERSION". -->
+<!ENTITY sslv3Used.longDesc2 "Thông tin bổ sung: SSL_ERROR_UNSUPPORTED_VERSION">
+
 <!-- LOCALIZATION NOTE (certerror.wrongSystemTime2,
                         certerror.wrongSystemTimeWithoutReference) - The <span id='..' />
      tags will be injected with actual values, please leave them unchanged. -->
-
+<!ENTITY certerror.wrongSystemTime2 "<p> &brandShortName; không thể kết nối đến <span id='wrongSystemTime_URL'/> bởi vì đồng hồ máy tính của bạn dường như hiển thị sai thời gian và điều này chặn một kết nối an toàn.</p> <p>Máy tính của bạn đang được cài đặt là <span id='wrongSystemTime_systemDate'/>, trong khi thời gian thực tế là <span id='wrongSystemTime_actualDate'/>. Để khắc phục sự cố này, thay đổi lại đồng hồ của bạn về thời gian chính xác.</p>">
+<!ENTITY certerror.wrongSystemTimeWithoutReference "<p>&brandShortName; không thẻ kết nối đến <span id='wrongSystemTimeWithoutReference_URL'/> vì đồng hồ máy tính của bạn có vẻ như hiển thị sai thời gian và điều này ngăn chặn kết nối an toàn. </p> <p>Máy tính của bạn đang cài đặt là <span id='wrongSystemTimeWithoutReference_systemDate'/>. Để khắc phục, hãy thay đổi cài đặt ngày giờ cho đúng.</p>">
 
 <!ENTITY certerror.pagetitle1  "Kết nối không bảo mật">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Trang này dùng HTTP Strict Transport Security (HSTS) để chỉ định &brandShortName; chỉ được kết nối với nó một cách bảo mật. Cho nên, không khả thi để thêm ngoại lệ cho chứng chỉ này.">

@@ -33,8 +33,8 @@
 <!ENTITY offlineText.label                 "Anda boleh muat turun salinan lokal direktori ini supaya boleh digunakan apabila di luar talian.">
 <!ENTITY saslMechanism.label               "Kaedah log masuk: ">
 <!ENTITY saslMechanism.accesskey           "m">
-<!ENTITY saslOff.label                     "Mudah">
-<!ENTITY saslOff.accesskey		   "d">
+<!ENTITY saslOff.label                     "Ringkas">
+<!ENTITY saslOff.accesskey		   "k">
 <!ENTITY saslGSSAPI.label                  "Kerberos (GSSAPI)">
 <!ENTITY saslGSSAPI.accesskey		   "K">
 

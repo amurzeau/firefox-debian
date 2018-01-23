@@ -48,7 +48,7 @@ that require it.  -->
 <!ENTITY historySection.label         "Histórico">
 <!ENTITY dataSection.label            "Dados">
 
-<!ENTITY itemHistoryAndDownloads.label     "Histórico de navegação e de descargas">
+<!ENTITY itemHistoryAndDownloads.label     "Histórico de navegação e de transferências">
 <!ENTITY itemHistoryAndDownloads.accesskey "H">
 <!ENTITY itemFormSearchHistory.label       "Histórico de pesquisa">
 <!ENTITY itemFormSearchHistory.accesskey   "q">
@@ -56,7 +56,7 @@ that require it.  -->
 <!ENTITY itemCookies.accesskey             "C">
 <!ENTITY itemCache.label                   "Cache">
 <!ENTITY itemCache.accesskey               "a">
-<!ENTITY itemOfflineApps.label             "Dados offline de sites">
+<!ENTITY itemOfflineApps.label             "Dados offline de websites">
 <!ENTITY itemOfflineApps.accesskey         "o">
 <!ENTITY itemActiveLogins.label            "Inícios de sessão ativos">
 <!ENTITY itemActiveLogins.accesskey        "I">

@@ -51,6 +51,7 @@ can reach it easily. -->
 <!ENTITY  sendLinkToDevice.label             "Изпращане на препратката до устройство">
 <!ENTITY  sendLinkToDevice.accesskey         "у">
 <!ENTITY  sendToDeviceFeedback.label         "Изпратено!">
+<!ENTITY  sendToDeviceOfflineFeedback.label  "На опашката (без мрежа)">
 <!ENTITY  moveToNewWindow.label              "Преместване в нов прозорец">
 <!ENTITY  moveToNewWindow.accesskey          "н">
 <!ENTITY  bookmarkAllTabs.label              "Отмятане на всички раздели…">
@@ -188,13 +189,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hideRecentlyBookmarked.accesskey "С">
 
 <!ENTITY backCmd.label                "Назад">
+<!ENTITY backCmd.accesskey            "з">
 <!ENTITY backButton.tooltip           "Връщане една страница назад">
 <!ENTITY forwardCmd.label             "Напред">
+<!ENTITY forwardCmd.accesskey         "п">
 <!ENTITY forwardButton.tooltip        "Отиване една страница напред">
 <!ENTITY backForwardButtonMenu.tooltip "Натиснете с десния бутон или дръпнете надолу, за да се покаже историята">
 <!ENTITY backForwardButtonMenuMac.tooltip "Дръпнете надолу, за да се покаже историята">
 <!ENTITY reloadCmd.label              "Презареждане">
+<!ENTITY reloadCmd.accesskey          "п">
 <!ENTITY stopCmd.label                "Спиране">
+<!ENTITY stopCmd.accesskey            "с">
 <!ENTITY stopCmd.macCommandKey        ".">
 <!ENTITY goEndCap.tooltip             "Зареждане на адреса в полето">
 <!ENTITY printButton.label            "Отпечатване">
@@ -231,6 +236,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Забранили сте на страницата достъп до хранилището за постоянни данни.">
 
 <!ENTITY urlbar.popupBlocked.tooltip             "Забранили сте на страницата да отваря изскачащи прозорци.">
+
+<!ENTITY urlbar.canvasBlocked.tooltip            "Забранили сте достъпа до данните от canvas на тази страница.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Показване на историята">
 
@@ -355,6 +362,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuCustomize.tooltip "Персонализиране на менюто и лентите с инструменти">
 <!ENTITY appMenuCustomizeExit.label "Изход от персонализиране">
 <!ENTITY appMenuCustomizeExit.tooltip "Край на персонализирането">
+
 <!ENTITY appMenuHistory.showAll.label "Цялата история">
 <!ENTITY appMenuHistory.clearRecent.label "Изчистване на скорошна история…">
 <!ENTITY appMenuHistory.restoreSession.label "Възстановяване на предишна сесия">
@@ -385,9 +393,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Искате ли да видите свои раздели от други устройства тук?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Настройки на Sync">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Впишете се, за да видите списък с раздели от други ваши устройства.">
+<!ENTITY appMenuRemoteTabs.unverified.label "Сметката ви трябва да бъде потвърдена.">
 <!ENTITY appMenuRemoteTabs.signin.label "Вписване в Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Управление на устройства…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Странична лента с раздели">
+
+<!ENTITY appMenuRemoteTabs.connectdevice.label "Добавяне на устройство">
 
 <!ENTITY appMenuRecentHighlights.label "Последни акценти">
 
@@ -564,6 +575,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY setDesktopBackgroundCmd.label      "Поставяне като фон на работния плот…">
 <!ENTITY setDesktopBackgroundCmd.accesskey  "П">
 <!ENTITY bookmarkPageCmd2.label       "Отмятане на страницата">
+<!ENTITY bookmarkPageCmd2.accesskey   "м">
 <!ENTITY bookmarkThisLinkCmd.label      "Отмятане на препратката">
 <!ENTITY bookmarkThisLinkCmd.accesskey  "О">
 <!ENTITY bookmarkThisFrameCmd.label      "Отмятане на рамката">
@@ -572,10 +584,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY copyURLFeedback.label        "Копирана!">
 <!ENTITY emailPageCmd.label           "Препратка по имейл…">
 <!ENTITY emailPageCmd.accesskey       "е">
-<!ENTITY savePageCmd.label            "Запазване на като…">
+<!ENTITY savePageCmd.label            "Запазване като…">
 <!ENTITY savePageCmd.accesskey        "З">
 <!-- alternate for content area context menu -->
-<!ENTITY savePageCmd.accesskey2       "с">
+<!ENTITY savePageCmd.accesskey2       "З">
 <!ENTITY savePageCmd.commandkey       "s">
 <!ENTITY saveFrameCmd.label           "Запазване на рамката като…">
 <!ENTITY saveFrameCmd.accesskey       "р">
@@ -750,6 +762,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY editBookmark.done.label                     "Готово">
 <!ENTITY editBookmark.removeBookmark.accessKey       "П">
 
+<!-- LOCALIZATION NOTE (identity.securityView.label)
+     This is the header of the security subview in the Site Identity panel. -->
+<!ENTITY identity.securityView.label "Защита на страницата">
+
 <!ENTITY identity.connectionSecure "Защитена връзка">
 <!ENTITY identity.connectionNotSecure "Връзката е незащитена">
 <!ENTITY identity.connectionFile "Страницата е запазена в компютъра.">
@@ -793,7 +809,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
-<!ENTITY tabsToolbar.label "Раздели на браузъра">
+<!ENTITY tabsToolbar.label "Раздели на четеца">
 
 <!-- LOCALIZATION NOTE (syncTabsMenu3.label): This appears in the history menu -->
 <!ENTITY syncTabsMenu3.label     "Синхронизирани раздели">
@@ -803,12 +819,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncedTabs.sidebar.noclients.title    "Няма синхронизирани раздели… все още!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Искате ли да видите свои раздели от други устройства тук?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Впишете се, за да видите списък с раздели от други ваши устройства.">
+<!ENTITY syncedTabs.sidebar.unverified.label   "Сметката ви трябва да бъде потвърдена.">
 <!ENTITY syncedTabs.sidebar.notabs.label       "Няма отворени раздели">
 <!ENTITY syncedTabs.sidebar.openprefs.label    "Настройки на &syncBrand.shortName.label;">
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Включете синхронизирането на раздели, за да видите списък с раздели от други ваши устройства.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Търсене в синхронизираните">
+
+<!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Добавяне на устройство">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
                         syncedTabs.context.openAllInTabs.accesskey):
@@ -843,7 +862,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncReAuthItem.accesskey     "С">
 <!ENTITY syncToolbarButton.label      "Sync">
 
-<!ENTITY customizeMode.menuAndToolbars.header3 "Преместете вашите любими елементи в лентата с инструменти или допълнителното меню.">
+<!ENTITY customizeMode.menuAndToolbars.header3 "Преместете своите любими елементи в лентата с инструменти или допълнителното меню.">
 <!ENTITY customizeMode.menuAndToolbars.empty "Искате още инструменти?">
 <!ENTITY customizeMode.menuAndToolbars.emptyLink "Изберете измежду хиляди добавки">
 <!ENTITY customizeMode.restoreDefaults "Стандартни настройки">
@@ -954,7 +973,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY emeLearnMoreContextMenu.accesskey        "D">
 
 <!ENTITY updateAvailable.message "Обновете &brandShorterName; за да получите най-новото в бързината и поверителността.">
-<!ENTITY updateAvailable.whatsnew.label "Вижте какво е новото.">
+<!ENTITY updateAvailable.whatsnew.label "Вижте новото в това издание.">
 <!ENTITY updateAvailable.header.message "Налично е обновяване на &brandShorterName;.">
 <!ENTITY updateAvailable.acceptButton.label "Изтегляне на обновяване">
 <!ENTITY updateAvailable.acceptButton.accesskey "и">
@@ -963,8 +982,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.panelUI.label "Изтегляне на обновяване на &brandShorterName;">
 
 <!ENTITY updateManual.message "Изтеглете ново копие на &brandShorterName; и ще ви помогнем с инсталирането.">
-<!ENTITY updateManual.whatsnew.label "Вижте какво е новото.">
-<!ENTITY updateManual.header.message "&brandShorterName; не може да бъде обновен до последната версия.">
+<!ENTITY updateManual.whatsnew.label "Вижте новото в това издание.">
+<!ENTITY updateManual.header.message "&brandShorterName; не може да бъде обновен до последното издание.">
 <!ENTITY updateManual.acceptButton.label "Изтегляне на &brandShorterName;">
 <!ENTITY updateManual.acceptButton.accesskey "И">
 <!ENTITY updateManual.cancelButton.label "Не сега">
@@ -979,9 +998,20 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "Н">
 <!ENTITY updateRestart.panelUI.label2 "Рестарт за обновяване на &brandShorterName;">
 
+<!ENTITY newTabControlled.message "Разширение промени страницата, която виждате при отваряне на нов раздел. Може да възстановите настройките ако такава промяна е нежелателна.">
+<!ENTITY newTabControlled.header.message "Новият раздел е променен">
+<!ENTITY newTabControlled.keepButton.label "Запазване">
+<!ENTITY newTabControlled.keepButton.accesskey "з">
+<!ENTITY newTabControlled.restoreButton.label "Отмяна">
+<!ENTITY newTabControlled.restoreButton.accesskey "о">
+
 <!ENTITY pageActionButton.tooltip "Действия със страницата">
 <!ENTITY pageAction.addToUrlbar.label "Добавяне към адресната лента">
 <!ENTITY pageAction.removeFromUrlbar.label "Премахване от адресната лента">
+
+<!ENTITY pageAction.allowInUrlbar.label "Показване в адресната лента">
+<!ENTITY pageAction.disallowInUrlbar.label "Скриване от адресната лента">
+<!ENTITY pageAction.manageExtension.label "Управление на добавката…">
 
 <!ENTITY pageAction.sendTabToDevice.label "Изпращане на раздела до устройство">
 <!ENTITY sendToDevice.syncNotReady.label "Синхронизиране на устройства…">

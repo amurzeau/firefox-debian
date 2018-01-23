@@ -4,6 +4,8 @@
 <!ENTITY addons.windowTitle                   "অ্যাড-অন ব্যবস্থাপক">
 
 <!ENTITY search.placeholder                   "সব অ্যাড-অন অনুসন্ধান">
+
+<!ENTITY search.placeholder2                  "addons.mozilla.org এ অনুসন্ধান করুন">
 <!ENTITY search.buttonlabel                   "অনুসন্ধান">
 <!-- LOCALIZATION NOTE (search.commandKey):
      The search command key should match findOnCmd.commandkey from browser.dtd -->
@@ -81,9 +83,9 @@
 <!ENTITY cmd.showDetails.accesskey            "S">
 <!ENTITY cmd.findUpdates.label                "হালনাগাদ অনুসন্ধান করা হবে F">
 <!ENTITY cmd.findUpdates.accesskey            "F">
-<!ENTITY cmd.preferencesWin.label             "অপশন O">
+<!ENTITY cmd.preferencesWin.label             "অপশন">
 <!ENTITY cmd.preferencesWin.accesskey         "O">
-<!ENTITY cmd.preferencesUnix.label            "পছন্দ P">
+<!ENTITY cmd.preferencesUnix.label            "পছন্দসমূহ">
 <!ENTITY cmd.preferencesUnix.accesskey        "P">
 <!ENTITY cmd.about.label                      "সম্পর্কিত A">
 <!ENTITY cmd.about.accesskey                  "A">
@@ -132,29 +134,29 @@
 <!ENTITY detail.version.label                 "সংস্করণ">
 <!ENTITY detail.lastupdated.label             "সর্বশেষ হালনাগাদ">
 <!ENTITY detail.creator.label                 "ডেভেলপার">
-<!ENTITY detail.homepage.label                "প্রধান পাতা">
+<!ENTITY detail.homepage.label                "নীড়পাতা">
 <!ENTITY detail.numberOfDownloads.label       "ডাউনলোড">
 
 <!ENTITY detail.contributions.description     "এ অ্যাড-অন ডেভেলপার বলে যে, আপনি আপনার যে কোনো ছোট অবদান দিয়েও এই অ্যাড-অনের উন্নয়নে সহায়তা করতে পারেন।">
 
 <!ENTITY detail.updateType                    "স্বয়ংক্রিয় হালনাগাদ">
-<!ENTITY detail.updateDefault.label           "পূর্বনির্ধারিত">
-<!ENTITY detail.updateDefault.tooltip         "পূর্বনির্ধারিত হলেই কেবল স্বয়ংক্রিয়ভাবে হালনাগাদ ইনস্টল করা হবে">
+<!ENTITY detail.updateDefault.label           "ডিফল্ট">
+<!ENTITY detail.updateDefault.tooltip         "ডিফল্ট হলেই কেবল স্বয়ংক্রিয়ভাবে হালনাগাদ ইনস্টল করা হবে">
 <!ENTITY detail.updateAutomatic.label         "সচল">
 <!ENTITY detail.updateAutomatic.tooltip       "স্বয়ংক্রিয়ভাবে হালনাগাদ ইনস্টল করা হবে">
 <!ENTITY detail.updateManual.label            "বন্ধ">
 <!ENTITY detail.updateManual.tooltip          "স্বয়ংক্রিয়ভাবে হালনাগাদ ইনস্টল করা হবে না">
-<!ENTITY detail.home                          "প্রধান পাতা">
+<!ENTITY detail.home                          "নীড়পাতা">
 <!ENTITY detail.repository                    "অ্যাড-অন প্রোফাইল">
 <!ENTITY detail.size                          "আকার">
 
 <!ENTITY detail.checkForUpdates.label         "হালনাগাদ এর জন্য পরীক্ষা f">
 <!ENTITY detail.checkForUpdates.accesskey     "f">
 <!ENTITY detail.checkForUpdates.tooltip       "এই অ্যাড-অনের জন্য হালনাগাদ পরীক্ষা">
-<!ENTITY detail.showPreferencesWin.label      "অপশন O">
+<!ENTITY detail.showPreferencesWin.label      "অপশন">
 <!ENTITY detail.showPreferencesWin.accesskey  "O">
 <!ENTITY detail.showPreferencesWin.tooltip    "এই অ্যাড-অন এর অপশন পরিবর্তন করুন">
-<!ENTITY detail.showPreferencesUnix.label     "পছন্দ সমূহ P">
+<!ENTITY detail.showPreferencesUnix.label     "পছন্দসমূহ">
 <!ENTITY detail.showPreferencesUnix.accesskey "P">
 <!ENTITY detail.showPreferencesUnix.tooltip   "এই অ্যাড-অন এর পছন্দসমূহ পরিবর্তন করুন">
 
@@ -183,7 +185,7 @@
 <!ENTITY search.filter2.available.label       "বিদ্যমান অ্যাড-অন">
 <!ENTITY search.filter2.available.tooltip     "ইনস্টলের জন্য বিদ্যমান অ্যাড-অন প্রদর্শন করা হবে">
 
-<!ENTITY addon.homepage                       "প্রধান পাতা">
+<!ENTITY addon.homepage                       "নীড়পাতা">
 <!ENTITY addon.details.label                  "আরও">
 <!ENTITY addon.details.tooltip                "এই অ্যাড-অন সম্পর্কে আরও বিস্তারিত তথ্য প্রদর্শন">
 <!ENTITY addon.unknownDate                    "অজানা">
@@ -223,7 +225,7 @@
 <!ENTITY eula.height                          "400px">
 <!ENTITY eula.accept                          "অনুমোদন এবং ইনস্টল…">
 
-<!ENTITY settings.path.button.label           "ব্রাউজ...">
+<!ENTITY settings.path.button.label           "ব্রাউজ…">
 
 <!-- LOCALIZATION NOTE (experiment.info.label): The strings related to
      experiments are present on the "Experiments" tab of the add-ons manager.

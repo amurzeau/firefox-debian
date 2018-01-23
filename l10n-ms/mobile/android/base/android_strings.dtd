@@ -113,7 +113,7 @@
 <!ENTITY menu "Menu">
 <!ENTITY back "Undur">
 <!ENTITY stop "Berhenti">
-<!ENTITY site_security "Laman Keselamatan">
+<!ENTITY site_security "Keselamatan Laman">
 <!ENTITY edit_mode_cancel "Batal">
 
 <!ENTITY close_tab "Tutup Tab">
@@ -540,6 +540,8 @@
      any page is removed frome about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "Halaman telah dibuang">
+
+<!ENTITY folder_removed "Folder dibuang">
 
 <!ENTITY bookmark_edit_title "Edit Tandabuku">
 <!ENTITY bookmark_edit_folder_title "Edit Folder">

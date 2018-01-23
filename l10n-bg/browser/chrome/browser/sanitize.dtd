@@ -54,8 +54,8 @@ that require it.  -->
 <!ENTITY itemFormSearchHistory.accesskey   "ф">
 <!ENTITY itemCookies.label                 "Бисквитки">
 <!ENTITY itemCookies.accesskey             "Б">
-<!ENTITY itemCache.label                   "Кеш">
-<!ENTITY itemCache.accesskey               "К">
+<!ENTITY itemCache.label                   "Буфер">
+<!ENTITY itemCache.accesskey               "б">
 <!ENTITY itemOfflineApps.label             "Данни за сайтове без мрежа">
 <!ENTITY itemOfflineApps.accesskey         "м">
 <!ENTITY itemActiveLogins.label            "Вписвания в сайтове">

@@ -318,6 +318,7 @@
 <!ENTITY goChatCmd.label "Sembang">
 <!ENTITY goChatCmd.accesskey "S">
 <!ENTITY goChatCmd.key "I">
+<!ENTITY goChatCmd2.key "H">
 <!ENTITY prevStarredMsgCmd.label "Mesej Berbintang">
 <!ENTITY prevStarredMsgCmd.accesskey "B">
 <!ENTITY folderMenu.label "Folder">
@@ -459,6 +460,11 @@
 <!ENTITY addressBookCmd.key "B">
 <!ENTITY addons.label "Add-ons">
 <!ENTITY addons.accesskey "A">
+<!ENTITY addonPrefs.label "Pilihan Add-on">
+<!ENTITY addonPrefs.accesskey "P">
+<!ENTITY addonPrefsUnix.label "Keutamaan Add-on">
+<!ENTITY addonPrefsUnix.accesskey "K">
+<!ENTITY addonNoPrefs.label "Tiada tetapan Add-on ditemui.">
 <!ENTITY activitymanager.label "Pengurus Aktiviti">
 <!ENTITY activitymanager.accesskey "t">
 <!ENTITY imAccountsStatus.label "Status sembang">
@@ -504,6 +510,8 @@
 <!ENTITY devToolboxCmd.commandkey "i">
 <!ENTITY addonDebugCmd.label "Penyahpepijat Add-on">
 <!ENTITY addonDebugCmd.accesskey "A">
+<!ENTITY debugAddonsCmd.label "Add-ons Nyahpepijat">
+<!ENTITY debugAddonsCmd.accesskey "A">
 <!ENTITY tabsDebugCmd.label "Penyahpepijat Bingkai Kandungan">
 <!ENTITY tabsDebugCmd.accesskey "K">
 <!ENTITY errorConsoleCmd.label "Konsol Ralat">

@@ -290,6 +290,7 @@
      Instead of switching to the browser it appears as if the user stays in the third-party app.
      For more see: https://developer.chrome.com/multidevice/android/customtabs -->
 <!ENTITY pref_custom_tabs2 "แท็บที่กำหนดเอง">
+<!ENTITY pref_custom_tabs_summary4 "อนุญาตให้แอปเปิดเนื้อหาเว็บในแท็บที่กำหนดเองสำหรับการโหลดอย่างรวดเร็ว">
 
 <!-- Localization note (custom_tabs_menu_item_open_in): The variable is replaced by the name of
      default browser from user's preference, such as "Open in Firefox" -->
@@ -540,6 +541,8 @@
      bookmarks, or reading list. -->
 <!ENTITY page_removed "เอาหน้าออกแล้ว">
 
+<!ENTITY folder_removed "เอาโฟลเดอร์ออกแล้ว">
+
 <!ENTITY bookmark_edit_title "แก้ไขที่คั่นหน้า">
 <!ENTITY bookmark_edit_folder_title "แก้ไขโฟลเดอร์">
 <!ENTITY bookmark_edit_name "ชื่อ">
@@ -788,7 +791,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY restrictable_feature_advanced_settings_description "สิ่งนี้รวมถึงการนำเข้าที่คั่นหน้า, การเรียกคืนแท็บ และการอัปเดตอัตโนมัติ ปิดเพื่อใช้การตั้งค่าแบบเรียบง่ายที่เหมาะสมสำหรับสมาชิกทุกคนในครอบครัว">
 <!ENTITY restrictable_feature_camera_microphone "กล้องและไมโครโฟน">
 <!ENTITY restrictable_feature_camera_microphone_description "อนุญาตให้สมาชิกในครอบครัวมีส่วนร่วมในการสื่อสารตามเวลาจริงบนเว็บไซต์">
-<!ENTITY restrictable_feature_block_list "รายการการปิดกั้น">
+<!ENTITY restrictable_feature_block_list "รายการปิดกั้น">
 <!ENTITY restrictable_feature_block_list_description "ปิดกั้นเว็บไซต์ที่มีเนื้อหาล่อแหลม">
 
 <!-- Default Bookmarks titles-->
@@ -868,3 +871,4 @@ displayed when there are more than 3 actions available for a page.
 See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "เพิ่มไปยังหน้าจอหลัก">
 <!ENTITY pwa_continue_to_website "ดำเนินการต่อไปยังเว็บไซต์">
+<!ENTITY pwa_onboarding_sumo "คุณสามารถเพิ่มเว็บไซต์นี้ไปยังหน้าจอหลักของคุณได้อย่างง่ายดายเพื่อให้เข้าถึงได้ทันทีและท่องเว็บได้เร็วขึ้นด้วยประสบการณ์ที่เหมือนแอป">

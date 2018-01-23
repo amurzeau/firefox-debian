@@ -31,7 +31,7 @@
 <!ENTITY firstrun_tabqueue_message_off "فعّل طابور الألسنة">
 <!ENTITY firstrun_tabqueue_subtext_off "احفظ الروابط لقراءتها لاحقا في &brandShortName; عند الضغط عليها في التطبيقات الأخرى.">
 
-<!ENTITY firstrun_tabqueue_message_on "نجاح!">
+<!ENTITY firstrun_tabqueue_message_on "تم">
 <!ENTITY firstrun_tabqueue_subtext_on "يمكنك متى ما أحببت تعطيل هذا في &settings; تحت &pref_category_general;.">
 
 <!ENTITY firstrun_readerview_title "المقالات">
@@ -65,7 +65,7 @@
 <!ENTITY  crash_email "بريدك الإلكتروني">
 <!ENTITY  crash_closing_alert "أأخرج بدون إرسال بلاغ الانهيار؟">
 <!ENTITY  sending_crash_report "يرسل بلاغ الانهيار\u2026">
-<!ENTITY  crash_close_label "أغلِق">
+<!ENTITY  crash_close_label "أغلق">
 <!ENTITY  crash_restart_label "أعِد تشغيل &brandShortName;">
 
 <!ENTITY url_bar_default_text2 "ابحث أو أدخل عنوانا">
@@ -305,7 +305,7 @@
 <!ENTITY tracking_protection_prompt_title "الآن مع حماية من التعقّب">
 <!ENTITY tracking_protection_prompt_text "يحجب عناصر التعقب لئلا تقلق بشأنها.">
 <!ENTITY tracking_protection_prompt_tip_text "طالع إعدادات الخصوصية للاطلاع على المزيد">
-<!ENTITY tracking_protection_prompt_action_button "فهمت!">
+<!ENTITY tracking_protection_prompt_action_button "فهمت">
 
 <!ENTITY tab_queue_toast_message3 "حُفظ اللسان في &brandShortName;">
 <!ENTITY tab_queue_toast_action "افتح الآن">
@@ -449,7 +449,7 @@
 <!ENTITY downloads "التنزيلات">
 <!ENTITY char_encoding "ترميز المحارف">
 
-<!ENTITY share "شارك">
+<!ENTITY share "شارِك">
 <!ENTITY share_title "شارك عبر">
 <!ENTITY share_image_failed "تعّذرت مشاركة هذا الموقع">
 <!ENTITY save_as_pdf "احفظ ك‍ PDF">
@@ -492,10 +492,10 @@
 <!ENTITY contextmenu_pasteandgo "ألصق و اذهب">
 <!ENTITY contextmenu_paste "لصق">
 <!ENTITY contextmenu_copyurl "انسخ العنوان">
-<!ENTITY contextmenu_edit_bookmark "حرِّر">
+<!ENTITY contextmenu_edit_bookmark "حرّر">
 <!ENTITY contextmenu_subscribe "اشترك بهذه الصفحة">
 <!ENTITY contextmenu_site_settings "حرر إعدادات الموقع">
-<!ENTITY contextmenu_top_sites_edit "حرِّر">
+<!ENTITY contextmenu_top_sites_edit "حرّر">
 <!ENTITY contextmenu_top_sites_pin "ثبّت الموقع">
 <!ENTITY contextmenu_top_sites_unpin "افصل الموقع">
 <!-- Localization note (contextmenu_pin_to_top_sites, contextmenu_unpin_from_top_sites): These strings are used to
@@ -517,7 +517,7 @@
 <!ENTITY doorhanger_login_edit_title "حرّر الولوج">
 <!ENTITY doorhanger_login_edit_username_hint "اسم المستخدم">
 <!ENTITY doorhanger_login_edit_password_hint "كلمة السر">
-<!ENTITY doorhanger_login_edit_toggle "أظهِر كلمة السر">
+<!ENTITY doorhanger_login_edit_toggle "أظهر كلمة السر">
 <!ENTITY doorhanger_login_select_message "أأنسخ كلمة السر من &formatS;؟">
 <!ENTITY doorhanger_login_select_toast_copy "نُسخت كلمة السر إلى الحافظة">
 <!ENTITY doorhanger_login_select_action_text "اختر ولوجا آخر">
@@ -540,6 +540,8 @@
      any page is removed frome about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "أزِيلت الصفحة">
+
+<!ENTITY folder_removed "أُزيل المجلد">
 
 <!ENTITY bookmark_edit_title "حرّر العلامة">
 <!ENTITY bookmark_edit_folder_title "حرّر المجلد">

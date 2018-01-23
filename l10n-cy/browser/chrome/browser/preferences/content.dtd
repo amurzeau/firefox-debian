@@ -21,15 +21,15 @@
 
 <!ENTITY  locationPermissions.label                             "Lleoliad">
 <!ENTITY  locationSettingsButton.label                          "Gosodiadau…">
-<!ENTITY  locationSettingsButton.accesskey                      "L">
+<!ENTITY  locationSettingsButton.accesskey                      "d">
 
 <!ENTITY  cameraPermissions.label                               "Camera">
 <!ENTITY  cameraSettingsButton.label                            "Gosodiadau…">
-<!ENTITY  cameraSettingsButton.accesskey                        "c">
+<!ENTITY  cameraSettingsButton.accesskey                        "s">
 
 <!ENTITY  microphonePermissions.label                           "Meicroffon">
 <!ENTITY  microphoneSettingsButton.label                        "Gosodiadau…">
-<!ENTITY  microphoneSettingsButton.accesskey                    "m">
+<!ENTITY  microphoneSettingsButton.accesskey                    "o">
 
 <!ENTITY  fontsAndColors.label        "Ffontiau a Lliwiau">
 

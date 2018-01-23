@@ -51,6 +51,7 @@ can reach it easily. -->
 <!ENTITY  sendLinkToDevice.label             "Poslat odkaz do zařízení">
 <!ENTITY  sendLinkToDevice.accesskey         "e">
 <!ENTITY  sendToDeviceFeedback.label         "Odesláno!">
+<!ENTITY  sendToDeviceOfflineFeedback.label  "Ve frontě (offline)">
 <!ENTITY  moveToNewWindow.label              "Přesunout do nového okna">
 <!ENTITY  moveToNewWindow.accesskey          "k">
 <!ENTITY  bookmarkAllTabs.label              "Přidat všechny panely do záložek…">
@@ -188,13 +189,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hideRecentlyBookmarked.accesskey "e">
 
 <!ENTITY backCmd.label                "Zpět">
+<!ENTITY backCmd.accesskey            "Z">
 <!ENTITY backButton.tooltip           "Přejde na předchozí stránku">
 <!ENTITY forwardCmd.label             "Vpřed">
+<!ENTITY forwardCmd.accesskey         "V">
 <!ENTITY forwardButton.tooltip        "Přejde na následující stránku">
 <!ENTITY backForwardButtonMenu.tooltip "Při dlouhém stisku či po klepnutí pravým tlačítkem zobrazí historii">
 <!ENTITY backForwardButtonMenuMac.tooltip "Při dlouhém stisku zobrazí historii">
 <!ENTITY reloadCmd.label              "Obnovit">
+<!ENTITY reloadCmd.accesskey          "O">
 <!ENTITY stopCmd.label                "Zastavit">
+<!ENTITY stopCmd.accesskey            "s">
 <!ENTITY stopCmd.macCommandKey        ".">
 <!ENTITY goEndCap.tooltip             "Přejde na adresu v adresním řádku">
 <!ENTITY printButton.label            "Tisk">
@@ -231,6 +236,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Této stránce jste zakázali ukládat data natrvalo.">
 
 <!ENTITY urlbar.popupBlocked.tooltip             "Pro tento server jste zablokovali otevírání vyskakovacích oken.">
+
+<!ENTITY urlbar.canvasBlocked.tooltip            "Tomuto serveru jste zablokovali přístup k informacím canvasu.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Zobrazí historii">
 
@@ -355,6 +362,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuCustomize.tooltip "Přizpůsobí nabídku a lišty">
 <!ENTITY appMenuCustomizeExit.label "Ukončit přizpůsobení">
 <!ENTITY appMenuCustomizeExit.tooltip "Ukončí přizpůsobení">
+
 <!ENTITY appMenuHistory.showAll.label "Zobrazit celou historii">
 <!ENTITY appMenuHistory.clearRecent.label "Vymazat nedávnou historii…">
 <!ENTITY appMenuHistory.restoreSession.label "Obnovit předchozí relaci">
@@ -385,9 +393,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Chcete zde vidět vaše panely z ostatních zařízení?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Předvolby synchronizace">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Pro zobrazení seznamu panelů z vašich ostatních zařízení se prosím přihlaste.">
+<!ENTITY appMenuRemoteTabs.unverified.label "Je potřeba ověřit váš účet.">
 <!ENTITY appMenuRemoteTabs.signin.label "Přihlásit se ke službě Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Správa zařízení…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Zobrazit v postranní liště">
+
+<!ENTITY appMenuRemoteTabs.connectdevice.label "Připojit další zařízení">
 
 <!ENTITY appMenuRecentHighlights.label "Vybrané">
 
@@ -564,6 +575,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY setDesktopBackgroundCmd.label      "Nastavit pozadí plochy…">
 <!ENTITY setDesktopBackgroundCmd.accesskey  "t">
 <!ENTITY bookmarkPageCmd2.label       "Přidat stránku do záložek">
+<!ENTITY bookmarkPageCmd2.accesskey   "P">
 <!ENTITY bookmarkThisLinkCmd.label      "Přidat odkaz do záložek">
 <!ENTITY bookmarkThisLinkCmd.accesskey  "d">
 <!ENTITY bookmarkThisFrameCmd.label      "Přidat rám do záložek">
@@ -750,6 +762,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY editBookmark.done.label                     "Hotovo">
 <!ENTITY editBookmark.removeBookmark.accessKey       "S">
 
+<!-- LOCALIZATION NOTE (identity.securityView.label)
+     This is the header of the security subview in the Site Identity panel. -->
+<!ENTITY identity.securityView.label "Zabezpečení stránky">
+
 <!ENTITY identity.connectionSecure "Zabezpečené připojení">
 <!ENTITY identity.connectionNotSecure "Připojení není zabezpečeno">
 <!ENTITY identity.connectionFile "Tato stránka je uložena ve vašem počítači.">
@@ -765,7 +781,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.weakEncryption "Tento server používá slabé šifrování.">
 
 <!-- Strings for connection state warnings in the subview. -->
-<!ENTITY identity.description.insecure "Vaše připojení k tomuto serveru není soukromé. Informace, které odešlete (jako hesla, zprávy, číslo kreditní karty atd.), mohou být viděny ostatními.">
+<!ENTITY identity.description.insecure "Vaše připojení k tomuto serveru není soukromé. Informace, které odešlete (jako hesla, zprávy, číslo platební karty atd.), mohou být viděny ostatními.">
 <!ENTITY identity.description.insecureLoginForms "Přihlašovací údaje, které zadáte na této stránce, nebudou zabezpečeny a mohou být vyzrazeny.">
 <!ENTITY identity.description.weakCipher "Vaše připojení k tomuto serveru používá slabé šifrování a není soukromé.">
 <!ENTITY identity.description.weakCipher2 "Ostatní lidé mohou vidět vaše informace nebo pozměnit chování stránky.">
@@ -774,7 +790,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.description.passiveLoaded2 "Tato webová stránka obsahuje obsah, který není zabezpečen (například obrázky).">
 <!ENTITY identity.description.passiveLoaded3 "Ačkoli aplikace &brandShortName; zablokovala nějaký obsah, stránka stále ještě obsahuje nezabezpečený obsah (například obrázky).">
 <!ENTITY identity.description.activeLoaded "Tato webová stránka obsahuje obsah, který není zabezpečen (například skripty), a připojení k tomuto serveru tak není soukromé.">
-<!ENTITY identity.description.activeLoaded2 "Informace, které sdílíte s tímto serverem (jako hesla, zprávy, číslo kreditní karty, atd.), mohou být viděny ostatními.">
+<!ENTITY identity.description.activeLoaded2 "Informace, které sdílíte s tímto serverem (jako hesla, zprávy, číslo platební karty, atd.), mohou být viděny ostatními.">
 
 <!ENTITY identity.enableMixedContentBlocking.label "Povolit ochranu">
 <!ENTITY identity.enableMixedContentBlocking.accesskey "P">
@@ -799,16 +815,19 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncTabsMenu3.label     "Synchronizované panely">
 
 <!ENTITY syncedTabs.sidebar.label              "Synchronizované panely">
-<!ENTITY syncedTabs.sidebar.noclients.label    "Přihlaste se do Firefoxu z vašich ostatních zařízení pro zobrazení jejich panelů zde.">
+<!ENTITY syncedTabs.sidebar.noclients.label    "Pro zobrazení panelů z vašich ostatních zařízeních se na nich přihlaste k účtu Firefoxu.">
 <!ENTITY syncedTabs.sidebar.noclients.title    "Žádné synchronizované panely… zatím!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Chcete zde vidět vaše panely z ostatních zařízení?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Pro zobrazení seznamu panelů z vašich ostatních zařízení se prosím přihlaste.">
+<!ENTITY syncedTabs.sidebar.unverified.label   "Je potřeba ověřit váš účet.">
 <!ENTITY syncedTabs.sidebar.notabs.label       "Žádné otevřené panely">
 <!ENTITY syncedTabs.sidebar.openprefs.label    "Otevřít předvolby služby &syncBrand.shortName.label;">
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Zapněte synchronizaci panelů pro zobrazení seznamu panelů z vašich ostatních zařízení.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Hledat v synchronizovaných panelech">
+
+<!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Připojit další zařízení">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
                         syncedTabs.context.openAllInTabs.accesskey):
@@ -912,7 +931,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pluginNotification.showAll.accesskey "Z">
 
 <!-- LOCALIZATION NOTE (pluginActivateNow.label, pluginActivateAlways.label, pluginBlockNow.label): These should be the same as the matching strings in browser.properties -->
-<!ENTITY pluginActivateNow.label "Teď povolit">
+<!ENTITY pluginActivateNow.label "Povolit jenom nyní">
 <!ENTITY pluginActivateAlways.label "Povolit a zapamatovat">
 <!ENTITY pluginBlockNow.label "Blokovat zásuvný modul">
 
@@ -979,9 +998,20 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "n">
 <!ENTITY updateRestart.panelUI.label2 "Restartovat a aktualizovat aplikaci &brandShorterName;">
 
+<!ENTITY newTabControlled.message "Rozšíření změnilo stránku zobrazovanou v nově otevřených panelech. Pokud tuto změnu nechcete, můžete obnovit svoje původní nastavení.">
+<!ENTITY newTabControlled.header.message "Obsah nového panelu byl změněn.">
+<!ENTITY newTabControlled.keepButton.label "Zachovat změny">
+<!ENTITY newTabControlled.keepButton.accesskey "Z">
+<!ENTITY newTabControlled.restoreButton.label "Obnovit nastavení">
+<!ENTITY newTabControlled.restoreButton.accesskey "O">
+
 <!ENTITY pageActionButton.tooltip "Akce stránky">
 <!ENTITY pageAction.addToUrlbar.label "Přidat do adresního řádku">
 <!ENTITY pageAction.removeFromUrlbar.label "Odebrat z adresního řádku">
+
+<!ENTITY pageAction.allowInUrlbar.label "Zobrazit v adresním řádku">
+<!ENTITY pageAction.disallowInUrlbar.label "Nezobrazovat v adresním řádku">
+<!ENTITY pageAction.manageExtension.label "Správa rozšíření…">
 
 <!ENTITY pageAction.sendTabToDevice.label "Poslat panel do zařízení">
 <!ENTITY sendToDevice.syncNotReady.label "Synchronizace zařízení…">

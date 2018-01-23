@@ -316,8 +316,9 @@
 <!ENTITY goBackCmd.accesskey "H">
 <!ENTITY goBackCmd.commandKey "[">
 <!ENTITY goChatCmd.label "Csevegés">
-<!ENTITY goChatCmd.accesskey "C">
+<!ENTITY goChatCmd.accesskey "e">
 <!ENTITY goChatCmd.key "I">
+<!ENTITY goChatCmd2.key "H">
 <!ENTITY prevStarredMsgCmd.label "Csillagozott üzenet">
 <!ENTITY prevStarredMsgCmd.accesskey "C">
 <!ENTITY folderMenu.label "Mappa">
@@ -459,6 +460,11 @@
 <!ENTITY addressBookCmd.key "B">
 <!ENTITY addons.label "Kiegészítők">
 <!ENTITY addons.accesskey "t">
+<!ENTITY addonPrefs.label "Kiegészítőbeállítások">
+<!ENTITY addonPrefs.accesskey "b">
+<!ENTITY addonPrefsUnix.label "Kiegészítőbeállítások">
+<!ENTITY addonPrefsUnix.accesskey "b">
+<!ENTITY addonNoPrefs.label "Nincsenek kiegészítőbeállítások.">
 <!ENTITY activitymanager.label "Tevékenységkezelő">
 <!ENTITY activitymanager.accesskey "k">
 <!ENTITY imAccountsStatus.label "Csevegési állapot">
@@ -504,6 +510,8 @@
 <!ENTITY devToolboxCmd.commandkey "i">
 <!ENTITY addonDebugCmd.label "Kiegészítők hibakeresése">
 <!ENTITY addonDebugCmd.accesskey "K">
+<!ENTITY debugAddonsCmd.label "Kiegészítők hibakeresése">
+<!ENTITY debugAddonsCmd.accesskey "h">
 <!ENTITY tabsDebugCmd.label "Tartalomkeret hibakeresése">
 <!ENTITY tabsDebugCmd.accesskey "T">
 <!ENTITY errorConsoleCmd.label "Hibakonzol">

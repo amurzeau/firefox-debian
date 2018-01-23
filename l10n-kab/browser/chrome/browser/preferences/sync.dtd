@@ -4,26 +4,38 @@
 
 <!-- The page shown when logged in... -->
 
-<!ENTITY engine.bookmarks.label     "Ticraḍ n isebtar">
-<!ENTITY engine.bookmarks.accesskey "T">
-<!ENTITY engine.tabs.label2         "Ldi icarren">
+<!ENTITY engine.bookmarks.label     "Ticraḍ n yisebtar">
+<!ENTITY engine.bookmarks.accesskey "c">
+<!ENTITY engine.tabs.label2         "Ldi accaren">
+<!ENTITY engine.tabs.title          "Tabdart n wayen akka yeldin deg yibenkan akk yemtawan">
 <!ENTITY engine.tabs.accesskey      "T">
 <!ENTITY engine.history.label       "Amazray">
 <!ENTITY engine.history.accesskey   "A">
-<!ENTITY engine.logins.label        "Inekcam">
+<!ENTITY engine.logins.label        "Anekcum">
+<!ENTITY engine.logins.title        "Isem n uqesdac d wawalen uffiren i teskelseḍ">
 <!ENTITY engine.logins.accesskey    "Y">
-<!ENTITY engine.prefs.label         "Imsenyifen">
+<!-- On Windows we use the term "Options" to describe settings, but
+     on Linux and Mac OS X we use "Preferences" - carry that distinction
+     over into this string, used as the checkbox which indicates if prefs are synced
+-->
+<!ENTITY engine.prefsWin.label      "Iγewwaren">
+<!ENTITY engine.prefsWin.accesskey  "S">
+<!ENTITY engine.prefs.label         "Ismenyifen">
 <!ENTITY engine.prefs.accesskey     "y">
+<!ENTITY engine.prefs.title         "Amatu, tabaḍnit, akked yiɣewwaren n tɣellist ttubeddlen">
 <!ENTITY engine.addons.label        "Izegrar">
+<!ENTITY engine.addons.title        "Iseɣzaf akked yisental i Firefox n uselkim">
 <!ENTITY engine.addons.accesskey    "z">
 <!ENTITY engine.addresses.label     "Tansiwin">
+<!ENTITY engine.addresses.title     "Tansiwin n lpusṭa i teskelseḍ (aselkim kan)">
 <!ENTITY engine.addresses.accesskey "w">
 <!ENTITY engine.creditcards.label   "Tikarḍiwin n usmad">
+<!ENTITY engine.creditcards.title   "Ismawen, imḍanen akked yizemziyen ifaten (aselkim kan)">
 <!ENTITY engine.creditcards.accesskey "G">
 
 <!-- Device Settings -->
-<!ENTITY fxaSyncDeviceName.label       "Isem n wallal">
-<!ENTITY changeSyncDeviceName2.label "Snifel isem n yibenk…">
+<!ENTITY fxaSyncDeviceName.label       "Isem n yibenk">
+<!ENTITY changeSyncDeviceName2.label "Beddel isem n yibenk…">
 <!ENTITY changeSyncDeviceName2.accesskey "q">
 <!ENTITY cancelChangeSyncDeviceName.label "Sefsex">
 <!ENTITY cancelChangeSyncDeviceName.accesskey "x">
@@ -50,29 +62,34 @@ both, to better adapt this sentence to their language.
 <!ENTITY signedInLoginFailure.beforename.label "Ma ulac aɣilif sesteb akken ad tkecmeḍ">
 <!ENTITY signedInLoginFailure.aftername.label "">
 
-<!ENTITY notSignedIn.label           "Ur teqqineḍ ara.">
-<!ENTITY signIn.label                "Qqen">
-<!ENTITY signIn.accesskey            "Q">
-<!ENTITY profilePicture.tooltip      "Snifel tugna n umaɣnu">
-<!ENTITY verifiedManage.label        "Sefrek imiḍanen">
-<!ENTITY verifiedManage.accesskey    "m">
-<!ENTITY disconnect3.label           "Tuffɣa…">
-<!ENTITY disconnect3.accesskey       "k">
+<!ENTITY notSignedIn.label            "Ur teqqineḍ ara.">
+<!ENTITY signIn.label                 "Qqen">
+<!ENTITY signIn.accesskey             "Q">
+<!ENTITY profilePicture.tooltip       "Beddel tugna n umaɣnu">
+<!ENTITY verifiedManage.label         "Sefrek amiḍan">
+<!ENTITY verifiedManage.accesskey     "m">
+<!ENTITY disconnect3.label            "Tuffɣa…">
+<!ENTITY disconnect3.accesskey        "k">
 <!ENTITY verify.label                "Senqed tansa imayl">
 <!ENTITY verify.accesskey            "e">
 <!ENTITY forget.label                "Ttu tansa-a imayl">
 <!ENTITY forget.accesskey            "y">
 
+<!ENTITY resendVerification.label     "Ales tuzna n usentem">
+<!ENTITY resendVerification.accesskey "d">
+<!ENTITY cancelSetup.label            "Sefsex asebded">
+<!ENTITY cancelSetup.accesskey        "p">
+
 <!ENTITY signedOut.caption            "Awi web-inek yid-k">
-<!ENTITY signedOut.description        "Semtawi ticraḍ-inek n isebtar, amazray, awalen uffiren, izegrar, d ismenyifen akked ibenkan-inek akk.">
+<!ENTITY signedOut.description        "Semtawi ticraḍ-inek n yisebtar, amazray, accaren, awalen uffiren, izegrar, akked yismenyifen d yibenkan-inek akk.">
 <!ENTITY signedOut.accountBox.title   "Qqen ɣer &syncBrand.fxAccount.label;">
 <!ENTITY signedOut.accountBox.create2 "Ur tesεiḍ ara amiḍan? Bdu">
 <!ENTITY signedOut.accountBox.create2.accesskey "A">
 <!ENTITY signedOut.accountBox.signin2 "Kcem…">
 <!ENTITY signedOut.accountBox.signin2.accesskey "G">
 
-<!ENTITY signedIn.settings.label       "Iɣewwaṛen n umtawi">
-<!ENTITY signedIn.settings.description "Fren ayen ad temtawiḍ deg ibenk-inek s useqdec n &brandShortName;.">
+<!ENTITY signedIn.settings.label       "Iɣewwaren n umtawi">
+<!ENTITY signedIn.settings.description "Fren ayen ara temtawiḍ deg yibenk-ik s useqdec n &brandShortName;.">
 
 <!-- LOCALIZATION NOTE (mobilePromo3.*): the following strings will be used to
      create a single sentence with active links.
@@ -88,4 +105,4 @@ both, to better adapt this sentence to their language.
 <!-- LOCALIZATION NOTE (mobilePromo3.iOSLink): This is a link title that links to https://www.mozilla.org/firefox/ios/ -->
 <!ENTITY mobilePromo3.iOSLink          "iOs">
 
-<!ENTITY mobilePromo3.end              " akken ad temtawiḍ d ibenkan-ik n ufus.">
+<!ENTITY mobilePromo3.end              " akken ad temtawiḍ d yibenkan-ik aziraz.">

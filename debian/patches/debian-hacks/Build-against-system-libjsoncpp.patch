@@ -3,20 +3,23 @@ Date: Thu, 9 Mar 2017 07:17:01 +0900
 Subject: Build against system libjsoncpp
 
 ---
- config/system-headers                             |  1 +
+ config/system-headers.mozbuild                    |  4 ++
  toolkit/components/jsoncpp/src/lib_json/moz.build | 46 +----------------------
  toolkit/crashreporter/minidump-analyzer/moz.build |  2 +-
- 3 files changed, 3 insertions(+), 46 deletions(-)
+ 3 files changed, 6 insertions(+), 46 deletions(-)
 
-diff --git a/config/system-headers b/config/system-headers
-index 235090404e0d..9f59eb53c990 100644
---- a/config/system-headers
-+++ b/config/system-headers
-@@ -1338,3 +1338,4 @@ unicode/utypes.h
- libutil.h
- unwind.h
- fenv.h
-+json/json.h
+diff --git a/config/system-headers.mozbuild b/config/system-headers.mozbuild
+index e02d381a12e9..52344441290a 100644
+--- a/config/system-headers.mozbuild
++++ b/config/system-headers.mozbuild
+@@ -1344,3 +1344,7 @@ if CONFIG['MOZ_SYSTEM_ICU']:
+         'unicode/ustring.h',
+         'unicode/utypes.h',
+     ]
++
++system_headers += [
++    'json/json.h',
++]
 diff --git a/toolkit/components/jsoncpp/src/lib_json/moz.build b/toolkit/components/jsoncpp/src/lib_json/moz.build
 index 9997014bd9dc..5e20a3d42fd9 100644
 --- a/toolkit/components/jsoncpp/src/lib_json/moz.build
@@ -74,7 +77,7 @@ index 9997014bd9dc..5e20a3d42fd9 100644
 -    ]
 +OS_LIBS += ['jsoncpp']
 diff --git a/toolkit/crashreporter/minidump-analyzer/moz.build b/toolkit/crashreporter/minidump-analyzer/moz.build
-index 7c7923bb5ba7..56b8e5da22a7 100644
+index f40d1c139494..b7ec0b128d1e 100644
 --- a/toolkit/crashreporter/minidump-analyzer/moz.build
 +++ b/toolkit/crashreporter/minidump-analyzer/moz.build
 @@ -20,7 +20,7 @@ if CONFIG['OS_TARGET'] != 'Android':

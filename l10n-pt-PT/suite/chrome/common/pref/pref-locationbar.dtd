@@ -1,8 +1,8 @@
 <!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<!--LOCALIZATION NOTE : FILE The Location Bar prefs panel -->
 
+<!--LOCALIZATION NOTE : FILE The Location Bar prefs panel -->
 <!ENTITY pref.locationBar.title                "Barra de localização">
 
 <!ENTITY autoComplete.label                    "Conclusão automática">
@@ -38,5 +38,5 @@
 <!ENTITY unknownLocations.label                "Localizações desconhecidas">
 <!ENTITY domainGuessing.label                  "Adicionar &quot;www.&quot; e &quot;.com&quot; à localização se a página web não for encontrada">
 <!ENTITY domainGuessing.accesskey              "w">
-<!ENTITY keywords.label                        "Efetuar uma pesquisa web se o texto introduzido não for um endereço">
+<!ENTITY keywords.label                        "Efetuar uma pesquisa web se o texto introduzido não for uma localização web">
 <!ENTITY keywords.accesskey                    "p">

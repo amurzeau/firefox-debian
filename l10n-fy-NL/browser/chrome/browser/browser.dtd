@@ -51,6 +51,7 @@ can reach it easily. -->
 <!ENTITY  sendLinkToDevice.label             "Keppeling nei apparaat ferstjoere">
 <!ENTITY  sendLinkToDevice.accesskey         "p">
 <!ENTITY  sendToDeviceFeedback.label         "Ferstjoerd!">
+<!ENTITY  sendToDeviceOfflineFeedback.label  "Yn wachtrige (offline)">
 <!ENTITY  moveToNewWindow.label              "Ferpleatse nei nij finster">
 <!ENTITY  moveToNewWindow.accesskey          "f">
 <!ENTITY  bookmarkAllTabs.label              "Blêdwizer foar alle ljepblêden meitsje…">
@@ -109,7 +110,7 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 
 <!ENTITY pageInfoCmd.label "Side-ynfo">
 <!ENTITY pageInfoCmd.accesskey "f">
-<!ENTITY pageInfoCmd.commandkey "y">
+<!ENTITY pageInfoCmd.commandkey "i">
 <!ENTITY mirrorTabCmd.label "Ljepblêd spegelje">
 <!ENTITY mirrorTabCmd.accesskey "s">
 <!-- LOCALIZATION NOTE (enterFullScreenCmd.label, exitFullScreenCmd.label):
@@ -188,13 +189,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hideRecentlyBookmarked.accesskey "f">
 
 <!ENTITY backCmd.label                "Tebek">
+<!ENTITY backCmd.accesskey            "T">
 <!ENTITY backButton.tooltip           "Ien side tebek gean">
 <!ENTITY forwardCmd.label             "Foarút">
+<!ENTITY forwardCmd.accesskey         "F">
 <!ENTITY forwardButton.tooltip        "Ien side foarút gean">
 <!ENTITY backForwardButtonMenu.tooltip "Klik mei rjochts of hâld yndrukt om skiednis te toanen">
 <!ENTITY backForwardButtonMenuMac.tooltip "Hâld yndrukt om skiednis te toanen">
 <!ENTITY reloadCmd.label              "Opnij lade">
+<!ENTITY reloadCmd.accesskey          "n">
 <!ENTITY stopCmd.label                "Beëinigje">
+<!ENTITY stopCmd.accesskey            "S">
 <!ENTITY stopCmd.macCommandKey        ".">
 <!ENTITY goEndCap.tooltip             "It adres yn de lokaasjebalke iepenje">
 <!ENTITY printButton.label            "Ofdrukke">
@@ -231,6 +236,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Jo hawwe permaninte opslach foar dizze website blokkearre.">
 
 <!ENTITY urlbar.popupBlocked.tooltip             "Jo hawwe pop-ups foar dizze website blokkearre.">
+
+<!ENTITY urlbar.canvasBlocked.tooltip            "Jo hawwe canvas-gegevensekstraksje foar dizze website blokkearre.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Skiednis toane">
 
@@ -349,12 +356,13 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY historyRestoreLastSession.label "Foargeande sesje werom bringe">
 
 <!ENTITY showAllHistoryCmd2.label "Alle skiednis toane">
-<!ENTITY showAllHistoryCmd.commandkey "s">
+<!ENTITY showAllHistoryCmd.commandkey "H">
 
 <!ENTITY appMenuCustomize.label "Oanpasse">
 <!ENTITY appMenuCustomize.tooltip "It menu en de arkbalken oanpasse">
 <!ENTITY appMenuCustomizeExit.label "Oanpassen ôfslute">
 <!ENTITY appMenuCustomizeExit.tooltip "Oanpassen foltôgje">
+
 <!ENTITY appMenuHistory.showAll.label "Alle skiednis toane">
 <!ENTITY appMenuHistory.clearRecent.label "Resinte skiednis wiskje…">
 <!ENTITY appMenuHistory.restoreSession.label "Foarige sesje werom bringe">
@@ -385,9 +393,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Wolle jo hjir jo ljepblêden fan oare apparaten sjen?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Syngronisaasjefoarkarren">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Meld jo oan om in list fan ljepblêden fan jo oare apparaten wer te jaan.">
+<!ENTITY appMenuRemoteTabs.unverified.label "Jo account moat ferifiearre wurde.">
 <!ENTITY appMenuRemoteTabs.signin.label "Oanmelde by Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Apparaten beheare…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Syngroane-ljepblêdensidebalke werjaan">
+
+<!ENTITY appMenuRemoteTabs.connectdevice.label "Noch in apparaat keppelje">
 
 <!ENTITY appMenuRecentHighlights.label "Resinte hichtepunten">
 
@@ -564,6 +575,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY setDesktopBackgroundCmd.label      "As eftergrûn ynstelle">
 <!ENTITY setDesktopBackgroundCmd.accesskey  "e">
 <!ENTITY bookmarkPageCmd2.label       "Blêdwizer foar dizze side meitsje">
+<!ENTITY bookmarkPageCmd2.accesskey   "m">
 <!ENTITY bookmarkThisLinkCmd.label      "Blêdwizer foar dizze keppeling meitsje">
 <!ENTITY bookmarkThisLinkCmd.accesskey  "m">
 <!ENTITY bookmarkThisFrameCmd.label      "Blêdwizer foar dit dielfinster meitsje">
@@ -750,6 +762,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY editBookmark.done.label                     "Klear">
 <!ENTITY editBookmark.removeBookmark.accessKey       "F">
 
+<!-- LOCALIZATION NOTE (identity.securityView.label)
+     This is the header of the security subview in the Site Identity panel. -->
+<!ENTITY identity.securityView.label "Sidefeilichheid">
+
 <!ENTITY identity.connectionSecure "Befeilige ferbining">
 <!ENTITY identity.connectionNotSecure "Ferbining is net befeilige">
 <!ENTITY identity.connectionFile "Dizze side is op jo kompjûter bewarre.">
@@ -803,12 +819,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncedTabs.sidebar.noclients.title    "Noch gjin syngronisearre ljepblêden…">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Wolle jo hjir jo ljepblêden fan oare apparaten sjen?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Meld jo oan om in list fan ljepblêden fan jo oare apparaten wer te jaan.">
+<!ENTITY syncedTabs.sidebar.unverified.label   "Jo account moat ferifiearre wurde.">
 <!ENTITY syncedTabs.sidebar.notabs.label       "Gjin iepen ljepblêden">
 <!ENTITY syncedTabs.sidebar.openprefs.label    "&syncBrand.shortName.label;-foarkarren iepenje">
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Set ljepblêdsyngroanisaasje oan om in list fan ljepblêden fan jo oare apparaten wer te jaan.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Sykje syngronisearre ljepblêden">
+
+<!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Noch in apparaat keppelje">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
                         syncedTabs.context.openAllInTabs.accesskey):
@@ -979,9 +998,20 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "N">
 <!ENTITY updateRestart.panelUI.label2 "Start &brandShorterName; opnij om te fernijen">
 
+<!ENTITY newTabControlled.message "In útwreiding hat de side dy't jo sjogge by it iepenjen fan in nij ljepblêd wizige. As jo dizze wiziging net wolle, kinne jo jo ynstellingen weromsette.">
+<!ENTITY newTabControlled.header.message "Jo nije ljepblêd is wizige.">
+<!ENTITY newTabControlled.keepButton.label "Wizigingen bewarje">
+<!ENTITY newTabControlled.keepButton.accesskey "W">
+<!ENTITY newTabControlled.restoreButton.label "Ynstellingen weromsette">
+<!ENTITY newTabControlled.restoreButton.accesskey "Y">
+
 <!ENTITY pageActionButton.tooltip "Side-aksjes">
 <!ENTITY pageAction.addToUrlbar.label "Tafoegje oan adresbalke">
 <!ENTITY pageAction.removeFromUrlbar.label "Fuortsmite fan adresbalke">
+
+<!ENTITY pageAction.allowInUrlbar.label "Yn adresbalke toane">
+<!ENTITY pageAction.disallowInUrlbar.label "Net yn adresbalke toane">
+<!ENTITY pageAction.manageExtension.label "Utwreiding beheare…">
 
 <!ENTITY pageAction.sendTabToDevice.label "Ljepblêd nei apparaat ferstjoere">
 <!ENTITY sendToDevice.syncNotReady.label "Apparaten syngronisearje…">

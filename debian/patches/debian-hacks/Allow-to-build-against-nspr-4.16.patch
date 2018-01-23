@@ -8,12 +8,12 @@ Subject: Allow to build against nspr 4.16
  2 files changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/old-configure b/old-configure
-index 1d95405f84cf..7fc947636078 100644
+index 4af9419250cc..301f88fa8240 100644
 --- a/old-configure
 +++ b/old-configure
-@@ -953,7 +953,7 @@ _SUBDIR_CONFIG_ARGS="$ac_configure_args"
+@@ -943,7 +943,7 @@ _SUBDIR_CONFIG_ARGS="$ac_configure_args"
  MOZJPEG=62
- MOZPNG=10631
+ MOZPNG=10634
  NSPR_VERSION=4
 -NSPR_MINVER=4.17
 +NSPR_MINVER=4.16
@@ -21,12 +21,12 @@ index 1d95405f84cf..7fc947636078 100644
  
  GLIB_VERSION=2.22
 diff --git a/old-configure.in b/old-configure.in
-index a092294f0ad8..d217aed3c118 100644
+index 924a1852d1f8..3120bdeb0bec 100644
 --- a/old-configure.in
 +++ b/old-configure.in
 @@ -48,7 +48,7 @@ dnl ========================================================
  MOZJPEG=62
- MOZPNG=10631
+ MOZPNG=10634
  NSPR_VERSION=4
 -NSPR_MINVER=4.17
 +NSPR_MINVER=4.16
