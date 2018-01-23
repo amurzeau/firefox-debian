@@ -1,4 +1,4 @@
-firefox (58.0-1) UNRELEASED; urgency=medium
+firefox (58.0-1) unstable; urgency=medium
 
   * New upstream release.
   * Fixes for mfsa2018-02, also known as:
@@ -11,7 +11,23 @@ firefox (58.0-1) UNRELEASED; urgency=medium
     CVE-2018-5117, CVE-2018-5118, CVE-2018-5119, CVE-2018-5122,
     CVE-2018-5090, CVE-2018-5089.
 
- -- Mike Hommey <glandium@debian.org>  Wed, 24 Jan 2018 08:07:10 +0900
+  * debian/rules:
+    - Don't disable necko-wifi on kfreebsd/hurd. This used to be necessary
+      because that was using libiw, which was linux-only, but libiw is not
+      used anymore.
+    - Refresh configure files manually.
+    - Remove --with-default-mozilla-five-home, it's gone.
+    - Adapt to compare-locales changes.
+    - Define MOZ_FFVPX on arm and aarch64.
+  * debian/browser.install.in, debian/rules, debian/test.mk: Use
+    DEB_HOST_ARCH* instead of DEB_BUILD_ARCH*.
+  * debian/control*:
+    - Bump rustc, cargo and nss build dependencies.
+    - Add a dependency on libnss3 3.34 for the firefox package.
+  * debian/noinstall.in: Remove run-mozilla.sh from there, it's not installed
+    anymore.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 24 Jan 2018 08:16:43 +0900
 
 firefox (57.0.4-1) unstable; urgency=medium
 

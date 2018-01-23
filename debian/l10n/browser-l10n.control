@@ -329,6 +329,11 @@
 %define L10N_RECOMMENDS myspell-nb
 %include @PRODUCT@-l10n.control.in
 
+%define L10N_LANG ne-np
+%define L10N_LANGUAGE Nepali (Nepal)
+%undef L10N_RECOMMENDS
+%include @PRODUCT@-l10n.control.in
+
 %define L10N_LANG nl
 %define L10N_LANGUAGE Dutch
 %define L10N_RECOMMENDS myspell-nl
