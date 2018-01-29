@@ -92,6 +92,7 @@ ifneq (,$(findstring ~b, $(VERSION)))
 # Betas are under releases/
 SOURCE_TYPE := releases
 SHORT_SOURCE_CHANNEL := beta
+SOURCE_TARBALL_EXT := bz2
 else
 ifneq (,$(filter %~a2, $(VERSION)))
 # Aurora
@@ -121,17 +122,17 @@ PRODUCT_DOWNLOAD_NAME := $(firstword $(subst -, ,$(PRODUCT_NAME)))
 
 BASE_URL = https://archive.mozilla.org/pub/$(PRODUCT_DOWNLOAD_NAME)/$(SOURCE_TYPE)
 
-L10N_FILTER = awk '(NF == 1 || /linux/) && $$1 != "en-US" { print $$1 }'
-$(call lazy,L10N_LANGS,$$(shell $$(L10N_FILTER) $(PRODUCT)/locales/shipped-locales))
 ifeq ($(SOURCE_TYPE),releases)
+ifeq (,$(findstring ~b, $(VERSION)))
 SOURCE_URL = $(BASE_URL)/$(SOURCE_VERSION)/source/$(PRODUCT_DOWNLOAD_NAME)-$(SOURCE_VERSION).source.tar.$(SOURCE_TARBALL_EXT)
 CANDIDATE_BASE_URL = http://archive.mozilla.org/pub/$(PRODUCT_DOWNLOAD_NAME)/candidates/$(SOURCE_VERSION)-candidates
 CANDIDATE = $(shell curl -s $(CANDIDATE_BASE_URL)/ | sed -n '/href.*build/s/.*>\(build[0-9]*\)\/<.*/\1/p' | tail -1)
-$(call lazy,L10N_CHANGESETS,$$(shell curl -s $(CANDIDATE_BASE_URL)/$$(CANDIDATE)/l10n_changesets.txt | sed 's/ /:/'))
-L10N_REV = $(subst $1:,,$(filter $1:%,$(L10N_CHANGESETS)))
 $(call lazy,SOURCE_REPO_URL,$$(shell curl -s $(CANDIDATE_BASE_URL)/$$(CANDIDATE)/linux-x86_64/en-US/$(PRODUCT_DOWNLOAD_NAME)-$(SOURCE_VERSION).txt | tail -1))
 SOURCE_REV = $(notdir $(SOURCE_REPO_URL))
 SOURCE_REPO = $(patsubst %/rev/,%,$(dir $(SOURCE_REPO_URL)))
+else
+$(call lazy,SOURCE_URL,$$(shell curl -s $(BASE_URL)/$(SOURCE_VERSION)/SOURCE | awk '$$$$1 == "tar.$(SOURCE_TARBALL_EXT):" {print $$$$2}'))
+endif
 else
 ifeq ($(SOURCE_TYPE),nightly)
 SOURCE_TARBALL_EXT = bz2
@@ -139,19 +140,24 @@ $(call lazy,LATEST_NIGHTLY,$$(shell $$(PYTHON) debian/latest_nightly.py $(PRODUC
 $(call lazy,SOURCE_BUILD_VERSION,$$(shell echo $$(firstword $$(LATEST_NIGHTLY)) | $$(VERSION_FILTER)))
 SOURCE_BUILD_DATE = $(word 2, $(LATEST_NIGHTLY))
 SOURCE_URL = $(subst /rev/,/archive/,$(word 3, $(LATEST_NIGHTLY))).tar.bz2
-SOURCE_REV = $(patsubst %.tar.bz2,%,$(notdir $(SOURCE_URL)))
-L10N_REV = tip
-SOURCE_REPO = $(patsubst %/,%,$(dir $(patsubst %/,%,$(dir $(SOURCE_URL)))))
 endif
 endif
+
+SOURCE_REV ?= $(patsubst %.tar.$(SOURCE_TARBALL_EXT),%,$(notdir $(SOURCE_URL)))
+SOURCE_REPO ?= $(patsubst %/,%,$(dir $(patsubst %/,%,$(dir $(SOURCE_URL)))))
 
 L10N_REPO := https://hg.mozilla.org/l10n-central
 
-ifneq (,$(filter dump dump-% import download,$(MAKECMDGOALS)))
-ifneq (,$(filter-out $(VERSION),$(UPSTREAM_RELEASE))$(filter $(SOURCE_CHANNEL),aurora central))
-$(call lazy,L10N_LANGS,$$(shell curl -s $(SOURCE_REPO)/raw-file/$(SOURCE_REV)/$(PRODUCT)/locales/shipped-locales | $$(L10N_FILTER)))
-$(call lazy,SOURCE_TARBALL_EXT,$$(shell curl -s $(SOURCE_REPO)/raw-file/$(SOURCE_REV)/toolkit/mozapps/installer/upload-files.mk | sed -n '/^SOURCE_TAR/s/.*\.tar\.//p'))
+ifeq (file,$(origin VERSION))
+$(call lazy,L10N_CHANGESETS,$$(shell python debian/l10n_revs.py < $(PRODUCT)/locales/l10n-changesets.json))
+else
+$(call lazy,L10N_CHANGESETS,$$(shell curl -sL $(SOURCE_REPO)/raw-file/$(SOURCE_REV)/$(PRODUCT)/locales/l10n-changesets.json | python debian/l10n_revs.py))
 endif
+
+L10N_REV = $(subst $1:,,$(filter $1:%,$(L10N_CHANGESETS)))
+L10N_LANGS = $(foreach lang,$(L10N_CHANGESETS),$(firstword $(subst :, ,$(lang))))
+
+ifneq (,$(filter dump dump-% import download,$(MAKECMDGOALS)))
 L10N_TARBALLS = $(foreach lang,$(L10N_LANGS),$(SOURCE_TARBALL_LOCATION)/$(SOURCE_TARBALL:%.orig.tar.$(SOURCE_TARBALL_EXT)=%.orig-l10n-$(lang).tar.bz2))
 
 ALL_TARBALLS = $(SOURCE_TARBALL_LOCATION)/$(SOURCE_TARBALL) $(L10N_TARBALLS)
