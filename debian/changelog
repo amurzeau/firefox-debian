@@ -1,3 +1,18 @@
+firefox (58.0.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fix for mfsa2018-05.
+
+  * debian/upstream.mk, debian/l10n_revs.py: Use l10n-changesets.json from the
+    source tree to find the l10n changesets.
+  * debian/usptream.mk: Stop using milestone.py, it goes away in version 59.
+
+  * intl/icu/source/i18n/digitlst.cpp: Apply part of
+    http://bugs.icu-project.org/trac/changeset/40603 to fix FTBFS with glibc
+    2.26 on big endian platforms. Closes: #888638.
+
+ -- Mike Hommey <glandium@debian.org>  Tue, 30 Jan 2018 07:43:28 +0900
+
 firefox (58.0-1) unstable; urgency=medium
 
   * New upstream release.
