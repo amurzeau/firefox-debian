@@ -308,9 +308,6 @@ stamps/dh_install:: debian/noinstall
 	awk '{print "debian/tmp/" $$1 }' < debian/noinstall | xargs rm -r
 	dh_install --fail-missing
 
-	install -m 644 browser/extensions/onboarding/content/img/watermark.svg \
-		debian/$($(PRODUCT))/usr/share/icons/hicolor/symbolic/apps/$($(PRODUCT))-symbolic.svg
-
 override_dh_install: stamps/dh_install
 
 override_dh_strip:
