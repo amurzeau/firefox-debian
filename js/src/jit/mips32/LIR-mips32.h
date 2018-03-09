@@ -18,7 +18,7 @@ class LBoxFloatingPoint : public LInstructionHelper<2, 1, 1> {
 
   LBoxFloatingPoint(const LAllocation& in, const LDefinition& temp,
                     MIRType type)
-      : type_(type) {
+      : LInstructionHelper(classOpcode), type_(type) {
     setOperand(0, in);
     setTemp(0, temp);
   }
@@ -30,6 +30,8 @@ class LBoxFloatingPoint : public LInstructionHelper<2, 1, 1> {
 class LUnbox : public LInstructionHelper<1, 2, 0> {
  public:
   LIR_HEADER(Unbox);
+
+  LUnbox() : LInstructionHelper(classOpcode) {}
 
   MUnbox* mir() const { return mir_->toUnbox(); }
   const LAllocation* payload() { return getOperand(0); }
@@ -45,12 +47,12 @@ class LUnboxFloatingPoint : public LInstructionHelper<1, 2, 0> {
 
   static const size_t Input = 0;
 
-  LUnboxFloatingPoint(const LBoxAllocation& input, MIRType type) : type_(type) {
+  LUnboxFloatingPoint(const LBoxAllocation& input, MIRType type)
+      : LInstructionHelper(classOpcode), type_(type) {
     setBoxOperand(Input, input);
   }
 
   MUnbox* mir() const { return mir_->toUnbox(); }
-
   MIRType type() const { return type_; }
   const char* extraName() const { return StringFromMIRType(type_); }
 };
@@ -63,14 +65,17 @@ class LDivOrModI64
   static const size_t Lhs = 0;
   static const size_t Rhs = INT64_PIECES;
 
-  LDivOrModI64(const LInt64Allocation& lhs, const LInt64Allocation& rhs) {
+  LDivOrModI64(const LInt64Allocation& lhs, const LInt64Allocation& rhs)
+      : LCallInstructionHelper(classOpcode) {
     setInt64Operand(Lhs, lhs);
     setInt64Operand(Rhs, rhs);
   }
+
   MBinaryArithInstruction* mir() const {
     MOZ_ASSERT(mir_->isDiv() || mir_->isMod());
     return static_cast<MBinaryArithInstruction*>(mir_);
   }
+
   bool canBeDivideByZero() const {
     if (mir_->isMod()) return mir_->toMod()->canBeDivideByZero();
     return mir_->toDiv()->canBeDivideByZero();
@@ -94,7 +99,8 @@ class LUDivOrModI64
   static const size_t Lhs = 0;
   static const size_t Rhs = INT64_PIECES;
 
-  LUDivOrModI64(const LInt64Allocation& lhs, const LInt64Allocation& rhs) {
+  LUDivOrModI64(const LInt64Allocation& lhs, const LInt64Allocation& rhs)
+      : LCallInstructionHelper(classOpcode) {
     setInt64Operand(Lhs, lhs);
     setInt64Operand(Rhs, rhs);
   }
@@ -102,6 +108,7 @@ class LUDivOrModI64
     MOZ_ASSERT(mir_->isDiv() || mir_->isMod());
     return static_cast<MBinaryArithInstruction*>(mir_);
   }
+
   bool canBeDivideByZero() const {
     if (mir_->isMod()) return mir_->toMod()->canBeDivideByZero();
     return mir_->toDiv()->canBeDivideByZero();
@@ -121,7 +128,10 @@ class LWasmTruncateToInt64 : public LCallInstructionHelper<INT64_PIECES, 1, 0> {
  public:
   LIR_HEADER(WasmTruncateToInt64);
 
-  explicit LWasmTruncateToInt64(const LAllocation& in) { setOperand(0, in); }
+  explicit LWasmTruncateToInt64(const LAllocation& in)
+      : LCallInstructionHelper(classOpcode) {
+    setOperand(0, in);
+  }
 
   MWasmTruncateToInt64* mir() const { return mir_->toWasmTruncateToInt64(); }
 };
@@ -131,7 +141,8 @@ class LInt64ToFloatingPoint
  public:
   LIR_HEADER(Int64ToFloatingPoint);
 
-  explicit LInt64ToFloatingPoint(const LInt64Allocation& in) {
+  explicit LInt64ToFloatingPoint(const LInt64Allocation& in)
+      : LCallInstructionHelper(classOpcode) {
     setInt64Operand(0, in);
   }
 
@@ -142,7 +153,9 @@ class LWasmAtomicLoadI64 : public LInstructionHelper<INT64_PIECES, 1, 0> {
  public:
   LIR_HEADER(WasmAtomicLoadI64);
 
-  LWasmAtomicLoadI64(const LAllocation& ptr) { setOperand(0, ptr); }
+  LWasmAtomicLoadI64(const LAllocation& ptr) : LInstructionHelper(classOpcode) {
+    setOperand(0, ptr);
+  }
 
   const LAllocation* ptr() { return getOperand(0); }
   const MWasmLoad* mir() const { return mir_->toWasmLoad(); }
@@ -153,7 +166,8 @@ class LWasmAtomicStoreI64 : public LInstructionHelper<0, 1 + INT64_PIECES, 1> {
   LIR_HEADER(WasmAtomicStoreI64);
 
   LWasmAtomicStoreI64(const LAllocation& ptr, const LInt64Allocation& value,
-                      const LDefinition& tmp) {
+                      const LDefinition& tmp)
+      : LInstructionHelper(classOpcode) {
     setOperand(0, ptr);
     setInt64Operand(1, value);
     setTemp(0, tmp);
