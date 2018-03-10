@@ -315,7 +315,6 @@
 <!ENTITY goBackCmd.commandKey "[">
 <!ENTITY goChatCmd.label "Komunikator">
 <!ENTITY goChatCmd.accesskey "K">
-<!ENTITY goChatCmd.key "I">
 <!ENTITY goChatCmd2.key "H">
 <!ENTITY prevStarredMsgCmd.label "Wiadomość oznaczona gwiazdką">
 <!ENTITY prevStarredMsgCmd.accesskey "O">
@@ -362,6 +361,8 @@
 <!ENTITY editAsNewMsgCmd.key "e">
 <!ENTITY editDraftMsgCmd.label "Edytuj szkic">
 <!ENTITY editDraftMsgCmd.accesskey "s">
+<!ENTITY editTemplateMsgCmd.label "Edytuj szablon">
+<!ENTITY editTemplateMsgCmd.accesskey "b">
 <!ENTITY newMsgFromTemplateCmd.label "Nowa wiadomość z szablonu">
 <!ENTITY newMsgFromTemplateCmd.keycode "VK_RETURN">
 <!ENTITY createFilter.label "Utwórz filtr na podstawie wiadomości…">
@@ -493,6 +494,8 @@
 <!ENTITY devToolboxCmd.commandkey "i">
 <!ENTITY addonDebugCmd.label "Debuger dodatków">
 <!ENTITY addonDebugCmd.accesskey "D">
+<!ENTITY debugAddonsCmd.label "Debuguj dodatki">
+<!ENTITY debugAddonsCmd.accesskey "D">
 <!ENTITY tabsDebugCmd.label "Debuger ramek treści">
 <!ENTITY tabsDebugCmd.accesskey "r">
 <!ENTITY errorConsoleCmd.label "Konsola błędów">
@@ -715,6 +718,8 @@
 <!ENTITY contextEditMsgAsNew.label "Edytuj jako nową wiadomość">
 <!ENTITY contextEditMsgAsNew.accesskey "E">
 <!ENTITY contextEditDraftMsg.label "Edytuj szkic">
+<!ENTITY contextEditTemplate.label "Edytuj szablon">
+<!ENTITY contextEditTemplate.accesskey "b">
 <!ENTITY contextArchive.label "Archiwizuj">
 <!ENTITY contextArchive.accesskey "A">
 <!ENTITY contextReplySender.label "Odpowiedz tylko nadawcy">

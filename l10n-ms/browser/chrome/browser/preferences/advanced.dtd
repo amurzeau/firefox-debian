@@ -39,6 +39,13 @@ available. -->
 
 <!ENTITY alwaysSubmitCrashReports1.label  "Izinkan &brandShortName; menghantar laporan ranap kepada Mozilla">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "l">
+
+<!ENTITY collectBrowserErrors.label          "Izinkan &brandShortName; untuk menghantar laporan ralat pelayar (termasuk mesej ralat) kepada Mozilla">
+<!ENTITY collectBrowserErrors.accesskey      "p">
+<!ENTITY collectBrowserErrorsLearnMore.label "Ketahui selanjutnya">
+
+<!ENTITY sendBackloggedCrashReports.label  "Izinkan &brandShortName; untuk menghantar backlog laporan ranap bagi pihak anda">
+<!ENTITY sendBackloggedCrashReports.accesskey "r">
 <!ENTITY crashReporterLearnMore.label    "Ketahui selanjutnya">
 
 <!ENTITY networkTab.label                "Rangkaian">
@@ -46,17 +53,20 @@ available. -->
 <!ENTITY networkProxy.label              "Proksi Rangkaian">
 
 <!ENTITY connectionDesc.label            "Tentukan cara &brandShortName; menyambung ke Internet">
+
+<!ENTITY connectionSettingsLearnMore.label "Ketahui selanjutnya">
 <!ENTITY connectionSettings.label        "Tetapan…">
 <!ENTITY connectionSettings.accesskey    "t">
 
 <!ENTITY httpCache.label                 "Cache Kandungan Web">
 
-<!ENTITY offlineStorage2.label           "Data Kandungan Web Luar talian dan Pengguna">
-
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "Data Laman">
 <!ENTITY clearSiteData.label             "Buang Semua Data">
 <!ENTITY clearSiteData.accesskey         "s">
+<!ENTITY siteData1.label                 "Kuki dan Data Laman">
+<!ENTITY clearSiteData1.label            "Buang Data…">
+<!ENTITY clearSiteData1.accesskey        "u">
 <!ENTITY siteDataSettings.label          "Tetapan…">
 <!ENTITY siteDataSettings.accesskey      "p">
 <!ENTITY siteDataLearnMoreLink.label     "Ketahui selanjutnya">
@@ -72,8 +82,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MB daripada ruang">
 <!ENTITY clearCacheNow.label             "Buang Sekarang">
 <!ENTITY clearCacheNow.accesskey         "B">
-<!ENTITY clearOfflineAppCacheNow.label   "Buang Sekarang">
-<!ENTITY clearOfflineAppCacheNow.accesskey "S">
 <!ENTITY overrideSmartCacheSize.label    "Terbalikkan pengurusan cache automatik">
 <!ENTITY overrideSmartCacheSize.accesskey "O">
 
@@ -110,17 +118,6 @@ available. -->
 
 <!ENTITY enableSearchUpdate2.label       "Kemaskini enjin carian secara automatik">
 <!ENTITY enableSearchUpdate2.accesskey   "e">
-
-<!ENTITY offlineStorageNotify.label               "Maklumkan anda apabila laman web mahu menyimpan data bagi kegunaan luar talian">
-<!ENTITY offlineStorageNotify.accesskey           "B">
-<!ENTITY offlineStorageNotifyExceptions.label     "Pengecualian…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "c">
-
-<!ENTITY offlineAppsList3.label          "Laman web yang berikut telah dibenarkan untuk menyimpan data untuk digunakan ketika luar talian">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "Buang…">
-<!ENTITY offlineAppsListRemove.accesskey "B">
-<!ENTITY offlineAppRemove.confirm        "Buang data luar talian">
 
 <!ENTITY certificateTab.label            "Sijil">
 <!ENTITY certPersonal2.description       "Apabila pelayan meminta sijil peribadi anda">

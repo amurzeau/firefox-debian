@@ -6,14 +6,14 @@
 <!ENTITY titleSeparator.label " - ">
 
 <!-- File Menu -->
-<!ENTITY newFolderCmd.label "დასტა…">
-<!ENTITY newFolderCmd.accesskey "F">
+<!ENTITY newFolderCmd.label "საქაღალდე…">
+<!ENTITY newFolderCmd.accesskey "ქ">
 <!ENTITY closeTabCmd2.label "დაფის დახურვა">
-<!ENTITY closeTabCmd2.accesskey "C">
+<!ENTITY closeTabCmd2.accesskey "ხ">
 <!ENTITY closeOtherTabsCmd2.label "სხვა დაფების დახურვა">
-<!ENTITY closeOtherTabsCmd2.accesskey "o">
+<!ENTITY closeOtherTabsCmd2.accesskey "ვ">
 <!ENTITY recentlyClosedTabsCmd.label "ბოლოს დახურული დაფები">
-<!ENTITY recentlyClosedTabsCmd.accesskey "R">
+<!ENTITY recentlyClosedTabsCmd.accesskey "ბ">
 
 <!ENTITY undoCloseTabCmd.commandkey "T">
 <!-- LOCALIZATION NOTE (moveToNewWindow.label):
@@ -21,92 +21,99 @@
      window.
      -->
 <!ENTITY moveToNewWindow.label "გადატანა ახალ სარკმელში">
-<!ENTITY moveToNewWindow.accesskey "W">
+<!ENTITY moveToNewWindow.accesskey "კ">
 <!ENTITY newVirtualFolderCmd.label "შენახული ძიება…">
-<!ENTITY newVirtualFolderCmd.accesskey "S">
+<!ENTITY newVirtualFolderCmd.accesskey "ძ">
 <!ENTITY newOtherAccountsCmd.label "სხვა ანგარიშები…">
-<!ENTITY newOtherAccountsCmd.accesskey "O">
+<!ENTITY newOtherAccountsCmd.accesskey "ნ">
 <!ENTITY newCreateEmailAccountCmd.label "ახალი საფოსტო ანგარიშის შექმნა…">
-<!ENTITY newCreateEmailAccountCmd.accesskey "G">
+<!ENTITY newCreateEmailAccountCmd.accesskey "ფ">
 <!ENTITY newExistingEmailAccountCmd.label "არსებული საფოსტო ანგარიშები…">
-<!ENTITY newExistingEmailAccountCmd.accesskey "E">
+<!ENTITY newExistingEmailAccountCmd.accesskey "ე">
 <!ENTITY newIMAccountCmd.label "სასაუბროს ანგარიში…">
-<!ENTITY newIMAccountCmd.accesskey "C">
+<!ENTITY newIMAccountCmd.accesskey "ს">
 <!ENTITY newFeedAccountCmd.label "არხის ანგარიში…">
-<!ENTITY newFeedAccountCmd.accesskey "d">
+<!ENTITY newFeedAccountCmd.accesskey "რ">
 <!ENTITY newIMContactCmd.label "სასაუბროს კონტაქტი…">
-<!ENTITY newIMContactCmd.accesskey "h">
+<!ENTITY newIMContactCmd.accesskey "ს">
 <!ENTITY openMessageFileCmd.label "შენახული წერილის გახსნა…">
-<!ENTITY openMessageFileCmd.accesskey "O">
+<!ENTITY openMessageFileCmd.accesskey "წ">
 <!ENTITY saveAsMenu.label "ჩაწერა როგორც">
-<!ENTITY saveAsMenu.accesskey "S">
+<!ENTITY saveAsMenu.accesskey "ო">
 <!ENTITY saveAsFileCmd.label "ფაილი">
-<!ENTITY saveAsFileCmd.accesskey "F">
+<!ENTITY saveAsFileCmd.accesskey "ფ">
 <!ENTITY saveAsFileCmd.key "s">
-<!ENTITY saveAsTemplateCmd.label "თარგი">
-<!ENTITY saveAsTemplateCmd.accesskey "T">
+<!ENTITY saveAsTemplateCmd.label "ნიმუში">
+<!ENTITY saveAsTemplateCmd.accesskey "ნ">
 <!ENTITY getNewMsgForCmd.label "ახალი წერილების მიღება">
-<!ENTITY getNewMsgForCmd.accesskey "w">
+<!ENTITY getNewMsgForCmd.accesskey "ა">
 <!ENTITY getAllNewMsgCmdPopupMenu.label "ყველა ანგარიში">
-<!ENTITY getAllNewMsgCmdPopupMenu.accesskey "A">
+<!ENTITY getAllNewMsgCmdPopupMenu.accesskey "ყ">
 <!ENTITY getNewMsgCurrentAccountCmdPopupMenu.label "მიმდინარე ანგარიში">
-<!ENTITY getNewMsgCurrentAccountCmdPopupMenu.accesskey "C">
+<!ENTITY getNewMsgCurrentAccountCmdPopupMenu.accesskey "მ">
+<!ENTITY getNextNMsgCmd2.label "ახალი წერილების მიღება">
+<!ENTITY getNextNMsgCmd2.accesskey "ხ">
 <!ENTITY sendUnsentCmd.label "გასაგზავნი წერილების გაგზავნა">
-<!ENTITY sendUnsentCmd.accesskey "d">
+<!ENTITY sendUnsentCmd.accesskey "ს">
 <!ENTITY subscribeCmd.label "ხელმოწერა…">
-<!ENTITY subscribeCmd.accesskey "b">
-<!ENTITY deleteFolder.label "დასტის წაშლა">
-<!ENTITY deleteFolder.accesskey "e">
-<!ENTITY renameFolder.label "დასტის გადარქმევა…">
-<!ENTITY renameFolder.accesskey "R">
+<!ENTITY subscribeCmd.accesskey "ლ">
+<!ENTITY deleteFolder.label "საქაღალდის წაშლა">
+<!ENTITY deleteFolder.accesskey "ღ">
+<!ENTITY renameFolder.label "საქაღალდის გადარქმევა…">
+<!ENTITY renameFolder.accesskey "რ">
 <!ENTITY renameFolder.key "VK_F2">
-<!ENTITY compactFolders.label "დასტების შემჭიდროვება">
-<!ENTITY compactFolders.accesskey "F">
+<!ENTITY compactFolders.label "საქაღალდეების შეკუმშვა">
+<!ENTITY compactFolders.accesskey "ქ">
 <!ENTITY emptyTrashCmd.label "ურნის გასუფთავება">
-<!ENTITY emptyTrashCmd.accesskey "y">
-<!ENTITY offlineMenu.label "ავტონომიური რეჟიმი">
-<!ENTITY offlineMenu.accesskey "l">
-<!ENTITY offlineGoOfflineCmd.label "ავტონომიური მუშაობა">
-<!ENTITY offlineGoOfflineCmd.accesskey "w">
+<!ENTITY emptyTrashCmd.accesskey "თ">
+<!ENTITY offlineMenu.label "კავშირგარეშე რეჟიმი">
+<!ENTITY offlineMenu.accesskey "კ">
+<!ENTITY offlineGoOfflineCmd.label "კავშირგარეშე მუშაობა">
+<!ENTITY offlineGoOfflineCmd.accesskey "მ">
 <!ENTITY synchronizeOfflineCmd.label "ჩამოტვირთვა/სინქრონიზება ახლავე…">
-<!ENTITY synchronizeOfflineCmd.accesskey "S">
+<!ENTITY synchronizeOfflineCmd.accesskey "ნ">
+<!ENTITY settingsOfflineCmd2.label "კავშირგარეშე პარამეტრები">
+<!ENTITY settingsOfflineCmd2.accesskey "კ">
 <!ENTITY downloadSelectedCmd.label "მონიშნული წერილების მიღება">
-<!ENTITY downloadSelectedCmd.accesskey "l">
+<!ENTITY downloadSelectedCmd.accesskey "მ">
 <!ENTITY downloadStarredCmd.label "ვარსკვლავიანი წერილების მიღება">
-<!ENTITY downloadStarredCmd.accesskey "a">
-<!ENTITY printCmd.label "ბეჭდვა…">
-<!ENTITY printCmd.accesskey "P">
+<!ENTITY downloadStarredCmd.accesskey "ვ">
+<!ENTITY printCmd.label "ამობეჭდვა…">
+<!ENTITY printCmd.accesskey "ო">
 <!ENTITY printCmd.key "p">
-<!ENTITY printPreviewCmd.label "ბეჭდვის ესკიზი">
-<!ENTITY printPreviewCmd.accesskey "v">
+<!ENTITY printPreviewCmd.label "შეთვალიერება ამობეჭდვამდე">
+<!ENTITY printPreviewCmd.accesskey "ე">
 <!ENTITY printSetupCmd.label "გვერდის პარამეტრები…">
-<!ENTITY printSetupCmd.accesskey "u">
+<!ENTITY printSetupCmd.accesskey "გ">
 
 <!-- Edit Menu -->
 <!ENTITY deleteMsgCmd.label "წერილის წაშლა">
-<!ENTITY deleteMsgCmd.accesskey "D">
+<!ENTITY deleteMsgCmd.accesskey "შ">
 <!ENTITY undeleteMsgCmd.label "წერილის აღდგენა">
-<!ENTITY undeleteMsgCmd.accesskey "d">
+<!ENTITY undeleteMsgCmd.accesskey "ღ">
 <!ENTITY deleteMsgsCmd.label "შერჩეული წერილების წაშლა">
-<!ENTITY deleteMsgsCmd.accesskey "D">
+<!ENTITY deleteMsgsCmd.accesskey "რ">
 <!ENTITY undeleteMsgsCmd.label "შერჩეული წერილების აღდგენა">
-<!ENTITY undeleteMsgsCmd.accesskey "d">
-<!ENTITY deleteFolderCmd.label "დასტის წაშლა">
-<!ENTITY deleteFolderCmd.accesskey "D">
+<!ENTITY undeleteMsgsCmd.accesskey "ე">
+<!ENTITY deleteFolderCmd.label "საქაღალდის წაშლა">
+<!ENTITY deleteFolderCmd.accesskey "ქ">
 <!ENTITY unsubscribeNewsgroupCmd.label "ხელმოწერის გაუქმება">
-<!ENTITY unsubscribeNewsgroupCmd.accesskey "b">
+<!ENTITY unsubscribeNewsgroupCmd.accesskey "ლ">
 <!ENTITY selectMenu.label "შერჩევა">
-<!ENTITY selectMenu.accesskey "S">
+<!ENTITY selectMenu.accesskey "შ">
 <!ENTITY all.label "ყველა">
-<!ENTITY all.accesskey "A">
+<!ENTITY all.accesskey "ვ">
 <!ENTITY selectThreadCmd.label "საქაღალდე">
 <!ENTITY selectThreadCmd.accesskey "T">
 <!ENTITY selectThreadCmd.key "a">
 <!ENTITY selectFlaggedCmd.label "ვარსკვლავიანი გამოხმაურებები">
-<!ENTITY selectFlaggedCmd.accesskey "S">
-<!ENTITY menuFavoriteFolder.label "რჩეული დასტა">
-<!ENTITY menuFavoriteFolder.accesskey "v">
-<!ENTITY folderPropsCmd.accesskey "o">
+<!ENTITY selectFlaggedCmd.accesskey "ვ">
+<!ENTITY menuFavoriteFolder.label "რჩეული საქაღალდე">
+<!ENTITY menuFavoriteFolder.accesskey "ქ">
+<!ENTITY folderPropsCmd2.label "პარამეტრები">
+<!ENTITY folderPropsFolderCmd2.label "საქაღალდის პარამეტრები">
+<!ENTITY folderPropsNewsgroupCmd2.label "სიახლეების ჯგუფების პარამეტრები">
+<!ENTITY folderPropsCmd.accesskey "ი">
 <!ENTITY undoDeleteMsgCmd.label "წერილების წაშლის გაუქმება">
 <!ENTITY redoDeleteMsgCmd.label "წერილების წაშლის გამეორება">
 <!ENTITY undoMoveMsgCmd.label "წერილების გადატანის გაუქმება">
@@ -116,91 +123,100 @@
 <!ENTITY undoMarkAllCmd.label "ყველას წაკითხულად მონიშვნის გაუქმება">
 <!ENTITY redoMarkAllCmd.label "ყველას წაკითხულად მონიშვნის აღდგენა">
 <!ENTITY undoDefaultCmd.label "დაბრუნება">
-<!ENTITY undoDefaultCmd.accesskey "U">
+<!ENTITY undoDefaultCmd.accesskey "დ">
 <!ENTITY redoDefaultCmd.label "გამეორება">
-<!ENTITY redoDefaultCmd.accesskey "R">
+<!ENTITY redoDefaultCmd.accesskey "რ">
 
 <!-- View Menu -->
 <!ENTITY menubarCmd.label "მენიუს პანელი">
-<!ENTITY menubarCmd.accesskey "M">
+<!ENTITY menubarCmd.accesskey "მ">
 <!ENTITY showMessengerToolbarCmd.label "ფოსტის პულტი">
-<!ENTITY showMessengerToolbarCmd.accesskey "o">
+<!ENTITY showMessengerToolbarCmd.accesskey "ო">
 <!ENTITY customizeToolbar.label "მორგება…">
-<!ENTITY customizeToolbar.accesskey "C">
+<!ENTITY customizeToolbar.accesskey "გ">
 
 <!ENTITY messagePaneLayoutStyle.label "განთავსება">
-<!ENTITY messagePaneLayoutStyle.accesskey "L">
-<!ENTITY messagePaneClassic.label "კლასიკური ხედი">
-<!ENTITY messagePaneClassic.accesskey "C">
+<!ENTITY messagePaneLayoutStyle.accesskey "ნ">
+<!ENTITY messagePaneClassic.label "ჩვეულებრივი ხედი">
+<!ENTITY messagePaneClassic.accesskey "ჩ">
 <!ENTITY messagePaneWide.label "ფართო ხედი">
-<!ENTITY messagePaneWide.accesskey "W">
-<!ENTITY messagePaneVertical.label "ვერტიკალური ხედი">
-<!ENTITY messagePaneVertical.accesskey "V">
-<!ENTITY showFolderPaneCmd.label "დასტების პანელი">
-<!ENTITY showFolderPaneCmd.accesskey "F">
-<!ENTITY showMessageCmd.label "წერილების პანელი">
-<!ENTITY showMessageCmd.accesskey "M">
+<!ENTITY messagePaneWide.accesskey "ო">
+<!ENTITY messagePaneVertical.label "შვეული ხედი">
+<!ENTITY messagePaneVertical.accesskey "შ">
+<!ENTITY showFolderPaneCmd.label "საქაღალდის არე">
+<!ENTITY showFolderPaneCmd.accesskey "ქ">
+<!ENTITY showFolderPaneColsCmd.label "სვეტები საქაღალდის არეში">
+<!ENTITY showFolderPaneColsCmd.accesskey "რ">
+<!ENTITY showMessageCmd.label "წერილების არე">
+<!ENTITY showMessageCmd.accesskey "წ">
 
-<!ENTITY folderView.label "დასტები">
-<!ENTITY folderView.accesskey "F">
+<!ENTITY folderView.label "საქაღალდეები">
+<!ENTITY folderView.accesskey "ქ">
 <!ENTITY unifiedFolders.label "სხარტი">
 <!ENTITY unifiedFolders.accesskey "n">
 <!ENTITY allFolders.label "ყველა">
-<!ENTITY allFolders.accesskey "A">
+<!ENTITY allFolders.accesskey "ყ">
 <!ENTITY unreadFolders.label "წასაკითხი">
-<!ENTITY unreadFolders.accesskey "U">
+<!ENTITY unreadFolders.accesskey "ს">
 <!ENTITY favoriteFolders.label "რჩეული">
-<!ENTITY favoriteFolders.accesskey "F">
+<!ENTITY favoriteFolders.accesskey "რ">
 <!ENTITY recentFolders.label "ბოლო">
-<!ENTITY recentFolders.accesskey "R">
+<!ENTITY recentFolders.accesskey "ბ">
+<!ENTITY compactVersion.label "შემჭიდროებული ჩვენება">
+<!ENTITY compactVersion.accesskey "შ">
+<!ENTITY folderPaneBar.label "საქაღალდის დაფის ხელსაწყოები">
+<!ENTITY folderPaneBar.accesskey "ს">
+<!ENTITY folderModeSelector.label "საქაღალდის ხედები">
 
 <!-- Sort Menu -->
-<!ENTITY sortMenu.label "სორტირება">
-<!ENTITY sortMenu.accesskey "S">
+<!ENTITY sortMenu.label "დალაგება">
+<!ENTITY sortMenu.accesskey "ლ">
 <!ENTITY sortByDateCmd.label "თარიღით">
-<!ENTITY sortByDateCmd.accesskey "e">
+<!ENTITY sortByDateCmd.accesskey "თ">
 <!ENTITY sortByReceivedCmd.label "მიღებულით">
-<!ENTITY sortByReceivedCmd.accesskey "v">
+<!ENTITY sortByReceivedCmd.accesskey "მ">
 <!ENTITY sortByStarCmd.label "ვარსკვლავით">
-<!ENTITY sortByStarCmd.accesskey "S">
+<!ENTITY sortByStarCmd.accesskey "ვ">
 <!ENTITY sortByAttachmentsCmd.label "დანართებით">
-<!ENTITY sortByAttachmentsCmd.accesskey "A">
-<!ENTITY sortByPriorityCmd.label "პრიორიტეტით">
-<!ENTITY sortByPriorityCmd.accesskey "P">
+<!ENTITY sortByAttachmentsCmd.accesskey "დ">
+<!ENTITY sortByPriorityCmd.label "უპირატესობით">
+<!ENTITY sortByPriorityCmd.accesskey "უ">
 <!ENTITY sortBySizeCmd.label "ზომით">
-<!ENTITY sortBySizeCmd.accesskey "z">
-<!ENTITY sortByStatusCmd.label "სტატუსით">
-<!ENTITY sortByStatusCmd.accesskey "u">
+<!ENTITY sortBySizeCmd.accesskey "ზ">
+<!ENTITY sortByStatusCmd.label "მდგომარეობით">
+<!ENTITY sortByStatusCmd.accesskey "მ">
 <!ENTITY sortByTagsCmd.label "ჭდით">
-<!ENTITY sortByTagsCmd.accesskey "g">
+<!ENTITY sortByTagsCmd.accesskey "ჭ">
 <!ENTITY sortByJunkStatusCmd.label "ჯართის სტატუსით">
-<!ENTITY sortByJunkStatusCmd.accesskey "J">
+<!ENTITY sortByJunkStatusCmd.accesskey "ჯ">
 <!ENTITY sortBySubjectCmd.label "თემით">
-<!ENTITY sortBySubjectCmd.accesskey "b">
+<!ENTITY sortBySubjectCmd.accesskey "თ">
 <!ENTITY sortByFromCmd.label "გამგზავნით">
-<!ENTITY sortByFromCmd.accesskey "F">
+<!ENTITY sortByFromCmd.accesskey "გ">
 <!ENTITY sortByRecipientCmd.label "მიმღებით">
-<!ENTITY sortByRecipientCmd.accesskey "c">
-<!ENTITY sortByUnreadCmd.label "წასაკითხით">
-<!ENTITY sortByUnreadCmd.accesskey "R">
+<!ENTITY sortByRecipientCmd.accesskey "მ">
+<!ENTITY sortByCorrespondentCmd.label "მომწოდებლებით">
+<!ENTITY sortByCorrespondentCmd.accesskey "წ">
+<!ENTITY sortByUnreadCmd.label "წასაკითხები">
+<!ENTITY sortByUnreadCmd.accesskey "კ">
 <!ENTITY sortByOrderReceivedCmd.label "მიღების რიგით">
-<!ENTITY sortByOrderReceivedCmd.accesskey "O">
+<!ENTITY sortByOrderReceivedCmd.accesskey "რ">
 <!ENTITY sortAscending.label "აღმავალი">
-<!ENTITY sortAscending.accesskey "A">
+<!ENTITY sortAscending.accesskey "ა">
 <!ENTITY sortDescending.label "დაღმავალი">
-<!ENTITY sortDescending.accesskey "D">
+<!ENTITY sortDescending.accesskey "დ">
 <!ENTITY sortThreaded.label "აკინძული">
 <!ENTITY sortThreaded.accesskey "T">
 <!ENTITY sortUnthreaded.label "გაბნეული">
 <!ENTITY sortUnthreaded.accesskey "h">
-<!ENTITY groupBySort.label "დაჯგუფება სორტირებით">
-<!ENTITY groupBySort.accesskey "G">
+<!ENTITY groupBySort.label "დალაგებულების დაჯგუფება">
+<!ENTITY groupBySort.accesskey "ჯ">
 <!ENTITY msgsMenu.label "წერილები">
-<!ENTITY msgsMenu.accesskey "M">
+<!ENTITY msgsMenu.accesskey "წ">
 <!ENTITY threads.label "საქაღალდეები">
 <!ENTITY threads.accesskey "e">
 <!ENTITY allMsgsCmd.label "ყველა">
-<!ENTITY allMsgsCmd.accesskey "A">
+<!ENTITY allMsgsCmd.accesskey "ყ">
 <!ENTITY expandAllThreadsCmd.label "ყველა საქაღალდის გახსნა">
 <!ENTITY expandAllThreadsCmd.accesskey "E">
 <!ENTITY expandAllThreadsCmd.key "*">
@@ -301,7 +317,7 @@
 <!ENTITY goBackCmd.commandKey "[">
 <!ENTITY goChatCmd.label "სასაუბრო">
 <!ENTITY goChatCmd.accesskey "c">
-<!ENTITY goChatCmd.key "I">
+<!ENTITY goChatCmd2.key "H">
 <!ENTITY prevStarredMsgCmd.label "ალმიანი წერილი">
 <!ENTITY prevStarredMsgCmd.accesskey "S">
 <!ENTITY folderMenu.label "დასტა">
@@ -345,7 +361,15 @@
 <!ENTITY forwardAsInline.accesskey "I">
 <!ENTITY forwardAsAttachmentCmd.label "დანართი">
 <!ENTITY forwardAsAttachmentCmd.accesskey "A">
-<!-- do not change "VK_RETURN" -->
+<!ENTITY editAsNewMsgCmd.label "ჩასწორება ახალი შეტყობინების სახით">
+<!ENTITY editAsNewMsgCmd.accesskey "ჩ">
+<!ENTITY editAsNewMsgCmd.key "e">
+<!ENTITY editDraftMsgCmd.label "შეტყობინების ესკიზის ჩასწორება">
+<!ENTITY editDraftMsgCmd.accesskey "კ">
+<!ENTITY editTemplateMsgCmd.label "ნიმუშის ჩასწორება">
+<!ENTITY editTemplateMsgCmd.accesskey "ნ">
+<!ENTITY newMsgFromTemplateCmd.label "ახალი შეტყობინება ნიმუშიდან">
+<!ENTITY newMsgFromTemplateCmd.keycode "VK_RETURN"><!-- do not change "VK_RETURN" -->
 <!ENTITY createFilter.label "ფილტრის შექმნა წერილიდან…">
 <!ENTITY createFilter.accesskey "a">
 <!ENTITY moveMsgToMenu.label "გადატანა">
@@ -437,6 +461,11 @@
 <!ENTITY addressBookCmd.key "B">
 <!ENTITY addons.label "მოდულები">
 <!ENTITY addons.accesskey "A">
+<!ENTITY addonPrefs.label "დამატების პარამეტრები">
+<!ENTITY addonPrefs.accesskey "პ">
+<!ENTITY addonPrefsUnix.label "დამატების პარამეტრები">
+<!ENTITY addonPrefsUnix.accesskey "პ">
+<!ENTITY addonNoPrefs.label "დამატებების პარამეტრები ვერ მოიძებნა.">
 <!ENTITY activitymanager.label "აქტიობების მართვა">
 <!ENTITY activitymanager.accesskey "v">
 <!ENTITY imAccountsStatus.label "სასაუბროს სტატუსი">
@@ -450,6 +479,8 @@
 <!ENTITY savedFiles.label "შენახული ფაილები">
 <!ENTITY savedFiles.accesskey "l">
 <!ENTITY savedFiles.key "j">
+<!ENTITY filtersCmd2.label "წერილის ფილტრები">
+<!ENTITY filtersCmd2.accesskey "ფ">
 <!ENTITY filtersApply.label "ფილტრების შესრულება დასტისთვის">
 <!ENTITY filtersApply.accesskey "R">
 <!ENTITY filtersApplyToSelection.label "შერჩეული წერილების გაფილტვრა">
@@ -464,32 +495,51 @@
 <!ENTITY importCmd.accesskey "m">
 <!ENTITY clearRecentHistory.label "უახლესი ისტორიის გასუფთავება…">
 <!ENTITY clearRecentHistory.accesskey "H">
+<!ENTITY accountManagerCmd2.label "ანგარიშის პარამეტრები">
+<!ENTITY accountManagerCmd2.accesskey "რ">
 <!-- LOCALIZATION NOTE (accountManagerCmdUnix.accesskey):
      Belongs to accountManagerCmd.label, which is placed under the Edit menu
      on Unix systems
   -->
+<!ENTITY accountManagerCmdUnix2.accesskey "მ">
 
 <!-- Developer Tools Submenu -->
+<!ENTITY devtoolsMenu.label "შემმუშავებლის ხელსაწყოები">
+<!ENTITY devtoolsMenu.accesskey "ე">
+<!ENTITY devToolboxCmd.label "შემმუშავებლის ხელსაწყოები">
+<!ENTITY devToolboxCmd.accesskey "ხ">
+<!ENTITY devToolboxCmd.commandkey "i">
+<!ENTITY addonDebugCmd.label "დამატების გამმართველი">
+<!ENTITY addonDebugCmd.accesskey "დ">
+<!ENTITY debugAddonsCmd.label "დამატებების გამართვა">
+<!ENTITY debugAddonsCmd.accesskey "დ">
+<!ENTITY tabsDebugCmd.label "შიგთავსის კადრის გამმართველი">
+<!ENTITY tabsDebugCmd.accesskey "შ">
 <!ENTITY errorConsoleCmd.label "კონსოლის შეცდომა">
 <!ENTITY errorConsoleCmd.accesskey "E">
 <!ENTITY errorConsoleCmd.commandkey "j">
+<!ENTITY scratchpadCmd.label "სამუშაო დაფა">
+<!ENTITY scratchpadCmd.accesskey "ს">
 
 <!--LOCALIZATION NOTE (scratchpadCmd.keycode):
     This should be a key code constant as per
     https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode#Constants_for_keyCode_value
     (but without the DOM_ prefix) -->
+<!ENTITY scratchpadCmd.keycode "VK_F4">
 <!--LOCALIZATION NOTE (scratchpadCmd.keytext):
     This should be the text printed on the key defined in the previous string. -->
+<!ENTITY scratchpadCmd.keytext "F4">
 
 <!-- Mail Toolbar -->
 <!ENTITY getMsgButton1.label "ფოსტის მიღება">
-<!ENTITY newMsgButton.label "ახლის შექმნა">
+<!ENTITY newMsgButton.label "შედგენა">
 <!ENTITY replyButton.label "პასუხი">
 <!ENTITY replyAllButton.label "პასუხი ყველას">
 <!ENTITY replyListButton.label "პასუხი ჯგუფს">
 <!ENTITY forwardButton.label "გადაგზავნა">
 <!ENTITY fileButton.label "ფაილი">
 <!ENTITY archiveButton.label "არქივი">
+<!ENTITY openConversationButton.label "საუბარი">
 <!ENTITY nextButton.label "შემდეგი">
 <!ENTITY nextButtonToolbarItem.label "შემდეგი წასაკითხი">
 <!ENTITY nextMsgButton.label "შემდეგი">
@@ -532,6 +582,7 @@
 <!ENTITY forwardAsAttachment.tooltip "შერჩეული წერილის გადაგზავნა დანართის სახით">
 <!ENTITY fileButton.tooltip "შერჩეული წერილის შენახვა">
 <!ENTITY archiveButton.tooltip "შერჩეული წერილის დაარქივება">
+<!ENTITY openConversationButton.tooltip "მითითებული შეტყობინების სრული საუბრის ჩვენება">
 <!ENTITY nextButton.tooltip "გადასვლა შემდეგ წასაკითხ წერილზე">
 <!ENTITY nextMsgButton.tooltip "გადასვლა შემდეგ წერილზე">
 <!ENTITY previousButton.tooltip "გადასვლა წინა წასაკითხ წერილზე">
@@ -549,15 +600,27 @@
 <!ENTITY chatButton.tooltip "სასაუბრო დაფის ჩვენება">
 <!ENTITY tagButton.tooltip "წერილების დაჭდევება">
 <!ENTITY compactButton.tooltip "წაშლილი წერილების ამოღება შერჩეული დასტიდან">
-<!ENTITY appmenuButton1.tooltip "Display the &brandShortName; Menu">
+<!ENTITY appmenuButton1.tooltip "&brandShortName; მენიუს ჩვენება">
 
 <!-- Toolbar Button Popup -->
 <!ENTITY buttonMenuForwardAsInline.label "გადაგზავნა შიდა ტექსტის სახით">
 <!ENTITY buttonMenuForwardAsAttachment.label "გადაგზავნა დანართის სახით">
 
 <!-- Remote Content Button Popup -->
+<!ENTITY remoteContentOptionsAllowForMsg.label "ამ შეტყობინებაში ვებშიგთავსის ჩვენება">
+<!ENTITY remoteContentOptionsAllowForMsg.accesskey "ჩ">
+<!ENTITY editRemoteContentSettings.label "ვებშიგთავსის პარამეტრების ჩასწორება…">
+<!ENTITY editRemoteContentSettings.accesskey "წ">
+<!ENTITY editRemoteContentSettingsUnix.label "ვებშიგთავსის პარამეტრების ჩასწორება…">
+<!ENTITY editRemoteContentSettingsUnix.accesskey "ჩ">
 
 <!-- Phishing Button Popup -->
+<!ENTITY phishingOptionIgnore.label "გაფრთხილების უგულებელყოფა ამ შეტყობინებაზე">
+<!ENTITY phishingOptionIgnore.accesskey "უ">
+<!ENTITY phishingOptionSettings.label "თაღლითური შეტყობინებების ამოცნობის პარამეტრები…">
+<!ENTITY phishingOptionSettings.accesskey "თ">
+<!ENTITY phishingOptionSettingsUnix.label "თაღლითური შეტყობინებების ამოცნობის პარამეტრები…">
+<!ENTITY phishingOptionSettingsUnix.accesskey "პ">
 
 <!-- AppMenu Popup -->
 <!ENTITY appmenuNewMsgCmd.label "ახალი წერილი">
@@ -574,11 +637,17 @@
 <!ENTITY manageTags.accesskey "M">
 
 <!-- Folder Pane -->
+<!ENTITY folderNameColumn.label "სახელი">
+<!ENTITY folderUnreadColumn.label "წასაკითხი">
+<!ENTITY folderTotalColumn.label "სულ">
 <!ENTITY folderSizeColumn.label "ზომა">
 
 <!-- Folder Pane Context Menu -->
 <!ENTITY folderContextGetMessages.label "წერილების მიღება">
 <!ENTITY folderContextGetMessages.accesskey "G">
+<!ENTITY folderContextPauseAllUpdates.label "ყველა განახლების შეჩერება">
+<!ENTITY folderContextPauseUpdates.label "განახლებების შეჩერება">
+<!ENTITY folderContextPauseUpdates.accesskey "გ">
 <!ENTITY folderContextOpenInNewWindow.label "გახსნა ახალ სარკმელში">
 <!ENTITY folderContextOpenInNewWindow.accesskey "O">
 <!ENTITY folderContextOpenNewTab.label "გახსნა ახალ დაფაზე">
@@ -589,7 +658,7 @@
 <!ENTITY folderContextRename.accesskey "R">
 <!ENTITY folderContextRemove.label "წაშლა">
 <!ENTITY folderContextRemove.accesskey "D">
-<!ENTITY folderContextCompact.label "საქაღალდის შემჭიდროვება">
+<!ENTITY folderContextCompact.label "შეკუმშვა">
 <!ENTITY folderContextCompact.accesskey "C">
 <!ENTITY folderContextEmptyTrash.label "ურნის გასუფთავება">
 <!ENTITY folderContextEmptyTrash.accesskey "y">
@@ -607,8 +676,12 @@
 <!ENTITY folderContextSubscribe.accesskey "b">
 <!ENTITY folderContextSearchForMessages.label "წერილების ძიება…">
 <!ENTITY folderContextSearchForMessages.accesskey "S">
+<!ENTITY folderContextProperties2.label "პარამეტრები">
+<!ENTITY folderContextProperties2.accesskey "პ">
 <!ENTITY folderContextFavoriteFolder.label "რჩეულების დასტა">
 <!ENTITY folderContextFavoriteFolder.accesskey "a">
+<!ENTITY folderContextSettings2.label "პარამეტრები">
+<!ENTITY folderContextSettings2.accesskey "ა">
 
 <!-- Search Bar -->
 <!ENTITY SearchNameOrEmail.label "სახელი ან ელფოსტა შეიცავს:">
@@ -630,6 +703,7 @@
 <!ENTITY threadColumn.label "საქაღალდე">
 <!ENTITY fromColumn.label "გამგზავნი">
 <!ENTITY recipientColumn.label "მიმღები">
+<!ENTITY correspondentColumn.label "მომწოდებლები">
 <!ENTITY subjectColumn.label "თემა">
 <!ENTITY dateColumn.label "თარიღი">
 <!ENTITY priorityColumn.label "პრიორიტეტი">
@@ -648,8 +722,30 @@
 <!ENTITY attachmentColumn.label "დანართები">
 
 <!-- Thread Pane Tooltips -->
+<!ENTITY columnChooser2.tooltip "სვეტების შერჩევა საჩვენებლად">
+<!ENTITY threadColumn2.tooltip "წერილების მწკრივის ჩვენება">
+<!ENTITY fromColumn2.tooltip "გამომგზავნის მიხედვით">
+<!ENTITY recipientColumn2.tooltip "მიმღების მიხედვით">
+<!ENTITY correspondentColumn2.tooltip "მომწოდებლის მიხედვით">
+<!ENTITY subjectColumn2.tooltip "თემის მიხედვით">
+<!ENTITY dateColumn2.tooltip "თარიღის მიხედვით">
+<!ENTITY priorityColumn2.tooltip "უპირატესობის მიხედვით">
+<!ENTITY tagsColumn2.tooltip "ჭდეების მიხედვით">
+<!ENTITY accountColumn2.tooltip "ანგარიშის მიხედვით">
+<!ENTITY statusColumn2.tooltip "მდგომარეობის მიხედვით">
+<!ENTITY sizeColumn2.tooltip "ზომის მიხედვით">
+<!ENTITY junkStatusColumn2.tooltip "ჯართად მიჩნეულის მიხედვით">
+<!ENTITY unreadColumn2.tooltip "წაუკითხავი წერილების რაოდენობა მწკრივში">
+<!ENTITY totalColumn2.tooltip "წერილების საერთო რაოდენობა მწკრივში">
+<!ENTITY readColumn2.tooltip "წაკითხვის მიხედვით">
+<!ENTITY receivedColumn2.tooltip "მიღების თარიღის მიხედვით">
+<!ENTITY starredColumn2.tooltip "ვარსკვლავის მიხედვით">
+<!ENTITY locationColumn2.tooltip "მდებარეობის მიხედვით">
+<!ENTITY idColumn2.tooltip "მიღების თანმიმდევრობით">
+<!ENTITY attachmentColumn2.tooltip "დანართების მიხედვით">
 
 <!-- Thread Pane Context Menu -->
+<!ENTITY contextNewMsgFromTemplate.label "ახალი შეტყობინება ნიმუშიდან">
 <!ENTITY contextOpenNewWindow.label "წერილის ახალ ფანჯარაში გახსნა">
 <!ENTITY contextOpenNewWindow.accesskey "W">
 <!-- The contextOpenNewTab.accesskey ("T") potentially conflicts with
@@ -660,6 +756,13 @@
 <!ENTITY contextOpenNewTab.accesskey "T">
 <!ENTITY contextOpenConversation.label "წერილის გახსნა განსახილველად">
 <!ENTITY contextOpenConversation.accesskey "n">
+<!ENTITY contextOpenContainingFolder.label "შეტყობინების გახსნა შემცველ საქაღალდეში">
+<!ENTITY contextOpenContainingFolder.accesskey "ც">
+<!ENTITY contextEditMsgAsNew.label "ჩასწორება ახალი შეტყობინების სახით">
+<!ENTITY contextEditMsgAsNew.accesskey "ჩ">
+<!ENTITY contextEditDraftMsg.label "შეტყობინების ესკიზის ჩასწორება">
+<!ENTITY contextEditTemplate.label "ნიმუშის ჩასწორება">
+<!ENTITY contextEditTemplate.accesskey "ნ">
 <!ENTITY contextArchive.label "არქივი">
 <!ENTITY contextArchive.accesskey "h">
 <!ENTITY contextReplySender.label "პასუხი მხოლოდ გამომგზავნს">
@@ -687,6 +790,7 @@
 <!ENTITY contextCopyMsgMenu.label "კოპირება">
 <!ENTITY contextCopyMsgMenu.accesskey "C">
 <!ENTITY contextKillThreadMenu.label "საქაღალდის გამოტოვება">
+<!ENTITY contextKillSubthreadMenu.accesskey "ი">
 <!ENTITY contextKillThreadMenu.accesskey "I">
 <!ENTITY contextKillSubthreadMenu.label "ქვესაქაღალდის გამოტოვება">
 <!ENTITY contextWatchThreadMenu.label "Watch Thread">
@@ -694,6 +798,7 @@
      In the en-US locale we ran out of access keys, so there is an empty access key for
      Watch Thread. Localizers can pick a suitable key
   -->
+<!ENTITY contextWatchThreadMenu.accesskey "">
 <!ENTITY contextSaveAs.label "შენახვა როგორც…">
 <!ENTITY contextSaveAs.accesskey "S">
 <!ENTITY contextPrint.label "ბეჭდვა…">
@@ -773,6 +878,7 @@
      to get to the box faster. If the global indexer is disabled, the search
      box will be collapsed and the user will never see this message.
   -->
+<!ENTITY search.label.base1 "ძიება #1">
 <!-- LOCALIZATION NOTE (search.keyLabel.nonmac):
      The description of the key-binding to get into the global search box on
      windows and linux (which use the control key). We use the key defined in
@@ -791,14 +897,18 @@
 <!ENTITY AddToAddressBook.accesskey "B">
 <!ENTITY AddDirectlyToAddressBook.label "დამატება წიგნაკში">
 <!ENTITY AddDirectlyToAddressBook.accesskey "B">
+<!ENTITY EditContact1.label "კონტაქტის ჩასწორება">
+<!ENTITY EditContact1.accesskey "ჩ">
 <!ENTITY ViewContact.label "კონტაქტის ჩვენება">
-<!ENTITY ViewContact.accesskey "V">
+<!ENTITY ViewContact.accesskey "ვ">
 <!ENTITY SubscribeToNewsgroup.label "ხელმოწერა სიახლეთა ჯგუფებზე">
 <!ENTITY SubscribeToNewsgroup.accesskey "N">
 <!ENTITY SendMessageTo.label "წერილის შექმნა -">
 <!ENTITY SendMessageTo.accesskey "s">
 <!ENTITY CopyEmailAddress.label "ელფოსტის მისამართის კოპირება">
 <!ENTITY CopyEmailAddress.accesskey "C">
+<!ENTITY CopyNameAndEmailAddress.label "სახელისა და ელფოსტის მისამართის დაკოპირება">
+<!ENTITY CopyNameAndEmailAddress.accesskey "ს">
 <!ENTITY CopyNewsgroupName.label "სიახლეთა ჯგუფის სახელის კოპირება">
 <!ENTITY CopyNewsgroupName.accesskey "C">
 <!ENTITY CopyNewsgroupURL.label "სიახლეთა ჯგუფის URL-ს ასლი">
@@ -842,6 +952,7 @@
 <!ENTITY zoomWindow.label "მასშტაბი">
 
 <!-- Mac OS X Application Menu (Cocoa widgets) -->
+<!ENTITY preferencesCmdMac2.label       "პარამეტრები">
 <!ENTITY preferencesCmdMac.commandkey   ",">
 <!ENTITY preferencesCmdMac.modifiers    "accel">
 <!ENTITY servicesMenuMac.label          "მომსახურება">
@@ -854,3 +965,6 @@
 <!ENTITY showAllAppsCmdMac.label        "ყველას ჩვენება">
 
 <!-- Mac OS X Dock Icon pop-up menu -->
+<!ENTITY dockOptions.label              "პროგრამის ხატულის პარამეტრები…">
+<!ENTITY writeNewMessageDock.label      "ახალი წერილის შექმნა">
+<!ENTITY openAddressBookDock.label      "წიგნაკის გახსნა">

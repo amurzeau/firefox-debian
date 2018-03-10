@@ -5,6 +5,8 @@
 <!ENTITY trackingProtectionHeader2.label "Protezione antitracciamento">
 <!ENTITY trackingProtection2.description "Il tracciamento consiste nella raccolta di informazioni sul visitatore attraverso siti diversi. Può essere utilizzato per costruire un vero e proprio profilo e visualizzare contenuti basati sulle abitudini di navigazione e sui dati personali.">
 <!ENTITY trackingProtection2.radioGroupLabel "Utilizza la protezione antitracciamento per bloccare i tracciatori conosciuti">
+<!ENTITY trackingProtection3.description "La protezione antitracciamento blocca elementi utilizzati per raccogliere dati sulla navigazione attraverso siti diversi.">
+<!ENTITY trackingProtection3.radioGroupLabel "Utilizza la protezione antitracciamento per bloccare i tracciatori conosciuti">
 <!ENTITY trackingProtectionAlways.label "Sempre">
 <!ENTITY trackingProtectionAlways.accesskey "p">
 <!ENTITY trackingProtectionPrivate.label "Solo in finestre anonime">
@@ -12,10 +14,9 @@
 <!ENTITY trackingProtectionNever.label "Mai">
 <!ENTITY trackingProtectionNever.accesskey "a">
 <!ENTITY trackingProtectionLearnMore.label "Ulteriori informazioni">
+<!ENTITY trackingProtectionLearnMore2.label "Ulteriori informazioni sulla protezione antitracciamento e la privacy">
 <!ENTITY trackingProtectionExceptions.label "Eccezioni…">
 <!ENTITY trackingProtectionExceptions.accesskey "E">
-<!ENTITY trackingProtectionPBM5.label "Attiva la protezione antitracciamento in modalità Navigazione anonima">
-<!ENTITY trackingProtectionPBM5.accesskey "g">
 <!ENTITY trackingProtectionPBM6.label "Attiva la protezione antitracciamento in modalità Navigazione anonima per bloccare i tracciatori conosciuti">
 <!ENTITY trackingProtectionPBM6.accesskey "g">
 <!ENTITY trackingProtectionPBMLearnMore.label "Ulteriori informazioni">
@@ -40,8 +41,14 @@
 <!ENTITY suggestionSettings2.label "Modifica le impostazioni relative ai suggerimenti dei motori di ricerca">
 <!ENTITY acceptCookies2.label "Accetta i cookie dai siti web">
 <!ENTITY acceptCookies2.accesskey "k">
+<!ENTITY acceptCookies3.label "Accetta cookie e dati dai siti web">
+<!ENTITY acceptCookies3.accesskey "k">
 <!ENTITY acceptThirdParty2.pre.label "Accetta i cookie di terze parti">
 <!ENTITY acceptThirdParty2.pre.accesskey "t">
+<!ENTITY blockCookies.label "Blocca cookie e dati dei siti web (potrebbe causare malfunzionamenti in alcuni siti)">
+<!ENTITY blockCookies.accesskey "B">
+<!ENTITY acceptThirdParty3.pre.label "Accetta cookie e dati da siti di terze parti">
+<!ENTITY acceptThirdParty3.pre.accesskey "t">
 <!ENTITY acceptThirdParty.always.label "sempre">
 <!ENTITY acceptThirdParty.never.label "mai">
 <!ENTITY acceptThirdParty.visited.label "dai siti visitati">
@@ -69,6 +76,8 @@
 <!ENTITY dontrememberActions.pre.label "È inoltre possibile ">
 <!ENTITY dontrememberActions.clearHistory.label "cancellare tutta la cronologia corrente">
 <!ENTITY dontrememberActions.post.label ".">
+<!ENTITY clearHistoryButton.label "Cancella cronologia…">
+<!ENTITY clearHistoryButton.accesskey "e">
 <!ENTITY privateBrowsingPermanent2.label "Utilizza sempre la modalità Navigazione anonima">
 <!ENTITY privateBrowsingPermanent2.accesskey "U">
 <!ENTITY rememberHistory2.label "Conserva la cronologia di navigazione e dei download">

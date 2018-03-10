@@ -5,6 +5,8 @@
 <!ENTITY  trackingProtectionHeader2.label      "Apsauga nuo stebėjimo">
 <!ENTITY  trackingProtection2.description      "Stebėjimas yra jūsų naršymo duomenų rinkimas daugelyje svetainių. Stebėjimas gali būti panaudotas sudaryti profilį ir rodyti turinį atsižvelgiant į jūsų naršymo bei asmeninę informaciją.">
 <!ENTITY  trackingProtection2.radioGroupLabel  "Naudokite apsaugą nuo stebėjimo norėdami užblokuoti žinomus stebėjimo elementus">
+<!ENTITY  trackingProtection3.description      "Apsauga nuo stebėjimo blokuoja stebėjimo elementus, kurie renka jūsų naršymo duomenis daugelyje svetainių.">
+<!ENTITY  trackingProtection3.radioGroupLabel  "Naudokite apsaugą nuo stebėjimo, norėdami užblokuoti žinomus stebėjimo elementus">
 <!ENTITY  trackingProtectionAlways.label       "Visada">
 <!ENTITY  trackingProtectionAlways.accesskey   "V">
 <!ENTITY  trackingProtectionPrivate.label      "Tik privačiojo naršymo languose">
@@ -12,12 +14,9 @@
 <!ENTITY  trackingProtectionNever.label        "Niekada">
 <!ENTITY  trackingProtectionNever.accesskey    "N">
 <!ENTITY  trackingProtectionLearnMore.label    "Sužinoti daugiau">
+<!ENTITY  trackingProtectionLearnMore2.label    "Sužinokite daugiau apie apsaugą nuo stebėjimo ir savo privatumą">
 <!ENTITY  trackingProtectionExceptions.label   "Išimtys…">
 <!ENTITY  trackingProtectionExceptions.accesskey "I">
-
-<!-- LOCALIZATION NOTE (trackingProtectionPBM5.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel. -->
-<!ENTITY trackingProtectionPBM5.label         "Naudoti apsaugą nuo stebėjimo privačiuosiuose languose">
-<!ENTITY trackingProtectionPBM5.accesskey     "v">
 
 <!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the release and beta channel. -->
 <!ENTITY trackingProtectionPBM6.label         "Naudokite apsaugą nuo stebėjimo privačiojo naršymo veiksenoje, norėdami užblokuoti žinomus stebėjimo elementus">
@@ -47,11 +46,20 @@
 
 <!ENTITY  suggestionSettings2.label     "Keisti ieškyklių siūlymų nuostatas">
 
-<!ENTITY  acceptCookies2.label          "Priimti slapukus iš svetainių">
+<!ENTITY  acceptCookies2.label          "Leisti įrašyti slapukus">
 <!ENTITY  acceptCookies2.accesskey      "P">
 
 <!ENTITY  acceptThirdParty2.pre.label     "Leisti trečiųjų šalių slapukus">
 <!ENTITY  acceptThirdParty2.pre.accesskey "u">
+
+<!ENTITY  acceptCookies3.label          "Leisti įrašyti slapukus ir svetainių duomenis">
+<!ENTITY  acceptCookies3.accesskey      "L">
+
+<!ENTITY  blockCookies.label            "Neleisti įrašyti slapukų ir svetainių duomenų (gali sutrikti svetainių veikimas)">
+<!ENTITY  blockCookies.accesskey        "N">
+
+<!ENTITY  acceptThirdParty3.pre.label     "Leisti trečiųjų šalių slapukus ir svetainių duomenis">
+<!ENTITY  acceptThirdParty3.pre.accesskey "j">
 <!ENTITY  acceptThirdParty.always.label   "Visada">
 <!ENTITY  acceptThirdParty.never.label    "niekada">
 <!ENTITY  acceptThirdParty.visited.label  "tik lankytoms svetainėms">
@@ -93,6 +101,9 @@
 <!ENTITY  dontrememberActions.pre.label          "Taip pat galbūt norite ">
 <!ENTITY  dontrememberActions.clearHistory.label "visiškai išvalyti žurnalą">
 <!ENTITY  dontrememberActions.post.label         ".">
+
+<!ENTITY  clearHistoryButton.label       "Išvalyti žurnalą…">
+<!ENTITY  clearHistoryButton.accesskey   "u">
 
 <!ENTITY  privateBrowsingPermanent2.label "Visada naršyti privačiojo naršymo veiksenoje">
 <!ENTITY  privateBrowsingPermanent2.accesskey "V">

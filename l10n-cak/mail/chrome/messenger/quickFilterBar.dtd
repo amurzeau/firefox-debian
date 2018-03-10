@@ -6,26 +6,36 @@
      The label  for the button on the tab bar that toggles the visibility of
      the quick filter bar.
      -->
+<!ENTITY quickFilterBar.qfbShowFilterBar.label
+         "Aninäq Chayub'äl">
 
 <!-- LOCALIZATION NOTE (quickFilterBar.toggleBarVisibility.menu.label):
      The label to display for the "View... Toolbars..." menu item that controls
      whether the quick filter bar is visible.
      -->
+<!ENTITY quickFilterBar.toggleBarVisibility.menu.label
+         "Kikajtz'ik Aninäq taq Chayub'äl">
 
 <!-- LOCALIZATION NOTE (quickFilterBar.toggleBarVisibility.menu.accesskey):
      The access key for the "View... Toolbars..." menu item label that controls
      whether the quick filter bar is visible.
      -->
+<!ENTITY quickFilterBar.toggleBarVisibility.menu.accesskey
+         "K">
 
 <!-- LOCALIZATION NOTE (quickFilterBar.toggleBarVisibility.appmenu.label):
      The label to display for the "App Menu... Preferences..." menu item that
      controls whether the quick filter bar is visible.
      -->
+<!ENTITY quickFilterBar.toggleBarVisibility.appmenu.label
+         "Kikajtz'ik Aninäq taq Chayub'äl">
 
 <!-- LOCALIZATION NOTE (quickFilterBar.toggleBarVisibility.button.tooltip):
      The tooltip to display when hovering over the button on the tab bar that
      toggles the visibility of the quick filter bar.
      -->
+<!ENTITY quickFilterBar.toggleBarVisibility.button.tooltip
+         "Tijalwachïx rukajtz'ik anin chayub'äl">
 
 <!-- LOCALIZATION NOTE (quickFilterBar.sticky.tooltip):
      The tooltip to display when the user hovers over the sticky button
@@ -34,6 +44,8 @@
      folders or opens new tabs.  (When inactive, only the state of the text
      filters are propagated between folder changes and when opening new tabs.)
      -->
+<!ENTITY quickFilterBar.sticky.tooltip
+         "Kek'oje' na ri taq chayub'äl e'okisan toq yejalwachïx taq yakwuj">
 
 <!-- LOCALIZATION NOTE (quickFilterBar.unread.label):
      The label for the filter button that causes us to filter results to only
@@ -46,6 +58,8 @@
      The tooltip for the filter button that causes us to filter results to only
      include unread messages.
      -->
+<!ENTITY quickFilterBar.unread.tooltip
+         "Kek'ut pe xa xe ri mesik'in taq tzijol">
 
 <!-- LOCALIZATION NOTE (quickFilterBar.starred.label):
      The label for the filter button that causes us to filter results to only
@@ -58,6 +72,8 @@
      The tooltip for the filter button that causes us to filter results to only
      include messages that have been starred/flagged.
      -->
+<!ENTITY quickFilterBar.starred.tooltip
+         "Kek'ut pe xa xe ri ya'on kiq'ij taq tzijol">
 
 <!-- LOCALIZATION NOTE (quickFilterBar.inaddrbook.label):
      The label for the filter button that causes us to filter results to only
@@ -72,6 +88,8 @@
      include messages from contacts in one of the user's non-remote address
      books.
      -->
+<!ENTITY quickFilterBar.inaddrbook.tooltip
+         "Ketz'et xa xe ri kitzijol winaqi' pa ri kitz'ib'awuj awochochib'al">
 
 <!-- LOCALIZATION NOTE (quickFilterBar.tags.label):
      The label for the filter button that causes us to filter results to only
@@ -84,6 +102,8 @@
      The tooltip for the filter button that causes us to filter results to only
      include messages with at least one tag on them.
      -->
+<!ENTITY quickFilterBar.tags.tooltip
+         "Kek'ut pe xa xe taq tzijol k'o kiyaketal">
 
 <!-- LOCALIZATION NOTE (quickFilterBar.attachment.label):
      The label for the filter button that causes us to filter results to only
@@ -96,6 +116,8 @@
      The tooltip for the filter button that causes us to filter results to only
      include messages with attachments.
      -->
+<!ENTITY quickFilterBar.attachment.tooltip
+         "Kek'ut pe xa xe taq tzijol k'o kitaqoj">
 
 <!-- LOCALIZATION NOTE (quickFilterBar.resultsLabel.some.formatString):
      This is used to populate the results box; it either displays the
@@ -136,9 +158,13 @@
      the messages and that there is a hotkey they can press to get to the
      box faster.
      -->
+<!ENTITY quickFilterBar.textbox.emptyText.base1
+         "Kechayüx re taq rutzijol re' #1">
 
 <!-- LOCALIZATION NOTE (quickFilterBar.show.key2):
      This is the key used to show the quick filter bar. -->
+<!ENTITY quickFilterBar.show.key2
+         "k">
 
 <!-- LOCALIZATION NOTE (quickFilterBar.textbox.emptyText.keyLabel.nonmac):
      The description of the key-binding to get into the box on windows and
@@ -158,14 +184,17 @@
 <!-- LOCALIZATION NOTE (quickFilterBar.booleanMode.tooltip):
      Tooltip of the Any of / All of tagging mode selector.
      -->
+<!ENTITY quickFilterBar.booleanMode.tooltip "Rub'anikil kichayuxik yaketal">
 
 <!-- LOCALIZATION NOTE (quickFilterBar.booleanModeAny.label):
      Tooltip of the Any of / All of tagging mode selector.
      -->
+<!ENTITY quickFilterBar.booleanModeAny.label "Xab'achike">
 
 <!-- LOCALIZATION NOTE (quickFilterBar.booleanModeAny.tooltip):
      Tooltip of the Any of / All of tagging mode selector.
      -->
+<!ENTITY quickFilterBar.booleanModeAny.tooltip "Jun ta chi ke ri taq retal na'oj cha'on k'o ta chi nuk'äm ri'">
 
 <!-- LOCALIZATION NOTE (quickFilterBar.booleanModeAll.label):
      Tooltip of the Any of / All of tagging mode selector.
@@ -175,6 +204,7 @@
 <!-- LOCALIZATION NOTE (quickFilterBar.booleanModeAll.tooltip):
      Tooltip of the Any of / All of tagging mode selector.
      -->
+<!ENTITY quickFilterBar.booleanModeAll.tooltip "Konojel ri retal na'oj k'o chi nikik'äm ki'">
 
 <!-- LOCALIZATION NOTE (quickFilterBar.textbox.idealWidth):
      The number of pixels for the ideal width of the quick filter box textbox.
@@ -200,6 +230,8 @@
      tag sub-bar wants as much space as possible.  (Overflow is handled by an
      arrow scroll box.)
      -->
+<!ENTITY quickFilterBar.textFilter.explanation.label
+         "Kechayüx taq rutzijol ruma:">
 
 <!-- LOCALIZATION NOTE (quickFilterBar.textFilter.sender.label):
      The button label that toggles whether the text filter searches the message
@@ -233,8 +265,12 @@
      The first line of the panel popup that tells the user we found no matches
      but we can convert to a global search for them.
      -->
+<!ENTITY quickFilterBar.glodaUpsell.continueSearch
+         "K'a tib'an re kanoxïk re' pa ronojel yakwuj">
 
 <!-- LOCALIZATION NOTE (quickFilterBar.glodaUpsell.pressEnterAndCurrent):
      The second line of the panel popup that tells the user we found no matches.
      This line will have #1 replaced with what the user has typed so far.
      -->
+<!ENTITY quickFilterBar.glodaUpsell.pressEnterAndCurrent
+         "Tapitz'a' chik 'Enter' richin k'a nib'an ri rukanoxik: #1">

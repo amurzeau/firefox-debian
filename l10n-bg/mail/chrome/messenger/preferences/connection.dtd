@@ -2,14 +2,14 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY  connectionsDialog.title       "Настройки на връзката">
+<!ENTITY  connectionsDialog.title       "Настройки на свързване">
 <!ENTITY  window.width                  "49em">
 <!ENTITY  window.macWidth               "44em">
 
 <!ENTITY  proxyTitle.label              "Настройване на мрежов посредник за достъп до интернет">
-<!ENTITY  noProxyTypeRadio.label        "Без прокси">
+<!ENTITY  noProxyTypeRadio.label        "Без мрежов посредник">
 <!ENTITY  noProxyTypeRadio.accesskey    "к">
-<!ENTITY  systemTypeRadio.label         "Използване на системните настройки за мрежов посредник">
+<!ENTITY  systemTypeRadio.label         "Използване на системните настройки">
 <!ENTITY  systemTypeRadio.accesskey     "з">
 <!ENTITY  WPADTypeRadio.label           "Автоматично откриване">
 <!ENTITY  WPADTypeRadio.accesskey       "м">
@@ -43,5 +43,5 @@
 <!ENTITY  autologinproxy.label          "Да не се пита за удостоверяване, ако паролата е запазена">
 <!ENTITY  autologinproxy.accesskey      "у">
 <!ENTITY  autologinproxy.tooltip        "Тази настройка ще ви удостоверява без да потвърждение пред мрежови посредници, когато имате запазени данни за вход. Ще бъдете питани, ако удостоверяването се провали.">
-<!ENTITY  socksRemoteDNS.label          "Мрежов посредник за DNS при използване на SOCKS v5">
+<!ENTITY  socksRemoteDNS.label          "Посредник за DNS при използване на SOCKS v5">
 <!ENTITY  socksRemoteDNS.accesskey      "D">

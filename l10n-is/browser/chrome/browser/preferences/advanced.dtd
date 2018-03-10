@@ -37,6 +37,8 @@ available. -->
 <!ENTITY dataCollectionDesc.label        "Við reynum alltaf að bjóða upp á valkvæmni og söfnum aðeins þeim upplýsingum sem við þurfum til að endurbæta &brandShortName; fyrir alla. Við spyrjum alltaf um leyfi áður en við söfnum persónulegum upplýsingum.">
 <!ENTITY dataCollectionPrivacyNotice.label    "Meðferð persónuupplýsinga">
 
+<!ENTITY collectBrowserErrorsLearnMore.label "Fræðast meira">
+
 <!ENTITY alwaysSubmitCrashReports1.label  "Leyfa &brandShortName; að senda hrunskýrslur til Mozilla">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "h">
 <!ENTITY crashReporterLearnMore.label    "Fræðast meira">
@@ -46,12 +48,12 @@ available. -->
 <!ENTITY networkProxy.label              "Net milliþjónn">
 
 <!ENTITY connectionDesc.label            "Stilla hvernig &brandShortName; tengist við Internetið">
+
+<!ENTITY connectionSettingsLearnMore.label "Fræðast meira">
 <!ENTITY connectionSettings.label        "Stillingar…">
 <!ENTITY connectionSettings.accesskey    "S">
 
 <!ENTITY httpCache.label                 "Vefgögn í flýtiminni">
-
-<!ENTITY offlineStorage2.label           "Ótengd vefgögn og notandagögn">
 
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "Gögn vefsvæðis">
@@ -72,8 +74,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MB af plássi">
 <!ENTITY clearCacheNow.label             "Hreinsa núna">
 <!ENTITY clearCacheNow.accesskey         "r">
-<!ENTITY clearOfflineAppCacheNow.label   "Hreinsa núna">
-<!ENTITY clearOfflineAppCacheNow.accesskey "n">
 <!ENTITY overrideSmartCacheSize.label    "Hunsa sjálfvirka umsýslu skyndiminnis">
 <!ENTITY overrideSmartCacheSize.accesskey "u">
 
@@ -110,17 +110,6 @@ available. -->
 
 <!ENTITY enableSearchUpdate2.label       "Uppfæra leitarvélar sjálfvirkt">
 <!ENTITY enableSearchUpdate2.accesskey   "e">
-
-<!ENTITY offlineStorageNotify.label               "Láta vita þegar vefsvæði biður um að geyma gögn fyrir ónettengda notkun">
-<!ENTITY offlineStorageNotify.accesskey           "t">
-<!ENTITY offlineStorageNotifyExceptions.label     "Undanþágur…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "d">
-
-<!ENTITY offlineAppsList3.label          "Eftirfarandi vefsvæði hafa leyfi til að geyma gögn fyrir notkun án nettengingar">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "Fjarlægja…">
-<!ENTITY offlineAppsListRemove.accesskey "r">
-<!ENTITY offlineAppRemove.confirm        "Fjarlægja utankerfis gögn">
 
 <!ENTITY certificateTab.label            "Skilríki">
 <!ENTITY certPersonal2.description       "Þegar netþjónn biður um mitt skilríki">

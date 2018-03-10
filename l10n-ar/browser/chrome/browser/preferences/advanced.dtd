@@ -39,6 +39,13 @@ available. -->
 
 <!ENTITY alwaysSubmitCrashReports1.label  "اسم أن يرسل &brandShortName; بلاغلات الانهيار إلى موزيلا">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "ن">
+
+<!ENTITY collectBrowserErrors.label          "اسمح بأن يُرسل &brandShortName; تقارير بأخطاء المتصفح (بما في ذلك رسائل الأخطاء) إلى موزيلا.">
+<!ENTITY collectBrowserErrors.accesskey      "خ">
+<!ENTITY collectBrowserErrorsLearnMore.label "اطّلع على المزيد">
+
+<!ENTITY sendBackloggedCrashReports.label  "اسمح بأن يُرسل &brandShortName; بلاغات الانهيار المعلقة نيابة عنك">
+<!ENTITY sendBackloggedCrashReports.accesskey "ع">
 <!ENTITY crashReporterLearnMore.label    "اطّلع على المزيد">
 
 <!ENTITY networkTab.label                "الشبكة">
@@ -46,17 +53,20 @@ available. -->
 <!ENTITY networkProxy.label              "وسيط الشبكة">
 
 <!ENTITY connectionDesc.label            "اضبط كيفية اتصال &brandShortName; بالإنترنت">
+
+<!ENTITY connectionSettingsLearnMore.label "اطّلع على المزيد">
 <!ENTITY connectionSettings.label        "الإعدادات…">
 <!ENTITY connectionSettings.accesskey    "ع">
 
 <!ENTITY httpCache.label                 "محتوى الوب المخزّن">
 
-<!ENTITY offlineStorage2.label           "محتوى الوب ومعلومات المستخدمة المخزّنة للعمل دون اتصال">
-
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "بيانات الموقع">
 <!ENTITY clearSiteData.label             "امسح كل البيانات">
 <!ENTITY clearSiteData.accesskey         "س">
+<!ENTITY siteData1.label                 "الكعكات و بيانات المواقع">
+<!ENTITY clearSiteData1.label            "امسح البيانات…">
+<!ENTITY clearSiteData1.accesskey        "س">
 <!ENTITY siteDataSettings.label          "الإعدادات…">
 <!ENTITY siteDataSettings.accesskey      "ع">
 <!ENTITY siteDataLearnMoreLink.label     "اطّلع على المزيد">
@@ -72,8 +82,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "م.بايت من المساحة للذّاكرة الخبيئة">
 <!ENTITY clearCacheNow.label             "امسح الآن">
 <!ENTITY clearCacheNow.accesskey         "م">
-<!ENTITY clearOfflineAppCacheNow.label   "امسح الآن">
-<!ENTITY clearOfflineAppCacheNow.accesskey "ن">
 <!ENTITY overrideSmartCacheSize.label    "تخطَّ الإدارة الآلية للذاكرة الخبيئة">
 <!ENTITY overrideSmartCacheSize.accesskey "ذ">
 
@@ -110,17 +118,6 @@ available. -->
 
 <!ENTITY enableSearchUpdate2.label       "حدّث محركات البحث تلقائيًا">
 <!ENTITY enableSearchUpdate2.accesskey   "ك">
-
-<!ENTITY offlineStorageNotify.label               "نبّهني عندما يطلب موقع تخزين بيانات للاستخدام دون اتصال">
-<!ENTITY offlineStorageNotify.accesskey           "ه">
-<!ENTITY offlineStorageNotifyExceptions.label     "الاستثناءات…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "ث">
-
-<!ENTITY offlineAppsList3.label          "يسمح للمواقع التالية بتخزين بيانات للعمل دون اتصال">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "احذف…">
-<!ENTITY offlineAppsListRemove.accesskey "ح">
-<!ENTITY offlineAppRemove.confirm        "احذف بيانات الاستخدام دون اتصال">
 
 <!ENTITY certificateTab.label            "الشّهادات">
 <!ENTITY certPersonal2.description       "عندما يطلب خادوم شهادتي الشخصيّة">

@@ -367,6 +367,8 @@
 <!ENTITY editAsNewMsgCmd.key "e">
 <!ENTITY editDraftMsgCmd.label "Уреди нацрт">
 <!ENTITY editDraftMsgCmd.accesskey "ц">
+<!ENTITY editTemplateMsgCmd.label "Уреди шаблон">
+<!ENTITY editTemplateMsgCmd.accesskey "б">
 <!ENTITY newMsgFromTemplateCmd.label "Нова порука из шаблона">
 <!ENTITY newMsgFromTemplateCmd.keycode "VK_RETURN"><!-- do not change "VK_RETURN" -->
 <!ENTITY createFilter.label "Направи филтер из поруке…">
@@ -510,6 +512,8 @@
 <!ENTITY devToolboxCmd.commandkey "i">
 <!ENTITY addonDebugCmd.label "Поправљач грешака додатака">
 <!ENTITY addonDebugCmd.accesskey "П">
+<!ENTITY debugAddonsCmd.label "Поправљај грешке додатака">
+<!ENTITY debugAddonsCmd.accesskey "г">
 <!ENTITY tabsDebugCmd.label "Поправљач грешака кадрова садржаја">
 <!ENTITY tabsDebugCmd.accesskey "г">
 <!ENTITY errorConsoleCmd.label "Конзола са грешкама">
@@ -758,6 +762,8 @@
 <!ENTITY contextEditMsgAsNew.label "Уреди као нову поруку">
 <!ENTITY contextEditMsgAsNew.accesskey "У">
 <!ENTITY contextEditDraftMsg.label "Уреди нацрт">
+<!ENTITY contextEditTemplate.label "Уреди шаблон">
+<!ENTITY contextEditTemplate.accesskey "и">
 <!ENTITY contextArchive.label "Архивирај">
 <!ENTITY contextArchive.accesskey "х">
 <!ENTITY contextReplySender.label "Одговори само пошиљаоцу">

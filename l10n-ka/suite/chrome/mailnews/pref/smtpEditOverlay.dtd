@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY settings.caption "პარამეტრები">
-<!ENTITY security.caption "უსაფრთხოება და აუთენტიფიკაცია">
+<!ENTITY security.caption "უსაფრთხოება და ანგარიშზე შესვლა">
 <!ENTITY serverName.label "სერვერის სახელი:">
 <!ENTITY serverName.accesskey "S">
 <!ENTITY serverDescription.label "აღწერილობა:">
@@ -20,5 +20,5 @@
 <!ENTITY connectionSecurityType-3.label "SSL/TLS">
 <!ENTITY smtpEditTitle.label "SMTP სერვერი">
 <!ENTITY serverPortDefault.label "ნაგულისხმები:">
-<!ENTITY authMethod.label "აუთენტიფიკაციის მეთოდი:">
+<!ENTITY authMethod.label "ანგარიშზე შესვლის მეთოდი:">
 <!ENTITY authMethod.accesskey "i">

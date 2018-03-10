@@ -85,7 +85,7 @@
 <!ENTITY proxyResolveFailure.longDesc "<ul>
   <li>Verificare la correttezza delle impostazioni del proxy.</li>
   <li>Verificare se il computer ha una connessione di rete funzionante.</li>
-  <li>Se il computer o la rete sono protetti da un firewall o un proxy, assicurarsi che &brandShortName; abbia i permessi per accedere al web.</li>
+  <li>Se il computer o la rete sono protetti da un firewall o un proxy, assicurarsi che &brandShortName; abbia i permessi per accedere al Web.</li>
 </ul>">
 <!ENTITY redirectLoop.title "Questa pagina non reindirizza in modo corretto">
 <!ENTITY redirectLoop.longDesc "
@@ -112,7 +112,7 @@
 <ul>
   <li>Il sito potrebbe essere non disponibile o sovraccarico. Riprovare fra qualche istante.</li>
   <li>Se non è possibile caricare alcuna pagina, controllare la connessione di rete del computer.</li>
-  <li>Se il computer o la rete sono protetti da un firewall o un proxy, assicurarsi che &brandShortName; abbia i permessi per accedere al web.</li>
+  <li>Se il computer o la rete sono protetti da un firewall o un proxy, assicurarsi che &brandShortName; abbia i permessi per accedere al Web.</li>
 </ul>
 ">
 <!ENTITY cspBlocked.title "Bloccato dai criteri sulla sicurezza dei contenuti">
@@ -133,5 +133,6 @@
 <!ENTITY certerror.copyToClipboard.label "Copia il testo negli appunti">
 <!ENTITY inadequateSecurityError.title "Connessione non sicura">
 <!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> utilizza una tecnologia di sicurezza obsoleta e vulnerabile. Un tentativo di attacco potrebbe facilmente compromettere informazioni considerate sicure. L’amministratore del sito web deve aggiornare la configurazione del server prima di poterlo visitare.</p><p>Codice di errore: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
+<!ENTITY blockedByPolicy.title "Pagina bloccata">
 <!ENTITY prefReset.longDesc "Sembra che il problema sia causato dalle impostazioni di sicurezza della rete. Ripristinare le impostazioni predefinite?">
 <!ENTITY prefReset.label "Ripristina impostazioni predefinite">

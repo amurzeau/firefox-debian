@@ -108,6 +108,16 @@
 
 <!-- Reorder Attachment Panel -->
 <!ENTITY reorderAttachmentsPanel.label "Zmeniť usporiadanie príloh">
+<!ENTITY moveAttachmentTopPanelBtn.label "Presunúť nahor">
+<!ENTITY moveAttachmentTopPanelBtn.accesskey "n">
+<!ENTITY moveAttachmentUpPanelBtn.label "Presunúť vyššie">
+<!ENTITY moveAttachmentUpPanelBtn.accesskey "v">
+<!ENTITY moveAttachmentBundleUpPanelBtn.label "Presunúť spolu">
+<!ENTITY moveAttachmentBundleUpPanelBtn.accesskey "s">
+<!ENTITY moveAttachmentDownPanelBtn.label "Presunúť nižšie">
+<!ENTITY moveAttachmentDownPanelBtn.accesskey "e">
+<!ENTITY moveAttachmentBottomPanelBtn.label "Presunúť nadol">
+<!ENTITY moveAttachmentBottomPanelBtn.accesskey "d">
 <!-- LOCALIZATION NOTE (sortAttachmentsTogglePanelBtn.AZ.label):
      Please ensure that this translation matches
      sortAttachmentsTogglePanelBtn.ZA.label, except for the sort direction. -->
@@ -124,22 +134,13 @@
      Please ensure that this translation matches
      sortAttachmentsPanelBtn.Sort.ZA.label, except for the sort direction. -->
 <!ENTITY sortAttachmentsPanelBtn.Sort.AZ.label "Usporiadať od A do Z">
-<!-- LOCALIZATION NOTE (sortAttachmentsPanelBtn.Sort.AZ.accesskey):
-     This accesskey should be the same like
-     sortAttachmentsPanelBtn.Sort.ZA.accesskey,
-     sortAttachmentsPanelBtn.SortSelection.AZ.accesskey, and
-     sortAttachmentsPanelBtn.SortSelection.ZA.accesskey and it should therefore be
-     taken from the word "Sort", not from "Selection" or the sort direction part. -->
-<!ENTITY sortAttachmentsPanelBtn.Sort.AZ.accesskey "o">
 <!ENTITY sortAttachmentsPanelBtn.Sort.ZA.label "Usporiadať od Z do A">
-<!ENTITY sortAttachmentsPanelBtn.Sort.ZA.accesskey "o">
 <!-- LOCALIZATION NOTE (sortAttachmentsPanelBtn.SortSelection.AZ.label):
      Please ensure that this translation matches
      sortAttachmentsPanelBtn.SortSelection.ZA.label, except for the sort direction. -->
 <!ENTITY sortAttachmentsPanelBtn.SortSelection.AZ.label "Usporiadať výber od A do Z">
-<!ENTITY sortAttachmentsPanelBtn.SortSelection.AZ.accesskey "o">
 <!ENTITY sortAttachmentsPanelBtn.SortSelection.ZA.label "Usporiadať výber od Z do A">
-<!ENTITY sortAttachmentsPanelBtn.SortSelection.ZA.accesskey "o">
+<!ENTITY sortAttachmentsPanelBtn.key "y">
 
 <!-- View Menu -->
 <!ENTITY viewMenu.label "Zobraziť">

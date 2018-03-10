@@ -317,7 +317,7 @@
 <!ENTITY goBackCmd.commandKey "[">
 <!ENTITY goChatCmd.label "Cabadaich">
 <!ENTITY goChatCmd.accesskey "C">
-<!ENTITY goChatCmd.key "I">
+<!ENTITY goChatCmd2.key "h">
 <!ENTITY prevStarredMsgCmd.label "Teachdaireachd le rionnag">
 <!ENTITY prevStarredMsgCmd.accesskey "T">
 <!ENTITY folderMenu.label "Pasgan">
@@ -366,6 +366,8 @@
 <!ENTITY editAsNewMsgCmd.key "e">
 <!ENTITY editDraftMsgCmd.label "Deasaich an dreachd teachdaireachd">
 <!ENTITY editDraftMsgCmd.accesskey "D">
+<!ENTITY editTemplateMsgCmd.label "Deasaich an teamplaid">
+<!ENTITY editTemplateMsgCmd.accesskey "t">
 <!ENTITY newMsgFromTemplateCmd.label "Teachdaireachd ùr o theamplaid">
 <!ENTITY newMsgFromTemplateCmd.keycode "VK_RETURN"><!-- do not change "VK_RETURN" -->
 <!ENTITY createFilter.label "Cruthaich criathrag on teachdaireachd…">
@@ -504,6 +506,8 @@
 <!ENTITY devToolboxCmd.commandkey "i">
 <!ENTITY addonDebugCmd.label "Dì-bhugadair nan tuilleadan">
 <!ENTITY addonDebugCmd.accesskey "a">
+<!ENTITY debugAddonsCmd.label "Dì-bhugaich na tuilleadain">
+<!ENTITY debugAddonsCmd.accesskey "a">
 <!ENTITY tabsDebugCmd.label "Dì-bhugadair frèam na susbaint">
 <!ENTITY tabsDebugCmd.accesskey "D">
 <!ENTITY errorConsoleCmd.label "Consoil nam mearachd">
@@ -752,6 +756,8 @@
 <!ENTITY contextEditMsgAsNew.label "Deasaich mar theachdaireachd ùr">
 <!ENTITY contextEditMsgAsNew.accesskey "e">
 <!ENTITY contextEditDraftMsg.label "Deasaich an dreachd teachdaireachd">
+<!ENTITY contextEditTemplate.label "Deasaich an teamplaid">
+<!ENTITY contextEditTemplate.accesskey "t">
 <!ENTITY contextArchive.label "Tasg-lann">
 <!ENTITY contextArchive.accesskey "T">
 <!ENTITY contextReplySender.label "Freagair an seòladair a-mhàin">

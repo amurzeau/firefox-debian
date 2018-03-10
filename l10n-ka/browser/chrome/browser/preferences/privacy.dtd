@@ -5,6 +5,8 @@
 <!ENTITY  trackingProtectionHeader2.label      "თვალთვალისგან დაცვა">
 <!ENTITY  trackingProtection2.description      "თვალთვალი ნიშნავს თქვენი მოქმედებების აღრიცხვას სხვადასხვა საიტების მეშვეობით. თვალთვალს იყენებენ, პირადი მონაცემების საფუძველზე, მომხმარებელზე, უფრო მეტად მორგებული მომსახურების შეთავაზებისთვის.">
 <!ENTITY  trackingProtection2.radioGroupLabel  "თვალთვალისგან დაცვის საშუალებით, შეგიძლიათ ცნობილი მეთვალყურე ელემენტების შეზღუდვა">
+<!ENTITY  trackingProtection3.description      "თვალთვალისგან დაცვა ზღუდავს მეთვალყურე ელემენტებს, რომელიც აღრიცხავს თქვენს მოქმედებებს, სხვადასხვა საიტებზე.">
+<!ENTITY  trackingProtection3.radioGroupLabel  "თვალთვალისგან დაცვის საშუალებით, შეგიძლიათ ცნობილი მეთვალყურე ელემენტების შეზღუდვა">
 <!ENTITY  trackingProtectionAlways.label       "ყოველთვის">
 <!ENTITY  trackingProtectionAlways.accesskey   "ყ">
 <!ENTITY  trackingProtectionPrivate.label      "მხოლოდ პირად ფანჯრებში">
@@ -12,12 +14,9 @@
 <!ENTITY  trackingProtectionNever.label        "არასდროს">
 <!ENTITY  trackingProtectionNever.accesskey    "ა">
 <!ENTITY  trackingProtectionLearnMore.label    "შეიტყვეთ მეტი">
+<!ENTITY  trackingProtectionLearnMore2.label    "იხილეთ ვრცლად, თვალთვალისგან დაცვისა და პირადი მონაცემების უსაფრთხოების შესახებ">
 <!ENTITY  trackingProtectionExceptions.label   "გამონაკლისები…">
 <!ENTITY  trackingProtectionExceptions.accesskey "კ">
-
-<!-- LOCALIZATION NOTE (trackingProtectionPBM5.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel. -->
-<!ENTITY trackingProtectionPBM5.label         "თვალთვალისგან დაცვა პირადი ფანჯრით სარგებლობისას">
-<!ENTITY trackingProtectionPBM5.accesskey     "რ">
 
 <!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the release and beta channel. -->
 <!ENTITY trackingProtectionPBM6.label         "თვალთვალისგან დაცვის საშუალებით, პირადი თვალიერებისას, შეგიძლიათ ცნობილი მეთვალყურე ელემენტების შეზღუდვა">
@@ -52,6 +51,15 @@
 
 <!ENTITY  acceptThirdParty2.pre.label     "მესამე მხარის ფუნთუშების მიღება">
 <!ENTITY  acceptThirdParty2.pre.accesskey "ხ">
+
+<!ENTITY  acceptCookies3.label          "ფუნთუშებისა და სხვა მონაცემების მიღება საიტებიდან">
+<!ENTITY  acceptCookies3.accesskey      "მ">
+
+<!ENTITY  blockCookies.label            "ფუნთუშებისა და საიტის მონაცემების აკრძალვა (შესაძლოა ვებსაიტებმა ხარვეზებით იმუშაოს)">
+<!ENTITY  blockCookies.accesskey        "კ">
+
+<!ENTITY  acceptThirdParty3.pre.label     "მესამე მხარის ფუნთუშებისა და საიტის მონაცემის მიღება">
+<!ENTITY  acceptThirdParty3.pre.accesskey "ღ">
 <!ENTITY  acceptThirdParty.always.label   "ყოველთვის">
 <!ENTITY  acceptThirdParty.never.label    "არასდროს">
 <!ENTITY  acceptThirdParty.visited.label  "მხოლოდ მონახულებულიდან">
@@ -93,6 +101,9 @@
 <!ENTITY  dontrememberActions.pre.label          "შესაძლოა ასევე მოისურვოთ ">
 <!ENTITY  dontrememberActions.clearHistory.label "მიმდინარე ისტორიის გასუფთავება">
 <!ENTITY  dontrememberActions.post.label         ".">
+
+<!ENTITY  clearHistoryButton.label       "ისტორიის გასუფთავება…">
+<!ENTITY  clearHistoryButton.accesskey   "ს">
 
 <!ENTITY  privateBrowsingPermanent2.label "ყოველთვის პირადი დათვალიერების გამოყენება">
 <!ENTITY  privateBrowsingPermanent2.accesskey "პ">

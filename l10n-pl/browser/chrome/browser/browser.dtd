@@ -32,6 +32,7 @@
 <!ENTITY sendLinkToDevice.label "Prześlij odnośnik do">
 <!ENTITY sendLinkToDevice.accesskey "P">
 <!ENTITY sendToDeviceFeedback.label "Przesłano!">
+<!ENTITY sendToDeviceOfflineFeedback.label "W kolejce (tryb offline)">
 <!ENTITY moveToNewWindow.label "Przenieś do nowego okna">
 <!ENTITY moveToNewWindow.accesskey "o">
 <!ENTITY bookmarkAllTabs.label               "Dodaj zakładki do wszystkich kart…">
@@ -144,13 +145,17 @@
 <!ENTITY hideRecentlyBookmarked.accesskey "U">
 
 <!ENTITY backCmd.label "Wstecz" >
+<!ENTITY backCmd.accesskey "W">
 <!ENTITY backButton.tooltip "Przejdź do poprzedniej strony" >
 <!ENTITY forwardCmd.label "Do przodu" >
+<!ENTITY forwardCmd.accesskey "D">
 <!ENTITY forwardButton.tooltip "Przejdź do następnej strony" >
 <!ENTITY backForwardButtonMenu.tooltip "Kliknij prawym przyciskiem lub rozwiń, by wyświetlić historię">
 <!ENTITY backForwardButtonMenuMac.tooltip "Rozwiń, by wyświetlić historię">
 <!ENTITY reloadCmd.label "Odśwież" >
+<!ENTITY reloadCmd.accesskey "O">
 <!ENTITY stopCmd.label "Zatrzymaj" >
+<!ENTITY stopCmd.accesskey "Z">
 <!ENTITY stopCmd.macCommandKey ".">
 <!ENTITY goEndCap.tooltip "Przejdź do strony o podanym adresie" >
 <!ENTITY printButton.label "Drukuj" >
@@ -178,10 +183,10 @@
 <!ENTITY urlbar.microphoneBlocked.tooltip "Udostępnianie mikrofonu tej witrynie zostało zablokowane">
 <!ENTITY urlbar.screenBlocked.tooltip "Udostępnianie obrazu ekranu tej witrynie zostało zablokowane">
 <!ENTITY urlbar.geolocationBlocked.tooltip "Udostępnianie położenia tej witrynie zostało zablokowane">
-<!ENTITY urlbar.indexedDBBlocked.tooltip "Przechowywanie danych offline przez tę witrynę zostało zablokowane">
 <!ENTITY urlbar.webNotificationsBlocked.tooltip "Powiadomienia z tej witryny zostały zablokowane">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Przechowywanie danych na komputerze przez witrynę zostało zablokowane">
 <!ENTITY urlbar.popupBlocked.tooltip "Wyskakujące okna na tej stronie są blokowane">
+<!ENTITY urlbar.canvasBlocked.tooltip "Odczytywanie danych canvas przez tę witrynę zostało zablokowane">
 <!ENTITY urlbar.openHistoryPopup.tooltip "Wyświetl historię">
 
 <!ENTITY searchItem.title "Znajdź" >
@@ -240,7 +245,6 @@
 <!ENTITY newNavigatorCmd.accesskey "N" >
 <!ENTITY newPrivateWindow.label     "Nowe okno prywatne">
 <!ENTITY newPrivateWindow.accesskey "p">
-<!ENTITY newNonRemoteWindow.label "Nowe okno z pojedynczym procesem">
 
 <!ENTITY editMenu.label "Edycja" >
 <!ENTITY editMenu.accesskey "E" >
@@ -294,17 +298,12 @@
 <!ENTITY showAllHistoryCmd2.label "Wyświetl całą historię">
 <!ENTITY showAllHistoryCmd.commandkey "H">
 
-<!ENTITY appMenuCustomize.label "Dostosuj">
-<!ENTITY appMenuCustomize.tooltip "Dostosuj menu i paski narzędzi">
-<!ENTITY appMenuCustomizeExit.label "Zakończ dostosowywanie">
-<!ENTITY appMenuCustomizeExit.tooltip "Zakończ dostosowywanie">
 <!ENTITY appMenuHistory.showAll.label "Wyświetl całą historię">
 <!ENTITY appMenuHistory.clearRecent.label "Wyczyść historię przeglądania…">
 <!ENTITY appMenuHistory.restoreSession.label "Przywróć poprzednią sesję">
 <!ENTITY appMenuHistory.viewSidebar.label "Wyświetl historię w panelu bocznym">
 <!ENTITY appMenuHistory.recentHistory.label "Ostatnio odwiedzone">
 <!ENTITY appMenuHelp.label "Pomoc">
-<!ENTITY appMenuHelp.tooltip "Otwórz menu pomocy">
 
 <!ENTITY appMenuRemoteTabs.label "Karty z innych urządzeń">
 <!ENTITY appMenuRemoteTabs.notabs.label "Brak otwartych kart">
@@ -317,9 +316,11 @@
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Czy wyświetlić tutaj listę kart otwartych na innych urządzeniach?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Ustawienia synchronizacji">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Zaloguj się, aby wyświetlić tutaj listę kart z innych urządzeń.">
+<!ENTITY appMenuRemoteTabs.unverified.label "Konto musi zostać zweryfikowane.">
 <!ENTITY appMenuRemoteTabs.signin.label "Zaloguj się do synchronizacji">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Zarządzaj urządzeniami…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Wyświetl karty z innych urządzeń w panelu bocznym">
+<!ENTITY appMenuRemoteTabs.connectdevice.label "Połącz inne urządzenie">
 
 <!ENTITY appMenuRecentHighlights.label "Ostatnio wyróżnione">
 
@@ -351,14 +352,6 @@
 <!ENTITY urlbar.accesskey "d" >
 <!ENTITY urlbar.extension.label "Rozszerzenie:">
 <!ENTITY urlbar.switchToTab.label     "Przełącz na kartę:">
-
-<!ENTITY urlbar.searchSuggestionsNotification.question "Czy wyświetlać w podpowiedziach paska adresu podpowiedzi dostarczane przez wyszukiwarki?">
-<!ENTITY urlbar.searchSuggestionsNotification.learnMore "Więcej informacji…">
-<!ENTITY urlbar.searchSuggestionsNotification.learnMore.accesskey "W">
-<!ENTITY urlbar.searchSuggestionsNotification.disable "Nie">
-<!ENTITY urlbar.searchSuggestionsNotification.disable.accesskey "N">
-<!ENTITY urlbar.searchSuggestionsNotification.enable "Tak">
-<!ENTITY urlbar.searchSuggestionsNotification.enable.accesskey "T">
 
 <!ENTITY urlbar.searchSuggestionsNotification.hintPrefix "Wyszukuj łatwiej!">
 <!ENTITY urlbar.searchSuggestionsNotification.hint "Ikona &#x1F50E; sygnalizuje podpowiedzi wyszukiwarek.">
@@ -435,6 +428,7 @@
 <!ENTITY setDesktopBackgroundCmd.label "Ustaw jako tapetę…" >
 <!ENTITY setDesktopBackgroundCmd.accesskey "t" >
 <!ENTITY bookmarkPageCmd2.label "Dodaj zakładkę do tej strony">
+<!ENTITY bookmarkPageCmd2.accesskey "D">
 <!ENTITY bookmarkThisLinkCmd.label "Dodaj zakładkę do odnośnika">
 <!ENTITY bookmarkThisLinkCmd.accesskey "a">
 <!ENTITY bookmarkThisFrameCmd.label "Dodaj zakładkę do ramki">
@@ -566,8 +560,6 @@
 <!ENTITY pageStylePersistentOnly.label "Styl podstawowy">
 <!ENTITY pageStylePersistentOnly.accesskey "S">
 
-<!ENTITY pageReportIcon.tooltip            "Zmień ustawienia blokady wyskakujących okien dla tej strony">
-
 <!ENTITY allowPopups.accesskey "w">
 <!ENTITY editPopupSettingsUnix.label "Edytuj preferencje wyskakujących okien…">
 <!ENTITY editPopupSettings.label "Edytuj opcje blokady wyskakujących okien…">
@@ -594,6 +586,8 @@
 
 <!ENTITY editBookmark.done.label                     "Gotowe">
 <!ENTITY editBookmark.removeBookmark.accessKey       "U">
+
+<!ENTITY identity.securityView.label "Bezpieczeństwo strony">
 
 <!ENTITY identity.connectionSecure "Zabezpieczone połączenie">
 <!ENTITY identity.connectionNotSecure "Połączenie nie jest bezpieczne">
@@ -642,10 +636,12 @@
 <!ENTITY syncedTabs.sidebar.noclients.title "Synchronizacja kart wyłączona">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Czy wyświetlić tutaj listę kart otwartych na innych urządzeniach?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label "Zaloguj się, aby wyświetlić listę kart z innych urządzeń.">
+<!ENTITY syncedTabs.sidebar.unverified.label "Konto musi zostać zweryfikowane.">
 <!ENTITY syncedTabs.sidebar.notabs.label "Brak otwartych kart">
 <!ENTITY syncedTabs.sidebar.openprefs.label "Otwórz ustawienia synchronizacji">
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label "Włącz synchronizację kart, aby wyświetlać listę otwartych na innych urządzeniach.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder "Szukaj w synchronizowanych kartach">
+<!ENTITY syncedTabs.sidebar.connectAnotherDevice "Połącz inne urządzenie">
 
 <!ENTITY syncedTabs.context.open.label "Otwórz">
 <!ENTITY syncedTabs.context.open.accesskey "O">
@@ -674,8 +670,6 @@
 <!ENTITY syncToolbarButton.label      "Synchronizuj">
 
 <!ENTITY customizeMode.menuAndToolbars.header3 "Przeciągaj swoje ulubione elementy na pasek narzędzi lub do menu ukrywania.">
-<!ENTITY customizeMode.menuAndToolbars.empty "Jeszcze więcej narzędzi?">
-<!ENTITY customizeMode.menuAndToolbars.emptyLink "Możesz wybierać spośród tysięcy dodatków">
 <!ENTITY customizeMode.restoreDefaults "Przywróć domyślne">
 <!ENTITY customizeMode.done "Gotowe">
 <!ENTITY customizeMode.titlebar "Pasek tytułu">
@@ -688,7 +682,6 @@
 <!ENTITY customizeMode.lwthemes.menuManage.accessKey "Z">
 <!ENTITY customizeMode.lwthemes.menuGetMore "Pobierz więcej">
 <!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "P">
-<!ENTITY customizeMode.emptyOverflowList.description "Przeciągaj tutaj rzeczy, aby były pod ręką, ale nie zabierały miejsca na pasku narzędzi…">
 <!ENTITY customizeMode.overflowList.title "Menu ukrywania">
 <!ENTITY customizeMode.overflowList.title2 "Menu ukrywania">
 <!ENTITY customizeMode.overflowList.description "Przeciągaj tutaj rzeczy, aby były pod ręką, ale nie zabierały miejsca na pasku narzędzi…">
@@ -778,9 +771,20 @@
 <!ENTITY updateRestart.cancelButton.accesskey "N">
 <!ENTITY updateRestart.panelUI.label2 "Uruchom ponownie program &brandShorterName;, aby go uaktualnić">
 
+<!ENTITY newTabControlled.message "Rozszerzenie zmieniło stronę nowej karty, ale można przywrócić poprzednią.">
+<!ENTITY newTabControlled.header.message "Strona nowej karty została zmieniona.">
+<!ENTITY newTabControlled.keepButton.label "Używaj nowej">
+<!ENTITY newTabControlled.keepButton.accesskey "n">
+<!ENTITY newTabControlled.restoreButton.label "Przywróć poprzednią">
+<!ENTITY newTabControlled.restoreButton.accesskey "P">
+
 <!ENTITY pageActionButton.tooltip "Interakcje">
 <!ENTITY pageAction.addToUrlbar.label "Dodaj do paska adresu">
 <!ENTITY pageAction.removeFromUrlbar.label "Usuń z paska adresu">
+
+<!ENTITY pageAction.allowInUrlbar.label "Wyświetlaj na pasku adresu">
+<!ENTITY pageAction.disallowInUrlbar.label "Nie wyświetlaj na pasku adresu">
+<!ENTITY pageAction.manageExtension.label "Zarządzaj rozszerzeniem…">
 
 <!ENTITY pageAction.sendTabToDevice.label "Wyślij stronę na urządzenie">
 <!ENTITY sendToDevice.syncNotReady.label "Synchronizowanie urządzeń…">

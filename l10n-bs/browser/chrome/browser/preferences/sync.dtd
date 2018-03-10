@@ -76,7 +76,9 @@ both, to better adapt this sentence to their language.
 <!ENTITY forget.accesskey            "o">
 
 <!ENTITY resendVerification.label     "Ponovo pošalji verifikaciju">
+<!ENTITY resendVerification.accesskey "v">
 <!ENTITY cancelSetup.label            "Otkaži podešavanje">
+<!ENTITY cancelSetup.accesskey        "p">
 
 <!ENTITY signedOut.caption            "Ponesite vaš Web sa vama">
 <!ENTITY signedOut.description        "Sinhronizujte vaše zabilješke, historiju, tabove, lozinke, add-one, i druge postavke na svim vašim uređajima.">
@@ -104,3 +106,6 @@ both, to better adapt this sentence to their language.
 <!ENTITY mobilePromo3.iOSLink          "iOS">
 
 <!ENTITY mobilePromo3.end              " za sinhronizaciju sa vašim mobilnim uređajem.">
+
+<!ENTITY mobilepromo.singledevice      "Povežite drugi uređaj">
+<!ENTITY mobilepromo.multidevice       "Upravljajte uređajima">

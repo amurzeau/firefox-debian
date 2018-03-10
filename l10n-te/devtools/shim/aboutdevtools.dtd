@@ -49,7 +49,9 @@
 
 <!ENTITY  aboutDevtools.enable.closeButton2 "ఈ ట్యాబుని మూసివేయి">
 
+<!ENTITY  aboutDevtools.welcome.title "Firefox డెవలపర్ పనిముట్లకి స్వాగతం!">
 
+<!ENTITY  aboutDevtools.newsletter.title "Mozilla డెవలపర్ వార్తాలేఖ">
 <!-- LOCALIZATION NOTE (aboutDevtools.newsletter.message): Subscribe form message.
   -  The newsletter is only available in english at the moment.
   -  See Bug 1415273 for support of additional languages.-->
@@ -57,6 +59,7 @@
 <!ENTITY  aboutDevtools.newsletter.subscribeButton "చందాచేరండి">
 <!ENTITY  aboutDevtools.newsletter.thanks.title "కృతజ్ఞతలు!">
 
+<!ENTITY  aboutDevtools.footer.title "Firefox డెవలపర్ ఎడిషన్">
 
 <!-- LOCALIZATION NOTE (aboutDevtools.footer.learnMoreLink): Text for the link to
   -  https://www.mozilla.org/firefox/developer/ displayed in the footer. -->

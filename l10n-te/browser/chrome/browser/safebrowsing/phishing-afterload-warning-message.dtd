@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY safeb.palm.accept.label2 "వెనక్కి వెళ్ళు">
-<!ENTITY safeb.palm.seedetails.label "వివరాలను చూడు">
+<!ENTITY safeb.palm.seedetails.label "వివరాలను చూడండి">
 
 <!-- Localization note (safeb.palm.notdeceptive.label) - Label of the Help menu
   item. Either this or reportDeceptiveSiteMenu.label from report-phishing.dtd is
@@ -18,6 +18,7 @@
 <!-- Localization note (safeb.palm.advisory.desc) - Please don't translate <a id="advisory_provider"/> tag.  It will be replaced at runtime with advisory link-->
 
 
+<!ENTITY safeb.blocked.malwarePage.title2 "ఈ వెబ్‌సైటును చూడటం వల్ల మీ కంప్యూటరుకి హాని కలగవచ్చు">
 
 <!-- Localization note (safeb.blocked.malwarePage.errorDesc.override, safeb.blocked.malwarePage.errorDesc.noOverride, safeb.blocked.malwarePage.learnMore) - All <span> and <a> tags are replaced by the appropriate links and text during runtime. -->
 

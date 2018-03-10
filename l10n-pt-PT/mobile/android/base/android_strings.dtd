@@ -454,6 +454,7 @@
 <!ENTITY share_image_failed "Não é possível partilhar esta imagem">
 <!ENTITY save_as_pdf "Guardar como PDF">
 <!ENTITY print "Imprimir">
+<!ENTITY view_page_source "Ver código fonte da página">
 <!ENTITY find_in_page "Localizar na página">
 <!ENTITY desktop_mode "Pedir site de computador">
 <!ENTITY page "Página">
@@ -485,7 +486,6 @@
 <!ENTITY contextmenu_open_new_tab "Abrir num novo separador">
 <!ENTITY contextmenu_open_private_tab "Abrir num separador privado">
 <!ENTITY contextmenu_remove "Remover">
-<!ENTITY contextmenu_add_to_launcher "Adicionar ao ecrã inicial">
 <!ENTITY contextmenu_add_page_shortcut "Adicionar atalho de página">
 <!ENTITY contextmenu_set_as_homepage "Definir como página inicial">
 <!ENTITY contextmenu_share "Partilhar">
@@ -540,7 +540,6 @@
      any page is removed frome about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "Página removida">
-
 <!ENTITY folder_removed "Pasta removida">
 
 <!ENTITY bookmark_edit_title "Editar marcador">
@@ -811,6 +810,9 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      replaced by the Android OS version (e.g., 14)-->
 <!ENTITY unsupported_sdk_version "Desculpe! Este &brandShortName; não funciona neste dispositivo (&formatS1;, &formatS2;). Por favor, transfira a versão correta.">
 
+<!-- LOCALIZATION NOTE(corrupt_apk): This notification is shown if corruption has been detected on startup and the user has to reinstall Firefox -->
+<!ENTITY corrupt_apk "Não é possível abrir o &brandShortName;. Por favor, reinstale e tente novamente.">
+
 <!ENTITY eol_notification_title2 "O &brandShortName; não será mais atualizado">
 <!ENTITY eol_notification_summary "Toque para saber mais">
 
@@ -818,8 +820,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      are used for a system notification that's shown to users after the app updates. -->
 <!ENTITY whatsnew_notification_title "O &brandShortName; está atualizado">
 <!ENTITY whatsnew_notification_summary "Descubra as novidades desta versão">
-
-<!ENTITY promotion_add_to_homescreen "Adicionar ao ecrã inicial">
 
 <!ENTITY promotion_add_page_shortcut "Adicionar atalho de página">
 

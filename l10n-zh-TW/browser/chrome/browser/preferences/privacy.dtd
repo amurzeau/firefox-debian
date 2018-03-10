@@ -5,6 +5,8 @@
 <!ENTITY  trackingProtectionHeader2.label      "追蹤保護">
 <!ENTITY  trackingProtection2.description      "「網路追蹤」就是在您瀏覽不同網站時，收集您的上網資料，以用來建立您的個人喜好輪廓，並依照您的瀏覽紀錄與個人資訊來投放廣告。">
 <!ENTITY  trackingProtection2.radioGroupLabel  "使用追蹤保護功能，封鎖已知的追蹤器">
+<!ENTITY  trackingProtection3.description      "追蹤保護功能會封鎖在不同網站間收集您的瀏覽資料的網路追蹤器。">
+<!ENTITY  trackingProtection3.radioGroupLabel  "使用追蹤保護功能，封鎖已知的追蹤器">
 <!ENTITY  trackingProtectionAlways.label       "總是">
 <!ENTITY  trackingProtectionAlways.accesskey   "y">
 <!ENTITY  trackingProtectionPrivate.label      "僅在隱私瀏覽視窗">
@@ -12,13 +14,11 @@
 <!ENTITY  trackingProtectionNever.label        "永不">
 <!ENTITY  trackingProtectionNever.accesskey    "n">
 <!ENTITY  trackingProtectionLearnMore.label    "詳細資訊">
+<!ENTITY  trackingProtectionLearnMore2.label    "了解有關追蹤保護功能，以及您的隱私權的更多資訊">
 <!ENTITY  trackingProtectionExceptions.label   "例外網站…">
 <!ENTITY  trackingProtectionExceptions.accesskey "x">
 
-<!-- LOCALIZATION NOTE (trackingProtectionPBM5.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel. -->
-<!ENTITY trackingProtectionPBM5.label         "在隱私瀏覽視窗中使用追蹤保護功能">
-<!ENTITY trackingProtectionPBM5.accesskey     "v">
-<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the nightly channel. -->
+<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the release and beta channel. -->
 <!ENTITY trackingProtectionPBM6.label         "在隱私瀏覽模式使用追蹤保護功能，封鎖已知的追蹤器">
 <!ENTITY trackingProtectionPBM6.accesskey     "v">
 <!ENTITY trackingProtectionPBMLearnMore.label "詳細資訊">
@@ -51,6 +51,15 @@
 
 <!ENTITY  acceptThirdParty2.pre.label     "接受來自第三方的 Cookie">
 <!ENTITY  acceptThirdParty2.pre.accesskey "y">
+
+<!ENTITY  acceptCookies3.label          "接受網站設定的 Cookie 與網站資料">
+<!ENTITY  acceptCookies3.accesskey      "A">
+
+<!ENTITY  blockCookies.label            "封鎖 Cookie 與網站資料（可能會造成某些網站運作不正常）">
+<!ENTITY  blockCookies.accesskey        "B">
+
+<!ENTITY  acceptThirdParty3.pre.label     "接受第三方 Cookie 與網站資料">
+<!ENTITY  acceptThirdParty3.pre.accesskey "y">
 <!ENTITY  acceptThirdParty.always.label   "總是">
 <!ENTITY  acceptThirdParty.never.label    "永不">
 <!ENTITY  acceptThirdParty.visited.label  "造訪過的網站">
@@ -92,6 +101,9 @@
 <!ENTITY  dontrememberActions.pre.label          "您或許會想要 ">
 <!ENTITY  dontrememberActions.clearHistory.label "清除現存的歷史記錄">
 <!ENTITY  dontrememberActions.post.label         "。">
+
+<!ENTITY  clearHistoryButton.label       "清除瀏覽記錄…">
+<!ENTITY  clearHistoryButton.accesskey   "s">
 
 <!ENTITY  privateBrowsingPermanent2.label "總是使用隱私瀏覽模式">
 <!ENTITY  privateBrowsingPermanent2.accesskey "p">

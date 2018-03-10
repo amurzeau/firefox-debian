@@ -39,6 +39,13 @@ available. -->
 
 <!ENTITY alwaysSubmitCrashReports1.label  "Odosielať Mozille správy o zlyhaní aplikácie &brandShortName;">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "c">
+
+<!ENTITY collectBrowserErrors.label          "Povoliť aplikácii &brandShortName; odosielať hlásenia o chybách prehliadača (vrátane textu správ o chybách) Mozille">
+<!ENTITY collectBrowserErrors.accesskey      "b">
+<!ENTITY collectBrowserErrorsLearnMore.label "Ďalšie informácie">
+
+<!ENTITY sendBackloggedCrashReports.label  "Povoliť prehliadaču &brandShortName; odosielať vo vašom mene správy o zlyhaní">
+<!ENTITY sendBackloggedCrashReports.accesskey "z">
 <!ENTITY crashReporterLearnMore.label    "Ďalšie informácie">
 
 <!ENTITY networkTab.label                "Sieť">
@@ -46,17 +53,20 @@ available. -->
 <!ENTITY networkProxy.label              "Nastavenie pripojenia">
 
 <!ENTITY connectionDesc.label            "Konfigurovať pripojenie aplikácie &brandShortName; k internetu">
+
+<!ENTITY connectionSettingsLearnMore.label "Ďalšie informácie">
 <!ENTITY connectionSettings.label        "Nastavenia…">
 <!ENTITY connectionSettings.accesskey    "N">
 
 <!ENTITY httpCache.label                 "Webový obsah vo vyrovnávacej pamäti">
 
-<!ENTITY offlineStorage2.label           "Používateľské údaje a webový obsah režimu offline">
-
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "Údaje stránok">
 <!ENTITY clearSiteData.label             "Vymazať všetky údaje">
 <!ENTITY clearSiteData.accesskey         "m">
+<!ENTITY siteData1.label                 "Cookies a údaje stránok">
+<!ENTITY clearSiteData1.label            "Vymazať údaje…">
+<!ENTITY clearSiteData1.accesskey        "m">
 <!ENTITY siteDataSettings.label          "Nastavenia…">
 <!ENTITY siteDataSettings.accesskey      "i">
 <!ENTITY siteDataLearnMoreLink.label     "Ďalšie informácie">
@@ -72,8 +82,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MB diskového priestoru">
 <!ENTITY clearCacheNow.label             "Vymazať teraz">
 <!ENTITY clearCacheNow.accesskey         "e">
-<!ENTITY clearOfflineAppCacheNow.label   "Vymazať teraz">
-<!ENTITY clearOfflineAppCacheNow.accesskey "m">
 <!ENTITY overrideSmartCacheSize.label    "Vlastné nastavenie vyrovnávacej pamäte">
 <!ENTITY overrideSmartCacheSize.accesskey "a">
 
@@ -110,17 +118,6 @@ available. -->
 
 <!ENTITY enableSearchUpdate2.label       "Automaticky aktualizovať vyhľadávacie moduly">
 <!ENTITY enableSearchUpdate2.accesskey   "e">
-
-<!ENTITY offlineStorageNotify.label               "Upozorniť, ak chce stránka uložiť údaje na použitie v režime offline">
-<!ENTITY offlineStorageNotify.accesskey           "U">
-<!ENTITY offlineStorageNotifyExceptions.label     "Výnimky…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "V">
-
-<!ENTITY offlineAppsList3.label          "Tieto webové stránky môžu ukladať údaje na použitie v režime offline">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "Odstrániť…">
-<!ENTITY offlineAppsListRemove.accesskey "O">
-<!ENTITY offlineAppRemove.confirm        "Odstránenie údajov pre režim offline">
 
 <!ENTITY certificateTab.label            "Certifikáty">
 <!ENTITY certPersonal2.description       "Pokiaľ server požaduje môj osobný certifikát">

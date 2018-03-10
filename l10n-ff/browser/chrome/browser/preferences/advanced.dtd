@@ -16,7 +16,7 @@
 <!ENTITY browsing.label                  "Nana feeroo">
 
 <!ENTITY useAutoScroll.label             "Huutoro ŋaylogol jaajol">
-<!ENTITY useAutoScroll.accesskey         "j">
+<!ENTITY useAutoScroll.accesskey         "a">
 <!ENTITY useSmoothScrolling.label        "Huutoro woragol teeyngol">
 <!ENTITY useSmoothScrolling.accesskey    "t">
 <!ENTITY checkUserSpelling.label         "Ƴeewto mbinndiin am so miɗo tappa">
@@ -39,6 +39,13 @@ available. -->
 
 <!ENTITY alwaysSubmitCrashReports1.label  "Yamir &brandShortName; yo neldu jaŋte kooke e Moɗilla">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "c">
+
+<!ENTITY collectBrowserErrors.label          "Yamir &brandShortName; yo neldu ciimti juume (yantude heen mesaasuuji juume) to Mozilla">
+<!ENTITY collectBrowserErrors.accesskey      "b">
+<!ENTITY collectBrowserErrorsLearnMore.label "Ɓeydu humpito">
+
+<!ENTITY sendBackloggedCrashReports.label  "Yamir &brandShortName; yo neldu jaŋte kooke leeltuɗe e innde maa">
+<!ENTITY sendBackloggedCrashReports.accesskey "c">
 <!ENTITY crashReporterLearnMore.label    "Jokku taro">
 
 <!ENTITY networkTab.label                "Laylaytol">
@@ -46,17 +53,20 @@ available. -->
 <!ENTITY networkProxy.label              "Proxy Laylaytol">
 
 <!ENTITY connectionDesc.label            "Teelto no &brandShortName; seŋortoo e Enternet">
+
+<!ENTITY connectionSettingsLearnMore.label "Ɓeydu humpito">
 <!ENTITY connectionSettings.label        "Teelte…">
 <!ENTITY connectionSettings.accesskey    "e">
 
 <!ENTITY httpCache.label                 "Loowdi Geese Kaasaandi">
 
-<!ENTITY offlineStorage2.label           "Loowdi Geese Ceŋtol e Keɓe Kuutoro">
-
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "Keɓe Lowre">
 <!ENTITY clearSiteData.label             "Momtu Keɓe ɗee Fof">
 <!ENTITY clearSiteData.accesskey         "o">
+<!ENTITY siteData1.label                 "Kuukiije kam e Keɓe Lowre">
+<!ENTITY clearSiteData1.label            "Momtu Keɓe…">
+<!ENTITY clearSiteData1.accesskey        "l">
 <!ENTITY siteDataSettings.label          "Teelte… ">
 <!ENTITY siteDataSettings.accesskey      "e">
 <!ENTITY siteDataLearnMoreLink.label     "Jokku taro">
@@ -72,8 +82,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MB boowal mbeɗu">
 <!ENTITY clearCacheNow.label             "Momtu Jooni">
 <!ENTITY clearCacheNow.accesskey         "M">
-<!ENTITY clearOfflineAppCacheNow.label   "Momtu Jooni">
-<!ENTITY clearOfflineAppCacheNow.accesskey "J">
 <!ENTITY overrideSmartCacheSize.label    "Fawtoro toppitagol kaasol jaajol">
 <!ENTITY overrideSmartCacheSize.accesskey "F">
 
@@ -110,17 +118,6 @@ available. -->
 
 <!ENTITY enableSearchUpdate2.label       "Kesɗitingol ajaaja jiylorɗe">
 <!ENTITY enableSearchUpdate2.accesskey   "l">
-
-<!ENTITY offlineStorageNotify.label               "&amp;Haalan mo so lowre geese naamniima mooftude keɓe ngam huutoreede e ceŋtol">
-<!ENTITY offlineStorageNotify.accesskey           "g">
-<!ENTITY offlineStorageNotifyExceptions.label     "Paltooje…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "l">
-
-<!ENTITY offlineAppsList3.label          "Ɗee lowe ena njamiraa resde keɓe ngam huutoraade e ceŋtol">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "Ittu…">
-<!ENTITY offlineAppsListRemove.accesskey "I">
-<!ENTITY offlineAppRemove.confirm        "Momtu keɓe ceŋtol ɗee">
 
 <!ENTITY certificateTab.label            "Seedamfaaji">
 <!ENTITY certPersonal2.description       "So sarworde ɗaɓɓii seedamfaagu maa keeriingu:">

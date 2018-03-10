@@ -6,7 +6,7 @@
 
 <!ENTITY generalTab.label                "Genel">
 
-<!ENTITY useCursorNavigation.label       "Sayfaların içinde hareket ederken her zaman işaretçi tuşlarını kullan">
+<!ENTITY useCursorNavigation.label       "Sayfaların içinde hareket etmek için her zaman ok tuşlarını kullan">
 <!ENTITY useCursorNavigation.accesskey   "S">
 <!ENTITY searchOnStartTyping.label       "Yazmaya başlar başlamaz arama yap">
 <!ENTITY searchOnStartTyping.accesskey   "z">
@@ -39,6 +39,11 @@ available. -->
 
 <!ENTITY alwaysSubmitCrashReports1.label  "&brandShortName;, çökme raporlarımı Mozilla’ya gönderebilir">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "ö">
+
+<!ENTITY collectBrowserErrors.label          "&brandShortName;, tarayıcı hata raporlarını (hata mesajları da dahil olmak üzere) Mozilla’ya gönderebilir">
+<!ENTITY collectBrowserErrors.accesskey      "t">
+<!ENTITY collectBrowserErrorsLearnMore.label "Daha fazla bilgi al">
+
 <!ENTITY crashReporterLearnMore.label    "Daha fazla bilgi al">
 
 <!ENTITY networkTab.label                "Ağ">
@@ -46,12 +51,12 @@ available. -->
 <!ENTITY networkProxy.label              "Ağ vekil sunucusu">
 
 <!ENTITY connectionDesc.label            "&brandShortName; tarayıcısının internete nasıl bağlanacağını ayarlayın">
+
+<!ENTITY connectionSettingsLearnMore.label "Daha fazla bilgi al">
 <!ENTITY connectionSettings.label        "Ayarlar…">
 <!ENTITY connectionSettings.accesskey    "A">
 
 <!ENTITY httpCache.label                 "Önbelleğe alınmış web içeriği">
-
-<!ENTITY offlineStorage2.label           "Çevrimdışı web içeriği ve kullanıcı verileri">
 
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "Site verileri">
@@ -72,8 +77,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MB ile sınırla">
 <!ENTITY clearCacheNow.label             "Şimdi temizle">
 <!ENTITY clearCacheNow.accesskey         "z">
-<!ENTITY clearOfflineAppCacheNow.label   "Şimdi temizle">
-<!ENTITY clearOfflineAppCacheNow.accesskey "t">
 <!ENTITY overrideSmartCacheSize.label    "Otomatik önbellek yönetimini devre dışı bırak">
 <!ENTITY overrideSmartCacheSize.accesskey "O">
 
@@ -110,17 +113,6 @@ available. -->
 
 <!ENTITY enableSearchUpdate2.label       "Arama motorlarını otomatik olarak güncelle">
 <!ENTITY enableSearchUpdate2.accesskey   "e">
-
-<!ENTITY offlineStorageNotify.label               "Bir site çevrimdışı kullanım için veri depolamak istediğinde bana bildir">
-<!ENTITY offlineStorageNotify.accesskey           "v">
-<!ENTITY offlineStorageNotifyExceptions.label     "İstisnalar…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "s">
-
-<!ENTITY offlineAppsList3.label          "Aşağıdaki web sitelerinin çevrimdışı kullanım için veri depolamasına izin verilmiştir">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "Sil…">
-<!ENTITY offlineAppsListRemove.accesskey "S">
-<!ENTITY offlineAppRemove.confirm        "Çevrimdışı verileri sil">
 
 <!ENTITY certificateTab.label            "Sertifikalar">
 <!ENTITY certPersonal2.description       "Bir sunucu kişisel sertifikamı istediğinde">

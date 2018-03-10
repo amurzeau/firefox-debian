@@ -24,6 +24,13 @@ This is likely the same like id.heading in crashes.dtd. -->
 <!ENTITY aboutSupport.extensionVersion "ვერსია">
 <!ENTITY aboutSupport.extensionId "ID">
 
+<!ENTITY aboutSupport.securitySoftwareTitle "უსაფრთხოების დაცვის პროგრამა">
+<!ENTITY aboutSupport.securitySoftwareType "სახეობა">
+<!ENTITY aboutSupport.securitySoftwareName "სახელი">
+<!ENTITY aboutSupport.securitySoftwareAntivirus "ანტივირუსი">
+<!ENTITY aboutSupport.securitySoftwareAntiSpyware "ანტიჯაშუში">
+<!ENTITY aboutSupport.securitySoftwareFirewall "ქსელის ფარი">
+
 <!ENTITY aboutSupport.featuresTitle "&brandShortName; -ის შესაძლებლობები">
 <!ENTITY aboutSupport.featureName "სახელი">
 <!ENTITY aboutSupport.featureVersion "ვერსია">
@@ -110,7 +117,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.a11yActivated "მოქმედი">
 <!ENTITY aboutSupport.a11yForceDisabled "დამხმარე საშუალებების აკრძალვა">
 <!ENTITY aboutSupport.a11yHandlerUsed "გამოყენებულია ხელმისაწვდომი დამმუშავებელი">
-<!ENTITY aboutSupport.a11yInstantiator "დამხმარე Instantiator">
+<!ENTITY aboutSupport.a11yInstantiator "დამხმარე საშუალებების უზრუნველყოფა">
 
 <!ENTITY aboutSupport.libraryVersionsTitle "ბიბლიოთეკის ვერსიები">
 

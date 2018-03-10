@@ -39,6 +39,13 @@ available. -->
 
 <!ENTITY alwaysSubmitCrashReports1.label  "Aotren &brandShortName; da gas danevelloù sac'hadenn da vMozilla">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "A">
+
+<!ENTITY collectBrowserErrors.label          "Aotren &brandShortName; da gas danevelloù fazi merdeer (kemennadennoù fazi en o zouez) da vMozilla">
+<!ENTITY collectBrowserErrors.accesskey      "m">
+<!ENTITY collectBrowserErrorsLearnMore.label "Gouzout hiroc'h">
+
+<!ENTITY sendBackloggedCrashReports.label  "Aotren &brandShortName; da gas danevelloù sac'hadennoù enrollet evidoc'h">
+<!ENTITY sendBackloggedCrashReports.accesskey "d">
 <!ENTITY crashReporterLearnMore.label    "Gouzout hiroc'h">
 
 <!ENTITY networkTab.label                "Rouedad">
@@ -46,17 +53,20 @@ available. -->
 <!ENTITY networkProxy.label              "Proksi ar rouedad">
 
 <!ENTITY connectionDesc.label            "Kefluniañ penaos en em gennask &brandShortName; ouzh an Internet">
+
+<!ENTITY connectionSettingsLearnMore.label "Gouzout hiroc'h">
 <!ENTITY connectionSettings.label        "Arventennoù…">
 <!ENTITY connectionSettings.accesskey    "e">
 
 <!ENTITY httpCache.label                 "Krubuilh an endalc'had Web">
 
-<!ENTITY offlineStorage2.label           "Endalc'had Web ezlinenn ha roadennoù an arveriad">
-
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "Roadennoù al lec'hienn">
 <!ENTITY clearSiteData.label             "Skarzhañ an holl roadennoù">
 <!ENTITY clearSiteData.accesskey         "S">
+<!ENTITY siteData1.label                 "Toupinoù ha roadennoù lec'hienn">
+<!ENTITY clearSiteData1.label            "Skarzhañ ar roadennoù…">
+<!ENTITY clearSiteData1.accesskey        "S">
 <!ENTITY siteDataSettings.label          "Arventennoù…">
 <!ENTITY siteDataSettings.accesskey      "e">
 <!ENTITY siteDataLearnMoreLink.label     "Gouzout hiroc'h">
@@ -72,8 +82,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "Me egor">
 <!ENTITY clearCacheNow.label             "Skarzhañ bremañ">
 <!ENTITY clearCacheNow.accesskey         "k">
-<!ENTITY clearOfflineAppCacheNow.label   "Skarzhañ bremañ">
-<!ENTITY clearOfflineAppCacheNow.accesskey "b">
 <!ENTITY overrideSmartCacheSize.label    "Tremen dreist ardeiñ emgefreek ar grubuilh">
 <!ENTITY overrideSmartCacheSize.accesskey "T">
 
@@ -110,17 +118,6 @@ available. -->
 
 <!ENTITY enableSearchUpdate2.label       "Hizivaat al luskerioù enklask ent emgefreek">
 <!ENTITY enableSearchUpdate2.accesskey   "H">
-
-<!ENTITY offlineStorageNotify.label               "Lavarout din pa vez goulennet gant ul lec'hienn mirout roadennoù evit un arver ezlinenn">
-<!ENTITY offlineStorageNotify.accesskey           "a">
-<!ENTITY offlineStorageNotifyExceptions.label     "Nemedennoù…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "m">
-
-<!ENTITY offlineAppsList3.label          "Al lec'hiennoù da heul a zo aotreet da gadaviñ evit un arver ezlinenn">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "Dilemel…">
-<!ENTITY offlineAppsListRemove.accesskey "D">
-<!ENTITY offlineAppRemove.confirm        "Dilemel ar roadennoù ezlinenn">
 
 <!ENTITY certificateTab.label            "Testenioù">
 <!ENTITY certPersonal2.description       "Pa vez goulennet ho testeni personel gant un dafariad">

@@ -51,6 +51,7 @@ can reach it easily. -->
 <!ENTITY  sendLinkToDevice.label	"リンクを端末へ送信">
 <!ENTITY  sendLinkToDevice.accesskey	"n">
 <!ENTITY  sendToDeviceFeedback.label	"送信しました">
+<!ENTITY  sendToDeviceOfflineFeedback.label	"送信を予約しました (オフライン)">
 <!ENTITY  moveToNewWindow.label		"新しいウィンドウへ移動">
 <!ENTITY  moveToNewWindow.accesskey	"W">
 <!ENTITY  bookmarkAllTabs.label		"すべてのタブをブックマーク...">
@@ -188,13 +189,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hideRecentlyBookmarked.accesskey	"H">
 
 <!ENTITY backCmd.label				"戻る">
+<!ENTITY backCmd.accesskey			"B">
 <!ENTITY backButton.tooltip			"前のページへ戻ります">
 <!ENTITY forwardCmd.label			"進む">
+<!ENTITY forwardCmd.accesskey			"F">
 <!ENTITY forwardButton.tooltip			"次のページへ進みます">
 <!ENTITY backForwardButtonMenu.tooltip		"右クリック、または長押しで履歴を表示します">
 <!ENTITY backForwardButtonMenuMac.tooltip	"長押しで履歴を表示します">
 <!ENTITY reloadCmd.label			"更新">
+<!ENTITY reloadCmd.accesskey			"R">
 <!ENTITY stopCmd.label				"中止">
+<!ENTITY stopCmd.accesskey			"S">
 <!ENTITY stopCmd.macCommandKey			".">
 <!ENTITY goEndCap.tooltip			"アドレスバーに入力された URL へ移動します">
 <!ENTITY printButton.label			"印刷">
@@ -226,11 +231,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.microphoneBlocked.tooltip		"このウェブサイトでのマイクの共有をブロックしました。">
 <!ENTITY urlbar.screenBlocked.tooltip			"このウェブサイトでの画面の共有をブロックしました。">
 <!ENTITY urlbar.geolocationBlocked.tooltip		"このウェブサイトでの位置情報の共有をブロックしました。">
-<!ENTITY urlbar.indexedDBBlocked.tooltip		"このウェブサイトのデータストレージの使用をブロックしました。">
 <!ENTITY urlbar.webNotificationsBlocked.tooltip		"このウェブサイトからの通知をブロックしました。">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip	"このウェブサイトの永続ストレージの使用をブロックしました。">
-
 <!ENTITY urlbar.popupBlocked.tooltip			"このウェブサイトのポップアップをブロックしました。">
+
+<!ENTITY urlbar.canvasBlocked.tooltip			"このウェブサイトの Canvas データの抽出をブロックしました。">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip		"履歴を表示します">
 
@@ -296,7 +301,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY newNavigatorCmd.accesskey	"N">
 <!ENTITY newPrivateWindow.label		"新しいプライベートウィンドウ">
 <!ENTITY newPrivateWindow.accesskey	"W">
-<!ENTITY newNonRemoteWindow.label	"新しいシングルプロセスウィンドウ">
 
 <!ENTITY editMenu.label			"編集">
 <!ENTITY editMenu.accesskey		"E">
@@ -351,18 +355,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllHistoryCmd2.label		"すべての履歴を表示"><!-- (^^; -->
 <!ENTITY showAllHistoryCmd.commandkey		"H">
 
-<!ENTITY appMenuCustomize.label			"カスタマイズ">
-<!ENTITY appMenuCustomize.tooltip		"メニューとツールバーをカスタマイズします">
-<!ENTITY appMenuCustomizeExit.label		"カスタマイズを終了">
-<!ENTITY appMenuCustomizeExit.tooltip		"カスタマイズを完了します">
-
 <!ENTITY appMenuHistory.showAll.label		"すべての履歴を表示">
 <!ENTITY appMenuHistory.clearRecent.label	"最近の履歴を消去...">
 <!ENTITY appMenuHistory.restoreSession.label	"以前のセッションを復元">
 <!ENTITY appMenuHistory.viewSidebar.label	"履歴サイドバーを表示">
 <!ENTITY appMenuHistory.recentHistory.label	"最近の履歴">
 <!ENTITY appMenuHelp.label			"ヘルプ">
-<!ENTITY appMenuHelp.tooltip			"ヘルプメニューを開きます">
 
 <!ENTITY appMenuRemoteTabs.label		"同期タブ">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.notabs.label): This is shown beneath
@@ -386,9 +384,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle	"他の端末のタブを表示しますか？">
 <!ENTITY appMenuRemoteTabs.openprefs.label	"Sync の設定">
 <!ENTITY appMenuRemoteTabs.notsignedin.label	"ログインして、他の端末のタブ一覧を表示する。">
-<!ENTITY appMenuRemoteTabs.managedevices.label	"端末の管理...">
+<!ENTITY appMenuRemoteTabs.unverified.label	"あなたのアカウントは検証する必要があります。">
 <!ENTITY appMenuRemoteTabs.signin.label		"Sync にログイン">
+<!ENTITY appMenuRemoteTabs.managedevices.label	"端末の管理...">
 <!ENTITY appMenuRemoteTabs.sidebar.label	"同期タブサイドバーを表示">
+
+<!ENTITY appMenuRemoteTabs.connectdevice.label	"他の端末を接続">
 
 <!ENTITY appMenuRecentHighlights.label		"最近のハイライト">
 
@@ -434,14 +435,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label			"拡張機能:">
 <!ENTITY urlbar.switchToTab.label		"タブを表示:">
-
-<!ENTITY urlbar.searchSuggestionsNotification.question			"検索候補を表示して検索機能を向上させますか？">
-<!ENTITY urlbar.searchSuggestionsNotification.learnMore			"詳細情報...">
-<!ENTITY urlbar.searchSuggestionsNotification.learnMore.accesskey	"l">
-<!ENTITY urlbar.searchSuggestionsNotification.disable			"いいえ">
-<!ENTITY urlbar.searchSuggestionsNotification.disable.accesskey		"n">
-<!ENTITY urlbar.searchSuggestionsNotification.enable			"はい">
-<!ENTITY urlbar.searchSuggestionsNotification.enable.accesskey		"y">
 
 <!-- LOCALIZATION NOTE (urlbar.searchSuggestionsNotification.hintPrefix): Shown just before the suggestions opt-out hint. -->
 <!ENTITY urlbar.searchSuggestionsNotification.hintPrefix			"ヒント:">
@@ -565,6 +558,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY setDesktopBackgroundCmd.label		"デスクトップの背景に設定...">
 <!ENTITY setDesktopBackgroundCmd.accesskey	"S">
 <!ENTITY bookmarkPageCmd2.label			"このページをブックマーク">
+<!ENTITY bookmarkPageCmd2.accesskey		"m">
 <!ENTITY bookmarkThisLinkCmd.label		"このリンクをブックマーク">
 <!ENTITY bookmarkThisLinkCmd.accesskey		"L">
 <!ENTITY bookmarkThisFrameCmd.label		"このフレームをブックマーク">
@@ -719,8 +713,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageStylePersistentOnly.label		"標準スタイルシート">
 <!ENTITY pageStylePersistentOnly.accesskey	"b">
 
-<!ENTITY pageReportIcon.tooltip		"このウェブサイトでのポップアップブロック設定を変更します">
-
 <!ENTITY allowPopups.accesskey		"p">
 <!-- On Windows we use the term "Options" to describe settings, but
      on Linux and Mac OS X we use "Preferences" - carry that distinction
@@ -808,12 +800,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncedTabs.sidebar.noclients.title	"同期タブはまだありません">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle	"他の端末のタブを表示しますか？">
 <!ENTITY syncedTabs.sidebar.notsignedin.label	"ログインすると、他の端末のタブの一覧を表示できます。">
+<!ENTITY syncedTabs.sidebar.unverified.label	"あなたのアカウントは検証する必要があります。">
 <!ENTITY syncedTabs.sidebar.notabs.label	"表示タブなし">
 <!ENTITY syncedTabs.sidebar.openprefs.label	"&syncBrand.shortName.label; の設定を開く">
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label	"タブの同期をオンにすると、他の端末のタブの一覧を表示できます。">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder	"同期したタブを検索">
+
+<!ENTITY syncedTabs.sidebar.connectAnotherDevice	"他の端末を接続">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
                         syncedTabs.context.openAllInTabs.accesskey):
@@ -849,8 +844,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncToolbarButton.label		"Sync">
 
 <!ENTITY customizeMode.menuAndToolbars.header3		"お気に入りのアイテムをツールバーやオーバーフローメニューにドラッグしてください。">
-<!ENTITY customizeMode.menuAndToolbars.empty		"その他のツールを入手">
-<!ENTITY customizeMode.menuAndToolbars.emptyLink	"たくさんのアドオンから選ぶ">
 <!ENTITY customizeMode.restoreDefaults			"初期設定に戻す">
 <!ENTITY customizeMode.done				"完了">
 <!ENTITY customizeMode.titlebar				"タイトルバー">
@@ -863,7 +856,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.lwthemes.menuManage.accessKey	"M">
 <!ENTITY customizeMode.lwthemes.menuGetMore		"その他のテーマを入手">
 <!ENTITY customizeMode.lwthemes.menuGetMore.accessKey	"G">
-<!ENTITY customizeMode.emptyOverflowList.description	"ここにアイテムをドラッグアンドドロップすると、ツールバー外の手の届くところに置いておけます...">
 <!ENTITY customizeMode.overflowList.title2		"オーバーフローメニュー">
 <!ENTITY customizeMode.overflowList.description		"ここにアイテムをドラッグアンドドロップすると、ツールバー外の手の届くところに置いておけます...">
 <!ENTITY customizeMode.uidensity			"UI 密度">
@@ -983,6 +975,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.label	"後で">
 <!ENTITY updateRestart.cancelButton.accesskey	"N">
 <!ENTITY updateRestart.panelUI.label2		"再起動して &brandShorterName; を更新">
+
+<!ENTITY newTabControlled.message			"拡張機能が新しいタブを開いたときのページを変更しています。この変更が望ましくない場合は、設定を元に戻すことができます。">
+<!ENTITY newTabControlled.header.message		"新しいタブが変更されました。">
+<!ENTITY newTabControlled.keepButton.label		"変更を維持する">
+<!ENTITY newTabControlled.keepButton.accesskey		"K">
+<!ENTITY newTabControlled.restoreButton.label		"設定を元に戻す">
+<!ENTITY newTabControlled.restoreButton.accesskey	"R">
 
 <!ENTITY pageActionButton.tooltip		"ページ操作">
 <!ENTITY pageAction.addToUrlbar.label		"アドレスバーに追加">

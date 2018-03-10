@@ -44,7 +44,9 @@
 <!ENTITY aboutTelemetry.capturedStacksSection "
   పట్టుబడిన స్టాక్స్">
 <!ENTITY aboutTelemetry.lateWritesSection "లేట్ వ్రైట్స్">
+<!ENTITY aboutTelemetry.rawPayloadSection "ముడి పేలోడు">
 <!ENTITY aboutTelemetry.raw "ముడి JSON">
 
 <!ENTITY aboutTelemetry.fullSqlWarning "గమనిక: నిదానమైన SQL డీబగ్గింగ్ చేతనమైంది. పూర్తి SQL స్ట్రింగ్స్ కిందన ప్రదర్శించవచ్చు అయితే అవి టెలీమెట్రీకు సమర్పించబడవు.">
 <!ENTITY aboutTelemetry.fetchStackSymbols "స్టాక్స్ కొరకు ఫంక్షన్ పేర్లను వెతికితెమ్ము">
+<!ENTITY aboutTelemetry.hideStackSymbols "ముడి స్టాక్ డేటాను చూపించు">

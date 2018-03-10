@@ -2,6 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
+<!ENTITY autoconfigWizard2.title         "არსებული ელფოსტის ანგარიშის გამართვა">
 <!ENTITY name.label                      "თქვენი სახელი:">
 <!ENTITY name.accesskey                  "n">
 <!ENTITY name.placeholder                "სახელი გვარი">
@@ -18,7 +19,7 @@
 <!ENTITY rememberPassword.label          "პაროლის დამახსოვრება">
 <!ENTITY rememberPassword.accesskey      "m">
 
-<!ENTITY imapLong.label                  "IMAP (გარე დასტები)">
+<!ENTITY imapLong.label                  "IMAP (ვებსაქაღალდეები)">
 <!ENTITY pop3Long.label                  "POP3 (ფოსტის შენახვა თქვენს კომპიუტერში)">
 
 <!ENTITY incoming.label                  "შემომავალი:">
@@ -54,6 +55,8 @@
 <!ENTITY half-manual-test.accesskey      "t">
 <!ENTITY manual-edit.label               "ხელით გამართვა">
 <!ENTITY manual-edit.accesskey           "M">
+<!ENTITY open-provisioner.label          "ელფოსტის ახალი მისამართის მიღება…">
+<!ENTITY open-provisioner.accesskey      "რ">
 
 
 <!ENTITY warning.label                   "გაფრთხილება!">
