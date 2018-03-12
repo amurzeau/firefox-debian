@@ -2688,3 +2688,11 @@ void MacroAssembler::atomicEffectOpJS(Scalar::Type arrayType,
 }
 
 //}}} check_macroassembler_style
+
+// ========================================================================
+// Spectre Mitigations.
+
+void MacroAssembler::speculationBarrier()
+{
+  MOZ_CRASH();
+}
