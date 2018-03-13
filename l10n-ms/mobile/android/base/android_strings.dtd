@@ -454,6 +454,7 @@
 <!ENTITY share_image_failed "Imej tidak berjaya dikongsi">
 <!ENTITY save_as_pdf "Simpan sebagai PDF">
 <!ENTITY print "Cetak">
+<!ENTITY view_page_source "Papar Sumber Halaman">
 <!ENTITY find_in_page "Cari dalam halaman">
 <!ENTITY desktop_mode "Pinta laman desktop">
 <!ENTITY page "Halaman">
@@ -485,7 +486,6 @@
 <!ENTITY contextmenu_open_new_tab "Buka dalam Tab Baru">
 <!ENTITY contextmenu_open_private_tab "Buka dalam Tab Peribadi">
 <!ENTITY contextmenu_remove "Buang">
-<!ENTITY contextmenu_add_to_launcher "Tambah ke Skrin Utama">
 <!ENTITY contextmenu_add_page_shortcut "Tambah Pintasan Halaman">
 <!ENTITY contextmenu_set_as_homepage "Tetapkan sebagai Halaman Utama">
 <!ENTITY contextmenu_share "Kongsi">
@@ -497,7 +497,7 @@
 <!ENTITY contextmenu_site_settings "Edit Tetapan Laman">
 <!ENTITY contextmenu_top_sites_edit "Edit">
 <!ENTITY contextmenu_top_sites_pin "Pin Laman">
-<!ENTITY contextmenu_top_sites_unpin "Nyahpin Laman">
+<!ENTITY contextmenu_top_sites_unpin "Buang Pin Laman">
 <!-- Localization note (contextmenu_pin_to_top_sites, contextmenu_unpin_from_top_sites): These strings are used to
      pin/unpin items from top sites when the user is not on the top sites screen so they'd be missing context on what
      just "Pin Site" or "Unpin Site" would mean. -->
@@ -540,7 +540,6 @@
      any page is removed frome about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "Halaman telah dibuang">
-
 <!ENTITY folder_removed "Folder dibuang">
 
 <!ENTITY bookmark_edit_title "Edit Tandabuku">
@@ -814,6 +813,9 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      replaced by the Android OS version (e.g., 14)-->
 <!ENTITY unsupported_sdk_version "Maaf! &brandShortName; tidak dapat berfungsi pada peranti ini (&formatS1;, &formatS2;). Sila muat turun versi yang betul.">
 
+<!-- LOCALIZATION NOTE(corrupt_apk): This notification is shown if corruption has been detected on startup and the user has to reinstall Firefox -->
+<!ENTITY corrupt_apk "Tidak dapat membuka &brandShortName;. Sila pasang semula dan cuba lagi.">
+
 <!ENTITY eol_notification_title2 "&brandShortName; tidak akan ada kemaskini lagi">
 <!ENTITY eol_notification_summary "Tap untuk ketahui selanjutnya">
 
@@ -821,8 +823,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      are used for a system notification that's shown to users after the app updates. -->
 <!ENTITY whatsnew_notification_title "&brandShortName; sudah terkini">
 <!ENTITY whatsnew_notification_summary "Ketahui berita terbaru versi ini">
-
-<!ENTITY promotion_add_to_homescreen "Tambah ke skrin utama">
 
 <!ENTITY promotion_add_page_shortcut "Tambah pintasan halaman">
 

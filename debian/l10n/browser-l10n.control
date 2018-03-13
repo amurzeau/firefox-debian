@@ -229,6 +229,11 @@
 %undef L10N_RECOMMENDS
 %include @PRODUCT@-l10n.control.in
 
+%define L10N_LANG ia
+%define L10N_LANGUAGE Interlingua
+%undef L10N_RECOMMENDS
+%include @PRODUCT@-l10n.control.in
+
 %define L10N_LANG id
 %define L10N_LANGUAGE Indonesian
 %undef L10N_RECOMMENDS

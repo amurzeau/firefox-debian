@@ -9,14 +9,25 @@
 <!ENTITY itemCertificates.label  "Taq ruwujil b'i'aj">
 
 <!-- General Settings -->
+<!ENTITY enableGlodaSearch.label       "Titzij Cholajin chuqa' Chijun Kanoxïk">
+<!ENTITY enableGlodaSearch.accesskey   "C">
+<!ENTITY dateTimeFormatting.label      "Rub'anikil Q'ijul chuqa' Ramaj">
 <!ENTITY allowHWAccel.label            "Tokisäx rupararexik ch'akulakem toq xtiwachin pe">
 <!ENTITY allowHWAccel.accesskey        "c">
+<!ENTITY storeType.label               "Ruwäch Ruyakoj Tzijol kichin k'ak'a' kib'i' taqoya'l:">
+<!ENTITY storeType.accesskey           "R">
+<!ENTITY mboxStore2.label              "Yakb'äl chi yakwuj (mbox)">
+<!ENTITY maildirStore.label            "Jun yakb'äl chi rutzijol (maildir)">
 
+<!ENTITY scrolling.label               "Q'axanem">
 <!ENTITY useAutoScroll.label           "Tokisäx ruyonil rusiloxik">
 <!ENTITY useAutoScroll.accesskey       "T">
 <!ENTITY useSmoothScrolling.label      "Tokisäx jeb'ël q'axanïk">
 <!ENTITY useSmoothScrolling.accesskey  "j">
 
+<!ENTITY systemIntegration.label       "Q'inoj Tunuj">
+<!ENTITY alwaysCheckDefault.label      "Junelïk tinik'öx we ri &brandShortName; ja ri' ri ruwinaqil taqoya'l k'o wi toq nitikirisäx">
+<!ENTITY alwaysCheckDefault.accesskey  "J">
 <!ENTITY searchIntegration.label       "Tiya' q'ij chi re &searchIntegration.engineName; richin yerukanoj taq tzijol">
 <!ENTITY searchIntegration.accesskey   "S">
 <!ENTITY checkDefaultsNow.label        "Tinik'öx Wakami…">
@@ -24,14 +35,21 @@
 <!ENTITY configEditDesc.label          "Q'axinäq Nuk'ulem">
 <!ENTITY configEdit.label              "Tib'an runuk'ulem ri Nuk'unel…">
 <!ENTITY configEdit.accesskey          "r">
+<!ENTITY returnReceiptsInfo.label      "Tijikib'äx rub'eyal ri &brandShortName; yerusamajij ri kiwujil ajil">
+<!ENTITY showReturnReceipts.label      "Tzolin taq Wujil…">
+<!ENTITY showReturnReceipts.accesskey  "T">
 
 <!-- Data Choices -->
 <!ENTITY telemetrySection.label          "Etataqonel">
+<!ENTITY telemetryDesc.label             "Takomonij ri na'oj pa ruwi' rub'eyal nisamäj, ri rokisaxik, ch'akulakem chuqa' richinaxik ruwinaqil taqoya'l rik'in &vendorShortName; richin chi ri &brandShortName; nel ütz">
 <!ENTITY enableTelemetry.label           "Titzij Telemetry">
 <!ENTITY enableTelemetry.accesskey       "T">
 <!ENTITY telemetryLearnMore.label        "Tetamäx Ch'aqa' Chik">
 
 <!ENTITY crashReporterSection.label      "Rutzijol Sachoj">
+<!ENTITY crashReporterDesc.label         "&brandShortName; yerutäq kitzijol taq sachoj richin nuto' &vendorShortName; chi nub'än jun raxinäq chuqa' ütz ruwinaqil ataqoya'l">
+<!ENTITY enableCrashReporter.label       "Titzij Rutzijol Sachoj">
+<!ENTITY enableCrashReporter.accesskey   "S">
 <!ENTITY crashReporterLearnMore.label    "Tetamäx Ch'aqa' Chik">
 
 <!-- Update -->
@@ -66,10 +84,13 @@
 <!ENTITY proxiesConfigure.label        "Tanuk'samajij ri rub'eyal nok ri &brandShortName; pa k'amaya'l">
 <!ENTITY connectionsInfo.caption       "Okem">
 <!ENTITY offlineInfo.caption           "Chupül">
+<!ENTITY offlineInfo.label             "Tib'an runuk'ulem rik'in chupül okem">
 <!ENTITY showOffline.label             "Chupül…">
 <!ENTITY showOffline.accesskey         "C">
 
 <!ENTITY Diskspace                       "Rupam Rujolom">
+<!ENTITY offlineCompactFolders.label     "Kesib' yakwuj toq yekol k'ïy">
+<!ENTITY offlineCompactFolders.accesskey "a">
 <!ENTITY offlineCompactFoldersMB.label   "MB chi ronojel">
 
 <!-- LOCALIZATION NOTE:
@@ -95,5 +116,7 @@
 <!ENTITY enableOCSP.label                "Rutzolixik rutzij ri OCSP peyon tzij, ri ruk'u'x taq samaj nikijikib'a' ri kutzil ri taq ruwujil rub'i'">
 <!ENTITY enableOCSP.accesskey            "R">
 
+<!ENTITY manageCertificates.label "Kenuk'samajiïx Kiwujil B'i'aj">
+<!ENTITY manageCertificates.accesskey "K">
 <!ENTITY viewSecurityDevices.label "Kokisaxel Jikomal">
 <!ENTITY viewSecurityDevices.accesskey "K">

@@ -90,7 +90,7 @@
 <!-- Localization note (certerror.introPara) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
-<!ENTITY certerror.introPara "Lo propietario de <span class='hostname'/> ha configurau a suya we incorrectament.  Pa protecher la suya información contra lo robo, &brandShortName; no s'ha connectau ta iste puesto web.">
+<!ENTITY certerror.introPara "Lo propietario de <span class='hostname'/> ha configurau incorrectament la suya web.  Pa protecher la suya información contra robo, &brandShortName; no s'ha connectau a iste puesto web.">
 
 <!ENTITY sharedLongDesc "<ul> <li>Lo puesto podría estar temporalment no disponible u masiau aqueferau. Torne a prebar-lo en bells momentos.</li> <li>Si no puede cargar garra pachina, comprebe a connexión de ret d'o suyo equipo.</li> <li>Si o suyo equipo u ret son protechius por un tallafuegos u proxy, asegure-se que o &brandShortName; tiene permiso ta accedir ta la web.</li> </ul>">
 
@@ -128,6 +128,9 @@ was trying to connect. -->
 <!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
      "NS_ERROR_NET_INADEQUATE_SECURITY". -->
 <!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> fa servir technolochía de seguranza que ye obsoleta y vulnerable debant d'un ataque. Un acatant podría revelar información que vusté creyeba segura. L'administrador d'o puesto web habrá de fixar lo servidor antes que vusté pueda vesitar lo puesto.</p><p>Codigo d'error: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
+
+<!ENTITY blockedByPolicyTemp.title "Pachina blocada">
+<!ENTITY blockedByPolicyTemp.longDesc "<p>Lo tuyo administrador ha desactivau l'acceso.</p>">
 
 <!ENTITY prefReset.longDesc "Pareix que los suyos achustes de seguranza de ret sigan la causa d'isto. Quiere restaurar los achustes por defecto?">
 <!ENTITY prefReset.label "Restaurar los achustes por defecto">

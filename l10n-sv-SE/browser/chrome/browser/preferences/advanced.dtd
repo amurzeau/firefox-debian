@@ -39,6 +39,13 @@ available. -->
 
 <!ENTITY alwaysSubmitCrashReports1.label  "Tillåt &brandShortName; att skicka kraschrapporter till Mozilla">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "k">
+
+<!ENTITY collectBrowserErrors.label          "Tillåt &brandShortName; att skicka felrapporter (inklusive felmeddelanden) till Mozilla">
+<!ENTITY collectBrowserErrors.accesskey      "f">
+<!ENTITY collectBrowserErrorsLearnMore.label "Läs mer">
+
+<!ENTITY sendBackloggedCrashReports.label  "Tillåt &brandShortName; att skicka eftersläpande kraschrapporter för din räkning">
+<!ENTITY sendBackloggedCrashReports.accesskey "c">
 <!ENTITY crashReporterLearnMore.label    "Läs mer">
 
 <!ENTITY networkTab.label                "Nätverk">
@@ -46,17 +53,20 @@ available. -->
 <!ENTITY networkProxy.label              "Nätverksproxy">
 
 <!ENTITY connectionDesc.label            "Ange hur &brandShortName; ansluter till Internet">
+
+<!ENTITY connectionSettingsLearnMore.label "Läs mer">
 <!ENTITY connectionSettings.label        "Inställningar…">
 <!ENTITY connectionSettings.accesskey    "n">
 
 <!ENTITY httpCache.label                 "Cachat webbinnehåll">
 
-<!ENTITY offlineStorage2.label           "Nedkopplad lagring av webbinnehåll och användardata">
-
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "Webbplatsdata">
 <!ENTITY clearSiteData.label             "Rensa all data">
-<!ENTITY clearSiteData.accesskey         "l">
+<!ENTITY clearSiteData.accesskey         "a">
+<!ENTITY siteData1.label                 "Kakor och webbplatsdata">
+<!ENTITY clearSiteData1.label            "Rensa data…">
+<!ENTITY clearSiteData1.accesskey        "R">
 <!ENTITY siteDataSettings.label          "Inställningar…">
 <!ENTITY siteDataSettings.accesskey      "n">
 <!ENTITY siteDataLearnMoreLink.label     "Läs mer">
@@ -72,8 +82,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MB">
 <!ENTITY clearCacheNow.label             "Rensa nu">
 <!ENTITY clearCacheNow.accesskey         "R">
-<!ENTITY clearOfflineAppCacheNow.label   "Rensa nu">
-<!ENTITY clearOfflineAppCacheNow.accesskey "e">
 <!ENTITY overrideSmartCacheSize.label    "Åsidosätt automatisk cachehantering">
 <!ENTITY overrideSmartCacheSize.accesskey "Å">
 
@@ -110,17 +118,6 @@ available. -->
 
 <!ENTITY enableSearchUpdate2.label       "Uppdatera automatiskt sökmotorer">
 <!ENTITY enableSearchUpdate2.accesskey   "m">
-
-<!ENTITY offlineStorageNotify.label               "Meddela mig när en webbplats vill lagra data vid nedkopplad användning">
-<!ENTITY offlineStorageNotify.accesskey           "M">
-<!ENTITY offlineStorageNotifyExceptions.label     "Undantag…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "n">
-
-<!ENTITY offlineAppsList3.label          "Följande webbplatser får lagra data för användning offline">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "Ta bort…">
-<!ENTITY offlineAppsListRemove.accesskey "T">
-<!ENTITY offlineAppRemove.confirm        "Ta bort lagrad data">
 
 <!ENTITY certificateTab.label            "Certifikat">
 <!ENTITY certPersonal2.description       "När en server begär ditt personliga certifikat">

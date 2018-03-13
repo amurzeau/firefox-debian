@@ -55,7 +55,7 @@
 <!-- Localization note: Shown in a snackbar when tab is loaded from cache while device was offline. -->
 <!ENTITY  tab_offline_version "Mostrando a versão offline">
 
-<!ENTITY  crash_reporter_title "&brandShortName; Crash Reporter">
+<!ENTITY  crash_reporter_title "Relator de travamentos do &brandShortName;">
 <!ENTITY  crash_message2 "O &brandShortName; teve um problema e travou. Suas abas serão listadas na página inicial do &brandShortName; quando reiniciar.">
 <!ENTITY  crash_send_report_message3 "Notificar a &vendorShortName; sobre este travamento para que eles possam corrigi-lo">
 <!ENTITY  crash_include_url2 "Incluir o endereço da página onde eu estava">
@@ -134,7 +134,7 @@
      &formatS; will be replaced with the title of the tab, as received from the
      web page. When audio is not playing in a tab, &formatS; will be used as
      the content description. -->
-<!ENTITY tab_title_prefix_is_playing_audio "Reproduzindo audio – &formatS;">
+<!ENTITY tab_title_prefix_is_playing_audio "Reproduzindo áudio – &formatS;">
 
 <!ENTITY settings "Configurações">
 <!ENTITY settings_title "Configurações">
@@ -176,7 +176,7 @@
 <!-- Localization note (overlay_no_synced_devices) : Used when the menu option
      to send a tab to a synced device is pressed and no other synced devices
      are found. -->
-<!ENTITY overlay_no_synced_devices "Nenhum dispositivo conectado a conta Firefox">
+<!ENTITY overlay_no_synced_devices "Nenhum dispositivo conectado à Conta Firefox">
 
 <!ENTITY pref_category_search3 "Pesquisa">
 <!ENTITY pref_category_search_summary2 "Adicionar, definir predefinição, mostrar sugestões">
@@ -290,7 +290,7 @@
      Instead of switching to the browser it appears as if the user stays in the third-party app.
      For more see: https://developer.chrome.com/multidevice/android/customtabs -->
 <!ENTITY pref_custom_tabs2 "Abas personalizadas">
-<!ENTITY pref_custom_tabs_summary4 "Permitir que as aplicações abram conteúdo da web em uma aba personalizada de carregamento rápido.">
+<!ENTITY pref_custom_tabs_summary4 "Permitir que as aplicações abram conteúdo da web em uma aba personalizada de carregamento rápido">
 
 <!-- Localization note (custom_tabs_menu_item_open_in): The variable is replaced by the name of
      default browser from user's preference, such as "Open in Firefox" -->
@@ -384,14 +384,14 @@
 <!ENTITY pref_private_data_downloadFiles2 "Downloads">
 <!ENTITY pref_private_data_syncedTabs "Abas sincronizadas">
 
-<!ENTITY pref_default_browser "Tornar navegador predefinido">
+<!ENTITY pref_default_browser "Tornar navegador padrão">
 <!ENTITY pref_default_browser_mozilla_support_tablet "Visitar o suporte da Mozilla">
 <!ENTITY pref_about_firefox "Sobre o &brandShortName;">
 <!ENTITY pref_vendor_faqs "Perguntas frequentes">
 <!ENTITY pref_vendor_feedback "Enviar opinião">
 
 <!ENTITY pref_dialog_set_default "Definir como predefinição">
-<!ENTITY pref_dialog_default "Predefinido">
+<!ENTITY pref_dialog_default "Padrão">
 <!ENTITY pref_dialog_remove "Remover">
 <!ENTITY pref_dialog_activitystream_header_content "Conteúdo adicional">
 <!ENTITY pref_dialog_activitystream_recentBookmarks "Favoritos recentes">
@@ -428,7 +428,7 @@
 <!ENTITY datareporting_crashreporter_summary "O &brandShortName; envia relatórios de travamento para ajudar a &vendorShortName; a tornar o navegador mais estável e seguro">
 <!-- Localization note (datareporting_crashreporter_title_short) : This string matches
      (crashReporterSection.label) in en-US/chrome/browser/preferences/advanced.dtd.-->
-<!ENTITY datareporting_crashreporter_title_short "Crash Reporter">
+<!ENTITY datareporting_crashreporter_title_short "Relator de travamentos">
 <!ENTITY datareporting_wifi_title2 "Serviço de localização da &vendorShortName;">
 <!ENTITY datareporting_wifi_geolocation_summary4 "Ajuda a &vendorShortName; a mapear o mundo! Compartilha a localização aproximada da rede sem fios e móvel do seu dispositivo para melhorar o nosso serviço de geolocalização.">
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
@@ -454,6 +454,7 @@
 <!ENTITY share_image_failed "Não foi possível compartilhar esta imagem">
 <!ENTITY save_as_pdf "Salvar como PDF">
 <!ENTITY print "Imprimir">
+<!ENTITY view_page_source "Ver código-fonte da página">
 <!ENTITY find_in_page "Localizar na página">
 <!ENTITY desktop_mode "Requisitar site para desktop">
 <!ENTITY page "Página">
@@ -485,7 +486,6 @@
 <!ENTITY contextmenu_open_new_tab "Abrir em uma nova aba">
 <!ENTITY contextmenu_open_private_tab "Abrir em uma aba privativa">
 <!ENTITY contextmenu_remove "Remover">
-<!ENTITY contextmenu_add_to_launcher "Adicionar à tela inicial">
 <!ENTITY contextmenu_add_page_shortcut "Adicionar atalho à página">
 <!ENTITY contextmenu_set_as_homepage "Definir como página inicial">
 <!ENTITY contextmenu_share "Compartilhar">
@@ -540,7 +540,6 @@
      any page is removed frome about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "Página removida">
-
 <!ENTITY folder_removed "Pasta removida">
 
 <!ENTITY bookmark_edit_title "Editar favorito">
@@ -814,6 +813,9 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      replaced by the Android OS version (e.g., 14)-->
 <!ENTITY unsupported_sdk_version "Desculpe! Este &brandShortName; não funciona neste dispositivo (&formatS1;, &formatS2;). Por favor, baixe a versão correta.">
 
+<!-- LOCALIZATION NOTE(corrupt_apk): This notification is shown if corruption has been detected on startup and the user has to reinstall Firefox -->
+<!ENTITY corrupt_apk "Não foi possível abrir o &brandShortName;. Reinstale e tente novamente.">
+
 <!ENTITY eol_notification_title2 "&brandShortName; não irá atualizar">
 <!ENTITY eol_notification_summary "Toque para saber mais">
 
@@ -821,8 +823,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      are used for a system notification that's shown to users after the app updates. -->
 <!ENTITY whatsnew_notification_title "O &brandShortName; está atualizado">
 <!ENTITY whatsnew_notification_summary "Descubra o que há de novo nesta versão">
-
-<!ENTITY promotion_add_to_homescreen "Adicionar à tela inicial">
 
 <!ENTITY promotion_add_page_shortcut "Adicionar atalho à página">
 

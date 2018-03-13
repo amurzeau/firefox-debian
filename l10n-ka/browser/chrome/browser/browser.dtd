@@ -111,6 +111,8 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 <!ENTITY pageInfoCmd.label "გვერდის მონაცემები">
 <!ENTITY pageInfoCmd.accesskey "ი">
 <!ENTITY pageInfoCmd.commandkey "i">
+<!ENTITY ldbCmd.label "განლაგების გამმართველი">
+<!ENTITY ldbCmd.accesskey "ნ">
 <!ENTITY mirrorTabCmd.label "ჩანართის გადაცემა">
 <!ENTITY mirrorTabCmd.accesskey "ს">
 <!-- LOCALIZATION NOTE (enterFullScreenCmd.label, exitFullScreenCmd.label):
@@ -125,6 +127,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "ყველა ჩანართის ჩვენება">
 <!ENTITY showAllTabsCmd.accesskey "ყ">
 <!ENTITY toggleReaderMode.key "R">
+
+<!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "&syncBrand.shortName.label; - შესვლა">
 <!ENTITY fxaSignedIn.tooltip "&syncBrand.shortName.label;-ის პარამეტრების გახსნა">
@@ -227,17 +231,19 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "გვერდის თარგმნის მართვა">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "DRM პროგრამის გამოყენების მართვა">
 
+<!ENTITY urlbar.midiNotificationAnchor.tooltip            "MIDI დაფის გახსნა">
+
 <!ENTITY urlbar.cameraBlocked.tooltip            "ამ საიტისთვის თქვენი კამერის გამოყენების უფლება შეზღუდული გაქვთ.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "ამ საიტისთვის თქვენი მიკროფონის გამოყენების უფლება შეზღუდული გაქვთ.">
 <!ENTITY urlbar.screenBlocked.tooltip            "ამ საიტისთვის თქვენი ეკრანის გაზიარების უფლება შეზღუდული გაქვთ.">
 <!ENTITY urlbar.geolocationBlocked.tooltip       "ამ საიტისთვის თქვენს მდებარეობაზე წვდომა შეზღუდული გაქვთ.">
-<!ENTITY urlbar.indexedDBBlocked.tooltip         "ამ საიტისთვის მონაცემების საცავის გამოყენების უფლება შეზღუდული გაქვთ.">
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "ამ საიტისთვის შეტყობინებების ჩვენების უფლება შეზღუდული გაქვთ.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "ამ საიტისთვის, მუდმივ მეხსიერებასთან წვდომა შეზღუდული გაქვთ.">
-
 <!ENTITY urlbar.popupBlocked.tooltip             "ამ საიტზე, ამომხტომი ფირნიშები შეზღუდული გაქვთ.">
 
 <!ENTITY urlbar.canvasBlocked.tooltip            "ამ საიტისთვის, გრაფიკული მონაცემების გამოსახვის უფლება შეზღუდული გაქვთ.">
+
+<!ENTITY urlbar.midiBlocked.tooltip              "ამ საიტისთვის MIDI წვდომის უფლება შეზღუდული გაქვთ.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "ისტორიის ჩვენება">
 
@@ -303,7 +309,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY newNavigatorCmd.accesskey      "ა">
 <!ENTITY newPrivateWindow.label     "ახალი პირადი ფანჯარა">
 <!ENTITY newPrivateWindow.accesskey "ფ">
-<!ENTITY newNonRemoteWindow.label   "ერთპროცესიანი ფანჯარა">
 
 <!ENTITY editMenu.label         "ჩასწორება">
 <!ENTITY editMenu.accesskey       "რ">
@@ -358,18 +363,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllHistoryCmd2.label "სრული ისტორიის ჩვენება">
 <!ENTITY showAllHistoryCmd.commandkey "H">
 
-<!ENTITY appMenuCustomize.label "მორგება">
-<!ENTITY appMenuCustomize.tooltip "მენიუს და ხელსაწყოთა ზოლების მორგება">
-<!ENTITY appMenuCustomizeExit.label "მორგებიდან გამოსვლა">
-<!ENTITY appMenuCustomizeExit.tooltip "მორგების დასრულება">
-
 <!ENTITY appMenuHistory.showAll.label "სრული ისტორიის ჩვენება">
 <!ENTITY appMenuHistory.clearRecent.label "უახლესი ისტორიის გასუფთავება…">
 <!ENTITY appMenuHistory.restoreSession.label "წინა სეანსის აღდგენა">
 <!ENTITY appMenuHistory.viewSidebar.label "ისტორიის გვერდითი ზოლის ჩვენება">
 <!ENTITY appMenuHistory.recentHistory.label "უახლესი ისტორია">
 <!ENTITY appMenuHelp.label "დახმარება">
-<!ENTITY appMenuHelp.tooltip "დახმარების მენიუს გახსნა">
 
 <!ENTITY appMenuRemoteTabs.label "დასინქრონებული ჩანართები">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.notabs.label): This is shown beneath
@@ -392,6 +391,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.title "დასინქრონებული ჩანართები არაა… ჯერ!">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "გსურთ სხვა მოწყობილობების ჩანართების აქ ნახვა?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "სინქრონიზაციის პარამეტრები">
+<!ENTITY appMenuRemoteTabs.opensyncprefs.label "სინქრონიზაციის პარამეტრები">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "შედით თქვენი სხვა მოწყობილობებიდან ჩანართების სიის სანახავად.">
 <!ENTITY appMenuRemoteTabs.unverified.label "თქვენი ანგარიში საჭიროებს დამოწმებას.">
 <!ENTITY appMenuRemoteTabs.signin.label "Sync-ში შესვლა">
@@ -444,14 +444,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "გაფართოება:">
 <!ENTITY urlbar.switchToTab.label     "გადასვლა დაფაზე:">
-
-<!ENTITY urlbar.searchSuggestionsNotification.question "გსურთ ძიების პროცესის შემოთავაზებებით გაუმჯობესება?">
-<!ENTITY urlbar.searchSuggestionsNotification.learnMore "ვრცლად…">
-<!ENTITY urlbar.searchSuggestionsNotification.learnMore.accesskey "გ">
-<!ENTITY urlbar.searchSuggestionsNotification.disable "არა">
-<!ENTITY urlbar.searchSuggestionsNotification.disable.accesskey "ა">
-<!ENTITY urlbar.searchSuggestionsNotification.enable "დიახ">
-<!ENTITY urlbar.searchSuggestionsNotification.enable.accesskey "დ">
 
 <!-- LOCALIZATION NOTE (urlbar.searchSuggestionsNotification.hintPrefix): Shown just before the suggestions opt-out hint. -->
 <!ENTITY urlbar.searchSuggestionsNotification.hintPrefix "რჩევა:">
@@ -714,7 +706,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY goForwardCmd.commandKey "]">
 <!ENTITY quitApplicationCmd.label       "გამოსვლა">
 <!ENTITY quitApplicationCmd.accesskey   "გ">
-<!ENTITY quitApplicationCmdMac2.label   "&brandShorterName;-იდან გამოსვლა">
+<!ENTITY quitApplicationCmdMac2.label   "&brandShorterName;-ის დახურვა">
 <!ENTITY quitApplicationCmd.key         "Q">
 
 <!ENTITY closeCmd.label                 "დახურვა">
@@ -729,8 +721,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageStyleNoStyle.accesskey "გ">
 <!ENTITY pageStylePersistentOnly.label "გვერდის ძირითადი სტილი">
 <!ENTITY pageStylePersistentOnly.accesskey "ძ">
-
-<!ENTITY pageReportIcon.tooltip            "ვებსაიტზე ამომხტარი ფირნიშების ამკრძალავი პარამეტრების შეცვლა">
 
 <!ENTITY allowPopups.accesskey "დ">
 <!-- On Windows we use the term "Options" to describe settings, but
@@ -863,8 +853,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncToolbarButton.label      "სინქრონიზაცია">
 
 <!ENTITY customizeMode.menuAndToolbars.header3 "გადმოიტანეთ რჩეული ელემენტები ხელსაწყოთა ზოლში ან ჩამოსაშლელ მენიუში.">
-<!ENTITY customizeMode.menuAndToolbars.empty "მეტი ხელსაწყო გსურთ?">
-<!ENTITY customizeMode.menuAndToolbars.emptyLink "აირჩიეთ სასურველი, ათასობით დამატებიდან">
 <!ENTITY customizeMode.restoreDefaults "ნაგულისხმევის აღდგენა">
 <!ENTITY customizeMode.done "მზადაა">
 <!ENTITY customizeMode.titlebar "სათაურის ზოლი">
@@ -877,7 +865,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.lwthemes.menuManage.accessKey "მ">
 <!ENTITY customizeMode.lwthemes.menuGetMore "მეტი გაფორმების მოძიება">
 <!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "ფ">
-<!ENTITY customizeMode.emptyOverflowList.description "გადმოიტანეთ და მოათავსეთ ელემენტები აქ, ხელსაწყოთა ზოლის გარეთ, მაგრამ ახლოს…">
 <!ENTITY customizeMode.overflowList.title2 "ჩამოსაშლელი მენიუ">
 <!ENTITY customizeMode.overflowList.description "გადმოიტანეთ და მოათავსეთ ელემენტები აქ, ხელსაწყოთა ზოლის გარეთ, მაგრამ ახლოს…">
 <!ENTITY customizeMode.uidensity "სიმჭიდროვე">
@@ -889,7 +876,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- LOCALIZATION NOTE (customizeMode.uidensity.menuCompact.*):
      “Compact” is displayed in the Customize screen, under the Density menu.
      It’s an adjective (Density -> Compact). -->
-<!ENTITY customizeMode.uidensity.menuCompact.label "მჭიდრო">
+<!ENTITY customizeMode.uidensity.menuCompact.label "შემჭიდროებული">
 <!ENTITY customizeMode.uidensity.menuCompact.tooltip "შემჭიდროებული">
 <!ENTITY customizeMode.uidensity.menuCompact.accessKey "ჭ">
 <!-- LOCALIZATION NOTE (customizeMode.uidensity.menuTouch.*):
@@ -1008,7 +995,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageActionButton.tooltip "ვებგვერდზე მოქმედებები">
 <!ENTITY pageAction.addToUrlbar.label "მისამართების ზოლში დამატება">
 <!ENTITY pageAction.removeFromUrlbar.label "მისამართების ზოლიდან ამოღება">
-
 <!ENTITY pageAction.allowInUrlbar.label "მისამართების ველში ჩვენება">
 <!ENTITY pageAction.disallowInUrlbar.label "მისამართების ველიდან ამოღება">
 <!ENTITY pageAction.manageExtension.label "გაფართოების მართვა…">
@@ -1023,3 +1009,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      used as a textual label for the indicator used by assistive technology
      users. -->
 <!ENTITY accessibilityIndicator.tooltip "დამხმარე საშუალებები ჩართულია">
+
+<!-- LOCALIZATION NOTE: (addonPostInstallMessage.label):
+     The first <image> tag is replaced with the icon for the add-ons menu.
+     The second <image> tag is replaced with the icon for the toolbar menu. -->
+<!ENTITY addonPostInstallMessage.label "მართეთ თქვენი დამატებები <image class='addon-addon-icon'/> ხატულაზე დაწკაპებით, <image class='addon-toolbar-icon'/> მენიუში.">

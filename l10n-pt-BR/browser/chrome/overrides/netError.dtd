@@ -46,7 +46,7 @@
 <!ENTITY generic.longDesc "<p>Algo impediu o &brandShortName; de carregar esta página.</p>">
 
 <!ENTITY captivePortal.title "Autenticar na rede">
-<!ENTITY captivePortal.longDesc2 "<p>Você deve se identificar nessa rede antes de poder acessar a Internet.</p>">
+<!ENTITY captivePortal.longDesc2 "<p>Você deve se autenticar nessa rede antes de poder acessar a Internet.</p>">
 
 <!ENTITY openPortalLoginPage.label2 "Abrir página de acesso a rede">
 
@@ -172,6 +172,9 @@ certificado.">
 <!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
      "NS_ERROR_NET_INADEQUATE_SECURITY". -->
 <!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> usa uma tecnologia de segurança que está ultrapassada e vulnerável a ataques. Um cracker poderia facilmente coletar informações enquanto você acreditava estar seguro. O administrador do website precisa consertar essa brecha no servidor antes de você poder visitar esse site.</p><p>Código de Erro: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
+
+<!ENTITY blockedByPolicyTemp.title "Página bloqueada">
+<!ENTITY blockedByPolicyTemp.longDesc "<p>O acesso foi desabilitado pelo seu administrador.</p>">
 
 <!ENTITY prefReset.longDesc "Parece que suas configurações de segurança de rede podem estar causando isso. Você quer restaurar as configurações padrão?">
 <!ENTITY prefReset.label "Restaurar configurações padrão">

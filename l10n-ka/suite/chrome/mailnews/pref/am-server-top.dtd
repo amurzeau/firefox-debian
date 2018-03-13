@@ -31,7 +31,7 @@
 <!ENTITY connectionSecurityType-1.label "STARTTLS, თუ მისაწვდომია">
 <!ENTITY connectionSecurityType-2.label "STARTTLS">
 <!ENTITY connectionSecurityType-3.label "SSL/TLS">
-<!ENTITY authMethod.label "უსაფრთხო აუთენტიფიკაციის გამოყენება">
+<!ENTITY authMethod.label "ანგარიშზე შესვლის მეთოდი:">
 <!ENTITY authMethod.accesskey "i">
 <!ENTITY leaveOnServer.label "წერილების დატოვება სერვერზე">
 <!ENTITY leaveOnServer.accesskey "g">
@@ -40,7 +40,7 @@
 <!ENTITY deleteByAgeFromServer.label "არა უმეტეს">
 <!ENTITY deleteByAgeFromServer.accesskey "o">
 <!ENTITY daysEnd.label "დღისა">
-<!ENTITY deleteOnServer2.label "წაშლამდე ან 'შემოსული'-დან გადმოტანამდე">
+<!ENTITY deleteOnServer2.label "წაშლამდე ან მიღებულებიდან გადმოტანამდე">
 <!ENTITY deleteOnServer2.accesskey "d">
 <!ENTITY downloadOnBiff.label "ახალი წერილების ავტომატურად ჩატვირთვა">
 <!ENTITY downloadOnBiff.accesskey "m">
@@ -53,7 +53,7 @@
 <!ENTITY modelDeleteImmediately.label "მყისვე ამოშლა">
 <!ENTITY modelDeleteImmediately.accesskey "d">
 <!-- LOCALIZATION NOTE (expungeOnExit.label) : do not translate two of "&quot;" in below line -->
-<!ENTITY expungeOnExit.label "&quot;შემოსული&quot; დასტის გაწმენდა გასვლისას">
+<!ENTITY expungeOnExit.label "მიღებული წერილების საქაღალდის გასუფთავება (&quot;წაშლა&quot;) გასვლისას">
 <!ENTITY expungeOnExit.accesskey "E">
 <!ENTITY emptyTrashOnExit.label "&quot;ურნის გასუფთავება&quot; გასვლისას">
 <!ENTITY emptyTrashOnExit.accesskey "x">
@@ -67,7 +67,7 @@
 <!ENTITY maxMessagesStart.accesskey "m">
 <!-- LOCALIZATION NOTE (maxMessagesEnd.label) : see note for maxMessagesStart.label -->
 <!ENTITY maxMessagesEnd.label "-ზე მეტ წერილს">
-<!ENTITY alwaysAuthenticate.label "ამ სერვერთან დაკავშირებისას აუთენტიფიცირების ყოველთვის მოთხოვნა">
+<!ENTITY alwaysAuthenticate.label "ამ სერვერთან დაკავშირებისას, ანგარიშზე შესვლის მოთხოვნა ყოველთვის">
 <!ENTITY alwaysAuthenticate.accesskey "w">
 <!ENTITY newsrcFilePath.label "ჯგუფების ფაილი:">
 <!ENTITY newsrcPicker.label "ჯგუფების ფაილის არჩევა">

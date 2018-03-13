@@ -51,6 +51,7 @@ can reach it easily. -->
 <!ENTITY  sendLinkToDevice.label             "Cuir an ceangal gun uidheam">
 <!ENTITY  sendLinkToDevice.accesskey         "d">
 <!ENTITY  sendToDeviceFeedback.label         "Air a chur!">
+<!ENTITY  sendToDeviceOfflineFeedback.label  "Sa chiutha (far loidhne)">
 <!ENTITY  moveToNewWindow.label              "Gluais gu uinneag ùr">
 <!ENTITY  moveToNewWindow.accesskey          "G">
 <!ENTITY  bookmarkAllTabs.label              "Dèan comharra-lìn de gach taba…">
@@ -110,6 +111,8 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 <!ENTITY pageInfoCmd.label "Fiosrachadh na duilleige">
 <!ENTITY pageInfoCmd.accesskey "i">
 <!ENTITY pageInfoCmd.commandkey "i">
+<!ENTITY ldbCmd.label "Dì-bhugaichear na co-dhealbhachd">
+<!ENTITY ldbCmd.accesskey "l">
 <!ENTITY mirrorTabCmd.label "Sgàthanaich an taba">
 <!ENTITY mirrorTabCmd.accesskey "S">
 <!-- LOCALIZATION NOTE (enterFullScreenCmd.label, exitFullScreenCmd.label):
@@ -188,13 +191,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hideRecentlyBookmarked.accesskey "h">
 
 <!ENTITY backCmd.label                "Air ais">
+<!ENTITY backCmd.accesskey            "B">
 <!ENTITY backButton.tooltip           "Rach duilleag air ais">
 <!ENTITY forwardCmd.label             "Air adhart">
+<!ENTITY forwardCmd.accesskey         "F">
 <!ENTITY forwardButton.tooltip        "Rach duilleag air adhart">
 <!ENTITY backForwardButtonMenu.tooltip "Dèan briogadh deas no tarraing a-nuas gus an eachdraidh a shealltainn">
 <!ENTITY backForwardButtonMenuMac.tooltip "Tarraing a-nuas gus an eachdraidh a shealltainn">
 <!ENTITY reloadCmd.label              "Ath-luchdaich">
+<!ENTITY reloadCmd.accesskey          "R">
 <!ENTITY stopCmd.label                "Sguir dheth">
+<!ENTITY stopCmd.accesskey            "S">
 <!ENTITY stopCmd.macCommandKey        ".">
 <!ENTITY goEndCap.tooltip             "Rach dhan t-seòladh a tha ann am bàr an t-seòlaidh">
 <!ENTITY printButton.label            "Clò-bhuail">
@@ -226,11 +233,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Bhac thu am micreofon agad air an làrach-lìn seo.">
 <!ENTITY urlbar.screenBlocked.tooltip            "Bhac thu an làrach-lìn seo o bhith a’ co-roinneadh na sgrìn agad.">
 <!ENTITY urlbar.geolocationBlocked.tooltip       "Bhac thu fiosrachadh mun ionad agad air an làrach-lìn seo.">
-<!ENTITY urlbar.indexedDBBlocked.tooltip         "Bhac thu stòras dàta air an làrach-lìn seo.">
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Bhac thu brathan air an làrach-lìn seo.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Bhac thu stòras dàta buan mu choinneamh na làraich-lìn seo.">
-
 <!ENTITY urlbar.popupBlocked.tooltip             "Bhac thu priob-uinneagan air an làrach-lìn seo.">
+
+<!ENTITY urlbar.canvasBlocked.tooltip            "Bhac thu às-tharraing dàta canabhais air an làrach-lìn seo.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Seall an eachdraidh">
 
@@ -296,7 +303,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY newNavigatorCmd.accesskey      "n">
 <!ENTITY newPrivateWindow.label     "Uinneag phrìobhaideach ùr">
 <!ENTITY newPrivateWindow.accesskey "U">
-<!ENTITY newNonRemoteWindow.label   "Uinneag ùr nach eil ’na e10s">
 
 <!ENTITY editMenu.label         "Deasaich">
 <!ENTITY editMenu.accesskey       "e">
@@ -351,17 +357,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllHistoryCmd2.label "Seall an eachdraidh gu lèir">
 <!ENTITY showAllHistoryCmd.commandkey "H">
 
-<!ENTITY appMenuCustomize.label "Gnàthaich">
-<!ENTITY appMenuCustomize.tooltip "Gnàthaich na clàran-taice 's na bàraichean-inneal">
-<!ENTITY appMenuCustomizeExit.label "Fàg an gnàthachadh">
-<!ENTITY appMenuCustomizeExit.tooltip "Crìochnaich an gnàthachadh">
 <!ENTITY appMenuHistory.showAll.label "Seall an eachdraidh gu lèir">
 <!ENTITY appMenuHistory.clearRecent.label "Glan an eachdraidh faisg ort…">
 <!ENTITY appMenuHistory.restoreSession.label "Aisig an seisean roimhe seo">
 <!ENTITY appMenuHistory.viewSidebar.label "Seall bàr-taoibh na h-eachdraidh">
 <!ENTITY appMenuHistory.recentHistory.label "Eachdraidh o chionn goirid">
 <!ENTITY appMenuHelp.label "Cobhair">
-<!ENTITY appMenuHelp.tooltip "Fosgail clàr-taice na cobharach">
 
 <!ENTITY appMenuRemoteTabs.label "Tabaichean sioncronaichte">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.notabs.label): This is shown beneath
@@ -384,10 +385,14 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.title "Chan eil taba sioncronaichte agad… fhathast!">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "A bheil thu airson na tabaichean a tha agad air uidheaman eile fhaicinn an-seo?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Roghainnean sioncronachaidh">
+<!ENTITY appMenuRemoteTabs.opensyncprefs.label "Fosgail roghainnean an t-sioncronachaidh">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Clàraich a-steach airson liosta de thabaichean a tha agad air uidheaman eile.">
+<!ENTITY appMenuRemoteTabs.unverified.label "Tha an cunntas agad feumach air dearbhadh.">
 <!ENTITY appMenuRemoteTabs.signin.label "Clàraich a-steach gun t-sioncronachadh">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Stiùirich na h-uidheaman…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Seall bàr-taoibh nan tabaichean sioncronaichte">
+
+<!ENTITY appMenuRemoteTabs.connectdevice.label "Ceangail uidheam eile ris">
 
 <!ENTITY appMenuRecentHighlights.label "Sàr-roghainn o chionn goirid">
 
@@ -433,14 +438,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Leudachan:">
 <!ENTITY urlbar.switchToTab.label     "Gearr leum gun taba:">
-
-<!ENTITY urlbar.searchSuggestionsNotification.question "A bheil thu airson ’s gun cuidich sinn thu leis an rudan a lorgas tu?">
-<!ENTITY urlbar.searchSuggestionsNotification.learnMore "Barrachd fiosrachaidh…">
-<!ENTITY urlbar.searchSuggestionsNotification.learnMore.accesskey "l">
-<!ENTITY urlbar.searchSuggestionsNotification.disable "Chan eil">
-<!ENTITY urlbar.searchSuggestionsNotification.disable.accesskey "n">
-<!ENTITY urlbar.searchSuggestionsNotification.enable "Tha">
-<!ENTITY urlbar.searchSuggestionsNotification.enable.accesskey "y">
 
 <!-- LOCALIZATION NOTE (urlbar.searchSuggestionsNotification.hintPrefix): Shown just before the suggestions opt-out hint. -->
 <!ENTITY urlbar.searchSuggestionsNotification.hintPrefix "Gliocas:">
@@ -564,6 +561,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY setDesktopBackgroundCmd.label      "Suidhich mar chùlaibh an deasga…">
 <!ENTITY setDesktopBackgroundCmd.accesskey  "S">
 <!ENTITY bookmarkPageCmd2.label       "Cruthaich comharra-lìn dhan duilleag seo">
+<!ENTITY bookmarkPageCmd2.accesskey   "m">
 <!ENTITY bookmarkThisLinkCmd.label      "Cruthaich comharra-lìn dhan cheangal seo">
 <!ENTITY bookmarkThisLinkCmd.accesskey  "l">
 <!ENTITY bookmarkThisFrameCmd.label      "Cruthaich comharra-lìn dhan fhrèam seo">
@@ -718,8 +716,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageStylePersistentOnly.label "Stoidhle bhunaiteach na duilleige">
 <!ENTITY pageStylePersistentOnly.accesskey "b">
 
-<!ENTITY pageReportIcon.tooltip            "Atharraich roghainnean bacadh nam priob-uinneagan air an làrach seo">
-
 <!ENTITY allowPopups.accesskey "p">
 <!-- On Windows we use the term "Options" to describe settings, but
      on Linux and Mac OS X we use "Preferences" - carry that distinction
@@ -749,6 +745,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY editBookmark.done.label                     "Dèanta">
 <!ENTITY editBookmark.removeBookmark.accessKey       "R">
+
+<!-- LOCALIZATION NOTE (identity.securityView.label)
+     This is the header of the security subview in the Site Identity panel. -->
+<!ENTITY identity.securityView.label "Tèarainteachd na làraich">
 
 <!ENTITY identity.connectionSecure "Ceangal tèarainte">
 <!ENTITY identity.connectionNotSecure "Chan eil an ceangal tèarainte">
@@ -803,12 +803,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncedTabs.sidebar.noclients.title    "Chan eil taba sioncronaichte agad… fhathast!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "A bheil thu airson na tabaichean a tha agad air uidheaman eile fhaicinn an-seo?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Clàraich a-steach airson liosta de thabaichean a tha agad air uidheaman eile.">
+<!ENTITY syncedTabs.sidebar.unverified.label   "Tha an cunntas agad feumach air dearbhadh.">
 <!ENTITY syncedTabs.sidebar.notabs.label       "Chan eil taba fosgailte">
 <!ENTITY syncedTabs.sidebar.openprefs.label    "Fosgail roghainnean &syncBrand.shortName.label;">
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Cuir air sioncronachadh nan tabaichean airson cothrom fhaighinn air na tabaichean agad o uidheaman eile.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Lorg am measg nan tabaichean sioncronaichte">
+
+<!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Ceangail uidheam eile ris">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
                         syncedTabs.context.openAllInTabs.accesskey):
@@ -844,8 +847,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncToolbarButton.label      "Sioncronachadh">
 
 <!ENTITY customizeMode.menuAndToolbars.header3 "Slaod na rudan as fhearr leat air a’ bhàr-inneal no dhan chlàr-taice taomaidh.">
-<!ENTITY customizeMode.menuAndToolbars.empty "A bheil thu ag iarraidh barrachd innealan?">
-<!ENTITY customizeMode.menuAndToolbars.emptyLink "Roghadh is taghadh eadar mìltean a thuilleadain">
 <!ENTITY customizeMode.restoreDefaults "Aisig na bun-roghainnean">
 <!ENTITY customizeMode.done "Dèanta">
 <!ENTITY customizeMode.titlebar "Bàr an tiotail">
@@ -858,7 +859,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.lwthemes.menuManage.accessKey "M">
 <!ENTITY customizeMode.lwthemes.menuGetMore "Faigh barrachd ùrlaran">
 <!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "G">
-<!ENTITY customizeMode.emptyOverflowList.description "Slaod is leig às rudan an-seo airson ’s gum bi iad ri do làimh ach chan ann air a’ bhàr-inneal agad...">
 <!ENTITY customizeMode.overflowList.title2 "Clàr-taice taomaidh">
 <!ENTITY customizeMode.overflowList.description "Slaod is leig às rudan an-seo airson ’s gum bi iad ri do làimh ach chan ann air a’ bhàr-inneal agad...">
 <!ENTITY customizeMode.uidensity "Dùmhlachd">
@@ -979,9 +979,19 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "n">
 <!ENTITY updateRestart.panelUI.label2 "Dèan ath-thòiseachadh airson &brandShorterName; ùrachadh">
 
+<!ENTITY newTabControlled.message "Dh’atharraich leudachan an duilleag a chì thu nuair a dh’fhosglas tu taba ùr. ’S urrainn dhut na roghainnean agad aiseag mur an robh thu ag iarraidh seo.">
+<!ENTITY newTabControlled.header.message "Chaidh na chì thu air taba ùr atharrachadh.">
+<!ENTITY newTabControlled.keepButton.label "Cum na h-atharraichean">
+<!ENTITY newTabControlled.keepButton.accesskey "K">
+<!ENTITY newTabControlled.restoreButton.label "Aisig na seann-roghainnean">
+<!ENTITY newTabControlled.restoreButton.accesskey "R">
+
 <!ENTITY pageActionButton.tooltip "Gnìomhan na duilleige">
 <!ENTITY pageAction.addToUrlbar.label "Cuir ri bàr an t-seòlaidh">
 <!ENTITY pageAction.removeFromUrlbar.label "Thoir air falbh o bhàr an t-seòlaidh">
+<!ENTITY pageAction.allowInUrlbar.label "Seall ann am bàr an t-seòlaidh">
+<!ENTITY pageAction.disallowInUrlbar.label "Na seall ann am bàr an t-seòlaidh">
+<!ENTITY pageAction.manageExtension.label "Stiùirich an leudachan...">
 
 <!ENTITY pageAction.sendTabToDevice.label "Cuir an taba gu uidheam">
 <!ENTITY sendToDevice.syncNotReady.label "A’ sioncronachadh nan uidheam...">
@@ -993,3 +1003,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      used as a textual label for the indicator used by assistive technology
      users. -->
 <!ENTITY accessibilityIndicator.tooltip "Tha gleusan na so-inntrigeachd an comas">
+
+<!-- LOCALIZATION NOTE: (addonPostInstallMessage.label):
+     The first <image> tag is replaced with the icon for the add-ons menu.
+     The second <image> tag is replaced with the icon for the toolbar menu. -->
+<!ENTITY addonPostInstallMessage.label "Gus na tuilleadain agad a stiùireadh, briog air <image class='addon-addon-icon'/> sa chlàr-taice <image class='addon-toolbar-icon'/>.">

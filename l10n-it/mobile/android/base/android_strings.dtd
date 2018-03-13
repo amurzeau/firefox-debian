@@ -287,6 +287,7 @@
 <!ENTITY share_image_failed "Impossibile condividere questa immagine">
 <!ENTITY save_as_pdf "Salva come PDF">
 <!ENTITY print "Stampa">
+<!ENTITY view_page_source "Visualizza sorgente pagina">
 <!ENTITY find_in_page "Trova nella pagina">
 <!ENTITY desktop_mode "Modalità desktop">
 <!ENTITY page "Pagina">
@@ -311,7 +312,6 @@
 <!ENTITY contextmenu_open_new_tab "Apri in nuova scheda">
 <!ENTITY contextmenu_open_private_tab "Apri in scheda anonima">
 <!ENTITY contextmenu_remove "Rimuovi">
-<!ENTITY contextmenu_add_to_launcher "Agg. a schermata principale">
 <!ENTITY contextmenu_add_page_shortcut "Agg. scorciatoia alla pagina">
 <!ENTITY contextmenu_set_as_homepage "Imposta come pagina iniziale">
 <!ENTITY contextmenu_share "Condividi">
@@ -475,11 +475,11 @@
 <!ENTITY bookmarks_restricted_support2 "Supporto per l’uso di profili limitati in Firefox su tablet Android">
 <!ENTITY bookmarks_restricted_webmaker "Impara il Web: Mozilla Webmaker">
 <!ENTITY unsupported_sdk_version "Siamo spiacenti, questa versione di &brandShortName; non è compatibile con questo dispositivo (&formatS1;, &formatS2;). È necessario scaricare la versione corretta.">
+<!ENTITY corrupt_apk "Impossibile aprire &brandShortName;. Reinstallarlo e riprovare.">
 <!ENTITY eol_notification_title2 "&brandShortName; non verrà più aggiornato">
 <!ENTITY eol_notification_summary "Tocca per ulteriori informazioni">
 <!ENTITY whatsnew_notification_title "&brandShortName; è aggiornato">
 <!ENTITY whatsnew_notification_summary "Scopri le novità in questa versione">
-<!ENTITY promotion_add_to_homescreen "Agg. a schermata principale">
 <!ENTITY promotion_add_page_shortcut "Agg. scorciatoia alla pagina">
 <!ENTITY helper_first_offline_bookmark_title "Lettura non in linea">
 <!ENTITY helper_first_offline_bookmark_message "Gli elementi salvati in Elenco lettura sono disponibili nei segnalibri, anche non in linea.">

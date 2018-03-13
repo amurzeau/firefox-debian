@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY titledefault.label "&brandFullName;">
-<!ENTITY titleSeparator.label " — ">
+<!ENTITY titleSeparator.label " - ">
 
 <!-- File Menu -->
 <!ENTITY newFolderCmd.label "Теку…">
@@ -317,7 +317,6 @@
 <!ENTITY goBackCmd.commandKey "[">
 <!ENTITY goChatCmd.label "Чат">
 <!ENTITY goChatCmd.accesskey "Ч">
-<!ENTITY goChatCmd.key "I">
 <!ENTITY goChatCmd2.key "H">
 <!ENTITY prevStarredMsgCmd.label "Лист з зіркою">
 <!ENTITY prevStarredMsgCmd.accesskey "З">
@@ -367,6 +366,8 @@
 <!ENTITY editAsNewMsgCmd.key "e">
 <!ENTITY editDraftMsgCmd.label "Редагувати чернетку">
 <!ENTITY editDraftMsgCmd.accesskey "г">
+<!ENTITY editTemplateMsgCmd.label "Змінити шаблон">
+<!ENTITY editTemplateMsgCmd.accesskey "м">
 <!ENTITY newMsgFromTemplateCmd.label "Створити повідомлення з шаблону">
 <!ENTITY newMsgFromTemplateCmd.keycode "VK_RETURN"><!-- do not change "VK_RETURN" -->
 <!ENTITY createFilter.label "Створити фільтр…">
@@ -599,7 +600,7 @@
 <!ENTITY chatButton.tooltip "Показати вкладку чату">
 <!ENTITY tagButton.tooltip "Помітити повідомлення">
 <!ENTITY compactButton.tooltip "Вилучити видалені листи з вибраної теки">
-<!ENTITY appmenuButton1.tooltip "Показати меню програми">
+<!ENTITY appmenuButton1.tooltip "Відкрити меню &brandShortName;">
 
 <!-- Toolbar Button Popup -->
 <!ENTITY buttonMenuForwardAsInline.label "Переслати всередині повідомлення">
@@ -760,6 +761,8 @@
 <!ENTITY contextEditMsgAsNew.label "Редагувати як нове повідомлення">
 <!ENTITY contextEditMsgAsNew.accesskey "Р">
 <!ENTITY contextEditDraftMsg.label "Редагувати чернетку">
+<!ENTITY contextEditTemplate.label "Змінити шаблон">
+<!ENTITY contextEditTemplate.accesskey "м">
 <!ENTITY contextArchive.label "Архівувати">
 <!ENTITY contextArchive.accesskey "х">
 <!ENTITY contextReplySender.label "Відповісти відправнику">
@@ -902,7 +905,7 @@
 <!ENTITY SubscribeToNewsgroup.accesskey "н">
 <!ENTITY SendMessageTo.label "Створити повідомлення до">
 <!ENTITY SendMessageTo.accesskey "с">
-<!ENTITY CopyEmailAddress.label "Копіювати адресу електронної пошти">
+<!ENTITY CopyEmailAddress.label "Копіювати адресу е-пошти">
 <!ENTITY CopyEmailAddress.accesskey "К">
 <!ENTITY CopyNameAndEmailAddress.label "Копіювати ім'я та адресу електронної пошти">
 <!ENTITY CopyNameAndEmailAddress.accesskey "п">
@@ -928,8 +931,8 @@
 <!ENTITY copyLinkCmd.accesskey "п">
 <!ENTITY copyImageAllCmd.label "Копіювати зображення">
 <!ENTITY copyImageAllCmd.accesskey "К">
-<!ENTITY copyEmailCmd.label "Копюівати email адресу">
-<!ENTITY copyEmailCmd.accesskey "e">
+<!ENTITY copyEmailCmd.label "Копіювати адресу е-пошти">
+<!ENTITY copyEmailCmd.accesskey "К">
 <!ENTITY stopCmd.label "Зупинити">
 <!ENTITY stopCmd.accesskey "З">
 <!ENTITY reloadCmd.label "Перезавантажити">

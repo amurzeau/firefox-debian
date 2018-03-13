@@ -7,7 +7,7 @@ Subject: Disable libyuv assembly on mips64
  1 file changed, 3 insertions(+)
 
 diff --git a/build/gyp.mozbuild b/build/gyp.mozbuild
-index 7869123a9837..bb9a0a7c3c07 100644
+index 45b42ae28526..58493ff7131d 100644
 --- a/build/gyp.mozbuild
 +++ b/build/gyp.mozbuild
 @@ -116,6 +116,9 @@ if CONFIG['INTEL_ARCHITECTURE']:

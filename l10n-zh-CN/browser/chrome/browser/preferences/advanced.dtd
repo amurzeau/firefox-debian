@@ -39,6 +39,13 @@ available. -->
 
 <!ENTITY alwaysSubmitCrashReports1.label  "允许 &brandShortName; 向 Mozilla 发送错误报告">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "c">
+
+<!ENTITY collectBrowserErrors.label          "允许 &brandShortName; 发送浏览器错误报告（包含错误信息）到 Mozilla">
+<!ENTITY collectBrowserErrors.accesskey      "b">
+<!ENTITY collectBrowserErrorsLearnMore.label "详细了解">
+
+<!ENTITY sendBackloggedCrashReports.label  "允许 &brandShortName; 代您发送积压的崩溃报告">
+<!ENTITY sendBackloggedCrashReports.accesskey "c">
 <!ENTITY crashReporterLearnMore.label    "详细了解">
 
 <!ENTITY networkTab.label                "网络">
@@ -46,17 +53,20 @@ available. -->
 <!ENTITY networkProxy.label              "网络代理">
 
 <!ENTITY connectionDesc.label            "配置 &brandShortName; 如何连接至国际互联网">
+
+<!ENTITY connectionSettingsLearnMore.label "详细了解">
 <!ENTITY connectionSettings.label        "设置…">
 <!ENTITY connectionSettings.accesskey    "e">
 
 <!ENTITY httpCache.label                 "网络内容缓存">
 
-<!ENTITY offlineStorage2.label           "离线 Web 内容和用户数据">
-
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "网站数据">
 <!ENTITY clearSiteData.label             "清除所有数据">
 <!ENTITY clearSiteData.accesskey         "l">
+<!ENTITY siteData1.label                 "Cookie 和网站数据">
+<!ENTITY clearSiteData1.label            "清除数据…">
+<!ENTITY clearSiteData1.accesskey        "l">
 <!ENTITY siteDataSettings.label          "设置…">
 <!ENTITY siteDataSettings.accesskey      "i">
 <!ENTITY siteDataLearnMoreLink.label     "详细了解">
@@ -72,8 +82,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MB 磁盘空间">
 <!ENTITY clearCacheNow.label             "立即清除">
 <!ENTITY clearCacheNow.accesskey         "C">
-<!ENTITY clearOfflineAppCacheNow.label   "立即清除">
-<!ENTITY clearOfflineAppCacheNow.accesskey "N">
 <!ENTITY overrideSmartCacheSize.label    "无视自动缓存管理">
 <!ENTITY overrideSmartCacheSize.accesskey "O">
 
@@ -110,17 +118,6 @@ available. -->
 
 <!ENTITY enableSearchUpdate2.label       "自动更新搜索引擎">
 <!ENTITY enableSearchUpdate2.accesskey   "e">
-
-<!ENTITY offlineStorageNotify.label               "网站请求保存数据供离线使用时通知您">
-<!ENTITY offlineStorageNotify.accesskey           "T">
-<!ENTITY offlineStorageNotifyExceptions.label     "例外…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "x">
-
-<!ENTITY offlineAppsList3.label          "以下网站可以存储供离线使用的数据">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "移除…">
-<!ENTITY offlineAppsListRemove.accesskey "R">
-<!ENTITY offlineAppRemove.confirm        "移除脱机数据">
 
 <!ENTITY certificateTab.label            "证书">
 <!ENTITY certPersonal2.description       "当服务器请求您的个人证书时">

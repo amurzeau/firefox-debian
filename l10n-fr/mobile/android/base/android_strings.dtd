@@ -454,6 +454,7 @@
 <!ENTITY share_image_failed "Impossible de partager cette image">
 <!ENTITY save_as_pdf "Enregistrer en PDF">
 <!ENTITY print "Imprimer">
+<!ENTITY view_page_source "Afficher le code source de la page">
 <!ENTITY find_in_page "Rechercher dans la page">
 <!ENTITY desktop_mode "Voir version ordinateur">
 <!ENTITY page "Page">
@@ -485,7 +486,6 @@
 <!ENTITY contextmenu_open_new_tab "Ouvrir dans un nouvel onglet">
 <!ENTITY contextmenu_open_private_tab "Ouvrir en navigation privée">
 <!ENTITY contextmenu_remove "Supprimer">
-<!ENTITY contextmenu_add_to_launcher "Ajouter à l’écran d’accueil">
 <!ENTITY contextmenu_add_page_shortcut "Ajouter un raccourci vers la page">
 <!ENTITY contextmenu_set_as_homepage "Définir comme page d’accueil">
 <!ENTITY contextmenu_share "Partager">
@@ -540,7 +540,6 @@
      any page is removed frome about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "Page retirée">
-
 <!ENTITY folder_removed "Dossier supprimé">
 
 <!ENTITY bookmark_edit_title "Modifier le marque-page">
@@ -811,6 +810,9 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      replaced by the Android OS version (e.g., 14)-->
 <!ENTITY unsupported_sdk_version "Désolé, cette version de &brandShortName; ne fonctionnera pas sur cet appareil (&formatS1;, &formatS2;). Veuillez télécharger la version appropriée.">
 
+<!-- LOCALIZATION NOTE(corrupt_apk): This notification is shown if corruption has been detected on startup and the user has to reinstall Firefox -->
+<!ENTITY corrupt_apk "Impossible d’ouvrir &brandShortName;. Veuillez le réinstaller puis réessayer.">
+
 <!ENTITY eol_notification_title2 "&brandShortName; ne se mettra plus à jour">
 <!ENTITY eol_notification_summary "Appuyez pour en savoir plus">
 
@@ -818,8 +820,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      are used for a system notification that's shown to users after the app updates. -->
 <!ENTITY whatsnew_notification_title "&brandShortName; est à jour">
 <!ENTITY whatsnew_notification_summary "Découvrez les nouveautés de cette version">
-
-<!ENTITY promotion_add_to_homescreen "Ajouter à l’écran d’accueil">
 
 <!ENTITY promotion_add_page_shortcut "Ajouter un raccourci vers la page">
 

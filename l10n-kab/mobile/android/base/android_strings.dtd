@@ -454,6 +454,7 @@
 <!ENTITY share_image_failed "Ur izmir ara ad yebḍu tugna-agi">
 <!ENTITY save_as_pdf "Kles d PDF">
 <!ENTITY print "Siggez">
+<!ENTITY view_page_source "Wali tangalt taɣbalut n usebter">
 <!ENTITY find_in_page "Nadi deg usebter">
 <!ENTITY desktop_mode "Suter asmel n tnarit">
 <!ENTITY page "Asebter">
@@ -485,7 +486,6 @@
 <!ENTITY contextmenu_open_new_tab "Ldi ɣef yiccer amaynut">
 <!ENTITY contextmenu_open_private_tab "Ldi deg iccer uslig">
 <!ENTITY contextmenu_remove "Kkes">
-<!ENTITY contextmenu_add_to_launcher "Rnu ɣer ugilal agejdan">
 <!ENTITY contextmenu_add_page_shortcut "Rnu anegzum n usebter">
 <!ENTITY contextmenu_set_as_homepage "Sbadu d asebter agejdan">
 <!ENTITY contextmenu_share "Bḍu">
@@ -540,7 +540,6 @@
      any page is removed frome about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "Asbter yettwakkes">
-
 <!ENTITY folder_removed "Akaram ittwakes">
 
 <!ENTITY bookmark_edit_title "Ẓreg tacreṭ n usebter">
@@ -811,6 +810,9 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      replaced by the Android OS version (e.g., 14)-->
 <!ENTITY unsupported_sdk_version "Suref-aɣ! &brandShortName; ur itteddu ara ɣef yibenk-agi (&formatS1;, &formatS2;). Ma ulac aɣilif sider-d lqem ameɣtu.">
 
+<!-- LOCALIZATION NOTE(corrupt_apk): This notification is shown if corruption has been detected on startup and the user has to reinstall Firefox -->
+<!ENTITY corrupt_apk "Ur izmir ara ad ildi &brandShortName;. Ttxil-k ales asebded sakin εreḍ tikelt-nniḍen.">
+
 <!ENTITY eol_notification_title2 "&brandShortName; ur yettwalqam ara seg sya d asawen">
 <!ENTITY eol_notification_summary "Ssit iwakken ad tissined ugar">
 
@@ -818,8 +820,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      are used for a system notification that's shown to users after the app updates. -->
 <!ENTITY whatsnew_notification_title "&brandShortName; ittwaleqqem">
 <!ENTITY whatsnew_notification_summary "Wali amaynut ɣef lqem-agi">
-
-<!ENTITY promotion_add_to_homescreen "Rnu ɣer ugdil agejdan">
 
 <!ENTITY promotion_add_page_shortcut "Rnu anegzum n usebter">
 

@@ -9,10 +9,10 @@ Subject: Build against system libjsoncpp
  3 files changed, 6 insertions(+), 46 deletions(-)
 
 diff --git a/config/system-headers.mozbuild b/config/system-headers.mozbuild
-index e02d381a12e9..52344441290a 100644
+index 5cc03c1d89da..bcca8c11dad1 100644
 --- a/config/system-headers.mozbuild
 +++ b/config/system-headers.mozbuild
-@@ -1344,3 +1344,7 @@ if CONFIG['MOZ_SYSTEM_ICU']:
+@@ -1343,3 +1343,7 @@ if CONFIG['MOZ_SYSTEM_ICU']:
          'unicode/ustring.h',
          'unicode/utypes.h',
      ]
@@ -21,7 +21,7 @@ index e02d381a12e9..52344441290a 100644
 +    'json/json.h',
 +]
 diff --git a/toolkit/components/jsoncpp/src/lib_json/moz.build b/toolkit/components/jsoncpp/src/lib_json/moz.build
-index 9997014bd9dc..5e20a3d42fd9 100644
+index 6920229e1ea1..5e20a3d42fd9 100644
 --- a/toolkit/components/jsoncpp/src/lib_json/moz.build
 +++ b/toolkit/components/jsoncpp/src/lib_json/moz.build
 @@ -4,50 +4,6 @@
@@ -40,12 +40,12 @@ index 9997014bd9dc..5e20a3d42fd9 100644
 -
 -# This code is only used in the stand-alone minidump analyzer executable so
 -# enabling exceptions should be fine.
--if CONFIG['CLANG_CL']:
+-if CONFIG['CC_TYPE'] == 'clang-cl':
 -    CXXFLAGS += [
 -        '-Xclang',
 -        '-fcxx-exceptions',
 -    ]
--elif not CONFIG['_MSC_VER']:
+-elif CONFIG['CC_TYPE'] not in ('msvc', 'clang-cl'):
 -    CXXFLAGS += [
 -        '-fexceptions',
 -    ]
@@ -56,22 +56,22 @@ index 9997014bd9dc..5e20a3d42fd9 100644
  Library('jsoncpp')
  
 -# Suppress warnings in third-party code.
--if CONFIG['_MSC_VER']:
+-if CONFIG['CC_TYPE'] in ('msvc', 'clang-cl'):
 -    CXXFLAGS += [
 -        '-wd4005', # macro redefinition
 -    ]
--elif CONFIG['GNU_CXX']:
+-elif CONFIG['CC_TYPE'] in ('clang', 'gcc'):
 -    CXXFLAGS += [
 -        '-Wno-unused-local-typedefs',
 -        '-Wno-shadow',
 -    ]
 -
--if CONFIG['CLANG_CXX'] or CONFIG['CLANG_CL']:
+-if CONFIG['CC_TYPE'] in ('clang', 'clang-cl'):
 -    CXXFLAGS += [
 -        '-Wno-c++11-narrowing',
 -    ]
 -
--if CONFIG['CLANG_CXX'] or CONFIG['CLANG_CL'] or CONFIG['GNU_CXX']:
+-if CONFIG['CC_TYPE'] in ('clang', 'clang-cl', 'gcc'):
 -    CXXFLAGS += [
 -        '-Wno-implicit-fallthrough',
 -    ]

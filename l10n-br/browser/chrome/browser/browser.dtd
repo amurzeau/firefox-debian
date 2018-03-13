@@ -111,6 +111,8 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 <!ENTITY pageInfoCmd.label "Stlennoù ar bajennad">
 <!ENTITY pageInfoCmd.accesskey "t">
 <!ENTITY pageInfoCmd.commandkey "i">
+<!ENTITY ldbCmd.label "Diveuger ar pajennaozañ">
+<!ENTITY ldbCmd.accesskey "D">
 <!ENTITY mirrorTabCmd.label "Ivinell Melezour">
 <!ENTITY mirrorTabCmd.accesskey "M">
 <!-- LOCALIZATION NOTE (enterFullScreenCmd.label, exitFullScreenCmd.label):
@@ -125,6 +127,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "Diskouez an holl ivinelloù">
 <!ENTITY showAllTabsCmd.accesskey "a">
 <!ENTITY toggleReaderMode.key "R">
+
+<!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "En em gennaskañ ouzh &syncBrand.shortName.label;">
 <!ENTITY fxaSignedIn.tooltip "Digeriñ gwellvezioù &syncBrand.shortName.label;">
@@ -189,13 +193,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hideRecentlyBookmarked.accesskey "K">
 
 <!ENTITY backCmd.label                "Kent">
+<!ENTITY backCmd.accesskey            "K">
 <!ENTITY backButton.tooltip           "Mont d'ar bajennad kent">
 <!ENTITY forwardCmd.label             "War-lerc'h">
+<!ENTITY forwardCmd.accesskey         "W">
 <!ENTITY forwardButton.tooltip        "Mont d'ar bajennad war-lerc'h">
 <!ENTITY backForwardButtonMenu.tooltip "Grit ur c'hlik dehou pe sachit etrezek an traoñ evit diskouez ar roll istor">
 <!ENTITY backForwardButtonMenuMac.tooltip "Sachit etrezek an traoñ evit diskouez ar roll istor">
 <!ENTITY reloadCmd.label              "Adkargañ">
+<!ENTITY reloadCmd.accesskey          "A">
 <!ENTITY stopCmd.label                "Paouez">
+<!ENTITY stopCmd.accesskey            "P">
 <!ENTITY stopCmd.macCommandKey        ".">
 <!ENTITY goEndCap.tooltip             "Mont d'ar chomlec'h er varrenn lec'hiañ">
 <!ENTITY printButton.label            "Moullañ">
@@ -223,16 +231,19 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Ardeiñ troidigezh ar bajenn">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Ardeiñ an arver meziantoù DRM">
 
+<!ENTITY urlbar.midiNotificationAnchor.tooltip            "Digeriñ ar penel MIDI">
+
 <!ENTITY urlbar.cameraBlocked.tooltip            "Stanket ho peus ho kamera evit al lec'hienn-mañ.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Stanket ho peus ho mikrofon evit al lec'hienn-mañ.">
 <!ENTITY urlbar.screenBlocked.tooltip            "Difennet ho peus al lec'hienn-mañ da rannañ ho skramm.">
 <!ENTITY urlbar.geolocationBlocked.tooltip       "Stanket ho peus an titouroù lec'hiadur evit al lec'hienn-mañ.">
-<!ENTITY urlbar.indexedDBBlocked.tooltip         "Stanket ho peus an titouroù kadaviñ evit al lec'hienn-mañ.">
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Stanket ho peus ar rebuzadurioù evit al lec'hienn-mañ.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Stanket ho peus ar c'hadaviñ diastal evit al lec'hienn-mañ.">
-
 <!ENTITY urlbar.popupBlocked.tooltip             "Stanket hoc'h eus an diflugelloù evit al lec'hienn-mañ.">
 
+<!ENTITY urlbar.canvasBlocked.tooltip            "Stanket ho peus eztennadur ar roadennoù ar steuenn.">
+
+<!ENTITY urlbar.midiBlocked.tooltip              "Stanket ho peus an haeziñ MIDI evit al lec'hienn-mañ.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Diskouez ar roll istor">
 
@@ -298,7 +309,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY newNavigatorCmd.accesskey      "n">
 <!ENTITY newPrivateWindow.label     "Prenestr merdeiñ prevez nevez">
 <!ENTITY newPrivateWindow.accesskey "v">
-<!ENTITY newNonRemoteWindow.label   "Prenestr nann-e10s nevez">
 
 <!ENTITY editMenu.label         "Embann">
 <!ENTITY editMenu.accesskey       "E">
@@ -353,18 +363,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllHistoryCmd2.label "Diskouez ar roll istor a-bezh">
 <!ENTITY showAllHistoryCmd.commandkey "H">
 
-<!ENTITY appMenuCustomize.label "Personelaat">
-<!ENTITY appMenuCustomize.tooltip "Personelaat al lañser hag ar barrennoù ostilhoù">
-<!ENTITY appMenuCustomizeExit.label "Kuitaat ar personelaat">
-<!ENTITY appMenuCustomizeExit.tooltip "Echuiñ ar personelaat">
-
 <!ENTITY appMenuHistory.showAll.label "Diskouez ar roll istor a-bezh">
 <!ENTITY appMenuHistory.clearRecent.label "Skarzhañ ar roll istor nevesañ…">
 <!ENTITY appMenuHistory.restoreSession.label "Assav an estez kent">
 <!ENTITY appMenuHistory.viewSidebar.label "Gwelout barrenn gostez ar roll istor">
 <!ENTITY appMenuHistory.recentHistory.label "Roll istor nevesañ">
 <!ENTITY appMenuHelp.label "Skoazell">
-<!ENTITY appMenuHelp.tooltip "Digeriñ al lañser skoazell">
 
 <!ENTITY appMenuRemoteTabs.label "Ivinelloù goubredet">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.notabs.label): This is shown beneath
@@ -387,6 +391,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.title "Sinedoù goubredet ebet... Evit ar mare!">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Fellout a ra deoc'h gwelout ivinelloù ho trevnadoù all amañ?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Gwellvezioù goubredañ">
+<!ENTITY appMenuRemoteTabs.opensyncprefs.label "Digeriñ gwellvezioù Sync">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Kennaskit da welet ur roll ivinelloù eus ho trevnadoù all">
 <!ENTITY appMenuRemoteTabs.unverified.label "Ret eo gwiriekaat ho kont.">
 <!ENTITY appMenuRemoteTabs.signin.label "Kennaskañ ouzh Sync">
@@ -439,14 +444,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Askouezh:">
 <!ENTITY urlbar.switchToTab.label     "Mont d'an ivinell :">
-
-<!ENTITY urlbar.searchSuggestionsNotification.question "Fellout a ra deoc'h gwellat hoc'h arver klask gant kinnigoù ?">
-<!ENTITY urlbar.searchSuggestionsNotification.learnMore "Gouzout hiroc'h…">
-<!ENTITY urlbar.searchSuggestionsNotification.learnMore.accesskey "G">
-<!ENTITY urlbar.searchSuggestionsNotification.disable "Ket">
-<!ENTITY urlbar.searchSuggestionsNotification.disable.accesskey "K">
-<!ENTITY urlbar.searchSuggestionsNotification.enable "Ya">
-<!ENTITY urlbar.searchSuggestionsNotification.enable.accesskey "y">
 
 <!-- LOCALIZATION NOTE (urlbar.searchSuggestionsNotification.hintPrefix): Shown just before the suggestions opt-out hint. -->
 <!ENTITY urlbar.searchSuggestionsNotification.hintPrefix "Tun:">
@@ -570,6 +567,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY setDesktopBackgroundCmd.label      "Arventennañ evel Drekleur ar burev…">
 <!ENTITY setDesktopBackgroundCmd.accesskey  "l">
 <!ENTITY bookmarkPageCmd2.label       "Lakaat ur sined war ar bajenn-mañ">
+<!ENTITY bookmarkPageCmd2.accesskey   "b">
 <!ENTITY bookmarkThisLinkCmd.label      "Lakaat ur sined war an ere">
 <!ENTITY bookmarkThisLinkCmd.accesskey  "L">
 <!ENTITY bookmarkThisFrameCmd.label      "Merkañ ar frammad war ur sined">
@@ -724,8 +722,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageStylePersistentOnly.label "Stil pajennad eeun">
 <!ENTITY pageStylePersistentOnly.accesskey "e">
 
-<!ENTITY pageReportIcon.tooltip            "Kemmañ arventennoù da herzel an diflugelloù evit al lec'hienn-mañ">
-
 <!ENTITY allowPopups.accesskey "p">
 <!-- On Windows we use the term "Options" to describe settings, but
      on Linux and Mac OS X we use "Preferences" - carry that distinction
@@ -857,8 +853,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncToolbarButton.label      "Goubredañ">
 
 <!ENTITY customizeMode.menuAndToolbars.header3 "Lakait an elfennoù gwellañ deoc'h da riklañ er varrenn ostilhoù pe el lañser dic'hlann.">
-<!ENTITY customizeMode.menuAndToolbars.empty "Ezhomm hoc'h eus muioc'h a ostilhoù ?">
-<!ENTITY customizeMode.menuAndToolbars.emptyLink "Dibabit e-touez miliadoù a askouezhioù">
 <!ENTITY customizeMode.restoreDefaults "Assav ar re dre ziouer">
 <!ENTITY customizeMode.done "Graet">
 <!ENTITY customizeMode.titlebar "Barrenn ditl">
@@ -871,7 +865,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.lwthemes.menuManage.accessKey "A">
 <!ENTITY customizeMode.lwthemes.menuGetMore "Kaout muioc'h a neuzioù">
 <!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "L">
-<!ENTITY customizeMode.emptyOverflowList.description "Riklit ha laoskit an elfennoù amañ evit mirout anezho nepell met e-diavaez ho parrenn ostilhoù…">
 <!ENTITY customizeMode.overflowList.title2 "Lañser dic'hlann">
 <!ENTITY customizeMode.overflowList.description "Riklit ha laoskit an elfennoù amañ evit mirout anezho nepell met e-diavaez ho parrenn ostilhoù…">
 <!ENTITY customizeMode.uidensity "Douester">
@@ -1002,7 +995,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageActionButton.tooltip "Gweredoù ar bajenn">
 <!ENTITY pageAction.addToUrlbar.label "Ouzhpennañ d'ar varenn chomlec'h">
 <!ENTITY pageAction.removeFromUrlbar.label "Lemel kuit diouzh ar varrenn chomlec'h">
-
 <!ENTITY pageAction.allowInUrlbar.label "Diskouez er varrenn chomlec'h">
 <!ENTITY pageAction.disallowInUrlbar.label "Na ziskouez er varrenn chomlec'h">
 <!ENTITY pageAction.manageExtension.label "Merañ an askouezh...">
@@ -1017,3 +1009,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      used as a textual label for the indicator used by assistive technology
      users. -->
 <!ENTITY accessibilityIndicator.tooltip "Gweredekaet ar c'heweriusterioù haezadusted">
+
+<!-- LOCALIZATION NOTE: (addonPostInstallMessage.label):
+     The first <image> tag is replaced with the icon for the add-ons menu.
+     The second <image> tag is replaced with the icon for the toolbar menu. -->
+<!ENTITY addonPostInstallMessage.label "Merit hoc'h askouezhioù en ur glikañ war <image class='addon-addon-icon'/> el lañser <image class='addon-toolbar-icon'/>.">

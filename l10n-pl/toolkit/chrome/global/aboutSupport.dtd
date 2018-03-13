@@ -22,6 +22,13 @@
 <!ENTITY aboutSupport.extensionVersion "Wersja">
 <!ENTITY aboutSupport.extensionId "ID">
 
+<!ENTITY aboutSupport.securitySoftwareTitle "Oprogramowanie bezpieczeństwa">
+<!ENTITY aboutSupport.securitySoftwareType "Typ">
+<!ENTITY aboutSupport.securitySoftwareName "Nazwa">
+<!ENTITY aboutSupport.securitySoftwareAntivirus "Program antywirusowy">
+<!ENTITY aboutSupport.securitySoftwareAntiSpyware "Program antyszpiegowski">
+<!ENTITY aboutSupport.securitySoftwareFirewall "Zapora sieciowa">
+
 <!ENTITY aboutSupport.featuresTitle "Wbudowane rozszerzenia programu &brandShortName;">
 <!ENTITY aboutSupport.featureName "Nazwa">
 <!ENTITY aboutSupport.featureVersion "Wersja">
@@ -131,3 +138,13 @@
 <!ENTITY aboutSupport.mediaDeviceChannels "Kanały">
 <!ENTITY aboutSupport.mediaDeviceRate "Częstotliwość próbkowania">
 <!ENTITY aboutSupport.mediaDeviceLatency "Opóźnienie">
+
+<!ENTITY aboutSupport.intlTitle "Umiędzynaradawianie i lokalizacja">
+<!ENTITY aboutSupport.intlAppTitle "Ustawienia programu">
+<!ENTITY aboutSupport.intlLocalesRequested "Żądane ustawienia regionalne">
+<!ENTITY aboutSupport.intlLocalesAvailable "Dostępne ustawienia regionalne">
+<!ENTITY aboutSupport.intlLocalesSupported "Ustawienia regionalne programu">
+<!ENTITY aboutSupport.intlLocalesDefault "Domyślne ustawienia regionalne">
+<!ENTITY aboutSupport.intlOSTitle "System operacyjny">
+<!ENTITY aboutSupport.intlOSPrefsSystemLocales "Ustawienia regionalne systemu">
+<!ENTITY aboutSupport.intlRegionalPrefs "Preferencje regionalne">

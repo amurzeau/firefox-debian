@@ -5,6 +5,8 @@
 <!ENTITY  trackingProtectionHeader2.label      "Sporingsvern">
 <!ENTITY  trackingProtection2.description      "Sporing er ei innsamling av nettlesardataa dine frå fleire nettsider. Sporing kan brukast til å byggje ein profil, og å vise innhald basert på nettlesinga di og din eigen personlege informasjon.">
 <!ENTITY  trackingProtection2.radioGroupLabel  "Bruk sporingsvern til å blokkere kjende sporfølgjarar">
+<!ENTITY  trackingProtection3.description      "Sporingsvernet blokkerer sporfølgjarar på nettet som samlar inn nettleserdataa dine på fleire nettstadar.">
+<!ENTITY  trackingProtection3.radioGroupLabel  "Bruk sporingsvern for å blokkere kjende sporfølgjarar">
 <!ENTITY  trackingProtectionAlways.label       "Alltid">
 <!ENTITY  trackingProtectionAlways.accesskey   "l">
 <!ENTITY  trackingProtectionPrivate.label      "Berre i private vindauge">
@@ -12,12 +14,9 @@
 <!ENTITY  trackingProtectionNever.label        "Aldri">
 <!ENTITY  trackingProtectionNever.accesskey    "A">
 <!ENTITY  trackingProtectionLearnMore.label    "Lær meir">
+<!ENTITY  trackingProtectionLearnMore2.label    "Les meir om sporingsvern og ditt personvern">
 <!ENTITY  trackingProtectionExceptions.label   "Unntak…">
 <!ENTITY  trackingProtectionExceptions.accesskey "U">
-
-<!-- LOCALIZATION NOTE (trackingProtectionPBM5.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel. -->
-<!ENTITY trackingProtectionPBM5.label         "Bruk sporingsvern i private vindauge">
-<!ENTITY trackingProtectionPBM5.accesskey     "u">
 
 <!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the release and beta channel. -->
 <!ENTITY trackingProtectionPBM6.label         "Bruk sporingsvern i Privat nettlesing for å blokkere kjende sporfølgjarar">
@@ -52,6 +51,15 @@
 
 <!ENTITY  acceptThirdParty2.pre.label     "Godta tredjeparts infokapslar">
 <!ENTITY  acceptThirdParty2.pre.accesskey "G">
+
+<!ENTITY  acceptCookies3.label          "Tillat infokapslar og nettsidedata frå nettstadar">
+<!ENTITY  acceptCookies3.accesskey      "a">
+
+<!ENTITY  blockCookies.label            "Blokker infokapslar og nettsidedata frå nettstadar (kan skape feil på nettstaden)">
+<!ENTITY  blockCookies.accesskey        "B">
+
+<!ENTITY  acceptThirdParty3.pre.label     "Tillat infokapslar frå tredjepart og nettsidedata">
+<!ENTITY  acceptThirdParty3.pre.accesskey "e">
 <!ENTITY  acceptThirdParty.always.label   "Alltid">
 <!ENTITY  acceptThirdParty.never.label    "Aldri">
 <!ENTITY  acceptThirdParty.visited.label  "Frå besøkte">
@@ -93,6 +101,9 @@
 <!ENTITY  dontrememberActions.pre.label          "Du kan velje å ">
 <!ENTITY  dontrememberActions.clearHistory.label "fjerne all historikk">
 <!ENTITY  dontrememberActions.post.label         ".">
+
+<!ENTITY  clearHistoryButton.label       "Tøm historikk…">
+<!ENTITY  clearHistoryButton.accesskey   "s">
 
 <!ENTITY  privateBrowsingPermanent2.label "Alltid bruke privat nettlesing-modus">
 <!ENTITY  privateBrowsingPermanent2.accesskey "A">

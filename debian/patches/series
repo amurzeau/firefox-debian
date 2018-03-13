@@ -1,5 +1,4 @@
 fixes/Allow-.js-preference-files-to-set-locked-prefs-with-.patch
-fixes/Apply-the-digitlst.cpp-part-of-https-bugs.icu-projec.patch
 porting/Add-xptcall-support-for-SH4-processors.patch
 porting/NSS-Fix-FTBFS-on-Hurd-because-of-MAXPATHLEN.patch
 porting/Make-powerpc-not-use-static-page-sizes-in-mozjemallo.patch
@@ -12,7 +11,6 @@ prefs/Don-t-auto-disable-extensions-in-system-directories.patch
 debian-hacks/Avoid-wrong-sessionstore-data-to-keep-windows-out-of.patch
 debian-hacks/Add-another-preferences-directory-for-applications-p.patch
 debian-hacks/Don-t-register-plugins-if-the-MOZILLA_DISABLE_PLUGIN.patch
-debian-hacks/Use-a-variable-for-xulrunner-base-version-in-various.patch
 debian-hacks/Don-t-error-out-when-run-time-libsqlite-is-older-tha.patch
 debian-hacks/Add-a-2-minutes-timeout-on-xpcshell-tests.patch
 debian-hacks/Add-debian-extra-stuff-to-upstream-build-system-dire.patch
@@ -21,4 +19,3 @@ debian-hacks/Allow-to-override-ICU_DATA_FILE-from-the-environment.patch
 debian-hacks/Set-program-name-from-the-remoting-name.patch
 debian-hacks/Build-against-system-libjsoncpp.patch
 debian-hacks/Use-the-Mozilla-Location-Service-key-when-the-Google.patch
-debian-hacks/Allow-to-build-against-nspr-4.16.patch

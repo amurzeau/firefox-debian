@@ -2,7 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 <!ENTITY aboutPage.title                        "Относно &brandShortName;">
-<!ENTITY aboutPage.warningVersion               "Това е изпитателна версия на &brandShortName; и може да е нестабилна.">
+<!ENTITY aboutPage.warningVersion               "Това е изпитателно издание на &brandShortName; и може да е нестабилно.">
 <!ENTITY aboutPage.telemetryStart               " Автоматично изпраща информация за производителността, хардуера и използваните настройки към ">
 <!ENTITY aboutPage.telemetryMozillaLink         "&vendorShortName;">
 <!ENTITY aboutPage.telemetryEnd                 " за подобряване на &brandShortName;.">
@@ -21,4 +21,4 @@
 <!ENTITY aboutPage.license.label                "Лицензна информация">
 
 <!-- LOCALIZATION NOTE (aboutPage.logoTrademark): The message is explicitly about the word "Firefox" being trademarked, that's why we use it, instead of brandShortName. -->
-<!ENTITY aboutPage.logoTrademark                "Firefox и логата на Firefox са търговски марки на Mozilla Foundation.">
+<!ENTITY aboutPage.logoTrademark                "Firefox и логотипа на Firefox са търговски марки на Mozilla Foundation.">

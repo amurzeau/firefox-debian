@@ -22,11 +22,11 @@
 <!ENTITY chooseFolderMac.label        "შერჩევა…">
 <!ENTITY chooseFolderMac.accesskey    "C">
 
-<!ENTITY attachments.incoming.label   "შემოსული">
+<!ENTITY attachments.incoming.label   "მიღება">
 <!ENTITY attachments.outgoing.label   "გასული">
 
-<!ENTITY addCloudFileAccount.label        "დამატება">
-<!ENTITY addCloudFileAccount.accesskey    "A">
+<!ENTITY addCloudFileAccount1.label       "დამატება…">
+<!ENTITY addCloudFileAccount1.accesskey   "დ">
 <!ENTITY addCloudFileAccount.description  "ფაილების ბმების საცავის ახალი მომსახურების დამატება">
 <!ENTITY removeCloudFileAccount.label     "ამოღება">
 <!ENTITY removeCloudFileAccount.accesskey "R">

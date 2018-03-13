@@ -13,7 +13,7 @@
 <!-- Values for resetpassword.xul -->
 <!ENTITY resetPasswordButtonLabel "აღდგენა">
 <!ENTITY resetPassword.title  "მთავარი პაროლის განულება">
-<!ENTITY resetPassword.text  "მთავარი პაროლის განულების შემთხვევაში, დაიკარგება ყველა თქვენს მიერ შენახული ელფოსტის პაროლები, ველების მონაცემები, პერსონალური სერთიფიკატები. ნამდვილად გსურთ მთავარი პაროლის განულება?">
+<!ENTITY resetPassword.text  "მთავარი პაროლის განულების შემთხვევაში, დაიკარგება ყველა თქვენ მიერ შენახული ელფოსტის პაროლები, ველების მონაცემები, პერსონალური სერტიფიკატები. ნამდვილად გსურთ მთავარი პაროლის განულება?">
 
 <!-- Downloading a cert -->
 <!ENTITY downloadCert.title "სერთიფიკატის გადმოწერა">
@@ -26,7 +26,7 @@
 <!ENTITY downloadCert.viewCert.text "სააგენტოს სერთიფიკატის შემოწმება">
 
 <!-- Strings for the SSL client auth ask dialog -->
-<!ENTITY clientAuthAsk.title "მოთხოვნა მომხმარებლის დასადგენად">
+<!ENTITY clientAuthAsk.title "მომხმარებლის ამოცნობის მოთხოვნა">
 <!ENTITY clientAuthAsk.message1 "საიტი თქვენი ვინაობის დასადგენად, სერტიფიკატის წარდგენას ითხოვს:">
 <!ENTITY clientAuthAsk.message2 "წარსადგენი სერთიფიკატის არჩევა:">
 <!ENTITY clientAuthAsk.message3 "არჩეული სერტიფიკატის მონაცემები:">
@@ -48,4 +48,4 @@
 <!-- Strings for protectedAuth dialog -->
 <!ENTITY protectedAuth.title "უსაფრთხო შესვლა ანგარიშზე სიტყვა-ნიშნის საშუალებით">
 <!ENTITY protectedAuth.msg "გთხოვთ, დაამოწმოთ ვინაობა სიტყვა-ნიშნის საშუალებით. დამოწმების მეთოდი დამოკიდებულია, სიტყვა-ნიშნის სახესხვაობაზე.">
-<!ENTITY protectedAuth.tokenName.label "ტალონი:">
+<!ENTITY protectedAuth.tokenName.label "სიტყვა-ნიშანი:">

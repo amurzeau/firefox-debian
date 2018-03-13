@@ -39,6 +39,13 @@ available. -->
 
 <!ENTITY alwaysSubmitCrashReports1.label  "Odesílat Mozille hlášení o pádech aplikace &brandShortName;">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "c">
+
+<!ENTITY collectBrowserErrors.label          "Povolit aplikaci &brandShortName; odesílat Mozille hlášení o chybách a chybové zprávy.">
+<!ENTITY collectBrowserErrors.accesskey      "b">
+<!ENTITY collectBrowserErrorsLearnMore.label "Zjistit více">
+
+<!ENTITY sendBackloggedCrashReports.label  "Povolit aplikaci &brandShortName; odesílat nevyřízená hlášení o pádech za vás">
+<!ENTITY sendBackloggedCrashReports.accesskey "c">
 <!ENTITY crashReporterLearnMore.label    "Zjistit více">
 
 <!ENTITY networkTab.label                "Síť">
@@ -46,17 +53,20 @@ available. -->
 <!ENTITY networkProxy.label              "Nastavení připojení">
 
 <!ENTITY connectionDesc.label            "Konfigurovat připojení aplikace &brandShortName; k internetu">
+
+<!ENTITY connectionSettingsLearnMore.label "Zjistit více">
 <!ENTITY connectionSettings.label        "Nastavení…">
 <!ENTITY connectionSettings.accesskey    "e">
 
 <!ENTITY httpCache.label                 "Mezipaměť webových stránek">
 
-<!ENTITY offlineStorage2.label           "Offline obsah a uživatelská data">
-
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "Data stránek">
 <!ENTITY clearSiteData.label             "Vymazat data">
 <!ENTITY clearSiteData.accesskey         "V">
+<!ENTITY siteData1.label                 "Cookies a data stránek">
+<!ENTITY clearSiteData1.label            "Vymazat data…">
+<!ENTITY clearSiteData1.accesskey        "V">
 <!ENTITY siteDataSettings.label          "Nastavení…">
 <!ENTITY siteDataSettings.accesskey      "e">
 <!ENTITY siteDataLearnMoreLink.label     "Zjistit více">
@@ -72,8 +82,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MB">
 <!ENTITY clearCacheNow.label             "Vymazat">
 <!ENTITY clearCacheNow.accesskey         "V">
-<!ENTITY clearOfflineAppCacheNow.label   "Vymazat">
-<!ENTITY clearOfflineAppCacheNow.accesskey "y">
 <!ENTITY overrideSmartCacheSize.label    "Nepoužívat automatickou správu mezipaměti">
 <!ENTITY overrideSmartCacheSize.accesskey "N">
 
@@ -111,17 +119,6 @@ available. -->
 <!ENTITY enableSearchUpdate2.label       "Automaticky aktualizovat vyhledávací moduly">
 <!ENTITY enableSearchUpdate2.accesskey   "e">
 
-<!ENTITY offlineStorageNotify.label               "Upozornit, pokud server chce uložit obsah pro použití v režimu offline">
-<!ENTITY offlineStorageNotify.accesskey           "U">
-<!ENTITY offlineStorageNotifyExceptions.label     "Výjimky…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "k">
-
-<!ENTITY offlineAppsList3.label          "Následující servery mají povoleno ukládat obsah pro použití v režimu offline">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "Odebrat…">
-<!ENTITY offlineAppsListRemove.accesskey "d">
-<!ENTITY offlineAppRemove.confirm        "Smazat offline obsah">
-
 <!ENTITY certificateTab.label            "Certifikáty">
 <!ENTITY certPersonal2.description       "Pokud server vyžaduje váš osobní certifikát">
 <!ENTITY selectCerts.auto                "Vybrat jeden automaticky">
@@ -146,7 +143,7 @@ available. -->
                                          "Zjistit více">
 <!ENTITY limitContentProcessOption.label "Omezit počet procesů pro obsah na">
 <!ENTITY limitContentProcessOption.description
-                                         "Další procesy pro obsah mohou zlepšit výkon s více otevřenými panely, ale spotřebují také více paměti.">
+                                         "Další procesy pro obsah mohou zlepšit výkon s více otevřenými panely, ale potřebují více paměti.">
 <!ENTITY limitContentProcessOption.accesskey   "b">
 <!ENTITY limitContentProcessOption.disabledDescription
                                          "Počet procesů pro obsah lze upravit pouze při použití multiprocesového režimu aplikace &brandShortName;.">

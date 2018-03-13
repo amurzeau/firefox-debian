@@ -9,7 +9,7 @@
 <!ENTITY firstrun_privacy_message "Navegueu sense sentir-vos observat">
 <!ENTITY firstrun_privacy_subtext "La navegació privada amb protecció contra el seguiment bloca els elements que us fan el seguiment mentre navegueu i no conservarà el vostre historial quan hàgiu acabat de navegar.">
 <!ENTITY firstrun_panel_title_customize "Personalització">
-<!ENTITY firstrun_customize_message "Personalitzeu el &brandShortName; i feu-vos-el vostre.">
+<!ENTITY firstrun_customize_message "Personalitzeu el &brandShortName; i feu-lo vostre.">
 <!ENTITY firstrun_customize_subtext "Personalitzeu el &brandShortName; amb complements. Bloqueu anuncis, afegiu funcions o trieu un tema nou que reflecteixi la vostra personalitat.">
 <!ENTITY firstrun_bookmarks_title "Historial">
 <!ENTITY firstrun_bookmarks_message "Els vostres favorits, al davant i al centre">
@@ -18,8 +18,8 @@
 <!ENTITY firstrun_data_message "Menys dades, més estalvi">
 <!ENTITY firstrun_data_subtext2 "Desactiveu les imatges per estalviar dades en cada lloc que visiteu.">
 <!ENTITY firstrun_sync_title "Sync">
-<!ENTITY firstrun_sync_message2 "Continueu des d\&apos;on ho vàreu deixar.">
-<!ENTITY firstrun_sync_subtext2 "Utilitzeu el Sync per accedir a les adreces d\&apos;interès, contrasenyes i altres elements que heu desat al &brandShortName; en tots els vostres dispositius.">
+<!ENTITY firstrun_sync_message2 "Continueu des d\&apos;on ho deixeu.">
+<!ENTITY firstrun_sync_subtext2 "El Sync permet accedir a les adreces d\&apos;interès, contrasenyes i altres elements que heu desat al &brandShortName; en tots els vostres dispositius.">
 <!ENTITY firstrun_signin_message "Connecteu-vos i comenceu a utilitzar-lo">
 <!ENTITY firstrun_signin_button "Inicia la sessió al Sync">
 <!ENTITY  onboard_start_button_browser "Comença a navegar">
@@ -454,6 +454,7 @@
 <!ENTITY share_image_failed "No es pot compartir la imatge">
 <!ENTITY save_as_pdf "Desa com a PDF">
 <!ENTITY print "Imprimeix">
+<!ENTITY view_page_source "Codi font de la pàgina">
 <!ENTITY find_in_page "Cerca a la pàgina">
 <!ENTITY desktop_mode "Mostra lloc d\&apos;escriptori">
 <!ENTITY page "Pàgina">
@@ -485,7 +486,6 @@
 <!ENTITY contextmenu_open_new_tab "Obre en una pestanya nova">
 <!ENTITY contextmenu_open_private_tab "Obre en una pestanya privada">
 <!ENTITY contextmenu_remove "Elimina">
-<!ENTITY contextmenu_add_to_launcher "Afegeix a la pantalla d\&apos;inici">
 <!ENTITY contextmenu_add_page_shortcut "Afegeix una drecera a la pàgina">
 <!ENTITY contextmenu_set_as_homepage "Defineix com a pàgina d\&apos;inici">
 <!ENTITY contextmenu_share "Comparteix">
@@ -540,7 +540,6 @@
      any page is removed frome about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "S\&apos;ha eliminat la pàgina">
-
 <!ENTITY folder_removed "S\&apos;ha eliminat la carpeta">
 
 <!ENTITY bookmark_edit_title "Edita l\&apos;adreça d\&apos;interès">
@@ -818,8 +817,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      are used for a system notification that's shown to users after the app updates. -->
 <!ENTITY whatsnew_notification_title "El &brandShortName; està actualitzat">
 <!ENTITY whatsnew_notification_summary "Novetats d\&apos;aquesta versió">
-
-<!ENTITY promotion_add_to_homescreen "Afegeix a la pantalla d\&apos;inici">
 
 <!ENTITY promotion_add_page_shortcut "Afegeix una drecera a la pàgina">
 

@@ -10,7 +10,7 @@
 <!ENTITY newevent.from.label                "От" >
 <!ENTITY newevent.to.label                  "До" >
 
-<!ENTITY newevent.status.label                    "Статус" >
+<!ENTITY newevent.status.label                    "Състояние" >
 <!ENTITY newevent.status.accesskey                "С" >
 <!ENTITY newevent.eventStatus.none.label          "Не е посочен" >
 <!ENTITY newevent.eventStatus.none.accesskey      "Н" >
@@ -93,7 +93,7 @@
 <!ENTITY  event.menu.item.delete.accesskey                "И">
 <!ENTITY  event.menu.item.page.setup.label                "Настройка на страницата">
 <!ENTITY  event.menu.item.page.setup.accesskey            "К">
-<!ENTITY  event.menu.item.print.label                     "Печат">
+<!ENTITY  event.menu.item.print.label                     "Отпечатване">
 <!ENTITY  event.menu.item.print.accesskey                 "П">
 
 <!ENTITY  event.menu.edit.label                           "Редактиране">
@@ -215,10 +215,10 @@
 <!ENTITY task.from.accesskey                              "Н">
 <!ENTITY event.to.label                                   "Край:" >
 <!ENTITY event.to.accesskey                               "р">
-<!ENTITY task.to.label                                    "Крайна дата:" >
-<!ENTITY task.to.accesskey                                "й">
+<!ENTITY task.to.label                                    "Краен срок:" >
+<!ENTITY task.to.accesskey                                "р">
 <!ENTITY task.status.label                                "Състояние:" >
-<!ENTITY task.status.accesskey                            "у">
+<!ENTITY task.status.accesskey                            "н">
 <!ENTITY event.repeat.label                               "Повторение:" >
 <!ENTITY event.repeat.accesskey                           "в">
 <!ENTITY event.until.label                                "До:">

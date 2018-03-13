@@ -37,6 +37,13 @@
 </ul>
 ">
 
+<!ENTITY fileAccessDenied.title "ფაილთან წვდომა აკრძალულია">
+<!ENTITY fileAccessDenied.longDesc "
+<ul>
+  <li>შესაძლოა წაშლილია, გადატანილია ან ფაილზე წვდომის უფლებები შეზღუდულია.</li>
+</ul>
+">
+
 <!ENTITY generic.title "უკაცრავად">
 <!ENTITY generic.longDesc "
 <p>&brandShortName; ვერ ახერხებს ამ გვერდის ჩატვირთვას გარკვეული მიზეზით.</p>
@@ -85,10 +92,10 @@
 <!ENTITY netTimeout.title "კავშირის ვადა გავიდა">
 <!ENTITY netTimeout.longDesc "&sharedLongDesc;">
 
-<!ENTITY protocolNotFound.title "უცნობი ოქმი">
-<!ENTITY protocolNotFound.longDesc "
+<!ENTITY unknownProtocolFound.title "მისამართი გაუგებარი იყო">
+<!ENTITY unknownProtocolFound.longDesc "
 <ul>
-  <li>ამ მისამართის გასახსნელად შესაძლოა სხვა პროგრამის ჩადგმა მოგიწიოთ.</li>
+  <li>ამ მისამართის გასახსნელად შესაძლოა სხვა პროგრამის დაყენება იყოს საჭირო.</li>
 </ul>
 ">
 
@@ -129,12 +136,11 @@
 ">
 
 <!ENTITY nssFailure2.title "უსაფრთხო დაკავშირება ვერ მოხერხდა">
-<!ENTITY nssFailure2.longDesc "
+<!ENTITY nssFailure2.longDesc2 "
 <ul>
-  <li>გვერდი, რომლის ნახვაც გსურთ ვერ გამოჩნდება, რადგან საიტი უსაფრთხოების უმართებლო ან მიუღებელ ოქმს იყენებს.</li>
-  <li>გთხოვთ დაუკავშირდეთ ვებსაიტის მფლობელებს და აცნობოთ ამ პრობლემის შესახებ. დამატებით ისარგებლეთ დახმარების მენიუს ბრძანებით ამ დაზიანებული საიტის საპატაკოდ.</li>
-</ul>
-">
+  <li>გვერდი, რომლის ნახვასაც ცდილობთ ვერ გაიხსნება, რადგან მიღებული მონაცემების ნამდვილობის დადასტურება ვერ ხერხდება.</li>
+  <li>გთხოვთ, დაუკავშირდეთ საიტის მფლობელებს და მოახსენოთ ამ ხარვეზის შესახებ.</li>
+</ul>">
 
 <!ENTITY nssBadCert.title "უსაფრთხო დაკავშირება ვერ ხერხდება">
 <!ENTITY nssBadCert.longDesc2 "
@@ -157,23 +163,11 @@
 </ul>
 ">
 
-<!ENTITY malwareBlocked.title "საეჭვოდ მოიერიშე საიტი!">
-<!ENTITY malwareBlocked.longDesc "
-<p>მოიერიშე საიტები ცდილობენ ჩადგან პროგრამები თქვენი პირადი ინფორმაციის მოპარვის, თქვენი კომპიუტერის სხვების საირეიშოდ ან თქვენი სისტემის დაზიანების მიზნით.</p>
-<p>ვებ საიტების მფლობელებს, რომლებიც თვლიან, რომ მათი საიტი უმართებლოთაა მითითებული როგორც მოიერიშე მისამართზე <a href='http://www.stopbadware.org/home/reviewinfo' >შეუძლიათ გადახედვა მოითხოვონ</a>.</p>
-">
+<!ENTITY cspBlocked.title "შეზღუდულია, შიგთავსის უსაფრთხოების დებულების შესაბამისად">
+<!ENTITY cspBlocked.longDesc "<p>&brandShortName;-მა შეზღუდა გვერდის ჩატვირთვა, რადგან შეიცავს შიგთავსს, რომელიც მიუღებელია უსაფრთხოების დებულების შესაბამისად.</p>">
 
-<!ENTITY phishingBlocked.title "ეჭვი ვებ ყალთაბანდობაზე!">
-<!ENTITY phishingBlocked.longDesc "
-<p>ამ გვერდზე პირადი ინფორმაციის მითითებით იდენტიფიკაციის მოპარვის ან ყალთაბანდობის მსხვერპლი შეიძლება გახდეთ.</p>
-<p>ამ სახის ვებ ყალთაბანდობა ანკესობით ცნობილ მეთოდს იყენებს, როცა ყალთაბანდი გვერდები და ელფოსტა თქვენთვის სანდო წყაროების იმიტაციას ცდილობს.</p>
-">
-
-<!ENTITY cspFrameAncestorBlocked.title "დაბლოკილია შიგთავსის უსაფრთხოების პოლიტიკით">
-<!ENTITY cspFrameAncestorBlocked.longDesc "<p>&brandShortName; არ ჩატვირთავს ამ გვერდს ამ სახით უსაფრთხოების პოლიტიკის მითითების შესაბამისად.</p>">
-
-<!ENTITY corruptedContentError.title "დაზიანებული შიგთავსის შეცდომა">
-<!ENTITY corruptedContentError.longDesc "<p>გვერდი, რომლის ჩვენებაც გსურთ, არ აისახება შეცდომის გამო მონაცემთა გადატანისას.</p><ul><li>გთხოვთ მიმართოთ ვებსაიტის მფლობელებს და აცნობოთ ამ პრობლემის შესახებ.</li></ul>">
+<!ENTITY corruptedContentErrorv2.title "დაზიანებული შიგთავსის შეცდომა">
+<!ENTITY corruptedContentErrorv2.longDesc "<p>თქვენთვის სასურველი გვერდი ვერ გაიხსნება, რადგან მონაცემთა გაცვლისას მოხდა შეცდომა.</p><ul><li>გთხოვთ დაუკავშირდით საიტის მფლობელებს და შეარტყობინეთ ამ შეცდომაზე.</li></ul>">
 
 <!ENTITY securityOverride.linkText "ან გამონაკლისის დამატება შეგიძლიათ…">
 <!ENTITY securityOverride.getMeOutOfHereButton "გამაშორე აქაურობას!">
@@ -192,4 +186,11 @@ functionality specific to thunderbird. -->
 ">
 
 <!ENTITY remoteXUL.title "გარე XUL">
-<!ENTITY remoteXUL.longDesc "<p><ul><li>გთხოვთ მიმართოთ ვებსაიტის მფლობელებს და აცნობოთ ამ პრობლემის შესახებ.</li></ul></p>">
+<!ENTITY remoteXUL.longDesc "<p><ul><li>გთხოვთ მიმართოთ ვებსაიტის მფლობელებს და აცნობოთ ამ ხარვეზის შესახებ.</li></ul></p>">
+
+<!ENTITY inadequateSecurityError.title "კავშირი დაუცველია">
+<!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
+     "NS_ERROR_NET_INADEQUATE_SECURITY". -->
+<!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> იყენებს უსაფრთხოების ისეთ ტექნოლოგიას, რომელიც მოძველებული და დაუცველია. თავდამსხმელმა შესაძლოა მარტივად მიიღოს იმ მონაცემებზე წვდომა, რომელიც დაცულად მიგაჩნიათ. საიტზე შესვლამდე, აუცილებელია მისმა ხელმძღვანელობამ ეს ხარვეზი აღმოფხვრას.</p><p>შეცდომის კოდი: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
+<!ENTITY blockedByPolicyTemp.title "გვერდი შეზღუდულია">
+<!ENTITY blockedByPolicyTemp.longDesc "<p>წვდომა შეზღუდულია თქვენი ქსელის მმართველის მიერ.</p>">

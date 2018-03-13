@@ -8,6 +8,9 @@
 <!ENTITY newWindowsAsTabs.label       "פתיחת חלונות חדשים כלשוניות">
 <!ENTITY newWindowsAsTabs.accesskey   "ח">
 
+<!ENTITY newWindowsAsTabs3.label       "פתיחת קישורים בלשוניות במקום בחלונות חדשים">
+<!ENTITY newWindowsAsTabs3.accesskey   "ח">
+
 <!ENTITY warnOnCloseMultipleTabs.label      "הזהרה בעת סגירת מספר לשוניות">
 <!ENTITY warnOnCloseMultipleTabs.accesskey  "ז">
 

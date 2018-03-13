@@ -22,8 +22,8 @@
 <!ENTITY publishCmd.key "S">
 <!ENTITY publishAsCmd.label "Публикуване като…">
 <!ENTITY publishAsCmd.accesskey "у">
-<!ENTITY fileRevert.label "Връщане">
-<!ENTITY fileRevert.accesskey "щ">
+<!ENTITY fileRevert.label "Възстановяване">
+<!ENTITY fileRevert.accesskey "в">
 
 <!-- Edit menu items -->
 <!ENTITY publishSettings.label "Настройки на сайта за публикуване…">

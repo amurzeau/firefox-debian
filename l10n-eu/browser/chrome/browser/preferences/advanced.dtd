@@ -39,6 +39,13 @@ available. -->
 
 <!ENTITY alwaysSubmitCrashReports1.label  "Baimendu &brandShortName;(r)i hutsegite-txostenak Mozillara bidaltzea">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "h">
+
+<!ENTITY collectBrowserErrors.label          "Baimendu &brandShortName;(r)i nabigatzailearen errore-txostenak Mozillara bidaltzea (errore-mezuak barne)">
+<!ENTITY collectBrowserErrors.accesskey      "B">
+<!ENTITY collectBrowserErrorsLearnMore.label "Argibide gehiago">
+
+<!ENTITY sendBackloggedCrashReports.label  "Baimendu &brandShortName;(r)i atzeratutako hutsegite-txostenak zuregatik bidaltzea">
+<!ENTITY sendBackloggedCrashReports.accesskey "h">
 <!ENTITY crashReporterLearnMore.label    "Argibide gehiago">
 
 <!ENTITY networkTab.label                "Sarea">
@@ -46,17 +53,20 @@ available. -->
 <!ENTITY networkProxy.label              "Sareko proxy-a">
 
 <!ENTITY connectionDesc.label            "Konfiguratu &brandShortName; nola konektatzen den Internetera">
+
+<!ENTITY connectionSettingsLearnMore.label "Argibide gehiago">
 <!ENTITY connectionSettings.label        "Ezarpenak…">
 <!ENTITY connectionSettings.accesskey    "E">
 
 <!ENTITY httpCache.label                 "Cachean gordetako web edukia">
 
-<!ENTITY offlineStorage2.label           "Lineaz kanpoko web edukia eta erabiltzaileen datuak">
-
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "Gunearen datuak">
 <!ENTITY clearSiteData.label             "Garbitu datu guztiak">
 <!ENTITY clearSiteData.accesskey         "G">
+<!ENTITY siteData1.label                 "Cookieak eta guneetako datuak">
+<!ENTITY clearSiteData1.label            "Garbitu datuak…">
+<!ENTITY clearSiteData1.accesskey        "G">
 <!ENTITY siteDataSettings.label          "Ezarpenak…">
 <!ENTITY siteDataSettings.accesskey      "E">
 <!ENTITY siteDataLearnMoreLink.label     "Argibide gehiago">
@@ -72,8 +82,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MBtara">
 <!ENTITY clearCacheNow.label             "Garbitu orain">
 <!ENTITY clearCacheNow.accesskey         "G">
-<!ENTITY clearOfflineAppCacheNow.label   "Garbitu orain">
-<!ENTITY clearOfflineAppCacheNow.accesskey "r">
 <!ENTITY overrideSmartCacheSize.label    "Gainidatzi automatikoki cachearen kudeaketa">
 <!ENTITY overrideSmartCacheSize.accesskey "d">
 
@@ -110,17 +118,6 @@ available. -->
 
 <!ENTITY enableSearchUpdate2.label       "Eguneratu automatikoki bilaketa-motorrak">
 <!ENTITY enableSearchUpdate2.accesskey   "E">
-
-<!ENTITY offlineStorageNotify.label               "Abisatu webgune batek datuak biltegiratu nahi baditu lineaz kanpo erabiltzeko">
-<!ENTITY offlineStorageNotify.accesskey           "A">
-<!ENTITY offlineStorageNotifyExceptions.label     "Salbuespenak…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "S">
-
-<!ENTITY offlineAppsList3.label          "Ondorengo webguneek datuak gordetzeko baimena dute lineaz kanpo erabiltzeko">
-<!ENTITY offlineAppsList.height          "8em">
-<!ENTITY offlineAppsListRemove.label     "Ezabatu…">
-<!ENTITY offlineAppsListRemove.accesskey "z">
-<!ENTITY offlineAppRemove.confirm        "Ezabatu lineaz kanpo erabiltzeko datuak">
 
 <!ENTITY certificateTab.label            "Ziurtagiriak">
 <!ENTITY certPersonal2.description       "Webgune batek nire ziurtagiri pertsonala eskatzen duenean:">

@@ -4,6 +4,7 @@
 
 <!-- LOCALIZATION NOTE the term "url-classifier" should not be translated. -->
 <!ENTITY aboutUrlClassifier.pageTitle                   "Url-classifier haqqında məlumat">
+<!ENTITY aboutUrlClassifier.title                       "URL Təsnifatçısı Məlumatı">
 <!ENTITY aboutUrlClassifier.providerTitle               "Təminatçı">
 <!ENTITY aboutUrlClassifier.provider                    "Təminatçı">
 <!ENTITY aboutUrlClassifier.providerLastUpdateTime      "Son yenilənmə vaxtı">
@@ -28,6 +29,6 @@
 <!ENTITY aboutUrlClassifier.debugFileBtn                "Gündəlik Faylını Qur">
 <!ENTITY aboutUrlClassifier.debugJSLogChk               "JS Gündəliyini Qur">
 <!ENTITY aboutUrlClassifier.debugSBModules              "Təhlükəsiz Səyahət gündəliyi modulları">
-<!ENTITY aboutUrlClassifier.debugModules                "Hazırki gündəlik modulları">
+<!ENTITY aboutUrlClassifier.debugModules                "Hazırkı qeydiyyat modulları">
 <!ENTITY aboutUrlClassifier.debugSBJSModules            "Təhlükəsiz Səyahət JS gündəliyi">
-<!ENTITY aboutUrlClassifier.debugFile                   "Hazırki gündəlik faylı">
+<!ENTITY aboutUrlClassifier.debugFile                   "Hazırkı qeydiyyat faylı">

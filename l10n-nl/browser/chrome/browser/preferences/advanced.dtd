@@ -39,6 +39,13 @@ available. -->
 
 <!ENTITY alwaysSubmitCrashReports1.label  "&brandShortName; toestaan om crashrapporten naar Mozilla te verzenden">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "c">
+
+<!ENTITY collectBrowserErrors.label          "&brandShortName; toestaan om foutrapporten van de browser (waaronder foutmeldingen) naar Mozilla te verzenden">
+<!ENTITY collectBrowserErrors.accesskey      "b">
+<!ENTITY collectBrowserErrorsLearnMore.label "Meer info">
+
+<!ENTITY sendBackloggedCrashReports.label  "&brandShortName; toestaan om namens u achterstallige crashrapporten te verzenden">
+<!ENTITY sendBackloggedCrashReports.accesskey "c">
 <!ENTITY crashReporterLearnMore.label    "Meer info">
 
 <!ENTITY networkTab.label                "Netwerk">
@@ -46,17 +53,20 @@ available. -->
 <!ENTITY networkProxy.label              "Netwerkproxy">
 
 <!ENTITY connectionDesc.label            "Configureren hoe &brandShortName; verbinding maakt met het internet">
+
+<!ENTITY connectionSettingsLearnMore.label "Meer info">
 <!ENTITY connectionSettings.label        "Instellingen…">
 <!ENTITY connectionSettings.accesskey    "I">
 
 <!ENTITY httpCache.label                 "Gebufferde webinhoud">
 
-<!ENTITY offlineStorage2.label           "Offline webinhoud en gebruikersgegevens">
-
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "Websitegegevens">
 <!ENTITY clearSiteData.label             "Alle gegevens wissen">
 <!ENTITY clearSiteData.accesskey         "l">
+<!ENTITY siteData1.label                 "Cookies en websitegegevens">
+<!ENTITY clearSiteData1.label            "Gegevens wissen…">
+<!ENTITY clearSiteData1.accesskey        "e">
 <!ENTITY siteDataSettings.label          "Instellingen…">
 <!ENTITY siteDataSettings.accesskey      "s">
 <!ENTITY siteDataLearnMoreLink.label     "Meer info">
@@ -72,8 +82,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MB ruimte">
 <!ENTITY clearCacheNow.label             "Nu wissen">
 <!ENTITY clearCacheNow.accesskey         "w">
-<!ENTITY clearOfflineAppCacheNow.label   "Nu wissen">
-<!ENTITY clearOfflineAppCacheNow.accesskey "N">
 <!ENTITY overrideSmartCacheSize.label    "Automatisch bufferbeheer negeren">
 <!ENTITY overrideSmartCacheSize.accesskey "A">
 
@@ -110,17 +118,6 @@ available. -->
 
 <!ENTITY enableSearchUpdate2.label       "Zoekmachines automatisch bijwerken">
 <!ENTITY enableSearchUpdate2.accesskey   "Z">
-
-<!ENTITY offlineStorageNotify.label               "Vertellen wanneer een website vraagt gegevens op te slaan voor offlinegebruik">
-<!ENTITY offlineStorageNotify.accesskey           "e">
-<!ENTITY offlineStorageNotifyExceptions.label     "Uitzonderingen…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "U">
-
-<!ENTITY offlineAppsList3.label          "De volgende websites hebben toestemming om gegevens op te slaan voor offlinegebruik">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "Verwijderen…">
-<!ENTITY offlineAppsListRemove.accesskey "V">
-<!ENTITY offlineAppRemove.confirm        "Offlinegegevens verwijderen">
 
 <!ENTITY certificateTab.label            "Certificaten">
 <!ENTITY certPersonal2.description       "Wanneer een server om uw persoonlijke certificaat vraagt">

@@ -75,7 +75,7 @@
 <!ENTITY  mediaSaveAs           "შენახვა როგორც…">
 <!ENTITY  mediaSaveAs.accesskey "A">
 <!ENTITY  mediaSaveAs2.accesskey "e">
-<!ENTITY  mediaPreview          "მედიის ესკიზი">
+<!ENTITY  mediaPreview          "მედიაფაილის შეთვალიერება:">
 
 <!ENTITY  feedTab               "არხები">
 <!ENTITY  feedTab.accesskey     "F">
@@ -110,11 +110,11 @@
 <!ENTITY  securityView.identity.domain   "ვებ საიტი: ">
 <!ENTITY  securityView.identity.verifier "შეამოწმა: ">
 
-<!ENTITY  securityView.privacy.header                   "კონფიდენციალობა და ისტორია">
+<!ENTITY  securityView.privacy.header                   "პირადულობა და ისტორია">
 <!ENTITY  securityView.privacy.history                  "ეს საიტი დღემდე გამიხსნია?">
 <!ENTITY  securityView.privacy.cookies                  "ინახავს ეს საიტი ჩემს კომპიუტერში მონაცემებს (ფუნთუშებს)?">
 <!ENTITY  securityView.privacy.viewCookies              "ფუნთუშების ნახვა">
-<!ENTITY  securityView.privacy.viewCookies.accessKey    "k">
+<!ENTITY  securityView.privacy.viewCookies.accessKey    "თ">
 <!ENTITY  securityView.privacy.passwords                "ამ საიტისთვის რაიმე პაროლი შენახული მაქვს?">
 <!ENTITY  securityView.privacy.viewPasswords            "შენახული პაროლების ჩვენება">
 <!ENTITY  securityView.privacy.viewPasswords.accessKey  "w">

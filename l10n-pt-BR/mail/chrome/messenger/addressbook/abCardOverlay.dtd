@@ -74,7 +74,7 @@
 <!ENTITY HomeCountry.accesskey          "P">
 <!ENTITY HomeWebPage.label              "Endereço web:">
 <!ENTITY HomeWebPage.accesskey          "w">
-<!ENTITY Birthday.label                 "Aniversário:">
+<!ENTITY Birthday.label                 "Data de nascimento:">
 <!ENTITY Birthday.accesskey             "v">
 <!ENTITY In.label                       "">
 <!ENTITY Year.placeholder               "Ano">
@@ -88,7 +88,7 @@
 <!ENTITY JobTitle.accesskey             "C">
 <!ENTITY Department.label               "Setor:">
 <!ENTITY Department.accesskey           "r">
-<!ENTITY Company.label                  "Empresa:">
+<!ENTITY Company.label                  "Organização:">
 <!ENTITY Company.accesskey              "m">
 <!ENTITY WorkAddress.label              "Endereço:">
 <!ENTITY WorkAddress.accesskey          "n">
@@ -115,7 +115,7 @@
 <!ENTITY Custom3.accesskey              "3">
 <!ENTITY Custom4.label                  "Personalizado 4:">
 <!ENTITY Custom4.accesskey              "4">
-<!ENTITY Notes.label                    "Observações:">
+<!ENTITY Notes.label                    "Notas:">
 <!ENTITY Notes.accesskey                "v">
 
 <!ENTITY Chat.tab                       "Bate-papo">
@@ -134,20 +134,20 @@
 <!ENTITY MSN2.accesskey                 "N">
 <!ENTITY ICQ.label                      "ICQ:">
 <!ENTITY ICQ.accesskey                  "I">
-<!ENTITY XMPP.label                     "Jabber ID:">
+<!ENTITY XMPP.label                     "ID do Jabber:">
 <!ENTITY XMPP.accesskey                 "J">
 <!ENTITY IRC.label                      "Apelido do IRC:">
 <!ENTITY IRC.accesskey                  "R">
 
 <!ENTITY Photo.tab                      "Foto">
 <!ENTITY Photo.accesskey                "F">
-<!ENTITY PhotoDesc.label                "Selecione uma destas opções:">
+<!ENTITY PhotoDesc.label                "Escolha uma das seguintes:">
 <!ENTITY GenericPhoto.label             "Foto genérica">
 <!ENTITY GenericPhoto.accesskey         "c">
 <!ENTITY DefaultPhoto.label             "Padrão">
 <!ENTITY PhotoFile.label                "Neste computador">
 <!ENTITY PhotoFile.accesskey            "N">
-<!ENTITY BrowsePhoto.label              "Procurar…">
+<!ENTITY BrowsePhoto.label              "Navegar">
 <!ENTITY BrowsePhoto.accesskey          "r">
 <!ENTITY PhotoURL.label                 "Na web">
 <!ENTITY PhotoURL.accesskey             "w">

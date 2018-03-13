@@ -111,6 +111,8 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 <!ENTITY pageInfoCmd.label "Humpito Hello">
 <!ENTITY pageInfoCmd.accesskey "H">
 <!ENTITY pageInfoCmd.commandkey "i">
+<!ENTITY ldbCmd.label "Momtirgel ella Lelngo">
+<!ENTITY ldbCmd.accesskey "L">
 <!ENTITY mirrorTabCmd.label "Daartin Tabbere">
 <!ENTITY mirrorTabCmd.accesskey "D">
 <!-- LOCALIZATION NOTE (enterFullScreenCmd.label, exitFullScreenCmd.label):
@@ -125,6 +127,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "Hollu Tabbe Fof">
 <!ENTITY showAllTabsCmd.accesskey "F">
 <!ENTITY toggleReaderMode.key "R">
+
+<!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "Teelto &syncBrand.shortName.label;">
 <!ENTITY fxaSignedIn.tooltip "Uddit Cuɓoraaɗe &syncBrand.shortName.label;">
@@ -192,6 +196,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY backCmd.accesskey            "B">
 <!ENTITY backButton.tooltip           "Rutto hello wooto">
 <!ENTITY forwardCmd.label             "Yeeso">
+<!ENTITY forwardCmd.accesskey         "F">
 <!ENTITY forwardButton.tooltip        "Yah yeeso hello wooto">
 <!ENTITY backForwardButtonMenu.tooltip "Dobo ñaamo walla fooɗ ngam hollude aslol">
 <!ENTITY backForwardButtonMenuMac.tooltip "Wertu ngam hollude aslol">
@@ -226,17 +231,19 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Toppito pirgol hello">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Toppito kuutoragol topirde DRM">
 
+<!ENTITY urlbar.midiNotificationAnchor.tooltip            "Uddit alluwal MIDI">
+
 <!ENTITY urlbar.cameraBlocked.tooltip            "A daaƴii kameraa maa e ndee lowre.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "A daaƴii mikoroo maa e ndee lowre.">
 <!ENTITY urlbar.screenBlocked.tooltip            "A daaƴii ndee lowre e lollingol yaynirde maa.">
 <!ENTITY urlbar.geolocationBlocked.tooltip       "A daaƴii humpito nokkuure e ndee lowre.">
-<!ENTITY urlbar.indexedDBBlocked.tooltip         "A daaƴii ndesgu keɓe e ndee lowre.">
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "A daaƴii tintine e ndee lowre.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "A daaƴii ndesgu duumiingu e ndee lowre.">
-
 <!ENTITY urlbar.popupBlocked.tooltip             "A faddiima kenorɗe pop-up nder ndee lowre.">
 
 <!ENTITY urlbar.canvasBlocked.tooltip            "A daaƴii aaftogol keɓe keertol wonande ndee lowre geese.">
+
+<!ENTITY urlbar.midiBlocked.tooltip              "A daaƴii keɓgol MIDI wonande ndee lowre geese.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Hollir aslol">
 
@@ -302,7 +309,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY newNavigatorCmd.accesskey      "H">
 <!ENTITY newPrivateWindow.label     "Henorde Suturo Hesere">
 <!ENTITY newPrivateWindow.accesskey "H">
-<!ENTITY newNonRemoteWindow.label   "Henorde Non-e10s Hesere">
 
 <!ENTITY editMenu.label         "Taƴto">
 <!ENTITY editMenu.accesskey       "T">
@@ -357,18 +363,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllHistoryCmd2.label "Hollu Asli ɗii Fof">
 <!ENTITY showAllHistoryCmd.commandkey "H">
 
-<!ENTITY appMenuCustomize.label "Heertin">
-<!ENTITY appMenuCustomize.tooltip "Heertin Dosol e Palal Kuutorɗe">
-<!ENTITY appMenuCustomizeExit.label "Yaltu Keertingol">
-<!ENTITY appMenuCustomizeExit.tooltip "Gasnu Keertingol">
-
 <!ENTITY appMenuHistory.showAll.label "Hollu Asli ɗii Fof">
 <!ENTITY appMenuHistory.clearRecent.label "Momtu Aslol Sakketol…">
 <!ENTITY appMenuHistory.restoreSession.label "Artir Yillannde Ɓennunde">
 <!ENTITY appMenuHistory.viewSidebar.label "Hollu Aslol Palal Sawndo">
 <!ENTITY appMenuHistory.recentHistory.label "Aslol Cakkitiingol">
 <!ENTITY appMenuHelp.label "&amp;Ballal">
-<!ENTITY appMenuHelp.tooltip "Uddit ballitorgol">
 
 <!ENTITY appMenuRemoteTabs.label "Tabbe synckaaɗe">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.notabs.label): This is shown beneath
@@ -391,6 +391,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.title "Alaa tabbe cynkaaɗe… tawo!">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Aɗa yiyde tabbe maa iwɗe e kaɓirɗi goɗɗi?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Cuɓoraaɗe Sync">
+<!ENTITY appMenuRemoteTabs.opensyncprefs.label "Uddit Cuɓoraaɗe Jahdingol">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Seŋo ngam yiyde tabbe iwɗe e kaɓirɗi maa goɗɗi.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Konte maa ina cokli ƴeewteede.">
 <!ENTITY appMenuRemoteTabs.signin.label "Seŋo nga syncude">
@@ -443,14 +444,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Timmitere:">
 <!ENTITY urlbar.switchToTab.label     "Yah to tabbere:">
-
-<!ENTITY urlbar.searchSuggestionsNotification.question "Aɗa yiɗi ƴellitde dawtol maa e njiilaw so heɓde basiye?">
-<!ENTITY urlbar.searchSuggestionsNotification.learnMore "Ɓeydu humpito…">
-<!ENTITY urlbar.searchSuggestionsNotification.learnMore.accesskey "l">
-<!ENTITY urlbar.searchSuggestionsNotification.disable "Alaa">
-<!ENTITY urlbar.searchSuggestionsNotification.disable.accesskey "n">
-<!ENTITY urlbar.searchSuggestionsNotification.enable "Eey">
-<!ENTITY urlbar.searchSuggestionsNotification.enable.accesskey "y">
 
 <!-- LOCALIZATION NOTE (urlbar.searchSuggestionsNotification.hintPrefix): Shown just before the suggestions opt-out hint. -->
 <!ENTITY urlbar.searchSuggestionsNotification.hintPrefix "Toɓɓu:">
@@ -729,8 +722,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageStylePersistentOnly.label "Pannol Hello Jaddol">
 <!ENTITY pageStylePersistentOnly.accesskey "P">
 
-<!ENTITY pageReportIcon.tooltip            "Waylu teelte palogol cuppitte e ndee lowre">
-
 <!ENTITY allowPopups.accesskey "p">
 <!-- On Windows we use the term "Options" to describe settings, but
      on Linux and Mac OS X we use "Preferences" - carry that distinction
@@ -862,8 +853,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncToolbarButton.label      "Sanngoɗin">
 
 <!ENTITY customizeMode.menuAndToolbars.header3 "Daas geɗe maa katojinaaɗe to palal kuutorɗe toh walla dosol beelowel.">
-<!ENTITY customizeMode.menuAndToolbars.empty "Ina sokli kaɓirɗe goɗɗe">
-<!ENTITY customizeMode.menuAndToolbars.emptyLink "Suɓo e nder ujunnaaje ɓeyditte">
 <!ENTITY customizeMode.restoreDefaults "Artir Goowaaɗe">
 <!ENTITY customizeMode.done "Gasii">
 <!ENTITY customizeMode.titlebar "Tiitoonde palal">
@@ -876,7 +865,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.lwthemes.menuManage.accessKey "M">
 <!ENTITY customizeMode.lwthemes.menuGetMore "Heɓ Ciŋkooje Goɗɗe">
 <!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "G">
-<!ENTITY customizeMode.emptyOverflowList.description "Daas njoɗɗinaa ɗoo ngeɗon ɓaɗoo juuɗe maa, tawa wonaa e palal kuutorɗe...">
 <!ENTITY customizeMode.overflowList.title2 "Dosol Beelewol">
 <!ENTITY customizeMode.overflowList.description "Daas njoɗɗinaa geɗe ngam ɓadinde ɗum'en tawa ngonaani e palal kuutorɗe maa…">
 <!ENTITY customizeMode.uidensity "Cukkeendi">
@@ -1007,7 +995,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageActionButton.tooltip "Baɗe hello">
 <!ENTITY pageAction.addToUrlbar.label "Ɓeydu to Palal Ñiiɓirɗe">
 <!ENTITY pageAction.removeFromUrlbar.label "Ittu e Palal Ñiiɓirɗe">
-
 <!ENTITY pageAction.allowInUrlbar.label "Hollu Palal Ñiiɓirde">
 <!ENTITY pageAction.disallowInUrlbar.label "Woto Hollu e Palal Ñiiɓirde">
 <!ENTITY pageAction.manageExtension.label "Yiil Timmitere…">
@@ -1022,3 +1009,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      used as a textual label for the indicator used by assistive technology
      users. -->
 <!ENTITY accessibilityIndicator.tooltip "Fannuuji Weeɓitaare Kurminama">
+
+<!-- LOCALIZATION NOTE: (addonPostInstallMessage.label):
+     The first <image> tag is replaced with the icon for the add-ons menu.
+     The second <image> tag is replaced with the icon for the toolbar menu. -->

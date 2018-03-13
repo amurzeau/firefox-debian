@@ -3,6 +3,9 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY  trackingProtectionHeader2.label      "Gwokke ikom lubo kor">
+<!ENTITY  trackingProtection2.radioGroupLabel  "Tii ki Gwokke ikom lubo kor me gengo lulub kor ma ngene">
+<!ENTITY  trackingProtection3.description      "Gwokke ikom lubo kor gengo lulub kor me wiyamo ma coko data me yeny mamegi ki ii kakube mapol.">
+<!ENTITY  trackingProtection3.radioGroupLabel  "Tii ki Gwokke ikom lubo kor me gengo lulub kor ma ngene">
 <!ENTITY  trackingProtectionAlways.label       "Jwijwi">
 <!ENTITY  trackingProtectionAlways.accesskey   "w">
 <!ENTITY  trackingProtectionPrivate.label      "I dirica me mung manyen keken">
@@ -10,19 +13,19 @@
 <!ENTITY  trackingProtectionNever.label        "Pe matwal">
 <!ENTITY  trackingProtectionNever.accesskey    "a">
 <!ENTITY  trackingProtectionLearnMore.label    "Nong ngec mapol">
+<!ENTITY  trackingProtectionLearnMore2.label    "Nong ngec mapol ikom Gwokke ikom lubo kor ki mung mamegi">
 <!ENTITY  trackingProtectionExceptions.label   "Ma kiweko woko…">
 <!ENTITY  trackingProtectionExceptions.accesskey "M">
 
-<!-- LOCALIZATION NOTE (trackingProtectionPBM5.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel. -->
-<!ENTITY trackingProtectionPBM5.label         "Tii ki Gwokke ikom lubo kor i Dirica me Mung">
-<!ENTITY trackingProtectionPBM5.accesskey     "M">
-
 <!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the release and beta channel. -->
+<!ENTITY trackingProtectionPBM6.label         "Tii ki Gwokke ikom lubo kor ii Yeny me mung me gengo lulub kor ma ngene">
 <!ENTITY trackingProtectionPBMLearnMore.label "Nong ngec mapol">
 <!ENTITY changeBlockList2.label               "Lok jami ma i dul…">
 <!ENTITY changeBlockList2.accesskey           "L">
 
+<!ENTITY  doNotTrack.description        "Cwal bot kakube ngec me “Pe i lub kor” ni pe imito ki lub kor in">
 <!ENTITY  doNotTrack.learnMore.label    "Nong ngec mapol">
+<!ENTITY  doNotTrack.default.label      "Keken ka itye katic ki Gwokke ikom lubo kor">
 <!ENTITY  doNotTrack.always.label       "Jwijwi">
 
 <!ENTITY  history.label                 "Gin mukato">
@@ -46,6 +49,14 @@
 
 <!ENTITY  acceptThirdParty2.pre.label     "Yee angija ki bot pati me adek">
 <!ENTITY  acceptThirdParty2.pre.accesskey "y">
+
+<!ENTITY  acceptCookies3.label          "Yee angija ki data me kakube ki ii kakube">
+<!ENTITY  acceptCookies3.accesskey      "Y">
+
+<!ENTITY  blockCookies.label            "Geng angija ki data me kakube (twero weko kakube bale)">
+<!ENTITY  blockCookies.accesskey        "G">
+
+<!ENTITY  acceptThirdParty3.pre.accesskey "y">
 <!ENTITY  acceptThirdParty.always.label   "Jwijwi">
 <!ENTITY  acceptThirdParty.never.label    "Pe matwal">
 <!ENTITY  acceptThirdParty.visited.label  "Ki i ma kilimo">
@@ -86,6 +97,9 @@
 <!ENTITY  dontrememberActions.pre.label          "I romo mito bene i ">
 <!ENTITY  dontrememberActions.clearHistory.label "jwa woko gin mukato kombedi weng">
 <!ENTITY  dontrememberActions.post.label         ".">
+
+<!ENTITY  clearHistoryButton.label       "Jwa gin mukato…">
+<!ENTITY  clearHistoryButton.accesskey   "j">
 
 <!ENTITY  privateBrowsingPermanent2.label "Jwijwi tii ki kit yeny me mung">
 <!ENTITY  privateBrowsingPermanent2.accesskey "m">

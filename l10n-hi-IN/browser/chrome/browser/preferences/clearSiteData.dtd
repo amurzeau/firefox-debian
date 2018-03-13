@@ -1,0 +1,19 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!ENTITY window.title                 "डेटा मिटायें">
+<!ENTITY window.width                 "35em">
+
+<!ENTITY windowClose.key              "w">
+
+<!ENTITY clearSiteData.label          "कुकीज़ और साइट डेटा">
+<!ENTITY clearSiteData.accesskey      "S">
+<!ENTITY clearSiteData.description    "यदि मिटाते हैं तो आप वेबसाइटों से साईन आउट हो जायेंगे">
+
+<!ENTITY clearCache.accesskey         "W">
+
+<!ENTITY button.cancel.label          "रद्द करें">
+<!ENTITY button.cancel.accesskey      "C">
+<!ENTITY button.clear.label           "मिटायें">
+<!ENTITY button.clear.accesskey       "I">

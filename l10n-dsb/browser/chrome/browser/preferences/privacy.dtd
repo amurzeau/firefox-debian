@@ -5,6 +5,8 @@
 <!ENTITY  trackingProtectionHeader2.label      "Slědowański šćit">
 <!ENTITY  trackingProtection2.description      "Slědowanje jo gromaźenje wašych pśeglědowańskich datow pśez někotare websedła. Slědowanje dajo se wužywaś, aby profil twóriło a wopśimjeśe na zakłaźe wašych pśeglědowańskich a wósobinskich datow pokazało.">
 <!ENTITY  trackingProtection2.radioGroupLabel  "Slědowański šćit wužywaś, aby znate pśeslědowarje blokěrował">
+<!ENTITY  trackingProtection3.description      "Slědowański šćit pśeslědowaki online blokěrujo, kótarež waše pśeglědowańske daty pśez někotare websedła gromaźe.">
+<!ENTITY  trackingProtection3.radioGroupLabel  "Slědowański šćit wužywaś, aby blokěrował znate pśeslědowaki">
 <!ENTITY  trackingProtectionAlways.label       "Pśecej">
 <!ENTITY  trackingProtectionAlways.accesskey   "c">
 <!ENTITY  trackingProtectionPrivate.label      "Jano w priwatnych woknach">
@@ -12,13 +14,11 @@
 <!ENTITY  trackingProtectionNever.label        "Nigda">
 <!ENTITY  trackingProtectionNever.accesskey    "N">
 <!ENTITY  trackingProtectionLearnMore.label    "Dalšne informacije">
+<!ENTITY  trackingProtectionLearnMore2.label    "Zgóńśo wěcej wó slědowańskem šćiśe a swójej priwatnosći">
 <!ENTITY  trackingProtectionExceptions.label   "Wuwześa…">
 <!ENTITY  trackingProtectionExceptions.accesskey "u">
 
-<!-- LOCALIZATION NOTE (trackingProtectionPBM5.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel. -->
-<!ENTITY trackingProtectionPBM5.label         "Slědowański šćit w priwatnych woknach wužywaś">
-<!ENTITY trackingProtectionPBM5.accesskey     "r">
-<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the nightly channel. -->
+<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the release and beta channel. -->
 <!ENTITY trackingProtectionPBM6.label         "Slědowański šćit w priwatnem modusu wužywaś, aby znate pśeslědowarje blokěrował">
 <!ENTITY trackingProtectionPBM6.accesskey     "r">
 <!ENTITY trackingProtectionPBMLearnMore.label "Dalšne informacije">
@@ -51,6 +51,15 @@
 
 <!ENTITY  acceptThirdParty2.pre.label     "Cookieje tśeśich póbitowarjow akceptěrowaś">
 <!ENTITY  acceptThirdParty2.pre.accesskey "t">
+
+<!ENTITY  acceptCookies3.label          "Cookieje a sedłowe daty z websedłow akceptěrowaś">
+<!ENTITY  acceptCookies3.accesskey      "C">
+
+<!ENTITY  blockCookies.label            "Cookieje a sedłowe daty blokěrowaś (mógło zawinowaś, až websedła njefunkcioněruju)">
+<!ENTITY  blockCookies.accesskey        "s">
+
+<!ENTITY  acceptThirdParty3.pre.label     "Cookieje a sedłowe daty tśeśich póbitowarjow akceptěrowaś">
+<!ENTITY  acceptThirdParty3.pre.accesskey "t">
 <!ENTITY  acceptThirdParty.always.label   "Pśecej">
 <!ENTITY  acceptThirdParty.never.label    "Nigda">
 <!ENTITY  acceptThirdParty.visited.label  "Jano wót woglědanych tśeśich">
@@ -92,6 +101,9 @@
 <!ENTITY  dontrememberActions.pre.label          "Cośo snaź ">
 <!ENTITY  dontrememberActions.clearHistory.label "wšu tuchylnu historiju wuprozniś">
 <!ENTITY  dontrememberActions.post.label         ".">
+
+<!ENTITY  clearHistoryButton.label       "Historiju lašowaś…">
+<!ENTITY  clearHistoryButton.accesskey   "i">
 
 <!ENTITY  privateBrowsingPermanent2.label "Pśecej priwatny modus wužywaś">
 <!ENTITY  privateBrowsingPermanent2.accesskey "p">

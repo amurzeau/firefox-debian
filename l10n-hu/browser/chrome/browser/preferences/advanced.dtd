@@ -39,6 +39,13 @@ available. -->
 
 <!ENTITY alwaysSubmitCrashReports1.label  "Engedélyezés, hogy a &brandShortName; hibajelentéseket küldhessen a Mozillának">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "h">
+
+<!ENTITY collectBrowserErrors.label          "Engedélyezi a &brandShortName; számára, hogy böngésző hibajelentéseket (köztük hibaüzeneteket) küldjön a Mozilla számára">
+<!ENTITY collectBrowserErrors.accesskey      "b">
+<!ENTITY collectBrowserErrorsLearnMore.label "További tudnivalók">
+
+<!ENTITY sendBackloggedCrashReports.label  "A &brandShortName; a háttérben küldhet összeomlási jelentéseket az Ön nevében">
+<!ENTITY sendBackloggedCrashReports.accesskey "j">
 <!ENTITY crashReporterLearnMore.label    "További tudnivalók">
 
 <!ENTITY networkTab.label                "Hálózat">
@@ -46,17 +53,20 @@ available. -->
 <!ENTITY networkProxy.label              "Hálózati proxy">
 
 <!ENTITY connectionDesc.label            "A &brandShortName; internetkapcsolatának megadása">
+
+<!ENTITY connectionSettingsLearnMore.label "További tudnivalók">
 <!ENTITY connectionSettings.label        "Beállítások…">
 <!ENTITY connectionSettings.accesskey    "B">
 
 <!ENTITY httpCache.label                 "Gyorsítótárazott webtartalom">
 
-<!ENTITY offlineStorage2.label           "Offline webtartalom és felhasználói adatok">
-
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "Oldal adatai">
 <!ENTITY clearSiteData.label             "Minden adat törlése">
 <!ENTITY clearSiteData.accesskey         "d">
+<!ENTITY siteData1.label                 "Sütik és oldaladatok">
+<!ENTITY clearSiteData1.label            "Adatok törlése…">
+<!ENTITY clearSiteData1.accesskey        "t">
 <!ENTITY siteDataSettings.label          "Beállítások…">
 <!ENTITY siteDataSettings.accesskey      "B">
 <!ENTITY siteDataLearnMoreLink.label     "További tudnivalók">
@@ -72,8 +82,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MB">
 <!ENTITY clearCacheNow.label             "Törlés most">
 <!ENTITY clearCacheNow.accesskey         "T">
-<!ENTITY clearOfflineAppCacheNow.label   "Törlés most">
-<!ENTITY clearOfflineAppCacheNow.accesskey "m">
 <!ENTITY overrideSmartCacheSize.label    "Az automatikus gyorsítótár-kezelés felülbírálása">
 <!ENTITY overrideSmartCacheSize.accesskey "a">
 
@@ -110,17 +118,6 @@ available. -->
 
 <!ENTITY enableSearchUpdate2.label       "Keresőszolgáltatások automatikus frissítése">
 <!ENTITY enableSearchUpdate2.accesskey   "u">
-
-<!ENTITY offlineStorageNotify.label               "Figyelmeztetés, ha a webhely adatokat akar tárolni kapcsolat nélküli használatra">
-<!ENTITY offlineStorageNotify.accesskey           "w">
-<!ENTITY offlineStorageNotifyExceptions.label     "Kivételek…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "K">
-
-<!ENTITY offlineAppsList3.label          "A következő webhelyek tárolhatnak adatokat kapcsolat nélküli használatra">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "Eltávolítás…">
-<!ENTITY offlineAppsListRemove.accesskey "E">
-<!ENTITY offlineAppRemove.confirm        "Kapcsolat nélküli adatok eltávolítása">
 
 <!ENTITY certificateTab.label            "Tanúsítványok">
 <!ENTITY certPersonal2.description       "Ha a kiszolgáló elkéri a személyes tanúsítványt">

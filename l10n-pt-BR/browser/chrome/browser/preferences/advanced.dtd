@@ -39,6 +39,13 @@ available. -->
 
 <!ENTITY alwaysSubmitCrashReports1.label  "Permitir que o &brandShortName; envie relatórios de travamento para a Mozilla">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "t">
+
+<!ENTITY collectBrowserErrors.label          "Permitir que o &brandShortName; envie relatórios de erro do navegador (incluindo mensagens de erro) para a Mozilla">
+<!ENTITY collectBrowserErrors.accesskey      "b">
+<!ENTITY collectBrowserErrorsLearnMore.label "Saber mais">
+
+<!ENTITY sendBackloggedCrashReports.label  "Permitir ao &brandShortName; enviar relatórios de travamento em seu nome">
+<!ENTITY sendBackloggedCrashReports.accesskey "e">
 <!ENTITY crashReporterLearnMore.label    "Saber mais">
 
 <!ENTITY networkTab.label                "Rede">
@@ -46,17 +53,20 @@ available. -->
 <!ENTITY networkProxy.label              "Proxy de Rede">
 
 <!ENTITY connectionDesc.label            "Configurar como o &brandShortName; se conecta à internet">
+
+<!ENTITY connectionSettingsLearnMore.label "Saber mais">
 <!ENTITY connectionSettings.label        "Configurar conexão…">
 <!ENTITY connectionSettings.accesskey    "e">
 
 <!ENTITY httpCache.label                 "Conteúdo Web em cache">
 
-<!ENTITY offlineStorage2.label           "Conteúdo web off-line e dados do usuário">
-
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "Dados do site">
 <!ENTITY clearSiteData.label             "Limpar todos os dados">
 <!ENTITY clearSiteData.accesskey         "L">
+<!ENTITY siteData1.label                 "Cookies e Dados de sites">
+<!ENTITY clearSiteData1.label            "Limpar dados…">
+<!ENTITY clearSiteData1.accesskey        "L">
 <!ENTITY siteDataSettings.label          "Configurações…">
 <!ENTITY siteDataSettings.accesskey      "i">
 <!ENTITY siteDataLearnMoreLink.label     "Saber mais">
@@ -72,8 +82,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MB de espaço">
 <!ENTITY clearCacheNow.label             "Limpar agora">
 <!ENTITY clearCacheNow.accesskey         "L">
-<!ENTITY clearOfflineAppCacheNow.label   "Limpar agora">
-<!ENTITY clearOfflineAppCacheNow.accesskey "m">
 <!ENTITY overrideSmartCacheSize.label    "Substituir o gerenciamento automático de cache">
 <!ENTITY overrideSmartCacheSize.accesskey "o">
 
@@ -95,32 +103,21 @@ available. -->
 <!ENTITY updateApplication.version.pre   "Versão ">
 <!ENTITY updateApplication.version.post  "">
 <!ENTITY updateApplication.description   "Permitir que o &brandShortName;">
-<!ENTITY updateAuto3.label               "Instalar atualizações automaticamente (recomendado)">
+<!ENTITY updateAuto3.label               "Instale atualizações automaticamente (recomendado)">
 <!ENTITY updateAuto3.accesskey           "A">
-<!ENTITY updateCheckChoose2.label        "Verificar atualizações, mas deixa você optar por instalá-las">
+<!ENTITY updateCheckChoose2.label        "Busque atualizações, mas permita que você opte por instalá-las">
 <!ENTITY updateCheckChoose2.accesskey    "C">
-<!ENTITY updateManual2.label             "Nunca verificar se há atualizações (não recomendado)">
+<!ENTITY updateManual2.label             "Nunca busque atualizações (não recomendado)">
 <!ENTITY updateManual2.accesskey         "N">
 
 <!ENTITY updateHistory2.label            "Mostrar histórico de atualizações…">
 <!ENTITY updateHistory2.accesskey        "p">
 
-<!ENTITY useService.label                "Usar um serviço para instalar atualizações em segundo plano">
+<!ENTITY useService.label                "Use um serviço para instalar atualizações em segundo plano">
 <!ENTITY useService.accesskey            "s">
 
-<!ENTITY enableSearchUpdate2.label       "Atualizar automaticamente os mecanismos de pesquisa">
+<!ENTITY enableSearchUpdate2.label       "Atualize automaticamente os mecanismos de pesquisa">
 <!ENTITY enableSearchUpdate2.accesskey   "e">
-
-<!ENTITY offlineStorageNotify.label               "Informar quando um site solicitar armazenamento para uso offline">
-<!ENTITY offlineStorageNotify.accesskey           "t">
-<!ENTITY offlineStorageNotifyExceptions.label     "Exceções…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "x">
-
-<!ENTITY offlineAppsList3.label          "Estes sites tem permissão de armazenar dados para uso off-line">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "Remover…">
-<!ENTITY offlineAppsListRemove.accesskey "R">
-<!ENTITY offlineAppRemove.confirm        "Remover dados off-line">
 
 <!ENTITY certificateTab.label            "Certificados">
 <!ENTITY certPersonal2.description       "Quando um servidor solicita seu certificado pessoal">

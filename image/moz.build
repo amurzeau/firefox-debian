@@ -6,7 +6,7 @@
 
 DIRS += ['build', 'decoders', 'encoders']
 
-if CONFIG['FUZZING']:
+if CONFIG['FUZZING_INTERFACES']:
     DIRS += ['test/fuzzing']
 
 with Files('**'):
@@ -36,13 +36,13 @@ XPIDL_SOURCES += [
 XPIDL_MODULE = 'imglib2'
 
 EXPORTS += [
-    'DrawResult.h',
     'FrameTimeout.h',
     'ImageCacheKey.h',
     'ImageLogging.h',
     'ImageMetadata.h',
     'ImageOps.h',
     'ImageRegion.h',
+    'ImgDrawResult.h',
     'imgLoader.h',
     'imgRequest.h',
     'imgRequestProxy.h',
@@ -111,7 +111,7 @@ CXXFLAGS += CONFIG['MOZ_CAIRO_CFLAGS']
 
 LOCAL_INCLUDES += CONFIG['SKIA_INCLUDES']
 
-if CONFIG['GNU_CXX']:
+if CONFIG['CC_TYPE'] in ('clang', 'gcc'):
     CXXFLAGS += ['-Wno-error=shadow']
 
 if CONFIG['FUZZING']:

@@ -341,6 +341,7 @@
 <!ENTITY share_image_failed "Tego obrazu nie można udostępnić">
 <!ENTITY save_as_pdf "Zapisz jako PDF">
 <!ENTITY print "Drukuj">
+<!ENTITY view_page_source "Pokaż źródło strony">
 <!ENTITY desktop_mode "Tryb stacjonarny">
 <!ENTITY page "Strona">
 <!ENTITY find_in_page "Znajdź na stronie">
@@ -361,7 +362,6 @@
 
 <!ENTITY contextmenu_open_new_tab "Otwórz w nowej karcie">
 <!ENTITY contextmenu_remove "Usuń">
-<!ENTITY contextmenu_add_to_launcher "Dodaj do ekranu głównego">
 <!ENTITY contextmenu_add_page_shortcut "Dodaj skrót do strony">
 <!ENTITY contextmenu_set_as_homepage "Ustaw jako stronę domową">
 <!ENTITY contextmenu_share "Udostępnij">
@@ -582,13 +582,13 @@
 
 <!ENTITY unsupported_sdk_version "Ta wersja przeglądarki &brandShortName; nie może działać na tym urządzeniu (&formatS1;, &formatS2;). Proszę pobrać właściwą wersję.">
 
+<!ENTITY corrupt_apk "Nie można otworzyć przeglądarki &brandShortName;. Proszę zainstalować ją ponownie.">
+
 <!ENTITY eol_notification_title2 "&brandShortName; nie będzie już aktualizowany">
 <!ENTITY eol_notification_summary "Stuknij, aby dowiedzieć się więcej">
 
 <!ENTITY whatsnew_notification_title "&brandShortName; jest aktualny">
 <!ENTITY whatsnew_notification_summary "Nowości w tej wersji">
-
-<!ENTITY promotion_add_to_homescreen "Dodaj do ekranu głównego">
 
 <!ENTITY promotion_add_page_shortcut "Dodaj skrót do strony">
 

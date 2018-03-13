@@ -19,6 +19,7 @@
      over into this string, used as the checkbox which indicates if prefs are synced
 -->
 <!ENTITY engine.prefsWin.label      "Pengaturan">
+<!ENTITY engine.prefsWin.accesskey  "P">
 <!ENTITY engine.prefs.label         "Pengaturan">
 <!ENTITY engine.prefs.accesskey     "P">
 <!ENTITY engine.prefs.title         "Setelan Umum, Privasi, dan Keamanan yang Anda ubah">
@@ -105,3 +106,6 @@ both, to better adapt this sentence to their language.
 <!ENTITY mobilePromo3.iOSLink          "iOS">
 
 <!ENTITY mobilePromo3.end              " untuk menyinkronkan dengan peranti seluler Anda.">
+
+<!ENTITY mobilepromo.singledevice      "Sambungkan peranti lain">
+<!ENTITY mobilepromo.multidevice       "Kelola peranti">
