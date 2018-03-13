@@ -109,6 +109,7 @@ else
 # Release
 SOURCE_TYPE := releases
 SHORT_SOURCE_CHANNEL := release
+SOURCE_TARBALL_EXT := bz2
 endif
 endif
 endif
@@ -123,16 +124,7 @@ PRODUCT_DOWNLOAD_NAME := $(firstword $(subst -, ,$(PRODUCT_NAME)))
 BASE_URL = https://archive.mozilla.org/pub/$(PRODUCT_DOWNLOAD_NAME)/$(SOURCE_TYPE)
 
 ifeq ($(SOURCE_TYPE),releases)
-ifeq (,$(findstring ~b, $(VERSION)))
-SOURCE_URL = $(BASE_URL)/$(SOURCE_VERSION)/source/$(PRODUCT_DOWNLOAD_NAME)-$(SOURCE_VERSION).source.tar.$(SOURCE_TARBALL_EXT)
-CANDIDATE_BASE_URL = http://archive.mozilla.org/pub/$(PRODUCT_DOWNLOAD_NAME)/candidates/$(SOURCE_VERSION)-candidates
-CANDIDATE = $(shell curl -s $(CANDIDATE_BASE_URL)/ | sed -n '/href.*build/s/.*>\(build[0-9]*\)\/<.*/\1/p' | tail -1)
-$(call lazy,SOURCE_REPO_URL,$$(shell curl -s $(CANDIDATE_BASE_URL)/$$(CANDIDATE)/linux-x86_64/en-US/$(PRODUCT_DOWNLOAD_NAME)-$(SOURCE_VERSION).txt | tail -1))
-SOURCE_REV = $(notdir $(SOURCE_REPO_URL))
-SOURCE_REPO = $(patsubst %/rev/,%,$(dir $(SOURCE_REPO_URL)))
-else
 $(call lazy,SOURCE_URL,$$(shell curl -s $(BASE_URL)/$(SOURCE_VERSION)/SOURCE | awk '$$$$1 == "tar.$(SOURCE_TARBALL_EXT):" {print $$$$2}'))
-endif
 else
 ifeq ($(SOURCE_TYPE),nightly)
 SOURCE_TARBALL_EXT = bz2
