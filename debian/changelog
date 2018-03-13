@@ -1,3 +1,28 @@
+firefox (59.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2018-06, also known as:
+    CVE-2018-5127, CVE-2018-5128, CVE-2018-5129, CVE-2018-5130,
+    CVE-2018-5131, CVE-2018-5132, CVE-2018-5133, CVE-2018-5134,
+    CVE-2018-5135, CVE-2018-5136, CVE-2018-5137, CVE-2018-5140,
+    CVE-2018-5141, CVE-2018-5142, CVE-2018-5143, CVE-2018-5126,
+    CVE-2018-5125.
+
+  * debian/upstream.mk:
+    - Change how we find the source tarball for releases.
+    - Stop using milestone.py, it went away in this version.
+  * debian/control*: Bump nspr, nss, sqlite, rustc and cargo build
+    dependencies.
+  * debian/rules: Update ICU_DATA_FILE version.
+  * debian/browser.install.in, debian/browser.links.in, debian/rules: Take all
+    icons from chrome/icons/default/ now they are all there.
+  * debian/browser.install.in, debian/rules: Install watermark icon through
+    dh_install.
+  * debian/browser.js.in: Use the new intl.locale.requested instead of
+    intl.locale.matchOS.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 14 Mar 2018 08:30:34 +0900
+
 firefox (58.0.1-1) unstable; urgency=medium
 
   * New upstream release.
