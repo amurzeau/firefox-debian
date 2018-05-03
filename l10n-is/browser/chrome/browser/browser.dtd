@@ -61,6 +61,7 @@ can reach it easily. -->
 <!ENTITY  closeTab.label                     "Loka flipa">
 <!ENTITY  closeTab.accesskey                 "L">
 
+
 <!ENTITY  listAllTabs.label      "Sýna alla flipa">
 
 <!ENTITY tabCmd.label "Nýr flipi">
@@ -111,6 +112,8 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 <!ENTITY pageInfoCmd.label "Upplýsingar síðu">
 <!ENTITY pageInfoCmd.accesskey "U">
 <!ENTITY pageInfoCmd.commandkey "i">
+<!ENTITY ldbCmd.label "Útlits aflúsari">
+<!ENTITY ldbCmd.accesskey "L">
 <!ENTITY mirrorTabCmd.label "Spegla flipa">
 <!ENTITY mirrorTabCmd.accesskey "S">
 <!-- LOCALIZATION NOTE (enterFullScreenCmd.label, exitFullScreenCmd.label):
@@ -125,6 +128,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "Sýna alla flipa">
 <!ENTITY showAllTabsCmd.accesskey "a">
 <!ENTITY toggleReaderMode.key "R">
+
+<!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "Skráðu þig inn í &syncBrand.shortName.label;">
 <!ENTITY fxaSignedIn.tooltip "Opna &syncBrand.shortName.label; stillingar">
@@ -218,6 +223,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Geyma gögn í varanlegri gagnageymslu">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Vafri er á fjarstýringu">
 
+
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Sýsla með deilingu á myndavél og/eða hljóðnema fyrir þetta vefsvæði">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Sýsla með að deila hljóðnema á vefsvæðinu">
 <!ENTITY urlbar.webRTCShareScreenNotificationAnchor.tooltip       "Sýsla með að deila gluggum eða skjá á vefsvæðinu">
@@ -227,6 +233,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Sýsla með þýðingar á síðu">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Sýsla með notkun á DRM hugbúnaði">
 
+<!ENTITY urlbar.midiNotificationAnchor.tooltip            "Opna MIDI flipa">
+
 <!ENTITY urlbar.cameraBlocked.tooltip            "Þú hefur lokað fyrir myndavélina á þessu vefsvæði.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Þú hefur lokað fyrir hljóðnema á þessu vefsvæði.">
 <!ENTITY urlbar.screenBlocked.tooltip            "Þú hefur lokað fyrir að deila skjáum á þessu vefsvæði.">
@@ -234,8 +242,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Þú hefur lokað fyrir tilkynningar á þessu vefsvæði.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Þú hefur lokað fyrir gagna geymslu á þessu vefsvæði.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Þú hefur lokað á sprettiglugga fyrir þetta vefsvæði.">
-
 <!ENTITY urlbar.canvasBlocked.tooltip            "Þú hefur lokað á að nálgast gluggagögn fyrir þetta vefsvæði.">
+
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "Þú hefur lokað á að þetta vefsvæði geti notað Adobe Flash viðbót.">
+<!ENTITY urlbar.midiBlocked.tooltip              "Þú hefur lokað fyrir MIDI aðgang á þessu vefsvæði.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Sýna sögu">
 
@@ -260,7 +270,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addBookmarksMenu.label             "Bæta bókamerkjavalmynd við verkfæraslá">
 <!ENTITY removeBookmarksMenu.label          "Fjarlægja bókamerkjavalmynd úr verkfæraslá">
 
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -291,6 +301,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY inspectContextMenu.label     "Skoða einindi">
 <!ENTITY inspectContextMenu.accesskey "e">
+
 
 <!ENTITY fileMenu.label         "Skrá">
 <!ENTITY fileMenu.accesskey       "S">
@@ -377,10 +388,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Kveiktu á samstillingu flipa til að skoða lista af flipum frá öðrum tækjum.">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "Engir samstilltir flipar… ennþá!">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Viltu sjá hérna þína flipa frá öðrum tækjum?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Samstilla stillingar">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Opna Sync stillingar">
@@ -389,7 +399,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Skráðu þig inn í Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Sýsla með tæki…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Skoða samstillta flipavalmynd">
-
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Tengja annað tæki">
 
 <!ENTITY appMenuRecentHighlights.label "Nýlegir atburðir">
@@ -432,6 +441,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Leita eða sláðu inn veffang">
+<!ENTITY urlbar.placeholder3          "Sláðu inn leitarskilyrði og heimilisföng hérna">
 <!ENTITY urlbar.accesskey             "ð">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Skráarending:">
@@ -798,7 +808,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "Samstilltir flipar">
 <!ENTITY syncedTabs.sidebar.noclients.label    "Skráðu þig inn í Firefox frá öðrum tækjum til að skoða þeirra flipa hér.">
-<!ENTITY syncedTabs.sidebar.noclients.title    "Engir samstilltir flipar… ennþá!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Viltu sjá hérna þína flipa frá öðrum tækjum?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Skráðu þig inn til að skoða lista af flipum frá öðrum tækjum.">
 <!ENTITY syncedTabs.sidebar.unverified.label   "Nauðsynlegt er að staðfesta reikning.">
@@ -808,7 +817,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Kveiktu á samstillingu flipa til að skoða lista af flipum frá öðrum tækjum.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Leita í samstilltum flipum">
-
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Tengja annað tæki">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
@@ -978,11 +986,20 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.panelUI.label2 "Endurræstu til að uppfæra &brandShorterName;">
 
 <!ENTITY newTabControlled.message "Einhver viðbót hefur breytt síðunni sem er alltaf opnuð fyrir nýja flipa. Ef þú vilt ekki þessa breytingu geturðu endurheimt eldri stillingar.">
+
 <!ENTITY newTabControlled.header.message "Nýi flipinn breyttist.">
 <!ENTITY newTabControlled.keepButton.label "Halda breytingum">
 <!ENTITY newTabControlled.keepButton.accesskey "g">
 <!ENTITY newTabControlled.restoreButton.label "Endurheimta stillingar">
 <!ENTITY newTabControlled.restoreButton.accesskey "r">
+
+<!ENTITY newTabControlled.disableButton.label "Slökkva á viðbót">
+<!ENTITY newTabControlled.disableButton.accesskey "ð">
+
+<!ENTITY homepageControlled.keepButton.label "Halda breytingum">
+<!ENTITY homepageControlled.keepButton.accesskey "H">
+<!ENTITY homepageControlled.disableButton.label "Slökkva á viðbót">
+<!ENTITY homepageControlled.disableButton.accesskey "ö">
 
 <!ENTITY pageActionButton.tooltip "Síðu aðgerðir">
 <!ENTITY pageAction.addToUrlbar.label "Bæta við í staðfestingarslá">
@@ -994,6 +1011,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageAction.sendTabToDevice.label "Senda flipa á tæki">
 <!ENTITY sendToDevice.syncNotReady.label "Samstilli tæki…">
 
+<!ENTITY pageAction.shareUrl.label "Deila">
+
 <!ENTITY libraryButton.tooltip "Skoða feril, vistuð bókamerki, og meira">
 
 <!-- LOCALIZATION NOTE: (accessibilityIndicator.tooltip): This is used to
@@ -1001,3 +1020,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      used as a textual label for the indicator used by assistive technology
      users. -->
 <!ENTITY accessibilityIndicator.tooltip "Aðgengi virkjað">
+
+<!-- LOCALIZATION NOTE: (addonPostInstallMessage.label):
+     The first <image> tag is replaced with the icon for the add-ons menu.
+     The second <image> tag is replaced with the icon for the toolbar menu. -->
+<!ENTITY addonPostInstallMessage.label "Sýslaðu með viðbætur með því að smella á <image class='addon-addon-icon'/> í <image class='addon-toolbar-icon'/> valmyndinni.">

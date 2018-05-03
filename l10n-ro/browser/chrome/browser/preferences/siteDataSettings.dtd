@@ -4,11 +4,12 @@
 
 <!ENTITY     window.title                  "Setări - Date privind site-urile">
 
-<!ENTITY     window1.title                 "Setări - Cookie-uri și datele site-urilor">
+<!ENTITY     window2.title                 "Gestionează cookie-urile și datele site-urilor">
 <!ENTITY     hostCol.label                 "Site">
 <!ENTITY     statusCol.label               "Stare">
 <!ENTITY     cookiesCol.label              "Cookie-uri">
 <!ENTITY     usageCol.label                "Stocare">
+<!ENTITY     lastAccessedCol.label                "Ultima utilizare">
 <!ENTITY     searchTextboxPlaceHolder             "Caută site-uri web">
 <!ENTITY     searchTextboxPlaceHolder.accesskey   "S">
 <!ENTITY     removeSelected.label          "Elimină selecția">

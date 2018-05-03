@@ -3,8 +3,6 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY  trackingProtectionHeader2.label      "การป้องกันการติดตาม">
-<!ENTITY  trackingProtection2.description      "การติดตามคือการเก็บรวบรวมข้อมูลการท่องเว็บของคุณระหว่างหลายเว็บไซต์ การติดตามสามารถนำมาใช้เพื่อสร้างโปรไฟล์และแสดงผลเนื้อหาตามการท่องเว็บและข้อมูลส่วนบุคคลของคุณ">
-<!ENTITY  trackingProtection2.radioGroupLabel  "ใช้การป้องกันการติดตามเพื่อปิดกั้นตัวติดตามที่รู้จัก">
 <!ENTITY  trackingProtection3.description      "การป้องกันการติดตามปิดกั้นตัวติดตามออนไลน์ที่เก็บรวบรวมข้อมูลการท่องเว็บของคุณระหว่างหลายเว็บไซต์">
 <!ENTITY  trackingProtection3.radioGroupLabel  "ใช้การป้องกันการติดตามเพื่อปิดกั้นตัวติดตามที่รู้จัก">
 <!ENTITY  trackingProtectionAlways.label       "เสมอ">
@@ -13,7 +11,6 @@
 <!ENTITY  trackingProtectionPrivate.accesskey  "พ">
 <!ENTITY  trackingProtectionNever.label        "ไม่เลย">
 <!ENTITY  trackingProtectionNever.accesskey    "ม">
-<!ENTITY  trackingProtectionLearnMore.label    "เรียนรู้เพิ่มเติม">
 <!ENTITY  trackingProtectionLearnMore2.label    "เรียนรู้เพิ่มเติมเกี่ยวกับการป้องกันการติดตามและความเป็นส่วนตัวของคุณ">
 <!ENTITY  trackingProtectionExceptions.label   "ข้อยกเว้น…">
 <!ENTITY  trackingProtectionExceptions.accesskey "อ">
@@ -24,11 +21,6 @@
 <!ENTITY trackingProtectionPBMLearnMore.label "เรียนรู้เพิ่มเติม">
 <!ENTITY changeBlockList2.label               "เปลี่ยนรายการปิดกั้น…">
 <!ENTITY changeBlockList2.accesskey           "ร">
-
-<!ENTITY  doNotTrack.description        "ส่งสัญญาณ “ไม่ติดตาม” ให้กับเว็บไซต์ว่าคุณไม่ต้องการถูกติดตาม">
-<!ENTITY  doNotTrack.learnMore.label    "เรียนรู้เพิ่มเติม">
-<!ENTITY  doNotTrack.default.label      "เฉพาะเมื่อใช้การป้องกันการติดตาม">
-<!ENTITY  doNotTrack.always.label       "เสมอ">
 
 <!ENTITY  history.label                 "ประวัติ">
 <!ENTITY  permissions.label             "การอนุญาต">
@@ -51,6 +43,15 @@
 
 <!ENTITY  acceptThirdParty2.pre.label     "ยอมรับคุกกี้จากบุคคลที่สาม">
 <!ENTITY  acceptThirdParty2.pre.accesskey "อ">
+
+<!ENTITY  acceptCookies4.label          "ยอมรับคุกกี้และข้อมูลไซต์จากเว็บไซต์ (แนะนำ)">
+<!ENTITY  acceptCookies4.accesskey      "ย">
+
+<!ENTITY  blockCookies.label            "ปิดกั้นคุกกี้และข้อมูลไซต์ (อาจส่งผลให้เว็บไซต์ไม่สมบูรณ์)">
+<!ENTITY  blockCookies.accesskey        "ป">
+
+<!ENTITY  acceptThirdParty3.pre.label     "ยอมรับคุกกี้และข้อมูลไซต์จากบุคคลที่สาม">
+<!ENTITY  acceptThirdParty3.pre.accesskey "อ">
 <!ENTITY  acceptThirdParty.always.label   "เสมอ">
 <!ENTITY  acceptThirdParty.never.label    "ไม่เลย">
 <!ENTITY  acceptThirdParty.visited.label  "จากที่เยี่ยมชม">
@@ -85,6 +86,8 @@
 <!ENTITY  rememberActions.removeCookies.label "เอาคุกกี้แต่ละตัวออก">
 <!ENTITY  rememberActions.post.label          "">
 
+<!ENTITY  rememberDescription1.label      "&brandShortName; จะจดจำประวัติการท่องเว็บ, การดาวน์โหลด, แบบฟอร์ม และการค้นหาของคุณ">
+
 <!ENTITY  dontrememberDescription.label  "&brandShortName; จะใช้การตั้งค่าเดียวกับการท่องเว็บแบบส่วนตัวและจะไม่จดจำประวัติใด ๆ ขณะที่คุณท่องเว็บ">
 
 <!-- LOCALIZATION NOTE (dontrememberActions.pre.label): include a trailing space as needed -->
@@ -92,6 +95,9 @@
 <!ENTITY  dontrememberActions.pre.label          "คุณยังอาจต้องการ ">
 <!ENTITY  dontrememberActions.clearHistory.label "ล้างประวัติปัจจุบันทั้งหมด">
 <!ENTITY  dontrememberActions.post.label         "">
+
+<!ENTITY  clearHistoryButton.label       "ล้างประวัติ…">
+<!ENTITY  clearHistoryButton.accesskey   "ง">
 
 <!ENTITY  privateBrowsingPermanent2.label "ใช้โหมดการท่องเว็บแบบส่วนตัวเสมอ">
 <!ENTITY  privateBrowsingPermanent2.accesskey "ช">

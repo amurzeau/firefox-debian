@@ -20,3 +20,32 @@
 
 <!ENTITY finishpage.shortdescription  "Күнтізбе жасалды" >
 <!ENTITY finishpage.longdescription   "Күнтізбеңіз жасалды." >
+
+<!-- Below are new strings for the revised new calendar dialog. The above strings should be
+    removed/renamed later on -->
+
+<!ENTITY sourcetabs.other.label  "Басқа">
+
+<!ENTITY buttons.create.label "Күнтізбені жасау">
+<!ENTITY buttons.create.accesskey "с">
+
+<!ENTITY buttons.find.label "Күнтізбелерді табу">
+<!ENTITY buttons.find.accesskey "т">
+
+<!ENTITY buttons.back.label "Артқа">
+<!ENTITY buttons.back.accesskey "а">
+
+<!ENTITY buttons.subscribe.label "Жазылу">
+<!ENTITY buttons.subscribe.accesskey "з">
+
+<!ENTITY calendartype.label "Күнтізбе түрі:">
+<!ENTITY location.label "Орналасуы:">
+<!ENTITY location.placeholder "Күнтізбе серверінің URL немесе хост аты">
+
+<!ENTITY network.nocredentials.label "Бұл орналасу тіркелу мәлеметтерін сұрамайды">
+<!ENTITY network.loading.description "Күнтізбелеріңіз өңделгенше күте тұрыңыз.">
+<!ENTITY network.notfound.description "Бұл орналасудан күнтізбелер табылмады. Баптауларды тексеріңіз.">
+<!ENTITY network.authfail.description "Сіз енгізген тіркелу мәліметтері қабылданбады. Баптауларды тексеріңіз.">
+
+<!ENTITY network.subscribe.single.description "Жазылғыңыз келетін күнтізбелерді таңдаңыз.">
+<!ENTITY network.subscribe.multiple.description "Бұл орналасу үшін бірнеше түрлі күнтізбелер қолжетерлік. Күнтізбе түрін таңдап, жазылғыңыз келетін күнтізбелерді белгілеңіз.">

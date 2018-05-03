@@ -70,13 +70,15 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 <!ENTITY aboutSupport.appBasicsPerformance "წარმადობა">
 
 <!-- LOCALIZATION NOTE the term "Service Workers" should not be translated. -->
-<!ENTITY aboutSupport.appBasicsServiceWorkers "დარეგისტრებული Service Workers">
+<!ENTITY aboutSupport.appBasicsServiceWorkers "დარეგისტრებული Service Worker-ები">
 
 <!ENTITY aboutSupport.appBasicsProfiles "პროფილები">
 
 <!ENTITY aboutSupport.appBasicsMultiProcessSupport "მრავალპროცესიანი ფანჯრები">
 
 <!ENTITY aboutSupport.appBasicsProcessCount "ვებშიგთავსის პროცესები">
+
+<!ENTITY aboutSupport.enterprisePolicies "დებულებები კომპანიებისთვის">
 
 <!ENTITY aboutSupport.appBasicsKeyGoogle "Google გასაღები">
 <!ENTITY aboutSupport.appBasicsKeyMozilla "Mozilla მდებარეობის განსაზღვრის გასაღები">

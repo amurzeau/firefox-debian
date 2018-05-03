@@ -20,18 +20,17 @@
  *              values that correspond to the prefs to be set.
  */
 
-this.EXPORTED_SYMBOLS = ["ExtensionPreferencesManager"];
+var EXPORTED_SYMBOLS = ["ExtensionPreferencesManager"];
 
-const {classes: Cc, interfaces: Ci, utils: Cu, results: Cr} = Components;
-const {Management} = Cu.import("resource://gre/modules/Extension.jsm", {});
+const {Management} = ChromeUtils.import("resource://gre/modules/Extension.jsm", {});
 
-Cu.import("resource://gre/modules/XPCOMUtils.jsm");
-Cu.import("resource://gre/modules/Services.jsm");
+ChromeUtils.import("resource://gre/modules/XPCOMUtils.jsm");
+ChromeUtils.import("resource://gre/modules/Services.jsm");
 
-XPCOMUtils.defineLazyModuleGetter(this, "ExtensionSettingsStore",
-                                  "resource://gre/modules/ExtensionSettingsStore.jsm");
-XPCOMUtils.defineLazyModuleGetter(this, "Preferences",
-                                  "resource://gre/modules/Preferences.jsm");
+ChromeUtils.defineModuleGetter(this, "ExtensionSettingsStore",
+                               "resource://gre/modules/ExtensionSettingsStore.jsm");
+ChromeUtils.defineModuleGetter(this, "Preferences",
+                               "resource://gre/modules/Preferences.jsm");
 
 XPCOMUtils.defineLazyGetter(this, "defaultPreferences", function() {
   return new Preferences({defaultBranch: true});
@@ -340,5 +339,58 @@ this.ExtensionPreferencesManager = {
     }
     await ExtensionSettingsStore.initialize();
     return ExtensionSettingsStore.getLevelOfControl(id, storeType, name);
+  },
+
+  /**
+   * Returns an API object with get/set/clear used for a setting.
+   *
+   * @param {string} extensionId
+   * @param {string} name
+   *        The unique id of the setting.
+   * @param {Function} callback
+   *        The function that retreives the current setting from prefs.
+   * @param {string} storeType
+   *        The name of the store in ExtensionSettingsStore.
+   *        Defaults to STORE_TYPE.
+   * @param {boolean} readOnly
+   * @param {Function} validate
+   *        Utility function for any specific validation, such as checking
+   *        for supported platform.  Function should throw an error if necessary.
+   *
+   * @returns {object} API object with get/set/clear methods
+   */
+  getSettingsAPI(extensionId, name, callback, storeType, readOnly = false, validate = () => {}) {
+    return {
+      async get(details) {
+        validate();
+        let levelOfControl = details.incognito ?
+          "not_controllable" :
+          await ExtensionPreferencesManager.getLevelOfControl(
+            extensionId, name, storeType);
+        levelOfControl =
+          (readOnly && levelOfControl === "controllable_by_this_extension") ?
+            "not_controllable" :
+            levelOfControl;
+        return {
+          levelOfControl,
+          value: await callback(),
+        };
+      },
+      set(details) {
+        validate();
+        if (!readOnly) {
+          return ExtensionPreferencesManager.setSetting(
+            extensionId, name, details.value);
+        }
+        return false;
+      },
+      clear(details) {
+        validate();
+        if (!readOnly) {
+          return ExtensionPreferencesManager.removeSetting(extensionId, name);
+        }
+        return false;
+      },
+    };
   },
 };

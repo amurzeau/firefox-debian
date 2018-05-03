@@ -9,18 +9,18 @@
 <!ENTITY newFolderCmd.label "Yakwuj…">
 <!ENTITY newFolderCmd.accesskey "Y">
 <!ENTITY closeTabCmd2.label "Titz'apïx Ruwi'">
-<!ENTITY closeTabCmd2.accesskey "t">
+<!ENTITY closeTabCmd2.accesskey "T">
 <!ENTITY closeOtherTabsCmd2.label "Ketz'apïx ri ch'aqa' chik taq ruwi'">
-<!ENTITY closeOtherTabsCmd2.accesskey "c">
-<!ENTITY recentlyClosedTabsCmd.label "Taq ruwi' k'a b'a' ketz'apïx">
-<!ENTITY recentlyClosedTabsCmd.accesskey "k">
+<!ENTITY closeOtherTabsCmd2.accesskey "x">
+<!ENTITY recentlyClosedTabsCmd.label "Taq Ruwi' K'a B'a' Ketz'apïx">
+<!ENTITY recentlyClosedTabsCmd.accesskey "K">
 
 <!ENTITY undoCloseTabCmd.commandkey "T">
 <!-- LOCALIZATION NOTE (moveToNewWindow.label):
      Menu option to cause the current tab to be migrated to a new Thunderbird
      window.
      -->
-<!ENTITY moveToNewWindow.label "Tisilöx pa jun K'aka' Tzuwäch">
+<!ENTITY moveToNewWindow.label "Tisilöx pa K'ak'a' Tzuwäch">
 <!ENTITY moveToNewWindow.accesskey "T">
 <!ENTITY newVirtualFolderCmd.label "Xyak Kanoxïk…">
 <!ENTITY newVirtualFolderCmd.accesskey "y">
@@ -36,6 +36,12 @@
 <!ENTITY newFeedAccountCmd.accesskey "y">
 <!ENTITY newIMContactCmd.label "Rub'i' Rachib'il Chat…">
 <!ENTITY newIMContactCmd.accesskey "h">
+<!ENTITY  newMessageCmd2.key "N">
+<!ENTITY  newMessageCmd.key "M">
+<!ENTITY  newMessageCmd.label "Tzijol">
+<!ENTITY  newMessageCmd.accesskey "t">
+<!ENTITY  newContactCmd.label "Kib'i' Achib'il pa Kitz'ib'awuj Ochochib'äl…">
+<!ENTITY  newContactCmd.accesskey "A">
 <!ENTITY openMessageFileCmd.label "Tijaq Tzijol Eyakon…">
 <!ENTITY openMessageFileCmd.accesskey "j">
 <!ENTITY saveAsMenu.label "Tiyak Achi'el">
@@ -45,7 +51,7 @@
 <!ENTITY saveAsFileCmd.key "s">
 <!ENTITY saveAsTemplateCmd.label "Kaxawäch">
 <!ENTITY saveAsTemplateCmd.accesskey "K">
-<!ENTITY getNewMsgForCmd.label "Kek'ul K'aka' Rutzijol richin">
+<!ENTITY getNewMsgForCmd.label "Kek'ul K'ak'a' Rutzijol">
 <!ENTITY getNewMsgForCmd.accesskey "k">
 <!ENTITY getAllNewMsgCmdPopupMenu.label "Ronojel Kib'i' Taqoya'l">
 <!ENTITY getAllNewMsgCmdPopupMenu.accesskey "R">
@@ -340,7 +346,7 @@
 <!ENTITY cancelNewsMsgCmd.label "Tiq'at Rutzijol">
 <!ENTITY cancelNewsMsgCmd.accesskey "T">
 <!ENTITY replyMsgCmd.label "Titzolïx tzij">
-<!ENTITY replyMsgCmd.accesskey "t">
+<!ENTITY replyMsgCmd.accesskey "T">
 <!ENTITY replyMsgCmd.key "r">
 <!ENTITY replySenderCmd.label "Titzolïx Tzij Xa Xe Chi Re ri Taqonel">
 <!ENTITY replySenderCmd.accesskey "T">
@@ -509,8 +515,6 @@
 <!ENTITY devToolboxCmd.label "Rukajtz'ik B'anonel">
 <!ENTITY devToolboxCmd.accesskey "R">
 <!ENTITY devToolboxCmd.commandkey "i">
-<!ENTITY addonDebugCmd.label "Ruchojmirisanel Tz'aqat">
-<!ENTITY addonDebugCmd.accesskey "T">
 <!ENTITY debugAddonsCmd.label "Kechojmirisäx taq Tz'aqat">
 <!ENTITY debugAddonsCmd.accesskey "T">
 <!ENTITY tabsDebugCmd.label "Ruchojmirisanel Rupam Ruchi'">
@@ -645,6 +649,7 @@
 <!-- Folder Pane Context Menu -->
 <!ENTITY folderContextGetMessages.label "Kek'ul tzijol">
 <!ENTITY folderContextGetMessages.accesskey "K">
+<!ENTITY folderContextMarkAllFoldersRead.label "Tiya' Ketal Yakwuj Esik'in">
 <!ENTITY folderContextPauseAllUpdates.label "Keq'at Ronojel K'exoj">
 <!ENTITY folderContextPauseUpdates.label "Keq'at K'exoj">
 <!ENTITY folderContextPauseUpdates.accesskey "K">
@@ -870,7 +875,7 @@
   -->
 <!ENTITY quickSearchCmd.key "k">
 <!-- LOCALIZATION NOTE (search.label.base1):
-      This is the base of the empty text for the global search box. We replace
+     This is the base of the empty text for the global search box. We replace
      #1 with the contents of the appropriate search.keyLabel.* value for the
      platform.
      The goal is to convey to the user that typing in the box will allow them

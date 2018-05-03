@@ -16,7 +16,7 @@
 <!ENTITY mainWindow.titlePrivateBrowsingSuffix "(Priveesneupe)">
 
 <!ENTITY appmenu.tooltip                     "Menu iepenje">
-<!ENTITY navbarOverflow.label                "Mear helpmiddelen…">
+<!ENTITY navbarOverflow.label                "Mear ark…">
 
 <!-- Tab context menu -->
 <!ENTITY  reloadTab.label                    "Ljepblêd fernije">
@@ -60,6 +60,8 @@ can reach it easily. -->
 <!ENTITY  undoCloseTab.accesskey             "m">
 <!ENTITY  closeTab.label                     "Ljepblêd slute">
 <!ENTITY  closeTab.accesskey                 "s">
+
+<!ENTITY  hiddenTabs.label                   "Ferstoppe ljepblêden">
 
 <!ENTITY  listAllTabs.label      "Alle ljepblêdtitels werjaan">
 
@@ -128,13 +130,15 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.accesskey "A">
 <!ENTITY toggleReaderMode.key "R">
 
+<!ENTITY toggleReaderMode.win.keycode "VK_F9">
+
 <!ENTITY fxaSignIn.label "Oanmelde by &syncBrand.shortName.label;">
 <!ENTITY fxaSignedIn.tooltip "&syncBrand.shortName.label;-foarkarren iepenje">
 <!ENTITY fxaSignInError.label "Opnij ferbine mei &syncBrand.shortName.label;">
 <!ENTITY fxaUnverified.label "Jo account ferifiearje">
 
 
-<!ENTITY fullScreenMinimize.tooltip "Minimalisearje ">
+<!ENTITY fullScreenMinimize.tooltip "Minimalisearje">
 <!ENTITY fullScreenRestore.tooltip "Werom bringe">
 <!ENTITY fullScreenClose.tooltip "Slute">
 <!ENTITY fullScreenAutohide.label "Arkbalken ferstopje ">
@@ -201,7 +205,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY reloadCmd.label              "Opnij lade">
 <!ENTITY reloadCmd.accesskey          "n">
 <!ENTITY stopCmd.label                "Beëinigje">
-<!ENTITY stopCmd.accesskey            "S">
+<!ENTITY stopCmd.accesskey            "B">
 <!ENTITY stopCmd.macCommandKey        ".">
 <!ENTITY goEndCap.tooltip             "It adres yn de lokaasjebalke iepenje">
 <!ENTITY printButton.label            "Ofdrukke">
@@ -220,6 +224,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Gegevens yn permaninte opslach bewarje">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Browser wurdt op ôfstân bestjoerd">
 
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "Webautentikaasjepaniel iepenje">
+
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Dielen fan jo kamera en/of mikrofoan mei de website beheare">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Dielen fan jo mikrofoan mei de website beheare">
 <!ENTITY urlbar.webRTCShareScreenNotificationAnchor.tooltip       "Dielen fan jo finsters of skerm mei de website beheare">
@@ -229,6 +235,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Sideoersetting beheare">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Gebrûk fan DRM-software beheare">
 
+<!ENTITY urlbar.midiNotificationAnchor.tooltip            "MIDI-paniel iepenje">
+
 <!ENTITY urlbar.cameraBlocked.tooltip            "Jo hawwe jo kamera foar dizze website blokkearre.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Jo hawwe jo mikrofoan foar dizze website blokkearre.">
 <!ENTITY urlbar.screenBlocked.tooltip            "Jo hawwe jo it dielen fan jo skerm foar dizze website blokkearre.">
@@ -236,8 +244,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Jo hawwe notifikaasjes foar dizze website blokkearre.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Jo hawwe permaninte opslach foar dizze website blokkearre.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Jo hawwe pop-ups foar dizze website blokkearre.">
-
 <!ENTITY urlbar.canvasBlocked.tooltip            "Jo hawwe canvas-gegevensekstraksje foar dizze website blokkearre.">
+
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "Jo hawwe it brûken fan de Adobe Flash-ynstekker foar dizze website blokkearre.">
+<!ENTITY urlbar.midiBlocked.tooltip              "Jo hawwe MIDI foar dizze website blokkearre.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Skiednis toane">
 
@@ -262,7 +272,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addBookmarksMenu.label             "Blêdwizers oan arkbalke tafoegje">
 <!ENTITY removeBookmarksMenu.label          "Blêdwizers fan arkbalke fuortsmite">
 
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -293,6 +303,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY inspectContextMenu.label     "Elemint ynspektearje">
 <!ENTITY inspectContextMenu.accesskey "E">
+
+<!ENTITY inspectA11YContextMenu.label     "Tagonklikheidseigenskippen ynspektearje">
 
 <!ENTITY fileMenu.label         "Bestân">
 <!ENTITY fileMenu.accesskey       "B">
@@ -379,10 +391,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Set ljepblêdsyngronisaasje oan om in list fan ljepblêden fan jo oare apparaten wer te jaan.">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "Noch gjin syngronisearre ljepblêden…">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Wolle jo hjir jo ljepblêden fan oare apparaten sjen?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Syngronisaasjefoarkarren">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Foarkarren foar Sync iepenje">
@@ -391,7 +402,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Oanmelde by Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Apparaten beheare…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Syngroane-ljepblêdensidebalke werjaan">
-
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Noch in apparaat keppelje">
 
 <!ENTITY appMenuRecentHighlights.label "Resinte hichtepunten">
@@ -434,6 +444,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Fier in sykterm of adres yn">
+<!ENTITY urlbar.placeholder3          "Fier hjir jo sykterm en adres yn">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Utwreiding:">
@@ -514,7 +525,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY searchSetAsDefault.label     "Ynstelle as standertsykmasine">
 <!ENTITY searchSetAsDefault.accesskey "s">
 
-<!ENTITY openLinkCmdInTab.label       "Keppeling yn nij ljepblêd iepenje">
+<!ENTITY openLinkCmdInTab.label       "Keppeling iepenje yn nij ljepblêd">
 <!ENTITY openLinkCmdInTab.accesskey   "l">
 <!ENTITY openLinkCmd.label            "Keppeling yn nij finster iepenje">
 <!ENTITY openLinkCmd.accesskey        "f">
@@ -552,7 +563,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY viewImageCmd.accesskey       "f">
 <!ENTITY viewImageInfoCmd.label       "Ofbyldingsynfo besjen">
 <!ENTITY viewImageInfoCmd.accesskey   "f">
-<!ENTITY viewImageDescCmd.label       "Ofbyldingsomskriuwing besjen">
+<!ENTITY viewImageDescCmd.label       "Omskriuwing besjen">
 <!ENTITY viewImageDescCmd.accesskey   "o">
 <!ENTITY viewVideoCmd.label           "Fideo besjen">
 <!ENTITY viewVideoCmd.accesskey       "I">
@@ -800,7 +811,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "Syngronisearre ljepblêden">
 <!ENTITY syncedTabs.sidebar.noclients.label    "Meld jo oan by Firefox fan jo oare apparaten ôf om harren ljepblêden hjir wer te jaan.">
-<!ENTITY syncedTabs.sidebar.noclients.title    "Noch gjin syngronisearre ljepblêden…">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Wolle jo hjir jo ljepblêden fan oare apparaten sjen?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Meld jo oan om in list fan ljepblêden fan jo oare apparaten wer te jaan.">
 <!ENTITY syncedTabs.sidebar.unverified.label   "Jo account moat ferifiearre wurde.">
@@ -810,7 +820,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Set ljepblêdsyngroanisaasje oan om in list fan ljepblêden fan jo oare apparaten wer te jaan.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Sykje syngronisearre ljepblêden">
-
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Noch in apparaat keppelje">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
@@ -980,11 +989,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.panelUI.label2 "Start &brandShorterName; opnij om te fernijen">
 
 <!ENTITY newTabControlled.message "In útwreiding hat de side dy't jo sjogge by it iepenjen fan in nij ljepblêd wizige. As jo dizze wiziging net wolle, kinne jo jo ynstellingen weromsette.">
+
 <!ENTITY newTabControlled.header.message "Jo nije ljepblêd is wizige.">
 <!ENTITY newTabControlled.keepButton.label "Wizigingen bewarje">
 <!ENTITY newTabControlled.keepButton.accesskey "W">
 <!ENTITY newTabControlled.restoreButton.label "Ynstellingen weromsette">
 <!ENTITY newTabControlled.restoreButton.accesskey "Y">
+
+<!ENTITY newTabControlled.disableButton.label "Utwreiding útskeakelje">
+<!ENTITY newTabControlled.disableButton.accesskey "U">
+
+<!ENTITY homepageControlled.message "In útwreiding hat in wiziging makke yn wat jo sjogge as jo startside. As jo dizze wiziging net wolle, kinne jo jo ynstellingen weromsette.">
+<!ENTITY homepageControlled.header.message "Jo startside is wizige.">
+<!ENTITY homepageControlled.keepButton.label "Wizigingen bewarje">
+<!ENTITY homepageControlled.keepButton.accesskey "W">
+<!ENTITY homepageControlled.disableButton.label "Utwreiding útskeakelje">
+<!ENTITY homepageControlled.disableButton.accesskey "U">
 
 <!ENTITY pageActionButton.tooltip "Side-aksjes">
 <!ENTITY pageAction.addToUrlbar.label "Tafoegje oan adresbalke">
@@ -995,6 +1015,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pageAction.sendTabToDevice.label "Ljepblêd nei apparaat ferstjoere">
 <!ENTITY sendToDevice.syncNotReady.label "Apparaten syngronisearje…">
+
+<!ENTITY pageAction.shareUrl.label "Diele">
 
 <!ENTITY libraryButton.tooltip "Skiednis, bewarre blêdwizers en mear besjen">
 

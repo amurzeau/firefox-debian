@@ -61,6 +61,8 @@ can reach it easily. -->
 <!ENTITY  closeTab.label                     "கீற்றை மூடு">
 <!ENTITY  closeTab.accesskey                 "C">
 
+<!ENTITY  hiddenTabs.label                   "மறைக்கப்பட்ட கீற்றுகள்">
+
 <!ENTITY  listAllTabs.label      "அனைத்து கீற்றுகளையும் பட்டியலிடு">
 
 <!ENTITY tabCmd.label "புதிய கீற்று">
@@ -111,6 +113,8 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 <!ENTITY pageInfoCmd.label "பக்க தகவல்">
 <!ENTITY pageInfoCmd.accesskey "I">
 <!ENTITY pageInfoCmd.commandkey "i">
+<!ENTITY ldbCmd.label "வடிவமைப்பு வழுநீக்கி">
+<!ENTITY ldbCmd.accesskey "L">
 <!ENTITY mirrorTabCmd.label "கீற்று பிரதி">
 <!ENTITY mirrorTabCmd.accesskey "M">
 <!-- LOCALIZATION NOTE (enterFullScreenCmd.label, exitFullScreenCmd.label):
@@ -125,6 +129,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "அனைத்து கீற்றுகளையும் காட்டு">
 <!ENTITY showAllTabsCmd.accesskey "A">
 <!ENTITY toggleReaderMode.key "R">
+
+<!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "&syncBrand.shortName.label; உள்நுழை">
 <!ENTITY fxaSignedIn.tooltip "&syncBrand.shortName.label; முன்னுரிமைகளைத் திற">
@@ -210,12 +216,15 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.defaultNotificationAnchor.tooltip         "செய்தி பலகத்தை திறக்கவும்">
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "இடம் கோரும் பலகத்தை திறக்கவும்">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "கூடுதல் இணைப்பு நிறுவல் செய்திப் பலகத்தை திற">
+<!ENTITY urlbar.canvasNotificationAnchor.tooltip          "திரை எடுப்பு அனுமதிகளை நிர்வகி">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "இணைப்பில்லா சேமிப்பு செய்தி பலகத்தைத் திற">
 <!ENTITY urlbar.passwordNotificationAnchor.tooltip        "கடவுச்சொல் சேமிப்பு செய்தி பலகத்தைத் திற">
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "செருகி பயன்பாட்டை நிர்வகி">
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "இத்தளத்திலிருந்து அறிவிப்புகளை உங்களால் பெற முடிகிறதா என மாற்று">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "நிரந்தர சேமிப்பகத்தில் தரவை வை">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "தொலை கட்டுப்பாட்டில் உலாவி">
+
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "வலை உறுதிப்படுத்தல் பலகத்தைத் திற">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "தளத்துடன் உங்கள் படக்கருவி மேலும்/அல்லது ஒலிவாங்கியை பகிர்வதை நிர்வகி">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "தளத்துடன் உங்கள் ஒலிவாங்கியை பகிர்வதை நிர்வகி">
@@ -226,6 +235,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "பக்க மொழிபெயர்ப்புகளை நிர்வகி">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "DRM மென்பொருள் பயன்பாட்டை நிர்வகிக்கவும்">
 
+<!ENTITY urlbar.midiNotificationAnchor.tooltip            "MIDI பலகத்தைத் திற">
+
 <!ENTITY urlbar.cameraBlocked.tooltip            "இந்த தளத்தில் நிழற்படக் கருவியை முடக்கியுள்ளீர்கள்.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "இத்தளத்தில் ஒலிவாங்கியை முடக்கியுள்ளீர்கள்.">
 <!ENTITY urlbar.screenBlocked.tooltip            "இத்தளத்தில் திரைப் பகிர்வை முடக்கியுள்ளீர்கள்.">
@@ -233,7 +244,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "அறிவிப்புகளை இந்த தளத்தில் முடக்கியுள்ளீர்கள்.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "நீங்கள் நிரந்தர சேமிப்பை இந்த தளத்தில் முடக்கியுள்ளீர்கள்.">
 <!ENTITY urlbar.popupBlocked.tooltip             "இத்தளத்தில் பாப்பப் அறிவுறுத்தல்களை முடக்கியுள்ளீர்கள்.">
+<!ENTITY urlbar.canvasBlocked.tooltip            "திரை தரவு எடுப்பை இந்த தளத்தில் முடக்கியுள்ளீர்கள்.">
 
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "இத்தளத்தில் அடோப் பிளாஷ் செருகியை முடக்கியுள்ளீர்கள்.">
+<!ENTITY urlbar.midiBlocked.tooltip              "இந்த தளத்தில் MIDI அணுகலை முடக்கியுள்ளீர்கள்.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "வரலாற்றைக் காட்டு">
 
@@ -258,7 +272,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addBookmarksMenu.label             "புத்தகக்குறி பட்டியைக் கருவிப்பட்டையில் சேர்க்கவும்">
 <!ENTITY removeBookmarksMenu.label          "கருவிப்பட்டையிலிருந்து புத்தகக்குறிகள் பட்டியை நீக்கவும்">
 
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -289,6 +303,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY inspectContextMenu.label     "உறுப்பு ஆய்வுசெய்">
 <!ENTITY inspectContextMenu.accesskey "Q">
+
+<!ENTITY inspectA11YContextMenu.label     "அணுகல்தன்மை பண்புகளை ஆராய்க">
 
 <!ENTITY fileMenu.label         "கோப்பு">
 <!ENTITY fileMenu.accesskey       "F">
@@ -375,18 +391,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "மற்ற கருவிகளிலிருந்து கீற்றுகளின் பட்டியலைக் காண கீற்று ஒத்திசைவை இயக்கு.">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "இதுவரையில்… ஒத்திசைத்த கீற்றுகள் இல்லை!">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "மற்ற கருவிகளிலிருந்து உங்கள் கீற்றுகளை இங்குப் பார்க்க விருப்பமா?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "ஒத்திசைவு முன்னுரிமைகள்">
+<!ENTITY appMenuRemoteTabs.opensyncprefs.label "ஒத்திசைவு முன்னுரிமைகளைத் திற">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "உங்கள் மற்ற கருவிகளிலிருந்து கீற்றுகளின் பட்டியலைப் பார்க்க உள்நுழை.">
 <!ENTITY appMenuRemoteTabs.unverified.label "உங்கள் கணக்கு சரிபார்க்கப்பட வேண்டும்.">
 <!ENTITY appMenuRemoteTabs.signin.label "ஒத்திசைக்க உள்நுழை">
 <!ENTITY appMenuRemoteTabs.managedevices.label "சாதனங்களை நிர்வகி...">
 <!ENTITY appMenuRemoteTabs.sidebar.label "ஒத்திசைத்த கீற்றுகள் பக்கப்பட்டையைப் பார்">
-
 <!ENTITY appMenuRemoteTabs.connectdevice.label "மற்றொரு சாதனத்தை இணை">
 
 <!ENTITY appMenuRecentHighlights.label "அண்மைய மிளிர்ப்புகள்">
@@ -429,6 +444,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "சொல்லைத் தேடுங்கள் அல்லது முகவரியை உள்ளிடுங்கள்">
+<!ENTITY urlbar.placeholder3          "தேடல் தொடர் மற்றும் முகவரிகளை இங்கு உள்ளிடவும்">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "நீட்சிகள்:">
@@ -795,7 +811,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "ஒத்திசைத்த கீற்றுகள்">
 <!ENTITY syncedTabs.sidebar.noclients.label    "பிற கருவிகளின் கீற்றுகளை இங்கு பார்க்க அவற்றில் பயர்பாக்சில் உள்நுழை.">
-<!ENTITY syncedTabs.sidebar.noclients.title    "இதுவரையில்… ஒத்திசைத்த கீற்றுகள் ஏதுமில்லை!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "மற்ற கருவிகளிலிருந்து உங்கள் கீற்றுகளை இங்குப் பார்க்க விருப்பமா?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "உங்களின் மற்ற கருவிகளிலிருந்து கீற்றுகளின் பட்டியலைப் பார்க்க உள்நுழை.">
 <!ENTITY syncedTabs.sidebar.unverified.label   "உங்கள் கணக்கு சரிபார்க்கப்பட வேண்டும்.">
@@ -805,7 +820,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "மற்ற கருவிகளிலிருந்து கீற்றுகளின் பட்டியலைக் காண கீற்று ஒத்திசைவை இயக்கு.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "ஒத்திசைத்த கீற்றுகளைத் தேடவும்">
-
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "மற்றொரு சாதனத்தை இணை">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
@@ -974,11 +988,23 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "N">
 <!ENTITY updateRestart.panelUI.label2 "&brandShorterName; உலாவியை புதுப்பிக்க மீள்துவக்கு">
 
+<!ENTITY newTabControlled.message "நீங்கள் புதிய கீற்றைத் திறக்கும்போது ஒரு துணைநிரல் நீங்கள் பார்க்கும் பக்கத்தை மாற்றியது. நீங்கள் இந்த மாற்றத்தை விரும்பவில்லையெனில் அமைப்புகளை மீட்டமைக்கலாம்.">
+
 <!ENTITY newTabControlled.header.message "உங்களது புதிய கீற்று மாறிவிட்டது.">
 <!ENTITY newTabControlled.keepButton.label "மாற்றங்களை வைத்திரு">
 <!ENTITY newTabControlled.keepButton.accesskey "K">
 <!ENTITY newTabControlled.restoreButton.label "மீட்டமைப்பு அமைவுகள்">
 <!ENTITY newTabControlled.restoreButton.accesskey "R">
+
+<!ENTITY newTabControlled.disableButton.label "துணைநிரலை முடக்கவும்">
+<!ENTITY newTabControlled.disableButton.accesskey "D">
+
+<!ENTITY homepageControlled.message "ஒரு துணைநிரல் நீங்கள் பார்க்கும் முகப்புப் பக்கத்தை மாற்றியது. நீங்கள் இந்த மாற்றத்தை விரும்பவில்லையெனில் அமைப்புகளை மீட்டமைக்கலாம்.">
+<!ENTITY homepageControlled.header.message "உங்கள் முகப்பு பக்கம் மாற்றப்பட்டது.">
+<!ENTITY homepageControlled.keepButton.label "மாற்றங்களை வைத்திரு">
+<!ENTITY homepageControlled.keepButton.accesskey "K">
+<!ENTITY homepageControlled.disableButton.label "துணைநிரலை முடக்கவும்">
+<!ENTITY homepageControlled.disableButton.accesskey "D">
 
 <!ENTITY pageActionButton.tooltip "பக்க செயல்கள்">
 <!ENTITY pageAction.addToUrlbar.label "முகவரி பட்டையில் சேர்">
@@ -990,6 +1016,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageAction.sendTabToDevice.label "சாதனத்திற்கு கீற்றுகளை அனுப்பு">
 <!ENTITY sendToDevice.syncNotReady.label "சாதனங்களை ஒத்திசைக்கிறது...">
 
+<!ENTITY pageAction.shareUrl.label "பகிர்">
+
 <!ENTITY libraryButton.tooltip "வரலாறு, சேமித்த புத்தகக்குறிகள், மற்றும் பலவற்றைப் பார்">
 
 <!-- LOCALIZATION NOTE: (accessibilityIndicator.tooltip): This is used to
@@ -997,3 +1025,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      used as a textual label for the indicator used by assistive technology
      users. -->
 <!ENTITY accessibilityIndicator.tooltip "அணுகல்தன்மை வசதி செயற்படுத்தப்பட்டது">
+
+<!-- LOCALIZATION NOTE: (addonPostInstallMessage.label):
+     The first <image> tag is replaced with the icon for the add-ons menu.
+     The second <image> tag is replaced with the icon for the toolbar menu. -->
+<!ENTITY addonPostInstallMessage.label "<image class='addon-toolbar-icon'/> மெனுவில் <image class='addon-addon-icon'/> என்பதைச் சொடுக்குவதின் மூலம் உங்கள் மேற்சேர்க்கைகளை நிர்வகியுங்கள்.">

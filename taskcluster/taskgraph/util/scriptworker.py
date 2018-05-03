@@ -45,6 +45,7 @@ SIGNING_SCOPE_ALIAS_TO_PROJECT = [[
     'all-release-branches', set([
         'mozilla-beta',
         'mozilla-release',
+        'mozilla-esr60',
     ])
 ]]
 
@@ -74,11 +75,13 @@ BEETMOVER_SCOPE_ALIAS_TO_PROJECT = [[
         'mozilla-central',
         'mozilla-beta',
         'mozilla-release',
+        'mozilla-esr60',
     ])
 ], [
     'all-release-branches', set([
         'mozilla-beta',
         'mozilla-release',
+        'mozilla-esr60',
     ])
 ]]
 
@@ -155,6 +158,9 @@ PHASES = {
     'default': None,
 }
 
+"""Known balrog actions."""
+BALROG_ACTIONS = ('submit-locale', 'submit-toplevel', 'schedule')
+
 """Map balrog scope aliases to sets of projects.
 
 This is a list of list-pairs, for ordering.
@@ -172,6 +178,10 @@ BALROG_SCOPE_ALIAS_TO_PROJECT = [[
         'mozilla-release',
     ])
 ], [
+    'esr60', set([
+        'mozilla-esr60',
+    ])
+], [
     'esr', set([
         'mozilla-esr52',
     ])
@@ -185,49 +195,8 @@ BALROG_SERVER_SCOPES = {
     'beta': 'balrog:server:beta',
     'release': 'balrog:server:release',
     'esr': 'balrog:server:esr',
+    'esr60': 'balrog:server:esr',
     'default': 'balrog:server:dep',
-}
-
-"""Map the balrog scope aliases to the actual channel scopes.
-"""
-BALROG_CHANNEL_SCOPES = {
-    'nightly': [
-        'balrog:channel:nightly',
-        'balrog:channel:nightly-old-id',
-        'balrog:channel:aurora',
-    ],
-    'aurora': [
-        'balrog:channel:aurora',
-    ],
-    'beta': [
-        'balrog:channel:beta',
-        'balrog:channel:beta-localtest',
-        'balrog:channel:beta-cdntest',
-    ],
-    'release': [
-        'balrog:channel:release',
-        'balrog:channel:release-localtest',
-        'balrog:channel:release-cdntest',
-    ],
-    'esr': [
-        'balrog:channel:esr',
-        'balrog:channel:esr-localtest',
-        'balrog:channel:esr-cdntest',
-    ],
-    'default': [
-        'balrog:channel:nightly',
-        'balrog:channel:nightly-old-id',
-        'balrog:channel:aurora',
-        'balrog:channel:beta',
-        'balrog:channel:beta-localtest',
-        'balrog:channel:beta-cdntest',
-        'balrog:channel:release',
-        'balrog:channel:release-localtest',
-        'balrog:channel:release-cdntest',
-        'balrog:channel:esr',
-        'balrog:channel:esr-localtest',
-        'balrog:channel:esr-cdntest',
-    ],
 }
 
 
@@ -388,6 +357,12 @@ def get_phase_from_target_method(config, alias_to_tasks_map, alias_to_phase_map)
     return alias_to_phase_map['default']
 
 
+@with_scope_prefix
+def get_balrog_action_scope(config, action='submit'):
+    assert action in BALROG_ACTIONS
+    return "balrog:action:{}".format(action)
+
+
 get_signing_cert_scope = functools.partial(
     get_scope_from_project,
     alias_to_project_map=SIGNING_SCOPE_ALIAS_TO_PROJECT,
@@ -425,12 +400,6 @@ get_balrog_server_scope = functools.partial(
     alias_to_scope_map=BALROG_SERVER_SCOPES,
 )
 
-get_balrog_channel_scopes = functools.partial(
-    get_scope_from_project,
-    alias_to_project_map=BALROG_SCOPE_ALIAS_TO_PROJECT,
-    alias_to_scope_map=BALROG_CHANNEL_SCOPES,
-)
-
 get_push_apk_scope = functools.partial(
     get_scope_from_project,
     alias_to_project_map=PUSH_APK_SCOPE_ALIAS_TO_PROJECT,
@@ -456,7 +425,10 @@ def get_release_config(config):
     partial_updates = os.environ.get("PARTIAL_UPDATES", "")
     if partial_updates != "" and config.kind in ('release-bouncer-sub',
                                                  'release-bouncer-check',
-                                                 'release-updates-builder',
+                                                 'release-update-verify-config',
+                                                 'release-secondary-update-verify-config',
+                                                 'release-balrog-submit-toplevel',
+                                                 'release-secondary-balrog-submit-toplevel',
                                                  ):
         partial_updates = json.loads(partial_updates)
         release_config['partial_versions'] = ', '.join([

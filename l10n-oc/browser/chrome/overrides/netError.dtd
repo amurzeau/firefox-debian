@@ -1,0 +1,143 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd">
+%brandDTD;
+
+<!ENTITY loadError.label "Problèma al moment de cargar la pagina">
+<!ENTITY retry.label "Tornatz ensajar">
+<!ENTITY returnToPreviousPage.label "Tornar en arrièr">
+<!ENTITY advanced.label "Avançat">
+
+<!-- Specific error messages -->
+
+<!ENTITY connectionFailure.title "Impossible de se connectar">
+<!ENTITY connectionFailure.longDesc "&sharedLongDesc;">
+
+<!ENTITY deniedPortAccess.title "Aquesta adreça es restrencha">
+<!ENTITY deniedPortAccess.longDesc "">
+
+<!ENTITY dnsNotFound.pageTitle "Impossible de trobar lo servidor">
+<!-- Localization note (dnsNotFound.title1) - "Hmm" is a sound made when considering or puzzling over something. You don't have to include it in your translation if your language does not have a written word like this. -->
+<!ENTITY dnsNotFound.title1 "Umm. capitam pas a trobar aqueste site.">
+<!ENTITY dnsNotFound.longDesc1 "
+<strong>S’aquesta adreça es corrècta, vaquí tres mai causas que podètz ensajar :</strong>
+<ul>
+  <li>Tornar ensajar mai tard.</li>
+  <li>Verificar vòstra connexion al ret.</li>
+  <li>Se sètz connectat amb un talha-fòc, verificatz que &brandShortName; as la permission d’accedir al Web.</li>
+</ul>
+">
+
+<!ENTITY fileNotFound.title "Fichièrs pas trobat">
+<!ENTITY fileNotFound.longDesc "<ul> <li>Verificatz la sintaxi del nom de fichièr (amb respècte de las minusculas/majusculas) ;</li> <li>Verificatz se lo fichièr es pas estat desplaçat, renomenat o suprimit.</li> </ul>">
+
+<!ENTITY fileAccessDenied.title "L'accès al fichièr es estat refusat">
+<!ENTITY fileAccessDenied.longDesc "
+<ul>
+  <li>Benlèu es estat suprimit, bolegat o las permissions del fichièr n'empacharián l'accès.</li>
+</ul>
+">
+
+<!ENTITY generic.title "La requèsta pòt pas abotir">
+<!ENTITY generic.longDesc "<p>&brandShortName; pòt pas cargar aquesta pagina.</p>">
+
+<!ENTITY captivePortal.title "Se connectar al ret">
+<!ENTITY captivePortal.longDesc2 "<p>Cal se connectar a aqueste ret per accedir a Internet.</p>">
+
+<!ENTITY openPortalLoginPage.label2 "Dobrir la pagina de connexion al ret">
+
+<!ENTITY malformedURI.pageTitle "URL invalida">
+<!-- Localization note (malformedURI.title1) - "Hmm" is a sound made when considering or puzzling over something. You don't have to include it in your translation if your language does not have a written word like this. -->
+<!ENTITY malformedURI.title1 "Umm, aquesta adreça sembla pas valida.">
+
+<!ENTITY netInterrupt.title "La connexion es estada interrompuda">
+<!ENTITY netInterrupt.longDesc "&sharedLongDesc;">
+
+<!ENTITY notCached.title "Lo document a expirat">
+<!ENTITY notCached.longDesc "<p>Lo document demandat es pas mai disponible dins lo cache de &brandShortName;.</p><ul><li>Per mesura de seguretat, &brandShortName; tòrna pas demandar automaticament de documents sensibles.</li><li>Clicatz sus Tornar ensajar per tornar demandar aqueste document del site web.</li></ul>">
+
+<!ENTITY netOffline.title "Mòde sens connexion">
+<!ENTITY netOffline.longDesc2 "<ul> <li>Clicatz sul boton &quot;Ensajatz tornarmai&quot; per tornar en mòde connectat e recargar la pagina.</li> </ul>">
+
+<!ENTITY contentEncodingError.title "Error d'encodatge de contengut">
+<!ENTITY contentEncodingError.longDesc "<ul> <li>Contactatz lo webmèstre del site per l'assabentar d'aqueste problèma.</li> </ul>">
+
+<!ENTITY unsafeContentType.title "Tipe de fichièr pas segur">
+<!ENTITY unsafeContentType.longDesc "<ul> <li>Contactatz lo webmèstre del site per l'assabentar d'aqueste problèma.</li> </ul>">
+
+<!ENTITY netReset.title "La connexion es estada reïnicializada">
+<!ENTITY netReset.longDesc "&sharedLongDesc;">
+
+<!ENTITY netTimeout.title "Relambi d'espèra passat">
+<!ENTITY netTimeout.longDesc "&sharedLongDesc;">
+
+<!ENTITY unknownProtocolFound.title "La connexion es pas estada compresa">
+<!ENTITY unknownProtocolFound.longDesc "<ul> <li>Benlèu qu'es necessari d'installar una autra aplicacion per dobrir aqueste tipe d'adreça.</li> </ul>">
+
+<!ENTITY proxyConnectFailure.title "Lo servidor mandatòri refusa las connexions">
+<!ENTITY proxyConnectFailure.longDesc "<ul> <li>Verificatz que los paramètres del proxy son corrèctes ;</li> <li>Contactatz vòstre administrator de ret per vos assegurar que lo servidor proxy fonciona.</li> </ul>">
+
+<!ENTITY proxyResolveFailure.title "Impossible de trobar lo servidor mandatòri">
+<!ENTITY proxyResolveFailure.longDesc "<ul> <li>Verificatz que los paramètres del proxy son corrèctes ;</li> <li>Verificatz que la connexion ret de vòstre ordenador fonciona ;</li> <li>Se vòstre ordenador o vòstra ret es protegit per un parafuòc o un proxy,asseguratz-vos que &brandShortName; a l'autorizacion d'accedir al Web.</li> </ul>">
+
+<!ENTITY redirectLoop.title "Redireccion de pagina incorrècta">
+<!ENTITY redirectLoop.longDesc "<ul> <li>La causa d'aqueste problèma pòt èsser la desactivacion o lo refús dels cookies.</li> </ul>">
+
+<!ENTITY unknownSocketType.title "Responsa inesperada del servidor">
+<!ENTITY unknownSocketType.longDesc "<ul> <li>Verificatz que lo gestionari de seguretat personala (PSM) es installat sus vòstre sistèma.</li> <li>Aquò pòt èsser degut a una configuracion inacostumada del servidor.</li></ul>">
+
+<!ENTITY nssFailure2.title "La connexion segura a pas capitat">
+<!ENTITY nssFailure2.longDesc2 "<ul> <li>La pagina qu'ensajatz de consultar pòt pas èsser afichada perque l'autenticitat de las donadas recebudas pòt pas èsser verificada.</li> <li>Contactatz los proprietaris del sit Web per los n'assabentar. Tanben podètz utilizar la comanda dins lo menú d'ajuda per senhalar un site pas foncional.</li> </ul>">
+
+<!ENTITY certerror.longpagetitle1 "La connexion es pas segura">
+<!-- Localization note (certerror.introPara) - The text content of the span tag
+will be replaced at runtime with the name of the server to which the user
+was trying to connect. -->
+<!ENTITY certerror.introPara "L'autor de <span class='hostname'/> configurèt son site web incorrectament. Per protegir vòstras informacions del panatòri, &brandShortName; s'es pas connectat pas al site web.">
+
+<!ENTITY sharedLongDesc "<ul> <li>Benlèu que lo site es temporàriament indisponible o subrecargat. Tornatz ensajar pus tard ;</li> <li>Se capitatz pas de navegar sus cap de site, verificatz la connexion a la ret de vòstre ordenador ;</li> <li>Se vòstre ordenador o vòstra ret es protegit per un parafuòc o un proxy, asseguratz-vos que &brandShortName; a l'autorizacion d'accedir al Web.</li> </ul>">
+
+<!ENTITY cspBlocked.title "Blocat per una estrategia de seguretat de contengut">
+<!ENTITY cspBlocked.longDesc "<p>&brandShortName; a empacha lo cargament d'aquesta pagina d 'aqueste biais perque son estrategia de seguretat de contengut lo permet pas.</p>">
+
+<!ENTITY corruptedContentErrorv2.title "Error deguda a un contengut corromput">
+<!ENTITY corruptedContentErrorv2.longDesc "<p>La pagina qu'ensajatz de veire pòt pas èsser afichada perque una error dins la transmission de donadas es estada detectada.</p><ul><li>Contactatz los proprietaris del site Web per los assabentar d'aqueste problèma.</li></ul>">
+
+
+<!ENTITY securityOverride.exceptionButtonLabel "Apondre une excepcion…">
+
+<!ENTITY errorReporting.automatic2 "Senhalar de talas errors ajuda Mozilla a identificar e blocar de sites malvolents">
+<!ENTITY errorReporting.learnMore "Ne saber mai…">
+
+<!ENTITY remoteXUL.title "XUL distant">
+<!ENTITY remoteXUL.longDesc "<p><ul><li>Contactatz lo webmèstre del site per l'assabentar d'aqueste problèma.</li></ul></p>">
+
+<!ENTITY sslv3Used.title "Impossible d'establir una connexion securizada">
+<!-- LOCALIZATION NOTE (sslv3Used.longDesc2) - Do not translate
+     "SSL_ERROR_UNSUPPORTED_VERSION". -->
+<!ENTITY sslv3Used.longDesc2 "Informacion avançada: SSL_ERROR_UNSUPPORTED_VERSION">
+
+<!-- LOCALIZATION NOTE (certerror.wrongSystemTime2,
+                        certerror.wrongSystemTimeWithoutReference) - The <span id='..' />
+     tags will be injected with actual values, please leave them unchanged. -->
+<!ENTITY certerror.wrongSystemTime2 "<p>&brandShortName; s'es pas connectat a <span id='wrongSystemTime_URL'/> pr'amor que lo relòtge de vòstre ordenador sembla donar un temps fals e aquò empacha una connexion segura.</p> <p>Vòstre ordenador es reglat sus <span id='wrongSystemTime_systemDate'/> alara que deuriá o èsser sus <span id='wrongSystemTime_actualDate'/>. Per reglar aqueste problèma, cambiatz los paramètres de data e d'ora per que correspondan al temps corrècte.</p>">
+<!ENTITY certerror.wrongSystemTimeWithoutReference "<p>&brandShortName; s'es pas connectat a <span id='wrongSystemTimeWithoutReference_URL'/> que lo relòtge de vòstre ordenador sembla donar un temps fals e aquò empacha una connexion segura.</p> <p>Vòstre ordenador es reglat sus <span id='wrongSystemTimeWithoutReference_systemDate'/>. Per reglar aqueste problèma, cambiatz los paramètres de data e d'ora per los far correspondre al temps correcte.</p>">
+
+<!ENTITY certerror.pagetitle1  "Connexion pas segura">
+<!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Aqueste site utiliza HTTP
+Strict Transport Security (HSTS) per especificar que &brandShortName; se connecte
+sonque de biais segur. Atal, es pas possible d'apondre una excepcion per aqueste
+certificat.">
+<!ENTITY certerror.copyToClipboard.label "Copiar lo tèxte dins lo quichapapièrs">
+
+<!ENTITY inadequateSecurityError.title "Vòstra connexion es pas segura">
+<!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
+     "NS_ERROR_NET_INADEQUATE_SECURITY". -->
+<!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> utiliza una tecnologia de seguretat obsolèta e vulnerabla a las atacas. Un atacant poiriá aisidament revelar d'informacions que pensèssetz èsser seguras. L'administrator del site web deurà d'en primièr adobar lo servidor abans que poguèssetz visitar lo site.</p><p>Error code : NS_ERROR_NET_INADEQUATE_SECURITY</p>">
+
+<!ENTITY blockedByPolicy.title "Pagina blocada">
+
+<!ENTITY prefReset.longDesc "Sembla que la configuracion actuala de seguretat del ret a provocat aquesta error. Restablir los paramètres per defaut ?">
+<!ENTITY prefReset.label "Restablir los paramètres per defaut">

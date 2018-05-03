@@ -61,6 +61,8 @@ can reach it easily. -->
 <!ENTITY  closeTab.label                     "Затваряне на раздела">
 <!ENTITY  closeTab.accesskey                 "З">
 
+<!ENTITY  hiddenTabs.label                   "Скрити раздели">
+
 <!ENTITY  listAllTabs.label      "Показване на всички раздели">
 
 <!ENTITY tabCmd.label "Нов раздел">
@@ -127,6 +129,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "Показване на всички раздели">
 <!ENTITY showAllTabsCmd.accesskey "д">
 <!ENTITY toggleReaderMode.key "R">
+
+<!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "Вписване в &syncBrand.shortName.label;">
 <!ENTITY fxaSignedIn.tooltip "Настройки на &syncBrand.shortName.label;">
@@ -220,6 +224,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Използване на хранилището за постоянни данни">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Четецът е под дистанционно управление">
 
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "Отваря панела за удостоверяване през Мрежата">
+
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Управление споделянето на вашата камера и/или микрофон със сайта">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Управление споделянето на вашия микрофон със сайта">
 <!ENTITY urlbar.webRTCShareScreenNotificationAnchor.tooltip       "Управление споделянето на вашите прозорци или екран със сайта">
@@ -229,6 +235,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Управление превеждането на страници">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Управление използването на софтуер с DRM">
 
+<!ENTITY urlbar.midiNotificationAnchor.tooltip            "Отваря панела за MIDI">
+
 <!ENTITY urlbar.cameraBlocked.tooltip            "Забранили сте на страницата достъп до вашата камера.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Забранили сте на страницата достъп до вашия микрофон.">
 <!ENTITY urlbar.screenBlocked.tooltip            "Забранили сте на страницата споделянето на вашия екран.">
@@ -236,8 +244,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Забранили сте на страницата да ви изпраща известия.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Забранили сте на страницата достъп до хранилището за постоянни данни.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Забранили сте на страницата да отваря изскачащи прозорци.">
-
 <!ENTITY urlbar.canvasBlocked.tooltip            "Забранили сте достъпа до данните от canvas на тази страница.">
+
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "Използването на приставката Adobe Flash е забранено за този сайт.">
+<!ENTITY urlbar.midiBlocked.tooltip              "Забранили сте на страницата достъп до MIDI.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Показване на историята">
 
@@ -262,7 +272,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addBookmarksMenu.label             "Добавяне на менюто за отметки към лентата с инструменти">
 <!ENTITY removeBookmarksMenu.label          "Премахване на менюто за отметки от лентата с инструменти">
 
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -293,6 +303,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY inspectContextMenu.label     "Изследване на елемента">
 <!ENTITY inspectContextMenu.accesskey "И">
+
+<!ENTITY inspectA11YContextMenu.label     "Изследване на достъпността">
 
 <!ENTITY fileMenu.label         "Файл">
 <!ENTITY fileMenu.accesskey       "Ф">
@@ -379,10 +391,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Включете синхронизирането на раздели, за да видите списък с раздели от други ваши устройства.">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "Няма синхронизирани раздели… все още!">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Искате ли да видите свои раздели от други устройства тук?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Настройки на Sync">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Настройки на Sync">
@@ -391,7 +402,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Вписване в Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Управление на устройства…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Странична лента с раздели">
-
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Добавяне на устройство">
 
 <!ENTITY appMenuRecentHighlights.label "Последни акценти">
@@ -434,6 +444,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Търсене или въвеждане на адрес">
+<!ENTITY urlbar.placeholder3          "Въвеждайте адреси или търсете от тук">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Разширение:">
@@ -765,7 +776,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.weakEncryption "Тази странница използва слабо шифриране.">
 
 <!-- Strings for connection state warnings in the subview. -->
-<!ENTITY identity.description.insecure "Връзката ви със сайта не е поверителна. Изпращаната информация, като например пароли, съобщения, кредитни карти и др., може да бъде видяна от други.">
+<!ENTITY identity.description.insecure "Връзката ви със сайта не е поверителна. Изпращаната информация, като например пароли, съобщения, банкови карти и др., може да бъде видяна от други.">
 <!ENTITY identity.description.insecureLoginForms "Информацията за регистриране, която въведохте в тази страница, не е защитена и може да е компрометирана.">
 <!ENTITY identity.description.weakCipher "Връзката с тази страница използва слабо шифроване и не е поверителна.">
 <!ENTITY identity.description.weakCipher2 "Други хора могат да виждат ваша информация и да променят поведението на уебсайта.">
@@ -774,7 +785,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.description.passiveLoaded2 "Страницата има нешифровано съдържание, като например изображения.">
 <!ENTITY identity.description.passiveLoaded3 "&brandShortName; блокира част от съдържанието, но все още има съдържание, което не е шифрирано, като например изображения.">
 <!ENTITY identity.description.activeLoaded "Страницата има съдържание, например скриптове, което не е шифровано, и връзката със сайта не е поверителна.">
-<!ENTITY identity.description.activeLoaded2 "Споделяната със сайта информация, като например пароли, съобщения, кредитни карти и др., може да бъде виждана от други.">
+<!ENTITY identity.description.activeLoaded2 "Споделяната със сайта информация, като например пароли, съобщения, банкови карти и др., може да бъде виждана от други.">
 
 <!ENTITY identity.enableMixedContentBlocking.label "Включване на защита">
 <!ENTITY identity.enableMixedContentBlocking.accesskey "В">
@@ -800,7 +811,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "Синхронизирани раздели">
 <!ENTITY syncedTabs.sidebar.noclients.label    "Впишете се във Firefox на друго устройство, за да видите тук неговите раздели.">
-<!ENTITY syncedTabs.sidebar.noclients.title    "Няма синхронизирани раздели… все още!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Искате ли да видите свои раздели от други устройства тук?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Впишете се, за да видите списък с раздели от други ваши устройства.">
 <!ENTITY syncedTabs.sidebar.unverified.label   "Сметката ви трябва да бъде потвърдена.">
@@ -810,7 +820,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Включете синхронизирането на раздели, за да видите списък с раздели от други ваши устройства.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Търсене в синхронизираните">
-
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Добавяне на устройство">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
@@ -980,11 +989,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.panelUI.label2 "Рестарт за обновяване на &brandShorterName;">
 
 <!ENTITY newTabControlled.message "Разширение промени страницата, която виждате при отваряне на нов раздел. Може да възстановите настройките ако такава промяна е нежелателна.">
+
 <!ENTITY newTabControlled.header.message "Новият раздел е променен">
 <!ENTITY newTabControlled.keepButton.label "Запазване">
 <!ENTITY newTabControlled.keepButton.accesskey "з">
 <!ENTITY newTabControlled.restoreButton.label "Отмяна">
 <!ENTITY newTabControlled.restoreButton.accesskey "о">
+
+<!ENTITY newTabControlled.disableButton.label "Изключване на разширението">
+<!ENTITY newTabControlled.disableButton.accesskey "и">
+
+<!ENTITY homepageControlled.message "Разширение е променило какво ще виждате при отваряне на нов раздел. Може да възстановите настройките ако такава промяна е нежелателна.">
+<!ENTITY homepageControlled.header.message "Вашата начална страница е променена.">
+<!ENTITY homepageControlled.keepButton.label "Запазване">
+<!ENTITY homepageControlled.keepButton.accesskey "з">
+<!ENTITY homepageControlled.disableButton.label "Изключване на разширението">
+<!ENTITY homepageControlled.disableButton.accesskey "и">
 
 <!ENTITY pageActionButton.tooltip "Действия със страницата">
 <!ENTITY pageAction.addToUrlbar.label "Добавяне към адресната лента">
@@ -995,6 +1015,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pageAction.sendTabToDevice.label "Изпращане на раздела до устройство">
 <!ENTITY sendToDevice.syncNotReady.label "Синхронизиране на устройства…">
+
+<!ENTITY pageAction.shareUrl.label "Споделяне">
 
 <!ENTITY libraryButton.tooltip "Преглед на история, запазени отметки и други">
 

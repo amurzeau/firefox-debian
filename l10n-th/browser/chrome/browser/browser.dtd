@@ -55,10 +55,12 @@ can reach it easily. -->
 <!ENTITY  moveToNewWindow.accesskey          "ม">
 <!ENTITY  bookmarkAllTabs.label              "เพิ่มที่คั่นหน้าสำหรับแท็บทั้งหมด…">
 <!ENTITY  bookmarkAllTabs.accesskey          "บ">
-<!ENTITY  undoCloseTab.label                 "เรียกคืนแท็บที่เพิ่งปิด">
+<!ENTITY  undoCloseTab.label                 "เลิกทำการปิดแท็บ">
 <!ENTITY  undoCloseTab.accesskey             "ด">
 <!ENTITY  closeTab.label                     "ปิดแท็บ">
 <!ENTITY  closeTab.accesskey                 "ป">
+
+<!ENTITY  hiddenTabs.label                   "แท็บที่ถูกซ่อน">
 
 <!ENTITY  listAllTabs.label      "แสดงรายการแท็บทั้งหมด">
 
@@ -94,7 +96,7 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "ง">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.label "เพิ่มที่คั่นหน้าสำหรับแท็บทั้งหมด…">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "บ">
-<!ENTITY toolbarContextMenu.undoCloseTab.label "เรียกคืนแท็บที่เพิ่งปิด">
+<!ENTITY toolbarContextMenu.undoCloseTab.label "เลิกทำการปิดแท็บ">
 <!ENTITY toolbarContextMenu.undoCloseTab.accesskey "ด">
 
 <!ENTITY pageSourceCmd.label "ต้นฉบับหน้า">
@@ -110,6 +112,7 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 <!ENTITY pageInfoCmd.label "ข้อมูลหน้า">
 <!ENTITY pageInfoCmd.accesskey "ข">
 <!ENTITY pageInfoCmd.commandkey "i">
+<!ENTITY ldbCmd.label "ตัวดีบั๊กเค้าโครง">
 <!ENTITY mirrorTabCmd.label "สะท้อนแท็บ">
 <!ENTITY mirrorTabCmd.accesskey "ส">
 <!-- LOCALIZATION NOTE (enterFullScreenCmd.label, exitFullScreenCmd.label):
@@ -209,7 +212,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.viewSiteInfo.label                      "ดูข้อมูลไซต์">
 
 <!ENTITY urlbar.defaultNotificationAnchor.tooltip         "เปิดแผงข้อความ">
-<!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "เปิดแผงการร้องขอตำแหน่งที่ตั้ง">
+<!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "เปิดแผงคำขอตำแหน่งที่ตั้ง">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "เปิดแผงข้อความการติดตั้งส่วนเสริม">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "เปิดแผงข้อความที่เก็บข้อมูลออฟไลน์">
 <!ENTITY urlbar.passwordNotificationAnchor.tooltip        "เปิดแผงข้อความบันทึกรหัสผ่าน">
@@ -217,6 +220,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "เลือกว่าคุณสามารถรับการแจ้งเตือนจากไซต์ได้หรือไม่">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "จัดเก็บข้อมูลในที่เก็บข้อมูลถาวร">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "เบราว์เซอร์อยู่ภายใต้การควบคุมระยะไกล">
+
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "เปิดแผง ​Web Authentication">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "จัดการการแบ่งปันกล้องและ/หรือไมโครโฟนของคุณกับไซต์">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "จัดการการแบ่งปันไมโครโฟนของคุณกับไซต์">
@@ -237,7 +242,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "คุณได้ปิดกั้นที่เก็บข้อมูลถาวรสำหรับเว็บไซต์นี้">
 <!ENTITY urlbar.popupBlocked.tooltip             "คุณได้ปิดกั้นป๊อปอัปสำหรับเว็บไซต์นี้">
 
-
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "คุณได้ปิดกั้นเว็บไซต์นี้จากการใช้ปลั๊กอิน Adobe Flash">
+<!ENTITY urlbar.midiBlocked.tooltip              "คุณได้ปิดกั้นการเข้าถึง MIDI สำหรับเว็บไซต์นี้">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "แสดงประวัติ">
 
@@ -262,7 +268,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addBookmarksMenu.label             "เพิ่มเมนูที่คั่นหน้าไปยังแถบเครื่องมือ">
 <!ENTITY removeBookmarksMenu.label          "เอาเมนูที่คั่นหน้าออกจากแถบเครื่องมือ">
 
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -293,6 +299,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY inspectContextMenu.label     "ตรวจสอบองค์ประกอบ">
 <!ENTITY inspectContextMenu.accesskey "อ">
+
+<!ENTITY inspectA11YContextMenu.label     "ตรวจสอบคุณสมบัติการช่วยการเข้าถึง">
 
 <!ENTITY fileMenu.label         "ไฟล์">
 <!ENTITY fileMenu.accesskey       "ฟ">
@@ -379,18 +387,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "เปิดการซิงค์แท็บเพื่อดูรายการแท็บจากอุปกรณ์อื่น ๆ ของคุณ">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "ยังไม่มีแท็บที่ซิงค์…!">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "ต้องการเห็นแท็บของคุณจากอุปกรณ์อื่น ๆ ที่นี่?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "ค่ากำหนด Sync">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "เปิดค่ากำหนด Sync">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "ลงชื่อเข้าเพื่อดูรายการแท็บจากอุปกรณ์อื่น ๆ ของคุณ">
+<!ENTITY appMenuRemoteTabs.unverified.label "บัญชีของคุณจำเป็นต้องได้รับการยืนยัน">
 <!ENTITY appMenuRemoteTabs.signin.label "ลงชื่อเข้า Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "จัดการอุปกรณ์…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "ดูแถบข้างแท็บที่ซิงค์">
-
 <!ENTITY appMenuRemoteTabs.connectdevice.label "เชื่อมต่ออุปกรณ์อื่น">
 
 <!ENTITY appMenuRecentHighlights.label "รายการเด่นล่าสุด">
@@ -433,7 +440,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "ค้นหาหรือป้อนที่อยู่">
-<!ENTITY urlbar.accesskey             "d">
+<!ENTITY urlbar.placeholder3          "ป้อนคำค้นหาและที่อยู่ที่นี่">
+<!ENTITY urlbar.accesskey             "ป">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "ส่วนขยาย:">
 <!ENTITY urlbar.switchToTab.label     "สลับไปยังแท็บ:">
@@ -651,7 +659,7 @@ items are mutually exclusive. -->
 <!ENTITY mediaHideControls.accesskey "ค">
 <!ENTITY videoFullScreen.label       "เต็มหน้าจอ">
 <!ENTITY videoFullScreen.accesskey   "จ">
-<!ENTITY videoSaveImage.label        "บันทึก Snapshot เป็น…">
+<!ENTITY videoSaveImage.label        "บันทึกสแนปช็อตเป็น…">
 <!ENTITY videoSaveImage.accesskey    "บ">
 <!-- LOCALIZATION NOTE: The access keys for "Show Statistics" and
 "Hide Statistics" are the same because the two context-menu
@@ -766,7 +774,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.description.insecure "การเชื่อมต่อของคุณไปยังไซต์นี้ไม่เป็นส่วนตัว ข้อมูลที่คุณแบ่งปันกับไซต์นี้สามารถดูได้โดยผู้อื่น (เช่น รหัสผ่าน, ข้อความ, บัตรเครดิต ฯลฯ)">
 <!ENTITY identity.description.insecureLoginForms "ข้อมูลการเข้าสู่ระบบที่คุณป้อนในหน้านี้ไม่ปลอดภัยและอาจถูกบุกรุกได้">
 <!ENTITY identity.description.weakCipher "การเชื่อมต่อของคุณไปยังเว็บไซต์นี้ใช้การเข้ารหัสที่อ่อนแอและไม่เป็นส่วนตัว">
-<!ENTITY identity.description.weakCipher2 "คนอื่นสามารถดูข้อมูลของคุณหรือแก้ไขพฤติกรรมของเว็บไซต์ได้">
+<!ENTITY identity.description.weakCipher2 "ผู้คนอื่น ๆ สามารถดูข้อมูลของคุณหรือเปลี่ยนแปลงพฤติกรรมของเว็บไซต์">
 <!ENTITY identity.description.activeBlocked "&brandShortName; ได้ปิดกั้นบางส่วนของหน้านี้ที่ไม่ปลอดภัย">
 <!ENTITY identity.description.passiveLoaded "การเชื่อมต่อของคุณไม่เป็นส่วนตัวและข้อมูลที่คุณแบ่งปันกับเว็บไซต์คนอื่นสามารถดูได้">
 <!ENTITY identity.description.passiveLoaded2 "เว็บไซต์นี้มีเนื้อหาที่ไม่ปลอดภัย (อย่างเช่น ภาพ)">
@@ -798,16 +806,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "แท็บที่ซิงค์">
 <!ENTITY syncedTabs.sidebar.noclients.label    "ลงชื่อเข้า Firefox จากอุปกรณ์อื่น ๆ ของคุณเพื่อดูแท็บของอุปกรณ์เหล่านั้นที่นี่">
-<!ENTITY syncedTabs.sidebar.noclients.title    "ยังไม่มีแท็บที่ซิงค์…!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "ต้องการเห็นแท็บของคุณจากอุปกรณ์อื่น ๆ ที่นี่?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "ลงชื่อเข้าเพื่อดูรายการแท็บจากอุปกรณ์อื่น ๆ ของคุณ">
+<!ENTITY syncedTabs.sidebar.unverified.label   "บัญชีของคุณจำเป็นต้องได้รับการยืนยัน">
 <!ENTITY syncedTabs.sidebar.notabs.label       "ไม่มีแท็บที่เปิดอยู่">
 <!ENTITY syncedTabs.sidebar.openprefs.label    "เปิดค่ากำหนด &syncBrand.shortName.label;">
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "เปิดการซิงค์แท็บเพื่อดูรายการแท็บจากอุปกรณ์อื่น ๆ ของคุณ">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "ค้นหาแท็บที่ซิงค์">
-
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "เชื่อมต่ออุปกรณ์อื่น">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
@@ -836,7 +843,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncBrand.shortName.label    "Sync">
 
 <!ENTITY syncSignIn.label             "ลงชื่อเข้า &syncBrand.shortName.label;…">
-<!ENTITY syncSignIn.accesskey         "Y">
+<!ENTITY syncSignIn.accesskey         "ล">
 <!ENTITY syncSyncNowItem.label        "ซิงค์ตอนนี้">
 <!ENTITY syncSyncNowItem.accesskey    "ง">
 <!ENTITY syncReAuthItem.label         "เชื่อมต่อกับ &syncBrand.shortName.label; ใหม่…">
@@ -948,7 +955,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY panicButton.thankyou.buttonlabel         "ขอบคุณ!">
 
 <!ENTITY emeLearnMoreContextMenu.label            "เรียนรู้เพิ่มเติมเกี่ยวกับ DRM…">
-<!ENTITY emeLearnMoreContextMenu.accesskey        "D">
+<!ENTITY emeLearnMoreContextMenu.accesskey        "ร">
 
 <!ENTITY updateAvailable.message "อัปเดต &brandShorterName; ของคุณเพื่อความเร็วและความเป็นส่วนตัวล่าสุด">
 <!ENTITY updateAvailable.whatsnew.label "ดูว่ามีอะไรใหม่">
@@ -976,8 +983,23 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "ม">
 <!ENTITY updateRestart.panelUI.label2 "เริ่มการทำงานใหม่เพื่ออัปเดต &brandShorterName;">
 
+<!ENTITY newTabControlled.message "ส่วนขยายได้เปลี่ยนหน้าที่คุณเห็นเมื่อคุณเปิดแท็บใหม่ คุณสามารถเรียกคืนการตั้งค่าของคุณหากคุณไม่ต้องการการเปลี่ยนแปลงนี้">
+
+<!ENTITY newTabControlled.header.message "แท็บใหม่ของคุณมีการเปลี่ยนแปลง">
+<!ENTITY newTabControlled.keepButton.label "เก็บการเปลี่ยนแปลง">
+<!ENTITY newTabControlled.keepButton.accesskey "ก">
 <!ENTITY newTabControlled.restoreButton.label "เรียกคืนการตั้งค่า">
 <!ENTITY newTabControlled.restoreButton.accesskey "ร">
+
+<!ENTITY newTabControlled.disableButton.label "ปิดใช้งานส่วนขยาย">
+<!ENTITY newTabControlled.disableButton.accesskey "ป">
+
+<!ENTITY homepageControlled.message "ส่วนขยายได้เปลี่ยนสิ่งที่คุณเห็นเป็นหน้าแรกของคุณ คุณสามารถเรียกคืนการตั้งค่าของคุณหากคุณไม่ต้องการการเปลี่ยนแปลงนี้">
+<!ENTITY homepageControlled.header.message "หน้าแรกของคุณมีการเปลี่ยนแปลง">
+<!ENTITY homepageControlled.keepButton.label "เก็บการเปลี่ยนแปลง">
+<!ENTITY homepageControlled.keepButton.accesskey "ก">
+<!ENTITY homepageControlled.disableButton.label "ปิดใช้งานส่วนขยาย">
+<!ENTITY homepageControlled.disableButton.accesskey "ป">
 
 <!ENTITY pageActionButton.tooltip "การกระทำของหน้า">
 <!ENTITY pageAction.addToUrlbar.label "เพิ่มไปยังแถบที่อยู่">
@@ -988,6 +1010,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pageAction.sendTabToDevice.label "ส่งแท็บไปยังอุปกรณ์">
 <!ENTITY sendToDevice.syncNotReady.label "กำลังซิงค์อุปกรณ์…">
+
+<!ENTITY pageAction.shareUrl.label "แบ่งปัน">
 
 <!ENTITY libraryButton.tooltip "ดูประวัติ, ที่คั่นหน้าที่บันทึกไว้ และอื่น ๆ">
 
@@ -1000,3 +1024,4 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- LOCALIZATION NOTE: (addonPostInstallMessage.label):
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
+<!ENTITY addonPostInstallMessage.label "จัดการส่วนเสริมของคุณโดยคลิก <image class='addon-addon-icon'/> ใน <image class='addon-toolbar-icon'/> เมนู">

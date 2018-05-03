@@ -61,6 +61,8 @@ can reach it easily. -->
 <!ENTITY  closeTab.label                     "Stäng flik">
 <!ENTITY  closeTab.accesskey                 "S">
 
+<!ENTITY  hiddenTabs.label                   "Dolda flikar">
+
 <!ENTITY  listAllTabs.label      "Visa upp alla flikar">
 
 <!ENTITY tabCmd.label "Ny flik">
@@ -222,6 +224,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Lagra data i beständig lagring">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Webbläsaren är fjärrstyrd">
 
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "Öppna panel för webbautentisiering">
+
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Hantera delning av din kamera och/eller mikrofon med webbplatsen">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Hantera delning av din mikrofon med webbplatsen">
 <!ENTITY urlbar.webRTCShareScreenNotificationAnchor.tooltip       "Hantera delning av dina fönster eller skärm med webbplatsen">
@@ -240,9 +244,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Du har blockerat notifieringar för denna webbsida.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Du har blockerat beständig lagring för denna webbplats.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Du har blockerat popup-fönster för den här webbplatsen.">
-
 <!ENTITY urlbar.canvasBlocked.tooltip            "Du har blockerat canvas-extrahering för denna webbplats.">
 
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "Du har blockerat den här webbplatsen från att använda insticksmodulen Adobe Flash.">
 <!ENTITY urlbar.midiBlocked.tooltip              "Du har blockerat MIDI-åtkomst för denna webbplats.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Visa historik">
@@ -268,7 +272,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addBookmarksMenu.label             "Lägg till bokmärkesmeny till verktygsfältet">
 <!ENTITY removeBookmarksMenu.label          "Ta bort bokmärkesmeny från verktygsfältet">
 
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -299,6 +303,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY inspectContextMenu.label     "Inspektera element">
 <!ENTITY inspectContextMenu.accesskey "e">
+
+<!ENTITY inspectA11YContextMenu.label     "Inspektera tillgänglighetsinställningar">
 
 <!ENTITY fileMenu.label         "Arkiv">
 <!ENTITY fileMenu.accesskey       "A">
@@ -385,10 +391,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Slå på fliksynkronisering för att visa en lista med flikar från dina andra enheter.">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "Inga synkroniserade flikar… än!">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Vill du se dina flikar från andra enheter här?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Synkroniseringsinställningar">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Öppna synkroniseringsinställningar">
@@ -397,7 +402,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Logga in till Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Hantera enheter…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Visa sidofält Synkade flikar">
-
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Anslut en annan enhet">
 
 <!ENTITY appMenuRecentHighlights.label "Senaste höjdpunkterna">
@@ -440,6 +444,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Sök eller ange adress">
+<!ENTITY urlbar.placeholder3          "Ange söktermer eller webbadresser här">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Tillägg:">
@@ -806,7 +811,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "Synkade Flikar">
 <!ENTITY syncedTabs.sidebar.noclients.label    "Logga in på Firefox från dina andra enheter för att visa deras flikar här.">
-<!ENTITY syncedTabs.sidebar.noclients.title    "Inga synkroniserade flikar… än!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Vill du se dina flikar från andra enheter här?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Logga in för att se en lista med flikar från dina andra enheter.">
 <!ENTITY syncedTabs.sidebar.unverified.label   "Ditt konto behöver verifieras.">
@@ -816,7 +820,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Slå på fliksynkronisering för att visa en lista med flikar från dina andra enheter.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Sök synkroniserade flikar">
-
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Anslut en annan enhet">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
@@ -986,11 +989,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.panelUI.label2 "Starta om för att uppdatera &brandShorterName;">
 
 <!ENTITY newTabControlled.message "Ett tillägg har ändrat den sida du ser när du öppnar en ny flik. Du kan återställa dina inställningar om du inte vill ha den här ändringen.">
+
 <!ENTITY newTabControlled.header.message "Din nya flik har ändrats.">
 <!ENTITY newTabControlled.keepButton.label "Behåll ändringar">
 <!ENTITY newTabControlled.keepButton.accesskey "B">
 <!ENTITY newTabControlled.restoreButton.label "Återställ inställningar">
 <!ENTITY newTabControlled.restoreButton.accesskey "t">
+
+<!ENTITY newTabControlled.disableButton.label "Inaktivera tillägg">
+<!ENTITY newTabControlled.disableButton.accesskey "n">
+
+<!ENTITY homepageControlled.message "Ett tillägg har bytt vad du ser som din startsida. Du kan återställa till din inställning om du inte önskar denna ändring.">
+<!ENTITY homepageControlled.header.message "Din startsida har ändrats.">
+<!ENTITY homepageControlled.keepButton.label "Behåll ändringar">
+<!ENTITY homepageControlled.keepButton.accesskey "B">
+<!ENTITY homepageControlled.disableButton.label "Inaktivera tillägg">
+<!ENTITY homepageControlled.disableButton.accesskey "n">
 
 <!ENTITY pageActionButton.tooltip "Åtgärder för sida">
 <!ENTITY pageAction.addToUrlbar.label "Lägg till i adressfältet">
@@ -1001,6 +1015,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pageAction.sendTabToDevice.label "Skicka flik till enhet">
 <!ENTITY sendToDevice.syncNotReady.label "Synkar enheter…">
+
+<!ENTITY pageAction.shareUrl.label "Dela">
 
 <!ENTITY libraryButton.tooltip "Visa historik, sparade bokmärken och mer">
 

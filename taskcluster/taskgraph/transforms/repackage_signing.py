@@ -11,9 +11,11 @@ from taskgraph.transforms.base import TransformSequence
 from taskgraph.util.attributes import copy_attributes_from_dependent_job
 from taskgraph.util.schema import validate_schema, Schema
 from taskgraph.util.scriptworker import (
+    add_scope_prefix,
     get_signing_cert_scope_per_platform,
     get_worker_type_for_scope,
 )
+from taskgraph.util.taskcluster import get_artifact_path
 from taskgraph.transforms.task import task_description_schema
 from voluptuous import Required, Optional
 
@@ -89,13 +91,13 @@ def make_repackage_signing_description(config, jobs):
         signing_cert_scope = get_signing_cert_scope_per_platform(
             build_platform, is_nightly, config
         )
-        scopes = [signing_cert_scope, 'project:releng:signing:format:mar_sha384']
+        scopes = [signing_cert_scope, add_scope_prefix(config, 'signing:format:mar_sha384')]
 
         upstream_artifacts = [{
             "taskId": {"task-reference": "<repackage>"},
             "taskType": "repackage",
             "paths": [
-                "public/build/{}target.complete.mar".format(locale_str),
+                get_artifact_path(dep_job, "{}target.complete.mar".format(locale_str)),
             ],
             "formats": ["mar_sha384"]
         }]
@@ -104,23 +106,27 @@ def make_repackage_signing_description(config, jobs):
                 "taskId": {"task-reference": "<repackage>"},
                 "taskType": "repackage",
                 "paths": [
-                    "public/build/{}target.installer.exe".format(locale_str),
+                    get_artifact_path(dep_job, "{}target.installer.exe".format(locale_str)),
                 ],
                 "formats": ["sha2signcode"]
             })
-            scopes.append("project:releng:signing:format:sha2signcode")
+            scopes.append(add_scope_prefix(config, "signing:format:sha2signcode"))
 
-            # Stub installer is only generated on win32
-            if '32' in build_platform:
+            # Stub installer is only generated on win32 and not on esr
+            no_stub = ("mozilla-esr60", "jamun")
+            if 'win32' in build_platform and not config.params["project"] in no_stub:
+                # TODO: fix the project hint to be a better design
                 upstream_artifacts.append({
                     "taskId": {"task-reference": "<repackage>"},
                     "taskType": "repackage",
                     "paths": [
-                        "public/build/{}target.stub-installer.exe".format(locale_str),
+                        get_artifact_path(
+                            dep_job, "{}target.stub-installer.exe".format(locale_str)
+                        ),
                     ],
                     "formats": ["sha2signcodestub"]
                 })
-                scopes.append("project:releng:signing:format:sha2signcodestub")
+                scopes.append(add_scope_prefix(config, "signing:format:sha2signcodestub"))
 
         task = {
             'label': label,

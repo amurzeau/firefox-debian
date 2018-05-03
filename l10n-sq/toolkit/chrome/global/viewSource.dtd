@@ -9,7 +9,7 @@
 <!-- LOCALIZATION NOTE (mainWindow.titlemodifier) : DONT_TRANSLATE --> 
 <!ENTITY mainWindow.titlemodifier "&brandFullName;">
 <!-- LOCALIZATION NOTE (mainWindow.titlemodifierseparator) : DONT_TRANSLATE -->
-<!ENTITY mainWindow.titlemodifierseparator "-">
+<!ENTITY mainWindow.titlemodifierseparator " - ">
 <!ENTITY mainWindow.preface "Burim i: ">
 
 <!ENTITY fileMenu.label "Kartelë">
@@ -24,7 +24,7 @@
 <!ENTITY printCmd.label "Shtypni…">
 <!ENTITY printCmd.accesskey "Y">
 <!ENTITY printCmd.commandkey "P">
-<!ENTITY closeCmd.label "Mbylle">
+<!ENTITY closeCmd.label "Mbylleni">
 <!ENTITY closeCmd.accesskey "M">
 <!ENTITY closeCmd.commandkey "W">
 
@@ -42,7 +42,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY textReset.commandkey "0">
 <!ENTITY textReset.commandkey2 "">
 
-<!ENTITY goToLineCmd.label "Shkoni te Rreshti…">
+<!ENTITY goToLineCmd.label "Kaloni te Rreshti…">
 <!ENTITY goToLineCmd.accesskey "O">
 <!ENTITY goToLineCmd.commandkey "l">
 
@@ -57,9 +57,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY menu_highlightSyntax.accesskey "T">
 <!ENTITY menu_textSize.label "Madhësi Teksti">
 <!ENTITY menu_textSize.accesskey "M">
-<!ENTITY menu_textEnlarge.label "Rrit Madhësi Teksti">
+<!ENTITY menu_textEnlarge.label "Rrite">
 <!ENTITY menu_textEnlarge.accesskey "R">
-<!ENTITY menu_textReduce.label "Zvogëlo Madhësi Teksti">
+<!ENTITY menu_textReduce.label "Zvogëloje">
 <!ENTITY menu_textReduce.accesskey "Z">
 <!ENTITY menu_textReset.label "Normal">
 <!ENTITY menu_textReset.accesskey "N">

@@ -27,11 +27,18 @@
 <!ENTITY dataCollection.label "Dane zbierane przez program &brandShortName;">
 <!ENTITY dataCollectionDesc.label "Dążymy do zapewnienia odpowiedniego wyboru i zbierania wyłącznie niezbędnych danych, aby dostarczać i doskonalić program &brandShortName; dla nas wszystkich. Zawsze prosimy o pozwolenie przed przesłaniem danych osobistych.">
 <!ENTITY dataCollectionPrivacyNotice.label "Uwagi dotyczące prywatności">
+
+<!ENTITY collectBrowserErrors.label "Przesyłanie raportów z błędów przeglądarki (razem z treścią błędów) do Mozilli.">
+<!ENTITY collectBrowserErrors.accesskey "z">
+<!ENTITY collectBrowserErrorsLearnMore.label "Więcej informacji">
+
 <!ENTITY enableHealthReport2.label "Przesyłanie do Mozilli danych technicznych i o interakcjach z programem.">
 <!ENTITY enableHealthReport2.accesskey "z">
 <!ENTITY healthReportLearnMore.label "Więcej informacji">
 <!ENTITY alwaysSubmitCrashReports1.label "Przesyłanie raportów z awarii do Mozilli.">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "e">
+<!ENTITY sendBackloggedCrashReports.label "Przesyłanie zgromadzonych raportów z awarii.">
+<!ENTITY sendBackloggedCrashReports.accesskey "p">
 <!ENTITY crashReporterLearnMore.label "Więcej informacji">
 
 <!ENTITY networkTab.label                "Sieć">
@@ -39,15 +46,21 @@
 <!ENTITY networkProxy.label "Proxy sieciowe">
 
 <!ENTITY connectionDesc.label            "Określ, w jaki sposób &brandShortName; ma się łączyć z Internetem">
+<!ENTITY connectionSettingsLearnMore.label "Więcej informacji">
 <!ENTITY connectionSettings.label        "Ustawienia…">
 <!ENTITY connectionSettings.accesskey "U">
 
 <!ENTITY httpCache.label                 "Treści w pamięci podręcznej">
 <!ENTITY siteData.label "Dane stron">
+<!ENTITY siteData1.label "Ciasteczka i dane stron">
 <!ENTITY clearSiteData.label "Wyczyść wszystkie dane">
 <!ENTITY clearSiteData.accesskey "a">
+<!ENTITY clearSiteData1.label "Wyczyść dane">
+<!ENTITY clearSiteData1.accesskey "a">
 <!ENTITY siteDataSettings.label "Ustawienia…">
 <!ENTITY siteDataSettings.accesskey "U">
+<!ENTITY siteDataSettings1.label "Zachowane dane…">
+<!ENTITY siteDataSettings1.accesskey "c">
 <!ENTITY siteDataLearnMoreLink.label "Więcej informacji">
 
 <!ENTITY limitCacheSizeBefore.label      "Ogranicz pamięć podręczną do ">
@@ -92,7 +105,7 @@
 <!ENTITY viewSecurityDevices2.accesskey "U">
 
 <!ENTITY performance.label "Wydajność">
-<!ENTITY useRecommendedPerformanceSettings2.label "Rekomendowane ustawienia wydajności.">
+<!ENTITY useRecommendedPerformanceSettings2.label "Zalecane ustawienia wydajności.">
 <!ENTITY useRecommendedPerformanceSettings2.description "Ustawienia te są specjalnie dostosowane do specyfikacji tego komputera i systemu operacyjnego.">
 <!ENTITY useRecommendedPerformanceSettings2.accesskey "w">
 <!ENTITY performanceSettingsLearnMore.label "Więcej informacji">

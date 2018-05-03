@@ -6,7 +6,7 @@
 
 # the default day to start the week on
 #0=Sunday 1=Monday 2=Tuesday 3=Wednesday 4=Thursday 5=Friday 6=Saturday
-pref("calendar.week.start", 0);
+pref("calendar.week.start", 1);
 
 # default days off (not in work week)
 pref("calendar.week.d0sundaysoff", true);
@@ -16,8 +16,6 @@ pref("calendar.week.d3wednesdaysoff", false);
 pref("calendar.week.d4thursdaysoff", false);
 pref("calendar.week.d5fridaysoff", false);
 pref("calendar.week.d6saturdaysoff", true);
-
-pref("general.useragent.locale", "@AB_CD@");
 
 # categories
 pref("calendar.categories.names", "Cliënten,Concurrentie,Diversen,Favorieten,Giften,Ideeën,Klant,Kwesties,Leveranciers,Nationale feestdag,Persoonlijk,Projecten,Reizen,Status,Telefoongesprekken,Trouwdag,Vakantie,Vergadering,Verjaardag,Vervolggesprek,Vrije dagen,Zaken");

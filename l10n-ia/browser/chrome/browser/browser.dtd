@@ -61,6 +61,8 @@ can reach it easily. -->
 <!ENTITY  closeTab.label                     "Clauder le scheda">
 <!ENTITY  closeTab.accesskey                 "C">
 
+<!ENTITY  hiddenTabs.label                   "Schedas celate">
+
 <!ENTITY  listAllTabs.label      "Listar tote le schedas">
 
 <!ENTITY tabCmd.label "Nove scheda">
@@ -111,6 +113,8 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 <!ENTITY pageInfoCmd.label "Informationes del pagina">
 <!ENTITY pageInfoCmd.accesskey "I">
 <!ENTITY pageInfoCmd.commandkey "i">
+<!ENTITY ldbCmd.label "Depurator de mappa">
+<!ENTITY ldbCmd.accesskey "L">
 <!ENTITY mirrorTabCmd.label "Duplicar le scheda">
 <!ENTITY mirrorTabCmd.accesskey "D">
 <!-- LOCALIZATION NOTE (enterFullScreenCmd.label, exitFullScreenCmd.label):
@@ -125,6 +129,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "Monstrar tote le schedas">
 <!ENTITY showAllTabsCmd.accesskey "A">
 <!ENTITY toggleReaderMode.key "R">
+
+<!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "Connecter se a &syncBrand.shortName.label;">
 <!ENTITY fxaSignedIn.tooltip "Aperir le preferentias de &syncBrand.shortName.label;">
@@ -218,6 +224,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Stockar datos in le immagazinage persistente">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Le navigator es sub controlo remote">
 
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "Aperir le quadro de authentication web">
+
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Gerer le compartimento de tu camera e/o microphono con le sito">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Gerer le compartimento de tu microphono con le sito">
 <!ENTITY urlbar.webRTCShareScreenNotificationAnchor.tooltip       "Gerer le compartimento de tu fenestras o schermos con le sito">
@@ -227,6 +235,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Gerer le traduction del pagina">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Gerer le utilisation de software de DRM">
 
+<!ENTITY urlbar.midiNotificationAnchor.tooltip            "Aperir le quadro MIDI">
+
 <!ENTITY urlbar.cameraBlocked.tooltip            "Tu ha blocate tu camera pro iste sito web.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Tu ha blocate tu microphono pro iste sito web.">
 <!ENTITY urlbar.screenBlocked.tooltip            "Tu ha blocate iste sito web de compartir tu schermo.">
@@ -234,8 +244,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Tu ha blocate iste sito web de inviar notificationes.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Tu ha blocate le immagazinage persistente pro iste sito web.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Tu ha blocate le fenestras emergente pro iste sito web.">
-
 <!ENTITY urlbar.canvasBlocked.tooltip            "Tu ha blocate le extraction de datos de canevas pro iste sito web.">
+
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "Tu ha blocate iste sito web per le plug-in de Adobe Flash.">
+<!ENTITY urlbar.midiBlocked.tooltip              "Tu ha blocate le accesso MIDI pro iste sito web.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Monstrar le chronologia">
 
@@ -260,7 +272,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addBookmarksMenu.label             "Adder le menu de marcapaginas al barra">
 <!ENTITY removeBookmarksMenu.label          "Remover le menu de marcapaginas del barra">
 
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -291,6 +303,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY inspectContextMenu.label     "Inspectar elemento">
 <!ENTITY inspectContextMenu.accesskey "I">
+
+<!ENTITY inspectA11YContextMenu.label     "Controlar le proprietates de accessibilitate">
 
 <!ENTITY fileMenu.label         "File">
 <!ENTITY fileMenu.accesskey       "F">
@@ -377,18 +391,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Activar le synchronisation pro vider un lista de schedas de tu altere apparatos.">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "Nulle schedas synchronisate… ancora!">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Desira tu vider le schedas de altere apparatos hic?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Preferentias de Sync">
+<!ENTITY appMenuRemoteTabs.opensyncprefs.label "Aperir le preferentias de Sync">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Authentica te pro vider un lista de schedas de tu altere apparatos.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Il necesse verificar tu conto.">
 <!ENTITY appMenuRemoteTabs.signin.label "Connecter se a Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Gerer le apparatos…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Vider le barra lateral de schedas synchronisate">
-
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Connecter un altere apparato">
 
 <!ENTITY appMenuRecentHighlights.label "Evidentias recente">
@@ -431,6 +444,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Insere un adresse o face un recerca">
+<!ENTITY urlbar.placeholder3          "Insere hic terminos e adresses de recerca">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Extension:">
@@ -797,7 +811,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "Schedas synchronisate">
 <!ENTITY syncedTabs.sidebar.noclients.label    "Authentica te a Firefox sur tu altere apparatos pro vider lor schedas hic.">
-<!ENTITY syncedTabs.sidebar.noclients.title    "Nulle schedas synchronisate… ancora!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Desira tu vider le schedas de altere apparatos hic?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Authentica te pro vider un lista de schedas de tu altere apparatos.">
 <!ENTITY syncedTabs.sidebar.unverified.label   "Tu conto debe esser verificate.">
@@ -807,7 +820,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Activar le synchronisation de schedas pro vider un lista del schedas de tu altere apparatos.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Cercar in le schedas synchronisate">
-
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Connecter un altere apparato">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
@@ -977,11 +989,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.panelUI.label2 "Reinitiar pro actualisar &brandShorterName;">
 
 <!ENTITY newTabControlled.message "Un extension cambiava le pagina que tu vide quando tu aperi un scheda nove. Tu pote restaurar iste parametros si tu non vole iste modification.">
+
 <!ENTITY newTabControlled.header.message "Tu nove scheda cambiava.">
 <!ENTITY newTabControlled.keepButton.label "Mantener le cambios">
 <!ENTITY newTabControlled.keepButton.accesskey "M">
 <!ENTITY newTabControlled.restoreButton.label "Restaurar le parametros">
 <!ENTITY newTabControlled.restoreButton.accesskey "R">
+
+<!ENTITY newTabControlled.disableButton.label "Disactivar le extension">
+<!ENTITY newTabControlled.disableButton.accesskey "">
+
+<!ENTITY homepageControlled.message "Un extension cambiava lo que tu vide quando tu aperi tu pagina casa. Tu pote restaurar tu parametros si tu non vole iste modification.">
+<!ENTITY homepageControlled.header.message "Tu pagina principal cambiava.">
+<!ENTITY homepageControlled.keepButton.label "Mantener le cambios">
+<!ENTITY homepageControlled.keepButton.accesskey "M">
+<!ENTITY homepageControlled.disableButton.label "Disactivar le extension">
+<!ENTITY homepageControlled.disableButton.accesskey "D">
 
 <!ENTITY pageActionButton.tooltip "Actiones del pagina">
 <!ENTITY pageAction.addToUrlbar.label "Adder al barra de adresse">
@@ -993,6 +1016,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageAction.sendTabToDevice.label "Inviar le scheda a un apparato">
 <!ENTITY sendToDevice.syncNotReady.label "Synchronisante apparatos…">
 
+<!ENTITY pageAction.shareUrl.label "Compartir">
+
 <!ENTITY libraryButton.tooltip "Vider chronologia, marcapaginas salvate, e plus">
 
 <!-- LOCALIZATION NOTE: (accessibilityIndicator.tooltip): This is used to
@@ -1000,3 +1025,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      used as a textual label for the indicator used by assistive technology
      users. -->
 <!ENTITY accessibilityIndicator.tooltip "Functionalitates de accessibilitate active">
+
+<!-- LOCALIZATION NOTE: (addonPostInstallMessage.label):
+     The first <image> tag is replaced with the icon for the add-ons menu.
+     The second <image> tag is replaced with the icon for the toolbar menu. -->
+<!ENTITY addonPostInstallMessage.label "Gere tu additivos per cliccar <image class='addon-addon-icon'/> in le <image class='addon-toolbar-icon'/> menu.">

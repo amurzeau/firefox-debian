@@ -4,7 +4,7 @@
 
 <!ENTITY     window.title                  "Nastavitve - Podatki strani">
 
-<!ENTITY     window1.title                 "Nastavitve - piškotki in podatki strani">
+<!ENTITY     window2.title                 "Upravljanje piškotkov in podatkov strani">
 <!ENTITY     hostCol.label                 "Stran">
 <!ENTITY     statusCol.label               "Stanje">
 <!ENTITY     cookiesCol.label              "Piškotki">
@@ -22,3 +22,5 @@
 <!ENTITY     removingSelected.description  "Ko odstranite podatke strani, boste odstranili tudi povezane piškotke in vsebino za delo brez povezave. To vas bo morda odjavilo iz spletnih strani. Ste prepričani, da želite uveljaviti spremembe?">
 <!ENTITY     siteTree2.label               "Odstranjeni bodo piškotki naslednjih spletnih strani">
 <!ENTITY     removingDialog1.title         "Odstranjevanje piškotkov in podatkov strani">
+<!ENTITY     removingSelected1.description "Izbris piškotkov in podatkov strani vas lahko odjavi iz spletnih strani. Ste prepričani, da želite to storiti?">
+<!ENTITY     siteTree3.label               "Odstranjeni bodo piškotki in podatki naslednjih strani">

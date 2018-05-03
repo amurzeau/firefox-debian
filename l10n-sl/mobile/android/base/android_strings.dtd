@@ -282,6 +282,13 @@
 <!ENTITY pref_whats_new_notification "Kaj je novega v &brandShortName;u">
 <!ENTITY pref_whats_new_notification_summary "Spoznajte nove možnosti po posodobitvi">
 
+<!-- Localization note (pref_feature_tips_notification): Title of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification"-->
+<!ENTITY pref_feature_tips_notification "Nasveti o zmogljivostih">
+<!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification_summary"-->
+<!ENTITY pref_feature_tips_notification_summary "Več o uporabi &brandShortName;a in drugih izdelkih organizacije &vendorShortName;">
+
 <!-- Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
      for experimental features. -->
 <!ENTITY pref_category_experimental "Eksperimentalne funkcije">
@@ -422,13 +429,12 @@
      crashReporterDesc.label). -->
 <!ENTITY datareporting_fhr_title "Zdravniško spričevalo za &brandShortName;">
 <!ENTITY datareporting_fhr_summary2 "Pošilja podatke o zdravstvenem stanju vašega brskalnika organizaciji &vendorShortName; in vam pomaga razumeti njegovo delovanje">
-<!ENTITY datareporting_abouthr_title "Prikaži moje zdravniško spričevalo">
 <!ENTITY datareporting_telemetry_title "Telemetrija">
 <!ENTITY datareporting_telemetry_summary "Pošilja podatke o učinkovitosti, uporabi, strojni opremi in prilagoditvah organizaciji &vendorShortName;, da lahko naredi &brandShortName; boljši">
 <!ENTITY datareporting_crashreporter_summary "&brandShortName; pošilja poročila o sesutju organizaciji &vendorShortName;, da lahko naredi brskalnik bolj varen in zanesljiv">
 <!-- Localization note (datareporting_crashreporter_title_short) : This string matches
      (crashReporterSection.label) in en-US/chrome/browser/preferences/advanced.dtd.-->
-<!ENTITY datareporting_crashreporter_title_short "Poročila o sesutju">
+<!ENTITY datareporting_crashreporter_title_short "Poročevalec o sesutju">
 <!ENTITY datareporting_wifi_title2 "Lokacijske storitve &vendorShortName;">
 <!ENTITY datareporting_wifi_geolocation_summary4 "Pomagajte organizaciji &vendorShortName; narisati zemljevid sveta! Objavljajte približne podatke o mobilnih in brezžičnih lokacijah vaše naprave za izboljšanje naše geolokacijske storitve.">
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading

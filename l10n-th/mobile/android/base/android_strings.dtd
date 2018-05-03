@@ -96,7 +96,7 @@
 <!ENTITY bookmark_parent_folder "โฟลเดอร์หลัก">
 <!ENTITY bookmark_add_folder "เพิ่มโฟลเดอร์ใหม่">
 
-<!ENTITY reader_saved_offline "บันทึกไว้ออฟไลน์">
+<!ENTITY reader_saved_offline "บันทึกไว้ออฟไลน์แล้ว">
 <!-- Localization note (reader_switch_to_bookmarks) : This
      string is used as an action in a snackbar - it lets you
      "switch" to the bookmarks (saved items) panel. -->
@@ -209,7 +209,7 @@
 <!ENTITY pref_category_notifications_summary "คุณลักษณะใหม่, การอัปเดตเว็บไซต์">
 <!ENTITY pref_developer_remotedebugging_usb "การดีบั๊กระยะไกลผ่าน USB">
 <!ENTITY pref_developer_remotedebugging_wifi "การดีบั๊กระยะไกลผ่าน Wi-Fi">
-<!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "การดีบั๊กบน Wi-Fi จำเป็นต้องให้อุปกรณ์ของคุณมีแอปตัวอ่านรหัส QR ติดตั้งอยู่">
+<!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "การดีบั๊กผ่าน Wi-Fi จำเป็นต้องให้อุปกรณ์ของคุณมีแอปตัวอ่านรหัส QR ติดตั้งอยู่">
 <!ENTITY pref_remember_signons2 "จดจำการเข้าสู่ระบบ">
 <!ENTITY pref_manage_logins "จัดการการเข้าสู่ระบบ">
 
@@ -281,6 +281,13 @@
 
 <!ENTITY pref_whats_new_notification "มีอะไรใหม่ใน &brandShortName;">
 <!ENTITY pref_whats_new_notification_summary "เรียนรู้เกี่ยวกับคุณลักษณะใหม่หลังจากการอัปเดต">
+
+<!-- Localization note (pref_feature_tips_notification): Title of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification"-->
+<!ENTITY pref_feature_tips_notification "เคล็ดลับผลิตภัณฑ์และคุณลักษณะ">
+<!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification_summary"-->
+<!ENTITY pref_feature_tips_notification_summary "เรียนรู้เพิ่มเติมเกี่ยวกับการใช้ &brandShortName; และผลิตภัณฑ์ &vendorShortName; อื่น ๆ">
 
 <!-- Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
      for experimental features. -->
@@ -422,7 +429,6 @@
      crashReporterDesc.label). -->
 <!ENTITY datareporting_fhr_title "รายงานสุขภาพ &brandShortName;">
 <!ENTITY datareporting_fhr_summary2 "แบ่งปันข้อมูลเกี่ยวกับสุขภาพเบราว์เซอร์ของคุณให้กับ &vendorShortName; และช่วยให้คุณเข้าใจประสิทธิภาพเบราว์เซอร์ของคุณ">
-<!ENTITY datareporting_abouthr_title "ดูรายงานสุขภาพของฉัน">
 <!ENTITY datareporting_telemetry_title "การวัดและส่งข้อมูลทางไกล">
 <!ENTITY datareporting_telemetry_summary "แบ่งปันข้อมูลประสิทธิภาพ, การใช้งาน, ฮาร์ดแวร์ และการปรับแต่งเกี่ยวกับเบราว์เซอร์ของคุณกับ &vendorShortName; เพื่อช่วยเราทำ &brandShortName; ให้ดีขึ้น">
 <!ENTITY datareporting_crashreporter_summary "&brandShortName; ส่งรายงานข้อขัดข้องเพื่อช่วยให้ &vendorShortName; สร้างเบราว์เซอร์ของคุณให้เสถียรและปลอดภัยยิ่งขึ้น">
@@ -586,7 +592,7 @@
 <!ENTITY home_synced_devices_number "&formatD; อุปกรณ์">
 <!-- Localization note (home_synced_devices_one_device): This is the singular version of home_synced_devices_number, referring to the number of devices a user has synced. -->
 <!ENTITY home_synced_devices_one "1 อุปกรณ์">
-<!ENTITY home_history_back_to2 "กลับสู่ประวัติแบบเต็ม">
+<!ENTITY home_history_back_to2 "กลับไปที่ประวัติแบบเต็ม">
 <!ENTITY home_clear_history_button "ล้างประวัติการท่องเว็บ">
 <!ENTITY home_clear_history_confirm "คุณแน่ใจหรือไม่ว่าต้องการล้างประวัติของคุณ?">
 <!ENTITY home_bookmarks_empty "ที่คั่นหน้าที่คุณบันทึกไว้จะแสดงที่นี่">
@@ -607,7 +613,7 @@
 
 <!-- Localization note (home_back_up_to_filter): The variable is replaced by the name of the
      previous location in the navigation, such as the previous folder -->
-<!ENTITY home_move_back_to_filter "กลับสู่ &formatS;">
+<!ENTITY home_move_back_to_filter "กลับไปที่ &formatS;">
 
 <!-- Localization note (home_remote_tabs_many_hidden_devices) : The
      formatD is replaced with the number of hidden devices.  The
@@ -698,7 +704,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY searchable_description "ที่คั่นหน้าและประวัติ">
 
  <!-- Updater notifications -->
-<!ENTITY updater_start_title2 "มีการอัปเดตที่ใช้งานได้สำหรับ &brandShortName;">
+<!ENTITY updater_start_title2 "มีการอัปเดตสำหรับ &brandShortName;">
 <!ENTITY updater_start_select2 "สัมผัสเพื่อดาวน์โหลด">
 
 <!ENTITY updater_downloading_title2 "กำลังดาวน์โหลด &brandShortName;">
@@ -827,7 +833,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_first_offline_bookmark_message "ค้นหารายการมุมมองผู้อ่านของคุณในที่คั่นหน้า แม้ขณะออฟไลน์">
 <!ENTITY helper_first_offline_bookmark_button "ไปยังที่คั่นหน้า">
 
-<!ENTITY helper_triple_readerview_open_title "ใช้งานได้ออฟไลน์">
+<!ENTITY helper_triple_readerview_open_title "พร้อมใช้งานออฟไลน์">
 <!ENTITY helper_triple_readerview_open_message "เพิ่มที่คั่นหน้าสำหรับรายการมุมมองผู้อ่านเพื่ออ่านแบบออฟไลน์">
 <!ENTITY helper_triple_readerview_open_button "เพิ่มไปยังที่คั่นหน้า">
 

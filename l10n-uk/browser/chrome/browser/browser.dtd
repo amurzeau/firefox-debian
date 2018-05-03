@@ -61,6 +61,8 @@ can reach it easily. -->
 <!ENTITY  closeTab.label                     "Закрити вкладку">
 <!ENTITY  closeTab.accesskey                 "к">
 
+<!ENTITY  hiddenTabs.label                   "Приховані вкладки">
+
 <!ENTITY  listAllTabs.label      "Список усіх вкладок">
 
 <!ENTITY tabCmd.label "Нова вкладка">
@@ -222,6 +224,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Зберігати дані в постійному сховищі">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Браузер знаходиться під віддаленим керуванням">
 
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "Відкрити панель веб-авторизації">
+
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Керувати доступом сайту до ваших камери та/або мікрофону">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Керувати доступом сайту до вашого мікрофону">
 <!ENTITY urlbar.webRTCShareScreenNotificationAnchor.tooltip       "Керувати доступом сайту до ваших вікон чи екрану">
@@ -240,9 +244,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Ви заблокували сповіщення для цього веб-сайту.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Ви заблокували постійне сховище для цього веб-сайту.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Ви заблокували виринаючі вікна для цього веб-сайту.">
-
 <!ENTITY urlbar.canvasBlocked.tooltip            "Ви заблокували видобування даних canvas для цього веб-сайту.">
 
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "Ви заборонили використання Adobe Flash на цьому сайті.">
 <!ENTITY urlbar.midiBlocked.tooltip              "Ви заблокували MIDI доступ для цього веб-сайту.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Показати історію">
@@ -268,7 +272,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addBookmarksMenu.label             "Додати меню закладок до панелі інструментів">
 <!ENTITY removeBookmarksMenu.label          "Вилучити меню закладок з панелі інструментів">
 
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -299,6 +303,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY inspectContextMenu.label     "Дослідити елемент">
 <!ENTITY inspectContextMenu.accesskey "Д">
+
+<!ENTITY inspectA11YContextMenu.label     "Дослідити властивості доступності">
 
 <!ENTITY fileMenu.label         "Файл">
 <!ENTITY fileMenu.accesskey       "Ф">
@@ -385,10 +391,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Увімкнути синхронізацію вкладок для можливості перегляду вашого списку вкладок з інших пристроїв.">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "Немає синхронізованих вкладок… поки що!">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Хочете побачити тут свої вкладки з інших пристроїв?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Налаштування синхронізації">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Відкрити налаштування синхронізації">
@@ -397,10 +402,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Увійти в Синхронізацію">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Керувати пристроями…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Переглянути бічну панель синхронізованих вкладок">
-
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Під'єднати інший пристрій">
 
-<!ENTITY appMenuRecentHighlights.label "Останнє обране">
+<!ENTITY appMenuRecentHighlights.label "Останнє відібране">
 
 <!ENTITY customizeMenu.addToToolbar.label "Додати на панель">
 <!ENTITY customizeMenu.addToToolbar.accesskey "Д">
@@ -440,6 +444,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Введіть пошуковий запит чи адресу">
+<!ENTITY urlbar.placeholder3          "Вводьте пошукові запити й адреси тут">
 <!ENTITY urlbar.accesskey             "с">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Розширення:">
@@ -806,7 +811,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "Синхронізовані вкладки">
 <!ENTITY syncedTabs.sidebar.noclients.label    "Увійдіть у Firefox з інших пристроїв, щоб переглядати їх вкладки тут.">
-<!ENTITY syncedTabs.sidebar.noclients.title    "Немає синхронізованих вкладок… поки що!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Хочете побачити тут свої вкладки з інших пристроїв?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Увійдіть, щоб переглядати список вкладок з інших ваших пристроїв.">
 <!ENTITY syncedTabs.sidebar.unverified.label   "Ваш обліковий запис потребує підтвердження.">
@@ -816,7 +820,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Увімкніть синхронізацію вкладок для перегляду списку вкладок з інших пристроїв.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Шукати синхронізовані вкладки">
-
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Під'єднати інший пристрій">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
@@ -986,11 +989,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.panelUI.label2 "Перезапуск для оновлення &brandShorterName;">
 
 <!ENTITY newTabControlled.message "Розширення змінило сторінку, яку ви бачите, коли ви відкрили нову вкладку. Якщо ви не хочете цих змін, ви можете відновити налаштування.">
+
 <!ENTITY newTabControlled.header.message "Ваша нова вкладка була змінена.">
 <!ENTITY newTabControlled.keepButton.label "Зберегти зміни">
 <!ENTITY newTabControlled.keepButton.accesskey "б">
 <!ENTITY newTabControlled.restoreButton.label "Відновити налаштування">
 <!ENTITY newTabControlled.restoreButton.accesskey "н">
+
+<!ENTITY newTabControlled.disableButton.label "Вимкнути розширення">
+<!ENTITY newTabControlled.disableButton.accesskey "м">
+
+<!ENTITY homepageControlled.message "Розширення змінило сторінку вашої домівки. Якщо ви не хочете цього, можете відновити налаштування.">
+<!ENTITY homepageControlled.header.message "Сторінка вашої домівки була змінена.">
+<!ENTITY homepageControlled.keepButton.label "Зберегти зміни">
+<!ENTITY homepageControlled.keepButton.accesskey "б">
+<!ENTITY homepageControlled.disableButton.label "Вимкнути розширення">
+<!ENTITY homepageControlled.disableButton.accesskey "В">
 
 <!ENTITY pageActionButton.tooltip "Дії сторінки">
 <!ENTITY pageAction.addToUrlbar.label "Додати до панелі адреси">
@@ -1001,6 +1015,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pageAction.sendTabToDevice.label "Відправити вкладку на пристрій">
 <!ENTITY sendToDevice.syncNotReady.label "Синхронізовані пристрої…">
+
+<!ENTITY pageAction.shareUrl.label "Поділитися">
 
 <!ENTITY libraryButton.tooltip "Перегляд історії, збережених закладок та інших даних">
 

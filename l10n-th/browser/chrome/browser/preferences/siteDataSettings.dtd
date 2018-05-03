@@ -4,11 +4,12 @@
 
 <!ENTITY     window.title                  "การตั้งค่า - ข้อมูลไซต์">
 
-<!ENTITY     window1.title                 "การตั้งค่า - คุกกี้และข้อมูลไซต์">
+<!ENTITY     window2.title                 "จัดการคุกกี้และข้อมูลไซต์">
 <!ENTITY     hostCol.label                 "ไซต์">
 <!ENTITY     statusCol.label               "สถานะ">
 <!ENTITY     cookiesCol.label              "คุกกี้">
 <!ENTITY     usageCol.label                "ที่เก็บข้อมูล">
+<!ENTITY     lastAccessedCol.label                "วันที่ใช้ครั้งล่าสุด">
 <!ENTITY     searchTextboxPlaceHolder             "ค้นหาเว็บไซต์">
 <!ENTITY     searchTextboxPlaceHolder.accesskey   "ค">
 <!ENTITY     removeSelected.label          "เอาที่เลือกออก">
@@ -18,5 +19,8 @@
 <!ENTITY     cancel.label                  "ยกเลิก">
 <!ENTITY     cancel.accesskey              "ย">
 <!ENTITY     removingDialog.title          "เอาข้อมูลไซต์ออก">
-<!ENTITY     removingSelected.description  "การเอาข้อมูลไซต์ออกจะเอาคุกกี้ที่เกี่ยวข้องและเนื้อหาเว็บออฟไลน์ออก สิ่งนี้อาจทำให้คุณออกจากระบบของเว็บไซต์ คุณแน่ใจหรือไม่ว่าต้องการทำการเปลี่ยนแปลง?">
+<!ENTITY     removingSelected.description  "การเอาข้อมูลไซต์ออกจะเอาคุกกี้ที่เกี่ยวข้องและเนื้อหาเว็บออฟไลน์ออก สิ่งนี้อาจนำคุณออกจากระบบของเว็บไซต์ คุณแน่ใจหรือไม่ว่าต้องการทำการเปลี่ยนแปลง?">
 <!ENTITY     siteTree2.label               "คุกกี้ของเว็บไซต์ดังต่อไปนี้จะถูกเอาออก">
+<!ENTITY     removingDialog1.title         "การเอาคุกกี้และข้อมูลไซต์ออก">
+<!ENTITY     removingSelected1.description "การเอาคุกกี้และข้อมูลไซต์ออกอาจนำคุณออกจากระบบของเว็บไซต์ คุณแน่ใจหรือไม่ว่าต้องการทำการเปลี่ยนแปลง?">
+<!ENTITY     siteTree3.label               "คุกกี้และข้อมูลไซต์สำหรับเว็บไซต์ดังต่อไปนี้จะถูกเอาออก">
