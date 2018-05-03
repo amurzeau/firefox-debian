@@ -282,6 +282,13 @@
 <!ENTITY pref_whats_new_notification "O que há de novo no &brandShortName;">
 <!ENTITY pref_whats_new_notification_summary "Saber mais sobre as novas funcionalidades depois de uma atualização">
 
+<!-- Localization note (pref_feature_tips_notification): Title of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification"-->
+<!ENTITY pref_feature_tips_notification "Dicas de produtos e recursos">
+<!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification_summary"-->
+<!ENTITY pref_feature_tips_notification_summary "Saiba mais sobre como usar o &brandShortName; e outros produtos &vendorShortName;">
+
 <!-- Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
      for experimental features. -->
 <!ENTITY pref_category_experimental "Funcionalidades experimentais">
@@ -297,7 +304,7 @@
 <!ENTITY custom_tabs_menu_item_open_in "Abrir no &formatS;">
 <!ENTITY custom_tabs_menu_footer "Desenvolvido por &brandShortName;">
 <!-- Long-click title of CustomTabsActivity will copy URL to clipboard and display this hint -->
-<!ENTITY custom_tabs_hint_url_copy "URL copiado">
+<!ENTITY custom_tabs_hint_url_copy "URL copiada">
 
 <!ENTITY pref_pwa "Aplicativos Web progressivos">
 <!ENTITY pref_pwa_summary "Permitir que aplicativos web sejam adicionados à tela inicial">
@@ -422,7 +429,6 @@
      crashReporterDesc.label). -->
 <!ENTITY datareporting_fhr_title "Relatório de integridade do &brandShortName;">
 <!ENTITY datareporting_fhr_summary2 "Compartilha dados com a &vendorShortName; sobre a saúde do seu navegador e ajuda a entender seu desempenho">
-<!ENTITY datareporting_abouthr_title "Ver relatório de integridade">
 <!ENTITY datareporting_telemetry_title "Telemetria">
 <!ENTITY datareporting_telemetry_summary "Compartilha dados de desempenho, uso, hardware e personalizações com a &vendorShortName; para nos ajudar a fazer o &brandShortName; melhor">
 <!ENTITY datareporting_crashreporter_summary "O &brandShortName; envia relatórios de travamento para ajudar a &vendorShortName; a tornar o navegador mais estável e seguro">

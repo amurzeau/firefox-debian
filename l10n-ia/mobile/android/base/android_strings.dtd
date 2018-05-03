@@ -4,19 +4,19 @@
 
 <!ENTITY firstrun_panel_title_welcome "Benvenite">
 <!ENTITY firstrun_urlbar_message2 "Gratias pro eliger &brandShortName;">
-<!ENTITY firstrun_urlbar_subtext2 "Un navigator mobile moderne de Mozilla, le organisation sin fines de lucro compromittite a un web libere e aperite.">
+<!ENTITY firstrun_urlbar_subtext2 "Un navigator mobile moderne de Mozilla, le organisation non lucrative que fide in le web libere e aperte.">
 <!ENTITY firstrun_panel_title_privacy "Confidentialitate">
 <!ENTITY firstrun_privacy_message "Naviga sin sentir te observate">
 <!ENTITY firstrun_privacy_subtext "Le navigation private con protection contra traciamento bloca traciatores durante que tu naviga e non memorara tu chronologia quando tu termina de navigar.">
 <!ENTITY firstrun_panel_title_customize "Personalisar">
-<!ENTITY firstrun_customize_message "Face &brandShortName; tue.">
+<!ENTITY firstrun_customize_message "Rende &brandShortName; tue.">
 <!ENTITY firstrun_customize_subtext "Personalisa &brandShortName; con additivos. Bloca annuncios, adde functionalitates o elige un nove thema pro reflecter tu personalitate.">
 <!ENTITY firstrun_bookmarks_title "Chronologia">
 <!ENTITY firstrun_bookmarks_message "Tu favoritos, a tu vista">
 <!ENTITY firstrun_bookmarks_subtext "Obtene resultatos de tu marcapaginas e de tu chronologia quando tu cerca.">
 <!ENTITY firstrun_data_title "Datos">
 <!ENTITY firstrun_data_message "Minus datos, plus economia">
-<!ENTITY firstrun_data_subtext2 "Inactivar le imagines pro consumer minus datos a cata sito que tu visita.">
+<!ENTITY firstrun_data_subtext2 "Disactiva le imagines pro consummar minus datos cata sito tu visita.">
 <!ENTITY firstrun_sync_title "Sync">
 <!ENTITY firstrun_sync_message2 "Reprende de ubi tu lassava">
 <!ENTITY firstrun_sync_subtext2 "Usa Sync pro trovar marcapaginas, contrasignos, e altere cosas que tu salva in &brandShortName; sur tote tu apparatos.">
@@ -32,18 +32,18 @@
 <!ENTITY firstrun_tabqueue_subtext_off "Salva ligamines pro depois in &brandShortName; quando los tocca in altere applicationes.">
 
 <!ENTITY firstrun_tabqueue_message_on "Successo!">
-<!ENTITY firstrun_tabqueue_subtext_on "Semper tu pote disactivar iste in &settings; sub &pref_category_general;.">
+<!ENTITY firstrun_tabqueue_subtext_on "Semper tu pote disactivar isto in &settings; sub &pref_category_general;.">
 
 <!ENTITY firstrun_readerview_title "Articulos">
 <!-- Localization note (firstrun_readerview_message): This is a casual way of describing getting rid of unnecessary things, and is referring to simplifying websites so only the article text and images are visible, removing unnecessary headers or ads. -->
-<!ENTITY firstrun_readerview_message "Perder le disordine">
-<!ENTITY firstrun_readerview_subtext "Usa le vista de lectura pro facilitar le lectura de los artículos \u2014 sin conexión mesmo.">
+<!ENTITY firstrun_readerview_message "Elimina le incombramento">
+<!ENTITY firstrun_readerview_subtext "Usa le vista de lectura pro facilitar le lectura de los articulos \u2014 mesmo sin connexion.">
 
 <!-- Localization note (firstrun_devices_title): This is a casual way of addressing the user, somewhat referring to their online identity (which would include other devices, Firefox usage, accounts, etc). -->
 <!ENTITY firstrun_account_title "Tu">
-<!ENTITY firstrun_account_message "Esque tu ha &brandShortName; in apparato altere?">
+<!ENTITY firstrun_account_message "Esque tu ha &brandShortName; in un altere apparato?">
 
-<!ENTITY  onboard_start_restricted1 "Mantene secur e in dominio con iste version simplificate de &brandShortName;.">
+<!ENTITY  onboard_start_restricted1 "Mantene secur e in controlo con iste version simplificate de &brandShortName;.">
 
 <!-- Localization note: These are used as the titles of different pages on the home screen.
      They are automatically converted to all caps by the Android platform. -->
@@ -57,7 +57,7 @@
 
 <!ENTITY  crash_reporter_title "Reporto de collapso de &brandShortName;">
 <!ENTITY  crash_message2 "&brandShortName; habeva un problema e falleva. Tu schedas debera esser listate sur le pagina initial de &brandShortName; quando tu reinitia.">
-<!ENTITY  crash_send_report_message3 "Informar &vendorShortName; sur iste collapto a fin que illes pote corriger lo">
+<!ENTITY  crash_send_report_message3 "Informar &vendorShortName; sur iste collapso a fin que illes pote corriger lo">
 <!ENTITY  crash_include_url2 "Includer le adresse del pagina sur le qual io esseva">
 <!ENTITY  crash_sorry "Nos regretta">
 <!ENTITY  crash_comment "Adder un commento (le commentos es visibile publicamente)">
@@ -134,7 +134,7 @@
      &formatS; will be replaced with the title of the tab, as received from the
      web page. When audio is not playing in a tab, &formatS; will be used as
      the content description. -->
-<!ENTITY tab_title_prefix_is_playing_audio "Sonante audio – &formatS;">
+<!ENTITY tab_title_prefix_is_playing_audio "Reproduction audio – &formatS;">
 
 <!ENTITY settings "Parametros">
 <!ENTITY settings_title "Parametros">
@@ -151,7 +151,7 @@
 <!-- Localization note (locale_system_default) : This string indicates that
      Firefox will use the locale currently selected in Android's settings
      to display browser chrome. -->
-<!ENTITY locale_system_default "Valor predefinite per le systema">
+<!ENTITY locale_system_default "Valor predefinite del systema">
 
 <!-- Localization note (overlay_share_label) : This is the label that appears
      in Android's intent chooser when sending a link to Firefox to bookmark,
@@ -176,7 +176,7 @@
 <!-- Localization note (overlay_no_synced_devices) : Used when the menu option
      to send a tab to a synced device is pressed and no other synced devices
      are found. -->
-<!ENTITY overlay_no_synced_devices "Nulle apparatos connectite al conto Firefox ha essite trovate">
+<!ENTITY overlay_no_synced_devices "Nulle apparatos connectite al conto Firefox trovate">
 
 <!ENTITY pref_category_search3 "Recerca">
 <!ENTITY pref_category_search_summary2 "Adder, predefinir, monstrar le suggestiones">
@@ -239,7 +239,7 @@
      particular radio button, a text field will appear below the radio button and allow the
      user to insert an address of their choice. This string is the hint text to that
      text field. -->
-<!ENTITY home_homepage_hint_user_address "Inscriber adresse o termino de recerca">
+<!ENTITY home_homepage_hint_user_address "Scribe un adresse o termino de recerca">
 
 <!-- Localization note: These are shown in the left sidebar on tablets -->
 <!ENTITY pref_header_general "General">
@@ -252,9 +252,9 @@
 <!ENTITY pref_header_vendor "&vendorShortName;">
 
 <!ENTITY pref_cookies_menu "Cookies">
-<!ENTITY pref_cookies_accept_all "Habilitate">
+<!ENTITY pref_cookies_accept_all "Activate">
 <!ENTITY pref_cookies_not_accept_foreign "Habilitate, excludente partitas tertia">
-<!ENTITY pref_cookies_disabled "Dishabilitate">
+<!ENTITY pref_cookies_disabled "Disactivate">
 
 <!-- Localization note (pref_category_data_saver): “data saver” in this
      context means consuming less data, e.g. by not loading images, not
@@ -269,7 +269,7 @@
 <!ENTITY pref_tap_to_load_images_disabled2 "Blocate">
 
 <!ENTITY pref_show_web_fonts "Monstrar typos de characteres de sito del web">
-<!ENTITY pref_show_web_fonts_summary2 "Discargar typos de characteres remote quando cargante un pagina">
+<!ENTITY pref_show_web_fonts_summary2 "Discargar typos de characteres remote al cargamento de un pagina">
 
 <!ENTITY pref_tracking_protection_title2 "Protection contra le traciamento">
 <!ENTITY pref_donottrack_title "Non traciar">
@@ -281,6 +281,13 @@
 
 <!ENTITY pref_whats_new_notification "Qual es le novas in &brandShortName;">
 <!ENTITY pref_whats_new_notification_summary "Apprender super functionalitates nove depost un actualisation">
+
+<!-- Localization note (pref_feature_tips_notification): Title of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification"-->
+<!ENTITY pref_feature_tips_notification "Consilios re le producto e su functionalitates">
+<!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification_summary"-->
+<!ENTITY pref_feature_tips_notification_summary "Saper plus re le uso de &brandShortName; e de altere productos de &vendorShortName;">
 
 <!-- Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
      for experimental features. -->
@@ -422,7 +429,6 @@
      crashReporterDesc.label). -->
 <!ENTITY datareporting_fhr_title "Reporto de sanitate de &brandShortName;">
 <!ENTITY datareporting_fhr_summary2 "Comparti datos con &vendorShortName; super tu sanitate de navigator e adjuta te comprehender le performance del navigator tue">
-<!ENTITY datareporting_abouthr_title "Vider mi reporto de sanitate">
 <!ENTITY datareporting_telemetry_title "Telemetria">
 <!ENTITY datareporting_telemetry_summary "Comparti datos de uso, hardware, e personalisationes re tu navigator con &vendorShortName; pro nos adjutar a render &brandShortName; melior">
 <!ENTITY datareporting_crashreporter_summary "&brandShortName; submitte le reportos de collapso pro adjutar &vendorShortName; a facer tu navigator plus stabile e secur">
@@ -662,8 +668,8 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 
 <!-- Tracking content notifications in site identity popup -->
 <!ENTITY doorhanger_tracking_title2 "Protection contra le traciamento">
-<!ENTITY doorhanger_tracking_state_enabled "Habilitate">
-<!ENTITY doorhanger_tracking_state_disabled "Dishabilitate">
+<!ENTITY doorhanger_tracking_state_enabled "Activate">
+<!ENTITY doorhanger_tracking_state_disabled "Disactivate">
 <!ENTITY doorhanger_tracking_message_enabled1 "Le tentativas de traciar tu comportamento in rete ha essite blocate.">
 <!ENTITY doorhanger_tracking_message_disabled2 "Iste pagina include elementos que potera traciar tu navigation.">
 
@@ -726,7 +732,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY guest_session_dialog_cancel "Cancellar">
 <!ENTITY new_guest_session_title "&brandShortName; reinitiara ora">
 <!ENTITY new_guest_session_text2 "Le persona usante lo non potera vider qualcunque de tu datos de navigation personal (como contos salvate, chronologia o marcapaginas).\n\nQuando tu convitato termina, su datos de navigation essera delite e tu session essera restaurate.">
-<!ENTITY guest_browsing_notification_title "Le navigation del hospite es habilitate">
+<!ENTITY guest_browsing_notification_title "Le navigation del hospite es activate">
 <!ENTITY guest_browsing_notification_text "Toccar pro exir">
 
 <!ENTITY exit_guest_session_title "&brandShortName; reinitiara ora">
@@ -812,6 +818,9 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      the Android version of this device. the formatS1 is replaced by the CPU ABI (e.g., ARMv7); the formatS2 is
      replaced by the Android OS version (e.g., 14)-->
 <!ENTITY unsupported_sdk_version "Pardono! Iste &brandShortName; non functionara in iste apparato (&formatS1;,&formatS2;). Per favor discarga le version correcte.">
+
+<!-- LOCALIZATION NOTE(corrupt_apk): This notification is shown if corruption has been detected on startup and the user has to reinstall Firefox -->
+<!ENTITY corrupt_apk "Incapace a aperir &brandShortName;. Per favor reinstalla lo e retenta.">
 
 <!ENTITY eol_notification_title2 "&brandShortName; non essera plus actualisante">
 <!ENTITY eol_notification_summary "Tocca pro apprender plus">

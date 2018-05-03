@@ -61,6 +61,8 @@ can reach it easily. -->
 <!ENTITY  closeTab.label                     "Vərəqi qapat">
 <!ENTITY  closeTab.accesskey                 "Q">
 
+<!ENTITY  hiddenTabs.label                   "Gizli Vərəqlər">
+
 <!ENTITY  listAllTabs.label      "Bütün vərəqləri siyahıla">
 
 <!ENTITY tabCmd.label "Yeni vərəq">
@@ -111,6 +113,8 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 <!ENTITY pageInfoCmd.label "Səhifə məlumatları">
 <!ENTITY pageInfoCmd.accesskey "S">
 <!ENTITY pageInfoCmd.commandkey "i">
+<!ENTITY ldbCmd.label "Düzüm Sazlayıcısı">
+<!ENTITY ldbCmd.accesskey "L">
 <!ENTITY mirrorTabCmd.label "Vərəqi əks et">
 <!ENTITY mirrorTabCmd.accesskey "Ə">
 <!-- LOCALIZATION NOTE (enterFullScreenCmd.label, exitFullScreenCmd.label):
@@ -125,6 +129,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "Bütün vərəqləri göstər">
 <!ENTITY showAllTabsCmd.accesskey "s">
 <!ENTITY toggleReaderMode.key "R">
+
+<!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "&syncBrand.shortName.label; daxil ol">
 <!ENTITY fxaSignedIn.tooltip "&syncBrand.shortName.label; nizamlamalarını aç">
@@ -218,6 +224,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Qalıcı Yaddaşda məlumat saxlama">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Səyyah uzaqdan idarədədir">
 
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "Web Təsdiqləmə panelini aç">
+
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Kamera və/və ya mikrofonu saytla paylaşmağınızı idarə edin">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Mikrofonu saytla paylaşmağınızı idarə edin">
 <!ENTITY urlbar.webRTCShareScreenNotificationAnchor.tooltip       "Pəncərə və ya ekranları saytla paylaşmağınızı idarə edin">
@@ -227,6 +235,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Səhifə tərcüməsini idarə et">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "DRM proqramının istifadəsini idarə et">
 
+<!ENTITY urlbar.midiNotificationAnchor.tooltip            "MIDI panelini aç">
+
 <!ENTITY urlbar.cameraBlocked.tooltip            "Bu sayt üçün kameranızı əngəllədiniz.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Bu sayt üçün mikrofonunuzu əngəllədiniz.">
 <!ENTITY urlbar.screenBlocked.tooltip            "Bu saytı ekranınızı paylaşmaqdan əngəllədiniz.">
@@ -234,8 +244,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Bu sayt üçün bildirişləri əngəllədiniz.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Bu sayt üçün qalıcı yaddaşı əngəllədiniz.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Bu sayt üçün peyda olan pəncərələri əngəllədiniz.">
-
 <!ENTITY urlbar.canvasBlocked.tooltip            "Bu sayt üçün lövhə (canvas) məlumatı çıxartmanı əngəllədiniz.">
+
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "Bu saytın Adobe Flash qoşmasını işlətməsini əngəlləmisiniz.">
+<!ENTITY urlbar.midiBlocked.tooltip              "Bu saytın MIDI işlətməsini əngəlləmisiniz.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Tarixçəni göstər">
 
@@ -260,7 +272,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addBookmarksMenu.label             "Əlfəcinlər menyusunu Alət sətrinə əlavə et">
 <!ENTITY removeBookmarksMenu.label          "Əlfəcinlər menyusunu Alət sətrindən sil">
 
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -291,6 +303,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY inspectContextMenu.label     "Obyekti araşdır">
 <!ENTITY inspectContextMenu.accesskey "Q">
+
+<!ENTITY inspectA11YContextMenu.label     "Əlverişlilik özəlliklərini yoxla">
 
 <!ENTITY fileMenu.label         "Fayl">
 <!ENTITY fileMenu.accesskey       "F">
@@ -377,18 +391,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Digər cihazlarınızdakı vərəqlərin siyahısını görmək üçün vərəq sinxronizasiyasını aktivləşdirin.">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "Hələlik sinxronlaşdırılmış vərəq yoxdur!">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Digər cihazlarınızda olan vərəqləri burada görmək istərdiniz?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Sync Nizamlamaları">
+<!ENTITY appMenuRemoteTabs.opensyncprefs.label "Sync Nizamlamalarını Aç">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Digər cihazlarınızdakı vərəqlərin siyahısını görmək üçün daxil olun.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Hesabınız təsdiqlənməlidir.">
 <!ENTITY appMenuRemoteTabs.signin.label "Sync-ə Daxil ol">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Cihazları İdarə et…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Sinxronlaşdırılmış vərəqlər yan panelini göstər">
-
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Başqa Cihazı Qoş">
 
 <!ENTITY appMenuRecentHighlights.label "Son İşıqlandırmalar">
@@ -431,6 +444,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Ünvanı daxil et və ya axtar">
+<!ENTITY urlbar.placeholder3          "Axtarış ifadəsini və ünvanları buraya daxil edin">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Uzantı:">
@@ -797,7 +811,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "Sinxron Vərəqlər">
 <!ENTITY syncedTabs.sidebar.noclients.label    "Digər cihazlarınızdan da Firefox-a daxil olun, vərəqlərini burada görün.">
-<!ENTITY syncedTabs.sidebar.noclients.title    "Hələlik sinxronlaşdırılmış vərəq yoxdur!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Digər cihazlarınızda olan vərəqləri burada görmək istərdiniz?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Digər cihazlarınızdakı vərəqlərin siyahısını görmək üçün daxil olun.">
 <!ENTITY syncedTabs.sidebar.unverified.label   "Hesabınız təsdiqlənməlidir.">
@@ -807,7 +820,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Digər cihazlarınızdakı vərəqlərin siyahısını görmək üçün vərəq sinxronizasiyasını aktivləşdirin.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Sinxronlaşdırılmış vərəqlərdə axtar">
-
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Başqa Cihazı Qoş">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
@@ -977,11 +989,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.panelUI.label2 "&brandShorterName; yeniləmək üçün yenidən başladın">
 
 <!ENTITY newTabControlled.message "Uzantılardan biri Yeni Vərəqi açdığınızda göstərilən səhifəni dəyişdirib. Əgər bu dəyişikliyi istəmirsinizsə, tənzimləmələrinizi bərpa edə bilərsiz.">
+
 <!ENTITY newTabControlled.header.message "Yeni Vərəqiniz dəyişdirildi.">
 <!ENTITY newTabControlled.keepButton.label "Dəyişiklikləri saxla">
 <!ENTITY newTabControlled.keepButton.accesskey "K">
 <!ENTITY newTabControlled.restoreButton.label "Tənzimləmələri bərpa et">
 <!ENTITY newTabControlled.restoreButton.accesskey "R">
+
+<!ENTITY newTabControlled.disableButton.label "Uzantını söndür">
+<!ENTITY newTabControlled.disableButton.accesskey "D">
+
+<!ENTITY homepageControlled.message "Uzantı ev səhifənizi dəyişdirdi. Əgər bu dəyişikliyi istəmirsinizsə tənzimləmələrinizi bərpa edə bilərsiz.">
+<!ENTITY homepageControlled.header.message "Ev səhifəniz dəyişdirildi.">
+<!ENTITY homepageControlled.keepButton.label "Dəyişiklikləri saxla">
+<!ENTITY homepageControlled.keepButton.accesskey "K">
+<!ENTITY homepageControlled.disableButton.label "Uzantını söndür">
+<!ENTITY homepageControlled.disableButton.accesskey "D">
 
 <!ENTITY pageActionButton.tooltip "Səhifə əməliyyatları">
 <!ENTITY pageAction.addToUrlbar.label "Ünvan sətrinə əlavə et">
@@ -993,6 +1016,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageAction.sendTabToDevice.label "Vərəqi cihaza göndər">
 <!ENTITY sendToDevice.syncNotReady.label "Cihazlar Sinxronlaşdırılır…">
 
+<!ENTITY pageAction.shareUrl.label "Paylaş">
+
 <!ENTITY libraryButton.tooltip "Tarixçəni, saxlanılmış əlfəcinləri və daha çox şeyi görün">
 
 <!-- LOCALIZATION NOTE: (accessibilityIndicator.tooltip): This is used to
@@ -1000,3 +1025,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      used as a textual label for the indicator used by assistive technology
      users. -->
 <!ENTITY accessibilityIndicator.tooltip "Əlçatanlıq Özəllikləri Aktivdir">
+
+<!-- LOCALIZATION NOTE: (addonPostInstallMessage.label):
+     The first <image> tag is replaced with the icon for the add-ons menu.
+     The second <image> tag is replaced with the icon for the toolbar menu. -->
+<!ENTITY addonPostInstallMessage.label "Əlavələrinizi <image class='addon-toolbar-icon'/> menyusundan <image class='addon-addon-icon'/> klikləyərək idarə edin.">

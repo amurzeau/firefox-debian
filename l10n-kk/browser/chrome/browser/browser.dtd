@@ -61,6 +61,8 @@ can reach it easily. -->
 <!ENTITY  closeTab.label                     "Бетті жабу">
 <!ENTITY  closeTab.accesskey                 "Б">
 
+<!ENTITY  hiddenTabs.label                   "Жасырын беттер">
+
 <!ENTITY  listAllTabs.label      "Барлық беттерді тізіп шығу">
 
 <!ENTITY tabCmd.label "Жаңа бет">
@@ -222,6 +224,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Деректерді тұрақты қоймада сақтау">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Браузер қашықтан басқарылуда">
 
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "Веб аутентификация панелін ашу">
+
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Камераңыз және/немесе микрофонмен бұл сайтпен бөлісуді басқару">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Микрофоныңызбен бұл сайтпен бөлісуді басқару">
 <!ENTITY urlbar.webRTCShareScreenNotificationAnchor.tooltip       "Терезелеріңізбен немесе экранмен бұл сайтпен бөлісуді басқару">
@@ -240,9 +244,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Сіз хабарламаларды бұл вебсайтқа блоктадыңыз.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Сіз тұрақты деректер қоймасын қолдануды бұл вебсайтқа блоктадыңыз.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Бұл веб-сайт үшін атып шығатын терезелерді бұғаттадыңыз.">
-
 <!ENTITY urlbar.canvasBlocked.tooltip            "Сіз canvas деректерін тарқатуды бұл вебсайтқа блоктадыңыз.">
 
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "Сіз бұл вебсайтқа Adobe Flash қолдануды блоктадыңыз.">
+<!ENTITY urlbar.midiBlocked.tooltip              "Сіз MIDI қолдануды бұл вебсайтқа блоктадыңыз.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Тарихты көрсету">
 
@@ -267,7 +272,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addBookmarksMenu.label             "Бетбелгілер мәзірін құралдар панеліне қосу">
 <!ENTITY removeBookmarksMenu.label          "Бетбелгілер мәзірін құралдар панелінен алып тастау">
 
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -298,6 +303,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY inspectContextMenu.label     "Элементті бақылау">
 <!ENTITY inspectContextMenu.accesskey "Э">
+
+<!ENTITY inspectA11YContextMenu.label     "Қолжетерлілік қасиеттерін бақылау">
 
 <!ENTITY fileMenu.label         "Файл">
 <!ENTITY fileMenu.accesskey       "Ф">
@@ -384,10 +391,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Басқа құрылғыларыңыздан беттер тізімдерін көру үшін беттерді синхрондауды іске қосыңыз.">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "Синхрондалған беттер жоқ… әзірше!">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Басқа құрылғыларыңыздан беттерді осында көргіңіз келе ме?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Синхрондау баптаулары">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Синхрондау баптауларын ашу">
@@ -396,7 +402,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Синхрондау ішіне кіру">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Құрылғыларды басқару…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Синхрондалған беттер бүйір панелін қарау">
-
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Басқа құрылғыны байланыстыру">
 
 <!ENTITY appMenuRecentHighlights.label "Соңғы Таңдамалылар">
@@ -439,6 +444,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Іздеу немесе адрес">
+<!ENTITY urlbar.placeholder3          "Ізделетін ұғымдарды және адрестерді осында енгізіңіз">
 <!ENTITY urlbar.accesskey             "з">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Кеңейту:">
@@ -805,7 +811,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "Синхрондалған беттер">
 <!ENTITY syncedTabs.sidebar.noclients.label    "Firefox-қа басқа құрылғыларда кіріңіз, одан кейін олардың беттерін осында көре аласыз.">
-<!ENTITY syncedTabs.sidebar.noclients.title    "Синхрондалған беттер жоқ… әзірше!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Басқа құрылғыларыңыздан беттерді осында көргіңіз келе ме?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Басқа құрылғыларыңыздан беттер тізімдерін қарау үшін кіріңіз.">
 <!ENTITY syncedTabs.sidebar.unverified.label   "Тіркелгіңіз расталуы тиіс.">
@@ -815,7 +820,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Басқа құрылғыларыңыздан беттер тізімдерін қарау үшін беттерді синхрондауды іске қосыңыз.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Синхрондалған беттерден іздеу">
-
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Басқа құрылғыны байланыстыру">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
@@ -985,11 +989,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.panelUI.label2 "&brandShorterName; жаңарту үшін қайта іске қосу">
 
 <!ENTITY newTabControlled.message "Жаңа бетті ашқан кезде көретін бетті кеңейту өзгерткен. Бұл өзгерісті қаламасаңыз, өз баптауларыңызды қалпына келтіре аласыз.">
+
 <!ENTITY newTabControlled.header.message "Сіздің жаңа бетіңіз өзгертілген.">
 <!ENTITY newTabControlled.keepButton.label "Өзгерістерді сақтау">
 <!ENTITY newTabControlled.keepButton.accesskey "с">
 <!ENTITY newTabControlled.restoreButton.label "Баптауларды қалпына келтіру">
 <!ENTITY newTabControlled.restoreButton.accesskey "р">
+
+<!ENTITY newTabControlled.disableButton.label "Кеңейтуді сөндіру">
+<!ENTITY newTabControlled.disableButton.accesskey "д">
+
+<!ENTITY homepageControlled.message "Үй беті ретінде көретін бетті кеңейту өзгерткен. Бұл өзгерісті қаламасаңыз, өз баптауларыңызды қалпына келтіре аласыз.">
+<!ENTITY homepageControlled.header.message "Сіздің үй бетіңіз өзгертілген.">
+<!ENTITY homepageControlled.keepButton.label "Өзгерістерді сақтау">
+<!ENTITY homepageControlled.keepButton.accesskey "с">
+<!ENTITY homepageControlled.disableButton.label "Кеңейтуді сөндіру">
+<!ENTITY homepageControlled.disableButton.accesskey "д">
 
 <!ENTITY pageActionButton.tooltip "Бет әрекеттері">
 <!ENTITY pageAction.addToUrlbar.label "Адрес жолағына қосу">
@@ -1000,6 +1015,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pageAction.sendTabToDevice.label "Бетті құрылғыға жіберу">
 <!ENTITY sendToDevice.syncNotReady.label "Құрылғыларды синхрондау…">
+
+<!ENTITY pageAction.shareUrl.label "Бөлісу">
 
 <!ENTITY libraryButton.tooltip "Тарихты, сақталған бетбелгілерді қарау және т.б.">
 
@@ -1012,3 +1029,4 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- LOCALIZATION NOTE: (addonPostInstallMessage.label):
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
+<!ENTITY addonPostInstallMessage.label "Қосымшаларыңызды <image class='addon-toolbar-icon'/> мәзірінен <image class='addon-addon-icon'/> шерту арқылы басқарыңыз.">

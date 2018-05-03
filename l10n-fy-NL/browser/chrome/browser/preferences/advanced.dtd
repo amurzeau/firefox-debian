@@ -29,7 +29,7 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "Gegevensrapporten binne foar dizze build-konfiguraasje útskeakele">
 
-<!ENTITY enableHealthReport2.label       "Tastean dat &brandShortName; technyske en gebrûksgegevens ferstjoerd nei Mozilla">
+<!ENTITY enableHealthReport2.label       "Tastean dat &brandShortName; technyske en brûksgegevens ferstjoert nei Mozilla">
 <!ENTITY enableHealthReport2.accesskey   "r">
 <!ENTITY healthReportLearnMore.label     "Mear ynfo">
 
@@ -37,12 +37,15 @@ available. -->
 <!ENTITY dataCollectionDesc.label        "Wy stribje dernei jo kar te bieden en allinnich te sammeljen wat wy nedich hawwe om &brandShortName; foar elkenien beskikber te meitsjen en te ferbetterjen. Wy freegje altyd tastimming eardat wy persoanlike gegevens ûntfange.">
 <!ENTITY dataCollectionPrivacyNotice.label    "Privacyferklearring">
 
-<!ENTITY collectBrowserErrors.label          "&brandShortName; tastean om flaterrapporten (ynklusyf flaterberjochten) nei Mozilla te ferstjoeren">
-<!ENTITY collectBrowserErrors.accesskey      "f">
-<!ENTITY collectBrowserErrorsLearnMore.label "Lês mear">
-
 <!ENTITY alwaysSubmitCrashReports1.label  "&brandShortName; tastean ûngelokrapporten te ferstjoeren nei Mozilla">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "M">
+
+<!ENTITY collectBrowserErrors.label          "&brandShortName; tastean om flaterrapporten (ynklusyf flaterberjochten) nei Mozilla te ferstjoeren">
+<!ENTITY collectBrowserErrors.accesskey      "f">
+<!ENTITY collectBrowserErrorsLearnMore.label "Mear ynfo">
+
+<!ENTITY sendBackloggedCrashReports.label  "&brandShortName; tastean om út jo namme jo efterstallige ûngelokrapporten te ferstjoeren">
+<!ENTITY sendBackloggedCrashReports.accesskey "r">
 <!ENTITY crashReporterLearnMore.label    "Mear ynfo">
 
 <!ENTITY networkTab.label                "Netwurk">
@@ -50,8 +53,6 @@ available. -->
 <!ENTITY networkProxy.label              "Netwurkproxy">
 
 <!ENTITY connectionDesc.label            "Bepaal hoe't &brandShortName; ferbining makket mei ynternet">
-
-<!ENTITY connectionSettingsLearnMore.label "Lês mear">
 <!ENTITY connectionSettings.label        "Ynstellingen…">
 <!ENTITY connectionSettings.accesskey    "Y">
 
@@ -63,6 +64,11 @@ available. -->
 <!ENTITY clearSiteData.accesskey         "l">
 <!ENTITY siteDataSettings.label          "Ynstellingen…">
 <!ENTITY siteDataSettings.accesskey      "Y">
+<!ENTITY siteData1.label                 "Cookies en websitegegevens">
+<!ENTITY clearSiteData1.label            "Gegevens wiskje…">
+<!ENTITY clearSiteData1.accesskey        "e">
+<!ENTITY siteDataSettings1.label         "Gegevens beheare…">
+<!ENTITY siteDataSettings1.accesskey     "G">
 <!ENTITY siteDataLearnMoreLink.label     "Mear ynfo">
 
 <!-- LOCALIZATION NOTE:

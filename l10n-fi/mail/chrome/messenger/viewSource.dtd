@@ -1,0 +1,68 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!-- extracted from content/viewSource.xul -->
+
+<!-- LOCALIZATION NOTE (mainWindow.title) : DONT_TRANSLATE -->
+<!ENTITY mainWindow.title "&brandFullName;">
+<!-- LOCALIZATION NOTE (mainWindow.titlemodifier) : DONT_TRANSLATE -->
+<!ENTITY mainWindow.titlemodifier "&brandFullName;">
+<!-- LOCALIZATION NOTE (mainWindow.titlemodifierseparator) : DONT_TRANSLATE -->
+<!ENTITY mainWindow.titlemodifierseparator " - ">
+
+<!ENTITY fileMenu.label "Tiedosto">
+<!ENTITY fileMenu.accesskey "T">
+<!ENTITY savePageCmd.label "Tallenna sivu nimellä…">
+<!ENTITY savePageCmd.accesskey "S">
+<!ENTITY savePageCmd.commandkey "n">
+<!ENTITY pageSetupCmd.label "Sivun asetukset…">
+<!ENTITY pageSetupCmd.accesskey "a">
+<!ENTITY printPreviewCmd.label "Tulostuksen esikatselu">
+<!ENTITY printPreviewCmd.accesskey "e">
+<!ENTITY printCmd.label "Tulosta…">
+<!ENTITY printCmd.accesskey "u">
+<!ENTITY printCmd.commandkey "u">
+<!ENTITY closeCmd.label "Sulje">
+<!ENTITY closeCmd.accesskey "j">
+<!ENTITY closeCmd.commandkey "j">
+
+<!-- LOCALIZATION NOTE :
+textEnlarge.commandkey3, textReduce.commandkey2 and
+textReset.commandkey2 are alternative acceleration keys for zoom.
+If shift key is needed with your locale popular keyboard for them,
+you can use these alternative items. Otherwise, their values should be empty.  -->
+
+
+<!ENTITY goToLineCmd.label "Siirry riville…">
+
+<!ENTITY viewMenu.label           "Näytä">
+<!ENTITY viewMenu.accesskey       "N">
+<!ENTITY reloadCmd.label "Lataa uudelleen">
+<!ENTITY reloadCmd.accesskey "L">
+<!ENTITY menu_wrapLongLines.title "Rivitä pitkät rivit">
+<!ENTITY menu_wrapLongLines.accesskey "R">
+<!ENTITY menu_highlightSyntax.label "Syntaksin korostus">
+<!ENTITY menu_highlightSyntax.accesskey "k">
+<!ENTITY menu_textSize.label "Tekstin koko">
+<!ENTITY menu_textEnlarge.label "Suurenna">
+<!ENTITY menu_textEnlarge.accesskey "S">
+<!ENTITY menu_textReduce.label "Pienennä">
+<!ENTITY menu_textReduce.accesskey "P">
+<!ENTITY menu_textReset.label "Normaali">
+<!ENTITY menu_textReset.accesskey "N">
+
+<!ENTITY findOnCmd.label     "Etsi tältä sivulta…">
+<!ENTITY findOnCmd.accesskey "E">
+<!ENTITY findAgainCmd.label  "Etsi uudelleen">
+<!ENTITY findAgainCmd.accesskey "u">
+<!ENTITY findAgainCmd.commandkey2 "VK_F3">
+
+<!ENTITY backCmd.label "Takaisin">
+<!ENTITY backCmd.accesskey "T">
+<!ENTITY forwardCmd.label "Eteenpäin">
+<!ENTITY forwardCmd.accesskey "E">
+
+<!ENTITY copyLinkCmd.label "Kopioi linkin sijainti">
+<!ENTITY copyEmailCmd.label "Kopioi sähköpostiosoite">
+

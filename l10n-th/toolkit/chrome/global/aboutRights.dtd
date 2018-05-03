@@ -14,7 +14,7 @@
 
      Also note the leading/trailing whitespace in strings here, which is
      deliberate for formatting around the embedded links. -->
-<!ENTITY rights.intro-point1a "&brandShortName; ให้คุณใช้งานภายใต้เงื่อนไขของ ">
+<!ENTITY rights.intro-point1a "&brandShortName; ให้คุณใช้ภายใต้เงื่อนไขของ ">
 <!ENTITY rights.intro-point1b "Mozilla Public License">
 <!ENTITY rights.intro-point1c " สิ่งนี้หมายถึงคุณอาจใช้งาน คัดลอก และแจกจ่าย &brandShortName; ให้กับผู้อื่น  คุณยังสามารถแก้ไขโค้ดต้นฉบับของ &brandShortName; ตามที่คุณต้องการเพื่อให้ตรงกับความต้องการของคุณ Mozilla Public License ยังให้สิทธิคุณในการแจกจ่ายรุ่นที่คุณแก้ไขอีกด้วย">
 
@@ -62,7 +62,7 @@
 <!ENTITY rights.safebrowsing-b "ไม่แนะนำให้ปิดใช้งานการท่องเว็บแบบปลอดภัยเพราะอาจจะส่งผลให้คุณเข้าไปยังเว็บไซต์ที่ไม่ปลอดภัย ถ้าคุณต้องการปิดความสามารถนี้อย่างถาวร โปรแกรมทำตามขั้นตอนนี้:">
 <!ENTITY rights.safebrowsing-term1 "เปิดค่ากำหนดแอปพลิเคชัน">
 <!ENTITY rights.safebrowsing-term2 "เลือก ความปลอดภัย">
-<!ENTITY rights2.safebrowsing-term3 "ไม่เลือกตัวเลือก &quot;&enableSafeBrowsing.label;&quot;">
+<!ENTITY rights2.safebrowsing-term3 "ยกเลิกการกาเครื่องหมายตัวเลือก &quot;&enableSafeBrowsing.label;&quot;">
 <!ENTITY rights.safebrowsing-term4 "การท่องเว็บแบบปลอดภัยถูกปิดใช้งานแล้ว">
 
 <!-- location aware browsing points for branded builds -->

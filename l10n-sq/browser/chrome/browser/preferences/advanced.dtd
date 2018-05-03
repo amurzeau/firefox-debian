@@ -31,18 +31,21 @@ available. -->
 
 <!ENTITY enableHealthReport2.label       "Lejojeni &brandShortName;-in të dërgojë të dhëna teknike dhe ndërveprimi te Mozilla">
 <!ENTITY enableHealthReport2.accesskey   "L">
-<!ENTITY healthReportLearnMore.label     "Mësoni Më Tepër">
+<!ENTITY healthReportLearnMore.label     "Mësoni më tepër">
 
 <!ENTITY dataCollection.label            "Grumbullim dhe Përdorim të Dhënash nga &brandShortName;-i">
 <!ENTITY dataCollectionDesc.label        "Përpiqemi t’ju japim mundësi zgjedhjesh dhe grumbullojmë vetëm ç’na duhet për të ofruar dhe përmirësuar &brandShortName;-in për këdo. Kërkojmë përherë leje përpara se të marrim të dhëna personale.">
 <!ENTITY dataCollectionPrivacyNotice.label    "Shënim Mbi Privatësinë">
 
+<!ENTITY alwaysSubmitCrashReports1.label  "Lejojeni &brandShortName;-in të dërgojë te Mozilla njoftime vithisjesh">
+<!ENTITY alwaysSubmitCrashReports1.accesskey "v">
+
 <!ENTITY collectBrowserErrors.label          "Lejojeni &brandShortName;-in të dërgojë te Mozilla njoftime gabimesh shfletuesi (përfshi mesazhe gabimesh)">
 <!ENTITY collectBrowserErrors.accesskey      "L">
 <!ENTITY collectBrowserErrorsLearnMore.label "Mësoni më tepër">
 
-<!ENTITY alwaysSubmitCrashReports1.label  "Lejojeni &brandShortName;-in të dërgojë te Mozilla njoftime vithisjesh">
-<!ENTITY alwaysSubmitCrashReports1.accesskey "v">
+<!ENTITY sendBackloggedCrashReports.label  "Lejoje &brandShortName;-in të dërgojë njoftime të dikurshme vithisjesh në emrin tuaj">
+<!ENTITY sendBackloggedCrashReports.accesskey "L">
 <!ENTITY crashReporterLearnMore.label    "Mësoni Më Tepër">
 
 <!ENTITY networkTab.label                "Rrjet">
@@ -50,8 +53,6 @@ available. -->
 <!ENTITY networkProxy.label              "Ndërmjetës Rrjeti">
 
 <!ENTITY connectionDesc.label            "Formësoni mënyrën se si &brandShortName;-i lidhet në Internet">
-
-<!ENTITY connectionSettingsLearnMore.label "Mësoni më tepër">
 <!ENTITY connectionSettings.label        "Rregullime…">
 <!ENTITY connectionSettings.accesskey    "R">
 
@@ -63,6 +64,11 @@ available. -->
 <!ENTITY clearSiteData.accesskey         "K">
 <!ENTITY siteDataSettings.label          "Rregullime…">
 <!ENTITY siteDataSettings.accesskey      "R">
+<!ENTITY siteData1.label                 "Cookies dhe të Dhëna Sajtesh">
+<!ENTITY clearSiteData1.label            "Pastroni të Dhëna…">
+<!ENTITY clearSiteData1.accesskey        "P">
+<!ENTITY siteDataSettings1.label         "Administroni Të dhëna…">
+<!ENTITY siteDataSettings1.accesskey     "A">
 <!ENTITY siteDataLearnMoreLink.label     "Mësoni më tepër">
 
 <!-- LOCALIZATION NOTE:
@@ -76,7 +82,7 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MB hapësirë">
 <!ENTITY clearCacheNow.label             "Pastroje Tani">
 <!ENTITY clearCacheNow.accesskey         "T">
-<!ENTITY overrideSmartCacheSize.label    "Anashkalo administrimin e vetvetishëm të fshehtinës">
+<!ENTITY overrideSmartCacheSize.label    "Anashkalo administrim të vetvetishëm fshehtine">
 <!ENTITY overrideSmartCacheSize.accesskey "O">
 
 <!ENTITY updateTab.label                 "Përditësim">
@@ -107,7 +113,7 @@ available. -->
 <!ENTITY updateHistory2.label            "Shfaq Historik Përditësimesh…">
 <!ENTITY updateHistory2.accesskey        "P">
 
-<!ENTITY useService.label                "Përdor shërbim në prapaskenë për të instaluar përditësimet">
+<!ENTITY useService.label                "Për instalim përditësimesh përdor një shërbim në prapaskenë">
 <!ENTITY useService.accesskey            "P">
 
 <!ENTITY enableSearchUpdate2.label       "Të përditësojë vetvetiu motorët e kërkimeve">

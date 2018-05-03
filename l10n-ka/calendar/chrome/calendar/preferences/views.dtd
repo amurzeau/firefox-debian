@@ -24,7 +24,7 @@
 <!ENTITY pref.calendar.view.dayend.accesskey "უ">
 <!ENTITY pref.calendar.view.visiblehours.label "ჩვენება:">
 <!ENTITY pref.calendar.view.visiblehours.accesskey "ვ">
-<!ENTITY pref.calendar.view.visiblehoursend.label "საათ(ებ)ი ამავდროულად">
+<!ENTITY pref.calendar.view.visiblehoursend.label "საათი ამავდროულად">
 
 <!ENTITY pref.numberofweeks.label "საჩვენებელი კვირების რაოდენობის (წინა კვირების ჩათვლით):">
 <!ENTITY pref.numberofweeks.accesskey "ს">
@@ -37,3 +37,5 @@
 <!ENTITY pref.numberofweeks.4 "4 კვირა">
 <!ENTITY pref.numberofweeks.5 "5 კვირა">
 <!ENTITY pref.numberofweeks.6 "6 კვირა">
+<!ENTITY pref.showlocation.label "ადგილმდებარეობის ჩვენება">
+<!ENTITY pref.showlocation.accesskey "ლ">

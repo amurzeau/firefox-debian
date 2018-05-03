@@ -79,6 +79,8 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 
 <!ENTITY aboutSupport.appBasicsProcessCount "Procese Lënde Web">
 
+<!ENTITY aboutSupport.enterprisePolicies "Rregulla të Ndërmarrjes">
+
 <!ENTITY aboutSupport.appBasicsKeyGoogle "Kyç Google">
 <!ENTITY aboutSupport.appBasicsKeyMozilla "Kyç Mozilla Location Service">
 
@@ -88,7 +90,7 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 <!-- LOCALIZATION NOTE (aboutSupport.showMac.label): This is the Mac-specific
 variant of aboutSupport.showDir.label.  This allows us to use the preferred
 "Finder" terminology on Mac. -->
-<!ENTITY aboutSupport.showMac.label "Shfaqe te Finder">
+<!ENTITY aboutSupport.showMac.label "Shfaqe Në Finder">
 <!-- LOCALIZATION NOTE (aboutSupport.showWin2.label): This is the Windows-specific
 variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.showWin2.label "Hape Dosjen">
@@ -118,7 +120,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.a11yActivated "E aktivizuar">
 <!ENTITY aboutSupport.a11yForceDisabled "Parandaloje Përdorshmërinë">
 
-<!ENTITY aboutSupport.libraryVersionsTitle "Versione Librarie">
+<!ENTITY aboutSupport.libraryVersionsTitle "Versione Librarish">
 
 <!ENTITY aboutSupport.installationHistoryTitle "Historik Instalimesh">
 <!ENTITY aboutSupport.updateHistoryTitle "Historik Përditësimesh">
@@ -137,7 +139,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.sandboxSyscallArgs "Argumente">
 
 <!ENTITY aboutSupport.safeModeTitle "Provoni Mënyrën e Parrezik">
-<!ENTITY aboutSupport.restartInSafeMode.label "Riniseni me Shtesa të Çaktivizuara…">
+<!ENTITY aboutSupport.restartInSafeMode.label "Riniseni me Shtesat të Çaktivizuara…">
 
 <!ENTITY aboutSupport.graphicsFeaturesTitle "Veçori">
 <!ENTITY aboutSupport.graphicsDiagnosticsTitle "Diagnostikime">

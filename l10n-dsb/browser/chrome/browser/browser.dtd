@@ -61,6 +61,8 @@ can reach it easily. -->
 <!ENTITY  closeTab.label                     "Rejtark zacyniś">
 <!ENTITY  closeTab.accesskey                 "z">
 
+<!ENTITY  hiddenTabs.label                   "Schowane rejtarki">
+
 <!ENTITY  listAllTabs.label      "Wšykne rejtarki nalicyś">
 
 <!ENTITY tabCmd.label "Nowy rejtark">
@@ -222,6 +224,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Daty w trajnem składowaku składowaś">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Wobglědowak se zdaloka wóźi">
 
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "Wobcerk webawtentifikacije wócyniś">
+
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Źělenje wašeje kamery a/abo wašogo mikrofona ze sedłom zastojaś">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Źělenje wašogo mikrofona ze sedłom zastojaś">
 <!ENTITY urlbar.webRTCShareScreenNotificationAnchor.tooltip       "Źělenje wašych woknow abo wašeje wobrazowki ze sedłom zastojaś">
@@ -240,9 +244,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Sćo powěźeńki za toś to websedło zablokěrował.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Sćo trajny składowak za toś to websedło blokěrował.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Sćo wuskokujuce wokna za toś to websedło blokěrował.">
-
 <!ENTITY urlbar.canvasBlocked.tooltip            "Sćo blokěrował pśistup ku canvasowym datam za toś to websedło.">
 
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "Sćo toś tomu websedłoju wužywanje tykaca Adobe Flash zawoborał.">
 <!ENTITY urlbar.midiBlocked.tooltip              "Sćo blokěrował pśistup na MIDI za toś to websedło.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Historiju pokazaś">
@@ -268,7 +272,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addBookmarksMenu.label             "Symbolowej rědce meni cytańskich znamjenjow pśidaś">
 <!ENTITY removeBookmarksMenu.label          "Meni cytańskich znamjenjow ze symboloweje rědki wótwónoźeś">
 
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -299,6 +303,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY inspectContextMenu.label     "Element pśepytowaś">
 <!ENTITY inspectContextMenu.accesskey "E">
+
+<!ENTITY inspectA11YContextMenu.label     "Kakosći bźezbariernosći pśepytowaś">
 
 <!ENTITY fileMenu.label         "Dataja">
 <!ENTITY fileMenu.accesskey       "D">
@@ -385,10 +391,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Synchronizěrowanje rejtarkow zašaltowaś, aby se lisćina rejtarkow z drugich rědow pokazała.">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "Hyšći žedne synchronizěrowane rejtarki …!">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Cośo how swóje rejtarki z drugich rědow wiźeś?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Nastajenja synchronizěrowaś">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Synchronizěrowańske nastajenja wócyniś">
@@ -397,7 +402,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Pla Sync pśizjawiś">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Rědy rědowaś…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Bocnicu synchronizěrowanych rejtarkow pokazaś">
-
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Drugi rěd zwězaś">
 
 <!ENTITY appMenuRecentHighlights.label "Aktualne wjerški">
@@ -440,6 +444,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Pytaś abo adresu zapódaś">
+<!ENTITY urlbar.placeholder3          "Zapódajśo how pytańske wuraze a adrese">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Rozšyrjenje:">
@@ -806,7 +811,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "Synchronizěrowane rejtarki">
 <!ENTITY syncedTabs.sidebar.noclients.label    "Pśizjawśo se pla Firefox z drugich rědow, aby se jich rejtarki how woglědał.">
-<!ENTITY syncedTabs.sidebar.noclients.title    "Hyšći žedne synchronizěrowane rejtarki …!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Cośo how swóje rejtarki z drugich rědow wiźeś?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Pśizjawśo se, aby se lisćinu rejtarkow ze swójich drugich rědow woglědał.">
 <!ENTITY syncedTabs.sidebar.unverified.label   "Wašo konto musy se wobkšuśiś.">
@@ -816,7 +820,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Synchronizěrowanje rejtarkow zašaltowaś, aby se lisćina rejtarkow z drugich rědow pokazała.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Synchronizěrowane rejtarki pytaś">
-
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Drugi rěd zwězaś">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
@@ -986,11 +989,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.panelUI.label2 "Startujśo znowego, aby &brandShorterName; aktualizěrował">
 
 <!ENTITY newTabControlled.message "Rozšyrjenje jo bok změnił, kótaryž wiźiśo, gaž nowy rejtark wócynjaśo. Móžośo swóje nastajenja wótnowiś, jolic toś tu změnu njocośo.">
+
 <!ENTITY newTabControlled.header.message "Waš nowy rejtark jo se změnił.">
 <!ENTITY newTabControlled.keepButton.label "Změny wobchowaś">
 <!ENTITY newTabControlled.keepButton.accesskey "Z">
 <!ENTITY newTabControlled.restoreButton.label "Nastajenja wótnowiś">
 <!ENTITY newTabControlled.restoreButton.accesskey "N">
+
+<!ENTITY newTabControlled.disableButton.label "Rozšyrjenje znjemóžniś">
+<!ENTITY newTabControlled.disableButton.accesskey "R">
+
+<!ENTITY homepageControlled.message "Rozšyrjenje jo změniło, což ako swój startowy bok wiźiśo. Móžośo swóje nastajenja wótnowiś, jolic toś tu změnu njocośo.">
+<!ENTITY homepageControlled.header.message "Waš startowy bok jo se změnił.">
+<!ENTITY homepageControlled.keepButton.label "Změny wobchowaś">
+<!ENTITY homepageControlled.keepButton.accesskey "Z">
+<!ENTITY homepageControlled.disableButton.label "Rozšyrjenje znjemóžniś">
+<!ENTITY homepageControlled.disableButton.accesskey "R">
 
 <!ENTITY pageActionButton.tooltip "Akcije boka">
 <!ENTITY pageAction.addToUrlbar.label "Adresowemu póloju pśidaś">
@@ -1001,6 +1015,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pageAction.sendTabToDevice.label "Rejtark na rěd pósłaś">
 <!ENTITY sendToDevice.syncNotReady.label "Rědy se synchronizěruju…">
+
+<!ENTITY pageAction.shareUrl.label "Źěliś">
 
 <!ENTITY libraryButton.tooltip "Historiju, skłaźone cytańske znamjenja a wěcej pokazaś">
 

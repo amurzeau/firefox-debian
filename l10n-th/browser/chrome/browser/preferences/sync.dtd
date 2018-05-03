@@ -7,6 +7,7 @@
 <!ENTITY engine.bookmarks.label     "ที่คั่นหน้า">
 <!ENTITY engine.bookmarks.accesskey "ท">
 <!ENTITY engine.tabs.label2         "แท็บที่เปิดอยู่">
+<!ENTITY engine.tabs.title          "รายการสิ่งที่เปิดอยู่ในอุปกรณ์ที่ซิงค์ทั้งหมด">
 <!ENTITY engine.tabs.accesskey      "บ">
 <!ENTITY engine.history.label       "ประวัติ">
 <!ENTITY engine.history.accesskey   "ป">
@@ -18,13 +19,18 @@
      over into this string, used as the checkbox which indicates if prefs are synced
 -->
 <!ENTITY engine.prefsWin.label      "ตัวเลือก">
+<!ENTITY engine.prefsWin.accesskey  "ต">
 <!ENTITY engine.prefs.label         "ค่ากำหนด">
 <!ENTITY engine.prefs.accesskey     "ค">
+<!ENTITY engine.prefs.title         "การตั้งค่าทั่วไป, ความเป็นส่วนตัว และความปลอดภัยที่คุณได้เปลี่ยนแปลง">
 <!ENTITY engine.addons.label        "ส่วนเสริม">
+<!ENTITY engine.addons.title        "ส่วนขยายและชุดตกแต่งสำหรับ Firefox เดสก์ท็อป">
 <!ENTITY engine.addons.accesskey    "ส">
 <!ENTITY engine.addresses.label     "ที่อยู่">
+<!ENTITY engine.addresses.title     "ที่อยู่ไปรษณีย์ที่คุณได้บันทึกไว้ (เดสก์ท็อปเท่านั้น)">
 <!ENTITY engine.addresses.accesskey "อ">
 <!ENTITY engine.creditcards.label   "บัตรเครดิต">
+<!ENTITY engine.creditcards.title   "ชื่อ, หมายเลข และวันหมดอายุ (เดสก์ท็อปเท่านั้น)">
 <!ENTITY engine.creditcards.accesskey "ต">
 
 <!-- Device Settings -->
@@ -64,11 +70,8 @@ both, to better adapt this sentence to their language.
 <!ENTITY verifiedManage.accesskey     "จ">
 <!ENTITY disconnect3.label            "ตัดการเชื่อมต่อ…">
 <!ENTITY disconnect3.accesskey        "ต">
-<!ENTITY verify.label                "ยืนยันอีเมล">
-<!ENTITY verify.accesskey            "ย">
-<!ENTITY forget.label                "ลืมอีเมลนี้">
-<!ENTITY forget.accesskey            "ล">
-
+<!ENTITY resendVerification.label     "ส่งการยืนยันใหม่">
+<!ENTITY resendVerification.accesskey "ส">
 
 <!ENTITY signedOut.caption            "นำเว็บของคุณไปกับคุณ">
 <!ENTITY signedOut.description        "ประสานที่คั่นหน้า, ประวัติ, แท็บ, รหัสผ่าน, ส่วนเสริม และค่ากำหนดระหว่างอุปกรณ์ทั้งหมดของคุณ">

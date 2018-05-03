@@ -3,17 +3,17 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!-- LOCALIZATION NOTE (places.library.title): use "Library", "Archive" or "Repository" -->
-<!ENTITY places.library.title  "Librari">
+<!ENTITY places.library.title  "Arkiv">
 <!ENTITY places.library.width  "700">
 <!ENTITY places.library.height "500">
 <!ENTITY organize.label        "Sistemim">
 <!ENTITY organize.accesskey    "S">
 <!ENTITY organize.tooltip      "Organizoni faqerojtësit tuaj">
 
-<!ENTITY file.close.label               "Mbylle">
+<!ENTITY file.close.label               "Mbylleni">
 <!ENTITY file.close.accesskey           "M">
 <!ENTITY cmd.close.key                  "w">
-<!ENTITY views.label                    "Shfaqje">
+<!ENTITY views.label                    "Parje">
 <!ENTITY views.accesskey                "S">
 <!ENTITY views.tooltip                  "Ndërroni shfaqjen">
 <!ENTITY view.columns.label             "Shfaq Shtylla">

@@ -61,6 +61,8 @@ can reach it easily. -->
 <!ENTITY  closeTab.label                     "Tutup Tab">
 <!ENTITY  closeTab.accesskey                 "b">
 
+<!ENTITY  hiddenTabs.label                   "Tab Tersorok">
+
 <!ENTITY  listAllTabs.label      "Senarai semua tab">
 
 <!ENTITY tabCmd.label "Tab Baru">
@@ -222,6 +224,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Simpan data Persistent Storage">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Pelayar berada dalam kawalan jauh">
 
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "Buka panel Pengesahan Web">
+
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Urus perkongsian kamera dan/atau mikrofon anda dengan laman">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Urus perkongsian mikrofon anda dengan laman">
 <!ENTITY urlbar.webRTCShareScreenNotificationAnchor.tooltip       "Urus perkongsian tetingkap atau skrin anda dengan laman">
@@ -240,9 +244,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Anda telah menyekat notifikasi untuk laman web ini.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Anda telah menghalang storan gigih untuk laman web ini.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Anda telah menyekat pop-up untuk laman web ini.">
-
 <!ENTITY urlbar.canvasBlocked.tooltip            "Anda telah menyekat ekstraksi data kanvas untuk laman web ini.">
 
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "Anda telah menyekat laman web ini daripada menggunakan plugin Adobe Flash.">
 <!ENTITY urlbar.midiBlocked.tooltip              "Anda telah menyekat akses MIDI untuk laman web ini.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Papar sejarah">
@@ -250,7 +254,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY searchItem.title             "Cari">
 
 <!-- Toolbar items -->
-<!ENTITY homeButton.label             "Halaman utama">
+<!ENTITY homeButton.label             "Laman">
 
 <!ENTITY bookmarksButton.label          "Tandabuku">
 <!ENTITY bookmarksCmd.commandkey "b">
@@ -268,7 +272,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addBookmarksMenu.label             "Tambah Menu Tandabuku dalam Bar alatan">
 <!ENTITY removeBookmarksMenu.label          "Buang Menu Tandabuku daripada Bar alatan">
 
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -299,6 +303,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY inspectContextMenu.label     "Periksa Elemen">
 <!ENTITY inspectContextMenu.accesskey "E">
+
+<!ENTITY inspectA11YContextMenu.label     "Periksa Sifat Aksesibiliti">
 
 <!ENTITY fileMenu.label         "Fail">
 <!ENTITY fileMenu.accesskey       "F">
@@ -385,10 +391,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Mengaktifkan sync tab untuk papar senarai tab dari peranti anda yang lain.">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "Tiada tab sync… lagi!">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Mahu melihat tab anda daripada peranti lain di sini?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Sync keutamaan">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Buka Keutamaan Sync">
@@ -397,7 +402,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Daftar masuk Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Urus Peranti…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Papar Bar sisi Sync Tab">
-
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Sambung Peranti Lain">
 
 <!ENTITY appMenuRecentHighlights.label "Serlahan Terkini">
@@ -440,6 +444,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Cari atau masukkan alamat">
+<!ENTITY urlbar.placeholder3          "Masukkan terma carian dan alamat di sini">
 <!ENTITY urlbar.accesskey             "m">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Ekstensi:">
@@ -806,7 +811,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "Tab Sync">
 <!ENTITY syncedTabs.sidebar.noclients.label    "Daftar masuk ke Firefox dari peranti anda yang lain untuk melihat tab tersebut di sini.">
-<!ENTITY syncedTabs.sidebar.noclients.title    "Tiada tab sync… lagi!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Mahu melihat tab anda daripada peranti lain di sini?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Daftar masuk untuk papar senarai tab dari peranti anda yang lain.">
 <!ENTITY syncedTabs.sidebar.unverified.label   "Akaun anda perlu disahkan.">
@@ -816,7 +820,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Mengaktifkan sync tab untuk papar senarai tab dari peranti anda yang lain.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Cari tab yang diselaraskan">
-
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Sambung Peranti Lain">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
@@ -986,11 +989,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.panelUI.label2 "Mula semula untuk mengemaskini &brandShorterName;">
 
 <!ENTITY newTabControlled.message "Ekstensi telah mengubah halaman yang anda lihat apabila membuka Tab Baru. Anda boleh pulihkan tetapan jika tidak mahu perubahan ini.">
+
 <!ENTITY newTabControlled.header.message "Tab Baru anda telah berubah.">
 <!ENTITY newTabControlled.keepButton.label "Simpan Perubahan">
 <!ENTITY newTabControlled.keepButton.accesskey "S">
 <!ENTITY newTabControlled.restoreButton.label "Pulih Tetapan">
 <!ENTITY newTabControlled.restoreButton.accesskey "P">
+
+<!ENTITY newTabControlled.disableButton.label "Nyahdayakan Ekstensi">
+<!ENTITY newTabControlled.disableButton.accesskey "N">
+
+<!ENTITY homepageControlled.message "Ekstensi telah mengubah apa yang dilihat dalam laman anda. Anda boleh pulihkan tetapan jika tidak mahu perubahan ini.">
+<!ENTITY homepageControlled.header.message "Laman anda telah berubah.">
+<!ENTITY homepageControlled.keepButton.label "Simpan Perubahan">
+<!ENTITY homepageControlled.keepButton.accesskey "S">
+<!ENTITY homepageControlled.disableButton.label "Nyahdayakan Ekstensi">
+<!ENTITY homepageControlled.disableButton.accesskey "N">
 
 <!ENTITY pageActionButton.tooltip "Tindakan halaman">
 <!ENTITY pageAction.addToUrlbar.label "Tambah ke Bar Alamat">
@@ -1001,6 +1015,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pageAction.sendTabToDevice.label "Hantar Tab ke Peranti">
 <!ENTITY sendToDevice.syncNotReady.label "Sync Peranti…">
+
+<!ENTITY pageAction.shareUrl.label "Kongsi">
 
 <!ENTITY libraryButton.tooltip "Papar sejarah, tandabuku yang disimpan dan banyak lagi">
 

@@ -3,9 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY  trackingProtectionHeader2.label      "Sporingsvern">
-<!ENTITY  trackingProtection2.description      "Sporing er ei innsamling av nettlesardataa dine frå fleire nettsider. Sporing kan brukast til å byggje ein profil, og å vise innhald basert på nettlesinga di og din eigen personlege informasjon.">
-<!ENTITY  trackingProtection2.radioGroupLabel  "Bruk sporingsvern til å blokkere kjende sporfølgjarar">
-<!ENTITY  trackingProtection3.description      "Sporingsvernet blokkerer sporfølgjarar på nettet som samlar inn nettleserdataa dine på fleire nettstadar.">
+<!ENTITY  trackingProtection3.description      "Sporingsvernet blokkerer sporarar på nettet som samlar inn dine nettlesardata på fleire nettsider.">
 <!ENTITY  trackingProtection3.radioGroupLabel  "Bruk sporingsvern for å blokkere kjende sporfølgjarar">
 <!ENTITY  trackingProtectionAlways.label       "Alltid">
 <!ENTITY  trackingProtectionAlways.accesskey   "l">
@@ -13,7 +11,6 @@
 <!ENTITY  trackingProtectionPrivate.accesskey  "B">
 <!ENTITY  trackingProtectionNever.label        "Aldri">
 <!ENTITY  trackingProtectionNever.accesskey    "A">
-<!ENTITY  trackingProtectionLearnMore.label    "Lær meir">
 <!ENTITY  trackingProtectionLearnMore2.label    "Les meir om sporingsvern og ditt personvern">
 <!ENTITY  trackingProtectionExceptions.label   "Unntak…">
 <!ENTITY  trackingProtectionExceptions.accesskey "U">
@@ -24,11 +21,6 @@
 <!ENTITY trackingProtectionPBMLearnMore.label "Les meir">
 <!ENTITY changeBlockList2.label               "Endre blokkeringsliste…">
 <!ENTITY changeBlockList2.accesskey           "b">
-
-<!ENTITY  doNotTrack.description        "Send nettsider eit «Ikkje spor»-signal om at du ikkje vil bli spora">
-<!ENTITY  doNotTrack.learnMore.label    "Les meir">
-<!ENTITY  doNotTrack.default.label      "Berre når eg brukar Sporingsvern">
-<!ENTITY  doNotTrack.always.label       "Alltid">
 
 <!ENTITY  history.label                 "Historikk">
 <!ENTITY  permissions.label             "Løyve">
@@ -41,10 +33,10 @@
 <!ENTITY  locbar.bookmarks.accesskey    "k">
 <!ENTITY  locbar.openpage.label         "Opne faner">
 <!ENTITY  locbar.openpage.accesskey     "O">
-<!ENTITY  locbar.searches.label         "Liknande søk frå standard-søkjemotoren">
+<!ENTITY  locbar.searches.label         "Liknande søk frå standard-søkemotoren">
 <!ENTITY  locbar.searches.accesskey     "L">
 
-<!ENTITY  suggestionSettings2.label     "Endre innstillingar for søkjeforslag">
+<!ENTITY  suggestionSettings2.label     "Endre innstillingar for søkeforslag">
 
 <!ENTITY  acceptCookies2.label          "Godta infokapslar frå nettsider">
 <!ENTITY  acceptCookies2.accesskey      "G">
@@ -52,8 +44,8 @@
 <!ENTITY  acceptThirdParty2.pre.label     "Godta tredjeparts infokapslar">
 <!ENTITY  acceptThirdParty2.pre.accesskey "G">
 
-<!ENTITY  acceptCookies3.label          "Tillat infokapslar og nettsidedata frå nettstadar">
-<!ENTITY  acceptCookies3.accesskey      "a">
+<!ENTITY  acceptCookies4.label          "Tillat infokapslar og nettsidedata frå nettstadar (tilrådd)">
+<!ENTITY  acceptCookies4.accesskey      "T">
 
 <!ENTITY  blockCookies.label            "Blokker infokapslar og nettsidedata frå nettstadar (kan skape feil på nettstaden)">
 <!ENTITY  blockCookies.accesskey        "B">
@@ -83,7 +75,7 @@
 <!ENTITY  historyHeader.custom.label       "Bruke eigne innstillingar for historikk">
 <!ENTITY  historyHeader.post.label         "">
 
-<!ENTITY  rememberDescription.label      "&brandShortName; vil hugse nettlesing, nedlasting, skjema og søkjehistorikk, og ta vare på infokapslar frå nettsider du besøkjer.">
+<!ENTITY  rememberDescription.label      "&brandShortName; vil hugse nettlesing, nedlasting, skjema og søkehistorikk, og ta vare på infokapslar frå nettsider du besøker.">
 
 <!-- LOCALIZATION NOTE (rememberActions.pre.label): include a trailing space as needed -->
 <!-- LOCALIZATION NOTE (rememberActions.middle.label): include a starting and trailing space as needed -->
@@ -93,6 +85,8 @@
 <!ENTITY  rememberActions.middle.label        ", eller ">
 <!ENTITY  rememberActions.removeCookies.label "fjerne enkelte infokapslar">
 <!ENTITY  rememberActions.post.label          ".">
+
+<!ENTITY  rememberDescription1.label      "&brandShortName; vil lagre informasjon om besøkte nettsider, skjema- og søkehistorikk.">
 
 <!ENTITY  dontrememberDescription.label  "&brandShortName; vil bruke dei same innstillingane som privat nettlesing og vil ikkje hugse historikk medan du brukar nettet.">
 
@@ -111,7 +105,7 @@
 <!ENTITY  rememberHistory2.label      "Hugse nettlesar- og nedlastingshistorikk">
 <!ENTITY  rememberHistory2.accesskey  "H">
 
-<!ENTITY  rememberSearchForm.label       "Hugse søkje- og skjemahistorikk">
+<!ENTITY  rememberSearchForm.label       "Hugse søke- og skjemahistorikk">
 <!ENTITY  rememberSearchForm.accesskey   "ø">
 
 <!ENTITY  clearOnClose.label             "Slette historikk når &brandShortName; avsluttar">

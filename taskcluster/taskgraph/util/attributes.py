@@ -18,6 +18,7 @@ RELEASE_PROJECTS = {
     'mozilla-central',
     'mozilla-beta',
     'mozilla-release',
+    'mozilla-esr60',
 }
 
 RELEASE_PROMOTION_PROJECTS = {
@@ -27,7 +28,12 @@ RELEASE_PROMOTION_PROJECTS = {
 } | RELEASE_PROJECTS
 
 _OPTIONAL_ATTRIBUTES = (
-    'nightly', 'signed', 'l10n_chunk', 'shipping_product', 'shipping_phase'
+    'artifact_prefix',
+    'l10n_chunk',
+    'nightly',
+    'signed',
+    'shipping_phase',
+    'shipping_product',
 )
 
 

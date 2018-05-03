@@ -4,11 +4,12 @@
 
 <!ENTITY     window.title                  "Configuración - Datos del sitio">
 
-<!ENTITY     window1.title                 "Configuración - Cookies y datos del sitio">
+<!ENTITY     window2.title                 "Administrar las cookies y Datos del sitio">
 <!ENTITY     hostCol.label                 "Sitio">
 <!ENTITY     statusCol.label               "Estado">
 <!ENTITY     cookiesCol.label              "Cookies">
 <!ENTITY     usageCol.label                "Almacenamiento">
+<!ENTITY     lastAccessedCol.label                "Último uso">
 <!ENTITY     searchTextboxPlaceHolder             "Buscar sitios Web">
 <!ENTITY     searchTextboxPlaceHolder.accesskey   "S">
 <!ENTITY     removeSelected.label          "Eliminar seleccionados">

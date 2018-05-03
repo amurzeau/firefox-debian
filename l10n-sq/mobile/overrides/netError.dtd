@@ -10,7 +10,7 @@
 
 <!-- Specific error messages -->
 
-<!ENTITY connectionFailure.title "Nuk arrin të lidhet">
+<!ENTITY connectionFailure.title "S&apos;arrin të lidhet">
 <!ENTITY connectionFailure.longDesc2 "&sharedLongDesc3;">
 
 <!ENTITY deniedPortAccess.title "Kjo adresë është e ndaluar">
@@ -49,9 +49,9 @@
 </ul>
 ">
 
-<!ENTITY generic.title "Hëm…">
+<!ENTITY generic.title "Hëm.">
 <!ENTITY generic.longDesc "
-<p>&brandShortName;-u, për ndonjë arsye, nuk mund ta ngarkojë këtë faqe.</p>
+<p>&brandShortName;-i, për ndonjë arsye, nuk mund ta ngarkojë këtë faqe.</p>
 ">
 
 <!ENTITY malformedURI.title "Adresa nuk është e vlefshme">
@@ -76,7 +76,7 @@
 <!ENTITY notCached.title "Dokumenti Ka Skaduar">
 <!ENTITY notCached.longDesc "<p>Dokumenti i kërkuar nuk gjendet më te fshehtina e &brandShortName;-it.</p><ul><li>Si një masë parandaluese sigurie, &brandShortName;-i nuk rikërkon vetvetiu dokumente rezervat.</li><li>Që ta rikërkoni dokumentin prej sajtit, klikoni mbi Riprovoni.</li></ul>">
 
-<!ENTITY netOffline.title "Mënyrë i Palidhur">
+<!ENTITY netOffline.title "Mënyrë jo në linjë">
 <!-- LOCALIZATION NOTE (netOffline.longDesc3) This string contains markup including widgets enabling wifi connections.
      The text inside the tags should be localized. Do not touch the ids. -->
 <!ENTITY netOffline.longDesc3 "
@@ -94,7 +94,7 @@
 </ul>
 ">
 
-<!ENTITY unsafeContentType.title "Lloj Jo i Parrezik Kartelash">
+<!ENTITY unsafeContentType.title "Lloj Kartele Jo i Parrezik">
 <!ENTITY unsafeContentType.longDesc "
 <ul>
   <li>Ju lutemi, lidhuni me të zotët e sajtit për t&apos;u bërë të ditur këtë problem.</li>
@@ -104,7 +104,7 @@
 <!ENTITY netReset.title "Lidhja u rivendos">
 <!ENTITY netReset.longDesc2 "&sharedLongDesc3;">
 
-<!ENTITY netTimeout.title "Lidhjes i përfundoi koha">
+<!ENTITY netTimeout.title "Lidhjes i mbaroi koha">
 <!ENTITY netTimeout.longDesc2 "&sharedLongDesc3;">
 
 <!ENTITY unknownProtocolFound.title "Adresa nuk u kuptua">
@@ -118,11 +118,11 @@
 <!ENTITY proxyConnectFailure.longDesc "
 <ul>
   <li>Kontrolloni rregullimet për ndërmjetësin, për t&apos;u siguruar që janë të sakta.</li>
-  <li>Lidhuni me përgjegjësin e rrjetit tuaj, për t&apos;u siguruar që shërbyesi ndërmjetës punon.</li>
+  <li>Lidhuni me përgjegjësin e rrjetit tuaj, për t&apos;u siguruar që shërbyesi ndërmjetës po punon.</li>
 </ul>
 ">
 
-<!ENTITY proxyResolveFailure.title "Nuk arrin të gjejë shërbyesin ndërmjetës">
+<!ENTITY proxyResolveFailure.title "S’arrihet të gjendet shërbyesi ndërmjetës">
 <!-- LOCALIZATION NOTE (proxyResolveFailure.longDesc3) This string contains markup including widgets for enabling wifi connections.
      The text inside the tags should be localized. Do not touch the ids. -->
 <!ENTITY proxyResolveFailure.longDesc3 "

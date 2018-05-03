@@ -43,8 +43,8 @@
 
 <!-- LOCALIZATION NOTE (debuggerUI.autoPrettyPrint): This is the label for the
   -  checkbox that toggles auto pretty print. -->
-<!ENTITY debuggerUI.autoPrettyPrint     "จัดต้นฉบับที่ถูกย่อให้สวยงามโดยอัตโนมัติ">
-<!ENTITY debuggerUI.autoPrettyPrint.accesskey "P">
+<!ENTITY debuggerUI.autoPrettyPrint     "จัดต้นฉบับที่ถูกลดขนาดให้สวยงามอัตโนมัติ">
+<!ENTITY debuggerUI.autoPrettyPrint.accesskey "จ">
 
 <!-- LOCALIZATION NOTE (debuggerUI.sources.toggleBreakpoints): This is the tooltip for the
   -  button that toggles all breakpoints for all sources. -->
@@ -56,39 +56,40 @@
 
 <!-- LOCALIZATION NOTE (debuggerUI.clearButton.tooltip): This is the tooltip for
   -  the button that clears the collected tracing data in the tracing tab. -->
+<!ENTITY debuggerUI.clearButton.tooltip "ล้างการติดตามที่เก็บรวบรวมไว้">
 
 <!-- LOCALIZATION NOTE (debuggerUI.pauseExceptions): This is the label for the
   -  checkbox that toggles pausing on exceptions. -->
-<!ENTITY debuggerUI.pauseExceptions           "หยุดเมื่อพบ Exceptions">
-<!ENTITY debuggerUI.pauseExceptions.accesskey "E">
+<!ENTITY debuggerUI.pauseExceptions           "หยุดชั่วคราวที่ข้อยกเว้น">
+<!ENTITY debuggerUI.pauseExceptions.accesskey "ห">
 
 <!-- LOCALIZATION NOTE (debuggerUI.ignoreCaughtExceptions): This is the label for the
   -  checkbox that toggles ignoring caught exceptions. -->
-<!ENTITY debuggerUI.ignoreCaughtExceptions           "เพิกเฉยการจับกรณีพิเศษ">
-<!ENTITY debuggerUI.ignoreCaughtExceptions.accesskey "C">
+<!ENTITY debuggerUI.ignoreCaughtExceptions           "ไม่สนใจข้อยกเว้นที่จับ">
+<!ENTITY debuggerUI.ignoreCaughtExceptions.accesskey "ม">
 
 <!-- LOCALIZATION NOTE (debuggerUI.showPanesOnInit): This is the label for the
   -  checkbox that toggles visibility of panes when opening the debugger. -->
 <!ENTITY debuggerUI.showPanesOnInit           "แสดงบานหน้าต่างเมื่อเริ่มการทำงาน">
-<!ENTITY debuggerUI.showPanesOnInit.accesskey "S">
+<!ENTITY debuggerUI.showPanesOnInit.accesskey "ส">
 
 <!-- LOCALIZATION NOTE (debuggerUI.showVarsFilter): This is the label for the
   -  checkbox that toggles visibility of a designated variables filter box. -->
 <!ENTITY debuggerUI.showVarsFilter           "แสดงกล่องกรองตัวแปร">
-<!ENTITY debuggerUI.showVarsFilter.accesskey "V">
+<!ENTITY debuggerUI.showVarsFilter.accesskey "ด">
 
 <!-- LOCALIZATION NOTE (debuggerUI.showOnlyEnum): This is the label for the
   -  checkbox that toggles visibility of hidden (non-enumerable) variables and
   -  properties in stack views. The "enumerable" flag is a state of a property
   -  defined in JavaScript. When in doubt, leave untranslated. -->
 <!ENTITY debuggerUI.showOnlyEnum           "แสดงเฉพาะคุณลักษณะที่นับได้">
-<!ENTITY debuggerUI.showOnlyEnum.accesskey "P">
+<!ENTITY debuggerUI.showOnlyEnum.accesskey "ง">
 
 <!-- LOCALIZATION NOTE (debuggerUI.showOriginalSource): This is the label for
   -  the checkbox that toggles the display of original or sourcemap-derived
   -  sources. -->
 <!ENTITY debuggerUI.showOriginalSource           "แสดงแหล่งต้นฉบับ">
-<!ENTITY debuggerUI.showOriginalSource.accesskey "O">
+<!ENTITY debuggerUI.showOriginalSource.accesskey "ห">
 
 <!-- LOCALIZATION NOTE (debuggerUI.autoBlackBox): This is the label for
   -  the checkbox that toggles whether sources that we suspect are minified are
@@ -104,42 +105,43 @@
 <!ENTITY debuggerUI.searchFile           "กรองสคริปต์">
 <!ENTITY debuggerUI.searchFile.key       "P">
 <!ENTITY debuggerUI.searchFile.altkey    "O">
-<!ENTITY debuggerUI.searchFile.accesskey "P">
+<!ENTITY debuggerUI.searchFile.accesskey "ก">
 
 <!-- LOCALIZATION NOTE (debuggerUI.searchGlobal): This is the text that appears
   -  in the source editor's context menu for the global search operation. -->
 <!ENTITY debuggerUI.searchGlobal           "ค้นหาในไฟล์ทั้งหมด">
 <!ENTITY debuggerUI.searchGlobal.key       "F">
-<!ENTITY debuggerUI.searchGlobal.accesskey "F">
+<!ENTITY debuggerUI.searchGlobal.accesskey "น">
 
 <!-- LOCALIZATION NOTE (debuggerUI.searchFunction): This is the text that appears
   -  in the source editor's context menu for the function search operation. -->
 <!ENTITY debuggerUI.searchFunction           "ค้นหาคำนิยามของฟังก์ชัน">
 <!ENTITY debuggerUI.searchFunction.key       "D">
-<!ENTITY debuggerUI.searchFunction.accesskey "D">
+<!ENTITY debuggerUI.searchFunction.accesskey "ห">
 
 <!-- LOCALIZATION NOTE (debuggerUI.searchToken): This is the text that appears
   -  in the source editor's context menu for the token search operation. -->
 <!ENTITY debuggerUI.searchToken           "ค้นหา">
 <!ENTITY debuggerUI.searchToken.key       "F">
-<!ENTITY debuggerUI.searchToken.accesskey "F">
+<!ENTITY debuggerUI.searchToken.accesskey "ค">
 
-<!-- LOCALIZATION NOTE (debuggerUI.searchLine): This is the text that appears
+<!-- LOCALIZATION NOTE (debuggerUI.searchGoToLine): This is the text that appears
   -  in the source editor's context menu for the line search operation. -->
 <!ENTITY debuggerUI.searchGoToLine           "ไปยังบรรทัดที่…">
 <!ENTITY debuggerUI.searchGoToLine.key       "L">
-<!ENTITY debuggerUI.searchGoToLine.accesskey "L">
+<!ENTITY debuggerUI.searchGoToLine.accesskey "ป">
 
 <!-- LOCALIZATION NOTE (debuggerUI.searchVariable): This is the text that appears
   -  in the source editor's context menu for the variables search operation. -->
 <!ENTITY debuggerUI.searchVariable           "กรองตัวแปร">
 <!ENTITY debuggerUI.searchVariable.key       "V">
-<!ENTITY debuggerUI.searchVariable.accesskey "V">
+<!ENTITY debuggerUI.searchVariable.accesskey "ก">
 
 <!-- LOCALIZATION NOTE (debuggerUI.focusVariables): This is the text that appears
   -  in the source editor's context menu for the variables focus operation. -->
+<!ENTITY debuggerUI.focusVariables           "โฟกัสต้นไม้ตัวแปร">
 <!ENTITY debuggerUI.focusVariables.key       "V">
-<!ENTITY debuggerUI.focusVariables.accesskey "V">
+<!ENTITY debuggerUI.focusVariables.accesskey "ฟ">
 
 <!-- LOCALIZATION NOTE (debuggerUI.condBreakPanelTitle): This is the text that
   -  appears in the conditional breakpoint panel popup as a description. -->
@@ -156,33 +158,35 @@
 <!ENTITY debuggerUI.seMenuCondBreak     "เพิ่มจุดพักแบบมีเงื่อนไข">
 <!ENTITY debuggerUI.seMenuCondBreak.key "B">
 
-<!-- LOCALIZATION NOTE (debuggerUI.seMenuBreak): This is the text that
+<!-- LOCALIZATION NOTE (debuggerUI.seEditMenuCondBreak): This is the text that
   -  appears in the source editor context menu for editing a breakpoint. -->
+<!ENTITY debuggerUI.seEditMenuCondBreak     "แก้ไขจุดพักแบบมีเงื่อนไข">
 <!ENTITY debuggerUI.seEditMenuCondBreak.key "B">
 
 <!-- LOCALIZATION NOTE (debuggerUI.tabs.*): This is the text that
   -  appears in the debugger's side pane tabs. -->
 <!ENTITY debuggerUI.tabs.workers        "ตัวทำงาน">
-<!ENTITY debuggerUI.tabs.sources        "แหล่ง">
-<!ENTITY debuggerUI.tabs.callstack      "สแต็คการเรียก:">
+<!ENTITY debuggerUI.tabs.sources        "แหล่งที่มา">
+<!ENTITY debuggerUI.tabs.traces         "การติดตาม">
+<!ENTITY debuggerUI.tabs.callstack      "สแตกการเรียก">
 <!ENTITY debuggerUI.tabs.variables      "ตัวแปร">
 <!ENTITY debuggerUI.tabs.events         "เหตุการณ์">
 
 <!-- LOCALIZATION NOTE (debuggerUI.seMenuAddWatch): This is the text that
   -  appears in the source editor context menu for adding an expression. -->
-<!ENTITY debuggerUI.seMenuAddWatch      "ส่วนที่เลือกเพื่อติดตาม Expression">
+<!ENTITY debuggerUI.seMenuAddWatch      "ส่วนที่เลือกเพื่อดูนิพจน์">
 <!ENTITY debuggerUI.seMenuAddWatch.key  "E">
 
 <!-- LOCALIZATION NOTE (debuggerUI.addWatch): This is the text that
   -  appears in the watch expressions context menu for adding an expression. -->
-<!ENTITY debuggerUI.addWatch            "เพิ่มการติดตาม Expression">
-<!ENTITY debuggerUI.addWatch.accesskey  "E">
+<!ENTITY debuggerUI.addWatch            "เพิ่มการดูนิพจน์">
+<!ENTITY debuggerUI.addWatch.accesskey  "พ">
 
-<!-- LOCALIZATION NOTE (debuggerUI.removeWatch): This is the text that
+<!-- LOCALIZATION NOTE (debuggerUI.removeAllWatch): This is the text that
   -  appears in the watch expressions context menu for removing all expressions. -->
-<!ENTITY debuggerUI.removeAllWatch           "ลบทุกการติดตาม Expressions">
+<!ENTITY debuggerUI.removeAllWatch           "เอาการดูนิพจน์ทั้งหมดออก">
 <!ENTITY debuggerUI.removeAllWatch.key       "E">
-<!ENTITY debuggerUI.removeAllWatch.accesskey "E">
+<!ENTITY debuggerUI.removeAllWatch.accesskey "อ">
 
 <!-- LOCALIZATION NOTE (debuggerUI.stepping): These are the keycodes that
   -  control the stepping commands in the debugger (continue, step over,
@@ -197,11 +201,11 @@
   -  debugger sources side menu. This should be the same as
   -  netmonitorUI.context.newTab  -->
 <!ENTITY debuggerUI.context.newTab           "เปิดในแท็บใหม่">
-<!ENTITY debuggerUI.context.newTab.accesskey "O">
+<!ENTITY debuggerUI.context.newTab.accesskey "ป">
 
 <!-- LOCALIZATION NOTE (debuggerUI.context.copyUrl): This is the label displayed
   -  on the context menu that copies the selected request's url. This should be
   -  the same as netmonitorUI.context.copyUrl -->
 <!ENTITY debuggerUI.context.copyUrl           "คัดลอก URL">
-<!ENTITY debuggerUI.context.copyUrl.accesskey "C">
+<!ENTITY debuggerUI.context.copyUrl.accesskey "ค">
 <!ENTITY debuggerUI.context.copyUrl.key "C">

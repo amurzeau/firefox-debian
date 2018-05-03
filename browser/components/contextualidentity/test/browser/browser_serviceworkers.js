@@ -1,5 +1,3 @@
-let { classes: Cc, interfaces: Ci } = Components;
-
 let swm = Cc["@mozilla.org/serviceworkers/manager;1"].
           getService(Ci.nsIServiceWorkerManager);
 
@@ -25,6 +23,7 @@ add_task(async function setup() {
   // make sure userContext is enabled.
   await SpecialPowers.pushPrefEnv({"set": [
     ["privacy.userContext.enabled", true],
+    ["dom.serviceWorkers.enabled", true],
     ["dom.ipc.processCount", 1]
   ]});
 });

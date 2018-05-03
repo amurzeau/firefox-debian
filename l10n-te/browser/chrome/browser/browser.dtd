@@ -48,9 +48,10 @@ can reach it easily. -->
 <!ENTITY  sendTabToDevice.accesskey          "D">
 <!ENTITY  sendPageToDevice.label             "పేజీని పరికరానికి పంపు">
 <!ENTITY  sendPageToDevice.accesskey         "D">
-<!ENTITY  sendLinkToDevice.label             "లింకును పరికరానికి పంపు">
+<!ENTITY  sendLinkToDevice.label             "లంకెను పరికరానికి పంపు">
 <!ENTITY  sendLinkToDevice.accesskey         "D">
-<!ENTITY  sendToDeviceFeedback.label         "పంపినది!">
+<!ENTITY  sendToDeviceFeedback.label         "పంపబడింది!">
+<!ENTITY  sendToDeviceOfflineFeedback.label  "క్యూడ్ (ఆఫ్‌లైన్)">
 <!ENTITY  moveToNewWindow.label              "కొత్త విండోకి తరలించు">
 <!ENTITY  moveToNewWindow.accesskey          "W">
 <!ENTITY  bookmarkAllTabs.label              "ట్యాబులన్నింటినీ ఇష్టాంశాలుగా చేయి…">
@@ -59,6 +60,8 @@ can reach it easily. -->
 <!ENTITY  undoCloseTab.accesskey             "U">
 <!ENTITY  closeTab.label                     "ట్యాబుని మూసివేయి">
 <!ENTITY  closeTab.accesskey                 "C">
+
+<!ENTITY  hiddenTabs.label                   "దాచిన ట్యాబులు">
 
 <!ENTITY  listAllTabs.label      "అన్ని ట్యాబుల జాబితా చూపించు">
 
@@ -110,6 +113,7 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 <!ENTITY pageInfoCmd.label "పేజీ సమాచారం">
 <!ENTITY pageInfoCmd.accesskey "I">
 <!ENTITY pageInfoCmd.commandkey "i">
+<!ENTITY ldbCmd.label "లేఅవుట్ డీబగ్గర్">
 <!ENTITY ldbCmd.accesskey "L">
 <!ENTITY mirrorTabCmd.label "మిర్రర్ ట్యాబ్">
 <!ENTITY mirrorTabCmd.accesskey "M">
@@ -212,12 +216,14 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.defaultNotificationAnchor.tooltip         "సందేశపు ప్యానెలును తెరువు">
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "స్థాన అభ్యర్థన ప్యానెలును తెరువు">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "యాడ్-ఆన్ స్థాపన సందేశపు ప్యానెలు తెరువు">
+<!ENTITY urlbar.canvasNotificationAnchor.tooltip          "కాన్వాస్ వెలికితీత అనుమతిని నిర్వహించండి">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "ఆఫ్‌లైన్ నిల్వ సందేశ ప్యానెలును తెరువు">
 <!ENTITY urlbar.passwordNotificationAnchor.tooltip        "పాస్‌వర్డ్ భద్రపరచు సందేశపు ప్యానెలును తెరువు">
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "ప్లగ్-ఇన్ వాడకాన్ని నిర్వహించండి">
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "మీరు సైటు నుండి నోటిఫికేషన్లు అందుకుంటారో లేదో మార్చండి">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "నిరంతర నిల్వ డేటాని నిల్వ చేయండి">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "విహరణి వ్యవహిత నియంత్రణ కింద ఉంది">
+
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "సైటుతో మీ కేమెరా మరియు/లేదా మైక్రోఫోన్ పంచుకోడాన్ని నిర్వహించండి">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "సైటుతో మీ మైక్రోఫోనుని పంచుకోవడాన్ని నిర్వహించండి">
@@ -236,9 +242,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.geolocationBlocked.tooltip       "మీ స్థాన సమాచారాన్ని వాడకుండా ఈ వెబ్‌సైటుని నిరోధించారు.">
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "నోటిఫికేషన్లు చూపించకుండా ఈ వెబ్‌సైటుని నిరోధించారు.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "మీరు ఈ వెబ్సైట్ కోసం నిరంతర నిల్వ నిరోధించారు.">
-
+<!ENTITY urlbar.popupBlocked.tooltip             "మీరు ఈ వెబ్‌సైటు యొక్క పాప్-అప్లను నిరోధించారు.">
 <!ENTITY urlbar.canvasBlocked.tooltip            "ఈ వెబ్‌సైటుని కాన్వాస్ డేటా వెలికితీయకుండా మీరు నిరోధించారు.">
 
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "అడోబి ఫ్లాష్ చొప్పింతను వాడనీయకుండా ఈ వెబ్‌సైటును మీరు నిరోధించారు.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "చరిత్రను చూపించు">
 
@@ -261,7 +268,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY searchBookmarks.label              "ఇష్టాంశాలను శోధించు">
 <!ENTITY bookmarkingTools.label             "ఇష్టాంశాల పనిముట్లు">
 
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -292,6 +299,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY inspectContextMenu.label     "మూలకం విచారణచేయి">
 <!ENTITY inspectContextMenu.accesskey "Q">
+
 
 <!ENTITY fileMenu.label         "దస్త్రం">
 <!ENTITY fileMenu.accesskey       "F">
@@ -378,10 +386,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "మీ ఇతర పరికరాల లోని ట్యాబుల జాబితాను చూడడానికి ట్యాబ్ సింక్ ను ప్రారంభించండి.">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "సింక్ చేయబడిన ట్యాబులు లేవు… ఇంకా!">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "ఇతర పరికరాలలో తెరిచివున్న మీ ట్యాబులను ఇక్కడ చూడాలనుకుంటున్నారా?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "సింక్ అభిరుచులు">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Sync అభిరుచులను తెరువు">
@@ -390,7 +397,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Sync లోకి ప్రవేశించండి">
 <!ENTITY appMenuRemoteTabs.managedevices.label "పరికరాలను నిర్వహించండి…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "సింక్రనిత ట్యాబుల ప్రక్కపట్టీని చూడండి">
-
 <!ENTITY appMenuRemoteTabs.connectdevice.label "మరొక పరికరాన్ని అనుసంధానించండి">
 
 <!ENTITY appMenuRecentHighlights.label "ఇటీవలి ముఖ్యాంశాలు">
@@ -799,7 +805,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "సింకైన ట్యాబులు">
 <!ENTITY syncedTabs.sidebar.noclients.label    "మీ ఇతర పరికరాల లోని ట్యాబులను ఇక్కడ చూడడానికి వాటిలో Firefox లోనికి ప్రవేశించండి.">
-<!ENTITY syncedTabs.sidebar.noclients.title    "సింక్ చేయబడిన ట్యాబులేమీ లేవు… ఇంకా!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "మీ ఇతర పరికరాలోని ట్యాబులను ఇక్కడ చూడాలనుకుంటున్నారా?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "మీ ఇతర పరికరాల లోని ట్యాబుల జాబితా చూడడానికి ప్రవేశించండి.">
 <!ENTITY syncedTabs.sidebar.unverified.label   "మీ ఖాతాను తనిఖీ చెయ్యాలి.">
@@ -809,7 +814,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "మీ ఇతర పరికరాల లోని ట్యాబుల జాబితాను చూడటానికి ట్యాబుల సింకింగుని చేతనం చెయ్యండి.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "సింకైన ట్యాబులలో వెతకండి">
-
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "మరొక పరికరాన్ని అనుసంధానించండి">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
@@ -975,11 +979,21 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "N">
 <!ENTITY updateRestart.panelUI.label2 "&brandShorterName;‌ను తాజాకరించడానికి పునఃప్రారంభించండి">
 
+
 <!ENTITY newTabControlled.header.message "మీ కొత్త ట్యాబు మారిపోయింది.">
 <!ENTITY newTabControlled.keepButton.label "మార్పులను ఉండనివ్వు">
 <!ENTITY newTabControlled.keepButton.accesskey "K">
 <!ENTITY newTabControlled.restoreButton.label "అమరికలను పునరుద్ధరించు">
 <!ENTITY newTabControlled.restoreButton.accesskey "R">
+
+<!ENTITY newTabControlled.disableButton.label "పొడగింతను అనేతనం చేయి">
+<!ENTITY newTabControlled.disableButton.accesskey "D">
+
+<!ENTITY homepageControlled.header.message "మీ ముంగిలి పుట మారింది.">
+<!ENTITY homepageControlled.keepButton.label "మార్పులను ఉండనివ్వు">
+<!ENTITY homepageControlled.keepButton.accesskey "K">
+<!ENTITY homepageControlled.disableButton.label "పొడగింతను అచేతనం చేయి">
+<!ENTITY homepageControlled.disableButton.accesskey "D">
 
 <!ENTITY pageActionButton.tooltip "పేజీ చర్యలు">
 <!ENTITY pageAction.addToUrlbar.label "చిరునామా పట్టీకి చేర్చండి">
@@ -991,6 +1005,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageAction.sendTabToDevice.label "ట్యాబుని పరికరానికి పంపు">
 <!ENTITY sendToDevice.syncNotReady.label "పరికరాలను సమకాలీకరిస్తోంది…">
 
+<!ENTITY pageAction.shareUrl.label "పంచుకో">
+
+<!ENTITY libraryButton.tooltip "చరిత్ర, భద్రపరచిన ఇష్టాంశాలు, ఇంకా మరెన్నో చూడండి">
 
 <!-- LOCALIZATION NOTE: (accessibilityIndicator.tooltip): This is used to
      display a tooltip for accessibility indicator in toolbar/tabbar. It is also

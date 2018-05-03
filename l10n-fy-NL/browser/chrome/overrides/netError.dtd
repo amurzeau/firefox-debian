@@ -34,7 +34,7 @@
 <!ENTITY fileNotFound.longDesc "
 <ul>
   <li>Kontrolearje de bestânsnamme op grutte/lytse letters of oare typflaters.</li>
-  <li>Kontrolearje of it bestân ferpleatst, fuorthelle is of in nije namme krigen hat.</li>
+  <li>Kontrolearje oft it bestân ferpleatst, omneamd of fuortsmiten is.</li>
 </ul>
 ">
 
@@ -123,7 +123,7 @@
 <!ENTITY redirectLoop.title "De side ferwiist net op in krekte wize troch">
 <!ENTITY redirectLoop.longDesc "
 <ul>
-  <li>Dit probleem kin soms feroarsake wurde troch it útskeakeljen of wegerjen
+  <li>Dit probleem kin somtiden feroarsake wurde troch it útskeakeljen of wegerjen
    fan cookies.</li>
 </ul>
 ">
@@ -200,8 +200,7 @@ allinnich in befeilige ferbining meitsje mei. Hjirtroch is it net mooglik om in
      "NS_ERROR_NET_INADEQUATE_SECURITY". -->
 <!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> brûkt ferâldere befeiligingstechnology dy't kwetsber is foar oanfallen. In oanfaller kin ienfâldichwei gegevens ûntdekke wêrfan jo tochten dat dizze feilich wiene. De websitebehearder moat earst de server yn oarder meitsje eardat jo de website besykje kinne.</p><p>Flaterkoade: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
 
-<!ENTITY blockedByPolicyTemp.title "Side blokkearre">
-<!ENTITY blockedByPolicyTemp.longDesc "<p>Tagong is troch jo systeembehearder útskeakele.</p>">
+<!ENTITY blockedByPolicy.title "Blokkearre side">
 
 <!ENTITY prefReset.longDesc "It liket derop dat dit troch jo netwurkbefeiligingsynstellingen feroarsake wurdt. Wolle jo de standertynstellingen werom bringe?">
 <!ENTITY prefReset.label "Standertynstellingen werom bringe">

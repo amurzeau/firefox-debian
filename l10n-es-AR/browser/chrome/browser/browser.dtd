@@ -61,6 +61,8 @@ can reach it easily. -->
 <!ENTITY  closeTab.label                     "Cerrar pestaña">
 <!ENTITY  closeTab.accesskey                 "c">
 
+<!ENTITY  hiddenTabs.label                   "Pestañas ocultas">
+
 <!ENTITY  listAllTabs.label      "Listar todas las pestañas">
 
 <!ENTITY tabCmd.label "Nueva pestaña">
@@ -127,6 +129,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "Mostrar todas las pestañas">
 <!ENTITY showAllTabsCmd.accesskey "a">
 <!ENTITY toggleReaderMode.key "R">
+
+<!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "Ingresar a &syncBrand.shortName.label;">
 <!ENTITY fxaSignedIn.tooltip "Abrir preferencias de &syncBrand.shortName.label;">
@@ -220,6 +224,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Datos guardados en almacenamiento persistente">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "El navegador está controlado remotamente">
 
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "Abrir el panel de autenticación Web">
+
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Administrar compartir cámara y/o micrófono con el sitio">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Administrar compartir micrófono con el sitio">
 <!ENTITY urlbar.webRTCShareScreenNotificationAnchor.tooltip       "Administrar compartir ventanas o pantalla con el sitio">
@@ -229,6 +235,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Administrar traducción de página">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Administrar uso de software DRM">
 
+<!ENTITY urlbar.midiNotificationAnchor.tooltip            "Abrir panel MIDI">
+
 <!ENTITY urlbar.cameraBlocked.tooltip            "Ha bloqueado la cámara para este sitio web.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Ha bloqueado el micrófono para este sitio web.">
 <!ENTITY urlbar.screenBlocked.tooltip            "Ha bloqueado este sitio web para que no comparta la pantalla.">
@@ -236,8 +244,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Ha bloqueado notificaciones para este sitio web.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Se ha bloqueado el almacenamiento persistente para este sitio web.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Ha bloquedo emergentes para este sitio web.">
-
 <!ENTITY urlbar.canvasBlocked.tooltip            "Se ha bloqueado la extracción de datos de canvas para este sitio web.">
+
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "Bloqueó esta web para que no use el plugin de Adobe Flash.">
+<!ENTITY urlbar.midiBlocked.tooltip              "Ha bloqueado el acceso a MIDI para este sitio web.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Mostrar historial">
 
@@ -262,7 +272,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addBookmarksMenu.label             "Agregar menú de marcadores a la barra de herramientas">
 <!ENTITY removeBookmarksMenu.label          "Eliminar menú de marcadores de la barra de herramientas">
 
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -293,6 +303,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY inspectContextMenu.label     "Inspeccionar elemento">
 <!ENTITY inspectContextMenu.accesskey "o">
+
+<!ENTITY inspectA11YContextMenu.label     "Inspeccionar las propiedades de Accesibilidad">
 
 <!ENTITY fileMenu.label         "Archivo">
 <!ENTITY fileMenu.accesskey       "A">
@@ -379,10 +391,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Habilitar sincronización de pestañas para ver una lista de pestañás de los otros dispositivos.">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "No hay pestañas sincronizadas… ¡aún!">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "¿Desea ver las pestañas de sus otros dispositivos acá?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Preferencias de sincronización">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Abrir las preferencias de Sync">
@@ -391,7 +402,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Ingresar a Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Administrar dispositivos...">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Ver barra lateral de pestañas sincronizadas">
-
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Conectar otro dispositivo">
 
 <!ENTITY appMenuRecentHighlights.label "Destacados recientes">
@@ -434,6 +444,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Buscar o ingresar dirección">
+<!ENTITY urlbar.placeholder3          "Ingrese aquí los términos de búsqueda y direcciones">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Extensión:">
@@ -800,7 +811,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "Pestañas sincronizadas">
 <!ENTITY syncedTabs.sidebar.noclients.label    "Ingrese a Firefox desde otro dispositivo para ver sus pestañas aquí.">
-<!ENTITY syncedTabs.sidebar.noclients.title    "No hay pestañas sincronizadas… ¡aún!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "¿Quiere ver las pestañas de sus otros dispositivos aquí?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Ingrese para ver una lista de pestañas de los otros dispositivos.">
 <!ENTITY syncedTabs.sidebar.unverified.label   "La cuenta necesita ser verificada.">
@@ -810,7 +820,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Habilite sincronización de pestañas para ver una lista de pestañas de los otros dispositivos.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Buscar en pestañas sincronizadas">
-
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Conectar otro dispositivo">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
@@ -980,11 +989,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.panelUI.label2 "Reiniciar para actualizar &brandShorterName;">
 
 <!ENTITY newTabControlled.message "Una extensión ha cambiado la página que se ve al abrir una nueva pestaña. Se puede restaurar la configuración si no desea este cambio.">
+
 <!ENTITY newTabControlled.header.message "La nueva pestaña ha cambiado.">
 <!ENTITY newTabControlled.keepButton.label "Mantener cambios">
 <!ENTITY newTabControlled.keepButton.accesskey "t">
 <!ENTITY newTabControlled.restoreButton.label "Restaurar configuración">
 <!ENTITY newTabControlled.restoreButton.accesskey "R">
+
+<!ENTITY newTabControlled.disableButton.label "Deshabilitar extensión">
+<!ENTITY newTabControlled.disableButton.accesskey "D">
+
+<!ENTITY homepageControlled.message "Una extensión cambió lo que ve como su página de inicio. Puede restaurar su configuración si no desea este cambio.">
+<!ENTITY homepageControlled.header.message "Cambió su página de inicio.">
+<!ENTITY homepageControlled.keepButton.label "Mantener los cambios">
+<!ENTITY homepageControlled.keepButton.accesskey "K">
+<!ENTITY homepageControlled.disableButton.label "Deshabilitar la extensión">
+<!ENTITY homepageControlled.disableButton.accesskey "D">
 
 <!ENTITY pageActionButton.tooltip "Acciones de página">
 <!ENTITY pageAction.addToUrlbar.label "Agregar a la barra de direcciones">
@@ -995,6 +1015,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pageAction.sendTabToDevice.label "Enviar pestaña a dispositivo">
 <!ENTITY sendToDevice.syncNotReady.label "Sincronizando dispositivos…">
+
+<!ENTITY pageAction.shareUrl.label "Compartir">
 
 <!ENTITY libraryButton.tooltip "Ver historial, marcadores guardados y más">
 

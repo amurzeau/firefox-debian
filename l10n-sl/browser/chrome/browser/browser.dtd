@@ -61,6 +61,8 @@ can reach it easily. -->
 <!ENTITY  closeTab.label                     "Zapri zavihek">
 <!ENTITY  closeTab.accesskey                 "Z">
 
+<!ENTITY  hiddenTabs.label                   "Skriti zavihki">
+
 <!ENTITY  listAllTabs.label      "Seznam vseh zavihkov">
 
 <!ENTITY tabCmd.label "Nov zavihek">
@@ -111,6 +113,8 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 <!ENTITY pageInfoCmd.label "Podatki o strani">
 <!ENTITY pageInfoCmd.accesskey "I">
 <!ENTITY pageInfoCmd.commandkey "i">
+<!ENTITY ldbCmd.label "Razhroščevalnik postavitve">
+<!ENTITY ldbCmd.accesskey "P">
 <!ENTITY mirrorTabCmd.label "Prezrcali zavihek">
 <!ENTITY mirrorTabCmd.accesskey "P">
 <!-- LOCALIZATION NOTE (enterFullScreenCmd.label, exitFullScreenCmd.label):
@@ -220,6 +224,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Shrani podatke v trajni shrambi">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Brskalnik je pod daljinskim upravljanjem">
 
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "Odpri ploščo za spletno overitev">
+
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Upravljajte dovoljenje za uporabo kamere in/ali mikrofona na tej strani">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Upravljajte dovoljenje za uporabo mikrofona na tej strani">
 <!ENTITY urlbar.webRTCShareScreenNotificationAnchor.tooltip       "Upravljajte dovoljenje za deljenje oken ali zaslona na tej strani">
@@ -229,6 +235,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Upravljajte prevod strani">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Upravljajte uporabo programske opreme DRM">
 
+<!ENTITY urlbar.midiNotificationAnchor.tooltip            "Odpri ploščo MIDI">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Za to stran ste zavrnili uporabo kamere.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Za to stran ste zavrnili uporabo mikrofona.">
@@ -237,9 +244,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Za to stran ste zavrnili prikaz obvestil.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Za to spletno stran ste zavrnili trajno shrambo.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Za to stran ste zavrnili pojavna okna.">
-
 <!ENTITY urlbar.canvasBlocked.tooltip            "Za to stran ste zavrnili izločanje podatkov platna.">
 
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "Tej strani ste zavrnili uporabo vtičnika Adobe Flash.">
+<!ENTITY urlbar.midiBlocked.tooltip              "Za to stran ste zavrnili uporabo MIDI.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Pokaži zgodovino">
 
@@ -264,7 +272,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addBookmarksMenu.label             "Dodaj meni zaznamkov v orodno vrstico">
 <!ENTITY removeBookmarksMenu.label          "Odstrani meni zaznamkov iz orodne vrstice">
 
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -295,6 +303,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY inspectContextMenu.label     "Preglej element">
 <!ENTITY inspectContextMenu.accesskey "j">
+
+<!ENTITY inspectA11YContextMenu.label     "Preglej lastnosti dostopnosti">
 
 <!ENTITY fileMenu.label         "Datoteka">
 <!ENTITY fileMenu.accesskey       "D">
@@ -334,7 +344,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.label       "Nastavitve">
 <!ENTITY preferencesCmdUnix.accesskey     "n">
 
-<!ENTITY clearRecentHistory.label               "Počisti nedavno zgodovino">
+<!ENTITY clearRecentHistory.label               "Počisti nedavno zgodovino …">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
 
@@ -381,18 +391,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Vključite sinhronizacijo zavihkov za ogled seznama zavihkov drugih naprav.">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "Ni še sinhroniziranih zavihkov!">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Želite tukaj videti zavihke drugih naprav?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Možnosti sinhronizacije">
+<!ENTITY appMenuRemoteTabs.opensyncprefs.label "Odpri nastavitve sinhronizacije">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Prijavite se za ogled seznama zavihkov drugih naprav.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Svoj račun morate potrditi.">
 <!ENTITY appMenuRemoteTabs.signin.label "Prijavite se v Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Upravljanje naprav …">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Pokaži stransko vrstico s sinhroniziranimi zavihki">
-
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Poveži drugo napravo">
 
 <!ENTITY appMenuRecentHighlights.label "Nedavni poudarki">
@@ -435,6 +444,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Iskanje ali naslov strani">
+<!ENTITY urlbar.placeholder3          "Vnesite iskalni niz ali naslov">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Razširitev:">
@@ -801,7 +811,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "Sinhronizirani zavihki">
 <!ENTITY syncedTabs.sidebar.noclients.label    "Prijavite se v Firefox iz drugih naprav in si oglejte njihove zavihke tukaj.">
-<!ENTITY syncedTabs.sidebar.noclients.title    "Ni še sinhroniziranih zavihkov!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Želite tukaj videti zavihke drugih naprav?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Prijavite se za ogled seznama zavihkov drugih naprav.">
 <!ENTITY syncedTabs.sidebar.unverified.label   "Svoj račun morate potrditi.">
@@ -811,7 +820,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Vklopite sinhronizacijo zavihkov za ogled seznama zavihkov drugih naprav.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Iskanje po sinhroniziranih zavihkih">
-
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Poveži drugo napravo">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
@@ -981,11 +989,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.panelUI.label2 "Ponovno zaženi za posodobitev &brandShorterName;a">
 
 <!ENTITY newTabControlled.message "Razširitev je spremenila stran novega zavihka. Če te spremembe ne želite, obnovite nastavitve.">
+
 <!ENTITY newTabControlled.header.message "Stran novega zavihka se je spremenila.">
 <!ENTITY newTabControlled.keepButton.label "Ohrani spremembe">
-<!ENTITY newTabControlled.keepButton.accesskey "O">
+<!ENTITY newTabControlled.keepButton.accesskey "h">
 <!ENTITY newTabControlled.restoreButton.label "Obnovi nastavitve">
 <!ENTITY newTabControlled.restoreButton.accesskey "b">
+
+<!ENTITY newTabControlled.disableButton.label "Onemogoči razširitev">
+<!ENTITY newTabControlled.disableButton.accesskey "n">
+
+<!ENTITY homepageControlled.message "Razširitev je zamenjala vašo domačo stran. Če te spremembe ne želite, obnovite nastavitve.">
+<!ENTITY homepageControlled.header.message "Domača stran se je spremenila.">
+<!ENTITY homepageControlled.keepButton.label "Ohrani spremembe">
+<!ENTITY homepageControlled.keepButton.accesskey "h">
+<!ENTITY homepageControlled.disableButton.label "Onemogoči razširitev">
+<!ENTITY homepageControlled.disableButton.accesskey "n">
 
 <!ENTITY pageActionButton.tooltip "Dejanja strani">
 <!ENTITY pageAction.addToUrlbar.label "Dodaj v naslovno vrstico">
@@ -996,6 +1015,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pageAction.sendTabToDevice.label "Pošlji zavihek na napravo">
 <!ENTITY sendToDevice.syncNotReady.label "Sinhroniziranje naprav ...">
+
+<!ENTITY pageAction.shareUrl.label "Deli">
 
 <!ENTITY libraryButton.tooltip "Prikaži zgodovino, shranjene zaznamke in drugo">
 

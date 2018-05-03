@@ -61,6 +61,8 @@ can reach it easily. -->
 <!ENTITY  closeTab.label                     "Tabblad sluiten">
 <!ENTITY  closeTab.accesskey                 "s">
 
+<!ENTITY  hiddenTabs.label                   "Verborgen tabbladen">
+
 <!ENTITY listAllTabs.label       "Alle tabbladtitels weergeven">
 
 <!ENTITY tabCmd.label "&#xad;Nieuw tabblad">
@@ -222,6 +224,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Gegevens in permanente opslag bewaren">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Browser wordt op afstand bestuurd">
 
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "Paneel Webauthenticatie openen">
+
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Delen van uw camera en/of microfoon met de website beheren">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Delen van uw microfoon met de website beheren">
 <!ENTITY urlbar.webRTCShareScreenNotificationAnchor.tooltip       "Delen van uw vensters of scherm met de website beheren">
@@ -240,9 +244,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "U hebt notificaties voor deze website geblokkeerd.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "U hebt permanente opslag voor deze website geblokkeerd.">
 <!ENTITY urlbar.popupBlocked.tooltip             "U hebt pop-ups voor deze website geblokkeerd.">
-
 <!ENTITY urlbar.canvasBlocked.tooltip            "U hebt canvas-gegevensextractie voor deze website geblokkeerd.">
 
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "U hebt het gebruik van de Adobe Flash-plug-in voor deze website geblokkeerd.">
 <!ENTITY urlbar.midiBlocked.tooltip              "U hebt MIDI-toegang voor deze website geblokkeerd.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Geschiedenis tonen">
@@ -268,7 +272,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addBookmarksMenu.label             "Bladwijzermenu toevoegen aan werkbalk">
 <!ENTITY removeBookmarksMenu.label          "Bladwijzermenu verwijderen van werkbalk">
 
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -299,6 +303,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY inspectContextMenu.label     "Element inspecteren">
 <!ENTITY inspectContextMenu.accesskey "E">
+
+<!ENTITY inspectA11YContextMenu.label     "Toegankelijkheidseigenschappen inspecteren">
 
 <!ENTITY fileMenu.label         "Bestand">
 <!ENTITY fileMenu.accesskey       "B">
@@ -385,19 +391,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Zet tabbladsynchronisatie aan om een lijst van tabbladen van uw andere apparaten weer te geven.">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "Nog geen gesynchroniseerde tabbladen…">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Wilt u hier uw tabbladen van andere apparaten zien?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Synchronisatievoorkeuren">
-<!ENTITY appMenuRemoteTabs.opensyncprefs.label "Synchronisatievoorkeuren openen">
+<!ENTITY appMenuRemoteTabs.opensyncprefs.label "Sync-voorkeuren openen">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Meld u aan om een lijst van tabbladen van uw andere apparaten weer te geven.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Uw account moet worden geverifieerd.">
 <!ENTITY appMenuRemoteTabs.signin.label "Aanmelden bij Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Apparaten beheren…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Synchrone-tabbladenzijbalk weergeven">
-
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Een ander apparaat verbinden">
 
 <!ENTITY appMenuRecentHighlights.label "Recente Highlights">
@@ -805,9 +809,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncTabsMenu3.label     "Gesynchroniseerde tabbladen">
 
 <!ENTITY syncedTabs.sidebar.label              "Gesynchroniseerde tabbladen">
-<!ENTITY syncedTabs.sidebar.noclients.title    "Nog geen gesynchroniseerde tabbladen…">
-<!ENTITY syncedTabs.sidebar.noclients.subtitle "Wilt u hier uw tabbladen van andere apparaten zien?">
 <!ENTITY syncedTabs.sidebar.noclients.label    "Meld u aan bij Firefox vanaf uw andere apparaten om hun tabbladen hier weer te geven.">
+<!ENTITY syncedTabs.sidebar.noclients.subtitle "Wilt u hier uw tabbladen van andere apparaten zien?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Meld u aan om een lijst van tabbladen van uw andere apparaten weer te geven.">
 <!ENTITY syncedTabs.sidebar.unverified.label   "Uw account moet worden geverifieerd.">
 <!ENTITY syncedTabs.sidebar.notabs.label       "Geen open tabbladen">
@@ -816,7 +819,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Zet tabbladsynchronisatie aan om een lijst van tabbladen van uw andere apparaten weer te geven.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Gesynchroniseerde tabbladen doorzoeken">
-
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Een ander apparaat verbinden">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
@@ -985,12 +987,23 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "N">
 <!ENTITY updateRestart.panelUI.label2 "Herstart om &brandShorterName; bij te werken">
 
-<!ENTITY newTabControlled.message "Een extensie heeft de pagina die u ziet bij het openen van een nieuw tabblad gewijzigd. Als u deze wijziging niet wilt, kunt u uw instellingen terugzetten.">
+<!ENTITY newTabControlled.message "Een extensie heeft de pagina die u ziet bij het openen van een nieuw tabblad gewijzigd. Als u dit niet wilt, kunt u uw instellingen terugzetten.">
+
 <!ENTITY newTabControlled.header.message "Uw nieuwe tabblad is gewijzigd.">
 <!ENTITY newTabControlled.keepButton.label "Wijzigingen behouden">
 <!ENTITY newTabControlled.keepButton.accesskey "b">
 <!ENTITY newTabControlled.restoreButton.label "Instellingen terugzetten">
 <!ENTITY newTabControlled.restoreButton.accesskey "r">
+
+<!ENTITY newTabControlled.disableButton.label "Extensie uitschakelen">
+<!ENTITY newTabControlled.disableButton.accesskey "u">
+
+<!ENTITY homepageControlled.message "Een extensie heeft gewijzigd wat u als uw startpagina ziet. Als u dit niet wilt, kunt u uw instellingen terugzetten.">
+<!ENTITY homepageControlled.header.message "Uw startpagina is gewijzigd.">
+<!ENTITY homepageControlled.keepButton.label "Wijzigingen behouden">
+<!ENTITY homepageControlled.keepButton.accesskey "b">
+<!ENTITY homepageControlled.disableButton.label "Extensie uitschakelen">
+<!ENTITY homepageControlled.disableButton.accesskey "u">
 
 <!ENTITY pageActionButton.tooltip "Pagina-acties">
 <!ENTITY pageAction.addToUrlbar.label "Toevoegen aan adresbalk">
@@ -1001,6 +1014,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pageAction.sendTabToDevice.label "Tabblad naar apparaat verzenden">
 <!ENTITY sendToDevice.syncNotReady.label "Apparaten synchroniseren…">
+
+<!ENTITY pageAction.shareUrl.label "Delen">
 
 <!ENTITY libraryButton.tooltip "Geschiedenis, opgeslagen bladwijzers en meer bekijken">
 
