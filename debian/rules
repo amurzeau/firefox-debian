@@ -121,10 +121,11 @@ endif
 
 CXXFLAGS = $(CFLAGS)
 
+ICU_VERSION := $(shell echo U_ICU_VERSION_MAJOR_NUM | cpp -P -include $(CURDIR)/intl/icu/source/common/unicode/uvernum.h)
 ifeq ($(DEB_HOST_ARCH_ENDIAN),little)
-ICU_DATA_FILE = icudt60l.dat
+ICU_DATA_FILE = icudt$(ICU_VERSION)l.dat
 else
-ICU_DATA_FILE = icudt60b.dat
+ICU_DATA_FILE = icudt$(ICU_VERSION)b.dat
 endif
 
 EXPORTS := CC CXX CFLAGS CXXFLAGS CPPFLAGS LDFLAGS MOZILLA_OFFICIAL ICU_DATA_FILE
