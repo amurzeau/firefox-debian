@@ -61,6 +61,8 @@ can reach it easily. -->
 <!ENTITY  closeTab.label                     "Lap bezárása">
 <!ENTITY  closeTab.accesskey                 "b">
 
+<!ENTITY  hiddenTabs.label                   "Rejtett lapok">
+
 <!ENTITY  listAllTabs.label      "Minden lap felsorolása">
 
 <!ENTITY tabCmd.label "Új lap">
@@ -222,6 +224,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Adatok tárolása az állandó tárban">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "A böngészőt távolról irányítják">
 
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "Webes hitelesítési panel megnyitása">
+
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "A kamera és/vagy mikrofon az oldallal megosztásának kezelése">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "A mikrofon az oldallal megosztásának kezelése">
 <!ENTITY urlbar.webRTCShareScreenNotificationAnchor.tooltip       "Az ablakok vagy képernyő az oldallal megosztásának kezelése">
@@ -240,9 +244,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Blokkolta az értesítéseket ezen az oldalon.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Blokkolta az állandó adattárolást ezen az oldalon.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Blokkolta a felugró ablakokat ezen az oldalon.">
-
 <!ENTITY urlbar.canvasBlocked.tooltip            "Blokkolta a vászonadatok kinyerését ezen az oldalon.">
 
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "Megtiltotta ennek a webhelynek, hogy az Adobe Flash bővítményt használja.">
 <!ENTITY urlbar.midiBlocked.tooltip              "Blokkolta a MIDI elérést ezen az oldalon.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Előzmények megjelenítése">
@@ -268,7 +272,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addBookmarksMenu.label             "Könyvjelzők menü hozzáadása az eszköztárhoz">
 <!ENTITY removeBookmarksMenu.label          "Könyvjelzők menü eltávolítása az eszköztárról">
 
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -299,6 +303,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY inspectContextMenu.label     "Elem vizsgálata">
 <!ENTITY inspectContextMenu.accesskey "z">
+
+<!ENTITY inspectA11YContextMenu.label     "Akadálymentesítési tulajdonságok vizsgálata">
 
 <!ENTITY fileMenu.label         "Fájl">
 <!ENTITY fileMenu.accesskey       "F">
@@ -385,10 +391,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Kapcsolja be a lapszinkronizálást a más készülékeiről származó lapok listájának megjelenítéséhez.">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "Nincs szinkronizált lap… még!">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Szeretné a más eszközein megnyitott lapjait itt látni?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Szinkronizálás beállításai">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Szinkronizálási beállítások megnyitása">
@@ -397,7 +402,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Bejelentkezés a Syncbe">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Eszközök kezelése…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Szinkronizált lapok oldalsáv">
-
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Másik eszköz csatlakoztatása">
 
 <!ENTITY appMenuRecentHighlights.label "Friss kiemelések">
@@ -440,6 +444,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Keresés vagy cím">
+<!ENTITY urlbar.placeholder3          "Adja meg a keresési kifejezéseket és címeket">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Kiterjesztés:">
@@ -492,7 +497,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (searchFor.label, searchWith.label):
      These two strings are used to build the header above the list of one-click
      search providers:  "Search for <used typed keywords> with:" -->
-<!ENTITY searchFor.label              "​">
+<!ENTITY searchFor.label              "">
 <!ENTITY searchWith.label             " keresése ezzel:">
 
 <!-- LOCALIZATION NOTE (search.label, searchAfter.label):
@@ -501,7 +506,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      intentionally left empty for en-US and can be used by other localizations to
      display a string after the search engine name.  This string will be displayed
      as:  "Search <selected engine name><searchAfter.label text>" -->
-<!ENTITY search.label                 "​">
+<!ENTITY search.label                 "">
 <!ENTITY searchAfter.label            " keresés">
 
 <!-- LOCALIZATION NOTE (searchWithHeader.label):
@@ -806,7 +811,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "Szinkronizált lapok">
 <!ENTITY syncedTabs.sidebar.noclients.label    "Jelentkezzen be a Firefoxba más készülékeiről azok lapjainak itteni megjelenítéséhez.">
-<!ENTITY syncedTabs.sidebar.noclients.title    "Nincs szinkronizált lap… még!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Szeretné a más eszközein megnyitott lapjait itt látni?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Jelentkezzen be a más készülékeiről származó lapok listájának megjelenítéséhez.">
 <!ENTITY syncedTabs.sidebar.unverified.label   "A fiókját ellenőrizni kell.">
@@ -816,7 +820,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Kapcsolja be a lapszinkronizálást a más készülékeiről származó lapok listájának megjelenítéséhez.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Szinkronizált lapok keresése">
-
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Másik eszköz csatlakoztatása">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
@@ -986,11 +989,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.panelUI.label2 "Újraindítás a &brandShorterName; frissítéséhez">
 
 <!ENTITY newTabControlled.message "Egy kiterjesztés megváltoztatta a lapot, amely az Új lap megnyitásakor fogadja. Visszaállíthatja a beállításokat, ha nem szeretné ezt a változást.">
+
 <!ENTITY newTabControlled.header.message "Az Új lap megváltozott.">
 <!ENTITY newTabControlled.keepButton.label "Módosítások megtartása">
 <!ENTITY newTabControlled.keepButton.accesskey "M">
 <!ENTITY newTabControlled.restoreButton.label "Beállítások visszaállítása">
 <!ENTITY newTabControlled.restoreButton.accesskey "v">
+
+<!ENTITY newTabControlled.disableButton.label "Kiterjesztés letiltása">
+<!ENTITY newTabControlled.disableButton.accesskey "l">
+
+<!ENTITY homepageControlled.message "Egy kiterjesztés megváltoztatta a kezdőlapot. Visszaállíthatja a beállításokat, ha nem szeretné ezt a változást.">
+<!ENTITY homepageControlled.header.message "A kezdőlap megváltozott.">
+<!ENTITY homepageControlled.keepButton.label "Módosítások megtartása">
+<!ENTITY homepageControlled.keepButton.accesskey "t">
+<!ENTITY homepageControlled.disableButton.label "Kiterjesztés letiltása">
+<!ENTITY homepageControlled.disableButton.accesskey "l">
 
 <!ENTITY pageActionButton.tooltip "Oldal műveletek">
 <!ENTITY pageAction.addToUrlbar.label "Hozzáadás a címsávhoz">
@@ -1001,6 +1015,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pageAction.sendTabToDevice.label "Lap küldése eszközre">
 <!ENTITY sendToDevice.syncNotReady.label "Eszközök szinkronizálása…">
+
+<!ENTITY pageAction.shareUrl.label "Megosztás">
 
 <!ENTITY libraryButton.tooltip "Előzmények, mentett könyvjelzők megtekintése">
 

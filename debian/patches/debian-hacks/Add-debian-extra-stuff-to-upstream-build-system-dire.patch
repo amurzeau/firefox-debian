@@ -7,10 +7,10 @@ Subject: Add debian/extra-stuff to upstream build system directory traversal
  1 file changed, 3 insertions(+)
 
 diff --git a/moz.build b/moz.build
-index 41f477e3aed8..73ce1f27d101 100644
+index 59639925b684..9caabc14bafd 100644
 --- a/moz.build
 +++ b/moz.build
-@@ -126,4 +126,7 @@ else:
+@@ -129,4 +129,7 @@ else:
  
  CONFIGURE_SUBST_FILES += ['.cargo/config']
  

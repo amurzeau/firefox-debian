@@ -61,6 +61,8 @@ can reach it easily. -->
 <!ENTITY  closeTab.label                     "关闭标签页">
 <!ENTITY  closeTab.accesskey                 "c">
 
+<!ENTITY  hiddenTabs.label                   "隐藏标签页">
+
 <!ENTITY  listAllTabs.label      "列出全部标签页">
 
 <!ENTITY tabCmd.label "新建标签页">
@@ -157,7 +159,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      exitDOMFullscreenMac.button): the "escape" button on PC keyboards
      is uppercase, while on Mac keyboards it is lowercase -->
 <!ENTITY exitDOMFullscreen.button "退出全屏模式(Esc)">
-<!ENTITY exitDOMFullscreenMac.button "退出全屏模式(Esc)">
+<!ENTITY exitDOMFullscreenMac.button "退出全屏模式 (Esc)">
 <!ENTITY leaveDOMFullScreen.label "退出全屏">
 <!ENTITY leaveDOMFullScreen.accesskey "u">
 
@@ -222,6 +224,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "在持久存储中存储数据">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "浏览器正被远程控制">
 
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "打开 Web 认证面板">
+
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "管理您是否与该网站共享摄像头和麦克风">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "管理您是否与该网站共享麦克风">
 <!ENTITY urlbar.webRTCShareScreenNotificationAnchor.tooltip       "管理您是否与该网站共享窗口或屏幕">
@@ -240,9 +244,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "您已阻止此网站发送通知。">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "您已阻止此网站使用持久存储。">
 <!ENTITY urlbar.popupBlocked.tooltip             "您已拦截此网站的弹出窗口。">
-
 <!ENTITY urlbar.canvasBlocked.tooltip            "您已禁止此网站获取 Canvas 数据。">
 
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "您已阻止此网站使用 Adobe Flash 插件。">
 <!ENTITY urlbar.midiBlocked.tooltip              "您已阻止此网站访问 MIDI。">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "显示历史">
@@ -268,7 +272,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addBookmarksMenu.label             "添加书签菜单到工具栏">
 <!ENTITY removeBookmarksMenu.label          "从工具栏移除书签菜单">
 
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -299,6 +303,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY inspectContextMenu.label     "查看元素">
 <!ENTITY inspectContextMenu.accesskey "Q">
+
+<!ENTITY inspectA11YContextMenu.label     "检查无障碍环境属性">
 
 <!ENTITY fileMenu.label         "文件">
 <!ENTITY fileMenu.accesskey       "F">
@@ -385,10 +391,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "打开标签页同步功能，就能看到其他设备上打开的标签页。">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "还没有同步过来的标签页！">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "想查看您在其他设备上的标签页吗？">
 <!ENTITY appMenuRemoteTabs.openprefs.label "同步服务首选项">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "打开同步首选项">
@@ -397,7 +402,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "登录同步服务">
 <!ENTITY appMenuRemoteTabs.managedevices.label "管理设备…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "显示受同步标签页侧栏">
-
 <!ENTITY appMenuRemoteTabs.connectdevice.label "连接其他设备">
 
 <!ENTITY appMenuRecentHighlights.label "近期聚焦">
@@ -440,6 +444,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "搜索或输入网址">
+<!ENTITY urlbar.placeholder3          "在这里输入搜索关键词或网址">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "扩展：">
@@ -806,7 +811,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "受同步的标签页">
 <!ENTITY syncedTabs.sidebar.noclients.label    "在您的其他设备上登录 Firefox，就能在这里看到这些设备上的标签页了。">
-<!ENTITY syncedTabs.sidebar.noclients.title    "还没有同步过来的标签页！">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "想查看您在其他设备上的标签页吗？">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "登录即可查看您的其他设备上的标签页列表。">
 <!ENTITY syncedTabs.sidebar.unverified.label   "您的账号需要验证。">
@@ -816,7 +820,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "开启标签页同步服务，即可查看您的其他设备上的标签页列表。">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "在受同步的标签页中搜索">
-
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "连接其他设备">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
@@ -986,11 +989,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.panelUI.label2 "重启 &brandShorterName; 以更新">
 
 <!ENTITY newTabControlled.message "一个扩展更改了您打开新标签页时看到的页面。如果您不想做此更改，可以还原此设置。">
+
 <!ENTITY newTabControlled.header.message "您的新标签页已变更。">
 <!ENTITY newTabControlled.keepButton.label "保留更改">
 <!ENTITY newTabControlled.keepButton.accesskey "K">
 <!ENTITY newTabControlled.restoreButton.label "还原设置">
 <!ENTITY newTabControlled.restoreButton.accesskey "R">
+
+<!ENTITY newTabControlled.disableButton.label "禁用扩展">
+<!ENTITY newTabControlled.disableButton.accesskey "D">
+
+<!ENTITY homepageControlled.message "有扩展修改了您的主页。如果您不想做此更改，可以还原此设置。">
+<!ENTITY homepageControlled.header.message "您的主页已变更。">
+<!ENTITY homepageControlled.keepButton.label "保留更改">
+<!ENTITY homepageControlled.keepButton.accesskey "K">
+<!ENTITY homepageControlled.disableButton.label "禁用扩展">
+<!ENTITY homepageControlled.disableButton.accesskey "D">
 
 <!ENTITY pageActionButton.tooltip "页面动作">
 <!ENTITY pageAction.addToUrlbar.label "添加到地址栏">
@@ -1001,6 +1015,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pageAction.sendTabToDevice.label "将标签页发送到设备">
 <!ENTITY sendToDevice.syncNotReady.label "正在同步设备…">
+
+<!ENTITY pageAction.shareUrl.label "分享">
 
 <!ENTITY libraryButton.tooltip "查看浏览历史、已保存的书签等">
 

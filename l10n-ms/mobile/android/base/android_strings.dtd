@@ -139,7 +139,7 @@
 <!ENTITY settings "Tetapan">
 <!ENTITY settings_title "Tetapan">
 <!ENTITY pref_category_general "Umum">
-<!ENTITY pref_category_general_summary3 "Halaman utama, bahasa, baris gilir tab">
+<!ENTITY pref_category_general_summary3 "Rerumah, bahasa, baris gilir tab">
 
 <!-- Localization note (pref_category_language) : This is the preferences
      section in which the user picks the locale in which to display Firefox
@@ -213,22 +213,22 @@
 <!ENTITY pref_remember_signons2 "Ingati log masuk">
 <!ENTITY pref_manage_logins "Urus log masuk">
 
-<!ENTITY pref_category_home "Halaman utama">
-<!ENTITY pref_category_home_summary "Penyesuaian halaman utama anda">
+<!ENTITY pref_category_home "Laman">
+<!ENTITY pref_category_home_summary "Penyesuaian laman anda">
 <!ENTITY pref_category_home_panels "Panel">
 <!ENTITY pref_category_home_add_ons "Add-ons">
 <!ENTITY pref_home_updates2 "Kemaskini kandungan">
 <!ENTITY pref_home_updates_enabled "Didayakan">
 <!ENTITY pref_home_updates_wifi "Hanya melalui Wi-Fi">
-<!ENTITY pref_category_home_homepage "Halaman utama">
+<!ENTITY pref_category_home_homepage "Laman">
 <!-- Localization note (home_homepage_every_new_tab): The user will see a switch to determine if the
      home page will be use in every new tab. -->
 <!ENTITY home_homepage_every_new_tab "Gunakan untuk tab baru">
-<!ENTITY home_homepage_title "Tetapkan Halaman Utama">
+<!ENTITY home_homepage_title "Tetapkan Laman">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
      button for this string, they will use the built-in default Firefox homepage (about:home). -->
-<!ENTITY home_homepage_radio_default "Halaman Utama &brandShortName;">
+<!ENTITY home_homepage_radio_default "Rerumah &brandShortName;">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
      button for this string, a text field will appear below the radio button and allow the
@@ -281,6 +281,13 @@
 
 <!ENTITY pref_whats_new_notification "Berita terbaru di &brandShortName;">
 <!ENTITY pref_whats_new_notification_summary "Ketahui perihal ciri baru selepas kemaskini">
+
+<!-- Localization note (pref_feature_tips_notification): Title of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification"-->
+<!ENTITY pref_feature_tips_notification "Panduan produk dan ciri">
+<!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification_summary"-->
+<!ENTITY pref_feature_tips_notification_summary "Ketahui selebihnya perihal menggunakan &brandShortName; dan produk lain &vendorShortName;">
 
 <!-- Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
      for experimental features. -->
@@ -422,7 +429,6 @@
      crashReporterDesc.label). -->
 <!ENTITY datareporting_fhr_title "Laporan Kesihatan &brandShortName;">
 <!ENTITY datareporting_fhr_summary2 "Kongsi data dengan &vendorShortName; mengenai keupayaan pelayar anda dan membantu anda memahami prestasi pelayar anda">
-<!ENTITY datareporting_abouthr_title "Papar Laporan Kesihatan saya">
 <!ENTITY datareporting_telemetry_title "Telemetri">
 <!ENTITY datareporting_telemetry_summary "Kongsi prestasi, penggunaan, perkakasan dan data penyesuaian mengenai pelayar anda dengan &vendorShortName; untuk membantu kami menjadikan &brandShortName; lebih baik">
 <!ENTITY datareporting_crashreporter_summary "&brandShortName; menghantar laporan ranap untuk membantu &vendorShortName; menjadikan pelayar anda lebih stabil dan selamat">
@@ -487,7 +493,7 @@
 <!ENTITY contextmenu_open_private_tab "Buka dalam Tab Peribadi">
 <!ENTITY contextmenu_remove "Buang">
 <!ENTITY contextmenu_add_page_shortcut "Tambah Pintasan Halaman">
-<!ENTITY contextmenu_set_as_homepage "Tetapkan sebagai Halaman Utama">
+<!ENTITY contextmenu_set_as_homepage "Tetapkan sebagai Laman">
 <!ENTITY contextmenu_share "Kongsi">
 <!ENTITY contextmenu_pasteandgo "Tampal &amp; Lancarkan">
 <!ENTITY contextmenu_paste "Tampal">
@@ -580,7 +586,7 @@
 
 <!-- Localization note (home_title): This string should be kept in sync
      with the page title defined in aboutHome.dtd -->
-<!ENTITY home_title "Halaman Utama &brandShortName;">
+<!ENTITY home_title "Rerumah &brandShortName;">
 <!ENTITY home_history_title "Sejarah">
 <!ENTITY home_synced_devices_smartfolder "Peranti Sync">
 <!ENTITY home_synced_devices_number "&formatD; peranti">
@@ -627,7 +633,7 @@
 <!ENTITY home_unpinned_site "Laman buang-pin">
 
 <!ENTITY remote_tabs_panel_moved_title "Di mana tab saya?">
-<!ENTITY remote_tabs_panel_moved_desc "Kami telah memindahkan tab anda daripada peranti lain ke panel pada halaman utama anda yang mudah dicapai setiap kali anda membuka tab baru.">
+<!ENTITY remote_tabs_panel_moved_desc "Kami telah memindahkan tab anda daripada peranti lain ke panel dalam laman yang mudah dicapai setiap kali anda buka tab baru.">
 <!ENTITY remote_tabs_panel_moved_link "Bawa saya ke panel baru.">
 
 <!ENTITY pin_site_dialog_hint "Masukkan kata kunci carian">

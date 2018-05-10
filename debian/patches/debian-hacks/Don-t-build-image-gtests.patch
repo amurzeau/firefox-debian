@@ -9,7 +9,7 @@ is shipped, and not currently run either, just skip building them.
  1 file changed, 2 deletions(-)
 
 diff --git a/image/moz.build b/image/moz.build
-index 8899883c49e1..4633e2e6c79e 100644
+index 609c38dd877e..04d08899c6d1 100644
 --- a/image/moz.build
 +++ b/image/moz.build
 @@ -5,8 +5,6 @@

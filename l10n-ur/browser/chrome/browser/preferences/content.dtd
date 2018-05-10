@@ -2,17 +2,15 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
+<!ENTITY  permissions.label           "اجازتیں">
 
 <!ENTITY  blockPopups.label           "پوپ اپ دریچے بلاک کیجیے">
 <!ENTITY  blockPopups.accesskey       "ب">
 
-<!ENTITY  notificationsDoNotDisturb.label      "مجھے خلل نہ ڈالیے">
-<!ENTITY  notificationsDoNotDisturb.accesskey  "n">
-<!ENTITY  notificationsDoNotDisturbDetails.value "جب تک آپ &brandShortName; دوباره شروع نہیں کرتے تب تک اطلاعت نہیں دکھائی دینگے">
-
 <!ENTITY  popupExceptions.label                                 "استثنیات…">
 <!ENTITY  popupExceptions.accesskey                             "ا">
 
+<!ENTITY  notificationPermissions.label                         "اعلانات">
 <!ENTITY  notificationSettingsButton.label                      "سیٹنگیں…">
 <!ENTITY  notificationSettingsButton.accesskey                  "t">
 <!ENTITY  notificationPermissionsLearnMore.label                "مزید سیکھیں">

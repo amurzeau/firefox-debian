@@ -1,0 +1,24 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!ENTITY     window.title                  "Paramètres - Donadas de site">
+
+<!ENTITY     window2.title                 "Gestion dels cookies e de las donadas dels sites">
+<!ENTITY     hostCol.label                 "Site">
+<!ENTITY     statusCol.label               "Estatut">
+<!ENTITY     cookiesCol.label              "Cookies">
+<!ENTITY     usageCol.label                "Estocatge">
+<!ENTITY     lastAccessedCol.label                "Darrièra utilizacion">
+<!ENTITY     searchTextboxPlaceHolder             "Recercar de sites web">
+<!ENTITY     searchTextboxPlaceHolder.accesskey   "S">
+<!ENTITY     removeSelected.label          "Suprimir çò seleccionat">
+<!ENTITY     removeSelected.accesskey      "s">
+<!ENTITY     save.label                    "Enregistrar las modificacions">
+<!ENTITY     save.accesskey                "a">
+<!ENTITY     cancel.label                  "Anullar">
+<!ENTITY     cancel.accesskey              "A">
+<!ENTITY     removingDialog.title          "Supression de las donadas del site">
+<!ENTITY     removingSelected.description  "Suprimir las donadas de site suprimirà tanben lo cookies e lo contengut fòra linha. Aquò poiriá vos desconnectar dels sites web. Segur que volètz far aquestes cambiaments ?">
+<!ENTITY     siteTree2.label               "Los cookies seguents seràn suprimits">
+<!ENTITY     removingDialog1.title         "Supression dels cookies e de las donadas dels sites">

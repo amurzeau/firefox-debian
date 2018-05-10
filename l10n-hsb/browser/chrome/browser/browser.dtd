@@ -61,6 +61,8 @@ can reach it easily. -->
 <!ENTITY  closeTab.label                     "Rajtark začinić">
 <!ENTITY  closeTab.accesskey                 "z">
 
+<!ENTITY  hiddenTabs.label                   "Schowane rajtarki">
+
 <!ENTITY  listAllTabs.label      "Wšě rajtarki nalistować">
 
 <!ENTITY tabCmd.label "Nowy rajtark">
@@ -222,6 +224,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Daty w trajnym składowaku składować">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Wobhladowak so zdaloka wodźi">
 
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "Wobłuk webawtentifikacije wočinić">
+
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Dźělenje wašeje kamery a /abo wašeho mikrofona ze sydłom rjadować">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Dźělenje wašeho mikrofona ze sydłom rjadować">
 <!ENTITY urlbar.webRTCShareScreenNotificationAnchor.tooltip       "Dźělenje wašich woknow abo wašeje wobrazowki ze sydłom rjadować">
@@ -240,9 +244,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Sće zdźělenki za tute websydło zablokował.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Sće trajny składowak za tute websydło zablokował.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Sće wuskakowace wokna za tute websydło zablokował.">
-
 <!ENTITY urlbar.canvasBlocked.tooltip            "Sće přistup ke canvasowym datam za tute websydło zablokował.">
 
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "Sće tute websydło při wužiwanju tykača Adobe Flash haćił.">
 <!ENTITY urlbar.midiBlocked.tooltip              "Sće přistup na MIDI za tute websydło zablokował.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Historiju pokazać">
@@ -268,7 +272,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addBookmarksMenu.label             "Symbolowej lajsće meni zapołožkow přidać">
 <!ENTITY removeBookmarksMenu.label          "Meni zapołožkow ze symboloweje lajsty wotstronić">
 
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -299,6 +303,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY inspectContextMenu.label     "Element přepytować">
 <!ENTITY inspectContextMenu.accesskey "E">
+
+<!ENTITY inspectA11YContextMenu.label     "Kajkosće bjezbarjernosće přepytować">
 
 <!ENTITY fileMenu.label         "Dataja">
 <!ENTITY fileMenu.accesskey       "D">
@@ -385,10 +391,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Synchronizowanje rajtarkow zapinać, zo by so lisćina rajtarkow z druhich gratow pokazała.">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "Hišće žane synchronizowane rajtarki…!">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Chceće tu swoje rajtarki z druhich gratow widźeć?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Nastajenja synchronizować">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Synchronizowanske nastajenja wočinić">
@@ -397,7 +402,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Pola Sync přizjewić">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Graty zrjadować…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Bóčnicu synchronizowanych rajtarkow pokazać">
-
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Druhi grat zwjazać">
 
 <!ENTITY appMenuRecentHighlights.label "Aktualne wjerški">
@@ -440,6 +444,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Pytać abo adresu zapodać">
+<!ENTITY urlbar.placeholder3          "Zapodajće tu pytanske wurazy a adresy">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Rozšěrjenje:">
@@ -806,7 +811,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "Synchronizowane rajtarki">
 <!ENTITY syncedTabs.sidebar.noclients.label    "Přizjewće so pola Firefox z wašich druhich gratow, zo byšće sej jich rajtarki tu wobhladał.">
-<!ENTITY syncedTabs.sidebar.noclients.title    "Hišće žane synchronizowane rajtarki…!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Chceće tu swoje rajtarki z druhich gratow widźeć?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Přizjewće so, zo byšće sej lisćinu rajtarkow ze swojich druhich gratow wobhladał.">
 <!ENTITY syncedTabs.sidebar.unverified.label   "Waše konto dyrbi so wobkrućić.">
@@ -816,7 +820,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Synchronizowanje rajtarkow zapinać, zo by so lisćina rajtarkow z wašich druhich gratow pokazała.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Synchronizowane rajtarki pytać">
-
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Druhi grat zwjazać">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
@@ -986,11 +989,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.panelUI.label2 "Startujće znowa, zo byšće &brandShorterName; aktualizował">
 
 <!ENTITY newTabControlled.message "Rozšěrjenje je stronu změnił, kotruž widźiće, hdyž nowy rajtark wočinjeće. Móžeće swoje nastajenja wobnowić, jeli tutu změnu nochceće.">
+
 <!ENTITY newTabControlled.header.message "Waš nowy rajtark je so změnił.">
 <!ENTITY newTabControlled.keepButton.label "Změny wobchować">
 <!ENTITY newTabControlled.keepButton.accesskey "Z">
 <!ENTITY newTabControlled.restoreButton.label "Nastajenja wobnowić">
 <!ENTITY newTabControlled.restoreButton.accesskey "N">
+
+<!ENTITY newTabControlled.disableButton.label "Rozšěrjenje znjemóžnić">
+<!ENTITY newTabControlled.disableButton.accesskey "R">
+
+<!ENTITY homepageControlled.message "Rozšěrjenje je změniło, štož jako swoju startowu stronu widźiće. Móžeće swoje nastajenja wobnowić, jeli tutu změnu nochceće.">
+<!ENTITY homepageControlled.header.message "Waša startowa strona je so změniła.">
+<!ENTITY homepageControlled.keepButton.label "Změny wobchować">
+<!ENTITY homepageControlled.keepButton.accesskey "Z">
+<!ENTITY homepageControlled.disableButton.label "Rozšěrjenje znjemóžnić">
+<!ENTITY homepageControlled.disableButton.accesskey "R">
 
 <!ENTITY pageActionButton.tooltip "Akcije strony">
 <!ENTITY pageAction.addToUrlbar.label "Adresowemu polu přidać">
@@ -1001,6 +1015,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pageAction.sendTabToDevice.label "Rajtark na grat pósłać">
 <!ENTITY sendToDevice.syncNotReady.label "Graty so synchronizuja…">
+
+<!ENTITY pageAction.shareUrl.label "Dźělić">
 
 <!ENTITY libraryButton.tooltip "Historiju, składowane zapołožki a wjace pokazać">
 

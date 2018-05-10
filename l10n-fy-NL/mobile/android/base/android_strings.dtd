@@ -81,7 +81,7 @@
 <!ENTITY bookmark_updated "Blêdwizer bywurke">
 <!ENTITY bookmark_options "Opsjes">
 <!ENTITY bookmark_save "Bewarje">
-<!ENTITY screenshot_added_to_bookmarks "Schermafbeelding aan bladwijzers toegevoegd">
+<!ENTITY screenshot_added_to_bookmarks "Skermôfbylding oan blêdwizers tafoege">
 <!-- Localization note (screenshot_folder_label_in_bookmarks): We save links to screenshots
      the user takes. The folder we store these links in is located in the bookmarks list
      and is labeled by this String. -->
@@ -282,6 +282,13 @@
 <!ENTITY pref_whats_new_notification "Wat is der nij yn &brandShortName;">
 <!ENTITY pref_whats_new_notification_summary "Mear ynfo oer nije funksjes nei in fernijing">
 
+<!-- Localization note (pref_feature_tips_notification): Title of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification"-->
+<!ENTITY pref_feature_tips_notification "Tips oer produkten en funksjes">
+<!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification_summary"-->
+<!ENTITY pref_feature_tips_notification_summary "Mear ynfo oer it gebrûk fan &brandShortName; en oare &vendorShortName;-produkten">
+
 <!-- Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
      for experimental features. -->
 <!ENTITY pref_category_experimental "Eksperimintele funksjes">
@@ -422,13 +429,12 @@
      crashReporterDesc.label). -->
 <!ENTITY datareporting_fhr_title "&brandShortName;-steatrapport">
 <!ENTITY datareporting_fhr_summary2 "Dielt gegevens mei &vendorShortName; oer jo browsersteat en helpt jo jo browserprestaasjes te begripen">
-<!ENTITY datareporting_abouthr_title "Myn steatrapport besjen">
 <!ENTITY datareporting_telemetry_title "Telemetry">
 <!ENTITY datareporting_telemetry_summary "Dielt gegevens oer prestaasjes, hardware, gebrûk en oanpassingen fan jo browser mei &vendorShortName; om &brandShortName; te helpen ferbetterjen">
 <!ENTITY datareporting_crashreporter_summary "&brandShortName; ferstjoert ûngelokrapporten om &vendorShortName; te helpen jo browser stabiler en feiliger te meitsjen">
 <!-- Localization note (datareporting_crashreporter_title_short) : This string matches
      (crashReporterSection.label) in en-US/chrome/browser/preferences/advanced.dtd.-->
-<!ENTITY datareporting_crashreporter_title_short "Crashreporter">
+<!ENTITY datareporting_crashreporter_title_short "Ungelokrapportearder">
 <!ENTITY datareporting_wifi_title2 "&vendorShortName;-lokaasjetsjinst">
 <!ENTITY datareporting_wifi_geolocation_summary4 "Help &vendorShortName; de wrâld yn kaart te bringen! Diel de globale wifi- en gsm-lokaasje fan jo apparaat om ús geolokaasjetsjinst te ferbetterjen">
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
@@ -778,7 +784,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      code has already been displayed by the client trying to connect (such as
      desktop Firefox via WebIDE), so you just need to aim this device at the QR
      code. -->
-<!ENTITY devtools_auth_scan_header "QR-code skanne dy’t op jo oare apparaat werjûn wurdt">
+<!ENTITY devtools_auth_scan_header "QR-code scanne dy’t op jo oare apparaat werjûn wurdt">
 
 <!-- Restrictable features -->
 <!-- Localization note: These are features the device owner (e.g. parent) can enable or disable for

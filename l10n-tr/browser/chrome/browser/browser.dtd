@@ -61,6 +61,8 @@ can reach it easily. -->
 <!ENTITY  closeTab.label                     "Sekmeyi kapat">
 <!ENTITY  closeTab.accesskey                 "e">
 
+<!ENTITY  hiddenTabs.label                   "Gizli sekmeler">
+
 <!ENTITY  listAllTabs.label      "Tüm sekmeleri listele">
 
 <!ENTITY tabCmd.label "Yeni sekme">
@@ -127,6 +129,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "Tüm sekmeleri göster">
 <!ENTITY showAllTabsCmd.accesskey "s">
 <!ENTITY toggleReaderMode.key "R">
+
+<!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "&syncBrand.shortName.label;’e giriş yap">
 <!ENTITY fxaSignedIn.tooltip "&syncBrand.shortName.label; tercihlerini aç">
@@ -220,6 +224,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Kalıcı depolamada veri depola">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Tarayıcı uzaktan kontrol ediliyor">
 
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "Web kimlik doğrulaması panelini aç">
+
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Siteyle kamera ve/veya mikrofonumu paylaşmayı yönet">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Siteyle mikrofonumu paylaşmayı yönet">
 <!ENTITY urlbar.webRTCShareScreenNotificationAnchor.tooltip       "Siteyle pencerelerimi veya ekranımı paylaşmayı yönet">
@@ -229,6 +235,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Sayfa çevirisini yönet">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "DRM yazılımı kullanımını yönet">
 
+<!ENTITY urlbar.midiNotificationAnchor.tooltip            "MIDI panelini aç">
+
 <!ENTITY urlbar.cameraBlocked.tooltip            "Bu sitenin kameranızı kullanmasını engellediniz.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Bu sitenin mikrofonunuzu kullanmasını engellediniz.">
 <!ENTITY urlbar.screenBlocked.tooltip            "Bu sitenin ekranınızı paylaşmasını engellediniz.">
@@ -236,8 +244,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Bu sitenin bildirim göndermesini engellediniz.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Bu sitenin kalıcı veri depolamasını engellediniz.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Bu sitedeki açılır pencereleri engellediniz.">
-
 <!ENTITY urlbar.canvasBlocked.tooltip            "Bu sitenin kanvastan veri ayıklamasını engellediniz.">
+
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "Bu web sitesinin Adobe Flash yan uygulamasını kullanmasını engellediniz.">
+<!ENTITY urlbar.midiBlocked.tooltip              "Bu sitenin MIDI erişimini engellediniz.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Geçmişi göster">
 
@@ -262,7 +272,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addBookmarksMenu.label             "Yer imleri menüsünü araç çubuğuna ekle">
 <!ENTITY removeBookmarksMenu.label          "Yer imleri menüsünü araç çubuğundan çıkar">
 
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -293,6 +303,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY inspectContextMenu.label     "Öğeyi incele">
 <!ENTITY inspectContextMenu.accesskey "c">
+
+<!ENTITY inspectA11YContextMenu.label     "Erişilebilirlik özelliklerini denetle">
 
 <!ENTITY fileMenu.label         "Dosya">
 <!ENTITY fileMenu.accesskey       "D">
@@ -379,10 +391,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Diğer cihazlardaki sekmeleri görmek için sekme eşitlemeyi açın.">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "Henüz eşitlenmiş bir sekme yok.">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Diğer cihazlarınızdaki sekmeleri burada görmek ister misiniz?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Eşitleme Tercihleri">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Sync tercihlerini aç">
@@ -391,7 +402,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Sync’e giriş yapın">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Cihazları yönet…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Kenar çubuğunda göster">
-
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Başka bir cihaz bağla">
 
 <!ENTITY appMenuRecentHighlights.label "Öne çıkanlar">
@@ -434,6 +444,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Arama yapın veya adres yazın">
+<!ENTITY urlbar.placeholder3          "Aranacak terimleri ve adresleri buraya yazın">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Eklenti:">
@@ -800,7 +811,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "Eşitlenmiş sekmeler">
 <!ENTITY syncedTabs.sidebar.noclients.label    "Diğer cihazlardaki sekmelerinizi burada görmek için o cihazlardan Firefox’a giriş yapın.">
-<!ENTITY syncedTabs.sidebar.noclients.title    "Henüz eşitlenmiş bir sekme yok.">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Diğer cihazlarınızdaki sekmeleri burada görmek ister misiniz?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Diğer cihazlarınızdaki sekmeleri görmek için giriş yapın.">
 <!ENTITY syncedTabs.sidebar.unverified.label   "Hesabınızın doğrulanması gerekiyor.">
@@ -810,7 +820,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Diğer cihazlardaki sekmeleri görmek için sekme eşitlemeyi açın.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Eşitlenmiş sekmelerde ara">
-
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Başka bir cihaz bağla">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
@@ -980,11 +989,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.panelUI.label2 "&brandShorterName; tarayıcısını güncellemek için yeniden başlat">
 
 <!ENTITY newTabControlled.message "Bir eklenti, yeni bir sekme açtığınızda gördüğünüz sayfayı değiştirdi. Bu değişikliği istemiyorsanız önceki ayarlarınızı geri yükleyebilirsiniz.">
+
 <!ENTITY newTabControlled.header.message "Yeni Sekme’niz değişti.">
 <!ENTITY newTabControlled.keepButton.label "Değişiklikleri koru">
 <!ENTITY newTabControlled.keepButton.accesskey "D">
 <!ENTITY newTabControlled.restoreButton.label "Ayarları geri yükle">
 <!ENTITY newTabControlled.restoreButton.accesskey "A">
+
+<!ENTITY newTabControlled.disableButton.label "Eklentiyi etkisizleştir">
+<!ENTITY newTabControlled.disableButton.accesskey "E">
+
+<!ENTITY homepageControlled.message "Bir eklenti, giriş sayfanızı değiştirdi. Bu değişikliği istemiyorsanız önceki ayarlarınızı geri yükleyebilirsiniz.">
+<!ENTITY homepageControlled.header.message "Giriş sayfanız değişti.">
+<!ENTITY homepageControlled.keepButton.label "Değişiklikleri koru">
+<!ENTITY homepageControlled.keepButton.accesskey "D">
+<!ENTITY homepageControlled.disableButton.label "Eklentiyi etkisizleştir">
+<!ENTITY homepageControlled.disableButton.accesskey "E">
 
 <!ENTITY pageActionButton.tooltip "Sayfa eylemleri">
 <!ENTITY pageAction.addToUrlbar.label "Adres çubuğuna ekle">
@@ -995,6 +1015,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pageAction.sendTabToDevice.label "Sekmeyi cihaza gönder">
 <!ENTITY sendToDevice.syncNotReady.label "Cihazlar eşitleniyor…">
+
+<!ENTITY pageAction.shareUrl.label "Paylaş">
 
 <!ENTITY libraryButton.tooltip "Geçmişinize, kayıtlı yer imlerinize ve daha fazlasına bakın">
 

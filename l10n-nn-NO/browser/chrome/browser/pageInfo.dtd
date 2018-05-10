@@ -44,7 +44,7 @@
 <!ENTITY  mediaSaveAs2.accesskey "e">
 <!ENTITY  mediaPreview          "Førehandsvising:">
 
-<!ENTITY  feedTab               "RSS">
+<!ENTITY  feedTab               "RSS-kjelder">
 <!ENTITY  feedTab.accesskey     "R">
 <!ENTITY  feedSubscribe         "Abonner">
 <!ENTITY  feedSubscribe.accesskey "A">
@@ -60,11 +60,8 @@
 <!ENTITY  permissionsFor        "Løyve for:">
 <!ENTITY  permPlugins           "Slå på programtillegg">
 
-<!ENTITY  permClearStorage           "Tøm lager">
-<!ENTITY  permClearStorage.accesskey "T">
-
-<!ENTITY  securityTab           "Tryggleik">
-<!ENTITY  securityTab.accesskey "T">
+<!ENTITY  securityTab           "Sikkerheit">
+<!ENTITY  securityTab.accesskey "S">
 <!ENTITY  securityView.certView "Vis sertifikat">
 <!ENTITY  securityView.accesskey "V">
 <!ENTITY  securityView.unknown   "Ukjend">
@@ -77,10 +74,13 @@
 <!ENTITY  securityView.identity.validity "Går ut:">
 
 <!ENTITY  securityView.privacy.header                   "Personvern og historikk">
-<!ENTITY  securityView.privacy.history                  "Har eg besøkt denne nettsida tidlegare i dag?">
-<!ENTITY  securityView.privacy.cookies                  "Lagrar denne nettstaden informasjon på datamaskina mi?">
+<!ENTITY  securityView.privacy.history                  "Har eg besøkt denne nettstaden tidlegare?">
+<!ENTITY  securityView.privacy.cookies                  "Lagrar denne nettstaden informasjon (infokapslar) på datamaskina mi?">
 <!ENTITY  securityView.privacy.viewCookies              "Vis infokapslar">
 <!ENTITY  securityView.privacy.viewCookies.accessKey    "V">
+<!ENTITY  securityView.privacy.siteData                 "Lagrar denne nettstaden informasjon på datamaskina mi?">
+<!ENTITY  securityView.privacy.clearSiteData            "Fjern infokapslar og nettsidedata">
+<!ENTITY  securityView.privacy.clearSiteData.accessKey  "k">
 <!ENTITY  securityView.privacy.passwords                "Har eg lagra passord for denne nettstaden?">
 <!ENTITY  securityView.privacy.viewPasswords            "Vis lagra passord">
 <!ENTITY  securityView.privacy.viewPasswords.accessKey  "s">

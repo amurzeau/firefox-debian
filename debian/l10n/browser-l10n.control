@@ -349,6 +349,11 @@
 %define L10N_RECOMMENDS myspell-nn
 %include @PRODUCT@-l10n.control.in
 
+%define L10N_LANG oc
+%define L10N_LANGUAGE Occitan
+%undef L10N_RECOMMENDS
+%include @PRODUCT@-l10n.control.in
+
 %define L10N_LANG or
 %define L10N_LANGUAGE Oriya
 %undef L10N_RECOMMENDS

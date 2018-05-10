@@ -61,6 +61,8 @@ can reach it easily. -->
 <!ENTITY  closeTab.label                     "關閉分頁">
 <!ENTITY  closeTab.accesskey                 "c">
 
+<!ENTITY  hiddenTabs.label                   "隱藏分頁">
+
 <!ENTITY  listAllTabs.label      "列出所有分頁">
 
 <!ENTITY tabCmd.label "開新分頁">
@@ -222,6 +224,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "將資料儲存於持續性儲存空間">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "瀏覽器正被遠端控制中">
 
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "開啟 Web 身份驗證面板">
+
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "管理您是否要與網站分享攝影機及/或麥克風">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "管理您是否要與網站分享麥克風">
 <!ENTITY urlbar.webRTCShareScreenNotificationAnchor.tooltip       "管理您是否要與網站分享視窗或畫面">
@@ -240,9 +244,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "您已封鎖此網站推送通知的權限。">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "您已封鎖此網站儲存資料至持續性儲存空間。">
 <!ENTITY urlbar.popupBlocked.tooltip             "您封鎖了此網站的彈出視窗。">
-
 <!ENTITY urlbar.canvasBlocked.tooltip            "您已封鎖此網站讀取 canvas 資料的權限。">
 
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "您已封鎖此網站執行 Adobe Flash 外掛程式。">
 <!ENTITY urlbar.midiBlocked.tooltip              "您已封鎖此網站的 MIDI 存取權限。">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "顯示瀏覽紀錄">
@@ -268,7 +272,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addBookmarksMenu.label             "在工具列中加入書籤選單">
 <!ENTITY removeBookmarksMenu.label          "從工具列移除書籤選單">
 
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -299,6 +303,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY inspectContextMenu.label     "檢測元素">
 <!ENTITY inspectContextMenu.accesskey "Q">
+
+<!ENTITY inspectA11YContextMenu.label     "檢測輔助功能環境屬性">
 
 <!ENTITY fileMenu.label         "檔案">
 <!ENTITY fileMenu.accesskey       "F">
@@ -385,10 +391,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "開啟分頁同步功能以檢視您其他裝置中的分頁清單。">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "還沒有同步過來的分頁！">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "想在這裡看到您其他裝置上開啟的分頁嗎？">
 <!ENTITY appMenuRemoteTabs.openprefs.label "同步偏好設定">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "開啟 Sync 偏好設定">
@@ -397,7 +402,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "登入至 Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "管理裝置…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "檢視「已同步的分頁」側邊欄">
-
 <!ENTITY appMenuRemoteTabs.connectdevice.label "連結其他裝置">
 
 <!ENTITY appMenuRecentHighlights.label "近期焦點">
@@ -440,6 +444,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "搜尋或輸入網址">
+<!ENTITY urlbar.placeholder3          "在此輸入搜尋詞彙或網址">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "擴充套件:">
@@ -806,7 +811,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "已同步的分頁">
 <!ENTITY syncedTabs.sidebar.noclients.label    "將您其他裝置也登入至 Firefox，在此檢視那些裝置中開啟的分頁。">
-<!ENTITY syncedTabs.sidebar.noclients.title    "還沒有同步過來的分頁！">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "想在這裡看到您其他裝置上開啟的分頁嗎？">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "登入以檢視您其他裝置中的分頁清單。">
 <!ENTITY syncedTabs.sidebar.unverified.label   "需要驗證您的帳號。">
@@ -816,7 +820,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "開啟分頁同步功能以檢視您其他裝置中的分頁清單。">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "搜尋同步的分頁">
-
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "連結其他裝置">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
@@ -986,11 +989,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.panelUI.label2 "重新啟動以更新 &brandShorterName;">
 
 <!ENTITY newTabControlled.message "有套擴充套件修改了開啟新分頁時會看到的頁面。若您不想要這個修改，可還原此設定。">
+
 <!ENTITY newTabControlled.header.message "您的「新分頁」已經變更。">
 <!ENTITY newTabControlled.keepButton.label "保留不變">
 <!ENTITY newTabControlled.keepButton.accesskey "K">
 <!ENTITY newTabControlled.restoreButton.label "還原設定">
 <!ENTITY newTabControlled.restoreButton.accesskey "R">
+
+<!ENTITY newTabControlled.disableButton.label "停用擴充套件">
+<!ENTITY newTabControlled.disableButton.accesskey "D">
+
+<!ENTITY homepageControlled.message "有套擴充套件修改了您的首頁。若您不想要這個修改，可還原此設定。">
+<!ENTITY homepageControlled.header.message "您的「新分頁」已經變更。">
+<!ENTITY homepageControlled.keepButton.label "保留變更">
+<!ENTITY homepageControlled.keepButton.accesskey "K">
+<!ENTITY homepageControlled.disableButton.label "停用擴充套件">
+<!ENTITY homepageControlled.disableButton.accesskey "D">
 
 <!ENTITY pageActionButton.tooltip "頁面操作">
 <!ENTITY pageAction.addToUrlbar.label "新增至網址列">
@@ -1001,6 +1015,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pageAction.sendTabToDevice.label "將分頁傳送至裝置">
 <!ENTITY sendToDevice.syncNotReady.label "正在同步裝置…">
+
+<!ENTITY pageAction.shareUrl.label "分享">
 
 <!ENTITY libraryButton.tooltip "檢視瀏覽紀錄、已存書籤等資料">
 

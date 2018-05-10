@@ -19,7 +19,7 @@
 <!ENTITY  generalURL            "მისამართი:">
 <!ENTITY  generalType           "სახეობა:">
 <!ENTITY  generalMode           "ასახვის რეჟიმი:">
-<!ENTITY  generalSize           "ზომა:">
+<!ENTITY  generalSize           "მოცულობა:">
 <!ENTITY  generalReferrer       "დამოწმების URL:">
 <!ENTITY  generalSource         "კეშის წყარო:">
 <!ENTITY  generalModified       "ბოლო ცვლილება:">
@@ -34,9 +34,9 @@
 <!ENTITY  mediaAltHeader        "ალტერნატული ტექსტი">
 <!ENTITY  mediaAddress          "მისამართი">
 <!ENTITY  mediaType             "სახეობა">
-<!ENTITY  mediaSize             "ზომა">
+<!ENTITY  mediaSize             "მოცულობა">
 <!ENTITY  mediaCount            "რაოდენობა">
-<!ENTITY  mediaDimension        "სიგრძე-სიგანე:">
+<!ENTITY  mediaDimension        "ზომები:">
 <!ENTITY  mediaLongdesc         "ვრცელი აღწერა:">
 <!ENTITY  mediaBlockImage.accesskey "ბ">
 <!ENTITY  mediaSaveAs           "შენახვა როგორც…">
@@ -44,8 +44,8 @@
 <!ENTITY  mediaSaveAs2.accesskey "ე">
 <!ENTITY  mediaPreview          "გამოსახულების შეთვალიერება:">
 
-<!ENTITY  feedTab               "ლენტები">
-<!ENTITY  feedTab.accesskey     "ლ">
+<!ENTITY  feedTab               "არხები">
+<!ENTITY  feedTab.accesskey     "ა">
 <!ENTITY  feedSubscribe         "გამოწერა">
 <!ENTITY  feedSubscribe.accesskey "გ">
 
@@ -78,6 +78,9 @@
 <!ENTITY  securityView.privacy.cookies                  "ინახავს ეს საიტი ჩემს კომპიუტერში მონაცემებს (ფუნთუშებს)?">
 <!ENTITY  securityView.privacy.viewCookies              "ფუნთუშების ნახვა">
 <!ENTITY  securityView.privacy.viewCookies.accessKey    "ფ">
+<!ENTITY  securityView.privacy.siteData                 "ინახავს ეს საიტი ჩემს კომპიუტერში მონაცემებს?">
+<!ENTITY  securityView.privacy.clearSiteData            "ფუნთუშებისა და საიტის მონაცემების გასუფთავება">
+<!ENTITY  securityView.privacy.clearSiteData.accessKey  "გ">
 <!ENTITY  securityView.privacy.passwords                "ამ საიტისთვის პაროლები შენახული მაქვს?">
 <!ENTITY  securityView.privacy.viewPasswords            "შენახული პაროლების ნახვა">
 <!ENTITY  securityView.privacy.viewPasswords.accessKey  "პ">

@@ -38,7 +38,7 @@
 <!ENTITY fileNotFound.longDesc "
 <ul>
   <li>Kontrolearje de bestânsnamme op grutte/lytse letters of oare typflaters.</li>
-  <li>Kontrolearje of it bestân ferpleatst, fuorthelle is of in nije namme krigen hat.</li>
+  <li>Kontrolearje oft it bestân ferpleatst, omneamd of fuortsmiten is.</li>
 </ul>
 ">
 
@@ -87,7 +87,7 @@
 </ul>
 ">
 
-<!ENTITY contentEncodingError.title "Ynhâldkodearingsflater">
+<!ENTITY contentEncodingError.title "Ynhâldkodearringsflater">
 <!ENTITY contentEncodingError.longDesc "
 <ul>
   <li>Nim kontakt op mei de website-eigeners om se oer dit probleem te ynformearjen.</li>
@@ -118,7 +118,7 @@
 <!ENTITY proxyConnectFailure.longDesc "
 <ul>
   <li>Kontrolearje oft jo proxy-ynstellingen goed binne.</li>
-  <li>Nim kontakt op mei jo netwurkbeheerder om te kontrolearjen oft de proxyserver
+  <li>Nim kontakt op mei jo netwurkbehearder om te kontrolearjen oft de proxyserver
     wurket.</li>
 </ul>
 ">
@@ -138,7 +138,7 @@
 <!ENTITY redirectLoop.title "De side ferwiist net op in krekte wize troch">
 <!ENTITY redirectLoop.longDesc "
 <ul>
-  <li>Dit probleem kin soms feroarsake wurde troch it útskeakeljen of wegerjen
+  <li>Dit probleem kin somtiden feroarsake wurde troch it útskeakeljen of wegerjen
    fan cookies.</li>
 </ul>
 ">
@@ -185,7 +185,7 @@
 <!ENTITY corruptedContentErrorv2.title "Skansearre-ynhâldsflater">
 <!ENTITY corruptedContentErrorv2.longDesc "<p>De side dy't jo besjen wolle kin net werjûn wurde, omdat der in flater yn de gegevensoerdracht detektearre is.</p><ul><li>Nim kontakt op mei de website-eigeners om se oer dit probleem te ynformearjen.</li></ul>">
 
-<!ENTITY securityOverride.linkText "Of jo kinne in útsûndering tafoegje...">
+<!ENTITY securityOverride.linkText "Of jo kinne in útsûndering tafoegje…">
 <!ENTITY securityOverride.getMeOutOfHereButton "Helje My Hjir út!">
 <!ENTITY securityOverride.exceptionButtonLabel "Utsûndering tafoegje…">
 

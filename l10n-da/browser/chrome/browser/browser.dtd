@@ -61,6 +61,8 @@ can reach it easily. -->
 <!ENTITY  closeTab.label                     "Luk faneblad">
 <!ENTITY  closeTab.accesskey                 "u">
 
+<!ENTITY  hiddenTabs.label                   "Skjulte faneblade">
+
 <!ENTITY  listAllTabs.label      "List alle faneblade">
 
 <!ENTITY tabCmd.label "Nyt faneblad">
@@ -111,6 +113,8 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 <!ENTITY pageInfoCmd.label "Sideoplysninger">
 <!ENTITY pageInfoCmd.accesskey "o">
 <!ENTITY pageInfoCmd.commandkey "i">
+<!ENTITY ldbCmd.label "Layout-debugger">
+<!ENTITY ldbCmd.accesskey "d">
 <!ENTITY mirrorTabCmd.label "Afspejl faneblad">
 <!ENTITY mirrorTabCmd.accesskey "s">
 <!-- LOCALIZATION NOTE (enterFullScreenCmd.label, exitFullScreenCmd.label):
@@ -125,6 +129,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "Vis alle faneblade">
 <!ENTITY showAllTabsCmd.accesskey "a">
 <!ENTITY toggleReaderMode.key "L">
+
+<!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "Log ind på &syncBrand.shortName.label;">
 <!ENTITY fxaSignedIn.tooltip "Åbn indstillinger for &syncBrand.shortName.label;">
@@ -218,6 +224,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Gem data i vedvarende lager">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Browseren fjernstyres">
 
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "Åbn panelet web-godkendelse">
+
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip     "Administrer deling af dit kamera og/eller mikrofon med webstedet">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip  "Administrer deling af din mikrofon med webstedet">
 <!ENTITY urlbar.webRTCShareScreenNotificationAnchor.tooltip      "Administrer deling af dine vinduer eller skærm med webstedet">
@@ -226,6 +234,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translateNotificationAnchor.tooltip       "Oversæt siden">
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Administrer side-oversættelser">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Administrer brug af DRM-software">
+
+<!ENTITY urlbar.midiNotificationAnchor.tooltip            "Åbn MIDI-panel">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Du har blokeret dit kamera for dette websted.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Du har blokeret din mikrofon for dette websted.">
@@ -238,6 +248,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.popupBlocked.tooltip             "Du har blokeret pop op-vinduer for dette websted.">
 
 <!ENTITY urlbar.canvasBlocked.tooltip            "Du har blokeret kanvas-ekstraktion for dette websted.">
+
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "Du har blokeret anvendelse af Adobe Flash-plugin'et for dette websted.">
+<!ENTITY urlbar.midiBlocked.tooltip              "Du har blokeret MIDI-adgang for dette websted.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Vis historik">
 
@@ -260,7 +273,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY searchBookmarks.label              "Søg i bogmærker">
 <!ENTITY bookmarkingTools.label             "Bogmærke-værktøjer">
 <!ENTITY addBookmarksMenu.label             "Føj bogmærke-menuen til værktøjslinjen">
-<!ENTITY removeBookmarksMenu.label          "Fjern bogmærke-menuen fra værktølslinjen">
+<!ENTITY removeBookmarksMenu.label          "Fjern bogmærke-menuen fra værktøjslinjen">
 
 <!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
@@ -291,8 +304,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY webDeveloperMenu.label       "Webudvikler">
 <!ENTITY webDeveloperMenu.accesskey   "W">
 
-<!ENTITY inspectContextMenu.label     "Inspicér element">
+<!ENTITY inspectContextMenu.label     "Inspicer element">
 <!ENTITY inspectContextMenu.accesskey "n">
+
+<!ENTITY inspectA11YContextMenu.label     "Inspicer tilgængeligheds-egenskaber">
 
 <!ENTITY fileMenu.label         "Filer">
 <!ENTITY fileMenu.accesskey       "F">
@@ -392,8 +407,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.title "Ingen synkroniserede faneblade…">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Vil du se dine faneblade fra andre enheder her?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Indstillinger for Sync">
+<!ENTITY appMenuRemoteTabs.opensyncprefs.label "Åbn indstillinger for Sync">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Log ind for at få vist faneblade, som er åbne på dine andre enheder.">
-<!ENTITY appMenuRemoteTabs.unverified.label "Din konto behøver at blive bekræftet.">
+<!ENTITY appMenuRemoteTabs.unverified.label "Din konto skal bekræftes.">
 <!ENTITY appMenuRemoteTabs.signin.label "Log ind på Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Håndter enheder…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Vis synkroniserede faneblade i sidepanel">
@@ -440,6 +456,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Søg eller indtast en adresse">
+<!ENTITY urlbar.placeholder3          "Indtast søge-termer og adresser her">
 <!ENTITY urlbar.accesskey             "d">
 <!ENTITY urlbar.switchToTab.label     "Skift til faneblad:">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
@@ -804,7 +821,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.moreInfoLinkText2 "Mere information">
 
 <!ENTITY identity.permissions "Tilladelser">
-<!ENTITY identity.permissionsEmpty "Du har ikke tildelt dette websted nogle særlige tilladelser.">
+<!ENTITY identity.permissionsEmpty "Du har ikke tildelt dette websted nogen særlige tilladelser.">
 <!ENTITY identity.permissionsReloadHint "Du skal muligvis genindlæse siden, før at ændringerne slår igennem.">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
@@ -999,11 +1016,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.panelUI.label2 "Genstart for at opdatere &brandShorterName;">
 
 <!ENTITY newTabControlled.message "En udvidelse har ændret den side, du ser, når du åbner et nyt faneblad. Du kan nulstille dine indstillinger, hvis du ikke ønsker denne ændring.">
+
 <!ENTITY newTabControlled.header.message "Nyt faneblad er ændret">
-<!ENTITY newTabControlled.keepButton.label "Behold ændringer">
+<!ENTITY newTabControlled.keepButton.label "Behold ændringen">
 <!ENTITY newTabControlled.keepButton.accesskey "B">
 <!ENTITY newTabControlled.restoreButton.label "Nulstil indstillinger">
 <!ENTITY newTabControlled.restoreButton.accesskey "N">
+
+<!ENTITY newTabControlled.disableButton.label "Deaktiver udvidelse">
+<!ENTITY newTabControlled.disableButton.accesskey "D">
+
+<!ENTITY homepageControlled.message "En udvidelse har ændret din startside. Du kan nulstille dine indstillinger, hvis du ikke ønsker denne ændring.">
+<!ENTITY homepageControlled.header.message "Din startside er ændret">
+<!ENTITY homepageControlled.keepButton.label "Behold ændringen">
+<!ENTITY homepageControlled.keepButton.accesskey "B">
+<!ENTITY homepageControlled.disableButton.label "Deaktiver udvidelse">
+<!ENTITY homepageControlled.disableButton.accesskey "D">
 
 <!ENTITY pageActionButton.tooltip "Sidehandlinger">
 <!ENTITY pageAction.addToUrlbar.label "Føj til adresselinjen">
@@ -1023,3 +1051,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      used as a textual label for the indicator used by assistive technology
      users. -->
 <!ENTITY accessibilityIndicator.tooltip "Tilgængelighedsfunktioner er aktiveret">
+
+<!-- LOCALIZATION NOTE: (addonPostInstallMessage.label):
+     The first <image> tag is replaced with the icon for the add-ons menu.
+     The second <image> tag is replaced with the icon for the toolbar menu. -->
+<!ENTITY addonPostInstallMessage.label "Håndter dine tilføejlser ved at klikke på <image class='addon-addon-icon'/> i <image class='addon-toolbar-icon'/>-menuen.">

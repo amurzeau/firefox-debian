@@ -36,7 +36,7 @@
 <!-- Device Settings -->
 <!ENTITY fxaSyncDeviceName.label       "Apparaatnaam">
 <!ENTITY changeSyncDeviceName2.label "Apparaatnaam wijzigen…">
-<!ENTITY changeSyncDeviceName2.accesskey "n">
+<!ENTITY changeSyncDeviceName2.accesskey "w">
 <!ENTITY cancelChangeSyncDeviceName.label "Annuleren">
 <!ENTITY cancelChangeSyncDeviceName.accesskey "A">
 <!ENTITY saveChangeSyncDeviceName.label "Opslaan">
@@ -70,11 +70,6 @@ both, to better adapt this sentence to their language.
 <!ENTITY verifiedManage.accesskey     "b">
 <!ENTITY disconnect3.label            "Verbinding verbreken…">
 <!ENTITY disconnect3.accesskey        "v">
-<!ENTITY verify.label                "E-mailadres verifiëren">
-<!ENTITY verify.accesskey            "v">
-<!ENTITY forget.label                "Dit e-mailadres vergeten">
-<!ENTITY forget.accesskey            "r">
-
 <!ENTITY resendVerification.label     "Verificatie opnieuw verzenden">
 <!ENTITY resendVerification.accesskey "d">
 <!ENTITY cancelSetup.label            "Configuratie annuleren">

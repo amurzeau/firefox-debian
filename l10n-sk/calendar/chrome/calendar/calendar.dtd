@@ -172,12 +172,21 @@
 <!ENTITY calendar.context.copyevent.accesskey         "K">
 <!ENTITY calendar.context.pasteevent.label            "Prilepiť">
 <!ENTITY calendar.context.pasteevent.accesskey        "P">
-<!ENTITY calendar.context.button.label                "Panel Dnes" >
-<!ENTITY calendar.context.button.accesskey            "D" >
-<!ENTITY calendar.context.attendance.menu.label       "Účasť" >
-<!ENTITY calendar.context.attendance.menu.accesskey   "a" >
-<!ENTITY calendar.context.attendance.occurrence.label "Tento termín" >
+<!ENTITY calendar.context.button.label                "Panel Dnes">
+<!ENTITY calendar.context.button.accesskey            "D">
+
+<!ENTITY calendar.context.attendance.menu.label                 "Účasť">
+<!ENTITY calendar.context.attendance.menu.accesskey             "a">
+<!ENTITY calendar.context.attendance.occurrence.label           "Tento termín">
 <!ENTITY calendar.context.attendance.all.label        "Všetky ďalšie termíny" >
+
+
+<!ENTITY calendar.context.attendance.occ.accepted.label         "Prijaté">
+<!ENTITY calendar.context.attendance.occ.tentative.accesskey    "i">
+<!ENTITY calendar.context.attendance.occ.declined.label         "Zamietnuté">
+<!ENTITY calendar.context.attendance.occ.delegated.accesskey    "m">
+
+<!ENTITY calendar.context.attendance.all.completed.label        "Dokončené">
 
 <!-- Task Context Menu -->
 <!ENTITY calendar.context.progress.label              "Stav">
@@ -325,7 +334,7 @@
 <!ENTITY calendarproperties.refreshInterval.label          "Obnoviť kalendár:">
 <!ENTITY calendarproperties.refreshInterval.manual.label   "Manuálne">
 <!ENTITY calendarproperties.name.label                     "Názov:">
-<!ENTITY calendarproperties.readonly.label                 "Len na čítanie">
+<!ENTITY calendarproperties.readonly.label                 "Iba na čítanie">
 <!ENTITY calendarproperties.firealarms.label               "Zobraziť upozornenia">
 <!ENTITY calendarproperties.cache3.label                   "Podpora pre režim offline">
 <!ENTITY calendarproperties.enabled.label                  "Zapnúť tento kalendár">
