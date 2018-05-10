@@ -2,6 +2,10 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
+<!ENTITY  preferencesDefaultTitleMac.title "Postavke">
+<!ENTITY  preferencesDefaultTitleWin.title "Opcije">
+<!ENTITY  preferencesCloseButton.label "Zatvori">
+
 <!--LOCALIZATION NOTE (.label): Preferences categories that appear on the left of the preferences dialog -->
 <!ENTITY prefWindow.title "Postavke">
 <!ENTITY categoryHeader "Kategorija">
@@ -10,6 +14,7 @@
 <!ENTITY content.label "Sadržaj">
 <!ENTITY fonts.label "Fontovi">
 <!ENTITY colors.label "Boje">
+<!ENTITY media.label "Mediji">
 <!ENTITY spellingPane.label "Pravopis">
 
 <!ENTITY navigator.label "Browser">

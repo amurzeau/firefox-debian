@@ -37,11 +37,15 @@ available. -->
 <!ENTITY dataCollectionDesc.label        "Ne străduim să îți oferim posibilitatea de a face alegeri și colectăm doar ceea ce avem nevoie ca să furnizăm și să îmbunătățim &brandShortName; pentru toată lumea. Întotdeauna solicităm permisiunea înainte de a primi informații personale.">
 <!ENTITY dataCollectionPrivacyNotice.label    "Politica de confidențialitate">
 
-<!ENTITY collectBrowserErrors.label          "Permite-i lui &brandShortName; să trimită rapoarte de eroare ale browserului (inclusiv mesajele erorilor) către Mozilla">
-<!ENTITY collectBrowserErrorsLearnMore.label "Află mai multe">
-
 <!ENTITY alwaysSubmitCrashReports1.label  "Permite-i lui &brandShortName; să trimită rapoarte de defecțiuni către Mozilla">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "c">
+
+<!ENTITY collectBrowserErrors.label          "Permite-i lui &brandShortName; să trimită rapoarte de eroare ale browserului (inclusiv mesajele erorilor) către Mozilla">
+<!ENTITY collectBrowserErrors.accesskey      "b">
+<!ENTITY collectBrowserErrorsLearnMore.label "Află mai multe">
+
+<!ENTITY sendBackloggedCrashReports.label  "Permite-i lui &brandShortName; să trimită în numele tău rapoarte de defecțiuni înregistrate în jurnal">
+<!ENTITY sendBackloggedCrashReports.accesskey "c">
 <!ENTITY crashReporterLearnMore.label    "Află mai multe">
 
 <!ENTITY networkTab.label                "Rețea">
@@ -49,8 +53,6 @@ available. -->
 <!ENTITY networkProxy.label              "Proxy pentru rețea">
 
 <!ENTITY connectionDesc.label            "Configurează modul în care &brandShortName; se conectează la internet">
-
-<!ENTITY connectionSettingsLearnMore.label "Află mai multe">
 <!ENTITY connectionSettings.label        "Setări…">
 <!ENTITY connectionSettings.accesskey    "e">
 
@@ -62,6 +64,11 @@ available. -->
 <!ENTITY clearSiteData.accesskey         "l">
 <!ENTITY siteDataSettings.label          "Setări…">
 <!ENTITY siteDataSettings.accesskey      "e">
+<!ENTITY siteData1.label                 "Cookie-uri și date ale site-urilor">
+<!ENTITY clearSiteData1.label            "Șterge datele…">
+<!ENTITY clearSiteData1.accesskey        "l">
+<!ENTITY siteDataSettings1.label         "Gestionează datele…">
+<!ENTITY siteDataSettings1.accesskey     "M">
 <!ENTITY siteDataLearnMoreLink.label     "Află mai multe">
 
 <!-- LOCALIZATION NOTE:
@@ -95,18 +102,18 @@ available. -->
                                          "Menține &brandShortName; actualizat pentru cea mai bună performanță, stabilitate și securitate.">
 <!ENTITY updateApplication.version.pre   "Versiunea ">
 <!ENTITY updateApplication.version.post  "">
-<!ENTITY updateApplication.description   "Permite ca &brandShortName; să">
+<!ENTITY updateApplication.description   "Permite-i lui &brandShortName;">
 <!ENTITY updateAuto3.label               "Instaleze automat actualizări (recomandat)">
 <!ENTITY updateAuto3.accesskey           "A">
-<!ENTITY updateCheckChoose2.label        "Caute actualizări, dar să te lase să decizi dacă le instalezi">
+<!ENTITY updateCheckChoose2.label        "Să caute actualizări, dar să te lase să decizi dacă le instalezi">
 <!ENTITY updateCheckChoose2.accesskey    "C">
-<!ENTITY updateManual2.label             "Nu caute niciodată actualizări (nerecomandat)">
+<!ENTITY updateManual2.label             "Să nu caute niciodată actualizări (nerecomandat)">
 <!ENTITY updateManual2.accesskey         "n">
 
 <!ENTITY updateHistory2.label            "Afișează istoricul actualizărilor">
 <!ENTITY updateHistory2.accesskey        "p">
 
-<!ENTITY useService.label                "Folosește serviciul care rulează în fundal pentru a instala actualizări">
+<!ENTITY useService.label                "Folosește un serviciu în fundal pentru a instala actualizări">
 <!ENTITY useService.accesskey            "d">
 
 <!ENTITY enableSearchUpdate2.label       "Actualizează automat motoarele de căutare">

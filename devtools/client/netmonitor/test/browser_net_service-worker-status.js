@@ -12,8 +12,17 @@ const URL = EXAMPLE_URL.replace("http:", "https:");
 
 const TEST_URL = URL + "service-workers/status-codes.html";
 
-add_task(function* () {
-  let { tab, monitor } = yield initNetMonitor(TEST_URL, true);
+add_task(async function () {
+  await new Promise(done => {
+    let options = { "set": [
+      // Accept workers from mochitest's http.
+      ["dom.serviceWorkers.enabled", true],
+      ["dom.serviceWorkers.testing.enabled", true],
+    ]};
+    SpecialPowers.pushPrefEnv(options, done);
+  });
+
+  let { tab, monitor } = await initNetMonitor(TEST_URL, true);
   info("Starting test... ");
 
   let { document, store, windowRequire, connector } = monitor.panelWin;
@@ -41,21 +50,21 @@ add_task(function* () {
   ];
 
   info("Registering the service worker...");
-  yield ContentTask.spawn(tab.linkedBrowser, {}, function* () {
-    yield content.wrappedJSObject.registerServiceWorker();
+  await ContentTask.spawn(tab.linkedBrowser, {}, async function () {
+    await content.wrappedJSObject.registerServiceWorker();
   });
 
   info("Performing requests...");
   let wait = waitForNetworkEvents(monitor, REQUEST_DATA.length);
-  yield ContentTask.spawn(tab.linkedBrowser, {}, function* () {
+  await ContentTask.spawn(tab.linkedBrowser, {}, async function () {
     content.wrappedJSObject.performRequests();
   });
-  yield wait;
+  await wait;
 
   // Fetch stack-trace data from the backend and wait till
   // all packets are received.
   let requests = getSortedRequests(store.getState());
-  yield Promise.all(requests.map(requestItem =>
+  await Promise.all(requests.map(requestItem =>
     connector.requestData(requestItem.id, "stackTrace")));
 
   let requestItems = document.querySelectorAll(".request-list-item");
@@ -63,7 +72,7 @@ add_task(function* () {
     requestItem.scrollIntoView();
     let requestsListStatus = requestItem.querySelector(".requests-list-status");
     EventUtils.sendMouseEvent({ type: "mouseover" }, requestsListStatus);
-    yield waitUntil(() => requestsListStatus.title);
+    await waitUntil(() => requestsListStatus.title);
   }
 
   let index = 0;
@@ -71,7 +80,7 @@ add_task(function* () {
     let item = getSortedRequests(store.getState()).get(index);
 
     info(`Verifying request #${index}`);
-    yield verifyRequestItemTarget(
+    await verifyRequestItemTarget(
       document,
       getDisplayedRequests(store.getState()),
       item,
@@ -96,9 +105,9 @@ add_task(function* () {
   }
 
   info("Unregistering the service worker...");
-  yield ContentTask.spawn(tab.linkedBrowser, {}, function* () {
-    yield content.wrappedJSObject.unregisterServiceWorker();
+  await ContentTask.spawn(tab.linkedBrowser, {}, async function () {
+    await content.wrappedJSObject.unregisterServiceWorker();
   });
 
-  yield teardown(monitor);
+  await teardown(monitor);
 });

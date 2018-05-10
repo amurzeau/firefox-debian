@@ -282,6 +282,13 @@
 <!ENTITY pref_whats_new_notification "Vad är nytt i &brandShortName;">
 <!ENTITY pref_whats_new_notification_summary "Läs mer om nya funktioner efter en uppdatering">
 
+<!-- Localization note (pref_feature_tips_notification): Title of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification"-->
+<!ENTITY pref_feature_tips_notification "Produkt- och funktionstips">
+<!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification_summary"-->
+<!ENTITY pref_feature_tips_notification_summary "Läs mer om att använda &brandShortName; och andra prudukter från &vendorShortName;">
+
 <!-- Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
      for experimental features. -->
 <!ENTITY pref_category_experimental "Experimentella funktioner">
@@ -422,7 +429,6 @@
      crashReporterDesc.label). -->
 <!ENTITY datareporting_fhr_title "&brandShortName; hälsorapport">
 <!ENTITY datareporting_fhr_summary2 "Delar data med &vendorShortName; om webbläsarens status, samt hjälper dig att förstå webbläsarens prestanda">
-<!ENTITY datareporting_abouthr_title "Visa hälsorapporten">
 <!ENTITY datareporting_telemetry_title "Telemetri">
 <!ENTITY datareporting_telemetry_summary "Dela webbläsardata om prestanda, användning, hårdvara och anpassningar med &vendorShortName; för att hjälpa oss att förbättra &brandShortName;">
 <!ENTITY datareporting_crashreporter_summary "&brandShortName; kan skicka in kraschrapporter för att hjälpa &vendorShortName; att göra webbläsaren stabilare och säkrare">
@@ -828,7 +834,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_first_offline_bookmark_button "Gå till bokmärken">
 
 <!ENTITY helper_triple_readerview_open_title "Tillgänglig offline">
-<!ENTITY helper_triple_readerview_open_message "Bokmärkes Läsare Visa objekt för att läsa dem offline.">
+<!ENTITY helper_triple_readerview_open_message "Bokmärk läsvyobjekt för att läsa dem offline.">
 <!ENTITY helper_triple_readerview_open_button "Lägg till i bokmärken">
 
 <!ENTITY activity_stream_topsites "Mest besökta">

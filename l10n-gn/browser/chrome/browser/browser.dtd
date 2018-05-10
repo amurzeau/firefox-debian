@@ -61,6 +61,8 @@ can reach it easily. -->
 <!ENTITY  closeTab.label                     "Tendayke mboty">
 <!ENTITY  closeTab.accesskey                 "C">
 
+<!ENTITY  hiddenTabs.label                   "Tendayke kañymby">
+
 <!ENTITY  listAllTabs.label      "Opaite tendayke jehechauka">
 
 <!ENTITY tabCmd.label "Tendayke pyahu">
@@ -127,6 +129,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "Opaite tendayke jehechauka">
 <!ENTITY showAllTabsCmd.accesskey "A">
 <!ENTITY toggleReaderMode.key "R">
+
+<!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "&syncBrand.shortName.label;-pe jeike">
 <!ENTITY fxaSignedIn.tooltip "Eike &syncBrand.shortName.label; oguerohoryvévape">
@@ -220,6 +224,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Mba'ekuaarã ñembyaty, ñembyaty hi'arekuaávape">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Kundahára oĩ ñangarekoha okayguáva poguýpe">
 
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "Eike pe ñanduti mboajeha rupápe">
+
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Eñangareko moherakuã nerovetã térã mba'erechaha ko tenda ndive">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Eipuruhína neñe'atãha ko tenda ndive">
 <!ENTITY urlbar.webRTCShareScreenNotificationAnchor.tooltip       "Eñangareko moherakuã nerovetã térã mba'erechaha ko tenda ndive">
@@ -229,6 +235,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Eñangareko kuatiarogue ñe'ẽasa rehe">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Eñangareko DRM software jepuru rehe">
 
+<!ENTITY urlbar.midiNotificationAnchor.tooltip            "Eike ta'ãngarupa MIDI pe">
+
 <!ENTITY urlbar.cameraBlocked.tooltip            "Ejokóma ne ta'ãngamýi ko ñanduti rendápe g̃uarã.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Ejokóma ne ñe'ẽatãha ko ñanduti rendápe g̃uarã.">
 <!ENTITY urlbar.screenBlocked.tooltip            "Ejokóma ko ñanduti renda emoherakuã hag̃ua ne mba'erechaha.">
@@ -236,8 +244,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Ejokóma ñemomarandu ko ñanduti rendápe g̃uarã.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Ejokóma mba'ekuaarã ñembyaty hi'aréva ko ñanduti renda pegua.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Ejokoukákuri ovetã apysẽva ko ñandutirendápe g̃uarã.">
-
 <!ENTITY urlbar.canvasBlocked.tooltip            "Ejokoukákuri kuaapy canvas rehegua ñeguenohẽ ko ñandutirendápe g̃uarã.">
+
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "Ejokóma ko ñanduti renda ani hag̃ua tembipuru'i Adobe Flash.">
+<!ENTITY urlbar.midiBlocked.tooltip              "Ejokóma MIDI pe jeike ko ñanduti rendápe g̃uarã.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Tembiasakue jehechauka">
 
@@ -262,7 +272,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addBookmarksMenu.label             "Embojoapy Techaukaharysýi Tembipuru rendápe">
 <!ENTITY removeBookmarksMenu.label          "Eipe'a Techaukaharysýi Tembipuru rendágui">
 
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -293,6 +303,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY inspectContextMenu.label     "Mba'epuru ma'ẽ'ag̃ui">
 <!ENTITY inspectContextMenu.accesskey "Q">
+
+<!ENTITY inspectA11YContextMenu.label     "Ema’ẽag̃ui mba’etee jeikerãva rehe">
 
 <!ENTITY fileMenu.label         "Marandurenda">
 <!ENTITY fileMenu.accesskey       "F">
@@ -379,10 +391,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Emyendy tendayke mbojueheha ehecha hag̃ua peteĩ tendayke rysýi ambue ne mba'e'oka peguáva.">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "Ndaipóri tendayke mbojuehepyre… gueteri!">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Ehechasépa tendaykekuéra ambue mba'e'okaguáva ko'ápe?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Jerohoryvéva Mbojuehe">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Eike Sync jerohoryvévape">
@@ -391,7 +402,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Eike Sync-pe">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Mba'e'oka ñangarekoha…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Ehecha mbojuehepyre tenda yképe">
-
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Embojoaju Ambue Mba'e'oka">
 
 <!ENTITY appMenuRecentHighlights.label "Aje'i Ojehecharamoitéva">
@@ -434,6 +444,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Ñe'ẽreka ýrõ kundaharape">
+<!ENTITY urlbar.placeholder3          "Emoinge ko'ápe ñemboguata rekaha ha kundaharape">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Jepysokue:">
@@ -800,7 +811,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "Tendayke ñembojuehepyre">
 <!ENTITY syncedTabs.sidebar.noclients.label    "Emoñepyrũ tembiapo Firefox-pe ambue ne mba'e'okakuéra rupive eike hag̃ua ne tendaykekuérape ápe.">
-<!ENTITY syncedTabs.sidebar.noclients.title    "Noñembojuehéi tendaykekuéra… ne'ĩra gueteri!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Ehechasépa tendaykekuéra ambue mba'e'okaguáva ko'ápe">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Eike ehecha tendayke rysýi ambue mba'e'okapeguáva.">
 <!ENTITY syncedTabs.sidebar.unverified.label   "Tekotevẽ oñemboaje ne mba'ete.">
@@ -810,7 +820,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Eike ehecha tendayke rysýi ambue mba'e'okapeguáva.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Tendayke mbojuehepyre reka">
-
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Embojoaju Ambue Mba'e'oka">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
@@ -980,11 +989,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.panelUI.label2 "Emoñepyrũjey embohekopyahu hag̃ua &brandShorterName;">
 
 <!ENTITY newTabControlled.message "Peteĩ moĩmbaha omoambuékuri togue rehecháva ojeike vove pype. Rembojevykuaa heko ndereipotáiramo mba'éichapa ojehechauka.">
+
 <!ENTITY newTabControlled.header.message "Ne Tendayke Pyahu iñambuékuri.">
 <!ENTITY newTabControlled.keepButton.label "Topyta Ñemoambue">
 <!ENTITY newTabControlled.keepButton.accesskey "K">
 <!ENTITY newTabControlled.restoreButton.label "Mbohekoha Ñembojevy">
 <!ENTITY newTabControlled.restoreButton.accesskey "R">
+
+<!ENTITY newTabControlled.disableButton.label "Eipe'aite jepysokue">
+<!ENTITY newTabControlled.disableButton.accesskey "D">
+
+<!ENTITY homepageControlled.message "Peteĩ jepysokue omoambue ojehecháva nde kuatiarogue ñepyrũramo. Ikatu ombojevy iñemboheko ndereipotáirõ iñambue.">
+<!ENTITY homepageControlled.header.message "Emoambue nde kuatiarogue ñepyrũ.">
+<!ENTITY homepageControlled.keepButton.label "Eguerekóke moambuepyre">
+<!ENTITY homepageControlled.keepButton.accesskey "K">
+<!ENTITY homepageControlled.disableButton.label "Eipe'aite jepysokue">
+<!ENTITY homepageControlled.disableButton.accesskey "D">
 
 <!ENTITY pageActionButton.tooltip "Kuatiarogue rembiapo">
 <!ENTITY pageAction.addToUrlbar.label "Embojuaju kundaharape rendáre ">
@@ -995,6 +1015,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pageAction.sendTabToDevice.label "Emondo Tendayke Mba'e'okápe">
 <!ENTITY sendToDevice.syncNotReady.label "Mba'e'oka ñembojuehe…">
+
+<!ENTITY pageAction.shareUrl.label "Moherakuã">
 
 <!ENTITY libraryButton.tooltip "Ehecha tembiasakue, ñongatupyre ha ambueve">
 

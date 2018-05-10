@@ -61,6 +61,8 @@ can reach it easily. -->
 <!ENTITY  closeTab.label                     "סגירת לשונית">
 <!ENTITY  closeTab.accesskey                 "ס">
 
+<!ENTITY  hiddenTabs.label                   "לשוניות מוסתרות">
+
 <!ENTITY  listAllTabs.label      "רשימת כל הלשוניות">
 
 <!ENTITY tabCmd.label "לשונית חדשה">
@@ -127,6 +129,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "הצגת כל הלשוניות">
 <!ENTITY showAllTabsCmd.accesskey "כ">
 <!ENTITY toggleReaderMode.key "R">
+
+<!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "התחברות אל &syncBrand.shortName.label;">
 <!ENTITY fxaSignedIn.tooltip "פתיחת ההעדפות של &syncBrand.shortName.label;">
@@ -220,6 +224,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "שמירת נתונים באחסון קבוע">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "הדפדפן נשלט מרחוק">
 
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "פתיחת חלונית Web Authentication">
+
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "ניהול שיתוף המצלמה ו/או המיקרופון שלך עם האתר">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "ניהול שיתוף המיקרופון שלך עם האתר">
 <!ENTITY urlbar.webRTCShareScreenNotificationAnchor.tooltip       "ניהול שיתוף החלונות או המסך שלך עם האתר">
@@ -229,6 +235,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "ניהול תרגומי עמודים">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "ניהול השימוש בתכניות DRM">
 
+<!ENTITY urlbar.midiNotificationAnchor.tooltip            "פתיחת לוח MIDI">
+
 <!ENTITY urlbar.cameraBlocked.tooltip            "חסמת את המצלמה שלך מפני אתר זה.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "חסמת את המיקרופון שלך מפני אתר זה.">
 <!ENTITY urlbar.screenBlocked.tooltip            "חסמת מפני האתר הזה את האפשרות לשתף את המסך שלך.">
@@ -236,8 +244,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "האפשרות להציג הודעות נחסמה מפני אתר זה.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "חסמת את האתר הזה משמירת נתונים קבועים.">
 <!ENTITY urlbar.popupBlocked.tooltip             "חסמת חלונות קופצים עבור אתר זה.">
-
 <!ENTITY urlbar.canvasBlocked.tooltip            "חילוץ נתוני משטחי ציור עבור אתר זה נחסמה.">
+
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "חסמת מפני האתר הזה את האפשרות להשתמש בתוסף החיצוני Adobe Flash.">
+<!ENTITY urlbar.midiBlocked.tooltip              "חסמת גישת MIDI לאתר זה.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "הצגת היסטוריה">
 
@@ -262,7 +272,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addBookmarksMenu.label             "הוספת תפריט הסימניות לסרגל הכלים">
 <!ENTITY removeBookmarksMenu.label          "הסרת תפריט הסימניות מסרגל הכלים">
 
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -293,6 +303,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY inspectContextMenu.label     "חקירת רכיב">
 <!ENTITY inspectContextMenu.accesskey "ח">
+
+<!ENTITY inspectA11YContextMenu.label     "חקירת מאפייני נגישות">
 
 <!ENTITY fileMenu.label         "קובץ">
 <!ENTITY fileMenu.accesskey       "ק">
@@ -379,10 +391,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "ניתן להפעיל את סנכרון הלשוניות כדי לצפות ברשימת הלשוניות משאר ההתקנים שלך.">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "אין לשוניות מסונכרנות… בינתיים!">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "להציג כאן את הלשוניות שלך מהתקנים אחרים?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "העדפות Sync">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "פתיחת העדפות Sync">
@@ -391,7 +402,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "התחברות אל Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "ניהול התקנים…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "הצגת סרגל צד של לשוניות מסונכרנות">
-
 <!ENTITY appMenuRemoteTabs.connectdevice.label "חיבור התקן נוסף">
 
 <!ENTITY appMenuRecentHighlights.label "הדגשות אחרונות">
@@ -434,6 +444,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "חפש או הכנס כתובת">
+<!ENTITY urlbar.placeholder3          "נא להקליד כאן ביטויים לחיפוש וכתובות">
 <!ENTITY urlbar.accesskey             "ח">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "הרחבה:">
@@ -444,9 +455,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (urlbar.searchSuggestionsNotification.hint): &#x1F50E; is the magnifier icon emoji, please don't change it. -->
 <!ENTITY urlbar.searchSuggestionsNotification.hint "קבלו עזרה במציאת הדברים החשובים לכם! חפשו את הסמל &#x1F50E; שליד תוצאות החיפוש.">
 <!ENTITY urlbar.searchSuggestionsNotification.changeSettingsWin "שינוי אפשרויות…">
-<!ENTITY urlbar.searchSuggestionsNotification.changeSettingsWin.accesskey "ע">
+<!ENTITY urlbar.searchSuggestionsNotification.changeSettingsWin.accesskey "א">
 <!ENTITY urlbar.searchSuggestionsNotification.changeSettingsUnix "שינוי העדפות…">
-<!ENTITY urlbar.searchSuggestionsNotification.changeSettingsUnix.accesskey "כ">
+<!ENTITY urlbar.searchSuggestionsNotification.changeSettingsUnix.accesskey "ה">
 
 <!--
   Comment duplicated from browser-sets.inc:
@@ -800,7 +811,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "לשוניות מסונכרנות">
 <!ENTITY syncedTabs.sidebar.noclients.label    "יש להיכנס ל־Firefox מההתקנים האחרים שלך כדי לצפות בלשוניות שלהם כאן.">
-<!ENTITY syncedTabs.sidebar.noclients.title    "אין לשוניות מסונכרנות… בינתיים!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "להציע כאן את הלשוניות שלך מהתקנים אחרים?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "יש להיכנס כדי לצפות ברשימת הלשוניות שלך מהתקנים אחרים.">
 <!ENTITY syncedTabs.sidebar.unverified.label   "יש לאמת את החשבון שלך.">
@@ -810,7 +820,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "יש להפעיל סנכרון כדי לצפות ברשימת הלשוניות שלך מהתקנים אחרים.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "חיפוש לשוניות שסונכרנו">
-
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "חיבור התקן נוסף">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
@@ -979,12 +988,23 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "ל">
 <!ENTITY updateRestart.panelUI.label2 "הפעלה מחדש לעדכון &brandShorterName;">
 
-<!ENTITY newTabControlled.message "הרחבה שינתה את הדף הנראה בעת פתיחת לשונית חדשה. באפשרותך לשחזר את ההגדרות שלך אם שינוי זה אינו רצוי.">
+<!ENTITY newTabControlled.message "הרחבה שינתה את הדף המופיע בעת פתיחת לשונית חדשה. ניתן לשחזר את ההגדרות שלך אם שינוי זה אינו רצוי.">
+
 <!ENTITY newTabControlled.header.message "הלשונית החדשה שלך השתנתה.">
 <!ENTITY newTabControlled.keepButton.label "להשאיר שינויים">
 <!ENTITY newTabControlled.keepButton.accesskey "ש">
 <!ENTITY newTabControlled.restoreButton.label "לשחזר הגדרות">
 <!ENTITY newTabControlled.restoreButton.accesskey "ה">
+
+<!ENTITY newTabControlled.disableButton.label "נטרול הרחבה">
+<!ENTITY newTabControlled.disableButton.accesskey "נ">
+
+<!ENTITY homepageControlled.message "הרחבה שינתה את הדף המופיע כדף הבית שלך. ניתן לשחזר את ההגדרות שלך אם שינוי זה אינו רצוי.">
+<!ENTITY homepageControlled.header.message "דף הבית שלך השתנה.">
+<!ENTITY homepageControlled.keepButton.label "שמירת השינויים">
+<!ENTITY homepageControlled.keepButton.accesskey "ש">
+<!ENTITY homepageControlled.disableButton.label "השבתת הרחבה">
+<!ENTITY homepageControlled.disableButton.accesskey "ר">
 
 <!ENTITY pageActionButton.tooltip "פעולות דף">
 <!ENTITY pageAction.addToUrlbar.label "הוספה לשורת הכתובת">
@@ -996,6 +1016,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageAction.sendTabToDevice.label "שליחת לשונית להתקן">
 <!ENTITY sendToDevice.syncNotReady.label "סנכרון התקנים…">
 
+<!ENTITY pageAction.shareUrl.label "שיתוף">
+
 <!ENTITY libraryButton.tooltip "צפייה בהיסטוריה, סימניות שמורות ועוד">
 
 <!-- LOCALIZATION NOTE: (accessibilityIndicator.tooltip): This is used to
@@ -1003,3 +1025,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      used as a textual label for the indicator used by assistive technology
      users. -->
 <!ENTITY accessibilityIndicator.tooltip "תכונות נגישות מופעלות">
+
+<!-- LOCALIZATION NOTE: (addonPostInstallMessage.label):
+     The first <image> tag is replaced with the icon for the add-ons menu.
+     The second <image> tag is replaced with the icon for the toolbar menu. -->
+<!ENTITY addonPostInstallMessage.label "ניתן לנהל את התוספות שלך ע״י לחיצה על <image class='addon-addon-icon'/> שבתפריט <image class='addon-toolbar-icon'/>.">

@@ -88,6 +88,17 @@
 <!ENTITY reorderAttachmentsCmd.label "დანართების გადალაგება…">
 <!ENTITY reorderAttachmentsCmd.accesskey "დ">
 <!ENTITY reorderAttachmentsCmd.key "x">
+<!ENTITY toggleAttachmentPaneCmd.label "დანართის არე">
+<!-- LOCALIZATION NOTE (toggleAttachmentPaneCmd.accesskey):
+     For better mnemonics, toggleAttachmentPaneCmd.accesskey should be the same
+     as attachments.accesskey. -->
+<!ENTITY toggleAttachmentPaneCmd.accesskey "m">
+<!-- LOCALIZATION NOTE (toggleAttachmentPaneCmd.key):
+     With OS-specific access modifier, this defines the shortcut key for showing/
+     hiding/minimizing the attachment pane, e.g. Alt+M on Windows.
+     toggleAttachmentPaneCmd.key and attachments.accesskey must be the same
+     for the bucket view state machinery to work. -->
+<!ENTITY toggleAttachmentPaneCmd.key "m">
 <!ENTITY selectAllCmd.label "სრული მონიშვნა">
 <!ENTITY selectAllCmd.key "A">
 <!ENTITY selectAllCmd.accesskey "a">
@@ -102,33 +113,17 @@
 <!ENTITY findAgainCmd.key "G">
 <!ENTITY findAgainCmd.key2 "VK_F3">
 <!ENTITY findPrevCmd.label "წინას პოვნა">
-<!ENTITY findPrevCmd.accesskey "v">
+<!ENTITY findPrevCmd.accesskey "პ">
 <!ENTITY findPrevCmd.key "G">
 <!ENTITY findPrevCmd.key2 "VK_F3">
 
 <!-- Reorder Attachment Panel -->
 <!ENTITY reorderAttachmentsPanel.label "დანართების გადალაგება">
 <!ENTITY moveAttachmentTopPanelBtn.label "დასაწყისში გადატანა">
-<!ENTITY moveAttachmentTopPanelBtn.accesskey "წ">
 <!ENTITY moveAttachmentUpPanelBtn.label "აწევა">
-<!ENTITY moveAttachmentUpPanelBtn.accesskey "ა">
 <!ENTITY moveAttachmentBundleUpPanelBtn.label "ერთად გადატანა">
-<!ENTITY moveAttachmentBundleUpPanelBtn.accesskey "რ">
 <!ENTITY moveAttachmentDownPanelBtn.label "ჩამოწევა">
-<!ENTITY moveAttachmentDownPanelBtn.accesskey "ჩ">
 <!ENTITY moveAttachmentBottomPanelBtn.label "ბოლოში გადატანა">
-<!ENTITY moveAttachmentBottomPanelBtn.accesskey "ბ">
-<!-- LOCALIZATION NOTE (sortAttachmentsTogglePanelBtn.AZ.label):
-     Please ensure that this translation matches
-     sortAttachmentsTogglePanelBtn.ZA.label, except for the sort direction. -->
-<!ENTITY sortAttachmentsTogglePanelBtn.AZ.label "მონიშნულის ანბანურად დალაგება: ა - ზ">
-<!-- LOCALIZATION NOTE (sortAttachmentsTogglePanelBtn.AZ.accesskey):
-     This accesskey should be the same like
-     sortAttachmentsTogglePanelBtn.ZA.accesskey, and it should be taken from
-     the "Sort Selection:" part of the label, not from the sort direction part. -->
-<!ENTITY sortAttachmentsTogglePanelBtn.AZ.accesskey "ო">
-<!ENTITY sortAttachmentsTogglePanelBtn.ZA.label "მონიშნულის ანბანურად დალაგება: ზ - ა">
-<!ENTITY sortAttachmentsTogglePanelBtn.ZA.accesskey "ო">
 
 <!-- LOCALIZATION NOTE (sortAttachmentsPanelBtn.Sort.AZ.label):
      Please ensure that this translation matches
@@ -144,84 +139,84 @@
 
 <!-- View Menu -->
 <!ENTITY viewMenu.label "ჩვენება">
-<!ENTITY viewMenu.accesskey "v">
-<!ENTITY viewToolbarsMenuNew.label "პულტები">
-<!ENTITY viewToolbarsMenuNew.accesskey "T">
-<!ENTITY menubarCmd.label "მენიუს პულტი">
-<!ENTITY menubarCmd.accesskey "M">
-<!ENTITY showCompositionToolbarCmd.label "წერილის პულტი">
-<!ENTITY showCompositionToolbarCmd.accesskey "o">
-<!ENTITY showFormattingBarCmd.label "ფორმატის პანელი">
-<!ENTITY showFormattingBarCmd.accesskey "F">
-<!ENTITY showTaskbarCmd.label "სტატუსის პანელი">
-<!ENTITY showTaskbarCmd.accesskey "S">
+<!ENTITY viewMenu.accesskey "ვ">
+<!ENTITY viewToolbarsMenuNew.label "ხელსაწყოთა ზოლები">
+<!ENTITY viewToolbarsMenuNew.accesskey "ყ">
+<!ENTITY menubarCmd.label "მენიუს ზოლი">
+<!ENTITY menubarCmd.accesskey "მ">
+<!ENTITY showCompositionToolbarCmd.label "წერილის ხელსაწყოები">
+<!ENTITY showCompositionToolbarCmd.accesskey "წ">
+<!ENTITY showFormattingBarCmd.label "ფორმატის ზოლი">
+<!ENTITY showFormattingBarCmd.accesskey "ფ">
+<!ENTITY showTaskbarCmd.label "სტატუსის ზოლი">
+<!ENTITY showTaskbarCmd.accesskey "ს">
 <!ENTITY customizeToolbar.label "მორგება…">
-<!ENTITY customizeToolbar.accesskey "C">
+<!ENTITY customizeToolbar.accesskey "ო">
 
-<!ENTITY addressSidebar.label "კონტაქტების პანელი">
-<!ENTITY addressSidebar.accesskey "o">
+<!ENTITY addressSidebar.label "კონტაქტების არე">
+<!ENTITY addressSidebar.accesskey "ე">
 
 <!-- Format Menu -->
 <!ENTITY formatMenu.label "ფორმატი">
-<!ENTITY formatMenu.accesskey "o">
+<!ENTITY formatMenu.accesskey "ფ">
 
 <!-- Options Menu -->
-<!ENTITY optionsMenu.label "ოპციები">
-<!ENTITY optionsMenu.accesskey "p">
+<!ENTITY optionsMenu.label "პარამეტრები">
+<!ENTITY optionsMenu.accesskey "ტ">
 <!ENTITY checkSpellingCmd2.label "მართლწერის შემოწმება…">
-<!ENTITY checkSpellingCmd2.key "p">
+<!ENTITY checkSpellingCmd2.key "რ">
 <!ENTITY checkSpellingCmd2.key2 "VK_F7">
 <!ENTITY checkSpellingCmd2.accesskey "h">
 <!ENTITY enableInlineSpellChecker.label "მართლწერის შემოწმება ტექსტის შეტანისას">
-<!ENTITY enableInlineSpellChecker.accesskey "S">
+<!ENTITY enableInlineSpellChecker.accesskey "შ">
 <!ENTITY quoteCmd.label "წერილის ციტირება">
-<!ENTITY quoteCmd.accesskey "Q">
+<!ENTITY quoteCmd.accesskey "ც">
 
 <!--LOCALIZATION NOTE attachVCard.label Don't translate the term 'vCard' -->
 <!ENTITY attachVCard.label "სავიზიტო ბარათის (vCard) თანდართვა">
-<!ENTITY attachVCard.accesskey "v">
+<!ENTITY attachVCard.accesskey "ზ">
 
 <!ENTITY returnReceiptMenu.label "მიღების დასტური">
-<!ENTITY returnReceiptMenu.accesskey "t">
+<!ENTITY returnReceiptMenu.accesskey "ტ">
 <!ENTITY dsnMenu.label "მიღების სტატუსის შეტყობინება">
-<!ENTITY dsnMenu.accesskey "N">
+<!ENTITY dsnMenu.accesskey "შ">
 <!ENTITY deliveryFormatMenu.label "მიწოდების ფორმატი">
-<!ENTITY deliveryFormatMenu.accesskey "F">
+<!ENTITY deliveryFormatMenu.accesskey "ო">
 <!ENTITY autoFormatCmd.label "თვითამოცნობა">
-<!ENTITY autoFormatCmd.accesskey "a">
+<!ENTITY autoFormatCmd.accesskey "ა">
 <!ENTITY plainTextFormatCmd.label "მხოლოდ ტექსტი">
-<!ENTITY plainTextFormatCmd.accesskey "p">
+<!ENTITY plainTextFormatCmd.accesskey "ხ">
 <!ENTITY htmlFormatCmd.label "მხოლოდ ჰიპერტექსტი (HTML)">
-<!ENTITY htmlFormatCmd.accesskey "r">
+<!ENTITY htmlFormatCmd.accesskey "ჰ">
 <!ENTITY bothFormatCmd.label "ტექსტი და ჰიპერტექსტი (HTML)">
-<!ENTITY bothFormatCmd.accesskey "l">
-<!ENTITY priorityMenu.label "პრიორიტეტი">
-<!ENTITY priorityMenu.accesskey "p">
+<!ENTITY bothFormatCmd.accesskey "პ">
+<!ENTITY priorityMenu.label "უპირატესობა">
+<!ENTITY priorityMenu.accesskey "უ">
 <!ENTITY priorityButton.title "უპირატესობა">
 <!ENTITY priorityButton.tooltiptext "შეტყობინებების უპირატესობის შეცვლა">
-<!ENTITY priorityButton.label "პრიორიტეტი:">
+<!ENTITY priorityButton.label "უპირატესობა:">
 <!ENTITY lowestPriorityCmd.label "უდაბლესი">
-<!ENTITY lowestPriorityCmd.accesskey "l">
+<!ENTITY lowestPriorityCmd.accesskey "დ">
 <!ENTITY lowPriorityCmd.label "დაბალი">
-<!ENTITY lowPriorityCmd.accesskey "o">
+<!ENTITY lowPriorityCmd.accesskey "ბ">
 <!ENTITY normalPriorityCmd.label "ჩვეულებრივი">
-<!ENTITY normalPriorityCmd.accesskey "n">
+<!ENTITY normalPriorityCmd.accesskey "ჩ">
 <!ENTITY highPriorityCmd.label "მაღალი">
-<!ENTITY highPriorityCmd.accesskey "i">
+<!ENTITY highPriorityCmd.accesskey "ღ">
 <!ENTITY highestPriorityCmd.label "უმაღლესი">
-<!ENTITY highestPriorityCmd.accesskey "H">
+<!ENTITY highestPriorityCmd.accesskey "ლ">
 <!ENTITY fileCarbonCopyCmd.label "ასლის გადაგზავნა">
-<!ENTITY fileCarbonCopyCmd.accesskey "d">
+<!ENTITY fileCarbonCopyCmd.accesskey "გ">
 <!ENTITY fileHereMenu.label "აკინძვა">
 
 <!-- Tools Menu -->
-<!ENTITY tasksMenu.label "მოდულები">
-<!ENTITY tasksMenu.accesskey "T">
-<!ENTITY messengerCmd.label "ფოსტა და ჯგუფები">
-<!ENTITY messengerCmd.accesskey "m">
+<!ENTITY tasksMenu.label "ხელსაწყოები">
+<!ENTITY tasksMenu.accesskey "ხ">
+<!ENTITY messengerCmd.label "ფოსტა და სიახლეთა ჯგუფები">
+<!ENTITY messengerCmd.accesskey "ჯ">
 <!ENTITY messengerCmd.commandkey "1">
 <!ENTITY addressBookCmd.label "წიგნაკი">
-<!ENTITY addressBookCmd.accesskey "a">
+<!ENTITY addressBookCmd.accesskey "წ">
 <!ENTITY addressBookCmd.key "B">
 <!ENTITY accountManagerCmd2.label "ანგარიშის პარამეტრები">
 <!ENTITY accountManagerCmd2.accesskey "პ">
@@ -229,11 +224,11 @@
 <!ENTITY preferencesCmd2.label "პარამეტრები">
 <!ENTITY preferencesCmd2.accesskey "მ">
 <!ENTITY preferencesCmdUnix.label "პარამეტრები">
-<!ENTITY preferencesCmdUnix.accesskey "n">
+<!ENTITY preferencesCmdUnix.accesskey "ტ">
 
 <!--  Mac OS X Window Menu -->
 <!ENTITY minimizeWindow.key "m">
-<!ENTITY minimizeWindow.label "მინიმიზება">
+<!ENTITY minimizeWindow.label "ჩაკეცვა">
 <!ENTITY bringAllToFront.label "ყველას წინ გადმოტანა">
 <!ENTITY zoomWindow.label "მასშტაბი">
 <!ENTITY windowMenu.label "ფანჯარა">
@@ -253,6 +248,7 @@
 <!ENTITY quoteButton.tooltip "საწყისი წერილის ციტირება">
 <!ENTITY addressButton.tooltip "ადრესატის არჩევა წიგნაკიდან">
 <!ENTITY attachButton.tooltip "წერილში ფაილის ჩართვა">
+<!ENTITY attachButton.tooltip2 "დანართის მიმაგრება">
 <!ENTITY spellingButton.tooltip "მონიშნულის ან მთელი წერილის მართლწერის შემოწმება">
 <!ENTITY saveButton.tooltip "წერილის შენახვა">
 <!ENTITY cutButton.tooltip              "ამოჭრა">
@@ -265,7 +261,7 @@
     Subject: rows. It should be larger than the largest Header label  -->
 <!ENTITY headersSpace.style "width: 9em;">
 <!ENTITY fromAddr.label "ვისგან:">
-<!ENTITY fromAddr.accesskey "r">
+<!ENTITY fromAddr.accesskey "ვ">
 <!ENTITY toAddr.label "ვის:">
 <!ENTITY ccAddr.label "ასლი:">
 <!ENTITY bccAddr.label "ფარული ასლი:">
@@ -273,10 +269,15 @@
 <!ENTITY newsgroupsAddr.label "ჯგუფი:">
 <!ENTITY followupAddr.label "კონფერენცია:">
 <!ENTITY subject.label "თემა:">
-<!ENTITY subject.accesskey "S">
-<!-- LOCALIZATION NOTE attachments.accesskey This access key should correspond
-     to the strings in attachmentCount in composeMsgs.properties -->
+<!ENTITY subject.accesskey "თ">
+<!-- LOCALIZATION NOTE (attachments.accesskey) This access key character should
+     be taken from the strings in attachmentCount in composeMsgs.properties,
+     and it must be the same as toggleAttachmentPaneCmd.key, otherwise it won't
+     work, as the shortcut key functionality supersedes the access key. -->
 <!ENTITY attachments.accesskey "m">
+
+<!ENTITY attachmentBucketHeader.tooltip "დანართების არე">
+<!ENTITY attachmentBucketCloseButton.tooltip "დანართების არის დამალვა">
 
 <!-- Format Toolbar, imported from editorAppShell.xul -->
 <!ENTITY SmileButton.tooltip "მიმიკის ჩამატება">
@@ -300,48 +301,58 @@
 <!-- Message Pane Context Menu -->
 <!ENTITY spellCheckNoSuggestions.label "შემოთავაზება ვერ მოიძებნა">
 <!ENTITY spellCheckIgnoreWord.label "სიტყვის გამოტოვება">
-<!ENTITY spellCheckIgnoreWord.accesskey "I">
+<!ENTITY spellCheckIgnoreWord.accesskey "ტ">
 <!ENTITY spellCheckAddToDictionary.label "ლექსიკონში დამატება">
-<!ENTITY spellCheckAddToDictionary.accesskey "n">
+<!ENTITY spellCheckAddToDictionary.accesskey "კ">
 <!ENTITY undo.label "დაბრუნება">
-<!ENTITY undo.accesskey "U">
+<!ENTITY undo.accesskey "უ">
 <!ENTITY cut.label "ამოჭრა">
-<!ENTITY cut.accesskey "t">
+<!ENTITY cut.accesskey "ჭ">
 <!ENTITY copy.label "კოპირება">
-<!ENTITY copy.accesskey "C">
+<!ENTITY copy.accesskey "პ">
 <!ENTITY paste.label "ჩასმა">
-<!ENTITY paste.accesskey "P">
+<!ENTITY paste.accesskey "ჩ">
 <!ENTITY pasteQuote.label "ჩასმა ციტირებით">
-<!ENTITY pasteQuote.accesskey "Q">
+<!ENTITY pasteQuote.accesskey "ც">
 
+<!-- Attachment Item and List Context Menus -->
 <!ENTITY openAttachment.label "გახსნა">
-<!ENTITY openAttachment.accesskey "O">
+<!ENTITY openAttachment.accesskey "ა">
 <!ENTITY delete.label "წაშლა">
-<!ENTITY delete.accesskey "D">
+<!ENTITY delete.accesskey "წ">
 <!ENTITY removeAttachment.label "დანართის ამოღება">
-<!ENTITY removeAttachment.accesskey "M">
+<!ENTITY removeAttachment.accesskey "ღ">
 <!ENTITY renameAttachment.label "გადარქმევა…">
-<!ENTITY renameAttachment.accesskey "R">
+<!ENTITY renameAttachment.accesskey "ე">
 <!ENTITY reorderAttachments.label "დანართების გადალაგება…">
 <!ENTITY reorderAttachments.accesskey "ლ">
-<!ENTITY selectAll.label "სრული მონიშვნა">
-<!ENTITY selectAll.accesskey "A">
+<!ENTITY removeAllAttachments.label "ყველა დანართის მოცილება">
+<!ENTITY removeAllAttachments.accesskey "ყ">
+<!ENTITY selectAll.label "ყველას მონიშვნა">
+<!ENTITY selectAll.accesskey "ს">
 <!ENTITY attachFile.label "ფაილ(ებ)ის მიმაგრება…">
-<!ENTITY attachFile.accesskey "F">
-<!ENTITY attachCloud.label "ფაილის ბმა…">
-<!ENTITY attachCloud.accesskey "i">
+<!ENTITY attachFile.accesskey "ფ">
+<!ENTITY attachCloud.label "ფაილის ბმული…">
+<!ENTITY attachCloud.accesskey "ი">
 <!ENTITY convertCloud.label "გარდაქმნა…">
-<!ENTITY convertCloud.accesskey "C">
+<!ENTITY convertCloud.accesskey "ქ">
 <!ENTITY cancelUpload.label "ატვირთვის გაუქმება">
-<!ENTITY cancelUpload.accesskey "n">
+<!ENTITY cancelUpload.accesskey "უ">
 <!ENTITY convertRegularAttachment.label "ჩვეულებრივი დანართი">
-<!ENTITY convertRegularAttachment.accesskey "A">
+<!ENTITY convertRegularAttachment.accesskey "რ">
 <!ENTITY attachPage.label "ვებგვერდის თანდართვა…">
-<!ENTITY attachPage.accesskey "W">
+<!ENTITY attachPage.accesskey "ნ">
+
+<!-- Attachment Pane Header Bar Context Menu -->
+<!-- LOCALIZATION NOTE (initiallyShowAttachmentPane.label):
+     Should use the same wording as startExpandedCmd.label
+     in msgHdrViewOverlay.dtd. -->
+<!ENTITY initiallyShowAttachmentPane.label "დანართების არის თავიდანვე ჩვენება">
+<!ENTITY initiallyShowAttachmentPane.accesskey "დ">
 
 <!-- Spell checker context menu items -->
 <!ENTITY spellAddDictionaries.label "სიტყვარების დამატება…">
-<!ENTITY spellAddDictionaries.accesskey "A">
+<!ENTITY spellAddDictionaries.accesskey "ყ">
 
 <!-- Title for the address picker panel -->
 <!ENTITY addressesSidebarTitle.label "კონტაქტები">

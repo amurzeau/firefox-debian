@@ -263,7 +263,7 @@
 <!ENTITY event.statusbarpanel.privacy.label               "პირადულობა:">
 
 <!-- Recurrence dialog -->
-<!ENTITY recurrence.title.label                         "გამეორების რედაქცია">
+<!ENTITY recurrence.title.label                         "გამეორების მითითება">
 
 <!ENTITY event.repeat.does.not.repeat.label             "გამეორების გარეშე">
 <!ENTITY event.repeat.daily.label                       "ყოველდღე">
@@ -282,15 +282,15 @@
 <!ENTITY event.recurrence.year.label                    "ყოველწლიური" >
 
 <!ENTITY event.recurrence.pattern.every.label           "ყოველ" >
-<!ENTITY repeat.units.days.both                         "დღე" >
+<!ENTITY repeat.units.days.both                         "დღეში" >
 <!ENTITY event.recurrence.pattern.every.weekday.label   "ყოველ სამუშაო დღეს" >
 
 <!ENTITY event.recurrence.pattern.weekly.every.label    "ყოველი" >
-<!ENTITY repeat.units.weeks.both                        "კვირა" >
+<!ENTITY repeat.units.weeks.both                        "კვირაში" >
 <!ENTITY event.recurrence.on.label                      "თარიღი:" >
 
 <!ENTITY event.recurrence.pattern.monthly.every.label   "ყოველ" >
-<!ENTITY repeat.units.months.both                       "თვე" >
+<!ENTITY repeat.units.months.both                       "თვეში" >
 <!ENTITY event.recurrence.monthly.every.label           "ყოველი" >
 <!ENTITY event.recurrence.monthly.first.label           "პირველი">
 <!ENTITY event.recurrence.monthly.second.label          "მეორე">
@@ -309,7 +309,7 @@
 <!ENTITY event.recurrence.repeat.recur.label            "შემდეგი დღე(ებ)ი">
 
 <!ENTITY event.recurrence.every.label                        "ყოველი:" >
-<!ENTITY repeat.units.years.both                             "წელი" >
+<!ENTITY repeat.units.years.both                             "წელიწადში" >
 <!ENTITY event.recurrence.pattern.yearly.every.month.label   "ყოველი" >
 
 <!-- LOCALIZATON NOTE
@@ -365,7 +365,7 @@
 <!ENTITY event.recurrence.range.label                   "განმეორებათა რანგი">
 <!ENTITY event.recurrence.forever.label                 "დასრულების თარიღის გარეშე" >
 <!ENTITY event.recurrence.repeat.for.label              "შექმნა" >
-<!ENTITY event.recurrence.appointments.label            "დანიშნულ(ებ)ი" >
+<!ENTITY event.recurrence.appointments.label            "რაოდენობით" >
 <!ENTITY event.repeat.until.label                       "გამეორება მოცემულ თარიღამდე" >
 <!ENTITY event.recurrence.preview.label                 "შეთვალიერება">
 
@@ -398,6 +398,7 @@
 <!-- Read-Only dialog -->
 <!ENTITY read.only.general.label         "ზოგადი">
 <!ENTITY read.only.title.label           "სათაური:">
+<!ENTITY read.only.calendar.label        "კალენდარი:">
 <!ENTITY read.only.event.start.label     "დაწყების თარიღი:">
 <!ENTITY read.only.task.start.label      "დაწყება:">
 <!ENTITY read.only.event.end.label       "დასრულების თარიღი:">
@@ -416,3 +417,17 @@
 <!ENTITY read.only.attendees.label       "დამსწრეები">
 <!ENTITY read.only.description.label     "აღწერილობა">
 <!ENTITY read.only.link.label            "დაკავშირებული ბმა">
+
+<!-- Summary dialog -->
+<!ENTITY summary.dialog.saveclose.label         "შენახვა და დახურვა">
+<!ENTITY summary.dialog.saveclose.tooltiptext   "ცვლილებების შენახვა და ფანჯრის დახურვა, მონაწილეობის შესახებ გადაწყვეტილების შეცვლისა და პასუხის გაგზავნის გარეშე">
+<!ENTITY summary.dialog.accept.label            "მიღება">
+<!ENTITY summary.dialog.accept.tooltiptext      "მოწვევის მიღება">
+<!ENTITY summary.dialog.tentative.label         "სავარაუდო">
+<!ENTITY summary.dialog.tentative.tooltiptext   "მოწვევაზე სავარაუდო თანხმობის განცხადება">
+<!ENTITY summary.dialog.decline.label           "უარყოფა">
+<!ENTITY summary.dialog.decline.tooltiptext     "მოწვევის უარყოფა">
+<!ENTITY summary.dialog.dontsend.label          "პასუხის გაგზავნის გარეშე">
+<!ENTITY summary.dialog.dontsend.tooltiptext    "მონაწილეობის შესახებ გადაწყვეტილების შეცვლა, ხელმძღვანელისთვის პასუხის გაგზავნის გარეშე და ფანჯრის დახურვა">
+<!ENTITY summary.dialog.send.label              "პასუხის ახლავე გაგზავნა">
+<!ENTITY summary.dialog.send.tooltiptext        "ხელმძღვანელისთვის პასუხის გაგზავნა  და ფანჯრის დახურვა">

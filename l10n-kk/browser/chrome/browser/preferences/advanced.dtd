@@ -37,12 +37,15 @@ available. -->
 <!ENTITY dataCollectionDesc.label        "Біз сізге таңдауды қолыңызға беріп, тек әркім үшін &brandShortName; өнімін ұсыну және жақсарту мақсатында керек деректерді жинаймыз. Жеке ақпаратты алу алдында біз әрқашан рұқсатты сұраймыз.">
 <!ENTITY dataCollectionPrivacyNotice.label    "Жекелік ескертуі">
 
+<!ENTITY alwaysSubmitCrashReports1.label  "&brandShortName; үшін Mozilla адресіне құлау хабарламаларын жіберуді рұқсат ету">
+<!ENTITY alwaysSubmitCrashReports1.accesskey "л">
+
 <!ENTITY collectBrowserErrors.label          "&brandShortName; үшін Mozilla адресіне браузер қателіктері есептерін (қате хабарламаларын қоса) жіберуге рұқсат ету">
 <!ENTITY collectBrowserErrors.accesskey      "б">
 <!ENTITY collectBrowserErrorsLearnMore.label "Көбірек білу">
 
-<!ENTITY alwaysSubmitCrashReports1.label  "&brandShortName; үшін Mozilla адресіне құлау хабарламаларын жіберуді рұқсат ету">
-<!ENTITY alwaysSubmitCrashReports1.accesskey "л">
+<!ENTITY sendBackloggedCrashReports.label  "&brandShortName; үшін сіздің атыңыздан құлаулар жөнінде архивті хабарламаларды жіберуді рұқсат ету">
+<!ENTITY sendBackloggedCrashReports.accesskey "с">
 <!ENTITY crashReporterLearnMore.label    "Көбірек білу">
 
 <!ENTITY networkTab.label                "Желі">
@@ -50,8 +53,6 @@ available. -->
 <!ENTITY networkProxy.label              "Желілік прокси">
 
 <!ENTITY connectionDesc.label            "&brandShortName; Интернетке байланысу параметрлерін баптау">
-
-<!ENTITY connectionSettingsLearnMore.label "Көбірек білу">
 <!ENTITY connectionSettings.label        "Баптау…">
 <!ENTITY connectionSettings.accesskey    "а">
 
@@ -63,6 +64,11 @@ available. -->
 <!ENTITY clearSiteData.accesskey         "з">
 <!ENTITY siteDataSettings.label          "Баптаулар…">
 <!ENTITY siteDataSettings.accesskey      "п">
+<!ENTITY siteData1.label                 "Cookies файлдары және сайт деректері">
+<!ENTITY clearSiteData1.label            "Деректерді өшіру…">
+<!ENTITY clearSiteData1.accesskey        "ш">
+<!ENTITY siteDataSettings1.label         "Деректерді басқару…">
+<!ENTITY siteDataSettings1.accesskey     "б">
 <!ENTITY siteDataLearnMoreLink.label     "Көбірек білу">
 
 <!-- LOCALIZATION NOTE:
@@ -116,7 +122,7 @@ available. -->
 <!ENTITY certificateTab.label            "Сертификаттар">
 <!ENTITY certPersonal2.description       "Егерде сервер сіздің жеке сертификатыңызды сұраса">
 <!ENTITY selectCerts.auto                "Мені сұрамай-ақ жіберу">
-<!ENTITY selectCerts.auto.accesskey      "S">
+<!ENTITY selectCerts.auto.accesskey      "с">
 <!ENTITY selectCerts.ask                 "Әрбір ретте cізден сұрау">
 <!ENTITY selectCerts.ask.accesskey       "р">
 <!ENTITY enableOCSP.label                "OCSP жауап беруші серверлерін сертификаттардың ағымдағы дұрыстығы жөнінде сұрау">

@@ -3,17 +3,17 @@
 
 /* eslint-env browser */
 /* eslint no-unused-vars: [2, {"vars": "local"}] */
-/* import-globals-from ../../framework/test/shared-head.js */
+/* import-globals-from ../../shared/test/shared-head.js */
 
 "use strict";
 
 // Load the shared-head file first.
 Services.scriptloader.loadSubScript(
-  "chrome://mochitests/content/browser/devtools/client/framework/test/shared-head.js",
+  "chrome://mochitests/content/browser/devtools/client/shared/test/shared-head.js",
   this);
 
-const { AddonManager } = Cu.import("resource://gre/modules/AddonManager.jsm", {});
-const { Management } = Cu.import("resource://gre/modules/Extension.jsm", {});
+const { AddonManager } = ChromeUtils.import("resource://gre/modules/AddonManager.jsm", {});
+const { Management } = ChromeUtils.import("resource://gre/modules/Extension.jsm", {});
 
 flags.testing = true;
 registerCleanupFunction(() => {
@@ -405,6 +405,7 @@ function* enableServiceWorkerDebugging() {
   let options = { "set": [
     // Enable service workers.
     ["dom.serviceWorkers.enabled", true],
+    ["dom.push.enabled", true],
     // Accept workers from mochitest's http.
     ["dom.serviceWorkers.testing.enabled", true],
     // Force single content process.

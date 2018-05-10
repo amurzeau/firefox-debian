@@ -7,7 +7,7 @@ Subject: Allow to override ICU_DATA_FILE from the environment
  1 file changed, 3 insertions(+), 1 deletion(-)
 
 diff --git a/build/autoconf/icu.m4 b/build/autoconf/icu.m4
-index 76c9df1f7db5..702317b3fe2c 100644
+index 4c59079bf292..662efc6e92e3 100644
 --- a/build/autoconf/icu.m4
 +++ b/build/autoconf/icu.m4
 @@ -78,7 +78,9 @@ if test -n "$USE_ICU"; then
@@ -19,5 +19,5 @@ index 76c9df1f7db5..702317b3fe2c 100644
 +        ICU_DATA_FILE="icudt${version}l.dat"
 +    fi
  
-     dnl We won't build ICU data as a separate file when building
-     dnl JS standalone so that embedders don't have to deal with it.
+     MOZ_ICU_DATA_ARCHIVE=
+ fi

@@ -120,12 +120,8 @@
 <!ENTITY nssFailure2.title "קישור מאובטח נכשל">
 <!ENTITY nssFailure2.longDesc2 "
 <ul>
-  <li>
-    דף זה לא ניתן להצגה כי לא ניתן לאמת את מהיימנות הנתונים שהתקבלו.
-  </li>
-  <li>
-    נא ליצור קשר עם בעלי האתר וליידע אותם על בעיה זו.
-  </li>
+  <li>לא ניתן להציג את הדף המבוקש כיוון שאין אפשרות לאמת את אמינות המידע שהתקבל.</li>
+  <li>נא ליצור קשר עם בעלי האתר וליידע אותם על בעיה זו.</li>
 </ul>
 ">
 
@@ -178,6 +174,8 @@ Strict Transport Security (HSTS) כדי לציין ש־&brandShortName; יוכל
 <!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
      "NS_ERROR_NET_INADEQUATE_SECURITY". -->
 <!ENTITY inadequateSecurityError.longDesc "<p>האתר בכתובת <span class='hostname'></span> משתמש בטכנולוגית אבטחה שאינה עדכנית וחשופה להתקפות. תוקף יכול בקלות לחשוף מידע שלכאורה אמור היה להיות מוגן. על מנהל האתר לתקן את השרת לפני שיהיה ניתן לבקר באתר זה.</p><p>קוד שגיאה: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
+
+<!ENTITY blockedByPolicy.title "עמוד חסום">
 
 <!ENTITY prefReset.longDesc "נראה שהגדרות אבטחת הרשת שלך עשוי לגרום לכך. האם ברצונך לשחזר להגדרות ברירת מחדל?">
 <!ENTITY prefReset.label "שחזור הגדרות בררת המחדל">

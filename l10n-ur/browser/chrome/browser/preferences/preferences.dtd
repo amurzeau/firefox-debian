@@ -18,12 +18,16 @@
      string visible -->
 <!ENTITY  searchField.width             "15.4em">
 
+<!ENTITY  paneSearchResults.title       "تلاش کے نتائج">
 <!ENTITY  paneGeneral.title             "عمومی">
 <!ENTITY  paneSearch.title              "تلاش کریں">
 <!ENTITY  panePrivacySecurity.title     "رازداری اور سلامتی">
 <!ENTITY  paneContainers.title          "حامل ٹیبز">
 <!ENTITY  paneUpdates.title             "تازہ کاری">
 
+
+
+<!ENTITY  browserPrivacy.label          "براؤزر رازداری">
 
 <!-- LOCALIZATION NOTE (paneSync1.title): This should match syncBrand.fxAccount.label in ../syncBrand.dtd -->
 <!ENTITY  paneSync1.title          "Firefox اکاؤنٹس">

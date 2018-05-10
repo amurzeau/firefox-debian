@@ -52,7 +52,7 @@ can reach it easily. -->
 <!ENTITY  sendLinkToDevice.accesskey         "O">
 <!ENTITY  sendToDeviceFeedback.label         "¡Titaq!">
 <!ENTITY  sendToDeviceOfflineFeedback.label  "Pa cholaj (majun k'amaya'l)">
-<!ENTITY  moveToNewWindow.label              "Rujalik pa jun k'aka' ruwi' kajtz'ïk">
+<!ENTITY  moveToNewWindow.label              "Tisilöx pa K'ak'a' Tzuwäch">
 <!ENTITY  moveToNewWindow.accesskey          "l">
 <!ENTITY  bookmarkAllTabs.label              "Ketz'aqatisäx taq ruwi' pa taq yaketal…">
 <!ENTITY  bookmarkAllTabs.accesskey          "w">
@@ -60,6 +60,8 @@ can reach it easily. -->
 <!ENTITY  undoCloseTab.accesskey             "T">
 <!ENTITY  closeTab.label                     "Titz'apïx ruwi’">
 <!ENTITY  closeTab.accesskey                 "T">
+
+<!ENTITY  hiddenTabs.label                   "Ewan taq Ruwi'">
 
 <!ENTITY  listAllTabs.label      "Kik'utik konojel ri taq ruwi' kajtz'ïk">
 
@@ -192,7 +194,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hideRecentlyBookmarked.label     "Tewäx ri k'a nimakol tiya' retal">
 <!ENTITY hideRecentlyBookmarked.accesskey "T">
 
-<!ENTITY backCmd.label                "Chi ruwäch">
+<!ENTITY backCmd.label                "Chi rij">
 <!ENTITY backCmd.accesskey            "B">
 <!ENTITY backButton.tooltip           "Titzolïx jun ruxaq">
 <!ENTITY forwardCmd.label             "Jun chik">
@@ -222,6 +224,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Keyak taq tzij pa Jutaqil Yakoj">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Ri Okik'amaya'l k'o pa ruq'a' ri näj chajinïk">
 
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "Tijaq ri Ajk'amaya'l Juxunem pas">
+
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Tinuk'samajïx ri rukomonik elesäy awachib'äl chuqa' ri q'axäy atzij rik'in ri ruxaq k'amaya'l">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Tinuk'samajïx ri rukomonik q'axäy atzij rik'in ri ruxaq k'amaya'l">
 <!ENTITY urlbar.webRTCShareScreenNotificationAnchor.tooltip       "Tinuk'samajib'ëx ri kikomonik taq rutzub'al chuqa' ruwäch ruxaq k'amaya'l">
@@ -240,9 +244,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Xeq'at ri taq rutzijol pa re ruxaq k'amaya'l re'.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Xaq'ät ri jutaqil ruyakoj re ruxaq k'amaya'l re'.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Xq'at ri elesäy pop-ups richin re ruxaq k'amaya'l re'.">
-
 <!ENTITY urlbar.canvasBlocked.tooltip            "Xe'aq'ät ri kelesaxik kitzij taq peraj pa re ruxaq k'amaya'l re'.">
 
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "Xq'at chi re ruxaq k'amaya'l re' xrokisaj ri runak'ab'al Adobe Flash.">
 <!ENTITY urlbar.midiBlocked.tooltip              "Xaq'ät ri MIDI rokem re ruxaq k'amaya'l re'.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Tik'ut pe ri natab'äl">
@@ -268,7 +272,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addBookmarksMenu.label             "Titz'aqatisäx Kik'utsamaj taq Yaketal pa Molsamajib'äl">
 <!ENTITY removeBookmarksMenu.label          "Tiyuj el Kik'utsamaj taq Yaketal pa Molsamajib'äl">
 
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -283,7 +287,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY keywordfield.label           "Titz'aqatisäx jun ewan tzij richin re Rukanoxik re'…">
 <!ENTITY keywordfield.accesskey       "e">
 
-<!ENTITY downloads.label              "Taq qasa'n">
+<!ENTITY downloads.label              "Taq qasanïk">
 <!-- LOCALIZATION NOTE (libraryDownloads.label): This label is similar to
   -  downloads.label, but used in the Library panel. -->
 <!ENTITY libraryDownloads.label       "Taq qasanïk">
@@ -299,6 +303,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY inspectContextMenu.label     "Rutz'etik atuxtäq">
 <!ENTITY inspectContextMenu.accesskey "Q">
+
+<!ENTITY inspectA11YContextMenu.label     "Kenik'öx ri taq Richinil Okel">
 
 <!ENTITY fileMenu.label         "Yakb'äl">
 <!ENTITY fileMenu.accesskey       "Y">
@@ -385,10 +391,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Tatzija' ri kiximoj taq ruwi' richin natz'ët kicholajem taq ruwi' pa ch'aqa' chik taq okisaxel.">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "¡K'a majani yexim ri taq ruwi'…!">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "¿La nawajo' ye'atz'ët wawe' ri taq ruwi' ch'aqa' chik taq okisaxel?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Kexim ri taq ajowanik">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Kejaq Kajowab'äl Sync">
@@ -397,10 +402,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Tatikirisaj molojri'ïl pa Ximojri'ïl">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Kenuk'samajïx taq okisaxel…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Ketz'et ximïl taq ruwi' pa ajxikin kajtz'ik">
-
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Tokisäx Jun Chik Okisaxel">
 
-<!ENTITY appMenuRecentHighlights.label "K'ak'a' K'exawachinïk">
+<!ENTITY appMenuRecentHighlights.label "K'ak'a' Ya'on Kiq'ij">
 
 <!ENTITY customizeMenu.addToToolbar.label "Titz'aqatisäx pa Molsamajib'äl">
 <!ENTITY customizeMenu.addToToolbar.accesskey "T">
@@ -440,6 +444,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Tikanöx chuqa' titz'ib'äx ri ochochib'äl">
+<!ENTITY urlbar.placeholder3          "Ketz'ib'äx wawe' ri taq tzij chuqa' taq ochochib'äl yekanöx">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "K'amal:">
@@ -603,7 +608,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY playPluginCmd.accesskey      "t">
 <!ENTITY hidePluginCmd.label          "Tewäx re nak'ab'äl re'">
 <!ENTITY hidePluginCmd.accesskey      "e">
-<!ENTITY copyLinkCmd.label            "Ruwachib'exik rub'ey ximon tzij">
+<!ENTITY copyLinkCmd.label            "Tiwachib'ëx Ruk'ojlib'al Ximonel">
 <!ENTITY copyLinkCmd.accesskey        "i">
 <!ENTITY copyImageCmd.label           "Ruwachib'exik rub'ey wachib'äl">
 <!ENTITY copyImageCmd.accesskey       "i">
@@ -737,10 +742,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY bidiSwitchTextDirectionItem.accesskey    "r">
 <!ENTITY bidiSwitchTextDirectionItem.commandkey   "X">
 
-<!ENTITY findOnCmd.label     "Rukanoxik pa re ruxaq…">
+<!ENTITY findOnCmd.label     "Tikanöx pa Re Ruxaq Re'…">
 <!ENTITY findOnCmd.accesskey "R">
 <!ENTITY findOnCmd.commandkey "f">
-<!ENTITY findAgainCmd.label  "Rukamuluxik ri rukanoxik">
+<!ENTITY findAgainCmd.label  "Tikanöx Chik">
 <!ENTITY findAgainCmd.accesskey "k">
 <!ENTITY findAgainCmd.commandkey "g">
 <!ENTITY findAgainCmd.commandkey2 "VK_F3">
@@ -749,7 +754,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY spellAddDictionaries.label "Ruya'ik taq soltzij…">
 <!ENTITY spellAddDictionaries.accesskey "R">
 
-<!ENTITY editBookmark.done.label                     "K'isoj">
+<!ENTITY editBookmark.done.label                     "Xk'achoj">
 <!ENTITY editBookmark.removeBookmark.accessKey       "R">
 
 <!-- LOCALIZATION NOTE (identity.securityView.label)
@@ -806,7 +811,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "Ximon taq ruwi'">
 <!ENTITY syncedTabs.sidebar.noclients.label    "Tatikirisaj molojri'ïl pa Firefox pa juley chik taq okisaxel richin ye'atz'ët taq ruwi' awichin wawe'.">
-<!ENTITY syncedTabs.sidebar.noclients.title    "¡K'a majani yexim ri taq ruwi'…!">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "¿La nawajo' ye'atz'ët wawe' ri taq ruwi' ch'aqa' chik taq okisaxel?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Tatikirisaj molojri'ïl richin nitz'et jun kicholb'al taq kiwi' juley chik taq awokisaxel.">
 <!ENTITY syncedTabs.sidebar.unverified.label   "K'atzinel nijikib'äx ri rub'i' ataqoya'l.">
@@ -816,7 +820,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Tatzija' ri kiximoj taq ruwi' richin natz'ët kicholajem taq ruwi' pa ch'aqa' chik taq okisaxel.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Kekanöx ri taq ruwi' eximon">
-
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Tokisäx Jun Chik Okisaxel">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
@@ -854,7 +857,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY customizeMode.menuAndToolbars.header3 "Ke'aqirirej ri jeb'ël taq awachinaq pa ri kikajtz'ik samajib'äl o chi rij ri k'utsamaj.">
 <!ENTITY customizeMode.restoreDefaults "Ke'atzolij ri taq wachinel e k'o wi">
-<!ENTITY customizeMode.done "K'isoj">
+<!ENTITY customizeMode.done "Xk'achoj">
 <!ENTITY customizeMode.titlebar "Rub'i' molsamaj">
 <!ENTITY customizeMode.extraDragSpace "Tiqirirëx Kojol">
 <!ENTITY customizeMode.toolbars2 "Taq cholsamajib'äl">
@@ -986,11 +989,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.panelUI.label2 "Titikirisäx chik richin nik'ex &brandShorterName;">
 
 <!ENTITY newTabControlled.message "Jun k'amal xujäl ri ruxaq natz'ët toq najäq jun K'ak'a' Ruwi'. Yatikïr natzolij ri taq anuk'ulem we man niqa ta chawäch re jaloj re'.">
+
 <!ENTITY newTabControlled.header.message "Xjal ri K'ak'a' Ruwi'.">
 <!ENTITY newTabControlled.keepButton.label "Kek'oje' na ri taq Jaloj">
 <!ENTITY newTabControlled.keepButton.accesskey "K">
 <!ENTITY newTabControlled.restoreButton.label "Ketzolïx ri taq Nuk'ulem">
 <!ENTITY newTabControlled.restoreButton.accesskey "K">
+
+<!ENTITY newTabControlled.disableButton.label "Tichup ri K'amal">
+<!ENTITY newTabControlled.disableButton.accesskey "T">
+
+<!ENTITY homepageControlled.message "Jun k'amal xujäl ri ruxaq natz'ët achi'el tikirib'äl ruxaq. Yatikïr natzolij ri taq anuk'ulem we man niqa ta chawäch re jaloj re'.">
+<!ENTITY homepageControlled.header.message "Xajäl ri tikirib'äl ruxaq.">
+<!ENTITY homepageControlled.keepButton.label "Kek'oje' na ri taq Jaloj">
+<!ENTITY homepageControlled.keepButton.accesskey "K">
+<!ENTITY homepageControlled.disableButton.label "Tichup ri K'amal">
+<!ENTITY homepageControlled.disableButton.accesskey "T">
 
 <!ENTITY pageActionButton.tooltip "Taq rub'anoj ruxaq">
 <!ENTITY pageAction.addToUrlbar.label "Titz'aqatisäx ri Kikajtz'ik Ochochib'äl">
@@ -1001,6 +1015,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pageAction.sendTabToDevice.label "Titaq Ruwi' pan Okisaxel">
 <!ENTITY sendToDevice.syncNotReady.label "Tajin yexim ri taq Okisaxel…">
+
+<!ENTITY pageAction.shareUrl.label "Tikomonïx">
 
 <!ENTITY libraryButton.tooltip "Titz'et ri natab'äl, yakon taq yaketal, chuqa' ch'aqa' chik">
 
