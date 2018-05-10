@@ -74,8 +74,6 @@ debian/firefox usr/bin
 usr/lib/@browser@/chrome.manifest
 usr/lib/@browser@/browser/chrome.manifest
 
-usr/lib/@browser@/@ICU_DATA_FILE@
-
 usr/lib/@browser@/gmp-clearkey/0.1/manifest.json
 usr/lib/@browser@/gmp-clearkey/0.1/libclearkey.so
 
