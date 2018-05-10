@@ -4,8 +4,9 @@
 // /etc/@browser@ directory, override any preference you can see in
 // about:config.
 //
-// Note that lockPref is allowed in these preferences files if you
-// don't want users to be able to override some preferences.
+// Note that pref("name", value, locked) is allowed in these
+// preferences files if you don't want users to be able to override
+// some preferences.
 
 pref("extensions.update.enabled", true);
 
@@ -19,7 +20,7 @@ pref("browser.shell.checkDefaultBrowser", false);
 pref("media.gmp-gmpopenh264.enabled", false);
 
 // Default to classic view for about:newtab
-sticky_pref("browser.newtabpage.enhanced", false);
+pref("browser.newtabpage.enhanced", false, sticky);
 
 // Disable health report upload
 pref("datareporting.healthreport.uploadEnabled", false);
