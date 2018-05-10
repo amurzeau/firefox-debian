@@ -1,6 +1,31 @@
-firefox-esr (60.0esr-1) UNRELEASED; urgency=medium
+firefox-esr (60.0esr-1) experimental; urgency=medium
 
   * New upstream release.
+  * Fixes for mfsa2018-11, also known as
+    CVE-2018-5154, CVE-2018-5155, CVE-2018-5157, CVE-2018-5158,
+    CVE-2018-5159, CVE-2018-5160, CVE-2018-5152, CVE-2018-5153,
+    CVE-2018-5163, CVE-2018-5164, CVE-2018-5166, CVE-2018-5167,
+    CVE-2018-5168, CVE-2018-5169, CVE-2018-5172, CVE-2018-5173,
+    CVE-2018-5175, CVE-2018-5176, CVE-2018-5177, CVE-2018-5165,
+    CVE-2018-5180, CVE-2018-5181, CVE-2018-5182, CVE-2018-5151,
+    CVE-2018-5150.
+
+  * debian/control*:
+    - Bump nspr, nss, sqlite, rustc and cargo build dependencies.
+    - Update Maintainer and Vcs fields, moving off alioth.
+  * debian/browser.js.in, debian/vendor.js: Use the new syntax for
+    locked and sticky prefs.
+  * debian/browser.NEWS.in: Add a NEWS about the deprecation of lockPref.
+  * debian/rules: Automatically find the ICU data file name.
+  * debian/browser.mozconfig.in: Revert workaround for bz#1341234.
+  * debian/browser.install.in, debian/rules: Don't install the ICU data
+    file, it's linked as a data section in libxul.
+  * debian/control, debian/rules: Remove iceweasel transitional packages
+    in non-backports.
+
+  * modules/libpref/parser/src/lib.rs: Adapt to upstream changes to
+    keep supporting lockPref() for transition purposes, now that upstream
+    has locked prefs out of the box.
 
  -- Mike Hommey <glandium@debian.org>  Thu, 10 May 2018 09:36:46 +0900
 
