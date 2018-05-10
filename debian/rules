@@ -121,10 +121,8 @@ endif
 
 CXXFLAGS = $(CFLAGS)
 
+ifeq ($(DEB_HOST_ARCH_ENDIAN),big)
 ICU_VERSION := $(shell echo U_ICU_VERSION_MAJOR_NUM | cpp -P -include $(CURDIR)/intl/icu/source/common/unicode/uvernum.h)
-ifeq ($(DEB_HOST_ARCH_ENDIAN),little)
-ICU_DATA_FILE = icudt$(ICU_VERSION)l.dat
-else
 ICU_DATA_FILE = icudt$(ICU_VERSION)b.dat
 endif
 
@@ -153,7 +151,7 @@ debian/l10n/$(PRODUCT)-l10n.control: %: %.in
 
 DICT_DIR := /usr/share/hunspell
 
-$(PREPROCESSED_FILES): VARS = GRE_VERSION DICT_DIR $(PRODUCT) $(call uc,$(PRODUCT)) $(Product) MOZ_APP_REMOTINGNAME $(SYSTEM_LIBS_VARS) SHORT_SOURCE_CHANNEL GTK3 DIST TRANSITION MOZ_FFVPX ICU_DATA_FILE CRASH_REPORTER DEB_HOST_ARCH
+$(PREPROCESSED_FILES): VARS = GRE_VERSION DICT_DIR $(PRODUCT) $(call uc,$(PRODUCT)) $(Product) MOZ_APP_REMOTINGNAME $(SYSTEM_LIBS_VARS) SHORT_SOURCE_CHANNEL GTK3 DIST TRANSITION MOZ_FFVPX CRASH_REPORTER DEB_HOST_ARCH
 debian/control: VARS += L10N_PACKAGES_DEPS PRODUCT
 $(PREPROCESSED_FILES):
 	$(PYTHON) python/mozbuild/mozbuild/preprocessor.py --marker % -Fsubstitution $(foreach var,$(VARS),-D$(var)="$($(var))" )$< > $@
