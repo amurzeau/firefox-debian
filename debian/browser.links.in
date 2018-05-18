@@ -7,7 +7,6 @@
 /usr/share/@browser@/browser/chrome/icons/default/default128.png /usr/share/icons/hicolor/128x128/apps/@browser@.png
 /etc/@browser@ /usr/share/@browser@/browser/defaults/syspref
 
-/usr/share/@browser@/browser/icons /usr/lib/@browser@/browser/icons
 /usr/share/@browser@/browser/chrome /usr/lib/@browser@/browser/chrome
 /usr/share/@browser@/browser/defaults /usr/lib/@browser@/browser/defaults
 
