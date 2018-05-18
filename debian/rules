@@ -317,7 +317,7 @@ else
 endif
 
 override_dh_shlibdeps:
-	dh_shlibdeps -a -l$(CURDIR)/debian/tmp$(LIB_DIR)
+	dh_shlibdeps -a -l$(CURDIR)/debian/tmp$(LIB_DIR) -- -xlibgtk2.0-0
 
 ifdef TRANSITION
 override_dh_gencontrol:
