@@ -1,3 +1,20 @@
+firefox (60.0.1-2) unstable; urgency=medium
+
+  * third_party/rust/libc/.cargo-checksum.json,
+    third_party/rust/libc/src/unix/notbsd/linux/mod.rs,
+    third_party/rust/libc/src/unix/notbsd/linux/musl/mod.rs,
+    third_party/rust/libc/src/unix/notbsd/linux/other/mod.rs,
+    third_party/rust/libc/src/unix/notbsd/linux/s390x.rs: Apply upstream patch
+    to add struct ucred for Linux on MIPS.
+  * gfx/skia/skia/src/jumper/SkJumper_stages.cpp: Fix Skia build on arm64
+    linux with GCC. bz#1462868.
+  * intl/icu_sources_data.py: Add --disable-layoutex when running ICU
+    configure. bz#1462859.
+  * media/webrtc/trunk/gtest/moz.build: Link chromium_atomics to webrtc tests.
+    bz#1462873.
+
+ -- Mike Hommey <glandium@debian.org>  Sat, 19 May 2018 13:07:39 +0900
+
 firefox (60.0.1-1) unstable; urgency=medium
 
   * New upstream release.
