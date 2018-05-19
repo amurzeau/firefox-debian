@@ -1,4 +1,6 @@
 fixes/Allow-.js-preference-files-to-set-locked-prefs-with-.patch
+fixes/Bug-1462859-Add-disable-layoutex-when-running-ICU-co.patch
+fixes/Bug-1462873-Link-chromium_atomics-to-webrtc-tests.-r.patch
 porting/Add-xptcall-support-for-SH4-processors.patch
 porting/NSS-Fix-FTBFS-on-Hurd-because-of-MAXPATHLEN.patch
 porting/Make-powerpc-not-use-static-page-sizes-in-mozjemallo.patch
@@ -6,6 +8,8 @@ porting/Disable-libyuv-assembly-on-mips64.patch
 porting/Fix-CPU_ARCH-test-for-libjpeg-on-mips.patch
 porting/Work-around-Debian-bug-844357.patch
 porting/Bug-1444303-MIPS-Fix-build-failures-after-Bug-142558.patch
+porting/Add-struct-ucred-for-Linux-on-MIPS.patch
+porting/Bug-1462868-Fix-Skia-build-on-arm64-linux-with-GCC.-.patch
 prefs/Set-javascript.options.showInConsole.patch
 prefs/Set-DPI-to-system-settings.patch
 prefs/Don-t-auto-disable-extensions-in-system-directories.patch
