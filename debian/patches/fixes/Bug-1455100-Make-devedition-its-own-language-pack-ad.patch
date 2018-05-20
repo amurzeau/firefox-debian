@@ -1,0 +1,109 @@
+From: Justin Wood <Callek@gmail.com>
+Date: Thu, 19 Apr 2018 14:48:11 -0400
+Subject: Bug 1455100 - Make devedition its own language pack addon id, by
+ using MOZ_LANGPACK_EID again. r=nalexander,Pike
+
+MozReview-Commit-ID: z1SJmCQflq
+---
+ browser/locales/Makefile.in                               | 4 ++++
+ python/mozbuild/mozbuild/action/langpack_manifest.py      | 8 ++++++--
+ .../mozbuild/test/action/test_langpack_manifest.py        | 2 ++
+ toolkit/locales/l10n.mk                                   | 2 +-
+ 4 files changed, 13 insertions(+), 3 deletions(-)
+
+diff --git a/browser/locales/Makefile.in b/browser/locales/Makefile.in
+index ab1f2a8032ea..f08d05247fa9 100644
+--- a/browser/locales/Makefile.in
++++ b/browser/locales/Makefile.in
+@@ -20,7 +20,11 @@ PWD := $(CURDIR)
+ # pulls. You may override them if you provide your own files.
+ ZIP_IN ?= $(ABS_DIST)/$(PACKAGE)
+ 
++ifdef MOZ_DEV_EDITION
++MOZ_LANGPACK_EID=langpack-$(AB_CD)@devedition.mozilla.org
++else
+ MOZ_LANGPACK_EID=langpack-$(AB_CD)@firefox.mozilla.org
++endif
+ # For Nightly, we know where to get the builds from to do local repacks
+ ifdef NIGHTLY_BUILD
+ export EN_US_BINARY_URL ?= https://archive.mozilla.org/pub/firefox/nightly/latest-mozilla-central
+diff --git a/python/mozbuild/mozbuild/action/langpack_manifest.py b/python/mozbuild/mozbuild/action/langpack_manifest.py
+index 0b3e26077542..1864c04ad2be 100644
+--- a/python/mozbuild/mozbuild/action/langpack_manifest.py
++++ b/python/mozbuild/mozbuild/action/langpack_manifest.py
+@@ -26,6 +26,7 @@ from mozpack.chrome.manifest import (
+ )
+ from mozbuild.configure.util import Version
+ from mozbuild.preprocessor import Preprocessor
++import buildconfig
+ 
+ 
+ def write_file(path, content):
+@@ -379,7 +380,7 @@ def get_version_maybe_buildid(min_version):
+ #    }
+ ###
+ def create_webmanifest(locstr, min_app_ver, max_app_ver, app_name,
+-                       l10n_basedir, defines, chrome_entries):
++                       l10n_basedir, langpack_eid, defines, chrome_entries):
+     locales = map(lambda loc: loc.strip(), locstr.split(','))
+     main_locale = locales[0]
+ 
+@@ -393,7 +394,7 @@ def create_webmanifest(locstr, min_app_ver, max_app_ver, app_name,
+         'manifest_version': 2,
+         'applications': {
+             'gecko': {
+-                'id': 'langpack-{0}@firefox.mozilla.org'.format(main_locale),
++                'id': langpack_eid,
+                 'strict_min_version': min_app_ver,
+                 'strict_max_version': max_app_ver,
+             }
+@@ -446,6 +447,8 @@ def main(args):
+                         help='Name of the application the langpack is for')
+     parser.add_argument('--l10n-basedir',
+                         help='Base directory for locales used in the language pack')
++    parser.add_argument('--langpack-eid',
++                        help='Language pack id to use for this locale')
+     parser.add_argument('--defines', default=[], nargs='+',
+                         help='List of defines files to load data from')
+     parser.add_argument('--input',
+@@ -476,6 +479,7 @@ def main(args):
+         args.max_app_ver,
+         args.app_name,
+         args.l10n_basedir,
++        args.langpack_eid,
+         defines,
+         chrome_entries
+     )
+diff --git a/python/mozbuild/mozbuild/test/action/test_langpack_manifest.py b/python/mozbuild/mozbuild/test/action/test_langpack_manifest.py
+index fc22b9c61e10..328a8440b62b 100644
+--- a/python/mozbuild/mozbuild/test/action/test_langpack_manifest.py
++++ b/python/mozbuild/mozbuild/test/action/test_langpack_manifest.py
+@@ -31,6 +31,7 @@ class TestGenerateManifest(unittest.TestCase):
+             '57.0.*',
+             'Firefox',
+             '/var/vcs/l10n-central',
++            'langpack-fi@firefox.mozilla.og',
+             ctx,
+             {},
+         )
+@@ -50,6 +51,7 @@ class TestGenerateManifest(unittest.TestCase):
+             '57.0.*',
+             'Firefox',
+             '/var/vcs/l10n-central',
++            'langpack-fi@firefox.mozilla.og',
+             ctx,
+             {},
+         )
+diff --git a/toolkit/locales/l10n.mk b/toolkit/locales/l10n.mk
+index 14dc0655a110..7f39ed994341 100644
+--- a/toolkit/locales/l10n.mk
++++ b/toolkit/locales/l10n.mk
+@@ -211,7 +211,7 @@ package-langpack-%: XPI_NAME=locale-$*
+ package-langpack-%: AB_CD=$*
+ package-langpack-%:
+ 	$(NSINSTALL) -D $(DIST)/$(PKG_LANGPACK_PATH)
+-	$(call py_action,langpack_manifest,--locales $(AB_CD) --min-app-ver $(MOZ_APP_VERSION) --max-app-ver $(MOZ_APP_MAXVERSION) --app-name "$(MOZ_APP_DISPLAYNAME)" --l10n-basedir "$(L10NBASEDIR)" --defines $(LANGPACK_DEFINES) --input $(DIST)/xpi-stage/locale-$(AB_CD))
++	$(call py_action,langpack_manifest,--locales $(AB_CD) --min-app-ver $(MOZ_APP_VERSION) --max-app-ver $(MOZ_APP_MAXVERSION) --app-name "$(MOZ_APP_DISPLAYNAME)" --l10n-basedir "$(L10NBASEDIR)" --defines $(LANGPACK_DEFINES) --langpack-eid "$(MOZ_LANGPACK_EID)" --input $(DIST)/xpi-stage/locale-$(AB_CD))
+ 	$(call py_action,zip,-C $(DIST)/xpi-stage/locale-$(AB_CD) -x **/*.manifest -x **/*.js -x **/*.ini $(LANGPACK_FILE) $(PKG_ZIP_DIRS) manifest.json)
+ 
+ # This variable is to allow the wget-en-US target to know which ftp server to download from
