@@ -1,3 +1,12 @@
+firefox (60.0.1-3) unstable; urgency=medium
+
+  * debian/browser.links.in: Remove /usr/lib/*/browser/icons symlink, leftover
+    after the removal of /usr/share/*/browser/icons. Closes: #893323.
+
+  * media/webrtc/trunk/moz.build: Only build webrtc neon on aarch64.
+
+ -- Mike Hommey <glandium@debian.org>  Sun, 20 May 2018 10:12:15 +0900
+
 firefox (60.0.1-2) unstable; urgency=medium
 
   * third_party/rust/libc/.cargo-checksum.json,
@@ -19,8 +28,6 @@ firefox (60.0.1-1) unstable; urgency=medium
 
   * New upstream release.
 
-  * debian/browser.links.in: Remove /usr/lib/*/browser/icons symlink, leftover
-    after the removal of /usr/share/*/browser/icons. Closes: #893323.
   * debian/control*: Remove mozplugger suggestion. Closes: #888396.
   * debian/browser.install.in, debian/browser.mozconfig.in, debian/control.in,
     debian/rules: Remove the option to build against gtk+2, it is not
