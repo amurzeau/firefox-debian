@@ -1,3 +1,18 @@
+firefox (60.0.1-5) unstable; urgency=medium
+
+  * gfx/skia/moz.build: Revert change from 60.0.1-4.
+  * dom/media/webaudio/blink/DenormalDisabler.h: Avoid using vmrs/vmsr on
+    armel.
+  * mfbt/LinuxSignal.h, mfbt/moz.build,
+    tools/profiler/core/platform-linux-android.cpp: Remove
+    MOZ_SIGNAL_TRAMPOLINE. bz#1463035.
+  * build/autoconf/arch.m4: Add -mfloat-abi=softfp to NEON_FLAGS when it makes
+    sense. bz#1463036.
+  * xpcom/string/moz.build: Use HAVE_ARM_NEON instead of BUILD_ARM_NEON for
+    nsUTF8UtilsNEON.cpp. bz#1463036.
+
+ -- Mike Hommey <glandium@debian.org>  Tue, 22 May 2018 08:01:55 +0900
+
 firefox (60.0.1-4) unstable; urgency=medium
 
   * gfx/skia/moz.build: Don't build skia neon on armel.
