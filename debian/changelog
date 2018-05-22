@@ -1,3 +1,35 @@
+firefox-esr (60.0.1esr-2) experimental; urgency=medium
+
+  * third_party/rust/libc/.cargo-checksum.json,
+    third_party/rust/libc/src/unix/notbsd/linux/mod.rs,
+    third_party/rust/libc/src/unix/notbsd/linux/musl/mod.rs,
+    third_party/rust/libc/src/unix/notbsd/linux/other/mod.rs,
+    third_party/rust/libc/src/unix/notbsd/linux/s390x.rs: Apply upstream patch
+    to add struct ucred for Linux on MIPS.
+  * gfx/skia/skia/src/jumper/SkJumper_stages.cpp: Fix Skia build on arm64
+    linux with GCC. bz#1462868.
+  * intl/icu_sources_data.py: Add --disable-layoutex when running ICU
+    configure. bz#1462859.
+  * media/webrtc/trunk/gtest/moz.build: Link chromium_atomics to webrtc tests.
+    bz#1462873.
+  * media/webrtc/trunk/moz.build: Only build webrtc neon on aarch64.
+  * browser/locales/Makefile.in,
+    python/mozbuild/mozbuild/action/langpack_manifest.py,
+    python/mozbuild/mozbuild/test/action/test_langpack_manifest.py,
+    toolkit/locales/l10n.mk: Use MOZ_LANGPACK_EID in langpacks manifest.json.
+    bz#1455100. Closes: #899160.
+  * dom/media/webaudio/blink/DenormalDisabler.h: Avoid using vmrs/vmsr on
+    armel.
+  * mfbt/LinuxSignal.h, mfbt/moz.build,
+    tools/profiler/core/platform-linux-android.cpp: Remove
+    MOZ_SIGNAL_TRAMPOLINE. bz#1463035.
+  * build/autoconf/arch.m4: Add -mfloat-abi=softfp to NEON_FLAGS when it makes
+    sense. bz#1463036.
+  * xpcom/string/moz.build: Use HAVE_ARM_NEON instead of BUILD_ARM_NEON for
+    nsUTF8UtilsNEON.cpp. bz#1463036.
+
+ -- Mike Hommey <glandium@debian.org>  Tue, 22 May 2018 10:05:55 +0900
+
 firefox-esr (60.0.1esr-1) experimental; urgency=medium
 
   * New upstream release.
