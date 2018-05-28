@@ -1,3 +1,25 @@
+firefox (61.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2018-15, also known as:
+    CVE-2018-12359, CVE-2018-12360, CVE-2018-12361, CVE-2018-12358,
+    CVE-2018-12362, CVE-2018-5156, CVE-2018-12363, CVE-2018-12364,
+    CVE-2018-12365, CVE-2018-12371, CVE-2018-12366, CVE-2018-12367,
+    CVE-2018-12369, CVE-2018-12370, CVE-2018-5186, CVE-2018-5187,
+    CVE-2018-5188.
+
+  * debian/control*:
+    - Bump nss and sqlite build dependencies.
+    - Add a build dependency on python3.
+  * debian/browser.install.in: Adjust to upstream changes.
+  * debian/vendor.js: Relax the addon signature requirements.
+
+  * toolkit/mozapps/extensions/content/extensions.js,
+    toolkit/mozapps/extensions/internal/XPIDatabase.jsm: Allow to relax the
+    addon signature requirements.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 27 Jun 2018 10:25:44 +0900
+
 firefox (60.0.2-2) unstable; urgency=medium
 
   * build/unix/elfhack/elfhack.cpp, build/unix/elfhack/inject.c,
