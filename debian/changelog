@@ -1,3 +1,14 @@
+firefox (60.0.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2018-14, also known as CVE-2018-6126.
+
+  * debian/upstream.mk: Use the same logic for betas as for releases to find
+    the source.
+  * debian/browser.NEWS.in: Adjust to show the ESR version.
+
+ -- Mike Hommey <glandium@debian.org>  Fri, 08 Jun 2018 18:25:04 +0900
+
 firefox (60.0.1-5) unstable; urgency=medium
 
   * gfx/skia/moz.build: Revert change from 60.0.1-4.
