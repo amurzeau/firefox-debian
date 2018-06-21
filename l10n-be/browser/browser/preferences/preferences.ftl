@@ -73,6 +73,41 @@ should-restart-ok = Перазапусціць { -brand-short-name } зараз
 cancel-no-restart-button = Скасаваць
 restart-later = Перазапусціць пазней
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Пашырэнне <img data-l10n-name="icon"/> { $name } кантралюе вашу хатнюю старонку.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Пашырэнне <img data-l10n-name="icon"/> { $name } кантралюе вашу старонку новай карткі.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Пашырэнне <img data-l10n-name="icon"/> { $name } устанавіла ваш прадвызначаны рухавік пошуку.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Пашырэнне <img data-l10n-name="icon"/> { $name } патрабуе для працы "Карткі ў кантэйнеры".
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Пашырэнне, <img data-l10n-name="icon"/> { $name }, кантралюе ахову ад сачэння.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Пашырэнне <img data-l10n-name="icon"/> { $name } кантралюе спосаб злучэння { -brand-short-name } з Інтэрнэтам.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Каб уключыць пашырэнне, зайдзіце ў <img data-l10n-name="addons-icon"/> Дадаткаў ў меню <img data-l10n-name="menu-icon"/>.
+
 ## Preferences UI Search Results
 
 search-results-header = Вынікі пошуку
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = паказваць пустую старонку
 startup-prev-session =
     .label = паказваць апошнія вокны і карткі
+startup-restore-previous-session =
+    .label = Узнаўляць папярэдні сеанс
+    .accesskey = с
 disable-extension =
     .label = Адключыць пашырэнне
 home-page-header = Хатняя старонка
@@ -300,6 +338,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Проксі-сервер
+network-proxy-connection-description = Наладзіць спосаб злучэння { -brand-short-name } з Інтэрнэтам.
 network-proxy-connection-learn-more = Падрабязней
 network-proxy-connection-settings =
     .label = Налады…
@@ -543,6 +582,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Памятаць гісторыю маіх аглядання і сцягванняў
     .accesskey = а
+history-remember-browser-option =
+    .label = Памятаць гісторыю аглядання і сцягванняў
+    .accesskey = П
 history-remember-search-option =
     .label = Памятаць гісторыю пошуку і запаўнення формаў
     .accesskey = ш
@@ -559,6 +601,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Кукі і дадзеныя сайтаў
+sitedata-total-size-calculating = Падлік памеру дадзеных сайтаў і кэша…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Вашы захаваныя кукі, дадзеныя сайтаў і кэш зараз займаюць { $value } { $unit } на дыску.
 sitedata-learn-more = Даведацца больш
 sitedata-accept-cookies-option =
     .label = Прымаць кукі і дадзеныя з вэб-сайтаў (рэкамендуецца)
@@ -653,6 +700,12 @@ permissions-notification-link = Падрабязней
 permissions-notification-pause =
     .label = Прыпыніць апавяшчэнні да перазапуску { -brand-short-name }
     .accesskey = а
+permissions-block-autoplay-media =
+    .label = Забараніць вэб-сайтам аўтаматычна прайграваць медыя з гукам
+    .accesskey = З
+permissions-block-autoplay-media-exceptions =
+    .label = Выключэнні…
+    .accesskey = к
 permissions-block-popups =
     .label = Блакаваць выплыўныя вокны
     .accesskey = Б
@@ -679,6 +732,9 @@ collection-health-report =
     .label = Дазволіць { -brand-short-name } адпраўляць тэхнічныя звесткі і звесткі ўзаемадзеяння ў { -vendor-short-name }
     .accesskey = к
 collection-health-report-link = Даведацца больш
+collection-studies =
+    .label = Дазволіць { -brand-short-name } усталёўваць і выконваць даследаванні
+collection-studies-link = Прагляд даследаванняў { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Адпраўка дадзеных адключана для гэтай канфігурацыі зборкі

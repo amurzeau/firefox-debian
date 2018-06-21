@@ -73,6 +73,41 @@ should-restart-ok = { -brand-short-name } қазір қайта қосу
 cancel-no-restart-button = Бас тарту
 restart-later = Қайта қосуды кейін орындау
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = <img data-l10n-name="icon"/> { $name } кеңейтуі үй бетіңізді басқарып тұр.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = <img data-l10n-name="icon"/> { $name } кеңейтуі Жаңа бетті басқарып тұр.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = <img data-l10n-name="icon"/> { $name } кеңейтуі сіздің негізгі іздеу жүйеңізді орнатты.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = <img data-l10n-name="icon"/> { $name } кеңейтуі контейнерлік беттерді басқарып тұр.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = <img data-l10n-name="icon"/> { $name } кеңейтуі бақылаудан қорғанысты басқарып тұр.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = <img data-l10n-name="icon"/> { $name } кеңейтуі { -brand-short-name } интернетке байланысу тәсілін басқарып тұр.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Кеңейтуді іске қосу үшін, <img data-l10n-name="menu-icon"/> мәзіріндегі <img data-l10n-name="addons-icon"/> қосымшаларына өтіңіз.
+
 ## Preferences UI Search Results
 
 search-results-header = Іздеу нәтижелері
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = Таза парақты көрсету
 startup-prev-session =
     .label = Алдында ашылған терезелер мен беттерді көрсету
+startup-restore-previous-session =
+    .label = Алдыңғы сессияны қалпына келтіру
+    .accesskey = с
 disable-extension =
     .label = Кеңейтуді сөндіру
 home-page-header = Үй парағы
@@ -297,6 +335,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Желілік прокси
+network-proxy-connection-description = { -brand-short-name } интернетпен қалай байланысатынын баптау
 network-proxy-connection-learn-more = Көбірек білу
 network-proxy-connection-settings =
     .label = Баптау…
@@ -540,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Менің шолу тарихымды және жүктемелер тарихын сақтау
     .accesskey = М
+history-remember-browser-option =
+    .label = Шолу және жүктемелер тарихын сақтау
+    .accesskey = т
 history-remember-search-option =
     .label = Іздеу және формалар тарих сақтау
     .accesskey = з
@@ -556,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cookies файлдары және сайт деректері
+sitedata-total-size-calculating = Сайттар деректері және кэш өлшемін есептеу…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Сізде сақталған cookies файлдары, сайт деректері және кэш қазір { $value } { $unit } диск орнын қолдануда.
 sitedata-learn-more = Көбірек білу
 sitedata-accept-cookies-option =
     .label = Веб-сайттардан cookies файлдарын және сайттар деректерін қабылдау (ұсынылады)
@@ -650,6 +697,12 @@ permissions-notification-link = Көбірек білу
 permissions-notification-pause =
     .label = Хабарламаларды { -brand-short-name } қайта іске қосылғанша дейін аялдату
     .accesskey = д
+permissions-block-autoplay-media =
+    .label = Веб-сайттарға дыбысы бар медианы автоойнатуды бұғаттау
+    .accesskey = б
+permissions-block-autoplay-media-exceptions =
+    .label = Ережелерден бөлек…
+    .accesskey = Е
 permissions-block-popups =
     .label = "Атып шығатын" терезелерді болдырмау
     .accesskey = б
@@ -676,6 +729,9 @@ collection-health-report =
     .label = { -brand-short-name } үшін { -vendor-short-name } адресіне техникалық және әрекеттесу деректерін жіберуді рұқсат ету
     .accesskey = р
 collection-health-report-link = Көбірек білу
+collection-studies =
+    .label = { -brand-short-name } үшін зерттеулерді орнатып, орындауды рұқсат ету
+collection-studies-link = { -brand-short-name } зерттеулерін қарау
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Деректер есептемесін беру бұл жинақта сөндірілген

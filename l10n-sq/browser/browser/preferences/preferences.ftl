@@ -45,6 +45,9 @@ policies-notice =
 pane-general-title = Të përgjithshme
 category-general =
     .tooltiptext = { pane-general-title }
+pane-home-title = Kreu
+category-home =
+    .tooltiptext = { pane-home-title }
 pane-search-title = Kërkim
 category-search =
     .tooltiptext = { pane-search-title }
@@ -69,6 +72,41 @@ should-restart-title = Riniseni { -brand-short-name }-in
 should-restart-ok = Rinise { -brand-short-name }-in tani
 cancel-no-restart-button = Anuloje
 restart-later = Riniseni Më Vonë
+
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Faqen tuaj hyrëse e kontrollon një zgjerim, <img data-l10n-name="icon"/> { $name }.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Faqen tuaj Skedë e Re e kontrollon një zgjerim, <img data-l10n-name="icon"/> { $name }.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Një zgjerim, <img data-l10n-name="icon"/> { $name }, ka caktuar motorin tuaj parazgjedhje për kërkime.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Një zgjerim, <img data-l10n-name="icon"/> { $name }, lyp Skeda Kontejneri.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Një zgjerim, <img data-l10n-name="icon"/> { $name }, po kontrollon mbrojtjen nga gjurmimet.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Një zgjerim, <img data-l10n-name="icon"/> { $name }, kontrollon se si lidhet në internet { -brand-short-name }-i.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Që të aktivizoni zgjerimin, shkoni te Shtesa <img data-l10n-name="addons-icon"/> te menuja <img data-l10n-name="menu-icon"/>.
 
 ## Preferences UI Search Results
 
@@ -107,6 +145,9 @@ startup-blank-page =
     .label = Shfaq një faqe të zbrazët
 startup-prev-session =
     .label = Shfaq dritaret dhe skedat e mia të herës së fundit
+startup-restore-previous-session =
+    .label = Rikthe sesionin e mëparshëm
+    .accesskey = R
 disable-extension =
     .label = Çaktivizoje Zgjerimin
 home-page-header = Faqe Hyrëse
@@ -294,6 +335,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Ndërmjetës Rrjeti
+network-proxy-connection-description = Formësoni se si lidhet në internet { -brand-short-name }-i.
 network-proxy-connection-learn-more = Mësoni Më Tepër
 network-proxy-connection-settings =
     .label = Rregullime…
@@ -301,9 +343,26 @@ network-proxy-connection-settings =
 
 ## Home Section
 
+home-new-windows-tabs-header = Dritare dhe Skeda të Reja
+home-new-windows-tabs-description2 = Zgjidhni çfarë shihni kur hapni faqen tuaj hyrëse, dritare të reja dhe skeda të reja.
 
 ## Home Section - Home Page Customization
 
+home-homepage-mode-label = Faqen hyrëse dhe dritare të reja
+home-newtabs-mode-label = Skeda të reja
+home-restore-defaults =
+    .label = Rikthe Parazgjedhjet
+    .accesskey = R
+# "Firefox" should be treated as a brand and kept in English,
+# while "Home" and "(Default)" can be localized.
+home-mode-choice-default =
+    .label = Kreu i Firefox-it (Parazgjedhje)
+home-mode-choice-custom =
+    .label = URL Vetjake…
+home-mode-choice-blank =
+    .label = Faqe të Zbrazët
+home-homepage-custom-url =
+    .placeholder = Hidhni një URL…
 # This string has a special case for '1' and [other] (default). If necessary for
 # your language, you can add {$tabCount} to your translations and use the
 # standard CLDR forms, or only use the form for [other] if both strings should
@@ -412,6 +471,9 @@ sync-signedin-login-failure = Ju lutemi, bëni hyrjen që të rilidheni { $email
 sync-resend-verification =
     .label = Ridërgo Verifikim
     .accesskey = d
+sync-remove-account =
+    .label = Hiqe Llogarinë
+    .accesskey = H
 sync-sign-in =
     .label = Hyni
     .accesskey = y
@@ -473,6 +535,9 @@ privacy-header = Privatësi Shfletuesi
 ## Privacy Section - Forms
 
 forms-header = Formularë & Fjalëkalime
+forms-ask-to-save-logins =
+    .label = Pyet të ruhen apo jo kredenciale hyrjesh dhe fjalëkalime për sajte
+    .accesskey = P
 forms-exceptions =
     .label = Përjashtime…
     .accesskey = a
@@ -514,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Mba mend historikun tim të shfletimit dhe shkarkimeve
     .accesskey = t
+history-remember-browser-option =
+    .label = Mba mend historik shfletimesh dhe shkarkimesh
+    .accesskey = M
 history-remember-search-option =
     .label = Mba mend historik kërkimesh dhe formularësh
     .accesskey = e
@@ -530,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cookies dhe të Dhëna Sajtesh
+sitedata-total-size-calculating = Po njehsohet madhësi të dhënash sajtesh dhe fshehtine…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Cookie-t, të dhënat tuaja të sajteve dhe fshehtina përdorin deri sot { $value } { $unit } hapësirë disku.
 sitedata-learn-more = Mësoni më tepër
 sitedata-accept-cookies-option =
     .label = Prano nga sajte cookies dhe të dhëna sajtesh (e këshilluar)
@@ -539,6 +612,10 @@ sitedata-block-cookies-option =
     .accesskey = B
 sitedata-keep-until = Mbaji
     .accesskey = M
+sitedata-keep-until-expire =
+    .label = Deri sa të skadojnë
+sitedata-keep-until-closed =
+    .label = { -brand-short-name } të mbyllet
 sitedata-accept-third-party-desc = Prano cookies palësh të treta dhe të dhëna sajtesh
     .accesskey = l
 sitedata-accept-third-party-always-option =
@@ -646,6 +723,9 @@ collection-health-report =
     .label = Lejojeni { -brand-short-name }-in të dërgojë të dhëna teknike dhe ndërveprimi te { -vendor-short-name }
     .accesskey = L
 collection-health-report-link = Mësoni më tepër
+collection-studies =
+    .label = Lejojeni { -brand-short-name } të instalojë dhe kryejë studime
+collection-studies-link = Shihni studime { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Raportimi i të dhënave është i çaktivizuar për këtë formësim montimi

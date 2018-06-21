@@ -36,3 +36,86 @@ permissions-button-ok =
     .accesskey = S
 permissions-searchbox =
     .placeholder = Saytda Axtar
+permissions-capabilities-allow =
+    .label = İcazə ver
+permissions-capabilities-block =
+    .label = Blokla
+permissions-capabilities-prompt =
+    .label = Həmişə soruş
+
+## Invalid Hostname Dialog
+
+permissions-invalid-uri-title = Etibarsız bir domen adı daxil etdiniz
+permissions-invalid-uri-label = Lütfən etibarlı bir server adı daxil edin
+
+## Exceptions - Tracking Protection
+
+permissions-exceptions-tracking-protection-window =
+    .title = İstisnalar - İzlənmə Qoruması
+    .style = { permissions-window.style }
+permissions-exceptions-tracking-protection-desc = Bu saytlarda İzlənmə Qorumasını söndürmüsünüz.
+
+## Exceptions - Cookies
+
+permissions-exceptions-cookie-window =
+    .title = İstisnalar: Çərəzlər və Sayt Məlumatları
+    .style = { permissions-window.style }
+
+## Exceptions - Pop-ups
+
+permissions-exceptions-popup-window =
+    .title = İcazə verilən Saytlar - Avtomatik açılan pəncərələr
+    .style = { permissions-window.style }
+permissions-exceptions-popup-desc = Hansı saytların avtomatik açılan pəncərə aça biləcəyini seçə bilərsiniz. İcazə vermək istədiyiniz sytın tam ünvanını yazdıqdan sonra "İcazə ver"-ə klikləyin.
+
+## Exceptions - Saved Logins
+
+permissions-exceptions-saved-logins-window =
+    .title = İstisnalar - Saxlanılmış Hesablar
+    .style = { permissions-window.style }
+permissions-exceptions-saved-logins-desc = Aşağıdakı saytlar üçün hesablar saxlanılmayacaq
+
+## Exceptions - Add-ons
+
+permissions-exceptions-addons-window =
+    .title = İcazə verilən saytlar - Əlavə quraşdırılması
+    .style = { permissions-window.style }
+permissions-exceptions-addons-desc = Hansı saytların əlavə yükləyə biləcəyini seçə bilərsiniz. İcaz vermək istədiyiniz saytın tam ünvanını yazdıqdan sonra "İcazə ver"-ə klikləyin.
+
+## Exceptions - Autoplay Media
+
+permissions-exceptions-autoplay-media-window =
+    .title = İcazə verilən saytlar - Avto Oxutma
+    .style = { permissions-window.style }
+
+## Site Permissions - Notifications
+
+permissions-site-notification-window =
+    .title = Tənzimləmələr - Bildiriş İcazələri
+    .style = { permissions-window.style }
+permissions-site-notification-disable-label =
+    .label = Bildirişlər üçün icazə istəyən yeni istəkləri əngəllə
+
+## Site Permissions - Location
+
+permissions-site-location-window =
+    .title = Tənzimləmələr - Mövqe İcazələri
+    .style = { permissions-window.style }
+permissions-site-location-disable-label =
+    .label = Məkanınız üçün icazə istəyən yeni istəkləri əngəllə
+
+## Site Permissions - Camera
+
+permissions-site-camera-window =
+    .title = Tənzimləmələr - Kamera İcazələri
+    .style = { permissions-window.style }
+permissions-site-camera-disable-label =
+    .label = Kameranız üçün icazə istəyən yeni istəkləri əngəllə
+
+## Site Permissions - Microphone
+
+permissions-site-microphone-window =
+    .title = Tənzimləmələr - Mikrofon İcazələri
+    .style = { permissions-window.style }
+permissions-site-microphone-disable-label =
+    .label = Mikrofonunuz üçün icazə istəyən yeni istəkləri əngəllə

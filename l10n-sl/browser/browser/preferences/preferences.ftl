@@ -73,6 +73,41 @@ should-restart-ok = Ponovno zaženi { -brand-short-name } zdaj
 cancel-no-restart-button = Prekliči
 restart-later = Ponovno zaženi pozneje
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Razširitev <img data-l10n-name="icon"/> { $name } nadzira vašo domačo stran.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Razširitev <img data-l10n-name="icon"/> { $name } nadzira vašo stran novega zavihka.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Razširitev <img data-l10n-name="icon"/> { $name } je nastavila privzeti iskalnik.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Razširitev <img data-l10n-name="icon"/> { $name } zahteva vsebniške zavihke.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Razširitev <img data-l10n-name="icon"/> { $name } nadzoruje zaščito pred sledenjem.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Razširitev <img data-l10n-name="icon"/> { $name } nadzira, kako { -brand-short-name } vzpostavi povezavo z internetom.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Da bi omogočili to razširitev, izberite <img data-l10n-name="addons-icon"/> Dodatki v meniju <img data-l10n-name="menu-icon"/>.
+
 ## Preferences UI Search Results
 
 search-results-header = Rezultati iskanja
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = prikaži prazno stran
 startup-prev-session =
     .label = prikaži nazadnje odprta okna in zavihke
+startup-restore-previous-session =
+    .label = Obnovi prejšnjo sejo
+    .accesskey = s
 disable-extension =
     .label = Onemogoči razširitev
 home-page-header = Domača stran
@@ -303,6 +341,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Omrežni posrednik
+network-proxy-connection-description = Nastavite, kako se { -brand-short-name } poveže z internetom.
 network-proxy-connection-learn-more = Več o tem
 network-proxy-connection-settings =
     .label = Nastavitve …
@@ -546,6 +585,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Shranjuj zgodovino brskanja in prenosov
     .accesskey = b
+history-remember-browser-option =
+    .label = Shranjuj zgodovino brskanja in prenosov
+    .accesskey = b
 history-remember-search-option =
     .label = Shranjuj zgodovino iskanja in obrazcev
     .accesskey = i
@@ -562,6 +604,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Piškotki in podatki strani
+sitedata-total-size-calculating = Računanje velikosti podatkov strani in predpomnilnika …
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Shranjeni piškotki, podatki strani in predpomnilnik trenutno zavzemajo { $value } { $unit } prostora na disku.
 sitedata-learn-more = Več o tem
 sitedata-accept-cookies-option =
     .label = Sprejemaj piškotke in podatke spletnih strani (priporočeno)
@@ -656,6 +703,9 @@ permissions-notification-link = Več o tem
 permissions-notification-pause =
     .label = Ne prikazuj obvestil do naslednjega zagona { -brand-short-name }a
     .accesskey = u
+permissions-block-autoplay-media-exceptions =
+    .label = Izjeme …
+    .accesskey = I
 permissions-block-popups =
     .label = Prepovej pojavna okna
     .accesskey = r

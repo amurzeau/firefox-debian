@@ -73,6 +73,41 @@ should-restart-ok = Start { -brand-short-name } på nytt no
 cancel-no-restart-button = Avbryt
 restart-later = Start på nytt seinare
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Ei utviding, <img data-l10n-name="icon"/> { $name }, styrer startsida di.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Ei utviding, <img data-l10n-name="icon"/> { $name }, styrer Ny fane-sida di.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Ei utviding, <img data-l10n-name="icon"/> { $name }, har endra standardsøkemotor.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Ei utviding, <img data-l10n-name="icon"/> { $name }, krev innhaldsfaner.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Ei utviding, <img data-l10n-name="icon"/> { $name }, styrer sporingsvernet.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Ei utviding, <img data-l10n-name="icon"/> { $name }, styrer korleis { -brand-short-name } koplar seg til internett.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = For å aktivere utvidinga, gå til <img data-l10n-name="addons-icon"/> Utviding i menyen <img data-l10n-name="menu-icon"/>.
+
 ## Preferences UI Search Results
 
 search-results-header = Søkeresultat
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = Vis ei tom side
 startup-prev-session =
     .label = Vis vindauge og faner som vart brukte sist
+startup-restore-previous-session =
+    .label = Bygg oppatt siste programøkt
+    .accesskey = B
 disable-extension =
     .label = Slå av utviding
 home-page-header = Startside
@@ -297,6 +335,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Nettverksproxy
+network-proxy-connection-description = Konfigurer korleis { -brand-short-name } koplar seg til internett.
 network-proxy-connection-learn-more = Les meir
 network-proxy-connection-settings =
     .label = Innstillingar…
@@ -344,11 +383,11 @@ restore-default =
 
 ## Search Section
 
-search-bar-header = Søkelinje
+search-bar-header = Søkjelinje
 search-bar-hidden =
     .label = Bruk adresselinja for søk og navigering
 search-bar-shown =
-    .label = Legg til søkelinje i verktøylinja
+    .label = Legg til søkjelinje i verktøylinja
 search-engine-default-header = Standard søkemotor
 search-engine-default-desc = Vel standardsøkemotor som skal brukast i adresselinja og søkelinja.
 search-suggestions-option =
@@ -463,8 +502,8 @@ sync-engine-creditcards =
     .tooltiptext = Namn, nummer og forfallsdato (berre skrivebord)
     .accesskey = K
 sync-engine-addons =
-    .label = Utvidingar
-    .tooltiptext = Utvidingar og tema for Firefox desktop
+    .label = Tillegg
+    .tooltiptext = Tillegg og tema for Firefox desktop
     .accesskey = U
 sync-engine-prefs =
     .label =
@@ -540,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Hugse nettlesar- og nedlastingshistorikk
     .accesskey = H
+history-remember-browser-option =
+    .label = Hugs nettlesing- og nedlastingshistorikk
+    .accesskey = H
 history-remember-search-option =
     .label = Hugse søke- og skjemahistorikk
     .accesskey = ø
@@ -556,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Infokapslar og sidedata
+sitedata-total-size-calculating = Reknar ut storleik på nettstad-data og snøgglager…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Dei lagra infokapslane dine, nettstaddata og hurtiglager brukar for tida { $value } { $unit } diskplass.
 sitedata-learn-more = Les meir
 sitedata-accept-cookies-option =
     .label = Tillat infokapslar og nettsidedata frå nettstadar (tilrådd)
@@ -650,6 +697,12 @@ permissions-notification-link = Les meir
 permissions-notification-pause =
     .label = Set varsel på pause til { -brand-short-name } startar på nytt
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = Blokker nettsider frå automatisk å spele media med lyd
+    .accesskey = B
+permissions-block-autoplay-media-exceptions =
+    .label = Unntak…
+    .accesskey = U
 permissions-block-popups =
     .label = Blokker sprettoppvindauge
     .accesskey = B
@@ -657,7 +710,7 @@ permissions-block-popups-exceptions =
     .label = Unntak…
     .accesskey = U
 permissions-addon-install-warning =
-    .label = Åtvar meg når netsider vil installere utvidingar
+    .label = Åtvar meg når netsider vil installere tillegg
     .accesskey = Å
 permissions-addon-exceptions =
     .label = Unntak…
@@ -676,6 +729,9 @@ collection-health-report =
     .label = Tillat { -brand-short-name } å sende teknisk- og interaksjonsdata til { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Les meir
+collection-studies =
+    .label = Tillat { -brand-short-name } å installere og køyre studium
+collection-studies-link = Vis { -brand-short-name }-studium
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Datarapportering er deaktivert for denne byggekonfigurasjonen

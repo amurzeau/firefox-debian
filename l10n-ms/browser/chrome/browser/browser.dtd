@@ -35,6 +35,9 @@ left instead of right. -->
 <!ENTITY  closeOtherTabs.label               "Tutup Tab Lain">
 <!ENTITY  closeOtherTabs.accesskey           "u">
 
+<!ENTITY  closeSelectedTabs.label            "Tutup Tab Yang Dipilih">
+<!ENTITY  closeSelectedTabs.accesskey        "D">
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -54,6 +57,8 @@ can reach it easily. -->
 <!ENTITY  sendToDeviceOfflineFeedback.label  "Susunan (luar talian)">
 <!ENTITY  moveToNewWindow.label              "Pindah ke Tetingkap Baru">
 <!ENTITY  moveToNewWindow.accesskey          "T">
+<!ENTITY  reopenInContainer.label            "Buka semula dalam Penyimpan">
+<!ENTITY  reopenInContainer.accesskey        "k">
 <!ENTITY  bookmarkAllTabs.label              "Tandabuku Semua Tab…">
 <!ENTITY  bookmarkAllTabs.accesskey          "T">
 <!ENTITY  undoCloseTab.label                 "Batal Tutup Tab">
@@ -129,7 +134,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "Papar Semua Tab">
 <!ENTITY showAllTabsCmd.accesskey "P">
 <!ENTITY toggleReaderMode.key "R">
-
 <!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "Daftar masuk ke &syncBrand.shortName.label;">
@@ -189,17 +193,13 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY otherBookmarksCmd.label "Tandabuku Lain">
 <!ENTITY mobileBookmarksCmd.label "Tandabuku Telefon">
 <!ENTITY bookmarksToolbarChevron.tooltip "Papar tandabuku selanjutnya">
-<!ENTITY showRecentlyBookmarked.label     "Papar Tandabuku Terkini">
-<!ENTITY showRecentlyBookmarked.accesskey "p">
-<!ENTITY hideRecentlyBookmarked.label     "Sorok Tandabuku Terkini">
-<!ENTITY hideRecentlyBookmarked.accesskey "S">
 
 <!ENTITY backCmd.label                "Undur">
 <!ENTITY backCmd.accesskey            "U">
 <!ENTITY backButton.tooltip           "Undur satu halaman">
 <!ENTITY forwardCmd.label             "Maju">
 <!ENTITY forwardCmd.accesskey         "M">
-<!ENTITY forwardButton.tooltip        "Langkau satu halaman">
+<!ENTITY forwardButton.tooltip        "Maju satu halaman">
 <!ENTITY backForwardButtonMenu.tooltip "Klik-kanan atau tarik turun untuk papar sejarah">
 <!ENTITY backForwardButtonMenuMac.tooltip "Tarik turun untuk papar sejarah">
 <!ENTITY reloadCmd.label              "Muat semula">
@@ -234,7 +234,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translateNotificationAnchor.tooltip       "Terjemahkan halaman ini">
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Urus terjemahan halaman">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Urus penggunaan perisian DRM">
-
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "Buka panel MIDI">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Anda telah menyekat kamera anda untuk laman web ini.">
@@ -245,7 +244,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Anda telah menghalang storan gigih untuk laman web ini.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Anda telah menyekat pop-up untuk laman web ini.">
 <!ENTITY urlbar.canvasBlocked.tooltip            "Anda telah menyekat ekstraksi data kanvas untuk laman web ini.">
-
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "Anda telah menyekat laman web ini daripada menggunakan plugin Adobe Flash.">
 <!ENTITY urlbar.midiBlocked.tooltip              "Anda telah menyekat akses MIDI untuk laman web ini.">
 
@@ -255,6 +253,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!-- Toolbar items -->
 <!ENTITY homeButton.label             "Laman">
+
+<!ENTITY homeButton.defaultPage.tooltip "Laman &brandShortName;">
 
 <!ENTITY bookmarksButton.label          "Tandabuku">
 <!ENTITY bookmarksCmd.commandkey "b">
@@ -395,7 +395,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Mahu melihat tab anda daripada peranti lain di sini?">
-<!ENTITY appMenuRemoteTabs.openprefs.label "Sync keutamaan">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Buka Keutamaan Sync">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Daftar masuk untuk papar senarai tab dari peranti anda yang lain.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Akaun anda perlu disahkan.">
@@ -437,6 +436,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.addMoreItems.label "Tambah Lagi Item… ">
 <!ENTITY customizeMenu.addMoreItems.accesskey "A">
 
+<!ENTITY customizeMenu.autoHideDownloadsButton.label "Auto-sorok di Bar Alatan">
+<!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "A">
+<!ENTITY customizeMenu.manageExtension.label "Urus Ekstensi">
+<!ENTITY customizeMenu.manageExtension.accesskey "E">
+
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
     secondary commands. -->
@@ -444,7 +448,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Cari atau masukkan alamat">
-<!ENTITY urlbar.placeholder3          "Masukkan terma carian dan alamat di sini">
 <!ENTITY urlbar.accesskey             "m">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Ekstensi:">
@@ -754,7 +757,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY spellAddDictionaries.label "Tambah Kamus…">
 <!ENTITY spellAddDictionaries.accesskey "T">
 
-<!ENTITY editBookmark.done.label                     "Selesai">
+<!ENTITY editBookmark.done.label                     "Siap">
 <!ENTITY editBookmark.removeBookmark.accessKey       "B">
 
 <!-- LOCALIZATION NOTE (identity.securityView.label)
@@ -797,6 +800,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.removeCertException.accesskey "B">
 
 <!ENTITY identity.moreInfoLinkText2 "Maklumat Lanjut">
+
+<!ENTITY identity.clearSiteData "Buang Kuki dan Data Laman…">
 
 <!ENTITY identity.permissions "Keizinan">
 <!ENTITY identity.permissionsEmpty "Anda tidak memberikan laman ini sebarang keizinan khas.">
@@ -857,7 +862,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY customizeMode.menuAndToolbars.header3 "Seret item kegemaran anda ke dalam menu bar alatan atau menu limpahan.">
 <!ENTITY customizeMode.restoreDefaults "Pulih Piawai">
-<!ENTITY customizeMode.done "Selesai">
+<!ENTITY customizeMode.done "Siap">
 <!ENTITY customizeMode.titlebar "Bar Tajuk">
 <!ENTITY customizeMode.extraDragSpace "Ruang Seret">
 <!ENTITY customizeMode.toolbars2 "Bar alatan">
@@ -901,6 +906,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.allWindowsShared.message "Semua tetingkap yang kelihatan pada skrin anda akan dikongsi.">
 
 <!ENTITY trackingProtection.title "Perlindungan Penjejakan">
+<!ENTITY trackingProtection.tooltip "Buka Keutamaan Perlindungan Penjejakan">
 <!ENTITY trackingProtection.detectedBlocked3 "&brandShortName; sedang menyekat sebahagian halaman yang mungkin menjejaki pelayaran anda.">
 <!ENTITY trackingProtection.detectedNotBlocked3 "Laman ini mengandungi elemen yang boleh menjejaki pelayaran anda. Anda telah melumpuhkan perlindungan.">
 <!ENTITY trackingProtection.notDetected3 "Tiada elemen penjejak yang dikesan dalam halaman ini.">
@@ -988,14 +994,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "B">
 <!ENTITY updateRestart.panelUI.label2 "Mula semula untuk mengemaskini &brandShorterName;">
 
-<!ENTITY newTabControlled.message "Ekstensi telah mengubah halaman yang anda lihat apabila membuka Tab Baru. Anda boleh pulihkan tetapan jika tidak mahu perubahan ini.">
-
 <!ENTITY newTabControlled.header.message "Tab Baru anda telah berubah.">
 <!ENTITY newTabControlled.keepButton.label "Simpan Perubahan">
 <!ENTITY newTabControlled.keepButton.accesskey "S">
-<!ENTITY newTabControlled.restoreButton.label "Pulih Tetapan">
-<!ENTITY newTabControlled.restoreButton.accesskey "P">
-
 <!ENTITY newTabControlled.disableButton.label "Nyahdayakan Ekstensi">
 <!ENTITY newTabControlled.disableButton.accesskey "N">
 
@@ -1005,6 +1006,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY homepageControlled.keepButton.accesskey "S">
 <!ENTITY homepageControlled.disableButton.label "Nyahdayakan Ekstensi">
 <!ENTITY homepageControlled.disableButton.accesskey "N">
+
+<!ENTITY tabHideControlled.header.message "Akses Tab Tersorok Anda">
+<!ENTITY tabHideControlled.keepButton.label "Terus Sorok Tab">
+<!ENTITY tabHideControlled.keepButton.accesskey "T">
+<!ENTITY tabHideControlled.disableButton.label "Nyahdayakan Ekstensi">
+<!ENTITY tabHideControlled.disableButton.accesskey "N">
 
 <!ENTITY pageActionButton.tooltip "Tindakan halaman">
 <!ENTITY pageAction.addToUrlbar.label "Tambah ke Bar Alamat">

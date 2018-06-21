@@ -73,6 +73,41 @@ should-restart-ok = Hurmitin { -brand-short-name } jooni
 cancel-no-restart-button = Haaytu
 restart-later = Hurmitin so Ɓooyii
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Timmitere, <img data-l10n-name="icon"/> { $name }, nana ɗowa hello jaɓɓorgo maa.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Timmitere, <img data-l10n-name="icon"/> { $name }, nana ɗowa hello Tabbere maa Hesere.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Timmitere, <img data-l10n-name="icon"/> { $name }, teeltiima masiŋ maa njiilaw goowaaɗo.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Timmitere, <img data-l10n-name="icon"/> { $name }, ena naamnii Tabbe Mooftirɗe.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Timmitere, <img data-l10n-name="icon"/> { $name }, nana ɗowa ndeenka dewindol.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Timmitere, <img data-l10n-name="icon"/> { $name }, nana ɗowa hol no { -brand-short-name } seŋortoo e enternet oo.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Ngam hurminde timmitere ndee yah to <img data-l10n-name="addons-icon"/> ɓeyditte e nder dosol <img data-l10n-name="menu-icon"/>.
+
 ## Preferences UI Search Results
 
 search-results-header = Njaltudi Njiilawu
@@ -110,8 +145,11 @@ startup-blank-page =
     .label = Hollu hello meho
 startup-prev-session =
     .label = Hollit kenorɗe maa ɗee e tabbe cakkitiiɗe
+startup-restore-previous-session =
+    .label = Artir rogere ɓennunde ndee
+    .accesskey = s
 disable-extension =
-    .label = Daaƴ Timmitol
+    .label = Daaƴ Jokkel
 home-page-header = Hello jaɓɓorgo
 tabs-group-header = Tabbe
 ctrl-tab-recently-used-order =
@@ -297,6 +335,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Proxy Laylaytol
+network-proxy-connection-description = Teelto hol no { -brand-short-name } seŋortoo e enternet oo.
 network-proxy-connection-learn-more = Ɓeydu humpito
 network-proxy-connection-settings =
     .label = Teelte…
@@ -305,6 +344,7 @@ network-proxy-connection-settings =
 ## Home Section
 
 home-new-windows-tabs-header = Kenorɗe Kese kam e Tabbe
+home-new-windows-tabs-description2 = Suɓo ko njiyataa so a udditii hello maa jaɓɓorgo, henorde hesere, e tabbere hesere.
 
 ## Home Section - Home Page Customization
 
@@ -495,6 +535,9 @@ privacy-header = Suturo Wanngorde
 ## Privacy Section - Forms
 
 forms-header = Formileeruuji & pinle
+forms-ask-to-save-logins =
+    .label = Laaɓndo mbele a hisnat baccooje e pinle lowe
+    .accesskey = r
 forms-exceptions =
     .label = Paltooje…
     .accesskey = a
@@ -552,6 +595,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Kuukiije kam e Keɓe Lowre
+sitedata-total-size-calculating = Nana hiisoo keɓe lowre kam e ɓetol moggon…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = A mooftii kuukiije, lowre kañum moggel kuutortoo jooni ko { $value } { $unit } boowal mbeɗu nguu.
 sitedata-learn-more = Jokku taro
 sitedata-accept-cookies-option =
     .label = Jaɓ kuukiije kañum e keɓe lowre iwɗe e lowe geese (ina wasiyaa)

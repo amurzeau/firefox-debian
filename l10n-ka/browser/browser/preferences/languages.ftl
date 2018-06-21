@@ -11,16 +11,28 @@ languages-description = ვებგვერდები ხანდახა�
 languages-customize-spoof-english =
     .label = ვებგვერდების ინგლისურ ენაზე მოთხოვნა, მეტი პირადულობისთვის
 languages-customize-moveup =
-    .label = ატანა ზემოთ
-    .accesskey = ზ
+    .label = აწევა
+    .accesskey = წ
 languages-customize-movedown =
-    .label = ჩატანა ქვემოთ
-    .accesskey = ქ
+    .label = ჩამოწევა
+    .accesskey = ჩ
 languages-customize-remove =
-    .label = ამოღება
-    .accesskey = ა
+    .label = მოცილება
+    .accesskey = მ
 languages-customize-select-language =
     .placeholder = დასამატებელი ენის შერჩევა…
 languages-customize-add =
     .label = დამატება
     .accesskey = მ
+# The pattern used to generate strings presented to the user in the
+# locale selection list.
+#
+# Example:
+#   Icelandic [is]
+#   Spanish (Chile) [es-CL]
+#
+# Variables:
+#   $locale (String) - A name of the locale (for example: "Icelandic", "Spanish (Chile)")
+#   $code (String) - Locale code of the locale (for example: "is", "es-CL")
+languages-code-format =
+    .label = { $locale }  [{ $code }]

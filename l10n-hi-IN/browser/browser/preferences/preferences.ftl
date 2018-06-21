@@ -73,6 +73,41 @@ should-restart-ok = { -brand-short-name } को अभी पुनः आर�
 cancel-no-restart-button = रद्द करें
 restart-later = कुछ देर से पुनर्प्रारंभ करें
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = एक्सटेंशन, <img data-l10n-name="icon"/> { $name }, आपके होम पेज को नियंत्रित कर रहा है.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = एक्सटेंशन, <img data-l10n-name="icon"/> { $name }, आपके नये टैब के पृष्ठ को नियंत्रित कर रहा है.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = एक्सटेंशन, <img data-l10n-name="icon"/> { $name }, आपके डिफ़ॉल्ट खोज इंजन को नियंत्रित कर रहा है.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = एक्सटेंशन, <img data-l10n-name="icon"/> { $name }, को कंटेनर टैब की आवश्यकता है.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = एक्सटेंशन, <img data-l10n-name="icon"/> { $name }, ट्रैकिंग सुरक्षा को नियंत्रित कर रहा है.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = एक्सटेंशन, <img data-l10n-name="icon"/> { $name }, यह नियंत्रित कर रहा है { -brand-short-name } कैसे इंटरनेट से जुड़ेगा.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = एक्सटेंशन को सक्षम करने के लिए <img data-l10n-name="addons-icon"/> <img data-l10n-name="menu-icon"/> मेनू में ऐड-ऑन पर जाएँ.
+
 ## Preferences UI Search Results
 
 search-results-header = खोज परिणाम
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = खाली पृष्ठ दिखाएँ
 startup-prev-session =
     .label = पिछले समय से आपके विंडोज़ और टैब्स दिखाएँ
+startup-restore-previous-session =
+    .label = पिछला सत्र पुनर्बहाल करें
+    .accesskey = s
 disable-extension =
     .label = एक्सटेंशन अक्षम करें
 home-page-header = मुख पृष्ठ
@@ -297,6 +335,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = नेटवर्क प्रॉक्सी
+network-proxy-connection-description = विन्यस्त करें की { -brand-short-name } कैसे इंटरनेट से जुड़ेगा.
 network-proxy-connection-learn-more = अधिक जानें
 network-proxy-connection-settings =
     .label = सेटिंग…
@@ -540,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = मेरे ब्राउज़िंग और डाउनलोड इतिहास याद रखें
     .accesskey = b
+history-remember-browser-option =
+    .label = ब्राउज़िंग तथा डाउनलोड इतिहास को याद रखें
+    .accesskey = b
 history-remember-search-option =
     .label = खोज और फ़ॉर्म इतिहास याद रखें
     .accesskey = f
@@ -556,6 +598,7 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = कुकीज़ और साइट डेटा
+sitedata-total-size-calculating = साइट डेटा और कैश आकार की गणना ...
 sitedata-learn-more = अधिक जानें
 sitedata-accept-cookies-option =
     .label = वेबसाइट से कूकीज और साइट डाटा स्वीकार करें (अनुशंसित)

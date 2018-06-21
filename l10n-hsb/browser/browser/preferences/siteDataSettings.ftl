@@ -7,6 +7,7 @@
 
 site-data-settings-window =
     .title = Placki a sydłowe daty rjadować
+site-data-settings-description = Slědowace websydła placki a sydłowe daty na wašim ličaku składuja. { -brand-short-name } daty z websydłow z wobstajnym składowanjom wobchowuje, doniž je njezhašeće, a zhaša daty z websydłow z njewobstajnym składowanjom, jeli swobodny rum je trěbny.
 site-data-search-textbox =
     .placeholder = Websydła pytać
     .accesskey = s
@@ -27,11 +28,25 @@ site-data-button-cancel =
 site-data-button-save =
     .label = Změny składować
     .accesskey = s
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+site-usage-pattern = { $value } { $unit }
+site-usage-persistent = { site-usage-pattern } (wobstajny)
+site-data-remove-all =
+    .label = Wšě wotstronić
+    .accesskey = s
+site-data-remove-shown =
+    .label = Wšě pokazane wotstronić
+    .accesskey = s
 
 ## Removing
 
 site-data-removing-window =
     .title = { site-data-removing-header }
+site-data-removing-dialog =
+    .title = { site-data-removing-header }
+    .buttonlabelaccept = Wotstronić
 site-data-removing-header = Placki a daty sydła wotstronić
 site-data-removing-desc = Je móžno, zo so was wotzjewjeja, hdyž placki a sydłowe daty wotstronjeće. Chceće změny woprawdźe přewjesć?
 site-data-removing-table = Placki a sydłowe daty so za slědowace websydła wotstronja

@@ -17,7 +17,7 @@
 <!ENTITY firstrun_data_title "Donadas">
 <!ENTITY firstrun_data_message "Mens de donadas, mai d’estalvi">
 <!ENTITY firstrun_data_subtext2 "Desactivatz los imatges per far cargar mens donadas per cada site que visitatz.">
-<!ENTITY firstrun_sync_title "Sincr">
+<!ENTITY firstrun_sync_title "Sync">
 <!ENTITY firstrun_sync_message2 "Tornatz ont èretz.">
 <!ENTITY firstrun_sync_subtext2 "Utilizatz Sync per retrobar de marcapaginas, senhals, e autras donadas que gardatz dins &brandShortName; sus totes vòstres periferics.">
 <!ENTITY firstrun_signin_message "Connectatz-vos e començatz">
@@ -69,6 +69,15 @@
 <!ENTITY  crash_restart_label "Reaviar &brandShortName;">
 
 <!ENTITY url_bar_default_text2 "Picar un tèrme de recercar o una adreça">
+
+<!-- Localization note (url_bar_qrcode_text2) : This text will be
+     heard by non-visual users when the focus is on the QR Code
+     icon in the url bar. -->
+<!ENTITY url_bar_qrcode_text2 "Utilizatz vòstre lector de QR còdis per far una recèrca o anar a una adreça web">
+<!-- Localization note (url_bar_mic_text2) : This text will be
+     heard by non-visual users when the focus is on the Microphone
+     icon in the url bar. -->
+<!ENTITY url_bar_mic_text2 "Utilizatz vòstre microfòn per fa una recèrca o anar a una adreça web">
 
 <!ENTITY bookmark "Marcapaginas">
 <!ENTITY bookmark_remove "Suprimir lo marcapagina">
@@ -207,6 +216,7 @@
 <!ENTITY pref_category_advanced_summary3 "Restauracion d’onglets, estalvis de donadas, aisinas pels desvolopaires">
 <!ENTITY pref_category_notifications "Notificacions">
 <!ENTITY pref_category_notifications_summary "Foncions novèlas, mesas a jorn del site web">
+<!ENTITY pref_category_notifications_summary2 "Nòvas foncionalitats, astúcias">
 <!ENTITY pref_developer_remotedebugging_usb "Desbugatge distant per USB">
 <!ENTITY pref_developer_remotedebugging_wifi "Desbugatge distant per Wi-Fi">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Lo desbugatge Wi-Fi necessita que vòstre periferic aja intallat una aplicacion de lectura de còdis QR.">
@@ -543,7 +553,7 @@
 <!ENTITY pref_compact_tabs_summary2 "Organizar los onglets en doas colomnas en mòde retrach">
 
 <!-- Localization note (page_removed): This string appears in a toast message when
-     any page is removed frome about:home. This includes pages that are in history,
+     any page is removed from about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "Pagina suprimida">
 <!ENTITY folder_removed "Dorsièr levat">
@@ -670,7 +680,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY doorhanger_tracking_title2 "Proteccion contra lo seguiment">
 <!ENTITY doorhanger_tracking_state_enabled "Activada">
 <!ENTITY doorhanger_tracking_state_disabled "Desactivat">
-<!ENTITY doorhanger_tracking_message_enabled1 "Avèm blocats los ensages de seguiment de vòstre comportament en linha.">
+<!ENTITY doorhanger_tracking_message_enabled1 "Avèm blocats los ensages de seguiment de vòstre compòrtament en linha.">
 <!ENTITY doorhanger_tracking_message_disabled2 "Aquesta pagina compren d’elements que pòdon pistar vòstra navegacion.">
 
 <!-- Common mixed and tracking content strings in site identity popup -->
@@ -761,7 +771,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      "Last synced" is one of the user's other Sync clients, typically Firefox on
      their desktop or laptop.-->
 <!ENTITY remote_tabs_last_synced "Darrièra sincr.: &formatS;">
-<!-- Localization note: Used when the sync has not happend yet, showed in place of a date -->
+<!-- Localization note: Used when the sync has not happened yet, showed in place of a date -->
 <!ENTITY remote_tabs_never_synced "Darrièra sincr : pas jamai">
 
 <!-- LOCALIZATION NOTE (intent_uri_private_browsing_prompt): This string will
@@ -880,4 +890,4 @@ displayed when there are more than 3 actions available for a page.
 See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "Apondre a l’ecran d’acuèlh">
 <!ENTITY pwa_continue_to_website "Contunhar cap al site web">
-<!ENTITY pwa_onboarding_sumo "Podètz facilament apondre aqueste site a vòstre ecran d’acuèlh per i accedir e navigar mai rapidament coma se foguèssetz dins l’aplicacion.">
+<!ENTITY pwa_onboarding_sumo "Podètz facilament apondre aqueste site a vòstre ecran d’acuèlh per i accedir e navegar mai rapidament coma se foguèssetz dins l’aplicacion.">

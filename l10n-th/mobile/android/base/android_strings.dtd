@@ -29,7 +29,7 @@
 <!ENTITY firstrun_tabqueue_title "ลิงก์">
 <!-- Localization note (firstrun_tabqueue_message): 'Tab queue' is a feature that allows users to queue up or save links from outside of Firefox (without switching apps) - these links will be loaded in Firefox the next time Firefox is opened. -->
 <!ENTITY firstrun_tabqueue_message_off "เปิดคิวแท็บ">
-<!ENTITY firstrun_tabqueue_subtext_off "บันทึกลิงก์สำหรับภายหลังใน &brandShortName; เมื่อแตะลิงก์ในแอปอื่น ๆ">
+<!ENTITY firstrun_tabqueue_subtext_off "บันทึกลิงก์สำหรับภายหลังใน &brandShortName; เมื่อแตะที่ลิงก์ในแอปอื่น ๆ">
 
 <!ENTITY firstrun_tabqueue_message_on "สำเร็จ!">
 <!ENTITY firstrun_tabqueue_subtext_on "คุณสามารถปิดสิ่งนี้ได้เสมอใน &settings; ภายใต้ &pref_category_general;">
@@ -56,7 +56,7 @@
 <!ENTITY  tab_offline_version "กำลังแสดงรุ่นออฟไลน์">
 
 <!ENTITY  crash_reporter_title "ตัวรายงานข้อขัดข้อง &brandShortName;">
-<!ENTITY  crash_message2 "&brandShortName; เกิดปัญหาและขัดข้อง แท็บของคุณจะถูกแสดงรายการบนหน้าเริ่มต้นของ &brandShortName; เมื่อคุณเริ่มการทำงานใหม่">
+<!ENTITY  crash_message2 "&brandShortName; เกิดปัญหาและขัดข้อง แท็บของคุณจะถูกแสดงรายการในหน้าเริ่มต้นของ &brandShortName; เมื่อคุณเริ่มการทำงานใหม่">
 <!ENTITY  crash_send_report_message3 "แจ้ง &vendorShortName; เกี่ยวกับข้อขัดข้องนี้เพื่อให้พวกเขาสามารถแก้ไขปัญหาได้">
 <!ENTITY  crash_include_url2 "รวมที่อยู่ของหน้าที่ฉันเข้าชมอยู่">
 <!ENTITY  crash_sorry "เราต้องขออภัย">
@@ -69,6 +69,15 @@
 <!ENTITY  crash_restart_label "เริ่มการทำงาน &brandShortName; ใหม่">
 
 <!ENTITY url_bar_default_text2 "ค้นหาหรือป้อนที่อยู่">
+
+<!-- Localization note (url_bar_qrcode_text2) : This text will be
+     heard by non-visual users when the focus is on the QR Code
+     icon in the url bar. -->
+<!ENTITY url_bar_qrcode_text2 "ใช้ตัวอ่าน QR ของคุณเพื่อค้นหาหรือป้อนที่อยู่">
+<!-- Localization note (url_bar_mic_text2) : This text will be
+     heard by non-visual users when the focus is on the Microphone
+     icon in the url bar. -->
+<!ENTITY url_bar_mic_text2 "ใช้ไมโครโฟนของคุณเพื่อค้นหาหรือป้อนที่อยู่">
 
 <!ENTITY bookmark "ที่คั่นหน้า">
 <!ENTITY bookmark_remove "เอาที่คั่นหน้าออก">
@@ -183,10 +192,10 @@
 <!ENTITY pref_category_accessibility "การช่วยการเข้าถึง">
 <!ENTITY pref_category_accessibility_summary2 "ขนาดข้อความ, ซูม, การรับค่าด้วยเสียง">
 <!ENTITY pref_category_privacy_short "ความเป็นส่วนตัว">
-<!ENTITY pref_category_privacy_summary4 "การติดตาม, การเข้าสู่ระบบ, ตัวเลือกข้อมูล">
+<!ENTITY pref_category_privacy_summary4 "การติดตาม, การเข้าสู่ระบบ, ทางเลือกข้อมูล">
 <!ENTITY pref_category_vendor2 "&vendorShortName; &brandShortName;">
 <!ENTITY pref_category_vendor_summary2 "เกี่ยวกับ &brandShortName;, คำถามที่พบบ่อย, ข้อคิดเห็น">
-<!ENTITY pref_category_datareporting "ตัวเลือกข้อมูล">
+<!ENTITY pref_category_datareporting "ทางเลือกข้อมูล">
 <!ENTITY pref_category_logins "การเข้าสู่ระบบ">
 <!ENTITY pref_learn_more "เรียนรู้เพิ่มเติม">
 <!ENTITY pref_category_installed_search_engines "เครื่องมือค้นหาที่ติดตั้งไว้">
@@ -199,7 +208,7 @@
      search providers.
      The &formatI; in the string will be replaced by a small image of the icon described, and can be moved to wherever
      it is applicable. -->
-<!ENTITY pref_search_hint2 "เคล็ดลับ: เพิ่มเว็บไซต์ใด ๆ ไปยังรายการผู้ให้บริการค้นหาของคุณโดยการแตะค้างบนช่องค้นหาของเว็บไซต์นั้น จากนั้นสัมผัสที่ไอคอน &formatI;">
+<!ENTITY pref_search_hint2 "เคล็ดลับ: เพิ่มเว็บไซต์ใด ๆ ไปยังรายการผู้ให้บริการค้นหาของคุณโดยแตะค้างที่ช่องค้นหาของเว็บไซต์นั้น จากนั้นสัมผัสที่ไอคอน &formatI;">
 <!ENTITY pref_category_advanced "ขั้นสูง">
 <!-- Localization note (pref_category_advanced_summary3): “data saver” in this
      context means consuming less data, e.g. by not loading images, not
@@ -207,6 +216,7 @@
 <!ENTITY pref_category_advanced_summary3 "การเรียกคืนแท็บ, การประหยัดข้อมูล, เครื่องมือนักพัฒนา">
 <!ENTITY pref_category_notifications "การแจ้งเตือน">
 <!ENTITY pref_category_notifications_summary "คุณลักษณะใหม่, การอัปเดตเว็บไซต์">
+<!ENTITY pref_category_notifications_summary2 "คุณลักษณะใหม่, เคล็ดลับผลิตภัณฑ์">
 <!ENTITY pref_developer_remotedebugging_usb "การดีบั๊กระยะไกลผ่าน USB">
 <!ENTITY pref_developer_remotedebugging_wifi "การดีบั๊กระยะไกลผ่าน Wi-Fi">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "การดีบั๊กผ่าน Wi-Fi จำเป็นต้องให้อุปกรณ์ของคุณมีแอปตัวอ่านรหัส QR ติดตั้งอยู่">
@@ -388,7 +398,7 @@
 <!ENTITY pref_private_data_cache "แคช">
 <!ENTITY pref_private_data_offlineApps "ข้อมูลเว็บไซต์ออฟไลน์">
 <!ENTITY pref_private_data_siteSettings2 "การตั้งค่าไซต์">
-<!ENTITY pref_private_data_downloadFiles2 "ดาวน์โหลด">
+<!ENTITY pref_private_data_downloadFiles2 "การดาวน์โหลด">
 <!ENTITY pref_private_data_syncedTabs "แท็บที่ซิงค์">
 
 <!ENTITY pref_default_browser "ทำให้เป็นเบราว์เซอร์เริ่มต้น">
@@ -452,7 +462,7 @@
 
 <!ENTITY addons "ส่วนเสริม">
 <!ENTITY logins "การเข้าสู่ระบบ">
-<!ENTITY downloads "ดาวน์โหลด">
+<!ENTITY downloads "การดาวน์โหลด">
 <!ENTITY char_encoding "รหัสอักขระ">
 
 <!ENTITY share "แบ่งปัน">
@@ -531,7 +541,7 @@
 
 <!-- Localization note (pref_scroll_title_bar2): Label for setting that controls
      whether or not the dynamic toolbar is enabled. -->
-<!ENTITY pref_scroll_title_bar2 "การท่องเว็บแบบเต็มจอ">
+<!ENTITY pref_scroll_title_bar2 "การท่องเว็บแบบเต็มหน้าจอ">
 <!ENTITY pref_scroll_title_bar_summary2 "ซ่อนแถบเครื่องมือ &brandShortName; เมื่อเลื่อนหน้าลงมา">
 
 <!ENTITY pref_tab_queue_title3 "คิวแท็บ">
@@ -543,7 +553,7 @@
 <!ENTITY pref_compact_tabs_summary2 "จัดเรียงแท็บเป็นสองคอลัมน์ในโหมดแนวตั้ง">
 
 <!-- Localization note (page_removed): This string appears in a toast message when
-     any page is removed frome about:home. This includes pages that are in history,
+     any page is removed from about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "เอาหน้าออกแล้ว">
 <!ENTITY folder_removed "เอาโฟลเดอร์ออกแล้ว">
@@ -619,10 +629,10 @@
      formatD is replaced with the number of hidden devices.  The
      number of hidden devices is always more than one.  We can't use
      Android plural forms, sadly. See Bug #753859. -->
-<!ENTITY home_remote_tabs_many_hidden_devices "&formatD; อุปกรณ์ที่ถูกซ่อน">
+<!ENTITY home_remote_tabs_many_hidden_devices "&formatD; อุปกรณ์ที่ซ่อนอยู่">
 <!-- Localization note (home_remote_tabs_hidden_devices_title) : This is the
      title of a dialog; we expect more than one device. -->
-<!ENTITY home_remote_tabs_hidden_devices_title "อุปกรณ์ที่ถูกซ่อน">
+<!ENTITY home_remote_tabs_hidden_devices_title "อุปกรณ์ที่ซ่อนอยู่">
 <!-- Localization note (home_remote_tabs_unhide_selected_devices) : This is
      the text of a button; we expect more than one device. -->
 <!ENTITY home_remote_tabs_unhide_selected_devices "เลิกซ่อนอุปกรณ์ที่เลือก">
@@ -633,7 +643,7 @@
 <!ENTITY home_unpinned_site "ถอนหมุดไซต์แล้ว">
 
 <!ENTITY remote_tabs_panel_moved_title "แท็บของฉันไปอยู่ที่ไหน?">
-<!ENTITY remote_tabs_panel_moved_desc "เราได้ย้ายแท็บของคุณจากอุปกรณ์อื่น ๆ ไปไว้ที่แผงบนหน้าแรกของคุณ ซึ่งสามารถเข้าถึงได้อย่างง่ายดายในทุกครั้งที่คุณเปิดแท็บใหม่">
+<!ENTITY remote_tabs_panel_moved_desc "เราได้ย้ายแท็บของคุณจากอุปกรณ์อื่น ๆ ไปไว้ที่แผงในหน้าแรกของคุณ ซึ่งสามารถเข้าถึงได้อย่างง่ายดายในทุกครั้งที่คุณเปิดแท็บใหม่">
 <!ENTITY remote_tabs_panel_moved_link "นำฉันไปที่แผงใหม่ของฉัน">
 
 <!ENTITY pin_site_dialog_hint "ป้อนคำค้นหา">
@@ -758,7 +768,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      "Last synced" is one of the user's other Sync clients, typically Firefox on
      their desktop or laptop.-->
 <!ENTITY remote_tabs_last_synced "ซิงค์ล่าสุด: &formatS;">
-<!-- Localization note: Used when the sync has not happend yet, showed in place of a date -->
+<!-- Localization note: Used when the sync has not happened yet, showed in place of a date -->
 <!ENTITY remote_tabs_never_synced "ซิงค์ล่าสุด: ไม่เคย">
 
 <!-- LOCALIZATION NOTE (intent_uri_private_browsing_prompt): This string will
@@ -781,7 +791,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      code has already been displayed by the client trying to connect (such as
      desktop Firefox via WebIDE), so you just need to aim this device at the QR
      code. -->
-<!ENTITY devtools_auth_scan_header "กำลังสแกนรหัส QR ที่แสดงผลบนอุปกรณ์อื่นของคุณ">
+<!ENTITY devtools_auth_scan_header "กำลังสแกนรหัส QR ที่แสดงผลในอุปกรณ์อื่นของคุณ">
 
 <!-- Restrictable features -->
 <!-- Localization note: These are features the device owner (e.g. parent) can enable or disable for
@@ -807,14 +817,14 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- LOCALIZATION NOTE (bookmarks_support): link title for https://support.mozilla.org/ -->
 <!ENTITY bookmarks_support "Firefox: การสนับสนุน">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_support): link title for https://support.mozilla.org/kb/controlledaccess -->
-<!ENTITY bookmarks_restricted_support2 "ความช่วยเหลือและการสนับสนุนของ Firefox สำหรับโปรไฟล์ที่ถูกจำกัดบนแท็บเล็ต Android">
+<!ENTITY bookmarks_restricted_support2 "ความช่วยเหลือและการสนับสนุนของ Firefox สำหรับโปรไฟล์ที่ถูกจำกัดในแท็บเล็ต Android">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_webmaker):link title for https://webmaker.org -->
 <!ENTITY bookmarks_restricted_webmaker "เรียนรู้เว็บ: Mozilla Webmaker">
 
 <!-- LOCALIZATION NOTE (unsupported_sdk_version): The user installed a build of this app that does not support
      the Android version of this device. the formatS1 is replaced by the CPU ABI (e.g., ARMv7); the formatS2 is
      replaced by the Android OS version (e.g., 14)-->
-<!ENTITY unsupported_sdk_version "ขออภัย! &brandShortName; ตัวนี้ไม่สามารถทำงานบนอุปกรณ์นี้ได้ (&formatS1;, &formatS2;) โปรดดาวน์โหลดรุ่นที่ถูกต้อง">
+<!ENTITY unsupported_sdk_version "ขออภัย! &brandShortName; ตัวนี้ไม่สามารถทำงานในอุปกรณ์นี้ได้ (&formatS1;, &formatS2;) โปรดดาวน์โหลดรุ่นที่ถูกต้อง">
 
 <!-- LOCALIZATION NOTE(corrupt_apk): This notification is shown if corruption has been detected on startup and the user has to reinstall Firefox -->
 <!ENTITY corrupt_apk "ไม่สามารถเปิด &brandShortName; โปรดติดตั้งใหม่และลองอีกครั้ง">

@@ -35,6 +35,9 @@ left instead of right. -->
 <!ENTITY  closeOtherTabs.label               "Tampar los autres onglets">
 <!ENTITY  closeOtherTabs.accesskey           "t">
 
+<!ENTITY  closeSelectedTabs.label            "Tampar los onglets seleccionats">
+<!ENTITY  closeSelectedTabs.accesskey        "T">
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -54,6 +57,8 @@ can reach it easily. -->
 <!ENTITY  sendToDeviceOfflineFeedback.label  "En renga (fòra linha)">
 <!ENTITY  moveToNewWindow.label              "Desplaçar cap a una fenèstra novèla">
 <!ENTITY  moveToNewWindow.accesskey          "n">
+<!ENTITY  reopenInContainer.label            "Tornar dobrir dins un onglet isolat">
+<!ENTITY  reopenInContainer.accesskey        "d">
 <!ENTITY  bookmarkAllTabs.label              "Marcar totes los onglets…">
 <!ENTITY  bookmarkAllTabs.accesskey          "M">
 <!ENTITY  undoCloseTab.label                 "Anullar la tampadura de l'onglet">
@@ -129,7 +134,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "Afichar totes los onglets">
 <!ENTITY showAllTabsCmd.accesskey "A">
 <!ENTITY toggleReaderMode.key "R">
-
 <!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "Se connectar a &syncBrand.shortName.label;">
@@ -189,10 +193,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY otherBookmarksCmd.label "Autres marcapaginas">
 <!ENTITY mobileBookmarksCmd.label "Marcapaginas del mobile">
 <!ENTITY bookmarksToolbarChevron.tooltip "Afichar mai de marcapaginas">
-<!ENTITY showRecentlyBookmarked.label     "Afichar los Marcats recentament">
-<!ENTITY showRecentlyBookmarked.accesskey "s">
-<!ENTITY hideRecentlyBookmarked.label     "Amagar los Marcats recentament">
-<!ENTITY hideRecentlyBookmarked.accesskey "m">
 
 <!ENTITY backCmd.label                "Pagina precedenta">
 <!ENTITY backCmd.accesskey            "P">
@@ -234,7 +234,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translateNotificationAnchor.tooltip       "Traduire aquesta pagina">
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Gerir la traduccion de paginas">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Gerir l’utilizacion dels logicials DRM">
-
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "Dobrir lo panèl MIDI">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Avètz blocat la camèra per aqueste site.">
@@ -245,7 +244,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Avètz empachat aquel site de gardar de biais persistent de donadas.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Avètz blocat la fenèstras surgentas per aqueste site.">
 <!ENTITY urlbar.canvasBlocked.tooltip            "Avètz empachat aqueste site de traire d’informacions de canvas.">
-
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "Avètz blocat l’utilizacion d’Adobe Flash en aqueste site.">
 <!ENTITY urlbar.midiBlocked.tooltip              "Avètz blocat l’accès MIDI per aqueste site web.">
 
@@ -255,6 +253,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!-- Toolbar items -->
 <!ENTITY homeButton.label             "Acuèlh">
+
+<!ENTITY homeButton.defaultPage.tooltip "Acuèlh de &brandShortName;">
 
 <!ENTITY bookmarksButton.label          "Marcapaginas">
 <!ENTITY bookmarksCmd.commandkey "b">
@@ -304,6 +304,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY inspectContextMenu.label     "Examinar l'element">
 <!ENTITY inspectContextMenu.accesskey "x">
 
+<!ENTITY inspectA11YContextMenu.label     "Inspectar las proprietats d’accessibilitat">
 
 <!ENTITY fileMenu.label         "Fichièr">
 <!ENTITY fileMenu.accesskey       "F">
@@ -394,7 +395,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Volètz veire aquí los onglets dels vòstres autres periferics ?">
-<!ENTITY appMenuRemoteTabs.openprefs.label "Preferéncias de Sync">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Dobrir las preferéncias de sincronizacion">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Connectatz-vos per veire una lista d'onglets dels vòstres autres periferics.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Cal verificar vòstre compte.">
@@ -436,6 +436,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.addMoreItems.label "Apondre mai d'elements…">
 <!ENTITY customizeMenu.addMoreItems.accesskey "A">
 
+<!ENTITY customizeMenu.autoHideDownloadsButton.label "Amagar automaticament dins la barra d’aisinas">
+<!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "A">
+<!ENTITY customizeMenu.manageExtension.label "Gerir l’extension">
+<!ENTITY customizeMenu.manageExtension.accesskey "e">
+
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
     secondary commands. -->
@@ -443,7 +448,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Picar un tèrme de recercar o una adreça">
-<!ENTITY urlbar.placeholder3          "Picatz un tèrme de recercar o una adreça">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Extension :">
@@ -778,7 +782,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.description.insecure "La vòstra connexion a aquel site es pas privada. Las informacions qu'enviatz pòdon èsser vistas per d’autres (coma per exemple los senhals, los messatges, las cartas de crèdit, etc.).">
 <!ENTITY identity.description.insecureLoginForms "Las informacions d’identificacion que marcatz sus aquela pagina son pas seguras e pòdon far perilh.">
 <!ENTITY identity.description.weakCipher "Vòstra connexion a aquel site web utiliza un chiframent flac e es pas privada.">
-<!ENTITY identity.description.weakCipher2 "D’autres pòdon accedir a vòstras informacions o modificar lo comportament del site web.">
+<!ENTITY identity.description.weakCipher2 "D’autres pòdon accedir a vòstras informacions o modificar lo compòrtament del site web.">
 <!ENTITY identity.description.activeBlocked "&brandShortName; a blocat d'elements pas segurs sus aquela pagina.">
 <!ENTITY identity.description.passiveLoaded "Vòstra connexion es pas privada e las informacions que partejatz amb aquel site pòdon èsser vistas per d’autres.">
 <!ENTITY identity.description.passiveLoaded2 "Aquel site ten de contenguts pas segurs (coma d'imatges).">
@@ -796,6 +800,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.removeCertException.accesskey "L">
 
 <!ENTITY identity.moreInfoLinkText2 "que lo detentor n'es">
+
+<!ENTITY identity.clearSiteData "Escafar los cookies e las donadas de site…">
 
 <!ENTITY identity.permissions "Permissions">
 <!ENTITY identity.permissionsEmpty "Avètz donat pas cap de permission espaciala a aquel site.">
@@ -900,6 +906,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.allWindowsShared.message "L'ensemble de las fenèstras visiblas sus vòstre ecran seràn partejadas.">
 
 <!ENTITY trackingProtection.title "Proteccion contra lo seguiment">
+<!ENTITY trackingProtection.tooltip "Dobrir las preferéncias de proteccion contra lo seguiment">
 <!ENTITY trackingProtection.detectedBlocked3 "&brandShortName; a blocat d'elements de la pagina que pòdon pistar vòstra navegacion.">
 <!ENTITY trackingProtection.detectedNotBlocked3 "Aquel site compren d'elements que pòdon pistar vòstra navegacion. Avètz desactivat la proteccion.">
 <!ENTITY trackingProtection.notDetected3 "Pas cap d'element de seguiment es estat detectat sus aquela pagina.">
@@ -987,22 +994,24 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "N">
 <!ENTITY updateRestart.panelUI.label2 "Reaviar per metre a jorn &brandShorterName;">
 
-<!ENTITY newTabControlled.message "Una extension a cambiat la pagina que se fa veire quand dobrissètz un onglet novèl. Podètz restablir vòstres paramètres s’aquò vos agrada pas.">
-
 <!ENTITY newTabControlled.header.message "La pagina Onglet novèls es estada cambiada.">
 <!ENTITY newTabControlled.keepButton.label "Servar los cambiaments">
 <!ENTITY newTabControlled.keepButton.accesskey "S">
-<!ENTITY newTabControlled.restoreButton.label "Restablir los paramètres">
-<!ENTITY newTabControlled.restoreButton.accesskey "R">
-
 <!ENTITY newTabControlled.disableButton.label "Desactivar l’extension">
 <!ENTITY newTabControlled.disableButton.accesskey "D">
 
+<!ENTITY homepageControlled.message "Una extension a cambiat vòstre pagina d’acuèlh. Podètz restablir vòstres paramètres s’acceptatz pas aquel cambiament.">
 <!ENTITY homepageControlled.header.message "La pagina d’acuèlh es estada cambiada.">
 <!ENTITY homepageControlled.keepButton.label "Servar los cambiaments">
 <!ENTITY homepageControlled.keepButton.accesskey "S">
 <!ENTITY homepageControlled.disableButton.label "Desactivar l’extension">
 <!ENTITY homepageControlled.disableButton.accesskey "D">
+
+<!ENTITY tabHideControlled.header.message "Accedir als onglets amagats">
+<!ENTITY tabHideControlled.keepButton.label "Gardar los onglets amagats">
+<!ENTITY tabHideControlled.keepButton.accesskey "G">
+<!ENTITY tabHideControlled.disableButton.label "Desactivar l’extension">
+<!ENTITY tabHideControlled.disableButton.accesskey "D">
 
 <!ENTITY pageActionButton.tooltip "Accions de la pagina">
 <!ENTITY pageAction.addToUrlbar.label "Apondre la barra d'adreça">

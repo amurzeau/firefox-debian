@@ -42,7 +42,7 @@ policies-notice =
         [windows] თქვენს ორგანიზაციას შეზღუდული აქვს გარკვეული პარამეტრების შეცვლის შესაძლებლობა.
        *[other] თქვენს ორგანიზაციას შეზღუდული აქვს გარკვეული პარამეტრების შეცვლის შესაძლებლობა.
     }
-pane-general-title = მთავარი 
+pane-general-title = მთავარი
 category-general =
     .tooltiptext = { pane-general-title }
 pane-home-title = საწყისი გვერდი
@@ -73,6 +73,41 @@ should-restart-ok = { -brand-short-name } ხელახლა გაშვე�
 cancel-no-restart-button = გაუქმება
 restart-later = მოგვიანებით გაშვება
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = თქვენს საწყის გვერდს, ამჟამად მართავს <img data-l10n-name="icon"/> { $name } გაფართოება.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = ახალი ჩანართის გვერდს, ამჟამად მართავს <img data-l10n-name="icon"/> { $name } გაფართოება.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = <img data-l10n-name="icon"/> { $name } გაფართოებამ დააყენა ნაგულისხმევი საძიებო სისტემა.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = <img data-l10n-name="icon"/> { $name } გაფართოება საჭიროებს სათავს ჩანართებს.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = თვალთვალისგან დაცვის რეჟიმს მართავს <img data-l10n-name="icon"/> { $name } გაფართოება.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = { -brand-short-name }-ის ინტერნეტთან კავშირის პარამეტრებს განსაზღვრავს <img data-l10n-name="icon"/> { $name } გაფართოება.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = გაფართოების ჩასართავად, გადადით <img data-l10n-name="addons-icon"/> დამატებებზე <img data-l10n-name="menu-icon"/> მენიუდან.
+
 ## Preferences UI Search Results
 
 search-results-header = ძიების შედეგები
@@ -93,7 +128,7 @@ separate-profile-mode =
     .label = { -brand-short-name }-ის და Firefox-ის ერთად გაშვების ნების დართვა
 use-firefox-sync = რჩევა: ეს სხვადასხვა პროფილებს იყენებს. მათ შორის მონაცემების გასაზიარებლად { -sync-brand-short-name } გამოიყენეთ.
 get-started-not-logged-in = { -sync-brand-short-name }-ში შესვლა…
-get-started-configured = { -sync-brand-short-name }-ის პარამეტრების გახსნა
+get-started-configured = სინქრონიზაციის პარამეტრების გახსნა
 always-check-default =
     .label = ყოველთვის შემოწმდეს, არის თუ არა { -brand-short-name } ნაგულისხმევი ბრაუზერი
     .accesskey = ვ
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = ცარიელი გვერდის ჩვენება
 startup-prev-session =
     .label = ბოლოს დახურული ფანჯრებისა და ჩანართების ჩვენება
+startup-restore-previous-session =
+    .label = წინა სეანსის აღდგენა
+    .accesskey = წ
 disable-extension =
     .label = გაფართოების ამორთვა
 home-page-header = საწყისი გვერდი
@@ -297,6 +335,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = ქსელის პროქსი
+network-proxy-connection-description = { -brand-short-name }-ის ინტერნეტთან წვდომის პარამეტრების გამართვა.
 network-proxy-connection-learn-more = ვრცლად
 network-proxy-connection-settings =
     .label = პარამეტრები…
@@ -366,7 +405,7 @@ search-show-suggestions-above-history-option =
     .label = ძიების შემოთავაზებების, მონახულებული გვერდების ისტორიაზე წინ გამოჩენა, მისამართების ველის შედეგებში
 search-suggestions-cant-show = მისამართების ველში ძიების შემოთავაზებები არ გამოჩნდება, ვინაიდან { -brand-short-name }-ს მითითებული აქვს, რომ ისტორია არასდროს დაიმახსოვროს.
 search-one-click-header = ერთწკაპიანი საძიებო სისტემები
-search-one-click-desc = მიუთითეთ სათადარიგო საძიებო სისტემები, რომელიც გამოჩნდება მისამართებისა და ძიების ველების ქვემოთ, საძებნი ფრაზის აკრეფისას.
+search-one-click-desc = მიუთითეთ სათადარიგო საძიებო სისტემები, რომლებიც გამოჩნდება მისამართებისა და ძიების ველების ქვემოთ, საძებნი ფრაზის აკრეფისას.
 search-choose-engine-column =
     .label = საძიებო სისტემა
 search-choose-keyword-column =
@@ -375,7 +414,7 @@ search-restore-default =
     .label = ნაგულისხმევი საძიებო სისტემების აღდგენა
     .accesskey = ნ
 search-remove-engine =
-    .label = ამოღება
+    .label = ამოშლა
     .accesskey = ა
 search-find-more-link = სხვა საძიებო სისტემების მონახვა
 # This warning is displayed when the chosen keyword is already in use
@@ -396,7 +435,7 @@ containers-add-button =
 containers-preferences-button =
     .label = პარამეტრები
 containers-remove-button =
-    .label = ამოღება
+    .label = წაშლა
 
 ## Sync Section - Signed out
 
@@ -540,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = მონახულებული გვერდებისა და ჩამოტვირთვების ისტორიის დამახსოვრება
     .accesskey = მ
+history-remember-browser-option =
+    .label = გვერდებისა და ჩამოტვირთვების ისტორიის დამახსოვრება
+    .accesskey = გ
 history-remember-search-option =
     .label = ძიებისა და ველების ისტორიის დამახსოვრება
     .accesskey = ვ
@@ -556,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = ფუნთუშები და საიტის მონაცემები
+sitedata-total-size-calculating = საიტის მონაცემებისა და კეშის მოცულობის გამოთვლა…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = თქვენ მიერ შენახული ფუნთუშები, საიტის მონაცემები და კეში, ამჟამად დისკზე იკავებს { $value } { $unit } მოცულობას.
 sitedata-learn-more = ვრცლად
 sitedata-accept-cookies-option =
     .label = ფუნთუშებისა და საიტის მონაცემების მიღება (სასურველია)
@@ -650,6 +697,12 @@ permissions-notification-link = ვრცლად
 permissions-notification-pause =
     .label = შეტყობინებების შეჩერება { -brand-short-name }-ის ხელახლა გაშვებამდე
     .accesskey = ჩ
+permissions-block-autoplay-media =
+    .label = ვებსაიტებისთვის, ხმოვანი ვიდეოფაილების თვითგაშვების შეზღუდვა
+    .accesskey = ზ
+permissions-block-autoplay-media-exceptions =
+    .label = გამონაკლისები…
+    .accesskey = ო
 permissions-block-popups =
     .label = ამომხტომი ფირნიშების შეზღუდვა
     .accesskey = დ
@@ -676,6 +729,9 @@ collection-health-report =
     .label = { -brand-short-name }-ისთვის ნების დართვა, გადაუგზავნოს ტექნიკური მონაცემები { -vendor-short-name }-ს
     .accesskey = რ
 collection-health-report-link = იხილეთ ვრცლად
+collection-studies =
+    .label = { -brand-short-name }-ისთვის ნების დართვა, კვლევების დაყენებასა და გამართვაზე
+collection-studies-link = იხილეთ { -brand-short-name } კვლევები
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = მოხსენებები გამორთულია ანაწყობის ამ კონფიგურაციისთვის

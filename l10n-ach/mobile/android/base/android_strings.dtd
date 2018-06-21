@@ -55,7 +55,7 @@
 <!-- Localization note: Shown in a snackbar when tab is loaded from cache while device was offline. -->
 <!ENTITY  tab_offline_version "Nyutu kit jami ma pe iyamo">
 
-<!ENTITY  crash_reporter_title "&brandShortName; Lami ngec me Bal ma time atura">
+<!ENTITY  crash_reporter_title "&brandShortName; Lami ripot me poto">
 <!ENTITY  crash_message2 "&brandShortName; obedo ki peko kadong opoto woko. Dirica matino ni myero gi obed i potbuk me acaki pa &brandShortName; ka i nwoyo cako.">
 <!ENTITY  crash_send_report_message3 "Tit bot &vendorShortName; pi poto man wek ki yub woko">
 <!ENTITY  crash_include_url2 "Med kanonge me pot buk ma nongo atye iye">
@@ -181,7 +181,7 @@
 <!ENTITY pref_category_search3 "Yeny">
 <!ENTITY pref_category_search_summary2 "Med, ter makwongo, nyut tam amia">
 <!ENTITY pref_category_accessibility "Kit me nongo">
-<!ENTITY pref_category_accessibility_summary2 "Size pa coc, Medi, Kaketo dwan">
+<!ENTITY pref_category_accessibility_summary2 "Dit pa coc, kwoto, keto dwon">
 <!ENTITY pref_category_privacy_short "Mung">
 <!ENTITY pref_category_privacy_summary4 "Lubo kor, donyo iyie, yer me data">
 <!ENTITY pref_category_vendor2 "&vendorShortName; &brandShortName;">
@@ -207,6 +207,7 @@
 <!ENTITY pref_category_advanced_summary3 "Dwok dirica matino, lagwok data, gitic pa ludiro">
 <!ENTITY pref_category_notifications "Jami angeya">
 <!ENTITY pref_category_notifications_summary "Jami manyen, ngec manyen me kakube">
+<!ENTITY pref_category_notifications_summary2 "Jami manyen, ngec pi jami">
 <!ENTITY pref_developer_remotedebugging_usb "Nongo bal ki iyi USB">
 <!ENTITY pref_developer_remotedebugging_wifi "Nongo bal ki iyi Wi-Fi">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Nongo bal ki iyi Wi-Fi mito ni nyonyo ni obed ki purugram me kwano kod me QR.">
@@ -282,6 +283,13 @@
 <!ENTITY pref_whats_new_notification "Ngo manyen i &brandShortName;">
 <!ENTITY pref_whats_new_notification_summary "Nong ngec ikom jami manyen inge keto ngec manyen">
 
+<!-- Localization note (pref_feature_tips_notification): Title of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification"-->
+<!ENTITY pref_feature_tips_notification "Ngec ikom jami ki tic gi">
+<!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification_summary"-->
+<!ENTITY pref_feature_tips_notification_summary "Nong ngec mapol ikom tic ki &brandShortName; ki jami mukene me &vendorShortName;">
+
 <!-- Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
      for experimental features. -->
 <!ENTITY pref_category_experimental "Jami me atema">
@@ -350,14 +358,14 @@
 
 <!-- Localization note (pref_use_system_font_size, pref_use_system_font_size_summary):
      Font size here refers to the name of the corresponding Android system setting. -->
-<!ENTITY pref_use_system_font_size "Tii ki dit me coc pa nyonyo">
+<!ENTITY pref_use_system_font_size "Tii ki dit coc pa nyonyo">
 <!ENTITY pref_use_system_font_size_summary "Lok jami me kakube malube ki dit me coc pa nyonyo">
 
 <!ENTITY pref_media_autoplay_enabled "Ye tuko pire kene">
 <!ENTITY pref_media_autoplay_enabled_summary "Lo kacce kakube tuko video pi gi kengi ki jami mukene me poko ngec">
 <!ENTITY pref_zoom_force_enabled "Pol kare cak kwoto">
 <!ENTITY pref_zoom_force_enabled_summary "Dii tic pire kene wek i kwot potbuk mo keken">
-<!ENTITY pref_voice_input "Ket me dwon">
+<!ENTITY pref_voice_input "Keto dwon">
 <!ENTITY pref_voice_input_summary2 "Yee lok me dwon i lanyut me URL">
 <!ENTITY pref_qrcode_enabled "Lakwan kod me QR">
 <!ENTITY pref_qrcode_enabled_summary2 "Yee lameny QR i lanyut me URL">
@@ -388,7 +396,7 @@
 <!ENTITY pref_default_browser_mozilla_support_tablet "Lim Mozilla Support">
 <!ENTITY pref_about_firefox "Ikom &brandShortName;">
 <!ENTITY pref_vendor_faqs "Lapeny ma pol kare">
-<!ENTITY pref_vendor_feedback "Mi lagam">
+<!ENTITY pref_vendor_feedback "Mii adwogi">
 
 <!ENTITY pref_dialog_set_default "Ter calo makwongo">
 <!ENTITY pref_dialog_default "Bal tye iye">
@@ -428,7 +436,7 @@
 <!-- Localization note (datareporting_crashreporter_title_short) : This string matches
      (crashReporterSection.label) in en-US/chrome/browser/preferences/advanced.dtd.-->
 <!ENTITY datareporting_crashreporter_title_short "Lami ripot me poto">
-<!ENTITY datareporting_wifi_title2 "tic me kabedo pa &vendorShortName;">
+<!ENTITY datareporting_wifi_title2 "Tic me kabedo pa &vendorShortName;">
 <!ENTITY datareporting_wifi_geolocation_summary4 "Kony &vendorShortName; me goyo map me wilobo! Nywak byek me kabedo me Wi-Fi ki cim pa nyonyo mamegi me yilo rwom pa tic me kabedo mamegwa.">
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
@@ -536,7 +544,7 @@
 <!ENTITY pref_compact_tabs_summary2 "Can dirica matino i rek ariyo i kit me atir">
 
 <!-- Localization note (page_removed): This string appears in a toast message when
-     any page is removed frome about:home. This includes pages that are in history,
+     any page is removed from about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "Kikwanyo woko pot buk">
 <!ENTITY folder_removed "Kikwanyo woko boc">
@@ -632,7 +640,7 @@
 <!ENTITY pin_site_dialog_hint "Ket lok mapire tek me yeny">
 
 <!ENTITY filepicker_title "Yer Pwail">
-<!ENTITY filepicker_audio_title "Yer onyo ket tekod me dwon">
+<!ENTITY filepicker_audio_title "Yer onyo mak dwon">
 <!ENTITY filepicker_image_title "Yer onyo ter cal">
 <!ENTITY filepicker_video_title "Yer onyo ket video">
 
@@ -751,7 +759,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      "Last synced" is one of the user's other Sync clients, typically Firefox on
      their desktop or laptop.-->
 <!ENTITY remote_tabs_last_synced "Kitimo marom me agiki i: &formatS;">
-<!-- Localization note: Used when the sync has not happend yet, showed in place of a date -->
+<!-- Localization note: Used when the sync has not happened yet, showed in place of a date -->
 <!ENTITY remote_tabs_never_synced "Kitimo marom me agiki i: pe matwal">
 
 <!-- LOCALIZATION NOTE (intent_uri_private_browsing_prompt): This string will

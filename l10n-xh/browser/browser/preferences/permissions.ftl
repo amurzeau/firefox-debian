@@ -24,3 +24,47 @@ permissions-button-cancel =
 permissions-button-ok =
     .label = Gcina Iinguqu
     .accesskey = G
+permissions-capabilities-allow =
+    .label = Vumela
+permissions-capabilities-block =
+    .label = Nqanda
+
+## Invalid Hostname Dialog
+
+permissions-invalid-uri-title = Kungeniswe igama loMamkeli elingasebenziyo
+permissions-invalid-uri-label = Nceda ngenisa igama lomamkeli elisebenzayo
+
+## Exceptions - Tracking Protection
+
+permissions-exceptions-tracking-protection-window =
+    .title = Ezikhethekileyo - Treka Ukhuseleko
+    .style = { permissions-window.style }
+
+## Exceptions - Cookies
+
+
+## Exceptions - Pop-ups
+
+permissions-exceptions-popup-desc = Ungabalula ukuba zeziphi na iiwebhusayithi ezivumeleke ukuvula iiwindow ezizivelelayo. Tayipha idilesi yokwenene yesayithi ofuna ukuyivumela uze ucofe Vumela.
+
+## Exceptions - Saved Logins
+
+permissions-exceptions-saved-logins-window =
+    .title = Ezikhethekileyo - IiLogini Ezigciniweyo
+    .style = { permissions-window.style }
+
+## Exceptions - Add-ons
+
+permissions-exceptions-addons-desc = Ungabalula ukuba zeziphi na iiwebhusayithi ezivumeleke ukufakela izongezelelo. Tayipha idilesi yokwenene yesayithi ofuna ukuyivumela uze ucofe Vumela.
+
+## Site Permissions - Notifications
+
+
+## Site Permissions - Location
+
+
+## Site Permissions - Camera
+
+
+## Site Permissions - Microphone
+

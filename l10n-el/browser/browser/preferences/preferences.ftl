@@ -14,8 +14,12 @@ pref-page =
             [windows] Επιλογές
            *[other] Προτιμήσεις
         }
-# This string is currently used only in Firefox 60 and will be removed when not
-# needed for x-channel. See bug 1445686 for details.
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
 search-input =
     .style = width: 15.4em
 # This is used to determine the width of the search field in about:preferences,
@@ -69,6 +73,20 @@ should-restart-ok = Επανεκκίνηση του { -brand-short-name } τώρ
 cancel-no-restart-button = Ακύρωση
 restart-later = Επανεκκίνηση αργότερα
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Μια επέκταση, <img data-l10n-name="icon"/> { $name }, έχει ορίσει την προεπιλεγμένη μηχανή αναζήτησής σας.
+
 ## Preferences UI Search Results
 
 search-results-header = Αποτελέσματα αναζήτησης
@@ -105,6 +123,9 @@ startup-blank-page =
     .label = Εμφάνιση κενής σελίδας
 startup-prev-session =
     .label = Εμφάνιση παραθύρων και καρτελών από την τελευταία φορά
+startup-restore-previous-session =
+    .label = Επαναφορά προηγούμενης συνεδρίας
+    .accesskey = σ
 disable-extension =
     .label = Απενεργοποίηση επέκτασης
 home-page-header = Αρχική σελίδα
@@ -292,6 +313,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Διακομιστής μεσολάβησης δικτύου
+network-proxy-connection-description = Ρυθμίστε τον τρόπο σύνδεσης του { -brand-short-name } στο διαδίκτυο.
 network-proxy-connection-learn-more = Μάθετε περισσότερα
 network-proxy-connection-settings =
     .label = Ρυθμίσεις…
@@ -351,6 +373,13 @@ search-suggestions-option =
 search-show-suggestions-url-bar-option =
     .label = Εμφάνιση προτάσεων αναζήτησης στα αποτελέσματα της γραμμής διευθύνσεων
     .accesskey = τ
+# This string describes what the user will observe when the system
+# prioritizes search suggestions over browsing history in the results
+# that extend down from the address bar. In the original English string,
+# "ahead" refers to location (appearing most proximate to), not time
+# (appearing before).
+search-show-suggestions-above-history-option =
+    .label = Εμφάνιση προτάσεων αναζήτησης πριν το ιστορικό περιήγησης στα αποτελέσματα γραμμής διευθύνσεων
 search-suggestions-cant-show = Οι προτάσεις αναζήτησης δεν θα εμφανίζονται στη γραμμή διευθύνσεων, καθώς έχετε ρυθμίσει το { -brand-short-name } ώστε να μην διατηρεί ποτέ το ιστορικό.
 search-one-click-header = Μηχανές αναζήτησης με ένα κλικ
 search-one-click-desc = Επιλέξτε τις εναλλακτικές μηχανές αναζήτησης που εμφανίζονται κάτω από τη γραμμή διευθύνσεων και τη γραμμή αναζήτησης όταν αρχίσετε να πληκτρολογείτε μια λέξη-κλειδί.
@@ -416,6 +445,12 @@ sync-manage-account = Διαχείριση λογαριασμού
     .accesskey = η
 sync-signedin-unverified = { $email } Μη επαληθευμένος.
 sync-signedin-login-failure = Παρακαλούμε συνδεθείτε ξανά για επανασύνδεση { $email }
+sync-resend-verification =
+    .label = Εκ νέου αποστολή επαλήθευσης
+    .accesskey = λ
+sync-remove-account =
+    .label = Αφαίρεση λογαριασμού
+    .accesskey = Α
 sync-sign-in =
     .label = Σύνδεση
     .accesskey = σ
@@ -427,14 +462,34 @@ sync-engine-bookmarks =
 sync-engine-history =
     .label = Ιστορικό
     .accesskey = ρ
+sync-engine-tabs =
+    .label = Ανοικτές καρτέλες
+    .tooltiptext = Μια λίστα με όλα όσα είναι ανοικτά στις συγχρονισμένες συσκευές
+    .accesskey = κ
 sync-engine-logins =
     .label = Συνδέσεις
     .tooltiptext = Ονόματα χρήστη και κωδικοί πρόσβασης που έχετε αποθηκεύσει
     .accesskey = Σ
+sync-engine-addresses =
+    .label = Διευθύνσεις
+    .tooltiptext = Διευθύνσεις αποστολής που έχετε αποθηκεύσει (μόνο για υπολογιστές)
+    .accesskey = ν
 sync-engine-creditcards =
     .label = Πιστωτικές κάρτες
     .tooltiptext = Ονόματα, αριθμοί και ημερομηνίες λήξης (μόνο για υπολογιστές)
     .accesskey = Π
+sync-engine-addons =
+    .label = Πρόσθετα
+    .tooltiptext = Επεκτάσεις και θέματα για το Firefox για υπολογιστές
+    .accesskey = Π
+sync-engine-prefs =
+    .label =
+        { PLATFORM() ->
+            [windows] Επιλογές
+           *[other] Προτιμήσεις
+        }
+    .tooltiptext = Γενικές ρυθμίσεις, ρυθμίσεις απορρήτου και ασφάλειας που έχετε αλλάξει
+    .accesskey = ς
 sync-device-name-header = Όνομα συσκευής
 sync-device-name-change =
     .label = Αλλαγή ονόματος συσκευής…
@@ -490,6 +545,7 @@ history-remember-option-never =
     .label = Δεν θα διατηρεί ποτέ το ιστορικό
 history-remember-option-custom =
     .label = Θα κάνει χρήση προσαρμοσμένων ρυθμίσεων ιστορικού
+history-remember-description = Το { -brand-short-name } θα αποθηκεύει το ιστορικό περιήγησης, λήψεων, φορμών και αναζητήσεων.
 history-dontremember-description = Το { -brand-short-name } θα χρησιμοποιεί τις ίδιες ρυθμίσεις με την ιδιωτική περιήγηση και δεν θα διατηρεί το ιστορικό περιήγησης σας.
 history-private-browsing-permanent =
     .label = Μόνιμη λειτουργία ιδιωτικής περιήγησης
@@ -512,6 +568,7 @@ history-clear-button =
 
 ## Privacy Section - Site Data
 
+sitedata-header = Cookies και δεδομένα ιστοσελίδων
 sitedata-learn-more = Μάθετε περισσότερα
 sitedata-keep-until = Διατήρηση μέχρι
     .accesskey = μ
@@ -521,6 +578,9 @@ sitedata-accept-third-party-visited-option =
     .label = Από επισκέψεις
 sitedata-accept-third-party-never-option =
     .label = Ποτέ
+sitedata-clear =
+    .label = Εκκαθάριση δεδομένων...
+    .accesskey = κ
 sitedata-settings =
     .label = Διαχείριση δεδομένων…
     .accesskey = Δ
@@ -615,6 +675,7 @@ collection-health-report-link = Μάθετε περισσότερα
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Η αναφορά δεδομένων είναι ανενεργή για αυτή την έκδοση
+collection-browser-errors-link = Μάθετε περισσότερα
 collection-backlogged-crash-reports-link = Μάθετε περισσότερα
 
 ## Privacy Section - Security

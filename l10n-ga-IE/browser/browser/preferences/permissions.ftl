@@ -24,3 +24,47 @@ permissions-button-cancel =
 permissions-button-ok =
     .label = Sábháil na hAthruithe
     .accesskey = S
+permissions-capabilities-allow =
+    .label = Ceadaigh
+permissions-capabilities-block =
+    .label = Coisc
+
+## Invalid Hostname Dialog
+
+permissions-invalid-uri-title = Óstainm neamhbhailí
+permissions-invalid-uri-label = Cuir óstainm bailí isteach, le do thoil
+
+## Exceptions - Tracking Protection
+
+permissions-exceptions-tracking-protection-window =
+    .title = Eisceachtaí - Cosaint ar Lorgaireacht
+    .style = { permissions-window.style }
+
+## Exceptions - Cookies
+
+
+## Exceptions - Pop-ups
+
+permissions-exceptions-popup-desc = Is féidir na suímh a bhfuil cead acu preabfhuinneoga a oscailt a shonrú. Clóscríobh seoladh cruinn an tsuímh a theastaíonn uait a cheadú agus ansin cliceáil Ceadaigh.
+
+## Exceptions - Saved Logins
+
+permissions-exceptions-saved-logins-window =
+    .title = Eisceachtaí - Focail Fhaire a Sábháladh
+    .style = { permissions-window.style }
+
+## Exceptions - Add-ons
+
+permissions-exceptions-addons-desc = Is féidir na suímh a bhfuil cead acu breiseáin a shuiteáil a shonrú. Clóscríobh seoladh cruinn an tsuímh a theastaíonn uait a cheadú agus ansin cliceáil Ceadaigh.
+
+## Site Permissions - Notifications
+
+
+## Site Permissions - Location
+
+
+## Site Permissions - Camera
+
+
+## Site Permissions - Microphone
+

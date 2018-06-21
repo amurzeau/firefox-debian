@@ -7,6 +7,7 @@
 
 site-data-settings-window =
     .title = कुकीज़ और साइट डेटा प्रबंधित करें
+site-data-settings-description = निम्न वेबसाइट कूकीज़ तथा साइट डेटा आपके कंप्यूटर पर जमा करते हैं. { -brand-short-name } डेटा को वेबसाइटों से स्थायी स्टोरेज के साथ रखता है जब तक कि आप इसे मिटा नहीं देते, और डेटा को अस्थायी स्टोरेज के साथ मिटाता है क्योंकि खाली जगह की आवश्यकता होती है.
 site-data-search-textbox =
     .placeholder = वेबसाइट खोजें
     .accesskey = S
@@ -27,11 +28,24 @@ site-data-button-cancel =
 site-data-button-save =
     .label = परिवर्तन सहेजें
     .accesskey = a
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+site-usage-pattern = { $value } { $unit }
+site-data-remove-all =
+    .label = सभी हटाएँ
+    .accesskey = e
+site-data-remove-shown =
+    .label = सभी दर्शाए गये हटाएँ
+    .accesskey = e
 
 ## Removing
 
 site-data-removing-window =
     .title = { site-data-removing-header }
+site-data-removing-dialog =
+    .title = { site-data-removing-header }
+    .buttonlabelaccept = हटाएँ
 site-data-removing-header = कुकीज़ और साइट डेटा हटायें
 site-data-removing-desc = कूकीज़ तथा साइट डेटा हटाना आपको वेबसाइटों से लॉग आउट कर सकता है. क्या आप निश्चित रूप से परिवर्तन करना चाहते हैं?
 site-data-removing-table = निम्न वेबसाइटों के लिए कुकीज़ और साइट डाटा हटा दिए जायेंगे

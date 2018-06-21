@@ -73,6 +73,41 @@ should-restart-ok = Վերամեկնարկել { -brand-short-name }-ը
 cancel-no-restart-button = Չեղարկել
 restart-later = Վերամեկնարկել հետո
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = <img data-l10n-name="icon"/> { $name } ընդլայնումը ղեկավարում է ձեր տնային էջը:
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = <img data-l10n-name="icon"/> { $name } ընդլայնումը ղեկավարում է ձեր նոր ներդիր էջը:
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = <img data-l10n-name="icon"/> { $name } ընդլայնումը կայել է ձեր հիմնական որոնիչը:
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Ընդլայնում, <img data-l10n-name="icon"/> { $name }-ը, պահանջում է Պարունակի ներդիրներ:
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Ընդլայնում, <img data-l10n-name="icon"/> { $name }, կառավարում է հետագծման պաշտպանությունը:
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = <img data-l10n-name="icon"/> { $name } ընդլայնումը ղեկավարում է, թե ինչպես { -brand-short-name }-ը կապակցվի համացանցին:
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Ընդլայնումը միացնելու համար անցեք <img data-l10n-name="addons-icon"/> Հավելումներին <img data-l10n-name="menu-icon"/>%2$S ցանկում:
+
 ## Preferences UI Search Results
 
 search-results-header = Որոնման արդյունքներ
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = Ցուցադրել դատարկ էջ
 startup-prev-session =
     .label = Ցուցադրել ձեր նախորդ պատուհանները և ներդիրները
+startup-restore-previous-session =
+    .label = Վերականգնել նախորդ աշխատաշրջանը
+    .accesskey = s
 disable-extension =
     .label = Անջատել ընդլայնումը
 home-page-header = Տնային էջ
@@ -297,6 +335,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Ցանցի պրոքսի
+network-proxy-connection-description = Կազմաձևեք, թե ինչպես { -brand-short-name }-ը կապակցվի համացանցին:
 network-proxy-connection-learn-more = Իմանալ ավելին
 network-proxy-connection-settings =
     .label = Կարգավորել...
@@ -346,7 +385,7 @@ restore-default =
 
 search-bar-header = Որոնման գոտի
 search-bar-hidden =
-    .label = Օգտագործեք հասցեի գոտին՝ որոնման և ուղորդման համար
+    .label = Օգտագործեք հասցեի գոտին՝ որոնման և ուղղորդման համար
 search-bar-shown =
     .label = Ավելացնել որոնման գոտին գործիքագոտիում
 search-engine-default-header = Հիմնական որոնիչը
@@ -496,6 +535,9 @@ privacy-header = Դիտարկիչի գաղտնիություն
 ## Privacy Section - Forms
 
 forms-header = Ձևեր և գաղտնաբառեր
+forms-ask-to-save-logins =
+    .label = Հարցնել և պահպանել մուտքագրումները և գաղտնաբառրը կայքերի համար
+    .accesskey = r
 forms-exceptions =
     .label = Բացառություններ…
     .accesskey = ա
@@ -553,6 +595,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cookie-ներ և կայքի տվյալներ
+sitedata-total-size-calculating = Հաշվում է կայքի տվյալները և շտեմի չափը…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Ձեր cookie-ները, կայքի տվյալները և շտեմը այժմ զբաղեցնում են { $value } { $unit } տեղ:
 sitedata-learn-more = Իմանալ ավելին
 sitedata-accept-cookies-option =
     .label = Ընդունել cookie-ներ և կայքի տվյալներ կայքերից (հանձնարարելի)
@@ -673,6 +720,9 @@ collection-health-report =
     .label = Թույլատրել { -brand-short-name }-ին ուղարկել տեխնիկական և փոխազդելու տվյալներ { -vendor-short-name }-ին
     .accesskey = { "" }
 collection-health-report-link = Իմանալ ավելին
+collection-studies =
+    .label = Թույլատրել { -brand-short-name }-ին տեղադրել և կատարել հետազոտություններ
+collection-studies-link = Դիտել { -brand-short-name }-ի հետազոտությունները
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Տվյալների զեկուցումը անջատված է կազմաձևի այս կառուցման համար

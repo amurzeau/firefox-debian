@@ -31,12 +31,16 @@
 <!ENTITY minimizeButton.tooltip       "მინიმიზება">
 <!ENTITY restoreButton.tooltip        "აღდგენა">
 
-<!ENTITY feedsMenu.label "ხელმოწერა ამ გვერდზე">
+<!ENTITY feedsMenu.label "გამოწერა ამ გვერდზე">
 <!ENTITY feedsMenu.accesskey "S">
 
 <!ENTITY menuBar.tooltip                  "მენიუს პანელი">
 <!ENTITY bookmarksToolbar.tooltip         "სანიშნების ხელსაწყოთა ზოლი">
 <!ENTITY navigationToolbar.tooltip        "ნავიგაციის პულტი">
+
+<!ENTITY editBookmark.done.label "მზადაა">
+<!ENTITY editBookmark.cancel.label "გაუქმება">
+<!ENTITY editBookmark.removeBookmark.accessKey "უ">
 
 <!-- Toolbar items --> 
 <!ENTITY backButton.label             "უკან">

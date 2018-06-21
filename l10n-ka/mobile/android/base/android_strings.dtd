@@ -70,6 +70,15 @@
 
 <!ENTITY url_bar_default_text2 "მოძებნეთ ან შეიყვანეთ მისამართი">
 
+<!-- Localization note (url_bar_qrcode_text2) : This text will be
+     heard by non-visual users when the focus is on the QR Code
+     icon in the url bar. -->
+<!ENTITY url_bar_qrcode_text2 "QR წამკითხველის გამოყენება საძიებო ფრაზის ან მისამართის შესაყვანად">
+<!-- Localization note (url_bar_mic_text2) : This text will be
+     heard by non-visual users when the focus is on the Microphone
+     icon in the url bar. -->
+<!ENTITY url_bar_mic_text2 "მიკროფონის გამოყენება საძიებო ფრაზის ან მისამართის შესაყვანად">
+
 <!ENTITY bookmark "ჩანიშვნა">
 <!ENTITY bookmark_remove "სანიშნის წაშლა">
 <!ENTITY bookmark_added "ჩანიშნულია">
@@ -138,8 +147,8 @@
 
 <!ENTITY settings "პარამეტრები">
 <!ENTITY settings_title "პარამეტრები">
-<!ENTITY pref_category_general "ზოგადი">
-<!ENTITY pref_category_general_summary3 "მთავარი, ენა, ჩანართების რიგი">
+<!ENTITY pref_category_general "მთავარი">
+<!ENTITY pref_category_general_summary3 "საწყისი გვერდი, ენა, ჩანართების რიგი">
 
 <!-- Localization note (pref_category_language) : This is the preferences
      section in which the user picks the locale in which to display Firefox
@@ -199,7 +208,7 @@
      search providers.
      The &formatI; in the string will be replaced by a small image of the icon described, and can be moved to wherever
      it is applicable. -->
-<!ENTITY pref_search_hint2 "რჩევა: დაამატეთ ნებისმიერი ვებსაიტი თქვენს საძიებო პროვაიდერებს მის საძიებო ველზე დაჭერით შემდეგ კი &formatI; ხატულაზე შეხებით.">
+<!ENTITY pref_search_hint2 "რჩევა: დაამატეთ ნებისმიერი ვებსაიტი თქვენს საძიებო სისტემებში, მის საძიებო ველზე, ხანგრძლივი დაჭერითა და შემდეგ &formatI; ხატულაზე შეხებით.">
 <!ENTITY pref_category_advanced "დამატებითი">
 <!-- Localization note (pref_category_advanced_summary3): “data saver” in this
      context means consuming less data, e.g. by not loading images, not
@@ -207,6 +216,7 @@
 <!ENTITY pref_category_advanced_summary3 "ჩანართების აღდგენა, მონაცემების დამზოგი, შემმუშავებლის ხელსაწყოები">
 <!ENTITY pref_category_notifications "ცნობები">
 <!ENTITY pref_category_notifications_summary "ახალი შესაძლებლობები, ვებსაიტის განახლებები">
+<!ENTITY pref_category_notifications_summary2 "ახალი შესაძლებლობები, მითითებები">
 <!ENTITY pref_developer_remotedebugging_usb "დისტანციური გამართვა USB-ით">
 <!ENTITY pref_developer_remotedebugging_wifi "დისტანციური გამართვა Wi-Fi-ით">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Wi-Fi გამართვისთვის საჭიროა დაყენებული იყოს QR კოდის წამკითხავი.">
@@ -233,7 +243,7 @@
      buttons to choose the homepage they'd like to start on. When they click the radio
      button for this string, a text field will appear below the radio button and allow the
      user to insert an address of their choice. -->
-<!ENTITY home_homepage_radio_user_address "ხელით">
+<!ENTITY home_homepage_radio_user_address "მითითება">
 <!-- Localization note (home_homepage_hint_user_address): The user will see a series of
      radio buttons to choose the homepage they'd like to start on. When they click a
      particular radio button, a text field will appear below the radio button and allow the
@@ -242,7 +252,7 @@
 <!ENTITY home_homepage_hint_user_address "შეიყვანეთ მისამართი ან საძიებო ტერმინი">
 
 <!-- Localization note: These are shown in the left sidebar on tablets -->
-<!ENTITY pref_header_general "საერთო">
+<!ENTITY pref_header_general "მთავარი">
 <!ENTITY pref_header_search "ძიება">
 <!ENTITY pref_header_privacy_short "პირადულობა">
 <!ENTITY pref_header_accessibility "დამხმარე საშუალებები">
@@ -265,7 +275,7 @@
 
 <!ENTITY pref_tap_to_load_images_title2 "სურათების ჩვენება">
 <!ENTITY pref_tap_to_load_images_enabled "ყოველთვის">
-<!ENTITY pref_tap_to_load_images_data "მხოლოდ Wi-Fi-თ">
+<!ENTITY pref_tap_to_load_images_data "მხოლოდ Wi-Fi-ით">
 <!ENTITY pref_tap_to_load_images_disabled2 "არასდროს">
 
 <!ENTITY pref_show_web_fonts "ვებშრიფტების ჩვენება">
@@ -349,11 +359,11 @@
      The action is shown below a header saying "Clear private data"; See pref_clear_private_data -->
 <!ENTITY pref_clear_private_data_now_tablet "ახლავე გასუფთავება">
 <!ENTITY pref_clear_on_exit_title3 "პირადი მონაცემების გასუფთავება გამოსვლისას">
-<!ENTITY pref_clear_on_exit_summary2 "&brandShortName; ავტომატურად გაასუფთავებს თქვენს მონაცემებს მთავარი მენიუდან \&quot;გასვლის\&quot; დროს">
+<!ENTITY pref_clear_on_exit_summary2 "&brandShortName; თავად გაასუფთავებს თქვენს მონაცემებს მთავარი მენიუდან \&quot;გასვლის\&quot; არჩევის დროს">
 <!ENTITY pref_clear_on_exit_dialog_title "აირჩიეთ მონაცემები">
 <!ENTITY pref_restore_tabs "ჩანართების აღდგენა">
 <!ENTITY pref_restore_always "აღდგენა ყოველთვის">
-<!ENTITY pref_restore_quit "არ აღდგეს &brandShortName;-იდან გამოსვლის შემდეგ">
+<!ENTITY pref_restore_quit "არ აღდგეს &brandShortName;-დან გამოსვლის შემდეგ">
 
 <!-- Localization note (pref_use_system_font_size, pref_use_system_font_size_summary):
      Font size here refers to the name of the corresponding Android system setting. -->
@@ -460,7 +470,7 @@
 <!ENTITY share_image_failed "ამ გამოსახულების გაზიარება ვერ ხერხდება">
 <!ENTITY save_as_pdf "შენახვა PDF ფორმატში">
 <!ENTITY print "დაბეჭდვა">
-<!ENTITY view_page_source "გვერდის წყაროს ჩვენება">
+<!ENTITY view_page_source "გვერდის წყარო">
 <!ENTITY find_in_page "პოვნა გვერდზე">
 <!ENTITY desktop_mode "საიტის სრული ვერსია">
 <!ENTITY page "გვერდი">
@@ -473,7 +483,7 @@
 <!ENTITY tabs_private "პირადი">
 <!ENTITY set_image_fail "ვერ ხერხდება გამოსახულების მითითება">
 <!ENTITY set_image_path_fail "ნახატის შენახვა ვერ ხერხდება">
-<!ENTITY set_image_chooser_title "გამოსახულების მითითება როგორც">
+<!ENTITY set_image_chooser_title "სურათის დაყენება, როგორც">
 
 <!-- Localization note (find_text, find_prev, find_next, find_close) : These strings are used
      as alternate text for accessibility. They are not visible in the UI. -->
@@ -508,13 +518,13 @@
      pin/unpin items from top sites when the user is not on the top sites screen so they'd be missing context on what
      just "Pin Site" or "Unpin Site" would mean. -->
 <!ENTITY contextmenu_pin_to_top_sites "რჩეულებში დამატება">
-<!ENTITY contextmenu_unpin_from_top_sites "რჩეული საიტებიდან ამოღება">
-<!ENTITY contextmenu_add_search_engine "საძიებო სისტემის დამატება">
+<!ENTITY contextmenu_unpin_from_top_sites "რჩეული საიტებიდან მოცილება">
+<!ENTITY contextmenu_add_search_engine "საძიებოს დამატება">
 
 <!-- Localization note (pinned_page_to_top_sites, unpinned_page_from_top_sites): These strings are shown in a snackbar
      after the user pins/unpins the currently displayed page from top sites. -->
 <!ENTITY pinned_page_to_top_sites "დამატებულია რჩეულებში">
-<!ENTITY unpinned_page_from_top_sites "ამოღებულია რჩეულებიდან">
+<!ENTITY unpinned_page_from_top_sites "რჩეულებიდან მოცილებულია">
 
 <!-- Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
      where normally a username would be displayed. In this case, no username was found, and this placeholder
@@ -543,7 +553,7 @@
 <!ENTITY pref_compact_tabs_summary2 "ჩანართების ორ რიგად დალაგება შვეულად ჩვენებისას">
 
 <!-- Localization note (page_removed): This string appears in a toast message when
-     any page is removed frome about:home. This includes pages that are in history,
+     any page is removed from about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "გვერდი ამოიშალა">
 <!ENTITY folder_removed "საქაღალდე წაიშალა">
@@ -566,7 +576,7 @@
 <!ENTITY page_action_dropmarker_description "დამატებითი ქმედებები">
 
 <!ENTITY masterpassword_create_title "მთავარი პაროლის შექმნა">
-<!ENTITY masterpassword_remove_title "მთავარი პაროლის წაშლა">
+<!ENTITY masterpassword_remove_title "მთავარი პაროლის მოცილება">
 <!ENTITY masterpassword_password "პაროლი">
 <!ENTITY masterpassword_confirm "პაროლი ხელახლა">
 
@@ -761,7 +771,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      "Last synced" is one of the user's other Sync clients, typically Firefox on
      their desktop or laptop.-->
 <!ENTITY remote_tabs_last_synced "ბოლო სინქრონიზაცია: &formatS;">
-<!-- Localization note: Used when the sync has not happend yet, showed in place of a date -->
+<!-- Localization note: Used when the sync has not happened yet, showed in place of a date -->
 <!ENTITY remote_tabs_never_synced "ბოლო სინქრონიზაცია: არასდროს">
 
 <!-- LOCALIZATION NOTE (intent_uri_private_browsing_prompt): This string will
@@ -857,12 +867,12 @@ Stream list for highlights sourced from th user's bookmarks. -->
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_trending): This label is shown in the Activity Stream list for highlights sourced from a recommendations engine. -->
 <!ENTITY activity_stream_highlight_label_trending "ყველასთვის სასურველი">
 <!-- LOCALIZATION NOTE (activity_stream_highlights_empty): This text is shown when we could not find highlights for this user. This is also shown on first run. -->
-<!ENTITY activity_stream_highlights_empty "დაიწყეთ გვერდების დათვალიერება და აქ გამოჩნდება თქვენი რჩეული სტატიები, ვიდეოები და ბოლოს მონახულებული, ან ჩანიშნული საიტები.">
+<!ENTITY activity_stream_highlights_empty "დაიწყეთ გვერდების დათვალიერება და აქ გამოჩნდება თქვენი რჩეული სტატიები, ვიდეოები და ბოლოს მონახულებული ან ჩანიშნული საიტები.">
 
 <!-- LOCALIZATION NOTE (activity_stream_remove): This label is shown in the Activity Stream context menu,
 and allows hiding a URL/page from highlights or topsites. The page remains in history/bookmarks, but
 is simply hidden from the Activity Stream panel. -->
-<!ENTITY activity_stream_remove "ამოღება">
+<!ENTITY activity_stream_remove "მოცილება">
 <!ENTITY activity_stream_delete_history "ისტორიიდან წაშლა">
 
 <!ENTITY private_tab_panel_title "პირადი თვალიერება + თვალთვალისგან დაცვა">
@@ -880,4 +890,4 @@ displayed when there are more than 3 actions available for a page.
 See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "მთავარ ეკრანზე დამატება">
 <!ENTITY pwa_continue_to_website "ვებგვერდზე გადასვლა">
-<!ENTITY pwa_onboarding_sumo "მარტივად შეგიძლია ეს საიტი განათავსოთ თქვენს მთავარ ეკრანზე, სწრაფი წვდომისა და გვერდების მოხერხებულად მოსანახულებლად, ცალკეული პროგრამის მსგავსად.">
+<!ENTITY pwa_onboarding_sumo "მარტივად შეგიძლიათ ეს საიტი განათავსოთ თქვენს მთავარ ეკრანზე, სწრაფი წვდომისა და გვერდების მოხერხებულად მოსანახულებლად, ცალკეული პროგრამის მსგავსად.">

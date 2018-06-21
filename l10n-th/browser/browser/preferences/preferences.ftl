@@ -73,6 +73,41 @@ should-restart-ok = เริ่มการทำงาน { -brand-short-name 
 cancel-no-restart-button = ยกเลิก
 restart-later = เริ่มการทำงานใหม่ในภายหลัง
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = ส่วนขยาย <img data-l10n-name="icon"/> { $name } กำลังควบคุมหน้าแรกของคุณ
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = ส่วนขยาย <img data-l10n-name="icon"/> { $name } กำลังควบคุมหน้าแท็บใหม่ของคุณ
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = ส่วนขยาย <img data-l10n-name="icon"/> { $name } ได้ตั้งเครื่องมือค้นหาเริ่มต้นของคุณ
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = ส่วนขยาย <img data-l10n-name="icon"/> { $name } ต้องการแท็บแยกข้อมูล
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = ส่วนขยาย <img data-l10n-name="icon"/> { $name } กำลังควบคุมการป้องกันการติดตาม
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = ส่วนขยาย <img data-l10n-name="icon"/> { $name } กำลังควบคุมวิธีที่ { -brand-short-name } เชื่อมต่อกับอินเทอร์เน็ต
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = เพื่อเปิดใช้งานส่วนขยาย ไปยัง <img data-l10n-name="addons-icon"/> ส่วนเสริม ใน <img data-l10n-name="menu-icon"/> เมนู
+
 ## Preferences UI Search Results
 
 search-results-header = ผลการค้นหา
@@ -91,7 +126,7 @@ startup-header = เริ่มการทำงาน
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
     .label = อนุญาตให้ { -brand-short-name } และ Firefox ทำงานพร้อมกัน
-use-firefox-sync = เคล็ดลับ: สิ่งนี้ใช้โปรไฟล์แยก ใช้ { -sync-brand-short-name } เพื่อแบ่งปันข้อมูลระหว่างกัน
+use-firefox-sync = เคล็ดลับ: สิ่งนี้ใช้โปรไฟล์แยก ใช้ { -sync-brand-short-name } เพื่อแบ่งปันข้อมูลระหว่างโปรไฟล์
 get-started-not-logged-in = ลงชื่อเข้า { -sync-brand-short-name }…
 get-started-configured = เปิดค่ากำหนด { -sync-brand-short-name }
 always-check-default =
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = แสดงหน้าว่าง
 startup-prev-session =
     .label = แสดงหน้าต่างและแท็บของคุณจากครั้งล่าสุด
+startup-restore-previous-session =
+    .label = เรียกคืนวาระก่อนหน้า
+    .accesskey = ร
 disable-extension =
     .label = ปิดใช้งานส่วนขยาย
 home-page-header = หน้าแรก
@@ -185,7 +223,7 @@ check-user-spelling =
 ## General Section - Files and Applications
 
 files-and-applications-title = ไฟล์และแอปพลิเคชัน
-download-header = ดาวน์โหลด
+download-header = การดาวน์โหลด
 download-save-to =
     .label = บันทึกไฟล์ไปยัง
     .accesskey = ฟ
@@ -230,7 +268,7 @@ update-application-auto =
     .label = ติดตั้งการอัปเดตโดยอัตโนมัติ (แนะนำ)
     .accesskey = ด
 update-application-check-choose =
-    .label = ตรวจสอบการอัปเดตแต่ให้คุณเลือกว่าจะติดตั้งหรือไม่
+    .label = ตรวจสอบการอัปเดตแต่ให้คุณเลือกว่าจะติดตั้งการอัปเดตหรือไม่
     .accesskey = ว
 update-application-manual =
     .label = ไม่ตรวจสอบการอัปเดตเสมอ (ไม่แนะนำ)
@@ -285,6 +323,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = พร็อกซีเครือข่าย
+network-proxy-connection-description = กำหนดค่าวิธีที่ { -brand-short-name } เชื่อมต่อกับอินเทอร์เน็ต
 network-proxy-connection-learn-more = เรียนรู้เพิ่มเติม
 network-proxy-connection-settings =
     .label = การตั้งค่า…
@@ -389,7 +428,7 @@ containers-remove-button =
 ## Sync Section - Signed out
 
 sync-signedout-caption = นำเว็บของคุณไปกับคุณ
-sync-signedout-description = ประสานที่คั่นหน้า, ประวัติ, แท็บ, รหัสผ่าน, ส่วนเสริม และค่ากำหนดระหว่างอุปกรณ์ทั้งหมดของคุณ
+sync-signedout-description = ประสานที่คั่นหน้า, ประวัติ, แท็บ, รหัสผ่าน, ส่วนเสริม และค่ากำหนดในอุปกรณ์ทั้งหมดของคุณ
 sync-signedout-account-title = เชื่อมต่อกับ { -fxaccount-brand-name }
 sync-signedout-account-create = ไม่มีบัญชี? เริ่มต้นใช้งาน
     .accesskey = ม
@@ -528,6 +567,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = จดจำประวัติการท่องเว็บและการดาวน์โหลดของฉัน
     .accesskey = จ
+history-remember-browser-option =
+    .label = จดจำประวัติการท่องเว็บและการดาวน์โหลด
+    .accesskey = จ
 history-remember-search-option =
     .label = จดจำประวัติการค้นหาและแบบฟอร์ม
     .accesskey = ด
@@ -544,6 +586,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = คุกกี้และข้อมูลไซต์
+sitedata-total-size-calculating = กำลังคำนวณขนาดข้อมูลไซต์และแคช…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = คุกกี้, ข้อมูลไซต์ และแคชที่ถูกจัดเก็บไว้ของคุณใช้พื้นที่ดิสก์ไป { $value } { $unit }
 sitedata-learn-more = เรียนรู้เพิ่มเติม
 sitedata-accept-cookies-option =
     .label = ยอมรับคุกกี้และข้อมูลไซต์จากเว็บไซต์ (แนะนำ)
@@ -593,7 +640,7 @@ addressbar-suggestions-settings = เปลี่ยนค่ากำหนด�
 ## Privacy Section - Tracking
 
 tracking-header = การป้องกันการติดตาม
-tracking-desc = การป้องกันการติดตามปิดกั้นตัวติดตามออนไลน์ที่เก็บรวบรวมข้อมูลการท่องเว็บของคุณระหว่างหลายเว็บไซต์ <a data-l10n-name="learn-more">เรียนรู้เพิ่มเติมเกี่ยวกับการป้องกันการติดตามและความเป็นส่วนตัวของคุณ</a>
+tracking-desc = การป้องกันการติดตามปิดกั้นตัวติดตามออนไลน์ที่เก็บรวบรวมข้อมูลการท่องเว็บของคุณในหลายเว็บไซต์ <a data-l10n-name="learn-more">เรียนรู้เพิ่มเติมเกี่ยวกับการป้องกันการติดตามและความเป็นส่วนตัวของคุณ</a>
 tracking-mode-label = ใช้การป้องกันการติดตามเพื่อปิดกั้นตัวติดตามที่รู้จัก
 tracking-mode-always =
     .label = เสมอ
@@ -638,6 +685,12 @@ permissions-notification-link = เรียนรู้เพิ่มเติ
 permissions-notification-pause =
     .label = หยุดการแจ้งเตือนชั่วคราวจนกระทั่ง { -brand-short-name } เริ่มการทำงานใหม่
     .accesskey = ห
+permissions-block-autoplay-media =
+    .label = ปิดกั้นเว็บไซต์จากการเล่นสื่อพร้อมเสียงโดยอัตโนมัติ
+    .accesskey = ป
+permissions-block-autoplay-media-exceptions =
+    .label = ข้อยกเว้น…
+    .accesskey = ข
 permissions-block-popups =
     .label = ปิดกั้นหน้าต่างป๊อปอัป
     .accesskey = ป
@@ -664,6 +717,9 @@ collection-health-report =
     .label = อนุญาตให้ { -brand-short-name } ส่งข้อมูลทางเทคนิคและการโต้ตอบไปยัง { -vendor-short-name }
     .accesskey = อ
 collection-health-report-link = เรียนรู้เพิ่มเติม
+collection-studies =
+    .label = อนุญาตให้ { -brand-short-name } ติดตั้งและเรียกใช้การศึกษา
+collection-studies-link = ดูการศึกษาของ { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = การรายงานข้อมูลถูกปิดใช้งานสำหรับการกำหนดค่าการสร้างนี้

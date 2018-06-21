@@ -21,8 +21,21 @@ site-data-button-cancel =
 site-data-button-save =
     .label = ပြောင်းလဲမှုများကို သိမ်းပါ
     .accesskey = a
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+site-usage-pattern = { $value } { $unit }
+site-data-remove-all =
+    .label = အားလုံးကို ဖယ်ရှားရန်
+    .accesskey = e
+site-data-remove-shown =
+    .label = ပြသထားသည့် အရာအားလုံးကို ဖယ်ရှားပါ
+    .accesskey = e
 
 ## Removing
 
 site-data-removing-window =
     .title = { site-data-removing-header }
+site-data-removing-dialog =
+    .title = { site-data-removing-header }
+    .buttonlabelaccept = ဖယ်ရှားပါ

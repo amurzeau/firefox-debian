@@ -138,3 +138,12 @@ fonts-languages-fallback-name-vietnamese =
     .label = Vietnamese
 fonts-languages-fallback-name-other =
     .label = Lain-lain (termasuk Western European)
+fonts-very-large-warning-title = Saiz fon minimum besar
+fonts-very-large-warning-message = Anda telah memilih saiz fon minimum yang sangat besar (lebih dari 24 piksel). Ini boleh menyukarkan atau mustahil untuk anda menggunakan konfigurasi beberapa halaman penting seperti ini.
+fonts-very-large-warning-accept = Kekalkan sahaja perubahan saya
+# Variables:
+#   $name {string, "Arial"} - Name of the default font
+fonts-label-default =
+    .label = Piawai ({ $name })
+fonts-label-default-unnamed =
+    .label = Piawai

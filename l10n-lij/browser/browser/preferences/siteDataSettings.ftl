@@ -7,6 +7,7 @@
 
 site-data-settings-window =
     .title = Gestisci Cookie e Dæti di Sciti
+site-data-settings-description = Sti sciti sarvan cookie into computer. { -brand-short-name } o sarva i dæti da i sciti in mòddo perscistente scinché no ti i scancelli, e i scancella quande en sarvæ in mòddo no perscistente e serve do spaçio.
 site-data-search-textbox =
     .placeholder = Çerca sciti
     .accesskey = s
@@ -27,11 +28,25 @@ site-data-button-cancel =
 site-data-button-save =
     .label = Sarva cangiamenti
     .accesskey = a
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+site-usage-pattern = { $value } { $unit }
+site-usage-persistent = { site-usage-pattern } (Perscistente)
+site-data-remove-all =
+    .label = Scancella tutto
+    .accesskey = a
+site-data-remove-shown =
+    .label = Scancella tutto quello visto
+    .accesskey = a
 
 ## Removing
 
 site-data-removing-window =
     .title = { site-data-removing-header }
+site-data-removing-dialog =
+    .title = { site-data-removing-header }
+    .buttonlabelaccept = Scancella
 site-data-removing-header = Scancella Cookie e Dæti di Sciti
 site-data-removing-desc = Scancelâ cookie e dæti di sciti o peu fate sciortî da-i sciti. Te seguo de fâ sti cangiamenti?
 site-data-removing-table = I cookie e dæti di sciti de sti sciti chi saian scancelæ

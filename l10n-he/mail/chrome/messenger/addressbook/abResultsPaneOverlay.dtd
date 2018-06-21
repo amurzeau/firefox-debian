@@ -3,6 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY Addrbook.label                        "פנקס כתובות">
+<!ENTITY Addrbook.accesskey                    "פ">
 <!ENTITY GeneratedName.label                   "שם">
 <!ENTITY GeneratedName.accesskey               "ש">
 <!ENTITY PrimaryEmail.label                    "דוא״ל">
@@ -30,6 +31,7 @@
 <!ENTITY WorkPhone.label                       "טלפון בעבודה">
 <!ENTITY WorkPhone.accesskey                   "ב">
 <!ENTITY ChatName.label                        "שם הצ׳אט">
+<!ENTITY ChatName.accesskey                    "צ">
 <!ENTITY sortAscending.label                   "עולה">
 <!ENTITY sortAscending.accesskey               "ע">
 <!ENTITY sortDescending.label                  "יורד">

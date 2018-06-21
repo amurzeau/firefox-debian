@@ -7,6 +7,7 @@
 
 site-data-settings-window =
     .title = Kudeatu cookieak eta guneetako datuak
+site-data-settings-description = Ondorengo webguneek cookieak eta guneen datuak biltegiratzen dituzte zure ordenagailuan. Biltegiratze iraunkorra duten webguneetako datuak zuk ezabatu arte mantentzen ditu { -brand-short-name }(e)k, eta biltegiratze ez-iraunkorra duten webguneetako datuak tokia behar ahala ezabatzen ditu.
 site-data-search-textbox =
     .placeholder = Bilatu webguneak
     .accesskey = B
@@ -27,11 +28,25 @@ site-data-button-cancel =
 site-data-button-save =
     .label = Gorde aldaketak
     .accesskey = G
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+site-usage-pattern = { $value } { $unit }
+site-usage-persistent = { site-usage-pattern } (iraunkorra)
+site-data-remove-all =
+    .label = Kendu denak
+    .accesskey = e
+site-data-remove-shown =
+    .label = Kendu erakutsitako denak
+    .accesskey = e
 
 ## Removing
 
 site-data-removing-window =
     .title = { site-data-removing-header }
+site-data-removing-dialog =
+    .title = { site-data-removing-header }
+    .buttonlabelaccept = Kendu
 site-data-removing-header = Cookieak eta guneetako datuak kentzea
 site-data-removing-desc = Cookieak eta guneetako datuak kentzeak webguneetako saioak amaitzea eragin lezake. Ziur zaude aldaketak burutu nahi dituzula?
 site-data-removing-table = Ondorengo webguneetako cookieak eta datuak kendu egingo dira

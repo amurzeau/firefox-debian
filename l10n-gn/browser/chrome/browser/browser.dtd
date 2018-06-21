@@ -35,6 +35,9 @@ left instead of right. -->
 <!ENTITY  closeOtherTabs.label               "Ambue togue pyahu ñemboty">
 <!ENTITY  closeOtherTabs.accesskey           "o">
 
+<!ENTITY  closeSelectedTabs.label            "Emboty tendayke poravopyre">
+<!ENTITY  closeSelectedTabs.accesskey        "S">
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -54,6 +57,8 @@ can reach it easily. -->
 <!ENTITY  sendToDeviceOfflineFeedback.label  "Ñeha'ãrõme (joaju'ỹre)">
 <!ENTITY  moveToNewWindow.label              "Ovetã pyahúpe jegueraha">
 <!ENTITY  moveToNewWindow.accesskey          "W">
+<!ENTITY  reopenInContainer.label            "Embojurujajey guerekohápe">
+<!ENTITY  reopenInContainer.accesskey        "e">
 <!ENTITY  bookmarkAllTabs.label              "Opaite tendayke mbojoapy…">
 <!ENTITY  bookmarkAllTabs.accesskey          "T">
 <!ENTITY  undoCloseTab.label                 "Emboguevi ha emboty tendayke">
@@ -129,7 +134,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "Opaite tendayke jehechauka">
 <!ENTITY showAllTabsCmd.accesskey "A">
 <!ENTITY toggleReaderMode.key "R">
-
 <!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "&syncBrand.shortName.label;-pe jeike">
@@ -189,10 +193,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY otherBookmarksCmd.label "Ambuekuéra Techaukaha">
 <!ENTITY mobileBookmarksCmd.label "Pumbyry Rechaukaha">
 <!ENTITY bookmarksToolbarChevron.tooltip "Techaukaha jehechaukave">
-<!ENTITY showRecentlyBookmarked.label     "Oñemongurusu Ramóva">
-<!ENTITY showRecentlyBookmarked.accesskey "h">
-<!ENTITY hideRecentlyBookmarked.label     "Oñemongurusu Ramóva">
-<!ENTITY hideRecentlyBookmarked.accesskey "O">
 
 <!ENTITY backCmd.label                "Tapykue">
 <!ENTITY backCmd.accesskey            "B">
@@ -234,7 +234,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translateNotificationAnchor.tooltip       "Emoñe'ẽasa ko kuatiarogue">
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Eñangareko kuatiarogue ñe'ẽasa rehe">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Eñangareko DRM software jepuru rehe">
-
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "Eike ta'ãngarupa MIDI pe">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Ejokóma ne ta'ãngamýi ko ñanduti rendápe g̃uarã.">
@@ -245,7 +244,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Ejokóma mba'ekuaarã ñembyaty hi'aréva ko ñanduti renda pegua.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Ejokoukákuri ovetã apysẽva ko ñandutirendápe g̃uarã.">
 <!ENTITY urlbar.canvasBlocked.tooltip            "Ejokoukákuri kuaapy canvas rehegua ñeguenohẽ ko ñandutirendápe g̃uarã.">
-
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "Ejokóma ko ñanduti renda ani hag̃ua tembipuru'i Adobe Flash.">
 <!ENTITY urlbar.midiBlocked.tooltip              "Ejokóma MIDI pe jeike ko ñanduti rendápe g̃uarã.">
 
@@ -255,6 +253,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!-- Toolbar items -->
 <!ENTITY homeButton.label             "Ñepyrũ">
+
+<!ENTITY homeButton.defaultPage.tooltip "Kuatiarogue ñepyrũ &brandShortName; mba'éva">
 
 <!ENTITY bookmarksButton.label          "Techaukaha">
 <!ENTITY bookmarksCmd.commandkey "b">
@@ -395,7 +395,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Ehechasépa tendaykekuéra ambue mba'e'okaguáva ko'ápe?">
-<!ENTITY appMenuRemoteTabs.openprefs.label "Jerohoryvéva Mbojuehe">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Eike Sync jerohoryvévape">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Emoñepyrũ tembiapopa'ũ ehecha hag̃ua tendayke rysýi ambue ne mba'e'okaguáva.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Tekotevẽ ñemboaje ne mba'ete.">
@@ -437,6 +436,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.addMoreItems.label "Mba'epuruve mbojoapy…">
 <!ENTITY customizeMenu.addMoreItems.accesskey "A">
 
+<!ENTITY customizeMenu.autoHideDownloadsButton.label "Emokañy ijehegui tembipuru rendápe">
+<!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "A">
+<!ENTITY customizeMenu.manageExtension.label "Emongu’e jepysokue">
+<!ENTITY customizeMenu.manageExtension.accesskey "E">
+
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
     secondary commands. -->
@@ -444,7 +448,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Ñe'ẽreka ýrõ kundaharape">
-<!ENTITY urlbar.placeholder3          "Emoinge ko'ápe ñemboguata rekaha ha kundaharape">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Jepysokue:">
@@ -798,6 +801,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.moreInfoLinkText2 "Maranduve">
 
+<!ENTITY identity.clearSiteData "Emopotĩ kookie ha mba’ekuaarã tendágui…">
+
 <!ENTITY identity.permissions "Moneĩ">
 <!ENTITY identity.permissionsEmpty "Nome'ẽi ko tenda ñemoneĩ ha'etéva.">
 <!ENTITY identity.permissionsReloadHint "Ikatu hína kuatiarogue emyanyhẽjey umi moambuepyre oñemboheko hag̃ua.">
@@ -901,6 +906,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.allWindowsShared.message "Oñemosarambíta opaite ovetã ojehecháva mba'erechahápe.">
 
 <!ENTITY trackingProtection.title "Tapykueho ñemo'ã">
+<!ENTITY trackingProtection.tooltip "Embojuruja jeguerohoryvéva tapykuere mo'ãhápe">
 <!ENTITY trackingProtection.detectedBlocked3 "&brandShortName; ojokohína kuatiarogue pehẽ ikatúva ohapykueho nekundaha.">
 <!ENTITY trackingProtection.detectedNotBlocked3 "Ko tenda oguereko mba'epuru ikatúva ohapykueho nekundaha. Nde reguereko neñemo'ã oguepyréva.">
 <!ENTITY trackingProtection.notDetected3 "Ndaipóri tapykueho mba'epuru ojejuhúva ko kuatiaroguépe.">
@@ -988,14 +994,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "A">
 <!ENTITY updateRestart.panelUI.label2 "Emoñepyrũjey embohekopyahu hag̃ua &brandShorterName;">
 
-<!ENTITY newTabControlled.message "Peteĩ moĩmbaha omoambuékuri togue rehecháva ojeike vove pype. Rembojevykuaa heko ndereipotáiramo mba'éichapa ojehechauka.">
-
 <!ENTITY newTabControlled.header.message "Ne Tendayke Pyahu iñambuékuri.">
 <!ENTITY newTabControlled.keepButton.label "Topyta Ñemoambue">
 <!ENTITY newTabControlled.keepButton.accesskey "K">
-<!ENTITY newTabControlled.restoreButton.label "Mbohekoha Ñembojevy">
-<!ENTITY newTabControlled.restoreButton.accesskey "R">
-
 <!ENTITY newTabControlled.disableButton.label "Eipe'aite jepysokue">
 <!ENTITY newTabControlled.disableButton.accesskey "D">
 
@@ -1005,6 +1006,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY homepageControlled.keepButton.accesskey "K">
 <!ENTITY homepageControlled.disableButton.label "Eipe'aite jepysokue">
 <!ENTITY homepageControlled.disableButton.accesskey "D">
+
+<!ENTITY tabHideControlled.header.message "Eike ne rendayke kañýme">
+<!ENTITY tabHideControlled.keepButton.label "Eguereko ne rendayke kañyhápe">
+<!ENTITY tabHideControlled.keepButton.accesskey "K">
+<!ENTITY tabHideControlled.disableButton.label "Eipe’aite jepysokue">
+<!ENTITY tabHideControlled.disableButton.accesskey "D">
 
 <!ENTITY pageActionButton.tooltip "Kuatiarogue rembiapo">
 <!ENTITY pageAction.addToUrlbar.label "Embojuaju kundaharape rendáre ">

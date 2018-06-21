@@ -73,6 +73,41 @@ should-restart-ok = Reiniciar { -brand-short-name } ahora
 cancel-no-restart-button = Cancelar
 restart-later = Reiniciar más tarde
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Una extensión, <img data-l10n-name="icon"/> { $name }, está controlando tu página de inicio.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Una extensión, <img data-l10n-name="icon"/> { $name }, está controlando tu página de nueva pestaña.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Una extensión, <img data-l10n-name="icon"/> { $name }, ha ajustado tu motor de búsqueda predeterminado.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Una extensión, <img data-l10n-name="icon"/> { $name }, requiere pestañas contenedoras.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Una extensión, <img data-l10n-name="icon"/> { $name }, está controlando la protección de seguimiento.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Una extensión, <img data-l10n-name="icon"/> { $name }, está controlando cómo { -brand-short-name } se conecta a internet.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Para activar la extensión ve a <img data-l10n-name="addons-icon"/>Complementos en el <img data-l10n-name="menu-icon"/> menú.
+
 ## Preferences UI Search Results
 
 search-results-header = Resultados de búsqueda
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = Mostrar una página en blanco
 startup-prev-session =
     .label = Mostrar tus ventanas y pestañas de la última vez
+startup-restore-previous-session =
+    .label = Restaurar sesión previa
+    .accesskey = s
 disable-extension =
     .label = Desactivar extensión
 home-page-header = Página de inicio
@@ -297,6 +335,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Proxy de red
+network-proxy-connection-description = Configura cómo { -brand-short-name } se conecta a internet
 network-proxy-connection-learn-more = Aprender más
 network-proxy-connection-settings =
     .label = Configuraciones…
@@ -540,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Recordar mi historial de navegación y descargas
     .accesskey = h
+history-remember-browser-option =
+    .label = Recordar historial de navegación y descargas
+    .accesskey = b
 history-remember-search-option =
     .label = Recordar historial de formularios y búsquedas
     .accesskey = r
@@ -556,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cookies y datos de sitio
+sitedata-total-size-calculating = Calculando el tamaño de los datos del sitio y caché…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Tus cookies, datos de sitio y caché almacenados están usando actualmente { $value } { $unit } de espacio en disco.
 sitedata-learn-more = Aprender más
 sitedata-accept-cookies-option =
     .label = Aceptar cookies y datos de sitios (recomendado)
@@ -650,6 +697,12 @@ permissions-notification-link = Aprender más
 permissions-notification-pause =
     .label = Pausar las notificaciones hasta que { -brand-short-name } sea reiniciado
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = Bloquear a sitios con reproducción automática de multimedia con sonido
+    .accesskey = B
+permissions-block-autoplay-media-exceptions =
+    .label = Excepciones…
+    .accesskey = E
 permissions-block-popups =
     .label = Bloquear ventanas emergentes
     .accesskey = B
@@ -676,6 +729,9 @@ collection-health-report =
     .label = Permitir a { -brand-short-name } enviar datos técnicos y de interacción a { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Aprender más
+collection-studies =
+    .label = Permitir a { -brand-short-name } instalar y realizar estudios
+collection-studies-link = Ver los estudios de { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = El reporte de datos está deshabilitado para esta configuración de compilación

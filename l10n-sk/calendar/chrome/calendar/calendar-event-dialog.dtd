@@ -215,7 +215,7 @@
 <!ENTITY task.from.accesskey                              "Z">
 <!ENTITY event.to.label                                   "Koniec:" >
 <!ENTITY event.to.accesskey                               "c">
-<!ENTITY task.to.label                                    "Termín:" >
+<!ENTITY task.to.label                                    "Termín splnenia:" >
 <!ENTITY task.to.accesskey                                "T">
 <!ENTITY task.status.label                                "Stav:" >
 <!ENTITY task.status.accesskey                            "S">
@@ -398,6 +398,7 @@
 <!-- Read-Only dialog -->
 <!ENTITY read.only.general.label         "Všeobecné">
 <!ENTITY read.only.title.label           "Názov:">
+<!ENTITY read.only.calendar.label        "Kalendár:">
 <!ENTITY read.only.event.start.label     "Dátum začatia:">
 <!ENTITY read.only.task.start.label      "Dátum začatia:">
 <!ENTITY read.only.event.end.label       "Dátum ukončenia:">
@@ -406,13 +407,22 @@
 <!ENTITY read.only.location.label        "Miesto konania:">
 <!ENTITY read.only.category.label        "Kategória:">
 <!ENTITY read.only.organizer.label       "Organizátor:">
-<!ENTITY read.only.reply.label           "Odpoveď:">
-<!ENTITY read.only.accept.label          "Chcem sa zúčastniť">
-<!ENTITY read.only.decline.label         "Nechcem sa zúčastniť">
-<!ENTITY read.only.tentative.label       "Možno sa zúčastním">
-<!ENTITY read.only.needs.action.label    "Potvrdím neskôr">
 <!ENTITY read.only.reminder.label        "Pripomienka:">
 <!ENTITY read.only.attachments.label     "Prílohy:">
 <!ENTITY read.only.attendees.label       "Účastníci">
 <!ENTITY read.only.description.label     "Popis">
 <!ENTITY read.only.link.label            "Súvisiaci odkaz">
+
+<!-- Summary dialog -->
+<!ENTITY summary.dialog.saveclose.label         "Uložiť a zavrieť">
+<!ENTITY summary.dialog.saveclose.tooltiptext   "Uloží zmeny a zavrie okno bez zmeny vašej účasti či odoslania odpovedí">
+<!ENTITY summary.dialog.accept.label            "Prijať">
+<!ENTITY summary.dialog.accept.tooltiptext      "Prijme pozvanie">
+<!ENTITY summary.dialog.tentative.label         "Predbežne prijať">
+<!ENTITY summary.dialog.tentative.tooltiptext   "Predbežne prijme pozvanie">
+<!ENTITY summary.dialog.decline.label           "Odmietnuť">
+<!ENTITY summary.dialog.decline.tooltiptext     "Odmietne pozvanie">
+<!ENTITY summary.dialog.dontsend.label          "Neodoslať odpoveď">
+<!ENTITY summary.dialog.dontsend.tooltiptext    "Zmení stav vašej účasti a zavrie okno bez odoslania odpovede organizátorovi">
+<!ENTITY summary.dialog.send.label              "Odoslať odpoveď">
+<!ENTITY summary.dialog.send.tooltiptext        "Pošle odpoveď organizátorovi a zavrie okno">

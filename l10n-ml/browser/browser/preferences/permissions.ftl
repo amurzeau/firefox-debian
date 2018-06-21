@@ -36,3 +36,69 @@ permissions-button-ok =
     .accesskey = S
 permissions-searchbox =
     .placeholder = വെബ്സൈറ്റ് തിരയുക
+permissions-capabilities-allow =
+    .label = അനുവദിക്കുക
+permissions-capabilities-block =
+    .label = തടയുക
+permissions-capabilities-prompt =
+    .label = എപ്പോഴും ചോദിക്കുക
+
+## Invalid Hostname Dialog
+
+permissions-invalid-uri-title = നിലവില്‍ ഇല്ലാത്ത ഒരു Hostname എന്റര്‍ ചെയ്തിരിക്കുന്നു
+permissions-invalid-uri-label = ദയവായി വാലിഡായ ഒരു ഹോസ്റ്റ്‌നേയിം എന്റര്‍ ചെയ്യുക
+
+## Exceptions - Tracking Protection
+
+permissions-exceptions-tracking-protection-window =
+    .title = ഒഴിവാക്കലുകൾ - ട്രാക്കിംഗ് പ്രൊട്ടക്ഷൻ
+    .style = { permissions-window.style }
+permissions-exceptions-tracking-protection-desc = നിങ്ങൾ ഈ വെബ്സൈറ്റുകളിൽ ട്രാക്കിംഗ് പ്രൊട്ടക്ഷൻ അപ്രാപ്തമാക്കി.
+
+## Exceptions - Cookies
+
+
+## Exceptions - Pop-ups
+
+permissions-exceptions-popup-window =
+    .title = അനുവദിച്ച വെബ്സൈറ്റുകൾ - പോപ്പ്-അപ്പുകൾ
+    .style = { permissions-window.style }
+permissions-exceptions-popup-desc = ഏതെലാം വെബ്‌ സിറ്റുകള്‍ക്ക്‌ പോപ്പപ്പ്‌ ജാലകം തുറക്കുവാന്‍ അനുവാദമുണ്ട്‌ എന്ന്‌ നിങ്ങള്‍ക്ക്‌ വ്യക്തമാക്കാം.അനുവാദിക്കേണ്ട സൈറ്റ്ന്റെ ശരിയായ വിലാസം ടൈപ്പ്‌ ചെയ്ത ശേഷം അനുവദിക്കുക ബട്ടണ്‍ ക്ലിക്ക്‌ ചെയ്യുക.
+
+## Exceptions - Saved Logins
+
+permissions-exceptions-saved-logins-window =
+    .title = ഒഴിവാക്കലുകൾ - സേവു ചെയ്ത ലോഗിനുകൾ
+    .style = { permissions-window.style }
+permissions-exceptions-saved-logins-desc = ഇനിപ്പറയുന്ന വെബ്സൈറ്റുകൾക്കായുള്ള ലോഗിനുകൾ സേവു ചെയ്യില്ല
+
+## Exceptions - Add-ons
+
+permissions-exceptions-addons-window =
+    .title = അനുവദിച്ച വെബ്സൈറ്റുകൾ - ആഡ്-ഓൺസ് ഇൻസ്റ്റാളേഷൻ
+    .style = { permissions-window.style }
+permissions-exceptions-addons-desc = ഏതൊക്കെ വെബ്‌ സൈറ്റുകള്‍ ആഡ്‌-ഓണുകള്‍ ഇന്‍സ്റ്റാള്‍ ചെയ്യണം എന്ന് താങ്കള്‍ക്ക്‌ നിഷ്കര്‍ഷിക്കാം. അനുവദിക്കെണ്ട സൈറ്റിന്റെ ശരിയായ വിലാസം ടൈപ്പ്‌ ചെയ്‌ത ശേഷം, അനുവദിക്കുക ബട്ടണ്‍ ക്ലിക്ക്‌ ചെയ്യുക
+
+## Site Permissions - Notifications
+
+permissions-site-notification-window =
+    .title = ക്രമീകരണങ്ങൾ - അറിയിപ്പിനുള്ള അനുമതികൾ
+    .style = { permissions-window.style }
+
+## Site Permissions - Location
+
+permissions-site-location-window =
+    .title = ക്രമീകരണങ്ങൾ - ലൊക്കേഷൻ അനുമതികൾ
+    .style = { permissions-window.style }
+
+## Site Permissions - Camera
+
+permissions-site-camera-window =
+    .title = ക്രമീകരണങ്ങൾ - ക്യാമറ അനുമതികൾ
+    .style = { permissions-window.style }
+
+## Site Permissions - Microphone
+
+permissions-site-microphone-window =
+    .title = ക്രമീകരണങ്ങൾ - മൈക്രോഫോൺ അനുമതികൾ
+    .style = { permissions-window.style }

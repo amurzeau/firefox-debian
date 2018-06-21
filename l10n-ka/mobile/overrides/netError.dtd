@@ -28,7 +28,7 @@
       <input id='searchtext' type='search'></input>
       <button id='searchbutton'>ძიება</button>
     </div>
-  <li>თუ ვერცერთი საიტის გახსნას ვერ ახერხებთ, შეამოწმეთ მოწყობილობის მობილურ ან Wi-Fi ინტერნეტთან კავშირი.
+  <li>თუ ვერცერთი საიტის გახსნას ვერ ახერხებთ, შეამოწმეთ მოწყობილობის კავშირი მობილურ ან Wi-Fi ინტერნეტთან.
     <button id='wifi'>Wi-Fi-ს ჩართვა</button>
   </li>
 </ul>
@@ -76,7 +76,7 @@
 <!ENTITY notCached.title "დოკუმენტი ვადაგასულია">
 <!ENTITY notCached.longDesc "<p>მოთხოვნილი დოკუმენტი მიუწვდომელია &brandShortName;-ის ბუფერში.</p><ul><li>უსაფრთხოების უზრუნველსაყოფად, &brandShortName; ხელმეორედ არ მოითხოვს მნიშვნელოვან დოკუმენტებს.</li><li>Click სცადეთ დოკუმენტის ხელახლა მოთხოვნა ვებსაიტიდან.</li></ul>">
 
-<!ENTITY netOffline.title "ავტონომიური რეჟიმი">
+<!ENTITY netOffline.title "კავშირგარეშე რეჟიმი">
 <!-- LOCALIZATION NOTE (netOffline.longDesc3) This string contains markup including widgets enabling wifi connections.
      The text inside the tags should be localized. Do not touch the ids. -->
 <!ENTITY netOffline.longDesc3 "
@@ -174,7 +174,7 @@
 <!ENTITY sharedLongDesc3 "
 <ul>
   <li>საიტი შესაძლოა დროებით მიუწვდომელი ან მეტად გადატვირთული იყოს. სცადეთ ხელახლა, ოდნავ მოგვიანებით.</li>
-  <li>თუ ვერცერთი გვერდის ჩატვირთვას ვერ ახერხებთ, შეამოწმეთ თქვენი მოწყობილობის მობილურ ან Wi-Fi ინტერნეტთან კავშირი.
+  <li>თუ ვერცერთი გვერდის ჩატვირთვას ვერ ახერხებთ, შეამოწმეთ თქვენი მოწყობილობის კავშირი მობილურ ან Wi-Fi ინტერნეტთან.
     <button id='wifi'>Wi-Fi-ს ჩართვა</button>
   </li>
 </ul>

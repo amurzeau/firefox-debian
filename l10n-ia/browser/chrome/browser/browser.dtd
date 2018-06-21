@@ -35,6 +35,9 @@ left instead of right. -->
 <!ENTITY  closeOtherTabs.label               "Clauder le altere schedas">
 <!ENTITY  closeOtherTabs.accesskey           "l">
 
+<!ENTITY  closeSelectedTabs.label            "Clauder le schedas seligite">
+<!ENTITY  closeSelectedTabs.accesskey        "S">
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -129,7 +132,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "Monstrar tote le schedas">
 <!ENTITY showAllTabsCmd.accesskey "A">
 <!ENTITY toggleReaderMode.key "R">
-
 <!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "Connecter se a &syncBrand.shortName.label;">
@@ -189,10 +191,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY otherBookmarksCmd.label "Altere marcapaginas">
 <!ENTITY mobileBookmarksCmd.label "Marcapaginas del apparatos mobile">
 <!ENTITY bookmarksToolbarChevron.tooltip "Monstrar plus marcapaginas">
-<!ENTITY showRecentlyBookmarked.label     "Monstrar le marcapaginas recente">
-<!ENTITY showRecentlyBookmarked.accesskey "M">
-<!ENTITY hideRecentlyBookmarked.label     "Celar le marcapaginas recente">
-<!ENTITY hideRecentlyBookmarked.accesskey "C">
 
 <!ENTITY backCmd.label                "Retro">
 <!ENTITY backCmd.accesskey            "B">
@@ -234,7 +232,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translateNotificationAnchor.tooltip       "Traducer iste pagina">
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Gerer le traduction del pagina">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Gerer le utilisation de software de DRM">
-
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "Aperir le quadro MIDI">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Tu ha blocate tu camera pro iste sito web.">
@@ -245,7 +242,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Tu ha blocate le immagazinage persistente pro iste sito web.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Tu ha blocate le fenestras emergente pro iste sito web.">
 <!ENTITY urlbar.canvasBlocked.tooltip            "Tu ha blocate le extraction de datos de canevas pro iste sito web.">
-
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "Tu ha blocate iste sito web per le plug-in de Adobe Flash.">
 <!ENTITY urlbar.midiBlocked.tooltip              "Tu ha blocate le accesso MIDI pro iste sito web.">
 
@@ -255,6 +251,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!-- Toolbar items -->
 <!ENTITY homeButton.label             "Initio">
+
+<!ENTITY homeButton.defaultPage.tooltip "Pagina principal de &brandShortName;">
 
 <!ENTITY bookmarksButton.label          "Marcapaginas">
 <!ENTITY bookmarksCmd.commandkey "b">
@@ -395,7 +393,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Desira tu vider le schedas de altere apparatos hic?">
-<!ENTITY appMenuRemoteTabs.openprefs.label "Preferentias de Sync">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Aperir le preferentias de Sync">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Authentica te pro vider un lista de schedas de tu altere apparatos.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Il necesse verificar tu conto.">
@@ -437,6 +434,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.addMoreItems.label "Adder plus elementos…">
 <!ENTITY customizeMenu.addMoreItems.accesskey "A">
 
+<!ENTITY customizeMenu.autoHideDownloadsButton.label "Auto-celar in le barra del utensiles">
+<!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "A">
+<!ENTITY customizeMenu.manageExtension.label "Gerer extension">
+<!ENTITY customizeMenu.manageExtension.accesskey "E">
+
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
     secondary commands. -->
@@ -444,7 +446,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Insere un adresse o face un recerca">
-<!ENTITY urlbar.placeholder3          "Insere hic terminos e adresses de recerca">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Extension:">
@@ -634,10 +635,10 @@ items are mutually exclusive. -->
 <!-- LOCALIZATION NOTE: The access keys for "Mute" and
 "Unmute" are the same because the two context-menu
 items are mutually exclusive. -->
-<!ENTITY mediaMute.label             "Silentiar">
-<!ENTITY mediaMute.accesskey         "S">
-<!ENTITY mediaUnmute.label           "Non plus silentiar">
-<!ENTITY mediaUnmute.accesskey       "s">
+<!ENTITY mediaMute.label             "Tacer">
+<!ENTITY mediaMute.accesskey         "T">
+<!ENTITY mediaUnmute.label           "Non plus tacer">
+<!ENTITY mediaUnmute.accesskey       "p">
 <!ENTITY mediaPlaybackRate2.label     "Velocitate de lectura">
 <!ENTITY mediaPlaybackRate2.accesskey "V">
 <!ENTITY mediaPlaybackRate050x2.label "Lente (0,5×)">
@@ -797,6 +798,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.removeCertException.accesskey "R">
 
 <!ENTITY identity.moreInfoLinkText2 "Plus information">
+
+<!ENTITY identity.clearSiteData "Rader cookies e datos de sitos…">
 
 <!ENTITY identity.permissions "Permissiones">
 <!ENTITY identity.permissionsEmpty "Tu non ha concedite ulle permission special a iste sito.">
@@ -988,14 +991,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "N">
 <!ENTITY updateRestart.panelUI.label2 "Reinitiar pro actualisar &brandShorterName;">
 
-<!ENTITY newTabControlled.message "Un extension cambiava le pagina que tu vide quando tu aperi un scheda nove. Tu pote restaurar iste parametros si tu non vole iste modification.">
-
 <!ENTITY newTabControlled.header.message "Tu nove scheda cambiava.">
 <!ENTITY newTabControlled.keepButton.label "Mantener le cambios">
 <!ENTITY newTabControlled.keepButton.accesskey "M">
-<!ENTITY newTabControlled.restoreButton.label "Restaurar le parametros">
-<!ENTITY newTabControlled.restoreButton.accesskey "R">
-
 <!ENTITY newTabControlled.disableButton.label "Disactivar le extension">
 <!ENTITY newTabControlled.disableButton.accesskey "">
 
@@ -1005,6 +1003,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY homepageControlled.keepButton.accesskey "M">
 <!ENTITY homepageControlled.disableButton.label "Disactivar le extension">
 <!ENTITY homepageControlled.disableButton.accesskey "D">
+
+<!ENTITY tabHideControlled.header.message "Accede a tu schedas celate">
+<!ENTITY tabHideControlled.keepButton.label "Mantener celate le schedas">
+<!ENTITY tabHideControlled.keepButton.accesskey "M">
+<!ENTITY tabHideControlled.disableButton.label "Disactivar le extension">
+<!ENTITY tabHideControlled.disableButton.accesskey "D">
 
 <!ENTITY pageActionButton.tooltip "Actiones del pagina">
 <!ENTITY pageAction.addToUrlbar.label "Adder al barra de adresse">

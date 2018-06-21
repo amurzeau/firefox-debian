@@ -73,6 +73,41 @@ should-restart-ok = Pārstartēt { -brand-short-name } tagad
 cancel-no-restart-button = Atcelt
 restart-later = Pārstartēt vēlāk
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Paplašinājums <img data-l10n-name="icon"/> { $name } kontrolē jūsu mājas lapu.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Paplašinājums <img data-l10n-name="icon"/> { $name } kontrolē jūsu jaunas cilnes lapu.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Paplašinājums <img data-l10n-name="icon"/> { $name } ir nomainījis noklusēto meklētāju.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Paplašinājumam <img data-l10n-name="icon"/> { $name } nepieciešamas konteineru cilnes.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Paplašinājums <img data-l10n-name="icon"/> { $name } kontrolē izsekošanas aizsardzību.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Paplašinājums <img data-l10n-name="icon"/> { $name } kontrolē kā { -brand-short-name } pieslēdzas internetam.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Lai aktivētu paplašinājumu, ejiet uz <img data-l10n-name="addons-icon"/> Paplašinājumi no <img data-l10n-name="menu-icon"/> izvēlnes.
+
 ## Preferences UI Search Results
 
 search-results-header = Meklēšanas rezultāti
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = Parādīt tukšu lapu
 startup-prev-session =
     .label = Parādīt manus logus un cilnes no iepriekšējās reizes
+startup-restore-previous-session =
+    .label = Atjaunot iepriekšējo sesiju
+    .accesskey = s
 disable-extension =
     .label = Deaktivēt paplašinājumu
 home-page-header = Mājas lapa
@@ -300,6 +338,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Tīkla starpniekserveris
+network-proxy-connection-description = Konfigurēt kā { -brand-short-name } pieslēdzas internetam.
 network-proxy-connection-learn-more = Uzzināt vairāk
 network-proxy-connection-settings =
     .label = Iestatījumi...
@@ -369,7 +408,7 @@ search-show-suggestions-above-history-option =
     .label = Rādīt meklēšanas ieteikumus pirms pārlūkošanas vēstures adreses joslā
 search-suggestions-cant-show = Meklēšanas ieteikumi netiks parādīti adreses joslā, jo { -brand-short-name } ir nokonfigurēts neatcerēties vēsturi.
 search-one-click-header = Viena klikšķa meklētāji
-search-one-click-desc = Izvēlieties papildu meklētāju, kas parādīsies adrešu joslā un meklēšanas joslā, kad sāksiet rakstīt.{ " " }
+search-one-click-desc = Izvēlieties papildu meklētāju, kas parādīsies adrešu joslā un meklēšanas joslā, kad sāksiet rakstīt.
 search-choose-engine-column =
     .label = Meklētāji
 search-choose-keyword-column =
@@ -499,6 +538,9 @@ privacy-header = Pārlūka privātums
 ## Privacy Section - Forms
 
 forms-header = Formas un paroles
+forms-ask-to-save-logins =
+    .label = Lūgt, lai saglabātu lietotājvārdu un paroles vietnēm
+    .accesskey = r
 forms-exceptions =
     .label = Izņēmumi...
     .accesskey = z
@@ -540,6 +582,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Atcerēties manu pārlūkošanas un lejupielāžu vēsturi
     .accesskey = c
+history-remember-browser-option =
+    .label = Atcerēties manu pārlūkošanas un lejupielāžu vēsturi
+    .accesskey = a
 history-remember-search-option =
     .label = Atcerēties meklēšanas un formu vēsturi
     .accesskey = v
@@ -556,6 +601,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Sīkdatnes un lapu dati
+sitedata-total-size-calculating = Aprēķina izmantotās vietas apjomu…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Jūsu saglabātās sīkdatnes un kešatmiņa šobrīd aizņem { $value } { $unit } vietas.
 sitedata-learn-more = Uzzināt vairāk
 sitedata-accept-cookies-option =
     .label = Pieņemt sīkdatnes un kešatmiņu no lapām (ieteicams)
@@ -676,6 +726,9 @@ collection-health-report =
     .label = Atļaut { -brand-short-name } automātiski sūtīt tehnisku un mijiedarbību informāciju { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Uzzināt vairāk
+collection-studies =
+    .label = Ļaut { -brand-short-name } instalēt un palaist pētījumus
+collection-studies-link = Aplūkot { -brand-short-name } pētījumus
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Datu ziņošana ir atspējota šajā būvējuma konfigurācija

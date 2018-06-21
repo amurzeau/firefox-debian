@@ -37,6 +37,11 @@ search-input-box =
             [windows] Recercar dins Opcions
            *[other] Recercar dins Preferéncias
         }
+policies-notice =
+    { PLATFORM() ->
+        [windows] Vòstra organizacion a desactivat la possibilitat de cambiar unas opcions.
+       *[other] Vòstra organizacion a desactivat la possibilitat de cambiar unas preferéncias.
+    }
 pane-general-title = General
 category-general =
     .tooltiptext = { pane-general-title }
@@ -67,6 +72,41 @@ should-restart-title = Reaviar { -brand-short-name }
 should-restart-ok = Reaviar { -brand-short-name } ara
 cancel-no-restart-button = Anullar
 restart-later = Reaviar mai tard
+
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Una extension, <img data-l10n-name="icon"/> { $name }, contraròtla vòstra pagina d’acuèlh.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Una extension, <img data-l10n-name="icon"/> { $name }, contraròtla la pagina Onglet novèl.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Una extension, <img data-l10n-name="icon"/> { $name }, a definit lo motor de recèrca per defaut.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Una extension, <img data-l10n-name="icon"/> { $name }, requerís los onglets isolats.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Una extension, <img data-l10n-name="icon"/> { $name }, contraròtla la proteccion contra lo seguiment.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Una extension, <img data-l10n-name="icon"/>{ $name }, contraròtla lo biais que { -brand-short-name } se connecta a Internet.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Per activar aquesta extension anatz a <img data-l10n-name="addons-icon"/> Moduls complementaris dels menú <img data-l10n-name="menu-icon"/>.
 
 ## Preferences UI Search Results
 
@@ -105,6 +145,9 @@ startup-blank-page =
     .label = Afichar una pagina voida
 startup-prev-session =
     .label = Afichar vòstras fenèstras e onglets de la darrièra visita
+startup-restore-previous-session =
+    .label = Restablir la session precedenta
+    .accesskey = s
 disable-extension =
     .label = Desactivar l’extension
 home-page-header = Pagina d'acuèlh
@@ -292,6 +335,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Proxy de ret
+network-proxy-connection-description = Configurar la biais de { -brand-short-name } de se connectar a Internet.
 network-proxy-connection-learn-more = Ne saber mai
 network-proxy-connection-settings =
     .label = Paramètres
@@ -300,6 +344,7 @@ network-proxy-connection-settings =
 ## Home Section
 
 home-new-windows-tabs-header = Novèlas fenèstras e novèls onglets
+home-new-windows-tabs-description2 = Causissètz çò que volètz veire en dobrir la pagina d’acuèlh, de fenèstras novèlas o d’onglets novèls.
 
 ## Home Section - Home Page Customization
 
@@ -526,6 +571,7 @@ history-remember-option-never =
     .label = Conservar pas jamai l'istoric
 history-remember-option-custom =
     .label = Utilizar los paramètres personalizats per l'istoric
+history-remember-description = { -brand-short-name } enregistrarà vòstres istorics, telecargaments e recèrcas.
 history-dontremember-description = { -brand-short-name } utilizarà los meteisses paramètres que per la navegacion privada e conservarà pas cap d'istoric quand navegaretz sus internet.
 history-private-browsing-permanent =
     .label = Utilizar totjorn lo mòde de navegacion privada
@@ -533,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Conservar l'istoric de navegacion e dels telecargaments
     .accesskey = C
+history-remember-browser-option =
+    .label = Servar l'istoric de navegacion e dels telecargaments
+    .accesskey = i
 history-remember-search-option =
     .label = Conservar l'istoric de las recèrcas e dels formularis
     .accesskey = f
@@ -549,12 +598,17 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cookies e donadas de sites
+sitedata-total-size-calculating = Calcul del pès de las donadas dels sites e del cache…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Los cookies, lo cache e las donadas dels sites utilizan actualament { $value } { $unit } d’espaci disc.
 sitedata-learn-more = Ne saber mai
 sitedata-accept-cookies-option =
     .label = Acceptar los cookies e las donadas de sites (recomandat)
     .accesskey = A
 sitedata-block-cookies-option =
-    .label = Blocar los cookies e las donadas dels sites (pòt far que de sites foncionen pas)
+    .label = Blocar los cookies e las donadas de sites (pòt far que de sites foncionen pas)
     .accesskey = B
 sitedata-keep-until = Las conservar fins a
     .accesskey = f
@@ -643,6 +697,12 @@ permissions-notification-link = Ne saber mai
 permissions-notification-pause =
     .label = Pausar las notificacions fins que { -brand-short-name } reavie
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = Empachar los sites de lançar de mèdias amb lo son
+    .accesskey = E
+permissions-block-autoplay-media-exceptions =
+    .label = Excepcions…
+    .accesskey = E
 permissions-block-popups =
     .label = Blocar las fenèstras sorgissentas
     .accesskey = B
@@ -669,6 +729,9 @@ collection-health-report =
     .label = Autorizar { -brand-short-name } a mandar de donadas tecnicas e d’interaccions a { -vendor-short-name }
     .accesskey = A
 collection-health-report-link = Ne saber mai
+collection-studies =
+    .label = Autorizar { -brand-short-name } d’installar e lançar d’estudis
+collection-studies-link = Veire los estudis de { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Lo rapòrt de donadas es desactivat per aquela configuracion de compilacion

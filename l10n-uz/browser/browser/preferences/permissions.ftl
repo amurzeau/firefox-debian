@@ -36,3 +36,47 @@ permissions-button-ok =
     .accesskey = s
 permissions-searchbox =
     .placeholder = Saytdan izlash
+permissions-capabilities-allow =
+    .label = Ruxsat berish
+permissions-capabilities-block =
+    .label = Bloklash
+
+## Invalid Hostname Dialog
+
+permissions-invalid-uri-title = Notogʻri host nomi kiritilgan
+permissions-invalid-uri-label = Iltimos, toʻgʻri host nomini kiriting
+
+## Exceptions - Tracking Protection
+
+permissions-exceptions-tracking-protection-window =
+    .title = Istisnolar - Kuzatishdan himoyalanish
+    .style = { permissions-window.style }
+
+## Exceptions - Cookies
+
+
+## Exceptions - Pop-ups
+
+permissions-exceptions-popup-desc = Siz xohlagan vebsaytlaringizga paydo boʻluvchi oynalarni ochishiga ruxsat berishingiz mumkin. Ruxsat bermoqchi boʻlgan saytingiz manzilini yozing va "Ruxsat berish" tugmasini bosing.
+
+## Exceptions - Saved Logins
+
+permissions-exceptions-saved-logins-window =
+    .title = Istisnolar - saqlangan taxalluslar
+    .style = { permissions-window.style }
+
+## Exceptions - Add-ons
+
+permissions-exceptions-addons-desc = Siz xohlagan vebsaytingizga qoʻshimcha dasturlarni oʻrnatishga ruxsat berishingiz mumkin. Ruxsat bermoqchi boʻlgan saytingiz nomini yozing va "Ruxsat berish"ni bosing.
+
+## Site Permissions - Notifications
+
+
+## Site Permissions - Location
+
+
+## Site Permissions - Camera
+
+
+## Site Permissions - Microphone
+

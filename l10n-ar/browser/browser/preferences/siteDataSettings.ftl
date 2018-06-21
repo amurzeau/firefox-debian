@@ -7,6 +7,7 @@
 
 site-data-settings-window =
     .title = أدِر الكعكات و بيانات المواقع
+site-data-settings-description = تخزّن المواقع التالية الكعكات و بيانات الموقع على حاسوبك. يبقي { -brand-short-name } البيانات من المواقع التي تستخدم تخزينًا دائمًا حتى تحذفها، و يحذف البيانات من المواقع التي لا تستخدم التخزين الدائم عندما يحتاج إلى مساحة التخزين.
 site-data-search-textbox =
     .placeholder = ابحث في المواقع
     .accesskey = ح
@@ -27,11 +28,25 @@ site-data-button-cancel =
 site-data-button-save =
     .label = احفظ التغييرات
     .accesskey = ظ
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+site-usage-pattern = ‏{ $value } ‏{ $unit }
+site-usage-persistent = { site-usage-pattern } (دائم)
+site-data-remove-all =
+    .label = أزِل الكل
+    .accesskey = ل
+site-data-remove-shown =
+    .label = أزِل كل المعروض
+    .accesskey = ض
 
 ## Removing
 
 site-data-removing-window =
     .title = { site-data-removing-header }
+site-data-removing-dialog =
+    .title = { site-data-removing-header }
+    .buttonlabelaccept = أزِل
 site-data-removing-header = إزالة الكعكات و بيانات المواقع
 site-data-removing-desc = بإزالة الكعكات و بيانات المواقع قد تخرج من مواقع الوِب. أمتأكد من إجراء هذه التغييرات؟
 site-data-removing-table = ستُزال الكعكات و بيانات المواقع للمواقع الآتية

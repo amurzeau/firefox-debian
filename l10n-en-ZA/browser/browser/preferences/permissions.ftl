@@ -24,3 +24,44 @@ permissions-button-cancel =
 permissions-button-ok =
     .label = Save Changes
     .accesskey = S
+permissions-capabilities-allow =
+    .label = Allow
+permissions-capabilities-block =
+    .label = Block
+
+## Invalid Hostname Dialog
+
+permissions-invalid-uri-title = Invalid Hostname Entered
+permissions-invalid-uri-label = Please enter a valid hostname
+
+## Exceptions - Tracking Protection
+
+permissions-exceptions-tracking-protection-window =
+    .title = Exceptions - Tracking Protection
+    .style = { permissions-window.style }
+
+## Exceptions - Cookies
+
+
+## Exceptions - Pop-ups
+
+permissions-exceptions-popup-desc = You can specify which websites are allowed to open pop-up windows. Type the exact address of the site you want to allow and then click Allow.
+
+## Exceptions - Saved Logins
+
+
+## Exceptions - Add-ons
+
+permissions-exceptions-addons-desc = You can specify which websites are allowed to install add-ons. Type the exact address of the site you want to allow and then click Allow.
+
+## Site Permissions - Notifications
+
+
+## Site Permissions - Location
+
+
+## Site Permissions - Camera
+
+
+## Site Permissions - Microphone
+

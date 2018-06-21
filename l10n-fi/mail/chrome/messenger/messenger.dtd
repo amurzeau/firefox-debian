@@ -57,6 +57,8 @@
 <!ENTITY getAllNewMsgCmdPopupMenu.accesskey "K">
 <!ENTITY getNewMsgCurrentAccountCmdPopupMenu.label "Valittu tili">
 <!ENTITY getNewMsgCurrentAccountCmdPopupMenu.accesskey "V">
+<!ENTITY getNextNMsgCmd2.label "Lataa uudet viestit">
+<!ENTITY getNextNMsgCmd2.accesskey "L">
 <!ENTITY sendUnsentCmd.label "Lähetä lähtevät viestit">
 <!ENTITY sendUnsentCmd.accesskey "ä">
 <!ENTITY subscribeCmd.label "Tilaa…">
@@ -508,13 +510,20 @@
 <!ENTITY accountManagerCmdUnix2.accesskey "a">
 
 <!-- Developer Tools Submenu -->
-<!ENTITY devtoolsMenu.label "Kehittäjätyökalut">
+<!ENTITY devtoolsMenu.label "Kehittäjän työkalut">
 <!ENTITY devtoolsMenu.accesskey "h">
 <!ENTITY devToolboxCmd.label "Kehittäjän työkalulaatikko">
 <!ENTITY devToolboxCmd.accesskey "t">
+<!ENTITY devToolboxCmd.commandkey "y">
+<!ENTITY debugAddonsCmd.label "Virheenkorjaa lisäosia">
+<!ENTITY debugAddonsCmd.accesskey "l">
+<!ENTITY tabsDebugCmd.label "Sisältökehyksen virheenkorjaus">
+<!ENTITY tabsDebugCmd.accesskey "k">
 <!ENTITY errorConsoleCmd.label "Virhekonsoli">
 <!ENTITY errorConsoleCmd.accesskey "V">
 <!ENTITY errorConsoleCmd.commandkey "j">
+<!ENTITY scratchpadCmd.label "Muistio">
+<!ENTITY scratchpadCmd.accesskey "M">
 
 <!--LOCALIZATION NOTE (scratchpadCmd.keycode):
     This should be a key code constant as per
@@ -786,6 +795,7 @@
 <!ENTITY contextCopyMsgMenu.label "Kopioi kansioon">
 <!ENTITY contextCopyMsgMenu.accesskey "K">
 <!ENTITY contextKillThreadMenu.label "Ohita viestiketju">
+<!ENTITY contextKillSubthreadMenu.accesskey "a">
 <!ENTITY contextKillThreadMenu.accesskey "O">
 <!ENTITY contextKillSubthreadMenu.label "Ohita alaviestiketju">
 <!ENTITY contextWatchThreadMenu.label "Tarkkaile viestiketjua">
@@ -793,6 +803,7 @@
      In the en-US locale we ran out of access keys, so there is an empty access key for
      Watch Thread. Localizers can pick a suitable key
   -->
+<!ENTITY contextWatchThreadMenu.accesskey "">
 <!ENTITY contextSaveAs.label "Tallenna nimellä…">
 <!ENTITY contextSaveAs.accesskey "n">
 <!ENTITY contextPrint.label "Tulosta…">
@@ -961,4 +972,4 @@
 <!-- Mac OS X Dock Icon pop-up menu -->
 <!ENTITY dockOptions.label              "Sovelluskuvakkeen asetukset…">
 <!ENTITY writeNewMessageDock.label      "Kirjoita uusi viesti">
-<!ENTITY openAddressBookDock.label      "Avaa Osoitekirja">
+<!ENTITY openAddressBookDock.label      "Avaa osoitekirja">

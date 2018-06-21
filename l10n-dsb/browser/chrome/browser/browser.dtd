@@ -35,6 +35,9 @@ left instead of right. -->
 <!ENTITY  closeOtherTabs.label               "Druge rejtarki zacyniś">
 <!ENTITY  closeOtherTabs.accesskey           "D">
 
+<!ENTITY  closeSelectedTabs.label            "Wubrany rejtarki zacyniś">
+<!ENTITY  closeSelectedTabs.accesskey        "b">
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -54,6 +57,8 @@ can reach it easily. -->
 <!ENTITY  sendToDeviceOfflineFeedback.label  "W cakajucem rěźe (offline)">
 <!ENTITY  moveToNewWindow.label              "Do nowego wokna pśesunuś">
 <!ENTITY  moveToNewWindow.accesskey          "n">
+<!ENTITY  reopenInContainer.label            "W kontejnerje znowego wócyniś">
+<!ENTITY  reopenInContainer.accesskey        "k">
 <!ENTITY  bookmarkAllTabs.label              "Wšykne rejtarki ako cytańske znamjenja składowaś…">
 <!ENTITY  bookmarkAllTabs.accesskey          "r">
 <!ENTITY  undoCloseTab.label                 "Zacynjony rejtark wótnowiś">
@@ -129,7 +134,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "Wšykne rejtarki pokazaś">
 <!ENTITY showAllTabsCmd.accesskey "W">
 <!ENTITY toggleReaderMode.key "R">
-
 <!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "Pla &syncBrand.shortName.label; pśizjawiś">
@@ -189,10 +193,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY otherBookmarksCmd.label "Druge cytańske znamjenja">
 <!ENTITY mobileBookmarksCmd.label "Mobilne cytańske znamjenja">
 <!ENTITY bookmarksToolbarChevron.tooltip "Dalšne cytańske znamjenja pokazaś">
-<!ENTITY showRecentlyBookmarked.label     "Tuchylu ako cytańske znamje skłaźone pokazaś">
-<!ENTITY showRecentlyBookmarked.accesskey "c">
-<!ENTITY hideRecentlyBookmarked.label     "Tuchylu ako cytańske znamje skłaźone schowaś">
-<!ENTITY hideRecentlyBookmarked.accesskey "c">
 
 <!ENTITY backCmd.label                "Slědk">
 <!ENTITY backCmd.accesskey            "S">
@@ -234,7 +234,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translateNotificationAnchor.tooltip       "Toś ten bok pśełožowaś">
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Pśełožowanje boka zastojaś">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Wužywanje softwary DRM zastojaś">
-
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "MIDI-wobcerk wócyniś">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Sćo swóju kameru za toś to websedło zablokěrował.">
@@ -245,7 +244,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Sćo trajny składowak za toś to websedło blokěrował.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Sćo wuskokujuce wokna za toś to websedło blokěrował.">
 <!ENTITY urlbar.canvasBlocked.tooltip            "Sćo blokěrował pśistup ku canvasowym datam za toś to websedło.">
-
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "Sćo toś tomu websedłoju wužywanje tykaca Adobe Flash zawoborał.">
 <!ENTITY urlbar.midiBlocked.tooltip              "Sćo blokěrował pśistup na MIDI za toś to websedło.">
 
@@ -255,6 +253,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!-- Toolbar items -->
 <!ENTITY homeButton.label             "Startowy bok">
+
+<!ENTITY homeButton.defaultPage.tooltip "Startowy bok &brandShortName;">
 
 <!ENTITY bookmarksButton.label          "Cytańske znamjenja">
 <!ENTITY bookmarksCmd.commandkey "b">
@@ -395,7 +395,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Cośo how swóje rejtarki z drugich rědow wiźeś?">
-<!ENTITY appMenuRemoteTabs.openprefs.label "Nastajenja synchronizěrowaś">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Synchronizěrowańske nastajenja wócyniś">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Pśizjawśo se, aby se lisćinu rejtarkow ze swójich drugich rědow woglědał.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Wašo konto musy se wobkšuśiś.">
@@ -437,6 +436,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.addMoreItems.label "Dalšne zapiski pśidaś…">
 <!ENTITY customizeMenu.addMoreItems.accesskey "l">
 
+<!ENTITY customizeMenu.autoHideDownloadsButton.label "W symbolowej rědce awtomatiski schowaś">
+<!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "s">
+<!ENTITY customizeMenu.manageExtension.label "Rozšyrjenje zastojaś">
+<!ENTITY customizeMenu.manageExtension.accesskey "R">
+
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
     secondary commands. -->
@@ -444,7 +448,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Pytaś abo adresu zapódaś">
-<!ENTITY urlbar.placeholder3          "Zapódajśo how pytańske wuraze a adrese">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Rozšyrjenje:">
@@ -798,6 +801,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.moreInfoLinkText2 "Dalšne informacije">
 
+<!ENTITY identity.clearSiteData "Cookieje a sedłowe daty wulašowaś…">
+
 <!ENTITY identity.permissions "Pšawa">
 <!ENTITY identity.permissionsEmpty "Njejsćo toś tomu sedłoju wósebne pšawa pśizwólił.">
 <!ENTITY identity.permissionsReloadHint "Musyśo snaź bok znowego zacytaś, aby se změny wustatkowali.">
@@ -901,6 +906,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.allWindowsShared.message "Wšykne widobne wokna na wašej wobrazowce budu se źěliś.">
 
 <!ENTITY trackingProtection.title "Slědowański šćit">
+<!ENTITY trackingProtection.tooltip "Nastajenja slědowańskego šćita wócyniś">
 <!ENTITY trackingProtection.detectedBlocked3 "&brandShortName; blokěrujo źěle boka, kótarež by mógli wašo pśeglědowanje slědowaś.">
 <!ENTITY trackingProtection.detectedNotBlocked3 "Toś to sedło wopśimujo elementy, kótarež by mógli wašo pśeglědowanje slědowaś. Sćo šćit znjemóžnił.">
 <!ENTITY trackingProtection.notDetected3 "Žedne slědowańske elementy na toś tom boku namakane.">
@@ -988,14 +994,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "N">
 <!ENTITY updateRestart.panelUI.label2 "Startujśo znowego, aby &brandShorterName; aktualizěrował">
 
-<!ENTITY newTabControlled.message "Rozšyrjenje jo bok změnił, kótaryž wiźiśo, gaž nowy rejtark wócynjaśo. Móžośo swóje nastajenja wótnowiś, jolic toś tu změnu njocośo.">
-
 <!ENTITY newTabControlled.header.message "Waš nowy rejtark jo se změnił.">
 <!ENTITY newTabControlled.keepButton.label "Změny wobchowaś">
 <!ENTITY newTabControlled.keepButton.accesskey "Z">
-<!ENTITY newTabControlled.restoreButton.label "Nastajenja wótnowiś">
-<!ENTITY newTabControlled.restoreButton.accesskey "N">
-
 <!ENTITY newTabControlled.disableButton.label "Rozšyrjenje znjemóžniś">
 <!ENTITY newTabControlled.disableButton.accesskey "R">
 
@@ -1005,6 +1006,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY homepageControlled.keepButton.accesskey "Z">
 <!ENTITY homepageControlled.disableButton.label "Rozšyrjenje znjemóžniś">
 <!ENTITY homepageControlled.disableButton.accesskey "R">
+
+<!ENTITY tabHideControlled.header.message "Pśistup na waše schowane rejtarki">
+<!ENTITY tabHideControlled.keepButton.label "Rejtarki schowane wobchowaś">
+<!ENTITY tabHideControlled.keepButton.accesskey "R">
+<!ENTITY tabHideControlled.disableButton.label "Rozšyrjenje znjemóžniś">
+<!ENTITY tabHideControlled.disableButton.accesskey "z">
 
 <!ENTITY pageActionButton.tooltip "Akcije boka">
 <!ENTITY pageAction.addToUrlbar.label "Adresowemu póloju pśidaś">

@@ -2,6 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+do-not-track-description = నన్ను వెంబడించవద్దని ఆశిస్తున్నానని వెబ్‌సైట్లకు తెలిసేలా “ట్రాక్ చెయ్యవద్దు” అనే సూచనను పంపించు
 do-not-track-learn-more = ఇంకా తెలుసుకోండి
 do-not-track-option-default =
     .label = ట్రాకింగ్ సంరక్షణ వాడుతున్నప్పుడు మాత్రమే
@@ -72,6 +73,29 @@ should-restart-ok = ఇప్పుడు { -brand-short-name } ను పున
 cancel-no-restart-button = రద్దుచేయి
 restart-later = తరువాత పునఃప్రారంభించు
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = మీ ముంగిలి పేజీని <img data-l10n-name="icon"/> { $name } అను పొడగింత నియంత్రిస్తుంది.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = మీ కొత్తట్యాబు పేజీని <img data-l10n-name="icon"/> { $name } అను పొడగింత నియంత్రిస్తుంది.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = ఒక పొడగింత, <img data-l10n-name="icon"/> { $name }, మీ అప్రమేయ సెర్చింజనుని అమర్చింది.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = ఒక పొడగింతకి, <img data-l10n-name="icon"/> { $name }, కంటెయినర్ ట్యాబులు కావాలి.
+
 ## Preferences UI Search Results
 
 search-results-header = వెతుకుడు ఫలితాలు
@@ -109,6 +133,9 @@ startup-blank-page =
     .label = ఖాళీ పేజీని చూపించు
 startup-prev-session =
     .label = చివరిగా మీరు చూసిన విండోలను ట్యాబులను చూపించు
+startup-restore-previous-session =
+    .label = మునుపటి సెషన్ను పునరుద్ధరించు
+    .accesskey = s
 disable-extension =
     .label = పొడగింతను అచేతనించు
 home-page-header = ముంగిలి పేజీ
@@ -523,6 +550,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = నా విహరణ, దింపుకోలు చరిత్రను గుర్తుంచుకో
     .accesskey = b
+history-remember-browser-option =
+    .label = విహరణ, దింపుకోలు చరిత్రను గుర్తుపెట్టుకో
+    .accesskey = b
 history-remember-search-option =
     .label = నా శోధన, ఫారాల చరిత్రని గుర్తుపెట్టుకో
     .accesskey = f
@@ -539,6 +569,7 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = కుకీలు మరియు సైటు డేటా
+sitedata-total-size-calculating = సైటు దత్తాంశం, కాషెల పరిమాణాన్ని లెక్కిస్తున్నాం…
 sitedata-learn-more = మరింత తెలుసుకోండి
 sitedata-accept-cookies-option =
     .label = వెబ్‌సైట్ల నుండి కుకీలు, సైటు దత్తాంశాన్ని అంగీకరించు (సిఫార్సు చేయబడింది)
@@ -629,6 +660,9 @@ permissions-notification-settings =
     .label = అమరికలు…
     .accesskey = n
 permissions-notification-link = ఇంకా తెలుసుకోండి
+permissions-block-autoplay-media-exceptions =
+    .label = మినహాయింపులు…
+    .accesskey = E
 permissions-block-popups =
     .label = పాప్-అప్ విండోలను నిరోధించు
     .accesskey = B

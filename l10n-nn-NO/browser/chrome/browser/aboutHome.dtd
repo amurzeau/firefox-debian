@@ -18,7 +18,7 @@
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet2.v1):
      text in <a/> will be linked to the featured add-ons on addons.mozilla.org
 -->
-<!ENTITY abouthome.defaultSnippet2.v1 "Det er enkelt å tilpasse Firefox akkurat slik som du vil ha han. <a>Vel frå tusenvis av utvidingar</a>.">
+<!ENTITY abouthome.defaultSnippet2.v1 "Det er enkelt å tilpasse Firefox akkurat slik som du vil ha han. <a>Vel frå tusenvis av tillegg</a>.">
 <!-- LOCALIZATION NOTE (abouthome.rightsSnippet): text in <a/> will be linked to about:rights -->
 <!ENTITY abouthome.rightsSnippet "&brandFullName; er fri og open kjeldekode-programvare frå den ideelle organisasjonen Mozilla Foundation. <a>Les om rettane dine…</a>">
 
@@ -30,7 +30,7 @@
 <!-- LOCALIZATION NOTE (abouthome.preferencesButtonUnix.label): The label for the
      preferences/options item on about:home on Linux and OS X -->
 <!ENTITY abouthome.preferencesButtonUnix.label  "Innstillingar">
-<!ENTITY abouthome.addonsButton.label    "Utvidingar">
+<!ENTITY abouthome.addonsButton.label    "Tillegg">
 <!ENTITY abouthome.downloadsButton.label "Nedlastingar">
 <!ENTITY abouthome.syncButton.label      "&syncBrand.shortName.label;">
 

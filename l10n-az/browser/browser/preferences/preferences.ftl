@@ -73,6 +73,41 @@ should-restart-ok = { -brand-short-name } indi yenidən başlat
 cancel-no-restart-button = Ləğv et
 restart-later = Sonra yenidən başlat
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Uzantı, <img data-l10n-name="icon"/> { $name }, ana səhifənizi idarə edir.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Uzantı, <img data-l10n-name="icon"/> { $name }, Yeni Vərəq səhifənizi idarə edir.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = <img data-l10n-name="icon"/> { $name } uzantısı əsas axtarış mühərriyinizi dəyişdirdi.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Uzantı, <img data-l10n-name="icon"/> { $name }, Konteyner vərəqlərini tələb edir.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Uzantı, <img data-l10n-name="icon"/> { $name }, izlənmə qorumasını idarə edir.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Uzantı, <img data-l10n-name="icon"/> { $name }, { -brand-short-name } səyyahının internetə necə qoşulduğunu idarə edir.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Uzantını aktivləşdirmək üçün <img data-l10n-name="menu-icon"/> menyusundan <img data-l10n-name="addons-icon"/> Əlavələrə gedin.
+
 ## Preferences UI Search Results
 
 search-results-header = Axtarış Nəticələri
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = Boş səhifəni göstər
 startup-prev-session =
     .label = Son seansdan olan pəncərə və vərəqləri göstər
+startup-restore-previous-session =
+    .label = Əvvəlki sessiyanı bərpa et
+    .accesskey = s
 disable-extension =
     .label = Uzantını söndür
 home-page-header = Ana Səhifə
@@ -297,6 +335,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Şəbəkə Proksisi
+network-proxy-connection-description = { -brand-short-name } səyyahının internetə necə qoşulduğunu idarə et.
 network-proxy-connection-learn-more = Ətraflı öyrən
 network-proxy-connection-settings =
     .label = Nizamlar…
@@ -540,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Endirmə və Tarixçəmi yadda saxla
     .accesskey = l
+history-remember-browser-option =
+    .label = Səyahət və endirmə tarixini yadda saxla
+    .accesskey = b
 history-remember-search-option =
     .label = Axtarış və form keçmişini xatırla
     .accesskey = f
@@ -556,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Çərəzlər və Sayt Məlumatları
+sitedata-total-size-calculating = Sayt məlumatları və keş ölçüsü hesablanır…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Saxlanılan çərəz, sayt məlumatları və keşləriniz hazırda { $value } { $unit } disk işlədirlər.
 sitedata-learn-more = Ətraflı öyrən
 sitedata-accept-cookies-option =
     .label = Saytların çərəz və sayt məlumatlarını qəbul et (məsləhət görülür)
@@ -650,6 +697,12 @@ permissions-notification-link = Ətraflı öyrən
 permissions-notification-pause =
     .label = { -brand-short-name } yenidən başladılana qədər bildirişləri dayandır
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = Saytların səsli medianı avtomatik oxutmalarını əngəllə
+    .accesskey = B
+permissions-block-autoplay-media-exceptions =
+    .label = İstisnalar…
+    .accesskey = E
 permissions-block-popups =
     .label = Peyda olan pəncərələri blokla
     .accesskey = b
@@ -676,6 +729,9 @@ collection-health-report =
     .label = { -brand-short-name } səyyahına { -vendor-short-name }ya texniki və qarşılıqlı əlaqə məlumatlarını göndərməyə icazə ver
     .accesskey = r
 collection-health-report-link = Ətraflı
+collection-studies =
+    .label = { -brand-short-name } səyyahına tədqiqatları qurub və işlətməyə icazə ver
+collection-studies-link = { -brand-short-name } tədqiqatlarını gör
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Bu quraşdırmanın konfiqurasiyasında məlumat xəbərdarlığı söndürülüb

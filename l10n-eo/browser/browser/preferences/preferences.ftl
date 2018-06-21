@@ -37,9 +37,17 @@ search-input-box =
             [windows] Serĉi en elektebloj
            *[other] Serĉi en preferoj
         }
+policies-notice =
+    { PLATFORM() ->
+        [windows] Via organizaĵo malŝaltis la eblon ŝanĝi kelkajn elekteblojn.
+       *[other] Via organizaĵo malŝaltis la eblon ŝanĝi kelkajn preferojn.
+    }
 pane-general-title = Ĉefaj
 category-general =
     .tooltiptext = { pane-general-title }
+pane-home-title = Eka paĝo
+category-home =
+    .tooltiptext = { pane-home-title }
 pane-search-title = Serĉi
 category-search =
     .tooltiptext = { pane-search-title }
@@ -64,6 +72,41 @@ should-restart-title = Restartigi { -brand-short-name }
 should-restart-ok = Restartigi { -brand-short-name } nun
 cancel-no-restart-button = Nuligi
 restart-later = Restartigi poste
+
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = La etendaĵo <img data-l10n-name="icon"/> { $name } nuntempe regas vian ekan paĝon.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = La etendaĵo <img data-l10n-name="icon"/> { $name } nuntempe regas vian paĝon por novaj langetoj.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = La etendaĵo <img data-l10n-name="icon"/> { $name } difinis vian norman serĉilon.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = La etendaĵo <img data-l10n-name="icon"/> { $name } postulas ingajn langetojn.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = La etendaĵo <img data-l10n-name="icon"/> { $name } regas la protekton kontraŭ spurado.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = La etendaĵo <img data-l10n-name="icon"/> { $name } regas la manieron, kiel { -brand-short-name } konektiĝas al la reto.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Por aktivigi la etendaĵon iru al <img data-l10n-name="addons-icon"/> Aldonaĵoj en la <img data-l10n-name="menu-icon"/> menuo.
 
 ## Preferences UI Search Results
 
@@ -102,6 +145,9 @@ startup-blank-page =
     .label = Montri malplenan paĝon
 startup-prev-session =
     .label = Montri viajn lastajn fenestrojn kaj langetojn
+startup-restore-previous-session =
+    .label = Restarigi antaŭan seancon
+    .accesskey = R
 disable-extension =
     .label = Malaktivigi etendaĵon
 home-page-header = Eka paĝo
@@ -289,6 +335,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Retperanto
+network-proxy-connection-description = Agordi la manieron, kiel { -brand-short-name } konektiĝas al la reto.
 network-proxy-connection-learn-more = Pli da informo
 network-proxy-connection-settings =
     .label = Agordoj…
@@ -297,9 +344,25 @@ network-proxy-connection-settings =
 ## Home Section
 
 home-new-windows-tabs-header = Novaj fenestroj kaj langetoj
+home-new-windows-tabs-description2 = Elektu tion, kion vi volas vidi je malfermo de via eka paĝo, novaj fenestroj aŭ novaj langetoj.
 
 ## Home Section - Home Page Customization
 
+home-homepage-mode-label = Eka paĝo kaj novaj fenestroj
+home-newtabs-mode-label = Novaj langetoj
+home-restore-defaults =
+    .label = Remeti normojn
+    .accesskey = R
+# "Firefox" should be treated as a brand and kept in English,
+# while "Home" and "(Default)" can be localized.
+home-mode-choice-default =
+    .label = Eka paĝo de Firefox (norma)
+home-mode-choice-custom =
+    .label = Personecigitaj URL…
+home-mode-choice-blank =
+    .label = Malplena paĝo
+home-homepage-custom-url =
+    .placeholder = Alglui retadreson…
 # This string has a special case for '1' and [other] (default). If necessary for
 # your language, you can add {$tabCount} to your translations and use the
 # standard CLDR forms, or only use the form for [other] if both strings should
@@ -408,6 +471,9 @@ sync-signedin-login-failure = Bonvolu komenci seancon por rekonekti { $email }
 sync-resend-verification =
     .label = Resendi kontrolon
     .accesskey = k
+sync-remove-account =
+    .label = Forigi konton
+    .accesskey = F
 sync-sign-in =
     .label = Komenci seancon
     .accesskey = K
@@ -469,6 +535,9 @@ privacy-header = Retumila privateco
 ## Privacy Section - Forms
 
 forms-header = Formularoj kaj pasvortoj
+forms-ask-to-save-logins =
+    .label = Demandi ĉu konservi akreditilojn kaj pasvortojn por retejoj
+    .accesskey = D
 forms-exceptions =
     .label = Esceptoj…
     .accesskey = c
@@ -502,6 +571,7 @@ history-remember-option-never =
     .label = neniam memoros historion
 history-remember-option-custom =
     .label = uzos personajn agordojn por la historio
+history-remember-description = { -brand-short-name } memoros vian retuman, elŝutan, formularan kaj serĉan historiojn.
 history-dontremember-description = { -brand-short-name } uzos la samajn agordojn de privata retumo, kaj ĝi ne memoros iun historion dum vi esploras la reton.
 history-private-browsing-permanent =
     .label = Ĉiam uzi la reĝimon de privata retumo
@@ -509,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Memori mian historion de retumo kaj elŝutoj
     .accesskey = h
+history-remember-browser-option =
+    .label = Memori retuman kaj elŝutan historiojn
+    .accesskey = r
 history-remember-search-option =
     .label = Memori historion de serĉadoj kaj formularoj
     .accesskey = s
@@ -525,12 +598,24 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Kuketoj kaj retejaj datumoj
+sitedata-total-size-calculating = Kalkulo de datuma kaj stapla grando de retejo…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Viaj konservitaj kuketoj, retejaj datumoj kaj staplo uzas nuntempe { $value } { $unit } da diska spaco.
 sitedata-learn-more = Pli da informo
+sitedata-accept-cookies-option =
+    .label = Akcepti kuketojn kaj retejajn datumon de retejoj (rekomendita)
+    .accesskey = A
 sitedata-block-cookies-option =
     .label = Bloki kuketojn kaj retejajn datumojn (tio povus misfunkciigi retejojn)
     .accesskey = B
 sitedata-keep-until = Konservi ĝis
     .accesskey = K
+sitedata-keep-until-expire =
+    .label = ilia senvalidiĝo
+sitedata-keep-until-closed =
+    .label = la fermo de { -brand-short-name }
 sitedata-accept-third-party-desc = Akcepti nerektajn kuketojn kaj retejajn datumojn
     .accesskey = n
 sitedata-accept-third-party-always-option =
@@ -542,6 +627,9 @@ sitedata-accept-third-party-never-option =
 sitedata-clear =
     .label = Viŝi datumojn…
     .accesskey = V
+sitedata-settings =
+    .label = Administri datumojn…
+    .accesskey = d
 sitedata-cookies-exceptions =
     .label = Esceptoj…
     .accesskey = t
@@ -635,6 +723,9 @@ collection-health-report =
     .label = Permesi al { -brand-short-name } sendi teĥnikajn kaj interagajn datumojn al { -vendor-short-name }
     .accesskey = P
 collection-health-report-link = Pli da informo
+collection-studies =
+    .label = Permesi al { -brand-short-name } instali kaj fari studojn
+collection-studies-link = Vidi studojn de { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = La raporto de datumoj estas malŝaltita pro la agordoj de konstruo

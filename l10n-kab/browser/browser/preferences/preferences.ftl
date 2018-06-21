@@ -37,6 +37,11 @@ search-input-box =
             [windows] Aff deg iɣewwaṛen
            *[other] Aff deg yismenyifen
         }
+policies-notice =
+    { PLATFORM() ->
+        [windows] Tuddsa-ik tessens tazmert n ubeddel n kra n yiɣewwaṛen.
+       *[other] Tuddsa-ik tessens tazmert n ubeddel n kra n yismenyifen.
+    }
 pane-general-title = Amatu
 category-general =
     .tooltiptext = { pane-general-title }
@@ -67,6 +72,41 @@ should-restart-title = Ales asenker i { -brand-short-name }
 should-restart-ok = Ales asenker { -brand-short-name } tura
 cancel-no-restart-button = Sefsex
 restart-later = Ales asenker ticki
+
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Azegrir, <img data-l10n-name="icon"/> { $name }, yesenqad asebter agejdan-inek.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Azegrir, <img data-l10n-name="icon"/> { $name }, yesenqad iccer n usebter-inek.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Yiwen n usiɣzef, <img data-l10n-name="icon"/> { $name }, isenker allal-ik n unadi amezwer.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Yiwen n useɣzif, <img data-l10n-name="icon"/> { $name }, iḥwaǧ agaliz n waccaren.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Azegrir, <img data-l10n-name="icon"/> { $name } , atan isefrak amesten mgal aḍfaṛ.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Azegrir, <img data-l10n-name="icon"/> { $name }, isefrak amek { -brand-short-name } ad iqqen γer internet.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Iwakken ad tremdeḍ asiɣzef ddu ɣer <img data-l10n-name="addons-icon"/> n yizegraren deg wumuɣ n <img data-l10n-name="menu-icon"/>.
 
 ## Preferences UI Search Results
 
@@ -105,6 +145,9 @@ startup-blank-page =
     .label = Sken asebter ilem
 startup-prev-session =
     .label = Sken iccaren ineggura akked isfuyla yettusqedcen 
+startup-restore-previous-session =
+    .label = Err-d tiɣimit izrin
+    .accesskey = s
 disable-extension =
     .label = Sens aseɣzif
 home-page-header = Asebter agejdan
@@ -292,6 +335,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Apruksi n uẓeṭṭa
+network-proxy-connection-description = Swel amek { -brand-short-name } ad iqqen γer internet.
 network-proxy-connection-learn-more = Issin ugar
 network-proxy-connection-settings =
     .label = Iɣewwaṛen…
@@ -300,6 +344,7 @@ network-proxy-connection-settings =
 ## Home Section
 
 home-new-windows-tabs-header = Isfuyla d iccaren imaynuten
+home-new-windows-tabs-description2 = Fren ayen ara d-yettwaseknen ticki telḍiḍ asebter agejdan, ifuyla imaynuten neɣ iccaren imaynuten.
 
 ## Home Section - Home Page Customization
 
@@ -490,6 +535,9 @@ privacy-header = Tabaḍnit n iminig
 ## Privacy Section - Forms
 
 forms-header = Tiferka & akked awalen uffiren
+forms-ask-to-save-logins =
+    .label = Suter akken ad teskelseḍ inekcam d wawalen uffiren i yismal web
+    .accesskey = s
 forms-exceptions =
     .label = Tisuraf…
     .accesskey = r
@@ -523,6 +571,7 @@ history-remember-option-never =
     .label = Ur ḥerrez ara amazray
 history-remember-option-custom =
     .label = Seqdec iɣewwaṛen udmawanen i umazray-a
+history-remember-description = { -brand-short-name } ad yeḥrez isefka n tunigin, izedman, tiferkiyin d umezruy n unadi.
 history-dontremember-description = { -brand-short-name } ad isseqdec iɣewwaṛen n tunigin tusligt, u diɣen ur iḥerrez ara amazray n tunigin-inek.
 history-private-browsing-permanent =
     .label = Seqdec yal ass askar n tunigin tusligt
@@ -530,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Ḥrez amazray n tunigin d isidar
     .accesskey = t
+history-remember-browser-option =
+    .label = Cfu ɣef umezruy n tunigin d izdamen
+    .accesskey = C
 history-remember-search-option =
     .label = Ḥrez amazray n unadi d tferkit
     .accesskey = u
@@ -546,7 +598,15 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Inagan n tuqna akked isefka n usmel
+sitedata-total-size-calculating = Asiḍen n teɣzi n isefka akked tuγzi n tuffirt…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Tskelseḍ inagan n tuqna,isefka n usmel akked  tuffirt seqdacen akka tura { $value } { $unit } seg adeg n tallunt n tkatut.
 sitedata-learn-more = Lmed ugar
+sitedata-accept-cookies-option =
+    .label = Qbel inagan n tuqqna d yisefka n usmel seg yismal (yelha)
+    .accesskey = Q
 sitedata-block-cookies-option =
     .label = Sewḥel inagan n tuqna akked isefka n usmel (izmer ad yiṛez ismal web)
     .accesskey = B
@@ -554,6 +614,8 @@ sitedata-keep-until = Ḥrez arma
     .accesskey = l
 sitedata-keep-until-expire =
     .label = Ad mten
+sitedata-keep-until-closed =
+    .label = Amdal n { -brand-short-name }
 sitedata-accept-third-party-desc = Qbel inagan n tuqna tis kraḍ akked isefka n ismal
     .accesskey = y
 sitedata-accept-third-party-always-option =
@@ -635,6 +697,12 @@ permissions-notification-link = Issin ugar
 permissions-notification-pause =
     .label = Saḥbes ilγa arma yekker { -brand-short-name }
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = Sewḥel ismal web si tɣuri tawurmant n yiferdisen imeslawen
+    .accesskey = S
+permissions-block-autoplay-media-exceptions =
+    .label = Tisuraf…
+    .accesskey = r
 permissions-block-popups =
     .label = Sewḥel isfuyla udhimen
     .accesskey = S
@@ -661,6 +729,9 @@ collection-health-report =
     .label = Sireg { -brand-short-name } ad yazen isefka itiknikanen ɣer { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Lmed ugar
+collection-studies =
+    .label = Sireg { -brand-short-name } ad yessebded sakin ad isenker tizrawin
+collection-studies-link = Wali tizrawin n { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Aneqqis n isefka ur irmid ara i uswel-a n usefsu

@@ -7,6 +7,7 @@
 
 site-data-settings-window =
     .title = ניהול עוגיות ונתוני אתרים
+site-data-settings-description = האתרים הבאים שומרים עוגיות ונתוני אתרים על המחשב שלך. { -brand-short-name } ישמור נתונים מאתרים באחסון הקבוע עד אשר יתבקש למחוק אותם, וימחק נתונים מאתרים המשתמשים באחסון לא קבוע כאשר יידרש שטח אחסון נוסף.
 site-data-search-textbox =
     .placeholder = חיפוש אתרים
     .accesskey = ח
@@ -27,11 +28,25 @@ site-data-button-cancel =
 site-data-button-save =
     .label = שמירת שינויים
     .accesskey = ש
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+site-usage-pattern = { $value } { $unit }
+site-usage-persistent = { site-usage-pattern } (קבוע)
+site-data-remove-all =
+    .label = הסרת הכל
+    .accesskey = ס
+site-data-remove-shown =
+    .label = הסרת כל הפריטים המוצגים
+    .accesskey = ס
 
 ## Removing
 
 site-data-removing-window =
     .title = { site-data-removing-header }
+site-data-removing-dialog =
+    .title = { site-data-removing-header }
+    .buttonlabelaccept = הסרה
 site-data-removing-header = הסרת עוגיות ונתוני אתרים
 site-data-removing-desc = הסרת עוגיות ונתוני אתרים עשוי לנתק את המשתמש שלך מאתרים. האם ברצונך להמשיך בביצוע השינויים?
 site-data-removing-table = עוגיות ונתוני אתרים עבור אתרי האינטרנט הבאים יימחקו

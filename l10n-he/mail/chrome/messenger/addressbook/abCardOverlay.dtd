@@ -119,15 +119,25 @@
 <!ENTITY Notes.accesskey                "ה">
 
 <!ENTITY Chat.tab                       "צ׳אט">
+<!ENTITY Chat.accesskey                 "צ">
 <!ENTITY Gtalk.label                    "Google Talk:">
+<!ENTITY Gtalk.accesskey                "G">
 <!ENTITY AIM.label                      "AIM:">
+<!ENTITY AIM2.accesskey                 "M">
 <!ENTITY Yahoo.label                    "Yahoo!‎:">
+<!ENTITY Yahoo.accesskey                "Y">
 <!ENTITY Skype.label                    "Skype:">
+<!ENTITY Skype.accesskey                "S">
 <!ENTITY QQ.label                       "QQ:">
+<!ENTITY QQ.accesskey                   "Q">
 <!ENTITY MSN.label                      "MSN:">
+<!ENTITY MSN2.accesskey                 "N">
 <!ENTITY ICQ.label                      "ICQ:">
+<!ENTITY ICQ.accesskey                  "I">
 <!ENTITY XMPP.label                     "מזהה Jabber:">
+<!ENTITY XMPP.accesskey                 "J">
 <!ENTITY IRC.label                      "כינוי ב־IRC:">
+<!ENTITY IRC.accesskey                  "כ">
 
 <!ENTITY Photo.tab                      "תמונה">
 <!ENTITY Photo.accesskey                "ת">

@@ -73,6 +73,41 @@ should-restart-ok = Titikirisäx chik { -brand-short-name } wakami
 cancel-no-restart-button = Tiq'at
 restart-later = Titikirisäx pa jun mej
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Jun k'amal, <img data-l10n-name="icon"/> { $name }, ruchajin ri ruxaq atikirisab'al.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Jun k'amal, <img data-l10n-name="icon"/> { $name }, ruchajin ri ruxaq K'ak'a' Ruwi'.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Jun k'amal, <img data-l10n-name="icon"/> { $name }, xujäl ri kanob'äl ruk'amon pe.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Jun k'amal, <img data-l10n-name="icon"/> { $name }, nik'atzin K'ayöl Tabs chi re.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Jun k'amal, <img data-l10n-name="icon"/> { $name }, tajin nuchajij ri chajinïk chuwäch ojqanem.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Jun k'amal, <img data-l10n-name="icon"/> { $name }, nuchajij rub'eyal { -brand-short-name } nok pa k'amaya'l.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Richin nitzij ri k'amal jät pa <img data-l10n-name="addons-icon"/> taq Chokoy pa ri <img data-l10n-name="menu-icon"/> k'utsamaj.
+
 ## Preferences UI Search Results
 
 search-results-header = Taq ruq'i'oj kanoxïk
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = Tik'ut pe jun kowöl ruxaq
 startup-prev-session =
     .label = Kek'ut ri taq rutzuwäch chuqa' taq ruwi' ruk'isib'äl rumolojri'ïl
+startup-restore-previous-session =
+    .label = Titzolin pa ri molojri'ïl xik'o
+    .accesskey = m
 disable-extension =
     .label = Tichup ri K'amal
 home-page-header = Tikirib'äl ruxaq
@@ -297,6 +335,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Ruproxi K'amab'ey
+network-proxy-connection-description = Tib'an runuk'ulem rub'eyal { -brand-short-name } nok pa k'amaya'l.
 network-proxy-connection-learn-more = Tetamäx ch'aqa' chik
 network-proxy-connection-settings =
     .label = Tinuk'…
@@ -540,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Tinatäx ri nunatab'al richin taq qasanïk chuqa' okik'amaya'l
     .accesskey = T
+history-remember-browser-option =
+    .label = Tinatäx ri runatab'al okem pa k'amaya'l chuqa' ri qasanïk
+    .accesskey = k
 history-remember-search-option =
     .label = Tinatäx ri runatab'al kanob'äl chuqa' taq nojwuj
     .accesskey = n
@@ -556,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Taq Kaxlanwey chuqa' Rutzij K'amaya'l
+sitedata-total-size-calculating = Tajin nipaj kinimilem taq rutzij chuqa' rujumejyak ruxaq k'amaya'l…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Ri yakon taq kaxlanwey, rutzij ruxaq chuqa' ri rutzatzq'or taq jumejyak nikokisaj { $value } { $unit } chi re ri rupam nimayakb'äl.
 sitedata-learn-more = Tetamäx ch'aqa' chik
 sitedata-accept-cookies-option =
     .label = Kek'ul taq kaxlanwey chuqa' kitzij ruxaq kichin ajk'amaya'l taq ruxaq (chilab'en)
@@ -650,6 +697,12 @@ permissions-notification-link = Tetamäx ch'aqa' chik
 permissions-notification-pause =
     .label = Keqa't ri taq rutzijol k'a toq ri { -brand-short-name } titikïr chik
     .accesskey = r
+permissions-block-autoplay-media =
+    .label = Keq'at ajk'amaya'l taq ruxaq richin man kerutzïj ruyonil taq tob'äl k'o kik'oxom
+    .accesskey = q
+permissions-block-autoplay-media-exceptions =
+    .label = Taq man relik ta…
+    .accesskey = E
 permissions-block-popups =
     .label = Keq'at elenel taq tzuwäch
     .accesskey = K
@@ -676,6 +729,9 @@ collection-health-report =
     .label = Tiya' q'ij chi re { -brand-short-name } richin nitaq etamatel taq tzij chuqa' jutzijonem chi re ri { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Tetamäx ch'aqa' chik
+collection-studies =
+    .label = Tiya' q'ij chi re ri { -brand-short-name } niyakon chuqa' nusamajij tijonïk
+collection-studies-link = Ketz'et taq rutijonik { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Chupül ri kitzijol taq tzij richin nib'an kinuk'ulem re taq alk'walaxinem re'

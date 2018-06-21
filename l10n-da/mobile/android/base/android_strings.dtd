@@ -70,6 +70,15 @@
 
 <!ENTITY url_bar_default_text2 "Indtast søgeord eller adresse">
 
+<!-- Localization note (url_bar_qrcode_text2) : This text will be
+     heard by non-visual users when the focus is on the QR Code
+     icon in the url bar. -->
+<!ENTITY url_bar_qrcode_text2 "Brug din QR-læser til søgning eller skriv en adresse">
+<!-- Localization note (url_bar_mic_text2) : This text will be
+     heard by non-visual users when the focus is on the Microphone
+     icon in the url bar. -->
+<!ENTITY url_bar_mic_text2 "Brug din mikrofon til at søge på nettet eller til at angive en webadresse">
+
 <!ENTITY bookmark "Sæt bogmærke">
 <!ENTITY bookmark_remove "Fjern bogmærke">
 <!ENTITY bookmark_added "Bogmærke tilføjet">
@@ -204,9 +213,10 @@
 <!-- Localization note (pref_category_advanced_summary3): “data saver” in this
      context means consuming less data, e.g. by not loading images, not
      “storing data”. -->
-<!ENTITY pref_category_advanced_summary3 "Gendan faneblade, data-sparer, udviklerværktøjer">
+<!ENTITY pref_category_advanced_summary3 "Gendan faneblade, data-sparer, Udviklerværktøj">
 <!ENTITY pref_category_notifications "Beskeder">
 <!ENTITY pref_category_notifications_summary "Nye funktioner, opdatering af websteder">
+<!ENTITY pref_category_notifications_summary2 "Nye funktioner og tips">
 <!ENTITY pref_developer_remotedebugging_usb "Ekstern debugging via USB">
 <!ENTITY pref_developer_remotedebugging_wifi "Ekstern debugging via wi-fi">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Debugging via wi-fi kræver, at din enhed har en app til skanning af QR-koder installeret.">
@@ -261,7 +271,7 @@
      “storing data”. -->
 <!ENTITY pref_category_data_saver "Data-sparer">
 <!ENTITY pref_category_media "Medie">
-<!ENTITY pref_category_developer_tools "Udviklerværktøjer">
+<!ENTITY pref_category_developer_tools "Udviklerværktøj">
 
 <!ENTITY pref_tap_to_load_images_title2 "Vis billeder">
 <!ENTITY pref_tap_to_load_images_enabled "Altid">
@@ -543,7 +553,7 @@
 <!ENTITY pref_compact_tabs_summary2 "Vis faneblade i to kolonner i portrætvisning">
 
 <!-- Localization note (page_removed): This string appears in a toast message when
-     any page is removed frome about:home. This includes pages that are in history,
+     any page is removed from about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "Side fjernet">
 <!ENTITY folder_removed "Mappen er slettet">
@@ -761,7 +771,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      "Last synced" is one of the user's other Sync clients, typically Firefox on
      their desktop or laptop.-->
 <!ENTITY remote_tabs_last_synced "Sidst synkroniseret: &formatS;">
-<!-- Localization note: Used when the sync has not happend yet, showed in place of a date -->
+<!-- Localization note: Used when the sync has not happened yet, showed in place of a date -->
 <!ENTITY remote_tabs_never_synced "Sidst synkroniseret: aldrig">
 
 <!-- LOCALIZATION NOTE (intent_uri_private_browsing_prompt): This string will

@@ -70,6 +70,15 @@
 
 <!ENTITY url_bar_default_text2 "Søk eller skriv inn adresse">
 
+<!-- Localization note (url_bar_qrcode_text2) : This text will be
+     heard by non-visual users when the focus is on the QR Code
+     icon in the url bar. -->
+<!ENTITY url_bar_qrcode_text2 "Bruk QR-kodeleseren for å søke eller oppgi en adresse">
+<!-- Localization note (url_bar_mic_text2) : This text will be
+     heard by non-visual users when the focus is on the Microphone
+     icon in the url bar. -->
+<!ENTITY url_bar_mic_text2 "Bruk mikrofonen din for å søke eller oppgi en adresse">
+
 <!ENTITY bookmark "Bokmerke">
 <!ENTITY bookmark_remove "Fjern bokmerke">
 <!ENTITY bookmark_added "Bokmerke er lagt til">
@@ -207,6 +216,7 @@
 <!ENTITY pref_category_advanced_summary3 "Gjenopprett faner, datalager, utviklerverktøy">
 <!ENTITY pref_category_notifications "Varslinger">
 <!ENTITY pref_category_notifications_summary "Nye funksjoner, nettstedsoppdateringer">
+<!ENTITY pref_category_notifications_summary2 "Nye funksjoner, produkttips">
 <!ENTITY pref_developer_remotedebugging_usb "Ekstern debugging via USB">
 <!ENTITY pref_developer_remotedebugging_wifi "Ekstern debugging via Wi-Fi">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Wi-Fi-debugging krever at enheten din har installert en QR-kodeleseapp.">
@@ -461,7 +471,7 @@
 <!ENTITY save_as_pdf "Lagre som PDF">
 <!ENTITY print "Skriv ut">
 <!ENTITY view_page_source "Vis kildekode">
-<!ENTITY find_in_page "Finn på siden">
+<!ENTITY find_in_page "Søk på siden">
 <!ENTITY desktop_mode "Vis skrivebordsversjon">
 <!ENTITY page "Side">
 <!ENTITY tools "Verktøy">
@@ -477,7 +487,7 @@
 
 <!-- Localization note (find_text, find_prev, find_next, find_close) : These strings are used
      as alternate text for accessibility. They are not visible in the UI. -->
-<!ENTITY find_text "Finn på siden">
+<!ENTITY find_text "Søk på siden">
 <!ENTITY find_prev "Forrige">
 <!ENTITY find_next "Neste">
 <!ENTITY find_close "Lukk">
@@ -543,7 +553,7 @@
 <!ENTITY pref_compact_tabs_summary2 "Arranger faner i to kolonner i portrettmodus">
 
 <!-- Localization note (page_removed): This string appears in a toast message when
-     any page is removed frome about:home. This includes pages that are in history,
+     any page is removed from about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "Siden fjernet">
 <!ENTITY folder_removed "Mappe fjernet">
@@ -758,7 +768,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      "Last synced" is one of the user's other Sync clients, typically Firefox on
      their desktop or laptop.-->
 <!ENTITY remote_tabs_last_synced "Sist synkronisert: &formatS;">
-<!-- Localization note: Used when the sync has not happend yet, showed in place of a date -->
+<!-- Localization note: Used when the sync has not happened yet, showed in place of a date -->
 <!ENTITY remote_tabs_never_synced "Sist synkronisert: aldri">
 
 <!-- LOCALIZATION NOTE (intent_uri_private_browsing_prompt): This string will
