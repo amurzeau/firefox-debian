@@ -1,3 +1,11 @@
+firefox (60.0.2-2) unstable; urgency=medium
+
+  * build/unix/elfhack/elfhack.cpp, build/unix/elfhack/inject.c,
+    build/unix/elfhack/test.c: Use run-time page size when changing mapping
+    permissions in elfhack injected code. bz#1470701. Closes: #902231.
+
+ -- Mike Hommey <glandium@debian.org>  Sun, 24 Jun 2018 09:23:16 +0900
+
 firefox (60.0.2-1) unstable; urgency=medium
 
   * New upstream release.
