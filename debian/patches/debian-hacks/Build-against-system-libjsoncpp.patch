@@ -77,7 +77,7 @@ index 6920229e1ea1..5e20a3d42fd9 100644
 -    ]
 +OS_LIBS += ['jsoncpp']
 diff --git a/toolkit/crashreporter/minidump-analyzer/moz.build b/toolkit/crashreporter/minidump-analyzer/moz.build
-index 50852baee8a2..df8e4158b661 100644
+index d52eaacf6704..e61d37b7f96e 100644
 --- a/toolkit/crashreporter/minidump-analyzer/moz.build
 +++ b/toolkit/crashreporter/minidump-analyzer/moz.build
 @@ -52,7 +52,7 @@ USE_LIBS += [
