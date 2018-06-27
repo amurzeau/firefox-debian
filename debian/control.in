@@ -24,9 +24,6 @@ Build-Depends: autotools-dev,
 %if USE_SYSTEM_ZLIB
                zlib1g-dev,
 %endif
-%if USE_SYSTEM_BZ2
-               libbz2-dev,
-%endif
                libreadline-dev,
                python2.7,
                python-minimal (>= 2.6.6-13~),
