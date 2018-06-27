@@ -37,10 +37,10 @@ Build-Depends: autotools-dev,
                libnspr4-dev (>= 2:4.19~),
 %endif
 %if USE_SYSTEM_NSS
-               libnss3-dev (>= 2:3.37.3~),
+               libnss3-dev (>= 2:3.38~),
 %endif
 %if USE_SYSTEM_SQLITE
-               libsqlite3-dev (>= 3.23.1),
+               libsqlite3-dev (>= 3.24.0),
 %endif
 %if USE_SYSTEM_VPX
                libvpx-dev (>= 1.5.0),
