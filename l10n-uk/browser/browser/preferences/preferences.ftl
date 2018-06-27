@@ -73,6 +73,41 @@ should-restart-ok = Перезапустити { -brand-short-name } зараз
 cancel-no-restart-button = Скасувати
 restart-later = Перезапустити потім
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Розширення <img data-l10n-name="icon"/> { $name } контролює вашу домівку.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Розширення <img data-l10n-name="icon"/> { $name } контролює вашу сторінку нової вкладки.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Розширення <img data-l10n-name="icon"/> { $name } встановило ваш типовий засіб пошуку.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Для роботи розширення <img data-l10n-name="icon"/> { $name } необхідні вкладки в контейнері.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Розширення <img data-l10n-name="icon"/> { $name } контролює захист від стеження.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Розширення <img data-l10n-name="icon"/> { $name } контролює спосіб з'єднання { -brand-short-name } з Інтернетом.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Щоб увімкнути розширення, відкрийте <img data-l10n-name="addons-icon"/> Додатки в <img data-l10n-name="menu-icon"/> меню.
+
 ## Preferences UI Search Results
 
 search-results-header = Результати пошуку
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = Показувати чисту сторінку
 startup-prev-session =
     .label = Показувати вікна і вкладки з минулого разу
+startup-restore-previous-session =
+    .label = Відновити попередній сеанс
+    .accesskey = В
 disable-extension =
     .label = Вимкнути розширення
 home-page-header = Домівка
@@ -300,6 +338,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Проксі-сервер
+network-proxy-connection-description = Налаштувати спосіб з'єднання { -brand-short-name } з Інтернетом.
 network-proxy-connection-learn-more = Докладніше
 network-proxy-connection-settings =
     .label = Налаштувати…
@@ -543,6 +582,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Пам’ятати історію переглядів та завантажень
     .accesskey = і
+history-remember-browser-option =
+    .label = Пам’ятати історію переглядів та завантажень
+    .accesskey = П
 history-remember-search-option =
     .label = Пам’ятати історію пошуків та форм
     .accesskey = м
@@ -559,6 +601,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Куки і дані сайтів
+sitedata-total-size-calculating = Обчислення розміру даних сайтів і кешу…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Ваші збережені куки, дані сайтів і кеш використовують { $value } { $unit } дискового простору.
 sitedata-learn-more = Докладніше
 sitedata-accept-cookies-option =
     .label = Приймати куки і дані з веб-сайтів (рекомендовано)
@@ -609,7 +656,7 @@ addressbar-suggestions-settings = Змінити налаштування про
 
 tracking-header = Захист від стеження
 tracking-desc = Захист від стеження блокує елементи, що збирають ваші дані під час перегляду на багатьох веб-сайтах. <a data-l10n-name="learn-more">Дізнайтеся більше про захист від стеження і вашу приватність</a>
-tracking-mode-label = Використовуйте захист від стеження для блокування відомих елементів стеження
+tracking-mode-label = Використовувати захист від стеження
 tracking-mode-always =
     .label = Завжди
     .accesskey = З
@@ -653,6 +700,12 @@ permissions-notification-link = Докладніше
 permissions-notification-pause =
     .label = Призупинити сповіщення до перезапуску { -brand-short-name }
     .accesskey = П
+permissions-block-autoplay-media =
+    .label = Заборонити веб-сайтам автоматично відтворювати медіа зі звуком
+    .accesskey = З
+permissions-block-autoplay-media-exceptions =
+    .label = Винятки…
+    .accesskey = и
 permissions-block-popups =
     .label = Блокувати виринаючі вікна
     .accesskey = Б
@@ -679,6 +732,9 @@ collection-health-report =
     .label = Дозволити { -brand-short-name } надсилати технічні та користувацькі дані в { -vendor-short-name }
     .accesskey = к
 collection-health-report-link = Докладніше
+collection-studies =
+    .label = Дозволити { -brand-short-name } встановлювати й виконувати дослідження
+collection-studies-link = Переглянути дослідження { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Відправлення даних вимкнено для цієї конфігурації збірки

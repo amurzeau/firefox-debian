@@ -73,6 +73,41 @@ should-restart-ok = Ailgychwynnwch { -brand-short-name } nawr
 cancel-no-restart-button = Diddymu
 restart-later = Ailgychwyn Rhywbryd Eto
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Mae estyniad, <img data-l10n-name="icon"/> { $name }, yn rheoli eich tudalen cartref.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Mae estyniad, <img data-l10n-name="icon"/> { $name }, yn rheoli eich tudalen Tab Newydd.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Mae'r estyniad, <img data-l10n-name="icon"/> { $name }, wedi gosod eich peiriant chwilio ragosodedig.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Mae estyniad, <img data-l10n-name="icon"/> { $name }, angen Tabiau Cynhwysydd.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Mae estyniad, <img data-l10n-name="icon"/> { $name }, yn rheoli diogelwch rhag tracio.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Mae estyniad, <img data-l10n-name="icon"/> { $name }, yn rheoli sut mae { -brand-short-name } yn cysylltu â'r rhyngrwyd.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = I alluogi'r estyniad ewch i Ychwanegion <img data-l10n-name="addons-icon"/> yn y ddewislen <img data-l10n-name="menu-icon"/>.
+
 ## Preferences UI Search Results
 
 search-results-header = Canlyniadau Chwilio
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = Dangos tudalen wag
 startup-prev-session =
     .label = Dangos fy ffenestri a'm tabiau o'r tro diwethaf
+startup-restore-previous-session =
+    .label = Adfer sesiwn flaenorol
+    .accesskey = A
 disable-extension =
     .label = Analluogi Estyniad
 home-page-header = Tudalen cartref
@@ -309,6 +347,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Dirprwy Rhwydwaith
+network-proxy-connection-description = Ffurfweddu sut mae { -brand-short-name } yn cysylltu â'r rhyngrwyd.
 network-proxy-connection-learn-more = Dysgu rhagor
 network-proxy-connection-settings =
     .label = Gosodiadau…
@@ -552,6 +591,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Cofio fy hanes pori a hanes llwytho i lawr
     .accesskey = o
+history-remember-browser-option =
+    .label = Cofio hanes pori a llwytho i lawr
+    .accesskey = h
 history-remember-search-option =
     .label = Cofio hanes chwilio a ffurflen
     .accesskey = C
@@ -568,6 +610,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cwcis a Data Gwefan
+sitedata-total-size-calculating = Cyfrifo maint data gwefan…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Mae'r cwcis, data gwefan a storfa yn defnyddio { $value } { $unit } o le ar ddisg ar hyn o bryd.
 sitedata-learn-more = Dysgu rhagor
 sitedata-accept-cookies-option =
     .label = Derbyn cwcis a data gwefan gan wefannau (argymell)
@@ -662,6 +709,12 @@ permissions-notification-link = Dysgu rhagor
 permissions-notification-pause =
     .label = Oedi fy hysbysiadau tan { -brand-short-name } ailgychwyn
     .accesskey = O
+permissions-block-autoplay-media =
+    .label = Rhwystro gwefannau rhag chwarae cyfrwng gyda sain yn awtomatig 
+    .accesskey = R
+permissions-block-autoplay-media-exceptions =
+    .label = Eithriadau...
+    .accesskey = E
 permissions-block-popups =
     .label = Rhwystro ffenestri llamlen
     .accesskey = R
@@ -688,6 +741,9 @@ collection-health-report =
     .label = Caniatáu i { -brand-short-name } anfon data technegol a rhyngweithio i { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Dysgu rhagor
+collection-studies =
+    .label = Caniatáu i { -brand-short-name } osod a rhedeg astudiaethau
+collection-studies-link = Gweld astudiaethau { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Mae adrodd ar ddata wedi ei analluogi ar gyfer ffurfweddiad yr adeiledd hwn

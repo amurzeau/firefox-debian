@@ -38,11 +38,15 @@
 <!ENTITY bookmarksToolbar.tooltip         "Bar alatan Tandabuku">
 <!ENTITY navigationToolbar.tooltip        "Bar Alatan Navigasi">
 
+<!ENTITY editBookmark.done.label "Siap">
+<!ENTITY editBookmark.cancel.label "Batal">
+<!ENTITY editBookmark.removeBookmark.accessKey "B">
+
 <!-- Toolbar items --> 
 <!ENTITY backButton.label             "Undur">
 <!ENTITY backButton.tooltip           "Undur satu halaman">
 <!ENTITY forwardButton.label          "Maju">
-<!ENTITY forwardButton.tooltip        "Langkau satu halaman">
+<!ENTITY forwardButton.tooltip        "Maju satu halaman">
 <!ENTITY reloadButton.label           "Muat semula">
 <!ENTITY reloadButton.tooltip         "Muat semula halaman semasa">
 <!ENTITY stopButton.label             "Berhenti">
@@ -70,7 +74,7 @@
 <!ENTITY bookmarksToolbarChevron.tooltip "Papar tandabuku selanjutnya">
 
 <!-- Statusbar -->
-<!ENTITY  statusText.label            "Selesai">
+<!ENTITY  statusText.label            "Siap">
 
 <!ENTITY popupIcon.tooltiptext      "Buang sekatan popup laman web ini">
 

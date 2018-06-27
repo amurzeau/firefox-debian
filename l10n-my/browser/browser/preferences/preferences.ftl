@@ -73,6 +73,41 @@ should-restart-ok = ယခုပင် { -brand-short-name } ကို ပြန
 cancel-no-restart-button = မလုပ်တော့
 restart-later = နောက်မှ ပြန်ဖွင့်ပါ
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = ပေါင်းထည့်ဆော့ဖ်ဝဲ <img data-l10n-name="icon"/>{ $name } သည် အဖွင့်စာမျက်နှာကို ထိန်းချုပ်နေသည်။
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = ပေါင်းထည့်ဆောဖ့်ဝဲ <img data-l10n-name="icon"/>{ $name } သည် တပ်ဗ်အသစ်တွင် ဖွင့်ထားသော စာမျက်နှာကို ထိန်းချုပ်နေသည်။
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = ပေါင်းထည့်ဆော့ဖ်ဝဲ <img data-l10n-name="icon"/>{ $name } သည် မူသေရှာဖွေရေးယန္တရားကို သတ်မှတ်ထားသည်။
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = ပေါင်းထည့်ဆော့ဖ်ဝဲ <img data-l10n-name="icon"/>{ $name } သည် ကွန်တန်နာတပ်ဗ်ကို လိုအပ်သည်။
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = ပေါင်းထည့်ဆော့ဖ်ဝဲ <img data-l10n-name="icon"/>{ $name } သည် ခြေရာခံကာကွယ်မှုကို ထိန်းချုပ်နေသည်။
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = ပေါင်းထည့်ဆော့ဖ်ဝဲ <img data-l10n-name="icon"/>{ $name } သည် { -brand-short-name } ၏ အင်တာနက်ချိတ်ဆက်ပုံကို ထိန်းချုပ်နေသည်။
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = ပေါင်းထည့်ဆော့ဖ်ဝဲကို အသုံးပြုရန် <img data-l10n-name="menu-icon"/> ထဲမှ <img data-l10n-name="addons-icon"/> သို့ သွားပါ။
+
 ## Preferences UI Search Results
 
 search-results-header = ရှာဖွေမှု ရလဒ်များ
@@ -387,6 +422,11 @@ containers-remove-button =
 sync-signedout-caption = ဝဘ်ကို သင့်နဲ့အတူ ခေါ်ဆောင်သွားပါ
 sync-signedout-description = သင့်ကိရိယာအားလုံးရှိ စာမှတ်များ၊ မှတ်တမ်း၊ စာမျက်နှာများ၊ စကားဝှက်များ၊ အတ်အွန်များနှင့် အပြင်အဆင်များကို တစ်ပြေးညီဖြစ်စေပါ။
 sync-signedout-account-title = { -fxaccount-brand-name } ကို အသုံးပြုပြီး ချိတ်ဆက်ရန်
+sync-signedout-account-create = အကောင့်မရှိလျှင် အသစ်စတင်ပါ။
+    .accesskey = c
+sync-signedout-account-signin =
+    .label = ဝင်ပါ...
+    .accesskey = l
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -408,6 +448,12 @@ sync-manage-account = အကောင့်ကို စီမံရန်
     .accesskey = o
 sync-signedin-unverified = { $email } ​ကို အတည်မပြုရသေးပါ။
 sync-signedin-login-failure = ပြန်လည်ချိတ်ဆက်ရန် အကောင့်ဖြင့် ဝင်ရောက်ပါ { $email }
+sync-resend-verification =
+    .label = အတည်ပြုချက်ကို ပြန်လည်ပေးပို့ပါ
+    .accesskey = d
+sync-remove-account =
+    .label = အကောင့်ကို ဖယ်ရှားပါ
+    .accesskey = R
 sync-sign-in =
     .label = ဝင်ပါ
     .accesskey = g
@@ -419,6 +465,34 @@ sync-engine-bookmarks =
 sync-engine-history =
     .label = မှတ်တမ်း
     .accesskey = r
+sync-engine-tabs =
+    .label = ဖွင့်ထားသောတပ်ဗ်များ
+    .tooltiptext = ကိရိယာအားလုံးတွင် ဖွင့်ထားသော တပ်ဗ်စာရင်း
+    .accesskey = t
+sync-engine-logins =
+    .label = ဝင်ရောက်မှုများ
+    .tooltiptext = မှတ်သားထားသည့် အသုံးပြုသူအမည်နှင့်စကားဝှက်များ
+    .accesskey = L
+sync-engine-addresses =
+    .label = လိပ်စာများ
+    .tooltiptext = မှတ်သားထားသော စာပို့လိပ်စာများ (ဒက်စတော့အတွက်သာ)
+    .accesskey = e
+sync-engine-creditcards =
+    .label = အကြွေးကဒ်များ
+    .tooltiptext = နာမည်၊ နံပါတ်နှင့် ကုန်ဆုံးရက်များ (ဒက်စတော့အတွက်သာ)
+    .accesskey = C
+sync-engine-addons =
+    .label = အတ်အွန်များ
+    .tooltiptext = Firefox ဒက်စတော့အတွက် ပေါင်းထည့်ဆော့ဖ်ဝဲများနှင့် အခင်းအကျင်းများ
+    .accesskey = A
+sync-engine-prefs =
+    .label =
+        { PLATFORM() ->
+            [windows] ရွေးချယ်မှုများ
+           *[other] နှစ်သက်ရာ အပြင်အဆင်များ
+        }
+    .tooltiptext = ပြောင်းလဲထားသော အထွေထွေ၊ကိုယ်ရေးကိုယ်တာနှင့် လုံခြုံမှုအပြင်အဆင်များ
+    .accesskey = s
 sync-device-name-header = ကိရိယာအမည်
 sync-device-name-change =
     .label = ကိရိယာအမည်ကို ပြောင်းလဲရန်…
@@ -429,15 +503,21 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = သိမ်းဆည်းပါ
     .accesskey = v
+sync-mobilepromo-single = အခြားကိရိယာကို ချိတ်ဆက်ရန်
+sync-mobilepromo-multi = ကိရိယာများကို စီမံရန်
 sync-tos-link = အသုံးပြုချိန်တွင်လိုက်နာရမည့်အချက်များ
 sync-fxa-privacy-notice = ကိုယ်ရေးကာကွယ်မှု သတိပေးချက်
 
 ## Privacy Section
 
+privacy-header = ဘရောင်ဇာ ကိုယ်ရေးကာကွယ်မှု
 
 ## Privacy Section - Forms
 
 forms-header = ဖောင်များ & စကားဝှက်များ
+forms-ask-to-save-logins =
+    .label = ဆိုက်များအတွက် ဝင်ရောက်မှုများနှင့် စကားဝှက်များကို မှတ်ရန် မေးပါ
+    .accesskey = r
 forms-exceptions =
     .label = ခြွင်းချက်များ...
     .accesskey = x
@@ -487,22 +567,40 @@ history-clear-on-close-option =
 history-clear-on-close-settings =
     .label = အပြင်အဆင်များ...
     .accesskey = t
+history-clear-button =
+    .label = မှတ်တမ်းကို ရှင်းလင်းပါ...
+    .accesskey = s
 
 ## Privacy Section - Site Data
 
+sitedata-header = ကွတ်ကီးနှင့် ဆိုက်အချက်အလက်များ
 sitedata-learn-more = ပိုမိုလေ့လာရန်
+sitedata-keep-until = ထိုအချိန်ထိ သိမ်းထားပါ
+    .accesskey = u
+sitedata-keep-until-expire =
+    .label = သက်တမ်းစေ့လျှင်
 sitedata-accept-third-party-always-option =
     .label = အမြဲတမ်း
 sitedata-accept-third-party-visited-option =
     .label = ကြည့်ရှုထားသည့် နေ့မှစ၍
 sitedata-accept-third-party-never-option =
     .label = ဘယ်တော့မှ
+sitedata-clear =
+    .label = အချက်အလက်ကို ရှင်းပါ...
+    .accesskey = l
+sitedata-settings =
+    .label = အချက်အလက်ကို စီမံပါ...
+    .accesskey = M
 sitedata-cookies-exceptions =
     .label = ခြွင်းချက်များ…
     .accesskey = E
 
 ## Privacy Section - Address Bar
 
+addressbar-header = လိပ်စာဘား
+addressbar-locbar-history-option =
+    .label = ရှာဖွေကြည့်ရှုမှု မှတ်တမ်း
+    .accesskey = h
 addressbar-locbar-bookmarks-option =
     .label = စာမှတ်များ
     .accesskey = k
@@ -529,6 +627,24 @@ tracking-exceptions =
 
 ## Privacy Section - Permissions
 
+permissions-header = ခွင့်ပြုချက်များ
+permissions-location = တည်နေရာ
+permissions-location-settings =
+    .label = အပြင်အဆင်များ...
+    .accesskey = t
+permissions-camera = ကင်မရာ
+permissions-camera-settings =
+    .label = အပြင်အဆင်များ...
+    .accesskey = t
+permissions-microphone = မိုက်ကရိုဖုန်း
+permissions-microphone-settings =
+    .label = အပြင်အဆင်များ...
+    .accesskey = t
+permissions-notification = အသိပေးချက်များ
+permissions-notification-settings =
+    .label = အပြင်အဆင်များ...
+    .accesskey = t
+permissions-notification-link = ပိုမိုလေ့လာရန်
 permissions-notification-pause =
     .label = အသိပေးချက်ကို { -brand-short-name } ပြန်လည်စတင်မှု မတိုင်ခင်ထိ ရပ်တန့်ထားပါ
     .accesskey = n
@@ -541,10 +657,13 @@ permissions-block-popups-exceptions =
 permissions-addon-exceptions =
     .label = ခြွင်းချက်များ...
     .accesskey = E
+permissions-a11y-privacy-link = ပိုမိုလေ့လာရန်
 
 ## Privacy Section - Data Collection
 
+collection-privacy-notice = ကိုယ်ရေးကာကွယ်မှု အသိပေးချက်
 collection-health-report-link = ပိုမိုလေ့လာရန်
+collection-browser-errors-link = ပိုမိုလေ့လာရန်
 collection-backlogged-crash-reports-link = ပိုမိုလေ့လာရန်
 
 ## Privacy Section - Security
@@ -556,6 +675,7 @@ security-header = လုံခြုံရေး
 security-enable-safe-browsing =
     .label = အန္တရာယ်ရှိသည့် အကြောင်းအရာတုများကို တားဆီးပါ
     .accesskey = B
+security-enable-safe-browsing-link = ပိုမိုလေ့လာရန်
 security-block-downloads =
     .label = အန္တရာယ်ရှိသည့် ဆွဲယူထားသည့်ဖိုင်များကို တားဆီးပါ
     .accesskey = d
@@ -576,3 +696,9 @@ certs-select-ask-option =
 certs-enable-ocsp =
     .label = လက်ရှိအထောက်အထားများ၏ ခိုင်လုံမှုကို အတည်ပြုရန် OSCP responder servers များကို ဆွဲထုတ်ပါ Q
     .accesskey = Q
+certs-view =
+    .label = အထောက်အထားများကို ကြည့်ရန်...
+    .accesskey = C
+certs-devices =
+    .label = လုံခြုံရေး ကိရိယာများ...
+    .accesskey = D

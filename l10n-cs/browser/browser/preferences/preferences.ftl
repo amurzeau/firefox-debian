@@ -73,6 +73,41 @@ should-restart-ok = Restartovat aplikaci { -brand-short-name }
 cancel-no-restart-button = Zrušit
 restart-later = Restartovat později
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Vaši domovskou stránku spravuje rozšíření <img data-l10n-name="icon"/> { $name }.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Stránku v novém panelu spravuje rozšíření <img data-l10n-name="icon"/> { $name }.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Rozšíření <img data-l10n-name="icon"/> { $name } vám nastavilo nový výchozí vyhledávací modul.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Rozšíření <img data-l10n-name="icon"/> { $name } vyžaduje kontejnerové panely.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Ochranu proti sledování spravuje rozšíření <img data-l10n-name="icon"/> { $name }.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Připojení aplikace { -brand-short-name } k internetu spravuje rozšíření <img data-l10n-name="icon"/> { $name }.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Pro povolení rozšíření otevřete <img data-l10n-name="addons-icon"/> Doplňky v nabídce <img data-l10n-name="menu-icon"/>.
+
 ## Preferences UI Search Results
 
 search-results-header = Výsledky hledání
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = Zobrazit prázdnou stránku
 startup-prev-session =
     .label = Zobrazit okna a panely z minula
+startup-restore-previous-session =
+    .label = Obnovit předchozí relaci
+    .accesskey = O
 disable-extension =
     .label = Zakázat rozšíření
 home-page-header = Domovská stránka
@@ -300,6 +338,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Nastavení připojení
+network-proxy-connection-description = Konfigurovat připojení aplikace { -brand-short-name } k internetu.
 network-proxy-connection-learn-more = Zjistit více
 network-proxy-connection-settings =
     .label = Nastavení…
@@ -355,10 +394,10 @@ search-bar-shown =
 search-engine-default-header = Výchozí vyhledávací modul
 search-engine-default-desc = Vyberte výchozí vyhledávač pro hledání z adresního řádku nebo vyhledávacího pole.
 search-suggestions-option =
-    .label = Našeptávat návrhy hledání
+    .label = Našeptávat vyhledávání
     .accesskey = n
 search-show-suggestions-url-bar-option =
-    .label = Našeptávat návrhy hledání také v adresním řádku
+    .label = Našeptávat vyhledávání také v adresním řádku
     .accesskey = e
 # This string describes what the user will observe when the system
 # prioritizes search suggestions over browsing history in the results
@@ -366,8 +405,8 @@ search-show-suggestions-url-bar-option =
 # "ahead" refers to location (appearing most proximate to), not time
 # (appearing before).
 search-show-suggestions-above-history-option =
-    .label = Našeptávat návrhy hledání v adresním řádku nad stránkami z historie prohlížení
-search-suggestions-cant-show = Návrhy hledání nebudou v našeptávání adresního řádku uvedeny, protože jste nastavili aplikaci { -brand-short-name }, aby si nikdy nepamatovala historii.
+    .label = Našeptávat vyhledávání v adresním řádku nad stránkami z historie prohlížení
+search-suggestions-cant-show = Návrhy vyhledávání se nebudou adresním řádku zobrazovat, protože jste aplikaci { -brand-short-name } nastavili, aby si nikdy nepamatovala historii.
 search-one-click-header = Vyhledávání jedním klepnutím
 search-one-click-desc = Vyberte další vyhledávače, které se zobrazí v nabídce adresního řádku a vyhledávacího pole.
 search-choose-engine-column =
@@ -490,7 +529,7 @@ sync-device-name-save =
 sync-mobilepromo-single = Připojit další zařízení
 sync-mobilepromo-multi = Spravovat zařízení
 sync-tos-link = Podmínky služby
-sync-fxa-privacy-notice = Zásady ochrany soukromí
+sync-fxa-privacy-notice = Zásady ochrany osobních údajů
 
 ## Privacy Section
 
@@ -543,6 +582,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Pamatovat si historii stránek a stahování
     .accesskey = s
+history-remember-browser-option =
+    .label = Pamatovat si historii stránek a stahování
+    .accesskey = s
 history-remember-search-option =
     .label = Pamatovat si historii hledání a formulářů
     .accesskey = f
@@ -559,6 +601,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cookies a data stránek
+sitedata-total-size-calculating = Výpočet velikosti mezipaměti a dat stránek…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Velikost cookies, dat uložených stránkami a mezipaměti je { $value } { $unit }.
 sitedata-learn-more = Zjistit více
 sitedata-accept-cookies-option =
     .label = Povolit serverům ukládat cookies a data stránek (doporučeno)
@@ -653,6 +700,12 @@ permissions-notification-link = Zjistit více
 permissions-notification-pause =
     .label = Zakázat oznámení do restartu aplikace { -brand-short-name }
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = Zabránit stránkám v automatickém přehrávání médií se zvukem
+    .accesskey = b
+permissions-block-autoplay-media-exceptions =
+    .label = Výjimky…
+    .accesskey = y
 permissions-block-popups =
     .label = Blokovat vyskakovací okna
     .accesskey = B
@@ -674,11 +727,14 @@ permissions-a11y-privacy-link = Zjistit více
 
 collection-header = Sběr a používání dat o aplikaci { -brand-short-name }
 collection-description = Co se týče dat, dáváme vám vždy na výběr. Také sbíráme jen ta data, která nám pomohou aplikaci { -brand-short-name } dále zlepšovat. Před odesíláním osobních dat vždy žádáme o váš souhlas.
-collection-privacy-notice = Zásady ochrany soukromí
+collection-privacy-notice = Zásady ochrany osobních údajů
 collection-health-report =
     .label = Povolit aplikaci { -brand-short-name } odesílat Mozille technická data a data o interakcích
     .accesskey = z
 collection-health-report-link = Zjistit více
+collection-studies =
+    .label = Povolit aplikaci { -brand-short-name } instalovat studie
+collection-studies-link = Zobrazit studie aplikace { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Odesílání dat je zakázáno konfigurací tohoto sestavení

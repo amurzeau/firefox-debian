@@ -73,6 +73,41 @@ should-restart-ok = Berrabiarazi { -brand-short-name } orain
 cancel-no-restart-button = Utzi
 restart-later = Berrabiarazi geroago
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = <img data-l10n-name="icon"/> { $name } hedapenak zure hasiera-orria kontrolatzen du.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = <img data-l10n-name="icon"/> { $name } hedapenak zure fitxa berriaren orria kontrolatzen du.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Hedapen batek (<img data-l10n-name="icon"/> { $name }) zure bilaketa-motor lehenetsia ezarri du.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = <img data-l10n-name="icon"/> { $name } hedapenak edukiontzi-fitxak behar ditu.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = <img data-l10n-name="icon"/> { $name } hedapenak jarraipenaren babesa kontrolatzen du.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = <img data-l10n-name="icon"/> { $name } hedapenak { -brand-short-name } Internetera nola konektatzen den kontrolatzen du.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Hedapena gaitzeko, zoaz <img data-l10n-name="addons-icon"/> Gehigarriak aukerara <img data-l10n-name="menu-icon"/> menuan.
+
 ## Preferences UI Search Results
 
 search-results-header = Bilaketaren emaitzak
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = Erakutsi orri hutsa
 startup-prev-session =
     .label = Berreskuratu azken saioko fitxak eta leihoak
+startup-restore-previous-session =
+    .label = Berreskuratu aurreko saioa
+    .accesskey = B
 disable-extension =
     .label = Desgaitu hedapena
 home-page-header = Hasiera-orria
@@ -297,6 +335,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Sareko proxy-a
+network-proxy-connection-description = Konfiguratu { -brand-short-name } nola konektatzen den Internetera.
 network-proxy-connection-learn-more = Argibide gehiago
 network-proxy-connection-settings =
     .label = Ezarpenak…
@@ -305,6 +344,7 @@ network-proxy-connection-settings =
 ## Home Section
 
 home-new-windows-tabs-header = Leiho eta fitxa berriak
+home-new-windows-tabs-description2 = Aukeratu zer ikusi nahi duzun zure hasiera-orria, leiho berriak eta fitxa berriak irekitzean.
 
 ## Home Section - Home Page Customization
 
@@ -431,6 +471,9 @@ sync-signedin-login-failure = Hasi saioa berriro konektatzeko { $email }
 sync-resend-verification =
     .label = Birbidali egiaztapena
     .accesskey = B
+sync-remove-account =
+    .label = Kendu kontua
+    .accesskey = K
 sync-sign-in =
     .label = Hasi saioa
     .accesskey = H
@@ -492,6 +535,9 @@ privacy-header = Nabigatzailearen pribatutasuna
 ## Privacy Section - Forms
 
 forms-header = Inprimakiak eta pasahitzak
+forms-ask-to-save-logins =
+    .label = Galdetu webguneetako saio-hasierak eta pasahitzak gordetzeko
+    .accesskey = G
 forms-exceptions =
     .label = Salbuespenak…
     .accesskey = n
@@ -525,6 +571,7 @@ history-remember-option-never =
     .label = Ez du historia gogoratuko inoiz
 history-remember-option-custom =
     .label = Ezarpen pertsonalizatuak erabiliko ditu historiarako
+history-remember-description = { -brand-short-name }(e)k zure nabigazio-, deskarga-, inprimaki- eta bilaketa-historia gogoratuko ditu.
 history-dontremember-description = { -brand-short-name }(e)k nabigatze pribatuaren ezarpen berak erabiliko ditu, eta ez du gogoratuko historia webean nabigatzen ari zarenean.
 history-private-browsing-permanent =
     .label = Erabili beti nabigatze pribatuko modua
@@ -532,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Gogoratu nire nabigazioaren eta deskargen historia
     .accesskey = G
+history-remember-browser-option =
+    .label = Gogoratu nabigazioaren eta deskargen historia
+    .accesskey = n
 history-remember-search-option =
     .label = Gogoratu bilaketa- eta inprimaki-historia
     .accesskey = n
@@ -548,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cookieak eta guneetako datuak
+sitedata-total-size-calculating = Gunearen datuen eta cachearen tamaina kalkulatzen…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Gordetako zure cookiek, gunearen datuek eta cacheak une honetan { $value } { $unit } hartzen dute diskoan.
 sitedata-learn-more = Argibide gehiago
 sitedata-accept-cookies-option =
     .label = Onartu webguneetako cookie eta datuak (gomendatua)
@@ -557,6 +612,10 @@ sitedata-block-cookies-option =
     .accesskey = B
 sitedata-keep-until = Mantentze-epea
     .accesskey = M
+sitedata-keep-until-expire =
+    .label = Iraungitzea
+sitedata-keep-until-closed =
+    .label = { -brand-short-name } itxi arte
 sitedata-accept-third-party-desc = Onartu hirugarren guneetako cookie eta datuak
     .accesskey = h
 sitedata-accept-third-party-always-option =
@@ -638,6 +697,12 @@ permissions-notification-link = Argibide gehiago
 permissions-notification-pause =
     .label = Pausatu jakinarazpenak { -brand-short-name } berrabiarazi arte
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = Blokeatu webguneak soinudun multimedia erreproduzitzetik
+    .accesskey = B
+permissions-block-autoplay-media-exceptions =
+    .label = Salbuespenak…
+    .accesskey = S
 permissions-block-popups =
     .label = Blokeatu pop-up leihoak
     .accesskey = B
@@ -664,6 +729,9 @@ collection-health-report =
     .label = Baimendu { -brand-short-name }(r)i datu tekniko eta interakziozkoak { -vendor-short-name }ra bidaltzea
     .accesskey = r
 collection-health-report-link = Argibide gehiago
+collection-studies =
+    .label = Baimendu { -brand-short-name }(e)k esperimentuak instalatu eta exekutatzea
+collection-studies-link = Ikusi { -brand-short-name } esperimentuak
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Datuen berri ematea desgaituta dago eraikitze-konfigurazio honetarako

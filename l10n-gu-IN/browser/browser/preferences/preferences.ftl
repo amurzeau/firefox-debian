@@ -73,6 +73,41 @@ should-restart-ok = હવે { -brand-short-name } પુનઃપ્રાર�
 cancel-no-restart-button = રદ કરો
 restart-later = પછી પુનઃશરૂ કરો
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = એક એક્સ્ટેન્શન, <img data-l10n-name="icon"/> { $name }, તમારા મુખ્ય પેજને નિયંત્રિત કરી રહ્યું છે.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = એક એક્સટેન્શન, <img data-l10n-name="icon"/> { $name }, તમારા નવા ટેબના પૃષ્ઠને નિયંત્રિત કરે છે.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = એક્સ્ટેંશન, <img data-l10n-name="icon"/> { $name }, એ તમારું મૂળભૂત શોધ એંજીન સેટ કર્યું છે.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = એક્સ્ટેંશન, <img data-l10n-name="icon"/> { $name }, કન્ટેઈનર ટેબ્સની જરૂર છે.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = એક્સ્ટેન્શન, <img data-l10n-name="icon"/> { $name }, ટ્રેકિંગ સંરક્ષણને નિયંત્રિત કરી રહ્યું છે.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = એક એક્સ્ટેન્શન, <img data-l10n-name="icon"/> { $name }, નિયંત્રિત કરી રહ્યું છે કે { -brand-short-name } કેવી રીતે ઇન્ટરનેટ સાથે જોડાય છે.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = <img data-l10n-name="menu-icon"/> મેનૂમાં એક્સટેંશન <img data-l10n-name="addons-icon"/> ઍડ-ઑન્સ પર જવા માટે સક્ષમ કરવા.
+
 ## Preferences UI Search Results
 
 search-results-header = શોધ પરિણામ
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = કોરુ પાનું બતાવો
 startup-prev-session =
     .label = છેલ્લા સમયની તમારી વિંડોઝ અને ટેબ્સ બતાવો
+startup-restore-previous-session =
+    .label = પહેલાનાં સત્રને પુન:સંગ્રહો
+    .accesskey = s
 disable-extension =
     .label = એક્સ્ટેંશન અક્ષમ કરો
 home-page-header = મુખ્ય પૃષ્ઠ
@@ -297,6 +335,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = નેટવર્ક પ્રોક્સી
+network-proxy-connection-description = કેવી રીતે { -brand-short-name } ઇન્ટરનેટ સાથે જોડાય છે તે ગોઠવો.
 network-proxy-connection-learn-more = વધુ જાણો
 network-proxy-connection-settings =
     .label = સેટીંગ...
@@ -540,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = મારુ બ્રાઉઝીંગ અને ડાઉનલોડ ઇતિહાસને યાદ રાખો
     .accesskey = b
+history-remember-browser-option =
+    .label = બ્રાઉઝીંગ અને ડાઉનલોડ ઇતિહાસને યાદ રાખો
+    .accesskey = b
 history-remember-search-option =
     .label = શોધ અને ફોર્મ ઇતિહાસ યાદ રાખો
     .accesskey = f
@@ -556,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = કૂકીઝ અને સાઈટ ડેટા
+sitedata-total-size-calculating = સાઇટ ડેટા અને કેશ કદની ગણતરી કરી રહ્યું છે…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = તમારી સંગ્રહિત કૂકીઝ, સાઇટ ડેટા અને કેશ હાલમાં { $value } { $unit } જગ્યા નો ઉપયોગ કરી રહ્યાં છે.
 sitedata-learn-more = વધુ શીખો
 sitedata-accept-cookies-option =
     .label = વેબસાઇટ્સથી કૂકીઝ અને સાઇટ ડેટાને સ્વીકારો (ભલામણ કરેલ).

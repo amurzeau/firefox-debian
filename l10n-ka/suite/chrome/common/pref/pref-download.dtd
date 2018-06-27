@@ -19,11 +19,11 @@
 <!ENTITY saveTo.accesskey               "v">
 <!ENTITY chooseDownloadFolder.label     "დასტის არჩევა…">
 <!ENTITY chooseDownloadFolder.accesskey "C">
-<!ENTITY alwaysAsk.label                "ყოველთვის დამეკითხე ფაილის შენახვას">
+<!ENTITY alwaysAsk.label                "შეკითხვა ყოველ ჯერზე ფაილის შენახვას">
 <!ENTITY alwaysAsk.accesskey            "A">
 
 <!ENTITY downloadHistory.label          "ჩამოტვირთვების ისტორია">
-<!ENTITY removeEntries.label            "ჩამოტვირთვების ჩანაწერთა ამოღება">
+<!ENTITY removeEntries.label            "ჩამოტვირთვების ჩანაწერთა მოცილება">
 <!ENTITY removeEntries.accesskey        "R">
 <!ENTITY whenCompleted.label            "მათი დასრულებისას">
 <!ENTITY whenQuittingApp.label          "&brandShortName; პროგრამის დახურვისას">

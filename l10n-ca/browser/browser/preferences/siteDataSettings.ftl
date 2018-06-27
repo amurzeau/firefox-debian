@@ -7,6 +7,7 @@
 
 site-data-settings-window =
     .title = Gestiona les galetes i les dades dels llocs
+site-data-settings-description = Els llocs web següents emmagatzemen dades i galetes al vostre ordinador. El { -brand-short-name } conserva les dades dels llocs web amb emmagatzematge persistent fins que les suprimiu i suprimeix les dades dels llocs web amb emmagatzematge no persistent a mesura que es necessita espai.
 site-data-search-textbox =
     .placeholder = Cerca llocs web
     .accesskey = r
@@ -27,11 +28,25 @@ site-data-button-cancel =
 site-data-button-save =
     .label = Desa els canvis
     .accesskey = a
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+site-usage-pattern = { $value } { $unit }
+site-usage-persistent = { site-usage-pattern } (Persistent)
+site-data-remove-all =
+    .label = Elimina-ho tot
+    .accesskey = E
+site-data-remove-shown =
+    .label = Suprimeix totes les mostrades
+    .accesskey = e
 
 ## Removing
 
 site-data-removing-window =
     .title = { site-data-removing-header }
+site-data-removing-dialog =
+    .title = { site-data-removing-header }
+    .buttonlabelaccept = Elimina
 site-data-removing-header = S'estan eliminant les galetes i dades dels llocs
 site-data-removing-desc = Si elimineu les galetes i les dades dels llocs, és possible que que es tanqui la sessió dels llocs web. Segur que voleu fer aquests canvis?
 site-data-removing-table = S'eliminaran les galetes i les dades dels següents llocs web

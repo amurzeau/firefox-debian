@@ -73,17 +73,50 @@ should-restart-ok = Genstart { -brand-short-name } nu
 cancel-no-restart-button = Annuller
 restart-later = Genstart senere
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Udvidelsen <img data-l10n-name="icon"/> { $name } kontrollerer din startside.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Udvidelsen <img data-l10n-name="icon"/> { $name } kontrollerer siden Nyt faneblad.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Udvidelsen <img data-l10n-name="icon"/> { $name } har indstillet din standard-søgetjeneste.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Udvidelsen <img data-l10n-name="icon"/> { $name } kræver, at kontekst-faneblade er slået til.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Udvidelsen <img data-l10n-name="icon"/> { $name } kontrollerer beskyttelse mod sporing.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Udvidelsen <img data-l10n-name="icon"/> { $name } kontrollerer, hvordan { -brand-short-name } opretter forbindelse til internettet.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Gå til tilføjelsen <img data-l10n-name="addons-icon"/> i <img data-l10n-name="menu-icon"/>-menuen for at aktivere udvidelsen.
+
 ## Preferences UI Search Results
 
 search-results-header = Søgeresultater
-
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message =
     { PLATFORM() ->
         [windows] Der er ingen resultater for "<span data-l10n-name="query"></span>" i indstillingerne.
        *[other] Der er ingen resultater for "<span data-l10n-name="query"></span>" i indstillingerne.
     }
-
 search-results-help-link = Har du brug for hjælp? Besøg <a data-l10n-name="url">Hjælp til { -brand-short-name }</a>
 
 ## General Section
@@ -110,6 +143,11 @@ startup-blank-page =
     .label = Vis en tom side
 startup-prev-session =
     .label = Vis mine vinduer og faneblade fra sidste gang
+
+startup-restore-previous-session =
+    .label = Gendan forrige session
+    .accesskey = G
+
 disable-extension =
     .label = Deaktiver udvidelse
 home-page-header = Startside:
@@ -297,6 +335,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Netværks-proxy
+network-proxy-connection-description = Indstil hvordan { -brand-short-name } skal oprette forbindelse til internettet.
 network-proxy-connection-learn-more = Læs mere
 network-proxy-connection-settings =
     .label = Indstillinger…
@@ -540,6 +579,11 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Husk min browser- og filhentningshistorik
     .accesskey = b
+
+history-remember-browser-option =
+    .label = Husk min browser- og filhentningshistorik
+    .accesskey = b
+
 history-remember-search-option =
     .label = Husk formular- og søgehistorik
     .accesskey = f
@@ -556,6 +600,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cookies og websteds-data
+sitedata-total-size-calculating = Udregner størrelse på cache og websteds-data…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Dine gemte cookies, websteds-data og cache bruger lige nu { $value } { $unit } diskplads.
 sitedata-learn-more = Læs mere
 sitedata-accept-cookies-option =
     .label = Accepter cookies og websteds-data fra websteder (anbefalet)
@@ -676,6 +725,11 @@ collection-health-report =
     .label = Tillad at { -brand-short-name } indsender tekniske data og data om brug til { -vendor-short-name }
     .accesskey = d
 collection-health-report-link = Læs mere
+
+collection-studies =
+    .label = Tillad at { -brand-short-name } installerer og afvikler studier
+collection-studies-link = Vis { -brand-short-name }-studier
+
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Data-rapportering er deaktiveret for denne build-konfiguration

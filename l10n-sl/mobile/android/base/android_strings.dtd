@@ -28,7 +28,7 @@
 
 <!ENTITY firstrun_tabqueue_title "Povezave">
 <!-- Localization note (firstrun_tabqueue_message): 'Tab queue' is a feature that allows users to queue up or save links from outside of Firefox (without switching apps) - these links will be loaded in Firefox the next time Firefox is opened. -->
-<!ENTITY firstrun_tabqueue_message_off "Vključi čakalno vrsto zavihkov">
+<!ENTITY firstrun_tabqueue_message_off "Vključite čakalno vrsto zavihkov">
 <!ENTITY firstrun_tabqueue_subtext_off "Shranite povezave za poznejšo rabo v &brandShortName;, kadar jih tapnete v drugih aplikacijah.">
 
 <!ENTITY firstrun_tabqueue_message_on "Uspelo je!">
@@ -69,6 +69,15 @@
 <!ENTITY  crash_restart_label "Ponovno zaženi &brandShortName;">
 
 <!ENTITY url_bar_default_text2 "Iskanje ali naslov strani">
+
+<!-- Localization note (url_bar_qrcode_text2) : This text will be
+     heard by non-visual users when the focus is on the QR Code
+     icon in the url bar. -->
+<!ENTITY url_bar_qrcode_text2 "Za iskanje uporabite bralnik QR-kode ali vnesite naslov">
+<!-- Localization note (url_bar_mic_text2) : This text will be
+     heard by non-visual users when the focus is on the Microphone
+     icon in the url bar. -->
+<!ENTITY url_bar_mic_text2 "Za iskanje uporabite mikrofon ali vnesite naslov">
 
 <!ENTITY bookmark "Zaznamek">
 <!ENTITY bookmark_remove "Odstrani zaznamek">
@@ -207,6 +216,7 @@
 <!ENTITY pref_category_advanced_summary3 "Obnavljanje zavihkov, prihranek podatkov, razvojna orodja">
 <!ENTITY pref_category_notifications "Obvestila">
 <!ENTITY pref_category_notifications_summary "Nove možnosti, posodobitve spletnih strani">
+<!ENTITY pref_category_notifications_summary2 "Novosti, nasveti za izdelek">
 <!ENTITY pref_developer_remotedebugging_usb "Oddaljeno razhroščevanje USB">
 <!ENTITY pref_developer_remotedebugging_wifi "Oddaljeno razhroščevanje Wi-Fi">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Razhroščevanje Wi-Fi zahteva, da ima vaša naprava nameščeno aplikacijo za branje QR-kod.">
@@ -543,7 +553,7 @@
 <!ENTITY pref_compact_tabs_summary2 "Razvrsti zavihke v dva stolpca v pokončnem načinu">
 
 <!-- Localization note (page_removed): This string appears in a toast message when
-     any page is removed frome about:home. This includes pages that are in history,
+     any page is removed from about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "Stran odstranjena">
 <!ENTITY folder_removed "Mapa odstranjena">
@@ -761,7 +771,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      "Last synced" is one of the user's other Sync clients, typically Firefox on
      their desktop or laptop.-->
 <!ENTITY remote_tabs_last_synced "Zadnja sinhronizacija: &formatS;">
-<!-- Localization note: Used when the sync has not happend yet, showed in place of a date -->
+<!-- Localization note: Used when the sync has not happened yet, showed in place of a date -->
 <!ENTITY remote_tabs_never_synced "Zadnja sinhronizacija: nikoli">
 
 <!-- LOCALIZATION NOTE (intent_uri_private_browsing_prompt): This string will

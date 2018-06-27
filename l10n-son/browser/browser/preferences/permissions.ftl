@@ -24,3 +24,47 @@ permissions-button-cancel =
 permissions-button-ok =
     .label = Barmawey gaabu
     .accesskey = g
+permissions-capabilities-allow =
+    .label = Noo fondo
+permissions-capabilities-block =
+    .label = Gagay
+
+## Invalid Hostname Dialog
+
+permissions-invalid-uri-title = Zunbudoo maa laalo ka damandi
+permissions-invalid-uri-label = Taare war ma zunbudoo maa boryo dam
+
+## Exceptions - Tracking Protection
+
+permissions-exceptions-tracking-protection-window =
+    .title = Hasarawey - Ganayan jejebu
+    .style = { permissions-window.style }
+
+## Exceptions - Cookies
+
+
+## Exceptions - Pop-ups
+
+permissions-exceptions-popup-desc = War ga hin ka tabatandi Interneti nungey kaŋ ga biiboŋ bata zanfuney feeri. Nungu kaŋ war ga bag'a aderesu alhakiikaa hantum, de wa Noo fondo naagu.
+
+## Exceptions - Saved Logins
+
+permissions-exceptions-saved-logins-window =
+    .title = Hasarawey - huruyan gaabuntey
+    .style = { permissions-window.style }
+
+## Exceptions - Add-ons
+
+permissions-exceptions-addons-desc = War ga hin ka tabatandi Interneti nungey kaŋ ga duu fondo ka tontoney sinji. Nungoo kaŋ war ga bag'a aderesu alhakiikaa hantum, de wa Noo fondo naagu.
+
+## Site Permissions - Notifications
+
+
+## Site Permissions - Location
+
+
+## Site Permissions - Camera
+
+
+## Site Permissions - Microphone
+

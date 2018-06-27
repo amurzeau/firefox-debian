@@ -73,6 +73,41 @@ should-restart-ok = { -brand-short-name } no opnij starte
 cancel-no-restart-button = Annulearje
 restart-later = Letter opnij starte
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = In útwreiding, <img data-l10n-name="icon"/> { $name }, beheart jo startside.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = In útwreiding, <img data-l10n-name="icon"/> { $name }, beheart jo Nij-ljepblêd-side.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = In útwreiding, <img data-l10n-name="icon"/> { $name }, hat jo standertsykmasine ynsteld.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = In útwreiding, <img data-l10n-name="icon"/> { $name }, fereasket kontenerljepblêden.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = In útwreiding, <img data-l10n-name="icon"/> { $name }, hat behear oer beskerming tsjin folgjen.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = De útwreiding <img data-l10n-name="icon"/> { $name } bepaalt hoe't { -brand-short-name } ferbining makket mei it ynternet.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Gean nei <img data-l10n-name="addons-icon"/> Add-ons yn it menu <img data-l10n-name="menu-icon"/> om de útwreiding yn te skeakeljen.
+
 ## Preferences UI Search Results
 
 search-results-header = Sykresultaten
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = In lege side toane
 startup-prev-session =
     .label = Myn finsters en ljepblêden fan de foarige kear toane
+startup-restore-previous-session =
+    .label = Foargeande sesje werom bringe
+    .accesskey = F
 disable-extension =
     .label = Utwreiding útskeakelje
 home-page-header = Begjinside
@@ -297,6 +335,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Netwurkproxy
+network-proxy-connection-description = Konfigurearje hoe { -brand-short-name } ferbining makket mei it ynternet.
 network-proxy-connection-learn-more = Mear ynfo
 network-proxy-connection-settings =
     .label = Ynstellingen…
@@ -540,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Myn navigaasje- en downloadskiednis ûnthâlde
     .accesskey = a
+history-remember-browser-option =
+    .label = Navigaasje- en downloadskiednis ûnthâlde
+    .accesskey = N
 history-remember-search-option =
     .label = Syk- en formulierskiednis ûnthâlde
     .accesskey = S
@@ -556,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cookies en websitegegevens
+sitedata-total-size-calculating = Grutte fan websitegegevens en buffer berekkenje…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Jo bewarre cookies, websitegegevens en buffer brûke op dit stuit { $value } { $unit } oan skiifromte.
 sitedata-learn-more = Mear ynfo
 sitedata-accept-cookies-option =
     .label = Cookies en websitegegevens fan websites akseptearje (oanrekommandearre)
@@ -650,6 +697,12 @@ permissions-notification-link = Mear ynfo
 permissions-notification-pause =
     .label = Notifikaasjes pauzearje oant { -brand-short-name } opnij start wurdt
     .accesskey = N
+permissions-block-autoplay-media =
+    .label = Automatysk ôfspyljen fan media mei lûd troch websites blokkearje
+    .accesskey = s
+permissions-block-autoplay-media-exceptions =
+    .label = Utsûnderingen…
+    .accesskey = U
 permissions-block-popups =
     .label = Pop-upfinsters blokkearje
     .accesskey = P
@@ -676,6 +729,9 @@ collection-health-report =
     .label = Tastean dat { -brand-short-name } technyske en brûksgegevens ferstjoert nei { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Mear ynfo
+collection-studies =
+    .label = { -brand-short-name } tastean om ûndersiken te ynstallearjen en út te fieren
+collection-studies-link = { -brand-short-name }-ûndersiken werjaan
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Gegevensrapporten binne foar dizze build-konfiguraasje útskeakele

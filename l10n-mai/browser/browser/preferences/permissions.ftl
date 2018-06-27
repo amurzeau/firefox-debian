@@ -24,3 +24,41 @@ permissions-button-cancel =
 permissions-button-ok =
     .label = परिवर्तन सहेजू
     .accesskey = प
+permissions-capabilities-allow =
+    .label = अनुमति दिअ
+permissions-capabilities-block =
+    .label = रोकू
+
+## Invalid Hostname Dialog
+
+permissions-invalid-uri-title = अवैध मेजबाननाम देल गेल
+permissions-invalid-uri-label = एकटा वैध मेजबाननाम डालू
+
+## Exceptions - Tracking Protection
+
+
+## Exceptions - Cookies
+
+
+## Exceptions - Pop-ups
+
+permissions-exceptions-popup-desc = कओनसँ वेबसाइटक पापअप विंडो खुलत ई अहाँक हाथमे अछि. जकरा अहाँ ई अनुमति देब चाहैत छी हुनकर सही वेब पता लिखू आओर 'अनुमति दिअ' पर क्लिक करू .
+
+## Exceptions - Saved Logins
+
+
+## Exceptions - Add-ons
+
+permissions-exceptions-addons-desc = कओनसँ वेबसाइट सहयुक्तिक संस्थापन करत ई अहाँक हाथमे अछि. जकरा अहाँ ई अनुमति देब चाहैत छी हुनकर सही वेब पता लिखू आओर 'अनुमति दिअ' पर क्लिक करू .
+
+## Site Permissions - Notifications
+
+
+## Site Permissions - Location
+
+
+## Site Permissions - Camera
+
+
+## Site Permissions - Microphone
+

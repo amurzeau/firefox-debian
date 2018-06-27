@@ -73,6 +73,41 @@ should-restart-ok = Start { -brand-short-name } på nytt nå
 cancel-no-restart-button = Avbryt
 restart-later = Start på nytt senere
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = En utvidelse, <img data-l10n-name="icon"/> { $name }, styrer din startside.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = En utvidelse, <img data-l10n-name="icon"/> { $name }, styrer din ny fane-side.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = En utvidelse, <img data-l10n-name="icon"/> { $name }, har endret din standardsøkemotor.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = En utvidelse, <img data-l10n-name="icon"/> { $name }, krever innholdsfaner.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = En utvidelse, <img data-l10n-name="icon"/> { $name }, styrer sporingsbeskyttelse.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = En utvidelse, <img data-l10n-name="icon"/> { $name }, styrer hvordan { -brand-short-name } kobler seg til internett.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = For å aktivere utvidelsen, gå til <img data-l10n-name="addons-icon"/> Utvidelser i menyen <img data-l10n-name="menu-icon"/>.
+
 ## Preferences UI Search Results
 
 search-results-header = Søkeresultat
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = Vis tom side
 startup-prev-session =
     .label = Vis vinduer og faner som ble brukt sist
+startup-restore-previous-session =
+    .label = Gjenopprett forrige programøkt
+    .accesskey = r
 disable-extension =
     .label = Slå av utvidelse
 home-page-header = Startside
@@ -297,6 +335,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Nettverksproxy
+network-proxy-connection-description = Konfigurer hvordan { -brand-short-name } kobler seg til internett.
 network-proxy-connection-learn-more = Les mer
 network-proxy-connection-settings =
     .label = Innstillinger …
@@ -540,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Husk nettleser- og nedlastingshistorikk
     .accesskey = d
+history-remember-browser-option =
+    .label = Husk nettleser- og nedlastingshistorikk
+    .accesskey = n
 history-remember-search-option =
     .label = Husk søke- og skjemahistorikk
     .accesskey = ø
@@ -556,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Infokapsler og nettstedsdata
+sitedata-total-size-calculating = Regner ut størrelse på nettstedsdata og hurtiglager…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Dine lagrede infokapsler, nettstedsdata og hurtiglager bruker for øyeblikket { $value } { $unit } diskplass.
 sitedata-learn-more = Les mer
 sitedata-accept-cookies-option =
     .label = Tillat infokapsler og nettsidedata fra nettsteder (anbefalt)
@@ -650,6 +697,12 @@ permissions-notification-link = Les mer
 permissions-notification-pause =
     .label = Sett varsler på pause til { -brand-short-name } starter på nytt
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = Blokker nettsteder fra automatisk å spille av media med lyd
+    .accesskey = B
+permissions-block-autoplay-media-exceptions =
+    .label = Unntak…
+    .accesskey = U
 permissions-block-popups =
     .label = Blokker sprettoppvinduer
     .accesskey = B
@@ -676,6 +729,9 @@ collection-health-report =
     .label = Tillat { -brand-short-name } å sende teknisk- og interaksjonsdata til { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Les mer
+collection-studies =
+    .label = Tillat { -brand-short-name } å installere og kjøre studier
+collection-studies-link = Vis { -brand-short-name }-studier
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Datarapportering er deaktivert for denne byggekonfigurasjonen

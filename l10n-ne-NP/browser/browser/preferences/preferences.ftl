@@ -66,12 +66,35 @@ close-button =
 
 ## Browser Restart Dialog
 
-feature-enable-requires-restart = { -brand-short-name } यो विशेषता चलाउन पुनः सुरु गर्नु पर्ने हुन्छ ।
-feature-disable-requires-restart = { -brand-short-name } यो विशेषता हटाउन पुन: सुरू गर्नु पर्ने हुन्छ।
-should-restart-title = { -brand-short-name } पुनः सुरु गर्नुहोस्
-should-restart-ok = { -brand-short-name } तत्काल पुन सुचारु गर्नुहोस
+feature-enable-requires-restart = { -brand-short-name } यो विशेषता चलाउन पुनःसुरु गर्नु पर्ने हुन्छ ।
+feature-disable-requires-restart = { -brand-short-name } यो विशेषता हटाउन पुनःसुरु गर्नु पर्ने हुन्छ।
+should-restart-title = { -brand-short-name } पुनःसुरु गर्नुहोस्
+should-restart-ok = { -brand-short-name } तत्काल पुनःसुरु गर्नुहोस्
 cancel-no-restart-button = रद्द गर्नुहोस्
-restart-later = केहि समयपछि पुन सुचारु गर्नुहोस
+restart-later = केहि समयपछि पुनःसुरु गर्नुहोस्
+
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = यो एक्सटेन्सन, <img data-l10n-name="icon"/> { $name }, ले तपाईंको गृहपृष्ठ नियन्त्रण गरिरहेको छ।
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = यो एक्सटेन्सन, <img data-l10n-name="icon"/> { $name }, ले तपाईंको नयाँ ट्याब पेज नियन्त्रण गरिरहेको छ।
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = यो एक्सटेन्सन, <img data-l10n-name="icon"/> { $name } , लाई कन्टेनर ट्याबहरू चाहिन्छ ।
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = यो एक्सटेन्सन, <img data-l10n-name="icon"/> { $name }, ले ट्रयाकिङ्ग सुरक्षा नियन्त्रण गरिरहेको छ।
 
 ## Preferences UI Search Results
 
@@ -509,12 +532,19 @@ history-clear-on-close-settings =
 sitedata-learn-more = अझ जान्नुहोस्
 sitedata-keep-until = सम्म राख्नुहोस्
     .accesskey = u
+sitedata-keep-until-expire =
+    .label = तिनीहरूको समय अवधि सकियो
+sitedata-keep-until-closed =
+    .label = { -brand-short-name } बन्द गरियो
 sitedata-accept-third-party-always-option =
     .label = सधैँ
 sitedata-accept-third-party-visited-option =
     .label = पहिले हेरिएकोबाट
 sitedata-accept-third-party-never-option =
     .label = कहिले पनि होइन
+sitedata-clear =
+    .label = डेटा खालीगर्नुहोस्…
+    .accesskey = l
 sitedata-cookies-exceptions =
     .label = अपवादहरू...
     .accesskey = E
@@ -578,6 +608,9 @@ permissions-notification-settings =
     .label = सेटिङ्गहरू…
     .accesskey = t
 permissions-notification-link = अझै जान्नुहोस्
+permissions-notification-pause =
+    .label = { -brand-short-name } पुनःसुरु नभएसम्म सूचनाहरू रोक्नुहोस्
+    .accesskey = n
 permissions-block-popups =
     .label = पप-अप सञ्झ्यालहरूलाई अवरुद्द गर्नुहोस्
     .accesskey = B
@@ -607,6 +640,7 @@ collection-health-report-link = अझ जान्नुहोस्
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = यस निर्माण कन्फिगरेसनको लागि डाटा रिपोर्टिङ अक्षम गरिएको छ
+collection-browser-errors-link = अझ जान्नुहोस्
 collection-backlogged-crash-reports-link = अझ जान्नुहोस्
 
 ## Privacy Section - Security

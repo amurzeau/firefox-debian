@@ -6,7 +6,6 @@
 #include "nsAppRunner.h"
 #include "nsToolkitCompsCID.h"
 #include "nsXREDirProvider.h"
-#include "mozilla/AddonManagerStartup.h"
 
 #include "jsapi.h"
 #include "xpcpublic.h"
@@ -868,8 +867,6 @@ nsXREDirProvider::GetFilesInternal(const char* aProperty,
 
     LoadDirsIntoArray(mAppBundleDirectories,
                       kAppendNothing, directories);
-    LoadDirsIntoArray(AddonManagerStartup::GetSingleton().ExtensionPaths(),
-                      kAppendNothing, directories);
 
     rv = NS_NewArrayEnumerator(aResult, directories);
   }
@@ -895,9 +892,6 @@ nsXREDirProvider::GetFilesInternal(const char* aProperty,
     LoadDirsIntoArray(mAppBundleDirectories,
                       kAppendChromeDir,
                       directories);
-    LoadDirsIntoArray(AddonManagerStartup::GetSingleton().ExtensionPaths(),
-                      kAppendChromeDir,
-                      directories);
 
     rv = NS_NewArrayEnumerator(aResult, directories);
   }
@@ -918,9 +912,6 @@ nsXREDirProvider::GetFilesInternal(const char* aProperty,
     // The root dirserviceprovider does quite a bit for us: we're mainly
     // interested in xulapp and extension-provided plugins.
     LoadDirsIntoArray(mAppBundleDirectories,
-                      kAppendPlugins,
-                      directories);
-    LoadDirsIntoArray(AddonManagerStartup::GetSingleton().ExtensionPaths(),
                       kAppendPlugins,
                       directories);
 

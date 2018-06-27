@@ -37,9 +37,17 @@ search-input-box =
             [windows] پیدا‌کردن در گزینه‌ها
            *[other] پیدا‌کردن در ترجیحات
         }
+policies-notice =
+    { PLATFORM() ->
+        [windows] سازمان شما امکان تغییر برخی از گزینه‌ها را غیرفعال کرده است.
+       *[other] سازمان شما امکان تغییر برخی از ترجیحات را غیرفعال کرده است.
+    }
 pane-general-title = عمومی
 category-general =
     .tooltiptext = { pane-general-title }
+pane-home-title = خانه
+category-home =
+    .tooltiptext = { pane-home-title }
 pane-search-title = جست‌وجو
 category-search =
     .tooltiptext = { pane-search-title }
@@ -62,7 +70,43 @@ feature-enable-requires-restart = جهت فعال کردن این امکان، {
 feature-disable-requires-restart = شما باید برای غیرفعال کردن این امکان { -brand-short-name } را مجددا راه‌اندازی کنید.
 should-restart-title = راه‌اندازی مجدد { -brand-short-name }
 should-restart-ok = هم‌اکنون { -brand-short-name } راه‌اندازی مجدد شود
+cancel-no-restart-button = لغو
 restart-later = بعداْ راه‌اندازی مجدد شود
+
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = یک افزودنی، <img data-l10n-name="icon"/>{ $name }، در کنترل صفحهٔ خانگی شماست.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = یک افزودنی، <img data-l10n-name="icon"/>{ $name }، در کنترل صفحهٔ زبانه‌ٔ جدید شماست.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = یک افزایه،‌<img data-l10n-name="icon"/> { $name }،‌ بر روی موتور پیش فرض شما تنظیم شده است.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = یک افزونه، <img data-l10n-name="icon"/> { $name }،‌نیازمند نگه‌دارنده زبانه‌ها است.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = یک افزونه، <img data-l10n-name="icon"/> { $name }، در حال کنترلِ سیستم محافظت در برابر ردگیری است.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = یک افزودنی، <img data-l10n-name="icon"/>{ $name }، در حال کنترل نحوهٔ اتصال { -brand-short-name } به اینترنت است.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = برای فعال کردن این افزایه به افزونه <img data-l10n-name="addons-icon"/> در فهرست <img data-l10n-name="menu-icon"/> مراجعه کنید.
 
 ## Preferences UI Search Results
 
@@ -101,6 +145,9 @@ startup-blank-page =
     .label = نمایش یک صفحه خالی
 startup-prev-session =
     .label = نمایش صفحات و زبانه‌های از آخرین دفعه
+startup-restore-previous-session =
+    .label = بازنشانی نشست قبلی
+    .accesskey = s
 disable-extension =
     .label = غیرفعال سازی افزونه
 home-page-header = صفحه خانگی
@@ -288,15 +335,34 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = شبکه پراکسی
+network-proxy-connection-description = نحوهٔ اتصال { -brand-short-name } به اینترنت را پیکربندی کنید.
+network-proxy-connection-learn-more = اطلاعات بیشتر
 network-proxy-connection-settings =
     .label = تنظیمات…
     .accesskey = ت
 
 ## Home Section
 
+home-new-windows-tabs-header = پنجره‌ها و زبانه‌های جدید
+home-new-windows-tabs-description2 = انتخاب کنید چه چیزی در زمان باز کردن صفحهٔ خانگی، پنجره‌ها جدید و زبانه‌های جدید می‌بینید.
 
 ## Home Section - Home Page Customization
 
+home-homepage-mode-label = صفحهٔ خانگی و پنجره‌های جدید
+home-newtabs-mode-label = زبانه‌های جدید
+home-restore-defaults =
+    .label = بازنشانی پیش‌فرض‌ها
+    .accesskey = R
+# "Firefox" should be treated as a brand and kept in English,
+# while "Home" and "(Default)" can be localized.
+home-mode-choice-default =
+    .label = خانهٔ فایرفاکس (پیش‌فرض)
+home-mode-choice-custom =
+    .label = آدرس‌های سفارشی…
+home-mode-choice-blank =
+    .label = صفحهٔ خالی
+home-homepage-custom-url =
+    .placeholder = جای‌گذاری یک آدرس…
 # This string has a special case for '1' and [other] (default). If necessary for
 # your language, you can add {$tabCount} to your translations and use the
 # standard CLDR forms, or only use the form for [other] if both strings should
@@ -405,6 +471,9 @@ sync-signedin-login-failure = لطفا جهت ارتباط مجدد وارد ش�
 sync-resend-verification =
     .label = ارسال مجدد تاییدیه
     .accesskey = d
+sync-remove-account =
+    .label = حذف حساب
+    .accesskey = R
 sync-sign-in =
     .label = ورود
     .accesskey = و
@@ -454,6 +523,8 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = ذخیره
     .accesskey = ذ
+sync-mobilepromo-single = اتصالِ یک دستگاه دیگر
+sync-mobilepromo-multi = مدیریت دستگاه‌ها
 sync-tos-link = شرایط ارائهٔ خدمات
 sync-fxa-privacy-notice = نکات حفظ حریم خصوصی
 
@@ -464,6 +535,9 @@ privacy-header = حریم خصوصی مرورگر
 ## Privacy Section - Forms
 
 forms-header = فرم‌ها و گذرواژه‌ها
+forms-ask-to-save-logins =
+    .label = در مورد ذخیره کردن نام‌کاربری و گذرواژه‌ها برای پایگاه‌ها سوال کن
+    .accesskey = r
 forms-exceptions =
     .label = استثناها…
     .accesskey = ث
@@ -497,6 +571,7 @@ history-remember-option-never =
     .label = هرگز تاریخچه را به خاطر نمی‌سپارد
 history-remember-option-custom =
     .label = تنظیمات خاصی را برای تاریخچه استفاده می‌کند
+history-remember-description = { -brand-short-name } سابقهٔ مرور، دریافت‌ها، اطلاعات فرم‌ها و تاریخچهٔ جست‌وجوهای شما را به خاطر خواهد آورد.
 history-dontremember-description = { -brand-short-name } تنظیمات حالت مرور ناشناس را استفاده خواهد کرد، و هیچ تاریخچه‌ای از مرور شما در وب نگه نخواهد داشت.
 history-private-browsing-permanent =
     .label = همیشه از حالت  مرور خصوصی استفاده کن
@@ -504,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = مرور و بارگذاری های مرا به خاطر بسپار
     .accesskey = خ
+history-remember-browser-option =
+    .label = ذخیرهٔ تاریخچهٔ دریافت‌ها و مرور
+    .accesskey = b
 history-remember-search-option =
     .label = اطلاعاتی که در فرم‌های صفحات وب و نوار جست‌وجو وارد می‌شوند به خاطر سپرده شود
     .accesskey = ط
@@ -513,13 +591,33 @@ history-clear-on-close-option =
 history-clear-on-close-settings =
     .label = تنظیمات
     .accesskey = ت
+history-clear-button =
+    .label = پاک کردن تاریخچه…
+    .accesskey = s
 
 ## Privacy Section - Site Data
 
 sitedata-header = کوکی‌ها و اطلاعات وب سایت
+sitedata-total-size-calculating = در حال محاسبهٔ اطلاعات پایگاه‌ها و اندازهٔ حافظهٔ نهان…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = کوکی‌ها، اطلاعات پایگاه‌ها و حافظهٔ نهانِ ذخیره شده در حال حاضر { $value } { $unit } از فضای دیسک شما استفاده می‌کنند.
 sitedata-learn-more = بیشتر بدانید
+sitedata-accept-cookies-option =
+    .label = پذیرفتن کوکی‌ها و اطلاعات از پایگاه‌ها (توصیه شده)
+    .accesskey = A
+sitedata-block-cookies-option =
+    .label = مسدود کردن کوکی‌ها و اطلاعات پایگاه‌ها (ممکن است باعث کار نکردن پایگاه‌ها بشود)
+    .accesskey = B
 sitedata-keep-until = نگهداری شوند تا
     .accesskey = ن
+sitedata-keep-until-expire =
+    .label = منقضی می‌شوند
+sitedata-keep-until-closed =
+    .label = { -brand-short-name } بسته است
+sitedata-accept-third-party-desc = پذیرفتن کوکی‌ها و اطلاعات پایگاه‌های ثالث
+    .accesskey = y
 sitedata-accept-third-party-always-option =
     .label = همیشه
 sitedata-accept-third-party-visited-option =
@@ -599,6 +697,12 @@ permissions-notification-link = بیشتر بدانید
 permissions-notification-pause =
     .label = توقف هوشدار تا زمانی که { -brand-short-name } مجدد راه اندازی شود
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = مسدود کردن پایگاه‌ها برای پخش خودکار رسانه و صوت
+    .accesskey = B
+permissions-block-autoplay-media-exceptions =
+    .label = استثاناها…
+    .accesskey = E
 permissions-block-popups =
     .label = مسدود کردن پنجره‌های بازشو
     .accesskey = م
@@ -622,9 +726,12 @@ collection-header = ذخیره اطلاعات و استفاده { -brand-short-n
 collection-description = ما تمام تلاش خود را می‌کنیم که به شما حق انتخاب بدهیم و تنها اطلاعاتی را جمع‌آوری کنیم که برای بهبود { -brand-short-name } برای همه، کمک کند. ما همیشه قبل از دریافت اطلاعات شخصی از شما اجازه خواهیم گرفت.
 collection-privacy-notice = نکات حفظ حریم خصوصی
 collection-health-report =
-    .label = { -brand-short-name } اجازه دهید تا اطلاعات موارد فنی وفعال و انفعالات رابرای موزیلا ارسال کند
+    .label = اجازه دادن به { -brand-short-name } برای ارسال اطلاعاتِ فنی و رفتاری به { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = بیشتر بدانید
+collection-studies =
+    .label = اجازه دادن به { -brand-short-name } برای نصب و اجرای studyها
+collection-studies-link = نمایش studyهای { -brand-short-name } 
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = گزارش کردن داده‌ها برای این پیکربندی ساخته شده غیرفعال شده است

@@ -133,12 +133,14 @@
 <!ENTITY calendar.task.filter.current.accesskey     "b">
 
 <!ENTITY calendar.task-details.title.label           "titl">
+<!ENTITY calendar.task-details.organizer.label       "a-berzh">
 <!ENTITY calendar.task-details.priority.label        "tevet">
 <!ENTITY calendar.task-details.priority.low.label    "izel">
 <!ENTITY calendar.task-details.priority.normal.label "reizh">
 <!ENTITY calendar.task-details.priority.high.label   "uhel">
 <!ENTITY calendar.task-details.status.label          "stad">
 <!ENTITY calendar.task-details.category.label        "rummad">
+<!ENTITY calendar.task-details.repeat.label          "adlavar">
 <!ENTITY calendar.task-details.attachments.label     "stagadennoù">
 <!ENTITY calendar.task-details.start.label           "deiziad deraouiñ">
 <!ENTITY calendar.task-details.due.label             "deiziad dibenn">
@@ -170,20 +172,56 @@
 <!ENTITY calendar.context.copyevent.accesskey         "E">
 <!ENTITY calendar.context.pasteevent.label            "Pegañ">
 <!ENTITY calendar.context.pasteevent.accesskey        "e">
-<!ENTITY calendar.context.button.label                "Panell hiziv" >
-<!ENTITY calendar.context.button.accesskey            "h" >
-<!ENTITY calendar.context.attendance.menu.label       "Perzhiadur" >
-<!ENTITY calendar.context.attendance.menu.accesskey   "a" >
-<!ENTITY calendar.context.attendance.occurrence.label "Ar reveziadenn-mañ" >
-<!ENTITY calendar.context.attendance.all.label        "An holl reveziadennoù" >
+<!ENTITY calendar.context.button.label                "Panell hiziv">
+<!ENTITY calendar.context.button.accesskey            "h">
+
+<!ENTITY calendar.context.attendance.menu.label                 "Perzhiadur">
+<!ENTITY calendar.context.attendance.menu.accesskey             "a">
+<!ENTITY calendar.context.attendance.occurrence.label           "Ar reveziadenn-mañ">
+<!ENTITY calendar.context.attendance.all2.label                 "Heuliadennoù klok">
+<!ENTITY calendar.context.attendance.send.label                 "Kas un notennaouenn bremañ">
+<!ENTITY calendar.context.attendance.send.accesskey             "S">
+<!ENTITY calendar.context.attendance.dontsend.label             "Chom hep kas an notennaouenn">
+<!ENTITY calendar.context.attendance.dontsend.accesskey         "D">
+
+<!ENTITY calendar.context.attendance.occ.accepted.accesskey     "A">
+<!ENTITY calendar.context.attendance.occ.accepted.label         "Asantet">
+<!ENTITY calendar.context.attendance.occ.tentative.accesskey    "y">
+<!ENTITY calendar.context.attendance.occ.tentative.label        "Asantet evit ar mare">
+<!ENTITY calendar.context.attendance.occ.declined.accesskey     "c">
+<!ENTITY calendar.context.attendance.occ.declined.label         "Nac'het">
+<!ENTITY calendar.context.attendance.occ.delegated.accesskey    "g">
+<!ENTITY calendar.context.attendance.occ.delegated.label        "Dileuriadet">
+<!ENTITY calendar.context.attendance.occ.needsaction.accesskey  "S">
+<!ENTITY calendar.context.attendance.occ.needsaction.label      "Goulenn a ra un ober c'hoazh">
+<!ENTITY calendar.context.attendance.occ.inprogress.accesskey   "I">
+<!ENTITY calendar.context.attendance.occ.inprogress.label       "War ober">
+<!ENTITY calendar.context.attendance.occ.completed.accesskey    "C">
+<!ENTITY calendar.context.attendance.occ.completed.label        "Klokaet">
+
+<!ENTITY calendar.context.attendance.all.accepted.accesskey     "e">
+<!ENTITY calendar.context.attendance.all.accepted.label         "Asantet">
+<!ENTITY calendar.context.attendance.all.tentative.accesskey    "v">
+<!ENTITY calendar.context.attendance.all.tentative.label        "Asantet evit ar mare">
+<!ENTITY calendar.context.attendance.all.declined.accesskey     "d">
+<!ENTITY calendar.context.attendance.all.declined.label         "Nac'het">
+<!ENTITY calendar.context.attendance.all.delegated.accesskey    "l">
+<!ENTITY calendar.context.attendance.all.delegated.label        "Dileuriet">
+<!ENTITY calendar.context.attendance.all.needsaction.accesskey  "l">
+<!ENTITY calendar.context.attendance.all.needsaction.label      "Goulenn a ra un ober c'hoazh">
+<!ENTITY calendar.context.attendance.all.inprogress.accesskey   "p">
+<!ENTITY calendar.context.attendance.all.inprogress.label       "War ober">
+<!ENTITY calendar.context.attendance.all.completed.accesskey    "m">
+<!ENTITY calendar.context.attendance.all.completed.label        "Klokaet">
 
 <!-- Task Context Menu -->
 <!ENTITY calendar.context.progress.label              "Araokadur">
 <!ENTITY calendar.context.progress.accesskey          "A">
 <!ENTITY calendar.context.priority.label              "Tevet">
 <!ENTITY calendar.context.priority.accesskey          "T">
+<!ENTITY calendar.context.postpone.accesskey          "s">
 
-<!--=percent sign-->
+<!ENTITY percnt "&#38;#37;" ><!--=percent sign-->
 
 <!ENTITY calendar.context.markcompleted.label     "Merkañ klokaet">
 <!ENTITY calendar.context.markcompleted.accesskey "k">
@@ -241,6 +279,8 @@
 <!ENTITY calendar.context.unsubscribeserver.accesskey  "g">
 <!ENTITY calendar.context.synccalendars.label          "Goubredañ deiziataerioù">
 <!ENTITY calendar.context.synccalendars.accesskey      "b">
+<!ENTITY calendar.context.publish.label                "Embann an deiziataer…">
+<!ENTITY calendar.context.publish.accesskey            "b">
 <!ENTITY calendar.context.export.label                 "Ezporzhiañ deiziataerioù...">
 <!ENTITY calendar.context.export.accesskey             "z">
 <!ENTITY calendar.context.properties.label             "Perzhioù">
@@ -248,9 +288,11 @@
 
 <!-- LOCALIZATION NOTE (calendar.context.showcalendar.accesskey)
      This is the access key used for the showCalendar string -->
+<!ENTITY calendar.context.showcalendar.accesskey      "h">
 
 <!-- LOCALIZATION NOTE (calendar.context.hidecalendar.accesskey)
      This is the access key used for the hideCalendar string -->
+<!ENTITY calendar.context.hidecalendar.accesskey      "H">
 
 <!-- LOCALIZATION NOTE (calendar.context.showonly.accesskey)
      This is the access key used for the showOnlyCalendar string -->
@@ -260,6 +302,7 @@
 
 <!ENTITY calendar.context.convertmenu.label              "Amdreiñ da">
 <!ENTITY calendar.context.convertmenu.accesskey.mail     "A">
+<!ENTITY calendar.context.convertmenu.accesskey.calendar "v">
 <!ENTITY calendar.context.convertmenu.event.label        "Darvoud...">
 <!ENTITY calendar.context.convertmenu.event.accesskey    "D">
 <!ENTITY calendar.context.convertmenu.message.label      "Kemennadenn...">
@@ -267,6 +310,8 @@
 <!ENTITY calendar.context.convertmenu.task.label         "Trevell...">
 <!ENTITY calendar.context.convertmenu.task.accesskey     "T">
 
+<!ENTITY calendar.tasks.view.minimonth.label           "Mini-Miz">
+<!ENTITY calendar.tasks.view.minimonth.accesskey       "M">
 
 <!ENTITY calendar.tasks.view.calendarlist.label        "Listenn deiziataer">
 <!ENTITY calendar.tasks.view.calendarlist.accesskey    "L">

@@ -8,6 +8,8 @@ languages-window =
 languages-close-key =
     .key = w
 languages-description = Potbuk me kakube kare mogo kikelo i leb makato acel. Yer leb me yaro potbuk magi, kit ma imito
+languages-customize-spoof-english =
+    .label = Peny pi potbuk me kakube ma ii leb muno pi mung me lamal
 languages-customize-moveup =
     .label = Kob Malo
     .accesskey = M
@@ -22,3 +24,15 @@ languages-customize-select-language =
 languages-customize-add =
     .label = Med
     .accesskey = M
+# The pattern used to generate strings presented to the user in the
+# locale selection list.
+#
+# Example:
+#   Icelandic [is]
+#   Spanish (Chile) [es-CL]
+#
+# Variables:
+#   $locale (String) - A name of the locale (for example: "Icelandic", "Spanish (Chile)")
+#   $code (String) - Locale code of the locale (for example: "is", "es-CL")
+languages-code-format =
+    .label = { $locale }  [{ $code }]

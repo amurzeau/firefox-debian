@@ -73,6 +73,41 @@ should-restart-ok = Käynnistä { -brand-short-name } uudestaan nyt
 cancel-no-restart-button = Peruuta
 restart-later = Käynnistä uudestaan myöhemmin
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Laajennus, <img data-l10n-name="icon"/> { $name }, hallitsee aloitussivua.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Laajennus, <img data-l10n-name="icon"/> { $name }, hallitsee Uusi välilehti -sivua.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Laajennus, <img data-l10n-name="icon"/> { $name }, on asettanut oletushakukoneen.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Laajennus, <img data-l10n-name="icon"/> { $name }, vaatii luokitellut välilehdet.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Laajennus, <img data-l10n-name="icon"/> { $name }, hallitsee seurannan suojausta.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Laajennus, <img data-l10n-name="icon"/> { $name }, hallitsee { -brand-short-name }in verkkoyhteysasetuksia.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Ota laajennus käyttöön siirtymällä <img data-l10n-name="addons-icon"/> Lisäosat -sivulle <img data-l10n-name="menu-icon"/>-valikosta.
+
 ## Preferences UI Search Results
 
 search-results-header = Hakutulokset
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = Avaa tyhjä sivu
 startup-prev-session =
     .label = Avaa viime istunnon ikkunat ja välilehdet
+startup-restore-previous-session =
+    .label = Palauta edellinen istunto
+    .accesskey = P
 disable-extension =
     .label = Poista laajennus käytöstä
 home-page-header = Aloitussivu
@@ -297,6 +335,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Verkon välityspalvelin
+network-proxy-connection-description = Muokkaa { -brand-short-name }in verkkoyhteysasetuksia.
 network-proxy-connection-learn-more = Lue lisää
 network-proxy-connection-settings =
     .label = Asetukset…
@@ -364,7 +403,7 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Näytä hakuehdotukset osoitepalkin tuloksissa ennen selaushistoriaa
-search-suggestions-cant-show = Hakuehdotuksia ei näytetä osoitepalkista tehtävistä hauista, koska olet kieltänyt sivuhistorian tallentamisen.
+search-suggestions-cant-show = Hakuehdotuksia ei näytetä osoitepalkista tehtävistä hauista, koska olet valinnut, että { -brand-short-name } ei muista historiaa.
 search-one-click-header = Hakukoneet pikavalikossa
 search-one-click-desc = Valitse vaihtoehtoiset hakukoneet, jotka ilmestyvät osoite- ja hakupalkin alalaitaan, kun alat kirjoittaa hakusanoja.
 search-choose-engine-column =
@@ -497,7 +536,7 @@ privacy-header = Selaimen tietosuoja
 
 forms-header = Lomakkeet ja salasanat
 forms-ask-to-save-logins =
-    .label = Ehdota verkkosivustojen käyttäjätunnusten ja salasanojen tallentamista
+    .label = Ehdota sivustojen käyttäjätunnusten ja salasanojen tallentamista
     .accesskey = v
 forms-exceptions =
     .label = Poikkeukset…
@@ -540,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Säilytä selaushistoria ja tieto latauksista
     .accesskey = ä
+history-remember-browser-option =
+    .label = Säilytä selaushistoria ja tieto latauksista
+    .accesskey = ä
 history-remember-search-option =
     .label = Säilytä lomakkeiden ja hakupalkin tiedot
     .accesskey = d
@@ -556,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Evästeet ja sivustotiedot
+sitedata-total-size-calculating = Lasketaan sivustotietojen ja välimuistin kokoa…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Evästeet, sivustotiedot ja välimuisti vievät tällä hetkellä { $value } { $unit } levytilaa.
 sitedata-learn-more = Lue lisää
 sitedata-accept-cookies-option =
     .label = Hyväksy evästeet ja sivustotiedot sivustoilta (suositus)
@@ -650,6 +697,12 @@ permissions-notification-link = Lue lisää
 permissions-notification-pause =
     .label = Älä näytä ilmoituksia ennen kuin { -brand-short-name } uudelleenkäynnistetään
     .accesskey = k
+permissions-block-autoplay-media =
+    .label = Estä sivustot toistamasta äänellistä mediaa automaattisesti
+    .accesskey = E
+permissions-block-autoplay-media-exceptions =
+    .label = Poikkeukset…
+    .accesskey = P
 permissions-block-popups =
     .label = Estä ponnahdusikkunat
     .accesskey = E
@@ -676,6 +729,9 @@ collection-health-report =
     .label = Salli, että { -brand-short-name } lähettää teknisiä ja käyttötilastoja { -vendor-short-name }lle
     .accesskey = S
 collection-health-report-link = Lue lisää
+collection-studies =
+    .label = Salli, että { -brand-short-name } asentaa ja suorittaa tutkimuksia
+collection-studies-link = Näytä { -brand-short-name }-tutkimukset
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Tietojen kerääminen ei ole käytössä tässä koostamiskokoonpanossa

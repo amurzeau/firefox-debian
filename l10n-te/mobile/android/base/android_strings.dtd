@@ -14,7 +14,7 @@
 <!ENTITY firstrun_bookmarks_title "చరిత్ర">
 <!ENTITY firstrun_bookmarks_message "మీ ఫేవ్స్, ముందు మరియు సెంటర్">
 <!ENTITY firstrun_bookmarks_subtext "మీరు శోధించినప్పుడు మీ బుక్మార్క్లు మరియు చరిత్ర నుండి ఫలితాలను పొందండి.">
-<!ENTITY firstrun_data_title "దత్తాంశం">
+<!ENTITY firstrun_data_title "డెట">
 <!ENTITY firstrun_data_message "తక్కువ డేటా, మరింత పొదుపు">
 <!ENTITY firstrun_data_subtext2 "మీరు సందర్శించే ప్రతి సైట్ డేటాను తక్కువగా ఖర్చు పెట్టడానికి చిత్రాలు ఆపివేయండి.">
 <!ENTITY firstrun_sync_title "సింక్">
@@ -69,6 +69,15 @@
 <!ENTITY  crash_restart_label "&brandShortName; పునఃప్రారంభించు">
 
 <!ENTITY url_bar_default_text2 "వెతకండి లేదా చిరునామాను ఇవ్వండి">
+
+<!-- Localization note (url_bar_qrcode_text2) : This text will be
+     heard by non-visual users when the focus is on the QR Code
+     icon in the url bar. -->
+<!ENTITY url_bar_qrcode_text2 "వెతకడానికి లేదా చిరునామా ఇవ్వడానికి మీ QR రీడర్ వాడండి">
+<!-- Localization note (url_bar_mic_text2) : This text will be
+     heard by non-visual users when the focus is on the Microphone
+     icon in the url bar. -->
+<!ENTITY url_bar_mic_text2 "వెతకడానికి లేదా చిరునామా ఇవ్వడానికి మీ మైక్రోఫోనుని వాడండి">
 
 <!ENTITY bookmark "ఇష్టాంశం">
 <!ENTITY bookmark_remove "ఇష్టాంశాన్ని తీసివేయి">
@@ -207,8 +216,9 @@
 <!ENTITY pref_category_advanced_summary3 "ట్యాబుల పునరుద్ధరణ, డేటా సేవర్, డెవలపర్ టూల్స్">
 <!ENTITY pref_category_notifications "గమనింపులు">
 <!ENTITY pref_category_notifications_summary "కొత్త సౌలభ్యాలు, వెబ్‌సైటు తాజాకరణలు">
+<!ENTITY pref_category_notifications_summary2 "కొత్త విశేషాలు, ఉత్పత్తి చిట్కాలు">
 <!ENTITY pref_developer_remotedebugging_usb "USB ద్వారా రిమోట్ డీబగ్గింగ్">
-<!ENTITY pref_developer_remotedebugging_wifi "USB ద్వారా రిమోట్ డీబగ్గింగ్">
+<!ENTITY pref_developer_remotedebugging_wifi "వై-ఫై ద్వారా రిమోట్ డీబగ్గింగ్">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Wi-Fi డీబగ్గింగ్ ఒక QR కోడ్ రీడర్ అప్లికేషన్ ఇన్స్టాల్ చేయడానికి మీ పరికరం అవసరం.">
 <!ENTITY pref_remember_signons2 "ప్రవేశాలను గుర్తుంచుకో">
 <!ENTITY pref_manage_logins "ప్రవేశాలను నిర్వహించండి">
@@ -436,6 +446,7 @@
      (crashReporterSection.label) in en-US/chrome/browser/preferences/advanced.dtd.-->
 <!ENTITY datareporting_crashreporter_title_short "క్రాష్ రిపోర్టర్">
 <!ENTITY datareporting_wifi_title2 "&vendorShortName; స్థాన సేవ">
+<!ENTITY datareporting_wifi_geolocation_summary4 "ప్రపంచాన్ని మ్యాప్ చేయుటకు &vendorShortName; కి సహాయం చేయండి! మా భూస్థాన సేవను మెరుగుపరిచేందుకు మీ పరికరపు ఉజ్జాయింపు వైఫై మరియు సెల్యులార్ స్థానాన్ని పంచుకోండి.">
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -542,7 +553,7 @@
 <!ENTITY pref_compact_tabs_summary2 "చిత్రం మోడ్ లో రెండు నిలువు ట్యాబులను అమర్చు">
 
 <!-- Localization note (page_removed): This string appears in a toast message when
-     any page is removed frome about:home. This includes pages that are in history,
+     any page is removed from about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "పేజీ తీసివేయబడెను">
 <!ENTITY folder_removed "ఫోల్డర్ తీసివేయబడింది">
@@ -760,7 +771,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      "Last synced" is one of the user's other Sync clients, typically Firefox on
      their desktop or laptop.-->
 <!ENTITY remote_tabs_last_synced "చివరిగా సింకైంది: &formatS;">
-<!-- Localization note: Used when the sync has not happend yet, showed in place of a date -->
+<!-- Localization note: Used when the sync has not happened yet, showed in place of a date -->
 <!ENTITY remote_tabs_never_synced "చివరి సింక్: ఇంకా చేయలేదు">
 
 <!-- LOCALIZATION NOTE (intent_uri_private_browsing_prompt): This string will

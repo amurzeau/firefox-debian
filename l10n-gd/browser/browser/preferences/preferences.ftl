@@ -45,6 +45,9 @@ policies-notice =
 pane-general-title = Coitcheann
 category-general =
     .tooltiptext = { pane-general-title }
+pane-home-title = Dhachaigh
+category-home =
+    .tooltiptext = { pane-home-title }
 pane-search-title = Lorg
 category-search =
     .tooltiptext = { pane-search-title }
@@ -69,6 +72,41 @@ should-restart-title = Ath-thòisich { -brand-short-name }
 should-restart-ok = Ath-thòisich { -brand-short-name } an-dràsta
 cancel-no-restart-button = Sguir dheth
 restart-later = Ath-thòisich uaireigin eile
+
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Tha smachd aig leudachan, <img data-l10n-name="icon"/> { $name }, air an duilleag-dhachaidh agad.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Tha smachd aig leudachan, <img data-l10n-name="icon"/> { $name }, air duilleag an taba ùir agad.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Shuidhich leudachan, <img data-l10n-name="icon"/> { $name }, an t-einnsean-luirg bunaiteach agad.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Tha feum air leudachan, <img data-l10n-name="icon"/> { $name }, air tabaichean shoithichean.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Tha leudachan, <img data-l10n-name="icon"/> { $name }, a’ stiùireadh an dìon o thracadh.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Tha smachd aig leudachan, <img data-l10n-name="icon"/> { $name }, mar a cheanglas { -brand-short-name } ris an eadar-lìon.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Gus an leudachan a chur an comas, tadhail air “Tuilleadain <img data-l10n-name="addons-icon"/>” sa chlàr-taice <img data-l10n-name="menu-icon"/>.
 
 ## Preferences UI Search Results
 
@@ -107,6 +145,9 @@ startup-blank-page =
     .label = Seall duilleag bhàn
 startup-prev-session =
     .label = Seall na h-uinneagan is tabaichean a bha agad san t-seisean mu dheireadh
+startup-restore-previous-session =
+    .label = Aisig an seisean mu dheireadh
+    .accesskey = s
 disable-extension =
     .label = Cuir an leudachan à comas
 home-page-header = An duilleag-dhachaidh
@@ -300,6 +341,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Progsaidh lìonraidh
+network-proxy-connection-description = Rèitich mar a cheanglas { -brand-short-name } ris an eadar-lìon.
 network-proxy-connection-learn-more = Barrachd fiosrachaidh
 network-proxy-connection-settings =
     .label = Roghainnean…
@@ -307,9 +349,26 @@ network-proxy-connection-settings =
 
 ## Home Section
 
+home-new-windows-tabs-header = Uinneagan is tabaichean ùra
+home-new-windows-tabs-description2 = Tagh na chì thu nuair a dh’fhosglas tu an duilleag-dhachaidh agad no uinneag no taba ùr.
 
 ## Home Section - Home Page Customization
 
+home-homepage-mode-label = An duilleag-dhachaidh is uinneagan ùra
+home-newtabs-mode-label = Tabaichean ùra
+home-restore-defaults =
+    .label = Aisig na bun-roghainnean
+    .accesskey = r
+# "Firefox" should be treated as a brand and kept in English,
+# while "Home" and "(Default)" can be localized.
+home-mode-choice-default =
+    .label = Dachaidh Firefox (bun-roghainn)
+home-mode-choice-custom =
+    .label = URLaichean gnàthaichte...
+home-mode-choice-blank =
+    .label = Duilleag bhàn
+home-homepage-custom-url =
+    .placeholder = Cuir URL ann...
 # This string has a special case for '1' and [other] (default). If necessary for
 # your language, you can add {$tabCount} to your translations and use the
 # standard CLDR forms, or only use the form for [other] if both strings should
@@ -418,6 +477,9 @@ sync-signedin-login-failure = Clàraich a-steach airson ceangal ris a-rithist { 
 sync-resend-verification =
     .label = Cuir an dearbhadh às ùr
     .accesskey = d
+sync-remove-account =
+    .label = Thoir an cunntas air falbh
+    .accesskey = r
 sync-sign-in =
     .label = Clàraich a-steach
     .accesskey = t
@@ -479,6 +541,9 @@ privacy-header = Prìobhaideachd a’ bhrabhsair
 ## Privacy Section - Forms
 
 forms-header = Foirmean ⁊ faclan-faire
+forms-ask-to-save-logins =
+    .label = Faighnich an dèid clàraidhean a-steach is faclan-faire làraichean-lìn a shàbhaladh
+    .accesskey = r
 forms-exceptions =
     .label = Eisgeachdan…
     .accesskey = E
@@ -520,6 +585,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Cuimhnich an eachdraidh brabhsaidh 's luchdaidh agam
     .accesskey = b
+history-remember-browser-option =
+    .label = Cuimhnich an eachdraidh brabhsaidh 's luchdaidh
+    .accesskey = b
 history-remember-search-option =
     .label = Cuimhnich eachdraidh nan lorg is nam foirmichean
     .accesskey = f
@@ -536,6 +604,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Briosgaidean is dàta làraichean
+sitedata-total-size-calculating = Ag àireamhachadh meud dàta na làraich is an tasgadain...
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Tha na tha de bhriosgaidean, dàta làraichean is an tasgadan a’ cleachdadh { $value } { $unit } de dh’àite air an diosg an-dràsta.
 sitedata-learn-more = Barrachd fiosrachaidh
 sitedata-accept-cookies-option =
     .label = Gabh ri briosgaidean is dàta làraich o làraichean-lìn (mholamaid seo)
@@ -545,6 +618,10 @@ sitedata-block-cookies-option =
     .accesskey = B
 sitedata-keep-until = Cum gus
     .accesskey = u
+sitedata-keep-until-expire =
+    .label = Falbhaidh an ùine orra
+sitedata-keep-until-closed =
+    .label = Tha { -brand-short-name } dùinte
 sitedata-accept-third-party-desc = Gabh ri briosgaidean is dàta làraich o threas-phàrtaidhean
     .accesskey = y
 sitedata-accept-third-party-always-option =
@@ -626,6 +703,12 @@ permissions-notification-link = Barrachd fiosrachaidh
 permissions-notification-pause =
     .label = Cuir am brath ’na stad gus an ath-thòisich { -brand-short-name }
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = Na leig le làraichean-lìn meadhanan a chluich sa bheil fuaim
+    .accesskey = N
+permissions-block-autoplay-media-exceptions =
+    .label = Eisgeachdan...
+    .accesskey = E
 permissions-block-popups =
     .label = Cuir bacadh air priob-uinneagan
     .accesskey = b
@@ -652,6 +735,9 @@ collection-health-report =
     .label = Leig le { -brand-short-name } dàta teicnigeach is dàta mu eadar-ghabhail a chur gu { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Barrachd fiosrachaidh
+collection-studies =
+    .label = Leig le { -brand-short-name } obair-rannsachaidh a stàladh is a ruith
+collection-studies-link = Seall obair-rannsachaidh { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Tha aithriseadh dàta à comas airson rèiteachadh a’ bhuild seo

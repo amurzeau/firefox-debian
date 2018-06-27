@@ -73,6 +73,41 @@ should-restart-ok = أعد تشغيل { -brand-short-name } الآن
 cancel-no-restart-button = ألغِ
 restart-later = أعِد التشغيل لاحقًا
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = يتحكم أحد الامتدادات (<img data-l10n-name="icon"/> { $name }) في صفحتك الرئيسية.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = يتحكم أحد الامتدادات (<img data-l10n-name="icon"/> { $name }) في صفحة اللسان الجديد.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = ضبط أحد الامتدادات (<img data-l10n-name="icon"/> { $name }) محرك البحث المبدئي.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = يتطلب أحد الامتدادات (<img data-l10n-name="icon"/> { $name }) الألسنة الحاوية.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = يتحكم أحد الامتدادات (<img data-l10n-name="icon"/> { $name }) في الحماية من التعقب.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = يتحكم أحد الامتدادات <img data-l10n-name="icon"/> { $name } في طريقة اتصال { -brand-short-name } بالإنترنت.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = لتفعيل الامتداد انتقل إلى <img data-l10n-name="addons-icon"/> الإضافات في <img data-l10n-name="menu-icon"/> القائمة.
+
 ## Preferences UI Search Results
 
 search-results-header = نتائج البحث
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = اعرض صفحة فارغة
 startup-prev-session =
     .label = اعرض نوافذي و ألسنتي من المرّة السابقة
+startup-restore-previous-session =
+    .label = استعد الجلسة السابقة
+    .accesskey = س
 disable-extension =
     .label = عطّل الامتداد
 home-page-header = صفحة البداية
@@ -306,6 +344,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = وسيط الشبكة
+network-proxy-connection-description = اضبط طريقة اتصال { -brand-short-name } بالإنترنت.
 network-proxy-connection-learn-more = اطّلع على المزيد
 network-proxy-connection-settings =
     .label = الإعدادات…
@@ -565,6 +604,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = الكعكات و بيانات المواقع
+sitedata-total-size-calculating = يحسب حجم بيانات الموقع و الخبيئة…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = تستخدم الكعكات، و بيانات الموقع، و الخبيئة المحفوظة حاليًا { $value }‏ { $unit } من مساحة القرص.
 sitedata-learn-more = اطّلع على المزيد
 sitedata-accept-cookies-option =
     .label = اقبل الكعكات و بيانات المواقع من المواقع (مستحسن)
@@ -685,6 +729,9 @@ collection-health-report =
     .label = اسمح أن يُرسل { -brand-short-name } بيانات تقنية و بيانات التفاعل إلى موزيلا
     .accesskey = ح
 collection-health-report-link = اطّلع على المزيد
+collection-studies =
+    .label = اسمح أن ينصّب { -brand-short-name } ويشغل الدراسات
+collection-studies-link = اعرض دراسات { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = الإبلاغ عن البيانات معطّل في إعدادات البناء

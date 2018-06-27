@@ -73,6 +73,41 @@ should-restart-ok = Mulai ulang { -brand-short-name } sekarang
 cancel-no-restart-button = Batal
 restart-later = Mulai Ulang Nanti
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Ekstensi <img data-l10n-name="icon"/> { $name } mengendalikan laman beranda Anda.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Ekstensi <img data-l10n-name="icon"/> { $name } mengendalikan laman Tab Baru Anda.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Ekstensi <img data-l10n-name="icon"/> { $name } telah menyetel mesin pencari baku Anda.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Ekstensi <img data-l10n-name="icon"/> { $name } membutuhkan Tab Kontainer.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Ekstensi <img data-l10n-name="icon"/> { $name } mengendalikan perlindungan pelacakan.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Ekstensi <img data-l10n-name="icon"/> { $name } mengendalikan cara { -brand-short-name } tersambung ke internet.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Untuk mengaktifkan ekstensi buka Pengaya <img data-l10n-name="addons-icon"/> di menu <img data-l10n-name="menu-icon"/>.
+
 ## Preferences UI Search Results
 
 search-results-header = Hasil Pencarian
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = Tampilkan laman kosong
 startup-prev-session =
     .label = Tampilkan jendela dan tab dari sesi terakhir Anda
+startup-restore-previous-session =
+    .label = Memulihkan sesi sebelumnya
+    .accesskey = s
 disable-extension =
     .label = Nonaktifkan Ekstensi
 home-page-header = Beranda
@@ -285,6 +323,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Proksi Jaringan
+network-proxy-connection-description = Atur bagaimana { -brand-short-name } tersambung ke internet.
 network-proxy-connection-learn-more = Pelajari lebih lanjut
 network-proxy-connection-settings =
     .label = Setelan…
@@ -528,6 +567,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Ingat riwayat penjelajahan dan unduhan saya
     .accesskey = r
+history-remember-browser-option =
+    .label = Ingat riwayat penjelajahan dan unduhan
+    .accesskey = r
 history-remember-search-option =
     .label = Simpan riwayat pencarian dan isian form
     .accesskey = i
@@ -544,6 +586,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Kuki dan Data Situs
+sitedata-total-size-calculating = Menghitung ukuran data situs dan tembolok…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Kuki, data situs tersimpan, dan tembolok Anda saat ini menggunakan ruang penyimpanan { $value } { $unit }.
 sitedata-learn-more = Pelajari lebih lanjut
 sitedata-accept-cookies-option =
     .label = Terima kuki dan situs data dari situs web (direkomendasikan)
@@ -638,6 +685,12 @@ permissions-notification-link = Pelajari lebih lanjut
 permissions-notification-pause =
     .label = Jeda notifikasi hingga { -brand-short-name } dimulai ulang
     .accesskey = J
+permissions-block-autoplay-media =
+    .label = Blokir situs web untuk memainkan media dengan suara secara otomatis
+    .accesskey = B
+permissions-block-autoplay-media-exceptions =
+    .label = Pengecualian…
+    .accesskey = l
 permissions-block-popups =
     .label = Blokir jendela pop-up
     .accesskey = B
@@ -664,6 +717,9 @@ collection-health-report =
     .label = Izinkan { -brand-short-name } mengirim data teknis dan interaksi ke { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Pelajari Lebih Lanjut
+collection-studies =
+    .label = Izinkan { -brand-short-name } untuk memasang dan menjalankan kajian
+collection-studies-link = Lihat kajian { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Pelaporan data dinonaktifkan untuk konfigurasi build ini

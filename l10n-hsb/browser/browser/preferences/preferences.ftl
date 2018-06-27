@@ -73,6 +73,41 @@ should-restart-ok = { -brand-short-name } nětko znowa startować
 cancel-no-restart-button = Přetorhnyć
 restart-later = Pozdźišo znowa startować
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Rozšěrjenje <img data-l10n-name="icon"/> { $name } wašu startowu stronu wodźi.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Rozšěrjenje <img data-l10n-name="icon"/> { $name } wašu stronu noweho rajtarka wodźi.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Rozšěrjenje, <img data-l10n-name="icon"/> { $name }, je wašu standardnu pytawu nastajiło.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Rozšěrjenje, <img data-l10n-name="icon"/> { $name }, sej kontejnerowe rajtark wužaduje.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Rozšěrjenje, <img data-l10n-name="icon"/> { $name }, slědowanski škit kontroluje.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Rozšěrjenje <img data-l10n-name="icon"/> { $name } wodźi, kak { -brand-short-name } z internetom zwjazuje.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Zo byšće rozšěrjenje zmóžnił, přeńdźće k <img data-l10n-name="addons-icon"/> přidatkam w <img data-l10n-name="menu-icon"/> meniju.
+
 ## Preferences UI Search Results
 
 search-results-header = Pytanske wuslědki
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = Prózdnu stronu pokazać
 startup-prev-session =
     .label = Wokna a rajtarki wot poslednjeho raza pokazać
+startup-restore-previous-session =
+    .label = Předchadne posedźenje wobnowić
+    .accesskey = b
 disable-extension =
     .label = Rozšěrjenje znjemóžnić
 home-page-header = Startowa strona
@@ -303,6 +341,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Syćowy proksy
+network-proxy-connection-description = Konfigurować, kak { -brand-short-name } z internetom zwjazuje.
 network-proxy-connection-learn-more = Dalše informacije
 network-proxy-connection-settings =
     .label = Nastajenja…
@@ -546,6 +585,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Sej přehladowansku a sćehnjensku historiju spomjatkować
     .accesskey = h
+history-remember-browser-option =
+    .label = Sej přehladowansku a sćehnjensku historiju spomjatkować
+    .accesskey = m
 history-remember-search-option =
     .label = Pytansku a formularnu historiju sej spomjatkować
     .accesskey = f
@@ -562,6 +604,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Placki a sydłowe daty
+sitedata-total-size-calculating = Wulkosć sydłowych datow a pufrowaka so wuličuje…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Waše składowane placki, sydłowe daty a pufrowak so tuchwilu { $value } { $unit } tačeloweho ruma wužiwaja.
 sitedata-learn-more = Dalše informacije
 sitedata-accept-cookies-option =
     .label = Placki a sydłowe daty z websydłow akceptować (doporučene)
@@ -572,9 +619,9 @@ sitedata-block-cookies-option =
 sitedata-keep-until = Wobchować
     .accesskey = c
 sitedata-keep-until-expire =
-    .label = Spadnu
+    .label = doniž njespadnu
 sitedata-keep-until-closed =
-    .label = { -brand-short-name } je začinjeny
+    .label = { -brand-short-name } so njezačini
 sitedata-accept-third-party-desc = Placki a sydłowe daty třećich poskićowarjow akceptować
     .accesskey = t
 sitedata-accept-third-party-always-option =
@@ -656,6 +703,12 @@ permissions-notification-link = Dalše informacije
 permissions-notification-pause =
     .label = Zdźělenja zastajić, doniž so { -brand-short-name } znowa njestartuje
     .accesskey = z
+permissions-block-autoplay-media =
+    .label = Websydłam zakazać, medije ze zynkom wothrać
+    .accesskey = z
+permissions-block-autoplay-media-exceptions =
+    .label = Wuwzaća…
+    .accesskey = u
 permissions-block-popups =
     .label = Wuskakowace wokno blokować
     .accesskey = k
@@ -682,6 +735,9 @@ collection-health-report =
     .label = { -brand-short-name } zmóžnić, techniske a interakciske daty na { -vendor-short-name } pósłać
     .accesskey = t
 collection-health-report-link = Dalše informacije
+collection-studies =
+    .label = { -brand-short-name } dowolić, studije instalować a přewjesć
+collection-studies-link = Studije { -brand-short-name } pokazać
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Datowe rozprawjenje je znjemóžnjene za tutu programowu konfiguraciju

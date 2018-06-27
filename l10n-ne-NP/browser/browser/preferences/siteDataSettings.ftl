@@ -10,6 +10,8 @@ site-data-search-textbox =
     .accesskey = S
 site-data-column-host =
     .label = साइट
+site-data-column-cookies =
+    .label = कुकीहरू
 site-data-column-storage =
     .label = भण्डारण
 site-data-remove-selected =
@@ -21,8 +23,21 @@ site-data-button-cancel =
 site-data-button-save =
     .label = परिवर्तनहरू संग्रह गर्नुहोस्
     .accesskey = a
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+site-usage-pattern = { $value } { $unit }
+site-data-remove-all =
+    .label = सबै हटाउनुहोस्
+    .accesskey = e
+site-data-remove-shown =
+    .label = देखाइएको सबै हटाउनुहोस्
+    .accesskey = e
 
 ## Removing
 
 site-data-removing-window =
     .title = { site-data-removing-header }
+site-data-removing-dialog =
+    .title = { site-data-removing-header }
+    .buttonlabelaccept = हटाउनुहोस्

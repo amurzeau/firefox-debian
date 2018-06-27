@@ -7,6 +7,7 @@
 
 site-data-settings-window =
     .title = Gestionează cookie-urile și datele site-urilor
+site-data-settings-description = Următoarele site-uri web stochează cookie-uri și date ale site-urilor pe calculator. { -brand-short-name } păstrează date de la site-urile web cu stocare persistentă până când le ștergi și șterge datele de la site-urile web cu stocare nonpersistentă când este nevoie de spațiu.
 site-data-search-textbox =
     .placeholder = Caută site-uri web
     .accesskey = S
@@ -27,11 +28,25 @@ site-data-button-cancel =
 site-data-button-save =
     .label = Salvează schimbările
     .accesskey = a
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+site-usage-pattern = { $value } { $unit }
+site-usage-persistent = { site-usage-pattern } (Persistentă)
+site-data-remove-all =
+    .label = Elimină-le toate
+    .accesskey = a
+site-data-remove-shown =
+    .label = Elimină toate cele afișate
+    .accesskey = e
 
 ## Removing
 
 site-data-removing-window =
     .title = { site-data-removing-header }
+site-data-removing-dialog =
+    .title = { site-data-removing-header }
+    .buttonlabelaccept = Elimină
 site-data-removing-header = Eliminarea cookie-urilor și a datelor site-urilor
 site-data-removing-desc = Eliminarea cookie-urilor și a datelor site-urilor te-ar putea deconecta de pe site-uri web. Sigur vrei să efectuezi schimbările?
 site-data-removing-table = Cookie-urile și datele site-urilor pentru următoarele site-uri web vor fi eliminate

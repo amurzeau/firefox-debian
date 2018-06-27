@@ -36,3 +36,96 @@ permissions-button-ok =
     .accesskey = S
 permissions-searchbox =
     .placeholder = Sök webbplats
+permissions-capabilities-allow =
+    .label = Tillåt
+permissions-capabilities-block =
+    .label = Blockera
+permissions-capabilities-prompt =
+    .label = Fråga alltid
+
+## Invalid Hostname Dialog
+
+permissions-invalid-uri-title = Ogiltigt värdnamn
+permissions-invalid-uri-label = Skriv in ett giltigt värdnamn
+
+## Exceptions - Tracking Protection
+
+permissions-exceptions-tracking-protection-window =
+    .title = Undantag - Spårningsskydd
+    .style = { permissions-window.style }
+permissions-exceptions-tracking-protection-desc = Du har stängt av spårningsskydd på dessa webbplatser.
+
+## Exceptions - Cookies
+
+permissions-exceptions-cookie-window =
+    .title = Undantag - Kakor och webbplatsdata
+    .style = { permissions-window.style }
+permissions-exceptions-cookie-desc = Du kan ange vilka webbplatser som alltid eller aldrig får använda kakor och webbplatsdata.  Skriv den exakta adressen till den webbplats du vill hantera och klicka sedan på Blockera, Tillåt för sessionen eller Tillåt.
+
+## Exceptions - Pop-ups
+
+permissions-exceptions-popup-window =
+    .title = Tillåtna webbplatser - popup-fönster
+    .style = { permissions-window.style }
+permissions-exceptions-popup-desc = Du kan ange vilka webbplatser som får öppna popup-fönster. Skriv in adressen till platsen du vill godkänna och klicka på Tillåt.
+
+## Exceptions - Saved Logins
+
+permissions-exceptions-saved-logins-window =
+    .title = Undantag - Sparade inloggningar
+    .style = { permissions-window.style }
+permissions-exceptions-saved-logins-desc = Inloggningar för följande webbplatser kommer inte att sparas
+
+## Exceptions - Add-ons
+
+permissions-exceptions-addons-window =
+    .title = Tillåtna webbplatser - Installation av tillägg
+    .style = { permissions-window.style }
+permissions-exceptions-addons-desc = Du kan ange vilka webbplatser som får installera tillägg. Skriv in adressen till platsen du vill godkänna och klicka på Tillåt.
+
+## Exceptions - Autoplay Media
+
+permissions-exceptions-autoplay-media-window =
+    .title = Tillåtna Hemsidor - Automatisk uppspelning
+    .style = { permissions-window.style }
+permissions-exceptions-autoplay-media-desc = Du kan specificera vilka webbplatser som får spela upp media automatiskt. Fyll i den exakta adressen till den plats du vill tillåta och klicka sedan på Tillåt.
+
+## Site Permissions - Notifications
+
+permissions-site-notification-window =
+    .title = Inställningar - Behörigheter för aviseringar
+    .style = { permissions-window.style }
+permissions-site-notification-desc = Följande webbplatser har begärt att skicka meddelanden. Du kan ange vilka webbplatser som får skicka aviseringar. Du kan också blockera nya förfrågningar om att tillåta meddelanden.
+permissions-site-notification-disable-label =
+    .label = Blockera nya förfrågningar om att tillåta meddelanden
+permissions-site-notification-disable-desc = Detta kommer att förhindra att webbplatser som inte listas ovan från att begära tillstånd att skicka meddelanden. Blockering av meddelanden kan störa vissa webbplatsfunktioner.
+
+## Site Permissions - Location
+
+permissions-site-location-window =
+    .title = Inställningar - Behörigheter för plats
+    .style = { permissions-window.style }
+permissions-site-location-desc = Följande webbplatser har begärt att komma åt din position. Du kan ange vilka webbplatser som får komma åt din position. Du kan också blockera nya förfrågningar om att få tillgång till din position.
+permissions-site-location-disable-label =
+    .label = Blockera nya förfrågningar om att få tillgång till din position
+permissions-site-location-disable-desc = Detta kommer att förhindra att webbplatser som inte listas ovan från att begära tillstånd att komma åt din position. Om du blockerar åtkomst till din position kan det störa vissa webbplatsfunktioner.
+
+## Site Permissions - Camera
+
+permissions-site-camera-window =
+    .title = Inställningar - Behörigheter för kamera
+    .style = { permissions-window.style }
+permissions-site-camera-desc = Följande webbplatser har begärt att du ska komma åt din kamera. Du kan ange vilka webbplatser som får komma åt din kamera. Du kan också blockera nya förfrågningar om att komma åt din kamera.
+permissions-site-camera-disable-label =
+    .label = Blockera nya förfrågningar om att få tillgång till din kamera
+permissions-site-camera-disable-desc = Detta kommer att förhindra att webbplatser som inte listas ovan från att begära tillstånd att komma åt din kamera. Att blockera åtkomst till din kamera kan störa vissa webbplatsfunktioner.
+
+## Site Permissions - Microphone
+
+permissions-site-microphone-window =
+    .title = Inställningar - Behörigheter för mikrofon
+    .style = { permissions-window.style }
+permissions-site-microphone-desc = Följande webbplatser har begärt att du ska komma åt din mikrofon. Du kan ange vilka webbplatser som får komma åt din mikrofon. Du kan också blockera nya förfrågningar om att komma åt din mikrofon.
+permissions-site-microphone-disable-label =
+    .label = Blockera nya förfrågningar om att få tillgång till din mikrofon
+permissions-site-microphone-disable-desc = Detta kommer att förhindra att webbplatser som inte listas ovan från att begära tillstånd att komma åt din mikrofon. Om du blockerar åtkomst till din mikrofon kan det störa vissa webbplatsfunktioner.

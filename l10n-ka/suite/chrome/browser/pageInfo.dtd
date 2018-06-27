@@ -23,7 +23,7 @@
 <!ENTITY  openInNewWindow.accesskey "W">
 
 <!ENTITY  generalTab            "ძირითადი">
-<!ENTITY  generalTab.accesskey  "G">
+<!ENTITY  generalTab.accesskey  "რ">
 <!ENTITY  generalURL            "მისამართი:">
 <!ENTITY  generalType           "ტიპი:">
 <!ENTITY  generalMode           "ასახვის რეჟიმი:">
@@ -35,7 +35,7 @@
 <!ENTITY  generalMetaName       "სახელი">
 <!ENTITY  generalMetaContent    "შიგთავსი">
 <!ENTITY  generalSecurityDetails           "დაწვრილებით">
-<!ENTITY  generalSecurityDetails.accesskey "D">
+<!ENTITY  generalSecurityDetails.accesskey "დ">
 
 <!ENTITY  formsTab              "ფორმები">
 <!ENTITY  formsTab.accesskey    "F">
@@ -79,13 +79,13 @@
 
 <!ENTITY  feedTab               "არხები">
 <!ENTITY  feedTab.accesskey     "F">
-<!ENTITY  feedSubscribe         "ხელმოწერა">
-<!ENTITY  feedSubscribe.accesskey "u">
+<!ENTITY  feedSubscribe         "გამოწერა">
+<!ENTITY  feedSubscribe.accesskey "ო">
 
 <!ENTITY  permTab               "უფლებები">
 <!ENTITY  permTab.accesskey     "P">
 <!ENTITY  permUseDefault        "ნაგულისხმების გამოყენება">
-<!ENTITY  permAskAlways         "ყოველთვის დამეკითხე">
+<!ENTITY  permAskAlways         "შეკითხვა ყოველ ჯერზე">
 <!ENTITY  permAllow             "დაშვება">
 <!ENTITY  permAllowSession      "დაშვება სეანსზე">
 <!ENTITY  permBlock             "დაბლოკვა">

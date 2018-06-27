@@ -35,6 +35,9 @@ left instead of right. -->
 <!ENTITY  closeOtherTabs.label               "Sulje muut välilehdet">
 <!ENTITY  closeOtherTabs.accesskey           "m">
 
+<!ENTITY  closeSelectedTabs.label            "Sulje valitut välilehdet">
+<!ENTITY  closeSelectedTabs.accesskey        "a">
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -129,7 +132,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "Näytä kaikki välilehdet">
 <!ENTITY showAllTabsCmd.accesskey "N">
 <!ENTITY toggleReaderMode.key "R">
-
 <!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "Kirjaudu sisään &syncBrand.shortName.label;-palveluun">
@@ -189,10 +191,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY otherBookmarksCmd.label "Muut kirjanmerkit">
 <!ENTITY mobileBookmarksCmd.label "Kannettavan laitteen kirjanmerkit">
 <!ENTITY bookmarksToolbarChevron.tooltip "Näytä lisää kirjanmerkkejä">
-<!ENTITY showRecentlyBookmarked.label     "Näytä viimeksi lisätyt">
-<!ENTITY showRecentlyBookmarked.accesskey "v">
-<!ENTITY hideRecentlyBookmarked.label     "Piilota viimeksi lisätyt">
-<!ENTITY hideRecentlyBookmarked.accesskey "v">
 
 <!ENTITY backCmd.label                "Edellinen">
 <!ENTITY backCmd.accesskey            "E">
@@ -224,6 +222,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Tallenna tietoja pysyvään tallennustilaan">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Selain on kauko-ohjauksessa">
 
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "Avaa verkkotodennuksen paneeli">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Hallinnoi kameran tai mikrofonin jakamista sivustolle">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Hallinnoi mikrofonin jakamista sivustolle">
@@ -233,7 +232,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translateNotificationAnchor.tooltip       "Käännä sivu">
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Hallinnoi sivun kääntämistä toiselle kielelle">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Hallinnoi DRM-ohjelmiston käyttöä">
-
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "Avaa MIDI-paneeli">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Olet estänyt kameran tältä sivustolta.">
@@ -244,7 +242,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Olet estänyt pysyvän tallennustilan käytön tältä sivustolta.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Olet estänyt ponnahdusikkunat tältä sivustolta.">
 <!ENTITY urlbar.canvasBlocked.tooltip            "Olet estänyt kanvaksen sisällön lukemisen tältä sivustolta.">
-
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "Olet estänyt Adobe Flash -liitännäisen käytön tältä sivustolta.">
 <!ENTITY urlbar.midiBlocked.tooltip              "Olet estänyt MIDI-käytön tältä sivustolta.">
 
@@ -254,6 +251,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!-- Toolbar items -->
 <!ENTITY homeButton.label             "Aloitussivu">
+
+<!ENTITY homeButton.defaultPage.tooltip "&brandShortName;in aloitussivu">
 
 <!ENTITY bookmarksButton.label          "Kirjanmerkit">
 <!ENTITY bookmarksCmd.commandkey "b">
@@ -303,7 +302,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY inspectContextMenu.label     "Inspect Element">
 <!ENTITY inspectContextMenu.accesskey "Q">
 
-<!ENTITY inspectA11YContextMenu.label     "Tarkastele helppokäyttöominaisuuksia">
+<!ENTITY inspectA11YContextMenu.label     "Inspect Accessibility Properties">
 
 <!ENTITY fileMenu.label         "Tiedosto">
 <!ENTITY fileMenu.accesskey       "T">
@@ -394,7 +393,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Haluatko nähdä muiden laitteiden välilehdet tässä?">
-<!ENTITY appMenuRemoteTabs.openprefs.label "Sync-palvelun asetukset">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Avaa Sync-asetukset">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Kirjaudu sisään, jotta voit katsella listaa muiden laitteidesi välilehdistä.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Tilisi tarvitsee vahvistaa.">
@@ -436,6 +434,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.addMoreItems.label "Lisää toimintoja…">
 <!ENTITY customizeMenu.addMoreItems.accesskey "t">
 
+<!ENTITY customizeMenu.autoHideDownloadsButton.label "Piilota automaattisesti työkalupalkkiin">
+<!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "a">
+<!ENTITY customizeMenu.manageExtension.label "Hallitse laajennusta">
+<!ENTITY customizeMenu.manageExtension.accesskey "a">
+
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
     secondary commands. -->
@@ -443,7 +446,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Kirjoita osoite tai hakutermi">
-<!ENTITY urlbar.placeholder3          "Kirjoita osoitteita ja hakutermejä tähän">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Laajennus:">
@@ -797,6 +799,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.moreInfoLinkText2 "Lisätietoja">
 
+<!ENTITY identity.clearSiteData "Poista evästeet ja sivustotiedot…">
+
 <!ENTITY identity.permissions "Oikeudet">
 <!ENTITY identity.permissionsEmpty "Sivustolle ei ole myönnetty mitään erityisoikeuksia.">
 <!ENTITY identity.permissionsReloadHint "Sivu tarvitsee ehkä päivittää, jotta muutokset tulevat voimaan.">
@@ -900,6 +904,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.allWindowsShared.message "Kaikki näkyvissä olevat ikkunat jaetaan.">
 
 <!ENTITY trackingProtection.title "Seurannan suojaus">
+<!ENTITY trackingProtection.tooltip "Avaa seurannan suojauksen asetukset">
 <!ENTITY trackingProtection.detectedBlocked3 "&brandShortName; estää sivusta osia, jotka saattavat seurata selaamistasi.">
 <!ENTITY trackingProtection.detectedNotBlocked3 "Sivusto sisältää osia, jotka saattavat seurata sinua. Seurannan suojaus on pois päältä.">
 <!ENTITY trackingProtection.notDetected3 "Sivulta ei löytynyt seuraavia osia.">
@@ -987,19 +992,24 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "E">
 <!ENTITY updateRestart.panelUI.label2 "Päivitä käynnistämällä &brandShorterName; uudestaan">
 
-<!ENTITY newTabControlled.message "Laajennus on vaihtanut sivun, jonka näet avatessasi uuden välilehden. Voit palauttaa asetukset, jos et halua tätä muutosta.">
-
 <!ENTITY newTabControlled.header.message "Uusi välilehti -sivu on vaihtunut.">
 <!ENTITY newTabControlled.keepButton.label "Säilytä muutokset">
 <!ENTITY newTabControlled.keepButton.accesskey "S">
-<!ENTITY newTabControlled.restoreButton.label "Palauta asetukset">
-<!ENTITY newTabControlled.restoreButton.accesskey "P">
-
 <!ENTITY newTabControlled.disableButton.label "Estä laajennus">
 <!ENTITY newTabControlled.disableButton.accesskey "E">
 
+<!ENTITY homepageControlled.message "Laajennus on vaihtanut, mitä näet aloitussivuna. Voit palauttaa asetukset, jos et halua tätä muutosta.">
 <!ENTITY homepageControlled.header.message "Aloitussivusi on muuttunut.">
+<!ENTITY homepageControlled.keepButton.label "Säilytä muutokset">
+<!ENTITY homepageControlled.keepButton.accesskey "S">
 <!ENTITY homepageControlled.disableButton.label "Estä laajennus">
+<!ENTITY homepageControlled.disableButton.accesskey "E">
+
+<!ENTITY tabHideControlled.header.message "Piilotettujen välilehtien käyttäminen">
+<!ENTITY tabHideControlled.keepButton.label "Pidä välilehdet piilossa">
+<!ENTITY tabHideControlled.keepButton.accesskey "P">
+<!ENTITY tabHideControlled.disableButton.label "Poista laajennus käytöstä">
+<!ENTITY tabHideControlled.disableButton.accesskey "k">
 
 <!ENTITY pageActionButton.tooltip "Sivun toiminnot">
 <!ENTITY pageAction.addToUrlbar.label "Lisää osoitepalkkiin">

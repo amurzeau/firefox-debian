@@ -72,6 +72,41 @@ should-restart-ok = Рестартиране на { -brand-short-name }
 cancel-no-restart-button = Отказ
 restart-later = Рестартиране по-късно
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Разширението „<img data-l10n-name="icon"/> { $name }“ управлява началната страница.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Разширението „<img data-l10n-name="icon"/> { $name }“ управлява страницата за нов раздел.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Разширението „<img data-l10n-name="icon"/> { $name }“ е задало стандартната търсеща машина.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Разширението „<img data-l10n-name="icon"/> { $name }“ има изискване за изолирани раздели.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Разширението „<img data-l10n-name="icon"/> { $name }“ управлява защитата от проследяване.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Разширението „<img data-l10n-name="icon"/> { $name }“ управлява как { -brand-short-name } се свързва с интернет.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Отворете <img data-l10n-name="addons-icon"/> Добавки в менюто <img data-l10n-name="menu-icon"/>, за да включите разширението.
+
 ## Preferences UI Search Results
 
 search-results-header = Резултати
@@ -109,6 +144,9 @@ startup-blank-page =
     .label = Показва празна страница
 startup-prev-session =
     .label = Показва прозорците и разделите от последния път
+startup-restore-previous-session =
+    .label = Възстановяване на предишна сесия
+    .accesskey = с
 disable-extension =
     .label = Изключване на разширението
 home-page-header = Начална страница
@@ -296,6 +334,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Мрежов посредник
+network-proxy-connection-description = Настройване на достъпа до интернет от { -brand-short-name }.
 network-proxy-connection-learn-more = Научете повече
 network-proxy-connection-settings =
     .label = Настройки…
@@ -508,7 +547,7 @@ forms-master-pw-use =
     .label = Използване на главна парола
     .accesskey = г
 forms-master-pw-change =
-    .label = Промяна на главна парола…
+    .label = Промяна на главна парола
     .accesskey = л
 
 ## Privacy Section - History
@@ -539,6 +578,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Запазване на история на разглеждане и изтегляния
     .accesskey = З
+history-remember-browser-option =
+    .label = Запазване на история на разглеждане и изтегляния
+    .accesskey = и
 history-remember-search-option =
     .label = Запазване на история на търсения и формуляри
     .accesskey = ф
@@ -555,6 +597,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Бисквитки и данни на страници
+sitedata-total-size-calculating = Изчисляване на размера на данните и буфера…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Буферът, бисквитките и данните от страници момента заемат { $value } { $unit } дисково пространство.
 sitedata-learn-more = Научете повече
 sitedata-accept-cookies-option =
     .label = Приемане на бисквитки и данни на страници (препоръчително)
@@ -649,6 +696,9 @@ permissions-notification-link = Научете повече
 permissions-notification-pause =
     .label = Спиране на известията до рестарт на { -brand-short-name }
     .accesskey = з
+permissions-block-autoplay-media-exceptions =
+    .label = Изключения…
+    .accesskey = ю
 permissions-block-popups =
     .label = Спиране на изскачащите прозорци
     .accesskey = С

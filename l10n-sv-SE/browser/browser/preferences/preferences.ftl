@@ -73,6 +73,41 @@ should-restart-ok = Starta om { -brand-short-name } nu
 cancel-no-restart-button = Avbryt
 restart-later = Starta om senare
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Ett tillägg, <img data-l10n-name="icon"/> { $name }, styr din startsida.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Ett tillägg, <img data-l10n-name="icon"/> { $name }, styr din sida för ny flik.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Ett tillägg, <img data-l10n-name="icon"/> { $name }, har ändrat din standardsökmotor.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Ett tillägg, <img data-l10n-name="icon"/> { $name }, kräver innehållsflikar.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Ett tillägg, <img data-l10n-name="icon"/> { $name }, styr spårningsskydd.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Ett tillägg, <img data-l10n-name="icon"/> { $name }, styr hur { -brand-short-name } ansluter till internet.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = För att aktivera tillägget gå till <img data-l10n-name="addons-icon"/> Tillägg i menyn <img data-l10n-name="menu-icon"/>.
+
 ## Preferences UI Search Results
 
 search-results-header = Sökresultat
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = Visa en tom sida
 startup-prev-session =
     .label = Visa dina fönster och flikar från förra gången
+startup-restore-previous-session =
+    .label = Återställ föregående session
+    .accesskey = s
 disable-extension =
     .label = Inaktivera tillägg
 home-page-header = Startsida
@@ -297,6 +335,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Nätverksproxy
+network-proxy-connection-description = Konfigurera hur { -brand-short-name } ansluter till internet.
 network-proxy-connection-learn-more = Läs mer
 network-proxy-connection-settings =
     .label = Inställningar…
@@ -449,7 +488,7 @@ sync-engine-history =
 sync-engine-tabs =
     .label = Öppna flikar
     .tooltiptext = En lista över vad som är öppet på alla synkroniserade enheter
-    .accesskey = t
+    .accesskey = f
 sync-engine-logins =
     .label = Inloggningar
     .tooltiptext = Användarnamn och lösenord du har sparat
@@ -540,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Spara historik över besökta sidor och filhämtningar
     .accesskey = S
+history-remember-browser-option =
+    .label = Kom ihåg surf- och nedladdningshistorik
+    .accesskey = m
 history-remember-search-option =
     .label = Spara sök- och formulärhistorik
     .accesskey = ö
@@ -556,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Kakor och webbplatsdata
+sitedata-total-size-calculating = Beräkning av webbplatsdata och cachestorlek…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Dina lagrade kakor, webbplatsdata och cache använder för tillfället { $value } { $unit } diskutrymme.
 sitedata-learn-more = Läs mer
 sitedata-accept-cookies-option =
     .label = Tillåt kakor och webbplatsdata från webbplatser (rekommenderas)
@@ -650,6 +697,12 @@ permissions-notification-link = Läs mer
 permissions-notification-pause =
     .label = Pausa aviseringar tills { -brand-short-name } startar om
     .accesskey = v
+permissions-block-autoplay-media =
+    .label = Blockera hemsidor från att automatiskt spela upp media med ljud
+    .accesskey = B
+permissions-block-autoplay-media-exceptions =
+    .label = Undantag
+    .accesskey = U
 permissions-block-popups =
     .label = Blockera popup-fönster
     .accesskey = B
@@ -676,6 +729,9 @@ collection-health-report =
     .label = Tillåt { -brand-short-name } att automatiskt skicka teknisk och interaktionsdata till { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Läs mer
+collection-studies =
+    .label = Tillåt { -brand-short-name } att installera och köra studier
+collection-studies-link = Visa { -brand-short-name }-studier
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Datarapportering är inaktiverad för den här byggkonfigurationen

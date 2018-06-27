@@ -73,6 +73,41 @@ should-restart-ok = Reinitiar { -brand-short-name } ora
 cancel-no-restart-button = Cancellar
 restart-later = Reinitiar depois
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Un extension, <img data-l10n-name="icon"/> { $name }, controla tu pagina casa.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Un extension, <img data-l10n-name="icon"/> { $name }, controla tu pagina de Nove scheda.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Un extension, <img data-l10n-name="icon"/> { $name }, ha definite le motor de recerca ordinari.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Un extension, <img data-l10n-name="icon"/> { $name }, necessita le schedas contextual.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Un extension, <img data-l10n-name="icon"/> { $name }, verifica le protection de traciamento.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Un extension, <img data-l10n-name="icon"/> { $name }, controla como { -brand-short-name } se connecte a internet.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Pro activar le extension elige le additiones <img data-l10n-name="addons-icon"/> in le menu <img data-l10n-name="menu-icon"/>.
+
 ## Preferences UI Search Results
 
 search-results-header = Resultatos del recerca
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = Monstra un pagina vacue
 startup-prev-session =
     .label = Monstra le fenestras e schedas de tu ultime vice
+startup-restore-previous-session =
+    .label = Restaurar previe session
+    .accesskey = p
 disable-extension =
     .label = Inactivar le extension
 home-page-header = Pagina initial
@@ -297,6 +335,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Proxy de rete
+network-proxy-connection-description = Configura como { -brand-short-name } se connecte a internet.
 network-proxy-connection-learn-more = Saper plus
 network-proxy-connection-settings =
     .label = Parametros…
@@ -487,7 +526,7 @@ sync-device-name-save =
 sync-mobilepromo-single = Connecte altere apparato
 sync-mobilepromo-multi = Gerer le apparatos
 sync-tos-link = Terminos de servicio
-sync-fxa-privacy-notice = Advertentia de confidentialitate
+sync-fxa-privacy-notice = Notification de confidentialitate
 
 ## Privacy Section
 
@@ -540,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Memorisar mi chronologia de navigation e de discargamentos
     .accesskey = M
+history-remember-browser-option =
+    .label = Rememorar le chronologia de navigation e discargamento
+    .accesskey = n
 history-remember-search-option =
     .label = Memorisar le chronologia de recercas e de formularios
     .accesskey = f
@@ -556,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cookies e datos de sitos
+sitedata-total-size-calculating = Calculo del dimension de datos de sito e de memoria tampon…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Tu cookies, datos de sito e memoria tampon immagazinate usa actualmente { $value } { $unit } de spatio de disco.
 sitedata-learn-more = Saper plus
 sitedata-accept-cookies-option =
     .label = Acceptar cookies e datos de sito ab sitos web (recommendate)
@@ -650,6 +697,9 @@ permissions-notification-link = Saper plus
 permissions-notification-pause =
     .label = Pausar le notificationes usque { -brand-short-name } reinitia
     .accesskey = n
+permissions-block-autoplay-media-exceptions =
+    .label = Exceptiones…
+    .accesskey = E
 permissions-block-popups =
     .label = Blocar le fenestras emergente
     .accesskey = B
@@ -671,11 +721,14 @@ permissions-a11y-privacy-link = Saper plus
 
 collection-header = Collecta de datos e utilisation de { -brand-short-name }
 collection-description = Nos nos effortia pro lassar te in le commando e colliger solmente lo que nos ha necessitate pro provider e meliorar { -brand-short-name } a totes. Nos sempre demanda permission ante reciper informationes personal.
-collection-privacy-notice = Advertentia de confidentialitate
+collection-privacy-notice = Notification de confidentialitate
 collection-health-report =
     .label = Permitter que { -brand-short-name } invia datos technic e de interaction a { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Saper plus
+collection-studies =
+    .label = Autorisar { -brand-short-name } a installar e a lancear studios
+collection-studies-link = Consultar le studios de { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Le reporto de datos es inactive pro iste configuration de compilation

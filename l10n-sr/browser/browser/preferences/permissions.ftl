@@ -36,3 +36,96 @@ permissions-button-ok =
     .accesskey = С
 permissions-searchbox =
     .placeholder = Претражите веб сајт
+permissions-capabilities-allow =
+    .label = Дозволи
+permissions-capabilities-block =
+    .label = Блокирај
+permissions-capabilities-prompt =
+    .label = Увек питај
+
+## Invalid Hostname Dialog
+
+permissions-invalid-uri-title = Унето је неисправно име рачунара
+permissions-invalid-uri-label = Унесите исправно име хоста
+
+## Exceptions - Tracking Protection
+
+permissions-exceptions-tracking-protection-window =
+    .title = Изузеци - заштита од праћења
+    .style = { permissions-window.style }
+permissions-exceptions-tracking-protection-desc = Онемогућили сте заштиту од праћења на овим сајтовима.
+
+## Exceptions - Cookies
+
+permissions-exceptions-cookie-window =
+    .title = Изузеци - колачићи и подаци сајта
+    .style = { permissions-window.style }
+permissions-exceptions-cookie-desc = Можете да одредите којим веб сајтовима је увек односно никада допуштено да користе колачиће и податке сајта.  Унесите тачну адресу сајта који желите да уредите и притисните дугме Блокирај, Дозволи за ову сесију или Дозволи.
+
+## Exceptions - Pop-ups
+
+permissions-exceptions-popup-window =
+    .title = Омогућени веб сајтови - искачући прозори
+    .style = { permissions-window.style }
+permissions-exceptions-popup-desc = Можете да одредите којим веб сајтовима је дозвољено да отварају искачуће прозоре.  Укуцајте тачну адресу сајта којем желите да дозволите а затим притисните Дозволи.
+
+## Exceptions - Saved Logins
+
+permissions-exceptions-saved-logins-window =
+    .title = Изузеци - снимљени дневници
+    .style = { permissions-window.style }
+permissions-exceptions-saved-logins-desc = Пријаве за следеће сајтове неће бити сачуване
+
+## Exceptions - Add-ons
+
+permissions-exceptions-addons-window =
+    .title = Омогућени веб сајтови - инсталације додатака
+    .style = { permissions-window.style }
+permissions-exceptions-addons-desc = Можете да одредите којим веб сајтовима је дозвољено да инсталирају додатке. Укуцајте тачну адресу сајта којем желите да дозволите и притисните на Дозволи.
+
+## Exceptions - Autoplay Media
+
+permissions-exceptions-autoplay-media-window =
+    .title = Дозвољени веб сајтови - Аутоматска репродукција
+    .style = { permissions-window.style }
+permissions-exceptions-autoplay-media-desc = Можете да одредите којим веб сајтовима је дозвољено да аутоматски пуштају медије. Укуцајте тачну адресу сајта којем желите да дозволите и притисните на Дозволи.
+
+## Site Permissions - Notifications
+
+permissions-site-notification-window =
+    .title = Дозволе поставки и обавештења
+    .style = { permissions-window.style }
+permissions-site-notification-desc = Следећи веб сајтови су послали захтев да вам шаљу обавештења. Можете подесити којим веб сајтовима је дозвољено да вам шаљу обавештења. Такође можете блокирати нове захтеве за омогућавање обавештења.
+permissions-site-notification-disable-label =
+    .label = Блокирај нове захтеве за слање обавештења
+permissions-site-notification-disable-desc = Ово ће спречити све веб сајтове који се не налазе на листи изнад да захтевају дозволу за слање обавештења. Блокирање обавештења може лоше утицати на неке веб сајтове.
+
+## Site Permissions - Location
+
+permissions-site-location-window =
+    .title = Дозволе за локацију
+    .style = { permissions-window.style }
+permissions-site-location-desc = Следећи веб сајтови су послали захтев да приступе вашој локацији. Можете подесити којим веб сајтовима је дозвољено да приступе вашој локацији. Такође можете блокирати нове захтеве за приступ вашој локацији.
+permissions-site-location-disable-label =
+    .label = Блокирај нове захтеве за приступ вашој локацији
+permissions-site-location-disable-desc = Ово ће спречити све веб сајтове који се не налазе на листи изнад да захтевају приступ вашој локацији. Блокирање приступа вашој локацији може лоше утицати на неке веб сајтове.
+
+## Site Permissions - Camera
+
+permissions-site-camera-window =
+    .title = Дозволе за камеру
+    .style = { permissions-window.style }
+permissions-site-camera-desc = Следећи веб сајтови су послали захтев да приступе вашој камери. Можете подесити којим веб сајтовима је дозвољено да приступе вашој камери. Такође можете блокирати нове захтеве за приступ вашој камери.
+permissions-site-camera-disable-label =
+    .label = Блокирај нове захтеве за приступ вашој камери
+permissions-site-camera-disable-desc = Ово ће спречити све веб сајтове који се не налазе на листи изнад да захтевају приступ вашој камери. Блокирање приступа вашој камери може лоше утицати на неке веб сајтове.
+
+## Site Permissions - Microphone
+
+permissions-site-microphone-window =
+    .title = Дозволе за микрофон
+    .style = { permissions-window.style }
+permissions-site-microphone-desc = Следећи веб сајтови су послали захтев да приступе вашем микрофону. Можете подесити којим веб сајтовима је дозвољено да приступе вашем микрофону. Такође можете блокирати нове захтеве за приступ вашем микрофону.
+permissions-site-microphone-disable-label =
+    .label = Блокирај нове захтеве за приступ вашем микрофону
+permissions-site-microphone-disable-desc = Ово ће спречити све веб сајтове који се не налазе на листи изнад да захтевају приступ вашем микрофону. Блокирање приступа вашем микрофону може лоше утицати на неке веб сајтове.

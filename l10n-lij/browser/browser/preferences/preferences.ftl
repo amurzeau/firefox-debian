@@ -73,6 +73,41 @@ should-restart-ok = Arvi torna { -brand-short-name } oua
 cancel-no-restart-button = Anulla
 restart-later = Arvi torna Dòppo
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = 'Na estenscion, <img data-l10n-name="icon"/> { $name }, a contròlla a teu pagina prinçipâ.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = 'Na estenscion, <img data-l10n-name="icon"/> { $name }, a contròlla a teu pagina neuvo feuggio.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = 'Na estenscion, <img data-l10n-name="icon"/> { $name }, a l'à inpostou o teu motô de riçerca.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = 'Na estenscion, <img data-l10n-name="icon"/> { $name }, a domanda 'n feuggi contegnitô.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = 'Na estenscion, <img data-l10n-name="icon"/> { $name }, a contròlla a teu proteçion anti-traciamento.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = 'Na estenscion, <img data-l10n-name="icon"/> { $name } a contròlla comme { -brand-short-name } o se conette a l'Internet.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Pe abilitâ l'estenscion vanni into conponente azonto <img data-l10n-name="addons-icon"/> into menû <img data-l10n-name="menu-icon"/>.
+
 ## Preferences UI Search Results
 
 search-results-header = Exiti da riçerca
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = Fanni vedde 'na pagina gianca
 startup-prev-session =
     .label = Fanni vedde i barcoin e feuggi averti l'urtima vòtta
+startup-restore-previous-session =
+    .label = Repiggia vegia sescion
+    .accesskey = s
 disable-extension =
     .label = Dizabilita estençion
 home-page-header = Pagina Prinçipâ
@@ -297,6 +335,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Proxy da Ræ
+network-proxy-connection-description = Configura comme { -brand-short-name } o se conette a l'Internet.
 network-proxy-connection-learn-more = Pe saveine de ciù
 network-proxy-connection-settings =
     .label = Inpostaçioin…
@@ -304,7 +343,7 @@ network-proxy-connection-settings =
 
 ## Home Section
 
-home-new-windows-tabs-header = Neuvi Barcoin e fueggi
+home-new-windows-tabs-header = Neuvi Barcoin e feuggi
 home-new-windows-tabs-description2 = Çerni cöse ti veu vedde quande ti arvi a pagina prinçipâ, neuvi barcoin e neuvi feuggi.
 
 ## Home Section - Home Page Customization
@@ -540,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Aregòrda a stöia de navegaçion e descaregamenti
     .accesskey = ç
+history-remember-browser-option =
+    .label = Aregòrda a stöia de navegaçion e descaregamenti
+    .accesskey = n
 history-remember-search-option =
     .label = Aregòrda e riçerche e a stöia di mòdoli
     .accesskey = l
@@ -556,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cookie e Dæti di Sciti
+sitedata-total-size-calculating = Conto a dimenscion di dæti e da cache…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = I cookie, dæti do scito e cache deuvian { $value } { $unit } de spaçion in sciô disco.
 sitedata-learn-more = Pe saveine de ciù
 sitedata-accept-cookies-option =
     .label = Acetta cookie e dæti di sciti da-i sciti (consegiou)
@@ -650,6 +697,12 @@ permissions-notification-link = Atre informaçioin
 permissions-notification-pause =
     .label = Ferma notificaçioin scinché { -brand-short-name } o no s'arve torna
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = Blòcca in aotomatico i sciti che fan sunâ in aotomatico i media.
+    .accesskey = B
+permissions-block-autoplay-media-exceptions =
+    .label = Eceçioin…
+    .accesskey = E
 permissions-block-popups =
     .label = Blòcca i barcoin de pop-up
     .accesskey = B
@@ -676,6 +729,9 @@ collection-health-report =
     .label = Permetti a { -brand-short-name } de mandâ dæti tecnichi e de interaçion a { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Atre informaçioin
+collection-studies =
+    .label = Pemetti a { -brand-short-name } de instalâ e xoâ studdi
+collection-studies-link = Amia i studde de { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = O report di dæti o l'é dizabilitou pe sta configuraçion

@@ -73,6 +73,41 @@ should-restart-ok = Adloc'hañ { -brand-short-name } diouzhtu
 cancel-no-restart-button = Nullañ
 restart-later = Adloc'hañ diwezhatoc'h
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Un askouezh, <img data-l10n-name="icon"/> { $name }, a zo o reoliñ ho pennbajenn.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Un askouezh, <img data-l10n-name="icon"/> { $name }, a zo o reoliñ ho pajenn ivinell nevez.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Kemmet eo bet ho keflusket enklask dre ziouer gant un askouezh, <img data-l10n-name="icon"/> { $name }.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Un askouezh, <img data-l10n-name="icon"/> { $name }, a azgoulenn ivinelloù endalc'her.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Un askouezh, <img data-l10n-name="icon"/> { $name }, a zo o reoliañ ar gwarez heuliañ.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Un askouezh, <img data-l10n-name="icon"/> { $name }, a zo o reoliñ an doare da gennaskañ ouzh ar genrouedad implijet gant { -brand-short-name }.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Evit gweredekaat an askouezh, kit e Askouezhioù <img data-l10n-name="addons-icon"/> el lañser <img data-l10n-name="menu-icon"/>.
+
 ## Preferences UI Search Results
 
 search-results-header = Disoc'hoù ar c'hlask
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = Diskouez ur bajenn wenn
 startup-prev-session =
     .label = Diskouez ma frenestroù hag ivinelloù evel ar wech diwezhañ
+startup-restore-previous-session =
+    .label = Assav an estez kent
+    .accesskey = A
 disable-extension =
     .label = Diweredekaat an askouezh
 home-page-header = Pennbajenn
@@ -144,12 +182,16 @@ containers-disable-alert-desc =
     { $tabCount ->
         [one] Ma ziweredekait an ivinelloù endalc'her bremañ e vo serret { $tabCount } ivinell endalc'her. Sur oc'h e fell deoc'h diweredekaat an ivinelloù endalc'her?
         [two] Ma ziweredekait an ivinelloù endalc'her bremañ e vo serret { $tabCount } ivinell endalc'her. Sur oc'h e fell deoc'h diweredekaat an ivinelloù endalc'her?
+        [few] Ma ziweredekait an ivinelloù endalc'her bremañ e vo serret { $tabCount } ivinell endalc'her. Sur oc'h e fell deoc'h diweredekaat an ivinelloù endalc'her?
+        [many] Ma ziweredekait an ivinelloù endalc'her bremañ e vo serret { $tabCount } a ivinelloù endalc'her. Sur oc'h e fell deoc'h diweredekaat an ivinelloù endalc'her?
        *[other] Ma ziweredekait an ivinelloù endalc'her bremañ e vo serret { $tabCount } ivinell endalc'her. Sur oc'h e fell deoc'h diweredekaat an ivinelloù endalc'her?
     }
 containers-disable-alert-ok-button =
     { $tabCount ->
         [one] Serriñ { $tabCount } ivinell endalc'her
         [two] Serriñ { $tabCount } ivinell endalc'her
+        [few] Serriñ { $tabCount } ivinell endalc'her
+        [many] Serriñ { $tabCount } a ivinelloù endalc'her
        *[other] Serriñ { $tabCount } ivinell endalc'her
     }
 containers-disable-alert-cancel-button = Leuskel gweredekaet
@@ -302,6 +344,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Proksi ar rouedad
+network-proxy-connection-description = Kefluniañ an doare da gennaskañ ouzh ar genrouedad implijet gant { -brand-short-name }.
 network-proxy-connection-learn-more = Gouzout hiroc'h
 network-proxy-connection-settings =
     .label = Arventennoù…
@@ -310,6 +353,7 @@ network-proxy-connection-settings =
 ## Home Section
 
 home-new-windows-tabs-header = Prenestroù hag ivinelloù nevez
+home-new-windows-tabs-description2 = Dibabit petra vo gwelet ganeoc'h pa vezot o tigeriñ ho pennbajenn, prenestroù, pe ivinelloù nevez.
 
 ## Home Section - Home Page Customization
 
@@ -500,6 +544,9 @@ privacy-header = Prevezted ar merdeer
 ## Privacy Section - Forms
 
 forms-header = Furmskridoù & Gerioù-tremen
+forms-ask-to-save-logins =
+    .label = Goulenn enrollañ an titouroù kennaskañ evit al lec'hiennoù 
+    .accesskey = G
 forms-exceptions =
     .label = Nemedennoù…
     .accesskey = m
@@ -541,6 +588,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Derc'hel soñj ma roll istor ha ma fellgargadurioù
     .accesskey = r
+history-remember-browser-option =
+    .label = Derc'hel soñj eus ar roll-istor merdeiñ ha pellgargañ
+    .accesskey = D
 history-remember-search-option =
     .label = Derc'hel soñj ar c'hlaskoù hag ar furmskridoù
     .accesskey = h
@@ -557,6 +607,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Toupinoù ha roadennoù lec'hienn
+sitedata-total-size-calculating = O jediñ ment roadennoù ha krubuilh al lec'hienn…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Ho toupinoù, roadennoù lec'hienn ha krubuilh kadavet a zo oc'h arverañ { $value } { $unit } war ho kantenn.
 sitedata-learn-more = Gouzout hiroc'h
 sitedata-accept-cookies-option =
     .label = Asantiñ an toupinoù hag ar roadennoù lec'hienn eus al lec'hiennoù web (erbedet)
@@ -651,6 +706,12 @@ permissions-notification-link = Gouzout hiroc'h
 permissions-notification-pause =
     .label = Ehanañ ar rebuzadurioù betek ma vefe adloc'het { -brand-short-name }
     .accesskey = E
+permissions-block-autoplay-media =
+    .label = Difenn al lec'hiennoù da lenn ar media gant son ent emgefreek
+    .accesskey = D
+permissions-block-autoplay-media-exceptions =
+    .label = Nemedennoù...
+    .accesskey = N
 permissions-block-popups =
     .label = Herzel an diflugelloù
     .accesskey = H
@@ -677,6 +738,9 @@ collection-health-report =
     .label = Aotren { -brand-short-name } da gas roadennoù teknikel hag etrewerzhañ da v{ -vendor-short-name }
     .accesskey = A
 collection-health-report-link = Gouzout hiroc'h
+collection-studies =
+    .label = Aotren { -brand-short-name } da staliañ ha lañsañ studiadennoù
+collection-studies-link = Gwelout studiadennoù { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Diweredekaet eo an danevelliñ roadennoù evit kefluniadur ar c'hempunadur-mañ

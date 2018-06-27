@@ -73,6 +73,41 @@ should-restart-ok = Emoñepyrũjey { -brand-short-name } ko'ág̃a
 cancel-no-restart-button = Heja
 restart-later = Emoñepyrũjey ag̃ave
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Peteĩ jepysokue, <img data-l10n-name="icon"/> { $name }, oma'ẽag̃ui nde kuatiarogue ñepyrũ.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Peteĩ jepysokue, <img data-l10n-name="icon"/> { $name }, oma'ẽag̃ui kuatiarogue rendayke pyahúre.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Peteĩ moĩmbaha, <img data-l10n-name="icon"/> { $name }, omoambue Heka ku'eha reipurúva.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Peteĩ moĩmbaha, <img data-l10n-name="icon"/> { $name }, oikotevẽ Tendayke Ryru rehe.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Peteĩ jepysokue, <img data-l10n-name="icon"/> { $name }, oma'ẽag̃ui temiñemi ñemo'ã rehe.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Peteĩ jepysokue, <img data-l10n-name="icon"/> { $name }, oma'ẽag̃ui { -brand-short-name } ramo ojuajúvo ñanduti rehe.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Emyendy hag̃ua moĩmbaha rehova'erã <img data-l10n-name="addons-icon"/> Moĩmbaha poravorã rysýi <img data-l10n-name="menu-icon"/> pe.
+
 ## Preferences UI Search Results
 
 search-results-header = Jehekakue rehegua
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = Peteĩ kuatiarogue nandi jehechauka
 startup-prev-session =
     .label = Ovetã ha tendaykekuéra tembiapo paha rehegua jehechauka
+startup-restore-previous-session =
+    .label = Embojevy tembiapo mboyveguávape
+    .accesskey = s
 disable-extension =
     .label = Moĩmbaha Monge
 home-page-header = Kuatiarogue ñepyrũ
@@ -297,6 +335,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Proxy ñanduti rehegua
+network-proxy-connection-description = Emboheko { -brand-short-name } ramo ojuajúvo ñanduti rehe.
 network-proxy-connection-learn-more = Kuaave
 network-proxy-connection-settings =
     .label = Ñemboheko…
@@ -540,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Tembiasakue mboguejy ha kundaha rehegua Mandu'a
     .accesskey = M
+history-remember-browser-option =
+    .label = Kundaha rembiasakue ha ñemboguejy mandu’a
+    .accesskey = b
 history-remember-search-option =
     .label = Tembiasakue myanyhẽha ha jehekaha momangu'a
     .accesskey = f
@@ -556,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Kookie ha tenda mbakuaarã
+sitedata-total-size-calculating = Eikuaase tenda mba'ekuaarã ha kache tuichakue…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Umi kookie ñembyytpyre, tenda mba'ekuaarã ha kache mandu'arenda oipuru porã ko'ag̃aite { $value } { $unit } pe disco pegua pa'ũ.
 sitedata-learn-more = Kuaave
 sitedata-accept-cookies-option =
     .label = Emoñeĩ kookie ha ñanduti renda mba'ekuaarã (jeroviapyrãva)
@@ -650,6 +697,12 @@ permissions-notification-link = Eikuaave
 permissions-notification-pause =
     .label = Tojejoko momarandu'i oñepyrũjey peve { -brand-short-name }
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = Ejoko ñanduti renda ani hag̃ua omboheta ijehegui mba’epu ndive
+    .accesskey = B
+permissions-block-autoplay-media-exceptions =
+    .label = Ykepegua...
+    .accesskey = E
 permissions-block-popups =
     .label = Ovetã apysẽ joko
     .accesskey = B
@@ -676,6 +729,9 @@ collection-health-report =
     .label = Toñemoneĩ { -brand-short-name } omondo hag̃ua kuaapy aporeko rehegua { -vendor-short-name }-pe
     .accesskey = r
 collection-health-report-link = Kuaave
+collection-studies =
+    .label = Emoneĩ { -brand-short-name } omohenda ha omongu’e hag̃ua kuaarã
+collection-studies-link = Ehecha kuaarã { -brand-short-name } mba’éva
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Pe mba'ekuaarã momarandu oñemboguéma ko ñemboheko guasúpe g̃uarã

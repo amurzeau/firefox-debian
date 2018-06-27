@@ -35,6 +35,9 @@ left instead of right. -->
 <!ENTITY  closeOtherTabs.label               "Cau Tabiau Eraill">
 <!ENTITY  closeOtherTabs.accesskey           "C">
 
+<!ENTITY  closeSelectedTabs.label            "Cau'r Tabiau Hyn">
+<!ENTITY  closeSelectedTabs.accesskey        "T">
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -54,6 +57,8 @@ can reach it easily. -->
 <!ENTITY  sendToDeviceOfflineFeedback.label  "Mewn Ciw (all-lein)">
 <!ENTITY  moveToNewWindow.label              "Symud i Ffenestr Newydd">
 <!ENTITY  moveToNewWindow.accesskey          "N">
+<!ENTITY  reopenInContainer.label            "Ail agor mewn Cynhwysydd">
+<!ENTITY  reopenInContainer.accesskey        "A">
 <!ENTITY  bookmarkAllTabs.label              "Nod Tudalen i Bob Tab…">
 <!ENTITY  bookmarkAllTabs.accesskey          "T">
 <!ENTITY  undoCloseTab.label                 "Dadwneud Cau'r Tab">
@@ -129,7 +134,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "Dangos Pob Tab">
 <!ENTITY showAllTabsCmd.accesskey "a">
 <!ENTITY toggleReaderMode.key "R">
-
 <!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "Mewngofnodi i &syncBrand.shortName.label;">
@@ -189,10 +193,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY otherBookmarksCmd.label "Nodau Tudalen Eraill">
 <!ENTITY mobileBookmarksCmd.label "Nodau Tudalen Symudol">
 <!ENTITY bookmarksToolbarChevron.tooltip "Dangos pob ffolder nod tudalen">
-<!ENTITY showRecentlyBookmarked.label     "Dangos Nodau Tudalen Ddiweddar">
-<!ENTITY showRecentlyBookmarked.accesskey "D">
-<!ENTITY hideRecentlyBookmarked.label     "Cuddio Nodau Tudalen Ddiweddar">
-<!ENTITY hideRecentlyBookmarked.accesskey "C">
 
 <!ENTITY backCmd.label                "Nôl">
 <!ENTITY backCmd.accesskey            "N">
@@ -234,7 +234,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translateNotificationAnchor.tooltip       "Cyfieithu'r dudalen hon">
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Rheoli cyfieithu tudalennau">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Rheoli'r defnydd o feddalwedd DRM">
-
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "Agor panel MIDI">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Rydych wedi diffodd eich camera ar gyfer y wefan hon.">
@@ -245,7 +244,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Rydych wedi rhwystro storio data parhaus ar gyfer y wefan hon.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Rydych wedi rhwystro llamlenni ar gyfer y wefan hon.">
 <!ENTITY urlbar.canvasBlocked.tooltip            "Rydych wedi rhwystro tynnu data canvas o'r wefan hon.">
-
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "Rydych wedi rhwystro'r wefan yma rhag defnyddio ategyn Adobe Flash.">
 <!ENTITY urlbar.midiBlocked.tooltip              "Rydych wedi rhwystro mynediad MIDI ar gyfer y wefan hon.">
 
@@ -255,6 +253,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!-- Toolbar items -->
 <!ENTITY homeButton.label             "Cartref">
+
+<!ENTITY homeButton.defaultPage.tooltip "Cartref &brandShortName;">
 
 <!ENTITY bookmarksButton.label          "Nodau Tudalen">
 <!ENTITY bookmarksCmd.commandkey "b">
@@ -395,7 +395,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Hoffech chi weld eich tabiau o ddyfeisiau eraill yma?">
-<!ENTITY appMenuRemoteTabs.openprefs.label "Dewisiadau Cydweddu">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Agor Dewisiadau Sync">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Mewngofnodwch i weld rhestr o dabiau o'ch dyfeisiau eraill.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Mae angen i'ch cyfrif cael ei gwirio.">
@@ -437,6 +436,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.addMoreItems.label "Ychwanegu Rhagor o Eitemau…">
 <!ENTITY customizeMenu.addMoreItems.accesskey "Y">
 
+<!ENTITY customizeMenu.autoHideDownloadsButton.label "Awtoguddio yn y Bar Offer">
+<!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "A">
+<!ENTITY customizeMenu.manageExtension.label "Rheoli Estyniad">
+<!ENTITY customizeMenu.manageExtension.accesskey "E">
+
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
     secondary commands. -->
@@ -444,7 +448,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Chwilio neu gyfeiriad gwe">
-<!ENTITY urlbar.placeholder3          "Rhowch eiriau a chyfeiriadau chwilio yma">
 <!ENTITY urlbar.accesskey             "g">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Estyniad:">
@@ -798,6 +801,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.moreInfoLinkText2 "Rhagor o Wybodaeth">
 
+<!ENTITY identity.clearSiteData "Clirio Data Cwcis a Gwefan…">
+
 <!ENTITY identity.permissions "Caniatâd">
 <!ENTITY identity.permissionsEmpty "Nid ydych wedi rhoi i'r wefan hon unrhyw ganiatâd arbennig.">
 <!ENTITY identity.permissionsReloadHint "Efallai y bydd angen ail lwytho'r dudalen i newidiadau ddod ar waith.">
@@ -901,6 +906,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.allWindowsShared.message "Bydd pob ffenestr gweladwy ar eich sgrin yn cael eu rhannu.">
 
 <!ENTITY trackingProtection.title "Diogelwch Rhag Tracio">
+<!ENTITY trackingProtection.tooltip "Agor Dewisiadau Diogelu rhag Tracio">
 <!ENTITY trackingProtection.detectedBlocked3 "Mae &brandShortName; yn rhwystro rhannau o'r dudalen gall fod yn tracio eich pori.">
 <!ENTITY trackingProtection.detectedNotBlocked3 "Rydych wedi analluogi diogelwch ar y dudalen hon. Rydych wedi analluogi diogelwch.">
 <!ENTITY trackingProtection.notDetected3 "Nid oes elfennau tracio wedi eu canfod ar y dudalen hon.">
@@ -988,14 +994,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "N">
 <!ENTITY updateRestart.panelUI.label2 "Ailgychwyn i ddiweddaru &brandShorterName;">
 
-<!ENTITY newTabControlled.message "Mae estyniad wedi newid y dudalen rydych yn ei gweld pan fyddwch yn agor Tab Newydd. Gallwch adfer eich gosodiadau os nad ydych yn dymuno'r newid hwn.">
-
 <!ENTITY newTabControlled.header.message "Mae eich Tab Newydd wedi newid.">
 <!ENTITY newTabControlled.keepButton.label "Cadw Newidiadau">
 <!ENTITY newTabControlled.keepButton.accesskey "N">
-<!ENTITY newTabControlled.restoreButton.label "Adfer y Gosodiadau">
-<!ENTITY newTabControlled.restoreButton.accesskey "A">
-
 <!ENTITY newTabControlled.disableButton.label "Analluogi Estyniad">
 <!ENTITY newTabControlled.disableButton.accesskey "A">
 
@@ -1005,6 +1006,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY homepageControlled.keepButton.accesskey "C">
 <!ENTITY homepageControlled.disableButton.label "Analluogi'r Estyniad">
 <!ENTITY homepageControlled.disableButton.accesskey "A">
+
+<!ENTITY tabHideControlled.header.message "Mynd i’ch Tabiau Cudd">
+<!ENTITY tabHideControlled.keepButton.label "Cadw Tabiau’n Gudd">
+<!ENTITY tabHideControlled.keepButton.accesskey "C">
+<!ENTITY tabHideControlled.disableButton.label "Analluogi’r Estyniad">
+<!ENTITY tabHideControlled.disableButton.accesskey "A">
 
 <!ENTITY pageActionButton.tooltip "Gweithredoedd tudalen">
 <!ENTITY pageAction.addToUrlbar.label "Ychwanegu i'r Llyfr Cyfeiriadau">
@@ -1029,4 +1036,4 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- LOCALIZATION NOTE: (addonPostInstallMessage.label):
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
-<!ENTITY addonPostInstallMessage.label "Rheoli eich ychwanegion drwy glicio <image class='addon-addon-icon'/> yn y <image class='addon-toolbar-icon'/> ddewislen.">
+<!ENTITY addonPostInstallMessage.label "Rheolwch eich ychwanegion drwy glicio <image class='addon-addon-icon'/> yn newislen <image class='addon-toolbar-icon'/>.">

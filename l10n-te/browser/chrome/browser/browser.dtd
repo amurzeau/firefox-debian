@@ -35,6 +35,9 @@ left instead of right. -->
 <!ENTITY  closeOtherTabs.label               "మిగతా ట్యాబులను మూసివేయి">
 <!ENTITY  closeOtherTabs.accesskey           "o">
 
+<!ENTITY  closeSelectedTabs.label            "ఎంచుకున్న ట్యాబులను మూసివేయి">
+<!ENTITY  closeSelectedTabs.accesskey        "S">
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -54,6 +57,7 @@ can reach it easily. -->
 <!ENTITY  sendToDeviceOfflineFeedback.label  "క్యూడ్ (ఆఫ్‌లైన్)">
 <!ENTITY  moveToNewWindow.label              "కొత్త విండోకి తరలించు">
 <!ENTITY  moveToNewWindow.accesskey          "W">
+<!ENTITY  reopenInContainer.accesskey        "e">
 <!ENTITY  bookmarkAllTabs.label              "ట్యాబులన్నింటినీ ఇష్టాంశాలుగా చేయి…">
 <!ENTITY  bookmarkAllTabs.accesskey          "T">
 <!ENTITY  undoCloseTab.label                 "మూసిన ట్యాబుని తిరిగి తెరువు">
@@ -129,7 +133,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "ట్యాబులన్నింటినీ చూపించు">
 <!ENTITY showAllTabsCmd.accesskey "A">
 <!ENTITY toggleReaderMode.key "R">
-
 <!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "&syncBrand.shortName.label; లోకి ప్రవేశించండి">
@@ -189,10 +192,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY otherBookmarksCmd.label "ఇతర ఇష్టాంశాలు">
 <!ENTITY mobileBookmarksCmd.label "మొబైలు ఇష్టాంశాలు">
 <!ENTITY bookmarksToolbarChevron.tooltip "మరిన్ని ఇష్టాంశాలను చూపించు">
-<!ENTITY showRecentlyBookmarked.label     "ఇటీవలి ఇష్టాంశాలను చూపించు">
-<!ENTITY showRecentlyBookmarked.accesskey "h">
-<!ENTITY hideRecentlyBookmarked.label     "ఇటీవలి ఇష్టాంశాలను దాచు">
-<!ENTITY hideRecentlyBookmarked.accesskey "H">
 
 <!ENTITY backCmd.label                "వెనుకకు">
 <!ENTITY backCmd.accesskey            "B">
@@ -233,7 +232,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translateNotificationAnchor.tooltip       "ఈ పేజీని అనువదించండి">
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "పేజీ అనువాదాన్ని నిర్వహించండి">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "DRM సాఫ్ట్‌వేరు వాడుకను నిర్వహించండి">
-
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "MIDI ప్యానెల్ తెరువు">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "మీ కెమెరాను వాడకుండా ఈ వెబ్‌సైటుని నిరోధించారు.">
@@ -244,7 +242,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "మీరు ఈ వెబ్సైట్ కోసం నిరంతర నిల్వ నిరోధించారు.">
 <!ENTITY urlbar.popupBlocked.tooltip             "మీరు ఈ వెబ్‌సైటు యొక్క పాప్-అప్లను నిరోధించారు.">
 <!ENTITY urlbar.canvasBlocked.tooltip            "ఈ వెబ్‌సైటుని కాన్వాస్ డేటా వెలికితీయకుండా మీరు నిరోధించారు.">
-
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "అడోబి ఫ్లాష్ చొప్పింతను వాడనీయకుండా ఈ వెబ్‌సైటును మీరు నిరోధించారు.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "చరిత్రను చూపించు">
@@ -253,6 +250,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!-- Toolbar items -->
 <!ENTITY homeButton.label             "ముంగిలి">
+
+<!ENTITY homeButton.defaultPage.tooltip "&brandShortName; ముంగిలి పేజీ">
 
 <!ENTITY bookmarksButton.label          "ఇష్టాంశాలు">
 <!ENTITY bookmarksCmd.commandkey "b">
@@ -267,6 +266,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hideBookmarksToolbar.label         "ఇష్టాంశాల పనిముట్లపట్టీని దాచు">
 <!ENTITY searchBookmarks.label              "ఇష్టాంశాలను శోధించు">
 <!ENTITY bookmarkingTools.label             "ఇష్టాంశాల పనిముట్లు">
+<!ENTITY addBookmarksMenu.label             "ఉపకరణపట్టీకి ఇష్టాంశాల మెనూని జోడించండి">
+<!ENTITY removeBookmarksMenu.label          "ఉపకరణపట్టీ నుండి ఇష్టాంశాల మెనుని తీసివేయండి">
 
 <!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
@@ -390,7 +391,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "ఇతర పరికరాలలో తెరిచివున్న మీ ట్యాబులను ఇక్కడ చూడాలనుకుంటున్నారా?">
-<!ENTITY appMenuRemoteTabs.openprefs.label "సింక్ అభిరుచులు">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Sync అభిరుచులను తెరువు">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "మీ ఇతర పరికరాల లోని ట్యాబుల జాబితాను చూడడానికి సైన్ ఇన్ అవ్వండి.">
 <!ENTITY appMenuRemoteTabs.unverified.label "మీ ఖాతాను తనిఖీ చెయ్యాలి.">
@@ -431,6 +431,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.removeFromMenu.accesskey "R">
 <!ENTITY customizeMenu.addMoreItems.label "మరిన్ని అంశాలను చేర్చండి…">
 <!ENTITY customizeMenu.addMoreItems.accesskey "A">
+
+<!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "A">
+<!ENTITY customizeMenu.manageExtension.label "పొడగింత నిర్వహణ">
+<!ENTITY customizeMenu.manageExtension.accesskey "E">
 
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
@@ -485,7 +489,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!-- LOCALIZATION NOTE (searchInput.placeholder):
      This string is displayed in the search box when the input field is empty. -->
-<!ENTITY searchInput.placeholder      "వెతుకు">
+<!ENTITY searchInput.placeholder      "వెతకండి">
 <!ENTITY searchIcon.tooltip           "వెతుకు">
 
 <!-- LOCALIZATION NOTE (searchFor.label, searchWith.label):
@@ -792,6 +796,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.moreInfoLinkText2 "మరింత సమాచారం">
 
+
 <!ENTITY identity.permissions "అనుమతులు">
 <!ENTITY identity.permissionsEmpty "ఈ సైటుకి మీరు ఎటువoటి ప్రత్యేక అనుమతులు ఇవ్వలేదు.">
 <!ENTITY identity.permissionsReloadHint "మార్పులు ప్రతిఫలించడానికి మీరు ఈ పేజీని మళ్ళీ లోడు చెయ్యాల్సిరావచ్చు.">
@@ -979,13 +984,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "N">
 <!ENTITY updateRestart.panelUI.label2 "&brandShorterName;‌ను తాజాకరించడానికి పునఃప్రారంభించండి">
 
-
 <!ENTITY newTabControlled.header.message "మీ కొత్త ట్యాబు మారిపోయింది.">
 <!ENTITY newTabControlled.keepButton.label "మార్పులను ఉండనివ్వు">
 <!ENTITY newTabControlled.keepButton.accesskey "K">
-<!ENTITY newTabControlled.restoreButton.label "అమరికలను పునరుద్ధరించు">
-<!ENTITY newTabControlled.restoreButton.accesskey "R">
-
 <!ENTITY newTabControlled.disableButton.label "పొడగింతను అనేతనం చేయి">
 <!ENTITY newTabControlled.disableButton.accesskey "D">
 
@@ -994,6 +995,11 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY homepageControlled.keepButton.accesskey "K">
 <!ENTITY homepageControlled.disableButton.label "పొడగింతను అచేతనం చేయి">
 <!ENTITY homepageControlled.disableButton.accesskey "D">
+
+<!ENTITY tabHideControlled.keepButton.label "ట్యాబులను దాచి ఉంచు">
+<!ENTITY tabHideControlled.keepButton.accesskey "K">
+<!ENTITY tabHideControlled.disableButton.label "పొడగింతను అచేతనం చేయి">
+<!ENTITY tabHideControlled.disableButton.accesskey "D">
 
 <!ENTITY pageActionButton.tooltip "పేజీ చర్యలు">
 <!ENTITY pageAction.addToUrlbar.label "చిరునామా పట్టీకి చేర్చండి">

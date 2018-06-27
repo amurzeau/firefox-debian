@@ -70,6 +70,15 @@
 
 <!ENTITY url_bar_default_text2 "Bilatu edo idatzi helbidea">
 
+<!-- Localization note (url_bar_qrcode_text2) : This text will be
+     heard by non-visual users when the focus is on the QR Code
+     icon in the url bar. -->
+<!ENTITY url_bar_qrcode_text2 "Erabili zure QR irakurgailua bilatzeko edo idatzi helbidea">
+<!-- Localization note (url_bar_mic_text2) : This text will be
+     heard by non-visual users when the focus is on the Microphone
+     icon in the url bar. -->
+<!ENTITY url_bar_mic_text2 "Erabili zure mikrofonoa bilatzeko edo idatzi helbidea">
+
 <!ENTITY bookmark "Laster-marka">
 <!ENTITY bookmark_remove "Kendu laster-marka">
 <!ENTITY bookmark_added "Laster-marka gehituta">
@@ -207,6 +216,7 @@
 <!ENTITY pref_category_advanced_summary3 "Berreskuratu fitxak, datuak gordetzekoa, garatzaile-tresnak">
 <!ENTITY pref_category_notifications "Jakinarazpenak">
 <!ENTITY pref_category_notifications_summary "Eginbide berriak, webguneen eguneraketak">
+<!ENTITY pref_category_notifications_summary2 "Eginbide berriak, produktuari buruzko aholkuak">
 <!ENTITY pref_developer_remotedebugging_usb "USB bidezko urruneko arazketa">
 <!ENTITY pref_developer_remotedebugging_wifi "Wi-Fi bidezko urruneko arazketa">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Wi-Fi bidezko arazketak zure gailuak QR kodeen irakugailua instalatuta izatea behar du.">
@@ -281,6 +291,13 @@
 
 <!ENTITY pref_whats_new_notification "&brandShortName;(e)n berrikuntzak">
 <!ENTITY pref_whats_new_notification_summary "Jaso eginbide berriei buruzko argibideak eguneraketen ondoren">
+
+<!-- Localization note (pref_feature_tips_notification): Title of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification"-->
+<!ENTITY pref_feature_tips_notification "Produktuari eta eginbideei buruzko aholkuak">
+<!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification_summary"-->
+<!ENTITY pref_feature_tips_notification_summary "&brandShortName; eta beste &vendorShortName; produktuak erabiltzeko argibide gehiago">
 
 <!-- Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
      for experimental features. -->
@@ -422,7 +439,6 @@
      crashReporterDesc.label). -->
 <!ENTITY datareporting_fhr_title "&brandShortName;(r)en osasun-txostena">
 <!ENTITY datareporting_fhr_summary2 "Nabigatzailearen osasunari buruzko datuak partekatzen ditu &vendorShortName;(r)ekin eta nabigatzailearen errendimendua ulertzen laguntzen dizu">
-<!ENTITY datareporting_abouthr_title "Ikusi osasun-txostena">
 <!ENTITY datareporting_telemetry_title "Telemetry">
 <!ENTITY datareporting_telemetry_summary "Nabigatzailearen errendimenduaren, erabilpenaren, hardwarearen eta pertsonalizazioen inguruko datuak partekatzen ditu &vendorShortName;(r)ekin &brandShortName; hobetzen laguntzeko">
 <!ENTITY datareporting_crashreporter_summary "&brandShortName;(e)k hutsegite-txostenak bidaltzen ditu &vendorShortName;(r)i nabigatzaile egonkorragoa eta seguruagoa egiten laguntzeko">
@@ -537,7 +553,7 @@
 <!ENTITY pref_compact_tabs_summary2 "Antolatu fitxak bi zutabetan modu bertikalean">
 
 <!-- Localization note (page_removed): This string appears in a toast message when
-     any page is removed frome about:home. This includes pages that are in history,
+     any page is removed from about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "Orria kenduta">
 <!ENTITY folder_removed "Karpeta kenduta">
@@ -752,7 +768,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      "Last synced" is one of the user's other Sync clients, typically Firefox on
      their desktop or laptop.-->
 <!ENTITY remote_tabs_last_synced "Azken sinkronizazioa: &formatS;">
-<!-- Localization note: Used when the sync has not happend yet, showed in place of a date -->
+<!-- Localization note: Used when the sync has not happened yet, showed in place of a date -->
 <!ENTITY remote_tabs_never_synced "Azken sinkronizazioa: inoiz ez">
 
 <!-- LOCALIZATION NOTE (intent_uri_private_browsing_prompt): This string will

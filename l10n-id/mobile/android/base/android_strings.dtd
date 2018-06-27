@@ -70,6 +70,15 @@
 
 <!ENTITY url_bar_default_text2 "Cari atau masukkan alamat">
 
+<!-- Localization note (url_bar_qrcode_text2) : This text will be
+     heard by non-visual users when the focus is on the QR Code
+     icon in the url bar. -->
+<!ENTITY url_bar_qrcode_text2 "Gunakan Pembaca QR untuk mencari atau memasukkan alamat">
+<!-- Localization note (url_bar_mic_text2) : This text will be
+     heard by non-visual users when the focus is on the Microphone
+     icon in the url bar. -->
+<!ENTITY url_bar_mic_text2 "Gunakan mikrofon untuk mencari atau memasukkan alamat">
+
 <!ENTITY bookmark "Markah">
 <!ENTITY bookmark_remove "Hapus markah">
 <!ENTITY bookmark_added "Markah ditambahkan">
@@ -207,9 +216,10 @@
 <!ENTITY pref_category_advanced_summary3 "Pulihkan tab, penghemat data, alat pengembang">
 <!ENTITY pref_category_notifications "Notifikasi">
 <!ENTITY pref_category_notifications_summary "Fitur baru, pembaruan situs web">
-<!ENTITY pref_developer_remotedebugging_usb "Pendebugan daring via USB">
-<!ENTITY pref_developer_remotedebugging_wifi "Pendebugan daring via Wi-Fi">
-<!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Pendebugan Wi-Fi mewajibkan pada peranti Anda telah terpasang aplikasi pembaca kode QR.">
+<!ENTITY pref_category_notifications_summary2 "Fitur baru, kiat produk">
+<!ENTITY pref_developer_remotedebugging_usb "Pendebugan jarak jauh via USB">
+<!ENTITY pref_developer_remotedebugging_wifi "Pendebugan jarak jauh via Wi-Fi">
+<!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Pendebugan Wi-Fi mewajibkan pada perangkat Anda telah terpasang aplikasi pembaca kode QR.">
 <!ENTITY pref_remember_signons2 "Ingat info masuk">
 <!ENTITY pref_manage_logins "Kelola info masuk">
 
@@ -269,7 +279,7 @@
 <!ENTITY pref_tap_to_load_images_disabled2 "Terblokir">
 
 <!ENTITY pref_show_web_fonts "Tampilkan font web">
-<!ENTITY pref_show_web_fonts_summary2 "Unduh font daring ketika memuat halaman">
+<!ENTITY pref_show_web_fonts_summary2 "Unduh font jarak jauh ketika memuat halaman">
 
 <!ENTITY pref_tracking_protection_title2 "Perlindungan Pelacakan">
 <!ENTITY pref_donottrack_title "Jangan lacak">
@@ -284,6 +294,7 @@
 
 <!-- Localization note (pref_feature_tips_notification): Title of a new toggleable setting in Settings-Notifications screen.
      Similar to the already existing "pref_whats_new_notification"-->
+<!ENTITY pref_feature_tips_notification "Kiat dan fitur produk">
 <!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
      Similar to the already existing "pref_whats_new_notification_summary"-->
 <!ENTITY pref_feature_tips_notification_summary "Pelajari lebih lanjut tentang &brandShortName; dan produk &vendorShortName; lainnya">
@@ -542,7 +553,7 @@
 <!ENTITY pref_compact_tabs_summary2 "Atur tab menjadi dua kolom dalam mode tegak">
 
 <!-- Localization note (page_removed): This string appears in a toast message when
-     any page is removed frome about:home. This includes pages that are in history,
+     any page is removed from about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "Laman dihapus">
 <!ENTITY folder_removed "Folder dihapus">
@@ -624,16 +635,16 @@
 <!ENTITY home_remote_tabs_hidden_devices_title "Perangkat tersembunyi">
 <!-- Localization note (home_remote_tabs_unhide_selected_devices) : This is
      the text of a button; we expect more than one device. -->
-<!ENTITY home_remote_tabs_unhide_selected_devices "Tampilkan perangkat dipilih">
+<!ENTITY home_remote_tabs_unhide_selected_devices "Tampilkan perangkat terpilih">
 
 <!-- Localization note (home_pinned_site) : This is a snackbar label displayed after
     a site is pinned or unpinned. -->
 <!ENTITY home_pinned_site "Situs tersemat">
 <!ENTITY home_unpinned_site "Situs tidak disemat">
 
-<!ENTITY remote_tabs_panel_moved_title "Di mana tab saya?">
-<!ENTITY remote_tabs_panel_moved_desc "Kami telah memindahkan tab dari perangkat lain ke panel di beranda agar mudah diakses saat Anda membuka tab baru.">
-<!ENTITY remote_tabs_panel_moved_link "Buka panel baru.">
+<!ENTITY remote_tabs_panel_moved_title "Ke mana tab saya?">
+<!ENTITY remote_tabs_panel_moved_desc "Kami telah memindahkan tab Anda dari perangkat lain ke panel di beranda yang mudah diakses setiap kali Anda membuka tab baru.">
+<!ENTITY remote_tabs_panel_moved_link "Bawa saya menuju panel baru.">
 
 <!ENTITY pin_site_dialog_hint "Masukkan yang dicari">
 
@@ -757,7 +768,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      "Last synced" is one of the user's other Sync clients, typically Firefox on
      their desktop or laptop.-->
 <!ENTITY remote_tabs_last_synced "Terakhir disinkronkan: &formatS;">
-<!-- Localization note: Used when the sync has not happend yet, showed in place of a date -->
+<!-- Localization note: Used when the sync has not happened yet, showed in place of a date -->
 <!ENTITY remote_tabs_never_synced "Terakhir disinkronkan: tidak pernah">
 
 <!-- LOCALIZATION NOTE (intent_uri_private_browsing_prompt): This string will

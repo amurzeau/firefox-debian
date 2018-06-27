@@ -66,10 +66,10 @@ index 83c2bf81f6db..000000000000
 -
 -#endif // mozilla_LinuxSignal_h
 diff --git a/mfbt/moz.build b/mfbt/moz.build
-index 87c7d3f0e90a..587dbc58a6de 100644
+index 5428d6de8444..a97e17334a34 100644
 --- a/mfbt/moz.build
 +++ b/mfbt/moz.build
-@@ -120,10 +120,6 @@ if CONFIG['OS_ARCH'] == 'WINNT':
+@@ -122,10 +122,6 @@ if CONFIG['OS_ARCH'] == 'WINNT':
      EXPORTS.mozilla += [
          'WindowsVersion.h',
      ]
@@ -81,7 +81,7 @@ index 87c7d3f0e90a..587dbc58a6de 100644
  UNIFIED_SOURCES += [
      'Assertions.cpp',
 diff --git a/tools/profiler/core/platform-linux-android.cpp b/tools/profiler/core/platform-linux-android.cpp
-index 2bbf11419f3a..85768748865a 100644
+index f46ef22ea626..92e67933db3b 100644
 --- a/tools/profiler/core/platform-linux-android.cpp
 +++ b/tools/profiler/core/platform-linux-android.cpp
 @@ -60,7 +60,6 @@

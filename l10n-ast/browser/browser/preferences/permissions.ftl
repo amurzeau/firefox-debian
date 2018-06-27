@@ -36,3 +36,50 @@ permissions-button-ok =
     .accesskey = G
 permissions-searchbox =
     .placeholder = Guetar sitiu web
+permissions-capabilities-allow =
+    .label = Permitir
+permissions-capabilities-block =
+    .label = Bloquiar
+permissions-capabilities-prompt =
+    .label = Entrugar siempre
+
+## Invalid Hostname Dialog
+
+permissions-invalid-uri-title = La direición del host nun ye válida
+permissions-invalid-uri-label = Por favor, introduz un nome de host válidu
+
+## Exceptions - Tracking Protection
+
+permissions-exceptions-tracking-protection-window =
+    .title = Esceiciones - Proteición de rastrexu
+    .style = { permissions-window.style }
+permissions-exceptions-tracking-protection-desc = Deshabilitasti la proteición de rastrexu nestes webs.
+
+## Exceptions - Cookies
+
+
+## Exceptions - Pop-ups
+
+permissions-exceptions-popup-desc = Pues especificar qué sitios web puen abrir ventanes emerxentes. Escribi la direición exauta del sitiu que quies permitir y calca Permitir.
+
+## Exceptions - Saved Logins
+
+permissions-exceptions-saved-logins-window =
+    .title = Esceiciones - Ingresos guardaos
+    .style = { permissions-window.style }
+
+## Exceptions - Add-ons
+
+permissions-exceptions-addons-desc = Pues especificar dende qué sitios web ta permitío instalar complementos. Escribi la direición exauta del sitiu que quies permitir y calca Permitir.
+
+## Site Permissions - Notifications
+
+
+## Site Permissions - Location
+
+
+## Site Permissions - Camera
+
+
+## Site Permissions - Microphone
+

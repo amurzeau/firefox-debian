@@ -7,7 +7,6 @@ dnl ICU library, as well as a few other things.
 
 AC_DEFUN([MOZ_CONFIG_ICU], [
 
-ICU_LIB_NAMES=
 MOZ_SYSTEM_ICU=
 MOZ_ARG_WITH_BOOL(system-icu,
 [  --with-system-icu
@@ -81,15 +80,12 @@ if test -n "$USE_ICU"; then
     if test -z "$ICU_DATA_FILE"; then
         ICU_DATA_FILE="icudt${version}l.dat"
     fi
-
-    MOZ_ICU_DATA_ARCHIVE=
 fi
 
 AC_SUBST(MOZ_ICU_VERSION)
 AC_SUBST(ENABLE_INTL_API)
 AC_SUBST(USE_ICU)
 AC_SUBST(ICU_DATA_FILE)
-AC_SUBST(MOZ_ICU_DATA_ARCHIVE)
 
 if test -n "$USE_ICU"; then
     dnl Source files that use ICU should have control over which parts of the ICU

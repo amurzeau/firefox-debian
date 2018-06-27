@@ -61,7 +61,7 @@
 <!ENTITY getNextNMsgCmd2.accesskey "ხ">
 <!ENTITY sendUnsentCmd.label "გასაგზავნი წერილების გაგზავნა">
 <!ENTITY sendUnsentCmd.accesskey "ს">
-<!ENTITY subscribeCmd.label "ხელმოწერა…">
+<!ENTITY subscribeCmd.label "გამოწერა…">
 <!ENTITY subscribeCmd.accesskey "ლ">
 <!ENTITY deleteFolder.label "საქაღალდის წაშლა">
 <!ENTITY deleteFolder.accesskey "ღ">
@@ -103,7 +103,7 @@
 <!ENTITY undeleteMsgsCmd.accesskey "ე">
 <!ENTITY deleteFolderCmd.label "საქაღალდის წაშლა">
 <!ENTITY deleteFolderCmd.accesskey "ქ">
-<!ENTITY unsubscribeNewsgroupCmd.label "ხელმოწერის გაუქმება">
+<!ENTITY unsubscribeNewsgroupCmd.label "გამოწერის გაუქმება">
 <!ENTITY unsubscribeNewsgroupCmd.accesskey "ლ">
 <!ENTITY selectMenu.label "შერჩევა">
 <!ENTITY selectMenu.accesskey "შ">
@@ -519,7 +519,7 @@
 <!ENTITY debugAddonsCmd.accesskey "დ">
 <!ENTITY tabsDebugCmd.label "შიგთავსის კადრის გამმართველი">
 <!ENTITY tabsDebugCmd.accesskey "შ">
-<!ENTITY errorConsoleCmd.label "კონსოლის შეცდომა">
+<!ENTITY errorConsoleCmd.label "შეცდომების კონსოლი">
 <!ENTITY errorConsoleCmd.accesskey "E">
 <!ENTITY errorConsoleCmd.commandkey "j">
 <!ENTITY scratchpadCmd.label "სამუშაო დაფა">
@@ -603,7 +603,7 @@
 <!ENTITY addressBookButton.tooltip "Go to the address book">
 <!ENTITY chatButton.tooltip "სასაუბრო დაფის ჩვენება">
 <!ENTITY tagButton.tooltip "წერილების დაჭდევება">
-<!ENTITY compactButton.tooltip "წაშლილი წერილების ამოღება შერჩეული დასტიდან">
+<!ENTITY compactButton.tooltip "წაშლილი წერილების მოცილება შერჩეული საქაღალდიდან">
 <!ENTITY appmenuButton1.tooltip "&brandShortName; მენიუს ჩვენება">
 
 <!-- Toolbar Button Popup -->
@@ -671,13 +671,13 @@
 <!ENTITY folderContextEmptyJunk.accesskey "J">
 <!ENTITY folderContextSendUnsentMessages.label "გასაგზავნი წერილების გაგზავნა…">
 <!ENTITY folderContextSendUnsentMessages.accesskey "d">
-<!ENTITY folderContextUnsubscribe.label "ხელმოწერის გაუქმება">
+<!ENTITY folderContextUnsubscribe.label "გამოწერის გაუქმება">
 <!ENTITY folderContextUnsubscribe.accesskey "U">
 <!ENTITY folderContextMarkNewsgroupRead.label "ჯგუფის მონიშვნა წაკითხულად">
 <!ENTITY folderContextMarkNewsgroupRead.accesskey "k">
 <!ENTITY folderContextMarkMailFolderRead.label "დასტის მონიშვნა წაკითხულად">
 <!ENTITY folderContextMarkMailFolderRead.accesskey "k">
-<!ENTITY folderContextSubscribe.label "ხელმოწერა…">
+<!ENTITY folderContextSubscribe.label "გამოწერა…">
 <!ENTITY folderContextSubscribe.accesskey "b">
 <!ENTITY folderContextSearchForMessages.label "წერილების ძიება…">
 <!ENTITY folderContextSearchForMessages.accesskey "S">
@@ -875,7 +875,7 @@
   -->
 <!ENTITY quickSearchCmd.key "k">
 <!-- LOCALIZATION NOTE (search.label.base1):
-      This is the base of the empty text for the global search box. We replace
+     This is the base of the empty text for the global search box. We replace
      #1 with the contents of the appropriate search.keyLabel.* value for the
      platform.
      The goal is to convey to the user that typing in the box will allow them
@@ -906,7 +906,7 @@
 <!ENTITY EditContact1.accesskey "ჩ">
 <!ENTITY ViewContact.label "კონტაქტის ჩვენება">
 <!ENTITY ViewContact.accesskey "ვ">
-<!ENTITY SubscribeToNewsgroup.label "ხელმოწერა სიახლეთა ჯგუფებზე">
+<!ENTITY SubscribeToNewsgroup.label "სიახლეთა ჯგუფების გამოწერა">
 <!ENTITY SubscribeToNewsgroup.accesskey "N">
 <!ENTITY SendMessageTo.label "წერილის შექმნა -">
 <!ENTITY SendMessageTo.accesskey "s">

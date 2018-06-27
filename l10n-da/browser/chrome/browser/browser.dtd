@@ -35,6 +35,9 @@ left instead of right. -->
 <!ENTITY  closeOtherTabs.label               "Luk øvrige faneblade">
 <!ENTITY  closeOtherTabs.accesskey           "ø">
 
+<!ENTITY  closeSelectedTabs.label            "Luk valgte faneblade">
+<!ENTITY  closeSelectedTabs.accesskey        "v">
+
 <!-- LOCALIZATION NOTE (pinAppTab.label, unpinAppTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -54,6 +57,8 @@ can reach it easily. -->
 <!ENTITY  sendToDeviceOfflineFeedback.label  "Sat i kø (offline)">
 <!ENTITY  moveToNewWindow.label              "Flyt til nyt vindue">
 <!ENTITY  moveToNewWindow.accesskey          "v">
+<!ENTITY  reopenInContainer.label            "Åbn igen i Kontekst">
+<!ENTITY  reopenInContainer.accesskey        "K">
 <!ENTITY  bookmarkAllTabs.label              "Bogmærk alle faneblade…">
 <!ENTITY  bookmarkAllTabs.accesskey          "o">
 <!ENTITY  undoCloseTab.label                 "Fortryd lukning af faneblad">
@@ -128,7 +133,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenCmd.macCommandKey "f">
 <!ENTITY showAllTabsCmd.label "Vis alle faneblade">
 <!ENTITY showAllTabsCmd.accesskey "a">
-<!ENTITY toggleReaderMode.key "L">
+<!ENTITY toggleReaderMode.key "R">
 
 <!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
@@ -258,6 +263,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!-- Toolbar items -->
 <!ENTITY homeButton.label             "Hjem">
+
+<!ENTITY homeButton.defaultPage.tooltip "Startside for &brandShortName;">
 
 <!ENTITY bookmarksButton.label          "Bogmærker">
 <!ENTITY bookmarksCmd.commandkey        "b">
@@ -448,6 +455,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.removeFromMenu.accesskey "u">
 <!ENTITY customizeMenu.addMoreItems.label "Tilføj flere elementer…">
 <!ENTITY customizeMenu.addMoreItems.accesskey "T">
+
+<!ENTITY customizeMenu.autoHideDownloadsButton.label "Skjul automatisk i værktøjslinje">
+<!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "S">
+<!ENTITY customizeMenu.manageExtension.label "Håndter udvidelse">
+<!ENTITY customizeMenu.manageExtension.accesskey "H">
 
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
@@ -820,6 +832,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.moreInfoLinkText2 "Mere information">
 
+<!ENTITY identity.clearSiteData "Ryd cookies og webstedsdata…">
+
 <!ENTITY identity.permissions "Tilladelser">
 <!ENTITY identity.permissionsEmpty "Du har ikke tildelt dette websted nogen særlige tilladelser.">
 <!ENTITY identity.permissionsReloadHint "Du skal muligvis genindlæse siden, før at ændringerne slår igennem.">
@@ -928,6 +942,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.allWindowsShared.message "Alle synlige vinduer på din skærm vil blive delt.">
 
 <!ENTITY trackingProtection.title "Beskyttelse mod sporing">
+<!ENTITY trackingProtection.tooltip "Åbn indstillinger for beskyttelse mod sporing">
 <!ENTITY trackingProtection.detectedBlocked3 "&brandShortName; blokerer de dele af siden, der kan spore dig på nettet.">
 <!ENTITY trackingProtection.detectedNotBlocked3 "Dette websted indeholder elementer, der kan spore dig på nettet. Du har slået beskyttelse fra.">
 <!ENTITY trackingProtection.notDetected3 "Ingen sporings-elementer fundet på denne side">
@@ -1033,6 +1048,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY homepageControlled.disableButton.label "Deaktiver udvidelse">
 <!ENTITY homepageControlled.disableButton.accesskey "D">
 
+<!ENTITY tabHideControlled.header.message "Tilgå dine skjulte faneblade">
+<!ENTITY tabHideControlled.keepButton.label "Behold faneblade skjulte">
+<!ENTITY tabHideControlled.keepButton.accesskey "B">
+<!ENTITY tabHideControlled.disableButton.label "Deaktiver udvidelse">
+<!ENTITY tabHideControlled.disableButton.accesskey "D">
+
 <!ENTITY pageActionButton.tooltip "Sidehandlinger">
 <!ENTITY pageAction.addToUrlbar.label "Føj til adresselinjen">
 <!ENTITY pageAction.removeFromUrlbar.label "Fjern fra adresselinjen">
@@ -1043,6 +1064,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pageAction.sendTabToDevice.label "Send faneblad til enhed">
 <!ENTITY sendToDevice.syncNotReady.label "Synkroniserer enheder…">
+
+<!ENTITY pageAction.shareUrl.label "Del">
 
 <!ENTITY libraryButton.tooltip "Se historik, gemte bogmærker og andet">
 

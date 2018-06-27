@@ -36,3 +36,96 @@ permissions-button-ok =
     .accesskey = s
 permissions-searchbox =
     .placeholder = Websydło pytać
+permissions-capabilities-allow =
+    .label = Dowolić
+permissions-capabilities-block =
+    .label = Blokować
+permissions-capabilities-prompt =
+    .label = Přeco so prašeć
+
+## Invalid Hostname Dialog
+
+permissions-invalid-uri-title = Njepłaćiwe mjeno hosta zapodate
+permissions-invalid-uri-label = Prošu zapodajće płaćiwe mjeno hosta
+
+## Exceptions - Tracking Protection
+
+permissions-exceptions-tracking-protection-window =
+    .title = Wuwzaća - Slědowanski škit
+    .style = { permissions-window.style }
+permissions-exceptions-tracking-protection-desc = Sće slědowanski škit na tutych sydłach znjemóžnił.
+
+## Exceptions - Cookies
+
+permissions-exceptions-cookie-window =
+    .title = Wuwzaća - placki a sydłowe daty
+    .style = { permissions-window.style }
+permissions-exceptions-cookie-desc = Móžeće podać, kotre websydła smědźa přeco abo njesmědźa ženje placki a sydłowe daty wužiwać. Zapisajće eksaktnu adresu sydła, kotrež chceće rjadować a klikńće potom na Blokować, Za posedźenje dowolić abo Dowolić.
+
+## Exceptions - Pop-ups
+
+permissions-exceptions-popup-window =
+    .title = Dowolene sydła - wuskakowace wokna
+    .style = { permissions-window.style }
+permissions-exceptions-popup-desc = Móžeće podać, kotre websydła smědźa wuskakowace wokna wočinić. Zapisajće eksaktnu adresu sydła, kotrež chceće dowolić a klikńće potom na Dowolić.
+
+## Exceptions - Saved Logins
+
+permissions-exceptions-saved-logins-window =
+    .title = Wuwzaća - składowane přizjewjenja
+    .style = { permissions-window.style }
+permissions-exceptions-saved-logins-desc = Přizjewjenja za slědowace sydła njebudu so składować
+
+## Exceptions - Add-ons
+
+permissions-exceptions-addons-window =
+    .title = Dowolene sydła - Instalacija přidatkow
+    .style = { permissions-window.style }
+permissions-exceptions-addons-desc = Móžeće podać, kotre websydła smědźa přidatki instalować. Zapisajće eksaktnu adresu sydła, kotrež chceće dowolić a klikńće potom na Dowolić.
+
+## Exceptions - Autoplay Media
+
+permissions-exceptions-autoplay-media-window =
+    .title = Dowolene sydła - awtomatiske wothraće
+    .style = { permissions-window.style }
+permissions-exceptions-autoplay-media-desc = Móžeće podać, kotre websydła smědźa medijowe elementy awtomatisce wothrać. Zapodajće eksaktnu adresu sydła, kotremuž chceće to dowolić a klikńće potom na Dowolić.
+
+## Site Permissions - Notifications
+
+permissions-site-notification-window =
+    .title = Nastajenja - zdźělenske prawa
+    .style = { permissions-window.style }
+permissions-site-notification-desc = Slědowace websydła su požadali wam zdźělenki pósłać. Móžeće podać, kotre websydła smědźa wam zdźělenki pósłać. Móžeće tež nowe žadanja za dowolnosću zdźělenkow blokować.
+permissions-site-notification-disable-label =
+    .label = Nowe žadanja za dowolnosću zdźělenkow blokować
+permissions-site-notification-disable-desc = To budźe websydła, kotrež horjeka w lisćinje podate njejsu, při žadanju za słanjom zdźělenkow haćić. Hdyž zdźělenki blokujeće, móže so stać, zo někotre funkcije websydła njefunguja.
+
+## Site Permissions - Location
+
+permissions-site-location-window =
+    .title = Nastajenja - prawa městna
+    .style = { permissions-window.style }
+permissions-site-location-desc = Slědowace websydła su přistup na waše stejnišćo požadali. Móžeće podać, kotre websydła maja přistup na waše stejnišćo. Móžeće tež žadanja za přistupom na waše stejnišćo blokować.
+permissions-site-location-disable-label =
+    .label = Nowe žadanja za přistupom na waše stejnišćo blokować
+permissions-site-location-disable-desc = To budźe websydła, kotrež horjeka w lisćinje podate njejsu, při žadanju za přistupom na waše stejnišćo haćić. Hdyž přistup na waše stejnišćo blokujeće, móže so stać, zo někotre funkcije websydła njefunguja.
+
+## Site Permissions - Camera
+
+permissions-site-camera-window =
+    .title = Nastajenja - prawa kamery
+    .style = { permissions-window.style }
+permissions-site-camera-desc = Slědowace websydła su přistup na wašu kameru požadali. Móžeće podać, kotre websydła maja přistup na wašu kameru. Móžeće tež nowe žadanja za přistupom na wašu kameru blokować.
+permissions-site-camera-disable-label =
+    .label = Nowe žadanja za přistupom na wašu kameru blokować
+permissions-site-camera-disable-desc = To budźe websydła, kotrež horjeka w lisćinje podate njejsu, při žadanju za přistupom na wašu kameru haćić. Hdyž přistup na wašu kameru blokujeće, móže so stać, zo někotre funkcije websydła njefunguja.
+
+## Site Permissions - Microphone
+
+permissions-site-microphone-window =
+    .title = Nastajenja - prawa mikrofona
+    .style = { permissions-window.style }
+permissions-site-microphone-desc = Slědowace websydła su přistup na waš mikrofon požadali. Móžeće podać, kotre websydła maja přistup na waš mikrofon. Móžeće tež nowe žadanja za přistupom na waš mikrofon blokować.
+permissions-site-microphone-disable-label =
+    .label = Nowe žadanja za přistupom na waš mikrofon blokować
+permissions-site-microphone-disable-desc = To budźe websydła, kotrež horjeka w lisćinje podate njejsu, při žadanju za přistupom na waš mikrofon haćić. Hdyž přistup na waš mikrofon blokujeće, móže so stać, zo někotre funkcije websydła njefunguja.

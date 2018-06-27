@@ -73,6 +73,41 @@ should-restart-ok = Поново покрени { -brand-short-name } сада
 cancel-no-restart-button = Откажи
 restart-later = Поново покрени касније
 
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (String): name of the extension
+
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Екстензија <img data-l10n-name="icon"/> { $name } управља вашом почетном страницом.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Екстензија <img data-l10n-name="icon"/> { $name } управља вашом страницом за нови језичак.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = Екстензија <img data-l10n-name="icon"/> { $name } је променила ваш подразумевани претраживач.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Екстензија <img data-l10n-name="icon"/> { $name } захтева језичке контејнера.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Екстензија <img data-l10n-name="icon"/> { $name } управља заштитом од праћења.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Есктензија <img data-l10n-name="icon"/> { $name } управља начином на који се { -brand-short-name } повезује на интернет.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Како бисте омогућили екстензију идите у <img data-l10n-name="addons-icon"/> Додаци у <img data-l10n-name="menu-icon"/> менију.
+
 ## Preferences UI Search Results
 
 search-results-header = Резултати претраге
@@ -110,6 +145,9 @@ startup-blank-page =
     .label = Прикажи празну страницу
 startup-prev-session =
     .label = Прикажи прозоре и језичке од прошлог пута
+startup-restore-previous-session =
+    .label = Обнови претходну сесију
+    .accesskey = с
 disable-extension =
     .label = Онемогући екстензију
 home-page-header = Почетна страница
@@ -300,6 +338,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Мрежни прокси
+network-proxy-connection-description = Подесите начин на који се { -brand-short-name } повезује на интернет.
 network-proxy-connection-learn-more = Сазнајте више
 network-proxy-connection-settings =
     .label = Поставке…
@@ -543,6 +582,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Запамти мој историјат прегледања и преузимања
     .accesskey = З
+history-remember-browser-option =
+    .label = Бележи историјат прегледања и преузимања
+    .accesskey = Б
 history-remember-search-option =
     .label = Запамти историјат образаца и претраге
     .accesskey = р
@@ -559,6 +601,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Колачићи и подаци сајта
+sitedata-total-size-calculating = Рачунам податке сајта и кеш меморију…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Ваши складиштени колачићи, подаци сајта и кеш тренутно заузимају { $value } { $unit } простора.
 sitedata-learn-more = Сазнајте више
 sitedata-accept-cookies-option =
     .label = Прихватај колачиће и податке сајта (препоручено)
@@ -653,6 +700,12 @@ permissions-notification-link = Сазнајте више
 permissions-notification-pause =
     .label = Паузирај обавештења док се { -brand-short-name } не рестартује
     .accesskey = о
+permissions-block-autoplay-media =
+    .label = Блокирај аутоматско пуштање медија са звуком
+    .accesskey = Б
+permissions-block-autoplay-media-exceptions =
+    .label = Изузеци...
+    .accesskey = И
 permissions-block-popups =
     .label = Блокирај искачуће прозоре
     .accesskey = ч
@@ -679,6 +732,9 @@ collection-health-report =
     .label = Дозволи { -brand-short-name }-у да шаље техничке и интерактивне податке { -vendor-short-name }-и
     .accesskey = р
 collection-health-report-link = Сазнајте више
+collection-studies =
+    .label = Дозволи { -brand-short-name }-у да инсталира и покрене студије
+collection-studies-link = Погледајте { -brand-short-name } студије
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Слање података је онемогућено за ову конфигурацију за изградњу

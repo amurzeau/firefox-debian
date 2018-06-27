@@ -35,6 +35,9 @@ left instead of right. -->
 <!ENTITY  closeOtherTabs.label               "Cerrar las otras pestañas">
 <!ENTITY  closeOtherTabs.accesskey           "o">
 
+<!ENTITY  closeSelectedTabs.label            "Cerrar pestañas seleccionadas">
+<!ENTITY  closeSelectedTabs.accesskey        "S">
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -54,6 +57,8 @@ can reach it easily. -->
 <!ENTITY  sendToDeviceOfflineFeedback.label  "En cola (sin conexión)">
 <!ENTITY  moveToNewWindow.label              "Mover a una nueva ventana">
 <!ENTITY  moveToNewWindow.accesskey          "v">
+<!ENTITY  reopenInContainer.label            "Reabrir en Contenedor">
+<!ENTITY  reopenInContainer.accesskey        "e">
 <!ENTITY  bookmarkAllTabs.label              "Agregar pestañas a marcadores…">
 <!ENTITY  bookmarkAllTabs.accesskey          "t">
 <!ENTITY  undoCloseTab.label                 "Deshacer el cierre de la última pestaña">
@@ -77,7 +82,7 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY openFileCmd.commandkey "o">
 <!ENTITY printSetupCmd.label "Configurar página…">
 <!ENTITY printSetupCmd.accesskey "p">
-<!ENTITY printPreviewCmd.label "Vista preliminar">
+<!ENTITY printPreviewCmd.label "Vista previa">
 <!ENTITY printPreviewCmd.accesskey "l">
 <!ENTITY printCmd.label "Imprimir…">
 <!ENTITY printCmd.accesskey "I">
@@ -129,7 +134,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "Mostrar todas las pestañas">
 <!ENTITY showAllTabsCmd.accesskey "t">
 <!ENTITY toggleReaderMode.key "R">
-
 <!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "Iniciar sesión con &syncBrand.shortName.label;">
@@ -189,10 +193,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY otherBookmarksCmd.label "Otros Marcadores">
 <!ENTITY mobileBookmarksCmd.label "Marcadores móviles">
 <!ENTITY bookmarksToolbarChevron.tooltip "Mostrar más marcadores">
-<!ENTITY showRecentlyBookmarked.label     "Mostrar los marcadores agregados recientemente">
-<!ENTITY showRecentlyBookmarked.accesskey "h">
-<!ENTITY hideRecentlyBookmarked.label     "Ocultar marcadores agregados recientemente">
-<!ENTITY hideRecentlyBookmarked.accesskey "O">
 
 <!ENTITY backCmd.label                "Anterior">
 <!ENTITY backCmd.accesskey            "B">
@@ -234,7 +234,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translateNotificationAnchor.tooltip       "Traducir esta página">
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Administrar traducción de la página">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Administrar uso del software DRM">
-
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "Abrir panel MIDI">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Tu cámara está bloqueada para este sitio web.">
@@ -245,7 +244,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Has bloqueado el almacenamiento persistente para este sitio.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Tienes bloqueadas las pop-ups para este sitio web.">
 <!ENTITY urlbar.canvasBlocked.tooltip            "Has bloqueado la extracción de datos de canvas para este sitio.">
-
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "Haz bloqueado que este sitio web utilice el plugin de Adobe Flash.">
 <!ENTITY urlbar.midiBlocked.tooltip              "Haz bloqueado el acceso al MIDI para este sitio web.">
 
@@ -255,6 +253,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!-- Toolbar items -->
 <!ENTITY homeButton.label             "Inicio">
+
+<!ENTITY homeButton.defaultPage.tooltip "Página de inicio de &brandShortName;">
 
 <!ENTITY bookmarksButton.label          "Marcadores">
 <!ENTITY bookmarksCmd.commandkey "b">
@@ -395,12 +395,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "¿Quieres ver las pestañas de tus otros dispositivos aquí?">
-<!ENTITY appMenuRemoteTabs.openprefs.label "Sincronizar preferencias">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Abrir preferencias de Sync">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Inicia sesión para ver una lista de pestañas de tus otros dispositivos.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Tu cuenta necesita ser verificada.">
 <!ENTITY appMenuRemoteTabs.signin.label "Inicia sesión en Sync">
-<!ENTITY appMenuRemoteTabs.managedevices.label "Gestionar dispositivos…">
+<!ENTITY appMenuRemoteTabs.managedevices.label "Administrar dispositivos…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Ver pestañas sincronizadas en la barra lateral">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Conectar otro dispositivo">
 
@@ -437,6 +436,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.addMoreItems.label "Agregar más elementos…">
 <!ENTITY customizeMenu.addMoreItems.accesskey "A">
 
+<!ENTITY customizeMenu.autoHideDownloadsButton.label "Autoocultar en la barra de herramientas">
+<!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "A">
+<!ENTITY customizeMenu.manageExtension.label "Gestionar extensión">
+<!ENTITY customizeMenu.manageExtension.accesskey "E">
+
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
     secondary commands. -->
@@ -444,7 +448,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Término de búsqueda o dirección">
-<!ENTITY urlbar.placeholder3          "Ingresa aquí los términos y direcciones de búsqueda">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Extensión:">
@@ -798,13 +801,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.moreInfoLinkText2 "Más información">
 
+<!ENTITY identity.clearSiteData "Limpiar cookies y datos del sitio…">
+
 <!ENTITY identity.permissions "Permisos">
 <!ENTITY identity.permissionsEmpty "No tienes permitido en este sitio web ningún permiso especial.">
 <!ENTITY identity.permissionsReloadHint "Puede que tengas que recargar la página para que se apliquen los cambios.">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
-<!ENTITY tabsToolbar.label "Navegar pestañas">
+<!ENTITY tabsToolbar.label "Pestañas del navegador">
 
 <!-- LOCALIZATION NOTE (syncTabsMenu3.label): This appears in the history menu -->
 <!ENTITY syncTabsMenu3.label     "Pestañas sincronizadas">
@@ -841,7 +846,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.context.openAllInTabs.label              "Abrir Todo en Pestañas">
 <!ENTITY syncedTabs.context.openAllInTabs.accesskey          "A">
-<!ENTITY syncedTabs.context.managedevices.label              "Gestionar dispositivos…">
+<!ENTITY syncedTabs.context.managedevices.label              "Administrar dispositivos…">
 <!ENTITY syncedTabs.context.managedevices.accesskey          "D">
 
 
@@ -901,6 +906,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.allWindowsShared.message "Todas las ventanas visibles en tu pantalla se compartirán.">
 
 <!ENTITY trackingProtection.title "Protección contra rastreo">
+<!ENTITY trackingProtection.tooltip "Abrir las Preferencias de protección de rastreo">
 <!ENTITY trackingProtection.detectedBlocked3 "&brandShortName; está bloqueando partes de la página que pueden rastrear tu navegación.">
 <!ENTITY trackingProtection.detectedNotBlocked3 "Este sitio incluye elementos que pueden rastrear tu navegación. Tienes deshabilitada la protección.">
 <!ENTITY trackingProtection.notDetected3 "No se han detectado elementos de rastreo en esta página.">
@@ -988,14 +994,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "N">
 <!ENTITY updateRestart.panelUI.label2 "Reiniciar para actualizar &brandShorterName;">
 
-<!ENTITY newTabControlled.message "Una extensión ha cambiado la página que ves al abrir una nueva pestaña. Puedes restaurar la configuración si no deseas este cambio.">
-
 <!ENTITY newTabControlled.header.message "Tu pestaña nueva ha cambiado.">
 <!ENTITY newTabControlled.keepButton.label "Mantener cambios">
 <!ENTITY newTabControlled.keepButton.accesskey "K">
-<!ENTITY newTabControlled.restoreButton.label "Restaurar configuraciones">
-<!ENTITY newTabControlled.restoreButton.accesskey "R">
-
 <!ENTITY newTabControlled.disableButton.label "Deshabilitar extensión">
 <!ENTITY newTabControlled.disableButton.accesskey "D">
 
@@ -1005,6 +1006,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY homepageControlled.keepButton.accesskey "K">
 <!ENTITY homepageControlled.disableButton.label "Deshabilitar extensión">
 <!ENTITY homepageControlled.disableButton.accesskey "D">
+
+<!ENTITY tabHideControlled.header.message "Acceder a tus pestañas ocultas">
+<!ENTITY tabHideControlled.keepButton.label "Mantener pestañas ocultas">
+<!ENTITY tabHideControlled.keepButton.accesskey "K">
+<!ENTITY tabHideControlled.disableButton.label "Deshabilitar extensión">
+<!ENTITY tabHideControlled.disableButton.accesskey "D">
 
 <!ENTITY pageActionButton.tooltip "Acciones de la página">
 <!ENTITY pageAction.addToUrlbar.label "Agregar a la barra de direcciones">

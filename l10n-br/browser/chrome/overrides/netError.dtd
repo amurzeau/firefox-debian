@@ -22,11 +22,11 @@
 <!-- Localization note (dnsNotFound.title1) - "Hmm" is a sound made when considering or puzzling over something. You don't have to include it in your translation if your language does not have a written word like this. -->
 <!ENTITY dnsNotFound.title1 "Hmmm. Diaes eo deomp kavout al lec'hienn-mañ.">
 <!ENTITY dnsNotFound.longDesc1 "
-<strong>M'eo reizh ar chomlec'h-mañ, amañ 'zo tri zra all a c'hallfec'h klask:</strong>
+<strong>M'eo reizh ar chomlec'h-mañ, amañ 'zo tri zra all a c'hallfec'h klask ober:</strong>
 <ul>
   <li>Klaskit adarre diwezhatoc'h.</li>
-  <li>Gwirit ho kennaskañ kenrouedadel.</li>
-  <li>M'emaoc'h kennasket met a-drek d'ur voger-dan, gwirit m'en deus &brandShortName; an aotre da aheziñ ouzh ar Web.</li>
+  <li>Gwiriit ho kennaskañ kenrouedadel.</li>
+  <li>M'emaoc'h kennasket met a-drek d'ur voger-dan, gwiriit hag en deus &brandShortName; an aotre da haeziñ ouzh ar Web.</li>
 </ul>
 ">
 
@@ -44,7 +44,7 @@
 
 <!ENTITY openPortalLoginPage.label2 "Digeriñ ar bajenn gennaskañ d'ar rouedad">
 
-<!ENTITY malformedURI.pageTitle "URL direizh">
+<!ENTITY malformedURI.pageTitle "URL didalvoudek">
 <!-- Localization note (malformedURI.title1) - "Hmm" is a sound made when considering or puzzling over something. You don't have to include it in your translation if your language does not have a written word like this. -->
 <!ENTITY malformedURI.title1 "Hmm. Ne seblant ket bezañ reizh ar chomlec'h-mañ.">
 
