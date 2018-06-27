@@ -21,7 +21,7 @@ include debian/upstream.mk
 
 SYSTEM_LIBS = zlib bz2 ffi libevent
 ifeq (,$(filter wheezy jessie stretch,$(DIST)))
-SYSTEM_LIBS += hunspell nspr nss sqlite
+SYSTEM_LIBS += nspr nss sqlite
 endif
 ifeq (,$(filter wheezy jessie,$(DIST)))
 SYSTEM_LIBS += vpx

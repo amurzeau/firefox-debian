@@ -45,9 +45,6 @@ Build-Depends: autotools-dev,
 %if USE_SYSTEM_VPX
                libvpx-dev (>= 1.5.0),
 %endif
-%if USE_SYSTEM_HUNSPELL
-               libhunspell-dev (>= 1.5),
-%endif
                libdbus-glib-1-dev,
 %if USE_SYSTEM_FFI
                libffi-dev,
