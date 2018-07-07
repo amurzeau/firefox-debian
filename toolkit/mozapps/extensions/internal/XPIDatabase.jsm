@@ -83,7 +83,6 @@ const LAST_SQLITE_DB_SCHEMA           = 14;
 const PREF_BLOCKLIST_ITEM_URL         = "extensions.blocklist.itemURL";
 const PREF_DB_SCHEMA                  = "extensions.databaseSchema";
 const PREF_EM_AUTO_DISABLED_SCOPES    = "extensions.autoDisableScopes";
-const PREF_EM_UNSIGNED_SCOPES         = "extensions.unsignedScopes";
 const PREF_EM_EXTENSION_FORMAT        = "extensions.";
 const PREF_PENDING_OPERATIONS         = "extensions.pendingOperations";
 const PREF_XPI_SIGNATURES_DEV_ROOT    = "xpinstall.signatures.dev-root";
@@ -1965,9 +1964,7 @@ this.XPIDatabase = {
    *        True if the add-on should not be appDisabled
    */
   isUsableAddon(aAddon) {
-    let unsignedScopes = Services.prefs.getIntPref(PREF_EM_UNSIGNED_SCOPES, 0);
-    if (!(aAddon._installLocation.scope & unsignedScopes) &&
-        this.mustSign(aAddon.type) && !aAddon.isCorrectlySigned) {
+    if (this.mustSign(aAddon.type) && !aAddon.isCorrectlySigned) {
       logger.warn(`Add-on ${aAddon.id} is not correctly signed.`);
       if (Services.prefs.getBoolPref(PREF_XPI_SIGNATURES_DEV_ROOT, false)) {
         logger.warn(`Preference ${PREF_XPI_SIGNATURES_DEV_ROOT} is set.`);
