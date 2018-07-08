@@ -182,7 +182,7 @@ stamps/configure-check-$(PRODUCT):: stamps/configure-$(PRODUCT)
 # according to the definitions in the mozconfig file.
 	@awk -F' *# *| *$$' ' \
 	BEGIN { confs="$(foreach f,autoconf.mk emptyvars.mk,$(CURDIR)/build-$(PRODUCT)/config/$(f))" } \
-	$$1 ~ /system/ { \
+	$$1 ~ /system-/ { \
 		if (! $$2) { \
 			print FILENAME ": Missing variable for",$$1; \
 			error=1; \
