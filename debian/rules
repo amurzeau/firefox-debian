@@ -249,7 +249,6 @@ endif
 endif
 
 override_dh_auto_clean::
-	rm -f MPL
 	rm -f $(filter-out debian/control,$(GENERATED_FILES))
 	rm -f configure js/src/configure old-configure js/src/old-configure
 	rm -rf stamps l10n
@@ -285,15 +284,6 @@ endif
 		SIGN_NSS=
 
 	-TZ=UTC unzip -d debian/tmp$(LIB_DIR)/browser debian/tmp$(LIB_DIR)/browser/omni.ja 'defaults/preferences/*'
-
-MPL-1.1: gfx/cairo/cairo/COPYING-MPL-1.1
-	cp -f $< $@
-
-MPL-2.0: nsprpub/LICENSE
-	cp -f $< $@
-
-override_dh_installdocs: MPL-1.1 MPL-2.0
-	dh_installdocs -A $^
 
 L10N_DH_INSTALL_STAMPS = $(foreach lang,$(L10N_LANGS),stamps/dh_install-l10n-$(lang))
 stamps/dh_install-l10n:: $(L10N_DH_INSTALL_STAMPS)
