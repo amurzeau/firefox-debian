@@ -14,11 +14,11 @@ Disclaimer: The original upstream tarball is modified from upstream by
 
 License: MPL-2.0
  The complete text of the Mozilla Public License 2.0 can be found in
- the `MPL-2.0' file in the same directory as this file.
+ the file `/usr/share/common-licenses/MPL-2.0'.
 
 License: MPL-1.1
  The complete text of the Mozilla Public License 1.1 can be found in
- the `MPL-1.1' file in the same directory as this file.
+ the file `/usr/share/common-licenses/MPL-1.1'.
 
 License: GPL-2
  On Debian systems, the complete text of the GNU General Public
