@@ -149,8 +149,10 @@ $(call lazy,L10N_PACKAGES_DEPS,$$(shell echo $$(L10N_PACKAGES) | sed 's/ /, /g')
 debian/l10n/$(PRODUCT)-l10n.control: %: %.in
 	$(PYTHON) debian/l10n/gen $(L10N_LANGS) > $@
 
+$(call lazy,LIBAVCODEC,$$(shell awk -F\" '/libavcodec\.so/ { sub(/\.so\./,"", $$$$2); if (d) { d = d " | " $$$$2 } else { d = $$$$2 } } END { print d }' dom/media/platforms/ffmpeg/FFmpegRuntimeLinker.cpp))
+
 $(PREPROCESSED_FILES): VARS = GRE_VERSION $(PRODUCT) $(call uc,$(PRODUCT)) $(Product) MOZ_APP_REMOTINGNAME $(SYSTEM_LIBS_VARS) SHORT_SOURCE_CHANNEL DIST TRANSITION MOZ_FFVPX CRASH_REPORTER DEB_HOST_ARCH
-debian/control: VARS += L10N_PACKAGES_DEPS PRODUCT
+debian/control: VARS += L10N_PACKAGES_DEPS PRODUCT LIBAVCODEC
 $(PREPROCESSED_FILES):
 	$(PYTHON) python/mozbuild/mozbuild/preprocessor.py --marker % -Fsubstitution $(foreach var,$(VARS),-D$(var)="$($(var))" )$< > $@
 
