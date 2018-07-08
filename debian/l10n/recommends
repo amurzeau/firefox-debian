@@ -1,31 +1,66 @@
-bg: myspell-bg
-ca: myspell-ca
-cs: myspell-cs-cz
-da: myspell-da
-de: myspell-de-de | myspell-de-at | myspell-de-ch
-el: myspell-el-gr
-en-gb: myspell-en-gb | myspell-en-us
-en-za: myspell-en-gb | myspell-en-us
+af: hunspell-af
+an: hunspell-an
+ar: hunspell-ar
+be: hunspell-be
+bg: hunspell-bg | myspell-bg
+bn-bd: hunspell-bn
+bn-in: hunspell-bn
+br: hunspell-br
+bs: hunspell-bs
+ca: hunspell-ca
+cs: hunspell-cs
+da: hunspell-da | myspell-da
+de: hunspell-de-de | hunspell-de-at | hunspell-de-ch
+el: hunspell-el | myspell-el-gr
+en-ca: hunspell-en-gb | hunspell-en-us
+en-gb: hunspell-en-gb | hunspell-en-us
+en-za: hunspell-en-gb | hunspell-en-us
 eo: myspell-eo
-es-ar: myspell-es
-es-es: myspell-es
+es-ar: hunspell-es | myspell-es
+es-cl: hunspell-es | myspell-es
+es-es: hunspell-es | myspell-es
+es-mx: hunspell-es | myspell-es
 et: myspell-et
+eu: hunspell-eu
+fa: myspell-fa
 fi: xul-ext-mozvoikko
-fr: myspell-fr | myspell-fr-gut
-he: myspell-he
-hu: myspell-hu
-it: myspell-it
+fr: hunspell-fr | myspell-fr | myspell-fr-gut
+ga-ie: myspell-ga
+gd: hunspell-gd | myspell-gd
+gl: hunspell-gl-es | hunspell-gl
+gu-in: hunspell-gu
+he: hunspell-he | myspell-he
+hi-in: hunspell-hi
+hr: hunspell-hr
+hu: hunspell-hu | myspell-hu
+hy-am: myspell-hy
+id: hunspell-id
+is: hunspell-is
+it: hunspell-it
+kk: hunspell-kk
+ko: hunspell-ko
 ku: myspell-ku
-lt: myspell-lt
-lv: myspell-lv
+lt: hunspell-lt
+lv: hunspell-lv | myspell-lv
+ml: hunspell-ml
 nb-no: myspell-nb
-nl: myspell-nl
+ne-np: hunspell-ne
+nl: hunspell-nl
 nn-no: myspell-nn
-pl: myspell-pl
-pt-br: myspell-pt-br | myspell-pt
-pt-pt: myspell-pt-pt | myspell-pt
-ru: myspell-ru
-sk: myspell-sk
-sl: myspell-sl
-sv-se: myspell-sv-se
-uk: myspell-uk
+oc: hunspell-oc
+pl: hunspell-pl | myspell-pl
+pt-br: hunspell-pt-br | myspell-pt-br
+pt-pt: hunspell-pt-pt | myspell-pt-pt
+ro: hunspell-ro
+ru: hunspell-ru | myspell-ru
+si: hunspell-si
+sk: hunspell-sk | myspell-sk
+sl: hunspell-sl
+sq: myspell-sq
+sr: hunspell-sr
+sv-se: hunspell-sv-se
+te: hunspell-te
+th: hunspell-th
+uk: hunspell-uk | myspell-uk
+uz: hunspell-uz
+vi: hunspell-vi
