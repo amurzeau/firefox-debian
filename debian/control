@@ -64,6 +64,7 @@ Depends: ${shlibs:Depends},
          debianutils (>= 1.16),
          libsqlite3-0 (>= 3.7.12-1~),
          libnss3 (>= 2:3.34~)
+Recommends: libavcodec58 | libavcodec57 | libavcodec56 | libavcodec55 | libavcodec54 | libavcodec53
 Suggests: fonts-stix | otf-stix,
           fonts-lmodern,
           libgssapi-krb5-2 | libkrb53,
