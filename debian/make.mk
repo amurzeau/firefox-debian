@@ -9,6 +9,6 @@ dump:
 	@$(foreach var,$(sort $(filter-out $(__VARS) __VARS preprocess system_lib ___%,$(.VARIABLES))),echo '$(var) = $(subst ','\'',$(subst \,\\,$($(var))))';)
 
 dump-%:
-	@echo $($*)
+	@echo '$(subst ','\'',$(subst \,\\,$($*)))'
 
 .PHONY: dump
