@@ -1,3 +1,9 @@
+firefox (61.0.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Hommey <glandium@debian.org>  Thu, 19 Jul 2018 06:54:40 +0900
+
 firefox (61.0-2) unstable; urgency=medium
 
   * debian/browser.mozconfig.in, debian/control*, debian/rules: Remove
