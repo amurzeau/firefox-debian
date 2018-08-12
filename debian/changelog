@@ -1,3 +1,40 @@
+firefox-esr (60.1.0esr-2) unstable; urgency=medium
+
+  * Upload to unstable.
+  * debian/upstream.mk: Use the same logic for betas as for releases to find
+    the source.
+  * debian/browser.links.in, debian/rules, debian/vendor.js: Use the
+    spellchecker.dictionary_path pref to set the hunspell directory.
+  * debian/browser.mozconfig.in: Allow unsigned addons in app and system
+    scopes.
+  * debian/rules: Work around the effect the above has on the
+    --{enable,with}-system-* check.
+  * debian/vendor.js: Remove extensions.unsignedScopes. The patch that added
+    the pref was changed to use a configure flag instead.
+  * debian/control*: Remove old conflicts. Thanks Sylvestre Ledru.
+    Closes: #882956.
+  * debian/l10n/recommends, debian/l10n/browser-l10n.control,
+    debian/control: Update dictionary recommendations, following these rules:
+    - Transitional myspell packages are not listed except when stable
+      doesn't have the corresponding hunspell package.
+    - Both hunspell and myspell packages are listed if they are different.
+    Closes: #813832, #825843
+  * debian/copyright, debian/rules: Refer to /usr/share/common-licenses/MPL*
+    instead of installing our own copy. Closes: #704303.
+  * debian/make.mk: Use the same code as dump target for the dump-% target.
+  * debian/control*, debian/rules: Add Recommends on all supported libavcodec
+    libraries for h264 playback. Closes: #901600.
+
+  * js/src/jit/mips-shared/MacroAssembler-mips-shared.cpp: Stubout
+    MacroAssembler::speculationBarrier. bz#1444834
+  * toolkit/modules/AppConstants.jsm, toolkit/modules/moz.build,
+    toolkit/moz.configure, toolkit/mozapps/extensions/internal/XPIInstall.jsm,
+    toolkit/mozapps/extensions/content/extensions.js,
+    toolkit/mozapps/extensions/internal/XPIDatabase.jsm: Change how addon
+    signature requirement relaxation is done. Closes: #899390.
+
+ -- Mike Hommey <glandium@debian.org>  Sun, 12 Aug 2018 13:43:20 +0900
+
 firefox-esr (60.1.0esr-1) experimental; urgency=medium
 
   * New upstream release.
