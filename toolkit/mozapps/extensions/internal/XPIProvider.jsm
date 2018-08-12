@@ -71,7 +71,6 @@ const PREF_SKIN_TO_SELECT             = "extensions.lastSelectedSkin";
 const PREF_GENERAL_SKINS_SELECTEDSKIN = "general.skins.selectedSkin";
 const PREF_EM_EXTENSION_FORMAT        = "extensions.";
 const PREF_EM_ENABLED_SCOPES          = "extensions.enabledScopes";
-const PREF_EM_UNSIGNED_SCOPES         = "extensions.unsignedScopes";
 const PREF_EM_STARTUP_SCAN_SCOPES     = "extensions.startupScanScopes";
 const PREF_EM_SHOW_MISMATCH_UI        = "extensions.showMismatchUI";
 const PREF_XPI_ENABLED                = "xpinstall.enabled";
@@ -807,9 +806,7 @@ function isUsableAddon(aAddon) {
   if (aAddon.type == "theme" && aAddon.internalName == XPIProvider.defaultSkin)
     return true;
 
-  let unsignedScopes = Services.prefs.getIntPref(PREF_EM_UNSIGNED_SCOPES, 0);
-  if (!(aAddon._installLocation.scope & unsignedScopes) &&
-      mustSign(aAddon.type) && !aAddon.isCorrectlySigned) {
+  if (mustSign(aAddon.type) && !aAddon.isCorrectlySigned) {
     logger.warn(`Add-on ${aAddon.id} is not correctly signed.`);
     if (Services.prefs.getBoolPref(PREF_XPI_SIGNATURES_DEV_ROOT, false)) {
       logger.warn(`Preference ${PREF_XPI_SIGNATURES_DEV_ROOT} is set.`);
