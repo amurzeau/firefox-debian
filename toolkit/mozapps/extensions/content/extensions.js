@@ -52,7 +52,6 @@ const PREF_UI_TYPE_HIDDEN = "extensions.ui.%TYPE%.hidden";
 const PREF_UI_LASTCATEGORY = "extensions.ui.lastCategory";
 const PREF_LEGACY_EXCEPTIONS = "extensions.legacy.exceptions";
 const PREF_LEGACY_ENABLED = "extensions.legacy.enabled";
-const PREF_UNSIGNED_SCOPES = "extensions.unsignedScopes";
 
 const LOADING_MSG_DELAY = 100;
 
@@ -235,11 +234,9 @@ function isCorrectlySigned(aAddon) {
 }
 
 function isDisabledUnsigned(addon) {
-  let unsignedScopes = Services.prefs.getIntPref(PREF_UNSIGNED_SCOPES, 0);
-  let signingRequired = !(addon.scope & unsignedScopes) &&
-                        ((addon.type == "locale") ?
-                         AddonSettings.LANGPACKS_REQUIRE_SIGNING :
-                         AddonSettings.REQUIRE_SIGNING);
+  let signingRequired = (addon.type == "locale") ?
+                        AddonSettings.LANGPACKS_REQUIRE_SIGNING :
+                        AddonSettings.REQUIRE_SIGNING;
   return signingRequired && !isCorrectlySigned(addon);
 }
 
