@@ -1,3 +1,17 @@
+firefox-esr (60.1.0esr-3) unstable; urgency=medium
+
+  * debian/control*:
+    - Build depend on llvm/clang 6.0 for buster. Closes: #906174.
+    - Bump NSS build dependency to 3.36.4. Closes: #902573.
+
+  * gfx/skia/skia/include/core/SkColorPriv.h,
+    gfx/skia/skia/include/core/SkImageInfo.h,
+    gfx/skia/skia/include/gpu/GrTypes.h,
+    gfx/skia/skia/src/core/SkColorData.h: fix big-endian Skia builds.
+    bz#1144632.
+
+ -- Mike Hommey <glandium@debian.org>  Sat, 18 Aug 2018 08:30:36 +0900
+
 firefox-esr (60.1.0esr-2) unstable; urgency=medium
 
   * Upload to unstable.
