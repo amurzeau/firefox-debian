@@ -85,20 +85,22 @@
 <!ENTITY editRewrapCmd.key "R">
 <!ENTITY renameAttachmentCmd.label "Canvia el nom del fitxer adjunt...">
 <!ENTITY renameAttachmentCmd.accesskey "e">
+<!ENTITY reorderAttachmentsCmd.label "Reordena les adjuncions…">
+<!ENTITY reorderAttachmentsCmd.accesskey "s">
+<!ENTITY reorderAttachmentsCmd.key "x">
 <!ENTITY toggleAttachmentPaneCmd.label "Subfinestra d'adjuncions">
 <!-- LOCALIZATION NOTE (toggleAttachmentPaneCmd.accesskey):
      For better mnemonics, toggleAttachmentPaneCmd.accesskey should be the same
      as attachments.accesskey. -->
 <!ENTITY toggleAttachmentPaneCmd.accesskey "a">
 <!-- LOCALIZATION NOTE (toggleAttachmentPaneCmd.key):
-     With OS-specific access modifier, this defines the shortcut key for showing/
-     hiding/minimizing the attachment pane, e.g. Alt+M on Windows.
-     toggleAttachmentPaneCmd.key and attachments.accesskey must be the same
-     for the bucket view state machinery to work. -->
+     As Mac does not have access keys, this key defines a Mac-only, cross-l10n
+     shortcut key (Ctrl+M). Typically, this key should not be translated unless
+     otherwise required by specific needs of the localization. -->
 <!ENTITY toggleAttachmentPaneCmd.key "m">
 <!ENTITY selectAllCmd.label "Selecciona-ho tot">
-<!ENTITY selectAllCmd.key "A">
 <!ENTITY selectAllCmd.accesskey "a">
+<!ENTITY selectAllCmd.key "A">
 <!ENTITY findBarCmd.label "Cerca…">
 <!ENTITY findBarCmd.accesskey "C">
 <!ENTITY findBarCmd.key "F">
@@ -115,13 +117,24 @@
 <!ENTITY findPrevCmd.key2 "VK_F3">
 
 <!-- Reorder Attachment Panel -->
+<!ENTITY reorderAttachmentsPanel.label "Reordena les adjuncions">
+<!ENTITY moveAttachmentTopPanelBtn.label "Mou al capdamunt">
+<!ENTITY moveAttachmentUpPanelBtn.label "Puja">
+<!ENTITY moveAttachmentBundleUpPanelBtn.label "Mou conjuntament">
+<!ENTITY moveAttachmentDownPanelBtn.label "Baixa">
+<!ENTITY moveAttachmentBottomPanelBtn.label "Mou al capdavall">
 
 <!-- LOCALIZATION NOTE (sortAttachmentsPanelBtn.Sort.AZ.label):
      Please ensure that this translation matches
      sortAttachmentsPanelBtn.Sort.ZA.label, except for the sort direction. -->
+<!ENTITY sortAttachmentsPanelBtn.Sort.AZ.label "Ordena: A - Z">
+<!ENTITY sortAttachmentsPanelBtn.Sort.ZA.label "Ordena: Z - A">
 <!-- LOCALIZATION NOTE (sortAttachmentsPanelBtn.SortSelection.AZ.label):
      Please ensure that this translation matches
      sortAttachmentsPanelBtn.SortSelection.ZA.label, except for the sort direction. -->
+<!ENTITY sortAttachmentsPanelBtn.SortSelection.AZ.label "Ordena la selecció: A - Z">
+<!ENTITY sortAttachmentsPanelBtn.SortSelection.ZA.label "Ordena la selecció: Z - A">
+<!ENTITY sortAttachmentsPanelBtn.key "y">
 
 <!-- View Menu -->
 <!ENTITY viewMenu.label "Visualitza">
@@ -216,7 +229,7 @@
 <!ENTITY minimizeWindow.key "m">
 <!ENTITY minimizeWindow.label "Minimitza la finestra">
 <!ENTITY bringAllToFront.label "Porta-ho tot al davant">
-<!ENTITY zoomWindow.label "Finestra del zoom">
+<!ENTITY zoomWindow.label "Zoom">
 <!ENTITY windowMenu.label "Finestra">
 
 <!-- Mail Toolbar -->
@@ -233,7 +246,7 @@
 <!ENTITY sendlaterButton.tooltip "Envia aquest missatge més tard">
 <!ENTITY quoteButton.tooltip "Cita el missatge anterior">
 <!ENTITY addressButton.tooltip "Seleccioneu un destinatari d'una Llibreta d'adreces">
-<!ENTITY attachButton.tooltip "Adjunta un fitxer a aquest missatge">
+<!ENTITY attachButton.tooltip2 "Afegeix una adjunció">
 <!ENTITY spellingButton.tooltip "Comprova l'ortografia de la selecció o del missatge sencer">
 <!ENTITY saveButton.tooltip "Desa aquest missatge">
 <!ENTITY cutButton.tooltip              "Retalla">
@@ -256,11 +269,14 @@
 <!ENTITY subject.label "Assumpte:">
 <!ENTITY subject.accesskey "s">
 <!-- LOCALIZATION NOTE (attachments.accesskey) This access key character should
-     be taken from the strings in attachmentCount in composeMsgs.properties,
-     and it must be the same as toggleAttachmentPaneCmd.key, otherwise it won't
-     work, as the shortcut key functionality supersedes the access key. -->
+     be taken from the strings of attachmentCount in composeMsgs.properties.
+     Please ensure that this access key is unique: Do not duplicate any other
+     first-level access keys of the compose window, e.g. those of main menu,
+     buttons, or labels (message headers, contacts side bar, attachment reminder
+     bar). -->
 <!ENTITY attachments.accesskey "j">
-
+<!ENTITY attachmentBucketHeader.tooltip "Subfinestra d'adjuncions">
+<!ENTITY attachmentBucketCloseButton.tooltip "Amaga la finestra d'adjuncions">
 
 <!-- Format Toolbar, imported from editorAppShell.xul -->
 <!ENTITY SmileButton.tooltip "Insereix una cara somrient">
@@ -295,7 +311,7 @@
 <!ENTITY copy.accesskey "C">
 <!ENTITY paste.label "Enganxa">
 <!ENTITY paste.accesskey "x">
-<!ENTITY pasteQuote.label "Enganxa com a cita">
+<!ENTITY pasteQuote.label "Enganxa com a citació">
 <!ENTITY pasteQuote.accesskey "i">
 
 <!-- Attachment Item and List Context Menus -->
@@ -303,13 +319,17 @@
 <!ENTITY openAttachment.accesskey "O">
 <!ENTITY delete.label "Suprimeix">
 <!ENTITY delete.accesskey "S">
-<!ENTITY removeAttachment.label "Suprimeix l'adjunció">
+<!ENTITY removeAttachment.label "Elimina l'adjunció">
 <!ENTITY removeAttachment.accesskey "m">
 <!ENTITY renameAttachment.label "Reanomena…">
 <!ENTITY renameAttachment.accesskey "R">
+<!ENTITY reorderAttachments.label "Reordena les adjuncions…">
+<!ENTITY reorderAttachments.accesskey "s">
+<!ENTITY removeAllAttachments.label "Elimina totes les adjuncions">
+<!ENTITY removeAllAttachments.accesskey "t">
 <!ENTITY selectAll.label "Selecciona-ho tot">
 <!ENTITY selectAll.accesskey "a">
-<!ENTITY attachFile.label "Adjunta un fitxer…">
+<!ENTITY attachFile.label "Adjunta fitxers…">
 <!ENTITY attachFile.accesskey "f">
 <!ENTITY attachCloud.label "Filelink…">
 <!ENTITY attachCloud.accesskey "i">
@@ -317,7 +337,7 @@
 <!ENTITY convertCloud.accesskey "C">
 <!ENTITY cancelUpload.label "Cancel·la la pujada">
 <!ENTITY cancelUpload.accesskey "n">
-<!ENTITY convertRegularAttachment.label "Adjunció regular">
+<!ENTITY convertRegularAttachment.label "Adjunció normal">
 <!ENTITY convertRegularAttachment.accesskey "A">
 <!ENTITY attachPage.label "Adjunta una pàgina web…">
 <!ENTITY attachPage.accesskey "w">
@@ -339,6 +359,9 @@
 <!-- Identity popup customize menuitem -->
 <!ENTITY customizeFromAddress.label "Personalitza l'adreça «De»…">
 <!ENTITY customizeFromAddress.accesskey "P">
+
+<!-- Accessibility name for the document -->
+<!ENTITY aria.message.bodyName "Cos del missatge">
 
 <!-- Status Bar -->
 <!ENTITY languageStatusButton.tooltip "Llengua de la verificació ortogràfica">

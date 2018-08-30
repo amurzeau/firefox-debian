@@ -38,6 +38,21 @@ left instead of right. -->
 <!ENTITY  closeSelectedTabs.label            "Užverti pasirinktas korteles">
 <!ENTITY  closeSelectedTabs.accesskey        "s">
 
+<!ENTITY  pinSelectedTabs.label              "Įsegti korteles">
+<!-- Pin Tab and Pin Selected Tabs have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  pinSelectedTabs.accesskey          "s">
+<!ENTITY  unpinSelectedTabs.label            "Išsegti korteles">
+<!-- Unpin Tab and Unpin Selected Tabs have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  unpinSelectedTabs.accesskey        "g">
+<!-- Reload Tab and Reload Selected Tabs have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  reloadSelectedTabs.label           "Iš naujo įkelti pasirinktas korteles">
+<!ENTITY  reloadSelectedTabs.accesskey       "n">
+<!ENTITY  bookmarkSelectedTabs.label         "Korteles įtraukti į adresyną…">
+<!ENTITY  bookmarkSelectedTabs.accesskey     "t">
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -59,13 +74,12 @@ can reach it easily. -->
 <!ENTITY  moveToNewWindow.accesskey          "l">
 <!ENTITY  reopenInContainer.label            "Atverti iš naujo sudėtiniame rodinyje">
 <!ENTITY  reopenInContainer.accesskey        "e">
-<!ENTITY  bookmarkAllTabs.label              "Įrašyti į adresyną visas korteles…">
+<!ENTITY  bookmarkAllTabs.label              "Visas korteles įtraukti į adresyną…">
 <!ENTITY  bookmarkAllTabs.accesskey          "v">
 <!ENTITY  undoCloseTab.label                 "Atšaukti kortelės užvėrimą">
 <!ENTITY  undoCloseTab.accesskey             "š">
 <!ENTITY  closeTab.label                     "Užverti kortelę">
 <!ENTITY  closeTab.accesskey                 "U">
-
 <!ENTITY  hiddenTabs.label                   "Paslėptos kortelės">
 
 <!ENTITY  listAllTabs.label      "Pateikti visas korteles">
@@ -187,7 +201,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY subscribeToPageMenupopup.label "Prenumeruoti šio tinklalapio naujienas">
 <!ENTITY subscribeToPageMenuitem.label "Prenumeruoti šio tinklalapio naujienas…">
-<!ENTITY addCurPagesCmd.label "Įrašyti į adresyną visas korteles…">
+<!ENTITY addCurPagesCmd.label "Visas korteles įtraukti į adresyną…">
 <!ENTITY showAllBookmarks2.label "Rodyti visą adresyną">
 <!ENTITY recentBookmarks.label "Paskiausiai įtraukti į adresyną">
 <!ENTITY otherBookmarksCmd.label "Kiti adresai">
@@ -215,6 +229,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY urlbar.defaultNotificationAnchor.tooltip         "Atverti pranešimo skydelį">
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "Atverti buvimo vietos nustatymo skydelį">
+<!ENTITY urlbar.autoplayNotificationAnchor.tooltip        "Atverti automatinio grojimo polangį">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "Atverti priedo diegimo pranešimo skydelį">
 <!ENTITY urlbar.canvasNotificationAnchor.tooltip          "Valdyti drobės išgavimo leidimą">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "Atverti duomenų darbui neprisijungus pranešimo skydelį">
@@ -223,7 +238,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "Pasirinkite, ar norite gauti pranešimus iš šios svetainės">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Saugoti duomenis išliekančioje atmintyje">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Naršyklė valdoma per nuotolį">
-
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Atverti „Web Authentication“ polangį">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Tvarkyti kameros ir mikrofono naudojimą svetainėje">
@@ -243,6 +257,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Šioje svetainėje esate užblokavę pranešimus.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Šioje svetainėje esate užblokavę išliekančių duomenų saugojimą.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Šioje svetainėje esate užblokavę iškylančiuosius langus.">
+<!ENTITY urlbar.autoplayMediaBlocked.tooltip     "Šioje svetainėje esate užblokavę automatinį medijos grojimą.">
 <!ENTITY urlbar.canvasBlocked.tooltip            "Šioje svetainėje esate užblokavę drobės duomenų išgavimą.">
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "Šioje svetainėje esate užblokavę „Adobe Flash“ papildinio naudojimą.">
 <!ENTITY urlbar.midiBlocked.tooltip              "Šioje svetainėje esate užblokavę MIDI naudojimą.">
@@ -301,6 +316,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY webDeveloperMenu.label       "Saityno kūrėjams">
 <!ENTITY webDeveloperMenu.accesskey   "k">
 
+<!ENTITY devtoolsRecordExecution.label "Įrašinėti vykdymą">
+<!ENTITY devtoolsSaveRecording.label "Išsaugoti įrašą">
+<!ENTITY devtoolsReplayExecution.label "Pakartoti vykdymą">
+
 <!ENTITY inspectContextMenu.label     "Tirti elementą">
 <!ENTITY inspectContextMenu.accesskey "T">
 
@@ -310,6 +329,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fileMenu.accesskey       "F">
 <!ENTITY newUserContext.label             "Nauja sudėtinė kortelė">
 <!ENTITY newUserContext.accesskey         "s">
+<!ENTITY manageUserContext.label          "Tvarkyti sudėtines korteles">
+<!ENTITY manageUserContext.accesskey      "u">
 <!ENTITY newNavigatorCmd.label        "Naujas langas">
 <!ENTITY newNavigatorCmd.key        "N">
 <!ENTITY newNavigatorCmd.accesskey      "l">
@@ -412,8 +433,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (customizeMenu.addToOverflowMenu.label,
      customizeMenu.pinToOverflowMenu.label, customizeMenu.unpinFromOverflowMenu.label)
      The overflow menu is the menu that appears if you click the chevron (>> button)
-     in the location bar. These labels are only used in Photon, where you can put
-     items into this menu permanently (pinned). -->
+     in the location bar. -->
 <!ENTITY customizeMenu.addToOverflowMenu.label "Pridėti į perpildymo meniu">
 <!ENTITY customizeMenu.addToOverflowMenu.accesskey "m">
 <!ENTITY customizeMenu.moveToToolbar.label "Perkelti į priemonių juostą">
@@ -425,6 +445,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      keys.  -->
 <!ENTITY customizeMenu.moveToPanel.label "Perkelti į meniu">
 <!ENTITY customizeMenu.moveToPanel.accesskey "P">
+<!-- LOCALIZATION NOTE (customizeMenu.pinToOverflowMenu.accesskey)
+     can appear on the same context menu as menubarCmd and personalbarCmd,
+     so they should have different access keys.  -->
 <!ENTITY customizeMenu.pinToOverflowMenu.label "Įsegti į perpildymo meniu">
 <!ENTITY customizeMenu.pinToOverflowMenu.accesskey "s">
 <!ENTITY customizeMenu.unpinFromOverflowMenu.label "Išsegti iš perpildymo meniu">
@@ -612,6 +635,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hidePluginCmd.label          "Slėpti šį papildinį">
 <!ENTITY hidePluginCmd.accesskey      "S">
 <!ENTITY copyLinkCmd.label            "Kopijuoti saito adresą">
+<!-- LOCALIZATION NOTE (copyLinkCmd.accesskey): The access keys for "Copy Link
+Location" and "Copy Email Address" should be the same if possible; the two
+context menu items are mutually exclusive. -->
 <!ENTITY copyLinkCmd.accesskey        "a">
 <!ENTITY copyImageCmd.label           "Kopijuoti paveikslo adresą">
 <!ENTITY copyImageCmd.accesskey       "o">
@@ -622,6 +648,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY copyAudioURLCmd.label        "Kopijuoti garso adresą">
 <!ENTITY copyAudioURLCmd.accesskey    "o">
 <!ENTITY copyEmailCmd.label           "Kopijuoti el. pašto adresą">
+<!-- LOCALIZATION NOTE (copyEmailCmd.accesskey): The access keys for "Copy Link
+Location" and "Copy Email Address" should be the same if possible; the two
+context menu items are mutually exclusive. -->
 <!ENTITY copyEmailCmd.accesskey       "e">
 <!ENTITY thisFrameMenu.label              "Kadras">
 <!ENTITY thisFrameMenu.accesskey          "K">
@@ -757,8 +786,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY spellAddDictionaries.label "Daugiau žodynų…">
 <!ENTITY spellAddDictionaries.accesskey "D">
 
+<!-- LOCALIZATION NOTE (editBookmark.panel.width): width of the bookmark panel.
+     Should be large enough to fully display the Done and Cancel/
+     Remove Bookmark buttons. -->
+<!ENTITY editBookmark.panel.width                    "23em">
 <!ENTITY editBookmark.done.label                     "Atlikta">
 <!ENTITY editBookmark.removeBookmark.accessKey       "š">
+
+<!ENTITY editBookmark.showForNewBookmarks.label       "Rodyti redagavimo formą įrašant">
+<!ENTITY editBookmark.showForNewBookmarks.accesskey   "R">
 
 <!-- LOCALIZATION NOTE (identity.securityView.label)
      This is the header of the security subview in the Site Identity panel. -->
@@ -806,6 +842,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissions "Leidimai">
 <!ENTITY identity.permissionsEmpty "Šiai svetainei nesate suteikę jokių ypatingų leidimų.">
 <!ENTITY identity.permissionsReloadHint "Kad būtų pritaikyti pakeitimai, tinklalapį galimai reikia atsiųsti iš naujo.">
+
+<!ENTITY identity.permissionsPreferences.tooltip "Atverti leidimų nuostatas">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
@@ -905,8 +943,43 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.audioCapture.label "Bus pasiekiamas kortelės garsas.">
 <!ENTITY getUserMedia.allWindowsShared.message "Bus leidžiama matyti visus jūsų ekrane matomus langus.">
 
+<!ENTITY trackingProtection.on "Apsauga nuo stebėjimo: TAIP">
+<!ENTITY trackingProtection.off "Apsauga nuo stebėjimo: NE">
+
+<!ENTITY contentBlocking.title "Turinio blokavimas">
+<!ENTITY contentBlocking.detected "Svetainėje aptiktas blokuojamas turinys.">
+<!ENTITY contentBlocking.notDetected "Tinklalapyje neaptikta blokuojamo turinio.">
+<!ENTITY contentBlocking.disabled.label "Išjungta">
+<!ENTITY contentBlocking.disabled.tooltip "Esate išjungę turinio blokavimą.">
+<!ENTITY contentBlocking.exception.tooltip "Šiame tinklalapyje esate išjungę turinio blokavimą.">
+
+<!ENTITY contentBlocking.fastBlock.label "Lėtai įkeliami stebėjimo elementai">
+<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.blocked.label):
+     This label signals that this type of content blocking is turned
+     ON and is successfully blocking malicious/slow content, so this is
+     a positive thing. It forms the end of the (imaginary) sentence
+     "Slow-Loading Trackers [are] Blocked"-->
+<!ENTITY contentBlocking.fastBlock.blocked.label "Užblokuota">
+<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.add.label):
+     This is displayed as a link to preferences, where the user can add
+     this specific type of content blocking. When this text is shown
+     the type of content blocking is currently not enabled. -->
+<!ENTITY contentBlocking.fastBlock.add.label "Pridėti blokavimą…">
+
+<!ENTITY contentBlocking.trackingProtection.label "Stebėjimo elementai">
+<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
+     This label signals that this type of content blocking is turned
+     ON and is successfully blocking malicious/slow content, so this is
+     a positive thing. It forms the end of the (imaginary) sentence
+     "Trackers [are] Blocked"-->
+<!ENTITY contentBlocking.trackingProtection.blocked.label "Užblokuota">
+<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.add.label):
+     This is displayed as a link to preferences, where the user can add
+     this specific type of content blocking. When this text is shown
+     the type of content blocking is currently not enabled. -->
+<!ENTITY contentBlocking.trackingProtection.add.label "Pridėti blokavimą…">
+
 <!ENTITY trackingProtection.title "Apsauga nuo stebėjimo">
-<!ENTITY trackingProtection.tooltip "Atverti apsaugos nuo stebėjimo nuostatas">
 <!ENTITY trackingProtection.detectedBlocked3 "„&brandShortName;“ blokuoja jūsų naršymą galinčias stebėti šio tinklalapio dalis.">
 <!ENTITY trackingProtection.detectedNotBlocked3 "Šiame tinklalapyje yra jūsų naršymą galinčių stebėti elementų. Jūsų apsauga yra išjungta.">
 <!ENTITY trackingProtection.notDetected3 "Tinklalapyje nerasta stebėjimui naudojamų elementų.">
@@ -922,6 +995,36 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY trackingProtection.unblockPrivate.accesskey "I">
 <!ENTITY trackingProtection.block2.label "Įjungti apsaugą">
 <!ENTITY trackingProtection.block2.accesskey "Į">
+
+<!ENTITY trackingProtection.tooltip "Atverti apsaugos nuo stebėjimo nuostatas">
+<!ENTITY trackingProtection.detectedBlocked4 "„&brandShortName;“ blokuoja jūsų naršymą galinčias stebėti šio tinklalapio dalis.">
+<!ENTITY trackingProtection.detectedNotBlocked5 "„&brandShortName;“ aptiko jūsų naršymą galinčių stebėti elementų.">
+<!ENTITY trackingProtection.detectedException "„&brandShortName;“ aptiko jūsų naršymą galinčių stebėti elementų. Jūsų apsauga šioje svetainėje yra išjungta.">
+<!ENTITY trackingProtection.notDetected5 "Tinklalapyje nerasta stebėjimui naudojamų elementų.">
+<!ENTITY trackingProtection.notDetectedException "Tinklalapyje nerasta stenėjimui naudojamų elementų. Jūsų apsauga šioje svetainėje yra išjungta.">
+
+<!ENTITY trackingProtection.reloadRequired2 "Jūs įjungėte apsaugą nuo stebėjimo. Norėdami blokuoti visus stebėjimo elementus, įkelkite šį tinklalapį iš naujo.">
+
+<!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in NON-private browsing mode. -->
+<!ENTITY trackingProtection.unblock3.label "Išjungti šioje svetainėje">
+<!ENTITY trackingProtection.unblock3.accesskey "I">
+<!ENTITY trackingProtection.unblock4.label "Išjungti blokavimą šioje svetainėje">
+<!ENTITY trackingProtection.unblock4.accesskey "I">
+<!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in PRIVATE browsing mode. -->
+<!ENTITY trackingProtection.unblockPrivate3.label "Išjungti šiame seanse">
+<!ENTITY trackingProtection.unblockPrivate3.accesskey "I">
+<!ENTITY trackingProtection.block4.label "Įjungti šioje svetainėje">
+<!ENTITY trackingProtection.block4.accesskey "j">
+<!ENTITY trackingProtection.unblockPrivate4.label "Išjungti blokavimą laikinai">
+<!ENTITY trackingProtection.unblockPrivate4.accesskey "I">
+<!ENTITY trackingProtection.block5.label "Įjungti blokavimą šioje svetainėje">
+<!ENTITY trackingProtection.block5.accesskey "j">
+<!ENTITY trackingProtection.reload2.label "Įkelti tinklalapį iš naujo">
+<!ENTITY trackingProtection.reload2.accesskey "k">
 
 <!ENTITY pluginNotification.showAll.label "Rodyti visus">
 <!ENTITY pluginNotification.showAll.accesskey "v">
@@ -1024,6 +1127,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY sendToDevice.syncNotReady.label "Sinchronizuojami įrenginiai…">
 
 <!ENTITY pageAction.shareUrl.label "Dalintis">
+
+<!ENTITY pageAction.shareMore.label "Daugiau…">
 
 <!ENTITY libraryButton.tooltip "Peržiūrėti žurnalą, adresyno įrašus ir daugiau">
 

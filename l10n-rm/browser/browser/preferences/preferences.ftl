@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 16.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -137,20 +129,11 @@ is-not-default = { -brand-short-name } n'è betg il navigatur da standard
 set-as-my-default-browser =
     .label = Definir sco standard…
     .accesskey = s
-startup-page = Cura che { -brand-short-name } vegn avià
-    .accesskey = a
-startup-user-homepage =
-    .label = Mussar la pagina da partenza
-startup-blank-page =
-    .label = Mussar ina pagina vida
-startup-prev-session =
-    .label = Mussar las fanestras ed ils tabs da l'ultima sesida
 startup-restore-previous-session =
     .label = Restaurar l'ultima sesida
     .accesskey = s
 disable-extension =
     .label = Deactivar l'extensiun
-home-page-header = Pagina da partenza
 tabs-group-header = Tabs
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab siglia dad in tab a l'auter en la successiun da l'ultima utilisaziun
@@ -219,6 +202,9 @@ choose-language-description = Tscherna tia lingua preferida per la visualisaziun
 choose-button =
     .label = Tscherner…
     .accesskey = T
+choose-browser-language-description = Tscherna la lingua da menus, messadis ed avis da { -brand-short-name }.
+confirm-browser-language-change-description = Reaviar { -brand-short-name } per applitgar questas midadas
+confirm-browser-language-change-button = Applitgar e reaviar
 translate-web-pages =
     .label = Translatar cuntegn da web
     .accesskey = T
@@ -270,7 +256,6 @@ play-drm-content =
 play-drm-content-learn-more = Ulteriuras infurmaziuns
 update-application-title = Actualisaziuns da { -brand-short-name }
 update-application-description = Actualisescha { -brand-short-name } per prestaziun, stabilitad e segirezza maximala.
-update-application-info = Versiun { $version } <a>Novaziuns</a>
 update-application-version = Versiun { $version } <a data-l10n-name="learn-more">Novaziuns</a>
 update-history =
     .label = Mussar la cronologia da las actualisaziuns…
@@ -306,7 +291,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Limita da process da cuntegn
     .accesskey = p
 performance-limit-content-process-enabled-desc = Process da cuntegn supplementars pon augmentar la prestaziun sche ti utiliseschas plirs tabs, ma els dovran era dapli memoria.
-performance-limit-content-process-disabled-desc = Igl è mo pussaivel da midar il dumber da process da cuntegn cun versiuns da { -brand-short-name } che sustegnan plirs process. <a>Ve a savair co che ti pos controllar sche la funcziun da plirs process è activada</a>
 performance-limit-content-process-blocked-desc = Igl è mo pussaivel da midar il dumber da process da cuntegn cun versiuns da { -brand-short-name } che sustegnan plirs process. <a data-l10n-name="learn-more">Ve a savair co che ti pos controllar sche la funcziun da plirs process è activada</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -377,9 +361,6 @@ use-current-pages =
 choose-bookmark =
     .label = Utilisar segnapaginas…
     .accesskey = l
-restore-default =
-    .label = Restaurar il standard
-    .accesskey = R
 
 ## Search Section
 
@@ -649,6 +630,44 @@ addressbar-locbar-openpage-option =
     .accesskey = b
 addressbar-suggestions-settings = Midar las preferenzas per propostas da maschinas da tschertgar
 
+## Privacy Section - Content Blocking
+
+content-blocking-header = Bloccada da cuntegn
+content-blocking-desc = Blochescha cuntegn da terzas partidas sco reclamas u code che po ralentar la navigaziun e ta fastizar en il web. Adattescha las preferenzas per chattar l'equiliber ideal tranter protecziun e performanza.
+content-blocking-learn-more = Ulteriuras infurmaziuns
+content-blocking-restore-defaults =
+    .label = Restaurar il standard
+    .accesskey = R
+content-blocking-toggle-on =
+    .tooltiptext = Deactivar la bloccada da cuntegn
+content-blocking-toggle-off =
+    .tooltiptext = Activar la bloccada da cuntegn
+content-blocking-toggle-label-on = ACTIVÀ
+    .accesskey = A
+content-blocking-toggle-label-off = DEACTIVÀ
+    .accesskey = D
+content-blocking-category-label = Tscherna tge bloccar
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Elements plauns che fastizeschan
+    .accesskey = s
+content-blocking-fastblock-description = Blochescha cuntegn da terzas partidas che dovra dapli che 5 secundas per chargiar.
+content-blocking-fastblock-option-enabled =
+    .label = Adina bloccar
+content-blocking-fastblock-option-disabled =
+    .label = Mai bloccar
+content-blocking-tracking-protection-label = Fastizaders
+    .accesskey = t
+content-blocking-tracking-protection-description = Blochescha tut ils fastizaders enconuschents (Remartga: impedescha eventualmain che tschertas paginas chargian)
+content-blocking-tracking-protection-option-enabled =
+    .label = Adina bloccar
+content-blocking-tracking-protection-option-pbm =
+    .label = Mo bloccar en fanestras privatas
+content-blocking-tracking-protection-option-disabled =
+    .label = Mai bloccar
+content-blocking-tracking-protection-change-blocklist = Modifitgar la glista da bloccada…
+
 ## Privacy Section - Tracking
 
 tracking-header = Protecziun cunter il fastizar
@@ -697,9 +716,19 @@ permissions-notification-link = Ulteriuras infurmaziuns
 permissions-notification-pause =
     .label = Modus da pausa per las communicaziuns enfin che { -brand-short-name } vegn reavià
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = Impedir che websites reproduceschian automaticamain medias cun tun 
+    .accesskey = I
+permissions-block-autoplay-media-menu = Per websites che reproduceschan automaticamain tun
 permissions-block-autoplay-media-exceptions =
     .label = Excepziuns…
     .accesskey = E
+autoplay-option-ask =
+    .label = Adina dumandar
+autoplay-option-allow =
+    .label = Lubir da reproducir
+autoplay-option-dont =
+    .label = Betg far ir automaticamain
 permissions-block-popups =
     .label = Bloccar fanestras pop-up
     .accesskey = p

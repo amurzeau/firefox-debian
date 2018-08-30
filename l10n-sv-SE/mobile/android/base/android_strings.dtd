@@ -372,6 +372,8 @@
 
 <!ENTITY pref_media_autoplay_enabled "Tillåt automatisk uppspelning">
 <!ENTITY pref_media_autoplay_enabled_summary "Kontrollera om webbplatser kan spela upp automatiskt videor och annat medieinnehåll">
+<!ENTITY pref_media_autoplay_allow "Tillåt automatisk uppspelning">
+<!ENTITY pref_media_autoplay_block "Blockera automatisk uppspelning">
 <!ENTITY pref_zoom_force_enabled "Aktivera alltid zoom">
 <!ENTITY pref_zoom_force_enabled_summary "Åsidosätt så att du kan zooma på vilken sida som helst">
 <!ENTITY pref_voice_input "Röstinmatning">
@@ -445,8 +447,13 @@
 <!-- Localization note (datareporting_crashreporter_title_short) : This string matches
      (crashReporterSection.label) in en-US/chrome/browser/preferences/advanced.dtd.-->
 <!ENTITY datareporting_crashreporter_title_short "Kraschrapportör">
-<!ENTITY datareporting_wifi_title2 "&vendorShortName;s platstjänster">
+<!ENTITY datareporting_wifi_title2 "&vendorShortName; platstjänst">
 <!ENTITY datareporting_wifi_geolocation_summary4 "Hjälp &vendorShortName; att kartlägga världen! Dela den ungefärliga Wi-Fi och datatrafikplatsen för din enhet, och hjälp oss att förbättra våra platstjänster.">
+<!-- Localization note (datareporting_notification_title ) : This will be the title
+     of the notification shown whenever the user has enabled data reporting and the stumbler
+     service is running. -->
+<!ENTITY datareporting_stumbler_notification_title "&vendorShortName; platstjänsten körs">
+
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -888,3 +895,16 @@ See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "Lägg till på startsidan">
 <!ENTITY pwa_continue_to_website "Fortsätt till webbsidan">
 <!ENTITY pwa_onboarding_sumo "Du kan enkelt lägga till den här webbplatsen på din startsida för att få snabb åtkomst och surfa snabbare med en appliknande upplevelse.">
+
+<!-- Used by accessibility services to identify the play/pause buttons shown in the
+Picture-in-picture mini window -->
+<!ENTITY pip_play_button_title "Spela upp">
+<!ENTITY pip_play_button_description "Återuppta uppspelning">
+<!ENTITY pip_pause_button_title "Pausa">
+<!ENTITY pip_pause_button_description "Pausa uppspelning">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY mls_notification_channel "&vendorShortName; platstjänst">
+<!ENTITY download_notification_channel "Hämtningar">
+<!ENTITY media_notification_channel "Medieuppspelning">

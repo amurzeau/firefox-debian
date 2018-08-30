@@ -60,6 +60,7 @@ permissions-exceptions-tracking-protection-desc = Bu saytlarda İzlənmə Qoruma
 permissions-exceptions-cookie-window =
     .title = İstisnalar: Çərəzlər və Sayt Məlumatları
     .style = { permissions-window.style }
+permissions-exceptions-cookie-desc = Hansı saytların çərəz və sayt məlumatlarını işlədib-işlətməyəcəyini dəqiqləşdirə bilərsiz. İdarə etmək istədiyiniz saytın ünvanını yazaraq Əngəllə, Sessiya üçün icazə ver və ya İcazə ver-ə klikləyə bilərsiz.
 
 ## Exceptions - Pop-ups
 
@@ -87,35 +88,48 @@ permissions-exceptions-addons-desc = Hansı saytların əlavə yükləyə biləc
 permissions-exceptions-autoplay-media-window =
     .title = İcazə verilən saytlar - Avto Oxutma
     .style = { permissions-window.style }
+permissions-exceptions-autoplay-media-desc = Hansı saytların avtomatik media oxuda biləcəyini dəqiqləşdirə bilərsiz. İcazə vermək istədiyiniz saytın ünvanını yaxın və İcazə Ver-ə klikləyin.
+permissions-exceptions-autoplay-media-window2 =
+    .title = İstisna - Avto Oxutma
+    .style = { permissions-window.style }
+permissions-exceptions-autoplay-media-desc2 = Hansı saytların həmişə və ya heç vaxt media məzmunlarını avtomatik səsli oxuda biləcəklərini seçə bilərsiz. İdarə etmək istədiyiniz saytın ünvanını daxil edin, Əngəllə və ya İcazə ver seçin.
 
 ## Site Permissions - Notifications
 
 permissions-site-notification-window =
     .title = Tənzimləmələr - Bildiriş İcazələri
     .style = { permissions-window.style }
+permissions-site-notification-desc = Aşağıdakı saytlar sizə bildiriş göndərmək üçün icazə istəyiblər. Hansı saytların sizə bildiriş göndərə biləcəklərini dəqiqləşdirə bilərsiniz. Həmçinin yeni bildiriş icazəsi istəklərini əngəlləyə bilərsiz.
 permissions-site-notification-disable-label =
     .label = Bildirişlər üçün icazə istəyən yeni istəkləri əngəllə
+permissions-site-notification-disable-desc = Bu yuxarıda olmayan bütün saytların sizdən bildiriş göndərmə icazəsi istəmələrini əngəlləyəcək. Bildirişləri əngəlləmə bəzi sayt özəlliklərini poza bilər.
 
 ## Site Permissions - Location
 
 permissions-site-location-window =
     .title = Tənzimləmələr - Mövqe İcazələri
     .style = { permissions-window.style }
+permissions-site-location-desc = Aşağıdakı saytlar mövqeyinizi almaq üçün icazə istəyiblər. Hansılarının mövqeyinizi ala biləcəklərini dəqiqləşdirə bilərsiniz. Həmçinin yeni mövqeyinizi öyrənmə istəklərini əngəlləyə bilərsiniz.
 permissions-site-location-disable-label =
     .label = Məkanınız üçün icazə istəyən yeni istəkləri əngəllə
+permissions-site-location-disable-desc = Bu yuxarıda olmayan bütün saytların mövqeyinizi istəmələrini əngəlləyəcək. Mövqeyinizi almağı əngəlləmə bəzi sayt özəlliklərini poza bilər.
 
 ## Site Permissions - Camera
 
 permissions-site-camera-window =
     .title = Tənzimləmələr - Kamera İcazələri
     .style = { permissions-window.style }
+permissions-site-camera-desc = Aşağıdakı saytlar kameranız üçün icazə istəyiblər. Hansılarının kameranızı işlədə biləcəklərini dəqiqləşdirə bilərsiniz. Həmçinin yeni kamera istəklərini əngəlləyə bilərsiniz.
 permissions-site-camera-disable-label =
     .label = Kameranız üçün icazə istəyən yeni istəkləri əngəllə
+permissions-site-camera-disable-desc = Bu yuxarıda olmayan bütün saytların kameranız üçün icazə istəmələrini əngəlləyəcək. Kameranızı işlətməyi əngəlləmə bəzi sayt özəlliklərini poza bilər.
 
 ## Site Permissions - Microphone
 
 permissions-site-microphone-window =
     .title = Tənzimləmələr - Mikrofon İcazələri
     .style = { permissions-window.style }
+permissions-site-microphone-desc = Aşağıdakı saytlar mikrofonunuz üçün icazə istəyiblər. Hansılarının mikrofonunuzu işlədə biləcəklərini dəqiqləşdirə bilərsiniz. Həmçinin yeni mikrofon istəklərini əngəlləyə bilərsiniz.
 permissions-site-microphone-disable-label =
     .label = Mikrofonunuz üçün icazə istəyən yeni istəkləri əngəllə
+permissions-site-microphone-disable-desc = Bu yuxarıda olmayan bütün saytların mikrofonunuz üçün icazə istəmələrini əngəlləyəcək. Mikrofonunuzu işlətməyi əngəlləmə bəzi sayt özəlliklərini poza bilər.

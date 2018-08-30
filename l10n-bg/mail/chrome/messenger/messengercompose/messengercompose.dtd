@@ -167,7 +167,7 @@
 <!ENTITY checkSpellingCmd2.key "p">
 <!ENTITY checkSpellingCmd2.key2 "VK_F7">
 <!ENTITY checkSpellingCmd2.accesskey "П">
-<!ENTITY enableInlineSpellChecker.label "Проверка на правописа при писане">
+<!ENTITY enableInlineSpellChecker.label "Проверка на правописа при въвеждане">
 <!ENTITY enableInlineSpellChecker.accesskey "р">
 <!ENTITY quoteCmd.label "Цитиране на писмо">
 <!ENTITY quoteCmd.accesskey "Ц">
@@ -247,9 +247,8 @@
 <!ENTITY sendlaterButton.tooltip "Писмото ще се изпрати по-късно">
 <!ENTITY quoteButton.tooltip "Цитиране на предното писмо">
 <!ENTITY addressButton.tooltip "Изберете получател от адресника">
-<!ENTITY attachButton.tooltip "Добавяне на прикачен файл">
 <!ENTITY attachButton.tooltip2 "Добавяне на прикачен файл">
-<!ENTITY spellingButton.tooltip "Правописна проверка на маркировката или цялото писмо">
+<!ENTITY spellingButton.tooltip "Правописна проверка на избраното или цялото писмо">
 <!ENTITY saveButton.tooltip "Запазване на писмото">
 <!ENTITY cutButton.tooltip              "Изрязване">
 <!ENTITY copyButton.tooltip             "Копиране">
@@ -275,7 +274,6 @@
      and it must be the same as toggleAttachmentPaneCmd.key, otherwise it won't
      work, as the shortcut key functionality supersedes the access key. -->
 <!ENTITY attachments.accesskey "п">
-
 <!ENTITY attachmentBucketHeader.tooltip "Прикачени файлове">
 <!ENTITY attachmentBucketCloseButton.tooltip "Скриване на панела с прикачени файлове">
 
@@ -360,6 +358,9 @@
 <!-- Identity popup customize menuitem -->
 <!ENTITY customizeFromAddress.label "Изпращане от друго име…">
 <!ENTITY customizeFromAddress.accesskey "а">
+
+<!-- Accessibility name for the document -->
+<!ENTITY aria.message.bodyName "Текс на писмото">
 
 <!-- Status Bar -->
 <!ENTITY languageStatusButton.tooltip "Език за проверка на правописа">

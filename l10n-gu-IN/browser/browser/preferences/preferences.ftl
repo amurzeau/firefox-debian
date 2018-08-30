@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -137,20 +129,11 @@ is-not-default = { -brand-short-name } તમારું ડિફૉલ્ટ 
 set-as-my-default-browser =
     .label = ડિફૉલ્ટ બનાવો…
     .accesskey = D
-startup-page = જ્યારે { -brand-short-name } શરૂ થાય છે
-    .accesskey = s
-startup-user-homepage =
-    .label = તમારું મુખ્ય પાનું બતાવો
-startup-blank-page =
-    .label = કોરુ પાનું બતાવો
-startup-prev-session =
-    .label = છેલ્લા સમયની તમારી વિંડોઝ અને ટેબ્સ બતાવો
 startup-restore-previous-session =
     .label = પહેલાનાં સત્રને પુન:સંગ્રહો
     .accesskey = s
 disable-extension =
     .label = એક્સ્ટેંશન અક્ષમ કરો
-home-page-header = મુખ્ય પૃષ્ઠ
 tabs-group-header = ટૅબ્સ
 ctrl-tab-recently-used-order =
     .label = તાજેતરમાં ઉપયોગમાં લેવાયેલી ક્રમમાં ટેબ દ્વારા Ctrl+Tab ચક્ર
@@ -219,6 +202,9 @@ choose-language-description = પાનાંઓ દર્શાવવા મા
 choose-button =
     .label = પસંદ કરો...
     .accesskey = o
+choose-browser-language-description = { -brand-short-name } માંથી મેનુઓ, સંદેશાઓ અને સૂચનાઓ પ્રદર્શિત કરવા માટે ઉપયોગમાં લેવાતા ભાષાઓને પસંદ કરો.
+confirm-browser-language-change-description = આ ફેરફારોને લાગુ કરવા માટે { -brand-short-name } પુનઃપ્રારંભ કરો
+confirm-browser-language-change-button = લાગુ કરો અને પુનઃપ્રારંભ કરો
 translate-web-pages =
     .label = વેબ સમાવિષ્ટ અનુવાદ કરો
     .accesskey = T
@@ -258,7 +244,7 @@ applications-description = કેવી રીતે { -brand-short-name } પ�
 applications-filter =
     .placeholder = ફાઇલ પ્રકારો અથવા એપ્લિકેશન્સ શોધો
 applications-type-column =
-    .label = વિષયસુચી પ્રકાર
+    .label = સામગ્રી પ્રકાર
     .accesskey = T
 applications-action-column =
     .label = ક્રિયા
@@ -270,7 +256,6 @@ play-drm-content =
 play-drm-content-learn-more = વધુ શીખો
 update-application-title = { -brand-short-name } સુધારો
 update-application-description = શ્રેષ્ઠ પ્રદર્શન, સ્થિરતા અને સુરક્ષા માટે { -brand-short-name } અધતન રાખો.
-update-application-info = આવૃત્તિ { $version } <a>નવું શું છે</a>
 update-application-version = આવૃત્તિ { $version } <a data-l10n-name="learn-more">નવું શું છે</a>
 update-history =
     .label = અપડેટ ઇતિહાસ બતાવો…
@@ -306,7 +291,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = સામગ્રી પ્રક્રિયા મર્યાદા
     .accesskey = L
 performance-limit-content-process-enabled-desc = બહુવિધ ટૅબ્સનો ઉપયોગ કરતી વખતે વધારાની સામગ્રી પ્રક્રિયાઓ પ્રભાવ સુધારી શકે છે, પરંતુ તે વધુ મેમરીનો પણ ઉપયોગ કરશે.
-performance-limit-content-process-disabled-desc = મલ્ટિપ્રોસેસ સાથે સામગ્રી પ્રોસેસની સંખ્યામાં ફેરફાર કરવો શક્ય છે { -brand-short-name }. <a>મલ્ટિપ્રોસેસ સક્રિય કરે છે કે નહીં તે કેવી રીતે તપાસવું તે જાણો</a>
 performance-limit-content-process-blocked-desc = મલ્ટિપ્રોસેસ સાથે સામગ્રી પ્રોસેસની સંખ્યામાં ફેરફાર કરવો શક્ય છે { -brand-short-name }. <a data-l10n-name="learn-more">મલ્ટિપ્રોસેસ સક્રિય કરે છે કે નહીં તે કેવી રીતે તપાસવું તે જાણો</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -377,9 +361,6 @@ use-current-pages =
 choose-bookmark =
     .label = બુકમાર્ક વાપરો…
     .accesskey = B
-restore-default =
-    .label = મૂળભૂતમાં પુનઃસંગ્રહો
-    .accesskey = R
 
 ## Search Section
 
@@ -624,6 +605,26 @@ sitedata-accept-third-party-visited-option =
     .label = મુલાકાત લીધેલ
 sitedata-accept-third-party-never-option =
     .label = ક્યારેય નહિં
+sitedata-allow-cookies-option =
+    .label = કૂકીઝ અને સાઇટ ડેટાને સ્વીકારો
+    .accesskey = A
+sitedata-disallow-cookies-option =
+    .label = કૂકીઝ અને સાઇટ ડેટાને અવરોધિત કરો
+    .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = પ્રકાર અવરોધિત
+    .accesskey = T
+sitedata-block-trackers-option-recommended =
+    .label = તૃતીય-પક્ષ ટ્રેકર્સ (ભલામણ કરેલ)
+sitedata-block-trackers-option =
+    .label = તૃતીય-પક્ષ ટ્રેકર્સ
+sitedata-block-unvisited-option =
+    .label = મુલાકાત લીધેલી વેબસાઇટ્સ પરથી કૂકીઝ
+sitedata-block-all-third-parties-option =
+    .label = બધી તૃતીય-પક્ષ કૂકીઝ
+sitedata-block-always-option =
+    .label = બધી કૂકીઝ (વેબસાઇટ્સને બંધ કરવા કારણ બની શકે છે)
 sitedata-clear =
     .label = માહિતી સાફ કરો…
     .accesskey = l
@@ -648,6 +649,44 @@ addressbar-locbar-openpage-option =
     .label = ટૅબ્સ ખોલો
     .accesskey = O
 addressbar-suggestions-settings = શોધ એન્જિન સૂચનો માટે પસંદગીઓ બદલો
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = સામગ્રી અવરોધિત
+content-blocking-desc = તૃતીય-પક્ષ વસ્તુઓને અવરોધિત કરો, જેમ કે જાહેરાતો અથવા કોડ, જે તમારી બ્રાઉઝિંગને ધીમુ કરી શકે છે અને વેબ પર તમને ટ્રૅક કરી શકે છે. રક્ષણ અને કાર્યના શ્રેષ્ઠ સંતુલન માટે તમારી સેટિંગ્સને કસ્ટમાઇઝ કરો.
+content-blocking-learn-more = વધુ શીખો
+content-blocking-restore-defaults =
+    .label = મૂળભૂતને પુન:સંગ્રહો
+    .accesskey = R
+content-blocking-toggle-on =
+    .tooltiptext = વસ્તુઓનો અવરોધ બંધ કરો
+content-blocking-toggle-off =
+    .tooltiptext = વસ્તુઓનો અવરોધ ચાલુ કરો
+content-blocking-toggle-label-on = ચાલુ
+    .accesskey = O
+content-blocking-toggle-label-off = બંધ
+    .accesskey = O
+content-blocking-category-label = શું અવરોધ કરવું તે પસંદ કરો
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = ધીમા ટ્રેકિંગ તત્વો
+    .accesskey = S
+content-blocking-fastblock-description = તૃતીય-પક્ષની સામગ્રીને અવરોધ કરે છે જે લોડ થવામાં 5 સેકંડથી વધુ સમય લે છે.
+content-blocking-fastblock-option-enabled =
+    .label = હંમેશા અવરોધિત કરો
+content-blocking-fastblock-option-disabled =
+    .label = ક્યારેય અવરોધિત કરશો નહીં
+content-blocking-tracking-protection-label = ટ્રેકર્સ
+    .accesskey = T
+content-blocking-tracking-protection-description = બધા જાણીતા ટ્રેકર્સને અવરોધ કરે છે
+content-blocking-tracking-protection-option-enabled =
+    .label = હંમેશા અવરોધિત કરો
+content-blocking-tracking-protection-option-pbm =
+    .label = ફક્ત ખાનગી વિંડોઝમાં અવરોધિત કરો
+content-blocking-tracking-protection-option-disabled =
+    .label = ક્યારેય અવરોધિત કરશો નહીં
+content-blocking-tracking-protection-change-blocklist = અવરોધ સૂચિ બદલો...
 
 ## Privacy Section - Tracking
 
@@ -697,6 +736,20 @@ permissions-notification-link = વધુ શીખો
 permissions-notification-pause =
     .label = { -brand-short-name } પુનઃપ્રારંભે ત્યા સુધી સૂચનાઓ થોભાવો
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = અવાજ સાથે મીડિયાને આપમેળે ચલાવવાથી વેબસાઇટ્સને બ્લૉક કરો
+    .accesskey = B
+permissions-block-autoplay-media-menu = ઑટોપ્લે અવાજ વેબસાઇટ્સ માટે
+permissions-block-autoplay-media-exceptions =
+    .label = અપવાદો…
+    .accesskey = E
+autoplay-option-ask =
+    .label = હંમેશા કહો
+autoplay-option-allow =
+    .label = ઑટોપ્લેને મંજૂરી આપો
+autoplay-option-dont =
+    .label = ઑટોપ્લે નહીં કરો
+permissions-autoplay-link = વધુ શીખો
 permissions-block-popups =
     .label = પોપ-અપ વિન્ડો અટકાવો
     .accesskey = B
@@ -723,6 +776,9 @@ collection-health-report =
     .label = { -brand-short-name } ને મંજૂરી આપો { -vendor-short-name } ને ટેક્નિકલ અને ક્રિયાપ્રતિક્રિયા ડેટા મોકલવા માટે.
     .accesskey = r
 collection-health-report-link = વધારે શીખો
+collection-studies =
+    .label = { -brand-short-name } અભ્યાસને ઇન્સ્ટોલ અને ચલાવવાની મંજૂરી આપો
+collection-studies-link = { -brand-short-name } અભ્યાસો જુઓ
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = આ તૈચાર કરેલ રૂપરેખાંકન માટે ડેટા અહેવાલ અક્ષમ કરેલું છે

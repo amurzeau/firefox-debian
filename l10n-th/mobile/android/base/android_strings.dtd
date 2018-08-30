@@ -4,7 +4,7 @@
 
 <!ENTITY firstrun_panel_title_welcome "ยินดีต้อนรับ">
 <!ENTITY firstrun_urlbar_message2 "ขอบคุณที่เลือก &brandShortName;">
-<!ENTITY firstrun_urlbar_subtext2 "เบราว์เซอร์มือถือที่ทันสมัยจาก Mozilla องค์กรไม่แสวงหาผลกำไรที่มุ่งมั่นเพื่อเว็บฟรีและเปิดกว้าง">
+<!ENTITY firstrun_urlbar_subtext2 "เบราว์เซอร์มือถือที่ทันสมัยจาก Mozilla องค์กรไม่แสวงหาผลกำไรที่มุ่งมั่นเพื่อเว็บเสรีและเปิดกว้าง">
 <!ENTITY firstrun_panel_title_privacy "ความเป็นส่วนตัว">
 <!ENTITY firstrun_privacy_message "ท่องเว็บเหมือนไม่มีใครเฝ้ามองอยู่">
 <!ENTITY firstrun_privacy_subtext "การท่องเว็บแบบส่วนตัวพร้อมการป้องกันการติดตามปิดกั้นตัวติดตามขณะที่คุณท่องเว็บและจะไม่จดจำประวัติของคุณเมื่อคุณเสร็จสิ้นการท่องเว็บ">
@@ -29,7 +29,7 @@
 <!ENTITY firstrun_tabqueue_title "ลิงก์">
 <!-- Localization note (firstrun_tabqueue_message): 'Tab queue' is a feature that allows users to queue up or save links from outside of Firefox (without switching apps) - these links will be loaded in Firefox the next time Firefox is opened. -->
 <!ENTITY firstrun_tabqueue_message_off "เปิดคิวแท็บ">
-<!ENTITY firstrun_tabqueue_subtext_off "บันทึกลิงก์สำหรับภายหลังใน &brandShortName; เมื่อแตะที่ลิงก์ในแอปอื่น ๆ">
+<!ENTITY firstrun_tabqueue_subtext_off "บันทึกลิงก์สำหรับภายหลังใน &brandShortName; เมื่อแตะลิงก์ในแอปอื่น ๆ">
 
 <!ENTITY firstrun_tabqueue_message_on "สำเร็จ!">
 <!ENTITY firstrun_tabqueue_subtext_on "คุณสามารถปิดสิ่งนี้ได้เสมอใน &settings; ภายใต้ &pref_category_general;">
@@ -372,6 +372,8 @@
 
 <!ENTITY pref_media_autoplay_enabled "อนุญาตการเล่นอัตโนมัติ">
 <!ENTITY pref_media_autoplay_enabled_summary "ควบคุมการเล่นวิดีโอและเนื้อหาสื่ออื่นของเว็บไซต์โดยอัตโนมัติ">
+<!ENTITY pref_media_autoplay_allow "อนุญาตการเล่นอัตโนมัติ">
+<!ENTITY pref_media_autoplay_block "ปิดกั้นการเล่นอัตโนมัติ">
 <!ENTITY pref_zoom_force_enabled "เปิดใช้งานการซูมเสมอ">
 <!ENTITY pref_zoom_force_enabled_summary "บังคับใช้ค่าเพื่อให้คุณสามารถซูมได้ทุกหน้า">
 <!ENTITY pref_voice_input "การรับค่าด้วยเสียง">
@@ -445,8 +447,13 @@
 <!-- Localization note (datareporting_crashreporter_title_short) : This string matches
      (crashReporterSection.label) in en-US/chrome/browser/preferences/advanced.dtd.-->
 <!ENTITY datareporting_crashreporter_title_short "ตัวรายงานข้อขัดข้อง">
-<!ENTITY datareporting_wifi_title2 "บริการตำแหน่งที่ตั้ง &vendorShortName;">
+<!ENTITY datareporting_wifi_title2 "บริการตำแหน่งที่ตั้งของ &vendorShortName;">
 <!ENTITY datareporting_wifi_geolocation_summary4 "ช่วย &vendorShortName; สร้างแผนที่โลก! แบ่งปันตำแหน่งที่ตั้ง Wi-Fi และเครือข่ายเคลื่อนที่ของอุปกรณ์ของคุณโดยประมาณเพื่อปรับปรุงบริการตำแหน่งที่ตั้งทางภูมิศาสตร์ของเรา">
+<!-- Localization note (datareporting_notification_title ) : This will be the title
+     of the notification shown whenever the user has enabled data reporting and the stumbler
+     service is running. -->
+<!ENTITY datareporting_stumbler_notification_title "บริการตำแหน่งที่ตั้งของ &vendorShortName; กำลังทำงาน">
+
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -719,7 +726,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 
 <!ENTITY updater_downloading_title2 "กำลังดาวน์โหลด &brandShortName;">
 <!ENTITY updater_downloading_title_failed2 "การดาวน์โหลดล้มเหลว">
-<!ENTITY updater_downloading_select2 "สัมผัสเพื่อเรียกใช้การอัปเดตเมื่อดาวน์โหลดเสร็จ">
+<!ENTITY updater_downloading_select2 "สัมผัสเพื่อใช้การอัปเดตเมื่อดาวน์โหลดเสร็จ">
 <!ENTITY updater_downloading_retry2 "สัมผัสเพื่อลองใหม่">
 
 <!ENTITY updater_apply_title3 "ดาวน์โหลดการอัปเดตสำหรับ &brandShortName; แล้ว">
@@ -888,3 +895,14 @@ See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "เพิ่มไปยังหน้าจอหลัก">
 <!ENTITY pwa_continue_to_website "ดำเนินการต่อไปยังเว็บไซต์">
 <!ENTITY pwa_onboarding_sumo "คุณสามารถเพิ่มเว็บไซต์นี้ไปยังหน้าจอหลักของคุณได้อย่างง่ายดายเพื่อให้เข้าถึงได้ทันทีและท่องเว็บได้เร็วขึ้นด้วยประสบการณ์ที่เหมือนแอป">
+
+<!-- Used by accessibility services to identify the play/pause buttons shown in the
+Picture-in-picture mini window -->
+<!ENTITY pip_play_button_title "เล่น">
+<!ENTITY pip_play_button_description "เล่นต่อ">
+<!ENTITY pip_pause_button_title "หยุดชั่วคราว">
+<!ENTITY pip_pause_button_description "หยุดเล่นชั่วคราว">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY mls_notification_channel "บริการตำแหน่งที่ตั้งของ &vendorShortName;">

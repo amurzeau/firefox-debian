@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -137,20 +129,11 @@ is-not-default = { -brand-short-name } non es tu navigator predefinite
 set-as-my-default-browser =
     .label = Predefinir…
     .accesskey = D
-startup-page = Quando { -brand-short-name } es initiate
-    .accesskey = i
-startup-user-homepage =
-    .label = Monstra tu pagina initial
-startup-blank-page =
-    .label = Monstra un pagina vacue
-startup-prev-session =
-    .label = Monstra le fenestras e schedas de tu ultime vice
 startup-restore-previous-session =
     .label = Restaurar previe session
     .accesskey = p
 disable-extension =
     .label = Inactivar le extension
-home-page-header = Pagina initial
 tabs-group-header = Schedas
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab percurre le schedas in le ordine usate recentemente
@@ -219,6 +202,9 @@ choose-language-description = Elige tu lingua preferite pro presentar le paginas
 choose-button =
     .label = Eliger…
     .accesskey = E
+choose-browser-language-description = Elige le linguas usate pro monstrar menus, messages, e notificationes per { -brand-short-name }.
+confirm-browser-language-change-description = Reinitiar { -brand-short-name } pro applicar iste cambiamentos
+confirm-browser-language-change-button = Applicar e reinitiar
 translate-web-pages =
     .label = Traducer le contento web
     .accesskey = T
@@ -265,12 +251,11 @@ applications-action-column =
     .accesskey = A
 drm-content-header = Contento protegite per DRM (Gestion de Derectos Digital)
 play-drm-content =
-    .label = Leger contento protegite per DRM
+    .label = Presentar contento protegite per DRM
     .accesskey = P
 play-drm-content-learn-more = Saper plus
 update-application-title = Actualisationes de { -brand-short-name }
 update-application-description = Mantene { -brand-short-name } actualisate pro le melior rendimento, stabilitate e securitate.
-update-application-info = Version { $version } <a>Novas</a>
 update-application-version = Version { $version } <a data-l10n-name="learn-more">Novas</a>
 update-history =
     .label = Monstrar le chronologia de actualisationes…
@@ -306,7 +291,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Limite de processos de contento
     .accesskey = L
 performance-limit-content-process-enabled-desc = Plus processos de contento pote meliorar le rendimento quando on usa plure schedas. ma tamben illos usa plus memoria.
-performance-limit-content-process-disabled-desc = Modificar le numero de processos de contento es solmente possibile con { -brand-short-name } in multiprocesso. <a>Apprender a verificar si le multiprocesso es active</a>
 performance-limit-content-process-blocked-desc = Modificar le numero de processos de contento es solmente possibile con { -brand-short-name } in multiprocesso. <a data-l10n-name="learn-more">Apprender a verificar si le multiprocesso es active</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -377,9 +361,6 @@ use-current-pages =
 choose-bookmark =
     .label = Usar un marcapaginas…
     .accesskey = m
-restore-default =
-    .label = Restaurar le predefinition
-    .accesskey = R
 
 ## Search Section
 
@@ -649,6 +630,44 @@ addressbar-locbar-openpage-option =
     .accesskey = S
 addressbar-suggestions-settings = Cambiar le preferentias pro le suggestiones del motor de recerca
 
+## Privacy Section - Content Blocking
+
+content-blocking-header = Blocage de contento
+content-blocking-desc = Blocar contento de terties, como annuncios o codice, que pote lentar tu navigation e traciar tu activitate per le web. Personalisa tu parametros pro le melior equilibrio de protection e rendimento.
+content-blocking-learn-more = Saper plus
+content-blocking-restore-defaults =
+    .label = Restaurar predefinitiones
+    .accesskey = R
+content-blocking-toggle-on =
+    .tooltiptext = Inactivar le blocage de contento
+content-blocking-toggle-off =
+    .tooltiptext = Activar le blocage de contento
+content-blocking-toggle-label-on = ACTIVE
+    .accesskey = A
+content-blocking-toggle-label-off = INACTIVE
+    .accesskey = I
+content-blocking-category-label = Elige que blocar
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Elementos de traciamento lente
+    .accesskey = l
+content-blocking-fastblock-description = Bloca contentos de terties que demora plus que 5 secundas pro cargar.
+content-blocking-fastblock-option-enabled =
+    .label = Blocar sempre
+content-blocking-fastblock-option-disabled =
+    .label = Nunquam blocar
+content-blocking-tracking-protection-label = Traciatores
+    .accesskey = T
+content-blocking-tracking-protection-description = Bloca tote le traciatores cognite (Nota: pote tamben impedir alcun paginas de cargar).
+content-blocking-tracking-protection-option-enabled =
+    .label = Blocar sempre
+content-blocking-tracking-protection-option-pbm =
+    .label = Blocar solmente in fenestras private
+content-blocking-tracking-protection-option-disabled =
+    .label = Nunquam blocar
+content-blocking-tracking-protection-change-blocklist = Cambiar le lista de blocage...
+
 ## Privacy Section - Tracking
 
 tracking-header = Protection contra le traciamento
@@ -697,9 +716,19 @@ permissions-notification-link = Saper plus
 permissions-notification-pause =
     .label = Pausar le notificationes usque { -brand-short-name } reinitia
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = Blocar le reproduction automatic de medias con sono in le sitos web 
+    .accesskey = B
+permissions-block-autoplay-media-menu = Pro le sitos web que presenta sono automaticamente
 permissions-block-autoplay-media-exceptions =
     .label = Exceptiones…
     .accesskey = E
+autoplay-option-ask =
+    .label = Demandar sempre
+autoplay-option-allow =
+    .label = Permitter le presentation automatic
+autoplay-option-dont =
+    .label = Non presentar automaticamente
 permissions-block-popups =
     .label = Blocar le fenestras emergente
     .accesskey = B
@@ -719,7 +748,7 @@ permissions-a11y-privacy-link = Saper plus
 
 ## Privacy Section - Data Collection
 
-collection-header = Collecta de datos e utilisation de { -brand-short-name }
+collection-header = Colligimento de datos e utilisation de { -brand-short-name }
 collection-description = Nos nos effortia pro lassar te in le commando e colliger solmente lo que nos ha necessitate pro provider e meliorar { -brand-short-name } a totes. Nos sempre demanda permission ante reciper informationes personal.
 collection-privacy-notice = Notification de confidentialitate
 collection-health-report =

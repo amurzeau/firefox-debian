@@ -11,10 +11,12 @@ colors-window =
         }
 colors-close-key =
     .key = w
+colors-page-override = పేజీలు పేర్కొన్న రంగులను పైన నా ఎంపికలతో మార్చు
+    .accesskey = O
 colors-page-override-option-always =
     .label = ఎల్లప్పుడూ
 colors-page-override-option-auto =
-    .label = అధిక కాంట్రాస్ట్ థీములకు మాత్రమే
+    .label = అధిక కాంట్రాస్ట్ అలంకారాలకు మాత్రమే
 colors-page-override-option-never =
     .label = ఎప్పటికీ కాదు
 colors-text-and-background = పాఠ్యం, వెనుతలం

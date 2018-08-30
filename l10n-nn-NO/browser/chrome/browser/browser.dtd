@@ -38,6 +38,21 @@ left instead of right. -->
 <!ENTITY  closeSelectedTabs.label            "Lat att valde faner">
 <!ENTITY  closeSelectedTabs.accesskey        "L">
 
+<!ENTITY  pinSelectedTabs.label              "Fest faner">
+<!-- Pin Tab and Pin Selected Tabs have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  pinSelectedTabs.accesskey          "F">
+<!ENTITY  unpinSelectedTabs.label            "Løys faner">
+<!-- Unpin Tab and Unpin Selected Tabs have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  unpinSelectedTabs.accesskey        "e">
+<!-- Reload Tab and Reload Selected Tabs have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  reloadSelectedTabs.label           "Oppdater valde faner">
+<!ENTITY  reloadSelectedTabs.accesskey       "O">
+<!ENTITY  bookmarkSelectedTabs.label         "Bokmerk faner…">
+<!ENTITY  bookmarkSelectedTabs.accesskey     "B">
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -65,7 +80,6 @@ can reach it easily. -->
 <!ENTITY  undoCloseTab.accesskey             "r">
 <!ENTITY  closeTab.label                     "Lat att fana">
 <!ENTITY  closeTab.accesskey                 "n">
-
 <!ENTITY  hiddenTabs.label                   "Skjulte faner">
 
 <!ENTITY  listAllTabs.label      "Vis liste over alle faner">
@@ -215,6 +229,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY urlbar.defaultNotificationAnchor.tooltip         "Opne meldingspanel">
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "Opne panel for plasseringsførespurnad">
+<!ENTITY urlbar.autoplayNotificationAnchor.tooltip        "Opne automatisk avspeling-panelet">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "Opne meldingspanel for tileggsinstallasjon">
 <!ENTITY urlbar.canvasNotificationAnchor.tooltip          "Handter rettar for canvas-utdraging">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "Opne meldingspanel for fråkopla data">
@@ -223,7 +238,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "Vel om du kan ta imot varsel frå nettstaden">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Lagre data i vedvarande lagring">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Nettlesaren er under fjernstyring">
-
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Opne webautentiseringspanelet">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Handter deling av kamera og/eller mikrofon på denne nettstaden">
@@ -243,6 +257,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Du har blokkert meldingar for denne nettstaden.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Du har blokkert vedvarande lagring for denne nettsida.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Du har blokkert sprettoppvindauge for denne nettstaden.">
+<!ENTITY urlbar.autoplayMediaBlocked.tooltip     "Du har blokkert automatisk avspeling av media med lyd på denne nettsida.">
 <!ENTITY urlbar.canvasBlocked.tooltip            "Du har blokkert canvas-datauthenting for denne nettstaden.">
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "Du har blokkert denne sida frå å bruke Adobe Flash-programtillegget.">
 <!ENTITY urlbar.midiBlocked.tooltip              "Du har blokkert MIDI-tilgang for denne nettsida.">
@@ -295,11 +310,15 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY downloads.commandkey         "j">
 <!ENTITY downloadsUnix.commandkey     "y">
 <!ENTITY addons.label                 "Tillegg">
-<!ENTITY addons.accesskey             "U">
+<!ENTITY addons.accesskey             "T">
 <!ENTITY addons.commandkey            "A">
 
 <!ENTITY webDeveloperMenu.label       "Nettsideutvikling">
 <!ENTITY webDeveloperMenu.accesskey   "N">
+
+<!ENTITY devtoolsRecordExecution.label "Spel inn utføring">
+<!ENTITY devtoolsSaveRecording.label "Lagre innspelinga">
+<!ENTITY devtoolsReplayExecution.label "Spel av utføring">
 
 <!ENTITY inspectContextMenu.label     "Inspiser element">
 <!ENTITY inspectContextMenu.accesskey "I">
@@ -310,6 +329,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fileMenu.accesskey       "F">
 <!ENTITY newUserContext.label             "Ny innhaldsfane">
 <!ENTITY newUserContext.accesskey         "i">
+<!ENTITY manageUserContext.label          "Handter behaldarar">
+<!ENTITY manageUserContext.accesskey      "H">
 <!ENTITY newNavigatorCmd.label        "Nytt vindauge">
 <!ENTITY newNavigatorCmd.key        "N">
 <!ENTITY newNavigatorCmd.accesskey      "N">
@@ -321,7 +342,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY undoCmd.label            "Angre">
 <!ENTITY undoCmd.key            "Z">
 <!ENTITY undoCmd.accesskey          "A">
-<!ENTITY redoCmd.label            "Gjenta">
+<!ENTITY redoCmd.label            "Gjer om">
 <!ENTITY redoCmd.key            "Y">
 <!ENTITY redoCmd.accesskey          "G">
 <!ENTITY cutCmd.label           "Klipp ut">
@@ -401,7 +422,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Logg inn på Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Handter einingar…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Vis sidestolpe for synkroniserte faner">
-<!ENTITY appMenuRemoteTabs.connectdevice.label "KOple til ei anna eining">
+<!ENTITY appMenuRemoteTabs.connectdevice.label "Kople til ei anna eining">
 
 <!ENTITY appMenuRecentHighlights.label "Siste høgdepunkt">
 
@@ -412,8 +433,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (customizeMenu.addToOverflowMenu.label,
      customizeMenu.pinToOverflowMenu.label, customizeMenu.unpinFromOverflowMenu.label)
      The overflow menu is the menu that appears if you click the chevron (>> button)
-     in the location bar. These labels are only used in Photon, where you can put
-     items into this menu permanently (pinned). -->
+     in the location bar. -->
 <!ENTITY customizeMenu.addToOverflowMenu.label "Legg til i overflytsmenyen">
 <!ENTITY customizeMenu.addToOverflowMenu.accesskey "m">
 <!ENTITY customizeMenu.moveToToolbar.label "Flytt til verktøylinje">
@@ -425,6 +445,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      keys.  -->
 <!ENTITY customizeMenu.moveToPanel.label "Flytt til meny">
 <!ENTITY customizeMenu.moveToPanel.accesskey "t">
+<!-- LOCALIZATION NOTE (customizeMenu.pinToOverflowMenu.accesskey)
+     can appear on the same context menu as menubarCmd and personalbarCmd,
+     so they should have different access keys.  -->
 <!ENTITY customizeMenu.pinToOverflowMenu.label "Fest til overflytsmenyen">
 <!ENTITY customizeMenu.pinToOverflowMenu.accesskey "F">
 <!ENTITY customizeMenu.unpinFromOverflowMenu.label "Fjern frå overflytsmenyen">
@@ -438,8 +461,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY customizeMenu.autoHideDownloadsButton.label "Skjul automatisk i verktøylinja">
 <!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "a">
-<!ENTITY customizeMenu.manageExtension.label "Handter tillegg">
-<!ENTITY customizeMenu.manageExtension.accesskey "u">
+<!ENTITY customizeMenu.manageExtension.label "Handter utviding">
+<!ENTITY customizeMenu.manageExtension.accesskey "e">
 
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
@@ -489,7 +512,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (contentSearchInput.label):
      This is set as the aria-label attribute for the search input box in the
      in-content search UI, to be used by screen readers. -->
-<!ENTITY contentSearchInput.label     "Søkeførespurnad">
+<!ENTITY contentSearchInput.label     "Søkjeførespurnad">
 <!ENTITY contentSearchSubmit.tooltip  "Send søk">
 
 <!-- LOCALIZATION NOTE (searchInput.placeholder):
@@ -520,12 +543,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (changeSearchSettings.button):
      This string won't wrap, so if the translated string is longer,
      consider translating it as if it said only "Search Settings". -->
-<!ENTITY changeSearchSettings.button  "Endre søkeinnstillingar">
-<!ENTITY changeSearchSettings.tooltip "Endre søkeinnstillingar">
+<!ENTITY changeSearchSettings.button  "Endre søkjeinnstillingar">
+<!ENTITY changeSearchSettings.tooltip "Endre søkjeinnstillingar">
 
 <!ENTITY searchInNewTab.label         "Søk i ny fane">
 <!ENTITY searchInNewTab.accesskey     "ø">
-<!ENTITY searchSetAsDefault.label     "Bruk som standard søkemotor">
+<!ENTITY searchSetAsDefault.label     "Bruk som standard søkjemotor">
 <!ENTITY searchSetAsDefault.accesskey "B">
 
 <!ENTITY openLinkCmdInTab.label       "Opne lenke i ny fane">
@@ -562,7 +585,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY viewFrameInfoCmd.accesskey   "V">
 <!ENTITY reloadImageCmd.label         "Oppdater bilde">
 <!ENTITY reloadImageCmd.accesskey     "l">
-<!ENTITY viewImageCmd.label           "Vis bilde">
+<!ENTITY viewImageCmd.label           "Vis bildet">
 <!ENTITY viewImageCmd.accesskey       "V">
 <!ENTITY viewImageInfoCmd.label       "Vis bildeinfo">
 <!ENTITY viewImageInfoCmd.accesskey   "b">
@@ -570,7 +593,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY viewImageDescCmd.accesskey   "k">
 <!ENTITY viewVideoCmd.label           "Vis video">
 <!ENTITY viewVideoCmd.accesskey       "s">
-<!ENTITY viewBGImageCmd.label         "Vis bakgrunnsbilde">
+<!ENTITY viewBGImageCmd.label         "Vis bakgrunnsbildet">
 <!ENTITY viewBGImageCmd.accesskey     "b">
 <!ENTITY setDesktopBackgroundCmd.label      "Bruk som skrivebordbakgrunn…">
 <!ENTITY setDesktopBackgroundCmd.accesskey  "m">
@@ -612,6 +635,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hidePluginCmd.label          "Gøym dette programtillegget">
 <!ENTITY hidePluginCmd.accesskey      "G">
 <!ENTITY copyLinkCmd.label            "Kopier lenkeadresse">
+<!-- LOCALIZATION NOTE (copyLinkCmd.accesskey): The access keys for "Copy Link
+Location" and "Copy Email Address" should be the same if possible; the two
+context menu items are mutually exclusive. -->
 <!ENTITY copyLinkCmd.accesskey        "K">
 <!ENTITY copyImageCmd.label           "Kopier bildeadressa">
 <!ENTITY copyImageCmd.accesskey       "o">
@@ -622,6 +648,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY copyAudioURLCmd.label        "Kopier lydadressa">
 <!ENTITY copyAudioURLCmd.accesskey    "o">
 <!ENTITY copyEmailCmd.label           "Kopier e-postadressa">
+<!-- LOCALIZATION NOTE (copyEmailCmd.accesskey): The access keys for "Copy Link
+Location" and "Copy Email Address" should be the same if possible; the two
+context menu items are mutually exclusive. -->
 <!ENTITY copyEmailCmd.accesskey       "o">
 <!ENTITY thisFrameMenu.label              "Denne ramma">
 <!ENTITY thisFrameMenu.accesskey          "D">
@@ -757,8 +786,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY spellAddDictionaries.label "Legg til ordbøker…">
 <!ENTITY spellAddDictionaries.accesskey "L">
 
+<!-- LOCALIZATION NOTE (editBookmark.panel.width): width of the bookmark panel.
+     Should be large enough to fully display the Done and Cancel/
+     Remove Bookmark buttons. -->
+<!ENTITY editBookmark.panel.width                    "23em">
 <!ENTITY editBookmark.done.label                     "Ferdig">
 <!ENTITY editBookmark.removeBookmark.accessKey       "R">
+
+<!ENTITY editBookmark.showForNewBookmarks.label       "Vis redigerar ved lagring">
+<!ENTITY editBookmark.showForNewBookmarks.accesskey   "V">
 
 <!-- LOCALIZATION NOTE (identity.securityView.label)
      This is the header of the security subview in the Site Identity panel. -->
@@ -806,6 +842,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissions "Løyve">
 <!ENTITY identity.permissionsEmpty "Du har ikkje gjeve denne nettstaden spesielle løyve.">
 <!ENTITY identity.permissionsReloadHint "Du må kanskje laste sida på nytt for at endringane skal gjelde.">
+
+<!ENTITY identity.permissionsPreferences.tooltip "Opne løyve-innstillingar">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
@@ -905,8 +943,53 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.audioCapture.label "Lyd frå fana vert delt.">
 <!ENTITY getUserMedia.allWindowsShared.message "Alle synlege vindauge på skjermen vil bli delte.">
 
+<!ENTITY trackingProtection.on "Sporingsvern: PÅ">
+<!ENTITY trackingProtection.off "Sporingsvern: AV">
+
+<!ENTITY contentBlocking.title "Innhaldsblokkering">
+<!ENTITY contentBlocking.detected "Innhald som kan blokkerast oppdaga på denne sida.">
+<!ENTITY contentBlocking.notDetected "Inkje innhald som kan blokkerast funne på denne sida.">
+<!ENTITY contentBlocking.disabled.label "Slått av">
+<!ENTITY contentBlocking.disabled.tooltip "Du har slått av innhaldsblokkering.">
+<!ENTITY contentBlocking.exception.tooltip "Du har slått av innhaldsblokkering på denne sida.">
+
+<!ENTITY contentBlocking.fastBlock.label "Langsame sporfølgjarar">
+<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.blocked.label):
+     This label signals that this type of content blocking is turned
+     ON and is successfully blocking malicious/slow content, so this is
+     a positive thing. It forms the end of the (imaginary) sentence
+     "Slow-Loading Trackers [are] Blocked"-->
+<!ENTITY contentBlocking.fastBlock.blocked.label "Blokkert">
+<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.add.label):
+     This is displayed as a link to preferences, where the user can add
+     this specific type of content blocking. When this text is shown
+     the type of content blocking is currently not enabled. -->
+<!ENTITY contentBlocking.fastBlock.add.label "Legg til blokkering…">
+
+<!ENTITY contentBlocking.trackingProtection.label "Sporfølgjarar">
+<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
+     This label signals that this type of content blocking is turned
+     ON and is successfully blocking malicious/slow content, so this is
+     a positive thing. It forms the end of the (imaginary) sentence
+     "Trackers [are] Blocked"-->
+<!ENTITY contentBlocking.trackingProtection.blocked.label "Blokkert">
+<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.add.label):
+     This is displayed as a link to preferences, where the user can add
+     this specific type of content blocking. When this text is shown
+     the type of content blocking is currently not enabled. -->
+<!ENTITY contentBlocking.trackingProtection.add.label "Legg til blokkering…">
+
+<!ENTITY contentBlocking.openBreakageReportView.label "Rapporter problem">
+<!ENTITY contentBlocking.breakageReportView.label "Rapporter problem">
+<!ENTITY contentBlocking.breakageReportView.description "Innhaldsblokkering kan føre til problem med enkelte nettsider. Når du rapporterer problem, hjelper du til med å gjere &brandShortName; betre for alle. (Dette vil sende nettadressa, samt informasjon om personvern- og innhaldsblokkeringsinnstillingar til Mozilla.)">
+<!ENTITY contentBlocking.breakageReportView.learnMore "Les meir">
+<!ENTITY contentBlocking.breakageReportView.collection.url.label "URL-adresse">
+<!ENTITY contentBlocking.breakageReportView.collection.userAgent.label "&brandShortName; versjonsnummer">
+<!ENTITY contentBlocking.breakageReportView.collection.comments.label "Kva for problem har du? (Valfri)">
+<!ENTITY contentBlocking.breakageReportView.sendReport.label "Send rapport">
+<!ENTITY contentBlocking.breakageReportView.cancel.label "Avbryt">
+
 <!ENTITY trackingProtection.title "Sporingsvern">
-<!ENTITY trackingProtection.tooltip "Opne innstillingar for sporingsvern">
 <!ENTITY trackingProtection.detectedBlocked3 "&brandShortName; blokkerer delar av sida som kan spore nettlesinga di.">
 <!ENTITY trackingProtection.detectedNotBlocked3 "Denne sida inneheld element som kan spore nettlesinga di. Du har slått av vern.">
 <!ENTITY trackingProtection.notDetected3 "Ingens sporingselement funne på denne sida.">
@@ -922,6 +1005,36 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY trackingProtection.unblockPrivate.accesskey "S">
 <!ENTITY trackingProtection.block2.label "Slå på vern">
 <!ENTITY trackingProtection.block2.accesskey "å">
+
+<!ENTITY trackingProtection.tooltip "Opne innstillingar for sporingsvern">
+<!ENTITY trackingProtection.detectedBlocked4 "&brandShortName; blokkerer delar av denne sida som kan spore nettlesinga di.">
+<!ENTITY trackingProtection.detectedNotBlocked5 "&brandShortName; har oppdaga element som kan spore nettlesinga di.">
+<!ENTITY trackingProtection.detectedException "&brandShortName; har oppdaga element som kan spore nettlesinga di. Du har slått av vern på denne sida.">
+<!ENTITY trackingProtection.notDetected5 "Ingen sporingselement er oppdaga på denne sida.">
+<!ENTITY trackingProtection.notDetectedException "Ingen sporingselement er oppdaga på denne sida. Du har slått av vern på denne sida.">
+
+<!ENTITY trackingProtection.reloadRequired2 "Du har slått på Sporingsvern. Oppdater denne sida for å blokkere alle sporfølgjarar.">
+
+<!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in NON-private browsing mode. -->
+<!ENTITY trackingProtection.unblock3.label "Slå av på denne sida">
+<!ENTITY trackingProtection.unblock3.accesskey "S">
+<!ENTITY trackingProtection.unblock4.label "Slå av blokkering for denne nettsida">
+<!ENTITY trackingProtection.unblock4.accesskey "b">
+<!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in PRIVATE browsing mode. -->
+<!ENTITY trackingProtection.unblockPrivate3.label "Slå av i denne økta">
+<!ENTITY trackingProtection.unblockPrivate3.accesskey "ø">
+<!ENTITY trackingProtection.block4.label "Slå på, på denne sida">
+<!ENTITY trackingProtection.block4.accesskey "S">
+<!ENTITY trackingProtection.unblockPrivate4.label "Slå av blokkering mellombels">
+<!ENTITY trackingProtection.unblockPrivate4.accesskey "m">
+<!ENTITY trackingProtection.block5.label "Slå på blokkering for denne nettsida">
+<!ENTITY trackingProtection.block5.accesskey "a">
+<!ENTITY trackingProtection.reload2.label "Oppdater sida">
+<!ENTITY trackingProtection.reload2.accesskey "O">
 
 <!ENTITY pluginNotification.showAll.label "Vis alle">
 <!ENTITY pluginNotification.showAll.accesskey "V">
@@ -1024,6 +1137,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY sendToDevice.syncNotReady.label "Synkroniserer einingar…">
 
 <!ENTITY pageAction.shareUrl.label "Del">
+
+<!ENTITY pageAction.shareMore.label "Meir…">
 
 <!ENTITY libraryButton.tooltip "Vis historikk, lagra bokmerker med meir">
 

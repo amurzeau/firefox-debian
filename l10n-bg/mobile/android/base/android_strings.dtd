@@ -372,6 +372,8 @@
 
 <!ENTITY pref_media_autoplay_enabled "Автоматично изпълняване">
 <!ENTITY pref_media_autoplay_enabled_summary "Определя дали сайтовете да изпълняват автоматично видео и друга медия">
+<!ENTITY pref_media_autoplay_allow "Разрешаване на автоматично изпълняване">
+<!ENTITY pref_media_autoplay_block "Забраняване на автоматично изпълняване">
 <!ENTITY pref_zoom_force_enabled "Мащабирането да е винаги включено">
 <!ENTITY pref_zoom_force_enabled_summary "Позволява мащабиране на всяка страница">
 <!ENTITY pref_voice_input "Въвеждане чрез глас">
@@ -391,7 +393,7 @@
      the Clear Private Data  dialog and refers to currently open tabs. -->
 <!ENTITY pref_private_data_openTabs "Отворени раздели">
 <!ENTITY pref_private_data_history2 "История на разглеждане">
-<!ENTITY pref_private_data_searchHistory "История на търсения">
+<!ENTITY pref_private_data_searchHistory "История на търсене">
 <!ENTITY pref_private_data_formdata2 "История на формуляри">
 <!ENTITY pref_private_data_cookies2 "Бисквитки и текущи вписвания">
 <!ENTITY pref_private_data_passwords2 "Запазени регистрации">
@@ -447,6 +449,11 @@
 <!ENTITY datareporting_crashreporter_title_short "Доклад за срив">
 <!ENTITY datareporting_wifi_title2 "Услуга за местоположение от &vendorShortName;">
 <!ENTITY datareporting_wifi_geolocation_summary4 "Помогнете на &vendorShortName; да картографира света! Споделете приблизителното си местоположение спрямо Wi-Fi и мобилната мрежа на устройството, за да подобрите нашата услуга за геолокация.">
+<!-- Localization note (datareporting_notification_title ) : This will be the title
+     of the notification shown whenever the user has enabled data reporting and the stumbler
+     service is running. -->
+<!ENTITY datareporting_stumbler_notification_title "Услуга за местоположението от &vendorShortName; работи">
+
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -513,7 +520,7 @@
 <!ENTITY contextmenu_site_settings "Редактиране настройките на сайт">
 <!ENTITY contextmenu_top_sites_edit "Редактиране">
 <!ENTITY contextmenu_top_sites_pin "Закачане">
-<!ENTITY contextmenu_top_sites_unpin "Премахване от леснодостъпните сайтове">
+<!ENTITY contextmenu_top_sites_unpin "Премахване от леснодостъпните">
 <!-- Localization note (contextmenu_pin_to_top_sites, contextmenu_unpin_from_top_sites): These strings are used to
      pin/unpin items from top sites when the user is not on the top sites screen so they'd be missing context on what
      just "Pin Site" or "Unpin Site" would mean. -->
@@ -589,7 +596,7 @@
 <!ENTITY button_clear "Изчистване">
 <!ENTITY button_copy "Копиране">
 
-<!ENTITY home_top_sites_title "Популярни">
+<!ENTITY home_top_sites_title "Често посещавани">
 <!-- Localization note (home_top_sites_add): This string is used as placeholder
      text underneath empty thumbnails in the Top Sites page on about:home. -->
 <!ENTITY home_top_sites_add "Добавяне на сайт">
@@ -639,8 +646,8 @@
 
 <!-- Localization note (home_pinned_site) : This is a snackbar label displayed after
     a site is pinned or unpinned. -->
-<!ENTITY home_pinned_site "Закачане на сайта">
-<!ENTITY home_unpinned_site "Премахване от леснодостъпните">
+<!ENTITY home_pinned_site "Страницата е закачена">
+<!ENTITY home_unpinned_site "Премахната от леснодостъпните">
 
 <!ENTITY remote_tabs_panel_moved_title "Къде изчезнаха моите раздели?">
 <!ENTITY remote_tabs_panel_moved_desc "Преместихме разделите ви от другите устройства в отделна секция на началната страница, така че да ги имате всеки път, когато отваряте нов раздел.">
@@ -731,7 +738,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- Localization note (updater_permission_text): This text is shown in a notification and as a snackbar
      if the app requires a runtime permission to download updates. Currently, the updater only sees
      remotely advertised updates in the Nightly and Aurora channels. -->
-<!ENTITY updater_permission_text "За изтегляне на файлове обновяване разрешете на &brandShortName; правото за достъп до хранилището.">
+<!ENTITY updater_permission_text "За изтегляне на файлове и обновяване разрешете на &brandShortName; правата за достъп до хранилището.">
 <!-- LOCALIZATION NOTE (updater_permission_allow): This action is shown in a snackbar along with updater_permission_text. -->
 <!ENTITY updater_permission_allow "Разрешаване">
 
@@ -850,7 +857,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_message "Отметнете статии в прегледа за четене, за да ги имате извън мрежа.">
 <!ENTITY helper_triple_readerview_open_button "Добавяне към отметките">
 
-<!ENTITY activity_stream_topsites "Популярни">
+<!ENTITY activity_stream_topsites "Често посещавани">
 <!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->
 <!ENTITY activity_stream_topstories "Препоръчани от &brandPocket;">
 <!ENTITY activity_stream_highlights "Акценти">
@@ -891,3 +898,14 @@ See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "Връзка на началния екран">
 <!ENTITY pwa_continue_to_website "Към страницата">
 <!ENTITY pwa_onboarding_sumo "Можете лесно да добавите страницата към вашия начален екран, да имате незабавен достъп и да разглеждате по-бързо все едно сте в приложение.">
+
+<!-- Used by accessibility services to identify the play/pause buttons shown in the
+Picture-in-picture mini window -->
+<!ENTITY pip_play_button_title "Изпълняване">
+<!ENTITY pip_play_button_description "Продължаване на изпълнението">
+<!ENTITY pip_pause_button_title "Пауза">
+<!ENTITY pip_pause_button_description "Слагане на изпълнението на пауза">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY mls_notification_channel "Услуга за местоположение от &vendorShortName;">

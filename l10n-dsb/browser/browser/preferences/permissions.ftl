@@ -89,6 +89,10 @@ permissions-exceptions-autoplay-media-window =
     .title = Dowólone sedła - awtomatiske wótgraśe
     .style = { permissions-window.style }
 permissions-exceptions-autoplay-media-desc = Móžośo pódaś, kótare websedła směju medijowe elementy awtomatiski wótgraś. Zapódajśo eksaktnu adresu sedła, kótaremuž cośo to dowóliś a klikniśo pótom na Dowóliś.
+permissions-exceptions-autoplay-media-window2 =
+    .title = Wuwześe - awtomatiske wótgraśe
+    .style = { permissions-window.style }
+permissions-exceptions-autoplay-media-desc2 = Móžośo pódaś, kótare websedła pśecej směju abo nigda njesměju medije awtomatiski ze zukom wótgraś. Zapódajśo adresu sedła, kótarež cośo zastojaś a klikniśo pótom na Blokěrowaś abo Dowóliś.
 
 ## Site Permissions - Notifications
 
@@ -105,27 +109,27 @@ permissions-site-notification-disable-desc = To buźo websedłam, kótarež gór
 permissions-site-location-window =
     .title = Nastajenja - pšawa městna
     .style = { permissions-window.style }
-permissions-site-location-desc = Slědujuce websedła su pominali pśistup na wašo stojnišćo. Móžośo pódaś, kótare websedła maju pśistup na wašo stojnišćo. Móžośo teke nowe pominanja za pśistupom na wašo stojnišćo blokěrowaś.
+permissions-site-location-desc = Slědujuce websedła su pominali pśistup k wašomu městnoju. Móžośo pódaś, kótare websedła maju pśistup k wašomu městnoju. Móžośo teke nowe pominanja za pśistupom k wašomu městnoju blokěrowaś.
 permissions-site-location-disable-label =
-    .label = Nowe pominanja za pśistupom na wašo stojnišćo blokěrowaś
-permissions-site-location-disable-desc = To buźo websedłam, kótarež górjejce w lisćinje pódane njejsu, pominanje za pśistupom na wašo stojnišćo zajźowaś. Gaž pśistup na wašo stojnišćo blokěrujośo, móžo se staś, až někotare funkcije websedła njefunkcioněruju.
+    .label = Nowe pominanja za pśistupom na wašo městno blokěrowaś
+permissions-site-location-disable-desc = To buźo websedłam, kótarež górjejce w lisćinje pódane njejsu, pominanje za pśistupom k wašomu městnoju zajźowaś. Gaž pśistup k wašomu městnoju blokěrujośo, móžo se staś, až někotare funkcije websedła njefunkcioněruju.
 
 ## Site Permissions - Camera
 
 permissions-site-camera-window =
     .title = Nastajenja - pšawa kamery
     .style = { permissions-window.style }
-permissions-site-camera-desc = Slědujuce websedła su pominali pśistup na wašu kameru. Móžośo pódaś, kótare websedła maju pśistup na wašu kameru. Móžośo teke nowe pominanja za pśistupom na wašu kameru blokěrowaś.
+permissions-site-camera-desc = Slědujuce websedła su pominali pśistup k wašej kamerje. Móžośo pódaś, kótare websedła maju pśistup k wašej kamerje. Móžośo teke nowe pominanja za pśistupom k wašej kamerje blokěrowaś.
 permissions-site-camera-disable-label =
     .label = Nowe pominanja za pśistupom na wašu kameru blokěrowaś
-permissions-site-camera-disable-desc = To buźo websedłam, kótarež górjejce w lisćinje pódane njejsu, pominanje za pśistupom na wašu kameru zajźowaś. Gaž pśistup na wašu kameru blokěrujośo, móžo se staś, až někotare funkcije websedła njefunkcioněruju.
+permissions-site-camera-disable-desc = To buźo websedłam, kótarež górjejce w lisćinje pódane njejsu, pominanje za pśistupom k wašej kamerje zajźowaś. Gaž pśistup k wašej kamerje blokěrujośo, móžo se staś, až někotare funkcije websedła njefunkcioněruju.
 
 ## Site Permissions - Microphone
 
 permissions-site-microphone-window =
     .title = Nastajenja - pšawa mikrofona
     .style = { permissions-window.style }
-permissions-site-microphone-desc = Slědujuce websedła su pominali pśistup na waš mikrofon. Móžośo pódaś, kótare websedła maju pśistup na waš mikrofon. Móžośo teke nowe pominanja za pśistupom na waš mikrofon blokěrowaś.
+permissions-site-microphone-desc = Slědujuce websedła su pominali pśistup k wašomu mikrofonoju. Móžośo pódaś, kótare websedła maju pśistup k wašomu mikrofonoju. Móžośo teke nowe pominanja za pśistupom k wašomu mikrofonoju blokěrowaś.
 permissions-site-microphone-disable-label =
     .label = Nowe pominanja za pśistupom na waš mikrofon blokěrowaś
-permissions-site-microphone-disable-desc = To buźo websedłam, kótarež górjejce w lisćinje pódane njejsu, pominanje za pśistupom na waš mikrofon zajźowaś. Gaž pśistup na waš mikrofon blokěrujośo, móžo se staś, až někotare funkcije websedła njefunkcioněruju.
+permissions-site-microphone-disable-desc = To buźo websedłam, kótarež górjejce w lisćinje pódane njejsu, pominanje za pśistupom k wašomu mikrofonoju zajźowaś. Gaž pśistup k wašomu mikrofonoju blokěrujośo, móžo se staś, až někotare funkcije websedła njefunkcioněruju.

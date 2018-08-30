@@ -372,6 +372,8 @@
 
 <!ENTITY pref_media_autoplay_enabled "Автоматичне відтворення">
 <!ENTITY pref_media_autoplay_enabled_summary "Контроль автоматичного відтворення відео та іншого медіа-вмісту веб-сайтами">
+<!ENTITY pref_media_autoplay_allow "Дозволити автовідтворення">
+<!ENTITY pref_media_autoplay_block "Блокувати автовідтворення">
 <!ENTITY pref_zoom_force_enabled "Зміна масштабу">
 <!ENTITY pref_zoom_force_enabled_summary "Ігнорувати налаштування сайтів, щоб ви могли змінювати масштаб будь-якої сторінки">
 <!ENTITY pref_voice_input "Голосове введення">
@@ -412,7 +414,7 @@
 <!ENTITY pref_dialog_remove "Вилучити">
 <!ENTITY pref_dialog_activitystream_header_content "Додатковий вміст">
 <!ENTITY pref_dialog_activitystream_recentBookmarks "Недавно закладені">
-<!ENTITY pref_dialog_activitystream_visited "Відвідано">
+<!ENTITY pref_dialog_activitystream_visited "Відвідані">
 
 <!ENTITY pref_search_last_toast "Ви не можете вилучити чи вимкнути ваш останній засіб пошуку.">
 
@@ -447,6 +449,11 @@
 <!ENTITY datareporting_crashreporter_title_short "Звіти про збої">
 <!ENTITY datareporting_wifi_title2 "Послуга розташування &vendorShortName;">
 <!ENTITY datareporting_wifi_geolocation_summary4 "Допоможіть &vendorShortName; створити карту світу! Поділіться приблизним розташуванням Wi-Fi та мобільної мережі вашого пристрою, щоб покращити нашу службу визначення місцезнаходження">
+<!-- Localization note (datareporting_notification_title ) : This will be the title
+     of the notification shown whenever the user has enabled data reporting and the stumbler
+     service is running. -->
+<!ENTITY datareporting_stumbler_notification_title "Служба розташування &vendorShortName; виконується">
+
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -891,3 +898,14 @@ See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "Додати на головний екран">
 <!ENTITY pwa_continue_to_website "Продовжити на веб-сайті">
 <!ENTITY pwa_onboarding_sumo "Ви можете легко додати цей веб-сайт на головний екран, щоб мати миттєвий доступ до нього і працювати швидше.">
+
+<!-- Used by accessibility services to identify the play/pause buttons shown in the
+Picture-in-picture mini window -->
+<!ENTITY pip_play_button_title "Відтворити">
+<!ENTITY pip_play_button_description "Продовжити відтворення">
+<!ENTITY pip_pause_button_title "Пауза">
+<!ENTITY pip_pause_button_description "Призупинити відтворення">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY mls_notification_channel "Послуга розташування &vendorShortName;">

@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -137,20 +129,11 @@ is-not-default = { -brand-short-name } негізгі браузер емес
 set-as-my-default-browser =
     .label = Негізгі браузер қылу…
     .accesskey = Н
-startup-page = { -brand-short-name } іске қосылу кезінде
-    .accesskey = ы
-startup-user-homepage =
-    .label = Үй парағыңызды көрсету
-startup-blank-page =
-    .label = Таза парақты көрсету
-startup-prev-session =
-    .label = Алдында ашылған терезелер мен беттерді көрсету
 startup-restore-previous-session =
     .label = Алдыңғы сессияны қалпына келтіру
     .accesskey = с
 disable-extension =
     .label = Кеңейтуді сөндіру
-home-page-header = Үй парағы
 tabs-group-header = Беттер
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab беттер арасында соңғы қолданылу реті бойынша ауысады
@@ -219,6 +202,9 @@ choose-language-description = Интернет-беттерді көрсету �
 choose-button =
     .label = Таңдау…
     .accesskey = у
+choose-browser-language-description = { -brand-short-name } мәзірі, хабарламалар және ескертулерін көрсетуге қолданылатын тілді таңдаңыз.
+confirm-browser-language-change-description = Бұл өзгерістерді іске асыру үшін { -brand-short-name } қайта іске қосыңыз
+confirm-browser-language-change-button = Іске асыру және қайта қосу
 translate-web-pages =
     .label = Веб құрамасын аудару
     .accesskey = а
@@ -270,7 +256,6 @@ play-drm-content =
 play-drm-content-learn-more = Көбірек білу
 update-application-title = { -brand-short-name } жаңартулары
 update-application-description = { -brand-short-name } жақсырақ өнімділік, тұрақтылық және қауіпсіздікпен жаңартылған етіп ұстаңыз.
-update-application-info = Нұсқасы { $version } <a>Не жаңалық</a>
 update-application-version = Нұсқасы { $version } <a data-l10n-name="learn-more">Не жаңалық</a>
 update-history =
     .label = Жаңартулар тарихын көрсету…
@@ -306,7 +291,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Құрама процестерінің шегі
     .accesskey = ш
 performance-limit-content-process-enabled-desc = Қосымша құрама процестері бірнеше беттерді қолдану кезінде өнімділікті арттыра алады, бірақ, нәтижесінде көбірек жады қолданылады.
-performance-limit-content-process-disabled-desc = Процесстер санын түзету тек көппроцесстік { -brand-short-name } үшін мүмкін. <a>Көппроцесстік іске қосылғанын қалай білуге болады</a>
 performance-limit-content-process-blocked-desc = Процесстер санын түзету тек көппроцесстік { -brand-short-name } үшін мүмкін. <a data-l10n-name="learn-more">Көппроцесстік іске қосылғанын қалай білуге болады</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -377,9 +361,6 @@ use-current-pages =
 choose-bookmark =
     .label = Бетбелгіні қолдану…
     .accesskey = Б
-restore-default =
-    .label = Бастапқы күйге келтіру
-    .accesskey = с
 
 ## Search Section
 
@@ -649,6 +630,44 @@ addressbar-locbar-openpage-option =
     .accesskey = А
 addressbar-suggestions-settings = Іздеу жүйесінің ұсыныстары үшін қалауларды өзгерту
 
+## Privacy Section - Content Blocking
+
+content-blocking-header = Құраманы бұғаттау
+content-blocking-desc = Жарнама немесе шолуды тежей алатын, сізді интернетте бақылай алатын код сияқты үшінші жақты құраманы бұғаттау. Қорғаныс және өнімділіктің ең жақсы теңгерімі үшін баптауларды түзетіңіз.
+content-blocking-learn-more = Көбірек білу
+content-blocking-restore-defaults =
+    .label = Бастапқы мәндерін қайтару
+    .accesskey = р
+content-blocking-toggle-on =
+    .tooltiptext = Құраманы бұғаттауды сөндіру
+content-blocking-toggle-off =
+    .tooltiptext = Құраманы бұғаттауды іске қосу
+content-blocking-toggle-label-on = ІСКЕ ҚОС.
+    .accesskey = С
+content-blocking-toggle-label-off = СӨНД.
+    .accesskey = С
+content-blocking-category-label = Нені бұғаттауды таңдаңыз
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Бақылайтын элементтерді көрсету
+    .accesskey = с
+content-blocking-fastblock-description = Жүктелуге 5 секундтан көп алатын үшінші жақты құраманы бұғаттау.
+content-blocking-fastblock-option-enabled =
+    .label = Әрқашан бұғаттау
+content-blocking-fastblock-option-disabled =
+    .label = Ешқашан бұғаттамау
+content-blocking-tracking-protection-label = Трекерлер
+    .accesskey = Т
+content-blocking-tracking-protection-description = Барлық белгілі трекерлерді бұғаттайды (Ескерту: кейбір беттердің жүктелуіне жол бермейді).
+content-blocking-tracking-protection-option-enabled =
+    .label = Әрқашан бұғаттау
+content-blocking-tracking-protection-option-pbm =
+    .label = Тек жекелік терезелерінде бұғаттау
+content-blocking-tracking-protection-option-disabled =
+    .label = Ешқашан бұғаттамау
+content-blocking-tracking-protection-change-blocklist = Блоктізімді өзгерту…
+
 ## Privacy Section - Tracking
 
 tracking-header = Бақылаудан қорғанысты қолдану
@@ -700,9 +719,16 @@ permissions-notification-pause =
 permissions-block-autoplay-media =
     .label = Веб-сайттарға дыбысы бар медианы автоойнатуды бұғаттау
     .accesskey = б
+permissions-block-autoplay-media-menu = Дыбысты автоойнайтын веб-сайттар үшін
 permissions-block-autoplay-media-exceptions =
     .label = Ережелерден бөлек…
     .accesskey = Е
+autoplay-option-ask =
+    .label = Әрқашан сұрау
+autoplay-option-allow =
+    .label = Автоойнатуды рұқсат ету
+autoplay-option-dont =
+    .label = Автоойнатпау
 permissions-block-popups =
     .label = "Атып шығатын" терезелерді болдырмау
     .accesskey = б

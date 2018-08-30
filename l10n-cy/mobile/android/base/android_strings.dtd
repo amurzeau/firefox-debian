@@ -60,7 +60,7 @@
 <!ENTITY  crash_send_report_message3 "Dweud wrth &vendorShortName; am y chwalfa fel bod modd ei drwsio">
 <!ENTITY  crash_include_url2 "Cynnwys cyfeiriad y dudalen roeddwn arni">
 <!ENTITY  crash_sorry "Ymddiheuriadau">
-<!ENTITY  crash_comment "Ychwanegu sylw (sylwadau yn weladwy)">
+<!ENTITY  crash_comment "Ychwanegu sylw (sylwadau yn weladwy\&apos;n gyhoeddus)">
 <!ENTITY  crash_allow_contact2 "Caniatáu i &vendorShortName; gysylltu â mi am yr adroddiad hwn">
 <!ENTITY  crash_email "Eich e-bost">
 <!ENTITY  crash_closing_alert "Gadael heb adael adroddiad chwalu?">
@@ -372,6 +372,8 @@
 
 <!ENTITY pref_media_autoplay_enabled "Caniatáu awtochwarae">
 <!ENTITY pref_media_autoplay_enabled_summary "Rheoli os yw gwefannau yn awtochwarae fideos neu gynnwys cyfrwng arall">
+<!ENTITY pref_media_autoplay_allow "Caniatáu awtochwarae">
+<!ENTITY pref_media_autoplay_block "Rhwystro awtochwarae">
 <!ENTITY pref_zoom_force_enabled "Galluogi chwyddo bob tro">
 <!ENTITY pref_zoom_force_enabled_summary "Gorfodi gwrthwneud er mwyn gallu chwyddo unrhyw dudalen">
 <!ENTITY pref_voice_input "Mewnbwn llais">
@@ -447,6 +449,11 @@
 <!ENTITY datareporting_crashreporter_title_short "Adroddwr Chwalu">
 <!ENTITY datareporting_wifi_title2 "Gwasanaethau Lleoliad &vendorShortName;">
 <!ENTITY datareporting_wifi_geolocation_summary4 "Cynorthwywch &vendorShortName; i fapio\&apos;r byd! Rhannwch leoliadau diwifr a cellol bras eich dyfais er mwyn gwella ein gwasanaeth geoleoliad.">
+<!-- Localization note (datareporting_notification_title ) : This will be the title
+     of the notification shown whenever the user has enabled data reporting and the stumbler
+     service is running. -->
+<!ENTITY datareporting_stumbler_notification_title "&vendorShortName; Gwasanaeth Lleoliad yn rhedeg">
+
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -587,7 +594,7 @@
 <!ENTITY button_clear_data "Clirio data">
 <!ENTITY button_set "Gosod">
 <!ENTITY button_clear "Clirio">
-<!ENTITY button_copy "Torri">
+<!ENTITY button_copy "Copïo">
 
 <!ENTITY home_top_sites_title "Hoff Wefannau">
 <!-- Localization note (home_top_sites_add): This string is used as placeholder
@@ -888,3 +895,16 @@ See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "Ychwanegu i’r Sgrin Cartref">
 <!ENTITY pwa_continue_to_website "Parhau i\&apos;r Wefan">
 <!ENTITY pwa_onboarding_sumo "Gallwch ychwanegu\&apos;r wefan hon yn hawdd i\&apos;ch sgrin Cartref er mwyn cael mynediad cyflym a phori\&apos;n gynt gyda phrofiad fel mewn ap.">
+
+<!-- Used by accessibility services to identify the play/pause buttons shown in the
+Picture-in-picture mini window -->
+<!ENTITY pip_play_button_title "Chwarae">
+<!ENTITY pip_play_button_description "Ail gychwyn chwarae">
+<!ENTITY pip_pause_button_title "Oedi">
+<!ENTITY pip_pause_button_description "Oedi chwarae">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY mls_notification_channel "Gwasanaeth Lleoli &vendorShortName;">
+<!ENTITY download_notification_channel "Llwythau">
+<!ENTITY media_notification_channel "Chwarae cyfwng">

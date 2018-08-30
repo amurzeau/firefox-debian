@@ -38,6 +38,21 @@ left instead of right. -->
 <!ENTITY  closeSelectedTabs.label            "ปิดแท็บที่เลือก">
 <!ENTITY  closeSelectedTabs.accesskey        "ป">
 
+<!ENTITY  pinSelectedTabs.label              "ปักหมุดแท็บ">
+<!-- Pin Tab and Pin Selected Tabs have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  pinSelectedTabs.accesskey          "ห">
+<!ENTITY  unpinSelectedTabs.label            "ถอนหมุดแท็บ">
+<!-- Unpin Tab and Unpin Selected Tabs have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  unpinSelectedTabs.accesskey        "ถ">
+<!-- Reload Tab and Reload Selected Tabs have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  reloadSelectedTabs.label           "โหลดแท็บที่เลือกใหม่">
+<!ENTITY  reloadSelectedTabs.accesskey       "ห">
+<!ENTITY  bookmarkSelectedTabs.label         "เพิ่มที่คั่นหน้าสำหรับแท็บ…">
+<!ENTITY  bookmarkSelectedTabs.accesskey     "พ">
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -54,6 +69,7 @@ can reach it easily. -->
 <!ENTITY  sendLinkToDevice.label             "ส่งลิงก์ไปยังอุปกรณ์">
 <!ENTITY  sendLinkToDevice.accesskey         "ส">
 <!ENTITY  sendToDeviceFeedback.label         "ส่งแล้ว!">
+<!ENTITY  sendToDeviceOfflineFeedback.label  "อยู่ในคิว (ออฟไลน์)">
 <!ENTITY  moveToNewWindow.label              "ย้ายไปยังหน้าต่างใหม่">
 <!ENTITY  moveToNewWindow.accesskey          "ม">
 <!ENTITY  reopenInContainer.label            "เปิดใหม่ในการแยกข้อมูล">
@@ -64,7 +80,6 @@ can reach it easily. -->
 <!ENTITY  undoCloseTab.accesskey             "ด">
 <!ENTITY  closeTab.label                     "ปิดแท็บ">
 <!ENTITY  closeTab.accesskey                 "ป">
-
 <!ENTITY  hiddenTabs.label                   "แท็บที่ซ่อนอยู่">
 
 <!ENTITY  listAllTabs.label      "แสดงรายการแท็บทั้งหมด">
@@ -213,6 +228,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY urlbar.defaultNotificationAnchor.tooltip         "เปิดแผงข้อความ">
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "เปิดแผงคำขอตำแหน่งที่ตั้ง">
+<!ENTITY urlbar.autoplayNotificationAnchor.tooltip        "เปิดแผงการเล่นอัตโนมัติ">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "เปิดแผงข้อความการติดตั้งส่วนเสริม">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "เปิดแผงข้อความที่เก็บข้อมูลออฟไลน์">
 <!ENTITY urlbar.passwordNotificationAnchor.tooltip        "เปิดแผงข้อความบันทึกรหัสผ่าน">
@@ -220,7 +236,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "เลือกว่าคุณสามารถรับการแจ้งเตือนจากไซต์ได้หรือไม่">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "จัดเก็บข้อมูลในที่เก็บข้อมูลถาวร">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "เบราว์เซอร์อยู่ภายใต้การควบคุมระยะไกล">
-
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "เปิดแผง ​Web Authentication">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "จัดการการแบ่งปันกล้องและ/หรือไมโครโฟนของคุณกับไซต์">
@@ -306,6 +321,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fileMenu.accesskey       "ฟ">
 <!ENTITY newUserContext.label             "แท็บแยกข้อมูลใหม่">
 <!ENTITY newUserContext.accesskey         "ย">
+<!ENTITY manageUserContext.label          "จัดการการแยกข้อมูล">
+<!ENTITY manageUserContext.accesskey      "จ">
 <!ENTITY newNavigatorCmd.label        "หน้าต่างใหม่">
 <!ENTITY newNavigatorCmd.key        "N">
 <!ENTITY newNavigatorCmd.accesskey      "ห">
@@ -408,8 +425,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (customizeMenu.addToOverflowMenu.label,
      customizeMenu.pinToOverflowMenu.label, customizeMenu.unpinFromOverflowMenu.label)
      The overflow menu is the menu that appears if you click the chevron (>> button)
-     in the location bar. These labels are only used in Photon, where you can put
-     items into this menu permanently (pinned). -->
+     in the location bar. -->
 <!ENTITY customizeMenu.addToOverflowMenu.label "เพิ่มไปยังเมนูล้น">
 <!ENTITY customizeMenu.addToOverflowMenu.accesskey "พ">
 <!ENTITY customizeMenu.moveToToolbar.label "ย้ายไปยังแถบเครื่องมือ">
@@ -421,6 +437,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      keys.  -->
 <!ENTITY customizeMenu.moveToPanel.label "ย้ายไปยังเมนู">
 <!ENTITY customizeMenu.moveToPanel.accesskey "ย">
+<!-- LOCALIZATION NOTE (customizeMenu.pinToOverflowMenu.accesskey)
+     can appear on the same context menu as menubarCmd and personalbarCmd,
+     so they should have different access keys.  -->
 <!ENTITY customizeMenu.pinToOverflowMenu.label "ปักหมุดไปยังเมนูล้น">
 <!ENTITY customizeMenu.pinToOverflowMenu.accesskey "ป">
 <!ENTITY customizeMenu.unpinFromOverflowMenu.label "ถอนหมุดจากเมนูล้น">
@@ -752,8 +771,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY spellAddDictionaries.label "เพิ่มพจนานุกรม…">
 <!ENTITY spellAddDictionaries.accesskey "พ">
 
+<!-- LOCALIZATION NOTE (editBookmark.panel.width): width of the bookmark panel.
+     Should be large enough to fully display the Done and Cancel/
+     Remove Bookmark buttons. -->
+<!ENTITY editBookmark.panel.width                    "23em">
 <!ENTITY editBookmark.done.label                     "เสร็จสิ้น">
 <!ENTITY editBookmark.removeBookmark.accessKey       "อ">
+
+<!ENTITY editBookmark.showForNewBookmarks.label       "แสดงตัวแก้ไขเมื่อบันทึก">
+<!ENTITY editBookmark.showForNewBookmarks.accesskey   "ส">
 
 <!-- LOCALIZATION NOTE (identity.securityView.label)
      This is the header of the security subview in the Site Identity panel. -->
@@ -801,6 +827,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissions "การอนุญาต">
 <!ENTITY identity.permissionsEmpty "คุณไม่ได้อนุญาตไซต์นี้ด้วยสิทธิพิเศษใด ๆ">
 <!ENTITY identity.permissionsReloadHint "คุณอาจจำเป็นต้องโหลดหน้าใหม่เพื่อให้การเปลี่ยนแปลงมีผล">
+
+<!ENTITY identity.permissionsPreferences.tooltip "เปิดค่ากำหนดการอนุญาต">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
@@ -900,8 +928,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.audioCapture.label "เสียงจากแท็บจะถูกแบ่งปัน">
 <!ENTITY getUserMedia.allWindowsShared.message "หน้าต่างที่ปรากฏอยู่ทั้งหมดบนหน้าจอของคุณจะถูกแบ่งปัน">
 
+<!ENTITY trackingProtection.on "การป้องกันการติดตาม: เปิด">
+<!ENTITY trackingProtection.off "การป้องกันการติดตาม: ปิด">
 <!ENTITY trackingProtection.title "การป้องกันการติดตาม">
-<!ENTITY trackingProtection.tooltip "เปิดค่ากำหนดการป้องกันการติดตาม">
 <!ENTITY trackingProtection.detectedBlocked3 "&brandShortName; กำลังปิดกั้นบางส่วนของหน้าที่อาจติดตามการท่องเว็บของคุณ">
 <!ENTITY trackingProtection.detectedNotBlocked3 "ไซต์นี้มีองค์ประกอบที่อาจติดตามการท่องเว็บของคุณ คุณได้ปิดใช้งานการป้องกัน">
 <!ENTITY trackingProtection.notDetected3 "ไม่พบองค์ประกอบที่มีการติดตามในหน้านี้">
@@ -917,6 +946,29 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY trackingProtection.unblockPrivate.accesskey "ป">
 <!ENTITY trackingProtection.block2.label "เปิดใช้งานการป้องกัน">
 <!ENTITY trackingProtection.block2.accesskey "ป">
+
+<!ENTITY trackingProtection.tooltip "เปิดค่ากำหนดการป้องกันการติดตาม">
+<!ENTITY trackingProtection.detectedBlocked4 "&brandShortName; กำลังปิดกั้นบางส่วนของหน้านี้ที่อาจติดตามการท่องเว็บของคุณ">
+<!ENTITY trackingProtection.detectedNotBlocked5 "&brandShortName; ตรวจพบองค์ประกอบที่อาจติดตามการท่องเว็บของคุณ">
+<!ENTITY trackingProtection.detectedException "&brandShortName; ตรวจพบองค์ประกอบที่อาจติดตามการท่องเว็บของคุณ คุณได้ปิดใช้งานการป้องกันสำหรับไซต์นี้">
+<!ENTITY trackingProtection.notDetected5 "ไม่พบองค์ประกอบที่มีการติดตามในหน้านี้">
+<!ENTITY trackingProtection.notDetectedException "ไม่พบองค์ประกอบที่มีการติดตามในหน้านี้ คุณได้ปิดใช้งานการป้องกันสำหรับไซต์นี้">
+
+<!ENTITY trackingProtection.reloadRequired2 "คุณได้เปิดใช้งานการป้องกันการติดตาม โหลดหน้านี้ใหม่เพื่อปิดกั้นตัวติดตามทั้งหมด">
+<!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in NON-private browsing mode. -->
+<!ENTITY trackingProtection.unblock3.label "ปิดใช้งานสำหรับไซต์นี้">
+<!ENTITY trackingProtection.unblock3.accesskey "ป">
+<!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in PRIVATE browsing mode. -->
+<!ENTITY trackingProtection.unblockPrivate3.label "ปิดใช้งานในวาระนี้">
+<!ENTITY trackingProtection.unblockPrivate3.accesskey "ป">
+<!ENTITY trackingProtection.block4.label "เปิดใช้งานสำหรับไซต์นี้">
+<!ENTITY trackingProtection.block4.accesskey "ป">
+<!ENTITY trackingProtection.reload2.label "โหลดหน้าใหม่">
+<!ENTITY trackingProtection.reload2.accesskey "ห">
 
 <!ENTITY pluginNotification.showAll.label "แสดงทั้งหมด">
 <!ENTITY pluginNotification.showAll.accesskey "ส">
@@ -1003,6 +1055,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY homepageControlled.disableButton.accesskey "ป">
 
 <!ENTITY tabHideControlled.header.message "เข้าถึงแท็บที่ซ่อนอยู่ของคุณ">
+<!ENTITY tabHideControlled.keepButton.label "ซ่อนแท็บต่อไป">
+<!ENTITY tabHideControlled.keepButton.accesskey "อ">
 <!ENTITY tabHideControlled.disableButton.label "ปิดใช้งานส่วนขยาย">
 <!ENTITY tabHideControlled.disableButton.accesskey "ป">
 
@@ -1017,6 +1071,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY sendToDevice.syncNotReady.label "กำลังซิงค์อุปกรณ์…">
 
 <!ENTITY pageAction.shareUrl.label "แบ่งปัน">
+
+<!ENTITY pageAction.shareMore.label "เพิ่มเติม…">
 
 <!ENTITY libraryButton.tooltip "ดูประวัติ, ที่คั่นหน้าที่บันทึกไว้ และอื่น ๆ">
 

@@ -8,7 +8,11 @@
 <!ENTITY loadError.label "Nepavyko įkelti tinklalapio">
 <!ENTITY retry.label "Bandyti dar kartą">
 <!ENTITY returnToPreviousPage.label "Eiti atgal">
+<!ENTITY returnToPreviousPage1.label "Grįžti (rekomenduojama)">
 <!ENTITY advanced.label "Išsamiau">
+
+<!ENTITY continue1.label "Tęsti…">
+<!ENTITY moreInformation.label "Daugiau informacijos">
 
 <!-- Specific error messages -->
 
@@ -88,10 +92,24 @@
 <!ENTITY nssFailure2.longDesc2 "<ul> <li>Tinklalapis, kurį bandote atverti, negali būti parodytas, nes nepavyko patikrinti gautų duomenų autentiškumo.</li> <li>Prašom pranešti apie šią problemą svetainės savininkams.</li> </ul>">
 
 <!ENTITY certerror.longpagetitle1 "Jūsų ryšys nėra saugus">
-<!-- Localization note (certerror.introPara) - The text content of the span tag
+<!ENTITY certerror.longpagetitle2 "Dėmesio: galima saugumo rizika">
+<!-- Localization note (certerror.introPara, certerror.introPara1) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "<span class='hostname'/> savininkas netinkamai sukonfigūravo savo svetainę.  Kad apsaugotų jūsų duomenis, „&brandShortName;“ prie šios svetainės nesijungė.">
+
+<!ENTITY certerror.introPara1 "„&brandShortName;“ aptiko galimą grėsmę saugumui ir neįkėlė <span class='hostname'/>. Aplankius šią svetainę, piktavaliai gali bandyti pavogti jūsų informaciją, pvz., slaptažodžius, el. pašto adresus, banko korteles.">
+
+<!ENTITY certerror.expiredCert.secondPara "Ši problema greičiausiai kilo dėl to, kad jūsų kompiuterio laikrodis yra netinkamai nustatytas, o tai neleidžia „&brandShortName;“ užmegzti saugaus ryšio.">
+
+<!ENTITY certerror.whatCanYouDoAboutItTitle "Ką dėl to galima padaryti?">
+
+<!ENTITY certerror.unknownIssuer.whatCanYouDoAboutIt "<p>Problema greičiausiai yra su svetaine, ir jūs nieko negalite padaryti.</p>
+<p>Jei esate įmonės vidiniame tinkle, arba naudojatės antivirusine programa, galite paprašyti pagalbos iš aptarnavimo skyriaus. Galite pranešti apie problemą ir svetainės prižiūrėtojui.</p>">
+
+<!ENTITY certerror.expiredCert.whatCanYouDoAboutIt2 "<p>Jūsų kompiuterio laikrodis rodo <span id='wrongSystemTime_systemDate2'/>. Įsitikinkite, kad jūsų kompiuterio data, laikas ir laiko juosta yra tinkamai nustatyti, ir įkelkite <span class='hostname'/> iš naujo.</p> <p>Jeigu jūsų kompiuterio laikas jau yra geras, ši svetainė gali būti netinkamai sukonfigūruota, tad patys nieko negalite padaryti. Galite apie šią problemą pranešti svetainės prižiūrėtojui.</p>">
+
+<!ENTITY certerror.badCertDomain.whatCanYouDoAboutIt "<p>Problema greičiausiai yra su svetaine, ir jūs nieko negalite padaryti. Galite pranešti apie problemą svetainės prižiūrėtojui.</p>">
 
 <!ENTITY sharedLongDesc "<ul> <li>Ši svetainė laikinai nepasiekiama arba yra per daug apkrauta. Šiek tiek palaukite ir bandykite prisijungti iš naujo.</li> <li>Jei nepavyksta įkelti ir kitų tinklalapių, patikrinkite kompiuterio ryšį su tinklu.</li> <li>Jei jūsų kompiuteris ar tinklas apsaugotas užkarda arba jungiasi per įgaliotąjį serverį, tai įsitikinkite, kad „&brandShortName;“ leidžiama pasiekti saityną.</li> </ul>">
 
@@ -122,7 +140,9 @@ was trying to connect. -->
 <!ENTITY certerror.wrongSystemTimeWithoutReference "<p>&brandShortName; neprisijungė prie <span id='wrongSystemTimeWithoutReference_URL'/>, nes jūsų kompiuterio laikrodis, panašu, rodo neteisingą laiką, o tai neleidžia įvykti saugiam prisijungimui.</p> <p>Jūsų kompiuteris rodo <span id='wrongSystemTimeWithoutReference_systemDate'/>. Norėdami išspręsti šią problemą, pakeiskite savo datos ir laiko nuostatas, kad jos atitiktų teisingą laiką.</p>">
 
 <!ENTITY certerror.pagetitle1  "Nesaugus ryšys">
+<!ENTITY certerror.pagetitle2  "Dėmesio: galima saugumo rizika">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Ši svetainė „HTTP Strict Transport Security“ (HSTS) pagalba nurodė, kad „&brandShortName;“ prie jos jungtųsi tik saugiu ryšiu. Dėl to šiam liudijimui negalima sukurti išimties.">
+<!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'></span> turi saugumo nuostatą, kuri vadinasi „HTTP Strict Transport Security“ (HSTS), ir reiškia, kad „&brandShortName;“ gali jungtis tik saugiu ryšiu. Jūs negalite sukurti išimties, kad aplankytumėte šią svetainę.">
 <!ENTITY certerror.copyToClipboard.label "Kopijuoti tekstą į iškarpinę">
 
 <!ENTITY inadequateSecurityError.title "Jūsų ryšys nėra saugus">
@@ -131,6 +151,9 @@ was trying to connect. -->
 <!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> naudoja saugumo technologiją, kuri yra pasenusi ir pažeidžiama. Piktavalis lengvai galėtų pamatyti informaciją, kuri jums atrodė saugi. Kol svetainės administratorius jos nesutvarkys, negalėsite į šią svetainę užeiti.</p><p>Klaidos kodas: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
 
 <!ENTITY blockedByPolicy.title "Uždraustas puslapis">
+
+<!ENTITY clockSkewError.title "Jūsų kompiuterio laikas neteisingas">
+<!ENTITY clockSkewError.longDesc "Jūsų kompiuteris sako, kad yra dabar yra <span id='wrongSystemTime_systemDate1'/>, kas neleidžia „&brandShortName;“ užmegzti saugaus ryšio. Norėdami aplankyti <span class='hostname'></span>, atnaujinkite savo kompiuterio laikrodį, kad rodytų teisingą esamą datą, laiką ir laiko juostą, ir įkelkite <span class='hostname'></span> iš naujo.">
 
 <!ENTITY prefReset.longDesc "Panašu, kad taip galėjo nutikti dėl jūsų tinklo saugumo nuostatų. Ar norite atstatyti numatytąsias reikšmes?">
 <!ENTITY prefReset.label "Atstatyti numatytąsias nuostatas">

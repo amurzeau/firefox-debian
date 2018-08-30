@@ -24,8 +24,8 @@
 
 <!-- Entities for Identity page -->
 
-<!ENTITY identityTitle.label "იდენტურობა">
-<!ENTITY identityDesc.label "თითოეულ ანგარიშს საკუთარი იდენტურობა უნდა ჰქონდეს, რომლის საშუალებითაც წერილების თქვენეულობა დადგინდება.">
+<!ENTITY identityTitle.label "მოწმობა">
+<!ENTITY identityDesc.label "თითოეულ ანგარიშს გააჩნია საკუთარი დასამოწმებელი მონაცემები, რომლის საშუალებითაც ხდება თქვენი გამორჩევა სხვებისგან, თქვენი წერილების მიღებისას.">
 
 <!-- LOCALIZATION NOTE (fullnameDesc.label) : do not translate two of "&quot;" in below line -->
 <!ENTITY fullnameDesc.label "მიუთითეთ სახელი, რომლის გამოჩენაც გსურთ გაგზავნილი წერილების &quot;ვინ&quot; ველში">
@@ -101,7 +101,7 @@
      text after the "&quot;" entity in haveSmtp3.suffix3, if required grammatically.
 -->
 <!ENTITY haveSmtp3.prefix "თქვენი გამავალი ფოსტის (SMTP) სერვერი, &quot;">
-<!ENTITY haveSmtp3.suffix3 "&quot;, შემომავალი სერვერის იდენტურია, სახელიც იგივე გამოიყენება.">
+<!ENTITY haveSmtp3.suffix3 "&quot;, ემთხვევა თქვენს შემომავალ სერვერს, თქვენი შემომავალი სერვერის მომხმარებლის სახელი იქნება გამოყენებული, მასთან წვდომისთვის.">
 
 <!-- Entities for Account name page -->
 
@@ -121,8 +121,8 @@
 <!ENTITY newsServerNamePrefix.label "ჯგუფების (NNTP) სერვერის სახელი:">
 <!ENTITY downloadOnLogin.label "წერილების ახალავე გადმოწერა">
 <!ENTITY downloadOnLogin.accesskey "D">
-<!ENTITY deferStorageDesc.label "მოხსენით მონიშვნა ამ ანგარიშის ფოსტის საკუთარ დასტაში შესანახად. ამ შემთხვევაში ეს ანგარიში გახდება ერთერთი ძირეული. სხვა შემთხვევაში კი გახდება ადგილობრივი დასტების საერთო საფოსტო ყუთის ნაწილი.">
+<!ENTITY deferStorageDesc.label "მოხსენით მონიშვნა ამ ანგარიშის ფოსტის საკუთარ საქაღალდეში შესანახად. ამ შემთხვევაში ეს ანგარიში გახდება ერთ-ერთი ძირეული. სხვა შემთხვევაში კი გახდება ადგილობრივი საქაღალდეების საერთო საფოსტო ყუთის ნაწილი.">
 <!ENTITY deferStorage.label "საერთო საფოსტო ყუთის გამოყენება (ფოსტის ადგილობრივ დასტებში შენახვა)">
 <!ENTITY deferStorage.accesskey "G">
-<!ENTITY clickFinish.label "დაწკაპეთ 'დასრულება' პარამეტრების ჩასაწერად და პროგრამიდან გასასვლელად.">
+<!ENTITY clickFinish.label "დაწკაპეთ „დასრულება“ პარამეტრების ჩასაწერად და პროგრამიდან გასასვლელად.">
 <!ENTITY clickFinish.labelMac "ამ პარამეტრების შესანახად და ანგარიშის მეგზურიდან გამოსასვლელად დაწკაპეთ - მზადაა.">

@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -137,17 +129,11 @@ is-not-default = { -brand-short-name } আপনার নির্ধারি�
 set-as-my-default-browser =
     .label = ডিফল্ট করুন…
     .accesskey = D
-startup-page = যখন { -brand-short-name } শুরু হবে
+startup-restore-previous-session =
+    .label = পূর্ববর্তী সেশন পুনরুদ্ধার
     .accesskey = s
-startup-user-homepage =
-    .label = আপনার নীড়পাতা দেখাবে
-startup-blank-page =
-    .label = ফাঁকা পাতা দেখাও
-startup-prev-session =
-    .label = শেষবারের উইন্ডো ও ট্যাব দেখাবে
 disable-extension =
     .label = এক্সটেনশনটি নিষ্ক্রিয় করুন
-home-page-header = নীড় পাতা
 tabs-group-header = ট্যাব
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab সাম্প্রতিক ব্যবহৃত ট্যাবগুলোতে ক্রমান্বয়ে ঘুড়বে
@@ -216,6 +202,9 @@ choose-language-description = পাতা প্রদর্শনে পছন
 choose-button =
     .label = নির্বাচন…
     .accesskey = o
+choose-browser-language-description = { -brand-short-name } থেকে মেনু, বার্তা এবং বিজ্ঞপ্তি প্রদর্শন করতে ব্যবহৃত ভাষা সমূহ চয়ন করুন।
+confirm-browser-language-change-description = পরিবর্তন প্রয়োগ করতে { -brand-short-name } রিস্টার্ট করুন
+confirm-browser-language-change-button = আবেদন করুন এবং পুনঃশুরু করুন
 translate-web-pages =
     .label = ওয়েব কন্টেন্ট অনুবাদ করুন T
     .accesskey = T
@@ -267,7 +256,6 @@ play-drm-content =
 play-drm-content-learn-more = আরও জানুন
 update-application-title = { -brand-short-name } হালনাগাদ
 update-application-description = সেরা পারফরম্যান্স, স্থায়ীত্ব এবং নিরাপত্তার জন্য { -brand-short-name } হালনাগাদ রাখুন।
-update-application-info = সংস্করণ { $version } <a>নতুন কি আছে</a>
 update-application-version = সংস্করণ { $version } <a data-l10n-name="learn-more">নতুন কি আছে</a>
 update-history =
     .label = হালনাগাদের ইতিহাস দেখাও…
@@ -303,7 +291,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = কন্টেন্ট প্রক্রিয়াকরণ সীমা
     .accesskey = L
 performance-limit-content-process-enabled-desc = একাধিক ট্যাব ব্যবহারের সময় বাড়তি কন্টেন্ট প্রসেস কার্যক্ষমতা বৃদ্ধি করে, কিন্তু এতে বেশি মেমরি ব্যবহৃত হয়।
-performance-limit-content-process-disabled-desc = কন্টেন্ট প্রসেসের সংখ্যা পরিবর্তন শুধুমাত্র মাল্টিপ্রসেস { -brand-short-name } এ সম্ভব। <a>শিখুন, মাল্টিপ্রসেস চালু আছে কিনা কিভাবে পরীক্ষা করতে হয়</a>
 performance-limit-content-process-blocked-desc = কন্টেন্ট প্রসেসের সংখ্যা পরিবর্তন শুধুমাত্র মাল্টিপ্রসেস { -brand-short-name } এ সম্ভব। <a data-l10n-name="learn-more">শিখুন, মাল্টিপ্রসেস চালু আছে কিনা কিভাবে পরীক্ষা করতে হয়</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -374,9 +361,6 @@ use-current-pages =
 choose-bookmark =
     .label = বুকমার্ক ব্যবহার করুন
     .accesskey = B
-restore-default =
-    .label = ডিফল্ট মানে পুনঃস্থাপন করা হবে
-    .accesskey = R
 
 ## Search Section
 
@@ -576,6 +560,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = আমার ব্রাউজিং এবং ডাউনলোড ইতিহাস মনে রাখুন b
     .accesskey = b
+history-remember-browser-option =
+    .label = ব্রাউজিং এবং ডাউনলোড ইতিহাস মনে রাখবে
+    .accesskey = b
 history-remember-search-option =
     .label = অনুসন্ধান ও ফরমের ইতিহাস মনে রাখা হবে
     .accesskey = f
@@ -593,6 +580,10 @@ history-clear-button =
 
 sitedata-header = কুকি এবং সাইট ডাটা
 sitedata-total-size-calculating = সাইট ডাটা এবং ক্যাশ সাইজ গণনা করা হচ্ছে…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = আপনার সংরক্ষিত কুকিজ, সাইট ডেটা এবং ক্যাশে বর্তমানে { $value } { $unit } ডিস্ক স্পেস ব্যবহার করছে।
 sitedata-learn-more = আরও জানুন
 sitedata-accept-cookies-option =
     .label = ওয়েবসাইট থেকে কুকি ও সাইট ডাটা গ্রহণ করুন (সুপারিশকৃত)
@@ -638,6 +629,44 @@ addressbar-locbar-openpage-option =
     .label = ট্যাব খুলুন O
     .accesskey = O
 addressbar-suggestions-settings = অনুসন্ধান ইঞ্জিন পরামর্শের জন্য পছন্দসমূহ পরিবর্তন করুন
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = কনটেন্ট ব্লকিং
+content-blocking-desc = বিজ্ঞাপন অথবা কোডের মত তৃতীয় পক্ষের কনটেন্ট ব্লক করুন, যা আপনার ব্রাউজিং ধীরগতি করে দেয় এবং ওয়েবে আপনাকে ট্র্যাক করতে পারে। সুরক্ষা এবং কর্মক্ষমতা সেরা ব্যালেন্সের জন্য আপনার সেটিংস কাস্টমাইজ করুন।
+content-blocking-learn-more = আরও জানুন
+content-blocking-restore-defaults =
+    .label = ডিফল্ট রিস্টোর করুন
+    .accesskey = R
+content-blocking-toggle-on =
+    .tooltiptext = কনটেন্ট ব্লকিং বন্ধ করুন
+content-blocking-toggle-off =
+    .tooltiptext = কনটেন্ট ব্লক করা চালু করুন
+content-blocking-toggle-label-on = চালু করুন
+    .accesskey = O
+content-blocking-toggle-label-off = বন্ধ
+    .accesskey = O
+content-blocking-category-label = কি ব্লক করতে চান বলুন
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = স্লো ট্র্যাকিং উপাদানসমূহ
+    .accesskey = S
+content-blocking-fastblock-description = তৃতীয় পক্ষের কনটেন্ট অবরোধ করে যা লোড হতে ৫ সেকেন্ডের বেশি সময় নেয়।
+content-blocking-fastblock-option-enabled =
+    .label = সর্বদা ব্লক করুন
+content-blocking-fastblock-option-disabled =
+    .label = কখনও ব্লক করবেন  না
+content-blocking-tracking-protection-label = ট্রাকার
+    .accesskey = T
+content-blocking-tracking-protection-description = সমস্ত পরিচিত ট্র্যাকার ব্লক করে (নোট: লোড হতে কিছু পৃষ্ঠা আটকাতে পারে)
+content-blocking-tracking-protection-option-enabled =
+    .label = সর্বদা ব্লক করুন
+content-blocking-tracking-protection-option-pbm =
+    .label = শুধুমাত্র ব্যক্তিগত উইন্ডোতে ব্লক করুন
+content-blocking-tracking-protection-option-disabled =
+    .label = কখনও ব্লক করবে না
+content-blocking-tracking-protection-change-blocklist = ব্লক তালিকা পরিবর্তন করুন...
 
 ## Privacy Section - Tracking
 
@@ -687,6 +716,19 @@ permissions-notification-link = আরও জানুন
 permissions-notification-pause =
     .label = নোটিফিকেশন বন্ধ রাখো যতক্ষণ না { -brand-short-name } রিস্টার্ট হয়
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = যেসকল ওয়েবসাইট স্বয়ংক্রিয়ভাবে মিডিয়া চালায় সেগুলো  ব্লক করুন
+    .accesskey = B
+permissions-block-autoplay-media-menu = যেসব ওয়েবসাইট সাউন্ড অটোপ্লে করে
+permissions-block-autoplay-media-exceptions =
+    .label = ব্যতিক্রম…
+    .accesskey = E
+autoplay-option-ask =
+    .label = সব সময় জিজ্ঞাসা করবে
+autoplay-option-allow =
+    .label = অটোপ্লে কে অনুমতি দিন
+autoplay-option-dont =
+    .label = অটোপ্লে করবেন না
 permissions-block-popups =
     .label = পপ-আপ উইন্ডো ব্লক করা হবে B
     .accesskey = B
@@ -713,6 +755,9 @@ collection-health-report =
     .label = { -brand-short-name } কে { -vendor-short-name } তে কারিগরী এবং মিথষ্ক্রিয় তথ্য পাঠাতে অনুমতি দিন
     .accesskey = r
 collection-health-report-link = আরও জানুন
+collection-studies =
+    .label = { -brand-short-name } কে ইনস্টল এবং চালানোর অনুমতি দিন
+collection-studies-link = { -brand-short-name } অধ্যয়ন দেখুন
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = এই বিল্ড কনফিগারেশনের জন্যে ডাটা রিপোর্টিং নিস্ক্রিয় করা হয়েছে

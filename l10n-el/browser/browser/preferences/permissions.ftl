@@ -13,11 +13,11 @@ permissions-block =
     .label = Φραγή
     .accesskey = Φ
 permissions-session =
-    .label = Να επιτραπεί για τη συνεδρία
-    .accesskey = Σ
+    .label = Αποδοχή για αυτή τη συνεδρία
+    .accesskey = σ
 permissions-allow =
-    .label = Επιτρέπεται
-    .accesskey = Ε
+    .label = Αποδοχή
+    .accesskey = Α
 permissions-site-name =
     .label = Ιστοσελίδα
 permissions-status =
@@ -37,7 +37,7 @@ permissions-button-ok =
 permissions-searchbox =
     .placeholder = Αναζήτηση ιστοσελίδας
 permissions-capabilities-allow =
-    .label = Να επιτρέπεται
+    .label = Αποδοχή
 permissions-capabilities-block =
     .label = Φραγή
 permissions-capabilities-prompt =
@@ -51,22 +51,23 @@ permissions-invalid-uri-label = Παρακαλώ εισάγετε ένα έγκ�
 ## Exceptions - Tracking Protection
 
 permissions-exceptions-tracking-protection-window =
-    .title = Εξαιρέσεις - Προστασία από παρακολούθηση
+    .title = Εξαιρέσεις - Προστασία από καταγραφή
     .style = { permissions-window.style }
-permissions-exceptions-tracking-protection-desc = Έχετε απενεργοποιήσει την Προστασία Δεδομένων Περιήγησης σε αυτές τις ιστοσελίδες.
+permissions-exceptions-tracking-protection-desc = Έχετε απενεργοποιήσει την προστασία από καταγραφή σε αυτές τις ιστοσελίδες.
 
 ## Exceptions - Cookies
 
 permissions-exceptions-cookie-window =
     .title = Εξαιρέσεις - Cookies και δεδομένα ιστοσελίδων
     .style = { permissions-window.style }
+permissions-exceptions-cookie-desc = Μπορείτε να καθορίσετε σε ποιες ιστοσελίδες επιτρέπεται πάντα ή δεν επιτρέπεται ποτέ η χρήση των cookies και των δεδομένων ιστοσελίδων. Πληκτρολογήστε την ακριβή διεύθυνση της ιστοσελίδας που θέλετε να διαχειριστείτε και, στη συνέχεια, επιλέξτε "Φραγή", "Αποδοχή για αυτή τη συνεδρία, ή "Αποδοχή".
 
 ## Exceptions - Pop-ups
 
 permissions-exceptions-popup-window =
     .title = Επιτρεπόμενες ιστοσελίδες - Αναδυόμενα
     .style = { permissions-window.style }
-permissions-exceptions-popup-desc = Μπορείτε να καθορίσετε ποιες ιστοσελίδες μπορούν να ανοίγουν αναδυόμενα παράθυρα. Πληκτρολογήστε την ακριβή διεύθυνση της σελίδας που επιθυμείτε να διαχειριστείτε και μετά πατήστε Να επιτρέπεται.
+permissions-exceptions-popup-desc = Μπορείτε να καθορίσετε ποιες ιστοσελίδες μπορούν να ανοίγουν αναδυόμενα παράθυρα. Πληκτρολογήστε την ακριβή διεύθυνση της ιστοσελίδας που θέλετε να διαχειριστείτε και, στη συνέχεια, κάντε κλικ στο "Αποδοχή".
 
 ## Exceptions - Saved Logins
 
@@ -78,30 +79,57 @@ permissions-exceptions-saved-logins-desc = Οι συνδέσεις για τις
 ## Exceptions - Add-ons
 
 permissions-exceptions-addons-window =
-    .title = Επιτρεπόμενες ιστοσελίδες - Εγκατάσταση Προσθέτων
+    .title = Επιτρεπόμενες ιστοσελίδες - Εγκατάσταση προσθέτων
     .style = { permissions-window.style }
-permissions-exceptions-addons-desc = Μπορείτε να καθορίσετε σε ποιες ιστοσελίδες θα επιτρέπεται να εγκαθιστούν πρόσθετα. Πληκτρολογήστε την ακριβή διεύθυνση της σελίδας και πατήστε Να επιτρέπεται.
+permissions-exceptions-addons-desc = Μπορείτε να καθορίσετε σε ποιες ιστοσελίδες επιτρέπεται η εγκατάσταση προσθέτων. Πληκτρολογήστε την ακριβή διεύθυνση της ιστοσελίδας που θέλετε να επιτρέψετε και, στη συνέχεια, κάντε κλικ στο "Αποδοχή".
+
+## Exceptions - Autoplay Media
+
+permissions-exceptions-autoplay-media-window =
+    .title = Επιτρεπόμενες ιστοσελίδες - Αυτόματη αναπαραγωγή
+    .style = { permissions-window.style }
+permissions-exceptions-autoplay-media-desc = Μπορείτε να καθορίσετε σε ποιες ιστοσελίδες επιτρέπεται η αυτόματη αναπαραγωγή στοιχείων πολυμέσων. Πληκτρολογήστε την ακριβή διεύθυνση της ιστοσελίδας που θέλετε να επιτρέψετε και, στη συνέχεια, κάντε κλικ στο "Αποδοχή".
+permissions-exceptions-autoplay-media-window2 =
+    .title = Εξαιρέσεις - Αυτόματη αναπαραγωγή
+    .style = { permissions-window.style }
+permissions-exceptions-autoplay-media-desc2 = Μπορείτε να καθορίσετε σε ποιες ιστοσελίδες επιτρέπεται ή όχι η αυτόματη αναπαραγωγή πολυμέσων με ήχο. Πληκτρολογήστε τη διεύθυνση της ιστοσελίδας που θέλετε να διαχειριστείτε και, έπειτα, επιλέξτε "Φραγή" ή "Αποδοχή".
 
 ## Site Permissions - Notifications
 
 permissions-site-notification-window =
     .title = Ρυθμίσεις - Άδειες ειδοποιήσεων
     .style = { permissions-window.style }
+permissions-site-notification-desc = Οι ακόλουθες ιστοσελίδες έχουν αιτηθεί αποστολή ειδοποιήσεις. Μπορείτε να καθορίσετε σε ποιες ιστοσελίδες επιτρέπεται η αποστολή ειδοποιήσεων. Μπορείτε επίσης να αποκλείσετε νέα αιτήματα για αποδοχή ειδοποιήσεων.
+permissions-site-notification-disable-label =
+    .label = Αποκλεισμός νέων αιτημάτων για αποδοχή ειδοποιήσεων
+permissions-site-notification-disable-desc = Αυτό θα εμποδίσει όλες τις ιστοσελίδες που δεν αναγράφονται παραπάνω να αιτηθούν άδεια για αποστολή ειδοποιήσεων. Η φραγή ειδοποιήσεων πιθανόν να διακόψει ορισμένες λειτουργίες των ιστοσελίδων.
 
 ## Site Permissions - Location
 
 permissions-site-location-window =
     .title = Ρυθμίσεις - Άδειες τοποθεσίας
     .style = { permissions-window.style }
+permissions-site-location-desc = Οι ακόλουθες ιστοσελίδες έχουν αιτηθεί πρόσβαση στην τοποθεσία σας. Μπορείτε να καθορίσετε σε ποιες ιστοσελίδες επιτρέπεται η πρόσβαση στην τοποθεσία σας. Μπορείτε επίσης να αποκλείσετε νέα αιτήματα για πρόσβαση στην τοποθεσία σας.
+permissions-site-location-disable-label =
+    .label = Αποκλεισμός νέων αιτημάτων για πρόσβαση στην τοποθεσία σας
+permissions-site-location-disable-desc = Αυτό θα εμποδίσει όλες τις ιστοσελίδες που δεν αναγράφονται παραπάνω να αιτηθούν άδεια για πρόσβαση στην τοποθεσία σας. Η φραγή πρόσβασης στην τοποθεσία σας πιθανόν να διακόψει ορισμένες λειτουργίες των ιστοσελίδων.
 
 ## Site Permissions - Camera
 
 permissions-site-camera-window =
     .title = Ρυθμίσεις - Άδειες κάμερας
     .style = { permissions-window.style }
+permissions-site-camera-desc = Οι ακόλουθες ιστοσελίδες έχουν αιτηθεί πρόσβαση στην κάμερά σας. Μπορείτε να καθορίσετε σε ποιες ιστοσελίδες επιτρέπεται η πρόσβαση στην κάμερά σας. Μπορείτε επίσης να αποκλείσετε νέα αιτήματα για πρόσβαση στην κάμερά σας.
+permissions-site-camera-disable-label =
+    .label = Αποκλεισμός νέων αιτημάτων για πρόσβαση στην κάμερά σας
+permissions-site-camera-disable-desc = Αυτό θα εμποδίσει όλες τις ιστοσελίδες που δεν αναγράφονται παραπάνω να αιτηθούν άδεια για πρόσβαση στην κάμερά σας. Η φραγή πρόσβασης στην κάμερά σας πιθανόν να διακόψει ορισμένες λειτουργίες των ιστοσελίδων.
 
 ## Site Permissions - Microphone
 
 permissions-site-microphone-window =
     .title = Ρυθμίσεις - Άδειες μικροφώνου
     .style = { permissions-window.style }
+permissions-site-microphone-desc = Οι ακόλουθες ιστοσελίδες έχουν αιτηθεί πρόσβαση στο μικρόφωνό σας. Μπορείτε να καθορίσετε σε ποιες ιστοσελίδες επιτρέπεται η πρόσβαση στο μικρόφωνό σας. Μπορείτε επίσης να αποκλείσετε νέα αιτήματα για πρόσβαση στο μικρόφωνό σας.
+permissions-site-microphone-disable-label =
+    .label = Αποκλεισμός νέων αιτημάτων για πρόσβαση στο μικρόφωνό σας
+permissions-site-microphone-disable-desc = Αυτό θα εμποδίσει όλες τις ιστοσελίδες που δεν αναγράφονται παραπάνω να αιτηθούν άδεια για πρόσβαση στο μικρόφωνό σας. Η φραγή πρόσβασης στο μικρόφωνό σας πιθανόν να διακόψει ορισμένες λειτουργίες των ιστοσελίδων.

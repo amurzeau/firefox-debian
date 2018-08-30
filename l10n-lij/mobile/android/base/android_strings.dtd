@@ -372,6 +372,8 @@
 
 <!ENTITY pref_media_autoplay_enabled "Permetti aoto-riproduçion">
 <!ENTITY pref_media_autoplay_enabled_summary "Contròlla se i sciti peuan aotoriprodue video e atri media">
+<!ENTITY pref_media_autoplay_allow "Permetti aotoriproduçion">
+<!ENTITY pref_media_autoplay_block "Blòcca aotoriproduçion">
 <!ENTITY pref_zoom_force_enabled "Abilita de longo o zoom">
 <!ENTITY pref_zoom_force_enabled_summary "Ignòra e inpostaçioin da pagina e pemetti de longo o zoom">
 <!ENTITY pref_voice_input "Comandi vocali">
@@ -447,6 +449,11 @@
 <!ENTITY datareporting_crashreporter_title_short "Segnalaçion di Cianti">
 <!ENTITY datareporting_wifi_title2 "Serviçio de poxiçion de &vendorShortName;">
 <!ENTITY datareporting_wifi_geolocation_summary4 "Agiutta &vendorShortName; a fâ a mappa do mondo! Condividdi a poxiçion aproscimativa do WiFi e do telefonin pe megiorâ o nòstro serviçio de geolocalizaçion.">
+<!-- Localization note (datareporting_notification_title ) : This will be the title
+     of the notification shown whenever the user has enabled data reporting and the stumbler
+     service is running. -->
+<!ENTITY datareporting_stumbler_notification_title "O serviçio de poxiçion de &vendorShortName; o vâ">
+
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -864,7 +871,7 @@ Stream list for highlights sourced from th user's bookmarks. -->
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_trending): This label is shown in the Activity Stream list for highlights sourced from a recommendations engine. -->
 <!ENTITY activity_stream_highlight_label_trending "De tentensa">
 <!-- LOCALIZATION NOTE (activity_stream_highlights_empty): This text is shown when we could not find highlights for this user. This is also shown on first run. -->
-<!ENTITY activity_stream_highlights_empty "Iniçia a navegâ e in sta seçion ti troviæ articoli, video e atre pagine vixitæ de fresco ò azonti a-i segnalibbri.">
+<!ENTITY activity_stream_highlights_empty "Iniçia a navegâ e in sta seçion ti troviæ articoli, video e atre pagine vixitæ de fresco ò azonte a-i segnalibbri.">
 
 <!-- LOCALIZATION NOTE (activity_stream_remove): This label is shown in the Activity Stream context menu,
 and allows hiding a URL/page from highlights or topsites. The page remains in history/bookmarks, but
@@ -888,3 +895,14 @@ See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "Azonzi a-a Pagina Prinçipâ">
 <!ENTITY pwa_continue_to_website "Vanni a-o scito">
 <!ENTITY pwa_onboarding_sumo "Ti peu azoze con facilitæ sto scito a-a teu Pagina prinçipâ pe aveighe acesso instantaneo e navegâ veloce co-ina esperiesa scimile a \&apos;n app.">
+
+<!-- Used by accessibility services to identify the play/pause buttons shown in the
+Picture-in-picture mini window -->
+<!ENTITY pip_play_button_title "Riproduçion">
+<!ENTITY pip_play_button_description "Repiggia riproduçion">
+<!ENTITY pip_pause_button_title "Pösa">
+<!ENTITY pip_pause_button_description "Riproduçion in pösa">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY mls_notification_channel "Serviçio de localizaçion de &vendorShortName;">

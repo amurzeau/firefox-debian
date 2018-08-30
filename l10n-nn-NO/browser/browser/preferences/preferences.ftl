@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -91,7 +83,7 @@ extension-controlled-homepage-override = Ei utviding, <img data-l10n-name="icon"
 extension-controlled-new-tab-url = Ei utviding, <img data-l10n-name="icon"/> { $name }, styrer Ny fane-sida di.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
-extension-controlled-default-search = Ei utviding, <img data-l10n-name="icon"/> { $name }, har endra standardsøkemotor.
+extension-controlled-default-search = Ei utviding, <img data-l10n-name="icon"/> { $name }, har endra standardsøkjemotor.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = Ei utviding, <img data-l10n-name="icon"/> { $name }, krev innhaldsfaner.
@@ -110,7 +102,7 @@ extension-controlled-enable = For å aktivere utvidinga, gå til <img data-l10n-
 
 ## Preferences UI Search Results
 
-search-results-header = Søkeresultat
+search-results-header = Søkjeresultat
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message =
     { PLATFORM() ->
@@ -132,25 +124,16 @@ get-started-configured = Opne innstillingar for { -sync-brand-short-name }
 always-check-default =
     .label = Kontroller alltid om { -brand-short-name } er standard-nettlesar
     .accesskey = a
-is-default = { -brand-short-name } er standard nettlesar
+is-default = { -brand-short-name } er allereie standard nettlesar
 is-not-default = { -brand-short-name } er ikkje standard nettlesar
 set-as-my-default-browser =
     .label = Bruk som standard…
     .accesskey = S
-startup-page = Når { -brand-short-name } startar
-    .accesskey = s
-startup-user-homepage =
-    .label = Vis startsida
-startup-blank-page =
-    .label = Vis ei tom side
-startup-prev-session =
-    .label = Vis vindauge og faner som vart brukte sist
 startup-restore-previous-session =
     .label = Bygg oppatt siste programøkt
     .accesskey = B
 disable-extension =
     .label = Slå av utviding
-home-page-header = Startside
 tabs-group-header = Faner
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab vekslar mellom faner i nyleg brukt-rekkjefølgje
@@ -219,6 +202,9 @@ choose-language-description = Vel føretrekt språk på nettsider
 choose-button =
     .label = Vel…
     .accesskey = V
+choose-browser-language-description = Vel språka som som skal brukast til å vise menyar, meldingar og varsel frå { -brand-short-name }.
+confirm-browser-language-change-description = Start om { -brand-short-name } for å bruke disse endringene
+confirm-browser-language-change-button = Bruk og start på nytt
 translate-web-pages =
     .label = Omset webinnhald
     .accesskey = O
@@ -251,7 +237,7 @@ download-choose-folder =
            *[other] o
         }
 download-always-ask-where =
-    .label = Spør alltid kvar eg vil lagre filer
+    .label = Spør alltid om kvar eg vil lagre filer
     .accesskey = a
 applications-header = Program
 applications-description = Vel korleis { -brand-short-name } handterer filer du hentar frå nettet eller programma du brukar når du surfar.
@@ -270,7 +256,6 @@ play-drm-content =
 play-drm-content-learn-more = Les meir
 update-application-title = { -brand-short-name }-oppdateringar
 update-application-description = Hald { -brand-short-name } oppdatert for beste yting, stabilitet og sikkerheit.
-update-application-info = Versjon { $version } <a>Kva er nytt</a>
 update-application-version = Versjon { $version } <a data-l10n-name="learn-more">Kva er nytt</a>
 update-history =
     .label = Vis oppdateringshistorikk…
@@ -289,7 +274,7 @@ update-application-use-service =
     .label = Bruk ei bakgrunnsteneste for å installere oppdateringar
     .accesskey = B
 update-enable-search-update =
-    .label = Oppdater søkemotorar automatisk
+    .label = Oppdater søkjemotorar automatisk
     .accesskey = e
 
 ## General Section - Performance
@@ -306,7 +291,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Grense for innhaldsprosessar
     .accesskey = G
 performance-limit-content-process-enabled-desc = Ytterlegere innhaldsprosessar kan forbetre ytinga når du brukar fleire faner, men vil også bruke meir minne.
-performance-limit-content-process-disabled-desc = Endring av talet på innhaldsprosessar kan berre gjerast med multiprosess { -brand-short-name }. <a>Lær deg korleis du kontrollerer om multiprosess er slått på</a>
 performance-limit-content-process-blocked-desc = Endring av talet på innhaldsprosessar kan berre gjerast med multiprosess { -brand-short-name }. <a data-l10n-name="learn-more">Lær deg korleis du kontrollerer om multiprosess er slått på</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -377,9 +361,6 @@ use-current-pages =
 choose-bookmark =
     .label = Bruk bokmerke…
     .accesskey = u
-restore-default =
-    .label = Still tilbake til standard
-    .accesskey = s
 
 ## Search Section
 
@@ -388,13 +369,13 @@ search-bar-hidden =
     .label = Bruk adresselinja for søk og navigering
 search-bar-shown =
     .label = Legg til søkjelinje i verktøylinja
-search-engine-default-header = Standard søkemotor
-search-engine-default-desc = Vel standardsøkemotor som skal brukast i adresselinja og søkelinja.
+search-engine-default-header = Standard søkjemotor
+search-engine-default-desc = Vel standardsøkjemotor som skal brukast i adresselinja og søkelinja.
 search-suggestions-option =
-    .label = Tilby søkeforslag
+    .label = Tilby søkjeforslag
     .accesskey = T
 search-show-suggestions-url-bar-option =
-    .label = Vis søkeforslag i resultata til adresselinja
+    .label = Vis søkjeforslag i resultata til adresselinja
     .accesskey = l
 # This string describes what the user will observe when the system
 # prioritizes search suggestions over browsing history in the results
@@ -402,21 +383,21 @@ search-show-suggestions-url-bar-option =
 # "ahead" refers to location (appearing most proximate to), not time
 # (appearing before).
 search-show-suggestions-above-history-option =
-    .label = Vis søkeforslag før nettlesarhistorikk i adressefeltresultata
-search-suggestions-cant-show = Søkeforslag vil ikkje visast i adresselinjeresultata fordi du har konfigurert { -brand-short-name } til å aldri hugse historikk.
-search-one-click-header = Eittklikks-søkemotorar
-search-one-click-desc = Vel alternative søkemotorar som vert viste under adresselinja og søkelinja når du byrjar å skrive inn eit søkeord.
+    .label = Vis søkjeforslag før nettlesarhistorikk i adressefeltresultata
+search-suggestions-cant-show = Søkjeforslag vil ikkje visast i adresselinjeresultata fordi du har konfigurert { -brand-short-name } til å aldri hugse historikk.
+search-one-click-header = Eittklikks-søkjemotorar
+search-one-click-desc = Vel alternative søkjemotorar som vert viste under adresselinja og søkelinja når du byrjar å skrive inn eit søkjeord.
 search-choose-engine-column =
-    .label = Søkemotor
+    .label = Søkjemotor
 search-choose-keyword-column =
     .label = Nykelord
 search-restore-default =
-    .label = Bygg oppatt standard søkemotorar
+    .label = Bygg oppatt standard søkjemotorar
     .accesskey = G
 search-remove-engine =
     .label = Fjern
     .accesskey = F
-search-find-more-link = Finn fleire søkemotorar
+search-find-more-link = Finn fleire søkjemotorar
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
 search-keyword-warning-title = Kopiere stikkord
@@ -583,7 +564,7 @@ history-remember-browser-option =
     .label = Hugs nettlesing- og nedlastingshistorikk
     .accesskey = H
 history-remember-search-option =
-    .label = Hugse søke- og skjemahistorikk
+    .label = Hugse søkje- og skjemahistorikk
     .accesskey = ø
 history-clear-on-close-option =
     .label = Slette historikk når { -brand-short-name } avsluttar
@@ -624,6 +605,26 @@ sitedata-accept-third-party-visited-option =
     .label = Frå besøkte
 sitedata-accept-third-party-never-option =
     .label = Aldri
+sitedata-allow-cookies-option =
+    .label = Tillat infokapslar og nettsidedata
+    .accesskey = a
+sitedata-disallow-cookies-option =
+    .label = Blokker infokapslar og nettsidedata
+    .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Type blokkert
+    .accesskey = T
+sitedata-block-trackers-option-recommended =
+    .label = Tredjeparts-sporfølgjarar (tilrådd)
+sitedata-block-trackers-option =
+    .label = Tredjeparts-sporfølgjarar
+sitedata-block-unvisited-option =
+    .label = Infokapslar frå ubesøkte nettsider
+sitedata-block-all-third-parties-option =
+    .label = Alle tredjeparts infokapslar
+sitedata-block-always-option =
+    .label = Alle infokapslar (kan føre til at nettsider ikkje fungerer)
 sitedata-clear =
     .label = Tøm data…
     .accesskey = T
@@ -647,12 +648,50 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Opne faner
     .accesskey = O
-addressbar-suggestions-settings = Endre innstillingar for søkeforslag
+addressbar-suggestions-settings = Endre innstillingar for søkjeforslag
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = Innholdsblokkering
+content-blocking-desc = Blokker tredjepartsinnhald, som annonsar eller kode, som kan gjere surfinga tregare og som kan spore deg rundt på nettet. Tilpass innstillingane for best mogleg balanse mellom vern og yting.
+content-blocking-learn-more = Les meir
+content-blocking-restore-defaults =
+    .label = Still tilbake til standard
+    .accesskey = S
+content-blocking-toggle-on =
+    .tooltiptext = Slå på innholdsblokkering
+content-blocking-toggle-off =
+    .tooltiptext = Slå av innhaldsblokkering
+content-blocking-toggle-label-on = PÅ
+    .accesskey = P
+content-blocking-toggle-label-off = AV
+    .accesskey = A
+content-blocking-category-label = Vel kva som skal blokkerast
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Trege sporingselement
+    .accesskey = s
+content-blocking-fastblock-description = Blokkerer tredjepartsinnhald som tek lenger tid enn 5 sekund å laste inn.
+content-blocking-fastblock-option-enabled =
+    .label = Blokker alltid
+content-blocking-fastblock-option-disabled =
+    .label = Blokker aldri
+content-blocking-tracking-protection-label = Sporfølgjarar
+    .accesskey = S
+content-blocking-tracking-protection-description = Blokkerer alle kjende sporfølgjarar (Merk: kan òg hindre at nokre sider vert lasta inn).
+content-blocking-tracking-protection-option-enabled =
+    .label = Alltid blokker
+content-blocking-tracking-protection-option-pbm =
+    .label = Blokker berre i private vindauge
+content-blocking-tracking-protection-option-disabled =
+    .label = Blokker aldri
+content-blocking-tracking-protection-change-blocklist = Endre blokkeringsliste…
 
 ## Privacy Section - Tracking
 
 tracking-header = Sporingsvern
-tracking-desc = Sporingsvernet blokkerer sporarar på nettet som samlar inn dine nettlesardata dine på fleire nettsider. <a data-l10n-name="learn-more">Les meir om sporingsvern og ditt personvern</a>
+tracking-desc = Sporingsvernet blokkerer sporfølgjarar på nettet som samlar inn nettlesardataa dine på fleire nettsider. <a data-l10n-name="learn-more">Les meir om sporingsvern og ditt personvern</a>
 tracking-mode-label = Bruk sporingsvern for å blokkere kjende sporfølgjarar
 tracking-mode-always =
     .label = Alltid
@@ -700,9 +739,17 @@ permissions-notification-pause =
 permissions-block-autoplay-media =
     .label = Blokker nettsider frå automatisk å spele media med lyd
     .accesskey = B
+permissions-block-autoplay-media-menu = For nettsider som autospelar lyd
 permissions-block-autoplay-media-exceptions =
     .label = Unntak…
     .accesskey = U
+autoplay-option-ask =
+    .label = Spør alltid
+autoplay-option-allow =
+    .label = Tillat autoavspeling
+autoplay-option-dont =
+    .label = Inga autoavspeling
+permissions-autoplay-link = Les meir
 permissions-block-popups =
     .label = Blokker sprettoppvindauge
     .accesskey = B

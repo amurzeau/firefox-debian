@@ -8,7 +8,11 @@
 <!ENTITY loadError.label "Arazoa orria kargatzerakoan">
 <!ENTITY retry.label "Saiatu berriro">
 <!ENTITY returnToPreviousPage.label "Joan atzera">
+<!ENTITY returnToPreviousPage1.label "Itzuli (gomendatua)">
 <!ENTITY advanced.label "Aurreratua">
+
+<!ENTITY continue2.label "Gehiago…">
+<!ENTITY moreInformation.label "Informazio gehiago">
 
 <!-- Specific error messages -->
 
@@ -95,10 +99,30 @@
 <!ENTITY nssFailure2.longDesc2 "<ul> <li>Ikusten saiatzen ari zaren orria ezin da erakutsi jasotako datuen egiazkotasuna ezin delako egiaztatu.</li> <li>Mesedez jarri harremanetan webgunearen jabeekin arazoaren berri emateko.</li> </ul>">
 
 <!ENTITY certerror.longpagetitle1 "Zure konexioa ez da segurua">
-<!-- Localization note (certerror.introPara) - The text content of the span tag
+<!ENTITY certerror.longpagetitle2 "Abisua: balizko segurtasun arriskua">
+<!-- Localization note (certerror.introPara, certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "<span class='hostname'/> gunearen jabeak webgunea gaizki konfiguratu du. Zure informazioa lapurtzea saihesteko, &brandShortName; ez da webgune honetara konektatu.">
+
+
+<!ENTITY certerror.expiredCert.secondPara "Litekeena da zure ordenagailuko erlojuak ordua gaizki izatea eta honek &brandShortName;(r)i modu seguruan konektatzea eragozten dio.">
+
+<!ENTITY certerror.whatCanYouDoAboutItTitle "Zer egin dezakezu?">
+
+<!ENTITY certerror.unknownIssuer.whatCanYouDoAboutIt "
+<p>Litekeena da arazoa webguneak izatea eta ezin duzu ezer egin hau konpontzeko.</p>
+<p>Enpresako sare batean bazaude edo antibirus softwarea badarabilzu, laguntza-zerbitzuengana jo dezakezu sostengu eske. Webgunearen kudeatzaileari arazoaren berri ere eman diezaiokezu.</p>
+">
+
+<!ENTITY certerror.expiredCert.whatCanYouDoAboutIt2 "
+<p>Zure ordenagailuaren erlojuan <span id='wrongSystemTime_systemDate2'/> da. Ziurtatu sistemaren ezarpenetan zure ordenagailuaren erlojuak data, ordua eta ordu-zona ondo dituela, eta gero berritu <span class='hostname'/>.</p>
+<p>Zure erlojua ondo badago, litekeena da webgunea gaizki konfiguratuta egotea eta ezingo duzu ezer egin arazoa konpontzeko. Webgunearen kudeatzaileari arazoaren berri eman diezaiokezu.</p>
+">
+
+<!ENTITY certerror.badCertDomain.whatCanYouDoAboutIt "
+<p>Litekeena da arazoa webguneak izatea eta ezin duzu ezer egin hau konpontzeko. Webgunearen kudeatzaileari arazoaren berri eman diezaiokezu</p>
+">
 
 <!ENTITY sharedLongDesc "<ul>
   <li>Gunea une batez desgaituta edo oso lanpetuta egon daiteke. Saiatu berriro geroago.</li>
@@ -115,6 +139,7 @@ was trying to connect. -->
 
 <!ENTITY securityOverride.exceptionButtonLabel "Gehitu salbuespena…">
 
+
 <!ENTITY errorReporting.automatic2 "Eman honen gisako erroreen berri Mozillari asmo txarreko guneak identifikatzen eta blokeatzen laguntzeko">
 <!ENTITY errorReporting.learnMore "Argibide gehiago…">
 
@@ -129,11 +154,13 @@ was trying to connect. -->
 <!-- LOCALIZATION NOTE (certerror.wrongSystemTime2,
                         certerror.wrongSystemTimeWithoutReference) - The <span id='..' />
      tags will be injected with actual values, please leave them unchanged. -->
-<!ENTITY certerror.wrongSystemTime2 "<p> &brandShortName; ezin da <span id='wrongSystemTime_URL'/> ostalarira konektatu zure ordulariak okerreko ordua erakusten duela dirudielako eta honek konexio segurua eragozten duelako.</p> <p>Zure ordenagailuak uste du <span id='wrongSystemTime_systemDate'/> dela baina <span id='wrongSystemTime_actualDate'/> izan behar luke. Arazo hau konpontzeko, aldatu zure data- eta ordu-ezarpenak ordu egokira.</p>">
-<!ENTITY certerror.wrongSystemTimeWithoutReference "<p>&brandShortName; ezin da <span id='wrongSystemTimeWithoutReference_URL'/> ostalarira konektatu zure ordulariak okerreko ordua erakusten duela dirudielako eta honek konexio segurua eragozten duelako.</p> <p>Zure ordenagailuak dio <span id='wrongSystemTimeWithoutReference_systemDate'/> dela. Arazo hau konpontzeko, aldatu zure data- eta ordu-ezarpenak ordu egokira.</p>">
+<!ENTITY certerror.wrongSystemTime2 "<p> &brandShortName; ezin da <span id='wrongSystemTime_URL'/> ostalarira konektatu zure erlojuak okerreko ordua erakusten duela dirudielako eta honek konexio segurua eragozten duelako.</p> <p>Zure ordenagailuak uste du <span id='wrongSystemTime_systemDate'/> dela baina <span id='wrongSystemTime_actualDate'/> izan behar luke. Arazo hau konpontzeko, aldatu zure data- eta ordu-ezarpenak ordu egokira.</p>">
+<!ENTITY certerror.wrongSystemTimeWithoutReference "<p>&brandShortName; ezin da <span id='wrongSystemTimeWithoutReference_URL'/> ostalarira konektatu zure erlojuak okerreko ordua erakusten duela dirudielako eta honek konexio segurua eragozten duelako.</p> <p>Zure ordenagailuak dio <span id='wrongSystemTimeWithoutReference_systemDate'/> dela. Arazo hau konpontzeko, aldatu zure data- eta ordu-ezarpenak ordu egokira.</p>">
 
 <!ENTITY certerror.pagetitle1  "Konexio ez-segurua">
+<!ENTITY certerror.pagetitle2  "Abisua: balizko segurtasun arriskua">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Gune honek HTTP Strict Transport Security (HSTS) erabiltzen du &brandShortName; modu seguruan soilik konekta litekeela zehazteko. Ondorioz, ezin da salbuespenik gehitu ziurtagiri honentzat.">
+<!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'></span> guneak HTTP Strict Transport Security (HSTS) izeneko segurtasun-politika dauka eta &brandShortName; modu seguruan konekta daiteke soilik. Ezin duzu gunea bisitatzeko salbuespenik gehitu.">
 <!ENTITY certerror.copyToClipboard.label "Kopiatu testua arbelean">
 
 <!ENTITY inadequateSecurityError.title "Zure konexioa ez da segurua">
@@ -142,6 +169,9 @@ was trying to connect. -->
 <!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> ostalariak zaharkituta dagoen eta erasoen aurrean babesik ez duen segurtasun-teknologia erabiltzen du. Segurua zela uste zenuen informazioa erraz agerraraz lezake erasotzaile batek. Zuk gunea bisitatu ahal izan aurretik zerbitzaria konpondu behar du webgunearen kudeatzaileak.</p><p>Errore-kodea: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
 
 <!ENTITY blockedByPolicy.title "Blokeatutako orria">
+
+<!ENTITY clockSkewError.title "Zure ordenagailuaren erlojua gaizki dago">
+<!ENTITY clockSkewError.longDesc "Zure ordenagailuak uste du <span id='wrongSystemTime_systemDate1'/> dela eta honek &brandShortName;(r)i modu seguruan konektatzea eragozten dio. <span class='hostname'></span> bisitatzeko, jarri egunean zure ordenagailuaren erlojua sistemaren ezarpenetan uneko data, ordua eta ordu-zona kontuan hartuz, eta gero berritu <span class='hostname'></span>.">
 
 <!ENTITY prefReset.longDesc "Badirudi zure sareko segurtasun-ezarpenek eragiten dutela hau. Ezarpen lehenetsiak berrezarri nahi dituzu?">
 <!ENTITY prefReset.label "Berrezarri ezarpen lehenetsiak">

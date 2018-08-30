@@ -70,6 +70,15 @@
 
 <!ENTITY url_bar_default_text2 "অনুসন্ধান বা ঠিকানা দিন">
 
+<!-- Localization note (url_bar_qrcode_text2) : This text will be
+     heard by non-visual users when the focus is on the QR Code
+     icon in the url bar. -->
+<!ENTITY url_bar_qrcode_text2 "সার্চ অথবা ঠিকানা দিতে আপনার QR Reader ব্যবহার করুন">
+<!-- Localization note (url_bar_mic_text2) : This text will be
+     heard by non-visual users when the focus is on the Microphone
+     icon in the url bar. -->
+<!ENTITY url_bar_mic_text2 "সার্চ অথবা ঠিকানা দিতে আপনার মাইক্রোফোন ব্যবহার করুন">
+
 <!ENTITY bookmark "বুকমার্ক">
 <!ENTITY bookmark_remove "বুকমার্ক মুছে ফেলুন">
 <!ENTITY bookmark_added "বুকমার্ক যোগ হয়েছে">
@@ -207,6 +216,7 @@
 <!ENTITY pref_category_advanced_summary3 "ট্যাব, ডাটা রক্ষক, ডেভেলপার টুলগুলো পুনরুদ্ধার করুন">
 <!ENTITY pref_category_notifications "ঘোষণা">
 <!ENTITY pref_category_notifications_summary "নতুন ফিচার, ওয়েবসাইট হালনাগাদ">
+<!ENTITY pref_category_notifications_summary2 "নতুন ফিচার, পণ্যের টিপস">
 <!ENTITY pref_developer_remotedebugging_usb "USB এর মাধ্যমে রিমোট ডিবাগিং">
 <!ENTITY pref_developer_remotedebugging_wifi "Wi-Fi এর মাধ্যমে রিমোট ডিবাগিং">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Wi-Fi ডিবাগিং এর জন্য আপনার ডিভাইসে একটি QR code reader অ্যাপ ইন্সটল করা থাকতে হবে।">
@@ -362,6 +372,8 @@
 
 <!ENTITY pref_media_autoplay_enabled "নিজে থেকে চালু হওয়ার অনুমতি দিন">
 <!ENTITY pref_media_autoplay_enabled_summary "ওয়েবসাইট ভিডিও এবং অন্যান্য মিডিয়া স্বয়ংক্রিয়ভাবে চালাবে কিনা তা নিয়ন্ত্রণ করুন">
+<!ENTITY pref_media_autoplay_allow "নিজে থেকে চালু হওয়ার অনুমতি দিন">
+<!ENTITY pref_media_autoplay_block "অটোপ্লে ব্লক করুন">
 <!ENTITY pref_zoom_force_enabled "সর্বদা জুম সক্রিয় রাখুন">
 <!ENTITY pref_zoom_force_enabled_summary "জোর করে ওভাররাইড করুন যাতে আপনি সমস্ত পাতা জুম করতে পারেন">
 <!ENTITY pref_voice_input "ভয়েস ইনপুট">
@@ -437,6 +449,11 @@
 <!ENTITY datareporting_crashreporter_title_short "ক্র্যাশ রিপোর্টার">
 <!ENTITY datareporting_wifi_title2 "&vendorShortName; লোকেশন সার্ভিস">
 <!ENTITY datareporting_wifi_geolocation_summary4 "পৃথিবীকে ম্যাপ করতে &vendorShortName; কে সাহায্য করুন! আপনার ডিভাইসের Wi-Fi এবং সেলুলার অবস্থান শেয়ার করে আমাদের জিওলোকেশন সার্ভিসকে উন্নত করতে সাহায্য করুন।">
+<!-- Localization note (datareporting_notification_title ) : This will be the title
+     of the notification shown whenever the user has enabled data reporting and the stumbler
+     service is running. -->
+<!ENTITY datareporting_stumbler_notification_title "&vendorShortName; লোকেশন সেবা চলছে">
+
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -543,7 +560,7 @@
 <!ENTITY pref_compact_tabs_summary2 "পোট্রেট মোডে ট্যাব দুই কলামে সাজাও">
 
 <!-- Localization note (page_removed): This string appears in a toast message when
-     any page is removed frome about:home. This includes pages that are in history,
+     any page is removed from about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "পাতা অপসারিত হয়েছে">
 <!ENTITY folder_removed "ফোল্ডার অপসারিত">
@@ -758,7 +775,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      "Last synced" is one of the user's other Sync clients, typically Firefox on
      their desktop or laptop.-->
 <!ENTITY remote_tabs_last_synced "সর্বশেষ সিঙ্ক হয়েছে: &formatS;">
-<!-- Localization note: Used when the sync has not happend yet, showed in place of a date -->
+<!-- Localization note: Used when the sync has not happened yet, showed in place of a date -->
 <!ENTITY remote_tabs_never_synced "শেষ বার সিঙ্ক হয়েছে:কখনও না">
 
 <!-- LOCALIZATION NOTE (intent_uri_private_browsing_prompt): This string will
@@ -878,3 +895,15 @@ See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "নীড় স্ক্রিনে যোগ করুন">
 <!ENTITY pwa_continue_to_website "ওয়েবসাইট অব্যাহত রাখুন">
 <!ENTITY pwa_onboarding_sumo "তাৎক্ষিণক ব্যবহার ও অ্যাপের মত দ্রুত ব্রাউজিং অভিজ্ঞতা নিতে আপনি সহজেই এই ওয়েবসাইট আপনার নীড় স্ক্রিনে যোগ করতে পারেন।">
+
+<!-- Used by accessibility services to identify the play/pause buttons shown in the
+Picture-in-picture mini window -->
+<!ENTITY pip_play_button_title "প্লে">
+<!ENTITY pip_play_button_description "আবার চালু করুন">
+<!ENTITY pip_pause_button_title "বিরতি">
+<!ENTITY pip_pause_button_description "চালানো বন্ধ কর">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY mls_notification_channel "&vendorShortName; লোকেশন সার্ভিস">
+<!ENTITY download_notification_channel "ডাউনলোডসমূহ">

@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -137,20 +129,11 @@ is-not-default = { -brand-short-name } ndaha'éi kundahára ypykuéva
 set-as-my-default-browser =
     .label = Ejapo chugui yjypykuéva…
     .accesskey = D
-startup-page = { -brand-short-name } Oñepyrũ vove
-    .accesskey = s
-startup-user-homepage =
-    .label = Che kuatiarogue ñepyrũha jehechauka
-startup-blank-page =
-    .label = Peteĩ kuatiarogue nandi jehechauka
-startup-prev-session =
-    .label = Ovetã ha tendaykekuéra tembiapo paha rehegua jehechauka
 startup-restore-previous-session =
     .label = Embojevy tembiapo mboyveguávape
     .accesskey = s
 disable-extension =
     .label = Moĩmbaha Monge
-home-page-header = Kuatiarogue ñepyrũ
 tabs-group-header = Tendayke
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab cycles tendayke rupive eipuru ramovévape
@@ -219,6 +202,9 @@ choose-language-description = Eipoiravo pe ñe'ẽ erohoryvéva ehechauka hag̃u
 choose-button =
     .label = Poravo…
     .accesskey = o
+choose-browser-language-description = Eiporavo ñe’ẽ ojepurúva ehechauka hag̃ua poravorã, ñe’ẽmondo ha momarandu { -brand-short-name } rehegua.
+confirm-browser-language-change-description = Emoñepyrũjey { -brand-short-name } oñemboheko hag̃ua ko’ã moambuepyre
+confirm-browser-language-change-button = Mohembiapo ha ñepyrũjey
 translate-web-pages =
     .label = Ñanduti retepy ñe'ẽasa
     .accesskey = T
@@ -270,7 +256,6 @@ play-drm-content =
 play-drm-content-learn-more = Kuaave
 update-application-title = { -brand-short-name } mbohekopyahu
 update-application-description = Eguereko { -brand-short-name } tekopyahúreve hembiapo porã, hekopyta ha hekorosã hag̃ua.
-update-application-info = Peteĩchagua{ $version } <a>Oĩpa mba'e pyahu</a>
 update-application-version = Peteĩchagua{ $version } <a data-l10n-name="learn-more">Oĩpa mba'e pyahu</a>
 update-history =
     .label = Tembiasakue rekopyahu jehechauka…
@@ -306,7 +291,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Tetepy ha tembe'y mba'eapo
     .accesskey = l
 performance-limit-content-process-enabled-desc = Umi taperekogua tetepy mbohetapy ikatu omopu'ã apopyre oipurúvo heta tendayke, hákatu avei oipurúta hetave mandu'arenda.
-performance-limit-content-process-disabled-desc = Pe mba'eapo papapy moambue retepy ikatu oiko mba'eapoita { -brand-short-name } ndive añónte. <a>Eikuaa mba'éichapa ehechajeýta mba'eapoita ijuruja jave</a>
 performance-limit-content-process-blocked-desc = Pe mba'eapo papapy moambue retepy ikatu oiko mba'eapoita { -brand-short-name } ndive añónte. <a data-l10n-name="learn-more">Eikuaa mba'éichapa ehechajeýta mba'eapoita ijuruja jave</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -343,13 +327,13 @@ network-proxy-connection-settings =
 
 ## Home Section
 
-home-new-windows-tabs-header = Ovetã ha tendayke pyahu   
+home-new-windows-tabs-header = Ovetã ha tendayke pyahu
 home-new-windows-tabs-description2 = Eiporavo ehecháva eikévo ne kuatiarogue iporãvévape, ovetã ha tendayke pyahúpe.
 
 ## Home Section - Home Page Customization
 
-home-homepage-mode-label = Togue moñepyrû ha ovetâ pyahu 
-home-newtabs-mode-label = tendayke pyahu 
+home-homepage-mode-label = Togue moñepyrû ha ovetâ pyahu
+home-newtabs-mode-label = tendayke pyahu
 home-restore-defaults =
     .label = mbopyahujey techa mboyvegua
     .accesskey = m
@@ -377,9 +361,6 @@ use-current-pages =
 choose-bookmark =
     .label = Techaukaha puru…
     .accesskey = B
-restore-default =
-    .label = Embojevy heko ypykuépe
-    .accesskey = R
 
 ## Search Section
 
@@ -472,8 +453,8 @@ sync-resend-verification =
     .label = Emondo jehechajey pyahu
     .accesskey = d
 sync-remove-account =
-    .label = ñe'ẽveve ñembogue
-    .accesskey = ñ
+    .label = Mba'ete mbogue
+    .accesskey = R
 sync-sign-in =
     .label = Eñemboheraguapy
     .accesskey = g
@@ -613,9 +594,9 @@ sitedata-block-cookies-option =
 sitedata-keep-until = Eñongati ag̃ave
     .accesskey = u
 sitedata-keep-until-expire =
-    .label = topa
+    .label = opátama
 sitedata-keep-until-closed =
-    .label = oñembotýma
+    .label = { -brand-short-name } oñembotýma
 sitedata-accept-third-party-desc = Emoñeĩ kookie ambueguáva ha tenda mba'ekuaarã
     .accesskey = y
 sitedata-accept-third-party-always-option =
@@ -624,6 +605,20 @@ sitedata-accept-third-party-visited-option =
     .label = Jehopyre
 sitedata-accept-third-party-never-option =
     .label = Araka'eve
+sitedata-allow-cookies-option =
+    .label = Emoneĩ kookie ha tenda mba’ekuaarã
+    .accesskey = A
+sitedata-disallow-cookies-option =
+    .label = Ejoko kookie ha tenda mba’ekuaarã
+    .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Peteĩchagua tetepy jokopyre
+    .accesskey = T
+sitedata-block-unvisited-option =
+    .label = Ñanduti renda kookie eike’ỹhague
+sitedata-block-all-third-parties-option =
+    .label = Opaite kookie mbohapyhagua
 sitedata-clear =
     .label = Mba'ekuaarã mopotĩ…
     .accesskey = l
@@ -648,6 +643,44 @@ addressbar-locbar-openpage-option =
     .label = Tendayke ijurujáva
     .accesskey = O
 addressbar-suggestions-settings = Jerohoryvéva jehekaha mongu'eha je'epyre mombue
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = Ejoko tetepy
+content-blocking-desc = Ejoko mbohapyháva tetepy ñemurãva térã ayvugua ikatúva omombegue ne kundaha ha ojehapykueho ñanduti rupive. Eñemomba’e ñemboheko rehe eguereko hag̃ua ñemo’ã ha tembiapoporã.
+content-blocking-learn-more = Eikuaave
+content-blocking-restore-defaults =
+    .label = Embojevyjey ijypykuépe
+    .accesskey = R
+content-blocking-toggle-on =
+    .tooltiptext = Eipe’a tetepy jejoko
+content-blocking-toggle-off =
+    .tooltiptext = Emyandy tetepy jejoko
+content-blocking-toggle-label-on = Myandy
+    .accesskey = O
+content-blocking-toggle-label-off = Pe'a
+    .accesskey = O
+content-blocking-category-label = Eiporavo mba’épa ejokóta
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Mba’epuru jehekaha imbegue
+    .accesskey = S
+content-blocking-fastblock-description = Ejoko tetepy mbopyguáva hi’arevéva 5 aravo’ivégui henyhẽ hag̃ua.
+content-blocking-fastblock-option-enabled =
+    .label = Ejoko tapiaite
+content-blocking-fastblock-option-disabled =
+    .label = Ani ejoko araka’eve
+content-blocking-tracking-protection-label = Jehekaha
+    .accesskey = T
+content-blocking-tracking-protection-description = Ejoko opaite jehekaha eikuaáva (Kuaarã: Ikatu avei ojoko kuatiarogue ñemyenyhẽ).
+content-blocking-tracking-protection-option-enabled =
+    .label = Ejoko tapiaite
+content-blocking-tracking-protection-option-pbm =
+    .label = Ejoko ovetã ñemiguápe añoite
+content-blocking-tracking-protection-option-disabled =
+    .label = Ani ejoko araka’eve
+content-blocking-tracking-protection-change-blocklist = Emoambue jejokoha rysýi...
 
 ## Privacy Section - Tracking
 
@@ -700,9 +733,17 @@ permissions-notification-pause =
 permissions-block-autoplay-media =
     .label = Ejoko ñanduti renda ani hag̃ua omboheta ijehegui mba’epu ndive
     .accesskey = B
+permissions-block-autoplay-media-menu = Umi tenda ombohetáva mba’epu ijeheguípe g̃uarã
 permissions-block-autoplay-media-exceptions =
     .label = Ykepegua...
     .accesskey = E
+autoplay-option-ask =
+    .label = Eporandu tapia
+autoplay-option-allow =
+    .label = Emoneĩ mboheta ijeheguíva
+autoplay-option-dont =
+    .label = Ani eheja omboheta ijehegui
+permissions-autoplay-link = Kuaave
 permissions-block-popups =
     .label = Ovetã apysẽ joko
     .accesskey = B

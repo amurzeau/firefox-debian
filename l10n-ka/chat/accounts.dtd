@@ -3,10 +3,10 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!-- Account manager window for Instantbird -->
-<!ENTITY accounts.title                      "ანგარიშები - &brandShortName;">
+<!ENTITY accounts.title                      "ანგარიშები – &brandShortName;">
 <!ENTITY accountManager.width                "450">
 <!-- Instant messaging account status window for Thunderbird -->
-<!ENTITY accountsWindow.title                "მყისი შეტყობინების მდგომარეობა">
+<!ENTITY accountsWindow.title                "სწრაფი შეტყობინების მდგომარეობა">
 <!ENTITY accountsWindow2.style               "width: 41em; height: 27em;">
 
 <!ENTITY accountManager.newAccount.label     "ახალი ანგარიში">
@@ -22,7 +22,7 @@
 <!ENTITY account.autoSignOn.accesskey "ჩ">
 <!ENTITY account.connect.label        "დაკავშირება">
 <!ENTITY account.connect.accesskey    "დ">
-<!ENTITY account.disconnect.label     "კავშირის შეწყვეტა">
+<!ENTITY account.disconnect.label     "გამოთიშვა">
 <!ENTITY account.disconnect.accesskey "შ">
 <!ENTITY account.delete.label         "წაშლა">
 <!ENTITY account.delete.accesskey     "წ">
@@ -37,5 +37,5 @@
 <!ENTITY account.showDebugLog.label     "გამართვის აღრიცხვის მონაცემები">
 <!ENTITY account.showDebugLog.accesskey "ც">
 <!ENTITY account.connecting           "დაკავშირება…">
-<!ENTITY account.disconnecting        "კავშირის გაწყვეტა…">
+<!ENTITY account.disconnecting        "ითიშება…">
 <!ENTITY account.disconnected         "არაა დაკავშირებული">

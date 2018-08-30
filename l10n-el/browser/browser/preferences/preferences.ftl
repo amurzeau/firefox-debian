@@ -5,7 +5,7 @@
 do-not-track-description = Αποστολή σήματος “Αποτροπή καταγραφής” που σημαίνει ότι δεν θέλετε να καταγράφεστε από τις ιστοσελίδες
 do-not-track-learn-more = Μάθετε περισσότερα
 do-not-track-option-default =
-    .label = Μόνο κατά τη χρήση προστασίας από παρακολούθηση
+    .label = Μόνο κατά τη χρήση προστασίας από καταγραφή
 do-not-track-option-always =
     .label = Πάντα
 pref-page =
@@ -14,14 +14,6 @@ pref-page =
             [windows] Επιλογές
            *[other] Προτιμήσεις
         }
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -83,9 +75,30 @@ restart-later = Επανεκκίνηση αργότερα
 ## Variables:
 ##   $name (String): name of the extension
 
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = Μια επέκταση, το <img data-l10n-name="icon"/> { $name }, ελέγχει την αρχική σελίδα.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = Μια επέκταση, το <img data-l10n-name="icon"/> { $name }, ελέγχει τη σελίδα νέας καρτέλας.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
-extension-controlled-default-search = Μια επέκταση, <img data-l10n-name="icon"/> { $name }, έχει ορίσει την προεπιλεγμένη μηχανή αναζήτησής σας.
+extension-controlled-default-search = Μια επέκταση, <img data-l10n-name="icon"/> { $name }, έχει ορίσει την προεπιλεγμένη μηχανή αναζήτησης.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = Μια επέκταση, το <img data-l10n-name="icon"/> { $name }, απαιτεί θεματικές καρτέλες.
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = Μια επέκταση, το <img data-l10n-name="icon"/> { $name }, ελέγχει την προστασία από καταγραφή.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = Μια επέκταση, το <img data-l10n-name="icon"/> { $name }, ελέγχει τον τρόπο σύνδεσης του { -brand-short-name } με το διαδίκτυο.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = Για να ενεργοποιήσετε την επέκταση, μεταβείτε στο <img data-l10n-name="addons-icon"/> "Πρόσθετα" στο μενού <img data-l10n-name="menu-icon"/>.
 
 ## Preferences UI Search Results
 
@@ -96,6 +109,7 @@ search-results-empty-message =
         [windows] Λυπούμαστε! Δεν υπάρχουν αποτελέσματα για το “<span data-l10n-name="query"></span>” στις Επιλογές.
        *[other] Λυπούμαστε! Δεν υπάρχουν αποτελέσματα για το “<span data-l10n-name="query"></span>” στις Προτιμήσεις.
     }
+search-results-help-link = Χρειάζεστε βοήθεια; Επισκεφθείτε την <a data-l10n-name="url">Υποστήριξη { -brand-short-name }</a>
 
 ## General Section
 
@@ -111,24 +125,15 @@ always-check-default =
     .label = Να γίνεται πάντα έλεγχος για το αν το { -brand-short-name } είναι το προεπιλεγμένο πρόγραμμα περιήγησής σας
     .accesskey = Π
 is-default = Αυτήν τη στιγμή, το { -brand-short-name } είναι το προεπιλεγμένο πρόγραμμα περιήγησής σας
-is-not-default = Το { -brand-short-name } δεν είναι το προεπιλεγμένο πρόγραμμα περιήγησής σας
+is-not-default = Το { -brand-short-name } δεν είναι το προεπιλεγμένο πρόγραμμα περιήγησης
 set-as-my-default-browser =
     .label = Ορισμός ως προεπιλογή…
     .accesskey = Π
-startup-page = Κατά την εκκίνηση του { -brand-short-name }
-    .accesskey = ε
-startup-user-homepage =
-    .label = Εμφάνιση αρχικής σελίδας
-startup-blank-page =
-    .label = Εμφάνιση κενής σελίδας
-startup-prev-session =
-    .label = Εμφάνιση παραθύρων και καρτελών από την τελευταία φορά
 startup-restore-previous-session =
     .label = Επαναφορά προηγούμενης συνεδρίας
     .accesskey = σ
 disable-extension =
     .label = Απενεργοποίηση επέκτασης
-home-page-header = Αρχική σελίδα
 tabs-group-header = Καρτέλες
 ctrl-tab-recently-used-order =
     .label = Εναλλαγή καρτελών με το Ctrl+Tab σε σειρά πρόσφατης χρήσης
@@ -197,6 +202,9 @@ choose-language-description = Επιλέξτε την προτιμώμενη γ�
 choose-button =
     .label = Επιλογή...
     .accesskey = λ
+choose-browser-language-description = Επιλέξτε τις γλώσσες εμφάνισης μενού, μηνυμάτων και ειδοποιήσεων από το { -brand-short-name }.
+confirm-browser-language-change-description = Επανεκκίνηση του { -brand-short-name } για εφαρμογή αλλαγών
+confirm-browser-language-change-button = Εφαρμογή και επανεκκίνηση
 translate-web-pages =
     .label = Μετάφραση περιεχομένου του ιστού
     .accesskey = τ
@@ -248,7 +256,6 @@ play-drm-content =
 play-drm-content-learn-more = Μάθετε περισσότερα
 update-application-title = Ενημερώσεις του { -brand-short-name }
 update-application-description = Κρατήστε το { -brand-short-name } ενημερωμένο για καλύτερη απόδοση, σταθερότητα κι ασφάλεια.
-update-application-info = Έκδοση { $version } <a>Τι νέο υπάρχει</a>
 update-application-version = Έκδοση { $version } <a data-l10n-name="learn-more">Τι νέο υπάρχει</a>
 update-history =
     .label = Εμφάνιση ιστορικού ενημερώσεων…
@@ -284,7 +291,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Όριο διεργασιών περιεχομένου
     .accesskey = Ο
 performance-limit-content-process-enabled-desc = Οι επιπρόσθετες διεργασίες περιεχομένου μπορούν να βελτιώσουν τις επιδόσεις κατά τη χρήση πολλαπλών καρτελών, αλλά θα χρησιμοποιούν περισσότερη μνήμη.
-performance-limit-content-process-disabled-desc = Η τροποποίηση του αριθμού των διεργασιών περιεχομένου είναι δυνατή μόνο στο { -brand-short-name } με τη δυνατότητα πολλαπλών διεργασιών. <a>Μάθετε πώς μπορείτε να ελέγξετε εάν είναι ενεργοποιημένη η λειτουργία πολλαπλών διεργασιών</a>
 performance-limit-content-process-blocked-desc = Η τροποποίηση του αριθμού των διεργασιών περιεχομένου είναι δυνατή μόνο στο { -brand-short-name } με τη δυνατότητα πολλαπλών διεργασιών. <a data-l10n-name="learn-more">Μάθετε πώς μπορείτε να ελέγξετε εάν είναι ενεργοποιημένη η λειτουργία πολλαπλών διεργασιών</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -322,6 +328,7 @@ network-proxy-connection-settings =
 ## Home Section
 
 home-new-windows-tabs-header = Νέα παράθυρα και καρτέλες
+home-new-windows-tabs-description2 = Επιλέξτε τι θα βλέπετε όταν ανοίγετε την αρχική σας σελίδα, νέα παράθυρα και νέες καρτέλες.
 
 ## Home Section - Home Page Customization
 
@@ -335,7 +342,7 @@ home-restore-defaults =
 home-mode-choice-default =
     .label = Αρχική σελίδα Firefox (Προεπιλογή)
 home-mode-choice-custom =
-    .label = Προσαρμοσμένα URL…
+    .label = Προσαρμοσμένα URLs…
 home-mode-choice-blank =
     .label = Κενή σελίδα
 home-homepage-custom-url =
@@ -354,9 +361,6 @@ use-current-pages =
 choose-bookmark =
     .label = Χρήση σελιδοδείκτη…
     .accesskey = σ
-restore-default =
-    .label = Επαναφορά προεπιλογής
-    .accesskey = ρ
 
 ## Search Section
 
@@ -512,6 +516,9 @@ privacy-header = Απόρρητο προγράμματος περιήγησης
 ## Privacy Section - Forms
 
 forms-header = Φόρμες & κωδικοί πρόσβασης
+forms-ask-to-save-logins =
+    .label = Ερώτηση για αποθήκευση συνδέσεων και κωδικών πρόσβασης για ιστοσελίδες
+    .accesskey = β
 forms-exceptions =
     .label = Εξαιρέσεις…
     .accesskey = ξ
@@ -553,6 +560,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Διατήρηση του ιστορικού περιήγησης και λήψεων
     .accesskey = τ
+history-remember-browser-option =
+    .label = Διατήρηση ιστορικού περιήγησης και λήψεων
+    .accesskey = τ
 history-remember-search-option =
     .label = Διατήρηση ιστορικού αναζήτησης και φορμών
     .accesskey = φ
@@ -569,15 +579,52 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cookies και δεδομένα ιστοσελίδων
+sitedata-total-size-calculating = Υπολογισμός μεγέθους δεδομένων ιστοσελίδας και προσωρινής μνήμης...
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Τα αποθηκευμένα cookies, δεδομένα ιστοσελίδων και η προσωρινή μνήμη, αυτή τη στιγμή, καταλαμβάνουν { $value } { $unit } χώρου στο δίσκο.
 sitedata-learn-more = Μάθετε περισσότερα
+sitedata-accept-cookies-option =
+    .label = Αποδοχή cookies και δεδομένων ιστοσελίδων από ιστοσελίδες (συνίσταται)
+    .accesskey = Α
+sitedata-block-cookies-option =
+    .label = Αποκλεισμός cookies και δεδομένων ιστοσελίδων (πιθανή δυσλειτουργία ιστοσελίδων)
+    .accesskey = Α
 sitedata-keep-until = Διατήρηση μέχρι
     .accesskey = μ
+sitedata-keep-until-expire =
+    .label = να λήξουν
+sitedata-keep-until-closed =
+    .label = να κλείσει το { -brand-short-name }
+sitedata-accept-third-party-desc = Αποδοχή cookies και δεδομένα ιστοσελίδων τρίτων
+    .accesskey = ν
 sitedata-accept-third-party-always-option =
     .label = Πάντα
 sitedata-accept-third-party-visited-option =
     .label = Από επισκέψεις
 sitedata-accept-third-party-never-option =
     .label = Ποτέ
+sitedata-allow-cookies-option =
+    .label = Αποδοχή cookies και δεδομένων ιστοσελίδων
+    .accesskey = Α
+sitedata-disallow-cookies-option =
+    .label = Φραγή cookies και δεδομένων ιστοσελίδων
+    .accesskey = Φ
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Αποκλεισμένος τύπος
+    .accesskey = τ
+sitedata-block-trackers-option-recommended =
+    .label = Ιχνηλάτες τρίτων (προτείνεται)
+sitedata-block-trackers-option =
+    .label = Ιχνηλάτες τρίτων
+sitedata-block-unvisited-option =
+    .label = Cookies από ιστοσελίδες που δεν έχετε επισκεφθεί
+sitedata-block-all-third-parties-option =
+    .label = Όλα τα cookies τρίτων
+sitedata-block-always-option =
+    .label = Όλα τα cookies (πιθανή δυσλειτουργία ιστοσελίδων)
 sitedata-clear =
     .label = Εκκαθάριση δεδομένων...
     .accesskey = κ
@@ -603,9 +650,49 @@ addressbar-locbar-openpage-option =
     .accesskey = Ο
 addressbar-suggestions-settings = Αλλαγή προτιμήσεων για τις προτάσεις μηχανών αναζήτησης
 
+## Privacy Section - Content Blocking
+
+content-blocking-header = Φραγή περιεχομένου
+content-blocking-desc = Αποκλείστε περιεχόμενο από τρίτους, όπως διαφημίσεις ή κώδικα, που μπορεί να επιβραδύνει την περιήγησή σας και να καταγράψει τη δραστηριότητα σας στο διαδίκτυο. Προσαρμόστε τις ρυθμίσεις σας για την καλύτερη ισορροπία προστασίας και απόδοσης.
+content-blocking-learn-more = Μάθετε περισσότερα
+content-blocking-restore-defaults =
+    .label = Επαναφορά προεπιλογών
+    .accesskey = Ε
+content-blocking-toggle-on =
+    .tooltiptext = Απενεργοποίηση φραγής περιεχομένου
+content-blocking-toggle-off =
+    .tooltiptext = Ενεργοποίηση φραγής περιεχομένου
+content-blocking-toggle-label-on = ΕΝΕΡΓΗ
+    .accesskey = Ε
+content-blocking-toggle-label-off = ΑΝΕΝΕΡΓΗ
+    .accesskey = Α
+content-blocking-category-label = Επιλέξτε τι θα αποκλείεται
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Αργά στοιχεία καταγραφής
+    .accesskey = Α
+content-blocking-fastblock-description = Αποκλείει περιεχόμενο τρίτων που χρειάζεται πάνω από 5 δευτερόλεπτα για φόρτωση.
+content-blocking-fastblock-option-enabled =
+    .label = Πάντα φραγή
+content-blocking-fastblock-option-disabled =
+    .label = Ποτέ φραγή
+content-blocking-tracking-protection-label = Ιχνηλάτες
+    .accesskey = Ι
+content-blocking-tracking-protection-description = Αποκλείει όλους τους γνωστούς ιχνηλάτες (Σημείωση: ενδέχεται να εμποδιστεί η φόρτωση ορισμένων σελίδων).
+content-blocking-tracking-protection-option-enabled =
+    .label = Πάντα φραγή
+content-blocking-tracking-protection-option-pbm =
+    .label = Φραγή μόνο σε ιδιωτικά παράθυρα
+content-blocking-tracking-protection-option-disabled =
+    .label = Ποτέ φραγή
+content-blocking-tracking-protection-change-blocklist = Αλλαγή λίστας αποκλεισμού…
+
 ## Privacy Section - Tracking
 
-tracking-header = Προστασία από παρακολούθηση
+tracking-header = Προστασία από καταγραφή
+tracking-desc = Η προστασία από καταγραφή εμποδίζει τους διαδικτυακούς ιχνηλάτες που συλλέγουν τα δεδομένα περιήγησής σας σε πολλές ιστοσελίδες. <a data-l10n-name="learn-more">Μάθετε περισσότερα σχετικά με την προστασία από καταγραφή και το απόρρητό σας</a>
+tracking-mode-label = Χρήση της προστασίας από καταγραφή για αποκλεισμό γνωστών ιχνηλατών
 tracking-mode-always =
     .label = Πάντα
     .accesskey = α
@@ -617,7 +704,7 @@ tracking-mode-never =
     .accesskey = π
 # This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
 # This currently happens on the release and beta channel.
-tracking-pbm-label = Χρήση της προστασίας από παρακολούθηση στην ιδιωτική περιήγηση για φραγή γνωστών ιχνηλατών
+tracking-pbm-label = Χρήση της προστασίας από καταγραφή στην ιδιωτική περιήγηση για φραγή γνωστών ιχνηλατών
     .accesskey = δ
 tracking-exceptions =
     .label = Εξαιρέσεις…
@@ -646,6 +733,23 @@ permissions-notification-settings =
     .label = Ρυθμίσεις…
     .accesskey = θ
 permissions-notification-link = Μάθετε περισσότερα
+permissions-notification-pause =
+    .label = Παύση ειδοποιήσεων μέχρι να επανεκκινηθεί το { -brand-short-name }
+    .accesskey = ε
+permissions-block-autoplay-media =
+    .label = Αποκλεισμός ιστοσελίδων με αυτόματη αναπαραγωγή πολυμέσων ήχου
+    .accesskey = Α
+permissions-block-autoplay-media-menu = Για ιστοσελίδες με αυτόματη αναπαραγωγή ήχου
+permissions-block-autoplay-media-exceptions =
+    .label = Εξαιρέσεις…
+    .accesskey = Ε
+autoplay-option-ask =
+    .label = Πάντα ερώτηση
+autoplay-option-allow =
+    .label = Αποδοχή αυτόματης αναπαραγωγής
+autoplay-option-dont =
+    .label = Χωρίς αυτόματη αναπαραγωγή
+permissions-autoplay-link = Μάθετε περισσότερα
 permissions-block-popups =
     .label = Φραγή αναδυόμενων παραθύρων
     .accesskey = Φ
@@ -672,10 +776,19 @@ collection-health-report =
     .label = Να επιτρέπεται στο { -brand-short-name } η αποστολή τεχνικών και διαδραστικών δεδομένων στη { -vendor-short-name }
     .accesskey = δ
 collection-health-report-link = Μάθετε περισσότερα
+collection-studies =
+    .label = Να επιτρέπεται στο { -brand-short-name } να εγκαθιστά και να εκτελεί μελέτες
+collection-studies-link = Προβολή μελετών του { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Η αναφορά δεδομένων είναι ανενεργή για αυτή την έκδοση
+collection-browser-errors =
+    .label = Να επιτρέπεται στο { -brand-short-name } η αποστολή αναφορών σφαλμάτων (καθώς και των μηνυμάτων σφαλμάτων) στη { -vendor-short-name }
+    .accesskey = π
 collection-browser-errors-link = Μάθετε περισσότερα
+collection-backlogged-crash-reports =
+    .label = Να επιτρέπεται στο { -brand-short-name } η αποστολή αναφορών σφαλμάτων που εκκρεμούν εκ μέρους σας
+    .accesskey = σ
 collection-backlogged-crash-reports-link = Μάθετε περισσότερα
 
 ## Privacy Section - Security

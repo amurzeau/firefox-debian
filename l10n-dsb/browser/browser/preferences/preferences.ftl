@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -137,20 +129,11 @@ is-not-default = { -brand-short-name } njejo waš standardny wobglědowak
 set-as-my-default-browser =
     .label = K standardoju cyniś…
     .accesskey = s
-startup-page = Gaž { -brand-short-name } se startujo
-    .accesskey = G
-startup-user-homepage =
-    .label = Waš startowy bok pokazaś
-startup-blank-page =
-    .label = Prozny bok pokazaś
-startup-prev-session =
-    .label = Waše wokna a rejtarki wót slědnego raza pokazaś
 startup-restore-previous-session =
     .label = Pjerwjejšne pósejźenje wótnowiś
     .accesskey = t
 disable-extension =
     .label = Rozšyrjenje znjemóžniś
-home-page-header = Startowy bok
 tabs-group-header = Rejtarki
 ctrl-tab-recently-used-order =
     .label = Strg+Tab pśejźo rejtarki pó tuchylu póstajonem pórěźe
@@ -225,6 +208,9 @@ choose-language-description = Wubjeŕśo swóju preferěrowanu rěc za zwobraznj
 choose-button =
     .label = Wubraś…
     .accesskey = u
+choose-browser-language-description = Wubjeŕśo rěcy, kótarež se wužywaju, aby menije, powěsći a powěźeńki z { -brand-short-name } pokazali.
+confirm-browser-language-change-description = Startujśo { -brand-short-name } znowego, aby toś te změny nałožył
+confirm-browser-language-change-button = Nałožyś a znowego startowaś
 translate-web-pages =
     .label = Webwopśimjeśe pśełožowaś
     .accesskey = W
@@ -276,7 +262,6 @@ play-drm-content =
 play-drm-content-learn-more = Dalšne informacije
 update-application-title = Aktualizacije { -brand-short-name }
 update-application-description = Źaržćo { -brand-short-name } aktualny, za nejlěpše wugbaśe, stabilnosć a wěstotu.
-update-application-info = Wersija { $version } <a>Nowe funkcije a změny</a>
 update-application-version = Wersija { $version } <a data-l10n-name="learn-more">Nowe funkcije a změny</a>
 update-history =
     .label = Aktualizacisku historiju pokazaś…
@@ -312,7 +297,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Limit wopśimjeśowego procesa
     .accesskey = L
 performance-limit-content-process-enabled-desc = Wěcej wopśimjeśowych procesow móžo wugbaśe pólěpšowaś, gaž se někotare rejtarki wužywaju, buźo pak teke wěcej składa pśetrjebowaś.
-performance-limit-content-process-disabled-desc = Licba wopśimjeśowych procesow dajo se jano z wěcejprocesowym { -brand-short-name } změniś. <a>Zgóńśo, kak móžośo kontrolěrowaś, lěc wěcejprocesowa funkcija jo zmóžnjona</a>
 performance-limit-content-process-blocked-desc = Licba wopśimjeśowych procesow dajo se jano z wěcejprocesowym { -brand-short-name } změniś. <a data-l10n-name="learn-more">Zgóńśo, kak móžośo kontrolěrowaś, lěc wěcejprocesowa funkcija jo zmóžnjona</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -383,9 +367,6 @@ use-current-pages =
 choose-bookmark =
     .label = Cytańske znamje wužywaś…
     .accesskey = C
-restore-default =
-    .label = Standard wótnowiś
-    .accesskey = t
 
 ## Search Section
 
@@ -630,6 +611,26 @@ sitedata-accept-third-party-visited-option =
     .label = Jano wót woglědanych tśeśich
 sitedata-accept-third-party-never-option =
     .label = Nigda
+sitedata-allow-cookies-option =
+    .label = Cookieje a sedłowe daty akceptěrowaś
+    .accesskey = C
+sitedata-disallow-cookies-option =
+    .label = Cookieje a sedłowe daty blokěrowaś
+    .accesskey = b
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Blokěrowany typ
+    .accesskey = t
+sitedata-block-trackers-option-recommended =
+    .label = Pśeslědowaki tśeśich (dopórucone)
+sitedata-block-trackers-option =
+    .label = Pśeslědowaki tśeśich
+sitedata-block-unvisited-option =
+    .label = Cookieje z njewoglědanych websedłow
+sitedata-block-all-third-parties-option =
+    .label = Wšykne cookieje tśeśich
+sitedata-block-always-option =
+    .label = Wšykne cookieje (móžo zawinowaś, až websedła njefunkcioněruju)
 sitedata-clear =
     .label = Daty lašowaś…
     .accesskey = l
@@ -654,6 +655,44 @@ addressbar-locbar-openpage-option =
     .label = Wócynjone rejtarki
     .accesskey = r
 addressbar-suggestions-settings = Nastajenja za naraźenja pytnice změniś
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = Blokěrowanje wopśimjeśa
+content-blocking-desc = Blokěrujśo wopśimjeśe tśeśich póbitowarjow ako wabjenje abo kod, kótarež móžo wašo pśeglědowanje spómałšyś a was pśez web pśeslědowaś. Pśiměŕśo swóje nastajenja za nejlěpšu balansu mjazy šćitom a wugbaśim.
+content-blocking-learn-more = Dalšne informacije
+content-blocking-restore-defaults =
+    .label = Standard wótnowiś
+    .accesskey = S
+content-blocking-toggle-on =
+    .tooltiptext = Blokěrowanje wopśimjeśa wušaltowaś
+content-blocking-toggle-off =
+    .tooltiptext = Blokěrowanje wopśimjeśa zašaltowaś
+content-blocking-toggle-label-on = ZAŠALTOWANE
+    .accesskey = Z
+content-blocking-toggle-label-off = WUŠALTOWANE
+    .accesskey = U
+content-blocking-category-label = Wubjeŕśo, což ma se blokěrowaś
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Pómałe slědujuce elementy
+    .accesskey = P
+content-blocking-fastblock-description = Blokěrujo wopśimjeśe tśeśich póbitowarjow, kótaryž trjeba wěcej ako 5 sekundow, aby se zacytał.
+content-blocking-fastblock-option-enabled =
+    .label = Pśecej blokěrowaś
+content-blocking-fastblock-option-disabled =
+    .label = NIgda njeblokěrowaś
+content-blocking-tracking-protection-label = Pśeslědowaki
+    .accesskey = P
+content-blocking-tracking-protection-description = Blokěrujo wšykne znate pśeslědowaki (Glědajśo: móžo teke zacyitanjeju někotarych bokow zajźowaś)
+content-blocking-tracking-protection-option-enabled =
+    .label = Pśecej blokěrowaś
+content-blocking-tracking-protection-option-pbm =
+    .label = Jano w priwatnych woknach blokěrowaś
+content-blocking-tracking-protection-option-disabled =
+    .label = Nigda njeblokěrowaś
+content-blocking-tracking-protection-change-blocklist = Lisćinu blokěrowanjow změniś…
 
 ## Privacy Section - Tracking
 
@@ -706,9 +745,17 @@ permissions-notification-pause =
 permissions-block-autoplay-media =
     .label = Websedłam zakazaś, medije ze zukom wótgraś
     .accesskey = z
+permissions-block-autoplay-media-menu = Za websedła, kótarež zuk awtomatiski wótgrawaju
 permissions-block-autoplay-media-exceptions =
     .label = Wuwześa…
     .accesskey = u
+autoplay-option-ask =
+    .label = Pśecej se pšašaś
+autoplay-option-allow =
+    .label = Awtomatiske wótgrawanje dowóliś
+autoplay-option-dont =
+    .label = Awtomatiski njewótgraś
+permissions-autoplay-link = Dalšne informacije
 permissions-block-popups =
     .label = Wuskokujuce wokno blokěrowaś
     .accesskey = k
@@ -722,7 +769,7 @@ permissions-addon-exceptions =
     .label = Wuwześa…
     .accesskey = W
 permissions-a11y-privacy-checkbox =
-    .label = Słužbam pśistupnosći pśistup na waš wobglědowak zawoboraś
+    .label = Słužbam pśistupnosći pśistup k wašomu wobglědowakoju zawoboraś
     .accesskey = t
 permissions-a11y-privacy-link = Dalšne informacije
 

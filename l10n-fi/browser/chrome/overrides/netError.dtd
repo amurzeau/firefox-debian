@@ -8,7 +8,11 @@
 <!ENTITY loadError.label "Sivun lataamisvirhe">
 <!ENTITY retry.label "Yritä uudestaan">
 <!ENTITY returnToPreviousPage.label "Palaa">
+<!ENTITY returnToPreviousPage1.label "Palaa (suositellaan)">
 <!ENTITY advanced.label "Yksityiskohdat">
+
+<!ENTITY continue2.label "Lisää…">
+<!ENTITY moreInformation.label "Lisätietoja">
 
 <!-- Specific error messages -->
 
@@ -144,10 +148,30 @@
 ">
 
 <!ENTITY certerror.longpagetitle1 "Yhteys ei ole suojattu">
-<!-- Localization note (certerror.introPara) - The text content of the span tag
+<!ENTITY certerror.longpagetitle2 "Varoitus: mahdollinen tietoturvariski">
+<!-- Localization note (certerror.introPara, certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "Sivuston <span class='hostname'/> omistaja on määrittänyt sivustonsa asetukset väärin. &brandShortName; ei muodostanut yhteyttä sivustoon suojellakseen tietojasi varkaudelta.">
+
+
+<!ENTITY certerror.expiredCert.secondPara "Ongelman syynä on todennäköisesti se, että tietokoneesi kello on väärässä ajassa, minkä takia &brandShortName; ei voi muodostaa suojattua yhteyttä.">
+
+<!ENTITY certerror.whatCanYouDoAboutItTitle "Mitä voit tehdä?">
+
+<!ENTITY certerror.unknownIssuer.whatCanYouDoAboutIt "
+<p>Ongelma johtuu todennäköisesti sivustosta, etkä voi korjata sitä itse.</p>
+<p>Jos olet yritysverkossa tai käytät virustorjuntaohjelmaa, voit ottaa yhteyttä tukeen. Voit myös ilmoittaa ongelmasta sivuston ylläpitäjälle.</p>
+">
+
+<!ENTITY certerror.expiredCert.whatCanYouDoAboutIt2 "
+<p>Tietokoneesi mukaan nyt on <span id='wrongSystemTime_systemDate2'/>. Tarkista asetuksista, että tietokoneesi päivämäärä, kellonaika ja aikavyöhyke ovat oikeat, ja lataa sitten <span class='hostname'/> uudestaan.</p>
+<p>Jos kello on jo oikeassa ajassa,  vika on luultavasti sivustossa etkä voi korjata ongelmaa itse. Voit ilmoittaa ongelmasta sivuston ylläpitäjälle.</p>
+">
+
+<!ENTITY certerror.badCertDomain.whatCanYouDoAboutIt "
+<p>Ongelma johtuu todennäköisesti sivustosta, etkä voi korjata sitä itse. Voit ilmoittaa ongelmasta sivuston ylläpitäjälle.</p>
+">
 
 <!ENTITY sharedLongDesc "
 <ul>
@@ -169,6 +193,8 @@ was trying to connect. -->
 
 <!ENTITY securityOverride.exceptionButtonLabel "Lisää poikkeus…">
 
+<!ENTITY securityOverride.exceptionButton1Label "Ota riski ja jatka">
+
 <!ENTITY errorReporting.automatic2 "Ilmoita tällaisista virheistä auttaaksesi Mozillaa tunnistamaan ja estämään haitallisia sivustoja">
 <!ENTITY errorReporting.learnMore "Lue lisää…">
 
@@ -183,14 +209,16 @@ was trying to connect. -->
 <!-- LOCALIZATION NOTE (certerror.wrongSystemTime2,
                         certerror.wrongSystemTimeWithoutReference) - The <span id='..' />
      tags will be injected with actual values, please leave them unchanged. -->
-<!ENTITY certerror.wrongSystemTime2 "<p> &brandShortName; ei yhdistänyt osoitteeseen <span id='wrongSystemTime_URL'/>, koska tietokoneesi kello näyttää olevan väärässä ajassa ja koska tämä estää suojatun yhteyden muodostamisen.</p> <p>Tietokoneesi mukaan kello on <span id='wrongSystemTime_systemDate'/>, kun sen pitäisi olla <span id='wrongSystemTime_actualDate'/>. Voit korjata ongelman asettamalla kellon oikeaan aikaan tietokoneen aika-asetuksista.</p>">
-<!ENTITY certerror.wrongSystemTimeWithoutReference "<p> &brandShortName; ei yhdistänyt osoitteeseen <span id='wrongSystemTimeWithoutReference_URL'/>, koska tietokoneesi kello näyttää olevan väärässä ajassa ja koska tämä estää suojatun yhteyden muodostamisen.</p> <p>Tietokoneesi mukaan kello on <span id='wrongSystemTimeWithoutReference_systemDate'/>. Voit korjata ongelman asettamalla kellon oikeaan aikaan tietokoneen aika-asetuksista.</p>">
+<!ENTITY certerror.wrongSystemTime2 "<p> &brandShortName; ei yhdistänyt osoitteeseen <span id='wrongSystemTime_URL'/>, koska tietokoneesi kello näyttää olevan väärässä ajassa ja koska tämä estää suojatun yhteyden muodostamisen.</p> <p>Tietokoneesi mukaan nyt on <span id='wrongSystemTime_systemDate'/>, kun pitäisi olla <span id='wrongSystemTime_actualDate'/>. Voit korjata ongelman asettamalla kellon oikeaan aikaan tietokoneen aika-asetuksista.</p>">
+<!ENTITY certerror.wrongSystemTimeWithoutReference "<p> &brandShortName; ei yhdistänyt osoitteeseen <span id='wrongSystemTimeWithoutReference_URL'/>, koska tietokoneesi kello näyttää olevan väärässä ajassa ja koska tämä estää suojatun yhteyden muodostamisen.</p> <p>Tietokoneesi mukaan nyt on <span id='wrongSystemTimeWithoutReference_systemDate'/>. Voit korjata ongelman asettamalla kellon oikeaan aikaan tietokoneen aika-asetuksista.</p>">
 
 <!ENTITY certerror.pagetitle1  "Suojaamaton yhteys">
+<!ENTITY certerror.pagetitle2  "Varoitus: mahdollinen tietoturvariski">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Tämä sivusto määrää
 käyttäen HTTP Strict Transport Security (HSTS) -ominaisuutta, että
 &brandShortName; saa muodostaa siihen vain suojatun yhteyden. Tämän takia
 tälle varmenteelle ei voi luoda poikkeusta.">
+<!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "Sivusto <span class='hostname'></span> noudattaa tietoturvakäytäntöä nimeltään HTTP Strict Transport Security (HSTS), mikä tarkoittaa, että &brandShortName; voi muodostaa siihen vain suojatun yhteyden. Tälle sivustolle siirtymistä varten ei voi lisätä poikkeusta.">
 <!ENTITY certerror.copyToClipboard.label "Kopioi teksti leikepöydälle">
 
 <!ENTITY inadequateSecurityError.title "Yhteys ei ole suojattu">
@@ -199,6 +227,9 @@ tälle varmenteelle ei voi luoda poikkeusta.">
 <!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> käyttää suojaustekniikkaa, joka on vanhentunut ja haavoittuvainen hyökkäyksille. Hyökkääjä voisi helposti lukea tietoja, joiden luulit olevan suojattuja. Sivuston ylläpitäjän täytyy korjata tämä ongelma ennen kuin voit käydä sivustolla.</p><p>Virhekoodi: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
 
 <!ENTITY blockedByPolicy.title "Estetty sivu">
+
+<!ENTITY clockSkewError.title "Tietokoneen kello on väärässä ajassa">
+<!ENTITY clockSkewError.longDesc "Tietokoneesi mukaan nyt on <span id='wrongSystemTime_systemDate1'/>, minkä takia &brandShortName; ei voi muodostaa suojattua yhteyttä. Jotta voit siirtyä sivustolle <span class='hostname'></span>, avaa järjestelmäasetukset ja päivitä sieltä tietokoneen kello nykyiseen päivään, aikaan ja aikavyöhykkeeseen. Lopuksi lataa <span class='hostname'> uudestaan</span>.">
 
 <!ENTITY prefReset.longDesc "Vaikuttaa siltä, että verkon turvallisuusasetukset aiheuttavat tämän. Haluatko palauttaa oletusasetukset?">
 <!ENTITY prefReset.label "Palauta oletusasetukset">

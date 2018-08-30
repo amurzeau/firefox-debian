@@ -83,6 +83,17 @@ permissions-exceptions-addons-window =
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = કઈ વેબ સાઈટો એડ-ઓન સ્થાપિત કરવા માટે માન્ય છે તે તમે સ્પષ્ટ કરી શકો છો. તમે જે સાઈટને પરવાનગી આપવા માંગો છો તેનું ચોક્કસ સરનામું લખો અને પછી પરવાનગી ક્લિક કરો.
 
+## Exceptions - Autoplay Media
+
+permissions-exceptions-autoplay-media-window =
+    .title = માન્ય વેબસાઈટ્સ - ઑટોપ્લે
+    .style = { permissions-window.style }
+permissions-exceptions-autoplay-media-desc = તમે નિર્દિષ્ટ કરી શકો છો કે કઈ વેબસાઇટ્સને મીડિયા તત્વોને આપમેળે ચલાવવાની મંજૂરી છે. તમે જે સાઇટને પરવાનગી આપવા માંગો છો તેનું ચોક્કસ સરનામું લખો અને પછી પરવાનગી આપો પર ક્લિક કરો
+permissions-exceptions-autoplay-media-window2 =
+    .title = અપવાદો - સ્વચાલિત
+    .style = { permissions-window.style }
+permissions-exceptions-autoplay-media-desc2 = તમે ઑડિઓ ચલાવતા અવાજ સાથે મીડિયાને હંમેશા અથવા ક્યારેય મંજૂરી આપતા નથી તે નિર્દિષ્ટ કરી શકો છો. તમે સંચાલિત કરવા માંગો છો તે સાઇટનું સરનામું લખો અને પછી અવરોધિત કરો અથવા પરવાનગી આપો પર ક્લિક કરો.
+
 ## Site Permissions - Notifications
 
 permissions-site-notification-window =

@@ -38,6 +38,21 @@ left instead of right. -->
 <!ENTITY  closeSelectedTabs.label            "Zavrieť označené karty">
 <!ENTITY  closeSelectedTabs.accesskey        "Z">
 
+<!ENTITY  pinSelectedTabs.label              "Pripnúť karty">
+<!-- Pin Tab and Pin Selected Tabs have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  pinSelectedTabs.accesskey          "P">
+<!ENTITY  unpinSelectedTabs.label            "Zrušiť pripnutie kariet">
+<!-- Unpin Tab and Unpin Selected Tabs have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  unpinSelectedTabs.accesskey        "r">
+<!-- Reload Tab and Reload Selected Tabs have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  reloadSelectedTabs.label           "Obnoviť vybrané karty">
+<!ENTITY  reloadSelectedTabs.accesskey       "r">
+<!ENTITY  bookmarkSelectedTabs.label         "Pridať karty medzi záložky…">
+<!ENTITY  bookmarkSelectedTabs.accesskey     "k">
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -65,7 +80,6 @@ can reach it easily. -->
 <!ENTITY  undoCloseTab.accesskey             "a">
 <!ENTITY  closeTab.label                     "Zavrieť kartu">
 <!ENTITY  closeTab.accesskey                 "Z">
-
 <!ENTITY  hiddenTabs.label                   "Skryté karty">
 
 <!ENTITY  listAllTabs.label      "Zoznam všetkých kariet">
@@ -124,9 +138,9 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 <!ENTITY mirrorTabCmd.accesskey "k">
 <!-- LOCALIZATION NOTE (enterFullScreenCmd.label, exitFullScreenCmd.label):
 These should match what Safari and other Apple applications use on OS X Lion. -->
-<!ENTITY enterFullScreenCmd.label "Prejsť do režimu Na celú obrazovku">
+<!ENTITY enterFullScreenCmd.label "Prejsť do režimu celej obrazovky">
 <!ENTITY enterFullScreenCmd.accesskey "c">
-<!ENTITY exitFullScreenCmd.label "Ukončiť režim Na celú obrazovku">
+<!ENTITY exitFullScreenCmd.label "Ukončiť režim celej obrazovky">
 <!ENTITY exitFullScreenCmd.accesskey "c">
 <!ENTITY fullScreenCmd.label "Na celú obrazovku">
 <!ENTITY fullScreenCmd.accesskey "c">
@@ -147,7 +161,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenClose.tooltip "Zavrieť">
 <!ENTITY fullScreenAutohide.label "Skryť panely s nástrojmi">
 <!ENTITY fullScreenAutohide.accesskey "k">
-<!ENTITY fullScreenExit.label "Ukončiť režim Na celú obrazovku">
+<!ENTITY fullScreenExit.label "Ukončiť režim celej obrazovky">
 <!ENTITY fullScreenExit.accesskey "U">
 
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
@@ -156,15 +170,15 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      Localizers can use one of them, or both, to better adapt this
      sentence to their language. -->
 <!ENTITY fullscreenWarning.beforeDomain.label "">
-<!ENTITY fullscreenWarning.afterDomain.label "je teraz v režime Na celú obrazovku">
-<!ENTITY fullscreenWarning.generic.label "Tento dokument je teraz v režime Na celú obrazovku">
+<!ENTITY fullscreenWarning.afterDomain.label "je teraz v režime celej obrazovky">
+<!ENTITY fullscreenWarning.generic.label "Tento dokument je teraz v režime celej obrazovky">
 
 <!-- LOCALIZATION NOTE (exitDOMFullscreen.button,
      exitDOMFullscreenMac.button): the "escape" button on PC keyboards
      is uppercase, while on Mac keyboards it is lowercase -->
-<!ENTITY exitDOMFullscreen.button "Ukončiť režim Na celú obrazovku (Esc)">
-<!ENTITY exitDOMFullscreenMac.button "Ukončiť režim Na celú obrazovku (esc)">
-<!ENTITY leaveDOMFullScreen.label "Ukončiť režim Na celú obrazovku">
+<!ENTITY exitDOMFullscreen.button "Ukončiť režim celej obrazovky (Esc)">
+<!ENTITY exitDOMFullscreenMac.button "Ukončiť režim celej obrazovky (esc)">
+<!ENTITY leaveDOMFullScreen.label "Ukončiť režim celej obrazovky">
 <!ENTITY leaveDOMFullScreen.accesskey "U">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
@@ -215,6 +229,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY urlbar.defaultNotificationAnchor.tooltip         "Otvorí panel správ">
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "Otvorí panel so žiadosťou o polohu">
+<!ENTITY urlbar.autoplayNotificationAnchor.tooltip        "Otvorí panel automatického prehrávania">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "Otvorí panel správ inštalácie doplnkov">
 <!ENTITY urlbar.canvasNotificationAnchor.tooltip          "Správa povolení prístupu k informáciám canvasu">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "Otvorí panel správ offline úložiska">
@@ -223,7 +238,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "Zmení, či môžete zo stránky prijímať upozornenia">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Uloží údaje do trvalého úložiska">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Prehliadač je ovládaný na diaľku">
-
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Otvorí kartu webovej autentifikácie">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Spravovať zdieľanie webkamery a/alebo mikrofónu so stránkou">
@@ -242,7 +256,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.geolocationBlocked.tooltip       "Tejto stránke ste zakázali zisťovať vašu polohu.">
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Tejto stránke ste zakázali zobrazovať upozornenia.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Tejto stránke ste zakázali ukladanie údajov do trvalého úložiska.">
-<!ENTITY urlbar.popupBlocked.tooltip             "Pre túto stránku ste zablokovali vyskakovacie okná.">
+<!ENTITY urlbar.popupBlocked.tooltip             "Tejto stránke ste zablokovali zobrazovanie vyskakovacích okien.">
+<!ENTITY urlbar.autoplayMediaBlocked.tooltip     "Tejto stránke ste zablokovali automatické prehrávania médií so zvukom.">
 <!ENTITY urlbar.canvasBlocked.tooltip            "Tejto stránke ste zakázali prístup k údajom canvasu.">
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "Tejto stránke ste zablokovali možnosť používať zásuvný modul Adobe Flash.">
 <!ENTITY urlbar.midiBlocked.tooltip              "Tejto stránke ste zakázali prístup k MIDI.">
@@ -301,6 +316,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY webDeveloperMenu.label       "Webový vývojár">
 <!ENTITY webDeveloperMenu.accesskey   "W">
 
+<!ENTITY devtoolsRecordExecution.label "Zaznamenať vykonanie">
+<!ENTITY devtoolsSaveRecording.label "Uložiť záznam">
+<!ENTITY devtoolsReplayExecution.label "Prehrať záznam">
+
 <!ENTITY inspectContextMenu.label     "Preskúmať prvok">
 <!ENTITY inspectContextMenu.accesskey "m">
 
@@ -310,6 +329,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fileMenu.accesskey       "S">
 <!ENTITY newUserContext.label             "Nová kontajnerová karta">
 <!ENTITY newUserContext.accesskey         "k">
+<!ENTITY manageUserContext.label          "Správa kontajnerov">
+<!ENTITY manageUserContext.accesskey      "o">
 <!ENTITY newNavigatorCmd.label        "Nové okno">
 <!ENTITY newNavigatorCmd.key        "N">
 <!ENTITY newNavigatorCmd.accesskey      "o">
@@ -412,8 +433,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (customizeMenu.addToOverflowMenu.label,
      customizeMenu.pinToOverflowMenu.label, customizeMenu.unpinFromOverflowMenu.label)
      The overflow menu is the menu that appears if you click the chevron (>> button)
-     in the location bar. These labels are only used in Photon, where you can put
-     items into this menu permanently (pinned). -->
+     in the location bar. -->
 <!ENTITY customizeMenu.addToOverflowMenu.label "Pridať do rozširujúcej ponuky">
 <!ENTITY customizeMenu.addToOverflowMenu.accesskey "k">
 <!ENTITY customizeMenu.moveToToolbar.label "Presunúť na panel nástrojov">
@@ -425,6 +445,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      keys.  -->
 <!ENTITY customizeMenu.moveToPanel.label "Presunúť do ponuky">
 <!ENTITY customizeMenu.moveToPanel.accesskey "u">
+<!-- LOCALIZATION NOTE (customizeMenu.pinToOverflowMenu.accesskey)
+     can appear on the same context menu as menubarCmd and personalbarCmd,
+     so they should have different access keys.  -->
 <!ENTITY customizeMenu.pinToOverflowMenu.label "Pripnúť do rozširujúcej ponuky">
 <!ENTITY customizeMenu.pinToOverflowMenu.accesskey "P">
 <!ENTITY customizeMenu.unpinFromOverflowMenu.label "Zrušiť pripnutie v rozširujúcej ponuke">
@@ -612,6 +635,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hidePluginCmd.label          "Skryť tento zásuvný modul">
 <!ENTITY hidePluginCmd.accesskey      "m">
 <!ENTITY copyLinkCmd.label            "Kopírovať adresu odkazu">
+<!-- LOCALIZATION NOTE (copyLinkCmd.accesskey): The access keys for "Copy Link
+Location" and "Copy Email Address" should be the same if possible; the two
+context menu items are mutually exclusive. -->
 <!ENTITY copyLinkCmd.accesskey        "a">
 <!ENTITY copyImageCmd.label           "Kopírovať adresu obrázka">
 <!ENTITY copyImageCmd.accesskey       "e">
@@ -622,6 +648,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY copyAudioURLCmd.label        "Kopírovať adresu zvuku">
 <!ENTITY copyAudioURLCmd.accesskey    "e">
 <!ENTITY copyEmailCmd.label           "Kopírovať e-mailovú adresu">
+<!-- LOCALIZATION NOTE (copyEmailCmd.accesskey): The access keys for "Copy Link
+Location" and "Copy Email Address" should be the same if possible; the two
+context menu items are mutually exclusive. -->
 <!ENTITY copyEmailCmd.accesskey       "e">
 <!ENTITY thisFrameMenu.label              "Tento rámec">
 <!ENTITY thisFrameMenu.accesskey          "T">
@@ -757,8 +786,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY spellAddDictionaries.label "Pridať slovníky…">
 <!ENTITY spellAddDictionaries.accesskey "P">
 
+<!-- LOCALIZATION NOTE (editBookmark.panel.width): width of the bookmark panel.
+     Should be large enough to fully display the Done and Cancel/
+     Remove Bookmark buttons. -->
+<!ENTITY editBookmark.panel.width                    "23em">
 <!ENTITY editBookmark.done.label                     "Hotovo">
 <!ENTITY editBookmark.removeBookmark.accessKey       "O">
+
+<!ENTITY editBookmark.showForNewBookmarks.label       "Pri ukladaní zobrazovať editor">
+<!ENTITY editBookmark.showForNewBookmarks.accesskey   "u">
 
 <!-- LOCALIZATION NOTE (identity.securityView.label)
      This is the header of the security subview in the Site Identity panel. -->
@@ -806,6 +842,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissions "Povolenia">
 <!ENTITY identity.permissionsEmpty "Tejto stránke ste neurčili žiadne špeciálne povolenia.">
 <!ENTITY identity.permissionsReloadHint "Pre vykonanie zmien budete možno musieť stránku obnoviť.">
+
+<!ENTITY identity.permissionsPreferences.tooltip "Otvoriť nastavenia povolení">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
@@ -905,11 +943,46 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.audioCapture.label "Zvuk z karty bude zdieľaný.">
 <!ENTITY getUserMedia.allWindowsShared.message "Všetky okná viditeľné na vašej obrazovke budú zdieľané.">
 
+<!ENTITY trackingProtection.on "Ochrana pred sledovaním je zapnutá">
+<!ENTITY trackingProtection.off "Ochrana pred sledovaním je vypnutá">
+
+<!ENTITY contentBlocking.title "Blokovanie obsahu">
+<!ENTITY contentBlocking.detected "Na tejto stránke bol nájdený blokovateľný obsah.">
+<!ENTITY contentBlocking.notDetected "Na tejto stránke nebol nájdený blokovateľný obsah.">
+<!ENTITY contentBlocking.disabled.label "Vypnuté">
+<!ENTITY contentBlocking.disabled.tooltip "Blokovanie obsahu je vypnuté.">
+<!ENTITY contentBlocking.exception.tooltip "Na tejto stránke ste vypli blokovanie obsahu.">
+
+<!ENTITY contentBlocking.fastBlock.label "Pomalé sledovacie prvky">
+<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.blocked.label):
+     This label signals that this type of content blocking is turned
+     ON and is successfully blocking malicious/slow content, so this is
+     a positive thing. It forms the end of the (imaginary) sentence
+     "Slow-Loading Trackers [are] Blocked"-->
+<!ENTITY contentBlocking.fastBlock.blocked.label "Blokované">
+<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.add.label):
+     This is displayed as a link to preferences, where the user can add
+     this specific type of content blocking. When this text is shown
+     the type of content blocking is currently not enabled. -->
+<!ENTITY contentBlocking.fastBlock.add.label "Blokovať…">
+
+<!ENTITY contentBlocking.trackingProtection.label "Sledovacie prvky">
+<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
+     This label signals that this type of content blocking is turned
+     ON and is successfully blocking malicious/slow content, so this is
+     a positive thing. It forms the end of the (imaginary) sentence
+     "Trackers [are] Blocked"-->
+<!ENTITY contentBlocking.trackingProtection.blocked.label "Blokované">
+<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.add.label):
+     This is displayed as a link to preferences, where the user can add
+     this specific type of content blocking. When this text is shown
+     the type of content blocking is currently not enabled. -->
+<!ENTITY contentBlocking.trackingProtection.add.label "Blokovať…">
+
 <!ENTITY trackingProtection.title "Ochrana pred sledovaním">
-<!ENTITY trackingProtection.tooltip "Otvorí nastavenia ochrany pred sledovaním">
 <!ENTITY trackingProtection.detectedBlocked3 "&brandShortName; blokuje časti stránky, ktoré môžu sledovať vaše prehliadanie.">
-<!ENTITY trackingProtection.detectedNotBlocked3 "Na tejto stránke boli nájdené prvky sledovania. Ochrana pred sledovaním je však pre túto stránku vypnutá.">
-<!ENTITY trackingProtection.notDetected3 "Na tejto stránke neboli zistené žiadne prvky sledovania.">
+<!ENTITY trackingProtection.detectedNotBlocked3 "Na tejto stránke boli nájdené sledovacie prvky. Ochrana pred sledovaním je však pre túto stránku vypnutá.">
+<!ENTITY trackingProtection.notDetected3 "Na tejto stránke neboli zistené žiadne sledovacie prvky.">
 <!-- LOCALIZATION NOTE (trackingProtection.unblock.label, trackingProtection.unblock.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in NON-private browsing mode. -->
@@ -922,6 +995,36 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY trackingProtection.unblockPrivate.accesskey "c">
 <!ENTITY trackingProtection.block2.label "Zapnúť ochranu">
 <!ENTITY trackingProtection.block2.accesskey "Z">
+
+<!ENTITY trackingProtection.tooltip "Otvorí nastavenia ochrany pred sledovaním">
+<!ENTITY trackingProtection.detectedBlocked4 "&brandShortName; blokuje časti stránky, ktoré môžu sledovať vaše prehliadanie.">
+<!ENTITY trackingProtection.detectedNotBlocked5 "Aplikácia &brandShortName; objavila prvky, ktoré môžu sledovať vaše prehliadanie.">
+<!ENTITY trackingProtection.detectedException "Aplikácia &brandShortName; objavila prvky, ktoré môžu sledovať vaše prehliadanie. Ochranu pred sledovaním ste pre túto stránku ale vypli.">
+<!ENTITY trackingProtection.notDetected5 "Na tejto stránke neboli zistené žiadne sledovacie prvky.">
+<!ENTITY trackingProtection.notDetectedException "Na tejto stránke neboli zistené žiadne sledovacie prvky. Ochranu pred sledovaním ste na tejto stránke vypli.">
+
+<!ENTITY trackingProtection.reloadRequired2 "Ochrana pred sledovaním bola zapnutá. Pre zablokovanie všetkých sledovacích prvkov obnovte túto stránku.">
+
+<!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in NON-private browsing mode. -->
+<!ENTITY trackingProtection.unblock3.label "Vypnúť pre túto stránku">
+<!ENTITY trackingProtection.unblock3.accesskey "V">
+<!ENTITY trackingProtection.unblock4.label "Vypnúť blokovanie pre túto stránku">
+<!ENTITY trackingProtection.unblock4.accesskey "V">
+<!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in PRIVATE browsing mode. -->
+<!ENTITY trackingProtection.unblockPrivate3.label "Vypnúť pre túto reláciu">
+<!ENTITY trackingProtection.unblockPrivate3.accesskey "V">
+<!ENTITY trackingProtection.block4.label "Zapnúť pre túto stránku">
+<!ENTITY trackingProtection.block4.accesskey "Z">
+<!ENTITY trackingProtection.unblockPrivate4.label "Dočasne vypnúť blokovanie">
+<!ENTITY trackingProtection.unblockPrivate4.accesskey "D">
+<!ENTITY trackingProtection.block5.label "Zapnúť blokovanie pre túto stránku">
+<!ENTITY trackingProtection.block5.accesskey "Z">
+<!ENTITY trackingProtection.reload2.label "Obnoviť stránku">
+<!ENTITY trackingProtection.reload2.accesskey "b">
 
 <!ENTITY pluginNotification.showAll.label "Zobraziť všetko">
 <!ENTITY pluginNotification.showAll.accesskey "Z">
@@ -1024,6 +1127,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY sendToDevice.syncNotReady.label "Synchronizovanie zariadení…">
 
 <!ENTITY pageAction.shareUrl.label "Zdieľať">
+
+<!ENTITY pageAction.shareMore.label "Viac…">
 
 <!ENTITY libraryButton.tooltip "Zobrazí históriu, uložené záložky a ďalšie">
 

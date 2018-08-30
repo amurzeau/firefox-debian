@@ -8,7 +8,11 @@
 <!ENTITY loadError.label "Πρόβλημα φόρτωσης σελίδας">
 <!ENTITY retry.label "Δοκιμή ξανά">
 <!ENTITY returnToPreviousPage.label "Επιστροφή">
+<!ENTITY returnToPreviousPage1.label "Επιστροφή (Προτείνεται)">
 <!ENTITY advanced.label "Για προχωρημένους">
+
+<!ENTITY continue2.label "Περισσότερα…">
+<!ENTITY moreInformation.label "Περισσότερες πληροφορίες">
 
 <!-- Specific error messages -->
 
@@ -21,6 +25,14 @@
 <!ENTITY dnsNotFound.pageTitle "Δε βρέθηκε ο διακομιστής">
 <!-- Localization note (dnsNotFound.title1) - "Hmm" is a sound made when considering or puzzling over something. You don't have to include it in your translation if your language does not have a written word like this. -->
 <!ENTITY dnsNotFound.title1 "Χμ. Έχουμε πρόβλημα στην εύρεση του ιστοτόπου.">
+<!ENTITY dnsNotFound.longDesc1 "
+<strong>Αν η διεύθυνση είναι σωστή, ορίστε τρία ακόμη πράγματα που μπορείτε να δοκιμάσετε:</strong>
+<ul>
+  <li>Προσπαθήστε ξανά αργότερα.</li>
+  <li>Ελέγξτε τη σύνδεση δικτύου σας.</li>
+  <li>Αν έχετε συνδεθεί, αλλά υπό την εποπτεία ενός τείχους προστασίας, ελέγξτε αν το &brandShortName; έχει άδεια για πρόσβαση στο διαδίκτυο.</li>
+</ul>
+">
 
 <!ENTITY fileNotFound.title "Το αρχείο δεν βρέθηκε">
 <!ENTITY fileNotFound.longDesc "
@@ -137,11 +149,32 @@
 </ul>
 ">
 
-<!ENTITY certerror.longpagetitle1 "Η σύνδεση σας δεν είναι ασφαλής">
-<!-- Localization note (certerror.introPara) - The text content of the span tag
+<!ENTITY certerror.longpagetitle1 "Η σύνδεσή σας δεν είναι ασφαλής">
+<!ENTITY certerror.longpagetitle2 "Προειδοποίηση: Πιθανός κίνδυνος ασφαλείας">
+<!-- Localization note (certerror.introPara, certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "Ο ιδιοκτήτης του <span class='hostname'/> δεν έχει ρυθμίσει την ιστοσελίδα του σωστά. Για την προστασία των πληροφοριών σας από κλοπή, το &brandShortName; δεν έχει συνδεθεί με αυτή την ιστοσελίδα.">
+
+<!ENTITY certerror.introPara2 "Το &brandShortName; ανίχνευσε μια πιθανή απειλή ασφαλείας και δεν συνέχισε στο <span class='hostname'/>. Αν επισκεφθείτε αυτή την ιστοσελίδα, οι επιτιθέμενοι ίσως προσπαθήσουν να υποκλέψουν πληροφορίες, όπως κωδικούς πρόσβασης, emails ή λεπτομέρειες πιστωτικής κάρτας.">
+
+<!ENTITY certerror.expiredCert.secondPara "Αυτό το ζήτημα οφείλεται πιθανότατα σε εσφαλμένη ρύθμιση του ρολογιού του υπολογιστή σας, κάτι που θα εμποδίσει την ασφαλή σύνδεση με το &brandShortName;.">
+
+<!ENTITY certerror.whatCanYouDoAboutItTitle "Τι μπορείτε να κάνετε γι' αυτό;">
+
+<!ENTITY certerror.unknownIssuer.whatCanYouDoAboutIt "
+<p>Το ζήτημα οφείλεται κατά πάσα πιθανότητα στην ιστοσελίδα και δεν μπορείτε να κάνετε τίποτα για να το διορθώσετε.</p>
+<p>Αν είστε σε εταιρικό δίκτυο ή χρησιμοποιείτε λογισμικό anti-virus, μπορείτε να απευθυνθείτε στις ομάδες υποστήριξης για βοήθεια. Μπορείτε επίσης να ειδοποιήσετε το διαχειριστή της ιστοσελίδας για το πρόβλημα.</p>
+">
+
+<!ENTITY certerror.expiredCert.whatCanYouDoAboutIt2 "
+<p>Το ρολόι του υπολογιστή σας έχει οριστεί σε <span id='wrongSystemTime_systemDate2'/>. Βεβαιωθείτε ότι ο υπολογιστής σας έχει ρυθμιστεί στη σωστή ώρα, ημερομηνία και ζώνη ώρας στις ρυθμίσεις συστήματος και, έπειτα, κάντε ανανέωση του <span class='hostname'/>.</p>
+<p>Αν το ρολόι έχει ήδη οριστεί στη σωστή ώρα, η ιστοσελίδα έχει πιθανότατα ρυθμιστεί εσφαλμένα και δεν μπορείτε να κάνετε τίποτα για να επιλύσετε το ζήτημα. Μπορείτε να ειδοποιήσετε το διαχειριστή της ιστοσελίδας σχετικά με το πρόβλημα.</p>
+">
+
+<!ENTITY certerror.badCertDomain.whatCanYouDoAboutIt "
+<p>Το ζήτημα οφείλεται κατά πάσα πιθανότητα στην ιστοσελίδα και δεν μπορείτε να κάνετε τίποτα για να το διορθώσετε. Μπορείτε να ειδοποιήσετε το διαχειριστή της ιστοσελίδας για το πρόβλημα.</p>
+">
 
 <!ENTITY sharedLongDesc "
 <ul>
@@ -163,7 +196,9 @@ was trying to connect. -->
 
 <!ENTITY securityOverride.exceptionButtonLabel "Προσθήκη εξαίρεσης">
 
-<!ENTITY errorReporting.automatic2 "Αναφέρετε σφάλματα όπως αυτό για να βοηθήσετε το Mozilla στον εντοπισμό και αποκλεισμό κακόβουλων ιστοσελίδων">
+<!ENTITY securityOverride.exceptionButton1Label "Αποδοχή ρίσκου και συνέχεια">
+
+<!ENTITY errorReporting.automatic2 "Αναφέρετε σφάλματα όπως αυτό για να βοηθήσετε τη Mozilla στον εντοπισμό και αποκλεισμό κακόβουλων ιστοσελίδων">
 <!ENTITY errorReporting.learnMore "Μάθετε περισσότερα…">
 
 <!ENTITY remoteXUL.title "Απομακρυσμένο XUL">
@@ -181,16 +216,23 @@ was trying to connect. -->
 <!ENTITY certerror.wrongSystemTimeWithoutReference "<p>Το &brandShortName; δεν συνδέθηκε στο <span id='wrongSystemTimeWithoutReference_URL'/>, επειδή το ρολόι του υπολογιστή σας φαίνεται να εμφανίζει εσφαλμένη ώρα και αυτό εμποδίζει την ασφαλή σύνδεση.</p> <p>Ο υπολογιστής σας έχει ρυθμιστεί στην ημερομηνία <span id='wrongSystemTimeWithoutReference_systemDate'/>. Για να επιδιορθώσετε αυτό το πρόβλημα, αλλάξτε τις ρυθμίσεις ημερομηνίας και ώρας ώστε να αντιστοιχούν στις σωστές.</p>">
 
 <!ENTITY certerror.pagetitle1  "Μη ασφαλής σύνδεση">
+<!ENTITY certerror.pagetitle2  "Προειδοποίηση: Πιθανός κίνδυνος ασφαλείας">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Αυτός ο ιστότοπος χρησιμοποιεί ασφάλεια
 HTTP Strict Transport Security (HSTS) που καθορίζει ότι το &brandShortName; μπορεί να συνδεθεί
 μόνο με ασφαλή τρόπο σε αυτόν. Ως εκ τούτου, είναι αδύνατον να προσθέσετε εξαίρεση
 για αυτό το πιστοποιητικό.">
+<!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "Το <span class='hostname'></span> έχει μια πολιτική ασφαλείας, που ονομάζεται HTTP Strict Transport Security (HSTS) και σημαίνει ότι το &brandShortName; μπορεί να συνδεθεί μόνο με ασφαλή τρόπο. Δεν μπορείτε να προσθέσετε μια εξαίρεση για να επισκεφθείτε αυτή την ιστοσελίδα.">
 <!ENTITY certerror.copyToClipboard.label "Αντιγραφή κειμένου στο πρόχειρο">
 
-<!ENTITY inadequateSecurityError.title "Η σύνδεση σας δεν είναι ασφαλής">
+<!ENTITY inadequateSecurityError.title "Η σύνδεσή σας δεν είναι ασφαλής">
 <!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
      "NS_ERROR_NET_INADEQUATE_SECURITY". -->
 <!ENTITY inadequateSecurityError.longDesc "Το <p><span class='hostname'></span> χρησιμοποιεί παρωχημένη και ευάλωτη σε επίθεση τεχνολογία ασφάλειας. Ένας εισβολέας θα μπορούσε εύκολα να αποκαλύψει πληροφορίες που θεωρείτε ασφαλείς. Ο διαχειριστής του ιστότοπου θα πρέπει να τον διορθώσει προτού μπορέσετε να τον επισκεφθείτε.</p><p>Κωδικός σφάλματος: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
+
+<!ENTITY blockedByPolicy.title "Αποκλεισμένη σελίδα">
+
+<!ENTITY clockSkewError.title "Το ρολόι του υπολογιστή σας είναι λάθος">
+<!ENTITY clockSkewError.longDesc "Ο υπολογιστής σας νομίζει ότι είναι <span id='wrongSystemTime_systemDate1'/>, εμποδίζοντας την ασφαλή σύνδεση του &brandShortName;. Για να επισκεφθείτε το <span class='hostname'></span>, ενημερώστε το ρολόι του υπολογιστή στην τρέχουσα ημερομηνία, ώρα και ζώνη ώρας από τις ρυθμίσεις συστήματος και, έπειτα, κάντε ανανέωση του <span class='hostname'></span>.">
 
 <!ENTITY prefReset.longDesc "Μοιάζει να προκαλείται από τις ρυθμίσεις ασφαλείας του δικτύου σας. Θέλετε να αποκατασταθούν οι προεπιλεγμένες ρυθμίσεις;">
 <!ENTITY prefReset.label "Επαναφορά προεπιλεγμένων ρυθμίσεων">

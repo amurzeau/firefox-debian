@@ -14,9 +14,15 @@
 
 # Header for the list of Service Workers displayed in the application panel for the current page.
 serviceworker-list-header = ตัวทำงานบริการ
+# Text displayed next to the list of Service Workers to encourage users to check out
+# about:debugging to see all registered Service Workers.
+serviceworker-list-aboutdebugging = เปิด <a>about:debugging</a> สำหรับตัวทำงานบริการจากโดเมนอื่น ๆ
 # Text for the start link displayed for a registered but not running Service Worker.
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start = เริ่ม
+# Text displayed for the updated time of the service worker. The <time> element will
+# display the last update time of the service worker script.
+serviceworker-worker-updated = อัปเดตเมื่อ <time>{ DATETIME($date, month: "long", year: "numeric", day: "numeric", hour: "numeric", minute: "numeric", second: "numeric") }</time>
 # Text displayed next to the current status of the service worker.
 serviceworker-worker-status = สถานะ
 

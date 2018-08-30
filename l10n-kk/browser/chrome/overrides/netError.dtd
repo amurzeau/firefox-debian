@@ -8,7 +8,11 @@
 <!ENTITY loadError.label "Парақты жүктегенде қате кетті">
 <!ENTITY retry.label "Қайтадан көру">
 <!ENTITY returnToPreviousPage.label "Артқа">
+<!ENTITY returnToPreviousPage1.label "Артқа оралу (ұсынылады)">
 <!ENTITY advanced.label "Кеңейтілген">
+
+<!ENTITY continue1.label "Жалғастыру…">
+<!ENTITY moreInformation.label "Көбірек ақпарат">
 
 <!-- Specific error messages -->
 
@@ -88,10 +92,32 @@
 <!ENTITY nssFailure2.longDesc2 "<ul> <li>Сіз сұраған парақ көрсетілмейді, өйткені алынған мәліметтерді тексеру мүмкін емес.</li> <li>Сайттың иесімен осы мәселе жөнінде хабарласыңыз.</li> </ul>">
 
 <!ENTITY certerror.longpagetitle1 "Сіздің байланысыңыз қауіпсіз емес">
-<!-- Localization note (certerror.introPara) - The text content of the span tag
+<!ENTITY certerror.longpagetitle2 "Назарыңызға: алдыңызда тәуекел бар сияқты">
+<!-- Localization note (certerror.introPara, certerror.introPara1) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "<span class='hostname'/> иесі өз сайтын дұрыс емес баптаған. Ақпаратыңызды ұрланудан қорғау үшін, &brandShortName; бұл веб сайтпен байланыспады.">
+
+<!ENTITY certerror.introPara1 "&brandShortName; мүмкін қауіпсіздік қауіпін анықтады, және <span class='hostname'/> сайтына өтуді жалғастырмады. Бұл сайтты шолсаңыз, шабуылшылар сіздің парольдер, эл. пошта немесе несие карта сияқты ақпаратыңызды ұрлай алады.">
+
+<!ENTITY certerror.expiredCert.secondPara "Бұл мәселе компьютеріңіздің сағаты қате уақыт көрсетіп тұрғаны салдарынан болып тұрған сияқты, нәтижесінде &brandShortName; қауіпсіз түрде байланыса алмады.">
+
+<!ENTITY certerror.whatCanYouDoAboutItTitle "Оған не жасауыңызға болады?">
+
+<!ENTITY certerror.unknownIssuer.whatCanYouDoAboutIt "
+<p>Мәселе веб-сайттың өзімен болып тұрған сияқты, оған ешнәрсе істей алмайсыз.</p>
+<p>Егер сіз кәсіпорын желісінде, немесе антивирус бағдарламаларын қолданатын болсаңыз, қолдау көрсету топтарынан көмек сұрай аласыз. Сонымен қатар, веб-сайт әкімшісіне бұл мәселе жөнінде хабарлауыңызға болады.</p>
+">
+
+<!ENTITY certerror.expiredCert.whatCanYouDoAboutIt2 "
+<p>Компьютеріңіздің сағаты <span id='wrongSystemTime_systemDate2'/>. Компьютер сағаты дұрыс күнді, уақытты және уақыт белдеуін көрсетіп тұрғанына көз жеткізіп, <span class='hostname'/> қайта жүктеңіз.</p>
+<p>Егер компьютер сағат дұрыс уақытты көрсетсе, веб-сайт қате бапталған сияқты, оған ешнәрсе істей алмайсыз. Веб-сайт әкімшісіне бұл мәселе жөнінде хабарлауыңызға болады.</p>
+
+">
+
+<!ENTITY certerror.badCertDomain.whatCanYouDoAboutIt "
+<p>Мәселе веб-сайттың өзімен болып тұрған сияқты, оған ешнәрсе істей алмайсыз. Веб-сайт әкімшісіне бұл мәселе жөнінде хабарлауыңызға болады.</p>
+">
 
 <!ENTITY sharedLongDesc "<ul> <li>Сайт уақытша қолжетерсіз, немесе сұранымдарға толы шығар. Кейінірек қайталап көріңіз.</li> <li>Басқа да сайттарды аша алмасаңыз, компьютеріңіздің желіге байланысу баптауларын тексеріңіз.</li> <li>Компьютер немесе желі желіаралық экранмен немесе прокси-сервермен қорғалған болса – &brandShortName; үшін Интернетке шығуға рұқсат бар екеніне көз жеткізіңіз.</li> </ul>">
 
@@ -122,7 +148,9 @@ was trying to connect. -->
 <!ENTITY certerror.wrongSystemTimeWithoutReference "<p> &brandShortName; <span id='wrongSystemTimeWithoutReference_URL'/> сайтына байланыспады, өйткені сіздің компьютеріңіздің сағаты қате уақытты көрсетіп тұрған сияқты, оның нәтижесінде қауіпсіз байланысты орнату мүмкін емес.</p> <p>Компьютеріңіздің уақыты <span id='wrongSystemTimeWithoutReference_systemDate'/>. Бұл мәселені шешу үшін, нақты уақытқа сай келетін компьютеріңізде күн және уақытты орнатыңыз.</p>">
 
 <!ENTITY certerror.pagetitle1  "Қауіпсіз емес байланыс">
+<!ENTITY certerror.pagetitle2  "Назарыңызға: алдыңызда қауіпсіздік тәуекелі бар сияқты">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Бұл сайт &brandShortName; оған тек қауіпсіз түрде қосылу алатынын көрсету үшін HTTP Strict Transport Security (HSTS) қолданады. Нәтижесінде, бұл сертификатты ережеден тыс қосу мүмкін емес.">
+<!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'></span> сайтының HTTP Strict Transport Security (HSTS) деп аталатын қауіпсіздік саясаты бар, бұл дегеніміз, &brandShortName; оған тек қауіпсіз түрде байланыса алады. Бұл веб-сайт үшін ережеден тыс жағдайды қоса алмайсыз.">
 <!ENTITY certerror.copyToClipboard.label "Мәтінді алмасу буферіне көшіру">
 
 <!ENTITY inadequateSecurityError.title "Сіздің байланысыңыз қауіпсіз емес">
@@ -131,6 +159,9 @@ was trying to connect. -->
 <!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> ескірген және шабуылдарға әлсіз қауіпсіздік технологиясын қолдануда. Шабуылшы сіз қауіпсіз деп ойлаған ақпаратты оңай анықтай алады. Сіз сайтты шолғанға дейін оның әкімшісі серверді ретке келтіруі тиіс.</p><p>Қате коды: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
 
 <!ENTITY blockedByPolicy.title "Бұғатталған бет">
+
+<!ENTITY clockSkewError.title "Сіздің компьютеріңіздің сағаты қате">
+<!ENTITY clockSkewError.longDesc "Компьютеріңіз қазір <span id='wrongSystemTime_systemDate1'/> деп ойлайды, оның салдарынан &brandShortName; қауіпсіз түрде байланыса алмайды. <span class='hostname'></span> шолу үшін, комьютеріңіздің сағатын дұрыс күн, уақыт және уақыт белдеуі мәндеріне жаңартып, <span class='hostname'></span> жаңартыңыз.">
 
 <!ENTITY prefReset.longDesc "Сіздің желілік қауіпсіздік баптаулар осыны туғызатын сияқты. Бастапқы баптауларды қалпына келтіруді қалайсыз ба?">
 <!ENTITY prefReset.label "Бастапқы баптауларды қалпына келтіру">

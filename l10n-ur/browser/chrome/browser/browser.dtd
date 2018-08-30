@@ -35,6 +35,24 @@ left instead of right. -->
 <!ENTITY  closeOtherTabs.label               "دیگر ٹیب بند کر دیں">
 <!ENTITY  closeOtherTabs.accesskey           "د">
 
+<!ENTITY  closeSelectedTabs.label            "منتخب کردہ ٹیب بند کریں">
+<!ENTITY  closeSelectedTabs.accesskey        "S">
+
+<!-- Pin Tab and Pin Selected Tabs have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  pinSelectedTabs.accesskey          "P">
+<!ENTITY  unpinSelectedTabs.label            "ٹیب انپن کریں">
+<!-- Unpin Tab and Unpin Selected Tabs have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  unpinSelectedTabs.accesskey        "b">
+<!-- Reload Tab and Reload Selected Tabs have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  reloadSelectedTabs.label           "منتخب کردہ ٹیب دوبارہ لوڈ کریں">
+<!ENTITY  reloadSelectedTabs.accesskey       "R
+
+">
+<!ENTITY  bookmarkSelectedTabs.accesskey     "K">
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -53,12 +71,14 @@ can reach it easily. -->
 <!ENTITY  sendToDeviceFeedback.label         "بھیجا گیا!">
 <!ENTITY  moveToNewWindow.label              "نئے دریچے میں بڑھائیں">
 <!ENTITY  moveToNewWindow.accesskey          "د">
+<!ENTITY  reopenInContainer.accesskey        "e">
 <!ENTITY  bookmarkAllTabs.label              "تمام ٹیب بک مارک کریں…">
 <!ENTITY  bookmarkAllTabs.accesskey          "ٹ">
 <!ENTITY  undoCloseTab.label                 "ٹیب بند کو کالعدم کریں">
 <!ENTITY  undoCloseTab.accesskey             "ک">
 <!ENTITY  closeTab.label                     "ٹیب بند کر دیں">
 <!ENTITY  closeTab.accesskey                 "ب">
+<!ENTITY  hiddenTabs.label                   "چھپے ہوئے ٹیبس">
 
 <!ENTITY  listAllTabs.label      "تمام ٹیب دکھائیں">
 
@@ -125,7 +145,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "تمام ٹیب دکھائیں">
 <!ENTITY showAllTabsCmd.accesskey "ت">
 <!ENTITY toggleReaderMode.key "R">
-
 <!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "&syncBrand.shortName.label; سائن ان کریں">
@@ -185,10 +204,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY otherBookmarksCmd.label "دیگر نشانیاں">
 <!ENTITY mobileBookmarksCmd.label "موبائل نشانیاں">
 <!ENTITY bookmarksToolbarChevron.tooltip "مزید نشانیاں دکھائیں">
-<!ENTITY showRecentlyBookmarked.label     "حالیہ نشانی کردہ دکھائیں">
-<!ENTITY showRecentlyBookmarked.accesskey "ھ">
-<!ENTITY hideRecentlyBookmarked.label     "حالیہ نشانی کردہ چھپائیں">
-<!ENTITY hideRecentlyBookmarked.accesskey "ھ">
 
 <!ENTITY backCmd.label                "واپس">
 <!ENTITY backCmd.accesskey            "B">
@@ -227,7 +242,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translateNotificationAnchor.tooltip       "اس صفحہ کا ترجمہ کریں">
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "صفحہ کہ ترجمہ کو بندوبست کریں">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "DRM سافٹ ویئر کہ استعمال کو بندوبست کریں">
-
+<!ENTITY urlbar.midiNotificationAnchor.tooltip            "MIDI پینل کھولیں">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "آپ نے اس ویب سائٹ کے لیئے کیمرہ بلاک کیا ہوا ہے">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "آپ نے اس ویب سائٹ کے لیئے مائیکروفون بلاک کیا ہوا ہے۔">
@@ -236,13 +251,14 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "آپ نے اس ویب سائٹ کے لیئے اطلاع کو بلاک کیا ہوا ہے">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "آپ نے اس ویب سائٹ کے لیئے مسلسل اسٹوریج کو بلاک کیا ہوا ہے۔">
 
-
 <!ENTITY urlbar.openHistoryPopup.tooltip                "سابقات دکھائیں">
 
 <!ENTITY searchItem.title             "تلاش">
 
 <!-- Toolbar items -->
 <!ENTITY homeButton.label             "گھر">
+
+<!ENTITY homeButton.defaultPage.tooltip "&brandShortName; ابتدائی صفحہ">
 
 <!ENTITY bookmarksButton.label          "نشانیاں">
 <!ENTITY bookmarksCmd.commandkey "b">
@@ -260,7 +276,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addBookmarksMenu.label             "نشانیاں مینو کو ٹول بار میں شامل کریں">
 <!ENTITY removeBookmarksMenu.label          "نشانیاں مینو کو ٹول بار سے ہٹائے">
 
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -289,13 +305,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY webDeveloperMenu.label       "ویب تکمیل کار">
 <!ENTITY webDeveloperMenu.accesskey   "و">
 
+<!ENTITY devtoolsSaveRecording.label "ریکارڈنگ محفوظ کریں">
+
 <!ENTITY inspectContextMenu.label     "عناصر چیک کریں">
 <!ENTITY inspectContextMenu.accesskey "Q">
+
 
 <!ENTITY fileMenu.label         "مسل">
 <!ENTITY fileMenu.accesskey       "م">
 <!ENTITY newUserContext.label             "نیا حامل ٹیب">
 <!ENTITY newUserContext.accesskey         "ٹ">
+<!ENTITY manageUserContext.accesskey      "O">
 <!ENTITY newNavigatorCmd.label        "نیا دریچہ">
 <!ENTITY newNavigatorCmd.key        "N">
 <!ENTITY newNavigatorCmd.accesskey      "ن">
@@ -377,11 +397,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "اپنے دیگر آلات پر ٹیب کی فہرست دیکھنے کے لئے ٹیب ہم سازی آن کر دیں۔">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "اپنے ٹیب کو دوسرے آلات سے یہاں سے دیکھنا پسند کریں گے؟">
-<!ENTITY appMenuRemoteTabs.openprefs.label "ہمہ وقت ساز ترجیحات">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "ٹیبیں کی فہرست دیکھنے کے لئے اپنے دیگر آلات سے سائن ان کریں۔">
 <!ENTITY appMenuRemoteTabs.signin.label "ہم سازی کے لئے سائن ان کریں">
 <!ENTITY appMenuRemoteTabs.managedevices.label "آلات کو بندرست کریں…">
@@ -397,8 +416,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (customizeMenu.addToOverflowMenu.label,
      customizeMenu.pinToOverflowMenu.label, customizeMenu.unpinFromOverflowMenu.label)
      The overflow menu is the menu that appears if you click the chevron (>> button)
-     in the location bar. These labels are only used in Photon, where you can put
-     items into this menu permanently (pinned). -->
+     in the location bar. -->
 <!ENTITY customizeMenu.addToOverflowMenu.label "اورفلوں مینو مے شامل کرے">
 <!ENTITY customizeMenu.addToOverflowMenu.accesskey "M">
 <!ENTITY customizeMenu.moveToToolbar.label "ٹول بار میں لائیں">
@@ -410,6 +428,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      keys.  -->
 <!ENTITY customizeMenu.moveToPanel.label "مینیو میں لائیں">
 <!ENTITY customizeMenu.moveToPanel.accesskey "ل">
+<!-- LOCALIZATION NOTE (customizeMenu.pinToOverflowMenu.accesskey)
+     can appear on the same context menu as menubarCmd and personalbarCmd,
+     so they should have different access keys.  -->
 <!ENTITY customizeMenu.pinToOverflowMenu.label "اورفلوں مینو مے پن کرے">
 <!ENTITY customizeMenu.pinToOverflowMenu.accesskey "P">
 <!ENTITY customizeMenu.unpinFromOverflowMenu.label "اورفلوں مینو سے ان پن کرے">
@@ -420,6 +441,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.removeFromMenu.accesskey "ہ">
 <!ENTITY customizeMenu.addMoreItems.label "مزید اشیا ڈالیں…">
 <!ENTITY customizeMenu.addMoreItems.accesskey "ڈ">
+
+<!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "A">
+<!ENTITY customizeMenu.manageExtension.label "توسیع بندرست کریں">
+<!ENTITY customizeMenu.manageExtension.accesskey "E">
 
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
@@ -592,6 +617,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hidePluginCmd.label          "اس پلگ ان کو چھپائیں">
 <!ENTITY hidePluginCmd.accesskey      "چ">
 <!ENTITY copyLinkCmd.label            "ربط محل وقوع نقل کریں">
+<!-- LOCALIZATION NOTE (copyLinkCmd.accesskey): The access keys for "Copy Link
+Location" and "Copy Email Address" should be the same if possible; the two
+context menu items are mutually exclusive. -->
 <!ENTITY copyLinkCmd.accesskey        "ق">
 <!ENTITY copyImageCmd.label           "نقش محل وقوع نقل کریں">
 <!ENTITY copyImageCmd.accesskey       "ق">
@@ -602,6 +630,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY copyAudioURLCmd.label        "سمعی محل وقوع نقل کریں">
 <!ENTITY copyAudioURLCmd.accesskey    "ن">
 <!ENTITY copyEmailCmd.label           "ای میل پتہ نقل کریں">
+<!-- LOCALIZATION NOTE (copyEmailCmd.accesskey): The access keys for "Copy Link
+Location" and "Copy Email Address" should be the same if possible; the two
+context menu items are mutually exclusive. -->
 <!ENTITY copyEmailCmd.accesskey       "ا">
 <!ENTITY thisFrameMenu.label              "یہ فریم">
 <!ENTITY thisFrameMenu.accesskey          "ی">
@@ -737,8 +768,14 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY spellAddDictionaries.label "لغات اضافہ کریں…">
 <!ENTITY spellAddDictionaries.accesskey "ا">
 
+<!-- LOCALIZATION NOTE (editBookmark.panel.width): width of the bookmark panel.
+     Should be large enough to fully display the Done and Cancel/
+     Remove Bookmark buttons. -->
+<!ENTITY editBookmark.panel.width                    "23em">
 <!ENTITY editBookmark.done.label                     "ہوگیا">
 <!ENTITY editBookmark.removeBookmark.accessKey       "R">
+
+<!ENTITY editBookmark.showForNewBookmarks.accesskey   "S">
 
 <!-- LOCALIZATION NOTE (identity.securityView.label)
      This is the header of the security subview in the Site Identity panel. -->
@@ -781,9 +818,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.moreInfoLinkText2 "مزید معلومات">
 
+<!ENTITY identity.clearSiteData "کوکیاں اور سائٹ کے کواِئف… صاف کریں">
+
 <!ENTITY identity.permissions "اجازتیں">
 <!ENTITY identity.permissionsEmpty "آپ نے اس سائٹ کو کوئی خاص اجازتیں نہیں دیں ہے۔">
 <!ENTITY identity.permissionsReloadHint "تبدیلی کو لگانے کے لیئے آپکو صفحہ کو دوبارہ لوڈ کرنے کی شاید ظرورت ہو۔">
+
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
@@ -880,6 +920,30 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.audioCapture.label "ٹیب پر سے آڈیو شیئر ہو گی۔">
 <!ENTITY getUserMedia.allWindowsShared.message "آپ کی سکرین پر نظر آنے والے تمام دریچے شیئر کیے جائیں گے۔">
 
+<!ENTITY trackingProtection.on "سراغ کاری حفاظت چالو">
+<!ENTITY trackingProtection.off "سراغ کاری حفاظت OFF">
+
+
+<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.blocked.label):
+     This label signals that this type of content blocking is turned
+     ON and is successfully blocking malicious/slow content, so this is
+     a positive thing. It forms the end of the (imaginary) sentence
+     "Slow-Loading Trackers [are] Blocked"-->
+<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.add.label):
+     This is displayed as a link to preferences, where the user can add
+     this specific type of content blocking. When this text is shown
+     the type of content blocking is currently not enabled. -->
+
+<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
+     This label signals that this type of content blocking is turned
+     ON and is successfully blocking malicious/slow content, so this is
+     a positive thing. It forms the end of the (imaginary) sentence
+     "Trackers [are] Blocked"-->
+<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.add.label):
+     This is displayed as a link to preferences, where the user can add
+     this specific type of content blocking. When this text is shown
+     the type of content blocking is currently not enabled. -->
+
 <!ENTITY trackingProtection.title "سراغ کاری حفاظت">
 <!ENTITY trackingProtection.detectedBlocked3 "&brandShortName; نے اس صفحے کے حصے بلاک کیے ہوئے ہیں جو آپ کی براؤزنگ کا سراغ لگا سکتے ہیں۔">
 <!ENTITY trackingProtection.detectedNotBlocked3 "اس سائٹ میں عناصر شامل ہیں جو آپ کی براؤزنگ کا سراغ لگا سکتے ہیں۔ آپ نے حفاظت نا اہل بنا دی ہے۔">
@@ -896,6 +960,23 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY trackingProtection.unblockPrivate.accesskey "ن">
 <!ENTITY trackingProtection.block2.label "حفاظت اہل بنائیں">
 <!ENTITY trackingProtection.block2.accesskey "ا">
+
+
+
+<!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in NON-private browsing mode. -->
+<!ENTITY trackingProtection.unblock3.label "اس سائٹ کے لیئے نااہل بنائیں">
+<!ENTITY trackingProtection.unblock3.accesskey "D">
+<!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in PRIVATE browsing mode. -->
+<!ENTITY trackingProtection.unblockPrivate3.label "اس سیشن کے لیئے نااہل بنائیں">
+<!ENTITY trackingProtection.unblockPrivate3.accesskey "D">
+<!ENTITY trackingProtection.block4.label "اس سائٹ کے لیئے اہل بنائیں">
+<!ENTITY trackingProtection.block4.accesskey "E">
+<!ENTITY trackingProtection.reload2.label "صفحہ پھر لوڈ کریں">
+<!ENTITY trackingProtection.reload2.accesskey "R">
 
 <!ENTITY pluginNotification.showAll.label "تمام دکھائیں">
 <!ENTITY pluginNotification.showAll.accesskey "ت">
@@ -968,14 +1049,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "N">
 <!ENTITY updateRestart.panelUI.label2 "&brandShorterName; کی تازہ کاری کرنے کے لیئے دوبارہ شروع کریں">
 
-
+<!ENTITY newTabControlled.header.message "آپکا نیا ٹیب تبدیل کردیا گیا ہے۔">
 <!ENTITY newTabControlled.keepButton.label "تبدیلیاں برقرار رکھیں">
 <!ENTITY newTabControlled.keepButton.accesskey "K">
-<!ENTITY newTabControlled.restoreButton.label "سیٹنگیں بحال کریں">
-<!ENTITY newTabControlled.restoreButton.accesskey "R">
-
 <!ENTITY newTabControlled.disableButton.label "توسیعات نا اہل بنائیں">
 <!ENTITY newTabControlled.disableButton.accesskey "D">
+
+<!ENTITY homepageControlled.header.message "آپکا ابتدائی صفحہ تبدیل کردیا گیا ہے۔">
+<!ENTITY homepageControlled.keepButton.label "تبدیلیاں برقرار رکھیں">
+<!ENTITY homepageControlled.keepButton.accesskey "K">
+<!ENTITY homepageControlled.disableButton.label "توسیعات نا اہل بنائیں">
+<!ENTITY homepageControlled.disableButton.accesskey "D">
+
+<!ENTITY tabHideControlled.keepButton.label "ٹیبس کو مخفی رکھیں">
+<!ENTITY tabHideControlled.keepButton.accesskey "K">
+<!ENTITY tabHideControlled.disableButton.label "توسیعات نا اہل بنائیں">
+<!ENTITY tabHideControlled.disableButton.accesskey "D">
 
 <!ENTITY pageActionButton.tooltip "صفحہ اعمال">
 <!ENTITY pageAction.addToUrlbar.label "ایڈریس بار میں شامل کرے">
@@ -984,6 +1073,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pageAction.sendTabToDevice.label "ٹیبب کو آلہ پر بھیجیں">
 <!ENTITY sendToDevice.syncNotReady.label "آلات کی ہمہ وقت سازی کر رہے ہے…">
+
+<!ENTITY pageAction.shareUrl.label "شیئر کریں">
+
+<!ENTITY pageAction.shareMore.label "مزید…">
 
 <!ENTITY libraryButton.tooltip "تاریخیں، محفوظ شدہ نشانیاں، اور بھی مزید دکھائے">
 

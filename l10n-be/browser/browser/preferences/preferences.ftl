@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -137,20 +129,11 @@ is-not-default = { -brand-short-name } не прадвызначаны браў�
 set-as-my-default-browser =
     .label = Зрабіць прадвызначаным…
     .accesskey = З
-startup-page = Пасля запуску { -brand-short-name }
-    .accesskey = а
-startup-user-homepage =
-    .label = паказваць вашу хатнюю старонку
-startup-blank-page =
-    .label = паказваць пустую старонку
-startup-prev-session =
-    .label = паказваць апошнія вокны і карткі
 startup-restore-previous-session =
     .label = Узнаўляць папярэдні сеанс
     .accesskey = с
 disable-extension =
     .label = Адключыць пашырэнне
-home-page-header = Хатняя старонка
 tabs-group-header = Карткі
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab пераключае паміж карткамі ў парадку апошняга выкарыстання
@@ -222,6 +205,9 @@ choose-language-description = Выберыце мовы, якім вы адда�
 choose-button =
     .label = Выбраць…
     .accesskey = В
+choose-browser-language-description = Выберыце мовы для адлюстравання меню, паведамленняў і наменак { -brand-short-name }.
+confirm-browser-language-change-description = Перазапусціць { -brand-short-name } для прымянення змен
+confirm-browser-language-change-button = Прымяніць і перастартаваць
 translate-web-pages =
     .label = Перакладаць змесціва
     .accesskey = П
@@ -273,7 +259,6 @@ play-drm-content =
 play-drm-content-learn-more = Даведацца больш
 update-application-title = Абнаўленні { -brand-short-name }
 update-application-description = Трымайце { -brand-short-name } абноўленым для лепшай прадукцыйнасці, стабільнасці і бяспекі.
-update-application-info = Версія { $version } <a>Што новага</a>
 update-application-version = Версія { $version } <a data-l10n-name="learn-more">Што новага</a>
 update-history =
     .label = Паказаць гісторыю абнаўленняў...
@@ -309,7 +294,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Абмежаванне колькасці працэсаў
     .accesskey = а
 performance-limit-content-process-enabled-desc = Дадатковая колькасць працэсаў можа павялічыць прадукцыйнасць пры адкрыцці некалькіх картак, але браўзер будзе спажываць больш памяці.
-performance-limit-content-process-disabled-desc = Змена колькасці працэсаў магчымая толькі ў шматпрацэснай версіі { -brand-short-name }. <a>Даведайцеся, як праверыць, ці ўключана шматпрацэснасць</a>
 performance-limit-content-process-blocked-desc = Змена колькасці працэсаў магчымая толькі ў шматпрацэснай версіі { -brand-short-name }. <a data-l10n-name="learn-more">Даведайцеся, як праверыць, ці ўключана шматпрацэснасць</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -380,9 +364,6 @@ use-current-pages =
 choose-bookmark =
     .label = Ужыць закладку…
     .accesskey = з
-restore-default =
-    .label = Аднавіць прадвызначаную
-    .accesskey = А
 
 ## Search Section
 
@@ -618,7 +599,7 @@ sitedata-keep-until = Трымаць пакуль
 sitedata-keep-until-expire =
     .label = Тэрмін канчаецца
 sitedata-keep-until-closed =
-    .label = { -brand-short-name } закрыта
+    .label = да закрыцця { -brand-short-name }
 sitedata-accept-third-party-desc = Прымаць кукі і дадзеныя з пабочных сайтаў
     .accesskey = ы
 sitedata-accept-third-party-always-option =
@@ -627,6 +608,26 @@ sitedata-accept-third-party-visited-option =
     .label = з наведаных
 sitedata-accept-third-party-never-option =
     .label = ніколі
+sitedata-allow-cookies-option =
+    .label = Прымаць кукі і звесткі сайтаў
+    .accesskey = П
+sitedata-disallow-cookies-option =
+    .label = Блакаваць кукі і звесткі сайтаў
+    .accesskey = Б
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Тып заблакаванага
+    .accesskey = Т
+sitedata-block-trackers-option-recommended =
+    .label = Трэкеры трэцяга боку (рэкамендуецца)
+sitedata-block-trackers-option =
+    .label = Трэкеры трэцяга боку
+sitedata-block-unvisited-option =
+    .label = Кукі з ненаведаных сайтаў
+sitedata-block-all-third-parties-option =
+    .label = Усе кукі трэцяга боку
+sitedata-block-always-option =
+    .label = Усе кукі (можа парушыць працу вэб-сайтаў)
 sitedata-clear =
     .label = Выдаліць дадзеныя…
     .accesskey = ы
@@ -651,6 +652,44 @@ addressbar-locbar-openpage-option =
     .label = Адкрытыя карткі
     .accesskey = А
 addressbar-suggestions-settings = Змяніць налады для падказак пашукавіка
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = Блакаванне змесціва
+content-blocking-desc = Блакаваць пабочнае змесціва, напрыклад, рэкламу або код, які можа запавольваць працу браўзера і сачыць за вамі ў інтэрнэце. Мяняйце налады для лепшага балансу абароны і прадукцыйнасці.
+content-blocking-learn-more = Падрабязней
+content-blocking-restore-defaults =
+    .label = Аднавіць прадвызначаныя
+    .accesskey = А
+content-blocking-toggle-on =
+    .tooltiptext = Выключыць блакаванне змесціва
+content-blocking-toggle-off =
+    .tooltiptext = Уключыць блакаванне змесціва
+content-blocking-toggle-label-on = Укл.
+    .accesskey = У
+content-blocking-toggle-label-off = Выкл.
+    .accesskey = В
+content-blocking-category-label = Выберыце, што блакаваць
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Марудныя элементы сачэння
+    .accesskey = ы
+content-blocking-fastblock-description = Блакаваць пабочнае змесціва, загрузка якога цягнецца больш за 5 секунд.
+content-blocking-fastblock-option-enabled =
+    .label = Заўсёды блакаваць
+content-blocking-fastblock-option-disabled =
+    .label = Ніколі не блакаваць
+content-blocking-tracking-protection-label = Трэкеры
+    .accesskey = Т
+content-blocking-tracking-protection-description = Блакаваць усе вядомыя трэкеры. (Заўвага: можа заблакаваць загрузку некаторых старонак).
+content-blocking-tracking-protection-option-enabled =
+    .label = Заўсёды блакаваць
+content-blocking-tracking-protection-option-pbm =
+    .label = Блакаваць толькі ў прыватных вокнах
+content-blocking-tracking-protection-option-disabled =
+    .label = Ніколі не блакаваць
+content-blocking-tracking-protection-change-blocklist = Змяніць спіс блакавання…
 
 ## Privacy Section - Tracking
 
@@ -703,9 +742,17 @@ permissions-notification-pause =
 permissions-block-autoplay-media =
     .label = Забараніць вэб-сайтам аўтаматычна прайграваць медыя з гукам
     .accesskey = З
+permissions-block-autoplay-media-menu = Для вэб-сайтаў, што аўтаматычна прайграюць гук
 permissions-block-autoplay-media-exceptions =
     .label = Выключэнні…
     .accesskey = к
+autoplay-option-ask =
+    .label = Заўсёды пытаць
+autoplay-option-allow =
+    .label = Дазволіць аўтапрайграванне
+autoplay-option-dont =
+    .label = Не прайграваць аўтаматычна
+permissions-autoplay-link = Даведацца больш
 permissions-block-popups =
     .label = Блакаваць выплыўныя вокны
     .accesskey = Б

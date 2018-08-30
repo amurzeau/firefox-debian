@@ -223,7 +223,7 @@
 <!ENTITY pref_remember_signons2 "પ્રવેશો યાદ રાખો">
 <!ENTITY pref_manage_logins "લૉગિન સંચાલન કરો">
 
-<!ENTITY pref_category_home "ઘર">
+<!ENTITY pref_category_home "મુખ્ય પાનું">
 <!ENTITY pref_category_home_summary "તમારું ઘરપાનું વૈવિધ્યપૂર્ણ બનાવો">
 <!ENTITY pref_category_home_panels "પેનલો">
 <!ENTITY pref_category_home_add_ons "એડ-ઓન">
@@ -372,6 +372,8 @@
 
 <!ENTITY pref_media_autoplay_enabled "ઑટોપ્લે ની મંજૂરી આપો">
 <!ENTITY pref_media_autoplay_enabled_summary "નિયંત્રણ કરો જો વેબસાઇટ્સ વિડિઓઝ અને અન્ય મીડિયા સામગ્રી ઑટોપ્લે કરતી હોય">
+<!ENTITY pref_media_autoplay_allow "ઑટોપ્લે ની મંજૂરી આપો">
+<!ENTITY pref_media_autoplay_block "ઑટોપ્લે અવરોધિત કરો">
 <!ENTITY pref_zoom_force_enabled "હંમેશા ઝૂમ સક્રિય રાખો">
 <!ENTITY pref_zoom_force_enabled_summary "ફોર્સ ઓવરરાઇડ જેથી તમે કોઇ પાનું ઝૂમ કરી શકો છો">
 <!ENTITY pref_voice_input "વૉઇસ ઇનપુટ">
@@ -447,6 +449,11 @@
 <!ENTITY datareporting_crashreporter_title_short "ભંગાણનો અહેવાલ આપનાર">
 <!ENTITY datareporting_wifi_title2 "&vendorShortName; સ્થાન સેવા">
 <!ENTITY datareporting_wifi_geolocation_summary4 "સહાય &vendorShortName;; વિશ્વમાં નકશા કરો! અમારી ભૌગોલિક સ્થાન સેવાને સુધારવા માટે તમારા ઉપકરણનું આશરે Wi-Fi અને સેલ્યુલર સ્થાન વહેંચો.">
+<!-- Localization note (datareporting_notification_title ) : This will be the title
+     of the notification shown whenever the user has enabled data reporting and the stumbler
+     service is running. -->
+<!ENTITY datareporting_stumbler_notification_title "&vendorShortName; સ્થાન સેવા ચાલી રહી છે">
+
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -888,3 +895,15 @@ See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "મુખ્ય સ્ક્રીન પર ઉમેરો">
 <!ENTITY pwa_continue_to_website "વેબસાઇટ પર ચાલુ રાખો">
 <!ENTITY pwa_onboarding_sumo "ઝટપટ ઍક્સેસ મેળવવા માટે તમે સરળતાથી તમારી વેબસાઇટ મુખ્ય સ્ક્રીન પર ઉમેરી શકો છો અને એપ્લિકેશન-જેવી અનુભવ સાથે ઝડપી બ્રાઉઝ કરો.">
+
+<!-- Used by accessibility services to identify the play/pause buttons shown in the
+Picture-in-picture mini window -->
+<!ENTITY pip_play_button_title "વગાડો">
+<!ENTITY pip_play_button_description "ફરી શરૂ કરો">
+<!ENTITY pip_pause_button_title "થોભો">
+<!ENTITY pip_pause_button_description "થોભો વગાડો">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY mls_notification_channel "&vendorShortName; સ્થાન સેવા">
+<!ENTITY download_notification_channel "ડાઉનલોડ">

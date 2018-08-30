@@ -8,7 +8,11 @@
 <!ENTITY loadError.label "Problèma al moment de cargar la pagina">
 <!ENTITY retry.label "Tornar ensajar">
 <!ENTITY returnToPreviousPage.label "Tornar en arrièr">
+<!ENTITY returnToPreviousPage1.label "Tornar (recomandat)">
 <!ENTITY advanced.label "Avançat">
+
+<!ENTITY continue1.label "Contunhar…">
+<!ENTITY moreInformation.label "Mai d'informacions">
 
 <!-- Specific error messages -->
 
@@ -80,10 +84,10 @@
 <!ENTITY unknownProtocolFound.title "La connexion es pas estada compresa">
 <!ENTITY unknownProtocolFound.longDesc "<ul> <li>Benlèu qu'es necessari d'installar una autra aplicacion per dobrir aqueste tipe d'adreça.</li> </ul>">
 
-<!ENTITY proxyConnectFailure.title "Lo servidor mandatòri refusa las connexions">
+<!ENTITY proxyConnectFailure.title "Lo servidor mandatari refusa las connexions">
 <!ENTITY proxyConnectFailure.longDesc "<ul> <li>Verificatz que los paramètres del proxy son corrèctes ;</li> <li>Contactatz vòstre administrator de ret per vos assegurar que lo servidor proxy fonciona.</li> </ul>">
 
-<!ENTITY proxyResolveFailure.title "Impossible de trobar lo servidor mandatòri">
+<!ENTITY proxyResolveFailure.title "Impossible de trobar lo servidor mandatari">
 <!ENTITY proxyResolveFailure.longDesc "<ul> <li>Verificatz que los paramètres del proxy son corrèctes ;</li> <li>Verificatz que la connexion ret de vòstre ordenador fonciona ;</li> <li>Se vòstre ordenador o vòstra ret es protegit per un parafuòc o un proxy,asseguratz-vos que &brandShortName; a l'autorizacion d'accedir al Web.</li> </ul>">
 
 <!ENTITY redirectLoop.title "Redireccion de pagina incorrècta">
@@ -96,10 +100,16 @@
 <!ENTITY nssFailure2.longDesc2 "<ul> <li>La pagina qu'ensajatz de consultar pòt pas èsser afichada perque l'autenticitat de las donadas recebudas pòt pas èsser verificada.</li> <li>Contactatz los proprietaris del sit Web per los n'assabentar. Tanben podètz utilizar la comanda dins lo menú d'ajuda per senhalar un site pas foncional.</li> </ul>">
 
 <!ENTITY certerror.longpagetitle1 "La connexion es pas segura">
-<!-- Localization note (certerror.introPara) - The text content of the span tag
+<!-- Localization note (certerror.introPara, certerror.introPara1) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "L'autor de <span class='hostname'/> configurèt son site web incorrectament. Per protegir vòstras informacions del panatòri, &brandShortName; s'es pas connectat pas al site web.">
+
+
+
+
+
+
 
 <!ENTITY sharedLongDesc "<ul> <li>Benlèu que lo site es temporàriament indisponible o subrecargat. Tornatz ensajar pus tard ;</li> <li>Se capitatz pas de navegar sus cap de site, verificatz la connexion a la ret de vòstre ordenador ;</li> <li>Se vòstre ordenador o vòstra ret es protegit per un parafuòc o un proxy, asseguratz-vos que &brandShortName; a l'autorizacion d'accedir al Web.</li> </ul>">
 
@@ -142,6 +152,7 @@ certificat.">
 <!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> utiliza una tecnologia de seguretat obsolèta e vulnerabla a las atacas. Un atacant poiriá aisidament revelar d'informacions que pensèssetz èsser seguras. L'administrator del site web deurà d'en primièr adobar lo servidor abans que poguèssetz visitar lo site.</p><p>Error code : NS_ERROR_NET_INADEQUATE_SECURITY</p>">
 
 <!ENTITY blockedByPolicy.title "Pagina blocada">
+
 
 <!ENTITY prefReset.longDesc "Sembla que la configuracion actuala de seguretat del ret a provocat aquesta error. Restablir los paramètres per defaut ?">
 <!ENTITY prefReset.label "Restablir los paramètres per defaut">

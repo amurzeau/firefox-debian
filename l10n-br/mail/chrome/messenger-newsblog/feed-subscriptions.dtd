@@ -11,7 +11,7 @@
 
 <!ENTITY feedLocation.label          "URL al lanv:">
 <!ENTITY feedLocation.accesskey      "U">
-<!ENTITY feedLocation.placeholder    "Bizskrivit ur chomlec'h lanv talvoudek da ouzhpennañ">
+<!ENTITY feedLocation2.placeholder   "Enankit un url lanv direizh">
 <!ENTITY locationValidate.label      "Talvoudañ">
 <!ENTITY validateText.label          "Gwiriañ talvoud al lanv.">
 
@@ -39,6 +39,8 @@
 <!-- Subscription Dialog -->
 <!ENTITY button.addFeed.label        "Ouzhpennañ">
 <!ENTITY button.addFeed.accesskey    "O">
+<!ENTITY button.verifyFeed.label     "Gwiriañ">
+<!ENTITY button.verifyFeed.accesskey "V">
 <!ENTITY button.updateFeed.label     "Embann">
 <!ENTITY button.updateFeed.accesskey "E">
 <!ENTITY button.removeFeed.label     "Dilemel">

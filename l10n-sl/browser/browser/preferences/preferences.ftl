@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -137,20 +129,11 @@ is-not-default = { -brand-short-name } ni vaš privzeti brskalnik
 set-as-my-default-browser =
     .label = Nastavi za privzeto …
     .accesskey = N
-startup-page = Ko se { -brand-short-name } zažene,
-    .accesskey = K
-startup-user-homepage =
-    .label = prikaži domačo stran
-startup-blank-page =
-    .label = prikaži prazno stran
-startup-prev-session =
-    .label = prikaži nazadnje odprta okna in zavihke
 startup-restore-previous-session =
     .label = Obnovi prejšnjo sejo
     .accesskey = s
 disable-extension =
     .label = Onemogoči razširitev
-home-page-header = Domača stran
 tabs-group-header = Zavihki
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab kroži med zavihki po vrsti, kot so bili nazadnje uporabljeni
@@ -225,6 +208,9 @@ choose-language-description = Izberite prednosten jezik za prikazovanje strani
 choose-button =
     .label = Izberi …
     .accesskey = e
+choose-browser-language-description = Izberite jezike, v katerih naj bodo prikazani meniji, sporočila in obvestila { -brand-short-name }a.
+confirm-browser-language-change-description = Ponovno zaženite { -brand-short-name } za uveljavitev sprememb
+confirm-browser-language-change-button = Uveljavi in ponovno zaženi
 translate-web-pages =
     .label = Prevajanje spletne vsebine
     .accesskey = T
@@ -276,7 +262,6 @@ play-drm-content =
 play-drm-content-learn-more = Več o tem
 update-application-title = Posodobitve { -brand-short-name }a
 update-application-description = Ohranite { -brand-short-name } posodobljen za najboljšo zmogljivost, stabilnost in varnost.
-update-application-info = Različica { $version } <a>Novosti</a>
 update-application-version = Različica { $version } <a data-l10n-name="learn-more">Novosti</a>
 update-history =
     .label = Prikaži zgodovino posodobitev …
@@ -312,7 +297,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Omejitev procesov vsebine
     .accesskey = O
 performance-limit-content-process-enabled-desc = Dodatni procesi vsebine lahko pospešijo delovanje pri uporabi večjega števila zavihkov, a tudi porabijo več pomnilnika.
-performance-limit-content-process-disabled-desc = Število procesov vsebine je mogoče spreminjati samo v večprocesnem { -brand-short-name }u. <a>Kako izveste, ali je večprocesni način omogočen</a>
 performance-limit-content-process-blocked-desc = Število procesov vsebine je mogoče spreminjati samo v večprocesnem { -brand-short-name }u. <a data-l10n-name="learn-more">Kako izveste, ali je večprocesni način omogočen</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -383,9 +367,6 @@ use-current-pages =
 choose-bookmark =
     .label = Uporabi zaznamek …
     .accesskey = z
-restore-default =
-    .label = Uporabi privzeto stran
-    .accesskey = r
 
 ## Search Section
 
@@ -655,6 +636,44 @@ addressbar-locbar-openpage-option =
     .accesskey = O
 addressbar-suggestions-settings = Spremeni nastavitve predlogov iskanja
 
+## Privacy Section - Content Blocking
+
+content-blocking-header = Zavračanje vsebine
+content-blocking-desc = Zavračajte vsebino tretjih strani, kot so oglasi in koda, ki lahko upočasnjuje vaše brskanje in vam sledi po spletu. Prilagodite nastavitve za najboljše razmerje med zaščito in učinkovitostjo delovanja.
+content-blocking-learn-more = Več o tem
+content-blocking-restore-defaults =
+    .label = Ponastavi privzeto
+    .accesskey = P
+content-blocking-toggle-on =
+    .tooltiptext = Izključi zavračanje vsebine
+content-blocking-toggle-off =
+    .tooltiptext = Vključi zavračanje vsebine
+content-blocking-toggle-label-on = VKLJUČENO
+    .accesskey = V
+content-blocking-toggle-label-off = IZKLJUČENO
+    .accesskey = I
+content-blocking-category-label = Izberite, kaj želite zavračati
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Počasni elementi sledenja
+    .accesskey = P
+content-blocking-fastblock-description = Zavrača vsebino tretjih strani, ki se nalaga več kot 5 sekund.
+content-blocking-fastblock-option-enabled =
+    .label = Vedno zavračaj
+content-blocking-fastblock-option-disabled =
+    .label = Nikoli ne zavračaj
+content-blocking-tracking-protection-label = Sledilci
+    .accesskey = S
+content-blocking-tracking-protection-description = Zavrača vse znane sledilce (pozor: lahko tudi prepreči nalaganje nekaterih strani).
+content-blocking-tracking-protection-option-enabled =
+    .label = Vedno zavračaj
+content-blocking-tracking-protection-option-pbm =
+    .label = Zavračaj samo v zasebnih oknih
+content-blocking-tracking-protection-option-disabled =
+    .label = Nikoli ne zavračaj
+content-blocking-tracking-protection-change-blocklist = Zamenjaj seznam za zavračanje …
+
 ## Privacy Section - Tracking
 
 tracking-header = Zaščita pred sledenjem
@@ -703,9 +722,19 @@ permissions-notification-link = Več o tem
 permissions-notification-pause =
     .label = Ne prikazuj obvestil do naslednjega zagona { -brand-short-name }a
     .accesskey = u
+permissions-block-autoplay-media =
+    .label = Prepreči spletnim stranem samodejno predvajanje zvočnih vsebin
+    .accesskey = z
+permissions-block-autoplay-media-menu = Za spletne strani, ki samodejno predvajajo zvok
 permissions-block-autoplay-media-exceptions =
     .label = Izjeme …
     .accesskey = I
+autoplay-option-ask =
+    .label = Vedno vprašaj
+autoplay-option-allow =
+    .label = Dovoli samodejno predvajanje
+autoplay-option-dont =
+    .label = Ne predvajaj samodejno
 permissions-block-popups =
     .label = Prepovej pojavna okna
     .accesskey = r
@@ -732,6 +761,9 @@ collection-health-report =
     .label = Dovoli { -brand-short-name }u pošiljanje tehničnih podatkov in podatkov o uporabi organizaciji { -vendor-short-name }
     .accesskey = h
 collection-health-report-link = Več o tem
+collection-studies =
+    .label = { -brand-short-name }u dovoli nameščanje in izvajanje raziskav
+collection-studies-link = Prikaži raziskave { -brand-short-name }a
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Pošiljanje podatkov je onemogočeno za to nastavitev graditve

@@ -8,7 +8,11 @@
 <!ENTITY loadError.label "Zmólka pśi cytanju boka">
 <!ENTITY retry.label "Hyšći raz wopytaś">
 <!ENTITY returnToPreviousPage.label "Slědk hyś">
+<!ENTITY returnToPreviousPage1.label "Slědk (dopórucony)">
 <!ENTITY advanced.label "Rozšyrjone">
+
+<!ENTITY continue2.label "Wěcej…">
+<!ENTITY moreInformation.label "Dalšne informacije">
 
 <!-- Specific error messages -->
 
@@ -24,19 +28,19 @@
 <!ENTITY dnsNotFound.longDesc1 "<strong>Jolic ta adresa jo korektna, móžośo:</strong><ul>
   <li>Pózdźej hyšći raz wopytaś.</li>
   <li>Seśowy zwisk pśeglědowaś.</li>
-  <li>Jolic sćo zwězany, sćo pak za wognjoweju murju, pśeglědajśo, lěc &brandShortName; ma pšawo na pśistup na web.</li></ul>">
+  <li>Jolic sćo zwězany, sćo pak za wognjoweju murju, pśeglědajśo, lěc &brandShortName; ma pšawo na pśistup k weboju.</li></ul>">
 
 <!ENTITY fileNotFound.title "Dataja njejo se namakała">
 <!ENTITY fileNotFound.longDesc "<ul> <li>Pśeglědajśo datajowe mě za wjelikopisańskimi abo hynakšymi pisańskimi zmólkami.</li> <li>Pśespytajśo, lěć dataja jo se pśesunuła, pśemjeniła abo wótpórała.</li> </ul>">
 
-<!ENTITY fileAccessDenied.title "Pśistup na dataju jo se wótpokazał">
+<!ENTITY fileAccessDenied.title "Pśistup k dataji jo se wótpokazał">
 <!ENTITY fileAccessDenied.longDesc "<ul> <li>Snaź jo se wótpórała, pśesunuła, abo datajowe pšawa zajźuju pśistupoju.</li> </ul>">
 
 <!ENTITY generic.title "Hopla.">
 <!ENTITY generic.longDesc "<p>&brandShortName; njamóžo toś ten bok někakeje pśicyny dla cytaś.</p>">
 
 <!ENTITY captivePortal.title "Se pla seśi pśizjawiś">
-<!ENTITY captivePortal.longDesc2 "<p>Musyśo se pla toś teje seśi pśizjawiś, nježli až móžośo pśistup na internet měś.</p>">
+<!ENTITY captivePortal.longDesc2 "<p>Musyśo se pla toś teje seśi pśizjawiś, nježli až móžośo pśistup k internetoju měś.</p>">
 
 <!ENTITY openPortalLoginPage.label2 "Pśizjawjeński bok seśi wócyniś">
 
@@ -84,10 +88,26 @@
 <!ENTITY nssFailure2.longDesc2 "<ul> <li>Bok, kótaryž cośo se woglědaś, njedajo se pokazaś, dokulaž awtentiskosć dostanych datow njedajo se pśeglědaś.</li> <li>Pšosym stajśo se z wobsejźarjami websedła do zwiska, aby je wó toś tom problemje informěrował.</li> </ul>">
 
 <!ENTITY certerror.longpagetitle1 "Waš zwisk njejo wěsty">
-<!-- Localization note (certerror.introPara) - The text content of the span tag
+<!ENTITY certerror.longpagetitle2 "Warnowanje: Potencielne wěstotne riziko prědku">
+<!-- Localization note (certerror.introPara, certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "Mějaŕ <span class='hostname'/> jo swójo websedło wopak konfigurěrował. Aby swóje informacije pśeśiwo tomu šćitał, až se kšadnu, njejo &brandShortName; z toś tym websedłom zwězało.">
+
+<!ENTITY certerror.introPara2 "&brandShortName; jo namakał potencielne wobgrozenje wěstoty a njejo togodla zwězał z <span class='hostname'/>. Jolic se k toś tomu sedłoju woglědujośo, mógli napadowarje wopytaś, daty ako waše gronidło, e-mailowe adrese abo drobnostki kreditowych kórtow kšadnuś.">
+
+<!ENTITY certerror.expiredCert.secondPara "Toś ten problem se nejskerjej zawinujo, dokulaž zeger wašogo licadła wopacny cas wužywa, což &brandShortName; pśi wěstem zwězowanju zajźujo.">
+
+<!ENTITY certerror.whatCanYouDoAboutItTitle "Co móžośo pśeśiwo tomu cyniś?">
+
+<!ENTITY certerror.unknownIssuer.whatCanYouDoAboutIt "<p>Nejskerjej websedło problem zawinujo, a njedajo nic, což móžośo cyniś, aby jen rozwězał.</p>
+<p>Jolic słušaśo k pśedewześowej seśi abo antiwirusowu softwaru wužywaśo, móžośo teamy pomocy wó pódpěru pšosyś. Móžośo teke administratora websedła wó problemje informěrowaś.</p>">
+
+<!ENTITY certerror.expiredCert.whatCanYouDoAboutIt2 "
+<p>Zeger wašogo licadła jo na <span id='wrongSystemTime_systemDate2'/> nastajony. Kontrolěrujśo, lěc su korektny datum, korektny cas a korektna casowa cona w systemowych nastajenjach wašogo licadła nastajone a aktualizěrujśo pótom <span class='hostname'/>.</p>
+<p>Jeli waš časnik hižo korektny čas pokazuje, je websydło najskerje wopak konfigurowane a njemóžeće ničo činić, zo byšće tutón problem rozrisał. Móžeće administratora websydła wo tutym problemje informować.</p>">
+
+<!ENTITY certerror.badCertDomain.whatCanYouDoAboutIt "<p>Nejskerjej websedło problem zawinujo, a njedajo nic, což móžośo cyniś, aby jen rozwězał. Móžośo administratora websedła wó problemje informěrowaś.</p>">
 
 <!ENTITY sharedLongDesc "<ul> <li>Sedło njeby mógło nachylu k dispoziciji staś abo by mógło pśeśěžone byś. Wopytajśo za mało wokognuśow hyšći raz.</li> <li>Jolic njamóžośo někotare boki cytaś, pśespytajśo zwisk wašeje licadłoweje seśi.</li> <li>Jolic wašo licadło abo waša seś šćita se z wognjoweju murju abo proksy, zawěsććo, až &brandShortName; ma pšawo na web pśistup měś.</li> </ul>">
 
@@ -99,6 +119,8 @@ was trying to connect. -->
 
 
 <!ENTITY securityOverride.exceptionButtonLabel "Wuwześe pśidaś…">
+
+<!ENTITY securityOverride.exceptionButton1Label "Riziko akceptěrowaś a pókšacowaś">
 
 <!ENTITY errorReporting.automatic2 "Dajśo zmólki ako toś te k wěsći, aby Mozilla pomagał, złosne sedła identificěrował a blokěrował">
 <!ENTITY errorReporting.learnMore "Dalšne informacije…">
@@ -118,7 +140,9 @@ was trying to connect. -->
 <!ENTITY certerror.wrongSystemTimeWithoutReference "<p>&brandShortName; njejo z <span id='wrongSystemTimeWithoutReference_URL'/> zwězał, dokulaž zda se, až zeger wašogo licadła pokazujo wopacny cas a to zajźujo wěstemu zwiskoju.</p> <p>Wašo licadło jo se na <span id='wrongSystemTimeWithoutReference_systemDate'/> stajił. Aby toś ten problem rozwězał, změńśo swóje datumowe a casowe nastajenja, aby korektny cas nastajił.</p>">
 
 <!ENTITY certerror.pagetitle1  "Njewěsty zwisk">
+<!ENTITY certerror.pagetitle2  "Warnowanje: Potencielne wěstotne riziko prědku">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Toś to sedło wužywa HTTP Strict Transport Security (HSTS), aby pódało, až &brandShortName; ma jano wěsćej z nim zwězaś. Pótakem njejo móžno, wuwześe za toś ten certifikat pśidaś.">
+<!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'></span> ma wěstotne pšawidło z mjenim HTTP Strict Transport Security (HSTS), kótarež wóznamjenijo, až &brandShortName; móžo se jano wěsće zwězaś. Njamóžośo wuwześe pśidaś, aby se toś tomu sydłoju woglědał.">
 <!ENTITY certerror.copyToClipboard.label "Tekst do mjazywótkłada kopěrowaś">
 
 <!ENTITY inadequateSecurityError.title "Waš zwisk njejo wěsty">
@@ -127,6 +151,9 @@ was trying to connect. -->
 <!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> wužywa wěstotnu technologiju, kótaraž jo zestarjona a sensibelna za napady. Napadowaŕ by mógał informacije lažko namakaś, kótarež maśo za wěste. Websedłowy administrator musy problem na serwerje rozwězaś, nježli až móžośo se k sedłoju woglědaś.</p><p>Zmólkowy kod: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
 
 <!ENTITY blockedByPolicy.title "Zablokěrowany bok">
+
+<!ENTITY clockSkewError.title "Zeger wašogo licadła wopak źo">
+<!ENTITY clockSkewError.longDesc "Wašo licadło měni, až cas jo <span id='wrongSystemTime_systemDate1'/>, což wěstemu zwězowanjeju &brandShortName; zajźujo. Aby se k <span class='hostname'></span> woglědał, aktualizěrujśo zeger swójogo licadła w systemowych nastajenjach na aktualny datum, aktualny cas a aktualnu casowu conu a aktualizěrujśo pótom <span class='hostname'></span>.">
 
 <!ENTITY prefReset.longDesc "Zda se, až waše nastajenja seśoweje wěstoty by mógli to zawinowaś. Cośo standardne nastajenja wótnowiś?">
 <!ENTITY prefReset.label "Standardne nastajenja wótnowiś">

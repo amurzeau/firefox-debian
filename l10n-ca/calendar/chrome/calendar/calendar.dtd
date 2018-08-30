@@ -35,8 +35,8 @@
 <!ENTITY calendar.unifinder.tree.priority.tooltip2         "Ordena per prioritat">
 <!ENTITY calendar.unifinder.tree.title.label               "Títol">
 <!ENTITY calendar.unifinder.tree.title.tooltip2            "Ordena per títol">
-<!ENTITY calendar.unifinder.tree.percentcomplete.label     "&#037; acabada">
-<!ENTITY calendar.unifinder.tree.percentcomplete.tooltip2  "Ordena per &#037; acabada">
+<!ENTITY calendar.unifinder.tree.percentcomplete.label     "&#37; acabada">
+<!ENTITY calendar.unifinder.tree.percentcomplete.tooltip2  "Ordena per &#37; acabada">
 <!ENTITY calendar.unifinder.tree.startdate.label           "Inici">
 <!ENTITY calendar.unifinder.tree.startdate.tooltip2        "Ordena per data d'inici">
 <!ENTITY calendar.unifinder.tree.enddate.label             "Fi">
@@ -78,12 +78,12 @@
 <!ENTITY calendar.nextmonth.accesskey           "s" >
 <!ENTITY calendar.prevmonth.accesskey           "a" >
 
-<!ENTITY calendar.navigation.nextday.tooltip    "Un dia després" >
-<!ENTITY calendar.navigation.prevday.tooltip    "Un dia abans" >
-<!ENTITY calendar.navigation.nextweek.tooltip   "Una setmana després" >
-<!ENTITY calendar.navigation.prevweek.tooltip   "Una setmana abans" >
-<!ENTITY calendar.navigation.nextmonth.tooltip  "Un mes després" >
-<!ENTITY calendar.navigation.prevmonth.tooltip  "Un mes abans" >
+<!ENTITY calendar.navigation.nextday.tooltip    "Dia següent" >
+<!ENTITY calendar.navigation.prevday.tooltip    "Dia anterior" >
+<!ENTITY calendar.navigation.nextweek.tooltip   "Setmana següent" >
+<!ENTITY calendar.navigation.prevweek.tooltip   "Setmana anterior" >
+<!ENTITY calendar.navigation.nextmonth.tooltip  "Mes següent" >
+<!ENTITY calendar.navigation.prevmonth.tooltip  "Mes anterior" >
 
 <!ENTITY calendar.newevent.button.label         "Cita nova" >
 <!ENTITY calendar.newtask.button.label          "Tasca nova" >
@@ -178,28 +178,40 @@
 <!ENTITY calendar.context.attendance.menu.label                 "Assistència">
 <!ENTITY calendar.context.attendance.menu.accesskey             "A">
 <!ENTITY calendar.context.attendance.occurrence.label           "Aquesta ocurrència">
+<!ENTITY calendar.context.attendance.all2.label                 "Sèrie completa">
 <!ENTITY calendar.context.attendance.send.label                 "Envia una notificació ara">
+<!ENTITY calendar.context.attendance.send.accesskey             "E">
 <!ENTITY calendar.context.attendance.dontsend.label             "No enviïs cap notificació">
+<!ENTITY calendar.context.attendance.dontsend.accesskey         "N">
 
+<!ENTITY calendar.context.attendance.occ.accepted.accesskey     "A">
 <!ENTITY calendar.context.attendance.occ.accepted.label         "Acceptada">
+<!ENTITY calendar.context.attendance.occ.tentative.accesskey    "v">
 <!ENTITY calendar.context.attendance.occ.tentative.label        "Acceptada provisionalment">
-<!ENTITY calendar.context.attendance.occ.declined.accesskey     "c">
+<!ENTITY calendar.context.attendance.occ.declined.accesskey     "n">
 <!ENTITY calendar.context.attendance.occ.declined.label         "Declinada">
+<!ENTITY calendar.context.attendance.occ.delegated.accesskey    "g">
 <!ENTITY calendar.context.attendance.occ.delegated.label        "Delegada">
 <!ENTITY calendar.context.attendance.occ.needsaction.accesskey  "E">
 <!ENTITY calendar.context.attendance.occ.needsaction.label      "Encara necessita una acció">
+<!ENTITY calendar.context.attendance.occ.inprogress.accesskey   "r">
 <!ENTITY calendar.context.attendance.occ.inprogress.label       "En curs">
+<!ENTITY calendar.context.attendance.occ.completed.accesskey    "b">
 <!ENTITY calendar.context.attendance.occ.completed.label        "Acabada">
 
+<!ENTITY calendar.context.attendance.all.accepted.accesskey     "c">
 <!ENTITY calendar.context.attendance.all.accepted.label         "Acceptada">
+<!ENTITY calendar.context.attendance.all.tentative.accesskey    "o">
 <!ENTITY calendar.context.attendance.all.tentative.label        "Acceptada provisionalment">
-<!ENTITY calendar.context.attendance.all.declined.accesskey     "d">
+<!ENTITY calendar.context.attendance.all.declined.accesskey     "i">
 <!ENTITY calendar.context.attendance.all.declined.label         "Declinada">
+<!ENTITY calendar.context.attendance.all.delegated.accesskey    "l">
 <!ENTITY calendar.context.attendance.all.delegated.label        "Delegada">
-<!ENTITY calendar.context.attendance.all.needsaction.accesskey  "n">
+<!ENTITY calendar.context.attendance.all.needsaction.accesskey  "s">
 <!ENTITY calendar.context.attendance.all.needsaction.label      "Encara necessita una acció">
-<!ENTITY calendar.context.attendance.all.inprogress.accesskey   "c">
+<!ENTITY calendar.context.attendance.all.inprogress.accesskey   "u">
 <!ENTITY calendar.context.attendance.all.inprogress.label       "En curs">
+<!ENTITY calendar.context.attendance.all.completed.accesskey    "d">
 <!ENTITY calendar.context.attendance.all.completed.label        "Acabada">
 
 <!-- Task Context Menu -->

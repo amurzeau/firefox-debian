@@ -7,6 +7,9 @@ languages-window =
     .style = width: 30em
 languages-close-key =
     .key = w
+languages-description = بعض اوقات ویب صفہ ایک سے زیادہ زبانوں میں دستیاب ہوتے ہیں۔ ویب صفحوں نمائش کرنے کے لیے، زبانوں کی ترجیحی ترتیب انتخاب کریں۔
+languages-customize-spoof-english =
+    .label = درجہ افزوں رازداری کے لیے ویب صفحات کے انگریزی ورژن کی درخواست کریں
 languages-customize-moveup =
     .label = اوپر کریں
     .accesskey = ا
@@ -33,3 +36,5 @@ languages-customize-add =
 #   $code (String) - Locale code of the locale (for example: "is", "es-CL")
 languages-code-format =
     .label = { $locale }  [{ $code }]
+languages-active-code-format =
+    .value = { languages-code-format.label }

@@ -5,13 +5,20 @@
 
 ## Settings
 
+site-data-settings-window =
+    .title = कुकीज आणि साईट माहिती व्यवस्थापित करा
+site-data-settings-description = खालील संकेतस्थळे संगणकावर कुकीज आणि साईट माहिती ठेवतात. आपण जोवर नष्ट करत नाही तोवर { -brand-short-name } स्थिर माहितीच्या संकेतस्थळाची माहिती साठवून ठेवते आणि जशी गरज वाटेल तसे अस्थिर माहिती असलेल्या संकेतस्थळांची माहिती नष्ट करते.
 site-data-search-textbox =
     .placeholder = वेबसाईट शोधा
     .accesskey = S
 site-data-column-host =
     .label = साइट
+site-data-column-cookies =
+    .label = कुकीज
 site-data-column-storage =
     .label = स्टोरेज
+site-data-column-last-used =
+    .label = शेवटचे वापरलेले
 site-data-remove-selected =
     .label = निवडलेले काढून टाका
     .accesskey = R
@@ -25,6 +32,7 @@ site-data-button-save =
 #   $value (Number) - Value of the unit (for example: 4.6, 500)
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 site-usage-pattern = { $value } { $unit }
+site-usage-persistent = { site-usage-pattern } (स्थिर)
 site-data-remove-all =
     .label = सर्व काढून टाका
     .accesskey = e
@@ -39,3 +47,6 @@ site-data-removing-window =
 site-data-removing-dialog =
     .title = { site-data-removing-header }
     .buttonlabelaccept = काढून टाका
+site-data-removing-header = कुकीज आणि साईट माहिती काढून टाकत आहे
+site-data-removing-desc = कुकीज आणि साईट माहिती काढून टाकल्याने आपण संकेतस्थळावरून लॉग आऊट होऊ शकता. आपणास खात्रीने बदल करायचे आहेत?
+site-data-removing-table = खालील संकेतस्थळावरून कुकीज आणि साईट माहिती काढण्यात येईल

@@ -12,6 +12,7 @@
 <!ENTITY enableGlodaSearch.label       "გლობალური ძიებისა და გზავნილთა ინდექსაციის ჩართვა">
 <!ENTITY enableGlodaSearch.accesskey   "E">
 <!ENTITY dateTimeFormatting.label      "რიცხვისა და დროის გაფორმება">
+<!ENTITY languageSelector.label        "ენა">
 <!ENTITY allowHWAccel.label            "ხელმისაწვდომობის შემთხვევაში აპარატული აჩქარების გამოყენება">
 <!ENTITY allowHWAccel.accesskey        "პ">
 <!ENTITY storeType.label               "შეტყობინების შენახვის სახე ახალი ანაგირშებისთვის:">
@@ -20,10 +21,10 @@
 <!ENTITY maildirStore.label            "თითოეული წერილი ფაილში (maildir)">
 
 <!ENTITY scrolling.label               "გადახვევა">
-<!ENTITY useAutoScroll.label           "თვითგადახვევა">
-<!ENTITY useAutoScroll.accesskey       "U">
-<!ENTITY useSmoothScrolling.label      "მდორე გადახვევა">
-<!ENTITY useSmoothScrolling.accesskey  "m">
+<!ENTITY useAutoScroll.label           "თვითგადაადგილების გამოყენება">
+<!ENTITY useAutoScroll.accesskey       "თ">
+<!ENTITY useSmoothScrolling.label      "გლუვი გადაადგილების გამოყენება">
+<!ENTITY useSmoothScrolling.accesskey  "გ">
 
 <!ENTITY systemIntegration.label       "სისტემური ინტეგრაცია">
 <!ENTITY alwaysCheckDefault.label      "გახსნისას &brandShortName; პროგრამის ყოველთვის შემოწმება ნაგულისხმებ საფოსტო პროგრამად">

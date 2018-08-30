@@ -7,7 +7,7 @@
 <!ENTITY firstrun_urlbar_subtext2 "Ένα σύγχρονο πρόγραμμα περιήγησης για κινητά από τη Mozilla, τον μη κερδοσκοπικό οργανισμό, που έχει αφοσιωθεί σε ένα ελεύθερο και ανοικτό διαδίκτυο.">
 <!ENTITY firstrun_panel_title_privacy "Απόρρητο">
 <!ENTITY firstrun_privacy_message "Περιηγηθείτε σαν να μην βλέπει κανείς">
-<!ENTITY firstrun_privacy_subtext "Η ιδιωτική περιήγηση με προστασία από παρακολούθηση αποκλείει ιχνηλάτες ενώ περιηγείστε και θα διαγράψει το ιστορικό σας όταν τελειώσετε με την περιήγηση.">
+<!ENTITY firstrun_privacy_subtext "Η ιδιωτική περιήγηση με προστασία από καταγραφή αποκλείει ιχνηλάτες ενώ περιηγείστε και θα διαγράψει το ιστορικό σας όταν τελειώσετε με την περιήγηση.">
 <!ENTITY firstrun_panel_title_customize "Προσαρμογή">
 <!ENTITY firstrun_customize_message "Κάντε το &brandShortName; δικό σας.">
 <!ENTITY firstrun_customize_subtext "Προσαρμόστε το &brandShortName; με πρόσθετα. Αποκλείστε διαφημίσεις, προσθέστε λειτουργίες ή επιλέξτε ένα νέο θέμα για να αναδείξετε την προσωπικότητά σας.">
@@ -29,19 +29,19 @@
 <!ENTITY firstrun_tabqueue_title "Σύνδεσμοι">
 <!-- Localization note (firstrun_tabqueue_message): 'Tab queue' is a feature that allows users to queue up or save links from outside of Firefox (without switching apps) - these links will be loaded in Firefox the next time Firefox is opened. -->
 <!ENTITY firstrun_tabqueue_message_off "Ενεργοποίηση της ουράς αναμονής καρτελών">
-<!ENTITY firstrun_tabqueue_subtext_off "Αποθήκευση συνδέσμων για αργότερα στον &brandShortName; όταν τους επιλέγω σε άλλες εφαρμογές.">
+<!ENTITY firstrun_tabqueue_subtext_off "Αποθήκευση συνδέσμων στο &brandShortName; όταν επιλέγονται σε άλλες εφαρμογές.">
 
 <!ENTITY firstrun_tabqueue_message_on "Επιτυχία!">
 <!ENTITY firstrun_tabqueue_subtext_on "Μπορείτε πάντα να το απενεργοποιήσετε στις &settings; στην ενότητα &pref_category_general;.">
 
 <!ENTITY firstrun_readerview_title "Άρθρα">
 <!-- Localization note (firstrun_readerview_message): This is a casual way of describing getting rid of unnecessary things, and is referring to simplifying websites so only the article text and images are visible, removing unnecessary headers or ads. -->
-<!ENTITY firstrun_readerview_message "Τακτοποιημένη εμφάνιση">
+<!ENTITY firstrun_readerview_message "Κρατήστε την ουσία">
 <!ENTITY firstrun_readerview_subtext "Χρησιμοποιήστε την προβολή ανάγνωσης για πιο ευανάγνωστα άρθρα, διαθέσιμα ακόμα και χωρίς σύνδεση.">
 
 <!-- Localization note (firstrun_devices_title): This is a casual way of addressing the user, somewhat referring to their online identity (which would include other devices, Firefox usage, accounts, etc). -->
 <!ENTITY firstrun_account_title "Εσείς">
-<!ENTITY firstrun_account_message "Έχετε τον &brandShortName; σε κάποια άλλη συσκευή;">
+<!ENTITY firstrun_account_message "Έχετε το &brandShortName; σε κάποια άλλη συσκευή;">
 
 <!ENTITY  onboard_start_restricted1 "Παραμείνετε ασφαλής και διατηρήστε τον έλεγχο με αυτή την απλοποιημένη έκδοση του &brandShortName;.">
 
@@ -68,7 +68,7 @@
 <!ENTITY  crash_close_label "Κλείσιμο">
 <!ENTITY  crash_restart_label "Επανεκκίνηση του &brandShortName;">
 
-<!ENTITY url_bar_default_text2 "Αναζητήστε ή εισάγετε μια διεύθυνση">
+<!ENTITY url_bar_default_text2 "Αναζήτηση ή εισαγωγή διεύθυνσης">
 
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
@@ -165,7 +165,7 @@
 <!-- Localization note (overlay_share_label) : This is the label that appears
      in Android's intent chooser when sending a link to Firefox to bookmark,
      send to another device, or add to Reading List. -->
-<!ENTITY overlay_share_label "Προσθήκη στον &brandShortName;">
+<!ENTITY overlay_share_label "Προσθήκη στο &brandShortName;">
 
 <!-- Localization note (overlay_share_bookmark_btn_label) : This string is
      used in the share overlay menu to select an action. It is the verb
@@ -262,8 +262,8 @@
 <!ENTITY pref_header_vendor "&vendorShortName;">
 
 <!ENTITY pref_cookies_menu "Cookies">
-<!ENTITY pref_cookies_accept_all "Ενεργοποίηση">
-<!ENTITY pref_cookies_not_accept_foreign "Ενεργοποίηση, εκτός από cookies τρίτων">
+<!ENTITY pref_cookies_accept_all "Ενεργό">
+<!ENTITY pref_cookies_not_accept_foreign "Ενεργό, εκτός από cookies τρίτων">
 <!ENTITY pref_cookies_disabled "Απενεργοποίηση">
 
 <!-- Localization note (pref_category_data_saver): “data saver” in this
@@ -278,18 +278,18 @@
 <!ENTITY pref_tap_to_load_images_data "Μόνο μέσω Wi-Fi">
 <!ENTITY pref_tap_to_load_images_disabled2 "Ποτέ">
 
-<!ENTITY pref_show_web_fonts "Εμφάνιση web γραμματοσειρών">
+<!ENTITY pref_show_web_fonts "Εμφάνιση γραμματοσειρών ιστού">
 <!ENTITY pref_show_web_fonts_summary2 "Λήψη απομακρυσμένων γραμματοσειρών κατά την φόρτωση σελίδων">
 
-<!ENTITY pref_tracking_protection_title2 "Προστασία δεδομένων περιήγησης">
-<!ENTITY pref_donottrack_title "Αποτροπή καταγραφής (Do Not Track)">
-<!ENTITY pref_donottrack_summary "Ο &brandShortName; θα γνωστοποιεί στις ιστοσελίδες ότι δεν επιθυμείτε την καταγραφή της συμπεριφοράς περιήγησης σας">
+<!ENTITY pref_tracking_protection_title2 "Προστασία από καταγραφή">
+<!ENTITY pref_donottrack_title "Αποτροπή καταγραφής">
+<!ENTITY pref_donottrack_summary "Το &brandShortName; θα γνωστοποιεί στις ιστοσελίδες ότι δεν επιθυμείτε να καταγραφείτε">
 
-<!ENTITY pref_tracking_protection_enabled "Ενεργοποιημένη">
+<!ENTITY pref_tracking_protection_enabled "Ενεργή">
 <!ENTITY pref_tracking_protection_enabled_pb "Μόνο στην ιδιωτική περιήγηση">
-<!ENTITY pref_tracking_protection_disabled "Απενεργοποιημένη">
+<!ENTITY pref_tracking_protection_disabled "Ανενεργή">
 
-<!ENTITY pref_whats_new_notification "Τί νέο υπάρχει στον &brandShortName;">
+<!ENTITY pref_whats_new_notification "Τί νέο υπάρχει στο &brandShortName;">
 <!ENTITY pref_whats_new_notification_summary "Μάθετε για τα νέα χαρακτηριστικά από μια ενημέρωση">
 
 <!-- Localization note (pref_feature_tips_notification): Title of a new toggleable setting in Settings-Notifications screen.
@@ -314,20 +314,20 @@
 <!ENTITY custom_tabs_menu_item_open_in "Άνοιγμα στο &formatS;">
 <!ENTITY custom_tabs_menu_footer "Με την υποστήριξη του &brandShortName;">
 <!-- Long-click title of CustomTabsActivity will copy URL to clipboard and display this hint -->
-<!ENTITY custom_tabs_hint_url_copy "Το URL αντεγράφη">
+<!ENTITY custom_tabs_hint_url_copy "Το URL αντιγράφτηκε">
 
 <!ENTITY pref_pwa "Προοδευτικές διαδικτυακές εφαρμογές">
 <!ENTITY pref_pwa_summary "Να επιτρέπεται η προσθήκη διαδικτυακών εφαρμογών στην αρχική οθόνη">
 
-<!ENTITY tracking_protection_prompt_title "Τώρα και με προστασία δεδομένων περιήγησης">
-<!ENTITY tracking_protection_prompt_text "Ενεργή φραγή της καταγραφής δεδομένων περιήγησης έτσι ώστε να μην χρειάζεται να ανησυχείτε.">
+<!ENTITY tracking_protection_prompt_title "Τώρα με προστασία από καταγραφή">
+<!ENTITY tracking_protection_prompt_text "Φραγή στοιχείων καταγραφής έτσι, ώστε να μην χρειάζεται να ανησυχείτε.">
 <!ENTITY tracking_protection_prompt_tip_text "Μεταβείτε στις ρυθμίσεις απορρήτου για να μάθετε περισσότερα">
-<!ENTITY tracking_protection_prompt_action_button "Το κατάλαβα!">
+<!ENTITY tracking_protection_prompt_action_button "Το \&apos;πιασα!">
 
-<!ENTITY tab_queue_toast_message3 "Η καρτέλα αποθηκεύτηκε στον &brandShortName;">
+<!ENTITY tab_queue_toast_message3 "Η καρτέλα αποθηκεύτηκε στο &brandShortName;">
 <!ENTITY tab_queue_toast_action "Άνοιγμα τώρα">
 <!ENTITY tab_queue_prompt_title "Άνοιγμα πολλαπλών συνδέσμων;">
-<!ENTITY tab_queue_prompt_text4 "Αποθήκευση τους μέχρι την επόμενη φορά που θα ανοίξετε τον &brandShortName;.">
+<!ENTITY tab_queue_prompt_text4 "Αποθήκευση μέχρι την επόμενη φορά που θα ανοίξετε το &brandShortName;.">
 <!ENTITY tab_queue_prompt_tip_text2 "Αυτό μπορείτε να το αλλάξετε αργότερα στις Ρυθμίσεις">
 <!-- Localization note (tab_queue_prompt_permit_drawing_over_apps): This additional text is shown if the
      user needs to enable an Android setting in order to enable tab queues. -->
@@ -349,7 +349,7 @@
 
 <!-- Localization note (tab_queue_notification_settings): This notification text is shown if a tab
      has been queued but we are missing the system permission to show an overlay. -->
-<!ENTITY tab_queue_notification_settings "Για το «Άνοιγμα πολλαπλών συνδέσμων», παρακαλώ ενεργοποιήστε την άδεια «Σχεδίαση πάνω σε άλλες εφαρμογές» για τον &brandShortName;">
+<!ENTITY tab_queue_notification_settings "Για το \&quot;Άνοιγμα πολλαπλών συνδέσμων\&quot;, παρακαλούμε ενεργοποιήστε την άδεια \&quot;Σχεδίαση πάνω σε άλλες εφαρμογές\&quot; για το &brandShortName;">
 
 <!ENTITY pref_char_encoding "Κωδικοποίηση χαρακτήρων">
 <!ENTITY pref_char_encoding_on "Εμφάνιση μενού">
@@ -359,11 +359,11 @@
      The action is shown below a header saying "Clear private data"; See pref_clear_private_data -->
 <!ENTITY pref_clear_private_data_now_tablet "Εκκαθάριση τώρα">
 <!ENTITY pref_clear_on_exit_title3 "Εκκαθάριση ιδιωτικών δεδομένων κατά την έξοδο">
-<!ENTITY pref_clear_on_exit_summary2 "Ο &brandShortName; θα προχωρά αυτόματα σε εκκαθάριση των δεδομένων σας όταν θα επιλέγετε \&quot;Έξοδος\&quot; από το κύριο μενού">
+<!ENTITY pref_clear_on_exit_summary2 "Το &brandShortName; θα κάνει αυτόματα εκκαθάριση των δεδομένων σας όταν θα επιλέγετε \&quot;Έξοδος\&quot; από το κύριο μενού">
 <!ENTITY pref_clear_on_exit_dialog_title "Επιλέξετε τα δεδομένα προς εκκαθάριση">
 <!ENTITY pref_restore_tabs "Επαναφορά καρτελών">
 <!ENTITY pref_restore_always "Να επαναφέρονται πάντα">
-<!ENTITY pref_restore_quit "Να μην επαναφέρονται μετά την έξοδο από τον &brandShortName;">
+<!ENTITY pref_restore_quit "Να μην γίνεται επαναφορά μετά την έξοδο από το &brandShortName;">
 
 <!-- Localization note (pref_use_system_font_size, pref_use_system_font_size_summary):
      Font size here refers to the name of the corresponding Android system setting. -->
@@ -372,6 +372,8 @@
 
 <!ENTITY pref_media_autoplay_enabled "Αποδοχή αυτόματης αναπαραγωγής">
 <!ENTITY pref_media_autoplay_enabled_summary "Καθορίστε αν οι ιστοσελίδες θα αναπαράγουν αυτόματα βίντεο και άλλο περιεχόμενο πολυμέσων">
+<!ENTITY pref_media_autoplay_allow "Αποδοχή αυτόμ. αναπαραγωγής">
+<!ENTITY pref_media_autoplay_block "Φραγή αυτόμ. αναπαραγωγής">
 <!ENTITY pref_zoom_force_enabled "Ενεργοποίηση μεγέθυνσης πάντα">
 <!ENTITY pref_zoom_force_enabled_summary "Εξαναγκασμός δυνατότητας μεγέθυνσης σε κάθε σελίδα">
 <!ENTITY pref_voice_input "Φωνητική εισαγωγή">
@@ -401,9 +403,9 @@
 <!ENTITY pref_private_data_downloadFiles2 "Λήψεις">
 <!ENTITY pref_private_data_syncedTabs "Συγχρονισμένες καρτέλες">
 
-<!ENTITY pref_default_browser "Ορισμός ως προεπιλεγμένος περιηγητής">
+<!ENTITY pref_default_browser "Ορισμός ως προεπιλεγμένο πρόγραμμα περιήγησης">
 <!ENTITY pref_default_browser_mozilla_support_tablet "Επισκεφθείτε την Υποστήριξη Mozilla">
-<!ENTITY pref_about_firefox "Σχετικά με τον &brandShortName;">
+<!ENTITY pref_about_firefox "Σχετικά με το &brandShortName;">
 <!ENTITY pref_vendor_faqs "Συχνές ερωτήσεις">
 <!ENTITY pref_vendor_feedback "Στείλτε σχόλια">
 
@@ -426,7 +428,7 @@
 <!ENTITY datareporting_notification_action "Επιλέξτε τι θα μοιράζεστε">
 <!-- Used in datareporting_notification_ticket_text, but unused in strings.xml. -->
 <!ENTITY datareporting_notification_action_long "Επιλέξτε ποιες πληροφορίες θα μοιράζεστε">
-<!ENTITY datareporting_notification_summary "Για τη βελτίωση της εμπειρίας σας, ο &brandShortName; αποστέλλει αυτόματα ορισμένες πληροφορίες στο &vendorShortName;.">
+<!ENTITY datareporting_notification_summary "Για τη βελτίωση της εμπειρίας σας, το &brandShortName; αποστέλλει αυτόματα ορισμένες πληροφορίες στη &vendorShortName;.">
 <!-- When this item is removed, also remove datareporting_notification_action_long:
      it is unused in strings.xml. -->
 <!ENTITY datareporting_notification_ticker_text "&datareporting_notification_title;: &datareporting_notification_action_long;">
@@ -437,16 +439,21 @@
      en-US/chrome/browser/preferences/advanced.dtd (healthReportSection.label,
      healthReportDesc.label, telemetrySection.label, telemetryDesc.label,
      crashReporterDesc.label). -->
-<!ENTITY datareporting_fhr_title "Αναφορά Υγείας &brandShortName;">
+<!ENTITY datareporting_fhr_title "Αναφορά υγείας &brandShortName;">
 <!ENTITY datareporting_fhr_summary2 "Αποστέλλει πληροφορίες στο &vendorShortName; σχετικά με την υγεία του περιηγητή σας και σας βοηθά να κατανοήσετε την απόδοση του">
 <!ENTITY datareporting_telemetry_title "Τηλεμετρία">
-<!ENTITY datareporting_telemetry_summary "Αποστέλλει πληροφορίες απόδοσης, χρήσης, υλικού συσκευής και εξατομίκευσης του περιηγητή σας στο &vendorShortName; έτσι ώστε να βελτιώσουμε τον &brandShortName;">
-<!ENTITY datareporting_crashreporter_summary "Ο &brandShortName; αποστέλλει αναφορές κατάρρευσης έτσι ώστε το &vendorShortName; να βελτιώσει τη σταθερότητα και ασφάλεια του περιηγητή σας">
+<!ENTITY datareporting_telemetry_summary "Αποστέλλει πληροφορίες επιδόσεων, χρήσης, υλικού και εξατομίκευσης του προγράμματος περιήγησής σας στη &vendorShortName; για να βελτιώσουμε το &brandShortName;">
+<!ENTITY datareporting_crashreporter_summary "Το &brandShortName; αποστέλλει αναφορές κατάρρευσης έτσι, ώστε η &vendorShortName; να βελτιώσει τη σταθερότητα και την ασφάλεια του προγράμματος περιήγησής σας">
 <!-- Localization note (datareporting_crashreporter_title_short) : This string matches
      (crashReporterSection.label) in en-US/chrome/browser/preferences/advanced.dtd.-->
 <!ENTITY datareporting_crashreporter_title_short "Αναφορές κατάρρευσης">
 <!ENTITY datareporting_wifi_title2 "Υπηρεσία Τοποθεσίας &vendorShortName;">
 <!ENTITY datareporting_wifi_geolocation_summary4 "Βοηθήστε το &vendorShortName; να χαρτογραφήσει τον κόσμο! Αποστείλετε την τοποθεσία της συσκευής σας κατά προσέγγιση (βάσει Wi-Fi και δικτύων κινητής τηλεφωνίας) έτσι ώστε να βελτιώσετε την υπηρεσία γεωεντοπισμού μας.">
+<!-- Localization note (datareporting_notification_title ) : This will be the title
+     of the notification shown whenever the user has enabled data reporting and the stumbler
+     service is running. -->
+<!ENTITY datareporting_stumbler_notification_title "Εκτελείται η υπηρεσία τοποθεσίας της &vendorShortName;">
+
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -472,7 +479,7 @@
 <!ENTITY print "Εκτύπωση">
 <!ENTITY view_page_source "Προβολή πηγής σελίδας">
 <!ENTITY find_in_page "Εύρεση στη σελίδα">
-<!ENTITY desktop_mode "Εμφάν. σελίδας desktop">
+<!ENTITY desktop_mode "Έκδοση για υπολογιστές">
 <!ENTITY page "Σελίδα">
 <!ENTITY tools "Εργαλεία">
 <!ENTITY new_tab "Νέα καρτέλα">
@@ -502,7 +509,7 @@
 <!ENTITY contextmenu_open_new_tab "Άνοιγμα σε νέα καρτέλα">
 <!ENTITY contextmenu_open_private_tab "Άνοιγμα σε ιδιωτική καρτέλα">
 <!ENTITY contextmenu_remove "Αφαίρεση">
-<!ENTITY contextmenu_add_page_shortcut "Προσθήκη συντόμευσης σελίδας">
+<!ENTITY contextmenu_add_page_shortcut "Προσθήκη συντόμ. σελίδας">
 <!ENTITY contextmenu_set_as_homepage "Ορισμός ως αρχική σελίδα">
 <!ENTITY contextmenu_share "Κοινή χρήση">
 <!ENTITY contextmenu_pasteandgo "Επικόλληση &amp; μετάβαση">
@@ -517,8 +524,8 @@
 <!-- Localization note (contextmenu_pin_to_top_sites, contextmenu_unpin_from_top_sites): These strings are used to
      pin/unpin items from top sites when the user is not on the top sites screen so they'd be missing context on what
      just "Pin Site" or "Unpin Site" would mean. -->
-<!ENTITY contextmenu_pin_to_top_sites "Καρφίτσωμα στις κορυφαίες ιστοσελίδες">
-<!ENTITY contextmenu_unpin_from_top_sites "Ξεκαρφίτσωμα από τις κορυφαίες ιστοσελίδες">
+<!ENTITY contextmenu_pin_to_top_sites "Καρφίτσωμα στα κορυφαία">
+<!ENTITY contextmenu_unpin_from_top_sites "Ξεκαρφίτσωμα από τα κορυφαία">
 <!ENTITY contextmenu_add_search_engine "Προσθήκη μηχανής αναζήτησης">
 
 <!-- Localization note (pinned_page_to_top_sites, unpinned_page_from_top_sites): These strings are shown in a snackbar
@@ -545,7 +552,7 @@
 <!ENTITY pref_scroll_title_bar_summary2 "Απόκρυψη της μπάρας εργαλείων του &brandShortName; κατά την κύλιση προς τα κάτω σε μια σελίδα">
 
 <!ENTITY pref_tab_queue_title3 "Ουρά αναμονής καρτελών">
-<!ENTITY pref_tab_queue_summary4 "Αποθήκευση συνδέσμων μέχρι την επόμενη φορά που θα ανοίξετε τον &brandShortName;">
+<!ENTITY pref_tab_queue_summary4 "Αποθήκευση συνδέσμων μέχρι την επόμενη φορά που θα ανοίξετε το &brandShortName;">
 
 <!-- Localization note (pref_compact_tabs): Label for setting that controls whether 1 wide column or
      2 narrower (compact) columns are used for tabs in the tabs tray in portrait mode on phones. -->
@@ -646,7 +653,7 @@
 <!ENTITY remote_tabs_panel_moved_desc "Έχουμε μετακινήσει τις καρτέλες από άλλες συσκευές σας σε ένα πλαίσιο στην αρχική σελίδα για εύκολη πρόσβαση κάθε φορά που ανοίγετε μια νέα καρτέλα.">
 <!ENTITY remote_tabs_panel_moved_link "Μετάβαση στον νέο μου πλαίσιο.">
 
-<!ENTITY pin_site_dialog_hint "Εισάγετε έναν όρο αναζήτησης">
+<!ENTITY pin_site_dialog_hint "Εισάγετε μια λέξη-κλειδί αναζήτησης">
 
 <!ENTITY filepicker_title "Επιλογή αρχείου">
 <!ENTITY filepicker_audio_title "Επιλέξτε ή εγγράψτε έναν ήχο">
@@ -671,15 +678,15 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY identity_connection_chromeui "Αυτή είναι μια ασφαλής σελίδα του &brandShortName;.">
 
 <!-- Mixed content notifications in site identity popup -->
-<!ENTITY mixed_content_blocked_all1 "Ο &brandShortName; έχει αποκλείσει το μη ασφαλές περιεχόμενο σε αυτήν τη σελίδα.">
-<!ENTITY mixed_content_blocked_some1 "Ο &brandShortName; έχει αποκλείσει κάποιο από το μη ασφαλές περιεχόμενο σε αυτήν τη σελίδα.">
+<!ENTITY mixed_content_blocked_all1 "Το &brandShortName; έχει αποκλείσει το επισφαλές περιεχόμενο σε αυτή τη σελίδα.">
+<!ENTITY mixed_content_blocked_some1 "Το &brandShortName; έχει αποκλείσει μέρος του επισφαλούς περιεχομένου σε αυτή τη σελίδα.">
 <!ENTITY mixed_content_display_loaded1 "Κάποια τμήματα αυτής της σελίδας δεν είναι ασφαλή (π.χ. κάποιες εικόνες).">
 <!ENTITY mixed_content_protection_disabled1 "Έχετε απενεργοποιήσει την προστασία από μη ασφαλές περιεχόμενο σε αυτήν τη σελίδα.">
 
 <!-- Tracking content notifications in site identity popup -->
-<!ENTITY doorhanger_tracking_title2 "Προστασία δεδομένων περιήγησης">
-<!ENTITY doorhanger_tracking_state_enabled "Ενεργοποιημένη">
-<!ENTITY doorhanger_tracking_state_disabled "Απενεργοποιημένη">
+<!ENTITY doorhanger_tracking_title2 "Προστασία από καταγραφή">
+<!ENTITY doorhanger_tracking_state_enabled "Ενεργή">
+<!ENTITY doorhanger_tracking_state_disabled "Ανενεργή">
 <!ENTITY doorhanger_tracking_message_enabled1 "Απετράπησαν προσπάθειες καταγραφής της συμπεριφοράς περιήγησης σας.">
 <!ENTITY doorhanger_tracking_message_disabled2 "Αυτή η σελίδα περιλαμβάνει στοιχεία που ενδέχεται να καταγράφουν την περιήγηση σας.">
 
@@ -707,7 +714,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
       via the search engine that uses the icon they clicked. This text is used
       for screen reader users when they hover each icon - &formatS; will be
       replaced with the name of the currently highlighted icon. -->
-<!ENTITY search_bar_item_desc "Αναζήτηση με τη μηχανή &formatS;">
+<!ENTITY search_bar_item_desc "Αναζήτηση με &formatS;">
 
 <!-- Localization note (suggestion_for_engine): The placeholder &formatS1; will be
      replaced with the name of the search engine. The placeholder &formatS2; will be
@@ -717,8 +724,8 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY searchable_description "Σελιδοδείκτες και ιστορικό">
 
  <!-- Updater notifications -->
-<!ENTITY updater_start_title2 "Διατίθεται ενημέρωση για τον &brandShortName;">
-<!ENTITY updater_start_select2 "Πατήστε για την λήψη">
+<!ENTITY updater_start_title2 "Διαθέσιμη ενημέρωση για το &brandShortName;">
+<!ENTITY updater_start_select2 "Πατήστε για λήψη">
 
 <!ENTITY updater_downloading_title2 "Γίνεται λήψη του &brandShortName;">
 <!ENTITY updater_downloading_title_failed2 "Η λήψη απέτυχε">
@@ -726,14 +733,14 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY updater_downloading_retry2 "Πατήστε για νέα προσπάθεια">
 
 <!ENTITY updater_apply_title3 "Ελήφθη ενημέρωση για το &brandShortName;">
-<!ENTITY updater_apply_select3 "Αγγίξτε για εγκατάσταση">
+<!ENTITY updater_apply_select3 "Πατήστε για εγκατάσταση">
 
 <!-- Localization note (updater_permission_text): This text is shown in a notification and as a snackbar
      if the app requires a runtime permission to download updates. Currently, the updater only sees
      remotely advertised updates in the Nightly and Aurora channels. -->
-<!ENTITY updater_permission_text "Για να είναι δυνατή η λήψη αρχείων και ενημερώσεων, επιτρέψετε στον &brandShortName; την πρόσβαση στον χώρο αποθήκευσης.">
+<!ENTITY updater_permission_text "Για να είναι δυνατή η λήψη αρχείων και ενημερώσεων, επιτρέψετε στο &brandShortName; την πρόσβαση στο χώρο αποθήκευσης.">
 <!-- LOCALIZATION NOTE (updater_permission_allow): This action is shown in a snackbar along with updater_permission_text. -->
-<!ENTITY updater_permission_allow "Να επιτρέπεται">
+<!ENTITY updater_permission_allow "Αποδοχή">
 
     <!-- Guest mode -->
 <!ENTITY new_guest_session "Νέα συνεδρία επισκέπτη">
@@ -759,7 +766,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- These are only used for accessibility for the done and overflow-menu buttons in the actionbar.
      They are never shown to users -->
 <!ENTITY actionbar_menu "Μενού">
-<!ENTITY actionbar_done "Ολοκληρώθηκε">
+<!ENTITY actionbar_done "Τέλος">
 
 <!-- Voice search in the awesome bar -->
 <!ENTITY voicesearch_prompt "Μιλήστε τώρα">
@@ -827,20 +834,20 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- LOCALIZATION NOTE (unsupported_sdk_version): The user installed a build of this app that does not support
      the Android version of this device. the formatS1 is replaced by the CPU ABI (e.g., ARMv7); the formatS2 is
      replaced by the Android OS version (e.g., 14)-->
-<!ENTITY unsupported_sdk_version "Λυπούμαστε! Αυτή η έκδοση του &brandShortName; δεν είναι συμβατή με αυτή τη συσκευή (&formatS1;, &formatS2;). Παρακαλώ κατεβάστε τη σωστή έκδοση.">
+<!ENTITY unsupported_sdk_version "Λυπούμαστε! Αυτή η έκδοση του &brandShortName; δεν είναι συμβατή με αυτή τη συσκευή (&formatS1;, &formatS2;). Παρακαλούμε κάντε λήψη της σωστής έκδοσης.">
 
 <!-- LOCALIZATION NOTE(corrupt_apk): This notification is shown if corruption has been detected on startup and the user has to reinstall Firefox -->
-<!ENTITY corrupt_apk "Αδυναμία έναρξης του &brandShortName;. Παρακαλούμε πραγματοποιείστε επανεγκατάσταση και προσπαθήστε ξανά.">
+<!ENTITY corrupt_apk "Αδυναμία έναρξης του &brandShortName;. Παρακαλούμε κάνετε νέα εγκατάσταση και δοκιμάστε ξανά.">
 
-<!ENTITY eol_notification_title2 "Ο &brandShortName; δεν θα λαμβάνει πλέον ενημερώσεις">
+<!ENTITY eol_notification_title2 "Το &brandShortName; δεν θα λαμβάνει πλέον ενημερώσεις">
 <!ENTITY eol_notification_summary "Πατήστε για να μάθετε περισσότερα">
 
 <!-- LOCALIZATION NOTE (whatsnew_notification_title, whatsnew_notification_summary): These strings
      are used for a system notification that's shown to users after the app updates. -->
-<!ENTITY whatsnew_notification_title "Ο &brandShortName; είναι ενημερωμένος">
+<!ENTITY whatsnew_notification_title "Το &brandShortName; είναι ενημερωμένο">
 <!ENTITY whatsnew_notification_summary "Μάθετε τι νέο υπάρχει σε αυτή την έκδοση">
 
-<!ENTITY promotion_add_page_shortcut "Προσθήκη συντόμευσης σελίδας">
+<!ENTITY promotion_add_page_shortcut "Προσθήκη συντόμ. σελίδας">
 
 <!ENTITY helper_first_offline_bookmark_title "Ανάγνωση χωρίς σύνδεση">
 <!ENTITY helper_first_offline_bookmark_message "Βρείτε τα στοιχεία της προβολής ανάγνωσης στους σελιδοδείκτες σας, ακόμα και χωρίς σύνδεση.">
@@ -875,8 +882,8 @@ is simply hidden from the Activity Stream panel. -->
 <!ENTITY activity_stream_remove "Αφαίρεση">
 <!ENTITY activity_stream_delete_history "Διαγραφή από ιστορικό">
 
-<!ENTITY private_tab_panel_title "Ιδιωτική Περιήγηση + Προστασία Παρακολούθησης">
-<!ENTITY private_tab_panel_description "Ο &brandShortName; αποκλείει τμήματα των σελίδων τα οποία ενδέχεται να καταγράφουν την περιήγηση σας.">
+<!ENTITY private_tab_panel_title "Ιδιωτική περιήγηση + Προστασία από καταγραφή">
+<!ENTITY private_tab_panel_description "Το &brandShortName; αποκλείει τμήματα σελίδων που ενδέχεται να καταγράφουν την περιήγηση σας.">
 <!ENTITY private_tab_panel_description2 "Δεν θα διατηρείται το ιστορικό, ωστόσο τα ληφθέντα αρχεία και οι νέοι σελιδοδείκτες θα αποθηκεύονται στη συσκευή σας.">
 <!ENTITY private_tab_learn_more "Θέλετε να μάθετε περισσότερα;">
 
@@ -891,3 +898,16 @@ See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "Προσθήκη στην αρχική οθόνη">
 <!ENTITY pwa_continue_to_website "Συνέχεια στην ιστοσελίδα">
 <!ENTITY pwa_onboarding_sumo "Μπορείτε να προσθέσετε εύκολα αυτή την ιστοσελίδα στην αρχική οθόνη για να άμεση πρόσβαση και ταχύτερη περιήγηση, σαν να ήταν εφαρμογή.">
+
+<!-- Used by accessibility services to identify the play/pause buttons shown in the
+Picture-in-picture mini window -->
+<!ENTITY pip_play_button_title "Αναπαραγωγή">
+<!ENTITY pip_play_button_description "Συνέχεια αναπαραγωγής">
+<!ENTITY pip_pause_button_title "Παύση">
+<!ENTITY pip_pause_button_description "Παύση αναπαραγωγής">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY mls_notification_channel "Υπηρεσία τοποθεσίας &vendorShortName;">
+<!ENTITY download_notification_channel "Λήψεις">
+<!ENTITY media_notification_channel "Αναπαραγωγή πολυμέσων">

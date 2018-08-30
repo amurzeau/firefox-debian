@@ -185,7 +185,7 @@
 <!-- Localization note (overlay_no_synced_devices) : Used when the menu option
      to send a tab to a synced device is pressed and no other synced devices
      are found. -->
-<!ENTITY overlay_no_synced_devices "Firefox ანგარიშით დაკავშირებული მოწყობილობა ვერ მოიძებნა">
+<!ENTITY overlay_no_synced_devices "Firefox-ანგარიშით დაკავშირებული მოწყობილობა ვერ მოიძებნა">
 
 <!ENTITY pref_category_search3 "ძიება">
 <!ENTITY pref_category_search_summary2 "დამატება, ნაგულისხმევად დაყენება, შემოთავაზებების ჩვენება">
@@ -263,7 +263,7 @@
 
 <!ENTITY pref_cookies_menu "ფუნთუშები">
 <!ENTITY pref_cookies_accept_all "ჩართულია">
-<!ENTITY pref_cookies_not_accept_foreign "ჩართულია, გარდა  მე-3 მხარისა">
+<!ENTITY pref_cookies_not_accept_foreign "ჩართულია, გარდა მე-3 მხარისა">
 <!ENTITY pref_cookies_disabled "ამორთულია">
 
 <!-- Localization note (pref_category_data_saver): “data saver” in this
@@ -372,6 +372,8 @@
 
 <!ENTITY pref_media_autoplay_enabled "თვითგაშვების დაშვება">
 <!ENTITY pref_media_autoplay_enabled_summary "ვებსაიტის უფლებების მართვა, ვიდეოებისა და სხვა მედია შიგთავსის ავტომატურ გაშვებაზე">
+<!ENTITY pref_media_autoplay_allow "თვითგაშვების დაშვება">
+<!ENTITY pref_media_autoplay_block "თვითგაშვების შეზღუდვა">
 <!ENTITY pref_zoom_force_enabled "მასშტაბირების ჩართვა ყველგან">
 <!ENTITY pref_zoom_force_enabled_summary "უგულებელყოფს საიტების პარამეტრებს, თქვენ მიერ მითითებული ზომის დასაყენებლად">
 <!ENTITY pref_voice_input "ხმოვანი შეყვანა">
@@ -380,7 +382,7 @@
 <!ENTITY pref_qrcode_enabled_summary2 "QR წამკითხავის დაშვება URL ველში">
 
 <!ENTITY pref_use_master_password "მთავარი პაროლის გამოყენება">
-<!ENTITY pref_sync_default_title "Firefox ანგარიში">
+<!ENTITY pref_sync_default_title "Firefox-ანგარიში">
 <!ENTITY pref_sync2 "შესვლა">
 <!ENTITY pref_sync_summary2 "დაასინქრონეთ თქვენი ჩანართები, სანიშნები, ანგარიშები, ისტორია">
 <!ENTITY pref_search_suggestions "ძიების შემოთავაზების ჩვენება">
@@ -414,7 +416,7 @@
 <!ENTITY pref_dialog_activitystream_recentBookmarks "ბოლოს ჩანიშნულები">
 <!ENTITY pref_dialog_activitystream_visited "მონახულებული">
 
-<!ENTITY pref_search_last_toast "თქვენ არ შეგიძლიათ უკანასკნელი საძიებო სისტემის წაშლა, ან გამორთვა.">
+<!ENTITY pref_search_last_toast "თქვენ არ შეგიძლიათ უკანასკნელი საძიებო სისტემის წაშლა ან გამორთვა.">
 
 <!ENTITY pref_panels_show "ჩვენება">
 <!ENTITY pref_panels_hide "დამალვა">
@@ -447,6 +449,11 @@
 <!ENTITY datareporting_crashreporter_title_short "ავარიული დახურვის მომხსენებელი">
 <!ENTITY datareporting_wifi_title2 "&vendorShortName; მდებარეობა">
 <!ENTITY datareporting_wifi_geolocation_summary4 "დაეხმარეთ &vendorShortName;-ს მსოფლიო რუკის შექმნაში! გააზიარეთ თქვენი მოწყობილობის მიახლოებითი Wi-Fi და მობილური მდებარეობა ჩვენი გეოლოკაციის მომსახურების გასაუმჯობესებლად.">
+<!-- Localization note (datareporting_notification_title ) : This will be the title
+     of the notification shown whenever the user has enabled data reporting and the stumbler
+     service is running. -->
+<!ENTITY datareporting_stumbler_notification_title "&vendorShortName; მდებარეობის მომსახურება გაშვებულია">
+
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -472,7 +479,7 @@
 <!ENTITY print "დაბეჭდვა">
 <!ENTITY view_page_source "გვერდის წყარო">
 <!ENTITY find_in_page "პოვნა გვერდზე">
-<!ENTITY desktop_mode "საიტის სრული ვერსია">
+<!ENTITY desktop_mode "სრული საიტის მოთხოვნა">
 <!ENTITY page "გვერდი">
 <!ENTITY tools "ხელსაწყოები">
 <!ENTITY new_tab "ახალი ჩანართი">
@@ -623,7 +630,7 @@
 
 <!-- Localization note (home_back_up_to_filter): The variable is replaced by the name of the
      previous location in the navigation, such as the previous folder -->
-<!ENTITY home_move_back_to_filter "უკან - &formatS;">
+<!ENTITY home_move_back_to_filter "უკან – &formatS;">
 
 <!-- Localization note (home_remote_tabs_many_hidden_devices) : The
      formatD is replaced with the number of hidden devices.  The
@@ -668,7 +675,7 @@ with that structure, consider a translation which ignores the preceding domain a
 just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY identity_connection_secure "დაცული კავშირი">
 <!ENTITY identity_connection_insecure "დაუცველი კავშირი">
-<!ENTITY identity_connection_chromeui "ეს &brandShortName;-ის დაცული გვერდია">
+<!ENTITY identity_connection_chromeui "ეს უსაფრთხო &brandShortName; გვერდია">
 
 <!-- Mixed content notifications in site identity popup -->
 <!ENTITY mixed_content_blocked_all1 "&brandShortName;-მა ამ გვერდზე დაუცველი შიგთავსი შეზღუდა.">
@@ -707,12 +714,12 @@ just addresses the organization to follow, e.g. "This site is run by " -->
       via the search engine that uses the icon they clicked. This text is used
       for screen reader users when they hover each icon - &formatS; will be
       replaced with the name of the currently highlighted icon. -->
-<!ENTITY search_bar_item_desc "ძიება - &formatS;">
+<!ENTITY search_bar_item_desc "ძიება – &formatS;">
 
 <!-- Localization note (suggestion_for_engine): The placeholder &formatS1; will be
      replaced with the name of the search engine. The placeholder &formatS2; will be
      replaced with the search query. -->
-<!ENTITY suggestion_for_engine "&formatS1;-ში ძიება - &formatS2;">
+<!ENTITY suggestion_for_engine "&formatS1;-ში ძიება – &formatS2;">
 
 <!ENTITY searchable_description "სანიშნები და ისტორია">
 
@@ -794,7 +801,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      code has already been displayed by the client trying to connect (such as
      desktop Firefox via WebIDE), so you just need to aim this device at the QR
      code. -->
-<!ENTITY devtools_auth_scan_header "მიმდინარეობს, სხვა მოწყობილობაში ნაჩვენები QR კოდის წაკითხვა">
+<!ENTITY devtools_auth_scan_header "მიმდინარეობს სხვა მოწყობილობაში ნაჩვენები QR კოდის წაკითხვა">
 
 <!-- Restrictable features -->
 <!-- Localization note: These are features the device owner (e.g. parent) can enable or disable for
@@ -853,7 +860,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY activity_stream_topsites "რჩეული საიტები">
 <!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->
 <!ENTITY activity_stream_topstories "&brandPocket;-ის მიერ შემოთავაზებული">
-<!ENTITY activity_stream_highlights "მნიშვნელოვანი საიტები">
+<!ENTITY activity_stream_highlights "მნიშვნელოვანი">
 
 <!-- LOCALIZATION NOTE (activity_stream_link_more1): Link-like text displayed to take user to a website with more content from Pocket. -->
 <!ENTITY activity_stream_link_more1 "მეტი">
@@ -867,7 +874,7 @@ Stream list for highlights sourced from th user's bookmarks. -->
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_trending): This label is shown in the Activity Stream list for highlights sourced from a recommendations engine. -->
 <!ENTITY activity_stream_highlight_label_trending "ყველასთვის სასურველი">
 <!-- LOCALIZATION NOTE (activity_stream_highlights_empty): This text is shown when we could not find highlights for this user. This is also shown on first run. -->
-<!ENTITY activity_stream_highlights_empty "დაიწყეთ გვერდების დათვალიერება და აქ გამოჩნდება თქვენი რჩეული სტატიები, ვიდეოები და ბოლოს მონახულებული ან ჩანიშნული საიტები.">
+<!ENTITY activity_stream_highlights_empty "დაიწყეთ გვერდების დათვალიერება და აქ გამოჩნდება თქვენთვის სასურველი სტატიები, ვიდეოები და ბოლოს მონახულებული ან ჩანიშნული საიტები.">
 
 <!-- LOCALIZATION NOTE (activity_stream_remove): This label is shown in the Activity Stream context menu,
 and allows hiding a URL/page from highlights or topsites. The page remains in history/bookmarks, but
@@ -891,3 +898,16 @@ See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "მთავარ ეკრანზე დამატება">
 <!ENTITY pwa_continue_to_website "ვებგვერდზე გადასვლა">
 <!ENTITY pwa_onboarding_sumo "მარტივად შეგიძლიათ ეს საიტი განათავსოთ თქვენს მთავარ ეკრანზე, სწრაფი წვდომისა და გვერდების მოხერხებულად მოსანახულებლად, ცალკეული პროგრამის მსგავსად.">
+
+<!-- Used by accessibility services to identify the play/pause buttons shown in the
+Picture-in-picture mini window -->
+<!ENTITY pip_play_button_title "გაშვება">
+<!ENTITY pip_play_button_description "გაშვების გაგრძელება">
+<!ENTITY pip_pause_button_title "შეჩერება">
+<!ENTITY pip_pause_button_description "გაშვების შეჩერება">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY mls_notification_channel "&vendorShortName; მდებარეობა">
+<!ENTITY download_notification_channel "ჩამოტვირთვები">
+<!ENTITY media_notification_channel "ფაილის გაშვება">

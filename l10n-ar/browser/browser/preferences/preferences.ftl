@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -137,20 +129,11 @@ is-not-default = ‏{ -brand-short-name } ليس المتصفح المبدئي �
 set-as-my-default-browser =
     .label = اجعله المبدئي…
     .accesskey = م
-startup-page = عند بدء { -brand-short-name }
-    .accesskey = ع
-startup-user-homepage =
-    .label = اعرض صفحتي الرئيسية
-startup-blank-page =
-    .label = اعرض صفحة فارغة
-startup-prev-session =
-    .label = اعرض نوافذي و ألسنتي من المرّة السابقة
 startup-restore-previous-session =
     .label = استعد الجلسة السابقة
     .accesskey = س
 disable-extension =
     .label = عطّل الامتداد
-home-page-header = صفحة البداية
 tabs-group-header = الألسنة
 ctrl-tab-recently-used-order =
     .label = ‏Ctrl+Tab يتنقّل عبر الألسنة حسب ترتيب آخر استخدام
@@ -228,6 +211,9 @@ choose-language-description = اختر لغتك المفضلة لعرض الصف
 choose-button =
     .label = اختر…
     .accesskey = خ
+choose-browser-language-description = اختر اللغات التي ستُستخدم لعرض القوائم والرسائل والتنبيهات من { -brand-short-name }.
+confirm-browser-language-change-description = أعِد تشغيل { -brand-short-name } لتطبيق التغييرات
+confirm-browser-language-change-button = طبِّق وأعِد التشغيل
 translate-web-pages =
     .label = ترجم محتوى الوب
     .accesskey = ت
@@ -279,7 +265,6 @@ play-drm-content =
 play-drm-content-learn-more = اطّلع على المزيد
 update-application-title = تحديثات { -brand-short-name }
 update-application-description = أبقِ { -brand-short-name } للحصول على أحسن أداء و ثبات و أمان.
-update-application-info = الإصدارة { $version } <a>ما الجديد</a>
 update-application-version = الإصدارة { $version } <a data-l10n-name="learn-more">ما الجديد</a>
 update-history =
     .label = أظهر تأريخ التحديث…
@@ -315,7 +300,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = حد سيرورة المحتوى
     .accesskey = ح
 performance-limit-content-process-enabled-desc = يمكن أن تساهم زيادة سيرورات المحتوى في تحسين الأداء عند استعمال عدة ألسنة، و لكن ذلك يستهلك ذاكرة أكثر.
-performance-limit-content-process-disabled-desc = لا يمكن تعديل عدد سيرورات المحتوى إلا في { -brand-short-name } متعدد السيرورات. <a>اطلع على كيفية التحقق من تفعيل تعدد السيرورات</a>
 performance-limit-content-process-blocked-desc = لا يمكن تعديل عدد سيرورات المحتوى إلا في { -brand-short-name } متعدد السيرورات. <a data-l10n-name="learn-more">اطلع على كيفية التحقق من تفعيل تعدد السيرورات</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -386,9 +370,6 @@ use-current-pages =
 choose-bookmark =
     .label = استخدم علامة…
     .accesskey = ع
-restore-default =
-    .label = استعد المبدئي
-    .accesskey = س
 
 ## Search Section
 
@@ -588,6 +569,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = تذكر تأريخ تصفحي و تنزيلاتي
     .accesskey = ص
+history-remember-browser-option =
+    .label = تذكر تأريخ التصفح و التنزيل
+    .accesskey = ت
 history-remember-search-option =
     .label = تذكّر تأريخ النماذج والبحث
     .accesskey = ث
@@ -655,6 +639,44 @@ addressbar-locbar-openpage-option =
     .accesskey = ف
 addressbar-suggestions-settings = غيّر تفضيلات اقتراحات محرّك البحث
 
+## Privacy Section - Content Blocking
+
+content-blocking-header = حجب المحتوى
+content-blocking-desc = احجب المحتوى من الأطراف الثالثة (مثل الإعلانات والنصوص البرمجية) التي تُبطئ من التصفح وتتعقّبك وأنت تجوب الوِب. خصّص الإعدادات لتوازن بين الحماية والأداء.
+content-blocking-learn-more = اطّلع على المزيد
+content-blocking-restore-defaults =
+    .label = استعد المبدئيات
+    .accesskey = س
+content-blocking-toggle-on =
+    .tooltiptext = عطِّل حجب المحتوى
+content-blocking-toggle-off =
+    .tooltiptext = فعِّل حجب المحتوى
+content-blocking-toggle-label-on = مفعّل
+    .accesskey = ف
+content-blocking-toggle-label-off = معطّل
+    .accesskey = ع
+content-blocking-category-label = اختر ما الذي تريد حجبه
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = عناصر التعقّب البطيئة
+    .accesskey = ن
+content-blocking-fastblock-description = لحجب المحتوى من الأطراف الثالثة والذي يأخذ أكثر من ٥ ثواني تحميل.
+content-blocking-fastblock-option-enabled =
+    .label = احجب دائمًا
+content-blocking-fastblock-option-disabled =
+    .label = لا تحجب أبدًا
+content-blocking-tracking-protection-label = المتعقّبات
+    .accesskey = ق
+content-blocking-tracking-protection-description = لحجب كل المتعقّبات المعروفة (لاحظ أن هذا قد يمنع تحميل بعض الصفحات).
+content-blocking-tracking-protection-option-enabled =
+    .label = احجب دائمًا
+content-blocking-tracking-protection-option-pbm =
+    .label = احجب في النوافذ الخاصة فقط
+content-blocking-tracking-protection-option-disabled =
+    .label = لا تحجب أبدًا
+content-blocking-tracking-protection-change-blocklist = غيّر قائمة الحجب…
+
 ## Privacy Section - Tracking
 
 tracking-header = الحماية من التعقّب
@@ -703,6 +725,19 @@ permissions-notification-link = اطّلع على المزيد
 permissions-notification-pause =
     .label = ألبِث التنبيهات حتى يُعاد تشغيل { -brand-short-name }
     .accesskey = ث
+permissions-block-autoplay-media =
+    .label = امنع المواقع من تشغيل الوسائط المحتوية على صوت تلقائيا
+    .accesskey = م
+permissions-block-autoplay-media-menu = عند فتحي مواقع تُشغّل الصوت تلقائيا
+permissions-block-autoplay-media-exceptions =
+    .label = الاستثناءات…
+    .accesskey = س
+autoplay-option-ask =
+    .label = اسألني دائما
+autoplay-option-allow =
+    .label = اسمح بالتشغيل التلقائي
+autoplay-option-dont =
+    .label = امنع التشغيل التلقائي
 permissions-block-popups =
     .label = احجب النوافذ المنبثقة
     .accesskey = ذ

@@ -8,7 +8,11 @@
 <!ENTITY loadError.label "Проблем при зареждане на страница">
 <!ENTITY retry.label "Повторен опит">
 <!ENTITY returnToPreviousPage.label "Връщане назад">
+<!ENTITY returnToPreviousPage1.label "Връщане назад (препоръчително)">
 <!ENTITY advanced.label "Подробности">
+
+<!ENTITY continue2.label "Подробности…">
+<!ENTITY moreInformation.label "Повече информация">
 
 <!-- Specific error messages -->
 
@@ -63,9 +67,7 @@
 </ul>">
 
 <!ENTITY netOffline.title "Работа извън мрежата">
-<!ENTITY netOffline.longDesc2 "<ul>
-  <li>Натиснете „Повторен опит“, за да превключите към режим с връзка и да презаредите страницата.</li>
-</ul>">
+<!ENTITY netOffline.longDesc2 "<ul> <li>Натиснете „Повторен опит“, за да превключите към режим с връзка и да презаредите страницата.</li></ul>">
 
 <!ENTITY contentEncodingError.title "Грешка в кодировката на съдържанието">
 <!ENTITY contentEncodingError.longDesc "<ul> <li>Моля, свържете се със собствениците на сайта, за да ги информирате за проблема.</li> </ul>">
@@ -105,10 +107,25 @@
 <!ENTITY nssFailure2.longDesc2 "<ul> <li>Страницата не може да бъде показана, защото достоверността на получените данни не може да бъде проверена.</li> <li>Моля, свържете се със собствениците на сайта, за да ги информирате за проблема.</li> </ul>">
 
 <!ENTITY certerror.longpagetitle1 "Връзката е незащитена">
-<!-- Localization note (certerror.introPara) - The text content of the span tag
+<!ENTITY certerror.longpagetitle2 "Внимание: Вероятен риск за сигурността">
+<!-- Localization note (certerror.introPara, certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "Собственикът на <span class='hostname'/> е настроил страницата неправилно. За да ви защити от кражба на информация, &brandShortName; отказа връзката с тази страница.">
+
+<!ENTITY certerror.introPara2 "&brandShortName; забеляза възможна заплаха за сигурността и не продължи към <span class='hostname'/>. Ако посетите страницата атакуващ може да опита да открадне информация като ваши пароли, електронни писма или данни за банкови карти.">
+
+<!ENTITY certerror.expiredCert.secondPara "Проблемът, най-вероятно, е причинен от неверен часовник на компютъра, което би могло да попречи на &brandShortName; да осъществи защитена връзка.">
+
+<!ENTITY certerror.whatCanYouDoAboutItTitle "Какво да направите в тази ситуация?">
+
+<!ENTITY certerror.unknownIssuer.whatCanYouDoAboutIt "<p>Проблемът най-вероятно е в страницата и нищо не може да направите.</p>
+<p>Ако сте във ведомствена мрежа или използвате антивирусно приложение може потърсите помощ от поддържащия екип. Също може да уведомите администратора на страницата за този проблем.</p>">
+
+<!ENTITY certerror.expiredCert.whatCanYouDoAboutIt2 "<p>Часовникът на компютъра показва <span id='wrongSystemTime_systemDate2'/>. Сверете датата, часа и часовия пояс на компютъра в системните настройки и презаредете страницата на <span class='hostname'/>.</p>
+<p>Ако часовникът е верен тогава страницата не е настроена правилно и нищо не може да направите. Може да уведомите администратора на страницата за този проблем.</p>">
+
+<!ENTITY certerror.badCertDomain.whatCanYouDoAboutIt "<p>Проблемът най-вероятно е в страницата и нищо не може да направите. Може да уведомите администратора на страницата за него.</p>">
 
 <!ENTITY sharedLongDesc "<ul>
   <li>Страницата може да е временно недостъпна или натоварена. Опитайте отново след малко.</li>
@@ -125,7 +142,9 @@ was trying to connect. -->
 
 <!ENTITY securityOverride.exceptionButtonLabel "Добавяне на изключение…">
 
-<!ENTITY errorReporting.automatic2 "Докладване на такива грешки, за да може Mozilla да идентифицира и блокира злонамерени сайтове">
+<!ENTITY securityOverride.exceptionButton1Label "Продължаване въпреки риска">
+
+<!ENTITY errorReporting.automatic2 "Докладване на такива грешки, за да може Mozilla да идентифицира и ограничи злонамерени сайтове">
 <!ENTITY errorReporting.learnMore "Научете повече…">
 
 <!ENTITY remoteXUL.title "Отдалечен XUL">
@@ -143,7 +162,9 @@ was trying to connect. -->
 <!ENTITY certerror.wrongSystemTimeWithoutReference "<p>&brandShortName; не се свърза с <span id='wrongSystemTimeWithoutReference_URL'/>, защото часовникът на компютъра изглежда е неверен, а това пречи на създаването на защитена връзка.</p> <p>Часовнъкът показва <span id='wrongSystemTimeWithoutReference_systemDate'/>. За да отстраните проблема сверете часовника.</p>">
 
 <!ENTITY certerror.pagetitle1  "Незащитена връзка">
+<!ENTITY certerror.pagetitle2  "Внимание: Вероятен риск за сигурността">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Сайтът използва HTTP Strict Transport Security (HSTS), за да укаже на &brandShortName; да се свързва само по сигурен начин. В резултат на това не може да се добави изключение за този сертификат.">
+<!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'/> използва политика за сигурност наречена HTTP Strict Transport Security (HSTS), което означава. че &brandShortName; може да използва само сигурни връзки. Не може да добавяте изключение при посещение на тази страница.">
 <!ENTITY certerror.copyToClipboard.label "Копиране на текста в системния буфер">
 
 <!ENTITY inadequateSecurityError.title "Връзката е незащитена">
@@ -152,6 +173,9 @@ was trying to connect. -->
 <!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> използва остаряла технология за сигурност, уязвима към атаки. Такива атаки могат лесно да разкрият информация, която мислите, че е защитена. Администраторът на сайта трябва да поправи сървъра преди да може да използвате сайта.</p><p>Код на грешка: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
 
 <!ENTITY blockedByPolicy.title "Забранена страница">
+
+<!ENTITY clockSkewError.title "Часовникът на компютъра е неверен">
+<!ENTITY clockSkewError.longDesc "Часовникът на компютъра показва <span id='wrongSystemTime_systemDate1'/> което пречи на &brandShortName; да осъществи защитена връзка. Сверете датата, часа и часовия пояс на компютъра в системните настройки, за да посетите <span class='hostname'/>. След това презаредете страницата на <span class='hostname'/>.">
 
 <!ENTITY prefReset.longDesc "Изглежда вашите настройките на сигурността може да са предизвикали това. Искате ли да възстановите оригиналните настройки?">
 <!ENTITY prefReset.label "Възстановяване на оригиналните настройки">

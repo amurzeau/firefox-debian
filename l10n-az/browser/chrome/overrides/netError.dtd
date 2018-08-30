@@ -8,7 +8,11 @@
 <!ENTITY loadError.label "Səhifə yüklənmə xətası">
 <!ENTITY retry.label "Təkrar Yoxla">
 <!ENTITY returnToPreviousPage.label "Geri Get">
+<!ENTITY returnToPreviousPage1.label "Geri get (Məsləhərlidir)">
 <!ENTITY advanced.label "Təkmilləşmiş">
+
+<!ENTITY continue2.label "Ətraflı…">
+<!ENTITY moreInformation.label "Daha çox məlumat">
 
 <!-- Specific error messages -->
 
@@ -90,10 +94,31 @@
 <!ENTITY nssFailure2.longDesc2 "<ul> <li>Açmaq istədiyiniz səhifə göstərilə bilmir, çünki alınan məlumatların doğruluğu təsdiqlənəmədi.</li> <li>Zəhmət olmasa sayt sahibləri ilə əlaqə saxlayın və bu xətadan xəbərdar edin.</li> </ul>">
 
 <!ENTITY certerror.longpagetitle1 "Bağlantınız qorumalı deyil">
-<!-- Localization note (certerror.introPara) - The text content of the span tag
+<!ENTITY certerror.longpagetitle2 "Diqqət: Qabaqda potensial təhlükə riski var">
+<!-- Localization note (certerror.introPara, certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "<span class='hostname'/> sahibi web saytı düzgün quraşdırmayıb. Məlumatlarınızın oğurlanmasının qarşısın almaq üçün &brandShortName; bu web sayta qoşulmadı.">
+
+<!ENTITY certerror.introPara2 "&brandShortName; <span class='hostname'/> saytında potensial təhlükə tapdı və davam etmədi. Əgər bu saytı ziyarət etsəniz hücumçular parol, e-poçt, kredit kartı kimi məlumatlarınızı oğurlaya bilərlər.">
+
+<!ENTITY certerror.expiredCert.secondPara "Ola bilsin kompüterinizin saatı səhv qurulduğu üçün &brandShortName; səyyahı təhlükəsiz əlaqə qura bilmir.">
+
+<!ENTITY certerror.whatCanYouDoAboutItTitle "Bununla bağlı nə edə bilərsiz?">
+
+<!ENTITY certerror.unknownIssuer.whatCanYouDoAboutIt "
+<p>Böyük ehtimalla bu saytın xətasıdır və bununla bağlı heç nə edə bilməzsiz.</p>
+<p>Əgər korporativ şəbəkədəsinizsə və ya antivirus proqramı işlədirsinizsə kömək üçün dəstək komandası ilə əlaqə qura bilərsiz. Həmçinin, problemlə bağlı saytın administratoruna xəbər verə bilərsiz.</p>
+">
+
+<!ENTITY certerror.expiredCert.whatCanYouDoAboutIt2 "
+<p>Kompüterinizin saatı <span id='wrongSystemTime_systemDate2'/> olaraq qurulub. Sistem tənzimləmələrində kompüterinizin tarixinin, vaxtının və saat zolağının düz qurulduğuna əmin olun, daha sonra <span class='hostname'/> ünvanını yeniləyin.</p>
+<p>Əgər saatınız artıq düzgündürsə, ola bilsin sayt özü səhv quraşdırılıb və problemi həll edə bilməzsiz. Saytın administrasiyasına xəta ilə əlaqədər xəbər verə bilərsiz.</p>
+">
+
+<!ENTITY certerror.badCertDomain.whatCanYouDoAboutIt "
+<p>Böyük ehtimalla bu saytın xətasıdır və bununla bağlı heç nə edə bilməzsiz. Problemlə bağlı saytın administratoruna xəbər verə bilərsiz.</p>
+">
 
 <!ENTITY sharedLongDesc "<ul> <li>Sayt müvəqqəti olaraq qapalı ya da çox məşğul ola bilər. Bir az gözləyib təzədən yoxlayın.</li> <li>Heç bir səhifə açılmırsa, kompüterinizin internet bağlantısını yoxlayın.</li> <li>Əgər kompüteriniz ya da şəbəkəniz Firewall və ya proxy ilə qorunursa, &brandShortName; proqramının internetə bağlanma icazəsinin olduğuna əmin olun.</li> </ul>">
 
@@ -105,6 +130,8 @@ was trying to connect. -->
 
 
 <!ENTITY securityOverride.exceptionButtonLabel "İstisnalıq ver…">
+
+<!ENTITY securityOverride.exceptionButton1Label "Riski qəbul et və davam et">
 
 <!ENTITY errorReporting.automatic2 "Bu kimi xətaları Mozillaya xəbər edərək təhlükəli saytları təyin edib bloklamaya kömək edə bilərsiz.">
 <!ENTITY errorReporting.learnMore "Ətraflı öyrən…">
@@ -124,7 +151,9 @@ was trying to connect. -->
 <!ENTITY certerror.wrongSystemTimeWithoutReference "<p>&brandShortName; <span id='wrongSystemTimeWithoutReference_URL'/> ünvanına qoşula bilmədi çünki, kömpüterinizin saatı səhv görünür və bu təhlükəsiz əlaqəyə mane olur.</p> <p>Kompüteriniz <span id='wrongSystemTimeWithoutReference_systemDate'/> olaraq qurulub. Bu xətanı həll etmək üçün tarixi və saatı düzgün dəyərlərlə dəyişdirin.</p>">
 
 <!ENTITY certerror.pagetitle1  "Qorumasız Bağlantı">
+<!ENTITY certerror.pagetitle2  "Diqqət: Qabaqda potensial təhlükə riski var">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Bu sayt, &brandShortName; səyyahının özünə ancaq təhlükəsiz şəkildə qoşula biləcəyini bidirmək üçün HTTP Qəti Transfer Təhlükəsizliyi (HTTS) istifadə edir. Bu səbəbdən, bu sertifikat üçün istisna əlavə etmək mümkün deyil.">
+<!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'></span> saytının HTTP Strict Transport Security (HSTS) adlı təhlükəsizlik siyasəti var, bu deməkdir ki, &brandShortName; bununla ancaq təhlükəsiz əlaqə qura bilər. Bu sayta istisna verə bilməzsiz.">
 <!ENTITY certerror.copyToClipboard.label "Mətni buferə köçür">
 
 <!ENTITY inadequateSecurityError.title "Bağlantınız qorumalı deyil">
@@ -133,6 +162,9 @@ was trying to connect. -->
 <!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> vaxtı keçmiş və hücumlara açıq bir texnologiyadan istifadə edir. Hücumçular etibarlı olduğunu düşündüyünüz məlumatlarınızı əldə edə bilərlər. Saytın idarəçisi problemi həll etdikdən sonra təkrar daxil ola bilərsiz.</p><p>Xəta kodu: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
 
 <!ENTITY blockedByPolicy.title "Əngəllənmiş Səhifə">
+
+<!ENTITY clockSkewError.title "Kompüterinizin saatı səhvdir">
+<!ENTITY clockSkewError.longDesc "Kompüteriniz saatı <span id='wrongSystemTime_systemDate1'/> kimi fikirləşir, bu da &brandShortName; səyyahının təhlükəsiz əlaqə qurmağına mane olur. <span class='hostname'></span> saytını ziyarət etmək üçün sistem tənzimləmələrindən kompüterinizin saatını hazırki tarix, vaxt və saat zolağı ilə yeniləyin və <span class='hostname'></span> saytını təzədən yükləməyi yoxlayın.">
 
 <!ENTITY prefReset.longDesc "Şəbəkə təhlükəsizliyi tənzimləmələri buna səbəb ola bilər. Standart tənzimləməri geri yükləmək istəyirsinizmi?">
 <!ENTITY prefReset.label "Ön tənzimləmələri bərpa et">
