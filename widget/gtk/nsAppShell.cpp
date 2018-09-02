@@ -10,6 +10,7 @@
 #include <fcntl.h>
 #include <errno.h>
 #include <gdk/gdk.h>
+#include "mozilla/XREAppData.h"
 #include "nsAppShell.h"
 #include "nsWindow.h"
 #include "mozilla/Logging.h"
@@ -24,6 +25,7 @@
 #  include "WakeLockListener.h"
 #endif
 #include "gfxPlatform.h"
+#include "nsAppRunner.h"
 #include "ScreenHelperGTK.h"
 #include "HeadlessScreenHelper.h"
 #include "mozilla/widget/ScreenManager.h"
@@ -156,10 +158,8 @@ nsresult nsAppShell::Init() {
       // creating top-level windows. (At this point, a child process hasn't
       // received the list of registered chrome packages, so the
       // GetBrandShortName call would fail anyway.)
-      nsAutoString brandName;
-      mozilla::widget::WidgetUtils::GetBrandShortName(brandName);
-      if (!brandName.IsEmpty()) {
-        gdk_set_program_class(NS_ConvertUTF16toUTF8(brandName).get());
+      if (gAppData) {
+        gdk_set_program_class(gAppData->remotingName);
       }
     }
   }
