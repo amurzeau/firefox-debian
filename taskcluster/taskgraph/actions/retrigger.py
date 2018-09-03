@@ -21,6 +21,8 @@ logger = logging.getLogger(__name__)
     title='Retrigger',
     name='retrigger',
     symbol='rt',
+    kind='hook',
+    generic=True,
     description=(
         'Create a clone of the task.\n\n'
     ),
@@ -48,8 +50,9 @@ logger = logging.getLogger(__name__)
         }
     }
 )
-def retrigger_action(parameters, input, task_group_id, task_id, task):
-    decision_task_id, full_task_graph, label_to_taskid = fetch_graph_and_labels(parameters)
+def retrigger_action(parameters, graph_config, input, task_group_id, task_id, task):
+    decision_task_id, full_task_graph, label_to_taskid = fetch_graph_and_labels(
+        parameters, graph_config)
 
     label = task['metadata']['name']
     with_downstream = ' '
