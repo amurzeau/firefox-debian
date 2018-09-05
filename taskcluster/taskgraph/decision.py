@@ -80,6 +80,18 @@ PER_PROJECT_PARAMETERS = {
         'include_nightly': True,
     },
 
+    'comm-beta': {
+        'target_tasks_method': 'mozilla_beta_tasks',
+        'optimize_target_tasks': True,
+        'include_nightly': True,
+    },
+
+    'comm-esr60': {
+        'target_tasks_method': 'mozilla_esr60_tasks',
+        'optimize_target_tasks': True,
+        'include_nightly': True,
+    },
+
     'pine': {
         'target_tasks_method': 'pine_tasks',
         'optimize_target_tasks': True,
@@ -137,7 +149,7 @@ def taskgraph_decision(options, parameters=None):
     write_artifact('parameters.yml', dict(**parameters))
 
     # write out the public/actions.json file
-    write_artifact('actions.json', render_actions_json(parameters))
+    write_artifact('actions.json', render_actions_json(parameters, tgg.graph_config))
 
     # write out the full graph for reference
     full_task_json = tgg.full_task_graph.to_json()
@@ -209,6 +221,7 @@ def get_decision_parameters(options):
     parameters['release_partner_config'] = {}
     parameters['release_partner_build_number'] = 1
     parameters['release_enable_emefree'] = False
+    parameters['release_product'] = None
 
     # owner must be an email, but sometimes (e.g., for ffxbld) it is not, in which
     # case, fake it

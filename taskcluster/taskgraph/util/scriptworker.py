@@ -40,12 +40,15 @@ This is a list of list-pairs, for ordering.
 SIGNING_SCOPE_ALIAS_TO_PROJECT = [[
     'all-nightly-branches', set([
         'mozilla-central',
+        'comm-central',
     ])
 ], [
     'all-release-branches', set([
         'mozilla-beta',
         'mozilla-release',
         'mozilla-esr60',
+        'comm-beta',
+        'comm-esr60',
     ])
 ]]
 
@@ -76,12 +79,15 @@ BEETMOVER_SCOPE_ALIAS_TO_PROJECT = [[
         'mozilla-beta',
         'mozilla-release',
         'mozilla-esr60',
+        'comm-central',
     ])
 ], [
     'all-release-branches', set([
         'mozilla-beta',
         'mozilla-release',
         'mozilla-esr60',
+        'comm-beta',
+        'comm-esr60',
     ])
 ]]
 
@@ -91,16 +97,13 @@ Used for both `BEETMOVER_SCOPE_ALIAS_TO_TARGET_TASK` and `get_release_build_numb
 """
 BEETMOVER_CANDIDATES_TARGET_TASKS = set([
     'promote_fennec',
-    'promote_firefox',
-    'promote_devedition',
+    'promote_desktop',
 ])
 BEETMOVER_PUSH_TARGET_TASKS = set([
     'push_fennec',
     'ship_fennec',
-    'push_firefox',
-    'ship_firefox',
-    'push_devedition',
-    'ship_devedition',
+    'push_desktop',
+    'ship_desktop',
 ])
 BEETMOVER_RELEASE_TARGET_TASKS = BEETMOVER_CANDIDATES_TARGET_TASKS | BEETMOVER_PUSH_TARGET_TASKS
 
@@ -146,7 +149,7 @@ BEETMOVER_ACTION_SCOPES = {
     'all-candidates-tasks': 'beetmover:action:push-to-candidates',
     'all-push-tasks': 'beetmover:action:push-to-releases',
     'all-nightly-tasks': 'beetmover:action:push-to-nightly',
-    'default': 'beetmover:action:push-to-staging',
+    'default': 'beetmover:action:push-to-nightly',
 }
 
 
@@ -168,10 +171,12 @@ This is a list of list-pairs, for ordering.
 BALROG_SCOPE_ALIAS_TO_PROJECT = [[
     'nightly', set([
         'mozilla-central',
+        'comm-central'
     ])
 ], [
     'beta', set([
         'mozilla-beta',
+        'comm-beta',
     ])
 ], [
     'release', set([
@@ -180,6 +185,7 @@ BALROG_SCOPE_ALIAS_TO_PROJECT = [[
 ], [
     'esr60', set([
         'mozilla-esr60',
+        'comm-esr60',
     ])
 ], [
     'esr', set([
@@ -449,7 +455,7 @@ def get_release_config(config):
 def get_signing_cert_scope_per_platform(build_platform, is_nightly, config):
     if 'devedition' in build_platform:
         return get_devedition_signing_cert_scope(config)
-    elif is_nightly or build_platform in ('linux64-source', 'linux64-fennec-source'):
+    elif is_nightly or build_platform in ('firefox-source', 'fennec-source', 'thunderbird-source'):
         return get_signing_cert_scope(config)
     else:
         return add_scope_prefix(config, 'signing:cert:dep-signing')
