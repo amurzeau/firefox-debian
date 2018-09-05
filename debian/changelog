@@ -1,4 +1,4 @@
-firefox-esr (60.2.0esr-1) unstable; urgency=medium
+firefox-esr (60.2.0esr-1~deb9u1) stretch-security; urgency=medium
 
   * New upstream release.
   * Fixes for mfsa2018-21, also known as:

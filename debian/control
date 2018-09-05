@@ -21,11 +21,7 @@ Build-Depends: autotools-dev,
                python-minimal (>= 2.6.6-13~),
                python-ply,
                dpkg-dev (>= 1.16.1.1~),
-               libnspr4-dev (>= 2:4.19~),
-               libnss3-dev (>= 2:3.36.4~),
-               libsqlite3-dev (>= 3.22.0),
                libvpx-dev (>= 1.5.0),
-               libhunspell-dev (>= 1.5),
                libdbus-glib-1-dev,
                libffi-dev,
                libevent-dev (>= 1.4.1),
@@ -34,9 +30,9 @@ Build-Depends: autotools-dev,
                yasm (>= 1.1),
                rustc (>= 1.24),
                cargo (>= 0.25),
-               llvm-6.0-dev,
-               libclang-6.0-dev,
-               clang-6.0,
+               llvm-4.0-dev,
+               libclang-4.0-dev,
+               clang-4.0,
                zip,
                unzip,
                locales,
@@ -70,6 +66,7 @@ Suggests: fonts-stix | otf-stix,
           libgssapi-krb5-2 | libkrb53,
           libcanberra0,
           libgtk2.0-0
+Conflicts: iceweasel (<< 45)
 Breaks: xul-ext-torbutton
 Provides: www-browser,
           gnome-www-browser
@@ -77,27 +74,57 @@ Description: Mozilla Firefox web browser - Extended Support Release (ESR)
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
 
+Package: iceweasel
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr, ${misc:Depends}
+Description: Web browser based on Firefox - Transitional package
+ This is a transitional package, it can be safely removed.
+
 
 Package: firefox-esr-l10n-all
 Architecture: all
 Section: metapackages
 Depends: ${misc:Depends}, firefox-esr-l10n-ach, firefox-esr-l10n-af, firefox-esr-l10n-an, firefox-esr-l10n-ar, firefox-esr-l10n-as, firefox-esr-l10n-ast, firefox-esr-l10n-az, firefox-esr-l10n-be, firefox-esr-l10n-bg, firefox-esr-l10n-bn-bd, firefox-esr-l10n-bn-in, firefox-esr-l10n-br, firefox-esr-l10n-bs, firefox-esr-l10n-ca, firefox-esr-l10n-cak, firefox-esr-l10n-cs, firefox-esr-l10n-cy, firefox-esr-l10n-da, firefox-esr-l10n-de, firefox-esr-l10n-dsb, firefox-esr-l10n-el, firefox-esr-l10n-en-gb, firefox-esr-l10n-en-za, firefox-esr-l10n-eo, firefox-esr-l10n-es-ar, firefox-esr-l10n-es-cl, firefox-esr-l10n-es-es, firefox-esr-l10n-es-mx, firefox-esr-l10n-et, firefox-esr-l10n-eu, firefox-esr-l10n-fa, firefox-esr-l10n-ff, firefox-esr-l10n-fi, firefox-esr-l10n-fr, firefox-esr-l10n-fy-nl, firefox-esr-l10n-ga-ie, firefox-esr-l10n-gd, firefox-esr-l10n-gl, firefox-esr-l10n-gn, firefox-esr-l10n-gu-in, firefox-esr-l10n-he, firefox-esr-l10n-hi-in, firefox-esr-l10n-hr, firefox-esr-l10n-hsb, firefox-esr-l10n-hu, firefox-esr-l10n-hy-am, firefox-esr-l10n-ia, firefox-esr-l10n-id, firefox-esr-l10n-is, firefox-esr-l10n-it, firefox-esr-l10n-ja, firefox-esr-l10n-ka, firefox-esr-l10n-kab, firefox-esr-l10n-kk, firefox-esr-l10n-km, firefox-esr-l10n-kn, firefox-esr-l10n-ko, firefox-esr-l10n-lij, firefox-esr-l10n-lt, firefox-esr-l10n-lv, firefox-esr-l10n-mai, firefox-esr-l10n-mk, firefox-esr-l10n-ml, firefox-esr-l10n-mr, firefox-esr-l10n-ms, firefox-esr-l10n-my, firefox-esr-l10n-nb-no, firefox-esr-l10n-ne-np, firefox-esr-l10n-nl, firefox-esr-l10n-nn-no, firefox-esr-l10n-oc, firefox-esr-l10n-or, firefox-esr-l10n-pa-in, firefox-esr-l10n-pl, firefox-esr-l10n-pt-br, firefox-esr-l10n-pt-pt, firefox-esr-l10n-rm, firefox-esr-l10n-ro, firefox-esr-l10n-ru, firefox-esr-l10n-si, firefox-esr-l10n-sk, firefox-esr-l10n-sl, firefox-esr-l10n-son, firefox-esr-l10n-sq, firefox-esr-l10n-sr, firefox-esr-l10n-sv-se, firefox-esr-l10n-ta, firefox-esr-l10n-te, firefox-esr-l10n-th, firefox-esr-l10n-tr, firefox-esr-l10n-uk, firefox-esr-l10n-ur, firefox-esr-l10n-uz, firefox-esr-l10n-vi, firefox-esr-l10n-xh, firefox-esr-l10n-zh-cn, firefox-esr-l10n-zh-tw
+Breaks: iceweasel-l10n-all (<< 45)
+Replaces: iceweasel-l10n-all (<< 45)
+Provides: iceweasel-l10n-all
 Description: All language packages for Firefox ESR (meta)
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This is a metapackage depending on all available localizations of Firefox ESR.
 
+Package: iceweasel-l10n-all
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-all, ${misc:Depends}
+Description: All language packages for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-ach
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-ach (<< 45)
+Replaces: iceweasel-l10n-ach (<< 45)
+Provides: iceweasel-l10n-ach
 Description: Acoli language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Acoli.
+
+Package: iceweasel-l10n-ach
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-ach, ${misc:Depends}
+Description: Acoli language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-af
 Architecture: all
@@ -105,11 +132,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-af
+Breaks: iceweasel-l10n-af (<< 45)
+Replaces: iceweasel-l10n-af (<< 45)
+Provides: iceweasel-l10n-af
 Description: Afrikaans language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Afrikaans.
+
+Package: iceweasel-l10n-af
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-af, ${misc:Depends}
+Description: Afrikaans language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-an
 Architecture: all
@@ -117,11 +155,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-an
+Breaks: iceweasel-l10n-an (<< 45)
+Replaces: iceweasel-l10n-an (<< 45)
+Provides: iceweasel-l10n-an
 Description: Aragonese language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Aragonese.
+
+Package: iceweasel-l10n-an
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-an, ${misc:Depends}
+Description: Aragonese language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-ar
 Architecture: all
@@ -129,44 +178,88 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-ar
+Breaks: iceweasel-l10n-ar (<< 45)
+Replaces: iceweasel-l10n-ar (<< 45)
+Provides: iceweasel-l10n-ar
 Description: Arabic language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Arabic.
 
+Package: iceweasel-l10n-ar
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-ar, ${misc:Depends}
+Description: Arabic language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-as
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-as (<< 45)
+Replaces: iceweasel-l10n-as (<< 45)
+Provides: iceweasel-l10n-as
 Description: Assamese language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Assamese.
 
+Package: iceweasel-l10n-as
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-as, ${misc:Depends}
+Description: Assamese language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-ast
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-ast (<< 45)
+Replaces: iceweasel-l10n-ast (<< 45)
+Provides: iceweasel-l10n-ast
 Description: Asturian language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Asturian.
 
+Package: iceweasel-l10n-ast
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-ast, ${misc:Depends}
+Description: Asturian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-az
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-az (<< 45)
+Replaces: iceweasel-l10n-az (<< 45)
+Provides: iceweasel-l10n-az
 Description: Azerbaijani language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Azerbaijani.
+
+Package: iceweasel-l10n-az
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-az, ${misc:Depends}
+Description: Azerbaijani language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-be
 Architecture: all
@@ -174,11 +267,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-be
+Breaks: iceweasel-l10n-be (<< 45)
+Replaces: iceweasel-l10n-be (<< 45)
+Provides: iceweasel-l10n-be
 Description: Belarusian language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Belarusian.
+
+Package: iceweasel-l10n-be
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-be, ${misc:Depends}
+Description: Belarusian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-bg
 Architecture: all
@@ -186,11 +290,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-bg | myspell-bg
+Breaks: iceweasel-l10n-bg (<< 45)
+Replaces: iceweasel-l10n-bg (<< 45)
+Provides: iceweasel-l10n-bg
 Description: Bulgarian language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Bulgarian.
+
+Package: iceweasel-l10n-bg
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-bg, ${misc:Depends}
+Description: Bulgarian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-bn-bd
 Architecture: all
@@ -198,11 +313,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-bn
+Breaks: iceweasel-l10n-bn-bd (<< 45)
+Replaces: iceweasel-l10n-bn-bd (<< 45)
+Provides: iceweasel-l10n-bn-bd
 Description: Bengali (Bangladesh) language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Bengali (Bangladesh).
+
+Package: iceweasel-l10n-bn-bd
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-bn-bd, ${misc:Depends}
+Description: Bengali (Bangladesh) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-bn-in
 Architecture: all
@@ -210,11 +336,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-bn
+Breaks: iceweasel-l10n-bn-in (<< 45)
+Replaces: iceweasel-l10n-bn-in (<< 45)
+Provides: iceweasel-l10n-bn-in
 Description: Bengali (India) language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Bengali (India).
+
+Package: iceweasel-l10n-bn-in
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-bn-in, ${misc:Depends}
+Description: Bengali (India) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-br
 Architecture: all
@@ -222,11 +359,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-br
+Breaks: iceweasel-l10n-br (<< 45)
+Replaces: iceweasel-l10n-br (<< 45)
+Provides: iceweasel-l10n-br
 Description: Breton language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Breton.
+
+Package: iceweasel-l10n-br
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-br, ${misc:Depends}
+Description: Breton language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-bs
 Architecture: all
@@ -234,11 +382,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-bs
+Breaks: iceweasel-l10n-bs (<< 45)
+Replaces: iceweasel-l10n-bs (<< 45)
+Provides: iceweasel-l10n-bs
 Description: Bosnian language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Bosnian.
+
+Package: iceweasel-l10n-bs
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-bs, ${misc:Depends}
+Description: Bosnian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-ca
 Architecture: all
@@ -246,22 +405,44 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-ca
+Breaks: iceweasel-l10n-ca (<< 45)
+Replaces: iceweasel-l10n-ca (<< 45)
+Provides: iceweasel-l10n-ca
 Description: Catalan language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Catalan.
 
+Package: iceweasel-l10n-ca
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-ca, ${misc:Depends}
+Description: Catalan language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-cak
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-cak (<< 45)
+Replaces: iceweasel-l10n-cak (<< 45)
+Provides: iceweasel-l10n-cak
 Description: Kaqchikel language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Kaqchikel.
+
+Package: iceweasel-l10n-cak
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-cak, ${misc:Depends}
+Description: Kaqchikel language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-cs
 Architecture: all
@@ -269,22 +450,44 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-cs
+Breaks: iceweasel-l10n-cs (<< 45)
+Replaces: iceweasel-l10n-cs (<< 45)
+Provides: iceweasel-l10n-cs
 Description: Czech language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Czech.
 
+Package: iceweasel-l10n-cs
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-cs, ${misc:Depends}
+Description: Czech language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-cy
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-cy (<< 45)
+Replaces: iceweasel-l10n-cy (<< 45)
+Provides: iceweasel-l10n-cy
 Description: Welsh language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Welsh.
+
+Package: iceweasel-l10n-cy
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-cy, ${misc:Depends}
+Description: Welsh language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-da
 Architecture: all
@@ -292,11 +495,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-da | myspell-da
+Breaks: iceweasel-l10n-da (<< 45)
+Replaces: iceweasel-l10n-da (<< 45)
+Provides: iceweasel-l10n-da
 Description: Danish language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Danish.
+
+Package: iceweasel-l10n-da
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-da, ${misc:Depends}
+Description: Danish language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-de
 Architecture: all
@@ -304,22 +518,44 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-de-de | hunspell-de-at | hunspell-de-ch
+Breaks: iceweasel-l10n-de (<< 45)
+Replaces: iceweasel-l10n-de (<< 45)
+Provides: iceweasel-l10n-de
 Description: German language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in German.
 
+Package: iceweasel-l10n-de
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-de, ${misc:Depends}
+Description: German language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-dsb
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-dsb (<< 45)
+Replaces: iceweasel-l10n-dsb (<< 45)
+Provides: iceweasel-l10n-dsb
 Description: Lower Sorbian language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Lower Sorbian.
+
+Package: iceweasel-l10n-dsb
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-dsb, ${misc:Depends}
+Description: Lower Sorbian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-el
 Architecture: all
@@ -327,11 +563,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-el | myspell-el-gr
+Breaks: iceweasel-l10n-el (<< 45)
+Replaces: iceweasel-l10n-el (<< 45)
+Provides: iceweasel-l10n-el
 Description: Modern Greek language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Modern Greek.
+
+Package: iceweasel-l10n-el
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-el, ${misc:Depends}
+Description: Modern Greek language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-en-gb
 Architecture: all
@@ -339,11 +586,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-en-gb | hunspell-en-us
+Breaks: iceweasel-l10n-en-gb (<< 45)
+Replaces: iceweasel-l10n-en-gb (<< 45)
+Provides: iceweasel-l10n-en-gb
 Description: English (United Kingdom) language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in English (United Kingdom).
+
+Package: iceweasel-l10n-en-gb
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-en-gb, ${misc:Depends}
+Description: English (United Kingdom) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-en-za
 Architecture: all
@@ -351,11 +609,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-en-gb | hunspell-en-us
+Breaks: iceweasel-l10n-en-za (<< 45)
+Replaces: iceweasel-l10n-en-za (<< 45)
+Provides: iceweasel-l10n-en-za
 Description: English (South Africa) language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in English (South Africa).
+
+Package: iceweasel-l10n-en-za
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-en-za, ${misc:Depends}
+Description: English (South Africa) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-eo
 Architecture: all
@@ -363,11 +632,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: myspell-eo
+Breaks: iceweasel-l10n-eo (<< 45)
+Replaces: iceweasel-l10n-eo (<< 45)
+Provides: iceweasel-l10n-eo
 Description: Esperanto language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Esperanto.
+
+Package: iceweasel-l10n-eo
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-eo, ${misc:Depends}
+Description: Esperanto language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-es-ar
 Architecture: all
@@ -375,11 +655,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-es | myspell-es
+Breaks: iceweasel-l10n-es-ar (<< 45)
+Replaces: iceweasel-l10n-es-ar (<< 45)
+Provides: iceweasel-l10n-es-ar
 Description: Spanish (Argentina) language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Spanish (Argentina).
+
+Package: iceweasel-l10n-es-ar
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-es-ar, ${misc:Depends}
+Description: Spanish (Argentina) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-es-cl
 Architecture: all
@@ -387,11 +678,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-es | myspell-es
+Breaks: iceweasel-l10n-es-cl (<< 45)
+Replaces: iceweasel-l10n-es-cl (<< 45)
+Provides: iceweasel-l10n-es-cl
 Description: Spanish (Chile) language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Spanish (Chile).
+
+Package: iceweasel-l10n-es-cl
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-es-cl, ${misc:Depends}
+Description: Spanish (Chile) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-es-es
 Architecture: all
@@ -399,11 +701,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-es | myspell-es
+Breaks: iceweasel-l10n-es-es (<< 45)
+Replaces: iceweasel-l10n-es-es (<< 45)
+Provides: iceweasel-l10n-es-es
 Description: Spanish (Spain) language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Spanish (Spain).
+
+Package: iceweasel-l10n-es-es
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-es-es, ${misc:Depends}
+Description: Spanish (Spain) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-es-mx
 Architecture: all
@@ -411,11 +724,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-es | myspell-es
+Breaks: iceweasel-l10n-es-mx (<< 45)
+Replaces: iceweasel-l10n-es-mx (<< 45)
+Provides: iceweasel-l10n-es-mx
 Description: Spanish (Mexico) language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Spanish (Mexico).
+
+Package: iceweasel-l10n-es-mx
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-es-mx, ${misc:Depends}
+Description: Spanish (Mexico) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-et
 Architecture: all
@@ -423,11 +747,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: myspell-et
+Breaks: iceweasel-l10n-et (<< 45)
+Replaces: iceweasel-l10n-et (<< 45)
+Provides: iceweasel-l10n-et
 Description: Estonian language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Estonian.
+
+Package: iceweasel-l10n-et
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-et, ${misc:Depends}
+Description: Estonian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-eu
 Architecture: all
@@ -435,11 +770,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-eu
+Breaks: iceweasel-l10n-eu (<< 45)
+Replaces: iceweasel-l10n-eu (<< 45)
+Provides: iceweasel-l10n-eu
 Description: Basque language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Basque.
+
+Package: iceweasel-l10n-eu
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-eu, ${misc:Depends}
+Description: Basque language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-fa
 Architecture: all
@@ -447,22 +793,44 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: myspell-fa
+Breaks: iceweasel-l10n-fa (<< 45)
+Replaces: iceweasel-l10n-fa (<< 45)
+Provides: iceweasel-l10n-fa
 Description: Persian language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Persian.
 
+Package: iceweasel-l10n-fa
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-fa, ${misc:Depends}
+Description: Persian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-ff
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-ff (<< 45)
+Replaces: iceweasel-l10n-ff (<< 45)
+Provides: iceweasel-l10n-ff
 Description: Fulah language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Fulah.
+
+Package: iceweasel-l10n-ff
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-ff, ${misc:Depends}
+Description: Fulah language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-fi
 Architecture: all
@@ -470,11 +838,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: xul-ext-mozvoikko
+Breaks: iceweasel-l10n-fi (<< 45)
+Replaces: iceweasel-l10n-fi (<< 45)
+Provides: iceweasel-l10n-fi
 Description: Finnish language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Finnish.
+
+Package: iceweasel-l10n-fi
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-fi, ${misc:Depends}
+Description: Finnish language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-fr
 Architecture: all
@@ -482,22 +861,44 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-fr | myspell-fr | myspell-fr-gut
+Breaks: iceweasel-l10n-fr (<< 45)
+Replaces: iceweasel-l10n-fr (<< 45)
+Provides: iceweasel-l10n-fr
 Description: French language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in French.
 
+Package: iceweasel-l10n-fr
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-fr, ${misc:Depends}
+Description: French language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-fy-nl
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-fy-nl (<< 45)
+Replaces: iceweasel-l10n-fy-nl (<< 45)
+Provides: iceweasel-l10n-fy-nl
 Description: Western Frisian (Netherlands) language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Western Frisian (Netherlands).
+
+Package: iceweasel-l10n-fy-nl
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-fy-nl, ${misc:Depends}
+Description: Western Frisian (Netherlands) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-ga-ie
 Architecture: all
@@ -505,11 +906,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: myspell-ga
+Breaks: iceweasel-l10n-ga-ie (<< 45)
+Replaces: iceweasel-l10n-ga-ie (<< 45)
+Provides: iceweasel-l10n-ga-ie
 Description: Irish (Ireland) language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Irish (Ireland).
+
+Package: iceweasel-l10n-ga-ie
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-ga-ie, ${misc:Depends}
+Description: Irish (Ireland) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-gd
 Architecture: all
@@ -517,11 +929,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-gd | myspell-gd
+Breaks: iceweasel-l10n-gd (<< 45)
+Replaces: iceweasel-l10n-gd (<< 45)
+Provides: iceweasel-l10n-gd
 Description: Scottish Gaelic language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Scottish Gaelic.
+
+Package: iceweasel-l10n-gd
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-gd, ${misc:Depends}
+Description: Scottish Gaelic language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-gl
 Architecture: all
@@ -529,22 +952,44 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-gl-es | hunspell-gl
+Breaks: iceweasel-l10n-gl (<< 45)
+Replaces: iceweasel-l10n-gl (<< 45)
+Provides: iceweasel-l10n-gl
 Description: Galician language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Galician.
 
+Package: iceweasel-l10n-gl
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-gl, ${misc:Depends}
+Description: Galician language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-gn
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-gn (<< 45)
+Replaces: iceweasel-l10n-gn (<< 45)
+Provides: iceweasel-l10n-gn
 Description: Guarani language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Guarani.
+
+Package: iceweasel-l10n-gn
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-gn, ${misc:Depends}
+Description: Guarani language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-gu-in
 Architecture: all
@@ -552,11 +997,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-gu
+Breaks: iceweasel-l10n-gu-in (<< 45)
+Replaces: iceweasel-l10n-gu-in (<< 45)
+Provides: iceweasel-l10n-gu-in
 Description: Gujarati (India) language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Gujarati (India).
+
+Package: iceweasel-l10n-gu-in
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-gu-in, ${misc:Depends}
+Description: Gujarati (India) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-he
 Architecture: all
@@ -564,11 +1020,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-he | myspell-he
+Breaks: iceweasel-l10n-he (<< 45)
+Replaces: iceweasel-l10n-he (<< 45)
+Provides: iceweasel-l10n-he
 Description: Hebrew language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Hebrew.
+
+Package: iceweasel-l10n-he
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-he, ${misc:Depends}
+Description: Hebrew language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-hi-in
 Architecture: all
@@ -576,11 +1043,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-hi
+Breaks: iceweasel-l10n-hi-in (<< 45)
+Replaces: iceweasel-l10n-hi-in (<< 45)
+Provides: iceweasel-l10n-hi-in
 Description: Hindi (India) language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Hindi (India).
+
+Package: iceweasel-l10n-hi-in
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-hi-in, ${misc:Depends}
+Description: Hindi (India) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-hr
 Architecture: all
@@ -588,22 +1066,44 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-hr
+Breaks: iceweasel-l10n-hr (<< 45)
+Replaces: iceweasel-l10n-hr (<< 45)
+Provides: iceweasel-l10n-hr
 Description: Croatian language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Croatian.
 
+Package: iceweasel-l10n-hr
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-hr, ${misc:Depends}
+Description: Croatian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-hsb
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-hsb (<< 45)
+Replaces: iceweasel-l10n-hsb (<< 45)
+Provides: iceweasel-l10n-hsb
 Description: Upper Sorbian language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Upper Sorbian.
+
+Package: iceweasel-l10n-hsb
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-hsb, ${misc:Depends}
+Description: Upper Sorbian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-hu
 Architecture: all
@@ -611,11 +1111,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-hu | myspell-hu
+Breaks: iceweasel-l10n-hu (<< 45)
+Replaces: iceweasel-l10n-hu (<< 45)
+Provides: iceweasel-l10n-hu
 Description: Hungarian language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Hungarian.
+
+Package: iceweasel-l10n-hu
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-hu, ${misc:Depends}
+Description: Hungarian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-hy-am
 Architecture: all
@@ -623,22 +1134,44 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: myspell-hy
+Breaks: iceweasel-l10n-hy-am (<< 45)
+Replaces: iceweasel-l10n-hy-am (<< 45)
+Provides: iceweasel-l10n-hy-am
 Description: Armenian (Armenia) language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Armenian (Armenia).
 
+Package: iceweasel-l10n-hy-am
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-hy-am, ${misc:Depends}
+Description: Armenian (Armenia) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-ia
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-ia (<< 45)
+Replaces: iceweasel-l10n-ia (<< 45)
+Provides: iceweasel-l10n-ia
 Description: Interlingua language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Interlingua.
+
+Package: iceweasel-l10n-ia
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-ia, ${misc:Depends}
+Description: Interlingua language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-id
 Architecture: all
@@ -646,11 +1179,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-id
+Breaks: iceweasel-l10n-id (<< 45)
+Replaces: iceweasel-l10n-id (<< 45)
+Provides: iceweasel-l10n-id
 Description: Indonesian language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Indonesian.
+
+Package: iceweasel-l10n-id
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-id, ${misc:Depends}
+Description: Indonesian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-is
 Architecture: all
@@ -658,11 +1202,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-is
+Breaks: iceweasel-l10n-is (<< 45)
+Replaces: iceweasel-l10n-is (<< 45)
+Provides: iceweasel-l10n-is
 Description: Icelandic language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Icelandic.
+
+Package: iceweasel-l10n-is
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-is, ${misc:Depends}
+Description: Icelandic language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-it
 Architecture: all
@@ -670,44 +1225,88 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-it
+Breaks: iceweasel-l10n-it (<< 45)
+Replaces: iceweasel-l10n-it (<< 45)
+Provides: iceweasel-l10n-it
 Description: Italian language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Italian.
 
+Package: iceweasel-l10n-it
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-it, ${misc:Depends}
+Description: Italian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-ja
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-ja (<< 45)
+Replaces: iceweasel-l10n-ja (<< 45)
+Provides: iceweasel-l10n-ja
 Description: Japanese language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Japanese.
 
+Package: iceweasel-l10n-ja
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-ja, ${misc:Depends}
+Description: Japanese language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-ka
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-ka (<< 45)
+Replaces: iceweasel-l10n-ka (<< 45)
+Provides: iceweasel-l10n-ka
 Description: Georgian language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Georgian.
 
+Package: iceweasel-l10n-ka
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-ka, ${misc:Depends}
+Description: Georgian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-kab
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-kab (<< 45)
+Replaces: iceweasel-l10n-kab (<< 45)
+Provides: iceweasel-l10n-kab
 Description: Kabyle language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Kabyle.
+
+Package: iceweasel-l10n-kab
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-kab, ${misc:Depends}
+Description: Kabyle language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-kk
 Architecture: all
@@ -715,33 +1314,66 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-kk
+Breaks: iceweasel-l10n-kk (<< 45)
+Replaces: iceweasel-l10n-kk (<< 45)
+Provides: iceweasel-l10n-kk
 Description: Kazakh language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Kazakh.
 
+Package: iceweasel-l10n-kk
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-kk, ${misc:Depends}
+Description: Kazakh language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-km
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-km (<< 45)
+Replaces: iceweasel-l10n-km (<< 45)
+Provides: iceweasel-l10n-km
 Description: Central Khmer language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Central Khmer.
 
+Package: iceweasel-l10n-km
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-km, ${misc:Depends}
+Description: Central Khmer language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-kn
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-kn (<< 45)
+Replaces: iceweasel-l10n-kn (<< 45)
+Provides: iceweasel-l10n-kn
 Description: Kannada language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Kannada.
+
+Package: iceweasel-l10n-kn
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-kn, ${misc:Depends}
+Description: Kannada language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-ko
 Architecture: all
@@ -749,22 +1381,44 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-ko
+Breaks: iceweasel-l10n-ko (<< 45)
+Replaces: iceweasel-l10n-ko (<< 45)
+Provides: iceweasel-l10n-ko
 Description: Korean language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Korean.
 
+Package: iceweasel-l10n-ko
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-ko, ${misc:Depends}
+Description: Korean language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-lij
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-lij (<< 45)
+Replaces: iceweasel-l10n-lij (<< 45)
+Provides: iceweasel-l10n-lij
 Description: Ligurian language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Ligurian.
+
+Package: iceweasel-l10n-lij
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-lij, ${misc:Depends}
+Description: Ligurian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-lt
 Architecture: all
@@ -772,11 +1426,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-lt
+Breaks: iceweasel-l10n-lt (<< 45)
+Replaces: iceweasel-l10n-lt (<< 45)
+Provides: iceweasel-l10n-lt
 Description: Lithuanian language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Lithuanian.
+
+Package: iceweasel-l10n-lt
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-lt, ${misc:Depends}
+Description: Lithuanian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-lv
 Architecture: all
@@ -784,33 +1449,66 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-lv | myspell-lv
+Breaks: iceweasel-l10n-lv (<< 45)
+Replaces: iceweasel-l10n-lv (<< 45)
+Provides: iceweasel-l10n-lv
 Description: Latvian language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Latvian.
 
+Package: iceweasel-l10n-lv
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-lv, ${misc:Depends}
+Description: Latvian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-mai
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-mai (<< 45)
+Replaces: iceweasel-l10n-mai (<< 45)
+Provides: iceweasel-l10n-mai
 Description: Maithili language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Maithili.
 
+Package: iceweasel-l10n-mai
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-mai, ${misc:Depends}
+Description: Maithili language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-mk
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-mk (<< 45)
+Replaces: iceweasel-l10n-mk (<< 45)
+Provides: iceweasel-l10n-mk
 Description: Macedonian language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Macedonian.
+
+Package: iceweasel-l10n-mk
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-mk, ${misc:Depends}
+Description: Macedonian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-ml
 Architecture: all
@@ -818,44 +1516,88 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-ml
+Breaks: iceweasel-l10n-ml (<< 45)
+Replaces: iceweasel-l10n-ml (<< 45)
+Provides: iceweasel-l10n-ml
 Description: Malayalam language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Malayalam.
 
+Package: iceweasel-l10n-ml
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-ml, ${misc:Depends}
+Description: Malayalam language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-mr
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-mr (<< 45)
+Replaces: iceweasel-l10n-mr (<< 45)
+Provides: iceweasel-l10n-mr
 Description: Marathi language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Marathi.
 
+Package: iceweasel-l10n-mr
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-mr, ${misc:Depends}
+Description: Marathi language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-ms
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-ms (<< 45)
+Replaces: iceweasel-l10n-ms (<< 45)
+Provides: iceweasel-l10n-ms
 Description: Malay language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Malay.
 
+Package: iceweasel-l10n-ms
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-ms, ${misc:Depends}
+Description: Malay language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-my
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-my (<< 45)
+Replaces: iceweasel-l10n-my (<< 45)
+Provides: iceweasel-l10n-my
 Description: Burmese language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Burmese.
+
+Package: iceweasel-l10n-my
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-my, ${misc:Depends}
+Description: Burmese language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-nb-no
 Architecture: all
@@ -863,11 +1605,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: myspell-nb
+Breaks: iceweasel-l10n-nb-no (<< 45)
+Replaces: iceweasel-l10n-nb-no (<< 45)
+Provides: iceweasel-l10n-nb-no
 Description: Norwegian Bokmål (Norway) language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Norwegian Bokmål (Norway).
+
+Package: iceweasel-l10n-nb-no
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-nb-no, ${misc:Depends}
+Description: Norwegian Bokmål (Norway) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-ne-np
 Architecture: all
@@ -875,11 +1628,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-ne
+Breaks: iceweasel-l10n-ne-np (<< 45)
+Replaces: iceweasel-l10n-ne-np (<< 45)
+Provides: iceweasel-l10n-ne-np
 Description: Nepali (Nepal) language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Nepali (Nepal).
+
+Package: iceweasel-l10n-ne-np
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-ne-np, ${misc:Depends}
+Description: Nepali (Nepal) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-nl
 Architecture: all
@@ -887,11 +1651,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-nl
+Breaks: iceweasel-l10n-nl (<< 45)
+Replaces: iceweasel-l10n-nl (<< 45)
+Provides: iceweasel-l10n-nl
 Description: Dutch language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Dutch.
+
+Package: iceweasel-l10n-nl
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-nl, ${misc:Depends}
+Description: Dutch language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-nn-no
 Architecture: all
@@ -899,11 +1674,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: myspell-nn
+Breaks: iceweasel-l10n-nn-no (<< 45)
+Replaces: iceweasel-l10n-nn-no (<< 45)
+Provides: iceweasel-l10n-nn-no
 Description: Norwegian Nynorsk (Norway) language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Norwegian Nynorsk (Norway).
+
+Package: iceweasel-l10n-nn-no
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-nn-no, ${misc:Depends}
+Description: Norwegian Nynorsk (Norway) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-oc
 Architecture: all
@@ -911,33 +1697,66 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-oc
+Breaks: iceweasel-l10n-oc (<< 45)
+Replaces: iceweasel-l10n-oc (<< 45)
+Provides: iceweasel-l10n-oc
 Description: Occitan language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Occitan.
 
+Package: iceweasel-l10n-oc
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-oc, ${misc:Depends}
+Description: Occitan language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-or
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-or (<< 45)
+Replaces: iceweasel-l10n-or (<< 45)
+Provides: iceweasel-l10n-or
 Description: Oriya language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Oriya.
 
+Package: iceweasel-l10n-or
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-or, ${misc:Depends}
+Description: Oriya language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-pa-in
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-pa-in (<< 45)
+Replaces: iceweasel-l10n-pa-in (<< 45)
+Provides: iceweasel-l10n-pa-in
 Description: Panjabi (India) language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Panjabi (India).
+
+Package: iceweasel-l10n-pa-in
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-pa-in, ${misc:Depends}
+Description: Panjabi (India) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-pl
 Architecture: all
@@ -945,11 +1764,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-pl | myspell-pl
+Breaks: iceweasel-l10n-pl (<< 45)
+Replaces: iceweasel-l10n-pl (<< 45)
+Provides: iceweasel-l10n-pl
 Description: Polish language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Polish.
+
+Package: iceweasel-l10n-pl
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-pl, ${misc:Depends}
+Description: Polish language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-pt-br
 Architecture: all
@@ -957,11 +1787,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-pt-br | myspell-pt-br
+Breaks: iceweasel-l10n-pt-br (<< 45)
+Replaces: iceweasel-l10n-pt-br (<< 45)
+Provides: iceweasel-l10n-pt-br
 Description: Portuguese (Brazil) language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Portuguese (Brazil).
+
+Package: iceweasel-l10n-pt-br
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-pt-br, ${misc:Depends}
+Description: Portuguese (Brazil) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-pt-pt
 Architecture: all
@@ -969,22 +1810,44 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-pt-pt | myspell-pt-pt
+Breaks: iceweasel-l10n-pt-pt (<< 45)
+Replaces: iceweasel-l10n-pt-pt (<< 45)
+Provides: iceweasel-l10n-pt-pt
 Description: Portuguese (Portugal) language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Portuguese (Portugal).
 
+Package: iceweasel-l10n-pt-pt
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-pt-pt, ${misc:Depends}
+Description: Portuguese (Portugal) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-rm
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-rm (<< 45)
+Replaces: iceweasel-l10n-rm (<< 45)
+Provides: iceweasel-l10n-rm
 Description: Romansh language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Romansh.
+
+Package: iceweasel-l10n-rm
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-rm, ${misc:Depends}
+Description: Romansh language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-ro
 Architecture: all
@@ -992,11 +1855,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-ro
+Breaks: iceweasel-l10n-ro (<< 45)
+Replaces: iceweasel-l10n-ro (<< 45)
+Provides: iceweasel-l10n-ro
 Description: Romanian language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Romanian.
+
+Package: iceweasel-l10n-ro
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-ro, ${misc:Depends}
+Description: Romanian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-ru
 Architecture: all
@@ -1004,11 +1878,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-ru | myspell-ru
+Breaks: iceweasel-l10n-ru (<< 45)
+Replaces: iceweasel-l10n-ru (<< 45)
+Provides: iceweasel-l10n-ru
 Description: Russian language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Russian.
+
+Package: iceweasel-l10n-ru
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-ru, ${misc:Depends}
+Description: Russian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-si
 Architecture: all
@@ -1016,11 +1901,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-si
+Breaks: iceweasel-l10n-si (<< 45)
+Replaces: iceweasel-l10n-si (<< 45)
+Provides: iceweasel-l10n-si
 Description: Sinhala language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Sinhala.
+
+Package: iceweasel-l10n-si
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-si, ${misc:Depends}
+Description: Sinhala language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-sk
 Architecture: all
@@ -1028,11 +1924,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-sk | myspell-sk
+Breaks: iceweasel-l10n-sk (<< 45)
+Replaces: iceweasel-l10n-sk (<< 45)
+Provides: iceweasel-l10n-sk
 Description: Slovak language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Slovak.
+
+Package: iceweasel-l10n-sk
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-sk, ${misc:Depends}
+Description: Slovak language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-sl
 Architecture: all
@@ -1040,22 +1947,44 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-sl
+Breaks: iceweasel-l10n-sl (<< 45)
+Replaces: iceweasel-l10n-sl (<< 45)
+Provides: iceweasel-l10n-sl
 Description: Slovenian language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Slovenian.
 
+Package: iceweasel-l10n-sl
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-sl, ${misc:Depends}
+Description: Slovenian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-son
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-son (<< 45)
+Replaces: iceweasel-l10n-son (<< 45)
+Provides: iceweasel-l10n-son
 Description: Songhai languages language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Songhai languages.
+
+Package: iceweasel-l10n-son
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-son, ${misc:Depends}
+Description: Songhai languages language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-sq
 Architecture: all
@@ -1063,11 +1992,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: myspell-sq
+Breaks: iceweasel-l10n-sq (<< 45)
+Replaces: iceweasel-l10n-sq (<< 45)
+Provides: iceweasel-l10n-sq
 Description: Albanian language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Albanian.
+
+Package: iceweasel-l10n-sq
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-sq, ${misc:Depends}
+Description: Albanian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-sr
 Architecture: all
@@ -1075,11 +2015,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-sr
+Breaks: iceweasel-l10n-sr (<< 45)
+Replaces: iceweasel-l10n-sr (<< 45)
+Provides: iceweasel-l10n-sr
 Description: Serbian language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Serbian.
+
+Package: iceweasel-l10n-sr
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-sr, ${misc:Depends}
+Description: Serbian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-sv-se
 Architecture: all
@@ -1087,22 +2038,44 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-sv-se
+Breaks: iceweasel-l10n-sv-se (<< 45)
+Replaces: iceweasel-l10n-sv-se (<< 45)
+Provides: iceweasel-l10n-sv-se
 Description: Swedish (Sweden) language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Swedish (Sweden).
 
+Package: iceweasel-l10n-sv-se
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-sv-se, ${misc:Depends}
+Description: Swedish (Sweden) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-ta
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-ta (<< 45)
+Replaces: iceweasel-l10n-ta (<< 45)
+Provides: iceweasel-l10n-ta
 Description: Tamil language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Tamil.
+
+Package: iceweasel-l10n-ta
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-ta, ${misc:Depends}
+Description: Tamil language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-te
 Architecture: all
@@ -1110,11 +2083,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-te
+Breaks: iceweasel-l10n-te (<< 45)
+Replaces: iceweasel-l10n-te (<< 45)
+Provides: iceweasel-l10n-te
 Description: Telugu language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Telugu.
+
+Package: iceweasel-l10n-te
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-te, ${misc:Depends}
+Description: Telugu language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-th
 Architecture: all
@@ -1122,22 +2106,44 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-th
+Breaks: iceweasel-l10n-th (<< 45)
+Replaces: iceweasel-l10n-th (<< 45)
+Provides: iceweasel-l10n-th
 Description: Thai language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Thai.
 
+Package: iceweasel-l10n-th
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-th, ${misc:Depends}
+Description: Thai language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-tr
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-tr (<< 45)
+Replaces: iceweasel-l10n-tr (<< 45)
+Provides: iceweasel-l10n-tr
 Description: Turkish language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Turkish.
+
+Package: iceweasel-l10n-tr
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-tr, ${misc:Depends}
+Description: Turkish language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-uk
 Architecture: all
@@ -1145,22 +2151,44 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-uk | myspell-uk
+Breaks: iceweasel-l10n-uk (<< 45)
+Replaces: iceweasel-l10n-uk (<< 45)
+Provides: iceweasel-l10n-uk
 Description: Ukrainian language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Ukrainian.
 
+Package: iceweasel-l10n-uk
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-uk, ${misc:Depends}
+Description: Ukrainian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-ur
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-ur (<< 45)
+Replaces: iceweasel-l10n-ur (<< 45)
+Provides: iceweasel-l10n-ur
 Description: Urdu language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Urdu.
+
+Package: iceweasel-l10n-ur
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-ur, ${misc:Depends}
+Description: Urdu language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-uz
 Architecture: all
@@ -1168,11 +2196,22 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-uz
+Breaks: iceweasel-l10n-uz (<< 45)
+Replaces: iceweasel-l10n-uz (<< 45)
+Provides: iceweasel-l10n-uz
 Description: Uzbek language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Uzbek.
+
+Package: iceweasel-l10n-uz
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-uz, ${misc:Depends}
+Description: Uzbek language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
 
 Package: firefox-esr-l10n-vi
 Architecture: all
@@ -1180,41 +2219,85 @@ Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
 Recommends: hunspell-vi
+Breaks: iceweasel-l10n-vi (<< 45)
+Replaces: iceweasel-l10n-vi (<< 45)
+Provides: iceweasel-l10n-vi
 Description: Vietnamese language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Vietnamese.
 
+Package: iceweasel-l10n-vi
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-vi, ${misc:Depends}
+Description: Vietnamese language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-xh
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-xh (<< 45)
+Replaces: iceweasel-l10n-xh (<< 45)
+Provides: iceweasel-l10n-xh
 Description: Xhosa language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Xhosa.
 
+Package: iceweasel-l10n-xh
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-xh, ${misc:Depends}
+Description: Xhosa language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-zh-cn
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-zh-cn (<< 45)
+Replaces: iceweasel-l10n-zh-cn (<< 45)
+Provides: iceweasel-l10n-zh-cn
 Description: Chinese (China) language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Chinese (China).
 
+Package: iceweasel-l10n-zh-cn
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-zh-cn, ${misc:Depends}
+Description: Chinese (China) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
 Package: firefox-esr-l10n-zh-tw
 Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox-esr (>= ${source:Version}), firefox-esr (<< ${source:Version}.1~)
+Breaks: iceweasel-l10n-zh-tw (<< 45)
+Replaces: iceweasel-l10n-zh-tw (<< 45)
+Provides: iceweasel-l10n-zh-tw
 Description: Chinese (Taiwan) language package for Firefox ESR
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
  .
  This package contains the localization of Firefox ESR in Chinese (Taiwan).
+
+Package: iceweasel-l10n-zh-tw
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: firefox-esr-l10n-zh-tw, ${misc:Depends}
+Description: Chinese (Taiwan) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
