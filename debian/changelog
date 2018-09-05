@@ -1,8 +1,24 @@
-firefox (62.0-1) UNRELEASED; urgency=medium
+firefox (62.0-1) unstable; urgency=medium
 
   * New upstream release.
+  * Fixes for mfsa2018-20, also known as:
+    CVE-2018-12377, CVE-2018-12378, CVE-2018-12383, CVE-2018-12375,
+    CVE-2018-12376.
 
- -- Mike Hommey <glandium@debian.org>  Thu, 06 Sep 2018 07:19:16 +0900
+  * debian/control*:
+    - Bump nss and sqlite build dependencies.
+    - Build depend on llvm/clang 6.0 for buster. Closes: #906175.
+  * debian/browser.mozconfig.in, debian/control*, debian/rules: Remove
+    build dependency on libbz2-dev. It's not used anymore.
+  * debian/noinstall.in: Remove the dictionaries directory, not part
+    of the packaged Firefox anymore.
+  * debian/l10n/gen: Use iso-codes json data instead of XML when present.
+    Closes: #907611.
+
+  * widget/gtk/nsAppShell.cpp: Use remoting name for call to
+    gdk_set_program_class. Closes: #907574.
+
+ -- Mike Hommey <glandium@debian.org>  Thu, 06 Sep 2018 07:42:45 +0900
 
 firefox (61.0.1-1) unstable; urgency=medium
 
