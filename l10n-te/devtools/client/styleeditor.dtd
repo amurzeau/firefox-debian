@@ -10,11 +10,11 @@
      A good criteria is the language in which you'd find the best documentation
      on web development on the web. -->
 
-<!ENTITY newButton.label            "కొత్త">
+<!ENTITY newButton.label            "కొత్తది">
 <!ENTITY newButton.tooltip          "పత్రమునకు కొత్త శైలి షీట్‌ను సృష్టించు మరియు జేర్చు">
 <!ENTITY newButton.accesskey        "N">
 
-<!ENTITY importButton.label         "దిగుమతిచేయి…">
+<!ENTITY importButton.label         "దిగుమతి చేయి…">
 <!ENTITY importButton.tooltip       "ఇప్పటికే వున్న శైలి షీట్‌ను దిగుమతి చేసి పత్రమునకు జేర్చు">
 <!ENTITY importButton.accesskey     "I">
 
@@ -24,11 +24,11 @@
 <!ENTITY saveButton.tooltip         "ఈ శైలి షీట్‌ను ఫైలునకు దాయి">
 <!ENTITY saveButton.accesskey       "S">
 
-<!ENTITY optionsButton.tooltip      "శైలి సరికూర్పరి ఎంపికలు">
+<!ENTITY optionsButton.tooltip      "శైలి ఎడిటర్ ఎంపికలు">
 
 <!-- LOCALIZATION NOTE  (showOriginalSources.label): This is the label on the context
      menu item to toggle showing original sources in the editor. -->
-<!ENTITY showOriginalSources.label     "వాస్తవ మూలాలను చూపు">
+<!ENTITY showOriginalSources.label     "అసలు మూలాలను చూపించు">
 
 <!-- LOCALIZATION NOTE  (showOriginalSources.accesskey): This is the access key for
      the menu item to toggle showing original sources in the editor. -->
@@ -36,7 +36,7 @@
 
 <!-- LOCALIZATION NOTE  (showMediaSidebar.label): This is the label on the context
      menu item to toggle showing @media rule shortcuts in a sidebar. -->
-<!ENTITY showMediaSidebar.label     "@media పక్కపట్టీ చూపు">
+<!ENTITY showMediaSidebar.label     "@media పక్కపట్టీ చూపించు">
 
 <!-- LOCALIZATION NOTE  (showMediaSidebar.accesskey): This is the access key for
      the menu item to toggle showing the @media sidebar. -->
@@ -46,11 +46,11 @@
      in each stylesheet editor sidebar. -->
 <!ENTITY mediaRules.label           "@media నియమాలు">
 
-<!ENTITY editorTextbox.placeholder  "CSS ఇచట టైపుచేయి.">
+<!ENTITY editorTextbox.placeholder  "ఇక్కడ CSS టైపుచెయ్యండి.">
 
 <!-- LOCALICATION NOTE  (noStyleSheet.label): This is shown when a page has no
      stylesheet. -->
-<!ENTITY noStyleSheet.label         "ఈ పేజీ యే శైలి షీట్‌ను కలిగిలేదు.">
+<!ENTITY noStyleSheet.label         "ఈ పేజీకి శైలి షీట్ ఏమీ లేదు.">
 
 <!-- LOCALICATION NOTE  (noStyleSheet-tip-start.label): This is the start of a
      tip sentence shown when there is no stylesheet. It suggests to create a new
@@ -58,7 +58,7 @@
 <!ENTITY noStyleSheet-tip-start.label  "బహశా మీరు కొత్త శైలిషీట్‌ను ">
 <!-- LOCALICATION NOTE  (noStyleSheet-tip-action.label): This is text for the
      link that triggers creation of a new stylesheet. -->
-<!ENTITY noStyleSheet-tip-action.label "జేర్చుటకు యిష్టపడవచ్చు">
+<!ENTITY noStyleSheet-tip-action.label "ఒక కొత్త శైలి షీటును జోడించు">
 <!-- LOCALICATION NOTE  (noStyleSheet-tip-end.label): End of the tip sentence -->
 <!ENTITY noStyleSheet-tip-end.label    "?">
 

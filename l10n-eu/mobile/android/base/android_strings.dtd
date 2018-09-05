@@ -372,6 +372,8 @@
 
 <!ENTITY pref_media_autoplay_enabled "Baimendu auto-erreprodukzioa">
 <!ENTITY pref_media_autoplay_enabled_summary "Kontrolatu webguneek bideoak eta bestelako multimedia-edukiak automatikoki erreproduzi ditzaketen ala ez">
+<!ENTITY pref_media_autoplay_allow "Baimendu auto-erreprodukzioa">
+<!ENTITY pref_media_autoplay_block "Blokeatu auto-erreprodukzioa">
 <!ENTITY pref_zoom_force_enabled "Gaitu beti zooma">
 <!ENTITY pref_zoom_force_enabled_summary "Behartu gainidazketa edozein orritan zooma erabili ahal izateko">
 <!ENTITY pref_voice_input "Ahots bidezko sarrera">
@@ -447,6 +449,11 @@
 <!ENTITY datareporting_crashreporter_title_short "Hutsegiteen berriemailea">
 <!ENTITY datareporting_wifi_title2 "&vendorShortName; kokapen-zerbitzuak">
 <!ENTITY datareporting_wifi_geolocation_summary4 "Lagundu &vendorShortName;(r)i mundua mapeatzen! Partekatu zure gailuaren Wi-Fi eta mugikorraren kokapena gure geokokapen-zerbitzua hobetzeko.">
+<!-- Localization note (datareporting_notification_title ) : This will be the title
+     of the notification shown whenever the user has enabled data reporting and the stumbler
+     service is running. -->
+<!ENTITY datareporting_stumbler_notification_title "&vendorShortName; kokapen-zerbitzuak exekutatzen ari dira">
+
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -697,7 +704,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY bookmarkhistory_import_history "Historia inportatzen Android-etik">
 <!ENTITY bookmarkhistory_import_wait "Itxaron mesedez...">
 
-<!ENTITY suggestions_prompt3 "Bilaketa-iradokizunak gaitu nahi dituzu?">
+<!ENTITY suggestions_prompt3 "Bilaketa-iradokizunak aktibatu nahi dituzu?">
 <!--  Localization note (search_bar_item_desc): When the user clicks the url bar
       and starts typing, a list of icons of search engines appears at the bottom
       of the screen. When a user clicks an icon, the entered text will be searched
@@ -888,3 +895,15 @@ See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "Gehitu hasierako pantailan">
 <!ENTITY pwa_continue_to_website "Jarraitu webgunera">
 <!ENTITY pwa_onboarding_sumo "Modu errazean gehi dezakezu webgune hau zure hasierako pantailan berehalako sarbidea izan eta aplikazio-moduko esperientziarekin azkarrago nabigatzeko.">
+
+<!-- Used by accessibility services to identify the play/pause buttons shown in the
+Picture-in-picture mini window -->
+<!ENTITY pip_play_button_title "Erreproduzitu">
+<!ENTITY pip_play_button_description "Berrekin erreprodukzioa">
+<!ENTITY pip_pause_button_title "Pausatu">
+<!ENTITY pip_pause_button_description "Pausatu erreprodukzioa">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY mls_notification_channel "&vendorShortName; kokapen-zerbitzuak">
+<!ENTITY download_notification_channel "Deskargak">

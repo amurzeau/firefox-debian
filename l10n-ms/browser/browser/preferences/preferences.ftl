@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -137,20 +129,11 @@ is-not-default = { -brand-short-name } bukan pelayar piawai anda
 set-as-my-default-browser =
     .label = Jadikan Piawai…
     .accesskey = P
-startup-page = Apabila { -brand-short-name } mula
-    .accesskey = m
-startup-user-homepage =
-    .label = Papar laman anda
-startup-blank-page =
-    .label = Papar halaman kosong
-startup-prev-session =
-    .label = Papar tetingkap dan tab anda yang terdahulu
 startup-restore-previous-session =
     .label = Pulih sesi dahulu
     .accesskey = s
 disable-extension =
     .label = Nyahdayakan Ekstensi
-home-page-header = Laman
 tabs-group-header = Tab
 ctrl-tab-recently-used-order =
     .label = Pusingan Ctrl+Tab mengikut tertib tab yang baru digunakan
@@ -207,6 +190,9 @@ choose-language-description = Pilih bahasa pilihan anda untuk memaparkan halaman
 choose-button =
     .label = Pilih…
     .accesskey = P
+choose-browser-language-description = Pilih bahasa yang digunakan untuk memaparkan menu, mesej dan notifikasi { -brand-short-name }.
+confirm-browser-language-change-description = Mula semula { -brand-short-name } untuk melaksanakan perubahan ini
+confirm-browser-language-change-button = Terap dan Mula semula
 translate-web-pages =
     .label = Terjemah kandungan laman web
     .accesskey = T
@@ -258,7 +244,6 @@ play-drm-content =
 play-drm-content-learn-more = Ketahui selanjutnya
 update-application-title = Kemaskini { -brand-short-name }
 update-application-description = Pastikan { -brand-short-name } sentiasa dikemaskini untuk mendapatkan prestasi, kestabilan dan keselamatan yang terbaik.
-update-application-info = Versi { $version } <a>Perkembangan terbaru</a>
 update-application-version = Versi { $version } <a data-l10n-name="learn-more">Perkembangan terbaru</a>
 update-history =
     .label = Papar Sejarah Kemaskini…
@@ -294,7 +279,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Had proses kandungan
     .accesskey = H
 performance-limit-content-process-enabled-desc = Proses kandungan tambahan boleh memperbaiki prestasi apabila menggunakan berbilang tab, tetapi juga akan menggunakan lebih banyak memori.
-performance-limit-content-process-disabled-desc = Mengubah bilangan proses kandungan hanya boleh dilakukan dengan multi proses { -brand-short-name }. <a>Ketahui cara untuk menyemak samada multi proses didayakan</a>
 performance-limit-content-process-blocked-desc = Mengubah bilangan proses kandungan hanya boleh dilakukan dengan multi proses { -brand-short-name }. <a data-l10n-name="learn-more">Ketahui cara untuk menyemak samada multi proses didayakan</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -365,9 +349,6 @@ use-current-pages =
 choose-bookmark =
     .label = Guna Tandabuku…
     .accesskey = B
-restore-default =
-    .label = Pulih Piawai
-    .accesskey = P
 
 ## Search Section
 
@@ -612,6 +593,26 @@ sitedata-accept-third-party-visited-option =
     .label = Daripada yang dilawati
 sitedata-accept-third-party-never-option =
     .label = Jangan sesekali
+sitedata-allow-cookies-option =
+    .label = Terima kuki dan data laman
+    .accesskey = T
+sitedata-disallow-cookies-option =
+    .label = Sekat kuki dan data laman
+    .accesskey = S
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Jenis yang disekat
+    .accesskey = J
+sitedata-block-trackers-option-recommended =
+    .label = Penjejak pihak ketiga (disyorkan)
+sitedata-block-trackers-option =
+    .label = Penjejak pihak ketiga
+sitedata-block-unvisited-option =
+    .label = Kuki daripada laman web yang tidak dilawati
+sitedata-block-all-third-parties-option =
+    .label = Semua kuki pihak ketiga
+sitedata-block-always-option =
+    .label = Semua kuki (boleh menyebabkan laman web ranap)
 sitedata-clear =
     .label = Buang Data…
     .accesskey = u
@@ -636,6 +637,44 @@ addressbar-locbar-openpage-option =
     .label = Buka tab
     .accesskey = b
 addressbar-suggestions-settings = Tukar keutamaan bagi cadangan enjin carian
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = Sekatan Kandungan
+content-blocking-desc = Sekat kandungan pihak ketiga seperti iklan atau kod yang boleh melambatkan pelayaran dan menjejaki anda di seluruh web. Sesuaikan tetapan untuk mendapatkan imbangan perlindungan dan prestasi yang terbaik.
+content-blocking-learn-more = Ketahui Selanjutnya
+content-blocking-restore-defaults =
+    .label = Pulih Piawai
+    .accesskey = P
+content-blocking-toggle-on =
+    .tooltiptext = Nyahaktifkan Sekatan Kandungan
+content-blocking-toggle-off =
+    .tooltiptext = Aktifkan Sekatan Kandungan
+content-blocking-toggle-label-on = AKTIF
+    .accesskey = A
+content-blocking-toggle-label-off = NYAHAKTIF
+    .accesskey = N
+content-blocking-category-label = Pilih apa yang disekat
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Memperlahankan Elemen Penjejak
+    .accesskey = M
+content-blocking-fastblock-description = Sekat kandungan pihak ketiga yang lebih daripada 5 saat untuk dimuatkan.
+content-blocking-fastblock-option-enabled =
+    .label = Sentiasa sekat
+content-blocking-fastblock-option-disabled =
+    .label = Jangan sekat
+content-blocking-tracking-protection-label = Penjejak
+    .accesskey = P
+content-blocking-tracking-protection-description = Sekat semua penjejak yang diketahui (Nota: mungkin menghalang sesetengah halaman daripada dimuatkan).
+content-blocking-tracking-protection-option-enabled =
+    .label = Sentiasa sekat
+content-blocking-tracking-protection-option-pbm =
+    .label = Sekat hanya dalam tertingkap peribadi
+content-blocking-tracking-protection-option-disabled =
+    .label = Jangan sekat
+content-blocking-tracking-protection-change-blocklist = Tukar Senarai Sekatan…
 
 ## Privacy Section - Tracking
 
@@ -688,9 +727,17 @@ permissions-notification-pause =
 permissions-block-autoplay-media =
     .label = Sekat laman web daripada secara automatik memainkan media beserta muzik
     .accesskey = S
+permissions-block-autoplay-media-menu = Untuk laman web yang automain suara
 permissions-block-autoplay-media-exceptions =
     .label = Pengecualian…
     .accesskey = P
+autoplay-option-ask =
+    .label = Sentiasa Tanya
+autoplay-option-allow =
+    .label = Izinkan Automain
+autoplay-option-dont =
+    .label = Jangan Automain
+permissions-autoplay-link = Ketahui selanjutnya
 permissions-block-popups =
     .label = Sekat tetingkap popup
     .accesskey = S

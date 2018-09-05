@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -50,10 +42,10 @@ pane-privacy-title = ਪਰਦੇਦਾਰੀ ਤੇ ਸੁਰੱਖਿਆ
 category-privacy =
     .tooltiptext = { pane-privacy-title }
 # The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = ਫਾਇਰਫਾਕਸ ਖਾਤਾ
+pane-sync-title = ਫਾਇਰਫੌਕਸ ਖਾਤਾ
 category-sync =
     .tooltiptext = { pane-sync-title }
-help-button-label = { -brand-short-name } ਸਹਿਯੋਗ
+help-button-label = { -brand-short-name } ਸਮਰਥਨ
 focus-search =
     .key = f
 close-button =
@@ -66,7 +58,7 @@ feature-disable-requires-restart = ਇਹ ਫੀਚਰ ਅਸਮਰੱਥ ਕਰ
 should-restart-title = { -brand-short-name } ਨੂੰ ਮੁੜ-ਚਾਲੂ ਕਰੋ
 should-restart-ok = ਹੁਣੇ { -brand-short-name } ਨੂੰ ਮੁੜ-ਚਾਲੂ ਕਰੋ
 cancel-no-restart-button = ਰੱਦ ਕਰੋ
-restart-later = ਬਾਅਦ 'ਚ ਮੁੜ-ਚਾਲੂ ਕਰੋ
+restart-later = ਬਾਅਦ 'ਚ ਮੁੜ-ਚਾਲੂ ਕਰਿਉ
 
 ## Extension Control Notifications
 ##
@@ -80,7 +72,7 @@ restart-later = ਬਾਅਦ 'ਚ ਮੁੜ-ਚਾਲੂ ਕਰੋ
 
 # This string is shown to notify the user that their home page
 # is being controlled by an extension.
-extension-controlled-homepage-override = <img data-l10n-name="icon"/> { $name } ਇਕਸਟੈਨਸ਼ਨ ਤੁਹਾਡੇ ਮੁੱਖ ਸਫ਼ੇ ਨੂੰ ਕੰਟੋਰਲ ਕਰ ਰਹੀ ਹੈ।
+extension-controlled-homepage-override = <img data-l10n-name="icon"/> { $name } ਵਾਧਰਾ ਤੁਹਾਡੇ ਮੁੱਖ ਸਫ਼ੇ ਨੂੰ ਕਾਬੂ ਕਰ ਰਿਹਾ ਹੈ।
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = <img data-l10n-name="icon"/> { $name } ਇਕਸਟੈਨਸਨ ਤੁਹਾਡੇ ਨਵੀਂ ਟੈਬ ਸਫ਼ੇ ਨੂੰ ਕੰਟੋਰਲ ਕਰ ਰਹੀ ਹੈ।
@@ -101,7 +93,7 @@ extension-controlled-proxy-config = <img data-l10n-name="icon"/> { $name } ਇ�
 #
 # <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
 # <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
-extension-controlled-enable = ਇਕਸਟੈਨਸ਼ਨ ਨੂੰ ਸਮਰੱਥ ਕਰਨ ਲਈ <img data-l10n-name="menu-icon"/> ਮੇਨੂ ਵਿੱਚ <img data-l10n-name="addons-icon"/> ਐਡ-ਆਨ ਉੱਤੇ ਜਾਓ।
+extension-controlled-enable = ਵਾਧਰੇ ਨੂੰ ਸਮਰੱਥ ਕਰਨ ਲਈ <img data-l10n-name="menu-icon"/> ਮੇਨੂ ਵਿੱਚ <img data-l10n-name="addons-icon"/> ਐਡ-ਆਨ ਉੱਤੇ ਜਾਓ।
 
 ## Preferences UI Search Results
 
@@ -116,12 +108,12 @@ search-results-help-link = ਮਦਦ ਚਾਹੀਦੀ ਹੈ? <a data-l10n-nam
 
 ## General Section
 
-startup-header = ਸ਼ੁਰੂ
+startup-header = ਸ਼ੁਰੂਆਤ
 # { -brand-short-name } will be 'Firefox Developer Edition',
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
     .label = { -brand-short-name } ਤੇ ਫਾਇਰਫਾਕਸ ਨੂੰ ਇੱਕੋ ਸਮੇਂ ਚੱਲਣ ਦੀ ਇਜ਼ਾਜ਼ਤ ਦਿਉ
-use-firefox-sync = ਇਸ਼ਾਰਾ: ਇਹ ਵੱਖਰੇ ਪਰੋਫਾਈਲ ਵਰਤਦੇ ਹਨ। ਉਹਨਾਂ ਵਿਚਾਲੇ ਡਾਟਾ ਸਾਂਝਾ ਕਰਨ ਲਈ ਸਿੰਕ ਦੀ ਵਰਤੋਂ।
+use-firefox-sync = ਟੋਟਕਾ: ਇਹ ਵੱਖਰੇ ਬਿਉਰੇ ਵਰਤਦੇ ਹਨ। ਉਹਨਾਂ ਵਿਚਾਲੇ ਡੇਟਾ ਸਾਂਝਾ ਕਰਨ ਲਈ { -sync-brand-short-name } ਵਰਤੋ।
 get-started-not-logged-in = { -sync-brand-short-name } ਲਈ ਸਾਈਨ ਇਨ ਕਰੋ…
 get-started-configured = { -sync-brand-short-name } ਮੇਰੀ ਪਸੰਦ ਖੋਲ੍ਹੋ
 always-check-default =
@@ -132,21 +124,12 @@ is-not-default = { -brand-short-name } ਤੁਹਾਡਾ ਮੂਲ ਬਰਾਊ
 set-as-my-default-browser =
     .label = …ਡਿਫਾਲਟ ਬਣਾਓ
     .accesskey = D
-startup-page = ਜਦ { -brand-short-name } ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ
-    .accesskey = s
-startup-user-homepage =
-    .label = ਆਪਣਾ ਮੁੱਖ ਸਫ਼ਾ ਵੇਖੋ
-startup-blank-page =
-    .label = ਖ਼ਾਲੀ ਸਫ਼ਾ ਵੇਖੋ
-startup-prev-session =
-    .label = ਪਿਛਲੀ ਵਾਰ ਦੀਆਂ ਆਪਣੀਆਂ ਵਿੰਡੋ ਅਤੇ ਟੈਬਾਂ ਨੂੰ ਵੇਖੋ
 startup-restore-previous-session =
     .label = ਪਿਛਲਾ ਸ਼ੈਸ਼ਨ ਬਹਾਲ ਕਰੋ
     .accesskey = s
 disable-extension =
     .label = ਇਕਸਟੈਨਸ਼ਨ ਨੂੰ ਅਸਮਰੱਥ ਕਰੋ
-home-page-header = ਮੁੱਖ ਸਫ਼ਾ
-tabs-group-header = ਟੈਬਾਂ
+tabs-group-header = ਪੱਲ੍ਹੇ
 ctrl-tab-recently-used-order =
     .label = ਤਾਜ਼ਾ ਵਰਤੋਂ ਦੇ ਕ੍ਰਮ ਵਿੱਚ ਟੈਬਾਂ ਵਿੱਚ ਗੇੜੇ ਲਈ Ctrl+Tab ਵਰਤੋ
     .accesskey = T
@@ -185,11 +168,11 @@ containers-remove-cancel-button = ਇਸ ਕਨਟੇਨਰ ਨੂੰ ਨਾ ਹ
 
 ## General Section - Language & Appearance
 
-language-and-appearance-header = ਭਾਸ਼ਾ ਤੇ ਦਿੱਖ
-fonts-and-colors-header = ਫੋਂਟ ਤੇ ਰੰਗ
-default-font = ਡਿਫਾਲਟ ਫ਼ੋਂਟ
+language-and-appearance-header = ਬੋਲੀ ਅਤੇ ਦਿੱਖ
+fonts-and-colors-header = ਫੌਂਟ ਤੇ ਰੰਗ
+default-font = ਡਿਫਾਲਟ ਫੌਂਟ
     .accesskey = D
-default-font-size = ਆਕਾਰ
+default-font-size = ਕੱਦ
     .accesskey = S
 advanced-fonts =
     .label = …ਤਕਨੀਕੀ
@@ -197,8 +180,8 @@ advanced-fonts =
 colors-settings =
     .label = …ਰੰਗ
     .accesskey = C
-language-header = ਭਾਸ਼ਾ
-choose-language-description = ਸਫ਼ੇ ਨੂੰ ਵੇਖਣ ਲਈ ਆਪਣੀ ਪਸੰਦੀਦਾ ਭਾਸ਼ਾ ਚੁਣੋ
+language-header = ਬੋਲੀ
+choose-language-description = ਵਰਕੇ ਨੂੰ ਵੇਖਣ ਲਈ ਆਪਣੀ ਪਸੰਦੀਦਾ ਬੋਲੀ ਚੁਣੋ
 choose-button =
     .label = …ਚੁਣੋ
     .accesskey = o
@@ -212,15 +195,15 @@ translate-exceptions =
     .label = …ਛੋਟ
     .accesskey = x
 check-user-spelling =
-    .label = ਜਿਵੇਂ ਤੁਸੀਂ ਟਾਈਪ ਕਰੋ ਤਾਂ ਆਪਣੇ ਸਪੈਲਿੰਗਾਂ ਦੀ ਜਾਂਚ ਕਰੋ
+    .label = ਲਿਖਦੇ ਵੇਲੇ ਸ਼ਬਦ ਜੋੜਾਂ ਦੀ ਜਾਂਚ ਨਾਲ ਦੀ ਨਾਲ ਕਰਦੇ ਰਹੋ
     .accesskey = t
 
 ## General Section - Files and Applications
 
-files-and-applications-title = ਫਾਈਲਾਂ ਅਤੇ ਐਪਲੀਕੇਸ਼ਨਾਂ
+files-and-applications-title = ਜਿਲਦਾਂ ਅਤੇ ਐਪਲੀਕੇਸ਼ਨਾਂ
 download-header = ਡਾਊਨਲੋਡ
 download-save-to =
-    .label = ਫਾਈਲਾਂ ਨੂੰ ਸੰਭਾਲੋ
+    .label = ਜਿਲਦਾਂ ਨੂੰ ਸੰਭਾਲੋ
     .accesskey = v
 download-choose-folder =
     .label =
@@ -241,7 +224,7 @@ applications-description = ਚੁਣੋ ਕਿ ਬਰਾਊਜ਼ ਕਰਨ ਦ�
 applications-filter =
     .placeholder = ਫਾਈਲ ਕਿਸਮਾਂ ਜਾਂ ਐਪਲੀਕੇਸ਼ਨਾਂ ਲੱਭੋ
 applications-type-column =
-    .label = ਸਮੱਗਰੀ ਟਾਈਪ
+    .label = ਸਮੱਗਰੀ ਕਿਸਮ
     .accesskey = T
 applications-action-column =
     .label = ਐਕਸ਼ਨ
@@ -253,7 +236,6 @@ play-drm-content =
 play-drm-content-learn-more = ਹੋਰ ਜਾਣੋ
 update-application-title = { -brand-short-name } ਅੱਪਡੇਟ
 update-application-description = ਵਧੀਆ ਕਾਰਗੁਜ਼ਾਰੀ, ਸਥਿਰਤਾ ਅਤੇ ਸੁਰੱਖਿਆ ਲਈ { -brand-short-name } ਨੂੰ ਅੱਪ-ਟੂ-ਡੇਟ ਕਰਕੇ ਰੱਖੋ।
-update-application-info = ਵਰਜ਼ਨ { $version } <a>ਨਵਾਂ ਕੀ ਹੈ</a>
 update-application-version = ਵਰਜ਼ਨ { $version } <a data-l10n-name="learn-more">ਨਵਾਂ ਕੀ ਹੈ</a>
 update-history =
     .label = …ਅੱਪਡੇਟ ਅਤੀਤ ਵੇਖੋ
@@ -324,7 +306,7 @@ network-proxy-connection-settings =
 
 ## Home Section
 
-home-new-windows-tabs-header = ਨਵੀਆਂ ਵਿੰਡੋਆਂ ਅਤੇ ਟੈਬਾਂ
+home-new-windows-tabs-header = ਨਵੀਆਂ ਖਿੜਕੀਆਂ ਅਤੇ ਪੱਲ੍ਹੇ
 home-new-windows-tabs-description2 = ਚੁਣੋ ਕਿ ਤੁਸੀਂ ਕੀ ਵੇਖਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਜਦੋਂ ਤੁਸੀਂ ਆਪਣੇ ਮੁੱਖ ਸਫ਼ੇ, ਨਵੀਆਂ ਵਿੰਡੋਆਂ ਅਤੇ ਨਵੀਆਂ ਟੈਬਾਂ ਖੋਲ੍ਹਦੇ ਹੋ।
 
 ## Home Section - Home Page Customization
@@ -337,11 +319,11 @@ home-restore-defaults =
 # "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = ਫਾਇਰਫਾਕਸ ਘਰ (ਮੂਲ)
+    .label = ਫਾਇਰਫੌਕਸ ਘਰ (ਮੂਲ)
 home-mode-choice-custom =
-    .label = …ਪਸੰਦੀਦਾ URL
+    .label = …ਚੁਣਿੰਦਾ URL
 home-mode-choice-blank =
-    .label = ਖ਼ਾਲੀ ਸਫ਼ਾ
+    .label = ਖ਼ਾਲੀ ਵਰਕਾ
 home-homepage-custom-url =
     .placeholder = …URL ਨੂੰ ਚੇਪੋ
 # This string has a special case for '1' and [other] (default). If necessary for
@@ -351,16 +333,13 @@ home-homepage-custom-url =
 use-current-pages =
     .label =
         { $tabCount ->
-            [1] ਮੇਰੇ ਮੌਜੂਦਾ ਸਫ਼ੇ ਨੂੰ ਵਰਤੋਂ
-           *[other] ਮੌਜੂਦਾ ਸਫ਼ੇ ਨੂੰ ਵਰਤੋਂ
+            [1] ਮੌਜੂਦਾ ਵਰਕੇ ਨੂੰ ਵਰਤੋ
+           *[other] ਮੌਜੂਦਾ ਵਰਕਿਆਂ ਨੂੰ ਵਰਤੋ
         }
     .accesskey = C
 choose-bookmark =
-    .label = …ਬੁੱਕਮਾਰਕ ਨੂੰ ਵਰਤੋਂ
+    .label = …ਵਰਕਾ-ਨਿਸ਼ਾਨੀ ਵਰਤੋ
     .accesskey = B
-restore-default =
-    .label = ਮੂਲ ਨੂੰ ਮੁੜ-ਸਟੋਰ ਕਰੋ
-    .accesskey = R
 
 ## Search Section
 
@@ -368,7 +347,7 @@ search-bar-header = ਖੋਜ ਪੱਟੀ
 search-bar-hidden =
     .label = ਸਿਰਨਾਵਾਂ ਪੱਟੀ ਨੂੰ ਖੋਜ ਅਤੇ ਨੇਵੀਗੇਸ਼ਨ ਲਈ ਵਰਤੋਂ
 search-bar-shown =
-    .label = ਟੂਲਬਾਰ 'ਚ ਖੋਜ ਪੱਟੀ ਜੋੜੋ
+    .label = ਸੰਦ-ਪੱਟੀ 'ਚ ਖੋਜ ਪੱਟੀ ਜੋੜੋ
 search-engine-default-header = ਮੂਲ ਖੋਜ ਇੰਜਣ
 search-engine-default-desc = ਸਿਰਨਾਵਾਂ ਪੱਟੀ ਅਤੇ ਖੋਜ ਪੱਟੀ 'ਚ ਵਰਤਣ ਲਈ ਡਿਫਾਲਟ ਖੋਜ ਇੰਜਣ ਨੂੰ ਚੁਣੋ।
 search-suggestions-option =
@@ -395,7 +374,7 @@ search-restore-default =
     .label = ਮੂਲ ਖੋਜ ਇੰਜਣ ਨੂੰ ਮੁੜ-ਸਟੋਰ ਕਰੋ
     .accesskey = d
 search-remove-engine =
-    .label = ਹਟਾਓ
+    .label = ਹਟਾਉ
     .accesskey = r
 search-find-more-link = ਹੋਰ ਖੋਜ ਇੰਜਣ ਲੱਭੋ
 # This warning is displayed when the chosen keyword is already in use
@@ -409,14 +388,14 @@ search-keyword-warning-bookmark = ਤੁਸੀਂ ਸ਼ਬਦ ਨੂੰ ਚੁ�
 ## Containers Section
 
 containers-back-link = « ਵਾਪਸ ਜਾਓ
-containers-header = ਕਨਟੇਨਰ ਟੈਬਾਂ
+containers-header = ਗਿਲਾਫ ਪੱਲ੍ਹੇ
 containers-add-button =
-    .label = ਨਵਾਂ ਕਨਟੇਨਰ ਜੋੜੋ
+    .label = ਨਵਾਂ ਗਿਲਾਫ ਜੋੜੋ
     .accesskey = A
 containers-preferences-button =
-    .label = ਮੇਰੀ ਪਸੰਦ
+    .label = ਤਰਜੀਹਾਂ
 containers-remove-button =
-    .label = ਹਟਾਓ
+    .label = ਹਟਾਉ
 
 ## Sync Section - Signed out
 
@@ -441,7 +420,7 @@ sync-mobile-promo = ਫਾਇਰਫਾਕਸ ਇਸ ਲਈ ਡਾਊਨੋਡ �
 ## Sync Section - Signed in
 
 sync-profile-picture =
-    .tooltiptext = ਪਰੋਫਾਈਲ ਤਸਵੀਰ ਨੂੰ ਬਦਲੋ
+    .tooltiptext = ਬਿਉਰਾ ਤਸਵੀਰ ਨੂੰ ਬਦਲੋ
 sync-disconnect =
     .label = …ਡਿਸਕਨੈਕਟ ਕਰੋ
     .accesskey = D
@@ -461,14 +440,14 @@ sync-sign-in =
 sync-signedin-settings-header = ਸਿੰਕ ਦੀਆਂ ਸੈਟਿੰਗਾਂ
 sync-signedin-settings-desc = ਚੁਣੋ ਕਿ { -brand-short-name } ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਤੁਹਾਡੇ ਡਿਵਾਈਸਾਂ 'ਤੇ ਕੀ ਸਿੰਕ ਕੀਤਾ ਜਾਵੇ।
 sync-engine-bookmarks =
-    .label = ਬੁੱਕਮਾਰਕ
+    .label = ਵਰਕਾ-ਿਨਸ਼ਾਨੀ
     .accesskey = m
 sync-engine-history =
     .label = ਅਤੀਤ
     .accesskey = r
 sync-engine-tabs =
-    .label = ਟੈਬਾਂ ਨੂੰ ਖੋਲ੍ਹੋ
-    .tooltiptext = ਸਾਰੇ ਸਿੰਕ ਕੀਤੇ ਡਿਵਾਈਸ ਉੱਤੇ ਖੁੱਲ੍ਹਿਆਂ ਦੀ ਸੂਚੀ
+    .label = ਪੱਲ੍ਹੇ ਖੋਲ੍ਹੋ
+    .tooltiptext = ਸਾਰੇ ਸਿੰਕ ਕੀਤੇ ਡਿਵਾਈਸਾਂ ਉੱਪਰ ਕੀ ਕੀ ਖੁੱਲ੍ਹਿਆ ਹੈ, ਉਸਦੀ ਸੂਚੀ
     .accesskey = T
 sync-engine-logins =
     .label = ਲਾਗਇਨ
@@ -515,9 +494,9 @@ privacy-header = ਬਰਾਊਜ਼ਰ ਪਰਦੇਦਾਰੀ
 
 ## Privacy Section - Forms
 
-forms-header = ਫਾਰਮ ਤੇ ਪਾਸਵਰਡ
+forms-header = ਫਾਰਮ ਤੇ ਪਛਾਣ-ਸ਼ਬਦ
 forms-ask-to-save-logins =
-    .label = ਵੈੱਬਸਾਈਟਾਂ ਲਈ ਲਾਗਇਨ ਅਤੇ ਪਾਸਵਰਡ ਸੰਭਾਲਣ ਲਈ ਪੁੱਛੋ
+    .label = ਵੈੱਬਸਾਈਟਾਂ ਲਈ ਲਾਗਇਨ ਅਤੇ ਪਛਾਣ-ਸ਼ਬਦ ਸੰਭਾਲਣ ਲਈ ਪੁੱਛੋ
     .accesskey = r
 forms-exceptions =
     .label = …ਛੋਟਾਂ
@@ -526,10 +505,10 @@ forms-saved-logins =
     .label = …ਸੰਭਾਲੇ ਹੋਏ ਲਾਗਇਨ
     .accesskey = L
 forms-master-pw-use =
-    .label = ਮਾਸਟਰ ਪਾਸਵਰਡ ਨੂੰ ਵਰਤੋਂ
+    .label = ਮਾਸਟਰ ਪਛਾਣ-ਸ਼ਬਦ ਵਰਤੋ
     .accesskey = U
 forms-master-pw-change =
-    .label = …ਮਾਸਟਰ ਪਾਸਵਰਡ ਨੂੰ ਵਰਤੋਂ
+    .label = ਮਾਸਟਰ ਪਛਾਣ-ਸ਼ਬਦ ਬਦਲੋ
     .accesskey = M
 
 ## Privacy Section - History
@@ -547,11 +526,11 @@ history-header = ਅਤੀਤ
 history-remember-label = { -brand-short-name } ਕਰੇਗਾ
     .accesskey = w
 history-remember-option-all =
-    .label = ਅਤੀਤ
+    .label = ਅਤੀਤ ਯਾਦ ਰੱਖੋ
 history-remember-option-never =
-    .label = ਕਦੇ ਵੀ ਅਤੀਤ ਯਾਦ ਨਾ ਰੱਖੋ
+    .label = ਅਤੀਤ ਕਦੇ ਵੀ ਯਾਦ ਨਾ ਰੱਖੋ
 history-remember-option-custom =
-    .label = ਅਤੀਤ ਲਈ ਕਸਟਮ ਸੈਟਿੰਗ ਵਰਤੋਂ
+    .label = ਅਤੀਤ ਲਈ ਚੁਣਿੰਦਾ ਸੈਟਿੰਗ ਵਰਤੋਂ
 history-remember-description = { -brand-short-name } ਤੁਹਾਡੇ ਬਰਾਊਜ਼ ਕਰਨ, ਡਾਊਨਲੋਡ, ਫਾਰਮਾਂ ਅਤੇ ਖੋਜ ਅਤੀਤ ਨੂੰ ਯਾਦ ਰੱਖੇਗਾ।
 history-dontremember-description = { -brand-short-name } ਪ੍ਰਾਈਵੇਟ ਬਰਾਊਜ਼ਿੰਗ ਵਾਲੀਆਂ ਸੈਟਿੰਗਾਂ ਵਰਤੇਗਾ ਅਤੇ ਤੁਹਾਡੇ ਵਲੋਂ ਵੈੱਬ ਬਰਾਊਜ਼ ਕਰਨ ਦਾ ਕੋਈ ਵੀ ਅਤੀਤ ਯਾਦ ਨਹੀਂ ਰੱਖੇਗਾ।
 history-private-browsing-permanent =
@@ -620,12 +599,12 @@ addressbar-locbar-history-option =
     .label = ਬਰਾਊਜ਼ਿੰਗ ਅਤੀਤ
     .accesskey = H
 addressbar-locbar-bookmarks-option =
-    .label = ਬੁੱਕਮਾਰਕ
+    .label = ਵਰਕਾ-ਨਿਸ਼ਾਨੀਆਂ
     .accesskey = k
 addressbar-locbar-openpage-option =
-    .label = ਟੈਬਾਂ ਖੋਲ੍ਹੋ
+    .label = ਪੱਲ੍ਹੇ ਖੋਲ੍ਹੋ
     .accesskey = O
-addressbar-suggestions-settings = ਖੋਜ ਇੰਜਣ ਸੁਝਆਵਾਂ ਲਈ ਪਸੰਦਾਂ ਨੂੰ ਬਦਲੋ
+addressbar-suggestions-settings = ਖੋਜ ਇੰਜਣ ਸੁਝਾਵਾਂ ਲਈ ਪਸੰਦਾਂ ਨੂੰ ਬਦਲੋ
 
 ## Privacy Section - Tracking
 
@@ -636,7 +615,7 @@ tracking-mode-always =
     .label = ਹਮੇਸ਼ਾ
     .accesskey = y
 tracking-mode-private =
-    .label = ਸਿਰਫ਼ ਪ੍ਰਾਈਵੇਟ ਵਿੰਡੋਆਂ ਵਿੱਚ
+    .label = ਸਿਰਫ਼ ਨਿੱਜੀ ਬਾਰੀਆਂ ਵਿੱਚ
     .accesskey = l
 tracking-mode-never =
     .label = ਕਦੇ ਨਹੀਂ

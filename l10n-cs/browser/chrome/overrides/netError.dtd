@@ -7,8 +7,12 @@
 
 <!ENTITY loadError.label "Chyba při načítání stránky">
 <!ENTITY retry.label "Zkusit znovu">
-<!ENTITY returnToPreviousPage.label "Přejít zpět">
+<!ENTITY returnToPreviousPage.label "Zpátky">
+<!ENTITY returnToPreviousPage1.label "Zpátky (doporučeno)">
 <!ENTITY advanced.label "Rozšířené">
+
+<!ENTITY continue1.label "Pokračovat…">
+<!ENTITY moreInformation.label "Více informací">
 
 <!-- Specific error messages -->
 
@@ -33,7 +37,7 @@
 <!ENTITY fileNotFound.title "Soubor nenalezen">
 <!ENTITY fileNotFound.longDesc "
 <ul>
-  <li>Zkontrolujte, že je jméno souboru napsáno správně, a to včetně velikosti písmen.</li>
+  <li>Zkontrolujte, že je název souboru napsán správně, a to včetně velikosti písmen.</li>
   <li>Zkontrolujte, že soubor nebyl přesunut, přejmenován nebo smazán.</li>
 </ul>
 ">
@@ -141,10 +145,31 @@ Personal Security Manager.</li>
 ">
 
 <!ENTITY certerror.longpagetitle1 "Vaše připojení není zabezpečené">
-<!-- Localization note (certerror.introPara) - The text content of the span tag
+<!ENTITY certerror.longpagetitle2 "Varování: možné riziko nebezpečí">
+<!-- Localization note (certerror.introPara, certerror.introPara1) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "Majitel serveru <span class='hostname'/> nakonfiguroval své webové stránky nesprávně. Abychom chránili vaše informace před odcizením, &brandShortName; se k této webové stránce nepřipojil.">
+
+<!ENTITY certerror.introPara1 "Aplikace &brandShortName; rozpoznala potenciální bezpečnostní riziko a stránku <span class='hostname'/> nenačetla. Pokud budete na stránku pokračovat, útočníci se mohou pokusit získat vaše informace, jako hesla, e-mailovou adresu nebo číslo platební karty.">
+
+<!ENTITY certerror.expiredCert.secondPara "Tento problém je pravděpodobně způsobem špatným nastavením času na vašem počítači, které brání aplikaci &brandShortName; v navázání zabezpečeného spojení.">
+
+<!ENTITY certerror.whatCanYouDoAboutItTitle "Co můžete udělat?">
+
+<!ENTITY certerror.unknownIssuer.whatCanYouDoAboutIt "
+<p>Tento problém je pravděpodobně způsoben na straně webové stránky a vy ho bohužel nemůžete vyřešit.</p>
+<p>Pokud jste připojení do firemní sítě nebo používáte antivirový program, kontaktujte podporu vaši firmy, respektive antivirového programu. Můžete také informovat správce webové stránky.</p>
+">
+
+<!ENTITY certerror.expiredCert.whatCanYouDoAboutIt2 "
+<p>Čas na vašem počítači je nastaven na <span id='wrongSystemTime_systemDate2'/>. Zkontrolujte prosím nastavení data, času a časové zóny v systémovém nastavení vašeho počítače a stránku <span class='hostname'/> obnovte.</p>
+<p>Pokud je čas nastavený správně, je pravděpodobně špatně nastaven server a tento problém bohužel nemůžete vyřešit. V tom případě o tomto problému informujte správce webové stránky.</p>
+">
+
+<!ENTITY certerror.badCertDomain.whatCanYouDoAboutIt "
+<p>Tento problém je pravděpodobně způsoben na straně webové stránky a vy ho bohužel nemůžete vyřešit. Informujte o tomto problému správce webové stránky.</p>
+">
 
 <!ENTITY sharedLongDesc "
 <ul>
@@ -184,9 +209,11 @@ za chvíli.</li>
 <!ENTITY certerror.wrongSystemTimeWithoutReference "<p>&brandShortName; se nemůže připojit k adrese <span id='wrongSystemTimeWithoutReference_URL'/>, protože čas na vašem počítači je zřejmě špatně nastavený a tak brání bezpečnému spojení.</p> <p>Čas na vašem počítači je nastaven na <span id='wrongSystemTimeWithoutReference_systemDate'/>. Opravte prosím nastavení data a času na vašem počítači.</p>">
 
 <!ENTITY certerror.pagetitle1  "Nezabezpečené spojení">
+<!ENTITY certerror.pagetitle2  "Varování: možné riziko nebezpečí">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Tento server používá HTTP
 Strict Transport Security (HSTS), čímž určuje, že se má &brandShortName; připojovat
 pouze zabezpečeně. Z tohoto důvodu není možné přidat pro tento certifikát výjimku.">
+<!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "Server <span class='hostname'></span> má nastaveno bezpečnostní pravidlo HTTP Strict Transport Security (HSTS), které vynucuje používání pouze zabezpečeného spojení. Pro připojení k této stránce nelze udělit výjimku.">
 <!ENTITY certerror.copyToClipboard.label "Zkopírovat text do schránky">
 
 <!ENTITY inadequateSecurityError.title "Vaše připojení není zabezpečené">
@@ -195,6 +222,9 @@ pouze zabezpečeně. Z tohoto důvodu není možné přidat pro tento certifiká
 <!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> používá technologii která je zastaralá a náchylná k útoku. Útočník může snadno získat informace, které si myslíte, že jsou zabezpečené. Správce serveru musí server opravit předtím, než budete moci stránku navštívit.</p><p>Kód chyby: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
 
 <!ENTITY blockedByPolicy.title "Zablokovaná stránka">
+
+<!ENTITY clockSkewError.title "Datum a čas ve vašem počítači nejsou správně">
+<!ENTITY clockSkewError.longDesc "Čas ve vašem počítači je nastaven na <span id='wrongSystemTime_systemDate1'/>, což brání aplikaci &brandShortName; v bezpečném spojení. Abyste mohli stránku <span class='hostname'></span> načíst, zkontrolujte nastavení data, času a časové zóny v systémovém nastavení vašeho počítače a stránku <span class='hostname'></span> obnovte.">
 
 <!ENTITY prefReset.longDesc "Zdá se, že příčinou může být vaše nastavení zabezpečení. Chcete obnovit výchozí nastavení?">
 <!ENTITY prefReset.label "Obnovit výchozí nastavení">

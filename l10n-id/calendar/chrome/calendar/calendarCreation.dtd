@@ -24,10 +24,17 @@
 <!-- Below are new strings for the revised new calendar dialog. The above strings should be
     removed/renamed later on -->
 
+<!ENTITY sourcetabs.other.label  "Lainnya">
 
+<!ENTITY buttons.create.label "Buat Kalender">
 
+<!ENTITY buttons.find.label "Temukan Kalender">
 
+<!ENTITY buttons.back.label "Kembali">
 
+<!ENTITY buttons.subscribe.label "Berlangganan">
 
+<!ENTITY calendartype.label "Jenis Kalender:">
+<!ENTITY location.label "Lokasi:">
 
 

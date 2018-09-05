@@ -47,7 +47,7 @@
 
 <!-- Localization note: These are used as the titles of different pages on the home screen.
      They are automatically converted to all caps by the Android platform. -->
-<!ENTITY  bookmarks_title "Taq yaketal">
+<!ENTITY  bookmarks_title "Yaketal">
 <!ENTITY  history_title "Natab\&apos;äl">
 
 <!ENTITY  switch_to_tab "Tiq\&apos;asäx pa ri ruwi\&apos;">
@@ -372,6 +372,8 @@
 
 <!ENTITY pref_media_autoplay_enabled "Tiya\&apos; q\&apos;ij chi titzijtäj ruyonil">
 <!ENTITY pref_media_autoplay_enabled_summary "Tatz\&apos;eta\&apos; we ri taq ruxaq k\&apos;amaya\&apos;l yetikïr yekitzij taq silowäch pa ruyonil, ke ri\&apos; chuqa\&apos; ch\&apos;aqa\&apos; chik taq k\&apos;ïy k\&apos;oxom">
+<!ENTITY pref_media_autoplay_allow "Tiya\&apos; q\&apos;ij ruyon nitzijtäj">
+<!ENTITY pref_media_autoplay_block "Tiq\&apos;at ruyonil nitzijtäj">
 <!ENTITY pref_zoom_force_enabled "Junelïk titzij ri nimirisanel">
 <!ENTITY pref_zoom_force_enabled_summary "Tib\&apos;an chi re ri pa ruwi\&apos; tz\&apos;ib\&apos;anem, richin yatikïr najalwachij rupalem ruwäch xa b\&apos;a achike\&apos; ruxaq">
 <!ENTITY pref_voice_input "Rokem ch\&apos;ab\&apos;äl">
@@ -447,6 +449,11 @@
 <!ENTITY datareporting_crashreporter_title_short "Tzijonel taq sachoj">
 <!ENTITY datareporting_wifi_title2 "&vendorShortName; to\&apos;ïk richin tzalq\&apos;omanri\&apos;ïl">
 <!ENTITY datareporting_wifi_geolocation_summary4 "¡Tato\&apos; ri &vendorShortName; richin tuwachib\&apos;ej ri ruwachulew! Takomonij ri ak\&apos;ojlem rik\&apos;in Wi-Fi chuqa\&apos; chupam ri awokisaxel richin niqab\&apos;än rutzil ri qasamaj chi rij ruwachuk\&apos;ojlem.">
+<!-- Localization note (datareporting_notification_title ) : This will be the title
+     of the notification shown whenever the user has enabled data reporting and the stumbler
+     service is running. -->
+<!ENTITY datareporting_stumbler_notification_title "&vendorShortName; Nitikïr ri Rusamaj K\&apos;ojlib\&apos;äl">
+
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -888,3 +895,15 @@ See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "Titz\&apos;aqatisäx apo pa ruwäch tikirib\&apos;äl">
 <!ENTITY pwa_continue_to_website "Tik\&apos;oje\&apos; na chi ri Ajk\&apos;amaya\&apos;l Ruxaq">
 <!ENTITY pwa_onboarding_sumo "Yatikïr natz\&apos;aqatisaj re ajk\&apos;amaya\&apos;l ruxaq re\&apos; pa ri ruwäch Tikirib\&apos;äl richin nik\&apos;oje\&apos; aninäq awokem chuqa\&apos; aninäq yatok pa k\&apos;amaya\&apos;l, achi\&apos;el ta jun chokoy.">
+
+<!-- Used by accessibility services to identify the play/pause buttons shown in the
+Picture-in-picture mini window -->
+<!ENTITY pip_play_button_title "Titzij">
+<!ENTITY pip_play_button_description "Tutzaqa\&apos; chi re ri tzijoj">
+<!ENTITY pip_pause_button_title "Tuxlan">
+<!ENTITY pip_pause_button_description "Tuxlan tzijoj">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY mls_notification_channel "&vendorShortName; Rusamaj K\&apos;ojlemal">
+<!ENTITY download_notification_channel "Taq qasanïk">

@@ -12,6 +12,7 @@
 <!ENTITY enableGlodaSearch.label       "Ενεργοποίηση καθολικής αναζήτησης και ευρετηριοποίησης">
 <!ENTITY enableGlodaSearch.accesskey   "γ">
 <!ENTITY dateTimeFormatting.label      "Μορφή ημερομηνίας και ώρας">
+<!ENTITY languageSelector.label        "Γλώσσα">
 <!ENTITY allowHWAccel.label            "Χρήση επιτάχυνσης υλικού όταν είναι διαθέσιμη">
 <!ENTITY allowHWAccel.accesskey        "υ">
 <!ENTITY storeType.label               "Τύπος αποθήκευσης μηνυμάτων για νέους λογαριασμούς:">
@@ -102,8 +103,8 @@
 <!ENTITY useCacheBefore.label            "Χρήση μέχρι">
 <!ENTITY useCacheBefore.accesskey        "μ">
 <!ENTITY useCacheAfter.label             "MB χώρου για την προσωρινή μνήμη">
-<!ENTITY overrideSmartCacheSize.label    "Παράκαμψη αυτόματης διαχείρισης λανθάνουσας μνήμης">
-<!ENTITY overrideSmartCacheSize.accesskey "ω">
+<!ENTITY overrideSmartCacheSize.label    "Παράκαμψη αυτόματης διαχείρισης cache">
+<!ENTITY overrideSmartCacheSize.accesskey "ψ">
 <!ENTITY clearCacheNow.label             "Εκκαθάριση τώρα">
 <!ENTITY clearCacheNow.accesskey         "θ">
 

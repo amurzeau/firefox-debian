@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -137,20 +129,11 @@ is-not-default = { -brand-short-name } nie je váš predvolený prehliadač
 set-as-my-default-browser =
     .label = Nastaviť ako predvolený…
     .accesskey = d
-startup-page = Po spustení prehliadača { -brand-short-name } zobraziť:
-    .accesskey = s
-startup-user-homepage =
-    .label = domovskú stránku
-startup-blank-page =
-    .label = prázdnu stránku
-startup-prev-session =
-    .label = naposledy otvorené okná a karty
 startup-restore-previous-session =
     .label = Obnoviť predchádzajúcu reláciu
     .accesskey = o
 disable-extension =
     .label = Zakázať rozšírenie
-home-page-header = Domovská stránka
 tabs-group-header = Karty
 ctrl-tab-recently-used-order =
     .label = Prepínať karty pomocou Ctrl+Tab v poradí podľa posledného otvorenia
@@ -222,6 +205,9 @@ choose-language-description = Vybrať jazyky pre zobrazovanie webových stránok
 choose-button =
     .label = Vybrať…
     .accesskey = V
+choose-browser-language-description = Vyberte si jazyk, v ktorom sa majú zobrazovať ponuky, správy a oznámenia aplikácie { -brand-short-name }.
+confirm-browser-language-change-description = Ak chcete použiť tieto zmeny, reštartujte { -brand-short-name }
+confirm-browser-language-change-button = Použiť a reštartovať
 translate-web-pages =
     .label = Prekladať webový obsah do iného jazyka
     .accesskey = r
@@ -273,7 +259,6 @@ play-drm-content =
 play-drm-content-learn-more = Ďalšie informácie
 update-application-title = Aktualizácie prehliadača { -brand-short-name }
 update-application-description = Najvyšší výkon, stabilitu a bezpečnosť dosiahnete tak, že budete udržovať aplikáciu { -brand-short-name } neustále aktuálnu.
-update-application-info = Verzia { $version } <a>Čo je nové</a>
 update-application-version = Verzia { $version } <a data-l10n-name="learn-more">Čo je nové</a>
 update-history =
     .label = Zobraziť históriu aktualizácii…
@@ -309,7 +294,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Limit procesov obsahu
     .accesskey = L
 performance-limit-content-process-enabled-desc = Viac procesov môže zlepšiť výkon pri otvorení viacerých kariet. Spotrebujú však viac pamäte.
-performance-limit-content-process-disabled-desc = Zmena počtu procesov obsahu je možná len pri použití multiprocesového režimu aplikácie { -brand-short-name }. <a>Pozrite sa, ako môžete skontrolovať stav multiprocesového režimu</a>
 performance-limit-content-process-blocked-desc = Zmena počtu procesov obsahu je možná len pri použití multiprocesového režimu aplikácie { -brand-short-name }. <a data-l10n-name="learn-more">Pozrite sa, ako môžete skontrolovať stav multiprocesového režimu</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -380,9 +364,6 @@ use-current-pages =
 choose-bookmark =
     .label = Použiť záložku…
     .accesskey = z
-restore-default =
-    .label = Obnoviť predvolené
-    .accesskey = O
 
 ## Search Section
 
@@ -652,6 +633,44 @@ addressbar-locbar-openpage-option =
     .accesskey = e
 addressbar-suggestions-settings = Zmeniť nastavenia pre návrhy vyhľadávania
 
+## Privacy Section - Content Blocking
+
+content-blocking-header = Blokovanie obsahu a ochrana pred sledovaním
+content-blocking-desc = Zablokujte obsah tretích strán, ako sú reklamy alebo kód, ktorý spomaľuje načítanie stránok a sleduje vašu aktivitu na internete. Úroveň blokovania môžete upraviť podľa svojich vlastných požiadaviek na výkon a ochranu súkromia.
+content-blocking-learn-more = Ďalšie informácie
+content-blocking-restore-defaults =
+    .label = Obnoviť predvolené nastavenia
+    .accesskey = r
+content-blocking-toggle-on =
+    .tooltiptext = Vypnúť blokovanie obsahu
+content-blocking-toggle-off =
+    .tooltiptext = Zapnúť blokovanie obsahu
+content-blocking-toggle-label-on = ZAPNUTÉ
+    .accesskey = Z
+content-blocking-toggle-label-off = VYPNUTÉ
+    .accesskey = V
+content-blocking-category-label = Vyberte si, čo chcete blokovať
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Pomalé sledovacie prvky
+    .accesskey = P
+content-blocking-fastblock-description = Blokuje obsah tretích strán, ktorý sa načítava dlhšie než 5 sekúnd.
+content-blocking-fastblock-option-enabled =
+    .label = Vždy blokovať
+content-blocking-fastblock-option-disabled =
+    .label = Nikdy neblokovať
+content-blocking-tracking-protection-label = Sledovacie prvky
+    .accesskey = S
+content-blocking-tracking-protection-description = Blokuje všetky známe sledovacie prvky (niektoré stránky sa nemusia načítať).
+content-blocking-tracking-protection-option-enabled =
+    .label = Vždy blokovať
+content-blocking-tracking-protection-option-pbm =
+    .label = Blokovať v súkromných oknách
+content-blocking-tracking-protection-option-disabled =
+    .label = Nikdy neblokovať
+content-blocking-tracking-protection-change-blocklist = Zmeniť zoznam blokovania…
+
 ## Privacy Section - Tracking
 
 tracking-header = Ochrana pred sledovaním
@@ -703,9 +722,16 @@ permissions-notification-pause =
 permissions-block-autoplay-media =
     .label = Zabrániť stránkam automaticky prehrávať médiá so zvukom
     .accesskey = Z
+permissions-block-autoplay-media-menu = Pri pokuse o automatické prehranie médií so zvukom
 permissions-block-autoplay-media-exceptions =
     .label = Výnimky…
     .accesskey = V
+autoplay-option-ask =
+    .label = sa vždy opýtať
+autoplay-option-allow =
+    .label = spustiť prehrávanie
+autoplay-option-dont =
+    .label = nič neprehrávať
 permissions-block-popups =
     .label = Blokovať nevyžiadané vyskakovacie okná
     .accesskey = B

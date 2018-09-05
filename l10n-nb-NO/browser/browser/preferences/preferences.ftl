@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -137,20 +129,11 @@ is-not-default = { -brand-short-name } er ikke valgt som standard nettleser
 set-as-my-default-browser =
     .label = Bruk som standard…
     .accesskey = s
-startup-page = Når { -brand-short-name } starter
-    .accesskey = s
-startup-user-homepage =
-    .label = Vis startside
-startup-blank-page =
-    .label = Vis tom side
-startup-prev-session =
-    .label = Vis vinduer og faner som ble brukt sist
 startup-restore-previous-session =
     .label = Gjenopprett forrige programøkt
     .accesskey = r
 disable-extension =
     .label = Slå av utvidelse
-home-page-header = Startside
 tabs-group-header = Faner
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab veksler mellom faner i nylig brukt-rekkefølge
@@ -219,6 +202,9 @@ choose-language-description = Velg foretrukket språk på nettsider
 choose-button =
     .label = Velg …
     .accesskey = V
+choose-browser-language-description = Velg språkene som brukes til å vise menyer, meldinger og varsler fra { -brand-short-name }.
+confirm-browser-language-change-description = Start om { -brand-short-name } for å bruke disse endringene
+confirm-browser-language-change-button = Bruk og start om
 translate-web-pages =
     .label = Oversett webinnhold
     .accesskey = O
@@ -270,7 +256,6 @@ play-drm-content =
 play-drm-content-learn-more = Les mer
 update-application-title = { -brand-short-name }-oppdateringer
 update-application-description = Hold { -brand-short-name } oppdatert for beste ytelse, stabilitet og sikkerhet.
-update-application-info = Versjon { $version } <a>Hva er nytt</a>
 update-application-version = Versjon { $version } <a data-l10n-name="learn-more">Hva er nytt</a>
 update-history =
     .label = Vis oppdateringshistorikk…
@@ -306,7 +291,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Grense for innholdsprosesser
     .accesskey = G
 performance-limit-content-process-enabled-desc = Ytterligere innholdsprosesser kan forbedre ytelsen når du bruker flere faner, men vil også bruke mer minne.
-performance-limit-content-process-disabled-desc = Endring av antall innholdsprosesser kan bare gjøres med multiprosess { -brand-short-name }. <a>Lær hvordan du kontrollerer om multiprosess er slått på</a>
 performance-limit-content-process-blocked-desc = Endring av antall innholdsprosesser kan bare gjøres med multiprosess { -brand-short-name }. <a data-l10n-name="learn-more">Lær hvordan du kontrollerer om multiprosess er slått på</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -377,9 +361,6 @@ use-current-pages =
 choose-bookmark =
     .label = Bruk bokmerke …
     .accesskey = u
-restore-default =
-    .label = Bruk standard
-    .accesskey = s
 
 ## Search Section
 
@@ -624,6 +605,26 @@ sitedata-accept-third-party-visited-option =
     .label = Fra besøkte
 sitedata-accept-third-party-never-option =
     .label = Aldri
+sitedata-allow-cookies-option =
+    .label = Tillat infokapsler og nettstedsdata
+    .accesskey = a
+sitedata-disallow-cookies-option =
+    .label = Blokker infokapsler og nettstedsdata
+    .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Type blokkert
+    .accesskey = T
+sitedata-block-trackers-option-recommended =
+    .label = Tredjeparts-sporere (anbefales)
+sitedata-block-trackers-option =
+    .label = Tredjeparts-sporere
+sitedata-block-unvisited-option =
+    .label = Infokapsler fra ubesøkte nettsteder
+sitedata-block-all-third-parties-option =
+    .label = Alle tredjeparts infokapsler
+sitedata-block-always-option =
+    .label = Alle infokapsler (kan føre til at nettsteder ikke fungerer)
 sitedata-clear =
     .label = Tøm data…
     .accesskey = a
@@ -648,6 +649,44 @@ addressbar-locbar-openpage-option =
     .label = Åpne faner
     .accesskey = f
 addressbar-suggestions-settings = Endre innstillinger for søkeforslag
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = Innholdsblokkering
+content-blocking-desc = Blokker tredjepartsinnhold, som annonser eller kode, som kan gjøre surfingen tregere og som kan spore deg rundt på nettet. Tilpass innstillingene for best mulig balanse mellom beskyttelse og ytelse.
+content-blocking-learn-more = Les mer
+content-blocking-restore-defaults =
+    .label = Gjenopprett standard
+    .accesskey = r
+content-blocking-toggle-on =
+    .tooltiptext = Slå på innholdsblokkering
+content-blocking-toggle-off =
+    .tooltiptext = Slå av innholdsblokkering
+content-blocking-toggle-label-on = PÅ
+    .accesskey = P
+content-blocking-toggle-label-off = AV
+    .accesskey = A
+content-blocking-category-label = Velg hva som skal blokkeres
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Trege sporingselementer
+    .accesskey = s
+content-blocking-fastblock-description = Blokkerer tredjepartsinnhold som tar lengre tid enn 5 sekunder å laste inn.
+content-blocking-fastblock-option-enabled =
+    .label = Blokker alltid
+content-blocking-fastblock-option-disabled =
+    .label = Blokker aldri
+content-blocking-tracking-protection-label = Sporere
+    .accesskey = S
+content-blocking-tracking-protection-description = Blokkerer alle kjente sporere (Merk: kan også forhindre at noen sider laster inn).
+content-blocking-tracking-protection-option-enabled =
+    .label = Blokker alltid
+content-blocking-tracking-protection-option-pbm =
+    .label = Blokker kun i private vindu
+content-blocking-tracking-protection-option-disabled =
+    .label = Blokker aldri
+content-blocking-tracking-protection-change-blocklist = Endre blokkeringsliste…
 
 ## Privacy Section - Tracking
 
@@ -700,9 +739,17 @@ permissions-notification-pause =
 permissions-block-autoplay-media =
     .label = Blokker nettsteder fra automatisk å spille av media med lyd
     .accesskey = B
+permissions-block-autoplay-media-menu = For nettsider som autospiller av lyd
 permissions-block-autoplay-media-exceptions =
     .label = Unntak…
     .accesskey = U
+autoplay-option-ask =
+    .label = Spør alltid
+autoplay-option-allow =
+    .label = Tillat autoavspilling
+autoplay-option-dont =
+    .label = Ingen autoavspilling
+permissions-autoplay-link = Les mer
 permissions-block-popups =
     .label = Blokker sprettoppvinduer
     .accesskey = B

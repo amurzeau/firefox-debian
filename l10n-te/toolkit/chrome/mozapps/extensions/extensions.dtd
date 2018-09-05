@@ -45,7 +45,7 @@
 <!-- addon updates -->
 <!ENTITY updates.checkForUpdates.label        "నవీకరణల కొరకు పరిశీలించు">
 <!ENTITY updates.checkForUpdates.accesskey    "C">
-<!ENTITY updates.viewUpdates.label            "ఇటీవలి నవీకరణలను దర్శించు">
+<!ENTITY updates.viewUpdates.label            "ఇటీవలి తాజాకరణలను చూడండి">
 <!ENTITY updates.viewUpdates.accesskey        "V">
 <!-- LOCALIZATION NOTE (updates.updateAddonsAutomatically.label): This menu item
      is a checkbox that toggles the default global behavior for add-on update
@@ -67,7 +67,7 @@
 <!ENTITY updates.downloaded.label             "మీ పొడిగింత నవీకరణలు డౌన్‌లోడైనవి.">
 <!ENTITY updates.restart.label                "స్థాపనను పూర్తిచేయడానికి ఇప్పుడే పునఃప్రారంభించు">
 <!ENTITY updates.noneFound.label              "తాజాకరణలు ఏమీ లేవు">
-<!ENTITY updates.manualUpdatesFound.label     "అందుబాటులోని నవీకరణలను దర్శించు">
+<!ENTITY updates.manualUpdatesFound.label     "అందుబాటులోని తాజాకరణలను చూడండి">
 <!ENTITY updates.updateSelected.label         "తాజాకరణలను స్థాపించు">
 <!ENTITY updates.updateSelected.tooltip       "ఈ జాబితాలోని తాజాకరణలను స్థాపించు">
 
@@ -80,8 +80,6 @@
 <!ENTITY cmd.preferencesWin.accesskey         "O">
 <!ENTITY cmd.preferencesUnix.label            "అభిరుచులు">
 <!ENTITY cmd.preferencesUnix.accesskey        "P">
-<!ENTITY cmd.about.label                      "గురించి">
-<!ENTITY cmd.about.accesskey                  "A">
 
 <!ENTITY cmd.enableAddon.label                "చేతనపరచు">
 <!ENTITY cmd.enableAddon.accesskey            "E">
@@ -94,7 +92,7 @@
 <!ENTITY cmd.askToActivate.label              "క్రియాశీలపరచుటకు అడుగు">
 <!ENTITY cmd.askToActivate.tooltip            "ప్రతిసారి ఈ పొడిగింత ఉపయోగించుటకు అడుగు">
 <!ENTITY cmd.alwaysActivate.label             "ఎల్లప్పుడూ క్రియాశీలపరుచు">
-<!ENTITY cmd.alwaysActivate.tooltip           "ఎల్లప్పుడూ ఈ పొడిగింతను ఉపయోగించు">
+<!ENTITY cmd.alwaysActivate.tooltip           "ఎల్లప్పుడూ ఈ పొడగింతను వాడు">
 <!ENTITY cmd.neverActivate.label              "ఎప్పుడూ క్రియాశీలపరచవద్దు">
 <!ENTITY cmd.neverActivate.tooltip            "ఈ పొడగింతను ఎప్పుడూ వాడవద్దు">
 <!ENTITY cmd.stateMenu.tooltip                "ఈ పొడగింత ఎప్పుడు నడవాలో మార్చండి">
@@ -125,10 +123,10 @@
   మీకు కొన్ని మంచి మరియు పేరొందిన పొడిగింతలను మీరు ప్రయత్నించి చూచుటకు అందించును.">
 
 <!-- detail view -->
-<!ENTITY detail.version.label                 "వర్షన్">
+<!ENTITY detail.version.label                 "వెర్షను">
 <!ENTITY detail.lastupdated.label             "చివరిగా నవీకరించింది">
 <!ENTITY detail.creator.label                 "అభివృద్దికారి">
-<!ENTITY detail.homepage.label                "హోం పేజీ">
+<!ENTITY detail.homepage.label                "ముంగిలిపేజీ">
 
 <!ENTITY detail.contributions.description     "ఈ పొడిగింతను అభివృద్దికారి దాని తదుపరి అభివృద్ది కొనసాగింపు కొరకు మీ నుండి కొద్ది మొత్తంలో సహాయంను కోరుచున్నారు.">
 
@@ -139,7 +137,7 @@
 <!ENTITY detail.updateAutomatic.tooltip       "తాజాకరణలను స్వయంచాలకంగా స్థాపించు">
 <!ENTITY detail.updateManual.label            "ఆఫ్ చేయి">
 <!ENTITY detail.updateManual.tooltip          "తాజాకరణలను స్వయంచాలకంగా స్థాపించవద్దు">
-<!ENTITY detail.home                          "హోం పేజీ">
+<!ENTITY detail.home                          "ముంగిలిపేజీ">
 <!ENTITY detail.repository                    "పొడిగింత పరిచయపత్రం">
 <!ENTITY detail.size                          "పరిమాణము">
 
@@ -161,14 +159,7 @@
 <!ENTITY progress.pause.tooltip               "నిలుపు">
 <!ENTITY progress.cancel.tooltip              "రద్దుచేయి">
 
-
-<!-- list sorting -->
-<!ENTITY sort.name.label                      "పేరు">
-<!ENTITY sort.name.tooltip                    "పేరు ప్రకారం క్రమపరచు">
-<!ENTITY sort.dateUpdated.label               "చివరిగా నవీకరించింది">
-<!ENTITY sort.dateUpdated.tooltip             "నవీకరించిన తేదీ ప్రకారం క్రమపరచు">
-
-<!ENTITY addon.homepage                       "హోం పేజీ">
+<!ENTITY addon.homepage                       "ముంగిలిపేజీ">
 <!ENTITY addon.details.label                  "ఇంకా">
 <!ENTITY addon.details.tooltip                "ఈ పొడిగింత గురించి మరిన్ని వివరములను చూపు">
 <!ENTITY addon.unknownDate                    "తెలియని">
@@ -189,7 +180,7 @@
 <!ENTITY addon.undoAction.tooltip             "ఈ చర్యను చేయవద్దు">
 <!ENTITY addon.undoRemove.label               "చర్యరద్దు">
 <!ENTITY addon.undoRemove.tooltip             "ఈ పొడిగింతను స్థాపించబడి ఉండనివ్వు">
-<!ENTITY addon.restartNow.label               "ఇప్పుడు పునఃప్రారంభించు">
+<!ENTITY addon.restartNow.label               "ఇప్పుడే పునఃప్రారంభించు">
 <!ENTITY addon.install.label                  "స్థాపించు">
 <!ENTITY addon.install.tooltip                "ఈ పొడిగింతను స్థాపించు">
 <!ENTITY addon.updateNow.label                "ఇప్పుడు నవీకరించు">
@@ -209,17 +200,6 @@
 <!ENTITY eula.accept                          "ఆమోదించి స్థాపించు…">
 
 <!ENTITY settings.path.button.label           "విహరించు…">
-
-<!-- LOCALIZATION NOTE (experiment.info.label): The strings related to
-     experiments are present on the "Experiments" tab of the add-ons manager.
-     This tab won't be displayed unless an Experiment add-on is installed.
-     Install https://people.mozilla.org/~gszorc/dummy-experiment-addon.xpi
-     to cause this tab to appear. -->
-<!ENTITY experiment.info.label "ఇది ఏమిటి? టెలీమెట్రీ అప్పుడప్పుడూ ప్రయోగాలను స్థాపించి నడుపుతూండవచ్చు.">
-<!ENTITY experiment.info.learnmore "ఇంకా తెలుసుకోండి">
-<!ENTITY experiment.info.learnmore.accesskey "L">
-<!ENTITY experiment.info.changetelemetry "టెలీమెట్రీ అమరికలు">
-<!ENTITY experiment.info.changetelemetry.accesskey "T">
 
 <!ENTITY setting.learnmore "ఇంకా తెలుసుకోండి…">
 
@@ -242,6 +222,6 @@
 <!ENTITY pluginDeprecation.learnMore "ఇంకా తెలుసుకోండి.">
 
 <!ENTITY legacyWarning.showLegacy "లెగసీ పొడగింతలను చూపించు">
-<!ENTITY legacyExtensions.title "లెగసీ పొడిగింతలు">
+<!ENTITY legacyExtensions.title "పాత పొడగింతలు">
 <!ENTITY legacyExtensions.description "ఈ పొడిగింతలు ప్రస్తుత &brandShortName; ప్రమాణాలను చేరుకోవు కాబట్టి అవి క్రియారహితం చేయబడ్డాయి.">
 <!ENTITY legacyExtensions.learnMore "పొడిగింతల మార్పుల గురించి తెలుసుకోండి">

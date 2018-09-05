@@ -194,7 +194,7 @@
 <!ENTITY pref_category_privacy_short "Súkromie">
 <!ENTITY pref_category_privacy_summary4 "Sledovanie, prihlasovacie údaje, údaje o používaní">
 <!ENTITY pref_category_vendor2 "&vendorShortName; &brandShortName;">
-<!ENTITY pref_category_vendor_summary2 "O prehliadači &brandShortName;, často kladené otázky, spätná väzba">
+<!ENTITY pref_category_vendor_summary2 "O aplikácii &brandShortName;, často kladené otázky, spätná väzba">
 <!ENTITY pref_category_datareporting "Odosielanie údajov">
 <!ENTITY pref_category_logins "Prihlasovacie údaje">
 <!ENTITY pref_learn_more "Ďalšie informácie">
@@ -372,6 +372,8 @@
 
 <!ENTITY pref_media_autoplay_enabled "Povoliť automatické prehrávanie">
 <!ENTITY pref_media_autoplay_enabled_summary "Určuje, či webové stránky môžu automaticky prehrávať videá a iné médiá">
+<!ENTITY pref_media_autoplay_allow "Povoliť automatické prehrávanie">
+<!ENTITY pref_media_autoplay_block "Zablokovať automatické prehrávanie">
 <!ENTITY pref_zoom_force_enabled "Vždy povoliť lupu">
 <!ENTITY pref_zoom_force_enabled_summary "Lupu bude možné používať pre akúkoľvek stránku">
 <!ENTITY pref_voice_input "Hlasový vstup">
@@ -447,6 +449,11 @@
 <!ENTITY datareporting_crashreporter_title_short "Správy o zlyhaní">
 <!ENTITY datareporting_wifi_title2 "Služba zisťovania polohy &vendorShortName;">
 <!ENTITY datareporting_wifi_geolocation_summary4 "Pomôžte spoločnosti &vendorShortName; mapovať svet. Zdieľajte približnú polohu vášho zariadenia na základe údajov zo siete operátora a Wi-Fi s cieľom vylepšiť presnosť služby zisťovania polohy.">
+<!-- Localization note (datareporting_notification_title ) : This will be the title
+     of the notification shown whenever the user has enabled data reporting and the stumbler
+     service is running. -->
+<!ENTITY datareporting_stumbler_notification_title "Služba zisťovania polohy &vendorShortName; Location Service je spustená">
+
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -888,3 +895,15 @@ See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "Pridať na úvodnú obrazovku">
 <!ENTITY pwa_continue_to_website "Pokračovať na webovú stránku">
 <!ENTITY pwa_onboarding_sumo "Túto webovú stránku si môžete jednoducho pridať na svoju úvodnú obrazovku a mať tak okamžitý prístup k prehliadaniu.">
+
+<!-- Used by accessibility services to identify the play/pause buttons shown in the
+Picture-in-picture mini window -->
+<!ENTITY pip_play_button_title "Prehrať">
+<!ENTITY pip_play_button_description "Pokračovať v prehrávaní">
+<!ENTITY pip_pause_button_title "Pozastaviť">
+<!ENTITY pip_pause_button_description "Pozastaviť prehrávanie">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY mls_notification_channel "&vendorShortName; Location Service">
+<!ENTITY download_notification_channel "Prevzaté súbory">

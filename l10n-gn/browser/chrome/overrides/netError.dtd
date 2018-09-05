@@ -8,7 +8,11 @@
 <!ENTITY loadError.label "Apañuái oñemyenyhẽvo kuatiarogue">
 <!ENTITY retry.label "Eha'ãjey">
 <!ENTITY returnToPreviousPage.label "Eguevi">
+<!ENTITY returnToPreviousPage1.label "Eguevi (mboajepyre)">
 <!ENTITY advanced.label "Opanungáva">
+
+<!ENTITY continue2.label "Hetave…">
+<!ENTITY moreInformation.label "Eñemomaranduve">
 
 <!-- Specific error messages -->
 
@@ -86,10 +90,29 @@
 <!ENTITY nssFailure2.longDesc2 "<ul> <li>Kuatiarogue eikeseha ndaikatúi ehecha mba'ekuaarã og̃uahẽva ndaijeroviakatúi ndojehechajeýi rupi.</li> <li>Ikatúpiko, eñe'ẽmi ñanduti renda jára ndive ha emombe'umi chupekuéra ko apañuãi rehegua.</li> </ul>">
 
 <!ENTITY certerror.longpagetitle1 "Nde jeike ndahekokatúi">
-<!-- Localization note (certerror.introPara) - The text content of the span tag
+<!ENTITY certerror.longpagetitle2 "Jesarekorã: Imarãkuaáva tenondeve">
+<!-- Localization note (certerror.introPara, certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "<span class='hostname'/> jára ombohekóma iñanduti kuatiarogue ndoikoiete hag̃uáicha. Anive hag̃ua nemarandu oñemonda, &brandShortName; ndaikatúi oike ko ñanduti rendápe.">
+
+
+<!ENTITY certerror.expiredCert.secondPara "Ko apañuãi ikatuhína pe aravo oĩvai rupi ne mohendahápe, oñatõiva &brandShortName;-pe oikekatu hag̃ua.">
+
+<!ENTITY certerror.whatCanYouDoAboutItTitle "¿Mba’épa ikatu ejapo upéicharamo?">
+
+<!ENTITY certerror.unknownIssuer.whatCanYouDoAboutIt "
+<p>Ikatu hína oiko peteĩ apañuãi ko ñanduti rendápe ha ndaikatúi mba’eve ejapo emoĩporã hag̃ua.</p>
+<p>Eipurúramo ñanduti atyguáva térã software imba’echu’i’ỹva, ikatu emomarandu hína pytyvõha atýpe. Avei ikatu emomarandu ñanduti ñangarekohárape apañuãi rehegua.</p>">
+
+<!ENTITY certerror.expiredCert.whatCanYouDoAboutIt2 "
+Pe arapapaha ne mohendaha rehegua oĩporã <span id='wrongSystemTime_systemDate2'/>. Ehechajey ne mohendahápepa oĩporã arange, aravo ha avei aravo rendaguasu ag̃agua nde apopyvusy ñemoĩporãme, ha upéi emyenyhẽjey <span class='hostname'/>.
+<p>Pe nde aravopapaha oĩporãramo, ko ñanduti rendáma ikatu oñembohekovai, ha ndaikatúi mba’eve ejapo emoĩporã hag̃ua. Ikatu emomarandu pe tenda ñangarekohárape ko apañuãi rehegua.</p>
+">
+
+<!ENTITY certerror.badCertDomain.whatCanYouDoAboutIt "
+<p>Ikatu hína iñapañuãi ko ñanduti renda, ha ndaikatúi ejapo mba’eve emoĩporã hag̃ua. Ikatu emomarandu ñanduti renda ñangarekohárape pe apañuãi rehegua.</p>
+">
 
 <!ENTITY sharedLongDesc "<ul> <li>Pe tenda ikatu hína ndojepurukuaái sapy'aitemi térã ojepuruetereihína. Eha'ãjey ag̃amieve.</li> <li>Ndaikatúiramo emyanyhẽ mba'eveichagua kuatiarogue, ehechajey ijeikekatu nemohendaha ñanduti peguápe.</li> <li>Nemohendaha térã ñanduti omo'ã chupe tatakytĩha térã proxy, ehecháke &brandShortName; oguerekópa moneĩ oike hag̃ua ñandutípe.</li> </ul>">
 
@@ -101,6 +124,7 @@ was trying to connect. -->
 
 
 <!ENTITY securityOverride.exceptionButtonLabel "Embojoaju ambue mba'e">
+
 
 <!ENTITY errorReporting.automatic2 "Emomarandu koichagua jejavy eipytyvõ hag̃ua Mozilla-pe ojuhúvo ha ojokóvo tenda mba'evai aposéva">
 <!ENTITY errorReporting.learnMore "Kuaave…">
@@ -120,7 +144,9 @@ was trying to connect. -->
 <!ENTITY certerror.wrongSystemTimeWithoutReference "<p>&brandShortName; ndoikeséi <span id='wrongSystemTimeWithoutReference_URL'/> oĩvai rupi aravopapaha ne mohendaha pegua ha ojoko hína jeike katu.</p> <p>Ne mohendaha oñemoĩ hína <span id='wrongSystemTimeWithoutReference_systemDate'/> ramo. Emyatyrõ hag̃ua ko apañuãi, emoambue nde aravo ha arange ojuehe hag̃ua aravo tee rehe.</p>">
 
 <!ENTITY certerror.pagetitle1  "Jeikekatu'ỹ">
+<!ENTITY certerror.pagetitle2  "Jesarekorã: Imarãkuaáva tekorosã tenondeve">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Ko tenda oipuru HTTP Strict Transport Security (HSTS) ha omoha'eño &brandShortName; oike hag̃ua pype tekorosãme. Tembiapokuéramo, ndaikatúi embojoaju peteĩ oĩ'ỹva ko mboajepyrépe g̃uarã.">
+<!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'></span> oguereko tekorosã purureko hérava HTTP Strict transporte Security (HSTS), he’iséva &brandShortName; oiketaha hendive tekorosãme. Ndaikatúi embojuaju oĩ’ỹva eike hag̃ua ko tendápe.">
 <!ENTITY certerror.copyToClipboard.label "Moñe'ẽrã mbohasa kuatiajokohápe">
 
 <!ENTITY inadequateSecurityError.title "Nde jeike ndahekokatúi">
@@ -129,6 +155,9 @@ was trying to connect. -->
 <!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> oipuru tembipuru pyahu rekorosãrã ndoikovéimava ha oimeraẽva ombyaikuaáva. Peteĩ tekoñaña ikatu ohechauka marandu hekorosãha gua'ú. Pe ñanduti renda ñangarekohára omyatãraẽva'erã pe mohendahavusu oike mboyve tendápe.</p><p>Ayvu jejavy: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
 
 <!ENTITY blockedByPolicy.title "Kuatiarogue jokopyre">
+
+<!ENTITY clockSkewError.title "Aravopapaha mohendaha rehegua oĩvai">
+<!ENTITY clockSkewError.longDesc "Ne mohendaha oimo’ã ha’eha <span id='wrongSystemTime_systemDate1'/>, oñemotenondéva &brandShortName; rehe eikekatu hag̃ua. Eike hag̃ua <span class='hostname'></span>, embohekopyahu ne mohendaha aravo, arange ha aravo rendaguasu ag̃agua, ha upéi emyenyhẽjey <span class='hostname'></span>.">
 
 <!ENTITY prefReset.longDesc "Ne ñemboheko ñanduti rekorosãrã rehegua ikatu hína ojapo kóva. Emoĩporãsépa ñemboheko ijypyguáva rupi?">
 <!ENTITY prefReset.label "Embojevy ñemboheko ijypykuépe">

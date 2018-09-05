@@ -75,6 +75,10 @@ fonts-default-serif =
     .label = Serif
 fonts-default-sans-serif =
     .label = Sans Serif
+fonts-proportional-size = ទំហំ
+    .accesskey = z
+fonts-monospace-size = ទំហំ
+    .accesskey = e
 fonts-minsize-none =
     .label = គ្មាន
 fonts-allow-own =
@@ -127,3 +131,5 @@ fonts-very-large-warning-accept = ទោះ​យ៉ាងណា​រក្ស�
 #   $name {string, "Arial"} - Name of the default font
 fonts-label-default =
     .label = លំនាំដើម ({ $name })
+fonts-label-default-unnamed =
+    .label = លំនាំដើម

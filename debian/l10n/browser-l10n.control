@@ -104,6 +104,11 @@
 %define L10N_RECOMMENDS hunspell-el | myspell-el-gr
 %include @PRODUCT@-l10n.control.in
 
+%define L10N_LANG en-ca
+%define L10N_LANGUAGE English (Canada)
+%define L10N_RECOMMENDS hunspell-en-gb | hunspell-en-us
+%include @PRODUCT@-l10n.control.in
+
 %define L10N_LANG en-gb
 %define L10N_LANGUAGE English (United Kingdom)
 %define L10N_RECOMMENDS hunspell-en-gb | hunspell-en-us

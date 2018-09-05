@@ -8,7 +8,11 @@
 <!ENTITY loadError.label "Okazis problemo dum ŝargado de la paĝo">
 <!ENTITY retry.label "Klopodi denove">
 <!ENTITY returnToPreviousPage.label "Malantaŭen">
+<!ENTITY returnToPreviousPage1.label "Reen (rekomendita)">
 <!ENTITY advanced.label "Spertula">
+
+<!ENTITY continue2.label "Pli…">
+<!ENTITY moreInformation.label "Pli da informo">
 
 <!-- Specific error messages -->
 
@@ -126,10 +130,27 @@
 ">
 
 <!ENTITY certerror.longpagetitle1 "Via konekto ne estas sekura">
-<!-- Localization note (certerror.introPara) - The text content of the span tag
+<!ENTITY certerror.longpagetitle2 "Averto: Ebla sekureca risko antaŭ vi">
+<!-- Localization note (certerror.introPara, certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "La posedanto de <span class='hostname'/> malĝuste agordis sian retejon. Por protekti viajn datumojn kontraŭ ŝtelo, &brandShortName; ne konektiĝis al tiu ĉi retejo.">
+
+<!ENTITY certerror.introPara2 "&brandShortName; trovis eblan sekurecan riskon kaj ne konektiĝis al <span class='hostname'/>. Se vi tamen vizitas tiun ĉi retejon, atakantoj povus klopodi ŝteli informojn, kiel ezkemple viajn pasvortojn, retpoŝtajn mesaĝojn aŭ detalojn de via kreditkarto.">
+
+<!ENTITY certerror.expiredCert.secondPara "Tiu problemo okazas tre verŝajne pro tio ke la horloĝo de via komputilo ne estas ĝusta, kio malpermesus al &brandShortName; sekure konektiĝi.">
+
+<!ENTITY certerror.whatCanYouDoAboutItTitle "Kion vi povas fari pri tio?">
+
+<!ENTITY certerror.unknownIssuer.whatCanYouDoAboutIt "<p>Tre verŝajne la problemon havas la retejo, kaj vi nenion povas fari por solvi ĝin.</p>
+<p>Se vi estas en entreprena reto, aŭ se vi uzas kontraŭvirusan programon, vi povas kontakti vian helpan teamon. Vi povas ankaŭ sciigi la administranton de la retejo pri la problemo.</p>">
+
+<!ENTITY certerror.expiredCert.whatCanYouDoAboutIt2 "
+<p>La horloĝo de via komputilo raportas jene <span id='wrongSystemTime_systemDate2'/>. Certiĝu ĉu la sistemaj agordoj de via komputilo havas la ĝustan daton, horon kaj horzonon, kaj poste reŝargu <span class='hostname'/>.</p>
+<p>Se via horloĝo jam montras la ĝustan horon, verŝajne la retejo estas malbone agordita, kaj vi nenion povas fari por solvi tiun problemon. Vi povas tamen sciigi la administranton de la retejo pri ĝi.</p>
+">
+
+<!ENTITY certerror.badCertDomain.whatCanYouDoAboutIt "<p>Tre verŝajne la problemon havas la retejo, kaj vi nenion povas fari por solvi ĝin. Vi povas tamen sciigi la administranton de la retejo pri ĝi.</p>">
 
 <!ENTITY sharedLongDesc "<ul> 
 <li>La retejo povas esti tempe ne atingebla aŭ troe okupata. Klopodu denove post kelkaj momentoj.</li> <li>Se vi ne sukcesas ŝargi iun ajn paĝon, kontrolu la komputilan retan konekton.</li> 
@@ -144,6 +165,8 @@ was trying to connect. -->
 
 
 <!ENTITY securityOverride.exceptionButtonLabel "Aldoni escepton…">
+
+<!ENTITY securityOverride.exceptionButton1Label "Akcepti la riskon kaj daŭrigi">
 
 <!ENTITY errorReporting.automatic2 "Raporti erarojn kiel tiu ĉi por helpi Mozillan identigi kaj bloki malicajn retejojn">
 <!ENTITY errorReporting.learnMore "Pli da informo…">
@@ -163,8 +186,10 @@ was trying to connect. -->
 <!ENTITY certerror.wrongSystemTimeWithoutReference "<p>&brandShortName; ne konektiĝis al <span id='wrongSystemTimeWithoutReference_URL'/>, ĉar la horloĝo en via komputilo ŝajne montras malĝustan horon, kaj tio malebligas sekuran konekton.</p><p>La dato en via komputilo estas nun <span id='wrongSystemTimeWithoutReference_systemDate'/>. Por solvi ĉi tiun problemon, ŝanĝu la daton kaj horon, tiel ke ili estos ĝustaj.</p>">
 
 <!ENTITY certerror.pagetitle1  "Nesekura konekto">
+<!ENTITY certerror.pagetitle2  "Averto: Ebla sekureca risko antaŭ vi">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Tiu ĉi retejo uzas HTTP
 Strict Transport Security (HSTS) por specifi ke &brandShortName; nur povas konekti ĝin sekure. Pro tio, ne eblas aldoni escepton por tiu ĉi atestilo.">
+<!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'></span> uzas sekurecan politikon, kiun oni nomas HTTP Strict Transport Security (HSTS), kiu devigas &brandShortName; konektiĝi sekure. Vi ne povas aldoni escepton por viziti tiun ĉi retejon.">
 <!ENTITY certerror.copyToClipboard.label "Kopii tekston al tondujo">
 
 <!ENTITY inadequateSecurityError.title "Via konekto ne estas sekura">
@@ -173,6 +198,9 @@ Strict Transport Security (HSTS) por specifi ke &brandShortName; nur povas konek
 <!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> uzas sekurecan teĥnologion kiu estas kaduka kaj sendefenda. Atakanto povus facile elmeti informojn, kiujn vi opiniis sekuraj. La administranto de la retejo devos ripari la servilon, antaŭ ol vi povos viziti ĝin.</p><p>Erarkodo: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
 
 <!ENTITY blockedByPolicy.title "Blokita paĝo">
+
+<!ENTITY clockSkewError.title "La horloĝo de via komputilo estas malĝusta">
+<!ENTITY clockSkewError.longDesc "Via komputilo malĝuste pensas ke nun estas <span id='wrongSystemTime_systemDate1'/>, kaj tio malpermesas al &brandShortName; konektiĝi sekure. Por viziti <span class='hostname'></span>, ĝustigu vian komputilan horloĝon je la nuna dato, horo, kaj horzono, kaj poste reŝargu <span class='hostname'></span>.">
 
 <!ENTITY prefReset.longDesc "Ŝajne viaj retaj sekurecaj agordoj povus esti la kaŭzo. Ĉu vi volas restarigi la normajn agordojn?">
 <!ENTITY prefReset.label "Restarigi normajn agordojn">

@@ -9,12 +9,12 @@ Subject: Build against system libjsoncpp
  3 files changed, 6 insertions(+), 46 deletions(-)
 
 diff --git a/config/system-headers.mozbuild b/config/system-headers.mozbuild
-index 0872969ae159..95a8e6af21e5 100644
+index 60967bd51792..a4d19a063dab 100644
 --- a/config/system-headers.mozbuild
 +++ b/config/system-headers.mozbuild
-@@ -1344,3 +1344,7 @@ if CONFIG['MOZ_SYSTEM_ICU']:
-         'unicode/ustring.h',
-         'unicode/utypes.h',
+@@ -1345,3 +1345,7 @@ if CONFIG['MOZ_WAYLAND']:
+         'wayland-client.h',
+         'wayland-egl.h',
      ]
 +
 +system_headers += [

@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -137,20 +129,11 @@ is-not-default = „{ -brand-short-name }“ šiuo metu nėra numatytoji naršyk
 set-as-my-default-browser =
     .label = Paskirti numatytąja…
     .accesskey = n
-startup-page = Paleidžiant „{ -brand-short-name }“:
-    .accesskey = l
-startup-user-homepage =
-    .label = rodyti pradžios tinklalapį
-startup-blank-page =
-    .label = rodyti tuščią puslapį
-startup-prev-session =
-    .label = atverti paskiausio seanso langus ir korteles
 startup-restore-previous-session =
     .label = Atkurti paskiausiąjį seansą
     .accesskey = r
 disable-extension =
     .label = Išjungti priedą
-home-page-header = Pradžios tinklalapis
 tabs-group-header = Kortelės
 ctrl-tab-recently-used-order =
     .label = Vald+Tab perjungia korteles paskiausiai naudotų eiliškumu
@@ -222,6 +205,9 @@ choose-language-description = Pasirinkite kalbą, kuria pageidaujate matyti tink
 choose-button =
     .label = Pasirinkti…
     .accesskey = P
+choose-browser-language-description = Pasirinkite kalbas, kurios bus naudojamos atvaizduojant meniu, žinutes, pranešimus iš „{ -brand-short-name }“.
+confirm-browser-language-change-description = Norėdami pritaikyti pakeitimus, paleiskite „{ -brand-short-name }“ iš naujo
+confirm-browser-language-change-button = Pritaikyti ir perleisti
 translate-web-pages =
     .label = Versti tinklalapių turinį
     .accesskey = V
@@ -273,7 +259,6 @@ play-drm-content =
 play-drm-content-learn-more = Sužinoti daugiau
 update-application-title = „{ -brand-short-name }“ naujinimai
 update-application-description = Laiku atnaujinkite „{ -brand-short-name }“ didesniam našumui, stabilumui bei saugumui užtikrinti.
-update-application-info = Laida { $version } <a>Kas naujo</a>
 update-application-version = Laida { $version } <a data-l10n-name="learn-more">Kas naujo</a>
 update-history =
     .label = Rodyti naujinimų žurnalą…
@@ -309,7 +294,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Turinio procesų riba
     .accesskey = r
 performance-limit-content-process-enabled-desc = Papildomi turinio procesai gali paspartinti veikimą kai naudojama daugiau kortelių, tačiau taip pat naudos daugiau atminties.
-performance-limit-content-process-disabled-desc = Turinio procesų skaičiaus keitimas galimas tik daugiaprocesėje „{ -brand-short-name }“. <a>Sužinokite kaip patikrinti, ar daugiaprocesė veiksena įjungta</a>
 performance-limit-content-process-blocked-desc = Turinio procesų skaičiaus keitimas galimas tik daugiaprocesėje „{ -brand-short-name }“. <a data-l10n-name="learn-more">Sužinokite kaip patikrinti, ar daugiaprocesė veiksena įjungta</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -380,9 +364,6 @@ use-current-pages =
 choose-bookmark =
     .label = Tinklalapis iš adresyno…
     .accesskey = T
-restore-default =
-    .label = Atstatyti numatytąjį
-    .accesskey = A
 
 ## Search Section
 
@@ -652,6 +633,44 @@ addressbar-locbar-openpage-option =
     .accesskey = v
 addressbar-suggestions-settings = Keisti ieškyklių siūlymų nuostatas
 
+## Privacy Section - Content Blocking
+
+content-blocking-header = Turinio blokavimas
+content-blocking-desc = Blokuokite trečiųjų šalių turinį, pvz., reklamas ir kodą, galintį sulėtinti jūsų naršymą ir stebėti jūsų naršymo įpročius. Pritaikykite nuostatas sau, kad pasiektumėte geriausią saugumo ir našumo balansą.
+content-blocking-learn-more = Sužinoti daugiau
+content-blocking-restore-defaults =
+    .label = Atstatyti numatytąsias
+    .accesskey = A
+content-blocking-toggle-on =
+    .tooltiptext = Išjungti turinio blokavimą
+content-blocking-toggle-off =
+    .tooltiptext = Įjungti turinio blokavimą
+content-blocking-toggle-label-on = ĮJUNGTA
+    .accesskey = J
+content-blocking-toggle-label-off = IŠJUNGTA
+    .accesskey = I
+content-blocking-category-label = Pasirinkite, ką blokuoti
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Lėti stebėjimo elementai
+    .accesskey = L
+content-blocking-fastblock-description = Blokuoja trečiųjų šalių turinį, kurio įkėlimas trunka ilgiau nei 5 sekundes.
+content-blocking-fastblock-option-enabled =
+    .label = Visada blokuoti
+content-blocking-fastblock-option-disabled =
+    .label = Niekada neblokuoti
+content-blocking-tracking-protection-label = Stebėjimo elementai
+    .accesskey = S
+content-blocking-tracking-protection-description = Blokuoja visus žinomus stebėjimo elementus (gali sutrikti kai kurių tinklalapių įkėlimas).
+content-blocking-tracking-protection-option-enabled =
+    .label = Visada blokuoti
+content-blocking-tracking-protection-option-pbm =
+    .label = Blokuoti tik privačiojo naršymo languose
+content-blocking-tracking-protection-option-disabled =
+    .label = Niekada neblokuoti
+content-blocking-tracking-protection-change-blocklist = Keisti blokavimo sąrašą…
+
 ## Privacy Section - Tracking
 
 tracking-header = Apsauga nuo stebėjimo
@@ -703,9 +722,16 @@ permissions-notification-pause =
 permissions-block-autoplay-media =
     .label = Drausti svetainėms automatiškai groti medijas su garsu
     .accesskey = D
+permissions-block-autoplay-media-menu = Svetainėms, kurios automatiškai groja garsą
 permissions-block-autoplay-media-exceptions =
     .label = Išimtys…
     .accesskey = I
+autoplay-option-ask =
+    .label = Visada klausti
+autoplay-option-allow =
+    .label = Leisti automatinį grojimą
+autoplay-option-dont =
+    .label = Negroti automatiškai
 permissions-block-popups =
     .label = Neleisti iškylančiųjų langų
     .accesskey = N

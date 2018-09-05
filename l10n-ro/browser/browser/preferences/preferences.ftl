@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -137,20 +129,11 @@ is-not-default = { -brand-short-name } nu este browserul implicit
 set-as-my-default-browser =
     .label = Desemnează ca implicit…
     .accesskey = D
-startup-page = Când { -brand-short-name } pornește:
-    .accesskey = s
-startup-user-homepage =
-    .label = Afișează pagina de start
-startup-blank-page =
-    .label = Afișează o pagină goală
-startup-prev-session =
-    .label = Afișează ferestrele și filele de data trecută
 startup-restore-previous-session =
     .label = Restaurează sesiunea anterioară
     .accesskey = s
 disable-extension =
     .label = Dezactivează extensia
-home-page-header = Pagină de start
 tabs-group-header = File
 ctrl-tab-recently-used-order =
     .label = Cicluri de Ctrl+Tab printre file în ordinea celor mai folosite recent
@@ -273,7 +256,6 @@ play-drm-content =
 play-drm-content-learn-more = Află mai multe
 update-application-title = Actualizări { -brand-short-name }
 update-application-description = Menține { -brand-short-name } actualizat pentru cea mai bună performanță, stabilitate și securitate.
-update-application-info = Versiunea { $version } <a>Ce este nou</a>
 update-application-version = Versiunea { $version } <a data-l10n-name="learn-more">Ce este nou</a>
 update-history =
     .label = Afișează istoricul actualizărilor…
@@ -309,7 +291,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Limita proceselor pentru conținut
     .accesskey = L
 performance-limit-content-process-enabled-desc = Procesele adiționale pentru conținut pot îmbunătăți performanța atunci când se folosesc mai multe file, însă va consuma și mai multă memorie.
-performance-limit-content-process-disabled-desc = Modificarea numărului de procese pentru conținut este posibilă doar cu funcția de multiprocese din { -brand-short-name }. <a>Învaţă cum să verifici dacă funcția de multiprocese este activată</a>
 performance-limit-content-process-blocked-desc = Modificarea numărului de procese pentru conținut este posibilă doar cu funcția de multiprocese din { -brand-short-name }. <a data-l10n-name="learn-more">Învaţă cum să verifici dacă funcția de multiprocese este activată</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -380,9 +361,6 @@ use-current-pages =
 choose-bookmark =
     .label = Folosește un marcaj…
     .accesskey = B
-restore-default =
-    .label = Restaurează la valorile implicite
-    .accesskey = R
 
 ## Search Section
 
@@ -627,6 +605,22 @@ sitedata-accept-third-party-visited-option =
     .label = De la site-urile vizitate
 sitedata-accept-third-party-never-option =
     .label = Niciodată
+sitedata-allow-cookies-option =
+    .label = Acceptă cookie-uri și datele site-urilor
+    .accesskey = A
+sitedata-disallow-cookies-option =
+    .label = Blochează cookie-urile și datele site-urilor
+    .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Tipul conținutului blocat
+    .accesskey = T
+sitedata-block-unvisited-option =
+    .label = Cookie-uri de la site-urile web nevizitate
+sitedata-block-all-third-parties-option =
+    .label = Toate cookie-urile de la terți
+sitedata-block-always-option =
+    .label = Toate cookie-urile (poate provoca afectarea aspectului site-urilor web)
 sitedata-clear =
     .label = Șterge datele…
     .accesskey = l
@@ -651,6 +645,44 @@ addressbar-locbar-openpage-option =
     .label = File deschise
     .accesskey = O
 addressbar-suggestions-settings = Schimbă preferințele pentru sugestiile motoarelor de căutare…
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = Blocare de conținut
+content-blocking-desc = Blochează conținutul de la terți, cum ar fi anunțurile sau codul, care îți pot încetini navigarea și te pot urmări pe web. Personalizează setările pentru echilibrul optim între protecție și performanță.
+content-blocking-learn-more = Află mai multe
+content-blocking-restore-defaults =
+    .label = Restaurează valorile implicite
+    .accesskey = R
+content-blocking-toggle-on =
+    .tooltiptext = Dezactivează blocarea de conținut
+content-blocking-toggle-off =
+    .tooltiptext = Activează blocarea de conținut
+content-blocking-toggle-label-on = ACTIVAT
+    .accesskey = O
+content-blocking-toggle-label-off = DEZACTIVAT
+    .accesskey = O
+content-blocking-category-label = Alege ceea ce să blochezi
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Afișează elementele de urmărire
+    .accesskey = S
+content-blocking-fastblock-description = Blochează conținutul de la terți care durează mai mult de 5 secunde să încarce.
+content-blocking-fastblock-option-enabled =
+    .label = Blochează întotdeauna
+content-blocking-fastblock-option-disabled =
+    .label = Nu bloca niciodată
+content-blocking-tracking-protection-label = Urmăritori
+    .accesskey = T
+content-blocking-tracking-protection-description = Blochează toți urmăritorii cunoscuți (Notă: ar putea și să împiedice încărcarea unor pagini).
+content-blocking-tracking-protection-option-enabled =
+    .label = Blochează întotdeauna
+content-blocking-tracking-protection-option-pbm =
+    .label = Blochează doar în ferestrele private
+content-blocking-tracking-protection-option-disabled =
+    .label = Nu bloca niciodată
+content-blocking-tracking-protection-change-blocklist = Schimbă lista de blocări…
 
 ## Privacy Section - Tracking
 
@@ -700,6 +732,20 @@ permissions-notification-link = Află mai multe
 permissions-notification-pause =
     .label = Pune pe pauză notificările până la repornirea lui { -brand-short-name }
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = Blochează site-urile web să redea automat conținut media cu sunet
+    .accesskey = B
+permissions-block-autoplay-media-menu = Pentru site-urile web care redau automat sunet
+permissions-block-autoplay-media-exceptions =
+    .label = Excepții…
+    .accesskey = E
+autoplay-option-ask =
+    .label = Întreabă întotdeauna
+autoplay-option-allow =
+    .label = Permite redarea automată
+autoplay-option-dont =
+    .label = Nu reda automat
+permissions-autoplay-link = Află mai multe
 permissions-block-popups =
     .label = Blochează ferestrele pop-up
     .accesskey = B

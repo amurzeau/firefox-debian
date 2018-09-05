@@ -8,7 +8,11 @@
 <!ENTITY loadError.label "გვერდის ჩატვირთვის შეცდომა">
 <!ENTITY retry.label "სცადეთ ხელახლა">
 <!ENTITY returnToPreviousPage.label "უკან დაბრუნება">
+<!ENTITY returnToPreviousPage1.label "უკან დაბრუნება (სასურველია)">
 <!ENTITY advanced.label "ვრცლად">
+
+<!ENTITY continue2.label "სხვა…">
+<!ENTITY moreInformation.label "ვრცლად">
 
 <!-- Specific error messages -->
 
@@ -63,7 +67,7 @@
 <!ENTITY netInterrupt.longDesc "&sharedLongDesc;">
 
 <!ENTITY notCached.title "შიგთავსი ვადაგასულია">
-<!ENTITY notCached.longDesc "<p>მოთხოვნილი შიგთავსი არაა ხელმისაწვდომი &brandShortName;-ის კავშირგარეშე საცავში (კეშში).</p><ul><li>უსაფრთხოების მიზნით, &brandShortName; დაუკითხავად არ ითხოვს ხოლმე საიტიდან მნიშვნელოვანი მასალის ხელახლა ჩამოტვირთვას.</li><li>ჩამოტვირთვის ხელმეორედ მოთხოვნისთვის, დააწკაპეთ ღილაკზე „სცადეთ ხელახლა“.</li></ul>">
+<!ENTITY notCached.longDesc "<p>მოთხოვნილი შიგთავსი არაა ხელმისაწვდომი &brandShortName;-ის კავშირგარეშე საცავში.</p><ul><li>უსაფრთხოების მიზნით, &brandShortName; დაუკითხავად არ ითხოვს ხოლმე საიტიდან მნიშვნელოვანი მასალის ხელახლა ჩამოტვირთვას.</li><li>ჩამოტვირთვის ხელმეორედ მოთხოვნისთვის, დააწკაპეთ ღილაკზე „სცადეთ ხელახლა“.</li></ul>">
 
 <!ENTITY netOffline.title "კავშირგარეშე რეჟიმი">
 <!ENTITY netOffline.longDesc2 "
@@ -95,7 +99,7 @@
 <!ENTITY unknownProtocolFound.title "მისამართი გაუგებარია">
 <!ENTITY unknownProtocolFound.longDesc "
 <ul>
-  <li>ამ მისამართის გასახსნელად შესაძლოა სხვა პროგრამის დაყენება იყოს საჭირო.</li>
+  <li>ამ მისამართის გასახსნელად, შესაძლოა სხვა პროგრამის დაყენება იყოს საჭირო.</li>
 </ul>
 ">
 
@@ -144,10 +148,31 @@
 ">
 
 <!ENTITY certerror.longpagetitle1 "კავშირი დაუცველია">
-<!-- Localization note (certerror.introPara) - The text content of the span tag
+<!ENTITY certerror.longpagetitle2 "ფრთხილად: საფრთხის შემცველია">
+<!-- Localization note (certerror.introPara, certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "<span class='hostname'/>-ის მფლობელს ვებსაიტი არასწორად აქვს გამართული.  თქვენი ინფორმაციის მოპარვისგან დაცვის მიზნით, &brandShortName; ამ საიტს არ დაუკავშირდება.">
+
+<!ENTITY certerror.introPara2 "&brandShortName;-მა აღმოაჩინა მოსალოდნელი საფრთხე და შეწყვიტა <span class='hostname'/> გვერდის ჩატვირთვა. თუ ამ საიტს ეწვევით, შემტევებს შეეძლებათ თქვენი მონაცემების ხელყოფა, როგორიცაა პაროლები, ელფოსტის მისამართები ან საკრედიტო ბარათის ინფორმაცია.">
+
+<!ENTITY certerror.expiredCert.secondPara "ამ ხარვეზს უმეტესად იწვევს კომპიუტერის საათის არევა, რომელიც ხელს უშლის &brandShortName;-ს დაუკავშირდეს საიტებს უსაფრთხოდ.">
+
+<!ENTITY certerror.whatCanYouDoAboutItTitle "რისი გაკეთება შეგიძლიათ?">
+
+<!ENTITY certerror.unknownIssuer.whatCanYouDoAboutIt "
+<p>ხარვეზი, უმეტესად დაკავშირებულია თავად ვებსაიტთან და თქვენ ვერ მოახერხებთ მის გამოსწორებას.</p>
+<p>თუ იყენებთ ორგანიზაციის ქსელს ან ანტივირუსულ პროგრამას, დასახმარებლად შეგიძლიათ მიმართოთ იქვე არსებულ მხარდაჭერის ჯგუფს. ასევე, შეგიძლიათ შეატყობინოთ ვებსაიტის მფლობელებს, ამ ხარვეზის შესახებ.</p>
+">
+
+<!ENTITY certerror.expiredCert.whatCanYouDoAboutIt2 "
+<p>თქვენი კომპიუტერის საათის დროა <span id='wrongSystemTime_systemDate2'/>. დარწმუნდით, რომ თქვენი კომპიუტერის სისტემის პარამეტრებში გასწორებულია თარიღი, დრო, სასაათე სარტყელი და შემდეგ ხელახლა გახსენით <span class='hostname'/>.</p>
+<p>თუ თქვენი საათი სწორ დროს აჩვენებს, მაშინ სავარაუდოდ, თავად ვებსაიტია გაუმართავი და თქვენ ვერაფერს იღონებთ ამის გამოსასწორებლად. მხოლოდ ის შეგიძლიათ, რომ შეატყობინოთ საიტის მფლობელებს ამ ხარვეზის შესახებ.</p>
+">
+
+<!ENTITY certerror.badCertDomain.whatCanYouDoAboutIt "
+<p>ეს ხარვეზი უმეტესად დაკავშირებულია თავად ვებსაიტთან და თქვენ ვერ მოახერხებთ მის გამოსწორებას. მხოლოდ ის შეგიძლიათ, რომ შეატყობინოთ საიტის მფლობელებს ამ ხარვეზის შესახებ.</p>
+">
 
 <!ENTITY sharedLongDesc "
 <ul>
@@ -164,10 +189,12 @@ was trying to connect. -->
 <!ENTITY cspBlocked.longDesc "<p>&brandShortName;-მა შეზღუდა გვერდის ჩატვირთვა, რადგან შეიცავს შიგთავსს, რომელიც მიუღებელია უსაფრთხოების დებულების შესაბამისად.</p>">
 
 <!ENTITY corruptedContentErrorv2.title "დაზიანებული შიგთავსის შეცდომა">
-<!ENTITY corruptedContentErrorv2.longDesc "<p>თქვენთვის სასურველი გვერდი ვერ გაიხსნება, რადგან მონაცემთა გაცვლისას მოხდა შეცდომა.</p><ul><li>გთხოვთ დაუკავშირდით საიტის მფლობელებს და შეარტყობინეთ ამ შეცდომაზე.</li></ul>">
+<!ENTITY corruptedContentErrorv2.longDesc "<p>გვერდის ჩვენება, რომლის ნახვასაც ცდილობთ, ვერ ხერხდება, მონაცემთა გადაცემისას აღმოჩენილი შეცდომის გამო.</p><ul><li>გთხოვთ, დაუკავშირდეთ საიტის მფლობელებს და აცნობოთ, ამ ხარვეზის შესახებ.</li></ul>">
 
 
 <!ENTITY securityOverride.exceptionButtonLabel "გამონაკლისის დამატება…">
+
+<!ENTITY securityOverride.exceptionButton1Label "საფრთხის გაცნობიერება და გაგრძელება">
 
 <!ENTITY errorReporting.automatic2 "მოახსენეთ Mozilla-ს მსგავსი შეცდომების შესახებ, რომ დაეხმაროთ მავნე საიტების აღმოჩენასა და მათ შეზღუდვაში">
 <!ENTITY errorReporting.learnMore "ვრცლად…">
@@ -187,10 +214,12 @@ was trying to connect. -->
 <!ENTITY certerror.wrongSystemTimeWithoutReference "<p>&brandShortName; ვერ უკავშირდება <span id='wrongSystemTimeWithoutReference_URL'/> -ს, რადგან როგორც ჩანს, თქვენი კომპიუტერის საათი არასწორ დროს აჩვენებს, რაც ხელს უშლის უსაფრთხოდ დაკავშირებას.</p> <p>თქვენს კომპიუტერზე არის <span id='wrongSystemTimeWithoutReference_systemDate'/>. ხარვეზის აღმოსაფხვრელად, გაასწორეთ სისტემის დრო და თარიღი.</p>">
 
 <!ENTITY certerror.pagetitle1  "დაუცველი კავშირი">
+<!ENTITY certerror.pagetitle2  "ფრთხილად: საფრთხის შემცველია">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "ეს საიტი იყენებს HTTP
 Strict Transport Security (HSTS) შეერთებას, რომ &brandShortName; მხოლოდ დაცულად
 დაუკავშირდეს. ამის გამო, შეუძლებელია მოცემული სერტიფიკატისთვის გამონაკლისის 
 დაშვება.">
+<!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'></span> საიტს გააჩნია უსაფრთხოების დებულება სახელად HTTP Strict Transport Security (HSTS), რაც ნიშნავს, რომ &brandShortName; მას მხოლოდ უსაფრთხო შეერთებით შეიძლება დაუკავშირდეს. თქვენ ვერ შეძლებთ გამონაკლისის დაშვებას ამ საიტის მოსანახულებლად.">
 <!ENTITY certerror.copyToClipboard.label "ტექსტის ბუფერში დაკოპირება">
 
 <!ENTITY inadequateSecurityError.title "კავშირი დაუცველია">
@@ -199,6 +228,9 @@ Strict Transport Security (HSTS) შეერთებას, რომ &brandSh
 <!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> იყენებს უსაფრთხოების ისეთ ტექნოლოგიას, რომელიც მოძველებული და დაუცველია. თავდამსხმელმა შესაძლოა მარტივად მიიღოს იმ მონაცემებზე წვდომა, რომელიც დაცულად მიგაჩნიათ. საიტზე შესვლამდე, აუცილებელია მისმა ხელმძღვანელობამ ეს ხარვეზი აღმოფხვრას.</p><p>შეცდომის კოდი: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
 
 <!ENTITY blockedByPolicy.title "გვერდი შეზღუდულია">
+
+<!ENTITY clockSkewError.title "საათი თქვენს კომპიუტერზე არეულია">
+<!ENTITY clockSkewError.longDesc "თქვენი კომპიუტერი მიიჩნევს, რომ არის <span id='wrongSystemTime_systemDate1'/>, რაც არ აძლევს საშუალებას &brandShortName;-ს უსაფრთხოდ დაუკავშირდეს საიტს. იმისთვის რომ მოინახულოთ <span class='hostname'></span>, გაასწორეთ თქვენი კომპიუტერის სისტემის პარამეტრებიდან დრო, თარიღი და სასაათე სარტყელი, შემდეგ კი ხელახლა გახსენით <span class='hostname'></span>.">
 
 <!ENTITY prefReset.longDesc "შესაძლოა ამის მიზეზს, თქვენ მიერ მითითებული, ქსელის უსაფრთხოების პარამეტრები წარმოადგენდეს. გსურთ ნაგულისხმევი პარამეტრების აღდგენა?">
 <!ENTITY prefReset.label "ნაგულისხმევი პარამეტრების აღდგენა">

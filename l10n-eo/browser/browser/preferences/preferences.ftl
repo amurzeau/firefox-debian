@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 16.5em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -137,20 +129,11 @@ is-not-default = { -brand-short-name } ne estas via ĉefa retumilo
 set-as-my-default-browser =
     .label = Elekti kiel norman…
     .accesskey = E
-startup-page = Kiam { -brand-short-name } startas
-    .accesskey = s
-startup-user-homepage =
-    .label = Montri vian ekan paĝon
-startup-blank-page =
-    .label = Montri malplenan paĝon
-startup-prev-session =
-    .label = Montri viajn lastajn fenestrojn kaj langetojn
 startup-restore-previous-session =
     .label = Restarigi antaŭan seancon
     .accesskey = R
 disable-extension =
     .label = Malaktivigi etendaĵon
-home-page-header = Eka paĝo
 tabs-group-header = Langetoj
 ctrl-tab-recently-used-order =
     .label = Stir+Tabo rondiras inter langetoj ordigitaj laŭ ĵuseco
@@ -219,6 +202,9 @@ choose-language-description = Elektu vian preferatan lingvon por retpaĝoj
 choose-button =
     .label = Elekti…
     .accesskey = l
+choose-browser-language-description = Elektu la lingvojn, kiuj estos uzata por montri menuojn, mesaĝojn kaj sciigojn de { -brand-short-name }.
+confirm-browser-language-change-description = Restartigi { -brand-short-name } por apliki tiun ĉi ŝanĝojn
+confirm-browser-language-change-button = Apliki kaj restartigi
 translate-web-pages =
     .label = Traduki teksaĵan enhavon
     .accesskey = T
@@ -270,7 +256,6 @@ play-drm-content =
 play-drm-content-learn-more = Pli da informo
 update-application-title = Ĝisdatigoj de { -brand-short-name }
 update-application-description = Tenu { -brand-short-name } ĝisdatigita por havi la plej bonan efikecon, stabilecon kaj sekurecon.
-update-application-info = Versio { $version } <a>Kio estas nova</a>
 update-application-version = Versio { $version } <a data-l10n-name="learn-more">Kio estas nova</a>
 update-history =
     .label = Montri historion de ĝisdatigoj…
@@ -306,7 +291,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Maksimuma nombro de enhavaj taskoj
     .accesskey = M
 performance-limit-content-process-enabled-desc = Pli da enhavaj taskoj povas plibonigi efikecon dum uzo de pluraj langetoj, sed ili ankaŭ uzos pli da memoro.
-performance-limit-content-process-disabled-desc = Nur eblas modifi la nombron de enhavaj taskoj en plurproceza { -brand-short-name }. <a>Pli da informo, pri kiel eltrovi ĉu plurprocezo estas aktiva</a>
 performance-limit-content-process-blocked-desc = Nur eblas modifi la nombron de enhavaj taskoj en plurproceza { -brand-short-name }. <a data-l10n-name="learn-more">Pli da informo, pri kiel eltrovi ĉu plurprocezo estas aktiva</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -377,9 +361,6 @@ use-current-pages =
 choose-bookmark =
     .label = Uzi legosignon…
     .accesskey = s
-restore-default =
-    .label = Norma paĝo
-    .accesskey = N
 
 ## Search Section
 
@@ -490,15 +471,15 @@ sync-engine-tabs =
     .tooltiptext = Listo de ĉio, kio estas malfermita, en ĉiuj spegulitaj aparatoj
     .accesskey = g
 sync-engine-logins =
-    .label = Akreditiloj
+    .label = akreditilojn
     .tooltiptext = Nomoj de uzanto kaj pasvortoj konservitaj de vi
     .accesskey = A
 sync-engine-addresses =
-    .label = Adresoj
+    .label = adresojn
     .tooltiptext = Poŝtaj adresoj konservitaj de vi (nur en komputilo)
     .accesskey = e
 sync-engine-creditcards =
-    .label = Kreditkartoj
+    .label = kreditkartojn
     .tooltiptext = Nomoj, numeroj kaj datoj de senvalidiĝo (nur en komputilo)
     .accesskey = K
 sync-engine-addons =
@@ -624,6 +605,26 @@ sitedata-accept-third-party-visited-option =
     .label = El vizititaj retejoj
 sitedata-accept-third-party-never-option =
     .label = Neniam
+sitedata-allow-cookies-option =
+    .label = Akcepti kuketojn kaj retejajn datumojn
+    .accesskey = A
+sitedata-disallow-cookies-option =
+    .label = Bloki kuketojn kaj retejajn datumojn
+    .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Blokita tipo
+    .accesskey = B
+sitedata-block-trackers-option-recommended =
+    .label = Nerektaj spuriloj (rekomendita)
+sitedata-block-trackers-option =
+    .label = Nerektaj spuriloj
+sitedata-block-unvisited-option =
+    .label = Kuketoj el nevizititaj retejoj
+sitedata-block-all-third-parties-option =
+    .label = Ĉiuj nerektaj kuketoj
+sitedata-block-always-option =
+    .label = Ĉiuj kuketoj (tio povas misfunkciigi kelkajn retejojn)
 sitedata-clear =
     .label = Viŝi datumojn…
     .accesskey = V
@@ -648,6 +649,44 @@ addressbar-locbar-openpage-option =
     .label = malfermitaj langetoj
     .accesskey = m
 addressbar-suggestions-settings = Ŝanĝi preferojn pri serĉilaj sugestoj
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = Blokado de enhavo
+content-blocking-desc = Bloku nerektan enhavon, kiel ekzemple reklamojn aŭ kodon, kiu povas malrapidigi vian retumon kaj spuri vin tra la teksaĵo. Personecigu viajn agordojn por trafi la plej bonan ekvilibron inter protekto kaj efikeco.
+content-blocking-learn-more = Pli da informo
+content-blocking-restore-defaults =
+    .label = Remeti normajn valorojn
+    .accesskey = R
+content-blocking-toggle-on =
+    .tooltiptext = Malŝalti blokadon de enhavo
+content-blocking-toggle-off =
+    .tooltiptext = Ŝalti blokadon de enhavo
+content-blocking-toggle-label-on = Ŝaltita
+    .accesskey = a
+content-blocking-toggle-label-off = Malŝaltita
+    .accesskey = l
+content-blocking-category-label = Elektu, kion bloki
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Malrapide ŝargatajn spurilojn
+    .accesskey = M
+content-blocking-fastblock-description = Bloki nerektan enhavon kiu bezonas pli ol kvin sekundoj por ŝargiĝi
+content-blocking-fastblock-option-enabled =
+    .label = Ĉiam bloki
+content-blocking-fastblock-option-disabled =
+    .label = Neniam bloki
+content-blocking-tracking-protection-label = Spurilojn
+    .accesskey = S
+content-blocking-tracking-protection-description = Bloki ĉiujn konatajn spurilojn (Rimarko: tio povus ankaŭ malhelpi la ŝargadon de kelkaj paĝoj).
+content-blocking-tracking-protection-option-enabled =
+    .label = Ĉiam bloki
+content-blocking-tracking-protection-option-pbm =
+    .label = Bloki nur en privataj fenestroj
+content-blocking-tracking-protection-option-disabled =
+    .label = Neniam bloki
+content-blocking-tracking-protection-change-blocklist = Ŝanĝi liston de blokado…
 
 ## Privacy Section - Tracking
 
@@ -697,6 +736,20 @@ permissions-notification-link = Pli da informo
 permissions-notification-pause =
     .label = Paŭzigi sciigojn ĝis kiam { -brand-short-name } restartos
     .accesskey = P
+permissions-block-autoplay-media =
+    .label = Malpermesi al retejoj aŭtomate ludi aŭdvidaĵojn kun sono
+    .accesskey = s
+permissions-block-autoplay-media-menu = Por retejoj, kiuj aŭtomate ludas sonon
+permissions-block-autoplay-media-exceptions =
+    .label = Esceptoj
+    .accesskey = E
+autoplay-option-ask =
+    .label = Ĉiam demandi
+autoplay-option-allow =
+    .label = Permesi aŭtomatan ludadon
+autoplay-option-dont =
+    .label = Ne aŭtomate ludi
+permissions-autoplay-link = Pli da informo
 permissions-block-popups =
     .label = Bloki ŝprucfenestrojn
     .accesskey = B

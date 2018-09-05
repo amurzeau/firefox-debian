@@ -66,10 +66,10 @@ index 83c2bf81f6db..000000000000
 -
 -#endif // mozilla_LinuxSignal_h
 diff --git a/mfbt/moz.build b/mfbt/moz.build
-index 5428d6de8444..a97e17334a34 100644
+index fb8afe3fa6fd..d4f7d121f0ae 100644
 --- a/mfbt/moz.build
 +++ b/mfbt/moz.build
-@@ -122,10 +122,6 @@ if CONFIG['OS_ARCH'] == 'WINNT':
+@@ -123,10 +123,6 @@ if CONFIG['OS_ARCH'] == 'WINNT':
      EXPORTS.mozilla += [
          'WindowsVersion.h',
      ]

@@ -10,7 +10,7 @@
 <!ENTITY firstrun_privacy_subtext "Priwatny modus ze slědowańskim šćitom blokěrujo pśeslědowaki, mjaztym až pśeglědujośo a njespomnjejo se wašu historiju, gaž wěcej njepśeglědujośo.">
 <!ENTITY firstrun_panel_title_customize "Pśiměriś">
 <!ENTITY firstrun_customize_message "Cyńśo &brandShortName; k swójomu.">
-<!ENTITY firstrun_customize_subtext "Pśiměrśo &brandShortName; z dodankami. Blokěrujśo wabjenje, pśidajśo funkcije abo wubjeŕśo nowu drastwu, aby swóju wósobinu wótbłyšćował.">
+<!ENTITY firstrun_customize_subtext "Pśiměŕśo &brandShortName; z dodankami. Blokěrujśo wabjenje, pśidajśo funkcije abo wubjeŕśo nowu drastwu, aby swóju wósobinu wótbłyšćował.">
 <!ENTITY firstrun_bookmarks_title "Historija">
 <!ENTITY firstrun_bookmarks_message "Waše fawority, na prědnjejšom fronśe">
 <!ENTITY firstrun_bookmarks_subtext "Wobstarajśe se wuslědki z wašych cytańskich znamjenjow a historije, gaž pytaśo.">
@@ -224,7 +224,7 @@
 <!ENTITY pref_manage_logins "Pśizjawjenja zastojaś">
 
 <!ENTITY pref_category_home "Startowy bok">
-<!ENTITY pref_category_home_summary "Pśiměrśo swój startowy bok">
+<!ENTITY pref_category_home_summary "Pśiměŕśo swój startowy bok">
 <!ENTITY pref_category_home_panels "Póla">
 <!ENTITY pref_category_home_add_ons "Dodanki">
 <!ENTITY pref_home_updates2 "Aktualizacije wopśimjeśa">
@@ -372,6 +372,8 @@
 
 <!ENTITY pref_media_autoplay_enabled "Awtomatiske wógraśe dowóliś">
 <!ENTITY pref_media_autoplay_enabled_summary "Kontrolěrowaś, lěc websedła mógu wideo a drugi medijowe wopśimjeśe automatiski wótgras">
+<!ENTITY pref_media_autoplay_allow "Awtomatiske wógraśe dowóliś">
+<!ENTITY pref_media_autoplay_block "Awtomatiske wógraśe blokěrowaś">
 <!ENTITY pref_zoom_force_enabled "Skalěrowanje pśecej zmóžniś">
 <!ENTITY pref_zoom_force_enabled_summary "Wunuźćo pśepisanje, aby mógał kuždy bok skalěrowaś">
 <!ENTITY pref_voice_input "Rěcne zapódaśe">
@@ -445,8 +447,13 @@
 <!-- Localization note (datareporting_crashreporter_title_short) : This string matches
      (crashReporterSection.label) in en-US/chrome/browser/preferences/advanced.dtd.-->
 <!ENTITY datareporting_crashreporter_title_short "Wowaleński rozpšawjak">
-<!ENTITY datareporting_wifi_title2 "Stojnišćowa słužba &vendorShortName;">
-<!ENTITY datareporting_wifi_geolocation_summary4 "Pomagajśo &vendorShortName; swět kartografěrowaś! Źělśo pśibližne WLAN-stojnišćo a stojnišćo mobilnego telefona swójogo rěda, aby našu słužbu za póstajenje stojnišćow pólěpšył.">
+<!ENTITY datareporting_wifi_title2 "Městnowa słužba &vendorShortName;">
+<!ENTITY datareporting_wifi_geolocation_summary4 "Pomagajśo &vendorShortName; swět kartografěrowaś! Źělśo pśibližne WLAN-městno a městno mobilnego telefona swójogo rěda, aby našu słužbu za póstajenje městnow pólěpšył.">
+<!-- Localization note (datareporting_notification_title ) : This will be the title
+     of the notification shown whenever the user has enabled data reporting and the stumbler
+     service is running. -->
+<!ENTITY datareporting_stumbler_notification_title "Městnowa słužba &vendorShortName; běžy">
+
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -728,7 +735,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- Localization note (updater_permission_text): This text is shown in a notification and as a snackbar
      if the app requires a runtime permission to download updates. Currently, the updater only sees
      remotely advertised updates in the Nightly and Aurora channels. -->
-<!ENTITY updater_permission_text "Aby dataje a aktualizacije ześěgnuł, dajśo &brandShortName; pśistup na składowak.">
+<!ENTITY updater_permission_text "Aby dataje a aktualizacije ześěgnuł, dajśo &brandShortName; pśistup k składowakoju.">
 <!-- LOCALIZATION NOTE (updater_permission_allow): This action is shown in a snackbar along with updater_permission_text. -->
 <!ENTITY updater_permission_allow "Dowóliś">
 
@@ -888,3 +895,16 @@ See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "Startowej wobrazowce pśidaś">
 <!ENTITY pwa_continue_to_website "Dalej k websedłoju">
 <!ENTITY pwa_onboarding_sumo "Móžośo swójej startowej wobrazowce toś to websedło lažko pśidaś, aby direktny pśistup měł a malsnjej z dožywjenim nałoženja pśeglědował.">
+
+<!-- Used by accessibility services to identify the play/pause buttons shown in the
+Picture-in-picture mini window -->
+<!ENTITY pip_play_button_title "Wótgraś">
+<!ENTITY pip_play_button_description "Z wótgrawanim pókšacowaś">
+<!ENTITY pip_pause_button_title "Zastajiś">
+<!ENTITY pip_pause_button_description "Wótgrawanje zastajiś">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY mls_notification_channel "Stojnišćowa słužba &vendorShortName;">
+<!ENTITY download_notification_channel "Ześěgnjenja">
+<!ENTITY media_notification_channel "Wótgraśe medijow">

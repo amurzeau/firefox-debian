@@ -4,7 +4,7 @@
 
 <!-- extracted from am-main.xul -->
 
-<!ENTITY accountTitle.label "Οδηγός λογαριασμού">
+<!ENTITY accountTitle.label "Ρυθμίσεις λογαριασμού">
 <!ENTITY accountName.label "Όνομα λογαριασμού:">
 <!ENTITY accountName.accesskey "ν">
 <!ENTITY identityTitle.label "Ταυτότητα">
@@ -24,7 +24,7 @@
 <!ENTITY signatureHtml.accesskey "η">
 <!ENTITY signatureFile.label "Επισύναψη υπογραφής από αρχείο (κείμενο, HTML, ή εικόνα):">
 <!ENTITY signatureFile.accesskey "ψ">
-<!ENTITY edit.label "Επεξεργασία...">
+<!ENTITY edit.label "Επεξεργασία…">
 <!ENTITY choose.label "Επιλογή...">
 <!ENTITY choose.accesskey "λ">
 <!ENTITY editVCard.label "Επεξεργασία κάρτας…">

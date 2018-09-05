@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -137,20 +129,11 @@ is-not-default = { -brand-short-name } yw eich porwr rhagosodedig cyfredol
 set-as-my-default-browser =
     .label = Gwneud yn Ragosodedig…
     .accesskey = R
-startup-page = Pan fydd { -brand-short-name } yn cychwyn:
-    .accesskey = c
-startup-user-homepage =
-    .label = Dangos fy nhudalen cartref
-startup-blank-page =
-    .label = Dangos tudalen wag
-startup-prev-session =
-    .label = Dangos fy ffenestri a'm tabiau o'r tro diwethaf
 startup-restore-previous-session =
     .label = Adfer sesiwn flaenorol
     .accesskey = A
 disable-extension =
     .label = Analluogi Estyniad
-home-page-header = Tudalen cartref
 tabs-group-header = Tabiau
 ctrl-tab-recently-used-order =
     .label = Mae Ctrl+Tab yn cylchdroi drwy dabiau yn y drefn y'u defnyddiwyd yn ddiweddar
@@ -231,6 +214,9 @@ choose-language-description = Dewis eich iaith ar gyfer dangos tudalennau
 choose-button =
     .label = Dewis…
     .accesskey = D
+choose-browser-language-description = Dewiswch yr iaith i ddangos dewislenni, negeseuon a hysbysiadau gan { -brand-short-name }
+confirm-browser-language-change-description = Ailgychwyn { -brand-short-name } i osod y newidiadau hyn
+confirm-browser-language-change-button = Gosod ac Ailgychwyn
 translate-web-pages =
     .label = Cyfieithu cynnwys gwe
     .accesskey = C
@@ -282,7 +268,6 @@ play-drm-content =
 play-drm-content-learn-more = Dysgu rhagor
 update-application-title = Diweddariadau { -brand-short-name }
 update-application-description = Cadw { -brand-short-name } yn gyfredol ar gyfer y perfformiad, sefydlogrwydd a diogelwch gorau.
-update-application-info = Fersiwn { $version } <a>Beth sy'n newydd</a>
 update-application-version = Fersiwn { $version } <a data-l10n-name="learn-more">Beth sy'n newydd</a>
 update-history =
     .label = Dangos Hanes Diweddaru…
@@ -318,7 +303,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Terfyn proses cynnwys
     .accesskey = T
 performance-limit-content-process-enabled-desc = Mae rhagor o brosesau cynnwys yn gallu gwella perfformiad pan yn defnyddio tabiau lluosog, ond fydd hefyd yn defnyddio mwy o gof.
-performance-limit-content-process-disabled-desc = Dim ond yn y fersiwn amlbroses o { -brand-short-name } y mae newid y nifer o brosesau cynnwys yn bosib. <a>Dysgwch sut i weld os yw aml-brosesu wedi ei alluogi</a>
 performance-limit-content-process-blocked-desc = Dim ond yn y fersiwn amlbroses o { -brand-short-name } y mae newid y nifer o brosesau cynnwys yn bosib. <a data-l10n-name="learn-more">Dysgwch sut i weld os yw aml-brosesu wedi ei alluogi</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -389,9 +373,6 @@ use-current-pages =
 choose-bookmark =
     .label = Defnyddio Nod Tudalen…
     .accesskey = N
-restore-default =
-    .label = Adfer i'r Rhagosodedig
-    .accesskey = R
 
 ## Search Section
 
@@ -636,6 +617,24 @@ sitedata-accept-third-party-visited-option =
     .label = O'r ymwelwyd
 sitedata-accept-third-party-never-option =
     .label = Byth
+sitedata-allow-cookies-option =
+    .label = Derbyn cwcis a data gan wefannau
+    .accesskey = D
+sitedata-disallow-cookies-option =
+    .label = Rhwystro cwcis a data gwefan
+    .accesskey = R
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Mathau wedi'u rhwystro
+    .accesskey = M
+sitedata-block-trackers-option-recommended =
+    .label = Tracwyd trydydd parti (argymell)
+sitedata-block-unvisited-option =
+    .label = Cwcis gwefannau heb ymweld â nhw
+sitedata-block-all-third-parties-option =
+    .label = Holl gwcis trydydd parti
+sitedata-block-always-option =
+    .label = Pob cwci (gall achosi i wefannau dorri)
 sitedata-clear =
     .label = Clirio Data…
     .accesskey = l
@@ -660,6 +659,44 @@ addressbar-locbar-openpage-option =
     .label = Tabiau ar agor
     .accesskey = T
 addressbar-suggestions-settings = Newid dewisiadau am awgrymiadau peiriannau chwilio
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = Rhwystro Cynnwys
+content-blocking-desc = Rhwystrwch gynnwys trydydd parti, fel hysbysebion a chod, sy'n gallu arafu eich pori neu eich tracio o amgylch y we. Cyfaddaswch eich gosodiadau am y dewis gorau o ddiogelwch a perfformiad.
+content-blocking-learn-more = Dysgu Rhagor
+content-blocking-restore-defaults =
+    .label = Adfer y Rhagosodiadau
+    .accesskey = R
+content-blocking-toggle-on =
+    .tooltiptext = Diffodd Rhwystro Cynnwys
+content-blocking-toggle-off =
+    .tooltiptext = Cychwyn Rhwystro Cynnwys
+content-blocking-toggle-label-on = YMLAEN
+    .accesskey = Y
+content-blocking-toggle-label-off = DIFFODD
+    .accesskey = D
+content-blocking-category-label = Dewis beth i'w rwystro
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Elfennau Tracio Araf
+    .accesskey = E
+content-blocking-fastblock-description = Yn rhwystro cynnwys trydydd parti sy'n cymryd mwy na 5 eiliad i lwytho.
+content-blocking-fastblock-option-enabled =
+    .label = Rhwystro bob tro
+content-blocking-fastblock-option-disabled =
+    .label = Byth rhwystro
+content-blocking-tracking-protection-label = Tracwyr
+    .accesskey = T
+content-blocking-tracking-protection-description = Rhwystro pob traciwr hysbys (Sylw: gall rwystro rhai tudalennau rhag llwytho).
+content-blocking-tracking-protection-option-enabled =
+    .label = Rhwystro bob tro
+content-blocking-tracking-protection-option-pbm =
+    .label = Rhwystro mewn ffenestri preifat yn unig
+content-blocking-tracking-protection-option-disabled =
+    .label = Byth rhwystro
+content-blocking-tracking-protection-change-blocklist = Newid y Rhestr Rhwystro...
 
 ## Privacy Section - Tracking
 
@@ -710,11 +747,19 @@ permissions-notification-pause =
     .label = Oedi fy hysbysiadau tan { -brand-short-name } ailgychwyn
     .accesskey = O
 permissions-block-autoplay-media =
-    .label = Rhwystro gwefannau rhag chwarae cyfrwng gyda sain yn awtomatig 
+    .label = Rhwystro gwefannau rhag chwarae cyfrwng gyda sain yn awtomatig
     .accesskey = R
+permissions-block-autoplay-media-menu = Ar gyfer gwefannau sy'n chwarae sain yn awtomatig
 permissions-block-autoplay-media-exceptions =
     .label = Eithriadau...
     .accesskey = E
+autoplay-option-ask =
+    .label = Gofyn bob Tro
+autoplay-option-allow =
+    .label = Caniatáu Awto Chwarae
+autoplay-option-dont =
+    .label = Peidio Awtohwarae
+permissions-autoplay-link = Dysgu rhagor
 permissions-block-popups =
     .label = Rhwystro ffenestri llamlen
     .accesskey = R

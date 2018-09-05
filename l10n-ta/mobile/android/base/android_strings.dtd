@@ -70,6 +70,15 @@
 
 <!ENTITY url_bar_default_text2 "தேடு/முகவரியை உள்ளிடு">
 
+<!-- Localization note (url_bar_qrcode_text2) : This text will be
+     heard by non-visual users when the focus is on the QR Code
+     icon in the url bar. -->
+<!ENTITY url_bar_qrcode_text2 "முகவரியைத் தேட அல்லது உள்ளிட கியூஆர் படிப்பானைப் பயன்படுத்துங்கள்">
+<!-- Localization note (url_bar_mic_text2) : This text will be
+     heard by non-visual users when the focus is on the Microphone
+     icon in the url bar. -->
+<!ENTITY url_bar_mic_text2 "முகவரியைத் தேட அல்லது உள்ளிட ஒலிவாங்கியைப் பயன்படுத்துங்கள்">
+
 <!ENTITY bookmark "புத்தகக்குறி">
 <!ENTITY bookmark_remove "புத்தகக்குறியை நீக்கு">
 <!ENTITY bookmark_added "புத்தகக்குறி சேர்க்கப்பட்டது">
@@ -363,6 +372,8 @@
 
 <!ENTITY pref_media_autoplay_enabled "தானியக்கத்தை அனுமதி">
 <!ENTITY pref_media_autoplay_enabled_summary "வலைத்தளங்கள் தானாக காணொளிகளையும் பிற ஊடங்களையும் இயக்கினால் கட்டுப்படுத்தவும்">
+<!ENTITY pref_media_autoplay_allow "தானியக்கத்தை அனுமதி">
+<!ENTITY pref_media_autoplay_block "தானியக்கத்தை தடு">
 <!ENTITY pref_zoom_force_enabled "அளவுமாற்றதை எப்பொழுதும் செயல்படுத்து">
 <!ENTITY pref_zoom_force_enabled_summary "கட்டாய புறக்கணித்தல் மூலம் எந்தப் பக்கத்தையும் பெரிதாக்க முடியும்">
 <!ENTITY pref_voice_input "குரல் உள்ளீடு">
@@ -438,6 +449,11 @@
 <!ENTITY datareporting_crashreporter_title_short "நொறுக்கு அறிக்கையாளர்">
 <!ENTITY datareporting_wifi_title2 "&vendorShortName;வின் இடமறியும் சேவை">
 <!ENTITY datareporting_wifi_geolocation_summary4 "&vendorShortName; என்பதற்கு உதவுவதன் மூலம் உலக வரைபடத்தை வரையலாம்! எங்களின் புவியிடம் வழங்கும் சேவை செம்மைப்படுத்த உங்கள் கருவியின் தோராயமான இடத்தை அருகலை மற்றும் செல்லுலார் மூலம் பகிரவும்.">
+<!-- Localization note (datareporting_notification_title ) : This will be the title
+     of the notification shown whenever the user has enabled data reporting and the stumbler
+     service is running. -->
+<!ENTITY datareporting_stumbler_notification_title "&vendorShortName; இருப்பிட சேவை இயக்கத்தில்">
+
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -514,7 +530,7 @@
 
 <!-- Localization note (pinned_page_to_top_sites, unpinned_page_from_top_sites): These strings are shown in a snackbar
      after the user pins/unpins the currently displayed page from top sites. -->
-<!ENTITY pinned_page_to_top_sites "முக்கியத் தளங்களில் பக்கத்தைப் பொருத்து">
+<!ENTITY pinned_page_to_top_sites "முக்கியத் தளங்களின் பக்கத்தைப் பொருத்து">
 <!ENTITY unpinned_page_from_top_sites "முக்கிய தளங்களில் பக்கத்தை நீக்கு">
 
 <!-- Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
@@ -877,5 +893,16 @@ is simply hidden from the Activity Stream panel. -->
 displayed when there are more than 3 actions available for a page.
 See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "முகப்பு திரையில் சேர்">
-<!ENTITY pwa_continue_to_website "இணையத்தளத்தில் தொடர்">
+<!ENTITY pwa_continue_to_website "தளத்திற்குத் தொடர்">
 <!ENTITY pwa_onboarding_sumo "விரைவான அணுகல் மற்றும் செயலி போன்ற அனுபவத்துடன் விரைவாக உலாவ நீங்கள் இந்த வலைப்பக்கத்தை உங்கள் முகப்பு திரையில் எளிதில் சேர்க்கலாம்.">
+
+<!-- Used by accessibility services to identify the play/pause buttons shown in the
+Picture-in-picture mini window -->
+<!ENTITY pip_play_button_title "இயக்கு">
+<!ENTITY pip_play_button_description "மீண்டும் இயக்கத்திற்கு செல்">
+<!ENTITY pip_pause_button_title "நிறுத்து">
+<!ENTITY pip_pause_button_description "இயக்கத்தை நிறுத்து">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY mls_notification_channel "&vendorShortName; இடமறியும் சேவை">

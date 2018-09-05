@@ -38,6 +38,21 @@ left instead of right. -->
 <!ENTITY  closeSelectedTabs.label            "Закрити обрані вкладки">
 <!ENTITY  closeSelectedTabs.accesskey        "о">
 
+<!ENTITY  pinSelectedTabs.label              "Прикріпити вкладки">
+<!-- Pin Tab and Pin Selected Tabs have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  pinSelectedTabs.accesskey          "П">
+<!ENTITY  unpinSelectedTabs.label            "Відкріпити вкладки">
+<!-- Unpin Tab and Unpin Selected Tabs have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  unpinSelectedTabs.accesskey        "В">
+<!-- Reload Tab and Reload Selected Tabs have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  reloadSelectedTabs.label           "Перезавантажити обрані вкладки">
+<!ENTITY  reloadSelectedTabs.accesskey       "з">
+<!ENTITY  bookmarkSelectedTabs.label         "Закласти вкладки…">
+<!ENTITY  bookmarkSelectedTabs.accesskey     "к">
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -65,7 +80,6 @@ can reach it easily. -->
 <!ENTITY  undoCloseTab.accesskey             "о">
 <!ENTITY  closeTab.label                     "Закрити вкладку">
 <!ENTITY  closeTab.accesskey                 "к">
-
 <!ENTITY  hiddenTabs.label                   "Приховані вкладки">
 
 <!ENTITY  listAllTabs.label      "Список усіх вкладок">
@@ -215,6 +229,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY urlbar.defaultNotificationAnchor.tooltip         "Відкрити панель повідомлень">
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "Відкрити панель запитів розташування">
+<!ENTITY urlbar.autoplayNotificationAnchor.tooltip        "Відкрити панель автовідтворення">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "Відкрити панель повідомлень встановлення додатків">
 <!ENTITY urlbar.canvasNotificationAnchor.tooltip          "Керувати дозволом видобування canvas">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "Відкрити панель повідомлень автономного сховища">
@@ -223,7 +238,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "Налаштувати отримання сповіщень від сайту">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Зберігати дані в постійному сховищі">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Браузер знаходиться під віддаленим керуванням">
-
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Відкрити панель веб-авторизації">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Керувати доступом сайту до ваших камери та/або мікрофону">
@@ -243,6 +257,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Ви заблокували сповіщення для цього веб-сайту.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Ви заблокували постійне сховище для цього веб-сайту.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Ви заблокували виринаючі вікна для цього веб-сайту.">
+<!ENTITY urlbar.autoplayMediaBlocked.tooltip     "Ви заблокували автовідтворення медіа зі звуком для цього веб-сайту.">
 <!ENTITY urlbar.canvasBlocked.tooltip            "Ви заблокували видобування даних canvas для цього веб-сайту.">
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "Ви заборонили використання Adobe Flash на цьому сайті.">
 <!ENTITY urlbar.midiBlocked.tooltip              "Ви заблокували MIDI доступ для цього веб-сайту.">
@@ -301,6 +316,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY webDeveloperMenu.label       "Веб-розробка">
 <!ENTITY webDeveloperMenu.accesskey   "В">
 
+<!ENTITY devtoolsRecordExecution.label "Виконання запису">
+<!ENTITY devtoolsSaveRecording.label "Зберегти запис">
+<!ENTITY devtoolsReplayExecution.label "Виконання повторного відтворення">
+
 <!ENTITY inspectContextMenu.label     "Дослідити елемент">
 <!ENTITY inspectContextMenu.accesskey "Д">
 
@@ -310,6 +329,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fileMenu.accesskey       "Ф">
 <!ENTITY newUserContext.label             "Нова вкладка в контейнері">
 <!ENTITY newUserContext.accesskey         "н">
+<!ENTITY manageUserContext.label          "Керувати контейнерами">
+<!ENTITY manageUserContext.accesskey      "К">
 <!ENTITY newNavigatorCmd.label        "Нове вікно">
 <!ENTITY newNavigatorCmd.key        "N">
 <!ENTITY newNavigatorCmd.accesskey      "в">
@@ -412,8 +433,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (customizeMenu.addToOverflowMenu.label,
      customizeMenu.pinToOverflowMenu.label, customizeMenu.unpinFromOverflowMenu.label)
      The overflow menu is the menu that appears if you click the chevron (>> button)
-     in the location bar. These labels are only used in Photon, where you can put
-     items into this menu permanently (pinned). -->
+     in the location bar. -->
 <!ENTITY customizeMenu.addToOverflowMenu.label "Додати до розширеного меню">
 <!ENTITY customizeMenu.addToOverflowMenu.accesskey "ш">
 <!ENTITY customizeMenu.moveToToolbar.label "Перенести на панель">
@@ -425,6 +445,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      keys.  -->
 <!ENTITY customizeMenu.moveToPanel.label "Перенести в меню">
 <!ENTITY customizeMenu.moveToPanel.accesskey "м">
+<!-- LOCALIZATION NOTE (customizeMenu.pinToOverflowMenu.accesskey)
+     can appear on the same context menu as menubarCmd and personalbarCmd,
+     so they should have different access keys.  -->
 <!ENTITY customizeMenu.pinToOverflowMenu.label "Прикріпити до розширеного меню">
 <!ENTITY customizeMenu.pinToOverflowMenu.accesskey "к">
 <!ENTITY customizeMenu.unpinFromOverflowMenu.label "Відкріпити від розширеного меню">
@@ -612,6 +635,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hidePluginCmd.label          "Приховати цей плагін">
 <!ENTITY hidePluginCmd.accesskey      "П">
 <!ENTITY copyLinkCmd.label            "Копіювати адресу посилання">
+<!-- LOCALIZATION NOTE (copyLinkCmd.accesskey): The access keys for "Copy Link
+Location" and "Copy Email Address" should be the same if possible; the two
+context menu items are mutually exclusive. -->
 <!ENTITY copyLinkCmd.accesskey        "п">
 <!ENTITY copyImageCmd.label           "Копіювати адресу зображення">
 <!ENTITY copyImageCmd.accesskey       "р">
@@ -622,6 +648,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY copyAudioURLCmd.label        "Копіювати адресу аудіо">
 <!ENTITY copyAudioURLCmd.accesskey    "у">
 <!ENTITY copyEmailCmd.label           "Копіювати адресу е-пошти">
+<!-- LOCALIZATION NOTE (copyEmailCmd.accesskey): The access keys for "Copy Link
+Location" and "Copy Email Address" should be the same if possible; the two
+context menu items are mutually exclusive. -->
 <!ENTITY copyEmailCmd.accesskey       "п">
 <!ENTITY thisFrameMenu.label              "У цьому фреймі">
 <!ENTITY thisFrameMenu.accesskey          "ь">
@@ -757,8 +786,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY spellAddDictionaries.label "Додати словники…">
 <!ENTITY spellAddDictionaries.accesskey "л">
 
+<!-- LOCALIZATION NOTE (editBookmark.panel.width): width of the bookmark panel.
+     Should be large enough to fully display the Done and Cancel/
+     Remove Bookmark buttons. -->
+<!ENTITY editBookmark.panel.width                    "23em">
 <!ENTITY editBookmark.done.label                     "Готово">
 <!ENTITY editBookmark.removeBookmark.accessKey       "П">
+
+<!ENTITY editBookmark.showForNewBookmarks.label       "Показати редактор при збереженні">
+<!ENTITY editBookmark.showForNewBookmarks.accesskey   "к">
 
 <!-- LOCALIZATION NOTE (identity.securityView.label)
      This is the header of the security subview in the Site Identity panel. -->
@@ -805,7 +841,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.permissions "Дозволи">
 <!ENTITY identity.permissionsEmpty "Ви не надали цьому сайту жодних спеціальних дозволів.">
-<!ENTITY identity.permissionsReloadHint "Можливо, вам знадобиться перезавантажити сторінку для застосування змін.">
+<!ENTITY identity.permissionsReloadHint "Для застосування змін, можливо, доведеться перезавантажити сторінку.">
+
+<!ENTITY identity.permissionsPreferences.tooltip "Відкрити налаштування дозволів">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
@@ -905,8 +943,43 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.audioCapture.label "Аудіо з вкладки буде загальнодоступним.">
 <!ENTITY getUserMedia.allWindowsShared.message "Буде надано доступ до всіх видимих вікон на вашому дисплеї.">
 
+<!ENTITY trackingProtection.on "Захист від стеження: Увімкнено">
+<!ENTITY trackingProtection.off "Захист від стеження: Вимкнено">
+
+<!ENTITY contentBlocking.title "Блокування вмісту">
+<!ENTITY contentBlocking.detected "На цьому сайті виявлено вміст для блокування.">
+<!ENTITY contentBlocking.notDetected "На цій сторінці не виявлено вмісту для блокування.">
+<!ENTITY contentBlocking.disabled.label "Вимкнено">
+<!ENTITY contentBlocking.disabled.tooltip "Ви вимкнули блокування вмісту.">
+<!ENTITY contentBlocking.exception.tooltip "Ви вимкнули блокування вмісту для цього сайту.">
+
+<!ENTITY contentBlocking.fastBlock.label "Елементи стеження, що сповільнюють завантаження">
+<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.blocked.label):
+     This label signals that this type of content blocking is turned
+     ON and is successfully blocking malicious/slow content, so this is
+     a positive thing. It forms the end of the (imaginary) sentence
+     "Slow-Loading Trackers [are] Blocked"-->
+<!ENTITY contentBlocking.fastBlock.blocked.label "Заблоковано">
+<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.add.label):
+     This is displayed as a link to preferences, where the user can add
+     this specific type of content blocking. When this text is shown
+     the type of content blocking is currently not enabled. -->
+<!ENTITY contentBlocking.fastBlock.add.label "Додати блокування…">
+
+<!ENTITY contentBlocking.trackingProtection.label "Стеження">
+<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
+     This label signals that this type of content blocking is turned
+     ON and is successfully blocking malicious/slow content, so this is
+     a positive thing. It forms the end of the (imaginary) sentence
+     "Trackers [are] Blocked"-->
+<!ENTITY contentBlocking.trackingProtection.blocked.label "Заблоковано">
+<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.add.label):
+     This is displayed as a link to preferences, where the user can add
+     this specific type of content blocking. When this text is shown
+     the type of content blocking is currently not enabled. -->
+<!ENTITY contentBlocking.trackingProtection.add.label "Додати блокування…">
+
 <!ENTITY trackingProtection.title "Захист від стеження">
-<!ENTITY trackingProtection.tooltip "Відкрити налаштування захисту від стеження">
 <!ENTITY trackingProtection.detectedBlocked3 "&brandShortName; блокує частини сторінки, які можуть стежити за вашим переглядом.">
 <!ENTITY trackingProtection.detectedNotBlocked3 "Цей сайт включає елементи, які можуть стежити за вашим переглядом. Ви вимкнули захист.">
 <!ENTITY trackingProtection.notDetected3 "На цій сторінці не виявлено елементів стеження.">
@@ -922,6 +995,36 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY trackingProtection.unblockPrivate.accesskey "В">
 <!ENTITY trackingProtection.block2.label "Увімкнути захист">
 <!ENTITY trackingProtection.block2.accesskey "У">
+
+<!ENTITY trackingProtection.tooltip "Відкрити налаштування захисту від стеження">
+<!ENTITY trackingProtection.detectedBlocked4 "&brandShortName; блокує частини цієї сторінки, що можуть за вами стежити.">
+<!ENTITY trackingProtection.detectedNotBlocked5 "&brandShortName; виявив елементи, що можуть за вами стежити.">
+<!ENTITY trackingProtection.detectedException "&brandShortName; виявив елементи, що можуть за вами стежити. Ви вимкнули захист для цього сайту.">
+<!ENTITY trackingProtection.notDetected5 "На цій сторінці не виявлено елементів стеження.">
+<!ENTITY trackingProtection.notDetectedException "На цій сторінці не виявлено елементів стеження. Ви вимкнули захист для цього сайту.">
+
+<!ENTITY trackingProtection.reloadRequired2 "Ви увімкнули захист від стеження. Перезавантажте сторінку для активації.">
+
+<!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in NON-private browsing mode. -->
+<!ENTITY trackingProtection.unblock3.label "Вимкнути для цього сайту">
+<!ENTITY trackingProtection.unblock3.accesskey "В">
+<!ENTITY trackingProtection.unblock4.label "Вимкнути блокування для цього сайту">
+<!ENTITY trackingProtection.unblock4.accesskey "м">
+<!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in PRIVATE browsing mode. -->
+<!ENTITY trackingProtection.unblockPrivate3.label "Вимкнути для цього сеансу">
+<!ENTITY trackingProtection.unblockPrivate3.accesskey "с">
+<!ENTITY trackingProtection.block4.label "Увімкнути для цього сайту">
+<!ENTITY trackingProtection.block4.accesskey "У">
+<!ENTITY trackingProtection.unblockPrivate4.label "Тимчасово вимкнути блокування">
+<!ENTITY trackingProtection.unblockPrivate4.accesskey "ч">
+<!ENTITY trackingProtection.block5.label "Увімкнути блокування для цього сайту">
+<!ENTITY trackingProtection.block5.accesskey "к">
+<!ENTITY trackingProtection.reload2.label "Перезавантажити сторінку">
+<!ENTITY trackingProtection.reload2.accesskey "з">
 
 <!ENTITY pluginNotification.showAll.label "Показати всі">
 <!ENTITY pluginNotification.showAll.accesskey "в">
@@ -1024,6 +1127,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY sendToDevice.syncNotReady.label "Синхронізовані пристрої…">
 
 <!ENTITY pageAction.shareUrl.label "Поділитися">
+
+<!ENTITY pageAction.shareMore.label "Більше…">
 
 <!ENTITY libraryButton.tooltip "Перегляд історії, збережених закладок та інших даних">
 

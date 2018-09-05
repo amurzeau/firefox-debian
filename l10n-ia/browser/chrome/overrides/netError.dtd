@@ -8,7 +8,11 @@
 <!ENTITY loadError.label "Problema cargante le pagina">
 <!ENTITY retry.label "Retentar">
 <!ENTITY returnToPreviousPage.label "Retornar">
+<!ENTITY returnToPreviousPage1.label "Retroceder (Recommendate)">
 <!ENTITY advanced.label "Avantiate">
+
+<!ENTITY continue1.label "Continuar…">
+<!ENTITY moreInformation.label "Plus de informationes">
 
 <!-- Specific error messages -->
 
@@ -139,10 +143,31 @@
 ">
 
 <!ENTITY certerror.longpagetitle1 "Tu connexion non es secur">
-<!-- Localization note (certerror.introPara) - The text content of the span tag
+<!ENTITY certerror.longpagetitle2 "Advertentia: Potential risco de securitate avante">
+<!-- Localization note (certerror.introPara, certerror.introPara1) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "Le proprietarios de <span class='hostname'/> ha configurate lor sito web incorrectemente. Pro proteger tu informationes de esser robate,  &brandShortName; non se ha connectite a iste sito web.">
+
+<!ENTITY certerror.introPara1 "&brandShortName; ha detectate un potential menacia al securitate e non ha potite continuar a <span class='hostname'/>. Si tu visita iste sito, le attaccantes potera tentar robar informationes como tu contrasignos, emails, o cartas de credito.">
+
+<!ENTITY certerror.expiredCert.secondPara "Iste problema occurre probabilemente perque le horologio de tu computator es adjustate con le hora incorrecte, le qual impedi &brandShortName; de connecter se securmente.">
+
+<!ENTITY certerror.whatCanYouDoAboutItTitle "Que pote tu facer concernente a isto?">
+
+<!ENTITY certerror.unknownIssuer.whatCanYouDoAboutIt "
+<p>Le problema es probabilemente in le sito web, e il ha nulle cosa que tu pote facer pro resolver lo</p>
+<p>Si tu es in un rete corporative o usa un software anti-virus, tu pote demandar lor assistentia technic. Tu pote tamben notificar le administrator del sito super le problema.</p>
+">
+
+<!ENTITY certerror.expiredCert.whatCanYouDoAboutIt2 "
+<p>Le horologio de tu computator signa <span id='wrongSystemTime_systemDate2'/>. Verifica que tu computator es preparate al correcte data, tempore e fuso horari in le parametros de tu systema, e alora refresca <span class='hostname'/>.</p>
+<p>Si le tempore es jam correcte, le sito web pare ser mal configurate, e il ha nihil que tu pote facer pro resolver iste problema. Tu pote solo notificar de iste problema le administrator del sito.</p>
+">
+
+<!ENTITY certerror.badCertDomain.whatCanYouDoAboutIt "
+<p>Le problema es probabilemente in le sito web, e il ha nulle cosa que tu pote facer pro resolver lo. Tu pote notificar le administrator del sito web super le problema.</p>
+">
 
 <!ENTITY sharedLongDesc "
 <ul>
@@ -153,7 +178,7 @@ was trying to connect. -->
 </ul>
 ">
 
-<!ENTITY cspBlocked.title "Blocate per le regulas de securitate del contento">
+<!ENTITY cspBlocked.title "Blocate per le politica de securitate del contento">
 <!ENTITY cspBlocked.longDesc "<p>&brandShortName; impediva a iste pagina de cargar in iste maniera proque le pagina ha un regula de securitate de contento que non lo permitte.</p>">
 
 <!ENTITY corruptedContentErrorv2.title "Error de contento corrumpite">
@@ -180,10 +205,12 @@ was trying to connect. -->
 <!ENTITY certerror.wrongSystemTimeWithoutReference "<p>&brandShortName; non se ha connectite a <span id='wrongSystemTimeWithoutReference_URL'/> perque le horologio de tu computator sembla monstrar un hora erronee e isto impedi un connexion secur.</p><p>Tu computator pensa que il es <span id='wrongSystemTimeWithoutReference_systemDate'/>. Pro corriger iste problema, cambia tu parametros de data e hora a fin que illos corresponde al hora correcte.</p>">
 
 <!ENTITY certerror.pagetitle1  "Connexion non secur">
+<!ENTITY certerror.pagetitle2  "Advertentia: Potential risco de securitate avante">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Iste sito usa HTTP
 Strict Transport Security (HSTS) pro specificar ille &brandShortName; pote connecter se solo
 a illo in modo secur. Assi, adder un exception pro iste
 certificato non es possibile.">
+<!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'></span> ha un politica de securitate appellate HTTP Strict Transport Security (HSTS), le qual vole dicer que &brandShortName; solmente pote connecter se a illo de maniera secur. Tu pote adder un exception pro visitar iste sito.">
 <!ENTITY certerror.copyToClipboard.label "Copiar le texto in le planchetta">
 
 <!ENTITY inadequateSecurityError.title "Tu connexion non es secur">
@@ -192,6 +219,9 @@ certificato non es possibile.">
 <!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> usa technologia de securitate que es obsolete e vulnerabile a attaccos. Un attaccante pote facilemente revelar informationes que tu pensa esser secur. Le administrator del sito web debera reparar le servitor ante que tu pote visitar le sito.</p><p>Codice de error: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
 
 <!ENTITY blockedByPolicy.title "Pagina blocate">
+
+<!ENTITY clockSkewError.title "Le horologio de tu computator es errate">
+<!ENTITY clockSkewError.longDesc "Tu computator signa que es <span id='wrongSystemTime_systemDate1'/>. isto impedi a &brandShortName; de connecter se con securitate. Pro visitar <span class='hostname'></span>, actualisa le horologio de tu computator al data, tempore e fuso horari currente. Pois refresca <span class='hostname'></span>.">
 
 <!ENTITY prefReset.longDesc "Pare que le parametros de tu rete pote causar isto. Desira tu restaurar le parametros predefinite?">
 <!ENTITY prefReset.label "Restaurar le parametros predefinite">

@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -94,7 +86,7 @@ extension-controlled-new-tab-url = Laajennus, <img data-l10n-name="icon"/> { $na
 extension-controlled-default-search = Laajennus, <img data-l10n-name="icon"/> { $name }, on asettanut oletushakukoneen.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
-extension-controlled-privacy-containers = Laajennus, <img data-l10n-name="icon"/> { $name }, vaatii luokitellut välilehdet.
+extension-controlled-privacy-containers = Laajennus, <img data-l10n-name="icon"/> { $name }, vaatii eristetyt välilehdet.
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Laajennus, <img data-l10n-name="icon"/> { $name }, hallitsee seurannan suojausta.
@@ -137,20 +129,11 @@ is-not-default = { -brand-short-name } ei ole järjestelmän oletusselain
 set-as-my-default-browser =
     .label = Aseta oletukseksi…
     .accesskey = e
-startup-page = Kun { -brand-short-name } käynnistetään
-    .accesskey = F
-startup-user-homepage =
-    .label = Avaa aloitussivu
-startup-blank-page =
-    .label = Avaa tyhjä sivu
-startup-prev-session =
-    .label = Avaa viime istunnon ikkunat ja välilehdet
 startup-restore-previous-session =
     .label = Palauta edellinen istunto
     .accesskey = P
 disable-extension =
     .label = Poista laajennus käytöstä
-home-page-header = Aloitussivu
 tabs-group-header = Välilehdet
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab selaa välilehtiä käyttöjärjestyksessä alkaen viimeisimmästä
@@ -171,34 +154,34 @@ show-tabs-in-taskbar =
     .label = Näytä esikatselut välilehdistä Windowsin tehtäväpalkissa
     .accesskey = y
 browser-containers-enabled =
-    .label = Käytä luokiteltuja välilehtiä
+    .label = Käytä eristettyjä välilehtiä
     .accesskey = v
 browser-containers-learn-more = Lue lisää
 browser-containers-settings =
     .label = Asetukset…
     .accesskey = e
-containers-disable-alert-title = Suljetaanko kaikki luokitellut välilehdet?
+containers-disable-alert-title = Suljetaanko kaikki eristetyt välilehdet?
 containers-disable-alert-desc =
     { $tabCount ->
-        [one] Jos poistat luokitellut välilehdet käytöstä nyt, { $tabCount } luokiteltu välilehti suljetaan. Haluatko varmasti poistaa luokitellut välilehdet käytöstä?
-       *[other] Jos poistat luokitellut välilehdet käytöstä nyt, { $tabCount } luokiteltua välilehteä suljetaan. Haluatko varmasti poistaa luokitellut välilehdet käytöstä?
+        [one] Jos poistat eristetyt välilehdet käytöstä nyt, { $tabCount } eristetty välilehti suljetaan. Haluatko varmasti poistaa eristetyt välilehdet käytöstä?
+       *[other] Jos poistat eristetyt välilehdet käytöstä nyt, { $tabCount } eristettyä välilehteä suljetaan. Haluatko varmasti poistaa eristetyt välilehdet käytöstä?
     }
 containers-disable-alert-ok-button =
     { $tabCount ->
-        [one] Sulje { $tabCount } luokiteltu välilehti
-       *[other] Sulje { $tabCount } luokiteltua välilehteä
+        [one] Sulje { $tabCount } eristetty välilehti
+       *[other] Sulje { $tabCount } eristettyä välilehteä
     }
 containers-disable-alert-cancel-button = Pidä käytössä
-containers-remove-alert-title = Poistetaanko tämä luokitus?
+containers-remove-alert-title = Poistetaanko tämä eristystila?
 # Variables:
 #   $count (Number) - Number of tabs that will be closed.
 containers-remove-alert-msg =
     { $count ->
-        [one] Jos poistat tämän luokituksen nyt, { $count } luokiteltu välilehti suljetaan. Haluatko varmasti poistaa luokituksen?
-       *[other] Jos poistat tämän luokituksen nyt, { $count } luokiteltua välilehteä suljetaan. Haluatko varmasti poistaa luokituksen?
+        [one] Jos poistat tämän eristystilan nyt, { $count } eristetty välilehti suljetaan. Haluatko varmasti poistaa eristystilan?
+       *[other] Jos poistat tämän eristystilan nyt, { $count } eristettyä välilehteä suljetaan. Haluatko varmasti poistaa eristystilan?
     }
-containers-remove-ok-button = Poista luokitus
-containers-remove-cancel-button = Älä poista luokitusta
+containers-remove-ok-button = Poista eristystila
+containers-remove-cancel-button = Älä poista eristystilaa
 
 ## General Section - Language & Appearance
 
@@ -219,6 +202,9 @@ choose-language-description = Valitse kielet, joilla sivut näytetään
 choose-button =
     .label = Valitse…
     .accesskey = V
+choose-browser-language-description = Valitse kielet, joilla { -brand-short-name }in valikot, viestit ja ilmoitukset näytetään.
+confirm-browser-language-change-description = Käytä näitä muutoksia käynnistämällä { -brand-short-name } uudestaan
+confirm-browser-language-change-button = Käytä ja käynnistä uudestaan
 translate-web-pages =
     .label = Käännä sivustojen sisältö
     .accesskey = n
@@ -270,7 +256,6 @@ play-drm-content =
 play-drm-content-learn-more = Lue lisää
 update-application-title = { -brand-short-name }in päivitykset
 update-application-description = Pidä { -brand-short-name } ajan tasalla parhaan suorituskyvyn, vakauden ja turvallisuuden vuoksi.
-update-application-info = Versio { $version } <a>Mitä uutta</a>
 update-application-version = Versio { $version } <a data-l10n-name="learn-more">Mitä uutta</a>
 update-history =
     .label = Näytä päivityshistoria…
@@ -306,7 +291,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Sisältöprosessien yläraja
     .accesskey = i
 performance-limit-content-process-enabled-desc = Useammat sisältöprosessit parantavat suorituskykyä käytettäessä useita välilehtiä, mutta kuluttavat myös enemmän muistia.
-performance-limit-content-process-disabled-desc = Sisältöprosessien määrän muokkaaminen on mahdollista vain useaa prosessia hyödyntävällä { -brand-short-name }illa. <a>Lue, miten usean prosessin hyödyntämisen tilanteen voi tarkistaa</a>
 performance-limit-content-process-blocked-desc = Sisältöprosessien määrän muokkaaminen on mahdollista vain useaa prosessia hyödyntävällä { -brand-short-name }illa. <a data-l10n-name="learn-more">Lue, miten usean prosessin hyödyntämisen tilanteen voi tarkistaa</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -377,9 +361,6 @@ use-current-pages =
 choose-bookmark =
     .label = Käytä kirjanmerkkiä…
     .accesskey = m
-restore-default =
-    .label = Palauta oletusasetus
-    .accesskey = P
 
 ## Search Section
 
@@ -428,9 +409,9 @@ search-keyword-warning-bookmark = Annettu pikakomento on jo toisella kirjanmerki
 ## Containers Section
 
 containers-back-link = « Siirry takaisin
-containers-header = Luokitellut välilehdet
+containers-header = Eristetyt välilehdet
 containers-add-button =
-    .label = Lisää uusi luokitus
+    .label = Lisää uusi eristystila
     .accesskey = L
 containers-preferences-button =
     .label = Asetukset
@@ -624,6 +605,26 @@ sitedata-accept-third-party-visited-option =
     .label = Vierailluilta sivustoilta
 sitedata-accept-third-party-never-option =
     .label = Ei milloinkaan
+sitedata-allow-cookies-option =
+    .label = Hyväksy evästeet ja sivustotiedot
+    .accesskey = H
+sitedata-disallow-cookies-option =
+    .label = Estä evästeet ja sivustotiedot
+    .accesskey = E
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Mitä estetään
+    .accesskey = M
+sitedata-block-trackers-option-recommended =
+    .label = Kolmannen osapuolen seuraimet (suositus)
+sitedata-block-trackers-option =
+    .label = Kolmannen osapuolen seuraimet
+sitedata-block-unvisited-option =
+    .label = Evästeet vierailemattomilta sivustoilta
+sitedata-block-all-third-parties-option =
+    .label = Kaikki kolmannen osapuolen evästeet
+sitedata-block-always-option =
+    .label = Kaikki evästeet (voi aiheuttaa sivustojen toimimattomuutta)
 sitedata-clear =
     .label = Tyhjennä tiedot…
     .accesskey = y
@@ -649,11 +650,49 @@ addressbar-locbar-openpage-option =
     .accesskey = a
 addressbar-suggestions-settings = Muuta hakukoneiden ehdotusten asetuksia
 
+## Privacy Section - Content Blocking
+
+content-blocking-header = Sisällön esto
+content-blocking-desc = Voit estää kolmannen osapuolen sisältöä, kuten mainoksia tai koodia, joka hidastaa selaamistasi ja seuraa sinua ympäri verkkoa. Voit säätää asetuksia saavuttaaksesi parhaan suojan ja suorituskyvyn tasapainon.
+content-blocking-learn-more = Lue lisää
+content-blocking-restore-defaults =
+    .label = Palauta oletukset
+    .accesskey = o
+content-blocking-toggle-on =
+    .tooltiptext = Poista sisällön esto käytöstä
+content-blocking-toggle-off =
+    .tooltiptext = Ota sisällön esto käyttöön
+content-blocking-toggle-label-on = KÄYTÖSSÄ
+    .accesskey = K
+content-blocking-toggle-label-off = EI KÄYTÖSSÄ
+    .accesskey = K
+content-blocking-category-label = Valitse, mitä estetään
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Hitaat seurantaelementit
+    .accesskey = H
+content-blocking-fastblock-description = Estää kolmannen osapuolen sisällön, jonka latautumisessa kestää pidempään kuin 5 sekuntia.
+content-blocking-fastblock-option-enabled =
+    .label = Estä aina
+content-blocking-fastblock-option-disabled =
+    .label = Älä estä koskaan
+content-blocking-tracking-protection-label = Seuraimet
+    .accesskey = S
+content-blocking-tracking-protection-description = Estää tunnetut seuraimet (huomaa: voi estää joitain sivuja latautumasta).
+content-blocking-tracking-protection-option-enabled =
+    .label = Estä aina
+content-blocking-tracking-protection-option-pbm =
+    .label = Estä vain yksityisissä ikkunoissa
+content-blocking-tracking-protection-option-disabled =
+    .label = Älä estä koskaan
+content-blocking-tracking-protection-change-blocklist = Muuta estolistaa…
+
 ## Privacy Section - Tracking
 
 tracking-header = Seurannan suojaus
-tracking-desc = Seurannan suojaus estää verkossa toimivia seurantamenetelmiä, jotka keräävät tietoja selaamisestasi yli sivustorajojen. <a data-l10n-name="learn-more">Lue lisää seurannan suojauksesta ja tietosuojastasi</a>
-tracking-mode-label = Käytä seurannan suojausta estämään tunnettuja seurantamenetelmiä
+tracking-desc = Seurannan suojaus estää verkossa toimivia seuraimia, jotka keräävät tietoja selaamisestasi yli sivustorajojen. <a data-l10n-name="learn-more">Lue lisää seurannan suojauksesta ja tietosuojastasi</a>
+tracking-mode-label = Käytä seurannan suojausta estämään tunnettuja seuraimia
 tracking-mode-always =
     .label = Aina
     .accesskey = n
@@ -665,7 +704,7 @@ tracking-mode-never =
     .accesskey = E
 # This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
 # This currently happens on the release and beta channel.
-tracking-pbm-label = Käytä seurannan suojausta yksityisessä selauksessa estämään tunnettuja seurantamenetelmiä
+tracking-pbm-label = Käytä seurannan suojausta yksityisessä selauksessa estämään tunnettuja seuraimia
     .accesskey = m
 tracking-exceptions =
     .label = Poikkeukset…
@@ -700,9 +739,17 @@ permissions-notification-pause =
 permissions-block-autoplay-media =
     .label = Estä sivustot toistamasta äänellistä mediaa automaattisesti
     .accesskey = E
+permissions-block-autoplay-media-menu = Sivustot jotka toistavat automaattisesti ääntä
 permissions-block-autoplay-media-exceptions =
     .label = Poikkeukset…
     .accesskey = P
+autoplay-option-ask =
+    .label = Kysy aina
+autoplay-option-allow =
+    .label = Salli automaattinen toisto
+autoplay-option-dont =
+    .label = Älä salli automaattista toistoa
+permissions-autoplay-link = Lue lisää
 permissions-block-popups =
     .label = Estä ponnahdusikkunat
     .accesskey = E

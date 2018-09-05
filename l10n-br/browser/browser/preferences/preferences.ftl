@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -137,20 +129,11 @@ is-not-default = N'eo ket { -brand-short-name } ho merdeer dre ziouer
 set-as-my-default-browser =
     .label = Lakaat dre ziouer…
     .accesskey = L
-startup-page = Pa loc'h { -brand-short-name }
-    .accesskey = P
-startup-user-homepage =
-    .label = Diskouez ma fennbajennad
-startup-blank-page =
-    .label = Diskouez ur bajenn wenn
-startup-prev-session =
-    .label = Diskouez ma frenestroù hag ivinelloù evel ar wech diwezhañ
 startup-restore-previous-session =
     .label = Assav an estez kent
     .accesskey = A
 disable-extension =
     .label = Diweredekaat an askouezh
-home-page-header = Pennbajenn
 tabs-group-header = Ivinelloù
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab evit mont d'an ivinell implijet da ziwezhañ
@@ -228,6 +211,9 @@ choose-language-description = Dibabit ho yezh muiañ plijet evit skrammañ ar pa
 choose-button =
     .label = Dibab…
     .accesskey = i
+choose-browser-language-description = Dibabit ar yezhoù implijet evit skrammañ lañserioù, kemennadennoù ha rebuzadurioù { -brand-short-name }.
+confirm-browser-language-change-description = Adloc'hañ { -brand-short-name } evit arloañ ar c'hemmoù
+confirm-browser-language-change-button = Arloañ hag adloc'hañ
 translate-web-pages =
     .label = Treiñ an endalc'had web
     .accesskey = T
@@ -279,7 +265,6 @@ play-drm-content =
 play-drm-content-learn-more = Gouzout hiroc'h
 update-application-title = Hizivadurioù evit { -brand-short-name } :
 update-application-description = Derc'hel { -brand-short-name } hizivaet evit an digonusted, stabilded ha diogelroez gwellañ.
-update-application-info = Handelv { $version } <a>Petra nevez</a>
 update-application-version = Handelv { $version } <a data-l10n-name="learn-more">Petra nevez</a>
 update-history =
     .label = Diskouez roll istor an hizivadurioù…
@@ -315,7 +300,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Bevenn endalc'had an araezad
     .accesskey = A
 performance-limit-content-process-enabled-desc = Endalc'had araezad ouzhpenn a c'hall gwellaat an digonusted gent meur a ivinell, met arverañ a raio muioc'h a vemor.
-performance-limit-content-process-disabled-desc = Evit kemmañ an niver a araezad endalc'had eo ret ober gant { -brand-short-name }. <a>Deskit penaos gwiriekaat statud al lies araezad</a>
 performance-limit-content-process-blocked-desc = Evit kemmañ an niver a araezad endalc'had eo ret ober gant { -brand-short-name }. <a data-l10n-name="learn-more">Deskit penaos gwiriekaat statud al lies araezad</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -386,9 +370,6 @@ use-current-pages =
 choose-bookmark =
     .label = Arverañ ur sined…
     .accesskey = r
-restore-default =
-    .label = Assav an arventennoù dre ziouer
-    .accesskey = z
 
 ## Search Section
 
@@ -658,6 +639,44 @@ addressbar-locbar-openpage-option =
     .accesskey = D
 addressbar-suggestions-settings = Kemmañ ar gwellvezioù evit ar c'hinnigoù luskerioù enklask
 
+## Privacy Section - Content Blocking
+
+content-blocking-header = Stankañ endalc'hadoù
+content-blocking-desc = Stankit endalc'hadoù estren (evel bruderezhioù pe vonegoù) a c'hall gorrekaat ho merdeiñ hag heuliañ ac'hanoc'h war ar web. Personelait hoc'h arventennoù evit kaout ur c'hempouez etre gwarez ha digonusted.
+content-blocking-learn-more = Gouzout hiroc'h
+content-blocking-restore-defaults =
+    .label = Assav dre ziouer
+    .accesskey = A
+content-blocking-toggle-on =
+    .tooltiptext = Diweredekaat stankañ an endalc'hadoù
+content-blocking-toggle-off =
+    .tooltiptext = Gweredekaat stankañ an endalc'hadoù
+content-blocking-toggle-label-on = ON
+    .accesskey = O
+content-blocking-toggle-label-off = DIWEREDEKAET
+    .accesskey = D
+content-blocking-category-label = Dibabit petra stankañ
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Gorrekaat an elfennoù heuliañ
+    .accesskey = G
+content-blocking-fastblock-description = Stankañ endalc'hadoù estren a gemer hiroc'h eget 5 eilenn da gargañ.
+content-blocking-fastblock-option-enabled =
+    .label = Stankañ bepred
+content-blocking-fastblock-option-disabled =
+    .label = Na stankañ biken
+content-blocking-tracking-protection-label = Heulierien
+    .accesskey = H
+content-blocking-tracking-protection-description = Stankañ an holl heulierien (Evezhiadenn: gallout a ra mirout pajennoù 'zo da gargañ).
+content-blocking-tracking-protection-option-enabled =
+    .label = Stankañ bepred
+content-blocking-tracking-protection-option-pbm =
+    .label = Stankañ er prenestroù prevez hepken
+content-blocking-tracking-protection-option-disabled =
+    .label = Na stankañ biken
+content-blocking-tracking-protection-change-blocklist = Kemmañ ar roll stankañ...
+
 ## Privacy Section - Tracking
 
 tracking-header = Gwarez heuliañ
@@ -709,9 +728,16 @@ permissions-notification-pause =
 permissions-block-autoplay-media =
     .label = Difenn al lec'hiennoù da lenn ar media gant son ent emgefreek
     .accesskey = D
+permissions-block-autoplay-media-menu = Evit al lec'hiennoù a lenn ar son ent emgefreek
 permissions-block-autoplay-media-exceptions =
     .label = Nemedennoù...
     .accesskey = N
+autoplay-option-ask =
+    .label = Goulenn bewech
+autoplay-option-allow =
+    .label = Aotren al lenn emgefreek
+autoplay-option-dont =
+    .label = Na lenn emgefreek
 permissions-block-popups =
     .label = Herzel an diflugelloù
     .accesskey = H

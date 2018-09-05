@@ -180,7 +180,7 @@
      either has not set up Sync, or has no other devices to send a tab
      to. -->
 <!ENTITY overlay_share_send_tab_btn_label "Enviar a otro dispositivo">
-<!ENTITY overlay_share_no_url "No se ha encontrado el enlace para esta compartición">
+<!ENTITY overlay_share_no_url "Ningún enlace encontrado en este recurso compartido">
 <!ENTITY overlay_share_select_device "Seleccionar dispositivo">
 <!-- Localization note (overlay_no_synced_devices) : Used when the menu option
      to send a tab to a synced device is pressed and no other synced devices
@@ -372,6 +372,8 @@
 
 <!ENTITY pref_media_autoplay_enabled "Permitir reproducción automática">
 <!ENTITY pref_media_autoplay_enabled_summary "Controla si los sitios web puede reproducir videos automáticamente u otro contenido multimedia.">
+<!ENTITY pref_media_autoplay_allow "Permitir reproducción automática">
+<!ENTITY pref_media_autoplay_block "Bloquear reproducción automática">
 <!ENTITY pref_zoom_force_enabled "Siempre habilitar enfoque">
 <!ENTITY pref_zoom_force_enabled_summary "Forzar sobrescritura para que pueda variar el tamaño de cualquier página">
 <!ENTITY pref_voice_input "Entrada de voz">
@@ -447,6 +449,11 @@
 <!ENTITY datareporting_crashreporter_title_short "Agente de fallos">
 <!ENTITY datareporting_wifi_title2 "Servicio de localización de &vendorShortName;">
 <!ENTITY datareporting_wifi_geolocation_summary4 "¡Ayuda a &vendorShortName; a mapear el mundo! Comparte la ubicación Wi.Fi y móvil de tu dispositivo para mejorar nuestro servicio de localización.">
+<!-- Localization note (datareporting_notification_title ) : This will be the title
+     of the notification shown whenever the user has enabled data reporting and the stumbler
+     service is running. -->
+<!ENTITY datareporting_stumbler_notification_title "&vendorShortName; Servicio de ubicación ejecutándose">
+
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -519,7 +526,7 @@
      just "Pin Site" or "Unpin Site" would mean. -->
 <!ENTITY contextmenu_pin_to_top_sites "Fijar en Favoritos">
 <!ENTITY contextmenu_unpin_from_top_sites "Quitar de Favoritos">
-<!ENTITY contextmenu_add_search_engine "Agregar una motor de búsqueda">
+<!ENTITY contextmenu_add_search_engine "Agregar un motor de búsqueda">
 
 <!-- Localization note (pinned_page_to_top_sites, unpinned_page_from_top_sites): These strings are shown in a snackbar
      after the user pins/unpins the currently displayed page from top sites. -->
@@ -672,7 +679,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 
 <!-- Mixed content notifications in site identity popup -->
 <!ENTITY mixed_content_blocked_all1 "&brandShortName; ha bloqueado contenido inseguro en esta página.">
-<!ENTITY mixed_content_blocked_some1 "&brandShortName; ha bloqueado algunos contenido inseguro en esta página.">
+<!ENTITY mixed_content_blocked_some1 "&brandShortName; ha bloqueado contenido de poca confianza en esta página.">
 <!ENTITY mixed_content_display_loaded1 "Partes de esta página no son seguras (tales como imágenes).">
 <!ENTITY mixed_content_protection_disabled1 "Has desactivado la protección contra contenido inseguro.">
 
@@ -888,3 +895,16 @@ See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "Añadir a la página de inicio">
 <!ENTITY pwa_continue_to_website "Continuar al sitio web">
 <!ENTITY pwa_onboarding_sumo "Puedes agregar este sitio web a tu página de inicio para tener acceso instantáneo y navegar rápidamente como si fuera una aplicación.">
+
+<!-- Used by accessibility services to identify the play/pause buttons shown in the
+Picture-in-picture mini window -->
+<!ENTITY pip_play_button_title "Reproducir">
+<!ENTITY pip_play_button_description "Reanudar la reproducción">
+<!ENTITY pip_pause_button_title "Pausa">
+<!ENTITY pip_pause_button_description "Pausar la reproducción">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY mls_notification_channel "Servicio de localización de &vendorShortName;">
+<!ENTITY download_notification_channel "Descargas">
+<!ENTITY media_notification_channel "Reproducción multimedia">

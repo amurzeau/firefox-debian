@@ -45,8 +45,8 @@ permissions-capabilities-prompt =
 
 ## Invalid Hostname Dialog
 
-permissions-invalid-uri-title = Neplatné jméno serveru
-permissions-invalid-uri-label = Vložte prosím platné jméno serveru
+permissions-invalid-uri-title = Neplatný název serveru
+permissions-invalid-uri-label = Vložte prosím platný název serveru
 
 ## Exceptions - Tracking Protection
 
@@ -89,6 +89,7 @@ permissions-exceptions-autoplay-media-window =
     .title = Servery, které mohou automaticky přehrávat média
     .style = { permissions-window.style }
 permissions-exceptions-autoplay-media-desc = Zde můžete určit, které servery mohou automaticky spouštět přehrávání mediálních prvků. Zadejte přesnou adresu stránky, které chcete přehrávání povolit, a klepněte na tlačítko Povolit.
+permissions-exceptions-autoplay-media-desc2 = Zde můžete určit, které servery mohou automaticky spouštět přehrávání médií se zvukem. Zadejte adresu stránky a klepněte na tlačítko Blokovat nebo Povolit.
 
 ## Site Permissions - Notifications
 
@@ -105,10 +106,10 @@ permissions-site-notification-disable-desc = Tímto zakážete všem serverům, 
 permissions-site-location-window =
     .title = Oprávnění zjišťovat polohu
     .style = { permissions-window.style }
-permissions-site-location-desc = Následující servery požádaly o přístup k vaší poloze. Zde můžete určit, které servery mají nebo nemají povoleno vaši polohu zjistit. Můžete zde také zablokovat nové žádosti o přístup.
+permissions-site-location-desc = Následující servery požádaly o přístup k informacím o vaší poloze. Zde můžete určit, které servery mají nebo nemají povoleno vaši polohu zjistit. Můžete zde také zablokovat nové žádosti o přístup.
 permissions-site-location-disable-label =
-    .label = Blokovat nové žádosti o přístup k vaší poloze
-permissions-site-location-disable-desc = Tímto zakážete všem serverům, které nejsou v seznamu výše, požádat o přístup k vaší poloze. Při blokování žádostí nemusí některé funkce webových stránek správně fungovat.
+    .label = Blokovat nové žádosti o přístup k informacím o vaší poloze
+permissions-site-location-disable-desc = Tímto zakážete všem serverům, které nejsou v seznamu výše, požádat o přístup k informacím o vaší poloze. Při blokování žádostí nemusí některé funkce webových stránek správně fungovat.
 
 ## Site Permissions - Camera
 

@@ -106,7 +106,7 @@ extension-controlled-proxy-config = Udvidelsen <img data-l10n-name="icon"/> { $n
 #
 # <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
 # <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
-extension-controlled-enable = Gå til tilføjelsen <img data-l10n-name="addons-icon"/> i <img data-l10n-name="menu-icon"/>-menuen for at aktivere udvidelsen.
+extension-controlled-enable = Klik på Tilføjelser <img data-l10n-name="addons-icon"/> i menuen <img data-l10n-name="menu-icon"/> for at aktivere udvidelsen.
 
 ## Preferences UI Search Results
 
@@ -219,6 +219,11 @@ choose-language-description = Vælg dit fortrukne sprog at få vist sider i
 choose-button =
     .label = Vælg…
     .accesskey = æ
+
+choose-browser-language-description = Vælg det sprog, der skal bruges i brugerfladen i { -brand-short-name }
+confirm-browser-language-change-description = Genstart { -brand-short-name } for at anvende ændringerne
+confirm-browser-language-change-button = Genstart
+
 translate-web-pages =
     .label = Oversæt webindhold
     .accesskey = O
@@ -651,6 +656,51 @@ addressbar-locbar-openpage-option =
     .accesskey = f
 addressbar-suggestions-settings = Skift indstillinger for søgeforslag
 
+## Privacy Section - Content Blocking
+
+content-blocking-header = Blokering af indhold
+
+content-blocking-desc = Bloker indhold fra tredjepart, fx reklamer eller kode, der kan gøre din browsing langsommere og som kan spore dig rundt på nettet. Tilpas dine indstillinger for at få den bedste balance mellem beskyttelse og ydelse.
+
+content-blocking-learn-more = Læs mere
+content-blocking-restore-defaults =
+  .label = Gendan standard
+  .accesskey = G
+
+content-blocking-toggle-on =
+  .tooltiptext = Slå blokering af indhold fra
+content-blocking-toggle-off =
+  .tooltiptext = Slå blokering af indhold til
+
+content-blocking-toggle-label-on = TIL
+  .accesskey = T
+content-blocking-toggle-label-off = FRA
+  .accesskey = F
+
+content-blocking-category-label = Vælg hvad der skal blokeres
+
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Langsomme sporings-elementer
+  .accesskey = L
+content-blocking-fastblock-description = Bloker indhold fra tredjepart, hvis det tager længere end fem sekunder at indlæse
+content-blocking-fastblock-option-enabled =
+  .label = Bloker altid
+content-blocking-fastblock-option-disabled =
+  .label = Bloker aldrig
+
+content-blocking-tracking-protection-label = Sporings-tjenester
+  .accesskey = p
+content-blocking-tracking-protection-description = Bloker alle kendte sporings-tjenester (NB: Kan forhindre nogle sider i at blive indlæst).
+content-blocking-tracking-protection-option-enabled =
+  .label = Bloker altid
+content-blocking-tracking-protection-option-pbm =
+  .label = Bloker kun i private vinduer
+content-blocking-tracking-protection-option-disabled =
+  .label = Bloker aldrig
+content-blocking-tracking-protection-change-blocklist = Skift blokeringsliste…
+
 ## Privacy Section - Tracking
 
 tracking-header = Beskyttelse mod sporing
@@ -673,7 +723,7 @@ tracking-exceptions =
     .label = Undtagelser…
     .accesskey = u
 tracking-change-block-list =
-    .label = Skift blokerings-liste
+    .label = Skift blokeringsliste
     .accesskey = S
 
 ## Privacy Section - Permissions
@@ -696,6 +746,26 @@ permissions-notification-settings =
     .label = Indstillinger…
     .accesskey = I
 permissions-notification-link = Læs mere
+
+permissions-block-autoplay-media =
+    .label = Lad ikke websteder starte automatisk afspilning af mediefiler med lyd
+    .accesskey = l
+
+permissions-block-autoplay-media-menu = For websteder, der automatisk afspiller lyd
+
+permissions-block-autoplay-media-exceptions =
+    .label = Undtagelser…
+    .accesskey = U
+
+autoplay-option-ask =
+    .label = Spørg altid
+autoplay-option-allow =
+    .label = Tillad automatisk afspilning
+autoplay-option-block =
+    .label = Bloker automatisk afspilning
+autoplay-option-dont =
+    .label = Afspil ikke automatisk
+
 permissions-notification-pause =
     .label = Sæt beskeder på pause, indtil { -brand-short-name } starter igen
     .accesskey = b
@@ -727,8 +797,8 @@ collection-health-report =
 collection-health-report-link = Læs mere
 
 collection-studies =
-    .label = Tillad at { -brand-short-name } installerer og afvikler studier
-collection-studies-link = Vis { -brand-short-name }-studier
+    .label = Tillad at { -brand-short-name } installerer og afvikler undersøgelser
+collection-studies-link = Vis { -brand-short-name }-undersøgelser
 
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.

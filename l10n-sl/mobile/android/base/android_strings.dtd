@@ -36,7 +36,7 @@
 
 <!ENTITY firstrun_readerview_title "Članki">
 <!-- Localization note (firstrun_readerview_message): This is a casual way of describing getting rid of unnecessary things, and is referring to simplifying websites so only the article text and images are visible, removing unnecessary headers or ads. -->
-<!ENTITY firstrun_readerview_message "Odstrani nepotrebno">
+<!ENTITY firstrun_readerview_message "Odstranite navlako">
 <!ENTITY firstrun_readerview_subtext "Uporabite bralni pogled in članki bodo prijetnejši za branje \u2014 tudi kadar ste brez povezave.">
 
 <!-- Localization note (firstrun_devices_title): This is a casual way of addressing the user, somewhat referring to their online identity (which would include other devices, Firefox usage, accounts, etc). -->
@@ -372,6 +372,8 @@
 
 <!ENTITY pref_media_autoplay_enabled "Samodejno predvajanje">
 <!ENTITY pref_media_autoplay_enabled_summary "Določite, ali lahko spletne strani samodejno predvajajo videe in druge vsebine">
+<!ENTITY pref_media_autoplay_allow "Dovoli samodejno predvajanje">
+<!ENTITY pref_media_autoplay_block "Zavrni samodejno predvajanje">
 <!ENTITY pref_zoom_force_enabled "Vedno omogoči povečavo">
 <!ENTITY pref_zoom_force_enabled_summary "Vsili povečavo, tako da je mogoča na vsaki strani">
 <!ENTITY pref_voice_input "Glasovni vnos">
@@ -447,6 +449,11 @@
 <!ENTITY datareporting_crashreporter_title_short "Poročevalec o sesutju">
 <!ENTITY datareporting_wifi_title2 "Lokacijske storitve &vendorShortName;">
 <!ENTITY datareporting_wifi_geolocation_summary4 "Pomagajte organizaciji &vendorShortName; narisati zemljevid sveta! Objavljajte približne podatke o mobilnih in brezžičnih lokacijah vaše naprave za izboljšanje naše geolokacijske storitve.">
+<!-- Localization note (datareporting_notification_title ) : This will be the title
+     of the notification shown whenever the user has enabled data reporting and the stumbler
+     service is running. -->
+<!ENTITY datareporting_stumbler_notification_title "Lokacijske storitve &vendorShortName; so zagnane">
+
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -891,3 +898,15 @@ See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "Dodaj na domač zaslon">
 <!ENTITY pwa_continue_to_website "Nadaljuj na spletno stran">
 <!ENTITY pwa_onboarding_sumo "To stran lahko preprosto dodate na svoj domači zaslon za lažji dostop in hitrejše brskanje v načinu, podobnem aplikaciji.">
+
+<!-- Used by accessibility services to identify the play/pause buttons shown in the
+Picture-in-picture mini window -->
+<!ENTITY pip_play_button_title "Predvajaj">
+<!ENTITY pip_play_button_description "Nadaljuj predvajanje">
+<!ENTITY pip_pause_button_title "Ustavi">
+<!ENTITY pip_pause_button_description "Ustavi predvajanje">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY mls_notification_channel "Lokacijske storitve &vendorShortName;">
+<!ENTITY download_notification_channel "Prenosi">

@@ -58,7 +58,7 @@ permissions-exceptions-tracking-protection-desc = ఈ వెబ్‌సైట�
 ## Exceptions - Cookies
 
 permissions-exceptions-cookie-window =
-    .title = మినహాయింపులు - కుకీలు మరియు సైటు డేటా
+    .title = మినహాయింపులు - కుకీలు, సైటు డేటా
     .style = { permissions-window.style }
 
 ## Exceptions - Pop-ups
@@ -93,6 +93,8 @@ permissions-exceptions-autoplay-media-window =
 permissions-site-notification-window =
     .title = అమరికలు - గమనింపుల అనుమతులు
     .style = { permissions-window.style }
+permissions-site-notification-disable-label =
+    .label = గమనింపులను అనుమతించమని అడిగే అభ్యర్థనలను నిరోధించు
 
 ## Site Permissions - Location
 

@@ -38,14 +38,29 @@ left instead of right. -->
 <!ENTITY  closeSelectedTabs.label            "Tampar los onglets seleccionats">
 <!ENTITY  closeSelectedTabs.accesskey        "T">
 
+<!ENTITY  pinSelectedTabs.label              "Penjar los onglets">
+<!-- Pin Tab and Pin Selected Tabs have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  pinSelectedTabs.accesskey          "P">
+<!ENTITY  unpinSelectedTabs.label            "Despenjar los onglets">
+<!-- Unpin Tab and Unpin Selected Tabs have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  unpinSelectedTabs.accesskey        "j">
+<!-- Reload Tab and Reload Selected Tabs have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  reloadSelectedTabs.label           "Recargar los onglets seleccionats">
+<!ENTITY  reloadSelectedTabs.accesskey       "R">
+<!ENTITY  bookmarkSelectedTabs.label         "Marcar aquestes onglets…">
+<!ENTITY  bookmarkSelectedTabs.accesskey     "c">
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
 that this is a lightweight and reversible action that keeps your tab where you
 can reach it easily. -->
-<!ENTITY  pinTab.label                       "Espingolar aqueste onglet">
+<!ENTITY  pinTab.label                       "Penjar l’onglets">
 <!ENTITY  pinTab.accesskey                   "p">
-<!ENTITY  unpinTab.label                     "Espingolar aqueste onglet">
+<!ENTITY  unpinTab.label                     "Despenjar l’onglet">
 <!ENTITY  unpinTab.accesskey                 "p">
 <!ENTITY  sendTabToDevice.label              "Enviar l'onglet al periferic">
 <!ENTITY  sendTabToDevice.accesskey          "D">
@@ -65,7 +80,6 @@ can reach it easily. -->
 <!ENTITY  undoCloseTab.accesskey             "u">
 <!ENTITY  closeTab.label                     "Tampar l'onglet">
 <!ENTITY  closeTab.accesskey                 "T">
-
 <!ENTITY  hiddenTabs.label                   "Onglets amagats">
 
 <!ENTITY  listAllTabs.label      "Far la lista de totes los onglets">
@@ -182,7 +196,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarksMenu.label "Marcapaginas">
 <!ENTITY bookmarksMenu.accesskey "M">
 <!ENTITY bookmarkThisPageCmd.label "Marcar aquesta pagina">
-<!ENTITY editThisBookmarkCmd.label "Modificar aqueste marcapaginas">
+<!ENTITY editThisBookmarkCmd.label "Modificar aqueste marcapagina">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
 
 <!ENTITY subscribeToPageMenupopup.label "S'abonar a aquesta pagina">
@@ -215,6 +229,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY urlbar.defaultNotificationAnchor.tooltip         "Mostrar la notificacion">
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "Mostrar la demanda de geolocalizacion">
+<!ENTITY urlbar.autoplayNotificationAnchor.tooltip        "Dobrir lo panèl de lectura automatica">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "Mostrar lo messatge d'installation del modul">
 <!ENTITY urlbar.canvasNotificationAnchor.tooltip          "Gerir las permission d’extraccion de canvas">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "Mostrar lo messatge sus l'emmagazinatge fòra linha">
@@ -223,7 +238,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "Gerir las notificacions per aqueste site">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Gardar las donadas dins un emmagazinatge permanent">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Lo navegador es contrarotlat a distància">
-
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Dobrir lo panèl d’identificacion">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Actualament, partejatz vòstra camèra o vòstre microfòn amb aqueste site">
@@ -243,6 +257,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Avètz blocat las notificacions per aquel site.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Avètz empachat aquel site de gardar de biais persistent de donadas.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Avètz blocat la fenèstras surgentas per aqueste site.">
+<!ENTITY urlbar.autoplayMediaBlocked.tooltip     "Avètz blocat la lectura automatica dels mèdias amb son per aqueste site.">
 <!ENTITY urlbar.canvasBlocked.tooltip            "Avètz empachat aqueste site de traire d’informacions de canvas.">
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "Avètz blocat l’utilizacion d’Adobe Flash en aqueste site.">
 <!ENTITY urlbar.midiBlocked.tooltip              "Avètz blocat l’accès MIDI per aqueste site web.">
@@ -301,6 +316,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY webDeveloperMenu.label       "Desvolopaire web">
 <!ENTITY webDeveloperMenu.accesskey   "w">
 
+
 <!ENTITY inspectContextMenu.label     "Examinar l'element">
 <!ENTITY inspectContextMenu.accesskey "x">
 
@@ -310,6 +326,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fileMenu.accesskey       "F">
 <!ENTITY newUserContext.label             "Onglet contèxtual novèl">
 <!ENTITY newUserContext.accesskey         "B">
+<!ENTITY manageUserContext.label          "Gerir los contenidors">
+<!ENTITY manageUserContext.accesskey      "o">
 <!ENTITY newNavigatorCmd.label        "Fenèstra novèla">
 <!ENTITY newNavigatorCmd.key        "N">
 <!ENTITY newNavigatorCmd.accesskey      "n">
@@ -398,7 +416,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Dobrir las preferéncias de sincronizacion">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Connectatz-vos per veire una lista d'onglets dels vòstres autres periferics.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Cal verificar vòstre compte.">
-<!ENTITY appMenuRemoteTabs.signin.label "Començar la session de Sync">
+<!ENTITY appMenuRemoteTabs.signin.label "Se connectar a Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Gerir los periferics…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Veire los onglets sincronizats dins la barra laterala">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Connectar un autre periferic">
@@ -412,8 +430,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (customizeMenu.addToOverflowMenu.label,
      customizeMenu.pinToOverflowMenu.label, customizeMenu.unpinFromOverflowMenu.label)
      The overflow menu is the menu that appears if you click the chevron (>> button)
-     in the location bar. These labels are only used in Photon, where you can put
-     items into this menu permanently (pinned). -->
+     in the location bar. -->
 <!ENTITY customizeMenu.addToOverflowMenu.label "Apondre al menú desbordament">
 <!ENTITY customizeMenu.addToOverflowMenu.accesskey "M">
 <!ENTITY customizeMenu.moveToToolbar.label "Desplaçar cap a la barra d'aisinas">
@@ -425,6 +442,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      keys.  -->
 <!ENTITY customizeMenu.moveToPanel.label "Desplaçar cap al menú">
 <!ENTITY customizeMenu.moveToPanel.accesskey "D">
+<!-- LOCALIZATION NOTE (customizeMenu.pinToOverflowMenu.accesskey)
+     can appear on the same context menu as menubarCmd and personalbarCmd,
+     so they should have different access keys.  -->
 <!ENTITY customizeMenu.pinToOverflowMenu.label "Penjar al menú de desbordament">
 <!ENTITY customizeMenu.pinToOverflowMenu.accesskey "P">
 <!ENTITY customizeMenu.unpinFromOverflowMenu.label "Levar del menú de desbordament">
@@ -612,6 +632,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hidePluginCmd.label          "Amagar aqueste plugin">
 <!ENTITY hidePluginCmd.accesskey      "g">
 <!ENTITY copyLinkCmd.label            "Copiar l'adreça del ligam">
+<!-- LOCALIZATION NOTE (copyLinkCmd.accesskey): The access keys for "Copy Link
+Location" and "Copy Email Address" should be the same if possible; the two
+context menu items are mutually exclusive. -->
 <!ENTITY copyLinkCmd.accesskey        "C">
 <!ENTITY copyImageCmd.label           "Copiar l'adreça de l'imatge">
 <!ENTITY copyImageCmd.accesskey       "o">
@@ -622,6 +645,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY copyAudioURLCmd.label        "Copiar l'URL del fichièr àudio">
 <!ENTITY copyAudioURLCmd.accesskey    "o">
 <!ENTITY copyEmailCmd.label           "Copiar l'adreça electronica">
+<!-- LOCALIZATION NOTE (copyEmailCmd.accesskey): The access keys for "Copy Link
+Location" and "Copy Email Address" should be the same if possible; the two
+context menu items are mutually exclusive. -->
 <!ENTITY copyEmailCmd.accesskey       "e">
 <!ENTITY thisFrameMenu.label              "Aqueste quadre">
 <!ENTITY thisFrameMenu.accesskey          "d">
@@ -757,8 +783,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY spellAddDictionaries.label "Apondre de diccionaris…">
 <!ENTITY spellAddDictionaries.accesskey "A">
 
+<!-- LOCALIZATION NOTE (editBookmark.panel.width): width of the bookmark panel.
+     Should be large enough to fully display the Done and Cancel/
+     Remove Bookmark buttons. -->
+<!ENTITY editBookmark.panel.width                    "26em">
 <!ENTITY editBookmark.done.label                     "Acabar">
 <!ENTITY editBookmark.removeBookmark.accessKey       "R">
+
+<!ENTITY editBookmark.showForNewBookmarks.label       "Mostrar l’editor en enregistrant">
+<!ENTITY editBookmark.showForNewBookmarks.accesskey   "M">
 
 <!-- LOCALIZATION NOTE (identity.securityView.label)
      This is the header of the security subview in the Site Identity panel. -->
@@ -799,13 +832,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.removeCertException.label "Suprimir l'excepcion">
 <!ENTITY identity.removeCertException.accesskey "L">
 
-<!ENTITY identity.moreInfoLinkText2 "que lo detentor n'es">
+<!ENTITY identity.moreInfoLinkText2 "Mai d’informacions">
 
 <!ENTITY identity.clearSiteData "Escafar los cookies e las donadas de site…">
 
 <!ENTITY identity.permissions "Permissions">
 <!ENTITY identity.permissionsEmpty "Avètz donat pas cap de permission espaciala a aquel site.">
 <!ENTITY identity.permissionsReloadHint "Benlèu deuriatz actualizar la pagina per que s'apliquen los cambiaments.">
+
+<!ENTITY identity.permissionsPreferences.tooltip "Dobrir las preferéncias d’autorizacions">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
@@ -850,7 +885,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncedTabs.context.managedevices.accesskey          "D">
 
 
-<!ENTITY syncBrand.shortName.label    "Onglets d'autres aparelhs">
+<!ENTITY syncBrand.shortName.label    "Sync">
 
 <!ENTITY syncSignIn.label             "Se connectar a &syncBrand.shortName.label;">
 <!ENTITY syncSignIn.accesskey         "Y">
@@ -905,8 +940,42 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.audioCapture.label "L’àudio de l’onglet serà partejat.">
 <!ENTITY getUserMedia.allWindowsShared.message "L'ensemble de las fenèstras visiblas sus vòstre ecran seràn partejadas.">
 
+<!ENTITY trackingProtection.on "Proteccion contra lo seguiment : ACTIVADA">
+<!ENTITY trackingProtection.off "Proteccion contra lo seguiment : DESACTIVADA">
+
+<!ENTITY contentBlocking.title "Blocatge de contengut">
+<!ENTITY contentBlocking.detected "Contengut blocable detectat sus aqueste site.">
+<!ENTITY contentBlocking.notDetected "Cap de contengut blocable detectat sus aquesta pagina.">
+<!ENTITY contentBlocking.disabled.label "Desactivat">
+<!ENTITY contentBlocking.disabled.tooltip "Avètz desactivat lo blocatge de contengut.">
+<!ENTITY contentBlocking.exception.tooltip "Avètz desactivat lo blocatge de contengut per aqueste site.">
+
+<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.blocked.label):
+     This label signals that this type of content blocking is turned
+     ON and is successfully blocking malicious/slow content, so this is
+     a positive thing. It forms the end of the (imaginary) sentence
+     "Slow-Loading Trackers [are] Blocked"-->
+<!ENTITY contentBlocking.fastBlock.blocked.label "Blocats">
+<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.add.label):
+     This is displayed as a link to preferences, where the user can add
+     this specific type of content blocking. When this text is shown
+     the type of content blocking is currently not enabled. -->
+<!ENTITY contentBlocking.fastBlock.add.label "Apondre un blocatge…">
+
+<!ENTITY contentBlocking.trackingProtection.label "Traçadors">
+<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
+     This label signals that this type of content blocking is turned
+     ON and is successfully blocking malicious/slow content, so this is
+     a positive thing. It forms the end of the (imaginary) sentence
+     "Trackers [are] Blocked"-->
+<!ENTITY contentBlocking.trackingProtection.blocked.label "Blocats">
+<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.add.label):
+     This is displayed as a link to preferences, where the user can add
+     this specific type of content blocking. When this text is shown
+     the type of content blocking is currently not enabled. -->
+<!ENTITY contentBlocking.trackingProtection.add.label "Apondre un blocatge…">
+
 <!ENTITY trackingProtection.title "Proteccion contra lo seguiment">
-<!ENTITY trackingProtection.tooltip "Dobrir las preferéncias de proteccion contra lo seguiment">
 <!ENTITY trackingProtection.detectedBlocked3 "&brandShortName; a blocat d'elements de la pagina que pòdon pistar vòstra navegacion.">
 <!ENTITY trackingProtection.detectedNotBlocked3 "Aquel site compren d'elements que pòdon pistar vòstra navegacion. Avètz desactivat la proteccion.">
 <!ENTITY trackingProtection.notDetected3 "Pas cap d'element de seguiment es estat detectat sus aquela pagina.">
@@ -922,6 +991,36 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY trackingProtection.unblockPrivate.accesskey "D">
 <!ENTITY trackingProtection.block2.label "Activar la proteccion">
 <!ENTITY trackingProtection.block2.accesskey "v">
+
+<!ENTITY trackingProtection.tooltip "Dobrir las preferéncias de proteccion contra lo seguiment">
+<!ENTITY trackingProtection.detectedBlocked4 "&brandShortName; bloca d’elements d’aquesta pagina que poirián pistar vòstra navigacion.">
+<!ENTITY trackingProtection.detectedNotBlocked5 "&brandShortName; a detectat d’elements que poirián pistar vòstra navigacion.">
+<!ENTITY trackingProtection.detectedException "&brandShortName; bloca d’elements d’aquesta pagina que poirián pistar vòstra navigacion. Avètz desactivat la proteccion per aqueste site.">
+<!ENTITY trackingProtection.notDetected5 "Pas cap d'element de seguiment es estat detectat sus aquela pagina.">
+<!ENTITY trackingProtection.notDetectedException "Pas cap d'element de seguiment es estat detectat sus aquela pagina. Avètz desactivat la proteccion per aqueste site.">
+
+<!ENTITY trackingProtection.reloadRequired2 "Avètz activat la proteccion contra lo seguiment. Actualizatz la pagina per blocar totes los traçadors.">
+
+<!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in NON-private browsing mode. -->
+<!ENTITY trackingProtection.unblock3.label "Desactivar per aqueste site">
+<!ENTITY trackingProtection.unblock3.accesskey "D">
+<!ENTITY trackingProtection.unblock4.label "Desactivar lo blocatge per aqueste site">
+<!ENTITY trackingProtection.unblock4.accesskey "D">
+<!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in PRIVATE browsing mode. -->
+<!ENTITY trackingProtection.unblockPrivate3.label "Desactivar per aquesta session">
+<!ENTITY trackingProtection.unblockPrivate3.accesskey "D">
+<!ENTITY trackingProtection.block4.label "Activar per aqueste site">
+<!ENTITY trackingProtection.block4.accesskey "A">
+<!ENTITY trackingProtection.unblockPrivate4.label "Desactivar temporàriament lo blocatge">
+<!ENTITY trackingProtection.unblockPrivate4.accesskey "D">
+<!ENTITY trackingProtection.block5.label "Activar lo blocatge per aqueste site">
+<!ENTITY trackingProtection.block5.accesskey "A">
+<!ENTITY trackingProtection.reload2.label "Actualizar la pagina">
+<!ENTITY trackingProtection.reload2.accesskey "A">
 
 <!ENTITY pluginNotification.showAll.label "Afichar tot">
 <!ENTITY pluginNotification.showAll.accesskey "f">
@@ -1024,6 +1123,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY sendToDevice.syncNotReady.label "Sincronisacion dels periferics…">
 
 <!ENTITY pageAction.shareUrl.label "Partejar">
+
+<!ENTITY pageAction.shareMore.label "Mai…">
 
 <!ENTITY libraryButton.tooltip "Veire l'istoric, salvar los marcapaginas, e mai">
 

@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -137,20 +129,11 @@ is-not-default = { -brand-short-name } mačči d iminig-inek amezwer
 set-as-my-default-browser =
     .label = Sbadut d amezwar…
     .accesskey = G
-startup-page = Deg tnekra n { -brand-short-name }
-    .accesskey = m
-startup-user-homepage =
-    .label = Sken asebter-iw agejdan 
-startup-blank-page =
-    .label = Sken asebter ilem
-startup-prev-session =
-    .label = Sken iccaren ineggura akked isfuyla yettusqedcen 
 startup-restore-previous-session =
     .label = Err-d tiɣimit izrin
     .accesskey = s
 disable-extension =
     .label = Sens aseɣzif
-home-page-header = Asebter agejdan
 tabs-group-header = Iccaren
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab yessezray-d iccaren n umizzwer yettwasqedcen melmi kan
@@ -162,10 +145,10 @@ warn-on-close-multiple-tabs =
     .label = Lɣu ticki medlen deqs n yiccaren
     .accesskey = L
 warn-on-open-many-tabs =
-    .label = Lɣu-yid ticki ilukkez { -brand-short-name } ma ldin aṭas n yiccaren 
+    .label = Lɣu-yid ticki ilukkez { -brand-short-name } ma ldin aṭas n yiccaren
     .accesskey = L
 switch-links-to-new-tabs =
-    .label = Ticki ad ldiɣ aseɣwen deg iccer amaynut, ddu ɣur-s imir 
+    .label = Ticki ad ldiɣ aseɣwen deg iccer amaynut, ddu ɣur-s imir
     .accesskey = T
 show-tabs-in-taskbar =
     .label = Sken taskant n yiccaren deg ufeggag n twira n Windows
@@ -219,6 +202,9 @@ choose-language-description = Fren tutlayt tebɣiḍ i uskan n isebtar
 choose-button =
     .label = Fren…
     .accesskey = F
+choose-browser-language-description = Fren tutlayin i uskan n wumuɣen, iznan, akk d ilɣa seg { -brand-short-name }.
+confirm-browser-language-change-description = Ales asenker i tikelt nniḍen { -brand-short-name } i isnifal-agi
+confirm-browser-language-change-button = Seddu sakin alles tanekra
 translate-web-pages =
     .label = Suqel agbur web
     .accesskey = S
@@ -229,7 +215,7 @@ translate-exceptions =
     .label = Tisuraf…
     .accesskey = r
 check-user-spelling =
-    .label = Senqed taɣdira-inu mi ara ttaruɣ 
+    .label = Senqed taɣdira-inu mi ara ttaruɣ
     .accesskey = q
 
 ## General Section - Files and Applications
@@ -251,7 +237,7 @@ download-choose-folder =
            *[other] u
         }
 download-always-ask-where =
-    .label = Suter yal tikelt anida ad ttwakelsen ifuyla 
+    .label = Suter yal tikelt anida ad ttwakelsen ifuyla
     .accesskey = S
 applications-header = Isnasen
 applications-description = Fren amek ad yeddu { -brand-short-name } akked ifuyla i d-saliḍ akked isnasen i tseqdaceḍ m'ara tettinigeḍ.
@@ -270,7 +256,6 @@ play-drm-content =
 play-drm-content-learn-more = Issin ugar
 update-application-title = Ileqman n { -brand-short-name }
 update-application-description = Ḥrez { -brand-short-name } yettwalqem i tmellit ifazen, arkad, akked tɣellist.
-update-application-info = Lqem { $version } <a>D acu i d amaynut</a>
 update-application-version = Lqem { $version } <a data-l10n-name="learn-more">D acu i d amaynut</a>
 update-history =
     .label = Sken-d amazray n ulqqem…
@@ -306,7 +291,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Azal afellay n ukala n ugbur
     .accesskey = Y
 performance-limit-content-process-enabled-desc = Ikalan n ugbur-nniḍen zemren ad qaεḍen ugar tamellit di lawan n useqdec n waṭas acaren, maca akka ad iseqdec aṭas n tkatut.
-performance-limit-content-process-disabled-desc = Tzemreḍ kan ad tesnifleḍ amḍan n ugbur n ukala akked ugetakala { -brand-short-name }. <a>Issin amek ad tsneqdeḍ ma yella agetakala yermed</a>
 performance-limit-content-process-blocked-desc = Tzemreḍ kan ad tesnifleḍ amḍan n ugbur n ukala akked ugetakala { -brand-short-name }. <a data-l10n-name="learn-more">Issin amek ad tsneqdeḍ ma yella agetakala yermed</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -377,9 +361,6 @@ use-current-pages =
 choose-bookmark =
     .label = Ticraḍ n isebtar…
     .accesskey = T
-restore-default =
-    .label = Err-d tawila n tazwara
-    .accesskey = E
 
 ## Search Section
 
@@ -624,6 +605,26 @@ sitedata-accept-third-party-visited-option =
     .label = Seg yismal ɣur terziḍ
 sitedata-accept-third-party-never-option =
     .label = Weṛǧin
+sitedata-allow-cookies-option =
+    .label = Qbel inagan n tuqqna d yisefka n usmel
+    .accesskey = Q
+sitedata-disallow-cookies-option =
+    .label = Sewḥel inagan n tuqna akked isefka n usmel
+    .accesskey = S
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Tawsit tewḥel
+    .accesskey = T
+sitedata-block-trackers-option-recommended =
+    .label = Ineḍfaren n wis kraḍ (yelha)
+sitedata-block-trackers-option =
+    .label = Ineḍfaren n wis kraḍ
+sitedata-block-unvisited-option =
+    .label = Inagan n tuqna seg yesmal web ur yettwarzan ara
+sitedata-block-all-third-parties-option =
+    .label = Inagan n tuqqna seg wis kraḍ
+sitedata-block-always-option =
+    .label = Akk inagan n tuqna (izmer ad yiṛeẓ ismal web)
 sitedata-clear =
     .label = Sfeḍ isefka…
     .accesskey = l
@@ -648,6 +649,44 @@ addressbar-locbar-openpage-option =
     .label = Iccaren yeldin
     .accesskey = I
 addressbar-suggestions-settings = Snifel ismenyifen i yisumar n umsedday n unadi
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = Asewḥel n ugbur
+content-blocking-desc = Sewḥel Agbur n tɣawsiwin tis kraḍ, am udellel neɣ tangalt, isaẓayen timing-inek, i k-iṭṭafaren deg web. Sagen iɣewwaren-inek i tunigin ifazen deg taɣellist.
+content-blocking-learn-more = Issin ugar
+content-blocking-restore-defaults =
+    .label = Err-d imezwar
+    .accesskey = r
+content-blocking-toggle-on =
+    .tooltiptext = Kkes asewḥel n ugbur
+content-blocking-toggle-off =
+    .tooltiptext = Rmed asewḥel n ugbur
+content-blocking-toggle-label-on = Yermed
+    .accesskey = m
+content-blocking-toggle-label-off = Insa
+    .accesskey = n
+content-blocking-category-label = Fren ayen ad tesweḥleḍ
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Sɛeṭṭel iferdisen n uḍfar
+    .accesskey = S
+content-blocking-fastblock-description = Sewḥel agbur wis kraḍ ittawin ugar n 5 n tsenatin i tulya.
+content-blocking-fastblock-option-enabled =
+    .label = Sewḥel yal tikelt
+content-blocking-fastblock-option-disabled =
+    .label = Ur sewḥal ara
+content-blocking-tracking-protection-label = Ineḍfaren
+    .accesskey = ḍ
+content-blocking-tracking-protection-description = Ad isewḥel akk ineḍfaṛen yettwasnen (Tamawt: Izmer daɣen ad isewḥel asali n kra n isebtar).
+content-blocking-tracking-protection-option-enabled =
+    .label = Sewḥal yal tikelt
+content-blocking-tracking-protection-option-pbm =
+    .label = Sewḥel deg usfaylu uslig kan
+content-blocking-tracking-protection-option-disabled =
+    .label = Werǧin ad teswaḥleḍ
+content-blocking-tracking-protection-change-blocklist = Snifel tabdart n usewḥel…
 
 ## Privacy Section - Tracking
 
@@ -700,9 +739,17 @@ permissions-notification-pause =
 permissions-block-autoplay-media =
     .label = Sewḥel ismal web si tɣuri tawurmant n yiferdisen imeslawen
     .accesskey = S
+permissions-block-autoplay-media-menu = I yismal yetturaren imesliyen s wudem awurman
 permissions-block-autoplay-media-exceptions =
     .label = Tisuraf…
     .accesskey = r
+autoplay-option-ask =
+    .label = Seqsay yal tikelt
+autoplay-option-allow =
+    .label = Sreg taɣuri tawurmant
+autoplay-option-dont =
+    .label = Ur tturar ara s wudem awurman
+permissions-autoplay-link = Issin ugar
 permissions-block-popups =
     .label = Sewḥel isfuyla udhimen
     .accesskey = S

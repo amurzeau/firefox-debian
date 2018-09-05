@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -137,20 +129,11 @@ is-not-default = { -brand-short-name } varsayılan tarayıcınız değil
 set-as-my-default-browser =
     .label = Varsayılan yap…
     .accesskey = a
-startup-page = { -brand-short-name } açıldığında
-    .accesskey = a
-startup-user-homepage =
-    .label = Giriş sayfamı göster
-startup-blank-page =
-    .label = Boş bir sayfa göster
-startup-prev-session =
-    .label = Son oturumdaki pencereleri ve sekmeleri göster
 startup-restore-previous-session =
     .label = Önceki oturumu geri yükle
     .accesskey = o
 disable-extension =
     .label = Eklentiyi etkisizleştir
-home-page-header = Giriş sayfası
 tabs-group-header = Sekmeler
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab, sekmeler arasında son kullanıldıkları sırayla atlasın
@@ -219,6 +202,9 @@ choose-language-description = Sayfaları hangi dilde görmeyi tercih ettiğinizi
 choose-button =
     .label = Seç…
     .accesskey = S
+choose-browser-language-description = { -brand-short-name } menülerini, iletilerini ve bildirimlerini gösterirken kullanılacak dilleri seçin.
+confirm-browser-language-change-description = Bu değişiklikleri uygulamak için { -brand-short-name } tarayıcısını yeniden başlatın
+confirm-browser-language-change-button = Uygula ve yeniden başlat
 translate-web-pages =
     .label = Web içeriğini çevir
     .accesskey = W
@@ -270,7 +256,6 @@ play-drm-content =
 play-drm-content-learn-more = Daha fazla bilgi al
 update-application-title = { -brand-short-name } güncellemeleri
 update-application-description = En yüksek performans, güvenilirlik ve güvenlik için { -brand-short-name } tarayıcınızı güncel tutmalısınız.
-update-application-info = Sürüm { $version } <a>Yeni neler var?</a>
 update-application-version = Sürüm { $version } <a data-l10n-name="learn-more">Yeni neler var?</a>
 update-history =
     .label = Güncelleme geçmişini göster…
@@ -306,7 +291,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = İçerik işlemi sınırı
     .accesskey = L
 performance-limit-content-process-enabled-desc = Daha fazla içerik işlemine izin verdiğinizde, çok sayıda sekme açıkken performans artar ama daha fazla bellek kullanılır.
-performance-limit-content-process-disabled-desc = İçerik işlemi sayısını değiştirmek yalnızca çok işlemli { -brand-short-name } ile mümkündür. <a>Çok işlemin etkin olmadığını kontrol etmeyi öğrenin</a>
 performance-limit-content-process-blocked-desc = İçerik işlemi sayısını değiştirmek yalnızca çok işlemli { -brand-short-name } ile mümkündür. <a data-l10n-name="learn-more">Çok işlemin etkin olmadığını kontrol etmeyi öğrenin</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -377,9 +361,6 @@ use-current-pages =
 choose-bookmark =
     .label = Yer imi kullan…
     .accesskey = m
-restore-default =
-    .label = Varsayılanı geri getir
-    .accesskey = r
 
 ## Search Section
 
@@ -649,6 +630,44 @@ addressbar-locbar-openpage-option =
     .accesskey = s
 addressbar-suggestions-settings = Arama motoru önerileri için tercihleri değiştir
 
+## Privacy Section - Content Blocking
+
+content-blocking-header = İçerik engelleme
+content-blocking-desc = Gezintinizi yavaşlatabilecek ve web’de sizi izleyebilecek reklamlar, kodlar gibi üçüncü taraf içeriklerini engelleyebilirsiniz. Koruma ve performans dengesini sağlamak için ayarlarınızı özelleştirebilirsiniz.
+content-blocking-learn-more = Daha fazla bilgi al
+content-blocking-restore-defaults =
+    .label = Varsayılanları geri yükle
+    .accesskey = r
+content-blocking-toggle-on =
+    .tooltiptext = İçerik engellemeyi kapat
+content-blocking-toggle-off =
+    .tooltiptext = İçerik engellemeyi aç
+content-blocking-toggle-label-on = AÇIK
+    .accesskey = A
+content-blocking-toggle-label-off = KAPALI
+    .accesskey = K
+content-blocking-category-label = Nelerin engelleneceğini seçin
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Yavaş takipçi öğeleri
+    .accesskey = Y
+content-blocking-fastblock-description = Yüklenmesi 5 saniyeden uzun süren üçüncü taraf içeriklerini engeller.
+content-blocking-fastblock-option-enabled =
+    .label = Her zaman engelle
+content-blocking-fastblock-option-disabled =
+    .label = Asla engelleme
+content-blocking-tracking-protection-label = Takipçiler
+    .accesskey = T
+content-blocking-tracking-protection-description = Bilinen tüm takipçileri engeller (Not: Bazı sayfaların yüklenmesini de engelleyebilir.)
+content-blocking-tracking-protection-option-enabled =
+    .label = Her zaman engelle
+content-blocking-tracking-protection-option-pbm =
+    .label = Yalnızca gizli pencerelerde engelle
+content-blocking-tracking-protection-option-disabled =
+    .label = Asla engelleme
+content-blocking-tracking-protection-change-blocklist = Engelleme listesini değiştir…
+
 ## Privacy Section - Tracking
 
 tracking-header = İzlenme Koruması
@@ -693,16 +712,23 @@ permissions-notification = Bildirimler
 permissions-notification-settings =
     .label = Ayarlar…
     .accesskey = r
-permissions-notification-link = Daha fazlası
+permissions-notification-link = Daha fazla bilgi al
 permissions-notification-pause =
     .label = { -brand-short-name } yeniden başlatılana dek bildirimleri duraklat
     .accesskey = b
 permissions-block-autoplay-media =
     .label = Web sitelerinin sesli içerikleri otomatik olarak oynatmasını engelle
     .accesskey = o
+permissions-block-autoplay-media-menu = Siteler otomatik olarak ses çalmak istediğinde
 permissions-block-autoplay-media-exceptions =
     .label = İstisnalar…
     .accesskey = s
+autoplay-option-ask =
+    .label = Her zaman sor
+autoplay-option-allow =
+    .label = Otomatik oynatmaya izin ver
+autoplay-option-dont =
+    .label = Otomatik oynatma
 permissions-block-popups =
     .label = Açılır pencereleri engelle
     .accesskey = n

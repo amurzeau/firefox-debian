@@ -20,7 +20,7 @@ languages-customize-remove =
     .label = Αφαίρεση
     .accesskey = Α
 languages-customize-select-language =
-    .placeholder = Επιλέξτε μια γλώσσα για προσθήκη…
+    .placeholder = Επιλέξτε γλώσσα προς προσθήκη…
 languages-customize-add =
     .label = Προσθήκη
     .accesskey = θ
@@ -36,3 +36,5 @@ languages-customize-add =
 #   $code (String) - Locale code of the locale (for example: "is", "es-CL")
 languages-code-format =
     .label = { $locale }  [{ $code }]
+languages-active-code-format =
+    .value = { languages-code-format.label }

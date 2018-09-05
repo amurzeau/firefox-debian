@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -137,20 +129,11 @@ is-not-default = { -brand-short-name } не є вашим типовим бра�
 set-as-my-default-browser =
     .label = Зробити типовим…
     .accesskey = т
-startup-page = При запуску { -brand-short-name }
-    .accesskey = з
-startup-user-homepage =
-    .label = Показувати домівку
-startup-blank-page =
-    .label = Показувати чисту сторінку
-startup-prev-session =
-    .label = Показувати вікна і вкладки з минулого разу
 startup-restore-previous-session =
     .label = Відновити попередній сеанс
     .accesskey = В
 disable-extension =
     .label = Вимкнути розширення
-home-page-header = Домівка
 tabs-group-header = Вкладки
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab перемикає між вкладками в порядку недавнього їх використання
@@ -222,6 +205,9 @@ choose-language-description = Оберіть бажану мову для пок
 choose-button =
     .label = Вибрати…
     .accesskey = а
+choose-browser-language-description = Оберіть мови для відображення меню, повідомлень та сповіщень { -brand-short-name }.
+confirm-browser-language-change-description = Перезапуск { -brand-short-name } для застосування змін
+confirm-browser-language-change-button = Застосувати й перезапустити
 translate-web-pages =
     .label = Перекладати веб вміст
     .accesskey = П
@@ -273,7 +259,6 @@ play-drm-content =
 play-drm-content-learn-more = Докладніше
 update-application-title = Оновлення { -brand-short-name }
 update-application-description = Використовуйте найновішу версію { -brand-short-name } для найкращої швидкодії, стабільності й безпеки.
-update-application-info = Версія { $version } <a>Що нового</a>
 update-application-version = Версія { $version } <a data-l10n-name="learn-more">Що нового</a>
 update-history =
     .label = Показати історію оновлень…
@@ -309,7 +294,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Обмеження процесів вмісту
     .accesskey = О
 performance-limit-content-process-enabled-desc = Додаткова кількість процесів вмісту може пришвидшити роботу при використанні багатьох вкладок, але при цьому споживатиметься більше пам'яті.
-performance-limit-content-process-disabled-desc = Зміна числа процесів вмісту можлива лише в багатопроцесній версії { -brand-short-name }. <a>Дізнайтеся, як перевірити, чи увімкнено багатопроцесність</a>
 performance-limit-content-process-blocked-desc = Зміна числа процесів вмісту можлива лише в багатопроцесній версії { -brand-short-name }. <a data-l10n-name="learn-more">Дізнайтеся, як перевірити, чи увімкнено багатопроцесність</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -380,9 +364,6 @@ use-current-pages =
 choose-bookmark =
     .label = Використати закладку…
     .accesskey = к
-restore-default =
-    .label = Відновити типову
-    .accesskey = д
 
 ## Search Section
 
@@ -616,7 +597,7 @@ sitedata-block-cookies-option =
 sitedata-keep-until = Зберігати доки
     .accesskey = г
 sitedata-keep-until-expire =
-    .label = Термін їх дії завершується
+    .label = Не завершиться термін дії
 sitedata-keep-until-closed =
     .label = { -brand-short-name } закрито
 sitedata-accept-third-party-desc = Приймати сторонні куки і дані сайтів
@@ -651,6 +632,44 @@ addressbar-locbar-openpage-option =
     .label = Відкриті вкладки
     .accesskey = в
 addressbar-suggestions-settings = Змінити налаштування пропозицій засобів пошуку
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = Блокування вмісту
+content-blocking-desc = Блокувати сторонній вміст, наприклад, рекламу чи код, що може сповільнювати роботу браузера і стежити за вами в інтернеті. Змінюйте налаштування для найкращого балансу захисту й швидкодії.
+content-blocking-learn-more = Докладніше
+content-blocking-restore-defaults =
+    .label = Відновити типові
+    .accesskey = т
+content-blocking-toggle-on =
+    .tooltiptext = Вимкнути блокування вмісту
+content-blocking-toggle-off =
+    .tooltiptext = Увімкнути блокування вмісту
+content-blocking-toggle-label-on = УВІМК
+    .accesskey = В
+content-blocking-toggle-label-off = ВИМК
+    .accesskey = И
+content-blocking-category-label = Оберіть елементи для блокування
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Повільні елементи стеження
+    .accesskey = П
+content-blocking-fastblock-description = Блокувати сторонній вміст, завантаження якого триває понад 5 секунд.
+content-blocking-fastblock-option-enabled =
+    .label = Завжди блокувати
+content-blocking-fastblock-option-disabled =
+    .label = Ніколи не блокувати
+content-blocking-tracking-protection-label = Стеження
+    .accesskey = С
+content-blocking-tracking-protection-description = Блокувати всі відомі елементи стеження (Примітка: може порушити завантаження деяких сторінок).
+content-blocking-tracking-protection-option-enabled =
+    .label = Завжди блокувати
+content-blocking-tracking-protection-option-pbm =
+    .label = Блокувати лише у приватних вікнах
+content-blocking-tracking-protection-option-disabled =
+    .label = Ніколи не блокувати
+content-blocking-tracking-protection-change-blocklist = Змінити список блокування…
 
 ## Privacy Section - Tracking
 
@@ -703,9 +722,16 @@ permissions-notification-pause =
 permissions-block-autoplay-media =
     .label = Заборонити веб-сайтам автоматично відтворювати медіа зі звуком
     .accesskey = З
+permissions-block-autoplay-media-menu = Для веб-сайтів, що автоматично відтворюють звук
 permissions-block-autoplay-media-exceptions =
     .label = Винятки…
     .accesskey = и
+autoplay-option-ask =
+    .label = Завжди питати
+autoplay-option-allow =
+    .label = Дозволити автовідтворення
+autoplay-option-dont =
+    .label = Не дозволяти автовідтворення
 permissions-block-popups =
     .label = Блокувати виринаючі вікна
     .accesskey = Б

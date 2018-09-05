@@ -3,26 +3,26 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 fonts-window =
-    .title = ਫੋਂਟ
+    .title = ਫੌਂਟ
 fonts-window-close =
     .key = w
 
 ## Font groups by language
 
-fonts-langgroup-header = ਇਸ ਲਈ ਫ਼ੋਂਟ
+fonts-langgroup-header = ਇਸ ਲਈ ਫੌਂਟ
     .accesskey = F
 fonts-langgroup-arabic =
     .label = ਅਰਬੀ
 fonts-langgroup-armenian =
-    .label = ਅਰਮਨੀਅਨ
+    .label = ਅਰਮੀਨੀਅਨ
 fonts-langgroup-bengali =
     .label = ਬੰਗਾਲੀ
 fonts-langgroup-simpl-chinese =
-    .label = ਸਧਾਰਨ ਚੀਨੀ
+    .label = ਚੀਨੀ (ਸਰਲ)
 fonts-langgroup-trad-chinese-hk =
-    .label = ਮੂਲ ਚੀਨੀ (ਹਾਂਗਕਾਂਗ)
+    .label = ਚੀਨੀ (ਰਵਾਇਤੀ, ਹਾਂਗਕਾਂਗ)
 fonts-langgroup-trad-chinese =
-    .label = ਮੂਲ ਚੀਨੀ (ਤਾਈਵਾਨ)
+    .label = ਚੀਨੀ (ਰਵਾਇਤੀ, ਤਾਇਵਾਨ)
 fonts-langgroup-cyrillic =
     .label = ਸੀਰਿਲਿਕ
 fonts-langgroup-devanagari =
@@ -40,11 +40,11 @@ fonts-langgroup-gurmukhi =
 fonts-langgroup-japanese =
     .label = ਜਾਪਾਨੀ
 fonts-langgroup-hebrew =
-    .label = ਹੈਬਰਿਊ
+    .label = ਹੀਬਰੂ
 fonts-langgroup-kannada =
     .label = ਕੰਨੜ
 fonts-langgroup-khmer =
-    .label = ਖਮੀਰ
+    .label = ਖਮੇਰ
 fonts-langgroup-korean =
     .label = ਕੋਰੀਆਈ
 # Translate "Latin" as the name of Latin (Roman) script, not as the name of the Latin language.
@@ -55,11 +55,11 @@ fonts-langgroup-malayalam =
 fonts-langgroup-math =
     .label = ਗਣਿਤ
 fonts-langgroup-odia =
-    .label = ਓੜੀਆ
+    .label = ਉੜੀਆ
 fonts-langgroup-sinhala =
     .label = ਸਿੰਹਾਲਾ
 fonts-langgroup-tamil =
-    .label = ਤਾਮਿਲ
+    .label = ਤਮਿਲ
 fonts-langgroup-telugu =
     .label = ਤੇਲਗੂ
 fonts-langgroup-thai =
@@ -69,28 +69,32 @@ fonts-langgroup-tibetan =
 fonts-langgroup-canadian =
     .label = ਕੈਨੇਡੀਅਨ
 fonts-langgroup-other =
-    .label = ਹੋਰ ਲਿਖਣ ਸਿਸਟਮ
+    .label = ਹੋਰ ਲਿਖਣ ਪ੍ਰਣਾਲੀਆਂ
 
 ## Default fonts and their sizes
 
 fonts-proportional-header = ਅਨੁਪਾਤੀ
     .accesskey = P
-fonts-proportional-size = ਆਕਾਰ
+fonts-default-serif =
+    .label = ਸੈਰਿਫ
+fonts-default-sans-serif =
+    .label = ਬਿਨਾਂ ਸੈਰਿਫ
+fonts-proportional-size = ਕੱਦ
     .accesskey = z
-fonts-serif = ਸੈਰੀਫ਼
+fonts-serif = ਸੈਰਿਫ਼
     .accesskey = S
-fonts-sans-serif = ਸਨਜ਼-ਸੈਰੀਫ਼
+fonts-sans-serif = ਬਿਨਾਂ-ਸੈਰਿਫ
     .accesskey = n
 fonts-monospace = ਮੋਨੋਸਪੇਸ
     .accesskey = M
-fonts-monospace-size = ਆਕਾਰ
+fonts-monospace-size = ਕੱਦ
     .accesskey = e
-fonts-minsize = ਘੱਟੋ-ਘੱਟ ਫ਼ੋਂਟ ਆਕਾਰ
+fonts-minsize = ਘੱਟੋ ਘੱਟ ਅੱਖਰ ਕੱਦ
     .accesskey = o
 fonts-minsize-none =
     .label = ਕੋਈ ਨਹੀਂ
 fonts-allow-own =
-    .label = ਸਫ਼ਿਆਂ ਨੂੰ ਉੱਤੇ ਦਿੱਤੀ ਮੇਰੀ ਚੋਣ ਦੀ ਬਜਾਏ ਆਪਣੇ ਖੁਦ ਦੇ ਫ਼ੋਂਟ ਚੁਣਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿਓ
+    .label = ਸਫ਼ਿਆਂ ਨੂੰ, ਉੱਪਰ ਕੀਤੀ ਤੁਹਾਡੀ ਚੋਣ ਦੀ ਬਜਾਏ ਆਪਣੇ ਖੁਦ ਦੇ ਅੱਖਰ ਚੁਣਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿਉ
     .accesskey = A
 
 ## Text Encodings
@@ -113,15 +117,17 @@ fonts-languages-fallback-name-ceiso =
 fonts-languages-fallback-name-cewindows =
     .label = ਕੇਂਦਰੀ ਯੂਰਪ, Microsoft
 fonts-languages-fallback-name-simplified =
-    .label = ਚੀਨੀ, ਸਧਾਰਨ
+    .label = ਚੀਨੀ, ਸਰਲ
 fonts-languages-fallback-name-traditional =
-    .label = ਚੀਨੀ, ਪੁਰਾਤਨ
+    .label = ਚੀਨੀ, ਰਵਾਇਤੀ
+fonts-languages-fallback-name-cyrillic =
+    .label = ਸਿਰਲਿਕ
 fonts-languages-fallback-name-greek =
     .label = ਗਰੀਕ
 fonts-languages-fallback-name-hebrew =
-    .label = ਹੈਬਰਿਊ
+    .label = ਹੀਬਰੂ
 fonts-languages-fallback-name-japanese =
-    .label = ਜਾਪਾਨੀ
+    .label = ਜਪਾਨੀ
 fonts-languages-fallback-name-korean =
     .label = ਕੋਰੀਆਈ
 fonts-languages-fallback-name-thai =
@@ -131,9 +137,10 @@ fonts-languages-fallback-name-turkish =
 fonts-languages-fallback-name-vietnamese =
     .label = ਵੀਅਤਨਾਮੀ
 fonts-languages-fallback-name-other =
-    .label = ਹੋਰ (ਪੱਛਮੀ ਯੂਰਪੀਅਨ ਨੂੰ ਛੱਡ ਕੇ)
-fonts-very-large-warning-title = ਵੱਡਾ ਘੱਟੋ-ਘੱਟ ਫ਼ੋਂਟ ਆਕਾਰ
-fonts-very-large-warning-accept = ਕਿਵੇਂ ਵੀ ਮੇਰੀਆਂ ਤਬਦੀਲੀਆਂ ਰੱਖੋ
+    .label = ਹੋਰ (ਪੱਛਮੀ ਯੂਰਪੀ ਸਮੇਤ)
+fonts-very-large-warning-title = ਵੱਡਾ ਘੱਟੋ-ਘੱਟ ਅੱਖਰ ਆਕਾਰ
+fonts-very-large-warning-message = ਤੁਸੀਂ ਘੱਟੋ-ਘੱਟ ਅੱਖਰ ਕੱਦ (੨੪ ਪਿਕਸਲਾਂ ਤੋਂ ਵੱਧ) ਦਾ ਬਹੁਤ ਵੱਡਾ ਕੱਦ ਚੁਣਿਆ ਹੈ। ਇਹ ਇਸ ਤਰ੍ਹਾਂ ਦੇ ਕੁੱਝ ਜਰੂਰੀ ਬਣਤਰ ਵਰਕਿਆਂ ਨੂੰ ਵਰਤਣਾ ਮੁਸ਼ਕਲ ਜਾਂ ਨਾਮੁਮਕਿਨ ਬਣਾ ਸਕਦਾ ਹੈ।
+fonts-very-large-warning-accept = ਕਿਸੇ ਵੀ ਤਰੀਕੇ ਮੇਰੇ ਬਦਲਾਅ ਰੱਖ ਲਿਉ
 # Variables:
 #   $name {string, "Arial"} - Name of the default font
 fonts-label-default =

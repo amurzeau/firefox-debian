@@ -2,9 +2,9 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY searchreset.tabtitle       "অনুসন্ধানের সেটিং পূর্বাবস্থায় ফিরিয়ে আনুন">
+<!ENTITY searchreset.tabtitle       "অনুসন্ধান সেটিং পুনরুদ্ধার করুন">
 
-<!ENTITY searchreset.pageTitle      "আপনার অনুসন্ধানের সেটিং পূর্বাবস্থায় ফিরিয়ে আনা হবে কি?">
+<!ENTITY searchreset.pageTitle      "আপনার অনুসন্ধান সেটিং পুনরুদ্ধার করা হবে কি?">
 
 <!ENTITY searchreset.pageInfo1      "আপনার অনুসন্ধান সেটিং সম্ভবত হালনাগাদ নয়। &brandShortName; আপনার ডিফল্ট অনুসন্ধান সেটিং পুনরুদ্ধার করতে পারবে।">
 
@@ -18,7 +18,7 @@ searchreset.afterlink.pageInfo): these two string are used respectively
 before and after the "Settings page" link (searchreset.link.pageInfo2).
 Localizers can use one of them, or both, to better adapt this sentence to
 their language. -->
-<!ENTITY searchreset.beforelink.pageInfo2 "এই সেটিংসমূহ আপনি যেকোন সময় পরিবর্তন করতে পারবেন ">
+<!ENTITY searchreset.beforelink.pageInfo2 "এই সেটিং আপনি যেকোন সময় পরিবর্তন করতে পারবেন ">
 <!ENTITY searchreset.afterlink.pageInfo2  ".">
 
 <!ENTITY searchreset.link.pageInfo2       "সেটিং পাতা">

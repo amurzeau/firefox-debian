@@ -372,6 +372,8 @@
 
 <!ENTITY pref_media_autoplay_enabled "Автоойнатуды рұқсат ету">
 <!ENTITY pref_media_autoplay_enabled_summary "Веб сайттар видеолар және басқа медиа құрамасын автоойнату мүмкіндігін басқару">
+<!ENTITY pref_media_autoplay_allow "Автоойнатуды рұқсат ету">
+<!ENTITY pref_media_autoplay_block "Автоойнатуды бұғаттау">
 <!ENTITY pref_zoom_force_enabled "Масштабты әрқашан іске қосу">
 <!ENTITY pref_zoom_force_enabled_summary "Баптауды үстінен жазу, масштаб әр бетте жасайтын болады">
 <!ENTITY pref_voice_input "Дыбыстық енгізу">
@@ -447,6 +449,11 @@
 <!ENTITY datareporting_crashreporter_title_short "Құлау хабаршысы">
 <!ENTITY datareporting_wifi_title2 "&vendorShortName; орналасу қызметтері">
 <!ENTITY datareporting_wifi_geolocation_summary4 "&vendorShortName; ұйымына дүниежүзін картаға салуды көмектесіңіз! Біздің геолокация қызметтерін жақсарту үшін, өз құрылғыңыздың Wi-Fi және ұялы желісінің жуықталған орналасуымен бөлісіңіз.">
+<!-- Localization note (datareporting_notification_title ) : This will be the title
+     of the notification shown whenever the user has enabled data reporting and the stumbler
+     service is running. -->
+<!ENTITY datareporting_stumbler_notification_title "&vendorShortName; орналасу қызметі орындалуда">
+
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -888,3 +895,15 @@ See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "Үй бетіне қосу">
 <!ENTITY pwa_continue_to_website "Веб-сайтқа оралу">
 <!ENTITY pwa_onboarding_sumo "Бұл веб-сайтты жылдам қатынау және қолданба тектес режимде жылдам шолу мақсатымен үй бетіңізге қосуға болады.">
+
+<!-- Used by accessibility services to identify the play/pause buttons shown in the
+Picture-in-picture mini window -->
+<!ENTITY pip_play_button_title "Ойнату">
+<!ENTITY pip_play_button_description "Ойнатуды жалғастыру">
+<!ENTITY pip_pause_button_title "Аялдату">
+<!ENTITY pip_pause_button_description "Ойнатуды аялдату">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY mls_notification_channel "&vendorShortName; орналасулар қызметі">
+<!ENTITY download_notification_channel "Жүктемелер">

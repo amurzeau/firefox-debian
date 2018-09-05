@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -83,6 +75,12 @@ restart-later = नंतर पुनःसुरु करा
 ## Variables:
 ##   $name (String): name of the extension
 
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = एक विस्तार, <img data-l10n-name="icon"/> { $name }, आपले मुख्य पृष्ठ नियंत्रित करत आहे.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = एक विस्तारण, <img data-l10n-name="icon"/> { $name }, आपले नवीन टॅब पृष्ठ संचालित करत आहे.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = एक एक्स्टेंशन, <img data-l10n-name="icon"/> { $name }, ने आपले शोध इंजिन सेट केले आहे.
@@ -92,6 +90,9 @@ extension-controlled-privacy-containers = एक विस्तार, <img dat
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = एक एक्स्टेंशन, <img data-l10n-name="icon"/> { $name }, ट्रॅकिंग संरक्षण नियंत्रित करत आहे.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = एक विस्तारण, <img data-l10n-name="icon"/> { $name }, { -brand-short-name } इंटरनेट ला जोडणी कसे करते ते संचालित करत आहे.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -128,17 +129,11 @@ is-not-default = { -brand-short-name } सध्या आपले पूर्
 set-as-my-default-browser =
     .label = पूर्वनिर्धारित बनवा…
     .accesskey = D
-startup-page = जेव्हा { -brand-short-name } सुरू होते
+startup-restore-previous-session =
+    .label = मागील सत्र पूर्वस्थितीत आणा
     .accesskey = s
-startup-user-homepage =
-    .label = माझे मुख्य पृष्ठ दाखवा
-startup-blank-page =
-    .label = रिक्त पृष्ठ दाखवा
-startup-prev-session =
-    .label = शेवटच्या वेळे पासून माझ्या विंडोज आणि टॅब्स दाखवा
 disable-extension =
     .label = वाढीव कार्यक्रम निष्क्रिय करा
-home-page-header = मुख्य पृष्ठ
 tabs-group-header = टॅब्ज
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab वापरलेल्या क्रमामध्ये टॅब्स बदली करते
@@ -207,6 +202,9 @@ choose-language-description = पृष्ठ दाखवण्याकरि�
 choose-button =
     .label = निवडा…
     .accesskey = o
+choose-browser-language-description = { -brand-short-name } चा मेनू, संदेश, आणि सुचना दर्शवणारी भाषा ठरवा.
+confirm-browser-language-change-description = हे बदल लागू करण्यासाठी { -brand-short-name } पुन्हा सुरु करा
+confirm-browser-language-change-button = लागू करून पुन्हा सुरु करा
 translate-web-pages =
     .label = वेब अंतर्भुत माहिती भाषांतरीत करा
     .accesskey = T
@@ -258,7 +256,6 @@ play-drm-content =
 play-drm-content-learn-more = आणखी शिका
 update-application-title = { -brand-short-name } सुधारणा
 update-application-description = सर्वोत्तम कामगिरी, स्थिरता आणि सुरक्षिततेसाठी { -brand-short-name } अद्ययावत ठेवा.
-update-application-info = आवृत्ती{ $version } <a>काय नवीन आहे</a>
 update-application-version = आवृत्ती{ $version } <a data-l10n-name="learn-more">काय नवीन आहे</a>
 update-history =
     .label = अद्ययावत इतिहास दाखवा…
@@ -294,7 +291,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = मजकूर प्रक्रिया मर्यादा
     .accesskey = l
 performance-limit-content-process-enabled-desc = अनेक टॅब वापरल्यास, अतिरिक्त मजकूर प्रक्रिया कार्यक्षमता वाढवू  शकतात, पण त्या अधिक मेमरी देखील वापरातील.
-performance-limit-content-process-disabled-desc = मजकूर प्रक्रियांची गणना बदलणे फक्त मल्टिप्रोसेस { -brand-short-name } सोबत शक्य आहे. <a>मल्टिप्रोसेस कार्यान्वित आहेत की नाही कसे तपासायचे ते जाणा</a>
 performance-limit-content-process-blocked-desc = मजकूर प्रक्रियांची गणना बदलणे फक्त मल्टिप्रोसेस { -brand-short-name } सोबत शक्य आहे. <a data-l10n-name="learn-more">मल्टिप्रोसेस कार्यान्वित आहेत की नाही कसे तपासायचे ते जाणा</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -323,6 +319,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = नेटवर्क प्रॉक्सी
+network-proxy-connection-description = { -brand-short-name } इंटरनेटशी जोडणी कशी करतो ते संरचीत करा.
 network-proxy-connection-learn-more = आणखी जाणा
 network-proxy-connection-settings =
     .label = सेटिंग्ज…
@@ -345,11 +342,11 @@ home-restore-defaults =
 home-mode-choice-default =
     .label = Firefox मुखपृष्ठ (पूर्वनिर्धारित)
 home-mode-choice-custom =
-    .label = सानुकूलीत URLs... 
+    .label = सानुकूलीत URLs...
 home-mode-choice-blank =
     .label = रिक्त पृष्ठ
 home-homepage-custom-url =
-    .placeholder = URL चिटकवा 
+    .placeholder = URL चिटकवा
 # This string has a special case for '1' and [other] (default). If necessary for
 # your language, you can add {$tabCount} to your translations and use the
 # standard CLDR forms, or only use the form for [other] if both strings should
@@ -364,9 +361,6 @@ use-current-pages =
 choose-bookmark =
     .label = वाचनखूणाचा वापर करा…
     .accesskey = B
-restore-default =
-    .label = पूर्वनिर्धारित स्थितीत आणा
-    .accesskey = R
 
 ## Search Section
 
@@ -566,6 +560,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = माझी ब्राऊजिंग व डाऊनलोड इतिहास लक्षात ठेवा
     .accesskey = b
+history-remember-browser-option =
+    .label = ब्राऊजिंग व डाऊनलोड इतिहास लक्षात ठेवा
+    .accesskey = b
 history-remember-search-option =
     .label = शोध व फॉर्म इतिहास लक्षात ठेवा
     .accesskey = f
@@ -582,18 +579,38 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = कुकीज आणि साईट डेटा
+sitedata-total-size-calculating = कॅश आणि साईट माहितीच्या आकाराची गणना करत आहे...
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = आपण साठवलेल्या कुकीज, साईट माहिती आणि कॅश सध्या { $value } { $unit } इतकी जागा डिस्कवर व्याप्त करत आहेत
 sitedata-learn-more = आणखी जाणा
 sitedata-accept-cookies-option =
     .label = संकेतस्थळावरून कुकीज आणि साईट डेटा स्वीकारा (शिफारस).
     .accesskey = A
+sitedata-block-cookies-option =
+    .label = कुकीज आणि साईट माहिती अवरोधित करा(संकेतस्थळ खंडित होऊ शकते)
+    .accesskey = B
 sitedata-keep-until = पर्यंत ठेवा
     .accesskey = u
+sitedata-keep-until-expire =
+    .label = ते कालबाह्य होतात
+sitedata-keep-until-closed =
+    .label = { -brand-short-name } बंद आहे
+sitedata-accept-third-party-desc = तृतीय-पक्ष कुकीज आणि साईट माहिती स्वीकारा.
+    .accesskey = y
 sitedata-accept-third-party-always-option =
     .label = नेहमी
 sitedata-accept-third-party-visited-option =
     .label = भेट दिलेल्यांमधून
 sitedata-accept-third-party-never-option =
     .label = कधीच नाही
+sitedata-clear =
+    .label = माहिती पुसा...
+    .accesskey = l
+sitedata-settings =
+    .label = डेटा व्यवस्थापित करा...
+    .accesskey = M
 sitedata-cookies-exceptions =
     .label = अपवाद…
     .accesskey = E
@@ -612,6 +629,44 @@ addressbar-locbar-openpage-option =
     .label = टॅब्स उघडा
     .accesskey = O
 addressbar-suggestions-settings = शोध इंजिनसाठी सूचना प्राधान्यता बदला
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = मजकूर अडवणी
+content-blocking-desc = आपले ब्राऊझिंग संथ करणारा व वेब भर आपला मागोवा घेणारा जाहिरात किंवा कोड सारखा त्रयस्थ मजकूर अडवा. आपले सेटिंग अनुकूल करून सुरक्षा आणि कार्यक्षमता यांचा सर्वोत्तम समतोल साधा.
+content-blocking-learn-more = अधिक जाणून घ्या
+content-blocking-restore-defaults =
+    .label = पूर्वनिर्धारित स्थितीत आणा
+    .accesskey = R
+content-blocking-toggle-on =
+    .tooltiptext = मजकूर अवरोध बंद करा
+content-blocking-toggle-off =
+    .tooltiptext = मजकूर अवरोध सुरु करा
+content-blocking-toggle-label-on = सुरु
+    .accesskey = O
+content-blocking-toggle-label-off = बंद
+    .accesskey = O
+content-blocking-category-label = काय अडवायचे ते निवडा
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = मागोवा घटक मंद करा
+    .accesskey = S
+content-blocking-fastblock-description = लोड होण्यास 5 सेकंदाहून अधिक वेळ घेणारा त्रयस्थ मजकूर अवरोधित करा.
+content-blocking-fastblock-option-enabled =
+    .label = नेहमी आडवा
+content-blocking-fastblock-option-disabled =
+    .label = कधीच अडवू नका
+content-blocking-tracking-protection-label = मागोवा घेणारे
+    .accesskey = T
+content-blocking-tracking-protection-description = सर्व ज्ञात मागोवा घेणारे घटक अडवते(टीप: काही पृष्ठ लोड होणार नाहीत).
+content-blocking-tracking-protection-option-enabled =
+    .label = नेहमी आडवा
+content-blocking-tracking-protection-option-pbm =
+    .label = फक्त खाजगी पटलामध्ये आडवा
+content-blocking-tracking-protection-option-disabled =
+    .label = कधीच अडवू नका
+content-blocking-tracking-protection-change-blocklist = अवरोधित सूची बदला…
 
 ## Privacy Section - Tracking
 
@@ -661,6 +716,19 @@ permissions-notification-link = आणखी जाणा
 permissions-notification-pause =
     .label = सूचना { -brand-short-name } पुन्हा सुरु होईपर्यंत स्थगित करा
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = संकेतस्थळांना स्वायत्ततेने ध्वनीसह मीडिया चालवण्यापासून रोखा
+    .accesskey = B
+permissions-block-autoplay-media-menu = स्वायत्ततेने ध्वनी चालवणाऱ्या संकेतस्थळांसाठी
+permissions-block-autoplay-media-exceptions =
+    .label = अपवाद…
+    .accesskey = E
+autoplay-option-ask =
+    .label = नेहमी विचारा
+autoplay-option-allow =
+    .label = ऑटोप्ले ला परवानगी द्या
+autoplay-option-dont =
+    .label = ऑटोप्ले करू नका
 permissions-block-popups =
     .label = पॉपअप पटल अडवा
     .accesskey = B
@@ -687,10 +755,19 @@ collection-health-report =
     .label = { -vendor-short-name } ला तांत्रिक व परस्परसंवाद माहिती पाठविण्यासाठी { -brand-short-name } ला परवानगी द्या
     .accesskey = r
 collection-health-report-link = आणखी जाणा
+collection-studies =
+    .label = { -brand-short-name } ला studies प्रस्थापित करून चालवण्याची परवानगी द्या
+collection-studies-link = { -brand-short-name } studies पहा
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = माहिती अहवाल देणे या बांधणी संरचनेमध्ये निष्क्रिय केलेले आहे
+collection-browser-errors =
+    .label = { -brand-short-name } ला { -vendor-short-name } यास ब्राऊजरच्या चुकांचा अहवाल(चुकीचे संदेश धरून) पाठवण्यास परवानगी द्या
+    .accesskey = b
 collection-browser-errors-link = आणखी जाणा
+collection-backlogged-crash-reports =
+    .label = आपल्यावतीने { -brand-short-name } ला बॅकलॉग क्रॅश अहवाल पाठवण्याची परवानगी दया
+    .accesskey = c
 collection-backlogged-crash-reports-link = आणखी जाणा
 
 ## Privacy Section - Security
