@@ -1,3 +1,17 @@
+firefox-esr (60.2.0esr-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2018-21, also known as:
+    CVE-2018-12377, CVE-2018-12378, CVE-2018-12376.
+
+  * debian/l10n/gen: Use iso-codes json data instead of XML when present.
+    Closes: #907611.
+
+  * widget/gtk/nsAppShell.cpp: Use remoting name for call to
+    gdk_set_program_class. Closes: #907574.
+
+ -- Mike Hommey <glandium@debian.org>  Thu, 06 Sep 2018 06:18:15 +0900
+
 firefox-esr (60.1.0esr-3) unstable; urgency=medium
 
   * debian/control*:
