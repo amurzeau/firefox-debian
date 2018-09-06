@@ -183,7 +183,9 @@ nsAppShell::Init()
         // option when program uses gdk_set_program_class().
         //
         // See https://bugzilla.gnome.org/show_bug.cgi?id=747634
-        gdk_set_program_class(gAppData->remotingName);
+        if (gAppData) {
+            gdk_set_program_class(gAppData->remotingName);
+        }
     }
 
 #ifdef MOZ_WIDGET_GTK
