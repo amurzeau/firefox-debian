@@ -93,8 +93,12 @@ Depends: ${shlibs:Depends},
          fontconfig,
          procps,
          debianutils (>= 1.16),
+%if USE_SYSTEM_SQLITE
          libsqlite3-0 (>= 3.7.12-1~),
+%endif
+%if USE_SYSTEM_NSS
          libnss3 (>= 2:3.34~)
+%endif
 Recommends: @LIBAVCODEC@
 Suggests: fonts-stix | otf-stix,
           fonts-lmodern,
