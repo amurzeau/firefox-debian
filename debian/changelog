@@ -1,3 +1,10 @@
+firefox-esr (60.2.0esr-1~deb9u2) stretch-security; urgency=medium
+
+  * debian/control*: Remove the sqlite and nss dependencies when not building
+    against the system libraries.
+
+ -- Mike Hommey <glandium@debian.org>  Fri, 07 Sep 2018 18:21:32 +0900
+
 firefox-esr (60.2.0esr-1~deb9u1) stretch-security; urgency=medium
 
   * New upstream release.
