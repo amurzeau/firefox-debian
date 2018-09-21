@@ -105,7 +105,8 @@ Suggests: fonts-stix | otf-stix,
           fonts-lmodern,
           libgssapi-krb5-2 | libkrb53,
           libcanberra0,
-          libgtk2.0-0
+          libgtk2.0-0,
+          pulseaudio
 %if TRANSITION
 Conflicts: iceweasel (<< 45)
 %endif
