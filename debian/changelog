@@ -1,3 +1,28 @@
+firefox-esr (60.2.1esr-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2018-23, also known as:
+    CVE-2018-12385, CVE-2018-12383.
+
+  * debian/control*:
+    - Remove the sqlite and nss dependencies when not building against the
+      system libraries.
+    - Enforce nss, nspr and sqlite dependencies to the same versions as
+      build dependencies. There are subtle non-ABI differences between
+      versions that Firefox might be relying on (be it features, behavior
+      changes/fixes, etc.) and can cause subtle problems when older
+      versions are used.
+    - Add a suggestion for pulseaudio.
+  * debian/rules, debian/control: Add libavcodec-extra* packages to the list
+    of recommends. Closes: #909130
+
+  * js/src/jit/BaselineJIT.h: Disable baseline JIT when SSE2 is not supported
+    at runtime. bz#1492064. Closes: #908396, #908449.
+  * gfx/2d/Swizzle.cpp: Use Swizzle fallback when SSE2 is not supported.
+    bz#1492065. Closes: #877445.
+
+ -- Mike Hommey <glandium@debian.org>  Sat, 22 Sep 2018 08:10:27 +0900
+
 firefox-esr (60.2.0esr-1) unstable; urgency=medium
 
   * New upstream release.
