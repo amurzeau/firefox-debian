@@ -62,8 +62,9 @@ Depends: ${shlibs:Depends},
          fontconfig,
          procps,
          debianutils (>= 1.16),
-         libsqlite3-0 (>= 3.7.12-1~),
-         libnss3 (>= 2:3.34~)
+         libsqlite3-0 (>= 3.22.0),
+         libnspr4 (>= 2:4.19~)
+         libnss3 (>= 2:3.36.4~)
 Recommends: libavcodec58 | libavcodec57 | libavcodec56 | libavcodec55 | libavcodec54 | libavcodec53
 Suggests: fonts-stix | otf-stix,
           fonts-lmodern,
