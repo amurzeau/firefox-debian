@@ -100,7 +100,7 @@ Depends: ${shlibs:Depends},
          libsqlite3-0 (>= @SQLITE_VERSION@),
 %endif
 %if USE_SYSTEM_NSPR
-         libnspr4 (>= 2:@NSPR_VERSION@~)
+         libnspr4 (>= 2:@NSPR_VERSION@~),
 %endif
 %if USE_SYSTEM_NSS
          libnss3 (>= 2:@NSS_VERSION@~)
