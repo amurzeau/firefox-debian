@@ -1,7 +1,26 @@
-firefox (62.0.2-1) UNRELEASED; urgency=medium
+firefox (62.0.2-1) unstable; urgency=medium
 
   * New upstream release.
   * Fixes for mfsa2018-22, also known as CVE-2018-12385.
+  * Ignore locale change events for the search service on shutdown.
+    bz#1489820. Closes: #908932.
+
+  * debian/control*:
+    - Remove the sqlite and nss dependencies when not building against the
+      system libraries.
+    - Enforce nss, nspr and sqlite dependencies to the same versions as
+      build dependencies. There are subtle non-ABI differences between
+      versions that Firefox might be relying on (be it features, behavior
+      changes/fixes, etc.) and can cause subtle problems when older
+      versions are used. Closes: #908225, #908520.
+    - Add a suggestion for pulseaudio.
+  * debian/rules, debian/control: Add libavcodec-extra* packages to the list
+    of recommends. Closes: #909130
+
+  * js/src/jit/BaselineJIT.h: Disable baseline JIT when SSE2 is not supported
+    at runtime. bz#1492064. Closes: #908396, #908449.
+  * gfx/2d/Swizzle.cpp: Use Swizzle fallback when SSE2 is not supported.
+    bz#1492065. Closes: #877445.
 
  -- Mike Hommey <glandium@debian.org>  Sat, 22 Sep 2018 09:02:25 +0900
 
