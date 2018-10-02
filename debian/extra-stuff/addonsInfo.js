@@ -88,7 +88,7 @@ addonsInfoHandler.prototype = {
       file.initWithPath(path);
       var outstream = Cc["@mozilla.org/network/file-output-stream;1"]
                       .createInstance(Ci.nsIFileOutputStream);
-      outstream.init(file, 0x2A /* TRUNCATE | WRONLY | CREATE */, 0666, 0);
+      outstream.init(file, 0x2A /* TRUNCATE | WRONLY | CREATE */, 0o666, 0);
       out = Cc["@mozilla.org/intl/converter-output-stream;1"]
             .createInstance(Ci.nsIConverterOutputStream);
       out.init(outstream, "UTF-8", 0, 0);
