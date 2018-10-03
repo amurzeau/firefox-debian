@@ -5,7 +5,7 @@ Components.utils.import("resource://gre/modules/XPCOMUtils.jsm");
 Components.utils.import("resource://gre/modules/AddonManager.jsm");
 
 function compare(a, b) {
-  return String.localeCompare(a.name, b.name);
+  return String.prototype.localeCompare(a.name, b.name);
 }
 
 function dumper() {}
@@ -84,7 +84,7 @@ addonsInfoHandler.prototype = {
 
     if (path) {
       var file = Cc["@mozilla.org/file/local;1"]
-                 .createInstance(Ci.nsILocalFile);
+                 .createInstance(Ci.nsIFile);
       file.initWithPath(path);
       var outstream = Cc["@mozilla.org/network/file-output-stream;1"]
                       .createInstance(Ci.nsIFileOutputStream);
