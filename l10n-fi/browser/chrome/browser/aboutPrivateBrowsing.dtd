@@ -18,8 +18,9 @@
 <!ENTITY aboutPrivateBrowsing.info.saved.before          "Firefox ">
 <!ENTITY aboutPrivateBrowsing.info.saved.emphasize       "tallentaa">
 <!ENTITY aboutPrivateBrowsing.info.saved.after2          "">
-<!ENTITY aboutPrivateBrowsing.info.downloads             "lataukset.">
+<!ENTITY aboutPrivateBrowsing.info.downloads             "lataukset">
 <!ENTITY aboutPrivateBrowsing.info.bookmarks             "kirjanmerkit">
+<!ENTITY aboutPrivateBrowsing.info.clipboard             "kopioidun tekstin.">
 <!ENTITY aboutPrivateBrowsing.note.before                "Yksityinen selaus ">
 <!ENTITY aboutPrivateBrowsing.note.emphasize             "ei tee sinusta anonyymiä">
 <!ENTITY aboutPrivateBrowsing.note.after                 " Internetissä. Työnantajasi tai Internet-palveluntarjoajasi voi edelleen tietää, millä sivuilla on vierailtu.">
@@ -30,3 +31,6 @@
 <!ENTITY trackingProtection.title                        "Seurannan suojaus">
 <!ENTITY trackingProtection.description2                 "Jotkin sivustot käyttävät seuraimia, joiden avulla ne voivat tarkkailla, mitä teet Internetissä. Seurannan suojauksen avulla Firefox estää monia seuraimia, jotka keräävät tietoa selaamisestasi.">
 <!ENTITY trackingProtection.startTour1                   "Lue, kuinka tämä toimii">
+
+<!ENTITY contentBlocking.title                           "Sisällön esto">
+<!ENTITY contentBlocking.description                     "Jotkin sivustot käyttävät seuraimia, jotka tarkkailevat tekemisiäsi ympäri internetiä. Kun käytät yksityistä ikkunaa, Firefoxin sisällön esto estää automaattisesti monia seuraimia, jotka keräävät tietoja selaamisestasi.">

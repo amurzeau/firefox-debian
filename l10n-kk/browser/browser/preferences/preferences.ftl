@@ -6,6 +6,8 @@ do-not-track-description = Сайттарға "Мені бақыламау" си
 do-not-track-learn-more = Көбірек білу
 do-not-track-option-default =
     .label = Тек Бақылаудан қорғанысты қолдану кезінде
+do-not-track-option-default-content-blocking =
+    .label = Тек { -brand-short-name } Анықталған Трекерлерді бұғаттауға бапталған болса.
 do-not-track-option-always =
     .label = Әрқашан
 pref-page =
@@ -90,6 +92,9 @@ extension-controlled-privacy-containers = <img data-l10n-name="icon"/> { $name }
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = <img data-l10n-name="icon"/> { $name } кеңейтуі бақылаудан қорғанысты басқарып тұр.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Бұл баптауды <img data-l10n-name="icon"/> { $name } кеңейтуі басқарып тұр.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = <img data-l10n-name="icon"/> { $name } кеңейтуі { -brand-short-name } интернетке байланысу тәсілін басқарып тұр.
@@ -118,7 +123,7 @@ startup-header = Іске қосылу
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
     .label = { -brand-short-name } және Firefox үшін бір уақытта жұмыс жасауды рұқсат ету
-use-firefox-sync = Кеңес: Бұл бөлек профильдерді қолданады. Олар арасында деректермен бөлісу үшін Синхрондауды қолданыңыз.
+use-firefox-sync = Кеңес: Бұл бөлек профильдерді қолданады. Олар арасында деректермен бөлісу үшін { -sync-brand-short-name } қолданыңыз.
 get-started-not-logged-in = { -sync-brand-short-name } ішіне кіру…
 get-started-configured = { -sync-brand-short-name } баптауларын ашу
 always-check-default =
@@ -203,6 +208,9 @@ choose-button =
     .label = Таңдау…
     .accesskey = у
 choose-browser-language-description = { -brand-short-name } мәзірі, хабарламалар және ескертулерін көрсетуге қолданылатын тілді таңдаңыз.
+manage-browser-languages-button =
+    .label = Баламаларды орнату…
+    .accesskey = ы
 confirm-browser-language-change-description = Бұл өзгерістерді іске асыру үшін { -brand-short-name } қайта іске қосыңыз
 confirm-browser-language-change-button = Іске асыру және қайта қосу
 translate-web-pages =
@@ -319,6 +327,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Желілік прокси
+network-settings-title = Желі баптаулары
 network-proxy-connection-description = { -brand-short-name } интернетпен қалай байланысатынын баптау
 network-proxy-connection-learn-more = Көбірек білу
 network-proxy-connection-settings =
@@ -557,9 +566,6 @@ history-dontremember-description = { -brand-short-name } жекелік шолу
 history-private-browsing-permanent =
     .label = Әрқашан жекелік шолу режимін қолдану
     .accesskey = ж
-history-remember-option =
-    .label = Менің шолу тарихымды және жүктемелер тарихын сақтау
-    .accesskey = М
 history-remember-browser-option =
     .label = Шолу және жүктемелер тарихын сақтау
     .accesskey = т
@@ -605,6 +611,26 @@ sitedata-accept-third-party-visited-option =
     .label = Мен болған жерден ғана
 sitedata-accept-third-party-never-option =
     .label = Ешқашан
+sitedata-allow-cookies-option =
+    .label = Cookies және сайт деректерін қабылдау
+    .accesskey = а
+sitedata-disallow-cookies-option =
+    .label = Cookies және сайт деректерін бұғаттау
+    .accesskey = б
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Блокталғанның түрі
+    .accesskey = т
+sitedata-block-trackers-option-recommended =
+    .label = Үшінші жақты трекерлер (ұсынылады)
+sitedata-block-trackers-option =
+    .label = Үшінші жақты трекерлер
+sitedata-block-unvisited-option =
+    .label = Шолмаған веб-сайттардан cookies файлдары
+sitedata-block-all-third-party-option =
+    .label = Барлық үшінші жақты cookies файлдары (веб-сайттар жұмысы бұзылуы мүмкін)
+sitedata-block-all-option =
+    .label = Барлық cookies файлдары (веб-сайттар жұмысы бұзылады)
 sitedata-clear =
     .label = Деректерді өшіру…
     .accesskey = ш
@@ -614,6 +640,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Ережелерден бөлек…
     .accesskey = Е
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Сіздің Құраманы бұғаттау ішіндегі баптаулар Cookies файлдары және Сайт деректеріне өзгерістерді енгізуге жол бермей тұр.
 
 ## Privacy Section - Address Bar
 
@@ -650,23 +680,42 @@ content-blocking-category-label = Нені бұғаттауды таңдаңыз
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Бақылайтын элементтерді көрсету
-    .accesskey = с
-content-blocking-fastblock-description = Жүктелуге 5 секундтан көп алатын үшінші жақты құраманы бұғаттау.
-content-blocking-fastblock-option-enabled =
-    .label = Әрқашан бұғаттау
-content-blocking-fastblock-option-disabled =
-    .label = Ешқашан бұғаттамау
-content-blocking-tracking-protection-label = Трекерлер
-    .accesskey = Т
-content-blocking-tracking-protection-description = Барлық белгілі трекерлерді бұғаттайды (Ескерту: кейбір беттердің жүктелуіне жол бермейді).
-content-blocking-tracking-protection-option-enabled =
-    .label = Әрқашан бұғаттау
-content-blocking-tracking-protection-option-pbm =
-    .label = Тек жекелік терезелерінде бұғаттау
-content-blocking-tracking-protection-option-disabled =
-    .label = Ешқашан бұғаттамау
-content-blocking-tracking-protection-change-blocklist = Блоктізімді өзгерту…
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Баяу жүктелетін трекерлер
+    .accesskey = ж
+content-blocking-fastblock-new-description = Тек беттердің жылдам жүктелуіне жол бермейтін трекерлерді бұғаттау.
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Барлық анықталған трекерлер
+    .accesskey = т
+content-blocking-tracking-protection-new-description = Барлық белгілі трекерлерді бұғаттау. (Кейбір парақтар жүктелмеуі мүмкін.)
+content-blocking-tracking-protection-option-always =
+    .label = Әрқашан
+    .accesskey = а
+content-blocking-tracking-protection-option-private =
+    .label = Тек жекелік терезелерінде
+    .accesskey = е
+content-blocking-tracking-protection-change-block-list = Бұғаттау тізімін өзгерту
+content-blocking-third-party-cookies-label =
+    .label = Үшінші жақты cookies файлдары
+    .accesskey = т
+content-blocking-reject-trackers-description = Барлық үшінші жақты немесе тек трекерлер орнатқан cookies файлдарын бұғаттау.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Сіздің Cookies файлдары және Сайт деректері ішіндегі баптаулар Үшінші жақты cookies файлдары баптауларына өзгерістерді енгізуге жол бермей тұр.
+content-blocking-change-cookie-settings =
+    .label = Cookie баптауларын өзгерту
+    .accesskey = п
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Трекерлер (ұсынылады)
+    .accesskey = к
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Трекерлер
+    .accesskey = к
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Барлық үшінші жақты cookies (веб-сайтта сынуы мүмкін)
+    .accesskey = а
 
 ## Privacy Section - Tracking
 
@@ -729,6 +778,7 @@ autoplay-option-allow =
     .label = Автоойнатуды рұқсат ету
 autoplay-option-dont =
     .label = Автоойнатпау
+permissions-autoplay-link = Көбірек білу
 permissions-block-popups =
     .label = "Атып шығатын" терезелерді болдырмау
     .accesskey = б

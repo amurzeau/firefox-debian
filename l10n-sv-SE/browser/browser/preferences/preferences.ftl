@@ -6,6 +6,8 @@ do-not-track-description = Skicka webbplatser en “Spåra inte”-signal att du
 do-not-track-learn-more = Läs mer
 do-not-track-option-default =
     .label = Bara när du använder spårningsskydd
+do-not-track-option-default-content-blocking =
+    .label = Endast när { -brand-short-name } är inställt för att blockera upptäckta trackers
 do-not-track-option-always =
     .label = Alltid
 pref-page =
@@ -90,6 +92,9 @@ extension-controlled-privacy-containers = Ett tillägg, <img data-l10n-name="ico
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Ett tillägg, <img data-l10n-name="icon"/> { $name }, styr spårningsskydd.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Ett tillägg, <img data-l10n-name="icon"/> { $name }, styr denna inställning.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Ett tillägg, <img data-l10n-name="icon"/> { $name }, styr hur { -brand-short-name } ansluter till internet.
@@ -203,6 +208,9 @@ choose-button =
     .label = Välj…
     .accesskey = V
 choose-browser-language-description = Välj språk som används för att visa menyer, meddelanden och avisering från { -brand-short-name }.
+manage-browser-languages-button =
+    .label = Ange alternativ…
+    .accesskey = A
 confirm-browser-language-change-description = Starta om { -brand-short-name } för att tillämpa ändringarna
 confirm-browser-language-change-button = Tillämpa och starta om
 translate-web-pages =
@@ -319,6 +327,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Nätverksproxy
+network-settings-title = Nätverksinställningar
 network-proxy-connection-description = Konfigurera hur { -brand-short-name } ansluter till internet.
 network-proxy-connection-learn-more = Läs mer
 network-proxy-connection-settings =
@@ -557,9 +566,6 @@ history-dontremember-description = { -brand-short-name } kommer att använda sam
 history-private-browsing-permanent =
     .label = Använd alltid läget privat surfning
     .accesskey = A
-history-remember-option =
-    .label = Spara historik över besökta sidor och filhämtningar
-    .accesskey = S
 history-remember-browser-option =
     .label = Kom ihåg surf- och nedladdningshistorik
     .accesskey = m
@@ -625,6 +631,10 @@ sitedata-block-all-third-parties-option =
     .label = Alla kakor från tredje part
 sitedata-block-always-option =
     .label = Alla kakor (kan orsaka fel på webbplatser)
+sitedata-block-all-third-party-option =
+    .label = Alla kakor från tredje part (kan orsaka fel på webbplatser)
+sitedata-block-all-option =
+    .label = Alla kakor (kommer att orsaka fel på webbplatser)
 sitedata-clear =
     .label = Rensa data…
     .accesskey = R
@@ -634,6 +644,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Undantag…
     .accesskey = U
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Dina inställningar i innehållsblockering hindrar ändringar i inställningar för kakor och webbplatsdata.
 
 ## Privacy Section - Address Bar
 
@@ -687,6 +701,45 @@ content-blocking-tracking-protection-option-pbm =
 content-blocking-tracking-protection-option-disabled =
     .label = Blockera aldrig
 content-blocking-tracking-protection-change-blocklist = Ändra blockeringslista…
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Trögladdade trackers
+    .accesskey = T
+content-blocking-fastblock-new-description = Blockera endast trackers som gör sidor långsammare.
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Alla upptäckta trackers
+    .accesskey = A
+content-blocking-tracking-protection-new-description = Blockera alla kända trackers. (Kan förhindra att vissa sidor laddas.)
+content-blocking-tracking-protection-option-always =
+    .label = Alltid
+    .accesskey = A
+content-blocking-tracking-protection-option-private =
+    .label = Endast i privata fönster
+    .accesskey = p
+content-blocking-tracking-protection-change-block-list = Ändra blockeringslista
+content-blocking-third-party-cookies-label =
+    .label = Kakor från tredje part
+    .accesskey = K
+content-blocking-reject-trackers-description = Blockera alla kakor från tredje part eller endast de som använts av trackers
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Dina inställningar i kakor och webbplatsdata förhindrar ändringar i inställningar för kakor från tredje part.
+content-blocking-change-cookie-settings =
+    .label = Ändra kakinställningar
+    .accesskey = k
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Trackers (rekommenderas)
+    .accesskey = k
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Trackers
+    .accesskey = k
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Alla kakor från tredje part (kan orsaka fel på webbplatser)
+    .accesskey = A
 
 ## Privacy Section - Tracking
 

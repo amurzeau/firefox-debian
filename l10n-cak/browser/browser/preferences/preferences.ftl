@@ -6,6 +6,8 @@ do-not-track-description = Ketaq ri taq ruxaq ajk'amaya'l jun “Mani Tojqäx”
 do-not-track-learn-more = Tetamäx ch'aqa' chik
 do-not-track-option-default =
     .label = Xa xe toq nokisäx Chajinïk chuwäch Ojqanïk
+do-not-track-option-default-content-blocking =
+    .label = Xa xe toq { -brand-short-name } nuk'un richin yeruq'ät ri OJaqnela' Yetz'et
 do-not-track-option-always =
     .label = Junelïk
 pref-page =
@@ -90,6 +92,9 @@ extension-controlled-privacy-containers = Jun k'amal, <img data-l10n-name="icon"
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Jun k'amal, <img data-l10n-name="icon"/> { $name }, tajin nuchajij ri chajinïk chuwäch ojqanem.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Jun k'amal, <img data-l10n-name="icon"/> { $name }, nuchajij re runuk'ulem re'.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Jun k'amal, <img data-l10n-name="icon"/> { $name }, nuchajij rub'eyal { -brand-short-name } nok pa k'amaya'l.
@@ -118,7 +123,7 @@ startup-header = Tikirisab'äl
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
     .label = Tiya' q'ij chi ri { -brand-short-name } chuqa' Firefox ketzije' junam
-use-firefox-sync = Pixa': Re re' nrokisaj jachon taq ruwäch b'i'aj. Tawokisaj Ximoj richin nakomonij na'oj chi kikojol.
+use-firefox-sync = Pixa': Re re' nrokisaj jachon taq ruwäch b'i'aj. Tawokisaj { -sync-brand-short-name } richin nakomonij na'oj chi kikojol.
 get-started-not-logged-in = Tatz'ib'aj ab'i' pa { -sync-brand-short-name }…
 get-started-configured = Tijaq { -sync-brand-short-name } taq rajowab'al
 always-check-default =
@@ -203,6 +208,9 @@ choose-button =
     .label = Ticha'…
     .accesskey = c
 choose-browser-language-description = Kecha' ri taq ch'ab'äl e'okisan richin yek'ut taq molsamajib'äl, taq rutzijol taqoj, taq rutzijol { -brand-short-name }.
+manage-browser-languages-button =
+    .label = Keya' taq Cha'oj
+    .accesskey = h
 confirm-browser-language-change-description = Titikirisäx chik { -brand-short-name } richin ye'okisäx ri taq k'exoj
 confirm-browser-language-change-button = Tisamajïx chuqa' Titikirisäx chik
 translate-web-pages =
@@ -319,6 +327,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Ruproxi K'amab'ey
+network-settings-title = Runuk'ulem Okem
 network-proxy-connection-description = Tib'an runuk'ulem rub'eyal { -brand-short-name } nok pa k'amaya'l.
 network-proxy-connection-learn-more = Tetamäx ch'aqa' chik
 network-proxy-connection-settings =
@@ -557,9 +566,6 @@ history-dontremember-description = { -brand-short-name } xtrokisaj ri junam runu
 history-private-browsing-permanent =
     .label = Junelïk tokisäx pa rub'eyal ichinan okem pa k'amaya'l
     .accesskey = i
-history-remember-option =
-    .label = Tinatäx ri nunatab'al richin taq qasanïk chuqa' okik'amaya'l
-    .accesskey = T
 history-remember-browser-option =
     .label = Tinatäx ri runatab'al okem pa k'amaya'l chuqa' ri qasanïk
     .accesskey = k
@@ -605,6 +611,26 @@ sitedata-accept-third-party-visited-option =
     .label = Etz'eton
 sitedata-accept-third-party-never-option =
     .label = Majub'ey
+sitedata-allow-cookies-option =
+    .label = Kek'ulutäj taq rukaxlanway chuqa' taq rutzij k'amaya'l
+    .accesskey = K
+sitedata-disallow-cookies-option =
+    .label = Keq'at taq rukaxlanwäy chuqa' Rutzij K'amaya'l
+    .accesskey = K
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Q'aton ruwäch
+    .accesskey = r
+sitedata-block-trackers-option-recommended =
+    .label = Aj rox winäq taq ojqanela' (chilab'en)
+sitedata-block-trackers-option =
+    .label = Aj rox winäq taq ojqanela'
+sitedata-block-unvisited-option =
+    .label = Kikaxlanwey ajk'amaya'l taq ruxaq man etz'eton ta
+sitedata-block-all-third-party-option =
+    .label = Ronojel ri taq kikaxlanwäy aj rox winäq (yetikïr nikitikirisaj sachoj pan ajk'amaya'l taq ruxaq)
+sitedata-block-all-option =
+    .label = Ronojel taq kaxlanwäy ( xtikiya' sachoj pan ajk'amaya'l taq ruxaq)
 sitedata-clear =
     .label = Tijosq'ïx Tzij…
     .accesskey = j
@@ -614,6 +640,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Taq man relik ta…
     .accesskey = r
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Ri taq anuk'ulem pa ri Kiq'atik Rupam yekiq'ät ri taq Kijalik Kinuk'ulem Kaxlanwäy chuqa' Kitzij taq Ruxaq.
 
 ## Privacy Section - Address Bar
 
@@ -650,23 +680,42 @@ content-blocking-category-label = Tacha' achike naq'ät
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Taq Ruch'akul Eqal Ojqanem
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Eqal-Yesamajib'ëx Ojqanela'
     .accesskey = E
-content-blocking-fastblock-description = Taq'ata' ri kipam aj rox winäq, ri niyoke' jotöl chi re ri 5 nich'ramaj richin nusamajib'ej.
-content-blocking-fastblock-option-enabled =
-    .label = Junelïk tiq'at
-content-blocking-fastblock-option-disabled =
-    .label = Majub'ey tiq'at
-content-blocking-tracking-protection-label = Ojqanela'
+content-blocking-fastblock-new-description = Xa xe keq'at ri ojqanela' eqal nikib'än richin yesamajib'ëx ri taq ruxaq.
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Ronojel taq Ojqanela' Xe'ilitäj
     .accesskey = O
-content-blocking-tracking-protection-description = Ke'aq'ata' ronojel ri taq ojqanela' etaman kiwa (Ch'utitzijol: chuqa' yatikïr ye'aq'ät chi kesamajib'ëx ri taq ruxaq).
-content-blocking-tracking-protection-option-enabled =
-    .label = Junelïk tiq'at
-content-blocking-tracking-protection-option-pbm =
-    .label = Tiq'at xa xe pa ichinan taq tzuwäch
-content-blocking-tracking-protection-option-disabled =
-    .label = Majub'ey tiq'at
-content-blocking-tracking-protection-change-blocklist = Tijal Rucholajem Q'atoj…
+content-blocking-tracking-protection-new-description = Keq'at konojel ri ojqanela' etaman kiwäch. (Nitikïr nuq'ät kisamajib'exik jujun taq ruxaq.)
+content-blocking-tracking-protection-option-always =
+    .label = Junelïk
+    .accesskey = J
+content-blocking-tracking-protection-option-private =
+    .label = Xa xe pa ichinan taq tzuwäch
+    .accesskey = i
+content-blocking-tracking-protection-change-block-list = Tijaq rucholajem q'atoj
+content-blocking-third-party-cookies-label =
+    .label = Kikaxlanwäy Aj Rox Winäq
+    .accesskey = k
+content-blocking-reject-trackers-description = Keq'at ronojel kikaxlanwäy aj rox winäq o xa xe ri eya'on kuma ri ojqanela'.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Ri taq anuk'ulem pa taq Kaxlanwäy chuqa' Kitzij Ruxaq nikiq'ät ri jaloj nib'an pa Kinuk'ulem Kikaxlanwäy aj Rox Winäq.
+content-blocking-change-cookie-settings =
+    .label = Kek'ëx ri taq Runuk'ulem Kaxlanwäy
+    .accesskey = R
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Ojqanela' (chilab'en)
+    .accesskey = n
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Ojqanela'
+    .accesskey = n
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Ronojel kikaxlanwäy aj rox winäq (yetikïr yekib'än sachoj pan ajk'amaya'l ruxaq)
+    .accesskey = R
 
 ## Privacy Section - Tracking
 
@@ -729,6 +778,7 @@ autoplay-option-allow =
     .label = Tiya' q'ij Ri Ruyon Nitzij
 autoplay-option-dont =
     .label = Mani Ruyonil Nitzijon
+permissions-autoplay-link = Tetamäx ch'aqa' chik
 permissions-block-popups =
     .label = Keq'at elenel taq tzuwäch
     .accesskey = K

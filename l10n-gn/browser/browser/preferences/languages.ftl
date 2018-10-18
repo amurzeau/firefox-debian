@@ -5,6 +5,9 @@
 languages-window =
     .title = Ñe'ẽita ha tai mbopapapy
     .style = width: 30em
+webpage-languages-window =
+    .title = Emoĩporã  ñe’ẽ ñanduti kuatiaroguépe
+    .style = width: 40em
 languages-close-key =
     .key = w
 languages-description = Ñanduti kuatiarogue sapy'ánte oñekuave'ẽ ndaha'éi peteĩ ñe'ẽme añónte. Eiporavo ñe'ẽnguéra ojehecha hag̃ua ko'ã ñanduti kuatiarogue, jerohoryvéva rupi
@@ -38,3 +41,7 @@ languages-code-format =
     .label = { $locale }  [{ $code }]
 languages-active-code-format =
     .value = { languages-code-format.label }
+browser-languages-window =
+    .title = { -brand-short-name } ñe’ẽ ñemboheko
+    .style = width: 40em
+browser-languages-description = { -brand-short-name } ohechaukáta ñe’ẽ peteĩha ijypykuévaramo ha avei ohechaukáta ñe’ẽ mokõiguáva oikotevẽramo tysýipe oĩháicha.

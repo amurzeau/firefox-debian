@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -132,17 +124,8 @@ is-not-default = { -brand-short-name } không phải là trình duyệt mặc đ
 set-as-my-default-browser =
     .label = Đặt làm mặc định…
     .accesskey = D
-startup-page = Khi { -brand-short-name } khởi động
-    .accesskey = s
-startup-user-homepage =
-    .label = Hiển thị trang chủ của bạn
-startup-blank-page =
-    .label = Hiện một trang trống
-startup-prev-session =
-    .label = Hiển thị cửa sổ và thẻ lần trước của bạn
 disable-extension =
     .label = Tắt phần mở rộng
-home-page-header = Trang chủ
 tabs-group-header = Thẻ
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab để chuyển qua các thẻ theo thứ tự sử dụng gần đây nhất
@@ -199,6 +182,8 @@ choose-language-description = Chọn ngôn ngữ ưu tiên bạn muốn để hi
 choose-button =
     .label = Chọn…
     .accesskey = C
+confirm-browser-language-change-description = Khởi động lại { -brand-short-name } để áp dụng các thay đổi này
+confirm-browser-language-change-button = Áp dụng và Khởi động lại
 translate-web-pages =
     .label = Dịch nội dung web
     .accesskey = D
@@ -250,7 +235,6 @@ play-drm-content =
 play-drm-content-learn-more = Tìm hiểu thêm
 update-application-title = Cập nhật { -brand-short-name }
 update-application-description = Giữ { -brand-short-name } luôn cập nhật để đạt được hiệu năng, sự ổn định, và bảo mật tốt nhất.
-update-application-info = Phiên bản { $version } <a>Có gì mới</a>
 update-application-version = Phiên bản { $version } <a data-l10n-name="learn-more">Có gì mới</a>
 update-history =
     .label = Hiển thị lịch sử cập nhật…
@@ -286,7 +270,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Giới hạn xử lý nội dung
     .accesskey = L
 performance-limit-content-process-enabled-desc = Các tiến trình xử lý nội dung bổ sung có thể cải thiện hiệu suất khi sử dụng nhiều thẻ một lúc, nhưng cũng sẽ tiêu tốn nhiều bộ nhớ.
-performance-limit-content-process-disabled-desc = Việc chỉnh sửa số tiến trình xử lý nội dung chỉ có thể thực hiện với { -brand-short-name } đa tiến trình. <a>Tìm hiểu làm cách nào để kiểm tra khi chế độ đa tiến trình được bật</a>
 performance-limit-content-process-blocked-desc = Việc chỉnh sửa số tiến trình xử lý nội dung chỉ có thể thực hiện với { -brand-short-name } đa tiến trình. <a data-l10n-name="learn-more">Tìm hiểu làm cách nào để kiểm tra khi chế độ đa tiến trình được bật</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -315,6 +298,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Mạng lưới proxy
+network-settings-title = Cài đặt mạng
 network-proxy-connection-description = Cấu hình phương thức { -brand-short-name } kết nối internet.
 network-proxy-connection-learn-more = Tìm hiểu thêm
 network-proxy-connection-settings =
@@ -323,16 +307,25 @@ network-proxy-connection-settings =
 
 ## Home Section
 
+home-new-windows-tabs-header = Cửa sổ và thẻ mới
 
 ## Home Section - Home Page Customization
 
+home-homepage-mode-label = Trang chủ và cửa sổ mới
 home-newtabs-mode-label = Thẻ mới
+home-restore-defaults =
+    .label = Khôi phục về mặc định
+    .accesskey = R
 # "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
     .label = Trang chủ Firefox (Mặc định)
+home-mode-choice-custom =
+    .label = Tùy chỉnh URL...
 home-mode-choice-blank =
     .label = Trang trắng
+home-homepage-custom-url =
+    .placeholder = Dán một URL...
 # This string has a special case for '1' and [other] (default). If necessary for
 # your language, you can add {$tabCount} to your translations and use the
 # standard CLDR forms, or only use the form for [other] if both strings should
@@ -347,9 +340,6 @@ use-current-pages =
 choose-bookmark =
     .label = Dùng trang đánh dấu…
     .accesskey = d
-restore-default =
-    .label = Khôi phục về Mặc định
-    .accesskey = M
 
 ## Search Section
 
@@ -377,12 +367,12 @@ search-suggestions-cant-show = Gợi ý tìm kiếm sẽ không được hiện 
 search-one-click-header = Công cụ tìm kiếm với một lần nhấn
 search-one-click-desc = Chọn các công cụ tìm kiếm thay thế xuất hiện bên dưới thanh địa chỉ và thanh tìm kiếm khi bạn bắt đầu nhập một từ khoá.
 search-choose-engine-column =
-    .label = Dịch vụ tìm kiếm
+    .label = Công cụ tìm kiếm
 search-choose-keyword-column =
     .label = Từ khóa
 search-restore-default =
-    .label = Đặt lại dịch vụ tìm kiếm mặc định
-    .accesskey = l
+    .label = Đặt lại công cụ tìm kiếm mặc định
+    .accesskey = D
 search-remove-engine =
     .label = Xóa
     .accesskey = X
@@ -542,9 +532,6 @@ history-dontremember-description = { -brand-short-name } sẽ dùng thiết lậ
 history-private-browsing-permanent =
     .label = Luôn luôn dùng chế độ duyệt web riêng tư
     .accesskey = y
-history-remember-option =
-    .label = Ghi nhớ lịch sử truy cập và tải về của tôi
-    .accesskey = n
 history-remember-search-option =
     .label = Ghi nhớ lược sử biểu mẫu và tìm kiếm
     .accesskey = b
@@ -573,6 +560,12 @@ sitedata-accept-third-party-visited-option =
     .label = Từ các trang đã truy cập
 sitedata-accept-third-party-never-option =
     .label = Không bao giờ
+sitedata-clear =
+    .label = Xóa dữ liệu...
+    .accesskey = l
+sitedata-settings =
+    .label = Quản lí dữ liệu...
+    .accesskey = M
 sitedata-cookies-exceptions =
     .label = Ngoại trừ…
     .accesskey = N
@@ -592,6 +585,42 @@ addressbar-locbar-openpage-option =
     .accesskey = T
 addressbar-suggestions-settings = Thay đổi tùy chỉnh phần gợi ý của công cụ tìm kiếm
 
+## Privacy Section - Content Blocking
+
+content-blocking-learn-more = Tìm hiểu thêm
+content-blocking-restore-defaults =
+    .label = Khôi phục về mặc định
+    .accesskey = R
+content-blocking-toggle-label-on = BẬT
+    .accesskey = O
+content-blocking-toggle-label-off = TẮT
+    .accesskey = O
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Trình truy dấu tác nhân tải chậm
+    .accesskey = T
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Tất cả các trình theo dõi đã phát hiện
+    .accesskey = T
+content-blocking-tracking-protection-option-always =
+    .label = Luôn luôn
+    .accesskey = A
+content-blocking-tracking-protection-option-private =
+    .label = Chỉ trong cửa sổ riêng tư
+    .accesskey = p
+content-blocking-tracking-protection-change-block-list = Thay đổi danh sách chặn
+content-blocking-third-party-cookies-label =
+    .label = Cookie của bên thứ ba
+    .accesskey = C
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Trình theo dõi (đề nghị)
+    .accesskey = k
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Trình theo dõi
+    .accesskey = k
+
 ## Privacy Section - Tracking
 
 tracking-header = Trình chống theo dõi
@@ -602,7 +631,7 @@ tracking-mode-always =
     .accesskey = n
 tracking-mode-private =
     .label = Chỉ trong cửa sổ riêng tư
-    .accesskey = r
+    .accesskey = l
 tracking-mode-never =
     .label = Không bao giờ
     .accesskey = K
@@ -640,6 +669,16 @@ permissions-notification-link = Tìm hiểu thêm
 permissions-notification-pause =
     .label = Tạm dừng thông báo cho đến khi { -brand-short-name } khởi động lại
     .accesskey = n
+permissions-block-autoplay-media-exceptions =
+    .label = Ngoại trừ...
+    .accesskey = E
+autoplay-option-ask =
+    .label = Luôn hỏi
+autoplay-option-allow =
+    .label = Cho phép tự động phát
+autoplay-option-dont =
+    .label = Không tự động phát
+permissions-autoplay-link = Tìm hiểu thêm
 permissions-block-popups =
     .label = Chặn các cửa sổ pop-up
     .accesskey = C

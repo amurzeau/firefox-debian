@@ -99,12 +99,20 @@ will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "<span class='hostname'/> ના માલિકે તેમની વેબસાઇટ અયોગ્ય રીતે ગોઠવેલી છે.   તમારી માહિતીને ચોરાઇ જવાથી સુરક્ષિત કરવા માટે, &brandShortName; આ વેબસાઇટથી જોડાણ કરેલ નથી.">
 
+<!ENTITY certerror.introPara2 "&brandShortName; એ સંભવિત સુરક્ષા ધમકી શોધી જેથી <span class='hostname'/>મુલાકાત લેવાનું બંધ કર્યું. જો તમે આ સાઇટની મુલાકાત લો છો, તો હુમલાખોરો તમારા પાસવર્ડ્સ, ઇમેઇલ્સ અથવા ક્રેડિટ કાર્ડ વિગતો જેવી માહિતી ચોરી કરવાનો પ્રયાસ કરી શકે છે.">
 
+<!ENTITY certerror.expiredCert.secondPara "આ સમસ્યા તમારાં કમ્પ્યુટરની ઘડિયાળ ખોટા સમય પર રાખેલી છે એટલે થઇ રહી છે, જે &brandShortName; ને સુરક્ષિત રીતે જોડતાં રોકી રહી છે.">
 
 <!ENTITY certerror.whatCanYouDoAboutItTitle "તમે તેના વિશે શું કરી શકો?">
 
+<!ENTITY certerror.unknownIssuer.whatCanYouDoAboutIt "
+<p>આ સમસ્યા વેબસાઇટની છે, જેનાં સમાધાન માટે તમે કંઇ કરી શકો તેમ નથી.</p>
+<p>જો તમે વ્યવસાયિક નેટવર્ક પર છો કે એન્ટી-વાયરસ સોફ્ટવેરનો ઉપયોગ કરો છો, તો તમે સહાયક ટીમની મદદ લઇ શકો છો. તમે આ સમસ્યા વિશે વેબસાઇટ સંચાલકને પણ જણાવી શકો છો.</p>">
 
+<!ENTITY certerror.expiredCert.whatCanYouDoAboutIt2 "<p>તમારું કમ્પ્યુટર ઘડિયાળ <span id='wrongSystemTime_systemDate2'/>પર સેટ છે. ખાતરી કરો કે તમારું કમ્પ્યુટર તમારી સિસ્ટમ સેટિંગ્સમાં યોગ્ય તારીખ, સમય અને સમય ઝોન પર સેટ છે, અને તે પછી <span class='hostname'/>રીફ્રેશ કરો.</p>
+<p>જો તમારી ઘડિયાળ પહેલાથી જ યોગ્ય સમયે સેટ થઈ ગઈ હોય, તો વેબસાઇટને ખોટી રીતે ગોઠવી શકાતી નથી, અને સમસ્યાનો ઉકેલ લાવવા માટે તમે કશું જ કરી શકતા નથી. સમસ્યા વિશે તમે વેબસાઈટ સંચાલકને સૂચિત કરી શકો છો.</p>">
 
+<!ENTITY certerror.badCertDomain.whatCanYouDoAboutIt "<p>આ સમસ્યા વેબસાઈટ સાથે સંભાવના છે, અને તે ઉકેલવા માટે તમે કશું કરી શકતા નથી. સમસ્યા વિશે તમે વેબસાઈટ સંચાલકને સૂચિત કરી શકો છો.</p>">
 
 <!ENTITY sharedLongDesc "<ul> <li>સાઈટ થોડી વાર માટે ઉપલબ્ધ નહિં હોય અથવા ખૂબ વ્યવસ્ત પણ હોઈ શકે. થોડી ક્ષણો માટે ફરીથી પ્રયત્ન કરો.</li> <li>જો તમે કોઈપણ પાનાંઓ લાવવા માટે અસમર્થ હોય, તો તમારા કમ્પ્યૂટરનું નેટવર્ક જોડાણ ચકાસો.</li> <li>જો તમારું કમ્પ્યૂટર અથવા નેટવર્ક એ ફાયરવોલ અથવા પ્રોક્સીથી સુરક્ષિત કરાયેલ હોય, તો ખાતરી કરો કે  &brandShortName; ને વેબ વપરાશની પરવાનગી છે.</li> </ul>">
 
@@ -139,6 +147,7 @@ was trying to connect. -->
 <!ENTITY certerror.pagetitle1  "અસુરક્ષિત જોડાણ">
 <!ENTITY certerror.pagetitle2  "ચેતવણી: આગળ સંભવિત સુરક્ષા જોખમ">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "આ સાઇટ HTTP નો ઉપયોગ કરે છે તે સ્પષ્ટ કરવા માટે સખત પરિવહન સુરક્ષા (HSTS) અને &brandShortName; માત્ર સુરક્ષિત રીતે જોડાણ                          કરી શકે છે. તે સુરક્ષિત રીતે પરિણામે, આ માટે અપવાદ ઉમેરવા શક્ય નથી પ્રમાણપત્ર.">
+<!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'></span> પાસે HTTP સખત પરિવહન સુરક્ષા (HSTS) નામની સુરક્ષા નીતિ છે,એટલે brandShortName; ફક્ત તેને સુરક્ષિત રીતે જોડાઈ શકે છે. તમે આ સાઇટની મુલાકાત લેવા માટે અપવાદ ઉમેરી શકતા નથી.">
 <!ENTITY certerror.copyToClipboard.label "ક્લિપબોર્ડમાં લખાણની નકલ કરો">
 
 <!ENTITY inadequateSecurityError.title "તમારું જોડાણ સુરક્ષિત નથી">
@@ -149,6 +158,7 @@ was trying to connect. -->
 <!ENTITY blockedByPolicy.title "અવરોધિત પૃષ્ઠ">
 
 <!ENTITY clockSkewError.title "તમારાં કમ્પ્યુટરની ઘડિયાળ ખોટી છે">
+<!ENTITY clockSkewError.longDesc "તમારાં કમ્પ્યુટર પ્રમાણે <span id='wrongSystemTime_systemDate1'/>, જે &brandShortName; ને સુરક્ષિત જોડાણથી અટકાવે છે. <span class='hostname'></span> ની મુલાકાત લેવાં માટે, તમારાં સીસ્ટમ સેંટિંગ્સમાંથી તમારાં કમ્પ્યુટરની ઘડિયાળ હાલનાં પ્રમાણે તારીખ, સમય, અને સમય ઝોન સુધારો કરો, અને પછી <span class='hostname'></span> તાજું કરો.">
 
 <!ENTITY prefReset.longDesc "એવું લાગી રહ્યું છે કે તમારાં નેટવર્કની સુરક્ષા વ્યવસ્થા ને કારણે આમ થઇ રહ્યુ છે. શું આપ મૂળભૂત વ્યવસ્થા પાછી લાવવાં ઈચ્છો છો?">
 <!ENTITY prefReset.label "મૂળભુત સેટિંગ પાછા લાવો">

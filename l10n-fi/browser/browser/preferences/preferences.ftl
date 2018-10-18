@@ -6,6 +6,8 @@ do-not-track-description = Lähetä sivustoille Älä seuraa -signaali, että et
 do-not-track-learn-more = Lue lisää
 do-not-track-option-default =
     .label = Vain käytettäessä seurannan suojausta
+do-not-track-option-default-content-blocking =
+    .label = Vain, kun { -brand-short-name } on asetettu estämään havaitut seuraimet
 do-not-track-option-always =
     .label = Aina
 pref-page =
@@ -90,6 +92,9 @@ extension-controlled-privacy-containers = Laajennus, <img data-l10n-name="icon"/
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Laajennus, <img data-l10n-name="icon"/> { $name }, hallitsee seurannan suojausta.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Laajennus, <img data-l10n-name="icon"/> { $name }, hallitsee tätä asetusta.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Laajennus, <img data-l10n-name="icon"/> { $name }, hallitsee { -brand-short-name }in verkkoyhteysasetuksia.
@@ -203,6 +208,9 @@ choose-button =
     .label = Valitse…
     .accesskey = V
 choose-browser-language-description = Valitse kielet, joilla { -brand-short-name }in valikot, viestit ja ilmoitukset näytetään.
+manage-browser-languages-button =
+    .label = Valitse lisäkielet…
+    .accesskey = k
 confirm-browser-language-change-description = Käytä näitä muutoksia käynnistämällä { -brand-short-name } uudestaan
 confirm-browser-language-change-button = Käytä ja käynnistä uudestaan
 translate-web-pages =
@@ -319,6 +327,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Verkon välityspalvelin
+network-settings-title = Verkkoasetukset
 network-proxy-connection-description = Muokkaa { -brand-short-name }in verkkoyhteysasetuksia.
 network-proxy-connection-learn-more = Lue lisää
 network-proxy-connection-settings =
@@ -557,9 +566,6 @@ history-dontremember-description = { -brand-short-name } toimii aina kuten yksit
 history-private-browsing-permanent =
     .label = Selaa aina yksityinen selaus -tilassa
     .accesskey = y
-history-remember-option =
-    .label = Säilytä selaushistoria ja tieto latauksista
-    .accesskey = ä
 history-remember-browser-option =
     .label = Säilytä selaushistoria ja tieto latauksista
     .accesskey = ä
@@ -613,18 +619,18 @@ sitedata-disallow-cookies-option =
     .accesskey = E
 # This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
 # The list items are the strings named sitedata-block-*-option*.
-sitedata-block-desc = Mitä estetään
-    .accesskey = M
+sitedata-block-desc = Tyyppi
+    .accesskey = T
 sitedata-block-trackers-option-recommended =
     .label = Kolmannen osapuolen seuraimet (suositus)
 sitedata-block-trackers-option =
     .label = Kolmannen osapuolen seuraimet
 sitedata-block-unvisited-option =
     .label = Evästeet vierailemattomilta sivustoilta
-sitedata-block-all-third-parties-option =
-    .label = Kaikki kolmannen osapuolen evästeet
-sitedata-block-always-option =
-    .label = Kaikki evästeet (voi aiheuttaa sivustojen toimimattomuutta)
+sitedata-block-all-third-party-option =
+    .label = Kaikki 3. osapuolen evästeet (voi aiheuttaa sivustovirheitä)
+sitedata-block-all-option =
+    .label = Kaikki evästeet (aiheuttaa sivustovirheitä)
 sitedata-clear =
     .label = Tyhjennä tiedot…
     .accesskey = y
@@ -634,6 +640,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Poikkeukset…
     .accesskey = P
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Sisällön eston asetukset estävät muutokset eväste- ja sivustotietoasetuksiin.
 
 ## Privacy Section - Address Bar
 
@@ -670,23 +680,42 @@ content-blocking-category-label = Valitse, mitä estetään
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Hitaat seurantaelementit
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Hitaasti latautuvat seuraimet
     .accesskey = H
-content-blocking-fastblock-description = Estää kolmannen osapuolen sisällön, jonka latautumisessa kestää pidempään kuin 5 sekuntia.
-content-blocking-fastblock-option-enabled =
-    .label = Estä aina
-content-blocking-fastblock-option-disabled =
-    .label = Älä estä koskaan
-content-blocking-tracking-protection-label = Seuraimet
+content-blocking-fastblock-new-description = Estää vain seuraimet, jotka estävät sivuja latautumasta nopeasti.
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Kaikki havaitut seuraimet
+    .accesskey = K
+content-blocking-tracking-protection-new-description = Estää kaikki tunnetut seuraimet. (Saattaa estää joitain sivuja latautumasta.)
+content-blocking-tracking-protection-option-always =
+    .label = Aina
+    .accesskey = A
+content-blocking-tracking-protection-option-private =
+    .label = Vain yksityisissä ikkunoissa
+    .accesskey = y
+content-blocking-tracking-protection-change-block-list = Muuta estolistaa
+content-blocking-third-party-cookies-label =
+    .label = Kolmannen osapuolen evästeet
+    .accesskey = E
+content-blocking-reject-trackers-description = Estää kaikki kolmannen osapuolen evästeet tai vain seurainten asettamat evästeet.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Eväste- ja sivustotietoasetukset estävät muutokset kolmannen osapuolen evästeiden asetuksiin.
+content-blocking-change-cookie-settings =
+    .label = Muuta evästeasetuksia
+    .accesskey = M
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Seuraimet (suositus)
     .accesskey = S
-content-blocking-tracking-protection-description = Estää tunnetut seuraimet (huomaa: voi estää joitain sivuja latautumasta).
-content-blocking-tracking-protection-option-enabled =
-    .label = Estä aina
-content-blocking-tracking-protection-option-pbm =
-    .label = Estä vain yksityisissä ikkunoissa
-content-blocking-tracking-protection-option-disabled =
-    .label = Älä estä koskaan
-content-blocking-tracking-protection-change-blocklist = Muuta estolistaa…
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Seuraimet
+    .accesskey = S
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Kaikki kolmannen osapuolen evästeet (voi aiheuttaa sivustojen toimimattomuutta)
+    .accesskey = K
 
 ## Privacy Section - Tracking
 
@@ -739,7 +768,7 @@ permissions-notification-pause =
 permissions-block-autoplay-media =
     .label = Estä sivustot toistamasta äänellistä mediaa automaattisesti
     .accesskey = E
-permissions-block-autoplay-media-menu = Sivustot jotka toistavat automaattisesti ääntä
+permissions-block-autoplay-media-menu = Äänen automaattinen toisto
 permissions-block-autoplay-media-exceptions =
     .label = Poikkeukset…
     .accesskey = P

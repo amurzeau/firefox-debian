@@ -5,6 +5,9 @@
 languages-window =
     .title = Limbi
     .style = width: 32em
+webpage-languages-window =
+    .title = Setări privind limba pe paginile web
+    .style = width: 40em
 languages-close-key =
     .key = w
 languages-description = Paginile web sunt oferite uneori în mai multe limbi. Selectează limbile pentru afișarea acestor pagini web, în ordinea preferințelor
@@ -35,6 +38,10 @@ languages-customize-add =
 #   $locale (String) - A name of the locale (for example: "Icelandic", "Spanish (Chile)")
 #   $code (String) - Locale code of the locale (for example: "is", "es-CL")
 languages-code-format =
-    .label = { $locale }   [{ $code }]
+    .label = { $locale } [{ $code }]
 languages-active-code-format =
     .value = { languages-code-format.label }
+browser-languages-window =
+    .title = Setări de limbă { -brand-short-name }
+    .style = width: 40em
+browser-languages-description = { -brand-short-name } va afișa prima limbă ca cea implicită și va afișa limbi alternative în ordinea în care apar, dacă e nevoie.

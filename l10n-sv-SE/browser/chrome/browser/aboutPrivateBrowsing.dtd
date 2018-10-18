@@ -2,11 +2,6 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!-- LOCALIZATION NOTE (aboutPrivateBrowsing.title):
-     Please ensure this exactly matches tabs.emptyPrivateTabTitle in tabbrowser.properties -->
-<!ENTITY aboutPrivateBrowsing.title                      "Privat surfning">
-<!ENTITY aboutPrivateBrowsing.notPrivate.title           "Öppna ett privat fönster?">
-
 <!ENTITY aboutPrivateBrowsing.notPrivate                 "Du är nu inte i ett privat fönster.">
 <!ENTITY privatebrowsingpage.openPrivateWindow.label     "Öppna ett privat fönster">
 <!ENTITY privatebrowsingpage.openPrivateWindow.accesskey "p">
@@ -25,6 +20,7 @@
 <!ENTITY aboutPrivateBrowsing.info.saved.after2          " dina:">
 <!ENTITY aboutPrivateBrowsing.info.downloads             "hämtningar">
 <!ENTITY aboutPrivateBrowsing.info.bookmarks             "bokmärken">
+<!ENTITY aboutPrivateBrowsing.info.clipboard             "kopierad text">
 <!ENTITY aboutPrivateBrowsing.note.before                "Privat surfning ">
 <!ENTITY aboutPrivateBrowsing.note.emphasize             "gör dig inte anonym">
 <!ENTITY aboutPrivateBrowsing.note.after                 " på internet. Din arbetsgivare eller internetleverantör kan fortfarande spåra sidorna du besöker.">
@@ -35,3 +31,6 @@
 <!ENTITY trackingProtection.title                        "Spårningsskydd">
 <!ENTITY trackingProtection.description2                 "Vissa webbplatser använder spårare som kan övervaka din aktivitet över hela internet. Med spårningsskydd kommer Firefox blockera många spårare som kan samla information om dina surfvanor.">
 <!ENTITY trackingProtection.startTour1                   "Se hur det fungerar">
+
+<!ENTITY contentBlocking.title                           "Innehållsblockering">
+<!ENTITY contentBlocking.description                     "Vissa webbplatser använder trackers som kan övervaka din aktivitet på internet. I privata fönster blockerar Firefox-innehållsblockering automatiskt många trackers som kan samla information om ditt webbläsarbeteende.">

@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 do-not-track-description = आपल्याला ट्रॅक न करण्यासाठी वेबसाइट्सना "ट्रॅक करू नका" हा इशारा पाठवा
-do-not-track-learn-more = आणखी जाणा
+do-not-track-learn-more = अधिक जाणा
 do-not-track-option-default =
     .label = फक्त ट्रॅकिंग संरक्षण वापरत असताना
 do-not-track-option-always =
@@ -156,7 +156,7 @@ show-tabs-in-taskbar =
 browser-containers-enabled =
     .label = कंटेनर टॅब्स सक्रीय करा
     .accesskey = n
-browser-containers-learn-more = आणखी शिका
+browser-containers-learn-more = अधिक जाणा
 browser-containers-settings =
     .label = सेटिंग्ज…
     .accesskey = i
@@ -203,6 +203,9 @@ choose-button =
     .label = निवडा…
     .accesskey = o
 choose-browser-language-description = { -brand-short-name } चा मेनू, संदेश, आणि सुचना दर्शवणारी भाषा ठरवा.
+manage-browser-languages-button =
+    .label = पर्याय सेट करा...
+    .accesskey = l
 confirm-browser-language-change-description = हे बदल लागू करण्यासाठी { -brand-short-name } पुन्हा सुरु करा
 confirm-browser-language-change-button = लागू करून पुन्हा सुरु करा
 translate-web-pages =
@@ -253,7 +256,7 @@ drm-content-header = डिजिटल हक्क व्यवस्थाप
 play-drm-content =
     .label = डीआरएम-नियंत्रित मजकूर चालवा
     .accesskey = P
-play-drm-content-learn-more = आणखी शिका
+play-drm-content-learn-more = अधिक जाणा
 update-application-title = { -brand-short-name } सुधारणा
 update-application-description = सर्वोत्तम कामगिरी, स्थिरता आणि सुरक्षिततेसाठी { -brand-short-name } अद्ययावत ठेवा.
 update-application-version = आवृत्ती{ $version } <a data-l10n-name="learn-more">काय नवीन आहे</a>
@@ -284,7 +287,7 @@ performance-use-recommended-settings-checkbox =
     .label = शिफारस केलेले कार्यक्षमता सेटिंग वापरा
     .accesskey = U
 performance-use-recommended-settings-desc = हे सेटिंग आपल्या संगणकाच्या हार्डवेअर आणि ऑपरेटिंग प्रणाली साठी अनुरूप होतील अशा प्रकारे बनवले आहेत.
-performance-settings-learn-more = आणखी जाणा
+performance-settings-learn-more = अधिक जाणा
 performance-allow-hw-accel =
     .label = उपलब्ध असल्यावर हार्डवेअर ॲक्सिलरेशनचा वापर करा
     .accesskey = r
@@ -319,8 +322,9 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = नेटवर्क प्रॉक्सी
+network-settings-title = नेटवर्क सेटिंग
 network-proxy-connection-description = { -brand-short-name } इंटरनेटशी जोडणी कशी करतो ते संरचीत करा.
-network-proxy-connection-learn-more = आणखी जाणा
+network-proxy-connection-learn-more = अधिक जाणा
 network-proxy-connection-settings =
     .label = सेटिंग्ज…
     .accesskey = e
@@ -557,9 +561,6 @@ history-dontremember-description = { -brand-short-name } समान संय�
 history-private-browsing-permanent =
     .label = नेहमी व्यक्तिगत ब्राउजिंग मोडचा वापर करा
     .accesskey = p
-history-remember-option =
-    .label = माझी ब्राऊजिंग व डाऊनलोड इतिहास लक्षात ठेवा
-    .accesskey = b
 history-remember-browser-option =
     .label = ब्राऊजिंग व डाऊनलोड इतिहास लक्षात ठेवा
     .accesskey = b
@@ -584,7 +585,7 @@ sitedata-total-size-calculating = कॅश आणि साईट माहि�
 #   $value (Number) - Value of the unit (for example: 4.6, 500)
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = आपण साठवलेल्या कुकीज, साईट माहिती आणि कॅश सध्या { $value } { $unit } इतकी जागा डिस्कवर व्याप्त करत आहेत
-sitedata-learn-more = आणखी जाणा
+sitedata-learn-more = अधिक जाणा
 sitedata-accept-cookies-option =
     .label = संकेतस्थळावरून कुकीज आणि साईट डेटा स्वीकारा (शिफारस).
     .accesskey = A
@@ -605,6 +606,19 @@ sitedata-accept-third-party-visited-option =
     .label = भेट दिलेल्यांमधून
 sitedata-accept-third-party-never-option =
     .label = कधीच नाही
+sitedata-allow-cookies-option =
+    .label = कुकीज आणि साईट डेटा स्वीकारा
+    .accesskey = A
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = प्रकार अवरोधित
+    .accesskey = T
+sitedata-block-trackers-option-recommended =
+    .label = तिसरे-पक्षीय मागोवा घेणारे (शिफारसीय)
+sitedata-block-trackers-option =
+    .label = तृतीय-पक्षीय ट्रॅकर
+sitedata-block-all-third-parties-option =
+    .label = सर्व तृतीय-पक्ष कुकीज
 sitedata-clear =
     .label = माहिती पुसा...
     .accesskey = l
@@ -659,6 +673,8 @@ content-blocking-fastblock-option-disabled =
     .label = कधीच अडवू नका
 content-blocking-tracking-protection-label = मागोवा घेणारे
     .accesskey = T
+content-blocking-tracking-protection-all-label = सर्व आढळलेले ट्रॅकर्स
+    .accesskey = T
 content-blocking-tracking-protection-description = सर्व ज्ञात मागोवा घेणारे घटक अडवते(टीप: काही पृष्ठ लोड होणार नाहीत).
 content-blocking-tracking-protection-option-enabled =
     .label = नेहमी आडवा
@@ -666,7 +682,28 @@ content-blocking-tracking-protection-option-pbm =
     .label = फक्त खाजगी पटलामध्ये आडवा
 content-blocking-tracking-protection-option-disabled =
     .label = कधीच अडवू नका
+content-blocking-tracking-protection-option-always =
+    .label = नेहमी
+    .accesskey = A
+content-blocking-tracking-protection-option-private =
+    .label = फक्त खाजगी पटलामध्ये
+    .accesskey = p
 content-blocking-tracking-protection-change-blocklist = अवरोधित सूची बदला…
+content-blocking-reject-trackers-label = तृतीय-पक्ष कुकीज
+    .accesskey = C
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the "All cookies" option
+# being selected in the Cookies and Site Data section of the UI.
+content-blocking-reject-trackers-warning-all-cookies-blocked = सर्व कुकीज सध्या अवरोधित आहेत.
+content-blocking-change-cookie-settings =
+    .label = कुकी सेटिंग बदला
+    .accesskey = S
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = ट्रॅकर्स (सुचवलेले)
+    .accesskey = k
+content-blocking-reject-trackers-block-trackers-option =
+    .label = ट्रॅकर्स
+    .accesskey = k
 
 ## Privacy Section - Tracking
 
@@ -712,7 +749,7 @@ permissions-notification = सूचना
 permissions-notification-settings =
     .label = सेटिंग…
     .accesskey = t
-permissions-notification-link = आणखी जाणा
+permissions-notification-link = अधिक जाणा
 permissions-notification-pause =
     .label = सूचना { -brand-short-name } पुन्हा सुरु होईपर्यंत स्थगित करा
     .accesskey = n
@@ -729,6 +766,7 @@ autoplay-option-allow =
     .label = ऑटोप्ले ला परवानगी द्या
 autoplay-option-dont =
     .label = ऑटोप्ले करू नका
+permissions-autoplay-link = अधिक जाणा
 permissions-block-popups =
     .label = पॉपअप पटल अडवा
     .accesskey = B
@@ -744,7 +782,7 @@ permissions-addon-exceptions =
 permissions-a11y-privacy-checkbox =
     .label = सुलभता सेवांना आपल्या ब्राउझरमध्ये प्रवेश करण्यापासून प्रतिबंधित करा
     .accesskey = a
-permissions-a11y-privacy-link = अधिक जाणून घ्या
+permissions-a11y-privacy-link = अधिक जाणा
 
 ## Privacy Section - Data Collection
 
@@ -754,7 +792,7 @@ collection-privacy-notice = गोपनीयता सूचना
 collection-health-report =
     .label = { -vendor-short-name } ला तांत्रिक व परस्परसंवाद माहिती पाठविण्यासाठी { -brand-short-name } ला परवानगी द्या
     .accesskey = r
-collection-health-report-link = आणखी जाणा
+collection-health-report-link = अधिक जाणा
 collection-studies =
     .label = { -brand-short-name } ला studies प्रस्थापित करून चालवण्याची परवानगी द्या
 collection-studies-link = { -brand-short-name } studies पहा
@@ -764,11 +802,11 @@ collection-health-report-disabled = माहिती अहवाल देण
 collection-browser-errors =
     .label = { -brand-short-name } ला { -vendor-short-name } यास ब्राऊजरच्या चुकांचा अहवाल(चुकीचे संदेश धरून) पाठवण्यास परवानगी द्या
     .accesskey = b
-collection-browser-errors-link = आणखी जाणा
+collection-browser-errors-link = अधिक जाणा
 collection-backlogged-crash-reports =
     .label = आपल्यावतीने { -brand-short-name } ला बॅकलॉग क्रॅश अहवाल पाठवण्याची परवानगी दया
     .accesskey = c
-collection-backlogged-crash-reports-link = आणखी जाणा
+collection-backlogged-crash-reports-link = अधिक जाणा
 
 ## Privacy Section - Security
 ##

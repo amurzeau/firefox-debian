@@ -6,6 +6,8 @@ do-not-track-description = વેબસાઇટ્સને "ટ્રેક �
 do-not-track-learn-more = વધુ શીખો
 do-not-track-option-default =
     .label = માત્ર ટ્રૅકિંગ પ્રોટેક્શનનો ઉપયોગ કરતી વખતે
+do-not-track-option-default-content-blocking =
+    .label = જ્યારે { -brand-short-name } તપાસ કરેલા ટ્રેકર્સને અવરોધિત કરવા માટે સેટ કરેલું હોય ત્યારે
 do-not-track-option-always =
     .label = હંમેશા
 pref-page =
@@ -90,6 +92,9 @@ extension-controlled-privacy-containers = એક્સ્ટેંશન, <img d
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = એક્સ્ટેન્શન, <img data-l10n-name="icon"/> { $name }, ટ્રેકિંગ સંરક્ષણને નિયંત્રિત કરી રહ્યું છે.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = એક્સ્ટેન્શન, <img data-l10n-name="icon"/>{ $name }, આ સેટિંગને નિયંત્રિત કરી રહ્યું છે.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = એક એક્સ્ટેન્શન, <img data-l10n-name="icon"/> { $name }, નિયંત્રિત કરી રહ્યું છે કે { -brand-short-name } કેવી રીતે ઇન્ટરનેટ સાથે જોડાય છે.
@@ -203,6 +208,9 @@ choose-button =
     .label = પસંદ કરો...
     .accesskey = o
 choose-browser-language-description = { -brand-short-name } માંથી મેનુઓ, સંદેશાઓ અને સૂચનાઓ પ્રદર્શિત કરવા માટે ઉપયોગમાં લેવાતા ભાષાઓને પસંદ કરો.
+manage-browser-languages-button =
+    .label = વિકલ્પો સેટ કરો ...
+    .accesskey = I
 confirm-browser-language-change-description = આ ફેરફારોને લાગુ કરવા માટે { -brand-short-name } પુનઃપ્રારંભ કરો
 confirm-browser-language-change-button = લાગુ કરો અને પુનઃપ્રારંભ કરો
 translate-web-pages =
@@ -319,8 +327,9 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = નેટવર્ક પ્રોક્સી
+network-settings-title = નેટવર્ક સેટિંગ્સ
 network-proxy-connection-description = કેવી રીતે { -brand-short-name } ઇન્ટરનેટ સાથે જોડાય છે તે ગોઠવો.
-network-proxy-connection-learn-more = વધુ જાણો
+network-proxy-connection-learn-more = વધુ શીખો
 network-proxy-connection-settings =
     .label = સેટીંગ...
     .accesskey = e
@@ -557,9 +566,6 @@ history-dontremember-description = { -brand-short-name } ખાનગી બ્�
 history-private-browsing-permanent =
     .label = હંમેશા ખાનગી બ્રાઉઝીંગ સ્થિતિ વાપરો
     .accesskey = p
-history-remember-option =
-    .label = મારુ બ્રાઉઝીંગ અને ડાઉનલોડ ઇતિહાસને યાદ રાખો
-    .accesskey = b
 history-remember-browser-option =
     .label = બ્રાઉઝીંગ અને ડાઉનલોડ ઇતિહાસને યાદ રાખો
     .accesskey = b
@@ -589,7 +595,7 @@ sitedata-accept-cookies-option =
     .label = વેબસાઇટ્સથી કૂકીઝ અને સાઇટ ડેટાને સ્વીકારો (ભલામણ કરેલ).
     .accesskey = A
 sitedata-block-cookies-option =
-    .label = કૂકીઝ અને સાઇટ ડેટાને અવરોધિત કરો (વેબસાઇટ્સને તોડી શકે છે)
+    .label = કૂકીઝ અને સાઇટ ડેટાને અવરોધિત કરો (વેબસાઇટ્સને બંધ કરવા કારણ બની શકે છે)
     .accesskey = B
 sitedata-keep-until = ત્યાં સુધી રાખો
     .accesskey = u
@@ -621,9 +627,9 @@ sitedata-block-trackers-option =
     .label = તૃતીય-પક્ષ ટ્રેકર્સ
 sitedata-block-unvisited-option =
     .label = મુલાકાત લીધેલી વેબસાઇટ્સ પરથી કૂકીઝ
-sitedata-block-all-third-parties-option =
-    .label = બધી તૃતીય-પક્ષ કૂકીઝ
-sitedata-block-always-option =
+sitedata-block-all-third-party-option =
+    .label = બધી તૃતીય-પક્ષ કૂકીઝ (વેબસાઇટ્સને બંધ કરવા કારણ બની શકે છે)
+sitedata-block-all-option =
     .label = બધી કૂકીઝ (વેબસાઇટ્સને બંધ કરવા કારણ બની શકે છે)
 sitedata-clear =
     .label = માહિતી સાફ કરો…
@@ -634,6 +640,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = અપવાદો...
     .accesskey = E
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = સામગ્રી અવરોધમાંની તમારી સેટિંગ્સ કૂકીઝ અને સાઇટ માહિતી સેટિંગ્સમાં ફેરફારોને અટકાવી રહી છે.
 
 ## Privacy Section - Address Bar
 
@@ -670,23 +680,42 @@ content-blocking-category-label = શું અવરોધ કરવું ત�
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = ધીમા ટ્રેકિંગ તત્વો
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = ધીરેથી લોડ થતાં ટ્રેકર્સ
     .accesskey = S
-content-blocking-fastblock-description = તૃતીય-પક્ષની સામગ્રીને અવરોધ કરે છે જે લોડ થવામાં 5 સેકંડથી વધુ સમય લે છે.
-content-blocking-fastblock-option-enabled =
-    .label = હંમેશા અવરોધિત કરો
-content-blocking-fastblock-option-disabled =
-    .label = ક્યારેય અવરોધિત કરશો નહીં
-content-blocking-tracking-protection-label = ટ્રેકર્સ
+content-blocking-fastblock-new-description = ફક્ત એજ ટ્રેકર્સને અવરોધિત કરો કે જે પાનાંને ઝડપથી ખોલવાથી અટકાવે છે.
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = શોધી કાઢેલાં બધાં ટ્રેકર્સ
     .accesskey = T
-content-blocking-tracking-protection-description = બધા જાણીતા ટ્રેકર્સને અવરોધ કરે છે
-content-blocking-tracking-protection-option-enabled =
-    .label = હંમેશા અવરોધિત કરો
-content-blocking-tracking-protection-option-pbm =
-    .label = ફક્ત ખાનગી વિંડોઝમાં અવરોધિત કરો
-content-blocking-tracking-protection-option-disabled =
-    .label = ક્યારેય અવરોધિત કરશો નહીં
-content-blocking-tracking-protection-change-blocklist = અવરોધ સૂચિ બદલો...
+content-blocking-tracking-protection-new-description = તમામ જાણીતા ટ્રેકર્સને અવરોધિત કરો. (કેટલાક પાનાંને લોડ થવાથી અટકાવી શકે છે.)
+content-blocking-tracking-protection-option-always =
+    .label = હંમેશાં
+    .accesskey = A
+content-blocking-tracking-protection-option-private =
+    .label = ફકત ખાનગી વિંડોઝમાં જ
+    .accesskey = P
+content-blocking-tracking-protection-change-block-list = અવરોધ સૂચિ બદલો
+content-blocking-third-party-cookies-label =
+    .label = તૃતીય-પક્ષ કૂકીઝ
+    .accesskey = C
+content-blocking-reject-trackers-description = તમામ તૃતીય-પક્ષની કૂકીઝને અથવા ફક્ત ટ્રેકર્સ દ્વારા સેટ કરેલ કૂકીઝને અવરોધિત કરો.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = કુકીઝ અને સાઇટ માહિતમાં તમારી સેટિંગ્સ તૃતીય-પક્ષ કૂકીઝ સેટિંગ્સમાં ફેરફારોને અટકાવી રહી છે.
+content-blocking-change-cookie-settings =
+    .label = કૂકી સેટિંગ્સ બદલો
+    .accesskey = S
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = ટ્રેકર્સ (ભલામણ કરેલ)
+    .accesskey = k
+content-blocking-reject-trackers-block-trackers-option =
+    .label = ટ્રેકર્સ
+    .accesskey = k
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = બધી તૃતીય-પક્ષની કૂકીઝ (વેબસાઇટ્સને તોડી શકે છે)
+    .accesskey = A
 
 ## Privacy Section - Tracking
 
@@ -775,7 +804,7 @@ collection-privacy-notice = ગોપનીયતા સૂચના
 collection-health-report =
     .label = { -brand-short-name } ને મંજૂરી આપો { -vendor-short-name } ને ટેક્નિકલ અને ક્રિયાપ્રતિક્રિયા ડેટા મોકલવા માટે.
     .accesskey = r
-collection-health-report-link = વધારે શીખો
+collection-health-report-link = વધુ શીખો
 collection-studies =
     .label = { -brand-short-name } અભ્યાસને ઇન્સ્ટોલ અને ચલાવવાની મંજૂરી આપો
 collection-studies-link = { -brand-short-name } અભ્યાસો જુઓ
@@ -785,11 +814,11 @@ collection-health-report-disabled = આ તૈચાર કરેલ રૂપ�
 collection-browser-errors =
     .label = { -brand-short-name } ને Mozilla માટે બ્રાઉઝર ભૂલ અહેવાલો (ભૂલ સંદેશાઓ સહિત) { -vendor-short-name } ને મોકલવા માટે મંજૂરી આપો
     .accesskey = b
-collection-browser-errors-link = વધુ જાણો
+collection-browser-errors-link = વધુ શીખો
 collection-backlogged-crash-reports =
     .label = તમારા વતી { -brand-short-name } ને બૅકલોગ ક્રેશ રિપોર્ટ્સ મોકલવાની મંજૂરી આપો
     .accesskey = c
-collection-backlogged-crash-reports-link = વધારે શીખો
+collection-backlogged-crash-reports-link = વધુ શીખો
 
 ## Privacy Section - Security
 ##

@@ -6,6 +6,8 @@ do-not-track-description = Sendi al retejoj sciigon, ke vi ne volas esti spurata
 do-not-track-learn-more = Pli da informo
 do-not-track-option-default =
     .label = Nur dum uzo de protekto kontraŭ spurado
+do-not-track-option-default-content-blocking =
+    .label = Nur kiam { -brand-short-name } estas agordita por trovi spurilojn
 do-not-track-option-always =
     .label = Ĉiam
 pref-page =
@@ -90,6 +92,9 @@ extension-controlled-privacy-containers = La etendaĵo <img data-l10n-name="icon
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = La etendaĵo <img data-l10n-name="icon"/> { $name } regas la protekton kontraŭ spurado.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = La etendaĵo <img data-l10n-name="icon"/> { $name } regas tiun ĉi agordon.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = La etendaĵo <img data-l10n-name="icon"/> { $name } regas la manieron, kiel { -brand-short-name } konektiĝas al la reto.
@@ -118,7 +123,7 @@ startup-header = Starto
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
     .label = Permesi ke { -brand-short-name } kaj Firefox funkciu samtempe
-use-firefox-sync = Konsileto: tio ĉi uzas apartajn profilojn. Uzu Speguli por dividi datumojn inter ili.
+use-firefox-sync = Konsileto: tio ĉi uzas apartajn profilojn. Uzu { -sync-brand-short-name } por dividi datumojn inter ili.
 get-started-not-logged-in = Komenci seancon en { -sync-brand-short-name }…
 get-started-configured = Malfermi preferojn de { -sync-brand-short-name }
 always-check-default =
@@ -203,6 +208,9 @@ choose-button =
     .label = Elekti…
     .accesskey = l
 choose-browser-language-description = Elektu la lingvojn, kiuj estos uzata por montri menuojn, mesaĝojn kaj sciigojn de { -brand-short-name }.
+manage-browser-languages-button =
+    .label = Elekti alternativojn…
+    .accesskey = E
 confirm-browser-language-change-description = Restartigi { -brand-short-name } por apliki tiun ĉi ŝanĝojn
 confirm-browser-language-change-button = Apliki kaj restartigi
 translate-web-pages =
@@ -319,6 +327,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Retperanto
+network-settings-title = Retaj agordoj
 network-proxy-connection-description = Agordi la manieron, kiel { -brand-short-name } konektiĝas al la reto.
 network-proxy-connection-learn-more = Pli da informo
 network-proxy-connection-settings =
@@ -557,9 +566,6 @@ history-dontremember-description = { -brand-short-name } uzos la samajn agordojn
 history-private-browsing-permanent =
     .label = Ĉiam uzi la reĝimon de privata retumo
     .accesskey = p
-history-remember-option =
-    .label = Memori mian historion de retumo kaj elŝutoj
-    .accesskey = h
 history-remember-browser-option =
     .label = Memori retuman kaj elŝutan historiojn
     .accesskey = r
@@ -621,10 +627,10 @@ sitedata-block-trackers-option =
     .label = Nerektaj spuriloj
 sitedata-block-unvisited-option =
     .label = Kuketoj el nevizititaj retejoj
-sitedata-block-all-third-parties-option =
-    .label = Ĉiuj nerektaj kuketoj
-sitedata-block-always-option =
-    .label = Ĉiuj kuketoj (tio povas misfunkciigi kelkajn retejojn)
+sitedata-block-all-third-party-option =
+    .label = Ĉiuj nerektaj kuketoj (tio povus misfunkciigi retejojn)
+sitedata-block-all-option =
+    .label = Ĉiuj kuketoj (tio misfunkciigos retejojn)
 sitedata-clear =
     .label = Viŝi datumojn…
     .accesskey = V
@@ -634,6 +640,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Esceptoj…
     .accesskey = t
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Viaj agordoj en blokado de enhavo malpermesas ŝanĝi la agordojn por kuketoj kaj retejaj datumoj.
 
 ## Privacy Section - Address Bar
 
@@ -670,23 +680,42 @@ content-blocking-category-label = Elektu, kion bloki
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Malrapide ŝargatajn spurilojn
-    .accesskey = M
-content-blocking-fastblock-description = Bloki nerektan enhavon kiu bezonas pli ol kvin sekundoj por ŝargiĝi
-content-blocking-fastblock-option-enabled =
-    .label = Ĉiam bloki
-content-blocking-fastblock-option-disabled =
-    .label = Neniam bloki
-content-blocking-tracking-protection-label = Spurilojn
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Spuriloj, kiuj ŝargiĝas malrapide
+    .accesskey = m
+content-blocking-fastblock-new-description = Bloki nur spurilojn, kiuj malrapidigas la rapidan ŝargadon de paĝoj.
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Ĉiujn trovitajn spurilojn
+    .accesskey = t
+content-blocking-tracking-protection-new-description = Bloki ĉiujn konatajn spurilojn. (tio povas eviti la ŝargadon de kelkaj paĝoj.)
+content-blocking-tracking-protection-option-always =
+    .label = Ĉiam
+    .accesskey = m
+content-blocking-tracking-protection-option-private =
+    .label = Nur en privataj fenestroj
+    .accesskey = p
+content-blocking-tracking-protection-change-block-list = Ŝanĝi liston de blokado
+content-blocking-third-party-cookies-label =
+    .label = Nerektaj kuketoj
+    .accesskey = N
+content-blocking-reject-trackers-description = Bloki ĉiujn nerektajn kuketojn aŭ nur tiujn, kiuj estas difinitaj de spuriloj.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Viaj agordoj en kuketoj kaj retejaj datumoj malpermesas ŝanĝi la agordojn de nerektaj kuketoj.
+content-blocking-change-cookie-settings =
+    .label = Ŝanĝi agordojn de kuketoj
+    .accesskey = k
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Spuriloj (rekomendata)
     .accesskey = S
-content-blocking-tracking-protection-description = Bloki ĉiujn konatajn spurilojn (Rimarko: tio povus ankaŭ malhelpi la ŝargadon de kelkaj paĝoj).
-content-blocking-tracking-protection-option-enabled =
-    .label = Ĉiam bloki
-content-blocking-tracking-protection-option-pbm =
-    .label = Bloki nur en privataj fenestroj
-content-blocking-tracking-protection-option-disabled =
-    .label = Neniam bloki
-content-blocking-tracking-protection-change-blocklist = Ŝanĝi liston de blokado…
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Spuriloj
+    .accesskey = S
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Ĉiuj nerektaj kuketoj (tio povus misfunkciigi retejojn)
+    .accesskey = n
 
 ## Privacy Section - Tracking
 

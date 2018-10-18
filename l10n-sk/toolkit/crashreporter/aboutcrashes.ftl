@@ -4,12 +4,20 @@
 
 crash-reports-title = Správy o zlyhaní
 clear-all-reports-label = Odstrániť všetky správy
-delete-confirm-title = Naozaj chcete odstrániť?
+delete-button-label = Odstrániť všetky
+delete-confirm-title = Určite?
 delete-confirm-description = Týmto odstránite všetky správy o zlyhaní. Akciu nie je možné vrátiť späť.
+delete-unsubmitted-description = Týmto odstránite všetky neodoslané správy o zlyhaní. Akciu nie je možné vrátiť späť.
+delete-submitted-description = Týmto odstránite zoznam odoslaných správ o zlyhaní, no nie odoslané údaje. Akciu nie je možné vrátiť späť.
 crashes-unsubmitted-label = Neodoslané správy o zlyhaní
 id-heading = Identifikátor správy
 date-crashed-heading = Dátum zlyhania
+submit-crash-button-label = Odoslať
+# This text is used to replace the label of the crash submit button
+# if the crash submission fails.
+submit-crash-button-failure-label = Zlyhalo
 crashes-submitted-label = Odoslané správy o zlyhaní
 date-submitted-heading = Dátum odoslania
+view-crash-button-label = Zobraziť
 no-reports-label = Neboli odoslané žiadne správy o zlyhaní.
 no-config-label = Táto aplikácia nebola nastavená na zobrazovanie správ o zlyhaní. Musí byť nastavená predvoľba <code>breakpad.reportURL</code>.

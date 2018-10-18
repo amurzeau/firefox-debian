@@ -27,12 +27,6 @@
 <!ENTITY firstrun_button_next "पुढे">
 
 <!ENTITY firstrun_tabqueue_title "दुवे">
-<!-- Localization note (firstrun_tabqueue_message): 'Tab queue' is a feature that allows users to queue up or save links from outside of Firefox (without switching apps) - these links will be loaded in Firefox the next time Firefox is opened. -->
-<!ENTITY firstrun_tabqueue_message_off "टॅब रांग सुरु करा">
-<!ENTITY firstrun_tabqueue_subtext_off "जेव्हा इतर अॅप्स टिचकी देता तेव्हा दुवे &brandShortName; मध्ये नंतरसाठी साठवा.">
-
-<!ENTITY firstrun_tabqueue_message_on "सफल!">
-<!ENTITY firstrun_tabqueue_subtext_on "आपण हे कधी पण &settings; मध्ये &pref_category_general; च्या खाली बंद करु शकता.">
 
 <!ENTITY firstrun_readerview_title "लेख">
 <!-- Localization note (firstrun_readerview_message): This is a casual way of describing getting rid of unnecessary things, and is referring to simplifying websites so only the article text and images are visible, removing unnecessary headers or ads. -->
@@ -68,8 +62,7 @@
 <!ENTITY  crash_close_label "बंद करा">
 <!ENTITY  crash_restart_label "&brandShortName; पुनःसुरू करा">
 
-<!ENTITY url_bar_default_text2 "पत्ता शोधा किंवा द्या">
-
+<!ENTITY url_bar_default_text2 "शोधा किंवा पत्ता द्या">
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
      icon in the url bar. -->
@@ -197,7 +190,7 @@
 <!ENTITY pref_category_vendor_summary2 "&brandShortName; बद्दल, FAQs, अभिप्राय">
 <!ENTITY pref_category_datareporting "माहिती पर्याय">
 <!ENTITY pref_category_logins "लॉगिन्स">
-<!ENTITY pref_learn_more "आणखी शिका">
+<!ENTITY pref_learn_more "अधिक जाणा">
 <!ENTITY pref_category_installed_search_engines "इंस्टॉल केलेले शोध इंजिन">
 <!ENTITY pref_category_add_search_providers "आणखी शोध पुरविणारे समाविष्ट करा">
 <!ENTITY pref_category_search_restore_defaults "शोध इंजिन पुनःस्थापित करा">
@@ -215,7 +208,6 @@
      “storing data”. -->
 <!ENTITY pref_category_advanced_summary3 "टॅब्स, प्लगइन, विकसक साधने मूळस्थितीत आणा">
 <!ENTITY pref_category_notifications "सूचना">
-<!ENTITY pref_category_notifications_summary "नवीन वैशिष्ट्ये, वेबसाइट अद्ययावत">
 <!ENTITY pref_category_notifications_summary2 "नवीन वैशिष्ट्ये, उत्पादन सल्ले">
 <!ENTITY pref_developer_remotedebugging_usb "USB द्वारे दूरस्थ डीबगिंग">
 <!ENTITY pref_developer_remotedebugging_wifi "Wi-Fi द्वारे दूरस्थ डीबगिंग">
@@ -224,7 +216,7 @@
 <!ENTITY pref_manage_logins "लॉगिन्स व्यवस्थापित करा">
 
 <!ENTITY pref_category_home "मुख्य पटल">
-<!ENTITY pref_category_home_summary "घरपानाची स्वपसंती करा">
+<!ENTITY pref_category_home_summary "मुख्यपृष्ठ सानुकूलीत करा">
 <!ENTITY pref_category_home_panels "फलक">
 <!ENTITY pref_category_home_add_ons "ॲड-ऑन्स">
 <!ENTITY pref_home_updates2 "मजकूर सुधारणा">
@@ -468,7 +460,7 @@
 <!ENTITY quit "बाहेर पडा">
 
 <!ENTITY addons "ॲड-ऑन्स">
-<!ENTITY logins "लॉग-इन्स">
+<!ENTITY logins "लॉगिन">
 <!ENTITY downloads "डाउनलोडस्">
 <!ENTITY char_encoding "कॅरेक्टर एनकोडिंग">
 
@@ -596,7 +588,7 @@
 <!ENTITY button_clear "पुसा">
 <!ENTITY button_copy "प्रत बनवा">
 
-<!ENTITY home_top_sites_title "खास साईट्स">
+<!ENTITY home_top_sites_title "खास साईट">
 <!-- Localization note (home_top_sites_add): This string is used as placeholder
      text underneath empty thumbnails in the Top Sites page on about:home. -->
 <!ENTITY home_top_sites_add "साईट जोडा">
@@ -675,7 +667,7 @@ with that structure, consider a translation which ignores the preceding domain a
 just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY identity_connection_secure "सुरक्षित जोडणी">
 <!ENTITY identity_connection_insecure "असुरक्षित जोडणी">
-<!ENTITY identity_connection_chromeui "हे सुरक्षित &brandShortName; पान आहे.">
+<!ENTITY identity_connection_chromeui "हे सुरक्षित &brandShortName; पृष्ठ आहे">
 
 <!-- Mixed content notifications in site identity popup -->
 <!ENTITY mixed_content_blocked_all1 "&brandShortName;ने या पानावरचा असुरक्षित आशय अडवला आहे.">
@@ -691,7 +683,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY doorhanger_tracking_message_disabled2 "आपल्या ब्राउझिंगचा मागोवा घेऊ शकणारे घटक या पानामधे आहेत.">
 
 <!-- Common mixed and tracking content strings in site identity popup -->
-<!ENTITY learn_more "आणखी शिका">
+<!ENTITY learn_more "अधिक जाणा">
 <!ENTITY enable_protection "सुरक्षा सक्रीय करा">
 <!ENTITY disable_protection "सुरक्षा निष्क्रिय करा">
 
@@ -854,7 +846,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_message "वाचक पद्धत घटकांना ऑफलाइन वाचण्यासाठी वाचनखूण लावा.">
 <!ENTITY helper_triple_readerview_open_button "वाचनखुणांमध्ये समाविष्ट करा">
 
-<!ENTITY activity_stream_topsites "खास साईट्स">
+<!ENTITY activity_stream_topsites "खास साईट">
 <!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->
 <!ENTITY activity_stream_topstories "&brandPocket; द्वारे शिफारस केलेले">
 <!ENTITY activity_stream_highlights "महत्त्वाचे">
@@ -907,3 +899,8 @@ Picture-in-picture mini window -->
 <!ENTITY default_notification_channel "&brandShortName;">
 <!ENTITY mls_notification_channel "&vendorShortName; स्थान सेवा">
 <!ENTITY download_notification_channel "डाउनलोड">
+<!ENTITY media_notification_channel "मीडिया प्लेबॅक">
+<!-- These push notifications come without a specific channel and/or name from Leanplum -->
+<!ENTITY leanplum_default_notifications_channel "&brandShortName; पुश सुचना">
+<!ENTITY updater_notification_channel "अॅप अद्यतने">
+<!ENTITY synced_tabs_notification_channel "समकालीत टॅब">

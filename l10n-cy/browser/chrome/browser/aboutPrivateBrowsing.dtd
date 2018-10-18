@@ -2,11 +2,6 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!-- LOCALIZATION NOTE (aboutPrivateBrowsing.title):
-     Please ensure this exactly matches tabs.emptyPrivateTabTitle in tabbrowser.properties -->
-<!ENTITY aboutPrivateBrowsing.title                      "Pori Preifat">
-<!ENTITY aboutPrivateBrowsing.notPrivate.title           "Agor ffenestr breifat?">
-
 <!ENTITY aboutPrivateBrowsing.notPrivate                 "Nid ydych mewn ffenestr breifat ar hyn o bryd.">
 <!ENTITY privatebrowsingpage.openPrivateWindow.label     "Agor Ffenestr Breifat">
 <!ENTITY privatebrowsingpage.openPrivateWindow.accesskey "F">
@@ -25,6 +20,7 @@
 <!ENTITY aboutPrivateBrowsing.info.saved.after2          " eich:">
 <!ENTITY aboutPrivateBrowsing.info.downloads             "llwythi">
 <!ENTITY aboutPrivateBrowsing.info.bookmarks             "nodau tudalen">
+<!ENTITY aboutPrivateBrowsing.info.clipboard             "testun wedi ei gopïo">
 <!ENTITY aboutPrivateBrowsing.note.before                "Nid yw Pori Preifat ">
 <!ENTITY aboutPrivateBrowsing.note.emphasize             "yn eich gwneud yn anhysbys">
 <!ENTITY aboutPrivateBrowsing.note.after                 " ar y Rhyngrwyd. Cofiwch y bydd eich cyflogwr a'ch darparwr gwasanaeth rhyngrwyd yn gallu olrhain y tudalennau i chi ymweld â nhw.">
@@ -35,3 +31,6 @@
 <!ENTITY trackingProtection.title                        "Diogelwch Rhag Tracio">
 <!ENTITY trackingProtection.description2                 "Mae rhai gwefannau defnyddio tracwyr sy'n gallu dilyn eich gweithgaredd ar draws y Rhyngrwyd. Gyda diogelu rhag tracio bydd Firefox yn rhwystro nifer o'r tracwyr sy'n gallu casglu gwybodaeth am eich ymddygiad pori.">
 <!ENTITY trackingProtection.startTour1                   "Gweld sut mae hyn yn gweithio">
+
+<!ENTITY contentBlocking.title                           "Rhwystro Cynnwys">
+<!ENTITY contentBlocking.description                     "Mae rhai gwefannau yn defnyddio tracwyr sy'n monitro eich gweithgaredd ar draws y rhyngrwyd. Mewn ffenestri preifat mae Rhwystro Cynnwys gan Firefox yn rhwystro'n awtomatig unrhyw dracwyr sy'n gallu casglu gwybodaeth am eich ymddygiad pori.">

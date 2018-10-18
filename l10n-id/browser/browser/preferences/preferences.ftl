@@ -6,6 +6,8 @@ do-not-track-description = Kirim sinyal “Jangan Lacak” ke situs web bahwa An
 do-not-track-learn-more = Pelajari lebih lanjut
 do-not-track-option-default =
     .label = Hanya saat menggunakan Perlindungan Pelacakan
+do-not-track-option-default-content-blocking =
+    .label = Hanya saat { -brand-short-name } disetel untuk memblokir Pelacak Terdeteksi
 do-not-track-option-always =
     .label = Selalu
 pref-page =
@@ -191,6 +193,9 @@ choose-button =
     .label = Pilih…
     .accesskey = P
 choose-browser-language-description = Pilih bahasa yang digunakan untuk menampilkan menu, pesan, dan notifikasi dari { -brand-short-name }.
+manage-browser-languages-button =
+    .label = Setel Alternatif…
+    .accesskey = S
 confirm-browser-language-change-description = Mulai ulang { -brand-short-name } untuk menerapkan perubahan
 confirm-browser-language-change-button = Terapkan dan Mulai Ulang
 translate-web-pages =
@@ -307,6 +312,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Proksi Jaringan
+network-settings-title = Setelan Jaringan
 network-proxy-connection-description = Atur bagaimana { -brand-short-name } tersambung ke internet.
 network-proxy-connection-learn-more = Pelajari lebih lanjut
 network-proxy-connection-settings =
@@ -545,9 +551,6 @@ history-dontremember-description = { -brand-short-name } akan menggunakan pengat
 history-private-browsing-permanent =
     .label = Selalu gunakan mode penjelajahan pribadi
     .accesskey = p
-history-remember-option =
-    .label = Ingat riwayat penjelajahan dan unduhan saya
-    .accesskey = r
 history-remember-browser-option =
     .label = Ingat riwayat penjelajahan dan unduhan
     .accesskey = r
@@ -599,14 +602,20 @@ sitedata-allow-cookies-option =
 sitedata-disallow-cookies-option =
     .label = Blokir kuki dan data situs
     .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Tipe yang diblokir
+    .accesskey = T
 sitedata-block-trackers-option-recommended =
     .label = Pelacak pihak ketiga (disarankan)
 sitedata-block-trackers-option =
     .label = Pelacak pihak ketiga
 sitedata-block-unvisited-option =
     .label = Kuki dari situs web yang belum dikunjungi
-sitedata-block-all-third-parties-option =
-    .label = Seluruh kuki pihak ketiga
+sitedata-block-all-third-party-option =
+    .label = Semua kuki pihak ketiga (mungkin menyebabkan situs tidak bekerja)
+sitedata-block-all-option =
+    .label = Semua kuki (akan menyebabkan situs tidak bekerja)
 sitedata-clear =
     .label = Hapus Data…
     .accesskey = H
@@ -652,23 +661,42 @@ content-blocking-category-label = Pilih yang ingin diblokir
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Elemen Pelacakan yang Lambat
-    .accesskey = e
-content-blocking-fastblock-description = Blokir konten pihak ketiga yang membutuhkan waktu lebih dari 5 detik untuk dimuat.
-content-blocking-fastblock-option-enabled =
-    .label = Selalu blokir
-content-blocking-fastblock-option-disabled =
-    .label = Jangan pernah blokir
-content-blocking-tracking-protection-label = Pelacak
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Pelacak yang Dimuat Lambat
+    .accesskey = L
+content-blocking-fastblock-new-description = Hanya blokir pelacak yang membuat laman lambat dimuat.
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Semua Pelacak Terdeteksi
     .accesskey = P
-content-blocking-tracking-protection-description = Blokir semua pelacak dikenal (Catatan: juga dapat mencegah beberapa laman untuk dimuat).
-content-blocking-tracking-protection-option-enabled =
-    .label = Selalu blokir
-content-blocking-tracking-protection-option-pbm =
-    .label = Hanya blokir di jendela pribadi
-content-blocking-tracking-protection-option-disabled =
-    .label = Jangan pernah blokir
-content-blocking-tracking-protection-change-blocklist = Ubah Daftar Blokir…
+content-blocking-tracking-protection-new-description = Blokir semua pelacak diketahui (mungkin mencegah beberapa laman dimuat).
+content-blocking-tracking-protection-option-always =
+    .label = Selalu
+    .accesskey = e
+content-blocking-tracking-protection-option-private =
+    .label = Hanya di jendela pribadi
+    .accesskey = p
+content-blocking-tracking-protection-change-block-list = Ubah daftar blokir
+content-blocking-third-party-cookies-label =
+    .label = Kuki Pihak Ketiga
+    .accesskey = K
+content-blocking-reject-trackers-description = Blokir semua kuki pihak ketiga atau hanya yang diatur oleh pelacak.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Setelan Anda di Kuki dan Data Situs mencegah perubahan pada setelan Kuki Pihak Ketiga.
+content-blocking-change-cookie-settings =
+    .label = Ubah Setelan Kuki
+    .accesskey = U
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Pelacak (direkomendasikan)
+    .accesskey = k
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Pelacak
+    .accesskey = k
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Semua kuki pihak ketiga (mungkin menyebabkan situs tidak bekerja)
+    .accesskey = a
 
 ## Privacy Section - Tracking
 

@@ -1,0 +1,70 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## The Enterprise Policies feature is aimed at system administrators
+## who want to deploy these settings across several Firefox installations
+## all at once. This is traditionally done through the Windows Group Policy
+## feature, but the system also supports other forms of deployment.
+## These are short descriptions for individual policies, to be displayed
+## in the documentation section in about:policies.
+
+policy-AppUpdateURL = Ange anpassad URL för programuppdateringar.
+policy-Authentication = Ställ in integrerad autentisering för webbplatser som stödjer det.
+policy-BlockAboutAddons = Blockera tillgång till tilläggshanteraren (about:addons)
+policy-BlockAboutConfig = Blockera tillgång till sidan about:config.
+policy-BlockAboutProfiles = Blockera tillgång till sidan about:profiles.
+policy-BlockAboutSupport = Blockera tillgång till sidan about:support.
+policy-Bookmarks = Skapa bokmärken i bokmärkesfältet, bokmärkesmenyn eller en angiven mapp inuti dem.
+policy-Certificates = Huruvida du ska använda inbyggda certifikat eller inte. Denna policy är endast för Windows just nu.
+policy-Cookies = Tillåt eller neka webbplatser att lagra kakor
+policy-DisableAppUpdate = Förhindra att webbläsaren uppdateras.
+policy-DisableBuiltinPDFViewer = Inaktivera PDF.js, den inbyggda PDF-visaren i { -brand-short-name }.
+policy-DisableDeveloperTools = Blockera tillgång till utvecklarverktygen.
+policy-DisableFeedbackCommands = Inaktivera menyalternativen att skicka feedback från hjälpmenyn (Skicka in feedback och rapportera vilseledande webbplats).
+policy-DisableFirefoxAccounts = Inaktivera { -fxaccount-brand-name }-baserade tjänster, inklusive Sync.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Inaktivera funktionen Firefox Screenshots
+policy-DisableFirefoxStudies = Förhindra { -brand-short-name } att genomföra undersökningar.
+policy-DisableForgetButton = Förhindra tillgång till knappen Glöm.
+policy-DisableFormHistory = Spara inte sök- och formulärhistorik.
+policy-DisableMasterPasswordCreation = Om aktiv, kan inte ett huvudlösenord skapas.
+policy-DisablePocket = Inaktivera funktionen att spara webbsidor till Pocket.
+policy-DisablePrivateBrowsing = Inaktivera privat surfning.
+policy-DisableProfileImport = Inaktivera menyalternativet att importera data från en annan webbläsare.
+policy-DisableProfileRefresh = Inaktivera knappen Återställ { -brand-short-name } på sidan about:support.
+policy-DisableSafeMode = Inaktivera funktionen att starta om i felsäkert läge. OBS: Att använda knappen Shift för att starta i felsäkert läge kan bara inaktiveras via grupprinciper på Windows.
+policy-DisableSecurityBypass = Förhindra användaren från att gå vidare vid vissa säkerhetsvarningar.
+policy-DisableSetDesktopBackground = Inaktivera menyalternativet Använd bild som skrivbordsbakgrund.
+policy-DisableSetAsDesktopBackground = Inaktivera menyalternativet Använd som skrivbordsbakgrund för bilder.
+policy-DisableSystemAddonUpdate = Förhindra webbläsaren att installera och uppdatera systemtillägg.
+policy-DisableTelemetry = Stäng av telemetri.
+policy-DisplayBookmarksToolbar = Visa bokmärkesfältet som standard.
+policy-DisplayMenuBar = Visa menyraden som standard.
+policy-DontCheckDefaultBrowser = Inaktivera kontrollen av förvald webbläsare vid start.
+# “lock” means that the user won’t be able to change this setting
+policy-EnableTrackingProtection = Aktivera eller inaktivera Innehållsblockering med möjlighet att låsa valet.
+# A “locked” extension can’t be disabled or removed by the user. This policy
+# takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
+# English or translate them as verbs. See also:
+# https://github.com/mozilla/policy-templates/blob/master/README.md#extensions-machine-only
+policy-Extensions = Installera, avinstallera eller låsa tillägg. Installeringsalternativet tar webbadresser eller sökvägar som parametrar. Alternativen för borttagning och låsning använder tilläggs-ID.
+policy-FlashPlugin = Tillåt eller neka att insticksmodulen Flash används.
+policy-HardwareAcceleration = Om inaktiv, stäng av hårdvaruacceleration.
+# “lock” means that the user won’t be able to change this setting
+policy-Homepage = Ställ in och eventuellt lås startsidan.
+policy-InstallAddonsPermission = Tillåt vissa webbplatser att installera tillägg.
+policy-NoDefaultBookmarks = Inaktivera skapandet av standardbokmärken som levereras med { -brand-short-name } och smarta bokmärken (Mest besökta, Senast använda etiketter). OBS: denna policy fungerar bara om den är inställd innan profilen används för första gången.
+policy-OfferToSaveLogins = Påtvinga inställningen att tillåta { -brand-short-name } att kunna komma ihåg sparade inloggningar och lösenord. Både värdena sant och falskt accepteras.
+policy-OverrideFirstRunPage = Åsidosätt sidan som visas första gången. Sätt denna policy till blankt om du vill inaktivera sidan som visas första gången.
+policy-OverridePostUpdatePage = Åsidosätt sidan "Vad är nytt" efter uppdateringar. Sätt denna policy till blankt om du vill inaktivera sidan efter uppdateringar.
+policy-Permissions = Ställ in behörigheter för kamera, mikrofon, plats och notifieringar.
+policy-PopupBlocking = Tillåt vissa webbplatser att visa popup-fönster som standard.
+policy-Proxy = Ange inställningar för proxy.
+policy-SanitizeOnShutdown = Rensa all navigeringsdata vid avstängning.
+policy-SearchBar = Ange standardplacering av sökfältet. Användaren kan fortfarande flytta det.
+policy-SearchEngines = Ange sökmotorinställningar. Denna policy finns bara på Extended Support Release (ESR)-versionen.
+# “format” refers to the format used for the value of this policy. See also:
+# https://github.com/mozilla/policy-templates/blob/master/README.md#websitefilter-machine-only
+policy-WebsiteFilter = Blockera besök på webbplatser. Läs dokumentationen för mer detaljer om hur de anges.

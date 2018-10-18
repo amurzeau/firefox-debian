@@ -51,9 +51,9 @@ permissions-invalid-uri-label = Te rugăm să introduci un nume de gazdă valid
 ## Exceptions - Tracking Protection
 
 permissions-exceptions-tracking-protection-window =
-    .title = Excepții - Protecție față de urmărire
+    .title = Excepții - Protecție împotriva urmăririi
     .style = { permissions-window.style }
-permissions-exceptions-tracking-protection-desc = Ai dezactivat protecția față de urmărire pe aceste site-uri web.
+permissions-exceptions-tracking-protection-desc = Ai dezactivat protecția împotriva urmăririi pe aceste site-uri web.
 
 ## Exceptions - Cookies
 
@@ -89,6 +89,9 @@ permissions-exceptions-autoplay-media-window =
     .title = Site-uri web permise - Redare automată
     .style = { permissions-window.style }
 permissions-exceptions-autoplay-media-desc = Poți specifica site-urile cărora le permiți să redea automat elemente multimedia. Scrie adresa exactă a site-ului și clic pe butonul Permite.
+permissions-exceptions-autoplay-media-window2 =
+    .title = Excepții - Redare automată
+    .style = { permissions-window.style }
 permissions-exceptions-autoplay-media-desc2 = Poți specifica ce site-uri web au întotdeauna sau niciodată permisiunea de a reda automat conținut media cu sunet. Tastează adresa a site-ului pe care vrei să-l gestionezi și apoi clic pe Blochează sau Permite.
 
 ## Site Permissions - Notifications

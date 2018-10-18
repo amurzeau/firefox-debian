@@ -6,6 +6,8 @@ do-not-track-description = वेबसाइटों को “डू नॉ�
 do-not-track-learn-more = और अधिक जानें
 do-not-track-option-default =
     .label = ट्रैकिंग का उपयोग करते समय ही
+do-not-track-option-default-content-blocking =
+    .label = केवल जब { -brand-short-name }  ज्ञात ट्रैकर को अवरोधित करने के लिए सेट किया गया है
 do-not-track-option-always =
     .label = हमेशा
 pref-page =
@@ -118,7 +120,6 @@ startup-header = आरंभन
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
     .label = { -brand-short-name } और Firefox को एक ही समय में चलने के लिए स्वीकारें
-use-firefox-sync = संकेत: यह अलग प्रोफाइल का उपयोग करता है. उनके बीच आँकड़ा साझा करने के लिए सिंक का उपयोग करें.
 get-started-not-logged-in = { -sync-brand-short-name } में साइन इन करें…
 get-started-configured = { -sync-brand-short-name } वरीयताएँ खोलें
 always-check-default =
@@ -203,6 +204,9 @@ choose-button =
     .label = चयन करें…
     .accesskey = o
 choose-browser-language-description = { -brand-short-name } से मेन्यु, संदेशों, तथा नोटिफिकेशनों के प्रदर्शित करने वाले भाषाओं का चयन करें.
+manage-browser-languages-button =
+    .label = विकल्प सेट करें...
+    .accesskey = l
 confirm-browser-language-change-description = इन बदलावों को लागु करने के लिए { -brand-short-name } को पुनःप्रारंभ करें.
 confirm-browser-language-change-button = लागु करें तथा पुनः प्रारंभकरें
 translate-web-pages =
@@ -319,6 +323,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = नेटवर्क प्रॉक्सी
+network-settings-title = नेटवर्क सेटिंग
 network-proxy-connection-description = विन्यस्त करें की { -brand-short-name } कैसे इंटरनेट से जुड़ेगा.
 network-proxy-connection-learn-more = अधिक जानें
 network-proxy-connection-settings =
@@ -359,7 +364,7 @@ use-current-pages =
         }
     .accesskey = C
 choose-bookmark =
-    .label = पुस्तचिह्न का उपयोग करें…
+    .label = बुकमार्क का उपयोग करें…
     .accesskey = B
 
 ## Search Section
@@ -404,7 +409,7 @@ search-keyword-warning-title = बीजशब्द अनुकृति
 # Variables:
 #   $name (String) - Name of a search engine.
 search-keyword-warning-engine = आपने एक बीजशब्द चुना है जो अभी "{ $name }" के द्वारा प्रयोग में है. कृपया दूसरा चुनें.
-search-keyword-warning-bookmark = आपने एक बीजशब्द चुना है जो अभी पुस्तचिह्न के द्वारा प्रयोग में है. कृपया दूसरा चुनें.‌
+search-keyword-warning-bookmark = आपने एक बीजशब्द चुना है जो अभी बुकमार्क के द्वारा प्रयोग में है. कृपया दूसरा चुनें.‌
 
 ## Containers Section
 
@@ -461,7 +466,7 @@ sync-sign-in =
 sync-signedin-settings-header = समन्वयन सेटिंग
 sync-signedin-settings-desc = चुने, { -brand-short-name } का उपयोग करके अपने उपकरण पर क्या संकालित करना हैं.
 sync-engine-bookmarks =
-    .label = पुस्तचिह्न
+    .label = बुकमार्क
     .accesskey = m
 sync-engine-history =
     .label = इतिहास
@@ -557,9 +562,6 @@ history-dontremember-description = { -brand-short-name } बतौर निज�
 history-private-browsing-permanent =
     .label = हमेशा निजी ब्राउजिंग विधि का उपयोग करें
     .accesskey = p
-history-remember-option =
-    .label = मेरे ब्राउज़िंग और डाउनलोड इतिहास याद रखें
-    .accesskey = b
 history-remember-browser-option =
     .label = ब्राउज़िंग तथा डाउनलोड इतिहास को याद रखें
     .accesskey = b
@@ -605,6 +607,22 @@ sitedata-accept-third-party-visited-option =
     .label = भ्रमण किए हुए से
 sitedata-accept-third-party-never-option =
     .label = कभी नहीं
+sitedata-allow-cookies-option =
+    .label = कुकीज़ और साइट डेटा स्वीकार करें
+    .accesskey = A
+sitedata-disallow-cookies-option =
+    .label = कुकीज़ और साइट डेटा प्रतिबंधित करें
+    .accesskey = B
+sitedata-block-trackers-option-recommended =
+    .label = तृतीय-पक्ष ट्रैकर (अनुशंसित)
+sitedata-block-trackers-option =
+    .label = तृतीय-पक्ष ट्रैकर
+sitedata-block-unvisited-option =
+    .label = नहीं देखे वेबसाइटों से कुकीज़
+sitedata-block-all-third-party-option =
+    .label = सभी तृतीय-पक्ष कुकीज़ (वेबसाइटों को तोड़ने का कारण हो सकते हैं)
+sitedata-block-all-option =
+    .label = सभी कुकीज़ (वेबसाइटों को तोड़ने के कारण होंगे)
 sitedata-clear =
     .label = डेटा मिटायें...
     .accesskey = I
@@ -623,7 +641,7 @@ addressbar-locbar-history-option =
     .label = ब्राउज़िंग इतिहास
     .accesskey = H
 addressbar-locbar-bookmarks-option =
-    .label = पुस्तचिह्न
+    .label = बुकमार्क
     .accesskey = k
 addressbar-locbar-openpage-option =
     .label = टैब खोलें
@@ -649,26 +667,29 @@ content-blocking-toggle-label-on = चालू
 content-blocking-toggle-label-off = बंद
     .accesskey = O
 content-blocking-category-label = चुनें कि क्या ब्लॉक करना है
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = धीमी ट्रैकिंग तत्व
+content-blocking-tracking-protection-option-always =
+    .label = हमेशा
+    .accesskey = A
+content-blocking-tracking-protection-option-private =
+    .label = केवल निजी विंडो में
+    .accesskey = p
+content-blocking-tracking-protection-change-block-list = ब्लॉक सूची बदलें
+content-blocking-third-party-cookies-label =
+    .label = थर्ड-पार्टी कूकीज़
+    .accesskey = C
+content-blocking-reject-trackers-description = सभी तृतीय-पक्ष कुकीज़ को प्रतिबंधित करें या केवल उन्हें जो ट्रैकरों द्वारा सेट किए गये हैं।
+content-blocking-change-cookie-settings =
+    .label = कुकी सेटिंग बदलें
     .accesskey = S
-content-blocking-fastblock-description = लोड होने में 5 सेकंड से अधिक समय लेने वाले तृतीय-पार्टी सामग्री को ब्लॉक करता है.
-content-blocking-fastblock-option-enabled =
-    .label = हमेशा ब्लॉक करें
-content-blocking-fastblock-option-disabled =
-    .label = कभी ब्लॉक ना करें
-content-blocking-tracking-protection-label = ट्रैकर
-    .accesskey = T
-content-blocking-tracking-protection-description = सभी ज्ञात ट्रैकर ब्लॉक करें (नोट: कुछ पृष्ठों को लोड होने से रोका जा सकता है).
-content-blocking-tracking-protection-option-enabled =
-    .label = हमेशा ब्लॉक करें
-content-blocking-tracking-protection-option-pbm =
-    .label = केवल निजी विंडो में ब्लॉक करें
-content-blocking-tracking-protection-option-disabled =
-    .label = कभी ब्लॉक ना करें
-content-blocking-tracking-protection-change-blocklist = ब्लॉक सूची बदलें
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = ट्रैकर (अनुशंसित)
+    .accesskey = k
+content-blocking-reject-trackers-block-trackers-option =
+    .label = ट्रैकर
+    .accesskey = k
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = सभी तृतीय-पक्ष कुकीज़ (वेबसाइटों को तोड़ने के कारण हो सकते हैं)
+    .accesskey = A
 
 ## Privacy Section - Tracking
 
@@ -731,6 +752,7 @@ autoplay-option-allow =
     .label = ऑटो प्ले को अनुमति दें
 autoplay-option-dont =
     .label = ऑटोप्ले रोकें
+permissions-autoplay-link = अधिक जानें
 permissions-block-popups =
     .label = पॉपअप विंडो को अवरोधित करें
     .accesskey = B
@@ -753,9 +775,6 @@ permissions-a11y-privacy-link = और अधिक जानें
 collection-header = { -brand-short-name } डेटा संकलन और उपयोग
 collection-description = हम आपको हमेशा विकल्प देने का प्रयास करते हैं और केवल आवश्यक सूचनाएँ एकत्रित करते हैं ताकि { -brand-short-name } सबके लिए व बेहतर हो. हम व्यक्तिगत जानकारी लेने से पहले हमेशा अनुमति मांगते हैं.
 collection-privacy-notice = गोपनीयता सूचना
-collection-health-report =
-    .label = { -brand-short-name } को मोज़िला को तकनीकी और इंटरैक्शन डेटा भेजने की अनुमति दें
-    .accesskey = r
 collection-health-report-link = अधिक जानें
 collection-studies =
     .label = { -brand-short-name } को संस्थापित करने और अध्ययन चलाने की अनुमति दें

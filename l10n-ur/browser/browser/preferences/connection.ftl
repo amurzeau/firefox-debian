@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 connection-window =
-    .title = کنکشن سیٹکگیں
+    .title = کنکشن سيٹنگيں
     .style =
         { PLATFORM() ->
             [macos] width: 44em
@@ -13,6 +13,7 @@ connection-close-key =
     .key = w
 connection-disable-extension =
     .label = توسیعات نا اہل بنائیں
+connection-proxy-configure = انٹرنیٹ چلانے کے لئے پراکسی کنفیگر کریں
 connection-proxy-option-no =
     .label = کوئی پراکسی نہیں
     .accesskey = پ
@@ -22,6 +23,9 @@ connection-proxy-option-system =
 connection-proxy-option-auto =
     .label = اس نیٹورک کے لیے پراکسی سیٹنگیں خود کھوج کریں
     .accesskey = ن
+connection-proxy-option-manual =
+    .label = من متابک پراکسی ترتیبات
+    .accesskey = م
 connection-proxy-http = HTTP پراکسی
     .accesskey = x
 connection-proxy-http-port = پورٹ
@@ -37,6 +41,8 @@ connection-proxy-ftp = FTP  پراکسی
     .accesskey = F
 connection-proxy-ftp-port = پورٹ
     .accesskey = ف
+connection-proxy-socks = SOCKS ھوسٹ
+    .accesskey = C
 connection-proxy-socks-port = پورٹ
     .accesskey = ٹ
 connection-proxy-socks4 =
@@ -45,6 +51,8 @@ connection-proxy-socks4 =
 connection-proxy-socks5 =
     .label = SOCKS ورژن 5
     .accesskey = و
+connection-proxy-noproxy = کے لئے کوئی پراکسی نہیں
+    .accesskey = N
 connection-proxy-noproxy-desc = مثال: .mozilla.org ،.net.nz ،192.168.1.0/24
 connection-proxy-autotype =
     .label = خودکار پراکسی تشکیل URL
@@ -59,3 +67,9 @@ connection-proxy-autologin =
 connection-proxy-socks-remote-dns =
     .label = پراکسی DNS جب استعمال کر رہے ہوں SOCKS v5
     .accesskey = d
+connection-dns-over-https =
+    .label = HTTPS پر DNS بحال کریں
+    .accesskey = ب
+connection-dns-over-https-url = URL
+    .accesskey = U
+    .tooltiptext = HTTPS پر DNS کو حل کرنے کے لئے URL

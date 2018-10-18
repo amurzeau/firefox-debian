@@ -5,6 +5,9 @@
 languages-window =
     .title = ભાષાઓ
     .style = width: 30em
+webpage-languages-window =
+    .title = વેબપૃષ્ઠ ભાષા સેટિંગ્સ
+    .style = width: 40em
 languages-close-key =
     .key = w
 languages-description = વેબ પૃષ્ઠો કેટલીક વખત એક કરતાં વધુ ભાષામાં ઓફર કરવામાં આવે છે. પસંદગીના ક્રમમાં, આ વેબપૃષ્ઠો પ્રદર્શિત કરવા માટે ભાષાઓ પસંદ કરો
@@ -38,3 +41,7 @@ languages-code-format =
     .label = { $locale }  [{ $code }]
 languages-active-code-format =
     .value = { languages-code-format.label }
+browser-languages-window =
+    .title = { -brand-short-name } ભાષા સેટિંગ્સ
+    .style = width: 40em
+browser-languages-description = { -brand-short-name } તમારી મૂળભૂત તરીકે પ્રથમ ભાષાને પ્રદર્શિત કરશે અને આવશ્યક ક્રમમાં તેઓ દેખાતા વૈકલ્પિક ભાષાઓ પ્રદર્શિત કરશે.

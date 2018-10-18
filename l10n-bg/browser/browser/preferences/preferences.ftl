@@ -6,6 +6,8 @@ do-not-track-description = Указване на сайтовете, че не �
 do-not-track-learn-more = Научете повече
 do-not-track-option-default =
     .label = Само при използване на защита от проследяване
+do-not-track-option-default-content-blocking =
+    .label = Само когато { -brand-short-name } ограничава всички открити проследявания
 do-not-track-option-always =
     .label = Винаги
 pref-page =
@@ -89,6 +91,9 @@ extension-controlled-privacy-containers = Разширението „<img data-
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Разширението „<img data-l10n-name="icon"/> { $name }“ управлява защитата от проследяване.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Разширението „<img data-l10n-name="icon"/> { $name }“ управлява тази настройка.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Разширението „<img data-l10n-name="icon"/> { $name }“ управлява как { -brand-short-name } се свързва с интернет.
@@ -202,6 +207,9 @@ choose-button =
     .label = Избиране…
     .accesskey = И
 choose-browser-language-description = Изберете езиците, на които да бъдат показвани менютата, съобщенията и известията от { -brand-short-name }.
+manage-browser-languages-button =
+    .label = Допълнителни езици…
+    .accesskey = з
 confirm-browser-language-change-description = Рестартирайте { -brand-short-name }, за да бъдат приложени промените
 confirm-browser-language-change-button = Прилагане и рестартиране
 translate-web-pages =
@@ -254,7 +262,7 @@ play-drm-content =
     .accesskey = И
 play-drm-content-learn-more = Научете повече
 update-application-title = Обновявания на { -brand-short-name }
-update-application-description = За най-добра производителност, стабилност и защита поддържайте вашия { -brand-short-name } обновен.
+update-application-description = За най-добра производителност, стабилност и защита поддържайте { -brand-short-name } обновен.
 update-application-version = Издание { $version } <a data-l10n-name="learn-more">Новото в това издание</a>
 update-history =
     .label = Хронология на обновяванията…
@@ -289,7 +297,7 @@ performance-allow-hw-accel =
     .accesskey = х
 performance-limit-content-process-option = Процеси за обработка на съдържание
     .accesskey = с
-performance-limit-content-process-enabled-desc = Допълнителни процеси за обработка съдържание може да направят &brandShortName; по-отзивчив, при използване на повече раздели за сметка на повече използвана памет.
+performance-limit-content-process-enabled-desc = Допълнителни процеси за обработка съдържание може да подобрят производителността при използване на повече раздели за сметка на повече използвана памет.
 performance-limit-content-process-blocked-desc = Променянето на броя на процесите за съдържание е възможно само при многопроцесен { -brand-short-name }. <a data-l10n-name="learn-more">Научете как да проверите дали многопроцесността е включена</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -318,6 +326,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Мрежов посредник
+network-settings-title = Настройки на мрежата
 network-proxy-connection-description = Настройване на достъпа до интернет от { -brand-short-name }.
 network-proxy-connection-learn-more = Научете повече
 network-proxy-connection-settings =
@@ -556,9 +565,6 @@ history-dontremember-description = { -brand-short-name } ще използва �
 history-private-browsing-permanent =
     .label = Винаги включено поверително разглеждане
     .accesskey = п
-history-remember-option =
-    .label = Запазване на история на разглеждане и изтегляния
-    .accesskey = З
 history-remember-browser-option =
     .label = Запазване на история на разглеждане и изтегляния
     .accesskey = и
@@ -588,7 +594,7 @@ sitedata-accept-cookies-option =
     .label = Приемане на бисквитки и данни на страници (препоръчително)
     .accesskey = П
 sitedata-block-cookies-option =
-    .label = Ограничаване на бисквитки и данни на страници (може е да доведе до неработещи страници)
+    .label = Ограничаване на бисквитки и данни на страници (може наруши работата на страниците)
     .accesskey = о
 sitedata-keep-until = Пазене до
     .accesskey = а
@@ -620,10 +626,10 @@ sitedata-block-trackers-option =
     .label = Проследявания от трети страни
 sitedata-block-unvisited-option =
     .label = Бисквитки от непосетени страници
-sitedata-block-all-third-parties-option =
-    .label = Всички бисквитки от трети страни
-sitedata-block-always-option =
-    .label = Всички бисквитки (може да доведе до неработещи страници)
+sitedata-block-all-third-party-option =
+    .label = Всички бисквитки от трети страни (може наруши работата на страниците)
+sitedata-block-all-option =
+    .label = Всички бисквитки (ще наруши работата на страниците)
 sitedata-clear =
     .label = Изчистване на данни…
     .accesskey = т
@@ -633,6 +639,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Изключения…
     .accesskey = И
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Настройките за ограничаване на съдържанието забраняват промяна на настройките за бисквитки и данни на страници.
 
 ## Privacy Section - Address Bar
 
@@ -657,6 +667,10 @@ content-blocking-learn-more = Научете повече
 content-blocking-restore-defaults =
     .label = Стандартни настройки
     .accesskey = д
+content-blocking-toggle-on =
+    .tooltiptext = Изключване ограничаването на съдържание
+content-blocking-toggle-off =
+    .tooltiptext = Включване ограничаването на съдържание
 content-blocking-toggle-label-on = ВКЛ
     .accesskey = в
 content-blocking-toggle-label-off = ИЗКЛ
@@ -665,23 +679,42 @@ content-blocking-category-label = Изберете какво да бъде сп
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Бавни проследяващи елементи
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Бавни проследявания
     .accesskey = б
-content-blocking-fastblock-description = Спиране на съдържание от трети страни, което зарежда повече от 5 секунди.
-content-blocking-fastblock-option-enabled =
-    .label = Винаги да бъде спирано
-content-blocking-fastblock-option-disabled =
-    .label = Никога да не бъде спирано
-content-blocking-tracking-protection-label = Проследяващи елементи
+content-blocking-fastblock-new-description = Ограничаване само на проследяванията, които бавят зареждането на страницата.
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Всички открити проследявания
+    .accesskey = в
+content-blocking-tracking-protection-new-description = Ограничаване на всички известни проследявания (Може да доведе до незареждащи страници.)
+content-blocking-tracking-protection-option-always =
+    .label = Винаги
+    .accesskey = в
+content-blocking-tracking-protection-option-private =
+    .label = Само в поверителни прозорци
     .accesskey = п
-content-blocking-tracking-protection-description = Спира всички известни проследявания (Заб.: може да попречи на някои страници да заредят).
-content-blocking-tracking-protection-option-enabled =
-    .label = Винаги да бъдат спирани
-content-blocking-tracking-protection-option-pbm =
-    .label = Спиране само в поверителни прозорци
-content-blocking-tracking-protection-option-disabled =
-    .label = Никога да не бъдат спирани
-content-blocking-tracking-protection-change-blocklist = Промяна на списъка…
+content-blocking-tracking-protection-change-block-list = Промяна списъка за блокиране
+content-blocking-third-party-cookies-label =
+    .label = Бисквитки от трети страни
+    .accesskey = т
+content-blocking-reject-trackers-description = Ограничаване на всички бисквитки от трети страни или само тези от проследявания.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Настройките на бисквитките и данните на страници забраняват промяна на настройките за бисквитките от трети страни.
+content-blocking-change-cookie-settings =
+    .label = Настройки на бисквитките
+    .accesskey = б
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Проследявания (препоръчително)
+    .accesskey = п
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Проследявания
+    .accesskey = п
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Всички бисквитки от трети страни (може наруши работата на страниците)
+    .accesskey = в
 
 ## Privacy Section - Tracking
 

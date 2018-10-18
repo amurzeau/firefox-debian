@@ -6,6 +6,8 @@ do-not-track-description = Передавати веб-сайтам сигнал
 do-not-track-learn-more = Докладніше
 do-not-track-option-default =
     .label = Лише при використанні захисту від стеження
+do-not-track-option-default-content-blocking =
+    .label = Лише якщо { -brand-short-name } налаштований блокувати виявлене стеження
 do-not-track-option-always =
     .label = Завжди
 pref-page =
@@ -90,6 +92,9 @@ extension-controlled-privacy-containers = Для роботи розширенн
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Розширення <img data-l10n-name="icon"/> { $name } контролює захист від стеження.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Розширення <img data-l10n-name="icon"/> { $name } контролює ці налаштування.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Розширення <img data-l10n-name="icon"/> { $name } контролює спосіб з'єднання { -brand-short-name } з Інтернетом.
@@ -118,9 +123,9 @@ startup-header = Запуск
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
     .label = Дозволити { -brand-short-name } та Firefox виконуватись одночасно
-use-firefox-sync = Підказка: При цьому використовуються окремі профілі. Скористайтеся синхронізацією для обміну даними між ними.
-get-started-not-logged-in = Увійти в Синхронізацію…
-get-started-configured = Відкрити налаштування Синхронізації
+use-firefox-sync = Підказка: При цьому використовуються окремі профілі. Скористайтеся { -sync-brand-short-name[abl-lower] } для обміну даними між ними.
+get-started-not-logged-in = Увійти в { -sync-brand-short-name[acc] }…
+get-started-configured = Відкрити налаштування { -sync-brand-short-name[dat] }
 always-check-default =
     .label = Завжди перевіряти чи є { -brand-short-name } типовим браузером
     .accesskey = б
@@ -206,6 +211,9 @@ choose-button =
     .label = Вибрати…
     .accesskey = а
 choose-browser-language-description = Оберіть мови для відображення меню, повідомлень та сповіщень { -brand-short-name }.
+manage-browser-languages-button =
+    .label = Встановити альтернативи…
+    .accesskey = л
 confirm-browser-language-change-description = Перезапуск { -brand-short-name } для застосування змін
 confirm-browser-language-change-button = Застосувати й перезапустити
 translate-web-pages =
@@ -243,7 +251,7 @@ download-always-ask-where =
     .label = Завжди запитувати де зберегти файли
     .accesskey = ж
 applications-header = Програми
-applications-description = Оберіть, як { -brand-short-name } буде поводитися з файлами, які ви завантажуєте з Інтернету, або з програмами, які ви використовуєте під час перегляду.
+applications-description = Оберіть, як { -brand-short-name } оброблятиме файли, які ви завантажуєте з Інтернету, або програми, якими ви користуєтесь під час перегляду.
 applications-filter =
     .placeholder = Пошук типів файлів чи програм
 applications-type-column =
@@ -322,6 +330,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Проксі-сервер
+network-settings-title = Налаштування мережі
 network-proxy-connection-description = Налаштувати спосіб з'єднання { -brand-short-name } з Інтернетом.
 network-proxy-connection-learn-more = Докладніше
 network-proxy-connection-settings =
@@ -425,9 +434,9 @@ containers-remove-button =
 
 sync-signedout-caption = Візьміть свій інтернет з собою
 sync-signedout-description = Синхронізуйте закладки, історію, вкладки, паролі, додатки, а також налаштування на всіх своїх пристроях.
-sync-signedout-account-title = Під’єднайтеся до облікового запису Firefox
-sync-signedout-account-create = Не маєте облікового запису? Давайте створимо
-    .accesskey = й
+sync-signedout-account-title = Під’єднайтеся до { -fxaccount-brand-name[gen] }
+sync-signedout-account-create = Не маєте облікового запису? Створімо його!
+    .accesskey = С
 sync-signedout-account-signin =
     .label = Увійти…
     .accesskey = У
@@ -439,7 +448,7 @@ sync-signedout-account-signin =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = Завантажте Firefox для <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> або <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> для синхронізації з вашим мобільним пристроєм.
+sync-mobile-promo = Завантажте Firefox для <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> або <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a>, щоб синхронізувати дані з вашим мобільним пристроєм.
 
 ## Sync Section - Signed in
 
@@ -555,14 +564,11 @@ history-remember-option-never =
     .label = Ніколи не пам’ятати історії
 history-remember-option-custom =
     .label = Використовувати власні налаштування історії
-history-remember-description = { -brand-short-name } збереже історію переглядів, завантажень, а також надісланих форм та пошукових запитів.
-history-dontremember-description = { -brand-short-name } буде використовувати ті ж налаштування, що й у приватному режимі, та не буде пам’ятати історію вашого перегляду.
+history-remember-description = { -brand-short-name } зберігатиме історію переглядів, завантажень, заповнених форм і пошукових запитів.
+history-dontremember-description = { -brand-short-name } використовуватиме такі самі налаштування, що й у приватному режимі, та не буде пам’ятати історію перегляду.
 history-private-browsing-permanent =
     .label = Завжди використовувати режим приватного перегляду
     .accesskey = п
-history-remember-option =
-    .label = Пам’ятати історію переглядів та завантажень
-    .accesskey = і
 history-remember-browser-option =
     .label = Пам’ятати історію переглядів та завантажень
     .accesskey = П
@@ -594,12 +600,12 @@ sitedata-accept-cookies-option =
 sitedata-block-cookies-option =
     .label = Блокувати куки і дані (може призвести до пошкодження веб-сайтів)
     .accesskey = Б
-sitedata-keep-until = Зберігати доки
+sitedata-keep-until = Зберігати до
     .accesskey = г
 sitedata-keep-until-expire =
-    .label = Не завершиться термін дії
+    .label = Завершення терміну дії
 sitedata-keep-until-closed =
-    .label = { -brand-short-name } закрито
+    .label = Закриття { -brand-short-name }
 sitedata-accept-third-party-desc = Приймати сторонні куки і дані сайтів
     .accesskey = к
 sitedata-accept-third-party-always-option =
@@ -608,6 +614,26 @@ sitedata-accept-third-party-visited-option =
     .label = Від відвіданих
 sitedata-accept-third-party-never-option =
     .label = Ніколи
+sitedata-allow-cookies-option =
+    .label = Приймати куки і дані сайтів
+    .accesskey = П
+sitedata-disallow-cookies-option =
+    .label = Блокувати куки і дані сайтів
+    .accesskey = Б
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Тип блокування
+    .accesskey = и
+sitedata-block-trackers-option-recommended =
+    .label = Сторонні елементи стеження (рекомендовано)
+sitedata-block-trackers-option =
+    .label = Сторонні елементи стеження
+sitedata-block-unvisited-option =
+    .label = Куки з невідвіданих веб-сайтів
+sitedata-block-all-third-party-option =
+    .label = Сторонні куки (може пошкодити роботу веб-сайтів)
+sitedata-block-all-option =
+    .label = Усі куки (буде пошкоджувати роботу веб-сайтів)
 sitedata-clear =
     .label = Стерти дані…
     .accesskey = С
@@ -617,6 +643,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Винятки…
     .accesskey = и
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Ваші налаштування блокування вмісту не дозволяють змінювати налаштування куків і даних сайтів.
 
 ## Privacy Section - Address Bar
 
@@ -653,23 +683,42 @@ content-blocking-category-label = Оберіть елементи для бло�
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Повільні елементи стеження
-    .accesskey = П
-content-blocking-fastblock-description = Блокувати сторонній вміст, завантаження якого триває понад 5 секунд.
-content-blocking-fastblock-option-enabled =
-    .label = Завжди блокувати
-content-blocking-fastblock-option-disabled =
-    .label = Ніколи не блокувати
-content-blocking-tracking-protection-label = Стеження
-    .accesskey = С
-content-blocking-tracking-protection-description = Блокувати всі відомі елементи стеження (Примітка: може порушити завантаження деяких сторінок).
-content-blocking-tracking-protection-option-enabled =
-    .label = Завжди блокувати
-content-blocking-tracking-protection-option-pbm =
-    .label = Блокувати лише у приватних вікнах
-content-blocking-tracking-protection-option-disabled =
-    .label = Ніколи не блокувати
-content-blocking-tracking-protection-change-blocklist = Змінити список блокування…
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Повільні елементи стеження
+    .accesskey = в
+content-blocking-fastblock-new-description = Блокувати лише елементи стеження, що сповільнюють завантаження сторінок.
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Виявлене стеження
+    .accesskey = я
+content-blocking-tracking-protection-new-description = Блокувати всі відомі елементи стеження. (Деякі сторінки можуть бути пошкоджені.)
+content-blocking-tracking-protection-option-always =
+    .label = Завжди
+    .accesskey = З
+content-blocking-tracking-protection-option-private =
+    .label = Лише у приватних вікнах
+    .accesskey = п
+content-blocking-tracking-protection-change-block-list = Змінити список блокування
+content-blocking-third-party-cookies-label =
+    .label = Сторонні куки
+    .accesskey = к
+content-blocking-reject-trackers-description = Блокувати усі сторонні куки, або лише встановлені стеженням.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Ваші налаштування куків і даних сайтів не дозволяють змінювати налаштування сторонніх куків.
+content-blocking-change-cookie-settings =
+    .label = Змінити налаштування куків
+    .accesskey = м
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Стеження (рекомендовано)
+    .accesskey = ж
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Стеження
+    .accesskey = т
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Усі сторонні куки (може пошкодити роботу веб-сайтів)
+    .accesskey = У
 
 ## Privacy Section - Tracking
 
@@ -732,6 +781,7 @@ autoplay-option-allow =
     .label = Дозволити автовідтворення
 autoplay-option-dont =
     .label = Не дозволяти автовідтворення
+permissions-autoplay-link = Докладніше
 permissions-block-popups =
     .label = Блокувати виринаючі вікна
     .accesskey = Б
@@ -752,7 +802,7 @@ permissions-a11y-privacy-link = Докладніше
 ## Privacy Section - Data Collection
 
 collection-header = Збір та використання даних { -brand-short-name }
-collection-description = Ми прагнемо надати вам вибір і збирати лише те, що нам потрібно для випуску та вдосконалення { -brand-short-name } для кожного. Ми завжди питаємо про дозвіл перед отриманням особистої інформації.
+collection-description = Ми прагнемо надати вам вибір і збирати лише дані, необхідні для роботи і вдосконалення { -brand-short-name }. Ми завжди запитуємо дозвіл перед отриманням особистої інформації.
 collection-privacy-notice = Повідомлення про приватність
 collection-health-report =
     .label = Дозволити { -brand-short-name } надсилати технічні та користувацькі дані в { -vendor-short-name }

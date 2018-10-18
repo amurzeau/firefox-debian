@@ -6,6 +6,8 @@ do-not-track-description = Manda a-o scito un signâ  “No traciame” coscì d
 do-not-track-learn-more = Atre informaçioin
 do-not-track-option-default =
     .label = Solo quande ti deuvi a proteçion anti-traciamento.
+do-not-track-option-default-content-blocking =
+    .label = Solo quande { -brand-short-name } o l'à inpostou o blòcco di Traciatoî individoæ
 do-not-track-option-always =
     .label = De longo
 pref-page =
@@ -90,6 +92,9 @@ extension-controlled-privacy-containers = 'Na estenscion, <img data-l10n-name="i
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = 'Na estenscion, <img data-l10n-name="icon"/> { $name }, a contròlla a teu proteçion anti-traciamento.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = 'Na estenscion <img data-l10n-name="icon"/> { $name }, a contròlla sta inpostaçion.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = 'Na estenscion, <img data-l10n-name="icon"/> { $name } a contròlla comme { -brand-short-name } o se conette a l'Internet.
@@ -202,6 +207,12 @@ choose-language-description = Çerni a lengoa preferia pe-e pagine
 choose-button =
     .label = Çerni…
     .accesskey = i
+choose-browser-language-description = Çerni a lengoa deuvia pe vedde i menû, mesaggi e notifiche de { -brand-short-name }.
+manage-browser-languages-button =
+    .label = Inpòsta Alternative
+    .accesskey = I
+confirm-browser-language-change-description = Arvi torna { -brand-short-name } pe conpletâ i cangiamenti
+confirm-browser-language-change-button = Conpleta e Arvi torna
 translate-web-pages =
     .label = Traduxi contegnui web
     .accesskey = T
@@ -265,7 +276,7 @@ update-application-check-choose =
     .label = Contròlla se gh'é agiornamenti, ma famme decidde se instalali
     .accesskey = C
 update-application-manual =
-    .label = No controlâ mai se gh'é agiornamenti (no racomandou)
+    .label = No controlâ mai se gh'é agiornamenti (no consegiou)
     .accesskey = N
 update-application-use-service =
     .label = Deuvia 'n serviçio ascozo pe instalâ i agiornamenti
@@ -316,7 +327,8 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Proxy da Ræ
-network-proxy-connection-description = Configura comme { -brand-short-name } o se conette a l'Internet.
+network-settings-title = Inpostaçioin da ræ
+network-proxy-connection-description = Inpòsta o mòddo de conetise a l'internet de { -brand-short-name }.
 network-proxy-connection-learn-more = Pe saveine de ciù
 network-proxy-connection-settings =
     .label = Inpostaçioin…
@@ -554,9 +566,6 @@ history-dontremember-description = { -brand-short-name } o deuvia e mæxime pref
 history-private-browsing-permanent =
     .label = Deuvia de longo o mòddo de navegaçion privou
     .accesskey = p
-history-remember-option =
-    .label = Aregòrda a stöia de navegaçion e descaregamenti
-    .accesskey = ç
 history-remember-browser-option =
     .label = Aregòrda a stöia de navegaçion e descaregamenti
     .accesskey = n
@@ -602,6 +611,26 @@ sitedata-accept-third-party-visited-option =
     .label = da-i sciti vixitæ
 sitedata-accept-third-party-never-option =
     .label = mai
+sitedata-allow-cookies-option =
+    .label = Acetta cookie e dæti do scito
+    .accesskey = A
+sitedata-disallow-cookies-option =
+    .label = Blòcca cookie e dæti do scito
+    .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Tipo blocou
+    .accesskey = T
+sitedata-block-trackers-option-recommended =
+    .label = Traciatoî de terse parte (racomandou)
+sitedata-block-trackers-option =
+    .label = Traciatoî de terse parte
+sitedata-block-unvisited-option =
+    .label = Cookie da sciti no vixitæ
+sitedata-block-all-third-party-option =
+    .label = Tutti i cookie de terse parte (peu ese che çerti sciti pöi no van)
+sitedata-block-all-option =
+    .label = Tutti i cookie (peu ese che çerti sciti pöi no van)
 sitedata-clear =
     .label = Scancella dæti…
     .accesskey = l
@@ -611,6 +640,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Eceçioin…
     .accesskey = E
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = I teu inpostaçioin into Blòcco di contegnui no fan cangiâ e inpostaçioin di cookie e di dæti di sciti.
 
 ## Privacy Section - Address Bar
 
@@ -627,10 +660,67 @@ addressbar-locbar-openpage-option =
     .accesskey = g
 addressbar-suggestions-settings = Cangia e inpostaçioin di conseggi di motoî de riçerca
 
+## Privacy Section - Content Blocking
+
+content-blocking-header = Contegnuo blocou
+content-blocking-desc = Blòcca i contegnui de terse parte, comme publicitæ ò còdici, che peuan ralentâ a navegaçion e traciate inta ræ. Personalizza e inpostaçioin pe megio bilanciâ fra proteçion e prestaçioin.
+content-blocking-learn-more = Atre informaçioin
+content-blocking-restore-defaults =
+    .label = Repiggia predefinio
+    .accesskey = R
+content-blocking-toggle-on =
+    .tooltiptext = Asmòrta o blòcco di contegnui
+content-blocking-toggle-off =
+    .tooltiptext = Ativa o blòcco di contengnui
+content-blocking-toggle-label-on = Averto
+    .accesskey = A
+content-blocking-toggle-label-off = Asmòrtou
+    .accesskey = A
+content-blocking-category-label = Çerni cöse blocâ
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Traciatoî lenti a caregâ
+    .accesskey = T
+content-blocking-fastblock-new-description = Blòcca solo i traciatoî che no fan caregâ e pagine a-a spedia.
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Tutti i traciatoî individoæ
+    .accesskey = T
+content-blocking-tracking-protection-new-description = Blòcca tutti i traciatoî nòtti. (Peu ese che pöi quarche pagina a no se carega.)
+content-blocking-tracking-protection-option-always =
+    .label = De longo
+    .accesskey = D
+content-blocking-tracking-protection-option-private =
+    .label = Solo inti barcoin privæ
+    .accesskey = S
+content-blocking-tracking-protection-change-block-list = Cangia a lista de blòcco
+content-blocking-third-party-cookies-label =
+    .label = Cookie de terse parte
+    .accesskey = C
+content-blocking-reject-trackers-description = Blòcca tutti i cookie de terse parte ò solo quelli che gh'an di traciatoî.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = E inpostaçioin inti Cookie e dæti di sciti no fan cangiâ e inpostaçioin di cookie de terse parte.
+content-blocking-change-cookie-settings =
+    .label = Cangia inpostaçioin di Cookie
+    .accesskey = C
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Traciatoî (consegiou)
+    .accesskey = r
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Traciatoî
+    .accesskey = r
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Tutti i cookie de terse parte (o peu no fâ anâ di sciti)
+    .accesskey = T
+
 ## Privacy Section - Tracking
 
 tracking-header = Proteçion anti-traciamento
-tracking-desc = A proteçion anmti-traciamento a blòcca quelli che veuan traciate in linea quande ti naveghi tra ciù sciti. <a data-l10n-name="learn-more">Pe saveine de ciù in sciâ proteçion anti-traciamento e privacy</a>
+tracking-desc = A proteçion anti-traciamento a blòcca quelli che veuan traciate in linea quande ti naveghi tra ciù sciti. <a data-l10n-name="learn-more">Pe saveine de ciù in sciâ proteçion anti-traciamento e privacy</a>
 tracking-mode-label = Deuvia a proteçion anti-traciamento pe i sciti che se san che tracian
 tracking-mode-always =
     .label = De longo
@@ -688,6 +778,7 @@ autoplay-option-allow =
     .label = Permetti aotoriproduçion
 autoplay-option-dont =
     .label = No aotoriprodue
+permissions-autoplay-link = Atre informaçioin
 permissions-block-popups =
     .label = Blòcca i barcoin de pop-up
     .accesskey = B
@@ -708,7 +799,7 @@ permissions-a11y-privacy-link = Atre informaçioin
 ## Privacy Section - Data Collection
 
 collection-header = Acugeita dæti e uzo de { -brand-short-name }
-collection-description = Niatri çerchemmo de lasciâ a ti a decixon e de sarvase solo quello ch'o ne serve pe megiorâ { -brand-short-name } pe tutti. Niatri te domandiemo de longo o permisso primma de reçeive informaçioin personâ.
+collection-description = Niatri çerchemmo de lasciâ a ti a decixon se sarvâ e quello ch'o o ne serve solo pe megiorâ { -brand-short-name } pe tutti. Niatri te domandiemo de longo o permisso primma de reçeive informaçioin personâ.
 collection-privacy-notice = Informativa in sciâ privacy
 collection-health-report =
     .label = Permetti a { -brand-short-name } de mandâ dæti tecnichi e de interaçion a { -vendor-short-name }

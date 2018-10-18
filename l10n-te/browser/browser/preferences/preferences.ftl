@@ -303,6 +303,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = నెట్‌వర్క్ ప్రాక్సీ
+network-settings-title = నెట్‌వర్క్ అమరికలు
 network-proxy-connection-learn-more = ఇంకా తెలుసుకోండి
 network-proxy-connection-settings =
     .label = అమరికలు…
@@ -536,9 +537,6 @@ history-dontremember-description = { -brand-short-name } గోప్య వీ�
 history-private-browsing-permanent =
     .label = ఎల్లప్పుడూ ఆంతరంగిక విహారణ రీతిని వాడు
     .accesskey = p
-history-remember-option =
-    .label = నా విహరణ, దింపుకోలు చరిత్రను గుర్తుంచుకో
-    .accesskey = b
 history-remember-browser-option =
     .label = విహరణ, దింపుకోలు చరిత్రను గుర్తుపెట్టుకో
     .accesskey = b
@@ -596,10 +594,6 @@ sitedata-block-trackers-option =
     .label = మూడవ పక్ష ట్రాకర్లు
 sitedata-block-unvisited-option =
     .label = చూడని వెబ్‌సైట్ల కుకీలు
-sitedata-block-all-third-parties-option =
-    .label = మూడవ-పక్ష కుకీలన్నీ
-sitedata-block-always-option =
-    .label = కుకీలన్నీ (కొన్ని వెబ్‌సైట్లు పనిచేయకపోవచ్చు)
 sitedata-clear =
     .label = డేటాను తుడిచివేయి…
     .accesskey = l
@@ -641,26 +635,15 @@ content-blocking-toggle-label-on = ఆన్
 content-blocking-toggle-label-off = ఆఫ్
     .accesskey = O
 content-blocking-category-label = వేటిని నిరోధించాలో ఎంచుకోండి
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = నెమ్మదించే ట్రాకింగ్ మూలకాలు
-    .accesskey = S
-content-blocking-fastblock-description = లోడవడానికి 5 క్షణాల కంటే ఎక్కువ తీసుకునే మూడవ-పక్ష విషయాలను నిరోధిస్తుంది.
-content-blocking-fastblock-option-enabled =
-    .label = ఎల్లప్పుడూ నిరోధించు
-content-blocking-fastblock-option-disabled =
-    .label = ఎప్పుడూ నిరోధించవద్దు
-content-blocking-tracking-protection-label = ట్రాకర్లు
-    .accesskey = T
-content-blocking-tracking-protection-description = తెలిసిన ట్రాకర్లన్నిటినీ నిరోధిస్తుంది (గమనిక: కొన్ని పేజీలను తెరుచుకోకుండా చేయవచ్చు).
-content-blocking-tracking-protection-option-enabled =
-    .label = ఎల్లప్పుడూ నిరోధించు
-content-blocking-tracking-protection-option-pbm =
-    .label = అంతరంగిక కిటికీల్లో మాత్రమే నిరోధించు
-content-blocking-tracking-protection-option-disabled =
-    .label = ఎప్పుడూ నిరోధించవద్దు
-content-blocking-tracking-protection-change-blocklist = నిరోధపు జాబితాను మార్చండి…
+content-blocking-tracking-protection-option-always =
+    .label = ఎల్లప్పుడూ
+    .accesskey = A
+content-blocking-tracking-protection-option-private =
+    .label = అంతరంగిక కిటికీలలో మాత్రమే
+    .accesskey = p
+content-blocking-reject-trackers-block-trackers-option =
+    .label = ట్రాకర్లు
+    .accesskey = k
 
 ## Privacy Section - Tracking
 

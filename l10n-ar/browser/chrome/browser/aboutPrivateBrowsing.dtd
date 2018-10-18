@@ -20,6 +20,7 @@
 <!ENTITY aboutPrivateBrowsing.info.saved.after2          " فَيَرفُكس:">
 <!ENTITY aboutPrivateBrowsing.info.downloads             "تنزيلاتك">
 <!ENTITY aboutPrivateBrowsing.info.bookmarks             "علاماتك">
+<!ENTITY aboutPrivateBrowsing.info.clipboard             "النصوص المنسوخة">
 <!ENTITY aboutPrivateBrowsing.note.before                "التصفح الخاص ">
 <!ENTITY aboutPrivateBrowsing.note.emphasize             "لا يجعل هويتك مجهولة">
 <!ENTITY aboutPrivateBrowsing.note.after                 " على الإنترنت. باستطاعة رب عملك أو مزود خدمة الإنترنت معرفة الصفحات التي زرتها.">
@@ -30,3 +31,6 @@
 <!ENTITY trackingProtection.title                        "الحماية من التعقّب">
 <!ENTITY trackingProtection.description2                 "تستخدم بعض المواقع متعقبات تستطيع مراقبتك نشاطك عبر الإنترنت. مع الحماية من التعقب سيحجب فَيَرفُكس الكثير من المتعقبات التي تجمع معلومات عن سلوكك على الإنترنت.">
 <!ENTITY trackingProtection.startTour1                   "اطلع على طريقة عملها">
+
+<!ENTITY contentBlocking.title                           "حجب المحتوى">
+<!ENTITY contentBlocking.description                     "تستخدم بعض المواقع متعقّبات تُراقب نشاطك وأنت تجوب الإنترنت. في النوافذ الخاصة، ميزة فَيَرفُكس لحجب المحتوى تمنع تلقائيا العديد من المتعقّبات التي تجمع المعلومات عن سلوكك في تصفح الوِب.">

@@ -5,6 +5,9 @@
 languages-window =
     .title = Lengoe
     .style = width: 30em
+webpage-languages-window =
+    .title = Inpoastaçioin da lengoa de Pagine web
+    .style = width: 40em
 languages-close-key =
     .key = w
 languages-description = Quarche vòtta e pagine gh'an ciù de 'na lengoa. L'é poscibile çerne na lengoa predefinia pe ste pagine, in ordine de preferensa
@@ -38,3 +41,7 @@ languages-code-format =
     .label = { $locale } [{ $code }]
 languages-active-code-format =
     .value = { languages-code-format.label }
+browser-languages-window =
+    .title = Inpostaçion lengoa de { -brand-short-name }
+    .style = width: 40em
+browser-languages-description = { -brand-short-name } o te mostriâ a primma lengoa comme predefinia e-e atre lengoe in ordine de aparensa se necesaio.

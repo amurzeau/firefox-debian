@@ -12,6 +12,7 @@
 <!ENTITY enableGlodaSearch.label       "Activează căutarea globală și indexarea">
 <!ENTITY enableGlodaSearch.accesskey   "i">
 <!ENTITY dateTimeFormatting.label      "Formatarea datei și a orei">
+<!ENTITY languageSelector.label        "Limba">
 <!ENTITY allowHWAccel.label            "Folosește accelerarea hardware când este disponibilă">
 <!ENTITY allowHWAccel.accesskey        "h">
 <!ENTITY storeType.label               "Tipul de stocare al mesajelor pentru conturile noi:">
@@ -49,7 +50,7 @@
 <!ENTITY crashReporterSection.label      "Raportor de defecțiuni">
 <!ENTITY crashReporterDesc.label         "&brandShortName; trimite rapoarte de probleme pentru a ajuta &vendorShortName; să facă clientul dumneavoastră de e-mail mai stabil și sigur">
 <!ENTITY enableCrashReporter.label       "Activează raportorul de defecțiuni">
-<!ENTITY enableCrashReporter.accesskey   "c">
+<!ENTITY enableCrashReporter.accesskey   "C">
 <!ENTITY crashReporterLearnMore.label    "Află mai multe">
 
 <!-- Update -->
