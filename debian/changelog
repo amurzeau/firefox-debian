@@ -1,6 +1,17 @@
-firefox (63.0-1) UNRELEASED; urgency=medium
+firefox (63.0-1) unstable; urgency=medium
 
   * New upstream release.
+  * Fixes for mfsa2018-26, also known as:
+    CVE-2018-12392, CVE-2018-12393, CVE-2018-12395, CVE-2018-12396,
+    CVE-2018-12397, CVE-2018-12398, CVE-2018-12399, CVE-2018-12401,
+    CVE-2018-12402, CVE-2018-12403, CVE-2018-12388, CVE-2018-12390.
+
+  * debian/control*:
+    - Bump nss dependency.
+    - Add build dependency on cbindgen.
+  * debian/browser.mozconfig.in: Disable nodejs until it's actually necessary.
+  * debian/rules: Add -Wl,--compress-debug-sections=zlib to LDFLAGS to work
+    around elfhack failing with unstripped binaries larger than 2GiB.
 
  -- Mike Hommey <glandium@debian.org>  Wed, 24 Oct 2018 08:32:15 +0900
 
