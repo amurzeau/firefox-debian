@@ -1,8 +1,14 @@
-firefox-esr (60.3.0esr-1) UNRELEASED; urgency=medium
+firefox-esr (60.3.0esr-1) unstable; urgency=medium
 
   * New upstream release.
+  * Fixes for mfsa2018-27, also known as:
+    CVE-2018-12392, CVE-2018-12393, CVE-2018-12395, CVE-2018-12396,
+    CVE-2018-12397, CVE-2018-12389, CVE-2018-12390.
 
- -- Mike Hommey <glandium@debian.org>  Wed, 24 Oct 2018 07:06:35 +0900
+  * debian/rules: Work around armel FTBFS from conflicting __sync_* symbols
+    between libgcc and rust's compiler_builtins.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 24 Oct 2018 07:08:43 +0900
 
 firefox-esr (60.2.2esr-1) unstable; urgency=medium
 
