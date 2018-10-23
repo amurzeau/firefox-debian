@@ -87,6 +87,12 @@ LDFLAGS += -Wl,--no-keep-memory
 # Also add execution time and memory usage stats in the logs
 LDFLAGS += -Wl,--stats
 
+# Work around FTBFS from conflicting __sync_* symbols between libgcc
+# and rust's compiler_builtins
+ifeq (armel,$(DEB_HOST_ARCH))
+LDFLAGS += -Wl,-z,muldefs
+endif
+
 AUTOCONF_DIRS := build/autoconf
 
 ifneq (,$(filter noopt,$(DEB_BUILD_OPTIONS)))
