@@ -1,3 +1,9 @@
+firefox-esr (60.3.0esr-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 24 Oct 2018 07:06:35 +0900
+
 firefox-esr (60.2.2esr-1) unstable; urgency=medium
 
   * New upstream release.
