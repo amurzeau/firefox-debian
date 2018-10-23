@@ -6,6 +6,8 @@ do-not-track-description = Ad yazen tamuli “ur sfuɣul ara” ɣer ismal web a
 do-not-track-learn-more = Issin ugar
 do-not-track-option-default =
     .label = Ala s useqdec n ummesten mgal aḍfaṛ
+do-not-track-option-default-content-blocking =
+    .label = Kan ticki { -brand-short-name } yettusbadu ɣer sewḥel Ineḍfaṛen Yettwafen
 do-not-track-option-always =
     .label = Yal tikelt
 pref-page =
@@ -90,6 +92,9 @@ extension-controlled-privacy-containers = Yiwen n useɣzif, <img data-l10n-name=
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Azegrir, <img data-l10n-name="icon"/> { $name } , atan isefrak amesten mgal aḍfaṛ.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Asiɣzef, <img data-l10n-name="icon"/>{ $name }, isenqad aɣewwar-agi.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Azegrir, <img data-l10n-name="icon"/> { $name }, isefrak amek { -brand-short-name } ad iqqen γer internet.
@@ -203,6 +208,9 @@ choose-button =
     .label = Fren…
     .accesskey = F
 choose-browser-language-description = Fren tutlayin i uskan n wumuɣen, iznan, akk d ilɣa seg { -brand-short-name }.
+manage-browser-languages-button =
+    .label = Sbadu Wiyyaḍ...
+    .accesskey = l
 confirm-browser-language-change-description = Ales asenker i tikelt nniḍen { -brand-short-name } i isnifal-agi
 confirm-browser-language-change-button = Seddu sakin alles tanekra
 translate-web-pages =
@@ -319,6 +327,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Apruksi n uẓeṭṭa
+network-settings-title = Iɣewwaṛen n uẓeṭṭa
 network-proxy-connection-description = Swel amek { -brand-short-name } ad iqqen γer internet.
 network-proxy-connection-learn-more = Issin ugar
 network-proxy-connection-settings =
@@ -557,9 +566,6 @@ history-dontremember-description = { -brand-short-name } ad isseqdec iɣewwaṛe
 history-private-browsing-permanent =
     .label = Seqdec yal ass askar n tunigin tusligt
     .accesskey = g
-history-remember-option =
-    .label = Ḥrez amazray n tunigin d isidar
-    .accesskey = t
 history-remember-browser-option =
     .label = Cfu ɣef umezruy n tunigin d izdamen
     .accesskey = C
@@ -621,10 +627,10 @@ sitedata-block-trackers-option =
     .label = Ineḍfaren n wis kraḍ
 sitedata-block-unvisited-option =
     .label = Inagan n tuqna seg yesmal web ur yettwarzan ara
-sitedata-block-all-third-parties-option =
-    .label = Inagan n tuqqna seg wis kraḍ
-sitedata-block-always-option =
-    .label = Akk inagan n tuqna (izmer ad yiṛeẓ ismal web)
+sitedata-block-all-third-party-option =
+    .label = Akk inagan n tuqqna wis kraḍ (zemren ad rẓen isaml web)
+sitedata-block-all-option =
+    .label = Akk inagan n tuqqna (zemren ad rẓen ismal web)
 sitedata-clear =
     .label = Sfeḍ isefka…
     .accesskey = l
@@ -634,6 +640,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Tisuraf…
     .accesskey = s
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = IƔewwaren-inek/inem deg usewḥel n ugbur sewḥalen isnifal deg iƔewwaren n yinagan n tuqqna akked wid isefka.
 
 ## Privacy Section - Address Bar
 
@@ -670,23 +680,42 @@ content-blocking-category-label = Fren ayen ad tesweḥleḍ
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Sɛeṭṭel iferdisen n uḍfar
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Ineḍfaren isaẓẓayen asali
+    .accesskey = s
+content-blocking-fastblock-new-description = Sewḥel kan ineḍfaren isaẓẓayen asali n isebtar.
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Akk ineḍfaren yettwafen
+    .accesskey = i
+content-blocking-tracking-protection-new-description = Sewḥel akk ineḍfaren yettwasnen. (Izmer ad isewḥel asali n kra n isebtar.)
+content-blocking-tracking-protection-option-always =
+    .label = Yal tikelt
+    .accesskey = A
+content-blocking-tracking-protection-option-private =
+    .label = Deg usfaylu uslig kan
+    .accesskey = p
+content-blocking-tracking-protection-change-block-list = Snifel tabdart n usewḥel
+content-blocking-third-party-cookies-label =
+    .label = Inagan n tuqna n tɣawsiwin tis kraḍ
+    .accesskey = I
+content-blocking-reject-trackers-description = Sewḥel akk inagan n tuqqna wis kraḍ neɣ wid-ak kan yettuneḍfaṛen.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = IƔewwaren-inek/inem deg yinagan n tuqqna akked isefka n yesmal sewḥalen isnifal n iƔewwaren n yinagan n tuqqna n tƔawsiwin tis kraḍ.
+content-blocking-change-cookie-settings =
+    .label = Beddel iɣewwaṛen n inagan n tuqqna
     .accesskey = S
-content-blocking-fastblock-description = Sewḥel agbur wis kraḍ ittawin ugar n 5 n tsenatin i tulya.
-content-blocking-fastblock-option-enabled =
-    .label = Sewḥel yal tikelt
-content-blocking-fastblock-option-disabled =
-    .label = Ur sewḥal ara
-content-blocking-tracking-protection-label = Ineḍfaren
-    .accesskey = ḍ
-content-blocking-tracking-protection-description = Ad isewḥel akk ineḍfaṛen yettwasnen (Tamawt: Izmer daɣen ad isewḥel asali n kra n isebtar).
-content-blocking-tracking-protection-option-enabled =
-    .label = Sewḥal yal tikelt
-content-blocking-tracking-protection-option-pbm =
-    .label = Sewḥel deg usfaylu uslig kan
-content-blocking-tracking-protection-option-disabled =
-    .label = Werǧin ad teswaḥleḍ
-content-blocking-tracking-protection-change-blocklist = Snifel tabdart n usewḥel…
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Ineḍfaṛen (yelha)
+    .accesskey = k
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Ineḍfaṛen
+    .accesskey = k
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Akk inagan n tuqqna wis kraḍ (zemren ad rẓen isaml web)
+    .accesskey = A
 
 ## Privacy Section - Tracking
 

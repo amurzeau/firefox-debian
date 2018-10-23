@@ -36,3 +36,9 @@ languages-customize-add =
 #   $code (String) - Locale code of the locale (for example: "is", "es-CL")
 languages-code-format =
     .label = { $locale }  [{ $code }]
+languages-active-code-format =
+    .value = { languages-code-format.label }
+browser-languages-window =
+    .title = { -brand-short-name } Cài đặt ngôn ngữ
+    .style = width: 40em
+browser-languages-description = { -brand-short-name } sẽ hiển thị ngôn ngữ mà bạn đã chọn làm mặc định và sẽ hiển thị ngôn ngữ khác nếu cần thiết được sắp xếp theo thứ tự mà chúng xuất hiện.

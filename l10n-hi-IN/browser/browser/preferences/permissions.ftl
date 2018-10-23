@@ -72,7 +72,7 @@ permissions-exceptions-popup-desc = कौन-सी वेबसाइटों
 ## Exceptions - Saved Logins
 
 permissions-exceptions-saved-logins-window =
-    .title = अपवाद - संग्रहित प्रवेश{ " " }
+    .title = अपवाद - संग्रहित प्रवेश
     .style = { permissions-window.style }
 permissions-exceptions-saved-logins-desc = निम्न वेबसाइटों के लिए लॉगिन सहेजे नहीं जाएंगे
 
@@ -89,7 +89,10 @@ permissions-exceptions-autoplay-media-window =
     .title = अनुमत वेबसाइट - स्वत: प्ले
     .style = { permissions-window.style }
 permissions-exceptions-autoplay-media-desc = आप निर्दिष्ट कर सकते हैं कि किन वेबसाइटों को स्वचालित रूप से मीडिया तत्वों को चलने की अनुमति है. उस साइट का सटीक पता लिखें जिसे आप अनुमति देना चाहते हैं और फिर अनुमति दें पर क्लिक करें.
-permissions-exceptions-autoplay-media-desc2 = आप चुन सकते हैं कि किन वेबसाइटों को ध्वनि के साथ मीडिया को स्वतः रूप से हमेशा या कभी नहीं चलाने की अनुमति है. उस वेबसाइट का पता दर्ज करें जिसे आप प्रबंधित करना चाहते हैं फिर ब्लॉक करें या अनुमति दें पर क्लिक करें. 
+permissions-exceptions-autoplay-media-window2 =
+    .title = अपवाद - ऑटोप्ले
+    .style = { permissions-window.style }
+permissions-exceptions-autoplay-media-desc2 = आप चुन सकते हैं कि किन वेबसाइटों को ध्वनि के साथ मीडिया को स्वतः रूप से हमेशा या कभी नहीं चलाने की अनुमति है. उस वेबसाइट का पता दर्ज करें जिसे आप प्रबंधित करना चाहते हैं फिर ब्लॉक करें या अनुमति दें पर क्लिक करें.
 
 ## Site Permissions - Notifications
 

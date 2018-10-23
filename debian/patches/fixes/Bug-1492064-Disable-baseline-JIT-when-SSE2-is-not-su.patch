@@ -9,10 +9,10 @@ Differential Revision: https://phabricator.services.mozilla.com/D6219
  1 file changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/js/src/jit/BaselineJIT.h b/js/src/jit/BaselineJIT.h
-index 72bc5ef14e79..eecc2caa2dd8 100644
+index fea59361ef8e..97b598cde764 100644
 --- a/js/src/jit/BaselineJIT.h
 +++ b/js/src/jit/BaselineJIT.h
-@@ -545,7 +545,8 @@ IsBaselineEnabled(JSContext* cx)
+@@ -546,7 +546,8 @@ IsBaselineEnabled(JSContext* cx)
  #ifdef JS_CODEGEN_NONE
      return false;
  #else

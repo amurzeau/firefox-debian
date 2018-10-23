@@ -30,9 +30,11 @@
    - This label and tooltip is used for the column with the checkbox in the
    - task tree view. -->
 <!ENTITY calendar.unifinder.tree.done.label                "Selesai">
+<!ENTITY calendar.unifinder.tree.done.tooltip2             "Urut berdasarkan penyelesaian">
 <!ENTITY calendar.unifinder.tree.priority.label            "Prioritas">
 <!ENTITY calendar.unifinder.tree.title.label               "Judul">
 <!ENTITY calendar.unifinder.tree.percentcomplete.label     "&#037;">
+<!ENTITY calendar.unifinder.tree.percentcomplete.tooltip2  "Urut berdasarkan &#37; selesai">
 <!ENTITY calendar.unifinder.tree.startdate.label           "Mulai">
 <!ENTITY calendar.unifinder.tree.enddate.label             "Selesai">
 <!ENTITY calendar.unifinder.tree.duedate.label             "Jatuh Tempo">
@@ -41,6 +43,7 @@
 <!ENTITY calendar.unifinder.tree.location.label            "Lokasi">
 <!ENTITY calendar.unifinder.tree.status.label              "Status">
 <!ENTITY calendar.unifinder.tree.calendarname.label        "Nama Kalender">
+<!ENTITY calendar.unifinder.tree.calendarname.tooltip2     "Urut berdasarkan nama kalender">
 <!ENTITY calendar.unifinder.tree.duration.label            "Jatuh tempo dalam">
 <!ENTITY calendar.unifinder.close.tooltip                  "Tutup pencarian acara dan daftar acara">
 
@@ -163,17 +166,23 @@
 <!ENTITY calendar.context.attendance.menu.label                 "Undangan">
 <!ENTITY calendar.context.attendance.menu.accesskey             "d">
 <!ENTITY calendar.context.attendance.occurrence.label           "Item Ini">
+<!ENTITY calendar.context.attendance.send.label                 "Kirim notifikasi sekarang">
+<!ENTITY calendar.context.attendance.dontsend.label             "Jangan kirim notifikasi">
 
 <!ENTITY calendar.context.attendance.occ.accepted.label         "Diterima">
+<!ENTITY calendar.context.attendance.occ.tentative.label        "Diterima secara tentatif">
 <!ENTITY calendar.context.attendance.occ.declined.label         "Ditolak">
 <!ENTITY calendar.context.attendance.occ.delegated.label        "Diwakilkan">
 <!ENTITY calendar.context.attendance.occ.needsaction.label      "Masih memerlukan tindakan">
+<!ENTITY calendar.context.attendance.occ.inprogress.label       "Sedang berjalan">
 <!ENTITY calendar.context.attendance.occ.completed.label        "Selesai">
 
 <!ENTITY calendar.context.attendance.all.accepted.label         "Diterima">
+<!ENTITY calendar.context.attendance.all.tentative.label        "Diterima secara tentatif">
 <!ENTITY calendar.context.attendance.all.declined.label         "Ditolak">
 <!ENTITY calendar.context.attendance.all.delegated.label        "Diwakilkan">
 <!ENTITY calendar.context.attendance.all.needsaction.label      "Masih memerlukan tindakan">
+<!ENTITY calendar.context.attendance.all.inprogress.label       "Dalam proses">
 <!ENTITY calendar.context.attendance.all.completed.label        "Selesai">
 
 <!-- Task Context Menu -->
@@ -254,6 +263,7 @@
 
 <!-- LOCALIZATION NOTE (calendar.context.showonly.accesskey)
      This is the access key used for the showOnlyCalendar string -->
+<!ENTITY calendar.context.showall.label                "Tampilkan Semua Kalender">
 
 <!ENTITY calendar.context.convertmenu.label              "Konversikan Ke">
 <!ENTITY calendar.context.convertmenu.accesskey.mail     "n">

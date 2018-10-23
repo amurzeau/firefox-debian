@@ -6,6 +6,8 @@ do-not-track-description = Dërgojuni sajteve një sinjal “Mos Më Gjurmo” s
 do-not-track-learn-more = Mësoni më tepër
 do-not-track-option-default =
     .label = Vetëm kur përdoret Mbrojtje Nga Gjurmimet
+do-not-track-option-default-content-blocking =
+    .label = Vetëm kur { -brand-short-name }-i është rregulluar të bllokojë Gjurmues të Pikasur
 do-not-track-option-always =
     .label = Përherë
 pref-page =
@@ -14,14 +16,6 @@ pref-page =
             [windows] Mundësi
            *[other] Parapëlqime
         }
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -91,16 +85,19 @@ extension-controlled-homepage-override = Faqen tuaj hyrëse e kontrollon një zg
 extension-controlled-new-tab-url = Faqen tuaj Skedë e Re e kontrollon një zgjerim, <img data-l10n-name="icon"/> { $name }.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
-extension-controlled-default-search = Një zgjerim, <img data-l10n-name="icon"/> { $name }, ka caktuar motorin tuaj parazgjedhje për kërkime.
+extension-controlled-default-search = Motorin tuaj parazgjedhje për kërkime e ka caktuar një zgjerim, <img data-l10n-name="icon"/> { $name }.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = Një zgjerim, <img data-l10n-name="icon"/> { $name }, lyp Skeda Kontejneri.
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
-extension-controlled-websites-tracking-protection-mode = Një zgjerim, <img data-l10n-name="icon"/> { $name }, po kontrollon mbrojtjen nga gjurmimet.
+extension-controlled-websites-tracking-protection-mode = Mbrojtjen nga gjurmimet e kontrollon një zgjerim, <img data-l10n-name="icon"/> { $name }.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Këtë rregullim e kontrollon një zgjerim, <img data-l10n-name="icon"/> { $name }.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
-extension-controlled-proxy-config = Një zgjerim, <img data-l10n-name="icon"/> { $name }, kontrollon se si lidhet në internet { -brand-short-name }-i.
+extension-controlled-proxy-config = Se si lidhet në internet { -brand-short-name }-i, e kontrollon një zgjerim, <img data-l10n-name="icon"/> { $name }.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -137,20 +134,11 @@ is-not-default = { -brand-short-name }-i s'është shfletuesi juaj parazgjedhje
 set-as-my-default-browser =
     .label = Vëre Parazgjedhje…
     .accesskey = V
-startup-page = Kur niset { -brand-short-name }
-    .accesskey = n
-startup-user-homepage =
-    .label = Shfaq kreun tim
-startup-blank-page =
-    .label = Shfaq një faqe të zbrazët
-startup-prev-session =
-    .label = Shfaq dritaret dhe skedat e mia të herës së fundit
 startup-restore-previous-session =
     .label = Rikthe sesionin e mëparshëm
     .accesskey = R
 disable-extension =
     .label = Çaktivizoje Zgjerimin
-home-page-header = Faqe Hyrëse
 tabs-group-header = Skeda
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab ju kalon nëpër skedat sipas radhës së përdorimit së fundi
@@ -219,6 +207,12 @@ choose-language-description = Zgjidhni gjuhën tuaj të parapëlqyer për shfaqj
 choose-button =
     .label = Zgjidhni…
     .accesskey = z
+choose-browser-language-description = Zgjidhni gjuhët e përdorura për shfaqje menush, mesazhesh, dhe njoftimesh nga { -brand-short-name }.
+manage-browser-languages-button =
+    .label = Caktoni Alternativa…
+    .accesskey = C
+confirm-browser-language-change-description = Që të hyjnë në fuqi këto ndryshime, rinisni { -brand-short-name }-in
+confirm-browser-language-change-button = Zbatoje dhe Rinise
 translate-web-pages =
     .label = Përktheni lëndë web
     .accesskey = P
@@ -270,7 +264,6 @@ play-drm-content =
 play-drm-content-learn-more = Mësoni më tepër
 update-application-title = Përditësime { -brand-short-name }-i
 update-application-description = Për punimin, qëndrueshmërinë dhe sigurinë më të mirë mbajeni { -brand-short-name }-in të përditësuar.
-update-application-info = Version { $version } <a>Ç’ka të re</a>
 update-application-version = Version { $version } <a data-l10n-name="learn-more">Ç’ka të re</a>
 update-history =
     .label = Shfaq Historik Përditësimesh…
@@ -306,7 +299,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Kufi procesesh lënde
     .accesskey = P
 performance-limit-content-process-enabled-desc = Proceset shtesë për lëndën mund të përmirësojnë punimin kur përdoren shumë skeda njëherësh, por kështu do të përdoret më tepër kujtesë.
-performance-limit-content-process-disabled-desc = Ndryshimi i numrit të proceseve të lëndës është i mundur vetëm me { -brand-short-name }-in shumëprocesësh. <a>Mësoni se si të kontrolloni nëse mënyra shumëprocesëshe është e aktivizuar</a>
 performance-limit-content-process-blocked-desc = Ndryshimi i numrit të proceseve të lëndës është i mundur vetëm me { -brand-short-name }-in shumëprocesësh. <a data-l10n-name="learn-more">Mësoni se si të kontrolloni nëse mënyra shumëprocesëshe është e aktivizuar</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -335,6 +327,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Ndërmjetës Rrjeti
+network-settings-title = Rregullime Rrjeti
 network-proxy-connection-description = Formësoni se si lidhet në internet { -brand-short-name }-i.
 network-proxy-connection-learn-more = Mësoni Më Tepër
 network-proxy-connection-settings =
@@ -377,9 +370,6 @@ use-current-pages =
 choose-bookmark =
     .label = Përdorni Faqerojtës…
     .accesskey = F
-restore-default =
-    .label = Riktheje te Parazgjedhja
-    .accesskey = P
 
 ## Search Section
 
@@ -576,9 +566,6 @@ history-dontremember-description = { -brand-short-name }-i do të përdorë të 
 history-private-browsing-permanent =
     .label = Përdor përherë mënyrën shfletim privat
     .accesskey = v
-history-remember-option =
-    .label = Mba mend historikun tim të shfletimit dhe shkarkimeve
-    .accesskey = t
 history-remember-browser-option =
     .label = Mba mend historik shfletimesh dhe shkarkimesh
     .accesskey = M
@@ -624,6 +611,26 @@ sitedata-accept-third-party-visited-option =
     .label = Nga të vizituarit
 sitedata-accept-third-party-never-option =
     .label = Kurrë
+sitedata-allow-cookies-option =
+    .label = Prano të dhëna cookie-sh dhe sajti
+    .accesskey = P
+sitedata-disallow-cookies-option =
+    .label = Blloko cookie-t dhe të dhëna sajti
+    .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Lloj i bllokuar
+    .accesskey = L
+sitedata-block-trackers-option-recommended =
+    .label = Gjurmues palë të treta (e këshilluar)
+sitedata-block-trackers-option =
+    .label = Gjurmues palë e tretë
+sitedata-block-unvisited-option =
+    .label = Cookies nga sajte të pavizituar
+sitedata-block-all-third-party-option =
+    .label = Krejt cookie-t nga palë të treta (mund të shkaktojë mosfunksionim të disa sajteve)
+sitedata-block-all-option =
+    .label = Krejt cookie-t (do të shkaktojë mosfunksionim sajtesh)
 sitedata-clear =
     .label = Pastroni të Dhëna…
     .accesskey = P
@@ -633,6 +640,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Përjashtime…
     .accesskey = P
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Rregullimet tuaja te Bllokim Lënde i pengojnë ndryshimet te rregullimet mbi Cookies dhe të Dhëna Sajti.
 
 ## Privacy Section - Address Bar
 
@@ -648,6 +659,63 @@ addressbar-locbar-openpage-option =
     .label = Skeda të hapura
     .accesskey = S
 addressbar-suggestions-settings = Ndryshoni parapëlqimet mbi këshillime motorësh kërkimi
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = Bllokim Lënde
+content-blocking-desc = Bllokoni lëndë palësh të treta, të tillë si reklama ose kod, që mund të ngadalësojnë shfletimin tuaj dhe t’ju gjurmojnë nëpër internet. Përshtatini rregullimet tuaj për baraspeshimin më të mirë mes mbrojtjes dhe funksionimit.
+content-blocking-learn-more = Mësoni më tepër
+content-blocking-restore-defaults =
+    .label = Rikthe Parazgjedhjet
+    .accesskey = R
+content-blocking-toggle-on =
+    .tooltiptext = Çaktivizo Bllokim Lënde
+content-blocking-toggle-off =
+    .tooltiptext = Aktivizo Bllokim Lënde
+content-blocking-toggle-label-on = ON
+    .accesskey = N
+content-blocking-toggle-label-off = OFF
+    .accesskey = F
+content-blocking-category-label = Zgjidhni çfarë të bllokohet
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Gjurmues Ngadalësues
+    .accesskey = G
+content-blocking-fastblock-new-description = Blloko vetëm gjurmuesit që pengojnë ngarkimin e shpejtë të faqeve.
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Krejt Gjurmuesit e Pikasur
+    .accesskey = K
+content-blocking-tracking-protection-new-description = Blloko krejt gjurmuesit e njohur. (Mund të pengojë ngarkimin e disa faqeve.)
+content-blocking-tracking-protection-option-always =
+    .label = Përherë
+    .accesskey = P
+content-blocking-tracking-protection-option-private =
+    .label = Vetëm në dritare private
+    .accesskey = v
+content-blocking-tracking-protection-change-block-list = Ndryshoni listë bllokimesh
+content-blocking-third-party-cookies-label =
+    .label = Cookies Palësh të Treta
+    .accesskey = T
+content-blocking-reject-trackers-description = Bllokoni krejt cookie-t nga palë të treta ose thjesht ato të depozituara nga gjurmues.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Rregullimet tuaja te Cookies dhe Të dhëna Sajti i pengojnë ndryshimet te rregullime mbi Cookies Palësh të Treta.
+content-blocking-change-cookie-settings =
+    .label = Ndryshoni Rregullime Cookie-sh
+    .accesskey = k
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Gjurmues (e këshilluar)
+    .accesskey = u
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Gjurmues
+    .accesskey = G
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Krejt cookie-t nga palë të treta (mund të sjellë mosfunksionim sajtesh)
+    .accesskey = K
 
 ## Privacy Section - Tracking
 
@@ -697,6 +765,20 @@ permissions-notification-link = Mësoni më tepër
 permissions-notification-pause =
     .label = Ndali njoftimet derisa të riniset { -brand-short-name }-i
     .accesskey = N
+permissions-block-autoplay-media =
+    .label = Bllokoje luajtjen e vetvetishme nga sajtet të mediave me tinguj
+    .accesskey = B
+permissions-block-autoplay-media-menu = Për sajte që luajnë tinguj vetvetiu
+permissions-block-autoplay-media-exceptions =
+    .label = Përjashtime…
+    .accesskey = P
+autoplay-option-ask =
+    .label = Pyet Përherë
+autoplay-option-allow =
+    .label = Lejo Vetëluajtje
+autoplay-option-dont =
+    .label = Pa Vetëluajtje
+permissions-autoplay-link = Mësoni më tepër
 permissions-block-popups =
     .label = Blloko dritare flluska
     .accesskey = B

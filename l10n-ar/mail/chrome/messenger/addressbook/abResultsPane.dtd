@@ -18,8 +18,11 @@
 <!ENTITY SecondEmail.accesskey                 "ض">
 <!ENTITY Department.label                      "القِسْم">
 <!ENTITY Department.accesskey                  "ق">
+<!ENTITY JobTitle.label                        "العنوان">
+<!ENTITY JobTitle.accesskey                    "ن">
 <!ENTITY CellularNumber.label                  "المحمول">
 <!ENTITY CellularNumber.accesskey              "ح">
+<!ENTITY PagerNumber.label                     "جهاز المناداة">
 <!ENTITY FaxNumber.label                       "الفاكس">
 <!ENTITY FaxNumber.accesskey                   "ف">
 <!ENTITY HomePhone.label                       "هاتف المنزل">
@@ -28,3 +31,7 @@
 <!ENTITY WorkPhone.accesskey                   "ت">
 <!ENTITY ChatName.label                        "اسم الدردشة">
 <!ENTITY ChatName.accesskey                    "ش">
+<!ENTITY sortAscending.label                   "تصاعديا">
+<!ENTITY sortAscending.accesskey               "ص">
+<!ENTITY sortDescending.label                  "تنازليا">
+<!ENTITY sortDescending.accesskey              "ل">

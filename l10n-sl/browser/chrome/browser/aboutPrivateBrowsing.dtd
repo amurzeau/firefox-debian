@@ -2,11 +2,6 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!-- LOCALIZATION NOTE (aboutPrivateBrowsing.title):
-     Please ensure this exactly matches tabs.emptyPrivateTabTitle in tabbrowser.properties -->
-<!ENTITY aboutPrivateBrowsing.title                      "Zasebno brskanje">
-<!ENTITY aboutPrivateBrowsing.notPrivate.title           "Odprem zasebno okno?">
-
 <!ENTITY aboutPrivateBrowsing.notPrivate                 "Trenutno niste v zasebnem oknu.">
 <!ENTITY privatebrowsingpage.openPrivateWindow.label     "Odpri zasebno okno">
 <!ENTITY privatebrowsingpage.openPrivateWindow.accesskey "Z">
@@ -25,6 +20,7 @@
 <!ENTITY aboutPrivateBrowsing.info.saved.after2          " vaše:">
 <!ENTITY aboutPrivateBrowsing.info.downloads             "prenose">
 <!ENTITY aboutPrivateBrowsing.info.bookmarks             "zaznamke">
+<!ENTITY aboutPrivateBrowsing.info.clipboard             "kopirano besedilo">
 <!ENTITY aboutPrivateBrowsing.note.before                "Zasebno brskanje ">
 <!ENTITY aboutPrivateBrowsing.note.emphasize             "vas ne naredi anonimnega">
 <!ENTITY aboutPrivateBrowsing.note.after                 " na internetu. Vaš delodajalec ali ponudnik internetnih storitev lahko še vedno izvesta, katere strani ste obiskali.">
@@ -35,3 +31,6 @@
 <!ENTITY trackingProtection.title                        "Zaščita pred sledenjem">
 <!ENTITY trackingProtection.description2                 "Nekatere spletne strani uporabljajo sledilce, ki lahko nadzirajo vašo dejavnost na internetu. Z zaščito pred sledenjem bo Firefox zavrnil mnogo sledilcev, ki zbirajo podatke o vašem vedenju na internetu.">
 <!ENTITY trackingProtection.startTour1                   "Kako deluje">
+
+<!ENTITY contentBlocking.title                           "Zavračanje vsebine">
+<!ENTITY contentBlocking.description                     "Nekatere spletne strani uporabljajo sledilce, ki lahko nadzirajo vašo dejavnost na internetu. V zasebnih oknih Firefoxovo zavračanje vsebine samodejno zavrne številne sledilce, ki zbirajo podatke o vašem vedenju na internetu.">

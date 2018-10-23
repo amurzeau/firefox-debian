@@ -6,6 +6,8 @@ do-not-track-description = Inviar al sitos web un signal “Non traciar” indic
 do-not-track-learn-more = Saper plus
 do-not-track-option-default =
     .label = Solmente durante que tu usa le protection contra le traciamento
+do-not-track-option-default-content-blocking =
+    .label = Solo quando { -brand-short-name } es definite pro Blocar le traciatores disvelate
 do-not-track-option-always =
     .label = Sempre
 pref-page =
@@ -90,6 +92,9 @@ extension-controlled-privacy-containers = Un extension, <img data-l10n-name="ico
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Un extension, <img data-l10n-name="icon"/> { $name }, verifica le protection de traciamento.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Le extension <img data-l10n-name="icon"/>{ $name } controla iste configuration.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Un extension, <img data-l10n-name="icon"/> { $name }, controla como { -brand-short-name } se connecte a internet.
@@ -203,6 +208,9 @@ choose-button =
     .label = Eliger…
     .accesskey = E
 choose-browser-language-description = Elige le linguas usate pro monstrar menus, messages, e notificationes per { -brand-short-name }.
+manage-browser-languages-button =
+    .label = Definir alternativas…
+    .accesskey = a
 confirm-browser-language-change-description = Reinitiar { -brand-short-name } pro applicar iste cambiamentos
 confirm-browser-language-change-button = Applicar e reinitiar
 translate-web-pages =
@@ -319,6 +327,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Proxy de rete
+network-settings-title = Parametros de rete
 network-proxy-connection-description = Configura como { -brand-short-name } se connecte a internet.
 network-proxy-connection-learn-more = Saper plus
 network-proxy-connection-settings =
@@ -517,7 +526,7 @@ privacy-header = Confidentialitate del navigator
 
 forms-header = Formularios e contrasignos
 forms-ask-to-save-logins =
-    .label = Demanda de salvar authenticationes e contrasignos de sito 
+    .label = Demanda de salvar authenticationes e contrasignos de sito
     .accesskey = r
 forms-exceptions =
     .label = Exceptiones…
@@ -557,9 +566,6 @@ history-dontremember-description = { -brand-short-name } usara le mesme parametr
 history-private-browsing-permanent =
     .label = Sempre usar le modo de navigation private
     .accesskey = p
-history-remember-option =
-    .label = Memorisar mi chronologia de navigation e de discargamentos
-    .accesskey = M
 history-remember-browser-option =
     .label = Rememorar le chronologia de navigation e discargamento
     .accesskey = n
@@ -605,6 +611,26 @@ sitedata-accept-third-party-visited-option =
     .label = Del visitates
 sitedata-accept-third-party-never-option =
     .label = Nunquam
+sitedata-allow-cookies-option =
+    .label = Acceptar le cookies e le datos de sito
+    .accesskey = A
+sitedata-disallow-cookies-option =
+    .label = Blocar le cookies e le datos del sito
+    .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Typo de contentos blocate
+    .accesskey = T
+sitedata-block-trackers-option-recommended =
+    .label = Traciatores de tertie partes (recommendar)
+sitedata-block-trackers-option =
+    .label = Traciatores de tertie partes
+sitedata-block-unvisited-option =
+    .label = Cookies ab sitos web non visitate
+sitedata-block-all-third-party-option =
+    .label = Tote le cookies de tertie-partes (pote causar que sitos web collabe)
+sitedata-block-all-option =
+    .label = Tote le cookies (causara que sitos web collabe)
 sitedata-clear =
     .label = Clarar le datos...
     .accesskey = l
@@ -614,6 +640,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Exceptiones…
     .accesskey = E
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Tu configurationes in Bloco de contentos impedi cambiamentos al configurationes del cookies e al datos del sito.
 
 ## Privacy Section - Address Bar
 
@@ -650,23 +680,42 @@ content-blocking-category-label = Elige que blocar
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Elementos de traciamento lente
-    .accesskey = l
-content-blocking-fastblock-description = Bloca contentos de terties que demora plus que 5 secundas pro cargar.
-content-blocking-fastblock-option-enabled =
-    .label = Blocar sempre
-content-blocking-fastblock-option-disabled =
-    .label = Nunquam blocar
-content-blocking-tracking-protection-label = Traciatores
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Traciatores lente
+    .accesskey = S
+content-blocking-fastblock-new-description = Blocar justo le traciatores que impedi le paginas de ser cargate rapidemente.
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Tote le traciatores disvelate
     .accesskey = T
-content-blocking-tracking-protection-description = Bloca tote le traciatores cognite (Nota: pote tamben impedir alcun paginas de cargar).
-content-blocking-tracking-protection-option-enabled =
-    .label = Blocar sempre
-content-blocking-tracking-protection-option-pbm =
-    .label = Blocar solmente in fenestras private
-content-blocking-tracking-protection-option-disabled =
-    .label = Nunquam blocar
-content-blocking-tracking-protection-change-blocklist = Cambiar le lista de blocage...
+content-blocking-tracking-protection-new-description = Blocar tote le traciatores note. (Pote impedir alcun paginas de ser cargate.)
+content-blocking-tracking-protection-option-always =
+    .label = Sempre
+    .accesskey = S
+content-blocking-tracking-protection-option-private =
+    .label = Solmente in fenestras private
+    .accesskey = p
+content-blocking-tracking-protection-change-block-list = Cambiar le lista de blocage
+content-blocking-third-party-cookies-label =
+    .label = Cookies de tertie partes
+    .accesskey = C
+content-blocking-reject-trackers-description = Blocar tote le cookies de tertie-parte o justo illos definite per le traciatores.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Tu configurationes in cookies e datos del sito impedi cambiamentos al configurationes del cookies de tertie-partes.
+content-blocking-change-cookie-settings =
+    .label = Cambiar le parametros de recerca
+    .accesskey = p
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Traciatores (recommendate)
+    .accesskey = T
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Traciatores
+    .accesskey = T
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Tote le cookies de tertie-partes (pote causar que sitos web collabe)
+    .accesskey = T
 
 ## Privacy Section - Tracking
 
@@ -717,7 +766,7 @@ permissions-notification-pause =
     .label = Pausar le notificationes usque { -brand-short-name } reinitia
     .accesskey = n
 permissions-block-autoplay-media =
-    .label = Blocar le reproduction automatic de medias con sono in le sitos web 
+    .label = Blocar le reproduction automatic de medias con sono in le sitos web
     .accesskey = B
 permissions-block-autoplay-media-menu = Pro le sitos web que presenta sono automaticamente
 permissions-block-autoplay-media-exceptions =
@@ -729,6 +778,7 @@ autoplay-option-allow =
     .label = Permitter le presentation automatic
 autoplay-option-dont =
     .label = Non presentar automaticamente
+permissions-autoplay-link = Saper plus
 permissions-block-popups =
     .label = Blocar le fenestras emergente
     .accesskey = B

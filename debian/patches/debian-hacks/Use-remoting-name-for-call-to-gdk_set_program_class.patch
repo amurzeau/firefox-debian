@@ -8,10 +8,10 @@ Closes: #907574
  1 file changed, 3 insertions(+), 4 deletions(-)
 
 diff --git a/widget/gtk/nsAppShell.cpp b/widget/gtk/nsAppShell.cpp
-index 778eac97c1a3..fa085a99db12 100644
+index bbec50cebfb4..4b21db1a2525 100644
 --- a/widget/gtk/nsAppShell.cpp
 +++ b/widget/gtk/nsAppShell.cpp
-@@ -23,6 +23,7 @@
+@@ -24,6 +24,7 @@
  #include "WakeLockListener.h"
  #endif
  #include "gfxPlatform.h"
@@ -19,7 +19,7 @@ index 778eac97c1a3..fa085a99db12 100644
  #include "ScreenHelperGTK.h"
  #include "HeadlessScreenHelper.h"
  #include "mozilla/widget/ScreenManager.h"
-@@ -183,10 +184,8 @@ nsAppShell::Init()
+@@ -188,10 +189,8 @@ nsAppShell::Init()
          // option when program uses gdk_set_program_class().
          //
          // See https://bugzilla.gnome.org/show_bug.cgi?id=747634

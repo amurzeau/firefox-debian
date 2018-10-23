@@ -68,13 +68,11 @@ can reach it easily. -->
 <!ENTITY  sendPageToDevice.accesskey         "D">
 <!ENTITY  sendLinkToDevice.label             "लिंक को उपकरण में भेजें">
 <!ENTITY  sendLinkToDevice.accesskey         "D">
-<!ENTITY  sendToDeviceFeedback.label         "भेज दिया!">
-<!ENTITY  sendToDeviceOfflineFeedback.label  "पंक्तिबद्ध (ऑफ़लाइन)">
 <!ENTITY  moveToNewWindow.label              "नए विंडो में खिसकाएँ">
 <!ENTITY  moveToNewWindow.accesskey          "W">
 <!ENTITY  reopenInContainer.label            "कंटेनर में दुबारा से खोलें">
 <!ENTITY  reopenInContainer.accesskey        "e">
-<!ENTITY  bookmarkAllTabs.label              "सभी टैब पुस्तचिह्नित करें…">
+<!ENTITY  bookmarkAllTabs.label              "सभी टैब बुकमार्कित करें…">
 <!ENTITY  bookmarkAllTabs.accesskey          "T">
 <!ENTITY  undoCloseTab.label                 "बंद टैब वापस लें">
 <!ENTITY  undoCloseTab.accesskey             "U">
@@ -108,9 +106,9 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY menubarCmd.label "मेनू पट्टी">
 <!ENTITY menubarCmd.accesskey "M">
 <!ENTITY navbarCmd.label "संचरण औज़ारपट्टी">
-<!ENTITY personalbarCmd.label "पुस्तचिह्न औज़ारपट्टी">
+<!ENTITY personalbarCmd.label "बुकमार्क औज़ारपट्टी">
 <!ENTITY personalbarCmd.accesskey "B">
-<!ENTITY bookmarksToolbarItem.label "औज़ारपट्टी मद पुस्तचिह्नित करता है">
+<!ENTITY bookmarksToolbarItem.label "औज़ारपट्टी मद बुकमार्कित करता है">
 
 <!ENTITY toolbarContextMenu.reloadAllTabs.label "सभी टैब फिर लोड करें">
 <!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "A">
@@ -193,20 +191,20 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY closeWindow.label "विंडो बंद करें">
 <!ENTITY closeWindow.accesskey "d">
 
-<!ENTITY bookmarksMenu.label "पुस्तचिह्न">
+<!ENTITY bookmarksMenu.label "बुकमार्क">
 <!ENTITY bookmarksMenu.accesskey "B">
-<!ENTITY bookmarkThisPageCmd.label "यह पृष्ठ पुस्तचिह्नित करें">
-<!ENTITY editThisBookmarkCmd.label "यह पुस्तचिह्न संपादित करें">
+<!ENTITY bookmarkThisPageCmd.label "यह पृष्ठ बुकमार्कित करें">
+<!ENTITY editThisBookmarkCmd.label "यह बुकमार्क संपादित करें">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
 
 <!ENTITY subscribeToPageMenupopup.label "इस पृष्ठ की सदस्यता लें">
 <!ENTITY subscribeToPageMenuitem.label "इस पृष्ठ की सदस्यता लें…">
-<!ENTITY addCurPagesCmd.label "सभी टैब पुस्तचिह्नित करें…">
-<!ENTITY showAllBookmarks2.label "सभी पुस्तचिह्नों को दिखाएँ">
-<!ENTITY recentBookmarks.label "हाल में पुस्तचिह्नित">
-<!ENTITY otherBookmarksCmd.label "अन्य पुस्तचिह्न">
-<!ENTITY mobileBookmarksCmd.label "मोबाइल पुस्तचिह्न">
-<!ENTITY bookmarksToolbarChevron.tooltip "अधिक पुस्तचिह्न दिखाएँ">
+<!ENTITY addCurPagesCmd.label "सभी टैब बुकमार्कित करें…">
+<!ENTITY showAllBookmarks2.label "सभी बुकमार्कों को दिखाएँ">
+<!ENTITY recentBookmarks.label "हाल में बुकमार्कित">
+<!ENTITY otherBookmarksCmd.label "अन्य बुकमार्क">
+<!ENTITY mobileBookmarksCmd.label "मोबाइल बुकमार्क">
+<!ENTITY bookmarksToolbarChevron.tooltip "अधिक बुकमार्क दिखाएँ">
 
 <!ENTITY backCmd.label                "पीछे">
 <!ENTITY backCmd.accesskey            "B">
@@ -268,21 +266,20 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!-- Toolbar items -->
 <!ENTITY homeButton.label             "घर">
-
 <!ENTITY homeButton.defaultPage.tooltip "&brandShortName; होम पेज">
 
-<!ENTITY bookmarksButton.label          "पुस्तचिह्न">
+<!ENTITY bookmarksButton.label          "बुकमार्क">
 <!ENTITY bookmarksCmd.commandkey "b">
 
-<!ENTITY bookmarksSubview.label             "पुस्तचिह्न">
-<!ENTITY bookmarksMenuButton2.label         "पुस्तचिह्न मेन्यू">
-<!ENTITY bookmarksMenuButton.other.label    "अन्य पुस्तचिह्न">
+<!ENTITY bookmarksSubview.label             "बुकमार्क">
+<!ENTITY bookmarksMenuButton2.label         "बुकमार्क मेन्यू">
+<!ENTITY bookmarksMenuButton.other.label    "अन्य बुकमार्क">
 <!ENTITY bookmarksMenuButton.mobile.label   "मोबाइल बुकमार्क">
-<!ENTITY viewBookmarksSidebar2.label        "पुस्तचिह्न बाज़ू पट्टी देखें">
+<!ENTITY viewBookmarksSidebar2.label        "बुकमार्क बाज़ू पट्टी देखें">
 <!ENTITY hideBookmarksSidebar.label         "बुकमार्क साइडबार छिपाएं">
-<!ENTITY viewBookmarksToolbar.label         "पुस्तचिह्न औज़ारपट्टी देखें">
+<!ENTITY viewBookmarksToolbar.label         "बुकमार्क औज़ारपट्टी देखें">
 <!ENTITY hideBookmarksToolbar.label         "बुकमार्क टूलबार छिपाएं">
-<!ENTITY searchBookmarks.label              "पुस्तचिह्न खोजें">
+<!ENTITY searchBookmarks.label              "बुकमार्क खोजें">
 <!ENTITY bookmarkingTools.label             "बुकमार्क के उपकरण">
 <!ENTITY addBookmarksMenu.label             "टूलबार पर बुकमार्क मेनू डालें">
 <!ENTITY removeBookmarksMenu.label          "टूलबार से बुकमार्क मेनू हटायें">
@@ -427,23 +424,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY customizeMenu.addToToolbar.label "औज़ार पट्टी में जोड़ें">
 <!ENTITY customizeMenu.addToToolbar.accesskey "A">
-<!ENTITY customizeMenu.addToPanel.label "मेन्यू में जोड़ें">
-<!ENTITY customizeMenu.addToPanel.accesskey "M">
 <!-- LOCALIZATION NOTE (customizeMenu.addToOverflowMenu.label,
      customizeMenu.pinToOverflowMenu.label, customizeMenu.unpinFromOverflowMenu.label)
      The overflow menu is the menu that appears if you click the chevron (>> button)
      in the location bar. -->
 <!ENTITY customizeMenu.addToOverflowMenu.label "अतिप्रवाह मेनू में जोड़ें">
 <!ENTITY customizeMenu.addToOverflowMenu.accesskey "M">
-<!ENTITY customizeMenu.moveToToolbar.label "औज़ारपट्टी की ओर खिसकाये">
-<!ENTITY customizeMenu.moveToToolbar.accesskey "o">
-<!-- LOCALIZATION NOTE (customizeMenu.moveToPanel.accesskey, customizeMenu.pinToOverflowMenu.accesskey)
-     can appear on the same context menu as menubarCmd and personalbarCmd,
-     so they should have different access keys. customizeMenu.moveToToolbar and
-     customizeMenu.moveToPanel are mutually exclusive, so can share access
-     keys.  -->
-<!ENTITY customizeMenu.moveToPanel.label "मेनू की ओर खिसकाये">
-<!ENTITY customizeMenu.moveToPanel.accesskey "o">
 <!-- LOCALIZATION NOTE (customizeMenu.pinToOverflowMenu.accesskey)
      can appear on the same context menu as menubarCmd and personalbarCmd,
      so they should have different access keys.  -->
@@ -453,11 +439,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.unpinFromOverflowMenu.accesskey "U">
 <!ENTITY customizeMenu.removeFromToolbar.label "औजारपट्टी से मिटाएँ">
 <!ENTITY customizeMenu.removeFromToolbar.accesskey "R">
-<!ENTITY customizeMenu.removeFromMenu.label "मेन्यू से निकालें">
-<!ENTITY customizeMenu.removeFromMenu.accesskey "R">
 <!ENTITY customizeMenu.addMoreItems.label "अधिक वस्तु जोड़ें ...">
 <!ENTITY customizeMenu.addMoreItems.accesskey "A">
-
 <!ENTITY customizeMenu.autoHideDownloadsButton.label "उपकरण पट्टी में स्वतः-छिपाएं">
 <!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "A">
 <!ENTITY customizeMenu.manageExtension.label "विस्तारक प्रबंधित करें">
@@ -596,14 +579,13 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY viewBGImageCmd.accesskey     "w">
 <!ENTITY setDesktopBackgroundCmd.label      "बतौर डेस्कटॉप पृष्ठभूमि सेट करें…">
 <!ENTITY setDesktopBackgroundCmd.accesskey  "S">
-<!ENTITY bookmarkPageCmd2.label       "यह पृष्ठ पुस्तचिह्नित करें">
+<!ENTITY bookmarkPageCmd2.label       "यह पृष्ठ बुकमार्कित करें">
 <!ENTITY bookmarkPageCmd2.accesskey   "m">
-<!ENTITY bookmarkThisLinkCmd.label      "यह कड़ी पुस्तचिह्नित करें">
+<!ENTITY bookmarkThisLinkCmd.label      "यह कड़ी बुकमार्कित करें">
 <!ENTITY bookmarkThisLinkCmd.accesskey  "L">
-<!ENTITY bookmarkThisFrameCmd.label      "यह फ्रेम पुस्तचिह्नित करें">
+<!ENTITY bookmarkThisFrameCmd.label      "यह फ्रेम बुकमार्कित करें">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "m">
 <!ENTITY pageAction.copyLink.label    "कड़ी नकल करें">
-<!ENTITY copyURLFeedback.label        "प्रतिलिपि!">
 <!ENTITY emailPageCmd.label           "कड़ी ईमेल करें…">
 <!ENTITY emailPageCmd.accesskey       "E">
 <!ENTITY savePageCmd.label            "पृष्ठ ऐसे सहेजें…">
@@ -790,7 +772,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      Remove Bookmark buttons. -->
 <!ENTITY editBookmark.panel.width                    "23em">
 <!ENTITY editBookmark.done.label                     "संपन्न">
-<!ENTITY editBookmark.removeBookmark.accessKey       "R">
 
 <!ENTITY editBookmark.showForNewBookmarks.label       "सहेजते समय संपादक दिखाएं">
 <!ENTITY editBookmark.showForNewBookmarks.accesskey   "S">
@@ -841,7 +822,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissions " अनुमति">
 <!ENTITY identity.permissionsEmpty "आपने इस साइट को कोई विशेष अनुमति नहीं दी है.‌‌‌">
 <!ENTITY identity.permissionsReloadHint "बदलाव को लागु करने के लिए आपको पृष्ठ को फिर से लोड करने की आवश्यकता हैं.">
-
 <!ENTITY identity.permissionsPreferences.tooltip "अनुमति प्राथमिकताएँ खोलें">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
@@ -876,7 +856,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncedTabs.context.openInNewWindow.accesskey        "N">
 <!ENTITY syncedTabs.context.openInNewPrivateWindow.label     "नए और निजी विंडो में खोलें">
 <!ENTITY syncedTabs.context.openInNewPrivateWindow.accesskey "P">
-<!ENTITY syncedTabs.context.bookmarkSingleTab.label          "यह टैब पुस्तचिह्नित करें...">
+<!ENTITY syncedTabs.context.bookmarkSingleTab.label          "यह टैब बुकमार्कित करें...">
 <!ENTITY syncedTabs.context.bookmarkSingleTab.accesskey      "B">
 <!ENTITY syncedTabs.context.copy.label                       "नकल करें">
 <!ENTITY syncedTabs.context.copy.accesskey                   "C">
@@ -944,23 +924,47 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY trackingProtection.on "ट्रैकिंग सुरक्षा: सक्षम">
 <!ENTITY trackingProtection.off "ट्रैकिंग सुरक्षा: अक्षम">
-<!ENTITY trackingProtection.title "ट्रैकिंग सुरक्षा">
-<!ENTITY trackingProtection.detectedBlocked3 "&brandShortName; पृष्ठ के उन हिस्सों को बाधित कर रहा है जो आपके ऑनलाइन गतिविधियों को ट्रैक कर सकते हैं.">
-<!ENTITY trackingProtection.detectedNotBlocked3 "यह साइट उस तत्वो को शामिल करता है जो आपके ब्राउज़िंग पर नजर रख सकता हैं. आप सुरक्षा निष्क्रिय कर दिये हैं.">
-<!ENTITY trackingProtection.notDetected3 "कोई भी ट्रैकिंग तत्व इस पेज पर जांचा नहीं गया.">
-<!-- LOCALIZATION NOTE (trackingProtection.unblock.label, trackingProtection.unblock.accesskey):
-     The associated button with this label and accesskey is only shown when opening the control
-     center while looking at a site with trackers in NON-private browsing mode. -->
-<!ENTITY trackingProtection.unblock.label "इस साइट पर सुरक्षा निष्क्रिय करें">
-<!ENTITY trackingProtection.unblock.accesskey "न">
-<!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate.label, trackingProtection.unblockPrivate.accesskey):
-     The associated button with this label and accesskey is only shown when opening the control
-     center while looking at a site with trackers in PRIVATE browsing mode. -->
-<!ENTITY trackingProtection.unblockPrivate.label "इस साइट पर सुरक्षा निष्क्रिय करें">
-<!ENTITY trackingProtection.unblockPrivate.accesskey "D">
-<!ENTITY trackingProtection.block2.label "सुरक्षा सक्रिय करें">
-<!ENTITY trackingProtection.block2.accesskey "स">
 
+<!ENTITY contentBlocking.disabled.label "निष्क्रिय">
+
+<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.blocked.label):
+     This label signals that this type of content blocking is turned
+     ON and is successfully blocking malicious/slow content, so this is
+     a positive thing. It forms the end of the (imaginary) sentence
+     "Slow-Loading Trackers [are] Blocked"-->
+<!ENTITY contentBlocking.fastBlock.blocked.label "अवरोधित">
+<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.add.label):
+     This is displayed as a link to preferences, where the user can add
+     this specific type of content blocking. When this text is shown
+     the type of content blocking is currently not enabled. -->
+
+<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
+     This label signals that this type of content blocking is turned
+     ON and is successfully blocking tracker content, so this is
+     a positive thing. It forms the end of the (imaginary) sentence
+     "Trackers [are] Blocked"-->
+<!ENTITY contentBlocking.trackingProtection.blocked.label "अवरोधित">
+<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.add.label):
+     This is displayed as a link to preferences, where the user can add
+     this specific type of content blocking. When this text is shown
+     the type of content blocking is currently not enabled. -->
+
+<!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.blocked.label):
+     This label signals that this type of content blocking is turned
+     ON and is successfully blocking third-party cookies, so this is
+     a positive thing. It forms the end of the (imaginary) sentence
+     "Third-Party Cookies [are] Blocked"-->
+<!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.add.label):
+     This is displayed as a link to preferences, where the user can add
+     this specific type of content blocking. When this text is shown
+     the type of content blocking is currently not enabled. -->
+
+<!ENTITY contentBlocking.breakageReportView.learnMore "अधिक जानें">
+<!ENTITY contentBlocking.breakageReportView.collection.url.label "URL">
+<!ENTITY contentBlocking.breakageReportView.sendReport.label "रिपोर्ट भेजें">
+<!ENTITY contentBlocking.breakageReportView.cancel.label "रद्द करें">
+
+<!ENTITY trackingProtection.title "ट्रैकिंग सुरक्षा">
 <!ENTITY trackingProtection.tooltip "ट्रैकिंग सुरक्षा प्राथमिकताएं खोलें">
 <!ENTITY trackingProtection.detectedBlocked4 "&brandShortName; इस पृष्ठ के कुछ भाग को अवरुद्ध कर रहा है जो कि आपके ब्राउज़िंग को ट्रैक कर सकते हैं.">
 <!ENTITY trackingProtection.detectedNotBlocked5 "&brandShortName; ऐसे तत्वों का पता लगाया है जो कि आपके ब्राउज़िंग को ट्रैक कर सकते हैं.">
@@ -969,11 +973,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY trackingProtection.notDetectedException "कोई भी ट्रैक करने वाले तत्वों को इस पृष्ठ पर पाया नहीं गया. आपने इस साइट के लिए सुरक्षा अक्षम कर रखा है.">
 
 <!ENTITY trackingProtection.reloadRequired2 "आपने ट्रैकिंग सुरक्षा सक्षम किया है. सभी ट्रैकरों को अवरुद्ध करने हेतु पृष्ठ को पुनः लोड करें.">
+
 <!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in NON-private browsing mode. -->
 <!ENTITY trackingProtection.unblock3.label "इस साइट के लिए निष्क्रिय करें">
 <!ENTITY trackingProtection.unblock3.accesskey "D">
+<!ENTITY trackingProtection.unblock4.accesskey "D">
 <!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in PRIVATE browsing mode. -->
@@ -981,6 +987,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY trackingProtection.unblockPrivate3.accesskey "D">
 <!ENTITY trackingProtection.block4.label "इस साइट के लिए सक्रिय करें">
 <!ENTITY trackingProtection.block4.accesskey "E">
+<!ENTITY trackingProtection.unblockPrivate4.accesskey "D">
 <!ENTITY trackingProtection.reload2.label "पृष्ठ फिर लोड करें">
 <!ENTITY trackingProtection.reload2.accesskey "R">
 

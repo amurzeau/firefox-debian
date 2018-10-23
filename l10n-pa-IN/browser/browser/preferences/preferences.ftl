@@ -42,7 +42,7 @@ pane-privacy-title = ਪਰਦੇਦਾਰੀ ਤੇ ਸੁਰੱਖਿਆ
 category-privacy =
     .tooltiptext = { pane-privacy-title }
 # The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = ਫਾਇਰਫੌਕਸ ਖਾਤਾ
+pane-sync-title = ਫਾਇਰਫਾਕਸ ਖਾਤਾ
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } ਸਮਰਥਨ
@@ -185,6 +185,7 @@ choose-language-description = ਵਰਕੇ ਨੂੰ ਵੇਖਣ ਲਈ ਆਪ�
 choose-button =
     .label = …ਚੁਣੋ
     .accesskey = o
+confirm-browser-language-change-button = ਲਾਗੂ ਕਰਕੇ ਮੁੜ ਚਾਲੂ ਕਰੋ
 translate-web-pages =
     .label = ਵੈੱਬ ਸਮੱਗਰੀ ਦਾ ਉਲੱਥਾ ਕਰੋ
     .accesskey = T
@@ -298,6 +299,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = ਨੈੱਟਵਰਕ ਪਰਾਕਸੀ
+network-settings-title = ਨੈੱਟਵਰਕ ਸੈਟਿੰਗਾਂ
 network-proxy-connection-description = ਸੰਰਚਨਾ ਕਰੋ ਕਿ { -brand-short-name } ਇੰਟਰਨੈੱਟ ਨਾਲ ਕਿਵੇਂ ਕਨੈਕਟ ਹੋਵੇ।
 network-proxy-connection-learn-more = ਹੋਰ ਜਾਣੋ
 network-proxy-connection-settings =
@@ -319,7 +321,7 @@ home-restore-defaults =
 # "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = ਫਾਇਰਫੌਕਸ ਘਰ (ਮੂਲ)
+    .label = ਫਾਇਰਫਾਕਸ ਮੁੱਖ ਸਫ਼ਾ (ਮੂਲ)
 home-mode-choice-custom =
     .label = …ਚੁਣਿੰਦਾ URL
 home-mode-choice-blank =
@@ -536,8 +538,8 @@ history-dontremember-description = { -brand-short-name } ਪ੍ਰਾਈਵੇ�
 history-private-browsing-permanent =
     .label = ਹਮੇਸ਼ਾ ਪ੍ਰਾਈਵੇਟ ਬਰਾਊਜ਼ਿੰਗ ਮੋਡ ਹੀ ਵਰਤੋਂ
     .accesskey = p
-history-remember-option =
-    .label = ਮੇਰੇ ਬਰਾਊਜ਼ ਕਰਨ ਅਤੇ ਡਾਊਨਲੋਡ ਅਤੀਤ ਨੂੰ ਯਾਦ ਰੱਖੋ
+history-remember-browser-option =
+    .label = ਬਰਾਊਜ਼ ਕਰਨਾ ਅਤੇ ਡਾਊਨਲੋਡ ਅਤੀਤ ਨੂੰ ਯਾਦ ਰੱਖੋ
     .accesskey = b
 history-remember-search-option =
     .label = ਖੋਜ ਅਤੇ ਫਾਰਮ ਅਤੀਤ ਨੂੰ ਯਾਦ ਰੱਖੋ
@@ -581,6 +583,9 @@ sitedata-accept-third-party-visited-option =
     .label = ਖੋਲ੍ਹੀਆਂ ਗਈਆਂ ਤੋਂ ਹੀ
 sitedata-accept-third-party-never-option =
     .label = ਕਦੇ ਨਹੀਂ
+sitedata-allow-cookies-option =
+    .label = ਕੂਕੀਜ਼ ਅਤੇ ਸਾਈਟ ਡਾਟੇ ਨੂੰ ਮਨਜ਼ੂਰ ਕਰੋ
+    .accesskey = A
 sitedata-clear =
     .label = …ਡਾਟੇ ਨੂੰ ਸਾਫ਼ ਕਰੋ
     .accesskey = l
@@ -605,6 +610,17 @@ addressbar-locbar-openpage-option =
     .label = ਪੱਲ੍ਹੇ ਖੋਲ੍ਹੋ
     .accesskey = O
 addressbar-suggestions-settings = ਖੋਜ ਇੰਜਣ ਸੁਝਾਵਾਂ ਲਈ ਪਸੰਦਾਂ ਨੂੰ ਬਦਲੋ
+
+## Privacy Section - Content Blocking
+
+content-blocking-learn-more = ਹੋਰ ਜਾਣੋ
+content-blocking-toggle-label-on = ਚਾਲੂ
+    .accesskey = O
+content-blocking-toggle-label-off = ਬੰਦ
+    .accesskey = O
+content-blocking-tracking-protection-option-always =
+    .label = ਹਮੇਸ਼ਾ
+    .accesskey = A
 
 ## Privacy Section - Tracking
 

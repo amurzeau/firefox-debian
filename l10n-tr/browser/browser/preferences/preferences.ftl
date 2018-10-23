@@ -6,6 +6,8 @@ do-not-track-description = Web sitelerine izlenmek istemediğimi bildiren “Do 
 do-not-track-learn-more = Daha fazla bilgi al
 do-not-track-option-default =
     .label = Yalnızca İzlenme Koruması’nı kullanırken
+do-not-track-option-default-content-blocking =
+    .label = Yalnızca { -brand-short-name } bulunan takipçileri engellemeye ayarlandığında
 do-not-track-option-always =
     .label = Her zaman
 pref-page =
@@ -90,6 +92,9 @@ extension-controlled-privacy-containers = <img data-l10n-name="icon"/> { $name }
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = İzlenme korumasını <img data-l10n-name="icon"/> { $name } adlı eklenti kontrol ediyor.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Bu ayarı <img data-l10n-name="icon"/> { $name } adlı eklenti yönetiyor.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = { -brand-short-name } tarayıcınızın internete nasıl bağlanacağını <img data-l10n-name="icon"/> { $name } adlı eklenti kontrol ediyor.
@@ -203,6 +208,9 @@ choose-button =
     .label = Seç…
     .accesskey = S
 choose-browser-language-description = { -brand-short-name } menülerini, iletilerini ve bildirimlerini gösterirken kullanılacak dilleri seçin.
+manage-browser-languages-button =
+    .label = Alternatifleri ayarla…
+    .accesskey = l
 confirm-browser-language-change-description = Bu değişiklikleri uygulamak için { -brand-short-name } tarayıcısını yeniden başlatın
 confirm-browser-language-change-button = Uygula ve yeniden başlat
 translate-web-pages =
@@ -319,6 +327,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Ağ vekil sunucusu
+network-settings-title = Ağ ayarları
 network-proxy-connection-description = { -brand-short-name } tarayıcınızın internete nasıl bağlanacağını yapılandırın.
 network-proxy-connection-learn-more = Daha fazla bilgi al
 network-proxy-connection-settings =
@@ -557,9 +566,6 @@ history-dontremember-description = { -brand-short-name } Gizli Gezinti ile aynı
 history-private-browsing-permanent =
     .label = Her zaman gizli gezinti kipini kullan
     .accesskey = m
-history-remember-option =
-    .label = Gezinti ve indirme geçmişimi hatırla
-    .accesskey = h
 history-remember-browser-option =
     .label = Tarama ve indirme geçmişini hatırla
     .accesskey = T
@@ -605,6 +611,26 @@ sitedata-accept-third-party-visited-option =
     .label = Ziyaret edilenlerden
 sitedata-accept-third-party-never-option =
     .label = Asla
+sitedata-allow-cookies-option =
+    .label = Çerezleri ve site verilerini kabul et
+    .accesskey = z
+sitedata-disallow-cookies-option =
+    .label = Çerezleri ve site verilerini engelle
+    .accesskey = s
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Engellenecek tür
+    .accesskey = ü
+sitedata-block-trackers-option-recommended =
+    .label = Üçüncü taraf takipçileri (önerilir)
+sitedata-block-trackers-option =
+    .label = Üçüncü taraf takipçileri
+sitedata-block-unvisited-option =
+    .label = Ziyaret etmediğim sitelerin çerezleri
+sitedata-block-all-third-party-option =
+    .label = Tüm üçüncü taraf çerezleri (Bazı web siteleri bozulabilir.)
+sitedata-block-all-option =
+    .label = Tüm çerezler (Bazı web siteleri bozulabilir.)
 sitedata-clear =
     .label = Verileri temizle…
     .accesskey = l
@@ -614,6 +640,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = İstisnalar…
     .accesskey = r
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = “İçerik engelleme” ayarlarınız, “çerezler ve site verileri” ayarlarının değiştirilmesini engelliyor.
 
 ## Privacy Section - Address Bar
 
@@ -650,23 +680,42 @@ content-blocking-category-label = Nelerin engelleneceğini seçin
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Yavaş takipçi öğeleri
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Yavaş yüklenen takipçiler
     .accesskey = Y
-content-blocking-fastblock-description = Yüklenmesi 5 saniyeden uzun süren üçüncü taraf içeriklerini engeller.
-content-blocking-fastblock-option-enabled =
-    .label = Her zaman engelle
-content-blocking-fastblock-option-disabled =
-    .label = Asla engelleme
-content-blocking-tracking-protection-label = Takipçiler
+content-blocking-fastblock-new-description = Yalnızca sayfaların çabuk yüklenmesini önleyen takipçileri engeller.
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Bulunan tüm takipçiler
+    .accesskey = B
+content-blocking-tracking-protection-new-description = Bilinen tüm takipçileri engeller. (Bazı sayfalar düzgün yüklenmeyebilir.)
+content-blocking-tracking-protection-option-always =
+    .label = Her zaman
+    .accesskey = H
+content-blocking-tracking-protection-option-private =
+    .label = Yalnızca gizli pencerelerde
+    .accesskey = z
+content-blocking-tracking-protection-change-block-list = Engelleme listesini değiştir
+content-blocking-third-party-cookies-label =
+    .label = Üçüncü taraf çerezleri
+    .accesskey = Ü
+content-blocking-reject-trackers-description = Tüm üçüncü taraf çerezlerini veya yalnızca takipçilerin oluşturduğu çerezleri engelleyebilirsiniz.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = “Çerezler ve site verileri” ayarlarınız, “üçüncü taraf çerezleri” ayarlarının değiştirilmesini engelliyor.
+content-blocking-change-cookie-settings =
+    .label = Çerez ayarlarını değiştir
+    .accesskey = z
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Takipçiler (önerilen)
     .accesskey = T
-content-blocking-tracking-protection-description = Bilinen tüm takipçileri engeller (Not: Bazı sayfaların yüklenmesini de engelleyebilir.)
-content-blocking-tracking-protection-option-enabled =
-    .label = Her zaman engelle
-content-blocking-tracking-protection-option-pbm =
-    .label = Yalnızca gizli pencerelerde engelle
-content-blocking-tracking-protection-option-disabled =
-    .label = Asla engelleme
-content-blocking-tracking-protection-change-blocklist = Engelleme listesini değiştir…
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Takipçiler
+    .accesskey = k
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Tüm üçüncü taraf çerezleri (Bazı siteler bozulabilir.)
+    .accesskey = ü
 
 ## Privacy Section - Tracking
 
@@ -688,7 +737,7 @@ tracking-pbm-label = Gizli Gezinti’de bilinen takipçileri engellemek için İ
     .accesskey = G
 tracking-exceptions =
     .label = İstisnalar…
-    .accesskey = r
+    .accesskey = t
 tracking-change-block-list =
     .label = Engelleme listesini değiştir…
     .accesskey = E
@@ -729,6 +778,7 @@ autoplay-option-allow =
     .label = Otomatik oynatmaya izin ver
 autoplay-option-dont =
     .label = Otomatik oynatma
+permissions-autoplay-link = Daha fazla bilgi al
 permissions-block-popups =
     .label = Açılır pencereleri engelle
     .accesskey = n

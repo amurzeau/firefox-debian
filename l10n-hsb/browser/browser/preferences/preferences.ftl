@@ -6,6 +6,8 @@ do-not-track-description = Websydłam signal “Njeslědować” pósłać, zo n
 do-not-track-learn-more = Dalše informacije
 do-not-track-option-default =
     .label = Jenož, hdyž so slědowanski škit wužiwa
+do-not-track-option-default-content-blocking =
+    .label = Jenož, hdyž je w { -brand-short-name } nastajene, zo so wotkryte přesćěhowaki blokuja.
 do-not-track-option-always =
     .label = Přeco
 pref-page =
@@ -90,6 +92,9 @@ extension-controlled-privacy-containers = Rozšěrjenje, <img data-l10n-name="ic
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Rozšěrjenje, <img data-l10n-name="icon"/> { $name }, slědowanski škit kontroluje.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Rozšěrjenje, <img data-l10n-name="icon"/> { $name }, tute nastajenje kontroluje.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Rozšěrjenje <img data-l10n-name="icon"/> { $name } wodźi, kak { -brand-short-name } z internetom zwjazuje.
@@ -209,6 +214,9 @@ choose-button =
     .label = Wubrać…
     .accesskey = u
 choose-browser-language-description = Wubjerće rěče, kotrež so wužiwaja, zo bychu menije, powěsće a zdźělenki z { -brand-short-name } pokazali.
+manage-browser-languages-button =
+    .label = Alternatiwy nastajić…
+    .accesskey = l
 confirm-browser-language-change-description = Startujće { -brand-short-name } znowa, zo byšće tute změny nałožił
 confirm-browser-language-change-button = Nałožić a znowa startować
 translate-web-pages =
@@ -325,6 +333,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Syćowy proksy
+network-settings-title = Syćowe nastajenja
 network-proxy-connection-description = Konfigurować, kak { -brand-short-name } z internetom zwjazuje.
 network-proxy-connection-learn-more = Dalše informacije
 network-proxy-connection-settings =
@@ -563,9 +572,6 @@ history-dontremember-description = { -brand-short-name } budźe samsne nastajenj
 history-private-browsing-permanent =
     .label = Přeco priwatny modus wužiwać
     .accesskey = P
-history-remember-option =
-    .label = Sej přehladowansku a sćehnjensku historiju spomjatkować
-    .accesskey = h
 history-remember-browser-option =
     .label = Sej přehladowansku a sćehnjensku historiju spomjatkować
     .accesskey = m
@@ -631,6 +637,10 @@ sitedata-block-all-third-parties-option =
     .label = Wšě placki třećich
 sitedata-block-always-option =
     .label = Wšě placki (móže zawinować, zo websydła njefunguja)
+sitedata-block-all-third-party-option =
+    .label = Wšě placki třećich (móže zawinować, zo websydła njefunguja)
+sitedata-block-all-option =
+    .label = Wšě placki (budźe zawinować, zo websydła njefunguja)
 sitedata-clear =
     .label = Daty zhašeć…
     .accesskey = z
@@ -640,6 +650,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Wuwzaća…
     .accesskey = W
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Waše nastajenja blokowanja wobsaha změnam na nastajenjach plackow a sydłowych datow zadźěwa.
 
 ## Privacy Section - Address Bar
 
@@ -693,6 +707,45 @@ content-blocking-tracking-protection-option-pbm =
 content-blocking-tracking-protection-option-disabled =
     .label = Ženje njeblokować
 content-blocking-tracking-protection-change-blocklist = Lisćinu blokowanjow změnić…
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Pomału čitace přesćěhowaki
+    .accesskey = P
+content-blocking-fastblock-new-description = Jenož přesćěhowaki blokować, kotrež strony při spěšnym začitanju haća.
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Wšě wotkryte přesćěhowaki
+    .accesskey = h
+content-blocking-tracking-protection-new-description = Wšě znate přesćěhowaki blokować. (Móže někotre strony při začitanju haćić.)
+content-blocking-tracking-protection-option-always =
+    .label = Přeco
+    .accesskey = P
+content-blocking-tracking-protection-option-private =
+    .label = Jenož w priwatnych woknach
+    .accesskey = J
+content-blocking-tracking-protection-change-block-list = Blokowansku lisćinu změnić
+content-blocking-third-party-cookies-label =
+    .label = Placki třećich poskićowarjow
+    .accesskey = c
+content-blocking-reject-trackers-description = Wšě placki třećich blokować abo jenož te, kotrež přesćěhowaki su stajili.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Waše nastajenja plackow a sydłowych datow změnam na nastajenjam plackow třećich zadźěwaja.
+content-blocking-change-cookie-settings =
+    .label = Nastajenja plackow změnić
+    .accesskey = N
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Přesćěhowaki (doporučene)
+    .accesskey = h
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Přesćěhowaki
+    .accesskey = h
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Wšě placki třećich (móže zawinować, zo websydła njefunguja)
+    .accesskey = t
 
 ## Privacy Section - Tracking
 

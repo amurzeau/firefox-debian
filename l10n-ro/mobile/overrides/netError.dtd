@@ -22,7 +22,7 @@
 <!ENTITY dnsNotFound.longDesc4 "<ul> <li>Verifică adresa de erori de tastare cum ar fi <strong>ww</strong>.example.com în loc de <strong>www</strong>.example.com</li> <div id='searchbox'> <input id='searchtext' type='search'></input> <button id='searchbutton'>Caută</button> </div> <li>Dacă nu poți să încarci nicio pagină, verifică conexiunea de date sau Wi-Fi a dispozitivului. <button id='wifi'>Activează Wi-Fi-ul</button> </li> </ul>">
 
 <!ENTITY fileNotFound.title "Fișier negăsit">
-<!ENTITY fileNotFound.longDesc "<ul> <li>Verifică ca numele fișierului să nu aibă erori de majuscule/minuscule sau alte erori de tastare.</li> <li>Verifică ca fișierul să nu fi fost mutat, redenumit sau șters.</li> </ul>">
+<!ENTITY fileNotFound.longDesc "<ul> <li>Verifică numele fișierului - să nu aibă erori de majuscule/minuscule sau alte erori de tastare.</li> <li>Verifică fișierul - să nu fi fost mutat, redenumit sau șters.</li> </ul>">
 
 <!ENTITY fileAccessDenied.title "Accesul la fișierul a fost refuzat">
 <!ENTITY fileAccessDenied.longDesc "<ul> <li>Este posibil să fi fost eliminat, mutat sau permisiunile fișierului pot împiedica accesul.</li> </ul>">
@@ -57,11 +57,11 @@
 <!ENTITY netReset.title "Conexiunea a fost reinițializată">
 <!ENTITY netReset.longDesc2 "&sharedLongDesc3;">
 
-<!ENTITY netTimeout.title "Timpul conexiunii a expirat">
+<!ENTITY netTimeout.title "Conexiunea a expirat">
 <!ENTITY netTimeout.longDesc2 "&sharedLongDesc3;">
 
 <!ENTITY unknownProtocolFound.title "Adresa nu a fost înțeleasă">
-<!ENTITY unknownProtocolFound.longDesc "<ul> <li>S-ar putea să fie nevoie să instalezi alt program pentru a deschide această adresă.</li> </ul>">
+<!ENTITY unknownProtocolFound.longDesc "<ul> <li>S-ar putea să fie necesară instalarea altui program pentru a deschide adresa.</li> </ul>">
 
 <!ENTITY proxyConnectFailure.title "Serverul proxy refuză conexiuni">
 <!ENTITY proxyConnectFailure.longDesc "<ul> <li>Verifică setările proxy pentru a te asigura că sunt corecte.</li> <li>Contactează administratorul rețelei pentru a te asigura că serverul proxy funcționează.</li> </ul>">
@@ -81,7 +81,13 @@
 <!ENTITY nssFailure2.longDesc2 "<ul> <li>Pagina pe care încerci să o vezi nu poate fi afișată deoarece nu s-a putut verifica autenticitatea datelor primite.</li> <li>Te rugăm să contactezi proprietarii site-ului web pentru a-i informa despre această problemă.</li> </ul>">
 
 <!ENTITY nssBadCert.title "Conexiunea securizată a eșuat">
-<!ENTITY nssBadCert.longDesc2 "<ul> <li>Aceasta s-ar putea datora unei probleme în configurația serverului sau ar putea să fie cineva care încearcă să uzurpeze identitatea serverului.</li> <li>Dacă te-ai conectat cu succes în trecut la acest server, eroarea poate fi temporară și poți încerca din nou mai târziu.</li> </ul>">
+<!ENTITY nssBadCert.longDesc2 "
+<ul>
+  <li>Aceasta s-ar putea datora unei probleme în configurația serverului sau
+ar putea să fie cineva care încearcă să uzurpeze identitatea serverului.</li>
+  <li>Dacă te-ai conectat cu succes în trecut la acest server, eroarea poate fi
+temporară și poți încerca din nou mai târziu.</li>
+</ul>">
 
 <!-- LOCALIZATION NOTE (sharedLongDesc3) This string contains markup including widgets for enabling wifi connections.
      The text inside the tags should be localized. Do not touch the ids. -->
@@ -120,4 +126,4 @@ netError.xhtml) because it exposes functionality specific to firefox. -->
 <!ENTITY inadequateSecurityError.title "Conexiunea nu este securizată">
 <!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
      "NS_ERROR_NET_INADEQUATE_SECURITY". -->
-<!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> folosește tehnologie de securitate care este învechită și vulnerabilă la atac. Un atacator ar putea dezvălui cu ușurință informații pe care le credeai a fi în siguranță. Administratorul site-ului web va trebui să repare serverul mai întâi înainte să poți vizita site-ul.</p><p>Codul erorii: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
+<!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> folosește o tehnologie de securitate depășită și vulnerabilă la atacuri. Un atacator ar putea dezvălui cu ușurință informații pe care le credeai în siguranță. Administratorul site-ului web va trebui să repare mai întâi serverul ca să poți intra pe site.</p><p>Codul erorii: NS_ERROR_NET_INADEQUATE_SECURITY</p>">

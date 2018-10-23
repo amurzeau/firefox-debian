@@ -5,6 +5,9 @@
 languages-window =
     .title = Rěče
     .style = width: 30em
+webpage-languages-window =
+    .title = Rěčne nastajenja webstrony
+    .style = width: 40em
 languages-close-key =
     .key = w
 languages-description = Webstrony so druhdy we wjace hač jednej rěči k dispoziciji steja. Wubjerće rěče za předstajenje tutych webstronow we swojim preferowanym porjedźe
@@ -38,3 +41,7 @@ languages-code-format =
     .label = { $locale }  [{ $code }]
 languages-active-code-format =
     .value = { languages-code-format.label }
+browser-languages-window =
+    .title = Rěčne nastajenja { -brand-short-name }
+    .style = width: 40em
+browser-languages-description = { -brand-short-name } pokaza prěnju rěč jako waš standard a dalše rěče, jeli trjeba, w porjedźe, w kotrymž so jewja.

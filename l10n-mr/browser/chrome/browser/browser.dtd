@@ -68,8 +68,6 @@ can reach it easily. -->
 <!ENTITY  sendPageToDevice.accesskey         "D">
 <!ENTITY  sendLinkToDevice.label             "दुवा उपकरणाला पाठवा">
 <!ENTITY  sendLinkToDevice.accesskey         "D">
-<!ENTITY  sendToDeviceFeedback.label         "पाठविले!">
-<!ENTITY  sendToDeviceOfflineFeedback.label  "रांगेत (ऑफलाइन)">
 <!ENTITY  moveToNewWindow.label              "नवीन पटलाकडे हलवा">
 <!ENTITY  moveToNewWindow.accesskey          "W">
 <!ENTITY  reopenInContainer.label            "कंटेनर मध्ये पुन्हा उघडा">
@@ -229,6 +227,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY urlbar.defaultNotificationAnchor.tooltip         "संदेश फलक उघडा">
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "स्थळ विनंती फलक उघडा">
+<!ENTITY urlbar.autoplayNotificationAnchor.tooltip        "स्वयंप्ले पॅनल उघडा">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "अॅड-ऑन प्रतिष्ठापन संदेश फलक उघडा">
 <!ENTITY urlbar.canvasNotificationAnchor.tooltip          "कॅनव्हस एक्सट्रॅकशन च्या परवानग्या व्यवस्थापित करा">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "ऑफलाईन साठ्याचा संदेश फलक उघडा">
@@ -266,7 +265,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!-- Toolbar items -->
 <!ENTITY homeButton.label             "घर, आरंभस्थळ">
-
 <!ENTITY homeButton.defaultPage.tooltip "&brandShortName; मुख्यपृष्ठ">
 
 <!ENTITY bookmarksButton.label          "वाचनखूणा">
@@ -424,23 +422,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY customizeMenu.addToToolbar.label "साधनपट्टीमध्ये समाविष्ट करा">
 <!ENTITY customizeMenu.addToToolbar.accesskey "A">
-<!ENTITY customizeMenu.addToPanel.label "मेन्युमध्ये समाविष्ट करा">
-<!ENTITY customizeMenu.addToPanel.accesskey "M">
 <!-- LOCALIZATION NOTE (customizeMenu.addToOverflowMenu.label,
      customizeMenu.pinToOverflowMenu.label, customizeMenu.unpinFromOverflowMenu.label)
      The overflow menu is the menu that appears if you click the chevron (>> button)
      in the location bar. -->
 <!ENTITY customizeMenu.addToOverflowMenu.label "ओव्हरफ्लो मेनू मध्ये जोडा">
 <!ENTITY customizeMenu.addToOverflowMenu.accesskey "M">
-<!ENTITY customizeMenu.moveToToolbar.label "साधनपट्टीमध्ये स्थानांतरीत करा">
-<!ENTITY customizeMenu.moveToToolbar.accesskey "o">
-<!-- LOCALIZATION NOTE (customizeMenu.moveToPanel.accesskey, customizeMenu.pinToOverflowMenu.accesskey)
-     can appear on the same context menu as menubarCmd and personalbarCmd,
-     so they should have different access keys. customizeMenu.moveToToolbar and
-     customizeMenu.moveToPanel are mutually exclusive, so can share access
-     keys.  -->
-<!ENTITY customizeMenu.moveToPanel.label "मेन्युकडे जा">
-<!ENTITY customizeMenu.moveToPanel.accesskey "o">
 <!-- LOCALIZATION NOTE (customizeMenu.pinToOverflowMenu.accesskey)
      can appear on the same context menu as menubarCmd and personalbarCmd,
      so they should have different access keys.  -->
@@ -450,11 +437,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.unpinFromOverflowMenu.accesskey "U">
 <!ENTITY customizeMenu.removeFromToolbar.label "साधनपट्टीतून काढून टाका">
 <!ENTITY customizeMenu.removeFromToolbar.accesskey "R">
-<!ENTITY customizeMenu.removeFromMenu.label "मेन्युतून काढून टाका">
-<!ENTITY customizeMenu.removeFromMenu.accesskey "R">
 <!ENTITY customizeMenu.addMoreItems.label "आणखी घटक समाविष्ट करा…">
 <!ENTITY customizeMenu.addMoreItems.accesskey "A">
-
 <!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "A">
 <!ENTITY customizeMenu.manageExtension.label "एक्सटेन्शन व्यवस्थापित करा">
 <!ENTITY customizeMenu.manageExtension.accesskey "E">
@@ -465,7 +449,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY moreMenu.label "अजून">
 
 <!ENTITY openCmd.commandkey           "l">
-<!ENTITY urlbar.placeholder2          "पत्ता शोधा किंवा द्या">
+<!ENTITY urlbar.placeholder2          "शोधा किंवा पत्ता द्या">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "एक्सटेंशन:">
@@ -599,7 +583,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisFrameCmd.label      "या चौकटाला वाचनखूण लावा">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "m">
 <!ENTITY pageAction.copyLink.label    "दुव्याची प्रत बनवा">
-<!ENTITY copyURLFeedback.label        "प्रत बनविली!">
 <!ENTITY emailPageCmd.label           "दुवा ईमेल करा…">
 <!ENTITY emailPageCmd.accesskey       "E">
 <!ENTITY savePageCmd.label            "पृष्ठ असे साठवा…">
@@ -786,8 +769,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      Remove Bookmark buttons. -->
 <!ENTITY editBookmark.panel.width                    "23em">
 <!ENTITY editBookmark.done.label                     "झाले">
-<!ENTITY editBookmark.removeBookmark.accessKey       "R">
 
+<!ENTITY editBookmark.showForNewBookmarks.label       "जतन करतांना संपादक दर्शवा">
 <!ENTITY editBookmark.showForNewBookmarks.accesskey   "S">
 
 <!-- LOCALIZATION NOTE (identity.securityView.label)
@@ -824,7 +807,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.enableMixedContentBlocking.accesskey "E">
 <!ENTITY identity.disableMixedContentBlocking.label "सद्या सुरक्षा निष्क्रिय करा">
 <!ENTITY identity.disableMixedContentBlocking.accesskey "D">
-<!ENTITY identity.learnMore "आणखी शिका">
+<!ENTITY identity.learnMore "अधिक जाणा">
 
 <!ENTITY identity.removeCertException.label "अपवाद काढा">
 <!ENTITY identity.removeCertException.accesskey "R">
@@ -836,7 +819,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissions "परवानगी">
 <!ENTITY identity.permissionsEmpty "आपण ह्या साईटला काही विशेष परवानग्या दिलेल्या नाहीत.">
 <!ENTITY identity.permissionsReloadHint "आपल्याला बदल लागू करण्यासाठी पृष्ठ पुन्हा लोड करावे लागू शकते.">
-
+<!ENTITY identity.permissionsPreferences.tooltip "परवानग्या प्राधान्ये उघडा">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
@@ -939,59 +922,83 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY trackingProtection.on "मागोवा सुरक्षा: चालु">
 <!ENTITY trackingProtection.off "मागोवा सुरक्षा: बंद">
 
+<!ENTITY contentBlocking.title "मजकूर अवरोधन">
+<!ENTITY contentBlocking.detected "या साइटवर अवरोधित करण्यायोग्य मजकूर आढळले.">
+<!ENTITY contentBlocking.notDetected "या साइटवर अवरोधित करण्यायोग्य मजकूर आढळले नाही.">
+<!ENTITY contentBlocking.disabled.label "निष्क्रिय केले आहे">
+<!ENTITY contentBlocking.disabled.tooltip "आपण मजकूर अवरोधित करणे निष्क्रिय केले आहे.">
+<!ENTITY contentBlocking.exception.tooltip "आपण या साइटसाठी मजकूर अवरोधित करणे निष्क्रिय केले आहे.">
 
 <!-- LOCALIZATION NOTE (contentBlocking.fastBlock.blocked.label):
      This label signals that this type of content blocking is turned
      ON and is successfully blocking malicious/slow content, so this is
      a positive thing. It forms the end of the (imaginary) sentence
      "Slow-Loading Trackers [are] Blocked"-->
+<!ENTITY contentBlocking.fastBlock.blocked.label "अडवलेले">
 <!-- LOCALIZATION NOTE (contentBlocking.fastBlock.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
      the type of content blocking is currently not enabled. -->
+<!ENTITY contentBlocking.fastBlock.add.label "अवरोधन जोडा…">
 
+<!ENTITY contentBlocking.trackingProtection2.label "सर्व आढळलेले ट्रॅकर्स">
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
      This label signals that this type of content blocking is turned
-     ON and is successfully blocking malicious/slow content, so this is
+     ON and is successfully blocking tracker content, so this is
      a positive thing. It forms the end of the (imaginary) sentence
      "Trackers [are] Blocked"-->
+<!ENTITY contentBlocking.trackingProtection.blocked.label "अडवलेले">
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
      the type of content blocking is currently not enabled. -->
+<!ENTITY contentBlocking.trackingProtection.add.label "अवरोधन जोडा…">
+
+<!ENTITY contentBlocking.3rdPartyCookies.label "तृतीय-पक्ष कुकीज">
+<!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.blocked.label):
+     This label signals that this type of content blocking is turned
+     ON and is successfully blocking third-party cookies, so this is
+     a positive thing. It forms the end of the (imaginary) sentence
+     "Third-Party Cookies [are] Blocked"-->
+<!ENTITY contentBlocking.3rdPartyCookies.blocked.label "अवरोधित">
+<!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.add.label):
+     This is displayed as a link to preferences, where the user can add
+     this specific type of content blocking. When this text is shown
+     the type of content blocking is currently not enabled. -->
+<!ENTITY contentBlocking.3rdPartyCookies.add.label "अवरोधन जोडा…">
+
+<!ENTITY contentBlocking.openBreakageReportView2.label "समस्या नोंदवा">
+<!ENTITY contentBlocking.breakageReportView.label "समस्या अहवाल द्या">
+<!ENTITY contentBlocking.breakageReportView.learnMore "अधिक जाणून घ्या">
+<!ENTITY contentBlocking.breakageReportView.collection.url.label "URL">
+<!ENTITY contentBlocking.breakageReportView.collection.comments.label "आपल्याला कोणती समस्या आहे? (पर्यायी)">
+<!ENTITY contentBlocking.breakageReportView.sendReport.label "अहवाल पाठवा">
+<!ENTITY contentBlocking.breakageReportView.cancel.label "रद्द करा">
 
 <!ENTITY trackingProtection.title "मागोवा संरक्षण">
-<!ENTITY trackingProtection.detectedBlocked3 "जे आपल्या आॅनलाइन कार्याचा मागोवा घेऊ शकतात त्यांना &brandShortName; प्रतीरोधीत करीत आहे.">
-<!ENTITY trackingProtection.detectedNotBlocked3 "आपल्या आॅनलाइन कार्याचा मागोवा घेऊ शकणारे घटक या पृष्ठामध्ये आहेत.आपण ह्या पृष्ठावरील सुरक्षा बंद केली आहे.">
-<!ENTITY trackingProtection.notDetected3 "मागोवा घेणारे घटक ह्या पृष्ठावर आढळले नाही.">
-<!-- LOCALIZATION NOTE (trackingProtection.unblock.label, trackingProtection.unblock.accesskey):
-     The associated button with this label and accesskey is only shown when opening the control
-     center while looking at a site with trackers in NON-private browsing mode. -->
-<!ENTITY trackingProtection.unblock.label "ह्या वेबसाईट साठी सुरक्षा निष्क्रिय करा">
-<!ENTITY trackingProtection.unblock.accesskey "D">
-<!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate.label, trackingProtection.unblockPrivate.accesskey):
-     The associated button with this label and accesskey is only shown when opening the control
-     center while looking at a site with trackers in PRIVATE browsing mode. -->
-<!ENTITY trackingProtection.unblockPrivate.label "ह्या सत्रासाठी सुरक्षा निष्क्रिय करा">
-<!ENTITY trackingProtection.unblockPrivate.accesskey "D">
-<!ENTITY trackingProtection.block2.label "सुरक्षा सक्रीय करा">
-<!ENTITY trackingProtection.block2.accesskey "E">
-
 <!ENTITY trackingProtection.detectedBlocked4 "जे आपल्या आॅनलाइन कार्याचा मागोवा घेऊ शकतात त्यांना &brandShortName; प्रतीरोधीत करीत आहे.">
 <!ENTITY trackingProtection.notDetected5 "मागोवा घेणारे घटक ह्या पृष्ठावर आढळले नाही.">
 
+<!ENTITY trackingProtection.reloadRequired2 "आपण ट्रॅकिंग संरक्षण सक्रीय केले आहे. सर्व ट्रॅकर्सला अवरोधित करण्यासाठी हे पृष्ठ पुन्हा लोड करा.">
 
 <!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in NON-private browsing mode. -->
 <!ENTITY trackingProtection.unblock3.label "या संकेतस्थळासाठी बंद करा">
 <!ENTITY trackingProtection.unblock3.accesskey "D">
+<!ENTITY trackingProtection.unblock4.label "या साइटसाठी अवरोध करणे निष्क्रिय करा">
+<!ENTITY trackingProtection.unblock4.accesskey "D">
 <!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in PRIVATE browsing mode. -->
+<!ENTITY trackingProtection.unblockPrivate3.label "ह्या सत्रासाठी निष्क्रिय करा">
 <!ENTITY trackingProtection.unblockPrivate3.accesskey "D">
 <!ENTITY trackingProtection.block4.label "या संकेतस्थळासाठी सक्रिय करा">
 <!ENTITY trackingProtection.block4.accesskey "E">
+<!ENTITY trackingProtection.unblockPrivate4.label "तात्पुरते अवरोध करणे निष्क्रिय करा">
+<!ENTITY trackingProtection.unblockPrivate4.accesskey "D">
+<!ENTITY trackingProtection.block5.label "या साइटसाठी अवरोध करणे सक्रीय करा">
+<!ENTITY trackingProtection.block5.accesskey "E">
 <!ENTITY trackingProtection.reload2.label "पृष्ठ पुनःलोड करा">
 <!ENTITY trackingProtection.reload2.accesskey "R">
 

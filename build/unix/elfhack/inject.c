@@ -64,6 +64,9 @@ void do_relocations_with_relro(void)
 {
     long page_size = sysconf_cb(_SC_PAGESIZE);
     uintptr_t aligned_relro_start = ((uintptr_t) relro_start) & ~(page_size - 1);
+    // The relro segment may not end at a page boundary. If that's the case, the
+    // remainder of the page needs to stay read-write, so the last page is never
+    // set read-only. Thus the aligned relro end is page-rounded down.
     uintptr_t aligned_relro_end = ((uintptr_t) relro_end) & ~(page_size - 1);
     // By the time the injected code runs, the relro segment is read-only. But
     // we want to apply relocations in it, so we set it r/w first. We'll restore

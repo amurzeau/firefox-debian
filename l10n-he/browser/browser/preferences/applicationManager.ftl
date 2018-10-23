@@ -6,15 +6,15 @@ app-manager-window =
     .title = פרטי יישום
     .style = width: 30em; min-height: 20em;
 app-manager-remove =
-    .label = הסר
+    .label = הסרה
     .accesskey = ה
-app-manager-handle-webfeeds = היישומים הבאים יכולים לטפל ב־הזנות רשת.
+app-manager-handle-webfeeds = היישומים הבאים יכולים לטפל בהזנות רשת.
 # Variables:
 #   $type (String) - the URI scheme of the link (e.g. mailto:)
-app-manager-handle-protocol = היישומים הבאים יכולים לטפל ב־קישורי { $type }.
+app-manager-handle-protocol = היישומים הבאים יכולים לטפל בקישורי { $type }.
 # Variables:
 #   $type (String) - the MIME type (e.g. application/binary)
-app-manager-handle-file = היישומים הבאים יכולים לטפל ב־תוכן { $type }.
+app-manager-handle-file = היישומים הבאים יכולים לטפל בתוכן { $type }.
 
 ## These strings are followed, on a new line,
 ## by the URL or path of the application.

@@ -2,11 +2,6 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!-- LOCALIZATION NOTE (aboutPrivateBrowsing.title):
-     Please ensure this exactly matches tabs.emptyPrivateTabTitle in tabbrowser.properties -->
-<!ENTITY aboutPrivateBrowsing.title                      "Súkromné prehliadanie">
-<!ENTITY aboutPrivateBrowsing.notPrivate.title           "Otvoriť súkromné okno?">
-
 <!ENTITY aboutPrivateBrowsing.notPrivate                 "Práve nie ste v režime Súkromné prehliadanie">
 <!ENTITY privatebrowsingpage.openPrivateWindow.label     "Otvoriť Súkromné okno">
 <!ENTITY privatebrowsingpage.openPrivateWindow.accesskey "S">
@@ -25,6 +20,7 @@
 <!ENTITY aboutPrivateBrowsing.info.saved.after2          " vaše:">
 <!ENTITY aboutPrivateBrowsing.info.downloads             "prevzaté súbory">
 <!ENTITY aboutPrivateBrowsing.info.bookmarks             "záložky">
+<!ENTITY aboutPrivateBrowsing.info.clipboard             "skopírovaný text">
 <!ENTITY aboutPrivateBrowsing.note.before                "Režim Súkromné prehliadanie ">
 <!ENTITY aboutPrivateBrowsing.note.emphasize             "vás neanonymizuje">
 <!ENTITY aboutPrivateBrowsing.note.after                 " na internete. Váš zamestnávateľ alebo poskytovateľ internetového pripojenia môžu stále zistiť, aké stránky ste navštívili.">
@@ -35,3 +31,6 @@
 <!ENTITY trackingProtection.title                        "Ochrana pred sledovaním">
 <!ENTITY trackingProtection.description2                 "Niektoré webové stránky používajú sledovacie prvky, ktoré monitorujú vašu aktivitu na internete. S Ochranou pred sledovaním Firefox zablokuje veľké množstvo týchto sledovacích prvkov.">
 <!ENTITY trackingProtection.startTour1                   "Pozrite sa ako to funguje">
+
+<!ENTITY contentBlocking.title                           "Blokovanie obsahu">
+<!ENTITY contentBlocking.description                     "Niektoré webové stránky používajú sledovacie prvky, ktoré sledujú vašu aktivitu na internete. Blokovanie obsahu vo Firefoxe automaticky blokuje veľké množstvo týchto sledovacích prvkov, ktoré môžu zbierať informácie o vašom prehliadaní.">

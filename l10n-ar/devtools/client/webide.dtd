@@ -5,7 +5,9 @@
 <!ENTITY windowTitle "بيئة فَيَرفُكس لتطوير الوب">
 
 <!ENTITY projectMenu_label "مشروع">
+<!ENTITY projectMenu_accesskey "ش">
 <!ENTITY projectMenu_newApp_label "تطبيق جديد…">
+<!ENTITY projectMenu_newApp_accesskey "ج">
 <!ENTITY projectMenu_importPackagedApp_label "افتح تطبيقًا مُحزّمًا…">
 <!ENTITY projectMenu_importPackagedApp_accesskey "م">
 <!ENTITY projectMenu_importHostedApp_label "افتح تطبيقًا مستضافًا…">
@@ -27,6 +29,7 @@
 <!ENTITY projectMenu_refreshTabs_label "أنعش الألسنة">
 
 <!ENTITY runtimeMenu_label "بيئة التشغيل">
+<!ENTITY runtimeMenu_accesskey "ئ">
 <!ENTITY runtimeMenu_disconnect_label "اقطع الاتصال">
 <!ENTITY runtimeMenu_disconnect_accesskey "ص">
 <!ENTITY runtimeMenu_takeScreenshot_label "لقطة شاشة">
@@ -36,13 +39,16 @@
 <!ENTITY runtimeMenu_showDevicePrefs_label "تفضيلات الجهاز">
 <!ENTITY runtimeMenu_showDevicePrefs_accesskey "ج">
 <!ENTITY runtimeMenu_showSettings_label "إعدادات الجهاز">
+<!ENTITY runtimeMenu_showSettings_accesskey "ه">
 
 <!ENTITY viewMenu_label "اعرض">
 <!ENTITY viewMenu_accesskey "ع">
 <!ENTITY viewMenu_zoomin_label "قرّب">
+<!ENTITY viewMenu_zoomin_accesskey "ق">
 <!ENTITY viewMenu_zoomout_label "بعّد">
-<!ENTITY viewMenu_zoomout_accesskey "ق">
+<!ENTITY viewMenu_zoomout_accesskey "د">
 <!ENTITY viewMenu_resetzoom_label "صفّر مستوى التقريب">
+<!ENTITY viewMenu_resetzoom_accesskey "ف">
 
 <!ENTITY projectButton_label "افتح تطبيقا">
 <!ENTITY runtimeButton_label "اختر بيئة تشغيل">
@@ -54,7 +60,10 @@
 <!-- show toolbox -->
 <!ENTITY key_toggleToolbox "VK_F12">
 <!-- zoom -->
+<!ENTITY key_zoomin "+">
+<!ENTITY key_zoomin2 "=">
 <!ENTITY key_zoomout "-">
+<!ENTITY key_resetzoom "0">
 
 <!ENTITY projectPanel_myProjects "مشاريعي">
 <!ENTITY projectPanel_runtimeApps "تطبيقات بيئة التشغيل">

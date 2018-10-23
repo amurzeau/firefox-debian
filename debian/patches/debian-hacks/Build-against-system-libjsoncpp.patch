@@ -4,27 +4,27 @@ Subject: Build against system libjsoncpp
 
 ---
  config/system-headers.mozbuild                |  4 ++
- .../components/jsoncpp/src/lib_json/moz.build | 46 +------------------
+ .../components/jsoncpp/src/lib_json/moz.build | 49 +------------------
  .../crashreporter/minidump-analyzer/moz.build |  2 +-
- 3 files changed, 6 insertions(+), 46 deletions(-)
+ 3 files changed, 6 insertions(+), 49 deletions(-)
 
 diff --git a/config/system-headers.mozbuild b/config/system-headers.mozbuild
-index 60967bd51792..a4d19a063dab 100644
+index 7f17843a37bd..9103c60e0913 100644
 --- a/config/system-headers.mozbuild
 +++ b/config/system-headers.mozbuild
-@@ -1345,3 +1345,7 @@ if CONFIG['MOZ_WAYLAND']:
-         'wayland-client.h',
-         'wayland-egl.h',
+@@ -1358,3 +1358,7 @@ if CONFIG['MOZ_LIB_SECRET']:
+         'libsecret/secret-value.h',
+         'libsecret/secret-service.h',
      ]
 +
 +system_headers += [
 +    'json/json.h',
 +]
 diff --git a/toolkit/components/jsoncpp/src/lib_json/moz.build b/toolkit/components/jsoncpp/src/lib_json/moz.build
-index 6920229e1ea1..5e20a3d42fd9 100644
+index e515c5680673..5e20a3d42fd9 100644
 --- a/toolkit/components/jsoncpp/src/lib_json/moz.build
 +++ b/toolkit/components/jsoncpp/src/lib_json/moz.build
-@@ -4,50 +4,6 @@
+@@ -4,53 +4,6 @@
  # License, v. 2.0. If a copy of the MPL was not distributed with this
  # file, You can obtain one at http://mozilla.org/MPL/2.0/.
  
@@ -75,9 +75,12 @@ index 6920229e1ea1..5e20a3d42fd9 100644
 -    CXXFLAGS += [
 -        '-Wno-implicit-fallthrough',
 -    ]
+-
+-if CONFIG['CC_TYPE'] == 'clang-cl':
+-    AllowCompilerWarnings()  # workaround for bug 1090497
 +OS_LIBS += ['jsoncpp']
 diff --git a/toolkit/crashreporter/minidump-analyzer/moz.build b/toolkit/crashreporter/minidump-analyzer/moz.build
-index d52eaacf6704..e61d37b7f96e 100644
+index 70f3b259a9d8..923b48bfb66d 100644
 --- a/toolkit/crashreporter/minidump-analyzer/moz.build
 +++ b/toolkit/crashreporter/minidump-analyzer/moz.build
 @@ -52,7 +52,7 @@ USE_LIBS += [

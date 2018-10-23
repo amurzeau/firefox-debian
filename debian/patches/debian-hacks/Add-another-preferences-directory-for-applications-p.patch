@@ -13,7 +13,7 @@ to disable the "set as default browser" dialog.
  1 file changed, 2 insertions(+)
 
 diff --git a/toolkit/xre/nsXREDirProvider.cpp b/toolkit/xre/nsXREDirProvider.cpp
-index fdc711b05759..61630c97c361 100644
+index 70370e68669d..faecba1a248b 100644
 --- a/toolkit/xre/nsXREDirProvider.cpp
 +++ b/toolkit/xre/nsXREDirProvider.cpp
 @@ -823,6 +823,7 @@ DeleteDirIfExists(nsIFile* dir)
@@ -30,5 +30,5 @@ index fdc711b05759..61630c97c361 100644
                        kAppendPrefDir, directories);
 +    LoadDirIntoArray(mXULAppDir, kAppendSysPrefDir, directories);
  
-     rv = NS_NewArrayEnumerator(aResult, directories);
+     rv = NS_NewArrayEnumerator(aResult, directories, NS_GET_IID(nsIFile));
    }

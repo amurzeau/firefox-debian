@@ -6,6 +6,8 @@ do-not-track-description = Saytlara “Məni İzləmə” siqnalı göndərərə
 do-not-track-learn-more = Ətraflı öyrən
 do-not-track-option-default =
     .label = Ancaq İzlənmə Qoruması işlədərkən
+do-not-track-option-default-content-blocking =
+    .label = Ancaq { -brand-short-name } Tapılan İzləyiciləri əngəlləmək üçün tənzimləndiyində
 do-not-track-option-always =
     .label = Həmişə
 pref-page =
@@ -90,6 +92,9 @@ extension-controlled-privacy-containers = Uzantı, <img data-l10n-name="icon"/> 
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Uzantı, <img data-l10n-name="icon"/> { $name }, izlənmə qorumasını idarə edir.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Bu tənzimləməni uzantı, <img data-l10n-name="icon"/> { $name }, idarə edir.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Uzantı, <img data-l10n-name="icon"/> { $name }, { -brand-short-name } səyyahının internetə necə qoşulduğunu idarə edir.
@@ -203,6 +208,9 @@ choose-button =
     .label = Seçin…
     .accesskey = S
 choose-browser-language-description = Menyu, mesaj və bildirişlərin { -brand-short-name } səyyahında göstərildiyi dilləri seçin.
+manage-browser-languages-button =
+    .label = Alternativləri seç
+    .accesskey = l
 confirm-browser-language-change-description = Dəyişiklikləri tətbiq etmək üçün { -brand-short-name } səyyahını yenidən başladın
 confirm-browser-language-change-button = Tətbiq et və Yenidən başlat
 translate-web-pages =
@@ -319,6 +327,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Şəbəkə Proksisi
+network-settings-title = Şəbəkə Tənzimləmələri
 network-proxy-connection-description = { -brand-short-name } səyyahının internetə necə qoşulduğunu idarə et.
 network-proxy-connection-learn-more = Ətraflı öyrən
 network-proxy-connection-settings =
@@ -557,9 +566,6 @@ history-dontremember-description = { -brand-short-name } gizli baxışdakı niza
 history-private-browsing-permanent =
     .label = Həmişə gizli baxış rejimindən istifadə et
     .accesskey = g
-history-remember-option =
-    .label = Endirmə və Tarixçəmi yadda saxla
-    .accesskey = l
 history-remember-browser-option =
     .label = Səyahət və endirmə tarixini yadda saxla
     .accesskey = b
@@ -625,6 +631,10 @@ sitedata-block-all-third-parties-option =
     .label = Bütün üçüncü tərəf çərəzlər
 sitedata-block-always-option =
     .label = Bütün çərəzlər (saytlar səhv işləyə bilər)
+sitedata-block-all-third-party-option =
+    .label = Bütün üçüncü-tərəf çərəzləri (bəzi saytlar səhv işləyə bilər)
+sitedata-block-all-option =
+    .label = Bütün çərəzləri (əksər səhifələr səhv işləyəcəklər)
 sitedata-clear =
     .label = Məlumatları təmizlə…
     .accesskey = l
@@ -634,6 +644,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = İstisnalar…
     .accesskey = a
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Məzmun Əngəlləmə tənzimləmələriniz Çərəzlər və Sayt Məlumatları tənzimləmələrini dəyişdirməyə imkan vermirlər.
 
 ## Privacy Section - Address Bar
 
@@ -687,6 +701,45 @@ content-blocking-tracking-protection-option-pbm =
 content-blocking-tracking-protection-option-disabled =
     .label = Heç vaxt əngəlləmə
 content-blocking-tracking-protection-change-blocklist = Qara Siyahını Dəyiş…
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Yavaş yüklənən izləyicilər
+    .accesskey = S
+content-blocking-fastblock-new-description = Ancaq səhifənin tez yüklənməsini əngəlləyən izləyiciləri əngəllə.
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Bütün aşkarlanan izləyicilər
+    .accesskey = T
+content-blocking-tracking-protection-new-description = Bütün bilinən izləyiciləri əngəllə. (Bəzi səhifələr yüklənməyə bilər.)
+content-blocking-tracking-protection-option-always =
+    .label = Həmişə
+    .accesskey = A
+content-blocking-tracking-protection-option-private =
+    .label = Ancaq məxfi pəncərələrdə
+    .accesskey = p
+content-blocking-tracking-protection-change-block-list = Qara siyahını dəyişdir
+content-blocking-third-party-cookies-label =
+    .label = Üçüncü-tərəf çərəzlər
+    .accesskey = C
+content-blocking-reject-trackers-description = Bütün üçüncü-tərəf çərəzləri və ya ancaq izləyicilər tərəfindən olanları əngəllə.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Çərəzlər və Sayt Məlumatları tənzimləmələriniz Üçüncü-Tərəf Çərəzləri tənzimləmələrini dəyişdirməyə imkan vermirlər.
+content-blocking-change-cookie-settings =
+    .label = Çərəz Tənzimləmələrini Dəyişdir
+    .accesskey = S
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = İzləyicilər (məsləhətlidir)
+    .accesskey = k
+content-blocking-reject-trackers-block-trackers-option =
+    .label = İzləyicilər
+    .accesskey = k
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Bütün üçüncü-tərəf çərəzlər (bəzi saytlar düz işləməyə bilər)
+    .accesskey = A
 
 ## Privacy Section - Tracking
 

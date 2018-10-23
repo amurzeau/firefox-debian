@@ -20,6 +20,7 @@
 <!ENTITY aboutPrivateBrowsing.info.saved.after2          " τα εξής δεδομένα σας:">
 <!ENTITY aboutPrivateBrowsing.info.downloads             "Λήψεις">
 <!ENTITY aboutPrivateBrowsing.info.bookmarks             "Σελιδοδείκτες">
+<!ENTITY aboutPrivateBrowsing.info.clipboard             "αντιγραμμένο κείμενο">
 <!ENTITY aboutPrivateBrowsing.note.before                "Η Ιδιωτική Περιήγηση ">
 <!ENTITY aboutPrivateBrowsing.note.emphasize             "δεν σάς καθιστά ανώνυμο">
 <!ENTITY aboutPrivateBrowsing.note.after                 " στο διαδίκτυο. Ο εργοδότης σας ή ο πάροχος υπηρεσιών διαδικτύου μπορεί ακόμα να γνωρίζει ποια σελίδα επισκέπτεστε.">
@@ -30,3 +31,5 @@
 <!ENTITY trackingProtection.title                        "Προστασία από καταγραφή">
 <!ENTITY trackingProtection.description2                 "Μερικές ιστοσελίδες χρησιμοποιούν ιχνηλάτες που μπορούν να παρακολουθούν την δραστηριότητά σας στο διαδίκτυο. Με την προστασία από καταγραφή, το Firefox θα αποκλείσει πολλούς ιχνηλάτες που μπορούν να συλλέγουν πληροφορίες για την περιήγησή σας.">
 <!ENTITY trackingProtection.startTour1                   "Δείτε πώς λειτουργεί">
+
+<!ENTITY contentBlocking.title                           "Φραγή περιεχομένου">

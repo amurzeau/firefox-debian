@@ -5,6 +5,9 @@
 languages-window =
     .title = ਬੋਲੀਆਂ
     .style = width: 30em
+webpage-languages-window =
+    .title = ਵੈੱਬਪੇਜ ਭਾਸ਼ਾ ਸੈਟਿੰਗਜ਼
+    .style = width: 40em
 languages-close-key =
     .key = w
 languages-description = ਵੈੱਬ ਵਰਕੇ ਕਈ ਵਾਰ ਇੱਕ ਤੋਂ ਵੱਧ ਬੋਲੀਆਂ ਵਿੱਚ ਪੇਸ਼ ਕੀਤੇ ਜਾਂਦੇ ਹਨ। ਇਹ ਵੈੱਬ ਵਰਕੇ ਦਿਖਾਉਣ ਲਈ ਤਰਜੀਹੀ ਕ੍ਰਮ ਮੁਤਾਬਕ ਬੋਲੀਆਂ ਚੁਣੋ।
@@ -36,3 +39,9 @@ languages-customize-add =
 #   $code (String) - Locale code of the locale (for example: "is", "es-CL")
 languages-code-format =
     .label = { $locale }  [{ $code }]
+languages-active-code-format =
+    .value = { languages-code-format.label }
+browser-languages-window =
+    .title = { -brand-short-name } ਭਾਸ਼ਾ ਸੈਟਿੰਗਜ਼
+    .style = width: 40em
+browser-languages-description = { -brand-short-name } ਤੁਹਾਡੀ ਡਿਫਾਲਟ ਵਾਂਗ ਪਹਿਲੀ ਭਾਸ਼ਾ ਨੂੰ ਪ੍ਰਦਰਸ਼ਿਤ ਕਰੇਗਾ ਅਤੇ ਜੇਕਰ ਲੋੜ ਹੋਈ ਤਾਂ ਕ੍ਰਮ ਵਿੱਚ ਬਦਲਵੀਂਆਂ ਭਾਸ਼ਾਵਾਂ ਪ੍ਰਦਰਸ਼ਿਤ ਕਰਨਗੇ।

@@ -6,6 +6,8 @@ do-not-track-description = Anfon neges “Dim Tracio” at wefannau nad ydych am
 do-not-track-learn-more = Dysgu rhagor
 do-not-track-option-default =
     .label = Dim ond pan yn defnyddio Diogelwch rhag Tracio
+do-not-track-option-default-content-blocking =
+    .label = Dim ond pan fydd { -brand-short-name } wedi ei osod i rwystro Tracwyr Wedi eu Canfod
 do-not-track-option-always =
     .label = Bob tro
 pref-page =
@@ -90,6 +92,9 @@ extension-controlled-privacy-containers = Mae estyniad, <img data-l10n-name="ico
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Mae estyniad, <img data-l10n-name="icon"/> { $name }, yn rheoli diogelwch rhag tracio.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Mae estyniad, <img data-l10n-name="icon"/> { $name }, yn rheoli'r gosodiad hwn.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Mae estyniad, <img data-l10n-name="icon"/> { $name }, yn rheoli sut mae { -brand-short-name } yn cysylltu â'r rhyngrwyd.
@@ -215,6 +220,9 @@ choose-button =
     .label = Dewis…
     .accesskey = D
 choose-browser-language-description = Dewiswch yr iaith i ddangos dewislenni, negeseuon a hysbysiadau gan { -brand-short-name }
+manage-browser-languages-button =
+    .label = Gosod Rhai Eraill
+    .accesskey = G
 confirm-browser-language-change-description = Ailgychwyn { -brand-short-name } i osod y newidiadau hyn
 confirm-browser-language-change-button = Gosod ac Ailgychwyn
 translate-web-pages =
@@ -331,6 +339,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Dirprwy Rhwydwaith
+network-settings-title = Gosodiadau Rhwydwaith
 network-proxy-connection-description = Ffurfweddu sut mae { -brand-short-name } yn cysylltu â'r rhyngrwyd.
 network-proxy-connection-learn-more = Dysgu rhagor
 network-proxy-connection-settings =
@@ -569,9 +578,6 @@ history-dontremember-description = Bydd { -brand-short-name } yn defnyddio'r un 
 history-private-browsing-permanent =
     .label = Defnyddio'r modd pori preifat bob tro
     .accesskey = p
-history-remember-option =
-    .label = Cofio fy hanes pori a hanes llwytho i lawr
-    .accesskey = o
 history-remember-browser-option =
     .label = Cofio hanes pori a llwytho i lawr
     .accesskey = h
@@ -629,12 +635,18 @@ sitedata-block-desc = Mathau wedi'u rhwystro
     .accesskey = M
 sitedata-block-trackers-option-recommended =
     .label = Tracwyd trydydd parti (argymell)
+sitedata-block-trackers-option =
+    .label = Tracwyr trydydd parti
 sitedata-block-unvisited-option =
     .label = Cwcis gwefannau heb ymweld â nhw
 sitedata-block-all-third-parties-option =
     .label = Holl gwcis trydydd parti
 sitedata-block-always-option =
     .label = Pob cwci (gall achosi i wefannau dorri)
+sitedata-block-all-third-party-option =
+    .label = Holl gwcis trydydd parti (gall achosi i'r wefan dorri)
+sitedata-block-all-option =
+    .label = Pob cwci (bydd yn achosi i wefannau dorri)
 sitedata-clear =
     .label = Clirio Data…
     .accesskey = l
@@ -644,6 +656,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Eithriadau…
     .accesskey = E
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Mae eich gosodiadau yn Rhwystro Cynnwys yn atal newidiadau i osodiadau Cwcis a Data Gwefan.
 
 ## Privacy Section - Address Bar
 
@@ -697,6 +713,45 @@ content-blocking-tracking-protection-option-pbm =
 content-blocking-tracking-protection-option-disabled =
     .label = Byth rhwystro
 content-blocking-tracking-protection-change-blocklist = Newid y Rhestr Rhwystro...
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Tracwyr Llwytho'n Araf
+    .accesskey = A
+content-blocking-fastblock-new-description = Rhwystro dim ond y tracwyr sy'n atal tudalennau rhag llwytho'n gyflym.
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Pob Traciwr wedi ei Ganfod
+    .accesskey = P
+content-blocking-tracking-protection-new-description = Rhwystro pob traciwr hysbys. (Efallai y bydd yn atal rhai tudalennau rhag llwytho.)
+content-blocking-tracking-protection-option-always =
+    .label = Bob tro
+    .accesskey = B
+content-blocking-tracking-protection-option-private =
+    .label = Dim ond mewn ffenestri preifat
+    .accesskey = D
+content-blocking-tracking-protection-change-block-list = Newid y rhestr rhwystro
+content-blocking-third-party-cookies-label =
+    .label = Cwcis Trydydd Parti
+    .accesskey = C
+content-blocking-reject-trackers-description = Rhwystro pob cwci trydydd parti neu dim ond y rheini sydd wedi eu gosod gan dracwyr.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Mae eich gosodiadau yn Cwcis a Data Gwefan yn atal newidiadau i osodiadau Cwcis Trydydd Parti.
+content-blocking-change-cookie-settings =
+    .label = Newid y Gosodiadau Cwci
+    .accesskey = N
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Tracwyr (argymell)
+    .accesskey = T
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Tracwyr
+    .accesskey = r
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Pob cwci trydydd parti (gall achosi i wefannau dorri)
+    .accesskey = P
 
 ## Privacy Section - Tracking
 

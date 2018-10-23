@@ -6,6 +6,8 @@ do-not-track-description = أرسل للمواقع إشارة ”لا تتعقب
 do-not-track-learn-more = اطّلع على المزيد
 do-not-track-option-default =
     .label = عند استخدام الحماية من التعقب فقط
+do-not-track-option-default-content-blocking =
+    .label = عندما يُضبط { -brand-short-name } على حجب المتعقّبات المكتشفة فقط
 do-not-track-option-always =
     .label = دائمًا
 pref-page =
@@ -90,6 +92,9 @@ extension-controlled-privacy-containers = يتطلب أحد الامتدادات
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = يتحكم أحد الامتدادات (<img data-l10n-name="icon"/> { $name }) في الحماية من التعقب.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = يتحكم أحد الامتدادات (<img data-l10n-name="icon"/> { $name }) في هذا الإعداد.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = يتحكم أحد الامتدادات <img data-l10n-name="icon"/> { $name } في طريقة اتصال { -brand-short-name } بالإنترنت.
@@ -118,7 +123,7 @@ startup-header = البدء
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
     .label = اسمح بتشغيل { -brand-short-name } و فَيَرفُكس في نفس الوقت
-use-firefox-sync = فائدة: يستخدم هذا ملفات إعدادات مستقلة. استخدم «تزامن» لمشاركة البيانات بينهما.
+use-firefox-sync = فائدة: يستخدم هذا ملفات إعدادات مستقلة. استخدم { -sync-brand-short-name } لمشاركة البيانات بينهما.
 get-started-not-logged-in = لِج إلى { -sync-brand-short-name }…
 get-started-configured = افتح تفضيلات { -sync-brand-short-name }
 always-check-default =
@@ -212,6 +217,9 @@ choose-button =
     .label = اختر…
     .accesskey = خ
 choose-browser-language-description = اختر اللغات التي ستُستخدم لعرض القوائم والرسائل والتنبيهات من { -brand-short-name }.
+manage-browser-languages-button =
+    .label = اضبط البديلة
+    .accesskey = د
 confirm-browser-language-change-description = أعِد تشغيل { -brand-short-name } لتطبيق التغييرات
 confirm-browser-language-change-button = طبِّق وأعِد التشغيل
 translate-web-pages =
@@ -264,7 +272,7 @@ play-drm-content =
     .accesskey = ش
 play-drm-content-learn-more = اطّلع على المزيد
 update-application-title = تحديثات { -brand-short-name }
-update-application-description = أبقِ { -brand-short-name } للحصول على أحسن أداء و ثبات و أمان.
+update-application-description = أبقِ { -brand-short-name } محدّثا للحصول على أحسن أداء و ثبات و أمان.
 update-application-version = الإصدارة { $version } <a data-l10n-name="learn-more">ما الجديد</a>
 update-history =
     .label = أظهر تأريخ التحديث…
@@ -328,6 +336,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = وسيط الشبكة
+network-settings-title = إعدادات الشبكة
 network-proxy-connection-description = اضبط طريقة اتصال { -brand-short-name } بالإنترنت.
 network-proxy-connection-learn-more = اطّلع على المزيد
 network-proxy-connection-settings =
@@ -566,9 +575,6 @@ history-dontremember-description = سيستخدم { -brand-short-name } نفس �
 history-private-browsing-permanent =
     .label = استخدم نمط التصفح الخاص دائمًا
     .accesskey = د
-history-remember-option =
-    .label = تذكر تأريخ تصفحي و تنزيلاتي
-    .accesskey = ص
 history-remember-browser-option =
     .label = تذكر تأريخ التصفح و التنزيل
     .accesskey = ت
@@ -614,6 +620,26 @@ sitedata-accept-third-party-visited-option =
     .label = من المواقع المُزارة
 sitedata-accept-third-party-never-option =
     .label = أبدًا
+sitedata-allow-cookies-option =
+    .label = اقبل الكعكات و بيانات المواقع
+    .accesskey = ق
+sitedata-disallow-cookies-option =
+    .label = امنع الكعكات و بيانات المواقع
+    .accesskey = م
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = النوع المحجوب
+    .accesskey = ن
+sitedata-block-trackers-option-recommended =
+    .label = متعقّبات الأطراف الثالثة (يُنصح بها)
+sitedata-block-trackers-option =
+    .label = متعقّبات الأطراف الثالثة
+sitedata-block-unvisited-option =
+    .label = الكعكات من المواقع غير المُزارة
+sitedata-block-all-third-party-option =
+    .label = كل كعكات الأطراف الثالثة (قد تتسبّب بعطب مواقع الوِب)
+sitedata-block-all-option =
+    .label = كل الكعكات (قد تتسبّب بعطب المواقع)
 sitedata-clear =
     .label = امسح البيانات…
     .accesskey = س
@@ -623,6 +649,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = الاستثناءات…
     .accesskey = س
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = إعداداتك في خيارات حجب المحتوى تمنع التغييرات على إعدادات الكعكات وبيانات المواقع.
 
 ## Privacy Section - Address Bar
 
@@ -659,23 +689,42 @@ content-blocking-category-label = اختر ما الذي تريد حجبه
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = عناصر التعقّب البطيئة
-    .accesskey = ن
-content-blocking-fastblock-description = لحجب المحتوى من الأطراف الثالثة والذي يأخذ أكثر من ٥ ثواني تحميل.
-content-blocking-fastblock-option-enabled =
-    .label = احجب دائمًا
-content-blocking-fastblock-option-disabled =
-    .label = لا تحجب أبدًا
-content-blocking-tracking-protection-label = المتعقّبات
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = المتعقّبات بطيئة التحميل
+    .accesskey = ط
+content-blocking-fastblock-new-description = احجب المتعقّبات التي تمنع تحميل الصفحات بسرعة فحسب.
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = كل المتعقّبات المكتشفة
+    .accesskey = ش
+content-blocking-tracking-protection-new-description = احجب كل المتعقّبات المعروفة. (قد يمنع بعض الصفحات من التحميل.)
+content-blocking-tracking-protection-option-always =
+    .label = دائما
+    .accesskey = د
+content-blocking-tracking-protection-option-private =
+    .label = في النوافذ الخاصة فقط
+    .accesskey = خ
+content-blocking-tracking-protection-change-block-list = غيّر قائمة الحجب
+content-blocking-third-party-cookies-label =
+    .label = كعكات الأطراف الثالثة
+    .accesskey = ث
+content-blocking-reject-trackers-description = احجب كل كعكات الأطراف الثالثة وأيضا تلك التي ضبطتها المتعقّبات.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = إعداداتك في خيارات الكعكات وبيانات المواقع تمنع التغييرات على إعدادات كعكات الأطراف الثالثة.
+content-blocking-change-cookie-settings =
+    .label = غيّر إعدادات الكعكات
+    .accesskey = ع
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = المتعقّبات (يُنصح به)
     .accesskey = ق
-content-blocking-tracking-protection-description = لحجب كل المتعقّبات المعروفة (لاحظ أن هذا قد يمنع تحميل بعض الصفحات).
-content-blocking-tracking-protection-option-enabled =
-    .label = احجب دائمًا
-content-blocking-tracking-protection-option-pbm =
-    .label = احجب في النوافذ الخاصة فقط
-content-blocking-tracking-protection-option-disabled =
-    .label = لا تحجب أبدًا
-content-blocking-tracking-protection-change-blocklist = غيّر قائمة الحجب…
+content-blocking-reject-trackers-block-trackers-option =
+    .label = المتعقّبات
+    .accesskey = ق
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = كل كعكات الأطراف الثالثة (قد يتسبب بعطب المواقع)
+    .accesskey = ك
 
 ## Privacy Section - Tracking
 
@@ -726,7 +775,7 @@ permissions-notification-pause =
     .label = ألبِث التنبيهات حتى يُعاد تشغيل { -brand-short-name }
     .accesskey = ث
 permissions-block-autoplay-media =
-    .label = امنع المواقع من تشغيل الوسائط المحتوية على صوت تلقائيا
+    .label = امنع المواقع من تشغيل الوسائط التي تحتوي صوتا تلقائيا
     .accesskey = م
 permissions-block-autoplay-media-menu = عند فتحي مواقع تُشغّل الصوت تلقائيا
 permissions-block-autoplay-media-exceptions =
@@ -738,6 +787,7 @@ autoplay-option-allow =
     .label = اسمح بالتشغيل التلقائي
 autoplay-option-dont =
     .label = امنع التشغيل التلقائي
+permissions-autoplay-link = اطّلع على المزيد
 permissions-block-popups =
     .label = احجب النوافذ المنبثقة
     .accesskey = ذ
@@ -761,7 +811,7 @@ collection-header = جمع { -brand-short-name } للبيانات و استخد
 collection-description = نبذل جهدنا لإعطائك الخيار و جمع ما نحتاجه فقط لتحسين { -brand-short-name }. نطلب الإذن دائمًا قبل استقبال أي معلومات شخصية.
 collection-privacy-notice = تنويه الخصوصية
 collection-health-report =
-    .label = اسمح أن يُرسل { -brand-short-name } بيانات تقنية و بيانات التفاعل إلى موزيلا
+    .label = اسمح أن يُرسل { -brand-short-name } بيانات تقنية و بيانات التفاعل إلى { -vendor-short-name }
     .accesskey = ح
 collection-health-report-link = اطّلع على المزيد
 collection-studies =
@@ -771,7 +821,7 @@ collection-studies-link = اعرض دراسات { -brand-short-name }
 # or builds with no Telemetry support available.
 collection-health-report-disabled = الإبلاغ عن البيانات معطّل في إعدادات البناء
 collection-browser-errors =
-    .label = اسمح بأن يُرسل { -brand-short-name } تقارير بأخطاء المتصفح (بما في ذلك رسائل الأخطاء) إلى موزيلا.
+    .label = اسمح بأن يُرسل { -brand-short-name } تقارير بأخطاء المتصفح (بما في ذلك رسائل الأخطاء) إلى { -vendor-short-name }.
     .accesskey = خ
 collection-browser-errors-link = اطّلع على المزيد
 collection-backlogged-crash-reports =

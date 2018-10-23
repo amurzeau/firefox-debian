@@ -7,10 +7,10 @@ Subject: Set DPI to system settings
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/modules/libpref/init/all.js b/modules/libpref/init/all.js
-index b5d686f04dd6..527e6344f44e 100644
+index 752df765479d..c58df38c1d9c 100644
 --- a/modules/libpref/init/all.js
 +++ b/modules/libpref/init/all.js
-@@ -2853,7 +2853,7 @@ pref("layout.css.report_errors", true);
+@@ -2941,7 +2941,7 @@ pref("layout.css.report_errors", true);
  // A value of 0 means use the system DPI. A positive value is used as the DPI.
  // This sets the physical size of a device pixel and thus controls the
  // interpretation of physical units such as "pt".

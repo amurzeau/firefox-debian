@@ -3,21 +3,20 @@ Date: Sat, 19 May 2018 06:58:29 +0900
 Subject: Attempt to fix building webrtc on non-x86
 
 ---
- media/webrtc/trunk/moz.build | 218 ++---------------------------------
- 1 file changed, 7 insertions(+), 211 deletions(-)
+ media/webrtc/trunk/moz.build | 229 ++---------------------------------
+ 1 file changed, 7 insertions(+), 222 deletions(-)
 
 diff --git a/media/webrtc/trunk/moz.build b/media/webrtc/trunk/moz.build
-index 13c8aee03b94..13fecda09761 100644
+index 5d0c009b20e8..13fecda09761 100644
 --- a/media/webrtc/trunk/moz.build
 +++ b/media/webrtc/trunk/moz.build
-@@ -84,107 +84,30 @@ DIRS += [
+@@ -84,118 +84,30 @@ DIRS += [
      "/media/webrtc/trunk/webrtc/webrtc_gn"
  ]
  
 -if CONFIG["OS_TARGET"] == "Darwin":
 -
-+if CONFIG["OS_TARGET"] != "Android":
-     DIRS += [
+-    DIRS += [
 -        "/media/webrtc/trunk/webrtc/common_audio/common_audio_sse2_gn",
 -        "/media/webrtc/trunk/webrtc/modules/audio_processing/audio_processing_sse2_gn",
 -        "/media/webrtc/trunk/webrtc/modules/desktop_capture/desktop_capture_differ_sse2_gn",
@@ -29,7 +28,8 @@ index 13c8aee03b94..13fecda09761 100644
 -
 -if CONFIG["OS_TARGET"] == "DragonFly":
 -
--    DIRS += [
++if CONFIG["OS_TARGET"] != "Android":
+     DIRS += [
 -        "/media/webrtc/trunk/webrtc/common_audio/common_audio_sse2_gn",
 -        "/media/webrtc/trunk/webrtc/modules/audio_processing/audio_processing_sse2_gn",
 -        "/media/webrtc/trunk/webrtc/modules/desktop_capture/desktop_capture_differ_sse2_gn",
@@ -66,16 +66,16 @@ index 13c8aee03b94..13fecda09761 100644
 -        "/media/webrtc/trunk/webrtc/modules/desktop_capture/desktop_capture_gn",
 -        "/media/webrtc/trunk/webrtc/modules/desktop_capture/primitives_gn",
 -        "/media/webrtc/trunk/webrtc/video_engine/video_engine_gn"
-     ]
- 
+-    ]
+-
 -if CONFIG["OS_TARGET"] == "OpenBSD":
 -
 -    DIRS += [
 -        "/media/webrtc/trunk/webrtc/modules/desktop_capture/desktop_capture_gn",
 -        "/media/webrtc/trunk/webrtc/modules/desktop_capture/primitives_gn",
 -        "/media/webrtc/trunk/webrtc/video_engine/video_engine_gn"
--    ]
--
+     ]
+ 
 -if CONFIG["OS_TARGET"] == "WINNT":
 -
 +if CONFIG["CPU_ARCH"] in ("x86", "x86_64"):
@@ -121,17 +121,6 @@ index 13c8aee03b94..13fecda09761 100644
  
 -if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "FreeBSD":
 -
-+if CONFIG["CPU_ARCH"] == "aarch64":
-     DIRS += [
-         "/media/webrtc/trunk/webrtc/common_audio/common_audio_neon_c_gn",
-         "/media/webrtc/trunk/webrtc/common_audio/common_audio_neon_gn",
-@@ -193,130 +116,3 @@ if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "FreeBSD":
-         "/media/webrtc/trunk/webrtc/modules/audio_processing/audio_processing_neon_gn",
-         "/media/webrtc/trunk/webrtc/modules/video_processing/video_processing_neon_gn"
-     ]
--
--if CONFIG["CPU_ARCH"] == "arm" and CONFIG["OS_TARGET"] == "FreeBSD":
--
 -    DIRS += [
 -        "/media/webrtc/trunk/webrtc/common_audio/common_audio_neon_c_gn",
 -        "/media/webrtc/trunk/webrtc/common_audio/common_audio_neon_gn",
@@ -140,6 +129,17 @@ index 13c8aee03b94..13fecda09761 100644
 -        "/media/webrtc/trunk/webrtc/modules/audio_processing/audio_processing_neon_gn",
 -        "/media/webrtc/trunk/webrtc/modules/video_processing/video_processing_neon_gn"
 -    ]
+-
+-if CONFIG["CPU_ARCH"] == "arm" and CONFIG["OS_TARGET"] == "FreeBSD":
+-
++if CONFIG["CPU_ARCH"] == "aarch64":
+     DIRS += [
+         "/media/webrtc/trunk/webrtc/common_audio/common_audio_neon_c_gn",
+         "/media/webrtc/trunk/webrtc/common_audio/common_audio_neon_gn",
+@@ -204,130 +116,3 @@ if CONFIG["CPU_ARCH"] == "arm" and CONFIG["OS_TARGET"] == "FreeBSD":
+         "/media/webrtc/trunk/webrtc/modules/audio_processing/audio_processing_neon_gn",
+         "/media/webrtc/trunk/webrtc/modules/video_processing/video_processing_neon_gn"
+     ]
 -
 -if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "FreeBSD":
 -
@@ -157,6 +157,17 @@ index 13c8aee03b94..13fecda09761 100644
 -        "/media/webrtc/trunk/webrtc/modules/audio_processing/audio_processing_sse2_gn",
 -        "/media/webrtc/trunk/webrtc/modules/desktop_capture/desktop_capture_differ_sse2_gn",
 -        "/media/webrtc/trunk/webrtc/modules/video_processing/video_processing_sse2_gn"
+-    ]
+-
+-if CONFIG["CPU_ARCH"] == "aarch64" and CONFIG["OS_TARGET"] == "Linux":
+-
+-    DIRS += [
+-        "/media/webrtc/trunk/webrtc/common_audio/common_audio_neon_c_gn",
+-        "/media/webrtc/trunk/webrtc/common_audio/common_audio_neon_gn",
+-        "/media/webrtc/trunk/webrtc/modules/audio_coding/isac_neon_gn",
+-        "/media/webrtc/trunk/webrtc/modules/audio_processing/audio_processing_neon_c_gn",
+-        "/media/webrtc/trunk/webrtc/modules/audio_processing/audio_processing_neon_gn",
+-        "/media/webrtc/trunk/webrtc/modules/video_processing/video_processing_neon_gn"
 -    ]
 -
 -if CONFIG["CPU_ARCH"] == "x86" and CONFIG["OS_TARGET"] == "Linux":

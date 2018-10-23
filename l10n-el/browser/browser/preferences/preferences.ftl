@@ -90,6 +90,9 @@ extension-controlled-privacy-containers = Μια επέκταση, το <img dat
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Μια επέκταση, το <img data-l10n-name="icon"/> { $name }, ελέγχει την προστασία από καταγραφή.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Μια επέκταση, το <img data-l10n-name="icon"/> { $name }, ελέγχει αυτή τη ρύθμιση.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Μια επέκταση, το <img data-l10n-name="icon"/> { $name }, ελέγχει τον τρόπο σύνδεσης του { -brand-short-name } με το διαδίκτυο.
@@ -203,6 +206,9 @@ choose-button =
     .label = Επιλογή...
     .accesskey = λ
 choose-browser-language-description = Επιλέξτε τις γλώσσες εμφάνισης μενού, μηνυμάτων και ειδοποιήσεων από το { -brand-short-name }.
+manage-browser-languages-button =
+    .label = Ορισμός εναλλακτικών...
+    .accesskey = ν
 confirm-browser-language-change-description = Επανεκκίνηση του { -brand-short-name } για εφαρμογή αλλαγών
 confirm-browser-language-change-button = Εφαρμογή και επανεκκίνηση
 translate-web-pages =
@@ -319,6 +325,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Διακομιστής μεσολάβησης δικτύου
+network-settings-title = Ρυθμίσεις δικτύου
 network-proxy-connection-description = Ρυθμίστε τον τρόπο σύνδεσης του { -brand-short-name } στο διαδίκτυο.
 network-proxy-connection-learn-more = Μάθετε περισσότερα
 network-proxy-connection-settings =
@@ -422,7 +429,7 @@ containers-remove-button =
 
 sync-signedout-caption = Πάρτε μαζί σας το διαδίκτυο
 sync-signedout-description = Συγχρονίστε τους σελιδοδείκτες, το ιστορικό, τις καρτέλες, τους κωδικούς πρόσβασης, τα πρόσθετα, καθώς και τις προτιμήσεις σας σε όλες τις συσκευές σας.
-sync-signedout-account-title = Σύνδεση με ένα λογαριασμό Firefox
+sync-signedout-account-title = Σύνδεση με ένα { -fxaccount-brand-name }
 sync-signedout-account-create = Δεν έχετε λογαριασμό; Ξεκινήστε
     .accesskey = Γ
 sync-signedout-account-signin =
@@ -557,9 +564,6 @@ history-dontremember-description = Το { -brand-short-name } θα χρησιμ�
 history-private-browsing-permanent =
     .label = Μόνιμη λειτουργία ιδιωτικής περιήγησης
     .accesskey = ι
-history-remember-option =
-    .label = Διατήρηση του ιστορικού περιήγησης και λήψεων
-    .accesskey = τ
 history-remember-browser-option =
     .label = Διατήρηση ιστορικού περιήγησης και λήψεων
     .accesskey = τ
@@ -621,10 +625,8 @@ sitedata-block-trackers-option =
     .label = Ιχνηλάτες τρίτων
 sitedata-block-unvisited-option =
     .label = Cookies από ιστοσελίδες που δεν έχετε επισκεφθεί
-sitedata-block-all-third-parties-option =
-    .label = Όλα τα cookies τρίτων
-sitedata-block-always-option =
-    .label = Όλα τα cookies (πιθανή δυσλειτουργία ιστοσελίδων)
+sitedata-block-all-option =
+    .label = Όλα τα cookies (θα προκαλέσει δυσλειτουργία ιστοσελίδων)
 sitedata-clear =
     .label = Εκκαθάριση δεδομένων...
     .accesskey = κ
@@ -670,23 +672,31 @@ content-blocking-category-label = Επιλέξτε τι θα αποκλείετ�
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Αργά στοιχεία καταγραφής
-    .accesskey = Α
-content-blocking-fastblock-description = Αποκλείει περιεχόμενο τρίτων που χρειάζεται πάνω από 5 δευτερόλεπτα για φόρτωση.
-content-blocking-fastblock-option-enabled =
-    .label = Πάντα φραγή
-content-blocking-fastblock-option-disabled =
-    .label = Ποτέ φραγή
-content-blocking-tracking-protection-label = Ιχνηλάτες
-    .accesskey = Ι
-content-blocking-tracking-protection-description = Αποκλείει όλους τους γνωστούς ιχνηλάτες (Σημείωση: ενδέχεται να εμποδιστεί η φόρτωση ορισμένων σελίδων).
-content-blocking-tracking-protection-option-enabled =
-    .label = Πάντα φραγή
-content-blocking-tracking-protection-option-pbm =
-    .label = Φραγή μόνο σε ιδιωτικά παράθυρα
-content-blocking-tracking-protection-option-disabled =
-    .label = Ποτέ φραγή
-content-blocking-tracking-protection-change-blocklist = Αλλαγή λίστας αποκλεισμού…
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Ιχνηλάτες αργής φόρτωσης
+    .accesskey = α
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Όλοι οι εντοπισμένοι ιχνηλάτες
+    .accesskey = ι
+content-blocking-tracking-protection-option-always =
+    .label = Πάντα
+    .accesskey = Π
+content-blocking-tracking-protection-option-private =
+    .label = Μόνο σε ιδιωτικά παράθυρα
+    .accesskey = ι
+content-blocking-tracking-protection-change-block-list = Αλλαγή λίστας φραγής
+content-blocking-third-party-cookies-label =
+    .label = Cookies τρίτων
+    .accesskey = C
+content-blocking-change-cookie-settings =
+    .label = Αλλαγή ρυθμίσεων cookies
+    .accesskey = ρ
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Ιχνηλάτες (προτείνεται)
+    .accesskey = τ
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Ιχνηλάτες
+    .accesskey = λ
 
 ## Privacy Section - Tracking
 

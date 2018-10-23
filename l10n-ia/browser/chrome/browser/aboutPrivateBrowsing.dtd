@@ -20,6 +20,7 @@
 <!ENTITY aboutPrivateBrowsing.info.saved.after2          " tu:">
 <!ENTITY aboutPrivateBrowsing.info.downloads             "discargamentos">
 <!ENTITY aboutPrivateBrowsing.info.bookmarks             "marcapaginas">
+<!ENTITY aboutPrivateBrowsing.info.clipboard             "texto copiate">
 <!ENTITY aboutPrivateBrowsing.note.before                "Navigation private ">
 <!ENTITY aboutPrivateBrowsing.note.emphasize             "non te rende anonyme">
 <!ENTITY aboutPrivateBrowsing.note.after                 " in Internet. Tu empleator o fornitor de servicio Internet pote totevia saper que pagina tu visita.">
@@ -30,3 +31,6 @@
 <!ENTITY trackingProtection.title                        "Protection contra le traciamento">
 <!ENTITY trackingProtection.description2                 "Alcun sitos web usa traciatores que pote surveliar tu activitate per Internet. Con le protection contra le traciamento, Firefox blocara multe traciatores que poterea colliger informationes de tu comportamento al navigar.">
 <!ENTITY trackingProtection.startTour1                   "Vider como functiona">
+
+<!ENTITY contentBlocking.title                           "Bloco del contentos">
+<!ENTITY contentBlocking.description                     "Alcun sitos web usa traciatores que pote controlar tu activitate trans internet. In le fenestras private Firefox Content Blocking bloca automaticamente plure traciatores que pote coliger informationes re tu comportamento in navigation.">

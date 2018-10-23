@@ -53,9 +53,14 @@ permissions-invalid-uri-label = کوئی جائز نام میزبان داخل �
 permissions-exceptions-tracking-protection-window =
     .title = استثنیات - سراغ کاری سے حفاظت
     .style = { permissions-window.style }
+permissions-exceptions-tracking-protection-desc = آپ نے ان ویب سائٹس پر ٹریکنگ کے تحفظ کو غیر فعال کردیا ہے۔
 
 ## Exceptions - Cookies
 
+permissions-exceptions-cookie-window =
+    .title = استثنیات - کوکیز اور سائٹ کا ڈیٹا
+    .style = { permissions-window.style }
+permissions-exceptions-cookie-desc = آپ اختصاص کر سکتے ہیں کی کس ویب سائٹس کو ہمیشہ یا کبھی کوکیز اور سائٹ کا ڈیٹا کو استعمال کرنے کی اجازت ہے۔ اس سائٹ کا پرا نام ٹائپ کرے جسکا آپ انتظام کرنا چاھتے ہے اور پھر کلک کریں بلاک، سیشن کے لئے اجازت دے، یا اجازت دے۔
 
 ## Exceptions - Pop-ups
 
@@ -73,25 +78,46 @@ permissions-exceptions-saved-logins-desc = درج ذیل ویب سائٹس کے 
 
 ## Exceptions - Add-ons
 
+permissions-exceptions-addons-window =
+    .title = اجازت دار ویب سائٹیں - ایڈ اون انسٹالیشن
+    .style = { permissions-window.style }
 permissions-exceptions-addons-desc = آپ اختصاص کر سکتے ہیں کہ کونسی سائٹیں وابستہ دریچے کھولنے کےلیے اجازت دادہ ہیں۔ جس سائٹ کو اجازت دینا چاہتے ہیں اس کا ٹھیک ٹھیک پتہ ٹائپ کریں اور پھر 'ہونے دیں' پر کلک کریں۔
 
 ## Exceptions - Autoplay Media
 
+permissions-exceptions-autoplay-media-window =
+    .title = اجازت داد ویب سائٹیں - اوٹوپلے
+    .style = { permissions-window.style }
+permissions-exceptions-autoplay-media-window2 =
+    .title = استثنیات - اوٹوپلے
+    .style = { permissions-window.style }
 
 ## Site Permissions - Notifications
 
+permissions-site-notification-window =
+    .title = سیٹنگیں - نوٹیفکیشن اجازات
+    .style = { permissions-window.style }
 
 ## Site Permissions - Location
 
 permissions-site-location-window =
     .title = سیٹنگیں- محل وقوع اجازت
     .style = { permissions-window.style }
+permissions-site-location-disable-label =
+    .label = آپ کے مقام تک رسائی حاصل کرنے سے متعلق نئی درخواستیں بند کریں
 
 ## Site Permissions - Camera
 
 permissions-site-camera-window =
     .title = سیٹنگیں- کیمرہ اجازتیں
     .style = { permissions-window.style }
+permissions-site-camera-disable-label =
+    .label = اپنے کیمرے تک رسائی حاصل کرنے سے متعلق نئی درخواستیں بند کریں
 
 ## Site Permissions - Microphone
 
+permissions-site-microphone-window =
+    .title = سيٹنگيں - مائکروفون کی اجازت
+    .style = { permissions-window.style }
+permissions-site-microphone-disable-label =
+    .label = اپنے مائیکروفون تک رسائی حاصل کرنے سے متعلق نئی درخواستیں بند کریں

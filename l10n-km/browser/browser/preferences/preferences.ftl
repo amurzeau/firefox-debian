@@ -52,6 +52,9 @@ restart-later = ចាប់ផ្ដើម​ឡើងវិញ​នៅ​ព�
 ## Variables:
 ##   $name (String): name of the extension
 
+# This string is shown to notify the user that their tracking protection preferences
+# are being controlled by an extension.
+extension-controlled-websites-tracking-protection-mode = ផ្នែកបន្ថែម <img data-l10n-name="icon"/> { $name } កំពុងគ្រប់គ្រងការការពារការតាមដាន។
 
 ## Preferences UI Search Results
 
@@ -78,6 +81,11 @@ always-check-default =
     .accesskey = y
 is-default = { -brand-short-name } បច្ចុប្បន្ន​ជា​កម្មវិធី​រុករក​លំនាំដើម​របស់​អ្នក
 is-not-default = { -brand-short-name } វា​មិន​មែន​ជា​កម្មវិធី​រុករក​លំនាំដើម​របស់​អ្នក
+set-as-my-default-browser =
+    .label = ដាក់​ជា​លំនាំ​ដើម
+    .accesskey = D
+disable-extension =
+    .label = បិទ​ផ្នែក​បន្ថែម
 tabs-group-header = ផ្ទាំង
 ctrl-tab-recently-used-order =
     .label = ប៊ូតុង​ Ctrl+Tab មាន​មុខងារ​ចូល​មើល​ផ្ទាំង​ដែល​បើក​ថ្មីៗ​ម្ដង​មួយ​ៗ
@@ -125,6 +133,7 @@ advanced-fonts =
 colors-settings =
     .label = ពណ៌...
     .accesskey = ព
+language-header = ភាសា
 choose-language-description = ជ្រើស​ភាសា​ដែល​អ្នក​ចូលចិត្ត​សម្រាប់​បង្ហាញ​ទំព័រ
 choose-button =
     .label = ជ្រើស…
@@ -167,7 +176,7 @@ applications-description = ជ្រើសរើស​របៀប​ដែល {
 applications-filter =
     .placeholder = ស្វែងរក​ប្រភេទ​ឯកសារ និង​កម្មវិធី
 applications-type-column =
-    .label = ប្រភេទ​មាតិកា 
+    .label = ប្រភេទ​មាតិកា
     .accesskey = ក
 applications-action-column =
     .label = អំពើ
@@ -242,6 +251,11 @@ network-proxy-connection-settings =
 
 ## Home Section - Home Page Customization
 
+home-restore-defaults =
+    .label = ស្ដារ​លំនាំ​ដើម
+    .accesskey = R
+home-mode-choice-blank =
+    .label = ទំព័រទទេ
 # This string has a special case for '1' and [other] (default). If necessary for
 # your language, you can add {$tabCount} to your translations and use the
 # standard CLDR forms, or only use the form for [other] if both strings should
@@ -286,6 +300,7 @@ search-keyword-warning-bookmark = អ្នក​បាន​ជ្រើសរ�
 
 ## Containers Section
 
+containers-back-link = « ថយក្រោយ
 containers-header = ផ្ទាំង​ប្រអប់​ផ្ទុក
 containers-add-button =
     .label = បន្ថែម​ប្រអប់​ផ្ទុក​ថ្មី
@@ -388,9 +403,6 @@ history-dontremember-description = { -brand-short-name } នឹង​ប្រ�
 history-private-browsing-permanent =
     .label = ប្រើ​របៀប​រកមើល​ឯកជន​ជានិច្ច
     .accesskey = ប
-history-remember-option =
-    .label = ចងចាំ​ប្រវត្តិ​ទាញយក និង​ការ​រុករក​របស់​ខ្ញុំ
-    .accesskey = ច
 history-remember-search-option =
     .label = ចងចាំ​ប្រវត្តិ​ស្វែងរក និង​សំណុំ​បែបបទ
     .accesskey = ទ
@@ -406,6 +418,7 @@ history-clear-button =
 
 ## Privacy Section - Site Data
 
+sitedata-header = ខូឃី និងទិន្នន័យ​គេហទំព័រ
 sitedata-learn-more = ស្វែងយល់​បន្ថែម
 sitedata-accept-third-party-always-option =
     .label = ជានិច្ច
@@ -434,6 +447,9 @@ addressbar-locbar-openpage-option =
     .accesskey = O
 addressbar-suggestions-settings = ប្ដូរ​ចំណូលចិត្ត​សម្រាប់​ការ​សំណើ​ម៉ាស៊ីន​ស្វែងរក
 
+## Privacy Section - Content Blocking
+
+
 ## Privacy Section - Tracking
 
 tracking-header = ការពារ​ការ​តាមដាន
@@ -452,12 +468,28 @@ tracking-exceptions =
 
 ## Privacy Section - Permissions
 
+permissions-location-settings =
+    .label = ការកំណត់...
+    .accesskey = t
+permissions-camera-settings =
+    .label = ការ​កំណត់...
+    .accesskey = t
+permissions-microphone-settings =
+    .label = ការកំណត់...
+    .accesskey = t
+permissions-notification = ការ​ជូនដំណឹង
+permissions-notification-settings =
+    .label = ការកំណត់...
+    .accesskey = t
 permissions-block-popups =
     .label = ទប់ស្កាត់​​បង្អួច​លេច​ឡើង
     .accesskey = ទ
 permissions-block-popups-exceptions =
     .label = ករណី​លើក​លែង
     .accesskey = ក
+permissions-addon-install-warning =
+    .label = ព្រមានអ្នកនៅពេលគេហទំព័រព្យាយាមដំឡើងកម្មវិធីបន្ថែម
+    .accesskey = W
 permissions-addon-exceptions =
     .label = ករណី​លើកលែង…
     .accesskey = E

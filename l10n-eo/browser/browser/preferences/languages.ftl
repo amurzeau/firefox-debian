@@ -5,6 +5,9 @@
 languages-window =
     .title = Lingvoj
     .style = width: 30em
+webpage-languages-window =
+    .title = Lingvaj agordoj por retpaĝoj
+    .style = width: 40em
 languages-close-key =
     .key = w
 languages-description = Retpaĝoj estas kelkfoje proponitaj en pli ol unu lingvo. Elektu la lingvojn por montri tiujn paĝojn, ordigitaj laŭ prefero.
@@ -38,3 +41,7 @@ languages-code-format =
     .label = { $locale }  [{ $code }]
 languages-active-code-format =
     .value = { languages-code-format.label }
+browser-languages-window =
+    .title = Lingvaj agordoj de { -brand-short-name }
+    .style = width: 40em
+browser-languages-description = { -brand-short-name } montros la unuan lingvon kiel vian norman, kaj montros alternativajn lingvojn, se bezonatas, en la ordo en kiu ili aperas.
