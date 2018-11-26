@@ -1,0 +1,40 @@
+From: Mike Hommey <mh+mozilla@glandium.org>
+Date: Wed, 14 Nov 2018 06:58:53 +0000
+Subject: Bug 1507035 - Fix run sizes for size classes >= 16KB on systems with
+ large pages. r=njn
+
+Differential Revision: https://phabricator.services.mozilla.com/D11836
+---
+ memory/build/mozjemalloc.cpp | 12 +++++++-----
+ 1 file changed, 7 insertions(+), 5 deletions(-)
+
+diff --git a/memory/build/mozjemalloc.cpp b/memory/build/mozjemalloc.cpp
+index 8db6ecb9e316..6872cb016f5b 100644
+--- a/memory/build/mozjemalloc.cpp
++++ b/memory/build/mozjemalloc.cpp
+@@ -2880,11 +2880,6 @@ arena_bin_t::Init(SizeClass aSizeClass)
+     } while (kFixedHeaderSize + (sizeof(unsigned) * try_mask_nelms) >
+              try_reg0_offset);
+ 
+-    // Don't allow runs larger than the largest possible large size class.
+-    if (try_run_size > gMaxLargeClass) {
+-      break;
+-    }
+-
+     // Try to keep the run overhead below kRunOverhead.
+     if (Fraction(try_reg0_offset, try_run_size) <= kRunOverhead) {
+       break;
+@@ -2911,6 +2906,13 @@ arena_bin_t::Init(SizeClass aSizeClass)
+       break;
+     }
+ 
++    // If next iteration is going to be larger than the largest possible large
++    // size class, then we didn't find a setup where the overhead is small enough,
++    // and we can't do better than the current settings, so just use that.
++    if (try_run_size + gPageSize > gMaxLargeClass) {
++      break;
++    }
++
+     // Try more aggressive settings.
+     try_run_size += gPageSize;
+   }

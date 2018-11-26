@@ -3,6 +3,8 @@ fixes/Bug-1463035-Remove-MOZ_SIGNAL_TRAMPOLINE.-r-darchons.patch
 fixes/Bug-1470701-Use-run-time-page-size-when-changing-map.patch
 fixes/Bug-1444834-MIPS-Stubout-MacroAssembler-speculationB.patch
 fixes/Bug-1144632-fix-big-endian-Skia-builds.-r-rhunt.patch
+fixes/Bug-1505608-Try-to-ensure-the-bss-section-of-the-elf.patch
+fixes/Bug-1507035-Fix-run-sizes-for-size-classes-16KB-on-s.patch
 porting/Add-xptcall-support-for-SH4-processors.patch
 porting/NSS-Fix-FTBFS-on-Hurd-because-of-MAXPATHLEN.patch
 porting/Make-powerpc-not-use-static-page-sizes-in-mozjemallo.patch
