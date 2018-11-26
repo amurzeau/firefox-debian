@@ -68,6 +68,7 @@ Build-Depends: autotools-dev,
                clang,
 %endif
                cbindgen (>= 0.6.2),
+               nodejs (>= 8.11),
                zip,
                unzip,
                locales,
