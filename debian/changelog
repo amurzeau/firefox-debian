@@ -1,3 +1,16 @@
+firefox-esr (60.3.0esr-2) unstable; urgency=medium
+
+  * debian/control*: Build depend on unversioned clang/llvm.
+    Closes: #912804.
+  * debian/rules: Use embedded libevent in backports. Closes: #910397.
+
+  * build/unix/elfhack/test.c: Try to ensure the bss section of the
+    elfhack testcase stays large enough. bz#1505608.
+  * memory/build/mozjemalloc.cpp: Fix run sizes for size classes >= 16KB
+    on systems with large pages. bz#1507035. Closes: #911898.
+
+ -- Mike Hommey <glandium@debian.org>  Mon, 26 Nov 2018 10:42:42 +0900
+
 firefox-esr (60.3.0esr-1) unstable; urgency=medium
 
   * New upstream release.
