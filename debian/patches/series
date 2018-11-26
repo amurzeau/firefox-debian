@@ -10,6 +10,8 @@ porting/Make-powerpc-not-use-static-page-sizes-in-mozjemallo.patch
 porting/Disable-libyuv-assembly-on-mips64.patch
 porting/Fix-CPU_ARCH-test-for-libjpeg-on-mips.patch
 porting/Work-around-Debian-bug-844357.patch
+porting/Use-NEON_FLAGS-instead-of-VPX_ASFLAGS-for-libaom-neo.patch
+porting/Protect-include-config.h-in-pixman-vmx.c-like-in-oth.patch
 prefs/Set-javascript.options.showInConsole.patch
 prefs/Set-DPI-to-system-settings.patch
 prefs/Don-t-auto-disable-extensions-in-system-directories.patch
