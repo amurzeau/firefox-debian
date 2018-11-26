@@ -35,11 +35,11 @@ Build-Depends: autotools-dev,
                libnspr4-dev (>= 2:@NSPR_VERSION@~),
 %endif
 %if USE_SYSTEM_NSS
-%define NSS_VERSION 3.39
+%define NSS_VERSION 3.40
                libnss3-dev (>= 2:@NSS_VERSION@~),
 %endif
 %if USE_SYSTEM_SQLITE
-%define SQLITE_VERSION 3.24.0
+%define SQLITE_VERSION 3.25.1
                libsqlite3-dev (>= @SQLITE_VERSION@),
 %endif
 %if USE_SYSTEM_VPX
