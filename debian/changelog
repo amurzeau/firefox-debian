@@ -1,8 +1,23 @@
-firefox (63.0.3-1) UNRELEASED; urgency=medium
+firefox (63.0.3-1) unstable; urgency=medium
 
   * New upstream release.
 
- -- Mike Hommey <glandium@debian.org>  Mon, 26 Nov 2018 07:17:59 +0900
+  * debian/control*: Build depend on unversioned clang/llvm.
+    Closes: #912802.
+  * debian/rules: Use embedded libevent in backports. Closes: #910397.
+  * debian/rules: Use GNU gold linker on i386 because BFD ld fails to link
+    libxul.so (memory exhausted).
+
+  * build/unix/elfhack/test.c: Try to ensure the bss section of the
+    elfhack testcase stays large enough. bz#1505608.
+  * memory/build/mozjemalloc.cpp: Fix run sizes for size classes >= 16KB
+    on systems with large pages. bz#1507035. Closes: #911898.
+  * media/libaom/moz.build: Use NEON_FLAGS instead of VPX_ASFLAGS for
+    libaom neon code.
+  * gfx/cairo/libpixman/src/pixman-vmx.c: Protect #include <config.h> in
+    pixman-vmx.c like in other pixman-*.c files
+
+ -- Mike Hommey <glandium@debian.org>  Mon, 26 Nov 2018 10:17:08 +0900
 
 firefox (63.0.1-1) unstable; urgency=medium
 
