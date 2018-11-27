@@ -304,10 +304,6 @@ stamps/dh_install-l10n:: $(L10N_DH_INSTALL_STAMPS)
 $(L10N_DH_INSTALL_STAMPS):: stamps/dh_install-l10n-%: stamps/build-l10n-%
 	dh_install -p$($(PRODUCT))-l10n-$(call lc,$*) build-l10n/dist/xpi/langpack-$*@$($(PRODUCT)).mozilla.org.xpi $(LIB_DIR)/browser/extensions/
 
-GENERATED_FILES += debian/$($(PRODUCT))-symbolic.svg
-debian/$($(PRODUCT))-symbolic.svg: browser/extensions/onboarding/content/img/watermark.svg
-	cat $< > $@
-
 stamps/dh_install:: debian/noinstall debian/$($(PRODUCT))-symbolic.svg
 	awk '{print "debian/tmp/" $$1 }' < debian/noinstall | xargs rm -r
 	dh_install --fail-missing
