@@ -11,6 +11,7 @@ $(call lazy,LDFLAGS,$$(call dpkg_buildflags,LDFLAGS))
 
 $(call lazy,DEB_HOST_GNU_TYPE,$$(shell dpkg-architecture -qDEB_HOST_GNU_TYPE))
 $(call lazy,DEB_BUILD_GNU_TYPE,$$(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE))
+$(call lazy,DEB_BUILD_ARCH_BITS,$$(shell dpkg-architecture -qDEB_BUILD_ARCH_BITS))
 $(call lazy,DEB_HOST_ARCH,$$(shell dpkg-architecture -qDEB_HOST_ARCH))
 $(call lazy,DEB_HOST_ARCH_ENDIAN,$$(shell dpkg-architecture -qDEB_HOST_ARCH_ENDIAN))
 
@@ -81,17 +82,18 @@ LDFLAGS := -Wl,--as-needed
 # unstripped binaries when they would normally be larger than 2GiB.
 LDFLAGS += -Wl,--compress-debug-sections=zlib
 
+# Disable debug symbols when building on 32-bits machines, because
+# a) the rust compiler can't deal with it in the available address
+# space, and b) the linker can't deal with it in the available address space
+# either.
+ifneq (64,$(DEB_BUILD_ARCH_BITS)))
+	CONFIGURE_FLAGS += --disable-debug-symbols
+endif
+
 # Reduce memory usage of the linker at the expense of processing time
 # This should help on lower-end architectures like arm and mips, which
 # spend an immense amount of time swapping.
-# However, on i386, this isn't enough, and BFD ld fails to link libxul
-# because of memory usage. So use gold on that architecture. Gold
-# doesn't support the --reduce-memory-overheads flag.
-ifneq (,$(filter %i386,$(DEB_HOST_ARCH)))
-	CONFIGURE_FLAGS += --enable-gold
-else
 LDFLAGS += -Wl,--reduce-memory-overheads
-endif
 LDFLAGS += -Wl,--no-keep-memory
 # Also add execution time and memory usage stats in the logs
 LDFLAGS += -Wl,--stats
