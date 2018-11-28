@@ -85,4 +85,4 @@ usr/lib/@browser@/browser/crashreporter-override.ini
 usr/lib/@browser@/fonts/TwemojiMozilla.ttf
 usr/lib/@browser@/pingsender
 
-browser/extensions/onboarding/content/img/watermark.svg usr/share/icons/hicolor/symbolic/apps/@browser@-symbolic.svg
+debian/@browser@-symbolic.svg usr/share/icons/hicolor/symbolic/apps
