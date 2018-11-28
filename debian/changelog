@@ -1,3 +1,15 @@
+firefox-esr (60.3.0esr-3) unstable; urgency=medium
+
+  * debian/browser.install.in, debian/rules: Properly copy the watermark to
+    /usr/share/icons/hicolor/symbolic/apps.
+  * debian/rules: Pass compiler and compiler flags environment variables
+    down to ICU configure. That will make it use GCC instead of defaulting
+    to clang now it's in PATH, avoiding the failing to build the ICU data
+    file on big endian platforms because clang doesn't know some of the GCC
+    flags it somehow got from the environment.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 28 Nov 2018 14:28:56 +0900
+
 firefox-esr (60.3.0esr-2) unstable; urgency=medium
 
   * debian/control*: Build depend on unversioned clang/llvm.
