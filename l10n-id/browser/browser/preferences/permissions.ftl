@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = Blokir
 permissions-capabilities-prompt =
     .label = Tanyakan Selalu
+permissions-capabilities-listitem-allow =
+    .value = Izinkan
+permissions-capabilities-listitem-block =
+    .value = Blokir
+permissions-capabilities-listitem-allow-first-party =
+    .value = Izinkan hanya dari pihak pertama
+permissions-capabilities-listitem-allow-session =
+    .value = Izinkan untuk Sesi ini
 
 ## Invalid Hostname Dialog
 
@@ -54,6 +62,10 @@ permissions-exceptions-tracking-protection-window =
     .title = Pengecualian - Perlindungan Pelacakan
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = Anda telah menonaktifkan Perlindungan Pelacakan di situs web ini.
+permissions-exceptions-content-blocking-window =
+    .title = Pengecualian - Pemblokiran Konten
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = Anda telah menonaktifkan pemblokiran konten di situs berikut.
 
 ## Exceptions - Cookies
 
@@ -85,10 +97,6 @@ permissions-exceptions-addons-desc = Anda dapat menentukan situs web mana saja y
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = Situs yang Diizinkan - Putar Otomatis
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = Anda dapat menentukan situs web mana saja yang diizinkan untuk memainkan elemen media secara otomatis. Ketik alamat situs secara persis yang akan diizinkan, lalu klik Izinkan.
 permissions-exceptions-autoplay-media-window2 =
     .title = Kekecualian - Putar Otomatis
     .style = { permissions-window.style }

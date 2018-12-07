@@ -4,7 +4,7 @@
 
 <!ENTITY offlineDialog.title "Setări pentru lucrul offline">
 
-<!ENTITY checkAutoDetect.label "Umăriți automat starea online detectată">
+<!ENTITY checkAutoDetect.label "Umărește automat starea online detectată">
 <!ENTITY checkAutoDetect.accesskey "d">
 <!ENTITY titleStartUp "Starea manuală la pornire:">
 <!ENTITY radioRememberPrevState.label "Memorează starea online precedentă">
@@ -16,14 +16,14 @@
 <!ENTITY radioAlwaysOffline.label "Offline">
 <!ENTITY radioAlwaysOffline.accesskey "f">
 
-<!ENTITY textGoingOnline "Doriți să se expedieze mesajele netrimise când lucrați online?">
+<!ENTITY textGoingOnline "Dorești să se expedieze mesajele netrimise când lucrezi online?">
 <!ENTITY radioAutoSend.label "Da">
 <!ENTITY radioAutoSend.accesskey "D">
 <!ENTITY radioNotSend.label "Nu">
 <!ENTITY radioNotSend.accesskey "N">
 <!ENTITY radioAskUnsent.label "Întreabă-mă">
 <!ENTITY radioAskUnsent.accesskey "n">
-<!ENTITY textGoingOffline "Doriți să se descarce mesajele pentru utilizare offline când alegeți să vă deconectați?">
+<!ENTITY textGoingOffline "Dorești să se descarce mesajele pentru utilizare offline când alegi să te deconectezi?">
 <!ENTITY radioAutoDownload.label "Da">
 <!ENTITY radioAutoDownload.accesskey "D">
 <!ENTITY radioNotDownload.label "Nu">

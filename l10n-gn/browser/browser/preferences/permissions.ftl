@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = Jokoha
 permissions-capabilities-prompt =
     .label = Porandu Tapia
+permissions-capabilities-listitem-allow =
+    .value = Moneĩ
+permissions-capabilities-listitem-block =
+    .value = Jokoha
+permissions-capabilities-listitem-allow-first-party =
+    .value = Ñepyrũguáva año ñemoneĩ
+permissions-capabilities-listitem-allow-session =
+    .value = Tembiapópe g̃uarã moneĩ
 
 ## Invalid Hostname Dialog
 
@@ -54,6 +62,10 @@ permissions-exceptions-tracking-protection-window =
     .title = Oĩ'ỹva - Ñemo'ã Tapykuehógui
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = Embojuruja tapykueho ñemo'ã ko'ã ko'ã ñanduti rendápe.
+permissions-exceptions-content-blocking-window =
+    .title = Ykepegua – Tetepy jejoko
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = Ojeipe’áma tetepy jejoko ko’ã tenda pegua.
 
 ## Exceptions - Cookies
 
@@ -85,10 +97,6 @@ permissions-exceptions-addons-desc = Ikatu rehechauka mba'e ñanduti renda guiv�
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = Ñanduti renda moneĩmbyre - Mboheta ijeheguíva
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = Ikatu emopeteĩ umi tenda moneĩmbyre ombohetakuaáva ijehegui mba’epuru. Emoingeva’erã tenda kundaharape emoneĩséva ha upéi ejopy Moneĩ.
 permissions-exceptions-autoplay-media-window2 =
     .title = Ykepegua – Ñemboheta ijeheguíva
     .style = { permissions-window.style }

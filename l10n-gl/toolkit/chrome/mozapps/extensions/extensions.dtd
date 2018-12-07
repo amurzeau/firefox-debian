@@ -4,6 +4,8 @@
 <!ENTITY addons.windowTitle                   "Xestor de complementos">
 
 <!ENTITY search.placeholder2                  "Buscar en addons.mozilla.org">
+
+<!ENTITY search.placeholder3                  "Buscar en addons.mozilla.org">
 <!ENTITY search.buttonlabel                   "Buscar">
 <!-- LOCALIZATION NOTE (search.commandkey):
      The search command key should match findOnCmd.commandkey from browser.dtd -->
@@ -19,6 +21,7 @@
 <!ENTITY installAddonFromFile.accesskey       "I">
 <!ENTITY toolsMenu.tooltip                    "Ferramentas para todos os complementos">
 
+<!ENTITY getThemes.description                "Desexa personalizar o seu navegador?">
 <!ENTITY getThemes.learnMore                  "Escolla entre centos de temas.">
 
 
@@ -40,6 +43,10 @@
 <!ENTITY view.discover.label                  "Obter complementos">
 <!ENTITY view.recentUpdates.label             "Actualizacións recentes">
 <!ENTITY view.availableUpdates.label          "Actualizacións dispoñíbeis">
+
+<!ENTITY helpButton.label                      "Asistencia dos módulos">
+<!ENTITY preferencesWin.label                  "Opcións de &brandShortName;">
+<!ENTITY preferencesUnix.label                 "Preferencias de &brandShortName;">
 
 <!-- addon updates -->
 <!ENTITY updates.checkForUpdates.label        "Buscar actualizacións">
@@ -79,9 +86,8 @@
 <!ENTITY cmd.preferencesWin.accesskey         "O">
 <!ENTITY cmd.preferencesUnix.label            "Preferencias">
 <!ENTITY cmd.preferencesUnix.accesskey        "P">
-<!ENTITY cmd.about.label                      "Sobre">
-<!ENTITY cmd.about.accesskey                  "S">
 
+<!-- addon actions -->
 <!ENTITY cmd.enableAddon.label                "Activar">
 <!ENTITY cmd.enableAddon.accesskey            "A">
 <!ENTITY cmd.disableAddon.label               "Desactivar">
@@ -90,6 +96,7 @@
 <!ENTITY cmd.enableTheme.accesskey            "P">
 <!ENTITY cmd.disableTheme.label               "Quitar o tema">
 <!ENTITY cmd.disableTheme.accesskey           "Q">
+
 <!ENTITY cmd.askToActivate.label              "Preguntar para activar">
 <!ENTITY cmd.askToActivate.tooltip            "Preguntar cada vez se usar este complemento">
 <!ENTITY cmd.alwaysActivate.label             "Activar sempre">
@@ -99,6 +106,7 @@
 <!ENTITY cmd.stateMenu.tooltip                "Cambiar cando se execute este complemento">
 <!ENTITY cmd.installAddon.label               "Instalar">
 <!ENTITY cmd.installAddon.accesskey           "I">
+
 <!ENTITY cmd.uninstallAddon.label             "Eliminar">
 <!ENTITY cmd.uninstallAddon.accesskey         "r">
 <!ENTITY cmd.showPreferencesWin.label         "Opcións">
@@ -131,8 +139,8 @@
 <!ENTITY detail.contributions.description     "O desenvolvedor solicítalle unha pequena doazón para axudar a continuar o desenvolvemento deste complemento.">
 
 <!ENTITY detail.updateType                    "Actualizacións automáticas">
-<!ENTITY detail.updateDefault.label           "Predefinido">
-<!ENTITY detail.updateDefault.tooltip         "Instalar actualizacións automaticamente só se isto é o valor predefinido">
+<!ENTITY detail.updateDefault.label           "Predeterminado">
+<!ENTITY detail.updateDefault.tooltip         "Instalar actualizacións automaticamente só se isto é o valor predeterminado">
 <!ENTITY detail.updateAutomatic.label         "Si">
 <!ENTITY detail.updateAutomatic.tooltip       "Instalar actualizacións automaticamente">
 <!ENTITY detail.updateManual.label            "Desactivado">
@@ -157,16 +165,12 @@
 
 <!-- download/install progress -->
 <!ENTITY progress.pause.tooltip               "Pausa">
+
+<!-- download/install progress -->
 <!ENTITY progress.cancel.tooltip              "Cancelar">
 
-
-<!-- list sorting -->
-<!ENTITY sort.name.label                      "Nome">
-<!ENTITY sort.name.tooltip                    "Ordenar por nome">
-<!ENTITY sort.dateUpdated.label               "Última actualización">
-<!ENTITY sort.dateUpdated.tooltip             "Ordenar por data de actualización">
-
 <!ENTITY addon.homepage                       "Páxina de inicio">
+
 <!ENTITY addon.details.label                  "Máis">
 <!ENTITY addon.details.tooltip                "Amosar máis detalles sobre este complemento">
 <!ENTITY addon.unknownDate                    "Descoñecido">
@@ -188,6 +192,7 @@
 <!ENTITY addon.undoRemove.label               "Desfacer">
 <!ENTITY addon.undoRemove.tooltip             "Conservar este complemento instalado">
 <!ENTITY addon.restartNow.label               "Reiniciar agora">
+
 <!ENTITY addon.install.label                  "Instalar">
 <!ENTITY addon.install.tooltip                "Instalar este complemento">
 <!ENTITY addon.updateNow.label                "Actualizar agora">
@@ -208,17 +213,6 @@
 
 <!ENTITY settings.path.button.label           "Examinar…">
 
-<!-- LOCALIZATION NOTE (experiment.info.label): The strings related to
-     experiments are present on the "Experiments" tab of the add-ons manager.
-     This tab won't be displayed unless an Experiment add-on is installed.
-     Install https://people.mozilla.org/~gszorc/dummy-experiment-addon.xpi
-     to cause this tab to appear. -->
-<!ENTITY experiment.info.label "Que é isto? Telemetría pode instalar e executar experimentos cando sexa necesario.">
-<!ENTITY experiment.info.learnmore "Obter máis información">
-<!ENTITY experiment.info.learnmore.accesskey "b">
-<!ENTITY experiment.info.changetelemetry "Configuración de Telemetría">
-<!ENTITY experiment.info.changetelemetry.accesskey "t">
-
 <!ENTITY setting.learnmore "Máis información…">
 
 <!ENTITY disabledUnsigned.heading "Desactiváronse algúns complementos">
@@ -236,4 +230,10 @@
 <!ENTITY disabledUnsigned.devInfo.linkToManual "manual">
 <!ENTITY disabledUnsigned.devInfo.end ".">
 
+<!ENTITY pluginDeprecation.description "Bota en falta algo? Algúns engadidos xa non son compatíbeis co &brandShortName;.">
+<!ENTITY pluginDeprecation.learnMore "Máis información.">
 
+<!ENTITY legacyWarning.showLegacy "Amosar as extensións herdadas">
+<!ENTITY legacyExtensions.title "Extensións herdadas">
+<!ENTITY legacyExtensions.description "Estas extensións non cumpren os estándares actuais de &brandShortName;, así que foron desactivadas.">
+<!ENTITY legacyExtensions.learnMore "Máis información sobre os cambios nos complementos">

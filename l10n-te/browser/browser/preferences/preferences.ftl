@@ -51,6 +51,7 @@ pane-sync-title = Firefox ఖాతా
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } తోడ్పాటు
+addons-button-label = పొడగింతలు & అలంకారాలు
 focus-search =
     .key = f
 close-button =
@@ -299,10 +300,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = మీరు టైపుచేయడం ప్రారంభించినప్పటి నుంచి పాఠ్యము‍ కొరకు శోధించు
     .accesskey = x
+browsing-cfr-recommendations-learn-more = ఇంకా తెలుసుకోండి
 
 ## General Section - Proxy
 
-network-proxy-title = నెట్‌వర్క్ ప్రాక్సీ
 network-settings-title = నెట్‌వర్క్ అమరికలు
 network-proxy-connection-learn-more = ఇంకా తెలుసుకోండి
 network-proxy-connection-settings =
@@ -393,7 +394,7 @@ search-keyword-warning-bookmark = మీరు ఎంచుకున్న క�
 containers-back-link = « వెనక్కి వెళ్ళు
 containers-header = కంటైనర్ ట్యాబులు
 containers-add-button =
-    .label = కొత్త కంటేయినర్ జోడించు
+    .label = కొత్త కంటెయినరు చేర్చు
     .accesskey = A
 containers-preferences-button =
     .label = అభిరుచులు
@@ -497,6 +498,7 @@ privacy-header = విహరిణి గోప్యత
 ## Privacy Section - Forms
 
 forms-header = ఫారాలు & సంకేతపదాలు
+logins-header = ప్రవేశాలు & సంకేతపదాలు
 forms-ask-to-save-logins =
     .label = సైట్ల ప్రవేశాలూ, సంకేతపదాలు భద్రపరచుకోడానికి అడుగు
     .accesskey = r
@@ -558,26 +560,12 @@ history-clear-button =
 sitedata-header = కుకీలు, సైటు డేటా
 sitedata-total-size-calculating = సైటు దత్తాంశం, కాషెల పరిమాణాన్ని లెక్కిస్తున్నాం…
 sitedata-learn-more = మరింత తెలుసుకోండి
-sitedata-accept-cookies-option =
-    .label = వెబ్‌సైట్ల నుండి కుకీలు, సైటు దత్తాంశాన్ని అంగీకరించు (సిఫార్సు చేయబడింది)
-    .accesskey = A
-sitedata-block-cookies-option =
-    .label = కుకీలను, సైటు దత్తాంశాన్ని నిరోధించు (కొన్ని వెబ్‌సైట్లు సరిగా పనిచేయకపోవచ్చు)
-    .accesskey = B
 sitedata-keep-until = ఇంత వరకు ఉంచు
     .accesskey = u
 sitedata-keep-until-expire =
     .label = అవి కాలం చెల్లేంతవరకు
 sitedata-keep-until-closed =
     .label = { -brand-short-name } మూసివేయబడింది
-sitedata-accept-third-party-desc = మూడవ-పక్ష కుకీలను, సైటు దత్తాంశాన్నీ అంగీకరించు
-    .accesskey = y
-sitedata-accept-third-party-always-option =
-    .label = ఎల్లప్పుడూ
-sitedata-accept-third-party-visited-option =
-    .label = సందర్శించిన నాటి నుండి
-sitedata-accept-third-party-never-option =
-    .label = ఎప్పటికీవద్దు
 sitedata-allow-cookies-option =
     .label = కుకీలను, సైటు డేటాను అంగీకరించు
     .accesskey = A
@@ -617,7 +605,7 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = తెరిచిన ట్యాబులు
     .accesskey = O
-addressbar-suggestions-settings = శోధన యత్ర సూచనల అభిరుచులను మార్చండి
+addressbar-suggestions-settings = సెర్చింజను సూచనల అభిరుచులను మార్చండి
 
 ## Privacy Section - Content Blocking
 
@@ -635,15 +623,42 @@ content-blocking-toggle-label-on = ఆన్
 content-blocking-toggle-label-off = ఆఫ్
     .accesskey = O
 content-blocking-category-label = వేటిని నిరోధించాలో ఎంచుకోండి
+content-blocking-setting-standard =
+    .label = ప్రామాణికం
+    .accesskey = d
+content-blocking-setting-strict =
+    .label = కఠినం
+    .accesskey = r
+content-blocking-setting-custom =
+    .label = అభిమతం
+    .accesskey = C
+content-blocking-custom-desc = వేటిని నిరోధించాలో ఎంచుకోండి.
+content-blocking-learn-how = ఎలానో తెలుసుకోండి
+content-blocking-tracking-protection-trackers-label =
+    .label = ట్రాకర్లు
+    .accesskey = T
 content-blocking-tracking-protection-option-always =
     .label = ఎల్లప్పుడూ
     .accesskey = A
 content-blocking-tracking-protection-option-private =
     .label = అంతరంగిక కిటికీలలో మాత్రమే
     .accesskey = p
+content-blocking-tracking-protection-change-block-list = నిరోధపు జాబితాను మార్చు
+content-blocking-third-party-cookies-label =
+    .label = మూడవ-పక్ష కుకీలు
+    .accesskey = C
+content-blocking-change-cookie-settings =
+    .label = కుకీ అమరికలు మార్చండి
+    .accesskey = S
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = ట్రాకర్లు (సిఫార్సు చేయబడింది)
+    .accesskey = k
 content-blocking-reject-trackers-block-trackers-option =
     .label = ట్రాకర్లు
     .accesskey = k
+content-blocking-cookies-label =
+    .label = కుకీలు
+    .accesskey = C
 
 ## Privacy Section - Tracking
 
@@ -658,16 +673,15 @@ tracking-mode-private =
 tracking-mode-never =
     .label = ఎప్పటికీ కాదు
     .accesskey = n
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = తెలిసిన ట్రాకర్లను నిరోధించడానికి గోప్య విహారిణిలో ట్రాకింగ్ రక్షణని ఉపయోగించండి
-    .accesskey = v
 tracking-exceptions =
     .label = మినహాయింపులు…
     .accesskey = x
 tracking-change-block-list =
     .label = నిషేధిత జాబితాను మార్చు…
     .accesskey = C
+tracking-manage-exceptions =
+    .label = మినహాయింపులను నిర్వహించండి…
+    .accesskey = x
 
 ## Privacy Section - Permissions
 
@@ -767,3 +781,26 @@ certs-view =
 certs-devices =
     .label = రక్షణ పరికరాలు…
     .accesskey = D
+space-alert-learn-more-button =
+    .label = ఇంకా తెలుసుకోండి
+    .accesskey = L
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] ఎంపికలను తెరువు
+           *[other] అభిరుచులను తెరువు
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] O
+        }
+space-alert-under-5gb-ok-button =
+    .label = సరే, అర్థమయ్యింది
+    .accesskey = K
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = డెస్కుటాప్
+downloads-folder-name = దింపుకోళ్ళు
+choose-download-folder-title = దింపుకోళ్ళ సంచయాన్ని తెరువు:

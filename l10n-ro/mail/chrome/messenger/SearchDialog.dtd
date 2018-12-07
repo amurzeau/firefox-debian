@@ -58,7 +58,7 @@
 <!ENTITY idColumn.label "Ordine de primire">
 
 <!-- Thread Pane Tooltips -->
-<!ENTITY columnChooser2.tooltip "Selectați coloanele de afișat">
+<!ENTITY columnChooser2.tooltip "Selectează coloanele de afișat">
 <!ENTITY threadColumn2.tooltip "Afișează firele de conversație">
 <!ENTITY fromColumn2.tooltip "Sortează după expeditor">
 <!ENTITY recipientColumn2.tooltip "Sortează după destinatar">
@@ -69,7 +69,7 @@
 <!ENTITY tagsColumn2.tooltip "Sortează după etichete">
 <!ENTITY accountColumn2.tooltip "Sortează după cont">
 <!ENTITY statusColumn2.tooltip "Sortează după stare">
-<!ENTITY sizeColumn2.tooltip "Sortează după dimensiune">
+<!ENTITY sizeColumn2.tooltip "Sortează după mărime">
 <!ENTITY junkStatusColumn2.tooltip "Sortează după nesolicitate">
 <!ENTITY unreadColumn2.tooltip "Numărul de mesaje necitite din conversație">
 <!ENTITY totalColumn2.tooltip "Numărul total de mesaje din conversație">

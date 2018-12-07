@@ -10,9 +10,10 @@
 <!ENTITY returnToPreviousPage.label "Regresar">
 <!ENTITY returnToPreviousPage1.label "Volver (recomendado)">
 <!ENTITY advanced.label "Avanzado">
-
 <!ENTITY continue2.label "Más…">
 <!ENTITY moreInformation.label "Más información">
+
+<!ENTITY viewCertificate.label "Ver certificado">
 
 <!-- Specific error messages -->
 
@@ -98,14 +99,20 @@
 
 <!ENTITY certerror.longpagetitle1 "Tu conexión no es segura">
 <!ENTITY certerror.longpagetitle2 "Advertencia: Riesgo potencial de seguridad a continuación">
+<!ENTITY certerror.sts.longpagetitle  "No se conectó: Posible problema de seguridad">
 <!-- Localization note (certerror.introPara, certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "El dueño de <span class='hostname'/> configuró incorrectamente su sitio Web.  Para evitar que tu información sea robada, &brandShortName; no estableció la conexión con el sitio.">
-
 <!ENTITY certerror.introPara2 "&brandShortName; ha detectado una potencial amenaza y no ha continuado a <span class='hostname'/>. Si visitas este sitio, los atacantes podrían intentar robar tu información como tus contraseñas, correo o datos de tu tarjeta de crédito.">
 
 <!ENTITY certerror.expiredCert.secondPara "Este problema seguramente se deba a que el reloj de tu computadora está configurado con una hora incorrecta, lo que prevendría a &brandShortName; conectarse de forma segura.">
+
+<!ENTITY certerror.sts.introPara "&brandShortName; ha detectado una potencial amenaza de seguridad y no ha continuado a <span class='hostname'/> porque este sitio web requiere una conexión segura.">
+
+<!ENTITY certerror.expiredCert.introPara "&brandShortName; ha detectado un problema y no continuó a <span class='hostname'/>. El sitio web está mal configurado o el reloj de tu computadora tiene una hora incorrecta.">
+<!ENTITY certerror.expiredCert.secondPara2 "Es probable que el certificado del sitio esté expirado, lo que previene a &brandShortName; de conectarse de forma segura. Si visitas este sitio, los atacantes pueden intentar robar tu información como contraseñas, correos electrónicos o detalles de tu tarjeta de crédito.">
+<!ENTITY certerror.expiredCert.sts.secondPara "Probablemente el certificado del sitio ha expirado, impidiendo que &brandShortName; se conecte con seguridad.">
 
 <!ENTITY certerror.whatCanYouDoAboutItTitle "¿Qué puedes hacer al respecto?">
 
@@ -132,7 +139,6 @@ was trying to connect. -->
 
 
 <!ENTITY securityOverride.exceptionButtonLabel "Agregar excepción…">
-
 <!ENTITY securityOverride.exceptionButton1Label "Aceptar el riesgo y continuar">
 
 <!ENTITY errorReporting.automatic2 "Informa errores de este tipo para ayudar a Mozilla a identificar y bloquear sitios maliciosos.">
@@ -154,6 +160,7 @@ was trying to connect. -->
 
 <!ENTITY certerror.pagetitle1  "Conexión insegura">
 <!ENTITY certerror.pagetitle2  "Advertencia: Riesgo potencial de seguridad a continuación">
+<!ENTITY certerror.sts.pagetitle  "No se conectó: Potencial problema de seguridad">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Este sitio usa HTTP
 Strict Transport Security (HSTS) para especificar que &brandShortName; solamente se conecte
 de forma segura. Como resultado, no es posible agregar una excepción para este
@@ -173,3 +180,6 @@ certificado.">
 
 <!ENTITY prefReset.longDesc "Parece que la configuración de seguridad de la red podría estar provocando esto. ¿Quieres la configuración predeterminada para restaurar?">
 <!ENTITY prefReset.label "Restaurar ajustes predeterminados">
+
+<!ENTITY networkProtocolError.title "Error de protocolo de red">
+<!ENTITY networkProtocolError.longDesc "<p>La página que estás intentando ver no se puede mostrar porque fue detectado un error del protocolo de red.</p><ul><li>Por favor, contacta con los propietarios del sitio web para informarles de este problema.</li></ul>">

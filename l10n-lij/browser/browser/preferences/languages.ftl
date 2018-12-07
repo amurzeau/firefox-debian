@@ -2,9 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-languages-window =
-    .title = Lengoe
-    .style = width: 30em
 webpage-languages-window =
     .title = Inpoastaçioin da lengoa de Pagine web
     .style = width: 40em
@@ -45,3 +42,14 @@ browser-languages-window =
     .title = Inpostaçion lengoa de { -brand-short-name }
     .style = width: 40em
 browser-languages-description = { -brand-short-name } o te mostriâ a primma lengoa comme predefinia e-e atre lengoe in ordine de aparensa se necesaio.
+browser-languages-search = Çerca atre lengoe…
+browser-languages-searching =
+    .label = Çerco e lengoe…
+browser-languages-downloading =
+    .label = Descarego…
+browser-languages-select-language =
+    .label = Seleçionn-a 'na lengoa da azonze…
+    .placeholder = Seleçionn-a 'na lengoa da azonze…
+browser-languages-installed-label = Lengoe instalæ
+browser-languages-available-label = Lengoe che ghe son
+browser-languages-error = { -brand-short-name } o no agiornâ a lengoa oua. Contròlla che ti ê conesso a l'internet e preuva torna.

@@ -53,6 +53,7 @@ pane-sync-title = Conto Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = Assistentia de { -brand-short-name }
+addons-button-label = Extensiones & themas
 focus-search =
     .key = f
 close-button =
@@ -83,6 +84,9 @@ extension-controlled-homepage-override = Un extension, <img data-l10n-name="icon
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Un extension, <img data-l10n-name="icon"/> { $name }, controla tu pagina de Nove scheda.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = Un extension, <img data-l10n-name="icon"/> { $name }, controla iste configuration.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Un extension, <img data-l10n-name="icon"/> { $name }, ha definite le motor de recerca ordinari.
@@ -149,6 +153,9 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = Advertir te quando tu claude multiple schedas
     .accesskey = m
+warn-on-quit-close-multiple-tabs =
+    .label = Advertir te quando tu claude plure schedas
+    .accesskey = p
 warn-on-open-many-tabs =
     .label = Advertir te quando tu aperi multiple schedas que illo pote facer { -brand-short-name } devenir lente
     .accesskey = d
@@ -284,6 +291,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = Actualisar automaticamente le motores de recerca
     .accesskey = e
+update-pref-write-failure-title = Error de scriptura
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = Incapace a salvar le option. Impossibile scriber al file: { $path }
 
 ## General Section - Performance
 
@@ -323,10 +334,13 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Cercar le texto quando tu comencia a scriber
     .accesskey = x
+browsing-cfr-recommendations =
+    .label = Extensiones recommendate quando tu naviga
+    .accesskey = r
+browsing-cfr-recommendations-learn-more = Saper plus
 
 ## General Section - Proxy
 
-network-proxy-title = Proxy de rete
 network-settings-title = Parametros de rete
 network-proxy-connection-description = Configura como { -brand-short-name } se connecte a internet.
 network-proxy-connection-learn-more = Saper plus
@@ -525,6 +539,7 @@ privacy-header = Confidentialitate del navigator
 ## Privacy Section - Forms
 
 forms-header = Formularios e contrasignos
+logins-header = Authenticationes & contrasignos
 forms-ask-to-save-logins =
     .label = Demanda de salvar authenticationes e contrasignos de sito
     .accesskey = r
@@ -591,26 +606,15 @@ sitedata-total-size-calculating = Calculo del dimension de datos de sito e de me
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Tu cookies, datos de sito e memoria tampon immagazinate usa actualmente { $value } { $unit } de spatio de disco.
 sitedata-learn-more = Saper plus
-sitedata-accept-cookies-option =
-    .label = Acceptar cookies e datos de sito ab sitos web (recommendate)
-    .accesskey = A
-sitedata-block-cookies-option =
-    .label = Blocar cookies e datos de sito (pote causar al sitos web de collaber)
-    .accesskey = B
 sitedata-keep-until = Conservar usque
     .accesskey = u
 sitedata-keep-until-expire =
     .label = Illos expira
 sitedata-keep-until-closed =
     .label = { -brand-short-name } es claudite
-sitedata-accept-third-party-desc = Acceptar cookies e datos de sito de tertie-parte
-    .accesskey = y
-sitedata-accept-third-party-always-option =
-    .label = Sempre
-sitedata-accept-third-party-visited-option =
-    .label = Del visitates
-sitedata-accept-third-party-never-option =
-    .label = Nunquam
+sitedata-delete-on-close =
+    .label = Deler datos de cookies e sitos quando { -brand-short-name } es claudite
+    .accesskey = D
 sitedata-allow-cookies-option =
     .label = Acceptar le cookies e le datos de sito
     .accesskey = A
@@ -643,7 +647,10 @@ sitedata-cookies-exceptions =
 # This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
-sitedata-warning-your-settings-prevent-changes = Tu configurationes in Bloco de contentos impedi cambiamentos al configurationes del cookies e al datos del sito.
+sitedata-warning-your-settings-prevent-changes = Tu parametros de Blocage de contentos impedi cambiamentos al configurationes del cookies e al datos del sito.
+sitedata-cookies-permissions =
+    .label = Gerer le permissiones…
+    .accesskey = p
 
 ## Privacy Section - Address Bar
 
@@ -684,6 +691,25 @@ content-blocking-fastblock-slow-loading-trackers-label =
     .label = Traciatores lente
     .accesskey = S
 content-blocking-fastblock-new-description = Blocar justo le traciatores que impedi le paginas de ser cargate rapidemente.
+content-blocking-setting-standard =
+    .label = Standard
+    .accesskey = d
+content-blocking-setting-strict =
+    .label = Stricte
+    .accesskey = r
+content-blocking-setting-custom =
+    .label = Personalisate
+    .accesskey = P
+content-blocking-custom-desc = Elige que blocar.
+content-blocking-private-trackers = Traciatores note solo in fenestras private
+content-blocking-third-party-cookies = Cookies traciator de tertie partes
+content-blocking-all-windows-trackers = Traciatores note in tote le fenestras
+content-blocking-all-third-party-cookies = Tote le cookies de tertie partes
+content-blocking-warning-title = Attention!
+content-blocking-learn-how = Apprender como
+content-blocking-tracking-protection-trackers-label =
+    .label = Traciatores
+    .accesskey = T
 content-blocking-tracking-protection-all-detected-trackers-label =
     .label = Tote le traciatores disvelate
     .accesskey = T
@@ -716,6 +742,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = Tote le cookies de tertie-partes (pote causar que sitos web collabe)
     .accesskey = T
+content-blocking-cookies-label =
+    .label = Cookies
+    .accesskey = C
 
 ## Privacy Section - Tracking
 
@@ -731,16 +760,15 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Nunquam
     .accesskey = n
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Usar le protection contra le traciamento in navigation private pro blocar traciatores cognoscite
-    .accesskey = v
 tracking-exceptions =
     .label = Exceptiones…
     .accesskey = x
 tracking-change-block-list =
     .label = Cambiar le lista de blocage…
     .accesskey = C
+tracking-manage-exceptions =
+    .label = Gerer le exceptiones…
+    .accesskey = x
 
 ## Privacy Section - Permissions
 
@@ -857,3 +885,36 @@ certs-view =
 certs-devices =
     .label = Dispositivos de securitate…
     .accesskey = D
+space-alert-learn-more-button =
+    .label = Saper plus
+    .accesskey = L
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Aperir le optiones
+           *[other] Aperir le preferentias
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] A
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } es fluente foras de spatio de disco. Le contentos del sito web non pote monstrar se correctemente. Tu pote clarar datos immagazinate in Optiones > Confidentialitate & Securitate > Cookies e Datos de sito.
+       *[other] { -brand-short-name } es fluente foras de spatio de disco. Le contentos del sito web non pote monstrar se correctemente. Tu pote clarar datos immagazinate in Preferentias > Confidentialitate & Securitate > Cookies e Datos de sito.
+    }
+space-alert-under-5gb-ok-button =
+    .label = De accordo
+    .accesskey = D
+space-alert-under-5gb-message = { -brand-short-name } non ha plus spatio de disco bastante. Le contentos del sito web pote non ser monstrate correctemente. Visita “Apprende plus” pro optimisar le uso de tu disco a fin de un melior experientia de navigation.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Scriptorio
+downloads-folder-name = Discargamentos
+choose-download-folder-title = Eliger le dossier de discarga:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Salvar files in { $service-name }

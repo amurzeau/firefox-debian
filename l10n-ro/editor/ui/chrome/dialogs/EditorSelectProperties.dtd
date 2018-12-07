@@ -2,7 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY windowTitle.label "Proprietăți listă selecție">
+<!ENTITY windowTitle.label "Proprietăți listă de selecție">
 
 <!ENTITY Select.label "Listă selecție">
 <!ENTITY SelectName.label "Nume listă:">
@@ -13,7 +13,7 @@
 <!ENTITY SelectMultiple.accesskey "m">
 <!ENTITY SelectDisabled.label "Dezactivat">
 <!ENTITY SelectDisabled.accesskey "D">
-<!ENTITY SelectTabIndex.label "Index tab:">
+<!ENTITY SelectTabIndex.label "Index file:">
 <!ENTITY SelectTabIndex.accesskey "t">
 
 <!ENTITY OptGroup.label "Grup opțiuni">
@@ -42,7 +42,7 @@
 <!ENTITY AddOptGroup.accesskey "g">
 <!ENTITY RemoveElement.label "Șterge">
 <!ENTITY RemoveElement.accesskey "r">
-<!ENTITY MoveElementUp.label "Mută sus">
+<!ENTITY MoveElementUp.label "Mută în sus">
 <!ENTITY MoveElementUp.accesskey "s">
-<!ENTITY MoveElementDown.label "Mută jos">
+<!ENTITY MoveElementDown.label "Mută în jos">
 <!ENTITY MoveElementDown.accesskey "j">

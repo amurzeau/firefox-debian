@@ -28,6 +28,14 @@ permissions-capabilities-allow =
     .label = Vumela
 permissions-capabilities-block =
     .label = Nqanda
+permissions-capabilities-listitem-allow =
+    .value = Vumela
+permissions-capabilities-listitem-block =
+    .value = Nqanda
+permissions-capabilities-listitem-allow-first-party =
+    .value = Vumela iqela lokuqala kuphela
+permissions-capabilities-listitem-allow-session =
+    .value = Vumela iSeshoni
 
 ## Invalid Hostname Dialog
 
@@ -56,6 +64,9 @@ permissions-exceptions-saved-logins-window =
 ## Exceptions - Add-ons
 
 permissions-exceptions-addons-desc = Ungabalula ukuba zeziphi na iiwebhusayithi ezivumeleke ukufakela izongezelelo. Tayipha idilesi yokwenene yesayithi ofuna ukuyivumela uze ucofe Vumela.
+
+## Exceptions - Autoplay Media
+
 
 ## Site Permissions - Notifications
 

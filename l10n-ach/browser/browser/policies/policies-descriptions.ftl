@@ -10,6 +10,17 @@
 ## These are short descriptions for individual policies, to be displayed
 ## in the documentation section in about:policies.
 
+policy-BlockAboutAddons = Gengo nongo lalo Med-ikome (about:addons).
+policy-BlockAboutConfig = Geng nongo potbuk me about:config.
+policy-BlockAboutProfiles = Geng nongo potbuk me about:profiles.
+policy-BlockAboutSupport = Geng nongo potbuk me about:support.
 policy-Cookies = Geng onyo yee kakube me tero angija.
 policy-DisableAppUpdate = Geng keto ngec manyen i layeny.
+policy-DisableDeveloperTools = Geng nongo gitic pa ludiro.
+policy-DisableFeedbackCommands = Juk twero me cwalo adwogi ki ii gin ayera me Kony (Cwal Adwogi ki Mii ripot ikom kakube me bwola).
+policy-DisableFormHistory = Pe ipoo ikom gin mukato me yeny ki pwom
+policy-DisablePocket = Juk jami me gwoko potbuk me kakube i Pocket.
 policy-DisablePrivateBrowsing = Juk Yeny i mung
+policy-DisableProfileImport = Juk twero me gin ayera me kelo data ki ii layeny mukene.
+policy-DisableSecurityBypass = Geng latic kwede pe me kalo ciko mogo me ber bedo.
+policy-InstallAddonsPermission = Yee ki kakube mogo me keto med-ikome.

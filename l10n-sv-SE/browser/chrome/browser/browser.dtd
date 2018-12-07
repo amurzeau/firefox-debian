@@ -23,10 +23,22 @@
 <!ENTITY  reloadTab.accesskey                "U">
 <!ENTITY  reloadAllTabs.label                "Uppdatera alla flikar">
 <!ENTITY  reloadAllTabs.accesskey            "a">
+<!ENTITY  selectAllTabs.label                "Välj alla flikar">
+<!ENTITY  selectAllTabs.accesskey            "V">
 <!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
 a tab (i.e. it is a verb, not adjective). -->
 <!ENTITY  duplicateTab.label                 "Duplicera flik">
+<!-- LOCALIZATION NOTE (duplicateTab.accesskey, duplicateTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  duplicateTab.accesskey             "D">
+<!ENTITY  closeTabOptions.label              "Stäng flikinställningar">
+<!ENTITY  closeTabOptions.accesskey          "n">
+<!-- LOCALIZATION NOTE (duplicateTabs.label): This is a command to duplicate
+a tab (i.e. it is a verb, not adjective). -->
+<!ENTITY  duplicateTabs.label                "Duplicera flikar">
+<!-- LOCALIZATION NOTE (duplicateTab.accesskey, duplicateTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  duplicateTabs.accesskey            "D">
 <!-- LOCALIZATION NOTE (closeTabsToTheEnd.label): This should indicate the
 direction in which tabs are closed, i.e. locales that use RTL mode should say
 left instead of right. -->
@@ -38,19 +50,29 @@ left instead of right. -->
 <!ENTITY  closeSelectedTabs.label            "Stäng valda flikar">
 <!ENTITY  closeSelectedTabs.accesskey        "v">
 
+<!ENTITY  closeTabs.label                    "Stäng flikar">
+<!ENTITY  closeTabs.accesskey                "S">
 <!ENTITY  pinSelectedTabs.label              "Fäst flikar">
-<!-- Pin Tab and Pin Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  pinSelectedTabs.accesskey          "f">
 <!ENTITY  unpinSelectedTabs.label            "Gör om till vanliga flikar">
-<!-- Unpin Tab and Unpin Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinSelectedTabs.accesskey        "f">
 <!-- Reload Tab and Reload Selected Tabs have the same accesskey
 but will never be visible at the same time. -->
 <!ENTITY  reloadSelectedTabs.label           "Ladda om valda flikar">
 <!ENTITY  reloadSelectedTabs.accesskey       "o">
+<!-- LOCALIZATION NOTE(reloadTab.label, reloadTabs.label): have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  reloadTabs.label                   "Uppdatera flikar">
+<!ENTITY  reloadTabs.accesskey               "U">
 <!ENTITY  bookmarkSelectedTabs.label         "Bokmärk flikar…">
+<!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "k">
 
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
@@ -59,8 +81,14 @@ left edge of the tabstrip. Really we just want the string to express the idea
 that this is a lightweight and reversible action that keeps your tab where you
 can reach it easily. -->
 <!ENTITY  pinTab.label                       "Fäst flik">
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  pinTab.accesskey                   "F">
 <!ENTITY  unpinTab.label                     "Gör om till vanlig flik">
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinTab.accesskey                 "G">
 <!ENTITY  sendTabToDevice.label              "Skicka flik till enhet">
 <!ENTITY  sendTabToDevice.accesskey          "e">
@@ -68,12 +96,26 @@ can reach it easily. -->
 <!ENTITY  sendPageToDevice.accesskey         "e">
 <!ENTITY  sendLinkToDevice.label             "Skicka länk till enhet">
 <!ENTITY  sendLinkToDevice.accesskey         "e">
+<!-- LOCALIZATION NOTE (moveTabOptions.label and moveSelectedTabOptions.label):
+These two items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  moveTabOptions.label               "Flytta flik">
+<!ENTITY  moveTabOptions.accesskey           "t">
+<!ENTITY  moveSelectedTabOptions.label       "Flytta flikar">
+<!ENTITY  moveSelectedTabOptions.accesskey   "t">
+<!ENTITY  moveToStart.label                  "Flytta till början">
+<!ENTITY  moveToStart.accesskey              "b">
+<!ENTITY  moveToEnd.label                    "Flytta till slut">
+<!ENTITY  moveToEnd.accesskey                "s">
 <!ENTITY  moveToNewWindow.label              "Flytta till nytt fönster">
 <!ENTITY  moveToNewWindow.accesskey          "t">
 <!ENTITY  reopenInContainer.label            "Återöppna i innehållsflik">
 <!ENTITY  reopenInContainer.accesskey        "i">
 <!ENTITY  bookmarkAllTabs.label              "Bokmärk alla flikar...">
 <!ENTITY  bookmarkAllTabs.accesskey          "f">
+<!ENTITY  bookmarkTab.label                  "Bokmärk flik">
+<!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  bookmarkTab.accesskey              "B">
 <!ENTITY  undoCloseTab.label                 "Ångra flikstängning">
 <!ENTITY  undoCloseTab.accesskey             "g">
 <!ENTITY  closeTab.label                     "Stäng flik">
@@ -100,6 +142,8 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.accesskey "u">
 <!ENTITY printCmd.commandkey "p">
 
+<!ENTITY taskManagerCmd.label "Aktivitetshanterare">
+
 <!ENTITY goOfflineCmd.label "Arbeta nedkopplad">
 <!ENTITY goOfflineCmd.accesskey "b">
 
@@ -114,6 +158,29 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "a">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.label "Bokmärk alla flikar...">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "f">
+
+<!ENTITY toolbarContextMenu.reloadSelectedTab.label "Ladda om vald flik">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
+toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.reloadSelectedTab.accesskey "L">
+<!ENTITY toolbarContextMenu.reloadSelectedTabs.label "Ladda om valda flikar">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
+toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.reloadSelectedTabs.accesskey "L">
+<!ENTITY toolbarContextMenu.bookmarkSelectedTab.label "Bokmärk vald flik…">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.bookmarkSelectedTab.accesskey,
+toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.bookmarkSelectedTab.accesskey "f">
+<!ENTITY toolbarContextMenu.bookmarkSelectedTabs.label "Bokmärk markerade flikar…">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.bookmarkSelectedTab.accesskey,
+toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.bookmarkSelectedTabs.accesskey "f">
+<!ENTITY toolbarContextMenu.selectAllTabs.label "Välj alla flikar">
+<!ENTITY toolbarContextMenu.selectAllTabs.accesskey "V">
 <!ENTITY toolbarContextMenu.undoCloseTab.label "Ångra flikstängning">
 <!ENTITY toolbarContextMenu.undoCloseTab.accesskey "g">
 
@@ -199,6 +266,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY subscribeToPageMenupopup.label "Prenumerera på denna sida">
 <!ENTITY subscribeToPageMenuitem.label "Prenumerera på denna sida…">
+
 <!ENTITY addCurPagesCmd.label "Bokmärke för alla flikar…">
 <!ENTITY showAllBookmarks2.label "Visa alla bokmärken">
 <!ENTITY recentBookmarks.label "Nyligen bokmärkt">
@@ -557,9 +625,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY reloadFrameCmd.label         "Uppdatera ram">
 <!ENTITY reloadFrameCmd.accesskey     "U">
 <!ENTITY viewPartialSourceForSelectionCmd.label "Visa källkoden för markering">
-<!ENTITY viewPartialSourceForMathMLCmd.label    "Visa MathML-källkod">
-<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both
-         viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label -->
 <!ENTITY viewPartialSourceCmd.accesskey "e">
 <!ENTITY viewPageSourceCmd.label      "Visa källkod">
 <!ENTITY viewPageSourceCmd.accesskey  "V">
@@ -776,7 +841,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      Remove Bookmark buttons. -->
 <!ENTITY editBookmark.panel.width                    "23em">
 <!ENTITY editBookmark.done.label                     "Klar">
-
 <!ENTITY editBookmark.showForNewBookmarks.label       "Öppna redigerare vid spara">
 <!ENTITY editBookmark.showForNewBookmarks.accesskey   "p">
 
@@ -784,6 +848,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      This is the header of the security subview in the Site Identity panel. -->
 <!ENTITY identity.securityView.label "Webbplatssäkerhet">
 
+<!ENTITY identity.connection "Anslutning">
 <!ENTITY identity.connectionSecure "Säker anslutning">
 <!ENTITY identity.connectionNotSecure "Anslutningen är inte säker ">
 <!ENTITY identity.connectionFile "Den här sidan är lagrad på din dator.">
@@ -926,9 +991,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.audioCapture.label "Ljud från denna fliken kommer att delas.">
 <!ENTITY getUserMedia.allWindowsShared.message "Alla synliga fönster på din skärm kommer att delas.">
 
-<!ENTITY trackingProtection.on "Spårningsskydd: PÅ">
-<!ENTITY trackingProtection.off "Spårningsskydd: AV">
-
 <!ENTITY contentBlocking.title "Innehållsblockering">
 <!ENTITY contentBlocking.detected "Blockerbart innehåll har upptäckts på den här webbplatsen.">
 <!ENTITY contentBlocking.notDetected "Inget blockerbart innehåll upptäckt på den här sidan.">
@@ -943,6 +1005,11 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      a positive thing. It forms the end of the (imaginary) sentence
      "Slow-Loading Trackers [are] Blocked"-->
 <!ENTITY contentBlocking.fastBlock.blocked.label "Blockerad">
+<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.blocking.label):
+     This label signals that this type of content blocking is turned
+     ON, so this is a positive thing. It forms the verb in (imaginary) sentence
+     "Firefox is blocking Slow-Loading Trackers"-->
+<!ENTITY contentBlocking.fastBlock.blocking.label "Blockerar">
 <!-- LOCALIZATION NOTE (contentBlocking.fastBlock.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
@@ -950,12 +1017,25 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.fastBlock.add.label "Lägg till blockering…">
 
 <!ENTITY contentBlocking.trackingProtection2.label "Alla upptäckta trackers">
+
+<!ENTITY contentBlocking.trackingProtection3.label "Trackers">
+<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.allowed.label):
+     This label signals that this type of content blocking is turned
+     OFF and is not blocking tracker content, so this is not
+     a positive thing. It forms the end of the (imaginary) sentence
+     "Trackers [are] Allowed"-->
+<!ENTITY contentBlocking.trackingProtection.allowed.label "Tillåten">
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
      This label signals that this type of content blocking is turned
      ON and is successfully blocking tracker content, so this is
      a positive thing. It forms the end of the (imaginary) sentence
      "Trackers [are] Blocked"-->
 <!ENTITY contentBlocking.trackingProtection.blocked.label "Blockerad">
+<!-- LOCALIZATION NOTE (contentBlocking.tranckingProtection.blocking.label):
+     This label signals that this type of content blocking is turned
+     ON, so this is a positive thing. It forms the verb in the (imaginary) sentence
+     "Firefox is blocking Trackers"-->
+<!ENTITY contentBlocking.trackingProtection.blocking.label "Blockerar">
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
@@ -963,17 +1043,29 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection.add.label "Lägg till blockering…">
 
 <!ENTITY contentBlocking.3rdPartyCookies.label "Kakor från tredje part">
+<!ENTITY contentBlocking.3rdPartyCookies.trackers.label "Spårningskakor">
 <!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.blocked.label):
      This label signals that this type of content blocking is turned
      ON and is successfully blocking third-party cookies, so this is
      a positive thing. It forms the end of the (imaginary) sentence
      "Third-Party Cookies [are] Blocked"-->
 <!ENTITY contentBlocking.3rdPartyCookies.blocked.label "Blockerad">
+<!-- LOCALIZATION NOTE (contentBlocking.tranckingProtection.blocking.label):
+     This label signals that this type of content blocking is turned
+     ON, so this is a positive thing. It forms the verb in the (imaginary) sentence
+     "Firefox is blocking Third-Party Cookies"-->
+<!ENTITY contentBlocking.3rdPartyCookies.blocking.label "Blockerar">
 <!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
      the type of content blocking is currently not enabled. -->
 <!ENTITY contentBlocking.3rdPartyCookies.add.label "Lägg till blockering…">
+
+<!ENTITY contentBlocking.manageSettings.label "Hantera innehållsblockering">
+<!ENTITY contentBlocking.manageSettings.accesskey "H">
+
+<!ENTITY contentBlocking.trackersView.label "Trackers">
+<!ENTITY contentBlocking.trackersView.strictInfo.label "För att blockera alla trackers, sätt innehållsblockering till “Strikt”.">
 
 <!ENTITY contentBlocking.openBreakageReportView2.label "Rapportera ett problem">
 <!ENTITY contentBlocking.breakageReportView.label "Rapportera problem">
@@ -986,32 +1078,32 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY trackingProtection.title "Spårningsskydd">
 <!ENTITY trackingProtection.tooltip "Öppna spårningsskydds inställningar">
-<!ENTITY trackingProtection.detectedBlocked4 "&brandShortName; blockerar delar av denna sida som kan spåra din surfning.">
-<!ENTITY trackingProtection.detectedNotBlocked5 "&brandShortName; har upptäckt komponenter som vill spåra din surfning.">
-<!ENTITY trackingProtection.detectedException "&brandShortName; har upptäckt komponenter som vill spåra din surfning. Du har inaktiverat skyddet på denna webbplats.">
-<!ENTITY trackingProtection.notDetected5 "Inga spårningskomponenter upptäckta på den här sidan.">
-<!ENTITY trackingProtection.notDetectedException "Inga spårningskomponenter upptäckta på den här sidan. Du har inaktiverat skyddet för denna webbplats.">
-
-<!ENTITY trackingProtection.reloadRequired2 "Du har aktiverat Spårningsskydd. Ladda om sidan för att blockera all spårning.">
 
 <!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in NON-private browsing mode. -->
-<!ENTITY trackingProtection.unblock3.label "Inaktivera för den här sidan">
-<!ENTITY trackingProtection.unblock3.accesskey "I">
 <!ENTITY trackingProtection.unblock4.label "Inaktivera blockering för denna webbplats">
 <!ENTITY trackingProtection.unblock4.accesskey "b">
 <!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in PRIVATE browsing mode. -->
-<!ENTITY trackingProtection.unblockPrivate3.label "Inaktivera för den här sessionen">
-<!ENTITY trackingProtection.unblockPrivate3.accesskey "I">
-<!ENTITY trackingProtection.block4.label "Aktivera för den här sidan">
-<!ENTITY trackingProtection.block4.accesskey "A">
 <!ENTITY trackingProtection.unblockPrivate4.label "Inaktivera blockering tillfälligt">
 <!ENTITY trackingProtection.unblockPrivate4.accesskey "t">
 <!ENTITY trackingProtection.block5.label "Aktivera blockering för denna webbplats">
 <!ENTITY trackingProtection.block5.accesskey "A">
+
+<!-- LOCALIZATION NOTE (trackingProtection.unblock5.label, trackingProtection.unblock5.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in NON-private browsing mode. -->
+<!ENTITY trackingProtection.unblock5.label "Stäng av blockeringen för den här webbplatsen">
+<!ENTITY trackingProtection.unblock5.accesskey "S">
+<!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate6.label, trackingProtection.unblockPrivate6.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in PRIVATE browsing mode. -->
+<!ENTITY trackingProtection.unblockPrivate5.label "Stäng av blockering tillfälligt">
+<!ENTITY trackingProtection.unblockPrivate5.accesskey "S">
+<!ENTITY trackingProtection.block6.label "Slå på blockering för den här webbplatsen">
+<!ENTITY trackingProtection.block6.accesskey "S">
 <!ENTITY trackingProtection.reload2.label "Ladda om sida">
 <!ENTITY trackingProtection.reload2.accesskey "L">
 
@@ -1117,7 +1209,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY sendToDevice.syncNotReady.label "Synkar enheter…">
 
 <!ENTITY pageAction.shareUrl.label "Dela">
-
 <!ENTITY pageAction.shareMore.label "Mer…">
 
 <!ENTITY libraryButton.tooltip "Visa historik, sparade bokmärken och mer">

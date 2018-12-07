@@ -9,6 +9,10 @@ cfr-doorhanger-extension-cancel-button = Wonaa jooni
     .accesskey = N
 cfr-doorhanger-extension-ok-button = Ɓeydu jooni
     .accesskey = A
+cfr-doorhanger-extension-manage-settings-button = Toppito teelte baggingol
+    .accesskey = M
+cfr-doorhanger-extension-never-show-recommendation = Hoto hollu am ndee wagginoore
+    .accesskey = S
 cfr-doorhanger-extension-learn-more-link = Jokku taro
 # This string is used on a new line below the add-on name
 # Variables:
@@ -22,3 +26,18 @@ cfr-doorhanger-extension-notification = Wasiya
 ## These strings are used to display the total number of
 ## users and rating for an add-on. They are shown next to each other.
 
+# Variables:
+#   $total (Number) - The rating of the add-on from 1 to 5
+cfr-doorhanger-extension-rating =
+    .tooltiptext =
+        { $total ->
+            [one] { $total } hoodere
+           *[other] { $total } koode
+        }
+# Variables:
+#   $total (Number) - The total number of users using the add-on
+cfr-doorhanger-extension-total-users =
+    { $total ->
+        [one] { $total } kuutoro
+       *[other] { $total } huutorɓe
+    }

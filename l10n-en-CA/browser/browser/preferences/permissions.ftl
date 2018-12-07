@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = Block
 permissions-capabilities-prompt =
     .label = Always Ask
+permissions-capabilities-listitem-allow =
+    .value = Allow
+permissions-capabilities-listitem-block =
+    .value = Block
+permissions-capabilities-listitem-allow-first-party =
+    .value = Allow first party only
+permissions-capabilities-listitem-allow-session =
+    .value = Allow for Session
 
 ## Invalid Hostname Dialog
 
@@ -54,6 +62,10 @@ permissions-exceptions-tracking-protection-window =
     .title = Exceptions - Tracking Protection
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = You have disabled Tracking Protection on these websites.
+permissions-exceptions-content-blocking-window =
+    .title = Exceptions - Content Blocking
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = You have disabled content blocking on these websites.
 
 ## Exceptions - Cookies
 
@@ -85,10 +97,6 @@ permissions-exceptions-addons-desc = You can specify which websites are allowed 
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = Allowed Websites - Autoplay
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = You can specify which websites are allowed to automatically play media elements. Type the exact address of the site you want to allow and then click Allow.
 permissions-exceptions-autoplay-media-window2 =
     .title = Exceptions - Autoplay
     .style = { permissions-window.style }

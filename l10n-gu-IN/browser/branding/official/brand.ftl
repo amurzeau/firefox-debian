@@ -15,3 +15,6 @@
 
 -brand-short-name = Firefox
 -vendor-short-name = Mozilla
+-brand-full-name = Mozilla Firefox
+-brand-shorter-name = Firefox
+trademarkInfo = Firefox અને Firefox લોગો Mozilla ફાઉન્ડેશનના ટ્રેડમાર્ક્સ છે.

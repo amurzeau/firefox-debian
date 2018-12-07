@@ -67,3 +67,19 @@ connection-proxy-autologin =
 connection-proxy-socks-remote-dns =
     .label = Proxy DNS so SOCKS v5 huutoraama
     .accesskey = d
+connection-dns-over-https =
+    .label = Hurmitin DS dow TTPS
+    .accesskey = b
+connection-dns-over-https-url = URL
+    .accesskey = U
+    .tooltiptext = URL ngam Jiɓtude DNS dow HTTPS
+# Variables:
+#   $url (String) - URL for the DNS over HTTPS provider
+connection-dns-over-https-url-default =
+    .label = Huutoro no ardi nii ({ $url })
+    .accesskey = U
+    .tooltiptext = Huutoro URL gardaaɗo ngam firde DNS to HTTPS
+connection-dns-over-https-url-custom =
+    .label = Neɗɗinaa
+    .accesskey = N
+    .tooltiptext = Naatnu URL maa cuɓaaɗo ngam firde DNS to HTTPS

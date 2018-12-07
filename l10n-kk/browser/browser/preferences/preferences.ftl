@@ -53,6 +53,7 @@ pane-sync-title = Firefox тіркелгісі
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } қолдауы
+addons-button-label = Кеңейтулер және темалар
 focus-search =
     .key = f
 close-button =
@@ -83,6 +84,9 @@ extension-controlled-homepage-override = <img data-l10n-name="icon"/> { $name } 
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = <img data-l10n-name="icon"/> { $name } кеңейтуі Жаңа бетті басқарып тұр.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = <img data-l10n-name="icon"/> { $name } кеңейтуі бұл параметрді басқарады.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = <img data-l10n-name="icon"/> { $name } кеңейтуі сіздің негізгі іздеу жүйеңізді орнатты.
@@ -149,6 +153,9 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = Бірнеше беттер бірге жабылған кезде ескерту
     .accesskey = с
+warn-on-quit-close-multiple-tabs =
+    .label = Жұмысты аяқтау кезінде бірнеше бет бірге жабылған кезде ескерту
+    .accesskey = ш
 warn-on-open-many-tabs =
     .label = Беттердің көп санын ашу әрекеті { -brand-short-name } жұмысын тежей алатын кезде ескерту
     .accesskey = т
@@ -284,6 +291,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = Іздеу жүйелерін автожаңарту
     .accesskey = а
+update-pref-write-failure-title = Жазу қатесі
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = Баптауды сақтау мүмкін емес. Файлға жазу қатесі: { $path }
 
 ## General Section - Performance
 
@@ -323,10 +334,13 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Мәтін терілген кезде оны парақтан іздей бастау
     .accesskey = т
+browsing-cfr-recommendations =
+    .label = Шолу кезінде кеңейтулерді ұсыну
+    .accesskey = с
+browsing-cfr-recommendations-learn-more = Көбірек білу
 
 ## General Section - Proxy
 
-network-proxy-title = Желілік прокси
 network-settings-title = Желі баптаулары
 network-proxy-connection-description = { -brand-short-name } интернетпен қалай байланысатынын баптау
 network-proxy-connection-learn-more = Көбірек білу
@@ -525,6 +539,7 @@ privacy-header = Браузер жекелігі
 ## Privacy Section - Forms
 
 forms-header = Формалар және парольдер
+logins-header = Логиндер және парольдер
 forms-ask-to-save-logins =
     .label = Веб-сайттар үшін логиндер мен парольдерді сақтауды сұрау
     .accesskey = с
@@ -591,26 +606,15 @@ sitedata-total-size-calculating = Сайттар деректері және к�
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Сізде сақталған cookies файлдары, сайт деректері және кэш қазір { $value } { $unit } диск орнын қолдануда.
 sitedata-learn-more = Көбірек білу
-sitedata-accept-cookies-option =
-    .label = Веб-сайттардан cookies файлдарын және сайттар деректерін қабылдау (ұсынылады)
-    .accesskey = а
-sitedata-block-cookies-option =
-    .label = Cookies файлдарын және сайттар деректерін тайдыру (веб-сайттар сынуы мүмкін)
-    .accesskey = й
 sitedata-keep-until = Дейін сақтау
     .accesskey = н
 sitedata-keep-until-expire =
     .label = олардың мерзімі аяқталады
 sitedata-keep-until-closed =
     .label = { -brand-short-name } жабылған
-sitedata-accept-third-party-desc = Үшінші жақты cookies файлдары және сайт деректерін қабылдау
+sitedata-delete-on-close =
+    .label = { -brand-short-name } жабылған кезде cookies және сайттар деректерін өшіру
     .accesskey = ш
-sitedata-accept-third-party-always-option =
-    .label = Әрқашан
-sitedata-accept-third-party-visited-option =
-    .label = Мен болған жерден ғана
-sitedata-accept-third-party-never-option =
-    .label = Ешқашан
 sitedata-allow-cookies-option =
     .label = Cookies және сайт деректерін қабылдау
     .accesskey = а
@@ -644,6 +648,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = Сіздің Құраманы бұғаттау ішіндегі баптаулар Cookies файлдары және Сайт деректеріне өзгерістерді енгізуге жол бермей тұр.
+sitedata-cookies-permissions =
+    .label = Рұқсаттарды басқару…
+    .accesskey = р
 
 ## Privacy Section - Address Bar
 
@@ -664,6 +671,7 @@ addressbar-suggestions-settings = Іздеу жүйесінің ұсыныста
 
 content-blocking-header = Құраманы бұғаттау
 content-blocking-desc = Жарнама немесе шолуды тежей алатын, сізді интернетте бақылай алатын код сияқты үшінші жақты құраманы бұғаттау. Қорғаныс және өнімділіктің ең жақсы теңгерімі үшін баптауларды түзетіңіз.
+content-blocking-description = Интернетте сізді бақылайтын үшінші жақты құраманы бұғаттау. Желілік белсенділігіңіздің қай бөлігі сақталатынын және веб-сайттармен бөлісетінін басқарыңыз.
 content-blocking-learn-more = Көбірек білу
 content-blocking-restore-defaults =
     .label = Бастапқы мәндерін қайтару
@@ -684,6 +692,28 @@ content-blocking-fastblock-slow-loading-trackers-label =
     .label = Баяу жүктелетін трекерлер
     .accesskey = ж
 content-blocking-fastblock-new-description = Тек беттердің жылдам жүктелуіне жол бермейтін трекерлерді бұғаттау.
+content-blocking-setting-standard =
+    .label = Қалыпты
+    .accesskey = п
+content-blocking-setting-strict =
+    .label = Қатаң
+    .accesskey = т
+content-blocking-setting-custom =
+    .label = Таңдауыңызша
+    .accesskey = ы
+content-blocking-standard-desc = Қорғаныс және өнімділік үшін теңдестірілген. Веб-сайттар дұрыс жұмыс істеу мақсатында кейбір трекерлерді рұқсат етеді.
+content-blocking-strict-desc = { -brand-short-name } анықтайтын барлық трекерлерді бұғаттау. Кейбір сайттар жұмысы бұзылуы мүмкін.
+content-blocking-custom-desc = Нені бұғаттауды таңдаңыз
+content-blocking-private-trackers = Жекелік терезелерінде барлық белгілі трекерлер
+content-blocking-third-party-cookies = Үшінші жақты бақылайтын cookies
+content-blocking-all-windows-trackers = Барлық терезелердегі белгілі трекерлер
+content-blocking-all-third-party-cookies = Барлық үшінші жақты cookies
+content-blocking-warning-title = Ескерту!
+content-blocking-warning-desc = Cookies файлдарын және трекерлерді бұғаттау кейбір веб-сайттар жұмысын бұзуы мүмкін. Өзіңіз сенетін сайттар үшін бұғаттауды сөндіру оңай.
+content-blocking-learn-how = Көбірек білу
+content-blocking-tracking-protection-trackers-label =
+    .label = Трекерлер
+    .accesskey = Т
 content-blocking-tracking-protection-all-detected-trackers-label =
     .label = Барлық анықталған трекерлер
     .accesskey = т
@@ -716,6 +746,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = Барлық үшінші жақты cookies (веб-сайтта сынуы мүмкін)
     .accesskey = а
+content-blocking-cookies-label =
+    .label = Cookies
+    .accesskey = C
 
 ## Privacy Section - Tracking
 
@@ -731,16 +764,15 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Ешқашан
     .accesskey = н
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Жекелік шолуда белгілі трекерлерді блоктау үшін Бақылаудан қорғанысты қолдану
-    .accesskey = Ж
 tracking-exceptions =
     .label = Ережелерден бөлек…
     .accesskey = Е
 tracking-change-block-list =
     .label = Блоктізімді өзгерту…
     .accesskey = г
+tracking-manage-exceptions =
+    .label = Ережеден тыс жағдайларды басқару…
+    .accesskey = ж
 
 ## Privacy Section - Permissions
 
@@ -857,3 +889,36 @@ certs-view =
 certs-devices =
     .label = Қауіпсіздік құрылғылары…
     .accesskey = ы
+space-alert-learn-more-button =
+    .label = Көбірек білу
+    .accesskey = л
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Баптауларды ашу
+           *[other] Баптауларды ашу
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] ш
+           *[other] ш
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } үшін бос орын аяқталуда. Вебсайттар құрамасы дұрыс көрсетілмеуі мүмкін. Сіз сайттардың сақталған деректерін Баптаулар > Жекелік және қауіпсіздік > Cookies файлдары және сайттар деректері ішінде өшіре аласыз.
+       *[other] { -brand-short-name } үшін бос орын аяқталуда. Вебсайттар құрамасы дұрыс көрсетілмеуі мүмкін. Сіз сайттардың сақталған деректерін Баптаулар > Жекелік және қауіпсіздік > Cookies файлдары және сайттар деректері ішінде өшіре аласыз.
+    }
+space-alert-under-5gb-ok-button =
+    .label = ОК, түсіндім
+    .accesskey = О
+space-alert-under-5gb-message = { -brand-short-name } үшін бос орын аяқталуда. Вебсайттар құрамасы дұрыс көрсетілмеуі мүмкін. "Көбірек білу" сілтемесін ашып, интернетті ыңғайлы шолу үшін диск қолданылуын қалай баптау керек екенін білуіңізге болады.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Жұмыс үстелі
+downloads-folder-name = Жүктемелер
+choose-download-folder-title = Жүктемелер сақталатын буманы таңдаңыз:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Файлдарды { $service-name } қызметіне сақтау

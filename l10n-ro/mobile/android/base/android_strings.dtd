@@ -7,7 +7,7 @@
 <!ENTITY firstrun_urlbar_subtext2 "Un browser modern mobil de la Mozilla, organizația nonprofit dedicată unui web liber și deschis.">
 <!ENTITY firstrun_panel_title_privacy "Confidențialitate">
 <!ENTITY firstrun_privacy_message "Navighează fără grija de a fi urmărit">
-<!ENTITY firstrun_privacy_subtext "Navigarea privată cu protecție împotriva urmăririi blochează urmăritorii și nu va ține minte istoricul tău când închei navigarea.">
+<!ENTITY firstrun_privacy_subtext "Navigarea privată cu protecție împotriva urmăririi blochează elementele de urmărire și nu va ține minte istoricul tău când închei navigarea.">
 <!ENTITY firstrun_panel_title_customize "Personalizare">
 <!ENTITY firstrun_customize_message "Creează-ți propria experiență în &brandShortName;.">
 <!ENTITY firstrun_customize_subtext "Personalizează &brandShortName; cu suplimente. Blochează reclamele, adaugă caracteristici sau alege o temă nouă care să îți reflecteze personalitatea.">
@@ -19,7 +19,7 @@
 <!ENTITY firstrun_data_subtext2 "Oprește imaginile pentru a consuma mai puțin trafic de date pe fiecare site pe care îl vizitezi.">
 <!ENTITY firstrun_sync_title "Sincronizare">
 <!ENTITY firstrun_sync_message2 "Continuă de unde ai rămas.">
-<!ENTITY firstrun_sync_subtext2 "Folosește Sync pentru a găsi pe toate dispozitivele tale marcajele, parolele şi celelalte lucruri pe care le salvezi în &brandShortName;.">
+<!ENTITY firstrun_sync_subtext2 "Folosește Sync pentru a găsi pe toate dispozitivele tale marcajele, parolele și celelalte lucruri pe care le salvezi în &brandShortName;.">
 <!ENTITY firstrun_signin_message "Conectează-te și începe">
 <!ENTITY firstrun_signin_button "Autentifică-te la Sync">
 <!ENTITY  onboard_start_button_browser "Începe navigarea">
@@ -30,7 +30,7 @@
 
 <!ENTITY firstrun_readerview_title "Articole">
 <!-- Localization note (firstrun_readerview_message): This is a casual way of describing getting rid of unnecessary things, and is referring to simplifying websites so only the article text and images are visible, removing unnecessary headers or ads. -->
-<!ENTITY firstrun_readerview_message "Scapă de îngrămădeală">
+<!ENTITY firstrun_readerview_message "Scapă de dezordine">
 <!ENTITY firstrun_readerview_subtext "Folosește modul lectură pentru a face citirea articolelor mai plăcută \u2014 chiar și offline.">
 
 <!-- Localization note (firstrun_devices_title): This is a casual way of addressing the user, somewhat referring to their online identity (which would include other devices, Firefox usage, accounts, etc). -->
@@ -165,14 +165,14 @@
      "to bookmark", not the noun "a bookmark". -->
 <!ENTITY overlay_share_bookmark_btn_label "Marchează">
 <!ENTITY overlay_share_bookmark_btn_label_already "Marcat deja">
-<!ENTITY overlay_share_send_other "Trimite către alte dispozitive">
+<!ENTITY overlay_share_send_other "Trimite altor dispozitive">
 
 <!ENTITY overlay_share_open_browser_btn_label "Deschide în &brandShortName;">
 <!-- Localization note (overlay_share_send_tab_btn_label) : Used on the
      share overlay menu to represent the "Send Tab" action when the user
      either has not set up Sync, or has no other devices to send a tab
      to. -->
-<!ENTITY overlay_share_send_tab_btn_label "Trimite către un alt dispozitiv">
+<!ENTITY overlay_share_send_tab_btn_label "Trimite unui alt dispozitiv">
 <!ENTITY overlay_share_no_url "Niciun link nu a fost găsit în această partajare">
 <!ENTITY overlay_share_select_device "Selectează un dispozitiv">
 <!-- Localization note (overlay_no_synced_devices) : Used when the menu option
@@ -212,7 +212,7 @@
 <!ENTITY pref_developer_remotedebugging_usb "Depanare de la distanță via USB">
 <!ENTITY pref_developer_remotedebugging_wifi "Depanare de la distanță via Wi-Fi">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Depanarea via Wi-Fi necesită ca dispozitivul să aibă o aplicație care scanează coduri QR.">
-<!ENTITY pref_remember_signons2 "Reține autentificările">
+<!ENTITY pref_remember_signons2 "Ține minte autentificările">
 <!ENTITY pref_manage_logins "Gestionează autentificările">
 
 <!ENTITY pref_category_home "Pagină de start">
@@ -225,7 +225,7 @@
 <!ENTITY pref_category_home_homepage "Pagină de start">
 <!-- Localization note (home_homepage_every_new_tab): The user will see a switch to determine if the
      home page will be use in every new tab. -->
-<!ENTITY home_homepage_every_new_tab "Folosește și pentru filele noi">
+<!ENTITY home_homepage_every_new_tab "Folosește-o și pentru filele noi">
 <!ENTITY home_homepage_title "Setează o pagină de start">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
@@ -235,7 +235,7 @@
      buttons to choose the homepage they'd like to start on. When they click the radio
      button for this string, a text field will appear below the radio button and allow the
      user to insert an address of their choice. -->
-<!ENTITY home_homepage_radio_user_address "Pagină personalizată">
+<!ENTITY home_homepage_radio_user_address "Personalizată">
 <!-- Localization note (home_homepage_hint_user_address): The user will see a series of
      radio buttons to choose the homepage they'd like to start on. When they click a
      particular radio button, a text field will appear below the radio button and allow the
@@ -291,6 +291,18 @@
      Similar to the already existing "pref_whats_new_notification_summary"-->
 <!ENTITY pref_feature_tips_notification_summary "Află mai multe despre folosirea &brandShortName; și alte produse &vendorShortName;">
 
+<!-- Localization note (pref_feature_tips_notification_enabling_hint):
+     Describe the action the user should do to enable this preference
+     Will be used in the context "<Turn on> ... to enable this feature" -->
+<!ENTITY pref_feature_tips_notification_enabling_hint "Activează">
+
+<!-- Localization note (pref_feature_tips_notification_enabling_path):
+     Nothing to translate. Simple concatenation of already localized strings. Result is used below. -->
+<!ENTITY pref_feature_tips_notification_enabling_path "&pref_category_privacy_short; > &pref_category_datareporting; > &datareporting_fhr_title;">
+<!-- Localization note (pref_feature_tips_notification_enabling_hint):
+     Describe the action the user should do to enable this preference. -->
+<!ENTITY pref_feature_tips_notification_enabling_hint2 "(Pentru a activa această opțiune, &pref_feature_tips_notification_enabling_path; trebuie să fie deja activată.)">
+
 <!-- Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
      for experimental features. -->
 <!ENTITY pref_category_experimental "Funcționalități experimentale">
@@ -308,7 +320,7 @@
 <!-- Long-click title of CustomTabsActivity will copy URL to clipboard and display this hint -->
 <!ENTITY custom_tabs_hint_url_copy "URL copiat">
 
-<!ENTITY pref_pwa "Aplicaţii web progresive">
+<!ENTITY pref_pwa "Aplicații web progresive">
 <!ENTITY pref_pwa_summary "Permite aplicațiilor web să fie adăugate în ecranul principal">
 
 <!ENTITY tracking_protection_prompt_title "Acum cu protecție împotriva urmăririi">
@@ -351,7 +363,7 @@
      The action is shown below a header saying "Clear private data"; See pref_clear_private_data -->
 <!ENTITY pref_clear_private_data_now_tablet "Șterge acum">
 <!ENTITY pref_clear_on_exit_title3 "Șterge datele private la ieșire">
-<!ENTITY pref_clear_on_exit_summary2 "&brandShortName; va șterge automat datele de fiecare dată când selectezi \u201EIeși\u201D din meniul principal">
+<!ENTITY pref_clear_on_exit_summary2 "&brandShortName; va șterge automat datele de fiecare dată când selectezi „Ieși” din meniul principal">
 <!ENTITY pref_clear_on_exit_dialog_title "Selectează ce date să ștergi">
 <!ENTITY pref_restore_tabs "Restaurează filele">
 <!ENTITY pref_restore_always "Restaurează întotdeauna">
@@ -363,7 +375,6 @@
 <!ENTITY pref_use_system_font_size_summary "Scalează conținutul web în funcție de mărimea fontului sistemului">
 
 <!ENTITY pref_media_autoplay_enabled "Permite redarea automată">
-<!ENTITY pref_media_autoplay_enabled_summary "Controlează dacă site-urile web pot rula automat videoclipuri și alt conținut media">
 <!ENTITY pref_media_autoplay_allow "Permite redarea automată">
 <!ENTITY pref_media_autoplay_block "Blochează redarea automată">
 <!ENTITY pref_zoom_force_enabled "Activează întotdeauna zoomul">
@@ -404,7 +415,7 @@
 <!ENTITY pref_dialog_set_default "Setează ca implicit">
 <!ENTITY pref_dialog_default "Implicit">
 <!ENTITY pref_dialog_remove "Elimină">
-<!ENTITY pref_dialog_activitystream_header_content "Conţinut adițional">
+<!ENTITY pref_dialog_activitystream_header_content "Conținut adițional">
 <!ENTITY pref_dialog_activitystream_recentBookmarks "Marcaje recente">
 <!ENTITY pref_dialog_activitystream_visited "Vizitate">
 
@@ -828,9 +839,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- LOCALIZATION NOTE(corrupt_apk): This notification is shown if corruption has been detected on startup and the user has to reinstall Firefox -->
 <!ENTITY corrupt_apk "Nu se poate deschide &brandShortName;. Te rugăm să reinstalezi programul și să încerci din nou.">
 
-<!ENTITY eol_notification_title2 "&brandShortName; nu se va mai actualiza">
-<!ENTITY eol_notification_summary "Atinge pentru a afla mai multe">
-
 <!-- LOCALIZATION NOTE (whatsnew_notification_title, whatsnew_notification_summary): These strings
      are used for a system notification that's shown to users after the app updates. -->
 <!ENTITY whatsnew_notification_title "&brandShortName; este actualizat">
@@ -863,7 +871,7 @@ Stream list for highlights sourced from th user's bookmarks. -->
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_trending): This label is shown in the Activity Stream list for highlights sourced from a recommendations engine. -->
 <!ENTITY activity_stream_highlight_label_trending "În tendințe">
 <!-- LOCALIZATION NOTE (activity_stream_highlights_empty): This text is shown when we could not find highlights for this user. This is also shown on first run. -->
-<!ENTITY activity_stream_highlights_empty "Începe navigarea şi îţi vom arăta câteva articole, videoclipuri nemaipomenite şi alte pagini pe care le-ai vizitat recent sau au fost marcate aici.">
+<!ENTITY activity_stream_highlights_empty "Începe navigarea și îți vom arăta câteva articole, videoclipuri nemaipomenite și alte pagini pe care le-ai vizitat recent sau au fost marcate aici.">
 
 <!-- LOCALIZATION NOTE (activity_stream_remove): This label is shown in the Activity Stream context menu,
 and allows hiding a URL/page from highlights or topsites. The page remains in history/bookmarks, but
@@ -897,10 +905,19 @@ Picture-in-picture mini window -->
 
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel "&brandShortName;">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel2 "Browser">
 <!ENTITY mls_notification_channel "Serviciu de localizare &vendorShortName;">
 <!ENTITY download_notification_channel "Descărcări">
 <!ENTITY media_notification_channel "Redare media">
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
 <!ENTITY leanplum_default_notifications_channel "Notificări push &brandShortName;">
+<!ENTITY media_notification_channel2 "Sunet și video">
+<!-- These push notifications come without a specific channel and/or name from Leanplum -->
+<!ENTITY leanplum_default_notifications_channel2 "Ponturi și trucuri &vendorShortName;">
 <!ENTITY updater_notification_channel "Actualizări aplicație">
 <!ENTITY synced_tabs_notification_channel "File sincronizate">
+<!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
+web sites through the HTML Notifications API. -->
+<!ENTITY site_notifications_channel "Notificări site">

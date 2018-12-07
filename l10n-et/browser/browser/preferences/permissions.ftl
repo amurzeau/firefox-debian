@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = Blokitud
 permissions-capabilities-prompt =
     .label = Alati küsitakse
+permissions-capabilities-listitem-allow =
+    .value = Lubatud
+permissions-capabilities-listitem-block =
+    .value = Blokitud
+permissions-capabilities-listitem-allow-first-party =
+    .value = Lubatud sama domeeni piires
+permissions-capabilities-listitem-allow-session =
+    .value = Lubatud seansi jooksul
 
 ## Invalid Hostname Dialog
 
@@ -54,6 +62,10 @@ permissions-exceptions-tracking-protection-window =
     .title = Erandid - jälitamisvastane kaitse
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = Jälitamisvastane kaitse on järgnevatel saitidel keelatud.
+permissions-exceptions-content-blocking-window =
+    .title = Erandid - sisu blokkimine
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = Sisu blokkimine on järgnevatel saitidel keelatud.
 
 ## Exceptions - Cookies
 
@@ -85,10 +97,6 @@ permissions-exceptions-addons-desc = Sa võid määrata, millistel veebilehtedel
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = Lubatud saidid - automaatne esitamine
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = Sa võid määrata, millistel saitidel on lubatud meediaelemente automaatselt esitada. Sisesta vastava saidi täpne aadress ning klõpsa Luba.
 permissions-exceptions-autoplay-media-window2 =
     .title = Erandid - automaatne esitamine
     .style = { permissions-window.style }

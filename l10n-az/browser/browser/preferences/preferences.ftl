@@ -53,6 +53,7 @@ pane-sync-title = Firefox Hesabı
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } Dəstək
+addons-button-label = Uzantılar və Mövzular
 focus-search =
     .key = f
 close-button =
@@ -83,6 +84,9 @@ extension-controlled-homepage-override = Uzantı, <img data-l10n-name="icon"/> {
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Uzantı, <img data-l10n-name="icon"/> { $name }, Yeni Vərəq səhifənizi idarə edir.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = <img data-l10n-name="icon"/> { $name } adlı uzantı bu tənzimləməni idarə edir.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = <img data-l10n-name="icon"/> { $name } uzantısı əsas axtarış mühərriyinizi dəyişdirdi.
@@ -148,6 +152,9 @@ open-new-link-as-tabs =
     .accesskey = w
 warn-on-close-multiple-tabs =
     .label = Birdən çox vərəq bağlarkən xəbərdar olun
+    .accesskey = m
+warn-on-quit-close-multiple-tabs =
+    .label = Birdən çox vərəq qapatarkən və çıxarkən xəbərdar olun
     .accesskey = m
 warn-on-open-many-tabs =
     .label = Çoxlu vərəq açmağın { -brand-short-name } səyyahını yavaşlada biləcəyindən xəbərdar olun
@@ -284,6 +291,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = Axtarış mühərriklərini avtomatik yenilə
     .accesskey = e
+update-pref-write-failure-title = Yazma Xətası
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = Nizamlamalar saxlana bilmir. Bu fayla yazmaq mümkün deyil: { $path }
 
 ## General Section - Performance
 
@@ -323,10 +334,13 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Yazmağa başladığınız zaman söz axtarılsın
     .accesskey = x
+browsing-cfr-recommendations =
+    .label = Gəzərkən uzantıları məsləhət gör
+    .accesskey = R
+browsing-cfr-recommendations-learn-more = Ətraflı Öyrən
 
 ## General Section - Proxy
 
-network-proxy-title = Şəbəkə Proksisi
 network-settings-title = Şəbəkə Tənzimləmələri
 network-proxy-connection-description = { -brand-short-name } səyyahının internetə necə qoşulduğunu idarə et.
 network-proxy-connection-learn-more = Ətraflı öyrən
@@ -525,6 +539,7 @@ privacy-header = Səyahər Məxfiliyi
 ## Privacy Section - Forms
 
 forms-header = Formlar və Parollar
+logins-header = Hesablar və Parollar
 forms-ask-to-save-logins =
     .label = Daxil olma və parolları saxlamaq üçün soruş
     .accesskey = r
@@ -591,26 +606,15 @@ sitedata-total-size-calculating = Sayt məlumatları və keş ölçüsü hesabla
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Saxlanılan çərəz, sayt məlumatları və keşləriniz hazırda { $value } { $unit } disk işlədirlər.
 sitedata-learn-more = Ətraflı öyrən
-sitedata-accept-cookies-option =
-    .label = Saytların çərəz və sayt məlumatlarını qəbul et (məsləhət görülür)
-    .accesskey = A
-sitedata-block-cookies-option =
-    .label = Çərəz və sayt məlumatlarını əngəllə (bəzi saytlar işləməyə bilər)
-    .accesskey = B
 sitedata-keep-until = Saxlama limiti
     .accesskey = u
 sitedata-keep-until-expire =
     .label = Vaxtı bitənə qədər
 sitedata-keep-until-closed =
     .label = { -brand-short-name } qapatılana qədər
-sitedata-accept-third-party-desc = Üçüncü tərəf çərəz və sayt məlumatlarını qəbul et
-    .accesskey = y
-sitedata-accept-third-party-always-option =
-    .label = Həmişə
-sitedata-accept-third-party-visited-option =
-    .label = Baxılanlardan
-sitedata-accept-third-party-never-option =
-    .label = Heç vaxt
+sitedata-delete-on-close =
+    .label = { -brand-short-name } qapatıldığında çərəzləri və sayt məlumatlarını sil
+    .accesskey = c
 sitedata-allow-cookies-option =
     .label = Çərəz və sayt məlumatlarını qəbul et
     .accesskey = A
@@ -627,10 +631,6 @@ sitedata-block-trackers-option =
     .label = Üçüncü tərəf izləyicilər
 sitedata-block-unvisited-option =
     .label = Ziyarət edilməmiş saytlardan olan çərəzlər
-sitedata-block-all-third-parties-option =
-    .label = Bütün üçüncü tərəf çərəzlər
-sitedata-block-always-option =
-    .label = Bütün çərəzlər (saytlar səhv işləyə bilər)
 sitedata-block-all-third-party-option =
     .label = Bütün üçüncü-tərəf çərəzləri (bəzi saytlar səhv işləyə bilər)
 sitedata-block-all-option =
@@ -648,6 +648,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = Məzmun Əngəlləmə tənzimləmələriniz Çərəzlər və Sayt Məlumatları tənzimləmələrini dəyişdirməyə imkan vermirlər.
+sitedata-cookies-permissions =
+    .label = İcazələri idarə et…
+    .accesskey = P
 
 ## Privacy Section - Address Bar
 
@@ -668,6 +671,7 @@ addressbar-suggestions-settings = Axtarış mühərriyi təklifləri üçün niz
 
 content-blocking-header = Məzmun Əngəlləmə
 content-blocking-desc = Səyahətinizi yavaşladacaq və sizi internetdə izləyəcək reklam və kod kimi üçüncü tərəf məzmunları əngəllə. Tənzimləmələrinizi qoruma və məhsuldarlıq arasında ehtiyyacınıza görə tarazlaşdırın.
+content-blocking-description = Sizi internetdə izləyən üçüncü tərəf məzmunlarını əngəlləyin. Onlayn aktivliyinizin nə qədər saxlandığını və hansı saytlar arasında paylaşıldığını idarə edin.
 content-blocking-learn-more = Ətraflı Öyrən
 content-blocking-restore-defaults =
     .label = İlkin Seçənəkləri bərpa et
@@ -684,30 +688,32 @@ content-blocking-category-label = Nələrin əngəllənəcəyini seçin
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = İzləmə elementlərini göstər
-    .accesskey = S
-content-blocking-fastblock-description = Yüklənməyi 5 saniyədən çox çəkən üçüncü tərəf məzmunlarını əngəllə.
-content-blocking-fastblock-option-enabled =
-    .label = Həmişə əngəllə
-content-blocking-fastblock-option-disabled =
-    .label = Heç vaxt əngəlləmə
-content-blocking-tracking-protection-label = İzləyicilər
-    .accesskey = T
-content-blocking-tracking-protection-description = Bilinən bütün izləyiciləri əngəllə (Qeyd: bəzi səhifələrin yüklənməsinə mane ola bilər).
-content-blocking-tracking-protection-option-enabled =
-    .label = Həmişə əngəllə
-content-blocking-tracking-protection-option-pbm =
-    .label = Ancaq Məxfi Pəncərələrdə əngəllə
-content-blocking-tracking-protection-option-disabled =
-    .label = Heç vaxt əngəlləmə
-content-blocking-tracking-protection-change-blocklist = Qara Siyahını Dəyiş…
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
 content-blocking-fastblock-slow-loading-trackers-label =
     .label = Yavaş yüklənən izləyicilər
     .accesskey = S
 content-blocking-fastblock-new-description = Ancaq səhifənin tez yüklənməsini əngəlləyən izləyiciləri əngəllə.
+content-blocking-setting-standard =
+    .label = Standart
+    .accesskey = d
+content-blocking-setting-strict =
+    .label = Sərt
+    .accesskey = r
+content-blocking-setting-custom =
+    .label = Fərdi
+    .accesskey = C
+content-blocking-standard-desc = Qoruma və məhsuldarlıq arasında tarazlaşdırılıb. Saytların düzgün işləyə bilmələri üçün bəzi izləyicilərə icazə verir.
+content-blocking-strict-desc = { -brand-short-name } tərəfindən aşkarlanan bütün izləyiciləri əngəlləyir. Bəzi saytların düz işləməməsinə səbəb ola bilər.
+content-blocking-custom-desc = Nəyi əngəlləyəcəyini seçin.
+content-blocking-private-trackers = Ancaq Məxfi Pəncərələrdə bilinən izləyicilər
+content-blocking-third-party-cookies = Üçüncü tərəf izləmə çərəzləri
+content-blocking-all-windows-trackers = Bütün pəncərələrdə bilinən izləyicilər
+content-blocking-all-third-party-cookies = Bütün üçüncü tərəf çərəzləri
+content-blocking-warning-title = Diqqət!
+content-blocking-warning-desc = Çərəzləri və izləyiciləri əngəlləmə bəzi saytların düzgün işləməmələrinə səbəb ola bilər. Güvəndiyiniz saytlar üçün əngəlləməni söndürmək çox asandır.
+content-blocking-learn-how = Necə edəcəyinizi öyrənin
+content-blocking-tracking-protection-trackers-label =
+    .label = İzləyicilər
+    .accesskey = T
 content-blocking-tracking-protection-all-detected-trackers-label =
     .label = Bütün aşkarlanan izləyicilər
     .accesskey = T
@@ -740,6 +746,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = Bütün üçüncü-tərəf çərəzlər (bəzi saytlar düz işləməyə bilər)
     .accesskey = A
+content-blocking-cookies-label =
+    .label = Çərəzlər
+    .accesskey = C
 
 ## Privacy Section - Tracking
 
@@ -755,16 +764,15 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Heç vaxt
     .accesskey = v
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Bilinən izləyiciləri bloklamaq üçün Məxfi Səyahətdə İzlənmə Qorumasını işlədin
-    .accesskey = v
 tracking-exceptions =
     .label = İstisnalar…
     .accesskey = a
 tracking-change-block-list =
     .label = Qara Siyahını Dəyiş…
     .accesskey = C
+tracking-manage-exceptions =
+    .label = İstisnaları idarə et…
+    .accesskey = x
 
 ## Privacy Section - Permissions
 
@@ -881,3 +889,36 @@ certs-view =
 certs-devices =
     .label = Təhlükəsizlik cihazları…
     .accesskey = D
+space-alert-learn-more-button =
+    .label = Ətraflı öyrən
+    .accesskey = L
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Seçimləri aç
+           *[other] Nizamlamaları aç
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] O
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } səyyahının diskdə yaddaşı dolur. Sayt məzmunları səhv göstərilə bilər. Saxlanılmış məlumatları Seçimlər > Məxfilik və Təhlükəsizlik > Çərəzlər və Sayt Məlumatları bölümündə silə bilərsiz.
+       *[other] { -brand-short-name } səyyahının diskdə yaddaşı dolur. Sayt məzmunları səhv göstərilə bilər. Saxlanılmış məlumatları Nizamlamalar > Məxfilik və Təhlükəsizlik > Çərəzlər və Sayt Məlumatları bölümündə silə bilərsiz.
+    }
+space-alert-under-5gb-ok-button =
+    .label = Tamam, başa düşdüm
+    .accesskey = K
+space-alert-under-5gb-message = { -brand-short-name } səyyahının diskdə yaddaşı dolur. Sayt məzmunları səhv göstərilə bilər. Daha yaxşı internet səyahəti təcrübəsi üçün “Ətraflı Öyrən”-i ziyarət edərək disk istifadənizi optimallaşdıra bilərsiz.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = İşçi masası
+downloads-folder-name = Endirmələr
+choose-download-folder-title = Endirmə qovluğunu seçin:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Faylları { $service-name } xidmətində saxla

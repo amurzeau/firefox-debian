@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = Забраняване
 permissions-capabilities-prompt =
     .label = Винаги да пита
+permissions-capabilities-listitem-allow =
+    .value = Разрешаване
+permissions-capabilities-listitem-block =
+    .value = Забраняване
+permissions-capabilities-listitem-allow-first-party =
+    .value = Разрешаване само на оригиналната страница
+permissions-capabilities-listitem-allow-session =
+    .value = Разрешаване за сесията
 
 ## Invalid Hostname Dialog
 
@@ -54,6 +62,10 @@ permissions-exceptions-tracking-protection-window =
     .title = Изключения – защита от проследяване
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = Изключили сте защитата от проследяване за следните страници.
+permissions-exceptions-content-blocking-window =
+    .title = Изключения - Ограничаване на съдържание
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = Изключили сте ограничаването на съдържание за тези страници.
 
 ## Exceptions - Cookies
 
@@ -85,10 +97,6 @@ permissions-exceptions-addons-desc = Може да посочите страни
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = Разрешени страници - автоматично възпроизвеждане
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = Може да укажете страниците, на които е разрешено автоматично да възпроизвеждат медия. Въведете точния адрес на всеки сайт и изберете „Разрешаване“.
 permissions-exceptions-autoplay-media-window2 =
     .title = Изключения – Автоматично възпроизвеждане
     .style = { permissions-window.style }

@@ -46,6 +46,7 @@ pane-sync-title = ਫਾਇਰਫਾਕਸ ਖਾਤਾ
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } ਸਮਰਥਨ
+addons-button-label = ਇਕਸਟੈਨਸ਼ਨਾਂ ਤੇ ਥੀਮ
 focus-search =
     .key = f
 close-button =
@@ -76,6 +77,9 @@ extension-controlled-homepage-override = <img data-l10n-name="icon"/> { $name } 
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = <img data-l10n-name="icon"/> { $name } ਇਕਸਟੈਨਸਨ ਤੁਹਾਡੇ ਨਵੀਂ ਟੈਬ ਸਫ਼ੇ ਨੂੰ ਕੰਟੋਰਲ ਕਰ ਰਹੀ ਹੈ।
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = ਇਕਸਟੈਨਸ਼ਨ, <img data-l10n-name="icon"/> { $name } ਇਹ ਸੈਟਿੰਗ ਨੂੰ ਕੰਟਰੋਲ ਕਰ ਰਹੀ ਹੈ।
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = <img data-l10n-name="icon"/> { $name } ਇਕਸਟੈਨਸਨ ਨੇ ਤੁਹਾਡਾ ਮੂਲ ਖੋਜ ਇੰਜਣ ਤਹਿ ਕੀਤਾ ਹੈ।
@@ -85,6 +89,9 @@ extension-controlled-privacy-containers = ਇਕਟੈਨਸ਼ਨ <img data-l10
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = <img data-l10n-name="icon"/> { $name } ਇਕਸਟੈਨਸਨ ਟਰੈਕਿੰਗ ਸੁਰੱਖਿਆ ਨੂੰ ਕੰਟੋਰਲ ਕਰ ਰਹੀ ਹੈ।
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = ਇਕਸਟੈਨਸ਼ਨ, <img data-l10n-name="icon"/> { $name } ਇਹ ਸੈਟਿੰਗ ਨੂੰ ਕੰਟਰੋਲ ਕਰ ਰਹੀ ਹੈ।
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = <img data-l10n-name="icon"/> { $name } ਇਕਸਟੈਸ਼ਨ { -brand-short-name } ਦੇ ਇੰਟਰਨੈੱਟ ਨਾਲ ਕਨੈਕਟ ਹੋਣ ਦੀ ਨਿਗਰਾਨੀ ਰੱਖਦੀ ਹੈ।
@@ -185,6 +192,10 @@ choose-language-description = ਵਰਕੇ ਨੂੰ ਵੇਖਣ ਲਈ ਆਪ�
 choose-button =
     .label = …ਚੁਣੋ
     .accesskey = o
+manage-browser-languages-button =
+    .label = ...ਬਦਲ ਨਿਯਤ ਕਰੋ
+    .accesskey = I
+confirm-browser-language-change-description = ਇਹ ਸੈਟਿੰਗਾਂ ਲਾਗੂ ਕਰਨ ਲਈ { -brand-short-name } ਨੂੰ ਮੁੜ-ਚਾਲੂ ਕਰੋ
 confirm-browser-language-change-button = ਲਾਗੂ ਕਰਕੇ ਮੁੜ ਚਾਲੂ ਕਰੋ
 translate-web-pages =
     .label = ਵੈੱਬ ਸਮੱਗਰੀ ਦਾ ਉਲੱਥਾ ਕਰੋ
@@ -295,10 +306,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = ਜਿਵੇਂ ਤੁਸੀਂ ਲਿਖਣਾ ਸ਼ੁਰੂ ਕਰਦੇ ਹੋ ਤਾਂ ਨਾਲ ਨਾਲ ਖੋਜੋ
     .accesskey = x
+browsing-cfr-recommendations-learn-more = ਹੋਰ ਜਾਣੋ
 
 ## General Section - Proxy
 
-network-proxy-title = ਨੈੱਟਵਰਕ ਪਰਾਕਸੀ
 network-settings-title = ਨੈੱਟਵਰਕ ਸੈਟਿੰਗਾਂ
 network-proxy-connection-description = ਸੰਰਚਨਾ ਕਰੋ ਕਿ { -brand-short-name } ਇੰਟਰਨੈੱਟ ਨਾਲ ਕਿਵੇਂ ਕਨੈਕਟ ਹੋਵੇ।
 network-proxy-connection-learn-more = ਹੋਰ ਜਾਣੋ
@@ -497,6 +508,7 @@ privacy-header = ਬਰਾਊਜ਼ਰ ਪਰਦੇਦਾਰੀ
 ## Privacy Section - Forms
 
 forms-header = ਫਾਰਮ ਤੇ ਪਛਾਣ-ਸ਼ਬਦ
+logins-header = ਲਾਗਇਨ ਤੇ ਪਾਸਵਰਡ
 forms-ask-to-save-logins =
     .label = ਵੈੱਬਸਾਈਟਾਂ ਲਈ ਲਾਗਇਨ ਅਤੇ ਪਛਾਣ-ਸ਼ਬਦ ਸੰਭਾਲਣ ਲਈ ਪੁੱਛੋ
     .accesskey = r
@@ -563,29 +575,32 @@ sitedata-total-size-calculating = ਸਾਈਟ ਡਾਟੇ ਅਤੇ ਕੈਸ਼ 
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = ਤੁਹਾਡੇ ਸੰਭਾਲੇ ਹੋਏ ਕੂਕੀਜ਼, ਸਾਈਟ ਡਾਟਾ ਅਤੇ ਕੈਸ਼ ਇਸ ਵੇਲੇ { $value } { $unit } ਡਿਸਕ ਥਾਂ ਦੀ ਵਰਤੋਂ ਕਰ ਰਹੀ ਹੈ।
 sitedata-learn-more = ਹੋਰ ਜਾਣੋ
-sitedata-accept-cookies-option =
-    .label = ਵੈੱਬਸਾਈਟਾਂ ਤੋਂ ਕੂਕੀਜ਼ ਅਤੇ ਸਾਈਟ ਡਾਟੇ ਨੂੰ ਮਨਜ਼ੂਰ ਕਰੋ (ਸਿਫਾਰਸ਼ੀ)
-    .accesskey = A
-sitedata-block-cookies-option =
-    .label = ਕੂਕੀਜ਼ ਅਤੇ ਸਾਈਟ ਡਾਟੇ ਉੱਤੇ ਪਾਬੰਦੀ ਲਗਾਓ (ਵੈੱਬਸਾਈਟਾਂ ਠੀਕ ਤਰ੍ਹਾਂ ਕੰਮ ਨਹੀਂ ਕਰਦੀਆਂ)
-    .accesskey = B
 sitedata-keep-until = ਇਸ ਤੱਕ ਰੱਖੋ
     .accesskey = u
 sitedata-keep-until-expire =
     .label = ਉਹਨਾਂ ਦੀ ਮਿਆਦ ਪੁੱਗਦੀ ਹੈ
 sitedata-keep-until-closed =
     .label = { -brand-short-name } ਬੰਦ ਹੁੰਦਾ ਹੈ
-sitedata-accept-third-party-desc = ਤੀਜੀ-ਧਿਰ ਕੂਕੀਜ਼ ਅਤੇ ਸਾਈਟ ਡਾਟਾ ਨੂੰ ਮਨਜ਼ੂਰ ਕਰੋ
-    .accesskey = y
-sitedata-accept-third-party-always-option =
-    .label = ਹਮੇਸ਼ਾ
-sitedata-accept-third-party-visited-option =
-    .label = ਖੋਲ੍ਹੀਆਂ ਗਈਆਂ ਤੋਂ ਹੀ
-sitedata-accept-third-party-never-option =
-    .label = ਕਦੇ ਨਹੀਂ
 sitedata-allow-cookies-option =
     .label = ਕੂਕੀਜ਼ ਅਤੇ ਸਾਈਟ ਡਾਟੇ ਨੂੰ ਮਨਜ਼ੂਰ ਕਰੋ
     .accesskey = A
+sitedata-disallow-cookies-option =
+    .label = ਕੂਕੀਜ਼ ਤੇ ਸਾਈਟ ਡਾਟੇ ਤੇ ਪਾਬੰਦੀ ਲਗਾਓ
+    .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = ਪਾਬੰਦੀ ਲਗਾਈ ਕਿਸਮ
+    .accesskey = T
+sitedata-block-trackers-option-recommended =
+    .label = ਤੀਜੀ-ਧਿਰ ਟਰੈਕਰ (ਸਿਫਾਰਸ਼ੀ ਹੈ)
+sitedata-block-trackers-option =
+    .label = ਤੀਜੀ-ਧਿਰ ਟਰੈਕਰ
+sitedata-block-unvisited-option =
+    .label = ਬੇਲੋੜੀਆਂ ਵੈੱਬਸਾਈਟਾਂ ਤੋਂ ਕੂਕੀਜ਼
+sitedata-block-all-third-party-option =
+    .label = ਸਾਰੇ ਤੀਜੀ-ਧਿਰ ਕੂਕੀਜ਼ (ਵੈੱਬਸਾਈਟ ਦੇ ਕੰਮ ਨਾ ਕਰਨ ਦਾ ਕਾਰਨ ਹੋ ਸਕਦਾ)
+sitedata-block-all-option =
+    .label = ਸਾਰੇ ਕੂਕੀਜ਼ (ਵੈੱਬਸਾਈਟਾਂ ਦੇ ਕੰਮ ਨਾ ਕਰਨ ਦਾ ਕਾਰਨ ਹੋਵੇਗਾ)
 sitedata-clear =
     .label = …ਡਾਟੇ ਨੂੰ ਸਾਫ਼ ਕਰੋ
     .accesskey = l
@@ -613,13 +628,54 @@ addressbar-suggestions-settings = ਖੋਜ ਇੰਜਣ ਸੁਝਾਵਾਂ �
 
 ## Privacy Section - Content Blocking
 
+content-blocking-header = ਸਮੱਗਰੀ ਪਾਬੰਦੀ
 content-blocking-learn-more = ਹੋਰ ਜਾਣੋ
+content-blocking-restore-defaults =
+    .label = ਮੂਲ ਬਹਾਲ ਕਰੋ
+    .accesskey = R
+content-blocking-toggle-on =
+    .tooltiptext = ਸਮੱਗਰੀ ਪਾਬੰਦੀ ਨੂੰ ਬੰਦ ਕਰੋ
+content-blocking-toggle-off =
+    .tooltiptext = ਸਮੱਗਰੀ ਪਾਬੰਦੀ ਨੂੰ ਚਾਲੂ ਕਰੋ
 content-blocking-toggle-label-on = ਚਾਲੂ
     .accesskey = O
 content-blocking-toggle-label-off = ਬੰਦ
     .accesskey = O
+content-blocking-category-label = ਪਾਬੰਦੀ ਲਾਉਣ ਲਈ ਚੋਣ ਕਰੋ
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = ਹੌਲੀ-ਲੋਡਿੰਗ ਟਰੈਕਰ
+    .accesskey = S
+content-blocking-tracking-protection-trackers-label =
+    .label = ਟਰੈਕਰ
+    .accesskey = T
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = ਸਾਰੇ ਖੋਜੇ ਗਏ ਟਰੈਕਰ
+    .accesskey = T
+content-blocking-tracking-protection-new-description = ਸਾਰੇ ਜਾਣੇ-ਪਛਾਣੇ ਟਰੈਕਰਾਂ 'ਤੇ ਪਾਬੰਦੀ ਲਗਾਓ। (ਕੁਝ ਸਫ਼ਿਆਂ ਨੂੰ ਲੋਡ ਹੋਣ 'ਤੇ ਰੋਕ ਲੱਗ ਸਕਦੀ ਹੈ।)
 content-blocking-tracking-protection-option-always =
     .label = ਹਮੇਸ਼ਾ
+    .accesskey = A
+content-blocking-tracking-protection-option-private =
+    .label = ਕੇਵਲ ਪ੍ਰਾਈਵੇਟ ਵਿੰਡੋ ਵਿੱਚ
+    .accesskey = p
+content-blocking-tracking-protection-change-block-list = ਪਾਬੰਦੀ ਸੂਚੀ ਬਦਲੋ
+content-blocking-third-party-cookies-label =
+    .label = ਤੀਜੀ-ਧਿਰ ਕੂਕੀਜ਼
+    .accesskey = C
+content-blocking-change-cookie-settings =
+    .label = ਕੂਕੀਜ਼ ਸੈਟਿੰਗਾਂ ਬਦਲੋ
+    .accesskey = S
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = ਟਰੈਕਰ (ਸਿਫਾਰਸ਼ੀ)
+    .accesskey = k
+content-blocking-reject-trackers-block-trackers-option =
+    .label = ਟਰੈਕਰ
+    .accesskey = k
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = ਸਾਰੇ ਤੀਜੀ-ਧਿਰ ਕੂਕੀਜ਼ (ਵੈੱਬਸਾਈਟਾਂ ਦੇ ਕੰਮ ਨਾ ਕਰਨ ਦਾ ਕਾਰਨ ਹੋ ਸਕਦਾ ਹੈ)
     .accesskey = A
 
 ## Privacy Section - Tracking
@@ -636,10 +692,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = ਕਦੇ ਨਹੀਂ
     .accesskey = n
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = ਪਛਾਣੇ ਹੋਏ ਟਰੈਕਾਂ 'ਤੇ ਪਾਬੰਦੀ ਲਗਾਉਣ ਲਈ ਪ੍ਰਾਈਵੇਟ ਬਰਾਊਜ਼ਿੰਗ ਵਿੱਚ ਟਰੈਕ ਹੋਣ ਤੋਂ ਸੁਰੱਖਿਆ ਦਿਓ
-    .accesskey = v
 tracking-exceptions =
     .label = …ਛੋਟਾਂ
     .accesskey = x
@@ -670,9 +722,20 @@ permissions-notification-link = ਹੋਰ ਜਾਣੋ
 permissions-notification-pause =
     .label = { -brand-short-name } ਮੁੜ-ਚਾਲੂ ਹੋਣ ਤੱਕ ਸੂਚਨਾਵਾਂ ਨੂੰ ਰੋਕੋ
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = ਵੈੱਬਸਾਈਟਾਂ ਆਵਾਜ਼ ਵਾਲੇ ਮੀਡਿਏ ਨੂੰ ਆਪਣੇ ਆਪ ਚਲਾਉਣ 'ਤੇ ਪਾਬੰਦੀ ਲਗਾਓ
+    .accesskey = B
+permissions-block-autoplay-media-menu = ਵੈੱਬਸਾਈਟਾਂ, ਜੋ ਕਿ ਆਪਣੇ-ਆਪ ਆਵਾਜ਼ ਚਲਾਉਂਦੀਆਂ ਹਨ, ਲਈ
 permissions-block-autoplay-media-exceptions =
     .label = ਛੋਟਾਂ…
     .accesskey = E
+autoplay-option-ask =
+    .label = ਹਮੇਸ਼ਾਂ ਪੁੱਛੋ
+autoplay-option-allow =
+    .label = ਆਪੇ-ਚਲਾਉਣ ਦੀ ਆਗਿਆ
+autoplay-option-dont =
+    .label = ਆਪਣੇ-ਆਪ ਨਾ ਚਲਾਓ
+permissions-autoplay-link = ਹੋਰ ਜਾਣੋ
 permissions-block-popups =
     .label = ਪੋਪਅੱਪ ਵਿੰਡੋ 'ਤੇ ਪਾਬੰਦੀ ਲਗਾਓ
     .accesskey = B
@@ -695,7 +758,7 @@ permissions-a11y-privacy-link = ਹੋਰ ਜਾਣੋ
 collection-header = { -brand-short-name } ਡਾਟਾ ਇਕੱਤਰ ਕਰਨਾ ਅਤੇ ਵਰਤੋ
 collection-privacy-notice = ਪਰਦੇਦਾਰੀ ਸੂਚਨਾ
 collection-health-report =
-    .label = { -brand-short-name } ਨੂੰ ਮੌਜ਼ੀਲਾ ਨੂੰ ਤਕਨੀਕੀ ਅਤੇ ਤਾਲਮੇਲ ਡਾਟਾ ਭੇਜਣ ਦੀ ਇਜ਼ਾਜ਼ਤ ਦਿਓ
+    .label = { -brand-short-name } ਨੂੰ { -vendor-short-name } ਨੂੰ ਤਕਨੀਕੀ ਅਤੇ ਤਾਲਮੇਲ ਡਾਟਾ ਭੇਜਣ ਦੀ ਇਜ਼ਾਜ਼ਤ ਦਿਓ
     .accesskey = r
 collection-health-report-link = ਹੋਰ ਜਾਣੋ
 collection-studies =
@@ -747,3 +810,30 @@ certs-view =
 certs-devices =
     .label = …ਸੁਰੱਖਿਆ ਡਿਵਾਈਸ
     .accesskey = D
+space-alert-learn-more-button =
+    .label = ਹੋਰ ਜਾਣੋ
+    .accesskey = L
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] ਚੋਣਾਂ ਨੂੰ ਖੋਲ੍ਹੋ
+           *[other] ਮੇਰੀਆਂ ਪਸੰਦਾਂ ਨੂੰ ਖੋਲ੍ਹੋ
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] O
+        }
+space-alert-under-5gb-ok-button =
+    .label = ਠੀਕ ਹੈ, ਸਮਝ ਗਏ
+    .accesskey = K
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = ਡੈਸਕਟਾਪ
+downloads-folder-name = ਡਾਊਨਲੋਡ
+choose-download-folder-title = ਡਾਊਨਲੋਡ ਫੋਲਡਰ ਚੁਣੋ:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = ਫ਼ਾਈਲਾਂ { $service-name } 'ਤੇ ਸੰਭਾਲੋ

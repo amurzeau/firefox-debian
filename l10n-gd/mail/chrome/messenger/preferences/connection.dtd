@@ -45,3 +45,14 @@
 <!ENTITY  autologinproxy.tooltip        "Nì an roghainn seo dearbhadh sàmhach as do leth mu choinneamh phrogsaidhean a chaidh ainm is facal-faire a shàbhaladh air an son. Thèid do bhrodadh mur an obraich an dearbhadh.">
 <!ENTITY  socksRemoteDNS.label          "DNS progsaidh nuair a chleachdar SOCKS v5">
 <!ENTITY  socksRemoteDNS.accesskey      "d">
+<!ENTITY  dnsOverHttps.label            "Cuir an comas DNS air HTTPS">
+<!ENTITY  dnsOverHttps.accesskey        "b">
+<!ENTITY  dnsOverHttpsUrl.label         "URL">
+<!ENTITY  dnsOverHttpsUrl.accesskey     "R">
+<!ENTITY  dnsOverHttpsUrl.tooltip       "An URL airson DNS air HTTPS fhuasgladh">
+<!ENTITY  dnsOverHttpsUrlDefault.label     "Cleachd aʼ bhun-roghainn">
+<!ENTITY  dnsOverHttpsUrlDefault.accesskey "l">
+<!ENTITY  dnsOverHttpsUrlDefault.tooltip   "Cleachd an URL bunaiteach airson DNS air HTTPS fhuasgladh">
+<!ENTITY  dnsOverHttpsUrlCustom.label      "Gnàthaichte">
+<!ENTITY  dnsOverHttpsUrlCustom.accesskey  "t">
+<!ENTITY  dnsOverHttpsUrlCustom.tooltip    "Cuir a-steach an URL as fhearr leat airson DNS air HTTPS fhuasgladh">

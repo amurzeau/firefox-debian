@@ -321,10 +321,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Αναζήτηση κειμένου κατά την έναρξη πληκτρολόγησης
     .accesskey = ν
+browsing-cfr-recommendations-learn-more = Μάθετε περισσότερα
 
 ## General Section - Proxy
 
-network-proxy-title = Διακομιστής μεσολάβησης δικτύου
 network-settings-title = Ρυθμίσεις δικτύου
 network-proxy-connection-description = Ρυθμίστε τον τρόπο σύνδεσης του { -brand-short-name } στο διαδίκτυο.
 network-proxy-connection-learn-more = Μάθετε περισσότερα
@@ -523,6 +523,7 @@ privacy-header = Απόρρητο προγράμματος περιήγησης
 ## Privacy Section - Forms
 
 forms-header = Φόρμες & κωδικοί πρόσβασης
+logins-header = Συνδέσεις & κωδικοί πρόσβασης
 forms-ask-to-save-logins =
     .label = Ερώτηση για αποθήκευση συνδέσεων και κωδικών πρόσβασης για ιστοσελίδες
     .accesskey = β
@@ -589,26 +590,12 @@ sitedata-total-size-calculating = Υπολογισμός μεγέθους δεδ
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Τα αποθηκευμένα cookies, δεδομένα ιστοσελίδων και η προσωρινή μνήμη, αυτή τη στιγμή, καταλαμβάνουν { $value } { $unit } χώρου στο δίσκο.
 sitedata-learn-more = Μάθετε περισσότερα
-sitedata-accept-cookies-option =
-    .label = Αποδοχή cookies και δεδομένων ιστοσελίδων από ιστοσελίδες (συνίσταται)
-    .accesskey = Α
-sitedata-block-cookies-option =
-    .label = Αποκλεισμός cookies και δεδομένων ιστοσελίδων (πιθανή δυσλειτουργία ιστοσελίδων)
-    .accesskey = Α
 sitedata-keep-until = Διατήρηση μέχρι
     .accesskey = μ
 sitedata-keep-until-expire =
     .label = να λήξουν
 sitedata-keep-until-closed =
     .label = να κλείσει το { -brand-short-name }
-sitedata-accept-third-party-desc = Αποδοχή cookies και δεδομένα ιστοσελίδων τρίτων
-    .accesskey = ν
-sitedata-accept-third-party-always-option =
-    .label = Πάντα
-sitedata-accept-third-party-visited-option =
-    .label = Από επισκέψεις
-sitedata-accept-third-party-never-option =
-    .label = Ποτέ
 sitedata-allow-cookies-option =
     .label = Αποδοχή cookies και δεδομένων ιστοσελίδων
     .accesskey = Α
@@ -675,6 +662,9 @@ content-blocking-category-label = Επιλέξτε τι θα αποκλείετ�
 content-blocking-fastblock-slow-loading-trackers-label =
     .label = Ιχνηλάτες αργής φόρτωσης
     .accesskey = α
+content-blocking-tracking-protection-trackers-label =
+    .label = Ιχνηλάτες
+    .accesskey = Ι
 content-blocking-tracking-protection-all-detected-trackers-label =
     .label = Όλοι οι εντοπισμένοι ιχνηλάτες
     .accesskey = ι
@@ -712,10 +702,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Ποτέ
     .accesskey = π
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Χρήση της προστασίας από καταγραφή στην ιδιωτική περιήγηση για φραγή γνωστών ιχνηλατών
-    .accesskey = δ
 tracking-exceptions =
     .label = Εξαιρέσεις…
     .accesskey = ξ
@@ -838,3 +824,32 @@ certs-view =
 certs-devices =
     .label = Συσκευές ασφαλείας…
     .accesskey = Σ
+space-alert-learn-more-button =
+    .label = Μάθετε περισσότερα
+    .accesskey = Μ
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Άνοιγμα επιλογών
+           *[other] Άνοιγμα προτιμήσεων
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] Π
+           *[other] Π
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] Δεν απομένει χώρος στο δίσκο για το { -brand-short-name }. Το περιεχόμενο των ιστοσελίδων ενδέχεται να μην εμφανίζεται κανονικά. Μπορείτε να εκκαθαρίσετε τα αποθηκευμένα δεδομένα στις Επιλογές > Απόρρητο & ασφάλεια > Cookies και δεδομένα ιστοσελίδων.
+       *[other] Δεν απομένει χώρος στο δίσκο για το { -brand-short-name }. Το περιεχόμενο των ιστοσελίδων ενδέχεται να μην εμφανίζεται κανονικά. Μπορείτε να εκκαθαρίσετε τα αποθηκευμένα δεδομένα στις Προτιμήσεις > Απόρρητο & ασφάλεια > Cookies και δεδομένα ιστοσελίδων.
+    }
+space-alert-under-5gb-ok-button =
+    .label = OK, το 'πιασα
+    .accesskey = K
+space-alert-under-5gb-message = Το { -brand-short-name } δεν έχει επαρκή χώρο δίσκου. Το περιεχόμενο των ιστοσελίδων ενδέχεται να μην εμφανίζεται σωστά. Επισκεφθείτε το “Μάθετε περισσότερα” για να βελτιστοποιήσετε τη χρήση δίσκου σας για καλύτερη εμπειρία περιήγησης.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Επιφάνεια εργασίας
+downloads-folder-name = Ληφθέντα αρχεία
+choose-download-folder-title = Επιλογή φακέλου λήψης αρχείων:

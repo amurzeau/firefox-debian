@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = Engelle
 permissions-capabilities-prompt =
     .label = Her zaman sor
+permissions-capabilities-listitem-allow =
+    .value = İzin ver
+permissions-capabilities-listitem-block =
+    .value = Engelle
+permissions-capabilities-listitem-allow-first-party =
+    .value = Yalnızca ilk partiye izin ver
+permissions-capabilities-listitem-allow-session =
+    .value = Oturum boyunca izin ver
 
 ## Invalid Hostname Dialog
 
@@ -54,6 +62,10 @@ permissions-exceptions-tracking-protection-window =
     .title = İstisnalar - İzlenme Koruması
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = Bu sitelerde İzlenme Koruması’nı devre dışı bıraktınız.
+permissions-exceptions-content-blocking-window =
+    .title = İstisnalar - İçerik Engelleme
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = Aşağıdaki web sitelerinde içerik engellemeyi kapattınız.
 
 ## Exceptions - Cookies
 
@@ -85,10 +97,6 @@ permissions-exceptions-addons-desc = Hangi sitelerin eklenti yükleyebileceğini
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = İzin Verilen Siteler - Otomatik Oynatma
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = Hangi sitelere medya dosyalarını otomatik oynatma izni vereceğinizi seçebilirsiniz. İzin vermek istediğiniz sitenin tam adresini yazıp “İzin ver” düğmesine tıklayın.
 permissions-exceptions-autoplay-media-window2 =
     .title = İstisnalar - Otomatik Oynat
     .style = { permissions-window.style }

@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = Sewḥel
 permissions-capabilities-prompt =
     .label = Sutur yal tikelt
+permissions-capabilities-listitem-allow =
+    .value = Sireg
+permissions-capabilities-listitem-block =
+    .value = Sewḥel
+permissions-capabilities-listitem-allow-first-party =
+    .value = Taɣult tagejdant kan
+permissions-capabilities-listitem-allow-session =
+    .value = Sireg i tɣimit
 
 ## Invalid Hostname Dialog
 
@@ -54,6 +62,10 @@ permissions-exceptions-tracking-protection-window =
     .title = Tasureft - Ammesten n usfuɣel
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = Treremdeḍ ammesten n usfuɣel ɣef isebtar-agi.
+permissions-exceptions-content-blocking-window =
+    .title = Tisuraf - Asewḥel n ugbur
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = Tsenseḍ asewḥel n ugbur i yesmal-agi.
 
 ## Exceptions - Cookies
 
@@ -85,10 +97,6 @@ permissions-exceptions-addons-desc = Tzemreḍ ad d-tmuddeḍ ismal web ara teǧ
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = Ismal yettwasirgen - Taɣuri tawurmant
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = Tzemreḍ ad temmleḍ anwa ismal yettwasirgen s wudem awurman akken ad uraren iferdisem imeslawen. Aru tansa tusdidt n usmel i tebɣiḍ ad teǧǧeḍ saki sit ɣef Sireg.
 permissions-exceptions-autoplay-media-window2 =
     .title = Tisuraf - Taɣuri tawurmant
     .style = { permissions-window.style }

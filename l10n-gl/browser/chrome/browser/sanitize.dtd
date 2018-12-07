@@ -13,8 +13,6 @@
 <!-- LOCALIZATION NOTE (sanitizeDialog2.width): width of the Clear Recent History dialog -->
 <!ENTITY sanitizeDialog2.width         "34em">
 
-<!ENTITY clearDataSettings3.label     "Cando peche &brandShortName;, deberá borrar todo automaticamente">
-
 <!ENTITY clearDataSettings4.label     "Cando peche &brandShortName; deberá borrar todo automaticamente">
 
 <!-- XXX rearrange entities to match physical layout when l10n isn't an issue -->
@@ -30,12 +28,6 @@
 <!-- Localization note (clearTimeDuration.suffix) - trailing entity for languages
 that require it.  -->
 <!ENTITY clearTimeDuration.suffix         "">
-
-<!-- LOCALIZATION NOTE (detailsProgressiveDisclosure.*): Labels and accesskeys
-     of the "Details" progressive disclosure button.  See UI mockup at bug
-     480169 -->
-<!ENTITY detailsProgressiveDisclosure.label     "Detalles">
-<!ENTITY detailsProgressiveDisclosure.accesskey "e">
 
 <!ENTITY historySection.label         "Historial">
 <!ENTITY dataSection.label            "Datos">

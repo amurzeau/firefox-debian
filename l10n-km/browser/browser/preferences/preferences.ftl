@@ -14,9 +14,27 @@ pref-page =
             [windows] ជម្រើស
            *[other] ចំណូលចិត្ត
         }
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box =
+    .style = width: 15.4em
+    .placeholder =
+        { PLATFORM() ->
+            [windows] រកនៅក្នុងជម្រើស
+           *[other] រកនៅក្នុងចំណូលចិត្ត
+        }
 pane-general-title = ទូទៅ
 category-general =
     .tooltiptext = { pane-general-title }
+pane-home-title = ទំព័រដើម
+category-home =
+    .tooltiptext = { pane-home-title }
 pane-search-title = ស្វែងរក
 category-search =
     .tooltiptext = { pane-search-title }
@@ -52,9 +70,24 @@ restart-later = ចាប់ផ្ដើម​ឡើងវិញ​នៅ​ព�
 ## Variables:
 ##   $name (String): name of the extension
 
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = ផ្នែកបន្ថែម <img data-l10n-name="icon"/> { $name } កំពុងគ្រប់គ្រងទំព័រដើមរបស់អ្នក។
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = ផ្នែកបន្ថែម <img data-l10n-name="icon"/> { $name } កំពុងគ្រប់គ្រងទំព័រផ្ទាំងថ្មីរបស់អ្នក។
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = ផ្នែកបន្ថែម <img data-l10n-name="icon"/> { $name } បានកំណត់ម៉ាស៊ីនស្វែងរកលំនាំដើមរបស់អ្នក។
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = ផ្នែកបន្ថែម <img data-l10n-name="icon"/> { $name } ត្រូវការផ្ទាំងឧបករណ៍ផ្ទុក។
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = ផ្នែកបន្ថែម <img data-l10n-name="icon"/> { $name } កំពុងគ្រប់គ្រងការការពារការតាមដាន។
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = ផ្នែកបន្ថែម <img data-l10n-name="icon"/> { $name } កំពុងគ្រប់គ្រងការកំណត់នេះ។
 
 ## Preferences UI Search Results
 
@@ -65,6 +98,7 @@ search-results-empty-message =
         [windows] សុំទោស! មិន​មាន​លទ្ធផល​នៅ​ក្នុង​ជម្រើស​សម្រាប់ “<span data-l10n-name="query"></span>” ទេ។
        *[other] សុំទោស! មិន​មាន​លទ្ធផល​នៅ​ក្នុង​ចំណូលចិត្ត​សម្រាប់ “<span data-l10n-name="query"></span>” ទេ។
     }
+search-results-help-link = ត្រូវការជំនួយទេ? មើល<a data-l10n-name="url">ផ្នែកជំនួយរបស់ { -brand-short-name }</a>
 
 ## General Section
 
@@ -73,7 +107,7 @@ startup-header = ចាប់ផ្ដើម​ឡើង
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
     .label = អនុញ្ញាត​ឲ្យ { -brand-short-name } និង Firefox ដំណើរការ​ក្នុង​ពេល​ដូចគ្នា
-use-firefox-sync = ព័ត៌មាន​ជំនួយ៖ វា​ប្រើ​បវត្តិរូប​ដាច់ដោយឡែក។ ប្រើ​ការ​ធ្វើ​សមកាលកម្ម​ដើម្បី​ចែករំលែក​ទិន្នន័យ​រវាង​ពួកគេ។
+use-firefox-sync = ព័ត៌មាន​ជំនួយ៖ វា​ប្រើ​ប្រាស់​​កម្រង​ព័ត៌មាន​​ដោយឡែក។ ប្រើប្រាស់ { -sync-brand-short-name } ដើម្បី​ចែករំលែក​ទិន្នន័យ​រវាង​​កម្រងព័ត៌មាន​ទាំងនេះ។
 get-started-not-logged-in = ចូល { -sync-brand-short-name } ...
 get-started-configured = បើក​ចំណូលចិត្ត { -sync-brand-short-name }
 always-check-default =
@@ -84,14 +118,23 @@ is-not-default = { -brand-short-name } វា​មិន​មែន​ជា�
 set-as-my-default-browser =
     .label = ដាក់​ជា​លំនាំ​ដើម
     .accesskey = D
+startup-restore-previous-session =
+    .label = ស្ដារ​សម័យ​មុន
+    .accesskey = s
 disable-extension =
     .label = បិទ​ផ្នែក​បន្ថែម
 tabs-group-header = ផ្ទាំង
 ctrl-tab-recently-used-order =
     .label = ប៊ូតុង​ Ctrl+Tab មាន​មុខងារ​ចូល​មើល​ផ្ទាំង​ដែល​បើក​ថ្មីៗ​ម្ដង​មួយ​ៗ
     .accesskey = T
+open-new-link-as-tabs =
+    .label = បើក​តំណ​ក្នុង​ផ្ទាំង​ជំនួយ​ឲ្យ​វីនដូ​ថ្មី
+    .accesskey = w
 warn-on-close-multiple-tabs =
     .label = ព្រមាន​អ្នក​ពេល​បិទ​ផ្ទាំង​ច្រើន
+    .accesskey = m
+warn-on-quit-close-multiple-tabs =
+    .label = ព្រមាន​អ្នក​ពេល​ចាកចេញ និង​​បិទ​ផ្ទាំង​ច្រើន
     .accesskey = m
 warn-on-open-many-tabs =
     .label = ព្រមាន​អ្នក​ពេល​បើក​ផ្ទាំង​ច្រើន អាច​ធ្វើឲ្យ { -brand-short-name } យឺត
@@ -122,6 +165,7 @@ containers-remove-cancel-button = កុំ​លុប​ប្រអប់​�
 
 ## General Section - Language & Appearance
 
+language-and-appearance-header = ភាសា និង​ការបង្ហាញ
 fonts-and-colors-header = ពុម្ព​អក្សរ & ពណ៌
 default-font = ពុម្ព​អក្សរ​លំនាំដើម
     .accesskey = D
@@ -138,6 +182,7 @@ choose-language-description = ជ្រើស​ភាសា​ដែល​អ�
 choose-button =
     .label = ជ្រើស…
     .accesskey = ស
+confirm-browser-language-change-button = អនុវត្ត​និង​ចាប់ផ្តើម​ឡើង​វិញ
 translate-web-pages =
     .label = ​បកប្រែ​មាតិកា​បណ្ដាញ
     .accesskey = T
@@ -153,6 +198,7 @@ check-user-spelling =
 
 ## General Section - Files and Applications
 
+files-and-applications-title = ឯកសារ និងកម្មវិធី
 download-header = ទាញ​យក
 download-save-to =
     .label = រក្សា​ទុក​ឯកសារ​ទៅ
@@ -181,13 +227,21 @@ applications-type-column =
 applications-action-column =
     .label = អំពើ
     .accesskey = ព
+drm-content-header = ខ្លឹមសារ​ការគ្រប់គ្រងសិទ្ធិឌីជីថល (DRM)
+play-drm-content =
+    .label = លេងខ្លឹមសារ​ដែលគ្រប់គ្រងដោយ DRM
+    .accesskey = P
 play-drm-content-learn-more = ស្វែងយល់​​បន្ថែម
 update-application-title = បច្ចុប្បន្នភាព { -brand-short-name }
+update-application-description = រក្សា { -brand-short-name } ឱ្យ​ថ្មីៗ​ជានិច្ច ដើម្បី​ដំណើរការ​​មាន​ប្រសិទ្ធភាព ស្ថេរភាព និងសុវត្ថិភាពបំផុត។
 update-application-version = កំណែ { $version } <a data-l10n-name="learn-more">អ្វី​ដែល​ថ្មី</a>
 update-history =
     .label = បង្ហាញ​ប្រវត្តិ​បច្ចុប្បន្នភាព...
     .accesskey = p
 update-application-allow-description = អនុញ្ញាត { -brand-short-name } ឲ្យ
+update-application-auto =
+    .label = ដំឡើងបច្ចុប្បន្នភាពដោយស្វ័យប្រវត្តិ (បានណែនាំ)
+    .accesskey = A
 update-application-check-choose =
     .label = ពិនិត្យ​មើល​បច្ចុប្បន្នភាព ប៉ុន្តែ​អាច​ឲ្យ​អ្នក​ជ្រើសរើស​ដំឡើង​ពួកវា​បាន
     .accesskey = C
@@ -239,23 +293,38 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = ស្វែងរក​​អក្សរ នៅ​ពេល​អ្នក​ចាប់ផ្ដើម​វាយ
     .accesskey = x
+browsing-cfr-recommendations-learn-more = ស្វែងយល់​បន្ថែម
 
 ## General Section - Proxy
 
+network-settings-title = ការកំណត់​បណ្ដាញ
+network-proxy-connection-description = កំណត់រចនាសម្ព័ន្ធរបៀបដែល { -brand-short-name } តភ្ជាប់ទៅអ៊ីនធឺណិត
+network-proxy-connection-learn-more = ស្វែងយល់​បន្ថែម
 network-proxy-connection-settings =
     .label = ការ​កំណត់…
     .accesskey = e
 
 ## Home Section
 
+home-new-windows-tabs-header = វីនដូ និងផ្ទាំងថ្មី
 
 ## Home Section - Home Page Customization
 
+home-homepage-mode-label = ទំព័រដើម និងវីនដូថ្មី
+home-newtabs-mode-label = ផ្ទាំងថ្មី
 home-restore-defaults =
     .label = ស្ដារ​លំនាំ​ដើម
     .accesskey = R
+# "Firefox" should be treated as a brand and kept in English,
+# while "Home" and "(Default)" can be localized.
+home-mode-choice-default =
+    .label = ទំព័រដើម Firefox (លំនាំដើម)
+home-mode-choice-custom =
+    .label = URL ផ្ទាល់ខ្លួន…
 home-mode-choice-blank =
     .label = ទំព័រទទេ
+home-homepage-custom-url =
+    .placeholder = ដាក់​ចូល URL…
 # This string has a special case for '1' and [other] (default). If necessary for
 # your language, you can add {$tabCount} to your translations and use the
 # standard CLDR forms, or only use the form for [other] if both strings should
@@ -274,12 +343,28 @@ choose-bookmark =
 ## Search Section
 
 search-bar-header = របារស្វែងរក
+search-bar-hidden =
+    .label = ប្រើប្រាស់​របាអាសយដ្ឋានសម្រាប់ការស្វែងរក និងរុករក
+search-bar-shown =
+    .label = បញ្ចូល​របារស្វែងរកនៅក្នុងរបារឧបករណ៍
 search-engine-default-header = ម៉ាស៊ីន​ស្វែងរក​លំនាំដើម
+search-engine-default-desc = ជ្រើសរើសម៉ាស៊ីនស្វែងរកលំនាំដើម ដើម្បីប្រើប្រាស់​នៅក្នុងរបារអាសយដ្ឋាន និងរបារស្វែងរក។
 search-suggestions-option =
     .label = បង្ហាញ​ការ​ផ្ដល់​យោបល់​ស្វែងរក
     .accesskey = រ
+search-show-suggestions-url-bar-option =
+    .label = បង្ហាញការណែនាំ​ស្វែងរកនៅក្នុងលទ្ធផលរបារអាសយដ្ឋាន
+    .accesskey = I
+# This string describes what the user will observe when the system
+# prioritizes search suggestions over browsing history in the results
+# that extend down from the address bar. In the original English string,
+# "ahead" refers to location (appearing most proximate to), not time
+# (appearing before).
+search-show-suggestions-above-history-option =
+    .label = បង្ហាញការណែនាំ​ស្វែងរកមុនប្រវត្តិការរុករកនៅក្នុងលទ្ធផល​លើ​របារអាសយដ្ឋាន
 search-suggestions-cant-show = សំណើ​ស្វែងរក​នឹង​​មិន​បង្ហាញ​នៅ​ក្នុង​លទ្ធផល​របារ​ទីតាំង​​ទេ ព្រោះ​អ្នក​បាន​កំណត់​រចនាសម្ព័ន្ធ { -brand-short-name } មិន​ដែល​ឲ្យ​ចងចាំ​ប្រវត្តិ។
 search-one-click-header = ម៉ាស៊ីន​ស្វែងរក​ចុច​តែ​ម្ដង
+search-one-click-desc = ជ្រើសរើស​ម៉ាស៊ីន​ស្វែងរក​ជំនួស​ដែល​បង្ហាញ​នៅ​ខាងក្រោម​របារអាសយដ្ឋាន និង​របារស្វែងរក​នៅ​ពេល​អ្នក​ចាប់ផ្តើម​បញ្ចូល​ពាក្យគន្លឹះ។
 search-choose-engine-column =
     .label = ម៉ាស៊ីន​ស្វែងរក
 search-choose-keyword-column =
@@ -290,6 +375,7 @@ search-restore-default =
 search-remove-engine =
     .label = យក​ចេញ...
     .accesskey = ញ
+search-find-more-link = រកម៉ាស៊ីនស្វែងរកបន្ថែម
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
 search-keyword-warning-title = ពាក្យ​គន្លឹះ​ស្ទួន
@@ -315,6 +401,11 @@ containers-remove-button =
 sync-signedout-caption = យក​បណ្ដាញ​របស់​អ្នក​ជាមួយ​អ្នក
 sync-signedout-description = ធ្វើ​សម​កាល​កម្ម​ចំណាំ​ ប្រវត្តិ ផ្ទាំង ពាក្យ​សម្ងាត់​ កម្មវិធី​ផ្នែក​បន្ថែម​ និង​ចំណូល​ចិត្ត​របស់​អ្នក​ ចំពោះ​គ្រប់​ឧបករណ៍​របស់​អ្នក។​
 sync-signedout-account-title = ភ្ជាប់​ជាមួយ​ { -fxaccount-brand-name }
+sync-signedout-account-create = មិនទាន់មានគណនី​មែនទេ? ចាប់ផ្តើម
+    .accesskey = c
+sync-signedout-account-signin =
+    .label = ចូល…
+    .accesskey = I
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -336,6 +427,9 @@ sync-manage-account = គ្រប់គ្រង​គណនី
     .accesskey = o
 sync-signedin-unverified = { $email } មិន​ត្រូវ​បាន​ផ្ទៀងផ្ទាត់។
 sync-signedin-login-failure = សូម​ចូល​ដើម្បី​តភ្ជាប់​ឡើង​វិញ { $email }
+sync-remove-account =
+    .label = លុប​គណនី
+    .accesskey = R
 sync-sign-in =
     .label = ចូល
     .accesskey = g
@@ -357,11 +451,14 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = រក្សា​ទុក
     .accesskey = v
+sync-mobilepromo-single = តភ្ជាប់ឧបករណ៍ផ្សេងទៀត
+sync-mobilepromo-multi = គ្រប់គ្រងឧបករណ៍
 sync-tos-link = លក្ខខ័ណ្ឌ​សេវាកម្ម
 sync-fxa-privacy-notice = គោលនយោបាយ​ឯកជន
 
 ## Privacy Section
 
+privacy-header = ឯកជនភាព​កម្មវិធី​រុករក​តាម​អ៊ីនធឺណិត
 
 ## Privacy Section - Forms
 
@@ -419,13 +516,14 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = ខូឃី និងទិន្នន័យ​គេហទំព័រ
+sitedata-total-size-calculating = កំពុងគណនាទិន្នន័យតំបន់បណ្តាញ និងទំហំឃ្លាំងសម្ងាត់…
 sitedata-learn-more = ស្វែងយល់​បន្ថែម
-sitedata-accept-third-party-always-option =
-    .label = ជានិច្ច
-sitedata-accept-third-party-visited-option =
-    .label = ពី​អ្វី​ដែល​ទស្សនា
-sitedata-accept-third-party-never-option =
-    .label = កុំ
+sitedata-keep-until = រក្សាទុករហូតដល់
+    .accesskey = u
+sitedata-keep-until-expire =
+    .label = ពួកវា​ផុត​កំណត់
+sitedata-keep-until-closed =
+    .label = { -brand-short-name } ត្រូវបានបិទ
 sitedata-clear =
     .label = សម្អាតទិន្នន័យ...
     .accesskey = l
@@ -439,6 +537,10 @@ sitedata-cookies-exceptions =
 ## Privacy Section - Address Bar
 
 addressbar-header = របារអាសយដ្ឋាន
+addressbar-suggest = នៅពេលប្រើប្រាស់​របារអាសយដ្ឋាន ណែនាំ
+addressbar-locbar-history-option =
+    .label = ប្រវត្តិការរុករក
+    .accesskey = h
 addressbar-locbar-bookmarks-option =
     .label = ចំណាំ
     .accesskey = k
@@ -449,10 +551,28 @@ addressbar-suggestions-settings = ប្ដូរ​ចំណូលចិត្�
 
 ## Privacy Section - Content Blocking
 
+content-blocking-header = ទប់ស្កាត់​មាតិកា
+content-blocking-learn-more = ស្វែងយល់​បន្ថែម
+content-blocking-restore-defaults =
+    .label = ស្ដារ​លំនាំ​ដើម
+    .accesskey = R
+content-blocking-toggle-label-on = បើក
+    .accesskey = O
+content-blocking-toggle-label-off = បិទ
+    .accesskey = O
+content-blocking-setting-standard =
+    .label = ស្ដង់ដា
+    .accesskey = d
+content-blocking-setting-custom =
+    .label = ផ្ទាល់ខ្លួន
+    .accesskey = C
+content-blocking-learn-how = ស្វែងយល់​ពី​របៀប
 
 ## Privacy Section - Tracking
 
 tracking-header = ការពារ​ការ​តាមដាន
+tracking-desc = ការការពារការតាមដាន​នឹងទប់ស្កាត់កម្មវិធីតាមដានលើអ៊ីនធឺណិត​ដែលប្រមូលទិន្នន័យការរុករករបស់អ្នក​នៅ​លើ​គេហទំព័រ​​ច្រើន។ <a data-l10n-name="learn-more">ស្វែងយល់បន្ថែមអំពីការការពារការតាមដាន និងឯកជនភាព​របស់អ្នក</a>
+tracking-mode-label = ប្រើការការពារការតាមដាន ដើម្បីទប់ស្កាត់កម្មវិធីតាមដានដែលស្គាល់
 tracking-mode-always =
     .label = ជានិច្ច
     .accesskey = y
@@ -465,15 +585,22 @@ tracking-mode-never =
 tracking-exceptions =
     .label = ករណី​លើកលែង…
     .accesskey = x
+tracking-change-block-list =
+    .label = ផ្លាស់ប្ដូរបញ្ជីទប់ស្កាត់…
+    .accesskey = C
 
 ## Privacy Section - Permissions
 
+permissions-header = ការ​អនុញ្ញាត
+permissions-location = ទីតាំង
 permissions-location-settings =
     .label = ការកំណត់...
     .accesskey = t
+permissions-camera = កាមេរ៉ា
 permissions-camera-settings =
     .label = ការ​កំណត់...
     .accesskey = t
+permissions-microphone = មីក្រូហ្វូន
 permissions-microphone-settings =
     .label = ការកំណត់...
     .accesskey = t
@@ -481,6 +608,15 @@ permissions-notification = ការ​ជូនដំណឹង
 permissions-notification-settings =
     .label = ការកំណត់...
     .accesskey = t
+permissions-notification-link = ស្វែងយល់​បន្ថែម
+permissions-notification-pause =
+    .label = ផ្អាកការជូនដំណឹងរហូតដល់ { -brand-short-name } ចាប់ផ្តើមឡើងវិញ
+    .accesskey = n
+permissions-block-autoplay-media-exceptions =
+    .label = ករណីលើកលែង…
+    .accesskey = E
+autoplay-option-ask =
+    .label = សួរជានិច្ច
 permissions-block-popups =
     .label = ទប់ស្កាត់​​បង្អួច​លេច​ឡើង
     .accesskey = ទ
@@ -493,13 +629,24 @@ permissions-addon-install-warning =
 permissions-addon-exceptions =
     .label = ករណី​លើកលែង…
     .accesskey = E
+permissions-a11y-privacy-checkbox =
+    .label = រារាំងសេវាកម្មភាពងាយស្រួលចូល​ប្រើ​មិនឲ្យចូលប្រើកម្មវិធីរុករក​អ៊ីនធឺណិត​របស់អ្នក
+    .accesskey = a
+permissions-a11y-privacy-link = ស្វែងយល់​បន្ថែម
 
 ## Privacy Section - Data Collection
 
+collection-header = ការប្រមូល និងការប្រើប្រាស់ទិន្នន័យ { -brand-short-name }
+collection-description = យើងខិតខំផ្តល់ជូនអ្នកនូវជម្រើស និងប្រមូលតែ​អ្វីដែលយើងត្រូវការ ដើម្បីផ្តល់ និងកែលម្អ { -brand-short-name } សម្រាប់មនុស្សគ្រប់គ្នា​​ប៉ុណ្ណោះ។ យើងតែងតែសុំការអនុញ្ញាត មុនពេលទទួលបានព័ត៌មានផ្ទាល់ខ្លួន។
+collection-privacy-notice = ការជូនដំណឹង​អំពី​ឯកជនភាព
+collection-health-report =
+    .label = អនុញ្ញាតឲ្យ { -brand-short-name } ផ្ញើទិន្នន័យបច្ចេកទេស និងអន្តរកម្មទៅ { -vendor-short-name }
+    .accesskey = r
 collection-health-report-link = ស្វែងយល់​​បន្ថែម
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = ការ​រាយការណ៍​ទិន្នន័យ​ត្រូវ​បាន​បិទ​សម្រាប់​ការ​កំណត់​រចនាសម្ព័ន្ធ​កំណែ​នេះ
+collection-browser-errors-link = ស្វែងយល់​បន្ថែម
 collection-backlogged-crash-reports-link = ស្វែងយល់​​បន្ថែម
 
 ## Privacy Section - Security
@@ -508,9 +655,11 @@ collection-backlogged-crash-reports-link = ស្វែងយល់​​បន�
 ## https://developers.google.com/safe-browsing/developers_guide_v2#AcceptableUsage
 
 security-header = សុវត្ថិភាព
+security-browsing-protection = ការការពារខ្លឹមសារ និងផ្នែកទន់ដែលមានភាពគ្រោះថ្នាក់
 security-enable-safe-browsing =
     .label = ទប់ស្កាត់​មាតិកា​ដែល​មាន​ភាព​គ្រោះថ្នាក់​និង​ការ​បញ្ឆោត
     .accesskey = B
+security-enable-safe-browsing-link = ស្វែងយល់​បន្ថែម
 security-block-downloads =
     .label = ទប់ស្កាត់​ការ​ទាញយក​ដែល​គ្រោះថ្នាក់
     .accesskey = d
@@ -531,3 +680,33 @@ certs-select-ask-option =
 certs-enable-ocsp =
     .label = ម៉ាស៊ីន​មេ​កម្មវិធី​ឆ្លើយតប OCSP ត្រូវ​បញ្ជាក់​ភាព​ត្រឹមត្រូវ​នៃ​វិញ្ញាបនបត្រ​បច្ចុប្បន្ន
     .accesskey = Q
+certs-view =
+    .label = មើល​វិញ្ញាបនបត្រ…
+    .accesskey = C
+certs-devices =
+    .label = ឧបករណ៍​សុវត្ថិភាព…
+    .accesskey = D
+space-alert-learn-more-button =
+    .label = ស្វែងយល់​បន្ថែម
+    .accesskey = L
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] បើក​ជម្រើស
+           *[other] បើក​ចំណូលចិត្ត
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] O
+        }
+space-alert-under-5gb-ok-button =
+    .label = យល់​ហើយ
+    .accesskey = K
+space-alert-under-5gb-message = { -brand-short-name } កំពុង​អស់​ទំហំ​ផ្ទុក​ទំនេរ។ មាតិកា​គេហទំព័រ​​អាច​មិន​បង្ហាញ​បាន​ត្រឹមត្រូវ។ ចូល​មើល “ស្វែងយល់​បន្ថែម” ដើម្បី​ធ្វើ​ឲ្យ​ការ​ប្រើប្រាស់​ថាស​របស់​អ្នកប្រសើរ​ឡើង​សម្រាប់​បទពិសោធន៍​រកមើល​​ប្រសើរ​ជាង​មុន។
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = ផ្ទៃតុ
+downloads-folder-name = ទាញ​យក
+choose-download-folder-title = ជ្រើស​ថត​ទាញ​យក ៖

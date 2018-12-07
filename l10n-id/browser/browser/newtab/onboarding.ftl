@@ -6,6 +6,7 @@
 ## UI strings for the simplified onboarding modal
 
 onboarding-button-label-try-now = Coba Sekarang
+onboarding-button-label-get-started = Bersiap
 onboarding-welcome-header = Selamat datang di { -brand-short-name }
 onboarding-start-browsing-button-label = Mulai Menjelajah
 
@@ -24,3 +25,6 @@ onboarding-addons-title = Pengaya
 onboarding-addons-text = Tambahkan fitur-fitur lain yang membuat { -brand-short-name } bekerja lebih keras untuk Anda. Bandingkan harga, periksa cuaca, atau ungkapkan kepribadian Anda dengan tema yang disesuaikan.
 onboarding-ghostery-title = Ghostery
 onboarding-ghostery-text = Jelajahi lebih cepat, lebih cerdas, atau lebih aman dengan ekstensi seperti Ghostery, yang memungkinkan Anda memblokir iklan-iklan yang menjengkelkan.
+# Note: "Sync" in this case is a generic verb, as in "to synchronize"
+onboarding-fxa-title = Sinkronkan
+onboarding-fxa-text = Daftar { -fxaccount-brand-name } dan sinkronkan markah, kata sandi Anda, dan buka tab di mana pun Anda menggunakan { -brand-short-name }.

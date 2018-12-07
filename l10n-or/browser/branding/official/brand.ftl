@@ -15,3 +15,6 @@
 
 -brand-short-name = Firefox
 -vendor-short-name = Mozilla
+-brand-full-name = Mozilla Firefox
+-brand-shorter-name = Firefox
+trademarkInfo = Firefox ଏବଂ Firefox ପ୍ରତୀକଗୁଡ଼ିକ Mozilla ଅନୁଷ୍ଠାନର ବାଣିଜ୍ୟିକ ଚିହ୍ନ ଅଟେ।

@@ -53,6 +53,7 @@ pane-sync-title = Účet Firefoxu
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = Nápověda
+addons-button-label = Rozšíření a vzhledy
 focus-search =
     .key = f
 close-button =
@@ -83,6 +84,9 @@ extension-controlled-homepage-override = Vaši domovskou stránku spravuje rozš
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Stránku v novém panelu spravuje rozšíření <img data-l10n-name="icon"/> { $name }.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = Toto nastavení spravuje rozšíření <img data-l10n-name="icon"/> { $name }.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Rozšíření <img data-l10n-name="icon"/> { $name } vám nastavilo nový výchozí vyhledávací modul.
@@ -148,6 +152,9 @@ open-new-link-as-tabs =
     .accesskey = O
 warn-on-close-multiple-tabs =
     .label = Varovat při zavírání více panelů
+    .accesskey = v
+warn-on-quit-close-multiple-tabs =
+    .label = Varovat při ukončování prohlížeče a zavírání více panelů
     .accesskey = v
 warn-on-open-many-tabs =
     .label = Varovat, pokud by mohlo otevírání více panelů aplikaci { -brand-short-name } zpomalit
@@ -287,6 +294,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = Automaticky aktualizovat vyhledávací moduly
     .accesskey = e
+update-pref-write-failure-title = Chyba při zápisu
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = Vaše předvolby se nepodařilo uložit. Není možný zápis do souboru: { $path }
 
 ## General Section - Performance
 
@@ -326,10 +337,13 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Psaním vyhledávat text na stránce
     .accesskey = x
+browsing-cfr-recommendations =
+    .label = Doporučovat vhodná rozšíření pro navštívené stránky
+    .accesskey = r
+browsing-cfr-recommendations-learn-more = Zjistit více
 
 ## General Section - Proxy
 
-network-proxy-title = Nastavení připojení
 network-settings-title = Nastavení sítě
 network-proxy-connection-description = Konfigurovat připojení aplikace { -brand-short-name } k internetu.
 network-proxy-connection-learn-more = Zjistit více
@@ -532,6 +546,7 @@ privacy-header = Nastavení soukromí
 ## Privacy Section - Forms
 
 forms-header = Formuláře a hesla
+logins-header = Přihlašovací údaje
 forms-ask-to-save-logins =
     .label = Ptát se na ukládání přihlašovacích údajů
     .accesskey = P
@@ -598,26 +613,15 @@ sitedata-total-size-calculating = Výpočet velikosti mezipaměti a dat stránek
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Velikost cookies, dat uložených stránkami a mezipaměti je { $value } { $unit }.
 sitedata-learn-more = Zjistit více
-sitedata-accept-cookies-option =
-    .label = Povolit serverům ukládat cookies a data stránek (doporučeno)
-    .accesskey = a
-sitedata-block-cookies-option =
-    .label = Blokovat ukládání cookies a dat (stránky nemusí fungovat správně)
-    .accesskey = B
 sitedata-keep-until = Cookies ponechat do
     .accesskey = d
 sitedata-keep-until-expire =
     .label = konce doby platnosti
 sitedata-keep-until-closed =
     .label = ukončení aplikace { -brand-short-name }
-sitedata-accept-third-party-desc = Cookies a data třetích stran
-    .accesskey = t
-sitedata-accept-third-party-always-option =
-    .label = povolit vždy
-sitedata-accept-third-party-visited-option =
-    .label = povolit pouze navštívené
-sitedata-accept-third-party-never-option =
-    .label = nikdy nepovolovat
+sitedata-delete-on-close =
+    .label = Vymazat cookies a data stránek při zavření aplikace { -brand-short-name }
+    .accesskey = c
 sitedata-allow-cookies-option =
     .label = Ukládat všechny cookies a data stránek
     .accesskey = a
@@ -651,6 +655,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = Vaše nastavení blokování obsahu brání změnám nastavení cookies a dat stránek.
+sitedata-cookies-permissions =
+    .label = Spravovat oprávnění…
+    .accesskey = S
 
 ## Privacy Section - Address Bar
 
@@ -669,8 +676,9 @@ addressbar-suggestions-settings = Nastavit našeptávání vyhledávače
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Blokování obsahu a ochrana proti sledování
+content-blocking-header = Blokování obsahu
 content-blocking-desc = Zablokujte obsah třetích stran, jako jsou reklamy nebo kód, který zpomaluje načítání stránek a sleduje vaše aktivity na internetu. Úroveň blokování můžete upravit podle vlastních nároků na rychlost načítání i ochranu soukromí.
+content-blocking-description = Blokuje obsah třetích stran, který vás na webu sleduje. Sami určete, jak velká část z vašich aktivit na internetu se bude ukládat a sdílet mezi stránkami.
 content-blocking-learn-more = Zjistit více
 content-blocking-restore-defaults =
     .label = Obnovit výchozí nastavení
@@ -689,19 +697,41 @@ content-blocking-category-label = Vyberte, co chcete blokovat
 # have not finished loading after a certain threshold of seconds.
 content-blocking-fastblock-slow-loading-trackers-label =
     .label = Zpomalující sledovací prvky
-    .accesskey = s
+    .accesskey = Z
 content-blocking-fastblock-new-description = Blokovat jen sledovací prvky, které zpomalují načítání stránek.
+content-blocking-setting-standard =
+    .label = Standardní
+    .accesskey = d
+content-blocking-setting-strict =
+    .label = Přísné
+    .accesskey = P
+content-blocking-setting-custom =
+    .label = Vlastní
+    .accesskey = V
+content-blocking-standard-desc = Vyvážená úroveň ochrany. Povoluje některé sledovací prvky, aby stránky fungovaly správně.
+content-blocking-strict-desc = Blokuje všechny sledovací prvky, které { -brand-short-name } najde. Může omezit fungování některých stránek.
+content-blocking-custom-desc = Sami vyberte, co chcete blokovat.
+content-blocking-private-trackers = Sledovací prvky blokovány v anonymních oknech
+content-blocking-third-party-cookies = Sledovací cookies třetích stran blokovány vždy
+content-blocking-all-windows-trackers = Sledovací prvky blokovány vždy
+content-blocking-all-third-party-cookies = Všechny cookies třetích stran blokovány vždy
+content-blocking-warning-title = Pozor!
+content-blocking-warning-desc = Blokování cookies a sledovacích prvků může omezit fungování některých stránek. Pro stránky, kterým důvěřujete, ale můžete blokování snadno vypnout.
+content-blocking-learn-how = Jak na to?
+content-blocking-tracking-protection-trackers-label =
+    .label = Sledovací prvky
+    .accesskey = S
 content-blocking-tracking-protection-all-detected-trackers-label =
     .label = Všechny nalezené sledovací prvky
     .accesskey = s
-content-blocking-tracking-protection-new-description = Blokovat všechny známe sledovací prvky (může omezit fungování některých stránek).
+content-blocking-tracking-protection-new-description = Blokovat všechny nalezené sledovací prvky (může omezit fungování některých stránek).
 content-blocking-tracking-protection-option-always =
     .label = Vždy
     .accesskey = V
 content-blocking-tracking-protection-option-private =
     .label = Pouze v anonymních oknech
     .accesskey = P
-content-blocking-tracking-protection-change-block-list = Změnit seznam blokací
+content-blocking-tracking-protection-change-block-list = Změnit úroveň blokování
 content-blocking-third-party-cookies-label =
     .label = Cookies třetích stran
     .accesskey = C
@@ -723,6 +753,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = Všechny cookies třetích stran (může omezit fungování některých stránek)
     .accesskey = a
+content-blocking-cookies-label =
+    .label = Cookies
+    .accesskey = C
 
 ## Privacy Section - Tracking
 
@@ -738,16 +771,15 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Nikdy
     .accesskey = n
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Používat ochranu proti sledování známými sledovacími prvky při anonymním prohlížení
-    .accesskey = v
 tracking-exceptions =
     .label = Výjimky…
     .accesskey = j
 tracking-change-block-list =
     .label = Změnit seznam blokací…
     .accesskey = c
+tracking-manage-exceptions =
+    .label = Spravovat výjimky…
+    .accesskey = p
 
 ## Privacy Section - Permissions
 
@@ -806,24 +838,24 @@ permissions-a11y-privacy-link = Zjistit více
 ## Privacy Section - Data Collection
 
 collection-header = Sběr a používání dat o aplikaci { -brand-short-name }
-collection-description = Co se týče dat, dáváme vám vždy na výběr. Také sbíráme jen data potřebná pro vylepšování aplikace { -brand-short-name }. Před odesíláním osobních dat vždy žádáme o váš souhlas.
+collection-description = S daty vám dáváme vždy na výběr a sbíráme jen data potřebná pro vylepšování aplikace { -brand-short-name }. Před odesíláním osobních dat vždy žádáme o váš souhlas.
 collection-privacy-notice = Zásady ochrany osobních údajů
 collection-health-report =
-    .label = Povolit aplikaci { -brand-short-name } odesílat Mozille technická data a data o interakcích
-    .accesskey = z
+    .label = Odesílat technická data a data o interakcích
+    .accesskey = r
 collection-health-report-link = Zjistit více
 collection-studies =
-    .label = Povolit aplikaci { -brand-short-name } instalovat studie
+    .label = Povolit instalaci studií
 collection-studies-link = Zobrazit studie aplikace { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Odesílání dat je zakázáno konfigurací tohoto sestavení
 collection-browser-errors =
-    .label = Povolit aplikaci { -brand-short-name } odesílat Mozille hlášení o chybách a chybové zprávy
+    .label = Odesílat hlášení o chybách a chybové zprávy
     .accesskey = b
 collection-browser-errors-link = Zjistit více
 collection-backlogged-crash-reports =
-    .label = Povolit aplikaci { -brand-short-name } odesílat nevyřízená hlášení o pádech za vás
+    .label = Odesílat nevyřízená hlášení o pádech za vás
     .accesskey = c
 collection-backlogged-crash-reports-link = Zjistit více
 
@@ -864,3 +896,36 @@ certs-view =
 certs-devices =
     .label = Bezpečnostní zařízení…
     .accesskey = B
+space-alert-learn-more-button =
+    .label = Zjistit více
+    .accesskey = Z
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Otevřít možnosti
+           *[other] Otevřít předvolby
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] O
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] Aplikaci { -brand-short-name } dochází místo na disku. Obsah webové stránky se nemusí zobrazit správně. Uložená data stránky můžete vymazat v Nastavení > Soukromí a zabezpečení > Cookies a data stránek.
+       *[other] Aplikaci { -brand-short-name } dochází místo na disku. Obsah webové stránky se nemusí zobrazit správně. Uložená data stránky můžete vymazat v Předvolbách > Soukromí a zabezpečení > Cookies a data stránek.
+    }
+space-alert-under-5gb-ok-button =
+    .label = OK, rozumím
+    .accesskey = K
+space-alert-under-5gb-message = Aplikaci { -brand-short-name } dochází místo na disku. Obsah webové stránky se nemusí zobrazit správně. Klepněte na „Dozvědět se více“ o optimalizaci využití disku k lepšímu prohlížení webu.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Plocha
+downloads-folder-name = Stažené soubory
+choose-download-folder-title = Vyberte složku pro stahování souborů
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Uložit soubory na { $service-name }

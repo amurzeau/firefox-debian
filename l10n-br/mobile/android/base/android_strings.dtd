@@ -128,7 +128,7 @@
 <!-- Localization note (switch_button_message): This string should be as short
      as possible because it's shown as a label in a toast.  Ideally, this string
      is upper-case, to match Google and Android's convention. -->
-<!ENTITY switch_button_message "TREC\&apos;HAOLER">
+<!ENTITY switch_button_message "MONT">
 <!-- Localization note (tab_title_prefix_is_playing_audio): This string is not
      visible in the UI, but rather used as a text-to-speech content description
      for sight-impaired a11y users. The content description is set on a tab
@@ -291,6 +291,11 @@
      Similar to the already existing "pref_whats_new_notification_summary"-->
 <!ENTITY pref_feature_tips_notification_summary "Deskit hiroc\&apos;h a-zivout arverañ &brandShortName; hag aozadoù all &vendorShortName;">
 
+<!-- Localization note (pref_feature_tips_notification_enabling_hint):
+     Describe the action the user should do to enable this preference
+     Will be used in the context "<Turn on> ... to enable this feature" -->
+<!ENTITY pref_feature_tips_notification_enabling_hint "Gweredekaat">
+
 <!-- Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
      for experimental features. -->
 <!ENTITY pref_category_experimental "Keweriusterioù arnodel">
@@ -363,7 +368,6 @@
 <!ENTITY pref_use_system_font_size_summary "Skeuliadañ an endalc\&apos;had web e-keñver ment nodrezh ar reizhiad">
 
 <!ENTITY pref_media_autoplay_enabled "Aotre al lenn emgefreek">
-<!ENTITY pref_media_autoplay_enabled_summary "Mestroniañ lenn emgefreek ar videoioù ha ar mediaoù all gant al lec\&apos;hiennoù ">
 <!ENTITY pref_media_autoplay_allow "Aotren an emlenn">
 <!ENTITY pref_media_autoplay_block "Paouez an emlenn">
 <!ENTITY pref_zoom_force_enabled "Gweredekaat ar zoum bepred">
@@ -828,9 +832,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- LOCALIZATION NOTE(corrupt_apk): This notification is shown if corruption has been detected on startup and the user has to reinstall Firefox -->
 <!ENTITY corrupt_apk "N\&apos;haller ket digeriñ &brandShortName;. Stailhit anezhañ en-dro hag adklaskit.">
 
-<!ENTITY eol_notification_title2 "Ne vo ket hizivaet &brandShortName; ken">
-<!ENTITY eol_notification_summary "Stokit da c\&apos;houzout hiroc\&apos;h">
-
 <!-- LOCALIZATION NOTE (whatsnew_notification_title, whatsnew_notification_summary): These strings
      are used for a system notification that's shown to users after the app updates. -->
 <!ENTITY whatsnew_notification_title "Hizivaet eo &brandShortName;">
@@ -897,10 +898,16 @@ Picture-in-picture mini window -->
 
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY default_notification_channel2 "Merdeer">
 <!ENTITY mls_notification_channel "&vendorShortName; Servij lec\&apos;heladur">
 <!ENTITY download_notification_channel "Pellgargadennoù">
 <!ENTITY media_notification_channel "Lennadur media">
+<!ENTITY media_notification_channel2 "Son ha video">
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
 <!ENTITY leanplum_default_notifications_channel "Rebuzadurioù Push &brandShortName;">
+<!ENTITY leanplum_default_notifications_channel2 "Tunioù &vendorShortName;">
 <!ENTITY updater_notification_channel "Hizivadennoù an arload">
 <!ENTITY synced_tabs_notification_channel "Ivinelloù goubredet">
+<!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
+web sites through the HTML Notifications API. -->
+<!ENTITY site_notifications_channel "Rebuzadurioù al lec\&apos;hienn">

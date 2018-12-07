@@ -118,7 +118,7 @@ startup-header = Caki
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
     .label = Ye { -brand-short-name } ki Firefox me tic lawang acel
-use-firefox-sync = Ngec: Man tiyo ki propwail ma patpat. Tii ki Ribo me nywako data ikin gi.
+use-firefox-sync = Ngec: Man tiyo ki propwail ma patpat. Tii ki { -sync-brand-short-name } me nywako data ikin gi.
 get-started-not-logged-in = Dony iyie me { -sync-brand-short-name }…
 get-started-configured = Yab ter me { -sync-brand-short-name }
 always-check-default =
@@ -304,10 +304,11 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Yeny coc ka acako coyo coc
     .accesskey = c
+browsing-cfr-recommendations-learn-more = Nong ngec mapol
 
 ## General Section - Proxy
 
-network-proxy-title = Proxy me netwak
+network-settings-title = Ter me Netwak
 network-proxy-connection-description = Ter kit ma { -brand-short-name } kube ki intanet.
 network-proxy-connection-learn-more = Nong ngec mapol
 network-proxy-connection-settings =
@@ -317,6 +318,7 @@ network-proxy-connection-settings =
 ## Home Section
 
 home-new-windows-tabs-header = Dirica ki dirica matino manyen
+home-new-windows-tabs-description2 = Yer ngo ma ineno ka iyabo potbuk me acakki mamegi, dirica manyen, ki dirica matino manyen.
 
 ## Home Section - Home Page Customization
 
@@ -502,6 +504,7 @@ privacy-header = Mung pa layeny
 ## Privacy Section - Forms
 
 forms-header = Pwom ki mung me donyo
+logins-header = Donyo iyie ki mung me donyo
 forms-ask-to-save-logins =
     .label = Peny me gwoko donyo iyie ki mung me donyo pi kakube
     .accesskey = k
@@ -563,24 +566,20 @@ history-clear-button =
 
 sitedata-header = Angija ki Data me kakube
 sitedata-learn-more = Nong ngec mapol
-sitedata-accept-cookies-option =
-    .label = Yee angija ki data me kakube ki ii kakube (kicwako)
-    .accesskey = Y
-sitedata-block-cookies-option =
-    .label = Geng angija ki data me kakube (twero weko kakube bale)
-    .accesskey = G
 sitedata-keep-until = Gwok wang ma
     .accesskey = a
 sitedata-keep-until-expire =
     .label = Kare gitum ii
 sitedata-keep-until-closed =
     .label = { -brand-short-name } olore oko
-sitedata-accept-third-party-always-option =
-    .label = Jwijwi
-sitedata-accept-third-party-visited-option =
-    .label = Ki i ma kilimo
-sitedata-accept-third-party-never-option =
-    .label = Pe matwal
+sitedata-allow-cookies-option =
+    .label = Yee angija ki data me kakube
+    .accesskey = Y
+sitedata-disallow-cookies-option =
+    .label = Geng angija ki data me kakube
+    .accesskey = G
+sitedata-block-unvisited-option =
+    .label = Angija ki ii kakube mape kilimo
 sitedata-clear =
     .label = Jwa data…
     .accesskey = j
@@ -597,7 +596,7 @@ addressbar-header = Lanyut me kanonge
 addressbar-suggest = Ka i tye katic ki lanyut me kabedo, mi tam
 addressbar-locbar-history-option =
     .label = Gin mukato me yeny
-    .accesskey = { "" }
+    .accesskey = G
 addressbar-locbar-bookmarks-option =
     .label = Alama buk
     .accesskey = l
@@ -613,19 +612,26 @@ content-blocking-restore-defaults =
     .label = Dwok makwongo
     .accesskey = D
 content-blocking-category-label = Yer ngo me agenga
-content-blocking-fastblock-option-enabled =
-    .label = Geng jwijwi
-content-blocking-fastblock-option-disabled =
-    .label = Matwal pe i geng
-content-blocking-tracking-protection-label = Lulub kor
-    .accesskey = B
-content-blocking-tracking-protection-description = Geng lulub kor weng ma ngene (Ngec: twero bene gengo cano potbuk mukene.
-content-blocking-tracking-protection-option-enabled =
-    .label = Jwijwi geng
-content-blocking-tracking-protection-option-pbm =
-    .label = Geng i dirica me mung keken
-content-blocking-tracking-protection-option-disabled =
-    .label = Matwal pe i geng
+content-blocking-custom-desc = Yer ngo me agenga.
+content-blocking-warning-title = Ngec!
+content-blocking-warning-desc = Gengo angija ki lulub kor twero weko kakube mogo bale woko. Yot me juko geng pi kakube ma igeno.
+content-blocking-learn-how = Nong ngec nining
+content-blocking-tracking-protection-trackers-label =
+    .label = Lulub kor
+    .accesskey = L
+content-blocking-tracking-protection-new-description = Geng lulub kor weng ma ngene. (Twero gengo kakube mogo me cane.)
+content-blocking-tracking-protection-option-always =
+    .label = Jwijwi
+    .accesskey = J
+content-blocking-tracking-protection-option-private =
+    .label = I dirica me mung keken
+    .accesskey = d
+content-blocking-change-cookie-settings =
+    .label = Lok Ter me Angija
+    .accesskey = T
+content-blocking-cookies-label =
+    .label = Angija
+    .accesskey = A
 
 ## Privacy Section - Tracking
 
@@ -641,10 +647,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Pe matwal
     .accesskey = a
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Tii ki Gwokke ikom lubo kor ii Yeny me mung me gengo lulub kor ma ngene
-    .accesskey = v
 tracking-exceptions =
     .label = Ma kiweko woko…
     .accesskey = M
@@ -754,3 +756,36 @@ certs-view =
 certs-devices =
     .label = Nyonyo me ber bedo…
     .accesskey = N
+space-alert-learn-more-button =
+    .label = Nong ngec mapol
+    .accesskey = N
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Yab gin ayera
+           *[other] Yab ter
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] Y
+           *[other] Y
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } odong ki kabedo me disk manok. Jami me kakube mogo pe bi nyute maber. Itwero jwayo data me kakube ma kigwoko i Ter > Mung ki Ber bedo > Angija ki Data me Kakube.
+       *[other] { -brand-short-name } odong ki kabedo me disk manok. Jami me kakube mogo pe bi nyute maber. Itwero jwayo data me kakube ma kigwoko i Ter > Mung ki Ber bedo > Angija ki Data me Kakube.
+    }
+space-alert-under-5gb-ok-button =
+    .label = AYA, Aniang
+    .accesskey = A
+space-alert-under-5gb-message = { -brand-short-name } odong ki kabedo me disk manok. Jami me kakube mogo pe bi nyute maber. Lim “Nong ngec mapol” me yubo tic ki disk mamegi ma opore pi yeny maber loyo.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Wang kompiuta
+downloads-folder-name = Gam
+choose-download-folder-title = Yer boc me gam:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Gwok pwail i { $service-name }

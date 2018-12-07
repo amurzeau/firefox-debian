@@ -6,6 +6,8 @@ do-not-track-description = Cuir sanas “Na dèan tracadh orm” gu làraichean-
 do-not-track-learn-more = Barrachd fiosrachaidh
 do-not-track-option-default =
     .label = Dìreach nuair a chleachdar dìon o thracadh
+do-not-track-option-default-content-blocking =
+    .label = Dìreach ma chaidh suidheachadh gum bac { -brand-short-name } tracaichean ris an do mhothaich sinn
 do-not-track-option-always =
     .label = An-còmhnaidh
 pref-page =
@@ -51,6 +53,7 @@ pane-sync-title = Cunntas Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = Taic le { -brand-short-name }
+addons-button-label = Leudachain ⁊ ùrlaran
 focus-search =
     .key = f
 close-button =
@@ -81,6 +84,9 @@ extension-controlled-homepage-override = Tha smachd aig leudachan, <img data-l10
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Tha smachd aig leudachan, <img data-l10n-name="icon"/> { $name }, air duilleag an taba ùir agad.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = Tha smachd aig leudachan, <img data-l10n-name="icon"/> { $name }, air an roghainn seo.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Shuidhich leudachan, <img data-l10n-name="icon"/> { $name }, an t-einnsean-luirg bunaiteach agad.
@@ -90,6 +96,9 @@ extension-controlled-privacy-containers = Tha feum air leudachan, <img data-l10n
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Tha leudachan, <img data-l10n-name="icon"/> { $name }, a’ stiùireadh an dìon o thracadh.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Tha smachd aig leudachan, <img data-l10n-name="icon"/> { $name }, air an roghainn seo.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Tha smachd aig leudachan, <img data-l10n-name="icon"/> { $name }, mar a cheanglas { -brand-short-name } ris an eadar-lìon.
@@ -143,6 +152,9 @@ open-new-link-as-tabs =
     .accesskey = w
 warn-on-close-multiple-tabs =
     .label = Thoir rabhadh mus dùin mi iomadh taba còmhla
+    .accesskey = m
+warn-on-quit-close-multiple-tabs =
+    .label = Thoir rabhadh mus fhàg is mus dùin mi iomadh taba còmhla
     .accesskey = m
 warn-on-open-many-tabs =
     .label = Ma tha cunnart gun cuir cus thabaichean maille air { -brand-short-name }, thoir rabhadh
@@ -208,6 +220,12 @@ choose-language-description = Tagh an cànan as fhearr leat anns a nochdar dhut 
 choose-button =
     .label = Tagh…
     .accesskey = a
+choose-browser-language-description = Tagh na cànain anns an dèid clàran-taice, teachdaireachdan is brathan o { -brand-short-name } a shealltainn.
+manage-browser-languages-button =
+    .label = Suidhich roghainn eile...
+    .accesskey = l
+confirm-browser-language-change-description = Ath-thòisich { -brand-short-name } gus na h-atharraichean seo a chur an comas
+confirm-browser-language-change-button = Cuir an sàs is ath-thòisich
 translate-web-pages =
     .label = Eadar-theangaich susbaint-lìn
     .accesskey = t
@@ -279,6 +297,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = na h-einnseanan-luirg ùrachadh gu fèin-obrachail
     .accesskey = e
+update-pref-write-failure-title = Fàilligeadh sgrìobhaidh
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = Chan urrainn dhuinn an roghainn a shàbhaladh. Cha b’ urrainn dhuinn sgrìobhadh san fhaidhle “{ $path }”
 
 ## General Section - Performance
 
@@ -318,10 +340,14 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Lorg teacsa cho luath ’s a thòisicheas tu air sgrìobhadh
     .accesskey = L
+browsing-cfr-recommendations =
+    .label = Mol leudachain fhad ’s a bhios mi ri brabhsadh
+    .accesskey = r
+browsing-cfr-recommendations-learn-more = Barrachd fiosrachaidh
 
 ## General Section - Proxy
 
-network-proxy-title = Progsaidh lìonraidh
+network-settings-title = Roghainnean an lìonraidh
 network-proxy-connection-description = Rèitich mar a cheanglas { -brand-short-name } ris an eadar-lìon.
 network-proxy-connection-learn-more = Barrachd fiosrachaidh
 network-proxy-connection-settings =
@@ -519,6 +545,7 @@ privacy-header = Prìobhaideachd a’ bhrabhsair
 ## Privacy Section - Forms
 
 forms-header = Foirmean ⁊ faclan-faire
+logins-header = Clàraidhean a-steach ⁊ faclan-faire
 forms-ask-to-save-logins =
     .label = Faighnich an dèid clàraidhean a-steach is faclan-faire làraichean-lìn a shàbhaladh
     .accesskey = r
@@ -585,26 +612,35 @@ sitedata-total-size-calculating = Ag àireamhachadh meud dàta na làraich is an
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Tha na tha de bhriosgaidean, dàta làraichean is an tasgadan a’ cleachdadh { $value } { $unit } de dh’àite air an diosg an-dràsta.
 sitedata-learn-more = Barrachd fiosrachaidh
-sitedata-accept-cookies-option =
-    .label = Gabh ri briosgaidean is dàta làraich o làraichean-lìn (mholamaid seo)
-    .accesskey = A
-sitedata-block-cookies-option =
-    .label = Bac briosgaidean is dàta làraich (dh’fhaoidte nach obraich cuid a làraichean ma nì thu seo)
-    .accesskey = B
 sitedata-keep-until = Cum gus
     .accesskey = u
 sitedata-keep-until-expire =
     .label = Falbhaidh an ùine orra
 sitedata-keep-until-closed =
     .label = Tha { -brand-short-name } dùinte
-sitedata-accept-third-party-desc = Gabh ri briosgaidean is dàta làraich o threas-phàrtaidhean
-    .accesskey = y
-sitedata-accept-third-party-always-option =
-    .label = An-còmhnaidh
-sitedata-accept-third-party-visited-option =
-    .label = O fheadhainn air an deach tadhal
-sitedata-accept-third-party-never-option =
-    .label = Chan ann idir
+sitedata-delete-on-close =
+    .label = Sguab às briosgaidean is dàta làraichean nuair a thèid { -brand-short-name } a dhùnadh
+    .accesskey = c
+sitedata-allow-cookies-option =
+    .label = Gabh ri briosgaidean is dàta làraichean
+    .accesskey = a
+sitedata-disallow-cookies-option =
+    .label = Bac briosgaidean is dàta làraichean
+    .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Seòrsa bacte
+    .accesskey = t
+sitedata-block-trackers-option-recommended =
+    .label = Tracaichean le treas-phàrtaidhean (mholamaid seo)
+sitedata-block-trackers-option =
+    .label = Tracaichean le treas-phàrtaidhean
+sitedata-block-unvisited-option =
+    .label = Briosgaidean o làraichean air nach do thadhail mi
+sitedata-block-all-third-party-option =
+    .label = Gach briosgaid le treas-phàrtaidh (dh’fhaoidte nach obraich cuid a làraichean ri linn)
+sitedata-block-all-option =
+    .label = Briosgaid sam bith (chan obraich cuid a làraichean ri linn)
 sitedata-clear =
     .label = Falamhaich an dàta...
     .accesskey = l
@@ -614,6 +650,13 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Eisgeachdan…
     .accesskey = E
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Tha na roghainnean agad san earrann “Bacadh susbaint” a’ bacadh atharraichean air roghainnean nam briosgaidean is dàta làraichean.
+sitedata-cookies-permissions =
+    .label = Stiùirich na ceadan…
+    .accesskey = S
 
 ## Privacy Section - Address Bar
 
@@ -632,6 +675,72 @@ addressbar-suggestions-settings = Atharraich na roghainnean a thaobh mholaidhean
 
 ## Privacy Section - Content Blocking
 
+content-blocking-header = Bacadh susbaint
+content-blocking-desc = Bac susbaint le treas-phàrtaidhean, mar shanasachd no còd, a chuireadh dàil air a’ bhrabhsadh agus a thracaicheadh tu air feadh an lìn. Gnàthaich na roghainnean agad airson deagh-chothromachadh eadar dìon is dèanadas.
+content-blocking-learn-more = Barrachd fiosrachaidh
+content-blocking-restore-defaults =
+    .label = Aisig na bun-roghainnean
+    .accesskey = r
+content-blocking-toggle-on =
+    .tooltiptext = Cuir dheth am bacadh susbaint
+content-blocking-toggle-off =
+    .tooltiptext = Cuir air am bacadh susbaint
+content-blocking-toggle-label-on = AIR
+    .accesskey = A
+content-blocking-toggle-label-off = DHETH
+    .accesskey = D
+content-blocking-category-label = Tagh na tha thu airson bacadh
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Tracaichean a tha slaodach ’gan luchdadh
+    .accesskey = s
+content-blocking-fastblock-new-description = Bac dìreach na tracaichean a chuireadh maille air luchdadh dhuilleagan.
+content-blocking-setting-standard =
+    .label = Stannardach
+    .accesskey = d
+content-blocking-setting-strict =
+    .label = Teann
+    .accesskey = n
+content-blocking-setting-custom =
+    .label = Gnàthaichte
+    .accesskey = G
+content-blocking-tracking-protection-trackers-label =
+    .label = Tracaichean
+    .accesskey = T
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Gach tracaiche ris an do mhothaicheadh
+    .accesskey = t
+content-blocking-tracking-protection-new-description = Bac gach tracaiche air a bheil sinn eòlach. (Dh’fhaoidte gun cum seo cuid a dhuilleagan o luchdadh.)
+content-blocking-tracking-protection-option-always =
+    .label = An-còmhnaidh
+    .accesskey = A
+content-blocking-tracking-protection-option-private =
+    .label = Ann an uinneagan prìobhaideach a-mhàin
+    .accesskey = p
+content-blocking-tracking-protection-change-block-list = Atharraich an liosta bacaidh
+content-blocking-third-party-cookies-label =
+    .label = Briosgaidean threas-phàrtaidhean
+    .accesskey = B
+content-blocking-reject-trackers-description = Bac gach briosgaid le treas-phàrtaidh no dìreach an fheadhainn a chaidh a shuidheachadh le tracaiche.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Tha na roghainnean a shuidhich thu ann an earrann nam briosgaidean is dàta làraichean a’ bacadh atharraichean air roghainnean briosgaidean threas-phàrtaidhean.
+content-blocking-change-cookie-settings =
+    .label = Atharraich roghainnean na briosgaid
+    .accesskey = s
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Tracaichean (mholamaid seo)
+    .accesskey = T
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Tracaichean
+    .accesskey = T
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Gach briosgaid le treas-phàrtaidh (dh’fhaoidte nach obraich làraichean ri linn)
+    .accesskey = G
 
 ## Privacy Section - Tracking
 
@@ -647,10 +756,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Chan ann idir
     .accesskey = N
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Cleachd dìon o thracadh sa bhrabhsadh phrìobhaideach airson casg a chur air tracaichean aithnichte
-    .accesskey = p
 tracking-exceptions =
     .label = Eisgeachdan…
     .accesskey = E
@@ -684,9 +789,17 @@ permissions-notification-pause =
 permissions-block-autoplay-media =
     .label = Na leig le làraichean-lìn meadhanan a chluich sa bheil fuaim
     .accesskey = N
+permissions-block-autoplay-media-menu = Airson làraichean-lìn a chluicheas fuaim gu fèin-obrachail
 permissions-block-autoplay-media-exceptions =
     .label = Eisgeachdan...
     .accesskey = E
+autoplay-option-ask =
+    .label = Faighnich an-còmhnaidh
+autoplay-option-allow =
+    .label = Ceadaich fèin-chluich
+autoplay-option-dont =
+    .label = Na cluich gu fèin-obrachail
+permissions-autoplay-link = Barrachd fiosrachaidh
 permissions-block-popups =
     .label = Cuir bacadh air priob-uinneagan
     .accesskey = b
@@ -765,3 +878,36 @@ certs-view =
 certs-devices =
     .label = Uidheaman tèarainteachd...
     .accesskey = n
+space-alert-learn-more-button =
+    .label = Barrachd fiosrachaidh
+    .accesskey = B
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Fosgail na roghainnean
+           *[other] Fosgail na roghainnean
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] o
+           *[other] o
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] Tha an t-àite a’ fàs gann air { -brand-short-name }. Dh’fhaoidte nach dèid an t-susbaint aig làraichean-lìn a shealltainn mar bu chòir. ’S urrainn dhut dàta làraichean a chaidh a stòradh a sguabadh às ann an “Roghainnean” » “Prìobhaideachd ⁊ tèarainteachd” » “Briosgaidean is dàta làraichean”.
+       *[other] Tha an t-àite a’ fàs gann air { -brand-short-name }. Dh’fhaoidte nach dèid an t-susbaint aig làraichean-lìn a shealltainn mar bu chòir. ’S urrainn dhut dàta làraichean a chaidh a stòradh a sguabadh às ann an “Roghainnean” » “Prìobhaideachd ⁊ tèarainteachd” » “Briosgaidean is dàta làraichean”.
+    }
+space-alert-under-5gb-ok-button =
+    .label = Ceart, tha mi agaibh
+    .accesskey = b
+space-alert-under-5gb-message = Tha an t-àite a’ fàs gann air { -brand-short-name }. Dh’fhaoidte nach dèid an t-susbaint aig làraichean-lìn a shealltainn mar bu chòir. Tadhail air “Barrachd fiosrachaidh” airson feabhas a thoirt air an dòigh air an dèid an diosg agad a chleachdadh airson brabhsadh nas fhearr.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Deasg
+downloads-folder-name = Luchdaidhean a-nuas
+choose-download-folder-title = Tagh pasgan nan luchdaidhan a-nuas:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Sàbhail faidhlichean air { $service-name }

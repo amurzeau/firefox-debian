@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = Bloquear
 permissions-capabilities-prompt =
     .label = Preguntar siempre
+permissions-capabilities-listitem-allow =
+    .value = Permitir
+permissions-capabilities-listitem-block =
+    .value = Bloquear
+permissions-capabilities-listitem-allow-first-party =
+    .value = Permitir solo oficiales
+permissions-capabilities-listitem-allow-session =
+    .value = Permitir por esta sesión
 
 ## Invalid Hostname Dialog
 
@@ -54,6 +62,10 @@ permissions-exceptions-tracking-protection-window =
     .title = Excepciones - Protección de seguimiento
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = Has desactivado la protección de seguimiento en estos sitios web.
+permissions-exceptions-content-blocking-window =
+    .title = Excepciones - Bloqueo de contenido
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = Has desactivado el bloqueo de contenido en estos sitios web.
 
 ## Exceptions - Cookies
 
@@ -85,10 +97,6 @@ permissions-exceptions-addons-desc = Puedes especificar qué sitios web pueden i
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = Sitios web permitidos - Reproducción automática
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = Puedes especificar que sitios tienen permitido reproducir automáticamente elementos multimedia. Escribe la dirección exacta del sitio que desear permitir y a continuación aprieta Permitir.
 permissions-exceptions-autoplay-media-window2 =
     .title = Excepciones - Reproducción automática
     .style = { permissions-window.style }

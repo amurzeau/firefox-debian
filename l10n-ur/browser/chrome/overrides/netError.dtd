@@ -9,8 +9,9 @@
 <!ENTITY retry.label "دوبارہ کوشش کریں">
 <!ENTITY returnToPreviousPage.label "واپس جائیں">
 <!ENTITY advanced.label "اعلٰی">
+<!ENTITY continue2.label "مزید…">
+<!ENTITY moreInformation.label "مزید معلومات">
 
-<!ENTITY continue1.label "جاری رکھیں…">
 
 <!-- Specific error messages -->
 
@@ -65,10 +66,10 @@
 <!ENTITY unknownProtocolFound.longDesc "<ul> <li>آپ کو یہ پتہ کھولنے کے لیے دیگر سافٹ ویئر تنصیب کرنے کی ضرورت پڑھ سکتی ہے۔</li> </ul>">
 
 <!ENTITY proxyConnectFailure.title "پراکسی پیش کار کنکشن واپس کر رہا ہے">
-<!ENTITY proxyConnectFailure.longDesc "<ul> <li>پراکسی سیٹنگیں چیک کریں اور یقین کریں کہ یہ ٹھیک ہیں۔</li> <li>یہ چیک کرنے کے لیے کہ آپ کا پراکسی پیش کار ٹھیک سے کام کر رہا ہے، اپنے نیٹورک نظام کار سے رابطہ کریں۔</li> </ul>">
+<!ENTITY proxyConnectFailure.longDesc "<ul> <li>پراکسی ترتیبات چیک کریں اور یقین کریں کہ یہ ٹھیک ہیں۔</li> <li>یہ چیک کرنے کے لیے کہ آپ کا پراکسی پیش کار ٹھیک سے کام کر رہا ہے، اپنے نیٹورک نظام کار سے رابطہ کریں۔</li> </ul>">
 
 <!ENTITY proxyResolveFailure.title "پراکسی پیش کار ڈھونڈیں میں ناکام">
-<!ENTITY proxyResolveFailure.longDesc "<ul> <li>پراکسی سیٹنگیں چیک کریں اور یقین کریں کہ یہ ٹھیک ہیں۔</li> <li>چیک کریں کہ آپ کے کمپیوٹر کے پاس ایک ٹھیک نیٹورک کنکشن ہے۔</li> <li>اگر آپ کا کمپیوٹر یا نیٹورک فصیل کے ذریعے محفوظ ہے تو چیک کریں کہ  ویب تک رسائی کر سکتا ہے۔&brandShortName;</li> </ul>">
+<!ENTITY proxyResolveFailure.longDesc "<ul> <li>پراکسی ترتیبات چیک کریں اور یقین کریں کہ یہ ٹھیک ہیں۔</li> <li>چیک کریں کہ آپ کے کمپیوٹر کے پاس ایک ٹھیک نیٹورک کنکشن ہے۔</li> <li>اگر آپ کا کمپیوٹر یا نیٹورک فصیل کے ذریعے محفوظ ہے تو چیک کریں کہ  ویب تک رسائی کر سکتا ہے۔&brandShortName;</li> </ul>">
 
 <!ENTITY redirectLoop.title "صفحہ ٹھیک طرح سمت نہیں دل رہا">
 <!ENTITY redirectLoop.longDesc "<ul> <li>یہ مسلہ کبھی کبھی کوکیاں نااہل کرنے یا انہیں قبول کہ کرنے کی وجہ سے ہو سکتی ہے۔</li> </ul>">
@@ -80,10 +81,11 @@
 <!ENTITY nssFailure2.longDesc2 "<ul> <li>جو صفحہ آپ دیکھنا چاہ رہے ہیں، دکھایا نہیں جا سکتا کیونکہ موصول قوائف کی اصلیت کی تصدیق نہیں ہو سکی۔</li> <li>ویب سائٹ کے مالک کو اس مسلے کا بتانے کے لیے ان سے رابطہ کریں۔</li> </ul>">
 
 <!ENTITY certerror.longpagetitle1 "آپکا کنکشن محفوظ نہیں ہے">
-<!-- Localization note (certerror.introPara, certerror.introPara1) - The text content of the span tag
+<!-- Localization note (certerror.introPara, certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "<span class='hostname'/> کے مالک نے انکی ویب سائٹ نامناسب طرحہ سے تشکیل کی ہیں۔ آپکی معلومات کو چوری ہونے سے حفاظت کے لئے، &brandShortName; اس ویب سائٹ سے نہیں جڑا ہے۔">
+
 
 
 
@@ -130,5 +132,6 @@ was trying to connect. -->
 
 <!ENTITY blockedByPolicy.title "بلاک شدہ صفحہ">
 
-<!ENTITY prefReset.longDesc "ایسا لگتا ہے کہ اس کی وجہ آپ کی نیٹ ورک سلامتی کی سیٹکگیں ہو سکتی ہے۔ کیا آپ طےشدہ سیٹکگیں بحال کرنا  چاہتے ہیں؟">
-<!ENTITY prefReset.label "طے شدہ سیٹکگیں بحال کریں">
+
+<!ENTITY prefReset.longDesc "ایسا لگتا ہے کہ اس کی وجہ آپ کی نیٹ ورک سلامتی کی ترتیبات ہو سکتی ہے۔ کیا آپ طےشدہ ترتیبات بحال کرناچاہتے ہیں؟">
+<!ENTITY prefReset.label "طے شدہ ترتیبات بحال کریں">

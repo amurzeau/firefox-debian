@@ -15,3 +15,6 @@
 
 -brand-short-name = Firefox
 -vendor-short-name = Mozilla
+-brand-full-name = Mozilla Firefox
+-brand-shorter-name = Firefox
+trademarkInfo = 'S e comharran-malairt aig Fonndas Mozilla a tha ann am Firefox agus sna suaicheantasan Firefox.

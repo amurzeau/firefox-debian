@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = छेक्नुहोस्
 permissions-capabilities-prompt =
     .label = सधैँ सोध्नुहोस्
+permissions-capabilities-listitem-allow =
+    .value = अनुमति दिनुहोस्
+permissions-capabilities-listitem-block =
+    .value = छेक्नुहोस्
+permissions-capabilities-listitem-allow-first-party =
+    .value = पहिलो पार्टीलाई मात्र अनुमति दिनुहोस्
+permissions-capabilities-listitem-allow-session =
+    .value = सेसनलाई अनुमति दिनुहोस्
 
 ## Invalid Hostname Dialog
 
@@ -78,6 +86,9 @@ permissions-exceptions-addons-window =
     .title = अनुमति दिइएको वेबसाइटहरू - एड-अन स्थापना
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = You can specify which web sites are allowed to install add-ons. Type the exact address of the site you want to allow and then click Allow.
+
+## Exceptions - Autoplay Media
+
 
 ## Site Permissions - Notifications
 

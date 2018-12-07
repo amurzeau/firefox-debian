@@ -8,7 +8,7 @@
 
 <!ENTITY basic.tab           "Format și opțiuni">
 
-<!ENTITY formatGroup.label   "Formatare">
+<!ENTITY formatGroup.label   "Format">
 
 <!ENTITY orientation.label   "Orientare:">
 <!ENTITY portrait.label      "Portret">
@@ -20,7 +20,7 @@
 <!ENTITY scale.accesskey     "S">
 <!ENTITY scalePercent        "&#037;">
 
-<!ENTITY shrinkToFit.label   "Micșorează pentru a încăpea în pagină">
+<!ENTITY shrinkToFit.label   "Micșorează pentru încadrare pe lățimea paginii">
 <!ENTITY shrinkToFit.accesskey "M">
 
 <!ENTITY optionsGroup.label  "Opțiuni">
@@ -42,10 +42,10 @@
 <!ENTITY marginRight.label   "Dreapta:">
 <!ENTITY marginRight.accesskey "r">
 
-<!ENTITY headerFooter.label  "Antete și subsoluri">
+<!ENTITY headerFooter.label  "Anteturi și subsoluri">
 
 <!ENTITY hfLeft.label        "Stânga:">
-<!ENTITY hfCenter.label      "Centru:">
+<!ENTITY hfCenter.label      "Mijloc:">
 <!ENTITY hfRight.label       "Dreapta:">
 <!ENTITY headerLeft.tip      "Antet stânga">
 <!ENTITY headerCenter.tip    "Antet mijloc">
@@ -54,13 +54,13 @@
 <!ENTITY footerCenter.tip    "Subsol mijloc">
 <!ENTITY footerRight.tip     "Subsol dreapta">
 
-<!ENTITY hfTitle             "Titlu">
-<!ENTITY hfURL               "URL">
+<!ENTITY hfTitle             "Titlul">
+<!ENTITY hfURL               "URL-ul">
 <!ENTITY hfDateAndTime       "Data/ora">
 <!ENTITY hfPage              "Pagina #">
 <!ENTITY hfPageAndTotal      "Pagina # din #">
 <!ENTITY hfBlank             "--nimic--">
-<!ENTITY hfCustom            "Personalizat…">
+<!ENTITY hfCustom            "Personalizează…">
 
 <!ENTITY customPrompt.title  "Personalizare…">
 <!ENTITY customPrompt.prompt "Introdu textul personalizat pentru antet/subsol">

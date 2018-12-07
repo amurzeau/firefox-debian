@@ -53,6 +53,7 @@ pane-sync-title = Firefox mba'ete
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } mombytaha
+addons-button-label = Jepysokue ha téma
 focus-search =
     .key = f
 close-button =
@@ -83,6 +84,9 @@ extension-controlled-homepage-override = Peteĩ jepysokue, <img data-l10n-name="
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Peteĩ jepysokue, <img data-l10n-name="icon"/> { $name }, oma'ẽag̃ui kuatiarogue rendayke pyahúre.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = Peteĩ jepysokue, <img data-l10n-name="icon"/> { $name }, oma’ẽag̃ui ko ñemboheko rehe.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Peteĩ moĩmbaha, <img data-l10n-name="icon"/> { $name }, omoambue Heka ku'eha reipurúva.
@@ -148,6 +152,9 @@ open-new-link-as-tabs =
     .accesskey = E
 warn-on-close-multiple-tabs =
     .label = Ehechakuaa embotykuévo heta tendayke
+    .accesskey = m
+warn-on-quit-close-multiple-tabs =
+    .label = Ehecha esẽ ha eikévo heta tendayképe
     .accesskey = m
 warn-on-open-many-tabs =
     .label = Emomarandúrõ eiketaha heta tendayképe ikatu omombegue down { -brand-short-name }
@@ -284,6 +291,7 @@ update-application-use-service =
 update-enable-search-update =
     .label = Jehekaha mongu'eha ñembohekopyahu ijeheguíva
     .accesskey = e
+update-pref-write-failure-title = Ojavy jehai
 
 ## General Section - Performance
 
@@ -323,10 +331,13 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Eheka moñe'ẽrã ehaikuévo
     .accesskey = x
+browsing-cfr-recommendations =
+    .label = Eñe’eporã jepysokue rehe eikumdaha aja
+    .accesskey = R
+browsing-cfr-recommendations-learn-more = Kuaave
 
 ## General Section - Proxy
 
-network-proxy-title = Proxy ñanduti rehegua
 network-settings-title = Jeike ñemboheko
 network-proxy-connection-description = Emboheko { -brand-short-name } ramo ojuajúvo ñanduti rehe.
 network-proxy-connection-learn-more = Kuaave
@@ -525,6 +536,7 @@ privacy-header = Kundahára Ñemigua
 ## Privacy Section - Forms
 
 forms-header = Ysaja ha ñe'ẽnemi
+logins-header = Tembiapo ñepyrũ ha ñe’ẽñemi
 forms-ask-to-save-logins =
     .label = Eporandu eñongatu hag̃ua tembiapo ñepyrũ ha ñe’ẽñemi ñandutípe
     .accesskey = E
@@ -591,26 +603,15 @@ sitedata-total-size-calculating = Eikuaase tenda mba'ekuaarã ha kache tuichakue
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Umi kookie ñembyytpyre, tenda mba'ekuaarã ha kache mandu'arenda oipuru porã ko'ag̃aite { $value } { $unit } pe disco pegua pa'ũ.
 sitedata-learn-more = Kuaave
-sitedata-accept-cookies-option =
-    .label = Emoñeĩ kookie ha ñanduti renda mba'ekuaarã (jeroviapyrãva)
-    .accesskey = A
-sitedata-block-cookies-option =
-    .label = Ejoko umi kookie ha tenda mba'ekuaarã (ikatu ombyai ñanduti renda)
-    .accesskey = B
 sitedata-keep-until = Eñongati ag̃ave
     .accesskey = u
 sitedata-keep-until-expire =
     .label = opátama
 sitedata-keep-until-closed =
     .label = { -brand-short-name } oñembotýma
-sitedata-accept-third-party-desc = Emoñeĩ kookie ambueguáva ha tenda mba'ekuaarã
-    .accesskey = y
-sitedata-accept-third-party-always-option =
-    .label = Katui
-sitedata-accept-third-party-visited-option =
-    .label = Jehopyre
-sitedata-accept-third-party-never-option =
-    .label = Araka'eve
+sitedata-delete-on-close =
+    .label = Embogue kookie ha mba'ekuaarã tenda pegua oñemboty vove { -brand-short-name }
+    .accesskey = c
 sitedata-allow-cookies-option =
     .label = Emoneĩ kookie ha tenda mba’ekuaarã
     .accesskey = A
@@ -684,6 +685,9 @@ content-blocking-fastblock-slow-loading-trackers-label =
     .label = Ñemyanyhẽ mbegue rapykuehoha
     .accesskey = S
 content-blocking-fastblock-new-description = Ejoko tapykuehoha añoite omoapañuãiva kuatiarogue ñemyanyhẽ pya’e.
+content-blocking-tracking-protection-trackers-label =
+    .label = Tapykuehohára
+    .accesskey = T
 content-blocking-tracking-protection-all-detected-trackers-label =
     .label = Opaite tapykuehoha juhupyre
     .accesskey = T
@@ -731,10 +735,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Araka'eve
     .accesskey = N
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Eipuru tapykueho ñemo'ã kundaha ñemigua ejoko hag̃ua jeporekeha kuaapyréva
-    .accesskey = v
 tracking-exceptions =
     .label = Oĩ'ỹva…
     .accesskey = v
@@ -857,3 +857,36 @@ certs-view =
 certs-devices =
     .label = Tekorosã mba'e'oka rehegua…
     .accesskey = m
+space-alert-learn-more-button =
+    .label = Kuaave
+    .accesskey = K
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Jeporavorãme jeike
+           *[other] Jerohoryvéva juruja
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] J
+           *[other] J
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } henyhẽma hína idisco. Umi ñanduti renda ikatu hína ndojehechauka porãi. Ikatu hína ombogue mba'ekuaarã ñembyatypyre ijykeguávape > Temiñemi ha Tekorosã > Kookie ha tenda mba'ekuaarã.
+       *[other] { -brand-short-name } henyhẽma hína idisco. Umi ñanduti renda ikatu hína ndojehechauka porãi. Ikatu hína ombogue mba'ekuaarã ñembyatypyre jerohoryvévape > Temiñemi ha Tekorosã > Kookie ha tenda mba'ekuaarã.
+    }
+space-alert-under-5gb-ok-button =
+    .label = OK, arekóma
+    .accesskey = K
+space-alert-under-5gb-message = { -brand-short-name } opyta hína disco pa'ũ'ỹre. Ikatu hína ñanduti renda retepy ndojehechaukái hekopete. Eike “Kuaave” eipuru porã hag̃ua disco ne kundaha hekoresãi hag̃ua avei.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Mba'erechaha
+downloads-folder-name = Ñemboguejy
+choose-download-folder-title = Ñemboguejy ñongatuha poravo:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Eñongatu marandurenda { $service-name }

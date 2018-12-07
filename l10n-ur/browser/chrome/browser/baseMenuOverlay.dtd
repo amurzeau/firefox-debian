@@ -6,39 +6,36 @@
 <!ENTITY minimizeWindow.label     "چھوٹا کریں">
 <!ENTITY bringAllToFront.label    "تمام سامنے لائیں">
 <!ENTITY zoomWindow.label         "زوم کریں">
-<!ENTITY windowMenu.label         "دریچہ">
+<!ENTITY windowMenu.label         "ونڈوں">
 
 <!ENTITY helpMenu.label           "مدد"> 
-<!ENTITY helpMenu.accesskey       "م"> 
+<!ENTITY helpMenu.accesskey       "H"> 
 <!-- LOCALIZATION NOTE some localizations of Windows (ex:french, german) use "?"
                        for the help button in the menubar but Gnome does not.   -->
 <!ENTITY helpMenuWin.label        "ہدایات"> 
-<!ENTITY helpMenuWin.accesskey    "ہ">
+<!ENTITY helpMenuWin.accesskey    "H">
 <!ENTITY aboutProduct2.label      "&brandShorterName; کے بارے میں">
-<!ENTITY aboutProduct2.accesskey  "ک">
+<!ENTITY aboutProduct2.accesskey  "A">
 <!ENTITY productHelp2.label       "&brandShorterName; مدد">
-<!ENTITY productHelp2.accesskey   "م">
+<!ENTITY productHelp2.accesskey   "H">
 <!ENTITY helpMac.commandkey       "?">
 
 <!ENTITY helpKeyboardShortcuts.label     " کلیدی تختہ تیز راہیں">
-<!ENTITY helpKeyboardShortcuts.accesskey "ک">
+<!ENTITY helpKeyboardShortcuts.accesskey "K">
 
 <!ENTITY helpSafeMode.label       "ایڈ اون نا اہل کر کے دوباره شروع کریں">
-<!ENTITY helpSafeMode.accesskey   "د">
+<!ENTITY helpSafeMode.accesskey   "R">
 <!ENTITY helpSafeMode.stop.label       "ایڈ اون اہل کر کے دوباره شروع کریں">
-<!ENTITY helpSafeMode.stop.accesskey   "د">
-
-<!ENTITY healthReport2.label      "&brandShorterName; تندرستی رپورٹ">
-<!ENTITY healthReport2.accesskey  "ت">
+<!ENTITY helpSafeMode.stop.accesskey   "R">
 
 <!ENTITY helpTroubleshootingInfo.label      "ازالہ کاری معلومات">
-<!ENTITY helpTroubleshootingInfo.accesskey  "ا">
+<!ENTITY helpTroubleshootingInfo.accesskey  "T">
 
 <!ENTITY helpFeedbackPage.label      "اپنی رائے بھیجیں...">
-<!ENTITY helpFeedbackPage.accesskey  "ب">
+<!ENTITY helpFeedbackPage.accesskey  "S">
 
 <!ENTITY helpShowTour2.label            "&brandShorterName; جائزہ">
-<!ENTITY helpShowTour2.accesskey        "ج">
+<!ENTITY helpShowTour2.accesskey        "o">
 
 <!ENTITY preferencesCmdMac.label        "ترجیحات ...">
 <!ENTITY preferencesCmdMac.commandkey   ",">

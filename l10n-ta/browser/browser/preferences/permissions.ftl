@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = தடு
 permissions-capabilities-prompt =
     .label = எப்போதும் கேள்
+permissions-capabilities-listitem-allow =
+    .value = அனுமதி
+permissions-capabilities-listitem-block =
+    .value = தடு
+permissions-capabilities-listitem-allow-first-party =
+    .value = முதல் தரப்பினரை மட்டும் அனுமதிக்கவும்
+permissions-capabilities-listitem-allow-session =
+    .value = அமர்வுக்கு அனுமதி
 
 ## Invalid Hostname Dialog
 
@@ -84,9 +92,6 @@ permissions-exceptions-addons-desc = எந்த இணையதளங்கள
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = தானியக்கம் - அனுமதியுள்ள தளங்கள்
-    .style = { permissions-window.style }
 
 ## Site Permissions - Notifications
 

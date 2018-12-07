@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = ਪਾਬੰਦੀ
 permissions-capabilities-prompt =
     .label = ਹਮੇਸ਼ਾਂ ਪੁੱਛੋ
+permissions-capabilities-listitem-allow =
+    .value = ਮਨਜ਼ੂਰ
+permissions-capabilities-listitem-block =
+    .value = ਪਾਬੰਦੀ
+permissions-capabilities-listitem-allow-first-party =
+    .value = ਕੇਵਲ ਪਹਿਲੀ-ਧਿਰ ਹੀ ਮਨਜ਼ੂਰ ਕਰੋ
+permissions-capabilities-listitem-allow-session =
+    .value = ਸ਼ੈਸ਼ਨ ਲਈ ਸਵੀਕਾਰ
 
 ## Invalid Hostname Dialog
 
@@ -54,6 +62,10 @@ permissions-exceptions-tracking-protection-window =
     .title = ਛੋਟਾਂ - ਟਰੈਕਿੰਗ ਤੋਂ ਸੁਰੱਖਿਆ
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = ਤੁਸੀਂ ਇਹਨਾਂ ਵੈੱਬਸਾਈਟਾਂ ਲਈ ਟਰੈਕਿੰਗ ਸੁਰੱਖਿਆ ਨੂੰ ਅਸਮਰੱਥ ਕਰ ਚੁੱਕੇ ਹੋ।
+permissions-exceptions-content-blocking-window =
+    .title = ਛੋਟਾਂ - ਸਮੱਗਰੀ ਪਾਬੰਦੀ
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = ਤੁਸੀਂ ਇਹਨਾਂ ਵੈੱਬਸਾਈਟਾਂ ਉੱਤੇ ਸਮੱਗਰੀ ਪਾਬੰਦੀ ਨੂੰ ਅਸਮਰੱਥ ਕਰ ਚੁੱਕੇ ਹੋ।
 
 ## Exceptions - Cookies
 
@@ -85,10 +97,6 @@ permissions-exceptions-addons-desc = ਤੁਸੀਂ ਦੱਸ ਸਕਦੇ ਹ�
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = ਮਨਜ਼ੂਰੀ ਦਿੱਤੀਆਂ ਵੈੱਬਸਾਈਟਾਂ - ਆਪਣੇ-ਆਪ ਚਲਾਓ
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = ਤੁਸੀਂ ਨਿਸ਼ਚਿਤ ਕਰ ਸਕਦੇ ਹੋ ਕਿ ਕਿਹੜੀਆਂ ਵੈਬਸਾਈਟਾਂ ਨੂੰ ਆਟੋਮੈਟਿਕਲੀ ਮੀਡੀਆ ਅਦਾਰਿਆਂ ਨੂੰ ਚਲਾਉਣ ਦੀ ਆਗਿਆ ਹੈ। ਉਸ ਸਾਈਟ ਦਾ ਸਹੀ ਐਡਰੈੱਸ ਟਾਈਪ ਕਰੋ ਜਿਸ ਨੂੰ ਤੁਸੀਂ ਮਨਜ਼ੂਰੀ ਦੇਣੀ ਚਾਹੁੰਦੇ ਹੋ ਅਤੇ ਫਿਰ ਮਨਜ਼ੂਰ ਹੈ ਨੂੰ ਦਬਾਓ।
 permissions-exceptions-autoplay-media-window2 =
     .title = ਅਪਵਾਦ- ਸਵੈ ਚਾਲ
     .style = { permissions-window.style }

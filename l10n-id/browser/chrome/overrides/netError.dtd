@@ -10,16 +10,17 @@
 <!ENTITY returnToPreviousPage.label "Mundur">
 <!ENTITY returnToPreviousPage1.label "Kembali (Disarankan)">
 <!ENTITY advanced.label "Lebih lanjut">
-
 <!ENTITY continue2.label "Lainnya…">
 <!ENTITY moreInformation.label "Informasi Lebih Lanjut">
+
+<!ENTITY viewCertificate.label "Tampilkan Sertifikat">
 
 <!-- Specific error messages -->
 
 <!ENTITY connectionFailure.title "Tidak dapat tersambung">
 <!ENTITY connectionFailure.longDesc "&sharedLongDesc;">
 
-<!ENTITY deniedPortAccess.title "Penggunaan alamat ini telah dibatasi">
+<!ENTITY deniedPortAccess.title "Penggunaan alamat ini dibatasi">
 <!ENTITY deniedPortAccess.longDesc "">
 
 <!ENTITY dnsNotFound.pageTitle "Peladen Tidak Ditemukan">
@@ -96,14 +97,17 @@
 
 <!ENTITY certerror.longpagetitle1 "Sambungan Anda tidak aman">
 <!ENTITY certerror.longpagetitle2 "Peringatan: Potensi Risiko Keamanan Menghadang">
+<!ENTITY certerror.sts.longpagetitle  "Tidak Tersambung: Potensi Masalah Keamanan">
 <!-- Localization note (certerror.introPara, certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "Pemilik <span class='hostname'/> telah mengonfigurasikan situs web secara tidak benar. Untuk melindungi informasi Anda dari pencurian, &brandShortName; tidak menyambungkan Anda ke situs ini.">
-
 <!ENTITY certerror.introPara2 "&brandShortName; mendeteksi potensi ancaman keamanan dan tidak melanjutkan ke <span class='hostname'/>. Jika Anda mengunjungi situs ini, penyerang bisa saja mencuri informasi seperti sandi, surel, atau rincian kartu kredit Anda.">
 
 <!ENTITY certerror.expiredCert.secondPara "Masalah ini mungkin disebabkan karena jam komputer Anda diatur ke waktu yang salah, yang dapat mencegah &brandShortName; untuk tersambung secara aman.">
+
+<!ENTITY certerror.sts.introPara "&brandShortName; mendeteksi potensi ancaman keamanan dan tidak dapat melanjutkan ke <span class='hostname'/> karena situs ini memerlukan sambungan aman.">
+
 
 <!ENTITY certerror.whatCanYouDoAboutItTitle "Apa yang bisa Anda lakukan mengenai masalah ini?">
 
@@ -131,7 +135,6 @@ was trying to connect. -->
 
 
 <!ENTITY securityOverride.exceptionButtonLabel "Tambah Pengecualian…">
-
 <!ENTITY securityOverride.exceptionButton1Label "Terima Risikonya dan Lanjutkan">
 
 <!ENTITY errorReporting.automatic2 "Laporkan kesalahan seperti ini untuk membantu Mozilla mengidentifikasi dan memblokir situs yang mencurigakan.">
@@ -169,3 +172,5 @@ was trying to connect. -->
 
 <!ENTITY prefReset.longDesc "Tampaknya setelan keamanan jaringan Anda yang mungkin menyebabkan ini. Ingin setelan baku dipulihkan?">
 <!ENTITY prefReset.label "Pulihkan setelan baku">
+
+<!ENTITY networkProtocolError.title "Protokol Jaringan Bermasalah">

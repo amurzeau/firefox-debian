@@ -5,13 +5,19 @@
 
 ## Settings
 
+site-data-settings-window =
+    .title = ကွတ်ကီးနှင့်ဆိုက်အချက်အလက်များကို စီမံပါ
 site-data-search-textbox =
     .placeholder = ဝဘ်ဆိုက်များကို ရှာဖွေရန်
     .accesskey = S
 site-data-column-host =
     .label = ဆိုက်
+site-data-column-cookies =
+    .label = ကွတ်ကီးများ
 site-data-column-storage =
     .label = သိမ်းဆည်းပါ
+site-data-column-last-used =
+    .label = နောက်ဆုံးသုံးစွဲထားသော
 site-data-remove-selected =
     .label = ရွေးထားသည့်အရာများကို ဖယ်ရှားပါ
     .accesskey = r
@@ -34,8 +40,7 @@ site-data-remove-shown =
 
 ## Removing
 
-site-data-removing-window =
-    .title = { site-data-removing-header }
 site-data-removing-dialog =
     .title = { site-data-removing-header }
     .buttonlabelaccept = ဖယ်ရှားပါ
+site-data-removing-header = ကွတ်ကီးနှင့် ဆိုက်အချက်အလက်များကို ဖယ်ရှားခြင်း

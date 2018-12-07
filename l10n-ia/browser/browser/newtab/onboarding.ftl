@@ -6,6 +6,7 @@
 ## UI strings for the simplified onboarding modal
 
 onboarding-button-label-try-now = Proba lo subito
+onboarding-button-label-get-started = Comencia
 onboarding-welcome-header = Benvenite a { -brand-short-name }
 onboarding-start-browsing-button-label = Comencia a navigar
 
@@ -17,10 +18,13 @@ onboarding-start-browsing-button-label = Comencia a navigar
 ## The string for the button is found above, in the UI strings section
 
 onboarding-private-browsing-title = Navigation private
-onboarding-private-browsing-text = Naviga per te mesme. Navigation private con le Bloco de contentos bloca le traciatores online que te seque circum le web.
+onboarding-private-browsing-text = Naviga per te mesme. Navigation private con le Blocage de contentos bloca le traciatores online que te seque circum le web.
 onboarding-screenshots-title = Instantaneos
 onboarding-screenshots-text = Captura, salva e comparti instantaneos - sin lassar { -brand-short-name }. Captura un region o un pagina integre durante que tu naviga. Pois salva lo al web pro facile accesso e compartimento.
 onboarding-addons-title = Additivos
 onboarding-addons-text = Adde mesmo altere functionalitates que face laborar plus durmente { -brand-short-name } pro te. Compara precios, controla los meteorologic o exprime tu personalitate con un thema personalisate.
 onboarding-ghostery-title = Ghostery
 onboarding-ghostery-text = Naviga plus veloce, in maniera plus intelligente o plus secur con extensiones como Ghostery, que te pone in grado de blocar enoiose avisos publicitari.
+# Note: "Sync" in this case is a generic verb, as in "to synchronize"
+onboarding-fxa-title = Sync
+onboarding-fxa-text = Inscribe te a un { -fxaccount-brand-name } e synchronisa tu marcapaginas, contrasignos e schedas aperte ubicunque tu usa { -brand-short-name }.

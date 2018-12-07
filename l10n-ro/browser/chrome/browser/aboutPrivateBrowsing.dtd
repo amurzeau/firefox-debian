@@ -20,7 +20,7 @@
 <!ENTITY aboutPrivateBrowsing.info.saved.after2          ":">
 <!ENTITY aboutPrivateBrowsing.info.downloads             "descărcările">
 <!ENTITY aboutPrivateBrowsing.info.bookmarks             "marcajele">
-<!ENTITY aboutPrivateBrowsing.info.clipboard             "text copiat">
+<!ENTITY aboutPrivateBrowsing.info.clipboard             "textul copiat">
 <!ENTITY aboutPrivateBrowsing.note.before                "Navigarea privată ">
 <!ENTITY aboutPrivateBrowsing.note.emphasize             "nu te face anonim">
 <!ENTITY aboutPrivateBrowsing.note.after                 " pe internet. Angajatorul sau furnizorul de servicii internet pot să știe în continuare paginile pe care le vizitezi.">
@@ -29,8 +29,9 @@
 <!ENTITY aboutPrivateBrowsing.learnMore3.after           ".">
 
 <!ENTITY trackingProtection.title                        "Protecție împotriva urmăririi">
-<!ENTITY trackingProtection.description2                 "Unele site-uri web folosesc mecanisme de urmărire care îți pot monitoriza activitatea pe internet. Cu ajutorul protecției împotriva urmăririi, Firefox va bloca multe mecanisme de urmărire care pot colecta informații despre comportamentul de navigare pe internet.">
+<!ENTITY trackingProtection.description2                 "Unele site-uri web folosesc elemente de urmărire care îți pot monitoriza activitatea pe internet. Cu ajutorul protecției împotriva urmăririi, Firefox va bloca multe elemente de urmărire care pot colecta informații despre comportamentul de navigare pe internet.">
+
 <!ENTITY trackingProtection.startTour1                   "Vezi cum funcționează">
 
 <!ENTITY contentBlocking.title                           "Blocare de conținut">
-<!ENTITY contentBlocking.description                     "Unele site-uri web folosesc instrumente de urmărire care îți pot monitoriza activitatea pe Internet. În ferestrele private Firefox, blocarea de conținut blochează automat multe instrumente de urmărire care pot colecta informații despre comportamentul tău de navigare.">
+<!ENTITY contentBlocking.description                     "Unele site-uri web folosesc elemente de urmărire care îți pot monitoriza activitatea pe Internet. În ferestrele private Firefox, blocarea de conținut blochează automat multe elemente de urmărire care pot colecta informații despre comportamentul tău de navigare.">

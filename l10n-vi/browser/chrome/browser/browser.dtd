@@ -23,10 +23,22 @@
 <!ENTITY  reloadTab.accesskey                "R">
 <!ENTITY  reloadAllTabs.label                "Tải lại tất cả các thẻ">
 <!ENTITY  reloadAllTabs.accesskey            "A">
+<!ENTITY  selectAllTabs.label                "Chọn tất cả các thẻ">
+<!ENTITY  selectAllTabs.accesskey            "S">
 <!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
 a tab (i.e. it is a verb, not adjective). -->
 <!ENTITY  duplicateTab.label                 "Nhân đôi thẻ">
+<!-- LOCALIZATION NOTE (duplicateTab.accesskey, duplicateTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  duplicateTab.accesskey             "D">
+<!ENTITY  closeTabOptions.label              "Tùy chọn đóng thẻ">
+<!ENTITY  closeTabOptions.accesskey          "O">
+<!-- LOCALIZATION NOTE (duplicateTabs.label): This is a command to duplicate
+a tab (i.e. it is a verb, not adjective). -->
+<!ENTITY  duplicateTabs.label                "Nhân đôi các thẻ">
+<!-- LOCALIZATION NOTE (duplicateTab.accesskey, duplicateTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  duplicateTabs.accesskey            "D">
 <!-- LOCALIZATION NOTE (closeTabsToTheEnd.label): This should indicate the
 direction in which tabs are closed, i.e. locales that use RTL mode should say
 left instead of right. -->
@@ -38,18 +50,29 @@ left instead of right. -->
 <!ENTITY  closeSelectedTabs.label            "Đóng thẻ đã chọn">
 <!ENTITY  closeSelectedTabs.accesskey        "S">
 
+<!ENTITY  closeTabs.label                    "Đóng các thẻ">
+<!ENTITY  closeTabs.accesskey                "S">
 <!ENTITY  pinSelectedTabs.label              "Ghim thẻ">
-<!-- Pin Tab and Pin Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  pinSelectedTabs.accesskey          "P">
 <!ENTITY  unpinSelectedTabs.label            "Bỏ ghim thẻ">
-<!-- Unpin Tab and Unpin Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinSelectedTabs.accesskey        "b">
 <!-- Reload Tab and Reload Selected Tabs have the same accesskey
 but will never be visible at the same time. -->
 <!ENTITY  reloadSelectedTabs.label           "Tải lại thẻ đã chọn">
 <!ENTITY  reloadSelectedTabs.accesskey       "R">
+<!-- LOCALIZATION NOTE(reloadTab.label, reloadTabs.label): have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  reloadTabs.label                   "Tải lại các thẻ">
+<!ENTITY  reloadTabs.accesskey               "R">
+<!ENTITY  bookmarkSelectedTabs.label         "Đánh dấu các thẻ…">
+<!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "k">
 
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
@@ -58,8 +81,14 @@ left edge of the tabstrip. Really we just want the string to express the idea
 that this is a lightweight and reversible action that keeps your tab where you
 can reach it easily. -->
 <!ENTITY  pinTab.label                       "Ghim thẻ">
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  pinTab.accesskey                   "P">
 <!ENTITY  unpinTab.label                     "Gỡ thẻ">
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinTab.accesskey                 "b">
 <!ENTITY  sendTabToDevice.label              "Gửi thẻ tới thiết bị">
 <!ENTITY  sendTabToDevice.accesskey          "D">
@@ -67,11 +96,26 @@ can reach it easily. -->
 <!ENTITY  sendPageToDevice.accesskey         "D">
 <!ENTITY  sendLinkToDevice.label             "Gửi đường dẫn tới thiết bị">
 <!ENTITY  sendLinkToDevice.accesskey         "D">
+<!-- LOCALIZATION NOTE (moveTabOptions.label and moveSelectedTabOptions.label):
+These two items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  moveTabOptions.label               "Di chuyển thẻ">
+<!ENTITY  moveTabOptions.accesskey           "v">
+<!ENTITY  moveSelectedTabOptions.label       "Di chuyển các thẻ">
+<!ENTITY  moveSelectedTabOptions.accesskey   "v">
+<!ENTITY  moveToStart.label                  "Di chuyển lên đầu">
+<!ENTITY  moveToStart.accesskey              "S">
+<!ENTITY  moveToEnd.label                    "Di chuyển xuống cuối">
+<!ENTITY  moveToEnd.accesskey                "E">
 <!ENTITY  moveToNewWindow.label              "Di chuyển sang cửa sổ mới">
 <!ENTITY  moveToNewWindow.accesskey          "W">
+<!ENTITY  reopenInContainer.label            "Mở trong Ngăn chứa">
 <!ENTITY  reopenInContainer.accesskey        "e">
 <!ENTITY  bookmarkAllTabs.label              "Đánh dấu tất cả các thẻ…">
 <!ENTITY  bookmarkAllTabs.accesskey          "T">
+<!ENTITY  bookmarkTab.label                  "Đánh dấu thẻ">
+<!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  bookmarkTab.accesskey              "B">
 <!ENTITY  undoCloseTab.label                 "Mở lại thẻ vừa đóng">
 <!ENTITY  undoCloseTab.accesskey             "U">
 <!ENTITY  closeTab.label                     "Đóng thẻ">
@@ -98,6 +142,8 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.accesskey "P">
 <!ENTITY printCmd.commandkey "p">
 
+<!ENTITY taskManagerCmd.label "Quản lý tác vụ">
+
 <!ENTITY goOfflineCmd.label "Làm việc ngoại tuyến">
 <!ENTITY goOfflineCmd.accesskey "k">
 
@@ -112,6 +158,29 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "A">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.label "Đánh dấu tất cả các thẻ…">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "T">
+
+<!ENTITY toolbarContextMenu.reloadSelectedTab.label "Tải lại các thẻ đã chọn">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
+toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.reloadSelectedTab.accesskey "R">
+<!ENTITY toolbarContextMenu.reloadSelectedTabs.label "Tải lại các thẻ đã chọn">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
+toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.reloadSelectedTabs.accesskey "R">
+<!ENTITY toolbarContextMenu.bookmarkSelectedTab.label "Đánh dấu các thẻ đã chọn…">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.bookmarkSelectedTab.accesskey,
+toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.bookmarkSelectedTab.accesskey "T">
+<!ENTITY toolbarContextMenu.bookmarkSelectedTabs.label "Đánh dấu các thẻ đã chọn…">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.bookmarkSelectedTab.accesskey,
+toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.bookmarkSelectedTabs.accesskey "T">
+<!ENTITY toolbarContextMenu.selectAllTabs.label "Chọn tất cả các thẻ">
+<!ENTITY toolbarContextMenu.selectAllTabs.accesskey "S">
 <!ENTITY toolbarContextMenu.undoCloseTab.label "Mở lại thẻ vừa đóng">
 <!ENTITY toolbarContextMenu.undoCloseTab.accesskey "U">
 
@@ -197,6 +266,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY subscribeToPageMenupopup.label "Đăng kí theo dõi trang này">
 <!ENTITY subscribeToPageMenuitem.label "Đăng kí theo dõi trang này…">
+
 <!ENTITY addCurPagesCmd.label "Đánh dấu tất cả các thẻ…">
 <!ENTITY showAllBookmarks2.label "Xem tất cả trang đánh dấu">
 <!ENTITY recentBookmarks.label "Trang đánh dấu gần đây">
@@ -225,6 +295,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY urlbar.defaultNotificationAnchor.tooltip         "Mở bảng thông báo">
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "Mở bảng yêu cầu vị trí">
+<!ENTITY urlbar.autoplayNotificationAnchor.tooltip        "Mở bảng điều khiển tự động phát">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "Mở bảng thông báo cài đặt tiện ích">
 <!ENTITY urlbar.canvasNotificationAnchor.tooltip          "Quản lý quyền khai thác canvas">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "Mở bảng thông báo lưu trữ ngoại tuyến">
@@ -233,6 +304,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "Thay đổi liệu bạn có thể nhận thông báo từ trang web hay không">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Lưu dữ liệu vào bộ nhớ lâu dài">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Trình duyệt đang ở trong chế độ truy cập từ xa">
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "Mở bảng điều khiển xác thực web">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Quản lý chia sẻ máy ảnh và/hoặc micrô với trang">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Quản lý chia sẻ micrô của bạn với trang">
@@ -242,6 +314,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translateNotificationAnchor.tooltip       "Dịch trang này">
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Quản lý việc dịch trang">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Quản lý sử dụng phần mềm DRM">
+<!ENTITY urlbar.midiNotificationAnchor.tooltip            "Mở bảng MIDI">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Bạn đã chặn camera của mình ở trang này">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Bạn đã chặn micro của mình ở trang này">
@@ -250,8 +323,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Bạn đã chặn thông báo ở trang này.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Bạn đã chặn lưu dữ liệu lâu dài ở trang này.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Bạn đã chặn popup ở trang web này.">
+<!ENTITY urlbar.autoplayMediaBlocked.tooltip     "Bạn đã chặn phương tiện tự động phát có âm thanh cho trang web này.">
 <!ENTITY urlbar.canvasBlocked.tooltip            "Bạn đã chặn khai thác dữ liệu canvas đối với trang web này.">
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "Bạn đã chặn trang web này sử dụng phần bổ trợ Adobe Flash.">
+<!ENTITY urlbar.midiBlocked.tooltip              "Bạn đã chặn quyền truy cập MIDI của trang web này.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Xem lịch sử">
 
@@ -306,15 +381,20 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY webDeveloperMenu.label       "Nhà phát triển Web">
 <!ENTITY webDeveloperMenu.accesskey   "W">
 
+<!ENTITY devtoolsRecordExecution.label "Bản ghi thực thi">
+<!ENTITY devtoolsSaveRecording.label "Lưu bản ghi">
+<!ENTITY devtoolsReplayExecution.label "Thực thi lại">
 
 <!ENTITY inspectContextMenu.label     "Kiểm tra phần tử HTML">
 <!ENTITY inspectContextMenu.accesskey "Q">
 
+<!ENTITY inspectA11YContextMenu.label     "Kiểm tra thuộc tính trợ năng">
 
 <!ENTITY fileMenu.label         "Tập tin">
 <!ENTITY fileMenu.accesskey       "F">
 <!ENTITY newUserContext.label             "Thẻ ngăn chứa mới">
 <!ENTITY newUserContext.accesskey         "B">
+<!ENTITY manageUserContext.label          "Quản lý Ngăn chứa">
 <!ENTITY manageUserContext.accesskey      "O">
 <!ENTITY newNavigatorCmd.label        "Cửa sổ mới">
 <!ENTITY newNavigatorCmd.key        "N">
@@ -378,7 +458,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.showAll.label "Xem toàn bộ lịch sử">
 <!ENTITY appMenuHistory.clearRecent.label "Xóa lịch sử gần đây…">
 <!ENTITY appMenuHistory.restoreSession.label "Khôi phục phiên làm việc trước">
-<!ENTITY appMenuHistory.viewSidebar.label "Hiển thị thanh bên lược sử">
+<!ENTITY appMenuHistory.viewSidebar.label "Hiển thị thanh bên lịch sử">
 <!ENTITY appMenuHistory.recentHistory.label "Lịch sử gần đây">
 <!ENTITY appMenuHelp.label "Trợ giúp">
 
@@ -430,10 +510,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.removeFromToolbar.accesskey "R">
 <!ENTITY customizeMenu.addMoreItems.label "Thêm mục mới…">
 <!ENTITY customizeMenu.addMoreItems.accesskey "A">
+<!ENTITY customizeMenu.autoHideDownloadsButton.label "Tự động ẩn trong thanh công cụ">
 <!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "A">
 <!ENTITY customizeMenu.manageExtension.label "Quản lí tiện ích">
 <!ENTITY customizeMenu.manageExtension.accesskey "E">
 
+<!ENTITY customizeMenu.removeExtension.label "Xóa tiện ích mở rộng">
 <!ENTITY customizeMenu.removeExtension.accesskey "v">
 
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
@@ -543,9 +625,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY reloadFrameCmd.label         "Tải lại khung">
 <!ENTITY reloadFrameCmd.accesskey     "R">
 <!ENTITY viewPartialSourceForSelectionCmd.label "Xem mã nguồn của đoạn bôi đen">
-<!ENTITY viewPartialSourceForMathMLCmd.label    "Xem mã nguồn MathML">
-<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both
-         viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label -->
 <!ENTITY viewPartialSourceCmd.accesskey "e">
 <!ENTITY viewPageSourceCmd.label      "Xem mã nguồn trang">
 <!ENTITY viewPageSourceCmd.accesskey  "V">
@@ -760,8 +839,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- LOCALIZATION NOTE (editBookmark.panel.width): width of the bookmark panel.
      Should be large enough to fully display the Done and Cancel/
      Remove Bookmark buttons. -->
+<!ENTITY editBookmark.panel.width                    "23em">
 <!ENTITY editBookmark.done.label                     "Xong">
-
 <!ENTITY editBookmark.showForNewBookmarks.label       "Hiện trình chỉnh sửa khi lưu">
 <!ENTITY editBookmark.showForNewBookmarks.accesskey   "S">
 
@@ -769,6 +848,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      This is the header of the security subview in the Site Identity panel. -->
 <!ENTITY identity.securityView.label "Bảo mật trang web">
 
+<!ENTITY identity.connection "Kết nối">
 <!ENTITY identity.connectionSecure "Kết nối an toàn">
 <!ENTITY identity.connectionNotSecure "Kết nối này không an toàn">
 <!ENTITY identity.connectionFile "Trang này đã được lưu ở máy tính của bạn.">
@@ -811,6 +891,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissions "Quyền hạn">
 <!ENTITY identity.permissionsEmpty "Bạn chưa cấp cho trang này bất kỳ một quyền đặc biệt nào.">
 <!ENTITY identity.permissionsReloadHint "Bạn có thể cần phải tải lại trang để các thay đổi được áp dụng.">
+<!ENTITY identity.permissionsPreferences.tooltip "Mở tùy chọn các quyền">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
@@ -910,45 +991,82 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.audioCapture.label "Audio trên thẻ này sẽ được chia sẻ.">
 <!ENTITY getUserMedia.allWindowsShared.message "Tất cả các cửa sổ trên màn hình sẽ được chia sẻ.">
 
-
+<!ENTITY contentBlocking.title "Chặn nội dung">
+<!ENTITY contentBlocking.detected "Đã phát hiện nội dung có thể chặn được trên trang này.">
+<!ENTITY contentBlocking.notDetected "Không tìm thấy nội dung có thể chặn trên trang này.">
 <!ENTITY contentBlocking.disabled.label "Đã vô hiệu hóa">
+<!ENTITY contentBlocking.disabled.tooltip "Bạn đã tắt tính năng Chặn nội dung.">
+<!ENTITY contentBlocking.exception.tooltip "Bạn đã tắt tính năng Chặn nội dung cho trang này.">
 
+<!ENTITY contentBlocking.fastBlock.label "Trình theo dõi làm tải chậm">
 <!-- LOCALIZATION NOTE (contentBlocking.fastBlock.blocked.label):
      This label signals that this type of content blocking is turned
      ON and is successfully blocking malicious/slow content, so this is
      a positive thing. It forms the end of the (imaginary) sentence
      "Slow-Loading Trackers [are] Blocked"-->
 <!ENTITY contentBlocking.fastBlock.blocked.label "Đã chặn">
+<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.blocking.label):
+     This label signals that this type of content blocking is turned
+     ON, so this is a positive thing. It forms the verb in (imaginary) sentence
+     "Firefox is blocking Slow-Loading Trackers"-->
+<!ENTITY contentBlocking.fastBlock.blocking.label "Đang chặn">
 <!-- LOCALIZATION NOTE (contentBlocking.fastBlock.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
      the type of content blocking is currently not enabled. -->
 
+<!ENTITY contentBlocking.trackingProtection2.label "Tất cả các trình theo dõi được phát hiện">
+
+<!ENTITY contentBlocking.trackingProtection3.label "Trình theo dõi">
+<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.allowed.label):
+     This label signals that this type of content blocking is turned
+     OFF and is not blocking tracker content, so this is not
+     a positive thing. It forms the end of the (imaginary) sentence
+     "Trackers [are] Allowed"-->
+<!ENTITY contentBlocking.trackingProtection.allowed.label "Đã cho phép">
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
      This label signals that this type of content blocking is turned
      ON and is successfully blocking tracker content, so this is
      a positive thing. It forms the end of the (imaginary) sentence
      "Trackers [are] Blocked"-->
 <!ENTITY contentBlocking.trackingProtection.blocked.label "Đã chặn">
+<!-- LOCALIZATION NOTE (contentBlocking.tranckingProtection.blocking.label):
+     This label signals that this type of content blocking is turned
+     ON, so this is a positive thing. It forms the verb in the (imaginary) sentence
+     "Firefox is blocking Trackers"-->
+<!ENTITY contentBlocking.trackingProtection.blocking.label "Đang chặn">
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
      the type of content blocking is currently not enabled. -->
 
 <!ENTITY contentBlocking.3rdPartyCookies.label "Cookie của bên thứ ba">
+<!ENTITY contentBlocking.3rdPartyCookies.trackers.label "Cookie theo dõi">
 <!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.blocked.label):
      This label signals that this type of content blocking is turned
      ON and is successfully blocking third-party cookies, so this is
      a positive thing. It forms the end of the (imaginary) sentence
      "Third-Party Cookies [are] Blocked"-->
 <!ENTITY contentBlocking.3rdPartyCookies.blocked.label "Đã chặn">
+<!-- LOCALIZATION NOTE (contentBlocking.tranckingProtection.blocking.label):
+     This label signals that this type of content blocking is turned
+     ON, so this is a positive thing. It forms the verb in the (imaginary) sentence
+     "Firefox is blocking Third-Party Cookies"-->
+<!ENTITY contentBlocking.3rdPartyCookies.blocking.label "Đang chặn">
 <!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
      the type of content blocking is currently not enabled. -->
 
+<!ENTITY contentBlocking.manageSettings.label "Quản lý chặn nội dung">
+<!ENTITY contentBlocking.manageSettings.accesskey "M">
+
+<!ENTITY contentBlocking.trackersView.label "Trình theo dõi">
+<!ENTITY contentBlocking.trackersView.strictInfo.label "Để chặn tất cả trình theo dõi, hãy đặt chặn nội dung thành “Nghiêm ngặt”.">
+
 <!ENTITY contentBlocking.openBreakageReportView2.label "Báo cáo một lỗi">
 <!ENTITY contentBlocking.breakageReportView.label "Báo cáo lỗi">
+<!ENTITY contentBlocking.breakageReportView2.description "Chặn nội dung có thể gây ra sự cố với một số trang web. Khi bạn báo cáo sự cố, bạn sẽ giúp tạo &brandShortName; tốt hơn cho mọi người. (Thao tác này sẽ gửi URL cũng như thông tin về cài đặt trình duyệt của bạn tới Mozilla.)">
 <!ENTITY contentBlocking.breakageReportView.learnMore "Tìm hiểu thêm">
 <!ENTITY contentBlocking.breakageReportView.collection.url.label "URL">
 <!ENTITY contentBlocking.breakageReportView.collection.comments.label "Những lỗi bạn đã gặp phải là gì? (Không bắt buộc)">
@@ -956,25 +1074,33 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView.cancel.label "Hủy bỏ">
 
 <!ENTITY trackingProtection.title "Chống theo dõi">
-
+<!ENTITY trackingProtection.tooltip "Mở Tùy chọn Trình chống theo dõi">
 
 <!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in NON-private browsing mode. -->
-<!ENTITY trackingProtection.unblock3.label "Vô hiệu hóa cho trang web này">
-<!ENTITY trackingProtection.unblock3.accesskey "D">
 <!ENTITY trackingProtection.unblock4.label "Vô hiệu hóa chặn cho trang này">
 <!ENTITY trackingProtection.unblock4.accesskey "D">
 <!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in PRIVATE browsing mode. -->
-<!ENTITY trackingProtection.unblockPrivate3.label "Vô hiệu hóa cho phiên này">
-<!ENTITY trackingProtection.unblockPrivate3.accesskey "D">
-<!ENTITY trackingProtection.block4.label "Kích hoạt cho trang này">
-<!ENTITY trackingProtection.block4.accesskey "E">
+<!ENTITY trackingProtection.unblockPrivate4.label "Tạm thời tắt chặn">
 <!ENTITY trackingProtection.unblockPrivate4.accesskey "D">
 <!ENTITY trackingProtection.block5.label "Kích hoạt Chặn cho trang này">
 <!ENTITY trackingProtection.block5.accesskey "E">
+
+<!-- LOCALIZATION NOTE (trackingProtection.unblock5.label, trackingProtection.unblock5.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in NON-private browsing mode. -->
+<!ENTITY trackingProtection.unblock5.label "Tắt chặn cho trang web này">
+<!ENTITY trackingProtection.unblock5.accesskey "T">
+<!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate6.label, trackingProtection.unblockPrivate6.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in PRIVATE browsing mode. -->
+<!ENTITY trackingProtection.unblockPrivate5.label "Tạm thời tắt chặn">
+<!ENTITY trackingProtection.unblockPrivate5.accesskey "T">
+<!ENTITY trackingProtection.block6.label "Bật chặn cho trang web này">
+<!ENTITY trackingProtection.block6.accesskey "T">
 <!ENTITY trackingProtection.reload2.label "Tải lại trang">
 <!ENTITY trackingProtection.reload2.accesskey "R">
 
@@ -1016,7 +1142,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY panicButton.view.undoWarning             "Thao tác này không thể hoàn tác được.">
 <!ENTITY panicButton.view.forgetButton            "Xóa!">
 
-<!ENTITY panicButton.thankyou.msg1                "Lược sử gần đây đã bị xóa.">
+<!ENTITY panicButton.thankyou.msg1                "Lịch sử gần đây đã bị xóa.">
 <!ENTITY panicButton.thankyou.msg2                "Duyệt web an toàn!">
 <!ENTITY panicButton.thankyou.buttonlabel         "Cảm ơn!">
 
@@ -1062,7 +1188,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY homepageControlled.disableButton.label "Vô hiệu hóa phần mở rộng">
 <!ENTITY homepageControlled.disableButton.accesskey "D">
 
+<!ENTITY tabHideControlled.header.message "Truy cập các thẻ ẩn của bạn">
+<!ENTITY tabHideControlled.keepButton.label "Giữ các thẻ ẩn">
 <!ENTITY tabHideControlled.keepButton.accesskey "K">
+<!ENTITY tabHideControlled.disableButton.label "Tắt tiện ích mở rộng">
 <!ENTITY tabHideControlled.disableButton.accesskey "D">
 
 <!ENTITY pageActionButton.tooltip "Hành động trên trang">
@@ -1077,7 +1206,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY sendToDevice.syncNotReady.label "Đang đồng bộ các thiết bị…">
 
 <!ENTITY pageAction.shareUrl.label "Chia sẻ">
-
 <!ENTITY pageAction.shareMore.label "Thêm…">
 
 <!ENTITY libraryButton.tooltip "Xem lịch sử, lưu trang đánh dấu và nhiều hơn nữa">
@@ -1091,3 +1219,4 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- LOCALIZATION NOTE: (addonPostInstallMessage.label):
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
+<!ENTITY addonPostInstallMessage.label "Quản lý tiện ích của bạn bằng cách nhấp vào <image class='addon-addon-icon'/> trong trình đơn <image class='addon-toolbar-icon'/>.">

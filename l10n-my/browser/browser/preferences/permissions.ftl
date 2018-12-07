@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = ပိတ်ဆို့ပါ
 permissions-capabilities-prompt =
     .label = အမြဲမေးပါ
+permissions-capabilities-listitem-allow =
+    .value = ခွင့်ပြုပါ
+permissions-capabilities-listitem-block =
+    .value = ပိတ်ဆို့ပါ
+permissions-capabilities-listitem-allow-first-party =
+    .value = ပါဝင်သူကိုသာ ခွင့်ပြုပါ
+permissions-capabilities-listitem-allow-session =
+    .value = ယခုအသုံးပြုကာလအတွက် ခွင့်ပြုပါ
 
 ## Invalid Hostname Dialog
 
@@ -54,6 +62,9 @@ permissions-exceptions-tracking-protection-window =
     .title = ခြွင်းချက်များ - လိုက်လံမှတ်သားမှုကာကွယ်ခြင်း
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = သင်သည် ဒီဆိုက်များအတွက် လိုက်လံမှတ်သားမှုကာကွယ်သည့်စနစ်ကို ပိတ်ထားသည်။
+permissions-exceptions-content-blocking-window =
+    .title = ခြွင်းချက်များ၊ စာမျက်နှာရှိအကြောင်းအရာ ပိတ်ပင်ခြင်း
+    .style = { permissions-window.style }
 
 ## Exceptions - Cookies
 
@@ -84,8 +95,8 @@ permissions-exceptions-addons-desc = သင်သည်မည်သည့်၀�
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = ခွင့်ပြုထားသော ဝဘ်ဆိုက်များ - အလိုအလျောက်ဖွင့်
+permissions-exceptions-autoplay-media-window2 =
+    .title = ခြွင်းချက်- အလိုလျောက်ပြသမှု
     .style = { permissions-window.style }
 
 ## Site Permissions - Notifications

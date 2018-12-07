@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = Bloquear
 permissions-capabilities-prompt =
     .label = Preguntar siempre
+permissions-capabilities-listitem-allow =
+    .value = Habilitar
+permissions-capabilities-listitem-block =
+    .value = Bloquear
+permissions-capabilities-listitem-allow-first-party =
+    .value = Permitir solamente el primero
+permissions-capabilities-listitem-allow-session =
+    .value = Habilitar durante Sesión
 
 ## Invalid Hostname Dialog
 
@@ -54,11 +62,15 @@ permissions-exceptions-tracking-protection-window =
     .title = Excepciones - Protección de rastreo
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = Está deshabilitada la protección de rastreo en estos sitios.
+permissions-exceptions-content-blocking-window =
+    .title = Excepciones - Bloqueo de contenidos
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = Se deshabilitó el bloqueo de contenido en estos sitios.
 
 ## Exceptions - Cookies
 
 permissions-exceptions-cookie-window =
-    .title = Excepciones: Cookies y Datos del sitio
+    .title = Excepciones - Cookies y datos del sitio
     .style = { permissions-window.style }
 permissions-exceptions-cookie-desc = Puede especificar qué sitios web siempre o nunca pueden usar cookies y datos del sitio.  Escriba la dirección exacta del sitio que desea administrar y luego haga clic en Bloquear, Permitir sesión o Permitir.
 
@@ -85,10 +97,6 @@ permissions-exceptions-addons-desc = Puede especificar qué sitios web podrán i
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = Sitios permitidos - Autoplay
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = Se pueden especificar los sitios que tienen permitida la reproducción automática de elementos de medios. Se debe ingresar la dirección exacta del sitio que se desea permitir y luego presionar Permitir.
 permissions-exceptions-autoplay-media-window2 =
     .title = Excepciones - Reproducción automática
     .style = { permissions-window.style }

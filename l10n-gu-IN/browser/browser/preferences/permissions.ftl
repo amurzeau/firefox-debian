@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = બ્લોક
 permissions-capabilities-prompt =
     .label = હંમેશા પૂછો
+permissions-capabilities-listitem-allow =
+    .value = માન્યતા આપો
+permissions-capabilities-listitem-block =
+    .value = બ્લોક
+permissions-capabilities-listitem-allow-first-party =
+    .value = ફક્ત પ્રથમ પાર્ટીને પરવાનગી આપો
+permissions-capabilities-listitem-allow-session =
+    .value = સત્ર માટે માન્યતા આપો
 
 ## Invalid Hostname Dialog
 
@@ -54,6 +62,10 @@ permissions-exceptions-tracking-protection-window =
     .title = અપવાદો - ટ્રેકિંગ પ્રોટેક્શન
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = તમે આ વેબસાઇટ્સ પર ટ્રેકિંગ સંરક્ષણને અક્ષમ કર્યું છે.
+permissions-exceptions-content-blocking-window =
+    .title = અપવાદો - સામગ્રી અવરોધિત
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = તમે આ સાઇટ માટે સામગ્રી અવરોધને નિષ્ક્રીય કર્યું છે.
 
 ## Exceptions - Cookies
 
@@ -85,10 +97,6 @@ permissions-exceptions-addons-desc = કઈ વેબ સાઈટો એડ-ઓ
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = માન્ય વેબસાઈટ્સ - ઑટોપ્લે
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = તમે નિર્દિષ્ટ કરી શકો છો કે કઈ વેબસાઇટ્સને મીડિયા તત્વોને આપમેળે ચલાવવાની મંજૂરી છે. તમે જે સાઇટને પરવાનગી આપવા માંગો છો તેનું ચોક્કસ સરનામું લખો અને પછી પરવાનગી આપો પર ક્લિક કરો
 permissions-exceptions-autoplay-media-window2 =
     .title = અપવાદો - સ્વચાલિત
     .style = { permissions-window.style }

@@ -4,9 +4,9 @@
 
 <!-- extracted from am-copies.xul -->
 
-<!ENTITY copyAndFolderTitle.label "ასლები და დასტები">
+<!ENTITY copyAndFolderTitle.label "ასლები და საქაღალდეები">
 <!ENTITY sendingPrefix.label "წერილის გაგზავნისას, ავტომატურად: ">
-<!ENTITY fccMailFolder.label "ასლი გადაწერე:">
+<!ENTITY fccMailFolder.label "ასლის განთავსება:">
 <!ENTITY fccMailFolder.accesskey "P">
 <!ENTITY fccReplyFollowsParent.label "პასუხების მოთავსება დედნის წერილის დასტაში">
 <!ENTITY fccReplyFollowsParent.accesskey "R">

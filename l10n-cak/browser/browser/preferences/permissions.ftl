@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = Tiq'eleb'ëx
 permissions-capabilities-prompt =
     .label = Junelïk tik'utüx pe
+permissions-capabilities-listitem-allow =
+    .value = Tiya' q'ij
+permissions-capabilities-listitem-block =
+    .value = Tiq'eleb'ëx
+permissions-capabilities-listitem-allow-first-party =
+    .value = Tiya' q'ij xa xe chi ke ri nab'ey taq peraj
+permissions-capabilities-listitem-allow-session =
+    .value = Tiya' q'ij pa re molojri'ïl re'
 
 ## Invalid Hostname Dialog
 
@@ -54,6 +62,10 @@ permissions-exceptions-tracking-protection-window =
     .title = Taq man relik ta - Chajinïk chuwäch Ojqanïk
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = Xe'achüp ri Chajinïk chuwäch Ojqanïk pa re taq ruxaq ajk'amaya'l re'.
+permissions-exceptions-content-blocking-window =
+    .title = Taq man relik ta - Kiq'atik Rupam
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = Xachüp ri ruq'atik Rupam pa re ajk'amaya'l ruxaq re'.
 
 ## Exceptions - Cookies
 
@@ -85,10 +97,6 @@ permissions-exceptions-addons-desc = Yatikïr naya' retal pan achike ruxaq k'ama
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = Ajk'amaya'l Ruxaq Ya'on q'ij - Ruyon Nitzijtäj
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = Tikirel niya' ketal ri ajk'amaya'l taq ruxaq ya'on q'ij chi ke richin ruyon yekitzïj taq kich'akulal tob'äl. Tikirel nitz'ib'äx ri rochochib'al ruxaq naya' q'ij chi re k'a ri' tapitz'a' Tiya' Q'ij.
 permissions-exceptions-autoplay-media-window2 =
     .title = Taq Merelik - Titzij Ruyon
     .style = { permissions-window.style }

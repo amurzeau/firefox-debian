@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = Neleisti
 permissions-capabilities-prompt =
     .label = Visada klausti
+permissions-capabilities-listitem-allow =
+    .value = Leisti
+permissions-capabilities-listitem-block =
+    .value = Neleisti
+permissions-capabilities-listitem-allow-first-party =
+    .value = Leisti tik pirmajam asmeniui
+permissions-capabilities-listitem-allow-session =
+    .value = Leisti vienam seansui
 
 ## Invalid Hostname Dialog
 
@@ -54,6 +62,10 @@ permissions-exceptions-tracking-protection-window =
     .title = Išimtys – apsauga nuo stebėjimo
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = Šiose svetainėse esate išjungę apsaugą nuo stebėjimo.
+permissions-exceptions-content-blocking-window =
+    .title = Išimtys – turinio blokavimas
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = Šiose svetainėse esate išjungę turinio blokavimą.
 
 ## Exceptions - Cookies
 
@@ -85,10 +97,6 @@ permissions-exceptions-addons-desc = Čia galima nurodyti svetaines, kurioms bus
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = Leidžiamos svetainės – automatinis grojimas
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = Galite nurodyti, kurioms svetainėms leidžiate automatiškai groti medijos elementus. Įveskite tikslų svetainės adresą ir spustelėkite „Leisti“.
 permissions-exceptions-autoplay-media-window2 =
     .title = Išimtys – automatinis grojimas
     .style = { permissions-window.style }

@@ -51,6 +51,7 @@ pane-sync-title = Firefox Account
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } সাপোর্ট
+addons-button-label = এক্সটেনশন ও থিম
 focus-search =
     .key = f
 close-button =
@@ -81,6 +82,9 @@ extension-controlled-homepage-override = একটি এক্সটেনস�
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = একটি এক্সটেনসন, <img data-l10n-name="icon"/> { $name }, আপনার নতুন ট্যাব পাতা নিয়ন্ত্রণ করছে।
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = এক্সটেনশন, <img data-l10n-name="icon"/> { $name }, এই সেটিং নিয়ন্ত্রণ করছে।
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = একটি এক্সটেনশন, <img data-l10n-name="icon"/> { $name }, আপনার ডিফল্ট সার্চ ইঞ্জিন সেট করে দিয়েছে।
@@ -90,6 +94,9 @@ extension-controlled-privacy-containers = এক্সটেনশন <img data-
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = একটি এক্সটেনসন, <img data-l10n-name="icon"/> { $name }, ট্রাকিং সুরক্ষা নিয়ন্ত্রণ করে।
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = এক্সটেনশন, <img data-l10n-name="icon"/> { $name }, এই সেটিং নিয়ন্ত্রণ করছে।
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = একটি এক্সটেনসন, <img data-l10n-name="icon"/> { $name }, কিভাবে { -brand-short-name } ইন্টারনেটের সাথে সংযোগ করে তা নিয়ন্ত্রণ করছে।
@@ -203,6 +210,9 @@ choose-button =
     .label = নির্বাচন…
     .accesskey = o
 choose-browser-language-description = { -brand-short-name } থেকে মেনু, বার্তা এবং বিজ্ঞপ্তি প্রদর্শন করতে ব্যবহৃত ভাষা সমূহ চয়ন করুন।
+manage-browser-languages-button =
+    .label = বিকল্প সেট করুন...
+    .accesskey = l
 confirm-browser-language-change-description = পরিবর্তন প্রয়োগ করতে { -brand-short-name } রিস্টার্ট করুন
 confirm-browser-language-change-button = আবেদন করুন এবং পুনঃশুরু করুন
 translate-web-pages =
@@ -276,6 +286,7 @@ update-application-use-service =
 update-enable-search-update =
     .label = স্বয়ংক্রিয়ভাবে অনুসন্ধান ইঞ্জিন হালনাগাদ হবে
     .accesskey = e
+update-pref-write-failure-title = অকৃতকার্য লিখুন।
 
 ## General Section - Performance
 
@@ -315,10 +326,14 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = টাইপ আরম্ভ করলে তৎক্ষণাৎ অনুসন্ধান শুরু করা হবে
     .accesskey = x
+browsing-cfr-recommendations =
+    .label = আপনার ব্রাউজ হিসাবে প্রস্তাবিত এক্সটেনশন
+    .accesskey = R
+browsing-cfr-recommendations-learn-more = আরও জানুন
 
 ## General Section - Proxy
 
-network-proxy-title = নেটওয়ার্ক প্রক্সি
+network-settings-title = নেটওয়ার্ক সেটিং
 network-proxy-connection-description = কিভাবে { -brand-short-name } ইন্টারেনেটে সংযোগ করে তা কনফিগার করুন।
 network-proxy-connection-learn-more = আরও জানুন
 network-proxy-connection-settings =
@@ -516,6 +531,7 @@ privacy-header = ব্রাউজার গোপনীয়তা
 ## Privacy Section - Forms
 
 forms-header = ফরম ও পাসওয়ার্ড
+logins-header = লগইন এবং পাসওয়ার্ড
 forms-ask-to-save-logins =
     .label = ওয়েবসাইটে লগইন ও পাসওয়ার্ড সংরক্ষণে জিজ্ঞাসা কর
     .accesskey = r
@@ -582,26 +598,32 @@ sitedata-total-size-calculating = সাইট ডাটা এবং ক্য�
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = আপনার সংরক্ষিত কুকিজ, সাইট ডেটা এবং ক্যাশে বর্তমানে { $value } { $unit } ডিস্ক স্পেস ব্যবহার করছে।
 sitedata-learn-more = আরও জানুন
-sitedata-accept-cookies-option =
-    .label = ওয়েবসাইট থেকে কুকি ও সাইট ডাটা গ্রহণ করুন (সুপারিশকৃত)
-    .accesskey = A
-sitedata-block-cookies-option =
-    .label = কুকি এবং সাইট ডাটা ব্লক করুন (ওয়েবসাইট ভাঙ্গতে পারে)
-    .accesskey = B
 sitedata-keep-until = সংরক্ষণের সময়কাল
     .accesskey = u
 sitedata-keep-until-expire =
     .label = তাদের মেয়াদ উত্তীর্ণ
 sitedata-keep-until-closed =
     .label = { -brand-short-name } বন্ধ হয়ে গেছে
-sitedata-accept-third-party-desc = তৃতীয়-পক্ষের কুকি এবং সাইট ডাটা গ্রহণ করুন
-    .accesskey = y
-sitedata-accept-third-party-always-option =
-    .label = সর্বদা
-sitedata-accept-third-party-visited-option =
-    .label = প্রদর্শিত হতে
-sitedata-accept-third-party-never-option =
-    .label = কখনো নয়
+sitedata-allow-cookies-option =
+    .label = কুকি ও সাইট তথ্য গ্রহণ করুন
+    .accesskey = A
+sitedata-disallow-cookies-option =
+    .label = কুকি ও সাইট তথ্য ব্লক করুন
+    .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = টাইপ ব্লক করা হয়েছে
+    .accesskey = T
+sitedata-block-trackers-option-recommended =
+    .label = তৃতীয় পক্ষের ট্র্যাকার (প্রস্তাবিত)
+sitedata-block-trackers-option =
+    .label = তৃতীয় পক্ষের ট্র্যাকার
+sitedata-block-unvisited-option =
+    .label = অদেখা ওয়েবসাইট থেকে কুকি
+sitedata-block-all-third-party-option =
+    .label = সমস্ত তৃতীয় পক্ষের কুকি (ওয়েবসাইট ভাঙতে পারে)
+sitedata-block-all-option =
+    .label = সমস্ত কুকি (ওয়েবসাইট ভাঙতে পারে)
 sitedata-clear =
     .label = ডাটা পরিষ্কার করুন…
     .accesskey = l
@@ -611,6 +633,9 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = ব্যতিক্রম… E
     .accesskey = E
+sitedata-cookies-permissions =
+    .label = অনুমতি ব্যবস্থাপনা...
+    .accesskey = P
 
 ## Privacy Section - Address Bar
 
@@ -644,9 +669,47 @@ content-blocking-toggle-label-on = চালু করুন
 content-blocking-toggle-label-off = বন্ধ
     .accesskey = O
 content-blocking-category-label = কি ব্লক করতে চান বলুন
+content-blocking-setting-standard =
+    .label = প্রমিত
+    .accesskey = d
+content-blocking-setting-strict =
+    .label = প্রখর
+    .accesskey = r
+content-blocking-setting-custom =
+    .label = স্বনির্ধারিত
+    .accesskey = C
+content-blocking-custom-desc = নির্বাচন করুন কি ব্লক করবেন
+content-blocking-third-party-cookies = তৃতীয় পক্ষের ট্র্যাকিং কুকি
+content-blocking-all-third-party-cookies = সকল তৃতীয়-পক্ষের কুকিগুলো
+content-blocking-learn-how = শিখুন কিভাবে হয়
+content-blocking-tracking-protection-trackers-label =
+    .label = ট্রাকারসমূহ
+    .accesskey = T
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = সমস্ত সনাক্তকৃত ট্র্যাকার
+    .accesskey = T
 content-blocking-tracking-protection-option-always =
     .label = সর্বদা
     .accesskey = A
+content-blocking-tracking-protection-option-private =
+    .label = শুধুমাত্র ব্যক্তিগত ব্রাউজিং উইন্ডোতে
+    .accesskey = p
+content-blocking-tracking-protection-change-block-list = ব্লক তালিকা পরিবর্তন করুন
+content-blocking-third-party-cookies-label =
+    .label = তৃতীয় পক্ষের কুকি
+    .accesskey = C
+content-blocking-change-cookie-settings =
+    .label = কুকি সেটিং পরিবর্তন করুন
+    .accesskey = S
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = ট্র্যাকারসমূহ (প্রস্তাবিত)
+    .accesskey = k
+content-blocking-reject-trackers-block-trackers-option =
+    .label = ট্রাকারসমূহ
+    .accesskey = k
+content-blocking-cookies-label =
+    .label = কুকি
+    .accesskey = C
 
 ## Privacy Section - Tracking
 
@@ -662,16 +725,15 @@ tracking-mode-private =
 tracking-mode-never =
     .label = কখনো নয় N
     .accesskey = N
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = ব্যক্তিগত ব্রাউজিং এ জানা ট্র্যাকার ব্লক করতে ট্র্যাকিং সুরক্ষা ব্যবহার করুন
-    .accesskey = v
 tracking-exceptions =
     .label = ব্যতিক্রম… E
     .accesskey = E
 tracking-change-block-list =
     .label = ব্লক তালিকা পরিবর্তন করুন…
     .accesskey = C
+tracking-manage-exceptions =
+    .label = ব্যাতিক্রম ব্যবস্থাপনা…
+    .accesskey = x
 
 ## Privacy Section - Permissions
 
@@ -709,6 +771,7 @@ autoplay-option-allow =
     .label = অটোপ্লে কে অনুমতি দিন
 autoplay-option-dont =
     .label = অটোপ্লে করবেন না
+permissions-autoplay-link = আরও জানুন
 permissions-block-popups =
     .label = পপ-আপ উইন্ডো ব্লক করা হবে B
     .accesskey = B
@@ -787,3 +850,36 @@ certs-view =
 certs-devices =
     .label = নিরাপত্তা ডিভাইস…
     .accesskey = D
+space-alert-learn-more-button =
+    .label = আরও জানুন
+    .accesskey = L
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] অপশন খুলুন
+           *[other] পছন্দসমূহ খুলুন
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] O
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } এ যথেষ্ট পরিমাণে ডিস্ক স্পেস নাই। ওয়েবসাইট কন্টেন্ট ঠিকভাবে নাও দেখাতে পারে। সংরক্ষিত সাইট ডাটা পরিষ্কার করতে অপশন> গোপনীয়তা ও নিরাপত্তা> কুকি ও সাইট ডাটা যান।
+       *[other] { -brand-short-name } এ যথেষ্ট পরিমাণে ডিস্ক স্পেস নাই। ওয়েবসাইট কন্টেন্ট ঠিকভাবে নাও দেখাতে পারে। সংরক্ষিত সাইট ডাটা পরিষ্কার করতে পছন্দ > গোপনীয়তা ও নিরাপত্তা> কুকি ও সাইট ডাটা যান।
+    }
+space-alert-under-5gb-ok-button =
+    .label = ঠিক আছে, বুঝেছি
+    .accesskey = K
+space-alert-under-5gb-message = { -brand-short-name } এ যথেষ্ট পরিমাণে ডিস্ক স্পেস নাই। ওয়েবসাইট কন্টেন্ট ঠিকভাবে নাও দেখাতে পারে। আরও ভাল ব্রাউজিং অভিজ্ঞতা পেতে ডিস্ক ব্যবহার অপটিমাইজ করুন কিভাবে করবেন জানতে  “আরও জানুন” এ ক্লিক করুন।
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = ডেস্কটপ
+downloads-folder-name = ডাউনলোড
+choose-download-folder-title = ডাউনলোড ফোল্ডার নির্বাচন করুন:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = { $service-name } এ ফাইল সংরক্ষণ করুন

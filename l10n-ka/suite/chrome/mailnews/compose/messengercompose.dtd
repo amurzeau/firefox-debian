@@ -82,7 +82,7 @@
 <!ENTITY highestPriorityCmd.accesskey "H">
 
 <!ENTITY returnReceiptMenu.label "მიღების დასტური">
-<!ENTITY returnReceiptMenu.accesskey "t">
+<!ENTITY returnReceiptMenu.accesskey "ტ">
 <!ENTITY dsnMenu.label "მიწოდების სტატუსის გზავნილი">
 <!ENTITY dsnMenu.accesskey "N">
 
@@ -98,7 +98,7 @@
 <!ENTITY bothFormatCmd.accesskey "l">
 
 <!ENTITY fileCarbonCopyCmd.label "ასლის გადაგზავნა">
-<!ENTITY fileCarbonCopyCmd.accesskey "d">
+<!ENTITY fileCarbonCopyCmd.accesskey "გ">
 <!ENTITY fileHereMenu.label "შენახვა აქ">
 
 <!--LOCALIZATION NOTE Toolbar items Don't change any "chrome://" URLs -->

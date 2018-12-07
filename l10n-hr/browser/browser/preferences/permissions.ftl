@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = Blokiraj
 permissions-capabilities-prompt =
     .label = Uvijek pitaj
+permissions-capabilities-listitem-allow =
+    .value = Dopusti
+permissions-capabilities-listitem-block =
+    .value = Blokiraj
+permissions-capabilities-listitem-allow-first-party =
+    .value = Dopusti samo od prve strane
+permissions-capabilities-listitem-allow-session =
+    .value = Dopusti za sesiju
 
 ## Invalid Hostname Dialog
 
@@ -54,9 +62,17 @@ permissions-exceptions-tracking-protection-window =
     .title = Iznimke - zaštita od praćenja
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = Na ovim stranicama ste isključili zaštitu od praćenja.
+permissions-exceptions-content-blocking-window =
+    .title = Iznimke - blokiranje sadržaja
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = Onemogućili ste blokiranje sadržaja za ove stranice.
 
 ## Exceptions - Cookies
 
+permissions-exceptions-cookie-window =
+    .title = Iznimke - kolačići i podaci web stranice
+    .style = { permissions-window.style }
+permissions-exceptions-cookie-desc = Možete navesti koje web stranice smiju uvijek ili nikad koristiti kolačiće i podatke web stranice. Unesite točnu adresu stranice koju želite podesiti, te kliknite Blokiraj, Dopusti za sesiju ili Dopusti.
 
 ## Exceptions - Pop-ups
 
@@ -79,26 +95,49 @@ permissions-exceptions-addons-window =
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = Možete odabrati koje web stranice smiju instalirati dodatke. Upišite točnu adresu web stranice kojoj to želite dopustiti, te kliknite na Dopusti.
 
+## Exceptions - Autoplay Media
+
+permissions-exceptions-autoplay-media-window2 =
+    .title = Iznimke - automatska reprodukcija
+    .style = { permissions-window.style }
+permissions-exceptions-autoplay-media-desc2 = Možete navesti koje web stranice smiju uvijek ili nikad automatski reproducirati medij sa zvukom. Unesite točnu adresu stranice koju želite podesiti, te kliknite Blokiraj ili Dopusti.
+
 ## Site Permissions - Notifications
 
 permissions-site-notification-window =
     .title = Postavke - dozvole za obavijesti
     .style = { permissions-window.style }
+permissions-site-notification-desc = Sljedeće web stranice su vas zatražile slanje obavijesti. Možete navesti koje su vam web stranice dopuštene slati obavijesti. Također možete blokirati nove zahtjeve za slanje obavijesti.
+permissions-site-notification-disable-label =
+    .label = Blokiraj nove zahtjeve koji traže dozvolu za obavijesti
+permissions-site-notification-disable-desc = Ovo će spriječiti traženje dopuštenja za slanje obavijesti za svaku stranicu koja nije navedena. Blokiranje obavijesti može slomiti neke značajke web stranica.
 
 ## Site Permissions - Location
 
 permissions-site-location-window =
     .title = Postavke - lokacijske dozvole
     .style = { permissions-window.style }
+permissions-site-location-desc = Sljedeće stranice su zatražile pristup vašoj lokaciji. Možete navesti koje web stranice imaju pristup vašoj lokaciji. Također možete blokirati nove zahtjeve koji traže pristup vašoj lokaciji.
+permissions-site-location-disable-label =
+    .label = Blokiraj nove zahtjeve za pristup vašoj lokaciji
+permissions-site-location-disable-desc = Ovo će spriječiti traženje pristupa vašoj lokaciji za svaku stranicu koja nije navedena. Blokiranje pristupa vašoj lokaciji može slomiti neke značajke web stranica.
 
 ## Site Permissions - Camera
 
 permissions-site-camera-window =
     .title = Postavke - dozvole pristupa kameri
     .style = { permissions-window.style }
+permissions-site-camera-desc = Sljedeće stranice su zatražile pristup vašoj kameri. Možete navesti koje web stranice imaju pristup vašoj kameri. Također možete blokirati nove zahtjeve koji traže pristup vašoj kameri.
+permissions-site-camera-disable-label =
+    .label = Blokiraj nove zahtjeve za pristup vašoj kameri
+permissions-site-camera-disable-desc = Ovo će spriječiti traženje pristupa vašoj kameri za svaku stranicu koja nije navedena. Blokiranje pristupa vašoj kameri može slomiti neke značajke web stranica.
 
 ## Site Permissions - Microphone
 
 permissions-site-microphone-window =
     .title = Postavke - dozvole pristupa mikrofonu
     .style = { permissions-window.style }
+permissions-site-microphone-desc = Sljedeće stranice su zatražile pristup vašem mikrofonu. Možete navesti koje web stranice imaju pristup vašem mikrofonu. Također možete blokirati nove zahtjeve koji traže pristup vašem mikrofonu.
+permissions-site-microphone-disable-label =
+    .label = Blokiraj nove zahtjeve za pristup vašem mikrofonu
+permissions-site-microphone-disable-desc = Ovo će spriječiti traženje pristupa vašem mikrofonu za svaku stranicu koja nije navedena. Blokiranje pristupa vašem mikrofonu može slomiti neke značajke web stranica.

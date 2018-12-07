@@ -8,7 +8,12 @@
 <!ENTITY loadError.label "Loowgol hello waɗii caɗeele">
 <!ENTITY retry.label "Fuɗɗito">
 <!ENTITY returnToPreviousPage.label "Rutto">
+<!ENTITY returnToPreviousPage1.label "Rutto (Wasiyaa)">
 <!ENTITY advanced.label "woɗɗoyi">
+<!ENTITY continue2.label "Goɗɗum…">
+<!ENTITY moreInformation.label "Kabaruuji goɗɗi">
+
+<!ENTITY viewCertificate.label "Yiy Sartifikaa">
 
 <!-- Specific error messages -->
 
@@ -88,10 +93,30 @@
 <!ENTITY nssFailure2.longDesc2 "<ul> <li>Hello ngo etoto-ɗaa naatnde ngoo waawaa hollireede sabu goongɗingol keɓe keɓaaɗe ɗee waawaa ƴeewteede.</li> <li>Tiiɗno jokkondir e jeyɓe lowre geese ndee ngam humpitde-ɓe caɗeele ɗee.</li> </ul>">
 
 <!ENTITY certerror.longpagetitle1 "Ceŋagol maa hisaani">
-<!-- Localization note (certerror.introPara) - The text content of the span tag
+<!ENTITY certerror.longpagetitle2 "Jeertino: Soomi tanaa kisal yeeso">
+<!ENTITY certerror.sts.longpagetitle  "Hoto seŋo: soomi saɗeende kisal">
+<!-- Localization note (certerror.introPara, certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "Jeyɗo <span class='hostname'/> oo koko teeltii lowre mum no feewraani.  Ngam reende humpito maa hade wujjeede, &brandShortName; seŋaaki e lowre ndee.">
+<!ENTITY certerror.introPara2 "&brandShortName; tinii tanaa cooaaɗo wonande kisal, tee jokkaani haa <span class='hostname'/>. So aɗa yilloo ndee lowre, taƴooɓe ina mbaawi etaade wujjude kabaruuji baaɗi no pinle, iimeeluuji walla kabaruuji kartal keredi.">
+
+<!ENTITY certerror.expiredCert.secondPara "Ina gasa saabii ndee saɗeende ko montoor ordinateer maa reegleede e waktu mo moƴƴaani, ko ɗuum haɗata &brandShortName; seŋoraade kisal.">
+
+<!ENTITY certerror.sts.introPara "&brandShortName; yiytii huunde nde moƴƴaani e kisal, waɗde jokkaani haa <span class='hostname'/> sibu ndee lowre geese ina ɗaɓɓi ceŋol kisngol.">
+
+<!ENTITY certerror.expiredCert.introPara "&brandShortName; yiytii saɗeende, waɗde jokkaani haa <span class='hostname'/>. Lowre geese ndee teeltiraaka no feewi walla montoor ordinateer maa reeglaaka e waktu moƴƴo.">
+<!ENTITY certerror.expiredCert.secondPara2 "Ina gasa tawa sartifikaa lowre geese ndee ko buntuɗo, ko ɗuum haɗata &brandShortName; seŋoraade kisal. So aɗa yilloo ndee lowre, yanooɓe ina mbaawi etaade wujjude kabaruuji baaɗi no pinle, iimeeluuji walla kabaruuji karal keredi.">
+<!ENTITY certerror.expiredCert.sts.secondPara "Ina gasa tawa sartifikaa lowre geese ndee ko buntuɗo, ko ɗuum haɗata &brandShortName; seŋoraade kisal.">
+
+<!ENTITY certerror.whatCanYouDoAboutItTitle "Ko mbaaw-ɗaa heen?">
+
+<!ENTITY certerror.unknownIssuer.whatCanYouDoAboutIt "<p>Ina gasa tawa saɗeende ndee jotondiri ko e lowre geese ndee, alaa ko mbaaw-ɗaa waɗde ngam safrude ɗum.</p><p>So tawii ngon-ɗaa ko e laylaytol antampiris walla so tawii aɗa huutoroo lidduwiris, aɗa waawi jokkondirde e kippuuji tammbol ngam heɓde ballal. Aɗa waawi kadi humpitde jiiloowo lowre geese ndee saɗeende ndee.</p>">
+
+<!ENTITY certerror.expiredCert.whatCanYouDoAboutIt2 "<p>Montoor ordinateer maa tuugii ko e <span id='wrongSystemTime_systemDate2'/>. Yenane ñalngu, waktu e jurol waktu ordinateer ina teeltiraa no moƴƴi to teelte yuɓɓo too, caggal ɗuum loowtaa <span class='hostname'/></p>.
+<p>So tawii montoor maa reglaa ko e waktu moƴƴo oo, ina gasa tawa ko lowre geese ndee woni nde feewaani, ndeen noon a waawaa safrude saɗeende ndee. Aɗa waawi humptide jiiloowo lowre ndee saɗeende ndee.</p>">
+
+<!ENTITY certerror.badCertDomain.whatCanYouDoAboutIt "<p>Ellee saɗeende ndee jotondiri ko e lowre geese ndee tee a waawaa safrude nde. Aɗa waawi humpitde jiiloowo lowre geese ndee saɗeende ndee.</p>">
 
 <!ENTITY sharedLongDesc "<ul> <li>Ndee lowre ena waawi tawo heɓotaako walla ko nde haljunde. Eto kadi ɗoo e ɓooyde.</li> <li>So a horiima loowde hay so hello, ƴeewto laylaytol ordinateer maa so ena seŋii.</li> <li>So tawii ordinateer walla laylaytol maa koko suraa caggal ɓalal-jaynge, yuurno so &brandShortName; ena yamiraa naatde e geese.</li> </ul>">
 
@@ -103,6 +128,7 @@ was trying to connect. -->
 
 
 <!ENTITY securityOverride.exceptionButtonLabel "Ɓeydu Paltoor…">
+<!ENTITY securityOverride.exceptionButton1Label "Jaɓ tanaa oo njokkaa">
 
 <!ENTITY errorReporting.automatic2 "Jaŋto juume hono ɗee ngam wallude Mozilla heftinde e falaade lowe bonnooje">
 <!ENTITY errorReporting.learnMore "Ɓeydu humpito…">
@@ -122,7 +148,10 @@ was trying to connect. -->
 <!ENTITY certerror.wrongSystemTimeWithoutReference "<p>&brandShortName; waawaa seŋaade e <span id='wrongSystemTimeWithoutReference_URL'/> sabu waktu peeñɗo e yuɓɓo maa oo moƴƴaani tee ɗuum na haɗa ceŋol ngol wonde kisngol</p> <p>Ordinateer maa reeglaa ko e <span id='wrongSystemTimeWithoutReference_systemDate'/>. Ngam safrude ndee saɗre, waylu ñalngu e waktu nguu haa njahda e ñalngu e waktu gonaaɗo oo.</p>">
 
 <!ENTITY certerror.pagetitle1  "Ceŋagol Hisaani">
+<!ENTITY certerror.pagetitle2  "Jeertino: Ina soomi tanaa yeeso">
+<!ENTITY certerror.sts.pagetitle  "Hoto seŋo: soomi saɗeende kisal">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Ndee lowre huutortoo ko HTTP Strict Transport Security (HSTS) ngam joopaade &brandShortName; seŋotoo e mayre tan ko e mbaydi kisndi. Ɗuum jibinta ko horaade ɓeydude heen paltol nguu seedamfaagu.">
+<!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'></span> ina jogii politik kisal biyeteengal HSTS (HTTP Strict Transport Security), ɗum firti ko &brandShortName; seŋortoo tan ko e kisal. A waawaa ɓeydude luulndal ngam yillaade ndee lowre.">
 <!ENTITY certerror.copyToClipboard.label "Natto binndol to ɗakkitorde">
 
 <!ENTITY inadequateSecurityError.title "Ceŋagol maa hisaani">
@@ -132,5 +161,11 @@ was trying to connect. -->
 
 <!ENTITY blockedByPolicy.title "Hello Daaƴaango">
 
+<!ENTITY clockSkewError.title "Montoor ordinateer maa goongɗaani">
+<!ENTITY clockSkewError.longDesc "Ordinateer maa ina sikki ko <span id='wrongSystemTime_systemDate1'/> haɗata &brandShortName; seŋoraade e kisal. Ngam yillaade <span class='hostname'></span>, waɗ montoor ordinateer maa e waktu to teelte yuɓɓo haa yahda e ñalngu e waktu jurol waktu gonangol ngol, caggal ɗuum kesɗitinaa <span class='hostname'></span>.">
+
 <!ENTITY prefReset.longDesc "Ena wayi hono teelte kisal laylaytol maa gaddata ɗee caɗe. Aɗa yiɗi artirde teelte goowaaɗe ɗee?">
 <!ENTITY prefReset.label "Artir teelte goowaaɗe">
+
+<!ENTITY networkProtocolError.title "Juumre jaɓɓitorde geese">
+<!ENTITY networkProtocolError.longDesc "<p>Hello ngo etoto-ɗaa ɗisde ngoo waawaa ɗiseede sibu juumre yiytaande nder jaɓɓitorde geese.</p><ul><li>Tiiɗno jokkondir e joom en lowe geese ɗee ngam habrude ɗum en saɗeende ndee.</li></ul>">

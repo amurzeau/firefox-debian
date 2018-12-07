@@ -6,6 +6,8 @@ do-not-track-description = Neldu lowe internet siñaal "Hoto rewindo" so a yiɗa
 do-not-track-learn-more = Ɓeydu humpito
 do-not-track-option-default =
     .label = E sahaa ndeenka rewindo tan
+do-not-track-option-default-content-blocking =
+    .label = So wonaa nde { -brand-short-name } suɓaa yo faddo dewinde teskaaɗe
 do-not-track-option-always =
     .label = Sahaa kala
 pref-page =
@@ -51,6 +53,7 @@ pane-sync-title = Konte Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = Wallitorde { -brand-short-name }
+addons-button-label = Jokke & Kettule
 focus-search =
     .key = f
 close-button =
@@ -81,6 +84,9 @@ extension-controlled-homepage-override = Timmitere, <img data-l10n-name="icon"/>
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Timmitere, <img data-l10n-name="icon"/> { $name }, nana ɗowa hello Tabbere maa Hesere.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = Jokkel, <img data-l10n-name="icon"/>{ $name }, jogii ndee ñaawirde
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Timmitere, <img data-l10n-name="icon"/> { $name }, teeltiima masiŋ maa njiilaw goowaaɗo.
@@ -90,6 +96,9 @@ extension-controlled-privacy-containers = Timmitere, <img data-l10n-name="icon"/
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Timmitere, <img data-l10n-name="icon"/> { $name }, nana ɗowa ndeenka dewindol.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Jokkel, <img data-l10n-name="icon"/>{ $name }, jogii ndee ñaawirde.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Timmitere, <img data-l10n-name="icon"/> { $name }, nana ɗowa hol no { -brand-short-name } seŋortoo e enternet oo.
@@ -144,6 +153,9 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = Reentin am so tabbe keewɗe ine uddidee
     .accesskey = k
+warn-on-quit-close-multiple-tabs =
+    .label = Tintinde ma so a yaltii a uddii tabbe keewɗe
+    .accesskey = t
 warn-on-open-many-tabs =
     .label = Reentin am so udditgol tabbe keewɗe ena keɓori leeltinde { -brand-short-name }
     .accesskey = d
@@ -202,6 +214,12 @@ choose-language-description = Suɓo ɗemngal njiɗ-ɗaa ngam jaytinde kelle
 choose-button =
     .label = Suɓo…
     .accesskey = u
+choose-browser-language-description = Suɓo ɗemɗe kuutoraaɗe ngam ɗisde cuɓirɗe, mesasuuji e tintine nder { -brand-short-name }.
+manage-browser-languages-button =
+    .label = Suɓo lomte...
+    .accesskey = l
+confirm-browser-language-change-description = Fokkit { -brand-short-name } ngam teeŋtinde bayle ɗee.
+confirm-browser-language-change-button = Teeŋtin pokkitaa
 translate-web-pages =
     .label = Fir loowdi geese
     .accesskey = F
@@ -273,10 +291,14 @@ update-application-use-service =
 update-enable-search-update =
     .label = Kesɗitingol ajaaja jiylorɗe
     .accesskey = l
+update-pref-write-failure-title = Gallugol binndol
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = Daɗndugol cuɓaaɗe aaɓnotaako. Binndol aaɓnotaako nder fiilde:{ $path }
 
 ## General Section - Performance
 
-performance-title = Jaawgol golle 
+performance-title = Jaawgol golle
 performance-use-recommended-settings-checkbox =
     .label = Huutoro teelte jaawgol golle basiyaaɗe ɗee
     .accesskey = H
@@ -312,10 +334,14 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Yiylo binndi so mi fuɗɗiima tappude
     .accesskey = n
+browsing-cfr-recommendations =
+    .label = Wasiyo jokke so aɗa wanngoo
+    .accesskey = y
+browsing-cfr-recommendations-learn-more = Jokku taro
 
 ## General Section - Proxy
 
-network-proxy-title = Proxy Laylaytol
+network-settings-title = Teelte geese
 network-proxy-connection-description = Teelto hol no { -brand-short-name } seŋortoo e enternet oo.
 network-proxy-connection-learn-more = Ɓeydu humpito
 network-proxy-connection-settings =
@@ -513,6 +539,7 @@ privacy-header = Suturo Wanngorde
 ## Privacy Section - Forms
 
 forms-header = Formileeruuji & pinle
+logins-header = Ceŋorɗe & Pinle
 forms-ask-to-save-logins =
     .label = Laaɓndo mbele a hisnat baccooje e pinle lowe
     .accesskey = r
@@ -554,9 +581,6 @@ history-dontremember-description = { -brand-short-name } maa huutoro teelte bann
 history-private-browsing-permanent =
     .label = Huutoro peeragol suturo sahaa kala
     .accesskey = o
-history-remember-option =
-    .label = Siiftor peeragol am tee aawto aslol
-    .accesskey = t
 history-remember-browser-option =
     .label = Siiftor aslol banngogol kam e gaawtogol
     .accesskey = b
@@ -582,26 +606,35 @@ sitedata-total-size-calculating = Nana hiisoo keɓe lowre kam e ɓetol moggon…
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = A mooftii kuukiije, lowre kañum moggel kuutortoo jooni ko { $value } { $unit } boowal mbeɗu nguu.
 sitedata-learn-more = Jokku taro
-sitedata-accept-cookies-option =
-    .label = Jaɓ kuukiije kañum e keɓe lowre iwɗe e lowe geese (ina wasiyaa)
-    .accesskey = A
-sitedata-block-cookies-option =
-    .label = Daaƴ kuukiije kam e keɓe lowre (ina waawi taƴde lowe geese)
-    .accesskey = B
 sitedata-keep-until = Mooftu haa
     .accesskey = u
 sitedata-keep-until-expire =
     .label = Ɗe mbuntii
 sitedata-keep-until-closed =
     .label = { -brand-short-name } uddaama
-sitedata-accept-third-party-desc = Jaɓ kuukiije jiggaaɗe kam e keɓe lowre
-    .accesskey = y
-sitedata-accept-third-party-always-option =
-    .label = Sahaa kala
-sitedata-accept-third-party-visited-option =
-    .label = Iwɗi e jillaaɗe
-sitedata-accept-third-party-never-option =
-    .label = Hay sahaa
+sitedata-delete-on-close =
+    .label = Momtu kuukiiji e keɓe lowre ndee so { -brand-short-name } uddiima
+    .accesskey = c
+sitedata-allow-cookies-option =
+    .label = Jaɓ kuukiiji e loowdi lowre ndee
+    .accesskey = J
+sitedata-disallow-cookies-option =
+    .label = Faddo kuukiiji e loowdi lowre ndee
+    .accesskey = F
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Sifaa paddaaɗo
+    .accesskey = S
+sitedata-block-trackers-option-recommended =
+    .label = Dewindiiɗi goɗɗi (basiyaaɗi)
+sitedata-block-trackers-option =
+    .label = Dewindiiɗi goɗɗi
+sitedata-block-unvisited-option =
+    .label = Kuukiiji lowe geese ɗe njillaaka
+sitedata-block-all-third-party-option =
+    .label = Kuukiiji goɗɗi ɗii kala (ina mbaawi saabaade taƴondiral e lowe geese)
+sitedata-block-all-option =
+    .label = Kuukiiji ɗii kala (ina mbaawi saabaade taƴondiral e lowe geese)
 sitedata-clear =
     .label = Momtu Keɓe…
     .accesskey = l
@@ -611,6 +644,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Palooje…
     .accesskey = P
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Teelte maa to paddagol loowdi ina kaɗa kala waylo teelte kuukiiji e keɓe lowre ndee.
 
 ## Privacy Section - Address Bar
 
@@ -627,6 +664,66 @@ addressbar-locbar-openpage-option =
     .accesskey = T
 addressbar-suggestions-settings = Waylu cuɓe wonande cakkitte yiylorde
 
+## Privacy Section - Content Blocking
+
+content-blocking-header = Paddagol loowdi
+content-blocking-desc = Faddo loowɗeele goɗɗe, ko wayi no jeeyle walla kod baawɗe leeltinde banngagol maa walla rewindaade ma e nder geese. Neɗɗin teelte maa ngam jerondiral moƴƴal hakkunde ndeenka e yuumteende.
+content-blocking-learn-more = Ɓeydu humpito
+content-blocking-restore-defaults =
+    .label = Waɗtu no ardunoo
+    .accesskey = W
+content-blocking-toggle-on =
+    .tooltiptext = Ñif paddagol loowdi
+content-blocking-toggle-off =
+    .tooltiptext = Hurmin paddagol loowdi
+content-blocking-toggle-label-on = ON
+    .accesskey = O
+content-blocking-toggle-label-off = OFF
+    .accesskey = O
+content-blocking-category-label = Suɓo ko faddetee
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Dewindiiɗe loowngo-leelngo
+    .accesskey = D
+content-blocking-fastblock-new-description = Faddo tan dewinde kaɗooje loowgol jaawngol kelle.
+content-blocking-tracking-protection-trackers-label =
+    .label = Dewindiiɗe
+    .accesskey = D
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Dewindiiɗe jiytaaɗe ɗee fof
+    .accesskey = D
+content-blocking-tracking-protection-new-description = Faddo dewindiiɗe ganndaaɗe ɗee kala. (Ngam haɗde loowgol won ɗeen kelle.)
+content-blocking-tracking-protection-option-always =
+    .label = Sahaa kala
+    .accesskey = S
+content-blocking-tracking-protection-option-private =
+    .label = Nder kenorɗe keeriiɗe tan
+    .accesskey = N
+content-blocking-tracking-protection-change-block-list = Waylo doggol padde
+content-blocking-third-party-cookies-label =
+    .label = Kuukiiji goɗɗi
+    .accesskey = K
+content-blocking-reject-trackers-description = Faddo kuukiiji goɗɗi ɗii kala walla ɗi dewindiiɗi ɗii toɗɗii ɗii.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Teelte maa nder kuukiiji e keɓe lowre ndee ina kaɗa kala baylugol teelte kuukiiji goɗɗi.
+content-blocking-change-cookie-settings =
+    .label = Waylu teelte kuukiiji
+    .accesskey = W
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Dewindiiɗi (basiyaaɗi)
+    .accesskey = D
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Dewindiiɗi
+    .accesskey = D
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Kuukiiji goɗɗi ɗii kala (ina mbaawi saabaade taƴondiral e lowe geese)
+    .accesskey = K
+
 ## Privacy Section - Tracking
 
 tracking-header = Huutoro Ndeenka Dewindol
@@ -641,10 +738,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Hay sahaa
     .accesskey = H
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Huutoro ndeenka dewindagol nder banngagol sutura ngam faddaade ñukkintooɓe anndaaɓe
-    .accesskey = v
 tracking-exceptions =
     .label = Paltooje…
     .accesskey = a
@@ -686,8 +779,9 @@ autoplay-option-ask =
     .label = Naamno e sahaa kala
 autoplay-option-allow =
     .label = Yamir janngol ɗoon e ɗoon
-autoplay-option-block =
-    .label = Faddo janngol ɗoon e ɗoon
+autoplay-option-dont =
+    .label = Woto tar e jaajol
+permissions-autoplay-link = Ɓeydu humpito
 permissions-block-popups =
     .label = Falo kenorɗe cuppitte
     .accesskey = B
@@ -711,11 +805,11 @@ collection-header = { -brand-short-name } Roɓindo e Kuutoragol Keɓe
 collection-description = Ha min ndarii ngam addande on cuɓe tawi kadi min ƴettata tan ko ko min ngaddanta on e ko min ƴellittanta on { -brand-short-name } Ha min naamndo yamiroore sahaa kala ko adii keɓgol kabaruuji maa keeriiɗi.
 collection-privacy-notice = Tintinol Suturo
 collection-health-report =
-    .label = Yamir { -brand-short-name } yo neldu keɓe karallaagal e gollondiral to Moɗilla
+    .label = Yamir { -brand-short-name } yo neldu keɓe karallaagal e gollondiral to { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Jokku Taro
 collection-studies =
-    .label = Yamir { -brand-short-name } aafgol kam e ɗowgol jaŋdeeji 
+    .label = Yamir { -brand-short-name } aafgol kam e ɗowgol jaŋdeeji
 collection-studies-link = Yiy jaŋdeeji { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
@@ -766,3 +860,36 @@ certs-view =
 certs-devices =
     .label = Masiŋon Kisal…
     .accesskey = D
+space-alert-learn-more-button =
+    .label = Jokku taro
+    .accesskey = L
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Uddit cuɓtorɗe
+           *[other] Uddit Cuɓe
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] U
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } ina ŋakkiraa boowal mbeɗu. Loowdi lowre geese ndii waawaa feeñirde no feewi. Aɗa waawi momtude keɓe daɗndaaɗe nder Cuɓe> Sirlu e Kisal> Kuukiiji e keɓe lowre.
+       *[other] { -brand-short-name } ina ŋakkiraa boowal mbeɗu. Loowdi lowre geese ndii waawaa feeñirde no feewi. Aɗa waawi momtude keɓe daɗndaaɗe nder Ɓurɗine> Sirlu e Kisal> Kuukiiji e keɓe lowre.
+    }
+space-alert-under-5gb-ok-button =
+    .label = OK, Heɓ ɗum
+    .accesskey = K
+space-alert-under-5gb-message = { -brand-short-name } ina ŋakkiraa boowal mbeɗu. Loowdi lowre ndee waawaa hollireede no feewiri. Yillo "Ɓeydude Humpito" ngam ittinde kuutoragol mbeɗu maa ngam humpito moƴƴo banngagol.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Biro
+downloads-folder-name = Gaawte
+choose-download-folder-title = Suɓo Runngere Gaawte:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Daɗndu piille to { $service-name }

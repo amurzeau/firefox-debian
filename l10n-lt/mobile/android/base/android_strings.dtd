@@ -291,6 +291,18 @@
      Similar to the already existing "pref_whats_new_notification_summary"-->
 <!ENTITY pref_feature_tips_notification_summary "Sužinokite daugiau apie „&brandShortName;“ bei kitų „&vendorShortName;“ produktų galimybes.">
 
+<!-- Localization note (pref_feature_tips_notification_enabling_hint):
+     Describe the action the user should do to enable this preference
+     Will be used in the context "<Turn on> ... to enable this feature" -->
+<!ENTITY pref_feature_tips_notification_enabling_hint "Įjunkite">
+
+<!-- Localization note (pref_feature_tips_notification_enabling_path):
+     Nothing to translate. Simple concatenation of already localized strings. Result is used below. -->
+<!ENTITY pref_feature_tips_notification_enabling_path "&pref_category_privacy_short; > &pref_category_datareporting; > &datareporting_fhr_title;">
+<!-- Localization note (pref_feature_tips_notification_enabling_hint):
+     Describe the action the user should do to enable this preference. -->
+<!ENTITY pref_feature_tips_notification_enabling_hint2 "(Norint įjungti šią nuostatą, turi būti įjungta &pref_feature_tips_notification_enabling_path;.)">
+
 <!-- Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
      for experimental features. -->
 <!ENTITY pref_category_experimental "Eksperimentinės funkcijos">
@@ -363,7 +375,6 @@
 <!ENTITY pref_use_system_font_size_summary "Atvaizduoti saityno turinį pagal sisteminį šrifto dydį">
 
 <!ENTITY pref_media_autoplay_enabled "Leisti automatinį grojimą">
-<!ENTITY pref_media_autoplay_enabled_summary "Nustatykite, ar svetainės gali automatiškai paleisti vaizdo įrašus bei kitą medijos turinį">
 <!ENTITY pref_media_autoplay_allow "Leisti automatinį grojimą">
 <!ENTITY pref_media_autoplay_block "Neleisti automatinio grojimo">
 <!ENTITY pref_zoom_force_enabled "Visada įgalinti artinimą">
@@ -828,9 +839,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- LOCALIZATION NOTE(corrupt_apk): This notification is shown if corruption has been detected on startup and the user has to reinstall Firefox -->
 <!ENTITY corrupt_apk "Nepavyko atverti „&brandShortName;“. Prašome perdiegti ir bandyti iš naujo.">
 
-<!ENTITY eol_notification_title2 "„&brandShortName;“ daugiau neatsinaujins">
-<!ENTITY eol_notification_summary "Bakstelėkite išsamesnei informacijai">
-
 <!-- LOCALIZATION NOTE (whatsnew_notification_title, whatsnew_notification_summary): These strings
      are used for a system notification that's shown to users after the app updates. -->
 <!ENTITY whatsnew_notification_title "Naudojama paskiausia „&brandShortName;“ laida">
@@ -897,10 +905,19 @@ Picture-in-picture mini window -->
 
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel "&brandShortName;">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel2 "Naršyklė">
 <!ENTITY mls_notification_channel "„&vendorShortName;“ vietos nustatymo paslauga">
 <!ENTITY download_notification_channel "Atsiuntimai">
 <!ENTITY media_notification_channel "Medijos atkūrimas">
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
 <!ENTITY leanplum_default_notifications_channel "„&brandShortName;“ siunčiami pranešimai">
+<!ENTITY media_notification_channel2 "Garsas ir vaizdas">
+<!-- These push notifications come without a specific channel and/or name from Leanplum -->
+<!ENTITY leanplum_default_notifications_channel2 "„&vendorShortName;“ patarimai">
 <!ENTITY updater_notification_channel "Programos naujinimai">
 <!ENTITY synced_tabs_notification_channel "Sinchronizuotos kortelės">
+<!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
+web sites through the HTML Notifications API. -->
+<!ENTITY site_notifications_channel "Svetainių pranešimai">

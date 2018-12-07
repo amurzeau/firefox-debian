@@ -67,3 +67,19 @@ connection-proxy-autologin =
 connection-proxy-socks-remote-dns =
     .label = DNS progsaidh nuair a chleachdar SOCKS v5
     .accesskey = d
+connection-dns-over-https =
+    .label = Cuir an comas DNS slighe HTTPS
+    .accesskey = m
+connection-dns-over-https-url = URL
+    .accesskey = U
+    .tooltiptext = An URL airson DNS slighe HTTPS fhuasgladh
+# Variables:
+#   $url (String) - URL for the DNS over HTTPS provider
+connection-dns-over-https-url-default =
+    .label = Cleachd a’ bhun-roghainn ({ $url })
+    .accesskey = h
+    .tooltiptext = Cleachd an URL bunaiteach airson DNS air HTTPS fhuasgladh
+connection-dns-over-https-url-custom =
+    .label = Gnàthaichte
+    .accesskey = G
+    .tooltiptext = Cuir a-steach URL gnàthaichte airson DNS fhuasgladh air HTTPS

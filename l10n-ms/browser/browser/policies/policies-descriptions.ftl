@@ -18,6 +18,7 @@ policy-BlockAboutProfiles = Sekat akses ke halaman about:profiles.
 policy-BlockAboutSupport = Sekat akses ke halaman about:support.
 policy-Bookmarks = Cipta tandabuku dalam bar alatan Tandabuku, menu Tandabuku atau folder khusus di dalamnya.
 policy-Certificates = Sama ada menggunakan atau tidak sijil terbina dalam. Polisi ini hanya untuk Windows buat masa ini.
+policy-CertificatesDescription = Tambah sijil atau gunakan sijil terbina dalam.
 policy-Cookies = Izinkan atau tidak laman web menetapkan kuki.
 policy-DisableAppUpdate = Halang pelayar daripada mengemaskini.
 policy-DisableBuiltinPDFViewer = Nyahdayakan PDF.js, pemapar PDF terbina-dalam { -brand-short-name }.
@@ -42,6 +43,7 @@ policy-DisableSystemAddonUpdate = Halang pelayar daripada memasang dan mengemask
 policy-DisableTelemetry = Nyahaktifkan Telemetry.
 policy-DisplayBookmarksToolbar = Papar Bar alatan Tandabuku secara piawai.
 policy-DisplayMenuBar = Papar Bar Menu secara piawai.
+policy-DNSOverHTTPS = Konfigurasi DNS mengatasi HTTPS
 policy-DontCheckDefaultBrowser = Nyahdayakan pilihan untuk pelayar piawai pada permulaan.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Dayakan atau Nyahdayakan Sekatan Kandungan dan pilihan untuk menguncinya.
@@ -62,9 +64,12 @@ policy-OverridePostUpdatePage = Tulis ganti halaman selepas-kemaskini "What's Ne
 policy-Permissions = Konfigurasi keizinan untuk kamera, mikrofon, lokasi dan notifikasi.
 policy-PopupBlocking = Izinkan laman web tertentu untuk memaparkan popups secara piawai.
 policy-Proxy = Konfigurasi tetapan proksi.
+policy-RequestedLocales = Tetapkan senarai lokaliti aplikasi yang diminta mengikut turutan keutamaan.
 policy-SanitizeOnShutdown = Buang semua data navigasi ketika penutupan.
 policy-SearchBar = Tetapkan lokasi piawai bar carian. Pengguna masih boleh menyesuaikannya.
 policy-SearchEngines = Konfigurasi tetapan enjin carian. Polisi ini hanya boleh didapati dalam versi Extended Support Release (ESR).
+# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
+policy-SecurityDevices = Pasang modul PKCS #11.
 # “format” refers to the format used for the value of this policy. See also:
 # https://github.com/mozilla/policy-templates/blob/master/README.md#websitefilter-machine-only
 policy-WebsiteFilter = Sekat laman web daripada dilawati. Lihat dokumentasi untuk maklumat lanjut format berkenaan.

@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -125,24 +117,15 @@ is-not-default = तपाईँको हालको निर्धारि�
 set-as-my-default-browser =
     .label = पूर्वनिर्धारित बनाउनुहोस…
     .accesskey = D
-startup-page = जब { -brand-short-name } सुरु हुन्छ
-    .accesskey = s
-startup-user-homepage =
-    .label = गृह पृष्ठ देखाउनुहोस्
-startup-blank-page =
-    .label = खाली पृष्ठ देखाउनुहोस्
-startup-prev-session =
-    .label = अन्तिम पटकको सञ्झ्यालहरू र ट्याबहरू देखाउनुहोस्
 disable-extension =
     .label = एक्सटेन्सन अक्षम गर्नुहोस्
-home-page-header = गृहपृष्ठ
 tabs-group-header = ट्याबहरू
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab ले हालसालै प्रयोग गरिएका ट्याबहरूमा चक्र लगाउँछ
     .accesskey = T
 open-new-link-as-tabs =
     .label = नयाँ सञ्झ्यालको साटोमा नयाँ ट्याबमा लिङ्क खोल्नुहोस्
-    .accesskey = w 
+    .accesskey = w
 warn-on-close-multiple-tabs =
     .label = धेरै ट्याबहरू बन्द गर्न खोज्दा तपाईँलाई चेतावनी दिनुहोस्
     .accesskey = m
@@ -243,7 +226,7 @@ applications-description = कसरी { -brand-short-name } ले तपा�
 applications-filter =
     .placeholder = फाइलको प्रकार वा अनुप्रयोगहरु खोज्नुहोस्
 applications-type-column =
-    .label = सामग्री र तारिका 
+    .label = सामग्री र तारिका
     .accesskey = T
 applications-action-column =
     .label = कार्य
@@ -255,7 +238,6 @@ play-drm-content =
 play-drm-content-learn-more = अझै जान्नुहोस्
 update-application-title = { -brand-short-name } अद्यावधिकहरू
 update-application-description = राम्रो कार्यसम्पादन, स्थायित्व र सुरक्षाको लागि { -brand-short-name } लाई अद्यावधिक राख्नुहोस् ।
-update-application-info = संस्करण { $version } <a>नयाँ के छ</a>
 update-application-version = संस्करण { $version } <a data-l10n-name="learn-more">नयाँ के छ</a>
 update-history =
     .label = अद्यावधिक इतिहास देखाउनुहोस्…
@@ -291,7 +273,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = सामग्री प्रक्रिया सीमा
     .accesskey = L
 performance-limit-content-process-enabled-desc = थप सामग्री प्रक्रियाहरूले धेरै ट्याबहरू प्रयोग गर्दा कार्यसम्पादनमा सुधार ल्याऊँछ तर धेरै मेमोरी पनि प्रयोग गर्छ ।
-performance-limit-content-process-disabled-desc = सामग्री प्रक्रियाहरूको संख्या परिमार्जन बहुप्रक्रिया { -brand-short-name } सँग मात्र सम्भव छ । <a>बहुप्रक्रिया सक्षम छ कि छैन भनेर कसरि जाँच गर्ने हो जान्नुहोस्</a>
 performance-limit-content-process-blocked-desc = सामग्री प्रक्रियाहरूको संख्या परिमार्जन बहुप्रक्रिया { -brand-short-name } सँग मात्र सम्भव छ । <a data-l10n-name="learn-more">बहुप्रक्रिया सक्षम छ कि छैन भनेर कसरि जाँच गर्ने हो जान्नुहोस्</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -308,7 +289,7 @@ browsing-use-smooth-scrolling =
     .label = सरर र स्क्रोल प्रयोग गर्नुहोस्
     .accesskey = m
 browsing-use-onscreen-keyboard =
-    .label = आवश्यकता अनुसार टच किबोर्ड देखाउनु होस्। 
+    .label = आवश्यकता अनुसार टच किबोर्ड देखाउनु होस्।
     .accesskey = k
 browsing-use-cursor-navigation =
     .label = पृष्ठहरू सफर गर्दा जहिले पनि कर्सर किहरू प्रयोग गर्नुहोस्
@@ -319,7 +300,6 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = नेटवर्क प्रोक्सी
 network-proxy-connection-learn-more = अझै जान्नुहोस्
 network-proxy-connection-settings =
     .label = सेटिङ्हरू…
@@ -335,7 +315,7 @@ home-homepage-mode-label = गृहपृष्ठ तथा नयाँ स�
 home-newtabs-mode-label = नयाँ ट्याबहरु
 home-restore-defaults =
     .label = पूर्वानिर्धारित अवस्थामा ल्याउनुहोस्
-    .accesskey = R 
+    .accesskey = R
 # "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
@@ -360,9 +340,6 @@ use-current-pages =
 choose-bookmark =
     .label = पुस्तकचिनो प्रयोग गर्नुहोस्...
     .accesskey = B
-restore-default =
-    .label = पूर्वनिर्धारित रूपमा लग्नुहोस्
-    .accesskey = R
 
 ## Search Section
 
@@ -514,9 +491,6 @@ history-dontremember-description = { -brand-short-name } ले तपाईँ�
 history-private-browsing-permanent =
     .label = सधैं निजी ब्राउजिङ्ग ढाँचा प्रयोग गर्नुहोस्
     .accesskey = p
-history-remember-option =
-    .label = मेरो ब्राउजिङ्ग र डाउनलोड इतिहास सम्झनुहोस्
-    .accesskey = b
 history-remember-search-option =
     .label = खोज र फारम इतिहास सम्झनुहोस्
     .accesskey = f
@@ -536,12 +510,6 @@ sitedata-keep-until-expire =
     .label = तिनीहरूको समय अवधि सकियो
 sitedata-keep-until-closed =
     .label = { -brand-short-name } बन्द गरियो
-sitedata-accept-third-party-always-option =
-    .label = सधैँ
-sitedata-accept-third-party-visited-option =
-    .label = पहिले हेरिएकोबाट
-sitedata-accept-third-party-never-option =
-    .label = कहिले पनि होइन
 sitedata-clear =
     .label = डेटा खालीगर्नुहोस्…
     .accesskey = l
@@ -564,6 +532,9 @@ addressbar-locbar-openpage-option =
     .accesskey = O
 addressbar-suggestions-settings = खोज इन्जिन सुझावहरूका लागि प्राथमिकताहरू परिवर्तन गर्नुहोस्
 
+## Privacy Section - Content Blocking
+
+
 ## Privacy Section - Tracking
 
 tracking-header = ट्रयाकिङ्ग सुरक्षा
@@ -577,10 +548,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = कहिले पनि होइन
     .accesskey = N
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = ज्ञात ट्रयाकरहरू रोक्न निजि ब्राउजिङ्गमा ट्रयाकिङ्ग सुरक्षा प्रयोग गर्नुहोस्
-    .accesskey = v
 tracking-exceptions =
     .label = अपवादहरू...
     .accesskey = x
@@ -680,3 +647,27 @@ certs-view =
 certs-devices =
     .label = सुरक्षा उपकरणहरू…
     .accesskey = D
+space-alert-learn-more-button =
+    .label = अझै जान्नुहोस्
+    .accesskey = L
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] विकल्पहरू खोल्नुहोस्
+           *[other] प्राथमिकताहरू खोल्नुहोस्
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] O
+        }
+space-alert-under-5gb-ok-button =
+    .label = ठीक छ, थाहा पाएँ
+    .accesskey = K
+space-alert-under-5gb-message = { -brand-short-name } लाई डिस्क स्पेसको कमि भईरहेको छ । वेबसाइट सामग्रीहरू ठीक नदेखिन सक्छन् । अझै राम्रो ब्राउजिङ्ग अनुभवको लागि डिस्क उपयोग अनुकूलन गर्न “अझै जान्नुहोस्” मा जानुहोस् ।
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = डेस्कटप
+downloads-folder-name = Downloads
+choose-download-folder-title = डाउनलोड फोल्डर रोज्नुहोस्:

@@ -6,7 +6,8 @@
 ## UI strings for the simplified onboarding modal
 
 onboarding-button-label-try-now = Amprouit bremañ
-onboarding-welcome-header = Degemer mat war { -brand-short-name }
+onboarding-button-label-get-started = Stagañ e-barzh
+onboarding-welcome-header = Donemat war { -brand-short-name }
 onboarding-start-browsing-button-label = Stagañ da verdeiñ
 
 ## These strings belong to the individual onboarding messages.
@@ -24,3 +25,5 @@ onboarding-addons-title = Askouezhioù
 onboarding-addons-text = Ouzhpennit keweriusterioù a lako { -brand-short-name } da labourat muioc'h evidoc'h. Keñveriit prizioù, sellit ouzh liv an amzer pe eztaolit ho personelezh gant un neuz personelaet.
 onboarding-ghostery-title = Ghostery
 onboarding-ghostery-text = Merdeit herrekoc'h, speredekoc'h, pe diogeloc'h gant askouezhioù evel Ghostery hag a ro tro deoc'h da stankañ ar bruderezhioù aloubus.
+# Note: "Sync" in this case is a generic verb, as in "to synchronize"
+onboarding-fxa-title = Synkro

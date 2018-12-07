@@ -23,10 +23,22 @@
 <!ENTITY  reloadTab.accesskey                "M">
 <!ENTITY  reloadAllTabs.label                "Muat semula Semua Tab">
 <!ENTITY  reloadAllTabs.accesskey            "S">
+<!ENTITY  selectAllTabs.label                "Pilih Semua Tab">
+<!ENTITY  selectAllTabs.accesskey            "S">
 <!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
 a tab (i.e. it is a verb, not adjective). -->
 <!ENTITY  duplicateTab.label                 "Duplikasi Tab">
+<!-- LOCALIZATION NOTE (duplicateTab.accesskey, duplicateTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  duplicateTab.accesskey             "D">
+<!ENTITY  closeTabOptions.label              "Tutup Pilihan Tab">
+<!ENTITY  closeTabOptions.accesskey          "P">
+<!-- LOCALIZATION NOTE (duplicateTabs.label): This is a command to duplicate
+a tab (i.e. it is a verb, not adjective). -->
+<!ENTITY  duplicateTabs.label                "Duplikasi Tab">
+<!-- LOCALIZATION NOTE (duplicateTab.accesskey, duplicateTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  duplicateTabs.accesskey            "D">
 <!-- LOCALIZATION NOTE (closeTabsToTheEnd.label): This should indicate the
 direction in which tabs are closed, i.e. locales that use RTL mode should say
 left instead of right. -->
@@ -38,19 +50,29 @@ left instead of right. -->
 <!ENTITY  closeSelectedTabs.label            "Tutup Tab Yang Dipilih">
 <!ENTITY  closeSelectedTabs.accesskey        "D">
 
+<!ENTITY  closeTabs.label                    "Tutup Tab">
+<!ENTITY  closeTabs.accesskey                "T">
 <!ENTITY  pinSelectedTabs.label              "Pin Tab">
-<!-- Pin Tab and Pin Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  pinSelectedTabs.accesskey          "P">
 <!ENTITY  unpinSelectedTabs.label            "Buang pin Tab">
-<!-- Unpin Tab and Unpin Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinSelectedTabs.accesskey        "b">
 <!-- Reload Tab and Reload Selected Tabs have the same accesskey
 but will never be visible at the same time. -->
-<!ENTITY  reloadSelectedTabs.label           "Muat semula Tab Dipilih">
+<!ENTITY  reloadSelectedTabs.label           "Muat Semula Tab Dipilih">
 <!ENTITY  reloadSelectedTabs.accesskey       "M">
+<!-- LOCALIZATION NOTE(reloadTab.label, reloadTabs.label): have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  reloadTabs.label                   "Muat Semula Tab">
+<!ENTITY  reloadTabs.accesskey               "M">
 <!ENTITY  bookmarkSelectedTabs.label         "Tandabuku Tab…">
+<!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "k">
 
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
@@ -59,8 +81,14 @@ left edge of the tabstrip. Really we just want the string to express the idea
 that this is a lightweight and reversible action that keeps your tab where you
 can reach it easily. -->
 <!ENTITY  pinTab.label                       "Pin Tab">
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  pinTab.accesskey                   "P">
 <!ENTITY  unpinTab.label                     "Buang pin Tab">
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinTab.accesskey                 "b">
 <!ENTITY  sendTabToDevice.label              "Hantar Tab ke Peranti">
 <!ENTITY  sendTabToDevice.accesskey          "b">
@@ -68,12 +96,26 @@ can reach it easily. -->
 <!ENTITY  sendPageToDevice.accesskey         "P">
 <!ENTITY  sendLinkToDevice.label             "Hantar Pautan ke Peranti">
 <!ENTITY  sendLinkToDevice.accesskey         "P">
+<!-- LOCALIZATION NOTE (moveTabOptions.label and moveSelectedTabOptions.label):
+These two items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  moveTabOptions.label               "Pindah Tab">
+<!ENTITY  moveTabOptions.accesskey           "d">
+<!ENTITY  moveSelectedTabOptions.label       "Pindah Tab">
+<!ENTITY  moveSelectedTabOptions.accesskey   "d">
+<!ENTITY  moveToStart.label                  "Pindah ke Permulaan">
+<!ENTITY  moveToStart.accesskey              "P">
+<!ENTITY  moveToEnd.label                    "Pindah ke Akhir">
+<!ENTITY  moveToEnd.accesskey                "A">
 <!ENTITY  moveToNewWindow.label              "Pindah ke Tetingkap Baru">
 <!ENTITY  moveToNewWindow.accesskey          "T">
 <!ENTITY  reopenInContainer.label            "Buka semula dalam Penyimpan">
 <!ENTITY  reopenInContainer.accesskey        "k">
 <!ENTITY  bookmarkAllTabs.label              "Tandabuku Semua Tab…">
 <!ENTITY  bookmarkAllTabs.accesskey          "T">
+<!ENTITY  bookmarkTab.label                  "Tab Tandabuku">
+<!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  bookmarkTab.accesskey              "T">
 <!ENTITY  undoCloseTab.label                 "Batal Tutup Tab">
 <!ENTITY  undoCloseTab.accesskey             "B">
 <!ENTITY  closeTab.label                     "Tutup Tab">
@@ -100,6 +142,8 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.accesskey "C">
 <!ENTITY printCmd.commandkey "p">
 
+<!ENTITY taskManagerCmd.label "Pengurus Tugasan">
+
 <!ENTITY goOfflineCmd.label "Kerja Luar Talian">
 <!ENTITY goOfflineCmd.accesskey "K">
 
@@ -114,6 +158,29 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "S">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.label "Tandabuku Semua Tab…">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "T">
+
+<!ENTITY toolbarContextMenu.reloadSelectedTab.label "Muat Semula Tab Dipilih">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
+toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.reloadSelectedTab.accesskey "M">
+<!ENTITY toolbarContextMenu.reloadSelectedTabs.label "Muat Semula Tab Dipilih">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
+toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.reloadSelectedTabs.accesskey "M">
+<!ENTITY toolbarContextMenu.bookmarkSelectedTab.label "Tandabuku Tab Dipilih…">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.bookmarkSelectedTab.accesskey,
+toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.bookmarkSelectedTab.accesskey "T">
+<!ENTITY toolbarContextMenu.bookmarkSelectedTabs.label "Tandabuku Tab Yang Dipilih…">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.bookmarkSelectedTab.accesskey,
+toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.bookmarkSelectedTabs.accesskey "T">
+<!ENTITY toolbarContextMenu.selectAllTabs.label "Pilih Semua Tab">
+<!ENTITY toolbarContextMenu.selectAllTabs.accesskey "P">
 <!ENTITY toolbarContextMenu.undoCloseTab.label "Batal Tutup Tab">
 <!ENTITY toolbarContextMenu.undoCloseTab.accesskey "B">
 
@@ -199,6 +266,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY subscribeToPageMenupopup.label "Langgan Halaman Ini">
 <!ENTITY subscribeToPageMenuitem.label "Langgan Halaman Ini…">
+
 <!ENTITY addCurPagesCmd.label "Tandabuku Semua Tab…">
 <!ENTITY showAllBookmarks2.label "Papar Semua Tandabuku">
 <!ENTITY recentBookmarks.label "Tandabuku Terkini">
@@ -209,7 +277,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY backCmd.label                "Undur">
 <!ENTITY backCmd.accesskey            "U">
 <!ENTITY backButton.tooltip           "Undur satu halaman">
-<!ENTITY forwardCmd.label             "Maju">
+<!ENTITY forwardCmd.label             "Seterusnya">
 <!ENTITY forwardCmd.accesskey         "M">
 <!ENTITY forwardButton.tooltip        "Maju satu halaman">
 <!ENTITY backForwardButtonMenu.tooltip "Klik-kanan atau tarik turun untuk papar sejarah">
@@ -557,9 +625,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY reloadFrameCmd.label         "Muat semula Bingkai">
 <!ENTITY reloadFrameCmd.accesskey     "M">
 <!ENTITY viewPartialSourceForSelectionCmd.label "Papar Sumber Dipilih">
-<!ENTITY viewPartialSourceForMathMLCmd.label    "Papar Sumber MathML">
-<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both
-         viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label -->
 <!ENTITY viewPartialSourceCmd.accesskey "e">
 <!ENTITY viewPageSourceCmd.label      "Papar Sumber Halaman">
 <!ENTITY viewPageSourceCmd.accesskey  "P">
@@ -776,7 +841,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      Remove Bookmark buttons. -->
 <!ENTITY editBookmark.panel.width                    "23em">
 <!ENTITY editBookmark.done.label                     "Siap">
-
 <!ENTITY editBookmark.showForNewBookmarks.label       "Papar editor apabila menyimpan">
 <!ENTITY editBookmark.showForNewBookmarks.accesskey   "P">
 
@@ -784,6 +848,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      This is the header of the security subview in the Site Identity panel. -->
 <!ENTITY identity.securityView.label "Keselamatan Laman">
 
+<!ENTITY identity.connection "Sambungan">
 <!ENTITY identity.connectionSecure "Sambungan Selamat">
 <!ENTITY identity.connectionNotSecure "Sambungan Tidak Selamat">
 <!ENTITY identity.connectionFile "Halaman ini disimpan dalam komputer anda.">
@@ -926,9 +991,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.audioCapture.label "Audio dari tab akan dikongsi.">
 <!ENTITY getUserMedia.allWindowsShared.message "Semua tetingkap yang kelihatan pada skrin anda akan dikongsi.">
 
-<!ENTITY trackingProtection.on "Perlindungan Penjejakan: AKTIF">
-<!ENTITY trackingProtection.off "Perlindungan Penjejakan: NYAHAKTIF">
-
 <!ENTITY contentBlocking.title "Sekatan Kandungan">
 <!ENTITY contentBlocking.detected "Ada kandungan yang boleh disekat dalam laman ini.">
 <!ENTITY contentBlocking.notDetected "Tiada kandungan yang boleh disekat dalam laman ini.">
@@ -943,6 +1005,11 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      a positive thing. It forms the end of the (imaginary) sentence
      "Slow-Loading Trackers [are] Blocked"-->
 <!ENTITY contentBlocking.fastBlock.blocked.label "Disekat">
+<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.blocking.label):
+     This label signals that this type of content blocking is turned
+     ON, so this is a positive thing. It forms the verb in (imaginary) sentence
+     "Firefox is blocking Slow-Loading Trackers"-->
+<!ENTITY contentBlocking.fastBlock.blocking.label "Sekatan">
 <!-- LOCALIZATION NOTE (contentBlocking.fastBlock.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
@@ -950,12 +1017,25 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.fastBlock.add.label "Tambah Sekatan…">
 
 <!ENTITY contentBlocking.trackingProtection2.label "Semua Penjejak Yang Dikesan">
+
+<!ENTITY contentBlocking.trackingProtection3.label "Penjejak">
+<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.allowed.label):
+     This label signals that this type of content blocking is turned
+     OFF and is not blocking tracker content, so this is not
+     a positive thing. It forms the end of the (imaginary) sentence
+     "Trackers [are] Allowed"-->
+<!ENTITY contentBlocking.trackingProtection.allowed.label "Diizinkan">
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
      This label signals that this type of content blocking is turned
      ON and is successfully blocking tracker content, so this is
      a positive thing. It forms the end of the (imaginary) sentence
      "Trackers [are] Blocked"-->
 <!ENTITY contentBlocking.trackingProtection.blocked.label "Disekat">
+<!-- LOCALIZATION NOTE (contentBlocking.tranckingProtection.blocking.label):
+     This label signals that this type of content blocking is turned
+     ON, so this is a positive thing. It forms the verb in the (imaginary) sentence
+     "Firefox is blocking Trackers"-->
+<!ENTITY contentBlocking.trackingProtection.blocking.label "Sekatan">
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
@@ -963,17 +1043,27 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection.add.label "Tambah Sekatan…">
 
 <!ENTITY contentBlocking.3rdPartyCookies.label "Kuki Pihak-Ketiga">
+<!ENTITY contentBlocking.3rdPartyCookies.trackers.label "Kuki Penjejakan">
 <!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.blocked.label):
      This label signals that this type of content blocking is turned
      ON and is successfully blocking third-party cookies, so this is
      a positive thing. It forms the end of the (imaginary) sentence
      "Third-Party Cookies [are] Blocked"-->
 <!ENTITY contentBlocking.3rdPartyCookies.blocked.label "Disekat">
+<!-- LOCALIZATION NOTE (contentBlocking.tranckingProtection.blocking.label):
+     This label signals that this type of content blocking is turned
+     ON, so this is a positive thing. It forms the verb in the (imaginary) sentence
+     "Firefox is blocking Third-Party Cookies"-->
+<!ENTITY contentBlocking.3rdPartyCookies.blocking.label "Sekatan">
 <!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
      the type of content blocking is currently not enabled. -->
 <!ENTITY contentBlocking.3rdPartyCookies.add.label "Tambah Sekatan…">
+
+<!ENTITY contentBlocking.manageSettings.label "Urus Sekatan Kandungan">
+
+<!ENTITY contentBlocking.trackersView.label "Penjejak">
 
 <!ENTITY contentBlocking.openBreakageReportView2.label "Laporkan masalah">
 <!ENTITY contentBlocking.breakageReportView.label "Laporkan Masalah">
@@ -986,32 +1076,32 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY trackingProtection.title "Perlindungan Penjejakan">
 <!ENTITY trackingProtection.tooltip "Buka Keutamaan Perlindungan Penjejakan">
-<!ENTITY trackingProtection.detectedBlocked4 "&brandShortName; menyekat sebahagian halaman ini yang mungkin menjejaki pelayaran anda.">
-<!ENTITY trackingProtection.detectedNotBlocked5 "&brandShortName; telah mengesan unsur yang boleh menjejaki pelayaran anda.">
-<!ENTITY trackingProtection.detectedException "&brandShortName; telah mengesan unsur yang boleh menjejaki pelayaran anda. Anda telah menyahdayakan perlindungan untuk laman ini.">
-<!ENTITY trackingProtection.notDetected5 "Tiada elemen penjejak yang dikesan dalam halaman ini.">
-<!ENTITY trackingProtection.notDetectedException "Tiada unsur penjejakan yang dikesan dalam halaman ini. Anda telah menyahdayakan perlindungan untuk laman ini.">
-
-<!ENTITY trackingProtection.reloadRequired2 "Anda telah dayakan Perlindungan Penjejakan. Muat semula halaman ini untuk menyekat semua penjejak.">
 
 <!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in NON-private browsing mode. -->
-<!ENTITY trackingProtection.unblock3.label "Nyahdayakan Untuk Laman Ini">
-<!ENTITY trackingProtection.unblock3.accesskey "N">
 <!ENTITY trackingProtection.unblock4.label "Nyahdayakan Sekatan Untuk Laman Ini">
 <!ENTITY trackingProtection.unblock4.accesskey "N">
 <!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in PRIVATE browsing mode. -->
-<!ENTITY trackingProtection.unblockPrivate3.label "Nyahdayakan Untuk Sesi Ini">
-<!ENTITY trackingProtection.unblockPrivate3.accesskey "N">
-<!ENTITY trackingProtection.block4.label "Dayakan Untuk Laman Ini">
-<!ENTITY trackingProtection.block4.accesskey "D">
 <!ENTITY trackingProtection.unblockPrivate4.label "Nyahdayakan Sekatan Sementara">
 <!ENTITY trackingProtection.unblockPrivate4.accesskey "N">
 <!ENTITY trackingProtection.block5.label "Dayakan Sekatan Untuk Laman Ini">
 <!ENTITY trackingProtection.block5.accesskey "D">
+
+<!-- LOCALIZATION NOTE (trackingProtection.unblock5.label, trackingProtection.unblock5.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in NON-private browsing mode. -->
+<!ENTITY trackingProtection.unblock5.label "Nyahaktifkan sekatan untuk laman ini">
+<!ENTITY trackingProtection.unblock5.accesskey "N">
+<!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate6.label, trackingProtection.unblockPrivate6.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in PRIVATE browsing mode. -->
+<!ENTITY trackingProtection.unblockPrivate5.label "Nyahaktifkan sekatan buat sementara">
+<!ENTITY trackingProtection.unblockPrivate5.accesskey "N">
+<!ENTITY trackingProtection.block6.label "Aktifkan sekatan untuk laman ini">
+<!ENTITY trackingProtection.block6.accesskey "A">
 <!ENTITY trackingProtection.reload2.label "Muat semula Halaman">
 <!ENTITY trackingProtection.reload2.accesskey "M">
 
@@ -1117,7 +1207,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY sendToDevice.syncNotReady.label "Sync Peranti…">
 
 <!ENTITY pageAction.shareUrl.label "Kongsi">
-
 <!ENTITY pageAction.shareMore.label "Selanjutnya…">
 
 <!ENTITY libraryButton.tooltip "Papar sejarah, tandabuku yang disimpan dan banyak lagi">

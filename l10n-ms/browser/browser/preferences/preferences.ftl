@@ -53,6 +53,7 @@ pane-sync-title = Akaun Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = Sokongan { -brand-short-name }
+addons-button-label = Ekstensi & Tema
 focus-search =
     .key = f
 close-button =
@@ -62,7 +63,7 @@ close-button =
 
 feature-enable-requires-restart = { -brand-short-name } perlu mula semula untuk dayakan ciri ini.
 feature-disable-requires-restart = { -brand-short-name } perlu mula semula untuk nyahdayakan ciri ini.
-should-restart-title = Mula semula { -brand-short-name }
+should-restart-title = Mula Semula { -brand-short-name }
 should-restart-ok = Mulakan { -brand-short-name } sekarang
 cancel-no-restart-button = Batal
 restart-later = Mula semula Kemudian
@@ -83,6 +84,9 @@ extension-controlled-homepage-override = Ekstensi, <img data-l10n-name="icon"/> 
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Ekstensi, <img data-l10n-name="icon"/> { $name }, mengawal halaman Tab Baru anda.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = Ekstensi, <img data-l10n-name="icon"/> { $name } mengawal tetapan ini.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Ekstensi, <img data-l10n-name="icon"/> { $name }, telah menetapkan enjin carian piawai anda.
@@ -94,7 +98,7 @@ extension-controlled-privacy-containers = Ekstensi <img data-l10n-name="icon"/> 
 extension-controlled-websites-tracking-protection-mode = Ekstensi, <img data-l10n-name="icon"/> { $name }, mengawal perlindungan penjejakan.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = Ekstensi, <img data-l10n-name="icon"/> { $name }, mengawal tetapan ini.
+extension-controlled-websites-content-blocking-all-trackers = Ekstensi, <img data-l10n-name="icon"/> { $name } mengawal tetapan ini.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Ekstensi, <img data-l10n-name="icon"/> { $name }, mengawal cara { -brand-short-name } menyambung ke internet.
@@ -148,6 +152,9 @@ open-new-link-as-tabs =
     .accesskey = t
 warn-on-close-multiple-tabs =
     .label = Beri amaran apabila menutup berbilang tab
+    .accesskey = B
+warn-on-quit-close-multiple-tabs =
+    .label = Beri amaran apabila keluar dan menutup bebilang tab
     .accesskey = B
 warn-on-open-many-tabs =
     .label = Beri amaran apabila membuka berbilang tab yang mungkin memperlahankan { -brand-short-name }
@@ -272,6 +279,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = Kemaskini enjin carian secara automatik
     .accesskey = e
+update-pref-write-failure-title = Gagal Menulis
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = Tidak dapat menyimpan keutamaan. Tidak dapat menulis ke fail: { $path }
 
 ## General Section - Performance
 
@@ -311,10 +322,13 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Cari teks sebaik sahaja anda mula menaip
     .accesskey = e
+browsing-cfr-recommendations =
+    .label = Cadangkan ekstensi semasa melayar
+    .accesskey = C
+browsing-cfr-recommendations-learn-more = Ketahui Selanjutnya
 
 ## General Section - Proxy
 
-network-proxy-title = Proksi Rangkaian
 network-settings-title = Tetapan Rangkaian
 network-proxy-connection-description = Tetapkan cara { -brand-short-name } menyambung ke internet.
 network-proxy-connection-learn-more = Ketahui Selanjutnya
@@ -513,6 +527,7 @@ privacy-header = Privasi Pelayar
 ## Privacy Section - Forms
 
 forms-header = Borang & Kata laluan
+logins-header = Log masuk & Kata laluan
 forms-ask-to-save-logins =
     .label = Tanya untuk simpan log masuk dan kata laluan laman web
     .accesskey = l
@@ -579,26 +594,15 @@ sitedata-total-size-calculating = Mengira saiz data dan cache laman…
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Kuki, data laman dan cache yang disimpan kini menggunakan { $value } { $unit } daripada ruang cakera.
 sitedata-learn-more = Ketahui selanjutnya
-sitedata-accept-cookies-option =
-    .label = Terima kuki dan data laman dari laman web (disyorkan)
-    .accesskey = T
-sitedata-block-cookies-option =
-    .label = Sekat kuki dan data laman (boleh menyebabkan laman web tidak lengkap)
-    .accesskey = S
 sitedata-keep-until = Kekalkan sehingga
     .accesskey = s
 sitedata-keep-until-expire =
     .label = Sudah luput
 sitedata-keep-until-closed =
     .label = { -brand-short-name } ditutup
-sitedata-accept-third-party-desc = Terima kuki dan data laman pihak ketiga
+sitedata-delete-on-close =
+    .label = Buang kuki dan data laman apabila { -brand-short-name } ditutup
     .accesskey = k
-sitedata-accept-third-party-always-option =
-    .label = Sentiasa
-sitedata-accept-third-party-visited-option =
-    .label = Daripada yang dilawati
-sitedata-accept-third-party-never-option =
-    .label = Jangan sesekali
 sitedata-allow-cookies-option =
     .label = Terima kuki dan data laman
     .accesskey = T
@@ -632,6 +636,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = Tetapan dalam Sekatan Kandungan menghalang perubahan kepada Tetapan Kuki dan Data Laman.
+sitedata-cookies-permissions =
+    .label = Urus Keizinan
+    .accesskey = U
 
 ## Privacy Section - Address Bar
 
@@ -652,6 +659,7 @@ addressbar-suggestions-settings = Tukar keutamaan bagi cadangan enjin carian
 
 content-blocking-header = Sekatan Kandungan
 content-blocking-desc = Sekat kandungan pihak ketiga seperti iklan atau kod yang boleh melambatkan pelayaran dan menjejaki anda di seluruh web. Sesuaikan tetapan untuk mendapatkan imbangan perlindungan dan prestasi yang terbaik.
+content-blocking-description = Sekat kandungan pihak ketiga yang menjejaki anda di seluruh web. Kawal bilangan aktiviti atas talian anda yang disimpan dan dikongsi di antara laman web.
 content-blocking-learn-more = Ketahui selanjutnya
 content-blocking-restore-defaults =
     .label = Pulih Piawai
@@ -672,6 +680,27 @@ content-blocking-fastblock-slow-loading-trackers-label =
     .label = Penjejak Pemuatan-Lambat
     .accesskey = L
 content-blocking-fastblock-new-description = Cuma sekat penjejak yang membuatkan halaman tidak dimuatkan dengan cepat.
+content-blocking-setting-standard =
+    .label = Piawai
+    .accesskey = i
+content-blocking-setting-strict =
+    .label = Rapi
+    .accesskey = p
+content-blocking-setting-custom =
+    .label = Penyesuaian
+    .accesskey = P
+content-blocking-standard-desc = Seimbang untuk perlindungan dan prestasi. Mengizinkan beberapa penjejak supaya laman web berfungsi dengan betul.
+content-blocking-strict-desc = Sekat semua penjejak yang dikesan { -brand-short-name }. Boleh menyebabkan beberapa laman pecah.
+content-blocking-custom-desc = Pilih apa yang hendak disekat.
+content-blocking-private-trackers = Penjejak yang diketahui sahaja dalam Private Windows
+content-blocking-third-party-cookies = Kuki penjejakan pihak ketiga
+content-blocking-all-windows-trackers = Penjejak yang diketahui dalam semua tetingkap
+content-blocking-all-third-party-cookies = Semua kuki pihak ketiga
+content-blocking-warning-desc = Menyekat kuki dan penjejak boleh menyebabkan sesetengah laman web pecah. Sangat mudah untuk menyahaktifkan sekatan laman yang anda percayai.
+content-blocking-learn-how = Ketahui caranya
+content-blocking-tracking-protection-trackers-label =
+    .label = Penjejak
+    .accesskey = P
 content-blocking-tracking-protection-all-detected-trackers-label =
     .label = Semua Penjejak Yang Dikesan
     .accesskey = P
@@ -704,6 +733,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = Semua kuki pihak ketiga (boleh menyebabkan laman web pecah)
     .accesskey = S
+content-blocking-cookies-label =
+    .label = Kuki
+    .accesskey = K
 
 ## Privacy Section - Tracking
 
@@ -719,16 +751,15 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Jangan sesekali
     .accesskey = k
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Gunakan Perlindungan Penjejakan dalam Pelayaran Peribadi untuk menyekat penjejak dikenali
-    .accesskey = b
 tracking-exceptions =
     .label = Pengecualian…
     .accesskey = g
 tracking-change-block-list =
     .label = Tukar Senarai Sekatan…
     .accesskey = T
+tracking-manage-exceptions =
+    .label = Urus Pengecualian ...
+    .accesskey = c
 
 ## Privacy Section - Permissions
 
@@ -845,3 +876,36 @@ certs-view =
 certs-devices =
     .label = Peranti Keselamatan…
     .accesskey = P
+space-alert-learn-more-button =
+    .label = Ketahui Selanjutnya
+    .accesskey = K
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Buka Pilihan
+           *[other] Buka Keutamaan
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] B
+           *[other] B
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } sedang kehabisan ruang cakera. Kandungan laman web mungkin tidak dipaparkan dengan betul. Anda boleh mengosongkan data laman yang disimpan dalam Pilihan > Privasi & Keselamatan > Kuki dan Data Laman.
+       *[other] { -brand-short-name } sedang kehabisan ruang cakera. Kandungan laman web mungkin tidak dipaparkan dengan betul. Anda boleh mengosongkan data laman yang disimpan dalam Keutamaan > Privasi & Keselamatan > Kuki dan Data Laman.
+    }
+space-alert-under-5gb-ok-button =
+    .label = OK, Faham
+    .accesskey = K
+space-alert-under-5gb-message = { -brand-short-name } sedang kehabisan ruang cakera. Kandungan laman web mungkin tidak dipaparkan dengan betul. Lawati "Selanjutnya" untuk mengoptimumkan penggunaan cakera anda untuk pengalaman melayar yang lebih baik.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Desktop
+downloads-folder-name = Muat turun
+choose-download-folder-title = Pilih Folder Muat turun:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Simpan fail ke { $service-name }
