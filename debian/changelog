@@ -1,3 +1,12 @@
+firefox-esr (60.4.0esr-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2018-30, also known as:
+    CVE-2018-17466, CVE-2018-18492, CVE-2018-18493, CVE-2018-18494,
+    CVE-2018-18498, CVE-2018-12405.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 12 Dec 2018 08:29:04 +0900
+
 firefox-esr (60.3.0esr-3) unstable; urgency=medium
 
   * debian/browser.install.in, debian/rules: Properly copy the watermark to
