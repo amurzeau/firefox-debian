@@ -68,9 +68,9 @@ Build-Depends: autotools-dev,
                libclang-4.0-dev,
                clang-4.0,
 %else
-               llvm-6.0-dev,
-               libclang-6.0-dev,
-               clang-6.0,
+               llvm-dev,
+               libclang-dev,
+               clang,
 %endif
                zip,
                unzip,

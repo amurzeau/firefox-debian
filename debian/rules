@@ -19,9 +19,9 @@ PYTHON := python -B
 PRODUCT := browser
 include debian/upstream.mk
 
-SYSTEM_LIBS = zlib bz2 ffi libevent
+SYSTEM_LIBS = zlib bz2 ffi
 ifeq (,$(filter wheezy jessie stretch,$(DIST)))
-SYSTEM_LIBS += hunspell nspr nss sqlite
+SYSTEM_LIBS += hunspell nspr nss sqlite libevent
 endif
 ifeq (,$(filter wheezy jessie,$(DIST)))
 SYSTEM_LIBS += vpx
@@ -210,7 +210,10 @@ stamps/configure-$(PRODUCT):: stamps/prepare-configure debian/$($(PRODUCT)).mozc
 	$(if $(wildcard build-$(PRODUCT)),,mkdir build-$(PRODUCT))
 ifeq ($(DEB_HOST_ARCH_ENDIAN),big)
 	echo mk_add_options MOZ_OBJDIR=build-$(PRODUCT) > build-$(PRODUCT)/mozconfig.icu
-	cd build-$(PRODUCT) && MOZCONFIG=mozconfig.icu ../mach python ../intl/icu_sources_data.py "$(CURDIR)"
+	cd build-$(PRODUCT) && \
+	MOZCONFIG=mozconfig.icu \
+	$(CONFIGURE_ENV) \
+	../mach python ../intl/icu_sources_data.py "$(CURDIR)"
 endif
 	cd build-$(PRODUCT) && \
 	MOZCONFIG=$(CURDIR)/debian/$($(PRODUCT)).mozconfig \
@@ -299,7 +302,11 @@ stamps/dh_install-l10n:: $(L10N_DH_INSTALL_STAMPS)
 $(L10N_DH_INSTALL_STAMPS):: stamps/dh_install-l10n-%: stamps/build-l10n-%
 	dh_install -p$($(PRODUCT))-l10n-$(call lc,$*) build-l10n/dist/xpi/langpack-$*@$($(PRODUCT)).mozilla.org.xpi $(LIB_DIR)/browser/extensions/
 
-stamps/dh_install:: debian/noinstall
+GENERATED_FILES += debian/$($(PRODUCT))-symbolic.svg
+debian/$($(PRODUCT))-symbolic.svg: browser/extensions/onboarding/content/img/watermark.svg
+	cat $< > $@
+
+stamps/dh_install:: debian/noinstall debian/$($(PRODUCT))-symbolic.svg
 	awk '{print "debian/tmp/" $$1 }' < debian/noinstall | xargs rm -r
 	dh_install --fail-missing
 

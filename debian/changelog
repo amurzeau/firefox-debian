@@ -1,3 +1,26 @@
+firefox-esr (60.4.0esr-1~deb9u1) stretch-security; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2018-30, also known as:
+    CVE-2018-17466, CVE-2018-18492, CVE-2018-18493, CVE-2018-18494,
+    CVE-2018-18498, CVE-2018-12405.
+
+  * debian/rules: Use embedded libevent in backports. Closes: #910397.
+  * debian/browser.install.in, debian/rules: Properly copy the watermark to
+    /usr/share/icons/hicolor/symbolic/apps.
+  * debian/rules: Pass compiler and compiler flags environment variables
+    down to ICU configure. That will make it use GCC instead of defaulting
+    to clang now it's in PATH, avoiding the failing to build the ICU data
+    file on big endian platforms because clang doesn't know some of the GCC
+    flags it somehow got from the environment.
+
+  * build/unix/elfhack/test.c: Try to ensure the bss section of the
+    elfhack testcase stays large enough. bz#1505608.
+  * memory/build/mozjemalloc.cpp: Fix run sizes for size classes >= 16KB
+    on systems with large pages. bz#1507035. Closes: #911898.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 12 Dec 2018 08:29:04 +0900
+
 firefox-esr (60.3.0esr-1~deb9u1) stretch-security; urgency=medium
 
   * New upstream release.
