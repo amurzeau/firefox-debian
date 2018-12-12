@@ -86,7 +86,7 @@ LDFLAGS += -Wl,--compress-debug-sections=zlib
 # a) the rust compiler can't deal with it in the available address
 # space, and b) the linker can't deal with it in the available address space
 # either.
-ifneq (64,$(DEB_BUILD_ARCH_BITS)))
+ifneq (64,$(DEB_BUILD_ARCH_BITS))
 	CONFIGURE_FLAGS += --disable-debug-symbols
 endif
 
