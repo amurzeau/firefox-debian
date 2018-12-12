@@ -1,3 +1,26 @@
+firefox (64.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2018-29, also known as:
+    CVE-2018-12407, CVE-2018-17466, CVE-2018-18492, CVE-2018-18493,
+    CVE-2018-18494, CVE-2018-18495, CVE-2018-18496, CVE-2018-18497,
+    CVE-2018-18498, CVE-2018-12406, CVE-2018-12405.
+
+  * debian/rules, debian/browser.install.in: Properly copy the watermark
+    to /usr/share/icons/hicolor/symbolic/apps.
+  * debian/rules: Disable debug symbols on 32-bits architectures, that
+    requires too much memory.
+  * debian/browser.mozconfig.in:
+    - Remove --enable-pie option, it's the default, now.
+    - Remove --disable-nodejs now that it's required.
+  * debian/control*:
+    - Bump rustc, cargo, cbindgen, nss and sqlite dependencies.
+    - Add nodejs build dependency.
+  * debian/browser-symbolic.svg.in: Import the watermark used for the
+    symbolic icon in the debian/ directory.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 12 Dec 2018 09:26:47 +0900
+
 firefox (63.0.3-1) unstable; urgency=medium
 
   * New upstream release.
