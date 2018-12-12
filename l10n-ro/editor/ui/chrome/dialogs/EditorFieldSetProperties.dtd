@@ -2,7 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY windowTitle.label "Proprietăți set câmpuri">
+<!ENTITY windowTitle.label "Proprietăți set de câmpuri">
 
 <!ENTITY Legend.label "Legendă">
 <!ENTITY Legend.accesskey "L">
@@ -12,9 +12,9 @@
 <!ENTITY LegendAlign.label "Aliniază legenda:">
 <!ENTITY LegendAlign.accesskey "A">
 <!ENTITY AlignDefault.label "Implicit">
-<!ENTITY AlignLeft.label "Stânga">
-<!ENTITY AlignCenter.label "Centru">
-<!ENTITY AlignRight.label "Dreapta">
+<!ENTITY AlignLeft.label "La stânga">
+<!ENTITY AlignCenter.label "La centru">
+<!ENTITY AlignRight.label "La dreapta">
 
-<!ENTITY RemoveFieldSet.label "Elimină set câmpuri">
+<!ENTITY RemoveFieldSet.label "Elimină setul de câmpuri">
 <!ENTITY RemoveFieldSet.accesskey "E">

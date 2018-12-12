@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = Φραγή
 permissions-capabilities-prompt =
     .label = Πάντα ερώτηση
+permissions-capabilities-listitem-allow =
+    .value = Αποδοχή
+permissions-capabilities-listitem-block =
+    .value = Φραγή
+permissions-capabilities-listitem-allow-first-party =
+    .value = Να επιτρέπεται μόνο στους άμεσα εμπλεκόμενους
+permissions-capabilities-listitem-allow-session =
+    .value = Αποδοχή για τη συνεδρία
 
 ## Invalid Hostname Dialog
 
@@ -85,10 +93,6 @@ permissions-exceptions-addons-desc = Μπορείτε να καθορίσετε 
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = Επιτρεπόμενες ιστοσελίδες - Αυτόματη αναπαραγωγή
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = Μπορείτε να καθορίσετε σε ποιες ιστοσελίδες επιτρέπεται η αυτόματη αναπαραγωγή στοιχείων πολυμέσων. Πληκτρολογήστε την ακριβή διεύθυνση της ιστοσελίδας που θέλετε να επιτρέψετε και, στη συνέχεια, κάντε κλικ στο "Αποδοχή".
 permissions-exceptions-autoplay-media-window2 =
     .title = Εξαιρέσεις - Αυτόματη αναπαραγωγή
     .style = { permissions-window.style }

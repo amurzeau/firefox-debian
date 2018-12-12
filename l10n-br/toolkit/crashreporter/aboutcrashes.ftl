@@ -4,12 +4,19 @@
 
 crash-reports-title = Danevelloù sac'hadenn
 clear-all-reports-label = Dilemel an holl zanevelloù
+delete-button-label = Skarzhañ an holl
 delete-confirm-title = Sur oc'h?
 delete-confirm-description = An holl zanevelloù a vo dilamet da viken.
+delete-unsubmitted-description = Dilemel a raio an holl danevelloù sac'hadenn n'int ket bet kinniget ha n'hall ket bezañ dizgraet.
 crashes-unsubmitted-label = Danevelloù sac'hadenn n'int ket treuzkaset
 id-heading = Naoudi an danevell
 date-crashed-heading = Deiziad ar sac'hadenn
+submit-crash-button-label = Kas
+# This text is used to replace the label of the crash submit button
+# if the crash submission fails.
+submit-crash-button-failure-label = C'hwitet
 crashes-submitted-label = Danevelloù sac'hadenn treuzkaset
 date-submitted-heading = Deiziad an danevell
+view-crash-button-label = Gwel
 no-reports-label = Danevell sac'hadenn ebet bet treuzkaset.
 no-config-label = N'eo ket kefluniet an arload-mañ evit diskouez an danevelloù sac'hadenn. Ret eo d'an arventenn <code>breakpad.reportURL</code> bezañ spisaet.

@@ -18,6 +18,7 @@ policy-BlockAboutProfiles = Pśistup k bokoju about:profiles blokěrowaś.
 policy-BlockAboutSupport = Pśistup k bokoju about:support blokěrowaś.
 policy-Bookmarks = Cytańske znamjenja w symbolowej rědce cytańskich znamjenjow, w meniju cytańskich znamjenjow abo w pódanem zastojniku w nima napóraś.
 policy-Certificates = Lěc se zatwarjone certifikaty wužywaju abo nic. Toś te pšawidła tuchylu jano za Windows płaśe.
+policy-CertificatesDescription = Certifikaty pśidaś abo zatwarjone certifikaty wužywaś.
 policy-Cookies = Websedłam dowóliś abo zakazaś, cookieje składowaś.
 policy-DisableAppUpdate = Wobglědowakoju aktualizěrowanje zakazaś.
 policy-DisableBuiltinPDFViewer = PDF.js znjemóžniś, zatwarjony PDF-wobglědowak w { -brand-short-name }.
@@ -42,6 +43,7 @@ policy-DisableSystemAddonUpdate = Wobglědowakoju instalěrowanje a aktualizěro
 policy-DisableTelemetry = Telemetriju znjemóžniś.
 policy-DisplayBookmarksToolbar = Rědku cytańskich znamjenjow pó standarźe pokazaś.
 policy-DisplayMenuBar = Menijowu rědku pó standarźe pokazaś.
+policy-DNSOverHTTPS = DNS pśez HTTPS konfigurěrowaś.
 policy-DontCheckDefaultBrowser = Kontrolu za standardnym wobglědowakom pśi starśe znjemóžniś.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Blokěrowanje wopśimjeśa zmóžniś abo znjemóžniś a jo na žycenje zastajiś.
@@ -62,9 +64,12 @@ policy-OverridePostUpdatePage = Bok Nowe funkcije a změny pó aktualizaciji pś
 policy-Permissions = Pšawa za kameru, mikrofon, stojnišćo a powěźeńki konfigurěrowaś.
 policy-PopupBlocking = Wěstym websedłam dowóliś, wuskokujuce wokna pó standarźe pokazaś.
 policy-Proxy = Nastajenja proksy konfigurěrowaś.
+policy-RequestedLocales = Pódajśo lisćinu pominanych rěcow za nałoženje w preferěrowanem pórěźe.
 policy-SanitizeOnShutdown = Nawigaciske daty pśi skóńcenju wulašowaś.
 policy-SearchBar = Standardne městno pytańskego póla nastajiś. Wužywaŕ móžo jo hyšći pśiměriś.
 policy-SearchEngines = Nastajenja pytnicow konfigurěrowaś. Toś to pšawidło jo jano za wersiju Extended Support Release (ESR) k dispoziciji.
+# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
+policy-SecurityDevices = Module PKCS #11 instalěrowaś.
 # “format” refers to the format used for the value of this policy. See also:
 # https://github.com/mozilla/policy-templates/blob/master/README.md#websitefilter-machine-only
 policy-WebsiteFilter = Woglědowanju k websydłam zajźowaś. Glejśo dokumentaciju za dalšne drobnostki wó formaśe.

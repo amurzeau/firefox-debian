@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = Bloķēt
 permissions-capabilities-prompt =
     .label = Vienmēr jautāt
+permissions-capabilities-listitem-allow =
+    .value = Atļaut
+permissions-capabilities-listitem-block =
+    .value = Bloķēt
+permissions-capabilities-listitem-allow-first-party =
+    .value = Atļaut tikai pirmajam avotam
+permissions-capabilities-listitem-allow-session =
+    .value = Atļaut uz šo sesiju
 
 ## Invalid Hostname Dialog
 
@@ -54,6 +62,10 @@ permissions-exceptions-tracking-protection-window =
     .title = Izņēmumi - Sekošanas aizsardzība
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = Sekošanas aizsardzība ir deaktivēta šajās lapās.
+permissions-exceptions-content-blocking-window =
+    .title = Izņēmums - satura bloķēšana
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = Satura bloķēšana ir atslēgta šajās lapās.
 
 ## Exceptions - Cookies
 
@@ -85,10 +97,6 @@ permissions-exceptions-addons-desc = Jūs varat norādīt, no kurām lapām ir a
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = Atļautās vietnes - automātiskā atskaņošana
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = Jūs varat norādīt, no kurām lapām ir atļauts atskaņot multimēdijas. Ierakstiet precīzu lapas adresi, no kuras vēlaties atļaut papildinājumu instalēšanu, un nospiediet Atļaut.
 permissions-exceptions-autoplay-media-window2 =
     .title = Automātiskās atskaņošanas izņēmumi
     .style = { permissions-window.style }

@@ -182,7 +182,7 @@
 ">
 
 <!ENTITY cspBlocked.title "Блоковано політикою безпеки вмісту">
-<!ENTITY cspBlocked.longDesc "<p>&brandShortName; не дозволив цій сторінці завантажитись цим чином, бо вона має політику безпеки вмісту котра це забороняє.</p>">
+<!ENTITY cspBlocked.longDesc "<p>&brandShortName; не дозволив цій сторінці бути завантаженою таким чином, через те що її політика безпеки вмісту не дозволяє зробити це.</p>">
 
 <!ENTITY corruptedContentErrorv2.title "Помилка пошкодженого вмісту">
 <!ENTITY corruptedContentErrorv2.longDesc "<p>Сторінка, яку ви намагаєтесь переглянути, не може бути показана через те, що було виявлено помилку в передачі даних.</p><ul><li>Будь ласка, зв'яжіться з власниками веб-сайту та повідомте їх про цю проблему.</li></ul>">
@@ -220,3 +220,6 @@ netError.xhtml) because it exposes functionality specific to firefox. -->
 <!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
      "NS_ERROR_NET_INADEQUATE_SECURITY". -->
 <!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> використовує технологію безпеки, яка є застарілою і вразливою до атак. Нападник може з легкістю розкрити інформацію, яка, на вашу думку, є захищеною. Для відвідування сайту, адміністратор веб-сайту повинен виправити це на сервері.</p><p>Код помилки: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
+
+<!ENTITY networkProtocolError.title "Помилка мережевого протоколу">
+<!ENTITY networkProtocolError.longDesc "<p>Неможливо відобразити сторінку, яку ви намагаєтесь переглянути, тому що виявлено помилку мережевого протоколу.</p><ul><li>Зв'яжіться з власниками веб-сайту, щоб повідомити їх про цю проблему.</li></ul>">

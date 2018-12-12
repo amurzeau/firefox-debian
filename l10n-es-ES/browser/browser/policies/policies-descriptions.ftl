@@ -18,6 +18,7 @@ policy-BlockAboutProfiles = Bloquear el acceso a la página about:profiles.
 policy-BlockAboutSupport = Bloquear el acceso a la página about:support.
 policy-Bookmarks = Crear marcadores en la barra de herramientas de marcadores, en el menú de marcadores o en una carpeta específica dentro de los mismos.
 policy-Certificates = Usar o no los certificados incluidos de serie. Esta política es solo para Windows en este momento.
+policy-CertificatesDescription = Añada certificados o use los certificados incluidos de serie.
 policy-Cookies = Permitir o denegar a los sitios web establecer cookies.
 policy-DisableAppUpdate = Evitar que el navegador se actualice.
 policy-DisableBuiltinPDFViewer = Desactivar PDF.js, el visor de PDF integrado en { -brand-short-name }.
@@ -42,13 +43,13 @@ policy-DisableSystemAddonUpdate = Impedir que el navegador instale y actualice c
 policy-DisableTelemetry = Desactivar Telemetry.
 policy-DisplayBookmarksToolbar = Mostrar de forma predeterminada la barra de herramientas de marcadores.
 policy-DisplayMenuBar = Mostrar de forma predeterminada la barra de menú.
+policy-DNSOverHTTPS = Configurar DNS sobre HTTPS.
 policy-DontCheckDefaultBrowser = Desactivar la comprobación de navegador predeterminado al iniciar.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Activar o desactivar el bloqueo de contenido y bloquearlo opcionalmente.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
-# English or translate them as verbs. See also:
-# https://github.com/mozilla/policy-templates/blob/master/README.md#extensions-machine-only
+# English or translate them as verbs.
 policy-Extensions = Instalar, desinstalar o bloquear extensiones. La opción de instalar usa URLs o rutas como parámetros. Las opciones para desinstalar y bloquear usan los ID de las extensiones.
 policy-FlashPlugin = Permitir o denegar el uso del plugin Flash.
 policy-HardwareAcceleration = Si es falso, desactiva la aceleración por hardware.
@@ -62,9 +63,11 @@ policy-OverridePostUpdatePage = Anular la página "Qué hay de nuevo" posterior 
 policy-Permissions = Configurar permisos para cámara, micrófono, ubicación y notificaciones.
 policy-PopupBlocking = Permitir que ciertos sitios web muestren ventanas emergentes de forma predeterminada.
 policy-Proxy = Configurar los ajustes del proxy.
+policy-RequestedLocales = Establecer la lista de localizaciones solicitadas para la aplicación, ordenadas por preferencia.
 policy-SanitizeOnShutdown = Limpiar todos los datos de navegación al cerrar.
 policy-SearchBar = Establecer la ubicación predeterminada de la barra de búsqueda. El usuario todavía puede personalizarla.
 policy-SearchEngines = Configurar los ajustes del motor de búsqueda. Esta política solo está disponible en la versión Extended Support Release (ESR).
-# “format” refers to the format used for the value of this policy. See also:
-# https://github.com/mozilla/policy-templates/blob/master/README.md#websitefilter-machine-only
+# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
+policy-SecurityDevices = Instalar módulos PKCS #11.
+# “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Bloquear sitios web para que no sean visitados. Consulte la documentación para obtener más detalles sobre el formato.

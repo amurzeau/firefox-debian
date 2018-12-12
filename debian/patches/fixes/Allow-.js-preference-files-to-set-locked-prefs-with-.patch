@@ -7,7 +7,7 @@ Subject: Allow .js preference files to set locked prefs with lockPref()
  1 file changed, 9 insertions(+), 7 deletions(-)
 
 diff --git a/modules/libpref/parser/src/lib.rs b/modules/libpref/parser/src/lib.rs
-index 5ea7650252f5..fbf91f327e81 100644
+index ca253e2b0190..35bdaed67491 100644
 --- a/modules/libpref/parser/src/lib.rs
 +++ b/modules/libpref/parser/src/lib.rs
 @@ -10,7 +10,7 @@

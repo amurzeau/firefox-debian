@@ -18,6 +18,7 @@ policy-BlockAboutProfiles = about:profiles səhifəsinə girişi əngəllə.
 policy-BlockAboutSupport = about:support səhifəsinə girişi əngəllə.
 policy-Bookmarks = Əlfəcinləri Əlfəcinlər alət sətrində, Əlfəcinlər menyusunda və ya bunların içindəki qovluqlarda yarada bilərsiz.
 policy-Certificates = Daxili sertifikatların işlədib-işlədilməməsi. Bu siyasət hələlik ancaq Windows üçündür.
+policy-CertificatesDescription = Sertifikat əlavə et və ya daxili sertifikatları idarə et.
 policy-Cookies = Saytların çərəz qurmalarını qəbul və ya rədd et.
 policy-DisableAppUpdate = Səyyahın yenilənməsinin qarşısını al.
 policy-DisableBuiltinPDFViewer = { -brand-short-name } üçün PDF göstəricisi olan PDF.js-i söndür.
@@ -42,6 +43,7 @@ policy-DisableSystemAddonUpdate = Səyyahın sistem əlavəsi qurmasını və ye
 policy-DisableTelemetry = Telemetriyanı söndür.
 policy-DisplayBookmarksToolbar = İlkin hal olaraq Əlfəcinlər Alət Sətrini göstər.
 policy-DisplayMenuBar = İlkin hal olaraq Menyu Sətrini göstər.
+policy-DNSOverHTTPS = HTTPS üzərindən DNS konfiqurasiya et
 policy-DontCheckDefaultBrowser = Başlanğıcda əsas səyyah üçün yoxlanışı söndür.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Məzmun Əngəlləməni aktiv et və ya söndür və kilitlə.
@@ -62,9 +64,12 @@ policy-OverridePostUpdatePage = Yeniləmə sonrasındakı "Yeniliklər" səhifə
 policy-Permissions = Kamera, mikrofon, mövqe və bildirişlər üçün icazələri konfiqurasiya et.
 policy-PopupBlocking = Bəzi saytlara soruşmadan qəfil pəncərələrə icazə ver.
 policy-Proxy = Proksi tənzimləmələrini konfiqurasiya et.
+policy-RequestedLocales = Tətbiq üçün istənilən lokalları (dilləri) nizamlama sırasına görə qur.
 policy-SanitizeOnShutdown = Söndürmədə bütün naviqasiya məlumatlarını təmizlə.
 policy-SearchBar = İlkin hal olaraq axtarış sətrinin yerini seç. İstifadəçi bunu yenə də fərdiləşdirə biləcək.
 policy-SearchEngines = Axtarış mühərriyi tənzimləmələrini konfiqurasiya et. Bu siyasət ancaq Uzadılmış Dəstək Buraxılışı (ESR) versiyasında mümkündür.
+# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
+policy-SecurityDevices = PKCS #11 modullarını qur.
 # “format” refers to the format used for the value of this policy. See also:
 # https://github.com/mozilla/policy-templates/blob/master/README.md#websitefilter-machine-only
 policy-WebsiteFilter = Saytların ziyarət edilməsini əngəllə. Format detalları üçün sənədlərə bax.

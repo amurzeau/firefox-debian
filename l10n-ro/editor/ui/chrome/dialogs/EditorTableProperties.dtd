@@ -27,7 +27,7 @@
 <!ENTITY tablePxBetwBrdrCellContent.label "pixeli între marginea și conținutul celulei">
 <!ENTITY tableAlignment.label             "Aliniamentul tabelului:">
 <!ENTITY tableAlignment.accessKey         "A">
-<!ENTITY tableCaption.label               "Explicație:">
+<!ENTITY tableCaption.label               "Legendă:">
 <!ENTITY tableCaption.accessKey           "x">
 <!ENTITY tableCaptionAbove.label          "Deasupra tabelului">
 <!ENTITY tableCaptionBelow.label          "Sub tabel">
@@ -54,16 +54,16 @@
 <!ENTITY cellStyle.accessKey              "S">
 <!ENTITY cellNormal.label                 "Normală">
 <!ENTITY cellHeader.label                 "Antet">
-<!ENTITY cellTextWrap.label               "Înfășurare text:">
+<!ENTITY cellTextWrap.label               "Încadrare text:">
 <!ENTITY cellTextWrap.accessKey           "t">
-<!ENTITY cellWrap.label                   "Înfășoară">
-<!ENTITY cellNoWrap.label                 "Nu înfășura">
+<!ENTITY cellWrap.label                   "Încadrează">
+<!ENTITY cellNoWrap.label                 "Nu încadra">
 <!ENTITY cellAlignTop.label               "Sus">
 <!ENTITY cellAlignMiddle.label            "Mijloc">
 <!ENTITY cellAlignBottom.label            "Jos">
 <!ENTITY cellAlignJustify.label           "Îndreptat">
 <!ENTITY cellInheritColor.label           "(Lasă să se vadă culoarea tabelului)">
-<!ENTITY cellUseCheckboxHelp.label        "Folosiți bifele pentru a indica ce proprietăți se aplică celulelor selectate">
+<!ENTITY cellUseCheckboxHelp.label        "Folosiți casetele de validare pentru a indica ce proprietăți se aplică celulelor selectate">
 
 <!-- Used in both Table and Cell panels  -->
 <!ENTITY size.label                       "Mărime">

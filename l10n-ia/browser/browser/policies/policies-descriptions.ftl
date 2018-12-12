@@ -18,6 +18,7 @@ policy-BlockAboutProfiles = Blocar accesso al pagina about:profiles.
 policy-BlockAboutSupport = Blocar accesso al pagina about:support.
 policy-Bookmarks = Crear marcapaginas in le barra del instrumentos de marcapaginas, menu de marcapaginas o un plica specificate intra illos
 policy-Certificates = Si o non usar certificates integrate. Iste regulamento es solo de Windows a iste tempore.
+policy-CertificatesDescription = Adde certificatos o usa certificatos integrate.
 policy-Cookies = Consentir o negar al sitos web de definir cookies.
 policy-DisableAppUpdate = Impedir le actualisation del navigator.
 policy-DisableBuiltinPDFViewer = Disactivar PDF.js, le visor de PDF integrate in { -brand-short-name }.<
@@ -42,9 +43,10 @@ policy-DisableSystemAddonUpdate = Impedir al navigator de installar e actualisar
 policy-DisableTelemetry = Disactivar le telemetria.
 policy-DisplayBookmarksToolbar = Monstrar le Barra del marcapaginas de ordinario
 policy-DisplayMenuBar = Monstrar le Barra del menu de ordinario.
+policy-DNSOverHTTPS = Configura DNS sur HTTPS.
 policy-DontCheckDefaultBrowser = Disactivar le controlo Navigator predefinite al lanceamento initial.
 # “lock” means that the user won’t be able to change this setting
-policy-EnableTrackingProtection = Activar o disactivar le Bloco de contentos e optionalmente blocar illo.
+policy-EnableTrackingProtection = Activar o disactivar le Blocage de contentos e optionalmente serrar lo.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs. See also:
@@ -62,9 +64,12 @@ policy-OverridePostUpdatePage = Supplantar le pagina de “Novas” post-actuali
 policy-Permissions = Configurar le permissos de camera, microphono, position e notificationes.
 policy-PopupBlocking = Consentir a certe sitos web de monstrar de ordinario messages emergente.
 policy-Proxy = Configurar le parametros del servitor proxy.
+policy-RequestedLocales = Defini le lista del localisationes desirate pro le applicationes in ordine de tu preferentias.
 policy-SanitizeOnShutdown = Clarar tote le datos de navigation al clausura.
 policy-SearchBar = Definir le localisation predefinite del barra de recerca. Le usator pote ancora lo personalisar.
 policy-SearchEngines = Configurar le parametros del motores de recerca. Iste criterio es solmente disponibile sur le version con supporto extendite (Extended Support Release - ESR).
+# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
+policy-SecurityDevices = Installar modulos PKCS #11.
 # “format” refers to the format used for the value of this policy. See also:
 # https://github.com/mozilla/policy-templates/blob/master/README.md#websitefilter-machine-only
 policy-WebsiteFilter = Blocar de ser visitate sitos web. Vider documentation pro altere detalios sur le formato.

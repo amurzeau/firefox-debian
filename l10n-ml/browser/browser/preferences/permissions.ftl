@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = തടയുക
 permissions-capabilities-prompt =
     .label = എപ്പോഴും ചോദിക്കുക
+permissions-capabilities-listitem-allow =
+    .value = അനുവദിക്കുക
+permissions-capabilities-listitem-block =
+    .value = തടയുക
+permissions-capabilities-listitem-allow-first-party =
+    .value = ആദ്യത്തെ പാര്‍ട്ടിയെ മാത്രം അനുവദിയ്ക്കുക
+permissions-capabilities-listitem-allow-session =
+    .value = ഈ സെഷന്‌ അനുവദിക്കുക
 
 ## Invalid Hostname Dialog
 
@@ -84,9 +92,6 @@ permissions-exceptions-addons-desc = ഏതൊക്കെ വെബ്‌ സ�
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = അനുവദിച്ച വെബ്സൈറ്റുകൾ - ഓട്ടോപ്ലെ
-    .style = { permissions-window.style }
 
 ## Site Permissions - Notifications
 

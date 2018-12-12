@@ -18,6 +18,7 @@ policy-BlockAboutProfiles = Blockera tillgång till sidan about:profiles.
 policy-BlockAboutSupport = Blockera tillgång till sidan about:support.
 policy-Bookmarks = Skapa bokmärken i bokmärkesfältet, bokmärkesmenyn eller en angiven mapp inuti dem.
 policy-Certificates = Huruvida du ska använda inbyggda certifikat eller inte. Denna policy är endast för Windows just nu.
+policy-CertificatesDescription = Lägg till certifikat eller använd inbyggda certifikat.
 policy-Cookies = Tillåt eller neka webbplatser att lagra kakor
 policy-DisableAppUpdate = Förhindra att webbläsaren uppdateras.
 policy-DisableBuiltinPDFViewer = Inaktivera PDF.js, den inbyggda PDF-visaren i { -brand-short-name }.
@@ -42,6 +43,7 @@ policy-DisableSystemAddonUpdate = Förhindra webbläsaren att installera och upp
 policy-DisableTelemetry = Stäng av telemetri.
 policy-DisplayBookmarksToolbar = Visa bokmärkesfältet som standard.
 policy-DisplayMenuBar = Visa menyraden som standard.
+policy-DNSOverHTTPS = Konfigurera DNS över HTTPS.
 policy-DontCheckDefaultBrowser = Inaktivera kontrollen av förvald webbläsare vid start.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Aktivera eller inaktivera Innehållsblockering med möjlighet att låsa valet.
@@ -62,9 +64,12 @@ policy-OverridePostUpdatePage = Åsidosätt sidan "Vad är nytt" efter uppdateri
 policy-Permissions = Ställ in behörigheter för kamera, mikrofon, plats och notifieringar.
 policy-PopupBlocking = Tillåt vissa webbplatser att visa popup-fönster som standard.
 policy-Proxy = Ange inställningar för proxy.
+policy-RequestedLocales = Ange listan över begärda språk för programmet efter ordning i inställningar.
 policy-SanitizeOnShutdown = Rensa all navigeringsdata vid avstängning.
 policy-SearchBar = Ange standardplacering av sökfältet. Användaren kan fortfarande flytta det.
 policy-SearchEngines = Ange sökmotorinställningar. Denna policy finns bara på Extended Support Release (ESR)-versionen.
+# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
+policy-SecurityDevices = Installera PKCS #11-moduler.
 # “format” refers to the format used for the value of this policy. See also:
 # https://github.com/mozilla/policy-templates/blob/master/README.md#websitefilter-machine-only
 policy-WebsiteFilter = Blockera besök på webbplatser. Läs dokumentationen för mer detaljer om hur de anges.

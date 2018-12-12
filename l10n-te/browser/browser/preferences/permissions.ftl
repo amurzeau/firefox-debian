@@ -13,7 +13,7 @@ permissions-block =
     .label = నిరోధించు
     .accesskey = B
 permissions-session =
-    .label = భాగము కొరకు అనుమతించు
+    .label = ఈ సెషనుకి అనుమతించు
     .accesskey = S
 permissions-allow =
     .label = అనుమతించు
@@ -26,7 +26,7 @@ permissions-remove =
     .label = వెబ్‌సైటును తీసివేయి
     .accesskey = R
 permissions-remove-all =
-    .label = అన్ని వెబ్‌సైట్లను తీసివేయి
+    .label = వెబ్‌సైట్లన్నీ తీసివేయి
     .accesskey = e
 permissions-button-cancel =
     .label = రద్దుచేయి
@@ -42,11 +42,19 @@ permissions-capabilities-block =
     .label = నిరోధించు
 permissions-capabilities-prompt =
     .label = ఎల్లప్పుడూ అడుగు
+permissions-capabilities-listitem-allow =
+    .value = అనుమతించు
+permissions-capabilities-listitem-block =
+    .value = నిరోధించు
+permissions-capabilities-listitem-allow-first-party =
+    .value = మొదటి పార్టీ మాత్రమే అనుమతించు
+permissions-capabilities-listitem-allow-session =
+    .value = సెషనుకి అనుమతించు
 
 ## Invalid Hostname Dialog
 
-permissions-invalid-uri-title = ప్రామాణికం కాని హోస్టునామము ప్రవేశపెట్టబడింది
-permissions-invalid-uri-label = దయచేసి ప్రామాణికమైన హోస్టు నామము ప్రవేశపెట్టండి
+permissions-invalid-uri-title = చెల్లని హోస్టుపేరును ఇచ్చారు
+permissions-invalid-uri-label = దయచేసి సరైన హోస్టుపేరును ఇవ్వండి
 
 ## Exceptions - Tracking Protection
 
@@ -54,6 +62,10 @@ permissions-exceptions-tracking-protection-window =
     .title = మినహాయింపులు - ట్రాకింగ్ సంరక్షణ
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = ఈ వెబ్‌సైట్లలో మీరు ట్రాకింగ్ సంరక్షణను అచేతనించారు.
+permissions-exceptions-content-blocking-window =
+    .title = మినహాయింపులు - విషయ నిరోధం
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = ఈ వెబ్‌సైట్లలో మీకు విషయ నిరోధాన్ని అచేతనం చేసారు.
 
 ## Exceptions - Cookies
 
@@ -84,8 +96,8 @@ permissions-exceptions-addons-desc = పొడిగింతలను స్థ
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = అనుమతించిన వెబ్‌సైట్లు - ఆటోప్లే
+permissions-exceptions-autoplay-media-window2 =
+    .title = మినహాయింపులు - స్వీయారంభం
     .style = { permissions-window.style }
 
 ## Site Permissions - Notifications

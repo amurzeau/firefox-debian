@@ -28,9 +28,6 @@
 <!ENTITY helpSafeMode.stop.label       "Reiniciar cos complementos activados">
 <!ENTITY helpSafeMode.stop.accesskey   "R">
 
-<!ENTITY healthReport2.label      "Informe de saúde do &brandShorterName;">
-<!ENTITY healthReport2.accesskey  "e">
-
 <!ENTITY helpTroubleshootingInfo.label      "Información para solucionar problemas">
 <!ENTITY helpTroubleshootingInfo.accesskey  "b">
 
@@ -38,7 +35,7 @@
 <!ENTITY helpFeedbackPage.accesskey  "o">
 
 <!ENTITY helpShowTour2.label            "Visita guiada por &brandShorterName;">
-<!ENTITY helpShowTour2.accesskey        "o">
+<!ENTITY helpShowTour2.accesskey        "V">
 
 <!ENTITY preferencesCmdMac.label        "Preferencias…">
 <!ENTITY preferencesCmdMac.commandkey   ",">

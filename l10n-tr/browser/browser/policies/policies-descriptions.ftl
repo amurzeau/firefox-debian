@@ -18,6 +18,7 @@ policy-BlockAboutProfiles = about:profiles sayfasına erişimi engelle.
 policy-BlockAboutSupport = about:support sayfasına erişimi engelle.
 policy-Bookmarks = Yer imleri araç çubuğunda, yer imleri menüsünde veya bunların içindeki belli bir klasörde yer imi oluştur.
 policy-Certificates = Dahili sertifikaların kullanılıp kullanılmayacağı. Bu ilke şimdilik yalnızca Windows’ta geçerlidir.
+policy-CertificatesDescription = Sertifika ekle veya yerleşik sertifikaları kullan.
 policy-Cookies = Web sitelerinin çerez ayarlamasına izin ver veya verme.
 policy-DisableAppUpdate = Tarayıcının güncellenmesini engelle.
 policy-DisableBuiltinPDFViewer = Dahili { -brand-short-name } PDF göstericisi olan PDF.js'i devre dışı bırak.
@@ -42,6 +43,7 @@ policy-DisableSystemAddonUpdate = Tarayıcının sistem eklentilerini kurmasın�
 policy-DisableTelemetry = Telemetri'yi kapat.
 policy-DisplayBookmarksToolbar = Varsayılan olarak yer imleri araç çubuğunu göster.
 policy-DisplayMenuBar = Varsayılan olarak menü çubuğunu göster.
+policy-DNSOverHTTPS = HTTP üzerinden DNS’i yapılandır.
 policy-DontCheckDefaultBrowser = Başlangıçta varsayılan tarayıcı kontrolünü devre dışı bırak.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = İçerik engellemeyi etkinleştir veya devre dışı bırak ve isteğe bağlı olarak kilitle.
@@ -62,9 +64,12 @@ policy-OverridePostUpdatePage = Güncelleme sonrası “Yenilikler” sayfasın�
 policy-Permissions = Kamera, mikrofon, konum ve bildirim izinlerini yapılandır.
 policy-PopupBlocking = Belirli web sitelerin varsayılan olarak açılır pencere açmasına izin ver.
 policy-Proxy = Vekil sunucu ayarlarını yapılandır.
+policy-RequestedLocales = Uygulamada kullanılması istenen dilleri tercih sırasına göre ayarla.
 policy-SanitizeOnShutdown = Kapanırken tüm gezinti verilerini temizle.
 policy-SearchBar = Arama çubuğunun varsayılan konumunu ayarla. Kullanıcı daha sonra özelleştirebilir.
 policy-SearchEngines = Arama motoru ayarlarını yapılandır. Bu ilke yalnızca Extended Support Release (ESR) sürümünde geçerlidir.
+# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
+policy-SecurityDevices = PKCS #11 modüllerini yükle.
 # “format” refers to the format used for the value of this policy. See also:
 # https://github.com/mozilla/policy-templates/blob/master/README.md#websitefilter-machine-only
 policy-WebsiteFilter = Web sitelerinin ziyaret edilmesini engelle. Biçimle ilgili daha fazla bilgi için belgelendirmeye bakın.

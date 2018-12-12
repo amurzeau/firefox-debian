@@ -53,6 +53,7 @@ pane-sync-title = Cuenta de Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = Soporte de { -brand-short-name }
+addons-button-label = Complementos y temas
 focus-search =
     .key = f
 close-button =
@@ -83,6 +84,9 @@ extension-controlled-homepage-override = Una extensión, <img data-l10n-name="ic
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Una extensión, <img data-l10n-name="icon"/> { $name }, está controlando tu página de Nueva Pestaña.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = Un complemento, <img data-l10n-name="icon"/> { $name }, está controlando esta configuración.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Una extensión, <img data-l10n-name="icon"/> { $name }, se ha establecido como tu motor de búsqueda predeterminado.
@@ -148,6 +152,9 @@ open-new-link-as-tabs =
     .accesskey = w
 warn-on-close-multiple-tabs =
     .label = Avisarme al cerrar varias pestañas
+    .accesskey = m
+warn-on-quit-close-multiple-tabs =
+    .label = Advertir al salir y cerrar varias pestañas
     .accesskey = m
 warn-on-open-many-tabs =
     .label = Avisarme si al abrir muchas pestañas { -brand-short-name } se pueda poner lento
@@ -284,6 +291,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = Actualice automáticamente los motores de búsqueda
     .accesskey = e
+update-pref-write-failure-title = Error de escritura
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = No se pudo guardar la preferencia. No se pudo escribir al archivo: { $path }
 
 ## General Section - Performance
 
@@ -323,10 +334,13 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Buscar el texto cuando empiezas a escribir
     .accesskey = x
+browsing-cfr-recommendations =
+    .label = Recomendar extensiones mientras se navega
+    .accesskey = R
+browsing-cfr-recommendations-learn-more = Aprender más
 
 ## General Section - Proxy
 
-network-proxy-title = Proxy de red
 network-settings-title = Configuración de conexión
 network-proxy-connection-description = Configurar como { -brand-short-name } se conecta a internet.
 network-proxy-connection-learn-more = Saber más
@@ -525,6 +539,7 @@ privacy-header = Navegación privada
 ## Privacy Section - Forms
 
 forms-header = Contraseñas de los formularios &
+logins-header = Inicios de sesión y contraseñas
 forms-ask-to-save-logins =
     .label = Preguntar para guardar inicios de sesión y contraseñas para los sitios web
     .accesskey = r
@@ -591,26 +606,15 @@ sitedata-total-size-calculating = Calculando tamaño de los datos del sitio y el
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Tus cookies, datos del sitio y caché almacenados ocupan actualmente un { $value } { $unit } del espacio en disco.
 sitedata-learn-more = Aprender más
-sitedata-accept-cookies-option =
-    .label = Aceptar cookies y datos de los sitios web (recomendado)
-    .accesskey = A
-sitedata-block-cookies-option =
-    .label = Bloquear cookies y datos del sitio (puede que algunos sitios no funcionen)
-    .accesskey = B
 sitedata-keep-until = Mantener hasta
     .accesskey = u
 sitedata-keep-until-expire =
     .label = expiran
 sitedata-keep-until-closed =
     .label = { -brand-short-name } está cerrado
-sitedata-accept-third-party-desc = Aceptar cookies de terceros y datos del sitio
-    .accesskey = y
-sitedata-accept-third-party-always-option =
-    .label = Siempre
-sitedata-accept-third-party-visited-option =
-    .label = Visitado
-sitedata-accept-third-party-never-option =
-    .label = Nunca
+sitedata-delete-on-close =
+    .label = Eliminar cookies y datos del sitio cuando se cierra { -brand-short-name }
+    .accesskey = c
 sitedata-allow-cookies-option =
     .label = Aceptar cookies y datos del sitio
     .accesskey = A
@@ -627,10 +631,6 @@ sitedata-block-trackers-option =
     .label = Rastreadores de terceros
 sitedata-block-unvisited-option =
     .label = Cookies de sitios web no visitados
-sitedata-block-all-third-parties-option =
-    .label = Todas las cookies de terceros
-sitedata-block-always-option =
-    .label = Todas las cookies (pueden causar errores en los sitios web)
 sitedata-block-all-third-party-option =
     .label = Todas las cookies de terceros (puede causar errores en los sitios web)
 sitedata-block-all-option =
@@ -648,6 +648,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = Tus configuraciones en el bloqueo de contenido están previniendo cambiar las configuraciones de las cookies y datos del sitio.
+sitedata-cookies-permissions =
+    .label = Administrar permisos...
+    .accesskey = p
 
 ## Privacy Section - Address Bar
 
@@ -668,6 +671,7 @@ addressbar-suggestions-settings = Cambiar las preferencias para las sugerencias 
 
 content-blocking-header = Bloqueo de contenido
 content-blocking-desc = Bloquear contenido de terceros, como publicidad o código, que puede dejar lenta tu navegación o rastrearte por la web. Personaliza tu configuración para lograr el mejor equilibrio entre protección y rendimiento.
+content-blocking-description = Bloquear el contenido de terceros que te rastrea en la web. Controla cuánto de tu actividad en línea se almacena y compartes entre sitios web.
 content-blocking-learn-more = Saber más
 content-blocking-restore-defaults =
     .label = Restaurar predeterminados
@@ -684,30 +688,32 @@ content-blocking-category-label = Elegir que bloquear
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Elementos de rastreo lentos
-    .accesskey = E
-content-blocking-fastblock-description = Bloquear el contenido de terceros que tardan más de 5 segundos en cargarse.
-content-blocking-fastblock-option-enabled =
-    .label = Siempre bloquear
-content-blocking-fastblock-option-disabled =
-    .label = Nunca bloquear
-content-blocking-tracking-protection-label = Rastreadores
-    .accesskey = R
-content-blocking-tracking-protection-description = Bloquear todos los rastreadores conocidos (Nota: puede también prevenir algunas páginas al cargar).
-content-blocking-tracking-protection-option-enabled =
-    .label = Siempre bloquear
-content-blocking-tracking-protection-option-pbm =
-    .label = Bloquear solo en ventanas privadas
-content-blocking-tracking-protection-option-disabled =
-    .label = Siempre bloquear
-content-blocking-tracking-protection-change-blocklist = Cambiar lista de bloqueo...
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
 content-blocking-fastblock-slow-loading-trackers-label =
     .label = Rastreadores de carga lenta
     .accesskey = S
 content-blocking-fastblock-new-description = Bloquear sólo los rastreadores que impidan a las páginas cargar rápidamente.
+content-blocking-setting-standard =
+    .label = Estándar
+    .accesskey = E
+content-blocking-setting-strict =
+    .label = Estricto
+    .accesskey = r
+content-blocking-setting-custom =
+    .label = Personalizar
+    .accesskey = P
+content-blocking-standard-desc = Balanceado para protección y rendimiento. Permite algunos rastreadores, así lo sitios web funcionan adecuadamente.
+content-blocking-strict-desc = Bloquear todos los rastreadores que { -brand-short-name } detecte. Puede causar errores en algunos sitios web.
+content-blocking-custom-desc = Elegir que bloquear
+content-blocking-private-trackers = Rastreadores conocidos solo en ventanas privadas
+content-blocking-third-party-cookies = Cookies de rastreadores de terceros
+content-blocking-all-windows-trackers = Rastreadores conocidos en todas las ventanas
+content-blocking-all-third-party-cookies = Todas las cookies de terceros
+content-blocking-warning-title = ¡Atención!
+content-blocking-warning-desc = Bloquear cookies y rastreadores puede causar que algunos sitios web fallen. Es fácil de deshabilitar el bloqueo en sitios en lo que confías.
+content-blocking-learn-how = Saber cómo
+content-blocking-tracking-protection-trackers-label =
+    .label = Rastreadores
+    .accesskey = R
 content-blocking-tracking-protection-all-detected-trackers-label =
     .label = Todos los rastreadores detectados
     .accesskey = T
@@ -740,6 +746,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = Todas las cookies de terceros (puede causar errores en los sitios web)
     .accesskey = A
+content-blocking-cookies-label =
+    .label = Cookies
+    .accesskey = C
 
 ## Privacy Section - Tracking
 
@@ -755,16 +764,15 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Nunca
     .accesskey = N
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Usar Protección de Rastreo en la navegación privada para bloquear rastreadores conocidos
-    .accesskey = v
 tracking-exceptions =
     .label = Excepciones…
     .accesskey = x
 tracking-change-block-list =
     .label = Cambiar lista de bloqueo…
     .accesskey = C
+tracking-manage-exceptions =
+    .label = Administrar excepciones
+    .accesskey = x
 
 ## Privacy Section - Permissions
 
@@ -881,3 +889,36 @@ certs-view =
 certs-devices =
     .label = Dispositivos de seguridad…
     .accesskey = D
+space-alert-learn-more-button =
+    .label = Aprender más
+    .accesskey = L
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Abrir opciones
+           *[other] Abrir preferencias
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] O
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } se está quedando sin espacio en el disco. Puede que los contenidos del sitio web no se muestren adecuadamente. Puedes limpiar los datos almacenados en Opciones > Privacidad y seguridad > Cookies y datos del sitio.
+       *[other] { -brand-short-name } necesita espacio en el disco. Puede que los contenidos del sitio web no se muestren adecuadamente. Puedes limpiar los datos almacenados en Preferencias > Privacidad y seguridad > Cookies y datos del sitio.
+    }
+space-alert-under-5gb-ok-button =
+    .label = Perfecto, entendido
+    .accesskey = K
+space-alert-under-5gb-message = { -brand-short-name } se está quedando sin espacio en el disco. Tal vez los contenidos web no se muestren correctamente. Visita "Aprende más" para optimizar el utilizo del disco y mejorar la navegación.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Escritorio
+downloads-folder-name = Descargas
+choose-download-folder-title = Selecciona la carpeta que almacenará las descargas:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Guardar archivos en { $service-name }

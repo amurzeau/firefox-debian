@@ -37,7 +37,7 @@ connection-proxy-http-port = Port
     .accesskey = P
 connection-proxy-http-share =
     .label = Brug denne proxy-server for alle protokoller
-    .accesskey = B
+    .accesskey = x
 
 connection-proxy-ssl = SSL-proxy
     .accesskey = S
@@ -89,3 +89,15 @@ connection-dns-over-https =
 connection-dns-over-https-url = URL
     .accesskey = U
     .tooltiptext = URL til DNS-opslag via HTTPS
+
+# Variables:
+#   $url (String) - URL for the DNS over HTTPS provider
+connection-dns-over-https-url-default =
+    .label = Brug ({ $url }) som standard
+    .accesskey = B
+    .tooltiptext = Brug standard-URL'en til DNS-opslag over HTTPS
+
+connection-dns-over-https-url-custom =
+    .label = Tilpasset
+    .accesskey = e
+    .tooltiptext = Angiv den URL, du foretrækker til DNS-opslag over HTTPS

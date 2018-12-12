@@ -2,9 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-languages-window =
-    .title = Jeziki
-    .style = width: 30em
 webpage-languages-window =
     .title = Nastavitve jezikov spletnih strani
     .style = width: 40em
@@ -23,7 +20,7 @@ languages-customize-remove =
     .label = Odstrani
     .accesskey = R
 languages-customize-select-language =
-    .placeholder = Izberite dodaten jezik …
+    .placeholder = Izberi dodaten jezik …
 languages-customize-add =
     .label = Dodaj
     .accesskey = D
@@ -45,3 +42,14 @@ browser-languages-window =
     .title = Nastavitve jezikov { -brand-short-name }a
     .style = width: 40em
 browser-languages-description = { -brand-short-name } bo privzeto prikazal prvi jezik, po potrebi pa pomožne jezike v navedenem vrstnem redu.
+browser-languages-search = Išči več jezikov ...
+browser-languages-searching =
+    .label = Iskanje jezikov ...
+browser-languages-downloading =
+    .label = Prenašanje ...
+browser-languages-select-language =
+    .label = Izberi dodaten jezik …
+    .placeholder = Izberi dodaten jezik ...
+browser-languages-installed-label = Nameščeni jeziki
+browser-languages-available-label = Jeziki na razpolago
+browser-languages-error = { -brand-short-name } trenutno ne more posodobiti jezikov. Preverite, ali ste povezani z internetom, in poskusite znova.

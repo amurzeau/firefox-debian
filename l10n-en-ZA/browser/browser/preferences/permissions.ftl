@@ -28,6 +28,14 @@ permissions-capabilities-allow =
     .label = Allow
 permissions-capabilities-block =
     .label = Block
+permissions-capabilities-listitem-allow =
+    .value = Allow
+permissions-capabilities-listitem-block =
+    .value = Block
+permissions-capabilities-listitem-allow-first-party =
+    .value = Allow first party only
+permissions-capabilities-listitem-allow-session =
+    .value = Allow for Session
 
 ## Invalid Hostname Dialog
 
@@ -53,6 +61,9 @@ permissions-exceptions-popup-desc = You can specify which websites are allowed t
 ## Exceptions - Add-ons
 
 permissions-exceptions-addons-desc = You can specify which websites are allowed to install add-ons. Type the exact address of the site you want to allow and then click Allow.
+
+## Exceptions - Autoplay Media
+
 
 ## Site Permissions - Notifications
 

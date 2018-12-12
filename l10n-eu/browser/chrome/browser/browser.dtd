@@ -23,10 +23,14 @@
 <!ENTITY  reloadTab.accesskey                "r">
 <!ENTITY  reloadAllTabs.label                "Berritu fitxa guztiak">
 <!ENTITY  reloadAllTabs.accesskey            "B">
+<!ENTITY  selectAllTabs.label                "Hautatu fitxa guztiak">
+<!ENTITY  selectAllTabs.accesskey            "z">
 <!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
 a tab (i.e. it is a verb, not adjective). -->
 <!ENTITY  duplicateTab.label                 "Bikoiztu fitxa">
 <!ENTITY  duplicateTab.accesskey             "B">
+<!ENTITY  closeTabOptions.label              "Fitxa ixteko aukerak">
+<!ENTITY  closeTabOptions.accesskey          "x">
 <!-- LOCALIZATION NOTE (closeTabsToTheEnd.label): This should indicate the
 direction in which tabs are closed, i.e. locales that use RTL mode should say
 left instead of right. -->
@@ -38,19 +42,29 @@ left instead of right. -->
 <!ENTITY  closeSelectedTabs.label            "Itxi hautatutako fitxak">
 <!ENTITY  closeSelectedTabs.accesskey        "h">
 
+<!ENTITY  closeTabs.label                    "Itxi fitxak">
+<!ENTITY  closeTabs.accesskey                "x">
 <!ENTITY  pinSelectedTabs.label              "Ainguratu fitxak">
-<!-- Pin Tab and Pin Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  pinSelectedTabs.accesskey          "A">
 <!ENTITY  unpinSelectedTabs.label            "Desainguratu fitxak">
-<!-- Unpin Tab and Unpin Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinSelectedTabs.accesskey        "D">
 <!-- Reload Tab and Reload Selected Tabs have the same accesskey
 but will never be visible at the same time. -->
 <!ENTITY  reloadSelectedTabs.label           "Berritu hautatutako fitxak">
 <!ENTITY  reloadSelectedTabs.accesskey       "B">
+<!-- LOCALIZATION NOTE(reloadTab.label, reloadTabs.label): have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  reloadTabs.label                   "Berritu fitxak">
+<!ENTITY  reloadTabs.accesskey               "r">
 <!ENTITY  bookmarkSelectedTabs.label         "Egin fitxen laster-marka…">
+<!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "s">
 
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
@@ -59,8 +73,14 @@ left edge of the tabstrip. Really we just want the string to express the idea
 that this is a lightweight and reversible action that keeps your tab where you
 can reach it easily. -->
 <!ENTITY  pinTab.label                       "Ainguratu fitxa">
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  pinTab.accesskey                   "A">
 <!ENTITY  unpinTab.label                     "Desainguratu fitxa">
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinTab.accesskey                 "a">
 <!ENTITY  sendTabToDevice.label              "Bidali fitxa gailura">
 <!ENTITY  sendTabToDevice.accesskey          "g">
@@ -68,12 +88,26 @@ can reach it easily. -->
 <!ENTITY  sendPageToDevice.accesskey         "g">
 <!ENTITY  sendLinkToDevice.label             "Bidali lotura gailura">
 <!ENTITY  sendLinkToDevice.accesskey         "g">
+<!-- LOCALIZATION NOTE (moveTabOptions.label and moveSelectedTabOptions.label):
+These two items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  moveTabOptions.label               "Mugitu fitxa">
+<!ENTITY  moveTabOptions.accesskey           "M">
+<!ENTITY  moveSelectedTabOptions.label       "Mugitu fitxak">
+<!ENTITY  moveSelectedTabOptions.accesskey   "M">
+<!ENTITY  moveToStart.label                  "Mugitu hasierara">
+<!ENTITY  moveToStart.accesskey              "h">
+<!ENTITY  moveToEnd.label                    "Mugitu amaierara">
+<!ENTITY  moveToEnd.accesskey                "m">
 <!ENTITY  moveToNewWindow.label              "Eraman leiho berrira">
 <!ENTITY  moveToNewWindow.accesskey          "h">
 <!ENTITY  reopenInContainer.label            "Ireki berriro edukiontzian">
 <!ENTITY  reopenInContainer.accesskey        "b">
 <!ENTITY  bookmarkAllTabs.label              "Egin fitxa guztien laster-marka…">
 <!ENTITY  bookmarkAllTabs.accesskey          "t">
+<!ENTITY  bookmarkTab.label                  "Egin fitxaren laster-marka">
+<!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  bookmarkTab.accesskey              "s">
 <!ENTITY  undoCloseTab.label                 "Desegin fitxa ixtea">
 <!ENTITY  undoCloseTab.accesskey             "D">
 <!ENTITY  closeTab.label                     "Itxi fitxa">
@@ -114,6 +148,29 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "B">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.label "Egin fitxa guztien laster-marka…">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "t">
+
+<!ENTITY toolbarContextMenu.reloadSelectedTab.label "Berritu hautatutako fitxa">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
+toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.reloadSelectedTab.accesskey "B">
+<!ENTITY toolbarContextMenu.reloadSelectedTabs.label "Berritu hautatutako fitxak">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
+toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.reloadSelectedTabs.accesskey "B">
+<!ENTITY toolbarContextMenu.bookmarkSelectedTab.label "Egin hautatutako fitxaren laster-marka…">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.bookmarkSelectedTab.accesskey,
+toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.bookmarkSelectedTab.accesskey "h">
+<!ENTITY toolbarContextMenu.bookmarkSelectedTabs.label "Egin hautatutako fitxen laster-marka…">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.bookmarkSelectedTab.accesskey,
+toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.bookmarkSelectedTabs.accesskey "h">
+<!ENTITY toolbarContextMenu.selectAllTabs.label "Hautatu fitxa guztiak">
+<!ENTITY toolbarContextMenu.selectAllTabs.accesskey "z">
 <!ENTITY toolbarContextMenu.undoCloseTab.label "Desegin fitxa ixtea">
 <!ENTITY toolbarContextMenu.undoCloseTab.accesskey "D">
 
@@ -558,9 +615,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY reloadFrameCmd.label         "Berritu markoa">
 <!ENTITY reloadFrameCmd.accesskey     "r">
 <!ENTITY viewPartialSourceForSelectionCmd.label "Ikusi aukeraren iturburua">
-<!ENTITY viewPartialSourceForMathMLCmd.label    "Ikusi MathML iturburua">
-<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both
-         viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label -->
 <!ENTITY viewPartialSourceCmd.accesskey "u">
 <!ENTITY viewPageSourceCmd.label      "Ikusi orriaren iturburua">
 <!ENTITY viewPageSourceCmd.accesskey  "o">
@@ -777,7 +831,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      Remove Bookmark buttons. -->
 <!ENTITY editBookmark.panel.width                    "23em">
 <!ENTITY editBookmark.done.label                     "Eginda">
-
 <!ENTITY editBookmark.showForNewBookmarks.label       "Erakutsi editorea gordetzean">
 <!ENTITY editBookmark.showForNewBookmarks.accesskey   "E">
 
@@ -785,6 +838,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      This is the header of the security subview in the Site Identity panel. -->
 <!ENTITY identity.securityView.label "Gunearen segurtasuna">
 
+<!ENTITY identity.connection "Konexioa">
 <!ENTITY identity.connectionSecure "Konexio segurua">
 <!ENTITY identity.connectionNotSecure "Konexioa ez da segurua">
 <!ENTITY identity.connectionFile "Orri hau zure ordenagailuan biltegiratuta dago.">
@@ -927,9 +981,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.audioCapture.label "Fitxatik datorren audioa partekatu egingo da.">
 <!ENTITY getUserMedia.allWindowsShared.message "Zure pantailan ikusgai dauden leiho guztiak partekatuko dira.">
 
-<!ENTITY trackingProtection.on "Jarraipenaren babesa: piztuta">
-<!ENTITY trackingProtection.off "Jarraipenaren babesa: itzalita">
-
 <!ENTITY contentBlocking.title "Edukia blokeatzea">
 <!ENTITY contentBlocking.detected "Blokeatu daitekeen edukia antzeman da gune honetan.">
 <!ENTITY contentBlocking.notDetected "Ez da blokeatu daitekeen edukirik antzeman orri honetan.">
@@ -951,6 +1002,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.fastBlock.add.label "Gehitu blokeatzea…">
 
 <!ENTITY contentBlocking.trackingProtection2.label "Antzemandako jarraipen-elementu guztiak">
+<!ENTITY contentBlocking.trackingProtection3.label "Jarraipen-elementuak">
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
      This label signals that this type of content blocking is turned
      ON and is successfully blocking tracker content, so this is
@@ -987,28 +1039,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY trackingProtection.title "Jarraipenaren babesa">
 <!ENTITY trackingProtection.tooltip "Ireki jarraipenaren babesaren hobespenak">
-<!ENTITY trackingProtection.detectedBlocked4 "Zure nabigazioaren jarraipena egin lezaketen orri honen zatiak blokeatzen ari da &brandShortName;.">
-<!ENTITY trackingProtection.detectedNotBlocked5 "Zure nabigazioaren jarraipena egin lezaketen elementuak antzeman ditu &brandShortName;(e)k.">
-<!ENTITY trackingProtection.detectedException "Zure nabigazioaren jarraipena egin lezaketen zatiak antzeman ditu &brandShortName;(e)k. Babesa desgaituta daukazu orri honetarako.">
-<!ENTITY trackingProtection.notDetected5 "Ez da jarraipeneko elementurik antzeman orri honetan.">
-<!ENTITY trackingProtection.notDetectedException "Ez da jarraipeneko elementurik antzeman orri honetan. Babesa desgaituta daukazu orri honetarako.">
-
-<!ENTITY trackingProtection.reloadRequired2 "Jarraipenaren babesa gaituta daukazu. Berritu orria elementu guztiak blokeatzeko.">
 
 <!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in NON-private browsing mode. -->
-<!ENTITY trackingProtection.unblock3.label "Desgaitu gune honetarako">
-<!ENTITY trackingProtection.unblock3.accesskey "D">
 <!ENTITY trackingProtection.unblock4.label "Desgaitu blokeatzea gune honetarako">
 <!ENTITY trackingProtection.unblock4.accesskey "D">
 <!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in PRIVATE browsing mode. -->
-<!ENTITY trackingProtection.unblockPrivate3.label "Desgaitu saio honetarako">
-<!ENTITY trackingProtection.unblockPrivate3.accesskey "D">
-<!ENTITY trackingProtection.block4.label "Gaitu gune honetarako">
-<!ENTITY trackingProtection.block4.accesskey "G">
 <!ENTITY trackingProtection.unblockPrivate4.label "Desgaitu blokeatzea behin-behinean">
 <!ENTITY trackingProtection.unblockPrivate4.accesskey "D">
 <!ENTITY trackingProtection.block5.label "Gaitu blokeatzea gune honetarako">
@@ -1118,7 +1157,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY sendToDevice.syncNotReady.label "Gailuak sinkronizatzen…">
 
 <!ENTITY pageAction.shareUrl.label "Partekatu">
-
 <!ENTITY pageAction.shareMore.label "Gehiago…">
 
 <!ENTITY libraryButton.tooltip "Ikusi historia, gordetako laster-markak eta gehiago">

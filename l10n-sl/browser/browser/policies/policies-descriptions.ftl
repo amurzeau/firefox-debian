@@ -18,6 +18,7 @@ policy-BlockAboutProfiles = Zavrni dostop do strani about:profiles.
 policy-BlockAboutSupport = Zavrni dostop do strani about:support.
 policy-Bookmarks = Ustvarjaj zaznamke v orodni vrstici, meniju zaznamkov ali v določeni mapi.
 policy-Certificates = Ali naj se uporablja vgrajena digitalna potrdila ali ne. Ta pravilnik trenutno deluje le v sistemu Windows.
+policy-CertificatesDescription = Dodajte digitalna potrdila ali uporabite vgrajena potrdila.
 policy-Cookies = Spletnim stranem dovoli ali zavrni nastavljanje piškotkov.
 policy-DisableAppUpdate = Prepreči posodabljanje brskalnika.
 policy-DisableBuiltinPDFViewer = Onemogoči PDF.js, pregledovalnik PDF brskalnika { -brand-short-name }.
@@ -42,6 +43,7 @@ policy-DisableSystemAddonUpdate = Prepreči brskalniku nameščanje in posodablj
 policy-DisableTelemetry = Izključi telemetrijo.
 policy-DisplayBookmarksToolbar = Privzeto prikaži orodno vrstico zaznamkov.
 policy-DisplayMenuBar = Privzeto prikaži vrstico z menijem.
+policy-DNSOverHTTPS = Nastavi DNS preko HTTPS.
 policy-DontCheckDefaultBrowser = Onemogoči preverjanje privzetega brskalnika ob zagonu.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Omogoči ali onemogoči zavračanje vsebine ter ga po potrebi zakleni.
@@ -62,9 +64,12 @@ policy-OverridePostUpdatePage = Preglasi stran "Kaj je novega", ki se odpre po p
 policy-Permissions = Nastavi dovoljenja za kamero, mikrofon, lokacijo in obvestila.
 policy-PopupBlocking = Določenim spletnim stranem dovoli privzeto prikazovanje pojavnih oken.
 policy-Proxy = Nastavi posrednika.
+policy-RequestedLocales = Nastavi vrstni red zahtevanih jezikov za program.
 policy-SanitizeOnShutdown = Ob izhodu počisti vse podatke brskanja.
 policy-SearchBar = Nastavi privzet položaj vrstice za iskanje. Uporabnik ga lahko še vedno prilagodi.
 policy-SearchEngines = Nastavi iskalnike. Ta pravilnik je na voljo le v izdaji Extended Support Release (ESR).
+# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
+policy-SecurityDevices = Namesti module PKCS #11.
 # “format” refers to the format used for the value of this policy. See also:
 # https://github.com/mozilla/policy-templates/blob/master/README.md#websitefilter-machine-only
 policy-WebsiteFilter = Prepreči obisk določenih spletnih mest. Za več podrobnosti o obliki glejte dokumentacijo.

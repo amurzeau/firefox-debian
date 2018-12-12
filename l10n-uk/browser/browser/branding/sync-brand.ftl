@@ -38,8 +38,8 @@
         [nom-lower] обліковий запис Firefox
         [gen] Облікового запису Firefox
         [gen-lower] облікового запису Firefox
-        [dat] Обліковому запису Firefox
-        [dat-lower] обліковому запису Firefox
+        [dat] Обліковому записі Firefox
+        [dat-lower] обліковому записі Firefox
         [acc] Обліковий запис Firefox
         [acc-lower] обліковий запис Firefox
         [abl] Обліковим записом Firefox

@@ -602,8 +602,7 @@ impl<'t> Parser<'t> {
     }
 
     // Returns false if we hit EOF without closing the comment.
-    fn match_multi_line_comment(&mut self) -> bool
-    {
+    fn match_multi_line_comment(&mut self) -> bool {
         loop {
             match self.get_char() {
                 b'*' => {
@@ -856,7 +855,7 @@ impl<'t> Parser<'t> {
                                         } else {
                                             self.string_error_token(
                                                 &mut token,
-                                                "invalid low surrogate value after high surrogate");
+                                                "invalid low surrogate after high surrogate");
                                             continue;
                                         }
                                     }
@@ -866,6 +865,11 @@ impl<'t> Parser<'t> {
                                         &mut token, "expected low surrogate after high surrogate");
                                     continue;
                                 }
+                            } else if 0xdc00 == (0xfc00 & value) {
+                                // Unaccompanied low surrogate value.
+                                self.string_error_token(
+                                    &mut token, "expected high surrogate before low surrogate");
+                                continue;
                             } else if value == 0 {
                                 self.string_error_token(&mut token, "\\u0000 is not allowed");
                                 continue;

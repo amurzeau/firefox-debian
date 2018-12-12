@@ -20,13 +20,23 @@
 
 <!-- Tab context menu -->
 <!ENTITY  reloadTab.label                    "โหลดแท็บใหม่">
-<!ENTITY  reloadTab.accesskey                "ล">
+<!ENTITY  reloadTab.accesskey                "ห">
 <!ENTITY  reloadAllTabs.label                "โหลดแท็บทั้งหมดใหม่">
 <!ENTITY  reloadAllTabs.accesskey            "ง">
+<!ENTITY  selectAllTabs.label                "เลือกแท็บทั้งหมด">
+<!ENTITY  selectAllTabs.accesskey            "ล">
 <!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
 a tab (i.e. it is a verb, not adjective). -->
 <!ENTITY  duplicateTab.label                 "ทำสำเนาแท็บ">
+<!-- LOCALIZATION NOTE (duplicateTab.accesskey, duplicateTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  duplicateTab.accesskey             "ท">
+<!ENTITY  closeTabOptions.label              "ตัวเลือกการปิดแท็บ">
+<!ENTITY  closeTabOptions.accesskey          "ต">
+<!-- LOCALIZATION NOTE (duplicateTabs.label): This is a command to duplicate
+a tab (i.e. it is a verb, not adjective). -->
+<!-- LOCALIZATION NOTE (duplicateTab.accesskey, duplicateTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
 <!-- LOCALIZATION NOTE (closeTabsToTheEnd.label): This should indicate the
 direction in which tabs are closed, i.e. locales that use RTL mode should say
 left instead of right. -->
@@ -38,19 +48,29 @@ left instead of right. -->
 <!ENTITY  closeSelectedTabs.label            "ปิดแท็บที่เลือก">
 <!ENTITY  closeSelectedTabs.accesskey        "ป">
 
+<!ENTITY  closeTabs.label                    "ปิดแท็บ">
+<!ENTITY  closeTabs.accesskey                "ป">
 <!ENTITY  pinSelectedTabs.label              "ปักหมุดแท็บ">
-<!-- Pin Tab and Pin Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
-<!ENTITY  pinSelectedTabs.accesskey          "ห">
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY  pinSelectedTabs.accesskey          "ก">
 <!ENTITY  unpinSelectedTabs.label            "ถอนหมุดแท็บ">
-<!-- Unpin Tab and Unpin Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinSelectedTabs.accesskey        "ถ">
 <!-- Reload Tab and Reload Selected Tabs have the same accesskey
 but will never be visible at the same time. -->
 <!ENTITY  reloadSelectedTabs.label           "โหลดแท็บที่เลือกใหม่">
 <!ENTITY  reloadSelectedTabs.accesskey       "ห">
+<!-- LOCALIZATION NOTE(reloadTab.label, reloadTabs.label): have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  reloadTabs.label                   "โหลดแท็บใหม่">
+<!ENTITY  reloadTabs.accesskey               "ห">
 <!ENTITY  bookmarkSelectedTabs.label         "เพิ่มที่คั่นหน้าสำหรับแท็บ…">
+<!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "พ">
 
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
@@ -59,8 +79,14 @@ left edge of the tabstrip. Really we just want the string to express the idea
 that this is a lightweight and reversible action that keeps your tab where you
 can reach it easily. -->
 <!ENTITY  pinTab.label                       "ปักหมุดแท็บ">
-<!ENTITY  pinTab.accesskey                   "ห">
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY  pinTab.accesskey                   "ก">
 <!ENTITY  unpinTab.label                     "ถอนหมุดแท็บ">
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinTab.accesskey                 "ถ">
 <!ENTITY  sendTabToDevice.label              "ส่งแท็บไปยังอุปกรณ์">
 <!ENTITY  sendTabToDevice.accesskey          "ง">
@@ -68,12 +94,26 @@ can reach it easily. -->
 <!ENTITY  sendPageToDevice.accesskey         "ส">
 <!ENTITY  sendLinkToDevice.label             "ส่งลิงก์ไปยังอุปกรณ์">
 <!ENTITY  sendLinkToDevice.accesskey         "ส">
+<!-- LOCALIZATION NOTE (moveTabOptions.label and moveSelectedTabOptions.label):
+These two items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  moveTabOptions.label               "ย้ายแท็บ">
+<!ENTITY  moveTabOptions.accesskey           "บ">
+<!ENTITY  moveSelectedTabOptions.label       "ย้ายแท็บ">
+<!ENTITY  moveSelectedTabOptions.accesskey   "บ">
+<!ENTITY  moveToStart.label                  "ย้ายไปยังจุดเริ่มต้น">
+<!ENTITY  moveToStart.accesskey              "ย">
+<!ENTITY  moveToEnd.label                    "ย้ายไปยังจุดสิ้นสุด">
+<!ENTITY  moveToEnd.accesskey                "ป">
 <!ENTITY  moveToNewWindow.label              "ย้ายไปยังหน้าต่างใหม่">
 <!ENTITY  moveToNewWindow.accesskey          "ม">
 <!ENTITY  reopenInContainer.label            "เปิดใหม่ในการแยกข้อมูล">
 <!ENTITY  reopenInContainer.accesskey        "ย">
 <!ENTITY  bookmarkAllTabs.label              "เพิ่มที่คั่นหน้าสำหรับแท็บทั้งหมด…">
 <!ENTITY  bookmarkAllTabs.accesskey          "บ">
+<!ENTITY  bookmarkTab.label                  "เพิ่มที่คั่นหน้าสำหรับแท็บ">
+<!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  bookmarkTab.accesskey              "พ">
 <!ENTITY  undoCloseTab.label                 "เลิกทำการปิดแท็บ">
 <!ENTITY  undoCloseTab.accesskey             "ด">
 <!ENTITY  closeTab.label                     "ปิดแท็บ">
@@ -100,6 +140,8 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.accesskey "พ">
 <!ENTITY printCmd.commandkey "p">
 
+<!ENTITY taskManagerCmd.label "ตัวจัดการงาน">
+
 <!ENTITY goOfflineCmd.label "ทำงานออฟไลน์">
 <!ENTITY goOfflineCmd.accesskey "ฟ">
 
@@ -114,6 +156,29 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "ง">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.label "เพิ่มที่คั่นหน้าสำหรับแท็บทั้งหมด…">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "บ">
+
+<!ENTITY toolbarContextMenu.reloadSelectedTab.label "โหลดแท็บที่เลือกใหม่">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
+toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.reloadSelectedTab.accesskey "ห">
+<!ENTITY toolbarContextMenu.reloadSelectedTabs.label "โหลดแท็บที่เลือกใหม่">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
+toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.reloadSelectedTabs.accesskey "ห">
+<!ENTITY toolbarContextMenu.bookmarkSelectedTab.label "เพิ่มที่คั่นหน้าสำหรับแท็บที่เลือก…">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.bookmarkSelectedTab.accesskey,
+toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.bookmarkSelectedTab.accesskey "พ">
+<!ENTITY toolbarContextMenu.bookmarkSelectedTabs.label "เพิ่มที่คั่นหน้าสำหรับแท็บที่เลือก…">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.bookmarkSelectedTab.accesskey,
+toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.bookmarkSelectedTabs.accesskey "พ">
+<!ENTITY toolbarContextMenu.selectAllTabs.label "เลือกแท็บทั้งหมด">
+<!ENTITY toolbarContextMenu.selectAllTabs.accesskey "ล">
 <!ENTITY toolbarContextMenu.undoCloseTab.label "เลิกทำการปิดแท็บ">
 <!ENTITY toolbarContextMenu.undoCloseTab.accesskey "ด">
 
@@ -131,6 +196,7 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 <!ENTITY pageInfoCmd.accesskey "ข">
 <!ENTITY pageInfoCmd.commandkey "i">
 <!ENTITY ldbCmd.label "ตัวดีบั๊กเค้าโครง">
+<!ENTITY ldbCmd.accesskey "ต">
 <!ENTITY mirrorTabCmd.label "สะท้อนแท็บ">
 <!ENTITY mirrorTabCmd.accesskey "ส">
 <!-- LOCALIZATION NOTE (enterFullScreenCmd.label, exitFullScreenCmd.label):
@@ -229,6 +295,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "เปิดแผงคำขอตำแหน่งที่ตั้ง">
 <!ENTITY urlbar.autoplayNotificationAnchor.tooltip        "เปิดแผงการเล่นอัตโนมัติ">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "เปิดแผงข้อความการติดตั้งส่วนเสริม">
+<!ENTITY urlbar.canvasNotificationAnchor.tooltip          "จัดการการอนุญาตการส่งออกผืนผ้าใบ">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "เปิดแผงข้อความที่เก็บข้อมูลออฟไลน์">
 <!ENTITY urlbar.passwordNotificationAnchor.tooltip        "เปิดแผงข้อความบันทึกรหัสผ่าน">
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "จัดการการใช้ปลั๊กอิน">
@@ -254,6 +321,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "คุณได้ปิดกั้นการแจ้งเตือนสำหรับเว็บไซต์นี้">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "คุณได้ปิดกั้นที่เก็บข้อมูลถาวรสำหรับเว็บไซต์นี้">
 <!ENTITY urlbar.popupBlocked.tooltip             "คุณได้ปิดกั้นป๊อปอัปสำหรับเว็บไซต์นี้">
+<!ENTITY urlbar.autoplayMediaBlocked.tooltip     "คุณได้ปิดกั้นการเล่นสื่อพร้อมเสียงโดยอัตโนมัติสำหรับเว็บไซต์นี้">
+<!ENTITY urlbar.canvasBlocked.tooltip            "คุณได้ปิดกั้นการส่งออกข้อมูลผืนผ้าใบสำหรับเว็บไซต์นี้">
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "คุณได้ปิดกั้นเว็บไซต์นี้จากการใช้ปลั๊กอิน Adobe Flash">
 <!ENTITY urlbar.midiBlocked.tooltip              "คุณได้ปิดกั้นการเข้าถึง MIDI สำหรับเว็บไซต์นี้">
 
@@ -310,6 +379,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY webDeveloperMenu.label       "นักพัฒนาเว็บ">
 <!ENTITY webDeveloperMenu.accesskey   "พ">
 
+<!ENTITY devtoolsRecordExecution.label "อัดบันทึกการดำเนินการ">
+<!ENTITY devtoolsSaveRecording.label "บันทึกการอัดบันทึก">
+<!ENTITY devtoolsReplayExecution.label "เล่นการดำเนินการใหม่">
 
 <!ENTITY inspectContextMenu.label     "ตรวจสอบองค์ประกอบ">
 <!ENTITY inspectContextMenu.accesskey "อ">
@@ -551,9 +623,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY reloadFrameCmd.label         "โหลดกรอบใหม่">
 <!ENTITY reloadFrameCmd.accesskey     "ล">
 <!ENTITY viewPartialSourceForSelectionCmd.label "ดูต้นฉบับส่วนที่เลือก">
-<!ENTITY viewPartialSourceForMathMLCmd.label    "ดูต้นฉบับ MathML">
-<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both
-         viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label -->
 <!ENTITY viewPartialSourceCmd.accesskey "ต">
 <!ENTITY viewPageSourceCmd.label      "ดูต้นฉบับหน้า">
 <!ENTITY viewPageSourceCmd.accesskey  "ด">
@@ -770,7 +839,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      Remove Bookmark buttons. -->
 <!ENTITY editBookmark.panel.width                    "23em">
 <!ENTITY editBookmark.done.label                     "เสร็จสิ้น">
-
 <!ENTITY editBookmark.showForNewBookmarks.label       "แสดงตัวแก้ไขเมื่อบันทึก">
 <!ENTITY editBookmark.showForNewBookmarks.accesskey   "ส">
 
@@ -778,6 +846,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      This is the header of the security subview in the Site Identity panel. -->
 <!ENTITY identity.securityView.label "ความปลอดภัยของไซต์">
 
+<!ENTITY identity.connection "การเชื่อมต่อ">
 <!ENTITY identity.connectionSecure "การเชื่อมต่อปลอดภัย">
 <!ENTITY identity.connectionNotSecure "การเชื่อมต่อไม่ปลอดภัย">
 <!ENTITY identity.connectionFile "หน้านี้ถูกจัดเก็บไว้ในคอมพิวเตอร์ของคุณ">
@@ -920,9 +989,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.audioCapture.label "เสียงจากแท็บจะถูกแบ่งปัน">
 <!ENTITY getUserMedia.allWindowsShared.message "หน้าต่างที่ปรากฏอยู่ทั้งหมดบนหน้าจอของคุณจะถูกแบ่งปัน">
 
-<!ENTITY trackingProtection.on "การป้องกันการติดตาม: เปิด">
-<!ENTITY trackingProtection.off "การป้องกันการติดตาม: ปิด">
-
 <!ENTITY contentBlocking.title "การปิดกั้นเนื้อหา">
 <!ENTITY contentBlocking.detected "ตรวจพบเนื้อหาที่สามารถปิดกั้นได้ในไซต์นี้">
 <!ENTITY contentBlocking.notDetected "ไม่พบเนื้อหาที่สามารถปิดกั้นได้ในไซต์นี้">
@@ -937,6 +1003,11 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      a positive thing. It forms the end of the (imaginary) sentence
      "Slow-Loading Trackers [are] Blocked"-->
 <!ENTITY contentBlocking.fastBlock.blocked.label "ถูกปิดกั้น">
+<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.blocking.label):
+     This label signals that this type of content blocking is turned
+     ON, so this is a positive thing. It forms the verb in (imaginary) sentence
+     "Firefox is blocking Slow-Loading Trackers"-->
+<!ENTITY contentBlocking.fastBlock.blocking.label "กำลังปิดกั้น">
 <!-- LOCALIZATION NOTE (contentBlocking.fastBlock.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
@@ -944,12 +1015,18 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.fastBlock.add.label "เพิ่มการปิดกั้น…">
 
 <!ENTITY contentBlocking.trackingProtection2.label "ตัวติดตามที่ตรวจพบทั้งหมด">
+<!ENTITY contentBlocking.trackingProtection3.label "ตัวติดตาม">
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
      This label signals that this type of content blocking is turned
      ON and is successfully blocking tracker content, so this is
      a positive thing. It forms the end of the (imaginary) sentence
      "Trackers [are] Blocked"-->
 <!ENTITY contentBlocking.trackingProtection.blocked.label "ถูกปิดกั้น">
+<!-- LOCALIZATION NOTE (contentBlocking.tranckingProtection.blocking.label):
+     This label signals that this type of content blocking is turned
+     ON, so this is a positive thing. It forms the verb in the (imaginary) sentence
+     "Firefox is blocking Trackers"-->
+<!ENTITY contentBlocking.trackingProtection.blocking.label "กำลังปิดกั้น">
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
@@ -957,12 +1034,18 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection.add.label "เพิ่มการปิดกั้น…">
 
 <!ENTITY contentBlocking.3rdPartyCookies.label "คุกกี้จากบุคคลที่สาม">
+<!ENTITY contentBlocking.3rdPartyCookies.trackers.label "คุกกี้ที่ติดตาม">
 <!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.blocked.label):
      This label signals that this type of content blocking is turned
      ON and is successfully blocking third-party cookies, so this is
      a positive thing. It forms the end of the (imaginary) sentence
      "Third-Party Cookies [are] Blocked"-->
 <!ENTITY contentBlocking.3rdPartyCookies.blocked.label "ถูกปิดกั้น">
+<!-- LOCALIZATION NOTE (contentBlocking.tranckingProtection.blocking.label):
+     This label signals that this type of content blocking is turned
+     ON, so this is a positive thing. It forms the verb in the (imaginary) sentence
+     "Firefox is blocking Third-Party Cookies"-->
+<!ENTITY contentBlocking.3rdPartyCookies.blocking.label "กำลังปิดกั้น">
 <!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
@@ -978,32 +1061,29 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY trackingProtection.title "การป้องกันการติดตาม">
 <!ENTITY trackingProtection.tooltip "เปิดค่ากำหนดการป้องกันการติดตาม">
-<!ENTITY trackingProtection.detectedBlocked4 "&brandShortName; กำลังปิดกั้นบางส่วนของหน้านี้ที่อาจติดตามการท่องเว็บของคุณ">
-<!ENTITY trackingProtection.detectedNotBlocked5 "&brandShortName; ตรวจพบองค์ประกอบที่อาจติดตามการท่องเว็บของคุณ">
-<!ENTITY trackingProtection.detectedException "&brandShortName; ตรวจพบองค์ประกอบที่อาจติดตามการท่องเว็บของคุณ คุณได้ปิดใช้งานการป้องกันสำหรับไซต์นี้">
-<!ENTITY trackingProtection.notDetected5 "ไม่พบองค์ประกอบที่มีการติดตามในหน้านี้">
-<!ENTITY trackingProtection.notDetectedException "ไม่พบองค์ประกอบที่มีการติดตามในหน้านี้ คุณได้ปิดใช้งานการป้องกันสำหรับไซต์นี้">
-
-<!ENTITY trackingProtection.reloadRequired2 "คุณได้เปิดใช้งานการป้องกันการติดตาม โหลดหน้านี้ใหม่เพื่อปิดกั้นตัวติดตามทั้งหมด">
 
 <!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in NON-private browsing mode. -->
-<!ENTITY trackingProtection.unblock3.label "ปิดใช้งานสำหรับไซต์นี้">
-<!ENTITY trackingProtection.unblock3.accesskey "ป">
 <!ENTITY trackingProtection.unblock4.label "ปิดใช้งานการปิดกั้นสำหรับไซต์นี้">
 <!ENTITY trackingProtection.unblock4.accesskey "ป">
 <!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in PRIVATE browsing mode. -->
-<!ENTITY trackingProtection.unblockPrivate3.label "ปิดใช้งานในวาระนี้">
-<!ENTITY trackingProtection.unblockPrivate3.accesskey "ป">
-<!ENTITY trackingProtection.block4.label "เปิดใช้งานสำหรับไซต์นี้">
-<!ENTITY trackingProtection.block4.accesskey "ป">
 <!ENTITY trackingProtection.unblockPrivate4.label "ปิดใช้งานการปิดกั้นชั่วคราว">
 <!ENTITY trackingProtection.unblockPrivate4.accesskey "ป">
 <!ENTITY trackingProtection.block5.label "เปิดใช้งานการปิดกั้นสำหรับไซต์นี้">
 <!ENTITY trackingProtection.block5.accesskey "ป">
+
+<!-- LOCALIZATION NOTE (trackingProtection.unblock5.label, trackingProtection.unblock5.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in NON-private browsing mode. -->
+<!ENTITY trackingProtection.unblock5.label "ปิดการปิดกั้นสำหรับไซต์นี้">
+<!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate6.label, trackingProtection.unblockPrivate6.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in PRIVATE browsing mode. -->
+<!ENTITY trackingProtection.unblockPrivate5.label "ปิดการปิดกั้นชั่วคราว">
+<!ENTITY trackingProtection.block6.label "เปิดการปิดกั้นสำหรับไซต์นี้">
 <!ENTITY trackingProtection.reload2.label "โหลดหน้าใหม่">
 <!ENTITY trackingProtection.reload2.accesskey "ห">
 
@@ -1036,14 +1116,14 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The .mainActionDesc string combined with any of the 4 others is meant to form a complete sentence, e.g. "Proceeding will: Delete Recent Cookies".
      Note also that the deleteCookies, deleteHistory and deleteTabsAndWindows strings include <html:strong> tags for emphasis on the words "Cookies", "History", "Tabs" and "Windows".
      The translation should do the same. -->
-<!ENTITY panicButton.view.mainActionDesc          "การดำเนินการจะ:">
+<!ENTITY panicButton.view.mainActionDesc          "การดำเนินการต่อจะ:">
 <!ENTITY panicButton.view.deleteCookies           "ลบ<html:strong>คุกกี้</html:strong>ล่าสุด">
 <!ENTITY panicButton.view.deleteHistory           "ลบ<html:strong>ประวัติ</html:strong>ล่าสุด">
 <!ENTITY panicButton.view.deleteTabsAndWindows    "ปิด<html:strong>แท็บ</html:strong>และ<html:strong>หน้าต่าง</html:strong>ทั้งหมด">
 <!ENTITY panicButton.view.openNewWindow           "เปิดหน้าต่างว่างใหม่">
 
 <!ENTITY panicButton.view.undoWarning             "การกระทำนี้ไม่สามารถเลิกทำได้">
-<!ENTITY panicButton.view.forgetButton            "ลืมซะ!">
+<!ENTITY panicButton.view.forgetButton            "ลืม!">
 
 <!ENTITY panicButton.thankyou.msg1                "ล้างประวัติล่าสุดของคุณแล้ว">
 <!ENTITY panicButton.thankyou.msg2                "การท่องเว็บปลอดภัย!">
@@ -1109,7 +1189,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY sendToDevice.syncNotReady.label "กำลังซิงค์อุปกรณ์…">
 
 <!ENTITY pageAction.shareUrl.label "แบ่งปัน">
-
 <!ENTITY pageAction.shareMore.label "เพิ่มเติม…">
 
 <!ENTITY libraryButton.tooltip "ดูประวัติ, ที่คั่นหน้าที่บันทึกไว้ และอื่น ๆ">

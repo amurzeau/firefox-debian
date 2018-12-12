@@ -10,8 +10,10 @@
 <!ENTITY returnToPreviousPage.label "Iet atpakaļ">
 <!ENTITY returnToPreviousPage1.label "Iet atpakaļ (ieteicams)">
 <!ENTITY advanced.label "Papildu">
+<!ENTITY continue2.label "Vairāk…">
+<!ENTITY moreInformation.label "Vairāk informācijas">
 
-<!ENTITY continue.label "Turpināt">
+<!ENTITY viewCertificate.label "Aplūkot sertifikātu">
 
 <!-- Specific error messages -->
 
@@ -92,14 +94,20 @@
 
 <!ENTITY certerror.longpagetitle1 "Savienojums nav drošs">
 <!ENTITY certerror.longpagetitle2 "Brīdinājums: Potenciāls drošības risks">
-<!-- Localization note (certerror.introPara, certerror.introPara1) - The text content of the span tag
+<!ENTITY certerror.sts.longpagetitle  "Netika izveidots savienojums: potenciāla drošības problēma">
+<!-- Localization note (certerror.introPara, certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "Lapas <span class='hostname'/> saimnieks ir nepareizi nokonfigurējis savu lapu. Lai pasargātu jūs no informācijas zādzības, &brandShortName; nesavienojas ar šo lapu.">
-
-<!ENTITY certerror.introPara1 "&brandShortName; atklāja iespējamu drošības risku un neturpināja <span class='hostname'/> ielādi. Ja turpināsiet uzbrucēji var nozagt jūsu privāto informāciju, piemēram paroles, epastus vai kredītkartes. ">
+<!ENTITY certerror.introPara2 "&brandShortName; atklāja potenciālus draudus drošībai un nepārgāja uz <span class='hostname'/>. Ja apmeklējat šo vietni, uzbrucēji varētu mēģināt nozagt informāciju, piemēram, jūsu paroles, e-pastus vai kredītkartes datus.">
 
 <!ENTITY certerror.expiredCert.secondPara "Šī iemesls visdrīzāk ir nepareizi nokonfigurēts jūsu datora pulkstenis, kas liedza &brandShortName; izveidot drošu savienojumu.">
+
+<!ENTITY certerror.sts.introPara "&brandShortName; konstatēja potenciālus drošības draudus un nedevās uz <span class='hostname'/>, jo šai vietnei vajadzīgs drošs savienojums.">
+
+<!ENTITY certerror.expiredCert.introPara "&brandShortName; konstatēja problēmu un nedevās uz <span class='hostname'/>. Mājas lapa ir nepareizi konfigurēta vai datora pulkstenis ir iestatīts nepareizā laikā.">
+<!ENTITY certerror.expiredCert.secondPara2 "Iespējams, ka vietnes sertifikāta derīguma termiņš ir beidzies, un tas neļauj &brandShortName; droši savienoties. Ja apmeklēsiet šo vietni, uzbrucēji varētu mēģināt nozagt informāciju, piemēram, jūsu paroles, epastus vai kredītkartes datus.">
+<!ENTITY certerror.expiredCert.sts.secondPara "Iespējams, ka vietnes sertifikāta derīguma termiņš ir beidzies, un tas neļauj &brandShortName; droši savienoties.">
 
 <!ENTITY certerror.whatCanYouDoAboutItTitle "Ko jūs varat darīt?">
 
@@ -107,8 +115,8 @@ was trying to connect. -->
 <p>Problēma visdrīzāk ir saistīta ar mājas lapu un jūs neko nevarat darīt, lai to atrisinātu.</p>
 <p>Ja izmantojat uzņēmuma tīklu vai pretvīrusu programmu, varat lūgt palīdzīgu lietotāju atbalsta nodaļai. Tāpat varat ziņot lapas īpašniekiem par šo problēmu.</p>">
 
-<!ENTITY certerror.expiredCert.whatCanYouDoAboutIt "<p>Jūsu datora pulkstenis ir iestatīts uz <span id='wrongSystemTime_systemDate'/>. Pārliecinieties, ka jūsu datorā ir iestatīts pareizs datums, laiks un laika zona un tad mēģiniet pārlādēt <span class='hostname'/>.</p>
-<p>Ja jūsu datora pulkstenis ir pareizs, visdrīzāk šī ir lapas problēma un vienīgais ko jūs varat darīt ir ziņot lapas administratoram par šo problēmu.</p>">
+<!ENTITY certerror.expiredCert.whatCanYouDoAboutIt2 "<p>Jūsu datora pulkstenis ir iestatīts uz <span id='wrongSystemTime_systemDate2'/>. Pārliecinieties, vai jūsu sistēmas iestatījumos ir iestatīts pareizais datums, laiks un laika josla, un pēc tam atsvaidziniet <span class='hostname'/>.</p>
+<p>Ja jūsu pulkstenis jau ir iestatīts pareizajā laikā, iespējams, ka vietne ir nepareizi konfigurēta, un jūs nevarat neko darīt, lai atrisinātu problēmu. Jūs varat informēt vietnes administratoru par problēmu.</p>">
 
 <!ENTITY certerror.badCertDomain.whatCanYouDoAboutIt "<p>Visdrīzāk šī ir lapas problēma un vienīgais ko jūs varat darīt ir ziņot lapas administratoram par šo problēmu.</p>">
 
@@ -122,6 +130,7 @@ was trying to connect. -->
 
 
 <!ENTITY securityOverride.exceptionButtonLabel "Pieļaut izņēmumu...">
+<!ENTITY securityOverride.exceptionButton1Label "Pieņemt risku un turpināt">
 
 <!ENTITY errorReporting.automatic2 "Ziņojiet par šādām kļūdām Mozilla, lai varētu identificēt un bloķēt kaitnieciskas lapas">
 <!ENTITY errorReporting.learnMore "Uzzināt vairāk…">
@@ -142,6 +151,7 @@ was trying to connect. -->
 
 <!ENTITY certerror.pagetitle1  "Nedrošs savienojums">
 <!ENTITY certerror.pagetitle2  "Brīdinājums: Potenciāls drošības risks">
+<!ENTITY certerror.sts.pagetitle  "Netika izveidots savienojums: potenciāla drošības problēma">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Šī lapa izmanto HTTP Strict Transport Security (HSTS), lai norādītu, ka &brandShortName; pieslēdzas tai tikai drošā režīmā. Šī iemesla dēļ, nav iespējams pievienot sertifikāta izņēmumu šai lapai.">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'></span> izmanto drošības politiku, ko sauc HTTP Strict Transport Security (HSTS), kas nozīmē, ka &brandShortName; var lapai pieslēgties lapai tikai drošajā režīmā. Jūs nevarat pievienot izņēmumu, lai apmeklētu šo lapu.">
 <!ENTITY certerror.copyToClipboard.label "Kopēt tekstu atmiņā">
@@ -153,5 +163,11 @@ was trying to connect. -->
 
 <!ENTITY blockedByPolicy.title "Bloķēta lapa">
 
+<!ENTITY clockSkewError.title "Jūsu datora pulkstenis ir nepareizs">
+<!ENTITY clockSkewError.longDesc "Jūsu dators uzskata, ka tas ir <span id='wrongSystemTime_systemDate1'/>, kas neļauj &brandShortName; droši savienoties. Lai apmeklētu <span class='hostname'></span>, atjauniniet sava datora pulksteni jūsu sistēmas iestatījumos uz pašreizējo datumu, laiku un laika joslu un pēc tam atsvaidziniet <span class='hostname'></span>.">
+
 <!ENTITY prefReset.longDesc "Izskatās, ka jūsu tīkla drošības iestatījumi varētu bū pie vainas. Vai vēlaties atjaunot noklusētos iestatījumus?">
 <!ENTITY prefReset.label "Atjaunot noklusētos iestatījumus">
+
+<!ENTITY networkProtocolError.title "Tīkla protokola kļūda">
+<!ENTITY networkProtocolError.longDesc "<p>Lapu, kuru mēģināt skatīt, nevar tikt parādīta, jo tika konstatēta tīkla protokola kļūda.</p><ul><li>Lūdzu, sazinieties ar vietņu īpašniekiem, lai informētu viņus par šo problēmu.</li></ul>">

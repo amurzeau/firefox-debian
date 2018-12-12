@@ -15,7 +15,7 @@ This is likely the same like id.heading in aboutcrashes.ftl. -->
 <!ENTITY aboutSupport.crashes.allReports "تمام کریش رپورٹیں">
 <!ENTITY aboutSupport.crashes.noConfig "یہ ایپلی کیشن کریش رپورٹیں دکھانے کے لیے تشکیل کردہ نہیں ہے۔">
 
-<!ENTITY aboutSupport.extensionsTitle "توسیعات">
+<!ENTITY aboutSupport.extensionsTitle "ایکسٹینشن">
 <!ENTITY aboutSupport.extensionName "نام">
 <!ENTITY aboutSupport.extensionEnabled "اہل بنایا گیا">
 <!ENTITY aboutSupport.extensionVersion "ورژن">
@@ -62,7 +62,7 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 
 <!ENTITY aboutSupport.appBasicsProfiles "پروفا ئلز">
 
-<!ENTITY aboutSupport.appBasicsMultiProcessSupport "ملٹی عمل دریچہ">
+<!ENTITY aboutSupport.appBasicsMultiProcessSupport "ملٹی عمل ونڈوں">
 
 <!ENTITY aboutSupport.appBasicsProcessCount "ویب مواد پروسیسنگ">
 
@@ -153,7 +153,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.mediaDeviceLatency "لیٹینسی">
 
 <!ENTITY aboutSupport.intlTitle "انٹرنیشنلائزیشن &amp; لوکلائزیشن">
-<!ENTITY aboutSupport.intlAppTitle "ایپلی کیشن سیٹنگیں">
+<!ENTITY aboutSupport.intlAppTitle "ایپلیکیشن ترتیبات">
 <!ENTITY aboutSupport.intlLocalesRequested "درخواست کی گئی زبانات">
 <!ENTITY aboutSupport.intlLocalesAvailable "دستیاب زبانات">
 <!ENTITY aboutSupport.intlLocalesSupported "ایپ کی زبانیں">

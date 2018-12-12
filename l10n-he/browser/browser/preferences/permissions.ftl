@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = חסום
 permissions-capabilities-prompt =
     .label = לשאול תמיד
+permissions-capabilities-listitem-allow =
+    .value = הרשה
+permissions-capabilities-listitem-block =
+    .value = חסום
+permissions-capabilities-listitem-allow-first-party =
+    .value = הרשאה לצד ראשון בלבד
+permissions-capabilities-listitem-allow-session =
+    .value = הרשה למשך ההפעלה
 
 ## Invalid Hostname Dialog
 
@@ -85,10 +93,6 @@ permissions-exceptions-addons-desc = באפשרותך לציין לאלו אתר
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = אתרים מורשים - ניגון אוטומטי
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = באפשרותך לציין לאלו אתרים מותר לנגן באופן אוטומטי רכיבי מדיה. הקלד את הכתובת המדויקת של האתר שברצונך להרשות ואז לחץ על הרשה.
 permissions-exceptions-autoplay-media-window2 =
     .title = חריגות - ניגון אוטומטי
     .style = { permissions-window.style }

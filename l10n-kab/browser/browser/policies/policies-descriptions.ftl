@@ -18,6 +18,7 @@ policy-BlockAboutProfiles = Sewḥel anekcum ɣer usebter n about:profiles.
 policy-BlockAboutSupport = Sewḥel anekcum ɣer usebter n about:support.
 policy-Bookmarks = Rnu ticraḍ n isebtar deg ufeggag n tecraḍ, Umuɣ n tecraḍ n yisebtar, neɣ deg akaram yellan deg-sen.
 policy-Certificates = Ma yella ad tesqedceḍ iselkinen usliɣen neɣ ala. Akka tura tasertit-agi n Windows.
+policy-CertificatesDescription = Rnu iselkinen neɣ seqdec iselkinen usliɣen.
 policy-Cookies = Sireg neɣ gdel asbadu n inagan n tuqqna i yisebtar.
 policy-DisableAppUpdate = Sewḥel aleqqem n yiminig.
 policy-DisableBuiltinPDFViewer = Sens PDF.js, ameskan PDF usliɣ deg { -brand-short-name }.
@@ -42,6 +43,7 @@ policy-DisableSystemAddonUpdate = Sewḥel asbedded d uleqqem izegrar n unagraw 
 policy-DisableTelemetry = Sens tilisɣelt.
 policy-DisplayBookmarksToolbar = Deg umezwer sken-d afeggag n ifecka n ticraḍ.
 policy-DisplayMenuBar = Sken afeggag n wumuɣ s wudem amezwer.
+policy-DNSOverHTTPS = Swel DNS s HTTPS.
 policy-DontCheckDefaultBrowser = Sens asenqed amezwer i yiminig deg tnekra.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Rmed neɣ sens asewḥel n ugbur u sekker-it ma tebɣiḍ.
@@ -62,9 +64,12 @@ policy-OverridePostUpdatePage = Beddel asebter "Acu-t amaynut" seld aleqqem. sba
 policy-Permissions = Swel tisirag i tkamirat, asawaḍ, adig akked ilɣa.
 policy-PopupBlocking = Sireg kra n ismal web ad skanayen Isfuyla udhimens wudem amezwer.
 policy-Proxy = Swel iɣewwaṛen n upṛuksi.
+policy-RequestedLocales = Sbadu tabdart n tutlayin yettwasutren akken i tesmenyafeḍ
 policy-SanitizeOnShutdown = Sfeḍ akk isefka n tunigin deg usexsi.
 policy-SearchBar = Sbadu adig imezwer n ufeggag n unadi. Aseqdac izmer ad t-isagen.
 policy-SearchEngines = Swel iƔewwaren n umsedday n unadi. Tasertit-agi tella kan di lqem Extended Support Release (ESR).
+# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
+policy-SecurityDevices = Sebded izegrar n PKCS #11.
 # “format” refers to the format used for the value of this policy. See also:
 # https://github.com/mozilla/policy-templates/blob/master/README.md#websitefilter-machine-only
 policy-WebsiteFilter = Sewḥel anekcum Ɣer ismal web. Wali tasemlit i wugar n telqayt Ɣef umasal.

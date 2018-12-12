@@ -40,7 +40,7 @@
 
 <!-- point 4 text for unbranded builds -->
 <!ENTITY rights.intro-point4a-unbranded "Dacă produsul acesta include servicii web, orice termeni aplicabili serviciilor ar trebui să fie accesibili în secțiunea ">
-<!ENTITY rights.intro-point4b-unbranded "Servicii ale site-urilor web">
+<!ENTITY rights.intro-point4b-unbranded "Servicii pentru site-uri web">
 <!ENTITY rights.intro-point4c-unbranded ".">
 
 <!ENTITY rights2.webservices-header "Servicii de informare bazate pe web folosite în &brandFullName;">
@@ -61,24 +61,24 @@
 <!ENTITY rights.safebrowsing-a "Navigare în siguranță: ">
 <!ENTITY rights.safebrowsing-b "Dezactivarea funcționalității Navigare în siguranță nu este recomandată deoarece ar putea avea ca rezultat accesarea de site-uri nesigure.  Dacă doriți să dezactivați această funcționalitate, urmați acești pași:">
 <!ENTITY rights.safebrowsing-term1 "Deschide preferințele aplicației">
-<!ENTITY rights.safebrowsing-term2 "Selectează secțiunea Securitate">
+<!ENTITY rights.safebrowsing-term2 "Selectează setările de securitate">
 <!ENTITY rights2.safebrowsing-term3 "Deselectează opțiunea „&enableSafeBrowsing.label;”">
 <!ENTITY rights.safebrowsing-term4 "Navigarea în siguranță este acum dezactivată">
 
 <!-- location aware browsing points for branded builds -->
 <!ENTITY rights.locationawarebrowsing-a "Navigare conștientă de locație: ">
-<!ENTITY rights.locationawarebrowsing-b "este întotdeauna opțională.  Nu sunt transmise informații referitoare la locație niciodată fără permisiunea ta.  Dacă dorești să dezactivezi această funcționalitate complet, urmează acești pași:">
-<!ENTITY rights.locationawarebrowsing-term1a "În bara de adrese tastați ">
+<!ENTITY rights.locationawarebrowsing-b "este întotdeauna opțională.  Informațiile despre locație nu sunt niciodată transmise fără permisiunea dumneavoastră.  Dacă doriți să dezactivați complet această funcționalitate, urmați pașii de mai jos:">
+<!ENTITY rights.locationawarebrowsing-term1a "Scrie în bara de adrese ">
 <!ENTITY rights.locationawarebrowsing-term1b "about:config">
-<!ENTITY rights.locationawarebrowsing-term2 "Tastați geo.enabled în câmpul de căutare">
-<!ENTITY rights.locationawarebrowsing-term3 "Clic dublu pe preferința geo.enabled">
+<!ENTITY rights.locationawarebrowsing-term2 "Scrie geo.enabled în câmpul de căutare">
+<!ENTITY rights.locationawarebrowsing-term3 "Dă clic dublu pe preferința geo.enabled">
 <!ENTITY rights.locationawarebrowsing-term4 "Navigarea conștientă de locație este acum dezactivată">
 
 <!-- intro paragraph for unbranded builds -->
-<!ENTITY rights.webservices-unbranded "O privire de ansamblu a serviciilor de informare asupra site-urilor pe care acest produs le include împreună cu instrucțiuni cum pot fi dezactivate, dacă e cazul, ar trebui incluse aici.">
+<!ENTITY rights.webservices-unbranded "Aici trebuie incluse prezentarea generală a serviciilor înglobate în produs pentru site-uri web și instrucțiunile aferente de dezactivare, dacă este cazul.">
 
 <!-- point 1 text for unbranded builds -->
-<!ENTITY rights.webservices-term1-unbranded "Aici ar trebui listați orice termeni aplicabili serviciului pentru acest produs.">
+<!ENTITY rights.webservices-term1-unbranded "Aici trebuie enumerați orice termeni de utilizare a serviciilor aplicabili produsului.">
 
 <!-- points 1-7 text for branded builds -->
 <!ENTITY rights2.webservices-term1 "&vendorShortName; și contribuitorii, licențiatorii și partenerii săi lucrează pentru a oferi cele mai precise și actualizate Servicii.  Totuși, nu putem garanta că aceste informații sunt complete sau lipsite de erori. De exemplu, serviciul Navigare în siguranță ar putea să nu identifice unele site-uri riscante și ar putea identifica greșit unele site-uri sigure ca fiind riscante, iar locațiile furnizate de serviciul conștient de locație sunt doar estimative și nici noi, nici furnizorii noștri nu garantează acuratețea locațiilor oferite.">

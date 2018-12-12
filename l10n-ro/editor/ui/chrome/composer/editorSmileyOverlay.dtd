@@ -1,9 +1,9 @@
 <!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<!-- Smiley Menu items -->
 
-<!ENTITY insertSmiley.label "Zâmbăreț">
+<!-- Smiley Menu items -->
+<!ENTITY insertSmiley.label "Emoticon">
 <!ENTITY insertSmiley.accesskey "Z">
 
 <!ENTITY smiley1Cmd.label "Zâmbitor">
@@ -55,4 +55,3 @@
 <!ENTITY smiley16Cmd.accesskey "b">
 <!ENTITY smiley16Cmd.tooltip "Inserează o figură cu buzele pecetluite">
 <!ENTITY SmileButton.tooltip "Inserează o figură zâmbitoare">
-

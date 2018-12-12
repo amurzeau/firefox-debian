@@ -7,15 +7,15 @@ Subject: Fix CPU_ARCH test for libjpeg on mips
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/media/libjpeg/moz.build b/media/libjpeg/moz.build
-index 910d89ddef0e..aaa41d6f758c 100644
+index 7a9d68892d5b..452684480331 100644
 --- a/media/libjpeg/moz.build
 +++ b/media/libjpeg/moz.build
-@@ -83,7 +83,7 @@ if CONFIG['LIBJPEG_TURBO_ASFLAGS']:
-             'simd/jsimd_arm64.c',
-             'simd/jsimd_arm64_neon.S',
+@@ -89,7 +89,7 @@ if CONFIG['LIBJPEG_TURBO_ASFLAGS']:
+             'simd/arm64/jsimd.c',
+             'simd/arm64/jsimd_neon.S',
          ]
 -    elif CONFIG['CPU_ARCH'] == 'mips':
 +    elif CONFIG['CPU_ARCH'] == 'mips32':
          SOURCES += [
-             'simd/jsimd_mips.c',
-             'simd/jsimd_mips_dspr2.S',
+             'simd/mips/jsimd.c',
+             'simd/mips/jsimd_dspr2.S',

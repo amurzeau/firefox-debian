@@ -6,19 +6,19 @@
 <!ENTITY window.width                     "32em">
 
 <!ENTITY alertCustomization.intro         "Alege care câmpuri să fie afișate în notificare:">
-<!ENTITY previewText.label                "Previzualizarea textului din mesaj">
+<!ENTITY previewText.label                "Text de previzualizare a mesajului">
 <!ENTITY previewText.accesskey            "m">
 <!ENTITY subject.label                    "Subiectul">
 <!ENTITY subject.accesskey                "S">
 <!ENTITY sender.label                     "Expeditorul">
 <!ENTITY sender.accesskey                 "E">
+
 <!-- LOCALIZATION NOTE: totalOpenTimeBefore.label is displayed first, then
 there's a field where the user can enter a number, and totalOpenTimeEnd.label
 is displayed at the end of the line. The translations of the
 totalOpenTimeBefore.label and totalOpenTimeEnd.label parts don't have to mean
 the exact same thing as in English; please try instead to translate the whole
 sentence. -->
-
-<!ENTITY  totalOpenTimeBefore.label       "Arată alerta de mesaj nou pentru">
+<!ENTITY  totalOpenTimeBefore.label       "Afișează alerta de mesaj nou timp de">
 <!ENTITY  totalOpenTimeBefore.accesskey   "n">
 <!ENTITY  totalOpenTimeEnd.label          "secunde">

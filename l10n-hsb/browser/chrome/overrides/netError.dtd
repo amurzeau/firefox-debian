@@ -10,9 +10,10 @@
 <!ENTITY returnToPreviousPage.label "Wróćo hić">
 <!ENTITY returnToPreviousPage1.label "Wróćo (doporučeny)">
 <!ENTITY advanced.label "Rozšěrjene">
-
 <!ENTITY continue2.label "Wjace…">
 <!ENTITY moreInformation.label "Dalše informacije">
+
+<!ENTITY viewCertificate.label "Certifikat pokazać">
 
 <!-- Specific error messages -->
 
@@ -89,14 +90,20 @@
 
 <!ENTITY certerror.longpagetitle1 "Waš zwisk wěsty njeje">
 <!ENTITY certerror.longpagetitle2 "Warnowanje: Potencielne wěstotne riziko prědku">
+<!ENTITY certerror.sts.longpagetitle  "Njeje so zwjazało: Potencielny wěstotny problem">
 <!-- Localization note (certerror.introPara, certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "Mějićel <span class='hostname'/> je swoje websydło wopak konfigurował. Zo byšće swoje informacije přećiwo tomu škitał, zo so kradnu, njeje &brandShortName; z tutym websydłom zwjazał.">
-
 <!ENTITY certerror.introPara2 "&brandShortName; je potencielne wohroženje wěstoty a njeje tohodla zwjazał z <span class='hostname'/>. Jeli so tute sydło wopytujeće, móhli nadpadnicy spytać, daty kaž waše hesło, e-mejlowe adresy abo podrobnosće kreditnych kartow kradnyć.">
 
 <!ENTITY certerror.expiredCert.secondPara "Tutón problem so najskerje zawinuje, dokelž časnik wašeho ličaka wopačny čas wužiwa, štož &brandShortName; při wěstym zwjazowanju haći.">
+
+<!ENTITY certerror.sts.introPara "&brandShortName; je potencielne wěstotne wohroženje wotkrył a přetorhny zwisk z <span class='hostname'/>, dokelž sej tute websydło wěsty zwisk wužaduje.">
+
+<!ENTITY certerror.expiredCert.introPara "&brandShortName; je problem wotkrył a přetorhny zwisk z <span class='hostname'/>. Websydło je pak wopak skonfigurowane abo časnik wašeho ličaka je na wopačny čas nastajeny.">
+<!ENTITY certerror.expiredCert.secondPara2 "Najskerje je certifikat websydła spadnjeny, kotryž &brandShortName; při wěstym zwjazowanju haći. Jeli tute sydło wopytujeće, móža nadpadnicy daty kaž waše hesła, e-mejlki abo daty kreditneje karty kradnyć.">
+<!ENTITY certerror.expiredCert.sts.secondPara "Najskerje je certifikat websydła spadnjeny, kotryž &brandShortName; při wěstym zwjazowanju haći.">
 
 <!ENTITY certerror.whatCanYouDoAboutItTitle "Što móžeće přećiwo tomu činić?">
 
@@ -119,7 +126,6 @@ was trying to connect. -->
 
 
 <!ENTITY securityOverride.exceptionButtonLabel "Wuwzaće přidać…">
-
 <!ENTITY securityOverride.exceptionButton1Label "Riziko akceptować a pokročować">
 
 <!ENTITY errorReporting.automatic2 "Zdźělće zmylki kaž tute, zo byšće Mozilla pomhał, złowólne sydła identifikował a blokował">
@@ -141,6 +147,7 @@ was trying to connect. -->
 
 <!ENTITY certerror.pagetitle1  "Njewěsty zwisk">
 <!ENTITY certerror.pagetitle2  "Warnowanje: Potencielne wěstotne riziko prědku">
+<!ENTITY certerror.sts.pagetitle  "Njeje so zwjazało: Potencielny wěstotny problem">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Tute sydło wužiwa HTTP Strict Transport Security (HSTS), zo by podało, zo &brandShortName; ma jenož wěsće z nim zwjazać. Potajkim njeje móžno, wuwzaće za tutón certifikat přidać.">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'></span> ma wěstotne prawidło z mjenom HTTP Strict Transport Security (HSTS), kotrež woznamjenja, zo &brandShortName; móže so jenož wěsće zwjazać. Njemóžeće wuwzaće přidać, zo byšće tute sydło wopytał.">
 <!ENTITY certerror.copyToClipboard.label "Tekst do mjezyskłada kopěrować">
@@ -157,3 +164,6 @@ was trying to connect. -->
 
 <!ENTITY prefReset.longDesc "Zda so, zo waše nastajenja syćoweje wěstoty móhli to zawinować. Chceće standardne nastajenja wobnowić?">
 <!ENTITY prefReset.label "Standardne nastajenja wobnowić">
+
+<!ENTITY networkProtocolError.title "Zmylk syćoweho protokola">
+<!ENTITY networkProtocolError.longDesc "<p>Strona, kotruž pospytujeće sej wobhladać, njeda so pokazać, dokelž je so zmylk w syćowym protokolu namakał.</p><ul><li>Prošu stajće so z wobsedźerjemi websydła do zwiska, zo byšće jich wo tutym problemje informował.</li></ul>">

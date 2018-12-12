@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = Chặn
 permissions-capabilities-prompt =
     .label = Luôn luôn hỏi
+permissions-capabilities-listitem-allow =
+    .value = Cho phép
+permissions-capabilities-listitem-block =
+    .value = Chặn
+permissions-capabilities-listitem-allow-first-party =
+    .value = Chỉ chấp nhận bên thứ nhất
+permissions-capabilities-listitem-allow-session =
+    .value = Cho phép theo Phiên
 
 ## Invalid Hostname Dialog
 
@@ -54,9 +62,17 @@ permissions-exceptions-tracking-protection-window =
     .title = Ngoại lệ - Chống theo dõi
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = Bạn đã tắt chế độ chống theo dõi ở các trang web này.
+permissions-exceptions-content-blocking-window =
+    .title = Ngoại lệ - Chặn nội dung
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = Bạn đã tắt tính năng chặn nội dung trên các trang web này.
 
 ## Exceptions - Cookies
 
+permissions-exceptions-cookie-window =
+    .title = Ngoại lệ - Cookie và dữ liệu trang web
+    .style = { permissions-window.style }
+permissions-exceptions-cookie-desc = Bạn có thể chỉ định trang web nào luôn hoặc không bao giờ được phép sử dụng cookie và dữ liệu trang web. Nhập địa chỉ chính xác của trang web bạn muốn quản lý và sau đó nhấp vào Chặn, Chỉ cho phép với phiên này hoặc Cho phép.
 
 ## Exceptions - Pop-ups
 
@@ -78,6 +94,13 @@ permissions-exceptions-addons-window =
     .title = Những trang được cho phép - Cài đặt tiện ích
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = Bạn có thể chỉ định trang web nào được phép cài tiện ích. Gõ chính xác địa chỉ trang bạn muốn cho phép và sau đó nhấp Cho phép.
+
+## Exceptions - Autoplay Media
+
+permissions-exceptions-autoplay-media-window2 =
+    .title = Ngoại lệ - Tự động phát
+    .style = { permissions-window.style }
+permissions-exceptions-autoplay-media-desc2 = Bạn có thể chỉ định trang web nào luôn hoặc không bao giờ được phép tự động phát phương tiện với âm thanh. Nhập địa chỉ của trang web bạn muốn quản lý và sau đó nhấp vào Chặn hoặc Cho phép.
 
 ## Site Permissions - Notifications
 

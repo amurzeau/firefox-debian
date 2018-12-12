@@ -18,6 +18,7 @@ policy-BlockAboutProfiles = Bac inntrigeadh dhan duilleag about:profiles.
 policy-BlockAboutSupport = Bac inntrigeadh dhan duilleag about:support.
 policy-Bookmarks = Cruthaich comharran-lìn air bàr-inneal nan comharran-lìn, ann an clàr-taice nan comharran-lìn no ann am pasgan sònraichte ’nam broinn.
 policy-Certificates = An dèid teisteanasan built-in a chleachdadh gus nach dèid. ’S ann air Windows a-mhàin a gheibhear am poileasaidh seo aig an àm seo.
+policy-CertificatesDescription = Cuir teisteanasan ris no cleachd teisteanasan a tha ’na bhroinn o thùs.
 policy-Cookies = Thoir cead do làraichean-lìn briosgaidean a shuidheachadh no bac iad.
 policy-DisableAppUpdate = Bac ùrachadh a’ bhrabhsair.
 policy-DisableBuiltinPDFViewer = Cuir PDF.js à comas, an sealladair PDF a tha am broinn { -brand-short-name } o thùs.
@@ -32,3 +33,43 @@ policy-DisableFormHistory = Na cuimhnich eachdraidh nan lorg is nam foirmean.
 policy-DisableMasterPasswordCreation = Ma thagh thu true, cha ghabh maighstir facail-fhaire a chruthachadh.
 policy-DisablePocket = Cuir à comas an gleus a shàbhaileas duilleagan-lìn ann am Pocket.
 policy-DisablePrivateBrowsing = Cuir am brabhsadh prìobhaideach à comas.
+policy-DisableProfileImport = Cuir an àithne airson dàta ion-phortadh o bhrabhsair eile à comas.
+policy-DisableProfileRefresh = Cuir am putan “Ath-nuadhaich { -brand-short-name }” à comas air an duilleag about:support.
+policy-DisableSafeMode = Cuir ath-thòiseachadh sa mhodh sàbhailte à comas. An aire: Cha ghabh dùsgadh a’ mhodh shàbhailte leis an iuchair Shift a chur à comas air Windows ach slighe poileasaidh buidhinn.
+policy-DisableSecurityBypass = Na leig leis a’ chleachdaiche cuid a rabhaidhean tèarainteachd a leigeil seachad.
+policy-DisableSetDesktopBackground = Cuir à comas àithne “Suidhich an dealbh mar chùlaibh an desktop” a’ chlàir-thaice.
+policy-DisableSetAsDesktopBackground = Cuir à comas àithne “Suidhich mar chùlaibh an desktop” a’ chlàir-thaice mu choinneamh dhealbhan.
+policy-DisableSystemAddonUpdate = Na leig leis a’ bhrabhsair tuilleadan an t-siostaim a stàladh is ùrachadh.
+policy-DisableTelemetry = Cuir an telemeatraidh dheth.
+policy-DisplayBookmarksToolbar = Seall bàr-inneal nan comharran-lìn a ghnàth.
+policy-DisplayMenuBar = Seall bàr a’ chlàir-thaice a ghnàth.
+policy-DNSOverHTTPS = Rèitich DNS slighe HTTPS.
+policy-DontCheckDefaultBrowser = Na sgrùd an e seo am brabsair bunaiteach aig àm tòiseachaidh.
+# “lock” means that the user won’t be able to change this setting
+policy-EnableTrackingProtection = Cuir bacadh susbaint an comas no à comas no glais e.
+# A “locked” extension can’t be disabled or removed by the user. This policy
+# takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
+# English or translate them as verbs. See also:
+# https://github.com/mozilla/policy-templates/blob/master/README.md#extensions-machine-only
+policy-Extensions = Stàlaich, dì-stàlaich no glais leudachain. Gabhaidh an stàladh ri URLaichean is slighean mar pharamadairean. Gabhaidh an dì-stàladh no glasadh ri IDan leudachan.
+policy-FlashPlugin = Ceadaich no diùlt cleachdadh a’ phlugain Flash.
+policy-HardwareAcceleration = Ma tha seo false, cuiridh seo dheth luathachadh a’ bhathair-chruaidh.
+# “lock” means that the user won’t be able to change this setting
+policy-Homepage = Suidhich an duilleag-dhachaigh agus, ma throgras tu, glais e.
+policy-InstallAddonsPermission = Thoir cead do làraichean-lìn àraidh tuilleadan a stàladh.
+policy-NoDefaultBookmarks = Cuir à comas cruthachadh nan comharran-lìn bunaiteach a thig le { -brand-short-name } agus nan comharran-lìn tapaidh (Na thadhail thu air, Tagaichean o chionn goirid). An Aire: Cha bhi am poileasadh seo an sàs ach ma thèid a chleachdadh mus ruith a’ phròifil a’ chiad turas.
+policy-OfferToSaveLogins = Sparr an roghainn air daoine airson comas a thoirt dha { -brand-short-name } clàradh a-steach agus facal-faire a chuimhneachadh. Tha an dà chuid true agus false ceadaiche mar luach.
+policy-OverrideFirstRunPage = Tar-àithn duilleag na ciad ruith. Fàg am poileasaidh seo bàn ma tha thu airson duilleag na ciad ruith a chur à comas.
+policy-OverridePostUpdatePage = Tar-àithn an duilleag “Na tha ùr” a nochdas an cois ùrachaidh. Fàg am poileasaidh seo bàn ma tha thu airson an duilleag sin a chur à comas.
+policy-Permissions = Rèitich ceadan a’ chamara, a’ mhicreofon, an ionaid agus nam brathan.
+policy-PopupBlocking = Leig le làraichean-lìn àraidh priob-uinneagan a nochdadh a ghnàth.
+policy-Proxy = Rèitich roghainnean a’ phrogsaidh.
+policy-RequestedLocales = Suidhich liosta nan cànan a tha ’gan iarraidh san aplacaid san òrdugh sa bheilear ’gan iarraidh.
+policy-SanitizeOnShutdown = Falamhaich dàta air fad na seòladaireachd nuair a dhùinear an aplacaid.
+policy-SearchBar = Suidhich ionad bunaiteach bàr nan lorg. ’S urrainn do chleachdaichean a ghnàthachadh fhathast.
+policy-SearchEngines = Rèitich roghainnean an einnsein-luirg. Chan eil am poileasaidh seo ri fhaighinn ach san tionndadh Extended Support Release (ESR).
+# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
+policy-SecurityDevices = Stàlaich mòidealan PKCS #11.
+# “format” refers to the format used for the value of this policy. See also:
+# https://github.com/mozilla/policy-templates/blob/master/README.md#websitefilter-machine-only
+policy-WebsiteFilter = Bac làraichean-lìn àraidh. Faic an docamaideadh airson barrachd fiosrachaidh mun fhòrmat.

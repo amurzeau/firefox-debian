@@ -53,6 +53,7 @@ pane-sync-title = Firefox ખાતુ
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } આધાર
+addons-button-label = એક્સ્ટેન્શન્સ અને થીમ્સ
 focus-search =
     .key = f
 close-button =
@@ -148,6 +149,9 @@ open-new-link-as-tabs =
     .accesskey = w
 warn-on-close-multiple-tabs =
     .label = તમને બહુવિધ ટેબ્સ બંધ કરતી વખતે ચેતવશે
+    .accesskey = m
+warn-on-quit-close-multiple-tabs =
+    .label = તમને બહુવિધ ટેબ્સમાંથી બહાર નીકળતી વખતે અને બંધ કરતી વખતે ચેતવશે
     .accesskey = m
 warn-on-open-many-tabs =
     .label = તમને ચેતવે છે જ્યારે ઘણી ટેબ્સ ખોલવાનું ધીમું થઈ જાય અને { -brand-short-name }
@@ -284,6 +288,9 @@ update-application-use-service =
 update-enable-search-update =
     .label = આપમેળે શોધ એન્જિન અપડેટ કરો
     .accesskey = e
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = પસંદગી સાચવવામાં અસમર્થ. ફાઇલ પર લખી શકાયુ નહી: { $path }
 
 ## General Section - Performance
 
@@ -323,10 +330,13 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = જ્યારે તમે ટાઇપ કરવાનું શરૂ કરો ત્યારે ટેક્સ્ટ માટે શોધો
     .accesskey = x
+browsing-cfr-recommendations =
+    .label = તમે બ્રાઉઝ કરો ત્યારે એક્સ્ટેન્શન્સની ભલામણ કરો
+    .accesskey = R
+browsing-cfr-recommendations-learn-more = વધુ શીખો
 
 ## General Section - Proxy
 
-network-proxy-title = નેટવર્ક પ્રોક્સી
 network-settings-title = નેટવર્ક સેટિંગ્સ
 network-proxy-connection-description = કેવી રીતે { -brand-short-name } ઇન્ટરનેટ સાથે જોડાય છે તે ગોઠવો.
 network-proxy-connection-learn-more = વધુ શીખો
@@ -525,6 +535,7 @@ privacy-header = બ્રાઉઝર ગોપનીયતા
 ## Privacy Section - Forms
 
 forms-header = ફોર્મ્સ & પાસવર્ડ્સ
+logins-header = લૉગ-ઇન્સ અને પાસવર્ડ્સ
 forms-ask-to-save-logins =
     .label = વેબસાઇટ્સ માટે લૉગિન અને પાસવર્ડ્સ સાચવવા માટે પૂછો
     .accesskey = r
@@ -591,26 +602,15 @@ sitedata-total-size-calculating = સાઇટ ડેટા અને કેશ 
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = તમારી સંગ્રહિત કૂકીઝ, સાઇટ ડેટા અને કેશ હાલમાં { $value } { $unit } જગ્યા નો ઉપયોગ કરી રહ્યાં છે.
 sitedata-learn-more = વધુ શીખો
-sitedata-accept-cookies-option =
-    .label = વેબસાઇટ્સથી કૂકીઝ અને સાઇટ ડેટાને સ્વીકારો (ભલામણ કરેલ).
-    .accesskey = A
-sitedata-block-cookies-option =
-    .label = કૂકીઝ અને સાઇટ ડેટાને અવરોધિત કરો (વેબસાઇટ્સને બંધ કરવા કારણ બની શકે છે)
-    .accesskey = B
 sitedata-keep-until = ત્યાં સુધી રાખો
     .accesskey = u
 sitedata-keep-until-expire =
     .label = સમાપ્ત થાયા
 sitedata-keep-until-closed =
     .label = { -brand-short-name } બંધ છે
-sitedata-accept-third-party-desc = તૃતીય-પક્ષ કૂકીઝ અને સાઇટ ડેટાને સ્વીકારો
-    .accesskey = y
-sitedata-accept-third-party-always-option =
-    .label = હંમેશા
-sitedata-accept-third-party-visited-option =
-    .label = મુલાકાત લીધેલ
-sitedata-accept-third-party-never-option =
-    .label = ક્યારેય નહિં
+sitedata-delete-on-close =
+    .label = { -brand-short-name } બંધ હોય ત્યારે કૂકીઝ અને સાઇટ માહિતી કાઢી નાખો
+    .accesskey = c
 sitedata-allow-cookies-option =
     .label = કૂકીઝ અને સાઇટ ડેટાને સ્વીકારો
     .accesskey = A
@@ -644,6 +644,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = સામગ્રી અવરોધમાંની તમારી સેટિંગ્સ કૂકીઝ અને સાઇટ માહિતી સેટિંગ્સમાં ફેરફારોને અટકાવી રહી છે.
+sitedata-cookies-permissions =
+    .label = પરવાનગીઓ મેનેજ કરો...
+    .accesskey = P
 
 ## Privacy Section - Address Bar
 
@@ -684,6 +687,25 @@ content-blocking-fastblock-slow-loading-trackers-label =
     .label = ધીરેથી લોડ થતાં ટ્રેકર્સ
     .accesskey = S
 content-blocking-fastblock-new-description = ફક્ત એજ ટ્રેકર્સને અવરોધિત કરો કે જે પાનાંને ઝડપથી ખોલવાથી અટકાવે છે.
+content-blocking-setting-standard =
+    .label = પ્રમાણભૂત
+    .accesskey = d
+content-blocking-setting-strict =
+    .label = સખત
+    .accesskey = r
+content-blocking-setting-custom =
+    .label = વૈવિધ્યપૂર્ણ
+    .accesskey = C
+content-blocking-standard-desc = સુરક્ષા અને પ્રદર્શન માટે સંતુલિત છે. કેટલાક ટ્રેકર્સને મંજૂરી આપે છે જેથી વેબસાઇટ્સ યોગ્ય રીતે કાર્ય કરે.
+content-blocking-custom-desc = શું અવરોધિત છે તે પસંદ કરો
+content-blocking-private-trackers = ખાનગી વિન્ડોઝમાં ફક્ત જાણીતા ટ્રૅકર્સ
+content-blocking-third-party-cookies = તૃતીય પક્ષ ટ્રેકિંગ કૂકીઝ
+content-blocking-all-windows-trackers = બધા વિન્ડોઝમાં જાણીતા ટ્રેકર્સ
+content-blocking-all-third-party-cookies = બધા તૃતીય પક્ષ કૂકીઝ
+content-blocking-learn-how = કેવી રીતે તે જાણો
+content-blocking-tracking-protection-trackers-label =
+    .label = ટ્રેકર્સ
+    .accesskey = T
 content-blocking-tracking-protection-all-detected-trackers-label =
     .label = શોધી કાઢેલાં બધાં ટ્રેકર્સ
     .accesskey = T
@@ -716,6 +738,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = બધી તૃતીય-પક્ષની કૂકીઝ (વેબસાઇટ્સને તોડી શકે છે)
     .accesskey = A
+content-blocking-cookies-label =
+    .label = કૂકીઝ
+    .accesskey = C
 
 ## Privacy Section - Tracking
 
@@ -731,16 +756,15 @@ tracking-mode-private =
 tracking-mode-never =
     .label = ક્યારેય નહિં
     .accesskey = n
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = જાણીતા ટ્રેકર્સને અવરોધિત કરવા માટે ખાનગી બ્રાઉઝિંગમાં ટ્રેકિંગ પ્રોટેક્શનનો ઉપયોગ કરો
-    .accesskey = v
 tracking-exceptions =
     .label = અપવાદો…
     .accesskey = x
 tracking-change-block-list =
     .label = અવરોધિત સૂચિ બદલો…
     .accesskey = C
+tracking-manage-exceptions =
+    .label = અપવાદોને મેનેજ કરો ...
+    .accesskey = x
 
 ## Privacy Section - Permissions
 
@@ -857,3 +881,36 @@ certs-view =
 certs-devices =
     .label = સુરક્ષા ઉપકરણો…
     .accesskey = D
+space-alert-learn-more-button =
+    .label = વધુ શીખો
+    .accesskey = L
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] વિકલ્પો ખોલો
+           *[other] પસંદગીઓને ખોલો
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] O
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } ડિસ્ક જગ્યામાંથી બહાર ચાલી રહ્યું છે. વેબસાઈટની વિષયવસ્તુ કદાચ યોગ્ય રીતે દર્શાશે નહીં. તમે સંગ્રહિત સાઇટ ડેટાને સાફ કરી શકો છો વિકલ્પો > ગોપનીયતા અને સુરક્ષા > કૂકીઝ અને સાઈટ ડેટા.
+       *[other] { -brand-short-name } ડિસ્ક જગ્યામાંથી બહાર ચાલી રહ્યું છે. વેબસાઈટની વિષયવસ્તુ કદાચ યોગ્ય રીતે દર્શાશે નહીં. તમે સંગ્રહિત સાઇટ ડેટાને સાફ કરી શકો છો પસંદગીઓ > ગોપનીયતા અને સુરક્ષા > કૂકીઝ અને સાઈટ ડેટા.
+    }
+space-alert-under-5gb-ok-button =
+    .label = OK, સમજાઇ ગયું
+    .accesskey = K
+space-alert-under-5gb-message = { -brand-short-name } ડિસ્ક જગ્યામાંથી બહાર ચાલી રહ્યું છે. વેબસાઈટ વિષયવસ્તુ કદાચ યોગ્ય રીતે દર્શાશે નહીં. સારી બ્રાઉઝિંગ અનુભવ માટે તમારા ડિસ્કનો ઉપયોગ ઑપ્ટિમાઇઝ કરવા &quot;વધુ જાણો&quot; ની મુલાકાત લો.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = ડેસ્કટોપ
+downloads-folder-name = ડાઉનલોડ
+choose-download-folder-title = ડાઉનલોડ ફોલ્ડર પસંદ કરો:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = { $service-name } પર ફાઇલો સાચવો

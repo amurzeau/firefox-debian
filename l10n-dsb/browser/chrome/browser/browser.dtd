@@ -23,10 +23,22 @@
 <!ENTITY  reloadTab.accesskey                "R">
 <!ENTITY  reloadAllTabs.label                "Wšykne rejtarki znowego zacytaś">
 <!ENTITY  reloadAllTabs.accesskey            "w">
+<!ENTITY  selectAllTabs.label                "Wšykne rejtarki wubraś">
+<!ENTITY  selectAllTabs.accesskey            "W">
 <!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
 a tab (i.e. it is a verb, not adjective). -->
 <!ENTITY  duplicateTab.label                 "Rejatark pódwójś">
+<!-- LOCALIZATION NOTE (duplicateTab.accesskey, duplicateTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  duplicateTab.accesskey             "R">
+<!ENTITY  closeTabOptions.label              "Rejtarkowe nastajenja zacyniś">
+<!ENTITY  closeTabOptions.accesskey          "R">
+<!-- LOCALIZATION NOTE (duplicateTabs.label): This is a command to duplicate
+a tab (i.e. it is a verb, not adjective). -->
+<!ENTITY  duplicateTabs.label                "Rejtarki pódwójś">
+<!-- LOCALIZATION NOTE (duplicateTab.accesskey, duplicateTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  duplicateTabs.accesskey            "R">
 <!-- LOCALIZATION NOTE (closeTabsToTheEnd.label): This should indicate the
 direction in which tabs are closed, i.e. locales that use RTL mode should say
 left instead of right. -->
@@ -38,19 +50,29 @@ left instead of right. -->
 <!ENTITY  closeSelectedTabs.label            "Wubrany rejtarki zacyniś">
 <!ENTITY  closeSelectedTabs.accesskey        "b">
 
+<!ENTITY  closeTabs.label                    "Rejtarki zacyniś">
+<!ENTITY  closeTabs.accesskey                "z">
 <!ENTITY  pinSelectedTabs.label              "Rejtarki pśipěś">
-<!-- Pin Tab and Pin Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  pinSelectedTabs.accesskey          "R">
 <!ENTITY  unpinSelectedTabs.label            "Rejtarki wótpěś">
-<!-- Unpin Tab and Unpin Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinSelectedTabs.accesskey        "t">
 <!-- Reload Tab and Reload Selected Tabs have the same accesskey
 but will never be visible at the same time. -->
 <!ENTITY  reloadSelectedTabs.label           "Wubrane rejtarki znowego zacytaś">
 <!ENTITY  reloadSelectedTabs.accesskey       "b">
+<!-- LOCALIZATION NOTE(reloadTab.label, reloadTabs.label): have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  reloadTabs.label                   "Rejtarki znowego zacytaś">
+<!ENTITY  reloadTabs.accesskey               "n">
 <!ENTITY  bookmarkSelectedTabs.label         "Rejtarki ako cytańske znamjenja składowaś…">
+<!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "k">
 
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
@@ -59,8 +81,14 @@ left edge of the tabstrip. Really we just want the string to express the idea
 that this is a lightweight and reversible action that keeps your tab where you
 can reach it easily. -->
 <!ENTITY  pinTab.label                       "Rejtark pśipěś">
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  pinTab.accesskey                   "R">
 <!ENTITY  unpinTab.label                     "Rejtark wótpěś">
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinTab.accesskey                 "w">
 <!ENTITY  sendTabToDevice.label              "Rejtark na rěd pósłaś">
 <!ENTITY  sendTabToDevice.accesskey          "R">
@@ -68,12 +96,26 @@ can reach it easily. -->
 <!ENTITY  sendPageToDevice.accesskey         "B">
 <!ENTITY  sendLinkToDevice.label             "Wótkaz na rěd pósłaś">
 <!ENTITY  sendLinkToDevice.accesskey         "W">
+<!-- LOCALIZATION NOTE (moveTabOptions.label and moveSelectedTabOptions.label):
+These two items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  moveTabOptions.label               "Rejtark pśesunuś">
+<!ENTITY  moveTabOptions.accesskey           "s">
+<!ENTITY  moveSelectedTabOptions.label       "Rejtarki pśesunuś">
+<!ENTITY  moveSelectedTabOptions.accesskey   "s">
+<!ENTITY  moveToStart.label                  "K zachopjeńkoju pśesunuś">
+<!ENTITY  moveToStart.accesskey              "K">
+<!ENTITY  moveToEnd.label                    "Ku kóńcoju pśesunuś">
+<!ENTITY  moveToEnd.accesskey                "c">
 <!ENTITY  moveToNewWindow.label              "Do nowego wokna pśesunuś">
 <!ENTITY  moveToNewWindow.accesskey          "n">
 <!ENTITY  reopenInContainer.label            "W kontejnerje znowego wócyniś">
 <!ENTITY  reopenInContainer.accesskey        "k">
 <!ENTITY  bookmarkAllTabs.label              "Wšykne rejtarki ako cytańske znamjenja składowaś…">
 <!ENTITY  bookmarkAllTabs.accesskey          "r">
+<!ENTITY  bookmarkTab.label                  "Rejtark ako cytańske znamje składowaś">
+<!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  bookmarkTab.accesskey              "t">
 <!ENTITY  undoCloseTab.label                 "Zacynjony rejtark wótnowiś">
 <!ENTITY  undoCloseTab.accesskey             "c">
 <!ENTITY  closeTab.label                     "Rejtark zacyniś">
@@ -100,6 +142,8 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.accesskey "i">
 <!ENTITY printCmd.commandkey "p">
 
+<!ENTITY taskManagerCmd.label "Zastojnik nadawkow">
+
 <!ENTITY goOfflineCmd.label "Offline źełaś">
 <!ENTITY goOfflineCmd.accesskey "O">
 
@@ -114,6 +158,29 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "w">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.label "Wšykne rejtarki ako cytańske znamjenja składowaś…">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "r">
+
+<!ENTITY toolbarContextMenu.reloadSelectedTab.label "Wubrany rejtark znowego zacytaś">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
+toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.reloadSelectedTab.accesskey "b">
+<!ENTITY toolbarContextMenu.reloadSelectedTabs.label "Wubrane rejtarki znowego zacytaś">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
+toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.reloadSelectedTabs.accesskey "u">
+<!ENTITY toolbarContextMenu.bookmarkSelectedTab.label "Wubrany rejtark ako cytańske znamje składowaś…">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.bookmarkSelectedTab.accesskey,
+toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.bookmarkSelectedTab.accesskey "c">
+<!ENTITY toolbarContextMenu.bookmarkSelectedTabs.label "Wubrane rejtarki ako cytańske znamjenja składowaś…">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.bookmarkSelectedTab.accesskey,
+toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.bookmarkSelectedTabs.accesskey "b">
+<!ENTITY toolbarContextMenu.selectAllTabs.label "Wšykne rejtarki wubraś">
+<!ENTITY toolbarContextMenu.selectAllTabs.accesskey "u">
 <!ENTITY toolbarContextMenu.undoCloseTab.label "Zacynjony rejtark wótnowiś">
 <!ENTITY toolbarContextMenu.undoCloseTab.accesskey "c">
 
@@ -199,6 +266,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY subscribeToPageMenupopup.label "Toś ten bok aboněrowaś">
 <!ENTITY subscribeToPageMenuitem.label "Toś ten bok aboněrowaś…">
+
 <!ENTITY addCurPagesCmd.label "Wšykne rejtarki ako cytańske znamjenja…">
 <!ENTITY showAllBookmarks2.label "Wše cytańske znamjenja pokazaś">
 <!ENTITY recentBookmarks.label "Tuchylu ako cytańske znamje składowane">
@@ -557,9 +625,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY reloadFrameCmd.label         "Wobłuk znowego zacytaś">
 <!ENTITY reloadFrameCmd.accesskey     "z">
 <!ENTITY viewPartialSourceForSelectionCmd.label "Žrědłowy tekst wuběrka zwobrazniś">
-<!ENTITY viewPartialSourceForMathMLCmd.label    "Žrědłowy tekst MathML zwobrazniś">
-<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both
-         viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label -->
 <!ENTITY viewPartialSourceCmd.accesskey "t">
 <!ENTITY viewPageSourceCmd.label      "Žrědłowy tekst boka pokazaś">
 <!ENTITY viewPageSourceCmd.accesskey  "t">
@@ -776,7 +841,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      Remove Bookmark buttons. -->
 <!ENTITY editBookmark.panel.width                    "23em">
 <!ENTITY editBookmark.done.label                     "Dokóńcony">
-
 <!ENTITY editBookmark.showForNewBookmarks.label       "Editor pśi składowanju pokazaś">
 <!ENTITY editBookmark.showForNewBookmarks.accesskey   "E">
 
@@ -784,6 +848,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      This is the header of the security subview in the Site Identity panel. -->
 <!ENTITY identity.securityView.label "Sedłowa wěstota">
 
+<!ENTITY identity.connection "Zwisk">
 <!ENTITY identity.connectionSecure "Wěsty zwisk">
 <!ENTITY identity.connectionNotSecure "Zwisk njejo wěsty">
 <!ENTITY identity.connectionFile "Toś ten bok jo se na wašom licadle składł.">
@@ -926,9 +991,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.audioCapture.label "Awdio z rejtarka buźo se źěliś.">
 <!ENTITY getUserMedia.allWindowsShared.message "Wšykne widobne wokna na wašej wobrazowce budu se źěliś.">
 
-<!ENTITY trackingProtection.on "Slědowański šćit: Zašaltowany">
-<!ENTITY trackingProtection.off "Slědowański šćit: Wušaltowany">
-
 <!ENTITY contentBlocking.title "Blokěrowanje wopśimjeśa">
 <!ENTITY contentBlocking.detected "Blokěrujobne wopśimjeśe jo se namakało na toś tom sedle.">
 <!ENTITY contentBlocking.notDetected "Žedno blokěrujobne wopśimjeśe jo se namakało na toś tom boku.">
@@ -943,6 +1005,11 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      a positive thing. It forms the end of the (imaginary) sentence
      "Slow-Loading Trackers [are] Blocked"-->
 <!ENTITY contentBlocking.fastBlock.blocked.label "Zablokěrowany">
+<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.blocking.label):
+     This label signals that this type of content blocking is turned
+     ON, so this is a positive thing. It forms the verb in (imaginary) sentence
+     "Firefox is blocking Slow-Loading Trackers"-->
+<!ENTITY contentBlocking.fastBlock.blocking.label "Blokěrujo">
 <!-- LOCALIZATION NOTE (contentBlocking.fastBlock.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
@@ -950,12 +1017,25 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.fastBlock.add.label "Blokěrowanje pśidaś…">
 
 <!ENTITY contentBlocking.trackingProtection2.label "Wšykne namakane pśeslědowaki">
+
+<!ENTITY contentBlocking.trackingProtection3.label "Pśeslědowaki">
+<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.allowed.label):
+     This label signals that this type of content blocking is turned
+     OFF and is not blocking tracker content, so this is not
+     a positive thing. It forms the end of the (imaginary) sentence
+     "Trackers [are] Allowed"-->
+<!ENTITY contentBlocking.trackingProtection.allowed.label "Dowólony">
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
      This label signals that this type of content blocking is turned
      ON and is successfully blocking tracker content, so this is
      a positive thing. It forms the end of the (imaginary) sentence
      "Trackers [are] Blocked"-->
 <!ENTITY contentBlocking.trackingProtection.blocked.label "Zablokěrowany">
+<!-- LOCALIZATION NOTE (contentBlocking.tranckingProtection.blocking.label):
+     This label signals that this type of content blocking is turned
+     ON, so this is a positive thing. It forms the verb in the (imaginary) sentence
+     "Firefox is blocking Trackers"-->
+<!ENTITY contentBlocking.trackingProtection.blocking.label "Blokěrujo">
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
@@ -963,17 +1043,29 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection.add.label "Blokěrowanje pśidaś…">
 
 <!ENTITY contentBlocking.3rdPartyCookies.label "Cookieje tśeśich póbitowarjow">
+<!ENTITY contentBlocking.3rdPartyCookies.trackers.label "Slědujuce cookieje">
 <!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.blocked.label):
      This label signals that this type of content blocking is turned
      ON and is successfully blocking third-party cookies, so this is
      a positive thing. It forms the end of the (imaginary) sentence
      "Third-Party Cookies [are] Blocked"-->
 <!ENTITY contentBlocking.3rdPartyCookies.blocked.label "Zablokěrowane">
+<!-- LOCALIZATION NOTE (contentBlocking.tranckingProtection.blocking.label):
+     This label signals that this type of content blocking is turned
+     ON, so this is a positive thing. It forms the verb in the (imaginary) sentence
+     "Firefox is blocking Third-Party Cookies"-->
+<!ENTITY contentBlocking.3rdPartyCookies.blocking.label "Blokěrujo">
 <!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
      the type of content blocking is currently not enabled. -->
 <!ENTITY contentBlocking.3rdPartyCookies.add.label "Blokěrowanje pśidaś…">
+
+<!ENTITY contentBlocking.manageSettings.label "Blokěrowanje wopśimjeśa zastojaś">
+<!ENTITY contentBlocking.manageSettings.accesskey "B">
+
+<!ENTITY contentBlocking.trackersView.label "Pśeslědowaki">
+<!ENTITY contentBlocking.trackersView.strictInfo.label "Aby wšykne pśeslědowaki blokěrował, stajśo blokěrowanje wopśimjeśa na “Striktny”.">
 
 <!ENTITY contentBlocking.openBreakageReportView2.label "Problem k wěsći daś">
 <!ENTITY contentBlocking.breakageReportView.label "Problemy k wěsći daś">
@@ -986,32 +1078,32 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY trackingProtection.title "Slědowański šćit">
 <!ENTITY trackingProtection.tooltip "Nastajenja slědowańskego šćita wócyniś">
-<!ENTITY trackingProtection.detectedBlocked4 "&brandShortName; blokěrujo źěle toś togo boka, kótarež by mógli wašo pśeglědowanje slědowaś.">
-<!ENTITY trackingProtection.detectedNotBlocked5 "&brandShortName; jo elementy namakał, kótarež mógli wašo pśeglědowanje slědowaś.">
-<!ENTITY trackingProtection.detectedException "&brandShortName; jo elementy namakał, kótarež mógli waš pśeglědowanje slědowaś. Sćo znjemóžnił šćit za toś to sedło.">
-<!ENTITY trackingProtection.notDetected5 "Žedne slědujuce elementy na toś tom boku namakane.">
-<!ENTITY trackingProtection.notDetectedException "Žedne slědujuce elementy na toś tom boku namakane. Sćo znjemóžnił šćit za toś to sedło.">
-
-<!ENTITY trackingProtection.reloadRequired2 "Sćo zmóžnił slědowański šćit. Zacytajśo toś ten bok znowego, aby wšykne pśeslědowaki blokěrował.">
 
 <!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in NON-private browsing mode. -->
-<!ENTITY trackingProtection.unblock3.label "Za toś to sedło znjemóžniś">
-<!ENTITY trackingProtection.unblock3.accesskey "Z">
 <!ENTITY trackingProtection.unblock4.label "Blokěrowanje za toś to sedło znjemóžniś">
 <!ENTITY trackingProtection.unblock4.accesskey "n">
 <!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in PRIVATE browsing mode. -->
-<!ENTITY trackingProtection.unblockPrivate3.label "Za toś to pósejźenje znjemóžniś">
-<!ENTITY trackingProtection.unblockPrivate3.accesskey "Z">
-<!ENTITY trackingProtection.block4.label "Za toś to sedło zmóžniś">
-<!ENTITY trackingProtection.block4.accesskey "m">
 <!ENTITY trackingProtection.unblockPrivate4.label "Blokěrowanje nachylu znjemóžniś">
 <!ENTITY trackingProtection.unblockPrivate4.accesskey "c">
 <!ENTITY trackingProtection.block5.label "Blokěrowanje za toś to sedło zmóžniś">
 <!ENTITY trackingProtection.block5.accesskey "z">
+
+<!-- LOCALIZATION NOTE (trackingProtection.unblock5.label, trackingProtection.unblock5.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in NON-private browsing mode. -->
+<!ENTITY trackingProtection.unblock5.label "Blokěrowanje za toś to sedło znjemóžniś">
+<!ENTITY trackingProtection.unblock5.accesskey "B">
+<!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate6.label, trackingProtection.unblockPrivate6.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in PRIVATE browsing mode. -->
+<!ENTITY trackingProtection.unblockPrivate5.label "Blokěrowanje nachylu znjemóžniś">
+<!ENTITY trackingProtection.unblockPrivate5.accesskey "B">
+<!ENTITY trackingProtection.block6.label "Blokěrowanje za toś to sedło zmóžniś">
+<!ENTITY trackingProtection.block6.accesskey "B">
 <!ENTITY trackingProtection.reload2.label "Bok znowego zacytaś">
 <!ENTITY trackingProtection.reload2.accesskey "B">
 
@@ -1117,7 +1209,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY sendToDevice.syncNotReady.label "Rědy se synchronizěruju…">
 
 <!ENTITY pageAction.shareUrl.label "Źěliś">
-
 <!ENTITY pageAction.shareMore.label "Wěcej…">
 
 <!ENTITY libraryButton.tooltip "Historiju, skłaźone cytańske znamjenja a wěcej pokazaś">

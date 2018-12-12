@@ -53,6 +53,7 @@ pane-sync-title = Účet Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = Podpora aplikácie { -brand-short-name }
+addons-button-label = Rozšírenia a témy vzhľadu
 focus-search =
     .key = f
 close-button =
@@ -83,6 +84,9 @@ extension-controlled-homepage-override = Vašu domovskú stránku kontroluje roz
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Vašu stránku novej karty kontroluje rozšírenie <img data-l10n-name="icon"/> { $name }.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = Toto nastavenie spravuje rozšírenie <img data-l10n-name="icon"/> { $name }.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Rozšírenie <img data-l10n-name="icon"/> { $name } vám nastavilo nový predvolený vyhľadávací modul.
@@ -149,6 +153,9 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = Upozorniť pri zatváraní viacerých kariet
     .accesskey = o
+warn-on-quit-close-multiple-tabs =
+    .label = Upozorniť pri ukončovaní prehliadača a zatváraní viacerých kariet
+    .accesskey = p
 warn-on-open-many-tabs =
     .label = Upozorniť, ak by otvorenie viacerých kariet spôsobilo spomalenie aplikácie { -brand-short-name }
     .accesskey = U
@@ -206,7 +213,7 @@ colors-settings =
     .label = Farby…
     .accesskey = F
 language-header = Jazyk
-choose-language-description = Vybrať jazyky pre zobrazovanie webových stránok
+choose-language-description = Vyberte jazyky pre zobrazovanie webových stránok
 choose-button =
     .label = Vybrať…
     .accesskey = V
@@ -287,6 +294,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = Automaticky aktualizovať vyhľadávacie moduly
     .accesskey = e
+update-pref-write-failure-title = Chyba pri zápise
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = Nepodarilo sa nám uložiť nastavenie. Nebolo možné zapísať údaje do súboru { $path }
 
 ## General Section - Performance
 
@@ -326,10 +337,13 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Povoliť vyhľadávanie textu počas písania
     .accesskey = x
+browsing-cfr-recommendations =
+    .label = Odporúčať rozšírenia počas prehliadania
+    .accesskey = O
+browsing-cfr-recommendations-learn-more = Ďalšie informácie
 
 ## General Section - Proxy
 
-network-proxy-title = Nastavenie pripojenia
 network-settings-title = Nastavenia siete
 network-proxy-connection-description = Konfigurovať, ako sa aplikácia { -brand-short-name } pripája k internetu.
 network-proxy-connection-learn-more = Ďalšie informácie
@@ -528,6 +542,7 @@ privacy-header = Súkromie
 ## Privacy Section - Forms
 
 forms-header = Formuláre a heslá
+logins-header = Prihlasovacie údaje
 forms-ask-to-save-logins =
     .label = Ponúkať uloženie prihlasovacích údajov na webových stránkach
     .accesskey = r
@@ -594,26 +609,15 @@ sitedata-total-size-calculating = Výpočet veľkosti údajov stránky a vyrovn�
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Uložené cookies, údaje stránok a vyrovnávacia pamäť zaberajú { $value } { $unit } priestoru na disku.
 sitedata-learn-more = Ďalšie informácie
-sitedata-accept-cookies-option =
-    .label = Povoliť stránkam ukladať cookies a údaje stránok (odporúčané)
-    .accesskey = a
-sitedata-block-cookies-option =
-    .label = Blokovať ukladanie cookies a údajov stránok (stránky nemusia správne fungovať)
-    .accesskey = B
 sitedata-keep-until = Uchovávať cookies do
     .accesskey = U
 sitedata-keep-until-expire =
     .label = vypršania platnosti
 sitedata-keep-until-closed =
     .label = ukončenia aplikácie { -brand-short-name }
-sitedata-accept-third-party-desc = Povoliť cookies a údaje stránok
-    .accesskey = k
-sitedata-accept-third-party-always-option =
-    .label = vždy
-sitedata-accept-third-party-visited-option =
-    .label = len pre navštívené
-sitedata-accept-third-party-never-option =
-    .label = nikdy
+sitedata-delete-on-close =
+    .label = Odstrániť cookies a údaje stránok pri zatvorení aplikácie { -brand-short-name }
+    .accesskey = c
 sitedata-allow-cookies-option =
     .label = Ukladať cookies a údaje stránok
     .accesskey = U
@@ -647,6 +651,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = Vaše nastavenia blokovania obsahu bránia zmenám nastavenia cookies a údajov stránok.
+sitedata-cookies-permissions =
+    .label = Spravovať povolenia…
+    .accesskey = S
 
 ## Privacy Section - Address Bar
 
@@ -667,6 +674,7 @@ addressbar-suggestions-settings = Zmeniť nastavenia pre návrhy vyhľadávania
 
 content-blocking-header = Blokovanie obsahu a ochrana pred sledovaním
 content-blocking-desc = Zablokujte obsah tretích strán, ako sú reklamy alebo kód, ktorý spomaľuje načítanie stránok a sleduje vašu aktivitu na internete. Úroveň blokovania môžete upraviť podľa svojich vlastných požiadaviek na výkon a ochranu súkromia.
+content-blocking-description = Zablokujte obsah tretích strán, ktorý vás sleduje naprieč webom. Sami si určite, aká časť z vašej aktivity na internete sa bude ukladať a zdieľať medzi stránkami.
 content-blocking-learn-more = Ďalšie informácie
 content-blocking-restore-defaults =
     .label = Obnoviť predvolené nastavenia
@@ -686,9 +694,33 @@ content-blocking-category-label = Vyberte si, čo chcete blokovať
 content-blocking-fastblock-slow-loading-trackers-label =
     .label = Spomaľovacie sledovacie prvky
     .accesskey = S
+content-blocking-fastblock-new-description = Blokované budú len sledovacie prvky, ktoré spomaľujú načítanie stránok.
+content-blocking-setting-standard =
+    .label = Štandardné
+    .accesskey = t
+content-blocking-setting-strict =
+    .label = Prísne
+    .accesskey = P
+content-blocking-setting-custom =
+    .label = Vlastné
+    .accesskey = V
+content-blocking-standard-desc = Vyvážená úroveň ochrany a výkonu. Povoľuje niektoré sledovacie sledovacie prvky, aby stránky fungovali správne.
+content-blocking-strict-desc = Blokuje všetky sledovacie prvky, ktoré { -brand-short-name } nájde. Toto nastavenie môže obmedziť fungovanie niektorých stránok.
+content-blocking-custom-desc = Vyberte si, čo chcete blokovať.
+content-blocking-private-trackers = Známe sledovacie prvky sú blokované v režime Súkromné prehliadanie
+content-blocking-third-party-cookies = Blokované sú sledovacie cookies tretích strán
+content-blocking-all-windows-trackers = Známe sledovacie prvky sú blokované vždy
+content-blocking-all-third-party-cookies = Blokované sú všetky cookies tretích strán
+content-blocking-warning-title = Pozor!
+content-blocking-warning-desc = Blokovanie cookies a sledovacích prvkov môže spôsobiť rozbitie niektorých webových stránok. Na dôveryhodných stránkach môžete blokovanie jednoducho vypnúť.
+content-blocking-learn-how = Ďalšie informácie
+content-blocking-tracking-protection-trackers-label =
+    .label = Sledovacie prvky
+    .accesskey = l
 content-blocking-tracking-protection-all-detected-trackers-label =
     .label = Všetky nájdené sledovacie prvky
     .accesskey = t
+content-blocking-tracking-protection-new-description = Blokované budú všetky známe sledovacie prvky. (Toto môže obmedziť fungovanie niektorých stránok.)
 content-blocking-tracking-protection-option-always =
     .label = Vždy
     .accesskey = V
@@ -699,6 +731,12 @@ content-blocking-tracking-protection-change-block-list = Zmeniť zoznam blokovan
 content-blocking-third-party-cookies-label =
     .label = Cookies tretích strán
     .accesskey = C
+content-blocking-reject-trackers-description = Blokovať všetky cookies tretích strán alebo len sledovacích prvkov.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Vaše nastavenie cookies a údajov stránok bránia zmenám nastavenia cookies tretích strán.
 content-blocking-change-cookie-settings =
     .label = Zmeniť nastavenia cookies
     .accesskey = s
@@ -711,6 +749,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = Všetky cookies tretích strán (môže obmedziť fungovanie niektorých stránok)
     .accesskey = V
+content-blocking-cookies-label =
+    .label = Cookies
+    .accesskey = C
 
 ## Privacy Section - Tracking
 
@@ -726,16 +767,15 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Nikdy
     .accesskey = N
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Používať Ochranu pred sledovaním na blokovanie sledovacích prvkov v režime Súkromné prehliadanie
-    .accesskey = v
 tracking-exceptions =
     .label = Výnimky…
     .accesskey = m
 tracking-change-block-list =
     .label = Zmeniť zoznam blokovania…
     .accesskey = Z
+tracking-manage-exceptions =
+    .label = Správa výnimiek…
+    .accesskey = S
 
 ## Privacy Section - Permissions
 
@@ -852,3 +892,36 @@ certs-view =
 certs-devices =
     .label = Bezpečnostné zariadenia…
     .accesskey = d
+space-alert-learn-more-button =
+    .label = Ďalšie informácie
+    .accesskey = n
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Otvoriť možnosti
+           *[other] Otvoriť možnosti
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] O
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] Aplikácii { -brand-short-name } dochádza miesto na disku. Obsah webovej stránky sa nemusí zobrazovať správne. Uložené údaje stránok môžete odstrániť v ponuke Možnosti > Súkromie a bezpečnosť > Cookies a údaje stránok.
+       *[other] Aplikácii { -brand-short-name } dochádza miesto na disku. Obsah webovej stránky sa nemusí zobrazovať správne. Uložené údaje stránok môžete odstrániť v ponuke Možnosti > Súkromie a bezpečnosť > Cookies a údaje stránok.
+    }
+space-alert-under-5gb-ok-button =
+    .label = OK, rozumiem
+    .accesskey = K
+space-alert-under-5gb-message = Aplikácii { -brand-short-name } dochádza miesto na disku. Obsah webovej stránky sa nemusí zobrazovať správne. Kliknutím na “Ďalšie informácie” sa dozviete viac o optimalizovaní vyžitia disku pre lepší zážitok z prehliadania.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Pracovná plocha
+downloads-folder-name = Prevzaté súbory
+choose-download-folder-title = Vyberte priečinok pre prevzaté súbory:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Uložiť súbory na { $service-name }

@@ -2,14 +2,9 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!-- LOCALIZATION NOTE (aboutPrivateBrowsing.title):
-     Please ensure this exactly matches tabs.emptyPrivateTabTitle in tabbrowser.properties -->
-<!ENTITY aboutPrivateBrowsing.title                      "نجی براوزنگ">
-<!ENTITY aboutPrivateBrowsing.notPrivate.title           "نجی دریچہ کھولیں؟">
-
 <!ENTITY aboutPrivateBrowsing.notPrivate                 "آپ فی الحال نجی دریچے میں نہیں۔">
-<!ENTITY privatebrowsingpage.openPrivateWindow.label     "آیک نجی دریچہ کھولیں">
-<!ENTITY privatebrowsingpage.openPrivateWindow.accesskey "ن">
+<!ENTITY privatebrowsingpage.openPrivateWindow.label     "ایک نجی ونڈوں مے کھولیں">
+<!ENTITY privatebrowsingpage.openPrivateWindow.accesskey "P">
 
 <!ENTITY privateBrowsing.title                           "نجی براوزنگ">
 <!ENTITY privateBrowsing.title.tracking                  "ٹریکنگ پروٹیکشن کے ساتھ نجی براؤزنگ">
@@ -24,7 +19,8 @@
 <!ENTITY aboutPrivateBrowsing.info.saved.emphasize       "محفوظ کریں گا">
 <!ENTITY aboutPrivateBrowsing.info.saved.after2          " تمھارا:">
 <!ENTITY aboutPrivateBrowsing.info.downloads             "ڈاؤن لوڈ">
-<!ENTITY aboutPrivateBrowsing.info.bookmarks             "نشانیاں">
+<!ENTITY aboutPrivateBrowsing.info.bookmarks             "بک مارک">
+<!ENTITY aboutPrivateBrowsing.info.clipboard             "نقل شدہ متن">
 <!ENTITY aboutPrivateBrowsing.note.before                "نجی براوزنگ ">
 <!ENTITY aboutPrivateBrowsing.note.emphasize             "آپ کو گمنام نہیں بناتا">
 <!ENTITY aboutPrivateBrowsing.note.after                 " انٹرنیٹ پر۔ آپ کی کمپنی یا انٹرنیٹ سروس مہیا کنندہ آپ کے دیکھے گئے صفحات کی پھر بھی سراغ راہ لگا سکتے ہیں۔">
@@ -35,3 +31,6 @@
 <!ENTITY trackingProtection.title                        "سراغ کاری حفاظت">
 <!ENTITY trackingProtection.description2                 "کچھ ویب سائٹس انٹرنیٹ بھر میں اپنی سرگرمیوں کی نگرانی کے لئے  Trackers کا استعمال کر سکتی ہیں۔ ٹریکنگ پروٹیکشن کے ساتھ Firefox بہت سے Trackers کو بلاک کرتا ہے جو کی آپ کی براؤزنگ کے رویے کے بارے میں معلومات جمع کر سکتے ہیں۔">
 <!ENTITY trackingProtection.startTour1                   "دیکھیں کہ یہ کیسے کام کرتا ہے">
+
+<!ENTITY contentBlocking.title                           "مواد روکنا">
+<!ENTITY contentBlocking.description                     "کچھ ویب سائٹ ٹریکر کا استعمال کرتے ہے جو انٹرنیٹ پر آپ کے حرکت کی نگرانی کرتے ہے۔ نجی ونڈوز میں، Firefox کے مواد روکنے کی خصوصیات خودبخود بہت سے ٹریکر کو روکتا ہے جو آپ کے براؤزنگ کے معلومات جمع کر سکتے ہے۔">

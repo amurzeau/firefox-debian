@@ -23,10 +23,22 @@
 <!ENTITY  reloadTab.accesskey                "O">
 <!ENTITY  reloadAllTabs.label                "Oppdater alle faner">
 <!ENTITY  reloadAllTabs.accesskey            "a">
+<!ENTITY  selectAllTabs.label                "Velg alle faner">
+<!ENTITY  selectAllTabs.accesskey            "f">
 <!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
 a tab (i.e. it is a verb, not adjective). -->
 <!ENTITY  duplicateTab.label                 "Dupliser fane">
+<!-- LOCALIZATION NOTE (duplicateTab.accesskey, duplicateTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  duplicateTab.accesskey             "D">
+<!ENTITY  closeTabOptions.label              "Innstillinger for lukking av faner">
+<!ENTITY  closeTabOptions.accesskey          "a">
+<!-- LOCALIZATION NOTE (duplicateTabs.label): This is a command to duplicate
+a tab (i.e. it is a verb, not adjective). -->
+<!ENTITY  duplicateTabs.label                "Dupliser faner">
+<!-- LOCALIZATION NOTE (duplicateTab.accesskey, duplicateTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  duplicateTabs.accesskey            "D">
 <!-- LOCALIZATION NOTE (closeTabsToTheEnd.label): This should indicate the
 direction in which tabs are closed, i.e. locales that use RTL mode should say
 left instead of right. -->
@@ -38,19 +50,29 @@ left instead of right. -->
 <!ENTITY  closeSelectedTabs.label            "Lukk valgte faner">
 <!ENTITY  closeSelectedTabs.accesskey        "v">
 
+<!ENTITY  closeTabs.label                    "Lukk faner">
+<!ENTITY  closeTabs.accesskey                "k">
 <!ENTITY  pinSelectedTabs.label              "Fest faner">
-<!-- Pin Tab and Pin Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  pinSelectedTabs.accesskey          "F">
 <!ENTITY  unpinSelectedTabs.label            "Løs faner">
-<!-- Unpin Tab and Unpin Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinSelectedTabs.accesskey        "e">
 <!-- Reload Tab and Reload Selected Tabs have the same accesskey
 but will never be visible at the same time. -->
 <!ENTITY  reloadSelectedTabs.label           "Oppdater valgte faner">
 <!ENTITY  reloadSelectedTabs.accesskey       "O">
+<!-- LOCALIZATION NOTE(reloadTab.label, reloadTabs.label): have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  reloadTabs.label                   "Oppdater faner">
+<!ENTITY  reloadTabs.accesskey               "r">
 <!ENTITY  bookmarkSelectedTabs.label         "Bokmerk faner…">
+<!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "k">
 
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
@@ -59,8 +81,14 @@ left edge of the tabstrip. Really we just want the string to express the idea
 that this is a lightweight and reversible action that keeps your tab where you
 can reach it easily. -->
 <!ENTITY  pinTab.label                       "Lås fane">
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  pinTab.accesskey                   "L">
 <!ENTITY  unpinTab.label                     "Lås opp fane">
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinTab.accesskey                 "o">
 <!ENTITY  sendTabToDevice.label              "Send fane til enhet">
 <!ENTITY  sendTabToDevice.accesskey          "e">
@@ -68,12 +96,26 @@ can reach it easily. -->
 <!ENTITY  sendPageToDevice.accesskey         "e">
 <!ENTITY  sendLinkToDevice.label             "Send lenke til enhet">
 <!ENTITY  sendLinkToDevice.accesskey         "e">
+<!-- LOCALIZATION NOTE (moveTabOptions.label and moveSelectedTabOptions.label):
+These two items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  moveTabOptions.label               "Flytt fane">
+<!ENTITY  moveTabOptions.accesskey           "y">
+<!ENTITY  moveSelectedTabOptions.label       "Flytt faner">
+<!ENTITY  moveSelectedTabOptions.accesskey   "y">
+<!ENTITY  moveToStart.label                  "Flytt til begynnelsen">
+<!ENTITY  moveToStart.accesskey              "b">
+<!ENTITY  moveToEnd.label                    "Flytt til slutten">
+<!ENTITY  moveToEnd.accesskey                "t">
 <!ENTITY  moveToNewWindow.label              "Flytt til et nytt vindu">
 <!ENTITY  moveToNewWindow.accesskey          "t">
 <!ENTITY  reopenInContainer.label            "Åpne på nytt i innholdsfane">
 <!ENTITY  reopenInContainer.accesskey        "e">
 <!ENTITY  bookmarkAllTabs.label              "Bokmerk alle faner …">
 <!ENTITY  bookmarkAllTabs.accesskey          "o">
+<!ENTITY  bookmarkTab.label                  "Bokmerk fane">
+<!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  bookmarkTab.accesskey              "B">
 <!ENTITY  undoCloseTab.label                 "Angre lukking av fane">
 <!ENTITY  undoCloseTab.accesskey             "A">
 <!ENTITY  closeTab.label                     "Lukk fane">
@@ -100,6 +142,8 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.accesskey "u">
 <!ENTITY printCmd.commandkey "p">
 
+<!ENTITY taskManagerCmd.label "Aktivitetsbehandler">
+
 <!ENTITY goOfflineCmd.label "Arbeid frakoblet">
 <!ENTITY goOfflineCmd.accesskey "r">
 
@@ -114,6 +158,29 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "L">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.label "Bokmerk alle faner …">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "B">
+
+<!ENTITY toolbarContextMenu.reloadSelectedTab.label "Oppdater valgte fane">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
+toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.reloadSelectedTab.accesskey "O">
+<!ENTITY toolbarContextMenu.reloadSelectedTabs.label "Oppdater valgte faner">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
+toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.reloadSelectedTabs.accesskey "O">
+<!ENTITY toolbarContextMenu.bookmarkSelectedTab.label "Bokmerk valgt fane…">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.bookmarkSelectedTab.accesskey,
+toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.bookmarkSelectedTab.accesskey "t">
+<!ENTITY toolbarContextMenu.bookmarkSelectedTabs.label "Bokmerk valgte faner…">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.bookmarkSelectedTab.accesskey,
+toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.bookmarkSelectedTabs.accesskey "t">
+<!ENTITY toolbarContextMenu.selectAllTabs.label "Velg alle faner">
+<!ENTITY toolbarContextMenu.selectAllTabs.accesskey "V">
 <!ENTITY toolbarContextMenu.undoCloseTab.label "Angre lukking av fane">
 <!ENTITY toolbarContextMenu.undoCloseTab.accesskey "n">
 
@@ -558,9 +625,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY reloadFrameCmd.label         "Oppdater ramme">
 <!ENTITY reloadFrameCmd.accesskey     "O">
 <!ENTITY viewPartialSourceForSelectionCmd.label "Vis kildekode for valgt tekst">
-<!ENTITY viewPartialSourceForMathMLCmd.label    "Vis MathML-kildekode">
-<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both
-         viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label -->
 <!ENTITY viewPartialSourceCmd.accesskey "k">
 <!ENTITY viewPageSourceCmd.label      "Vis kildekode">
 <!ENTITY viewPageSourceCmd.accesskey  "k">
@@ -777,7 +841,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      Remove Bookmark buttons. -->
 <!ENTITY editBookmark.panel.width                    "23em">
 <!ENTITY editBookmark.done.label                     "Ferdig">
-
 <!ENTITY editBookmark.showForNewBookmarks.label       "Vis redigerer ved lagring">
 <!ENTITY editBookmark.showForNewBookmarks.accesskey   "s">
 
@@ -785,6 +848,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      This is the header of the security subview in the Site Identity panel. -->
 <!ENTITY identity.securityView.label "Nettstedssikkerhet">
 
+<!ENTITY identity.connection "Tilkobling">
 <!ENTITY identity.connectionSecure "Sikker tilkobling">
 <!ENTITY identity.connectionNotSecure "Tilkoblingen er ikke sikker">
 <!ENTITY identity.connectionFile "Denne siden lagres på datamaskinen din.">
@@ -927,9 +991,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.audioCapture.label "Lyd fra fanen vil deles.">
 <!ENTITY getUserMedia.allWindowsShared.message "Alle synlige vinduer på skjermen vil deles.">
 
-<!ENTITY trackingProtection.on "Sporingsbeskyttelse: PÅ">
-<!ENTITY trackingProtection.off "Sporingsbeskyttelse: AV">
-
 <!ENTITY contentBlocking.title "Innholdsblokkering">
 <!ENTITY contentBlocking.detected "Blokkerbart innhold oppdaget på dette nettstedet.">
 <!ENTITY contentBlocking.notDetected "Ingen blokkerbart innhold oppdaget på dette nettstedet.">
@@ -944,6 +1005,11 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      a positive thing. It forms the end of the (imaginary) sentence
      "Slow-Loading Trackers [are] Blocked"-->
 <!ENTITY contentBlocking.fastBlock.blocked.label "Blokkert">
+<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.blocking.label):
+     This label signals that this type of content blocking is turned
+     ON, so this is a positive thing. It forms the verb in (imaginary) sentence
+     "Firefox is blocking Slow-Loading Trackers"-->
+<!ENTITY contentBlocking.fastBlock.blocking.label "Blokkerer">
 <!-- LOCALIZATION NOTE (contentBlocking.fastBlock.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
@@ -951,12 +1017,25 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.fastBlock.add.label "Legg til blokkering…">
 
 <!ENTITY contentBlocking.trackingProtection2.label "Alle oppdagede sporere">
+
+<!ENTITY contentBlocking.trackingProtection3.label "Sporere">
+<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.allowed.label):
+     This label signals that this type of content blocking is turned
+     OFF and is not blocking tracker content, so this is not
+     a positive thing. It forms the end of the (imaginary) sentence
+     "Trackers [are] Allowed"-->
+<!ENTITY contentBlocking.trackingProtection.allowed.label "Tillatt">
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
      This label signals that this type of content blocking is turned
      ON and is successfully blocking tracker content, so this is
      a positive thing. It forms the end of the (imaginary) sentence
      "Trackers [are] Blocked"-->
 <!ENTITY contentBlocking.trackingProtection.blocked.label "Blokkert">
+<!-- LOCALIZATION NOTE (contentBlocking.tranckingProtection.blocking.label):
+     This label signals that this type of content blocking is turned
+     ON, so this is a positive thing. It forms the verb in the (imaginary) sentence
+     "Firefox is blocking Trackers"-->
+<!ENTITY contentBlocking.trackingProtection.blocking.label "Blokkerer">
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
@@ -964,17 +1043,29 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection.add.label "Legg til blokkering…">
 
 <!ENTITY contentBlocking.3rdPartyCookies.label "Tredjeparts-infokapsler">
+<!ENTITY contentBlocking.3rdPartyCookies.trackers.label "Sporingsinfokapsler">
 <!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.blocked.label):
      This label signals that this type of content blocking is turned
      ON and is successfully blocking third-party cookies, so this is
      a positive thing. It forms the end of the (imaginary) sentence
      "Third-Party Cookies [are] Blocked"-->
 <!ENTITY contentBlocking.3rdPartyCookies.blocked.label "Blokkert">
+<!-- LOCALIZATION NOTE (contentBlocking.tranckingProtection.blocking.label):
+     This label signals that this type of content blocking is turned
+     ON, so this is a positive thing. It forms the verb in the (imaginary) sentence
+     "Firefox is blocking Third-Party Cookies"-->
+<!ENTITY contentBlocking.3rdPartyCookies.blocking.label "Blokkerer">
 <!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
      the type of content blocking is currently not enabled. -->
 <!ENTITY contentBlocking.3rdPartyCookies.add.label "Legg til blokkering…">
+
+<!ENTITY contentBlocking.manageSettings.label "Behandle innholdsblokkering">
+<!ENTITY contentBlocking.manageSettings.accesskey "n">
+
+<!ENTITY contentBlocking.trackersView.label "Sporere">
+<!ENTITY contentBlocking.trackersView.strictInfo.label "For å blokkere alle sporere, sett innholdsblokkering til «Streng».">
 
 <!ENTITY contentBlocking.openBreakageReportView2.label "Rapporter et problem">
 <!ENTITY contentBlocking.breakageReportView.label "Rapporter problemer">
@@ -987,32 +1078,32 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY trackingProtection.title "Sporingsbeskyttelse">
 <!ENTITY trackingProtection.tooltip "Åpne innstillinger for sporingsbeskyttelse">
-<!ENTITY trackingProtection.detectedBlocked4 "&brandShortName; blokkerer deler av denne siden som kan spore nettlesingen din.">
-<!ENTITY trackingProtection.detectedNotBlocked5 "&brandShortName; har oppdaget element som kan spore nettlesingen din.">
-<!ENTITY trackingProtection.detectedException "&brandShortName; har oppdaget element som kan spore nettlesingen din. Du har skrudd av beskyttelse på denne nettsiden.">
-<!ENTITY trackingProtection.notDetected5 "Ingen sporingselement oppdaget på denne siden.">
-<!ENTITY trackingProtection.notDetectedException "Ingen sporingselement er oppdaget på denne siden. Du har slått av beskyttelse på dette nettstedet.">
-
-<!ENTITY trackingProtection.reloadRequired2 "Du har slått på sporingsbeskyttelse. Last om denne siden for å blokkere alle sporere.">
 
 <!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in NON-private browsing mode. -->
-<!ENTITY trackingProtection.unblock3.label "Slå av på dette nettstedet">
-<!ENTITY trackingProtection.unblock3.accesskey "d">
 <!ENTITY trackingProtection.unblock4.label "Slå av blokkering for dette nettstedet">
 <!ENTITY trackingProtection.unblock4.accesskey "d">
 <!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in PRIVATE browsing mode. -->
-<!ENTITY trackingProtection.unblockPrivate3.label "Slå av for denne økten">
-<!ENTITY trackingProtection.unblockPrivate3.accesskey "d">
-<!ENTITY trackingProtection.block4.label "Slå på for dette nettstedet">
-<!ENTITY trackingProtection.block4.accesskey "e">
 <!ENTITY trackingProtection.unblockPrivate4.label "Slå av blokkering midlertidig">
 <!ENTITY trackingProtection.unblockPrivate4.accesskey "d">
 <!ENTITY trackingProtection.block5.label "Slå på blokkering for dette nettstedet">
 <!ENTITY trackingProtection.block5.accesskey "e">
+
+<!-- LOCALIZATION NOTE (trackingProtection.unblock5.label, trackingProtection.unblock5.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in NON-private browsing mode. -->
+<!ENTITY trackingProtection.unblock5.label "Slå av blokkering for dette nettstedet">
+<!ENTITY trackingProtection.unblock5.accesskey "t">
+<!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate6.label, trackingProtection.unblockPrivate6.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in PRIVATE browsing mode. -->
+<!ENTITY trackingProtection.unblockPrivate5.label "Slå av blokkering midlertidig">
+<!ENTITY trackingProtection.unblockPrivate5.accesskey "t">
+<!ENTITY trackingProtection.block6.label "Slå på blokkering for dette nettstedet">
+<!ENTITY trackingProtection.block6.accesskey "t">
 <!ENTITY trackingProtection.reload2.label "Oppdater siden">
 <!ENTITY trackingProtection.reload2.accesskey "r">
 
@@ -1118,7 +1209,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY sendToDevice.syncNotReady.label "Synkroniserer enheter…">
 
 <!ENTITY pageAction.shareUrl.label "Del">
-
 <!ENTITY pageAction.shareMore.label "Mer…">
 
 <!ENTITY libraryButton.tooltip "Se historikk, lagrede bokmerker og mer">

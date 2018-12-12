@@ -291,6 +291,18 @@
      Similar to the already existing "pref_whats_new_notification_summary"-->
 <!ENTITY pref_feature_tips_notification_summary "Zistite viac o používaní aplikácie &brandShortName; a ďalších produktoch organizácie &vendorShortName;">
 
+<!-- Localization note (pref_feature_tips_notification_enabling_hint):
+     Describe the action the user should do to enable this preference
+     Will be used in the context "<Turn on> ... to enable this feature" -->
+<!ENTITY pref_feature_tips_notification_enabling_hint "Zapnúť">
+
+<!-- Localization note (pref_feature_tips_notification_enabling_path):
+     Nothing to translate. Simple concatenation of already localized strings. Result is used below. -->
+<!ENTITY pref_feature_tips_notification_enabling_path "&pref_category_privacy_short; > &pref_category_datareporting; > &datareporting_fhr_title;">
+<!-- Localization note (pref_feature_tips_notification_enabling_hint):
+     Describe the action the user should do to enable this preference. -->
+<!ENTITY pref_feature_tips_notification_enabling_hint2 "(Ak chcete povoliť túto možnosť, predvoľba &pref_feature_tips_notification_enabling_path; musí byť aktivovaná.)">
+
 <!-- Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
      for experimental features. -->
 <!ENTITY pref_category_experimental "Experimentálne funkcie">
@@ -363,7 +375,6 @@
 <!ENTITY pref_use_system_font_size_summary "Upraviť webový obsah v súlade so systémovým nastavením veľkosti písma">
 
 <!ENTITY pref_media_autoplay_enabled "Povoliť automatické prehrávanie">
-<!ENTITY pref_media_autoplay_enabled_summary "Určuje, či webové stránky môžu automaticky prehrávať videá a iné médiá">
 <!ENTITY pref_media_autoplay_allow "Povoliť automatické prehrávanie">
 <!ENTITY pref_media_autoplay_block "Zablokovať automatické prehrávanie">
 <!ENTITY pref_zoom_force_enabled "Vždy povoliť lupu">
@@ -828,9 +839,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- LOCALIZATION NOTE(corrupt_apk): This notification is shown if corruption has been detected on startup and the user has to reinstall Firefox -->
 <!ENTITY corrupt_apk "Aplikáciu &brandShortName; sa nepodarilo otvoriť. Preinštalujte ju a skúste to znova.">
 
-<!ENTITY eol_notification_title2 "&brandShortName; nebude viac aktualizovaný">
-<!ENTITY eol_notification_summary "Ťuknutím zistíte ďalšie informácie">
-
 <!-- LOCALIZATION NOTE (whatsnew_notification_title, whatsnew_notification_summary): These strings
      are used for a system notification that's shown to users after the app updates. -->
 <!ENTITY whatsnew_notification_title "Používate najnovšiu verziu prehliadača &brandShortName;">
@@ -897,10 +905,19 @@ Picture-in-picture mini window -->
 
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel "&brandShortName;">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel2 "Prehliadač">
 <!ENTITY mls_notification_channel "&vendorShortName; Location Service">
 <!ENTITY download_notification_channel "Prevzaté súbory">
 <!ENTITY media_notification_channel "Prehrávanie médií">
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
 <!ENTITY leanplum_default_notifications_channel "Upozornenia v aplikácii &brandShortName;">
+<!ENTITY media_notification_channel2 "Zvuk a video">
+<!-- These push notifications come without a specific channel and/or name from Leanplum -->
+<!ENTITY leanplum_default_notifications_channel2 "Tipy a triky od spoločnosti &vendorShortName;">
 <!ENTITY updater_notification_channel "Aktualizácie aplikácie">
 <!ENTITY synced_tabs_notification_channel "Synchronizované karty">
+<!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
+web sites through the HTML Notifications API. -->
+<!ENTITY site_notifications_channel "Upozornenia stránok">

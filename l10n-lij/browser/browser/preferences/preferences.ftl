@@ -53,6 +53,7 @@ pane-sync-title = Account Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = Sopòrto de { -brand-short-name }
+addons-button-label = Estenscioin e Temi
 focus-search =
     .key = f
 close-button =
@@ -326,7 +327,6 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = Proxy da Ræ
 network-settings-title = Inpostaçioin da ræ
 network-proxy-connection-description = Inpòsta o mòddo de conetise a l'internet de { -brand-short-name }.
 network-proxy-connection-learn-more = Pe saveine de ciù
@@ -525,6 +525,7 @@ privacy-header = Privacy do navegatô
 ## Privacy Section - Forms
 
 forms-header = Form e Paròlle segrete
+logins-header = Login e Poule segrete
 forms-ask-to-save-logins =
     .label = Domanda se sarvâ acessi e poule segrete pe-i sciti
     .accesskey = r
@@ -591,26 +592,12 @@ sitedata-total-size-calculating = Conto a dimenscion di dæti e da cache…
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = I cookie, dæti do scito e cache deuvian { $value } { $unit } de spaçion in sciô disco.
 sitedata-learn-more = Pe saveine de ciù
-sitedata-accept-cookies-option =
-    .label = Acetta cookie e dæti di sciti da-i sciti (consegiou)
-    .accesskey = A
-sitedata-block-cookies-option =
-    .label = Blòcca cookie e dæti di sciti (çerti sciti peuan no fonçionâ)
-    .accesskey = B
 sitedata-keep-until = Mantegni scinn-a che
     .accesskey = i
 sitedata-keep-until-expire =
     .label = Scazzan
 sitedata-keep-until-closed =
     .label = { -brand-short-name } o l'é serou
-sitedata-accept-third-party-desc = Acetta cookie e dæti di sciti da terse parte
-    .accesskey = s
-sitedata-accept-third-party-always-option =
-    .label = de longo
-sitedata-accept-third-party-visited-option =
-    .label = da-i sciti vixitæ
-sitedata-accept-third-party-never-option =
-    .label = mai
 sitedata-allow-cookies-option =
     .label = Acetta cookie e dæti do scito
     .accesskey = A
@@ -684,6 +671,9 @@ content-blocking-fastblock-slow-loading-trackers-label =
     .label = Traciatoî lenti a caregâ
     .accesskey = T
 content-blocking-fastblock-new-description = Blòcca solo i traciatoî che no fan caregâ e pagine a-a spedia.
+content-blocking-tracking-protection-trackers-label =
+    .label = Traciatoî
+    .accesskey = T
 content-blocking-tracking-protection-all-detected-trackers-label =
     .label = Tutti i traciatoî individoæ
     .accesskey = T
@@ -731,10 +721,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Mai
     .accesskey = m
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Deuvia a proteçion anti-traciamento inta navegaçion privâ pe i sciti che se san che tracian
-    .accesskey = v
 tracking-exceptions =
     .label = Eceçioin…
     .accesskey = c
@@ -857,3 +843,32 @@ certs-view =
 certs-devices =
     .label = Aparati de Seguessa…
     .accesskey = S
+space-alert-learn-more-button =
+    .label = Atre informaçioin
+    .accesskey = A
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Arvi inpostaçioin
+           *[other] Arvi preferense
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] A
+           *[other] A
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } o sta pe finî o spaçio in sciô disco. I contegnui do scito no peuan mostrase ben. Ti peu scancelâ i dæti sarvæ di sciti inte Preferense > Privacy e Seguessa > Cookie e Dæti di sciti.
+       *[other] { -brand-short-name } o sta pe finî o spaçio in sciô disco. I contegnui do scito no peuan mostrase ben. Ti peu scancelâ i dæti sarvæ di sciti inte Preferense > Privacy e Seguessa > Cookie e Dæti di sciti.
+    }
+space-alert-under-5gb-ok-button =
+    .label = Va ben, ò capio
+    .accesskey = b
+space-alert-under-5gb-message = { -brand-short-name } o sta pe finî o spaçio in sciô disco. I contegnui do scito no se peuan mostrase ben. Vixita “Atre informaçioin” pe otimizâ l'uzo do disco pe avei 'na megio esperiensa de navegaçion.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Desktop
+downloads-folder-name = Descaregamenti
+choose-download-folder-title = Çerni a cartella de descaregamento:

@@ -326,7 +326,6 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = Servidor intermediari de xarxa
 network-settings-title = Paràmetres de xarxa
 network-proxy-connection-description = Configureu com el { -brand-short-name } es connecta a Internet.
 network-proxy-connection-learn-more = Més informació
@@ -525,6 +524,7 @@ privacy-header = Privadesa del navegador
 ## Privacy Section - Forms
 
 forms-header = Formularis i contrasenyes
+logins-header = Inicis de sessió i contrasenyes
 forms-ask-to-save-logins =
     .label = Demana si vull desar les dades d'inici de sessió i contrasenyes dels llocs web
     .accesskey = d
@@ -591,26 +591,12 @@ sitedata-total-size-calculating = S'està calculant la mida de les dades dels ll
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Les galetes, les dades dels llocs i la memòria cau actualment ocupen { $value } { $unit } d'espai de disc.
 sitedata-learn-more = Més informació
-sitedata-accept-cookies-option =
-    .label = Accepta les galetes i dades dels llocs web (recomanat)
-    .accesskey = A
-sitedata-block-cookies-option =
-    .label = Bloca les galetes i dades dels llocs (pot fer que alguns llocs web no funcionin)
-    .accesskey = B
 sitedata-keep-until = Conserva-les fins que
     .accesskey = v
 sitedata-keep-until-expire =
     .label = vencin
 sitedata-keep-until-closed =
     .label = es tanqui el { -brand-short-name }
-sitedata-accept-third-party-desc = Accepta les galetes i dades dels llocs de tercers
-    .accesskey = t
-sitedata-accept-third-party-always-option =
-    .label = Sempre
-sitedata-accept-third-party-visited-option =
-    .label = De llocs visitats
-sitedata-accept-third-party-never-option =
-    .label = Mai
 sitedata-allow-cookies-option =
     .label = Accepta les galetes i dades dels llocs web
     .accesskey = A
@@ -684,6 +670,9 @@ content-blocking-fastblock-slow-loading-trackers-label =
     .label = Elements de seguiment lents
     .accesskey = s
 content-blocking-fastblock-new-description = Bloca només els elements de seguiment que alenteixen la càrrega de les pàgines.
+content-blocking-tracking-protection-trackers-label =
+    .label = Elements de seguiment
+    .accesskey = t
 content-blocking-tracking-protection-all-detected-trackers-label =
     .label = Tots els elements de seguiment detectats
     .accesskey = T
@@ -731,10 +720,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Mai
     .accesskey = M
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Utilitza la protecció contra el seguiment en la navegació privada per blocar elements de seguiment coneguts
-    .accesskey = v
 tracking-exceptions =
     .label = Excepcions…
     .accesskey = x
@@ -857,3 +842,32 @@ certs-view =
 certs-devices =
     .label = Dispositius de seguretat…
     .accesskey = D
+space-alert-learn-more-button =
+    .label = Més informació
+    .accesskey = M
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Obre les opcions
+           *[other] Obre les preferències
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] O
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] El { -brand-short-name } s'està quedant sense espai de disc. És possible que el contingut dels llocs web no es mostri correctament. Podeu esborrar les dades emmagatzemades dels llocs a «Opcions > Privadesa i seguretat > Galetes i dades dels llocs».
+       *[other] El { -brand-short-name } s'està quedant sense espai de disc. És possible que el contingut dels llocs web no es mostri correctament. Podeu esborrar les dades emmagatzemades dels llocs a «Preferències > Privadesa i seguretat > Galetes i dades dels llocs».
+    }
+space-alert-under-5gb-ok-button =
+    .label = Entesos
+    .accesskey = n
+space-alert-under-5gb-message = El { -brand-short-name } s'està quedant sense espai de disc. És possible que el contingut dels llocs web no es mostri correctament. Vegeu «Més informació» per optimitzar l'ús de disc i millorar l'experiència de navegació.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Escriptori
+downloads-folder-name = Baixades
+choose-download-folder-title = Tria la carpeta de baixades:

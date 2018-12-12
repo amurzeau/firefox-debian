@@ -18,6 +18,7 @@ policy-BlockAboutProfiles = Bloķēt pieeju about:profiles lapai.
 policy-BlockAboutSupport = Bloķēt pieeju about:support lapai.
 policy-Bookmarks = Izveidojiet grāmatzīmes grāmatzīmju rīkjoslā, grāmatzīmju izvēlnē vai konkrētā mapē kādā no šīm vietām.
 policy-Certificates = Nosaka, vai tiks izmantoti iebūvētie sertifikāti. Šobrīd šī politika darbojas vienīgi Windows sistēmās.
+policy-CertificatesDescription = Pievienojiet sertifikātus vai izmantojiet iebūvētos sertifikātus.
 policy-Cookies = Atļaujiet vai aizliedziet vietnēm iestatīt sīkdatnes.
 policy-DisableAppUpdate = Neļaut pārlūkam atjaunināties.
 policy-DisableBuiltinPDFViewer = Deaktivēt PDF.js, { -brand-short-name } iebūvēto PDF lasītāju.
@@ -42,6 +43,7 @@ policy-DisableSystemAddonUpdate = Liedz pārlūkam atjaunināt un instalēt sist
 policy-DisableTelemetry = Atslēdz telemetriju.
 policy-DisplayBookmarksToolbar = Pēc noklusējuma rāda grāmatzīmju rīkjoslu.
 policy-DisplayMenuBar = Pēc noklusējuma rāda izvēlnes joslu.
+policy-DNSOverHTTPS = DNS konfigurēšana, izmantojot HTTPS.
 policy-DontCheckDefaultBrowser = Deaktivē noklusētā pārlūka pārbaudi startējot.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Aktivē vai deaktivē satura bloķēšanu.
@@ -62,9 +64,12 @@ policy-OverridePostUpdatePage = Pārraksta pēc atjauninājumu "Kas jauns" lapu.
 policy-Permissions = Konfigurē kameras, mikrofona, atrašanās vietas un paziņojumu iestatījumus.
 policy-PopupBlocking = Ļaut zināmām lapām pēc noklusējuma rādīt uznirstošos logus.
 policy-Proxy = Konfigurē starpniekservera iestatījumus.
+policy-RequestedLocales = Iestatiet pieejamo valodu sarakstu prioritātes secībā.
 policy-SanitizeOnShutdown = Aizverot notīrīt visus pārvietošanās datus.
 policy-SearchBar = Iestata noklusēto meklēšanas joslas atrašanos. Šis joprojām ļauj lietotājam to mainīt.
 policy-SearchEngines = Konfigurē meklētāju iestatījumus. Šī politika ir pieejama vienīgi pagarinātā atbalsta laidienos (ESR).
+# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
+policy-SecurityDevices = Instalēt PCKS #11 moduļus.
 # “format” refers to the format used for the value of this policy. See also:
 # https://github.com/mozilla/policy-templates/blob/master/README.md#websitefilter-machine-only
 policy-WebsiteFilter = Bloķēt lapu apmeklēšanu. Sīkāka informācija par formātu pieejama dokumentācijā.

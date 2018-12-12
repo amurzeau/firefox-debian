@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = Болдырмау
 permissions-capabilities-prompt =
     .label = Әрқашан сұрау
+permissions-capabilities-listitem-allow =
+    .value = Рұқсат ету
+permissions-capabilities-listitem-block =
+    .value = Болдырмау
+permissions-capabilities-listitem-allow-first-party =
+    .value = Тек бірінші жаққа рұқсат ету
+permissions-capabilities-listitem-allow-session =
+    .value = Тек осы сессияға рұқсат ету
 
 ## Invalid Hostname Dialog
 
@@ -54,6 +62,10 @@ permissions-exceptions-tracking-protection-window =
     .title = Ережеден тыс - Бақылаудан қорғаныс
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = Бұл вебсайттарда бақылаудан қорғанысты сөндіргенсіз.
+permissions-exceptions-content-blocking-window =
+    .title = Ережеден тыс - Құраманы бұғаттау
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = Бұл веб-сайттар үшін құраманы бұғаттауды сөндіргенсіз.
 
 ## Exceptions - Cookies
 
@@ -85,10 +97,6 @@ permissions-exceptions-addons-desc = Қай сайт кеңейтулерді о
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = Рұқсат етілген веб-сайттар - Автоойнату
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = Қай веб-сайттара медиа элементтерін автоойнатуға рұқсат етілгенін көрсете аласыз. Рұқсат ету үшін сайттың толық адресін жазып, Рұқсат ету батырмасын басыңыз.
 permissions-exceptions-autoplay-media-window2 =
     .title = Ережеден тыс - автоойнату
     .style = { permissions-window.style }

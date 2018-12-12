@@ -18,6 +18,7 @@ policy-BlockAboutProfiles = Přistup na stronu about:profiles blokować.
 policy-BlockAboutSupport = Přistup na stronu about:support blokować.
 policy-Bookmarks = Zapołožki w symbolowej lajsće zapołožkow, w meniju zapołožkow abo w podatym rjadowaku znutřka njeju wutworić.
 policy-Certificates = Hač so zatwarjene certifikaty wužiwaja abo nic. Tute prawidła tuchwilu jenož za Windows płaća.
+policy-CertificatesDescription = Certifikaty přidać abo zatwarjene certifikaty wužiwać.
 policy-Cookies = Websydłam dowolić abo zakazać, placki składować.
 policy-DisableAppUpdate = Wobhladowakej aktualizowanje zakazać.
 policy-DisableBuiltinPDFViewer = PDF.js znjemóžnić, zatwarjeny PDF-wobhladowak w { -brand-short-name }.
@@ -42,6 +43,7 @@ policy-DisableSystemAddonUpdate = Wobhladowak při instalowanju a aktualizowanju
 policy-DisableTelemetry = Telemetriju znjemóžnić.
 policy-DisplayBookmarksToolbar = Lajstu zapołožkow po standardźe pokazać.
 policy-DisplayMenuBar = Menijowu lajstu po standardźe pokazać.
+policy-DNSOverHTTPS = DNS přez HTTPS konfigurować
 policy-DontCheckDefaultBrowser = Kontrolu za standardnym wobhladowakom při starće znjemóžnić.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Blokowanje wobsaha zmóžnić abo znjemóžnić a jo na přeće zawrěć.
@@ -62,9 +64,12 @@ policy-OverridePostUpdatePage = Stronu Nowe funkcije a změny po aktualizaciji p
 policy-Permissions = Prawa za kameru, mikrofon, stejnišćo a zdźělenki konfigurować.
 policy-PopupBlocking = Wěstym websydłam dowolić, wuskakowace wokna po standardźe pokazać.
 policy-Proxy = Nastajenja proksy konfigurować.
+policy-RequestedLocales = Podajće lisćinu požadanych rěčow za nałoženje w preferowanym porjedźe.
 policy-SanitizeOnShutdown = Nawigaciske daty při skónčenju zhašeć.
 policy-SearchBar = Standardne městno pytanskeho pola nastajić. Wužiwar móže jo hišće přiměrić.
 policy-SearchEngines = Nastajenja pytawow konfigurować. Tute prawidło je jenož za wersiju Extended Support Release (ESR) k dispoziciji.
+# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
+policy-SecurityDevices = Module PKCS #11 instalować.
 # “format” refers to the format used for the value of this policy. See also:
 # https://github.com/mozilla/policy-templates/blob/master/README.md#websitefilter-machine-only
 policy-WebsiteFilter = Wopytowanju websydłow zadźěwać. Hlejće dokumentaciju za dalše podrobnosće wo formaće.

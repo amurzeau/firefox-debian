@@ -3,8 +3,8 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 <!-- rights.locale-direction instead of the usual local.dir entity, so RTL can skip translating page. -->
 <!ENTITY rights.locale-direction "ltr">
-<!ENTITY rights.title            "Despre drepturile dumneavoastră">
-<!ENTITY rights.intro-header     "Despre drepturile dumneavoastră">
+<!ENTITY rights.title            "Despre drepturile tale">
+<!ENTITY rights.intro-header     "Despre drepturile tale">
 <!ENTITY rights.intro "&brandFullName; este un program liber și cu sursa deschisă, construit de o comunitate de mii de oameni din lumea întreagă. Câteva lucruri bine de știut:">
 
 <!-- Note on pointa / pointb / pointc form:
@@ -16,15 +16,15 @@
      Also note the leading/trailing whitespace in strings here, which is
      deliberate for formatting around the embedded links. -->
 <!ENTITY rights.intro-point1a "&brandShortName; este disponibil sub termenii ">
-<!ENTITY rights.intro-point1b "Licenței publice Mozilla">
-<!ENTITY rights.intro-point1c ". Înseamnă că puteți folosi, copia și distribui &brandShortName;. De asemenea, sunteți bineveniți să modificați codul sursă al &brandShortName; cum doriți pentru a vă întruni nevoile. Licența publică Mozilla vă oferă și dreptul de a distribui versiunile pe care le-ați modificat.">
+<!ENTITY rights.intro-point1b "Licenței Publice Mozilla">
+<!ENTITY rights.intro-point1c ". Înseamnă că poți folosi, copia și distribui &brandShortName;. De asemenea, ești binevenit să modifici cum dorești codul sursă &brandShortName; pentru a răspunde nevoilor tale. Licența publică Mozilla îți oferă și dreptul de a distribui versiunile pe care le-ai modificat.">
 
-<!ENTITY rights.intro-point2a "Mozilla nu te acordă niciun drept asupra logourilor și mărcilor comerciale Mozilla și Thunderbird. Pentru informații adiționale privind mărcile comerciale vezi ">
+<!ENTITY rights.intro-point2a "Mozilla nu îți acordă niciun drept asupra logourilor și mărcilor comerciale Mozilla și Thunderbird. Pentru informații adiționale privind mărcile comerciale vezi ">
 <!ENTITY rights.intro-point2b "aici">
 <!ENTITY rights.intro-point2c ".">
 
 <!-- point 3 text for official branded builds -->
-<!ENTITY rights.intro-point3a "Politica privind confidențialitatea datelor când folosești produsele &vendorShortName; poate fi găsită ">
+<!ENTITY rights.intro-point3a "Politicile de confidențialitate aferente produselor &vendorShortName; se găsesc ">
 <!ENTITY rights.intro-point3b "aici">
 <!ENTITY rights.intro-point3c ".">
 
@@ -48,11 +48,11 @@
      the UI, without this page being forgotten every time those strings are
      updated.  -->
 <!-- intro paragraph for branded builds -->
-<!ENTITY rights.webservices-a "&brandFullName; oferă servicii opționale (&quot;Servicii&quot;), cum ar fi serviciul de actualizare a suplimentelor, care vă sunt puse la dispoziție pentru utilizarea împreună cu această versiune binară de &brandShortName; conform descrierii de mai jos. Dacă nu doriți să folosiți Serviciile sau dacă nu puteți accepta termenii de mai jos, puteți dezactiva serviciul de actualizare a suplimentelor deschizând preferințele aplicației și selectând secțiunea ">
+<!ENTITY rights.webservices-a "&brandFullName; oferă servicii opționale (&quot;Servicii&quot;), cum ar fi serviciul de actualizare a suplimentelor, care sunt puse la dispoziție pentru utilizarea împreună cu această versiune binară de &brandShortName; conform descrierii de mai jos. Dacă nu dorești să folosești Serviciile sau dacă nu poți accepta termenii de mai jos, poți dezactiva serviciul de actualizare a suplimentelor deschizând preferințele aplicației și selectând secțiunea ">
 <!ENTITY rights.webservices-b "Avansat">
 <!ENTITY rights.webservices-c ", urmată de fila">
 <!ENTITY rights.webservices-d "Actualizare">
-<!ENTITY rights.webservices-e ", unde debifați opțiunile pentru „Caută automat actualizări pentru”.">
+<!ENTITY rights.webservices-e ", unde debifezi opțiunile pentru „Caută automat actualizări pentru”.">
 
 <!-- intro paragraph for unbranded builds -->
 <!ENTITY rights.webservices-unbranded "Aici trebuie incluse prezentarea generală a serviciilor înglobate în produs pentru site-uri web și instrucțiunile aferente de dezactivare, dacă este cazul.">
@@ -62,8 +62,8 @@
 
 <!-- points 1-7 text for branded builds -->
 <!ENTITY rights.webservices-term1 "&vendorShortName; poate întrerupe sau modifica Serviciile la libera sa apreciere.">
-<!ENTITY rights.webservices-term2 "Sunteți bineveniți să folosiți aceste Servicii și versiunea asociată de &brandShortName; și dețineți toate drepturile necesare în acest sens. &vendorShortName; și licențiatorii săi își rezervă toate celelalte drepturi asupra Serviciilor. Acești termeni nu sunt destinați să limiteze drepturi acordate sub licențe cu sursă deschisă aplicabile &brandShortName; sau versiunilor corespunzătoare de cod sursă ale &brandShortName;.">
-<!ENTITY rights.webservices-term3 "Serviciile sunt furnizate „ca atare”.  &vendorShortName;, colaboratorii, licențiatorii și distribuitorii săi declină toate garanțiile, exprese ori implicite, inclusiv, fără a se limita la, garanții de vandabilitate sau de adecvare a Serviciilor pentru un scop anume.  Veți suporta integral riscul legat de selectarea Serviciilor pentru scopurile dumneavoastră și cel implicat de calitatea și performanța Serviciilor. Unele jurisdicții nu permit excluderea sau limitarea garanțiilor implicite, și atunci este posibil ca prezenta declinare a responsabilității să nu se aplice în cazul dumneavoastră.">
-<!ENTITY rights.webservices-term4 "Cu excepția situațiilor prevăzute de lege, &vendorShortName;, colaboratorii, licențiatorii și distribuitorii săi nu vor fi trași la răspundere pentru orice daune indirecte, speciale, ocazionale, derivate, punitive sau exemplare izvorâte din sau legate în orice fel de utilizarea &brandShortName; și a Serviciilor. Răspunderea colectivă în baza prezenților termeni nu va depăși 500 $ (cinci sute de dolari). Unele jurisdicții nu permit excluderea sau limitarea anumitor daune, astfel încât este posibil ca această excludere și limitare să nu se aplice în cazul dumneavoastră.">
+<!ENTITY rights.webservices-term2 "Ești binevenit să folosești aceste Servicii și versiunea asociată &brandShortName; și deții toate drepturile necesare în acest sens. &vendorShortName; și licențiatorii săi își rezervă toate celelalte drepturi asupra Serviciilor. Acești termeni nu sunt destinați să limiteze drepturi acordate sub licențe cu sursă deschisă aplicabile &brandShortName; sau versiunilor corespunzătoare de cod sursă ale &brandShortName;.">
+<!ENTITY rights.webservices-term3 "Serviciile sunt furnizate „ca atare”.  &vendorShortName;, colaboratorii, licențiatorii și distribuitorii săi declină toate garanțiile, exprese ori implicite, inclusiv, fără a se limita la, garanții de vandabilitate sau de adecvare a Serviciilor pentru un scop anume.  Vei suporta integral riscul legat de selectarea Serviciilor pentru scopurile tale și cel implicat de calitatea și performanța Serviciilor. Unele jurisdicții nu permit excluderea sau limitarea garanțiilor implicite, și atunci este posibil ca prezenta declinare a responsabilității să nu se aplice în cazul tău.">
+<!ENTITY rights.webservices-term4 "Cu excepția situațiilor prevăzute de lege, &vendorShortName;, colaboratorii, licențiatorii și distribuitorii săi nu pot fi trași la răspundere pentru pagube indirecte, speciale, accidentale, consecutive, punitive sau exemplare ce decurg sau pot fi atribuite în vreun fel utilizării &brandShortName; și a Serviciilor.  Răspunderea colectivă în baza prezenților termeni nu va depăși 500 $ (cinci sute de dolari). Unele jurisdicții nu permit excluderea sau limitarea anumitor pagube, astfel încât este posibil ca această excludere și limitare să nu se aplice în cazul tău.">
 <!ENTITY rights.webservices-term5 "&vendorShortName; poate actualiza periodic acești termeni, după caz. Prezenții termeni nu pot fi modificați sau anulați fără acordul scris al &vendorShortName;.">
 <!ENTITY rights.webservices-term6 "Acești termeni sunt guvernați de legislația statului California, S.U.A., cu excepția prevederilor privind conflictul de legi. Dacă orice parte a prezenților termeni este considerată invalidă sau neexecutabilă, celelalte prevederi își vor păstra pe deplin validitatea și vor continua să producă efecte. În cazul unei neconcordanțe dintre o versiune tradusă a termenilor de față și versiunea în limba engleză, versiunea în limba engleză va prevala.">

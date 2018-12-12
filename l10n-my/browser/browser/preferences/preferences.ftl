@@ -51,6 +51,7 @@ pane-sync-title = Firefox အကောင့်
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } အထောက်အပံ့
+addons-button-label = တိုးချဲ့မှုနှင့် အပြင်အဆင်များ
 focus-search =
     .key = f
 close-button =
@@ -265,6 +266,7 @@ update-application-use-service =
 update-enable-search-update =
     .label = ရှာဖွေရေး ယန္တရားများကို အလိုအလျောက် မွမ်းမံပါ
     .accesskey = e
+update-pref-write-failure-title = ပျက်စီးဆုံးရှုံးမှုကို ရေးပါ
 
 ## General Section - Performance
 
@@ -303,11 +305,15 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = စာစရိုက်သည်နှင့် စရှာပါ
     .accesskey = x
+browsing-cfr-recommendations =
+    .label = သင့်ရှာဖွေမှုတွင် တိုးချဲ့မှုများကို အကြံပေးပါ
+    .accesskey = R
+browsing-cfr-recommendations-learn-more = ပိုမိုလေ့လာရန်
 
 ## General Section - Proxy
 
-network-proxy-title = ကွန်ယက်ကြားခံဆာဗာ
 network-settings-title = ကွန်ယက် အပြင်အဆင်များ
+network-proxy-connection-description = အင်တာနက်နှင့် { -brand-short-name } ချိတ်ဆက်ပုံကို ပြုပြင်ပါ
 network-proxy-connection-learn-more = ပိုမိုလေ့လာရန်
 network-proxy-connection-settings =
     .label = အပြင်အဆင်များ...
@@ -503,6 +509,7 @@ privacy-header = ဘရောင်ဇာ ကိုယ်ရေးကာကွ�
 ## Privacy Section - Forms
 
 forms-header = ဖောင်များ & စကားဝှက်များ
+logins-header = အကောင့်ဝင်ရောက်မှုနှင့်စကားဝှက်များ
 forms-ask-to-save-logins =
     .label = ဆိုက်များအတွက် ဝင်ရောက်မှုများနှင့် စကားဝှက်များကို မှတ်ရန် မေးပါ
     .accesskey = r
@@ -565,32 +572,22 @@ history-clear-button =
 sitedata-header = ကွတ်ကီးနှင့် ဆိုက်အချက်အလက်များ
 sitedata-total-size-calculating = ဆိုက်အချက်အလက်နှင့် ယာယီအချက်အလက် cache သုံးစွဲမှုပမာဏကို တွက်ချက်နေသည်...
 sitedata-learn-more = ပိုမိုလေ့လာရန်
-sitedata-accept-cookies-option =
-    .label = ကွတ်ကီးများနှင့် ဝဘ်ဆိုက်များ၏ ဆိုက်အချက်အလက်ကို သိမ်းရန် လက်ခံပါ (အကြံပြုထားသည်)
-    .accesskey = A
-sitedata-block-cookies-option =
-    .label = ကွတ်ကီးနှင့်ဆိုက်ဒေတာများကိုတားဆီးမည် (ဝဘ်ဆိုက်များ ကောင်းစွာ ဆောင်ရွက်နိုင်မည်မဟုတ်)
-    .accesskey = B
 sitedata-keep-until = ထိုအချိန်ထိ သိမ်းထားပါ
     .accesskey = u
 sitedata-keep-until-expire =
     .label = သက်တမ်းစေ့လျှင်
 sitedata-keep-until-closed =
     .label = { -brand-short-name } ကို ပိတ်သည်
-sitedata-accept-third-party-desc = ကွတ်ကီးများနှင့် ဝဘ်ဆိုက် အချက်အလက်များကို လက်ခံပါ
-    .accesskey = y
-sitedata-accept-third-party-always-option =
-    .label = အမြဲတမ်း
-sitedata-accept-third-party-visited-option =
-    .label = ကြည့်ရှုထားသည့် နေ့မှစ၍
-sitedata-accept-third-party-never-option =
-    .label = ဘယ်တော့မှ
 sitedata-allow-cookies-option =
     .label = ကွတ်ကီးများနှင့် ဆိုက်အချက်အလက်ကို လက်ခံရန်
     .accesskey = A
 sitedata-disallow-cookies-option =
     .label = ကွတ်ကီးများနှင့် ဆိုက်အချက်အလက်ကို မသိမ်းရန်
     .accesskey = B
+sitedata-block-trackers-option-recommended =
+    .label = third-party ခြေရာခံ (အကြံပြုထားသည်)
+sitedata-block-trackers-option =
+    .label = third-party ခြေရာခံ
 sitedata-clear =
     .label = အချက်အလက်ကို ရှင်းပါ...
     .accesskey = l
@@ -618,7 +615,11 @@ addressbar-suggestions-settings = ရှာဖွေရေးယန္တရာ�
 
 ## Privacy Section - Content Blocking
 
+content-blocking-header = စာမျက်နှာတွင် ပါဝင်သည်များကို တားဆီးခြင်း
 content-blocking-learn-more = ပိုမိုလေ့လာရန်
+content-blocking-restore-defaults =
+    .label = စံပုံစံများ ပြန်လည်သိမ်းပါ
+    .accesskey = R
 content-blocking-toggle-label-on = ဖွင့်
     .accesskey = O
 content-blocking-toggle-label-off = ပိတ်
@@ -626,6 +627,19 @@ content-blocking-toggle-label-off = ပိတ်
 content-blocking-tracking-protection-option-always =
     .label = အမြဲ
     .accesskey = A
+content-blocking-tracking-protection-option-private =
+    .label = သီးသန့်ကြည့်ရှုမှုသာလျှင်
+    .accesskey = p
+content-blocking-tracking-protection-change-block-list = ပိတ်ထားသည့်စာရင်းကို ပြောင်းရန်
+content-blocking-third-party-cookies-label =
+    .label = အခြား ကွတ်ကီးများ
+    .accesskey = C
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = ခြေရာခံသူများ (အကြံပေးချက်)
+    .accesskey = k
+content-blocking-reject-trackers-block-trackers-option =
+    .label = ခြေရာခံသူများ
+    .accesskey = k
 
 ## Privacy Section - Tracking
 
@@ -640,10 +654,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = ဘယ်တော့မှ
     .accesskey = n
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = ခြေရာခံသူများကို တားဆီးရန် ကိုယ်ရေးရှာဖွေမှုဆိုင်ရာတွင် ခြေရာခံကာကွယ်မှုအသုံးပြုပါ
-    .accesskey = v
 tracking-exceptions =
     .label = ခြွင်းချက်များ…
     .accesskey = x
@@ -677,6 +687,12 @@ permissions-notification-pause =
 permissions-block-autoplay-media-exceptions =
     .label = ခြွင်းချက်များ
     .accesskey = E
+autoplay-option-ask =
+    .label = အမြဲမေးပါ
+autoplay-option-allow =
+    .label = အလိုအလျောက်ပြသမှု ဖွင့်ပါ
+autoplay-option-dont =
+    .label = အလိုအလျောက်ပြသမှု ပိတ်ပါ
 permissions-autoplay-link = ပိုမိုလေ့လာရန်
 permissions-block-popups =
     .label = ပေါ့အပ်ဝင်းဒိုးများကို မဖွင့်ပါနှင့်
@@ -749,3 +765,36 @@ certs-view =
 certs-devices =
     .label = လုံခြုံရေး ကိရိယာများ...
     .accesskey = D
+space-alert-learn-more-button =
+    .label = ပိုမိုလေ့လာရန်
+    .accesskey = L
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] အပြင်အဆင်များကို ဖွင့်ပါ
+           *[other] နှစ်သက်ရာအပြင်အဆင်များကို ဖွင့်ပါ
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] O
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } ကို အသုံးပြုရန် နေရာလွတ်မရှိတော့ပါ။ ဝဘ်ဆိုက်ရှိ အကြောင်းအရာများကို ကောင်းမွန်စွာ ပြသနိုင်မည် မဟုတ်ပါ။ သိမ်းဆည်းထားသည့် ဝဘ်ဆိုက်အချက်အလက်များကို အပြင်အဆင်များ > ကိုယ်ရေးကာကွယ်မှုနှင့် လုံခြုံမှု > ဝဘ်ဆိုက်ဒေတာ တွင် ရှင်းလင်းနိုင်သည်။
+       *[other] { -brand-short-name } ကို အသုံးပြုရန် နေရာလွတ်မရှိတော့ပါ။ ဝဘ်ဆိုက်ရှိ အကြောင်းအရာများကို ကောင်းမွန်စွာ ပြသနိုင်မည် မဟုတ်ပါ။ သိမ်းဆည်းထားသည့် ဝဘ်ဆိုက်အချက်အလက်များကို အပြင်အဆင်များ > ကိုယ်ရေးကာကွယ်မှုနှင့် လုံခြုံမှု > ဝဘ်ဆိုက်ဒေတာ တွင် ရှင်းလင်းနိုင်သည်။
+    }
+space-alert-under-5gb-ok-button =
+    .label = ကောင်းပြီ၊ ရပါပြီ
+    .accesskey = K
+space-alert-under-5gb-message = { -brand-short-name } ကို အသုံးပြုရန် နေရာလွတ်မရှိတော့ပါ။ ဝဘ်ဆိုက်ရှိအကြောင်းအရာများကို ကောင်းမွန်စွာ ပြသနိုင်မည် မဟုတ်ပါ။ ပိုမိုကောင်းမွန်သော အင်တာနက်ကြည့်ရှုမှု ရရှိရန်အတွက် နေရာလွတ်အသုံးပြုမှုကို ပိုမိုကျစ်လစ်ကောင်းမွန်စေရန် “ပိုမိုလေ့လာရန်” သို့ သွားရောက်ကြည့်ရှုပါ။
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = ဒက်စ်တော့
+downloads-folder-name = ဆွဲယူထားသော ဖိုင်များ
+choose-download-folder-title = ဆွဲယူထားသည့် ဖိုင်များထားရာနေရာကို ရွေးပါ
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = { $service-name } သို့ ဖိုင်မှတ်သားပါ

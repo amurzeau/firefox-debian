@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = Estä
 permissions-capabilities-prompt =
     .label = Kysy aina
+permissions-capabilities-listitem-allow =
+    .value = Salli
+permissions-capabilities-listitem-block =
+    .value = Estä
+permissions-capabilities-listitem-allow-first-party =
+    .value = Salli vain ensimmäisen osapuolen
+permissions-capabilities-listitem-allow-session =
+    .value = Salli istunnon ajaksi
 
 ## Invalid Hostname Dialog
 
@@ -54,6 +62,10 @@ permissions-exceptions-tracking-protection-window =
     .title = Poikkeukset - Seurannan suojaus
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = Olet poistanut seurannan suojauksen näiltä sivustoilta.
+permissions-exceptions-content-blocking-window =
+    .title = Poikkeukset - Sisällön esto
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = Olet poistanut käytöstä sisällön eston näillä sivustoilla.
 
 ## Exceptions - Cookies
 
@@ -85,10 +97,6 @@ permissions-exceptions-addons-desc = Lisäosia voidaan asentaa määrätyiltä s
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = Sallitut sivustot - Automaattinen toisto
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = Voit valita, mitkä sivustot saavat toistaa mediaa automaattisesti. Kirjoita sivuston osoite ja napsauta Salli.
 permissions-exceptions-autoplay-media-window2 =
     .title = Poikkeukset - Automaattinen toisto
     .style = { permissions-window.style }

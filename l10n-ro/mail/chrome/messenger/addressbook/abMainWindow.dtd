@@ -31,7 +31,7 @@
 <!ENTITY closeCmd.accesskey                             "h">
 <!ENTITY printSetupCmd.label                            "Aranjare în pagină…">
 <!ENTITY printSetupCmd.accesskey                        "j">
-<!ENTITY printPreviewContactCmd.label                   "Previzualizare tipărire contact">
+<!ENTITY printPreviewContactCmd.label                   "Previzualizează tipărirea contactului">
 <!ENTITY printPreviewContactCmd.accesskey               "v">
 <!ENTITY printPreviewAddressBook.label                  "Previzualizează tipărirea agendei de contacte">
 <!ENTITY printPreviewAddressBook.accesskey              "P">
@@ -71,7 +71,7 @@
 <!ENTITY selectAllCmd.key                               "A">
 <!ENTITY searchAddressesCmd.key                         "F">
 <!ENTITY selectAllCmd.accesskey                         "a">
-<!ENTITY swapFirstNameLastNameCmd.label                 "Interschimbă numele cu prenumele">
+<!ENTITY swapFirstNameLastNameCmd.label                 "Schimbă între prenume/nume de familie">
 <!ENTITY swapFirstNameLastNameCmd.accesskey             "b">
 <!-- LOCALIZATION NOTE (hideSwapFnLnUI) : DONT_TRANSLATE -->
 <!-- Swap FN/LN UI  Set to "false" to show swap fn/ln UI -->
@@ -83,7 +83,7 @@
 <!ENTITY abPropertiesMenu.accesskey                     "i">
 <!ENTITY contactPropertiesMenu.label                    "Proprietățile contactului">
 <!ENTITY contactPropertiesMenu.accesskey                "i">
-<!ENTITY mailingListPropertiesMenu.label                "Proprietățile listei de e-mail">
+<!ENTITY mailingListPropertiesMenu.label                "Proprietățile listei de adrese">
 <!ENTITY mailingListPropertiesMenu.accesskey            "i">
 
 <!-- View Menu -->
@@ -91,9 +91,9 @@
 <!ENTITY viewMenu.accesskey                             "V">
 <!ENTITY viewToolbarsMenu.label                         "Bare de unelte">
 <!ENTITY viewToolbarsMenu.accesskey                     "t">
-<!ENTITY menubarCmd.label                               "Bara cu meniul">
+<!ENTITY menubarCmd.label                               "Bară de meniu">
 <!ENTITY menubarCmd.accesskey                           "m">
-<!ENTITY showAbToolbarCmd.label                         "Bara cu contacte">
+<!ENTITY showAbToolbarCmd.label                         "Bară cu contacte">
 <!ENTITY showAbToolbarCmd.accesskey                     "o">
 <!ENTITY showTaskbarCmd.label                           "Bară de stare">
 <!ENTITY showTaskbarCmd.accesskey                       "s">
@@ -105,7 +105,7 @@
 <!ENTITY showDirectoryPane.accesskey                    "d">
 <!ENTITY showContactPane2.label                         "Panoul cu contacte">
 <!ENTITY showContactPane2.accesskey                     "c">
-<!ENTITY menu_ShowNameAs.label                          "Afișează numele în forma">
+<!ENTITY menu_ShowNameAs.label                          "Afișează numele de forma">
 <!ENTITY menu_ShowNameAs.accesskey                      "n">
 <!-- LOCALIZATION NOTE (firstLastCmd2.label): We're not including a comma here
 because displayed names don't have the comma in between. -->
@@ -131,7 +131,7 @@ because displayed names don't have the comma in between. -->
 <!ENTITY searchAddressesCmd.accesskey                   "s">
 <!ENTITY importCmd.label                                "Import…">
 <!ENTITY importCmd.accesskey                            "I">
-<!ENTITY exportCmd.label                                "Exportă…">
+<!ENTITY exportCmd.label                                "Export…">
 <!ENTITY exportCmd.accesskey                            "E">
 <!ENTITY preferencesCmd2.label                          "Opțiuni">
 <!ENTITY preferencesCmd2.accesskey                      "O">
@@ -167,9 +167,9 @@ because displayed names don't have the comma in between. -->
 <!ENTITY newContactButton.tooltip                       "Creează un contact nou în agendă">
 <!ENTITY newlistButton.tooltip                          "Creează o nouă listă">
 <!ENTITY editPropertiesButton.tooltip                   "Editează elementul selectat">
-<!ENTITY editAbPropertiesButton.tooltip                 "Editați proprietățile agendei de contacte selectată">
-<!ENTITY editContactPropertiesButton.tooltip            "Editați contactul selectat">
-<!ENTITY editMailingListPropertiesButton.tooltip        "Editați lista de mail selectată">
+<!ENTITY editAbPropertiesButton.tooltip                 "Editează proprietățile agendei de contacte selectată">
+<!ENTITY editContactPropertiesButton.tooltip            "Editează contactul selectat">
+<!ENTITY editMailingListPropertiesButton.tooltip        "Editează lista de adrese selectată">
 <!ENTITY newmsgButton.tooltip                           "Trimite un mesaj e-mail">
 <!ENTITY newIM.tooltip                                  "Trimite un mesaj instantaneu sau conversează prin chat">
 <!ENTITY deleteButton2.tooltip                          "Șterge elementul selectat">

@@ -10,9 +10,10 @@
 <!ENTITY returnToPreviousPage.label "Gå bakåt">
 <!ENTITY returnToPreviousPage1.label "Gå tillbaka (rekommenderas)">
 <!ENTITY advanced.label "Avancerat">
-
 <!ENTITY continue2.label "Mer…">
 <!ENTITY moreInformation.label "Mer information">
+
+<!ENTITY viewCertificate.label "Visa certifikat">
 
 <!-- Specific error messages -->
 
@@ -95,14 +96,20 @@
 
 <!ENTITY certerror.longpagetitle1 "Din anslutning är inte säker">
 <!ENTITY certerror.longpagetitle2 "Varning: Möjlig säkerhetsrisk framöver">
+<!ENTITY certerror.sts.longpagetitle  "Kunde inte ansluta: Potentiellt säkerhetsproblem">
 <!-- Localization note (certerror.introPara, certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "Ägaren av <span class='hostname'/> har konfigurerat sin webbplats felaktigt.  För att skydda din information från att bli stulen, har &brandShortName; inte anslutit till denna webbplats.">
-
 <!ENTITY certerror.introPara2 "&brandShortName; upptäckte ett potentiellt säkerhetshot och fortsatte inte till <span class='hostname'/>. Om du besöker den här webbplatsen kan angripare försöka stjäla information som lösenord, e-post eller kreditkortsuppgifter.">
 
 <!ENTITY certerror.expiredCert.secondPara "Problemet beror sannolikt på att datorns klocka är inställd på fel tid, vilket hindrar &brandShortName; från att ansluta säkert.">
+
+<!ENTITY certerror.sts.introPara "&brandShortName; upptäckte ett potentiellt säkerhetshot och fortsatte inte <span class='hostname'/> eftersom den här webbplatsen kräver en säker anslutning.">
+
+<!ENTITY certerror.expiredCert.introPara "&brandShortName; upptäckte ett problem och fortsatte inte till <span class='hostname'/>. Webbplatsen är antingen felkonfigurerad eller din klocka är inställd på fel tid.">
+<!ENTITY certerror.expiredCert.secondPara2 "Det är troligt att webbplatsens certifikat har upphört, vilket förhindrar &brandShortName; från att ansluta säkert. Om du besöker den här webbplatsen kan angripare försöka stjäla information som lösenord, e-post eller kreditkortsuppgifter.">
+<!ENTITY certerror.expiredCert.sts.secondPara "Det är troligt att webbplatsens certifikat har upphört, vilket förhindrar &brandShortName; från att ansluta säkert.">
 
 <!ENTITY certerror.whatCanYouDoAboutItTitle "Vad kan du göra åt det?">
 
@@ -130,7 +137,6 @@ was trying to connect. -->
 
 
 <!ENTITY securityOverride.exceptionButtonLabel "Lägg till undantag…">
-
 <!ENTITY securityOverride.exceptionButton1Label "Acceptera risken och fortsätt">
 
 <!ENTITY errorReporting.automatic2 "Rapportera fel som detta för att hjälpa Mozilla identifiera och blockera skadliga webbplatser">
@@ -152,6 +158,7 @@ was trying to connect. -->
 
 <!ENTITY certerror.pagetitle1  "Osäker anslutning">
 <!ENTITY certerror.pagetitle2  "Varning: Möjlig säkerhetsrisk framöver">
+<!ENTITY certerror.sts.pagetitle  "Kunde inte ansluta: Potentiellt säkerhetsproblem">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Denna webbplats använder HTTP Strict Transport Security (HSTS) för att ange att &brandShortName; endast kan ansluta dit säkert. Därför är det inte möjligt att lägga till ett undantag för detta certifikat.">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'></span> har en säkerhetspolicy som heter HTTP Strict Transport Security (HSTS), vilket innebär att &brandShortName; kan endast anslutas säkert till den. Du kan inte lägga till ett undantag för att besöka denna webbplats.">
 <!ENTITY certerror.copyToClipboard.label "Kopiera text till urklipp">
@@ -168,3 +175,6 @@ was trying to connect. -->
 
 <!ENTITY prefReset.longDesc "Det ser ut som nätverkets säkerhetsinställningar kan orsaka detta. Vill du att standardinställningarna ska återställas?">
 <!ENTITY prefReset.label "Återställ standardinställningar">
+
+<!ENTITY networkProtocolError.title "Nätverksprotokollfel">
+<!ENTITY networkProtocolError.longDesc "<p>Sidan du försöker visa kan inte visas eftersom ett fel i nätverksprotokollet upptäcktes.</p><ul><li>Vänligen kontakta webbplatsens ägare för att informera dem om detta problem.</li></ul>">

@@ -7,13 +7,13 @@ Subject: Set javascript.options.showInConsole
  1 file changed, 1 insertion(+)
 
 diff --git a/modules/libpref/init/all.js b/modules/libpref/init/all.js
-index 52ba9b2912c9..acd3abac1643 100644
+index 6cc93c19fefc..5a999c8e03cd 100644
 --- a/modules/libpref/init/all.js
 +++ b/modules/libpref/init/all.js
-@@ -1422,6 +1422,7 @@ pref("javascript.options.strict.debug",     false);
- #endif
- pref("javascript.options.baselinejit",      true);
- pref("javascript.options.ion",              true);
+@@ -1421,6 +1421,7 @@ pref("javascript.options.ion",              true);
+ pref("javascript.options.ion.threshold",    1000);
+ //Duplicated in JitOptions - ensure both match.
+ pref("javascript.options.ion.frequent_bailout_threshold", 10);
 +pref("javascript.options.showInConsole",    true);
  pref("javascript.options.asmjs",            true);
  pref("javascript.options.wasm",             true);

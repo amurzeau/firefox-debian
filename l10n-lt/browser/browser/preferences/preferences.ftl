@@ -53,6 +53,7 @@ pane-sync-title = „Firefox“ paskyra
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = „{ -brand-short-name }“ pagalba
+addons-button-label = Priedai ir grafiniai apvalkalai
 focus-search =
     .key = f
 close-button =
@@ -83,6 +84,9 @@ extension-controlled-homepage-override = Priedas „<img data-l10n-name="icon"/>
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Priedas „<img data-l10n-name="icon"/> { $name }“ valdo jūsų naujos kortelės tinklalapį.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = Šią nuostatą valdo priedas <img data-l10n-name="icon"/> „{ $name }“.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Priedas „<img data-l10n-name="icon"/> { $name }“ pakeitė jūsų numatytąją ieškyklę.
@@ -149,6 +153,9 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = Įspėti prieš užveriant daugiau kaip vieną kortelę
     .accesskey = d
+warn-on-quit-close-multiple-tabs =
+    .label = Perspėti prieš išjungiant ir uždarant keletą kortelių
+    .accesskey = t
 warn-on-open-many-tabs =
     .label = Įspėti prieš atveriant daug kortelių, kurios gali sulėtinti „{ -brand-short-name }“ darbą
     .accesskey = s
@@ -287,6 +294,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = automatiškai naujinti ieškykles
     .accesskey = e
+update-pref-write-failure-title = Įrašymo klaida
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = Nepavyko įrašyti nuostatos. Negalima įrašyti į failą: { $path }
 
 ## General Section - Performance
 
@@ -326,10 +337,13 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Pradėti paiešką pradėjus rinkti tekstą
     .accesskey = P
+browsing-cfr-recommendations =
+    .label = Rekomenduoti priedus naršant
+    .accesskey = R
+browsing-cfr-recommendations-learn-more = Sužinoti daugiau
 
 ## General Section - Proxy
 
-network-proxy-title = Tinklo įgaliotasis serveris
 network-settings-title = Tinklo nuostatos
 network-proxy-connection-description = Nustatykite, kaip „{ -brand-short-name }“ jungiasi prie interneto.
 network-proxy-connection-learn-more = Sužinoti daugiau
@@ -528,6 +542,7 @@ privacy-header = Naršyklės privatumas
 ## Privacy Section - Forms
 
 forms-header = Formos ir slaptažodžiai
+logins-header = Prisijungimai ir slaptažodžiai
 forms-ask-to-save-logins =
     .label = Klausti, ar norite įrašyti svetainių prisijungimus ir slaptažodžius
     .accesskey = r
@@ -594,26 +609,15 @@ sitedata-total-size-calculating = Skaičiuojamas svetainių duomenų ir podėlio
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Saugomi slapukai, svetainių duomenys ir podėlis šiuo metu užima { $value } { $unit } disko vietos.
 sitedata-learn-more = Sužinoti daugiau
-sitedata-accept-cookies-option =
-    .label = Leisti įrašyti slapukus ir svetainių duomenis (rekomenduojama)
-    .accesskey = L
-sitedata-block-cookies-option =
-    .label = Neleisti įrašyti slapukų ir svetainių duomenų (gali sutrikti svetainių veikimas)
-    .accesskey = N
 sitedata-keep-until = Laikyti iki
     .accesskey = y
 sitedata-keep-until-expire =
     .label = jie baigia galioti
 sitedata-keep-until-closed =
     .label = „{ -brand-short-name }“ yra uždaroma
-sitedata-accept-third-party-desc = Leisti trečiųjų šalių slapukus ir svetainių duomenis
-    .accesskey = j
-sitedata-accept-third-party-always-option =
-    .label = Visada
-sitedata-accept-third-party-visited-option =
-    .label = tik lankytoms svetainėms
-sitedata-accept-third-party-never-option =
-    .label = niekada
+sitedata-delete-on-close =
+    .label = Ištrinti slapukus ir svetainių duomenis uždarant „{ -brand-short-name }“
+    .accesskey = s
 sitedata-allow-cookies-option =
     .label = Priimti slapukus ir svetainių duomenis
     .accesskey = P
@@ -647,6 +651,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = Jūsų „turinio blokavimo“ nuostatos neleidžia pakeisti „slapukų ir svetainių duomenų“ nuostatų.
+sitedata-cookies-permissions =
+    .label = Tvarkyti leidimus…
+    .accesskey = l
 
 ## Privacy Section - Address Bar
 
@@ -667,6 +674,7 @@ addressbar-suggestions-settings = Keisti ieškyklių siūlymų nuostatas
 
 content-blocking-header = Turinio blokavimas
 content-blocking-desc = Blokuokite trečiųjų šalių turinį, pvz., reklamas ir kodą, galintį sulėtinti jūsų naršymą ir stebėti jūsų naršymo įpročius. Pritaikykite nuostatas sau, kad pasiektumėte geriausią saugumo ir našumo balansą.
+content-blocking-description = Blokuokite trečiųjų šalių turinį, kuris stebi jūsų veiklą internete. Kontroliuokite, kiek jūsų veiklos saugoma ir dalijamasi tarp svetainių.
 content-blocking-learn-more = Sužinoti daugiau
 content-blocking-restore-defaults =
     .label = Atstatyti numatytąsias
@@ -687,6 +695,28 @@ content-blocking-fastblock-slow-loading-trackers-label =
     .label = Lėtai įkeliami stebėjimo elementai
     .accesskey = L
 content-blocking-fastblock-new-description = Blokuoti tik tinklalapių įkėlimą stabdančius stebėjimo elementus.
+content-blocking-setting-standard =
+    .label = Standartinis
+    .accesskey = d
+content-blocking-setting-strict =
+    .label = Griežtas
+    .accesskey = r
+content-blocking-setting-custom =
+    .label = Kitas
+    .accesskey = K
+content-blocking-standard-desc = Pritaikyta saugumui ir našumui. Leidžia dalį stebėjimo elementų, kad svetainės veiktų tinkamai.
+content-blocking-strict-desc = Blokuoja visus „{ -brand-short-name }“ aptinkamus stebėjimo elementus. Gali sutrikti kai kurių svetainių veikimas.
+content-blocking-custom-desc = Pasirinkite, ką blokuoti.
+content-blocking-private-trackers = Žinomi stebėjimo elementai tik privačiojo naršymo languose
+content-blocking-third-party-cookies = Trečiųjų šalių stebėjimo slapukai
+content-blocking-all-windows-trackers = Žinomi stebėjimo elementai visuose languose
+content-blocking-all-third-party-cookies = Visi trečiųjų šalių slapukai
+content-blocking-warning-title = Dėmesio!
+content-blocking-warning-desc = Užblokavus slapukus ir stebėjimo elementus, gali sutrikti kai kurių svetainių veikimas. Galite lengvai išjungti blokavimą patikimose svetainėse.
+content-blocking-learn-how = Sužinoti kaip
+content-blocking-tracking-protection-trackers-label =
+    .label = Stebėjimo elementai
+    .accesskey = t
 content-blocking-tracking-protection-all-detected-trackers-label =
     .label = Visi aptikti stebėjimo elementai
     .accesskey = e
@@ -719,6 +749,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = Visi trečiųjų šalių slapukai (gali sutrikti svetainių veikimas)
     .accesskey = V
+content-blocking-cookies-label =
+    .label = Slapukai
+    .accesskey = S
 
 ## Privacy Section - Tracking
 
@@ -734,16 +767,15 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Niekada
     .accesskey = N
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Naudokite apsaugą nuo stebėjimo privačiojo naršymo veiksenoje, norėdami užblokuoti žinomus stebėjimo elementus
-    .accesskey = v
 tracking-exceptions =
     .label = Išimtys…
     .accesskey = I
 tracking-change-block-list =
     .label = Keisti blokavimo sąrašą…
     .accesskey = K
+tracking-manage-exceptions =
+    .label = Tvarkyti išimtis…
+    .accesskey = m
 
 ## Privacy Section - Permissions
 
@@ -860,3 +892,36 @@ certs-view =
 certs-devices =
     .label = Saugumo priemonės…
     .accesskey = S
+space-alert-learn-more-button =
+    .label = Sužinoti daugiau
+    .accesskey = u
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Atverti nuostatas
+           *[other] Atverti nuostatas
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] v
+           *[other] v
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] „{ -brand-short-name }“ tuoj pritrūks vietos diske. Svetainių turinys gali būti atvaizduojamas netinkamai. Galite išvalyti saugomus duomenis per „Nuostatos“ > „Privatumas ir saugumas“ > „Slapukai ir svetainių duomenys“.
+       *[other] „{ -brand-short-name }“ tuoj pritrūks vietos diske. Svetainių turinys gali būti atvaizduojamas netinkamai. Galite išvalyti saugomus duomenis per „Nuostatos“ > „Privatumas ir saugumas“ > „Slapukai ir svetainių duomenys“.
+    }
+space-alert-under-5gb-ok-button =
+    .label = Gerai, supratau
+    .accesskey = G
+space-alert-under-5gb-message = „{ -brand-short-name }“ tuoj pritrūks vietos diske. Svetainių turinys gali būti atvaizduojamas netinkamai. Spustelėkite „Sužinoti daugiau“, norėdami optimizuoti savo disko naudojimą efektyvesniam naršymui.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Darbalaukis
+downloads-folder-name = Atsiuntimų aplankas
+choose-download-folder-title = Atsiuntimų aplanko parinkimas
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Įrašyti failus į „{ $service-name }“

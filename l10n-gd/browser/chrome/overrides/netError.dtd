@@ -8,7 +8,12 @@
 <!ENTITY loadError.label "Duilgheadas le luchdadh na duilleige">
 <!ENTITY retry.label "Feuch ris a-rithist">
 <!ENTITY returnToPreviousPage.label "Air ais">
+<!ENTITY returnToPreviousPage1.label "Air ais (Mholamaid seo)">
 <!ENTITY advanced.label "Adhartach">
+<!ENTITY continue2.label "Barrachd…">
+<!ENTITY moreInformation.label "Barrachd fiosrachaidh">
+
+<!ENTITY viewCertificate.label "Seall an teisteanas">
 
 <!-- Specific error messages -->
 
@@ -88,10 +93,35 @@
 <!ENTITY nssFailure2.longDesc2 "<ul> <li>Cha ghabh an duilleag a bha thu airson faicinn a shealltainn a chionn 's nach do ghabh fìrinneachd an dàta a fhuaradh a dhearbhadh.</li> <li>Leig fios gu na daoine aig a bheil an làrach mun duilgheadas seo.</li> </ul>">
 
 <!ENTITY certerror.longpagetitle1 "Chan eil an ceangal agad tèarainte">
-<!-- Localization note (certerror.introPara) - The text content of the span tag
+<!ENTITY certerror.longpagetitle2 "Rabhadh: Tha rud romhad a dh’fhaodadh a bhith ’na chunnart tèarainteachd">
+<!ENTITY certerror.sts.longpagetitle  "Cha deach ceangal a dhèanamh: Rud a dh’fhaodadh a bhith ’na chunnart tèarainteachd">
+<!-- Localization note (certerror.introPara, certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "Chaidh an làrach <span class='hostname'/> a dhroch-rèiteachadh. Cha do rinn &brandShortName; ceangal ris an làrach seo air eagal ’s gun rachadh dàta a ghoid ort.">
+<!ENTITY certerror.introPara2 "Mhothaich &brandShortName; do rud a dh’fhaodadh a bhith ’na chunnart tèarainteachd is cha do thadhail e air <span class='hostname'/>. Ma thadhlas tu air an làrach seo, dh’fhaoidte gun urrainn do dhaoine fiosrachadh mar fhaclan-faire, puist-d no cairtean-creideis a ghoid ort.">
+
+<!ENTITY certerror.expiredCert.secondPara "Mar is trice, tachraidh seo ma tha an t-àm cearr aig cleoc a’ choimpiutair agad agus chan urrainn dha &brandShortName; ceangal tèarainte a dhèanamh ri linn sin.">
+
+<!ENTITY certerror.sts.introPara "Mhothaich &brandShortName; dha rud a dh’fhaodadh a bhith ’na chunnart tèarainteachd agus cha do thadhail e air <span class='hostname'/> a chionn ’s gu bheil an làrach-lìn seo feumach air ceangal tèarainte.">
+
+<!ENTITY certerror.expiredCert.introPara "Mhothaich &brandShortName; dha rud a dh’fhaodadh a bhith ’na chunnart tèarainteachd agus cha do thadhail e air <span class='hostname'/>. Tha an làrach-lìn air a dhroch-rèiteachadh no tha an t-àm cearr aig cleoc a’ choimpiutair agad.">
+<!ENTITY certerror.expiredCert.secondPara2 "Dh’fhaoidte gun do dh’fhalbh an ùine air teisteanas na làraich-lìn agus chan urrainn dha &brandShortName; ceangal tèarainte a dhèanamh ri linn sin. Ma thadhlas tu air an làrach seo, dh’fhaoidte gun dèid rudan mar fhaclan-faire, puist-d is cairtean-creideis a ghoid ort.">
+<!ENTITY certerror.expiredCert.sts.secondPara "Dh’fhaoidte gun do dh’fhalbh an ùine air teisteanas na làraich-lìn agus chan urrainn dha &brandShortName; ceangal tèarainte a dhèanamh ri linn sin.">
+
+<!ENTITY certerror.whatCanYouDoAboutItTitle "Dè nì mi mu dhèidhinn?">
+
+<!ENTITY certerror.unknownIssuer.whatCanYouDoAboutIt "
+<p>Tha teans mòr gu bheil rudeigin cearr san làrach-lìn fhèin agus nach eil dad ann as urrainn dhut-sa dèanamh.</p>
+<p>Mas ann air lìonra corporra a tha thu no ma tha thu a’ cleachdadh bathar-bog an aghaidh bhìorasan, ’s urrainn dhut fios a leigeil gu na sgiobannan-taice airson cobhair. ’S urrainn dhut fios a leigeil do rianaire na làraich cuideachd.</p>
+">
+
+<!ENTITY certerror.expiredCert.whatCanYouDoAboutIt2 "
+<p>’S e <span id='wrongSystemTime_systemDate2'/> an t-àm a-rèir a’ choimpiutair agad. Dèan cinnteach gu bheil an t-àm, ceann-là agus roinn-tìde cheart ann an roghainnean an t-siostaim agad is ath-nuadhaich <span class='hostname'/> an uairsin.</p>
+<p>Ma tha an cleoc agad ceart, tha teans gu bheil an làrach-lìn air a dhroch-rèiteachadh agus nach eil dad ann as urrainn dhut-sa a dhèanamh airson a chur ceart. ’S urrainn dhut fios a chur gu rianaire na làraich-lìn mun duilgheadas ge-tà.</p>
+">
+
+<!ENTITY certerror.badCertDomain.whatCanYouDoAboutIt "<p>Tha teans gu bheil rudeigin cearr leis an làrach-lìn agus nach eil dad ann as urrainn dhut-sa a dhèanamh airson a chur ceart. ’S urrainn dhut fios a chur gu rianaire na làraich-lìn mun duilgheadas ge-tà.</p>">
 
 <!ENTITY sharedLongDesc "<ul> <li>Dh’fhaodadh nach eil an làrach seo ri faighinn rè seal no gu bheil e ro thrang. Feuch ris a-rithist an ceann tamaill.</li> <li>Mur urrainn dhut duilleag sam bith a ruigsinn, cuir sùil air ceangal a’ choimpiutair agad ris an lìonra.</li> <li>Ma tha an coimpiutair no an lìonra agad ’ga dhìon le chachaileith-theine no progsaidh, dèan cinnteach gu bheil cead aig &brandShortName; ceangal ris an lìon.</li> </ul>">
 
@@ -103,6 +133,7 @@ was trying to connect. -->
 
 
 <!ENTITY securityOverride.exceptionButtonLabel "Cuir eisgeachd ris…">
+<!ENTITY securityOverride.exceptionButton1Label "Tuigidh mi an cunnart, air adhart leam">
 
 <!ENTITY errorReporting.automatic2 "Nach cuir thu aithisg mu mhearachdan d’ a leithid dha Mozilla ach an urrainn dhuinn làraichean droch-rùnach mar seo a bhacadh?">
 <!ENTITY errorReporting.learnMore "Barrachd fiosrachaidh…">
@@ -122,7 +153,10 @@ was trying to connect. -->
 <!ENTITY certerror.wrongSystemTimeWithoutReference "<p>Cha b’ urrainn dha &brandShortName; ceangal ri <span id='wrongSystemTimeWithoutReference_URL'/> a chionn ’s gu bheil an cleoc agad a’ sealltainn an ama chearr agus cha ghabh ceangal tèarainte a stèidheachadh ri linn sin.</p> <p>Tha an coimpiutair agad dhen bheachd gu bheil e <span id='wrongSystemTimeWithoutReference_systemDate'/>. Cuir ceart an t-àm is an ceann-là gus an duilgheadas seo a chàradh.</p>">
 
 <!ENTITY certerror.pagetitle1  "Ceangal nach eil tèarainte">
+<!ENTITY certerror.pagetitle2  "Rabhadh: Tha rud romhad a dh’fhaodadh a bhith ’na chunnart tèarainteachd">
+<!ENTITY certerror.sts.pagetitle  "Cha deach ceangal a dhèanamh: Rud a dh’fhaodadh a bhith ’na chunnart tèarainteachd">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Tha an làrach seo a’ cleachdadh HTTP Strict Transport Security (HSTS) gus a chur an cèill nach urrainn dha &brandShortName; ceangal ris ach gu tèarainte. Ri linn sin, chan urrainnear eisgeachd a chur ris airson an teisteanais seo.">
+<!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "Tha poileasaidh tèarainteachd aig <span class='hostname'></span> air a bheil HTTP Strict Transport Security (HSTS), agus is ciall dha sin nach urrainn dha &brandShortName; ach ceangal tèarainte a dhèanamh. Chan urrainn dhut eisgeachd a chur ris a thadhal air an làrach seo.">
 <!ENTITY certerror.copyToClipboard.label "Cuir lethbhreac dhen teacsa air an stòr-bhòrd">
 
 <!ENTITY inadequateSecurityError.title "Chan eil an ceangal agad tèarainte">
@@ -132,5 +166,11 @@ was trying to connect. -->
 
 <!ENTITY blockedByPolicy.title "Duilleag bhacte">
 
+<!ENTITY clockSkewError.title "Tha cleoc a’ choimpiutair agad cearr">
+<!ENTITY clockSkewError.longDesc "Tha an coimpiutair agad dhen bheachd gu bheil e <span id='wrongSystemTime_systemDate1'/> agus chan urrainn dha &brandShortName; ceangal tèarainte a dhèanamh ri linn sin. Airson tadhal air <span class='hostname'></span>, ùraich cleoc a’ choimpiutair agad ann an roghainnean an t-siostaom is dèan cinnteach gu bheil an t-àm, ceann-là agus roinn-tìde cheart ann is ath-nuadhaich <span class='hostname'></span> an uairsin.">
+
 <!ENTITY prefReset.longDesc "Tha coltas gur e roghainnean tèarainteachd an lìonraidh agad ag adhbharachadh seo. A bheil thu airson na roghainnean bunaiteach a thilleadh?">
 <!ENTITY prefReset.label "Aisig na roghainnean bunaiteach">
+
+<!ENTITY networkProtocolError.title "Mearachd pròtacal an lìonraidh">
+<!ENTITY networkProtocolError.longDesc "<p>Chan urrainn dhuinn an duilleag a tha a dhìth ort a shealltainn dhut a chionn ’s gun do mhothaich sinn ri mearachd ann am pròtacal an lìonraidh.</p><ul><li>Cuir fios dha na daoine aig a bheil an làrach-lìn is innis dhaibh mun duilgheadas.</li></ul>">

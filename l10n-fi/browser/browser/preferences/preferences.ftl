@@ -53,6 +53,7 @@ pane-sync-title = Firefox-tili
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name }-tuki
+addons-button-label = Laajennukset ja teemat
 focus-search =
     .key = f
 close-button =
@@ -83,6 +84,9 @@ extension-controlled-homepage-override = Laajennus, <img data-l10n-name="icon"/>
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Laajennus, <img data-l10n-name="icon"/> { $name }, hallitsee Uusi välilehti -sivua.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = Laajennus, <img data-l10n-name="icon"/> { $name }, hallitsee tätä asetusta.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Laajennus, <img data-l10n-name="icon"/> { $name }, on asettanut oletushakukoneen.
@@ -148,6 +152,9 @@ open-new-link-as-tabs =
     .accesskey = A
 warn-on-close-multiple-tabs =
     .label = Varoita, kun olen sulkemassa useita välilehtiä
+    .accesskey = V
+warn-on-quit-close-multiple-tabs =
+    .label = Varoita, kun olen sulkemassa ohjelman tai useita välilehtiä
     .accesskey = V
 warn-on-open-many-tabs =
     .label = Varoita, kun useiden välilehtien avaaminen voi hidastaa { -brand-short-name }ia
@@ -284,6 +291,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = Päivitä hakukoneet automaattisesti
     .accesskey = k
+update-pref-write-failure-title = Kirjoittaminen epäonnistui
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = Asetuksen tallentaminen epäonnistui. Ei voitu kirjoittaa tiedostoon: { $path }
 
 ## General Section - Performance
 
@@ -323,10 +334,13 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Ala etsiä tekstistä heti kirjoitettaessa
     .accesskey = A
+browsing-cfr-recommendations =
+    .label = Suosittele laajennuksia selaamisen yhteydessä
+    .accesskey = S
+browsing-cfr-recommendations-learn-more = Lue lisää
 
 ## General Section - Proxy
 
-network-proxy-title = Verkon välityspalvelin
 network-settings-title = Verkkoasetukset
 network-proxy-connection-description = Muokkaa { -brand-short-name }in verkkoyhteysasetuksia.
 network-proxy-connection-learn-more = Lue lisää
@@ -525,6 +539,7 @@ privacy-header = Selaimen tietosuoja
 ## Privacy Section - Forms
 
 forms-header = Lomakkeet ja salasanat
+logins-header = Käyttäjätunnukset ja salasanat
 forms-ask-to-save-logins =
     .label = Ehdota sivustojen käyttäjätunnusten ja salasanojen tallentamista
     .accesskey = v
@@ -591,26 +606,15 @@ sitedata-total-size-calculating = Lasketaan sivustotietojen ja välimuistin koko
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Evästeet, sivustotiedot ja välimuisti vievät tällä hetkellä { $value } { $unit } levytilaa.
 sitedata-learn-more = Lue lisää
-sitedata-accept-cookies-option =
-    .label = Hyväksy evästeet ja sivustotiedot sivustoilta (suositus)
-    .accesskey = H
-sitedata-block-cookies-option =
-    .label = Estä evästeet ja sivustotiedot (voi aiheuttaa sivustojen toimimattomuutta)
-    .accesskey = E
 sitedata-keep-until = Säilytä evästeet
     .accesskey = t
 sitedata-keep-until-expire =
     .label = kunnes ne vanhenevat
 sitedata-keep-until-closed =
     .label = kunnes { -brand-short-name } suljetaan
-sitedata-accept-third-party-desc = Hyväksy kolmannen osapuolen evästeet ja sivustotiedot
-    .accesskey = k
-sitedata-accept-third-party-always-option =
-    .label = Aina
-sitedata-accept-third-party-visited-option =
-    .label = Vierailluilta sivustoilta
-sitedata-accept-third-party-never-option =
-    .label = Ei milloinkaan
+sitedata-delete-on-close =
+    .label = Poista evästeet ja sivustotiedot, kun { -brand-short-name } suljetaan
+    .accesskey = s
 sitedata-allow-cookies-option =
     .label = Hyväksy evästeet ja sivustotiedot
     .accesskey = H
@@ -684,6 +688,9 @@ content-blocking-fastblock-slow-loading-trackers-label =
     .label = Hitaasti latautuvat seuraimet
     .accesskey = H
 content-blocking-fastblock-new-description = Estää vain seuraimet, jotka estävät sivuja latautumasta nopeasti.
+content-blocking-tracking-protection-trackers-label =
+    .label = Seuraimet
+    .accesskey = t
 content-blocking-tracking-protection-all-detected-trackers-label =
     .label = Kaikki havaitut seuraimet
     .accesskey = K
@@ -731,10 +738,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Ei koskaan
     .accesskey = E
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Käytä seurannan suojausta yksityisessä selauksessa estämään tunnettuja seuraimia
-    .accesskey = m
 tracking-exceptions =
     .label = Poikkeukset…
     .accesskey = P
@@ -857,3 +860,36 @@ certs-view =
 certs-devices =
     .label = Turvallisuuslaitteet…
     .accesskey = T
+space-alert-learn-more-button =
+    .label = Lue lisää
+    .accesskey = L
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Avaa asetukset
+           *[other] Avaa asetukset
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] A
+           *[other] A
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name }ilta loppuu kohta levytila. Sivustojen sisällöt eivät ehkä näy oikein. Voit tyhjentää sivustotiedot avaamalla Asetukset > Tietosuoja ja turvallisuus > Evästeet ja sivustotiedot.
+       *[other] { -brand-short-name }ilta loppuu kohta levytila. Sivustojen sisällöt eivät ehkä näy oikein. Voit tyhjentää sivustotiedot avaamalla Asetukset > Tietosuoja ja turvallisuus > Evästeet ja sivustotiedot.
+    }
+space-alert-under-5gb-ok-button =
+    .label = OK, selvä
+    .accesskey = K
+space-alert-under-5gb-message = { -brand-short-name }ilta loppuu kohta levytila. Sivustojen sisällöt eivät ehkä näy oikein. Voit lukea levyn käytön optimoimisesta selaamisen sujuvoittamiseksi painamalla ”Lue lisää”.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Työpöytä
+downloads-folder-name = Lataukset
+choose-download-folder-title = Valitse tallennuskansio
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Tallenna tiedostot palveluun { $service-name }

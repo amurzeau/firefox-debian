@@ -20,8 +20,8 @@
 <!ENTITY settingsLink.label           "Vezi setările acestui cont">
 <!ENTITY setupNewAcct.label           "Configurează un cont:">
 
-<!ENTITY advFeaturesSectionHdr.label  "Opțiuni avansate">
+<!ENTITY advFeaturesSectionHdr.label  "Funcționalități avansate">
 <!ENTITY searchMsgsLink.label         "Caută mesaje">
-<!ENTITY filtersLink.label            "Gestionează filtrele de mesaje">
+<!ENTITY filtersLink.label            "Gestionează filtrele pentru mesaje">
 <!ENTITY junkSettings.label           "Setări pentru mesajele nesolicitate">
 <!ENTITY offlineLink.label            "Setări pentru lucru offline">

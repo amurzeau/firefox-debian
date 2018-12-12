@@ -136,7 +136,7 @@
 <!ENTITY ICQ.accesskey                  "Q">
 <!ENTITY XMPP.label                     "Jabber ID:">
 <!ENTITY XMPP.accesskey                 "J">
-<!ENTITY IRC.label                      "Nick de IRC:">
+<!ENTITY IRC.label                      "Pseudonim de IRC:">
 <!ENTITY IRC.accesskey                  "R">
 
 <!ENTITY Photo.tab                      "Foto">
@@ -150,7 +150,7 @@
 <!ENTITY BrowsePhoto.accesskey          "s">
 <!ENTITY PhotoURL.label                 "De pe web">
 <!ENTITY PhotoURL.accesskey             "w">
-<!ENTITY PhotoURL.placeholder           "Inserați sau tastați adresa web a pozei">
+<!ENTITY PhotoURL.placeholder           "Inserează sau tastează adresa web a pozei">
 <!ENTITY UpdatePhoto.label              "Actualizează">
 <!ENTITY UpdatePhoto.accesskey          "z">
-<!ENTITY PhotoDropTarget.label          "Trageți noua fotografie aici">
+<!ENTITY PhotoDropTarget.label          "Trage noua fotografie aici">

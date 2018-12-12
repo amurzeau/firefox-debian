@@ -8,7 +8,7 @@
 <!-- LOCALIZATION NOTE: aboutWarningTitle.label should be attention grabbing and playful -->
 <!ENTITY aboutWarningTitle.label "Isto pode anular a súa garantía">
 <!ENTITY aboutWarningText.label "Modificar esta configuración avanzada pode ser prexudicial para a estabilidade, seguranza e execución desta aplicación. Só debería continuar se ten a certeza do que está a facer.">
-<!ENTITY aboutWarningButton.label "Serei prudente, prométoo">
+<!ENTITY aboutWarningButton2.label "Acepto o risco!">
 <!ENTITY aboutWarningCheckbox.label "Amosar este aviso a próxima vez">
 
 <!ENTITY searchPrefs.label "Buscar:">

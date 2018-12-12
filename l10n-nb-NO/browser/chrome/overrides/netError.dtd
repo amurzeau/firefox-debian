@@ -10,9 +10,10 @@
 <!ENTITY returnToPreviousPage.label "Gå tilbake">
 <!ENTITY returnToPreviousPage1.label "Gå tilbake (Anbefalt)">
 <!ENTITY advanced.label "Avansert">
-
 <!ENTITY continue2.label "Mer…">
 <!ENTITY moreInformation.label "Mer informasjon">
+
+<!ENTITY viewCertificate.label "Vis sertifikat">
 
 <!-- Specific error messages -->
 
@@ -98,14 +99,20 @@
 
 <!ENTITY certerror.longpagetitle1 "Tilkoblingen din er ikke sikker">
 <!ENTITY certerror.longpagetitle2 "Advarsel: Potensiell sikkerhetsrisiko forut">
+<!ENTITY certerror.sts.longpagetitle  "Koblet ikke til: Potensielt sikkerhetsproblem">
 <!-- Localization note (certerror.introPara, certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "Eieren av <span class='hostname'/> har konfigurert nettstedet sitt feil.  For å beskytte mot at informasjon stjeles, har &brandShortName; ikke koblet til dette nettstedet.">
-
 <!ENTITY certerror.introPara2 "&brandShortName; oppdaget en potensiell sikkerhetstrussel og fortsatte ikke til <span class='hostname'/>. Hvis du besøker dette nettstedet, kan angriperne prøve å stjele informasjon som passord, e-post eller kredittkortdetaljer.">
 
 <!ENTITY certerror.expiredCert.secondPara "Dette problemet er mest sannsynlig fordi datamaskinens klokke er satt til feil tid, noe som ville forhindre &brandShortName; fra å koble til sikkert.">
+
+<!ENTITY certerror.sts.introPara "&brandShortName; oppdaget en potensiell sikkerhetstrussel og fortsatte ikke til <span class='hostname'/> fordi dette nettstedet krever en sikker tilkobling.">
+
+<!ENTITY certerror.expiredCert.introPara "&brandShortName; oppdaget et problem og fortsatte ikke til <span class='hostname'/>. Nettstedet er enten feilkonfigurert eller datamaskinens klokke er innstilt til feil tid.">
+<!ENTITY certerror.expiredCert.secondPara2 "Det er sannsynligvis at nettstedets sertifikat er utløpt, noe som forhindrer &brandShortName; fra å koble til sikkert. Hvis du besøker dette nettstedet, kan angriperne prøve å stjele informasjon som passord, e-post eller kredittkortdetaljer.">
+<!ENTITY certerror.expiredCert.sts.secondPara "Nettstedets sertifikat er sannsynligvis utløpt, noe som forhindrer &brandShortName; fra å opprette en sikker forbindelse.">
 
 <!ENTITY certerror.whatCanYouDoAboutItTitle "Hva kan du gjøre med det?">
 
@@ -129,11 +136,10 @@ was trying to connect. -->
 <!ENTITY cspBlocked.longDesc "<p>&brandShortName; forhindret nettsiden fra å lastes inn på denne måten fordi nettsiden har en sikkerhetspolicy som forbyr det.</p>">
 
 <!ENTITY corruptedContentErrorv2.title "Ødelagt innhold">
-<!ENTITY corruptedContentErrorv2.longDesc "<p>Siden du forsøker å vise kan ikke åpnes på grunn av en feil i dataoverføringen.</p><ul><li>Kontakt nettstedseierne og informer dem om dette problemet.</li></ul>">
+<!ENTITY corruptedContentErrorv2.longDesc "<p>Siden du forsøker å vise kan ikke åpnes fordi en feil i dataoverføringen ble oppdaget.</p><ul><li>Kontakt nettstedseierne og informer dem om dette problemet.</li></ul>">
 
 
 <!ENTITY securityOverride.exceptionButtonLabel "Lag et unntak …">
-
 <!ENTITY securityOverride.exceptionButton1Label "Godta risikoen og fortsett">
 
 <!ENTITY errorReporting.automatic2 "Rapporter feil som dette for å hjelpe Mozilla med å identifisere og blokkere skadelige nettsteder.">
@@ -155,6 +161,7 @@ was trying to connect. -->
 
 <!ENTITY certerror.pagetitle1  "Usikker tilkobling">
 <!ENTITY certerror.pagetitle2  "Advarsel: Potensiell sikkerhetsrisiko forut">
+<!ENTITY certerror.sts.pagetitle  "Koblet ikke til: Potensielt sikkerhetsproblem">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Dette nettstedet bruker HTTP Strict Transport Security (HSTS) for å spesifisere at &brandShortName; bare kan koble til det sikkert. Derfor kan en ikke legge til et unntak for dette sertifikatet.">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'></span> har en sikkerhetspolicy kalt HTTP Strict Transport Security (HSTS), som betyr at &brandShortName; bare kan koble til den sikkert. Du kan ikke legge til et unntak for å besøke dette nettstedet.">
 <!ENTITY certerror.copyToClipboard.label "Kopier tekst til utklippstavlen">
@@ -171,3 +178,6 @@ was trying to connect. -->
 
 <!ENTITY prefReset.longDesc "Det ser ut til at nettverkets sikkerhetsinnstillinger kan være årsak til dette. Vil du tilbakestille til standardinnstillinger?">
 <!ENTITY prefReset.label "Gjenopprett standardinnstillinger">
+
+<!ENTITY networkProtocolError.title "Nettverksprotokollfeil">
+<!ENTITY networkProtocolError.longDesc "<p>Siden du forsøker å vise kan ikke åpnes fordi en feil i nettverksprotokollen ble oppdaget.</p><ul><li>Kontakt nettstedseierne og informer dem om dette problemet.</li></ul>">

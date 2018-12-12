@@ -19,7 +19,7 @@ permissions-allow =
     .label = اسمح
     .accesskey = س
 permissions-site-name =
-    .label = موقع وِب
+    .label = موقع الوِب
 permissions-status =
     .label = الحالة
 permissions-remove =
@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = احجب
 permissions-capabilities-prompt =
     .label = اسأل دائمًا
+permissions-capabilities-listitem-allow =
+    .value = اسمح
+permissions-capabilities-listitem-block =
+    .value = احجب
+permissions-capabilities-listitem-allow-first-party =
+    .value = اسمح للموقع الأصلي فقط
+permissions-capabilities-listitem-allow-session =
+    .value = اسمح لهذه الجلسة
 
 ## Invalid Hostname Dialog
 
@@ -54,6 +62,10 @@ permissions-exceptions-tracking-protection-window =
     .title = الاستثنائات – الحماية من التعقّب
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = لقد عُطلت حماية التعقب على مواقع الوِب هذه.
+permissions-exceptions-content-blocking-window =
+    .title = الاستثناءات - حجب المحتوى
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = عطّلت حجب المحتوى في هذه المواقع.
 
 ## Exceptions - Cookies
 
@@ -85,10 +97,6 @@ permissions-exceptions-addons-desc = يمكنك تحديد أي مواقع يس�
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = مواقع الوِب المسموح لها - التشغيل التلقائي
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = يمكنك تحديد المواقع المسموح لها تشغيل عناصر الوسائط تلقائيا. اكتب عنوان الموقع الذي تريد السماح له ثم انقر ”اسمح“.
 permissions-exceptions-autoplay-media-window2 =
     .title = الاستثناءات - التشغيل التلقائي
     .style = { permissions-window.style }

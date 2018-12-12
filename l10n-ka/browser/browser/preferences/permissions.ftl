@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = შეზღუდული
 permissions-capabilities-prompt =
     .label = შეკითხვა ყოველ ჯერზე
+permissions-capabilities-listitem-allow =
+    .value = ნებართვა
+permissions-capabilities-listitem-block =
+    .value = აკრძალვა
+permissions-capabilities-listitem-allow-first-party =
+    .value = მხოლოდ პირველი ნაწილის დაშვება
+permissions-capabilities-listitem-allow-session =
+    .value = ნებართვა ამ სეანსზე
 
 ## Invalid Hostname Dialog
 
@@ -54,6 +62,10 @@ permissions-exceptions-tracking-protection-window =
     .title = გამონაკლისები – თვალთვალისგან დაცვა
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = ამ საიტებზე, თვალთვალისგან დაცვა გამორთული გაქვთ.
+permissions-exceptions-content-blocking-window =
+    .title = გამონაკლისები – შიგთავსის შეზღუდვა
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = თქვენ ამ ვებგვერდებზე შიგთავსის შეზღუდვა გამორთული გაქვთ.
 
 ## Exceptions - Cookies
 
@@ -85,10 +97,6 @@ permissions-exceptions-addons-desc = შეგიძლიათ მიუთი
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = ნებადართული საიტები – თვითგაშვება
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = შეგიძლიათ მიუთითოთ საიტები, რომლებზე არსებული ხმოვანი ან ვიდეოფაილების თვითგაშვება ნებადართული იქნება. აკრიფეთ საიტის ზუსტი მისამართი და დააწკაპეთ დაშვებას.
 permissions-exceptions-autoplay-media-window2 =
     .title = გამონაკლისები – თვითგაშვება
     .style = { permissions-window.style }

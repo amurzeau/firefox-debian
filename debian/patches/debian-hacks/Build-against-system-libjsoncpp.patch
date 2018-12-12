@@ -80,10 +80,10 @@ index e515c5680673..5e20a3d42fd9 100644
 -    AllowCompilerWarnings()  # workaround for bug 1090497
 +OS_LIBS += ['jsoncpp']
 diff --git a/toolkit/crashreporter/minidump-analyzer/moz.build b/toolkit/crashreporter/minidump-analyzer/moz.build
-index 70f3b259a9d8..923b48bfb66d 100644
+index 59022733ce0d..20b9733957d2 100644
 --- a/toolkit/crashreporter/minidump-analyzer/moz.build
 +++ b/toolkit/crashreporter/minidump-analyzer/moz.build
-@@ -52,7 +52,7 @@ USE_LIBS += [
+@@ -48,7 +48,7 @@ USE_LIBS += [
  ]
  
  LOCAL_INCLUDES += [

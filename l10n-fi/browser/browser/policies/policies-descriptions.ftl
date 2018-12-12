@@ -18,6 +18,7 @@ policy-BlockAboutProfiles = Estä pääsy about:profiles-sivulle.
 policy-BlockAboutSupport = Estä pääsy about:support-sivulle.
 policy-Bookmarks = Luo kirjanmerkkejä kirjanmerkkipalkkiin, Kirjanmerkit-valikkoon tai tiettyyn kansioon niiden sisälle.
 policy-Certificates = Käytetäänkö sisäänrakennettuja varmenteita vaiko ei. Tämä käytäntö on tällä hetkellä käytettävissä vain Windowsissa.
+policy-CertificatesDescription = Lisää varmenteita tai käytä sisäänrakennettuja varmenteita.
 policy-Cookies = Salli tai estä, että sivustot asettavat evästeitä.
 policy-DisableAppUpdate = Estä selainta päivittymästä.
 policy-DisableBuiltinPDFViewer = Poista käytöstä PDF.js, { -brand-short-name }in sisäänrakennettu PDF-katselin.
@@ -42,6 +43,7 @@ policy-DisableSystemAddonUpdate = Estä selainta asentamasta ja päivittämäst�
 policy-DisableTelemetry = Poista kaukomittaus käytöstä.
 policy-DisplayBookmarksToolbar = Näytä kirjanmerkkipalkki oletusarvoisesti.
 policy-DisplayMenuBar = Näytä valikkopalkki oletusarvoisesti.
+policy-DNSOverHTTPS = Käytä DNS:ää HTTPS:n välityksellä.
 policy-DontCheckDefaultBrowser = Poista käytöstä oletusselaimen tarkistus käynnistettäessä.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Ota käyttöön tai poista käytöstä sisällön esto, ja valinnaisesti lukitse asetus.
@@ -62,9 +64,12 @@ policy-OverridePostUpdatePage = Korvaa päivityksen jälkeinen ”Mitä uutta”
 policy-Permissions = Aseta kameran, mikrofonin, sijainnin ja ilmoitusten käyttöoikeuksien asetukset.
 policy-PopupBlocking = Salli tiettyjen sivustojen näyttää ponnahdusikkunoita oletusarvoisesti.
 policy-Proxy = Määritä välityspalvelimen asetukset.
+policy-RequestedLocales = Aseta pyydetyt sovelluksen kielet suosituimmuusjärjestyksessä.
 policy-SanitizeOnShutdown = Poista kaikki selailutiedot suljettaessa selain.
 policy-SearchBar = Aseta hakupalkin oletussijainti. Käyttäjä voi silti vaihtaa sitä.
 policy-SearchEngines = Aseta hakukoneasetukset. Tämä käytäntö on käytettävissä vain Extended Support Release (ESR) -versiossa.
+# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
+policy-SecurityDevices = Asenna PKCS #11 -moduulit.
 # “format” refers to the format used for the value of this policy. See also:
 # https://github.com/mozilla/policy-templates/blob/master/README.md#websitefilter-machine-only
 policy-WebsiteFilter = Estä sivustojen avaaminen. Katso ohjeista lisätietoja käyttötavasta.

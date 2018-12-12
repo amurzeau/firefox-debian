@@ -53,6 +53,7 @@ pane-sync-title = Amiḍan Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } Tallalt
+addons-button-label = Isiɣzaf akked yisental
 focus-search =
     .key = f
 close-button =
@@ -83,6 +84,9 @@ extension-controlled-homepage-override = Azegrir, <img data-l10n-name="icon"/> {
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Azegrir, <img data-l10n-name="icon"/> { $name }, yesenqad iccer n usebter-inek.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = Asiɣzef, <img data-l10n-name="icon"/>{ $name }, isenqad aɣewwar-agi.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Yiwen n usiɣzef, <img data-l10n-name="icon"/> { $name }, isenker allal-ik n unadi amezwer.
@@ -149,6 +153,9 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = Lɣu ticki medlen deqs n yiccaren
     .accesskey = L
+warn-on-quit-close-multiple-tabs =
+    .label = Lqu-yi-d ticki ɛerḍeɣ ad fakeɣ neɣ ad medleɣ ddeqs n yiccaren.
+    .accesskey = m
 warn-on-open-many-tabs =
     .label = Lɣu-yid ticki ilukkez { -brand-short-name } ma ldin aṭas n yiccaren
     .accesskey = L
@@ -284,6 +291,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = Lqem awurman n umsedday n unadi
     .accesskey = Ẓ
+update-pref-write-failure-title = Tuccḍa deg tira
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = UR yezmir ara ad yessekles ismenyifen.Ur yezmir ad yaru de ufaylu: { $path }
 
 ## General Section - Performance
 
@@ -323,10 +334,13 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Nadi aḍris ticki tebda tira
     .accesskey = N
+browsing-cfr-recommendations =
+    .label = Welleh isizaf ticki tettiniged
+    .accesskey = W
+browsing-cfr-recommendations-learn-more = Issin ugar
 
 ## General Section - Proxy
 
-network-proxy-title = Apruksi n uẓeṭṭa
 network-settings-title = Iɣewwaṛen n uẓeṭṭa
 network-proxy-connection-description = Swel amek { -brand-short-name } ad iqqen γer internet.
 network-proxy-connection-learn-more = Issin ugar
@@ -525,6 +539,7 @@ privacy-header = Tabaḍnit n iminig
 ## Privacy Section - Forms
 
 forms-header = Tiferka & akked awalen uffiren
+logins-header = Inekcam & wawalen uffiren
 forms-ask-to-save-logins =
     .label = Suter akken ad teskelseḍ inekcam d wawalen uffiren i yismal web
     .accesskey = s
@@ -591,26 +606,15 @@ sitedata-total-size-calculating = Asiḍen n teɣzi n isefka akked tuγzi n tuff
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Tskelseḍ inagan n tuqna,isefka n usmel akked  tuffirt seqdacen akka tura { $value } { $unit } seg adeg n tallunt n tkatut.
 sitedata-learn-more = Lmed ugar
-sitedata-accept-cookies-option =
-    .label = Qbel inagan n tuqqna d yisefka n usmel seg yismal (yelha)
-    .accesskey = Q
-sitedata-block-cookies-option =
-    .label = Sewḥel inagan n tuqna akked isefka n usmel (izmer ad yiṛez ismal web)
-    .accesskey = B
 sitedata-keep-until = Ḥrez arma
     .accesskey = l
 sitedata-keep-until-expire =
     .label = Ad mten
 sitedata-keep-until-closed =
     .label = Amdal n { -brand-short-name }
-sitedata-accept-third-party-desc = Qbel inagan n tuqna tis kraḍ akked isefka n ismal
-    .accesskey = y
-sitedata-accept-third-party-always-option =
-    .label = Yal ass
-sitedata-accept-third-party-visited-option =
-    .label = Seg yismal ɣur terziḍ
-sitedata-accept-third-party-never-option =
-    .label = Weṛǧin
+sitedata-delete-on-close =
+    .label = Mdel inagan n tuqqna akk d isefka n usmel ticki { -brand-short-name } yettwamdel
+    .accesskey = i
 sitedata-allow-cookies-option =
     .label = Qbel inagan n tuqqna d yisefka n usmel
     .accesskey = Q
@@ -644,6 +648,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = IƔewwaren-inek/inem deg usewḥel n ugbur sewḥalen isnifal deg iƔewwaren n yinagan n tuqqna akked wid isefka.
+sitedata-cookies-permissions =
+    .label = Sefrek tisirag...
+    .accesskey = s
 
 ## Privacy Section - Address Bar
 
@@ -664,6 +671,7 @@ addressbar-suggestions-settings = Snifel ismenyifen i yisumar n umsedday n unadi
 
 content-blocking-header = Asewḥel n ugbur
 content-blocking-desc = Sewḥel Agbur n tɣawsiwin tis kraḍ, am udellel neɣ tangalt, isaẓayen timing-inek, i k-iṭṭafaren deg web. Sagen iɣewwaren-inek i tunigin ifazen deg taɣellist.
+content-blocking-description = Sewḥel Agbur n tɣawsiwin tis kraḍ i k-yeṭṭafaren di web. Senqed acḥal seg urmud-ik di web i yettwakelsen u yettwabḍan gar ismal.
 content-blocking-learn-more = Issin ugar
 content-blocking-restore-defaults =
     .label = Err-d imezwar
@@ -684,6 +692,28 @@ content-blocking-fastblock-slow-loading-trackers-label =
     .label = Ineḍfaren isaẓẓayen asali
     .accesskey = s
 content-blocking-fastblock-new-description = Sewḥel kan ineḍfaren isaẓẓayen asali n isebtar.
+content-blocking-setting-standard =
+    .label = Tizeɣt
+    .accesskey = z
+content-blocking-setting-strict =
+    .label = Uḥris
+    .accesskey = ḥ
+content-blocking-setting-custom =
+    .label = Udmawan
+    .accesskey = d
+content-blocking-standard-desc = Iseggem i ummesten akked tmellit. Isirig kra n ineḍfaren akken ismal web ad ddun akken iwata.
+content-blocking-strict-desc = Isewḥal akk ineḍfaren id-yettaf { -brand-short-name }. Kra n yesmal zemren ad ḥebsen.
+content-blocking-custom-desc = Fren ayen ara tesweḥleḍ.
+content-blocking-private-trackers = Ineḍfaren yettwasnen deg usfaylu uslig kan
+content-blocking-third-party-cookies = Inagan n tuqna n uḍfar n tɣawsiwin tis kraḍ
+content-blocking-all-windows-trackers = Ineḍfaren yettwasnen deg akk isfuyla
+content-blocking-all-third-party-cookies = Akk inagan n tuqqna n wis kraḍ
+content-blocking-warning-title = Aqeṛṛu d afella!
+content-blocking-warning-desc = Asewḥel n inagan n tuqqna akked ineḍfaren yezmer ad iseḥbes kra n yesmal web. Yeshel ad tekkseḍ asewḥel i yesmal tettamneḍ.
+content-blocking-learn-how = Issin amek
+content-blocking-tracking-protection-trackers-label =
+    .label = Ineḍfaren
+    .accesskey = I
 content-blocking-tracking-protection-all-detected-trackers-label =
     .label = Akk ineḍfaren yettwafen
     .accesskey = i
@@ -716,6 +746,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = Akk inagan n tuqqna wis kraḍ (zemren ad rẓen isaml web)
     .accesskey = A
+content-blocking-cookies-label =
+    .label = Inagan n tuqqna
+    .accesskey = I
 
 ## Privacy Section - Tracking
 
@@ -731,16 +764,15 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Weṛǧin
     .accesskey = W
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Seqdec amesten deg iminig uslig akken ad teswaḥleḍ imsfuɣal irusinin
-    .accesskey = y
 tracking-exceptions =
     .label = Tisuraf…
     .accesskey = s
 tracking-change-block-list =
     .label = Snifel tabdart n usewḥel…
     .accesskey = D
+tracking-manage-exceptions =
+    .label = Sefrek tisuraf
+    .accesskey = t
 
 ## Privacy Section - Permissions
 
@@ -857,3 +889,36 @@ certs-view =
 certs-devices =
     .label = Ibenkan n tɣellist…
     .accesskey = B
+space-alert-learn-more-button =
+    .label = Issin ugar
+    .accesskey = g
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Ldi iɣewwaṛen
+           *[other] Ldi Ismenyifen
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] i
+           *[other] s
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } iteddu ad iεeddi i tallunt n udebṣi. Igburen n usmel web ur d-ttbanen ara akken iwata. Tzemreḍ ad tsefḍeḍ isefka n usmel deg Iγewwaṛen-> Talqayt -> Isefka n usmel.
+       *[other] { -brand-short-name } iteddu ad iεeddi i tallunt n udebṣi. Igburen n usmel web ur d-ttbanen ara akken iwata. Tzemreḍ ad tsefḍeḍ isefka n usmel deg Ismenyifen-> Talqayt -> Isefka n usmel.
+    }
+space-alert-under-5gb-ok-button =
+    .label = IH awi-t-id
+    .accesskey = H
+space-alert-under-5gb-message = Amkan n udebṣi iteddu ad yaweḍ ar { -brand-short-name }. Igburen n usmel web ur d-ttbanen ara akken iwata.  Ddu ar "Issin ugar" akken ad tseggmeḍ aseqdec n udebṣi-ik akken tarmit n tunigin ad tuɣal tfaz.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Tanarit
+downloads-folder-name = Isidar
+choose-download-folder-title = Fren akaram i usnifel:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Sekles ifuyla deg { $service-name }

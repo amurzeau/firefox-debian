@@ -23,10 +23,22 @@
 <!ENTITY  reloadTab.accesskey                "n">
 <!ENTITY  reloadAllTabs.label                "Įkelti visų kortelių tinklalapius iš naujo">
 <!ENTITY  reloadAllTabs.accesskey            "A">
+<!ENTITY  selectAllTabs.label                "Pasirinkti visas korteles">
+<!ENTITY  selectAllTabs.accesskey            "P">
 <!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
 a tab (i.e. it is a verb, not adjective). -->
 <!ENTITY  duplicateTab.label                 "Dubliuoti kortelę">
+<!-- LOCALIZATION NOTE (duplicateTab.accesskey, duplicateTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  duplicateTab.accesskey             "D">
+<!ENTITY  closeTabOptions.label              "Kortelių užvėrimo nuostatos">
+<!ENTITY  closeTabOptions.accesskey          "o">
+<!-- LOCALIZATION NOTE (duplicateTabs.label): This is a command to duplicate
+a tab (i.e. it is a verb, not adjective). -->
+<!ENTITY  duplicateTabs.label                "Dubliuoti korteles">
+<!-- LOCALIZATION NOTE (duplicateTab.accesskey, duplicateTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  duplicateTabs.accesskey            "D">
 <!-- LOCALIZATION NOTE (closeTabsToTheEnd.label): This should indicate the
 direction in which tabs are closed, i.e. locales that use RTL mode should say
 left instead of right. -->
@@ -38,19 +50,29 @@ left instead of right. -->
 <!ENTITY  closeSelectedTabs.label            "Užverti pasirinktas korteles">
 <!ENTITY  closeSelectedTabs.accesskey        "s">
 
+<!ENTITY  closeTabs.label                    "Užverti korteles">
+<!ENTITY  closeTabs.accesskey                "e">
 <!ENTITY  pinSelectedTabs.label              "Įsegti korteles">
-<!-- Pin Tab and Pin Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  pinSelectedTabs.accesskey          "s">
 <!ENTITY  unpinSelectedTabs.label            "Išsegti korteles">
-<!-- Unpin Tab and Unpin Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinSelectedTabs.accesskey        "g">
 <!-- Reload Tab and Reload Selected Tabs have the same accesskey
 but will never be visible at the same time. -->
 <!ENTITY  reloadSelectedTabs.label           "Iš naujo įkelti pasirinktas korteles">
 <!ENTITY  reloadSelectedTabs.accesskey       "n">
+<!-- LOCALIZATION NOTE(reloadTab.label, reloadTabs.label): have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  reloadTabs.label                   "Įkelti korteles iš naujo">
+<!ENTITY  reloadTabs.accesskey               "k">
 <!ENTITY  bookmarkSelectedTabs.label         "Korteles įtraukti į adresyną…">
+<!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "t">
 
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
@@ -59,8 +81,14 @@ left edge of the tabstrip. Really we just want the string to express the idea
 that this is a lightweight and reversible action that keeps your tab where you
 can reach it easily. -->
 <!ENTITY  pinTab.label                       "Įsegti kortelę kairėje">
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  pinTab.accesskey                   "s">
 <!ENTITY  unpinTab.label                     "Išsegti kortelę">
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinTab.accesskey                 "s">
 <!ENTITY  sendTabToDevice.label              "Siųsti kortelę į įrenginį">
 <!ENTITY  sendTabToDevice.accesskey          "r">
@@ -68,12 +96,26 @@ can reach it easily. -->
 <!ENTITY  sendPageToDevice.accesskey         "r">
 <!ENTITY  sendLinkToDevice.label             "Siųsti saitą į įrenginį">
 <!ENTITY  sendLinkToDevice.accesskey         "r">
+<!-- LOCALIZATION NOTE (moveTabOptions.label and moveSelectedTabOptions.label):
+These two items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  moveTabOptions.label               "Perkelti kortelę">
+<!ENTITY  moveTabOptions.accesskey           "t">
+<!ENTITY  moveSelectedTabOptions.label       "Perkelti korteles">
+<!ENTITY  moveSelectedTabOptions.accesskey   "t">
+<!ENTITY  moveToStart.label                  "Perkelti į pradžią">
+<!ENTITY  moveToStart.accesskey              "p">
+<!ENTITY  moveToEnd.label                    "Perkelti į pabaigą">
+<!ENTITY  moveToEnd.accesskey                "b">
 <!ENTITY  moveToNewWindow.label              "Perkelti į naują langą">
 <!ENTITY  moveToNewWindow.accesskey          "l">
 <!ENTITY  reopenInContainer.label            "Atverti iš naujo sudėtiniame rodinyje">
 <!ENTITY  reopenInContainer.accesskey        "e">
 <!ENTITY  bookmarkAllTabs.label              "Visas korteles įtraukti į adresyną…">
 <!ENTITY  bookmarkAllTabs.accesskey          "v">
+<!ENTITY  bookmarkTab.label                  "Įrašyti kortelę į adresyną">
+<!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  bookmarkTab.accesskey              "r">
 <!ENTITY  undoCloseTab.label                 "Atšaukti kortelės užvėrimą">
 <!ENTITY  undoCloseTab.accesskey             "š">
 <!ENTITY  closeTab.label                     "Užverti kortelę">
@@ -100,6 +142,8 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.accesskey "S">
 <!ENTITY printCmd.commandkey "p">
 
+<!ENTITY taskManagerCmd.label "Užduočių tvarkytuvė">
+
 <!ENTITY goOfflineCmd.label "Atsijungti nuo tinklo">
 <!ENTITY goOfflineCmd.accesskey "t">
 
@@ -114,6 +158,29 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "v">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.label "Visas korteles įtraukti į adresyną…">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "k">
+
+<!ENTITY toolbarContextMenu.reloadSelectedTab.label "Įkelti pasirinktą kortelę iš naujo">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
+toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.reloadSelectedTab.accesskey "e">
+<!ENTITY toolbarContextMenu.reloadSelectedTabs.label "Įkelti pasirinktas korteles iš naujo">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
+toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.reloadSelectedTabs.accesskey "e">
+<!ENTITY toolbarContextMenu.bookmarkSelectedTab.label "Įtraukti pasirinktą kortelę į adresyną…">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.bookmarkSelectedTab.accesskey,
+toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.bookmarkSelectedTab.accesskey "t">
+<!ENTITY toolbarContextMenu.bookmarkSelectedTabs.label "Įrašyti pasirinktas korteles į adresyną…">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.bookmarkSelectedTab.accesskey,
+toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.bookmarkSelectedTabs.accesskey "i">
+<!ENTITY toolbarContextMenu.selectAllTabs.label "Pasirinkti visas korteles">
+<!ENTITY toolbarContextMenu.selectAllTabs.accesskey "P">
 <!ENTITY toolbarContextMenu.undoCloseTab.label "Atšaukti kortelės užvėrimą">
 <!ENTITY toolbarContextMenu.undoCloseTab.accesskey "š">
 
@@ -558,9 +625,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY reloadFrameCmd.label         "Atsiųsti kadrą iš naujo">
 <!ENTITY reloadFrameCmd.accesskey     "n">
 <!ENTITY viewPartialSourceForSelectionCmd.label "Rodyti atrankos pirminį tekstą">
-<!ENTITY viewPartialSourceForMathMLCmd.label    "Rodyti „MathML“ pirminį tekstą">
-<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both
-         viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label -->
 <!ENTITY viewPartialSourceCmd.accesskey "d">
 <!ENTITY viewPageSourceCmd.label      "Pirminis tekstas">
 <!ENTITY viewPageSourceCmd.accesskey  "e">
@@ -777,7 +841,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      Remove Bookmark buttons. -->
 <!ENTITY editBookmark.panel.width                    "23em">
 <!ENTITY editBookmark.done.label                     "Atlikta">
-
 <!ENTITY editBookmark.showForNewBookmarks.label       "Rodyti redagavimo formą įrašant">
 <!ENTITY editBookmark.showForNewBookmarks.accesskey   "R">
 
@@ -785,6 +848,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      This is the header of the security subview in the Site Identity panel. -->
 <!ENTITY identity.securityView.label "Svetainės saugumas">
 
+<!ENTITY identity.connection "Ryšys">
 <!ENTITY identity.connectionSecure "Saugus ryšys">
 <!ENTITY identity.connectionNotSecure "Ryšys nėra saugus">
 <!ENTITY identity.connectionFile "Šis tinklalapis yra įrašytas jūsų kompiuteryje.">
@@ -927,9 +991,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.audioCapture.label "Bus pasiekiamas kortelės garsas.">
 <!ENTITY getUserMedia.allWindowsShared.message "Bus leidžiama matyti visus jūsų ekrane matomus langus.">
 
-<!ENTITY trackingProtection.on "Apsauga nuo stebėjimo: TAIP">
-<!ENTITY trackingProtection.off "Apsauga nuo stebėjimo: NE">
-
 <!ENTITY contentBlocking.title "Turinio blokavimas">
 <!ENTITY contentBlocking.detected "Svetainėje aptiktas blokuojamas turinys.">
 <!ENTITY contentBlocking.notDetected "Tinklalapyje neaptikta blokuojamo turinio.">
@@ -944,6 +1005,11 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      a positive thing. It forms the end of the (imaginary) sentence
      "Slow-Loading Trackers [are] Blocked"-->
 <!ENTITY contentBlocking.fastBlock.blocked.label "Užblokuota">
+<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.blocking.label):
+     This label signals that this type of content blocking is turned
+     ON, so this is a positive thing. It forms the verb in (imaginary) sentence
+     "Firefox is blocking Slow-Loading Trackers"-->
+<!ENTITY contentBlocking.fastBlock.blocking.label "Blokuojama">
 <!-- LOCALIZATION NOTE (contentBlocking.fastBlock.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
@@ -951,12 +1017,25 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.fastBlock.add.label "Pridėti blokavimą…">
 
 <!ENTITY contentBlocking.trackingProtection2.label "Visi aptikti stebėjimo elementai">
+
+<!ENTITY contentBlocking.trackingProtection3.label "Stebėjimo elementai">
+<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.allowed.label):
+     This label signals that this type of content blocking is turned
+     OFF and is not blocking tracker content, so this is not
+     a positive thing. It forms the end of the (imaginary) sentence
+     "Trackers [are] Allowed"-->
+<!ENTITY contentBlocking.trackingProtection.allowed.label "Leisti">
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
      This label signals that this type of content blocking is turned
      ON and is successfully blocking tracker content, so this is
      a positive thing. It forms the end of the (imaginary) sentence
      "Trackers [are] Blocked"-->
 <!ENTITY contentBlocking.trackingProtection.blocked.label "Užblokuota">
+<!-- LOCALIZATION NOTE (contentBlocking.tranckingProtection.blocking.label):
+     This label signals that this type of content blocking is turned
+     ON, so this is a positive thing. It forms the verb in the (imaginary) sentence
+     "Firefox is blocking Trackers"-->
+<!ENTITY contentBlocking.trackingProtection.blocking.label "Blokuojama">
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
@@ -964,17 +1043,29 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection.add.label "Pridėti blokavimą…">
 
 <!ENTITY contentBlocking.3rdPartyCookies.label "Trečiųjų šalių slapukai">
+<!ENTITY contentBlocking.3rdPartyCookies.trackers.label "Stebėjimo slapukai">
 <!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.blocked.label):
      This label signals that this type of content blocking is turned
      ON and is successfully blocking third-party cookies, so this is
      a positive thing. It forms the end of the (imaginary) sentence
      "Third-Party Cookies [are] Blocked"-->
 <!ENTITY contentBlocking.3rdPartyCookies.blocked.label "Blokuojami">
+<!-- LOCALIZATION NOTE (contentBlocking.tranckingProtection.blocking.label):
+     This label signals that this type of content blocking is turned
+     ON, so this is a positive thing. It forms the verb in the (imaginary) sentence
+     "Firefox is blocking Third-Party Cookies"-->
+<!ENTITY contentBlocking.3rdPartyCookies.blocking.label "Blokuojama">
 <!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
      the type of content blocking is currently not enabled. -->
 <!ENTITY contentBlocking.3rdPartyCookies.add.label "Pridėti blokavimą…">
+
+<!ENTITY contentBlocking.manageSettings.label "Tvarkyti turinio blokavimą">
+<!ENTITY contentBlocking.manageSettings.accesskey "T">
+
+<!ENTITY contentBlocking.trackersView.label "Stebėjimo elementai">
+<!ENTITY contentBlocking.trackersView.strictInfo.label "Norėdami blokuoti visus stebėjimo elementus, pasirinkite „griežtą“ turinio blokavimą.">
 
 <!ENTITY contentBlocking.openBreakageReportView2.label "Pranešti apie problemą">
 <!ENTITY contentBlocking.breakageReportView.label "Pranešti apie problemas">
@@ -987,32 +1078,32 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY trackingProtection.title "Apsauga nuo stebėjimo">
 <!ENTITY trackingProtection.tooltip "Atverti apsaugos nuo stebėjimo nuostatas">
-<!ENTITY trackingProtection.detectedBlocked4 "„&brandShortName;“ blokuoja jūsų naršymą galinčias stebėti šio tinklalapio dalis.">
-<!ENTITY trackingProtection.detectedNotBlocked5 "„&brandShortName;“ aptiko jūsų naršymą galinčių stebėti elementų.">
-<!ENTITY trackingProtection.detectedException "„&brandShortName;“ aptiko jūsų naršymą galinčių stebėti elementų. Jūsų apsauga šioje svetainėje yra išjungta.">
-<!ENTITY trackingProtection.notDetected5 "Tinklalapyje nerasta stebėjimui naudojamų elementų.">
-<!ENTITY trackingProtection.notDetectedException "Tinklalapyje nerasta stenėjimui naudojamų elementų. Jūsų apsauga šioje svetainėje yra išjungta.">
-
-<!ENTITY trackingProtection.reloadRequired2 "Jūs įjungėte apsaugą nuo stebėjimo. Norėdami blokuoti visus stebėjimo elementus, įkelkite šį tinklalapį iš naujo.">
 
 <!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in NON-private browsing mode. -->
-<!ENTITY trackingProtection.unblock3.label "Išjungti šioje svetainėje">
-<!ENTITY trackingProtection.unblock3.accesskey "I">
 <!ENTITY trackingProtection.unblock4.label "Išjungti blokavimą šioje svetainėje">
 <!ENTITY trackingProtection.unblock4.accesskey "I">
 <!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in PRIVATE browsing mode. -->
-<!ENTITY trackingProtection.unblockPrivate3.label "Išjungti šiame seanse">
-<!ENTITY trackingProtection.unblockPrivate3.accesskey "I">
-<!ENTITY trackingProtection.block4.label "Įjungti šioje svetainėje">
-<!ENTITY trackingProtection.block4.accesskey "j">
 <!ENTITY trackingProtection.unblockPrivate4.label "Laikinai išjungti blokavimą">
 <!ENTITY trackingProtection.unblockPrivate4.accesskey "I">
 <!ENTITY trackingProtection.block5.label "Įjungti blokavimą šioje svetainėje">
 <!ENTITY trackingProtection.block5.accesskey "j">
+
+<!-- LOCALIZATION NOTE (trackingProtection.unblock5.label, trackingProtection.unblock5.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in NON-private browsing mode. -->
+<!ENTITY trackingProtection.unblock5.label "Išjungti blokavimą šioje svetainėje">
+<!ENTITY trackingProtection.unblock5.accesskey "j">
+<!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate6.label, trackingProtection.unblockPrivate6.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in PRIVATE browsing mode. -->
+<!ENTITY trackingProtection.unblockPrivate5.label "Išjungti blokavimą laikinai">
+<!ENTITY trackingProtection.unblockPrivate5.accesskey "j">
+<!ENTITY trackingProtection.block6.label "Įjungti blokavimą šioje svetainėje">
+<!ENTITY trackingProtection.block6.accesskey "j">
 <!ENTITY trackingProtection.reload2.label "Įkelti tinklalapį iš naujo">
 <!ENTITY trackingProtection.reload2.accesskey "k">
 
@@ -1118,7 +1209,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY sendToDevice.syncNotReady.label "Sinchronizuojami įrenginiai…">
 
 <!ENTITY pageAction.shareUrl.label "Dalintis">
-
 <!ENTITY pageAction.shareMore.label "Daugiau…">
 
 <!ENTITY libraryButton.tooltip "Peržiūrėti žurnalą, adresyno įrašus ir daugiau">

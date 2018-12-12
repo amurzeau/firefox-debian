@@ -65,7 +65,7 @@
 
 <!-- LOCALIZATION NOTE (debuggerUI.ignoreCaughtExceptions): This is the label for the
   -  checkbox that toggles ignoring caught exceptions. -->
-<!ENTITY debuggerUI.ignoreCaughtExceptions           "Ignorar as excepcións detectadas">
+<!ENTITY debuggerUI.ignoreCaughtExceptions           "Ignorar as excepcións capturadas">
 <!ENTITY debuggerUI.ignoreCaughtExceptions.accesskey "c">
 
 <!-- LOCALIZATION NOTE (debuggerUI.showPanesOnInit): This is the label for the
@@ -126,7 +126,7 @@
 <!ENTITY debuggerUI.searchToken.key       "F">
 <!ENTITY debuggerUI.searchToken.accesskey "A">
 
-<!-- LOCALIZATION NOTE (debuggerUI.searchLine): This is the text that appears
+<!-- LOCALIZATION NOTE (debuggerUI.searchGoToLine): This is the text that appears
   -  in the source editor's context menu for the line search operation. -->
 <!ENTITY debuggerUI.searchGoToLine           "Ir á liña…">
 <!ENTITY debuggerUI.searchGoToLine.key       "L">
@@ -159,8 +159,10 @@
 <!ENTITY debuggerUI.seMenuCondBreak     "Engadir o punto de quebra condicional">
 <!ENTITY debuggerUI.seMenuCondBreak.key "B">
 
-<!-- LOCALIZATION NOTE (debuggerUI.seMenuBreak): This is the text that
+<!-- LOCALIZATION NOTE (debuggerUI.seEditMenuCondBreak): This is the text that
   -  appears in the source editor context menu for editing a breakpoint. -->
+<!ENTITY debuggerUI.seEditMenuCondBreak     "Editar o punto de quebra condicional">
+<!ENTITY debuggerUI.seEditMenuCondBreak.key "b">
 
 <!-- LOCALIZATION NOTE (debuggerUI.tabs.*): This is the text that
   -  appears in the debugger's side pane tabs. -->
@@ -181,7 +183,7 @@
 <!ENTITY debuggerUI.addWatch            "Engadir expresión a vixiar">
 <!ENTITY debuggerUI.addWatch.accesskey  "E">
 
-<!-- LOCALIZATION NOTE (debuggerUI.removeWatch): This is the text that
+<!-- LOCALIZATION NOTE (debuggerUI.removeAllWatch): This is the text that
   -  appears in the watch expressions context menu for removing all expressions. -->
 <!ENTITY debuggerUI.removeAllWatch           "Retirar todas as expresións a vixiar">
 <!ENTITY debuggerUI.removeAllWatch.key       "E">

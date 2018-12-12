@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = Bloca
 permissions-capabilities-prompt =
     .label = Demana-m'ho sempre
+permissions-capabilities-listitem-allow =
+    .value = Permet
+permissions-capabilities-listitem-block =
+    .value = Bloca
+permissions-capabilities-listitem-allow-first-party =
+    .value = Permet només al domini principal
+permissions-capabilities-listitem-allow-session =
+    .value = Permet durant la sessió
 
 ## Invalid Hostname Dialog
 
@@ -85,10 +93,6 @@ permissions-exceptions-addons-desc = Podeu especificar quins llocs web poden ins
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = Llocs web permesos - Reproducció automàtica
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = Podeu especificar quins llocs web poden reproduir automàticament elements multimèdia. Escriviu l'adreça exacta del lloc que vulgueu permetre i feu clic a Permet.
 permissions-exceptions-autoplay-media-window2 =
     .title = Excepcions - Reproducció automàtica
     .style = { permissions-window.style }

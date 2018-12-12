@@ -53,6 +53,7 @@ pane-sync-title = حساب فَيَرفُكس
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = دعم { -brand-short-name }
+addons-button-label = الامتدادات والسمات
 focus-search =
     .key = f
 close-button =
@@ -83,6 +84,9 @@ extension-controlled-homepage-override = يتحكم أحد الامتدادات 
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = يتحكم أحد الامتدادات (<img data-l10n-name="icon"/> { $name }) في صفحة اللسان الجديد.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = يتحكّم الامتداد <img data-l10n-name="icon"/> { $name } بهذا الإعداد.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = ضبط أحد الامتدادات (<img data-l10n-name="icon"/> { $name }) محرك البحث المبدئي.
@@ -149,6 +153,9 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = نبّهني عند محاولة إغلاق عدّة ألسنة
     .accesskey = ة
+warn-on-quit-close-multiple-tabs =
+    .label = نبّهني عند محاولة الإنهاء وإغلاق عدّة ألسنة
+    .accesskey = ن
 warn-on-open-many-tabs =
     .label = نبّهني عند فتح عدة ألسنة أن هذا قد يبطئ { -brand-short-name }
     .accesskey = ف
@@ -293,6 +300,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = حدّث محركات البحث تلقائيًا
     .accesskey = ك
+update-pref-write-failure-title = فشلت الكتابة
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = تعذّر حفظ التفضيلات. تعذّرت الكتابة في الملف: { $path }
 
 ## General Section - Performance
 
@@ -332,10 +343,13 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = ابحث عن النص مع بداية الكتابة
     .accesskey = ح
+browsing-cfr-recommendations =
+    .label = امتدادات موصى بها وأنت تتصفّح
+    .accesskey = ص
+browsing-cfr-recommendations-learn-more = اطّلع على المزيد
 
 ## General Section - Proxy
 
-network-proxy-title = وسيط الشبكة
 network-settings-title = إعدادات الشبكة
 network-proxy-connection-description = اضبط طريقة اتصال { -brand-short-name } بالإنترنت.
 network-proxy-connection-learn-more = اطّلع على المزيد
@@ -534,6 +548,7 @@ privacy-header = خصوصية المتصفح
 ## Privacy Section - Forms
 
 forms-header = النماذج و كلمات السر
+logins-header = جلسات الولوج وكلمات السر
 forms-ask-to-save-logins =
     .label = اطلب مني حفظ كلمات سر و بيانات ولوج مواقع الوِب
     .accesskey = ط
@@ -600,26 +615,15 @@ sitedata-total-size-calculating = يحسب حجم بيانات الموقع و 
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = تستخدم الكعكات، و بيانات الموقع، و الخبيئة المحفوظة حاليًا { $value }‏ { $unit } من مساحة القرص.
 sitedata-learn-more = اطّلع على المزيد
-sitedata-accept-cookies-option =
-    .label = اقبل الكعكات و بيانات المواقع من المواقع (مستحسن)
-    .accesskey = ق
-sitedata-block-cookies-option =
-    .label = احجب الكعكات و بيانات المواقع (قد يتسبب بعطب المواقع)
-    .accesskey = ح
 sitedata-keep-until = احتفظ بها حتى
     .accesskey = ظ
 sitedata-keep-until-expire =
     .label = تنتهي صلاحيتها
 sitedata-keep-until-closed =
     .label = إغلاق { -brand-short-name }
-sitedata-accept-third-party-desc = اسمح بكعكات و بيانات موقع الطرف الثالث
-    .accesskey = ط
-sitedata-accept-third-party-always-option =
-    .label = دائمًا
-sitedata-accept-third-party-visited-option =
-    .label = من المواقع المُزارة
-sitedata-accept-third-party-never-option =
-    .label = أبدًا
+sitedata-delete-on-close =
+    .label = احذف الكعكات وبيانات المواقع عندما ينغلق { -brand-short-name }
+    .accesskey = ذ
 sitedata-allow-cookies-option =
     .label = اقبل الكعكات و بيانات المواقع
     .accesskey = ق
@@ -653,6 +657,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = إعداداتك في خيارات حجب المحتوى تمنع التغييرات على إعدادات الكعكات وبيانات المواقع.
+sitedata-cookies-permissions =
+    .label = أدِر التصاريح
+    .accesskey = ص
 
 ## Privacy Section - Address Bar
 
@@ -673,6 +680,7 @@ addressbar-suggestions-settings = غيّر تفضيلات اقتراحات مح�
 
 content-blocking-header = حجب المحتوى
 content-blocking-desc = احجب المحتوى من الأطراف الثالثة (مثل الإعلانات والنصوص البرمجية) التي تُبطئ من التصفح وتتعقّبك وأنت تجوب الوِب. خصّص الإعدادات لتوازن بين الحماية والأداء.
+content-blocking-description = احجب المحتوى من الأطراف الثالثة والذي يتعقّبك في أرجاء الوِب. تحكّم بمقدار نشاطك الشبكي الذي يُخزّن ويُشارك بين المواقع.
 content-blocking-learn-more = اطّلع على المزيد
 content-blocking-restore-defaults =
     .label = استعد المبدئيات
@@ -693,6 +701,28 @@ content-blocking-fastblock-slow-loading-trackers-label =
     .label = المتعقّبات بطيئة التحميل
     .accesskey = ط
 content-blocking-fastblock-new-description = احجب المتعقّبات التي تمنع تحميل الصفحات بسرعة فحسب.
+content-blocking-setting-standard =
+    .label = قياسي
+    .accesskey = ق
+content-blocking-setting-strict =
+    .label = صارم
+    .accesskey = ص
+content-blocking-setting-custom =
+    .label = مخصّص
+    .accesskey = خ
+content-blocking-standard-desc = الموازنة بين الحماية والأداء. يتيح عمل بعض المتعقّبات لتعمل المواقع كما ينبغي.
+content-blocking-strict-desc = يحجب كل المتعقّبات التي يكتشفها { -brand-short-name }. قد يتسبّب بعطب بعض المواقع.
+content-blocking-custom-desc = اختر ما تريد حجبه.
+content-blocking-private-trackers = المتعقّبات المعروفة فقط في النوافذ الخاصة
+content-blocking-third-party-cookies = الكعكات التعقّبية من الأطراف الثالثة
+content-blocking-all-windows-trackers = المتعقّبات المعروفة في كل النوافذ
+content-blocking-all-third-party-cookies = كل الكعكات من الأطراف الثالثة
+content-blocking-warning-title = كُن على علم!
+content-blocking-warning-desc = حجب الكعكات والمتعقّبات قد يتسبّب بعطب بعض المواقع. من السهل تعطيل الحجب في المواقع التي تثق بها.
+content-blocking-learn-how = اطّلع على الطريقة
+content-blocking-tracking-protection-trackers-label =
+    .label = المتعقّبات
+    .accesskey = ق
 content-blocking-tracking-protection-all-detected-trackers-label =
     .label = كل المتعقّبات المكتشفة
     .accesskey = ش
@@ -725,6 +755,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = كل كعكات الأطراف الثالثة (قد يتسبب بعطب المواقع)
     .accesskey = ك
+content-blocking-cookies-label =
+    .label = الكعكات
+    .accesskey = ك
 
 ## Privacy Section - Tracking
 
@@ -740,16 +773,15 @@ tracking-mode-private =
 tracking-mode-never =
     .label = أبدًا
     .accesskey = ب
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = استخدم الحماية من التعقب في التصفح الخاص لحظر المتعقبات المعروفة
-    .accesskey = ص
 tracking-exceptions =
     .label = الاستثناءات…
     .accesskey = س
 tracking-change-block-list =
     .label = غيّر قائمة الحجب…
     .accesskey = غ
+tracking-manage-exceptions =
+    .label = أدِر الاستثناءات…
+    .accesskey = ث
 
 ## Privacy Section - Permissions
 
@@ -866,3 +898,36 @@ certs-view =
 certs-devices =
     .label = أجهزة الأمن…
     .accesskey = ج
+space-alert-learn-more-button =
+    .label = اطّلع على المزيد
+    .accesskey = ط
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] افتح الخيارات
+           *[other] افتح التفضيلات
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] ف
+           *[other] ف
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] مساحة القرص قاربت على النفاذ من { -brand-short-name }. قد لا يُعرض محتوى المواقع كما ينبغي. يمكنك مسح البيانات المحفوظة من ”الخيارات ← الخصوصية والأمان ← بيانات المواقع“.
+       *[other] مساحة القرص قاربت على النفاذ من { -brand-short-name }. قد لا يُعرض محتوى المواقع كما ينبغي. يمكنك مسح البيانات المحفوظة من ”التفضيلات ← الخصوصية والأمان ← بيانات المواقع“.
+    }
+space-alert-under-5gb-ok-button =
+    .label = حسنًا، فهمت
+    .accesskey = ح
+space-alert-under-5gb-message = مساحة القرص قاربت على النفاذ من { -brand-short-name }. قد لا يُعرض محتوى المواقع كما ينبغي. اذهب إلى ”اطّلع على المزيد“ لتحسين استخدام القرص لتصفح أحسن.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = سطح المكتب
+downloads-folder-name = التّنزيلات
+choose-download-folder-title = اختر مجلّد التّنزيلات:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = احفظ الملفات في { $service-name }

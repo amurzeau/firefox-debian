@@ -3,13 +3,13 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 blocklist-window =
-    .title = Seznamy blokování
-    .style = width: 50em
-blocklist-desc = Můžete si vybrat, který seznam { -brand-short-name } použije k blokování prvků, které vás mohou sledovat při prohlížení.
+    .title = Úrovně blokování
+    .style = width: 55em
+blocklist-desc = Můžete si vybrat, jak bude { -brand-short-name } postupovat při blokování prvků, které vás mohou sledovat při prohlížení.
 blocklist-close-key =
     .key = w
 blocklist-treehead-list =
-    .label = Seznam
+    .label = Úroveň
 blocklist-button-cancel =
     .label = Zrušit
     .accesskey = Z
@@ -24,7 +24,7 @@ blocklist-button-ok =
 #   $listName {string, "Standard (Recommended)."} - List name.
 #   $description {string, "This list does a pretty good job."} - Description of the list.
 blocklist-item-list-template = { $listName } { $description }
-blocklist-item-moz-std-name = Základní ochrana s Disconnect.me (doporučeno).
-blocklist-item-moz-std-desc = Povoluje některé sledovací prvky pro správné fungování stránek.
-blocklist-item-moz-full-name = Přísná ochrana s Disconnect.me.
+blocklist-item-moz-std-name = Základní ochrana od Disconnect.me (doporučeno).
+blocklist-item-moz-std-desc = Povoluje některé sledovací prvky, aby stránky fungovaly správně.
+blocklist-item-moz-full-name = Přísná ochrana od Disconnect.me.
 blocklist-item-moz-full-desc = Blokuje všechny známé sledovací prvky. Některé stránky nemusí fungovat správně.

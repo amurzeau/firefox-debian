@@ -10,9 +10,10 @@
 <!ENTITY returnToPreviousPage.label "Ewch Nôl">
 <!ENTITY returnToPreviousPage1.label "Ewch Nôl (Argymell)">
 <!ENTITY advanced.label "Uwch">
-
 <!ENTITY continue2.label "Rhagor…">
 <!ENTITY moreInformation.label "Rhagor o Wybodaeth">
+
+<!ENTITY viewCertificate.label "Darllen Tystysgrif">
 
 <!-- Specific error messages -->
 
@@ -93,14 +94,20 @@
 
 <!ENTITY certerror.longpagetitle1 "Nid yw eich cysylltiad yn ddiogel">
 <!ENTITY certerror.longpagetitle2 "Rhybudd: Risg Diogelwch Posibl o'ch Blaen">
+<!ENTITY certerror.sts.longpagetitle  "Peidiwch Cysylltu: Mater Diogelwch Posib">
 <!-- Localization note (certerror.introPara, certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "Mae perchennog <span class='hostname'/> wedi ffurfweddu ei wefan yn anghywir.  I rwystro eich manylion rhag cael eu dwyn, nid yw &brandShortName; wedi cysylltu â'r wefan.">
-
 <!ENTITY certerror.introPara2 "Mae &brandShortName; wedi canfod bygythiad diogelwch posib ac nid yw wedi mynd i <span class='hostname'/>. Os ewch i'r gwefan yma, gall ymosodwyr geisio dwyn gwybodaeth fel eich cyfrineiriau, e-byst neu fanylion cardiau credyd.">
 
 <!ENTITY certerror.expiredCert.secondPara "Mae'n fwyaf tebygol fod hyn o oherwydd bod cloc eich cyfrifiadur wedi'i osod i'r amser anghywir, sy'n atal &brandShortName; rhag gysylltu'r ddiogel.">
+
+<!ENTITY certerror.sts.introPara "Mae &brandShortName; wedi canfod bygythiad diogelwch posib ac nid yw wedi mynd i <span class='hostname'/> gan fod y wefan angen cysylltiad diogel.">
+
+<!ENTITY certerror.expiredCert.introPara "Mae &brandShortName; wedi canfod bygythiad diogelwch posib ac nid yw wedi mynd i <span class='hostname'/>. Un ai mae'r wefan wedi ei gam ffurfweddu neu mae cloc eich cyfrifiadur wedi ei osod i'r amser anghywir.">
+<!ENTITY certerror.expiredCert.secondPara2 "Mae'n debyg fod tystysgrif y wefan wedi dod i ben, sy'n atal &brandShortName; rhag cysylltu'n ddiogell. Os ewch chi i'r wefan hon gall ymosodwyr geisio dwy gwybodaeth fel eich cyfrineiriau, e-byst neu fanylion cerdyn credyd.">
+<!ENTITY certerror.expiredCert.sts.secondPara "Mae'n debyg fod tystysgrif y wefan wedi dod i ben, sy'n atal &brandShortName; rhag cysylltu'n ddiogell.">
 
 <!ENTITY certerror.whatCanYouDoAboutItTitle "Beth allwch chi wneud am hyn?">
 
@@ -122,7 +129,6 @@ was trying to connect. -->
 
 
 <!ENTITY securityOverride.exceptionButtonLabel "Ychwanegu Eithriad…">
-
 <!ENTITY securityOverride.exceptionButton1Label "Derbyn y Bygythiad a Pharhau">
 
 <!ENTITY errorReporting.automatic2 "Mae adroddiadau gwall fel hyn y cynorthwyo Mozilla i adnabod a rhwystro gwefannau maleisus">
@@ -144,6 +150,7 @@ was trying to connect. -->
 
 <!ENTITY certerror.pagetitle1  "Cysylltiad Anniogel">
 <!ENTITY certerror.pagetitle2  "Rhybudd: Risg Diogelwch Posibl o'ch Blaen">
+<!ENTITY certerror.sts.pagetitle  "Peidiwch cysylltu: Mater Diogelwch Posib">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Mae'r wefan hon yn defnyddio HTTP Strict Transport Security (HSTS) i bennu fod &brandShortName; yn unig yn cysylltu iddo'n ddiogel. O ganlyniad, nid yw'n bosib ychwanegu eithriad ar gyfer y dystysgrif hon.">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "Mae gan <span class='hostname'></span> bolisi diogelwch o'r enw HTTP Strict Transport Security (HSTS), sy'n golygu mai dim ond yn ddiogel mae modd i &brandShortName; gysylltu. Nid oes modd gosod eithriad er mwyn ymweld â'r wefan.">
 <!ENTITY certerror.copyToClipboard.label "Copïo testun i'r clipfwrdd">
@@ -160,3 +167,6 @@ was trying to connect. -->
 
 <!ENTITY prefReset.longDesc "Mae'n edrych fel mai eich gosodiadau diogelwch rhwydwaith sy'n achosi hyn. Hoffech chi adfer y gosodiadau rhagosodedig?">
 <!ENTITY prefReset.label "Adfer y gosodiadau rhagosodedig">
+
+<!ENTITY networkProtocolError.title "Gwall Protocol Rhwydwaith">
+<!ENTITY networkProtocolError.longDesc "<p>Nid oes modd dangos y dudalen rydych chi'n ceisio'i gweld oherwydd cafwyd gwall yn y protocol rhwydwaith.</p><ul><li> Cysylltwch â pherchenogion y wefan i roi gwybod iddynt am y broblem hon.</li></ul>">

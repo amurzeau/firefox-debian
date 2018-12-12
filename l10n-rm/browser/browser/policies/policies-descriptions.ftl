@@ -18,6 +18,7 @@ policy-BlockAboutProfiles = Bloccar l'access a la pagina about:profiles.
 policy-BlockAboutSupport = Bloccar l'access a la pagina about:support.
 policy-Bookmarks = Crear segnapaginas en la trav da segnapaginas, en il menu da segnapaginas u en in da lur sutordinaturs.
 policy-Certificates = Utilisar u betg utilisar certificats integrads. Questa directiva è per il mument mo disponibla per Windows.
+policy-CertificatesDescription = Agiuntar certificats u utilisar certificats predefinids.
 policy-Cookies = Permetter u scumandar a websites da definir cookies.
 policy-DisableAppUpdate = Impedir l'actualisaziun dal navigatur.
 policy-DisableBuiltinPDFViewer = Deactivar PDF.js, il lectur per PDFs integrà en { -brand-short-name }.
@@ -42,6 +43,7 @@ policy-DisableSystemAddonUpdate = Impedir ch'il navigatur installeschia ed actua
 policy-DisableTelemetry = Deactivar la telemetria.
 policy-DisplayBookmarksToolbar = Mussar la trav da segnapaginas sco standard.
 policy-DisplayMenuBar = Mussar la trav da menu sco standard.
+policy-DNSOverHTTPS = Configurar DNS via HTTPS.
 policy-DontCheckDefaultBrowser = Deactivar la controlla dal navigatur da standard cun aviar.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Activar u deactivar la bloccada da cuntegn e tut tenor basegn impedir la modificaziun da l'opziun.
@@ -62,9 +64,12 @@ policy-OverridePostUpdatePage = Surscriver la pagina «What's New» che vegn mus
 policy-Permissions = Configurar permissiuns per camera, microfon, posiziun e notificaziuns.
 policy-PopupBlocking = Permetter a tschertas websites da mussar popups sco standard.
 policy-Proxy = Configurar ils parameters dal proxy.
+policy-RequestedLocales = Definescha, en la successiun da preferenza, la glista da las linguas («locales») dumandadas da l'applicaziun.
 policy-SanitizeOnShutdown = Stizzar tut las datas da navigaziun cun terminar.
 policy-SearchBar = Definir l'adressa da standard da la trav da tschertgar. L'utilisader la po anc adina persunalisar.
 policy-SearchEngines = Configurar ils parameters da maschinas da tschertgar. Questa directiva è mo disponibla en la versiun Extended Support Release (ESR).
+# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
+policy-SecurityDevices = Installar moduls PKCS #11.
 # “format” refers to the format used for the value of this policy. See also:
 # https://github.com/mozilla/policy-templates/blob/master/README.md#websitefilter-machine-only
 policy-WebsiteFilter = Impedir l'access a tschertas websites. Consultar la documentaziun per ulteriuras infurmaziuns davart il format.

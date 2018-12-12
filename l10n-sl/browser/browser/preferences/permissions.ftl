@@ -42,10 +42,18 @@ permissions-capabilities-block =
     .label = Prepovej
 permissions-capabilities-prompt =
     .label = Vedno vprašaj
+permissions-capabilities-listitem-allow =
+    .value = Dovoli
+permissions-capabilities-listitem-block =
+    .value = Prepovej
+permissions-capabilities-listitem-allow-first-party =
+    .value = Dovoli samo lastne
+permissions-capabilities-listitem-allow-session =
+    .value = Dovoli v tej seji
 
 ## Invalid Hostname Dialog
 
-permissions-invalid-uri-title = Neveljaven naslov
+permissions-invalid-uri-title = Vneseni naslov je neveljaven
 permissions-invalid-uri-label = Prosim, vnesite veljaven naslov.
 
 ## Exceptions - Tracking Protection
@@ -54,6 +62,10 @@ permissions-exceptions-tracking-protection-window =
     .title = Izjeme – Zaščita pred sledenjem
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = Na teh spletnih straneh ste onemogočili zaščito pred sledenjem.
+permissions-exceptions-content-blocking-window =
+    .title = Izjeme – Zavračanje vsebine
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = Zavračanje vsebine na teh spletnih straneh je onemogočeno.
 
 ## Exceptions - Cookies
 
@@ -85,10 +97,6 @@ permissions-exceptions-addons-desc = Določite, katere strani smejo nameščati 
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = Dovoljene strani – Samodejno predvajanje
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = Določite lahko, katere spletne strani smejo samodejno predvajati predstavnostne elemente. Vnesite točen naslov spletne strani, ki ji želite omogočiti samodejno predvajanje, in nato kliknite Dovoli.
 permissions-exceptions-autoplay-media-window2 =
     .title = Izjeme – Samodejno predvajanje
     .style = { permissions-window.style }

@@ -2,9 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-languages-window =
-    .title = Idiomas
-    .style = width: 30em
+webpage-languages-window =
+    .title = Configuración de idioma dos sitios web
+    .style = width: 40em
 languages-close-key =
     .key = w
 languages-description = É frecuente que as páxinas web se poidan consultar en máis dun idioma. Escolla, en orde de preferencia, os idiomas para visualizar ese tipo de páxinas
@@ -36,3 +36,20 @@ languages-customize-add =
 #   $code (String) - Locale code of the locale (for example: "is", "es-CL")
 languages-code-format =
     .label = { $locale }  [{ $code }]
+languages-active-code-format =
+    .value = { languages-code-format.label }
+browser-languages-window =
+    .title = Configuración de idioma de { -brand-short-name }
+    .style = width: 40em
+browser-languages-description = { -brand-short-name } amosará o primeiro idioma como o seu predeterminado e usará os idiomas alternativos, se é necesario, na orde de aparición.
+browser-languages-search = Buscar máis idiomas…
+browser-languages-searching =
+    .label = Buscando idiomas…
+browser-languages-downloading =
+    .label = Descargando…
+browser-languages-select-language =
+    .label = Seleccione un idioma para engadir…
+    .placeholder = Seleccione un idioma para engadir…
+browser-languages-installed-label = Idiomas instalados
+browser-languages-available-label = Idiomas dispoñíbeis
+browser-languages-error = Non é posíbel que { -brand-short-name } actualice os seus idiomas neste momento. Comprobe que está conectado á Internet e tente de novo.

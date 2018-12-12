@@ -28,6 +28,14 @@ permissions-capabilities-allow =
     .label = Noo fondo
 permissions-capabilities-block =
     .label = Gagay
+permissions-capabilities-listitem-allow =
+    .value = Noo fondo
+permissions-capabilities-listitem-block =
+    .value = Gagay
+permissions-capabilities-listitem-allow-first-party =
+    .value = Ceewaani de noo fondo
+permissions-capabilities-listitem-allow-session =
+    .value = Noo fondo goywaati se
 
 ## Invalid Hostname Dialog
 
@@ -56,6 +64,9 @@ permissions-exceptions-saved-logins-window =
 ## Exceptions - Add-ons
 
 permissions-exceptions-addons-desc = War ga hin ka tabatandi Interneti nungey kaŋ ga duu fondo ka tontoney sinji. Nungoo kaŋ war ga bag'a aderesu alhakiikaa hantum, de wa Noo fondo naagu.
+
+## Exceptions - Autoplay Media
+
 
 ## Site Permissions - Notifications
 

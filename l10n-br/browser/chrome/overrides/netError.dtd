@@ -10,8 +10,10 @@
 <!ENTITY returnToPreviousPage.label "Distreiñ">
 <!ENTITY returnToPreviousPage1.label "Distreiñ (Erbedet)">
 <!ENTITY advanced.label "Kempleshoc'h">
+<!ENTITY continue2.label "Muioc'h...">
+<!ENTITY moreInformation.label "Muioc'h a ditouroù">
 
-<!ENTITY continue1.label "Kenderc'hel...">
+<!ENTITY viewCertificate.label "Gwelout an testeni">
 
 <!-- Specific error messages -->
 
@@ -95,14 +97,20 @@
 
 <!ENTITY certerror.longpagetitle1 "N'eo ket diarvar ho kennask">
 <!ENTITY certerror.longpagetitle2 "Diwallit: gallout a ra bezañ un arvar diogelroez">
-<!-- Localization note (certerror.introPara, certerror.introPara1) - The text content of the span tag
+<!ENTITY certerror.sts.longpagetitle  "N'eo ket kennasket: kudenn diogelroez posupl">
+<!-- Localization note (certerror.introPara, certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "Direizh eo ket bet kefluniet o lec'hienn wiad gant perc'henned <span class='hostname'/>. Kuit na vefe laeret ho stlennoù n'oc'h ket bet kennasket ouzh al lec'hienn-mañ gant &brandShortName;.">
-
-<!ENTITY certerror.introPara1 "Dinoet ez eus bet ur riskl arvar diogelroez gant &brandShortName; ha n'en deus ket kendalc'het etrezek <span class='hostname'/>. Ma weladennit al lec'hienn-mañ e c'hallo tagerien klask laerañ ho titouroù evel ho kerioù-tremen, ho chomlec'hioù postel pe ho kartenn gred.">
+<!ENTITY certerror.introPara2 "Dinoet eo bet gant &brandShortName; ur arvar diogelroez ha n'eus ket kendalc'het etrezek <span class='hostname'/>. Ma weladennit al lec'hienn-mañ e c'hallo tagerien klask laerez ho titouroù evel gerioù-tremen, chomlec'hioù postel pe munudoù kartennoù kred.">
 
 <!ENTITY certerror.expiredCert.secondPara "Gallout a ra bezañ liammet ar gudenn-mañ gant eurier hoc'h urzhiataer. Un eur direizh a c'hall mirout &brandShortName; da genderc'hel en un doare diogel.">
+
+<!ENTITY certerror.sts.introPara "Dinoet ez eus bet gant &brandShortName; un arvar diogelroez posupl ha n'en deus ket kendalc'het etrezek <span class='hostname'/> dre ma azgoulenn al lec'hienn-mañ ur c'hennask diogel.">
+
+<!ENTITY certerror.expiredCert.introPara "Dinoet ez eus bet ur gudenn gant &brandShortName; ha n'en deus ket kendalc'het etrezek <span class='hostname'/>. Kefluniet eo fall al lec'hienn pe direizh eo eur hoc'h urzhiataer.">
+<!ENTITY certerror.expiredCert.secondPara2 "Moarvat eo diamzeret testeni al lec'hienn, ar pezh a vir &brandShortName; da gennaskañ en un doare diogel. Ma weladennit al lec'hienn e c'hallfe tagerien laerez titouroù evel ho kerioù-tremen, ho chomlec'hioù postel pe munudoù ho kartenn gred.">
+<!ENTITY certerror.expiredCert.sts.secondPara "Moarvat eo diamzeret testeni al lec'hienn, ar pezh a vir &brandShortName; da gennaskañ en un doare diogel.">
 
 <!ENTITY certerror.whatCanYouDoAboutItTitle "Petra a c'hallit ober?">
 
@@ -111,10 +119,8 @@ was trying to connect. -->
 <p>Ma 'z oc'h war ur genrouedad kenlabourus pe e rit gant ur meziant enepviruz, gellout a rit mont e darempred gant ar skipailhoù skoazell evit kaout sikour. Gellout a rit reiñ da anavezout ar gudenn d'ar merour ivez.</p>
 ">
 
-<!ENTITY certerror.expiredCert.whatCanYouDoAboutIt "
-<p>Horolaj hoc'h urzhiataer a zo termenet da <span id='wrongSystemTime_systemDate'/>. Bezit asur ez eo termenet mat deiziad, eurvezh, ha zonenn eurvezh hoc'h urzhiater en hoc'h arventennoù reizhiad, ha freskait da c'houde <span class='hostname'/>.</p>
-<p>If your clock is already set to the right time, the website is likely misconfigured, and there is nothing you can do to resolve the issue. You can notify the website’s administrator about the problem.</p>
-">
+<!ENTITY certerror.expiredCert.whatCanYouDoAboutIt2 "<p>Eurier hoc'h urzhiataer a zo lakaet da <span id='wrongSystemTime_systemDate2'/>. Gwiriekait ez eo lakaet hoc'h urzhiataer d'an deiziad, eur ha gwerzhid-eur dereat en hoc'h arventennoù reizhiad hag adkargit <span class='hostname'/>.</p>
+<p>M'eo lakaet hoc'h eurier en eur dereat endeo e c'hall al lec'hienn-mañ bezañ kefluniet fall ha n'hallit ober netra evit diskoulmañ ar gudenn. Gallout a rit mont e darempred gant ardoer al lec'hienn evit e gelaouiñ eus ar gudenn.</p>">
 
 <!ENTITY certerror.badCertDomain.whatCanYouDoAboutIt "
 <p>Liammet eo ar gudenn gant al lec'hienn sur-mat, ha n'eus netra e c'hallfec'h ober evit dont a-benn anezhi. Gellout a rit reiñ da anavezout ar gudenn d'ar merour ivez.</p>
@@ -130,6 +136,7 @@ was trying to connect. -->
 
 
 <!ENTITY securityOverride.exceptionButtonLabel "Ouzhpennañ un nemedenn…">
+<!ENTITY securityOverride.exceptionButton1Label "Asantiñ ar riskl ha kenderc'hel">
 
 <!ENTITY errorReporting.automatic2 "Danevellit kudennoù evel-se evit sikour Mozilla da naoudiañ ha stankañ al lec'hiennoù droukrañsus">
 <!ENTITY errorReporting.learnMore "Gouzout hiroc'h…">
@@ -150,6 +157,7 @@ was trying to connect. -->
 
 <!ENTITY certerror.pagetitle1  "Kennask arvarus">
 <!ENTITY certerror.pagetitle2  "Diwallit: ur riskl surentez bennak 'zo">
+<!ENTITY certerror.sts.pagetitle  "N'eo ket kennasket: kudenn diogelroez posupl">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Al lec'hienn-mañ a arver HTTP Strict Transport Security (HSTS) evit erspizañ e rank &brandShortName; kennaskañ outi gant un doare diogel. N'haller ket ouzhpennañ un nemedenn evit an testeni-mañ eta.">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'></span> a zo gantañ ur politikerezh surentez anvet HTTP Strict Transport Security (HSTS), ar pezh a dalvez &brandShortName; a c'hall kennaskañ outañ en un doare sur. N'hallit ket ouzhpennañ un nemedenn ebet evit gweladenniñ al lec'hienn-mañ.">
 <!ENTITY certerror.copyToClipboard.label "Eilañ an destenn er golver">
@@ -161,5 +169,11 @@ was trying to connect. -->
 
 <!ENTITY blockedByPolicy.title "Pajenn stanket">
 
+<!ENTITY clockSkewError.title "Direizh eo eurier hoc'h urzhiataer">
+<!ENTITY clockSkewError.longDesc "Hoc'h urzhiataer a soñj dezhañ eo <span id='wrongSystemTime_systemDate1'/>, ar pezh a vir &brandShortName; da gennaskañ ent diogel. Evit gweladenniñ <span class='hostname'></span>, hizivait eur hoc'h urzhiataer en hoc'h arventennoù reizhiad ha lakait an deiziad, an eur hag ar gwerzhid-eur reizh. Adkargit <span class='hostname'></span> da c'houde.">
+
 <!ENTITY prefReset.longDesc "Gallout a ra hoc'h arventennoù rouedad bezañ kaoz eus kement-se. Fellout a ra deoc'h assav an arventennoù dre ziouer?">
 <!ENTITY prefReset.label "Assav an arventennoù dre ziouer">
+
+<!ENTITY networkProtocolError.title "Fazi komenad rouedad">
+<!ENTITY networkProtocolError.longDesc "<p>N'haller ket dikouez ar pajennoù a glaskit sellet abalamour m'eo bet dinoet ur fazi er c'homenad rouedad.</p><ul><li>Kit e darempred gant perc'henned al lec'hienn evit o zitouriñ eus ar gudenn-mañ.</li></ul>">

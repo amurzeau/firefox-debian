@@ -4,49 +4,49 @@
 
 <!ENTITY time.midnight "Miezul nopții" >
 <!ENTITY time.noon "Amiază" >
+
 <!-- Day Names -->
 <!-- LOCALIZATION NOTE : Accesskeys for day.1.Ddd to day.7.Ddd are currently
      only used in Preferences > Views > Workweek groupbox -->
+<!ENTITY day.1.Ddd "dum" >
+<!ENTITY day.1.Ddd.accesskey "d">
+<!ENTITY day.2.Ddd "lun" >
+<!ENTITY day.2.Ddd.accesskey "l">
+<!ENTITY day.3.Ddd "mar" >
+<!ENTITY day.3.Ddd.accesskey "m">
+<!ENTITY day.4.Ddd "mie" >
+<!ENTITY day.4.Ddd.accesskey "m">
+<!ENTITY day.5.Ddd "joi" >
+<!ENTITY day.5.Ddd.accesskey "j">
+<!ENTITY day.6.Ddd "vin" >
+<!ENTITY day.6.Ddd.accesskey "v">
+<!ENTITY day.7.Ddd "sâm" >
+<!ENTITY day.7.Ddd.accesskey "s">
 
-<!ENTITY day.1.Ddd "Dum" >
-<!ENTITY day.1.Ddd.accesskey "D">
-<!ENTITY day.2.Ddd "Lun" >
-<!ENTITY day.2.Ddd.accesskey "L">
-<!ENTITY day.3.Ddd "Mar" >
-<!ENTITY day.3.Ddd.accesskey "M">
-<!ENTITY day.4.Ddd "Mie" >
-<!ENTITY day.4.Ddd.accesskey "M">
-<!ENTITY day.5.Ddd "Joi" >
-<!ENTITY day.5.Ddd.accesskey "J">
-<!ENTITY day.6.Ddd "Vin" >
-<!ENTITY day.6.Ddd.accesskey "V">
-<!ENTITY day.7.Ddd "Sâm" >
-<!ENTITY day.7.Ddd.accesskey "S">
-
-<!ENTITY day.1.name "Duminică" >
-<!ENTITY day.2.name "Luni" >
-<!ENTITY day.3.name "Marți" >
-<!ENTITY day.4.name "Miercuri" >
+<!ENTITY day.1.name "duminică" >
+<!ENTITY day.2.name "luni" >
+<!ENTITY day.3.name "marți" >
+<!ENTITY day.4.name "miercuri" >
 <!ENTITY day.5.name "Joi" >
-<!ENTITY day.6.name "Vineri" >
-<!ENTITY day.7.name "Sâmbătă" >
+<!ENTITY day.6.name "vineri" >
+<!ENTITY day.7.name "sâmbătă" >
 
-<!ENTITY month.1.name "Ianuarie" >
-<!ENTITY month.2.name "Februarie" >
-<!ENTITY month.3.name "Martie" >
-<!ENTITY month.4.name "Aprilie" >
-<!ENTITY month.5.name "Mai" >
-<!ENTITY month.6.name "Iunie" >
-<!ENTITY month.7.name "Iulie" >
-<!ENTITY month.8.name "August" >
-<!ENTITY month.9.name "Septembrie" >
-<!ENTITY month.10.name "Octombrie" >
-<!ENTITY month.11.name "Noiembrie" >
-<!ENTITY month.12.name "Decembrie" >
+<!ENTITY month.1.name "ianuarie" >
+<!ENTITY month.2.name "februarie" >
+<!ENTITY month.3.name "martie" >
+<!ENTITY month.4.name "aprilie" >
+<!ENTITY month.5.name "mai" >
+<!ENTITY month.6.name "iunie" >
+<!ENTITY month.7.name "iulie" >
+<!ENTITY month.8.name "august" >
+<!ENTITY month.9.name "septembrie" >
+<!ENTITY month.10.name "octombrie" >
+<!ENTITY month.11.name "noiembrie" >
+<!ENTITY month.12.name "decembrie" >
 
 <!ENTITY onemonthbackward.tooltip "Cu o lună înapoi" >
 <!ENTITY onemonthforward.tooltip "Cu o lună înainte" >
 <!ENTITY showToday.tooltip "Mergi la ziua de azi">
 <!ENTITY onedayforward.tooltip "Cu o zi înainte">
 <!ENTITY onedaybackward.tooltip "Cu o zi înapoi">
-<!ENTITY showselectedday.tooltip "Arată evenimentele pentru ziua selectată">
+<!ENTITY showselectedday.tooltip "Afișează evenimentele pentru ziua selectată">

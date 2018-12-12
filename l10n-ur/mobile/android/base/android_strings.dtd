@@ -41,7 +41,7 @@
 
 <!-- Localization note: These are used as the titles of different pages on the home screen.
      They are automatically converted to all caps by the Android platform. -->
-<!ENTITY  bookmarks_title "نشانیاں">
+<!ENTITY  bookmarks_title "بک مارک">
 <!ENTITY  history_title "سابقات">
 
 <!ENTITY  switch_to_tab "ٹیب پر سوئچ کریں">
@@ -291,6 +291,11 @@
      Similar to the already existing "pref_whats_new_notification_summary"-->
 <!ENTITY pref_feature_tips_notification_summary "&brandShortName; کے استعمال اور دیگر &vendorShortName; مصنوعات کے بارے میں مزید سیکھیں">
 
+<!-- Localization note (pref_feature_tips_notification_enabling_hint):
+     Describe the action the user should do to enable this preference
+     Will be used in the context "<Turn on> ... to enable this feature" -->
+<!ENTITY pref_feature_tips_notification_enabling_hint "شرو کریں">
+
 <!-- Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
      for experimental features. -->
 <!ENTITY pref_category_experimental "تجرباتی فیچر">
@@ -363,7 +368,6 @@
 <!ENTITY pref_use_system_font_size_summary "سسٹم فونٹ سائز کے مطابق ویب مواد کو اسکیل کریں">
 
 <!ENTITY pref_media_autoplay_enabled "خودکار چلنے کی اجازت دیں">
-<!ENTITY pref_media_autoplay_enabled_summary "قابو کریں اگر ویب سائٹیں خود وڈیو اور دیگر میڈیا مواد چلاسکتی ہیں">
 <!ENTITY pref_media_autoplay_allow "آٹوپلے کی اجازت دیں">
 <!ENTITY pref_media_autoplay_block "آٹوپلے کو بلاک دیں">
 <!ENTITY pref_zoom_force_enabled "زوم ہمیشہ اہل بنائیں">
@@ -691,9 +695,9 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY private_data_fail "کچھ نجی کوائف ہٹائے نہیں جا سکے">
 
 <!ENTITY bookmarkhistory_button_import "درآمد کریں">
-<!ENTITY bookmarkhistory_import_both "اینڈروائڈ سے نشانیاں اور سابقات   درآمد کر رہا ہے">
-<!ENTITY bookmarkhistory_import_bookmarks "اینڈروائڈ سے نشانیاں درآمد کر رہا ہے">
-<!ENTITY bookmarkhistory_import_history "اینڈروائڈ سے سابقات درآمد کر رہا ہے">
+<!ENTITY bookmarkhistory_import_both "Android سے نشانیاں اور سابقات   درآمد کر رہا ہے">
+<!ENTITY bookmarkhistory_import_bookmarks "Android سے نشانیاں درآمد کر رہا ہے">
+<!ENTITY bookmarkhistory_import_history "Android سے سابقات درآمد کر رہا ہے">
 <!ENTITY bookmarkhistory_import_wait "انتظار کریں...">
 
 <!ENTITY suggestions_prompt3 "کیا آپ تلاش تجاویز آن کرنا چاہیں گے؟">
@@ -828,9 +832,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- LOCALIZATION NOTE(corrupt_apk): This notification is shown if corruption has been detected on startup and the user has to reinstall Firefox -->
 <!ENTITY corrupt_apk "&brandShortName; کھولنے میں ناکام رہا۔ براہ مہربانی دوبارہ تنصینب کریں اور پھر کوشش کریں۔">
 
-<!ENTITY eol_notification_title2 "&brandShortName; اب تازہ کاری نہیں کرے گا">
-<!ENTITY eol_notification_summary "مزید سیکھنے کے لیے یہاں کلک کریں">
-
 <!-- LOCALIZATION NOTE (whatsnew_notification_title, whatsnew_notification_summary): These strings
      are used for a system notification that's shown to users after the app updates. -->
 <!ENTITY whatsnew_notification_title "&brandShortName; تازہ ترین ہے">
@@ -897,10 +898,16 @@ Picture-in-picture mini window -->
 
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY default_notification_channel2 "براؤزر">
 <!ENTITY mls_notification_channel "&vendorShortName; محل وقوع خدمات">
 <!ENTITY download_notification_channel "ڈاؤن لوڈز">
 <!ENTITY media_notification_channel "میڈیا پلے بیک">
+<!ENTITY media_notification_channel2 "آواز اور ویڈیو">
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
 <!ENTITY leanplum_default_notifications_channel "&brandShortName; پش اطلاعات">
+<!ENTITY leanplum_default_notifications_channel2 "&vendorShortName; تجاویز اور چالیں">
 <!ENTITY updater_notification_channel "ایپ اپ ڈیٹس">
 <!ENTITY synced_tabs_notification_channel "ہمہ وقت ساز ٹیب">
+<!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
+web sites through the HTML Notifications API. -->
+<!ENTITY site_notifications_channel "سائٹ اعلانات">
