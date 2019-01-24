@@ -28,3 +28,14 @@ onboarding-ghostery-text = Ghostery જેવાં વિસ્તરણ સા
 # Note: "Sync" in this case is a generic verb, as in "to synchronize"
 onboarding-fxa-title = સમન્વય
 onboarding-fxa-text = { -fxaccount-brand-name } માટે સાઇન અપ કરો અને તમે જ્યાં પણ { -brand-short-name } નો ઉપયોગ કરો છો ત્યાં તમારા બુકમાર્ક્સ, પાસવર્ડ્સ અને ખુલ્લા ટૅબ્સને સમન્વયિત કરો.
+
+## Message strings belonging to the Return to AMO flow
+
+return-to-amo-sub-header = સરસ, તમને { -brand-short-name } મળી ગયું
+# <icon></icon> will be replaced with the icon belonging to the extension
+#
+# Variables:
+#   $addon-name (String) - Name of the add-on
+return-to-amo-addon-header = હવે ચાલો તમને મળીએ <icon></icon><b>{ $addon-name }.</b>
+return-to-amo-extension-button = એક્સ્ટેંશન ઉમેરો
+return-to-amo-get-started-button = { -brand-short-name } સાથે પ્રારંભ કરો

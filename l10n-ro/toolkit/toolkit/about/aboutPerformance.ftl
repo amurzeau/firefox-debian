@@ -10,6 +10,7 @@ about-performance-title = Manager de activități
 column-name = Nume
 column-type = Tip
 column-energy-impact = Impact energetic
+column-memory = Memorie
 
 ## Special values for the Name column
 
@@ -22,7 +23,7 @@ preloaded-tab = Preîncărcat: { $title }
 
 type-tab = Filă
 type-subframe = Subcadru
-type-tracker = Urmăritor
+type-tracker = Element de urmărire
 type-addon = Supliment
 type-browser = Browser
 type-worker = Worker
@@ -37,6 +38,15 @@ type-other = Altul
 energy-impact-high = Ridicat ({ $value })
 energy-impact-medium = Mediu ({ $value })
 energy-impact-low = Scăzut ({ $value })
+
+## Values for the Memory column
+##
+## Variables:
+##   $value (Number) - How much memory is used
+
+size-KB = { $value } KB
+size-MB = { $value } MB
+size-GB = { $value } GB
 
 ## Tooltips for the action buttons
 

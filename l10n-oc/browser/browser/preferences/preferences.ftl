@@ -6,6 +6,10 @@ do-not-track-description = Mandar als sites web lo senhal “Me pistar pas” pe
 do-not-track-learn-more = Ne saber mai
 do-not-track-option-default =
     .label = Sonque en utilizar la proteccion contra lo seguiment
+do-not-track-option-default-content-blocking =
+    .label = Solament quand { -brand-short-name } es configurat per blocar los elements de seguiment detectats
+do-not-track-option-default-content-blocking-known =
+    .label = Solament quand { -brand-short-name } es configurat per blocar los traçadors coneguts
 do-not-track-option-always =
     .label = Totjorn
 pref-page =
@@ -51,6 +55,7 @@ pane-sync-title = Compte Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = Assisténcia de { -brand-short-name }
+addons-button-label = Extensions e tèmas
 focus-search =
     .key = f
 close-button =
@@ -81,6 +86,9 @@ extension-controlled-homepage-override = Una extension, <img data-l10n-name="ico
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Una extension, <img data-l10n-name="icon"/> { $name }, contraròtla la pagina Onglet novèl.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = Una extension, <img data-l10n-name="icon"/>{ $name }, contraròtla aqueste paramètre.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Una extension, <img data-l10n-name="icon"/> { $name }, a definit lo motor de recèrca per defaut.
@@ -90,6 +98,9 @@ extension-controlled-privacy-containers = Una extension, <img data-l10n-name="ic
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Una extension, <img data-l10n-name="icon"/> { $name }, contraròtla la proteccion contra lo seguiment.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Una extension, <img data-l10n-name="icon"/> { $name }, contraròtla aqueste paramètre.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Una extension, <img data-l10n-name="icon"/>{ $name }, contraròtla lo biais que { -brand-short-name } se connecta a Internet.
@@ -132,6 +143,8 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Restablir la session precedenta
     .accesskey = s
+startup-restore-warn-on-quit =
+    .label = Vos avisar en sortir del navegador
 disable-extension =
     .label = Desactivar l’extension
 tabs-group-header = Onglets
@@ -203,6 +216,9 @@ choose-button =
     .label = Causir…
     .accesskey = a
 choose-browser-language-description = Causissètz la lenga utilizada per mostrar los menús, messatges e las notificacions de { -brand-short-name }.
+manage-browser-languages-button =
+    .label = Causir d’alernativas…
+    .accesskey = l
 confirm-browser-language-change-description = Reaviar { -brand-short-name } per aplicar los cambiaments
 confirm-browser-language-change-button = Aplicar e reaviar
 translate-web-pages =
@@ -276,6 +292,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = Metre a jorn automaticament los motors de recèrca
     .accesskey = m
+update-pref-write-failure-title = Fracàs d’escritura
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = Enregistrament impossible de las preferéncias. Impossible d’escriure dins lo fichièr : { $path }
 
 ## General Section - Performance
 
@@ -516,7 +536,6 @@ privacy-header = Confidencialitat del navegador
 
 ## Privacy Section - Forms
 
-forms-header = Formularis e senhals
 logins-header = Identificants e senhals
 forms-ask-to-save-logins =
     .label = Demandar per salvar los identificants e senhals dels sites
@@ -606,6 +625,14 @@ sitedata-block-trackers-option =
     .label = Traçadors tèrces
 sitedata-block-unvisited-option =
     .label = Cookies dels sites web pas visitats
+sitedata-option-block-trackers =
+    .label = Traçadors tèrces
+sitedata-option-block-unvisited =
+    .label = Cookies de sites pas visitats
+sitedata-option-block-all-third-party =
+    .label = Totes los cookies tèrces (pòt arribar qu’unes sites quitan de foncionar)
+sitedata-option-block-all =
+    .label = Totes los cookies (pòt arribar qu’unes sites quitan de foncionar)
 sitedata-clear =
     .label = Escafar de las donadas…
     .accesskey = s
@@ -615,6 +642,9 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Excepcions…
     .accesskey = E
+sitedata-cookies-permissions =
+    .label = Gerir las autorizacions…
+    .accesskey = a
 
 ## Privacy Section - Address Bar
 
@@ -648,9 +678,12 @@ content-blocking-toggle-label-on = ACTIU
 content-blocking-toggle-label-off = INACTIU
     .accesskey = I
 content-blocking-category-label = Seleccionar lo contengut de blocar
-content-blocking-setting-standard =
-    .label = Standard
-    .accesskey = d
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Traçadors lents
+    .accesskey = T
 content-blocking-tracking-protection-trackers-label =
     .label = Traçadors
     .accesskey = T
@@ -660,6 +693,34 @@ content-blocking-tracking-protection-all-detected-trackers-label =
 content-blocking-tracking-protection-option-always =
     .label = Totjorn
     .accesskey = T
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = Standard
+    .accesskey = d
+content-blocking-setting-custom =
+    .label = Personalizat
+    .accesskey = P
+content-blocking-custom-desc = Causissètz çò que volètz blocar.
+content-blocking-private-trackers = Los traçadors coneguts dins las fenèstras de navegacion privada solament
+content-blocking-third-party-cookies = Cookies de seguiment tèrces
+content-blocking-all-windows-trackers = Traçadors coneguts dins totas las fenèstras
+content-blocking-all-third-party-cookies = Totes los cookies tèrces
+content-blocking-warning-title = Atencion !
+content-blocking-learn-how = Ne saber mai
+content-blocking-trackers-label =
+    .label = Traçadors
+    .accesskey = T
+content-blocking-tracking-protection-option-all-windows =
+    .label = Dins totas las fenèstras
+    .accesskey = D
+content-blocking-option-private =
+    .label = Soque las fenèstras privadas
+    .accesskey = p
+content-blocking-tracking-protection-change-block-list = Cambiar la lista de blocatge
+content-blocking-third-party-cookies-label =
+    .label = Cookies tèrces
+    .accesskey = C
 content-blocking-change-cookie-settings =
     .label = Cambiar los paramètres de cookies
     .accesskey = C
@@ -669,6 +730,9 @@ content-blocking-reject-trackers-block-trackers-option-recommended =
 content-blocking-reject-trackers-block-trackers-option =
     .label = Traçadors
     .accesskey = d
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Totes los cookies tèrces (unes sites pòdon quitar de foncionar)
+    .accesskey = T
 content-blocking-cookies-label =
     .label = Cookies
     .accesskey = C
@@ -693,6 +757,9 @@ tracking-exceptions =
 tracking-change-block-list =
     .label = Cambiar la lista de blocatge…
     .accesskey = C
+tracking-manage-exceptions =
+    .label = Gerir las excepcions…
+    .accesskey = x
 
 ## Privacy Section - Permissions
 
@@ -760,6 +827,9 @@ collection-health-report-link = Ne saber mai
 collection-studies =
     .label = Autorizar { -brand-short-name } d’installar e lançar d’estudis
 collection-studies-link = Veire los estudis de { -brand-short-name }
+addon-recommendations =
+    .label = Permetre a { -brand-short-name } de realizar de recomandacion d’extensions
+addon-recommendations-link = Ne saber mai
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Lo rapòrt de donadas es desactivat per aquela configuracion de compilacion
@@ -833,3 +903,7 @@ space-alert-under-5gb-message = { -brand-short-name } a pas mai d'espaci disc. L
 desktop-folder-name = Burèu
 downloads-folder-name = Telecargaments
 choose-download-folder-title = Causissètz lo dorsièr de telecargament :
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Enregistrar los fichièrs dins { $service-name }

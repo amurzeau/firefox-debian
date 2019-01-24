@@ -10,6 +10,7 @@ about-performance-title = Tehtävienhallinta
 column-name = Nimi
 column-type = Tyyppi
 column-energy-impact = Energiavaikutus
+column-memory = Muisti
 
 ## Special values for the Name column
 
@@ -37,6 +38,15 @@ type-other = Muu
 energy-impact-high = Suuri ({ $value })
 energy-impact-medium = Kohtalainen ({ $value })
 energy-impact-low = Pieni ({ $value })
+
+## Values for the Memory column
+##
+## Variables:
+##   $value (Number) - How much memory is used
+
+size-KB = { $value } kt
+size-MB = { $value } Mt
+size-GB = { $value } Gt
 
 ## Tooltips for the action buttons
 

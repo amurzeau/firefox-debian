@@ -8,6 +8,8 @@ do-not-track-option-default =
     .label = Pouze při použití ochrany proti sledování
 do-not-track-option-default-content-blocking =
     .label = Jen pokud je zapnuto blokování nalezených sledovacích prvků
+do-not-track-option-default-content-blocking-known =
+    .label = Jen pokud je zapnuto blokování nalezených sledovacích prvků
 do-not-track-option-always =
     .label = Vždy
 pref-page =
@@ -89,7 +91,7 @@ extension-controlled-new-tab-url = Stránku v novém panelu spravuje rozšířen
 extension-controlled-web-notifications = Toto nastavení spravuje rozšíření <img data-l10n-name="icon"/> { $name }.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
-extension-controlled-default-search = Rozšíření <img data-l10n-name="icon"/> { $name } vám nastavilo nový výchozí vyhledávací modul.
+extension-controlled-default-search = Rozšíření <img data-l10n-name="icon"/> { $name } vám nastavilo nový výchozí vyhledávač.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = Rozšíření <img data-l10n-name="icon"/> { $name } vyžaduje kontejnerové panely.
@@ -141,23 +143,22 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Otevřít panely z minula
     .accesskey = O
+startup-restore-warn-on-quit =
+    .label = Varovat při ukončování prohlížeče
 disable-extension =
     .label = Zakázat rozšíření
 tabs-group-header = Panely
 ctrl-tab-recently-used-order =
-    .label = Přepínat panely pomocí Ctrl+Tab v pořadí podle posledního otevření
+    .label = Přepínat panely pomocí Ctrl+Tab v pořadí podle jejich posledního použití
     .accesskey = T
 open-new-link-as-tabs =
-    .label = Otevírat odkazy v panelech místo nových oken
+    .label = Otevírat odkazy v panelech místo v nových oknech
     .accesskey = O
 warn-on-close-multiple-tabs =
     .label = Varovat při zavírání více panelů
     .accesskey = v
-warn-on-quit-close-multiple-tabs =
-    .label = Varovat při ukončování prohlížeče a zavírání více panelů
-    .accesskey = v
 warn-on-open-many-tabs =
-    .label = Varovat, pokud by mohlo otevírání více panelů aplikaci { -brand-short-name } zpomalit
+    .label = Varovat, pokud by mohlo otevření více panelů aplikaci { -brand-short-name } zpomalit
     .accesskey = d
 switch-links-to-new-tabs =
     .label = Přepnout na nový panel otevřený z odkazu
@@ -222,7 +223,7 @@ manage-browser-languages-button =
     .label = Vybrat alternativy…
     .accesskey = l
 confirm-browser-language-change-description = Aby se změny projevily, restartujte aplikaci { -brand-short-name }
-confirm-browser-language-change-button = Restartovat
+confirm-browser-language-change-button = Potvrdit a restartovat
 translate-web-pages =
     .label = Překládat webové stránky
     .accesskey = T
@@ -292,7 +293,7 @@ update-application-use-service =
     .label = K instalaci aktualizací použít službu na pozadí
     .accesskey = b
 update-enable-search-update =
-    .label = Automaticky aktualizovat vyhledávací moduly
+    .label = Automaticky aktualizovat vyhledávače
     .accesskey = e
 update-pref-write-failure-title = Chyba při zápisu
 # Variables:
@@ -395,7 +396,7 @@ search-bar-hidden =
     .label = Použít adresní řádek pro navigaci i vyhledávání
 search-bar-shown =
     .label = Přidat na lištu vyhledávací pole
-search-engine-default-header = Výchozí vyhledávací modul
+search-engine-default-header = Výchozí vyhledávač
 search-engine-default-desc = Vyberte výchozí vyhledávač pro hledání z adresního řádku nebo vyhledávacího pole.
 search-suggestions-option =
     .label = Našeptávat vyhledávání
@@ -414,16 +415,16 @@ search-suggestions-cant-show = Návrhy vyhledávání se nebudou adresním řád
 search-one-click-header = Vyhledávání jedním klepnutím
 search-one-click-desc = Vyberte další vyhledávače, které se zobrazí v nabídce adresního řádku a vyhledávacího pole.
 search-choose-engine-column =
-    .label = Vyhledávací modul
+    .label = Vyhledávač
 search-choose-keyword-column =
     .label = Klíčové slovo
 search-restore-default =
-    .label = Obnovit výchozí vyhledávací moduly
+    .label = Obnovit výchozí vyhledávače
     .accesskey = d
 search-remove-engine =
     .label = Odebrat
     .accesskey = r
-search-find-more-link = Přidat další vyhledávací moduly
+search-find-more-link = Přidat další vyhledávače
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
 search-keyword-warning-title = Použité klíčové slovo
@@ -545,7 +546,6 @@ privacy-header = Nastavení soukromí
 
 ## Privacy Section - Forms
 
-forms-header = Formuláře a hesla
 logins-header = Přihlašovací údaje
 forms-ask-to-save-logins =
     .label = Ptát se na ukládání přihlašovacích údajů
@@ -565,7 +565,7 @@ forms-master-pw-change =
 
 ## Privacy Section - History
 
-history-header = Historie
+history-header = Historie prohlížení
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
@@ -575,7 +575,7 @@ history-header = Historie
 #   - Simply as "Firefox", moving the verb into each option.
 #     This will result in "Firefox" + "Will remember history", etc.
 #   - As a stand-alone message, for example "Firefox history settings:".
-history-remember-label = Historii prohlížení
+history-remember-label = Historii prohlížených stránek
     .accesskey = i
 history-remember-option-all =
     .label = ukládat
@@ -642,6 +642,14 @@ sitedata-block-all-third-party-option =
     .label = všechny cookies třetích stran (může omezit fungování některých stránek)
 sitedata-block-all-option =
     .label = všechny cookies (omezí fungování některých stránek)
+sitedata-option-block-trackers =
+    .label = sledovacích prvků třetích stran
+sitedata-option-block-unvisited =
+    .label = z dosud nenavštívených stránek
+sitedata-option-block-all-third-party =
+    .label = všech třetích stran (může omezit fungování některých stránek)
+sitedata-option-block-all =
+    .label = ze všech stránek (některé nemusí fungovat správně)
 sitedata-clear =
     .label = Vymazat data…
     .accesskey = V
@@ -699,25 +707,6 @@ content-blocking-fastblock-slow-loading-trackers-label =
     .label = Zpomalující sledovací prvky
     .accesskey = Z
 content-blocking-fastblock-new-description = Blokovat jen sledovací prvky, které zpomalují načítání stránek.
-content-blocking-setting-standard =
-    .label = Standardní
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = Přísné
-    .accesskey = P
-content-blocking-setting-custom =
-    .label = Vlastní
-    .accesskey = V
-content-blocking-standard-desc = Vyvážená úroveň ochrany. Povoluje některé sledovací prvky, aby stránky fungovaly správně.
-content-blocking-strict-desc = Blokuje všechny sledovací prvky, které { -brand-short-name } najde. Může omezit fungování některých stránek.
-content-blocking-custom-desc = Sami vyberte, co chcete blokovat.
-content-blocking-private-trackers = Sledovací prvky blokovány v anonymních oknech
-content-blocking-third-party-cookies = Sledovací cookies třetích stran blokovány vždy
-content-blocking-all-windows-trackers = Sledovací prvky blokovány vždy
-content-blocking-all-third-party-cookies = Všechny cookies třetích stran blokovány vždy
-content-blocking-warning-title = Pozor!
-content-blocking-warning-desc = Blokování cookies a sledovacích prvků může omezit fungování některých stránek. Pro stránky, kterým důvěřujete, ale můžete blokování snadno vypnout.
-content-blocking-learn-how = Jak na to?
 content-blocking-tracking-protection-trackers-label =
     .label = Sledovací prvky
     .accesskey = S
@@ -731,6 +720,37 @@ content-blocking-tracking-protection-option-always =
 content-blocking-tracking-protection-option-private =
     .label = Pouze v anonymních oknech
     .accesskey = P
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = Standardní
+    .accesskey = d
+content-blocking-setting-strict =
+    .label = Přísné
+    .accesskey = P
+content-blocking-setting-custom =
+    .label = Vlastní
+    .accesskey = V
+content-blocking-standard-description = Blokuje sledovací prvky jen v anonymních oknech.
+content-blocking-standard-desc = Vyvážená úroveň ochrany. Povoluje některé sledovací prvky, aby stránky fungovaly správně.
+content-blocking-strict-desc = Blokuje všechny sledovací prvky, které { -brand-short-name } najde. Může omezit fungování některých stránek.
+content-blocking-custom-desc = Sami vyberte, co chcete blokovat.
+content-blocking-private-trackers = Sledovací prvky blokovány v anonymních oknech
+content-blocking-third-party-cookies = Sledovací cookies třetích stran blokovány vždy
+content-blocking-all-windows-trackers = Sledovací prvky blokovány vždy
+content-blocking-all-third-party-cookies = Všechny cookies třetích stran blokovány vždy
+content-blocking-warning-title = Pozor!
+content-blocking-warning-desc = Blokování cookies a sledovacích prvků může omezit fungování některých stránek. Pro stránky, kterým důvěřujete, ale můžete blokování snadno vypnout.
+content-blocking-learn-how = Jak na to?
+content-blocking-trackers-label =
+    .label = Blokovat sledovací prvky
+    .accesskey = s
+content-blocking-tracking-protection-option-all-windows =
+    .label = ve všech oknech
+    .accesskey = v
+content-blocking-option-private =
+    .label = jen v anonymních oknech
+    .accesskey = a
 content-blocking-tracking-protection-change-block-list = Změnit úroveň blokování
 content-blocking-third-party-cookies-label =
     .label = Cookies třetích stran
@@ -754,8 +774,8 @@ content-blocking-reject-trackers-all-third-parties-option =
     .label = Všechny cookies třetích stran (může omezit fungování některých stránek)
     .accesskey = a
 content-blocking-cookies-label =
-    .label = Cookies
-    .accesskey = C
+    .label = Blokovat cookies
+    .accesskey = c
 
 ## Privacy Section - Tracking
 
@@ -847,6 +867,9 @@ collection-health-report-link = Zjistit více
 collection-studies =
     .label = Povolit instalaci studií
 collection-studies-link = Zobrazit studie aplikace { -brand-short-name }
+addon-recommendations =
+    .label = Povolit aplikaci { -brand-short-name } doporučovat rozšíření vybraná přímo pro mě
+addon-recommendations-link = Zjistit více
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Odesílání dat je zakázáno konfigurací tohoto sestavení

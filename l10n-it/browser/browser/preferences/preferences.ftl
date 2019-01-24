@@ -8,6 +8,8 @@ do-not-track-option-default =
     .label = Solo quando è attiva la protezione antitracciamento
 do-not-track-option-default-content-blocking =
     .label = Solo quando { -brand-short-name } è impostato per bloccare gli elementi traccianti rilevati
+do-not-track-option-default-content-blocking-known =
+    .label = Solo quando { -brand-short-name } è impostato per bloccare gli elementi traccianti conosciuti
 do-not-track-option-always =
     .label = Sempre
 pref-page =
@@ -139,6 +141,8 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Ripristina la sessione precedente
     .accesskey = R
+startup-restore-warn-on-quit =
+    .label = Avvisa quando si chiude il browser
 disable-extension =
     .label = Disattiva estensione
 tabs-group-header = Schede
@@ -150,9 +154,6 @@ open-new-link-as-tabs =
     .accesskey = A
 warn-on-close-multiple-tabs =
     .label = Avvisa quando si chiudono più schede
-    .accesskey = d
-warn-on-quit-close-multiple-tabs =
-    .label = Avvisa quando si chiude il browser con più schede aperte
     .accesskey = d
 warn-on-open-many-tabs =
     .label = Avvisa quando l’apertura contemporanea di più schede potrebbe rallentare { -brand-short-name }
@@ -443,7 +444,7 @@ containers-remove-button =
 
 sync-signedout-caption = Il tuo Web, sempre con te
 sync-signedout-description = Sincronizza segnalibri, cronologia, schede, password, componenti aggiuntivi e impostazioni attraverso tutti i tuoi dispositivi.
-sync-signedout-account-title = Connetti il tuo { -fxaccount-brand-name[lowercase] }
+sync-signedout-account-title = Connetti il tuo { -fxaccount-brand-name }
 sync-signedout-account-create = Non hai ancora un account? Scopri come crearne uno
     .accesskey = h
 sync-signedout-account-signin =
@@ -536,7 +537,6 @@ privacy-header = Privacy del browser
 
 ## Privacy Section - Forms
 
-forms-header = Moduli e password
 logins-header = Accessi e password
 forms-ask-to-save-logins =
     .label = Chiedi se salvare le credenziali di accesso ai siti web
@@ -613,6 +613,9 @@ sitedata-keep-until-closed =
 sitedata-delete-on-close =
     .label = Elimina cookie e dati dei siti web alla chiusura di { -brand-short-name }
     .accesskey = c
+
+sitedata-delete-on-close-private-browsing = Se la modalità Navigazione anonima è sempre attiva, i cookie e i dati dei siti web verranno eliminati alla chiusura di { -brand-short-name }.
+
 sitedata-allow-cookies-option =
     .label = Accetta cookie e dati dei siti web
     .accesskey = A
@@ -698,6 +701,7 @@ content-blocking-toggle-label-off = DISATTIVATO
     .accesskey = D
 
 content-blocking-category-label = Scegli che cosa bloccare
+content-blocking-standard-description = Blocca solo elementi traccianti conosciuti in finestre anonime.
 content-blocking-standard-desc = Il perfetto equilibrio tra protezione e prestazioni. Consenti alcuni elementi traccianti in modo da garantire il corretto funzionamento dei siti.
 content-blocking-strict-desc = Blocca tutti gli elementi traccianti rilevati da { -brand-short-name }. Alcuni siti potrebbero non funzionare correttamente.
 content-blocking-custom-desc = Scegli che cosa bloccare.
@@ -849,6 +853,11 @@ collection-health-report-link = Ulteriori informazioni
 collection-studies =
     .label = Consenti a { -brand-short-name } di installare e condurre studi
 collection-studies-link = Visualizza studi di { -brand-short-name }
+
+addon-recommendations =
+    .label = Consenti a { -brand-short-name } di visualizzare consigli personalizzati relativi alle estensioni
+addon-recommendations-link = Ulteriori informazioni
+
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = L’invio dei dati è stato disattivato nella configurazione utilizzata per questa build

@@ -402,10 +402,10 @@
 
 <!-- Toolbar items -->
 <!ENTITY getMsgButton.label "ფოსტის მიღება">
-<!ENTITY newMsgButton.label "შექმნა">
-<!ENTITY newHTMLMessageCmd.label "შექმნა HTML კოდებში">
+<!ENTITY newMsgButton.label "შედგენა">
+<!ENTITY newHTMLMessageCmd.label "შედგენა HTML-კოდებით">
 <!ENTITY newHTMLMessageCmd.accesskey "H">
-<!ENTITY newPlainTextMessageCmd.label "შექმნა ტექსტურ რეჟიმში">
+<!ENTITY newPlainTextMessageCmd.label "შედგენა ტექსტურ რეჟიმში">
 <!ENTITY newPlainTextMessageCmd.accesskey "ტ">
 <!ENTITY replyButton.label "პასუხი">
 <!ENTITY replyAllButton.label "პასუხი ყველას">
@@ -483,6 +483,8 @@
 <!ENTITY contextCopyMsgMenu.accesskey "ლ">
 <!ENTITY contextMoveCopyMsgRecentMenu.label "უახლესი">
 <!ENTITY contextMoveCopyMsgRecentMenu.accesskey "ლ">
+<!ENTITY contextMoveCopyMsgFavoritesMenu.label "რჩეულები">
+<!ENTITY contextMoveCopyMsgFavoritesMenu.accesskey "ჩ">
 <!ENTITY contextSaveAs.label "შენახვა როგორც…">
 <!ENTITY contextSaveAs.accesskey "რ">
 <!ENTITY contextPrint.label "ბეჭდვა…">

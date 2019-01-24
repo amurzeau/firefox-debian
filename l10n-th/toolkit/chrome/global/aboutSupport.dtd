@@ -50,7 +50,7 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 
 <!ENTITY aboutSupport.appBasicsEnabledPlugins "ปลั๊กอินที่เปิดใช้งาน">
 <!ENTITY aboutSupport.appBasicsBuildConfig "การกำหนดค่าการสร้าง">
-<!ENTITY aboutSupport.appBasicsUserAgent "User Agent">
+<!ENTITY aboutSupport.appBasicsUserAgent "ตัวแทนผู้ใช้">
 <!ENTITY aboutSupport.appBasicsOS "ระบบปฏิบัติการ">
 <!ENTITY aboutSupport.appBasicsMemoryUse "หน่วยความจำที่ใช้">
 <!ENTITY aboutSupport.appBasicsPerformance "ประสิทธิภาพ">
@@ -134,5 +134,8 @@ variant of aboutSupport.showDir.label. -->
 
 <!ENTITY aboutSupport.intlAppTitle "การตั้งค่าแอปพลิเคชัน">
 <!ENTITY aboutSupport.intlLocalesAvailable "ภาษาที่มี">
+<!ENTITY aboutSupport.intlLocalesSupported "ภาษาของแอป">
+<!ENTITY aboutSupport.intlLocalesDefault "ภาษาเริ่มต้น">
 <!ENTITY aboutSupport.intlOSTitle "ระบบปฏิบัติการ">
+<!ENTITY aboutSupport.intlOSPrefsSystemLocales "ภาษาของระบบ">
 <!ENTITY aboutSupport.intlRegionalPrefs "ค่ากำหนดภูมิภาค">

@@ -58,10 +58,6 @@ permissions-invalid-uri-label = 请输入合法的主机名
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-tracking-protection-window =
-    .title = 例外 - 跟踪保护
-    .style = { permissions-window.style }
-permissions-exceptions-tracking-protection-desc = 您已对下列网站停用跟踪保护功能。
 permissions-exceptions-content-blocking-window =
     .title = 例外 - 内容拦截
     .style = { permissions-window.style }
@@ -72,7 +68,7 @@ permissions-exceptions-content-blocking-desc = 您在这些网站上已禁用内
 permissions-exceptions-cookie-window =
     .title = 例外 - Cookie 和网站数据
     .style = { permissions-window.style }
-permissions-exceptions-cookie-desc = 您可以指定始终允许或不允许哪些网站使用 Cookie 和网站数据。请输入所要指定的完整网址，选择“阻止”、“在这次浏览期间允许”或“允许”。
+permissions-exceptions-cookie-desc = 您可以指定始终允许或不允许哪些网站使用 Cookie 和网站数据。请输入所要指定的完整网址，然后点击“阻止”、“在这次浏览期间允许”或“允许”。
 
 ## Exceptions - Pop-ups
 
@@ -100,16 +96,16 @@ permissions-exceptions-addons-desc = 您可以指定哪些网站可以安装附�
 permissions-exceptions-autoplay-media-window2 =
     .title = 例外 - 自动播放
     .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = 您可以指定允许与不允许哪些网站自动播放有声媒体内容。输入网站地址，然后单击“阻止”或者“允许”。
+permissions-exceptions-autoplay-media-desc2 = 您可以指定允许与不允许哪些网站自动播放有声媒体内容。请输入所要指定的完整网址，然后点击“阻止”或者“允许”。
 
 ## Site Permissions - Notifications
 
 permissions-site-notification-window =
     .title = 设置 - 通知权限
     .style = { permissions-window.style }
-permissions-site-notification-desc = 下列网站曾请求向您发送通知。您可选择允许哪些网站发送通知，还可禁止请求向您发送通知。
+permissions-site-notification-desc = 下列网站曾请求向您发送通知。您可选择允许哪些网站发送通知，还可禁止新的发送通知请求。
 permissions-site-notification-disable-label =
-    .label = 禁止请求向您发送通知
+    .label = 禁止新的发送通知请求
 permissions-site-notification-disable-desc = 所有列表外的网站将无法请求获得发送通知的权限。禁止此权限可能会影响某些网站的功能。
 
 ## Site Permissions - Location
@@ -117,9 +113,9 @@ permissions-site-notification-disable-desc = 所有列表外的网站将无法�
 permissions-site-location-window =
     .title = 设置 - 位置权限
     .style = { permissions-window.style }
-permissions-site-location-desc = 下列网站曾请求获知您的位置。您可选择允许哪些网站得获知的位置，还可禁止网站向您请求获知您的位置。
+permissions-site-location-desc = 下列网站曾请求获知您的位置。您可选择允许哪些网站得获知的位置，还可禁止新的获取位置请求。
 permissions-site-location-disable-label =
-    .label = 禁止请求获知您的位置
+    .label = 禁止新的获取位置请求
 permissions-site-location-disable-desc = 所有列表外的网站将无法请求获知您的位置。禁止此权限可能会影响某些网站的功能。
 
 ## Site Permissions - Camera
@@ -127,9 +123,9 @@ permissions-site-location-disable-desc = 所有列表外的网站将无法请求
 permissions-site-camera-window =
     .title = 设置 - 摄像头权限
     .style = { permissions-window.style }
-permissions-site-camera-desc = 下列网站曾请求操控您的摄像头。您可选择允许哪些网站操控您的摄像头，还可禁止网站向您请求操控您的摄像头。
+permissions-site-camera-desc = 下列网站曾请求操控您的摄像头。您可选择允许哪些网站操控您的摄像头，还可禁止新的操控摄像头请求。
 permissions-site-camera-disable-label =
-    .label = 禁止请求操控您的摄像头
+    .label = 禁止新的操控摄像头请求
 permissions-site-camera-disable-desc = 所有列表外的网站将无法请求操控您的摄像头。禁止此权限可能会影响某些网站的功能。
 
 ## Site Permissions - Microphone
@@ -137,7 +133,7 @@ permissions-site-camera-disable-desc = 所有列表外的网站将无法请求�
 permissions-site-microphone-window =
     .title = 设置 - 麦克风权限
     .style = { permissions-window.style }
-permissions-site-microphone-desc = 下列网站曾请求操控您的麦克风。您可选择允许哪些网站操控您的麦克风，还可禁止网站向您请求操控您的麦克风。
+permissions-site-microphone-desc = 下列网站曾请求操控您的麦克风。您可选择允许哪些网站操控您的麦克风，还可禁止新的操控麦克风请求。
 permissions-site-microphone-disable-label =
-    .label = 禁止请求操控您的麦克风
+    .label = 禁止新的操控麦克风请求
 permissions-site-microphone-disable-desc = 所有列表外的网站将无法请求操控您的麦克风。禁止此权限可能会影响某些网站的功能。

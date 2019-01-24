@@ -11,8 +11,8 @@
 <!ENTITY returnToPreviousPage1.label "Gå tilbake (Tilrådd)">
 <!ENTITY advanced.label "Avansert">
 <!ENTITY continue2.label "Meir…">
+<!ENTITY advanced2.label "Avansert…">
 <!ENTITY moreInformation.label "Meir informasjon">
-
 <!ENTITY viewCertificate.label "Vis sertifikat">
 
 <!-- Specific error messages -->
@@ -102,10 +102,11 @@ will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "Eigaren av <span class='hostname'/> har konfigurert nettstaden sin feil.  For å verne informasjonen din frå å bli stolen, har &brandShortName; ikkje kopla seg til denne nettstaden.">
 <!ENTITY certerror.introPara2 "&brandShortName; oppdaga ein potensiell sikkerheitstrussel og fortsette ikkje til <span class='hostname'/>. Viss du besøkjer denne nettstaden, kan angriparane prøve å stele informasjon som passord, e-post eller kredittkortdetaljar.">
+<!ENTITY certerror.sts.introPara "&brandShortName; oppdaga ein potensiell sikkerheitstrussel og held ikkje fram til <span class='hostname'/> fordi denne nettstaden krev ei sikker tilkopling.">
 
-<!ENTITY certerror.expiredCert.secondPara "Dette problemet får du, mest sannsynleg, fordi klokka på datamaskina di er innstillt på feil tid, noko som ville hindre &brandShortName; frå å kople til trygt.">
-
-
+<!ENTITY certerror.expiredCert.introPara "&brandShortName; oppdaga eit problem og held ikkje fram til <span class='hostname'/>. Nettstaden er anten feilkonfigurert eller klokka på datamaskina er stilt inn på feil tid.">
+<!ENTITY certerror.expiredCert.secondPara2 "Sannsynlegvis har sertifikatet til nettsida gått ut, noko som hindrar &brandShortName; frå å kople til sikkert. Viss du besøkjer dene nettsida, kan angriparar prøve å stele informasjon som passord, e-post eller kredittkortdetaljar.">
+<!ENTITY certerror.expiredCert.sts.secondPara "Sannsynlegvis har sertifikatet til nettsida gått ut, noko som hindrar &brandShortName; frå å opprette eit sikkert samband.">
 
 <!ENTITY certerror.whatCanYouDoAboutItTitle "Kva kan du gjere med det?">
 
@@ -166,6 +167,13 @@ was trying to connect. -->
 
 <!ENTITY blockedByPolicy.title "Blokkert side">
 
+<!ENTITY certerror.mitm.title "Programvara hindrar &brandShortName; frå trygg tilkopling til denne nettstaden">
+<!ENTITY certerror.mitm.longDesc "<span class='hostname'></span> er sannsynlegvis ein sikker nettstad, men ei sikker tilkopling kunne ikkje etablerast. Problemet er forårsaka av <span class='mitm-name'/> som anten er eit program på datamaskina di eller på nettverket ditt.">
+<!ENTITY certerror.mitm.whatCanYouDoAboutIt1 "Viss antivirusprogrammet ditt inneheld ein funksjon som skannar krypterte tilkoplingar (ofte kalla «webscanning» eller «https-skanning»), kan du deaktivere denne funksjonen. Viss det ikkje verkar, kan du fjerne og installere antivirusprogrammet på nytt.">
+<!ENTITY certerror.mitm.whatCanYouDoAboutIt2 "Om du er i eit bedriftsnettverk, kan du kontakte IT-avdelinga di.">
+<!ENTITY certerror.mitm.whatCanYouDoAboutIt3 "Viss du ikkje kjenner til <span class='mitm-name'/>, kan dette vere eit angrep, og du bør ikkje fortsette til nettstaden.">
+<!ENTITY certerror.mitm.sts.whatCanYouDoAboutIt3 "Viss du ikkje kjenner til <span class='mitm-name'/>, kan dette vere eit angrep, og det er ingenting du kan gjere for å få tilgang til nettstaden.">
+
 <!ENTITY clockSkewError.title "Klokka på datamaskina di er feil">
 <!ENTITY clockSkewError.longDesc "Datamaskina di trur det er <span id='wrongSystemTime_systemDate1'/>, som hindrar &brandShortName; frå å kople til sikkert. For å besøke <span class='hostname'></span>, oppdater klokka til datamaskina i systeminnstillingane til gjeldende dato, klokkeslett og tidssone, og oppdater deretter <span class='hostname'></span>.">
 
@@ -173,3 +181,4 @@ was trying to connect. -->
 <!ENTITY prefReset.label "Still tilbake til standard innstillingar">
 
 <!ENTITY networkProtocolError.title "Nettverksprotokollfeil">
+<!ENTITY networkProtocolError.longDesc "<p>Sida du forsøker å vise kan ikkje opnast fordi ein feil i nettverksprotokollen vart oppdaga.</p><ul><li>Kontakt nettstadseigarane og informer dei om dette problemet.</li></ul>">

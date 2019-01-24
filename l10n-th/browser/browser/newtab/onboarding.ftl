@@ -24,3 +24,18 @@ onboarding-screenshots-text = จับ บันทึก และแบ่ง
 onboarding-addons-title = ส่วนเสริม
 onboarding-addons-text = เพิ่มคุณลักษณะเพิ่มเติมที่ทำให้ { -brand-short-name } ทำงานได้มากขึ้นสำหรับคุณ เปรียบเทียบราคา ตรวจสอบสภาพอากาศ หรือแสดงบุคลิกภาพของคุณด้วยชุดตกแต่งที่กำหนดเอง
 onboarding-ghostery-title = Ghostery
+onboarding-ghostery-text = ท่องเว็บได้เร็ว ฉลาด และปลอดภัยขึ้นด้วยส่วนขยาย เช่น Ghostery ซึ่งให้คุณปิดกั้นโฆษณาที่น่ารำคาญ
+# Note: "Sync" in this case is a generic verb, as in "to synchronize"
+onboarding-fxa-title = ซิงค์
+onboarding-fxa-text = ลงทะเบียน { -fxaccount-brand-name } และซิงค์ที่คั่นหน้า, รหัสผ่าน และแท็บที่เปิดอยู่ของคุณในทุกที่ที่คุณใช้ { -brand-short-name }
+
+## Message strings belonging to the Return to AMO flow
+
+return-to-amo-sub-header = เยี่ยม คุณได้รับ { -brand-short-name } แล้ว
+# <icon></icon> will be replaced with the icon belonging to the extension
+#
+# Variables:
+#   $addon-name (String) - Name of the add-on
+return-to-amo-addon-header = ตอนนี้ให้คุณโหลด <icon></icon><b>{ $addon-name }</b> ได้เลย
+return-to-amo-extension-button = เพิ่มส่วนขยาย
+return-to-amo-get-started-button = เริ่มต้นใช้งานกับ { -brand-short-name }

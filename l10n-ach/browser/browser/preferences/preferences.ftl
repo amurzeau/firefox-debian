@@ -90,6 +90,9 @@ extension-controlled-privacy-containers = Lamed, <img data-l10n-name="icon"/> { 
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Lamed, <img data-l10n-name="icon"/> { $name }, tye ka loono gwokke ikom lubo kor.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Lamed , <img data-l10n-name="icon"/> { $name }, tye ka loono ter man.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Lamed, <img data-l10n-name="icon"/> { $name }, tye ka loono kit ma { -brand-short-name } kube ki intanet.
@@ -202,6 +205,7 @@ choose-language-description = Yer leb ma imito pi yaro pot buk
 choose-button =
     .label = Yer…
     .accesskey = e
+choose-browser-language-description = Yer leb ma kitiyo kwedgi me nyuto jami ayera, kwena, ki jami angeya ki ii { -brand-short-name }.
 confirm-browser-language-change-description = Nwo cako { -brand-short-name } me keto alokaloka magi
 confirm-browser-language-change-button = Keti ka i Nwo cako
 translate-web-pages =
@@ -503,7 +507,6 @@ privacy-header = Mung pa layeny
 
 ## Privacy Section - Forms
 
-forms-header = Pwom ki mung me donyo
 logins-header = Donyo iyie ki mung me donyo
 forms-ask-to-save-logins =
     .label = Peny me gwoko donyo iyie ki mung me donyo pi kakube
@@ -572,6 +575,9 @@ sitedata-keep-until-expire =
     .label = Kare gitum ii
 sitedata-keep-until-closed =
     .label = { -brand-short-name } olore oko
+sitedata-delete-on-close =
+    .label = Kwany angija ki data me kakube kace kiloro { -brand-short-name }
+    .accesskey = c
 sitedata-allow-cookies-option =
     .label = Yee angija ki data me kakube
     .accesskey = Y
@@ -612,10 +618,6 @@ content-blocking-restore-defaults =
     .label = Dwok makwongo
     .accesskey = D
 content-blocking-category-label = Yer ngo me agenga
-content-blocking-custom-desc = Yer ngo me agenga.
-content-blocking-warning-title = Ngec!
-content-blocking-warning-desc = Gengo angija ki lulub kor twero weko kakube mogo bale woko. Yot me juko geng pi kakube ma igeno.
-content-blocking-learn-how = Nong ngec nining
 content-blocking-tracking-protection-trackers-label =
     .label = Lulub kor
     .accesskey = L
@@ -626,6 +628,16 @@ content-blocking-tracking-protection-option-always =
 content-blocking-tracking-protection-option-private =
     .label = I dirica me mung keken
     .accesskey = d
+content-blocking-custom-desc = Yer ngo me agenga.
+content-blocking-warning-title = Ngec!
+content-blocking-warning-desc = Gengo angija ki lulub kor twero weko kakube mogo bale woko. Yot me juko geng pi kakube ma igeno.
+content-blocking-learn-how = Nong ngec nining
+content-blocking-tracking-protection-option-all-windows =
+    .label = I dirica weng
+    .accesskey = W
+content-blocking-option-private =
+    .label = I Dirica me Mung Keken
+    .accesskey = M
 content-blocking-change-cookie-settings =
     .label = Lok Ter me Angija
     .accesskey = T
@@ -710,6 +722,7 @@ collection-health-report =
     .label = Yee { -brand-short-name } me cwalo data me diro ki kube bot { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Nong ngec mapol
+addon-recommendations-link = Nong ngec mapol
 collection-browser-errors =
     .label = Yee { -brand-short-name } me cwalo ripot me bal pi layeny (bene ki kwena me bal) bot { -vendor-short-name }
     .accesskey = b

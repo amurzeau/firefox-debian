@@ -21,8 +21,6 @@
 <!-- Tab context menu -->
 <!ENTITY  reloadTab.label                    "Recargar le scheda">
 <!ENTITY  reloadTab.accesskey                "R">
-<!ENTITY  reloadAllTabs.label                "Recargar tote le schedas">
-<!ENTITY  reloadAllTabs.accesskey            "t">
 <!ENTITY  selectAllTabs.label                "Seliger tote le schedas">
 <!ENTITY  selectAllTabs.accesskey            "S">
 <!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
@@ -47,9 +45,6 @@ left instead of right. -->
 <!ENTITY  closeOtherTabs.label               "Clauder le altere schedas">
 <!ENTITY  closeOtherTabs.accesskey           "l">
 
-<!ENTITY  closeSelectedTabs.label            "Clauder le schedas seligite">
-<!ENTITY  closeSelectedTabs.accesskey        "S">
-
 <!ENTITY  closeTabs.label                    "Clauder le schedas">
 <!ENTITY  closeTabs.accesskey                "S">
 <!ENTITY  pinSelectedTabs.label              "Fixar le schedas">
@@ -62,10 +57,6 @@ same accesskey but will never be visible at the same time. -->
 unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
 same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinSelectedTabs.accesskey        "L">
-<!-- Reload Tab and Reload Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
-<!ENTITY  reloadSelectedTabs.label           "Recargar le schedas eligite">
-<!ENTITY  reloadSelectedTabs.accesskey       "R">
 <!-- LOCALIZATION NOTE(reloadTab.label, reloadTabs.label): have the same accesskey
 but will never be visible at the same time. -->
 <!ENTITY  reloadTabs.label                   "Recargar le schedas">
@@ -90,8 +81,6 @@ same accesskey but will never be visible at the same time. -->
 unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
 same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinTab.accesskey                 "v">
-<!ENTITY  sendTabToDevice.label              "Inviar le scheda a un apparato">
-<!ENTITY  sendTabToDevice.accesskey          "I">
 <!ENTITY  sendPageToDevice.label             "Inviar le pagina a un apparato">
 <!ENTITY  sendPageToDevice.accesskey         "a">
 <!ENTITY  sendLinkToDevice.label             "Inviar le ligamine a un apparato">
@@ -110,8 +99,6 @@ These two items have the same accesskey but will never be visible at the same ti
 <!ENTITY  moveToNewWindow.accesskey          "f">
 <!ENTITY  reopenInContainer.label            "Reaperir in Container">
 <!ENTITY  reopenInContainer.accesskey        "e">
-<!ENTITY  bookmarkAllTabs.label              "Adder marcapaginas sur tote le schedas…">
-<!ENTITY  bookmarkAllTabs.accesskey          "m">
 <!ENTITY  bookmarkTab.label                  "Marcar le scheda">
 <!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
 These items have the same accesskey but will never be visible at the same time. -->
@@ -123,6 +110,10 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Schedas celate">
 
 <!ENTITY  listAllTabs.label      "Listar tote le schedas">
+
+<!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
+in "Search through tabs". -->
+<!ENTITY  allTabsMenu.searchTabs.label       "Recercar in le schedas">
 
 <!ENTITY tabCmd.label "Nove scheda">
 <!ENTITY tabCmd.accesskey "s">
@@ -153,11 +144,6 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY personalbarCmd.label "Barra de marcapaginas">
 <!ENTITY personalbarCmd.accesskey "m">
 <!ENTITY bookmarksToolbarItem.label "Elementos del barra de marcapaginas">
-
-<!ENTITY toolbarContextMenu.reloadAllTabs.label "Recargar tote le schedas">
-<!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "A">
-<!ENTITY toolbarContextMenu.bookmarkAllTabs.label "Adder marcapaginas sur tote le schedas…">
-<!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "T">
 
 <!ENTITY toolbarContextMenu.reloadSelectedTab.label "Recargar le scheda eligite">
 <!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
@@ -198,7 +184,7 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 <!ENTITY pageInfoCmd.accesskey "I">
 <!ENTITY pageInfoCmd.commandkey "i">
 <!ENTITY ldbCmd.label "Depurator de disposition">
-<!ENTITY ldbCmd.accesskey "L">
+<!ENTITY ldbCmd.accesskey "D">
 <!ENTITY mirrorTabCmd.label "Duplicar le scheda">
 <!ENTITY mirrorTabCmd.accesskey "D">
 <!-- LOCALIZATION NOTE (enterFullScreenCmd.label, exitFullScreenCmd.label):
@@ -264,9 +250,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY editThisBookmarkCmd.label "Modificar iste marcapaginas">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
 
-<!ENTITY subscribeToPageMenupopup.label "Subscriber se a iste pagina">
-<!ENTITY subscribeToPageMenuitem.label "Subscriber se a iste pagina…">
-
 <!ENTITY addCurPagesCmd.label "Adder marcapaginas sur tote le schedas…">
 <!ENTITY showAllBookmarks2.label "Monstrar tote le marcapaginas">
 <!ENTITY recentBookmarks.label "Marcapaginas recente">
@@ -275,10 +258,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarksToolbarChevron.tooltip "Monstrar plus marcapaginas">
 
 <!ENTITY backCmd.label                "Retro">
-<!ENTITY backCmd.accesskey            "B">
+<!ENTITY backCmd.accesskey            "R">
 <!ENTITY backButton.tooltip           "Ir un pagina retro">
 <!ENTITY forwardCmd.label             "Avante">
-<!ENTITY forwardCmd.accesskey         "F">
+<!ENTITY forwardCmd.accesskey         "A">
 <!ENTITY forwardButton.tooltip        "Ir un pagina avante">
 <!ENTITY backForwardButtonMenu.tooltip "Clicca dextere o trahe a basso pro monstrar le chronologia">
 <!ENTITY backForwardButtonMenuMac.tooltip "Trahe a basso pro monstrar le chronologia">
@@ -305,6 +288,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Stockar datos in le immagazinage persistente">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Le navigator es sub controlo remote">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Aperir le quadro de authentication web">
+
+<!ENTITY urlbar.storageAccessAnchor.tooltip               "Aperir le panello de permissiones de activitates">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Gerer le compartimento de tu camera e/o microphono con le sito">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Gerer le compartimento de tu microphono con le sito">
@@ -380,10 +365,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY webDeveloperMenu.label       "Developpator web">
 <!ENTITY webDeveloperMenu.accesskey   "W">
-
-<!ENTITY devtoolsRecordExecution.label "Registrar le execution">
-<!ENTITY devtoolsSaveRecording.label "Salvar le execution">
-<!ENTITY devtoolsReplayExecution.label "Repeter le execution">
 
 <!ENTITY inspectContextMenu.label     "Inspectar elemento">
 <!ENTITY inspectContextMenu.accesskey "I">
@@ -514,7 +495,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "A">
 <!ENTITY customizeMenu.manageExtension.label "Gerer extension">
 <!ENTITY customizeMenu.manageExtension.accesskey "E">
-
 <!ENTITY customizeMenu.removeExtension.label "Remover le extention">
 <!ENTITY customizeMenu.removeExtension.accesskey "v">
 
@@ -655,6 +635,16 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisFrameCmd.label      "Adder un marcapaginas sur iste quadro">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "m">
 <!ENTITY pageAction.copyLink.label    "Copiar le ligamine">
+
+<!-- LOCALIZATION NOTE(pocket-button.tooltiptext, saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label):
+  "Pocket" is a brand name. -->
+<!ENTITY pocketButton.tooltiptext     "Salvar in Pocket">
+<!ENTITY saveToPocketCmd.label        "Salvar le pagina in Pocket">
+<!ENTITY saveToPocketCmd.accesskey    "k">
+<!ENTITY saveLinkToPocketCmd.label    "Salvar le ligamine in Pocket">
+<!ENTITY saveLinkToPocketCmd.accesskey "o">
+<!ENTITY pocketMenuitem.label         "Vider le lista de Pocket">
+
 <!ENTITY emailPageCmd.label           "Inviar le ligamine per email…">
 <!ENTITY emailPageCmd.accesskey       "l">
 <!ENTITY savePageCmd.label            "Salvar le pagina como…">
@@ -1009,22 +999,16 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      This label signals that this type of content blocking is turned
      ON, so this is a positive thing. It forms the verb in (imaginary) sentence
      "Firefox is blocking Slow-Loading Trackers"-->
-<!ENTITY contentBlocking.fastBlock.blocking.label "Bloco">
+<!ENTITY contentBlocking.fastBlock.blocking.label "Blocage">
 <!-- LOCALIZATION NOTE (contentBlocking.fastBlock.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
      the type of content blocking is currently not enabled. -->
-<!ENTITY contentBlocking.fastBlock.add.label "Adder bloco…">
+<!ENTITY contentBlocking.fastBlock.add.label "Adder un blocage…">
 
 <!ENTITY contentBlocking.trackingProtection2.label "Tote le traciatores revelate">
 
 <!ENTITY contentBlocking.trackingProtection3.label "Traciatores">
-<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.allowed.label):
-     This label signals that this type of content blocking is turned
-     OFF and is not blocking tracker content, so this is not
-     a positive thing. It forms the end of the (imaginary) sentence
-     "Trackers [are] Allowed"-->
-<!ENTITY contentBlocking.trackingProtection.allowed.label "Permittite">
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
      This label signals that this type of content blocking is turned
      ON and is successfully blocking tracker content, so this is
@@ -1035,12 +1019,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      This label signals that this type of content blocking is turned
      ON, so this is a positive thing. It forms the verb in the (imaginary) sentence
      "Firefox is blocking Trackers"-->
-<!ENTITY contentBlocking.trackingProtection.blocking.label "Bloco">
+<!ENTITY contentBlocking.trackingProtection.blocking.label "Blocage">
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
      the type of content blocking is currently not enabled. -->
-<!ENTITY contentBlocking.trackingProtection.add.label "Adder bloco…">
+<!ENTITY contentBlocking.trackingProtection.add.label "Adder un blocage…">
 
 <!ENTITY contentBlocking.3rdPartyCookies.label "Cookies de tertie partes">
 <!ENTITY contentBlocking.3rdPartyCookies.trackers.label "Cookies traciante">
@@ -1054,18 +1038,21 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      This label signals that this type of content blocking is turned
      ON, so this is a positive thing. It forms the verb in the (imaginary) sentence
      "Firefox is blocking Third-Party Cookies"-->
-<!ENTITY contentBlocking.3rdPartyCookies.blocking.label "Bloco">
+<!ENTITY contentBlocking.3rdPartyCookies.blocking.label "Blocage">
 <!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
      the type of content blocking is currently not enabled. -->
-<!ENTITY contentBlocking.3rdPartyCookies.add.label "Adder bloco…">
+<!ENTITY contentBlocking.3rdPartyCookies.add.label "Adder un blocage…">
 
 <!ENTITY contentBlocking.manageSettings.label "Gerer le blocage de contentos">
 <!ENTITY contentBlocking.manageSettings.accesskey "G">
 
 <!ENTITY contentBlocking.trackersView.label "Traciatores">
 <!ENTITY contentBlocking.trackersView.strictInfo.label "Pro blocar tote le traciatores dispone a “Stricte” le blocage del contento.">
+
+<!ENTITY contentBlocking.cookies.label "Cookies">
+<!ENTITY contentBlocking.cookiesView.label "Cookies e datos de sitos">
 
 <!ENTITY contentBlocking.openBreakageReportView2.label "Reportar un problema">
 <!ENTITY contentBlocking.breakageReportView.label "Reportar problemas">
@@ -1082,27 +1069,27 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in NON-private browsing mode. -->
-<!ENTITY trackingProtection.unblock4.label "Disactivar le bloco pro iste sito">
+<!ENTITY trackingProtection.unblock4.label "Inactivar le blocage pro iste sito">
 <!ENTITY trackingProtection.unblock4.accesskey "D">
 <!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in PRIVATE browsing mode. -->
-<!ENTITY trackingProtection.unblockPrivate4.label "Disactivar le bloco temporarimente">
+<!ENTITY trackingProtection.unblockPrivate4.label "Inactivar temporarimente le blocage">
 <!ENTITY trackingProtection.unblockPrivate4.accesskey "D">
-<!ENTITY trackingProtection.block5.label "Activar le bloco pro iste sito">
+<!ENTITY trackingProtection.block5.label "Activar le blocage pro iste sito">
 <!ENTITY trackingProtection.block5.accesskey "A">
 
 <!-- LOCALIZATION NOTE (trackingProtection.unblock5.label, trackingProtection.unblock5.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in NON-private browsing mode. -->
-<!ENTITY trackingProtection.unblock5.label "Disactivar le bloco pro iste sito">
+<!ENTITY trackingProtection.unblock5.label "Inactivar le blocage pro iste sito">
 <!ENTITY trackingProtection.unblock5.accesskey "D">
 <!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate6.label, trackingProtection.unblockPrivate6.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in PRIVATE browsing mode. -->
-<!ENTITY trackingProtection.unblockPrivate5.label "Disactivar le bloco temporarimente">
+<!ENTITY trackingProtection.unblockPrivate5.label "Inactivar temporarimente le blocage">
 <!ENTITY trackingProtection.unblockPrivate5.accesskey "D">
-<!ENTITY trackingProtection.block6.label "Activar le bloco pro iste sito">
+<!ENTITY trackingProtection.block6.label "Activar le blocage pro iste sito">
 <!ENTITY trackingProtection.block6.accesskey "A">
 <!ENTITY trackingProtection.reload2.label "Recargar le pagina">
 <!ENTITY trackingProtection.reload2.accesskey "R">
@@ -1182,7 +1169,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY newTabControlled.keepButton.label "Mantener le cambios">
 <!ENTITY newTabControlled.keepButton.accesskey "M">
 <!ENTITY newTabControlled.disableButton.label "Inactivar le extension">
-<!ENTITY newTabControlled.disableButton.accesskey "">
+<!ENTITY newTabControlled.disableButton.accesskey "I">
 
 <!ENTITY homepageControlled.message "Un extension cambiava lo que tu vide quando tu aperi tu pagina casa. Tu pote restaurar tu parametros si tu non vole iste modification.">
 <!ENTITY homepageControlled.header.message "Tu pagina principal cambiava.">
@@ -1195,16 +1182,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY tabHideControlled.keepButton.label "Mantener celate le schedas">
 <!ENTITY tabHideControlled.keepButton.accesskey "M">
 <!ENTITY tabHideControlled.disableButton.label "Inactivar le extension">
-<!ENTITY tabHideControlled.disableButton.accesskey "D">
+<!ENTITY tabHideControlled.disableButton.accesskey "I">
 
 <!ENTITY pageActionButton.tooltip "Actiones del pagina">
 <!ENTITY pageAction.addToUrlbar.label "Adder al barra de adresse">
 <!ENTITY pageAction.removeFromUrlbar.label "Remover del barra de adresse">
-<!ENTITY pageAction.allowInUrlbar.label "Monstrar in le barra de adresse">
-<!ENTITY pageAction.disallowInUrlbar.label "Non monstrar in le barra de adresse">
 <!ENTITY pageAction.manageExtension.label "Gerer le extension…">
-
-<!ENTITY pageAction.sendTabToDevice.label "Inviar le scheda a un apparato">
 
 <!ENTITY sendToDevice.syncNotReady.label "Synchronisante apparatos…">
 

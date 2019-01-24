@@ -12,6 +12,60 @@
 
 policy-AppUpdateURL = Stilla sérsniðna smáforrits uppfærslu slóð.
 policy-Authentication = Stilla samþætta auðkenningu fyrir vefsíður sem styðja slíkt.
-policy-BlockAboutAddons = Lokaðu aðgangi við viðbótareftirlitið (um: viðbætur).
-policy-BlockAboutConfig = Lokaðu aðgangi að um: config síðu.
+policy-BlockAboutAddons = Loka aðgangi við viðbótareftirlitið (um: viðbætur).
+policy-BlockAboutConfig = Loka aðgangi að about:config síðu.
+policy-BlockAboutProfiles = Loka aðgangi að about:profiles síðu.
+policy-BlockAboutSupport = Loka aðgangi að about:support síðu.
+policy-Bookmarks = Búa til bókamerki í bókamerkjastiku, bókamerkjalistanum eða tiltekinni möppu inni í þeim.
+policy-CertificatesDescription = Bæta við vottorði eða nota innbyggða vottorðið.
+policy-Cookies = Leyfa eða hafna vefsvæðum um að stilla smygildi.
+policy-DisableAppUpdate = Koma í veg fyrir að vafrinn uppfærist.
+policy-DisableBuiltinPDFViewer = Óvirkja PDF.js, innbyggða PDF-lesarann í { -brand-short-name }.
+policy-DisableDeveloperTools = Loka aðgangi að þróunartólum.
+policy-DisableFeedbackCommands = Slökkva á "Senda viðbrögð" og "Tilkynna villandi síðu" í hjálparvalmyndinni.
+policy-DisableFirefoxAccounts = Slökkva á { -fxaccount-brand-name } tengdri þjónustu, m.a. Sync.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Slökkva á viðbótinni Firefox skjámyndir.
+policy-DisableFirefoxStudies = Hamla aðgang að könnunum frá { -brand-short-name }
 policy-DisableForgetButton = Hamla aðgang að Gleyma hnappnum.
+policy-DisableFormHistory = Ekki geyma form- og leitarsögu
+policy-DisableMasterPasswordCreation = Ef þetta er satt, geturðu ekki búið til aðal lykilorð.
+policy-DisablePocket = Slökkva á valkostinum til að geyma vefsíður í Pocket.
+policy-DisablePrivateBrowsing = Afvirkja huliðsstillingu
+policy-DisableProfileImport = Slökkva á valmyndinni til að flytja inn gögn úr öðrum vafra.
+policy-DisableProfileRefresh = Slökkva á Endurhlaða { -brand-short-name } takkanum á about:support siðunni.
+policy-DisableSafeMode = Slökkva á endurræsa í Safe Mode. Athugið að aðeins er hægt að slökkva á Shift takkanum til að fara í Safe Mode á Windows með því að nota hópstefnu.
+policy-DisableSecurityBypass = Forða notanda frá tilteknum öryggisviðvörunum.
+policy-DisableSetAsDesktopBackground = Slökkva á valmyndarskipuninni "Velja forsíðubakgrunn" fyrir myndir.
+policy-DisableSystemAddonUpdate = Forða því að vafrinn setji upp og uppfæri kerfisviðbætur.
+policy-DisableTelemetry = Slökkva á gagnasöfnun til að bæta Firefox (telemetry)
+policy-DisplayBookmarksToolbar = Sýna bókamerkjastikuna sjálfgefið.
+policy-DisplayMenuBar = Birta valmyndarstikuna sjálfgefið.
+policy-DNSOverHTTPS = Stilla DNS yfir HTTPS.
+policy-DontCheckDefaultBrowser = Slökkva á sjálfgefinni athugun um aðalvafra kerfis er við ræsingu.
+# “lock” means that the user won’t be able to change this setting
+policy-EnableTrackingProtection = Virkja eða slökkva á Efnablokkun og læsa henni mögulega.
+# A “locked” extension can’t be disabled or removed by the user. This policy
+# takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
+# English or translate them as verbs.
+policy-Extensions = Setja upp, fjarlægja eða læsa fyrir viðbætur. Uppsetningarvalkosturinn samþykkir vefslóðir og leiðir sem breytur. Valkostir um að fjarlægja viðbót eða læstir valkostir krefjast auðkennis viðbótarinnar.
+policy-FlashPlugin = Leyfa eða hafna notkun Flash-viðbótarinnar.
+policy-HardwareAcceleration = Ef rangt, slökkva á hröðun vélbúnaðar.
+# “lock” means that the user won’t be able to change this setting
+policy-Homepage = Stilla og loka mögulega heimsíðu.
+policy-InstallAddonsPermission = Leyfa ákveðnum vefsíðum að setja upp viðbætur.
+policy-NoDefaultBookmarks = Slökkva á stöðluðum bókamerkjum meðfylgjandi { -brand-short-name } og frá greindum bókamerkjum (flestar heimsóknir, nýleg meki) Ath. að þessi stefna hefur aðeins áhrif ef það er notað áður en sniðið er notað fyrst.
+policy-OfferToSaveLogins = Skoðaðu spurningu um að geyma aðgangsupplýsingar með { -brand-short-name }. Gildin true og false eru bæði gild.
+policy-OverrideFirstRunPage = Breyta upphafssíðu. Tómt gildi til að slökkva á opnun síðunnar.
+policy-OverridePostUpdatePage = Setja Firefox News síðu - birtist eftir uppfærslu á forritinu. Tómt gildi gerir slökkt á því að opna síðuna.
+policy-Permissions = Stilla heimildir fyrir myndavél, hljóðnema, staðsetningu og tilkynningar.
+policy-PopupBlocking = Leyfa tilteknum vefsíðum að birta sprettiglugga að sjálfgefnu.
+policy-Proxy = Velja proxy-stillingar
+policy-RequestedLocales = Stilla lista yfir tungumál sem óskað er eftir af forritinu, raðað eftir vali.
+policy-SanitizeOnShutdown = Eyða öllum flakk gögnum við lokun
+policy-SearchBar = Stilla sjálfgefna staðsetningu leitarstiku. Notanda er enn leyft að sérsníða hana.
+policy-SearchEngines = Stilla leitarvélar. Þessi stefna er aðeins í boði í útgáfu ESR (Extended Support Release).
+# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
+policy-SecurityDevices = Setja inn PKCS #11 forritseiningar.
+# “format” refers to the format used for the value of this policy.
+policy-WebsiteFilter = Loka fyrir heimsókn á vefsvæði. Sjá skjöl fyrir frekari upplýsari um snið.

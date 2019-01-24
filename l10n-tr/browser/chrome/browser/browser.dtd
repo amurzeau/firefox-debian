@@ -21,8 +21,6 @@
 <!-- Tab context menu -->
 <!ENTITY  reloadTab.label                    "Sekmeyi tazele">
 <!ENTITY  reloadTab.accesskey                "z">
-<!ENTITY  reloadAllTabs.label                "Tüm sekmeleri tazele">
-<!ENTITY  reloadAllTabs.accesskey            "r">
 <!ENTITY  selectAllTabs.label                "Tüm sekmeleri seç">
 <!ENTITY  selectAllTabs.accesskey            "ü">
 <!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
@@ -47,9 +45,6 @@ left instead of right. -->
 <!ENTITY  closeOtherTabs.label               "Diğer sekmeleri kapat">
 <!ENTITY  closeOtherTabs.accesskey           "D">
 
-<!ENTITY  closeSelectedTabs.label            "Seçili sekmeleri kapat">
-<!ENTITY  closeSelectedTabs.accesskey        "S">
-
 <!ENTITY  closeTabs.label                    "Sekmeleri kapat">
 <!ENTITY  closeTabs.accesskey                "S">
 <!ENTITY  pinSelectedTabs.label              "Sekmeleri sabitle">
@@ -62,10 +57,6 @@ same accesskey but will never be visible at the same time. -->
 unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
 same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinSelectedTabs.accesskey        "N">
-<!-- Reload Tab and Reload Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
-<!ENTITY  reloadSelectedTabs.label           "Seçili sekmeleri tazele">
-<!ENTITY  reloadSelectedTabs.accesskey       "t">
 <!-- LOCALIZATION NOTE(reloadTab.label, reloadTabs.label): have the same accesskey
 but will never be visible at the same time. -->
 <!ENTITY  reloadTabs.label                   "Sekmeleri tazele">
@@ -90,8 +81,6 @@ same accesskey but will never be visible at the same time. -->
 unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
 same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinTab.accesskey                 "N">
-<!ENTITY  sendTabToDevice.label              "Sekmeyi cihaza gönder">
-<!ENTITY  sendTabToDevice.accesskey          "c">
 <!ENTITY  sendPageToDevice.label             "Sayfayı cihaza gönder">
 <!ENTITY  sendPageToDevice.accesskey         "c">
 <!ENTITY  sendLinkToDevice.label             "Bağlantıyı cihaza gönder">
@@ -110,8 +99,6 @@ These two items have the same accesskey but will never be visible at the same ti
 <!ENTITY  moveToNewWindow.accesskey          "Y">
 <!ENTITY  reopenInContainer.label            "Kapsayıcıda yeniden aç">
 <!ENTITY  reopenInContainer.accesskey        "K">
-<!ENTITY  bookmarkAllTabs.label              "Tüm sekmeleri yer imlerine ekle…">
-<!ENTITY  bookmarkAllTabs.accesskey          "ü">
 <!ENTITY  bookmarkTab.label                  "Sekmeyi yer imlerine ekle">
 <!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
 These items have the same accesskey but will never be visible at the same time. -->
@@ -123,6 +110,10 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Gizli sekmeler">
 
 <!ENTITY  listAllTabs.label      "Tüm sekmeleri listele">
+
+<!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
+in "Search through tabs". -->
+<!ENTITY  allTabsMenu.searchTabs.label       "Sekmelerde ara">
 
 <!ENTITY tabCmd.label "Yeni sekme">
 <!ENTITY tabCmd.accesskey "s">
@@ -153,11 +144,6 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY personalbarCmd.label "Yer imleri araç çubuğu">
 <!ENTITY personalbarCmd.accesskey "Y">
 <!ENTITY bookmarksToolbarItem.label "Yer imleri araç çubuğu öğeleri">
-
-<!ENTITY toolbarContextMenu.reloadAllTabs.label "Tüm sekmeleri tazele">
-<!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "T">
-<!ENTITY toolbarContextMenu.bookmarkAllTabs.label "Tüm sekmeleri yer imlerine ekle…">
-<!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "ü">
 
 <!ENTITY toolbarContextMenu.reloadSelectedTab.label "Seçili sekmeyi tazele">
 <!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
@@ -264,9 +250,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY editThisBookmarkCmd.label "Bu yer imini düzenle">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
 
-<!ENTITY subscribeToPageMenupopup.label "Bu sayfaya abone ol">
-<!ENTITY subscribeToPageMenuitem.label "Bu sayfaya abone ol…">
-
 <!ENTITY addCurPagesCmd.label "Tüm sekmeleri yer imlerine ekle…">
 <!ENTITY showAllBookmarks2.label "Tüm yer imlerini göster">
 <!ENTITY recentBookmarks.label "Yer imlerine yeni eklenenler">
@@ -305,6 +288,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Kalıcı depolamada veri depola">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Tarayıcı uzaktan kontrol ediliyor">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Web kimlik doğrulaması panelini aç">
+
+<!ENTITY urlbar.storageAccessAnchor.tooltip               "Gezinme etkinliği izin panelini aç">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Siteyle kamera ve/veya mikrofonumu paylaşmayı yönet">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Siteyle mikrofonumu paylaşmayı yönet">
@@ -380,10 +365,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY webDeveloperMenu.label       "Web geliştirici">
 <!ENTITY webDeveloperMenu.accesskey   "W">
-
-<!ENTITY devtoolsRecordExecution.label "Çalıştırmayı kaydet">
-<!ENTITY devtoolsSaveRecording.label "Kaydı kaydet">
-<!ENTITY devtoolsReplayExecution.label "Çalıştırmayı yeniden oynat">
 
 <!ENTITY inspectContextMenu.label     "Öğeyi incele">
 <!ENTITY inspectContextMenu.accesskey "c">
@@ -514,7 +495,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "A">
 <!ENTITY customizeMenu.manageExtension.label "Eklentiyi yönet">
 <!ENTITY customizeMenu.manageExtension.accesskey "E">
-
 <!ENTITY customizeMenu.removeExtension.label "Eklentiyi kaldır">
 <!ENTITY customizeMenu.removeExtension.accesskey "n">
 
@@ -655,6 +635,16 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisFrameCmd.label      "Bu çerçeveyi yer imlerine ekle">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "m">
 <!ENTITY pageAction.copyLink.label    "Bağlantıyı kopyala">
+
+<!-- LOCALIZATION NOTE(pocket-button.tooltiptext, saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label):
+  "Pocket" is a brand name. -->
+<!ENTITY pocketButton.tooltiptext     "Pocket’a kaydet">
+<!ENTITY saveToPocketCmd.label        "Sayfayı Pocket’a kaydet">
+<!ENTITY saveToPocketCmd.accesskey    "k">
+<!ENTITY saveLinkToPocketCmd.label    "Bağlantıyı Pocket’a kaydet">
+<!ENTITY saveLinkToPocketCmd.accesskey "o">
+<!ENTITY pocketMenuitem.label         "Pocket listesini göster">
+
 <!ENTITY emailPageCmd.label           "Bağlantıyı e-postayla gönder…">
 <!ENTITY emailPageCmd.accesskey       "e">
 <!ENTITY savePageCmd.label            "Sayfayı farklı kaydet…">
@@ -1019,12 +1009,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection2.label "Bulunan tüm takipçiler">
 
 <!ENTITY contentBlocking.trackingProtection3.label "Takipçiler">
-<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.allowed.label):
-     This label signals that this type of content blocking is turned
-     OFF and is not blocking tracker content, so this is not
-     a positive thing. It forms the end of the (imaginary) sentence
-     "Trackers [are] Allowed"-->
-<!ENTITY contentBlocking.trackingProtection.allowed.label "İzin verildi">
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
      This label signals that this type of content blocking is turned
      ON and is successfully blocking tracker content, so this is
@@ -1066,6 +1050,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY contentBlocking.trackersView.label "Takipçiler">
 <!ENTITY contentBlocking.trackersView.strictInfo.label "Tüm takipçileri engellemek için içerik engellemeyi “Sıkı” olarak ayarlayın.">
+
+<!ENTITY contentBlocking.cookies.label "Çerezler">
+<!ENTITY contentBlocking.cookiesView.label "Çerezler ve site verileri">
 
 <!ENTITY contentBlocking.openBreakageReportView2.label "Sorun bildir">
 <!ENTITY contentBlocking.breakageReportView.label "Sorun bildir">
@@ -1200,11 +1187,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageActionButton.tooltip "Sayfa eylemleri">
 <!ENTITY pageAction.addToUrlbar.label "Adres çubuğuna ekle">
 <!ENTITY pageAction.removeFromUrlbar.label "Adres çubuğundan kaldır">
-<!ENTITY pageAction.allowInUrlbar.label "Adres çubuğunda göster">
-<!ENTITY pageAction.disallowInUrlbar.label "Adres çubuğunda gösterme">
 <!ENTITY pageAction.manageExtension.label "Eklentiyi yönet…">
-
-<!ENTITY pageAction.sendTabToDevice.label "Sekmeyi cihaza gönder">
 
 <!ENTITY sendToDevice.syncNotReady.label "Cihazlar eşitleniyor…">
 

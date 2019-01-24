@@ -10,6 +10,7 @@ about-performance-title = Tembiapo ñangarekohára
 column-name = Téra
 column-type = Peteĩchagua
 column-energy-impact = Mba’erendy mbaretekue
+column-memory = Mandu’arenda
 
 ## Special values for the Name column
 
@@ -38,6 +39,15 @@ energy-impact-high = Epyta ({ $value })
 energy-impact-medium = Mbyte ({ $value })
 energy-impact-low = Karape ({ $value })
 
+## Values for the Memory column
+##
+## Variables:
+##   $value (Number) - How much memory is used
+
+size-KB = { $value } KB
+size-MB = { $value } MB
+size-GB = { $value } GB
+
 ## Tooltips for the action buttons
 
 close-tab =
@@ -51,4 +61,4 @@ show-addon =
 #   $dispatchesSincePrevious (Number) - how many dispatches occured in the last 2 seconds
 #   $durationSincePrevious (Number) - how much CPU time was used in the last 2 seconds
 item =
-    .title = Ñemondo myenyhẽha guive: { $totalDispatches } ({ $totalDuration } ms) Ñemondo aravo’iete pahávapa: { $dispatchesSincePrevious } ({ $durationSincePrevious }} ms)
+    .title = Ñemondo myenyhẽha guive: { $totalDispatches } ({ $totalDuration } ms) Ñemondo aravo’iete pahávapa: { $dispatchesSincePrevious } ({ $durationSincePrevious } ms)

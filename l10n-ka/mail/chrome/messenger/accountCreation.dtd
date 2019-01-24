@@ -19,6 +19,13 @@
 <!ENTITY rememberPassword.label          "პაროლის დამახსოვრება">
 <!ENTITY rememberPassword.accesskey      "m">
 
+<!ENTITY usernameEx.label                "თქვენი შესვლის მონაცემები:">
+<!ENTITY usernameEx.accesskey            "შ">
+<!-- LOCALIZATION NOTE(usernameEx.placeholder): YOURDOMAIN refers to the Windows domain in ActiveDirectory. yourusername refers to the user's account name in Windows. -->
+<!ENTITY usernameEx.placeholder          "YOURDOMAIN\yourusername">
+<!-- LOCALIZATION NOTE(usernameEx.text): Domain refers to the Windows domain in ActiveDirectory. We mean the user's login in Windows at the local corporate network. -->
+<!ENTITY usernameEx.text                 "Domain-ანგარიშის მონაცემები">
+
 <!ENTITY imapLong.label                  "IMAP (ვებსაქაღალდეები)">
 <!ENTITY pop3Long.label                  "POP3 (ფოსტის შენახვა თქვენს კომპიუტერში)">
 
@@ -30,7 +37,9 @@
 <!ENTITY ssl.label                       "SSL">
 <!ENTITY auth.label                      "აუთენტიფიკაცია">
 <!ENTITY imap.label                      "IMAP">
-<!ENTITY pop3.label                       "POP3">
+<!ENTITY pop3.label                      "POP3">
+<!-- LOCALIZATION NOTE(exchange.label): Do not translate Exchange, it is a product name. -->
+<!ENTITY exchange.label                  "Exchange">
 <!ENTITY smtp.label                      "SMTP">
 <!ENTITY autodetect.label                "თვითამოცნობა">
 <!-- LOCALIZATION NOTE(noEncryption.label): Neither SSL/TLS nor STARTTLS.
@@ -38,6 +47,9 @@
 <!ENTITY noEncryption.label              "არა">
 <!ENTITY starttls.label                  "STARTTLS">
 <!ENTITY sslTls.label                    "SSL/TLS">
+
+<!-- LOCALIZATION NOTE(exchange-hostname.label): Do not translate Exchange, it is a product name. -->
+<!ENTITY exchange-hostname.label         "Exchange-სერვერი:">
 
 <!ENTITY advancedSetup.label             "სრულად გამართვა">
 <!ENTITY advancedSetup.accesskey         "A">

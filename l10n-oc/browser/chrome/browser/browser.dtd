@@ -21,8 +21,6 @@
 <!-- Tab context menu -->
 <!ENTITY  reloadTab.label                    "Tornar cargar l’onglet">
 <!ENTITY  reloadTab.accesskey                "r">
-<!ENTITY  reloadAllTabs.label                "Tornar cargar totes los onglets">
-<!ENTITY  reloadAllTabs.accesskey            "A">
 <!ENTITY  selectAllTabs.label                "Seleccionar totes los onglets">
 <!ENTITY  selectAllTabs.accesskey            "S">
 <!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
@@ -35,8 +33,10 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  closeTabOptions.accesskey          "T">
 <!-- LOCALIZATION NOTE (duplicateTabs.label): This is a command to duplicate
 a tab (i.e. it is a verb, not adjective). -->
+<!ENTITY  duplicateTabs.label                "Duplicar los onglets">
 <!-- LOCALIZATION NOTE (duplicateTab.accesskey, duplicateTabs.accesskey):
 These items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  duplicateTabs.accesskey            "D">
 <!-- LOCALIZATION NOTE (closeTabsToTheEnd.label): This should indicate the
 direction in which tabs are closed, i.e. locales that use RTL mode should say
 left instead of right. -->
@@ -44,9 +44,6 @@ left instead of right. -->
 <!ENTITY  closeTabsToTheEnd.accesskey        "i">
 <!ENTITY  closeOtherTabs.label               "Tampar los autres onglets">
 <!ENTITY  closeOtherTabs.accesskey           "t">
-
-<!ENTITY  closeSelectedTabs.label            "Tampar los onglets seleccionats">
-<!ENTITY  closeSelectedTabs.accesskey        "T">
 
 <!ENTITY  closeTabs.label                    "Tampar los onglets">
 <!ENTITY  closeTabs.accesskey                "T">
@@ -60,10 +57,6 @@ same accesskey but will never be visible at the same time. -->
 unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
 same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinSelectedTabs.accesskey        "j">
-<!-- Reload Tab and Reload Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
-<!ENTITY  reloadSelectedTabs.label           "Recargar los onglets seleccionats">
-<!ENTITY  reloadSelectedTabs.accesskey       "R">
 <!-- LOCALIZATION NOTE(reloadTab.label, reloadTabs.label): have the same accesskey
 but will never be visible at the same time. -->
 <!ENTITY  reloadTabs.label                   "Actualizar los onglets">
@@ -88,8 +81,6 @@ same accesskey but will never be visible at the same time. -->
 unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
 same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinTab.accesskey                 "p">
-<!ENTITY  sendTabToDevice.label              "Enviar l'onglet al periferic">
-<!ENTITY  sendTabToDevice.accesskey          "D">
 <!ENTITY  sendPageToDevice.label             "Enviar la pagina al periferic">
 <!ENTITY  sendPageToDevice.accesskey         "D">
 <!ENTITY  sendLinkToDevice.label             "Enviar lo ligam al periferic">
@@ -108,8 +99,6 @@ These two items have the same accesskey but will never be visible at the same ti
 <!ENTITY  moveToNewWindow.accesskey          "n">
 <!ENTITY  reopenInContainer.label            "Tornar dobrir dins un onglet isolat">
 <!ENTITY  reopenInContainer.accesskey        "d">
-<!ENTITY  bookmarkAllTabs.label              "Marcar totes los onglets…">
-<!ENTITY  bookmarkAllTabs.accesskey          "M">
 <!ENTITY  bookmarkTab.label                  "Apondre l’onglet als marcapaginas">
 <!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
 These items have the same accesskey but will never be visible at the same time. -->
@@ -121,6 +110,10 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Onglets amagats">
 
 <!ENTITY  listAllTabs.label      "Far la lista de totes los onglets">
+
+<!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
+in "Search through tabs". -->
+<!ENTITY  allTabsMenu.searchTabs.label       "Cercar pels onglets">
 
 <!ENTITY tabCmd.label "Onglet novèl">
 <!ENTITY tabCmd.accesskey "t">
@@ -152,17 +145,16 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY personalbarCmd.accesskey "B">
 <!ENTITY bookmarksToolbarItem.label "Elements de la barra personala">
 
-<!ENTITY toolbarContextMenu.reloadAllTabs.label "Actualizar totes los onglets">
-<!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "A">
-<!ENTITY toolbarContextMenu.bookmarkAllTabs.label "Marcar totes los onglets…">
-<!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "M">
-
+<!ENTITY toolbarContextMenu.reloadSelectedTab.label "Recargar l’onglet seleccionat">
 <!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
 toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
 same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.reloadSelectedTab.accesskey "R">
+<!ENTITY toolbarContextMenu.reloadSelectedTabs.label "Recargar los onglets seleccionats">
 <!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
 toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
 same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.reloadSelectedTabs.accesskey "R">
 <!ENTITY toolbarContextMenu.bookmarkSelectedTab.label "Apondre als marcapaginas l’onglet seleccionat…">
 <!-- LOCALIZATION NOTE (toolbarContextMenu.bookmarkSelectedTab.accesskey,
 toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
@@ -173,6 +165,8 @@ same accesskey but will never be visible at the same time. -->
 toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
 same accesskey but will never be visible at the same time. -->
 <!ENTITY toolbarContextMenu.bookmarkSelectedTabs.accesskey "m">
+<!ENTITY toolbarContextMenu.selectAllTabs.label "Seleccionar totes los onglets">
+<!ENTITY toolbarContextMenu.selectAllTabs.accesskey "S">
 <!ENTITY toolbarContextMenu.undoCloseTab.label "Anullar la tampadura de l'onglet">
 <!ENTITY toolbarContextMenu.undoCloseTab.accesskey "u">
 
@@ -256,9 +250,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY editThisBookmarkCmd.label "Modificar aqueste marcapagina">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
 
-<!ENTITY subscribeToPageMenupopup.label "S'abonar a aquesta pagina">
-<!ENTITY subscribeToPageMenuitem.label "S'abonar a aquesta pagina…">
-
 <!ENTITY addCurPagesCmd.label "Marcar totes los onglets…">
 <!ENTITY showAllBookmarks2.label "Afichar totes los marcapaginas">
 <!ENTITY recentBookmarks.label "Marcats recentament">
@@ -297,6 +288,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Gardar las donadas dins un emmagazinatge permanent">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Lo navegador es contrarotlat a distància">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Dobrir lo panèl d’identificacion">
+
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Actualament, partejatz vòstra camèra o vòstre microfòn amb aqueste site">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Actualament, partejatz vòstre microfòn amb lo site">
@@ -372,8 +364,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY webDeveloperMenu.label       "Desvolopaire web">
 <!ENTITY webDeveloperMenu.accesskey   "w">
-
-<!ENTITY devtoolsSaveRecording.label "Salvagardar l’enregistrament">
 
 <!ENTITY inspectContextMenu.label     "Examinar l'element">
 <!ENTITY inspectContextMenu.accesskey "x">
@@ -504,7 +494,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "A">
 <!ENTITY customizeMenu.manageExtension.label "Gerir l’extension">
 <!ENTITY customizeMenu.manageExtension.accesskey "e">
-
+<!ENTITY customizeMenu.removeExtension.label "Suprimir l’extension">
+<!ENTITY customizeMenu.removeExtension.accesskey "s">
 
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
@@ -1007,11 +998,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection2.label "Totes los traçadors detectats">
 
 <!ENTITY contentBlocking.trackingProtection3.label "Traçadors">
-<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.allowed.label):
-     This label signals that this type of content blocking is turned
-     OFF and is not blocking tracker content, so this is not
-     a positive thing. It forms the end of the (imaginary) sentence
-     "Trackers [are] Allowed"-->
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
      This label signals that this type of content blocking is turned
      ON and is successfully blocking tracker content, so this is
@@ -1048,8 +1034,14 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      the type of content blocking is currently not enabled. -->
 <!ENTITY contentBlocking.3rdPartyCookies.add.label "Apondre un blocatge…">
 
+<!ENTITY contentBlocking.manageSettings.label "Gerir lo blocatge de contengut">
+<!ENTITY contentBlocking.manageSettings.accesskey "G">
 
 <!ENTITY contentBlocking.trackersView.label "Traçadors">
+<!ENTITY contentBlocking.trackersView.strictInfo.label "Per blocar totes los elements de seguiments, causissètz lo blocatge de contengut «Estricte».">
+
+<!ENTITY contentBlocking.cookies.label "Cookies">
+<!ENTITY contentBlocking.cookiesView.label "Cookies e donadas de sites">
 
 <!ENTITY contentBlocking.openBreakageReportView2.label "Senhalar un problèma">
 <!ENTITY contentBlocking.breakageReportView.label "Senhalar de problèmas">
@@ -1078,9 +1070,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- LOCALIZATION NOTE (trackingProtection.unblock5.label, trackingProtection.unblock5.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in NON-private browsing mode. -->
+<!ENTITY trackingProtection.unblock5.label "Desactivar lo blocatge per aqueste site">
+<!ENTITY trackingProtection.unblock5.accesskey "D">
 <!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate6.label, trackingProtection.unblockPrivate6.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in PRIVATE browsing mode. -->
+<!ENTITY trackingProtection.unblockPrivate5.label "Desactivar temporàriament lo blocatge">
+<!ENTITY trackingProtection.unblockPrivate5.accesskey "t">
+<!ENTITY trackingProtection.block6.label "Activar lo blocatge per aqueste site">
+<!ENTITY trackingProtection.block6.accesskey "A">
 <!ENTITY trackingProtection.reload2.label "Actualizar la pagina">
 <!ENTITY trackingProtection.reload2.accesskey "A">
 
@@ -1177,11 +1175,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageActionButton.tooltip "Accions de la pagina">
 <!ENTITY pageAction.addToUrlbar.label "Apondre la barra d'adreça">
 <!ENTITY pageAction.removeFromUrlbar.label "Levar de la barra d'adreça">
-<!ENTITY pageAction.allowInUrlbar.label "Mostrar dins la barra d’adreça">
-<!ENTITY pageAction.disallowInUrlbar.label "Mostrar pas dins la barra d’adreça">
 <!ENTITY pageAction.manageExtension.label "Gerir l’extension…">
-
-<!ENTITY pageAction.sendTabToDevice.label "Mandar l’onglet al periferic">
 
 <!ENTITY sendToDevice.syncNotReady.label "Sincronisacion dels periferics…">
 
