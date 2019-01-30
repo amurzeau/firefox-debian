@@ -8,6 +8,8 @@ do-not-track-option-default =
     .label = Yalnızca İzlenme Koruması’nı kullanırken
 do-not-track-option-default-content-blocking =
     .label = Yalnızca { -brand-short-name } bulunan takipçileri engellemeye ayarlandığında
+do-not-track-option-default-content-blocking-known =
+    .label = Yalnızca { -brand-short-name } bilinen takipçileri engellemeye ayarlandığında
 do-not-track-option-always =
     .label = Her zaman
 pref-page =
@@ -52,7 +54,7 @@ category-privacy =
 pane-sync-title = Firefox Hesabı
 category-sync =
     .tooltiptext = { pane-sync-title }
-help-button-label = { -brand-short-name } Desteği
+help-button-label = { -brand-short-name } desteği
 addons-button-label = Eklentiler ve temalar
 focus-search =
     .key = f
@@ -92,7 +94,7 @@ extension-controlled-web-notifications = Bu ayarı <img data-l10n-name="icon"/> 
 extension-controlled-default-search = <img data-l10n-name="icon"/> { $name } eklentisi varsayılan arama motorunuzu değiştirdi.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
-extension-controlled-privacy-containers = <img data-l10n-name="icon"/> { $name } eklentisi Kapsayıcı Sekmeler’e ihtiyaç duyuyor.
+extension-controlled-privacy-containers = <img data-l10n-name="icon"/> { $name } eklentisi kapsayıcı sekmelere ihtiyaç duyuyor.
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = İzlenme korumasını <img data-l10n-name="icon"/> { $name } adlı eklenti kontrol ediyor.
@@ -141,6 +143,8 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Önceki oturumu geri yükle
     .accesskey = o
+startup-restore-warn-on-quit =
+    .label = Tarayıcıdan çıkarken beni uyar
 disable-extension =
     .label = Eklentiyi etkisizleştir
 tabs-group-header = Sekmeler
@@ -150,11 +154,11 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = Bağlantıları yeni pencere yerine yeni sekmede aç
     .accesskey = B
-warn-on-close-multiple-tabs =
-    .label = Birden fazla sekmeyi kapatırken beni uyar
-    .accesskey = m
 warn-on-quit-close-multiple-tabs =
     .label = Çıkarken ve birden fazla sekmeyi kapatırken beni uyar
+    .accesskey = m
+warn-on-close-multiple-tabs =
+    .label = Birden fazla sekmeyi kapatırken beni uyar
     .accesskey = m
 warn-on-open-many-tabs =
     .label = Birden çok sekme açmanın { -brand-short-name } uygulamasını yavaşlatabileceği durumlarda beni uyar
@@ -538,7 +542,6 @@ privacy-header = Tarayıcı gizliliği
 
 ## Privacy Section - Forms
 
-forms-header = Formlar ve parolalar
 logins-header = Hesaplar ve parolalar
 forms-ask-to-save-logins =
     .label = Sitelerdeki kullanıcı adı ve parolalarımı kaydetmeyi öner
@@ -635,6 +638,14 @@ sitedata-block-all-third-party-option =
     .label = Tüm üçüncü taraf çerezleri (Bazı web siteleri bozulabilir.)
 sitedata-block-all-option =
     .label = Tüm çerezler (Bazı web siteleri bozulabilir.)
+sitedata-option-block-trackers =
+    .label = Üçüncü taraf takipçileri
+sitedata-option-block-unvisited =
+    .label = Ziyaret etmediğim sitelerden gelen çerezler
+sitedata-option-block-all-third-party =
+    .label = Tüm üçüncü taraf çerezleri (Bazı siteler bozulabilir.)
+sitedata-option-block-all =
+    .label = Tüm çerezler (Bazı siteler bozulabilir.)
 sitedata-clear =
     .label = Verileri temizle…
     .accesskey = l
@@ -692,25 +703,6 @@ content-blocking-fastblock-slow-loading-trackers-label =
     .label = Yavaş yüklenen takipçiler
     .accesskey = Y
 content-blocking-fastblock-new-description = Yalnızca sayfaların çabuk yüklenmesini önleyen takipçileri engeller.
-content-blocking-setting-standard =
-    .label = Standart
-    .accesskey = S
-content-blocking-setting-strict =
-    .label = Sıkı
-    .accesskey = k
-content-blocking-setting-custom =
-    .label = Özel
-    .accesskey = Ö
-content-blocking-standard-desc = Koruma ve performans dengesi sunar. Web sitelerinin düzgün çalışabilmesi için bazı takipçilere izin verir.
-content-blocking-strict-desc = { -brand-short-name } tarafından bulunan tüm takipçileri engeller. Bazı siteler düzgün çalışmayabilir.
-content-blocking-custom-desc = Nelerin engelleneceğini seçin.
-content-blocking-private-trackers = Bilinen takipçileri yalnızca gizli pencelerde engeller
-content-blocking-third-party-cookies = Üçüncü taraf takip çerezlerini engeller
-content-blocking-all-windows-trackers = Bilinen takipçileri tüm pencerelerde engeller
-content-blocking-all-third-party-cookies = Tüm üçüncü taraf çerezlerini engeller
-content-blocking-warning-title = Dikkat!
-content-blocking-warning-desc = Çerezleri ve takipçileri engellemeniz bazı web sitelerinin düzgün çalışmamasına yol açabilir. Güvendiğiniz sitelerde engellemeyi kolayca kapatabilirsiniz.
-content-blocking-learn-how = Engellemeyi kapatmayı öğrenin
 content-blocking-tracking-protection-trackers-label =
     .label = Takipçiler
     .accesskey = T
@@ -722,6 +714,37 @@ content-blocking-tracking-protection-option-always =
     .label = Her zaman
     .accesskey = H
 content-blocking-tracking-protection-option-private =
+    .label = Yalnızca gizli pencerelerde
+    .accesskey = z
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = Standart
+    .accesskey = S
+content-blocking-setting-strict =
+    .label = Sıkı
+    .accesskey = k
+content-blocking-setting-custom =
+    .label = Özel
+    .accesskey = Ö
+content-blocking-standard-description = Bilinen takipçileri yalnızca gizli penceredeyken engeller.
+content-blocking-standard-desc = Koruma ve performans dengesi sunar. Web sitelerinin düzgün çalışabilmesi için bazı takipçilere izin verir.
+content-blocking-strict-desc = { -brand-short-name } tarafından bulunan tüm takipçileri engeller. Bazı siteler düzgün çalışmayabilir.
+content-blocking-custom-desc = Nelerin engelleneceğini seçin.
+content-blocking-private-trackers = Bilinen takipçileri yalnızca gizli pencelerde engeller
+content-blocking-third-party-cookies = Üçüncü taraf takip çerezlerini engeller
+content-blocking-all-windows-trackers = Bilinen takipçileri tüm pencerelerde engeller
+content-blocking-all-third-party-cookies = Tüm üçüncü taraf çerezlerini engeller
+content-blocking-warning-title = Dikkat!
+content-blocking-warning-desc = Çerezleri ve takipçileri engellemeniz bazı web sitelerinin düzgün çalışmamasına yol açabilir. Güvendiğiniz sitelerde engellemeyi kolayca kapatabilirsiniz.
+content-blocking-learn-how = Engellemeyi kapatmayı öğrenin
+content-blocking-trackers-label =
+    .label = Takipçiler
+    .accesskey = T
+content-blocking-tracking-protection-option-all-windows =
+    .label = Tüm pencerelerde
+    .accesskey = m
+content-blocking-option-private =
     .label = Yalnızca gizli pencerelerde
     .accesskey = z
 content-blocking-tracking-protection-change-block-list = Engelleme listesini değiştir
@@ -840,6 +863,9 @@ collection-health-report-link = Daha fazla bilgi al
 collection-studies =
     .label = { -brand-short-name }, araştırmalar yükleyip çalıştırabilir
 collection-studies-link = { -brand-short-name } araştırmalarını göster
+addon-recommendations =
+    .label = { -brand-short-name }, bana özel eklenti tavsiyelerinde bulunabilir
+addon-recommendations-link = Daha fazla bilgi al
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Bu yapılandırma için veri raporlama devre dışı bırakılmış

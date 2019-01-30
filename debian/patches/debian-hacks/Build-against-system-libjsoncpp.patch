@@ -9,10 +9,10 @@ Subject: Build against system libjsoncpp
  3 files changed, 6 insertions(+), 49 deletions(-)
 
 diff --git a/config/system-headers.mozbuild b/config/system-headers.mozbuild
-index 7f17843a37bd..9103c60e0913 100644
+index b257e6f8e378..b451255919ee 100644
 --- a/config/system-headers.mozbuild
 +++ b/config/system-headers.mozbuild
-@@ -1358,3 +1358,7 @@ if CONFIG['MOZ_LIB_SECRET']:
+@@ -1367,3 +1367,7 @@ if CONFIG['MOZ_LIB_SECRET']:
          'libsecret/secret-value.h',
          'libsecret/secret-service.h',
      ]

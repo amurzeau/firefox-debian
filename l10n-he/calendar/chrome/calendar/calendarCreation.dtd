@@ -21,3 +21,24 @@
 <!ENTITY finishpage.shortdescription  "לוח שנה נוצר" >
 <!ENTITY finishpage.longdescription   "לוח השנה שלך נוצר." >
 
+<!-- Below are new strings for the revised new calendar dialog. The above strings should be
+    removed/renamed later on -->
+
+<!ENTITY sourcetabs.other.label  "אחר">
+
+<!ENTITY buttons.create.label "יצירת לוח שנה חדש">
+<!ENTITY buttons.create.accesskey "צ">
+
+<!ENTITY buttons.find.label "איתור לוחות שנה">
+<!ENTITY buttons.find.accesskey "א">
+
+<!ENTITY buttons.back.label "חזרה">
+<!ENTITY buttons.back.accesskey "ח">
+
+<!ENTITY buttons.subscribe.label "הרשמה">
+<!ENTITY buttons.subscribe.accesskey "ש">
+
+<!ENTITY calendartype.label "סוג לוח שנה:">
+<!ENTITY location.label "מיקום:">
+
+

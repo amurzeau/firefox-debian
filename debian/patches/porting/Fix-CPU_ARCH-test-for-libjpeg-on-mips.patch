@@ -7,7 +7,7 @@ Subject: Fix CPU_ARCH test for libjpeg on mips
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/media/libjpeg/moz.build b/media/libjpeg/moz.build
-index 7a9d68892d5b..452684480331 100644
+index 6815d3ec9fa0..c2c6730c9f24 100644
 --- a/media/libjpeg/moz.build
 +++ b/media/libjpeg/moz.build
 @@ -89,7 +89,7 @@ if CONFIG['LIBJPEG_TURBO_ASFLAGS']:

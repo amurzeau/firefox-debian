@@ -53,6 +53,7 @@ EXPORTS += [
 
 EXPORTS.mozilla.image += [
     'ImageMemoryReporter.h',
+    'RecyclingSourceSurface.h',
 ]
 
 UNIFIED_SOURCES += [

@@ -12,7 +12,6 @@
 <!ENTITY advanced.label "Avançat">
 <!ENTITY continue2.label "Mai…">
 <!ENTITY moreInformation.label "Mai d'informacions">
-
 <!ENTITY viewCertificate.label "Mostrar lo certificat">
 
 <!-- Specific error messages -->
@@ -107,8 +106,7 @@ was trying to connect. -->
 <!ENTITY certerror.introPara "L'autor de <span class='hostname'/> configurèt son site web incorrectament. Per protegir vòstras informacions del panatòri, &brandShortName; s'es pas connectat pas al site web.">
 
 
-
-
+<!ENTITY certerror.whatCanYouDoAboutItTitle "De qué podètz far ?">
 
 
 
@@ -123,6 +121,7 @@ was trying to connect. -->
 
 
 <!ENTITY securityOverride.exceptionButtonLabel "Apondre une excepcion…">
+<!ENTITY securityOverride.exceptionButton1Label "Acceptar lo risc e contunhar">
 
 <!ENTITY errorReporting.automatic2 "Senhalar de talas errors ajuda Mozilla a identificar e blocar de sites malvolents">
 <!ENTITY errorReporting.learnMore "Ne saber mai…">
@@ -156,6 +155,9 @@ certificat.">
 <!ENTITY blockedByPolicy.title "Pagina blocada">
 
 
+<!ENTITY clockSkewError.title "L’ora de l’ordenador es pas corrècta">
+
 <!ENTITY prefReset.longDesc "Sembla que la configuracion actuala de seguretat del ret a provocat aquesta error. Restablir los paramètres per defaut ?">
 <!ENTITY prefReset.label "Restablir los paramètres per defaut">
 
+<!ENTITY networkProtocolError.title "Error de protocòl ret">

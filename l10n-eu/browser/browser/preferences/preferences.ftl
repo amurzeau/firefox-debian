@@ -8,6 +8,8 @@ do-not-track-option-default =
     .label = Jarraipenaren babesa erabiltzean soilik
 do-not-track-option-default-content-blocking =
     .label = { -brand-short-name } antzemandako jarraipen-elementuak blokeatzeako konfiguratuta dagoenean soilik
+do-not-track-option-default-content-blocking-known =
+    .label = Bakarrik { -brand-short-name } jarraipen-elementu ezagunak blokeatzeko ezarrita dagoenean
 do-not-track-option-always =
     .label = Beti
 pref-page =
@@ -53,7 +55,7 @@ pane-sync-title = Firefox kontua
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } laguntza
-addons-button-label = Hedapenak eta gaiak
+addons-button-label = Hedapenak eta itxurak
 focus-search =
     .key = f
 close-button =
@@ -84,6 +86,9 @@ extension-controlled-homepage-override = <img data-l10n-name="icon"/> { $name } 
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = <img data-l10n-name="icon"/> { $name } hedapenak zure fitxa berriaren orria kontrolatzen du.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = Hedapen bat, <img data-l10n-name="icon"/> { $name }, ezarpen hau kontrolatzen ari da.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Hedapen batek (<img data-l10n-name="icon"/> { $name }) zure bilaketa-motor lehenetsia ezarri du.
@@ -138,6 +143,8 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Berreskuratu aurreko saioa
     .accesskey = B
+startup-restore-warn-on-quit =
+    .label = Abisatu nabigatzailetik irtetean
 disable-extension =
     .label = Desgaitu hedapena
 tabs-group-header = Fitxak
@@ -285,6 +292,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = Eguneratu automatikoki bilaketa-motorrak
     .accesskey = E
+update-pref-write-failure-title = Idazketa-akatsa
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = Ezin da hobespena gorde. Ezin da fitxategira idatzi: { $path }
 
 ## General Section - Performance
 
@@ -324,6 +335,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Bilatu testua idazten hasi bezain laster
     .accesskey = B
+browsing-cfr-recommendations =
+    .label = Gomendatu hedapenak nabigatu ahala
+    .accesskey = G
+browsing-cfr-recommendations-learn-more = Argibide gehiago
 
 ## General Section - Proxy
 
@@ -524,7 +539,6 @@ privacy-header = Nabigatzailearen pribatutasuna
 
 ## Privacy Section - Forms
 
-forms-header = Inprimakiak eta pasahitzak
 logins-header = Saio-hasierak eta pasahitzak
 forms-ask-to-save-logins =
     .label = Galdetu webguneetako saio-hasierak eta pasahitzak gordetzeko
@@ -598,6 +612,9 @@ sitedata-keep-until-expire =
     .label = Iraungitzea
 sitedata-keep-until-closed =
     .label = { -brand-short-name } itxi arte
+sitedata-delete-on-close =
+    .label = Ezabatu cookieak eta guneetako datuak { -brand-short-name } ixtean
+    .accesskey = c
 sitedata-allow-cookies-option =
     .label = Onartu cookieak eta guneetako datuak
     .accesskey = O
@@ -618,6 +635,14 @@ sitedata-block-all-third-party-option =
     .label = Hirugarrenen cookie guztiak (webguneak apur litzake)
 sitedata-block-all-option =
     .label = Cookie guztiak (webguneak apurtuko ditu)
+sitedata-option-block-trackers =
+    .label = Hirugarren jarraipen-elementuak
+sitedata-option-block-unvisited =
+    .label = Bisitatu gabeko guneetako cookieak
+sitedata-option-block-all-third-party =
+    .label = Hirugarrenen cookie guztiak (webguneak haustea eragin lezake)
+sitedata-option-block-all =
+    .label = Cookie guztiak (webguneak haustea eragingo du)
 sitedata-clear =
     .label = Garbitu datuak…
     .accesskey = G
@@ -631,6 +656,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = Edukia blokeatzeko zure ezarpenek eragotzi egiten dute cookie eta guneetako datuen ezarpenak aldatzea.
+sitedata-cookies-permissions =
+    .label = Kudeatu baimenak
+    .accesskey = b
 
 ## Privacy Section - Address Bar
 
@@ -651,6 +679,7 @@ addressbar-suggestions-settings = Aldatu bilaketa-motorren iradokizunetarako hob
 
 content-blocking-header = Edukia blokeatzea
 content-blocking-desc = Blokeatu zure nabigatzea moteldu eta webean zehar zure jarraipena egin lezaketen hirugarrenen edukia, adibidez iragarkiak edo kodea. Pertsonalizatu ezarpenak babesaren eta errendimenduaren arteko oreka zuzena aurkitzeko.
+content-blocking-description = Blokeatu webean zure jarraipena egiten duen hirugarrenen edukia. Kontrolatu zure lineako jarduera zenbateraino gordetzen eta partekatzen den webguneen artean.
 content-blocking-learn-more = Argibide gehiago
 content-blocking-restore-defaults =
     .label = Berrezarri lehenetsiak
@@ -684,6 +713,37 @@ content-blocking-tracking-protection-option-always =
 content-blocking-tracking-protection-option-private =
     .label = Leiho pribatuetan soilik
     .accesskey = h
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = Oinarrizkoa
+    .accesskey = O
+content-blocking-setting-strict =
+    .label = Zorrotza
+    .accesskey = r
+content-blocking-setting-custom =
+    .label = Pertsonalizatua
+    .accesskey = s
+content-blocking-standard-description = Jarraipen-elementu ezagunak leiho pribatuetan blokeatzen ditu soilik.
+content-blocking-standard-desc = Orekatua babeserako eta errendimendurako. Zenbait jarraipen-elementu onartzen ditu, beraz webguneak ondo ibiliko dira.
+content-blocking-strict-desc = { -brand-short-name }(e)k antzemandako jarraipen-elementu guztiak blokeatzen ditu. Zenbait webgune haustea eragin lezake.
+content-blocking-custom-desc = Aukeratu zer blokeatu.
+content-blocking-private-trackers = Jarraipen-elementu ezagunak soilik leiho pribatuetan
+content-blocking-third-party-cookies = Hirugarrenen jarraipen-cookieak
+content-blocking-all-windows-trackers = Jarraipen-elementu ezagunak leiho guztietan
+content-blocking-all-third-party-cookies = Hirugarrenen cookie guztiak
+content-blocking-warning-title = Argi!
+content-blocking-warning-desc = Cookieak eta jarraipen-elementuak blokeatzeak zenbait webgune haustea eragin lezake. Erraza da gune fidagarrientzako blokeoa desgaitzea.
+content-blocking-learn-how = Ikasi nola
+content-blocking-trackers-label =
+    .label = Jarraipen-elementuak
+    .accesskey = r
+content-blocking-tracking-protection-option-all-windows =
+    .label = Leiho guztietan
+    .accesskey = z
+content-blocking-option-private =
+    .label = Leiho pribatuetan soilik
+    .accesskey = r
 content-blocking-tracking-protection-change-block-list = Aldatu blokeo-zerrenda
 content-blocking-third-party-cookies-label =
     .label = Hirugarrenen cookieak
@@ -706,6 +766,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = Hirugarrenen cookie guztiak (webguneak apur litzake)
     .accesskey = H
+content-blocking-cookies-label =
+    .label = Cookieak
+    .accesskey = C
 
 ## Privacy Section - Tracking
 
@@ -727,6 +790,9 @@ tracking-exceptions =
 tracking-change-block-list =
     .label = Aldatu blokeo-zerrenda…
     .accesskey = A
+tracking-manage-exceptions =
+    .label = Kudeatu salbuespenak…
+    .accesskey = s
 
 ## Privacy Section - Permissions
 
@@ -794,6 +860,9 @@ collection-health-report-link = Argibide gehiago
 collection-studies =
     .label = Baimendu { -brand-short-name }(e)k esperimentuak instalatu eta exekutatzea
 collection-studies-link = Ikusi { -brand-short-name } esperimentuak
+addon-recommendations =
+    .label = Baimendu { -brand-short-name }(r)i hedapenen gomendio pertsonalizatuak egitea
+addon-recommendations-link = Argibide gehiago
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Datuen berri ematea desgaituta dago eraikitze-konfigurazio honetarako
@@ -872,3 +941,7 @@ space-alert-under-5gb-message = { -brand-short-name } leku erabilgarririk gabe g
 desktop-folder-name = Mahaigaina
 downloads-folder-name = Deskargak
 choose-download-folder-title = Aukeratu deskarga-karpeta:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Gorde fitxategiak { $service-name } zerbitzura

@@ -35,7 +35,7 @@
 <!ENTITY authMethod.accesskey "M">
 <!ENTITY leaveOnServer.label "Păstrează mesajele pe server">
 <!ENTITY leaveOnServer.accesskey "v">
-<!ENTITY headersOnly.label "Descarcă doar anteturile">
+<!ENTITY headersOnly.label "Descarcă doar antetele">
 <!ENTITY headersOnly.accesskey "D">
 <!ENTITY deleteByAgeFromServer.label "Pentru cel mult">
 <!ENTITY deleteByAgeFromServer.accesskey "n">
@@ -50,7 +50,7 @@
 <!ENTITY modelMoveToTrash.accesskey "M">
 <!ENTITY modelMarkDeleted.label "Marchează-l ca șters">
 <!ENTITY modelMarkDeleted.accesskey "M">
-<!ENTITY modelDeleteImmediately.label "Șterge-l imediat">
+<!ENTITY modelDeleteImmediately.label "Elimină-l imediat">
 <!ENTITY modelDeleteImmediately.accesskey "t">
 <!-- LOCALIZATION NOTE (expungeOnExit.label) : do not translate two of "&quot;" in below line -->
 <!ENTITY expungeOnExit.label "Golește dosarul „Primite” la ieșire">
@@ -71,7 +71,7 @@
 <!ENTITY alwaysAuthenticate.accesskey "a">
 <!ENTITY newsrcFilePath.label "Fișier newsrc:">
 <!ENTITY newsrcPicker.label "Selectează fișierul newsrc">
-<!ENTITY abbreviate.label "Arată denumirile grupurilor de știri în panoul cu dosare de poștă electronică ca:">
+<!ENTITY abbreviate.label "Arată denumirile grupurilor de discuții în panoul cu dosare de poștă electronică ca:">
 <!ENTITY abbreviateOn.label "Nume complete (ex: „netscape.public.mozilla.mail-news”)">
 <!ENTITY abbreviateOff.label "Nume abreviate (ex: „n.p.m.mail-news”)">
 <!ENTITY advancedButton.label "Avansat…">

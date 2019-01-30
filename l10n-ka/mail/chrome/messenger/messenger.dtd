@@ -34,7 +34,7 @@
 <!ENTITY newIMAccountCmd.accesskey "ს">
 <!ENTITY newFeedAccountCmd.label "არხის ანგარიში…">
 <!ENTITY newFeedAccountCmd.accesskey "რ">
-<!ENTITY newIMContactCmd.label "სასაუბროს კონტაქტი…">
+<!ENTITY newIMContactCmd.label "პირი სასაუბროდან…">
 <!ENTITY newIMContactCmd.accesskey "ს">
 <!ENTITY  newMessageCmd2.key "N">
 <!ENTITY  newMessageCmd.key "M">
@@ -385,7 +385,7 @@
 <!ENTITY copyMessageLocation.label "წერილის მისამართის ასლი">
 <!ENTITY copyMessageLocation.accesskey "მ">
 <!ENTITY copyMsgToMenu.label "ასლი">
-<!ENTITY copyMsgToMenu.accesskey "კ">
+<!ENTITY copyMsgToMenu.accesskey "ლ">
 <!ENTITY moveToFolderAgain.label "კვლავ გადატანა">
 <!ENTITY moveToFolderAgain.accesskey "დ">
 <!ENTITY moveToFolderAgainCmd.key "m">
@@ -440,9 +440,6 @@
 <!ENTITY openMessageWindowCmd.label "წერილის გახსნა">
 <!ENTITY openMessageWindowCmd.accesskey "ხ">
 <!ENTITY openMessageWindowCmd.key "o">
-<!ENTITY openConversationCmd.label "სასაუბროში გახსნა">
-<!ENTITY openConversationCmd.accesskey "ს">
-<!ENTITY openConversationCmd.key "o">
 <!ENTITY openInConversationCmd.label "სასაუბროში გახსნა">
 <!ENTITY openInConversationCmd.accesskey "ს">
 <!ENTITY openInConversationCmd.key "o">
@@ -539,7 +536,7 @@
 
 <!-- Mail Toolbar -->
 <!ENTITY getMsgButton1.label "ფოსტის მიღება">
-<!ENTITY newMsgButton.label "შედგენა">
+<!ENTITY newMsgButton.label "მიწერა">
 <!ENTITY replyButton.label "პასუხი">
 <!ENTITY replyAllButton.label "პასუხი ყველას">
 <!ENTITY replyListButton.label "პასუხი ჯგუფს">
@@ -631,7 +628,7 @@
 
 <!-- AppMenu Popup -->
 <!ENTITY appmenuNewMsgCmd.label "ახალი წერილი">
-<!ENTITY appmenuNewContactCmd.label "კონტაქტი წიგნაკიდან…">
+<!ENTITY appmenuNewContactCmd.label "პირი წიგნაკიდან…">
 <!ENTITY appmenuEditMenu.label "ჩასწორება">
 <!ENTITY appmenuToolbarLayout.label "ხელსაწყოთა ზოლის განლაგება…">
 <!ENTITY appmenuSelectThread.label "მიმოწერის შერჩევა">
@@ -795,6 +792,8 @@
 <!ENTITY contextMoveMsgMenu.accesskey "ტ">
 <!ENTITY contextMoveCopyMsgRecentMenu.label "ბოლო">
 <!ENTITY contextMoveCopyMsgRecentMenu.accesskey "ბ">
+<!ENTITY contextMoveCopyMsgFavoritesMenu.label "რჩეულები">
+<!ENTITY contextMoveCopyMsgFavoritesMenu.accesskey "ჩ">
 <!ENTITY contextCopyMsgMenu.label "ასლი –">
 <!ENTITY contextCopyMsgMenu.accesskey "ლ">
 <!ENTITY contextKillThreadMenu.label "მიმოწერის უგულებელყოფა">
@@ -905,9 +904,9 @@
 <!ENTITY AddToAddressBook.accesskey "წ">
 <!ENTITY AddDirectlyToAddressBook.label "დამატება წიგნაკში">
 <!ENTITY AddDirectlyToAddressBook.accesskey "წ">
-<!ENTITY EditContact1.label "კონტაქტის ჩასწორება">
+<!ENTITY EditContact1.label "პირის მონაცემების ჩასწორება">
 <!ENTITY EditContact1.accesskey "ჩ">
-<!ENTITY ViewContact.label "კონტაქტის ჩვენება">
+<!ENTITY ViewContact.label "პირის ჩვენება">
 <!ENTITY ViewContact.accesskey "ვ">
 <!ENTITY SubscribeToNewsgroup.label "სიახლეთა ჯგუფების გამოწერა">
 <!ENTITY SubscribeToNewsgroup.accesskey "ს">

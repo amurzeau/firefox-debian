@@ -8,7 +8,7 @@ Closes: #907574
  1 file changed, 3 insertions(+), 4 deletions(-)
 
 diff --git a/widget/gtk/nsAppShell.cpp b/widget/gtk/nsAppShell.cpp
-index bbec50cebfb4..4b21db1a2525 100644
+index 85f5a477facb..f4f71fbcba55 100644
 --- a/widget/gtk/nsAppShell.cpp
 +++ b/widget/gtk/nsAppShell.cpp
 @@ -24,6 +24,7 @@
@@ -19,16 +19,16 @@ index bbec50cebfb4..4b21db1a2525 100644
  #include "ScreenHelperGTK.h"
  #include "HeadlessScreenHelper.h"
  #include "mozilla/widget/ScreenManager.h"
-@@ -188,10 +189,8 @@ nsAppShell::Init()
-         // option when program uses gdk_set_program_class().
-         //
-         // See https://bugzilla.gnome.org/show_bug.cgi?id=747634
--        nsAutoString brandName;
--        mozilla::widget::WidgetUtils::GetBrandShortName(brandName);
--        if (!brandName.IsEmpty()) {
--            gdk_set_program_class(NS_ConvertUTF16toUTF8(brandName).get());
-+        if (gAppData) {
-+            gdk_set_program_class(gAppData->remotingName);
-         }
+@@ -169,10 +170,8 @@ nsresult nsAppShell::Init() {
+     // option when program uses gdk_set_program_class().
+     //
+     // See https://bugzilla.gnome.org/show_bug.cgi?id=747634
+-    nsAutoString brandName;
+-    mozilla::widget::WidgetUtils::GetBrandShortName(brandName);
+-    if (!brandName.IsEmpty()) {
+-      gdk_set_program_class(NS_ConvertUTF16toUTF8(brandName).get());
++    if (gAppData) {
++      gdk_set_program_class(gAppData->remotingName);
      }
+   }
  

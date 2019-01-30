@@ -8,6 +8,8 @@ do-not-track-option-default =
     .label = Vain käytettäessä seurannan suojausta
 do-not-track-option-default-content-blocking =
     .label = Vain, kun { -brand-short-name } on asetettu estämään havaitut seuraimet
+do-not-track-option-default-content-blocking-known =
+    .label = Vain, kun { -brand-short-name } on asetettu estämään tunnetut seuraimet
 do-not-track-option-always =
     .label = Aina
 pref-page =
@@ -141,6 +143,8 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Palauta edellinen istunto
     .accesskey = P
+startup-restore-warn-on-quit =
+    .label = Varoita, kun selainta ollaan sulkemassa
 disable-extension =
     .label = Poista laajennus käytöstä
 tabs-group-header = Välilehdet
@@ -152,9 +156,6 @@ open-new-link-as-tabs =
     .accesskey = A
 warn-on-close-multiple-tabs =
     .label = Varoita, kun olen sulkemassa useita välilehtiä
-    .accesskey = V
-warn-on-quit-close-multiple-tabs =
-    .label = Varoita, kun olen sulkemassa ohjelman tai useita välilehtiä
     .accesskey = V
 warn-on-open-many-tabs =
     .label = Varoita, kun useiden välilehtien avaaminen voi hidastaa { -brand-short-name }ia
@@ -538,7 +539,6 @@ privacy-header = Selaimen tietosuoja
 
 ## Privacy Section - Forms
 
-forms-header = Lomakkeet ja salasanat
 logins-header = Käyttäjätunnukset ja salasanat
 forms-ask-to-save-logins =
     .label = Ehdota sivustojen käyttäjätunnusten ja salasanojen tallentamista
@@ -635,6 +635,14 @@ sitedata-block-all-third-party-option =
     .label = Kaikki 3. osapuolen evästeet (voi aiheuttaa sivustovirheitä)
 sitedata-block-all-option =
     .label = Kaikki evästeet (aiheuttaa sivustovirheitä)
+sitedata-option-block-trackers =
+    .label = Kolmannen osapuolen seuraimet
+sitedata-option-block-unvisited =
+    .label = Evästeet vierailemattomilta sivustoilta
+sitedata-option-block-all-third-party =
+    .label = Kaikki 3. osapuolen evästeet (voi aiheuttaa sivustovirheitä)
+sitedata-option-block-all =
+    .label = Kaikki evästeet (aiheuttaa sivustovirheitä)
 sitedata-clear =
     .label = Tyhjennä tiedot…
     .accesskey = y
@@ -648,6 +656,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = Sisällön eston asetukset estävät muutokset eväste- ja sivustotietoasetuksiin.
+sitedata-cookies-permissions =
+    .label = Hallitse oikeuksia…
+    .accesskey = o
 
 ## Privacy Section - Address Bar
 
@@ -668,6 +679,7 @@ addressbar-suggestions-settings = Muuta hakukoneiden ehdotusten asetuksia
 
 content-blocking-header = Sisällön esto
 content-blocking-desc = Voit estää kolmannen osapuolen sisältöä, kuten mainoksia tai koodia, joka hidastaa selaamistasi ja seuraa sinua ympäri verkkoa. Voit säätää asetuksia saavuttaaksesi parhaan suojan ja suorituskyvyn tasapainon.
+content-blocking-description = Voit estää kolmannen osapuolen sisältöä, joka seuraa sinua ympäri verkkoa. Voit myös hallita, kuinka paljon tekemisiäsi verkossa tallennetaan ja jaetaan sivustojen välillä.
 content-blocking-learn-more = Lue lisää
 content-blocking-restore-defaults =
     .label = Palauta oletukset
@@ -701,6 +713,37 @@ content-blocking-tracking-protection-option-always =
 content-blocking-tracking-protection-option-private =
     .label = Vain yksityisissä ikkunoissa
     .accesskey = y
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = Tavallinen
+    .accesskey = T
+content-blocking-setting-strict =
+    .label = Tiukka
+    .accesskey = u
+content-blocking-setting-custom =
+    .label = Oma
+    .accesskey = O
+content-blocking-standard-description = Estää tunnetut seuraimet vain yksityisissä ikkunoissa.
+content-blocking-standard-desc = Tasapuolinen suojauksen ja suorituskyvyn välillä. Sallii jotkin seuraimet, jotta verkkosivustot toimivat.
+content-blocking-strict-desc = Estää kaikki { -brand-short-name }in havaitsemat seuraimet. Voi aiheuttaa joidenkin sivustojen toimimattomuutta.
+content-blocking-custom-desc = Valitse, mitä estetään.
+content-blocking-private-trackers = Tunnetut seuraimet vain yksityisissä ikkunoissa
+content-blocking-third-party-cookies = Kolmannen osapuolen seurainevästeet
+content-blocking-all-windows-trackers = Tunnetut seuraimet kaikissa ikkunoissa
+content-blocking-all-third-party-cookies = Kaikki kolmannen osapuolen evästeet
+content-blocking-warning-title = Huomio!
+content-blocking-warning-desc = Evästeiden ja seuraimien estäminen voi aiheuttaa joidenkin sivustojen toimimattomuutta. Esto on helppo poistaa sivustoilta, joihin luotat.
+content-blocking-learn-how = Lue miten
+content-blocking-trackers-label =
+    .label = Seuraimet
+    .accesskey = S
+content-blocking-tracking-protection-option-all-windows =
+    .label = Kaikissa ikkunoissa
+    .accesskey = K
+content-blocking-option-private =
+    .label = Vain yksityisissä ikkunoissa
+    .accesskey = V
 content-blocking-tracking-protection-change-block-list = Muuta estolistaa
 content-blocking-third-party-cookies-label =
     .label = Kolmannen osapuolen evästeet
@@ -723,6 +766,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = Kaikki kolmannen osapuolen evästeet (voi aiheuttaa sivustojen toimimattomuutta)
     .accesskey = K
+content-blocking-cookies-label =
+    .label = Evästeet
+    .accesskey = E
 
 ## Privacy Section - Tracking
 
@@ -744,6 +790,9 @@ tracking-exceptions =
 tracking-change-block-list =
     .label = Muuta estolistaa…
     .accesskey = M
+tracking-manage-exceptions =
+    .label = Hallitse poikkeuksia…
+    .accesskey = p
 
 ## Privacy Section - Permissions
 
@@ -811,6 +860,9 @@ collection-health-report-link = Lue lisää
 collection-studies =
     .label = Salli, että { -brand-short-name } asentaa ja suorittaa tutkimuksia
 collection-studies-link = Näytä { -brand-short-name }-tutkimukset
+addon-recommendations =
+    .label = Salli { -brand-short-name }in tehdä henkilökohtaisia laajennussuosituksia
+addon-recommendations-link = Lue lisää
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Tietojen kerääminen ei ole käytössä tässä koostamiskokoonpanossa

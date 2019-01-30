@@ -8,6 +8,8 @@ do-not-track-option-default =
     .label = Solmente durante que tu usa le protection contra le traciamento
 do-not-track-option-default-content-blocking =
     .label = Solo quando { -brand-short-name } es definite pro Blocar le traciatores disvelate
+do-not-track-option-default-content-blocking-known =
+    .label = Solmente quando { -brand-short-name } es adjustate pro blocar traciatores cognoscite.
 do-not-track-option-always =
     .label = Sempre
 pref-page =
@@ -53,7 +55,7 @@ pane-sync-title = Conto Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = Assistentia de { -brand-short-name }
-addons-button-label = Extensiones & themas
+addons-button-label = Extensiones e themas
 focus-search =
     .key = f
 close-button =
@@ -118,7 +120,7 @@ search-results-empty-message =
         [windows] Pardono! Il ha nulle resultato in le optiones pro “<span data-l10n-name="query"></span>”.
        *[other] Pardono! Il ha nulle resultato in le preferentias pro “<span data-l10n-name="query"></span>”.
     }
-search-results-help-link = Besonia tu de adjuta? Visita <a data-l10n-name="url">Auxilio de { -brand-short-name }</a>
+search-results-help-link = Besonia tu de adjuta? Visita <a data-l10n-name="url">Assistentia de { -brand-short-name }</a>
 
 ## General Section
 
@@ -141,6 +143,8 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Restaurar previe session
     .accesskey = p
+startup-restore-warn-on-quit =
+    .label = Adverti quando tu quita le navigator
 disable-extension =
     .label = Inactivar le extension
 tabs-group-header = Schedas
@@ -153,9 +157,6 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = Advertir te quando tu claude multiple schedas
     .accesskey = m
-warn-on-quit-close-multiple-tabs =
-    .label = Advertir te quando tu claude plure schedas
-    .accesskey = p
 warn-on-open-many-tabs =
     .label = Advertir te quando tu aperi multiple schedas que illo pote facer { -brand-short-name } devenir lente
     .accesskey = d
@@ -538,8 +539,7 @@ privacy-header = Confidentialitate del navigator
 
 ## Privacy Section - Forms
 
-forms-header = Formularios e contrasignos
-logins-header = Authenticationes & contrasignos
+logins-header = Authenticationes e contrasignos
 forms-ask-to-save-logins =
     .label = Demanda de salvar authenticationes e contrasignos de sito
     .accesskey = r
@@ -595,7 +595,7 @@ history-clear-on-close-settings =
     .accesskey = t
 history-clear-button =
     .label = Vacuar le chronologia…
-    .accesskey = s
+    .accesskey = V
 
 ## Privacy Section - Site Data
 
@@ -635,6 +635,14 @@ sitedata-block-all-third-party-option =
     .label = Tote le cookies de tertie-partes (pote causar que sitos web collabe)
 sitedata-block-all-option =
     .label = Tote le cookies (causara que sitos web collabe)
+sitedata-option-block-trackers =
+    .label = Traciatores de tertie partes
+sitedata-option-block-unvisited =
+    .label = Cookies de sitos web non visitate
+sitedata-option-block-all-third-party =
+    .label = Tote le cookies de terties (pote impedir alcun sitos web de functionar)
+sitedata-option-block-all =
+    .label = Tote le cookies (impedira alcun sitos web de functionar)
 sitedata-clear =
     .label = Clarar le datos...
     .accesskey = l
@@ -647,7 +655,7 @@ sitedata-cookies-exceptions =
 # This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
-sitedata-warning-your-settings-prevent-changes = Tu parametros de Blocage de contentos impedi cambiamentos al configurationes del cookies e al datos del sito.
+sitedata-warning-your-settings-prevent-changes = Tu parametros de blocage de contentos impedi cambiamentos al configurationes del cookies e al datos del sito.
 sitedata-cookies-permissions =
     .label = Gerer le permissiones…
     .accesskey = p
@@ -671,6 +679,7 @@ addressbar-suggestions-settings = Cambiar le preferentias pro le suggestiones de
 
 content-blocking-header = Blocage de contento
 content-blocking-desc = Blocar contento de terties, como annuncios o codice, que pote lentar tu navigation e traciar tu activitate per le web. Personalisa tu parametros pro le melior equilibrio de protection e rendimento.
+content-blocking-description = Blocca le contento de terties que te tracia per le web. Controlla quanto de tu activitate in linea es immagazinate e condividite inter le sitos web.
 content-blocking-learn-more = Saper plus
 content-blocking-restore-defaults =
     .label = Restaurar predefinitiones
@@ -691,22 +700,6 @@ content-blocking-fastblock-slow-loading-trackers-label =
     .label = Traciatores lente
     .accesskey = S
 content-blocking-fastblock-new-description = Blocar justo le traciatores que impedi le paginas de ser cargate rapidemente.
-content-blocking-setting-standard =
-    .label = Standard
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = Stricte
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = Personalisate
-    .accesskey = P
-content-blocking-custom-desc = Elige que blocar.
-content-blocking-private-trackers = Traciatores note solo in fenestras private
-content-blocking-third-party-cookies = Cookies traciator de tertie partes
-content-blocking-all-windows-trackers = Traciatores note in tote le fenestras
-content-blocking-all-third-party-cookies = Tote le cookies de tertie partes
-content-blocking-warning-title = Attention!
-content-blocking-learn-how = Apprender como
 content-blocking-tracking-protection-trackers-label =
     .label = Traciatores
     .accesskey = T
@@ -719,6 +712,37 @@ content-blocking-tracking-protection-option-always =
     .accesskey = S
 content-blocking-tracking-protection-option-private =
     .label = Solmente in fenestras private
+    .accesskey = p
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = Standard
+    .accesskey = d
+content-blocking-setting-strict =
+    .label = Stricte
+    .accesskey = r
+content-blocking-setting-custom =
+    .label = Personalisate
+    .accesskey = P
+content-blocking-standard-description = Le traciatores cognoscite es blocate solmente in le fenestras private.
+content-blocking-standard-desc = Equilibrio perfecte inter protection e rendimento. Permitte alcun traciatores a fin que le sitos web functiona correctemente.
+content-blocking-strict-desc = Bloca tote le traciatores que { -brand-short-name } detecta. Pote impedir alcun sitos de functionar.
+content-blocking-custom-desc = Elige que blocar.
+content-blocking-private-trackers = Traciatores note solo in fenestras private
+content-blocking-third-party-cookies = Cookies traciator de tertie partes
+content-blocking-all-windows-trackers = Traciatores note in tote le fenestras
+content-blocking-all-third-party-cookies = Tote le cookies de tertie partes
+content-blocking-warning-title = Attention!
+content-blocking-warning-desc = Blocar cookies e traciatores pote impedir le functionamento de alcun sitos. Il es facile inactiva le blocar de sitos que tu fide.
+content-blocking-learn-how = Apprender como
+content-blocking-trackers-label =
+    .label = Traciatores
+    .accesskey = T
+content-blocking-tracking-protection-option-all-windows =
+    .label = In tote le fenestras
+    .accesskey = t
+content-blocking-option-private =
+    .label = Solo in fenestras private
     .accesskey = p
 content-blocking-tracking-protection-change-block-list = Cambiar le lista de blocage
 content-blocking-third-party-cookies-label =
@@ -836,6 +860,9 @@ collection-health-report-link = Saper plus
 collection-studies =
     .label = Autorisar { -brand-short-name } a installar e a lancear studios
 collection-studies-link = Consultar le studios de { -brand-short-name }
+addon-recommendations =
+    .label = Permitte { -brand-short-name } de facer recommendationes personalisate pro le extensiones
+addon-recommendations-link = Saper plus
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Le reporto de datos es inactive pro iste configuration de compilation

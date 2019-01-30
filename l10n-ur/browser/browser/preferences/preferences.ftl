@@ -110,12 +110,17 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = پچھلا سیشن بحال کریں
     .accesskey = s
+startup-restore-warn-on-quit =
+    .label = برائوزر چھوڑتے وقت تنبیہ کریں
 disable-extension =
     .label = توسیعات نا اہل بنائیں
 tabs-group-header = ٹیبس
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab ٹہبس کے زرِیعے دورہ حالیہ اسرتعمال شدپ ترغیب میں
     .accesskey = T
+open-new-link-as-tabs =
+    .label = ربط ونڈوز کے بجائے ٹیبس میں کھولیں
+    .accesskey = w
 warn-on-close-multiple-tabs =
     .label = متعدد ٹیب ایک ساتھ بند کرنے پر مجھے تنبیح کیجیئے
     .accesskey = m
@@ -296,6 +301,8 @@ home-restore-defaults =
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
     .label = Firefox کا ابتائی صفحہ
+home-mode-choice-custom =
+    .label = مخصوص …URLs
 home-mode-choice-blank =
     .label = خالی صفحہ
 home-homepage-custom-url =
@@ -449,7 +456,6 @@ privacy-header = براؤزر رازداری
 
 ## Privacy Section - Forms
 
-forms-header = فارم اور پاس ورڈ
 logins-header = لاگ ان & پاس ورڈ
 forms-exceptions =
     .label = استثنیات…
@@ -520,6 +526,8 @@ sitedata-block-trackers-option =
     .label = تیسری تنظیم کے ٹریکرس
 sitedata-block-all-third-party-option =
     .label = سارے تیسری تنظیم کے کوکیز(ویب سائٹس توڑنے کا سبب بن سکتا ہے)
+sitedata-option-block-trackers =
+    .label = تیسری تنظیم کے ٹریکر
 sitedata-clear =
     .label = کوائف… خالی کریں
     .accesskey = l
@@ -543,6 +551,7 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = ٹیب کھولیے
     .accesskey = O
+addressbar-suggestions-settings = تلاش کے انجن کی تجاویز کے لئے ترجیحات کو بدلیں
 
 ## Privacy Section - Content Blocking
 
@@ -578,6 +587,30 @@ content-blocking-tracking-protection-option-always =
 content-blocking-tracking-protection-option-private =
     .label = صرف نجی ونڈوں میں
     .accesskey = p
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = معیاری
+    .accesskey = d
+content-blocking-setting-strict =
+    .label = سخت
+    .accesskey = r
+content-blocking-setting-custom =
+    .label = مخصوص
+    .accesskey = C
+content-blocking-custom-desc = چنیں کیا بلاک کرنا ہے
+content-blocking-all-third-party-cookies = سارے تیسری تنظیم کے کوکیز
+content-blocking-learn-how = جانیں کہ کس طرح
+content-blocking-trackers-label =
+    .label = ٹریکرس
+    .accesskey = T
+content-blocking-tracking-protection-option-all-windows =
+    .label = تمام ونڈو میں
+    .accesskey = A
+content-blocking-option-private =
+    .label = صرف نجی ونڈوں میں
+    .accesskey = p
+content-blocking-tracking-protection-change-block-list = بلاک فہرست تبدیل کریں
 content-blocking-third-party-cookies-label =
     .label = تیسری تنظیم کے کوکیز
     .accesskey = C
@@ -593,6 +626,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = سارے تیسری تنظیم کے کوکیز(ویب سائٹس توڑنے کا سبب بن سکتا ہے)
     .accesskey = A
+content-blocking-cookies-label =
+    .label = کوکیز
+    .accesskey = C
 
 ## Privacy Section - Tracking
 
@@ -661,6 +697,7 @@ permissions-a11y-privacy-link = مزید سیکھیں
 
 collection-privacy-notice = رازداری کا نوٹس
 collection-health-report-link = مزید سیکھیں
+addon-recommendations-link = مزید سیکھیں
 collection-browser-errors-link = مزید سیکھیں
 collection-backlogged-crash-reports-link = مزید سیکھیں
 

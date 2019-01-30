@@ -2,12 +2,14 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-do-not-track-description = Ad yazen tamuli “ur sfuɣul ara” ɣer ismal web akken ad gzun d akken ur tebɣiḍ ara asfuɣel
+do-not-track-description = Ad yazen asɣal “ur sfuɣul ara” ɣer ismal web akken ad gzun belli ur tebɣiḍ ara asfuɣel
 do-not-track-learn-more = Issin ugar
 do-not-track-option-default =
-    .label = Ala s useqdec n ummesten mgal aḍfaṛ
+    .label = Ala s useqdec n ummesten mgal aḍfar
 do-not-track-option-default-content-blocking =
     .label = Kan ticki { -brand-short-name } yettusbadu ɣer sewḥel Ineḍfaṛen Yettwafen
+do-not-track-option-default-content-blocking-known =
+    .label = Kan ticki { -brand-short-name } yettusbadu ɣer sewḥel ineḍfaṛen
 do-not-track-option-always =
     .label = Yal tikelt
 pref-page =
@@ -141,11 +143,13 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Err-d tiɣimit izrin
     .accesskey = s
+startup-restore-warn-on-quit =
+    .label = Lɣu ticki tettefɣeḍ seg iminig
 disable-extension =
     .label = Sens aseɣzif
 tabs-group-header = Iccaren
 ctrl-tab-recently-used-order =
-    .label = Ctrl+Tab yessezray-d iccaren n umizzwer yettwasqedcen melmi kan
+    .label = Ctrl+Tab yessezray-d accaren n umizzwer yettwasqedcen melmi kan
     .accesskey = T
 open-new-link-as-tabs =
     .label = Lddi iseɣwan deg iccaren deg wadig n ifuyla
@@ -153,9 +157,6 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = Lɣu ticki medlen deqs n yiccaren
     .accesskey = L
-warn-on-quit-close-multiple-tabs =
-    .label = Lqu-yi-d ticki ɛerḍeɣ ad fakeɣ neɣ ad medleɣ ddeqs n yiccaren.
-    .accesskey = m
 warn-on-open-many-tabs =
     .label = Lɣu-yid ticki ilukkez { -brand-short-name } ma ldin aṭas n yiccaren
     .accesskey = L
@@ -244,7 +245,7 @@ download-choose-folder =
     .label =
         { PLATFORM() ->
             [macos] Fren…
-           *[other] Ḍum…
+           *[other] Snirem…
         }
     .accesskey =
         { PLATFORM() ->
@@ -252,10 +253,10 @@ download-choose-folder =
            *[other] u
         }
 download-always-ask-where =
-    .label = Suter yal tikelt anida ad ttwakelsen ifuyla
+    .label = Suter yal tikelt anida ara ttwakelsen ifuyla
     .accesskey = S
 applications-header = Isnasen
-applications-description = Fren amek ad yeddu { -brand-short-name } akked ifuyla i d-saliḍ akked isnasen i tseqdaceḍ m'ara tettinigeḍ.
+applications-description = Fren amek ara yeddu { -brand-short-name } akked ifuyla i d-tessalayeḍ akked isnasen i tesseqdaceḍ mi ara tettinigeḍ.
 applications-filter =
     .placeholder = Nadi tawsit n ifuyla neɣ isnasen
 applications-type-column =
@@ -283,8 +284,8 @@ update-application-check-choose =
     .label = Ad inadi ileqqman maca ad k-yeǧǧ ad tferneḍ asebded
     .accesskey = C
 update-application-manual =
-    .label = Werǧin ad ttnadiḍ ileqqman ( mačči d ayen ilhan)
-    .accesskey = N
+    .label = Werǧin ad tnadiḍ ileqman (mačči d ayen ilhan)
+    .accesskey = W
 update-application-use-service =
     .label = Seqdec ameẓlu n ugilal i usebded n ileqman
     .accesskey = b
@@ -300,9 +301,9 @@ update-pref-write-failure-message = UR yezmir ara ad yessekles ismenyifen.Ur yez
 
 performance-title = Tamellit
 performance-use-recommended-settings-checkbox =
-    .label = Seqdec iɣewwaṛen n tmellit ihulen
+    .label = Seqdec iɣewwaren n tmellit ihulen
     .accesskey = s
-performance-use-recommended-settings-desc = Iɣewwaṛen-a wulmen i twila n warrum n uselkim-inek d unagraw n wammud.
+performance-use-recommended-settings-desc = Iɣewwaren-a wulmen i twila n warrum n uselkim-inek d unagraw n wammud.
 performance-settings-learn-more = Issin ugar
 performance-allow-hw-accel =
     .label = Seqdec tasɣiwelt tudlift n warrum ma tella
@@ -437,9 +438,9 @@ containers-add-button =
     .label = Rnu amagbar-nniḍen
     .accesskey = R
 containers-preferences-button =
-    .label = Timsisɣal
+    .label = Ismenyifen
 containers-remove-button =
-    .label = kkes
+    .label = Kkes
 
 ## Sync Section - Signed out
 
@@ -538,7 +539,6 @@ privacy-header = Tabaḍnit n iminig
 
 ## Privacy Section - Forms
 
-forms-header = Tiferka & akked awalen uffiren
 logins-header = Inekcam & wawalen uffiren
 forms-ask-to-save-logins =
     .label = Suter akken ad teskelseḍ inekcam d wawalen uffiren i yismal web
@@ -591,7 +591,7 @@ history-clear-on-close-option =
     .label = Sfeḍ amazray ticki tmedleḍ { -brand-short-name }
     .accesskey = r
 history-clear-on-close-settings =
-    .label = Iγewwaṛen…
+    .label = Iɣewwaṛen…
     .accesskey = I
 history-clear-button =
     .label = Sfeḍ amazray…
@@ -609,7 +609,7 @@ sitedata-learn-more = Lmed ugar
 sitedata-keep-until = Ḥrez arma
     .accesskey = l
 sitedata-keep-until-expire =
-    .label = Ad mten
+    .label = Ad mmten
 sitedata-keep-until-closed =
     .label = Amdal n { -brand-short-name }
 sitedata-delete-on-close =
@@ -635,6 +635,14 @@ sitedata-block-all-third-party-option =
     .label = Akk inagan n tuqqna wis kraḍ (zemren ad rẓen isaml web)
 sitedata-block-all-option =
     .label = Akk inagan n tuqqna (zemren ad rẓen ismal web)
+sitedata-option-block-trackers =
+    .label = Ineḍfaren n wis kraḍ
+sitedata-option-block-unvisited =
+    .label = Inagan n tuqqna seg ismal web ur yettwarzan ara
+sitedata-option-block-all-third-party =
+    .label = Akk inagan n tuqqna n wis kraḍ (zemren ad rẓen isaml web)
+sitedata-option-block-all =
+    .label = Akk inagan n tuqqna (ad rẓen isaml web)
 sitedata-clear =
     .label = Sfeḍ isefka…
     .accesskey = l
@@ -692,25 +700,6 @@ content-blocking-fastblock-slow-loading-trackers-label =
     .label = Ineḍfaren isaẓẓayen asali
     .accesskey = s
 content-blocking-fastblock-new-description = Sewḥel kan ineḍfaren isaẓẓayen asali n isebtar.
-content-blocking-setting-standard =
-    .label = Tizeɣt
-    .accesskey = z
-content-blocking-setting-strict =
-    .label = Uḥris
-    .accesskey = ḥ
-content-blocking-setting-custom =
-    .label = Udmawan
-    .accesskey = d
-content-blocking-standard-desc = Iseggem i ummesten akked tmellit. Isirig kra n ineḍfaren akken ismal web ad ddun akken iwata.
-content-blocking-strict-desc = Isewḥal akk ineḍfaren id-yettaf { -brand-short-name }. Kra n yesmal zemren ad ḥebsen.
-content-blocking-custom-desc = Fren ayen ara tesweḥleḍ.
-content-blocking-private-trackers = Ineḍfaren yettwasnen deg usfaylu uslig kan
-content-blocking-third-party-cookies = Inagan n tuqna n uḍfar n tɣawsiwin tis kraḍ
-content-blocking-all-windows-trackers = Ineḍfaren yettwasnen deg akk isfuyla
-content-blocking-all-third-party-cookies = Akk inagan n tuqqna n wis kraḍ
-content-blocking-warning-title = Aqeṛṛu d afella!
-content-blocking-warning-desc = Asewḥel n inagan n tuqqna akked ineḍfaren yezmer ad iseḥbes kra n yesmal web. Yeshel ad tekkseḍ asewḥel i yesmal tettamneḍ.
-content-blocking-learn-how = Issin amek
 content-blocking-tracking-protection-trackers-label =
     .label = Ineḍfaren
     .accesskey = I
@@ -724,6 +713,37 @@ content-blocking-tracking-protection-option-always =
 content-blocking-tracking-protection-option-private =
     .label = Deg usfaylu uslig kan
     .accesskey = p
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = Tizeɣt
+    .accesskey = z
+content-blocking-setting-strict =
+    .label = Uḥris
+    .accesskey = ḥ
+content-blocking-setting-custom =
+    .label = Udmawan
+    .accesskey = d
+content-blocking-standard-description = Issewḥal kan ineḍfaren yettwasnen deg isfuyla usligen.
+content-blocking-standard-desc = Iseggem i ummesten akked tmellit. Isirig kra n ineḍfaren akken ismal web ad ddun akken iwata.
+content-blocking-strict-desc = Isewḥal akk ineḍfaren id-yettaf { -brand-short-name }. Kra n yesmal zemren ad ḥebsen.
+content-blocking-custom-desc = Fren ayen ara tesweḥleḍ.
+content-blocking-private-trackers = Ineḍfaren yettwasnen deg usfaylu uslig kan
+content-blocking-third-party-cookies = Inagan n tuqna n uḍfar n tɣawsiwin tis kraḍ
+content-blocking-all-windows-trackers = Ineḍfaren yettwasnen deg akk isfuyla
+content-blocking-all-third-party-cookies = Akk inagan n tuqqna n wis kraḍ
+content-blocking-warning-title = Aqeṛṛu d afella!
+content-blocking-warning-desc = Asewḥel n inagan n tuqqna akked ineḍfaren yezmer ad iseḥbes kra n yesmal web. Yeshel ad tekkseḍ asewḥel i yesmal tettamneḍ.
+content-blocking-learn-how = Issin amek
+content-blocking-trackers-label =
+    .label = Ineḍfaren
+    .accesskey = I
+content-blocking-tracking-protection-option-all-windows =
+    .label = Deg akk isufyla
+    .accesskey = a
+content-blocking-option-private =
+    .label = Deg isfuyla usligen kan
+    .accesskey = u
 content-blocking-tracking-protection-change-block-list = Snifel tabdart n usewḥel
 content-blocking-third-party-cookies-label =
     .label = Inagan n tuqna n tɣawsiwin tis kraḍ
@@ -759,7 +779,7 @@ tracking-mode-always =
     .label = Yal ass
     .accesskey = Y
 tracking-mode-private =
-    .label = Γef usfaylu uslig kan
+    .label = Ɣef usfaylu uslig kan
     .accesskey = l
 tracking-mode-never =
     .label = Weṛǧin
@@ -840,6 +860,9 @@ collection-health-report-link = Lmed ugar
 collection-studies =
     .label = Sireg { -brand-short-name } ad yessebded sakin ad isenker tizrawin
 collection-studies-link = Wali tizrawin n { -brand-short-name }
+addon-recommendations =
+    .label = Sireg { -brand-short-name } ad yeg iwellihen n usiɣzef udmawan
+addon-recommendations-link = Issin ugar
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Aneqqis n isefka ur irmid ara i uswel-a n usefsu

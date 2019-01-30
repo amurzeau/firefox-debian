@@ -3,19 +3,24 @@ Date: Sun, 2 Apr 2017 06:33:19 +0900
 Subject: Use the Mozilla Location Service key when the Google Key is not there
 
 ---
- browser/app/profile/firefox.js | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ browser/app/profile/firefox.js | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
 
 diff --git a/browser/app/profile/firefox.js b/browser/app/profile/firefox.js
-index fd3fd0481cb0..293a3c96b690 100644
+index 4cd74cb1a5cd..03beb0c59cbf 100644
 --- a/browser/app/profile/firefox.js
 +++ b/browser/app/profile/firefox.js
-@@ -1343,7 +1343,7 @@ pref("dom.debug.propagate_gesture_events_through_content", false);
- // Geolocation preferences for the RELEASE and "later" Beta channels.
- // Some of these prefs are specified even though they are redundant; they are
- // here for clarity and end-user experiments.
--#ifndef EARLY_BETA_OR_EARLIER
-+#if !defined(EARLY_BETA_OR_EARLIER) && defined(GOOGLE_API_KEY)
+@@ -1344,9 +1344,12 @@ pref("dom.debug.propagate_gesture_events_through_content", false);
+ 
+ // All the Geolocation preferences are here.
+ //
++#if defined(GOOGLE_API_KEY)
  pref("geo.wifi.uri", "https://www.googleapis.com/geolocation/v1/geolocate?key=%GOOGLE_API_KEY%");
++#else
+ // MLS URL:
+-// pref("geo.wifi.uri", "https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%");
++pref("geo.wifi.uri", "https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%");
++#endif
  
  #ifdef XP_MACOSX
+ pref("geo.provider.use_corelocation", true);

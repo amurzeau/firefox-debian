@@ -8,6 +8,8 @@ do-not-track-option-default =
     .label = Vetëm kur përdoret Mbrojtje Nga Gjurmimet
 do-not-track-option-default-content-blocking =
     .label = Vetëm kur { -brand-short-name }-i është rregulluar të bllokojë Gjurmues të Pikasur
+do-not-track-option-default-content-blocking-known =
+    .label = Vetëm kur { -brand-short-name } është rregulluar të bllokojë gjurmues të njohur
 do-not-track-option-always =
     .label = Përherë
 pref-page =
@@ -141,6 +143,8 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Rikthe sesionin e mëparshëm
     .accesskey = R
+startup-restore-warn-on-quit =
+    .label = T’ju sinjalizojë kur dilni e mbyllni shfletuesin
 disable-extension =
     .label = Çaktivizoje Zgjerimin
 tabs-group-header = Skeda
@@ -288,6 +292,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = Të përditësojë vetvetiu motorët e kërkimeve
     .accesskey = m
+update-pref-write-failure-title = Dështim Shkrimi
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = S’arrihet të ruhet parapëlqimi. S’u shkrua dot te kartela: { $path }
 
 ## General Section - Performance
 
@@ -531,7 +539,6 @@ privacy-header = Privatësi Shfletuesi
 
 ## Privacy Section - Forms
 
-forms-header = Formularë & Fjalëkalime
 logins-header = Kredenciale Hyrjesh & Fjalëkalime
 forms-ask-to-save-logins =
     .label = Pyet të ruhen apo jo kredenciale hyrjesh dhe fjalëkalime për sajte
@@ -605,6 +612,9 @@ sitedata-keep-until-expire =
     .label = Deri sa të skadojnë
 sitedata-keep-until-closed =
     .label = { -brand-short-name } të mbyllet
+sitedata-delete-on-close =
+    .label = Fshi cookies dhe të dhëna sajti kur mbyllet { -brand-short-name }-i
+    .accesskey = F
 sitedata-allow-cookies-option =
     .label = Prano të dhëna cookie-sh dhe sajti
     .accesskey = P
@@ -625,6 +635,14 @@ sitedata-block-all-third-party-option =
     .label = Krejt cookie-t nga palë të treta (mund të shkaktojë mosfunksionim të disa sajteve)
 sitedata-block-all-option =
     .label = Krejt cookie-t (do të shkaktojë mosfunksionim sajtesh)
+sitedata-option-block-trackers =
+    .label = Gjurmues nga palë të treta
+sitedata-option-block-unvisited =
+    .label = Cookies nga sajte të pavizituar
+sitedata-option-block-all-third-party =
+    .label = Krejt cookie-t nga palë të treta (mund të shkaktojë mosfunksionim sajtesh)
+sitedata-option-block-all =
+    .label = Krejt cookie-t (do të shkaktojë mosfunksionim sajtesh)
 sitedata-clear =
     .label = Pastroni të Dhëna…
     .accesskey = P
@@ -638,6 +656,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = Rregullimet tuaja te Bllokim Lënde i pengojnë ndryshimet te rregullimet mbi Cookies dhe të Dhëna Sajti.
+sitedata-cookies-permissions =
+    .label = Administroni Lejet
+    .accesskey = A
 
 ## Privacy Section - Address Bar
 
@@ -658,6 +679,7 @@ addressbar-suggestions-settings = Ndryshoni parapëlqimet mbi këshillime motor�
 
 content-blocking-header = Bllokim Lënde
 content-blocking-desc = Bllokoni lëndë palësh të treta, të tillë si reklama ose kod, që mund të ngadalësojnë shfletimin tuaj dhe t’ju gjurmojnë nëpër internet. Përshtatini rregullimet tuaj për baraspeshimin më të mirë mes mbrojtjes dhe funksionimit.
+content-blocking-description = Bllokoni lëndë palësh të treta që ju ndjek nëpër internet. Kontrolloni ç’pjesë e veprimtarisë tuaj depozitohet dhe shkëmbehet mes sajtesh.
 content-blocking-learn-more = Mësoni më tepër
 content-blocking-restore-defaults =
     .label = Rikthe Parazgjedhjet
@@ -691,6 +713,37 @@ content-blocking-tracking-protection-option-always =
 content-blocking-tracking-protection-option-private =
     .label = Vetëm në dritare private
     .accesskey = v
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = Standard
+    .accesskey = S
+content-blocking-setting-strict =
+    .label = Strikt
+    .accesskey = i
+content-blocking-setting-custom =
+    .label = Vetjak
+    .accesskey = V
+content-blocking-standard-description = Bllokon vetëm gjurmues të njohur në Dritare Private.
+content-blocking-standard-desc = E baraspeshuar mes mbrojtjes dhe funksionimit. Lejon disa gjurmues, që sajtet të funksionojnë si duhet.
+content-blocking-strict-desc = Bllokon krejt gjurmuesit që pikas { -brand-short-name }-i. Mund të sjellë mosfunksionim të disa sajteve.
+content-blocking-custom-desc = Zgjidhni ç’të bllokohet.
+content-blocking-private-trackers = Gjurmues të njohur vetëm në Dritare Private
+content-blocking-third-party-cookies = Cookies gjurmimi nga palë të treta
+content-blocking-all-windows-trackers = Gjurmues të njohur në krejt dritaret
+content-blocking-all-third-party-cookies = Krejt cookie-t prej palësh të treta
+content-blocking-warning-title = Kini mendjen!
+content-blocking-warning-desc = Bllokimi i cookie-eve dhe gjurmuesve mund të bëjë që disa sajte të mos funksionojnë. Është e lehtë të çaktivizoni bllokime për sajte të cilëve u zini besë.
+content-blocking-learn-how = Mësoni se si
+content-blocking-trackers-label =
+    .label = Gjurmues
+    .accesskey = u
+content-blocking-tracking-protection-option-all-windows =
+    .label = Në krejt dritaret
+    .accesskey = k
+content-blocking-option-private =
+    .label = Vetëm në Dritare Pivate
+    .accesskey = V
 content-blocking-tracking-protection-change-block-list = Ndryshoni listë bllokimesh
 content-blocking-third-party-cookies-label =
     .label = Cookies Palësh të Treta
@@ -713,6 +766,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = Krejt cookie-t nga palë të treta (mund të sjellë mosfunksionim sajtesh)
     .accesskey = K
+content-blocking-cookies-label =
+    .label = Cookies
+    .accesskey = C
 
 ## Privacy Section - Tracking
 
@@ -734,6 +790,9 @@ tracking-exceptions =
 tracking-change-block-list =
     .label = Ndryshoni Listë Bllokimesh…
     .accesskey = N
+tracking-manage-exceptions =
+    .label = Administroni Përjashtime…
+    .accesskey = A
 
 ## Privacy Section - Permissions
 
@@ -801,6 +860,9 @@ collection-health-report-link = Mësoni më tepër
 collection-studies =
     .label = Lejojeni { -brand-short-name } të instalojë dhe kryejë studime
 collection-studies-link = Shihni studime { -brand-short-name }
+addon-recommendations =
+    .label = Lejojeni { -brand-short-name }-in të bëjë rekomandime të  personalizuara rreth zgjerimesh
+addon-recommendations-link = Mësoni më tepër
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Raportimi i të dhënave është i çaktivizuar për këtë formësim montimi

@@ -6,6 +6,10 @@ do-not-track-description = Αποστολή σήματος “Αποτροπή �
 do-not-track-learn-more = Μάθετε περισσότερα
 do-not-track-option-default =
     .label = Μόνο κατά τη χρήση προστασίας από καταγραφή
+do-not-track-option-default-content-blocking =
+    .label = Μόνο όταν το { -brand-short-name } έχει ρυθμιστεί για φραγή ανιχνευμένων ιχνηλατών
+do-not-track-option-default-content-blocking-known =
+    .label = Μόνο όταν το { -brand-short-name } έχει ρυθμιστεί για φραγή γνωστών ιχνηλατών
 do-not-track-option-always =
     .label = Πάντα
 pref-page =
@@ -51,6 +55,7 @@ pane-sync-title = Λογαριασμός Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = Υποστήριξη { -brand-short-name }
+addons-button-label = Επεκτάσεις & θέματα
 focus-search =
     .key = f
 close-button =
@@ -81,6 +86,9 @@ extension-controlled-homepage-override = Μια επέκταση, το <img data
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Μια επέκταση, το <img data-l10n-name="icon"/> { $name }, ελέγχει τη σελίδα νέας καρτέλας.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = Μια επέκταση, το <img data-l10n-name="icon"/> { $name }, ελέγχει αυτή τη ρύθμιση.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Μια επέκταση, <img data-l10n-name="icon"/> { $name }, έχει ορίσει την προεπιλεγμένη μηχανή αναζήτησης.
@@ -135,6 +143,8 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Επαναφορά προηγούμενης συνεδρίας
     .accesskey = σ
+startup-restore-warn-on-quit =
+    .label = Προειδοποίηση κατά την έξοδο από το πρόγραμμα περιήγησης
 disable-extension =
     .label = Απενεργοποίηση επέκτασης
 tabs-group-header = Καρτέλες
@@ -261,7 +271,7 @@ play-drm-content =
     .accesskey = Α
 play-drm-content-learn-more = Μάθετε περισσότερα
 update-application-title = Ενημερώσεις του { -brand-short-name }
-update-application-description = Κρατήστε το { -brand-short-name } ενημερωμένο για καλύτερη απόδοση, σταθερότητα κι ασφάλεια.
+update-application-description = Διατηρείστε το { -brand-short-name } ενημερωμένο για καλύτερη απόδοση, σταθερότητα και ασφάλεια.
 update-application-version = Έκδοση { $version } <a data-l10n-name="learn-more">Τι νέο υπάρχει</a>
 update-history =
     .label = Εμφάνιση ιστορικού ενημερώσεων…
@@ -282,6 +292,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = Αυτόματη ενημέρωση μηχανών αναζήτησης
     .accesskey = μ
+update-pref-write-failure-title = Αποτυχία εγγραφής
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = Αδυναμία αποθήκευσης προτίμησης. Αδυναμία εγγραφής σε αρχείο: { $path }
 
 ## General Section - Performance
 
@@ -321,6 +335,9 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Αναζήτηση κειμένου κατά την έναρξη πληκτρολόγησης
     .accesskey = ν
+browsing-cfr-recommendations =
+    .label = Πρόταση επεκτάσεων κατά την περιήγησή σας
+    .accesskey = Π
 browsing-cfr-recommendations-learn-more = Μάθετε περισσότερα
 
 ## General Section - Proxy
@@ -522,7 +539,6 @@ privacy-header = Απόρρητο προγράμματος περιήγησης
 
 ## Privacy Section - Forms
 
-forms-header = Φόρμες & κωδικοί πρόσβασης
 logins-header = Συνδέσεις & κωδικοί πρόσβασης
 forms-ask-to-save-logins =
     .label = Ερώτηση για αποθήκευση συνδέσεων και κωδικών πρόσβασης για ιστοσελίδες
@@ -596,6 +612,9 @@ sitedata-keep-until-expire =
     .label = να λήξουν
 sitedata-keep-until-closed =
     .label = να κλείσει το { -brand-short-name }
+sitedata-delete-on-close =
+    .label = Διαγραφή cookies και δεδομένων ιστοσελίδων όταν κλείνει το { -brand-short-name }
+    .accesskey = c
 sitedata-allow-cookies-option =
     .label = Αποδοχή cookies και δεδομένων ιστοσελίδων
     .accesskey = Α
@@ -612,8 +631,18 @@ sitedata-block-trackers-option =
     .label = Ιχνηλάτες τρίτων
 sitedata-block-unvisited-option =
     .label = Cookies από ιστοσελίδες που δεν έχετε επισκεφθεί
+sitedata-block-all-third-party-option =
+    .label = Όλα τα cookies τρίτων (ενδέχεται να προκαλέσει δυσλειτουργία σε ιστοσελίδες)
 sitedata-block-all-option =
     .label = Όλα τα cookies (θα προκαλέσει δυσλειτουργία ιστοσελίδων)
+sitedata-option-block-trackers =
+    .label = Ιχνηλάτες τρίτων
+sitedata-option-block-unvisited =
+    .label = Cookies από ιστοσελίδες που δεν έχετε επισκεφθεί
+sitedata-option-block-all-third-party =
+    .label = Όλα τα cookies τρίτων (ενδέχεται να προκαλέσει δυσλειτουργία σε ιστοσελίδες)
+sitedata-option-block-all =
+    .label = Όλα τα cookies (θα προκαλέσει δυσλειτουργία σε ιστοσελίδες)
 sitedata-clear =
     .label = Εκκαθάριση δεδομένων...
     .accesskey = κ
@@ -623,6 +652,13 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Εξαιρέσεις…
     .accesskey = Ε
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Οι ρυθμίσεις σας στη Φραγή περιεχομένου αποτρέπουν τις αλλαγές στις ρυθμίσεις cookies και δεδομένων ιστοσελίδων.
+sitedata-cookies-permissions =
+    .label = Διαχείριση δικαιωμάτων…
+    .accesskey = δ
 
 ## Privacy Section - Address Bar
 
@@ -643,6 +679,7 @@ addressbar-suggestions-settings = Αλλαγή προτιμήσεων για τ�
 
 content-blocking-header = Φραγή περιεχομένου
 content-blocking-desc = Αποκλείστε περιεχόμενο από τρίτους, όπως διαφημίσεις ή κώδικα, που μπορεί να επιβραδύνει την περιήγησή σας και να καταγράψει τη δραστηριότητα σας στο διαδίκτυο. Προσαρμόστε τις ρυθμίσεις σας για την καλύτερη ισορροπία προστασίας και απόδοσης.
+content-blocking-description = Αποκλείστε περιεχόμενο τρίτων που σάς παρακολουθεί στο διαδίκτυο. Ελέγξτε πόση διαδικτυακή δραστηριότητα αποθηκεύεται και κοινοποιείται στις ιστοσελίδες.
 content-blocking-learn-more = Μάθετε περισσότερα
 content-blocking-restore-defaults =
     .label = Επαναφορά προεπιλογών
@@ -662,22 +699,61 @@ content-blocking-category-label = Επιλέξτε τι θα αποκλείετ�
 content-blocking-fastblock-slow-loading-trackers-label =
     .label = Ιχνηλάτες αργής φόρτωσης
     .accesskey = α
+content-blocking-fastblock-new-description = Φραγή μόνο των ιχνηλατών που επιβραδύνουν τη φόρτωση των σελίδων.
 content-blocking-tracking-protection-trackers-label =
     .label = Ιχνηλάτες
     .accesskey = Ι
 content-blocking-tracking-protection-all-detected-trackers-label =
     .label = Όλοι οι εντοπισμένοι ιχνηλάτες
     .accesskey = ι
+content-blocking-tracking-protection-new-description = Φραγή όλων των γνωστών ιχνηλατών. (Μερικές σελίδες ενδέχεται να μην φορτώνονται.)
 content-blocking-tracking-protection-option-always =
     .label = Πάντα
     .accesskey = Π
 content-blocking-tracking-protection-option-private =
     .label = Μόνο σε ιδιωτικά παράθυρα
     .accesskey = ι
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = Τυπική
+    .accesskey = Τ
+content-blocking-setting-strict =
+    .label = Αυστηρή
+    .accesskey = Α
+content-blocking-setting-custom =
+    .label = Προσαρμοσμένη
+    .accesskey = Π
+content-blocking-standard-description = Αποκλείει μόνο γνωστούς ιχνηλάτες στα ιδιωτικά παράθυρα.
+content-blocking-standard-desc = Ισορροπία ανάμεσα σε προστασία και επιδόσεις. Επιτρέπει ορισμένους ιχνηλάτες για τη σωστή λειτουργία των ιστοσελίδων.
+content-blocking-strict-desc = Αποκλείει όλους τους ιχνηλάτες που ανιχνεύει το { -brand-short-name }. Ορισμένες ιστοσελίδες ενδέχεται να δυσλειτουργούν.
+content-blocking-custom-desc = Επιλέξτε τι θα αποκλείεται.
+content-blocking-private-trackers = Γνωστοί ιχνηλάτες μόνο σε ιδιωτικά παράθυρα
+content-blocking-third-party-cookies = Cookies καταγραφής τρίτων
+content-blocking-all-windows-trackers = Γνωστοί ιχνηλάτες σε όλα τα ιδιωτικά παράθυρα
+content-blocking-all-third-party-cookies = Όλα τα cookies τρίτων
+content-blocking-warning-title = Προσοχή!
+content-blocking-warning-desc = Η φραγή των cookies και των ιχνηλατών μπορεί να προκαλέσει δυσλειτουργία σε ορισμένες ιστοσελίδες. Μπορείτε εύκολα να απενεργοποιήσετε τη φραγή σε ιστοσελίδες που εμπιστεύεστε.
+content-blocking-learn-how = Μάθετε πώς
+content-blocking-trackers-label =
+    .label = Ιχνηλάτες
+    .accesskey = Ι
+content-blocking-tracking-protection-option-all-windows =
+    .label = Σε όλα τα παράθυρα
+    .accesskey = ό
+content-blocking-option-private =
+    .label = Μόνο σε ιδιωτικά παράθυρα
+    .accesskey = ι
 content-blocking-tracking-protection-change-block-list = Αλλαγή λίστας φραγής
 content-blocking-third-party-cookies-label =
     .label = Cookies τρίτων
     .accesskey = C
+content-blocking-reject-trackers-description = Φραγή όλων των cookies τρίτων ή μόνο όσων έχουν τοποθετηθεί από ιχνηλάτες.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Οι ρυθμίσεις σας στην ενότητα "Cookies και δεδομένα ιστοσελίδων" εμποδίζουν τις αλλαγές στις ρυθμίσεις για cookies τρίτων.
 content-blocking-change-cookie-settings =
     .label = Αλλαγή ρυθμίσεων cookies
     .accesskey = ρ
@@ -687,6 +763,12 @@ content-blocking-reject-trackers-block-trackers-option-recommended =
 content-blocking-reject-trackers-block-trackers-option =
     .label = Ιχνηλάτες
     .accesskey = λ
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Όλα τα cookies τρίτων (ενδέχεται να προκαλέσει δυσλειτουργία σε ιστοσελίδες)
+    .accesskey = Ό
+content-blocking-cookies-label =
+    .label = Cookies
+    .accesskey = C
 
 ## Privacy Section - Tracking
 
@@ -708,6 +790,9 @@ tracking-exceptions =
 tracking-change-block-list =
     .label = Αλλαγή λίστας αποκλεισμού…
     .accesskey = λ
+tracking-manage-exceptions =
+    .label = Διαχείριση εξαιρέσεων…
+    .accesskey = χ
 
 ## Privacy Section - Permissions
 
@@ -775,6 +860,9 @@ collection-health-report-link = Μάθετε περισσότερα
 collection-studies =
     .label = Να επιτρέπεται στο { -brand-short-name } να εγκαθιστά και να εκτελεί μελέτες
 collection-studies-link = Προβολή μελετών του { -brand-short-name }
+addon-recommendations =
+    .label = Αποδοχή εξατομικευμένων προτάσεων για επεκτάσεις από το { -brand-short-name }
+addon-recommendations-link = Μάθετε περισσότερα
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Η αναφορά δεδομένων είναι ανενεργή για αυτή την έκδοση
@@ -853,3 +941,7 @@ space-alert-under-5gb-message = Το { -brand-short-name } δεν έχει επ�
 desktop-folder-name = Επιφάνεια εργασίας
 downloads-folder-name = Ληφθέντα αρχεία
 choose-download-folder-title = Επιλογή φακέλου λήψης αρχείων:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Αποθήκευση αρχείων στο { $service-name }

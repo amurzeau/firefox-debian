@@ -1,0 +1,103 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!--LOCALIZATION NOTE messengercompose.dtd Main UI for message composition -->
+
+<!-- File Menu -->
+<!ENTITY fileMenu.label "ไฟล์">
+<!ENTITY fileMenu.accesskey "ฟ">
+<!ENTITY newMenu.label "ใหม่">
+<!ENTITY newMenu.accesskey "ห">
+<!ENTITY newMessage.label "ข้อความ">
+<!ENTITY newMessage.key "M">
+<!ENTITY newMessageCmd2.key "N">
+<!ENTITY newMessage.accesskey "ข">
+<!ENTITY newContact.label "ผู้ติดต่อของสมุดรายชื่อ…">
+<!ENTITY attachMenu.label "แนบ">
+<!ENTITY attachMenu.accesskey "น">
+<!ENTITY attachFileCmd.label "ไฟล์…">
+<!ENTITY attachFileCmd.accesskey "ฟ">
+<!ENTITY attachFileCmd.key "A">
+<!ENTITY attachCloudCmd.label "ลิงก์ไฟล์">
+<!ENTITY attachCloudCmd.accesskey "ล">
+<!ENTITY attachPageCmd.label "หน้าเว็บ…">
+<!ENTITY attachPageCmd.accesskey "ห">
+<!--LOCALIZATION NOTE attachVCardCmd.label Don't translate the term 'vCard' -->
+<!ENTITY attachVCardCmd.label "บัตรส่วนบุคคล (vCard)">
+<!ENTITY attachVCardCmd.accesskey "บ">
+<!ENTITY closeCmd.label "ปิด">
+<!ENTITY closeCmd.key "W">
+<!ENTITY closeCmd.accesskey "ป">
+<!ENTITY saveCmd.label "บันทึก">
+<!ENTITY saveCmd.key "S">
+<!ENTITY saveCmd.accesskey "บ">
+<!ENTITY saveAsCmd.label "บันทึกเป็น">
+<!ENTITY saveAsCmd.accesskey "น">
+
+<!-- Edit Menu -->
+<!-- LOCALIZATION NOTE (toggleAttachmentPaneCmd.accesskey):
+     For better mnemonics, toggleAttachmentPaneCmd.accesskey should be the same
+     as attachments.accesskey. -->
+<!-- LOCALIZATION NOTE (toggleAttachmentPaneCmd.key):
+     As Mac does not have access keys, this key defines a Mac-only, cross-l10n
+     shortcut key (Ctrl+M). Typically, this key should not be translated unless
+     otherwise required by specific needs of the localization. -->
+
+<!-- Reorder Attachment Panel -->
+
+<!-- LOCALIZATION NOTE (sortAttachmentsPanelBtn.Sort.AZ.label):
+     Please ensure that this translation matches
+     sortAttachmentsPanelBtn.Sort.ZA.label, except for the sort direction. -->
+<!-- LOCALIZATION NOTE (sortAttachmentsPanelBtn.SortSelection.AZ.label):
+     Please ensure that this translation matches
+     sortAttachmentsPanelBtn.SortSelection.ZA.label, except for the sort direction. -->
+
+<!-- View Menu -->
+
+
+<!-- Format Menu -->
+
+<!-- Options Menu -->
+
+<!--LOCALIZATION NOTE attachVCard.label Don't translate the term 'vCard' -->
+
+
+<!-- Tools Menu -->
+
+<!--  Mac OS X Window Menu -->
+
+<!-- Mail Toolbar -->
+
+<!-- Mail Toolbar Tooltips -->
+
+<!-- Headers -->
+<!--LOCALIZATION NOTE headersSpace.style is for aligning  the From:, To: and
+    Subject: rows. It should be larger than the largest Header label  -->
+<!-- LOCALIZATION NOTE (attachments.accesskey) This access key character should
+     be taken from the strings of attachmentCount in composeMsgs.properties.
+     Please ensure that this access key is unique: Do not duplicate any other
+     first-level access keys of the compose window, e.g. those of main menu,
+     buttons, or labels (message headers, contacts side bar, attachment reminder
+     bar). -->
+
+<!-- Format Toolbar, imported from editorAppShell.xul -->
+
+<!-- Message Pane Context Menu -->
+
+<!-- Attachment Item and List Context Menus -->
+
+<!-- Attachment Pane Header Bar Context Menu -->
+<!-- LOCALIZATION NOTE (initiallyShowAttachmentPane.label):
+     Should use the same wording as startExpandedCmd.label
+     in msgHdrViewOverlay.dtd. -->
+
+<!-- Spell checker context menu items -->
+
+<!-- Title for the address picker panel -->
+
+<!-- Identity popup customize menuitem -->
+
+<!-- Accessibility name for the document -->
+
+<!-- Status Bar -->

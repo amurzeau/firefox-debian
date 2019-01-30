@@ -19,6 +19,13 @@
 <!ENTITY rememberPassword.label          "Wachtwurd ûnthâlde">
 <!ENTITY rememberPassword.accesskey      "u">
 
+<!ENTITY usernameEx.label                "Jo oanmelding:">
+<!ENTITY usernameEx.accesskey            "o">
+<!-- LOCALIZATION NOTE(usernameEx.placeholder): YOURDOMAIN refers to the Windows domain in ActiveDirectory. yourusername refers to the user's account name in Windows. -->
+<!ENTITY usernameEx.placeholder          "YOURDOMAIN\yourusername">
+<!-- LOCALIZATION NOTE(usernameEx.text): Domain refers to the Windows domain in ActiveDirectory. We mean the user's login in Windows at the local corporate network. -->
+<!ENTITY usernameEx.text                 "Domeinoanmelding">
+
 <!ENTITY imapLong.label                  "IMAP (mappen op in oare kompjûter)">
 <!ENTITY pop3Long.label                  "POP3 (e-mail op jo kompjûter bewarje)">
 
@@ -30,7 +37,9 @@
 <!ENTITY ssl.label                       "SSL">
 <!ENTITY auth.label                      "Autentikaasje">
 <!ENTITY imap.label                      "IMAP">
-<!ENTITY pop3.label                       "POP3">
+<!ENTITY pop3.label                      "POP3">
+<!-- LOCALIZATION NOTE(exchange.label): Do not translate Exchange, it is a product name. -->
+<!ENTITY exchange.label                  "Exchange">
 <!ENTITY smtp.label                      "SMTP">
 <!ENTITY autodetect.label                "Autodeteksje">
 <!-- LOCALIZATION NOTE(noEncryption.label): Neither SSL/TLS nor STARTTLS.
@@ -38,6 +47,9 @@
 <!ENTITY noEncryption.label              "Gjin">
 <!ENTITY starttls.label                  "STARTTLS">
 <!ENTITY sslTls.label                    "SSL/TLS">
+
+<!-- LOCALIZATION NOTE(exchange-hostname.label): Do not translate Exchange, it is a product name. -->
+<!ENTITY exchange-hostname.label         "Exchange-server:">
 
 <!ENTITY advancedSetup.label             "Wiidweidich ynstelle">
 <!ENTITY advancedSetup.accesskey         "W">

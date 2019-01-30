@@ -8,6 +8,8 @@ do-not-track-option-default =
     .label = Chỉ khi dùng trình chống theo dõi
 do-not-track-option-default-content-blocking =
     .label = Chỉ khi { -brand-short-name } được đặt sang chế độ chặn trình phát hiện theo dõi
+do-not-track-option-default-content-blocking-known =
+    .label = Chỉ khi { -brand-short-name } được đặt để chặn trình theo dõi đã biết
 do-not-track-option-always =
     .label = Luôn luôn
 pref-page =
@@ -86,28 +88,28 @@ extension-controlled-homepage-override = Một phần mở rông, <img data-l10n
 extension-controlled-new-tab-url = Một phần mở rông, <img data-l10n-name="icon"/> { $name }, đang kiểm soát phần thẻ mới của bạn.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
-extension-controlled-web-notifications = Phần mở rộng, <img data-l10n-name="icon"/> { $name }, đang kiểm soát cài đặt này.
+extension-controlled-web-notifications = Một tiện ích mở rộng, <img data-l10n-name="icon"/> { $name }, đang kiểm soát cài đặt này.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
-extension-controlled-default-search = Phần mở rộng, <img data-l10n-name="icon"/> { $name }, đã cài đặt công cụ tìm kiếm mặc định của bạn.
+extension-controlled-default-search = Một tiện ích mở rộng, <img data-l10n-name="icon"/> { $name }, đã cài đặt công cụ tìm kiếm mặc định của bạn.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
-extension-controlled-privacy-containers = Phần mở rộng, <img data-l10n-name="icon"/> { $name }, yêu cầu thẻ ngăn chứa.
+extension-controlled-privacy-containers = Một tiện ích mở rộng này, <img data-l10n-name="icon"/> { $name }, yêu cầu thẻ ngăn chứa.
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
-extension-controlled-websites-tracking-protection-mode = Một phần mở rộng, <img data-l10n-name="icon"/> { $name }, đang kiểm soát việc chống theo dõi.
+extension-controlled-websites-tracking-protection-mode = Một tiện ích mở rộng, <img data-l10n-name="icon"/> { $name }, đang kiểm soát việc chống theo dõi.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = Phần mở rộng, <img data-l10n-name="icon"/> { $name }, đang kiểm soát cài đặt này.
+extension-controlled-websites-content-blocking-all-trackers = Một tiện ích mở rộng, <img data-l10n-name="icon"/> { $name }, đang kiểm soát cài đặt này.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
-extension-controlled-proxy-config = Một phần mở rộng, <img data-l10n-name="icon"/> { $name }, đang kiểm soát cách { -brand-short-name } kết nối internet.
+extension-controlled-proxy-config = Một tiện ích mở rộng, <img data-l10n-name="icon"/> { $name }, đang kiểm soát cách { -brand-short-name } kết nối internet.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
 # <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
 # <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
-extension-controlled-enable = Để kích hoạt phần mở rộng hãy vào phần tiện ích <img data-l10n-name="addons-icon"/> trên bảng chọn <img data-l10n-name="menu-icon"/>.
+extension-controlled-enable = Để kích hoạt tiện ích mở rộng hãy vào phần tiện ích <img data-l10n-name="addons-icon"/> trên bảng chọn <img data-l10n-name="menu-icon"/>.
 
 ## Preferences UI Search Results
 
@@ -118,7 +120,7 @@ search-results-empty-message =
         [windows] Xin lỗi! Không có kết quả trong phần tủy chọn cho “<span data-l10n-name="query"></span>”.
        *[other] Xin lỗi! Không có kết quả trong phần tủy chỉnh cho “<span data-l10n-name="query"></span>”.
     }
-search-results-help-link = Cần trợ giúp? Ghé thăm <a data-l10n-name="url">Hỗ trợ từ { -brand-short-name }</a>
+search-results-help-link = Cần trợ giúp? Đi tới <a data-l10n-name="url">Hỗ trợ từ { -brand-short-name }</a>
 
 ## General Section
 
@@ -141,8 +143,10 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Khôi phục phiên làm việc trước
     .accesskey = s
+startup-restore-warn-on-quit =
+    .label = Cảnh báo bạn khi thoát khỏi trình duyệt
 disable-extension =
-    .label = Tắt phần mở rộng
+    .label = Tắt tiện ích mở rộng
 tabs-group-header = Thẻ
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab để chuyển qua các thẻ theo thứ tự sử dụng gần đây nhất
@@ -153,20 +157,17 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = Cảnh báo bạn khi đóng nhiều thẻ một lúc
     .accesskey = m
-warn-on-quit-close-multiple-tabs =
-    .label = Cảnh báo khi bạn đóng nhiều thẻ cùng lúc
-    .accesskey = m
 warn-on-open-many-tabs =
     .label = Cảnh báo bạn khi mở nhiều thẻ có thể làm chậm { -brand-short-name }
     .accesskey = d
 switch-links-to-new-tabs =
-    .label = Khi bạn mở một liên kết trong thẻ mới, chuyển sang tab đó ngay
+    .label = Khi bạn mở một liên kết trong thẻ mới, chuyển sang thẻ đó ngay lập tức
     .accesskey = h
 show-tabs-in-taskbar =
     .label = Hiển thị hình ảnh xem trước thẻ trong thanh tác vụ Windows
-    .accesskey = e
+    .accesskey = k
 browser-containers-enabled =
-    .label = Bật thẻ ngăn chứa
+    .label = Kích hoạt thẻ ngăn chứa
     .accesskey = n
 browser-containers-learn-more = Tìm hiểu thêm
 browser-containers-settings =
@@ -175,7 +176,7 @@ browser-containers-settings =
 containers-disable-alert-title = Đóng tất cả các thẻ ngăn chứa?
 containers-disable-alert-desc = Nếu bạn vô hiệu hóa thẻ ngăn chứa bây giờ, { $tabCount } thẻ ngăn chứa sẽ bị đóng. Bạn có chắc muốn vô hiệu hóa thẻ ngăn chứa?
 containers-disable-alert-ok-button = Đóng { $tabCount } thẻ ngăn chứa
-containers-disable-alert-cancel-button = Để bật
+containers-disable-alert-cancel-button = Tiếp tục kích hoạt
 containers-remove-alert-title = Xóa ngăn chứa này?
 # Variables:
 #   $count (Number) - Number of tabs that will be closed.
@@ -282,7 +283,7 @@ update-enable-search-update =
 update-pref-write-failure-title = Lỗi ghi
 # Variables:
 #   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Không thể lưu tùy chọn. Không thể ghi vào tệp: { $path }
+update-pref-write-failure-message = Không thể lưu tùy chọn. Không thể ghi vào tập tin: { $path }
 
 ## General Section - Performance
 
@@ -293,7 +294,7 @@ performance-use-recommended-settings-checkbox =
 performance-use-recommended-settings-desc = Các cài đặt này được thiết kế riêng cho phần cứng máy tính và hệ điều hành của bạn.
 performance-settings-learn-more = Tìm hiểu thêm
 performance-allow-hw-accel =
-    .label = Dùng gia tốc hệ thống hệ thống khi có thể
+    .label = Sử dụng chế độ tăng tốc phần cứng khi khả dụng
     .accesskey = h
 performance-limit-content-process-option = Giới hạn xử lý nội dung
     .accesskey = L
@@ -495,8 +496,8 @@ sync-engine-creditcards =
     .accesskey = C
 sync-engine-addons =
     .label = Tiện ích
-    .tooltiptext = Phần mở rộng và diện mạo của phiên bản Firefox dành cho máy tính
-    .accesskey = T
+    .tooltiptext = Tiện ích mở rộng và chủ đề của Firefox dành cho máy tính
+    .accesskey = A
 sync-engine-prefs =
     .label =
         { PLATFORM() ->
@@ -526,11 +527,10 @@ privacy-header = Duyệt web riêng tư
 
 ## Privacy Section - Forms
 
-forms-header = Biểu mẫu & Mật khẩu
-logins-header = Đăng nhập & Mật khẩu
+logins-header = Đăng nhập & mật khẩu
 forms-ask-to-save-logins =
     .label = Hỏi để lưu lại thông tin đăng nhập và mật khẩu cho trang web
-    .accesskey = H
+    .accesskey = r
 forms-exceptions =
     .label = Ngoại trừ…
     .accesskey = r
@@ -541,7 +541,7 @@ forms-master-pw-use =
     .label = Dùng một mật khẩu chính
     .accesskey = D
 forms-master-pw-change =
-    .label = Thay đổi Mật khẩu Chính…
+    .label = Thay đổi mật khẩu chính…
     .accesskey = M
 
 ## Privacy Section - History
@@ -623,6 +623,14 @@ sitedata-block-all-third-party-option =
     .label = Tất cả cookie của bên thứ ba (có thể khiến trang web bị vỡ)
 sitedata-block-all-option =
     .label = Tất cả cookie (sẽ khiến trang web bị gián đoạn)
+sitedata-option-block-trackers =
+    .label = Trình theo dõi của bên thứ ba
+sitedata-option-block-unvisited =
+    .label = Cookies từ các trang web không mong muốn
+sitedata-option-block-all-third-party =
+    .label = Tất cả cookie của bên thứ ba (có thể khiến các trang web bị hỏng)
+sitedata-option-block-all =
+    .label = Tất cả các cookie (có thể khiến các trang web bị hỏng)
 sitedata-clear =
     .label = Xóa dữ liệu...
     .accesskey = l
@@ -680,25 +688,6 @@ content-blocking-fastblock-slow-loading-trackers-label =
     .label = Trình truy dấu tác nhân tải chậm
     .accesskey = T
 content-blocking-fastblock-new-description = Chỉ chặn các trình theo dõi làm chậm việc tải trang.
-content-blocking-setting-standard =
-    .label = Tiêu chuẩn
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = Nghiêm ngặt
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = Tùy chọn
-    .accesskey = c
-content-blocking-standard-desc = Cân bằng giữa sự bảo mật và hiệu suất. Cho phép một số trình theo dõi để các trang web hoạt động chính xác.
-content-blocking-strict-desc = Chặn tất cả trình theo dõi mà { -brand-short-name } phát hiện. Có thể khiến một số trang web bị hỏng.
-content-blocking-custom-desc = Chọn những gì bạn muốn chặn.
-content-blocking-private-trackers = Trình theo dõi được biết chỉ trong Cửa sổ riêng tư
-content-blocking-third-party-cookies = Cookie theo dõi của bên thứ ba
-content-blocking-all-windows-trackers = Các trình theo dõi đã biết trong tất cả cửa sổ
-content-blocking-all-third-party-cookies = Toàn bộ cookie từ bên thứ ba
-content-blocking-warning-title = Hãy cẩn thận!
-content-blocking-warning-desc = Chặn cookie và trình theo dõi có thể khiến một số trang web bị hỏng. Dễ dàng để tắt tính năng chặn cho các trang web bạn tin tưởng.
-content-blocking-learn-how = Tìm hiểu cách thức
 content-blocking-tracking-protection-trackers-label =
     .label = Trình theo dõi
     .accesskey = T
@@ -712,6 +701,37 @@ content-blocking-tracking-protection-option-always =
 content-blocking-tracking-protection-option-private =
     .label = Chỉ trong cửa sổ riêng tư
     .accesskey = p
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = Tiêu chuẩn
+    .accesskey = d
+content-blocking-setting-strict =
+    .label = Nghiêm ngặt
+    .accesskey = r
+content-blocking-setting-custom =
+    .label = Tùy chọn
+    .accesskey = c
+content-blocking-standard-description = Chỉ chặn các trình theo dõi đã biết trong cửa sổ riêng tư.
+content-blocking-standard-desc = Cân bằng giữa sự bảo mật và hiệu suất. Cho phép một số trình theo dõi để các trang web hoạt động chính xác.
+content-blocking-strict-desc = Chặn tất cả trình theo dõi mà { -brand-short-name } phát hiện. Có thể khiến một số trang web bị hỏng.
+content-blocking-custom-desc = Chọn những gì bạn muốn chặn.
+content-blocking-private-trackers = Trình theo dõi được biết chỉ trong Cửa sổ riêng tư
+content-blocking-third-party-cookies = Cookie theo dõi của bên thứ ba
+content-blocking-all-windows-trackers = Các trình theo dõi đã biết trong tất cả cửa sổ
+content-blocking-all-third-party-cookies = Toàn bộ cookie từ bên thứ ba
+content-blocking-warning-title = Hãy cẩn thận!
+content-blocking-warning-desc = Chặn cookie và trình theo dõi có thể khiến một số trang web bị hỏng. Dễ dàng để tắt tính năng chặn cho các trang web bạn tin tưởng.
+content-blocking-learn-how = Tìm hiểu cách thức
+content-blocking-trackers-label =
+    .label = Trình theo dõi
+    .accesskey = T
+content-blocking-tracking-protection-option-all-windows =
+    .label = Trong tất cả các cửa sổ
+    .accesskey = A
+content-blocking-option-private =
+    .label = Chỉ trong cửa sổ riêng tư
+    .accesskey = P
 content-blocking-tracking-protection-change-block-list = Thay đổi danh sách chặn
 content-blocking-third-party-cookies-label =
     .label = Cookie của bên thứ ba
@@ -721,7 +741,7 @@ content-blocking-reject-trackers-description = Chặn tất cả cookie của b�
 # of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
 # or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
 # the UI.
-content-blocking-reject-trackers-warning-your-settings-prevent-changes = Cài đặt của bạn trong Cookie và Dữ liệu trang đang ngăn các thay đổi cài đặt cookie của bên thứ ba.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Cài đặt của bạn trong cookie và dữ liệu trang đang ngăn các thay đổi cài đặt cookie của bên thứ ba.
 content-blocking-change-cookie-settings =
     .label = Thay đổi thiết lập cookie
     .accesskey = T
@@ -800,8 +820,8 @@ autoplay-option-dont =
     .label = Không tự động phát
 permissions-autoplay-link = Tìm hiểu thêm
 permissions-block-popups =
-    .label = Chặn các cửa sổ pop-up
-    .accesskey = C
+    .label = Chặn các cửa sổ bật lên
+    .accesskey = B
 permissions-block-popups-exceptions =
     .label = Ngoại lệ…
     .accesskey = N
@@ -828,6 +848,9 @@ collection-health-report-link = Tìm hiểu thêm
 collection-studies =
     .label = Cho phép { -brand-short-name } cài đặt và chạy các nghiên cứu
 collection-studies-link = Xem nghiên cứu { -brand-short-name }
+addon-recommendations =
+    .label = Cho phép { -brand-short-name } để thực hiện các đề xuất tiện ích mở rộng được cá nhân hóa
+addon-recommendations-link = Tìm hiểu thêm
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Dữ liệu báo cáo bị vô hiệu hóa với cấu hình này
@@ -909,4 +932,4 @@ choose-download-folder-title = Chọn Thư mục Tải xuống:
 # Variables:
 #   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
 save-files-to-cloud-storage =
-    .label = Lưu tệp vào { $service-name }
+    .label = Lưu tập tin vào { $service-name }

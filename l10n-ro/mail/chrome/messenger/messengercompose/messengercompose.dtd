@@ -166,7 +166,7 @@
 <!ENTITY checkSpellingCmd2.key "o">
 <!ENTITY checkSpellingCmd2.key2 "VK_F7">
 <!ENTITY checkSpellingCmd2.accesskey "V">
-<!ENTITY enableInlineSpellChecker.label "Verifică ortografia pe măsură ce tastez">
+<!ENTITY enableInlineSpellChecker.label "Corectare ortografică în timpul scrierii">
 <!ENTITY enableInlineSpellChecker.accesskey "s">
 <!ENTITY quoteCmd.label "Citează mesajul">
 <!ENTITY quoteCmd.accesskey "C">
@@ -211,7 +211,7 @@
 <!-- Tools Menu -->
 <!ENTITY tasksMenu.label "Unelte">
 <!ENTITY tasksMenu.accesskey "t">
-<!ENTITY messengerCmd.label "Corespondență și grupuri de discuții">
+<!ENTITY messengerCmd.label "E-mail și Grupuri de discuții">
 <!ENTITY messengerCmd.accesskey "C">
 <!ENTITY messengerCmd.commandkey "1">
 <!ENTITY addressBookCmd.label "Agendă de contacte">
@@ -325,7 +325,7 @@
 <!ENTITY renameAttachment.accesskey "R">
 <!ENTITY reorderAttachments.label "Rearanjează atașamentele…">
 <!ENTITY reorderAttachments.accesskey "s">
-<!ENTITY removeAllAttachments.label "Înlătură toate atașamentele">
+<!ENTITY removeAllAttachments.label "Elimină toate atașamentele">
 <!ENTITY removeAllAttachments.accesskey "v">
 <!ENTITY selectAll.label "Selectează tot">
 <!ENTITY selectAll.accesskey "a">
