@@ -1,3 +1,16 @@
+firefox (65.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2019-01, also known as:
+    CVE-2018-18500, CVE-2018-18503, CVE-2018-18504, CVE-2018-18505,
+    CVE-2018-18506, CVE-2018-18502, CVE-2018-18501.
+
+  * debian/control*: Bump nss, sqlite, rustc, cargo and cbindgen build
+    dependencies.
+  * debian/browser.install.in: Install libmozwayland.so.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 30 Jan 2019 11:04:24 +0900
+
 firefox (64.0-1) unstable; urgency=medium
 
   * New upstream release.
