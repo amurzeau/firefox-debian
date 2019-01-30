@@ -7,12 +7,12 @@
 #ifndef mozilla_layers_GeckoContentController_h
 #define mozilla_layers_GeckoContentController_h
 
-#include "FrameMetrics.h"               // for FrameMetrics, etc
-#include "InputData.h"                  // for PinchGestureInput
-#include "Units.h"                      // for CSSPoint, CSSRect, etc
-#include "mozilla/Assertions.h"         // for MOZ_ASSERT_HELPER2
-#include "mozilla/DefineEnum.h"         // for MOZ_DEFINE_ENUM
-#include "mozilla/EventForwards.h"      // for Modifiers
+#include "FrameMetrics.h"           // for FrameMetrics, etc
+#include "InputData.h"              // for PinchGestureInput
+#include "Units.h"                  // for CSSPoint, CSSRect, etc
+#include "mozilla/Assertions.h"     // for MOZ_ASSERT_HELPER2
+#include "mozilla/DefineEnum.h"     // for MOZ_DEFINE_ENUM
+#include "mozilla/EventForwards.h"  // for Modifiers
 #include "nsISupportsImpl.h"
 
 namespace mozilla {
@@ -21,9 +21,8 @@ class Runnable;
 
 namespace layers {
 
-class GeckoContentController
-{
-public:
+class GeckoContentController {
+ public:
   NS_INLINE_DECL_THREADSAFE_REFCOUNTING(GeckoContentController)
 
   /**
@@ -50,6 +49,7 @@ public:
    * a click event with detail=2 to web content (similar to what a mouse double-
    * click would do).
    */
+  // clang-format off
   MOZ_DEFINE_ENUM_CLASS_AT_CLASS_SCOPE(
     TapType, (
       eSingleTap,
@@ -58,15 +58,14 @@ public:
       eLongTap,
       eLongTapUp
   ));
+  // clang-format on
 
   /**
    * Requests handling of a tap event. |aPoint| is in LD pixels, relative to the
    * current scroll offset.
    */
-  virtual void HandleTap(TapType aType,
-                         const LayoutDevicePoint& aPoint,
-                         Modifiers aModifiers,
-                         const ScrollableLayerGuid& aGuid,
+  virtual void HandleTap(TapType aType, const LayoutDevicePoint& aPoint,
+                         Modifiers aModifiers, const ScrollableLayerGuid& aGuid,
                          uint64_t aInputBlockId) = 0;
 
   /**
@@ -95,10 +94,12 @@ public:
    * in the future.
    * This method must always be called on the controller thread.
    */
-  virtual void PostDelayedTask(already_AddRefed<Runnable> aRunnable, int aDelayMs) = 0;
+  virtual void PostDelayedTask(already_AddRefed<Runnable> aRunnable,
+                               int aDelayMs) = 0;
 
   /**
-   * Returns true if we are currently on the thread that can send repaint requests.
+   * Returns true if we are currently on the thread that can send repaint
+   * requests.
    */
   virtual bool IsRepaintThread() = 0;
 
@@ -107,6 +108,7 @@ public:
    */
   virtual void DispatchToRepaintThread(already_AddRefed<Runnable> aTask) = 0;
 
+  // clang-format off
   MOZ_DEFINE_ENUM_CLASS_AT_CLASS_SCOPE(
     APZStateChange, (
       /**
@@ -132,6 +134,7 @@ public:
        */
       eEndTouch
   ));
+  // clang-format on
 
   /**
    * General notices of APZ state changes for consumers.
@@ -141,27 +144,30 @@ public:
    *        the documentation for each state change above)
    */
   virtual void NotifyAPZStateChange(const ScrollableLayerGuid& aGuid,
-                                    APZStateChange aChange,
-                                    int aArg = 0) {}
+                                    APZStateChange aChange, int aArg = 0) {}
 
   /**
    * Notify content of a MozMouseScrollFailed event.
    */
-  virtual void NotifyMozMouseScrollEvent(const FrameMetrics::ViewID& aScrollId, const nsString& aEvent)
-  {}
+  virtual void NotifyMozMouseScrollEvent(const FrameMetrics::ViewID& aScrollId,
+                                         const nsString& aEvent) {}
 
   /**
    * Notify content that the repaint requests have been flushed.
    */
   virtual void NotifyFlushComplete() = 0;
 
-  virtual void NotifyAsyncScrollbarDragRejected(const FrameMetrics::ViewID& aScrollId) = 0;
-  virtual void NotifyAsyncAutoscrollRejected(const FrameMetrics::ViewID& aScrollId) = 0;
+  virtual void NotifyAsyncScrollbarDragRejected(
+      const FrameMetrics::ViewID& aScrollId) = 0;
+  virtual void NotifyAsyncAutoscrollRejected(
+      const FrameMetrics::ViewID& aScrollId) = 0;
 
   virtual void CancelAutoscroll(const ScrollableLayerGuid& aGuid) = 0;
 
-  virtual void UpdateOverscrollVelocity(float aX, float aY, bool aIsRootContent) {}
-  virtual void UpdateOverscrollOffset(float aX, float aY, bool aIsRootContent) {}
+  virtual void UpdateOverscrollVelocity(float aX, float aY,
+                                        bool aIsRootContent) {}
+  virtual void UpdateOverscrollOffset(float aX, float aY, bool aIsRootContent) {
+  }
 
   GeckoContentController() {}
 
@@ -170,12 +176,12 @@ public:
    */
   virtual void Destroy() {}
 
-protected:
+ protected:
   // Protected destructor, to discourage deletion outside of Release():
   virtual ~GeckoContentController() {}
 };
 
-} // namespace layers
-} // namespace mozilla
+}  // namespace layers
+}  // namespace mozilla
 
-#endif // mozilla_layers_GeckoContentController_h
+#endif  // mozilla_layers_GeckoContentController_h

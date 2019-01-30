@@ -1,3 +1,11 @@
+firefox-esr (60.5.0esr-1~deb9u1) stretch-security; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2019-02, also known as:
+    CVE-2018-18500, CVE-2018-18505, CVE-2018-18501.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 30 Jan 2019 09:53:01 +0900
+
 firefox-esr (60.4.0esr-1~deb9u1) stretch-security; urgency=medium
 
   * New upstream release.
