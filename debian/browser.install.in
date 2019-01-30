@@ -34,6 +34,7 @@ usr/lib/@browser@/libreplace_jemalloc.so
 %endif
 
 usr/lib/@browser@/libmozgtk.so
+usr/lib/@browser@/libmozwayland.so
 usr/lib/@browser@/gtk2/libmozgtk.so
 usr/lib/@browser@/liblgpllibs.so
 %if MOZ_FFVPX
