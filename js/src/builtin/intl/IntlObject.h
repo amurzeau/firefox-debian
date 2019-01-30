@@ -18,8 +18,7 @@ namespace js {
  * Initializes the Intl Object and its standard built-in properties.
  * Spec: ECMAScript Internationalization API Specification, 8.0, 8.1
  */
-extern JSObject*
-InitIntlClass(JSContext* cx, JS::Handle<JSObject*> obj);
+extern JSObject* InitIntlClass(JSContext* cx, JS::Handle<JSObject*> obj);
 
 /**
  * Returns a plain object with calendar information for a single valid locale
@@ -32,7 +31,8 @@ InitIntlClass(JSContext* cx, JS::Handle<JSObject*> obj);
  *     2 for en-GB, 1 for bn-IN
  *   minDays
  *     an integer in the range of 1 to 7 indicating the minimum number
- *     of days required in the first week of the year, e.g. 1 for en-US, 4 for de
+ *     of days required in the first week of the year, e.g. 1 for en-US,
+ *     4 for de
  *   weekendStart
  *     an integer in the range 1=Sunday to 7=Saturday indicating the day
  *     considered the beginning of a weekend, e.g. 7 for en-US, 7 for en-GB,
@@ -44,8 +44,8 @@ InitIntlClass(JSContext* cx, JS::Handle<JSObject*> obj);
  *
  * NOTE: "calendar" and "locale" properties are *not* added to the object.
  */
-extern MOZ_MUST_USE bool
-intl_GetCalendarInfo(JSContext* cx, unsigned argc, JS::Value* vp);
+extern MOZ_MUST_USE bool intl_GetCalendarInfo(JSContext* cx, unsigned argc,
+                                              JS::Value* vp);
 
 /**
  * Returns a plain object with locale information for a single valid locale
@@ -58,8 +58,8 @@ intl_GetCalendarInfo(JSContext* cx, unsigned argc, JS::Value* vp);
  *   locale
  *     a BCP47 compilant locale string for the resolved locale.
  */
-extern MOZ_MUST_USE bool
-intl_GetLocaleInfo(JSContext* cx, unsigned argc, JS::Value* vp);
+extern MOZ_MUST_USE bool intl_GetLocaleInfo(JSContext* cx, unsigned argc,
+                                            JS::Value* vp);
 
 /**
  * Returns an Array with CLDR-based fields display names.
@@ -100,9 +100,9 @@ intl_GetLocaleInfo(JSContext* cx, unsigned argc, JS::Value* vp);
  *   'AM'
  * ]
  */
-extern MOZ_MUST_USE bool
-intl_ComputeDisplayNames(JSContext* cx, unsigned argc, JS::Value* vp);
+extern MOZ_MUST_USE bool intl_ComputeDisplayNames(JSContext* cx, unsigned argc,
+                                                  JS::Value* vp);
 
-} // namespace js
+}  // namespace js
 
 #endif /* builtin_intl_IntlObject_h */
