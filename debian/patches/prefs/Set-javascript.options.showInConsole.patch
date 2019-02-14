@@ -7,7 +7,7 @@ Subject: Set javascript.options.showInConsole
  1 file changed, 1 insertion(+)
 
 diff --git a/modules/libpref/init/all.js b/modules/libpref/init/all.js
-index c34d67622f87..078880139fd8 100644
+index 17382a710847..ad95863e0448 100644
 --- a/modules/libpref/init/all.js
 +++ b/modules/libpref/init/all.js
 @@ -1457,6 +1457,7 @@ pref("javascript.options.ion",              true);
