@@ -87,28 +87,25 @@ ifneq (,$(findstring esr, $(VERSION)))
 SOURCE_TYPE := releases
 SHORT_SOURCE_CHANNEL := esr$(firstword $(subst ., ,$(VERSION)))
 SHORT_L10N_CHANNEL := release
+CHANNEL := esr
 else
 ifneq (,$(findstring ~b, $(VERSION)))
 # Betas are under releases/
 SOURCE_TYPE := releases
 SHORT_SOURCE_CHANNEL := beta
-else
-ifneq (,$(filter %~a2, $(VERSION)))
-# Aurora
-SOURCE_TYPE := nightly
-SHORT_SOURCE_CHANNEL := aurora
-DOWNLOAD_SOURCE := aurora
+CHANNEL := beta
 else
 ifneq (,$(filter %~a1, $(VERSION)))
 # Nightly
 SOURCE_TYPE := nightly
 SHORT_SOURCE_CHANNEL := central
 DOWNLOAD_SOURCE := nightly
+CHANNEL := nightly
 else
 # Release
 SOURCE_TYPE := releases
 SHORT_SOURCE_CHANNEL := release
-endif
+CHANNEL := release
 endif
 endif
 endif

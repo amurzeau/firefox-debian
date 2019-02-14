@@ -95,6 +95,12 @@ endif
 
 AUTOCONF_DIRS := build/autoconf
 
+CONFIGURE_FLAGS += --enable-update-channel=$(CHANNEL)
+
+ifneq (,$(filter mips mipsel,$(DEB_HOST_ARCH)))
+       CONFIGURE_FLAGS += --disable-ion
+endif
+
 ifneq (,$(filter noopt,$(DEB_BUILD_OPTIONS)))
 	CONFIGURE_FLAGS += --disable-optimize
 endif
