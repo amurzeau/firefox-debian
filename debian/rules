@@ -132,6 +132,10 @@ endif
 endif
 endif
 
+ifneq (,$(filter mips mipsel,$(DEB_HOST_ARCH)))
+CFLAGS += -mfp32
+endif
+
 CXXFLAGS = $(CFLAGS)
 
 ifeq ($(DEB_HOST_ARCH_ENDIAN),big)
