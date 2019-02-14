@@ -1,3 +1,16 @@
+firefox-esr (60.5.1esr-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2019-05, also known as:
+    CVE-2018-18356, CVE-2019-5785.
+
+  * debian/rules, debian/upstream.mk: Manually set the update channel.
+    Closes: #921381, #921121, #921654.
+  * debian/rules: Disable ion JIT on mips and mipsel. This should fix the
+    FTBFS.
+
+ -- Mike Hommey <glandium@debian.org>  Thu, 14 Feb 2019 18:35:06 +0900
+
 firefox-esr (60.5.0esr-1) unstable; urgency=medium
 
   * New upstream release.
