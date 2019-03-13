@@ -10,13 +10,14 @@ from __future__ import absolute_import, print_function, unicode_literals
 from taskgraph.loader.single_dep import schema
 from taskgraph.transforms.base import TransformSequence
 from taskgraph.util.attributes import copy_attributes_from_dependent_job
+from taskgraph.util.schema import taskref_or_string
 from taskgraph.util.scriptworker import (
     add_scope_prefix,
     get_signing_cert_scope_per_platform,
     get_worker_type_for_scope,
 )
 from taskgraph.transforms.task import task_description_schema
-from voluptuous import Any, Required, Optional
+from voluptuous import Required, Optional
 
 
 # Voluptuous uses marker objects as dictionary *keys*, but they are not
@@ -24,11 +25,6 @@ from voluptuous import Any, Required, Optional
 task_description_schema = {str(k): v for k, v in task_description_schema.schema.iteritems()}
 
 transforms = TransformSequence()
-
-# shortcut for a string where task references are allowed
-taskref_or_string = Any(
-    basestring,
-    {Required('task-reference'): basestring})
 
 signing_description_schema = schema.extend({
     # Artifacts from dep task to sign - Sync with taskgraph/transforms/task.py
@@ -100,7 +96,6 @@ def make_task_description(config, jobs):
         treeherder = None
         if 'partner' not in config.kind and 'eme-free' not in config.kind:
             treeherder = job.get('treeherder', {})
-            treeherder.setdefault('symbol', _generate_treeherder_symbol(is_nightly, config.kind))
 
             dep_th_platform = dep_job.task.get('extra', {}).get(
                 'treeherder', {}).get('machine', {}).get('platform', '')
@@ -111,6 +106,9 @@ def make_task_description(config, jobs):
             ))
 
             treeherder.setdefault('tier', 1 if '-ccov' not in build_platform else 2)
+            treeherder.setdefault('symbol', _generate_treeherder_symbol(
+                dep_job.task.get('extra', {}).get('treeherder', {}).get('symbol')
+            ))
             treeherder.setdefault('kind', 'build')
 
         label = job['label']
@@ -168,8 +166,6 @@ def _generate_treeherder_platform(dep_th_platform, build_platform, build_type):
     return '{}/{}'.format(dep_th_platform, actual_build_type)
 
 
-def _generate_treeherder_symbol(is_nightly, kind):
-    if is_nightly:
-        return 'Ns'
-    else:
-        return 'Bs'
+def _generate_treeherder_symbol(build_symbol):
+    symbol = build_symbol + 's'
+    return symbol

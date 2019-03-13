@@ -73,6 +73,8 @@ class MobileSingleLocale(LocalesMixin, TooltoolMixin, AutomationMixin,
                 "summary",
             ],
             'config': {
+                "hg_l10n_base": "https://hg.mozilla.org/l10n-central",
+                "log_name": "single_locale",
             },
         }
         LocalesMixin.__init__(self)
@@ -93,18 +95,20 @@ class MobileSingleLocale(LocalesMixin, TooltoolMixin, AutomationMixin,
             return self.repack_env
         c = self.config
         repack_env = self.query_env(partial_env=c.get("repack_env"))
-        if self.query_is_nightly() or self.query_is_nightly_promotion():
-            if self.query_is_nightly():
-                # Nightly promotion needs to set update_channel but not do all
-                # the 'IS_NIGHTLY' automation parts, like uploading symbols
-                # (for now).
-                repack_env["IS_NIGHTLY"] = "yes"
-            # In branch_specifics.py we might set update_channel explicitly.
+        if self.query_is_nightly():
+            # Nightly promotion needs to set update_channel but not do all
+            # the 'IS_NIGHTLY' automation parts, like uploading symbols
+            # (for now).
+            repack_env["IS_NIGHTLY"] = "yes"
+            # we might set update_channel explicitly
             if c.get('update_channel'):
-                repack_env["MOZ_UPDATE_CHANNEL"] = c['update_channel']
+                update_channel = c['update_channel']
             else:  # Let's just give the generic channel based on branch.
-                repack_env["MOZ_UPDATE_CHANNEL"] = \
-                    "nightly-%s" % (c['branch'],)
+                update_channel = "nightly-%s" % (c['branch'],)
+            if isinstance(update_channel, unicode):
+                update_channel = update_channel.encode("utf-8")
+            repack_env["MOZ_UPDATE_CHANNEL"] = update_channel
+            self.info("Update channel set to: {}".format(repack_env["MOZ_UPDATE_CHANNEL"]))
 
         self.repack_env = repack_env
         return self.repack_env
