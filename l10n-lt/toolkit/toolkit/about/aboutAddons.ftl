@@ -88,6 +88,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = Ne
     .tooltiptext = Nediegti priedo naujinimų automatiškai
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Leisti privačiojo naršymo languose
+detail-private-browsing-description = Priedas veiks privačiojo naršymo languose, ir turės prieigą prie jūsų veiksmų internete. <label data-l10n-name="detail-private-browsing-learn-more">Sužinoti daugiau</label>
+detail-private-browsing-on =
+    .label = Leisti
+    .tooltiptext = Įjungti privačiajame naršyme
+detail-private-browsing-off =
+    .label = Neleisti
+    .tooltiptext = Išjungti privačiajame naršyme
 detail-home =
     .label = Svetainė
 detail-home-value =
@@ -130,6 +139,12 @@ legacy-warning-show-legacy = Rodyti pasenusius plėtinius
 legacy-extensions =
     .value = Pasenę plėtiniai
 legacy-extensions-description = Šie plėtiniai neatitinka esamų „{ -brand-short-name }“ standartų, tad buvo išjungti. <label data-l10n-name="legacy-learn-more">Sužinokite apie priedų pokyčius</label>
+private-browsing-description2 =
+    „{ -brand-short-name }“ keičia priedų veikimą privačiojo naršymo languose. Visi nauji priedai, kuriuos pridėsite į
+    „{ -brand-short-name }“, neveiks privačiojo naršymo languose. Nebent leisite tai per nuostatas, priedas
+    neveiks naršant privačiai, ir neturės prieigos prie tokios jūsų veiklos. Šį pakeitimą atlikome
+    norėdami išlaikyti jūsų privatųjį naršymą privačiu.
+    <label data-l10n-name="private-browsing-learn-more">Sužinokite, kaip tvarkyti priedų nuostatas.</label>
 extensions-view-discover =
     .name = Parsisiųsti priedų
     .tooltiptext = { extensions-view-discover.name }
@@ -207,3 +222,39 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Įdiegti naujinimus
     .tooltiptext = Įdiegti šiame sąraše esančių priedų naujinimus
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Tvarkyti sparčiuosius klavišus priedams
+    .accesskey = s
+shortcuts-empty-message = Šiam priedui sparčiųjų klavišų nėra.
+shortcuts-no-addons = Neturite jokių įjungtų priedų.
+shortcuts-no-commands = Šie priedai neturi sparčiųjų klavišų komandų:
+shortcuts-input =
+    .placeholder = Surinkite klavišų kombinaciją
+shortcuts-browserAction = Įjungti priedą
+shortcuts-pageAction = Įjungti veiksmą tinklalapyje
+shortcuts-sidebarAction = Rodyti / slėpti šoninį polangį
+shortcuts-modifier-mac = Įtraukti Ctrl, Alt arba ⌘
+shortcuts-modifier-other = Įtraukti Ctrl arba Alt
+shortcuts-invalid = Netinkama kombinacija
+shortcuts-letter = Surinkite raidę
+shortcuts-system = Negalima naudoti „{ -brand-short-name }“ sparčiųjų klavišų
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] Rodyti dar { $numberToShow }
+        [few] Rodyti dar { $numberToShow }
+       *[other] Rodyti dar { $numberToShow }
+    }
+shortcuts-card-collapse-button = Rodyti mažiau
+go-back-button =
+    .tooltiptext = Eiti atgal
+
+## Add-on actions
+
+remove-addon-button = Pašalinti
+disable-addon-button = Išjungti
+enable-addon-button = Įjungti
+addons-enabled-heading = Įjungta
+addons-disabled-heading = Išjungta

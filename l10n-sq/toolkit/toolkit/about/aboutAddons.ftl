@@ -88,6 +88,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = Off
     .tooltiptext = Mos i instaloni vetvetiu përditësimet
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Xhiroje në Dritare Private
+detail-private-browsing-description = Zgjerimi do të funksionojë në Dritare Private, dhe do të mundet të hyjë në veprimtaritë tuaja internetore. <label data-l10n-name="detail-private-browsing-learn-more">Mësoni më tepër</label>
+detail-private-browsing-on =
+    .label = Lejoje
+    .tooltiptext = Aktivizojeni te Shfletimi Privat
+detail-private-browsing-off =
+    .label = Mos e Lejo
+    .tooltiptext = Çaktivizojeni te Shfletimi Privat
 detail-home =
     .label = Kreu
 detail-home-value =
@@ -130,6 +139,10 @@ legacy-warning-show-legacy = Shfaq zgjerime të dikurshme
 legacy-extensions =
     .value = Zgjerime të Dikurshme
 legacy-extensions-description = Këto zgjerime nuk i plotësojnë standardet e tanishme të { -brand-short-name }-it, ndaj janë çaktivizuar. <label data-l10n-name="legacy-learn-more">Mësoni mbi ndryshimet te shtesat</label>
+private-browsing-description2 =
+    Në { -brand-short-name } po ndryshon mënyra se si funksionojnë zgjerimet nën shfletim privat. Çfarëdo zgjerimi i ri që shtoni te
+    { -brand-short-name } s’do të xhirohet në Dritare Private, si parazgjedhje. Veç në e lejofshi te rregullimet, zgjerimi s’do të funksionojë, teksa gjendeni nën shfletim privat, dhe s’do të mund të përdorë veprimtaritë tuaja internetore të atyshme. Këtë ndryshim e kemi bërë për ta mbajtur privat shfletimin tuaj privat.
+    <label data-l10n-name="private-browsing-learn-more">Mësoni si të administroni rregullime zgjerimi.</label>
 extensions-view-discover =
     .name = Merrni Shtesa
     .tooltiptext = { extensions-view-discover.name }
@@ -207,3 +220,38 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Nuk u gjetën përditësime
     .tooltiptext = Instaloni përditësimet e mundshme prej kësaj liste
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Administroni Shkurtore Zgjerimesh
+    .accesskey = A
+shortcuts-empty-message = S’ka shkurtore për këtë zgjerim.
+shortcuts-no-addons = S’keni të aktivizuar ndonjë zgjerim.
+shortcuts-no-commands = Zgjerimet vijuese nuk kanë shkurtore:
+shortcuts-input =
+    .placeholder = Shtypni një shkurtore
+shortcuts-browserAction = Aktivizoni zgjerimin
+shortcuts-pageAction = Aktivizoni veprim faqeje
+shortcuts-sidebarAction = Shfaqni/fshihni anështyllën
+shortcuts-modifier-mac = Përfshi Ctrl, Alt, ose ⌘
+shortcuts-modifier-other = Përfshi Ctrl ose Alt
+shortcuts-invalid = Kombinim i pavlefshëm
+shortcuts-letter = Shtypni një shkronjë
+shortcuts-system = S’anashkalohet dot shkurtore { -brand-short-name }
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] Shfaq { $numberToShow } Më Tepër
+       *[other] Shfaq { $numberToShow } Më Tepër
+    }
+shortcuts-card-collapse-button = Shfaq Më Pak
+go-back-button =
+    .tooltiptext = Shkoni mbrapsht
+
+## Add-on actions
+
+remove-addon-button = Hiqe
+disable-addon-button = Çaktivizoje
+enable-addon-button = Aktivizoje
+addons-enabled-heading = I aktivizuar
+addons-disabled-heading = I çaktivizuar

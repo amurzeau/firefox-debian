@@ -210,3 +210,29 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Asenna päivitykset
     .tooltiptext = Asenna tämän listan saatavilla olevat päivitykset
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Hallitse laajennusten pikanäppäimiä
+    .accesskey = t
+shortcuts-empty-message = Tällä lisäosalle ei ole pikanäppäimiä.
+shortcuts-no-addons = Yhtäkään lisäosaa ei ole otettu käyttöön.
+shortcuts-input =
+    .placeholder = Kirjoita näppäinyhdistelmä
+shortcuts-browserAction = Aktivoi laajennus
+shortcuts-pageAction = Aktivoi sivutoiminto
+shortcuts-sidebarAction = Näytä/piilota sivupaneeli
+shortcuts-modifier-mac = Paina Ctrl-, Alt- tai ⌘-näppäintä
+shortcuts-modifier-other = Paina Ctrl- tai Alt-näppäintä
+shortcuts-invalid = Virheellinen yhdistelmä
+shortcuts-letter = Kirjoita kirjain
+shortcuts-system = { -brand-short-name }-pikanäppäintä ei voi korvata
+shortcuts-card-collapse-button = Näytä vähemmän
+go-back-button =
+    .tooltiptext = Takaisin
+
+## Add-on actions
+
+remove-addon-button = Poista
+disable-addon-button = Poista käytöstä

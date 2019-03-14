@@ -48,6 +48,7 @@ app-basics-memory-use = Zużycie pamięci
 app-basics-performance = Wydajność
 app-basics-service-workers = Zarejestrowane wątki usługowe
 app-basics-profiles = Profile
+app-basics-launcher-process-status = Proces uruchamiający
 app-basics-multi-process-support = Okna wieloprocesowe
 app-basics-process-count = Procesy treści sieciowych
 app-basics-enterprise-policies = Zasady organizacji
@@ -98,7 +99,7 @@ sandbox-sys-call-pid = PID
 sandbox-sys-call-tid = TID
 sandbox-sys-call-proc-type = Typ procesu
 sandbox-sys-call-number = Syscall
-sandbox-sys-call-args = Argumenty
+sandbox-sys-call-args = Parametry
 safe-mode-title = Tryb awaryjny
 restart-in-safe-mode-label = Uruchom ponownie z wyłączonymi dodatkami…
 media-title = Media
@@ -182,6 +183,8 @@ hardware-h264 = Sprzętowe dekodowanie H.264
 main-thread-no-omtc = główny wątek, brak OMTC
 yes = Tak
 no = Nie
+unknown = Nieznane
+virtual-monitor-disp = Wirtualny monitor
 
 ## The following strings indicate if an API key has been found.
 ## In some development versions, it's expected for some API keys that they are
@@ -189,6 +192,8 @@ no = Nie
 
 found = Obecny
 missing = Brak
+gpu-process-pid = PID procesu GPU
+gpu-process = Proces GPU
 gpu-description = Opis
 gpu-vendor-id = ID dostawcy
 gpu-device-id = ID urządzenia
@@ -221,11 +226,14 @@ d3d9video-crash-buard = Dekoder wideo D3D9
 glcontext-crash-guard = OpenGL
 reset-on-next-restart = Spróbuj włączyć przy następnym uruchomieniu
 gpu-process-kill-button = Zakończ proces GPU
+gpu-device-reset = Reset urządzenia
 gpu-device-reset-button = Resetuj urządzenie
 uses-tiling = Używa kafelkowania
 content-uses-tiling = Używa kafelkowania (treść)
 off-main-thread-paint-enabled = Rysowanie poza głównym wątkiem
 off-main-thread-paint-worker-count = Wątki rysujące poza głównym
+low-end-machine = Wykryto mniej wydajny komputer
+target-frame-rate = Docelowa liczba klatek na sekundę
 audio-backend = Mechanizm dźwięku
 max-audio-channels = Maksymalna liczba kanałów
 channel-layout = Preferowany układ kanałów
@@ -243,6 +251,11 @@ effective-content-sandbox-level = Efektywny poziom separacji treści
 sandbox-proc-type-content = zawartość
 sandbox-proc-type-file = zawartość pliku
 sandbox-proc-type-media-plugin = wtyczka
+sandbox-proc-type-data-decoder = dekoder danych
+launcher-process-status-0 = włączony
+launcher-process-status-1 = wyłączony z powodu awarii
+launcher-process-status-2 = wymuszone wyłączenie
+launcher-process-status-unknown = nieznany stan
 # Variables
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
@@ -254,7 +267,7 @@ multi-process-status-4 = wyłączone przez usługi ułatwień dostępu
 multi-process-status-6 = wyłączone ze względu na nieobsługiwaną metodę wprowadzania
 multi-process-status-7 = wyłączone przez dodatki
 multi-process-status-8 = wymuszone wyłączenie
-multi-process-status-unknown = nieznany status
+multi-process-status-unknown = nieznany stan
 async-pan-zoom = Asynchroniczne przewijanie/powiększanie
 apz-none = brak
 wheel-enabled = kółko

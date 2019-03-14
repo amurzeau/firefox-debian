@@ -93,6 +93,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = Desativada
     .tooltiptext = Não instalar atualizações automaticamente
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Executar em janelas privativas
+detail-private-browsing-description = A extensão funcionará em janelas privativas e terá acesso à sua atividade online. <label data-l10n-name="detail-private-browsing-learn-more">Saiba mais</label>
+detail-private-browsing-on =
+    .label = Permitir
+    .tooltiptext = Ativar na navegação privativa
+detail-private-browsing-off =
+    .label = Não permitir
+    .tooltiptext = Desativar na navegação privativa
 detail-home =
     .label = Site
 detail-home-value =
@@ -135,6 +144,12 @@ legacy-warning-show-legacy = Mostrar extensões legadas
 legacy-extensions =
     .value = Extensões legadas
 legacy-extensions-description = Estas extensões não cumprem os padrões atuais do { -brand-short-name }, então foram desativadas. <label data-l10n-name="legacy-learn-more">Saiba mais sobre mudanças em extensões</label>
+private-browsing-description2 =
+    O { -brand-short-name } está mudando o modo como extensões funcionam na navegação privativa. Qualquer nova extensão que você adicionar ao
+    { -brand-short-name } por padrão não funcionará em janelas privativas. A menos que você permita nas configurações, a
+    extensão não funcionará durante a navegação privativa e não terá acesso à sua atividade online.
+    Fizemos esta alteração para assegurar sua navegação privativa.
+    <label data-l10n-name="private-browsing-learn-more">Saiba como gerenciar configurações de extensões.</label>
 extensions-view-discover =
     .name = Adicionar
     .tooltiptext = { extensions-view-discover.name }
@@ -212,3 +227,38 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Instalar atualizações
     .tooltiptext = Instalar as atualizações disponíveis desta lista
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Gerenciar atalhos de extensões
+    .accesskey = h
+shortcuts-empty-message = Não há atalhos para esta extensão.
+shortcuts-no-addons = Você não tem nenhuma extensão ativada.
+shortcuts-no-commands = As seguintes extensões não têm atalhos de teclado:
+shortcuts-input =
+    .placeholder = Digite um atalho
+shortcuts-browserAction = Ativar extensão
+shortcuts-pageAction = Ativar ação de página
+shortcuts-sidebarAction = Exibir/ocultar o painel lateral
+shortcuts-modifier-mac = Incluir Ctrl, Alt ou ⌘
+shortcuts-modifier-other = Incluir Ctrl ou Alt
+shortcuts-invalid = Combinação inválida
+shortcuts-letter = Digite uma letra
+shortcuts-system = Não é possível substituir um atalho do { -brand-short-name }
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] Mostrar mais { $numberToShow }
+       *[other] Mostrar mais { $numberToShow }
+    }
+shortcuts-card-collapse-button = Mostrar menos
+go-back-button =
+    .tooltiptext = Voltar
+
+## Add-on actions
+
+remove-addon-button = Remover
+disable-addon-button = Desativar
+enable-addon-button = Ativar
+addons-enabled-heading = Ativado
+addons-disabled-heading = Desativado

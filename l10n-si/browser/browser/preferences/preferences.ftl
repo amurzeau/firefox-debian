@@ -4,8 +4,6 @@
 
 do-not-track-description = පසුහැඹීම අනවශ්‍ය වෙබ් අඩවි සඳහා “පසුහැඹීම එපා“ සංඥාව යවන්න
 do-not-track-learn-more = තවත් දැනගන්න
-do-not-track-option-default =
-    .label = හඹායෑම් ආරක්ෂාව භාවිත කරන විට පමණක්
 do-not-track-option-always =
     .label = සැමවිටම
 pref-page =
@@ -17,6 +15,7 @@ pref-page =
 pane-general-title = සාමාන්‍ය
 category-general =
     .tooltiptext = { pane-general-title }
+pane-home-title = නිවස
 pane-search-title = සෙවුම
 category-search =
     .tooltiptext = { pane-search-title }
@@ -28,6 +27,7 @@ pane-sync-title = Firefox ගිනුම
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } සහය
+addons-button-label = දිගු සහ තේමාවන්
 focus-search =
     .key = f
 close-button =
@@ -52,10 +52,44 @@ restart-later = පසුව යළි අරඹන්න
 ## Variables:
 ##   $name (String): name of the extension
 
+# This string is shown to notify the user that their home page
+# is being controlled by an extension.
+extension-controlled-homepage-override = <img data-l10n-name="icon"/>{ $name }, නමැති දිගුවක් ඔබේ මුල් පිටුව පාලනය කරයි.
+# This string is shown to notify the user that their new tab page
+# is being controlled by an extension.
+extension-controlled-new-tab-url = <img data-l10n-name="icon"/>{ $name }, නමාති දිගුව ඔබගේ නව ටැබ පිටුව පාලනය කරයි.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = <img data-l10n-name="icon"/>{ $name }, නමැති දිගුව මෙම සැකසුම පාලනය කරයි.
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = <img data-l10n-name="icon"/>{ $name }, නමැති දිගුව ඔබගේ පෙරනිමි සෙවුම් එළවුම පිහිටුවා ඇත.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = <img data-l10n-name="icon"/>{ $name }, නමැති දිගුව සඳහා, බහාළුම් ටැබ අවශ්‍ය වේ.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/>{ $name }, නමැති දිගුව මෙම සැකසුම පාලනය කරයි.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlled-proxy-config = <img data-l10n-name="icon"/>{ $name }, නමැති දිගුව { -brand-short-name } අන්තර්ජාලයට සබඳ වන ආකාරය පාලනය කරයි.
+# This string is shown after the user disables an extension to notify the user
+# how to enable an extension that they disabled.
+#
+# <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
+# <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
+extension-controlled-enable = මෙම දිගුව සක්‍රීය කිරීමට <img data-l10n-name="menu-icon"/> මෙනුවෙහි <img data-l10n-name="addons-icon"/> ඇඩෝන වෙත යන්න.
 
 ## Preferences UI Search Results
 
 search-results-header = සෙවුම් ප්‍රථිපල
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message =
+    { PLATFORM() ->
+        [windows] සමාවන්න! විකල්ප තුළ <span data-l10n-name="query"></span>  සඳහා ප්‍රථිපල නොමැත.
+       *[other] සමාවන්න! අභිප්‍රේත තුළ <span data-l10n-name="query"></span>  සඳහා ප්‍රථිපල නොමැත.
+    }
+search-results-help-link = උදව් ඇවැසිද? <a data-l10n-name="url">{ -brand-short-name }සහාය</a> වෙත පිවිසෙන්න
 
 ## General Section
 
@@ -75,12 +109,20 @@ is-not-default = { -brand-short-name } දැනට ඔබේ පෙරනිම
 set-as-my-default-browser =
     .label = පෙරනිමිය ලෙස සකසන්න…
     .accesskey = D
+startup-restore-previous-session =
+    .label = පෙර සැසිය ප්‍රතිස්ථාපනය කරන්න
+    .accesskey = s
+startup-restore-warn-on-quit =
+    .label = ගවේශකයෙන් පිටවන විට ඔබට දන්වන්න
 disable-extension =
     .label = දිගු ක්‍රියා විරහිත කරන්න
 tabs-group-header = ටැබ්
 ctrl-tab-recently-used-order =
     .label = මෑතදී භාවිත පෙළගැස්මට ටැබ අතර මාරුවීම සඳහා Ctrl+Tab භාවිත කරන්න
     .accesskey = T
+open-new-link-as-tabs =
+    .label = නව කවුළු වෙනුවට සබැඳි නව ටැබ තුළ පෙන්වන්න
+    .accesskey = w
 warn-on-close-multiple-tabs =
     .label = ටැබ් කිහිපයක් වසා දැමීමේදී ඔබට අනතුරු අගවයි
     .accesskey = m
@@ -101,6 +143,7 @@ containers-disable-alert-cancel-button = සක්‍රියව තබන්�
 
 ## General Section - Language & Appearance
 
+language-and-appearance-header = භාෂාව සහ පෙනුම
 fonts-and-colors-header = අක්‍ෂර සහ වර්ණ
 default-font = පෙරනිමි ෆොන්ටය
     .accesskey = D
@@ -161,6 +204,9 @@ applications-type-column =
 applications-action-column =
     .label = ක්‍රියාව
     .accesskey = A
+play-drm-content =
+    .label = DRM-පාලිත අන්තර්ගතය ධාවනය කරන්න
+    .accesskey = P
 play-drm-content-learn-more = තවත් දැනගන්න
 update-application-title = { -brand-short-name } යාවත්කාල
 update-history =
@@ -218,9 +264,11 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = ඔබ යතුරුකරණය ආරම්භ කළ විට පෙළ සඳහා සොයන්න
     .accesskey = x
+browsing-cfr-recommendations-learn-more = තවත් දැනගන්න
 
 ## General Section - Proxy
 
+network-settings-title = ජාල සැකසුම්
 network-proxy-connection-learn-more = තවත් දැනගන්න
 network-proxy-connection-settings =
     .label = සැකසුම්...
@@ -267,6 +315,9 @@ search-engine-default-header = පෙරනිමි සෙවුම් එළ�
 search-suggestions-option =
     .label = සෙවුම් යෝජනා ලබාදෙන්න
     .accesskey = s
+search-show-suggestions-url-bar-option =
+    .label = සෙවුම් යෝජනා ලිපින තීරුවේ පෙන්වන්න
+    .accesskey = I
 search-one-click-header = ඒක-ක්ලික් සෙවුම් එළවුම්
 search-choose-engine-column =
     .label = සෙචුම් එළවුම
@@ -320,6 +371,8 @@ sync-mobile-promo = මෙය සඳහා Firefox බාගත කරන්න 
 
 ## Sync Section - Signed in
 
+sync-profile-picture =
+    .tooltiptext = පැතිකඩ පින්තූරය වෙනස් කරන්න
 sync-disconnect =
     .label = විසන්ධි කරන්න...
     .accesskey = D
@@ -327,6 +380,9 @@ sync-manage-account = ගිණුම කළමනාකරණය කරන්�
     .accesskey = o
 sync-signedin-unverified = { $email } තහවුරු කර නොමැත
 sync-signedin-login-failure = කරුණාකර නැවත සබඳවීමට පිවිසෙන්න { $email }
+sync-resend-verification =
+    .label = තහවුරු කිරීම නැවත එවන්න
+    .accesskey = d
 sync-remove-account =
     .label = ගිණුම ඉවත් කරන්න
     .accesskey = R
@@ -347,6 +403,10 @@ sync-engine-addresses =
     .label = ලිපින
     .tooltiptext = ඔබ සුරක්ෂිත කර අැති ලිපින (මේස පරිඝනකයේ පමණි)
     .accesskey = e
+sync-engine-creditcards =
+    .label = ණය පත්
+    .tooltiptext = නම්,අංක සහ කල් ඉකුත්වන දින ( ඩෙස්ක්ටොප් පමණි)
+    .accesskey = C
 sync-device-name-header = උපාංග නාමය
 sync-device-name-change =
     .label = මෙවලම් නාමය වෙනස් කරන්න...
@@ -364,9 +424,11 @@ sync-fxa-privacy-notice = පෞද්ගලිකත්ව දැන්වී�
 
 ## Privacy Section
 
+privacy-header = ගවේශන පුද්ගලිකත්වය
 
 ## Privacy Section - Forms
 
+logins-header = පිවිසුම් සහ මුරපද
 forms-exceptions =
     .label = හැරදැමීම්...
     .accesskey = x
@@ -393,6 +455,9 @@ history-dontremember-description = { -brand-short-name } එම සැකසු�
 history-private-browsing-permanent =
     .label = සෑම විටම පෞද්ගලික ගවේෂණය භාවිතා කරන්න
     .accesskey = p
+history-remember-browser-option =
+    .label = ගවේශන ඉතිහාසය සහ බාගැනීම් මතක තබාගන්න
+    .accesskey = b
 history-remember-search-option =
     .label = සෙවීම් සහ පෝරම අතීතයන් මතක තබාගන්න
     .accesskey = f
@@ -409,17 +474,15 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-learn-more = තවත් දැනගන්න
-sitedata-keep-until-closed =
-    .label = { -brand-short-name } වසා අැත
 sitedata-clear =
     .label = දත්ත මකන්න...
     .accesskey = l
 sitedata-settings =
     .label = දත්ත කළමනාකරණය කරන්න...
     .accesskey = M
-sitedata-cookies-exceptions =
-    .label = හැරදැමීම්...
-    .accesskey = E
+sitedata-cookies-permissions =
+    .label = බලතල කළමනාකරණය...
+    .accesskey = p
 
 ## Privacy Section - Address Bar
 
@@ -434,21 +497,29 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = ටැබ් විවෘත කරන්න
     .accesskey = O
+addressbar-suggestions-settings = සෙවුම් යන්ත්‍රයේ යෝජනා සඳහා අභිරුචි වෙනස් කරන්න
 
 ## Privacy Section - Content Blocking
 
+content-blocking-learn-more = තවත් දැනගන්න
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = සම්මත
+    .accesskey = d
+content-blocking-setting-strict =
+    .label = දැඩි
+    .accesskey = r
+content-blocking-setting-custom =
+    .label = රිසිකළ
+    .accesskey = C
+content-blocking-learn-how = කෙසේදැයි ඉගෙන ගන්න
 
 ## Privacy Section - Tracking
 
-tracking-mode-always =
-    .label = සැමවිටම
-    .accesskey = y
-tracking-mode-private =
-    .label = පුද්ගලික කවුළුවකදී පමණක්
-    .accesskey = l
-tracking-mode-never =
-    .label = කිසිදාක නැත
-    .accesskey = n
+tracking-manage-exceptions =
+    .label = හැරදැමීම් කළමනාකරණය
+    .accesskey = x
 
 ## Privacy Section - Permissions
 
@@ -470,12 +541,28 @@ permissions-notification-settings =
     .label = සිටුවම්...
     .accesskey = t
 permissions-notification-link = තවත් දැනගන්න
+permissions-notification-pause =
+    .label = { -brand-short-name } යළි ඇරඹේන තෙක්දැ නුම්දීම් මඳක් නවතන්න
+    .accesskey = n
+permissions-block-autoplay-media-exceptions =
+    .label = හැරදැමීම්...
+    .accesskey = E
+autoplay-option-ask =
+    .label = සෑමවිටම විමසන්න
+autoplay-option-allow =
+    .label = ස්වයං වාදනයට ඉඩ දෙන්න
+autoplay-option-dont =
+    .label = ස්වයං වාදනයට ඉඩ නොදෙන්න
+permissions-autoplay-link = තවත් දැනගන්න
 permissions-block-popups =
     .label = පොප්-අප් කවුළු වලකන්න
     .accesskey = B
 permissions-block-popups-exceptions =
     .label = හැරදැමීම්...
     .accesskey = E
+permissions-addon-install-warning =
+    .label = වෙබ්අඩවි ඇඩෝන ස්ථාපනයට සැරසෙන විට ඔබට අවවාද කරන්න
+    .accesskey = W
 permissions-addon-exceptions =
     .label = හැරදැමීම්...
     .accesskey = E
@@ -485,6 +572,7 @@ permissions-a11y-privacy-link = තවත් දැනගන්න
 
 collection-privacy-notice = පෞද්ගලිකත්ව දැනුම්දීම
 collection-health-report-link = තවත් දැනගන්න
+addon-recommendations-link = තවත් දැනගන්න
 collection-browser-errors-link = තවත් දැනගන්න
 collection-backlogged-crash-reports-link = තවත් දැනගන්න
 
@@ -498,6 +586,9 @@ security-enable-safe-browsing-link = තවත් දැනගන්න
 security-block-downloads =
     .label = භයානක බාගත කිරීම් අවහිර කරන්න
     .accesskey = d
+security-block-uncommon-software =
+    .label = අනවශ්‍ය සහ අසාමාන්‍ය මෘදුකාංග ගැන අනතුරු අඟවන්න
+    .accesskey = c
 
 ## Privacy Section - Certificates
 
@@ -532,9 +623,16 @@ space-alert-over-5gb-pref-button =
             [windows] O
            *[other] O
         }
+space-alert-under-5gb-ok-button =
+    .label = හරි, පැහැදිලියි
+    .accesskey = K
 
 ## The following strings are used in the Download section of settings
 
 desktop-folder-name = මුලිකතිරය
 downloads-folder-name = බාගැනිම්
 choose-download-folder-title = බාගත විමේ බහලුම තේරීම:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = ලිපිගොනු { $service-name } වෙත සුරකින්න

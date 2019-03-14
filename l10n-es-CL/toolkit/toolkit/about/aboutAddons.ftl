@@ -88,6 +88,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = No
     .tooltiptext = No instalar actualizaciones automáticamente
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Ejecutar en ventanas privadas
+detail-private-browsing-description = Las extensiones funcionarán en las ventanas privadas, y tendrán acceso a tus actividades en línea. <label data-l10n-name="detail-private-browsing-learn-more">Aprender más</label>
+detail-private-browsing-on =
+    .label = Permitir
+    .tooltiptext = Activar en navegación privada
+detail-private-browsing-off =
+    .label = No permitir
+    .tooltiptext = Desactivar en navegación privada
 detail-home =
     .label = Sitio web
 detail-home-value =
@@ -130,9 +139,10 @@ legacy-warning-show-legacy = Mostrar extensiones heredadas
 legacy-extensions =
     .value = Extensiones heredadas
 legacy-extensions-description = Estas extensiones no cumplen con los estándares actuales de { -brand-short-name } por lo que han sido desactivadas. <label data-l10n-name="legacy-learn-more">Aprender más sobre los cambios a los complementos</label>
+private-browsing-description = Por defecto, las extensiones no tienen permitido ejecutarse en ventanas privadas. Esto significa que no funcionarán durante la navegación privada y no tendrán acceso a tus actividades en línea. Para permitir a una extensión ejecutarse en ventanas privadas, selecciona la tarjeta de extensiones a continuación y cambia tu ajuste. <label data-l10n-name="private-browsing-learn-more">Aprender más.</label>
 extensions-view-discover =
-    .name = Obtener complementos
-    .tooltiptext = { extensions-view-discover.name }
+    .name = Obtener nuevos
+    .tooltiptext = Obtener complementos
 extensions-view-recent-updates =
     .name = Actualizaciones recientes
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -207,3 +217,38 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Instalar actualizaciones
     .tooltiptext = Instalar actualizaciones disponibles en esta lista
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Gestionar atajos de extensiones
+    .accesskey = S
+shortcuts-empty-message = No hay atajos para esta extensión.
+shortcuts-no-addons = No tienes ninguna extensión habilitada.
+shortcuts-no-commands = Las siguientes extensiones no tienen atajos:
+shortcuts-input =
+    .placeholder = Escribe un atajo
+shortcuts-browserAction = Activar extensión
+shortcuts-pageAction = Activar acción de página
+shortcuts-sidebarAction = Barra lateral
+shortcuts-modifier-mac = Incluye Ctrl, Alt o ⌘
+shortcuts-modifier-other = Incluye Ctrl o Alt
+shortcuts-invalid = Combinación inválida
+shortcuts-letter = Escribe una letra
+shortcuts-system = No se puede sobrescribir un atajo de { -brand-short-name }
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] Mostrar { $numberToShow } más
+       *[other] Mostrar { $numberToShow } más
+    }
+shortcuts-card-collapse-button = Mostrar menos
+go-back-button =
+    .tooltiptext = Retroceder
+
+## Add-on actions
+
+remove-addon-button = Remover
+disable-addon-button = Desactivar
+enable-addon-button = Activar
+addons-enabled-heading = Activado
+addons-disabled-heading = Desactivado

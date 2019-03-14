@@ -4,10 +4,6 @@
 
 do-not-track-description = Siųsti svetainėms „Do Not Track“ signalą, nurodant pageidavimą nebūti sekamiems
 do-not-track-learn-more = Sužinoti daugiau
-do-not-track-option-default =
-    .label = Tik naudojant apsaugą nuo stebėjimo
-do-not-track-option-default-content-blocking =
-    .label = Tik kai „{ -brand-short-name }“ nustatyta blokuoti žinomus stebėjimo elementus
 do-not-track-option-default-content-blocking-known =
     .label = Tik kai „{ -brand-short-name }“ nurodyta blokuoti žinomus stebėjimo elementus
 do-not-track-option-always =
@@ -54,6 +50,9 @@ category-privacy =
 pane-sync-title = „Firefox“ paskyra
 category-sync =
     .tooltiptext = { pane-sync-title }
+pane-sync-title2 = { -sync-brand-short-name }
+category-sync2 =
+    .tooltiptext = { pane-sync-title2 }
 help-button-label = „{ -brand-short-name }“ pagalba
 addons-button-label = Priedai ir grafiniai apvalkalai
 focus-search =
@@ -95,9 +94,6 @@ extension-controlled-default-search = Priedas „<img data-l10n-name="icon"/> { 
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = Priedui „<img data-l10n-name="icon"/> { $name }“ reikia sudėtinio rodinio kortelių.
-# This string is shown to notify the user that their tracking protection preferences
-# are being controlled by an extension.
-extension-controlled-websites-tracking-protection-mode = Priedas „<img data-l10n-name="icon"/> { $name }“ valdo apsaugą nuo stebėjimo.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
 extension-controlled-websites-content-blocking-all-trackers = Šią nuostatą valdo priedas <img data-l10n-name="icon"/> „{ $name }“.
@@ -289,6 +285,7 @@ update-application-check-choose =
 update-application-manual =
     .label = niekada netikrinti ar yra naujinimų (nerekomenduojama)
     .accesskey = N
+update-application-warning-cross-user-setting = Ši nuostata bus pritaikyta visoms „Windows“ paskyroms ir „{ -brand-short-name }“ profiliams, naudojantiems šią „{ -brand-short-name }“ įdiegtį.
 update-application-use-service =
     .label = naujinimų įdiegimui naudoti fone veikiančią tarnybą
     .accesskey = f
@@ -341,6 +338,9 @@ browsing-search-on-start-typing =
 browsing-cfr-recommendations =
     .label = Rekomenduoti priedus naršant
     .accesskey = R
+browsing-cfr-features =
+    .label = Rekomenduoti funkcijas naršant
+    .accesskey = f
 browsing-cfr-recommendations-learn-more = Sužinoti daugiau
 
 ## General Section - Proxy
@@ -533,6 +533,9 @@ sync-device-name-save =
     .accesskey = r
 sync-mobilepromo-single = Susieti kitą įrenginį
 sync-mobilepromo-multi = Tvarkyti įrenginius
+sync-connect-another-device = Susieti kitą įrenginį
+sync-manage-devices = Tvarkyti įrenginius
+sync-fxa-begin-pairing = Susieti įrenginį
 sync-tos-link = Paslaugos teikimo nuostatai
 sync-fxa-privacy-notice = Privatumo pranešimas
 
@@ -609,15 +612,10 @@ sitedata-total-size-calculating = Skaičiuojamas svetainių duomenų ir podėlio
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Saugomi slapukai, svetainių duomenys ir podėlis šiuo metu užima { $value } { $unit } disko vietos.
 sitedata-learn-more = Sužinoti daugiau
-sitedata-keep-until = Laikyti iki
-    .accesskey = y
-sitedata-keep-until-expire =
-    .label = jie baigia galioti
-sitedata-keep-until-closed =
-    .label = „{ -brand-short-name }“ yra uždaroma
 sitedata-delete-on-close =
     .label = Ištrinti slapukus ir svetainių duomenis uždarant „{ -brand-short-name }“
     .accesskey = s
+sitedata-delete-on-close-private-browsing = Nuolatinėje privačiojo naršymo veiksenoje, slapukai ir svetainių duomenys bus visada išvalomi užveriant „{ -brand-short-name }“.
 sitedata-allow-cookies-option =
     .label = Priimti slapukus ir svetainių duomenis
     .accesskey = P
@@ -628,16 +626,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Blokuojamas tipas
     .accesskey = t
-sitedata-block-trackers-option-recommended =
-    .label = Trečiųjų šalių stebėjimo elementai (rekomenduojama)
-sitedata-block-trackers-option =
-    .label = Trečiųjų šalių stebėjimo elementai
-sitedata-block-unvisited-option =
-    .label = Slapukai iš neaplankytų svetainių
-sitedata-block-all-third-party-option =
-    .label = Visi trečiųjų šalių slapukai (gali sutrikti svetainių veikimas)
-sitedata-block-all-option =
-    .label = Visi slapukai (sutriks svetainių veikimas)
 sitedata-option-block-trackers =
     .label = Trečiųjų šalių stebėjimo elementai
 sitedata-option-block-unvisited =
@@ -652,13 +640,6 @@ sitedata-clear =
 sitedata-settings =
     .label = Tvarkyti duomenis…
     .accesskey = T
-sitedata-cookies-exceptions =
-    .label = Išimtys…
-    .accesskey = I
-# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
-# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
-# Cookies and Site Data section.
-sitedata-warning-your-settings-prevent-changes = Jūsų „turinio blokavimo“ nuostatos neleidžia pakeisti „slapukų ir svetainių duomenų“ nuostatų.
 sitedata-cookies-permissions =
     .label = Tvarkyti leidimus…
     .accesskey = l
@@ -681,41 +662,8 @@ addressbar-suggestions-settings = Keisti ieškyklių siūlymų nuostatas
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Turinio blokavimas
-content-blocking-desc = Blokuokite trečiųjų šalių turinį, pvz., reklamas ir kodą, galintį sulėtinti jūsų naršymą ir stebėti jūsų naršymo įpročius. Pritaikykite nuostatas sau, kad pasiektumėte geriausią saugumo ir našumo balansą.
 content-blocking-description = Blokuokite trečiųjų šalių turinį, kuris stebi jūsų veiklą internete. Kontroliuokite, kiek jūsų veiklos saugoma ir dalijamasi tarp svetainių.
 content-blocking-learn-more = Sužinoti daugiau
-content-blocking-restore-defaults =
-    .label = Atstatyti numatytąsias
-    .accesskey = A
-content-blocking-toggle-on =
-    .tooltiptext = Išjungti turinio blokavimą
-content-blocking-toggle-off =
-    .tooltiptext = Įjungti turinio blokavimą
-content-blocking-toggle-label-on = ĮJUNGTA
-    .accesskey = J
-content-blocking-toggle-label-off = IŠJUNGTA
-    .accesskey = I
-content-blocking-category-label = Pasirinkite, ką blokuoti
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-slow-loading-trackers-label =
-    .label = Lėtai įkeliami stebėjimo elementai
-    .accesskey = L
-content-blocking-fastblock-new-description = Blokuoti tik tinklalapių įkėlimą stabdančius stebėjimo elementus.
-content-blocking-tracking-protection-trackers-label =
-    .label = Stebėjimo elementai
-    .accesskey = t
-content-blocking-tracking-protection-all-detected-trackers-label =
-    .label = Visi aptikti stebėjimo elementai
-    .accesskey = e
-content-blocking-tracking-protection-new-description = Blokuoti visus žinomus stebėjimo elementus (gali sutrikti kai kurių svetainių įkėlimas).
-content-blocking-tracking-protection-option-always =
-    .label = Visada
-    .accesskey = V
-content-blocking-tracking-protection-option-private =
-    .label = Tik privačiojo naršymo languose
-    .accesskey = p
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 content-blocking-setting-standard =
@@ -737,6 +685,7 @@ content-blocking-all-windows-trackers = Žinomi stebėjimo elementai visuose lan
 content-blocking-all-third-party-cookies = Visi trečiųjų šalių slapukai
 content-blocking-warning-title = Dėmesio!
 content-blocking-warning-desc = Užblokavus slapukus ir stebėjimo elementus, gali sutrikti kai kurių svetainių veikimas. Galite lengvai išjungti blokavimą patikimose svetainėse.
+content-blocking-warning-description = Blokuojant turinį gali sutrikti kai kurių svetainių veikimas. Blokavimą galima lengvai išjungti patikimose svetainėse.
 content-blocking-learn-how = Sužinoti kaip
 content-blocking-trackers-label =
     .label = Stebėjimo elementai
@@ -748,51 +697,21 @@ content-blocking-option-private =
     .label = Tik privačiojo naršymo languose
     .accesskey = p
 content-blocking-tracking-protection-change-block-list = Keisti blokavimo sąrašą
-content-blocking-third-party-cookies-label =
-    .label = Trečiųjų šalių slapukai
-    .accesskey = s
-content-blocking-reject-trackers-description = Blokuoja visus trečiųjų šalių slapukus, arba tik nustatytus stebėjimo elementų.
-# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
-# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
-# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
-# the UI.
-content-blocking-reject-trackers-warning-your-settings-prevent-changes = Jūsų „slapukų ir svetainių duomenų“ nuostatos neleidžia pakeisti „trečiųjų šalių slapukų“ nuostatų.
-content-blocking-change-cookie-settings =
-    .label = Keisti slapukų nuostatas
-    .accesskey = n
-content-blocking-reject-trackers-block-trackers-option-recommended =
-    .label = Stebėjimo elementai (rekomenduojama)
-    .accesskey = b
-content-blocking-reject-trackers-block-trackers-option =
-    .label = Stebėjimo elementai
-    .accesskey = b
-content-blocking-reject-trackers-all-third-parties-option =
-    .label = Visi trečiųjų šalių slapukai (gali sutrikti svetainių veikimas)
-    .accesskey = V
 content-blocking-cookies-label =
     .label = Slapukai
+    .accesskey = S
+# Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
+content-blocking-cryptominers-label =
+    .label = Kriptovaliutų kasėjai
+    .accesskey = i
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+content-blocking-fingerprinters-label =
+    .label = Skaitmeninių atspaudų stebėjimas
     .accesskey = S
 
 ## Privacy Section - Tracking
 
-tracking-header = Apsauga nuo stebėjimo
-tracking-desc = Apsauga nuo stebėjimo blokuoja stebėjimo elementus, renkančius jūsų naršymo duomenis daugelyje svetainių. <a data-l10n-name="learn-more">Sužinokite daugiau apie apsaugą nuo stebėjimo ir savo privatumą</a>
-tracking-mode-label = Naudokite apsaugą nuo stebėjimo, norėdami užblokuoti žinomus stebėjimo elementus
-tracking-mode-always =
-    .label = Visada
-    .accesskey = V
-tracking-mode-private =
-    .label = Tik privačiojo naršymo languose
-    .accesskey = T
-tracking-mode-never =
-    .label = Niekada
-    .accesskey = N
-tracking-exceptions =
-    .label = Išimtys…
-    .accesskey = I
-tracking-change-block-list =
-    .label = Keisti blokavimo sąrašą…
-    .accesskey = K
 tracking-manage-exceptions =
     .label = Tvarkyti išimtis…
     .accesskey = m
@@ -824,6 +743,9 @@ permissions-block-autoplay-media =
     .label = Drausti svetainėms automatiškai groti medijas su garsu
     .accesskey = D
 permissions-block-autoplay-media-menu = Svetainėms, kurios automatiškai groja garsą
+permissions-block-autoplay-media2 =
+    .label = Neleisti svetainėms automatiškai groti garso.
+    .accesskey = N
 permissions-block-autoplay-media-exceptions =
     .label = Išimtys…
     .accesskey = I

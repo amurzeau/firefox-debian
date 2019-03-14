@@ -4,10 +4,6 @@
 
 do-not-track-description = Sendi al retejoj sciigon, ke vi ne volas esti spurata
 do-not-track-learn-more = Pli da informo
-do-not-track-option-default =
-    .label = Nur dum uzo de protekto kontraŭ spurado
-do-not-track-option-default-content-blocking =
-    .label = Nur kiam { -brand-short-name } estas agordita por trovi spurilojn
 do-not-track-option-default-content-blocking-known =
     .label = Nur kiam { -brand-short-name } estas agordita por bloki konatajn spurilojn
 do-not-track-option-always =
@@ -54,6 +50,9 @@ category-privacy =
 pane-sync-title = Konto de Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
+pane-sync-title2 = { -sync-brand-short-name }
+category-sync2 =
+    .tooltiptext = { pane-sync-title2 }
 help-button-label = Helpo pri { -brand-short-name }
 addons-button-label = Etendaĵoj kaj etosoj
 focus-search =
@@ -95,9 +94,6 @@ extension-controlled-default-search = La etendaĵo <img data-l10n-name="icon"/> 
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = La etendaĵo <img data-l10n-name="icon"/> { $name } postulas ingajn langetojn.
-# This string is shown to notify the user that their tracking protection preferences
-# are being controlled by an extension.
-extension-controlled-websites-tracking-protection-mode = La etendaĵo <img data-l10n-name="icon"/> { $name } regas la protekton kontraŭ spurado.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
 extension-controlled-websites-content-blocking-all-trackers = La etendaĵo <img data-l10n-name="icon"/> { $name } regas tiun ĉi agordon.
@@ -286,6 +282,7 @@ update-application-check-choose =
 update-application-manual =
     .label = Neniam kontroli ĉu estas ĝisdatigoj (malkonsilinda)
     .accesskey = N
+update-application-warning-cross-user-setting = Tiu ĉi agordo estos aplikita al ĉiuj kontoj de Windows kaj profiloj de { -brand-short-name }, kiuj uzas tiun ĉi instalitan version de { -brand-short-name }.
 update-application-use-service =
     .label = Uzi fonan servon por instali ĝisdatigojn
     .accesskey = f
@@ -338,6 +335,9 @@ browsing-search-on-start-typing =
 browsing-cfr-recommendations =
     .label = Sugesti etendaĵojn dum retumo
     .accesskey = S
+browsing-cfr-features =
+    .label = Sugesti funkciojn dum retumo
+    .accesskey = f
 browsing-cfr-recommendations-learn-more = Pli da informo
 
 ## General Section - Proxy
@@ -530,6 +530,9 @@ sync-device-name-save =
     .accesskey = K
 sync-mobilepromo-single = Konekti alian aparaton
 sync-mobilepromo-multi = Administri aparatojn
+sync-connect-another-device = Konekti alian aparaton
+sync-manage-devices = Administri aparatojn
+sync-fxa-begin-pairing = Asocii aparaton
 sync-tos-link = Kondiĉoj de uzado
 sync-fxa-privacy-notice = Rimarko pri privateco
 
@@ -606,15 +609,10 @@ sitedata-total-size-calculating = Kalkulo de datuma kaj stapla grando de retejo�
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Viaj konservitaj kuketoj, retejaj datumoj kaj staplo uzas nuntempe { $value } { $unit } da diska spaco.
 sitedata-learn-more = Pli da informo
-sitedata-keep-until = Konservi ĝis
-    .accesskey = K
-sitedata-keep-until-expire =
-    .label = ilia senvalidiĝo
-sitedata-keep-until-closed =
-    .label = la fermo de { -brand-short-name }
 sitedata-delete-on-close =
     .label = Forigi kuketojn kaj retejajn datumojn je fermo de { -brand-short-name }
     .accesskey = F
+sitedata-delete-on-close-private-browsing = En la konstanta reĝimo de privata retumo, kuketoj kaj retejaj datumoj estos forviŝitaj je ĉiu fermo de { -brand-short-name }.
 sitedata-allow-cookies-option =
     .label = Akcepti kuketojn kaj retejajn datumojn
     .accesskey = A
@@ -625,16 +623,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Blokita tipo
     .accesskey = B
-sitedata-block-trackers-option-recommended =
-    .label = Nerektaj spuriloj (rekomendita)
-sitedata-block-trackers-option =
-    .label = Nerektaj spuriloj
-sitedata-block-unvisited-option =
-    .label = Kuketoj el nevizititaj retejoj
-sitedata-block-all-third-party-option =
-    .label = Ĉiuj nerektaj kuketoj (tio povus misfunkciigi retejojn)
-sitedata-block-all-option =
-    .label = Ĉiuj kuketoj (tio misfunkciigos retejojn)
 sitedata-option-block-trackers =
     .label = Nerektaj spuriloj
 sitedata-option-block-unvisited =
@@ -649,13 +637,6 @@ sitedata-clear =
 sitedata-settings =
     .label = Administri datumojn…
     .accesskey = d
-sitedata-cookies-exceptions =
-    .label = Esceptoj…
-    .accesskey = t
-# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
-# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
-# Cookies and Site Data section.
-sitedata-warning-your-settings-prevent-changes = Viaj agordoj en blokado de enhavo malpermesas ŝanĝi la agordojn por kuketoj kaj retejaj datumoj.
 sitedata-cookies-permissions =
     .label = Administri permesojn…
     .accesskey = A
@@ -678,41 +659,8 @@ addressbar-suggestions-settings = Ŝanĝi preferojn pri serĉilaj sugestoj
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Blokado de enhavo
-content-blocking-desc = Bloku nerektan enhavon, kiel ekzemple reklamojn aŭ kodon, kiu povas malrapidigi vian retumon kaj spuri vin tra la teksaĵo. Personecigu viajn agordojn por trafi la plej bonan ekvilibron inter protekto kaj efikeco.
 content-blocking-description = Bloku nerektan enhavon, kiu spuras vin tra la reto. Regu kiom multe de via retuma informo estas konservita kaj dividita inter retejoj.
 content-blocking-learn-more = Pli da informo
-content-blocking-restore-defaults =
-    .label = Remeti normajn valorojn
-    .accesskey = R
-content-blocking-toggle-on =
-    .tooltiptext = Malŝalti blokadon de enhavo
-content-blocking-toggle-off =
-    .tooltiptext = Ŝalti blokadon de enhavo
-content-blocking-toggle-label-on = Ŝaltita
-    .accesskey = a
-content-blocking-toggle-label-off = Malŝaltita
-    .accesskey = l
-content-blocking-category-label = Elektu, kion bloki
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-slow-loading-trackers-label =
-    .label = Spuriloj, kiuj ŝargiĝas malrapide
-    .accesskey = m
-content-blocking-fastblock-new-description = Bloki nur spurilojn, kiuj malrapidigas la rapidan ŝargadon de paĝoj.
-content-blocking-tracking-protection-trackers-label =
-    .label = Spuriloj
-    .accesskey = S
-content-blocking-tracking-protection-all-detected-trackers-label =
-    .label = Ĉiujn trovitajn spurilojn
-    .accesskey = t
-content-blocking-tracking-protection-new-description = Bloki ĉiujn konatajn spurilojn. (tio povas eviti la ŝargadon de kelkaj paĝoj.)
-content-blocking-tracking-protection-option-always =
-    .label = Ĉiam
-    .accesskey = m
-content-blocking-tracking-protection-option-private =
-    .label = Nur en privataj fenestroj
-    .accesskey = p
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 content-blocking-setting-standard =
@@ -734,6 +682,7 @@ content-blocking-all-windows-trackers = Konataj spuriloj en ĉiuj fenestroj
 content-blocking-all-third-party-cookies = Ĉiuj nerektaj kuketoj
 content-blocking-warning-title = Atentu!
 content-blocking-warning-desc = La blokado de kuketoj kaj spuriloj povas misfunkciigi kelkajn retejojn. Estas facile malaktivigi la blokadon por tiuj retejoj, kiujn vi fidas.
+content-blocking-warning-description = La blokado de enhavo povas misfunkciigi kelkajn retejojn. Estas facile malaktivigi la blokadon por retejoj, kiujn vi fidas.
 content-blocking-learn-how = Pli da informo
 content-blocking-trackers-label =
     .label = Spuriloj
@@ -745,51 +694,21 @@ content-blocking-option-private =
     .label = Nur en privataj fenestroj
     .accesskey = p
 content-blocking-tracking-protection-change-block-list = Ŝanĝi liston de blokado
-content-blocking-third-party-cookies-label =
-    .label = Nerektaj kuketoj
-    .accesskey = N
-content-blocking-reject-trackers-description = Bloki ĉiujn nerektajn kuketojn aŭ nur tiujn, kiuj estas difinitaj de spuriloj.
-# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
-# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
-# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
-# the UI.
-content-blocking-reject-trackers-warning-your-settings-prevent-changes = Viaj agordoj en kuketoj kaj retejaj datumoj malpermesas ŝanĝi la agordojn de nerektaj kuketoj.
-content-blocking-change-cookie-settings =
-    .label = Ŝanĝi agordojn de kuketoj
-    .accesskey = k
-content-blocking-reject-trackers-block-trackers-option-recommended =
-    .label = Spuriloj (rekomendata)
-    .accesskey = S
-content-blocking-reject-trackers-block-trackers-option =
-    .label = Spuriloj
-    .accesskey = S
-content-blocking-reject-trackers-all-third-parties-option =
-    .label = Ĉiuj nerektaj kuketoj (tio povus misfunkciigi retejojn)
-    .accesskey = n
 content-blocking-cookies-label =
     .label = Kuketoj
     .accesskey = K
+# Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
+content-blocking-cryptominers-label =
+    .label = Miniloj de ĉifromono
+    .accesskey = M
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+content-blocking-fingerprinters-label =
+    .label = Identigiloj de ciferecaj spuroj
+    .accesskey = I
 
 ## Privacy Section - Tracking
 
-tracking-header = Protekto kontraŭ spurado
-tracking-desc = La protekto kontraŭ spurado blokas retajn spurilojn, kiuj kolektas viajn retumajn datumojn tra pluraj retejoj. <a data-l10n-name="learn-more">Pli da informo pri protekto kontraŭ spurado kaj via privateco</a>
-tracking-mode-label = Uzi protekton kontraŭ spurado por bloki konatajn spurilojn
-tracking-mode-always =
-    .label = Ĉiam
-    .accesskey = m
-tracking-mode-private =
-    .label = Nur en privataj fenestroj
-    .accesskey = p
-tracking-mode-never =
-    .label = Neniam
-    .accesskey = N
-tracking-exceptions =
-    .label = Esceptoj…
-    .accesskey = E
-tracking-change-block-list =
-    .label = Ŝanĝi liston de blokado…
-    .accesskey = b
 tracking-manage-exceptions =
     .label = Administri esceptojn…
     .accesskey = e
@@ -821,6 +740,9 @@ permissions-block-autoplay-media =
     .label = Malpermesi al retejoj aŭtomate ludi aŭdvidaĵojn kun sono
     .accesskey = s
 permissions-block-autoplay-media-menu = Por retejoj, kiuj aŭtomate ludas sonon
+permissions-block-autoplay-media2 =
+    .label = Bloki aŭtomatan ludadon de sono en retejoj
+    .accesskey = B
 permissions-block-autoplay-media-exceptions =
     .label = Esceptoj
     .accesskey = E

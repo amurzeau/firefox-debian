@@ -212,3 +212,23 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Nainštalovať aktualizácie
     .tooltiptext = Nainštalovať aktualizácie dostupné v zozname
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Spravovať klávesové skratky pre rozšírenia
+    .accesskey = n
+shortcuts-empty-message = Toto rozšírenie nemá žiadne klávesové skratky.
+shortcuts-no-addons = Nemáte povolené žiadne rozšírenie.
+shortcuts-no-commands = Nasledujúce rozšírenia nemajú skratky:
+shortcuts-input =
+    .placeholder = Zadajte klávesovú skratku
+shortcuts-invalid = Neplatná kombinácia klávesov
+shortcuts-letter = Napíšte písmeno
+shortcuts-card-collapse-button = Zobraziť menej
+go-back-button =
+    .tooltiptext = Späť
+
+## Add-on actions
+
+remove-addon-button = Odstrániť

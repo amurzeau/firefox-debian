@@ -88,6 +88,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = Malŝaltita
     .tooltiptext = Ne instali ĝisdatigojn aŭtomate
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Lanĉi en privataj fenestroj
+detail-private-browsing-description = La etendaĵo funkcios en privataj fenestroj kaj havos aliron al viaj retumaj agoj. <label data-l10n-name="detail-private-browsing-learn-more">Pli da informo</label>
+detail-private-browsing-on =
+    .label = Permesi
+    .tooltiptext = Aktivigi en privata retumo
+detail-private-browsing-off =
+    .label = Malpermesi
+    .tooltiptext = Ne aktivigi en privata retumo
 detail-home =
     .label = Ĉefpaĝo
 detail-home-value =
@@ -130,6 +139,7 @@ legacy-warning-show-legacy = Montri kadukajn etendaĵojn
 legacy-extensions =
     .value = Kadukaj etendaĵoj
 legacy-extensions-description = Tiuj ĉi etendaĵoj ne kongruas kun la nunaj normoj de { -brand-short-name }, tial ili estis malaktivigitaj. <label data-l10n-name="legacy-learn-more">Pli da informo pri la ŝanĝoj en aldonaĵoj</label>
+private-browsing-description2 = { -brand-short-name } modifis la funkciadon de etendaĵoj en privata retumo. Norme, neniu nova etendaĵo aldonita al { -brand-short-name } funkcios en privataj fenestroj. Krom se vi permesos tion en agordoj, la etendaĵo ne funkcios en privata retumo kaj ne havos aliron al viaj agoj en la interreto. Ni ŝanĝis tion por certigi, ke via privata retumo restu privata. <label data-l10n-name="private-browsing-learn-more">Pli da informo pri administro de agordoj de etendaĵoj.</label>
 extensions-view-discover =
     .name = Elŝuti aldonaĵojn
     .tooltiptext = { extensions-view-discover.name }
@@ -207,3 +217,38 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Instali ĝisdatigojn
     .tooltiptext = Instali haveblajn ĝisdatigojn en tiu ĉi listo
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Administri alirklavojn de etendaĵoj
+    .accesskey = A
+shortcuts-empty-message = Estas neniu alirklavo por tiu ĉi etendaĵo.
+shortcuts-no-addons = Vi havas neniun aktivan etendaĵon.
+shortcuts-no-commands = La jenaj etendaĵoj ne havas alirklavojn:
+shortcuts-input =
+    .placeholder = Tajpu alirklavon
+shortcuts-browserAction = Aktivigi etendaĵon
+shortcuts-pageAction = Aktivigi paĝan agon
+shortcuts-sidebarAction = Montri/kaŝi flankan strion
+shortcuts-modifier-mac = Inkluzivi Stir, Alt aŭ ⌘
+shortcuts-modifier-other = Inkluzivi Stir aŭ Alt
+shortcuts-invalid = Nevalida kombino
+shortcuts-letter = Tajpu literon
+shortcuts-system = Ne eblas anstataŭigi alirklavon de { -brand-short-name }
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] Montri { $numberToShow } pli
+       *[other] Montri { $numberToShow } pli
+    }
+shortcuts-card-collapse-button = Montri malpli
+go-back-button =
+    .tooltiptext = Iri reen
+
+## Add-on actions
+
+remove-addon-button = Forigi
+disable-addon-button = Malaktivigi
+enable-addon-button = Aktivigi
+addons-enabled-heading = Aktiva
+addons-disabled-heading = Malaktiva

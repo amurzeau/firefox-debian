@@ -19,3 +19,12 @@ state-header = অবস্থা
 #   $buildID (String): build identifier from the local updates.xml
 update-full-name =
     .name = { $name } ({ $buildID })
+# Used to display update history
+#
+# Variables:
+#   $name (String): name of the update
+#   $buildID (String): build identifier from the local updates.xml
+update-full-build-name = { $name } ({ $buildID })
+update-details = বিস্তারিত
+update-installed-on = ইনস্টল করার তারিখ: { $date }
+update-status = অবস্থা: { $status }

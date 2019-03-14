@@ -92,6 +92,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = Izključeno
     .tooltiptext = Posodobitev ne nameščaj samodejno
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Zaženi v zasebnih oknih
+detail-private-browsing-description = Razširitev bo delovala v zasebnih oknih in bo imela dostop do vaše spletne aktivnosti. <label data-l10n-name="detail-private-browsing-learn-more">Več o tem</label>
+detail-private-browsing-on =
+    .label = Dovoli
+    .tooltiptext = Omogoči v zasebnem brskanju
+detail-private-browsing-off =
+    .label = Ne dovoli
+    .tooltiptext = Onemogoči v zasebnem brskanju
 detail-home =
     .label = Domača stran
 detail-home-value =
@@ -211,3 +220,40 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Namesti posodobitve
     .tooltiptext = Namesti posodobitve, ki so na voljo v seznamu
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Upravljanje bližnjic razširitev
+    .accesskey = b
+shortcuts-empty-message = Za to razširitev ni bližnjic.
+shortcuts-no-addons = Nimate omogočenih razširitev.
+shortcuts-no-commands = Naslednje razširitve nimajo dodeljenih bližnjic:
+shortcuts-input =
+    .placeholder = Vnesite bližnjico
+shortcuts-browserAction = Aktiviraj razširitev
+shortcuts-pageAction = Aktiviraj dejanje strani
+shortcuts-sidebarAction = Preklopi stransko vrstico
+shortcuts-modifier-mac = Vključi Ctrl, Alt ali ⌘
+shortcuts-modifier-other = Vključi Ctrl ali Alt
+shortcuts-invalid = Neveljavna kombinacija
+shortcuts-letter = Vnesite črko
+shortcuts-system = Bližnjice { -brand-short-name }a ni mogoče preglasiti
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] Prikaži še { $numberToShow }
+        [two] Prikaži še { $numberToShow }
+        [few] Prikaži še { $numberToShow }
+       *[other] Prikaži še { $numberToShow }
+    }
+shortcuts-card-collapse-button = Prikaži manj
+go-back-button =
+    .tooltiptext = Nazaj
+
+## Add-on actions
+
+remove-addon-button = Odstrani
+disable-addon-button = Onemogoči
+enable-addon-button = Omogoči
+addons-enabled-heading = Omogočeno
+addons-disabled-heading = Onemogočeno

@@ -4,6 +4,9 @@
 
 addons-window =
     .title = सहयुक्तियाँ प्रबंधक
+search-header =
+    .placeholder = addons.mozilla.org खोजें
+    .searchbuttonlabel = खोजें
 search-header-shortcut =
     .key = f
 loading-label =
@@ -21,6 +24,12 @@ list-empty-button =
 install-addon-from-file =
     .label = फ़ाइल से सहयुक्ति संस्थापित करें…
     .accesskey = I
+help-button = ऐड-ऑन समर्थन
+preferences =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } विकल्प
+       *[other] { -brand-short-name } प्राथमिकताएं
+    }
 tools-menu =
     .tooltiptext = सभी सहयुक्तियों के लिए औज़ार
 show-unsigned-extensions-button =
@@ -198,3 +207,24 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = अद्यतन संस्थापित करें
     .tooltiptext = इस सूची में उपलब्ध अद्यतन संस्थापित करें
+
+## Extension shortcut management
+
+shortcuts-manage =
+    .label = कुंजीपटल शॉर्टकट‌‌
+manage-extensions-shortcuts =
+    .label = एक्सटेंशन शॉर्टकट प्रबंधित करें
+    .accesskey = S
+shortcuts-empty-message = इस एक्सटेंशन के लिए कोई शॉर्टकट नहीं हैं।
+shortcuts-no-addons = आपके पास कोई एक्सटेंशन सक्रिय नहीं है।
+shortcuts-input =
+    .placeholder = एक शॉर्टकट टाइप करें
+shortcuts-browserAction = एक्सटेंशन को सक्रिय करें
+shortcuts-pageAction = पृष्ठ क्रिया सक्रिय करें
+shortcuts-sidebarAction = साइडबार को टॉगल करें
+shortcuts-modifier-mac = Ctrl, Alt, या ⌘ शामिल करें
+shortcuts-modifier-other = Ctrl या Alt शामिल करें
+shortcuts-invalid = अमान्य संयोजन
+shortcuts-letter = एक अक्षर लिखें
+go-back-button =
+    .tooltiptext = वापस जाएँ

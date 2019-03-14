@@ -88,6 +88,14 @@ detail-update-automatic =
 detail-update-manual =
     .label = Desactivar
     .tooltiptext = No instalar actualizaciones automáticamente
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Ejecutar en ventanas privadas
+detail-private-browsing-on =
+    .label = Permitir
+    .tooltiptext = Activar en navegación privada
+detail-private-browsing-off =
+    .label = No permitir
+    .tooltiptext = Deshabilitar en navegación privada
 detail-home =
     .label = Página de inicio
 detail-home-value =
@@ -207,3 +215,17 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Instalar actualizaciones
     .tooltiptext = Instalar actualizaciones disponibles en esta lista
+
+## Extension shortcut management
+
+shortcuts-browserAction = Activar extensión
+shortcuts-pageAction = Activar acción de página
+shortcuts-sidebarAction = Alternar la barra lateral
+shortcuts-modifier-mac = Incluir Ctrl, Alt o ⌘
+shortcuts-modifier-other = Incluir Ctrl o Alt
+shortcuts-invalid = Combinación inválida
+shortcuts-card-collapse-button = Mostrar menos
+
+## Add-on actions
+
+remove-addon-button = Eliminar

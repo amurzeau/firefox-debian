@@ -17,6 +17,7 @@ policy-BlockAboutConfig = Blocar accesso al pagina about:config.
 policy-BlockAboutProfiles = Blocar accesso al pagina about:profiles.
 policy-BlockAboutSupport = Blocar accesso al pagina about:support.
 policy-Bookmarks = Crear marcapaginas in le barra del instrumentos de marcapaginas, menu de marcapaginas o un plica specificate intra illos
+policy-CaptivePortal = Activar o disactivar supporto pro portal captive.
 policy-CertificatesDescription = Adde certificatos o usa certificatos integrate.
 policy-Cookies = Consentir o negar al sitos web de definir cookies.
 policy-DisableAppUpdate = Impedir le actualisation del navigator.
@@ -44,16 +45,18 @@ policy-DisplayMenuBar = Monstrar le Barra del menu de ordinario.
 policy-DNSOverHTTPS = Configura DNS sur HTTPS.
 policy-DontCheckDefaultBrowser = Disactivar le controlo Navigator predefinite al lanceamento initial.
 # “lock” means that the user won’t be able to change this setting
-policy-EnableTrackingProtection = Activar o disactivar le Blocage de contentos e optionalmente serrar lo.
+policy-EnableTrackingProtection = Activar o disactivar le Blocada de contentos e optionalmente serrar lo.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
 policy-Extensions = Installar, disinstallar o blocar le extensiones. Le option Installar require URLs o percursos como parametros. Le optiones Disinstallar e Blocate require le extension IDs.
+policy-ExtensionUpdate = Activar o disactivar le actualisation automatic de extensiones.
 policy-FlashPlugin = Consentir o negar le uso del plugin Flash.
 policy-HardwareAcceleration = Si false, disactivar le acceleration hardware.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Definir e optionalmente blocar le pagina principal.
 policy-InstallAddonsPermission = Consentir a certe sitos web de installar additivos.
+policy-NetworkPrediction = Activar o disactivar prediction del rete (prelectura del DNS).
 policy-NoDefaultBookmarks = Disactivar le creation del marcapaginas predefinite impacchettate con { -brand-short-name } e le Marcapaginas intelligente (Plus Visitate, Tags recente). Nota: iste criterio es efficace solo si usate ante le prime uso del profilo.
 policy-OfferToSaveLogins = Fortiar le configuration pro consentir a { -brand-short-name } de offerer de memorar connexiones e contrasignos salvate. Ambe valores ver e false es acceptate.
 policy-OverrideFirstRunPage = Supplantar le pagina del lanceamento initial.
@@ -67,5 +70,8 @@ policy-SearchBar = Definir le localisation predefinite del barra de recerca. Le 
 policy-SearchEngines = Configurar le parametros del motores de recerca. Iste criterio es solmente disponibile sur le version con supporto extendite (Extended Support Release - ESR).
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Installar modulos PKCS #11.
+policy-SSLVersionMax = Stabilir le version SSL maxime.
+policy-SSLVersionMin = Stabilir le version SSL minime.
+policy-SupportMenu = Adder un selection de supporto personalisate al menu de adjuta.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Blocar de ser visitate sitos web. Vider documentation pro altere detalios sur le formato.

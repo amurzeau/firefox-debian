@@ -44,6 +44,7 @@ app-basics-memory-use = Bellek kullanımı
 app-basics-performance = Performans
 app-basics-service-workers = Kayıtlı Service Worker'lar
 app-basics-profiles = Profiller
+app-basics-launcher-process-status = Başlatıcı işlemi
 app-basics-multi-process-support = Çok işlemli pencereler
 app-basics-process-count = Web içeriği işlemi
 app-basics-enterprise-policies = Kurumsal ilkeler
@@ -222,6 +223,8 @@ uses-tiling = Tiling kullanımı
 content-uses-tiling = Tiling kullanımı (içerik)
 off-main-thread-paint-enabled = Off main thread painting etkin
 off-main-thread-paint-worker-count = Off main thread painting işçi sayısı
+low-end-machine = Düşük performanslı makine algılandı
+target-frame-rate = Hedef kare hızı
 audio-backend = Ses arka ucu
 max-audio-channels = En fazla kanal
 channel-layout = Tercih edilen kanal düzeni
@@ -239,6 +242,11 @@ effective-content-sandbox-level = Etkin içerik işlemi kum havuzu düzeyi
 sandbox-proc-type-content = içerik
 sandbox-proc-type-file = dosya içeriği
 sandbox-proc-type-media-plugin = ortam yan uygulaması
+sandbox-proc-type-data-decoder = veri çözücü
+launcher-process-status-0 = Etkin
+launcher-process-status-1 = Hata nedeniyle devre dışı
+launcher-process-status-2 = Zorla devre dışı bırakıldı
+launcher-process-status-unknown = Bilinmeyen durum
 # Variables
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows

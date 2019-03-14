@@ -3,6 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 history-title = යාවත්කාල කිරීම්හී අතීතයන්
+history-intro = පහත යාවත් ස්ථාපනය වී ඇත
 close-button-label =
     .buttonlabelcancel = වසන්න
     .title = යාවත්කාල කිරීම්හී අතීතයන්
@@ -18,3 +19,12 @@ state-header = තත්වය
 #   $buildID (String): build identifier from the local updates.xml
 update-full-name =
     .name = { $name } ({ $buildID })
+# Used to display update history
+#
+# Variables:
+#   $name (String): name of the update
+#   $buildID (String): build identifier from the local updates.xml
+update-full-build-name = { $name } ({ $buildID })
+update-details = තොරතුරු
+update-installed-on = ස්ථාපිත දිනය: { $date }
+update-status = තත්වය: { $status }

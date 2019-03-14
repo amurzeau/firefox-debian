@@ -47,6 +47,7 @@ app-basics-memory-use = Utilisation mémoire
 app-basics-performance = Performances
 app-basics-service-workers = Service workers inscrits
 app-basics-profiles = Profils
+app-basics-launcher-process-status = Processus de lancement
 app-basics-multi-process-support = Fenêtres multiprocessus
 app-basics-process-count = Processus de contenu web
 app-basics-enterprise-policies = Stratégies d’entreprise
@@ -177,6 +178,7 @@ main-thread-no-omtc = Fil d’exécution principal, pas d’OMTC
 yes = Oui
 no = Non
 unknown = Inconnu
+virtual-monitor-disp = Affichage virtuel
 
 ## The following strings indicate if an API key has been found.
 ## In some development versions, it's expected for some API keys that they are
@@ -218,11 +220,13 @@ d3d9video-crash-buard = Décodeur vidéo D3D9
 glcontext-crash-guard = OpenGL
 reset-on-next-restart = Réinitialisé au prochain démarrage
 gpu-process-kill-button = Arrêter le processus GPU
+gpu-device-reset = Réinitialisation de l’appareil
 gpu-device-reset-button = Déclencher la réinitialisation de l’appareil
 uses-tiling = Utilise le pavage
 content-uses-tiling = Utilise le pavage (contenu)
 off-main-thread-paint-enabled = Painting en dehors du fil d’exécution principal activé
 off-main-thread-paint-worker-count = Nombre de workers participant au painting en dehors du fil d’exécution principal
+low-end-machine = Machine peu performante détectée
 target-frame-rate = Fréquence d’images cible
 audio-backend = Backend audio
 max-audio-channels = Nombre maximum de canaux
@@ -241,6 +245,10 @@ effective-content-sandbox-level = Niveau effectif du bac à sable pour les proce
 sandbox-proc-type-content = contenu
 sandbox-proc-type-file = contenu du fichier
 sandbox-proc-type-media-plugin = plugin multimédia
+launcher-process-status-0 = Activé
+launcher-process-status-1 = Désactivé en raison d’une défaillance
+launcher-process-status-2 = Désactivé de force
+launcher-process-status-unknown = État inconnu
 # Variables
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows

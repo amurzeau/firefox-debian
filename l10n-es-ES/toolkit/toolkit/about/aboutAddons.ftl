@@ -88,6 +88,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = No
     .tooltiptext = No instalar automáticamente las actualizaciones
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Ejecutar en ventana privada
+detail-private-browsing-description = La extensión se ejecutará en las ventanas privadas y tendrá acceso a su actividad en línea. <label data-l10n-name="detail-private-browsing-learn-more">Saber más</label>
+detail-private-browsing-on =
+    .label = Permitir
+    .tooltiptext = Activar en navegación privada
+detail-private-browsing-off =
+    .label = No permitir
+    .tooltiptext = Desactivar en navegación privada
 detail-home =
     .label = Página de inicio
 detail-home-value =
@@ -207,3 +216,38 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Instalar actualizaciones
     .tooltiptext = Instalar actualizaciones disponibles en esta lista
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Administrar atajos de extensiones
+    .accesskey = s
+shortcuts-empty-message = No hay atajos para esta extensión.
+shortcuts-no-addons = No tiene ninguna extensión habilitada.
+shortcuts-no-commands = Las siguientes extensiones no tienen atajos:
+shortcuts-input =
+    .placeholder = Escriba un atajo
+shortcuts-browserAction = Activar extensión
+shortcuts-pageAction = Activar acción de página
+shortcuts-sidebarAction = Alternar la barra lateral
+shortcuts-modifier-mac = Incluir Ctrl, Alt o ⌘
+shortcuts-modifier-other = Incluir Ctrl o Alt
+shortcuts-invalid = Combinación no válida
+shortcuts-letter = Escriba una letra
+shortcuts-system = No se puede sobrescribir un acceso directo de { -brand-short-name }.
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] Mostrar { $numberToShow } más
+       *[other] Mostrar { $numberToShow } más
+    }
+shortcuts-card-collapse-button = Mostrar menos
+go-back-button =
+    .tooltiptext = Retroceder
+
+## Add-on actions
+
+remove-addon-button = Eliminar
+disable-addon-button = Desactivar
+enable-addon-button = Activar
+addons-enabled-heading = Activado
+addons-disabled-heading = Desactivado

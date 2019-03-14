@@ -88,6 +88,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = Wušaltowany
     .tooltiptext = Aktualizacije awtomatiski njeinstalěrowaś
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = W priwatnych woknach wuwjasć
+detail-private-browsing-description = Rozšyrjenje buźo w priwatnych woknach funkcioněrowaś a změjo pśistup k wašym aktiwitam online. <label data-l10n-name="detail-private-browsing-learn-more">Dalšne informacije</label>
+detail-private-browsing-on =
+    .label = Dowóliś
+    .tooltiptext = W priwatnem modusu zmóžniś
+detail-private-browsing-off =
+    .label = Njedowóliś
+    .tooltiptext = W priwatnem modusu znjemóžniś
 detail-home =
     .label = Startowy bok
 detail-home-value =
@@ -130,6 +139,11 @@ legacy-warning-show-legacy = Zestarjone rozšyrjenja pokazaś
 legacy-extensions =
     .value = Zestarjone rozšyrjenja
 legacy-extensions-description = Toś te rozšyrjenja su se znjemóžnili, dokulaž standardam { -brand-short-name } njewótpowěduju. <label data-l10n-name="legacy-learn-more">Dalšne informacije wó změnach toś tych dodankow</label>
+private-browsing-description2 =
+    { -brand-short-name } změnja, kak rozšyrjenja w priwatnem modusu funkcioněruju. Nowe rozšyrjenja, kótarež
+    { -brand-short-name } pśidawaśo, pó standarźe w priwatnych woknach njefunkcioněruju. Snaźkuli
+    dowólujośo to w nastajenjach, rozšyrjenje w priwatnem modusu njefunkcioněrujo a njama pśistup k wašym
+    aktiwitam online. Smy toś tu změnu cynili, aby waš priwatny modus priwatny wóstał. <label data-l10n-name="private-browsing-learn-more">Zgóńśo wěcej wó zastojanju nastajenjow rozšyrjenja.</label>
 extensions-view-discover =
     .name = Dodanki wobstaraś
     .tooltiptext = { extensions-view-discover.name }
@@ -207,3 +221,40 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Aktualizacije instalěrowaś
     .tooltiptext = K dispoziciji stojece aktualizacije z lisćiny instalěrowaś
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Tastowe skrotconki rozšyrjenjow zastojaś
+    .accesskey = T
+shortcuts-empty-message = Njedaju tastowe skrotconki za toś to rozšyrjenje.
+shortcuts-no-addons = Njejśco zmóžnił žedne rozšyrjenja.
+shortcuts-no-commands = Slědujuce rozšyrjenja njamaju  tastowe skrotconki:
+shortcuts-input =
+    .placeholder = Zapódajśo tastowu skrotconku
+shortcuts-browserAction = Rozšyrjenje aktiwěrowaś
+shortcuts-pageAction = Akciju boka aktiwěrowaś
+shortcuts-sidebarAction = Bocnicu pśešaltowaś
+shortcuts-modifier-mac = Strg, Alt abo ⌘ zapśimjeś
+shortcuts-modifier-other = Strg abo Alt zapśimjeś
+shortcuts-invalid = Njepłaśiwa kombinacija
+shortcuts-letter = Zapódajśo pismik
+shortcuts-system = Tastowa skrotconka { -brand-short-name } njedajo se pśepisaś
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] { $numberToShow } dalšny pokazaś
+        [two] { $numberToShow } dalšnej pokazaś
+        [few] { $numberToShow } dalšne pokazaś
+       *[other] { $numberToShow } dalšnych pokazaś
+    }
+shortcuts-card-collapse-button = Mjenjej pokazaś
+go-back-button =
+    .tooltiptext = Slědk
+
+## Add-on actions
+
+remove-addon-button = Wótwónoźeś
+disable-addon-button = Znjemóžniś
+enable-addon-button = Zmóžniś
+addons-enabled-heading = Zmóžnjony
+addons-disabled-heading = Znjemóžnjony

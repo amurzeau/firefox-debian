@@ -17,6 +17,7 @@ policy-BlockAboutConfig = Zablokování přístupu do editoru předvoleb (about:
 policy-BlockAboutProfiles = Zablokování přístupu do správce profilů (about:profiles).
 policy-BlockAboutSupport = Zablokování přístupu na stránku s technickými informacemi (about:support).
 policy-Bookmarks = Vytvoření záložek na liště, v nabídce nebo vybrané složce.
+policy-CaptivePortal = Povolení nebo zakázání podpory captive portálů.
 policy-CertificatesDescription = Přidat certifikáty nebo použít vestavěné certifikáty.
 policy-Cookies = Pravidla pro ukládání nebo blokování cookies.
 policy-DisableAppUpdate = Blokování aktualizací prohlížeče.
@@ -49,11 +50,13 @@ policy-EnableTrackingProtection = Zapnutí nebo vypnutí blokování obsahu a p�
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
 policy-Extensions = Instalace, odinstalace a uzamčení rozšíření. Pro instalaci je potřeba jako parametr zadat URL adresy nebo cesty. Pro odinstalaci nebo uzamčení ID rozšíření.
+policy-ExtensionUpdate = Vypnutí nebo zapnutí automatických aktualizací rozšíření.
 policy-FlashPlugin = Povolení nebo zablokování zásuvného modulu Flash.
 policy-HardwareAcceleration = Hodnota false vypne použití hardwarové akcelerace.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Nastavení a případné uzamčení domovské stránky.
 policy-InstallAddonsPermission = Povolení instalace doplňků z vybraných webových stránek.
+policy-NetworkPrediction = Povolení nebo zakázání přednačítání DNS.
 policy-NoDefaultBookmarks = Vypnutí vytváření výchozích záložek a chytrých záložek aplikace { -brand-short-name } (Nejnavštěvovanější, Poslední štítky). Poznámka: toto pravidlo se uplatní jen pokud bude nastaveno před prvním spuštěním.
 policy-OfferToSaveLogins = Nastavení dotazu na uložení přihlašovacích údajů v aplikaci { -brand-short-name }. Lze použít hodnoty true i false.
 policy-OverrideFirstRunPage = Nastavení vlastní stránky při prvním spuštění. Pokud nechcete při prvním spuštění zobrazovat žádnou stránku, nastavte toto pravidlo jako prázdné.
@@ -67,5 +70,8 @@ policy-SearchBar = Nastavení výchozího umístění vyhledávacího pole. Uži
 policy-SearchEngines = Nastavení vyhledávačů. Toto pravidlo je dostupné jen pro verzi s rozšířenou podporou (ESR).
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Instalace modulů PKCS #11.
+policy-SSLVersionMax = Nastavení maximální verze SSL.
+policy-SSLVersionMin = Nastavení minimální verze SSL.
+policy-SupportMenu = Přidání vlastní položky nabídky s nápovědou.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Blokování návštěvy webových stránek. Více informací o formátu najdete v dokumentaci.

@@ -17,7 +17,7 @@ policy-BlockAboutConfig = Bloki aliron al la paĝo about:config.
 policy-BlockAboutProfiles = Bloki aliron al la paĝo about:profiles.
 policy-BlockAboutSupport = Bloki aliron al la paĝo about:support.
 policy-Bookmarks = Krei legosignojn en la ilaro de legosignoj, en la menuo de legosignoj, aŭ en dosierujo sub ili.
-policy-Certificates = Ĉu uzi aŭ ne uzi inkluzivitajn atestilojn. Tiu ĉi politiko nune funkcias nur en Windows.
+policy-CaptivePortal = Aktivigi aŭ malaktivigi subtenon por kapta portalo.
 policy-CertificatesDescription = Aldoni atestilojn aŭ uzi inkluzivitajn atestilojn.
 policy-Cookies = Permesi aŭ bloki al retejoj konservi kuketojn.
 policy-DisableAppUpdate = Malpermesi al retumilo ĝisdatigiĝi.
@@ -37,7 +37,6 @@ policy-DisableProfileImport = Malaktivigi la menueron por importi datumojn el al
 policy-DisableProfileRefresh = Malaktivigi la butonon "Reŝargi { -brand-short-name }" en la paĝo about:support.
 policy-DisableSafeMode = Malaktivigi la trajton por restartigi en sekura reĝimo. Rimarko: nur en Windows eblas malaktivigi la eniron al sekura reĝimo per la klavo "majuskle", pero grupa politiko.
 policy-DisableSecurityBypass = Malpermesi al uzanto ignori kelkajn sekurecajn avertojn.
-policy-DisableSetDesktopBackground = Malaktivigi la menueron "Difini bildon kiel skribotablan fonon".
 policy-DisableSetAsDesktopBackground = Malaktivigi la menueron "Difini kiel skribotablan fonon" por bildoj.
 policy-DisableSystemAddonUpdate = Malpermesi al retumilo instali kaj ĝisdatigi sistemajn aldonaĵojn.
 policy-DisableTelemetry = Malŝalti telemezuron.
@@ -51,11 +50,13 @@ policy-EnableTrackingProtection = Aktivigi aŭ malaktivigi la blokadon de enhavo
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
 policy-Extensions = Instali, malinstali aŭ ŝlosi etendaĵojn. La elekteblo "instali" akceptas retadresojn aŭ vojojn kiel parametrojn. La elektebloj "malinstali" kaj "ŝlosi" akceptas identigilojn de etendaĵo.
+policy-ExtensionUpdate = Aktivigi aŭ malaktivigi aŭtomatan ĝisdatigon de etendaĵoj.
 policy-FlashPlugin = Permesi aŭ malpermesi la uzon de la kromprogramo Flash.
 policy-HardwareAcceleration = Se estas "malvera" la aparata akcelo estos malŝaltita.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Difini kaj havi la eblon ŝlosi la ekan paĝon.
 policy-InstallAddonsPermission = Permesi al kelkaj retejoj la instalon de aldonaĵoj.
+policy-NetworkPrediction = Aktivigi aŭ malaktivigi retan prognozon (antaŭlegon de DNS).
 policy-NoDefaultBookmarks = Malaktivigi kreadon de la normaj legosignoj inkluzivitaj kun { -brand-short-name }, kaj de la inteligentaj legosignoj (pli ofte vizititaj, ĵusaj etikedoj). Rimarko: tiu ĉi politiko nur efikas se ĝi estas uzita antaŭ la unua uzo de la profilo.
 policy-OfferToSaveLogins = Respekti la agordon kiu permesas al { -brand-short-name } proponi memori konservitajn nomojn de uzanto kaj pasvortojn. Kaj "vera" kaj "malvera" estas akceptitaj.
 policy-OverrideFirstRunPage = Ŝanĝi la paĝon de unua starto. Lasu tiun ĉi politikon malplena se vi volas malaktivigi la paĝon de unua starto.
@@ -69,5 +70,8 @@ policy-SearchBar = Elekti la normal lokon de la serĉa strio. La uzanto povas ta
 policy-SearchEngines = Agordi serĉilojn. Tiu ĉi politiko nur disponebla en la versio kun plilongigita subteno (ESR).
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Instali modulojn PKCS #11.
+policy-SSLVersionMax = Difini la minimuman version de SSL.
+policy-SSLVersionMin = Difini la maksimuman version de SSL.
+policy-SupportMenu = Aldoni personecigitan menueron al la helpa menuo.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Bloki viziton al kelkaj retejoj. Vidu la dokumentaron por havi pli da informo pri la formo.

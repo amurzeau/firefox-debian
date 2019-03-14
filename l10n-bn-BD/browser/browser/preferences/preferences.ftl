@@ -4,8 +4,6 @@
 
 do-not-track-description = যে যে ওয়েবসাইট হতে আপনি ট্র্যাক হতে চান না সেগুলোতে  “ট্রাক করবে না” পাঠাও
 do-not-track-learn-more = আরও জানুন
-do-not-track-option-default =
-    .label = শুধুমাত্র যখন ট্রাকিং সুরক্ষা ব্যবহার করে
 do-not-track-option-always =
     .label = সর্বদা
 pref-page =
@@ -50,6 +48,9 @@ category-privacy =
 pane-sync-title = Firefox Account
 category-sync =
     .tooltiptext = { pane-sync-title }
+pane-sync-title2 = { -sync-brand-short-name }
+category-sync2 =
+    .tooltiptext = { pane-sync-title2 }
 help-button-label = { -brand-short-name } সাপোর্ট
 addons-button-label = এক্সটেনশন ও থিম
 focus-search =
@@ -91,9 +92,6 @@ extension-controlled-default-search = একটি এক্সটেনশন, 
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = এক্সটেনশন <img data-l10n-name="icon"/> { $name }-র কন্টেইনার ট্যাব প্রয়োজন।
-# This string is shown to notify the user that their tracking protection preferences
-# are being controlled by an extension.
-extension-controlled-websites-tracking-protection-mode = একটি এক্সটেনসন, <img data-l10n-name="icon"/> { $name }, ট্রাকিং সুরক্ষা নিয়ন্ত্রণ করে।
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
 extension-controlled-websites-content-blocking-all-trackers = এক্সটেনশন, <img data-l10n-name="icon"/> { $name }, এই সেটিং নিয়ন্ত্রণ করছে।
@@ -139,6 +137,8 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = পূর্ববর্তী সেশন পুনরুদ্ধার
     .accesskey = s
+startup-restore-warn-on-quit =
+    .label = ব্রাউজার ছেড়ে যেতে আপনাকে সতর্ক করবে
 disable-extension =
     .label = এক্সটেনশনটি নিষ্ক্রিয় করুন
 tabs-group-header = ট্যাব
@@ -521,6 +521,9 @@ sync-device-name-save =
     .accesskey = v
 sync-mobilepromo-single = অন্য ডিভাইস সংযুক্ত করুন
 sync-mobilepromo-multi = ডিভাইস ব্যবস্থাপনা
+sync-connect-another-device = অন্য একটি ডিভাইস সংযুক্ত করুন
+sync-manage-devices = ডিভাইস ব্যবস্থাপনা
+sync-fxa-begin-pairing = কোন ডিভাইস জুটিবদ্ধ করুন
 sync-tos-link = সেবার শর্ত
 sync-fxa-privacy-notice = গোপনীয়তার নীতি
 
@@ -597,12 +600,6 @@ sitedata-total-size-calculating = সাইট ডাটা এবং ক্য�
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = আপনার সংরক্ষিত কুকিজ, সাইট ডেটা এবং ক্যাশে বর্তমানে { $value } { $unit } ডিস্ক স্পেস ব্যবহার করছে।
 sitedata-learn-more = আরও জানুন
-sitedata-keep-until = সংরক্ষণের সময়কাল
-    .accesskey = u
-sitedata-keep-until-expire =
-    .label = তাদের মেয়াদ উত্তীর্ণ
-sitedata-keep-until-closed =
-    .label = { -brand-short-name } বন্ধ হয়ে গেছে
 sitedata-allow-cookies-option =
     .label = কুকি ও সাইট তথ্য গ্রহণ করুন
     .accesskey = A
@@ -613,25 +610,20 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = টাইপ ব্লক করা হয়েছে
     .accesskey = T
-sitedata-block-trackers-option-recommended =
-    .label = তৃতীয় পক্ষের ট্র্যাকার (প্রস্তাবিত)
-sitedata-block-trackers-option =
+sitedata-option-block-trackers =
     .label = তৃতীয় পক্ষের ট্র্যাকার
-sitedata-block-unvisited-option =
+sitedata-option-block-unvisited =
     .label = অদেখা ওয়েবসাইট থেকে কুকি
-sitedata-block-all-third-party-option =
-    .label = সমস্ত তৃতীয় পক্ষের কুকি (ওয়েবসাইট ভাঙতে পারে)
-sitedata-block-all-option =
-    .label = সমস্ত কুকি (ওয়েবসাইট ভাঙতে পারে)
+sitedata-option-block-all-third-party =
+    .label = সমস্ত তৃতীয় পক্ষের কুকি (ওয়েবসাইট ভাঙার কারণ হতে পারে)
+sitedata-option-block-all =
+    .label = সমস্ত কুকি (ওয়েবসাইট ভাঙার কারণ হতে পারে)
 sitedata-clear =
     .label = ডাটা পরিষ্কার করুন…
     .accesskey = l
 sitedata-settings =
     .label = ডাটা ব্যবস্থাপনা…
     .accesskey = M
-sitedata-cookies-exceptions =
-    .label = ব্যতিক্রম… E
-    .accesskey = E
 sitedata-cookies-permissions =
     .label = অনুমতি ব্যবস্থাপনা...
     .accesskey = P
@@ -654,32 +646,7 @@ addressbar-suggestions-settings = অনুসন্ধান ইঞ্জিন
 ## Privacy Section - Content Blocking
 
 content-blocking-header = কনটেন্ট ব্লকিং
-content-blocking-desc = বিজ্ঞাপন অথবা কোডের মত তৃতীয় পক্ষের কনটেন্ট ব্লক করুন, যা আপনার ব্রাউজিং ধীরগতি করে দেয় এবং ওয়েবে আপনাকে ট্র্যাক করতে পারে। সুরক্ষা এবং কর্মক্ষমতা সেরা ব্যালেন্সের জন্য আপনার সেটিংস কাস্টমাইজ করুন।
 content-blocking-learn-more = আরও জানুন
-content-blocking-restore-defaults =
-    .label = ডিফল্ট রিস্টোর করুন
-    .accesskey = R
-content-blocking-toggle-on =
-    .tooltiptext = কনটেন্ট ব্লকিং বন্ধ করুন
-content-blocking-toggle-off =
-    .tooltiptext = কনটেন্ট ব্লক করা চালু করুন
-content-blocking-toggle-label-on = চালু করুন
-    .accesskey = O
-content-blocking-toggle-label-off = বন্ধ
-    .accesskey = O
-content-blocking-category-label = কি ব্লক করতে চান বলুন
-content-blocking-tracking-protection-trackers-label =
-    .label = ট্রাকারসমূহ
-    .accesskey = T
-content-blocking-tracking-protection-all-detected-trackers-label =
-    .label = সমস্ত সনাক্তকৃত ট্র্যাকার
-    .accesskey = T
-content-blocking-tracking-protection-option-always =
-    .label = সর্বদা
-    .accesskey = A
-content-blocking-tracking-protection-option-private =
-    .label = শুধুমাত্র ব্যক্তিগত ব্রাউজিং উইন্ডোতে
-    .accesskey = p
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 content-blocking-setting-standard =
@@ -693,45 +660,34 @@ content-blocking-setting-custom =
     .accesskey = C
 content-blocking-custom-desc = নির্বাচন করুন কি ব্লক করবেন
 content-blocking-third-party-cookies = তৃতীয় পক্ষের ট্র্যাকিং কুকি
+content-blocking-all-windows-trackers = সব উইন্ডোতে পরিচিত ট্র্যাকার
 content-blocking-all-third-party-cookies = সকল তৃতীয়-পক্ষের কুকিগুলো
 content-blocking-learn-how = শিখুন কিভাবে হয়
+content-blocking-trackers-label =
+    .label = ট্র্যাকার
+    .accesskey = ট
+content-blocking-tracking-protection-option-all-windows =
+    .label = সবগুলো উইন্ডোতে
+    .accesskey = A
+content-blocking-option-private =
+    .label = শুধুমাত্র ব্যক্তিগত উইন্ডোগুলোতে
+    .accesskey = p
 content-blocking-tracking-protection-change-block-list = ব্লক তালিকা পরিবর্তন করুন
-content-blocking-third-party-cookies-label =
-    .label = তৃতীয় পক্ষের কুকি
-    .accesskey = C
-content-blocking-change-cookie-settings =
-    .label = কুকি সেটিং পরিবর্তন করুন
-    .accesskey = S
-content-blocking-reject-trackers-block-trackers-option-recommended =
-    .label = ট্র্যাকারসমূহ (প্রস্তাবিত)
-    .accesskey = k
-content-blocking-reject-trackers-block-trackers-option =
-    .label = ট্রাকারসমূহ
-    .accesskey = k
 content-blocking-cookies-label =
     .label = কুকি
     .accesskey = C
+# Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
+content-blocking-cryptominers-label =
+    .label = ক্রিপ্টোমাইনার
+    .accesskey = y
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+content-blocking-fingerprinters-label =
+    .label = ফিঙ্গারপ্রিন্টার
+    .accesskey = F
 
 ## Privacy Section - Tracking
 
-tracking-header = ট্রাকিং সুরক্ষা
-tracking-desc = ট্র্যাকিং সুরক্ষা অনলাইন ট্র্যাকার ব্লক করে, যারা বিভিন্ন সাইটে আপনার ব্রাউজিং তথ্য সংগ্রহ করে। <a data-l10n-name="learn-more">ট্রাকিং সুরক্ষা এবং আপনার গোপনীয়তা সম্পর্কে আরও জানুন</a>
-tracking-mode-label = জানা ট্রাকারগুলি ব্লক করতে ট্রাকিং সুরক্ষা ব্যবহার করুন
-tracking-mode-always =
-    .label = সর্বদা
-    .accesskey = y
-tracking-mode-private =
-    .label = শুধুমাত্র ব্যক্তিগত ব্রাউজিং উইন্ডোতে
-    .accesskey = l
-tracking-mode-never =
-    .label = কখনো নয় N
-    .accesskey = N
-tracking-exceptions =
-    .label = ব্যতিক্রম… E
-    .accesskey = E
-tracking-change-block-list =
-    .label = ব্লক তালিকা পরিবর্তন করুন…
-    .accesskey = C
 tracking-manage-exceptions =
     .label = ব্যাতিক্রম ব্যবস্থাপনা…
     .accesskey = x

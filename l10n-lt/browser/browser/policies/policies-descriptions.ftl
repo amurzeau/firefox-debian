@@ -17,7 +17,7 @@ policy-BlockAboutConfig = Blokuoti prieigą prie about:config puslapio.
 policy-BlockAboutProfiles = Blokuoti prieigą prie about:profiles puslapio.
 policy-BlockAboutSupport = Blokuoti prieigą prie about:support puslapio.
 policy-Bookmarks = Kurti įrašus adresyno juostoje, adresyno meniu, arba nurodytame aplanke jų viduje.
-policy-Certificates = Naudoti ar ne integruotus liudijimus. Ši strategija kol kas skirta tik „Windows“ aplinkai.
+policy-CaptivePortal = Įjungti arba išjungti pradinio tinklalapio palaikymą.
 policy-CertificatesDescription = Pridėti liudijimus, arba naudoti integruotus.
 policy-Cookies = Leisti ar drausti svetainėms įrašyti slapukus.
 policy-DisableAppUpdate = Neleisti naršyklei diegti naujinimų.
@@ -37,7 +37,6 @@ policy-DisableProfileImport = Išjungti meniu komandą, skirtą importuoti duome
 policy-DisableProfileRefresh = Išjungti mygtuką „Atšviežinti { -brand-short-name }“, esantį about:support puslapyje.
 policy-DisableSafeMode = Išjungti galimybę paleisti iš naujo ribotoje veiksenoje. Pastaba: mygtukas Lyg2, skirtas pereiti į ribotąją veikseną, gali būtų išjungtas tik „Windows“ aplinkoje, naudojant „Group Policy“.
 policy-DisableSecurityBypass = Neleisti naudotojui apeiti kai kurių saugumo įspėjimų.
-policy-DisableSetDesktopBackground = Išjungti meniu komandą „Naudoti paveikslą kaip darbastalio foną“.
 policy-DisableSetAsDesktopBackground = Išjungti meniu komandą „Naudoti kaip darbastalio foną“ paveikslams.
 policy-DisableSystemAddonUpdate = Neleisti naršyklei diegti ir naujinti sistemos priedų.
 policy-DisableTelemetry = Išjungti telemetriją.
@@ -49,14 +48,15 @@ policy-DontCheckDefaultBrowser = Išjungti numatytosios naršyklės tikrinimą p
 policy-EnableTrackingProtection = Įjungti arba išjungti turinio blokavimą, ir papildomai jį užrakinti.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
-# English or translate them as verbs. See also:
-# https://github.com/mozilla/policy-templates/blob/master/README.md#extensions-machine-only
+# English or translate them as verbs.
 policy-Extensions = Diegti, šalinti, arba užrakinti priedus. Diegimo nuostata priima URL adresus arba kelius kaip parametrus. Šalinimo ir užrakinimo nuostatos priima priedų ID.
+policy-ExtensionUpdate = Įjungti arba išjungti automatinius priedų naujinimus.
 policy-FlashPlugin = Leisti arba drausti „Flash“ plėtinio naudojimą.
 policy-HardwareAcceleration = Jei „false“, išjungti aparatinį spartinimą.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Nustatyti ir papildomai užrakinti pradžios tinklalapį.
 policy-InstallAddonsPermission = Leisti kai kurioms svetainėms diegti priedus.
+policy-NetworkPrediction = Įjungti arba išjungti tinklo nuspėjimą (parengtinis DNS įkėlimas).
 policy-NoDefaultBookmarks = Išjungti numatytųjų adresyno įrašų, kurie ateina su „{ -brand-short-name }“, kūrimą, bei išmanųjį adresyną („Lankomiausi“, „Paskiausiai naudotos gairės“). Pastaba: šis nuostatas veikia tik jeigu yra panaudojamas prieš pirmąjį profilio paleidimą.
 policy-OfferToSaveLogins = Taikyti nuostatą, skirtą leisti „{ -brand-short-name }“ siūlyti įsiminti įrašytus prisijungimus ir slaptažodžius. Priimamos „true“ ir „false“ reikšmės.
 policy-OverrideFirstRunPage = Pakeisti pirmo paleidimo puslapį. Padarykite šią strategiją „blank“, norėdami išjungti pirmojo paleidimo puslapį.
@@ -70,6 +70,8 @@ policy-SearchBar = Parinkti numatytąją paieškos lauko vietą. Naudotojui vis 
 policy-SearchEngines = Konfigūruoti ieškyklių nuostatas. Ši strategija galima tik prailginto palaikymo laidos (ESR) versijoje.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Diegti PKCS #11 modulius.
-# “format” refers to the format used for the value of this policy. See also:
-# https://github.com/mozilla/policy-templates/blob/master/README.md#websitefilter-machine-only
+policy-SSLVersionMax = Nustatyti didžiausią SSL versiją.
+policy-SSLVersionMin = Nustatyti mažiausią SSL versiją.
+policy-SupportMenu = Pridėti specialų pagalbos meniu elementą į žinyno meniu.
+# “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Blokuoti svetainių lankymą. Paskaitykite dokumentaciją dėl informacijos apie formatą.

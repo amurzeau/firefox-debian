@@ -173,6 +173,8 @@ hardware-h264 = Hardware H264 Papapy'o
 main-thread-no-omtc = inimbo ha'etéva, OMTC ỹre
 yes = Héẽ
 no = Nahániri
+unknown = Ojekuaa'ỹva
+virtual-monitor-disp = Mba’erechaha ñandutiguáva
 
 ## The following strings indicate if an API key has been found.
 ## In some development versions, it's expected for some API keys that they are
@@ -180,6 +182,8 @@ no = Nahániri
 
 found = Ojuhu
 missing = Kañymbyre
+gpu-process-pid = GPUProcessPid
+gpu-process = GPUProcess
 gpu-description = Ñemoha'ãnga
 gpu-vendor-id = ID japohare mba'éva
 gpu-device-id = ID mba'e'oka rehegua
@@ -212,11 +216,13 @@ d3d9video-crash-buard = D3D9 Ta'ãngamýi Mbopapapy'oha
 glcontext-crash-guard = OpenGL
 reset-on-next-restart = Embojevy moñepyrũjey uperire
 gpu-process-kill-button = GPU raperekogua mohu'ã
+gpu-device-reset = Emoñepyrũjey mba’e’oka
 gpu-device-reset-button = Mba'e'oka reko moñepyrũjey
 uses-tiling = Eipuru mosáiko
 content-uses-tiling = Eipuru mosáiko (tetepy)
 off-main-thread-paint-enabled = Opyta okápe inimbo tuichavéva mbosa'yha ijurujáva
 off-main-thread-paint-worker-count = Ñemoha'anga resa'ỹijo téma tuichavéva opyta okápe
+low-end-machine = Ojehechakuaa peteĩ mohendaha hembiapo’ivéva
 audio-backend = Mba'epu ñangarekoha huguapeguáva
 max-audio-channels = Max mbohapeha
 channel-layout = Mbohapeha ñemoĩ ojererohorýva
@@ -234,6 +240,9 @@ effective-content-sandbox-level = Sandbox Level rembiapo retepy
 sandbox-proc-type-content = tetepy
 sandbox-proc-type-file = Marandurenda rechapyrã
 sandbox-proc-type-media-plugin = plugin maranduguáva
+sandbox-proc-type-data-decoder = Mba’ekuaarã papapy'o
+launcher-process-status-0 = Jurujapyre
+launcher-process-status-1 = Ojepe'apyre ojavy rupi
 # Variables
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows

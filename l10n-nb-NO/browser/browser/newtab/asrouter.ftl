@@ -3,12 +3,15 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 cfr-doorhanger-extension-heading = Anbefalte utvidelser
+cfr-doorhanger-pintab-heading = Prøv dette: fest fanen
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Hvorfor ser jeg dette?
 cfr-doorhanger-extension-cancel-button = Ikke nå
     .accesskey = n
 cfr-doorhanger-extension-ok-button = Legg til nå
     .accesskey = e
+cfr-doorhanger-pintab-ok-button = Fest denne fanen
+    .accesskey = F
 cfr-doorhanger-extension-manage-settings-button = Behandle anbefalingsinnstillinger
     .accesskey = B
 cfr-doorhanger-extension-never-show-recommendation = Ikke vis meg denne anbefalingen
@@ -41,3 +44,12 @@ cfr-doorhanger-extension-total-users =
         [one] { $total } bruker
        *[other] { $total } brukere
     }
+cfr-doorhanger-pintab-description = Få enkel tilgang til de mest brukte nettstedene dine. Hold nettsteder åpne i en fane (selv når du starter på nytt).
+
+## These messages are steps on how to use the feature and are shown together.
+
+cfr-doorhanger-pintab-step1 = <b>Høyreklikk</b> på fanen du vil feste.
+cfr-doorhanger-pintab-step2 = Velg <b>Fest fane</ b> fra menyen.
+cfr-doorhanger-pintab-step3 = Om nettstedet har en oppdatering, vil du se en blå prikk på din festede fane.
+cfr-doorhanger-pintab-animation-pause = Pause
+cfr-doorhanger-pintab-animation-resume = Fortsett

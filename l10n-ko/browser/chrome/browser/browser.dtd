@@ -29,8 +29,6 @@ a tab (i.e. it is a verb, not adjective). -->
 <!-- LOCALIZATION NOTE (duplicateTab.accesskey, duplicateTabs.accesskey):
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  duplicateTab.accesskey             "D">
-<!ENTITY  closeTabOptions.label              "탭 설정 닫기">
-<!ENTITY  closeTabOptions.accesskey          "O">
 <!-- LOCALIZATION NOTE (duplicateTabs.label): This is a command to duplicate
 a tab (i.e. it is a verb, not adjective). -->
 <!ENTITY  duplicateTabs.label                "탭 복제">
@@ -227,9 +225,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (exitDOMFullscreen.button,
      exitDOMFullscreenMac.button): the "escape" button on PC keyboards
      is uppercase, while on Mac keyboards it is lowercase -->
-<!ENTITY exitDOMFullscreen.button "전체 화면 표시 모드 종료(Esc)">
-<!ENTITY exitDOMFullscreenMac.button "전체 화면 표시 모드 종료(esc)">
-<!ENTITY leaveDOMFullScreen.label "전체 화면 표시 모드 종료">
+<!ENTITY exitDOMFullscreen.button "전체 화면 종료(Esc)">
+<!ENTITY exitDOMFullscreenMac.button "전체 화면 종료(esc)">
+<!ENTITY leaveDOMFullScreen.label "전체 화면 종료">
 <!ENTITY leaveDOMFullScreen.accesskey "u">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
@@ -288,7 +286,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "영구 저장소에 데이터를 저장">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "브라우저가 원격 제어중">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "웹 인증 패널 열기">
-
 <!ENTITY urlbar.storageAccessAnchor.tooltip               "브라우징 활동 권한 패널 열기">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "사이트에서 카메라와 마이크를 사용할지 관리">
@@ -309,7 +306,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "이 사이트의 영구 저장소 사용을 차단하였습니다.">
 <!ENTITY urlbar.popupBlocked.tooltip             "이 사이트의 팝업을 차단하였습니다.">
 <!ENTITY urlbar.autoplayMediaBlocked.tooltip     "이 사이트의 소리있는 미디어 자동재생을 차단하였습니다.">
-<!ENTITY urlbar.canvasBlocked.tooltip            "이 사이트의 캔바스 데이타 추출을 차단하였습니다.">
+<!ENTITY urlbar.canvasBlocked.tooltip            "이 사이트의 캔바스 데이터 추출을 차단하였습니다.">
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "이 사이트에서 Adobe Flash 플러그인을 사용할 수 없게 설정하였습니다.">
 <!ENTITY urlbar.midiBlocked.tooltip              "이 사이트의 MIDI 접근을 차단하였습니다.">
 
@@ -423,7 +420,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY viewSidebarMenu.accesskey "e">
 <!ENTITY viewCustomizeToolbar.label       "사용자 지정…">
 <!ENTITY viewCustomizeToolbar.accesskey     "C">
-<!ENTITY overflowCustomizeToolbar.label       "툴바 개인화…">
+<!ENTITY overflowCustomizeToolbar.label       "도구 모음 개인화…">
 <!ENTITY overflowCustomizeToolbar.accesskey   "C">
 
 <!ENTITY historyMenu.label "방문기록">
@@ -472,30 +469,30 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY appMenuRecentHighlights.label "최근 하이라이트">
 
-<!ENTITY customizeMenu.addToToolbar.label "도구 상자에 추가">
+<!ENTITY customizeMenu.addToToolbar.label "도구 모음에 추가">
 <!ENTITY customizeMenu.addToToolbar.accesskey "A">
 <!-- LOCALIZATION NOTE (customizeMenu.addToOverflowMenu.label,
      customizeMenu.pinToOverflowMenu.label, customizeMenu.unpinFromOverflowMenu.label)
      The overflow menu is the menu that appears if you click the chevron (>> button)
      in the location bar. -->
-<!ENTITY customizeMenu.addToOverflowMenu.label "오버플로우 메뉴에 추가">
+<!ENTITY customizeMenu.addToOverflowMenu.label "더 보기 메뉴에 추가">
 <!ENTITY customizeMenu.addToOverflowMenu.accesskey "M">
 <!-- LOCALIZATION NOTE (customizeMenu.pinToOverflowMenu.accesskey)
      can appear on the same context menu as menubarCmd and personalbarCmd,
      so they should have different access keys.  -->
-<!ENTITY customizeMenu.pinToOverflowMenu.label "오버플로우 메뉴에 고정">
+<!ENTITY customizeMenu.pinToOverflowMenu.label "더 보기 메뉴에 고정">
 <!ENTITY customizeMenu.pinToOverflowMenu.accesskey "P">
-<!ENTITY customizeMenu.unpinFromOverflowMenu.label "오버플로우 메뉴에서 고정 해제">
+<!ENTITY customizeMenu.unpinFromOverflowMenu.label "더 보기 메뉴에서 고정 해제">
 <!ENTITY customizeMenu.unpinFromOverflowMenu.accesskey "U">
-<!ENTITY customizeMenu.removeFromToolbar.label "도구 상자에서 제거">
+<!ENTITY customizeMenu.removeFromToolbar.label "도구 모음에서 제거">
 <!ENTITY customizeMenu.removeFromToolbar.accesskey "R">
 <!ENTITY customizeMenu.addMoreItems.label "더 많은 아이템 추가…">
 <!ENTITY customizeMenu.addMoreItems.accesskey "A">
-<!ENTITY customizeMenu.autoHideDownloadsButton.label "툴바에서 자동 숨김">
+<!ENTITY customizeMenu.autoHideDownloadsButton.label "도구 모음에서 자동 숨김">
 <!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "A">
 <!ENTITY customizeMenu.manageExtension.label "부가 기능 관리">
 <!ENTITY customizeMenu.manageExtension.accesskey "E">
-<!ENTITY customizeMenu.removeExtension.label "부가기능 제거">
+<!ENTITY customizeMenu.removeExtension.label "확장 기능 제거">
 <!ENTITY customizeMenu.removeExtension.accesskey "v">
 
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
@@ -635,6 +632,16 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisFrameCmd.label      "프레임을 북마크에 추가">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "m">
 <!ENTITY pageAction.copyLink.label    "링크 복사">
+
+<!-- LOCALIZATION NOTE(pocket-button.tooltiptext, saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label):
+  "Pocket" is a brand name. -->
+<!ENTITY pocketButton.tooltiptext     "Pocket에 저장">
+<!ENTITY saveToPocketCmd.label        "페이지를 Pocket에 저장">
+<!ENTITY saveToPocketCmd.accesskey    "k">
+<!ENTITY saveLinkToPocketCmd.label    "링크를 Pocket에 저장">
+<!ENTITY saveLinkToPocketCmd.accesskey "o">
+<!ENTITY pocketMenuitem.label         "Pocket 목록 보기">
+
 <!ENTITY emailPageCmd.label           "메일로 링크 보내기…">
 <!ENTITY emailPageCmd.accesskey       "E">
 <!ENTITY savePageCmd.label            "다른 이름으로 저장…">
@@ -760,7 +767,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY fullZoomToggleCmd.label        "글자 크기만 조정">
 <!ENTITY fullZoomToggleCmd.accesskey    "T">
-<!ENTITY fullZoom.label                 "크기 조정">
+<!ENTITY fullZoom.label                 "확대/축소">
 <!ENTITY fullZoom.accesskey             "Z">
 
 <!ENTITY sidebarCloseButton.tooltip     "사이드바 닫기">
@@ -821,7 +828,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      Remove Bookmark buttons. -->
 <!ENTITY editBookmark.panel.width                    "23em">
 <!ENTITY editBookmark.done.label                     "완료">
-<!ENTITY editBookmark.showForNewBookmarks.label       "저장할 때 에디터 보이기">
+<!ENTITY editBookmark.showForNewBookmarks.label       "저장할 때 편집기 보이기">
 <!ENTITY editBookmark.showForNewBookmarks.accesskey   "S">
 
 <!-- LOCALIZATION NOTE (identity.securityView.label)
@@ -866,12 +873,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.moreInfoLinkText2 "더 보기">
 
-<!ENTITY identity.clearSiteData "쿠키와 사이트 데이타 삭제…">
+<!ENTITY identity.clearSiteData "쿠키와 사이트 데이터 삭제…">
 
 <!ENTITY identity.permissions "권한">
 <!ENTITY identity.permissionsEmpty "이 사이트를 특별한 권한으로 승인하지 않았습니다.">
 <!ENTITY identity.permissionsReloadHint "이 페이지를 다시 읽어들여야 바뀐 점이 올라올 때도 있습니다.">
 <!ENTITY identity.permissionsPreferences.tooltip "권한 설정 열기">
+
+<!ENTITY identity.contentBlockingPreferences.tooltip "콘텐츠 차단 설정 열기">
+
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
@@ -926,7 +936,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncReAuthItem.accesskey     "R">
 <!ENTITY syncToolbarButton.label      "동기화">
 
-<!ENTITY customizeMode.menuAndToolbars.header3 "좋아하는 항목을 도구모음이나 넘친 메뉴에 드래그 하세요.">
+<!ENTITY customizeMode.menuAndToolbars.header3 "좋아하는 항목을 도구모음이나 더 보기 메뉴에 드래그 하세요.">
 <!ENTITY customizeMode.restoreDefaults "기본값으로 복원">
 <!ENTITY customizeMode.done "완료">
 <!ENTITY customizeMode.titlebar "제목창">
@@ -939,8 +949,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.lwthemes.menuManage.accessKey "M">
 <!ENTITY customizeMode.lwthemes.menuGetMore "더 많은 테마 구하기">
 <!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "G">
-<!ENTITY customizeMode.overflowList.title2 "넘어간 메뉴">
-<!ENTITY customizeMode.overflowList.description "툴바에서는 빼지만 계속 사용할 수 있게 항목을 드래그앤 드롭 하세요…">
+<!ENTITY customizeMode.overflowList.title2 "더 보기 메뉴">
+<!ENTITY customizeMode.overflowList.description "도구 모음에서는 빼지만 계속 사용할 수 있게 항목을 여기에 끌어다 놓으십시오…">
 <!ENTITY customizeMode.uidensity "밀도">
 <!-- LOCALIZATION NOTE (customizeMode.uidensity.menuNormal.*):
      “Normal” is displayed in the Customize screen, under the Density menu. -->
@@ -974,66 +984,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.title "콘텐츠 차단">
 <!ENTITY contentBlocking.detected "이 사이트에서 차단할 수 있는 콘텐츠가 감지되었습니다.">
 <!ENTITY contentBlocking.notDetected "이 페이지에서 차단할 수 있는 콘텐츠가 감지되지 않았습니다.">
-<!ENTITY contentBlocking.disabled.label "비활성화">
-<!ENTITY contentBlocking.disabled.tooltip "콘텐츠 차단을 비활성화 하였습니다.">
-<!ENTITY contentBlocking.exception.tooltip "이 사이트의 콘텐츠 차단을 비활성화 하였습니다.">
-
-<!ENTITY contentBlocking.fastBlock.label "느리게 로딩되는 추적기">
-<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.blocked.label):
-     This label signals that this type of content blocking is turned
-     ON and is successfully blocking malicious/slow content, so this is
-     a positive thing. It forms the end of the (imaginary) sentence
-     "Slow-Loading Trackers [are] Blocked"-->
-<!ENTITY contentBlocking.fastBlock.blocked.label "차단됨">
-<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.blocking.label):
-     This label signals that this type of content blocking is turned
-     ON, so this is a positive thing. It forms the verb in (imaginary) sentence
-     "Firefox is blocking Slow-Loading Trackers"-->
-<!ENTITY contentBlocking.fastBlock.blocking.label "차단중">
-<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.add.label):
-     This is displayed as a link to preferences, where the user can add
-     this specific type of content blocking. When this text is shown
-     the type of content blocking is currently not enabled. -->
-<!ENTITY contentBlocking.fastBlock.add.label "차단 추가…">
-
-<!ENTITY contentBlocking.trackingProtection2.label "모든 감지된 추적기">
 
 <!ENTITY contentBlocking.trackingProtection3.label "추적기">
-<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
-     This label signals that this type of content blocking is turned
-     ON and is successfully blocking tracker content, so this is
-     a positive thing. It forms the end of the (imaginary) sentence
-     "Trackers [are] Blocked"-->
-<!ENTITY contentBlocking.trackingProtection.blocked.label "차단됨">
-<!-- LOCALIZATION NOTE (contentBlocking.tranckingProtection.blocking.label):
-     This label signals that this type of content blocking is turned
-     ON, so this is a positive thing. It forms the verb in the (imaginary) sentence
-     "Firefox is blocking Trackers"-->
-<!ENTITY contentBlocking.trackingProtection.blocking.label "차단중">
-<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.add.label):
-     This is displayed as a link to preferences, where the user can add
-     this specific type of content blocking. When this text is shown
-     the type of content blocking is currently not enabled. -->
-<!ENTITY contentBlocking.trackingProtection.add.label "차단 추가…">
-
-<!ENTITY contentBlocking.3rdPartyCookies.label "제3자 쿠키">
-<!ENTITY contentBlocking.3rdPartyCookies.trackers.label "추적 쿠키">
-<!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.blocked.label):
-     This label signals that this type of content blocking is turned
-     ON and is successfully blocking third-party cookies, so this is
-     a positive thing. It forms the end of the (imaginary) sentence
-     "Third-Party Cookies [are] Blocked"-->
-<!ENTITY contentBlocking.3rdPartyCookies.blocked.label "차단됨">
-<!-- LOCALIZATION NOTE (contentBlocking.tranckingProtection.blocking.label):
-     This label signals that this type of content blocking is turned
-     ON, so this is a positive thing. It forms the verb in the (imaginary) sentence
-     "Firefox is blocking Third-Party Cookies"-->
-<!ENTITY contentBlocking.3rdPartyCookies.blocking.label "차단중">
-<!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.add.label):
-     This is displayed as a link to preferences, where the user can add
-     this specific type of content blocking. When this text is shown
-     the type of content blocking is currently not enabled. -->
-<!ENTITY contentBlocking.3rdPartyCookies.add.label "차단 추가…">
 
 <!ENTITY contentBlocking.manageSettings.label "콘텐츠 차단 관리">
 <!ENTITY contentBlocking.manageSettings.accesskey "M">
@@ -1042,7 +994,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackersView.strictInfo.label "모든 추적기를 차단하려면 콘텐츠 차단을 “엄격함”으로 설정하세요.">
 
 <!ENTITY contentBlocking.cookies.label "쿠키">
-<!ENTITY contentBlocking.cookiesView.label "쿠키와 사이트 데이타">
+<!ENTITY contentBlocking.cookiesView.label "쿠키와 사이트 데이터">
+
+<!ENTITY contentBlocking.cryptominers.label "크립토마이너">
+<!ENTITY contentBlocking.cryptominersView.label "크립토마이너">
+
+<!ENTITY contentBlocking.fingerprinters.label "핑거프린터">
+<!ENTITY contentBlocking.fingerprintersView.label "핑거프린터">
 
 <!ENTITY contentBlocking.openBreakageReportView2.label "오류 보고">
 <!ENTITY contentBlocking.breakageReportView.label "문제 보고">
@@ -1052,22 +1010,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView.collection.comments.label "어떤 문제가 있었나요? (선택)">
 <!ENTITY contentBlocking.breakageReportView.sendReport.label "보고서 전송">
 <!ENTITY contentBlocking.breakageReportView.cancel.label "취소">
-
-<!ENTITY trackingProtection.title "추적 보호">
-<!ENTITY trackingProtection.tooltip "추적 보호 설정 열기">
-
-<!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
-     The associated button with this label and accesskey is only shown when opening the control
-     center while looking at a site with trackers in NON-private browsing mode. -->
-<!ENTITY trackingProtection.unblock4.label "이 사이트의 차단 비활성화">
-<!ENTITY trackingProtection.unblock4.accesskey "D">
-<!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
-     The associated button with this label and accesskey is only shown when opening the control
-     center while looking at a site with trackers in PRIVATE browsing mode. -->
-<!ENTITY trackingProtection.unblockPrivate4.label "일시적으로 차단 해제">
-<!ENTITY trackingProtection.unblockPrivate4.accesskey "D">
-<!ENTITY trackingProtection.block5.label "이 사이트의 차단 활성화">
-<!ENTITY trackingProtection.block5.accesskey "E">
 
 <!-- LOCALIZATION NOTE (trackingProtection.unblock5.label, trackingProtection.unblock5.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
@@ -1086,11 +1028,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pluginNotification.showAll.label "모두 보기">
 <!ENTITY pluginNotification.showAll.accesskey "S">
-
-<!-- LOCALIZATION NOTE (pluginActivateNow.label, pluginActivateAlways.label, pluginBlockNow.label): These should be the same as the matching strings in browser.properties -->
-<!ENTITY pluginActivateNow.label "지금만 허가">
-<!ENTITY pluginActivateAlways.label "허가하고 기억">
-<!ENTITY pluginBlockNow.label "플러그인 차단">
 
 <!-- LOCALIZATION NOTE: (pluginNotification.width): This is used to determine the
      width of the plugin popup notification that can appear if a plugin has been
@@ -1196,3 +1133,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "<image class='addon-toolbar-icon'/> 메뉴에서 <image class='addon-addon-icon'/> 아이콘을 눌러서 부가 기능을 관리하세요.">
+<!ENTITY addonPostInstall.incognito.label "이 확장 기능이 사생활 보호 창에서 실행되도록 허용합니다.">
+<!ENTITY addonPostInstall.incognito.accesskey "A">
+
+<!ENTITY addonPrivateBrowsing.header2.label "사생활 보호 창 관련 확장기능 변경 사항">
+<!ENTITY addonPrivateBrowsing.body2.label "&brandShorterName;에 추가되는 모든 새 확장 기능은 사용자가 설정에서 허용하지 않는 한 사생활 보호 모드에서 작동하지 않습니다.">
+<!ENTITY addonPrivateBrowsing.learnMore.label "확장 기능 설정 관리 방법에 대해 알아봅니다.">
+<!ENTITY addonPrivateBrowsing.okButton.label "네, 알겠습니다">
+<!ENTITY addonPrivateBrowsing.okButton.accesskey "O">
+<!ENTITY addonPrivateBrowsing.manageButton.label "확장기능 관리">
+<!ENTITY addonPrivateBrowsing.manageButton.accesskey "M">

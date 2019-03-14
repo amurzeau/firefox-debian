@@ -29,8 +29,6 @@ a tab (i.e. it is a verb, not adjective). -->
 <!-- LOCALIZATION NOTE (duplicateTab.accesskey, duplicateTabs.accesskey):
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  duplicateTab.accesskey             "P">
-<!ENTITY  closeTabOptions.label              "Mbyll Mundësi Skedash">
-<!ENTITY  closeTabOptions.accesskey          "M">
 <!-- LOCALIZATION NOTE (duplicateTabs.label): This is a command to duplicate
 a tab (i.e. it is a verb, not adjective). -->
 <!ENTITY  duplicateTabs.label                "Përsëdytni Skeda">
@@ -288,7 +286,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Depozitoni të dhëna në Depozitë të Qëndrueshme">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Fshiheni Anështyllën e Faqerojtësve">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Hap panel Mirëfilltësimesh Web">
-
 <!ENTITY urlbar.storageAccessAnchor.tooltip               "Hapni panelin e lejeve mbi veprimtari shfletimi">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Administroni ndarjen me sajtin të kamerës dhe/ose mikrofonit tuaj">
@@ -593,26 +590,26 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY openLinkInPrivateWindowCmd.accesskey "V">
 <!ENTITY openLinkCmdInCurrent.label     "Hape Lidhjen">
 <!ENTITY openLinkCmdInCurrent.accesskey "H">
-<!ENTITY openFrameCmdInTab.label      "Hape Kornizën në Skedë të Re">
+<!ENTITY openFrameCmdInTab.label      "Hape Kuadrin në Skedë të Re">
 <!ENTITY openFrameCmdInTab.accesskey  "S">
-<!ENTITY openFrameCmd.label           "Hape Kornizën në Dritare të Re">
+<!ENTITY openFrameCmd.label           "Hape Kuadrin në Dritare të Re">
 <!ENTITY openFrameCmd.accesskey       "D">
 <!ENTITY openLinkCmdInContainerTab.label "Hape Lidhjen në Skedë të Re Kontejneri">
 <!ENTITY openLinkCmdInContainerTab.accesskey "K">
-<!ENTITY showOnlyThisFrameCmd.label     "Trego Vetëm Këtë Kornizë">
+<!ENTITY showOnlyThisFrameCmd.label     "Shfaq Vetëm Këtë Kuadër">
 <!ENTITY showOnlyThisFrameCmd.accesskey "T">
 <!ENTITY reloadCmd.commandkey         "r">
-<!ENTITY reloadFrameCmd.label         "Ringarkoje Kornizën">
+<!ENTITY reloadFrameCmd.label         "Ringarkoje Kuadrin">
 <!ENTITY reloadFrameCmd.accesskey     "R">
 <!ENTITY viewPartialSourceForSelectionCmd.label "Shihni Burim Përzgjedhjeje">
 <!ENTITY viewPartialSourceCmd.accesskey "e">
 <!ENTITY viewPageSourceCmd.label      "Shihni Burim Faqeje">
 <!ENTITY viewPageSourceCmd.accesskey  "u">
-<!ENTITY viewFrameSourceCmd.label     "Shihni Burim Kornize">
+<!ENTITY viewFrameSourceCmd.label     "Shihni Burim Kuadri">
 <!ENTITY viewFrameSourceCmd.accesskey "B">
 <!ENTITY viewPageInfoCmd.label        "Shihni të Dhëna Faqeje">
 <!ENTITY viewPageInfoCmd.accesskey    "D">
-<!ENTITY viewFrameInfoCmd.label       "Shihni të Dhëna Kornize">
+<!ENTITY viewFrameInfoCmd.label       "Shihni të Dhëna Kuadri">
 <!ENTITY viewFrameInfoCmd.accesskey   "I">
 <!ENTITY reloadImageCmd.label         "Ringarkoje Figurën">
 <!ENTITY reloadImageCmd.accesskey     "R">
@@ -632,7 +629,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkPageCmd2.accesskey   "F">
 <!ENTITY bookmarkThisLinkCmd.label      "Faqeruaje Këtë Lidhje">
 <!ENTITY bookmarkThisLinkCmd.accesskey  "L">
-<!ENTITY bookmarkThisFrameCmd.label      "Faqeruaje Këtë Kornizë">
+<!ENTITY bookmarkThisFrameCmd.label      "Faqeruaje Këtë Kuadër">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "K">
 <!ENTITY pageAction.copyLink.label    "Kopjoji Lidhjen">
 
@@ -652,9 +649,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- alternate for content area context menu -->
 <!ENTITY savePageCmd.accesskey2       "S">
 <!ENTITY savePageCmd.commandkey       "s">
-<!ENTITY saveFrameCmd.label           "Ruajeni Kornizën Si…">
+<!ENTITY saveFrameCmd.label           "Ruajeni Kuadrin Si…">
 <!ENTITY saveFrameCmd.accesskey       "i">
-<!ENTITY printFrameCmd.label          "Shtypni Kornizën…">
+<!ENTITY printFrameCmd.label          "Shtypni Kuadrin…">
 <!ENTITY printFrameCmd.accesskey      "K">
 <!ENTITY saveLinkCmd.label            "Ruajeni Lidhjen Si…">
 <!ENTITY saveLinkCmd.accesskey        "R">
@@ -692,7 +689,7 @@ context menu items are mutually exclusive. -->
 Location" and "Copy Email Address" should be the same if possible; the two
 context menu items are mutually exclusive. -->
 <!ENTITY copyEmailCmd.accesskey       "E">
-<!ENTITY thisFrameMenu.label              "Këtë Kornizë">
+<!ENTITY thisFrameMenu.label              "Këtë Kuadër">
 <!ENTITY thisFrameMenu.accesskey          "z">
 
 <!-- Media (video/audio) controls -->
@@ -883,6 +880,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsReloadHint "Mund t&apos;ju duhet të ringarkoni faqen që të hyjnë në fuqi ndryshimet.">
 <!ENTITY identity.permissionsPreferences.tooltip "Hap Parapëlqime Lejesh">
 
+<!ENTITY identity.contentBlockingPreferences.tooltip "Hap Parapëlqimet për Bllokim Lënde">
+
+
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
 <!ENTITY tabsToolbar.label "Skedash shfletuesi">
@@ -984,66 +984,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.title "Bllokim Lënde">
 <!ENTITY contentBlocking.detected "Në këtë sajt u pikas lëndë e bllokueshme.">
 <!ENTITY contentBlocking.notDetected "Në këtë sajt s’u pikas lëndë e bllokueshme.">
-<!ENTITY contentBlocking.disabled.label "I çaktivizuar">
-<!ENTITY contentBlocking.disabled.tooltip "E keni çaktivizuar Bllokimin e Lëndës.">
-<!ENTITY contentBlocking.exception.tooltip "E keni çaktivizuar Bllokimin e Lëndës për këtë sajt.">
-
-<!ENTITY contentBlocking.fastBlock.label "Gjurmues Ngadalësues">
-<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.blocked.label):
-     This label signals that this type of content blocking is turned
-     ON and is successfully blocking malicious/slow content, so this is
-     a positive thing. It forms the end of the (imaginary) sentence
-     "Slow-Loading Trackers [are] Blocked"-->
-<!ENTITY contentBlocking.fastBlock.blocked.label "E bllokuar">
-<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.blocking.label):
-     This label signals that this type of content blocking is turned
-     ON, so this is a positive thing. It forms the verb in (imaginary) sentence
-     "Firefox is blocking Slow-Loading Trackers"-->
-<!ENTITY contentBlocking.fastBlock.blocking.label "Bllokim">
-<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.add.label):
-     This is displayed as a link to preferences, where the user can add
-     this specific type of content blocking. When this text is shown
-     the type of content blocking is currently not enabled. -->
-<!ENTITY contentBlocking.fastBlock.add.label "Shtoni Bllokim…">
-
-<!ENTITY contentBlocking.trackingProtection2.label "Krejt Gjurmuesit e Pikasur">
 
 <!ENTITY contentBlocking.trackingProtection3.label "Gjurmues">
-<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
-     This label signals that this type of content blocking is turned
-     ON and is successfully blocking tracker content, so this is
-     a positive thing. It forms the end of the (imaginary) sentence
-     "Trackers [are] Blocked"-->
-<!ENTITY contentBlocking.trackingProtection.blocked.label "Bllokuar">
-<!-- LOCALIZATION NOTE (contentBlocking.tranckingProtection.blocking.label):
-     This label signals that this type of content blocking is turned
-     ON, so this is a positive thing. It forms the verb in the (imaginary) sentence
-     "Firefox is blocking Trackers"-->
-<!ENTITY contentBlocking.trackingProtection.blocking.label "Bllokim">
-<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.add.label):
-     This is displayed as a link to preferences, where the user can add
-     this specific type of content blocking. When this text is shown
-     the type of content blocking is currently not enabled. -->
-<!ENTITY contentBlocking.trackingProtection.add.label "Shtoni Bllokim…">
-
-<!ENTITY contentBlocking.3rdPartyCookies.label "Cookies Palësh të Treta">
-<!ENTITY contentBlocking.3rdPartyCookies.trackers.label "Cookies Gjurmimesh">
-<!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.blocked.label):
-     This label signals that this type of content blocking is turned
-     ON and is successfully blocking third-party cookies, so this is
-     a positive thing. It forms the end of the (imaginary) sentence
-     "Third-Party Cookies [are] Blocked"-->
-<!ENTITY contentBlocking.3rdPartyCookies.blocked.label "Bllokuar">
-<!-- LOCALIZATION NOTE (contentBlocking.tranckingProtection.blocking.label):
-     This label signals that this type of content blocking is turned
-     ON, so this is a positive thing. It forms the verb in the (imaginary) sentence
-     "Firefox is blocking Third-Party Cookies"-->
-<!ENTITY contentBlocking.3rdPartyCookies.blocking.label "Bllokim">
-<!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.add.label):
-     This is displayed as a link to preferences, where the user can add
-     this specific type of content blocking. When this text is shown
-     the type of content blocking is currently not enabled. -->
-<!ENTITY contentBlocking.3rdPartyCookies.add.label "Shtoni Bllokim…">
 
 <!ENTITY contentBlocking.manageSettings.label "Administroni Bllokim Lënde">
 <!ENTITY contentBlocking.manageSettings.accesskey "A">
@@ -1054,6 +996,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.cookies.label "Cookies">
 <!ENTITY contentBlocking.cookiesView.label "Cookies dhe të Dhëna Sajti">
 
+<!ENTITY contentBlocking.cryptominers.label "Nxjerrës kriptomonedhash">
+<!ENTITY contentBlocking.cryptominersView.label "Nxjerrës kriptomonedhash">
+
+<!ENTITY contentBlocking.fingerprinters.label "Zbulues shenja gishtash">
+<!ENTITY contentBlocking.fingerprintersView.label "Zbulues shenja gishtash">
+
 <!ENTITY contentBlocking.openBreakageReportView2.label "Raportoni një problem">
 <!ENTITY contentBlocking.breakageReportView.label "Raportoni Probleme">
 <!ENTITY contentBlocking.breakageReportView2.description "Bllokimi i lëndë mund të shkaktojë probleme me disa sajte. Kur raportoni probleme, ndihmoni për ta bërë &brandShortName;-in më të mirë për këdo. (Kështu do të dërgohet te Mozilla edhe një URL, përveç të dhënave mbi rregullimet tuaja të shfletuesit.)">
@@ -1062,22 +1010,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView.collection.comments.label "Ç’probleme patët? (Opsionale)">
 <!ENTITY contentBlocking.breakageReportView.sendReport.label "Dërgoje Raportin">
 <!ENTITY contentBlocking.breakageReportView.cancel.label "Anuloje">
-
-<!ENTITY trackingProtection.title "Mbrojtje Nga Gjurmimet">
-<!ENTITY trackingProtection.tooltip "Hap Parapëlqime mbi Mbrojtjen Nga Gjurmimet">
-
-<!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
-     The associated button with this label and accesskey is only shown when opening the control
-     center while looking at a site with trackers in NON-private browsing mode. -->
-<!ENTITY trackingProtection.unblock4.label "Çaktivizoje Bllokimin Për Këtë Sajt">
-<!ENTITY trackingProtection.unblock4.accesskey "b">
-<!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
-     The associated button with this label and accesskey is only shown when opening the control
-     center while looking at a site with trackers in PRIVATE browsing mode. -->
-<!ENTITY trackingProtection.unblockPrivate4.label "Çaktivizoje Përkohësisht Bllokimin">
-<!ENTITY trackingProtection.unblockPrivate4.accesskey "b">
-<!ENTITY trackingProtection.block5.label "Aktivizoje Bllokimin Për Këtë Sajt">
-<!ENTITY trackingProtection.block5.accesskey "A">
 
 <!-- LOCALIZATION NOTE (trackingProtection.unblock5.label, trackingProtection.unblock5.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
@@ -1096,11 +1028,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pluginNotification.showAll.label "Shfaqi Krejt">
 <!ENTITY pluginNotification.showAll.accesskey "S">
-
-<!-- LOCALIZATION NOTE (pluginActivateNow.label, pluginActivateAlways.label, pluginBlockNow.label): These should be the same as the matching strings in browser.properties -->
-<!ENTITY pluginActivateNow.label "Lejoje Tani">
-<!ENTITY pluginActivateAlways.label "Lejoje dhe Mbaje Mend">
-<!ENTITY pluginBlockNow.label "Bllokoje Shtojcën">
 
 <!-- LOCALIZATION NOTE: (pluginNotification.width): This is used to determine the
      width of the plugin popup notification that can appear if a plugin has been
@@ -1206,3 +1133,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "Administroni shtesat tuaj duke klikuar <image class='addon-addon-icon'/> te menuja <image class='addon-toolbar-icon'/>.">
+<!ENTITY addonPostInstall.incognito.label "Lejoje këtë zgjerim të xhirojë në Dritare Private.">
+<!ENTITY addonPostInstall.incognito.accesskey "L">
+
+<!ENTITY addonPrivateBrowsing.header2.label "Ndryshim te zgjerime në Dritare Private">
+<!ENTITY addonPrivateBrowsing.body2.label "Çfarëdo zgjerimesh të reja që shtoni te &brandShorterName; s’do të funksionojë në Dritare Private, veç në e lejofshi ju këtë te rregullimet.">
+<!ENTITY addonPrivateBrowsing.learnMore.label "Mësoni si të administroni rregullime zgjerimesh.">
+<!ENTITY addonPrivateBrowsing.okButton.label "OK, e mora vesh">
+<!ENTITY addonPrivateBrowsing.okButton.accesskey "O">
+<!ENTITY addonPrivateBrowsing.manageButton.label "Administroni Zgjerime">
+<!ENTITY addonPrivateBrowsing.manageButton.accesskey "A">

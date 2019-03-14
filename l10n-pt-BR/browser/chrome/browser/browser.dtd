@@ -29,8 +29,6 @@ a tab (i.e. it is a verb, not adjective). -->
 <!-- LOCALIZATION NOTE (duplicateTab.accesskey, duplicateTabs.accesskey):
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  duplicateTab.accesskey             "D">
-<!ENTITY  closeTabOptions.label              "Opções para fechar as abas">
-<!ENTITY  closeTabOptions.accesskey          "O">
 <!-- LOCALIZATION NOTE (duplicateTabs.label): This is a command to duplicate
 a tab (i.e. it is a verb, not adjective). -->
 <!ENTITY  duplicateTabs.label                "Duplicar abas">
@@ -288,7 +286,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Armazenar dados no armazenamento persistente">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "O navegador está sob controle remoto">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Abrir painel de autenticação Web">
-
 <!ENTITY urlbar.storageAccessAnchor.tooltip               "Abrir o painel de permissões de atividade de navegação">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Gerenciar o compartilhamento da sua câmera e/ou microfone com o site">
@@ -557,7 +554,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (searchFor.label, searchWith.label):
      These two strings are used to build the header above the list of one-click
      search providers:  "Search for <used typed keywords> with:" -->
-<!ENTITY searchFor.label              "Pesquisar por ">
+<!ENTITY searchFor.label              "Pesquisar ">
 <!ENTITY searchWith.label             " com:">
 
 <!-- LOCALIZATION NOTE (search.label, searchAfter.label):
@@ -883,6 +880,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsReloadHint "Pode ser necessário recarregar a página para que as alterações sejam aplicadas.">
 <!ENTITY identity.permissionsPreferences.tooltip "Abrir preferências de permissões">
 
+<!ENTITY identity.contentBlockingPreferences.tooltip "Abrir preferências de bloqueio de conteúdo">
+
+
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
 <!ENTITY tabsToolbar.label "Abas do navegador">
@@ -984,66 +984,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.title "Bloqueio de conteúdo">
 <!ENTITY contentBlocking.detected "Conteúdo bloqueável detectado neste site.">
 <!ENTITY contentBlocking.notDetected "Não foi detectado conteúdo bloqueável nesta página.">
-<!ENTITY contentBlocking.disabled.label "Desativado">
-<!ENTITY contentBlocking.disabled.tooltip "Você desativou o bloqueio de conteúdo.">
-<!ENTITY contentBlocking.exception.tooltip "Você desativou o bloqueio de conteúdo para este site.">
-
-<!ENTITY contentBlocking.fastBlock.label "Rastreadores de carregamento lento">
-<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.blocked.label):
-     This label signals that this type of content blocking is turned
-     ON and is successfully blocking malicious/slow content, so this is
-     a positive thing. It forms the end of the (imaginary) sentence
-     "Slow-Loading Trackers [are] Blocked"-->
-<!ENTITY contentBlocking.fastBlock.blocked.label "Bloqueados">
-<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.blocking.label):
-     This label signals that this type of content blocking is turned
-     ON, so this is a positive thing. It forms the verb in (imaginary) sentence
-     "Firefox is blocking Slow-Loading Trackers"-->
-<!ENTITY contentBlocking.fastBlock.blocking.label "Bloqueando">
-<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.add.label):
-     This is displayed as a link to preferences, where the user can add
-     this specific type of content blocking. When this text is shown
-     the type of content blocking is currently not enabled. -->
-<!ENTITY contentBlocking.fastBlock.add.label "Adicionar bloqueio…">
-
-<!ENTITY contentBlocking.trackingProtection2.label "Todos os rastreadores detectados">
 
 <!ENTITY contentBlocking.trackingProtection3.label "Rastreadores">
-<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
-     This label signals that this type of content blocking is turned
-     ON and is successfully blocking tracker content, so this is
-     a positive thing. It forms the end of the (imaginary) sentence
-     "Trackers [are] Blocked"-->
-<!ENTITY contentBlocking.trackingProtection.blocked.label "Bloqueados">
-<!-- LOCALIZATION NOTE (contentBlocking.tranckingProtection.blocking.label):
-     This label signals that this type of content blocking is turned
-     ON, so this is a positive thing. It forms the verb in the (imaginary) sentence
-     "Firefox is blocking Trackers"-->
-<!ENTITY contentBlocking.trackingProtection.blocking.label "Bloqueando">
-<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.add.label):
-     This is displayed as a link to preferences, where the user can add
-     this specific type of content blocking. When this text is shown
-     the type of content blocking is currently not enabled. -->
-<!ENTITY contentBlocking.trackingProtection.add.label "Adicionar bloqueio…">
-
-<!ENTITY contentBlocking.3rdPartyCookies.label "Cookies de terceiros">
-<!ENTITY contentBlocking.3rdPartyCookies.trackers.label "Cookies rastreadores">
-<!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.blocked.label):
-     This label signals that this type of content blocking is turned
-     ON and is successfully blocking third-party cookies, so this is
-     a positive thing. It forms the end of the (imaginary) sentence
-     "Third-Party Cookies [are] Blocked"-->
-<!ENTITY contentBlocking.3rdPartyCookies.blocked.label "Bloqueados">
-<!-- LOCALIZATION NOTE (contentBlocking.tranckingProtection.blocking.label):
-     This label signals that this type of content blocking is turned
-     ON, so this is a positive thing. It forms the verb in the (imaginary) sentence
-     "Firefox is blocking Third-Party Cookies"-->
-<!ENTITY contentBlocking.3rdPartyCookies.blocking.label "Bloqueando">
-<!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.add.label):
-     This is displayed as a link to preferences, where the user can add
-     this specific type of content blocking. When this text is shown
-     the type of content blocking is currently not enabled. -->
-<!ENTITY contentBlocking.3rdPartyCookies.add.label "Adicionar bloqueio…">
 
 <!ENTITY contentBlocking.manageSettings.label "Gerenciar bloqueio de conteúdo">
 <!ENTITY contentBlocking.manageSettings.accesskey "G">
@@ -1054,6 +996,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.cookies.label "Cookies">
 <!ENTITY contentBlocking.cookiesView.label "Cookies e dados de sites">
 
+<!ENTITY contentBlocking.cryptominers.label "Criptomineradores">
+<!ENTITY contentBlocking.cryptominersView.label "Criptomineradores">
+
+<!ENTITY contentBlocking.fingerprinters.label "Fingerprinters">
+<!ENTITY contentBlocking.fingerprintersView.label "Fingerprinters">
+
 <!ENTITY contentBlocking.openBreakageReportView2.label "Reportar um problema">
 <!ENTITY contentBlocking.breakageReportView.label "Reportar problemas">
 <!ENTITY contentBlocking.breakageReportView2.description "O bloqueio de conteúdo pode causar problemas com alguns sites. Quando você reportar problemas, ajudará a tornar o &brandShortName; melhor para todos. (Será enviada uma URL, bem como informações sobre suas configurações do navegador, à Mozilla).">
@@ -1062,22 +1010,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView.collection.comments.label "Quais problemas você teve? (Opcional)">
 <!ENTITY contentBlocking.breakageReportView.sendReport.label "Enviar relatório">
 <!ENTITY contentBlocking.breakageReportView.cancel.label "Cancelar">
-
-<!ENTITY trackingProtection.title "Proteção contra rastreamento">
-<!ENTITY trackingProtection.tooltip "Abrir preferências de proteção contra rastreamento">
-
-<!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
-     The associated button with this label and accesskey is only shown when opening the control
-     center while looking at a site with trackers in NON-private browsing mode. -->
-<!ENTITY trackingProtection.unblock4.label "Desativar bloqueio neste site">
-<!ENTITY trackingProtection.unblock4.accesskey "D">
-<!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
-     The associated button with this label and accesskey is only shown when opening the control
-     center while looking at a site with trackers in PRIVATE browsing mode. -->
-<!ENTITY trackingProtection.unblockPrivate4.label "Desativar bloqueio temporariamente">
-<!ENTITY trackingProtection.unblockPrivate4.accesskey "D">
-<!ENTITY trackingProtection.block5.label "Ativar bloqueio neste site">
-<!ENTITY trackingProtection.block5.accesskey "E">
 
 <!-- LOCALIZATION NOTE (trackingProtection.unblock5.label, trackingProtection.unblock5.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
@@ -1096,11 +1028,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pluginNotification.showAll.label "Mostrar tudo">
 <!ENTITY pluginNotification.showAll.accesskey "t">
-
-<!-- LOCALIZATION NOTE (pluginActivateNow.label, pluginActivateAlways.label, pluginBlockNow.label): These should be the same as the matching strings in browser.properties -->
-<!ENTITY pluginActivateNow.label "Permitir agora">
-<!ENTITY pluginActivateAlways.label "Permitir e memorizar">
-<!ENTITY pluginBlockNow.label "Bloquear plugin">
 
 <!-- LOCALIZATION NOTE: (pluginNotification.width): This is used to determine the
      width of the plugin popup notification that can appear if a plugin has been
@@ -1206,3 +1133,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "Gerencie suas extensões clicando no ícone <image class='addon-addon-icon'/> no menu <image class='addon-toolbar-icon'/>.">
+<!ENTITY addonPostInstall.incognito.label "Permitir que esta extensão funcione em janelas privativas.">
+<!ENTITY addonPostInstall.incognito.accesskey "P">
+
+<!ENTITY addonPrivateBrowsing.header2.label "Alteração de extensões em janelas privativas">
+<!ENTITY addonPrivateBrowsing.body2.label "Qualquer nova extensão que você adicionar ao &brandShorterName; não funcionará em janelas privativas, a menos que permita isso nas configurações.">
+<!ENTITY addonPrivateBrowsing.learnMore.label "Saiba como gerenciar configurações de extensões.">
+<!ENTITY addonPrivateBrowsing.okButton.label "OK, entendi">
+<!ENTITY addonPrivateBrowsing.okButton.accesskey "O">
+<!ENTITY addonPrivateBrowsing.manageButton.label "Gerenciar extensões">
+<!ENTITY addonPrivateBrowsing.manageButton.accesskey "G">

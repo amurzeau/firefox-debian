@@ -4,10 +4,6 @@
 
 do-not-track-description = Передавати веб-сайтам сигнал “Не стежити”
 do-not-track-learn-more = Докладніше
-do-not-track-option-default =
-    .label = Лише при використанні захисту від стеження
-do-not-track-option-default-content-blocking =
-    .label = Лише якщо { -brand-short-name } налаштований блокувати виявлене стеження
 do-not-track-option-default-content-blocking-known =
     .label = Лише якщо { -brand-short-name } налаштовано блокувати відомі елементи стеження
 do-not-track-option-always =
@@ -54,6 +50,9 @@ category-privacy =
 pane-sync-title = Обліковий запис Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
+pane-sync-title2 = { -sync-brand-short-name }
+category-sync2 =
+    .tooltiptext = { pane-sync-title2 }
 help-button-label = Підтримка { -brand-short-name }
 addons-button-label = Розширення і теми
 focus-search =
@@ -95,9 +94,6 @@ extension-controlled-default-search = Розширення <img data-l10n-name="
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = Для роботи розширення <img data-l10n-name="icon"/> { $name } необхідні вкладки в контейнері.
-# This string is shown to notify the user that their tracking protection preferences
-# are being controlled by an extension.
-extension-controlled-websites-tracking-protection-mode = Розширення <img data-l10n-name="icon"/> { $name } контролює захист від стеження.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
 extension-controlled-websites-content-blocking-all-trackers = Розширення <img data-l10n-name="icon"/> { $name } контролює ці налаштування.
@@ -129,9 +125,9 @@ startup-header = Запуск
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
     .label = Дозволити { -brand-short-name } та Firefox виконуватись одночасно
-use-firefox-sync = Підказка: При цьому використовуються окремі профілі. Скористайтеся { -sync-brand-short-name[abl-lower] } для обміну даними між ними.
-get-started-not-logged-in = Увійти в { -sync-brand-short-name[acc] }…
-get-started-configured = Відкрити налаштування { -sync-brand-short-name[dat] }
+use-firefox-sync = Підказка: При цьому використовуються окремі профілі. Скористайтеся { -sync-brand-short-name(case: "abl", capitalization: "lower") } для обміну даними між ними.
+get-started-not-logged-in = Увійти в { -sync-brand-short-name(case: "acc") }…
+get-started-configured = Відкрити налаштування { -sync-brand-short-name(case: "dat") }
 always-check-default =
     .label = Завжди перевіряти чи є { -brand-short-name } типовим браузером
     .accesskey = б
@@ -154,9 +150,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = Відкривати посилання у вкладках замість нових вікон
     .accesskey = л
-warn-on-quit-close-multiple-tabs =
-    .label = Попереджати при закритті декількох вкладок при виході
-    .accesskey = П
 warn-on-close-multiple-tabs =
     .label = Попереджати при закритті декількох вкладок
     .accesskey = і
@@ -179,9 +172,9 @@ browser-containers-settings =
 containers-disable-alert-title = Закрити всі вкладки контейнера?
 containers-disable-alert-desc =
     { $tabCount ->
-        [one] Якщо ви вимкнете всі вкладки контейнера, буде закрито { $tabCount } вкладку контейнера. Ви дійсно хочете вимкнути контейнер?
-        [few] Якщо ви вимкнете всі вкладки контейнера, буде закрито { $tabCount } вкладки контейнера. Ви дійсно хочете вимкнути контейнер?
-       *[many] Якщо ви вимкнете всі вкладки контейнера, буде закрито { $tabCount } вкладок контейнера. Ви дійсно хочете вимкнути контейнер?
+        [one] Якщо ви вимкнете вкладки в контейнері, закриється { $tabCount } вкладка контейнера. Ви дійсно хочете вимкнути вкладки в контейнері?
+        [few] Якщо ви вимкнете вкладки в контейнері, закриється { $tabCount } вкладки контейнера. Ви дійсно хочете вимкнути вкладки в контейнері?
+       *[many] Якщо ви вимкнете вкладки в контейнері, закриються { $tabCount } вкладок контейнера. Ви дійсно хочете вимкнути вкладки в контейнері?
     }
 containers-disable-alert-ok-button =
     { $tabCount ->
@@ -195,9 +188,9 @@ containers-remove-alert-title = Вилучити цей контейнер?
 #   $count (Number) - Number of tabs that will be closed.
 containers-remove-alert-msg =
     { $count ->
-        [one] Якщо ви вилучите цей контейнер зараз, буде закрита { $count } вкладка контейнер. Ви справді хочете вилучити цей контейнер?
-        [few] Якщо ви вилучите цей контейнер зараз, буде закрито { $count } вкладки контейнери. Ви справді хочете вилучити цей контейнер?
-       *[many] Якщо ви вилучите цей контейнер зараз, буде закрито { $count } вкладок контейнерів. Ви справді хочете вилучити цей контейнер?
+        [one] Якщо ви вилучите цей контейнер зараз, закриється { $count } вкладка контейнера. Ви дійсно хочете вилучити цей контейнер?
+        [few] Якщо ви вилучите цей контейнер зараз, закриється { $count } вкладки контейнера. Ви дійсно хочете вилучити цей контейнер?
+       *[many] Якщо ви вилучите цей контейнер зараз, закриються { $count } вкладок контейнера. Ви дійсно хочете вилучити цей контейнер?
     }
 containers-remove-ok-button = Вилучити цей контейнер
 containers-remove-cancel-button = Не вилучати цей контейнер
@@ -292,6 +285,7 @@ update-application-check-choose =
 update-application-manual =
     .label = Ніколи не перевіряти наявність оновлень (не рекомендовано)
     .accesskey = Н
+update-application-warning-cross-user-setting = Цей параметр застосується для всіх облікових записів Windows та профілів { -brand-short-name }, що використовують це встановлення { -brand-short-name }.
 update-application-use-service =
     .label = Використовувати фонову службу для встановлення оновлень
     .accesskey = с
@@ -343,6 +337,9 @@ browsing-search-on-start-typing =
     .accesskey = й
 browsing-cfr-recommendations =
     .label = Рекомендувати розширення при перегляді
+    .accesskey = Р
+browsing-cfr-features =
+    .label = Рекомендувати функції під час перегляду
     .accesskey = Р
 browsing-cfr-recommendations-learn-more = Докладніше
 
@@ -452,7 +449,7 @@ containers-remove-button =
 
 sync-signedout-caption = Візьміть свій інтернет з собою
 sync-signedout-description = Синхронізуйте закладки, історію, вкладки, паролі, додатки, а також налаштування на всіх своїх пристроях.
-sync-signedout-account-title = Під’єднайтеся до { -fxaccount-brand-name[gen] }
+sync-signedout-account-title = Під’єднайтеся до { -fxaccount-brand-name(case: "gen") }
 sync-signedout-account-create = Не маєте облікового запису? Створімо його!
     .accesskey = С
 sync-signedout-account-signin =
@@ -536,6 +533,9 @@ sync-device-name-save =
     .accesskey = б
 sync-mobilepromo-single = Під'єднати інший пристрій
 sync-mobilepromo-multi = Керувати пристроями
+sync-connect-another-device = Під'єднати інший пристрій
+sync-manage-devices = Керувати пристроями
+sync-fxa-begin-pairing = Сполучити пристрій
 sync-tos-link = Умови надання послуги
 sync-fxa-privacy-notice = Повідомлення про приватність
 
@@ -612,15 +612,10 @@ sitedata-total-size-calculating = Обчислення розміру даних
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Ваші збережені куки, дані сайтів і кеш використовують { $value } { $unit } дискового простору.
 sitedata-learn-more = Докладніше
-sitedata-keep-until = Зберігати до
-    .accesskey = г
-sitedata-keep-until-expire =
-    .label = Завершення терміну дії
-sitedata-keep-until-closed =
-    .label = Закриття { -brand-short-name }
 sitedata-delete-on-close =
     .label = Видаляти куки і дані сайтів при закритті { -brand-short-name }
     .accesskey = я
+sitedata-delete-on-close-private-browsing = В режимі постійного приватного перегляду, куки і дані сайтів завжди очищатимуться при закритті { -brand-short-name }.
 sitedata-allow-cookies-option =
     .label = Приймати куки і дані сайтів
     .accesskey = П
@@ -631,16 +626,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Тип блокування
     .accesskey = и
-sitedata-block-trackers-option-recommended =
-    .label = Сторонні елементи стеження (рекомендовано)
-sitedata-block-trackers-option =
-    .label = Сторонні елементи стеження
-sitedata-block-unvisited-option =
-    .label = Куки з невідвіданих веб-сайтів
-sitedata-block-all-third-party-option =
-    .label = Сторонні куки (може пошкодити роботу веб-сайтів)
-sitedata-block-all-option =
-    .label = Усі куки (буде пошкоджувати роботу веб-сайтів)
 sitedata-option-block-trackers =
     .label = Стороннє стеження
 sitedata-option-block-unvisited =
@@ -648,20 +633,13 @@ sitedata-option-block-unvisited =
 sitedata-option-block-all-third-party =
     .label = Усі сторонні куки (може пошкодити веб-сайти)
 sitedata-option-block-all =
-    .label = Усі куки (буде пошкоджувати веб-сайти)
+    .label = Усі куки (порушить роботу веб-сайтів)
 sitedata-clear =
     .label = Стерти дані…
     .accesskey = С
 sitedata-settings =
     .label = Керувати даними…
     .accesskey = К
-sitedata-cookies-exceptions =
-    .label = Винятки…
-    .accesskey = и
-# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
-# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
-# Cookies and Site Data section.
-sitedata-warning-your-settings-prevent-changes = Ваші налаштування блокування вмісту не дозволяють змінювати налаштування куків і даних сайтів.
 sitedata-cookies-permissions =
     .label = Керувати дозволами…
     .accesskey = з
@@ -684,48 +662,15 @@ addressbar-suggestions-settings = Змінити налаштування про
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Блокування вмісту
-content-blocking-desc = Блокувати сторонній вміст, наприклад, рекламу чи код, що може сповільнювати роботу браузера і стежити за вами в інтернеті. Змінюйте налаштування для найкращого балансу захисту й швидкодії.
 content-blocking-description = Блокуйте сторонній вміст, що стежить за вами в інтернеті. Контролюйте обсяг вашої онлайн-активності, що зберігається і передається між веб-сайтами.
 content-blocking-learn-more = Докладніше
-content-blocking-restore-defaults =
-    .label = Відновити типові
-    .accesskey = т
-content-blocking-toggle-on =
-    .tooltiptext = Вимкнути блокування вмісту
-content-blocking-toggle-off =
-    .tooltiptext = Увімкнути блокування вмісту
-content-blocking-toggle-label-on = УВІМК
-    .accesskey = В
-content-blocking-toggle-label-off = ВИМК
-    .accesskey = И
-content-blocking-category-label = Оберіть елементи для блокування
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-slow-loading-trackers-label =
-    .label = Повільні елементи стеження
-    .accesskey = в
-content-blocking-fastblock-new-description = Блокувати лише елементи стеження, що сповільнюють завантаження сторінок.
-content-blocking-tracking-protection-trackers-label =
-    .label = Стеження
-    .accesskey = т
-content-blocking-tracking-protection-all-detected-trackers-label =
-    .label = Виявлене стеження
-    .accesskey = я
-content-blocking-tracking-protection-new-description = Блокувати всі відомі елементи стеження. (Деякі сторінки можуть бути пошкоджені.)
-content-blocking-tracking-protection-option-always =
-    .label = Завжди
-    .accesskey = З
-content-blocking-tracking-protection-option-private =
-    .label = Лише у приватних вікнах
-    .accesskey = п
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 content-blocking-setting-standard =
-    .label = Стандартно
-    .accesskey = т
+    .label = Звичайне
+    .accesskey = ч
 content-blocking-setting-strict =
-    .label = Суворо
+    .label = Суворе
     .accesskey = в
 content-blocking-setting-custom =
     .label = Власне
@@ -740,6 +685,7 @@ content-blocking-all-windows-trackers = Відомі елементи стеже
 content-blocking-all-third-party-cookies = Усі сторонні куки
 content-blocking-warning-title = Увага!
 content-blocking-warning-desc = Блокування куків та стеження може вплинути на роботу деяких веб-сайтів. Ви можете легко вимкнути блокування для довірених сайтів.
+content-blocking-warning-description = Блокування вмісту може пошкоджувати роботу деяких веб-сайтів. Можна легко вимкнути блокування для сайтів, яким ви довіряєте.
 content-blocking-learn-how = Навчитися
 content-blocking-trackers-label =
     .label = Стеження
@@ -751,51 +697,21 @@ content-blocking-option-private =
     .label = Лише у приватних вікнах
     .accesskey = п
 content-blocking-tracking-protection-change-block-list = Змінити список блокування
-content-blocking-third-party-cookies-label =
-    .label = Сторонні куки
-    .accesskey = к
-content-blocking-reject-trackers-description = Блокувати усі сторонні куки, або лише встановлені стеженням.
-# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
-# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
-# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
-# the UI.
-content-blocking-reject-trackers-warning-your-settings-prevent-changes = Ваші налаштування куків і даних сайтів не дозволяють змінювати налаштування сторонніх куків.
-content-blocking-change-cookie-settings =
-    .label = Змінити налаштування куків
-    .accesskey = м
-content-blocking-reject-trackers-block-trackers-option-recommended =
-    .label = Стеження (рекомендовано)
-    .accesskey = ж
-content-blocking-reject-trackers-block-trackers-option =
-    .label = Стеження
-    .accesskey = т
-content-blocking-reject-trackers-all-third-parties-option =
-    .label = Усі сторонні куки (може пошкодити роботу веб-сайтів)
-    .accesskey = У
 content-blocking-cookies-label =
     .label = Куки
     .accesskey = К
+# Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
+content-blocking-cryptominers-label =
+    .label = Криптомайнери
+    .accesskey = К
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+content-blocking-fingerprinters-label =
+    .label = Зчитування відбитку браузера
+    .accesskey = к
 
 ## Privacy Section - Tracking
 
-tracking-header = Захист від стеження
-tracking-desc = Захист від стеження блокує елементи, що збирають ваші дані під час перегляду на багатьох веб-сайтах. <a data-l10n-name="learn-more">Дізнайтеся більше про захист від стеження і вашу приватність</a>
-tracking-mode-label = Використовувати захист від стеження
-tracking-mode-always =
-    .label = Завжди
-    .accesskey = З
-tracking-mode-private =
-    .label = Лише у приватних вікнах
-    .accesskey = Л
-tracking-mode-never =
-    .label = Ніколи
-    .accesskey = Н
-tracking-exceptions =
-    .label = Винятки…
-    .accesskey = В
-tracking-change-block-list =
-    .label = Змінити список блокування…
-    .accesskey = м
 tracking-manage-exceptions =
     .label = Керувати винятками…
     .accesskey = н
@@ -827,6 +743,9 @@ permissions-block-autoplay-media =
     .label = Заборонити веб-сайтам автоматично відтворювати медіа зі звуком
     .accesskey = З
 permissions-block-autoplay-media-menu = Для веб-сайтів, що автоматично відтворюють звук
+permissions-block-autoplay-media2 =
+    .label = Блокувати автоматичне відтворення звуку веб-сайтами
+    .accesskey = з
 permissions-block-autoplay-media-exceptions =
     .label = Винятки…
     .accesskey = и

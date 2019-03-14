@@ -88,6 +88,12 @@ detail-update-automatic =
 detail-update-manual =
     .label = Mongepyre
     .tooltiptext = Aníke emohenda ñembohekopyahu ijeheguíva
+detail-private-browsing-on =
+    .label = Moneĩ
+    .tooltiptext = Embojuruja kundaha ñemíme
+detail-private-browsing-off =
+    .label = Ani emoneĩ
+    .tooltiptext = Eipe'a kundaha ñemígui
 detail-home =
     .label = Kuatiarogue ñepyrũha
 detail-home-value =
@@ -207,3 +213,38 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Ñembohekopyahu mohenda
     .tooltiptext = Ñembohekopyahu eipurukuaáva ko tysýi pegua mohenda
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Eñangareko jepysokue jeike pya’eha rehe
+    .accesskey = S
+shortcuts-empty-message = Ndaipóri mbopya'eha ko jepysokuépe g̃uarã.
+shortcuts-no-addons = Ndoguerekói jepysokue ijurujáva.
+shortcuts-no-commands = Ko’ã jepysokue ndoguerekói jeike pya’eha:
+shortcuts-input =
+    .placeholder = Ehai peteĩ mbopya'eha
+shortcuts-browserAction = Emyandy jepysokue
+shortcuts-pageAction = Emyandy kuatiarogue ñemongu’e
+shortcuts-sidebarAction = Embojopyru tenda yke
+shortcuts-modifier-mac = Emoinge Ctrl, Alt o ⌘
+shortcuts-modifier-other = Emoinge Ctrl or Alt
+shortcuts-invalid = Ñembojopyru ndoikóiva
+shortcuts-letter = Ehai peteĩ tai
+shortcuts-system = Ndaikatúi eipe’a peteĩ mbopya’eha { -brand-short-name } mba’éva
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] Ehechave { $numberToShow }
+       *[other] Ehechave { $numberToShow }
+    }
+shortcuts-card-collapse-button = Ehechauka'ive
+go-back-button =
+    .tooltiptext = Guevijey
+
+## Add-on actions
+
+remove-addon-button = Mboguete
+disable-addon-button = Pe'a
+enable-addon-button = Mbojuruja
+addons-enabled-heading = Mbojurujapyre
+addons-disabled-heading = Pe'apyre

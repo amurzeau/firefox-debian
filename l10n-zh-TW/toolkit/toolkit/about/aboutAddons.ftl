@@ -92,6 +92,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = 關閉
     .tooltiptext = 不要自動安裝更新
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = 於隱私視窗中執行
+detail-private-browsing-description = 擴充套件將在隱私瀏覽視窗中運作，並可存取您的上網行為。<label data-l10n-name="detail-private-browsing-learn-more">了解更多</label>
+detail-private-browsing-on =
+    .label = 允許
+    .tooltiptext = 在隱私瀏覽模式中啟用
+detail-private-browsing-off =
+    .label = 不允許
+    .tooltiptext = 在隱私瀏覽模式中停用
 detail-home =
     .label = 網站首頁
 detail-home-value =
@@ -134,6 +143,7 @@ legacy-warning-show-legacy = 顯示傳統擴充套件
 legacy-extensions =
     .value = 傳統擴充套件
 legacy-extensions-description = 這些擴充套件不符合 { -brand-short-name } 目前的標準，已被停用。 <label data-l10n-name="legacy-learn-more">了解附加元件有什麼變動</label>
+private-browsing-description2 = { -brand-short-name } 將調整擴充套件於隱私瀏覽模式中運作的方式。預設情況下，任何新安裝至 { -brand-short-name } 的擴充套件都無法在隱私瀏覽視窗中執行。我們這樣做是為了確保您的隱私瀏覽過程更加私密；除非您在設定中允許，否則擴充套件將無法在隱私瀏覽模式中運作，也無法在該模式中存取您的線上行為。<label data-l10n-name="private-browsing-learn-more">了解如何管理擴充套件設定。</label>
 extensions-view-discover =
     .name = 安裝附加元件
     .tooltiptext = { extensions-view-discover.name }
@@ -211,3 +221,37 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = 安裝更新
     .tooltiptext = 安裝此清單中可用的更新
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = 管理擴充套件快速鍵
+    .accesskey = S
+shortcuts-empty-message = 此擴充套件沒有用到快速鍵。
+shortcuts-no-addons = 您並未啟用任何擴充套件。
+shortcuts-no-commands = 下列擴充套件沒有快速鍵:
+shortcuts-input =
+    .placeholder = 輸入快速鍵
+shortcuts-browserAction = 啟用快速鍵
+shortcuts-pageAction = 啟用頁面操作
+shortcuts-sidebarAction = 切換側邊欄
+shortcuts-modifier-mac = 包含 Ctrl、Alt 或 ⌘
+shortcuts-modifier-other = 包含 Ctrl 或 Alt
+shortcuts-invalid = 無效的快速鍵
+shortcuts-letter = 按下一個字母
+shortcuts-system = 無法蓋過 { -brand-short-name } 的快速鍵
+shortcuts-card-expand-button =
+    { $numberToShow ->
+       *[other] 顯示另外 { $numberToShow } 個
+    }
+shortcuts-card-collapse-button = 顯示更少
+go-back-button =
+    .tooltiptext = 回上一頁
+
+## Add-on actions
+
+remove-addon-button = 移除
+disable-addon-button = 停用
+enable-addon-button = 啟用
+addons-enabled-heading = 已啟用
+addons-disabled-heading = 已停用

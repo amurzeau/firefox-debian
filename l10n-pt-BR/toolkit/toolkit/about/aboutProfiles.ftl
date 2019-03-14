@@ -26,6 +26,8 @@ profiles-rename = Renomear
 profiles-remove = Remover
 profiles-set-as-default = Definir como perfil padrão
 profiles-launch-profile = Iniciar o perfil em um novo navegador
+profiles-cannot-set-as-default-title = Não foi possível definir padrão
+profiles-cannot-set-as-default-message = O perfil padrão não pode ser alterado no { -brand-short-name }.
 profiles-yes = sim
 profiles-no = não
 profiles-rename-profile-title = Renomear perfil
@@ -42,7 +44,7 @@ profiles-delete-profile-title = Excluir perfil
 profiles-delete-profile-confirm =
     A exclusão de um perfil removerá o perfil na lista de perfis disponíveis e não poderá ser desfeito.
     Você também pode optar por excluir os arquivos de dados do perfil, incluindo suas configurações, certificados e outros dados relacionados ao usuário. Esta opção excluirá a pasta “{ $dir }” e não poderá ser desfeita.
-    Você gostaria de excluir os arquivos de dados do perfil?
+    Quer excluir os arquivos de dados do perfil?
 profiles-delete-files = Excluir arquivos
 profiles-dont-delete-files = Não excluir arquivos
 profiles-delete-profile-failed-title = Erro

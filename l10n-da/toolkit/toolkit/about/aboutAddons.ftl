@@ -99,6 +99,20 @@ detail-update-automatic =
 detail-update-manual =
     .label = Fra
     .tooltiptext = Installer ikke opdateringer automatisk
+
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Anvend i private vinduer
+
+detail-private-browsing-description = Udvidelsen vil fungere i private vinduer og dermed have adgang til dine aktiviteter på nettet. <label data-l10n-name="detail-private-browsing-learn-more">Læs mere</label>
+
+detail-private-browsing-on =
+    .label = Tillad
+    .tooltiptext = Aktivér i private vinduer
+
+detail-private-browsing-off =
+    .label = Tillad ikke
+    .tooltiptext = Deaktiver i private vinduer
+
 detail-home =
     .label = Webside
 detail-home-value =
@@ -141,6 +155,20 @@ legacy-warning-show-legacy = Vis forældede udvidelser
 legacy-extensions =
     .value = Forældede udvidelser
 legacy-extensions-description = Disse udvidelser møder ikke de nuværende { -brand-short-name }- standarder, så de er blevet deaktiveret. <label data-l10n-name="legacy-learn-more">Læs mere om ændringerne af tilføjelser</label>
+
+private-browsing-description2 =
+    { -brand-short-name } har ændret, hvordan udvidelser fungerer i private vinduer. Som standard vil alle nyinstallerede
+    udvidelser være blokeret i privat browsing-tilstand, medmindre du giver dem tilladelse i indstillingerne.
+    { -brand-short-name } blokerer udvidelserne for at sikre, at de kun med din tilladelse har adgang til din aktivitet
+    på nettet, når du benytter privat browsing.
+    <label data-l10n-name="private-browsing-learn-more">Læs her, hvordan du håndterer indstillingerne for udvidelser.
+
+private-browsing-description = 
+     Udvidelser har ikke tilladelse til at køre som standard i private vinduer. Det betyder, 
+     at de ikke fungerer under privat browsing, og at de ikke har adgang til dine aktiviteter i 
+     privat browsing. Vælg en udvidelse nedenfor for at ændre indstillingerne og give udvidelsen tilladelse til at køre i private vinduer.
+    <label data-l10n-name="private-browsing-learn-more">Læs mere.</label>
+
 extensions-view-discover =
     .name = Find tilføjelser
     .tooltiptext = { extensions-view-discover.name }
@@ -218,3 +246,42 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Installer opdateringer
     .tooltiptext = Installer tilgængelige opdateringer i denne oversigt
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Håndter genveje til udvidelser
+    .accesskey = H
+shortcuts-empty-message = Der er ingen genvej for denne udvidelse.
+shortcuts-no-addons = Du har ikke aktiveret nogen udvidelser.
+shortcuts-no-commands = Følgende udvidelser han ingen genveje: 
+shortcuts-input =
+  .placeholder = Indtast en genvej.
+
+shortcuts-browserAction = Aktiver udvidelse
+shortcuts-pageAction = Aktiver sidehandling
+shortcuts-sidebarAction = Vis/skjul sidepanelet
+
+shortcuts-modifier-mac = Inkluder Ctrl, Alt eller ⌘
+shortcuts-modifier-other = Inkluder Ctrl eller Alt
+shortcuts-invalid = Ugyldig kombination
+shortcuts-letter = Indtast et bogstav
+shortcuts-system = Kan ikke tilsidesætte { -brand-short-name }-genvej
+
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        *[other] vis { $numberToShow } til
+    }
+
+shortcuts-card-collapse-button = Vis færre
+
+go-back-button =
+    .tooltiptext = Gå tilbage
+
+## Add-on actions
+remove-addon-button = Fjern
+disable-addon-button = Deaktiver
+enable-addon-button = Aktiver
+
+addons-enabled-heading = Aktiveret
+addons-disabled-heading = Deaktiveret

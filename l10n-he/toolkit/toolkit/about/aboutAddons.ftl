@@ -90,6 +90,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = כבוי
     .tooltiptext = אל תתקין עדכונים אוטומטית
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = הפעלה בחלונות פרטיים
+detail-private-browsing-description = ההרחבה תפעל בחלונות פרטיים, ותהיה לה גישה לפעילויות המקוונות שלך. <label data-l10n-name="detail-private-browsing-learn-more">מידע נוסף</label>
+detail-private-browsing-on =
+    .label = לאפשר
+    .tooltiptext = הפעלה בגלישה פרטית
+detail-private-browsing-off =
+    .label = לא לאפשר
+    .tooltiptext = נטרול בגלישה פרטית
 detail-home =
     .label = דף הבית
 detail-home-value =
@@ -132,6 +141,7 @@ legacy-warning-show-legacy = הצגת הרחבות דור קודם
 legacy-extensions =
     .value = הרחבות מדור קודם
 legacy-extensions-description = הרחבות אלו לא עומדות בתקנים הנוכחיים של { -brand-short-name } ולכן כובו. <label data-l10n-name="legacy-learn-more">מידע נוסף על השינויים בתוספות</label>
+private-browsing-description = הרחבות אינן מורשות לפעול כברירת מחדל בחלונות פרטיים. זה אומר שהן לא יעבדו תוך כדי גלישה פרטית, ולא תהיה להן גישה לפעילויות המקוונות שלך שם. כדי לאפשר להרחבה לפעול בחלונות פרטיים, יש לבחור בכרטיס ההרחבה להלן ולשנות את ההגדרה. <label data-l10n-name="private-browsing-learn-more">מידע נוסף</label>
 extensions-view-discover =
     .name = קבלת תוספות
     .tooltiptext = { extensions-view-discover.name }
@@ -209,3 +219,29 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = התקנת עדכונים
     .tooltiptext = התקנת העדכונים הזמינים ברשימה זו
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = ניהול קיצורי דרך להרחבות
+    .accesskey = נ
+shortcuts-empty-message = אין קיצורי דרך עבור הרחבה זו.
+shortcuts-no-addons = אין לך הרחבות מופעלות.
+shortcuts-input =
+    .placeholder = נא להקליד קיצור דרך
+shortcuts-browserAction = הפעלת הרחבה
+shortcuts-pageAction = הפעלת פעולת דף
+shortcuts-sidebarAction = הצגה/הסתרה של סרגל הצד
+shortcuts-modifier-mac = יש לכלול Ctrl, ‏Alt או ⌘
+shortcuts-modifier-other = יש לכלול Ctrl או Alt
+shortcuts-invalid = שילוב לא חוקי
+shortcuts-letter = נא להקליד אות
+shortcuts-system = לא ניתן לדרוס קיצור דרך של { -brand-short-name }
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] הצגת אחד נוסף
+       *[other] הצגת { $numberToShow } נוספים
+    }
+shortcuts-card-collapse-button = הצגת פחות
+go-back-button =
+    .tooltiptext = חזרה אחורה

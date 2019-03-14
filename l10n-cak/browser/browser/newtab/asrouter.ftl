@@ -3,11 +3,14 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 cfr-doorhanger-extension-heading = Chilab'en K'amal
+cfr-doorhanger-pintab-heading = Tatojtob'ej rere': Pin Tab
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Aruma nintz'ët re'
 cfr-doorhanger-extension-cancel-button = Wakami Mani
     .accesskey = M
 cfr-doorhanger-extension-ok-button = Titz'aqatisäx Wakami
+    .accesskey = T
+cfr-doorhanger-pintab-ok-button = Tinak'ab'äx Re Ruwi' Re'
     .accesskey = T
 cfr-doorhanger-extension-manage-settings-button = Kenuk'samajïx taq Kinuk'ulem Chilab'enïk
     .accesskey = K
@@ -41,3 +44,12 @@ cfr-doorhanger-extension-total-users =
         [one] { $total } okisanel
        *[other] { $total } okisanela'
     }
+cfr-doorhanger-pintab-description = Katok anin pa ri ruxaq ak'amaya'l yalan nawokisaj. Ke'ajaqa' kan ri taq ruxaq k'amaya'l pa jun ruwi' (achi'el toq natikirisaj).
+
+## These messages are steps on how to use the feature and are shown together.
+
+cfr-doorhanger-pintab-step1 = <b>Ajkiq'a'-pitz'oj</b> pa ri ruwi' nawajo' nanak'ab'a'.
+cfr-doorhanger-pintab-step2 = Ticha' <b>Nak'oj Ruwi'</b> pa ri k'utsamaj.
+cfr-doorhanger-pintab-step3 = We k'o jun ruk'exoj ri ruxaq k'amaya'l, xtatz'ët jun xar chuq' pa ri ruwi' nak'ab'an.
+cfr-doorhanger-pintab-animation-pause = Tiq'at
+cfr-doorhanger-pintab-animation-resume = Titikïr chik el

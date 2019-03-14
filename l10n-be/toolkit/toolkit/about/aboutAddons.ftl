@@ -90,6 +90,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = Выкл.
     .tooltiptext = Не ўсталёўваць абнаўленні аўтаматычна
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Задзейнічаць у прыватных вокнах
+detail-private-browsing-description = Пашырэнне будзе працаваць у прыватных вокнах і мець доступ да вашай актыўнасці ў сеціве. <label data-l10n-name="detail-private-browsing-learn-more">Падрабязней</label>
+detail-private-browsing-on =
+    .label = Дазволіць
+    .tooltiptext = Уключаць у рэжыме прыватнага аглядання
+detail-private-browsing-off =
+    .label = Не дазваляць
+    .tooltiptext = Адключаць у рэжыме прыватнага аглядання
 detail-home =
     .label = Хатняя старонка
 detail-home-value =
@@ -132,6 +141,12 @@ legacy-warning-show-legacy = Паказаць састарэлыя пашырэ�
 legacy-extensions =
     .value = Састарэлыя пашырэнні
 legacy-extensions-description = Гэтыя пашырэнні не адпавядаюць бягучым стандартам { -brand-short-name }, таму яны былі выключаны. <label data-l10n-name="legacy-learn-more">Даведацца аб зменах у дадатках</label>
+private-browsing-description2 =
+    { -brand-short-name } змяняе парадак працы пашырэнняў у прыватным агляданні. Усе новыя пашырэнні, якія вы дадаяце да
+    { -brand-short-name }, тыпова не будуць дзейнічаць прыватных вокнах. Пакуль вы не выставіце дазвол у наладах,
+    пашырэнне не будзе працаваць у час прыватнага аглядання, і не будзе мець доступу да вашай сеціўнай
+    актыўнасці ў гэтым рэжыме. Мы зрабілі гэта для аховы вашай прыватнасці.
+    <label data-l10n-name="private-browsing-learn-more">Даведайцеся, як кіраваць наладамі пашырэння.</label>
 extensions-view-discover =
     .name = Атрымаць дадаткі
     .tooltiptext = { extensions-view-discover.name }
@@ -209,3 +224,39 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Усталяваць абнаўленні
     .tooltiptext = Усталяваць даступныя абнаўленні з гэтага спісу
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Кіраваць спалучэннямі клавіш пашырэнняў
+    .accesskey = ы
+shortcuts-empty-message = Гэта пашырэнне не мае спалучэнняў клавіш.
+shortcuts-no-addons = У вас не ўключана ніводнага пашырэння.
+shortcuts-no-commands = Наступныя пашырэнні не маюць спалучэнняў клавіш:
+shortcuts-input =
+    .placeholder = Увядзіце спалучэнне клавіш
+shortcuts-browserAction = Актываваць пашырэнне
+shortcuts-pageAction = Актываваць дзеянні старонкі
+shortcuts-sidebarAction = Паказаць/схаваць бакавую панэль
+shortcuts-modifier-mac = Улучыце Ctrl, Alt або ⌘
+shortcuts-modifier-other = Улучыце Ctrl або Alt
+shortcuts-invalid = Недапушчальная камбінацыя
+shortcuts-letter = Увядзіце літару
+shortcuts-system = Нельга перавызначыць спалучэнне клавіш { -brand-short-name }
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] Паказаць яшчэ { $numberToShow }
+        [few] Паказаць яшчэ { $numberToShow }
+       *[other] Паказаць яшчэ { $numberToShow }
+    }
+shortcuts-card-collapse-button = Паказаць менш
+go-back-button =
+    .tooltiptext = Вярнуцца
+
+## Add-on actions
+
+remove-addon-button = Выдаліць
+disable-addon-button = Адключыць
+enable-addon-button = Уключыць
+addons-enabled-heading = Уключана
+addons-disabled-heading = Выключана

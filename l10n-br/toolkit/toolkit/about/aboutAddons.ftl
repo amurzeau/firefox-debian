@@ -88,6 +88,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = Diweredekaet
     .tooltiptext = Arabat staliañ an hizivadennoù ent emgefreek
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Lañsañ en ur prenestr prevez
+detail-private-browsing-description = An askouezhioù az aio en-dro er prenestroù prevez, ha gallout a reont haeziñ hoc'h oberiantiz enlinenn. <label data-l10n-name="detail-private-browsing-learn-more">Gouzout hiroc'h</label>
+detail-private-browsing-on =
+    .label = Aotren
+    .tooltiptext = Gweredekaat er merdeiñ prevez
+detail-private-browsing-off =
+    .label = Na aotren
+    .tooltiptext = Diweredekaat er merdeiñ prevez
 detail-home =
     .label = Pennbajenn
 detail-home-value =
@@ -130,6 +139,7 @@ legacy-warning-show-legacy = Diskouez an askouezhioù diamzeret
 legacy-extensions =
     .value = Askouezhioù diamzeret
 legacy-extensions-description = An askouezhioù-mañ ne glotont ket kenn gant skouerioù { -brand-short-name } ha diweredekaet int bet. <label data-l10n-name="legacy-learn-more">Gouzout hiroc'h a-zivout ar c'hemmoù en askouezhioù</label>
+private-browsing-description = N'eo ket aotreet an askouezhioù da vont en-dro er prenestroù prevez dre ziouer. Talvezout a ra ne vint ket gouest da haeziñ hoc'h oberiantiz enlinenn. Evit aotren un askouezh da vont en-dro er prenestroù prevez, diuzit an askouezh dindan ha kemmit e arventennoù. <label data-l10n-name="private-browsing-learn-more">Gouzout hiroc'h</label>.
 extensions-view-discover =
     .name = Kaout askouezhioù
     .tooltiptext = { extensions-view-discover.name }
@@ -207,3 +217,41 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Staliañ Hizivadurioù
     .tooltiptext = Staliañ an hizivadennoù hegerz war ar roll-mañ
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Merañ ar berradennoù askouezhioù
+    .accesskey = b
+shortcuts-empty-message = N'eus berradenn ebet evit an askouezh-mañ.
+shortcuts-no-addons = N'ho peus askouezh ebet gweredekaet.
+shortcuts-no-commands = An askouezhioù da-heul n'ho deus ket a verradenn:
+shortcuts-input =
+    .placeholder = Biziatait ur verradenn
+shortcuts-browserAction = Gweredekaat an askouezh
+shortcuts-pageAction = Gweredekaat ar gwered pajenn
+shortcuts-sidebarAction = Diskouez/kuzhat ar varrenn gostez
+shortcuts-modifier-mac = Enkorfañ Ctrl, Alt pe ⌘
+shortcuts-modifier-other = Enkorfañ Ctrl pe Alt
+shortcuts-invalid = Kenaozadur didalvoudek
+shortcuts-letter = Biziatait ul lizherenn
+shortcuts-system = N'haller ket flastrañ ur verradenn { -brand-short-name }
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] Diskouez { $numberToShow } ouzhpenn
+        [two] Diskouez { $numberToShow } ouzhpenn
+        [few] Diskouez { $numberToShow } ouzhpenn
+        [many] Diskouez { $numberToShow } ouzhpenn
+       *[other] Diskouez { $numberToShow } ouzhpenn
+    }
+shortcuts-card-collapse-button = Diskouez nebeutoc'h
+go-back-button =
+    .tooltiptext = Distreiñ
+
+## Add-on actions
+
+remove-addon-button = Dilemel
+disable-addon-button = Diweredekaat
+enable-addon-button = Gweredekaat
+addons-enabled-heading = Gweredekaet
+addons-disabled-heading = Diweredekaet

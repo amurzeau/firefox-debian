@@ -26,6 +26,8 @@ profiles-rename = Đổi tên
 profiles-remove = Xóa
 profiles-set-as-default = Đặt làm hồ sơ mặc định
 profiles-launch-profile = Bắt đầu hồ sơ ở trình duyệt mới
+profiles-cannot-set-as-default-title = Không thể đặt mặc định
+profiles-cannot-set-as-default-message = Không thể thay đổi hồ sơ mặc định cho { -brand-short-name }.
 profiles-yes = có
 profiles-no = không
 profiles-rename-profile-title = Đổi tên hồ sơ
@@ -41,7 +43,7 @@ profiles-delete-profile-title = Xóa hồ sơ
 #   $dir (String) - Path to be displayed
 profiles-delete-profile-confirm =
     Xóa một hồ sơ cũng sẽ gỡ bỏ nó ra khỏi danh sách các hồ sơ hiện tại và không thể hoàn tác được.
-    Bạn có thể chọn xóa các tập tin dữ liệu của hồ sơ, bao gồm thiết lập, chứng thư và các dữ liệu người dùng khác. Tùy chọn này sẽ xóa thư mục “{ $dir }” và không thể hoàn tác được.
+    Bạn có thể chọn xóa các tập tin dữ liệu của hồ sơ, bao gồm thiết lập, chứng chỉ và các dữ liệu người dùng khác. Tùy chọn này sẽ xóa thư mục “{ $dir }” và không thể hoàn tác được.
     Bạn có muốn xóa các tập tin dữ liệu của hồ sơ không?
 profiles-delete-files = Xóa các tập tin
 profiles-dont-delete-files = Không xóa các tập tin

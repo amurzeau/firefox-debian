@@ -23,7 +23,7 @@ update-manual = Cập nhật có tại <label data-l10n-name="manual-link"/>
 update-unsupported = Bạn không thể cập nhật thêm trên hệ thống này nữa. <label data-l10n-name="unsupported-link">Tìm hiểu thêm</label>
 update-restarting = Đang khởi động lại…
 channel-description = Bạn hiện đang ở trên kênh cập nhật <label data-l10n-name="current-channel"></label>.
-warningDesc-version = { -brand-short-name } đang được thử nghiệm và có thể không ổn định.
+warningDesc-version = { -brand-short-name } thiết kế để thử nghiệm và có thể không ổn định.
 community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label> là một <label data-l10n-name="community-exp-creditsLink">cộng đồng toàn cầu</label> cùng chung sức bảo vệ Web mở, công khai và cho phép ai cũng truy cập được.
 community-2 = { -brand-short-name } được thiết kế bởi <label data-l10n-name="community-mozillaLink">{ -vendor-short-name }</label>, một <label data-l10n-name="community-creditsLink">cộng đồng toàn cầu</label> cùng chung sức bảo vệ Web mở và cho phép ai cũng truy cập được.
 helpus = Bạn muốn giúp đỡ? <label data-l10n-name="helpus-donateLink">Quyên góp tài chính</label>, hoặc <label data-l10n-name="helpus-getInvolvedLink">tham gia đóng góp!</label>
@@ -32,3 +32,14 @@ bottomLinks-rights = Quyền hạn người dùng cuối
 bottomLinks-privacy = Chính sách riêng tư
 aboutDialog-architecture-sixtyFourBit = 64-bit
 aboutDialog-architecture-thirtyTwoBit = 32-bit
+# Example of resulting string: 66.0.1 (64-bit)
+# Variables:
+#   $version (String): version of Firefox, e.g. 66.0.1
+#   $bits (Number): bits of the architecture (32 or 64)
+aboutDialog-version = { $version } ({ $bits }-bit)
+# Example of resulting string: 66.0a1 (2019-01-16) (64-bit)
+# Variables:
+#   $version (String): version of Firefox for Nightly builds, e.g. 66.0a1
+#   $isodate (String): date in ISO format, e.g. 2019-01-16
+#   $bits (Number): bits of the architecture (32 or 64)
+aboutDialog-version-nightly = { $version } ({ $isodate }) ({ $bits }-bit)

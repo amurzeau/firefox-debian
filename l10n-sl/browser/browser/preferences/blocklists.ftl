@@ -6,6 +6,7 @@ blocklist-window =
     .title = Seznami za zavračanje
     .style = width: 50em
 blocklist-desc = Izberite, kateri seznam naj { -brand-short-name } uporablja za zavračanje elementov, ki bi lahko sledili vašim aktivnostim na spletu.
+blocklist-description = Izberite, kateri seznam naj { -brand-short-name } uporablja za zavračanje spletnih sledilcev. Sezname omogoča <a data-l10n-name="disconnect-link" title="Disconnect">Disconnect</a>.
 blocklist-close-key =
     .key = w
 blocklist-treehead-list =
@@ -28,3 +29,7 @@ blocklist-item-moz-std-name = Osnovna zaščita Disconnect.me (Priporočeno).
 blocklist-item-moz-std-desc = Dovoli nekaj sledilcev, da bo spletna stran delovala pravilno.
 blocklist-item-moz-full-name = Stroga zaščita Disconnect.me.
 blocklist-item-moz-full-desc = Zavrača znane sledilce. Nekatere spletne strani morda ne bodo delovale pravilno.
+blocklist-item-moz-std-listName = Seznam zavračanja ravni 1 (priporočeno).
+blocklist-item-moz-std-description = Omogoča nekaj sledilcev, da se zmanjša nedelovanje spletnih mest.
+blocklist-item-moz-full-listName = Seznam zavračanja ravni 2.
+blocklist-item-moz-full-description = Zavrača vse zaznane sledilce. Nekatera spletna mesta ali vsebine morda ne bodo pravilno naložene.

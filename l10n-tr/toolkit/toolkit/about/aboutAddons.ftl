@@ -88,6 +88,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = Kapalı
     .tooltiptext = Güncellemeleri kendiliğinden kurma
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Gizli pencerede çalışabilir
+detail-private-browsing-description = Bu eklenti gizli pencelerde de çalışacak ve web’deki etkinliklerinize erişebilecek. <label data-l10n-name="detail-private-browsing-learn-more">Daha fazla bilgi alın</label>
+detail-private-browsing-on =
+    .label = İzin ver
+    .tooltiptext = Gizli gezintide izin ver
+detail-private-browsing-off =
+    .label = İzin verme
+    .tooltiptext = Gizli gezintide etkisizleştir
 detail-home =
     .label = Ana sayfa
 detail-home-value =
@@ -130,6 +139,12 @@ legacy-warning-show-legacy = Eski teknoloji eklentileri göster
 legacy-extensions =
     .value = Eski teknoloji eklentiler
 legacy-extensions-description = Bu eklentiler yeni { -brand-short-name } standartlarını karşılamadığı için etkisiz hale getirilmiştir. <label data-l10n-name="legacy-learn-more">Eklentilerde yaptığımız değişiklikler hakkında bilgi alın</label>
+private-browsing-description2 =
+    { -brand-short-name } gizli gezinti modunda eklentilerin çalışma şekli değişiyor. Bundan sonra
+    { -brand-short-name } tarayıcınıza ekleceğiniz eklentiler varsayılan olarak gizli pencerelerde çalışmayacak.
+    Böylece, siz ayarlara girip özellikle izin vermedikçe eklentiler gizli gezinti sırasında yaptıklarınızı göremeyecekler.
+    Bu değişikliği, gizli gezintinizin daha da gizli kalması için yapıyoruz.
+    <label data-l10n-name="private-browsing-learn-more">Eklenti ayarlarınızı yönetmeyi öğrenin.</label>
 extensions-view-discover =
     .name = Eklentileri edinin
     .tooltiptext = { extensions-view-discover.name }
@@ -207,3 +222,38 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Güncellemeleri kur
     .tooltiptext = Bu listedeki mevcut güncellemeleri kur
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Eklenti kısayollarını yönet
+    .accesskey = E
+shortcuts-empty-message = Bu eklentiye ait kısayol yok.
+shortcuts-no-addons = Herhangi bir eklentiyi etkinleştirmediniz.
+shortcuts-no-commands = Aşağıdaki eklentilerin kısayolları yok:
+shortcuts-input =
+    .placeholder = Bir kısayol girin
+shortcuts-browserAction = Eklentiyi etkinleştir
+shortcuts-pageAction = Sayfa eylemini etkinleştir
+shortcuts-sidebarAction = Kenar çubuğunu aç/kapat
+shortcuts-modifier-mac = Ctrl, Alt veya ⌘ kullanmalısınız
+shortcuts-modifier-other = Ctrl veya Alt kullanmalısınız
+shortcuts-invalid = Geçersiz kombinasyon
+shortcuts-letter = Bir harf yazın
+shortcuts-system = { -brand-short-name } kısayollarını değiştiremezsiniz
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] { $numberToShow } tane daha göster
+       *[other] { $numberToShow } tane daha göster
+    }
+shortcuts-card-collapse-button = Daha az göster
+go-back-button =
+    .tooltiptext = Geri dön
+
+## Add-on actions
+
+remove-addon-button = Kaldır
+disable-addon-button = Etkisizleştir
+enable-addon-button = Etkinleştir
+addons-enabled-heading = Etkin
+addons-disabled-heading = Devre dışı

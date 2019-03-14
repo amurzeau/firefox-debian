@@ -93,6 +93,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = Ut
     .tooltiptext = Net automatysk fernijingen ynstallearje
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Utfiere yn priveefinsters
+detail-private-browsing-description = Utwreidingen sille yn priveefinsters wurkje en tagong hawwe ta jo online-aktiviteiten. <label data-l10n-name="detail-private-browsing-learn-more">Mear ynfo</label>
+detail-private-browsing-on =
+    .label = Tastean
+    .tooltiptext = Ynskeakelje yn priveenavigaasje
+detail-private-browsing-off =
+    .label = Net tastean
+    .tooltiptext = Utskeakelje yn priveenavigaasje
 detail-home =
     .label = Begjinside
 detail-home-value =
@@ -135,6 +144,12 @@ legacy-warning-show-legacy = Ferâldere útwreidingen toane
 legacy-extensions =
     .value = Ferâldere útwreidingen
 legacy-extensions-description = Dizze útwreidingen foldogge op dit stuit net oan de { -brand-short-name }-standerts binne dêrom de-aktivearre. <label data-l10n-name="legacy-learn-more">Lear mear oer de wizigingen oan add-ons</label>
+private-browsing-description2 =
+    { -brand-short-name } wizigt de manier wêrop útwreidingen yn priveenavigaasje wurkje. Nije útwreidingen dy't jo oan
+    { -brand-short-name } tafoegje, wurkje standert net yn priveefinsters. Utsein jo dit tastean yn de ynstellingen, wurket
+    de útwreiding net yn priveenavigaasje, en hat dizze dêryn gjin tagong ta jo online-aktiviteiten.
+    Dizze wiziging is oanbrocht om jo priveenavigaasje privee te hâlden.
+    <label data-l10n-name="private-browsing-learn-more">Mear ynfo oer it behearen fan útwreidingen-ynstellingen.</label>
 extensions-view-discover =
     .name = Add-ons krije
     .tooltiptext = { extensions-view-discover.name }
@@ -212,3 +227,37 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Ynstallearje fernijingen
     .tooltiptext = Ynstallearje beskikbere fernijingen op dize list
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Utwreidingsfluchtoetsen beheare
+    .accesskey = U
+shortcuts-empty-message = Der binne gjin fluchtoetsen foar dizze útwreiding.
+shortcuts-no-addons = Jo hawwe gjin útwreidingen ynskeakele.
+shortcuts-no-commands = De folgjende útwreidingen hawwe gjin fluchtoetsen:
+shortcuts-input =
+    .placeholder = Typ in fluchtoets
+shortcuts-browserAction = Utwreiding aktivearje
+shortcuts-pageAction = Side-aksje aktivearje
+shortcuts-sidebarAction = De sydbalke yn-/útskeakelje
+shortcuts-modifier-mac = Druk ek op Ctrl, Alt of ⌘
+shortcuts-modifier-other = Druk ek op Ctrl of Alt
+shortcuts-invalid = Unjildige kombinaasje
+shortcuts-letter = Typ in letter
+shortcuts-system = Kin gjin besteande { -brand-short-name }-fluchtoets brûke
+shortcuts-card-expand-button =
+    { $numberToShow ->
+       *[other] Noch { $numberToShow } toane
+    }
+shortcuts-card-collapse-button = Minder toane
+go-back-button =
+    .tooltiptext = Tebekgean
+
+## Add-on actions
+
+remove-addon-button = Fuortsmite
+disable-addon-button = Utskeakelje
+enable-addon-button = Ynskeakelje
+addons-enabled-heading = Ynskeakele
+addons-disabled-heading = Utskeakele

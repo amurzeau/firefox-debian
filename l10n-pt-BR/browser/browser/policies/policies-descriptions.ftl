@@ -17,7 +17,7 @@ policy-BlockAboutConfig = Bloquear acesso à página about:config.
 policy-BlockAboutProfiles = Bloquear acesso à página about:profiles.
 policy-BlockAboutSupport = Bloquear acesso à página about:support.
 policy-Bookmarks = Criar favoritos na barra de favoritos, no menu de favoritos ou uma pasta especificada dentro deles.
-policy-Certificates = Define se deve ou não usar certificados integrados. Esta política está disponível somente para Windows no momento.
+policy-CaptivePortal = Ativar ou desativar suporte a portal cativo.
 policy-CertificatesDescription = Adicionar certificados ou utilizar certificados integrados.
 policy-Cookies = Permitir ou impedir que sites definam cookies.
 policy-DisableAppUpdate = Impedir a atualização do navegador.
@@ -37,7 +37,6 @@ policy-DisableProfileImport = Desativar o comando do menu para importar dados de
 policy-DisableProfileRefresh = Desativar o botão "Restaurar o { -brand-short-name }" na página about:support.
 policy-DisableSafeMode = Desativar o recurso de reiniciar em modo de segurança. Nota: entrar em modo de segurança usando a tecla Shift só pode ser desativado no Windows usando Política de Grupo.
 policy-DisableSecurityBypass = Impedir que o usuário ignore determinados alertas de segurança.
-policy-DisableSetDesktopBackground = Desativar o comando do menu para definir uma imagem como plano de fundo da área de trabalho.
 policy-DisableSetAsDesktopBackground = Desativar o comando de menu Definir como papel de parede da área de trabalho para imagens.
 policy-DisableSystemAddonUpdate = Impedir que o navegador instale e atualize extensões do sistema.
 policy-DisableTelemetry = Desligar telemetria.
@@ -49,14 +48,15 @@ policy-DontCheckDefaultBrowser = Desativar a verificação de navegador padrão 
 policy-EnableTrackingProtection = Ativar ou desativar o bloqueio de conteúdo e, opcionalmente, impedir que seja alterado.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
-# English or translate them as verbs. See also:
-# https://github.com/mozilla/policy-templates/blob/master/README.md#extensions-machine-only
+# English or translate them as verbs.
 policy-Extensions = Instalar, desinstalar e bloquear extensões. A opção “Instalar” recebe URLs ou caminhos como parâmetros. As opções “Desinstalar” e "Bloqueado" usam IDs de extensões.
+policy-ExtensionUpdate = Ativar ou desativar atualizações automáticas de extensões.
 policy-FlashPlugin = Permitir ou negar o uso do plugin Flash.
 policy-HardwareAcceleration = Caso definido como "false", desativar a aceleração de hardware.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Definir a página inicial e, opcionalmente, impedir que seja alterada.
 policy-InstallAddonsPermission = Permitir que determinados sites instalem extensões.
+policy-NetworkPrediction = Ativar ou desativar predição de rede (carregamento antecipado de DNS).
 policy-NoDefaultBookmarks = Desativar a criação de favoritos padrões empacotados com o { -brand-short-name }, além dos favoritos inteligente (mais visitados e etiquetas recentes). Nota: esta política somente é efetiva se usada antes da primeira execução do perfil.
 policy-OfferToSaveLogins = Impor as configurações para permitir que o { -brand-short-name } ofereça lembrar logins e senhas salvas. Tanto "true" como "false" são valores aceitos.
 policy-OverrideFirstRunPage = Substituir a página de primeira execução. Defina esta política como vazio se quiser desativar a página de primeira execução.
@@ -70,6 +70,8 @@ policy-SearchBar = Definir a localização padrão da barra de pesquisa. O usuá
 policy-SearchEngines = Definir as configurações do mecanismo de pesquisa. Esta política está disponível somente na versão Extended Support Release (ESR).
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Instalar módulos PKCS #11.
-# “format” refers to the format used for the value of this policy. See also:
-# https://github.com/mozilla/policy-templates/blob/master/README.md#websitefilter-machine-only
+policy-SSLVersionMax = Definir a versão SSL máxima.
+policy-SSLVersionMin = Definir a versão SSL mínima.
+policy-SupportMenu = Adicionar um item de menu de suporte personalizado ao menu de ajuda.
+# “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Bloquear o acesso a determinados sites. Confira a documentação para mais detalhes sobre o formato.

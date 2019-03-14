@@ -16,6 +16,7 @@
 
 <!-- LOCALIZATION NOTE (options.context.inspector): This is the label for
   -  the heading of the Inspector group in the options panel. -->
+<!ENTITY options.context.inspector "Trình kiểm tra">
 
 <!-- LOCALIZATION NOTE (options.showUserAgentStyles.label): This is the label
   -  for the checkbox option to show user agent styles in the Inspector
@@ -26,6 +27,8 @@
 <!-- LOCALIZATION NOTE (options.collapseAttrs.label): This is the label
   -  for the checkbox option to enable collapse attributes in the Inspector
   -  panel. -->
+<!ENTITY options.collapseAttrs.label "Cắt bớt các thuộc tính DOM">
+<!ENTITY options.collapseAttrs.tooltip "Cắt ngắn các thuộc tính dài trong trình kiểm tra">
 
 <!-- LOCALIZATION NOTE (options.defaultColorUnit.label): This is the label for a
   -  dropdown list that controls the default color unit used in the inspector.
@@ -66,6 +69,8 @@
 <!-- LOCALIZATION NOTE (options.enableChrome.label5): This is the label for the
   -  checkbox that toggles chrome debugging, i.e. devtools.chrome.enabled
   -  boolean preference in about:config, in the options panel. -->
+<!ENTITY options.enableChrome.label5    "Kích hoạt trình duyệt chrome và các hộp công cụ gỡ lỗi tiện ích">
+<!ENTITY options.enableChrome.tooltip3  "Bật tùy chọn này sẽ cho phép bạn sử dụng các công cụ dành cho nhà phát triển khác nhau trong ngữ cảnh trình duyệt (thông qua Công cụ > Nhà phát triển web > Hộp công cụ trình duyệt) và gỡ lỗi các tiện ích bổ sung từ trình quản lý tiện ích">
 
 <!-- LOCALIZATION NOTE (options.enableRemote.label3): This is the label for the
   -  checkbox that toggles remote debugging, i.e. devtools.debugger.remote-enabled
@@ -104,6 +109,7 @@
 <!-- LOCALIZATION NOTE (options.selectEnabledToolboxButtons.label): This is the label for
   -  the heading of group of checkboxes corresponding to the default developer
   -  tool buttons. -->
+<!ENTITY options.selectEnabledToolboxButtons.label     "Các nút trên hộp công cụ có sẵn">
 
 <!-- LOCALIZATION NOTE (options.toolNotSupported.label): This is the label for
   -  the explanation of the * marker on a tool which is currently not supported
@@ -123,6 +129,8 @@
 
 <!-- LOCALIZATION NOTE (options.timestampMessages.label): This is the
    - label for the checkbox that toggles timestamps in the Web Console -->
+<!ENTITY options.timestampMessages.label      "Kích hoạt dấu thời gian">
+<!ENTITY options.timestampMessages.tooltip    "Nếu bạn bật lệnh tùy chọn này và đầu ra trong bảng điều khiển Web sẽ hiển thị dấu thời gian">
 
 <!-- LOCALIZATION NOTE (options.debugger.label): This is the label for the
   -  heading of the group of Debugger preferences in the options panel. -->
@@ -130,14 +138,18 @@
 
 <!-- LOCALIZATION NOTE (options.sourceMaps.label): This is the
    - label for the checkbox that toggles source maps in all tools -->
+<!ENTITY options.sourceMaps.label      "Bật bản đồ nguồn">
+<!ENTITY options.sourceMaps.tooltip1   "Nếu bạn bật tùy chọn này, các nguồn sẽ được ánh xạ trong các công cụ.">
 
 <!-- LOCALIZATION NOTE (options.styleeditor.label): This is the label for the
   -  heading of the group of Style Editor preferences in the options
   -  panel. -->
+<!ENTITY options.styleeditor.label            "Trình chỉnh sửa kiểu mẫu">
 
 <!-- LOCALIZATION NOTE (options.stylesheetAutocompletion.label): This is the
    - label for the checkbox that toggles autocompletion of css in the Style Editor -->
 <!ENTITY options.stylesheetAutocompletion.label      "Tự động điền CSS">
+<!ENTITY options.stylesheetAutocompletion.tooltip    "Tự động điền các thuộc tính, giá trị và bộ chọn CSS trong trình chỉnh sửa kiểu mẫu khi bạn nhập">
 
 <!-- LOCALIZATION NOTE (options.screenshot.label): This is the label for the
    -  heading of the group of Screenshot preferences in the options
@@ -146,7 +158,7 @@
 
 <!-- LOCALIZATION NOTE (options.screenshot.clipboard.label): This is the
    - label for the checkbox that toggles screenshot to clipboard feature. -->
-<!ENTITY options.screenshot.clipboard.label      "Chép ảnh chụp màn hình vào clipboard">
+<!ENTITY options.screenshot.clipboard.label      "Sao chép ảnh chụp màn hình vào clipboard">
 <!ENTITY options.screenshot.clipboard.tooltip    "Lưu ảnh chụp màn hình trực tiếp vào clipboard">
 
 <!-- LOCALIZATION NOTE (options.screenshot.audio.label): This is the
@@ -166,6 +178,7 @@ kí hiệu nền tảng Gecko">
   -  section. -->
 
 <!ENTITY options.sourceeditor.label                     "Tùy chỉnh trình soạn thảo">
+<!ENTITY options.sourceeditor.autoclosebrackets.label   "Tự đóng dấu ngoặc">
 <!ENTITY options.sourceeditor.autoclosebrackets.tooltip "Tự động chèn dấu đóng">
 <!ENTITY options.sourceeditor.expandtab.label           "Căn lề bằng khoảng trắng">
 <!ENTITY options.sourceeditor.expandtab.tooltip         "Sử dụng dấu cách thay cho ký tự tab">

@@ -54,6 +54,11 @@ category-privacy =
 pane-sync-title = Firefox-konto
 category-sync =
     .tooltiptext = { pane-sync-title }
+
+pane-sync-title2 = { -sync-brand-short-name }
+category-sync2 =
+    .tooltiptext = { pane-sync-title2 }
+
 help-button-label = Hjælp til { -brand-short-name }
 addons-button-label = Udvidelser og temaer
 focus-search =
@@ -218,7 +223,7 @@ colors-settings =
     .label = Farver…
     .accesskey = F
 language-header = Sprog
-choose-language-description = Vælg dit fortrukne sprog at få vist sider i
+choose-language-description = Vælg dit foretrukne sprog at få vist sider i
 choose-button =
     .label = Vælg…
     .accesskey = æ
@@ -293,6 +298,9 @@ update-application-check-choose =
 update-application-manual =
     .label = aldrig søge efter opdateringer (frarådes)
     .accesskey = N
+
+update-application-warning-cross-user-setting = Denne indstilling vil gælde alle Windows-konti og { -brand-short-name }-profiler, der anvender denne { -brand-short-name }-installation.
+
 update-application-use-service =
     .label = bruge en baggrundsservice til at installere opdateringer
     .accesskey = b
@@ -347,6 +355,11 @@ browsing-search-on-start-typing =
 browsing-cfr-recommendations =
     .label = Anbefal udvidelser mens jeg browser
     .accesskey = u
+
+browsing-cfr-features =
+    .label = Anbefal funktioner mens jeg browser
+    .accesskey = f
+
 browsing-cfr-recommendations-learn-more = Læs mere
 
 ## General Section - Proxy
@@ -397,18 +410,18 @@ choose-bookmark =
 
 ## Search Section
 
-search-bar-header = Søgelinje
+search-bar-header = Søgefelt
 search-bar-hidden =
-    .label = Brug adresselinjen til søgning og navigation
+    .label = Brug adressefeltet til søgning og navigation
 search-bar-shown =
-    .label = Tilføj søgelinjen til værktøjslinjen
+    .label = Tilføj søgefeltet til værktøjslinjen
 search-engine-default-header = Standard-søgetjeneste
-search-engine-default-desc = Vælg den søgetjeneste, du vil bruge i adresselinjen og søgelinjen.
+search-engine-default-desc = Vælg den søgetjeneste, du vil bruge i adressefeltet og søgefeltet.
 search-suggestions-option =
     .label = Vis søgeforslag
     .accesskey = s
 search-show-suggestions-url-bar-option =
-    .label = Vis søgeforslag i adresselinjen
+    .label = Vis søgeforslag i adressefeltet
     .accesskey = a
 # This string describes what the user will observe when the system
 # prioritizes search suggestions over browsing history in the results
@@ -416,10 +429,10 @@ search-show-suggestions-url-bar-option =
 # "ahead" refers to location (appearing most proximate to), not time
 # (appearing before).
 search-show-suggestions-above-history-option =
-    .label = Vis søgeforslag før resultater fra din browserhistorik i adresselinjen
+    .label = Vis søgeforslag før resultater fra din browserhistorik i adressefeltet
 search-suggestions-cant-show = Søgeforslag vil ikke blive vist i adressefeltet, fordi du har sat { -brand-short-name } op til aldrig at gemme historik.
 search-one-click-header = Lyn-søgetjenester
-search-one-click-desc = Vælg de alternative søgetjenester, der vises under adresselinjen og søgelinjen, når du begynder at indtaste en søgeterm.
+search-one-click-desc = Vælg de alternative søgetjenester, der vises under adressefeltet og søgefeltet, når du begynder at indtaste en søgeterm.
 search-choose-engine-column =
     .label = Søgetjeneste
 search-choose-keyword-column =
@@ -539,6 +552,13 @@ sync-device-name-save =
     .accesskey = G
 sync-mobilepromo-single = Opret forbindelse til en ny enhed
 sync-mobilepromo-multi = Håndter enheder
+
+sync-connect-another-device = Opret forbindelse til en ny enhed
+
+sync-manage-devices = Håndter enheder
+
+sync-fxa-begin-pairing = Tilføj enhed
+
 sync-tos-link = Tjenestevilkår
 sync-fxa-privacy-notice = Privatlivspolitik
 
@@ -625,6 +645,8 @@ sitedata-delete-on-close =
     .label = Slet cookies og websteds-data, når { -brand-short-name } lukkes
     .accesskey = l
 
+sitedata-delete-on-close-private-browsing = I permanent privat browsing-tilstand bliver cookies og webstedsdata altid slettet, når { -brand-short-name } afsluttes.
+
 sitedata-keep-until-closed =
     .label = Jeg lukker { -brand-short-name }
 sitedata-allow-cookies-option =
@@ -667,8 +689,8 @@ sitedata-cookies-permissions =
 
 ## Privacy Section - Address Bar
 
-addressbar-header = Adresselinje
-addressbar-suggest = Når jeg bruger adresselinjen ønsker jeg forslag fra
+addressbar-header = Adressefelt
+addressbar-suggest = Når jeg bruger adressefeltet ønsker jeg forslag fra
 addressbar-locbar-history-option =
     .label = Historik
     .accesskey = H
@@ -685,7 +707,7 @@ addressbar-suggestions-settings = Skift indstillinger for søgeforslag
 content-blocking-header = Blokering af indhold
 content-blocking-desc = Bloker indhold fra tredjepart, fx reklamer eller kode, der kan gøre din browsing langsommere og som kan spore dig rundt på nettet. Tilpas dine indstillinger for at få den bedste balance mellem beskyttelse og ydelse.
 
-content-blocking-description = Bloker tredjeparts-indhold, der sporer dig rundt på nettet. Kontroller hvor meget af din aktivetet på nettet, der gemmes og deles mellem websteder.
+content-blocking-description = Bloker tredjeparts-indhold, der sporer dig rundt på nettet. Kontroller hvor meget af din aktivitet på nettet, der gemmes og deles mellem websteder.
 
 content-blocking-learn-more = Læs mere
 content-blocking-restore-defaults =
@@ -730,6 +752,7 @@ content-blocking-all-third-party-cookies = Alle tredjeparts-cookies
 
 content-blocking-warning-title = Vigtigt!
 content-blocking-warning-desc = Nogen websteder kan holde op med at fungere, når du blokerer cookies og sporings-tjenester. Det er nemt at slå blokering fra for websteder, du stoler på.
+content-blocking-warning-description = Nogen websteder kan holde op med at fungere, når du blokerer indhold. Det er nemt at slå blokering fra for websteder, du stoler på.
 content-blocking-learn-how = Læs hvordan
 
 content-blocking-tracking-protection-trackers-label =
@@ -793,6 +816,17 @@ content-blocking-cookies-label =
   .label = Cookies
   .accesskey = C
 
+# Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
+content-blocking-cryptominers-label =
+  .label = Cryptominers
+  .accesskey = y
+
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+content-blocking-fingerprinters-label =
+  .label = Fingerprinters
+  .accesskey = F
+
 ## Privacy Section - Tracking
 
 tracking-header = Beskyttelse mod sporing
@@ -843,8 +877,13 @@ permissions-notification-pause =
     .accesskey = b
 permissions-block-autoplay-media =
     .label = Lad ikke websteder starte automatisk afspilning af mediefiler med lyd
-    .accesskey = l
+    .accesskey = m
 permissions-block-autoplay-media-menu = For websteder, der automatisk afspiller lyd
+
+permissions-block-autoplay-media2 =
+    .label = Lad ikke websteder starte automatisk afspilning af lyd
+    .accesskey = l
+
 permissions-block-autoplay-media-exceptions =
     .label = Undtagelser…
     .accesskey = U

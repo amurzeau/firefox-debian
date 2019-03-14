@@ -44,6 +44,7 @@ app-basics-memory-use = Uso de memoria
 app-basics-performance = Rendimiento
 app-basics-service-workers = Service Workers registrados
 app-basics-profiles = Perfiles
+app-basics-launcher-process-status = Proceso lanzador
 app-basics-multi-process-support = Ventanas multiproceso
 app-basics-process-count = Procesos de contenido web
 app-basics-enterprise-policies = Políticas empresariales
@@ -182,6 +183,8 @@ virtual-monitor-disp = Pantalla de monitor virtual
 
 found = Encontrado
 missing = Ausente
+gpu-process-pid = GPUProcessPid
+gpu-process = GPUProcess
 gpu-description = Descripción
 gpu-vendor-id = ID del fabricante
 gpu-device-id = ID del dispositivo
@@ -220,6 +223,8 @@ uses-tiling = Usa mosaicos
 content-uses-tiling = Usa mosaicos (contenido)
 off-main-thread-paint-enabled = Dibujado fuera del hilo principal de ejecución activado
 off-main-thread-paint-worker-count = Contador de workers de dibujado ajenos al hilo principal de ejecución
+low-end-machine = Se ha detectado una máquina de bajo rendimiento
+target-frame-rate = Frecuencia de imágenes objetivo
 audio-backend = Sistema de audio
 max-audio-channels = Canales máximos
 channel-layout = Disposición de canales preferida
@@ -237,6 +242,11 @@ effective-content-sandbox-level = Nivel efectivo de aislamiento (sandboxing) par
 sandbox-proc-type-content = contenido
 sandbox-proc-type-file = contenido del archivo
 sandbox-proc-type-media-plugin = plugin de medios
+sandbox-proc-type-data-decoder = decodificador de datos
+launcher-process-status-0 = Activado
+launcher-process-status-1 = Desactivado por fallo
+launcher-process-status-2 = Desactivado forzosamente
+launcher-process-status-unknown = Estado desconocido
 # Variables
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows

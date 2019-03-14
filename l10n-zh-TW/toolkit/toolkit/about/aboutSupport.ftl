@@ -6,7 +6,7 @@ page-title = 疑難排解資訊
 page-subtitle =
     此頁面包含技術資訊，可能可以幫您解決一些問題。
     如果您正在尋找關於 { -brand-short-name } 的一些常見問題，
-    請看看我們的 <a data-l10n-name="support-link">支援網站</a>。
+    請看看我們的<a data-l10n-name="support-link">支援網站</a>。
 crashes-title = 錯誤資訊報表
 crashes-id = 報表編號
 crashes-send-date = 送出日期
@@ -47,6 +47,7 @@ app-basics-memory-use = 記憶體使用量
 app-basics-performance = 效能
 app-basics-service-workers = 已註冊的 Service Workers
 app-basics-profiles = 設定檔
+app-basics-launcher-process-status = 啟動器 Process
 app-basics-multi-process-support = 多程序視窗
 app-basics-process-count = 網頁內容處理程序
 app-basics-enterprise-policies = 企業政策
@@ -224,6 +225,11 @@ effective-content-sandbox-level = 有效內容處理程序沙盒等級
 sandbox-proc-type-content = 內容
 sandbox-proc-type-file = 檔案內容
 sandbox-proc-type-media-plugin = 媒體外掛程式
+sandbox-proc-type-data-decoder = 資料解碼器
+launcher-process-status-0 = 啟用
+launcher-process-status-1 = 由於失敗而停用
+launcher-process-status-2 = 強制停用
+launcher-process-status-unknown = 未知狀態
 # Variables
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows

@@ -9,6 +9,10 @@ cfr-doorhanger-extension-cancel-button = Oua no
     .accesskey = O
 cfr-doorhanger-extension-ok-button = Azonzi oua
     .accesskey = A
+cfr-doorhanger-extension-manage-settings-button = Gestisci inpostaçioin consegiæ
+    .accesskey = G
+cfr-doorhanger-extension-never-show-recommendation = No mostrame sti conseggi
+    .accesskey = N
 cfr-doorhanger-extension-learn-more-link = Atre informaçioin
 # This string is used on a new line below the add-on name
 # Variables:
@@ -37,3 +41,9 @@ cfr-doorhanger-extension-total-users =
         [one] { $total } utente
        *[other] { $total } utenti
     }
+
+## These messages are steps on how to use the feature and are shown together.
+
+cfr-doorhanger-pintab-step1 = <b>Sciacca drito</b> in sciô feuggio quade t'eu amugiâ.
+cfr-doorhanger-pintab-animation-pause = Pösa
+cfr-doorhanger-pintab-animation-resume = Repiggia
