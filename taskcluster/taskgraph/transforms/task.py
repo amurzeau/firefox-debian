@@ -21,12 +21,14 @@ from taskgraph.util.attributes import TRUNK_PROJECTS
 from taskgraph.util.hash import hash_path
 from taskgraph.util.treeherder import split_symbol
 from taskgraph.transforms.base import TransformSequence
+from taskgraph.util.taskcluster import get_root_url
 from taskgraph.util.schema import (
     validate_schema,
     Schema,
     optionally_keyed_by,
     resolve_keyed_by,
     OptimizationSchema,
+    taskref_or_string,
 )
 from taskgraph.util.scriptworker import (
     BALROG_ACTIONS,
@@ -46,12 +48,6 @@ def _run_task_suffix():
     """String to append to cache names under control of run-task."""
     return hash_path(RUN_TASK)[0:20]
 
-
-# shortcut for a string where task references are allowed
-taskref_or_string = Any(
-    basestring,
-    {Required('task-reference'): basestring},
-)
 
 # A task description is a general description of a TaskCluster task
 task_description_schema = Schema({
@@ -148,8 +144,6 @@ task_description_schema = Schema({
             # for non-tier-1 tasks.
             'build_date',
         ),
-
-        'channel': optionally_keyed_by('project', basestring),
     },
 
     # The `run_on_projects` attribute, defaulting to "all".  This dictates the
@@ -498,6 +492,11 @@ def build_docker_worker_payload(config, task, task_def):
         else:
             raise Exception("unknown docker image type")
 
+    # propagate our TASKCLUSTER_ROOT_URL to the task; note that this will soon
+    # be provided directly by the worker, making this redundant:
+    # https://bugzilla.mozilla.org/show_bug.cgi?id=1460015
+    worker['env']['TASKCLUSTER_ROOT_URL'] = get_root_url()
+
     features = {}
 
     if worker.get('relengapi-proxy'):
@@ -529,6 +528,11 @@ def build_docker_worker_payload(config, task, task_def):
         worker['env']['SCCACHE_IDLE_TIMEOUT'] = '0'
     else:
         worker['env']['SCCACHE_DISABLE'] = '1'
+
+    # this will soon be provided directly by the worker:
+    # https://bugzilla.mozilla.org/show_bug.cgi?id=1460015
+    if features.get('taskclusterProxy'):
+        worker['env']['TASKCLUSTER_PROXY_URL'] = 'http://taskcluster'
 
     capabilities = {}
 
@@ -758,6 +762,11 @@ def build_generic_worker_payload(config, task, task_def):
 
     env = worker.get('env', {})
 
+    # propagate our TASKCLUSTER_ROOT_URL to the task; note that this will soon
+    # be provided directly by the worker, making this redundant:
+    # https://bugzilla.mozilla.org/show_bug.cgi?id=1460015
+    env['TASKCLUSTER_ROOT_URL'] = get_root_url()
+
     if task.get('needs-sccache'):
         env['USE_SCCACHE'] = '1'
         # Disable sccache idle shutdown.
@@ -790,9 +799,14 @@ def build_generic_worker_payload(config, task, task_def):
     for mount in mounts:
         if 'cache-name' in mount:
             mount['cacheName'] = mount.pop('cache-name')
+            task_def['scopes'].append('generic-worker:cache:{}'.format(mount['cacheName']))
         if 'content' in mount:
             if 'task-id' in mount['content']:
                 mount['content']['taskId'] = mount['content'].pop('task-id')
+            if 'artifact' in mount['content']:
+                if not mount['content']['artifact'].startswith('public/'):
+                    task_def['scopes'].append(
+                        'queue:get-artifact:{}'.format(mount['content']['artifact']))
 
     if mounts:
         task_def['payload']['mounts'] = mounts
@@ -807,7 +821,9 @@ def build_generic_worker_payload(config, task, task_def):
 
     if worker.get('taskcluster-proxy'):
         features['taskclusterProxy'] = True
-        worker['env']['TASKCLUSTER_PROXY_URL'] = 'http://taskcluster/'
+        # this will soon be provided directly by the worker:
+        # https://bugzilla.mozilla.org/show_bug.cgi?id=1460015
+        worker['env']['TASKCLUSTER_PROXY_URL'] = 'http://taskcluster'
 
     if worker.get('run-as-administrator', False):
         features['runAsAdministrator'] = True
@@ -1271,6 +1287,11 @@ def build_always_optimized_payload(config, task, task_def):
 })
 def build_macosx_engine_payload(config, task, task_def):
     worker = task['worker']
+
+    # propagate our TASKCLUSTER_ROOT_URL to the task; note that this will soon
+    # be provided directly by the worker, making this redundant
+    worker.setdefault('env', {})['TASKCLUSTER_ROOT_URL'] = get_root_url()
+
     artifacts = map(lambda artifact: {
         'name': artifact['name'],
         'path': artifact['path'],
@@ -1444,11 +1465,6 @@ def add_release_index_routes(config, task):
     subs['trust-domain'] = config.graph_config['trust-domain']
     subs['branch_rev'] = get_branch_rev(config)
     subs['branch'] = subs['project']
-    if 'channel' in index:
-        resolve_keyed_by(
-            index, 'channel', item_name=task['label'], project=config.params['project']
-        )
-        subs['channel'] = index['channel']
 
     for rt in task.get('routes', []):
         routes.append(rt.format(**subs))
@@ -1785,8 +1801,8 @@ def check_caches_are_volumes(task):
         return
 
     raise Exception('task %s (image %s) has caches that are not declared as '
-                    'Docker volumes: %s'
-                    'Have you added them as VOLUMEs in the Dockerfile?'
+                    'Docker volumes: %s '
+                    '(have you added them as VOLUMEs in the Dockerfile?)'
                     % (task['label'], task['worker']['docker-image'],
                        ', '.join(sorted(missing))))
 
@@ -1829,7 +1845,18 @@ def check_run_task_caches(config, tasks):
                 if arg == '--':
                     break
 
-                if arg.startswith('--sparse-profile'):
+                if arg.startswith('--gecko-sparse-profile'):
+                    if '=' not in arg:
+                        raise Exception(
+                            '{} is specifying `--gecko-sparse-profile` to run-task '
+                            'as two arguments. Unable to determine if the sparse '
+                            'profile exists.'.format(
+                                task['label']))
+                    _, sparse_profile = arg.split('=', 1)
+                    if not os.path.exists(os.path.join(GECKO, sparse_profile)):
+                        raise Exception(
+                            '{} is using non-existant sparse profile {}.'.format(
+                                task['label'], sparse_profile))
                     require_sparse_cache = True
                     break
 

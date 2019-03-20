@@ -20,17 +20,12 @@ from taskgraph.util.taskcluster import get_artifact_prefix
 from taskgraph.util.platforms import archive_format, executable_extension
 from taskgraph.util.workertypes import worker_type_implementation
 from taskgraph.transforms.task import task_description_schema
-from voluptuous import Any, Required, Optional
+from voluptuous import Required, Optional
 
 # Voluptuous uses marker objects as dictionary *keys*, but they are not
 # comparable, so we cast all of the keys back to regular strings
 task_description_schema = {str(k): v for k, v in task_description_schema.schema.iteritems()}
 
-
-# shortcut for a string where task references are allowed
-taskref_or_string = Any(
-    basestring,
-    {Required('task-reference'): basestring})
 
 packaging_description_schema = schema.extend({
     # depname is used in taskref's to identify the taskID of the signed things
@@ -57,7 +52,8 @@ packaging_description_schema = schema.extend({
     Optional('shipping-product'): task_description_schema['shipping-product'],
     Optional('shipping-phase'): task_description_schema['shipping-phase'],
 
-    Required('package-formats'): optionally_keyed_by('build-platform', 'project', [basestring]),
+    Required('package-formats'): optionally_keyed_by(
+        'build-platform', 'release-type', [basestring]),
 
     # All l10n jobs use mozharness
     Required('mozharness'): {
@@ -159,8 +155,10 @@ def handle_keyed_by(config, jobs):
         for field in fields:
             resolve_keyed_by(
                 item=job, field=field,
-                project=config.params['project'],
                 item_name="?",
+                **{
+                    'release-type': config.params['release_type'],
+                }
             )
         yield job
 
