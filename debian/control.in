@@ -35,11 +35,11 @@ Build-Depends: autotools-dev,
                libnspr4-dev (>= 2:@NSPR_VERSION@~),
 %endif
 %if USE_SYSTEM_NSS
-%define NSS_VERSION 3.41
+%define NSS_VERSION 3.42
                libnss3-dev (>= 2:@NSS_VERSION@~),
 %endif
 %if USE_SYSTEM_SQLITE
-%define SQLITE_VERSION 3.25.3
+%define SQLITE_VERSION 3.26.0
                libsqlite3-dev (>= @SQLITE_VERSION@),
 %endif
 %if USE_SYSTEM_VPX
@@ -57,8 +57,8 @@ Build-Depends: autotools-dev,
                libasound2-dev,
                yasm (>= 1.1),
                nasm (>= 2.13) [amd64 i386],
-               rustc (>= 1.30),
-               cargo (>= 0.31),
+               rustc (>= 1.31),
+               cargo (>= 0.32),
 %if DIST == wheezy || DIST == jessie || DIST == stretch
                llvm-4.0-dev,
                libclang-4.0-dev,
@@ -68,7 +68,7 @@ Build-Depends: autotools-dev,
                libclang-dev,
                clang,
 %endif
-               cbindgen (>= 0.6.7),
+               cbindgen (>= 0.6.8),
                nodejs (>= 8.11),
                zip,
                unzip,
