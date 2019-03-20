@@ -79,6 +79,15 @@ SHARE_DIR := /usr/share/$($(PRODUCT))
 
 LDFLAGS := -Wl,--as-needed
 
+# Disable debug symbols when building on mips and mipsel machines,
+# because the rust compiler can't deal with it in the available address
+# space.
+ifeq (,$(filter wheezy jessie stretch,$(DIST)))
+ifneq (,$(filter mips mipsel,$(DEB_HOST_ARCH)))
+	CONFIGURE_FLAGS += --disable-debug-symbols
+endif
+endif
+
 # Reduce memory usage of the linker at the expense of processing time
 # This should help on lower-end architectures like arm and mips, which
 # spend an immense amount of time swapping.
