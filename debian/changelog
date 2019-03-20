@@ -1,3 +1,17 @@
+firefox-esr (60.6.0esr-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2019-08, also known as:
+    CVE-2019-9790, CVE-2019-9791, CVE-2019-9792, CVE-2019-9793,
+    CVE-2019-9795, CVE-2019-9796, CVE-2018-18506, CVE-2019-9788.
+
+  * debian/rules: Disable debug symbols on mips/mipsel on buster.
+    The rust compiler can't deal with them in the available address space.
+  * debian/browser.mozconfig.in: Adjust to the upstream change wrt Google
+    API key configure options.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 20 Mar 2019 10:18:56 +0900
+
 firefox-esr (60.5.1esr-1) unstable; urgency=medium
 
   * New upstream release.
