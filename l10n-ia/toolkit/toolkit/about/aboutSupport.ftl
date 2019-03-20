@@ -47,6 +47,7 @@ app-basics-memory-use = Uso del memoria
 app-basics-performance = Rendimento
 app-basics-service-workers = Service Workers registrate
 app-basics-profiles = Profilos
+app-basics-launcher-process-status = Processo del lanceator
 app-basics-multi-process-support = Fenestras in multiprocesso
 app-basics-process-count = Processos del contento del web
 app-basics-enterprise-policies = Politicas de interprisa
@@ -244,6 +245,11 @@ effective-content-sandbox-level = Nivello de sandbox del contento effective
 sandbox-proc-type-content = contento
 sandbox-proc-type-file = contento del file
 sandbox-proc-type-media-plugin = plugin de media
+sandbox-proc-type-data-decoder = decodificator de datos
+launcher-process-status-0 = Activate
+launcher-process-status-1 = Disactivate per falta
+launcher-process-status-2 = Disactivate in modo fortiate
+launcher-process-status-unknown = Stato incognite
 # Variables
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows

@@ -88,6 +88,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = Tichup
     .tooltiptext = Man keyak pa kiyonil ri taq k'exoj
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Kesamajïx pa Ichinan Tzuwäch
+detail-private-browsing-description = Ütz xtisamäj ri k'amaya'l pan Ichinan Tzuwäch chuqa' xkatikïr xkatok pan asamaj pa k'amab'ey. <label data-l10n-name="detail-private-browsing-learn-more">Tetamäx ch'aqa' chik</label>
+detail-private-browsing-on =
+    .label = Tiya' q'ij
+    .tooltiptext = Titz'ij pa Ichinan Okem pa K'amaya'l
+detail-private-browsing-off =
+    .label = Man tiya' q'ij
+    .tooltiptext = Tichup pa Ichinan Okem pa K'amaya'l
 detail-home =
     .label = Ruxaq tikirib'äl
 detail-home-value =
@@ -130,6 +139,12 @@ legacy-warning-show-legacy = Kek'ut pe ri kochin taq k'amal
 legacy-extensions =
     .value = Kochin taq K'amal
 legacy-extensions-description = Re taq k'amal re' man nikik'äm ta ki' rik'in current { -brand-short-name } taq rub'eyal richin chi xechuputäj. <label data-l10n-name="legacy-learn-more">Tetamäx chi kij ri kijaloj taq tzaqät</label>
+private-browsing-description2 =
+    { -brand-short-name } yerujäl achike rub'eyal yesamäj ri taq k'amal pa ri ichinan okem pa k'amaya'l. Xab'achike k'ak'a' k'amall xtatz'aqatisaj pa
+    { -brand-short-name } man xtisamäj ta el achi'el k'o pa Ichinan Tzuwäch. Xa xe we naya' q'ij chi re pa runuk'ulem, ri 
+    k'amal man xtisamäj ta pa ichinan okem pa k'amaya'l, chuqa' man xkatikïr ta xkatok pa ri asamaj richin k'amab'ey
+    chi ri'. Xqab'än re jaloj re' richin nichinäx ri ichinan awokem pa k'amaya'l
+    <label data-l10n-name="private-browsing-learn-more">Tawetamaj achike rub'eyal ninuk'samajïx ri runuk'ulem k'amal.</label>
 extensions-view-discover =
     .name = Kek'ulutäj ri taq tz'aqat
     .tooltiptext = { extensions-view-discover.name }
@@ -207,3 +222,38 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Keyak taq k'exoj
     .tooltiptext = Keyak ri taq k'exoj e k'o pa re rucholajem re'
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Kenuk'samajïx Kichojokem taq K'amal
+    .accesskey = i
+shortcuts-empty-message = Majun ruchojokem re k'amal re'.
+shortcuts-no-addons = Majun ak'amal atzijon.
+shortcuts-no-commands = Re taq k'amal re' majun ruq'a' rokem pitz'b'äl:
+shortcuts-input =
+    .placeholder = Tatz'ib'aj jun chojokem
+shortcuts-browserAction = Titzij k'amal
+shortcuts-pageAction = Titzij rub'anoj ruxaq
+shortcuts-sidebarAction = Tik'exlöx ri ajxikin kajtz'ik
+shortcuts-modifier-mac = Titz'aqatisäx Ctrl, Alt o ⌘
+shortcuts-modifier-other = Titz'aqatisäx Ctrl o Alt
+shortcuts-invalid = Man okel ta ri tunuj
+shortcuts-letter = Tatz'ib'aj jun tz'ib'
+shortcuts-system = Man yatikïr ta nayüj jun { -brand-short-name } chojokem
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] Tik'ut { $numberToShow } Ch'aqa' Chik
+       *[other] Kek'ut { $numberToShow } Ch'aqa' Chik
+    }
+shortcuts-card-collapse-button = Tik'ut pe Jub'a'
+go-back-button =
+    .tooltiptext = Titzolin
+
+## Add-on actions
+
+remove-addon-button = Tiyuj
+disable-addon-button = Tichup
+enable-addon-button = Titzij
+addons-enabled-heading = Tzijon
+addons-disabled-heading = Chupun

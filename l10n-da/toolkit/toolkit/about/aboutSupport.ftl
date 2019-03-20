@@ -47,6 +47,7 @@ app-basics-memory-use = Hukommelsesforbrug
 app-basics-performance = Ydelse
 app-basics-service-workers = Registrerede Service Workers
 app-basics-profiles = Profiler
+app-basics-launcher-process-status = Launcher Process
 app-basics-multi-process-support = Multiproces-vinduer
 app-basics-process-count = Webindholds-processer
 app-basics-enterprise-policies = Virksomheds-politikker
@@ -244,6 +245,14 @@ effective-content-sandbox-level = Effective Content Process Sandbox Level
 sandbox-proc-type-content = indhold
 sandbox-proc-type-file = fil-indhold
 sandbox-proc-type-media-plugin = medie-plugin
+
+sandbox-proc-type-data-decoder = data-decoder
+
+launcher-process-status-0 = Aktiveret
+launcher-process-status-1 = Deaktiveret på grund af en fejl
+launcher-process-status-2 = Deaktiveret
+launcher-process-status-unknown = Ukendt status
+
 # Variables
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows

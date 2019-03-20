@@ -88,6 +88,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = Av
     .tooltiptext = Installera inte uppdateringar automatiskt
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Kör i privata fönster
+detail-private-browsing-description = Tillägg kommer att fungera i privata fönster och ha tillgång till dina aktiviteter på nätet. <label data-l10n-name="detail-private-browsing-learn-more">Läs mer</label>
+detail-private-browsing-on =
+    .label = Tillåt
+    .tooltiptext = Aktivera i privat surfning
+detail-private-browsing-off =
+    .label = Tillåt inte
+    .tooltiptext = Aktivera inte i privat surfning
 detail-home =
     .label = Webbplats
 detail-home-value =
@@ -130,6 +139,7 @@ legacy-warning-show-legacy = Visa äldre tillägg
 legacy-extensions =
     .value = Äldre tillägg
 legacy-extensions-description = Dessa tillägg uppfyller inte nuvarande standarder i { -brand-short-name } så de har inaktiverats. <label data-l10n-name="legacy-learn-more">Läs mer om ändringar av tillägg</label>
+private-browsing-description2 = { -brand-short-name } ändrar hur tillägg fungerar i privat surfläge. Alla nya tillägg du lägger till i { -brand-short-name } kommer inte att köras som standard i privata fönster. Om du inte tillåter detta i inställningarna, kommer tillägget inte fungera när du är i privat surfläge, och kommer inte ha åtkomst till dina onlineaktiviteter där. Vi har gjort denna ändring för att hålla privat surfning privat. <label data-l10n-name="private-browsing-learn-more">Läs hur du hanterar tilläggsinställningar.</label>
 extensions-view-discover =
     .name = Hämta tillägg
     .tooltiptext = { extensions-view-discover.name }
@@ -207,3 +217,38 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Installera uppdateringar
     .tooltiptext = Installerar tillgängliga uppdateringar från listan
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Hantera genvägar för tillägg
+    .accesskey = g
+shortcuts-empty-message = Det finns inga genvägar för det här tillägget.
+shortcuts-no-addons = Du har inga tillägg aktiverade.
+shortcuts-no-commands = Följande tillägg har inte genvägar:
+shortcuts-input =
+    .placeholder = Skapa en genväg
+shortcuts-browserAction = Aktivera tillägg
+shortcuts-pageAction = Aktivera sidans åtgärd
+shortcuts-sidebarAction = Visa sidofält
+shortcuts-modifier-mac = Inkludera Ctrl, Alt eller ⌘
+shortcuts-modifier-other = Inkludera Ctrl eller Alt
+shortcuts-invalid = Ogiltig kombination
+shortcuts-letter = Skriv en bokstav
+shortcuts-system = Kan inte skriva över en { -brand-short-name } genväg
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] Visa { $numberToShow } mer
+       *[other] Visa { $numberToShow } mera
+    }
+shortcuts-card-collapse-button = Visa mindre
+go-back-button =
+    .tooltiptext = Gå tillbaka
+
+## Add-on actions
+
+remove-addon-button = Ta bort
+disable-addon-button = Inaktivera
+enable-addon-button = Aktivera
+addons-enabled-heading = Aktiverad
+addons-disabled-heading = Inaktiverad

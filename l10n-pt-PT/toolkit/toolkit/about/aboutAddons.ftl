@@ -40,7 +40,7 @@ debug-addons =
     .label = Depurar extras
     .accesskey = p
 cmd-show-details =
-    .label = Mostrar mais informações
+    .label = Mostrar mais informação
     .accesskey = s
 cmd-find-updates =
     .label = Procurar atualizações
@@ -90,6 +90,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = Desligadas
     .tooltiptext = Não instalar atualizações automaticamente
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Executar em janelas privadas
+detail-private-browsing-description = A extensão irá funcionar em janelas privadas, e irá ter acesso às suas atividades online. <label data-l10n-name="detail-private-browsing-learn-more">Saber mais</label>
+detail-private-browsing-on =
+    .label = Permitir
+    .tooltiptext = Ativar em navegação privada
+detail-private-browsing-off =
+    .label = Não permitir
+    .tooltiptext = Desativar em navegação privada
 detail-home =
     .label = Página inicial
 detail-home-value =
@@ -132,6 +141,12 @@ legacy-warning-show-legacy = Mostrar extensões de legado
 legacy-extensions =
     .value = Extensões de legado
 legacy-extensions-description = Estas extensões não atendem aos padrões atuais do { -brand-short-name } por isso foram desativadas <label data-l10n-name="legacy-learn-more">Saber acerca das alterações aos extras</label>
+private-browsing-description2 =
+    O { -brand-short-name } está a mudar a maneira como as extensões funcionam na navegação privada. Quaisquer novas extensões que adicione ao
+    { -brand-short-name } não serão executadas por predefinição em janelas privadas. A menos que permita isso nas definições, a
+    extensão não irá funcionar durante a navegação privada e não irá ter acesso às suas atividades online
+    lá. Fizemos esta alteração para manter a sua navegação privada, privada.
+    <label data-l10n-name = "private-browsing-learn-more">Saber como gerir definições de extensões.</ label>
 extensions-view-discover =
     .name = Obter extras
     .tooltiptext = { extensions-view-discover.name }
@@ -209,3 +224,38 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Instalar atualizações
     .tooltiptext = Instalar atualizações disponíveis nesta lista
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Gerir atalhos de extensões
+    .accesskey = s
+shortcuts-empty-message = Não existem atalhos para esta extensão.
+shortcuts-no-addons = Não tem quaisquer extensões ativadas.
+shortcuts-no-commands = As seguintes extensões não possuem atalhos:
+shortcuts-input =
+    .placeholder = Escrever um atalho
+shortcuts-browserAction = Ativar extensão
+shortcuts-pageAction = Ativar ação da página
+shortcuts-sidebarAction = Alternar a barra lateral
+shortcuts-modifier-mac = Incluir Ctrl, Alt ou ⌘
+shortcuts-modifier-other = Incluir Ctrl ou Alt
+shortcuts-invalid = Combinação inválida
+shortcuts-letter = Escrever uma letra
+shortcuts-system = Não é possível sobrepor um atalho do { -brand-short-name }
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] Mostrar mais { $numberToShow }
+       *[other] Mostrar mais { $numberToShow }
+    }
+shortcuts-card-collapse-button = Mostrar menos
+go-back-button =
+    .tooltiptext = Retroceder
+
+## Add-on actions
+
+remove-addon-button = Remover
+disable-addon-button = Desativar
+enable-addon-button = Ativar
+addons-enabled-heading = Ativado
+addons-disabled-heading = Desativado

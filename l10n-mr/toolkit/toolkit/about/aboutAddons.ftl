@@ -21,6 +21,11 @@ list-empty-button =
 install-addon-from-file =
     .label = फाइलपासून ॲड-ऑन इंस्टॉल करा…
     .accesskey = I
+preferences =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } पर्याय
+       *[other] { -brand-short-name } पसंती
+    }
 tools-menu =
     .tooltiptext = सर्व ॲड-ऑन्स् करीता साधने
 show-unsigned-extensions-button =
@@ -79,6 +84,14 @@ detail-update-automatic =
 detail-update-manual =
     .label = बंद करा
     .tooltiptext = स्वयं सुधारणा प्रतिष्ठापीत करू नका
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = खाजगी पटलामध्ये चालवा
+detail-private-browsing-on =
+    .label = परवानगी द्या
+    .tooltiptext = खाजगी ब्राउझिंगमध्ये सक्षम करा
+detail-private-browsing-off =
+    .label = परवानगी देऊ नका
+    .tooltiptext = खाजगी ब्राउझिंगमध्ये अक्षम करा
 detail-home =
     .label = मुख्यपृष्ठ
 detail-home-value =
@@ -198,3 +211,14 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = सुधारणा प्रतिष्ठापीत करा
     .tooltiptext = या सूचीतील उपलब्ध सुधारणा प्रतिष्ठापीत करा
+
+## Extension shortcut management
+
+shortcuts-input =
+    .placeholder = एक शॉर्टकट टाइप करा
+shortcuts-browserAction = विस्तार सक्रिय करा
+shortcuts-pageAction = पृष्ठ क्रिया सक्रिय करा
+shortcuts-letter = एक अक्षर टाइप करा
+shortcuts-card-collapse-button = कमी दर्शवा
+go-back-button =
+    .tooltiptext = मागे जा

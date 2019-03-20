@@ -22,7 +22,7 @@ update-otherInstanceHandlingUpdates = Το { -brand-short-name } ενημερώ�
 update-manual = Διαθέσιμες ενημερώσεις στο <label data-l10n-name="manual-link"/>
 update-unsupported = Δεν μπορείτε να εκτελέσετε περαιτέρω ενημερώσεις σε αυτό το σύστημα. <label data-l10n-name="unsupported-link">Μάθετε περισσότερα</label>
 update-restarting = Επανεκκίνηση…
-channel-description = Αυτή τη στιγμή, βρίσκεστε στο κανάλι ενημερώσεων της <label data-l10n-name="current-channel"></label> έκδοσης.{ " " }
+channel-description = Αυτή τη στιγμή, βρίσκεστε στο κανάλι ενημερώσεων της <label data-l10n-name="current-channel"></label> έκδοσης.
 warningDesc-version = Το { -brand-short-name } είναι σε πειραματικό στάδιο και πιθανότατα ασταθές.
 community-exp = <label data-l10n-name="community-exp-mozillaLink">Η { -vendor-short-name }</label> είναι μια <label data-l10n-name="community-exp-creditsLink">παγκόσμια κοινότητα</label> που συνεργάζεται για να κάνει το διαδίκτυο ανοικτό, ελεύθερο και προσβάσιμο από όλους χωρίς κανένα περιορισμό.
 community-2 = Το { -brand-short-name } έχει σχεδιαστεί από τη <label data-l10n-name="community-mozillaLink">{ -vendor-short-name }</label>, μια <label data-l10n-name="community-creditsLink">παγκόσμια κοινότητα</label> που συνεργάζεται για να κάνει το διαδίκτυο ανοικτό, ελεύθερο και προσβάσιμο από όλους χωρίς κανένα περιορισμό.
@@ -32,3 +32,14 @@ bottomLinks-rights = Δικαιώματα χρήστη
 bottomLinks-privacy = Πολιτική απορρήτου
 aboutDialog-architecture-sixtyFourBit = 64-bit
 aboutDialog-architecture-thirtyTwoBit = 32-bit
+# Example of resulting string: 66.0.1 (64-bit)
+# Variables:
+#   $version (String): version of Firefox, e.g. 66.0.1
+#   $bits (Number): bits of the architecture (32 or 64)
+aboutDialog-version = { $version } ({ $bits }-bit)
+# Example of resulting string: 66.0a1 (2019-01-16) (64-bit)
+# Variables:
+#   $version (String): version of Firefox for Nightly builds, e.g. 66.0a1
+#   $isodate (String): date in ISO format, e.g. 2019-01-16
+#   $bits (Number): bits of the architecture (32 or 64)
+aboutDialog-version-nightly = { $version } ({ $isodate }) ({ $bits }-bit)

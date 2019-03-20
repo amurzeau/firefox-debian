@@ -4,10 +4,6 @@
 
 do-not-track-description = Enviar aos sites um sinal de “Não rastrear” informando que você não quer ser rastreado
 do-not-track-learn-more = Saiba mais
-do-not-track-option-default =
-    .label = Somente quando usar a proteção contra rastreamento
-do-not-track-option-default-content-blocking =
-    .label = Apenas quando o { -brand-short-name } está configurado para bloquear rastreadores detectados
 do-not-track-option-default-content-blocking-known =
     .label = Somente quando o { -brand-short-name } está configurado para bloquear rastreadores conhecidos
 do-not-track-option-always =
@@ -54,6 +50,9 @@ category-privacy =
 pane-sync-title = Conta Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
+pane-sync-title2 = { -sync-brand-short-name }
+category-sync2 =
+    .tooltiptext = { pane-sync-title2 }
 help-button-label = Suporte { -brand-short-name }
 addons-button-label = Extensões e Temas
 focus-search =
@@ -95,9 +94,6 @@ extension-controlled-default-search = Uma extensão, <img data-l10n-name="icon"/
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = Uma extensão requer abas contêiner: <img data-l10n-name="icon"/> { $name }.
-# This string is shown to notify the user that their tracking protection preferences
-# are being controlled by an extension.
-extension-controlled-websites-tracking-protection-mode = Uma extensão, <img data-l10n-name="icon"/> { $name }, está controlando sua proteção contra rastreamento.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
 extension-controlled-websites-content-blocking-all-trackers = Uma extensão, <img data-l10n-name="icon"/> { $name }, está controlando esta configuração.
@@ -109,7 +105,7 @@ extension-controlled-proxy-config = Uma extensão, <img data-l10n-name="icon"/> 
 #
 # <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
 # <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
-extension-controlled-enable = Para ativar esta extensão vá para <img data-l10n-name="addons-icon"/> Extensões no menu <img data-l10n-name="menu-icon"/>.
+extension-controlled-enable = Para ativar a extensão, vá em <img data-l10n-name="addons-icon"/> Extensões <img data-l10n-name="menu-icon"/> no menu.
 
 ## Preferences UI Search Results
 
@@ -172,7 +168,7 @@ browser-containers-enabled =
 browser-containers-learn-more = Saiba mais
 browser-containers-settings =
     .label = Configurações…
-    .accesskey = i
+    .accesskey = C
 containers-disable-alert-title = Fechar todas as abas contêiner?
 containers-disable-alert-desc =
     { $tabCount ->
@@ -286,6 +282,7 @@ update-application-check-choose =
 update-application-manual =
     .label = Nunca busque atualizações (não recomendado)
     .accesskey = N
+update-application-warning-cross-user-setting = Esta configuração se aplicará a todas as contas do Windows e perfis do { -brand-short-name } que usam esta instalação do { -brand-short-name }.
 update-application-use-service =
     .label = Usar um serviço em segundo plano para instalar atualizações
     .accesskey = s
@@ -337,6 +334,9 @@ browsing-search-on-start-typing =
     .accesskey = x
 browsing-cfr-recommendations =
     .label = Recomendar extensões enquanto você navega
+    .accesskey = R
+browsing-cfr-features =
+    .label = Recomendar recursos enquanto você navega
     .accesskey = R
 browsing-cfr-recommendations-learn-more = Saiba mais
 
@@ -390,14 +390,14 @@ choose-bookmark =
 
 search-bar-header = Barra de pesquisa
 search-bar-hidden =
-    .label = Use a barra de endereços para pesquisar e navegar
+    .label = Usar a barra de endereços para pesquisar e navegar
 search-bar-shown =
     .label = Adicionar a barra de pesquisa na barra de ferramentas
 search-engine-default-header = Mecanismo de pesquisa padrão
-search-engine-default-desc = Escolha o mecanismo de pesquisa padrão para usar na barra de endereços e na barra de pesquisa.
+search-engine-default-desc = Escolha o mecanismo de pesquisa padrão a ser usado na barra de endereços e na barra de pesquisa.
 search-suggestions-option =
-    .label = Sugestões de pesquisa
-    .accesskey = S
+    .label = Mostrar sugestões de pesquisa
+    .accesskey = u
 search-show-suggestions-url-bar-option =
     .label = Mostrar sugestões de pesquisa nos resultados da barra de endereços
     .accesskey = l
@@ -410,7 +410,7 @@ search-show-suggestions-above-history-option =
     .label = Mostrar sugestões de pesquisa antes do histórico de navegação nos resultados da barra de endereços
 search-suggestions-cant-show = As sugestões de pesquisa não serão mostradas nos resultados da barra de endereço, porque você configurou o { -brand-short-name } para nunca lembrar o histórico.
 search-one-click-header = Mecanismos de pesquisa em um clique
-search-one-click-desc = Escolha os mecanismos de pesquisa alternativos que aparecem abaixo da barra de endereços e da barra de pesquisa quando você começa a inserir uma palavra-chave.
+search-one-click-desc = Escolha os mecanismos de pesquisa alternativos que aparecem abaixo da barra de endereços e da barra de pesquisa quando você começa a digitar uma palavra-chave.
 search-choose-engine-column =
     .label = Mecanismo de pesquisa
 search-choose-keyword-column =
@@ -497,7 +497,7 @@ sync-engine-tabs =
 sync-engine-logins =
     .label = Contas de acesso
     .tooltiptext = Nomes de usuário e senhas que você salvou
-    .accesskey = L
+    .accesskey = C
 sync-engine-addresses =
     .label = Endereços
     .tooltiptext = Endereços postais que você salvou (computador apenas)
@@ -521,7 +521,7 @@ sync-engine-prefs =
 sync-device-name-header = Nome do dispositivo
 sync-device-name-change =
     .label = Alterar nome do dispositivo…
-    .accesskey = h
+    .accesskey = n
 sync-device-name-cancel =
     .label = Cancelar
     .accesskey = n
@@ -530,6 +530,9 @@ sync-device-name-save =
     .accesskey = v
 sync-mobilepromo-single = Conectar outro dispositivo
 sync-mobilepromo-multi = Gerenciar dispositivos
+sync-connect-another-device = Conectar outro dispositivo
+sync-manage-devices = Gerenciar dispositivos
+sync-fxa-begin-pairing = Parear um dispositivo
 sync-tos-link = Termos de serviço
 sync-fxa-privacy-notice = Nota sobre privacidade
 
@@ -576,8 +579,8 @@ history-remember-option-never =
     .label = Nunca memorizar
 history-remember-option-custom =
     .label = Usar minhas configurações
-history-remember-description = { -brand-short-name } irá lembrar dos seus dados de navegação, download, formulário e histórico de pesquisa.
-history-dontremember-description = O { -brand-short-name } usará as mesmas configurações da navegação privativa e não memorizará o histórico de navegação.
+history-remember-description = O { -brand-short-name } memorizará seu histórico de navegação, downloads, formulários e pesquisas.
+history-dontremember-description = O { -brand-short-name } usará as mesmas configurações da navegação privativa e não memorizará nenhum histórico.
 history-private-browsing-permanent =
     .label = Sempre usar o modo de navegação privativa
     .accesskey = v
@@ -591,7 +594,7 @@ history-clear-on-close-option =
     .label = Limpar histórico quando o { -brand-short-name } fechar
     .accesskey = i
 history-clear-on-close-settings =
-    .label = Configurar…
+    .label = Configurações…
     .accesskey = C
 history-clear-button =
     .label = Limpar histórico…
@@ -606,15 +609,10 @@ sitedata-total-size-calculating = Calculando o tamanho dos dados de sites e cach
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Seus cookies, dados de sites e cache armazenados estão atualmente usando { $value } { $unit } do espaço em disco.
 sitedata-learn-more = Saiba mais
-sitedata-keep-until = Manter até
-    .accesskey = m
-sitedata-keep-until-expire =
-    .label = Expirarem
-sitedata-keep-until-closed =
-    .label = { -brand-short-name } ser fechado
 sitedata-delete-on-close =
     .label = Apagar cookies e dados de sites quando o { -brand-short-name } for fechado
     .accesskey = c
+sitedata-delete-on-close-private-browsing = No modo de navegação privativa permanente, cookies e dados de sites serão sempre limpos quando o { -brand-short-name } for fechado.
 sitedata-allow-cookies-option =
     .label = Aceitar cookies e dados de sites
     .accesskey = A
@@ -625,16 +623,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Tipo bloqueado
     .accesskey = T
-sitedata-block-trackers-option-recommended =
-    .label = Rastreadores de terceiros (recomendado)
-sitedata-block-trackers-option =
-    .label = Rastreadores de terceiros
-sitedata-block-unvisited-option =
-    .label = Cookies de sites não visitados
-sitedata-block-all-third-party-option =
-    .label = Todos os cookies de terceiros (pode atrapalhar alguns sites)
-sitedata-block-all-option =
-    .label = Todos os cookies (atrapalhará vários sites)
 sitedata-option-block-trackers =
     .label = Rastreadores de terceiros
 sitedata-option-block-unvisited =
@@ -649,20 +637,13 @@ sitedata-clear =
 sitedata-settings =
     .label = Gerenciar dados…
     .accesskey = G
-sitedata-cookies-exceptions =
-    .label = Exceções…
-    .accesskey = E
-# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
-# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
-# Cookies and Site Data section.
-sitedata-warning-your-settings-prevent-changes = Suas configurações de bloqueio de conteúdo estão impedindo mudanças nas configurações de Cookies e Dados de sites.
 sitedata-cookies-permissions =
     .label = Gerenciar permissões…
     .accesskey = p
 
 ## Privacy Section - Address Bar
 
-addressbar-header = Barra de Endereços
+addressbar-header = Barra de endereços
 addressbar-suggest = Ao usar a barra de endereços, sugerir
 addressbar-locbar-history-option =
     .label = Histórico de navegação
@@ -673,46 +654,13 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Abas abertas
     .accesskey = A
-addressbar-suggestions-settings = Alterar preferências das sugestões do mecanismo de pesquisa
+addressbar-suggestions-settings = Alterar preferências de sugestões de mecanismos de pesquisa
 
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Bloqueio de conteúdo
-content-blocking-desc = Bloqueie conteúdo de terceiros, como propaganda ou código, que podem tornar sua navegação mais lenta e rastrear você através da web. Personalize suas configurações para uma proteção e desempenho balanceados.
-content-blocking-description = Bloqueie conteúdo de terceiros que rastreia você pela web. Controle o quanto de suas atividades online é armazenado e compartilhado entre sites.
+content-blocking-description = Bloqueie conteúdos de terceiros que rastreiam você pela web. Controle quanto da sua atividade online é armazenado e compartilhado entre sites.
 content-blocking-learn-more = Saiba mais
-content-blocking-restore-defaults =
-    .label = Restaurar padrão
-    .accesskey = R
-content-blocking-toggle-on =
-    .tooltiptext = Desativar bloqueio de conteúdo
-content-blocking-toggle-off =
-    .tooltiptext = Ativar bloqueio de conteúdo
-content-blocking-toggle-label-on = ATIVAR
-    .accesskey = A
-content-blocking-toggle-label-off = DESATIVAR
-    .accesskey = D
-content-blocking-category-label = Escolha o que bloquear
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-slow-loading-trackers-label =
-    .label = Rastreadores que atrasam o carregamento
-    .accesskey = a
-content-blocking-fastblock-new-description = Bloqueia somente os rastreadores que impedem que páginas sejam carregadas rapidamente.
-content-blocking-tracking-protection-trackers-label =
-    .label = Rastreadores
-    .accesskey = t
-content-blocking-tracking-protection-all-detected-trackers-label =
-    .label = Todos os rastreadores detectados
-    .accesskey = T
-content-blocking-tracking-protection-new-description = Bloqueia todos os rastreadores conhecidos (pode impedir que algumas páginas sejam carregadas).
-content-blocking-tracking-protection-option-always =
-    .label = Sempre
-    .accesskey = S
-content-blocking-tracking-protection-option-private =
-    .label = Apenas em janelas privativas
-    .accesskey = p
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 content-blocking-setting-standard =
@@ -732,8 +680,9 @@ content-blocking-private-trackers = Rastreadores conhecidos, somente em janelas 
 content-blocking-third-party-cookies = Cookies rastreadores de terceiros
 content-blocking-all-windows-trackers = Rastreadores conhecidos, em todas as janelas
 content-blocking-all-third-party-cookies = Todos os cookies de terceiros
-content-blocking-warning-title = Preste atenção!
+content-blocking-warning-title = Atenção!
 content-blocking-warning-desc = Bloquear cookies e rastreadores pode atrapalhar alguns sites. É fácil desativar o bloqueio em sites que você confia.
+content-blocking-warning-description = O bloqueio de conteúdo pode fazer alguns sites não funcionarem direito. É fácil desativar o bloqueio em sites que você confia.
 content-blocking-learn-how = Saiba como
 content-blocking-trackers-label =
     .label = Rastreadores
@@ -745,51 +694,21 @@ content-blocking-option-private =
     .label = Só em janelas privativas
     .accesskey = p
 content-blocking-tracking-protection-change-block-list = Alterar lista de bloqueio
-content-blocking-third-party-cookies-label =
-    .label = Cookies de terceiros
-    .accesskey = C
-content-blocking-reject-trackers-description = Bloqueia todos os cookies de terceiros ou apenas aqueles criados por rastreadores.
-# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
-# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
-# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
-# the UI.
-content-blocking-reject-trackers-warning-your-settings-prevent-changes = Suas configurações em Cookies e Dados de Sites está impedindo alterações nas configurações de Cookies de terceiros.
-content-blocking-change-cookie-settings =
-    .label = Alterar configurações de cookies
-    .accesskey = s
-content-blocking-reject-trackers-block-trackers-option-recommended =
-    .label = Rastreadores (recomendado)
-    .accesskey = R
-content-blocking-reject-trackers-block-trackers-option =
-    .label = Rastreadores
-    .accesskey = R
-content-blocking-reject-trackers-all-third-parties-option =
-    .label = Todos os cookies de terceiros (pode atrapalhar alguns sites)
-    .accesskey = T
 content-blocking-cookies-label =
     .label = Cookies
     .accesskey = C
+# Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
+content-blocking-cryptominers-label =
+    .label = Cryptomineradores
+    .accesskey = y
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+content-blocking-fingerprinters-label =
+    .label = Rastreadores de "impressões digitais"
+    .accesskey = m
 
 ## Privacy Section - Tracking
 
-tracking-header = Proteção contra rastreamento
-tracking-desc = A proteção contra rastreamento bloqueia rastreadores on-line que coletam seus dados de navegação através de múltiplos sites. <a data-l10n-name="learn-more">Saiba mais sobre a proteção contra rastreamento e sua privacidade</a>
-tracking-mode-label = Use a proteção contra rastreamento para bloquear rastreadores conhecidos
-tracking-mode-always =
-    .label = Sempre
-    .accesskey = m
-tracking-mode-private =
-    .label = Só em janelas privativas
-    .accesskey = l
-tracking-mode-never =
-    .label = Nunca
-    .accesskey = n
-tracking-exceptions =
-    .label = Exceções…
-    .accesskey = x
-tracking-change-block-list =
-    .label = Alterar Lista de Bloqueios…
-    .accesskey = B
 tracking-manage-exceptions =
     .label = Gerenciar exceções…
     .accesskey = x
@@ -804,15 +723,15 @@ permissions-location-settings =
 permissions-camera = Câmera
 permissions-camera-settings =
     .label = Configurações…
-    .accesskey = c
+    .accesskey = C
 permissions-microphone = Microfone
 permissions-microphone-settings =
     .label = Configurações…
-    .accesskey = m
+    .accesskey = C
 permissions-notification = Notificações
 permissions-notification-settings =
     .label = Configurações…
-    .accesskey = n
+    .accesskey = C
 permissions-notification-link = Saiba mais
 permissions-notification-pause =
     .label = Pausar as notificações até reiniciar o { -brand-short-name }
@@ -821,6 +740,9 @@ permissions-block-autoplay-media =
     .label = Bloquear reprodução automática de mídia com som em sites
     .accesskey = B
 permissions-block-autoplay-media-menu = Para sites que reproduzem som automaticamente
+permissions-block-autoplay-media2 =
+    .label = Bloquear nos sites a reprodução automática de som
+    .accesskey = B
 permissions-block-autoplay-media-exceptions =
     .label = Exceções…
     .accesskey = E
@@ -851,7 +773,7 @@ permissions-a11y-privacy-link = Saiba mais
 ## Privacy Section - Data Collection
 
 collection-header = Coleta e Uso de Dados pelo { -brand-short-name }
-collection-description = Nós nos esforçamos para lhe proporcionar escolhas e coletar somente o que precisamos para fornecer e melhorar o { -brand-short-name } para todos. Nós sempre pedimos permissão antes de receber informações pessoais.
+collection-description = Nos esforçamos para proporcionar escolhas e coletar somente o necessário para fornecer e melhorar o { -brand-short-name } para todos. Sempre pedimos permissão antes de receber informações pessoais.
 collection-privacy-notice = Nota sobre privacidade
 collection-health-report =
     .label = Permitir que o { -brand-short-name } envie dados técnicos e de interação para a { -vendor-short-name }

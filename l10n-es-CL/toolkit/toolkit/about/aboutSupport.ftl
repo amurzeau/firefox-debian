@@ -47,6 +47,7 @@ app-basics-memory-use = Uso de memoria
 app-basics-performance = Rendimiento
 app-basics-service-workers = Service Workers registrados
 app-basics-profiles = Perfiles
+app-basics-launcher-process-status = Proceso lanzador
 app-basics-multi-process-support = Ventanas multiproceso
 app-basics-process-count = Procesos de contenido web
 app-basics-enterprise-policies = Políticas empresariales
@@ -225,6 +226,8 @@ uses-tiling = Usa mosaicos
 content-uses-tiling = Usa mosaicos (contenido)
 off-main-thread-paint-enabled = Pintura fuera del hilo principal activada
 off-main-thread-paint-worker-count = Número de workers de pintura fuera del hilo principal
+low-end-machine = Se ha detectado un equipo de menor rendimiento
+target-frame-rate = Tasa de cuadros objetivo
 audio-backend = Backend de audio
 max-audio-channels = Canales máximos
 channel-layout = Esquema de canales preferido
@@ -242,6 +245,10 @@ effective-content-sandbox-level = Nivel efectivo del contenedor de proceso de co
 sandbox-proc-type-content = contenido
 sandbox-proc-type-file = contenido del archivo
 sandbox-proc-type-media-plugin = complemento de medios
+launcher-process-status-0 = Activado
+launcher-process-status-1 = Desactivado por fallo
+launcher-process-status-2 = Desactivado forzosamente
+launcher-process-status-unknown = Estado desconocido
 # Variables
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows

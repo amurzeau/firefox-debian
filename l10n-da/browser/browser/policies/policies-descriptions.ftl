@@ -23,6 +23,8 @@ policy-BlockAboutSupport = Bloker adgang til about:support.
 
 policy-Bookmarks = Opret bogmærker i Bogmærkelinjen, i menuen Bogmærker eller en nærmere angivet mappe i dem.
 
+policy-CaptivePortal = Slå understøttelse af captive portal til eller fra.
+
 policy-Certificates = Om indbyggede certifikater skal anvendes eller ikke. Denne politik gælder kun for Windows på nuværende tidspunkt.
 
 policy-CertificatesDescription = Tilføj certifikater eller brug indbyggede certifikater.
@@ -87,6 +89,8 @@ policy-EnableTrackingProtection = Slå Blokering af indhold til eller fra. Bruge
 # https://github.com/mozilla/policy-templates/blob/master/README.md#extensions-machine-only
 policy-Extensions = Installer, afinstaller eller lås udvidelser. Valgmuligheden Installer tager URL’er eller stier som parametre. Valgmulighederne Afinstaller og Låst tager udvidelelses-ID som parameter.
 
+policy-ExtensionUpdate = Slå automatisk opdatering af udvidelser til eller fra.
+
 policy-FlashPlugin = Tillad eller afvis brug af Flash-plugin.
 
 policy-HardwareAcceleration = False slår hardware-acceleration fra.
@@ -95,6 +99,8 @@ policy-HardwareAcceleration = False slår hardware-acceleration fra.
 policy-Homepage = Indstil og lås eventuelt startsiden.
 
 policy-InstallAddonsPermission = Tillad bestemte websteder at installere tilføjelser.
+
+policy-NetworkPrediction = Slå network prediction (DNS prefetching) til eller fra.
 
 policy-NoDefaultBookmarks = Deaktiver oprettelse af standard-bogmærker, der følger med { -brand-short-name }, samt de smarte bogmærker (Mest besøgte, Seneste mærkater). NB: Denne politik virker kun, hvis den aktiveres før profilen anvendes første gang.
 
@@ -120,6 +126,12 @@ policy-SearchEngines = Opsæt indstillinger for søgetjenester. Denne politik er
 
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Installer PKCS #11 moduler.
+
+policy-SSLVersionMax = Angiv den laveste SSL-version.
+
+policy-SSLVersionMin = Angiv den højeste SSL-version.
+
+policy-SupportMenu = Føj et tilpasset menupunkt til menuen Hjælp.
 
 # “format” refers to the format used for the value of this policy. See also:
 # https://github.com/mozilla/policy-templates/blob/master/README.md#websitefilter-machine-only

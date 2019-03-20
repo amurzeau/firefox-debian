@@ -44,6 +44,7 @@ app-basics-memory-use = Minnesanvändning
 app-basics-performance = Prestanda
 app-basics-service-workers = Registrerade Service Workers
 app-basics-profiles = Profiler
+app-basics-launcher-process-status = Uppstartsprocess
 app-basics-multi-process-support = Multiprocess fönster
 app-basics-process-count = Webbinnehållsprocesser
 app-basics-enterprise-policies = Företagspolicyer
@@ -241,6 +242,11 @@ effective-content-sandbox-level = Effektiv sandlådenivå för innehållsprocess
 sandbox-proc-type-content = innehåll
 sandbox-proc-type-file = filinnehåll
 sandbox-proc-type-media-plugin = insticksmodul media
+sandbox-proc-type-data-decoder = dataavkodare
+launcher-process-status-0 = Aktiverad
+launcher-process-status-1 = Inaktiverad på grund av fel
+launcher-process-status-2 = Inaktiverad med tvång
+launcher-process-status-unknown = Okänd status
 # Variables
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows

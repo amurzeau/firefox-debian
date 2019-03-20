@@ -4,10 +4,6 @@
 
 do-not-track-description = Web sitelerine izlenmek istemediğimi bildiren “Do Not Track” sinyalini gönder
 do-not-track-learn-more = Daha fazla bilgi al
-do-not-track-option-default =
-    .label = Yalnızca İzlenme Koruması’nı kullanırken
-do-not-track-option-default-content-blocking =
-    .label = Yalnızca { -brand-short-name } bulunan takipçileri engellemeye ayarlandığında
 do-not-track-option-default-content-blocking-known =
     .label = Yalnızca { -brand-short-name } bilinen takipçileri engellemeye ayarlandığında
 do-not-track-option-always =
@@ -54,6 +50,9 @@ category-privacy =
 pane-sync-title = Firefox Hesabı
 category-sync =
     .tooltiptext = { pane-sync-title }
+pane-sync-title2 = { -sync-brand-short-name }
+category-sync2 =
+    .tooltiptext = { pane-sync-title2 }
 help-button-label = { -brand-short-name } desteği
 addons-button-label = Eklentiler ve temalar
 focus-search =
@@ -95,9 +94,6 @@ extension-controlled-default-search = <img data-l10n-name="icon"/> { $name } ekl
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = <img data-l10n-name="icon"/> { $name } eklentisi kapsayıcı sekmelere ihtiyaç duyuyor.
-# This string is shown to notify the user that their tracking protection preferences
-# are being controlled by an extension.
-extension-controlled-websites-tracking-protection-mode = İzlenme korumasını <img data-l10n-name="icon"/> { $name } adlı eklenti kontrol ediyor.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
 extension-controlled-websites-content-blocking-all-trackers = Bu ayarı <img data-l10n-name="icon"/> { $name } adlı eklenti yönetiyor.
@@ -154,9 +150,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = Bağlantıları yeni pencere yerine yeni sekmede aç
     .accesskey = B
-warn-on-quit-close-multiple-tabs =
-    .label = Çıkarken ve birden fazla sekmeyi kapatırken beni uyar
-    .accesskey = m
 warn-on-close-multiple-tabs =
     .label = Birden fazla sekmeyi kapatırken beni uyar
     .accesskey = m
@@ -289,6 +282,7 @@ update-application-check-choose =
 update-application-manual =
     .label = Hiçbir zaman denetlenmesin (Önerilmez)
     .accesskey = H
+update-application-warning-cross-user-setting = Bu ayar, bu { -brand-short-name } kurulumunu kullanan tüm Windows hesaplarına ve { -brand-short-name } profillerine uygulanacaktır.
 update-application-use-service =
     .label = Güncellemeleri yüklemek için arka plan hizmetini kullan
     .accesskey = h
@@ -340,6 +334,9 @@ browsing-search-on-start-typing =
     .accesskey = z
 browsing-cfr-recommendations =
     .label = Gezinirken yeni eklentiler öner
+    .accesskey = G
+browsing-cfr-features =
+    .label = Gezinti yeni özellikler öner
     .accesskey = G
 browsing-cfr-recommendations-learn-more = Daha fazla bilgi al
 
@@ -533,6 +530,9 @@ sync-device-name-save =
     .accesskey = K
 sync-mobilepromo-single = Başka bir cihaz bağla
 sync-mobilepromo-multi = Cihazları yönet
+sync-connect-another-device = Başka bir cihaz bağla
+sync-manage-devices = Cihazları yönet
+sync-fxa-begin-pairing = Cihaz eşleştir
 sync-tos-link = Kullanım Koşulları
 sync-fxa-privacy-notice = Gizlilik Bildirimi
 
@@ -609,15 +609,10 @@ sitedata-total-size-calculating = Site verilerinin ve önbelleğin boyutu hesapl
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Depolanmış site verileriniz ve önbelleğiniz şu anda { $value } { $unit } disk alanı kullanıyor.
 sitedata-learn-more = Daha fazla bilgi al
-sitedata-keep-until = Tutma sınırı
-    .accesskey = u
-sitedata-keep-until-expire =
-    .label = Süresi dolana dek
-sitedata-keep-until-closed =
-    .label = { -brand-short-name } kapatılana dek
 sitedata-delete-on-close =
     .label = { -brand-short-name } kapatıldığında çerezleri ve site verilerini sil
     .accesskey = k
+sitedata-delete-on-close-private-browsing = Kalıcı gizli gezinti modunda, { -brand-short-name } kapatıldığında çerezler ve site verileri her zaman silinir.
 sitedata-allow-cookies-option =
     .label = Çerezleri ve site verilerini kabul et
     .accesskey = z
@@ -628,16 +623,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Engellenecek tür
     .accesskey = ü
-sitedata-block-trackers-option-recommended =
-    .label = Üçüncü taraf takipçileri (önerilir)
-sitedata-block-trackers-option =
-    .label = Üçüncü taraf takipçileri
-sitedata-block-unvisited-option =
-    .label = Ziyaret etmediğim sitelerin çerezleri
-sitedata-block-all-third-party-option =
-    .label = Tüm üçüncü taraf çerezleri (Bazı web siteleri bozulabilir.)
-sitedata-block-all-option =
-    .label = Tüm çerezler (Bazı web siteleri bozulabilir.)
 sitedata-option-block-trackers =
     .label = Üçüncü taraf takipçileri
 sitedata-option-block-unvisited =
@@ -652,13 +637,6 @@ sitedata-clear =
 sitedata-settings =
     .label = Verileri yönet…
     .accesskey = V
-sitedata-cookies-exceptions =
-    .label = İstisnalar…
-    .accesskey = r
-# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
-# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
-# Cookies and Site Data section.
-sitedata-warning-your-settings-prevent-changes = “İçerik engelleme” ayarlarınız, “çerezler ve site verileri” ayarlarının değiştirilmesini engelliyor.
 sitedata-cookies-permissions =
     .label = İzinleri yönet…
     .accesskey = z
@@ -681,41 +659,8 @@ addressbar-suggestions-settings = Arama motoru önerileri için tercihleri deği
 ## Privacy Section - Content Blocking
 
 content-blocking-header = İçerik engelleme
-content-blocking-desc = Gezintinizi yavaşlatabilecek ve web’de sizi izleyebilecek reklamlar, kodlar gibi üçüncü taraf içeriklerini engelleyebilirsiniz. Koruma ve performans dengesini sağlamak için ayarlarınızı özelleştirebilirsiniz.
 content-blocking-description = Web’de sizi takip eden üçüncü taraf içeriklerini engelleyebilirsiniz. İnternette yaptıklarınızın ne kadarının depolanacağına ve siteler arasında paylaşılacağına siz karar verin.
 content-blocking-learn-more = Daha fazla bilgi al
-content-blocking-restore-defaults =
-    .label = Varsayılanları geri yükle
-    .accesskey = r
-content-blocking-toggle-on =
-    .tooltiptext = İçerik engellemeyi kapat
-content-blocking-toggle-off =
-    .tooltiptext = İçerik engellemeyi aç
-content-blocking-toggle-label-on = AÇIK
-    .accesskey = A
-content-blocking-toggle-label-off = KAPALI
-    .accesskey = K
-content-blocking-category-label = Nelerin engelleneceğini seçin
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-slow-loading-trackers-label =
-    .label = Yavaş yüklenen takipçiler
-    .accesskey = Y
-content-blocking-fastblock-new-description = Yalnızca sayfaların çabuk yüklenmesini önleyen takipçileri engeller.
-content-blocking-tracking-protection-trackers-label =
-    .label = Takipçiler
-    .accesskey = T
-content-blocking-tracking-protection-all-detected-trackers-label =
-    .label = Bulunan tüm takipçiler
-    .accesskey = B
-content-blocking-tracking-protection-new-description = Bilinen tüm takipçileri engeller. (Bazı sayfalar düzgün yüklenmeyebilir.)
-content-blocking-tracking-protection-option-always =
-    .label = Her zaman
-    .accesskey = H
-content-blocking-tracking-protection-option-private =
-    .label = Yalnızca gizli pencerelerde
-    .accesskey = z
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 content-blocking-setting-standard =
@@ -737,6 +682,7 @@ content-blocking-all-windows-trackers = Bilinen takipçileri tüm pencerelerde e
 content-blocking-all-third-party-cookies = Tüm üçüncü taraf çerezlerini engeller
 content-blocking-warning-title = Dikkat!
 content-blocking-warning-desc = Çerezleri ve takipçileri engellemeniz bazı web sitelerinin düzgün çalışmamasına yol açabilir. Güvendiğiniz sitelerde engellemeyi kolayca kapatabilirsiniz.
+content-blocking-warning-description = İçerikleri engellemek bazı sitelerin bozulmasına neden olabilir. Güvendiğiniz sitelerde engellemeyi kolayca kapatabilirsiniz.
 content-blocking-learn-how = Engellemeyi kapatmayı öğrenin
 content-blocking-trackers-label =
     .label = Takipçiler
@@ -748,51 +694,21 @@ content-blocking-option-private =
     .label = Yalnızca gizli pencerelerde
     .accesskey = z
 content-blocking-tracking-protection-change-block-list = Engelleme listesini değiştir
-content-blocking-third-party-cookies-label =
-    .label = Üçüncü taraf çerezleri
-    .accesskey = Ü
-content-blocking-reject-trackers-description = Tüm üçüncü taraf çerezlerini veya yalnızca takipçilerin oluşturduğu çerezleri engelleyebilirsiniz.
-# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
-# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
-# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
-# the UI.
-content-blocking-reject-trackers-warning-your-settings-prevent-changes = “Çerezler ve site verileri” ayarlarınız, “üçüncü taraf çerezleri” ayarlarının değiştirilmesini engelliyor.
-content-blocking-change-cookie-settings =
-    .label = Çerez ayarlarını değiştir
-    .accesskey = z
-content-blocking-reject-trackers-block-trackers-option-recommended =
-    .label = Takipçiler (önerilen)
-    .accesskey = T
-content-blocking-reject-trackers-block-trackers-option =
-    .label = Takipçiler
-    .accesskey = k
-content-blocking-reject-trackers-all-third-parties-option =
-    .label = Tüm üçüncü taraf çerezleri (Bazı siteler bozulabilir.)
-    .accesskey = ü
 content-blocking-cookies-label =
     .label = Çerezler
     .accesskey = e
+# Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
+content-blocking-cryptominers-label =
+    .label = Kripto madencileri
+    .accesskey = m
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+content-blocking-fingerprinters-label =
+    .label = Parmak izi toplayıcılar
+    .accesskey = P
 
 ## Privacy Section - Tracking
 
-tracking-header = İzlenme Koruması
-tracking-desc = İzlenme Koruması, siz siteler arasında gezinirken hakkınızda veri toplayan çevrimiçi takipçileri engeller. <a data-l10n-name="learn-more">İzlenme Koruması ve gizliliğiniz hakkında daha fazla bilgi alın</a>
-tracking-mode-label = Bilinen takipçileri engellemek için İzlenme Koruması’nı kullan
-tracking-mode-always =
-    .label = Her zaman
-    .accesskey = H
-tracking-mode-private =
-    .label = Yalnızca gizli pencerelerde
-    .accesskey = z
-tracking-mode-never =
-    .label = Asla
-    .accesskey = A
-tracking-exceptions =
-    .label = İstisnalar…
-    .accesskey = t
-tracking-change-block-list =
-    .label = Engelleme listesini değiştir…
-    .accesskey = E
 tracking-manage-exceptions =
     .label = İstisnaları yönet…
     .accesskey = n
@@ -824,6 +740,9 @@ permissions-block-autoplay-media =
     .label = Web sitelerinin sesli içerikleri otomatik olarak oynatmasını engelle
     .accesskey = o
 permissions-block-autoplay-media-menu = Siteler otomatik olarak ses çalmak istediğinde
+permissions-block-autoplay-media2 =
+    .label = Web sitelerinin otomatik olarak ses çalmasını engelle
+    .accesskey = s
 permissions-block-autoplay-media-exceptions =
     .label = İstisnalar…
     .accesskey = s

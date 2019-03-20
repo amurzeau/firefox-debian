@@ -22,7 +22,7 @@ list-empty-available-updates =
     .value = Geen updates gevonden
 
 list-empty-recent-updates =
-    .value = U hebt uw add-ons niet recentelijk bijgewerkt
+    .value = U hebt onlangs geen add-ons bijgewerkt
 
 list-empty-find-updates =
     .label = Controleren op updates
@@ -126,6 +126,19 @@ detail-update-manual =
     .label = Uit
     .tooltiptext = Updates niet automatisch installeren
 
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Uitvoeren in privévensters
+
+detail-private-browsing-description = Extensies zullen in privévensters werken en toegang hebben tot uw online-activiteiten. <label data-l10n-name="detail-private-browsing-learn-more">Meer info</label>
+
+detail-private-browsing-on =
+    .label = Toestaan
+    .tooltiptext = Inschakelen in privénavigatie
+
+detail-private-browsing-off =
+    .label = Niet toestaan
+    .tooltiptext = Uitschakelen in privénavigatie
+
 detail-home =
     .label = Homepage
 
@@ -189,6 +202,13 @@ legacy-extensions =
 
 legacy-extensions-description =
     Deze extensies voldoen niet aan huidige { -brand-short-name }-standaarden en zijn daarom gedeactiveerd. <label data-l10n-name="legacy-learn-more">Meer info over de wijzigingen omtrent add-ons</label>
+
+private-browsing-description2 =
+    { -brand-short-name } verandert de manier waarop extensies in privénavigatie werken. Nieuwe extensies die u aan
+    { -brand-short-name } toevoegt, werken standaard niet in privévensters. Tenzij u dit toestaat in de instellingen, werkt
+    de extensie niet tijdens privénavigatie, en heeft deze daarin geen toegang tot uw online-activiteiten.
+    Deze wijziging is aangebracht om uw privénavigatie privé te houden.
+    <label data-l10n-name="private-browsing-learn-more">Meer info over het beheren van extensie-instellingen.</label>
 
 extensions-view-discover =
     .name = Add-ons verkrijgen
@@ -278,11 +298,12 @@ extensions-updates-update-selected =
 
 ## Extension shortcut management
 
-shortcuts-manage =
-  .label = Sneltoetsen
+manage-extensions-shortcuts =
+    .label = Extensiesneltoetsen beheren
+    .accesskey = E
 shortcuts-empty-message = Er zijn geen sneltoetsen voor deze extensie.
-# TODO: Confirm this copy.
-shortcuts-no-addons = U hebt geen actieve add-ons.
+shortcuts-no-addons = U hebt geen extensies ingeschakeld.
+shortcuts-no-commands = De volgende extensies hebben geen sneltoetsen:
 shortcuts-input =
   .placeholder = Typ een sneltoets
 
@@ -290,8 +311,26 @@ shortcuts-browserAction = Extensie activeren
 shortcuts-pageAction = Pagina-actie activeren
 shortcuts-sidebarAction = De zijbalk in-/uitschakelen
 
-shortcuts-modifier-mac = Druk op Ctrl, Alt of ⌘
-shortcuts-modifier-other = Druk op Ctrl of Alt
+shortcuts-modifier-mac = Druk ook op Ctrl, Alt of ⌘
+shortcuts-modifier-other = Druk ook op Ctrl of Alt
 shortcuts-invalid = Ongeldige combinatie
 shortcuts-letter = Typ een letter
 shortcuts-system = Kan geen bestaande { -brand-short-name }-sneltoets gebruiken
+
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        *[other] Nog { $numberToShow } tonen
+    }
+
+shortcuts-card-collapse-button = Minder tonen
+
+go-back-button =
+    .tooltiptext = Teruggaan
+
+## Add-on actions
+remove-addon-button = Verwijderen
+disable-addon-button = Uitschakelen
+enable-addon-button = Inschakelen
+
+addons-enabled-heading = Ingeschakeld
+addons-disabled-heading = Uitgeschakeld

@@ -88,6 +88,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = Ki
     .tooltiptext = Ne legyenek automatikus frissítések
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Futtatás privát ablakokban
+detail-private-browsing-description = A kiegészítő privát ablakokban is fog működni, és hozzáfér az online tevékenységéhez. <label data-l10n-name="detail-private-browsing-learn-more">További tudnivalók</label>
+detail-private-browsing-on =
+    .label = Engedélyezés
+    .tooltiptext = Engedélyezés privát böngészésben
+detail-private-browsing-off =
+    .label = Tiltás
+    .tooltiptext = Tiltás privát böngészésben
 detail-home =
     .label = Honlap
 detail-home-value =
@@ -121,7 +130,7 @@ detail-rating =
 addon-restart-now =
     .label = Újraindítás most
 disabled-unsigned-heading =
-    .value = Néhány kiterjesztés letiltásra került
+    .value = Néhány kiegészítő letiltásra került
 disabled-unsigned-description = A következő kiegészítők nem lettek ellenőrizve a { -brand-short-name } böngészőben való használatra. Lehetősége van <label data-l10n-name="find-addons">helyettesítőket keresni</label> vagy megkérni a fejlesztőt az ellenőriztetésre.
 disabled-unsigned-learn-more = Tudjon meg többet erőfeszítéseinkről az online biztonsága fenntartásáért.
 disabled-unsigned-devinfo = A kiegészítőik ellenőriztetése iránt érdeklődő fejlesztők folytathatják a <label data-l10n-name="learn-more">kézikönyv</label> elolvasásával.
@@ -130,6 +139,12 @@ legacy-warning-show-legacy = Hagyományos kiegészítők megjelenítése
 legacy-extensions =
     .value = Hagyományos kiegészítők
 legacy-extensions-description = Ezek a kiegészítők nem felelnek meg a { -brand-short-name } aktuális elvárásainak, emiatt le lettek tiltva. <label data-l10n-name="legacy-learn-more">További tudnivalók a kiegészítők módosulásáról</label>
+private-browsing-description2 =
+    A { -brand-short-name } megváltoztatja a kiegészítők működését privát böngészésben. A { -brand-short-name }hoz
+    hozzáadott új kiegészítők alapértelmezetten nem futnak privát böngészésben. Ha nem engedélyezi a beállításokban,
+    akkor a kiegészítő nem fog működni privát böngészésben, és ott nem fog hozzáférni az online tevékenységéhez.
+    Ezt a változtatást azért hoztuk, hogy a privát böngészése tényleg privát legyen.
+    <label data-l10n-name="private-browsing-learn-more">Tudjon meg többet a kiegészítőbeállítások kezeléséről.</label>
 extensions-view-discover =
     .name = Kiegészítők letöltése
     .tooltiptext = { extensions-view-discover.name }
@@ -207,3 +222,38 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Frissítések telepítése
     .tooltiptext = A listán szereplő frissítések telepítése
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Kiegészítő-gyorsbillentyűk kezelése
+    .accesskey = o
+shortcuts-empty-message = Ennek a kiegészítőnek nincsenek gyorsbillentyűi.
+shortcuts-no-addons = Egyetlen kiegészítő sincs engedélyezve.
+shortcuts-no-commands = A következő kiegészítők nem rendelkeznek gyorsbillentyűvel:
+shortcuts-input =
+    .placeholder = Írjon be egy gyorsbillentyűt
+shortcuts-browserAction = Kiegészítő aktiválása
+shortcuts-pageAction = Lapművelet aktiválása
+shortcuts-sidebarAction = Oldalsáv be/ki
+shortcuts-modifier-mac = Ctrl, Alt vagy ⌘ gombot tartalmaz
+shortcuts-modifier-other = Ctrl vagy Alt gombot tartalmaz
+shortcuts-invalid = Érvénytelen kombináció
+shortcuts-letter = Írjon be egy betűt
+shortcuts-system = Nem írhat felül egy { -brand-short-name } gyorsbillentyűt
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] Még { $numberToShow } megjelenítése
+       *[other] Még { $numberToShow } megjelenítése
+    }
+shortcuts-card-collapse-button = Kevesebb megjelenítése
+go-back-button =
+    .tooltiptext = Ugrás vissza
+
+## Add-on actions
+
+remove-addon-button = Eltávolítás
+disable-addon-button = Letiltás
+enable-addon-button = Engedélyezés
+addons-enabled-heading = Engedélyezve
+addons-disabled-heading = Tiltva

@@ -17,7 +17,7 @@ policy-BlockAboutConfig = Stankañ ar bajenn about:config.
 policy-BlockAboutProfiles = Stankañ ar bajenn about:profiles.
 policy-BlockAboutSupport = Stankañ ar bajenn about:support.
 policy-Bookmarks = Krouiñ sinedoù e barrenn ostilhoù ar sinedoù, lañser ar sinedoù, pe un teuliad resis eno.
-policy-Certificates = Arverañ pe get testenioù enkorfet. Ar reolenn-mañ n'eo nemet war Windows evit ar mare.
+policy-CaptivePortal = (Di)weredekaat skor ar porched desachus.
 policy-CertificatesDescription = Ouzhpennañ testenioù pe arverañ testenioù enkorfet
 policy-Cookies = Aotren pe difenn al lec'hiennoù da zespizañ toupinoù.
 policy-DisableAppUpdate = Mirout ar merdeer da hizivaat.
@@ -37,7 +37,6 @@ policy-DisableProfileImport = Diweredekaat arc'had al lañser evit enporzhiañ r
 policy-DisableProfileRefresh = Diweredekaat an afell Azgrenaat { -brand-short-name } er bajenn about:support.
 policy-DisableSafeMode = Diweredekaat ar c'heweriuster evit adloc'hañ er mod diogel. Evezhiadenn: ar stokell Shift evit mont er mod diogel n'hall bezañ diweredekaet nemet war Windows gant ar reolennoù strollad.
 policy-DisableSecurityBypass = Mirout an arveriad da dremen e-biou gouzavioù diogelroez.
-policy-DisableSetDesktopBackground = Diweredekaat an arc'had lañser Arventennañ evel Drekleur ar burev.
 policy-DisableSetAsDesktopBackground = Diweredekaat an arc'had lañser Arventennañ evel Drekleur ar burev evit ar skeudennoù.
 policy-DisableSystemAddonUpdate = Mirout ar merdeer da staliañ hag hizivaat askouezhioù reizhiad.
 policy-DisableTelemetry = Diweredekaat Telemetry
@@ -49,14 +48,15 @@ policy-DontCheckDefaultBrowser = Diweredekaat gwiriadur ar merdeer dre ziouer e-
 policy-EnableTrackingProtection = Gweredekaat pe diweredekaat stankadur an endalc'hadoù. Gallout a rit prennañ an dibab-mañ.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
-# English or translate them as verbs. See also:
-# https://github.com/mozilla/policy-templates/blob/master/README.md#extensions-machine-only
+# English or translate them as verbs.
 policy-Extensions = Staliañ, distaliañ pe prennañ askouezhioù. An dibarzh staliañ a gemer URLoù pe treugoù evel arventennoù. An dibarzhioù distaliañ ha prennañ a gemer naoudioù askouezhioù.
+policy-ExtensionUpdate = (Di)weredekaat hizivadennoù askouezhioù ent emgefreek.
 policy-FlashPlugin = Aotren pe difenn arver an enlugellad Flash.
 policy-HardwareAcceleration = M'eo lakaet da Gaou e vo diweredekaet herrekadur ar periant.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Arventennañ ar bennbajenn. Gallout a rit ivez prennañ anezhi.
 policy-InstallAddonsPermission = Aotren lec'hiennoù 'zo da staliañ askouezhioù.
+policy-NetworkPrediction = (Di)weredekaat an diougan rouedad (rakkerc'hat DNS)
 policy-NoDefaultBookmarks = Diweredekaat krouidigezh ar sinedoù dre ziouer roet gant { -brand-short-name }, hag ar sinedoù speredek (Gweladennet ar muiañ, ivinelloù nevesañ). Evezh: ar reolenn-mañ a zo efedus ar wech kentañ vez loc'het Firefox hepken.
 policy-OfferToSaveLogins = Rediañ an arventenn evit aotren { -brand-short-name } da ginnig enrollañ an titouroù kennaskañ. Ar gwerzhioù Gwir ha Gaou a zo asantet.
 policy-OverrideFirstRunPage = Merañ ar bajenn loc'hadur kentañ. Laoskit ar reolenn-mañ goullo ma fell deoc'h diweredekaat ar bajenn loc'hadur kentañ.
@@ -70,6 +70,8 @@ policy-SearchBar = Despizañ al lec'hiadur dre ziouer er varrenn glask. AN arver
 policy-SearchEngines = Kefluniañ arventennoù al lusker enklask. Ar reolenn-mañ a c'hall bezañ lakaet en handelv skor astennet (ESR).
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Staliañ ar molladoù PKCS #11.
-# “format” refers to the format used for the value of this policy. See also:
-# https://github.com/mozilla/policy-templates/blob/master/README.md#websitefilter-machine-only
+policy-SSLVersionMax = Arventennañ an handelv SSL uhelañ.
+policy-SSLVersionMin = Arventennañ an handelv SSL izelañ.
+policy-SupportMenu = Ouzhpennañ un elfenn lañser skor personelaet el lañser skoazell.
+# “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Stankañ al lec'hiennoù da vezañ gweladennet. Lennit an teuliadur evit kaout muioc'h a vunudoù war ar mentrezh.

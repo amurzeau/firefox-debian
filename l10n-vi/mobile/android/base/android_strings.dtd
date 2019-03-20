@@ -113,7 +113,7 @@
 <!ENTITY reload "Tải lại">
 <!ENTITY forward "Tiến">
 <!ENTITY menu "Trình đơn">
-<!ENTITY back "Lùi">
+<!ENTITY back "Quay lại">
 <!ENTITY stop "Dừng">
 <!ENTITY site_security "Bảo mật trang">
 <!ENTITY edit_mode_cancel "Hủy bỏ">
@@ -290,11 +290,6 @@
 <!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
      Similar to the already existing "pref_whats_new_notification_summary"-->
 <!ENTITY pref_feature_tips_notification_summary "Tìm hiểu về cách sử dụng &brandShortName; và các sản phẩm của &vendorShortName;">
-<!-- Localization note (pref_feature_tips_notification_enabling_hint):
-     Describe the action the user should do to enable this preference
-     Will be used in the context "<Turn on> ... to enable this feature" -->
-<!ENTITY pref_feature_tips_notification_enabling_hint "Bật">
-
 <!-- Localization note (pref_feature_tips_notification_enabling_path):
      Nothing to translate. Simple concatenation of already localized strings. Result is used below. -->
 <!ENTITY pref_feature_tips_notification_enabling_path "&pref_category_privacy_short; > &pref_category_datareporting; > &datareporting_fhr_title;">
@@ -402,7 +397,7 @@
 <!ENTITY pref_private_data_cache "Bộ nhớ đệm">
 <!ENTITY pref_private_data_offlineApps "Dữ liệu trang web ngoại tuyến">
 <!ENTITY pref_private_data_siteSettings2 "Cài đặt trang">
-<!ENTITY pref_private_data_downloadFiles2 "Tải về">
+<!ENTITY pref_private_data_downloadFiles2 "Tải xuống">
 <!ENTITY pref_private_data_syncedTabs "Các thẻ đã đồng bộ">
 
 <!ENTITY pref_default_browser "Đặt trình duyệt làm mặc định">
@@ -471,7 +466,7 @@
 
 <!ENTITY addons "Tiện ích">
 <!ENTITY logins "Đăng nhập">
-<!ENTITY downloads "Tải về">
+<!ENTITY downloads "Tải xuống">
 <!ENTITY char_encoding "Bảng mã">
 
 <!ENTITY share "Chia sẻ">
@@ -596,7 +591,7 @@
 <!ENTITY button_clear_data "Xoá dữ liệu">
 <!ENTITY button_set "Thiết lập">
 <!ENTITY button_clear "Xóa">
-<!ENTITY button_copy "Chép">
+<!ENTITY button_copy "Sao chép">
 
 <!ENTITY home_top_sites_title "Trang truy cập nhiều">
 <!-- Localization note (home_top_sites_add): This string is used as placeholder
@@ -724,20 +719,20 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 
  <!-- Updater notifications -->
 <!ENTITY updater_start_title2 "Bản cập nhật cho &brandShortName; đã sẵn sàng">
-<!ENTITY updater_start_select2 "Chạm để tải về">
+<!ENTITY updater_start_select2 "Chạm để tải xuống">
 
 <!ENTITY updater_downloading_title2 "Đang tải &brandShortName;">
-<!ENTITY updater_downloading_title_failed2 "Tải về bị lỗi">
+<!ENTITY updater_downloading_title_failed2 "Tải xuống bị lỗi">
 <!ENTITY updater_downloading_select2 "Chạm để áp dụng cập nhật khi tải xong">
 <!ENTITY updater_downloading_retry2 "Chạm để thử lại">
 
-<!ENTITY updater_apply_title3 "Bản cập nhật &brandShortName; đã được tải về">
+<!ENTITY updater_apply_title3 "Bản cập nhật &brandShortName; đã được tải xuống">
 <!ENTITY updater_apply_select3 "Chạm để cài đặt">
 
 <!-- Localization note (updater_permission_text): This text is shown in a notification and as a snackbar
      if the app requires a runtime permission to download updates. Currently, the updater only sees
      remotely advertised updates in the Nightly and Aurora channels. -->
-<!ENTITY updater_permission_text "Để tải về các tập tin và cập nhật, cho phép &brandShortName; quyền truy cập bộ nhớ.">
+<!ENTITY updater_permission_text "Để tải xuống các tập tin và cập nhật, cho phép &brandShortName; quyền truy cập bộ nhớ.">
 <!-- LOCALIZATION NOTE (updater_permission_allow): This action is shown in a snackbar along with updater_permission_text. -->
 <!ENTITY updater_permission_allow "Cho phép">
 
@@ -833,7 +828,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- LOCALIZATION NOTE (unsupported_sdk_version): The user installed a build of this app that does not support
      the Android version of this device. the formatS1 is replaced by the CPU ABI (e.g., ARMv7); the formatS2 is
      replaced by the Android OS version (e.g., 14)-->
-<!ENTITY unsupported_sdk_version "Xin lỗi! &brandShortName; sẽ không làm việc trên thiết bị này (&formatS1;, &formatS2;). Xin vui lòng tải về phiên bản khác.">
+<!ENTITY unsupported_sdk_version "Xin lỗi! &brandShortName; sẽ không làm việc trên thiết bị này (&formatS1;, &formatS2;). Xin vui lòng tải xuống phiên bản khác.">
 
 <!-- LOCALIZATION NOTE(corrupt_apk): This notification is shown if corruption has been detected on startup and the user has to reinstall Firefox -->
 <!ENTITY corrupt_apk "Không thể mở &brandShortName;. Hãy cài lại và thử lại.">
@@ -861,7 +856,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_bookmarked): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
-<!ENTITY activity_stream_highlight_label_bookmarked "Đã đánh dấu trang">
+<!ENTITY activity_stream_highlight_label_bookmarked "Đã đánh dấu">
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_visited): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
 <!ENTITY activity_stream_highlight_label_visited "Đã truy cập">
@@ -901,15 +896,9 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_description "Tạm dừng phát">
 
 <!-- Notification channels names -->
-<!ENTITY default_notification_channel "&brandShortName;">
-
-<!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "Trình duyệt">
 <!ENTITY mls_notification_channel "&vendorShortName; Dịch vụ vị trí">
 <!ENTITY download_notification_channel "Tải xuống">
-<!ENTITY media_notification_channel "Phát lại">
-<!-- These push notifications come without a specific channel and/or name from Leanplum -->
-<!ENTITY leanplum_default_notifications_channel "&brandShortName; Thông báo đẩy">
 <!ENTITY media_notification_channel2 "Âm thanh và video">
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
 <!ENTITY leanplum_default_notifications_channel2 "&vendorShortName; các mẹo và thủ thuật">

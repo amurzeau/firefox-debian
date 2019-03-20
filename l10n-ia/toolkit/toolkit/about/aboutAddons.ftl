@@ -93,6 +93,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = Inactive
     .tooltiptext = Non installar automaticamente le actualisationes
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Aperir in un fenestra private
+detail-private-browsing-description = Le extension functionara in fenestras anonyme e habera accesso a tu activitates online. <label data-l10n-name="detail-private-browsing-learn-more">Saper plus</label>
+detail-private-browsing-on =
+    .label = Consentir
+    .tooltiptext = Activar in navigation anonime
+detail-private-browsing-off =
+    .label = Non consentir
+    .tooltiptext = Disactiva in navigation priovate
 detail-home =
     .label = Pagina initial
 detail-home-value =
@@ -135,6 +144,9 @@ legacy-warning-show-legacy = Monstrar le extensiones obsolete
 legacy-extensions =
     .value = Extensiones obsolete
 legacy-extensions-description = Ille extensiones non concorda le standardos currente de { -brand-short-name } assi illos esseva disactivate. <label data-l10n-name="legacy-learn-more">Sape lo que cambiava al additivos</label>
+private-browsing-description =
+    Le extensiones non es consentite de ordinario pro fluer in Fenestras anonyme. Isto significa que illos non functiona durante le navigation anonyme e illos non habera accesso illac a tu activitates online. Pro consentir que
+    un extension flue in Fenestras anonyme, elige le carta de extension infra e cambia tu parametros.
 extensions-view-discover =
     .name = Obtener additivos
     .tooltiptext = { extensions-view-discover.name }
@@ -212,3 +224,38 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Installar le actualisationes
     .tooltiptext = Installar le actualisationes disponibile de iste lista
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Gerer le vias breve del extension
+    .accesskey = V
+shortcuts-empty-message = Il non ha vias breve in iste extension
+shortcuts-no-addons = Tu non ha ulle extensiones activate
+shortcuts-no-commands = Le sequente extensiones non ha claves accelerator:
+shortcuts-input =
+    .placeholder = Scribe un via breve
+shortcuts-browserAction = Activar extension
+shortcuts-pageAction = Activar le action del pagina
+shortcuts-sidebarAction = Monstrar/celar le barra lateral
+shortcuts-modifier-mac = Includer Ctrl, Alt, o ⌘
+shortcuts-modifier-other = Include Ctrl o Alt
+shortcuts-invalid = Combination non valide
+shortcuts-letter = Scribe un littera
+shortcuts-system = Impossibile supplantar un via breve de { -brand-short-name }
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] Mostrar altere { $numberToShow }
+       *[other] Mostrar altere { $numberToShow }
+    }
+shortcuts-card-collapse-button = Monstrar minus
+go-back-button =
+    .tooltiptext = Regreder
+
+## Add-on actions
+
+remove-addon-button = Remover
+disable-addon-button = Disactivar
+enable-addon-button = Activar
+addons-enabled-heading = Activate
+addons-disabled-heading = Disactivate

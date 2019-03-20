@@ -49,6 +49,7 @@ policy-EnableTrackingProtection = Aktivizoni ose çaktivizoni Bllokim Lënde, dh
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
 policy-Extensions = Instaloni, çinstaloni ose kyçni zgjerime. Mundësia Instaloni si parametra përdor URL ose shtigje. Mundësitë Çinstaloni dhe Kyçur përdorin ID zgjerimesh.
+policy-ExtensionUpdate = Aktivizoni ose çaktivizoni përditësime të vetvetishme të zgjerimeve.
 policy-FlashPlugin = Lejoni ose jo përdorimin e shtojcës Flash.
 policy-HardwareAcceleration = Nëse false, çaktivizohet përshpejtimi përmes hardware-it.
 # “lock” means that the user won’t be able to change this setting
@@ -67,5 +68,8 @@ policy-SearchBar = Caktoni vendin parazgjedhje për shtyllën e kërkimeve. Për
 policy-SearchEngines = Formësoni rregullime motori kërkimesh. Ky rregull tani është i përdorshëm vetëm në versionin Extended Support Release (ESR).
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Instaloni module PKCS #11.
+policy-SSLVersionMax = Caktoni version maksimum SSL-je.
+policy-SSLVersionMin = Caktoni version minimum SSL-je.
+policy-SupportMenu = Shtoni te menuja e ndihmës një element vetjak menuje asistence.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Bllokoni vizita në sajte. Për më tepër hollësi mbi këtë format, shihni dokumentimin.

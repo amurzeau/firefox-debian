@@ -4,6 +4,9 @@
 
 addons-window =
     .title = ඇඩෝන කළමනාකරු
+search-header =
+    .placeholder = addons.mozilla.org සොයන්න
+    .searchbuttonlabel = සොයන්න
 search-header-shortcut =
     .key = f
 loading-label =
@@ -21,6 +24,12 @@ list-empty-button =
 install-addon-from-file =
     .label = ඇඩෝන ගොනුවෙන් ස්ථාපනය කරන්න…
     .accesskey = I
+help-button = ඇඩෝන සහාය
+preferences =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } විකල්ප
+       *[other] { -brand-short-name } අභිප්‍රේත
+    }
 tools-menu =
     .tooltiptext = සියළු ඇඩෝන සඳහා මෙවලම්
 show-unsigned-extensions-button =
@@ -84,6 +93,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = Off
     .tooltiptext = ස්වයංක්‍රීයව යාවත්කාලීන ස්ථාපනය නොකරන්න
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = පුද්ගලික කවුළු තුළ ක්‍රියාකරවන්න
+detail-private-browsing-description = දිගුවට පුද්ගලික කවුළු තුලද ක්‍රියා කරන අතර, එයට ඔබේ මාර්ගගත ක්‍රියාකාරකම් වෙත පිවිසිය හැක. <label data-l10n-name="detail-private-browsing-learn-more">තවත් දැනගන්න</label>
+detail-private-browsing-on =
+    .label = ඉඩදෙන්න
+    .tooltiptext = පුද්ගලික ගවේශණ තුළ සක්‍රීයයි
+detail-private-browsing-off =
+    .label = ඉඩ නොදෙන්න
+    .tooltiptext = පුද්ගලික ගවේශණ තුළ අක්‍රීයයි
 detail-home =
     .label = මුල්පිටුව
 detail-home-value =
@@ -121,6 +139,7 @@ disabled-unsigned-heading =
 disabled-unsigned-description = පහත ඇඩෝන { -brand-short-name } හි භාවිතයට තහවුරු කර නොමැත. ඔබට හැක්කේ <label data-l10n-name="find-addons">ප්‍රතිස්ථාපනයන් සොයන්න</label> හෝ තහවුරු කිරීම සඳහා සංවර්දකයාගෙන් විමසන්න.
 disabled-unsigned-learn-more = ඔබව මාර්ගගතව ආරක්ෂිතව තැබීම සඳහා අපගේ උත්සාහයන් පිළිබඳ දැනගන්න.
 disabled-unsigned-devinfo = මෙය කියවීම මගින් තම ඇඩෝන තහවුරු කරගැනීමට කැමති සංවර්ධකයන් ඉදිරියට යන්න <label data-l10n-name="learn-more">ශ්‍රමික</label>.
+plugin-deprecation-description = යමක් අහිමිද? { -brand-short-name } විසින් ඇතැම් ප්ලගින වෙත තවදුරටත් සහය නොදක්වයි. <label data-l10n-name="learn-more"> තවත් දැනගන්න.</label>
 extensions-view-discover =
     .name = ඇඩෝන ලබා ගන්න
     .tooltiptext = { extensions-view-discover.name }
@@ -198,3 +217,20 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = යාවත්කාලීන ස්ථාපනය කරන්න
     .tooltiptext = මෙම ලැයිස්තුවේ පවතින යාවත්කාලීන ස්ථාපනය කරන්න
+
+## Extension shortcut management
+
+shortcuts-input =
+    .placeholder = කෙටිමඟක් ලියන්න
+shortcuts-browserAction = දිගුව සක්‍රීය කරන්න
+shortcuts-pageAction = පිටු ක්‍රියාව සක්‍රීය කරන්න
+shortcuts-modifier-mac = Ctrl, Alt, හෝ ⌘ ඇතුලත් කරන්න
+shortcuts-modifier-other = Ctrl හෝ Alt ඇතුලත් කරන්න
+
+## Add-on actions
+
+remove-addon-button = ඉවත් කරන්න
+disable-addon-button = අක්‍රීය කරන්න
+enable-addon-button = සක්‍රීය
+addons-enabled-heading = සක්‍රීය කළ
+addons-disabled-heading = අක්‍රීය කළ

@@ -16,7 +16,7 @@ workaround anymore, so let's just kill it.
 
 diff --git a/mfbt/LinuxSignal.h b/mfbt/LinuxSignal.h
 deleted file mode 100644
-index 112b6a1b7e0d..000000000000
+index 47969ca04220..000000000000
 --- a/mfbt/LinuxSignal.h
 +++ /dev/null
 @@ -1,38 +0,0 @@
@@ -47,11 +47,11 @@ index 112b6a1b7e0d..000000000000
 -  asm volatile("b %0" : : "X"(H) : "memory");
 -}
 -
--#define MOZ_SIGNAL_TRAMPOLINE(h) (mozilla::SignalTrampoline<h>)
+-#  define MOZ_SIGNAL_TRAMPOLINE(h) (mozilla::SignalTrampoline<h>)
 -
 -#else  // __arm__
 -
--#define MOZ_SIGNAL_TRAMPOLINE(h) (h)
+-#  define MOZ_SIGNAL_TRAMPOLINE(h) (h)
 -
 -#endif  // __arm__
 -
@@ -59,10 +59,10 @@ index 112b6a1b7e0d..000000000000
 -
 -#endif  // mozilla_LinuxSignal_h
 diff --git a/mfbt/moz.build b/mfbt/moz.build
-index 81c4a42ca98d..fb43cc65a045 100644
+index 197048ef901a..aab53563824f 100644
 --- a/mfbt/moz.build
 +++ b/mfbt/moz.build
-@@ -129,10 +129,6 @@ if CONFIG['OS_ARCH'] == 'WINNT':
+@@ -127,10 +127,6 @@ if CONFIG['OS_ARCH'] == 'WINNT':
      EXPORTS.mozilla += [
          'WindowsVersion.h',
      ]
@@ -74,7 +74,7 @@ index 81c4a42ca98d..fb43cc65a045 100644
  UNIFIED_SOURCES += [
      'Assertions.cpp',
 diff --git a/tools/profiler/core/platform-linux-android.cpp b/tools/profiler/core/platform-linux-android.cpp
-index 119ce9f634c1..352dd9a6f8d4 100644
+index a8ae2938dc79..1d7b388b9464 100644
 --- a/tools/profiler/core/platform-linux-android.cpp
 +++ b/tools/profiler/core/platform-linux-android.cpp
 @@ -60,7 +60,6 @@

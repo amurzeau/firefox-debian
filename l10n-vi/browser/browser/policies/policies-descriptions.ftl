@@ -17,13 +17,14 @@ policy-BlockAboutConfig = Chặn truy cập vào trang about:config.
 policy-BlockAboutProfiles = Chặn truy cập vào trang about:profiles.
 policy-BlockAboutSupport = Chặn truy cập vào trang about:support.
 policy-Bookmarks = Tạo trang đánh dấu trong thanh công cụ đánh dấu trang, bảng chọn trang đánh dấu hoặc một thư mục xác định bên trong chúng.
+policy-CaptivePortal = Kích hoạt hoặc vô hiệu hóa hỗ trợ kiểm soát truy cập.
 policy-CertificatesDescription = Thêm chứng chỉ hoặc sử dụng chứng chỉ có sẵn.
 policy-Cookies = Cho phép hoặc từ chối các trang web lưu cookie.
 policy-DisableAppUpdate = Chặn việc cập nhật trình duyệt.
-policy-DisableBuiltinPDFViewer = Vô hiệu PDF.js, trình xem PDF tích hợp trong { -brand-short-name }.
+policy-DisableBuiltinPDFViewer = Vô hiệu hóa PDF.js, trình xem PDF tích hợp trong { -brand-short-name }.
 policy-DisableDeveloperTools = Chặn truy cập đến công cụ dành cho nhà phát triển.
 policy-DisableFeedbackCommands = Tắt các lệnh để gửi phản hồi từ bảng chọn trợ giúp (gửi phản hồi và báo cáo trang web lừa đảo).
-policy-DisableFirefoxAccounts = Vô hiệu { -fxaccount-brand-name } dựa trên các dịch vụ, bao gồm cả Sync.
+policy-DisableFirefoxAccounts = Vô hiệu hóa { -fxaccount-brand-name } dựa trên các dịch vụ, bao gồm cả đồng bộ.
 # Firefox Screenshots is the name of the feature, and should not be translated.
 policy-DisableFirefoxScreenshots = Vô hiệu hóa tính năng Firefox Screenshots.
 policy-DisableFirefoxStudies = Chặn { -brand-short-name } chạy các nghiên cứu.
@@ -31,12 +32,12 @@ policy-DisableForgetButton = Chặn truy cập vào nút Quên.
 policy-DisableFormHistory = Không lưu lịch sử tìm kiếm và biểu mẫu.
 policy-DisableMasterPasswordCreation = Nếu đúng, không thể tạo mật khẩu chính.
 policy-DisablePocket = Tắt tính năng lưu trang web vào Pocket.
-policy-DisablePrivateBrowsing = Vô hiệu hóa Duyệt web riêng tư.
-policy-DisableProfileImport = Vô hiệu hóa lệnh Nhập dữ liệu từ trình duyệt khác trên bảng chọn.
-policy-DisableProfileRefresh = Vô hiệu hóa nút Làm mới { -brand-short-name } trong trang about:support.
-policy-DisableSafeMode = Tắt tính năng này để khởi động lại ở Chế độ an toàn. Lưu ý: phím Shift để vào Chế độ an toàn chỉ có thể tắt trên Windows bằng chính sách nhóm.
+policy-DisablePrivateBrowsing = Vô hiệu hóa duyệt web riêng tư.
+policy-DisableProfileImport = Vô hiệu hóa lệnh nhập dữ liệu từ trình duyệt khác trên bảng chọn.
+policy-DisableProfileRefresh = Vô hiệu hóa nút làm mới { -brand-short-name } trong trang about:support.
+policy-DisableSafeMode = Tắt tính năng này để khởi động lại ở chế độ an toàn. Lưu ý: phím Shift để vào chế độ an toàn chỉ có thể tắt trên Windows bằng Group Policy.
 policy-DisableSecurityBypass = Ngăn người dùng bỏ qua một số cảnh báo bảo mật nhất định.
-policy-DisableSetAsDesktopBackground = Vô hiệu hóa lệnh Đặt nhiều ảnh làm hình nền desktop trong bản chọn.
+policy-DisableSetAsDesktopBackground = Vô hiệu hóa lệnh đặt làm hình nền desktop trong menu.
 policy-DisableSystemAddonUpdate = Ngăn trình duyệt cài đặt và cập nhật tiện ích hệ thống.
 policy-DisableTelemetry = Tắt Telemetry.
 policy-DisplayBookmarksToolbar = Hiển thị mặc định Thanh công cụ Bookmarks.
@@ -49,11 +50,13 @@ policy-EnableTrackingProtection = Kích hoạt hoặc vô hiệu hóa chặn n�
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
 policy-Extensions = Cài đặt, gỡ cài đặt hoặc khóa tiện ích mở rộng. Tùy chọn Cài đặt lấy URL hoặc đường dẫn làm tham số. Các tùy chọn Gỡ cài đặt và Khóa lấy ID tiện ích mở rộng.
+policy-ExtensionUpdate = Bật hoặc tắt cập nhật tiện ích mở rộng tự động.
 policy-FlashPlugin = Cho phép hoặc từ chối việc sử dụng phần bổ trợ Flash.
 policy-HardwareAcceleration = Nếu không đúng, hãy tắt chế độ tăng tốc phần cứng.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Đặt và tùy chọn khóa trang chủ.
-policy-InstallAddonsPermission = Cho phép một số website cài đặt tiện ích.
+policy-InstallAddonsPermission = Cho phép một số trang web cài đặt tiện ích.
+policy-NetworkPrediction = Kích hoạt hoặc vô hiệu hóa dự đoán mạng (tìm nạp trước DNS).
 policy-NoDefaultBookmarks = Vô hiệu hóa việc tạo dấu trang mặc định đi kèm với { -brand-short-name } và dấu trang thông minh (được truy cập nhiều nhất, thẻ gần đây). Lưu ý: chính sách này chỉ có hiệu lực nếu được sử dụng trước lần chạy đầu tiên của hồ sơ.
 policy-OfferToSaveLogins = Thực thi cài đặt để cho phép { -brand-short-name } cung cấp và ghi nhớ thông tin đăng nhập và mật khẩu đã lưu. Cả hai giá trị đúng và sai đều được chấp nhận.
 policy-OverrideFirstRunPage = Ghi đè trang chạy đầu tiên. Bỏ trống chính sách này nếu bạn muốn vô hiệu hóa trang chạy đầu tiên.
@@ -67,5 +70,8 @@ policy-SearchBar = Đặt thanh tìm kiếm ở vị trí mặc định. Ngườ
 policy-SearchEngines = Cấu hình cài đặt công cụ tìm kiếm. Chính sách này chỉ có sẵn trên phiên bản phát hành hỗ trợ mở rộng (ESR).
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Cài đặt các mô-đun PKCS # 11.
+policy-SSLVersionMax = Chỉnh phiên bản SSL tối đa.
+policy-SSLVersionMin = Chỉnh phiên bản SSL tối thiểu.
+policy-SupportMenu = Thêm một mục menu hỗ trợ tùy chỉnh vào menu trợ giúp.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Chặn các trang web không được truy cập. Xem tài liệu để biết thêm chi tiết về định dạng.

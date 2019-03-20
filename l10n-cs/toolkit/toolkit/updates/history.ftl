@@ -19,3 +19,12 @@ state-header = Stav
 #   $buildID (String): build identifier from the local updates.xml
 update-full-name =
     .name = { $name } ({ $buildID })
+# Used to display update history
+#
+# Variables:
+#   $name (String): name of the update
+#   $buildID (String): build identifier from the local updates.xml
+update-full-build-name = { $name } ({ $buildID })
+update-details = Podrobnosti
+update-installed-on = Nainstalováno dne: { $date }
+update-status = Stav: { $status }

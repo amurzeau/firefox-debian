@@ -22,7 +22,7 @@ update-otherInstanceHandlingUpdates = { -brand-short-name } está siendo actuali
 update-manual = Actualización disponible en <label data-l10n-name="manual-link"/>
 update-unsupported = No se pueden realizar más actualizaciones en este sistema. <label data-l10n-name="unsupported-link">Conocer más</label>
 update-restarting = Reiniciando…
-channel-description = Está actualmente en el canal de actualización <label data-l10n-name="current-channel"></label>.{ " " }
+channel-description = Está actualmente en el canal de actualización <label data-l10n-name="current-channel"></label>.
 warningDesc-version = { -brand-short-name } es experimental y puede ser inestable.
 community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label> es una <label data-l10n-name="community-exp-creditsLink">comunidad mundial</label> que trabaja unida para mantener la web abierta, pública y accesible para todos, sin ninguna restricción.
 community-2 = { -brand-short-name } es diseñado por <label data-l10n-name="community-mozillaLink">{ -vendor-short-name }</label>, una <label data-l10n-name="community-creditsLink">comunidad mundial</label> que trabaja unida para mantener la web abierta, pública y accesible para todos, sin ninguna restricción.
@@ -32,3 +32,14 @@ bottomLinks-rights = Derechos de usuario final
 bottomLinks-privacy = Política de privacidad
 aboutDialog-architecture-sixtyFourBit = 64-bits
 aboutDialog-architecture-thirtyTwoBit = 32-bits
+# Example of resulting string: 66.0.1 (64-bit)
+# Variables:
+#   $version (String): version of Firefox, e.g. 66.0.1
+#   $bits (Number): bits of the architecture (32 or 64)
+aboutDialog-version = { $version } ({ $bits }-bit)
+# Example of resulting string: 66.0a1 (2019-01-16) (64-bit)
+# Variables:
+#   $version (String): version of Firefox for Nightly builds, e.g. 66.0a1
+#   $isodate (String): date in ISO format, e.g. 2019-01-16
+#   $bits (Number): bits of the architecture (32 or 64)
+aboutDialog-version-nightly = { $version } ({ $isodate }) ({ $bits }-bit)

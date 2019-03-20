@@ -88,6 +88,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = Av
     .tooltiptext = Ikkje installer oppdateringar automatisk
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Køyr i privat vindauge
+detail-private-browsing-description = Utvidingar vil fungere i private vindauge, og få tilgang til aktivitetane dine på nettet. <label data-l10n-name="detail-private-browsing-learn-more">Les meir</label>
+detail-private-browsing-on =
+    .label = Tillat
+    .tooltiptext = Tillat i privat nettlesing
+detail-private-browsing-off =
+    .label = Tillat ikkje
+    .tooltiptext = Tillat ikkje i privat nettlesing
 detail-home =
     .label = Heimeside
 detail-home-value =
@@ -130,6 +139,12 @@ legacy-warning-show-legacy = Vis forelda utvidingar
 legacy-extensions =
     .value = Forelda utvidingar
 legacy-extensions-description = Desse utvidingane oppfyller ikkje gjeldande standardar i { -brand-short-name } og er difor slått av. <label data-l10n-name="legacy-learn-more">Les meir om endringar av tillegg</label>
+private-browsing-description2 =
+    { -brand-short-name } endar korleis utvidingar fungerer i privat nettlesingsmodus. Eventuelle nye utvidingar du legg til i
+    { -brand-short-name } vert ikkje køyrt som standard i private vindauge, med mindre du tillèt det i innstillingane.
+    Utvidinga vil ikkje fungere under privat nettlesing, og vil ikkje ha tilgang til aktivitetane dine på nettet.
+    Vi har gjort denne endringa for å halde privat nettlesing privat.
+    <label data-l10n-name="private-browsing-learn-more">Les om korleis du administrerer utvidingsinnstillingar.</label>
 extensions-view-discover =
     .name = Last ned tillegg
     .tooltiptext = { extensions-view-discover.name }
@@ -207,3 +222,37 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Installer oppdateringane
     .tooltiptext = Installer tilgjengelege oppdateringar i denne lista
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Handter snarvegar for tillegg
+    .accesskey = H
+shortcuts-empty-message = Det er ingen snarvegar for denne utvidinga.
+shortcuts-no-addons = Du har ingen utvidinga aktiverte.
+shortcuts-no-commands = Følgjande utvidingar har ikkje snarvegar:
+shortcuts-input =
+    .placeholder = Skriv inn ein snarveg
+shortcuts-browserAction = Aktiver utviding
+shortcuts-pageAction = Aktiver sidehandling
+shortcuts-sidebarAction = Vis/skjul sidepanelet
+shortcuts-modifier-mac = Inkluder Ctrl, Alt eller ⌘
+shortcuts-modifier-other = Inkluder Ctrl eller Alt
+shortcuts-invalid = Ugyldig kombinasjon
+shortcuts-letter = Skriv ein bokstav
+shortcuts-system = Kan ikkje overskrive ein { -brand-short-name }-snarveg
+shortcuts-card-expand-button =
+    { $numberToShow ->
+       *[other] Vis { $numberToShow } fleire
+    }
+shortcuts-card-collapse-button = Vis mindre
+go-back-button =
+    .tooltiptext = Gå tilbake
+
+## Add-on actions
+
+remove-addon-button = Fjern
+disable-addon-button = Slå av
+enable-addon-button = Slå på
+addons-enabled-heading = Påslått
+addons-disabled-heading = Avslått

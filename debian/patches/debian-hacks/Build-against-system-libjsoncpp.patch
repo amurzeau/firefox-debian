@@ -9,12 +9,12 @@ Subject: Build against system libjsoncpp
  3 files changed, 6 insertions(+), 49 deletions(-)
 
 diff --git a/config/system-headers.mozbuild b/config/system-headers.mozbuild
-index b257e6f8e378..b451255919ee 100644
+index 0c5519849da4..f430c806b2b1 100644
 --- a/config/system-headers.mozbuild
 +++ b/config/system-headers.mozbuild
-@@ -1367,3 +1367,7 @@ if CONFIG['MOZ_LIB_SECRET']:
-         'libsecret/secret-value.h',
-         'libsecret/secret-service.h',
+@@ -1350,3 +1350,7 @@ if CONFIG['MOZ_WAYLAND']:
+         'wayland-egl.h',
+         'wayland-util.h',
      ]
 +
 +system_headers += [

@@ -19,3 +19,12 @@ state-header = Tila
 #   $buildID (String): build identifier from the local updates.xml
 update-full-name =
     .name = { $name } ({ $buildID })
+# Used to display update history
+#
+# Variables:
+#   $name (String): name of the update
+#   $buildID (String): build identifier from the local updates.xml
+update-full-build-name = { $name } ({ $buildID })
+update-details = Lisätietoja
+update-installed-on = Asennusaika: { $date }
+update-status = Tila: { $status }

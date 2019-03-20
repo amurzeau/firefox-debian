@@ -9,7 +9,7 @@ update-checkForUpdatesButton =
     .label = Nadi ileqman
     .accesskey = N
 update-updateButton =
-    .label = Sker i tikelt-nniḍen akken ad tleqqmeḍ{ -brand-shorter-name }
+    .label = Sker i tikkelt-nniḍen akken ad tleqqmeḍ{ -brand-shorter-name }
     .accesskey = R
 update-checkingForUpdates = Muqel ma yella lqem amaynut...
 update-downloading = <img data-l10n-name="icon"/>Asider n lqem—  <label data-l10n-name="download-status"/>
@@ -32,3 +32,14 @@ bottomLinks-rights = Izerfan n useqdac
 bottomLinks-privacy = Tasertit n tbaḍnit
 aboutDialog-architecture-sixtyFourBit = 64-ibiten
 aboutDialog-architecture-thirtyTwoBit = 32-ibiten
+# Example of resulting string: 66.0.1 (64-bit)
+# Variables:
+#   $version (String): version of Firefox, e.g. 66.0.1
+#   $bits (Number): bits of the architecture (32 or 64)
+aboutDialog-version = { $version } ({ $bits }-ibiten)
+# Example of resulting string: 66.0a1 (2019-01-16) (64-bit)
+# Variables:
+#   $version (String): version of Firefox for Nightly builds, e.g. 66.0a1
+#   $isodate (String): date in ISO format, e.g. 2019-01-16
+#   $bits (Number): bits of the architecture (32 or 64)
+aboutDialog-version-nightly = { $version } ({ $isodate })({ $bits }-ibiten)

@@ -17,6 +17,8 @@ extensions-id = ID
 security-software-title = ซอฟต์แวร์ความปลอดภัย
 security-software-type = ชนิด
 security-software-name = ชื่อ
+security-software-antivirus = ป้องกันไวรัส
+security-software-antispyware = ป้องกันสปายแวร์
 security-software-firewall = ไฟร์วอลล์
 features-title = คุณลักษณะของ { -brand-short-name }
 features-name = ชื่อ
@@ -78,6 +80,7 @@ copy-text-to-clipboard-label = คัดลอกข้อความไปย�
 copy-raw-data-to-clipboard-label = คัดลอกข้อมูลดิบไปยังคลิปบอร์ด
 sandbox-title = กระบะทราย
 sandbox-sys-call-index = #
+sandbox-sys-call-age = วินาทีที่แล้ว
 sandbox-sys-call-pid = PID
 sandbox-sys-call-tid = TID
 sandbox-sys-call-proc-type = ชนิดโปรเซส
@@ -92,6 +95,7 @@ media-device-state = สถานะ
 media-device-rate = อัตรา
 media-device-latency = เวลาแฝง
 intl-app-title = การตั้งค่าแอปพลิเคชัน
+intl-locales-requested = ภาษาที่ขอ
 intl-locales-available = ภาษาที่มี
 intl-locales-supported = ภาษาของแอป
 intl-locales-default = ภาษาเริ่มต้น
@@ -100,7 +104,7 @@ intl-os-prefs-system-locales = ภาษาของระบบ
 intl-regional-prefs = ค่ากำหนดภูมิภาค
 # Variables
 # $days (Integer) - Number of days of crashes to log
-report-crash-for-days = รายงานข้อขัดข้องของ { $days } วันล่าสุด
+report-crash-for-days = รายงานข้อขัดข้องของ { $days } วันที่ผ่านมา
 # Variables
 # $minutes (integer) - Number of minutes since crash
 crashes-time-minutes = { $minutes } นาทีที่แล้ว

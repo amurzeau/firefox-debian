@@ -11,6 +11,7 @@
 <!ENTITY returnToPreviousPage1.label "Quay lại (Khuyến nghị)">
 <!ENTITY advanced.label "Nâng cao">
 <!ENTITY continue2.label "Thêm…">
+<!ENTITY advanced2.label "Nâng cao…">
 <!ENTITY moreInformation.label "Thông tin Chi tiết">
 <!ENTITY viewCertificate.label "Xem chứng chỉ">
 
@@ -128,7 +129,7 @@ was trying to connect. -->
 <!ENTITY corruptedContentErrorv2.longDesc "<p>Không thể hiển thị được trang mà bạn muốn xem vì có lỗi trong truyền tải dữ liệu.</p><ul><li>Vui lòng liên hệ chủ trang web để báo họ về vấn đề này.</li></ul>">
 
 
-<!ENTITY securityOverride.exceptionButtonLabel "Thêm ngoại Lệ…">
+<!ENTITY securityOverride.exceptionButtonLabel "Thêm ngoại lệ…">
 <!ENTITY securityOverride.exceptionButton1Label "Chấp nhận rủi ro và tiếp tục">
 
 <!ENTITY errorReporting.automatic2 "Báo cáo những lỗi như thế này để giúp Mozilla nhận diện và chặn những trang độc hại">
@@ -153,7 +154,7 @@ was trying to connect. -->
 <!ENTITY certerror.sts.pagetitle  "Không kết nối: Sự cố bảo mật tiềm ẩn">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Trang này dùng HTTP Strict Transport Security (HSTS) để chỉ định &brandShortName; chỉ được kết nối với nó một cách bảo mật. Cho nên, không khả thi để thêm ngoại lệ cho chứng chỉ này.">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'></span> có chính sách bảo mật được gọi là HTTP Strict Transport Security (HSTS), có nghĩa là &brandShortName; chỉ có thể kết nối với nó một cách an toàn. Bạn không thể thêm ngoại lệ để truy cập trang web này.">
-<!ENTITY certerror.copyToClipboard.label "Chép văn bản vào bảng ghi tạm">
+<!ENTITY certerror.copyToClipboard.label "Sao chép văn bản vào clipboard">
 
 <!ENTITY inadequateSecurityError.title "Kết nối của bạn không an toàn">
 <!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate

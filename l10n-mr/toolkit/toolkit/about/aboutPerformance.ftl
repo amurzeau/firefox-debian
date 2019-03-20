@@ -9,6 +9,8 @@ about-performance-title = कार्य व्यवस्थापक
 
 column-name = नाव
 column-type = प्रकार
+column-energy-impact = ऊर्जा प्रभाव
+column-memory = मेमरी
 
 ## Special values for the Name column
 
@@ -32,7 +34,18 @@ energy-impact-high = उच्च ({ $value })
 energy-impact-medium = मध्यम ({ $value })
 energy-impact-low = कमी ({ $value })
 
+## Values for the Memory column
+##
+## Variables:
+##   $value (Number) - How much memory is used
+
+size-KB = { $value } KB
+size-MB = { $value } MB
+size-GB = { $value } GB
+
 ## Tooltips for the action buttons
 
 close-tab =
     .title = टॅब बंद करा
+show-addon =
+    .title = अॅड-ऑन व्यवस्थापक मध्ये दर्शवा

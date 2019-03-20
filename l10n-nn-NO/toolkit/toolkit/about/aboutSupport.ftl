@@ -44,6 +44,7 @@ app-basics-memory-use = Minnebruk
 app-basics-performance = Yting
 app-basics-service-workers = Registrerte tenestearbeidarar
 app-basics-profiles = Profilar
+app-basics-launcher-process-status = Oppstartsprosess
 app-basics-multi-process-support = Multiprosess-vindauge
 app-basics-process-count = Nettinnhaldsprosessar
 app-basics-enterprise-policies = Bedriftspolitikk
@@ -222,6 +223,7 @@ uses-tiling = Brukar Tiling
 content-uses-tiling = Brukar Tiling (innhald)
 off-main-thread-paint-enabled = Oppteikning utanfor hovudtråd aktivert
 off-main-thread-paint-worker-count = Opptegning utanfor hovudtråd worker-mengde
+low-end-machine = Oppdaga ei maskin med låg yting
 target-frame-rate = Målrammefart
 audio-backend = Lydgrensesnitt
 max-audio-channels = Maks kanalar
@@ -240,6 +242,11 @@ effective-content-sandbox-level = Effektiv sandbox-nivå for innhaldsprosess
 sandbox-proc-type-content = innhald
 sandbox-proc-type-file = filinnhald
 sandbox-proc-type-media-plugin = programtillegg for media
+sandbox-proc-type-data-decoder = datadekodar
+launcher-process-status-0 = Påslått
+launcher-process-status-1 = Deaktivert på grunn av feil
+launcher-process-status-2 = Tvungen deaktivering
+launcher-process-status-unknown = Ukjend status
 # Variables
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows

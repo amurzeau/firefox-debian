@@ -207,3 +207,29 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Yeniləmələri quraşdır
     .tooltiptext = Bu siyahıdakı yeniləmələri quraşdır
+
+## Extension shortcut management
+
+shortcuts-empty-message = Bu uzantı üçün qısayol yoxdur.
+shortcuts-no-addons = Aktiv uzantınız yoxdur.
+shortcuts-input =
+    .placeholder = Qısayol yazın
+shortcuts-browserAction = Uzantını aktivləşdir
+shortcuts-pageAction = Səhifə əməliyyatını aktivləşdir
+shortcuts-sidebarAction = Yan Paneli Aç/Qapat
+shortcuts-modifier-mac = Ctrl, Alt və ya ⌘ istifadə edin
+shortcuts-modifier-other = Ctrl və ya Alt istifadə edin
+shortcuts-invalid = Səhv kombinasiya
+shortcuts-letter = Hərf yazın
+shortcuts-system = { -brand-short-name } qısayolu dəyişdirilə bilməz
+shortcuts-card-collapse-button = Daha az göstər
+go-back-button =
+    .tooltiptext = Geri get
+
+## Add-on actions
+
+remove-addon-button = Sil
+disable-addon-button = Söndür
+enable-addon-button = Aktiv et
+addons-enabled-heading = Aktivdir
+addons-disabled-heading = Söndürülüb

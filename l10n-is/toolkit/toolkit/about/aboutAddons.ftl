@@ -88,6 +88,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = Óvirkt
     .tooltiptext = Ekki setja sjálfvirkt inn uppfærslur
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Keyra í huliðsgluggum
+detail-private-browsing-description = Viðbótin mun virka í huliðsgluggum og hafa aðgang að netvirkni þar. <label data-l10n-name="detail-private-browsing-learn-more">Fræðast meira</label>.
+detail-private-browsing-on =
+    .label = Heimila
+    .tooltiptext = Heimila í huliðsvöfrun
+detail-private-browsing-off =
+    .label = Ekki heimila
+    .tooltiptext = Ekki heimila í huliðsvöfrun
 detail-home =
     .label = Heimasíða
 detail-home-value =
@@ -207,3 +216,32 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Setja inn uppfærslur
     .tooltiptext = Setja inn allar uppfærslur í þessum lista
+
+## Extension shortcut management
+
+shortcuts-input =
+    .placeholder = Slá inn flýtilykil
+shortcuts-browserAction = Virkja viðbót
+shortcuts-pageAction = Virkja síðuaðgerð
+shortcuts-sidebarAction = Víxla hliðarslá
+shortcuts-modifier-mac = Hafa með Ctrl, Alt eða ⌘
+shortcuts-modifier-other = Hafa með Ctrl eða Alt
+shortcuts-invalid = Ógild samsetning
+shortcuts-letter = Slá inn bókstaf
+shortcuts-system = Ekki hægt að breyta { -brand-short-name }-flýtilykli
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] Sýna { $numberToShow } í viðbót
+       *[other] Sýna { $numberToShow } í viðbót
+    }
+shortcuts-card-collapse-button = Sýna minna
+go-back-button =
+    .tooltiptext = Til baka
+
+## Add-on actions
+
+remove-addon-button = Fjarlægja
+disable-addon-button = Óvirkja
+enable-addon-button = Virkja
+addons-enabled-heading = Virkjað
+addons-disabled-heading = Óvirkt

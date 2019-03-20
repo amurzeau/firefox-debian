@@ -212,3 +212,29 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Εγκατάσταση ενημερώσεων
     .tooltiptext = Εγκατάσταση των διαθέσιμων ενημερώσεων σε αυτή τη λίστα
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Διαχείριση συντομεύσεων επέκτασης
+    .accesskey = σ
+shortcuts-empty-message = Δεν υπάρχουν συντομεύσεις για αυτή την επέκταση.
+shortcuts-no-addons = Δεν έχετε ενεργοποιήσει καμία επέκταση.
+shortcuts-input =
+    .placeholder = Πληκτρολογήστε μια συντόμευση
+shortcuts-browserAction = Ενεργοποίηση επέκτασης
+shortcuts-pageAction = Ενεργοποίηση ενέργειας σελίδας
+shortcuts-modifier-mac = Συμπεριλάβετε Ctrl, Alt, ή ⌘
+shortcuts-modifier-other = Συμπεριλάβετε Ctrl ή Alt
+shortcuts-invalid = Άκυρος συνδυασμός
+shortcuts-letter = Πληκτρολογήστε ένα γράμμα
+go-back-button =
+    .tooltiptext = Επιστροφή
+
+## Add-on actions
+
+remove-addon-button = Αφαίρεση
+disable-addon-button = Απενεργοποίηση
+enable-addon-button = Ενεργοποίηση
+addons-enabled-heading = Ενεργό
+addons-disabled-heading = Ανενεργό

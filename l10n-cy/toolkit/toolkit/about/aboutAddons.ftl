@@ -70,7 +70,7 @@ cmd-contribute =
     .accesskey = C
     .tooltiptext = Cyfrannu i ddatblygiad yr ychwanegyn
 discover-title = Beth yw Ychwanegion?
-discover-description = Mae Ychwanegion yn raglenni sy'n caniatáu i chi bersenoleiddio { -brand-short-name } gyda swyddogaethau neu steil ychwanegol. Defnyddiwch y bar ochr, hysbysydd tywydd, neu thema i'ch gwneud yn gysurus gyda { -brand-short-name }.
+discover-description = Mae Ychwanegion yn raglenni sy'n caniatáu i chi bersonoleiddio { -brand-short-name } gyda swyddogaethau neu steil ychwanegol. Defnyddiwch y bar ochr, hysbysydd tywydd, neu thema i'ch gwneud yn gysurus gyda { -brand-short-name }.
 discover-footer = Pan fyddwch wedi cysylltu â'r rhyngrwyd, bydd y paen yn cynnwys rhai o'r ychwanegion gorau a mwyaf poblogaidd i chi eu dewis.
 detail-version =
     .label = Fersiwn
@@ -88,6 +88,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = Diffodd
     .tooltiptext = Peidio gosod diweddariadau'n awtomatig
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Rhedeg mewn Ffenestri Preifat
+detail-private-browsing-description = Bydd yr estyniad yn gweithio mewn Ffenestri Preifat, ac yn cael mynediad i'ch gweithgareddau ar-lein. <label data-l10n-name="detail-private-browsing-learn-more"> Dysgu rhagor</label>
+detail-private-browsing-on =
+    .label = Caniatáu
+    .tooltiptext = Caniatáu wrth Bori Preifat
+detail-private-browsing-off =
+    .label = Peidio Caniatâu
+    .tooltiptext = Analluogi mewn Pori Preifat
 detail-home =
     .label = Tudalen Cartref
 detail-home-value =
@@ -130,6 +139,9 @@ legacy-warning-show-legacy = Dangos hen estyniadau
 legacy-extensions =
     .value = Hen Estyniadau
 legacy-extensions-description = Nid yw'r estyniadau hyn yn cyrraedd safonau cyfredol { -brand-short-name } ac mae nhw wedi cael eu diffodd. <label data-l10n-name="legacy-learn-more">Dysgu am y newidiadau i ychwanegion</label>
+private-browsing-description2 =
+    Mae { -brand-short-name } yn newid sut mae estyniadau'n gweithio o fewn pori preifat. Ni fydd unrhyw estyniadau newydd y byddwch chi'n eu hychwanegu at { -brand-short-name } yn rhedeg yn ragosodedig o fewn Ffenestri Prefat. Oni bai eich bod yn ei ganiatáu yn y gosodiadau, ni fydd estyniad yn gweithio wrth bori'n preifat, ac ni chaiff fynediad at eich gweithgareddau ar-lein yno. Rydym wedi gwneud y newid hwn i gadw eich pori preifat yn breifat.
+    <label data-l10n-name="private-browsing-learn-more">Dysgu sut i reoli gosodiadau estyniad.</label>
 extensions-view-discover =
     .name = Estyn Ychwanegion
     .tooltiptext = { extensions-view-discover.name }
@@ -207,3 +219,42 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Gosod Diweddariadau
     .tooltiptext = Gosod diweddariadau sydd ar gael o'r rhestr
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Rheoli Estyniad Llwybrau Byr
+    .accesskey = R
+shortcuts-empty-message = Nid oes llwybrau byr ar gyfer yr estyniad hwn.
+shortcuts-no-addons = Nid oes gennych unrhyw estyniadau wedi'u galluogi.
+shortcuts-no-commands = Nid oes gan yr estyniadau canlynol lwybrau byr:
+shortcuts-input =
+    .placeholder = Teipiwch llwybr byr
+shortcuts-browserAction = Cychwyn estyniad
+shortcuts-pageAction = Cychwyn gweithred tudalen
+shortcuts-sidebarAction = Toglo'r bar ochr
+shortcuts-modifier-mac = Cynnwys Ctrl, Alt, neu ⌘
+shortcuts-modifier-other = Cynnwys Ctrl neu Alt
+shortcuts-invalid = Cyfuniad annilys
+shortcuts-letter = Teipiwch lythyr
+shortcuts-system = Methu anwybyddu llwybr byr { -brand-short-name }
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [zero] Dangos { $numberToShow } yn Rhagor
+        [one] Dangos { $numberToShow } yn Rhagor
+        [two] Dangos { $numberToShow } yn Rhagor
+        [few] Dangos { $numberToShow } yn Rhagor
+        [many] Dangos { $numberToShow } yn Rhagor
+       *[other] Dangos { $numberToShow } yn Rhagor
+    }
+shortcuts-card-collapse-button = Dangos Llai
+go-back-button =
+    .tooltiptext = Mynd nôl
+
+## Add-on actions
+
+remove-addon-button = Tynnu
+disable-addon-button = Analluogu
+enable-addon-button = Galluogi
+addons-enabled-heading = Galluogwyd
+addons-disabled-heading = Analluogwyd

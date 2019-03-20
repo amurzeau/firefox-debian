@@ -19,3 +19,12 @@ state-header = Tekotee
 #   $buildID (String): build identifier from the local updates.xml
 update-full-name =
     .name = { $name } ({ $buildID })
+# Used to display update history
+#
+# Variables:
+#   $name (String): name of the update
+#   $buildID (String): build identifier from the local updates.xml
+update-full-build-name = { $name } ({ $buildID })
+update-details = Mba'emimi
+update-installed-on = Oñemohendapyréva amo: { $date }
+update-status = Tekotee: { $status }

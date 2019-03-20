@@ -88,6 +88,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = Отключено
     .tooltiptext = Не устанавливать обновления автоматически
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Запуск в приватных окнах
+detail-private-browsing-description = Расширение будет работать в Приватных окнах и иметь доступ к вашей активности в Интернете. <label data-l10n-name="detail-private-browsing-learn-more">Подробнее</label>
+detail-private-browsing-on =
+    .label = Разрешить
+    .tooltiptext = Включать при приватном просмотре
+detail-private-browsing-off =
+    .label = Не разрешать
+    .tooltiptext = Отключать при приватном просмотре
 detail-home =
     .label = Домашняя страница
 detail-home-value =
@@ -130,6 +139,12 @@ legacy-warning-show-legacy = Показать устаревшие расшир�
 legacy-extensions =
     .value = Устаревшие расширения
 legacy-extensions-description = Эти расширения не соответствуют текущим стандартам { -brand-short-name }, поэтому они были отключены. <label data-l10n-name="legacy-learn-more">Узнайте об изменениях в дополнениях</label>
+private-browsing-description2 =
+    { -brand-short-name } изменяет работу расширений в приватном режиме. Любые новые расширения, которые вы добавите в
+    { -brand-short-name }, не будут запускаться по умолчанию в приватных окнах. Если вы не разрешите этого в настройках,
+    расширение не будет работать во время приватного просмотра и не будет иметь доступа к вашей активности в Интернете.
+    Мы внесли это изменение, чтобы сделать ваш приватный просмотр по-настоящему приватным.
+    <label data-l10n-name="private-browsing-learn-more">Узнайте, как управлять настройками расширений.</label>
 extensions-view-discover =
     .name = Загрузить дополнения
     .tooltiptext = { extensions-view-discover.name }
@@ -207,3 +222,39 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Установить обновления
     .tooltiptext = Установить доступные обновления из этого списка
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Управление горячими клавишами расширений
+    .accesskey = п
+shortcuts-empty-message = У этого расширения нет горячих клавиш.
+shortcuts-no-addons = У вас не включено ни одного расширения.
+shortcuts-no-commands = У следующих расширений нет горячих клавиш:
+shortcuts-input =
+    .placeholder = Введите горячую клавишу
+shortcuts-browserAction = Активировать расширение
+shortcuts-pageAction = Активировать действие на странице
+shortcuts-sidebarAction = Показать/скрыть боковую панель
+shortcuts-modifier-mac = Добавьте Ctrl, Alt или ⌘
+shortcuts-modifier-other = Добавьте Ctrl или Alt
+shortcuts-invalid = Неверная комбинация
+shortcuts-letter = Введите букву
+shortcuts-system = Нельзя переопределить горячую клавишу { -brand-short-name }
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] Показать ещё { $numberToShow }
+        [few] Показать ещё { $numberToShow }
+       *[other] Показать ещё { $numberToShow }
+    }
+shortcuts-card-collapse-button = Показать меньше
+go-back-button =
+    .tooltiptext = Вернуться назад
+
+## Add-on actions
+
+remove-addon-button = Удалить
+disable-addon-button = Отключить
+enable-addon-button = Включить
+addons-enabled-heading = Включено
+addons-disabled-heading = Отключено

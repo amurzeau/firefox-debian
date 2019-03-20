@@ -88,6 +88,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = 중단
     .tooltiptext = 업데이트 자동 설치 중단
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = 사생활 보호 모드에서 실행
+detail-private-browsing-description = 확장 기능이 사생활 보호 모드에서 작동하며 사용자의 온라인 활동에 접근할 수 있습니다. <label data-l10n-name="detail-private-browsing-learn-more">더 알아보기</label>
+detail-private-browsing-on =
+    .label = 허용
+    .tooltiptext = 사생활 보호 모드에서 사용
+detail-private-browsing-off =
+    .label = 허용하지 않음
+    .tooltiptext = 사생활 보호 모드에서 사용 안 함
 detail-home =
     .label = 홈페이지
 detail-home-value =
@@ -130,11 +139,16 @@ legacy-warning-show-legacy = 오래된 확장 기능 보기
 legacy-extensions =
     .value = 오래된 확장 기능
 legacy-extensions-description = 이 확장 기능들은 현재 { -brand-short-name } 표준에 맞지 않으므로 비활성화되었습니다. <label data-l10n-name="legacy-learn-more">부가 기능의 변경 내용 알아보기</label>
+private-browsing-description2 =
+    { -brand-short-name }가 사생활 보호 모드에서 확장 기능이 작동하는 방식을 바꾸고 있습니다.
+    { -brand-short-name }에 추가되는 모든 새 확장 기능은 기본적으로 사생활 보호 모드에서 실행되지 않습니다. 만약 사용자가 설정에서 허용하지 않는다면, 확장 기능은 사생활 보호 모드에서 작동하지 않으며, 사용자 온라인 활동에 접근할 수 없습니다.
+    사용자의 사생활 보호 모드를 비공개로 유지 하기 위해 이렇게 변경 했습니다.
+    <label data-l10n-name="private-browsing-learn-more">확장 기능 설정 관리 방법 알아보기</label>
 extensions-view-discover =
     .name = 추천
     .tooltiptext = { extensions-view-discover.name }
 extensions-view-recent-updates =
-    .name = 최근 항목 보기
+    .name = 최근 업데이트
     .tooltiptext = { extensions-view-recent-updates.name }
 extensions-view-available-updates =
     .name = 업데이트 가능 항목
@@ -167,7 +181,7 @@ extensions-updates-check-for-updates =
     .label = 업데이트 확인하기
     .accesskey = C
 extensions-updates-view-updates =
-    .label = 최신 업데이트 보기
+    .label = 최근 업데이트 보기
     .accesskey = V
 
 # This menu item is a checkbox that toggles the default global behavior for
@@ -207,3 +221,37 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = 업데이트 설치
     .tooltiptext = 현재 목록 내 업데이트 설치하기
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = 확장기능 단축키 관리
+    .accesskey = S
+shortcuts-empty-message = 이 확장기능에는 단축키가 없습니다.
+shortcuts-no-addons = 활성화된 확장기능이 없습니다.
+shortcuts-no-commands = 다음 확장기능에는 단축키가 없습니다:
+shortcuts-input =
+    .placeholder = 단축키 입력
+shortcuts-browserAction = 확장기능 활성화
+shortcuts-pageAction = 페이지 동작 활성화
+shortcuts-sidebarAction = 사이드바 열고 닫기
+shortcuts-modifier-mac = Ctrl, Alt 또는 ⌘ 포함
+shortcuts-modifier-other = Ctrl 또는 Alt 포함
+shortcuts-invalid = 잘못된 조합
+shortcuts-letter = 문자 입력
+shortcuts-system = { -brand-short-name } 단축키를 재정의 할 수 없음
+shortcuts-card-expand-button =
+    { $numberToShow ->
+       *[other] { $numberToShow }개 더 보기
+    }
+shortcuts-card-collapse-button = 간략히 보기
+go-back-button =
+    .tooltiptext = 뒤로 가기
+
+## Add-on actions
+
+remove-addon-button = 삭제
+disable-addon-button = 비활성화
+enable-addon-button = 활성화
+addons-enabled-heading = 활성화 됨
+addons-disabled-heading = 비활성화 됨

@@ -88,6 +88,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = Wupinjeny
     .tooltiptext = Aktualizacije awtomatisce njeinstalować
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = W priwatnych woknach wuwjesć
+detail-private-browsing-description = Rozšěrjenje budźe w priwatnych woknach fungować a změje přistup na waše aktiwity online. <label data-l10n-name="detail-private-browsing-learn-more">Dalše informacije</label>
+detail-private-browsing-on =
+    .label = Dowolić
+    .tooltiptext = W priwatnym modusu zmóžnić
+detail-private-browsing-off =
+    .label = Njedowolić
+    .tooltiptext = W priwatnym modusu znjemóžnić
 detail-home =
     .label = Startowa strona
 detail-home-value =
@@ -130,6 +139,11 @@ legacy-warning-show-legacy = Zestarjene rozšěrjenja pokazać
 legacy-extensions =
     .value = Zestarjene rozšěrjenja
 legacy-extensions-description = Tute rozšěrjenja su so znjemóžnili, dokelž standardam { -brand-short-name } njewotpowěduja. <label data-l10n-name="legacy-learn-more">Dalše informacije wo změnach tutych přidatkow</label>
+private-browsing-description2 =
+    { -brand-short-name } měnja, kak rozšěrjenja w priwatnym modusu funguja. Now rozšěrjenja, kotrež
+    { -brand-short-name } přidawaće, po standardźe w priwatnych woknach njefunguja. Chibazo
+    dowoleće to w nastajenjach, rozšěrjenje w priwatnym modusu njefunguje a nima přistup na waše
+    aktiwity online. Smy tutu změnu sčinili, zo by waš priwatny modus priwatny wóstał. <label data-l10n-name="private-browsing-learn-more">Zhońće wjace wo rjadowanju nastajenjow rozšěrjenja.</label>
 extensions-view-discover =
     .name = Přidatki wobstarać
     .tooltiptext = { extensions-view-discover.name }
@@ -207,3 +221,40 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Aktualizacije instalować
     .tooltiptext = K dispoziciji stejace aktualizacije z lisćiny instalować
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Tastowe skrótšenki rozšěrjenjow rjadować
+    .accesskey = T
+shortcuts-empty-message = Tastowe skrótšenki za tute rozšěrjenje njejsu.
+shortcuts-no-addons = Njejśce žane rozšěrjenja zmóžnił.
+shortcuts-no-commands = Slědowace rozšěrjenja tastowe skrótšenki nimaja:
+shortcuts-input =
+    .placeholder = Zapodajće tastowu skrótšenku
+shortcuts-browserAction = Rozšěrjenje aktiwizować
+shortcuts-pageAction = Akciju strony aktiwizować
+shortcuts-sidebarAction = Bóčnicu přepinać
+shortcuts-modifier-mac = Strg, Alt abo ⌘ zapřijeć
+shortcuts-modifier-other = Strg abo Alt zapřijeć
+shortcuts-invalid = Njepłaćiwa kombinacija
+shortcuts-letter = Zapodajće pismik
+shortcuts-system = Tastowa skrótšenka { -brand-short-name } njeda so přepisać
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] { $numberToShow } dalši pokazać
+        [two] { $numberToShow } dalšej pokazać
+        [few] { $numberToShow } dalše pokazać
+       *[other] { $numberToShow } dalšich pokazać
+    }
+shortcuts-card-collapse-button = Mjenje pokazać
+go-back-button =
+    .tooltiptext = Wróćo hić
+
+## Add-on actions
+
+remove-addon-button = Wotstronić
+disable-addon-button = Znjemóžnić
+enable-addon-button = Zmóžnić
+addons-enabled-heading = Zmóžnjeny
+addons-disabled-heading = Znjemóžnjeny

@@ -16,8 +16,6 @@
 <!ENTITY duplicateTab.accesskey "u">
 <!ENTITY duplicateTabs.label "Duplica schede">
 <!ENTITY duplicateTabs.accesskey "u">
-<!ENTITY closeTabOptions.label "Opzioni chiusura scheda">
-<!ENTITY closeTabOptions.accesskey "O">
 <!ENTITY closeTabsToTheEnd.label "Chiudi le schede a destra">
 <!ENTITY closeTabsToTheEnd.accesskey "d">
 <!ENTITY closeOtherTabs.label "Chiudi le altre schede">
@@ -75,6 +73,8 @@
 <!ENTITY printCmd.label "Stampa…">
 <!ENTITY printCmd.accesskey "m">
 <!ENTITY printCmd.commandkey "p">
+<!ENTITY importFromAnotherBrowserCmd.label "Importa da un altro browser…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "b">
 <!ENTITY taskManagerCmd.label "Gestione attività">
 <!ENTITY goOfflineCmd.label "Lavora non in linea">
 <!ENTITY goOfflineCmd.accesskey "L">
@@ -597,6 +597,7 @@
 <!ENTITY identity.permissionsEmpty "Nessun permesso speciale associato a questo sito.">
 <!ENTITY identity.permissionsReloadHint "Potrebbe essere necessario ricaricare la pagina per rendere effettive le modifiche.">
 <!ENTITY identity.permissionsPreferences.tooltip "Apri preferenze per i permessi">
+<!ENTITY identity.contentBlockingPreferences.tooltip "Apri preferenze per il blocco contenuti">
 <!ENTITY tabsToolbar.label "Schede del browser">
 <!ENTITY syncTabsMenu3.label "Schede sincronizzate">
 <!ENTITY syncedTabs.sidebar.label "Schede sincronizzate">
@@ -669,29 +670,17 @@
 <!ENTITY contentBlocking.title "Blocco contenuti">
 <!ENTITY contentBlocking.detected "Rilevati contenuti bloccabili in questo sito.">
 <!ENTITY contentBlocking.notDetected "Nessun contenuto bloccabile in questo sito.">
-<!ENTITY contentBlocking.disabled.label "Disattivato">
-<!ENTITY contentBlocking.disabled.tooltip "Il blocco dei contenuti è stato disattivato.">
-<!ENTITY contentBlocking.exception.tooltip "Il blocco dei contenuti è stato disattivato per questo sito.">
-<!ENTITY contentBlocking.fastBlock.label "Elementi traccianti lenti">
-<!ENTITY contentBlocking.fastBlock.blocked.label "Bloccati">
-<!ENTITY contentBlocking.fastBlock.blocking.label "Bloccati">
-<!ENTITY contentBlocking.fastBlock.add.label "Attiva blocco…">
-<!ENTITY contentBlocking.trackingProtection2.label "Tutti gli elementi traccianti rilevati">
 <!ENTITY contentBlocking.trackingProtection3.label "Elementi traccianti">
-<!ENTITY contentBlocking.trackingProtection.blocked.label "Bloccati">
-<!ENTITY contentBlocking.trackingProtection.blocking.label "Bloccati">
-<!ENTITY contentBlocking.trackingProtection.add.label "Attiva blocco…">
-<!ENTITY contentBlocking.3rdPartyCookies.label "Cookie di terze parti">
-<!ENTITY contentBlocking.3rdPartyCookies.trackers.label "Cookie traccianti">
-<!ENTITY contentBlocking.3rdPartyCookies.blocked.label "Bloccati">
-<!ENTITY contentBlocking.3rdPartyCookies.blocking.label "Bloccati">
-<!ENTITY contentBlocking.3rdPartyCookies.add.label "Attiva blocco…">
 <!ENTITY contentBlocking.manageSettings.label "Gestisci blocco contenuti">
 <!ENTITY contentBlocking.manageSettings.accesskey "G">
 <!ENTITY contentBlocking.trackersView.label "Elementi traccianti">
 <!ENTITY contentBlocking.trackersView.strictInfo.label "Per bloccare tutti gli elementi traccianti, impostare il blocco contenuti su “Restrittivo”.">
 <!ENTITY contentBlocking.cookies.label "Cookie">
 <!ENTITY contentBlocking.cookiesView.label "Cookie e dati dei siti web">
+<!ENTITY contentBlocking.cryptominers.label "Cryptominer">
+<!ENTITY contentBlocking.cryptominersView.label "Cryptominer">
+<!ENTITY contentBlocking.fingerprinters.label "Fingerprinter">
+<!ENTITY contentBlocking.fingerprintersView.label "Fingerprinter">
 <!ENTITY contentBlocking.openBreakageReportView2.label "Segnala un problema">
 <!ENTITY contentBlocking.breakageReportView.label "Segnalazione problema">
 <!ENTITY contentBlocking.breakageReportView2.description "Il blocco contenuti può causare problemi in alcuni siti. Segnalando eventuali anomalie contribuisci a migliorare &brandShortName; per tutti gli utenti. Questa operazione invierà l’indirizzo (URL) a Mozilla, insieme a informazioni relative alle attuali impostazioni del browser.">
@@ -700,16 +689,8 @@
 <!ENTITY contentBlocking.breakageReportView.collection.comments.label "Che tipo di problema si verifica? (facoltativo)">
 <!ENTITY contentBlocking.breakageReportView.sendReport.label "Invia segnalazione">
 <!ENTITY contentBlocking.breakageReportView.cancel.label "Annulla">
-<!ENTITY trackingProtection.title "Protezione antitracciamento">
-<!ENTITY trackingProtection.tooltip "Apri impostazioni per la protezione antitracciamento">
-<!ENTITY trackingProtection.unblock4.label "Disattiva blocco per questo sito">
-<!ENTITY trackingProtection.unblock4.accesskey "s">
 <!ENTITY trackingProtection.unblock5.label "Disattiva blocco per questo sito">
 <!ENTITY trackingProtection.unblock5.accesskey "D">
-<!ENTITY trackingProtection.unblockPrivate4.label "Disattiva blocco temporaneamente">
-<!ENTITY trackingProtection.unblockPrivate4.accesskey "D">
-<!ENTITY trackingProtection.block5.label "Attiva blocco per questo sito">
-<!ENTITY trackingProtection.block5.accesskey "A">
 <!ENTITY trackingProtection.unblockPrivate5.label "Disattiva blocco temporaneamente">
 <!ENTITY trackingProtection.unblockPrivate5.accesskey "D">
 <!ENTITY trackingProtection.block6.label "Attiva blocco per questo sito">
@@ -718,9 +699,6 @@
 <!ENTITY trackingProtection.reload2.accesskey "R">
 <!ENTITY pluginNotification.showAll.label "Mostra tutti">
 <!ENTITY pluginNotification.showAll.accesskey "M">
-<!ENTITY pluginActivateNow.label "Consenti adesso">
-<!ENTITY pluginActivateAlways.label "Consenti sempre">
-<!ENTITY pluginBlockNow.label "Blocca plugin">
 <!ENTITY pluginNotification.width "28em">
 <!ENTITY uiTour.infoPanel.close "Chiudi">
 <!ENTITY panicButton.view.mainTimeframeDesc "Dimentica:">
@@ -788,3 +766,12 @@
 <!ENTITY libraryButton.tooltip "Visualizza cronologia, password salvate e altro ancora">
 <!ENTITY accessibilityIndicator.tooltip "Caratteristiche per l’accessibilità attive">
 <!ENTITY addonPostInstallMessage.label "Gestisci i componenti aggiuntivi facendo clic su <image class='addon-addon-icon'/> nel menu <image class='addon-toolbar-icon'/>.">
+<!ENTITY addonPostInstall.incognito.label "Consenti il funzionamento di questa estensione in finestre anonime.">
+<!ENTITY addonPostInstall.incognito.accesskey "C">
+<!ENTITY addonPrivateBrowsing.header2.label "Cambiamenti relativi alle estensioni in finestre anonime">
+<!ENTITY addonPrivateBrowsing.body2.label "Qualunque estensione aggiunta a &brandShorterName; non funzionerà in finestre anonime a meno che non venga garantito il permesso nelle impostazioni.">
+<!ENTITY addonPrivateBrowsing.learnMore.label "Scopri come gestire le impostazioni delle estensioni.">
+<!ENTITY addonPrivateBrowsing.okButton.label "OK, tutto chiaro">
+<!ENTITY addonPrivateBrowsing.okButton.accesskey "O">
+<!ENTITY addonPrivateBrowsing.manageButton.label "Gestisci estensioni">
+<!ENTITY addonPrivateBrowsing.manageButton.accesskey "G">

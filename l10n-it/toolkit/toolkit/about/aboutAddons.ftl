@@ -88,6 +88,14 @@ detail-update-automatic =
 detail-update-manual =
     .label = Disattivato
     .tooltiptext = Non installare automaticamente gli aggiornamenti
+detail-private-browsing-label = Funzionamento in finestre anonime
+detail-private-browsing-description = L’estensione sarà attiva nelle finestre anonime e avrà accesso alle tue attività online. <label data-l10n-name="detail-private-browsing-learn-more">Ulteriori informazioni</label>
+detail-private-browsing-on =
+    .label = Consenti
+    .tooltiptext = Attiva in Navigazione anonima
+detail-private-browsing-off =
+    .label = Non consentire
+    .tooltiptext = Disattiva in Navigazione anonima
 detail-home =
     .label = Sito web
 detail-home-value =
@@ -129,7 +137,16 @@ plugin-deprecation-description = Manca qualcosa? Alcuni plugin non sono più sup
 legacy-warning-show-legacy = Mostra le estensioni obsolete
 legacy-extensions =
     .value = Estensioni obsolete
-legacy-extensions-description = Queste estensioni non soddisfano gli standard attualmente richiesti da { -brand-short-name } e sono state disattivate. <label data-l10n-name="legacy-learn-more">Ulteriori informazioni sui cambiamenti riguardanti le estensioni in &brandShortName;</label>
+legacy-extensions-description = Queste estensioni non soddisfano gli standard attualmente richiesti da { -brand-short-name } e sono state disattivate. <label data-l10n-name="legacy-learn-more">Ulteriori informazioni sui cambiamenti riguardanti le estensioni</label>
+private-browsing-description2 =
+    Il funzionamento delle estensioni in finestre anonime sta per cambiare.
+    Qualunque estensione aggiunta a { -brand-short-name } non funzionerà in
+    finestre anonime per impostazione predefinita. Un’estensione non funzionerà
+    in finestre anonime e non avrà accesso alle attività online, a meno che il
+    funzionamento sia stato consentito nelle impostazioni. Questa modifica è
+    stata introdotta per garantire la riservatezza dei dati di navigazione
+    quando si utilizzano finestre anonime.
+    <label data-l10n-name="private-browsing-learn-more">Scopri come gestire le impostazioni delle estensioni.</label>
 extensions-view-discover =
     .name = Esplora
     .tooltiptext = { extensions-view-discover.name }
@@ -210,10 +227,12 @@ extensions-updates-update-selected =
 
 ## Extension shortcut management
 
-shortcuts-manage =
-    .label = Scorciatoie da tastiera
+manage-extensions-shortcuts =
+    .label = Gestisci scorciatoie da tastiera
+    .accesskey = G
 shortcuts-empty-message = Non sono presenti scorciatoie da tastiera per questa estensione.
 shortcuts-no-addons = Non ci sono estensioni attive.
+shortcuts-no-commands = Le seguenti estensioni non hanno scorciatoie da tastiera:
 shortcuts-input =
   .placeholder = Inserisci una scorciatoia
 
@@ -226,3 +245,15 @@ shortcuts-modifier-other = Includi Ctrl o Alt
 shortcuts-invalid = Combinazione non valida
 shortcuts-letter = Inserisci una lettera
 shortcuts-system = Non è possibile sostituire una scorciatoia da tastiera di { -brand-short-name }
+shortcuts-card-expand-button = Visualizza altre { $numberToShow }
+shortcuts-card-collapse-button = Mostra meno scorciatoie
+go-back-button =
+    .tooltiptext = Torna indietro
+
+## Add-on actions
+remove-addon-button = Elimina
+disable-addon-button = Disattiva
+enable-addon-button = Attiva
+
+addons-enabled-heading = Attivo
+addons-disabled-heading = Disattivato

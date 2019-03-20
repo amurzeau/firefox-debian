@@ -90,6 +90,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = Désactivées
     .tooltiptext = Ne pas installer automatiquement les mises à jour
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Exécution dans les fenêtres privées
+detail-private-browsing-description = L’extension fonctionnera en navigation privée et aura accès à vos activités en ligne. <label data-l10n-name="detail-private-browsing-learn-more">En savoir plus</label>
+detail-private-browsing-on =
+    .label = Autoriser
+    .tooltiptext = Autoriser en navigation privée
+detail-private-browsing-off =
+    .label = Ne pas autoriser
+    .tooltiptext = Ne pas autoriser en navigation privée
 detail-home =
     .label = Page d’accueil
 detail-home-value =
@@ -132,6 +141,7 @@ legacy-warning-show-legacy = Afficher les extensions obsolètes
 legacy-extensions =
     .value = Extensions obsolètes
 legacy-extensions-description = Ces extensions ne répondent pas aux exigences actuelles de { -brand-short-name }. Elles ont été désactivées. <label data-l10n-name="legacy-learn-more">En savoir plus sur les changements apportés aux modules</label>
+private-browsing-description = Par défaut, les extensions ne sont pas autorisées à s’exécuter dans les fenêtres de navigation privée. Cela signifie qu’elles ne fonctionneront pas pendant la navigation privée et qu’elles n’auront donc pas accès à ces activités en ligne. Pour autoriser une extension à s’exécuter dans les fenêtres de navigation privée, sélectionnez la carte de l’extension ci-dessous et modifiez le paramètre associé. <label data-l10n-name="private-browsing-learn-more">En savoir plus</label>
 extensions-view-discover =
     .name = Catalogue
     .tooltiptext = { extensions-view-discover.name }
@@ -209,3 +219,38 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Installer les mises à jour
     .tooltiptext = Installer les mises à jour disponibles dans cette liste
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Gérer les raccourcis d’extensions
+    .accesskey = G
+shortcuts-empty-message = Il n’y a pas de raccourci pour cette extension.
+shortcuts-no-addons = Aucune extension n’est activée.
+shortcuts-no-commands = Les extensions suivantes ne disposent pas de raccourcis :
+shortcuts-input =
+    .placeholder = Saisissez un raccourci
+shortcuts-browserAction = Activer l’extension
+shortcuts-pageAction = Activer l’action de la page
+shortcuts-sidebarAction = Afficher/Masquer le panneau latéral
+shortcuts-modifier-mac = Inclure Ctrl, Alt ou ⌘
+shortcuts-modifier-other = Inclure Ctrl ou Alt
+shortcuts-invalid = Combinaison invalide
+shortcuts-letter = Saisissez une lettre
+shortcuts-system = Impossible de remplacer un raccourci { -brand-short-name }
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] En montrer { $numberToShow } de plus
+       *[other] En montrer { $numberToShow } de plus
+    }
+shortcuts-card-collapse-button = En montrer moins
+go-back-button =
+    .tooltiptext = Retour
+
+## Add-on actions
+
+remove-addon-button = Supprimer
+disable-addon-button = Désactiver
+enable-addon-button = Activer
+addons-enabled-heading = Activé
+addons-disabled-heading = Désactivé

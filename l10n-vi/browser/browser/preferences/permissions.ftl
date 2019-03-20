@@ -13,8 +13,8 @@ permissions-block =
     .label = Chặn
     .accesskey = C
 permissions-session =
-    .label = Cho phép theo Phiên
-    .accesskey = P
+    .label = Cho phép theo phiên
+    .accesskey = S
 permissions-allow =
     .label = Cho phép
     .accesskey = h
@@ -23,10 +23,10 @@ permissions-site-name =
 permissions-status =
     .label = Trạng thái
 permissions-remove =
-    .label = Loại bỏ trang web
+    .label = Xóa trang web
     .accesskey = R
 permissions-remove-all =
-    .label = Loại bỏ tất cả các trang web
+    .label = Xóa tất cả các trang web
     .accesskey = e
 permissions-button-cancel =
     .label = Hủy bỏ
@@ -41,7 +41,7 @@ permissions-capabilities-allow =
 permissions-capabilities-block =
     .label = Chặn
 permissions-capabilities-prompt =
-    .label = Luôn luôn hỏi
+    .label = Luôn hỏi
 permissions-capabilities-listitem-allow =
     .value = Cho phép
 permissions-capabilities-listitem-block =
@@ -49,7 +49,7 @@ permissions-capabilities-listitem-block =
 permissions-capabilities-listitem-allow-first-party =
     .value = Chỉ chấp nhận bên thứ nhất
 permissions-capabilities-listitem-allow-session =
-    .value = Cho phép theo Phiên
+    .value = Cho phép theo phiên
 
 ## Invalid Hostname Dialog
 
@@ -101,7 +101,7 @@ permissions-exceptions-autoplay-media-desc2 = Bạn có thể chỉ định tran
 ## Site Permissions - Notifications
 
 permissions-site-notification-window =
-    .title = Cài đặt - Quyển thông báo
+    .title = Cài đặt - Quyền thông báo
     .style = { permissions-window.style }
 permissions-site-notification-desc = Các trang web dưới đây đã yêu cầu để gửi thông báo tới bạn. Bạn có thể chỉ định những trang web nào được phép gửi bạn thông báo. Bạn cũng có thể chặn những yêu cầu mà bạn không muốn cho phép.
 permissions-site-notification-disable-label =

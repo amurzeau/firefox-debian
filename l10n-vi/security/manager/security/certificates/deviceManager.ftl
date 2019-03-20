@@ -5,8 +5,11 @@
 
 ## Strings used for device manager
 
+devmgr =
+    .title = Quản lí thiết bị
+    .style = width: 67em; height: 32em;
 devmgr-devlist =
-    .label = Các Module và Thiết bị Bảo mật
+    .label = Mô-đun và thiết bị bảo mật
 devmgr-header-details =
     .label = Chi tiết
 devmgr-header-value =
@@ -15,11 +18,11 @@ devmgr-button-login =
     .label = Đăng nhập
     .accesskey = n
 devmgr-button-logout =
-    .label = Đăng Xuất
-    .accesskey = X
+    .label = Đăng xuất
+    .accesskey = O
 devmgr-button-changepw =
-    .label = Thay đổi Mật khẩu
-    .accesskey = M
+    .label = Thay đổi mật khẩu
+    .accesskey = P
 devmgr-button-load =
     .label = Nạp
     .accesskey = p
@@ -35,9 +38,17 @@ devmgr-button-disable-fips =
 
 ## Strings used for load device
 
+load-device =
+    .title = Tải trình điều khiển thiết bị PKCS#11
 load-device-info = Nhập thông tin cho module bạn muốn thêm.
+load-device-modname =
+    .value = Tên mô-đun
+    .accesskey = M
 load-device-modname-default =
     .value = Module PKCS#11 Mới
+load-device-filename =
+    .value = Tên tập tin mô-đun
+    .accesskey = f
 load-device-browse =
     .label = Duyệt…
     .accesskey = B
@@ -61,7 +72,7 @@ devinfo-status-ready =
 devinfo-desc =
     .label = Mô tả
 devinfo-man-id =
-    .label = Nhà Sản Xuất
+    .label = Nhà sản xuất
 devinfo-hwversion =
     .label = Phiên bản HW
 devinfo-fwversion =
@@ -74,9 +85,16 @@ login-failed = Đăng nhập thất bại
 devinfo-label =
     .label = Nhãn
 devinfo-serialnum =
-    .label = Số Serial
+    .label = Số sê-ri
 fips-nonempty-password-required = Chế độ FIPS yêu cầu bạn đặt một Mật khẩu Chính cho mỗi thiết bị bảo mật. Vui lòng đặt mật khẩu trước khi bật chế độ FIPS.
 unable-to-toggle-fips = Không thể thay đổi chế độ FIPS cho thiết bị bảo mật. Bạn nên thoát và khởi động lại ứng dụng này.
+load-pk11-module-file-picker-title = Chọn trình điều khiển thiết bị PKCS#11 để tải
+# Load Module Dialog
+load-module-help-empty-module-name =
+    .value = Tên mô-đun không thể để trống.
+# Do not translate 'Root Certs'
+load-module-help-root-certs-module-name =
+    .value = ‘Root Certs' được dành riêng và không thể được sử dụng làm tên mô-đun.
 add-module-failure = Không thể thêm module
 del-module-warning = Bạn có chắc muốn xóa module bảo mật này không?
 del-module-error = Không thể xóa module

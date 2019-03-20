@@ -4,10 +4,6 @@
 
 do-not-track-description = Anfon neges “Dim Tracio” at wefannau nad ydych am gael eich tracio
 do-not-track-learn-more = Dysgu rhagor
-do-not-track-option-default =
-    .label = Dim ond pan yn defnyddio Diogelwch rhag Tracio
-do-not-track-option-default-content-blocking =
-    .label = Dim ond pan fydd { -brand-short-name } wedi ei osod i rwystro Tracwyr Wedi eu Canfod
 do-not-track-option-default-content-blocking-known =
     .label = Dim ond pan mae { -brand-short-name } wedi ei osod i rwystro tracwyr hysbys.
 do-not-track-option-always =
@@ -54,6 +50,9 @@ category-privacy =
 pane-sync-title = Cyfrif Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
+pane-sync-title2 = { -sync-brand-short-name }
+category-sync2 =
+    .tooltiptext = { pane-sync-title2 }
 help-button-label = Cefnogaeth { -brand-short-name }
 addons-button-label = Estyniadau a Themâu
 focus-search =
@@ -95,9 +94,6 @@ extension-controlled-default-search = Mae'r estyniad, <img data-l10n-name="icon"
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = Mae estyniad, <img data-l10n-name="icon"/> { $name }, angen Tabiau Cynhwysydd.
-# This string is shown to notify the user that their tracking protection preferences
-# are being controlled by an extension.
-extension-controlled-websites-tracking-protection-mode = Mae estyniad, <img data-l10n-name="icon"/> { $name }, yn rheoli diogelwch rhag tracio.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
 extension-controlled-websites-content-blocking-all-trackers = Mae estyniad, <img data-l10n-name="icon"/> { $name }, yn rheoli'r gosodiad hwn.
@@ -154,9 +150,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = Agor dolenni mewn tabiau yn lle mewn ffenestri newydd
     .accesskey = f
-warn-on-quit-close-multiple-tabs =
-    .label = Eich rhybuddio wrth adael a chau tabiau lluosog
-    .accesskey = E
 warn-on-close-multiple-tabs =
     .label = Rhybuddio wrth gau mwy nag un tab
     .accesskey = g
@@ -291,7 +284,7 @@ update-application-version = Fersiwn { $version } <a data-l10n-name="learn-more"
 update-history =
     .label = Dangos Hanes Diweddaru…
     .accesskey = D
-update-application-allow-description = Caniatau i { -brand-short-name }
+update-application-allow-description = Caniatáu i { -brand-short-name }
 update-application-auto =
     .label = Gosod diweddariadau'n awtomatig (argymell)
     .accesskey = G
@@ -301,6 +294,7 @@ update-application-check-choose =
 update-application-manual =
     .label = Byth gwirio am ddiweddariadau (ddim yn argymell)
     .accesskey = B
+update-application-warning-cross-user-setting = Bydd y gosodiad hwn yn berthnasol i bob cyfrif Windows a { -brand-short-name } proffiliau sy'n ddefnyddio'r gosodiad hwn o { -brand-short-name }.
 update-application-use-service =
     .label = Defnyddio gwasanaethau cefndirol i osod diweddariadau
     .accesskey = c
@@ -352,6 +346,9 @@ browsing-search-on-start-typing =
     .accesskey = d
 browsing-cfr-recommendations =
     .label = Argymell estyniadau wrth i chi bori
+    .accesskey = A
+browsing-cfr-features =
+    .label = Argymell nodweddion wrth bori
     .accesskey = A
 browsing-cfr-recommendations-learn-more = Dysgu Rhagor
 
@@ -405,7 +402,7 @@ choose-bookmark =
 
 search-bar-header = Bar Chwilio
 search-bar-hidden =
-    .label = Defnyddiwch y bar cyfeiriadau ar gyfer chwilio a llywio
+    .label = Defnyddio'r bar cyfeiriadau ar gyfer chwilio a llywio
 search-bar-shown =
     .label = Ychwanegu'r bar chwilio i'r bar offer
 search-engine-default-header = Peiriant Chwilio Rhagosodedig
@@ -545,6 +542,9 @@ sync-device-name-save =
     .accesskey = C
 sync-mobilepromo-single = Cysylltu unrhyw ddyfais arall
 sync-mobilepromo-multi = Rheoli dyfeisiau
+sync-connect-another-device = Cysylltu dyfais arall
+sync-manage-devices = Rheoli dyfeisiau
+sync-fxa-begin-pairing = Paru dyfais
 sync-tos-link = Amodau Gwasanaeth
 sync-fxa-privacy-notice = Rhybudd Preifatrwydd
 
@@ -615,21 +615,16 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cwcis a Data Gwefan
-sitedata-total-size-calculating = Cyfrifo maint data gwefan…
+sitedata-total-size-calculating = Cyfrifo maint data gwefan a storfa dros dro…
 # Variables:
 #   $value (Number) - Value of the unit (for example: 4.6, 500)
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
-sitedata-total-size = Mae'r cwcis, data gwefan a storfa yn defnyddio { $value } { $unit } o le ar ddisg ar hyn o bryd.
+sitedata-total-size = Mae'r cwcis, data gwefan a storfa dros dro yn defnyddio { $value } { $unit } o le ar ddisg ar hyn o bryd.
 sitedata-learn-more = Dysgu rhagor
-sitedata-keep-until = Cadw tan
-    .accesskey = C
-sitedata-keep-until-expire =
-    .label = Yn dod i ben
-sitedata-keep-until-closed =
-    .label = Mae { -brand-short-name } wedi cau
 sitedata-delete-on-close =
     .label = Dileu cwcis a data'r wefan pan fydd { -brand-short-name } ar gau
     .accesskey = D
+sitedata-delete-on-close-private-browsing = Yn y modd pori preifat parhaol, bydd cwcis a data'r wefan yn cael eu clirio bob tro pan fydd { -brand-short-name } ar gau.
 sitedata-allow-cookies-option =
     .label = Derbyn cwcis a data gan wefannau
     .accesskey = D
@@ -640,16 +635,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Mathau wedi'u rhwystro
     .accesskey = M
-sitedata-block-trackers-option-recommended =
-    .label = Tracwyd trydydd parti (argymell)
-sitedata-block-trackers-option =
-    .label = Tracwyr trydydd parti
-sitedata-block-unvisited-option =
-    .label = Cwcis gwefannau heb ymweld â nhw
-sitedata-block-all-third-party-option =
-    .label = Holl gwcis trydydd parti (gall achosi i'r wefan dorri)
-sitedata-block-all-option =
-    .label = Pob cwci (bydd yn achosi i wefannau dorri)
 sitedata-option-block-trackers =
     .label = Tracwyr trydydd parti
 sitedata-option-block-unvisited =
@@ -664,15 +649,8 @@ sitedata-clear =
 sitedata-settings =
     .label = Rheoli Data…
     .accesskey = R
-sitedata-cookies-exceptions =
-    .label = Eithriadau…
-    .accesskey = E
-# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
-# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
-# Cookies and Site Data section.
-sitedata-warning-your-settings-prevent-changes = Mae eich gosodiadau yn Rhwystro Cynnwys yn atal newidiadau i osodiadau Cwcis a Data Gwefan.
 sitedata-cookies-permissions =
-    .label = Rheoli Caniatad...
+    .label = Rheoli Caniatâd...
     .accesskey = R
 
 ## Privacy Section - Address Bar
@@ -693,41 +671,8 @@ addressbar-suggestions-settings = Newid dewisiadau am awgrymiadau peiriannau chw
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Rhwystro Cynnwys
-content-blocking-desc = Rhwystrwch gynnwys trydydd parti, fel hysbysebion a chod, sy'n gallu arafu eich pori neu eich tracio o amgylch y we. Cyfaddaswch eich gosodiadau am y dewis gorau o ddiogelwch a perfformiad.
 content-blocking-description = Rhwystro cynnwys trydydd parti sy'n eich dilyn o amgylch y we. Rheolwch faint o'ch gweithgaredd ar-lein sy'n cael ei storio a'i rannu rhwng gwefannau.
 content-blocking-learn-more = Dysgu Rhagor
-content-blocking-restore-defaults =
-    .label = Adfer y Rhagosodiadau
-    .accesskey = R
-content-blocking-toggle-on =
-    .tooltiptext = Diffodd Rhwystro Cynnwys
-content-blocking-toggle-off =
-    .tooltiptext = Cychwyn Rhwystro Cynnwys
-content-blocking-toggle-label-on = YMLAEN
-    .accesskey = Y
-content-blocking-toggle-label-off = DIFFODD
-    .accesskey = D
-content-blocking-category-label = Dewis beth i'w rwystro
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-slow-loading-trackers-label =
-    .label = Tracwyr Llwytho'n Araf
-    .accesskey = A
-content-blocking-fastblock-new-description = Rhwystro dim ond y tracwyr sy'n atal tudalennau rhag llwytho'n gyflym.
-content-blocking-tracking-protection-trackers-label =
-    .label = Tracwyr
-    .accesskey = T
-content-blocking-tracking-protection-all-detected-trackers-label =
-    .label = Pob Traciwr wedi ei Ganfod
-    .accesskey = P
-content-blocking-tracking-protection-new-description = Rhwystro pob traciwr hysbys. (Efallai y bydd yn atal rhai tudalennau rhag llwytho.)
-content-blocking-tracking-protection-option-always =
-    .label = Bob tro
-    .accesskey = B
-content-blocking-tracking-protection-option-private =
-    .label = Dim ond mewn ffenestri preifat
-    .accesskey = D
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 content-blocking-setting-standard =
@@ -741,7 +686,7 @@ content-blocking-setting-custom =
     .accesskey = C
 content-blocking-standard-description = Dim ond rhwystro tracwyr hysbys mewn Ffenestri Preifat.
 content-blocking-standard-desc = Cymantoledd rhwng diogelwch a pherfformiad. Yn caniatáu rhai tracwyr fel bod gwefannau'n gweithio'n iawn.
-content-blocking-strict-desc = Rhwystro pob traciwr mae { -brand-short-name } yn ei canfod. Gall achosi rhai gwefannau i dorri.
+content-blocking-strict-desc = Rhwystro pob traciwr mae { -brand-short-name } yn eu canfod. Gall achosi rhai gwefannau i dorri.
 content-blocking-custom-desc = Dewis beth i'w rhwystro.
 content-blocking-private-trackers = Tracwyr hysbys mewn Ffenestri Preifat yn unig.
 content-blocking-third-party-cookies = Cwcis tracio trydydd parti
@@ -749,6 +694,7 @@ content-blocking-all-windows-trackers = Tracwyr hysbys ymhob ffenestr
 content-blocking-all-third-party-cookies = Pob cwci trydydd parti
 content-blocking-warning-title = Rhybudd!
 content-blocking-warning-desc = Gall rwystro cwcis a thracwyr achosi i rai gwefannau i dorri. Mae'n hawdd i analluogi rhwystro ar wefannau rydych yn ymddiried ynddyn nhw.
+content-blocking-warning-description = Gall rhwystro cynnwys achosi i rai gwefannau dorri. Mae'n hawdd i analluogi rhwystro gwefannau rydych chi'n ymddiried ynddyn nhw.
 content-blocking-learn-how = Dysgu sut
 content-blocking-trackers-label =
     .label = Tracwyr
@@ -760,51 +706,21 @@ content-blocking-option-private =
     .label = Dim ond mewn Ffenestri Preifat
     .accesskey = P
 content-blocking-tracking-protection-change-block-list = Newid y rhestr rhwystro
-content-blocking-third-party-cookies-label =
-    .label = Cwcis Trydydd Parti
-    .accesskey = C
-content-blocking-reject-trackers-description = Rhwystro pob cwci trydydd parti neu dim ond y rheini sydd wedi eu gosod gan dracwyr.
-# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
-# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
-# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
-# the UI.
-content-blocking-reject-trackers-warning-your-settings-prevent-changes = Mae eich gosodiadau yn Cwcis a Data Gwefan yn atal newidiadau i osodiadau Cwcis Trydydd Parti.
-content-blocking-change-cookie-settings =
-    .label = Newid y Gosodiadau Cwci
-    .accesskey = N
-content-blocking-reject-trackers-block-trackers-option-recommended =
-    .label = Tracwyr (argymell)
-    .accesskey = T
-content-blocking-reject-trackers-block-trackers-option =
-    .label = Tracwyr
-    .accesskey = r
-content-blocking-reject-trackers-all-third-parties-option =
-    .label = Pob cwci trydydd parti (gall achosi i wefannau dorri)
-    .accesskey = P
 content-blocking-cookies-label =
     .label = Cwcis
     .accesskey = C
+# Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
+content-blocking-cryptominers-label =
+    .label = Cryptogloddwyr
+    .accesskey = y
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+content-blocking-fingerprinters-label =
+    .label = Bysbrintwyr
+    .accesskey = B
 
 ## Privacy Section - Tracking
 
-tracking-header = Diogelu Rhag Tracio
-tracking-desc = Mae Diogelu rhag Tracio yn rhwystro tracwyr ar-lein sy'n casglu eich data pori ar draws amryw o wefannau. <a data-l10n-name="learn-more">Dysgwch rhagor am Ddiogelwch rhag Tracio a'ch preifatrwydd</a>
-tracking-mode-label = Defnyddiwch Diogelu rhag Tracio i rwystro tracwyr hysbys
-tracking-mode-always =
-    .label = Bob tro
-    .accesskey = B
-tracking-mode-private =
-    .label = Dim ond mewn ffenestri preifat
-    .accesskey = D
-tracking-mode-never =
-    .label = Byth
-    .accesskey = y
-tracking-exceptions =
-    .label = Eithriadau…
-    .accesskey = E
-tracking-change-block-list =
-    .label = Newid y Rhestr Rhwystro…
-    .accesskey = N
 tracking-manage-exceptions =
     .label = Rheoli Eithriadau…
     .accesskey = R
@@ -836,6 +752,9 @@ permissions-block-autoplay-media =
     .label = Rhwystro gwefannau rhag chwarae cyfrwng gyda sain yn awtomatig
     .accesskey = R
 permissions-block-autoplay-media-menu = Ar gyfer gwefannau sy'n chwarae sain yn awtomatig
+permissions-block-autoplay-media2 =
+    .label = Rhwystro gwefannau rhag chwarae sain yn awtomatig
+    .accesskey = R
 permissions-block-autoplay-media-exceptions =
     .label = Eithriadau...
     .accesskey = E
@@ -865,7 +784,7 @@ permissions-a11y-privacy-link = Dysgu rhagor
 
 ## Privacy Section - Data Collection
 
-collection-header = Casglu Data a Defnyddio { -brand-short-name }
+collection-header = Casglu Data a'r Defnydd o { -brand-short-name }
 collection-description = Rydym yn ceisio darparu dewisiadau i chi a chasglu dim ond beth sydd ei angen arnom i ddarparu a gwella { -brand-short-name } ar gyfer pawb. Rydym yn gofyn caniatâd bob tro cyn derbyn manylion personol.
 collection-privacy-notice = Rhybudd Preifatrwydd
 collection-health-report =
@@ -919,8 +838,8 @@ certs-select-ask-option =
     .label = Gofyn i mi bob tro
     .accesskey = G
 certs-enable-ocsp =
-    .label = Ymholi â gweinyddion atebwr OCSP i gadarnhau dilysrwydd cyfredol y tystysgrifau
-    .accesskey = Y
+    .label = Gofyn i weinyddion atebwr OCSP i gadarnhau dilysrwydd cyfredol y tystysgrifau
+    .accesskey = G
 certs-view =
     .label = Darllen Tystysgrifau…
     .accesskey = D

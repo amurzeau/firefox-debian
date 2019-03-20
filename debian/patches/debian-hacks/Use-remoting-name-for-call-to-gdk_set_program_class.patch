@@ -8,11 +8,11 @@ Closes: #907574
  1 file changed, 3 insertions(+), 4 deletions(-)
 
 diff --git a/widget/gtk/nsAppShell.cpp b/widget/gtk/nsAppShell.cpp
-index 85f5a477facb..f4f71fbcba55 100644
+index 58b0aedfc4be..b566ca06d73e 100644
 --- a/widget/gtk/nsAppShell.cpp
 +++ b/widget/gtk/nsAppShell.cpp
 @@ -24,6 +24,7 @@
- #include "WakeLockListener.h"
+ #  include "WakeLockListener.h"
  #endif
  #include "gfxPlatform.h"
 +#include "nsAppRunner.h"

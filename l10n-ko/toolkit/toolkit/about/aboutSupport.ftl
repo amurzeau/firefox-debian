@@ -47,6 +47,7 @@ app-basics-memory-use = 메모리 사용
 app-basics-performance = 성능
 app-basics-service-workers = 등록된 Service Workers
 app-basics-profiles = 프로필
+app-basics-launcher-process-status = 런처 프로세스
 app-basics-multi-process-support = 다중프로세스 윈도우
 app-basics-process-count = 웹 콘텐츠 프로세스
 app-basics-enterprise-policies = 엔터프라이즈 정책
@@ -59,7 +60,7 @@ show-dir-label =
         [windows] 폴더 열기
        *[other] 디렉토리 열기
     }
-modified-key-prefs-title = 변경 설정 목록
+modified-key-prefs-title = 중요한 변경된 환경 설정
 modified-prefs-name = 이름
 modified-prefs-value = 값
 user-js-title = user.js 환경 설정
@@ -87,8 +88,8 @@ a11y-force-disabled = 접근성 끄기
 a11y-handler-used = 접근 가능한 핸들러 사용됨
 a11y-instantiator = 접근성 기능 사용 앱
 library-version-title = 라이브러리 버전
-copy-text-to-clipboard-label = 클립보드로 텍스트 복사하기
-copy-raw-data-to-clipboard-label = 클립보드로 원본 복사하기
+copy-text-to-clipboard-label = 클립보드에 텍스트 복사하기
+copy-raw-data-to-clipboard-label = 클립보드에 원본 데이터 복사하기
 sandbox-title = 샌드박스
 sandbox-sys-call-log-title = 거절된 시스템 콜
 sandbox-sys-call-index = #
@@ -205,6 +206,8 @@ uses-tiling = 타일링 사용
 content-uses-tiling = 타일링(콘텐츠) 사용
 off-main-thread-paint-enabled = 주 쓰레드 페인팅 끄기 활성화됨
 off-main-thread-paint-worker-count = 주 쓰레드 페인팅 워커 카운트 끔
+low-end-machine = 저성능 기기 감지
+target-frame-rate = 목표 프레임 레이트
 audio-backend = 오디오 백엔드
 max-audio-channels = 최대 채널
 channel-layout = 선호하는 채널 레이아웃
@@ -222,6 +225,11 @@ effective-content-sandbox-level = 효과적인 콘텐츠 프로세스 샌드박�
 sandbox-proc-type-content = 내용
 sandbox-proc-type-file = 파일 내용
 sandbox-proc-type-media-plugin = 미디어 플러그인
+sandbox-proc-type-data-decoder = 데이터 디코더
+launcher-process-status-0 = 활성화됨
+launcher-process-status-1 = 실패로 비활성화됨
+launcher-process-status-2 = 강제로 비활성화됨
+launcher-process-status-unknown = 알 수 없는 상태
 # Variables
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows

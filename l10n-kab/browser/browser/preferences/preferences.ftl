@@ -4,14 +4,10 @@
 
 do-not-track-description = Ad yazen asɣal “ur sfuɣul ara” ɣer ismal web akken ad gzun belli ur tebɣiḍ ara asfuɣel
 do-not-track-learn-more = Issin ugar
-do-not-track-option-default =
-    .label = Ala s useqdec n ummesten mgal aḍfar
-do-not-track-option-default-content-blocking =
-    .label = Kan ticki { -brand-short-name } yettusbadu ɣer sewḥel Ineḍfaṛen Yettwafen
 do-not-track-option-default-content-blocking-known =
     .label = Kan ticki { -brand-short-name } yettusbadu ɣer sewḥel ineḍfaṛen
 do-not-track-option-always =
-    .label = Yal tikelt
+    .label = Yal tikkelt
 pref-page =
     .title =
         { PLATFORM() ->
@@ -54,6 +50,9 @@ category-privacy =
 pane-sync-title = Amiḍan Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
+pane-sync-title2 = { -sync-brand-short-name }
+category-sync2 =
+    .tooltiptext = { pane-sync-title2 }
 help-button-label = { -brand-short-name } Tallalt
 addons-button-label = Isiɣzaf akked yisental
 focus-search =
@@ -95,9 +94,6 @@ extension-controlled-default-search = Yiwen n usiɣzef, <img data-l10n-name="ico
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = Yiwen n useɣzif, <img data-l10n-name="icon"/> { $name }, iḥwaǧ agaliz n waccaren.
-# This string is shown to notify the user that their tracking protection preferences
-# are being controlled by an extension.
-extension-controlled-websites-tracking-protection-mode = Azegrir, <img data-l10n-name="icon"/> { $name } , atan isefrak amesten mgal aḍfaṛ.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
 extension-controlled-websites-content-blocking-all-trackers = Asiɣzef, <img data-l10n-name="icon"/>{ $name }, isenqad aɣewwar-agi.
@@ -133,7 +129,7 @@ use-firefox-sync = Taxbalut: Imaɣnuten yemgaraden ttusqedcen. Tzemreḍ ad tfa�
 get-started-not-logged-in = Qqen ɣer { -sync-brand-short-name }…
 get-started-configured = Ldi ismenyifen n { -sync-brand-short-name }
 always-check-default =
-    .label = Senqed yal tikelt ma yella { -brand-short-name } d iminig-ik amezwar
+    .label = Senqed yal tikkelt ma yella { -brand-short-name } d iminig-ik amezwar
     .accesskey = S
 is-default = { -brand-short-name } d iminig-inek amezwar
 is-not-default = { -brand-short-name } mačči d iminig-inek amezwer
@@ -219,7 +215,7 @@ choose-browser-language-description = Fren tutlayin i uskan n wumuɣen, iznan, a
 manage-browser-languages-button =
     .label = Sbadu Wiyyaḍ...
     .accesskey = l
-confirm-browser-language-change-description = Ales asenker i tikelt nniḍen { -brand-short-name } i isnifal-agi
+confirm-browser-language-change-description = Ales asenker i tikkelt-nniḍen { -brand-short-name } i isnifal-agi
 confirm-browser-language-change-button = Seddu sakin alles tanekra
 translate-web-pages =
     .label = Suqel agbur web
@@ -253,7 +249,7 @@ download-choose-folder =
            *[other] u
         }
 download-always-ask-where =
-    .label = Suter yal tikelt anida ara ttwakelsen ifuyla
+    .label = Suter yal tikkelt anida ara ttwakelsen ifuyla
     .accesskey = S
 applications-header = Isnasen
 applications-description = Fren amek ara yeddu { -brand-short-name } akked ifuyla i d-tessalayeḍ akked isnasen i tesseqdaceḍ mi ara tettinigeḍ.
@@ -330,7 +326,7 @@ browsing-use-onscreen-keyboard =
     .label = Sken anasiw amennalan ticki terra tmara
     .accesskey = n
 browsing-use-cursor-navigation =
-    .label = Seqdec yal tikelt tiqeffalin n tunigin i tikli deg usebter
+    .label = Seqdec yal tikkelt tiqeffalin n tunigin i tikli deg usebter
     .accesskey = S
 browsing-search-on-start-typing =
     .label = Nadi aḍris ticki tebda tira
@@ -530,6 +526,8 @@ sync-device-name-save =
     .accesskey = l
 sync-mobilepromo-single = Qqen ibenk nniḍen
 sync-mobilepromo-multi = Sefrek ibenkan
+sync-connect-another-device = Qqen ibenk-nniḍen
+sync-manage-devices = Sefrek ibenkan
 sync-tos-link = Tiwtilin n useqdec
 sync-fxa-privacy-notice = Tasertit n tbaḍnit
 
@@ -606,15 +604,10 @@ sitedata-total-size-calculating = Asiḍen n teɣzi n isefka akked tuγzi n tuff
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Tskelseḍ inagan n tuqna,isefka n usmel akked  tuffirt seqdacen akka tura { $value } { $unit } seg adeg n tallunt n tkatut.
 sitedata-learn-more = Lmed ugar
-sitedata-keep-until = Ḥrez arma
-    .accesskey = l
-sitedata-keep-until-expire =
-    .label = Ad mmten
-sitedata-keep-until-closed =
-    .label = Amdal n { -brand-short-name }
 sitedata-delete-on-close =
     .label = Mdel inagan n tuqqna akk d isefka n usmel ticki { -brand-short-name } yettwamdel
     .accesskey = i
+sitedata-delete-on-close-private-browsing = Deg uskar n tinigin tusligt timezgit, inagan n tuqqna akked isefka n usmel ad ttwasefḍen yal tikkelt ticki yemdel { -brand-short-name }.
 sitedata-allow-cookies-option =
     .label = Qbel inagan n tuqqna d yisefka n usmel
     .accesskey = Q
@@ -625,16 +618,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Tawsit tewḥel
     .accesskey = T
-sitedata-block-trackers-option-recommended =
-    .label = Ineḍfaren n wis kraḍ (yelha)
-sitedata-block-trackers-option =
-    .label = Ineḍfaren n wis kraḍ
-sitedata-block-unvisited-option =
-    .label = Inagan n tuqna seg yesmal web ur yettwarzan ara
-sitedata-block-all-third-party-option =
-    .label = Akk inagan n tuqqna wis kraḍ (zemren ad rẓen isaml web)
-sitedata-block-all-option =
-    .label = Akk inagan n tuqqna (zemren ad rẓen ismal web)
 sitedata-option-block-trackers =
     .label = Ineḍfaren n wis kraḍ
 sitedata-option-block-unvisited =
@@ -649,13 +632,6 @@ sitedata-clear =
 sitedata-settings =
     .label = Sefrek isefka…
     .accesskey = M
-sitedata-cookies-exceptions =
-    .label = Tisuraf…
-    .accesskey = s
-# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
-# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
-# Cookies and Site Data section.
-sitedata-warning-your-settings-prevent-changes = IƔewwaren-inek/inem deg usewḥel n ugbur sewḥalen isnifal deg iƔewwaren n yinagan n tuqqna akked wid isefka.
 sitedata-cookies-permissions =
     .label = Sefrek tisirag...
     .accesskey = s
@@ -678,41 +654,8 @@ addressbar-suggestions-settings = Snifel ismenyifen i yisumar n umsedday n unadi
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Asewḥel n ugbur
-content-blocking-desc = Sewḥel Agbur n tɣawsiwin tis kraḍ, am udellel neɣ tangalt, isaẓayen timing-inek, i k-iṭṭafaren deg web. Sagen iɣewwaren-inek i tunigin ifazen deg taɣellist.
 content-blocking-description = Sewḥel Agbur n tɣawsiwin tis kraḍ i k-yeṭṭafaren di web. Senqed acḥal seg urmud-ik di web i yettwakelsen u yettwabḍan gar ismal.
 content-blocking-learn-more = Issin ugar
-content-blocking-restore-defaults =
-    .label = Err-d imezwar
-    .accesskey = r
-content-blocking-toggle-on =
-    .tooltiptext = Kkes asewḥel n ugbur
-content-blocking-toggle-off =
-    .tooltiptext = Rmed asewḥel n ugbur
-content-blocking-toggle-label-on = Yermed
-    .accesskey = m
-content-blocking-toggle-label-off = Insa
-    .accesskey = n
-content-blocking-category-label = Fren ayen ad tesweḥleḍ
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-slow-loading-trackers-label =
-    .label = Ineḍfaren isaẓẓayen asali
-    .accesskey = s
-content-blocking-fastblock-new-description = Sewḥel kan ineḍfaren isaẓẓayen asali n isebtar.
-content-blocking-tracking-protection-trackers-label =
-    .label = Ineḍfaren
-    .accesskey = I
-content-blocking-tracking-protection-all-detected-trackers-label =
-    .label = Akk ineḍfaren yettwafen
-    .accesskey = i
-content-blocking-tracking-protection-new-description = Sewḥel akk ineḍfaren yettwasnen. (Izmer ad isewḥel asali n kra n isebtar.)
-content-blocking-tracking-protection-option-always =
-    .label = Yal tikelt
-    .accesskey = A
-content-blocking-tracking-protection-option-private =
-    .label = Deg usfaylu uslig kan
-    .accesskey = p
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 content-blocking-setting-standard =
@@ -745,51 +688,12 @@ content-blocking-option-private =
     .label = Deg isfuyla usligen kan
     .accesskey = u
 content-blocking-tracking-protection-change-block-list = Snifel tabdart n usewḥel
-content-blocking-third-party-cookies-label =
-    .label = Inagan n tuqna n tɣawsiwin tis kraḍ
-    .accesskey = I
-content-blocking-reject-trackers-description = Sewḥel akk inagan n tuqqna wis kraḍ neɣ wid-ak kan yettuneḍfaṛen.
-# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
-# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
-# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
-# the UI.
-content-blocking-reject-trackers-warning-your-settings-prevent-changes = IƔewwaren-inek/inem deg yinagan n tuqqna akked isefka n yesmal sewḥalen isnifal n iƔewwaren n yinagan n tuqqna n tƔawsiwin tis kraḍ.
-content-blocking-change-cookie-settings =
-    .label = Beddel iɣewwaṛen n inagan n tuqqna
-    .accesskey = S
-content-blocking-reject-trackers-block-trackers-option-recommended =
-    .label = Ineḍfaṛen (yelha)
-    .accesskey = k
-content-blocking-reject-trackers-block-trackers-option =
-    .label = Ineḍfaṛen
-    .accesskey = k
-content-blocking-reject-trackers-all-third-parties-option =
-    .label = Akk inagan n tuqqna wis kraḍ (zemren ad rẓen isaml web)
-    .accesskey = A
 content-blocking-cookies-label =
     .label = Inagan n tuqqna
     .accesskey = I
 
 ## Privacy Section - Tracking
 
-tracking-header = Ammesten mgal asfuɣel
-tracking-desc = Amesten mgal aḍfaṛ ad isewḥel ineḍfaṛen iqnen iluqḍen isefka n iminig inek deg ismal web. <a data-l10n-name="learn-more">Issin ugar γef umesten mgal aḍfaṛ akked tasertit n tbaḍnit</a>
-tracking-mode-label = Seqdec amesten mgal asfuγel akken ad teswaḥleḍ imsfuγal irusinin
-tracking-mode-always =
-    .label = Yal ass
-    .accesskey = Y
-tracking-mode-private =
-    .label = Ɣef usfaylu uslig kan
-    .accesskey = l
-tracking-mode-never =
-    .label = Weṛǧin
-    .accesskey = W
-tracking-exceptions =
-    .label = Tisuraf…
-    .accesskey = s
-tracking-change-block-list =
-    .label = Snifel tabdart n usewḥel…
-    .accesskey = D
 tracking-manage-exceptions =
     .label = Sefrek tisuraf
     .accesskey = t
@@ -821,11 +725,14 @@ permissions-block-autoplay-media =
     .label = Sewḥel ismal web si tɣuri tawurmant n yiferdisen imeslawen
     .accesskey = S
 permissions-block-autoplay-media-menu = I yismal yetturaren imesliyen s wudem awurman
+permissions-block-autoplay-media2 =
+    .label = Sewḥel taɣuri tawurmant n yimesli  n yesmal web
+    .accesskey = S
 permissions-block-autoplay-media-exceptions =
     .label = Tisuraf…
     .accesskey = r
 autoplay-option-ask =
-    .label = Seqsay yal tikelt
+    .label = Steqsay yal tikkelt
 autoplay-option-allow =
     .label = Sreg taɣuri tawurmant
 autoplay-option-dont =
@@ -901,7 +808,7 @@ certs-select-auto-option =
     .label = Fren yiwen s wudem awurman
     .accesskey = S
 certs-select-ask-option =
-    .label = Steqsi-yi-d yal tikelt
+    .label = Steqsi-yi-d yal tikkelt
     .accesskey = A
 certs-enable-ocsp =
     .label = Suter iqeddacen imerrayen OCSP akken ad sentmen taneɣbalt n iselkinen

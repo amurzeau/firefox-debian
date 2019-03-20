@@ -88,6 +88,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = Tắt
     .tooltiptext = Không tự động cài đặt cập nhật
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Chạy trong cửa sổ riêng tư
+detail-private-browsing-description = Tiện ích mở rộng sẽ hoạt động trong cửa sổ riêng tư và có quyền truy cập vào các hoạt động trực tuyến của bạn. <label data-l10n-name="detail-private-browsing-learn-more">Tìm hiểu thêm</label>
+detail-private-browsing-on =
+    .label = Cho phép
+    .tooltiptext = Kích hoạt trong duyệt web riêng tư
+detail-private-browsing-off =
+    .label = Không cho phép
+    .tooltiptext = Vô hiệu hóa trong duyệt web riêng tư
 detail-home =
     .label = Trang chủ
 detail-home-value =
@@ -130,6 +139,12 @@ legacy-warning-show-legacy = Hiển thị các phần mở rộng kế thừa
 legacy-extensions =
     .value = Phần mở rộng kế thừa
 legacy-extensions-description = Các tiện ích mở rộng này không đáp ứng tiêu chuẩn hiện tại của { -brand-short-name } do đó chúng đã bị ngừng hoạt động. <label data-l10n-name="legacy-learn-more">Tìm hiểu về các thay đổi tiện ích</label>
+private-browsing-description2 =
+    { -brand-short-name } đang thay đổi cách các tiện ích mở rộng hoạt động trong trình duyệt riêng tư. Bất kỳ tiện ích mở rộng mới nào bạn thêm vào
+    { -brand-short-name } sẽ không chạy theo mặc định trong cửa sổ riêng tư. Trừ khi bạn cho phép nó trong cài đặt,
+    tiện ích mở rộng sẽ không chạy trong khi duyệt web riêng tư và sẽ không có quyền truy cập vào các hoạt động trực tuyến của bạn.
+    Chúng tôi đã thực hiện thay đổi này để giữ trình duyệt của bạn riêng tư.
+    <label data-l10n-name="private-browsing-learn-more">Tìm hiểu cách quản lý cài đặt tiện ích mở rộng.</label>
 extensions-view-discover =
     .name = Tải thêm tiện ích
     .tooltiptext = { extensions-view-discover.name }
@@ -197,7 +212,7 @@ extensions-updates-updating =
 extensions-updates-installed =
     .value = Các tiện ích của bạn đã được cập nhật.
 extensions-updates-downloaded =
-    .value = Các cập nhật tiện ích của bạn đã được tải về.
+    .value = Các cập nhật tiện ích của bạn đã được tải xuống.
 extensions-updates-restart =
     .label = Khởi động lại ngay để hoàn tất cài đặt
 extensions-updates-none-found =
@@ -207,3 +222,37 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Cài đặt cập nhật
     .tooltiptext = Cài đặt các cập nhật trong danh sách này
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Quản lý phím tắt tiện ích mở rộng
+    .accesskey = s
+shortcuts-empty-message = Không có phím tắt cho tiện ích mở rộng này.
+shortcuts-no-addons = Bạn không có bất kỳ tiện ích mở rộng nào được kích hoạt.
+shortcuts-no-commands = Các tiện ích mở rộng sau không có phím tắt:
+shortcuts-input =
+    .placeholder = Nhập một phím tắt
+shortcuts-browserAction = Kích hoạt tiện ích mở rộng
+shortcuts-pageAction = Kích hoạt hành động trang
+shortcuts-sidebarAction = Chuyển đến thanh bên
+shortcuts-modifier-mac = Bao gồmCtrl, Alt, hoặc ⌘
+shortcuts-modifier-other = Bao gồm Ctrl hoặc Alt
+shortcuts-invalid = Kết hợp không hợp lệ
+shortcuts-letter = Nhập một kí tự
+shortcuts-system = Không thể ghi đè một phím tắt { -brand-short-name }
+shortcuts-card-expand-button =
+    { $numberToShow ->
+       *[other] Hiển thị { $numberToShow } khác
+    }
+shortcuts-card-collapse-button = Hiện ít hơn
+go-back-button =
+    .tooltiptext = Quay lại
+
+## Add-on actions
+
+remove-addon-button = Xóa
+disable-addon-button = Tắt
+enable-addon-button = Bật
+addons-enabled-heading = Đã bật
+addons-disabled-heading = Đã tắt

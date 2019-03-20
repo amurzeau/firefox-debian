@@ -88,6 +88,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = 关
     .tooltiptext = 不要自动安装更新
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = 在隐私窗口中运行
+detail-private-browsing-description = 扩展将在隐私窗口中运行，并可获知您的在线活动。<label data-l10n-name="detail-private-browsing-learn-more">详细了解</label>
+detail-private-browsing-on =
+    .label = 允许
+    .tooltiptext = 在隐私浏览中启用
+detail-private-browsing-off =
+    .label = 不允许
+    .tooltiptext = 在隐私浏览中禁用
 detail-home =
     .label = 主页
 detail-home-value =
@@ -130,6 +139,9 @@ legacy-warning-show-legacy = 显示旧式扩展
 legacy-extensions =
     .value = 旧式扩展
 legacy-extensions-description = 这些扩展不符合现今的 { -brand-short-name } 标准，因此已被停用。 <label data-l10n-name="legacy-learn-more">了解附加组件的变化</label>
+private-browsing-description2 =
+    扩展在 { -brand-short-name } 隐私浏览模式中的运行权限有所调整。默认情况下，任何新添加至 { -brand-short-name } 的扩展均不会在隐私窗口中运行。除非您在设置中明确允许，否则扩展将在隐私浏览模式中停止运行，也无法获知您的在线活动。这项调整旨在确保您的隐私浏览足够私密。
+    <label data-l10n-name="private-browsing-learn-more">了解如何管理扩展设置。</label>
 extensions-view-discover =
     .name = 获取附加组件
     .tooltiptext = { extensions-view-discover.name }
@@ -207,3 +219,37 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = 安装选中的更新
     .tooltiptext = 安装在此列表选中的可用更新
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = 管理扩展快捷键
+    .accesskey = S
+shortcuts-empty-message = 此扩展没有快捷键。
+shortcuts-no-addons = 您没有启用任何扩展。
+shortcuts-no-commands = 下列扩展没有快捷键：
+shortcuts-input =
+    .placeholder = 输入一个快捷键
+shortcuts-browserAction = 激活扩展
+shortcuts-pageAction = 激活页面动作
+shortcuts-sidebarAction = 切换侧栏
+shortcuts-modifier-mac = 包括 Ctrl、Alt 或 ⌘
+shortcuts-modifier-other = 包括 Ctrl 或 Alt
+shortcuts-invalid = 组合无效
+shortcuts-letter = 输入一个字母
+shortcuts-system = 不可覆盖 { -brand-short-name } 的快捷键
+shortcuts-card-expand-button =
+    { $numberToShow ->
+       *[other] 显示另外 { $numberToShow } 个
+    }
+shortcuts-card-collapse-button = 显示更少
+go-back-button =
+    .tooltiptext = 返回
+
+## Add-on actions
+
+remove-addon-button = 移除
+disable-addon-button = 禁用
+enable-addon-button = 启用
+addons-enabled-heading = 已启用
+addons-disabled-heading = 已禁用

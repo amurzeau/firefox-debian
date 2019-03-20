@@ -93,6 +93,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = Deactivà
     .tooltiptext = Betg installar automaticamain las actualisaziuns
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Exequir en fanestras privatas
+detail-private-browsing-description = L'extensiun vegn a funcziunar en fanestras privatas ed avair access a tias activitads online. <label data-l10n-name="detail-private-browsing-learn-more">Ulteriuras infurmaziuns</label>
+detail-private-browsing-on =
+    .label = Permetter
+    .tooltiptext = Activar en il modus privat
+detail-private-browsing-off =
+    .label = Betg permetter
+    .tooltiptext = Deactivar en il modus privat
 detail-home =
     .label = Website
 detail-home-value =
@@ -135,6 +144,12 @@ legacy-warning-show-legacy = Mussar las extensiuns obsoletas
 legacy-extensions =
     .value = Extensiuns obsoletas
 legacy-extensions-description = Questas extensiuns na correspundan betg als standards actuals da { -brand-short-name } ed èn perquai deactivadas. <label data-l10n-name="legacy-learn-more">Vegnir a savair dapli davart las midadas per supplements</label>
+private-browsing-description2 =
+    { -brand-short-name } mida il cumportament dad extensiuns en il modus privat. Tut las novas extensiuns che ti agiunteschas a
+    { -brand-short-name } na vegnan tenor la configuraziun predefinida betg exequidas en fanestras privatas. Sche ti na las permettas betg en ils parameters
+    na vegnan las extensiuns betg a funcziunar en il modus privat e na vegnan er betg ad avair access a tias activitads online en lez modus. 
+    Questa midada succeda per che la navigaziun en il modus privat restia privata.
+    <label data-l10n-name="private-browsing-learn-more">Vegnir a savair co administrar ils parameters da las extensiuns.</label>
 extensions-view-discover =
     .name = Catalog
     .tooltiptext = { extensions-view-discover.name }
@@ -212,3 +227,38 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Installar las actualisaziuns
     .tooltiptext = Installar las actualisaziuns disponiblas en questa glista
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Administrar scursanidas dad extensiuns
+    .accesskey = s
+shortcuts-empty-message = I na dat naginas scursanidas per questa extensiun.
+shortcuts-no-addons = Naginas extensiuns activadas.
+shortcuts-no-commands = Las suandantas extensiuns n'han naginas cumbinaziuns da tastas:
+shortcuts-input =
+    .placeholder = Tippa ina scursanida
+shortcuts-browserAction = Activar l'extensiun
+shortcuts-pageAction = Activar l'acziun da pagina
+shortcuts-sidebarAction = Activar/deactivar la trav laterala
+shortcuts-modifier-mac = Includer Ctrl, Alt, u ⌘
+shortcuts-modifier-other = Includer Ctrl u Alt
+shortcuts-invalid = Cumbinaziun nunvalida
+shortcuts-letter = Tippa ina letra
+shortcuts-system = Impussibel da surscriver ina scursanida da { -brand-short-name }
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] Mussar anc { $numberToShow }
+       *[other] Mussar anc { $numberToShow }
+    }
+shortcuts-card-collapse-button = Mussar damain
+go-back-button =
+    .tooltiptext = Turnar
+
+## Add-on actions
+
+remove-addon-button = Allontanar
+disable-addon-button = Deactivar
+enable-addon-button = Activar
+addons-enabled-heading = Activà
+addons-disabled-heading = Deactivà

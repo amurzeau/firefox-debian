@@ -88,6 +88,14 @@ detail-update-automatic =
 detail-update-manual =
     .label = Yensa
     .tooltiptext = Ur sebdad ara ileqman s wudem awurman
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Sker deg usfaylu uslig
+detail-private-browsing-on =
+    .label = Sireg
+    .tooltiptext = Sermed aya deg iccer uslig
+detail-private-browsing-off =
+    .label = Ur ttaǧǧa ara
+    .tooltiptext = Insa deg timinigin tusligin
 detail-home =
     .label = Asebter agejdan
 detail-home-value =
@@ -207,3 +215,31 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Sebded ileqman
     .tooltiptext = Sebded ileqman yellan di tebdart-agi
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Sefrek inegzumen n isiɣzaf
+    .accesskey = i
+shortcuts-empty-message = Ulac inegzumen i usiɣzef-agi.
+shortcuts-no-addons = Ur ɣur-k ara ula d yiwen n usiɣzef iremden.
+shortcuts-input =
+    .placeholder = Sekcem anegzum
+shortcuts-browserAction = Rmed isiɣzaf
+shortcuts-pageAction = Rmed tigawt n usebter
+shortcuts-sidebarAction = Sken/Fer agalis adisan
+shortcuts-modifier-mac = Seddu Ctrl, Alt, neɣ ⌘
+shortcuts-modifier-other = Seddu Ctrl neɣ Alt
+shortcuts-invalid = Yir tuddsa
+shortcuts-letter = Sekcem asekkil
+shortcuts-card-collapse-button = Sken qel
+go-back-button =
+    .tooltiptext = Uɣal ɣer deffir
+
+## Add-on actions
+
+remove-addon-button = Kkes
+disable-addon-button = Ssens
+enable-addon-button = Rmed
+addons-enabled-heading = Irmed
+addons-disabled-heading = Arurmid

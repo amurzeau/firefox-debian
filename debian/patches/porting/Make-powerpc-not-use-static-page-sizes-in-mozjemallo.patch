@@ -8,15 +8,15 @@ Closes: #763900
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/memory/build/mozjemalloc.cpp b/memory/build/mozjemalloc.cpp
-index ab0822aee1e9..bc354051f69c 100644
+index 0a25d1e062fb..9afbd5486494 100644
 --- a/memory/build/mozjemalloc.cpp
 +++ b/memory/build/mozjemalloc.cpp
 @@ -182,7 +182,7 @@ using namespace mozilla;
  // Debug builds are opted out too, for test coverage.
  #ifndef MOZ_DEBUG
- #if !defined(__ia64__) && !defined(__sparc__) && !defined(__mips__) && \
--    !defined(__aarch64__)
-+    !defined(__aarch64__) && !defined(__powerpc__)
- #define MALLOC_STATIC_PAGESIZE 1
- #endif
+ #  if !defined(__ia64__) && !defined(__sparc__) && !defined(__mips__) && \
+-      !defined(__aarch64__)
++      !defined(__aarch64__) && !defined(__powerpc__)
+ #    define MALLOC_STATIC_PAGESIZE 1
+ #  endif
  #endif

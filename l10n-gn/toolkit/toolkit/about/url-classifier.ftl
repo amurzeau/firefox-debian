@@ -3,6 +3,16 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 url-classifier-title = Marandu URL poravoha rehegua
+url-classifier-search-title = Heka
+url-classifier-search-result-title = Apopyre
+url-classifier-search-result-uri = URI: { $uri }
+url-classifier-search-result-list = Tabla rysýi: { $list }
+url-classifier-search-input = URL
+url-classifier-search-error-invalid-url = URL oiko'ỹva
+url-classifier-search-error-no-features = Noñembosa’ýi mba’eveichagua
+url-classifier-search-btn = Emoñepyrũ jeheka
+url-classifier-search-features = Mboja’opy
+url-classifier-search-listType = Tysýi peteĩchagua
 url-classifier-provider-title = Me'ẽha
 url-classifier-provider = Me'ẽha
 url-classifier-provider-last-update-time = Ñembohekopyahu ramoguavéva

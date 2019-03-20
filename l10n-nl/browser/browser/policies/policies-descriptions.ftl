@@ -23,6 +23,8 @@ policy-BlockAboutSupport = Toegang tot de about:support-pagina blokkeren.
 
 policy-Bookmarks = Bladwijzers maken in de Bladwijzerwerkbalk, het menu Bladwijzers, of een hierbinnen opgegeven map.
 
+policy-CaptivePortal = Ondersteuning voor hotspot-aanmeldingspagina inschakelen of uitschakelen.
+
 policy-CertificatesDescription = Certificaten toevoegen of ingebouwde certificaten gebruiken.
 
 policy-Cookies = Toestaan of weigeren dat websites cookies instellen.
@@ -82,6 +84,8 @@ policy-EnableTrackingProtection = Inhoudsblokkering inschakelen of uitschakelen 
 # English or translate them as verbs.
 policy-Extensions = Extensies installeren, verwijderen of vergrendelen. De optie voor installeren gebruikt URL’s of paden als parameters. De opties voor verwijderen en vergrendelen gebruiken extensie-ID’s.
 
+policy-ExtensionUpdate = Automatische extensie-updates inschakelen of uitschakelen.
+
 policy-FlashPlugin = Gebruik van de Flash-plug-in toestaan of weigeren.
 
 policy-HardwareAcceleration = Wanneer false, hardwareversnelling uitschakelen.
@@ -90,6 +94,8 @@ policy-HardwareAcceleration = Wanneer false, hardwareversnelling uitschakelen.
 policy-Homepage = De startpagina instellen en optioneel vergrendelen.
 
 policy-InstallAddonsPermission = Toestaan dat bepaalde websites add-ons installeren.
+
+policy-NetworkPrediction = ‘Network prediction’ (DNS prefetching) inschakelen of uitschakelen.
 
 policy-NoDefaultBookmarks = Aanmaken van de standaardbladwijzers die met { -brand-short-name } worden meegeleverd uitschakelen, evenals de Slimme bladwijzers (Meest bezocht, Recente labels). Noot: deze beleidsregel is alleen van kracht bij gebruik ervan voordat het profiel voor het eerst wordt uitgevoerd.
 
@@ -115,6 +121,12 @@ policy-SearchEngines = Instellingen voor zoekmachines configureren. Deze beleids
 
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = PKCS #11-modules installeren.
+
+policy-SSLVersionMax = De maximale SSL-versie instellen.
+
+policy-SSLVersionMin = De minimale SSL-versie instellen.
+
+policy-SupportMenu = Een aangepast menu-item voor ondersteuning aan het menu Help toevoegen.
 
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Het bezoeken van websites blokkeren. Zie de documentatie voor meer informatie over de notatie.

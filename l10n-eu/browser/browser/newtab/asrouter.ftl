@@ -3,12 +3,15 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 cfr-doorhanger-extension-heading = Gomendatutako gehigarria
+cfr-doorhanger-pintab-heading = Probatu hau: ainguratu fitxa
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Zergatik ari naizen hau ikusten
 cfr-doorhanger-extension-cancel-button = Une honetan ez
     .accesskey = n
 cfr-doorhanger-extension-ok-button = Gehitu orain
     .accesskey = G
+cfr-doorhanger-pintab-ok-button = Ainguratu fitxa hau
+    .accesskey = A
 cfr-doorhanger-extension-manage-settings-button = Kudeatu gomendioen ezarpenak
     .accesskey = K
 cfr-doorhanger-extension-never-show-recommendation = Ez erakutsi gomendio hau
@@ -41,3 +44,12 @@ cfr-doorhanger-extension-total-users =
         [one] erabiltzaile bat
        *[other] { $total } erabiltzaile
     }
+cfr-doorhanger-pintab-description = Eskuratu gehien erabilitako guneetarako sarbide azkarra. Mantendu guneak zabalik fitxa batean (berrabiarazita ere bai).
+
+## These messages are steps on how to use the feature and are shown together.
+
+cfr-doorhanger-pintab-step1 = Egin <b>eskuin-klika</b> ainguratu nahi duzun fitxan.
+cfr-doorhanger-pintab-step2 = Hautatu <b>Ainguratu fitxa</b> menu-aukera.
+cfr-doorhanger-pintab-step3 = Gunea eguneratzen bada, puntu urdin bat ikusiko duzu ainguratutako fitxan.
+cfr-doorhanger-pintab-animation-pause = Pausatu
+cfr-doorhanger-pintab-animation-resume = Berrekin

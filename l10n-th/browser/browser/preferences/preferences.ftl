@@ -4,10 +4,6 @@
 
 do-not-track-description = ส่งสัญญาณ “ไม่ติดตาม” ให้กับเว็บไซต์ว่าคุณไม่ต้องการถูกติดตาม
 do-not-track-learn-more = เรียนรู้เพิ่มเติม
-do-not-track-option-default =
-    .label = เฉพาะเมื่อใช้การป้องกันการติดตาม
-do-not-track-option-default-content-blocking =
-    .label = เฉพาะเมื่อ { -brand-short-name } ถูกตั้งให้ปิดกั้นตัวติดตามที่ตรวจพบ
 do-not-track-option-default-content-blocking-known =
     .label = เฉพาะเมื่อ { -brand-short-name } ถูกตั้งให้ปิดกั้นตัวติดตามที่รู้จัก
 do-not-track-option-always =
@@ -54,6 +50,9 @@ category-privacy =
 pane-sync-title = บัญชี Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
+pane-sync-title2 = { -sync-brand-short-name }
+category-sync2 =
+    .tooltiptext = { pane-sync-title2 }
 help-button-label = การสนับสนุนของ { -brand-short-name }
 addons-button-label = ส่วนขยายและชุดตกแต่ง
 focus-search =
@@ -95,9 +94,6 @@ extension-controlled-default-search = ส่วนขยาย <img data-l10n-na
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = ส่วนขยาย <img data-l10n-name="icon"/> { $name } ต้องการแท็บแยกข้อมูล
-# This string is shown to notify the user that their tracking protection preferences
-# are being controlled by an extension.
-extension-controlled-websites-tracking-protection-mode = ส่วนขยาย <img data-l10n-name="icon"/> { $name } กำลังควบคุมการป้องกันการติดตาม
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
 extension-controlled-websites-content-blocking-all-trackers = ส่วนขยาย <img data-l10n-name="icon"/> { $name } กำลังควบคุมการตั้งค่านี้
@@ -274,6 +270,7 @@ update-application-check-choose =
 update-application-manual =
     .label = ไม่ตรวจสอบการอัปเดตเสมอ (ไม่แนะนำ)
     .accesskey = ม
+update-application-warning-cross-user-setting = การตั้งค่านี้จะนำไปใช้กับบัญชี Windows ทั้งหมด และโปรไฟล์ { -brand-short-name } ในขณะการติดตั้ง { -brand-short-name }
 update-application-use-service =
     .label = ใช้บริการเบื้องหลังเพื่อติดตั้งการอัปเดต
     .accesskey = ช
@@ -309,10 +306,10 @@ performance-default-content-process-count =
 
 browsing-title = การท่องเว็บ
 browsing-use-autoscroll =
-    .label = ใช้การเลื่อนหน้าอัตโนมัติ
+    .label = ใช้การเลื่อนอัตโนมัติ
     .accesskey = ช
 browsing-use-smooth-scrolling =
-    .label = ใช้การเลื่อนหน้าแบบลื่นไหล
+    .label = ใช้การเลื่อนแบบลื่นไหล
     .accesskey = ก
 browsing-use-onscreen-keyboard =
     .label = แสดงแป้นพิมพ์แบบสัมผัสเมื่อจำเป็น
@@ -326,6 +323,9 @@ browsing-search-on-start-typing =
 browsing-cfr-recommendations =
     .label = แนะนำส่วนขยายขณะที่คุณท่องเว็บ
     .accesskey = น
+browsing-cfr-features =
+    .label = แนะนำคุณสมบัติในขณะที่คุณเรียกดู
+    .accesskey = f
 browsing-cfr-recommendations-learn-more = เรียนรู้เพิ่มเติม
 
 ## General Section - Proxy
@@ -518,6 +518,9 @@ sync-device-name-save =
     .accesskey = บ
 sync-mobilepromo-single = เชื่อมต่ออุปกรณ์อื่น
 sync-mobilepromo-multi = จัดการอุปกรณ์
+sync-connect-another-device = เชื่อมต่ออุปกรณ์อื่น
+sync-manage-devices = จัดการอุปกรณ์
+sync-fxa-begin-pairing = จับคู่อุปกรณ์
 sync-tos-link = เงื่อนไขการให้บริการ
 sync-fxa-privacy-notice = ประกาศความเป็นส่วนตัว
 
@@ -594,15 +597,10 @@ sitedata-total-size-calculating = กำลังคำนวณขนาดข�
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = คุกกี้, ข้อมูลไซต์ และแคชที่จัดเก็บไว้ของคุณใช้พื้นที่ดิสก์ไป { $value } { $unit }
 sitedata-learn-more = เรียนรู้เพิ่มเติม
-sitedata-keep-until = เก็บจนกระทั่ง
-    .accesskey = ก
-sitedata-keep-until-expire =
-    .label = คุกกี้หมดอายุ
-sitedata-keep-until-closed =
-    .label = { -brand-short-name } ถูกปิด
 sitedata-delete-on-close =
     .label = ลบคุกกี้และข้อมูลไซต์เมื่อ { -brand-short-name } ถูกปิด
     .accesskey = บ
+sitedata-delete-on-close-private-browsing = ในโหมดการท่องเว็บแบบส่วนตัวแบบถาวร คุกกี้และข้อมูลไซต์จะถูกล้างทุกครั้งเมื่อปิด { -brand-short-name }
 sitedata-allow-cookies-option =
     .label = ยอมรับคุกกี้และข้อมูลไซต์
     .accesskey = ย
@@ -613,16 +611,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = ชนิดที่ถูกปิดกั้น
     .accesskey = ช
-sitedata-block-trackers-option-recommended =
-    .label = ตัวติดตามจากบุคคลที่สาม (แนะนำ)
-sitedata-block-trackers-option =
-    .label = ตัวติดตามจากบุคคลที่สาม
-sitedata-block-unvisited-option =
-    .label = คุกกี้จากเว็บไซต์ที่ไม่ได้เยี่ยมชม
-sitedata-block-all-third-party-option =
-    .label = คุกกี้จากบุคคลที่สามทั้งหมด (อาจส่งผลให้เว็บไซต์ไม่สมบูรณ์)
-sitedata-block-all-option =
-    .label = คุกกี้ทั้งหมด (จะส่งผลให้เว็บไซต์ไม่สมบูรณ์)
 sitedata-option-block-trackers =
     .label = ตัวติดตามจากบุคคลที่สาม
 sitedata-option-block-unvisited =
@@ -637,13 +625,6 @@ sitedata-clear =
 sitedata-settings =
     .label = จัดการข้อมูล…
     .accesskey = จ
-sitedata-cookies-exceptions =
-    .label = ข้อยกเว้น…
-    .accesskey = ข
-# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
-# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
-# Cookies and Site Data section.
-sitedata-warning-your-settings-prevent-changes = การตั้งค่าของคุณใน การปิดกั้นเนื้อหา ป้องกันการเปลี่ยนแปลงการตั้งค่าคุกกี้และข้อมูลไซต์
 sitedata-cookies-permissions =
     .label = จัดการการอนุญาต…
     .accesskey = ด
@@ -666,41 +647,8 @@ addressbar-suggestions-settings = เปลี่ยนค่ากำหนด�
 ## Privacy Section - Content Blocking
 
 content-blocking-header = การปิดกั้นเนื้อหา
-content-blocking-desc = ปิดกั้นเนื้อหาจากบุคคลที่สามอย่างโฆษณาหรือโค้ดที่สามารถทำให้การท่องเว็บของคุณช้าลงและติดตามคุณในเว็บต่าง ๆ ปรับแต่งการตั้งค่าของคุณเพื่อความสมดุลที่ดีที่สุดของการป้องกันและประสิทธิภาพ
 content-blocking-description = ปิดกั้นเนื้อหาจากบุคคลที่สามที่ติดตามคุณในเว็บต่าง ๆ ควบคุมจำนวนกิจกรรมออนไลน์ของคุณที่ถูกจัดเก็บและแบ่งปันระหว่างเว็บไซต์
 content-blocking-learn-more = เรียนรู้เพิ่มเติม
-content-blocking-restore-defaults =
-    .label = เรียกคืนค่าเริ่มต้น
-    .accesskey = ร
-content-blocking-toggle-on =
-    .tooltiptext = ปิดการปิดกั้นเนื้อหา
-content-blocking-toggle-off =
-    .tooltiptext = เปิดการปิดกั้นเนื้อหา
-content-blocking-toggle-label-on = เปิด
-    .accesskey = ป
-content-blocking-toggle-label-off = ปิด
-    .accesskey = ป
-content-blocking-category-label = เลือกสิ่งที่จะปิดกั้น
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-slow-loading-trackers-label =
-    .label = ตัวติดตามที่โหลดช้า
-    .accesskey = ด
-content-blocking-fastblock-new-description = ปิดกั้นแค่ตัวติดตามที่ทำให้หน้าไม่สามารถโหลดได้อย่างรวดเร็ว
-content-blocking-tracking-protection-trackers-label =
-    .label = ตัวติดตาม
-    .accesskey = ต
-content-blocking-tracking-protection-all-detected-trackers-label =
-    .label = ตัวติดตามที่ตรวจพบทั้งหมด
-    .accesskey = ต
-content-blocking-tracking-protection-new-description = ปิดกั้นตัวติดตามที่รู้จักทั้งหมด (อาจป้องกันไม่ให้หน้าบางส่วนโหลด)
-content-blocking-tracking-protection-option-always =
-    .label = เสมอ
-    .accesskey = ส
-content-blocking-tracking-protection-option-private =
-    .label = เฉพาะในหน้าต่างส่วนตัว
-    .accesskey = พ
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 content-blocking-setting-standard =
@@ -722,6 +670,7 @@ content-blocking-all-windows-trackers = ตัวติดตามที่ร�
 content-blocking-all-third-party-cookies = คุกกี้จากบุคคลที่สามทั้งหมด
 content-blocking-warning-title = ระวัง!
 content-blocking-warning-desc = การปิดกั้นคุกกี้และตัวติดตามสามารถส่งผลให้เว็บไซต์บางส่วนไม่สมบูรณ์ การปิดใช้งานการปิดกั้นสำหรับไซต์ที่คุณเชื่อถือเป็นเรื่องง่าย
+content-blocking-warning-description = การปิดกั้นเนื้อหาอาจส่งผลให้บางเว็บใช้การไม่ได้ แต่มันก็ง่ายที่จะปลดการปิดกั้นสำหรับเว็บที่คุณไว้ใจ
 content-blocking-learn-how = เรียนรู้วิธี
 content-blocking-trackers-label =
     .label = ตัวติดตาม
@@ -733,51 +682,21 @@ content-blocking-option-private =
     .label = เฉพาะในหน้าต่างส่วนตัว
     .accesskey = พ
 content-blocking-tracking-protection-change-block-list = เปลี่ยนรายการปิดกั้น
-content-blocking-third-party-cookies-label =
-    .label = คุกกี้จากบุคคลที่สาม
-    .accesskey = ค
-content-blocking-reject-trackers-description = ปิดกั้นคุกกี้จากบุคคลที่สามทั้งหมดหรือแค่คุกกี้ที่ถูกตั้งโดยตัวติดตาม
-# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
-# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
-# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
-# the UI.
-content-blocking-reject-trackers-warning-your-settings-prevent-changes = การตั้งค่าของคุณใน คุกกี้และข้อมูลไซต์ ป้องกันการเปลี่ยนแปลงกับการตั้งค่าคุกกี้บุคคลที่สาม
-content-blocking-change-cookie-settings =
-    .label = เปลี่ยนการตั้งค่าคุกกี้
-    .accesskey = ป
-content-blocking-reject-trackers-block-trackers-option-recommended =
-    .label = ตัวติดตาม (แนะนำ)
-    .accesskey = ว
-content-blocking-reject-trackers-block-trackers-option =
-    .label = ตัวติดตาม
-    .accesskey = ต
-content-blocking-reject-trackers-all-third-parties-option =
-    .label = คุกกี้จากบุคคลที่สามทั้งหมด (อาจส่งผลให้เว็บไซต์ไม่สมบูรณ์)
-    .accesskey = ก
 content-blocking-cookies-label =
     .label = คุกกี้
     .accesskey = ค
+# Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
+content-blocking-cryptominers-label =
+    .label = ตัวขุดเหรียญดิจิทัล
+    .accesskey = y
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+content-blocking-fingerprinters-label =
+    .label = ลายนิ้วมือดิจิทัล
+    .accesskey = F
 
 ## Privacy Section - Tracking
 
-tracking-header = การป้องกันการติดตาม
-tracking-desc = การป้องกันการติดตามปิดกั้นตัวติดตามออนไลน์ที่เก็บรวบรวมข้อมูลการท่องเว็บของคุณในหลายเว็บไซต์ <a data-l10n-name="learn-more">เรียนรู้เพิ่มเติมเกี่ยวกับการป้องกันการติดตามและความเป็นส่วนตัวของคุณ</a>
-tracking-mode-label = ใช้การป้องกันการติดตามเพื่อปิดกั้นตัวติดตามที่รู้จัก
-tracking-mode-always =
-    .label = เสมอ
-    .accesskey = ส
-tracking-mode-private =
-    .label = เฉพาะในหน้าต่างส่วนตัว
-    .accesskey = พ
-tracking-mode-never =
-    .label = ไม่เลย
-    .accesskey = ม
-tracking-exceptions =
-    .label = ข้อยกเว้น…
-    .accesskey = อ
-tracking-change-block-list =
-    .label = เปลี่ยนรายการปิดกั้น…
-    .accesskey = ร
 tracking-manage-exceptions =
     .label = จัดการข้อยกเว้น…
     .accesskey = จ
@@ -809,6 +728,9 @@ permissions-block-autoplay-media =
     .label = ปิดกั้นเว็บไซต์จากการเล่นสื่อพร้อมเสียงโดยอัตโนมัติ
     .accesskey = ป
 permissions-block-autoplay-media-menu = สำหรับเว็บไซต์ที่เล่นเสียงโดยอัตโนมัติ
+permissions-block-autoplay-media2 =
+    .label = ปิดกั้นเว็บไซต์จากการเล่นเสียงโดยอัตโนมัติ
+    .accesskey = ป
 permissions-block-autoplay-media-exceptions =
     .label = ข้อยกเว้น…
     .accesskey = ข

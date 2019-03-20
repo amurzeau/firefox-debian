@@ -88,6 +88,15 @@ detail-update-automatic =
 detail-update-manual =
     .label = Сөндірулі
     .tooltiptext = Жаңартуларды автоорнатпау
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Жекелік шолу режиміндегі терезелерде орындау
+detail-private-browsing-description = Кеңейту жекелік терезелерінде жұмыс істейтін болады, және сіздің желідегі белсенділікке қол жеткізе алады. <label data-l10n-name="detail-private-browsing-learn-more">Көбірек білу</label>
+detail-private-browsing-on =
+    .label = Рұқсат ету
+    .tooltiptext = Жекелік шолу режимінде іске қосу
+detail-private-browsing-off =
+    .label = Рұқсат етпеу
+    .tooltiptext = Жекелік шолу режимінде сөндіру
 detail-home =
     .label = Үй парағы
 detail-home-value =
@@ -130,6 +139,7 @@ legacy-warning-show-legacy = Ескірген кеңейтулерді көрс�
 legacy-extensions =
     .value = Ескірген кеңейтулер
 legacy-extensions-description = Бұл кеңейтулер { -brand-short-name } өнімінің ағымдағы стандартқа сай емес, сондықтан сөндірілді. <label data-l10n-name="legacy-learn-more">Қосымшалар өзгерістері туралы көбірек білу</label>
+private-browsing-description2 = { -brand-short-name } кеңейтулер жекелік шолуда қалай жасайтынын өзгертеді. { -brand-short-name } ішіне қосылған кез келген жаңа кеңейту жекелік терезелерінде орындалмайды. Оған баптаулар ішінен арнайы рұқсат бермесеңіз, кеңейту жекелік шолу режиміне жұмыс істемейді, және ол кездегі сіздің желілік белсенділікке қол жеткізе алмайды. Бұл өзгерісті жекелік шолуыңызды жеке қалдыру үшін жасадық.<label data-l10n-name="private-browsing-learn-more">Кеңейтудің баптауларын өзгерту тәсілі туралы көбірек білу.</label>
 extensions-view-discover =
     .name = Қосымшаларды алу
     .tooltiptext = { extensions-view-discover.name }
@@ -207,3 +217,37 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Жаңартуларды орнату
     .tooltiptext = Бұл тізімдегі қолжетерлік жаңартуларды орнату
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Кеңейтудің пернетақта жарлықтарын басқару
+    .accesskey = ж
+shortcuts-empty-message = Бұл кеңейту үшін ешқандай жарлық жоқ.
+shortcuts-no-addons = Сізде ешқандай кеңейтулер орнатылмаған.
+shortcuts-no-commands = Келесі кеңейтулерде жарлықтар жоқ:
+shortcuts-input =
+    .placeholder = Жарлықты теріңіз
+shortcuts-browserAction = Кеңейтуді белсендіру
+shortcuts-pageAction = Бет әрекетін белсендіру
+shortcuts-sidebarAction = Бүйір панелін көрсету/жасыру
+shortcuts-modifier-mac = Ctrl, Alt, немесе ⌘ қосыңыз
+shortcuts-modifier-other = Ctrl немесе Alt қосыңыз
+shortcuts-invalid = Комбинация жарамсыз
+shortcuts-letter = Әріпті теріңіз
+shortcuts-system = { -brand-short-name } жарлығын қайта анықтау мүмкін емес
+shortcuts-card-expand-button =
+    { $numberToShow ->
+       *[other] Тағы { $numberToShow } көрсету
+    }
+shortcuts-card-collapse-button = Азырақ көрсету
+go-back-button =
+    .tooltiptext = Артқа
+
+## Add-on actions
+
+remove-addon-button = Өшіру
+disable-addon-button = Сөндіру
+enable-addon-button = Іске қосу
+addons-enabled-heading = Іске қосулы
+addons-disabled-heading = Сөндірілген
