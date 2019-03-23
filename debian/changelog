@@ -1,3 +1,14 @@
+firefox (66.0.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2019-09, also known as:
+    CVE-2019-9810, CVE-2019-9813.
+
+  * debian/control*: Bump nss, sqlite, rustc, cargo and cbindgen build
+    dependencies.
+
+ -- Mike Hommey <glandium@debian.org>  Sun, 24 Mar 2019 08:17:24 +0900
+
 firefox (66.0-1) unstable; urgency=medium
 
   * New upstream release.
