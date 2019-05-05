@@ -1,3 +1,11 @@
+firefox-esr (60.6.2esr-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Fixes issues with addon signature validation. Closes: #928415, #928449.
+    Note: this didn't affect addons installed via Debian packages.
+
+ -- Mike Hommey <glandium@debian.org>  Sun, 05 May 2019 20:12:37 +0900
+
 firefox-esr (60.6.1esr-1) unstable; urgency=medium
 
   * New upstream release.
