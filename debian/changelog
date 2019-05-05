@@ -1,3 +1,11 @@
+firefox (66.0.4-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Fixes issues with addon signature validation. Closes: #928417.
+    Note: this didn't affect addons installed via Debian packages.
+
+ -- Mike Hommey <glandium@debian.org>  Sun, 05 May 2019 22:52:24 +0900
+
 firefox (66.0.1-1) unstable; urgency=medium
 
   * New upstream release.
