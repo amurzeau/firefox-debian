@@ -1,3 +1,10 @@
+firefox (66.0.5-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Additional fixes for addon signature validation.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 08 May 2019 08:07:21 +0900
+
 firefox (66.0.4-1) unstable; urgency=medium
 
   * New upstream release.
