@@ -133,6 +133,12 @@ var Policies = {
     }
   },
 
+  "CaptivePortal": {
+    onBeforeAddons(manager, param) {
+      setAndLockPref("network.captive-portal-service.enabled", param);
+    },
+  },
+
   "Certificates": {
     onBeforeAddons(manager, param) {
       if ("ImportEnterpriseRoots" in param) {
@@ -185,15 +191,33 @@ var Policies = {
                 log.error(`Unable to read certificate - ${certfile.path}`);
                 return;
               }
-              let cert = reader.result;
+              let certFile = reader.result;
+              let cert;
               try {
-                if (/-----BEGIN CERTIFICATE-----/.test(cert)) {
-                  gCertDB.addCertFromBase64(pemToBase64(cert), "CTu,CTu,");
-                } else {
-                  gCertDB.addCert(cert, "CTu,CTu,");
-                }
+                cert = gCertDB.constructX509(certFile);
               } catch (e) {
-                log.error(`Unable to add certificate - ${certfile.path}`);
+                try {
+                  // It might be PEM instead of DER.
+                  cert = gCertDB.constructX509FromBase64(pemToBase64(certFile));
+                } catch (ex) {
+                  log.error(`Unable to add certificate - ${certfile.path}`);
+                }
+              }
+              let now = Date.now() / 1000;
+              if (cert) {
+                gCertDB.asyncVerifyCertAtTime(cert, 0x0008 /* certificateUsageSSLCA */,
+                                              0, null, now, (aPRErrorCode, aVerifiedChain, aHasEVPolicy) => {
+                  if (aPRErrorCode == Cr.NS_OK) {
+                    // Certificate is already installed.
+                    return;
+                  }
+                  try {
+                    gCertDB.addCert(certFile, "CT,CT,");
+                  } catch (e) {
+                    // It might be PEM instead of DER.
+                    gCertDB.addCertFromBase64(pemToBase64(certFile), "CT,CT,");
+                  }
+                });
               }
             };
             reader.readAsBinaryString(file);
@@ -533,6 +557,7 @@ var Policies = {
                 onDownloadFailed: () => {
                   install.removeListener(listener);
                   log.error(`Download failed - ${location}`);
+                  clearRunOnceModification("extensionsInstall");
                 },
                 onInstallFailed: () => {
                   install.removeListener(listener);
@@ -556,6 +581,14 @@ var Policies = {
         }
       }
     }
+  },
+
+  "ExtensionUpdate": {
+    onBeforeAddons(manager, param) {
+      if (!param) {
+        setAndLockPref("extensions.update.enabled", param);
+      }
+    },
   },
 
   "FlashPlugin": {
@@ -651,6 +684,13 @@ var Policies = {
         }
       }
     }
+  },
+
+  "NetworkPrediction": {
+    onBeforeAddons(manager, param) {
+      setAndLockPref("network.dns.disablePrefetch", !param);
+      setAndLockPref("network.dns.disablePrefetchFromHTTPS", !param);
+    },
   },
 
   "NoDefaultBookmarks": {
@@ -919,6 +959,12 @@ var Policies = {
     },
   },
 
+  "SupportMenu": {
+    onProfileAfterChange(manager, param) {
+      manager.setSupportMenu(param);
+    },
+  },
+
   "WebsiteFilter": {
     onBeforeUIStartup(manager, param) {
       this.filter = new WebsiteFilter(param.Block || [], param.Exceptions || []);
@@ -1110,6 +1156,16 @@ async function runOncePerModification(actionName, policyValue, callback) {
   }
   Services.prefs.setStringPref(prefName, policyValue);
   return callback();
+}
+
+/**
+ * clearRunOnceModification
+ *
+ * Helper function that clears a runOnce policy.
+*/
+function clearRunOnceModification(actionName) {
+  let prefName = `browser.policies.runOncePerModification.${actionName}`;
+  Services.prefs.clearUserPref(prefName);
 }
 
 let gChromeURLSBlocked = false;
