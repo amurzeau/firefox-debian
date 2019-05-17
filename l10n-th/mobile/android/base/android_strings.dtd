@@ -4,10 +4,13 @@
 
 <!ENTITY firstrun_panel_title_welcome "ยินดีต้อนรับ">
 <!ENTITY firstrun_urlbar_message2 "ขอบคุณที่เลือก &brandShortName;">
+<!ENTITY newfirstrun_urlbar_message "ยินดีต้อนรับสู่ &brandShortName;">
 <!ENTITY firstrun_urlbar_subtext2 "เบราว์เซอร์มือถือที่ทันสมัยจาก Mozilla องค์กรไม่แสวงหาผลกำไรที่มุ่งมั่นเพื่อเว็บเสรีและเปิดกว้าง">
+<!ENTITY newfirstrun_urlbar_subtext "รวดเร็ว เป็นส่วนตัว และอยู่เคียงข้างคุณ">
 <!ENTITY firstrun_panel_title_privacy "ความเป็นส่วนตัว">
 <!ENTITY firstrun_privacy_message "ท่องเว็บเหมือนไม่มีใครเฝ้ามองอยู่">
 <!ENTITY firstrun_privacy_subtext "การท่องเว็บแบบส่วนตัวพร้อมการป้องกันการติดตามปิดกั้นตัวติดตามขณะที่คุณท่องเว็บและจะไม่จดจำประวัติของคุณเมื่อคุณเสร็จสิ้นการท่องเว็บ">
+<!ENTITY newfirstrun_privacy_subtext "การท่องเว็บแบบส่วนตัวปิดกั้นตัวติดตามโฆษณาที่ติดตามคุณออนไลน์">
 <!ENTITY firstrun_panel_title_customize "ปรับแต่ง">
 <!ENTITY firstrun_customize_message "ทำให้ &brandShortName; เป็นของคุณเอง">
 <!ENTITY firstrun_customize_subtext "ปรับแต่ง &brandShortName; ด้วยส่วนเสริม ปิดกั้นโฆษณา เพิ่มคุณลักษณะ หรือเลือกชุดตกแต่งใหม่เพื่อสะท้อนบุคลิกภาพของคุณ">
@@ -20,8 +23,10 @@
 <!ENTITY firstrun_sync_title "ซิงค์">
 <!ENTITY firstrun_sync_message2 "หยิบจากที่ที่คุณทำค้างไว้">
 <!ENTITY firstrun_sync_subtext2 "ใช้ Sync เพื่อค้นหาที่คั่นหน้า, รหัสผ่าน และสิ่งอื่น ๆ ที่คุณบันทึกไปยัง &brandShortName; ในอุปกรณ์ทั้งหมดของคุณ">
+<!ENTITY newfirstrun_sync_subtext "ซิงค์สิ่งที่คุณบันทึกบนมือถือไปยัง Firefox บนเดสก์ท็อป ได้อย่างเป็นส่วนตัวและปลอดภัย">
 <!ENTITY firstrun_signin_message "รับการเชื่อมต่อ เริ่มต้นใช้งาน">
 <!ENTITY firstrun_signin_button "ลงชื่อเข้า Sync">
+<!ENTITY newfirstrun_signin_button "เปิดใช้ Sync">
 <!ENTITY  onboard_start_button_browser "เริ่มการท่องเว็บ">
 <!ENTITY firstrun_button_notnow "ไม่ใช่ตอนนี้">
 <!ENTITY firstrun_button_next "ถัดไป">
@@ -50,7 +55,7 @@
 <!ENTITY  tab_offline_version "กำลังแสดงรุ่นออฟไลน์">
 
 <!ENTITY  crash_reporter_title "ตัวรายงานข้อขัดข้อง &brandShortName;">
-<!ENTITY  crash_message2 "&brandShortName; เกิดปัญหาและขัดข้อง แท็บของคุณจะถูกแสดงรายการในหน้าเริ่มต้นของ &brandShortName; เมื่อคุณเริ่มการทำงานใหม่">
+<!ENTITY  crash_message2 "&brandShortName; เกิดปัญหาและขัดข้อง แท็บของคุณควรแสดงรายการในหน้าเริ่มต้นของ &brandShortName; เมื่อคุณเริ่มการทำงานใหม่">
 <!ENTITY  crash_send_report_message3 "แจ้ง &vendorShortName; เกี่ยวกับข้อขัดข้องนี้เพื่อให้พวกเขาสามารถแก้ไขปัญหาได้">
 <!ENTITY  crash_include_url2 "รวมที่อยู่ของหน้าที่ฉันเข้าชมอยู่">
 <!ENTITY  crash_sorry "เราต้องขออภัย">
@@ -63,6 +68,12 @@
 <!ENTITY  crash_restart_label "เริ่มการทำงาน &brandShortName; ใหม่">
 
 <!ENTITY url_bar_default_text2 "ค้นหาหรือป้อนที่อยู่">
+
+<!-- Localization note: this text will be displayed in the Search Widget -->
+<!ENTITY search_widget_default_text "ค้นหาเว็บ">
+<!ENTITY search_widget_default_cropped_text "ค้นหา">
+<!ENTITY search_widget_logo_description "ค้นหาเว็บด้วย &brandShortName;">
+
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
      icon in the url bar. -->
@@ -220,7 +231,7 @@
 <!ENTITY pref_category_home_panels "แผง">
 <!ENTITY pref_category_home_add_ons "ส่วนเสริม">
 <!ENTITY pref_home_updates2 "การอัปเดตเนื้อหา">
-<!ENTITY pref_home_updates_enabled "ถูกเปิดใช้งาน">
+<!ENTITY pref_home_updates_enabled "เปิดใช้งานอยู่">
 <!ENTITY pref_home_updates_wifi "เฉพาะผ่าน Wi-Fi">
 <!ENTITY pref_category_home_homepage "หน้าแรก">
 <!-- Localization note (home_homepage_every_new_tab): The user will see a switch to determine if the
@@ -254,9 +265,9 @@
 <!ENTITY pref_header_vendor "&vendorShortName;">
 
 <!ENTITY pref_cookies_menu "คุกกี้">
-<!ENTITY pref_cookies_accept_all "ถูกเปิดใช้งาน">
-<!ENTITY pref_cookies_not_accept_foreign "ถูกเปิดใช้งาน ยกเว้นจากบุคคลที่สาม">
-<!ENTITY pref_cookies_disabled "ถูกปิดใช้งาน">
+<!ENTITY pref_cookies_accept_all "เปิดใช้งานอยู่">
+<!ENTITY pref_cookies_not_accept_foreign "เปิดใช้งานอยู่ ยกเว้นจากบุคคลที่สาม">
+<!ENTITY pref_cookies_disabled "ปิดใช้งานอยู่">
 
 <!-- Localization note (pref_category_data_saver): “data saver” in this
      context means consuming less data, e.g. by not loading images, not
@@ -268,7 +279,7 @@
 <!ENTITY pref_tap_to_load_images_title2 "แสดงภาพ">
 <!ENTITY pref_tap_to_load_images_enabled "เสมอ">
 <!ENTITY pref_tap_to_load_images_data "เฉพาะผ่าน Wi-Fi">
-<!ENTITY pref_tap_to_load_images_disabled2 "ถูกปิดกั้น">
+<!ENTITY pref_tap_to_load_images_disabled2 "ปิดกั้นแล้ว">
 
 <!ENTITY pref_show_web_fonts "แสดงแบบอักษรเว็บ">
 <!ENTITY pref_show_web_fonts_summary2 "ดาวน์โหลดแบบอักษรระยะไกลเมื่อโหลดหน้า">
@@ -277,9 +288,9 @@
 <!ENTITY pref_donottrack_title "ไม่ติดตาม">
 <!ENTITY pref_donottrack_summary "&brandShortName; จะบอกไซต์ว่าคุณไม่ต้องการถูกติดตาม">
 
-<!ENTITY pref_tracking_protection_enabled "ถูกเปิดใช้งาน">
-<!ENTITY pref_tracking_protection_enabled_pb "ถูกเปิดใช้งานในการท่องเว็บแบบส่วนตัว">
-<!ENTITY pref_tracking_protection_disabled "ถูกปิดใช้งาน">
+<!ENTITY pref_tracking_protection_enabled "เปิดใช้งานอยู่">
+<!ENTITY pref_tracking_protection_enabled_pb "เปิดใช้งานอยู่ในการท่องเว็บแบบส่วนตัว">
+<!ENTITY pref_tracking_protection_disabled "ปิดใช้งานอยู่">
 
 <!ENTITY pref_whats_new_notification "มีอะไรใหม่ใน &brandShortName;">
 <!ENTITY pref_whats_new_notification_summary "เรียนรู้เกี่ยวกับคุณลักษณะใหม่หลังจากการอัปเดต">
@@ -290,17 +301,12 @@
 <!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
      Similar to the already existing "pref_whats_new_notification_summary"-->
 <!ENTITY pref_feature_tips_notification_summary "เรียนรู้เพิ่มเติมเกี่ยวกับการใช้ &brandShortName; และผลิตภัณฑ์ &vendorShortName; อื่น ๆ">
-<!-- Localization note (pref_feature_tips_notification_enabling_hint):
-     Describe the action the user should do to enable this preference
-     Will be used in the context "<Turn on> ... to enable this feature" -->
-<!ENTITY pref_feature_tips_notification_enabling_hint "เปิด">
-
 <!-- Localization note (pref_feature_tips_notification_enabling_path):
      Nothing to translate. Simple concatenation of already localized strings. Result is used below. -->
 <!ENTITY pref_feature_tips_notification_enabling_path "&pref_category_privacy_short; > &pref_category_datareporting; > &datareporting_fhr_title;">
 <!-- Localization note (pref_feature_tips_notification_enabling_hint):
      Describe the action the user should do to enable this preference. -->
-<!ENTITY pref_feature_tips_notification_enabling_hint2 "(เพื่อเปิดใช้งานตัวเลือกนี้ &pref_feature_tips_notification_enabling_path; ต้องถูกเปิดใช้งานอยู่แล้ว)">
+<!ENTITY pref_feature_tips_notification_enabling_hint2 "(เพื่อเปิดใช้งานตัวเลือกนี้ ต้องเปิดใช้งาน &pref_feature_tips_notification_enabling_path; อยู่แล้ว)">
 
 <!-- Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
      for experimental features. -->
@@ -340,6 +346,9 @@
 <!-- Localization note (tab_queue_prompt_settings_button): This button is shown if the user needs to
      enable a permission in Android's setting in order to enable tab queues. -->
 <!ENTITY tab_queue_prompt_settings_button "ไปยังการตั้งค่า">
+<!-- Localization note (tab_queue_notification_prompt): This is the text of the default notification
+shown from Android O while a tab is being queued.-->
+<!ENTITY tab_queue_notification_prompt "กำลังเพิ่มแท็บใหม่ลงในคิว&#8230;">
 <!ENTITY tab_queue_notification_title "&brandShortName;">
 <!-- Localization note (tab_queue_notification_text_plural2) : The
      formatD is replaced with the number of tabs queued.  The
@@ -352,7 +361,7 @@
 
 <!-- Localization note (tab_queue_notification_settings): This notification text is shown if a tab
      has been queued but we are missing the system permission to show an overlay. -->
-<!ENTITY tab_queue_notification_settings "เพื่อ \&quot;เปิดหลายลิงก์\&quot; โปรดเปิดใช้งานการอนุญาต \&apos;วาดทับแอปอื่นๆ\&apos; สำหรับ &brandShortName;">
+<!ENTITY tab_queue_notification_settings "เพื่อ \&quot;เปิดหลายลิงก์\&quot; โปรดเปิดใช้งานสิทธิอนุญาต \&apos;วาดทับแอปอื่นๆ\&apos; สำหรับ &brandShortName;">
 
 <!ENTITY pref_char_encoding "รหัสอักขระ">
 <!ENTITY pref_char_encoding_on "แสดงเมนู">
@@ -398,7 +407,6 @@
 <!ENTITY pref_private_data_searchHistory "ประวัติการค้นหา">
 <!ENTITY pref_private_data_formdata2 "ประวัติแบบฟอร์ม">
 <!ENTITY pref_private_data_cookies2 "คุกกี้และการเข้าสู่ระบบที่ใช้งานอยู่">
-<!ENTITY pref_private_data_passwords2 "การเข้าสู่ระบบที่บันทึกไว้">
 <!ENTITY pref_private_data_cache "แคช">
 <!ENTITY pref_private_data_offlineApps "ข้อมูลเว็บไซต์ออฟไลน์">
 <!ENTITY pref_private_data_siteSettings2 "การตั้งค่าไซต์">
@@ -406,6 +414,12 @@
 <!ENTITY pref_private_data_syncedTabs "แท็บที่ซิงค์">
 
 <!ENTITY pref_default_browser "ทำให้เป็นเบราว์เซอร์เริ่มต้น">
+
+<!ENTITY pref_default_browser2 "ทำให้ &brandShortName; เป็นเบราว์เซอร์เริ่มต้นของฉัน">
+<!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
+    Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
+    and instruct users to tap on the "Browser app" option on that settings screen to choose a default browser app. -->
+<!ENTITY default_browser_system_settings_toast "แตะแอปเบราว์เซอร์และเลือก &brandShortName;">
 <!ENTITY pref_default_browser_mozilla_support_tablet "เยี่ยมชมการสนับสนุนจาก Mozilla">
 <!ENTITY pref_about_firefox "เกี่ยวกับ &brandShortName;">
 <!ENTITY pref_vendor_faqs "คำถามที่พบบ่อย">
@@ -500,6 +514,10 @@
 <!ENTITY find_prev "ก่อนหน้า">
 <!ENTITY find_next "ถัดไป">
 <!ENTITY find_close "ปิด">
+
+<!-- Localization note (find_error) : Error message shown when there is no result for the
+     searched for text in this webpage -->
+<!ENTITY find_error "ไม่พบวลี">
 
 <!-- Localization note (media_sending_to, media_play, media_pause, media_stop) : These strings are used
      as alternate text for accessibility. They are not visible in the UI. -->
@@ -687,9 +705,9 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 
 <!-- Tracking content notifications in site identity popup -->
 <!ENTITY doorhanger_tracking_title2 "การป้องกันการติดตาม">
-<!ENTITY doorhanger_tracking_state_enabled "ถูกเปิดใช้งาน">
-<!ENTITY doorhanger_tracking_state_disabled "ถูกปิดใช้งาน">
-<!ENTITY doorhanger_tracking_message_enabled1 "ความพยายามในการติดตามพฤติกรรมออนไลน์ของคุณถูกปิดกั้น">
+<!ENTITY doorhanger_tracking_state_enabled "เปิดใช้งานอยู่">
+<!ENTITY doorhanger_tracking_state_disabled "ปิดใช้งานอยู่">
+<!ENTITY doorhanger_tracking_message_enabled1 "ปิดกั้นความพยายามในการติดตามพฤติกรรมออนไลน์ของคุณแล้ว">
 <!ENTITY doorhanger_tracking_message_disabled2 "หน้านี้มีองค์ประกอบที่อาจติดตามการท่องเว็บของคุณ">
 
 <!-- Common mixed and tracking content strings in site identity popup -->
@@ -737,7 +755,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- Localization note (updater_permission_text): This text is shown in a notification and as a snackbar
      if the app requires a runtime permission to download updates. Currently, the updater only sees
      remotely advertised updates in the Nightly and Aurora channels. -->
-<!ENTITY updater_permission_text "เพื่อดาวน์โหลดไฟล์และการอัปเดต อนุญาตให้ &brandShortName; เข้าถึงที่เก็บข้อมูล">
+<!ENTITY updater_permission_text "เพื่อดาวน์โหลดไฟล์และการอัปเดต อนุญาตสิทธิอนุญาตให้ &brandShortName; เข้าถึงที่เก็บข้อมูล">
 <!-- LOCALIZATION NOTE (updater_permission_allow): This action is shown in a snackbar along with updater_permission_text. -->
 <!ENTITY updater_permission_allow "อนุญาต">
 
@@ -747,12 +765,12 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY guest_session_dialog_continue "ดำเนินการต่อ">
 <!ENTITY guest_session_dialog_cancel "ยกเลิก">
 <!ENTITY new_guest_session_title "&brandShortName; จะเริ่มการทำงานใหม่">
-<!ENTITY new_guest_session_text2 "บุคคลที่ใช้งานจะไม่สามารถเห็นข้อมูลการท่องเว็บส่วนบุคคลใด ๆ ของคุณ (อย่างการเข้าสู่ระบบที่บันทึกไว้, ประวัติ หรือที่คั่นหน้า)\n\nเมื่อผู้มาเยือนของคุณใช้งานเสร็จ ข้อมูลการท่องเว็บของเขาจะถูกลบและวาระของคุณจะถูกเรียกคืน">
+<!ENTITY new_guest_session_text2 "บุคคลที่ใช้งานจะไม่สามารถเห็นข้อมูลการท่องเว็บส่วนบุคคลใด ๆ ของคุณ (อย่างการเข้าสู่ระบบที่บันทึกไว้, ประวัติ หรือที่คั่นหน้า)\n\nเมื่อผู้มาเยือนของคุณใช้งานเสร็จ จะลบข้อมูลการท่องเว็บของเขาและจะเรียกคืนวาระของคุณ">
 <!ENTITY guest_browsing_notification_title "เปิดใช้งานการท่องเว็บสำหรับผู้มาเยือนแล้ว">
 <!ENTITY guest_browsing_notification_text "แตะเพื่อออก">
 
 <!ENTITY exit_guest_session_title "&brandShortName; จะเริ่มการทำงานใหม่">
-<!ENTITY exit_guest_session_text "ข้อมูลการท่องเว็บจากวาระนี้จะถูกลบ">
+<!ENTITY exit_guest_session_text "จะลบข้อมูลการท่องเว็บจากวาระนี้">
 
 <!-- Miscellaneous -->
 <!-- LOCALIZATION NOTE (ellipsis): This text is appended to a piece of text that does not fit in the
@@ -826,7 +844,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- LOCALIZATION NOTE (bookmarks_support): link title for https://support.mozilla.org/ -->
 <!ENTITY bookmarks_support "Firefox: การสนับสนุน">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_support): link title for https://support.mozilla.org/kb/controlledaccess -->
-<!ENTITY bookmarks_restricted_support2 "ความช่วยเหลือและการสนับสนุนของ Firefox สำหรับโปรไฟล์ที่ถูกจำกัดในแท็บเล็ต Android">
+<!ENTITY bookmarks_restricted_support2 "ความช่วยเหลือและการสนับสนุนของ Firefox สำหรับโปรไฟล์ที่จำกัดในแท็บเล็ต Android">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_webmaker):link title for https://webmaker.org -->
 <!ENTITY bookmarks_restricted_webmaker "เรียนรู้เว็บ: Mozilla Webmaker">
 
@@ -878,7 +896,7 @@ is simply hidden from the Activity Stream panel. -->
 
 <!ENTITY private_tab_panel_title "การท่องเว็บแบบส่วนตัว + การป้องกันการติดตาม">
 <!ENTITY private_tab_panel_description "&brandShortName; ปิดกั้นบางส่วนของหน้าที่อาจติดตามกิจกรรมการท่องเว็บของคุณ">
-<!ENTITY private_tab_panel_description2 "เราจะไม่จดจำประวัติใด ๆ แต่ไฟล์ที่ดาวน์โหลดและที่คั่นหน้าใหม่จะยังคงถูกบันทึกไว้ในอุปกรณ์ของคุณ">
+<!ENTITY private_tab_panel_description2 "เราจะไม่จดจำประวัติใด ๆ แต่จะยังคงบันทึกไฟล์ที่ดาวน์โหลดและที่คั่นหน้าใหม่ไว้ในอุปกรณ์ของคุณ">
 <!ENTITY private_tab_learn_more "ต้องการเรียนรู้เพิ่มเติม?">
 
 <!ENTITY fullscreen_warning "เข้าสู่ภาพเต็มหน้าจอแล้ว">
@@ -900,16 +918,11 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_title "หยุดชั่วคราว">
 <!ENTITY pip_pause_button_description "หยุดเล่นชั่วคราว">
 
-<!-- Notification channels names -->
-<!ENTITY default_notification_channel "&brandShortName;">
-
+<!ENTITY pref_notification_settings_link "จัดการการตั้งค่าการแจ้งเตือน">
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "เบราว์เซอร์">
 <!ENTITY mls_notification_channel "บริการตำแหน่งที่ตั้งของ &vendorShortName;">
 <!ENTITY download_notification_channel "การดาวน์โหลด">
-<!ENTITY media_notification_channel "การเล่นสื่อ">
-<!-- These push notifications come without a specific channel and/or name from Leanplum -->
-<!ENTITY leanplum_default_notifications_channel "การแจ้งเตือนแบบผลักของ &brandShortName;">
 <!ENTITY media_notification_channel2 "เสียงและวิดีโอ">
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
 <!ENTITY leanplum_default_notifications_channel2 "เคล็ดลับและเทคนิคของ &vendorShortName;">

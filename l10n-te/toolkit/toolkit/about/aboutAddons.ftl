@@ -86,6 +86,12 @@ detail-update-automatic =
 detail-update-manual =
     .label = ఆఫ్ చేయి
     .tooltiptext = తాజాకరణలను స్వయంచాలకంగా స్థాపించవద్దు
+detail-private-browsing-on =
+    .label = అనుమతించు
+    .tooltiptext = అంతరంగిక విహరణలో చేతనంచేయి
+detail-private-browsing-off =
+    .label = అనుమతించ వద్దు
+    .tooltiptext = అంతరంగిక విహరణలో అచేతనించు
 detail-home =
     .label = ముంగిలిపేజీ
 detail-home-value =
@@ -208,3 +214,26 @@ extensions-updates-update-selected =
 
 ## Extension shortcut management
 
+shortcuts-card-collapse-button = తక్కువ చూపించు
+go-back-button =
+    .tooltiptext = వెనుకకు వెళ్ళు
+
+## Add-on actions
+
+remove-addon-button = తొలగించు
+disable-addon-button = అచేతనించు
+enable-addon-button = చేతనించు
+expand-addon-button = మరిన్ని ఎంపికలు
+addons-enabled-heading = చేతనం
+addons-disabled-heading = అచేతనం
+addon-detail-author-label = రచయిత
+addon-detail-version-label = వెర్షను
+addon-detail-homepage-label = ముంగిలిపేజీ
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } సమీక్ష
+       *[other] { $numberOfReviews } సమీక్షలు
+    }

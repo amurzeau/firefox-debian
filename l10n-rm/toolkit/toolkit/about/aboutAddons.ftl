@@ -82,6 +82,9 @@ detail-version =
 detail-last-updated =
     .label = Ultima actualisaziun
 detail-contributions-description = Il sviluppader da quest supplement ta dumonda da sustegnair il svilup dal supplement cun ina pitschna contribuziun finanziala.
+detail-contributions-button = Contribuir
+    .title = Contribuir al svilup da quest supplement
+    .accesskey = C
 detail-update-type =
     .value = Actualisaziuns automaticas
 detail-update-default =
@@ -95,7 +98,14 @@ detail-update-manual =
     .tooltiptext = Betg installar automaticamain las actualisaziuns
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Exequir en fanestras privatas
-detail-private-browsing-description = L'extensiun vegn a funcziunar en fanestras privatas ed avair access a tias activitads online. <label data-l10n-name="detail-private-browsing-learn-more">Ulteriuras infurmaziuns</label>
+detail-private-browsing-description2 = Sche permess vegn l'extensiun ad avair access a tias activitads online en il modus privat. <label data-l10n-name="detail-private-browsing-learn-more">Ulteriuras infurmaziuns</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = Betg permess en fanestras privatas
+detail-private-disallowed-description = Questa extensiun na vegn betg exequida en il modus privat. <label data-l10n-name="detail-private-browsing-learn-more">Ulteriuras infurmaziuns</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Basegna access a fanestras privatas
+detail-private-required-description = Questa extensiun ha access a tias activitads en l'internet durant la navigaziun en il modus privat. <label data-l10n-name="detail-private-browsing-learn-more">Ulteriuras infurmaziuns</label>
 detail-private-browsing-on =
     .label = Permetter
     .tooltiptext = Activar en il modus privat
@@ -246,6 +256,10 @@ shortcuts-modifier-other = Includer Ctrl u Alt
 shortcuts-invalid = Cumbinaziun nunvalida
 shortcuts-letter = Tippa ina letra
 shortcuts-system = Impussibel da surscriver ina scursanida da { -brand-short-name }
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Gia utilisada da { $addon }
 shortcuts-card-expand-button =
     { $numberToShow ->
         [one] Mussar anc { $numberToShow }
@@ -260,5 +274,23 @@ go-back-button =
 remove-addon-button = Allontanar
 disable-addon-button = Deactivar
 enable-addon-button = Activar
+expand-addon-button = Ulteriuras opziuns
 addons-enabled-heading = Activà
 addons-disabled-heading = Deactivà
+addon-detail-author-label = Autur(a)
+addon-detail-version-label = Versiun
+addon-detail-last-updated-label = Ultima actualisaziun
+addon-detail-homepage-label = Pagina d'internet
+addon-detail-rating-label = Valitaziun
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (deactivà)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } valitaziun
+       *[other] { $numberOfReviews } valitaziuns
+    }

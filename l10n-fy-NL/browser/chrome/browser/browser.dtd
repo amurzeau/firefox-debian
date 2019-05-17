@@ -64,6 +64,8 @@ but will never be visible at the same time. -->
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "w">
 
+<!-- Tab context menu -->
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -108,7 +110,6 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Ferstoppe ljepblêden">
 
 <!ENTITY  listAllTabs.label      "Alle ljepblêdtitels werjaan">
-
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
 <!ENTITY  allTabsMenu.searchTabs.label       "Ljepblêden trochsykje">
@@ -130,6 +131,9 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "Ofdrukke…">
 <!ENTITY printCmd.accesskey "d">
 <!ENTITY printCmd.commandkey "P">
+
+<!ENTITY importFromAnotherBrowserCmd.label "Ymportearje fan in oare browser út…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "b">
 
 <!ENTITY taskManagerCmd.label "Taakbehearder">
 
@@ -213,6 +217,28 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenExit.label "Folsleinskermmodus ôfslute">
 <!ENTITY fullScreenExit.accesskey "F">
 
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "Nim Firefox mei jo mei">
+<!ENTITY fxa.signin.description.label "Berik jo blêdwizers, skiednis, wachtwurden en oare ynstellingen op al jo apparaten.">
+<!ENTITY fxa.signin.button.label "&syncBrand.shortName.label; ynskeakelje…">
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "Kontrolearje jo e-mail">
+<!ENTITY fxa.unverified.description.label "Jo moatte jo account ferifiearje eardat jo syngronisearje kinne.">
+<!ENTITY fxa.unverified.button.label "&syncBrand.shortName.label;-ynstellingen iepenje…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "Oanmeld as">
+<!ENTITY fxa.menu.manageAccount.label "Account beheare…">
+<!ENTITY fxa.menu.syncSettings.label "&syncBrand.shortName.label;-ynstellingen…">
+<!ENTITY fxa.menu.connectAnotherDevice.label "&syncedTabs.sidebar.connectAnotherDevice;">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "In oar apparaat ferbine…">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
+
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
      respectively before and after the domain requiring fullscreen.
@@ -229,6 +255,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "Folslein skerm ferlitte (esc)">
 <!ENTITY leaveDOMFullScreen.label "Folsleinskerm ferlitte">
 <!ENTITY leaveDOMFullScreen.accesskey "f">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.label "Picture-in-Picture">
+<!ENTITY pictureInPicture.accesskey "u">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -277,7 +309,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.defaultNotificationAnchor.tooltip         "Berjochtpaniel iepenje">
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "Lokaasjefersyk-paniel iepenje">
 <!ENTITY urlbar.autoplayNotificationAnchor.tooltip        "Paniel automatysk ôfspylje iepenje">
-<!ENTITY urlbar.addonsNotificationAnchor.tooltip          "Add-on-ynstallaasjebejocht-paniel iepenje">
+<!ENTITY urlbar.addonsNotificationAnchor.tooltip          "Berjochtepaniel foar add-on-ynstallaasje iepenje">
 <!ENTITY urlbar.canvasNotificationAnchor.tooltip          "Canvas-ekstraksjetastimming beheare">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "Offline ûnthâldberjochtpaniel iepenje">
 <!ENTITY urlbar.passwordNotificationAnchor.tooltip        "Bewarre oanmeldingenberjochtpaniel iepenje">
@@ -292,7 +324,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Dielen fan jo mikrofoan mei de website beheare">
 <!ENTITY urlbar.webRTCShareScreenNotificationAnchor.tooltip       "Dielen fan jo finsters of skerm mei de website beheare">
 
-<!ENTITY urlbar.servicesNotificationAnchor.tooltip        "Ynstallaasjeberjochtpaniel iepenje">
+<!ENTITY urlbar.servicesNotificationAnchor.tooltip        "Berjochtepaniel foar ynstallaasje iepenje">
 <!ENTITY urlbar.translateNotificationAnchor.tooltip       "Dizze side oersette">
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Sideoersetting beheare">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Gebrûk fan DRM-software beheare">
@@ -408,6 +440,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.label       "Foarkarren…">
 <!ENTITY preferencesCmdUnix.accesskey     "F">
 
+<!ENTITY logins.label                           "Oanmeldingen en wachtwurden">
+
 <!ENTITY clearRecentHistory.label               "Resinte skiednis wiskje…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
@@ -437,6 +471,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.clearRecent.label "Resinte skiednis wiskje…">
 <!ENTITY appMenuHistory.restoreSession.label "Foarige sesje werom bringe">
 <!ENTITY appMenuHistory.viewSidebar.label "Skiednissydbalke werjaaan">
+<!ENTITY appMenuHistory.hideSidebar.label "Skiednissidebalke ferstopje">
 <!ENTITY appMenuHistory.recentHistory.label "Resinte skiednis">
 <!ENTITY appMenuHelp.label "Help">
 
@@ -465,6 +500,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Oanmelde by Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Apparaten beheare…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Syngroane-ljepblêdensidebalke werjaan">
+<!ENTITY appMenuRemoteTabs.hidesidebar.label "Sidebalke mei syngronisearre ljepblêden ferstopje">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Noch in apparaat keppelje">
 
 <!ENTITY appMenuRecentHighlights.label "Resinte hichtepunten">
@@ -879,7 +915,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "Jo hawwe dizze website gjin spesjale tastimmingen jûn.">
 <!ENTITY identity.permissionsReloadHint "It is mooglik dat jo de side opnij lade moatte om de wizigingen aktyf te meitsjen.">
 <!ENTITY identity.permissionsPreferences.tooltip "Opsjes tastimmingen iepenje">
-
 <!ENTITY identity.contentBlockingPreferences.tooltip "Foarkarren foar ynhâldsblokkearring iepenje">
 
 
@@ -931,6 +966,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSignIn.label             "Oanmelde by &syncBrand.shortName.label;…">
 <!ENTITY syncSignIn.accesskey         "y">
 <!ENTITY syncSyncNowItem.label        "No syngronisearje">
+<!ENTITY syncSyncNowItemSyncing.label "Syngronisearje…">
 <!ENTITY syncSyncNowItem.accesskey    "N">
 <!ENTITY syncReAuthItem.label         "Opnij ferbine mei &syncBrand.shortName.label;…">
 <!ENTITY syncReAuthItem.accesskey     "O">
@@ -1073,6 +1109,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.acceptButton.accesskey "F">
 <!ENTITY updateAvailable.cancelButton.label "No net">
 <!ENTITY updateAvailable.cancelButton.accesskey "N">
+
 <!ENTITY updateAvailable.panelUI.label "&brandShorterName;-fernijing downloade">
 
 <!ENTITY updateManual.message "Download in farske kopy fan &brandShorterName; en wy helpe jo it te ynstallearjen.">
@@ -1133,8 +1170,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "Behear jo add-ons troch op <image class='addon-addon-icon'/> yn it menu <image class='addon-toolbar-icon'/> te klikken.">
-<!ENTITY addonPostInstall.incognito.label "Dizze útwreiding tastean om yn priveefinsters útfierd te wurden.">
-<!ENTITY addonPostInstall.incognito.accesskey "D">
+<!ENTITY addonPostInstall.incognito.checkbox.label "Dizze útwreiding yn priveefinsters útfiere litte">
+<!ENTITY addonPostInstall.incognito.checkbox.accesskey "D">
 
 <!ENTITY addonPrivateBrowsing.header2.label "Wiziging oan útwreidingen yn priveefinsters">
 <!ENTITY addonPrivateBrowsing.body2.label "Nije útwreidingen dy't jo oan &brandShorterName; tafoegje wurkje net yn priveefinsters, útsein jo dit tastean yn de ynstellingen.">

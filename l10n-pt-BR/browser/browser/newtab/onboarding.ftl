@@ -5,10 +5,35 @@
 
 ## UI strings for the simplified onboarding modal
 
+onboarding-button-label-learn-more = Saiba mais
 onboarding-button-label-try-now = Experimente agora
 onboarding-button-label-get-started = Começar
-onboarding-welcome-header = Bem-vindo ao { -brand-short-name }
+onboarding-welcome-header = Boas-vindas ao { -brand-short-name }
+onboarding-welcome-body = Você instalou o navegador.<br/>Descubra outros produtos e serviços da { -brand-product-name }.
+onboarding-welcome-learn-more = Saiba mais sobre os benefícios.
+onboarding-join-form-header = Junte-se à { -brand-product-name }
+onboarding-join-form-body = Digite seu endereço de e-mail para começar.
+onboarding-join-form-email =
+    .placeholder = Digite seu e-mail
+onboarding-join-form-email-error = É necessário um e-mail válido
+onboarding-join-form-legal = Ao continuar, você concorda com os <a data-l10n-name="terms">Termos do Serviço</a> e <a data-l10n-name="privacy">Aviso de Privacidade</a>.
+onboarding-join-form-continue = Continuar
 onboarding-start-browsing-button-label = Comece a navegar
+
+## These are individual benefit messages shown with an image, title and
+## description.
+
+onboarding-benefit-products-title = Produtos úteis
+onboarding-benefit-products-text = Faça as coisas com uma família de ferramentas que respeita sua privacidade em todos os seus dispositivos.
+onboarding-benefit-knowledge-title = Conhecimento prático
+onboarding-benefit-knowledge-text = Aprenda tudo o que precisa saber para ficar mais esperto e seguro online.
+onboarding-benefit-privacy-title = Privacidade verdadeira
+# "Personal Data Promise" is a concept that should be translated consistently
+# across the product. It refers to a concept shown elsewhere to the user: "The
+# Firefox Personal Data Promise is the way we honor your data in everything we
+# make and do. We take less data. We keep it safe. And we make sure that we are
+# transparent about how we use it."
+onboarding-benefit-privacy-text = Tudo o que fazemos honra nossa Promessa de Dados Pessoais: Levar menos. Manter seguro. Sem segredos.
 
 ## These strings belong to the individual onboarding messages.
 
@@ -27,7 +52,49 @@ onboarding-ghostery-title = Ghostery
 onboarding-ghostery-text = Navegue mais rápido, mais esperto, ou mais seguro com extensões como o Ghostery, que permite bloquear propagandas chatas.
 # Note: "Sync" in this case is a generic verb, as in "to synchronize"
 onboarding-fxa-title = Sincronizar
-onboarding-fxa-text = Cadastre-se para uma { -fxaccount-brand-name } e sincronize seus favoritos, senhas e abas abertas com todos os lugares em que você usa o { -brand-short-name }.
+onboarding-fxa-text = Cadastre uma { -fxaccount-brand-name } e sincronize seus favoritos, senhas e abas abertas onde quer que você use o { -brand-short-name }.
+onboarding-tracking-protection-title = Controle como você é rastreado
+onboarding-tracking-protection-text = Não gosta quando anúncios seguem você? A { -brand-short-name } ajuda a controlar como os anunciantes rastreiam sua atividade online.
+# "Update" is a verb, as in "Update the existing settings", not "Options about
+# updates".
+onboarding-tracking-protection-button =
+    { PLATFORM() ->
+        [windows] Opções de atualização
+       *[other] Preferências de atualização
+    }
+onboarding-data-sync-title = Leve suas configurações com você
+# "Sync" is short for synchronize.
+onboarding-data-sync-text = Sincronize seus favoritos e senhas em todos os lugares em que usa o { -brand-product-name }.
+onboarding-data-sync-button = Ativar o { -sync-brand-short-name }
+onboarding-firefox-monitor-title = Fique atento a vazamentos de dados
+onboarding-firefox-monitor-text = O { -monitor-brand-name } verifica se seu e-mail apareceu em um vazamento de dados e manda um alerta para você caso apareça em um novo vazamento.
+onboarding-firefox-monitor-button = Cadastre-se para receber alertas
+onboarding-browse-privately-title = Navegue com privacidade
+onboarding-browse-privately-text = A navegação privativa limpa sua pesquisa e seu histórico de navegação para manter em segredo de qualquer um que use seu computador.
+onboarding-browse-privately-button = Abrir uma janela privativa
+onboarding-firefox-send-title = Mantenha privativos seus arquivos compartilhados
+onboarding-firefox-send-text = O { -send-brand-name } protege os arquivos que você compartilha com criptografia de ponta a ponta e um link que expira automaticamente.
+onboarding-firefox-send-button = Experimente o { -send-brand-name }
+onboarding-mobile-phone-title = Instale o { -brand-product-name } no seu celular
+onboarding-mobile-phone-text = Baixe o { -brand-product-name } para iOS ou Android e sincronize seus dados entre dispositivos.
+# "Mobile" is short for mobile/cellular phone, "Browser" is short for web
+# browser.
+onboarding-mobile-phone-button = Baixar o navegador para celular
+onboarding-send-tabs-title = Envie abas para si mesmo instantaneamente
+# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
+# tab's context menu.
+onboarding-send-tabs-text = O envio instantâneo de abas compartilha páginas entre seus dispositivos sem precisar copiar, colar ou sair do navegador.
+onboarding-send-tabs-button = Comece a usar o envio de abas
+onboarding-pocket-anywhere-title = Leia e ouça em qualquer lugar
+# "downtime" refers to the user's free/spare time.
+onboarding-pocket-anywhere-text = O { -pocket-brand-name } salva suas histórias preferidas para que possa ler, ouvir e assistir durante seu tempo livre, mesmo se estiver desconectado.
+onboarding-pocket-anywhere-button = Experimente o { -pocket-brand-name }
+onboarding-lockwise-passwords-title = Leve suas senhas para qualquer lugar
+onboarding-lockwise-passwords-text = O { -lockwise-brand-name } salva suas senhas em um local seguro, assim você pode facilmente acessar suas contas.
+onboarding-lockwise-passwords-button = Instale o { -lockwise-brand-name }
+onboarding-facebook-container-title = Defina limites para o Facebook
+onboarding-facebook-container-text = O { -facebook-container-brand-name } mantém sua identidade do Facebook separada de todo o resto, tornando mais difícil rastrear você pela web.
+onboarding-facebook-container-button = Adicionar a extensão
 
 ## Message strings belonging to the Return to AMO flow
 

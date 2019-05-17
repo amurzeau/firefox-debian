@@ -4,10 +4,13 @@
 
 <!ENTITY firstrun_panel_title_welcome "Witajće">
 <!ENTITY firstrun_urlbar_message2 "Wulki dźak, zo sće &brandShortName; wubrał">
+<!ENTITY newfirstrun_urlbar_message "Witajće k &brandShortName;">
 <!ENTITY firstrun_urlbar_subtext2 "Moderny mobilny wobhladowak wot Mozilla, powšitkownosći słužaceje organizacije, kotraž so za darmotny a wotewrjeny web zasadźuje.">
+<!ENTITY newfirstrun_urlbar_subtext "Spěšny, priwatny a na wašim boku.">
 <!ENTITY firstrun_panel_title_privacy "Priwatnosć">
 <!ENTITY firstrun_privacy_message "Přehladujće kaž njeby nichtó was wobkedźbował">
 <!ENTITY firstrun_privacy_subtext "Priwatny modus ze slědowanskim škitom blokuje přesćěhowaki, mjeztym zo přehladujeće a njespomjatkuje sej wašu historiju, hdyž hižo njepřehladujeće.">
+<!ENTITY newfirstrun_privacy_subtext "Priwatny modus wabjenske přesćěhowaki blokuje, kotrež wam online slěduja.">
 <!ENTITY firstrun_panel_title_customize "Přiměrić">
 <!ENTITY firstrun_customize_message "Čińće &brandShortName; k swojemu.">
 <!ENTITY firstrun_customize_subtext "Přiměrće &brandShortName; z přidatkami. Blokujće wabjenje, přidajće funkcije abo wubjerće nowu drastu, zo byšće swoju wosobinu wotbłyšćował.">
@@ -20,8 +23,10 @@
 <!ENTITY firstrun_sync_title "Sync">
 <!ENTITY firstrun_sync_message2 "Čińće tam dale, hdźež sće přestał.">
 <!ENTITY firstrun_sync_subtext2 "Wužiwajće Sync, zo byšće zapołožki, hesła a druhe wěcy namakał, kotrež w &brandShortName; na wšěch swojich gratach składujeće.">
+<!ENTITY newfirstrun_sync_subtext "Synchronizujće informacije, kotrež na mobilnym graće składujeće, z Firefox za desktop, priwatnje a wěsće.">
 <!ENTITY firstrun_signin_message "Zwjazajće so, započńće">
 <!ENTITY firstrun_signin_button "Pola Sync přizjewić">
+<!ENTITY newfirstrun_signin_button "Synchronizaciju zapinać">
 <!ENTITY  onboard_start_button_browser "Přehladowanje startować">
 <!ENTITY firstrun_button_notnow "Nic hnydom">
 <!ENTITY firstrun_button_next "Přichodny">
@@ -63,6 +68,12 @@
 <!ENTITY  crash_restart_label "&brandShortName; znowa startować">
 
 <!ENTITY url_bar_default_text2 "Adresu pytać abo zapodać">
+
+<!-- Localization note: this text will be displayed in the Search Widget -->
+<!ENTITY search_widget_default_text "Web přepytać">
+<!ENTITY search_widget_default_cropped_text "Pytać">
+<!ENTITY search_widget_logo_description "Web z &brandShortName; přepytać">
+
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
      icon in the url bar. -->
@@ -290,12 +301,6 @@
 <!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
      Similar to the already existing "pref_whats_new_notification_summary"-->
 <!ENTITY pref_feature_tips_notification_summary "Zhońće wjace wo wužiwanju &brandShortName; a druhich produktow &vendorShortName;">
-
-<!-- Localization note (pref_feature_tips_notification_enabling_hint):
-     Describe the action the user should do to enable this preference
-     Will be used in the context "<Turn on> ... to enable this feature" -->
-<!ENTITY pref_feature_tips_notification_enabling_hint "Zmóžnić">
-
 <!-- Localization note (pref_feature_tips_notification_enabling_path):
      Nothing to translate. Simple concatenation of already localized strings. Result is used below. -->
 <!ENTITY pref_feature_tips_notification_enabling_path "&pref_category_privacy_short; > &pref_category_datareporting; > &datareporting_fhr_title;">
@@ -341,6 +346,9 @@
 <!-- Localization note (tab_queue_prompt_settings_button): This button is shown if the user needs to
      enable a permission in Android's setting in order to enable tab queues. -->
 <!ENTITY tab_queue_prompt_settings_button "K nastajenjam">
+<!-- Localization note (tab_queue_notification_prompt): This is the text of the default notification
+shown from Android O while a tab is being queued.-->
+<!ENTITY tab_queue_notification_prompt "Nowy rajtark so čakanskemu rynkej přidawa&#8230;">
 <!ENTITY tab_queue_notification_title "&brandShortName;">
 <!-- Localization note (tab_queue_notification_text_plural2) : The
      formatD is replaced with the number of tabs queued.  The
@@ -399,7 +407,6 @@
 <!ENTITY pref_private_data_searchHistory "Pytanska historija">
 <!ENTITY pref_private_data_formdata2 "Formularna historija">
 <!ENTITY pref_private_data_cookies2 "Placki a aktiwne přizjewjenja">
-<!ENTITY pref_private_data_passwords2 "Składowane přizjewjenja">
 <!ENTITY pref_private_data_cache "Pufrowak">
 <!ENTITY pref_private_data_offlineApps "Daty websydła offline">
 <!ENTITY pref_private_data_siteSettings2 "Sydłowe nastajenja">
@@ -407,6 +414,12 @@
 <!ENTITY pref_private_data_syncedTabs "Synchronizowane rajtarki">
 
 <!ENTITY pref_default_browser "Jako standardny wobhladowak nastajić">
+
+<!ENTITY pref_default_browser2 "&brandShortName; k wašemu standardnemu wobhladowakej činić">
+<!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
+    Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
+    and instruct users to tap on the "Browser app" option on that settings screen to choose a default browser app. -->
+<!ENTITY default_browser_system_settings_toast "Podótkńće so nałoženja wobhladowaka a wubjerće &brandShortName;">
 <!ENTITY pref_default_browser_mozilla_support_tablet "Pomoc Mozilla wopytać">
 <!ENTITY pref_about_firefox "Wo &brandShortName;">
 <!ENTITY pref_vendor_faqs "Huste prašenja">
@@ -501,6 +514,10 @@
 <!ENTITY find_prev "Předchadny">
 <!ENTITY find_next "Přichodny">
 <!ENTITY find_close "Začinić">
+
+<!-- Localization note (find_error) : Error message shown when there is no result for the
+     searched for text in this webpage -->
+<!ENTITY find_error "Fraza njeje so namakała">
 
 <!-- Localization note (media_sending_to, media_play, media_pause, media_stop) : These strings are used
      as alternate text for accessibility. They are not visible in the UI. -->
@@ -844,8 +861,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY whatsnew_notification_title "&brandShortName; je aktualny">
 <!ENTITY whatsnew_notification_summary "Wuslědźće, štož je nowe w tutej wersiji">
 
-<!ENTITY promotion_add_page_shortcut "Skrótšenku strony přidać">
-
 <!ENTITY helper_first_offline_bookmark_title "Offline čitać">
 <!ENTITY helper_first_offline_bookmark_message "Namakajće zapiski wašeho čitakoweho napohlada tež offline.">
 <!ENTITY helper_first_offline_bookmark_button "K zapołožkam">
@@ -904,15 +919,9 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_description "Wothraće zastajić">
 
 <!-- Notification channels names -->
-<!ENTITY default_notification_channel "&brandShortName;">
-
-<!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "Wobhladowak">
 <!ENTITY mls_notification_channel "Stejnišćowa słužba &vendorShortName;">
 <!ENTITY download_notification_channel "Sćehnjenja">
-<!ENTITY media_notification_channel "Wothraće medijow">
-<!-- These push notifications come without a specific channel and/or name from Leanplum -->
-<!ENTITY leanplum_default_notifications_channel "Eksterne powěsće &brandShortName;">
 <!ENTITY media_notification_channel2 "Zynka a widejo">
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
 <!ENTITY leanplum_default_notifications_channel2 "Pokiwy a triki &vendorShortName;">

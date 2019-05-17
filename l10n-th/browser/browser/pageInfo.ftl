@@ -69,10 +69,10 @@ media-save-image-as =
 media-preview =
     .value = ตัวอย่างสื่อ:
 perm-tab =
-    .label = การอนุญาต
-    .accesskey = ก
+    .label = สิทธิอนุญาต
+    .accesskey = ส
 permissions-for =
-    .value = การอนุญาตสำหรับ:
+    .value = สิทธิอนุญาตสำหรับ:
 security-tab =
     .label = ความปลอดภัย
     .accesskey = ค
@@ -173,6 +173,16 @@ properties-general-size =
     .value =
         { $bytes ->
            *[other] { $kb } KB ({ $bytes } ไบต์)
+        }
+# This string is used to display the type and number
+# of frames of a animated image
+# Variables:
+#   $type (string) - The type of a animated image
+#   $frames (number) - The number of frames in an animated image
+media-animated-image-type =
+    .value =
+        { $frames ->
+           *[other] ภาพ { $type } (เคลื่อนไหว { $frames } เฟรม)
         }
 # This string is used to display the type of
 # an image

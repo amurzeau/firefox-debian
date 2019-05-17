@@ -4,6 +4,8 @@
 
 do-not-track-description = Manda a-o scito un signâ  “No traciame” coscì da faghe savei che ti no veu ese traciou
 do-not-track-learn-more = Atre informaçioin
+do-not-track-option-default-content-blocking-known =
+    .label = Solo quande { -brand-short-name } o l'é inpòstou pe blocâ i elementi che tracian conosciui
 do-not-track-option-always =
     .label = De longo
 pref-page =
@@ -41,13 +43,16 @@ category-home =
 pane-search-title = Çerca
 category-search =
     .tooltiptext = { pane-search-title }
-pane-privacy-title = Privacy e Seguessa
+pane-privacy-title = Privacy e seguessa
 category-privacy =
     .tooltiptext = { pane-privacy-title }
 # The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Account Firefox
+pane-sync-title = Conto Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
+pane-sync-title2 = { -sync-brand-short-name }
+category-sync2 =
+    .tooltiptext = { pane-sync-title2 }
 help-button-label = Sopòrto de { -brand-short-name }
 addons-button-label = Estenscioin e Temi
 focus-search =
@@ -80,6 +85,9 @@ extension-controlled-homepage-override = 'Na estenscion, <img data-l10n-name="ic
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = 'Na estenscion, <img data-l10n-name="icon"/> { $name }, a contròlla a teu pagina neuvo feuggio.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = 'Na estencion, <img data-l10n-name="icon"/> { $name }, a contròlla sta inpostaçion.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = 'Na estenscion, <img data-l10n-name="icon"/> { $name }, a l'à inpostou o teu motô de riçerca.
@@ -131,6 +139,8 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Repiggia vegia sescion
     .accesskey = s
+startup-restore-warn-on-quit =
+    .label = Avertime quande særo o navegatô
 disable-extension =
     .label = Dizabilita estençion
 tabs-group-header = feuggi
@@ -222,10 +232,10 @@ check-user-spelling =
 
 ## General Section - Files and Applications
 
-files-and-applications-title = File e Aplicaçioin
+files-and-applications-title = Schedai e aplicaçioin
 download-header = Descaregamenti
 download-save-to =
-    .label = Sarva file in
+    .label = Sarva schedai in
     .accesskey = v
 download-choose-folder =
     .label =
@@ -239,12 +249,12 @@ download-choose-folder =
            *[other] Ç
         }
 download-always-ask-where =
-    .label = Domanda de longo donde sarvâ i file
+    .label = Domanda de longo donde sarvâ i schedai
     .accesskey = D
 applications-header = Aplicaçioin
 applications-description = Çerni comme { -brand-short-name } o gestisce i teu descaregamenti da-a Ræ ò e aplicaçioin che ti deuvi quande ti naveghi.
 applications-filter =
-    .placeholder = Çerca tipi de file ò aplicaçioin
+    .placeholder = Çerca tipi de schedai ò aplicaçioin
 applications-type-column =
     .label = Tipo de contegnuo
     .accesskey = T
@@ -257,7 +267,7 @@ play-drm-content =
     .accesskey = R
 play-drm-content-learn-more = Atre informaçioin
 update-application-title = Agiornamenti de { -brand-short-name }
-update-application-description = Mantegni { -brand-short-name } agiornou pe avei de megio prestaçioin, stabilitæ e seguessa.
+update-application-description = Mantegni { -brand-short-name } agiornou pe de megio prestaçioin, stabilitæ e seguessa.
 update-application-version = Verscion { $version } <a data-l10n-name="learn-more">Novitæ</a>
 update-history =
     .label = Fanni vedde a stöia di agiornamenti…
@@ -322,8 +332,11 @@ browsing-search-on-start-typing =
     .label = Çerca tanto che son derê a scrive
     .accesskey = s
 browsing-cfr-recommendations =
-    .label = Estenscioin consegiæ quande ti naveghi
-    .accesskey = E
+    .label = Consegime estenscioin quande navego
+    .accesskey = C
+browsing-cfr-features =
+    .label = Consegime fonçioin quande navego
+    .accesskey = f
 browsing-cfr-recommendations-learn-more = Atre informaçioin
 
 ## General Section - Proxy
@@ -433,7 +446,7 @@ containers-remove-button =
 sync-signedout-caption = A teu Ræ, de longo con ti
 sync-signedout-description = Scincronizza segnalibbri, stöia, feuggi, paròlle segrete, conponenti azonti e inpostaçioin con tutti i teu dispoxitivi.
 sync-signedout-account-title = Conetti { -fxaccount-brand-name }
-sync-signedout-account-create = No ti gh'æ ancon 'n account? Iniçia chi
+sync-signedout-account-create = No ti gh'æ ancon 'n conto? Iniçia chi
     .accesskey = C
 sync-signedout-account-signin =
     .label = Intra…
@@ -455,7 +468,7 @@ sync-profile-picture =
 sync-disconnect =
     .label = Disconetti…
     .accesskey = D
-sync-manage-account = Gestisci account
+sync-manage-account = Gestisci conto
     .accesskey = o
 sync-signedin-unverified = { $email } no l'é verificou.
 sync-signedin-login-failure = Acedi pe ativâ torna a conescion { $email }
@@ -463,7 +476,7 @@ sync-resend-verification =
     .label = Manda torna verifica
     .accesskey = d
 sync-remove-account =
-    .label = Scancella Account
+    .label = Scancella conto
     .accesskey = p
 sync-sign-in =
     .label = Intra
@@ -516,6 +529,9 @@ sync-device-name-save =
     .accesskey = v
 sync-mobilepromo-single = Conetti atro dispoxitivo
 sync-mobilepromo-multi = Gestisci dispoxitivi
+sync-connect-another-device = Conetti atro dispoxitivo
+sync-manage-devices = Gestisci dispoxitivi
+sync-fxa-begin-pairing = Acobia un dispoxitivo
 sync-tos-link = Termini do serviçio
 sync-fxa-privacy-notice = Informativa in sciâ privacy
 
@@ -602,12 +618,23 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Tipo blocou
     .accesskey = T
+sitedata-option-block-trackers =
+    .label = Elementi che tracian de terse parte
+sitedata-option-block-unvisited =
+    .label = Cookie de sciti no vixitæ
+sitedata-option-block-all-third-party =
+    .label = Tutti i cookie de terse parte (quarche scito o porieiva no fonçionâ ben)
+sitedata-option-block-all =
+    .label = Tutti i cookie (quarche scito no fonçioniâ ben)
 sitedata-clear =
     .label = Scancella dæti…
     .accesskey = l
 sitedata-settings =
     .label = Gestisci dæti…
     .accesskey = G
+sitedata-cookies-permissions =
+    .label = Gestisci permissi...
+    .accesskey = p
 
 ## Privacy Section - Address Bar
 
@@ -626,25 +653,63 @@ addressbar-suggestions-settings = Cangia e inpostaçioin di conseggi di motoî d
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Contegnuo blocou
+content-blocking-header = Blòcco di contegnui
 content-blocking-learn-more = Atre informaçioin
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 content-blocking-setting-standard =
     .label = Standard
     .accesskey = d
+content-blocking-setting-strict =
+    .label = Restritivo
+    .accesskey = R
 content-blocking-setting-custom =
     .label = Personalizzou
     .accesskey = P
+content-blocking-standard-description = Blòcca solo i elementi che tracian conosciui inti barcoin privæ.
+content-blocking-strict-description = Proteçion ciù fòrte, çerti sciti porieivan no fonçionâ ben.
+content-blocking-custom-desc = Çerni cöse blòccâ
+content-blocking-private-trackers = Elementi che tracian conosciui inti barcoin privæ
+content-blocking-third-party-cookies = Cookie che tracian de terse parte
+content-blocking-all-cookies = Tutti i cookie
+content-blocking-all-windows-trackers = Elementi che tracian conosciui in tutti i barcoin
+content-blocking-all-third-party-cookies = Tutti i cookie de terse parte
 content-blocking-warning-title = Stanni atento!
+content-blocking-warning-description = Blòccâ i contegnui porieiva inpedî o fonçionamento de çerti sciti. O l'é façile dizabilitâ o blòcco pe-i sciti afidabili.
 content-blocking-learn-how = Comme se fa
+content-blocking-reload-tabs-button =
+    .label = Recarega tutti i feuggi
+    .accesskey = R
+content-blocking-trackers-label =
+    .label = Elementi che tracian
+    .accesskey = t
+content-blocking-tracking-protection-option-all-windows =
+    .label = In tutti i barcoin
+    .accesskey = u
+content-blocking-option-private =
+    .label = Solo inti barcoin privæ
+    .accesskey = p
 content-blocking-tracking-protection-change-block-list = Cangia a lista de blòcco
 content-blocking-cookies-label =
     .label = Cookie
     .accesskey = C
+content-blocking-expand-section =
+    .tooltiptext = Ciù informaçioin
+# Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
+content-blocking-cryptominers-label =
+    .label = Minatoî de criptomonæe
+    .accesskey = y
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+content-blocking-fingerprinters-label =
+    .label = Rilevatoî de inpronte digitali
+    .accesskey = F
 
 ## Privacy Section - Tracking
 
+tracking-manage-exceptions =
+    .label = Gestisci eceçioin
+    .accesskey = x
 
 ## Privacy Section - Permissions
 
@@ -669,20 +734,9 @@ permissions-notification-link = Atre informaçioin
 permissions-notification-pause =
     .label = Ferma notificaçioin scinché { -brand-short-name } o no s'arve torna
     .accesskey = n
-permissions-block-autoplay-media =
-    .label = Blòcca in aotomatico i sciti che fan sunâ in aotomatico i media.
-    .accesskey = B
-permissions-block-autoplay-media-menu = Pe i scite che fan a riproduçion aotomatica di soin
 permissions-block-autoplay-media-exceptions =
     .label = Eceçioin…
     .accesskey = E
-autoplay-option-ask =
-    .label = Domanda de longo
-autoplay-option-allow =
-    .label = Permetti aotoriproduçion
-autoplay-option-dont =
-    .label = No aotoriprodue
-permissions-autoplay-link = Atre informaçioin
 permissions-block-popups =
     .label = Blòcca i barcoin de pop-up
     .accesskey = B
@@ -716,10 +770,6 @@ addon-recommendations-link = Atre informaçioin
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = O report di dæti o l'é dizabilitou pe sta configuraçion
-collection-browser-errors =
-    .label = Permetti a { -brand-short-name } de mandâ report di eroî (incluzo mesaggi d'erô) a { -vendor-short-name }
-    .accesskey = d
-collection-browser-errors-link = Atre informaçioin
 collection-backlogged-crash-reports =
     .label = Permetti a { -brand-short-name } de mandâ report di cianti in background pe conto teu
     .accesskey = c
@@ -794,4 +844,4 @@ choose-download-folder-title = Çerni a cartella de descaregamento:
 # Variables:
 #   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
 save-files-to-cloud-storage =
-    .label = Sarva i file in { $service-name }
+    .label = Sarva i schedai in { $service-name }

@@ -64,6 +64,8 @@ but will never be visible at the same time. -->
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "k">
 
+<!-- Tab context menu -->
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -108,7 +110,6 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Thẻ đã ẩn">
 
 <!ENTITY  listAllTabs.label      "Liệt kê tất cả các thẻ">
-
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
 <!ENTITY  allTabsMenu.searchTabs.label       "Tìm kiếm thẻ">
@@ -130,6 +131,9 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "In…">
 <!ENTITY printCmd.accesskey "P">
 <!ENTITY printCmd.commandkey "p">
+
+<!ENTITY importFromAnotherBrowserCmd.label "Nhập dữ liệu từ trình duyệt khác…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "I">
 
 <!ENTITY taskManagerCmd.label "Quản lý tác vụ">
 
@@ -213,6 +217,28 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenExit.label "Thoát chế độ toàn màn hình">
 <!ENTITY fullScreenExit.accesskey "F">
 
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "Mang Firefox theo bạn">
+<!ENTITY fxa.signin.description.label "Đồng bộ các dấu trang, lịch sử, mật khẩu và các cài đặt khác lên tất cả các thiết bị của bạn.">
+<!ENTITY fxa.signin.button.label "Bật &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "Kiểm tra email của bạn">
+<!ENTITY fxa.unverified.description.label "Bạn cần phải xác minh tài khoản của mình trước khi có thể đồng bộ hóa.">
+<!ENTITY fxa.unverified.button.label "Mở cài đặt &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "Đã đăng nhập với tài khoản">
+<!ENTITY fxa.menu.manageAccount.label "Quản lý tài khoản…">
+<!ENTITY fxa.menu.syncSettings.label "Cài đặt &syncBrand.shortName.label;…">
+<!ENTITY fxa.menu.connectAnotherDevice.label "&syncedTabs.sidebar.connectAnotherDevice;">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "Kết nối thiết bị khác…">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
+
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
      respectively before and after the domain requiring fullscreen.
@@ -229,6 +255,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "Thoát toàn màn hình (esc)">
 <!ENTITY leaveDOMFullScreen.label "Thoát chế độ toàn màn hình">
 <!ENTITY leaveDOMFullScreen.accesskey "u">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.label "Hình trong hình">
+<!ENTITY pictureInPicture.accesskey "u">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -323,7 +355,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY bookmarksSubview.label             "Trang đánh dấu">
 <!ENTITY bookmarksMenuButton2.label         "Bảng chọn trang đánh dấu">
-<!ENTITY bookmarksMenuButton.other.label    "Các trang đánh dấu khác">
+<!ENTITY bookmarksMenuButton.other.label    "Trang đánh dấu khác">
 <!ENTITY bookmarksMenuButton.mobile.label   "Trang đánh dấu trên điện thoại di động">
 <!ENTITY viewBookmarksSidebar2.label        "Hiển thị thanh bên trang đánh dấu">
 <!ENTITY hideBookmarksSidebar.label         "Ẩn thanh lề trang đánh dấu">
@@ -408,6 +440,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.label       "Tùy chỉnh">
 <!ENTITY preferencesCmdUnix.accesskey     "n">
 
+<!ENTITY logins.label                           "Đăng nhập và mật khẩu">
+
 <!ENTITY clearRecentHistory.label               "Xóa lịch sử gần đây…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
@@ -437,6 +471,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.clearRecent.label "Xóa lịch sử gần đây…">
 <!ENTITY appMenuHistory.restoreSession.label "Khôi phục phiên làm việc trước">
 <!ENTITY appMenuHistory.viewSidebar.label "Hiển thị thanh bên lịch sử">
+<!ENTITY appMenuHistory.hideSidebar.label "Ẩn thanh bên lịch sử">
 <!ENTITY appMenuHistory.recentHistory.label "Lịch sử gần đây">
 <!ENTITY appMenuHelp.label "Trợ giúp">
 
@@ -465,6 +500,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Đăng nhập vào Đồng bộ hóa">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Quản lý các thiết bị…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Xem các thẻ trên thanh lề đã đồng bộ">
+<!ENTITY appMenuRemoteTabs.hidesidebar.label "Ẩn thanh bên đồng bộ hóa">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Kết nối thiết bị khác">
 
 <!ENTITY appMenuRecentHighlights.label "Nổi bật gần đây">
@@ -494,6 +530,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.manageExtension.accesskey "E">
 <!ENTITY customizeMenu.removeExtension.label "Xóa tiện ích mở rộng">
 <!ENTITY customizeMenu.removeExtension.accesskey "v">
+
+<!-- LOCALIZATION NOTE (reportExtension.label) This label is used in the extensions
+     toolbar buttons context menus, a user can use this command to submit to Mozilla
+     an abuse report related to that extension. "Report" is a verb. -->
+<!ENTITY customizeMenu.reportExtension.label "Báo cáo phần mở rộng">
+<!ENTITY customizeMenu.reportExtension.accesskey "o">
 
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
@@ -554,8 +596,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (searchFor.label, searchWith.label):
      These two strings are used to build the header above the list of one-click
      search providers:  "Search for <used typed keywords> with:" -->
-<!ENTITY searchFor.label              "Tìm kiếm cho ">
-<!ENTITY searchWith.label             " với:">
+<!ENTITY searchFor.label              "Tìm kiếm ">
+<!ENTITY searchWith.label             " bằng:">
 
 <!-- LOCALIZATION NOTE (search.label, searchAfter.label):
      This string is used to build the header above the list of one-click search
@@ -563,7 +605,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      intentionally left empty for en-US and can be used by other localizations to
      display a string after the search engine name.  This string will be displayed
      as:  "Search <selected engine name><searchAfter.label text>" -->
-<!ENTITY search.label                 "Tìm ">
+<!ENTITY search.label                 "Tìm kiếm bằng ">
 <!ENTITY searchAfter.label            "">
 
 <!-- LOCALIZATION NOTE (searchWithHeader.label):
@@ -879,7 +921,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "Bạn chưa cấp cho trang này bất kỳ một quyền đặc biệt nào.">
 <!ENTITY identity.permissionsReloadHint "Bạn có thể cần phải tải lại trang để các thay đổi được áp dụng.">
 <!ENTITY identity.permissionsPreferences.tooltip "Mở tùy chọn các quyền">
-
 <!ENTITY identity.contentBlockingPreferences.tooltip "Mở tùy chọn chặn nội dung">
 
 
@@ -931,23 +972,24 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSignIn.label             "Đăng nhập vào &syncBrand.shortName.label;…">
 <!ENTITY syncSignIn.accesskey         "Y">
 <!ENTITY syncSyncNowItem.label        "Đồng bộ ngay">
+<!ENTITY syncSyncNowItemSyncing.label "Đang đồng bộ hóa…">
 <!ENTITY syncSyncNowItem.accesskey    "S">
 <!ENTITY syncReAuthItem.label         "Kết nối lại với &syncBrand.shortName.label;…">
 <!ENTITY syncReAuthItem.accesskey     "R">
 <!ENTITY syncToolbarButton.label      "Đồng bộ hóa">
 
 <!ENTITY customizeMode.menuAndToolbars.header3 "Kéo mục yêu thích của bạn vào thanh công cụ hoặc bảng chọn.">
-<!ENTITY customizeMode.restoreDefaults "Khôi phục mặc định">
+<!ENTITY customizeMode.restoreDefaults "Khôi phục về mặc định">
 <!ENTITY customizeMode.done "Xong">
 <!ENTITY customizeMode.titlebar "Thanh tiêu đề">
 <!ENTITY customizeMode.extraDragSpace "Kéo khoảng trắng">
 <!ENTITY customizeMode.toolbars2 "Thanh công cụ">
-<!ENTITY customizeMode.lwthemes "Giao diện">
-<!ENTITY customizeMode.lwthemes.myThemes "Giao diện của tôi">
+<!ENTITY customizeMode.lwthemes "Chủ đề">
+<!ENTITY customizeMode.lwthemes.myThemes "Chủ đề của tôi">
 <!ENTITY customizeMode.lwthemes.recommended "Khuyên dùng">
 <!ENTITY customizeMode.lwthemes.menuManage "Quản lý">
 <!ENTITY customizeMode.lwthemes.menuManage.accessKey "M">
-<!ENTITY customizeMode.lwthemes.menuGetMore "Tải thêm các giao diện">
+<!ENTITY customizeMode.lwthemes.menuGetMore "Tải thêm các chủ đề">
 <!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "G">
 <!ENTITY customizeMode.overflowList.title2 "Bảng chọn">
 <!ENTITY customizeMode.overflowList.description "Kéo và thả các mục vào đây để dễ sử dụng chúng và nó sẽ nằm ngoài thanh công cụ của bạn…">
@@ -1073,6 +1115,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.acceptButton.accesskey "D">
 <!ENTITY updateAvailable.cancelButton.label "Không phải bây giờ">
 <!ENTITY updateAvailable.cancelButton.accesskey "N">
+
 <!ENTITY updateAvailable.panelUI.label "Tải bản cập nhật &brandShorterName;">
 
 <!ENTITY updateManual.message "Tải xuống bản sao của &brandShorterName; và chúng tôi sẽ giúp bạn cài đặt nó.">
@@ -1090,6 +1133,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.acceptButton.accesskey "R">
 <!ENTITY updateRestart.cancelButton.label "Không phải bây giờ">
 <!ENTITY updateRestart.cancelButton.accesskey "N">
+<!ENTITY updateUnsupported.panelUI.label "Bạn không thể thực hiện cập nhật thêm">
 <!ENTITY updateRestart.panelUI.label2 "Khởi động lại để cập nhật &brandShorterName;">
 
 <!ENTITY newTabControlled.header.message "Thẻ mới của bạn đã bị thay đổi.">
@@ -1133,8 +1177,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "Quản lý tiện ích của bạn bằng cách nhấp vào <image class='addon-addon-icon'/> trong trình đơn <image class='addon-toolbar-icon'/>.">
-<!ENTITY addonPostInstall.incognito.label "Cho phép tiện ích mở rộng này chạy trong cửa sổ riêng tư.">
-<!ENTITY addonPostInstall.incognito.accesskey "A">
+<!ENTITY addonPostInstall.incognito.checkbox.label "Cho phép tiện ích mở rộng này chạy trong cửa sổ riêng tư">
+<!ENTITY addonPostInstall.incognito.checkbox.accesskey "A">
 
 <!ENTITY addonPrivateBrowsing.header2.label "Thay đổi tiện ích mở rộng trong cửa sổ riêng tư">
 <!ENTITY addonPrivateBrowsing.body2.label "Bất kỳ tiện ích mở rộng mới nào bạn thêm vào &brandShorterName; sẽ không chạy trong cửa sổ riêng tư trừ khi bạn cho phép điều này trong cài đặt.">

@@ -64,6 +64,8 @@ but will never be visible at the same time. -->
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "κ">
 
+<!-- Tab context menu -->
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -108,7 +110,6 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Κρυμμένες καρτέλες">
 
 <!ENTITY  listAllTabs.label      "Προβολή καρτελών σε λίστα">
-
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
 <!ENTITY  allTabsMenu.searchTabs.label       "Αναζήτηση καρτελών">
@@ -130,6 +131,9 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "Εκτύπωση…">
 <!ENTITY printCmd.accesskey "κ">
 <!ENTITY printCmd.commandkey "p">
+
+<!ENTITY importFromAnotherBrowserCmd.label "Εισαγωγή από άλλο πρόγραμμα περιήγησης…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "Ε">
 
 <!ENTITY taskManagerCmd.label "Διαχείριση εργασιών">
 
@@ -213,6 +217,28 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenExit.label "Έξοδος από πλήρη οθόνη">
 <!ENTITY fullScreenExit.accesskey "π">
 
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "Πάρτε το Firefox μαζί σας">
+<!ENTITY fxa.signin.description.label "Κρατήστε τους σελιδοδείκτες, το ιστορικό, τους κωδικούς πρόσβασης και άλλες ρυθμίσεις σας σε όλες τις συσκευές σας.">
+<!ENTITY fxa.signin.button.label "Ενεργοποίηση &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "Ελέγξτε το email σας">
+<!ENTITY fxa.unverified.description.label "Θα πρέπει να επαληθεύσετε το λογαριασμό σας πριν μπορέσετε να κάνετε συγχρονισμό.">
+<!ENTITY fxa.unverified.button.label "Άνοιγμα ρυθμίσεων &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "Σε σύνδεση ως">
+<!ENTITY fxa.menu.manageAccount.label "Διαχείριση λογαριασμού…">
+<!ENTITY fxa.menu.syncSettings.label "Ρυθμίσεις &syncBrand.shortName.label;…">
+<!ENTITY fxa.menu.connectAnotherDevice.label "&syncedTabs.sidebar.connectAnotherDevice;">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "Σύνδεση άλλης συσκευής…">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
+
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
      respectively before and after the domain requiring fullscreen.
@@ -229,6 +255,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "Έξοδος από πλήρη οθόνη (esc)">
 <!ENTITY leaveDOMFullScreen.label "Έξοδος από πλήρη οθόνη">
 <!ENTITY leaveDOMFullScreen.accesskey "δ">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.label "Εικόνα εντός εικόνας">
+<!ENTITY pictureInPicture.accesskey "ν">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -363,7 +395,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY webDeveloperMenu.label       "Εργαλεία προγραμματιστή">
 <!ENTITY webDeveloperMenu.accesskey   "Π">
 
-<!ENTITY inspectContextMenu.label     "Έλεγχος αντικειμένου">
+<!ENTITY inspectContextMenu.label     "Επιθεώρηση στοιχείου">
 <!ENTITY inspectContextMenu.accesskey "υ">
 
 <!ENTITY inspectA11YContextMenu.label     "Επιθεώρηση ιδιοτήτων προσβασιμότητας">
@@ -408,6 +440,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.label       "Προτιμήσεις">
 <!ENTITY preferencesCmdUnix.accesskey     "μ">
 
+<!ENTITY logins.label                           "Συνδέσεις και κωδικοί πρόσβασης">
+
 <!ENTITY clearRecentHistory.label               "Εκκαθάριση πρόσφατου ιστορικού…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
@@ -437,6 +471,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.clearRecent.label "Εκκαθάριση πρόσφατου ιστορικού…">
 <!ENTITY appMenuHistory.restoreSession.label "Επαναφορά προηγούμενης συνεδρίας">
 <!ENTITY appMenuHistory.viewSidebar.label "Προβολή πλευρικής στήλης ιστορικού">
+<!ENTITY appMenuHistory.hideSidebar.label "Απόκρυψη πλευρικής γραμμής ιστορικού">
 <!ENTITY appMenuHistory.recentHistory.label "Πρόσφατο ιστορικό">
 <!ENTITY appMenuHelp.label "Βοήθεια">
 
@@ -465,6 +500,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Σύνδεση στο Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Διαχείριση συσκευών…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Δείτε την πλευρική στήλη του Συγχρονισμού">
+<!ENTITY appMenuRemoteTabs.hidesidebar.label "Απόκρυψη πλευρικής γραμμής συγχρονισμένων καρτελών">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Σύνδεση άλλης συσκευής">
 
 <!ENTITY appMenuRecentHighlights.label "Πρόσφατες κορυφαίες στιγμές">
@@ -864,7 +900,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.enableMixedContentBlocking.label "Ενεργοποίηση προστασίας">
 <!ENTITY identity.enableMixedContentBlocking.accesskey "Ε">
-<!ENTITY identity.disableMixedContentBlocking.label "Απενεργοποίηση προστασίας για την ώρα">
+<!ENTITY identity.disableMixedContentBlocking.label "Απενεργοποίηση προστασίας προσωρινά">
 <!ENTITY identity.disableMixedContentBlocking.accesskey "π">
 <!ENTITY identity.learnMore "Μάθετε περισσότερα">
 
@@ -879,7 +915,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "Δεν έχετε χορηγήσει ειδικές άδειες στη σελίδα.">
 <!ENTITY identity.permissionsReloadHint "Ίσως χρειαστεί να φορτώσετε εκ νέου τη σελίδα για εφαρμογή των αλλαγών.">
 <!ENTITY identity.permissionsPreferences.tooltip "Άνοιγμα προτιμήσεων δικαιωμάτων">
-
+<!ENTITY identity.contentBlockingPreferences.tooltip "Άνοιγμα προτιμήσεων φραγής περιεχομένου">
 
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
@@ -930,6 +966,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSignIn.label             "Σύνδεση στο &syncBrand.shortName.label;…">
 <!ENTITY syncSignIn.accesskey         "ν">
 <!ENTITY syncSyncNowItem.label        "Συγχρονισμός τώρα">
+<!ENTITY syncSyncNowItemSyncing.label "Συγχρονισμός…">
 <!ENTITY syncSyncNowItem.accesskey    "Σ">
 <!ENTITY syncReAuthItem.label         "Επανασύνδεση στο &syncBrand.shortName.label;…">
 <!ENTITY syncReAuthItem.accesskey     "Ρ">
@@ -994,6 +1031,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY contentBlocking.cookies.label "Cookies">
 <!ENTITY contentBlocking.cookiesView.label "Cookies και δεδομένα ιστοσελίδων">
+
+<!ENTITY contentBlocking.cryptominers.label "Εξορύκτες κρυπτονομισμάτων">
+<!ENTITY contentBlocking.cryptominersView.label "Εξορύκτες κρυπτονομισμάτων">
+
+<!ENTITY contentBlocking.fingerprinters.label "Ανιχνευτές αποτυπωμάτων">
+<!ENTITY contentBlocking.fingerprintersView.label "Ανιχνευτές αποτυπωμάτων">
 
 <!ENTITY contentBlocking.openBreakageReportView2.label "Αναφορά προβλήματος">
 <!ENTITY contentBlocking.breakageReportView.label "Αναφορά προβλημάτων">
@@ -1066,6 +1109,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.acceptButton.accesskey "Λ">
 <!ENTITY updateAvailable.cancelButton.label "Όχι τώρα">
 <!ENTITY updateAvailable.cancelButton.accesskey "Ό">
+
 <!ENTITY updateAvailable.panelUI.label "Λήψη ενημέρωσης για το &brandShorterName;">
 
 <!ENTITY updateManual.message "Κάντε λήψη μιας φρέσκιας έκδοσης του &brandShorterName; και θα σάς βοηθήσουμε να την εγκαταστήσετε.">
@@ -1126,8 +1170,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "Διαχειριστείτε τα πρόσθετά σας κάνοντας κλικ στο <image class='addon-addon-icon'/>, στο μενού <image class='addon-toolbar-icon'/>.">
+<!ENTITY addonPostInstall.incognito.checkbox.label "Να επιτρέπεται η εκτέλεση αυτής της επέκτασης σε ιδιωτικά παράθυρα">
+<!ENTITY addonPostInstall.incognito.checkbox.accesskey "Ν">
 
-<!ENTITY addonPrivateBrowsing.header.label "Επεκτάσεις σε ιδιωτικά παράθυρα">
+<!ENTITY addonPrivateBrowsing.header2.label "Αλλαγή σε επεκτάσεις ιδιωτικών παραθύρων">
+<!ENTITY addonPrivateBrowsing.body2.label "Τυχόν νέες επεκτάσεις που προσθέτετε στο &brandShorterName; δεν θα λειτουργούν στα ιδιωτικά παράθυρα, εκτός κι αν το επιτρέψετε στις ρυθμίσεις.">
+<!ENTITY addonPrivateBrowsing.learnMore.label "Μάθετε πώς να διαχειρίζεστε τις ρυθμίσεις επεκτάσεων">
 <!ENTITY addonPrivateBrowsing.okButton.label "Εντάξει, το 'πιασα">
 <!ENTITY addonPrivateBrowsing.okButton.accesskey "Ε">
 <!ENTITY addonPrivateBrowsing.manageButton.label "Διαχείριση επεκτάσεων">

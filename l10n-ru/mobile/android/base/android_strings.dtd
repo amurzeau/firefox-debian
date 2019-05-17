@@ -4,10 +4,13 @@
 
 <!ENTITY firstrun_panel_title_welcome "Добро пожаловать">
 <!ENTITY firstrun_urlbar_message2 "Спасибо, что выбрали &brandShortName;">
+<!ENTITY newfirstrun_urlbar_message "Добро пожаловать в &brandShortName;">
 <!ENTITY firstrun_urlbar_subtext2 "Современный мобильный браузер от Mozilla, некоммерческой организации, преданной свободному и открытому Интернету.">
+<!ENTITY newfirstrun_urlbar_subtext "Быстрый, приватный и всегда на вашей стороне.">
 <!ENTITY firstrun_panel_title_privacy "Приватность">
 <!ENTITY firstrun_privacy_message "Сёрфите Интернет не опасаясь слежки">
 <!ENTITY firstrun_privacy_subtext "Приватный просмотр с защитой от отслеживания блокирует трекеры, пока вы сёрфите, и не будет помнить вашу историю после завершения сёрфинга.">
+<!ENTITY newfirstrun_privacy_subtext "Приватный просмотр блокирует рекламные трекеры, которые отслеживают вас в Интернете.">
 <!ENTITY firstrun_panel_title_customize "Настраивайте">
 <!ENTITY firstrun_customize_message "Сделайте &brandShortName; своим.">
 <!ENTITY firstrun_customize_subtext "Настройте &brandShortName; с помощью дополнений. Блокируйте рекламу, добавляйте новые функции или установите новую тему, которая подчеркнёт вашу индивидуальность.">
@@ -20,8 +23,10 @@
 <!ENTITY firstrun_sync_title "Синхронизация">
 <!ENTITY firstrun_sync_message2 "Начните с того места, на котором остановились.">
 <!ENTITY firstrun_sync_subtext2 "Используйте синхронизацию для доступа к закладкам, паролям и многому другому, что вы сохраните в &brandShortName;, на всех ваших устройствах.">
+<!ENTITY newfirstrun_sync_subtext "Синхронизируйте вещи, которые вы сохраняете на мобильном, с Firefox для компьютеров, приватно и безопасно.">
 <!ENTITY firstrun_signin_message "Соединитесь и вперёд">
 <!ENTITY firstrun_signin_button "Войти в Синхронизацию">
+<!ENTITY newfirstrun_signin_button "Включить синхронизацию">
 <!ENTITY  onboard_start_button_browser "Начать веб-сёрфинг">
 <!ENTITY firstrun_button_notnow "Не сейчас">
 <!ENTITY firstrun_button_next "Далее">
@@ -63,6 +68,12 @@
 <!ENTITY  crash_restart_label "Перезапустить &brandShortName;">
 
 <!ENTITY url_bar_default_text2 "Введите запрос или адрес">
+
+<!-- Localization note: this text will be displayed in the Search Widget -->
+<!ENTITY search_widget_default_text "Поиск в Интернете">
+<!ENTITY search_widget_default_cropped_text "Поиск">
+<!ENTITY search_widget_logo_description "Поиск в Интернете с помощью &brandShortName;">
+
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
      icon in the url bar. -->
@@ -209,9 +220,9 @@
 <!ENTITY pref_category_advanced_summary3 "Восстановление вкладок, экономия трафика, инструменты разработчика">
 <!ENTITY pref_category_notifications "Уведомления">
 <!ENTITY pref_category_notifications_summary2 "Новые возможности, советы по продукту">
-<!ENTITY pref_developer_remotedebugging_usb "Удалённая отладка через USB">
-<!ENTITY pref_developer_remotedebugging_wifi "Удалённая отладка через Wi-Fi">
-<!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Для удалённой отладки через Wi-Fi необходимо, чтобы на вашем устройстве было установлено приложение для чтения QR-кодов.">
+<!ENTITY pref_developer_remotedebugging_usb "Удалённая отладка по USB">
+<!ENTITY pref_developer_remotedebugging_wifi "Удалённая отладка по Wi-Fi">
+<!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Для удалённой отладки по Wi-Fi необходимо, чтобы на вашем устройстве было установлено приложение для сканирования QR-кодов.">
 <!ENTITY pref_remember_signons2 "Запоминать логины">
 <!ENTITY pref_manage_logins "Управление логинами">
 
@@ -290,12 +301,6 @@
 <!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
      Similar to the already existing "pref_whats_new_notification_summary"-->
 <!ENTITY pref_feature_tips_notification_summary "Подробнее об использовании &brandShortName; и других продуктов &vendorShortName;">
-
-<!-- Localization note (pref_feature_tips_notification_enabling_hint):
-     Describe the action the user should do to enable this preference
-     Will be used in the context "<Turn on> ... to enable this feature" -->
-<!ENTITY pref_feature_tips_notification_enabling_hint "Включить">
-
 <!-- Localization note (pref_feature_tips_notification_enabling_path):
      Nothing to translate. Simple concatenation of already localized strings. Result is used below. -->
 <!ENTITY pref_feature_tips_notification_enabling_path "&pref_category_privacy_short; > &pref_category_datareporting; > &datareporting_fhr_title;">
@@ -341,6 +346,9 @@
 <!-- Localization note (tab_queue_prompt_settings_button): This button is shown if the user needs to
      enable a permission in Android's setting in order to enable tab queues. -->
 <!ENTITY tab_queue_prompt_settings_button "Перейти в Параметры">
+<!-- Localization note (tab_queue_notification_prompt): This is the text of the default notification
+shown from Android O while a tab is being queued.-->
+<!ENTITY tab_queue_notification_prompt "Добавление новой вкладки в очередь&#8230;">
 <!ENTITY tab_queue_notification_title "&brandShortName;">
 <!-- Localization note (tab_queue_notification_text_plural2) : The
      formatD is replaced with the number of tabs queued.  The
@@ -399,7 +407,6 @@
 <!ENTITY pref_private_data_searchHistory "Журнал поиска">
 <!ENTITY pref_private_data_formdata2 "Журнал форм">
 <!ENTITY pref_private_data_cookies2 "Куки и активные сеансы">
-<!ENTITY pref_private_data_passwords2 "Сохранённые логины">
 <!ENTITY pref_private_data_cache "Кэш">
 <!ENTITY pref_private_data_offlineApps "Данные автономных веб-сайтов">
 <!ENTITY pref_private_data_siteSettings2 "Настройки сайтов">
@@ -407,6 +414,12 @@
 <!ENTITY pref_private_data_syncedTabs "Облачные вкладки">
 
 <!ENTITY pref_default_browser "Сделать браузером по умолчанию">
+
+<!ENTITY pref_default_browser2 "Сделайте &brandShortName; своим браузером по умолчанию">
+<!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
+    Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
+    and instruct users to tap on the "Browser app" option on that settings screen to choose a default browser app. -->
+<!ENTITY default_browser_system_settings_toast "Нажмите «Браузер» и выберите &brandShortName;">
 <!ENTITY pref_default_browser_mozilla_support_tablet "Посетить Поддержку Mozilla">
 <!ENTITY pref_about_firefox "О &brandShortName;">
 <!ENTITY pref_vendor_faqs "FAQ">
@@ -482,7 +495,7 @@
 <!ENTITY print "Печать">
 <!ENTITY view_page_source "Исходный код страницы">
 <!ENTITY find_in_page "Найти на странице">
-<!ENTITY desktop_mode "Полная версия сайта">
+<!ENTITY desktop_mode "Версия для ПК">
 <!ENTITY page "Страница">
 <!ENTITY tools "Инструменты">
 <!ENTITY new_tab "Новая вкладка">
@@ -501,6 +514,10 @@
 <!ENTITY find_prev "Назад">
 <!ENTITY find_next "Далее">
 <!ENTITY find_close "Закрыть">
+
+<!-- Localization note (find_error) : Error message shown when there is no result for the
+     searched for text in this webpage -->
+<!ENTITY find_error "Фраза не найдена">
 
 <!-- Localization note (media_sending_to, media_play, media_pause, media_stop) : These strings are used
      as alternate text for accessibility. They are not visible in the UI. -->
@@ -844,8 +861,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY whatsnew_notification_title "Установлена последняя версия &brandShortName;">
 <!ENTITY whatsnew_notification_summary "Узнать, что нового в этой версии">
 
-<!ENTITY promotion_add_page_shortcut "Добавить ярлык страницы">
-
 <!ENTITY helper_first_offline_bookmark_title "Чтение без подключения">
 <!ENTITY helper_first_offline_bookmark_message "Найдите ваш Список для чтения в Закладках, даже без подключения к Интернету.">
 <!ENTITY helper_first_offline_bookmark_button "Перейти в Закладки">
@@ -904,15 +919,9 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_description "Приостановить воспроизведение">
 
 <!-- Notification channels names -->
-<!ENTITY default_notification_channel "&brandShortName;">
-
-<!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "Браузер">
 <!ENTITY mls_notification_channel "Служба местоположения &vendorShortName;">
 <!ENTITY download_notification_channel "Загрузки">
-<!ENTITY media_notification_channel "Воспроизведение медиа">
-<!-- These push notifications come without a specific channel and/or name from Leanplum -->
-<!ENTITY leanplum_default_notifications_channel "Push-уведомления &brandShortName;">
 <!ENTITY media_notification_channel2 "Звук и видео">
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
 <!ENTITY leanplum_default_notifications_channel2 "Советы и хитрости от &vendorShortName;">

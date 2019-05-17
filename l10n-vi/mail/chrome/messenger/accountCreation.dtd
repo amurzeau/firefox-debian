@@ -2,6 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
+<!ENTITY autoconfigWizard2.title         "Thiết lập tài khoản email hiện có">
 <!ENTITY name.label                      "Tên của bạn:">
 <!ENTITY name.accesskey                  "T">
 <!ENTITY name.placeholder                "Tên, Họ">
@@ -9,7 +10,7 @@
 <!ENTITY email.label                     "Địa chỉ email:">
 <!ENTITY email.accesskey                 "l">
 <!-- LOCALIZATION NOTE(email.placeholder): Domain @example.com must stay in English -->
-<!ENTITY email2.placeholder              "bạn@example.com">
+<!ENTITY email2.placeholder              "you@example.com">
 <!ENTITY email.text                      "Địa chỉ thư điện tử hiện tại của bạn">
 <!ENTITY password.label                  "Mật khẩu:">
 <!ENTITY password.accesskey              "M">
@@ -17,7 +18,6 @@
 <!ENTITY password.text                   "Phụ, chỉ sẽ được dùng để kiểm tra tên đăng nhập">
 <!ENTITY rememberPassword.label          "Ghi nhớ mật khẩu">
 <!ENTITY rememberPassword.accesskey      "G">
-
 <!ENTITY usernameEx.label                "Tên đăng nhập của bạn:">
 <!ENTITY usernameEx.accesskey            "T">
 <!-- LOCALIZATION NOTE(usernameEx.placeholder): YOURDOMAIN refers to the Windows domain in ActiveDirectory. yourusername refers to the user's account name in Windows. -->
@@ -51,7 +51,7 @@
 <!ENTITY advancedSetup.label             "Cấu hình nâng cao">
 <!ENTITY advancedSetup.accesskey         "n">
 <!ENTITY cancel.label                    "Hủy bỏ">
-<!ENTITY cancel.accesskey                "H">
+<!ENTITY cancel.accesskey                "a">
 <!ENTITY continue.label                  "Tiếp tục">
 <!ENTITY continue.accesskey              "p">
 <!ENTITY stop.label                      "Dừng">
@@ -63,7 +63,8 @@
 <!ENTITY half-manual-test.label          "Kiểm tra lại">
 <!ENTITY half-manual-test.accesskey      "K">
 <!ENTITY manual-edit.label               "Cấu hình thủ công">
-<!ENTITY manual-edit.accesskey           "t">
+<!ENTITY manual-edit.accesskey           "M">
+<!ENTITY open-provisioner.label          "Tạo địa chỉ email mới…">
 
 
 <!ENTITY warning.label                   "Cảnh báo!">

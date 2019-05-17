@@ -95,6 +95,11 @@
 
 <!ENTITY openAttachment.tooltip "Deschide fișierul atașat">
 
+<!ENTITY detachedAttachmentFolder.show.label        "Deschide dosarul în care se află">
+<!ENTITY detachedAttachmentFolder.show.accesskey    "F">
+<!ENTITY detachedAttachmentFolder.showMac.label     "Afișează în Finder">
+<!ENTITY detachedAttachmentFolder.showMac.accesskey "F">
+
 <!-- Attachment toolbar items -->
 <!ENTITY saveAttachmentButton1.label       "Salvează">
 <!ENTITY saveAttachmentButton1.tooltip     "Salvează fișierul atașat">

@@ -3,12 +3,15 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 cfr-doorhanger-extension-heading = ਸਿਫ਼ਾਰਸ਼ ਕੀਤੀ ਇਕਸਟੈਨਸ਼ਨ
+cfr-doorhanger-pintab-heading = ਇਹ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰੋ: ਪਿੰਨ ਟੈਬ
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = ਮੈਂ ਇਹ ਕਿਓ ਵੇਖ ਰਿਹਾ/ਰਹੀ ਹਾਂ
 cfr-doorhanger-extension-cancel-button = ਹੁਣ ਨਹੀਂ
     .accesskey = N
 cfr-doorhanger-extension-ok-button = ਹੁਣੇ ਜੋੜੋ
     .accesskey = A
+cfr-doorhanger-pintab-ok-button = ਇਸ ਟੈਬ ਨੂੰ ਪਿੰਨ ਕਰੋ
+    .accesskey = P
 cfr-doorhanger-extension-manage-settings-button = ਸਿਫਾਰਸ਼ੀ ਸੈਟਿੰਗਾਂ ਦਾ ਬੰਦੋਬਸਤ ਕਰੋ
     .accesskey = M
 cfr-doorhanger-extension-never-show-recommendation = ਇਹ ਸਿਫਾਰਸ਼ ਮੈਨੂੰ ਨਾ ਦੇਖਾਓ
@@ -41,3 +44,10 @@ cfr-doorhanger-extension-total-users =
         [one] { $total } ਵਰਤੋਂਕਾਰ
        *[other] { $total } ਵਰਤੋਂਕਾਰ
     }
+
+## These messages are steps on how to use the feature and are shown together.
+
+cfr-doorhanger-pintab-step2 = ਮੇਨੂ ਤੋਂ <b>ਟੈਬ ਨੂੰ ਟੰਗੋ</b> ਨੂੰ ਚੁਣੋ।
+cfr-doorhanger-pintab-step3 = ਜੇ ਸਾਈਟ ਨੂੰ ਅੱਪਡੇਟ ਕੀਤਾ ਗਿਆ ਤਾਂ ਤੁਸੀਂ ਆਪਣੀ ਟੰਗ ਕੀਤੀ ਟੈਬ ਵਿੱਚ ਨੀਲੀ ਬਿੰਦੀ ਵੇਖੋਗੇ।
+cfr-doorhanger-pintab-animation-pause = ਵਿਰਾਮ
+cfr-doorhanger-pintab-animation-resume = ਮੁੜ-ਪ੍ਰਾਪਤ

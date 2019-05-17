@@ -5,20 +5,23 @@
 <!ENTITY playButton.playLabel "เล่น">
 <!ENTITY playButton.pauseLabel "หยุดชั่วคราว">
 <!ENTITY muteButton.muteLabel "ปิดเสียง">
-<!ENTITY muteButton.unmuteLabel "เปิดเสียง">
+<!ENTITY muteButton.unmuteLabel "เลิกปิดเสียง">
 <!ENTITY fullscreenButton.enterfullscreenlabel "เต็มหน้าจอ">
 <!ENTITY fullscreenButton.exitfullscreenlabel "ออกจากภาพเต็มหน้าจอ">
 <!ENTITY castingButton.castingLabel "ฉายขึ้นหน้าจอ">
 <!ENTITY closedCaption.off "ปิด">
-
 <!-- LOCALIZATION NOTE (volumeScrubber.label): This label is exposed to
      accessibility software to clarify what the slider is for. -->
 <!ENTITY volumeScrubber.label "แถบเลื่อนระดับเสียง">
 
+<!-- LOCALIZATION NOTE (pictureInPicture.label): This string is used as part of
+the Picture-in-Picture video toggle button when the mouse is hovering it. -->
+<!ENTITY pictureInPicture.label "ภาพที่เล่นควบคู่">
+
 <!ENTITY stats.media "สื่อ">
 <!ENTITY stats.size "ขนาด">
 <!ENTITY stats.activity "กิจกรรม">
-<!ENTITY stats.activityPaused "ถูกหยุดชั่วคราว">
+<!ENTITY stats.activityPaused "หยุดชั่วคราวอยู่">
 <!ENTITY stats.activityPlaying "กำลังเล่น">
 <!ENTITY stats.activityEnded "จบแล้ว">
 <!ENTITY stats.activitySeeking "(กำลังค้นหา)">
@@ -34,6 +37,8 @@
 <!ENTITY error.srcNotSupported "ไม่สามารถเล่นวิดีโอรูปแบบนี้ หรือ MIME ชนิดนี้ได้">
 <!ENTITY error.noSource2 "ไม่พบวิดีโอที่อยู่ในรูปแบบหรือชนิดของ MIME ที่เล่นได้">
 <!ENTITY error.generic "การเล่นวิดีโอถูกยกเลิกเนื่องจากข้อผิดพลาดที่ไม่ระบุไม่ได้">
+
+<!ENTITY status.pictureInPicture "วิดีโอนี้กำลังเล่นในโหมดภาพที่เล่นควบคู่">
 
 <!-- LOCALIZATION NOTE (scrubberScale.nameFormat): the #1 string is the current
 media position, and the #2 string is the total duration. For example, when at

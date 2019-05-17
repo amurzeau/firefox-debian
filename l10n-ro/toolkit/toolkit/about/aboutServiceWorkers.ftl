@@ -5,10 +5,10 @@
 
 ### The term "Service Workers" and "Workers" should not be translated
 
-about-service-workers-title = Despre Service Workeri
-about-service-workers-main-title = Service workeri înregistrați
-about-service-workers-warning-not-enabled = Service workerii nu sunt activați.
-about-service-workers-warning-no-service-workers = Niciun service worker înregistrat.
+about-service-workers-title = Despre scripturile Service Worker
+about-service-workers-main-title = Scripturi Service Worker înregistrate
+about-service-workers-warning-not-enabled = Scripturile Service Worker nu sunt activate.
+about-service-workers-warning-no-service-workers = Niciun Service Worker înregistrat.
 # The original title of service workers' information
 #
 # Variables:
@@ -36,6 +36,6 @@ push-end-point-waiting = <strong>Punct terminal de transferuri push:</strong> { 
 push-end-point-result = <strong>Punct terminal de transferuri push:</strong> { $name }
 # This term is used as a button label (verb, not noun).
 update-button = Actualizare
-unregister-button = Anulează înregistrarea
-unregister-error = Nu s-a reușit anularea înregistrării pentru acest service worker.
+unregister-button = Dezînregistrează
+unregister-error = Nu s-a reușit dezînregistrarea acestui Service Worker.
 waiting = Așteptare…

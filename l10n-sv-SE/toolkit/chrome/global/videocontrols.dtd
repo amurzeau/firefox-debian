@@ -10,10 +10,13 @@
 <!ENTITY fullscreenButton.exitfullscreenlabel "Avsluta helskärm">
 <!ENTITY castingButton.castingLabel "Skicka till skärm">
 <!ENTITY closedCaption.off "Av">
-
 <!-- LOCALIZATION NOTE (volumeScrubber.label): This label is exposed to
      accessibility software to clarify what the slider is for. -->
 <!ENTITY volumeScrubber.label "Volymreglage">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label): This string is used as part of
+the Picture-in-Picture video toggle button when the mouse is hovering it. -->
+<!ENTITY pictureInPicture.label "Picture-in-Picture">
 
 <!ENTITY stats.media "Media">
 <!ENTITY stats.size "Storlek">
@@ -34,6 +37,8 @@
 <!ENTITY error.srcNotSupported "Videoformat eller MIME-typ stöds inte.">
 <!ENTITY error.noSource2 "Hittade ingen video med ett format eller en MIME-typ som stöds.">
 <!ENTITY error.generic "Avspelning av videon avbröts på grund av ett okänt fel.">
+
+<!ENTITY status.pictureInPicture "Den här videon spelas i Picture-in-Picture läget.">
 
 <!-- LOCALIZATION NOTE (scrubberScale.nameFormat): the #1 string is the current
 media position, and the #2 string is the total duration. For example, when at

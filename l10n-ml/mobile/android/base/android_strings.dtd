@@ -4,10 +4,13 @@
 
 <!ENTITY firstrun_panel_title_welcome "സ്വാഗതം">
 <!ENTITY firstrun_urlbar_message2 "&brandShortName; തിരഞ്ഞെടുത്തതിന് നന്ദി">
+<!ENTITY newfirstrun_urlbar_message "&brandShortName; ലേയ്ക്ക് സ്വാഗതം">
 <!ENTITY firstrun_urlbar_subtext2 "ലാഭേച്ഛയില്ലാതെ സ്വതന്ത്രമായ വെബ്ബിനായിതാ, മോസില്ലയില്‍ നിന്നൊരു ആധുനിക മൊബൈല്‍ ബ്രൌസര്‍.">
+<!ENTITY newfirstrun_urlbar_subtext "വേഗത്തില്‍, സ്വകാര്യം, നിങ്ങള്‍ക്കൊപ്പം.">
 <!ENTITY firstrun_panel_title_privacy "സ്വകാര്യത">
 <!ENTITY firstrun_privacy_message "ആരും കാണാതെ ബ്രൗസ് ചെയ്യൂ">
 <!ENTITY firstrun_privacy_subtext "ട്രാക്കിങ്ങ് സംരക്ഷണത്തോടൊപ്പമുള്ള സ്വകാര്യ ബ്രൌസിങ്ങ് നിങ്ങള്‍ ബ്രൌസ് ചെയ്യുമ്പോള്‍ ട്രാക്കറുകളെ തടയുന്നതോടൊപ്പം നിങ്ങള്‍ ബ്രൌസിങ്ങ് അവസാനിപ്പിക്കുമ്പോള്‍ നാള്‍വഴി സൂക്ഷിക്കുന്നില്ല.">
+<!ENTITY newfirstrun_privacy_subtext "സ്വകാര്യ ബ്രൌസിങ്ങ് നിങ്ങളെ ഓണ്‍ലൈനില്‍ പിന്‍തുടരുന്ന പരസ്യ ട്രാക്കറുകളെ തടയും.">
 <!ENTITY firstrun_panel_title_customize "ഇഷ്ടാനുസൃതമാക്കുക">
 <!ENTITY firstrun_customize_message "&brandShortName; നിങ്ങളുടേതാക്കി മാറ്റുക.">
 <!ENTITY firstrun_customize_subtext "ആഡ്-ഓൺസ് ഉപയോഗിച്ച് &brandShortName; ഇഷ്ടാനുസൃതമാക്കുക. പരസ്യങ്ങൾ തടയുക, സവിശേഷതകൾ ചേർക്കുക അല്ലെങ്കിൽ നിങ്ങളുടെ വ്യക്തിത്വം പ്രതിഫലിപ്പിക്കാൻ പുതിയ തീം തിരഞ്ഞെടുക്കുക.">
@@ -20,8 +23,10 @@
 <!ENTITY firstrun_sync_title "സിന്‍ക്">
 <!ENTITY firstrun_sync_message2 "അവസാനിപ്പിച്ചിടത്തു നിന്ന് തുടങ്ങുക.">
 <!ENTITY firstrun_sync_subtext2 "നിങ്ങൾ &brandShortName; ൽ നിങ്ങൾ സംരക്ഷിച്ച ബുക്ക്മാർക്കുകൾ, പാസ്വേഡുകൾ, മറ്റ് കാര്യങ്ങൾ എന്നിവ കണ്ടെത്തുന്നതിന് സിങ്ക് ഉപയോഗിക്കുക; നിങ്ങളുടെ എല്ലാ ഉപകരണങ്ങളിലും.">
+<!ENTITY newfirstrun_sync_subtext "നിങ്ങളുടെ മൊബൈലില്‍ സുക്ഷിക്കുന്ന കാര്യങ്ങള്‍ ഫയര്‍ഫോക്സ് ഡെസ്ക്ടോപ്പില്‍ സുരക്ഷിതമായും സ്വകാര്യമായും സമന്വയിപ്പിക്കു.">
 <!ENTITY firstrun_signin_message "കണക്റ്റഡായിരിക്കു, ആരംഭിക്കൂ">
 <!ENTITY firstrun_signin_button "സിന്‍കിലേയ്ക്ക് പ്രവേശിക്കൂ">
+<!ENTITY newfirstrun_signin_button "സമന്വയം പ്രവര്‍ത്തിപ്പിക്കുക">
 <!ENTITY  onboard_start_button_browser "ബ്രൌസിങ് തുടങ്ങാം">
 <!ENTITY firstrun_button_notnow "ഇപ്പോള്‍ വേണ്ട">
 <!ENTITY firstrun_button_next "തുടരുക">
@@ -63,6 +68,12 @@
 <!ENTITY  crash_restart_label "&brandShortName; വീണ്ടും ആരംഭിയ്ക്കുക">
 
 <!ENTITY url_bar_default_text2 "തിരയുകയോ വിലാസം നല്‍കുകയോ ചെയ്യൂ">
+
+<!-- Localization note: this text will be displayed in the Search Widget -->
+<!ENTITY search_widget_default_text "ഇൻറർനെറ്റിൽ തിരയുക">
+<!ENTITY search_widget_default_cropped_text "തെരയുക">
+<!ENTITY search_widget_logo_description "വെബിൽ &brandShortName; കൂടെ തിരയുക">
+
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
      icon in the url bar. -->
@@ -290,12 +301,6 @@
 <!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
      Similar to the already existing "pref_whats_new_notification_summary"-->
 <!ENTITY pref_feature_tips_notification_summary "&brandShortName; ഉപയോഗിക്കുന്നതിനെ പറ്റിയും &vendorShortName; ഉൽപ്പനങ്ങളെ പറ്റിയും കൂടുതൽ അറിയുക">
-
-<!-- Localization note (pref_feature_tips_notification_enabling_hint):
-     Describe the action the user should do to enable this preference
-     Will be used in the context "<Turn on> ... to enable this feature" -->
-<!ENTITY pref_feature_tips_notification_enabling_hint "ഓണാക്കുക">
-
 <!-- Localization note (pref_feature_tips_notification_enabling_path):
      Nothing to translate. Simple concatenation of already localized strings. Result is used below. -->
 <!ENTITY pref_feature_tips_notification_enabling_path "&pref_category_privacy_short; > &pref_category_datareporting; > &datareporting_fhr_title;">
@@ -341,6 +346,9 @@
 <!-- Localization note (tab_queue_prompt_settings_button): This button is shown if the user needs to
      enable a permission in Android's setting in order to enable tab queues. -->
 <!ENTITY tab_queue_prompt_settings_button "സജ്ജീകരണങ്ങളിലേക്കു പോവുക">
+<!-- Localization note (tab_queue_notification_prompt): This is the text of the default notification
+shown from Android O while a tab is being queued.-->
+<!ENTITY tab_queue_notification_prompt "&#8230; ക്യൂവിലേക്ക് പുതിയ ടാബ് ചേർക്കുന്നു">
 <!ENTITY tab_queue_notification_title "&brandShortName;">
 <!-- Localization note (tab_queue_notification_text_plural2) : The
      formatD is replaced with the number of tabs queued.  The
@@ -399,7 +407,6 @@
 <!ENTITY pref_private_data_searchHistory "ചരിത്രം തിരയുക">
 <!ENTITY pref_private_data_formdata2 "നാള്‍വഴിയില്‍ നിന്ന്">
 <!ENTITY pref_private_data_cookies2 "സജീവമായ ലോഗിനുകളും  കൂക്കികളും">
-<!ENTITY pref_private_data_passwords2 "സൂക്ഷിച്ചിട്ടുള്ള പ്രവേശനങ്ങള്‍">
 <!ENTITY pref_private_data_cache "കാഷ്">
 <!ENTITY pref_private_data_offlineApps "ഓഫ്‌ലൈന്‍ വെബ്സൈറ്റ് ഡേറ്റ">
 <!ENTITY pref_private_data_siteSettings2 "വെബ്സൈറ്റ് സജ്ജീകരണങ്ങള്‍">
@@ -407,6 +414,12 @@
 <!ENTITY pref_private_data_syncedTabs "സമന്വയിപ്പിച്ച ടാബുകള്‍">
 
 <!ENTITY pref_default_browser "സ്വതേയുള്ള ബ്രൗസര്‍ ആക്കുക">
+
+<!ENTITY pref_default_browser2 "&brandShortName; നിങ്ങളുടെ സ്വതേയുള്ള ബ്രൌസറാക്കുക">
+<!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
+    Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
+    and instruct users to tap on the "Browser app" option on that settings screen to choose a default browser app. -->
+<!ENTITY default_browser_system_settings_toast "ബ്രൌസര്‍ ആപ്പില്‍ അമര്‍ത്ത് &brandShortName; തെരഞ്ഞെടുക്കുക">
 <!ENTITY pref_default_browser_mozilla_support_tablet "മോസില്ല സപ്പോർട്ട് സന്ദർശിക്കുക">
 <!ENTITY pref_about_firefox "&brandShortName;-നെ സംബന്ധിച്ച്">
 <!ENTITY pref_vendor_faqs "സ്ഥിരം ചോദ്യങ്ങള്‍">
@@ -501,6 +514,10 @@
 <!ENTITY find_prev "മുമ്പു്">
 <!ENTITY find_next "അടുത്തതു്">
 <!ENTITY find_close "അടക്കുക">
+
+<!-- Localization note (find_error) : Error message shown when there is no result for the
+     searched for text in this webpage -->
+<!ENTITY find_error "വാക്യം കാണ്ടെത്താനായില്ല">
 
 <!-- Localization note (media_sending_to, media_play, media_pause, media_stop) : These strings are used
      as alternate text for accessibility. They are not visible in the UI. -->
@@ -844,8 +861,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY whatsnew_notification_title "&brandShortName; ഏറ്റവും പുതിയതാണു്">
 <!ENTITY whatsnew_notification_summary "ഈ പതിപ്പില്‍ പുതിയതായിട്ട് എന്താണുള്ളതെന്ന് കണ്ടെത്തൂ">
 
-<!ENTITY promotion_add_page_shortcut "താളിന് കറുക്കുവഴി ചേര്‍ക്കുക">
-
 <!ENTITY helper_first_offline_bookmark_title "ഓഫ്‍ലൈനായി വായിക്കൂ">
 <!ENTITY helper_first_offline_bookmark_message "റീഡർവ്യുവിലെ ഇങ്ങളെ ബുക്ക്മാർക്കിൽ കാണുക, ഓഫ്‌‌ലൈനിൽ ആണെങ്കിലും.">
 <!ENTITY helper_first_offline_bookmark_button "അടയാളങ്ങളിലേക്ക് പോകൂ">
@@ -903,16 +918,11 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_title "താല്ക്കാലികവിരാമം">
 <!ENTITY pip_pause_button_description "പ്ലെ നിറുത്തുക">
 
-<!-- Notification channels names -->
-<!ENTITY default_notification_channel "&brandShortName;">
-
+<!ENTITY pref_notification_settings_link "അറിയിപ്പ് ക്രമീകരണങ്ങൾ നിയന്ത്രിക്കുക">
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "ബ്രൗസർ">
 <!ENTITY mls_notification_channel "&vendorShortName; പ്രദേശ സേവനങ്ങള്‍">
 <!ENTITY download_notification_channel "ഡൌണ്‍ലോഡുകള്‍">
-<!ENTITY media_notification_channel "മീഡിയ പ്രവർത്തനം">
-<!-- These push notifications come without a specific channel and/or name from Leanplum -->
-<!ENTITY leanplum_default_notifications_channel "&brandShortName; പുഷ് അറിയിപ്പുകൾ">
 <!ENTITY media_notification_channel2 "ശബ്ദവും ചലച്ചിത്രവും">
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
 <!ENTITY leanplum_default_notifications_channel2 "&vendorShortName; പൊടിക്കയ്യുകൾ">

@@ -4,10 +4,6 @@
 
 do-not-track-description = Saytlara “Məni İzləmə” siqnalı göndərərək izlənmək istəmədiyinizi bildirin
 do-not-track-learn-more = Ətraflı öyrən
-do-not-track-option-default =
-    .label = Ancaq İzlənmə Qoruması işlədərkən
-do-not-track-option-default-content-blocking =
-    .label = Ancaq { -brand-short-name } Tapılan İzləyiciləri əngəlləmək üçün tənzimləndiyində
 do-not-track-option-always =
     .label = Həmişə
 pref-page =
@@ -52,6 +48,9 @@ category-privacy =
 pane-sync-title = Firefox Hesabı
 category-sync =
     .tooltiptext = { pane-sync-title }
+pane-sync-title2 = { -sync-brand-short-name }
+category-sync2 =
+    .tooltiptext = { pane-sync-title2 }
 help-button-label = { -brand-short-name } Dəstək
 addons-button-label = Uzantılar və Mövzular
 focus-search =
@@ -93,9 +92,6 @@ extension-controlled-default-search = <img data-l10n-name="icon"/> { $name } uza
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = Uzantı, <img data-l10n-name="icon"/> { $name }, Konteyner vərəqlərini tələb edir.
-# This string is shown to notify the user that their tracking protection preferences
-# are being controlled by an extension.
-extension-controlled-websites-tracking-protection-mode = Uzantı, <img data-l10n-name="icon"/> { $name }, izlənmə qorumasını idarə edir.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
 extension-controlled-websites-content-blocking-all-trackers = Bu tənzimləməni uzantı, <img data-l10n-name="icon"/> { $name }, idarə edir.
@@ -137,7 +133,7 @@ is-default = { -brand-short-name } hazırda əsas səyyahınızdır
 is-not-default = { -brand-short-name } əsas səyyahınız deyil
 set-as-my-default-browser =
     .label = Əsas səyyahım et…
-    .accesskey = D
+    .accesskey = m
 startup-restore-previous-session =
     .label = Əvvəlki sessiyanı bərpa et
     .accesskey = s
@@ -149,10 +145,10 @@ ctrl-tab-recently-used-order =
     .accesskey = T
 open-new-link-as-tabs =
     .label = Keçidləri yeni pəncərə yerinə vərəqlərdə aç
-    .accesskey = w
+    .accesskey = p
 warn-on-close-multiple-tabs =
     .label = Birdən çox vərəq bağlarkən xəbərdar olun
-    .accesskey = m
+    .accesskey = B
 warn-on-open-many-tabs =
     .label = Çoxlu vərəq açmağın { -brand-short-name } səyyahını yavaşlada biləcəyindən xəbərdar olun
     .accesskey = d
@@ -197,9 +193,9 @@ containers-remove-cancel-button = Bu konteyneri silmə
 language-and-appearance-header = Dil və Görünüş
 fonts-and-colors-header = Şriftlər və Rənglər
 default-font = Əsas şrift
-    .accesskey = D
+    .accesskey = f
 default-font-size = Ölçü
-    .accesskey = S
+    .accesskey = l
 advanced-fonts =
     .label = Təkmilləşmiş…
     .accesskey = T
@@ -228,7 +224,7 @@ translate-exceptions =
     .accesskey = t
 check-user-spelling =
     .label = Hərf səhvləriniz siz yazdıqca yoxlanılsın
-    .accesskey = t
+    .accesskey = y
 
 ## General Section - Files and Applications
 
@@ -264,21 +260,21 @@ applications-action-column =
 drm-content-header = Rəqəmsal Hüquqların İdarəsi (DRM) Məzmunu
 play-drm-content =
     .label = DRM-idarəli məzmunu oxut (güvənilir deyil)
-    .accesskey = P
+    .accesskey = o
 play-drm-content-learn-more = Ətraflı öyrən
 update-application-title = { -brand-short-name } yeniləmələri
 update-application-description = Yaxşı məhsuldarlıq, sabitlik və təhlükəsizlik üçün { -brand-short-name } səyyahını daima yeni tutun.
 update-application-version = Buraxılış { $version } <a data-l10n-name="learn-more">Yeniliklər</a>
 update-history =
     .label = Yeniləmə tarixçəsini göstər…
-    .accesskey = p
+    .accesskey = e
 update-application-allow-description = { -brand-short-name } səyyahı
 update-application-auto =
     .label = Yeniləmələri avtomatik qur (məsləhət görülür)
     .accesskey = A
 update-application-check-choose =
     .label = Yeniləmələri yoxlasın amma qurma qərasını sizə versin
-    .accesskey = C
+    .accesskey = Y
 update-application-manual =
     .label = Yeniləmələri heç vaxt yoxlamasın (məsləhətli deyil)
     .accesskey = N
@@ -413,7 +409,7 @@ search-choose-keyword-column =
     .label = Açar söz
 search-restore-default =
     .label = İlkin axtarış nizamlarını bərpa et
-    .accesskey = D
+    .accesskey = b
 search-remove-engine =
     .label = Sil
     .accesskey = S
@@ -444,7 +440,7 @@ sync-signedout-caption = Web-inizi özünüzlə gəzdirin
 sync-signedout-description = Əlfəçin, keçmiş, vərəq, parol, əlavə və nizamlamalarınızı bütün cihazlarınız arasında sinxronlaşdırın.
 sync-signedout-account-title = { -fxaccount-brand-name } ilə qoşulun
 sync-signedout-account-create = Hesabınız yoxdur? Başlayın
-    .accesskey = C
+    .accesskey = s
 sync-signedout-account-signin =
     .label = Daxil ol…
     .accesskey = I
@@ -464,9 +460,9 @@ sync-profile-picture =
     .tooltiptext = Profil şəklini dəyiş
 sync-disconnect =
     .label = Ayrıl…
-    .accesskey = D
+    .accesskey = y
 sync-manage-account = Hesabı idarə et
-    .accesskey = o
+    .accesskey = b
 sync-signedin-unverified = { $email } təsdiqlənməyib.
 sync-signedin-login-failure = Yenidən qoşulmaq üçün daxil olun { $email }
 sync-resend-verification =
@@ -474,10 +470,10 @@ sync-resend-verification =
     .accesskey = d
 sync-remove-account =
     .label = Hesabı sil
-    .accesskey = R
+    .accesskey = H
 sync-sign-in =
     .label = Daxil ol
-    .accesskey = g
+    .accesskey = x
 sync-signedin-settings-header = Sync Tənzimləmələri
 sync-signedin-settings-desc = { -brand-short-name } işlədən cihazlarınızda nələrin sinxronlaşacağını seçin.
 sync-engine-bookmarks =
@@ -497,11 +493,11 @@ sync-engine-logins =
 sync-engine-addresses =
     .label = Ünvanlar
     .tooltiptext = Saxladığınız poçt ünvanları (ancaq masaüstü)
-    .accesskey = e
+    .accesskey = v
 sync-engine-creditcards =
     .label = Kredit kartları
     .tooltiptext = Adlar, nömrələr və vaxtı çıxma tarixləri (ancaq masaüstü)
-    .accesskey = C
+    .accesskey = K
 sync-engine-addons =
     .label = Əlavələr
     .tooltiptext = Firefox masaüstü üçün uzantı və mövzular
@@ -520,12 +516,15 @@ sync-device-name-change =
     .accesskey = h
 sync-device-name-cancel =
     .label = Ləğv et
-    .accesskey = n
+    .accesskey = L
 sync-device-name-save =
     .label = Saxla
-    .accesskey = v
+    .accesskey = S
 sync-mobilepromo-single = Digər cihazı qoş
 sync-mobilepromo-multi = Cihazları idarə et
+sync-connect-another-device = Digər cihazı qoş
+sync-manage-devices = Cihazları idarə et
+sync-fxa-begin-pairing = Cihaz qoş
 sync-tos-link = İstifadə Şərtləri
 sync-fxa-privacy-notice = Məxfilik Bildirişi
 
@@ -565,7 +564,7 @@ history-header = Tarixçə
 #     This will result in "Firefox" + "Will remember history", etc.
 #   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name } səyyahı
-    .accesskey = w
+    .accesskey = s
 history-remember-option-all =
     .label = Tarixçəni xatırlayacaq
 history-remember-option-never =
@@ -579,7 +578,7 @@ history-private-browsing-permanent =
     .accesskey = g
 history-remember-browser-option =
     .label = Səyahət və endirmə tarixini yadda saxla
-    .accesskey = b
+    .accesskey = t
 history-remember-search-option =
     .label = Axtarış və form keçmişini xatırla
     .accesskey = f
@@ -591,7 +590,7 @@ history-clear-on-close-settings =
     .accesskey = a
 history-clear-button =
     .label = Tarixçəni Təmizlə…
-    .accesskey = s
+    .accesskey = T
 
 ## Privacy Section - Site Data
 
@@ -602,51 +601,31 @@ sitedata-total-size-calculating = Sayt məlumatları və keş ölçüsü hesabla
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Saxlanılan çərəz, sayt məlumatları və keşləriniz hazırda { $value } { $unit } disk işlədirlər.
 sitedata-learn-more = Ətraflı öyrən
-sitedata-keep-until = Saxlama limiti
-    .accesskey = u
-sitedata-keep-until-expire =
-    .label = Vaxtı bitənə qədər
-sitedata-keep-until-closed =
-    .label = { -brand-short-name } qapatılana qədər
 sitedata-delete-on-close =
     .label = { -brand-short-name } qapatıldığında çərəzləri və sayt məlumatlarını sil
-    .accesskey = c
+    .accesskey = s
+sitedata-delete-on-close-private-browsing = Daimi məxfi səyahət rejimində çərəzlər və sayt məlumatları { -brand-short-name } hər qapatıldığında silinəcəklər.
 sitedata-allow-cookies-option =
     .label = Çərəz və sayt məlumatlarını qəbul et
     .accesskey = A
 sitedata-disallow-cookies-option =
     .label = Çərəz və sayt məlumatlarını əngəllə
-    .accesskey = B
+    .accesskey = l
 # This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Əngəllənən növ
-    .accesskey = T
-sitedata-block-trackers-option-recommended =
-    .label = Üçüncü tərəf izləyicilər (məsləhətlidir)
-sitedata-block-trackers-option =
-    .label = Üçüncü tərəf izləyicilər
-sitedata-block-unvisited-option =
-    .label = Ziyarət edilməmiş saytlardan olan çərəzlər
-sitedata-block-all-third-party-option =
-    .label = Bütün üçüncü-tərəf çərəzləri (bəzi saytlar səhv işləyə bilər)
-sitedata-block-all-option =
-    .label = Bütün çərəzləri (əksər səhifələr səhv işləyəcəklər)
+    .accesskey = n
+sitedata-option-block-trackers =
+    .label = Üçüncü-tərəf izləyicilər
 sitedata-clear =
     .label = Məlumatları təmizlə…
     .accesskey = l
 sitedata-settings =
     .label = Məlumatları idarə et…
     .accesskey = M
-sitedata-cookies-exceptions =
-    .label = İstisnalar…
-    .accesskey = a
-# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
-# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
-# Cookies and Site Data section.
-sitedata-warning-your-settings-prevent-changes = Məzmun Əngəlləmə tənzimləmələriniz Çərəzlər və Sayt Məlumatları tənzimləmələrini dəyişdirməyə imkan vermirlər.
 sitedata-cookies-permissions =
     .label = İcazələri idarə et…
-    .accesskey = P
+    .accesskey = i
 
 ## Privacy Section - Address Bar
 
@@ -666,41 +645,8 @@ addressbar-suggestions-settings = Axtarış mühərriyi təklifləri üçün niz
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Məzmun Əngəlləmə
-content-blocking-desc = Səyahətinizi yavaşladacaq və sizi internetdə izləyəcək reklam və kod kimi üçüncü tərəf məzmunları əngəllə. Tənzimləmələrinizi qoruma və məhsuldarlıq arasında ehtiyyacınıza görə tarazlaşdırın.
 content-blocking-description = Sizi internetdə izləyən üçüncü tərəf məzmunlarını əngəlləyin. Onlayn aktivliyinizin nə qədər saxlandığını və hansı saytlar arasında paylaşıldığını idarə edin.
 content-blocking-learn-more = Ətraflı Öyrən
-content-blocking-restore-defaults =
-    .label = İlkin Seçənəkləri bərpa et
-    .accesskey = R
-content-blocking-toggle-on =
-    .tooltiptext = Məzmun Əngəlləməni söndür
-content-blocking-toggle-off =
-    .tooltiptext = Məzmun Əngəlləməni aktivləşdir
-content-blocking-toggle-label-on = AÇIQ
-    .accesskey = O
-content-blocking-toggle-label-off = QAPALI
-    .accesskey = O
-content-blocking-category-label = Nələrin əngəllənəcəyini seçin
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-slow-loading-trackers-label =
-    .label = Yavaş yüklənən izləyicilər
-    .accesskey = S
-content-blocking-fastblock-new-description = Ancaq səhifənin tez yüklənməsini əngəlləyən izləyiciləri əngəllə.
-content-blocking-tracking-protection-trackers-label =
-    .label = İzləyicilər
-    .accesskey = T
-content-blocking-tracking-protection-all-detected-trackers-label =
-    .label = Bütün aşkarlanan izləyicilər
-    .accesskey = T
-content-blocking-tracking-protection-new-description = Bütün bilinən izləyiciləri əngəllə. (Bəzi səhifələr yüklənməyə bilər.)
-content-blocking-tracking-protection-option-always =
-    .label = Həmişə
-    .accesskey = A
-content-blocking-tracking-protection-option-private =
-    .label = Ancaq məxfi pəncərələrdə
-    .accesskey = p
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 content-blocking-setting-standard =
@@ -711,7 +657,7 @@ content-blocking-setting-strict =
     .accesskey = r
 content-blocking-setting-custom =
     .label = Fərdi
-    .accesskey = C
+    .accesskey = F
 content-blocking-standard-desc = Qoruma və məhsuldarlıq arasında tarazlaşdırılıb. Saytların düzgün işləyə bilmələri üçün bəzi izləyicilərə icazə verir.
 content-blocking-strict-desc = { -brand-short-name } tərəfindən aşkarlanan bütün izləyiciləri əngəlləyir. Bəzi saytların düz işləməməsinə səbəb ola bilər.
 content-blocking-custom-desc = Nəyi əngəlləyəcəyini seçin.
@@ -724,62 +670,27 @@ content-blocking-warning-desc = Çərəzləri və izləyiciləri əngəlləmə b
 content-blocking-learn-how = Necə edəcəyinizi öyrənin
 content-blocking-trackers-label =
     .label = İzləyicilər
-    .accesskey = T
+    .accesskey = y
 content-blocking-tracking-protection-option-all-windows =
     .label = Bütün pəncərələrdə
-    .accesskey = A
+    .accesskey = B
 content-blocking-option-private =
     .label = Ancaq Məxfi Pəncərələrdə
     .accesskey = p
 content-blocking-tracking-protection-change-block-list = Qara siyahını dəyişdir
-content-blocking-third-party-cookies-label =
-    .label = Üçüncü-tərəf çərəzlər
-    .accesskey = C
-content-blocking-reject-trackers-description = Bütün üçüncü-tərəf çərəzləri və ya ancaq izləyicilər tərəfindən olanları əngəllə.
-# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
-# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
-# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
-# the UI.
-content-blocking-reject-trackers-warning-your-settings-prevent-changes = Çərəzlər və Sayt Məlumatları tənzimləmələriniz Üçüncü-Tərəf Çərəzləri tənzimləmələrini dəyişdirməyə imkan vermirlər.
-content-blocking-change-cookie-settings =
-    .label = Çərəz Tənzimləmələrini Dəyişdir
-    .accesskey = S
-content-blocking-reject-trackers-block-trackers-option-recommended =
-    .label = İzləyicilər (məsləhətlidir)
-    .accesskey = k
-content-blocking-reject-trackers-block-trackers-option =
-    .label = İzləyicilər
-    .accesskey = k
-content-blocking-reject-trackers-all-third-parties-option =
-    .label = Bütün üçüncü-tərəf çərəzlər (bəzi saytlar düz işləməyə bilər)
-    .accesskey = A
 content-blocking-cookies-label =
     .label = Çərəzlər
-    .accesskey = C
+    .accesskey = z
+# Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
+content-blocking-cryptominers-label =
+    .label = Kriptomaynerlər
+    .accesskey = K
 
 ## Privacy Section - Tracking
 
-tracking-header = İzlənmə Qoruması
-tracking-desc = İzlənmə Qoruması saytlar arası səyahət məlumatlarınızı yığan onlayn izləyiciləri əngəlləyir. <a data-l10n-name="learn-more">İzlənmə Qoruması və məxfiliyiniz haqqında ətraflı öyrənin</a>
-tracking-mode-label = Bilinin izləyiciləri əngəlləmək üçün İzlənmə Qorumasını işlədin
-tracking-mode-always =
-    .label = Həmişə
-    .accesskey = H
-tracking-mode-private =
-    .label = Ancaq Məxfi Pəncərələrdə
-    .accesskey = n
-tracking-mode-never =
-    .label = Heç vaxt
-    .accesskey = v
-tracking-exceptions =
-    .label = İstisnalar…
-    .accesskey = a
-tracking-change-block-list =
-    .label = Qara Siyahını Dəyiş…
-    .accesskey = C
 tracking-manage-exceptions =
     .label = İstisnaları idarə et…
-    .accesskey = x
+    .accesskey = s
 
 ## Privacy Section - Permissions
 
@@ -804,20 +715,9 @@ permissions-notification-link = Ətraflı öyrən
 permissions-notification-pause =
     .label = { -brand-short-name } yenidən başladılana qədər bildirişləri dayandır
     .accesskey = n
-permissions-block-autoplay-media =
-    .label = Saytların səsli medianı avtomatik oxutmalarını əngəllə
-    .accesskey = B
-permissions-block-autoplay-media-menu = Səsi avtomatik oxudan saytlar üçün
 permissions-block-autoplay-media-exceptions =
     .label = İstisnalar…
-    .accesskey = E
-autoplay-option-ask =
-    .label = Həmişə soruş
-autoplay-option-allow =
-    .label = Avto oxutmaya icazə ver
-autoplay-option-dont =
-    .label = Avtomatik oxutma
-permissions-autoplay-link = Ətraflı öyrən
+    .accesskey = s
 permissions-block-popups =
     .label = Peyda olan pəncərələri blokla
     .accesskey = b
@@ -826,7 +726,7 @@ permissions-block-popups-exceptions =
     .accesskey = a
 permissions-addon-install-warning =
     .label = Saytlar əlavə quraşdırmaq istədikdə xəbərdar olun
-    .accesskey = W
+    .accesskey = x
 permissions-addon-exceptions =
     .label = İstisnalar…
     .accesskey = s
@@ -851,10 +751,6 @@ addon-recommendations-link = Ətraflı öyrən
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Bu quraşdırmanın konfiqurasiyasında məlumat xəbərdarlığı söndürülüb
-collection-browser-errors =
-    .label = { -brand-short-name } səyyahına xəta hesabatlarını (xəta mesajları da daxil olmaqla) { -vendor-short-name }ya göndərməsinə icazə ver
-    .accesskey = b
-collection-browser-errors-link = Ətraflı öyrən
 collection-backlogged-crash-reports =
     .label = { -brand-short-name } səyyahına sizin adınıza yığılmış çəkmə hesabatlarını göndərməyə icazə ver
     .accesskey = c
@@ -876,7 +772,7 @@ security-block-downloads =
     .accesskey = d
 security-block-uncommon-software =
     .label = İstənməyən və ümumi olmayan proqramlar haqqında xəbərdar olun
-    .accesskey = C
+    .accesskey = o
 
 ## Privacy Section - Certificates
 
@@ -887,16 +783,16 @@ certs-select-auto-option =
     .accesskey = S
 certs-select-ask-option =
     .label = Hər dəfə soruş
-    .accesskey = A
+    .accesskey = H
 certs-enable-ocsp =
     .label = Sertifikatların keçərliliyini təsdiqləmək üçün OCSP cavabdehlik serverlərinə Sorğu göndər
     .accesskey = S
 certs-view =
     .label = Sertifikatları göstər…
-    .accesskey = C
+    .accesskey = S
 certs-devices =
     .label = Təhlükəsizlik cihazları…
-    .accesskey = D
+    .accesskey = T
 space-alert-learn-more-button =
     .label = Ətraflı öyrən
     .accesskey = L
@@ -918,7 +814,7 @@ space-alert-over-5gb-message =
     }
 space-alert-under-5gb-ok-button =
     .label = Tamam, başa düşdüm
-    .accesskey = K
+    .accesskey = T
 space-alert-under-5gb-message = { -brand-short-name } səyyahının diskdə yaddaşı dolur. Sayt məzmunları səhv göstərilə bilər. Daha yaxşı internet səyahəti təcrübəsi üçün “Ətraflı Öyrən”-i ziyarət edərək disk istifadənizi optimallaşdıra bilərsiz.
 
 ## The following strings are used in the Download section of settings

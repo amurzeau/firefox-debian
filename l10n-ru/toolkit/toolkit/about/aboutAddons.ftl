@@ -77,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = Последнее обновление
 detail-contributions-description = Разработчик этого дополнения просит вас помочь поддержать его дальнейшее развитие, внеся небольшое пожертвование.
+detail-contributions-button = Принять участие
+    .title = Принять участие в разработке этого дополнения
+    .accesskey = я
 detail-update-type =
     .value = Автоматическое обновление
 detail-update-default =
@@ -90,7 +93,14 @@ detail-update-manual =
     .tooltiptext = Не устанавливать обновления автоматически
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Запуск в приватных окнах
-detail-private-browsing-description = Расширение будет работать в Приватных окнах и иметь доступ к вашей активности в Интернете. <label data-l10n-name="detail-private-browsing-learn-more">Подробнее</label>
+detail-private-browsing-description2 = Когда разрешено, расширение будет иметь доступ к вашей активности в Интернете во время приватного просмотра. <label data-l10n-name="detail-private-browsing-learn-more">Подробнее</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = Не разрешено в приватных окнах
+detail-private-disallowed-description = Это расширение не будет работать в режиме приватного просмотра. <label data-l10n-name="detail-private-browsing-learn-more">Подробнее</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Требует доступа к приватным окнам
+detail-private-required-description = Это расширение имеет доступ к вашей активности в Интернете во время приватного просмотра. <label data-l10n-name="detail-private-browsing-learn-more">Подробнее</label>
 detail-private-browsing-on =
     .label = Разрешить
     .tooltiptext = Включать при приватном просмотре
@@ -241,11 +251,15 @@ shortcuts-modifier-other = Добавьте Ctrl или Alt
 shortcuts-invalid = Неверная комбинация
 shortcuts-letter = Введите букву
 shortcuts-system = Нельзя переопределить горячую клавишу { -brand-short-name }
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Уже используется { $addon }
 shortcuts-card-expand-button =
     { $numberToShow ->
         [one] Показать ещё { $numberToShow }
         [few] Показать ещё { $numberToShow }
-       *[other] Показать ещё { $numberToShow }
+       *[many] Показать ещё { $numberToShow }
     }
 shortcuts-card-collapse-button = Показать меньше
 go-back-button =
@@ -256,5 +270,24 @@ go-back-button =
 remove-addon-button = Удалить
 disable-addon-button = Отключить
 enable-addon-button = Включить
+expand-addon-button = Другие настройки
 addons-enabled-heading = Включено
 addons-disabled-heading = Отключено
+addon-detail-author-label = Автор
+addon-detail-version-label = Версия
+addon-detail-last-updated-label = Последнее обновление
+addon-detail-homepage-label = Домашняя страница
+addon-detail-rating-label = Рейтинг
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (отключено)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } отзыв
+        [few] { $numberOfReviews } отзыва
+       *[many] { $numberOfReviews } отзывов
+    }

@@ -3,12 +3,15 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 cfr-doorhanger-extension-heading = הרחבה מומלצת
+cfr-doorhanger-pintab-heading = התנסות בתכונה: נעיצת לשונית
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = למה אני רואה את זה
 cfr-doorhanger-extension-cancel-button = לא עכשיו
     .accesskey = ע
 cfr-doorhanger-extension-ok-button = הוספה כעת
     .accesskey = ס
+cfr-doorhanger-pintab-ok-button = נעיצת לשונית זו
+    .accesskey = נ
 cfr-doorhanger-extension-manage-settings-button = ניהול הגדרות המלצות
     .accesskey = ג
 cfr-doorhanger-extension-never-show-recommendation = לא להציג לי המלצה זו
@@ -41,3 +44,20 @@ cfr-doorhanger-extension-total-users =
         [one] משתמש אחד
        *[other] { $total } משתמשים
     }
+cfr-doorhanger-pintab-description = קבלת גישה פשוטה לאתרים שהכי משמשים אותך. להשאיר אתרים פתוחים בלשונית (אפילו לאחר הפעלה מחדש).
+
+## These messages are steps on how to use the feature and are shown together.
+
+cfr-doorhanger-pintab-step1 = יש ללחוץ עם <b>הכפתור הימני</b> על הלשונית שברצונך לנעוץ.
+cfr-doorhanger-pintab-step2 = יש לבחור ב<b>נעיצת לשונית</b> מהתפריט.
+cfr-doorhanger-pintab-step3 = אם לאתר זה יהיה עדכון, תופיע נקודה כחולה על הלשונית הנעוצה שלך.
+cfr-doorhanger-pintab-animation-pause = השהיה
+cfr-doorhanger-pintab-animation-resume = המשך
+
+## Firefox Accounts Message
+
+cfr-doorhanger-bookmark-fxa-header = סנכרון הסימניות שלך לכל מקום.
+cfr-doorhanger-bookmark-fxa-link-text = סנכרון הסימניות כעת…
+cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
+    .aria-label = כפתור סגירה
+    .title = סגירה

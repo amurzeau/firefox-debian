@@ -10,10 +10,13 @@
 <!ENTITY fullscreenButton.exitfullscreenlabel "Połnu wobrazowku spušćiś">
 <!ENTITY castingButton.castingLabel "Na wobrazowku projicěrowaś">
 <!ENTITY closedCaption.off "Wušaltowany">
-
 <!-- LOCALIZATION NOTE (volumeScrubber.label): This label is exposed to
      accessibility software to clarify what the slider is for. -->
 <!ENTITY volumeScrubber.label "Regler głosnosći">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label): This string is used as part of
+the Picture-in-Picture video toggle button when the mouse is hovering it. -->
+<!ENTITY pictureInPicture.label "Wobraz-we-wobrazu">
 
 <!ENTITY stats.media "Medije">
 <!ENTITY stats.size "Wjelikosć">
@@ -34,6 +37,8 @@
 <!ENTITY error.srcNotSupported "Wideowy format abo MIME-typ se njepódpěra.">
 <!ENTITY error.noSource2 "Wideo z pódpěranym formatom a MIME-typom njejo so namakało.">
 <!ENTITY error.generic "Wotgrawanje wideo jo se njeznateje zmólki dla pśetergnuło.">
+
+<!ENTITY status.pictureInPicture "Toś to wideo se w modusu wobraz-we-wobrazu wótgrawa.">
 
 <!-- LOCALIZATION NOTE (scrubberScale.nameFormat): the #1 string is the current
 media position, and the #2 string is the total duration. For example, when at

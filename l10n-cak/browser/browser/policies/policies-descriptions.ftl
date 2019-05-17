@@ -10,6 +10,7 @@
 ## These are short descriptions for individual policies, to be displayed
 ## in the documentation section in about:policies.
 
+policy-3rdparty = Ke'ajikib'a' taq na'ojil richin chi ri WebExtensions yetikïr ye'ok rik'in chrome.managed.
 policy-AppUpdateURL = Tiya' jun ichinan URL richin nik'ex ri chokoy.
 policy-Authentication = Tib'an runuk'ulem ri chijun jikib'an pa taq ajk'amaya'l ruxaq nikiya' q'ij.
 policy-BlockAboutAddons = Tiq'at rokem ri Runuk'samajel Chokoy (about:addons).
@@ -56,18 +57,23 @@ policy-HardwareAcceleration = We man qitzij ta, tichup ranin ch'akulkem.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Tiya' chuqa' ütz niq'at ri tikirib'äl ruxaq.
 policy-InstallAddonsPermission = Tiya' q'ij chi ke jujun taq ajk'amaya'l ruxaq yekiyäk taq tz'aqat.
+policy-LocalFileLinks = Tiya' q'ij chi ri ajk'amaya'l ruxaq tikixima' ki' kik'in ri aj wawe' taq yakb'äl.
 policy-NetworkPrediction = Titzij o tichup ri nutz'et k'amab'ey (DNS nab'ey rukanoxik).
+policy-NewTabPage = Titzij o tichup ri ruxaq K'ak'a' Ruwi'.
 policy-NoDefaultBookmarks = Kechup ri kitz'ukik taq yaketal e k'o wi etz'aqatisan rik'in { -brand-short-name }, chuqa' ri na'owinäq taq yaketal (Yalan Etz'eton, K'a ri' Ketz'et taq Yaketal). Ch'utitzijol: ütz re na'ojil re' we nokisäx pa ri nab'ey rusamajixik ruwäch b'i'aj.
 policy-OfferToSaveLogins = Tab'ana' ri runuk'ulem richin niya' q'ij chi ri { -brand-short-name } yerusüj yenatäx tikirib'äl taq molojri'ïl chuqa' yakon ewan taq tzij. Yek'ul qitzij chuqa' man qitzij ta taq ajil.
 policy-OverrideFirstRunPage = Tiyuj ri nab'ey ruxaq rub'anikil. Tiya' pa säq re na'ojil re' we nawajo' nachüp ri nab'ey ruxaq rub'anik.
 policy-OverridePostUpdatePage = Nayüj ri ruxaq "K'ak'a' taq tzijol" chi rij ri k'exoj. Tiya' pa säq re na'ojil re' we nawajo' nachüp re ruxaq chi rij ri k'exoj.
 policy-Permissions = Tib'an kinuk'ulem ya'oj taq q'ij kichin elesäy wachib'äl, q'asäy ch'ab'äl, k'ojlib'äl chuqa' taq rutzijol.
 policy-PopupBlocking = Tiya' q'ij chi jujun taq ajk'amaya'l ruxaq kekik'utu' elenel taq tzuwäch achi'el e k'o wi.
+policy-Preferences = Tajikib'a' chuqa' taq'ata' ri rejqalem jun rachmolaj ajowanïk.
 policy-Proxy = Tib'an runuk'ulem ri proxi.
 policy-RequestedLocales = Tijikib'äx rucholajem k'utun taq rutzalq'omanem chokoy, cholajin chi ajowanïk.
 policy-SanitizeOnShutdown = Keyuj ronojel ri taq rutzij okem pa k'amaya'l toq nichup.
+policy-SanitizeOnShutdown2 = Keyuj taq rutzij okem pa k'amaya'l toq nichup.
 policy-SearchBar = Tib'an runuk'ulem ri k'ojlib'äl k'o wi pa ri rukajtz'ik kanob'äl. Ri okisanel k'a nitikïr nrichinaj.
 policy-SearchEngines = Tib'an runuk'ulem ri kanob'äl. Re na'ojil re' xa xe okel pa ri ruwäch Extended Support Release (ESR).
+policy-SearchSuggestEnabled = Titzij o tichup ri kichilab'exik kanoxïk.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Keyak PKCS #11 taq juperaj.
 policy-SSLVersionMax = Tijikib'äx ri nïm ruwäch SSL.

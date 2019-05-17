@@ -335,6 +335,9 @@ browsing-search-on-start-typing =
 browsing-cfr-recommendations =
     .label = Recommander des extensions en cours de navigation
     .accesskey = R
+browsing-cfr-features =
+    .label = Recommander des fonctionnalités en cours de navigation
+    .accesskey = f
 browsing-cfr-recommendations-learn-more = En savoir plus
 
 ## General Section - Proxy
@@ -657,6 +660,7 @@ addressbar-suggestions-settings = Modifier les préférences pour les suggestion
 
 content-blocking-header = Blocage de contenu
 content-blocking-description = Bloquez les contenus tiers qui vous pistent sur le Web. Contrôlez le niveau d’activité en ligne qui est enregistrée et partagée avec des sites web.
+content-blocking-section-description = Protégez votre vie privée pendant votre navigation. Bloquez les contenus invisibles qui vous pistent de site en site et dressent votre profil. Bloquer une partie de ces contenus peut accélérer le chargement des pages.
 content-blocking-learn-more = En savoir plus
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -672,15 +676,24 @@ content-blocking-setting-custom =
 content-blocking-standard-description = Bloque uniquement les traqueurs connus dans les fenêtres de navigation privée.
 content-blocking-standard-desc = Équilibré entre protection et performances. Autorise quelques traqueurs pour que les sites web fonctionnent correctement.
 content-blocking-strict-desc = Bloque tous les traqueurs détectés par { -brand-short-name }. Peut provoquer le dysfonctionnement de certains sites.
+content-blocking-strict-description = Une protection renforcée, mais qui peut empêcher certains sites de fonctionner correctement.
 content-blocking-custom-desc = Choisissez ce que vous souhaitez bloquer.
 content-blocking-private-trackers = Les traqueurs connus dans les fenêtres de navigation privée seulement
 content-blocking-third-party-cookies = Les cookies tiers utilisés pour le pistage
+content-blocking-all-cookies = Tous les cookies
+content-blocking-unvisited-cookies = Cookies de sites non visités
 content-blocking-all-windows-trackers = Les traqueurs connus dans toutes les fenêtres
 content-blocking-all-third-party-cookies = Tous les cookies tiers
+content-blocking-cryptominers = Mineurs de cryptomonnaies
+content-blocking-fingerprinters = Détecteurs d’empreinte numérique
 content-blocking-warning-title = Attention !
 content-blocking-warning-desc = Bloquer les cookies et les traqueurs peut empêcher certains sites de fonctionner. Vous pouvez facilement désactiver le blocage pour les sites en lesquels vous avez confiance.
 content-blocking-warning-description = Le blocage de contenu peut empêcher certains sites de fonctionner. Vous pouvez facilement désactiver le blocage pour les sites en lesquels vous avez confiance.
 content-blocking-learn-how = Découvrez comment
+content-blocking-reload-description = Vous devrez actualiser vos onglets pour appliquer ces modifications.
+content-blocking-reload-tabs-button =
+    .label = Actualiser tous les onglets
+    .accesskey = A
 content-blocking-trackers-label =
     .label = Traqueurs
     .accesskey = T
@@ -694,6 +707,8 @@ content-blocking-tracking-protection-change-block-list = Changer de liste de blo
 content-blocking-cookies-label =
     .label = Cookies
     .accesskey = C
+content-blocking-expand-section =
+    .tooltiptext = Plus d’informations
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
     .label = Mineurs de cryptomonnaies
@@ -733,23 +748,12 @@ permissions-notification-link = En savoir plus
 permissions-notification-pause =
     .label = Arrêter les notifications jusqu’au redémarrage de { -brand-short-name }
     .accesskey = n
-permissions-block-autoplay-media =
-    .label = Empêcher les sites web de lancer automatiquement la lecture de contenu multimédia comportant du son
-    .accesskey = E
-permissions-block-autoplay-media-menu = Lorsqu’un site web tente de lire automatiquement du son
 permissions-block-autoplay-media2 =
     .label = Empêcher la lecture automatique de contenus sonores
     .accesskey = l
 permissions-block-autoplay-media-exceptions =
     .label = Exceptions…
     .accesskey = x
-autoplay-option-ask =
-    .label = Toujours demander
-autoplay-option-allow =
-    .label = Autoriser la lecture automatique
-autoplay-option-dont =
-    .label = Interdire la lecture automatique
-permissions-autoplay-link = En savoir plus
 permissions-block-popups =
     .label = Bloquer les fenêtres popup
     .accesskey = B
@@ -785,10 +789,6 @@ addon-recommendations-link = En savoir plus
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = L’envoi de données est désactivé pour cette configuration de compilation
-collection-browser-errors =
-    .label = Autoriser { -brand-short-name } à envoyer les rapports d’erreur du navigateur (comprenant les messages d’erreur) à { -vendor-short-name }
-    .accesskey = u
-collection-browser-errors-link = En savoir plus
 collection-backlogged-crash-reports =
     .label = Autoriser { -brand-short-name } à envoyer pour vous les rapports de plantage en attente
     .accesskey = t

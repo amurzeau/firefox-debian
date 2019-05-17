@@ -82,6 +82,9 @@ detail-version =
 detail-last-updated =
     .label = Ultime actualisation
 detail-contributions-description = Le developpator de iste additivo demanda que tu le adjuta assecurar su developpamento continue faciente un parve contribution.
+detail-contributions-button = Collaborar
+    .title = Collabora al disveloppamento de iste additivo.
+    .accesskey = C
 detail-update-type =
     .value = Actualisationes automatic
 detail-update-default =
@@ -94,8 +97,15 @@ detail-update-manual =
     .label = Inactive
     .tooltiptext = Non installar automaticamente le actualisationes
 # Used as a description for the option to allow or block an add-on in private windows.
-detail-private-browsing-label = Aperir in un fenestra private
-detail-private-browsing-description = Le extension functionara in fenestras anonyme e habera accesso a tu activitates online. <label data-l10n-name="detail-private-browsing-learn-more">Saper plus</label>
+detail-private-browsing-label = Aperir in Fenestra private
+detail-private-browsing-description2 = Quando consentite, le extension habera accesso a tu activitates online durante le navigation anonyme. <label data-l10n-name="detail-private-browsing-learn-more">Saper plus</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = Fenestras private non consentite
+detail-private-disallowed-description = Iste extension non flue durante le navigation anonyme. <label data-l10n-name="detail-private-browsing-learn-more">Saper plus</label>.
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Require accesso a Fenestras private
+detail-private-required-description = Iste extension ha accesso a tu activitates online durante le navigation anonyme. <label data-l10n-name="detail-private-browsing-learn-more">Saper plus</label>.
 detail-private-browsing-on =
     .label = Consentir
     .tooltiptext = Activar in navigation anonime
@@ -143,10 +153,8 @@ plugin-deprecation-description = Alcun cosa manca? Alcun plugins non es plus adm
 legacy-warning-show-legacy = Monstrar le extensiones obsolete
 legacy-extensions =
     .value = Extensiones obsolete
-legacy-extensions-description = Ille extensiones non concorda le standardos currente de { -brand-short-name } assi illos esseva disactivate. <label data-l10n-name="legacy-learn-more">Sape lo que cambiava al additivos</label>
-private-browsing-description =
-    Le extensiones non es consentite de ordinario pro fluer in Fenestras anonyme. Isto significa que illos non functiona durante le navigation anonyme e illos non habera accesso illac a tu activitates online. Pro consentir que
-    un extension flue in Fenestras anonyme, elige le carta de extension infra e cambia tu parametros.
+legacy-extensions-description = Iste extensiones non satisface le standards actual de { -brand-short-name } e ha essite disactivate. <label data-l10n-name="legacy-learn-more">Saper lo que cambiava al additivos</label>
+private-browsing-description2 = { -brand-short-name } es cambiar como le extensiones functiona in Navigation private. Cata nove extension que tu adde a { -brand-short-name } non fluera de ordinario in le Fenestras private. A minus que tu lo consenti in le parametros, le extension non functiona in Navigation private e illac non habera accesso a tu activitates online. Nos ha facite iste cambio pro mantener private tu navigation anonyme. <label data-l10n-name="private-browsing-learn-more">Apprende a gerer le parametros del extension.</label>
 extensions-view-discover =
     .name = Obtener additivos
     .tooltiptext = { extensions-view-discover.name }
@@ -243,6 +251,10 @@ shortcuts-modifier-other = Include Ctrl o Alt
 shortcuts-invalid = Combination non valide
 shortcuts-letter = Scribe un littera
 shortcuts-system = Impossibile supplantar un via breve de { -brand-short-name }
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Jam in uso pro { $addon }
 shortcuts-card-expand-button =
     { $numberToShow ->
         [one] Mostrar altere { $numberToShow }
@@ -254,8 +266,52 @@ go-back-button =
 
 ## Add-on actions
 
+report-addon-button = Reportar
 remove-addon-button = Remover
 disable-addon-button = Disactivar
 enable-addon-button = Activar
+expand-addon-button = Altere optiones
 addons-enabled-heading = Activate
 addons-disabled-heading = Disactivate
+ask-to-activate-button = Demandar pro activar
+always-activate-button = Sempre activar
+never-activate-button = Non activar jammais
+addon-detail-author-label = Autor
+addon-detail-version-label = Version
+addon-detail-last-updated-label = Ultime actualisation
+addon-detail-homepage-label = Pagina initial
+addon-detail-rating-label = Valutation
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (disactivate)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } revision
+       *[other] { $numberOfReviews } revisiones
+    }
+
+## Pending uninstall message bar
+
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> ha essite eliminate.
+pending-uninstall-undo-button = Disfacer
+addon-detail-updates-label = Consentir actualisationes automatic
+addon-detail-updates-radio-default = Predefinite
+addon-detail-updates-radio-on = Activar
+addon-detail-updates-radio-off = Disactivar
+addon-detail-update-check-label = Cercar actualisationes
+install-update-button = Actualisar
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Consentite in fenestras reservate
+addon-detail-private-browsing-help = Quando consentite, le extension habera accesso a tu activitates online durante le navigation reservate. <a data-l10n-name="learn-more">Saper plus</a>
+addon-detail-private-browsing-allow = Consentir
+addon-detail-private-browsing-disallow = Non consentir
+available-updates-heading = Actualisationes disponibile
+recent-updates-heading = Actualisationes recente

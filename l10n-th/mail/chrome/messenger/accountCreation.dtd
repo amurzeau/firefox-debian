@@ -6,6 +6,7 @@
 <!ENTITY name.label                      "ชื่อของคุณ:">
 <!ENTITY name.accesskey                  "ช">
 <!ENTITY name.placeholder                "ชื่อจริง นามสกุล">
+<!ENTITY name.text                       "ชื่อของคุณที่จะแสดงให้ผู้อื่นเห็น">
 <!ENTITY email.label                     "ที่อยู่อีเมล:">
 <!ENTITY email.accesskey                 "ท">
 <!-- LOCALIZATION NOTE(email.placeholder): Domain @example.com must stay in English -->
@@ -14,8 +15,15 @@
 <!ENTITY password.label                  "รหัสผ่าน:">
 <!ENTITY password.accesskey              "ร">
 <!ENTITY password.placeholder            "รหัสผ่าน">
+<!ENTITY password.text                   "ไม่บังคับกรอก จะใช้เพื่อตรวจสอบชื่อผู้ใช้เท่านั้น">
 <!ENTITY rememberPassword.label          "จดจำรหัสผ่าน">
 <!ENTITY rememberPassword.accesskey      "จ">
+<!ENTITY usernameEx.label                "ข้อมูลการเข้าสู่ระบบของคุณ:">
+<!ENTITY usernameEx.accesskey            "ข">
+<!-- LOCALIZATION NOTE(usernameEx.placeholder): YOURDOMAIN refers to the Windows domain in ActiveDirectory. yourusername refers to the user's account name in Windows. -->
+<!ENTITY usernameEx.placeholder          "YOURDOMAIN\yourusername">
+<!-- LOCALIZATION NOTE(usernameEx.text): Domain refers to the Windows domain in ActiveDirectory. We mean the user's login in Windows at the local corporate network. -->
+<!ENTITY usernameEx.text                 "การเข้าสู่ระบบโดเมน">
 
 <!ENTITY imapLong.label                  "IMAP (โฟลเดอร์ระยะไกล)">
 <!ENTITY pop3Long.label                  "POP3 (เก็บจดหมายไว้ในคอมพิวเตอร์ของคุณ)">
@@ -23,6 +31,7 @@
 <!ENTITY incoming.label                  "ขาเข้า:">
 <!ENTITY outgoing.label                  "ขาออก:">
 <!ENTITY username.label                  "ชื่อผู้ใช้:">
+<!ENTITY hostname.label                  "ชื่อโฮสต์เซิร์ฟเวอร์">
 <!ENTITY port.label                      "พอร์ต">
 <!ENTITY ssl.label                       "SSL">
 <!ENTITY auth.label                      "การรับรองความถูกต้อง">
@@ -31,6 +40,7 @@
 <!-- LOCALIZATION NOTE(exchange.label): Do not translate Exchange, it is a product name. -->
 <!ENTITY exchange.label                  "Exchange">
 <!ENTITY smtp.label                      "SMTP">
+<!ENTITY autodetect.label                "ตรวจพบอัตโนมัติ">
 <!-- LOCALIZATION NOTE(noEncryption.label): Neither SSL/TLS nor STARTTLS.
      Transmission of emails in cleartext over the Internet. -->
 <!ENTITY noEncryption.label              "ไม่มี">
@@ -81,6 +91,11 @@
 <!ENTITY changeSettings.label            "เปลี่ยนการตั้งค่า">
 <!ENTITY changeSettings.accesskey        "ป">
 
+<!ENTITY contactYourProvider.description "&brandShortName; สามารถอนุญาตให้คุณเข้าถึงจดหมายของคุณโดยใช้การกำหนดค่าที่ระบุไว้ อย่างไรก็ตาม คุณควรติดต่อผู้ดูแลระบบหรือผู้ให้บริการอีเมลของคุณเกี่ยวกับการเชื่อมต่อที่ไม่เหมาะสมเหล่านี้ ดูคำถามที่พบบ่อยของ Thunderbird สำหรับข้อมูลเพิ่มเติม">
 
+<!ENTITY insecureServer.tooltip.title    "คำเตือน! เซิร์ฟเวอร์นี้เป็นเซิร์ฟเวอร์ที่ไม่ปลอดภัย">
 <!ENTITY insecureServer.tooltip.details  "คลิกวงกลมสำหรับรายละเอียดเพิ่มเติม">
 
+<!ENTITY insecureUnencrypted.description "อีเมลและการรับรองความถูกต้องของคุณจะถูกส่งแบบไม่เข้ารหัส ดังนั้นผู้อื่นจะสามารถอ่านรหัสผ่านของคุณ (และข้อความของคุณ) ได้อย่างง่ายดาย &brandShortName; จะช่วยให้คุณสามารถเข้าถึงอีเมลของคุณ แต่คุณควรติดต่อผู้ให้บริการอีเมลของคุณเกี่ยวกับการกำหนดค่าเซิร์ฟเวอร์ด้วยการเชื่อมต่อที่ปลอดภัย">
+<!ENTITY insecureSelfSigned.description  "เซิร์ฟเวอร์ใช้ใบรับรองที่เราไม่สามารถเชื่อถือได้ ดังนั้นเราจึงไม่สามารถมั่นใจได้ว่ามีใครบางคนไม่ได้ขัดขวางการรับส่งข้อมูลระหว่าง &brandShortName; และเซิร์ฟเวอร์ของคุณ &brandShortName; จะช่วยให้คุณสามารถเข้าถึงอีเมลของคุณ แต่คุณควรให้ผู้ให้บริการอีเมลของคุณกำหนดค่าเซิร์ฟเวอร์ด้วยใบรับรองที่เชื่อถือได้">
+<!ENTITY secureServer.description        "ยินดีด้วย! เซิร์ฟเวอร์นี้เป็นเซิร์ฟเวอร์ที่ปลอดภัย">

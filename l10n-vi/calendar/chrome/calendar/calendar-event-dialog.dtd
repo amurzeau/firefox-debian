@@ -16,8 +16,8 @@
 <!ENTITY newevent.eventStatus.none.accesskey      "K" >
 <!ENTITY newevent.todoStatus.none.label           "Không xác định" >
 <!ENTITY newevent.eventStatus.cancelled.label     "Đã hủy" >
-<!ENTITY newevent.eventStatus.cancelled.accesskey "y" >
-<!ENTITY newevent.todoStatus.cancelled.label      "Bị hủy" >
+<!ENTITY newevent.eventStatus.cancelled.accesskey "n" >
+<!ENTITY newevent.todoStatus.cancelled.label      "Đã hủy" >
 <!ENTITY newevent.status.tentative.label          "Phân vân" >
 <!ENTITY newevent.status.tentative.accesskey      "P" >
 <!ENTITY newevent.status.confirmed.label          "Đã xác nhận" >
@@ -66,7 +66,7 @@
 <!ENTITY  event.menu.item.new.task.accesskey              "T">
 <!ENTITY  event.menu.item.new.message.label               "Thông điệp">
 <!ENTITY  event.menu.item.new.message.accesskey           "i">
-<!ENTITY  event.menu.item.new.contact.label               "Tên liên hệ trên Sổ Địa Chỉ">
+<!ENTITY  event.menu.item.new.contact.label               "Sổ địa chỉ liên hệ">
 <!ENTITY  event.menu.item.new.contact.accesskey           "a">
 <!ENTITY  event.menu.item.close.label                     "Đóng">
 <!ENTITY  event.menu.item.close.accesskey                 "g">
@@ -146,12 +146,12 @@
 <!ENTITY  event.menu.options.privacy.confidential.accesskey   "N">
 <!ENTITY  event.menu.options.privacy.private.label            "Sự kiện Cá nhân">
 <!ENTITY  event.menu.options.privacy.private.accesskey        "C">
-<!ENTITY  event.menu.options.show.time.label                  "Hiện thời gian là">
+<!ENTITY  event.menu.options.show.time.label                  "Hiện tình trạng lịch trình là">
 <!ENTITY  event.menu.options.show.time.accesskey              "t">
 <!ENTITY  event.menu.options.show.time.busy.label             "Bận">
 <!ENTITY  event.menu.options.show.time.busy.accesskey         "B">
 <!ENTITY  event.menu.options.show.time.free.label             "Rảnh">
-<!ENTITY  event.menu.options.show.time.free.accesskey         "R">
+<!ENTITY  event.menu.options.show.time.free.accesskey         "F">
 
 <!ENTITY event.invite.attendees.label                     "Mời khách Tham dự…">
 <!ENTITY event.invite.attendees.accesskey                 "M">
@@ -259,6 +259,7 @@
 
 <!ENTITY event.reminder.multiple.label                    "Nhiều lời Nhắc việc…" >
 
+<!ENTITY event.statusbarpanel.freebusy.label              "Tình trạng lịch trình:">
 <!ENTITY event.statusbarpanel.privacy.label               "Riêng tư:">
 
 <!-- Recurrence dialog -->
@@ -297,7 +298,7 @@
 <!ENTITY event.recurrence.monthly.fourth.label          "Tuần Bốn">
 <!ENTITY event.recurrence.monthly.fifth.label           "Tuần Năm">
 <!ENTITY event.recurrence.monthly.last.label            "Tuần Cuối">
-<!ENTITY event.recurrence.pattern.monthly.week.1.label  "Chủ Nhật" >
+<!ENTITY event.recurrence.pattern.monthly.week.1.label  "Chủ nhật" >
 <!ENTITY event.recurrence.pattern.monthly.week.2.label  "Thứ Hai" >
 <!ENTITY event.recurrence.pattern.monthly.week.3.label  "Thứ Ba" >
 <!ENTITY event.recurrence.pattern.monthly.week.4.label  "Thứ Tư" >
@@ -339,7 +340,7 @@
 <!ENTITY event.recurrence.yearly.fourth.label                "Tuần Bốn">
 <!ENTITY event.recurrence.yearly.fifth.label                 "Tuần Năm">
 <!ENTITY event.recurrence.yearly.last.label                  "Tuần Cuối">
-<!ENTITY event.recurrence.pattern.yearly.week.1.label        "Chủ Nhật" >
+<!ENTITY event.recurrence.pattern.yearly.week.1.label        "Chủ nhật" >
 <!ENTITY event.recurrence.pattern.yearly.week.2.label        "Thứ Hai" >
 <!ENTITY event.recurrence.pattern.yearly.week.3.label        "Thứ Ba" >
 <!ENTITY event.recurrence.pattern.yearly.week.4.label        "Thứ Tư" >
@@ -372,14 +373,12 @@
 <!ENTITY invite.title.label                     "Mời khách Tham dự">
 <!ENTITY event.organizer.label                  "Người tổ chức">
 <!ENTITY event.freebusy.suggest.slot            "Đề xuất khung thời gian:">
-<!ENTITY event.freebusy.button.next.slot        "Khe tiếp theo">
-<!ENTITY event.freebusy.button.previous.slot    "Khe trước">
 <!ENTITY event.freebusy.zoom                    "Thu phóng:">
 <!ENTITY event.freebusy.legend.free             "Rảnh" >
 <!ENTITY event.freebusy.legend.busy             "Bận" >
 <!ENTITY event.freebusy.legend.busy_tentative   "Phân vân" >
-<!ENTITY event.freebusy.legend.busy_unavailable "Ra ngoài Văn phòng" >
-<!ENTITY event.freebusy.legend.unknown          "Không có Thông tin" >
+<!ENTITY event.freebusy.legend.busy_unavailable "Ra khỏi văn phòng" >
+<!ENTITY event.freebusy.legend.unknown          "Không có thông tin" >
 <!ENTITY event.attendee.role.required           "Người tham dự Quan trọng">
 <!ENTITY event.attendee.role.optional           "Người tham dự Phụ">
 <!ENTITY event.attendee.role.chair              "Chủ tọa">

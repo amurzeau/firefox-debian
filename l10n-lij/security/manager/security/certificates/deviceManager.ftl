@@ -6,7 +6,7 @@
 ## Strings used for device manager
 
 devmgr =
-    .title = Gestô di Aparati
+    .title = Gestô di aparati
     .style = width: 67em; height: 32em;
 devmgr-devlist =
     .label = Mòdoli e aparati de seguessa
@@ -47,7 +47,7 @@ load-device-modname =
 load-device-modname-default =
     .value = Neuvo mòdolo PKCS#11
 load-device-filename =
-    .value = Nomme file do mòdolo
+    .value = Nomme do schedaio do mòdolo
     .accesskey = f
 load-device-browse =
     .label = Çerca…
@@ -64,9 +64,9 @@ devinfo-status-not-present =
 devinfo-status-uninitialized =
     .label = No l'é iniçializou
 devinfo-status-not-logged-in =
-    .label = No t'æ fæto o Login
+    .label = No conesso
 devinfo-status-logged-in =
-    .label = T'ê introu
+    .label = Conesso
 devinfo-status-ready =
     .label = Pronto
 devinfo-desc =

@@ -77,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = Përditësuar Së Fundi Më
 detail-contributions-description = Zhvilluesi i kësaj shtese do të dëshironte që përmes një kontributi të vogël të ndihmonit zhvillimin e saj në vazhdimësi.
+detail-contributions-button = Kontribuoni
+    .title = Kontribuoni në zhvillimin e kësaj shtese
+    .accesskey = K
 detail-update-type =
     .value = Përditësime të Vetvetishme
 detail-update-default =
@@ -90,7 +93,14 @@ detail-update-manual =
     .tooltiptext = Mos i instaloni vetvetiu përditësimet
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Xhiroje në Dritare Private
-detail-private-browsing-description = Zgjerimi do të funksionojë në Dritare Private, dhe do të mundet të hyjë në veprimtaritë tuaja internetore. <label data-l10n-name="detail-private-browsing-learn-more">Mësoni më tepër</label>
+detail-private-browsing-description2 = Po u lejua, zgjerimi do të mund të hyjë në veprimtaritë tuaja <em>online</em> gjatë shfletimit privat. <label data-l10n-name="detail-private-browsing-learn-more">Mësoni më tepër</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = Nuk Lejohet në Dritare Private
+detail-private-disallowed-description = Ky zgjerim nuk punon nën shfletim privat. <label data-l10n-name="detail-private-browsing-learn-more">Mësoni më tepër</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Lyp Hyrje në Dritare Private
+detail-private-required-description = Ky zgjerim ka hyrje te veprimtaritë tuaja <em>online</em> gjatë shfletimi privat. <label data-l10n-name="detail-private-browsing-learn-more">Mësoni më tepër</label>
 detail-private-browsing-on =
     .label = Lejoje
     .tooltiptext = Aktivizojeni te Shfletimi Privat
@@ -239,6 +249,10 @@ shortcuts-modifier-other = Përfshi Ctrl ose Alt
 shortcuts-invalid = Kombinim i pavlefshëm
 shortcuts-letter = Shtypni një shkronjë
 shortcuts-system = S’anashkalohet dot shkurtore { -brand-short-name }
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Përdorur tashmë nga { $addon }
 shortcuts-card-expand-button =
     { $numberToShow ->
         [one] Shfaq { $numberToShow } Më Tepër
@@ -253,5 +267,23 @@ go-back-button =
 remove-addon-button = Hiqe
 disable-addon-button = Çaktivizoje
 enable-addon-button = Aktivizoje
+expand-addon-button = Më tepër Mundësi
 addons-enabled-heading = I aktivizuar
 addons-disabled-heading = I çaktivizuar
+addon-detail-author-label = Autor
+addon-detail-version-label = Version
+addon-detail-last-updated-label = Përditësuar Së Fundi
+addon-detail-homepage-label = Kreu
+addon-detail-rating-label = Vlerësim
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (e çaktivizuar)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } shqyrtim
+       *[other] { $numberOfReviews } shqyrtime
+    }

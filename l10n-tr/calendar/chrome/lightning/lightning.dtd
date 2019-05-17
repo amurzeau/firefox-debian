@@ -47,6 +47,8 @@
      lightning.calendarproperties.forceEmailScheduling.tooltiptext2)
      - tooltiptext1 is used in the calendar wizard when setting a new caldav calendar
      - tooltiptext2 is used in the calendar properties dialog for caldav calendars -->
+<!ENTITY lightning.calendarproperties.forceEmailScheduling.tooltiptext1     "Zamanlamayı takvim sunucusu yapıyorsa, şimdilik yalnızca takvim özellikleri iletişim kutusunda bu takvimi kurduktan sonra bu seçeneği etkinleştirebilirsiniz.">
+<!ENTITY lightning.calendarproperties.forceEmailScheduling.tooltiptext2     "Bu seçenek, zamanlamayı takvim sunucusu yönetiyorsa kullanılabilir. Bunu etkinleştirdiğinizde, zamanlamayı sunucuya bırakmak yerine standart e-posta tabanlı zamanlama yapılacaktır.">
 
 <!-- iMIP Bar (meeting support) -->
 <!ENTITY lightning.imipbar.btnAccept.label                                  "Kabul et">
@@ -82,9 +84,11 @@
 <!ENTITY lightning.imipbar.description                                      "Bu ileti bir etkinliğe davetiyedir.">
 
 <!ENTITY lightning.imipbar.btnSend.label                                    "Hemen yanıt gönder">
-<!ENTITY lightning.imipbar.btnSend.tooltiptext                              "Organizatöre yanıt gönder">
-<!ENTITY lightning.imipbar.btnSendSeries.tooltiptext                        "Dizinin tamamı için düzenleyiciye yanıt gönder">
+<!ENTITY lightning.imipbar.btnSend.tooltiptext                              "Düzenleyene yanıt gönder">
+<!ENTITY lightning.imipbar.btnSendSeries.tooltiptext                        "Dizinin tamamı için düzenleyene yanıt gönder">
 <!ENTITY lightning.imipbar.btnDontSend.label                                "Yanıt gönderme">
+<!ENTITY lightning.imipbar.btnDontSend.tooltiptext                          "Düzenleyene yanıt göndermeden katılım durumunuzu değiştirin">
+<!ENTITY lightning.imipbar.btnDontSendSeries.tooltiptext                    "Düzenleyene yanıt göndermeden bu dizi için katılım durumunuzu değiştirin">
 
 <!-- Lightning specific keybindings -->
 <!ENTITY lightning.keys.event.showCalendar.key "C">

@@ -4,10 +4,13 @@
 
 <!ENTITY firstrun_panel_title_welcome "환영합니다">
 <!ENTITY firstrun_urlbar_message2 "&brandShortName;를 선택해 주셔서 감사합니다">
+<!ENTITY newfirstrun_urlbar_message "&brandShortName;에 오신 것을 환영합니다">
 <!ENTITY firstrun_urlbar_subtext2 "자유롭고 개방된 웹을 위해 일하는 비영리재단 Mozilla에서 만든 최신 모바일 브라우저입니다.">
+<!ENTITY newfirstrun_urlbar_subtext "빠르고, 안전하며, 여러분의 편에 서 있습니다.">
 <!ENTITY firstrun_panel_title_privacy "개인 정보">
 <!ENTITY firstrun_privacy_message "아무도 보지 못하는 것처럼 웹을 탐색하세요">
 <!ENTITY firstrun_privacy_subtext "추적 방지가 되어 있는 개인정보 보호 브라우징은 추적자를 차단하고 브라우징을 마칠 때 탐색 기록을 저장하지 않습니다.">
+<!ENTITY newfirstrun_privacy_subtext "사생활 보호 모드는 온라인에서 여러분을 추적하는 광고 추적기를 차단합니다.">
 <!ENTITY firstrun_panel_title_customize "개인화">
 <!ENTITY firstrun_customize_message "나만의 &brandShortName;를 만드세요.">
 <!ENTITY firstrun_customize_subtext "부가 기능으로 &brandShortName;를 개인화 해보세요. 광고를 차단하고 새 기능을 추가하고 새로운 테마를 골라보세요.">
@@ -20,8 +23,10 @@
 <!ENTITY firstrun_sync_title "Sync">
 <!ENTITY firstrun_sync_message2 "중단했던 지점에서 다시 시작하세요.">
 <!ENTITY firstrun_sync_subtext2 "Sync를 이용해서 즐겨찾기나 비밀번호, &brandShortName;에 저장한 다른 설정을 사용하는 모든 기기에서 찾아보세요.">
+<!ENTITY newfirstrun_sync_subtext "사적으로 안전하게 모바일 환경에서 저장한 것을 데스크탑용 Firefox와 동기화하세요.">
 <!ENTITY firstrun_signin_message "연결 및 시작하기">
 <!ENTITY firstrun_signin_button "Sync 로그인">
+<!ENTITY newfirstrun_signin_button "Sync 켜기">
 <!ENTITY  onboard_start_button_browser "브라우징 시작">
 <!ENTITY firstrun_button_notnow "다음에">
 <!ENTITY firstrun_button_next "다음">
@@ -63,6 +68,12 @@
 <!ENTITY  crash_restart_label "&brandShortName; 다시 시작">
 
 <!ENTITY url_bar_default_text2 "검색어 또는 주소를 입력하세요">
+
+<!-- Localization note: this text will be displayed in the Search Widget -->
+<!ENTITY search_widget_default_text "웹 검색">
+<!ENTITY search_widget_default_cropped_text "검색">
+<!ENTITY search_widget_logo_description "&brandShortName;로 웹 검색">
+
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
      icon in the url bar. -->
@@ -290,12 +301,6 @@
 <!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
      Similar to the already existing "pref_whats_new_notification_summary"-->
 <!ENTITY pref_feature_tips_notification_summary "&brandShortName; 사용과 다른 &vendorShortName; 제품에 대해 자세히 알아보기">
-
-<!-- Localization note (pref_feature_tips_notification_enabling_hint):
-     Describe the action the user should do to enable this preference
-     Will be used in the context "<Turn on> ... to enable this feature" -->
-<!ENTITY pref_feature_tips_notification_enabling_hint "켜기">
-
 <!-- Localization note (pref_feature_tips_notification_enabling_path):
      Nothing to translate. Simple concatenation of already localized strings. Result is used below. -->
 <!ENTITY pref_feature_tips_notification_enabling_path "&pref_category_privacy_short; > &pref_category_datareporting; > &datareporting_fhr_title;">
@@ -341,6 +346,9 @@
 <!-- Localization note (tab_queue_prompt_settings_button): This button is shown if the user needs to
      enable a permission in Android's setting in order to enable tab queues. -->
 <!ENTITY tab_queue_prompt_settings_button "설정으로 이동">
+<!-- Localization note (tab_queue_notification_prompt): This is the text of the default notification
+shown from Android O while a tab is being queued.-->
+<!ENTITY tab_queue_notification_prompt "대기열에 새 탭 추가&#8230;">
 <!ENTITY tab_queue_notification_title "&brandShortName;">
 <!-- Localization note (tab_queue_notification_text_plural2) : The
      formatD is replaced with the number of tabs queued.  The
@@ -399,7 +407,6 @@
 <!ENTITY pref_private_data_searchHistory "검색 기록">
 <!ENTITY pref_private_data_formdata2 "양식 데이터 기록">
 <!ENTITY pref_private_data_cookies2 "쿠키 및 로그인">
-<!ENTITY pref_private_data_passwords2 "저장된 로그인">
 <!ENTITY pref_private_data_cache "캐시">
 <!ENTITY pref_private_data_offlineApps "오프라인 웹 데이터">
 <!ENTITY pref_private_data_siteSettings2 "웹 사이트별 설정">
@@ -407,6 +414,12 @@
 <!ENTITY pref_private_data_syncedTabs "동기화된 탭">
 
 <!ENTITY pref_default_browser "기본 브라우저로 지정">
+
+<!ENTITY pref_default_browser2 "&brandShortName;를 기본 웹 브라우저로 만들기">
+<!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
+    Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
+    and instruct users to tap on the "Browser app" option on that settings screen to choose a default browser app. -->
+<!ENTITY default_browser_system_settings_toast "브라우저 앱을 탭하고 &brandShortName;를 선택하세요">
 <!ENTITY pref_default_browser_mozilla_support_tablet "Mozilla 도움말 방문">
 <!ENTITY pref_about_firefox "&brandShortName; 정보">
 <!ENTITY pref_vendor_faqs "FAQ">
@@ -501,6 +514,10 @@
 <!ENTITY find_prev "이전">
 <!ENTITY find_next "다음">
 <!ENTITY find_close "닫기">
+
+<!-- Localization note (find_error) : Error message shown when there is no result for the
+     searched for text in this webpage -->
+<!ENTITY find_error "구문을 찾을 수 없음">
 
 <!-- Localization note (media_sending_to, media_play, media_pause, media_stop) : These strings are used
      as alternate text for accessibility. They are not visible in the UI. -->
@@ -844,8 +861,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY whatsnew_notification_title "&brandShortName;가 최신버전입니다">
 <!ENTITY whatsnew_notification_summary "새로운 기능을 확인하세요">
 
-<!ENTITY promotion_add_page_shortcut "페이지 바로가기 추가">
-
 <!ENTITY helper_first_offline_bookmark_title "오프라인으로 읽기">
 <!ENTITY helper_first_offline_bookmark_message "오프라인에서도 북마크된 읽기 모드 항목들을 볼 수 있습니다.">
 <!ENTITY helper_first_offline_bookmark_button "북마크로 이동">
@@ -904,15 +919,9 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_description "재생 일시 중지">
 
 <!-- Notification channels names -->
-<!ENTITY default_notification_channel "&brandShortName;">
-
-<!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "브라우저">
 <!ENTITY mls_notification_channel "&vendorShortName; 위치 기반 서비스">
 <!ENTITY download_notification_channel "다운로드">
-<!ENTITY media_notification_channel "미디어 재생">
-<!-- These push notifications come without a specific channel and/or name from Leanplum -->
-<!ENTITY leanplum_default_notifications_channel "&brandShortName; 푸시 알림">
 <!ENTITY media_notification_channel2 "사운드와 비디오">
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
 <!ENTITY leanplum_default_notifications_channel2 "&vendorShortName; 팁과 트릭">

@@ -11,7 +11,7 @@ crashes-all-reports = รายงานข้อขัดข้องทั้�
 crashes-no-config = แอปพลิเคชันนี้ไม่ได้ถูกกำหนดค่าให้แสดงผลรายงานข้อข้อง
 extensions-title = ส่วนขยาย
 extensions-name = ชื่อ
-extensions-enabled = ถูกเปิดใช้งาน
+extensions-enabled = เปิดใช้งานอยู่
 extensions-version = รุ่น
 extensions-id = ID
 security-software-title = ซอฟต์แวร์ความปลอดภัย
@@ -24,6 +24,8 @@ features-title = คุณลักษณะของ { -brand-short-name }
 features-name = ชื่อ
 features-version = รุ่น
 features-id = ID
+processes-title = โปรเซสระยะไกล
+processes-type = ชนิด
 app-basics-title = พื้นฐานแอปพลิเคชัน
 app-basics-name = ชื่อ
 app-basics-version = รุ่น
@@ -46,6 +48,8 @@ app-basics-service-workers = ตัวทำงานบริการที่
 app-basics-profiles = โปรไฟล์
 app-basics-multi-process-support = หน้าต่างแบบหลายโปรเซส
 app-basics-process-count = โปรเซสเนื้อหาเว็บ
+app-basics-remote-processes-count = โปรเซสระยะไกล
+app-basics-enterprise-policies = นโยบายองค์กร
 app-basics-safe-mode = โหมดปลอดภัย
 show-dir-label =
     { PLATFORM() ->
@@ -73,7 +77,7 @@ place-database-integrity = ความสมบูรณ์
 place-database-verify-integrity = ยืนยันความสมบูรณ์
 js-title = JavaScript
 a11y-title = การช่วยการเข้าถึง
-a11y-activated = ถูกเปิดใช้งาน
+a11y-activated = เปิดใช้งานแล้ว
 a11y-force-disabled = ป้องกันการช่วยการเข้าถึง
 library-version-title = รุ่น Library
 copy-text-to-clipboard-label = คัดลอกข้อความไปยังคลิปบอร์ด
@@ -158,6 +162,9 @@ webgl2-renderer = ตัวเรนเดอร์ไดรเวอร์ WebG
 webgl2-version = รุ่นไดรเวอร์ WebGL 2
 webgl2-driver-extensions = ส่วนขยายไดรเวอร์ WebGL 2
 webgl2-extensions = ส่วนขยาย WebGL 2
+# Variables
+# $bugNumber (string) - String of bug number from Bugzilla
+bug-link = ข้อบกพร่อง { $bugNumber }
 d3d11video-crash-guard = ตัวถอดรหัสวิดีโอ D3D11
 d3d9video-crash-buard = ตัวถอดรหัสวิดีโอ D3D9
 glcontext-crash-guard = OpenGL
@@ -171,13 +178,16 @@ can-sandbox-media = Media Plugin Sandboxing
 sandbox-proc-type-content = เนื้อหา
 sandbox-proc-type-file = เนื้อหาไฟล์
 sandbox-proc-type-media-plugin = ปลั๊กอินสื่อ
+sandbox-proc-type-data-decoder = ตัวถอดรหัสข้อมูล
+launcher-process-status-0 = เปิดใช้งานอยู่
+launcher-process-status-unknown = ไม่ทราบสถานะ
 # Variables
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
 multi-process-windows = { $remoteWindows }/{ $totalWindows }
-multi-process-status-0 = ถูกเปิดใช้งานโดยผู้ใช้
-multi-process-status-1 = ถูกเปิดใช้งานโดยค่าเริ่มต้น
-multi-process-status-2 = ถูกปิดใช้งาน
+multi-process-status-0 = เปิดใช้งานอยู่โดยผู้ใช้
+multi-process-status-1 = เปิดใช้งานอยู่โดยค่าเริ่มต้น
+multi-process-status-2 = ปิดใช้งานอยู่
 multi-process-status-4 = ถูกปิดใช้งานโดยเครื่องมือการช่วยการเข้าถึง
 multi-process-status-6 = ถูกปิดใช้งานโดยการรับค่าข้อความที่ไม่รองรับ
 multi-process-status-7 = ถูกปิดใช้งานโดยส่วนเสริม

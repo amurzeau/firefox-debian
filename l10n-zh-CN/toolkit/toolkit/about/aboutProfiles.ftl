@@ -8,6 +8,11 @@ profiles-create = 创建新配置文件
 profiles-restart-title = 重新打开
 profiles-restart-in-safe-mode = 重新打开并禁用附加组件…
 profiles-restart-normal = 正常重新打开…
+profiles-conflict = 有另一份 { -brand-product-name } 对配置文件作了更改。您必须重新打开 { -brand-short-name } 才能再作变更。
+profiles-flush-fail-title = 更改未保存
+profiles-flush-conflict = { profiles-conflict }
+profiles-flush-failed = 发生意外错误，无法保存更改。
+profiles-flush-restart-button = 重新打开 { -brand-short-name }
 # Variables:
 #   $name (String) - Name of the profile
 profiles-name = 配置文件：{ $name }

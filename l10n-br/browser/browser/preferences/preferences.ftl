@@ -344,6 +344,9 @@ browsing-search-on-start-typing =
 browsing-cfr-recommendations =
     .label = Erbediñ askouezhioù p'emaoc'h o merdeiñ
     .accesskey = R
+browsing-cfr-features =
+    .label = Erbediñ keweriusterioù pa verdeit
+    .accesskey = E
 browsing-cfr-recommendations-learn-more = Gouzout hiroc'h
 
 ## General Section - Proxy
@@ -666,6 +669,7 @@ addressbar-suggestions-settings = Kemmañ ar gwellvezioù evit ar c'hinnigoù lu
 
 content-blocking-header = Stankañ endalc'hadoù
 content-blocking-description = Stankañ endalc'hadoù an tredeoù a heuilh ac'hanoc'h etrezek ar web. Reoliañ kementad ho obererezh enlinenn a zo kadavet ha rannet etre al lec'hiennoù.
+content-blocking-section-description = Gwarezit ho puhez prevez pa verdeit. Stankit an endalc'hadoù diwelus a heuilh al lec'hiennoù a weladennit hag a sav un aelad diwar ho penn. Stankañ ul lodenn eus an endalc'had-mañ a c'hall lakaat ar pajennoù da gargañ buanoc'h.
 content-blocking-learn-more = Gouzout hiroc'h
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -681,15 +685,24 @@ content-blocking-setting-custom =
 content-blocking-standard-description = Stankañ an heulierien anavezet er merdeiñ prevez nemetken.
 content-blocking-standard-desc = Kempouezet etre gwarez ha mont-en-dro. Aotren a ra heulierien 'zo evit ma 'z afe en-dro al lec'hiennoù.
 content-blocking-strict-desc = Stankañ an holl heulierien dinoet gant { -brand-short-name }. Gallout a ra mirout lec'hiennoù 'zo da vont en-dro en un doare dereat.
+content-blocking-strict-description = Gwarez gwelloc'h, gallout a ra lakaat lec'hiennoù zo da vont en-dro falloc'h.
 content-blocking-custom-desc = Dibabit petra stankañ.
 content-blocking-private-trackers = An heulierien anavezet er merdeiñ prevez hepken
 content-blocking-third-party-cookies = Toupinoù heuliañ tredeoù
+content-blocking-all-cookies = An holl doupinoù
+content-blocking-unvisited-cookies = Toupinoù al lec'hiennoù n'int ket bet gweladennet
 content-blocking-all-windows-trackers = An holl heulierien en holl brenestroù
 content-blocking-all-third-party-cookies = Holl doupinoù an tredeoù
+content-blocking-cryptominers = Kriptogleuzerien
+content-blocking-fingerprinters = Dinoerien roudoù niverel
 content-blocking-warning-title = Diwallit!
 content-blocking-warning-desc = Stankañ toupinoù ha heulierien a c'hall mirout lec'hiennoù 'zo da vont en-dro en un doare dereat. Aes eo diweredekaat ar stankadur evit al lec'hiennoù ho peus fiziañs eno.
 content-blocking-warning-description = Stankañ endalc'hadoù a c'hall lakaat lec'hiennoù 'zo da vont en-dro a-dreuz. Aes eo diweredekaat ar stankadur evit al lec'hiennoù ho peus fiziañs eno.
 content-blocking-learn-how = Deskit penaos
+content-blocking-reload-description = Ezhomm ho po da adkargañ hoc'h ivinelloù evit arloañ ar c'hemmoù.
+content-blocking-reload-tabs-button =
+    .label = Adkargañ an holl ivinelloù
+    .accesskey = A
 content-blocking-trackers-label =
     .label = Heulierien
     .accesskey = H
@@ -703,6 +716,8 @@ content-blocking-tracking-protection-change-block-list = Kemmañ ar roll stanka�
 content-blocking-cookies-label =
     .label = Toupinoù
     .accesskey = T
+content-blocking-expand-section =
+    .tooltiptext = Titouroù ouzhpenn
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
     .label = Kriptogleuzerien
@@ -742,23 +757,12 @@ permissions-notification-link = Gouzout hiroc'h
 permissions-notification-pause =
     .label = Ehanañ ar rebuzadurioù betek ma vefe adloc'het { -brand-short-name }
     .accesskey = E
-permissions-block-autoplay-media =
-    .label = Difenn al lec'hiennoù da lenn ar media gant son ent emgefreek
-    .accesskey = D
-permissions-block-autoplay-media-menu = Evit al lec'hiennoù a lenn ar son ent emgefreek
 permissions-block-autoplay-media2 =
     .label = Difenn al lec'hiennoù da lenn son ent emgefreek
     .accesskey = D
 permissions-block-autoplay-media-exceptions =
     .label = Nemedennoù...
     .accesskey = N
-autoplay-option-ask =
-    .label = Goulenn bewech
-autoplay-option-allow =
-    .label = Aotren al lenn emgefreek
-autoplay-option-dont =
-    .label = Na lenn emgefreek
-permissions-autoplay-link = Gouzout hiroc'h
 permissions-block-popups =
     .label = Herzel an diflugelloù
     .accesskey = H
@@ -794,10 +798,6 @@ addon-recommendations-link = Gouzout hiroc'h
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Diweredekaet eo an danevelliñ roadennoù evit kefluniadur ar c'hempunadur-mañ
-collection-browser-errors =
-    .label = Aotren { -brand-short-name } da gas danevelloù fazi merdeer (kemennadennoù fazi en o zouez) da v{ -vendor-short-name }
-    .accesskey = m
-collection-browser-errors-link = Gouzout hiroc'h
 collection-backlogged-crash-reports =
     .label = Aotren { -brand-short-name } da gas danevelloù sac'hadennoù enrollet evidoc'h
     .accesskey = d

@@ -4,6 +4,8 @@
 
 do-not-track-description = Emondo ñanduti rendápe peteĩ kuaaharã “Jehapykueho'ỹ” ndereipotáiva ojehapykueho
 do-not-track-learn-more = Kuaave
+do-not-track-option-default-content-blocking-known =
+    .label = { -brand-short-name } oñemboheko jave ojoko hag̃ua tapykuehohápe añoite
 do-not-track-option-always =
     .label = Katui
 pref-page =
@@ -333,6 +335,9 @@ browsing-search-on-start-typing =
 browsing-cfr-recommendations =
     .label = Eñe’eporã jepysokue rehe eikumdaha aja
     .accesskey = R
+browsing-cfr-features =
+    .label = Eñe’ẽporã tembiapoitére eikundahakuévo
+    .accesskey = f
 browsing-cfr-recommendations-learn-more = Kuaave
 
 ## General Section - Proxy
@@ -607,6 +612,7 @@ sitedata-learn-more = Kuaave
 sitedata-delete-on-close =
     .label = Embogue kookie ha mba'ekuaarã tenda pegua oñemboty vove { -brand-short-name }
     .accesskey = c
+sitedata-delete-on-close-private-browsing = Kundaha ñemigua tapiagua rekópe, umi kookie ha tenda mba’ekuaarã oguéta oñymbotykuévo { -brand-short-name }.
 sitedata-allow-cookies-option =
     .label = Emoneĩ kookie ha tenda mba’ekuaarã
     .accesskey = A
@@ -653,6 +659,7 @@ addressbar-suggestions-settings = Jerohoryvéva jehekaha mongu'eha je'epyre momb
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Ejoko tetepy
+content-blocking-description = Ejoko pe tetepy mbohapyháva ohapykuehóva ñandutípe. Eñangareko hembiapo ñanduti pegua ombyaty ha omoherakuãramo ambue ñanduti renda ndive.
 content-blocking-learn-more = Eikuaave
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -666,13 +673,25 @@ content-blocking-setting-custom =
     .label = Ñemomba'e
     .accesskey = C
 content-blocking-standard-description = Ejoko jehekaha ojekuaáva ovetã ñemiguápe añoite.
+content-blocking-standard-desc = Ijojáva omo’ã ha oikoporã hag̃ua. Omoneĩ ndahetái tapykuehápe ikatu hag̃uáicha ñanduti renda oiko hekopete.
+content-blocking-strict-desc = Ojoko opaite tapykuehoha ohecháva { -brand-short-name }. Ikatuhína ombojavy tenda.
 content-blocking-custom-desc = Eiporavo mba’etépa ejokóta.
 content-blocking-private-trackers = Jehekaha ojekuaáva ovetã ñemiguápe añoite
 content-blocking-third-party-cookies = Jehekaha kookie mbohapyguáva
+content-blocking-all-cookies = Opavavete kookie
+content-blocking-unvisited-cookies = Kookie eike’ỹ hague
 content-blocking-all-windows-trackers = Jehekaha ojekuaáva opaite ovetãme
 content-blocking-all-third-party-cookies = Opaite kookie mbohapyguáva
+content-blocking-cryptominers = Cryptominers
+content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = ¡Ema'ẽmi!
+content-blocking-warning-desc = Kookie ha tapykuehoha jejoko ikatu nomomba’apo porãi ñanduti renda. Ndahasýi eipe’a hag̃ua jokoha tenda ejeroviaha pegua.
+content-blocking-warning-description = Tetepy jejoko ikatu nomomba’apo porãi ñanduti renda. Ikatúramo eipe’a pe jokoha tenda ejeroviaha pegua.
 content-blocking-learn-how = Mba’éicha eikuaa
+content-blocking-reload-description = Emonyhẽjeyva’erã umi tendayke oiko hag̃ua ko’ã moambuepyre.
+content-blocking-reload-tabs-button =
+    .label = Embohekopyahu opaite tendayke
+    .accesskey = E
 content-blocking-trackers-label =
     .label = Hekahára
     .accesskey = T
@@ -686,6 +705,8 @@ content-blocking-tracking-protection-change-block-list = Emoambue jokoha rysýi
 content-blocking-cookies-label =
     .label = Kookie
     .accesskey = C
+content-blocking-expand-section =
+    .tooltiptext = Maranduve
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
     .label = Criptominero
@@ -725,20 +746,12 @@ permissions-notification-link = Eikuaave
 permissions-notification-pause =
     .label = Tojejoko momarandu'i oñepyrũjey peve { -brand-short-name }
     .accesskey = n
-permissions-block-autoplay-media =
-    .label = Ejoko ñanduti renda ani hag̃ua omboheta ijehegui mba’epu ndive
-    .accesskey = B
-permissions-block-autoplay-media-menu = Umi tenda ombohetáva mba’epu ijeheguípe g̃uarã
+permissions-block-autoplay-media2 =
+    .label = Ejoko ñanduti renda ani hag̃ua omboheta ñe’ẽpu ijehegui
+    .accesskey = E
 permissions-block-autoplay-media-exceptions =
     .label = Ykepegua...
     .accesskey = E
-autoplay-option-ask =
-    .label = Eporandu tapia
-autoplay-option-allow =
-    .label = Emoneĩ mboheta ijeheguíva
-autoplay-option-dont =
-    .label = Ani eheja omboheta ijehegui
-permissions-autoplay-link = Kuaave
 permissions-block-popups =
     .label = Ovetã apysẽ joko
     .accesskey = B
@@ -768,14 +781,12 @@ collection-health-report-link = Kuaave
 collection-studies =
     .label = Emoneĩ { -brand-short-name } omohenda ha omongu’e hag̃ua kuaarã
 collection-studies-link = Ehecha kuaarã { -brand-short-name } mba’éva
+addon-recommendations =
+    .label = Emoneĩ { -brand-short-name } ojapóvo ñe’ẽporã jepysokue momba’epyrépe
 addon-recommendations-link = Kuaave
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Pe mba'ekuaarã momarandu oñemboguéma ko ñemboheko guasúpe g̃uarã
-collection-browser-errors =
-    .label = Emoneĩ { -brand-short-name } pe omomarandúvo jejavy (oikehápe ñe'ẽmondo jejavy rehegua) { -vendor-short-name }-pe
-    .accesskey = b
-collection-browser-errors-link = Kuaave
 collection-backlogged-crash-reports =
     .label = Emoneĩ { -brand-short-name } omondóvo marandu jejavy rehegua nde rérape
     .accesskey = c

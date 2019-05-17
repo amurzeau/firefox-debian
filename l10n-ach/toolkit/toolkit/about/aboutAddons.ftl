@@ -4,6 +4,9 @@
 
 addons-window =
     .title = Lalo med-ikome
+search-header =
+    .placeholder = Yeny addons.mozilla.org
+    .searchbuttonlabel = Yeny
 search-header-shortcut =
     .key = f
 loading-label =
@@ -21,6 +24,7 @@ list-empty-button =
 install-addon-from-file =
     .label = Ket med-ikome ki i pwail…
     .accesskey = K
+help-button = Kony me Med-ikome
 tools-menu =
     .tooltiptext = Gintic pi med-ikome weng
 show-unsigned-extensions-button =
@@ -79,6 +83,20 @@ detail-update-automatic =
 detail-update-manual =
     .label = Neki
     .tooltiptext = Pe i ket ngec manyen pire kene
+detail-private-browsing-description2 = Ka ki yee, lamed binongo tic mamegi me wiyamo ma itye i yeny me mung. <label data-l10n-name="detail-private-browsing-learn-more">Nong ngec mapol</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = Pe ki Yee i Dirica me Mung
+detail-private-disallowed-description = Lamed man pe tiyo ma nongo tye i yeny me mung. <label data-l10n-name="detail-private-browsing-learn-more">Nong ngec mapol</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Mito nongo Dirica me Mung
+detail-private-required-description = Lamed man nongo tic mamegi me wiyamo ma itye i yeny me mung. <label data-l10n-name="detail-private-browsing-learn-more">Nong ngec mapol</label>
+detail-private-browsing-on =
+    .label = Yee
+    .tooltiptext = Cak i Yeny me Mung
+detail-private-browsing-off =
+    .label = Pe Iyee
+    .tooltiptext = Juk i Yeny me Mung
 detail-home =
     .label = Pot buk me acaki
 detail-home-value =
@@ -117,6 +135,15 @@ disabled-unsigned-description = Med-ikome magi pe kimoko ada gi me tic i { -bran
 disabled-unsigned-learn-more = Nong ngec mapol ikom tute wa me gwoki ma ber i wiyamo.
 disabled-unsigned-devinfo = Luyub ma mito moko ada pa med-ikome gi twero mede ki kwano <label data-l10n-name="learn-more">ki cing</label>.
 plugin-deprecation-description = Gino mo orem? { -brand-short-name } pe dong cwako larwak mogo. <label data-l10n-name="learn-more">Nong ngec mapol.</label>
+legacy-warning-show-legacy = Nyut lamed macon
+legacy-extensions =
+    .value = Lamed Macon
+legacy-extensions-description = Lamed magi pe rwate ki rwom pa { -brand-short-name } ma kombedi pi meno kijuko gi woko. <label data-l10n-name="legacy-learn-more">Nong ngec ikom alokoloka magi i med-ikome</label>
+private-browsing-description2 =
+    { -brand-short-name } tye ka loko kit ma lamed tiyo kwede i yeny me mung. Lamed mo manyen ma imedo ii
+    { -brand-short-name } pe bitic pire kene i Dirica me Mung. Nikwanyo ka iyee i ter, lamed meno pe bitic ikare me yeny i mung, ki pe binongo tic mamegi me wiyamo
+    kunu. Watimo alokaloka man me gwoko yeny me mung mamegi i mung.
+    <label data-l10n-name="private-browsing-learn-more">Nong ngec ikit me loono ter pa lamed</label>
 extensions-view-discover =
     .name = Gam med-ikome
     .tooltiptext = { extensions-view-discover.name }
@@ -194,3 +221,19 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Ket ngec manyen
     .tooltiptext = Ket ngec manyen matye i nying jami man
+
+## Extension shortcut management
+
+shortcuts-no-addons = Pe itye ki lamed mo ma kicako.
+shortcuts-browserAction = Cak lamed
+shortcuts-pageAction = Cak tic me potbuk
+shortcuts-sidebarAction = Lok gitic me nget
+shortcuts-modifier-mac = Ket Ctrl, Alt, onyo ⌘
+shortcuts-modifier-other = Ket Ctrl onyo Alt
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = { $addon } dong tye katic kwede
+
+## Add-on actions
+

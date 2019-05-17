@@ -79,6 +79,9 @@ detail-version =
 detail-last-updated =
     .label = Última atualização
 detail-contributions-description = O programador deste extra pede para o ajudar no desenvolvimento com uma pequena contribuição.
+detail-contributions-button = Contribuir
+    .title = Contribua para o desenvolvimento deste extra
+    .accesskey = C
 detail-update-type =
     .value = Atualizações automáticas
 detail-update-default =
@@ -92,7 +95,14 @@ detail-update-manual =
     .tooltiptext = Não instalar atualizações automaticamente
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Executar em janelas privadas
-detail-private-browsing-description = A extensão irá funcionar em janelas privadas, e irá ter acesso às suas atividades online. <label data-l10n-name="detail-private-browsing-learn-more">Saber mais</label>
+detail-private-browsing-description2 = Quando permitido, a extensão irá ter acesso às suas atividades online durante a navegação privada. <label data-l10n-name="detail-private-browsing-learn-more">Saber mais</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = Não permitido em janelas privadas
+detail-private-disallowed-description = Esta extensão não é executada durante a navegação privada. <label data-l10n-name="detail-private-browsing-learn-more">Saber mais</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Requer acesso a janelas privadas
+detail-private-required-description = Esta extensão tem acesso às suas atividades online enquanto durante a navegação privada. <<label data-l10n-name="detail-private-browsing-learn-more">Saber mais</label>
 detail-private-browsing-on =
     .label = Permitir
     .tooltiptext = Ativar em navegação privada
@@ -243,6 +253,10 @@ shortcuts-modifier-other = Incluir Ctrl ou Alt
 shortcuts-invalid = Combinação inválida
 shortcuts-letter = Escrever uma letra
 shortcuts-system = Não é possível sobrepor um atalho do { -brand-short-name }
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Já está em uso por { $addon }
 shortcuts-card-expand-button =
     { $numberToShow ->
         [one] Mostrar mais { $numberToShow }
@@ -254,8 +268,52 @@ go-back-button =
 
 ## Add-on actions
 
+report-addon-button = Reportar
 remove-addon-button = Remover
 disable-addon-button = Desativar
 enable-addon-button = Ativar
+expand-addon-button = Mais opções
 addons-enabled-heading = Ativado
 addons-disabled-heading = Desativado
+ask-to-activate-button = Solicitar ativação
+always-activate-button = Ativar sempre
+never-activate-button = Nunca ativar
+addon-detail-author-label = Autor
+addon-detail-version-label = Versão
+addon-detail-last-updated-label = Última atualização
+addon-detail-homepage-label = Página inicial
+addon-detail-rating-label = Avaliação
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (desativado)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } análise
+       *[other] { $numberOfReviews } análises
+    }
+
+## Pending uninstall message bar
+
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> foi removido.
+pending-uninstall-undo-button = Desfazer
+addon-detail-updates-label = Permitir atualizações automáticas
+addon-detail-updates-radio-default = Predefinido
+addon-detail-updates-radio-on = Ligado
+addon-detail-updates-radio-off = Desligado
+addon-detail-update-check-label = Procurar atualizações
+install-update-button = Atualizar
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Permitido em janelas privadas
+addon-detail-private-browsing-help = Quando permitido, a extensão irá ter acesso às suas atividades online durante a navegação privada. <a data-l10n-name="learn-more">Saber mais</a>
+addon-detail-private-browsing-allow = Permitir
+addon-detail-private-browsing-disallow = Não permitir
+available-updates-heading = Atualizações disponíveis
+recent-updates-heading = Atualizações recentes

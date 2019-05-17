@@ -4,10 +4,13 @@
 
 <!ENTITY firstrun_panel_title_welcome "Hoş geldiniz">
 <!ENTITY firstrun_urlbar_message2 "&brandShortName;’u seçtiğiniz için teşekkürler">
+<!ENTITY newfirstrun_urlbar_message "&brandShortName; tarayıcısına hoş geldiniz">
 <!ENTITY firstrun_urlbar_subtext2 "Kâr amacı gütmeden özgür ve açık web’i korumaya ant içmiş Mozilla’dan, çağdaş bir mobil tarayıcı.">
+<!ENTITY newfirstrun_urlbar_subtext "Hızlı, gizli ve hep yanınızda.">
 <!ENTITY firstrun_panel_title_privacy "Gizlilik">
 <!ENTITY firstrun_privacy_message "Hiç kimse izlemiyormuş gibi gez">
 <!ENTITY firstrun_privacy_subtext "İzlenme Koruması ile Gizli Gezinti, siz gezinirken takipçileri engeller ve işiniz bitince tüm gezinti geçmişinizi imha eder.">
+<!ENTITY newfirstrun_privacy_subtext "Gizli gezinti, internette sizi izleyen reklam takipçilerini engeller.">
 <!ENTITY firstrun_panel_title_customize "Özelleştir">
 <!ENTITY firstrun_customize_message "&brandShortName; senindir, senin kalacak.">
 <!ENTITY firstrun_customize_subtext "&brandShortName; tarayıcınızı eklentilerle kişiselleştirebilirsiniz. Reklamları engelleyin, yeni özellikler ekleyin, isterseniz kişiliğinizi yansıtacak bir tema seçin.">
@@ -20,8 +23,10 @@
 <!ENTITY firstrun_sync_title "Sync">
 <!ENTITY firstrun_sync_message2 "Kaldığın yerden devam et.">
 <!ENTITY firstrun_sync_subtext2 "Tüm cihazlarınızda &brandShortName;’a kaydettiğiniz yer imlerine, parolalara ve diğer bilgilere ulaşmak için Sync’i kullanabilirsiniz.">
+<!ENTITY newfirstrun_sync_subtext "Mobil cihazınızda kaydettiğiniz her şeyi bilgisayarınızdaki Firefox’a güvenle aktarın.">
 <!ENTITY firstrun_signin_message "Bağlan, kullanmaya başla">
 <!ENTITY firstrun_signin_button "Sync’e giriş yap">
+<!ENTITY newfirstrun_signin_button "Sync’i etkinleştir">
 <!ENTITY  onboard_start_button_browser "Gezinmeye başla">
 <!ENTITY firstrun_button_notnow "Daha sonra">
 <!ENTITY firstrun_button_next "İleri">
@@ -63,6 +68,12 @@
 <!ENTITY  crash_restart_label "&brandShortName; baştan başlasın">
 
 <!ENTITY url_bar_default_text2 "Arama yapın veya adres yazın">
+
+<!-- Localization note: this text will be displayed in the Search Widget -->
+<!ENTITY search_widget_default_text "Web’de ara">
+<!ENTITY search_widget_default_cropped_text "Arama">
+<!ENTITY search_widget_logo_description "&brandShortName; ile web’de ara">
+
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
      icon in the url bar. -->
@@ -290,12 +301,6 @@
 <!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
      Similar to the already existing "pref_whats_new_notification_summary"-->
 <!ENTITY pref_feature_tips_notification_summary "&brandShortName; kullanımı ve diğer &vendorShortName; ürünleriyle ilgili daha fazla bilgi alın">
-
-<!-- Localization note (pref_feature_tips_notification_enabling_hint):
-     Describe the action the user should do to enable this preference
-     Will be used in the context "<Turn on> ... to enable this feature" -->
-<!ENTITY pref_feature_tips_notification_enabling_hint "Aç">
-
 <!-- Localization note (pref_feature_tips_notification_enabling_path):
      Nothing to translate. Simple concatenation of already localized strings. Result is used below. -->
 <!ENTITY pref_feature_tips_notification_enabling_path "&pref_category_privacy_short; > &pref_category_datareporting; > &datareporting_fhr_title;">
@@ -341,6 +346,9 @@
 <!-- Localization note (tab_queue_prompt_settings_button): This button is shown if the user needs to
      enable a permission in Android's setting in order to enable tab queues. -->
 <!ENTITY tab_queue_prompt_settings_button "Ayarlar’a gidin">
+<!-- Localization note (tab_queue_notification_prompt): This is the text of the default notification
+shown from Android O while a tab is being queued.-->
+<!ENTITY tab_queue_notification_prompt "Yeni sekme sıraya ekleniyor&#8230;">
 <!ENTITY tab_queue_notification_title "&brandShortName;">
 <!-- Localization note (tab_queue_notification_text_plural2) : The
      formatD is replaced with the number of tabs queued.  The
@@ -399,7 +407,6 @@
 <!ENTITY pref_private_data_searchHistory "Arama geçmişi">
 <!ENTITY pref_private_data_formdata2 "Form geçmişi">
 <!ENTITY pref_private_data_cookies2 "Çerezler ve aktif oturumlar">
-<!ENTITY pref_private_data_passwords2 "Kayıtlı hesaplar">
 <!ENTITY pref_private_data_cache "Önbellek">
 <!ENTITY pref_private_data_offlineApps "Çevrimdışı web sitesi verileri">
 <!ENTITY pref_private_data_siteSettings2 "Site ayarları">
@@ -407,6 +414,12 @@
 <!ENTITY pref_private_data_syncedTabs "Eşitlenmiş sekmeler">
 
 <!ENTITY pref_default_browser "Varsayılan tarayıcı yap">
+
+<!ENTITY pref_default_browser2 "&brandShortName; varsayılan tarayıcınız olsun">
+<!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
+    Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
+    and instruct users to tap on the "Browser app" option on that settings screen to choose a default browser app. -->
+<!ENTITY default_browser_system_settings_toast "“Tarayıcı uygulaması”na dokunup &brandShortName;’u seçin">
 <!ENTITY pref_default_browser_mozilla_support_tablet "Mozilla Destek’i ziyaret et">
 <!ENTITY pref_about_firefox "&brandShortName; hakkında">
 <!ENTITY pref_vendor_faqs "SSS">
@@ -501,6 +514,10 @@
 <!ENTITY find_prev "Önceki">
 <!ENTITY find_next "Sonraki">
 <!ENTITY find_close "Kapat">
+
+<!-- Localization note (find_error) : Error message shown when there is no result for the
+     searched for text in this webpage -->
+<!ENTITY find_error "Terim bulunamadı">
 
 <!-- Localization note (media_sending_to, media_play, media_pause, media_stop) : These strings are used
      as alternate text for accessibility. They are not visible in the UI. -->
@@ -844,8 +861,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY whatsnew_notification_title "&brandShortName; güncel">
 <!ENTITY whatsnew_notification_summary "Bu sürümdeki yenilikleri öğrenin">
 
-<!ENTITY promotion_add_page_shortcut "Sayfa kısayolu ekle">
-
 <!ENTITY helper_first_offline_bookmark_title "Çevrimdışı oku">
 <!ENTITY helper_first_offline_bookmark_message "Çevrimdışı olsanız bile Okuyucu Görünümü öğelerinizi yer imlerinde bulabilirsiniz.">
 <!ENTITY helper_first_offline_bookmark_button "Yer imlerine git">
@@ -904,15 +919,9 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_description "Oynatmayı duraklat">
 
 <!-- Notification channels names -->
-<!ENTITY default_notification_channel "&brandShortName;">
-
-<!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "Tarayıcı">
 <!ENTITY mls_notification_channel "&vendorShortName; Konum Hizmeti">
 <!ENTITY download_notification_channel "İndirilenler">
-<!ENTITY media_notification_channel "Medya oynatma">
-<!-- These push notifications come without a specific channel and/or name from Leanplum -->
-<!ENTITY leanplum_default_notifications_channel "&brandShortName; push bildirimleri">
 <!ENTITY media_notification_channel2 "Ses ve video">
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
 <!ENTITY leanplum_default_notifications_channel2 "&vendorShortName; ipuçları ve püf noktaları">

@@ -10,6 +10,7 @@
 ## These are short descriptions for individual policies, to be displayed
 ## in the documentation section in about:policies.
 
+policy-3rdparty = Angi policyer som WebExtensions kan få tilgang til via chrome.storage.managed.
 policy-AppUpdateURL = Angi egendefinert programoppdateringsadresse.
 policy-Authentication = Konfigurer integrert godkjenning for nettsteder som støtter det.
 policy-BlockAboutAddons = Blokker tilgang til Utvidelsesbehandleren (about:addons)
@@ -56,18 +57,23 @@ policy-HardwareAcceleration = Hvis deaktivert, slå av maskinvareakselerasjon.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Sett og eventuelt lås startsiden.
 policy-InstallAddonsPermission = Tillat visse nettsteder å installere utvidelser.
+policy-LocalFileLinks = Tillat at bestemte nettsteder kobler til lokale filer.
 policy-NetworkPrediction = Aktiver eller deaktiver nettverkspredikering (DNS-prefetch).
+policy-NewTabPage = Slå på eller av ny fane-siden.
 policy-NoDefaultBookmarks = Deaktiver opprettelse av standardbokmerker, som følger med { -brand-short-name }, samt de smarte bokmerkene (Mest besøkte, Siste brukte etiketter). NB: Denne policyen fungerer bare om den er aktivert før profilen blir brukt for første gang.
 policy-OfferToSaveLogins = Tving innstillingen til å tillate { -brand-short-name } å kunne huske lagret innlogginger og passord. Både true- og falseverdier er godkjent.
 policy-OverrideFirstRunPage = Erstatt siden som vises ved første oppstart. La policyen være tom, hvis siden ved første oppstart skal deaktiveres.
 policy-OverridePostUpdatePage = Bytt ut «Hva er nytt»-siden som blir vist etter en oppdatering. La policyen stå tom hvis sida etter oppdatering skal deaktiveres.
 policy-Permissions = Stille inn tillatelser for kamera, mikrofon, plassering og varsler.
 policy-PopupBlocking = Tillat at visse nettsteder skal kunne vise sprettoppvinduer som standard.
+policy-Preferences = Still inn og lås verdien for en undergruppe av innstillingene.
 policy-Proxy = Konfigurer proxy-innstillinger.
 policy-RequestedLocales = Velg rekkefølgen av språk, som skal brukes i programmet.
 policy-SanitizeOnShutdown = Fjern alle nettlesingsdata ved avslutning.
+policy-SanitizeOnShutdown2 = Fjern nettlesingsdata ved avslutning.
 policy-SearchBar = Angi standardplassering for søkefeltet. Brukeren kan fortsatt tilpasse den.
 policy-SearchEngines = Konfigurer søkemotorinnstillinger. Denne policyen er kun tilgjengelig for Extended Support Release (ESR).
+policy-SearchSuggestEnabled = Slå av eller på søkeforslag.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Installer PKCS #11-moduler.
 policy-SSLVersionMax = Angi den maksimale SSL-versjonen.

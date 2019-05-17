@@ -87,13 +87,18 @@
 <!ENTITY openAllAttachmentsCmd.label    "Åbn alle…">
 <!ENTITY openAllAttachmentsCmd.accesskey    "l">
 <!ENTITY saveAllAttachmentsCmd.label    "Gem alle…">
-<!ENTITY saveAllAttachmentsCmd.accesskey    "a">
+<!ENTITY saveAllAttachmentsCmd.accesskey    "G">
 <!ENTITY detachAllAttachmentsCmd.label    "Afhæft alle…">
-<!ENTITY detachAllAttachmentsCmd.accesskey    "f">
+<!ENTITY detachAllAttachmentsCmd.accesskey    "A">
 <!ENTITY deleteAllAttachmentsCmd.label    "Slet alle…">
 <!ENTITY deleteAllAttachmentsCmd.accesskey    "t">
 
 <!ENTITY openAttachment.tooltip "Åbn den vedhæftede fil">
+
+<!ENTITY detachedAttachmentFolder.show.label        "Åbn hentningsmappe">
+<!ENTITY detachedAttachmentFolder.show.accesskey    "H">
+<!ENTITY detachedAttachmentFolder.showMac.label     "Vis i Finder">
+<!ENTITY detachedAttachmentFolder.showMac.accesskey "F">
 
 <!-- Attachment toolbar items -->
 <!ENTITY saveAttachmentButton1.label       "Gem">
@@ -101,8 +106,8 @@
 <!ENTITY saveAllAttachmentsButton1.label   "Gem alle">
 <!ENTITY saveAllAttachmentsButton1.tooltip "Gem alle vedhæftede filer">
 
-<!ENTITY copyLinkCmd.label "Kopier linkadresse">
-<!ENTITY copyLinkCmd.accesskey "K">
+<!ENTITY copyLinkCmd.label        "Kopier linkadresse">
+<!ENTITY copyLinkCmd.accesskey    "K">
 
 <!ENTITY CopyMessageId.label "Kopier meddelelse-ID">
 <!ENTITY CopyMessageId.accesskey "K">

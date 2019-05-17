@@ -77,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = Hizivadur diwezhañ
 detail-contributions-description = Goulenn a ra paotr an diorren ma vefe skoazellet diorrenadur an askouezh-mañ ganeoc'h dre ur berzhadenn-arc'hant vihan.
+detail-contributions-button = Kemer perzh
+    .title = Kemer perzh e diorren an enlugellad
+    .accesskey = K
 detail-update-type =
     .value = Hizivadurioù emgefreek
 detail-update-default =
@@ -90,7 +93,14 @@ detail-update-manual =
     .tooltiptext = Arabat staliañ an hizivadennoù ent emgefreek
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Lañsañ en ur prenestr prevez
-detail-private-browsing-description = An askouezhioù az aio en-dro er prenestroù prevez, ha gallout a reont haeziñ hoc'h oberiantiz enlinenn. <label data-l10n-name="detail-private-browsing-learn-more">Gouzout hiroc'h</label>
+detail-private-browsing-description2 = P'eo aotreet e c'hall an askouezh haeziñ hoc'h oberiantizoù enlinenn er merdeiñ prevez. <label data-l10n-name="detail-private-browsing-learn-more">Gouzout hiroc'h</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = N'eo ket aotreet er prenestroù prevez
+detail-private-disallowed-description = An askouezh-mañ n'eo ket lañset er merdeiñ prevez. <label data-l10n-name="detail-private-browsing-learn-more">Gouzout hiroc'h</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Goulenn haeziñ d'ar prenestroù prevez
+detail-private-required-description = An askouezh-mañ a c'hall haeziñ hoc'h oberiantiz enlinenn e-pad ar merdeiñ prevez. <label data-l10n-name="detail-private-browsing-learn-more">Gouzout hiroc'h</label>
 detail-private-browsing-on =
     .label = Aotren
     .tooltiptext = Gweredekaat er merdeiñ prevez
@@ -139,7 +149,6 @@ legacy-warning-show-legacy = Diskouez an askouezhioù diamzeret
 legacy-extensions =
     .value = Askouezhioù diamzeret
 legacy-extensions-description = An askouezhioù-mañ ne glotont ket kenn gant skouerioù { -brand-short-name } ha diweredekaet int bet. <label data-l10n-name="legacy-learn-more">Gouzout hiroc'h a-zivout ar c'hemmoù en askouezhioù</label>
-private-browsing-description = N'eo ket aotreet an askouezhioù da vont en-dro er prenestroù prevez dre ziouer. Talvezout a ra ne vint ket gouest da haeziñ hoc'h oberiantiz enlinenn. Evit aotren un askouezh da vont en-dro er prenestroù prevez, diuzit an askouezh dindan ha kemmit e arventennoù. <label data-l10n-name="private-browsing-learn-more">Gouzout hiroc'h</label>.
 extensions-view-discover =
     .name = Kaout askouezhioù
     .tooltiptext = { extensions-view-discover.name }
@@ -236,6 +245,10 @@ shortcuts-modifier-other = Enkorfañ Ctrl pe Alt
 shortcuts-invalid = Kenaozadur didalvoudek
 shortcuts-letter = Biziatait ul lizherenn
 shortcuts-system = N'haller ket flastrañ ur verradenn { -brand-short-name }
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Arveret gant { $addon } endeo
 shortcuts-card-expand-button =
     { $numberToShow ->
         [one] Diskouez { $numberToShow } ouzhpenn
@@ -253,5 +266,26 @@ go-back-button =
 remove-addon-button = Dilemel
 disable-addon-button = Diweredekaat
 enable-addon-button = Gweredekaat
+expand-addon-button = Dibarzhioù ouzhpenn
 addons-enabled-heading = Gweredekaet
 addons-disabled-heading = Diweredekaet
+addon-detail-author-label = Aozer
+addon-detail-version-label = Handelv
+addon-detail-last-updated-label = Hizivaet da ziwezhañ
+addon-detail-homepage-label = Pennbajenn
+addon-detail-rating-label = Notenn
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (diweredekaet)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } ali
+        [two] { $numberOfReviews } ali
+        [few] { $numberOfReviews } ali
+        [many] { $numberOfReviews } a alioù
+       *[other] { $numberOfReviews } ali
+    }

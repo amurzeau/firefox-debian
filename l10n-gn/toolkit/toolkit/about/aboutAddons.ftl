@@ -77,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = Ñembohekopyahu ramovéva
 detail-contributions-description = Ko moimbaha mboguatahára ojerure eipytyvõ okueve hag̃ua mboguatahápe ejapóvo peteĩ michĩmíva mba'eme'ẽ.
+detail-contributions-button = Ñepytyvõ
+    .title = Eipytyvõ ko moimbaha okakuaa hag̃ua
+    .accesskey = Ñ
 detail-update-type =
     .value = Ñembohekopyahu ijeheguíva
 detail-update-default =
@@ -88,6 +91,16 @@ detail-update-automatic =
 detail-update-manual =
     .label = Mongepyre
     .tooltiptext = Aníke emohenda ñembohekopyahu ijeheguíva
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Eipuru ovetã ñemíme
+detail-private-browsing-description2 = Oñemoneĩ vove, pe jepysokue ikatu oike hembiapo ñandutiguápe oikundaha ñeminguévo. <label data-l10n-name="detail-private-browsing-learn-more">Eikuaave</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = Noñemoneĩri ovetã ñemíme
+detail-private-disallowed-description = Ko jepysokue nomba’apói eikundaha ñemigua jave. <label data-l10n-name="detail-private-browsing-learn-more">Eikuaave</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Oikotevẽ ovetã ñemíme jeike
+detail-private-required-description = Ko jepysokue oikekuaa neremboapópe eike javegua eikundaha ñemigua jave. <label data-l10n-name="detail-private-browsing-learn-more">Eikuaave</label>
 detail-private-browsing-on =
     .label = Moneĩ
     .tooltiptext = Embojuruja kundaha ñemíme
@@ -136,6 +149,11 @@ legacy-warning-show-legacy = Opaite mba'ejoapyrã jehecha
 legacy-extensions =
     .value = Opaite mba'ejoapyrã
 legacy-extensions-description = Ko'ã jepysokue ndoguerekói { -brand-short-name } tekoguatarã oñembogue hag̃ua. <label data-l10n-name="legacy-learn-more">Maranduve moĩmbaha moambue rehegua</label>
+private-browsing-description2 =
+    { -brand-short-name } iñambuehína mba’éichapa omba’apo jepysokue kundaha ñemíme. Oimeraẽva jepysokue pyahu embojuajúva
+    { -brand-short-name } rupi nomba’apomo’ãi ijypykue rupi kundaha ñemíme. Neremoneĩrirõ Moĩporãhápe, pe jepysokue ndoikomo’ãi kundaha ñemíme, ha ndoikemo’ãi nerembiapo ñanduti
+    peguápe. Romoambue roguereko hag̃ua ñemiháme ne kundaha ñemigua.
+    <label data-l10n-name="private-browsing-learn-more">Eikuaa mba’éichapa eñangarekóta ko’ã jepysokue ñemboheko rehe </label>
 extensions-view-discover =
     .name = Moĩmbaha rupity
     .tooltiptext = { extensions-view-discover.name }
@@ -246,5 +264,15 @@ go-back-button =
 remove-addon-button = Mboguete
 disable-addon-button = Pe'a
 enable-addon-button = Mbojuruja
+expand-addon-button = Jeporavorãve
 addons-enabled-heading = Mbojurujapyre
 addons-disabled-heading = Pe'apyre
+addon-detail-author-label = Apohára
+addon-detail-version-label = Peteĩchagua
+addon-detail-last-updated-label = Mbohekopyahu paha
+addon-detail-homepage-label = Kuatiarogue ñepyrũha
+addon-detail-rating-label = Jeporavopy
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (jepe'apyre)

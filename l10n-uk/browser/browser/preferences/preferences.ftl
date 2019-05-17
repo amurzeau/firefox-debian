@@ -574,8 +574,8 @@ history-header = Історія відвідувань
 #   - Simply as "Firefox", moving the verb into each option.
 #     This will result in "Firefox" + "Will remember history", etc.
 #   - As a stand-alone message, for example "Firefox history settings:".
-history-remember-label = { -brand-short-name } буде
-    .accesskey = б
+history-remember-label = Поведінка { -brand-short-name }
+    .accesskey = П
 history-remember-option-all =
     .label = Пам’ятати історію
 history-remember-option-never =
@@ -663,6 +663,7 @@ addressbar-suggestions-settings = Змінити налаштування про
 
 content-blocking-header = Блокування вмісту
 content-blocking-description = Блокуйте сторонній вміст, що стежить за вами в інтернеті. Контролюйте обсяг вашої онлайн-активності, що зберігається і передається між веб-сайтами.
+content-blocking-section-description = Захищайте свою приватність під час перегляду. Блокуйте невидимий вміст, що відстежує відвідані вами сайти і створює ваш профіль. Блокування деякого вмісту може пришвидшити завантаження сторінок.
 content-blocking-learn-more = Докладніше
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -678,15 +679,24 @@ content-blocking-setting-custom =
 content-blocking-standard-description = Блокує лише відомі елементи стеження у приватних вікнах.
 content-blocking-standard-desc = Збалансовано для захисту і швидкодії. Дозволяє деякі елементи стеження для належної роботи веб-сайтів.
 content-blocking-strict-desc = Блокує все виявлене { -brand-short-name } стеження. Може пошкодити роботу деяких сайтів.
+content-blocking-strict-description = Сильніший захист. Може пошкодити роботу деяких сайтів.
 content-blocking-custom-desc = Оберіть, що блокувати.
 content-blocking-private-trackers = Відомі елементи стеження лише у приватних вікнах
 content-blocking-third-party-cookies = Сторонні куки стеження
+content-blocking-all-cookies = Усі куки
+content-blocking-unvisited-cookies = Куки з невідвіданих сайтів
 content-blocking-all-windows-trackers = Відомі елементи стеження у всіх вікнах
 content-blocking-all-third-party-cookies = Усі сторонні куки
+content-blocking-cryptominers = Криптомайнери
+content-blocking-fingerprinters = Зчитування відбитку браузера
 content-blocking-warning-title = Увага!
 content-blocking-warning-desc = Блокування куків та стеження може вплинути на роботу деяких веб-сайтів. Ви можете легко вимкнути блокування для довірених сайтів.
 content-blocking-warning-description = Блокування вмісту може пошкоджувати роботу деяких веб-сайтів. Можна легко вимкнути блокування для сайтів, яким ви довіряєте.
 content-blocking-learn-how = Навчитися
+content-blocking-reload-description = Вам необхідно перезавантажити вкладки для застосування змін.
+content-blocking-reload-tabs-button =
+    .label = Перезавантажити всі вкладки
+    .accesskey = з
 content-blocking-trackers-label =
     .label = Стеження
     .accesskey = т
@@ -700,6 +710,8 @@ content-blocking-tracking-protection-change-block-list = Змінити спис
 content-blocking-cookies-label =
     .label = Куки
     .accesskey = К
+content-blocking-expand-section =
+    .tooltiptext = Докладніше
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
     .label = Криптомайнери
@@ -739,23 +751,12 @@ permissions-notification-link = Докладніше
 permissions-notification-pause =
     .label = Призупинити сповіщення до перезапуску { -brand-short-name }
     .accesskey = П
-permissions-block-autoplay-media =
-    .label = Заборонити веб-сайтам автоматично відтворювати медіа зі звуком
-    .accesskey = З
-permissions-block-autoplay-media-menu = Для веб-сайтів, що автоматично відтворюють звук
 permissions-block-autoplay-media2 =
     .label = Блокувати автоматичне відтворення звуку веб-сайтами
     .accesskey = з
 permissions-block-autoplay-media-exceptions =
     .label = Винятки…
     .accesskey = и
-autoplay-option-ask =
-    .label = Завжди питати
-autoplay-option-allow =
-    .label = Дозволити автовідтворення
-autoplay-option-dont =
-    .label = Не дозволяти автовідтворення
-permissions-autoplay-link = Докладніше
 permissions-block-popups =
     .label = Блокувати виринаючі вікна
     .accesskey = Б
@@ -791,10 +792,6 @@ addon-recommendations-link = Докладніше
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Відправлення даних вимкнено для цієї конфігурації збірки
-collection-browser-errors =
-    .label = Дозволити { -brand-short-name } надсилати звіти і повідомлення про помилки в { -vendor-short-name }
-    .accesskey = з
-collection-browser-errors-link = Докладніше
 collection-backlogged-crash-reports =
     .label = Дозволити { -brand-short-name } надсилати від вашого імені зібрані звіти про збої
     .accesskey = н

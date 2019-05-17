@@ -82,6 +82,9 @@ detail-version =
 detail-last-updated =
     .label = Last Updated
 detail-contributions-description = The developer of this add-on asks that you help support its continued development by making a small contribution.
+detail-contributions-button = Contribute
+    .title = Contribute to the development of this add-on
+    .accesskey = C
 detail-update-type =
     .value = Automatic Updates
 detail-update-default =
@@ -95,7 +98,14 @@ detail-update-manual =
     .tooltiptext = Don't automatically install updates
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Run in Private Windows
-detail-private-browsing-description = Extension will work in Private Windows, and have access to your online activities. <label data-l10n-name="detail-private-browsing-learn-more">Learn more</label>
+detail-private-browsing-description2 = When allowed, the extension will have access to your online activities while private browsing. <label data-l10n-name="detail-private-browsing-learn-more">Learn more</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = Not Allowed in Private Windows
+detail-private-disallowed-description = This extension does not run while private browsing. <label data-l10n-name="detail-private-browsing-learn-more">Learn more</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Requires Access to Private Windows
+detail-private-required-description = This extension has access to your online activities while private browsing. <label data-l10n-name="detail-private-browsing-learn-more">Learn more</label>
 detail-private-browsing-on =
     .label = Allow
     .tooltiptext = Enable in Private Browsing
@@ -149,7 +159,7 @@ private-browsing-description2 =
     { -brand-short-name } won’t run by default in Private Windows. Unless you allow it in settings, the
     extension won’t work while private browsing, and won’t have access to your online activities
     there. We’ve made this change to keep your private browsing private.
-    <label data-l10n-name="private-browsing-learn-more">Learn how to manage extension settings.</label>
+    <label data-l10n-name="private-browsing-learn-more">Learn how to manage extension settings</label>
 extensions-view-discover =
     .name = Get Add-ons
     .tooltiptext = { extensions-view-discover.name }
@@ -246,6 +256,10 @@ shortcuts-modifier-other = Include Ctrl or Alt
 shortcuts-invalid = Invalid combination
 shortcuts-letter = Type a letter
 shortcuts-system = Can’t override a { -brand-short-name } shortcut
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Already in use by { $addon }
 shortcuts-card-expand-button =
     { $numberToShow ->
        *[other] Show { $numberToShow } More
@@ -259,5 +273,23 @@ go-back-button =
 remove-addon-button = Remove
 disable-addon-button = Disable
 enable-addon-button = Enable
+expand-addon-button = More Options
 addons-enabled-heading = Enabled
 addons-disabled-heading = Disabled
+addon-detail-author-label = Author
+addon-detail-version-label = Version
+addon-detail-last-updated-label = Last Updated
+addon-detail-homepage-label = Homepage
+addon-detail-rating-label = Rating
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (disabled)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } review
+       *[other] { $numberOfReviews } reviews
+    }

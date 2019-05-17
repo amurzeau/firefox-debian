@@ -6,7 +6,7 @@
 <!ENTITY dataChoicesTab.label    "მონაცემთა შერჩევა">
 <!ENTITY itemUpdate.label        "განახლება">
 <!ENTITY itemNetworking.label    "ქსელი და ადგილი დისკზე">
-<!ENTITY itemCertificates.label  "სერთიფიკატები">
+<!ENTITY itemCertificates.label  "სერტიფიკატები">
 
 <!-- General Settings -->
 <!ENTITY enableGlodaSearch.label       "გლობალური ძიებისა და გზავნილთა ინდექსაციის ჩართვა">
@@ -47,9 +47,9 @@
 <!ENTITY enableTelemetry.accesskey       "ღ">
 <!ENTITY telemetryLearnMore.label        "ვრცლად">
 
-<!ENTITY crashReporterSection.label      "ავარიული დახურვის მომხსენებელი">
-<!ENTITY crashReporterDesc.label         "&brandShortName; აგზავნის ავარიული დახურვის მოხსენებებს, რაც &vendorShortName;-ს თქვენი ელფოსტის კლიენტის მდგრადობისა და უსაფრთხოების გაუმჯობესებაში ეხმარება">
-<!ENTITY enableCrashReporter.label       "ავარიული დახურვის მომხსენებლის ჩართვა">
+<!ENTITY crashReporterSection.label      "უეცარი გათიშვების მომხსენებელი">
+<!ENTITY crashReporterDesc.label         "&brandShortName; აგზავნის უეცარი გათიშვების მოხსენებებს, რაც &vendorShortName;-ს თქვენი ელფოსტის პროგრამის მდგრადობისა და უსაფრთხოების გაუმჯობესებაში ეხმარება">
+<!ENTITY enableCrashReporter.label       "უეცარი გათიშვების მომხსენებლის ჩართვა">
 <!ENTITY enableCrashReporter.accesskey   "რ">
 <!ENTITY crashReporterLearnMore.label    "ვრცლად">
 
@@ -67,8 +67,8 @@
  -->
 <!ENTITY updateApp.version.pre           "ვერსია ">
 <!ENTITY updateApp.version.post          "">
-<!ENTITY updateAppAllow.description      "&brandShortName;-ისთვის ნების დართვა">
-<!ENTITY updateAuto.label                "თავად დააყენოს განახლებები (სასურველია უსაფრთხოების გასაუმჯობესებლად)">
+<!ENTITY updateAppAllow.description      "ნებართვა, რომ &brandShortName; შეძლებს,">
+<!ENTITY updateAuto.label                "თავად დააყენებს განახლებებს (სასურველია უსაფრთხოების გასაუმჯობესებლად)">
 <!ENTITY updateAuto.accesskey            "თ">
 <!ENTITY updateCheck.label               "შემოწმდეს განახლებებზე, მაგრამ თავად გადაწყვეტთ, დააყენებთ თუ არა">
 <!ENTITY updateCheck.accesskey           "შ">
@@ -110,7 +110,7 @@
 <!ENTITY clearCacheNow.accesskey         "C">
 
 <!-- Certificates -->
-<!ENTITY certSelection.description       "როცა სერვერი ჩემს პირად სერთიფიკატს ითხოვს:">
+<!ENTITY certSelection.description       "როცა სერვერი ჩემს პირად სერტიფიკატს ითხოვს:">
 <!ENTITY certs.auto                      "ავტომატური შერჩევა">
 <!ENTITY certs.auto.accesskey            "m">
 <!ENTITY certs.ask                       "შეკითხვა ყოველ ჯერზე">

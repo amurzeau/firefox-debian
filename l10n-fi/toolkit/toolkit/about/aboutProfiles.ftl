@@ -8,6 +8,11 @@ profiles-create = Luo uusi profiili
 profiles-restart-title = Käynnistä uudelleen
 profiles-restart-in-safe-mode = Käynnistä uudelleen ilman lisäosia…
 profiles-restart-normal = Käynnistä uudelleen normaalisti…
+profiles-conflict = Toinen { -brand-product-name }-kopio on tehnyt muutoksia profiileihin. { -brand-short-name } täytyy käynnistää uudestaan ennen lisämuutosten tekemistä.
+profiles-flush-fail-title = Muutoksia ei tallennettu
+profiles-flush-conflict = { profiles-conflict }
+profiles-flush-failed = Odottamaton virhe on estänyt muutosten tallentamisen.
+profiles-flush-restart-button = Käynnistä { -brand-short-name } uudestaan
 # Variables:
 #   $name (String) - Name of the profile
 profiles-name = Profiili: { $name }
@@ -26,6 +31,8 @@ profiles-rename = Nimeä uudelleen
 profiles-remove = Poista
 profiles-set-as-default = Aseta oletusprofiiliksi
 profiles-launch-profile = Käynnistä profiili uuteen selaimeen
+profiles-cannot-set-as-default-title = Ei voitu asettaa oletukseksi
+profiles-cannot-set-as-default-message = Oletusprofiilia ei voi muuttaa ohjelmalle { -brand-short-name }.
 profiles-yes = kyllä
 profiles-no = ei
 profiles-rename-profile-title = Nimeä profiili uudelleen

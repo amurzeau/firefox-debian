@@ -10,7 +10,6 @@
 <!ENTITY returnToPreviousPage.label "Vanni inderê">
 <!ENTITY returnToPreviousPage1.label "Vanni inderê (Racomandou)">
 <!ENTITY advanced.label "Avansæ">
-<!ENTITY continue2.label "Ciù…">
 <!ENTITY advanced2.label "Avansæ…">
 <!ENTITY moreInformation.label "Ciù informaçioin">
 <!ENTITY viewCertificate.label "Amia certificato">
@@ -35,10 +34,10 @@
 </ul>
 ">
 
-<!ENTITY fileNotFound.title "File no trovou">
+<!ENTITY fileNotFound.title "Schedaio no trovou">
 <!ENTITY fileNotFound.longDesc "<ul><li>Peu ese che l'ògetto o segge stæto rinominou, scancelou ò mesciou?</li><li>Gh'é quarche erô inte l'indirisso?</li><li>Ti ghe l'æ i permissi pe acede a l'ògetto?</li></ul>">
 
-<!ENTITY fileAccessDenied.title "Acesso a-o file negou">
+<!ENTITY fileAccessDenied.title "Acesso a-o schedaio negou">
 <!ENTITY fileAccessDenied.longDesc "
 <ul>
   <li>O peu ese stæto scancelou,mesciou, ò i permissi de acesso a-i file peuan proibine l'acesso.</li>
@@ -52,10 +51,10 @@
 
 <!ENTITY captivePortal.title "Intra inta ræ">
 <!ENTITY captivePortal.longDesc2 "
-<p>Ti devi fâ o login in sta ræ prima che ti pòsse acede a l'internet.</p>
+<p>Ti devi intrâ in sta ræ prima che ti pòsse acede a l'internet.</p>
 ">
 
-<!ENTITY openPortalLoginPage.label2 "Arvi a Pagina de Login da ræ">
+<!ENTITY openPortalLoginPage.label2 "Arvi a pagina de intrâ da ræ">
 
 <!ENTITY malformedURI.pageTitle "URL grammo">
 <!-- Localization note (malformedURI.title1) - "Hmm" is a sound made when considering or puzzling over something. You don't have to include it in your translation if your language does not have a written word like this. -->
@@ -76,7 +75,7 @@
 <!ENTITY contentEncodingError.title "Erô de còdifica do contegnuo">
 <!ENTITY contentEncodingError.longDesc "<p>A pagina che t'eu vedde a no se peu mostrâ perché a gh'à 'na conprescion ch'a no l'é soportâ.</p><ul><li>Pe piaxei ciamma o propietaio do scito pe informalo do problema.</li></ul>">
 
-<!ENTITY unsafeContentType.title "Tipo de file no seguo">
+<!ENTITY unsafeContentType.title "Tipo de schedaio no seguo">
 <!ENTITY unsafeContentType.longDesc "<p>A pagina che t'eu vedde a no se peu mostrâ perché a gh'à 'na conprescion ch'a no l'é soportâ.</p><ul><li>Pe piaxei ciamma o propietaio do scito pe informalo do problema.</li></ul>">
 
 <!ENTITY netReset.title "Conescion Scancelâ">
@@ -121,11 +120,16 @@
 </ul>">
 
 <!ENTITY certerror.longpagetitle1 "A teu conescion a no l'é segua">
+
 <!ENTITY certerror.longpagetitle2 "Atençion: gh'é 'n reizego de seguessa potensiâ">
+<!ENTITY certerror.sts.longpagetitle  "Conescion fermâ: reizego potensiâ de seguessa">
 <!-- Localization note (certerror.introPara, certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "O propietaio de <span class='hostname'/> o l'à configurou o seu scito mâ.  Pe protezze e teu informaçioin da l'ese aröbæ, &brandShortName; o no s'é conesso a sto scito.">
+<!-- Localization note (certerror.introPara2) - The text content of the span tag
+will be replaced at runtime with the name of the server to which the user
+was trying to connect. -->
 
 
 <!ENTITY certerror.whatCanYouDoAboutItTitle "E aloa cöse ti peu fâ?">
@@ -147,14 +151,15 @@ was trying to connect. -->
 </ul>
 ">
 
-<!ENTITY cspBlocked.title "Blocou da-i criteri in sciâ seguessa di contegnui">
-<!ENTITY cspBlocked.longDesc "<p>&brandShortName; o l'à blocou o caregamento da pagina con sta modalitæ perché a gh'à di criteri de seguessa di contegnui ch'ou inpediscian.</p>  ">
+<!ENTITY cspBlocked.title "Blocou da-i critei de seguessa di contegnui">
+<!ENTITY cspBlocked.longDesc "<p>&brandShortName; o l'à blocou o caregamento da pagina con sta modalitæ perché a gh'à di critei de seguessa di contegnui ch'ou inpediscian.</p>">
 
 <!ENTITY corruptedContentErrorv2.title "Erô de contegnuo andæto a mâ">
 <!ENTITY corruptedContentErrorv2.longDesc "<p>A pagina che ti veu vedde a no peu ese mostrâ perché gh'é 'n erô inta trasmiscion di dæti.</p><ul><li>Pe piaxei, ciamma o responsabile do scito pe informalo do problema.</li></ul>">
 
 
 <!ENTITY securityOverride.exceptionButtonLabel "Azonzi 'na eceçion…">
+
 <!ENTITY securityOverride.exceptionButton1Label "Acetta o reizego e vanni avanti">
 
 <!ENTITY errorReporting.automatic2 "Segnala eroî comme sto chi pe agiutâ Mozilla a identificâ e blocâ sciti danozi">
@@ -175,7 +180,9 @@ was trying to connect. -->
 <!ENTITY certerror.wrongSystemTimeWithoutReference "<p> &brandShortName; o no se conette a <span id='wrongSystemTimeWithoutReference_URL'/> perché o releuio do computer o l'à l'oa sbaliâ e questo o l'inpedisce 'na conescion segua.</p> <p>O teu computer o segna e <span id='wrongSystemTimeWithoutReference_systemDate'/>. Pe risolve sto problema, cangia l'oa e a dæta in mòddo che segian giuste.</p>">
 
 <!ENTITY certerror.pagetitle1  "Conescion no segua">
+
 <!ENTITY certerror.pagetitle2  "Atençion: gh'é 'n reizego de seguessa potensiâ">
+<!ENTITY certerror.sts.pagetitle  "Conescion fermâ: reizego potensiâ de seguessa">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Sto scito o deuvia HTTP Strict Transport Security (HSTS) pe specificâ che &brandShortName; o peu conetise solo in mòddo seguo. Coscì no se peu azonze na eceçion pe sto certificato.">
 <!ENTITY certerror.copyToClipboard.label "Còpia testo inti aponti">
 
@@ -184,7 +191,7 @@ was trying to connect. -->
      "NS_ERROR_NET_INADEQUATE_SECURITY". -->
 <!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> o deuvia 'na tecnòlogia de seguessa vegia ch'a l'é debole . Un mascarson o peu pigiâ con façiliæ e teu informaçioin che ti pensi segian a-o seguo. L'aministratô do scito o deve dâ recatto a-o server primma che ti ti posse vixitâ sta pagina.</p><p>Còdice d'erô: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
 
-<!ENTITY blockedByPolicy.title "Pagina Blocâ">
+<!ENTITY blockedByPolicy.title "Pagina blocâ">
 
 
 <!ENTITY clockSkewError.title "O releuio do computer o l'é erou">
@@ -192,3 +199,4 @@ was trying to connect. -->
 <!ENTITY prefReset.longDesc "Pâ che segian e teu inpostaçioin de seguessa a caozâ questo. Ti veu repigiâ e inpostaçioin predefinie?">
 <!ENTITY prefReset.label "Repiggia inpostaçioin predefinie">
 
+<!ENTITY networkProtocolError.title "Erô de protocòllo de ræ">

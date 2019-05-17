@@ -5,10 +5,24 @@
 
 ## UI strings for the simplified onboarding modal
 
+onboarding-button-label-learn-more = מידע נוסף
 onboarding-button-label-try-now = נסו זאת כעת
 onboarding-button-label-get-started = תחילת עבודה
 onboarding-welcome-header = ברוכים הבאים אל { -brand-short-name }
+onboarding-welcome-learn-more = מידע נוסף על היתרונות.
+onboarding-join-form-header = הצטרפות אל { -brand-product-name }
+onboarding-join-form-body = נא להכניס את כתובת הדוא״ל שלך כדי להתחיל.
+onboarding-join-form-email =
+    .placeholder = נא להכניס דוא״ל
+onboarding-join-form-email-error = נדרשת כתובת דוא״ל חוקית
+onboarding-join-form-legal = בחירה בהמשך התהליך מהווה הסכמה ל<a data-l10n-name="terms">תנאי השירות</a> ול<a data-l10n-name="privacy">הצהרת הפרטיות</a>.
+onboarding-join-form-continue = המשך
 onboarding-start-browsing-button-label = התחלת גלישה
+
+## These are individual benefit messages shown with an image, title and
+## description.
+
+onboarding-benefit-products-title = מוצרים שימושיים
 
 ## These strings belong to the individual onboarding messages.
 
@@ -27,7 +41,23 @@ onboarding-ghostery-title = Ghostery
 onboarding-ghostery-text = גלישה מהירה, חכמה או בטוחה יותר עם הרחבות כמו Ghostery, המאפשרת לך לחסום פרסומות מעצבנות.
 # Note: "Sync" in this case is a generic verb, as in "to synchronize"
 onboarding-fxa-title = סנכרון
-onboarding-fxa-text = הירשמו ל־{ -fxaccount-brand-name } וסנכרנו את הסימניות, הסיסמאות והלשוניות בכל מקום שבו תשתמשו ב־{ -brand-short-name }.
+onboarding-fxa-text = הירשמו ל־{ -fxaccount-brand-name } וסנכרנו את הסימניות, הססמאות והלשוניות הפתוחות בכל מקום שבו תשתמשו ב־{ -brand-short-name }.
+# "Update" is a verb, as in "Update the existing settings", not "Options about
+# updates".
+onboarding-tracking-protection-button =
+    { PLATFORM() ->
+        [windows] עדכון אפשרויות
+       *[other] עדכון העדפות
+    }
+onboarding-data-sync-button = הפעלת { -sync-brand-short-name }
+onboarding-browse-privately-title = גלישה בפרטיות
+onboarding-browse-privately-button = פתיחת חלון פרטי
+onboarding-mobile-phone-title = קבלת { -brand-product-name } לטלפון שלך
+# "Mobile" is short for mobile/cellular phone, "Browser" is short for web
+# browser.
+onboarding-mobile-phone-button = הורדת דפדפן נייד
+onboarding-lockwise-passwords-button = קבלת { -lockwise-brand-name }
+onboarding-facebook-container-button = הוספת ההרחבה
 
 ## Message strings belonging to the Return to AMO flow
 

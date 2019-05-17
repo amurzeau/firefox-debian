@@ -3,11 +3,14 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY firstrun_panel_title_welcome "მოგესალმებით">
-<!ENTITY firstrun_urlbar_message2 "გმადლობთ, &brandShortName;-ის არჩევისთვის">
+<!ENTITY firstrun_urlbar_message2 "გმადლობთ, რომ აირჩიეთ &brandShortName;">
+<!ENTITY newfirstrun_urlbar_message "მოგესალმებათ &brandShortName;">
 <!ENTITY firstrun_urlbar_subtext2 "თანამედროვე ბრაუზერი მობილურისთვის Mozilla-სგან, თავისუფალი და გახსნილი ინტერნეტის მხარდამჭერი, არამომგებიანი კომპანიისგან.">
+<!ENTITY newfirstrun_urlbar_subtext "სწრაფი, პირადი და თქვენს მხარეზე.">
 <!ENTITY firstrun_panel_title_privacy "პირადულობა">
 <!ENTITY firstrun_privacy_message "იმოგზაურეთ ინტერნეტში მეთვალყურეების გარეშე">
 <!ENTITY firstrun_privacy_subtext "პირადი დათვალიერება თვალთვალისგან დაცვით ზღუდავს მეთვალყურე ელემენტებს და არ იმახსოვრებს თქვენს ისტორიას.">
+<!ENTITY newfirstrun_privacy_subtext "პირადი თვალიერება ზღუდავს რეკლამებს, რომლებიც თვალს გადევნებთ ინტერნეტში.">
 <!ENTITY firstrun_panel_title_customize "მორგება">
 <!ENTITY firstrun_customize_message "გახადეთ &brandShortName; თქვენებური.">
 <!ENTITY firstrun_customize_subtext "მოირგეთ &brandShortName; დამატებების საშუალებით. შეზღუდეთ რეკლამები, დაამატეთ შესაძლებლობები, ან აირჩიეთ ახალი გაფორმება, თქვენი გემოვნებით.">
@@ -20,8 +23,10 @@
 <!ENTITY firstrun_sync_title "სინქრონიზაცია">
 <!ENTITY firstrun_sync_message2 "განაგრძეთ იქიდან, სადაც გაჩერდით.">
 <!ENTITY firstrun_sync_subtext2 "გამოიყენეთ სინქრონიზაცია სანიშნების, პაროლების და &brandShortName;-ში დამახსოვრებული სხვა მონაცემების, ყველა მოწყობილობაზე გასაზიარებლად.">
+<!ENTITY newfirstrun_sync_subtext "დაასინქრონეთ ნებისმიერი რამ, რასაც შეინახავთ მობილურში, კომპიუტერის Firefox-ზე, უსაფრთხოდ და დაცულად.">
 <!ENTITY firstrun_signin_message "დაუკავშირდით და დაიწყეთ">
 <!ENTITY firstrun_signin_button "Sync-ში შესვლა">
+<!ENTITY newfirstrun_signin_button "ჩართეთ Sync">
 <!ENTITY  onboard_start_button_browser "დაიწყეთ მოგზაურობა ინტერნეტში">
 <!ENTITY firstrun_button_notnow "ახლა არა">
 <!ENTITY firstrun_button_next "შემდეგი">
@@ -49,20 +54,26 @@
 <!-- Localization note: Shown in a snackbar when tab is loaded from cache while device was offline. -->
 <!ENTITY  tab_offline_version "ნაჩვენებია კავშირგარეშე ვერსია">
 
-<!ENTITY  crash_reporter_title "&brandShortName; ავარიული დახურვის მომხსენებელი">
-<!ENTITY  crash_message2 "&brandShortName; მუშაობა შეწყდა. თქვენი დაფები &brandShortName;-ის ხელახლა გახსნისას საწყის გვერდზე უნდა აისახოს.">
-<!ENTITY  crash_send_report_message3 "აცნობეთ &vendorShortName;-ს ამ პრობლემის შესახებ">
-<!ENTITY  crash_include_url2 "თან დაერთოს გვერდის მისამართი, რომელზეც ვიყავი">
+<!ENTITY  crash_reporter_title "&brandShortName; – უეცარი გათიშვების მომხსენებელი">
+<!ENTITY  crash_message2 "&brandShortName; გაუმართაობის გამო დაიხურა. თქვენი ჩანართების სია ჩამოწერილი იქნება საწყის გვერდზე, როცა &brandShortName; ხელახლა გაეშვება.">
+<!ENTITY  crash_send_report_message3 "მოეხსენოს &vendorShortName;-ს უეცარი გათიშვის შესახებ, რომ გამოასწორონ ხარვეზი">
+<!ENTITY  crash_include_url2 "გვერდის მისამართის მითითება, რომელიც გახსნილი იყო">
 <!ENTITY  crash_sorry "ძალიან ვწუხვართ">
 <!ENTITY  crash_comment "დაურთეთ შენიშვნა (ხილული იქნება საჯაროდ)">
 <!ENTITY  crash_allow_contact2 "ნების დართვა &vendorShortName;-სთვის გამომეხმაუროს მოხსენების შესახებ">
 <!ENTITY  crash_email "თქვენი ელფოსტა">
-<!ENTITY  crash_closing_alert "გსურთ გამოსვლა, ავარიული დახურვის მოხსენების გადაგზავნის გარეშე?">
-<!ENTITY  sending_crash_report "ავარიული დახურვის მოხსენება იგზავნება\u2026">
+<!ENTITY  crash_closing_alert "გსურთ გამოსვლა, უეცარი გათიშვის მოხსენების გადაგზავნის გარეშე?">
+<!ENTITY  sending_crash_report "უეცარი გათიშვის მოხსენება იგზავნება\u2026">
 <!ENTITY  crash_close_label "დახურვა">
-<!ENTITY  crash_restart_label "&brandShortName; გადატვირთვა">
+<!ENTITY  crash_restart_label "ხელახლა გაეშვას &brandShortName;">
 
 <!ENTITY url_bar_default_text2 "მოძებნეთ ან შეიყვანეთ მისამართი">
+
+<!-- Localization note: this text will be displayed in the Search Widget -->
+<!ENTITY search_widget_default_text "ინტერნეტში ძიება">
+<!ENTITY search_widget_default_cropped_text "ძიება">
+<!ENTITY search_widget_logo_description "მოიძიეთ ინტერნეტში &brandShortName;-ით">
+
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
      icon in the url bar. -->
@@ -187,7 +198,7 @@
 <!ENTITY pref_category_privacy_short "პირადულობა">
 <!ENTITY pref_category_privacy_summary4 "თვალთვალი, ანგარიშები, მონაცემთა შერჩევა">
 <!ENTITY pref_category_vendor2 "&vendorShortName; &brandShortName;">
-<!ENTITY pref_category_vendor_summary2 "&brandShortName;-ის შესახებ, ხ.დ.კ. უკუკავშირი">
+<!ENTITY pref_category_vendor_summary2 "&brandShortName; – შესახებ, ხ.დ.კ. უკუკავშირი">
 <!ENTITY pref_category_datareporting "მონაცემთა შერჩევა">
 <!ENTITY pref_category_logins "ანგარიშები">
 <!ENTITY pref_learn_more "იხილეთ ვრცლად">
@@ -281,7 +292,7 @@
 <!ENTITY pref_tracking_protection_enabled_pb "ჩართულია პირად დათვალიერებაში">
 <!ENTITY pref_tracking_protection_disabled "გამორთულია">
 
-<!ENTITY pref_whats_new_notification "რა არის ახალი &brandShortName;-ში">
+<!ENTITY pref_whats_new_notification "&brandShortName; – სიახლეები">
 <!ENTITY pref_whats_new_notification_summary "გაეცანით ახალ შესაძლებლობებს, განახლების შემდეგ">
 
 <!-- Localization note (pref_feature_tips_notification): Title of a new toggleable setting in Settings-Notifications screen.
@@ -289,12 +300,7 @@
 <!ENTITY pref_feature_tips_notification "პროდუქტისა და შესაძლებლობების შესახებ">
 <!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
      Similar to the already existing "pref_whats_new_notification_summary"-->
-<!ENTITY pref_feature_tips_notification_summary "იხილეთ ვრცლად, &brandShortName;-ისა და &vendorShortName;-ის სხვა პროდუქტების გამოყენების შესახებ">
-<!-- Localization note (pref_feature_tips_notification_enabling_hint):
-     Describe the action the user should do to enable this preference
-     Will be used in the context "<Turn on> ... to enable this feature" -->
-<!ENTITY pref_feature_tips_notification_enabling_hint "ჩართეთ">
-
+<!ENTITY pref_feature_tips_notification_summary "იხილეთ ვრცლად, როგორ გამოიყენება &brandShortName; და &vendorShortName;-ის სხვა პროდუქტები">
 <!-- Localization note (pref_feature_tips_notification_enabling_path):
      Nothing to translate. Simple concatenation of already localized strings. Result is used below. -->
 <!ENTITY pref_feature_tips_notification_enabling_path "&pref_category_privacy_short; > &pref_category_datareporting; > &datareporting_fhr_title;">
@@ -315,7 +321,7 @@
 <!-- Localization note (custom_tabs_menu_item_open_in): The variable is replaced by the name of
      default browser from user's preference, such as "Open in Firefox" -->
 <!ENTITY custom_tabs_menu_item_open_in "&formatS;-ში გახსნა">
-<!ENTITY custom_tabs_menu_footer "უზრუნველყოფილია &brandShortName;-ის მიერ">
+<!ENTITY custom_tabs_menu_footer "უზრუნველმყოფია &brandShortName;">
 <!-- Long-click title of CustomTabsActivity will copy URL to clipboard and display this hint -->
 <!ENTITY custom_tabs_hint_url_copy "URL-ს ასლი აღებულია">
 
@@ -340,6 +346,9 @@
 <!-- Localization note (tab_queue_prompt_settings_button): This button is shown if the user needs to
      enable a permission in Android's setting in order to enable tab queues. -->
 <!ENTITY tab_queue_prompt_settings_button "პარამეტრებზე გადასვლა">
+<!-- Localization note (tab_queue_notification_prompt): This is the text of the default notification
+shown from Android O while a tab is being queued.-->
+<!ENTITY tab_queue_notification_prompt "ახალი ჩანართი ემატება რიგში&#8230;">
 <!ENTITY tab_queue_notification_title "&brandShortName;">
 <!-- Localization note (tab_queue_notification_text_plural2) : The
      formatD is replaced with the number of tabs queued.  The
@@ -352,7 +361,7 @@
 
 <!-- Localization note (tab_queue_notification_settings): This notification text is shown if a tab
      has been queued but we are missing the system permission to show an overlay. -->
-<!ENTITY tab_queue_notification_settings "\&quot;რამდენიმე ბმულის გასახსნელად\&quot;, დართეთ &brandShortName;-ს \&apos;სხვა აპების გადაფარვის ნება">
+<!ENTITY tab_queue_notification_settings "„რამდენიმე ბმულის გასახსნელად“ დართეთ &brandShortName;-ს „სხვა აპების გადაფარვის ნება“">
 
 <!ENTITY pref_char_encoding "სიმბოლოთა კოდირება">
 <!ENTITY pref_char_encoding_on "მენიუში ჩვენება">
@@ -379,7 +388,7 @@
 <!ENTITY pref_zoom_force_enabled "მასშტაბირების ჩართვა ყველგან">
 <!ENTITY pref_zoom_force_enabled_summary "უგულებელყოფს საიტების პარამეტრებს, თქვენ მიერ მითითებული ზომის დასაყენებლად">
 <!ENTITY pref_voice_input "ხმოვანი შეყვანა">
-<!ENTITY pref_voice_input_summary2 "ხმოვანი კარნახის დაშვება URL ზოლში">
+<!ENTITY pref_voice_input_summary2 "ხმოვანი კარნახის დაშვება URL-ველში">
 <!ENTITY pref_qrcode_enabled "QR კოდის წამკითხავი">
 <!ENTITY pref_qrcode_enabled_summary2 "QR წამკითხავის დაშვება URL ველში">
 
@@ -398,7 +407,6 @@
 <!ENTITY pref_private_data_searchHistory "ძიების ისტორია">
 <!ENTITY pref_private_data_formdata2 "ველები">
 <!ENTITY pref_private_data_cookies2 "ფუნთუშები და მიმდინარე შესვლები">
-<!ENTITY pref_private_data_passwords2 "დამახსოვრებული შესვლები">
 <!ENTITY pref_private_data_cache "ბუფერი">
 <!ENTITY pref_private_data_offlineApps "საიტების კავშირგარეშე მონაცემები">
 <!ENTITY pref_private_data_siteSettings2 "საიტის პარამეტრები">
@@ -406,6 +414,12 @@
 <!ENTITY pref_private_data_syncedTabs "დასინქრონებული ჩანართები">
 
 <!ENTITY pref_default_browser "ნაგულისხმევი ბრაუზერი">
+
+<!ENTITY pref_default_browser2 "გახადეთ &brandShortName; ნაგულისხმევი ბრაუზერი">
+<!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
+    Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
+    and instruct users to tap on the "Browser app" option on that settings screen to choose a default browser app. -->
+<!ENTITY default_browser_system_settings_toast "დაწკაპეთ ბრაუზერის პროგრამაზე და აირჩიეთ &brandShortName;">
 <!ENTITY pref_default_browser_mozilla_support_tablet "ეწვიეთ Mozilla მხარდაჭერას">
 <!ENTITY pref_about_firefox "&brandShortName; ინფორმაცია">
 <!ENTITY pref_vendor_faqs "ხ.დ.კ.">
@@ -443,12 +457,12 @@
      crashReporterDesc.label). -->
 <!ENTITY datareporting_fhr_title "&brandShortName; გამართულობის შესახებ მოხსენება">
 <!ENTITY datareporting_fhr_summary2 "მონაცემთა გაზიარება &vendorShortName;-სთან თქვენი ბრაუზერის შესახებ მისი წარმადობის გაგებაში დაგეხმარებათ">
-<!ENTITY datareporting_telemetry_title "ტელემეტრია">
+<!ENTITY datareporting_telemetry_title "გაზომვები">
 <!ENTITY datareporting_telemetry_summary "გაუზიარებს წარმადობის, გამოყენების, მოწყობილობისა და პარამეტრების მონაცემებს &vendorShortName;-ს, &brandShortName; ბრაუზერის მეტად დასახვეწად">
-<!ENTITY datareporting_crashreporter_summary "&brandShortName; აგზავნის ავარიული დახურვის მოხსენებებს, რაც &vendorShortName;-ს თქვენი ბრაუზერის მდგრადობის და უსაფრთხოების გაუმჯობესებაში ეხმარება.">
+<!ENTITY datareporting_crashreporter_summary "&brandShortName; აგზავნის უეცარი გათიშვების მოხსენებებს, რაც &vendorShortName;-ს თქვენი ბრაუზერის მდგრადობისა და უსაფრთხოების გაუმჯობესებაში ეხმარება">
 <!-- Localization note (datareporting_crashreporter_title_short) : This string matches
      (crashReporterSection.label) in en-US/chrome/browser/preferences/advanced.dtd.-->
-<!ENTITY datareporting_crashreporter_title_short "ავარიული დახურვის მომხსენებელი">
+<!ENTITY datareporting_crashreporter_title_short "უეცარი გათიშვების მომხსენებელი">
 <!ENTITY datareporting_wifi_title2 "&vendorShortName; მდებარეობა">
 <!ENTITY datareporting_wifi_geolocation_summary4 "დაეხმარეთ &vendorShortName;-ს მსოფლიო რუკის შექმნაში! გააზიარეთ თქვენი მოწყობილობის მიახლოებითი Wi-Fi და მობილური მდებარეობა ჩვენი გეოლოკაციის მომსახურების გასაუმჯობესებლად.">
 <!-- Localization note (datareporting_notification_title ) : This will be the title
@@ -491,7 +505,7 @@
 <!ENTITY tabs_normal "დაფები">
 <!ENTITY tabs_private "პირადი">
 <!ENTITY set_image_fail "ვერ ხერხდება გამოსახულების მითითება">
-<!ENTITY set_image_path_fail "ნახატის შენახვა ვერ ხერხდება">
+<!ENTITY set_image_path_fail "სურათის შენახვა ვერ ხერხდება">
 <!ENTITY set_image_chooser_title "სურათის დაყენება, როგორც">
 
 <!-- Localization note (find_text, find_prev, find_next, find_close) : These strings are used
@@ -500,6 +514,10 @@
 <!ENTITY find_prev "წინა">
 <!ENTITY find_next "შემდეგი">
 <!ENTITY find_close "დახურვა">
+
+<!-- Localization note (find_error) : Error message shown when there is no result for the
+     searched for text in this webpage -->
+<!ENTITY find_error "ფრაზა ვერ მოიძებნა">
 
 <!-- Localization note (media_sending_to, media_play, media_pause, media_stop) : These strings are used
      as alternate text for accessibility. They are not visible in the UI. -->
@@ -903,16 +921,11 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_title "შეჩერება">
 <!ENTITY pip_pause_button_description "გაშვების შეჩერება">
 
-<!-- Notification channels names -->
-<!ENTITY default_notification_channel "&brandShortName;">
-
+<!ENTITY pref_notification_settings_link "შეტყობინების პარამეტრების მართვა">
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "ბრაუზერი">
 <!ENTITY mls_notification_channel "&vendorShortName; მდებარეობა">
 <!ENTITY download_notification_channel "ჩამოტვირთვები">
-<!ENTITY media_notification_channel "ფაილის გაშვება">
-<!-- These push notifications come without a specific channel and/or name from Leanplum -->
-<!ENTITY leanplum_default_notifications_channel "&brandShortName; მოწოდებული შეტყობინებები">
 <!ENTITY media_notification_channel2 "ხმა და ვიდეო">
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
 <!ENTITY leanplum_default_notifications_channel2 "&vendorShortName; რჩევები და ხრიკები">

@@ -77,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = 上次更新
 detail-contributions-description = 此附加组件的开发者希望通过您的小额捐款，帮助支持其持续开发。
+detail-contributions-button = 贡献
+    .title = 参与开发此附加组件
+    .accesskey = C
 detail-update-type =
     .value = 自动更新
 detail-update-default =
@@ -90,7 +93,14 @@ detail-update-manual =
     .tooltiptext = 不要自动安装更新
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = 在隐私窗口中运行
-detail-private-browsing-description = 扩展将在隐私窗口中运行，并可获知您的在线活动。<label data-l10n-name="detail-private-browsing-learn-more">详细了解</label>
+detail-private-browsing-description2 = 允许后，扩展可在隐私浏览中获知您的在线活动。<label data-l10n-name="detail-private-browsing-learn-more">详细了解</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = 不支持隐私窗口
+detail-private-disallowed-description = 此扩展不支持在隐私浏览窗口中运行。<label data-l10n-name="detail-private-browsing-learn-more">详细了解</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = 要求介入隐私窗口
+detail-private-required-description = 此扩展有权访问您在隐私浏览窗口中的活动情况。<label data-l10n-name="detail-private-browsing-learn-more">详细了解</label>
 detail-private-browsing-on =
     .label = 允许
     .tooltiptext = 在隐私浏览中启用
@@ -238,6 +248,10 @@ shortcuts-modifier-other = 包括 Ctrl 或 Alt
 shortcuts-invalid = 组合无效
 shortcuts-letter = 输入一个字母
 shortcuts-system = 不可覆盖 { -brand-short-name } 的快捷键
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = 已被 { $addon } 占用
 shortcuts-card-expand-button =
     { $numberToShow ->
        *[other] 显示另外 { $numberToShow } 个
@@ -248,8 +262,51 @@ go-back-button =
 
 ## Add-on actions
 
+report-addon-button = 报告
 remove-addon-button = 移除
 disable-addon-button = 禁用
 enable-addon-button = 启用
+expand-addon-button = 更多选项
 addons-enabled-heading = 已启用
 addons-disabled-heading = 已禁用
+ask-to-activate-button = 需要时询问
+always-activate-button = 一律激活
+never-activate-button = 永不激活
+addon-detail-author-label = 作者
+addon-detail-version-label = 版本
+addon-detail-last-updated-label = 上次更新
+addon-detail-homepage-label = 主页
+addon-detail-rating-label = 评分
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name }（已禁用）
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+       *[other] { $numberOfReviews } 则评价
+    }
+
+## Pending uninstall message bar
+
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> 已被移除。
+pending-uninstall-undo-button = 撤销
+addon-detail-updates-label = 允许自动更新
+addon-detail-updates-radio-default = 默认
+addon-detail-updates-radio-on = 开
+addon-detail-updates-radio-off = 关
+addon-detail-update-check-label = 检查更新
+install-update-button = 更新
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = 已允许在隐私窗口中运行
+addon-detail-private-browsing-help = 若允许，扩展可在隐私浏览中获知您的在线活动。 <a data-l10n-name="learn-more">详细了解</a>
+addon-detail-private-browsing-allow = 允许
+addon-detail-private-browsing-disallow = 不允许
+available-updates-heading = 可用更新
+recent-updates-heading = 最近更新

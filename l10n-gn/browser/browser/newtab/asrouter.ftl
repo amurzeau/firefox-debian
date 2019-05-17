@@ -3,12 +3,15 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 cfr-doorhanger-extension-heading = Jepysokue jeroviaháva
+cfr-doorhanger-pintab-heading = Eipuru kóva: Emboja tendayke
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Mba’ére ahechahína kóva
 cfr-doorhanger-extension-cancel-button = Ko'ág̃a nahániri
     .accesskey = N
 cfr-doorhanger-extension-ok-button = Embojuaju ko'ág̃a
     .accesskey = A
+cfr-doorhanger-pintab-ok-button = Emboja ko tendayke
+    .accesskey = P
 cfr-doorhanger-extension-manage-settings-button = Eñangareko je’eporã ñemboheko rehe
     .accesskey = M
 cfr-doorhanger-extension-never-show-recommendation = Ani ehechauka ko je’eporã
@@ -41,7 +44,12 @@ cfr-doorhanger-extension-total-users =
         [one] { $total } puruhára
        *[other] { $total } puruhára
     }
+cfr-doorhanger-pintab-description = Eike pya’e umi tenda ojepuruvévape. Embojuruja tapia umi tenda peteĩ tendayképe (avei emoñepyrũjeývo tembiapo).
 
 ## These messages are steps on how to use the feature and are shown together.
 
+cfr-doorhanger-pintab-step1 = <b>Eikutu akatúa gotyo</b> pe tendayke emombytasévape.
+cfr-doorhanger-pintab-step2 = Eiporavo <b>Emboja tendayke</b> poravorãme.
+cfr-doorhanger-pintab-step3 = Pe tenda oguerekóramo ñembohekopyahu, ehecháta peteĩ kyta hovy tendayke mbojapyrépe.
 cfr-doorhanger-pintab-animation-pause = Mbopyta
+cfr-doorhanger-pintab-animation-resume = Eku'ejey

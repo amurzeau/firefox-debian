@@ -64,6 +64,8 @@ but will never be visible at the same time. -->
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "ж">
 
+<!-- Tab context menu -->
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -108,7 +110,6 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Сакривени језичци">
 
 <!ENTITY  listAllTabs.label      "Наброј све језичке">
-
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
 <!ENTITY  allTabsMenu.searchTabs.label       "Претражи језичке">
@@ -130,6 +131,9 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "Штампај…">
 <!ENTITY printCmd.accesskey "Ш">
 <!ENTITY printCmd.commandkey "p">
+
+<!ENTITY importFromAnotherBrowserCmd.label "Увези из другог прегледача…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "У">
 
 <!ENTITY taskManagerCmd.label "Управник задатака">
 
@@ -213,6 +217,21 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenExit.label "Обустави приказ преко целог екрана">
 <!ENTITY fullScreenExit.accesskey "ц">
 
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "Понесите Firefox са собом">
+<!ENTITY fxa.signin.description.label "Добавите ваше забелешке, историјат, лозинке и друге ствари на све ваше уређаје.">
+<!ENTITY fxa.signin.button.label "Укључи &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "Пријављени као">
+<!ENTITY fxa.menu.manageAccount.label "Управљај налогом…">
+
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
      respectively before and after the domain requiring fullscreen.
@@ -229,6 +248,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "Изађи из приказа преко целог екрана (esc)">
 <!ENTITY leaveDOMFullScreen.label "Обустави приказ преко целог екрана">
 <!ENTITY leaveDOMFullScreen.accesskey "к">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -407,6 +430,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmd2.accesskey     "о">
 <!ENTITY preferencesCmdUnix.label       "Поставке">
 <!ENTITY preferencesCmdUnix.accesskey     "П">
+
+<!ENTITY logins.label                           "Пријаве и лозинке">
 
 <!ENTITY clearRecentHistory.label               "Обриши историјат…">
 
@@ -879,7 +904,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "Овом сајту нису додељене никакве посебне дозволе.">
 <!ENTITY identity.permissionsReloadHint "Можда ћете морати поново учитати страницу да примените промене.">
 <!ENTITY identity.permissionsPreferences.tooltip "Отвори поставке дозвола">
-
 <!ENTITY identity.contentBlockingPreferences.tooltip "Отвори поставке блокирања садржаја">
 
 
@@ -995,6 +1019,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY contentBlocking.cookies.label "Колачићи">
 <!ENTITY contentBlocking.cookiesView.label "Колачићи и подаци сајта">
+
+
 
 <!ENTITY contentBlocking.openBreakageReportView2.label "Пријави проблем">
 <!ENTITY contentBlocking.breakageReportView.label "Пријавите проблеме">
@@ -1127,9 +1153,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "Управљајте вашим додацима кликом на <image class='addon-addon-icon'/> у <image class='addon-toolbar-icon'/> менију.">
+<!ENTITY addonPostInstall.incognito.checkbox.label "Дозволи рад ове екстензије у приватним прозорима">
 
-<!ENTITY addonPrivateBrowsing.header.label "Проширења у приватним прозорима">
-<!ENTITY addonPrivateBrowsing.body.label "Подразумевано није дозвољен рад екстензија у приватним прозорима. Екстензије неће радити приликом приватног прегледања и неће имати приступ вашим активностима на мрежи. Можете омогућити рад екстензијама у приватним прозорима понаособ у својим подешавањима.">
+<!ENTITY addonPrivateBrowsing.body2.label "Све нове екстензије које додате у &brandShorterName; неће радити у приватним прозорима осим ако то не дозволите у подешавањима екстензије.">
 <!ENTITY addonPrivateBrowsing.okButton.label "У реду, разумем">
 <!ENTITY addonPrivateBrowsing.okButton.accesskey "У">
 <!ENTITY addonPrivateBrowsing.manageButton.label "Управљај проширењима">

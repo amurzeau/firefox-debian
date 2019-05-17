@@ -64,6 +64,8 @@ but will never be visible at the same time. -->
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "s">
 
+<!-- Tab context menu -->
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -108,7 +110,6 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Schedas celate">
 
 <!ENTITY  listAllTabs.label      "Listar tote le schedas">
-
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
 <!ENTITY  allTabsMenu.searchTabs.label       "Recercar in le schedas">
@@ -130,6 +131,9 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "Imprimer…">
 <!ENTITY printCmd.accesskey "I">
 <!ENTITY printCmd.commandkey "p">
+
+<!ENTITY importFromAnotherBrowserCmd.label "Importar ab un altere navigator…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "I">
 
 <!ENTITY taskManagerCmd.label "Gestor de activitate">
 
@@ -168,7 +172,7 @@ same accesskey but will never be visible at the same time. -->
 <!ENTITY toolbarContextMenu.undoCloseTab.label "Reaperir le ultime scheda claudite">
 <!ENTITY toolbarContextMenu.undoCloseTab.accesskey "u">
 
-<!ENTITY pageSourceCmd.label "Codification fonte del pagina">
+<!ENTITY pageSourceCmd.label "Codice fonte del pagina">
 <!ENTITY pageSourceCmd.accesskey "f">
 <!ENTITY pageSourceCmd.commandkey "u">
 <!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
@@ -213,6 +217,28 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenExit.label "Exir del modo plen schermo">
 <!ENTITY fullScreenExit.accesskey "E">
 
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "Porta Firefox con te">
+<!ENTITY fxa.signin.description.label "Tene tu marcapaginas, chronologia, contrasignos e alie configurationes sur tote tu apparatos.">
+<!ENTITY fxa.signin.button.label "Activar &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "Tu debera verificar tu conto ante que tu pote synchronisar">
+<!ENTITY fxa.unverified.description.label "Tu debera verificar tu conto ante que tu pote synchronisar.">
+<!ENTITY fxa.unverified.button.label "Aperir le parametros de &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "Authenticate como">
+<!ENTITY fxa.menu.manageAccount.label "Gerer le conto…">
+<!ENTITY fxa.menu.syncSettings.label "Parametros de &syncBrand.shortName.label;…">
+<!ENTITY fxa.menu.connectAnotherDevice.label "&syncedTabs.sidebar.connectAnotherDevice;">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "Connecter un altere apparato…">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
+
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
      respectively before and after the domain requiring fullscreen.
@@ -229,6 +255,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "Exir del plen schermo (esc)">
 <!ENTITY leaveDOMFullScreen.label "Exir del plen schermo">
 <!ENTITY leaveDOMFullScreen.accesskey "E">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.label "Imagine annidate">
+<!ENTITY pictureInPicture.accesskey "a">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -377,7 +409,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY newNavigatorCmd.label        "Nove fenestra">
 <!ENTITY newNavigatorCmd.key        "N">
 <!ENTITY newNavigatorCmd.accesskey      "N">
-<!ENTITY newPrivateWindow.label     "Nove fenestra private">
+<!ENTITY newPrivateWindow.label     "Nove Fenestra private">
 <!ENTITY newPrivateWindow.accesskey "p">
 
 <!ENTITY editMenu.label         "Edition">
@@ -408,6 +440,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.label       "Preferentias">
 <!ENTITY preferencesCmdUnix.accesskey     "P">
 
+<!ENTITY logins.label                           "Connexiones e contrasignos">
+
 <!ENTITY clearRecentHistory.label               "Vacuar le chronologia recente…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
@@ -437,6 +471,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.clearRecent.label "Vacuar le chronologia recente…">
 <!ENTITY appMenuHistory.restoreSession.label "Restaurar le session previe">
 <!ENTITY appMenuHistory.viewSidebar.label "Vider barra lateral de chronologia">
+<!ENTITY appMenuHistory.hideSidebar.label "Celar barra lateral de chronologia">
 <!ENTITY appMenuHistory.recentHistory.label "Chronologia recente">
 <!ENTITY appMenuHelp.label "Adjuta">
 
@@ -465,6 +500,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Connecter se a Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Gerer le apparatos…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Vider le barra lateral de schedas synchronisate">
+<!ENTITY appMenuRemoteTabs.hidesidebar.label "Celar le barra lateral de schedas synchronisate">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Connecter un altere apparato">
 
 <!ENTITY appMenuRecentHighlights.label "Evidentias recente">
@@ -494,6 +530,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.manageExtension.accesskey "E">
 <!ENTITY customizeMenu.removeExtension.label "Remover le extention">
 <!ENTITY customizeMenu.removeExtension.accesskey "v">
+
+<!-- LOCALIZATION NOTE (reportExtension.label) This label is used in the extensions
+     toolbar buttons context menus, a user can use this command to submit to Mozilla
+     an abuse report related to that extension. "Report" is a verb. -->
+<!ENTITY customizeMenu.reportExtension.label "Signalar extension">
+<!ENTITY customizeMenu.reportExtension.accesskey "o">
 
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
@@ -586,7 +628,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY openLinkCmdInTab.accesskey   "s">
 <!ENTITY openLinkCmd.label            "Aperir le ligamine in un nove fenestra">
 <!ENTITY openLinkCmd.accesskey        "f">
-<!ENTITY openLinkInPrivateWindowCmd.label "Aperir le ligamine in un nove fenestra private">
+<!ENTITY openLinkInPrivateWindowCmd.label "Aperir le ligamine in un nove Fenestra private">
 <!ENTITY openLinkInPrivateWindowCmd.accesskey "P">
 <!ENTITY openLinkCmdInCurrent.label     "Aperir le ligamine">
 <!ENTITY openLinkCmdInCurrent.accesskey "A">
@@ -601,11 +643,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY reloadCmd.commandkey         "r">
 <!ENTITY reloadFrameCmd.label         "Recargar le quadro">
 <!ENTITY reloadFrameCmd.accesskey     "R">
-<!ENTITY viewPartialSourceForSelectionCmd.label "Vider le codification fonte del selection">
+<!ENTITY viewPartialSourceForSelectionCmd.label "Vider le codice fonte del selection">
 <!ENTITY viewPartialSourceCmd.accesskey "e">
-<!ENTITY viewPageSourceCmd.label      "Vider le codification fonte del pagina">
+<!ENTITY viewPageSourceCmd.label      "Vider le codice fonte del pagina">
 <!ENTITY viewPageSourceCmd.accesskey  "V">
-<!ENTITY viewFrameSourceCmd.label     "Vider le codification fonte del quadro">
+<!ENTITY viewFrameSourceCmd.label     "Vider le codice fonte del quadro">
 <!ENTITY viewFrameSourceCmd.accesskey "V">
 <!ENTITY viewPageInfoCmd.label        "Vider le informationes del pagina">
 <!ENTITY viewPageInfoCmd.accesskey    "I">
@@ -879,7 +921,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "Tu non ha concedite ulle permission special a iste sito.">
 <!ENTITY identity.permissionsReloadHint "Il es possibile que tu debe recargar le pagina pro que le cambios se applica.">
 <!ENTITY identity.permissionsPreferences.tooltip "Aperir le preferentias del permissos">
-
 <!ENTITY identity.contentBlockingPreferences.tooltip "Aperir le preferentias del blocada de contentos">
 
 
@@ -913,7 +954,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncedTabs.context.openInNewTab.accesskey           "s">
 <!ENTITY syncedTabs.context.openInNewWindow.label            "Aperir in un nove fenestra">
 <!ENTITY syncedTabs.context.openInNewWindow.accesskey        "N">
-<!ENTITY syncedTabs.context.openInNewPrivateWindow.label     "Aperir in un nove fenestra private">
+<!ENTITY syncedTabs.context.openInNewPrivateWindow.label     "Aperir in un nove Fenestra private">
 <!ENTITY syncedTabs.context.openInNewPrivateWindow.accesskey "P">
 <!ENTITY syncedTabs.context.bookmarkSingleTab.label          "Adder un marcapaginas sur iste scheda…">
 <!ENTITY syncedTabs.context.bookmarkSingleTab.accesskey      "m">
@@ -931,6 +972,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSignIn.label             "Connecter se a &syncBrand.shortName.label;…">
 <!ENTITY syncSignIn.accesskey         "Y">
 <!ENTITY syncSyncNowItem.label        "Synchronisar ora">
+<!ENTITY syncSyncNowItemSyncing.label "Synchronisation…">
 <!ENTITY syncSyncNowItem.accesskey    "S">
 <!ENTITY syncReAuthItem.label         "Reconnecter se a &syncBrand.shortName.label;…">
 <!ENTITY syncReAuthItem.accesskey     "R">
@@ -982,8 +1024,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.allWindowsShared.message "Tote le fenestras visibile super tu schermo essera compartite.">
 
 <!ENTITY contentBlocking.title "Blocada de contentos">
-<!ENTITY contentBlocking.detected "Contentos blocabile disvelate sur iste sito.">
-<!ENTITY contentBlocking.notDetected "Nulle contentos blocabile disvelate sur iste sito.">
+<!ENTITY contentBlocking.detected "Contento blocabile detegite sur iste sito.">
+<!ENTITY contentBlocking.notDetected "Nulle contento blocabile detegite sur iste sito.">
 
 <!ENTITY contentBlocking.trackingProtection3.label "Traciatores">
 
@@ -1073,6 +1115,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.acceptButton.accesskey "D">
 <!ENTITY updateAvailable.cancelButton.label "Non ora">
 <!ENTITY updateAvailable.cancelButton.accesskey "N">
+
 <!ENTITY updateAvailable.panelUI.label "Discargar actualisation de &brandShorterName;">
 
 <!ENTITY updateManual.message "Discarga un nove copia de &brandShorterName; e nos te adjutara a installar lo.">
@@ -1084,7 +1127,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateManual.cancelButton.accesskey "N">
 <!ENTITY updateManual.panelUI.label "Discargar un nove copia de &brandShorterName;">
 
-<!ENTITY updateRestart.message2 "Post reinitiar rapidemente, &brandShorterName; restaurara tote tu schedas e fenestras aperite que non esseva in modo de navigation private.">
+<!ENTITY updateRestart.message2 "Post reinitiar rapidemente, &brandShorterName; restaurara tote tu schedas e fenestras aperte que non esseva in modo Navigation private.">
 <!ENTITY updateRestart.header.message2 "Reinitiar pro actualisar &brandShorterName;.">
 <!ENTITY updateRestart.acceptButton.label "Reinitiar e Restaurar">
 <!ENTITY updateRestart.acceptButton.accesskey "R">
@@ -1133,9 +1176,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "Gere tu additivos per cliccar <image class='addon-addon-icon'/> in le <image class='addon-toolbar-icon'/> menu.">
+<!ENTITY addonPostInstall.incognito.checkbox.label "Consentir a iste extension de fluer in Fenestras private">
+<!ENTITY addonPostInstall.incognito.checkbox.accesskey "A">
 
-<!ENTITY addonPrivateBrowsing.header.label "Extensiones in fenestra private">
-<!ENTITY addonPrivateBrowsing.body.label "Per parametro predefinite non es consentite facer fluer le extensiones in Fenestra private. Illos non functionara in navigation private e non habera accesso a tu activitates in rete. Tu pote consentir al extensiones de fluer in fenestra private per tu parametros.">
+<!ENTITY addonPrivateBrowsing.header2.label "Cambios al extensiones in Fenestras private">
+<!ENTITY addonPrivateBrowsing.body2.label "Ulle nove extensiones que tu adde a &brandShorterName; non functiona in Fenestras private, a minus que tu lo consenti in le parametros.">
+<!ENTITY addonPrivateBrowsing.learnMore.label "Discoperi como gerer le parametros del extension.">
 <!ENTITY addonPrivateBrowsing.okButton.label "OK, io lo comprende">
 <!ENTITY addonPrivateBrowsing.okButton.accesskey "O">
 <!ENTITY addonPrivateBrowsing.manageButton.label "Gerer extensiones">

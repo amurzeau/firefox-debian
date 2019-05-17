@@ -1,0 +1,41 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!-- WARNING! This file contains UTF-8 encoded characters!
+   - If this ==> … <== doesn't look like an ellipsis (three dots in a row),
+   - your editor isn't using UTF-8 encoding and may munge up the document!
+  -->
+
+<!ENTITY pref.mainbox.label "การตั้งค่าทั่วไป" >
+<!ENTITY pref.dateformat.label "รูปแบบข้อความวันที่:" >
+<!ENTITY pref.dateformat.long "ยาว" >
+<!ENTITY pref.dateformat.short "สั้น"  >
+
+<!ENTITY pref.timezones.caption "เขตเวลา">
+<!ENTITY pref.timezones.label "เลือกเมืองที่ใกล้ที่สุดในเขตเวลาของคุณ:">
+<!ENTITY pref.timezones.accesskey "ล">
+
+<!ENTITY pref.defaults.label "ค่าเริ่มต้นสำหรับรายการใหม่">
+<!ENTITY pref.events.label "เหตุการณ์">
+<!ENTITY pref.tasks.label "งาน">
+
+<!ENTITY pref.default_event_length.label "ความยาวเริ่มต้น:" >
+<!ENTITY pref.default_event_length.accesskey "ค">
+
+<!ENTITY pref.default_task_none.label "ไม่มี">
+<!ENTITY pref.default_task_start_of_day.label "เริ่มต้นของวัน">
+<!ENTITY pref.default_task_end_of_day.label "สิ้นสุดของวัน">
+<!ENTITY pref.default_task_tomorrow.label "พรุ่งนี้">
+<!ENTITY pref.default_task_next_week.label "สัปดาห์ถัดไป">
+
+<!ENTITY pref.calendar.todaypane.agenda.caption "บานหน้าต่างวันนี้">
+<!-- LOCALIZATION NOTE (pref.soondays2.label):
+     "Upcoming" is the name of a section and the translation must match the
+     translation of that section name (calendar.upcoming.button.label). Also,
+     it should be upper case (as a proper name) if the target language permits.
+  -->
+
+<!ENTITY pref.accessibility.label "การช่วยการเข้าถึง" >
+
+<!ENTITY pref.eventsandtasks.label "เหตุการณ์และงาน" >

@@ -4,121 +4,124 @@
 
 <!-- Entities for AccountWizard -->
 
-<!ENTITY windowTitle.label "Account Wizard">
+<!ENTITY windowTitle.label "Kont‑kreilo">
 <!ENTITY accountWizard.size "width: 40em; height: 38em;">
 
 <!-- Entities for Account Type page -->
 
-<!ENTITY accountSetupInfo2.label "In order to receive messages, you first need to set up an account.">
-<!ENTITY accountTypeTitle.label "New Account Setup">
-<!ENTITY accountTypeDesc2.label "This Wizard will collect the information necessary to set up an account. If you do not know the information requested, please contact your System Administrator or Internet Service Provider.">
-<!ENTITY accountTypeDirections.label "Select the type of account you would like to set up:">
-<!ENTITY accountTypeMail.label "Email account">
-<!ENTITY accountTypeMail.accesskey "m">
-<!ENTITY accountTypeNews.label "Newsgroup account">
-<!ENTITY accountTypeNews.accesskey "w">
+<!ENTITY accountSetupInfo2.label "Por ricevi mesaĝojn, vi unue devas agordi konton.">
+<!ENTITY accountTypeTitle.label "Krei novan konton">
+<!ENTITY accountTypeDesc2.label "Tiu ĉi asistanto kolektos informojn necesajn por agordi konton. Se vi ne scios la petitajn informojn, kontaktu vian sisteman administranton aŭ retkonekt‑provizanton.">
+<!ENTITY accountTypeDirections.label "Elektu specon de konto, kiun vi volus agordi:">
+<!ENTITY accountTypeMail.label "Retpoŝta konto">
+<!ENTITY accountTypeMail.accesskey "r">
+<!ENTITY accountTypeNews.label "Novaĵgrupa konto">
+<!ENTITY accountTypeNews.accesskey "g">
+<!-- LOCALIZATION NOTE(accountTypeMovemail.label): do not translate 'Movemail' -->
+<!ENTITY accountTypeMovemail.label "Retkesto UNIX (Movemail)">
+<!ENTITY accountTypeMovemail.accesskey "U">
 
 <!-- Entities for Identity page -->
 
-<!ENTITY identityTitle.label "Identity">
-<!ENTITY identityDesc.label "Each account has an identity, which is the information that identifies you to others when they receive your messages.">
+<!ENTITY identityTitle.label "Identigo">
+<!ENTITY identityDesc.label "Ĉiu konto havas sian identigon, kiu ebligas al ricevantoj de mesaĝoj identigi vin kiel sendinton.">
 
 <!-- LOCALIZATION NOTE (fullnameDesc.label) : do not translate two of "&quot;" in below line -->
-<!ENTITY fullnameDesc.label "Enter the name you would like to appear in the &quot;From&quot; field of your outgoing messages">
+<!ENTITY fullnameDesc.label "Entajpu nomon, kiu estos montrata en la kampo “de” por viaj eliraj mesaĝoj">
 <!-- LOCALIZATION NOTE (fullnameExample.label) : use following directions for below line
   1, do not translate two of "&quot;"
   2, Use localized full name instead of "John Smith"
 -->
-<!ENTITY fullnameExample.label "(for example, &quot;John Smith&quot;).">
-<!ENTITY fullnameLabel.label "Your Name:">
-<!ENTITY fullnameLabel.accesskey "Y">
+<!ENTITY fullnameExample.label "(ekzemple: “Johano Smith”).">
+<!ENTITY fullnameLabel.label "Via nomo:">
+<!ENTITY fullnameLabel.accesskey "n">
 
-<!ENTITY emailLabel.label "Email Address:">
-<!ENTITY emailLabel.accesskey "E">
+<!ENTITY emailLabel.label "Retpoŝta adreso:">
+<!ENTITY emailLabel.accesskey "R">
 
 <!-- Entities for Incoming Server page -->
 
-<!ENTITY incomingTitle.label "Incoming Server Information">
-<!ENTITY incomingServerTypeDesc.label "Select the type of incoming server you are using.">
+<!ENTITY incomingTitle.label "Detaloj de enira servilo">
+<!ENTITY incomingServerTypeDesc.label "Elektu tipon de servilo de enira poŝto.">
 <!-- LOCALIZATION NOTE (imapType.label) : Do not translate "IMAP" in below line -->
 <!ENTITY imapType.label "IMAP">
 <!ENTITY imapType.accesskey "I">
 <!-- LOCALIZATION NOTE (popType.label) : Do not translate "POP" in below line -->
 <!ENTITY popType.label "POP">
 <!ENTITY popType.accesskey "P">
-<!ENTITY leaveMsgsOnSrvr.label "Leave messages on server">
-<!ENTITY leaveMsgsOnSrvr.accesskey "L">
-<!ENTITY portNum.label "Port:">
+<!ENTITY leaveMsgsOnSrvr.label "Restigi mesaĝojn en servilo">
+<!ENTITY leaveMsgsOnSrvr.accesskey "R">
+<!ENTITY portNum.label "Pordo:">
 <!ENTITY portNum.accesskey "o">
-<!ENTITY defaultPortLabel.label "Default:">
+<!ENTITY defaultPortLabel.label "Norma:">
 <!ENTITY defaultPortValue.label "">
 <!-- LOCALIZATION NOTE (incomingServerNameDesc.label) : Do not translate "&quot;pop.example.net&quot;" in below line -->
-<!ENTITY incomingServer.description "Enter the name of your incoming server (for example, &quot;mail.example.net&quot;).">
-<!ENTITY incomingServer.label "Incoming Server:">
-<!ENTITY incomingServer.accesskey "S">
+<!ENTITY incomingServer.description "Entajpu nomon de servilo de enira poŝto (ekzemple: “mail.example.net”).">
+<!ENTITY incomingServer.label "Enira servilo:">
+<!ENTITY incomingServer.accesskey "s">
 <!-- LOCALIZATION NOTE (incomingUsername.description) : do not translate "&quot;jsmith&quot;" in below line -->
-<!ENTITY incomingUsername.description "Enter the incoming user name given to you by your email provider (for example, &quot;jsmith&quot;).">
-<!ENTITY incomingUsername.label "User Name:">
-<!ENTITY incomingUsername.accesskey "U">
+<!ENTITY incomingUsername.description "Entajpu salutnomon por enira poŝto liveritan de via retpoŝt‑provizanto (ekzemple: “jsmith”).">
+<!ENTITY incomingUsername.label "Salutnomo:">
+<!ENTITY incomingUsername.accesskey "n">
 <!-- LOCALIZATION NOTE (newsServerNameDesc.label) : Do not translate "NNTP" or the "&quot;" entities in below line -->
-<!ENTITY newsServerNameDesc.label "Enter the name of your news server (NNTP) (for example, &quot;news.example.net&quot;).">
-<!ENTITY newsServerLabel.label "Newsgroup Server:">
-<!ENTITY newsServerLabel.accesskey "S">
+<!ENTITY newsServerNameDesc.label "Entajpu nomon de via novaĵgrupa servilo (NNTP) (ekzemple: “news.example.net”).">
+<!ENTITY newsServerLabel.label "Novaĵgrupa servilo:">
+<!ENTITY newsServerLabel.accesskey "s">
 
 <!-- Entities for Outgoing Server page -->
 
-<!ENTITY outgoingTitle.label "Outgoing Server Information">
+<!ENTITY outgoingTitle.label "Detaloj de elira servilo">
 <!-- LOCALIZATION NOTE (outgoingServer.description) : Do not translate "SMTP" and "&quot;smtp.example.net&quot;" in below line -->
-<!ENTITY outgoingServer.description "Enter the name of your outgoing server (SMTP) (for example, &quot;smtp.example.net&quot;).">
-<!ENTITY outgoingServer.label "Outgoing Server:">
-<!ENTITY outgoingServer.accesskey "S">
-<!ENTITY outgoingUsername.description "Enter the outgoing user name given to you by your email provider (this is typically the same as your incoming user name).">
-<!ENTITY outgoingUsername.label "Outgoing User Name:">
-<!ENTITY outgoingUsername.accesskey "U">
+<!ENTITY outgoingServer.description "Entajpu nomon de servilo de elira poŝto (SMTP) (ekzemple: “smtp.example.net”).">
+<!ENTITY outgoingServer.label "Elira servilo:">
+<!ENTITY outgoingServer.accesskey "s">
+<!ENTITY outgoingUsername.description "Entajpu salutnomon por elira poŝto liveritan de via retpoŝt‑provizanto (kutime la sama kiel salutnomo por enira poŝto).">
+<!ENTITY outgoingUsername.label "Salutnomo (elira poŝto):">
+<!ENTITY outgoingUsername.accesskey "n">
 
 <!-- LOCALIZATION NOTE (modifyOutgoing.suffix) : This string will be appended after each of
      haveSmtp1.suffix3, haveSmtp2.suffix3, haveSmtp3.suffix3 .
 -->
-<!ENTITY modifyOutgoing.suffix "You can change outgoing servers in the account settings.">
+<!ENTITY modifyOutgoing.suffix "Agordo de elira servilo ŝanĝeblas en agordoj de kontoj.">
 <!-- LOCALIZATION NOTE (haveSmtp1.prefix and haveSmtp1.suffix3) : Do not translate "SMTP" and "&quot;" in
      these variables. Also, translate haveSmtp1.prefix and haveSmtp1.suffix3 as a single sentence, inserting
      text after the "&quot;" entity in haveSmtp1.suffix3, if required grammatically.
 -->
-<!ENTITY haveSmtp1.prefix "Your existing outgoing server (SMTP), &quot;">
-<!ENTITY haveSmtp1.suffix3 "&quot;, will be used.">
+<!ENTITY haveSmtp1.prefix "Estos uzita via ekzista servilo de elira poŝto (SMTP): “">
+<!ENTITY haveSmtp1.suffix3 "”.">
 <!-- LOCALIZATION NOTE (haveSmtp2.prefix and haveSmtp2.suffix3) : Do not translate "SMTP" and "&quot;" in
      these variables. Also, translate haveSmtp2.prefix and haveSmtp2.suffix3 as a single sentence, inserting
      text after the "&quot;" entity in haveSmtp2.suffix3, if required grammatically.
 -->
-<!ENTITY haveSmtp2.prefix "Your existing outgoing (SMTP) username, &quot;">
-<!ENTITY haveSmtp2.suffix3 "&quot;, will be used.">
+<!ENTITY haveSmtp2.prefix "Estos uzita via ekzista salutnomo por servilo de elira poŝto (SMTP): “">
+<!ENTITY haveSmtp2.suffix3 "”.">
 <!-- LOCALIZATION NOTE (haveSmtp3.prefix and haveSmtp3.suffix3) : Do not translate "SMTP" and "&quot;" in
      these variables. Also, translate haveSmtp3.prefix and haveSmtp3.suffix3 as a single sentence, inserting
      text after the "&quot;" entity in haveSmtp3.suffix3, if required grammatically.
 -->
-<!ENTITY haveSmtp3.prefix "Your outgoing (SMTP) server, &quot;">
-<!ENTITY haveSmtp3.suffix3 "&quot;, is identical to your incoming server, your incoming user name will be used to access it.">
+<!ENTITY haveSmtp3.prefix "La servilo de elira retpoŝto (SMTP): “">
+<!ENTITY haveSmtp3.suffix3 "”, estas la sama kiel la servilo enira retpoŝto. La antaŭe enmetita salutnomo ankaŭ estos uzita por elira retpoŝto.">
 
 <!-- Entities for Account name page -->
 
-<!ENTITY accnameTitle.label "Account Name">
+<!ENTITY accnameTitle.label "Nomo de konto">
 <!-- LOCALIZATION NOTE (accnameDesc.label) : do not translate any "&quot;" in below line -->
-<!ENTITY accnameDesc.label "Enter the name by which you would like to refer to this account (for example, &quot;Work Account&quot;, &quot;Home Account&quot; or &quot;News Account&quot;).">
-<!ENTITY accnameLabel.label "Account Name:">
-<!ENTITY accnameLabel.accesskey "A">
+<!ENTITY accnameDesc.label "Entajpu nomon por priskribi tiun ĉi konton (ekzemple: “laboreja konto”, “persona konto” aŭ “novaĵgrupa konto”).">
+<!ENTITY accnameLabel.label "Nomo de konto:">
+<!ENTITY accnameLabel.accesskey "k">
 
 <!-- Entities for Done (Congratulations) page -->
 
-<!ENTITY completionTitle.label "Congratulations!">
-<!ENTITY completionText.label "Please verify that the information below is correct.">
-<!ENTITY serverTypePrefix.label "Incoming Server Type:">
-<!ENTITY serverNamePrefix.label "Incoming Server Name:">
-<!ENTITY smtpServerNamePrefix.label "Outgoing Server Name (SMTP):">
-<!ENTITY newsServerNamePrefix.label "News Server Name (NNTP):">
-<!ENTITY downloadOnLogin.label "Download messages now">
-<!ENTITY downloadOnLogin.accesskey "D">
-<!ENTITY deferStorageDesc.label "Uncheck this checkbox to store mail for this account in its own directory. That will make this account appear as a top-level account. Otherwise, it will be part of the Local Folders Global Inbox account.">
-<!ENTITY deferStorage.label "Use Global Inbox (store mail in Local Folders)">
-<!ENTITY deferStorage.accesskey "G">
-<!ENTITY clickFinish.label "Click Finish to save these settings and exit the Account Wizard.">
-<!ENTITY clickFinish.labelMac "Click Done to save these settings and exit the Account Wizard.">
+<!ENTITY completionTitle.label "Sukcese agordita!">
+<!ENTITY completionText.label "Bonvolu verigi ĉu la informoj sube estas seneraraj.">
+<!ENTITY serverTypePrefix.label "Tipo de enira retpoŝta servilo:">
+<!ENTITY serverNamePrefix.label "Nomo de enira servilo:">
+<!ENTITY smtpServerNamePrefix.label "Nomo de elira servilo (SMTP):">
+<!ENTITY newsServerNamePrefix.label "Nomo de novaĵgrupa servilo (NNTP):">
+<!ENTITY downloadOnLogin.label "Elŝuti retleterojn nun">
+<!ENTITY downloadOnLogin.accesskey "E">
+<!ENTITY deferStorageDesc.label "Malmarku tion ĉi por konservi retleterojn de tiu ĉi konto en ĝia aparta mesaĝujo. Tiel tiu ĉi konto estos videbla kiel la plej altnivela konto. Aliokaze ĝi estos parto de la ĝenerala mesaĝujo.">
+<!ENTITY deferStorage.label "Uzi ĝeneralan mesaĝujon (konservi retleterojn en “lokaj mesaĝujoj”)">
+<!ENTITY deferStorage.accesskey "l">
+<!ENTITY clickFinish.label "Klaku “farita” por konservi agordon kaj fermi la kont‑kreilon.">
+<!ENTITY clickFinish.labelMac "Klaku “farita” por konservi agordon kaj fermi la kont‑kreilon.">

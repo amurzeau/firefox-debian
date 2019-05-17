@@ -64,6 +64,8 @@ but will never be visible at the same time. -->
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "k">
 
+<!-- Tab context menu -->
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -108,7 +110,6 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Ewan taq Ruwi'">
 
 <!ENTITY  listAllTabs.label      "Kik'utik konojel ri taq ruwi' kajtz'ïk">
-
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
 <!ENTITY  allTabsMenu.searchTabs.label       "Kekanöx taq Ruwi'">
@@ -130,6 +131,9 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "Titz'ajb'äx…">
 <!ENTITY printCmd.accesskey "T">
 <!ENTITY printCmd.commandkey "p">
+
+<!ENTITY importFromAnotherBrowserCmd.label "Tijik' pa Jun Chik Okik'amaya'l…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "T">
 
 <!ENTITY taskManagerCmd.label "Kinuk'samajixik taq Samaj">
 
@@ -213,6 +217,28 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenExit.label "Tel pa chijun ruwa kematz'ib'">
 <!ENTITY fullScreenExit.accesskey "c">
 
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "Tak'waj ri Firefox Awik'in">
+<!ENTITY fxa.signin.description.label "Ke'ak'waj ri taq yaketal, natab'äl, ewan taq tzij chuqa' ch'aqa' chik taq nuk'ulem pa ronojel taq awokisaxel.">
+<!ENTITY fxa.signin.button.label "Tokisäx pa &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "Tanik'oj ri Ataqoya'l">
+<!ENTITY fxa.unverified.description.label "K'o chi nanik'oj ri rub'i' ataqoya'l chuwäch yatikïr yaximon.">
+<!ENTITY fxa.unverified.button.label "Kejaq ri taq Runuk'ulem &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "Okisan achi'el">
+<!ENTITY fxa.menu.manageAccount.label "Tinuk'samajïx Rub'i' Taqoya'l…">
+<!ENTITY fxa.menu.syncSettings.label "&syncBrand.shortName.label; Kinuk'ulem…">
+<!ENTITY fxa.menu.connectAnotherDevice.label "&syncedTabs.sidebar.connectAnotherDevice;">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "Tokisäx Jun Chik Okisaxel…">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
+
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
      respectively before and after the domain requiring fullscreen.
@@ -229,6 +255,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "Tel pa chijun ruwa kematz'ib' (esc)">
 <!ENTITY leaveDOMFullScreen.label "Tel pa chijun ruwa kematz'ib'">
 <!ENTITY leaveDOMFullScreen.accesskey "c">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.label "Picture-in-Picture">
+<!ENTITY pictureInPicture.accesskey "u">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -408,6 +440,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.label       "Taq Ajowanel">
 <!ENTITY preferencesCmdUnix.accesskey     "o">
 
+<!ENTITY logins.label                           "Kitikirisaxik molojri'ïl chuqa' Ewan taq Tzij">
+
 <!ENTITY clearRecentHistory.label               "Tiyuj ri k'ak'a' natab'äl…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "p">
@@ -437,6 +471,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.clearRecent.label "Tiyuj ri k'ak'a' natab'äl…">
 <!ENTITY appMenuHistory.restoreSession.label "Titzolin pa ri molojri'ïl xik'o">
 <!ENTITY appMenuHistory.viewSidebar.label "Titz'et runatab'al Sidebar">
+<!ENTITY appMenuHistory.hideSidebar.label "Tewäx Runatab'al Sidebar">
 <!ENTITY appMenuHistory.recentHistory.label "K'ak'a' Natab'äl">
 <!ENTITY appMenuHelp.label "Tob'äl">
 
@@ -465,6 +500,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Tatikirisaj molojri'ïl pa Ximojri'ïl">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Kenuk'samajïx taq okisaxel…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Ketz'et ximïl taq ruwi' pa ajxikin kajtz'ik">
+<!ENTITY appMenuRemoteTabs.hidesidebar.label "Tewüx Ximïl taq Ruwi' pan Ajxikin Kajtz'ik">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Tokisäx Jun Chik Okisaxel">
 
 <!ENTITY appMenuRecentHighlights.label "K'ak'a' Ya'on Kiq'ij">
@@ -879,7 +915,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "Majun chi ya'oj q'ij ya'on chawe' pa re ruxaq k'amaya'l re'.">
 <!ENTITY identity.permissionsReloadHint "Rik'in jub'a' k'o chi yatok chik pa ruxaq richin yesamäj ri taq k'exoj.">
 <!ENTITY identity.permissionsPreferences.tooltip "Kejaq Taq Rajowaxik Ya'oj Q'ij">
-
 <!ENTITY identity.contentBlockingPreferences.tooltip "Tijaq Rajowab'al Ruq'atik Rupam">
 
 
@@ -931,6 +966,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSignIn.label             "Titikirisäx molojri'ïl pa &syncBrand.shortName.label;…">
 <!ENTITY syncSignIn.accesskey         "I">
 <!ENTITY syncSyncNowItem.label        "Tixim Wakami">
+<!ENTITY syncSyncNowItemSyncing.label "Nixim…">
 <!ENTITY syncSyncNowItem.accesskey    "R">
 <!ENTITY syncReAuthItem.label         "Tawokisaj chik pa &syncBrand.shortName.label;…">
 <!ENTITY syncReAuthItem.accesskey     "T">
@@ -1073,6 +1109,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.acceptButton.accesskey "T">
 <!ENTITY updateAvailable.cancelButton.label "Wakami mani">
 <!ENTITY updateAvailable.cancelButton.accesskey "W">
+
 <!ENTITY updateAvailable.panelUI.label "Tiqasäx &brandShorterName; k'exoj">
 
 <!ENTITY updateManual.message "Taqasaj jun k'ak'a' ruwachib'al &brandShorterName; richin yatqato' chuyakik.">
@@ -1133,8 +1170,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "Ke'anuk'samajij ri taq achokoy rik'in napïtz' <image class='addon-addon-icon'/> pa ri <image class='addon-toolbar-icon'/> k'utsamaj.">
-<!ENTITY addonPostInstall.incognito.label "Tiya' q'ij chi re k'amal re' nisamäj pa Ichinan Tzuwäch.">
-<!ENTITY addonPostInstall.incognito.accesskey "T">
+<!ENTITY addonPostInstall.incognito.checkbox.label "Tiya' q'ij chi re k'amal re' nisamäj pan Ichinan Tzuwäch">
+<!ENTITY addonPostInstall.incognito.checkbox.accesskey "T">
 
 <!ENTITY addonPrivateBrowsing.header2.label "Kejal rik'in taq k'amal pan Ichinan taq Tzuwäch">
 <!ENTITY addonPrivateBrowsing.body2.label "Xab'achike k'ak'a' k'amab'ey xtatz'aqatisaj pa &brandShorterName; man xtisamäj ta pa Ichinan Tzuwäch xa xe we naya' q'ij chi re pa ri nuk'ulem.">

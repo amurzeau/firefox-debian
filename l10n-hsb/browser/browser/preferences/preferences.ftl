@@ -452,7 +452,7 @@ containers-remove-button =
 
 sync-signedout-caption = Wzmiće swój web sobu
 sync-signedout-description = Synchronizujće swoje zapołožki, historiju, rajtarki, hesła, přidatki a nastajenja mjez wšěmi wašimi gratami.
-sync-signedout-account-title = Z { -fxaccount-brand-name } zwjazać
+sync-signedout-account-title = Zwjazać z: { -fxaccount-brand-name }
 sync-signedout-account-create = Nimaće konto? Započńće
     .accesskey = k
 sync-signedout-account-signin =
@@ -466,7 +466,7 @@ sync-signedout-account-signin =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = Firefox sćahnyć za <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> abo <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a>, zo byšće ze swojim mobilnym gratom synchronizował.
+sync-mobile-promo = Firefox za <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> abo <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> sćahnyć, zo byšće ze swojim mobilnym gratom synchronizował.
 
 ## Sync Section - Signed in
 
@@ -666,6 +666,7 @@ addressbar-suggestions-settings = Nastajenja za namjety pytawy změnić
 
 content-blocking-header = Blokowanje wobsaha
 content-blocking-description = Blokujće wobsah třećich, kotryž wam po webje slěduje. Kontrolujće, kak husto so waša aktiwita online składuje a mjez websydłami dźěli.
+content-blocking-section-description = Škitajće swoju priwatnosć, mjeztym zo přehladujeće. Blokujće njewidźomny wobsah, kotryž sydła slěduje, kotrež wopytujeće, a profil wo was twori. Hdyž tajki wobsah blokujeće, dadźa so strony snano spěšnišo začitać.
 content-blocking-learn-more = Dalše informacije
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -681,15 +682,24 @@ content-blocking-setting-custom =
 content-blocking-standard-description = Blokuje jenož znate přesćěhowaki w priwatnych woknach.
 content-blocking-standard-desc = Wurunany za škit a wukon. Dowoluje někotre přesćěhowaki, zo bychu websydła porjadnje fungowali.
 content-blocking-strict-desc = Blokuje wšě přesćěhowaki, kotrež { -brand-short-name } namaka. Tohodla njemóhli někotre websydła korektnje fungować.
+content-blocking-strict-description = Sylniši škit, móže zawinować, zo někotre sydła hižo njefunguja.
 content-blocking-custom-desc = Wubjerće, štož chceće blokować.
 content-blocking-private-trackers = Znate přeścěhowaki jenož w priwatnych woknach
 content-blocking-third-party-cookies = Slědowace placki třećich
+content-blocking-all-cookies = Wšě placki
+content-blocking-unvisited-cookies = Placki z njewopytanych sydłow
 content-blocking-all-windows-trackers = Znate přesćěhowaki we wšěch woknach
 content-blocking-all-third-party-cookies = Wšě placki třećich
+content-blocking-cryptominers = Kryptokopanje
+content-blocking-fingerprinters = Porstowe wotćišće
 content-blocking-warning-title = Kedźbu!
 content-blocking-warning-desc = Hdyž placki a přesćěhowaki blokujeće, njemóhli někotre websydła korektnje fungować. Je lochko, blokowanje sydłow, kotrymž dowěrjeće, znjemóžnić.
 content-blocking-warning-description = Blokowanje wobsaha móže zawinować, zo někotre websydła hižo njefunguja. Je lochko, blokowanje za sydła znjemóžnić, kotrymž dowěrjeće.
 content-blocking-learn-how = Zhońće kak
+content-blocking-reload-description = Dyrbiće swoje rajtarki znowa začitać, zo byšće tute změny nałožił.
+content-blocking-reload-tabs-button =
+    .label = Wšě rajtarki znowa začitać
+    .accesskey = W
 content-blocking-trackers-label =
     .label = Přesćěhowaki
     .accesskey = P
@@ -703,6 +713,8 @@ content-blocking-tracking-protection-change-block-list = Blokowansku lisćinu zm
 content-blocking-cookies-label =
     .label = Placki
     .accesskey = P
+content-blocking-expand-section =
+    .tooltiptext = Dalše informacije
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
     .label = Kryptokopanje
@@ -742,23 +754,12 @@ permissions-notification-link = Dalše informacije
 permissions-notification-pause =
     .label = Zdźělenja zastajić, doniž so { -brand-short-name } znowa njestartuje
     .accesskey = z
-permissions-block-autoplay-media =
-    .label = Websydłam zakazać, medije ze zynkom wothrać
-    .accesskey = z
-permissions-block-autoplay-media-menu = Za websydła, kotrež zynk awtomatisce wothrawaja
 permissions-block-autoplay-media2 =
     .label = Websydła při awtomatiskim wothrawanju zynka haćić
     .accesskey = b
 permissions-block-autoplay-media-exceptions =
     .label = Wuwzaća…
     .accesskey = u
-autoplay-option-ask =
-    .label = Přeco so prašeć
-autoplay-option-allow =
-    .label = Awtomatiske wothrawanje dowolić
-autoplay-option-dont =
-    .label = Awtomatisce njewothrać
-permissions-autoplay-link = Dalše informacije
 permissions-block-popups =
     .label = Wuskakowace wokno blokować
     .accesskey = k
@@ -794,10 +795,6 @@ addon-recommendations-link = Dalše informacije
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Datowe rozprawjenje je znjemóžnjene za tutu programowu konfiguraciju
-collection-browser-errors =
-    .label = { -brand-short-name } dowolić, { -vendor-short-name } zmylkowe rozprawy (inkluziwnje zmylkowe zdźělenki) pósłać
-    .accesskey = z
-collection-browser-errors-link = Dalše informacije
 collection-backlogged-crash-reports =
     .label = { -brand-short-name } dowolić, njewobdźěłane spadowe rozprawy we wašim mjenje pósłać
     .accesskey = r

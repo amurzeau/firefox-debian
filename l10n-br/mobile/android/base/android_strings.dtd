@@ -4,10 +4,13 @@
 
 <!ENTITY firstrun_panel_title_welcome "Donemat">
 <!ENTITY firstrun_urlbar_message2 "Trugarez deoc\&apos;h evit bezañ dibabet &brandShortName;">
+<!ENTITY newfirstrun_urlbar_message "Donemat war &brandShortName;">
 <!ENTITY firstrun_urlbar_subtext2 "Ur merdeer hezoug arnevez savet gant Mozilla, an aozadur hep pal arc\&apos;hantel gouestlet d\&apos;ur web frank ha digor.">
+<!ENTITY newfirstrun_urlbar_subtext "Prim, prevez, ha deus ho tu.">
 <!ENTITY firstrun_panel_title_privacy "Buhez prevez">
 <!ENTITY firstrun_privacy_message "Merdeit evel ma ne vefe den o sellet">
 <!ENTITY firstrun_privacy_subtext "Ar merdeiñ prevez gant ar gwarez heuliañ a stank an heulierien e-pad m\&apos;emaoc\&apos;h o verdeiñ ha ne enroll ket ho roll istor.">
+<!ENTITY newfirstrun_privacy_subtext "Ar merdeiñ prevez a stank an heulierien bruderezh a heuilh ac\&apos;hanoc\&apos;h enlinenn.">
 <!ENTITY firstrun_panel_title_customize "Personelaat">
 <!ENTITY firstrun_customize_message "Adperc\&apos;hennit &brandShortName;.">
 <!ENTITY firstrun_customize_subtext "Personelait &brandShortName; gant askouezhioù. Stankit ar bruderezh, ouzhpennit keweriusterioù pe dibabit un neuz nevez evit ezteurel ho personelezh.">
@@ -20,8 +23,10 @@
 <!ENTITY firstrun_sync_title "Sync">
 <!ENTITY firstrun_sync_message2 "Adloc\&apos;hit el lec\&apos;h m\&apos;ho peus paouezet.">
 <!ENTITY firstrun_sync_subtext2 "Grit gant Sync evit adkavout ar sinedoù, ar gerioù-tremen, hag an holl draoù enrollet e &brandShortName; war ho holl drevnadoù.">
+<!ENTITY newfirstrun_sync_subtext "Goubredit ar pezh a enrollit war hoc\&apos;h hezougell evit Firefox war urzhiataer, en un doare prevez ha diogel.">
 <!ENTITY firstrun_signin_message "Kennaskit, krogit ganti">
 <!ENTITY firstrun_signin_button "Kennaskañ ouzh Sync">
+<!ENTITY newfirstrun_signin_button "Gweredekaat Sync">
 <!ENTITY  onboard_start_button_browser "Krog da verdeiñ">
 <!ENTITY firstrun_button_notnow "Ket evit ar mare">
 <!ENTITY firstrun_button_next "War-lerc\&apos;h">
@@ -63,6 +68,12 @@
 <!ENTITY  crash_restart_label "Adloc\&apos;hañ &brandShortName;">
 
 <!ENTITY url_bar_default_text2 "Bizskrivit un termen da glask pe ur chomlec\&apos;h">
+
+<!-- Localization note: this text will be displayed in the Search Widget -->
+<!ENTITY search_widget_default_text "Klask er web">
+<!ENTITY search_widget_default_cropped_text "Klask">
+<!ENTITY search_widget_logo_description "Klask er web gant &brandShortName;">
+
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
      icon in the url bar. -->
@@ -290,11 +301,6 @@
 <!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
      Similar to the already existing "pref_whats_new_notification_summary"-->
 <!ENTITY pref_feature_tips_notification_summary "Deskit hiroc\&apos;h a-zivout arverañ &brandShortName; hag aozadoù all &vendorShortName;">
-<!-- Localization note (pref_feature_tips_notification_enabling_hint):
-     Describe the action the user should do to enable this preference
-     Will be used in the context "<Turn on> ... to enable this feature" -->
-<!ENTITY pref_feature_tips_notification_enabling_hint "Gweredekaat">
-
 <!-- Localization note (pref_feature_tips_notification_enabling_path):
      Nothing to translate. Simple concatenation of already localized strings. Result is used below. -->
 <!ENTITY pref_feature_tips_notification_enabling_path "&pref_category_privacy_short; > &pref_category_datareporting; > &datareporting_fhr_title;">
@@ -340,6 +346,9 @@
 <!-- Localization note (tab_queue_prompt_settings_button): This button is shown if the user needs to
      enable a permission in Android's setting in order to enable tab queues. -->
 <!ENTITY tab_queue_prompt_settings_button "Mont d\&apos;an arventennoù">
+<!-- Localization note (tab_queue_notification_prompt): This is the text of the default notification
+shown from Android O while a tab is being queued.-->
+<!ENTITY tab_queue_notification_prompt "Oc\&apos;h ouzhpennañ un ivinell nevez el lost &#8230;">
 <!ENTITY tab_queue_notification_title "&brandShortName;">
 <!-- Localization note (tab_queue_notification_text_plural2) : The
      formatD is replaced with the number of tabs queued.  The
@@ -398,7 +407,6 @@
 <!ENTITY pref_private_data_searchHistory "Roll istor klask">
 <!ENTITY pref_private_data_formdata2 "Roll istor furmskridoù">
 <!ENTITY pref_private_data_cookies2 "Toupinoù ha kennaskoù oberiant">
-<!ENTITY pref_private_data_passwords2 "Gerioù-tremen enrollet">
 <!ENTITY pref_private_data_cache "Krubuilh">
 <!ENTITY pref_private_data_offlineApps "Roadennoù ezlinenn al lec\&apos;hiennoù">
 <!ENTITY pref_private_data_siteSettings2 "Arventennoù al lec\&apos;hienn">
@@ -406,6 +414,12 @@
 <!ENTITY pref_private_data_syncedTabs "Ivinelloù goubredet">
 
 <!ENTITY pref_default_browser "Lakaat da verdeer dre ziouer">
+
+<!ENTITY pref_default_browser2 "Lakaat &brandShortName; da vezañ ho merdeer dre ziouer">
+<!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
+    Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
+    and instruct users to tap on the "Browser app" option on that settings screen to choose a default browser app. -->
+<!ENTITY default_browser_system_settings_toast "Stokit an arload Merdeer &amp; dibabit &brandShortName;">
 <!ENTITY pref_default_browser_mozilla_support_tablet "Gweladennit Skor Mozilla">
 <!ENTITY pref_about_firefox "Diwar-benn &brandShortName;">
 <!ENTITY pref_vendor_faqs "FAG">
@@ -500,6 +514,10 @@
 <!ENTITY find_prev "Kent">
 <!ENTITY find_next "War-lerc\&apos;h">
 <!ENTITY find_close "Serriñ">
+
+<!-- Localization note (find_error) : Error message shown when there is no result for the
+     searched for text in this webpage -->
+<!ENTITY find_error "N\&apos;haller ket kavout ar frazenn">
 
 <!-- Localization note (media_sending_to, media_play, media_pause, media_stop) : These strings are used
      as alternate text for accessibility. They are not visible in the UI. -->
@@ -901,15 +919,9 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_description "Ehaniñ al lenn">
 
 <!-- Notification channels names -->
-<!ENTITY default_notification_channel "&brandShortName;">
-
-<!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "Merdeer">
 <!ENTITY mls_notification_channel "&vendorShortName; Servij lec\&apos;heladur">
 <!ENTITY download_notification_channel "Pellgargadennoù">
-<!ENTITY media_notification_channel "Lennadur media">
-<!-- These push notifications come without a specific channel and/or name from Leanplum -->
-<!ENTITY leanplum_default_notifications_channel "Rebuzadurioù Push &brandShortName;">
 <!ENTITY media_notification_channel2 "Son ha video">
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
 <!ENTITY leanplum_default_notifications_channel2 "Tunioù &vendorShortName;">

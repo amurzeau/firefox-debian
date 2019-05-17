@@ -10,10 +10,13 @@
 <!ENTITY fullscreenButton.exitfullscreenlabel "Normalioji veiksena">
 <!ENTITY castingButton.castingLabel "Nukreipti į ekraną">
 <!ENTITY closedCaption.off "Išjungta">
-
 <!-- LOCALIZATION NOTE (volumeScrubber.label): This label is exposed to
      accessibility software to clarify what the slider is for. -->
 <!ENTITY volumeScrubber.label "Garso šliaužiklis">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label): This string is used as part of
+the Picture-in-Picture video toggle button when the mouse is hovering it. -->
+<!ENTITY pictureInPicture.label "Vaizdas vaizde">
 
 <!ENTITY stats.media "Medija">
 <!ENTITY stats.size "Dydis">
@@ -34,6 +37,8 @@
 <!ENTITY error.srcNotSupported "Vaizdo formatas arba MIME tipas nepalaikomas.">
 <!ENTITY error.noSource2 "Nerastas palaikomo formato ir MIME tipo vaizdas.">
 <!ENTITY error.generic "Vaizdo atkūrimas nutrauktas dėl nežinomos klaidos.">
+
+<!ENTITY status.pictureInPicture "Šis vaizdo įrašas groja vaizdas–vaizde rodiniu.">
 
 <!-- LOCALIZATION NOTE (scrubberScale.nameFormat): the #1 string is the current
 media position, and the #2 string is the total duration. For example, when at

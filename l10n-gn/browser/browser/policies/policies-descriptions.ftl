@@ -10,6 +10,7 @@
 ## These are short descriptions for individual policies, to be displayed
 ## in the documentation section in about:policies.
 
+policy-3rdparty = Emboheko purureko WebExtensions oikekuaa hag̃ua chrome.storage.managed rupive.
 policy-AppUpdateURL = Embohekopyahu URL kundaharape rembipuru ñemomba’epyre.
 policy-Authentication = Emboheko ñemoañete ojuajúva ñanduti rendápe g̃uarã moneĩmbyre.
 policy-BlockAboutAddons = Ejoko Moimbaha ñangarekohápe jeike (about: addons).
@@ -70,5 +71,8 @@ policy-SearchBar = Emboheko jehekaha rendaite ijypykue rupi. Pe puruhára ikatu 
 policy-SearchEngines = Emboheko jehekaha ñemoĩporã. Ko purureko eipurukuaa pe Extended Support Release (ESR) rupive.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Emohenda PKCS # 11 ra'ãha.
+policy-SSLVersionMax = Emboheko SSL rembiapokue ipyahuvéva.
+policy-SSLVersionMin = Emboheko SSL rembiapokue oiko’ivéva.
+policy-SupportMenu = Embojuaju mba’epuru poravorãgua ñemomba’epyréva pytyvõha poravorãme.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Ejoko ñanduti rendápe jeike. Emoñe’ẽ kuatiaita ehechakuaa hag̃ua mba’emimi ko ysaja rehegua.

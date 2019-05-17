@@ -64,6 +64,8 @@ but will never be visible at the same time. -->
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "г">
 
+<!-- Tab context menu -->
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -108,7 +110,6 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Жасырын беттер">
 
 <!ENTITY  listAllTabs.label      "Барлық беттерді тізіп шығу">
-
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
 <!ENTITY  allTabsMenu.searchTabs.label       "Беттерден іздеу">
@@ -130,6 +131,9 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "Баспаға шығару…">
 <!ENTITY printCmd.accesskey "ш">
 <!ENTITY printCmd.commandkey "p">
+
+<!ENTITY importFromAnotherBrowserCmd.label "Басқа браузерден импорттау…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "и">
 
 <!ENTITY taskManagerCmd.label "Тапсырмалар басқарушысы">
 
@@ -213,6 +217,28 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenExit.label "Толық экран режимінен шығу">
 <!ENTITY fullScreenExit.accesskey "Т">
 
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "Firefox-ты өзіңізбен бірге алыңыз">
+<!ENTITY fxa.signin.description.label "Бетбелгілер, тарих, парольдер және т.б. баптауларды құрылғыларыңыздың барлығында алыңыз.">
+<!ENTITY fxa.signin.button.label "&syncBrand.shortName.label; іске қосу…">
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "Эл. поштаңызды тексеріңіз">
+<!ENTITY fxa.unverified.description.label "Синхрондауды бастамас бұрын тіркелгіңізді растау керек.">
+<!ENTITY fxa.unverified.button.label "&syncBrand.shortName.label; баптауларын ашу…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "Кім ретінде кірген:">
+<!ENTITY fxa.menu.manageAccount.label "Тіркелгіні басқару…">
+<!ENTITY fxa.menu.syncSettings.label "&syncBrand.shortName.label; баптаулары…">
+<!ENTITY fxa.menu.connectAnotherDevice.label "&syncedTabs.sidebar.connectAnotherDevice;">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "Басқа құрылғыны байланыстыру…">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
+
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
      respectively before and after the domain requiring fullscreen.
@@ -229,6 +255,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "Толық экраннан шығу (Esc)">
 <!ENTITY leaveDOMFullScreen.label "Толық экраннан шығу">
 <!ENTITY leaveDOMFullScreen.accesskey "Т">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.label "Суреттегі сурет">
+<!ENTITY pictureInPicture.accesskey "у">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -408,6 +440,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.label       "Параметрлер">
 <!ENTITY preferencesCmdUnix.accesskey     "м">
 
+<!ENTITY logins.label                           "Логиндер және парольдер">
+
 <!ENTITY clearRecentHistory.label               "Жуырдағы тарихты өшіру…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
@@ -437,6 +471,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.clearRecent.label "Жуырдағы тарихты өшіру…">
 <!ENTITY appMenuHistory.restoreSession.label "Алдыңғы сессияны қалпына келтіру">
 <!ENTITY appMenuHistory.viewSidebar.label "Тарихтың бүйір панелін көрсету">
+<!ENTITY appMenuHistory.hideSidebar.label "Тарих бүйір панелін жабу">
 <!ENTITY appMenuHistory.recentHistory.label "Жуырдағы тарихы">
 <!ENTITY appMenuHelp.label "Көмек">
 
@@ -465,6 +500,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Синхрондау ішіне кіру">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Құрылғыларды басқару…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Синхрондалған беттер бүйір панелін қарау">
+<!ENTITY appMenuRemoteTabs.hidesidebar.label "Синхрондалған беттер бүйір панелін жабу">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Басқа құрылғыны байланыстыру">
 
 <!ENTITY appMenuRecentHighlights.label "Соңғы Таңдамалылар">
@@ -879,7 +915,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "Бұл сайтқа арнайы рұқсаттарды берген жоқсыз.">
 <!ENTITY identity.permissionsReloadHint "Өзгерістер іске асуы үшін бұл парақты қайта жүктеуіңіз керек болуы мүмкін.">
 <!ENTITY identity.permissionsPreferences.tooltip "Рұқсаттар баптауларын ашу">
-
 <!ENTITY identity.contentBlockingPreferences.tooltip "Құраманы бұғаттау баптауларын ашу">
 
 
@@ -931,6 +966,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSignIn.label             "&syncBrand.shortName.label; ішіне кіру…">
 <!ENTITY syncSignIn.accesskey         "у">
 <!ENTITY syncSyncNowItem.label        "Қазір синхрондау">
+<!ENTITY syncSyncNowItemSyncing.label "Синхрондау…">
 <!ENTITY syncSyncNowItem.accesskey    "с">
 <!ENTITY syncReAuthItem.label         "&syncBrand.shortName.label; үшін қайта байланысу…">
 <!ENTITY syncReAuthItem.accesskey     "R">
@@ -946,7 +982,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.lwthemes.myThemes "Менің темаларым">
 <!ENTITY customizeMode.lwthemes.recommended "Ұсынылатын">
 <!ENTITY customizeMode.lwthemes.menuManage "Басқару">
-<!ENTITY customizeMode.lwthemes.menuManage.accessKey "м">
+<!ENTITY customizeMode.lwthemes.menuManage.accessKey "Б">
 <!ENTITY customizeMode.lwthemes.menuGetMore "Көбірек темаларды алу">
 <!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "л">
 <!ENTITY customizeMode.overflowList.title2 "Қайта аймалау мәзірі">
@@ -1073,6 +1109,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.acceptButton.accesskey "д">
 <!ENTITY updateAvailable.cancelButton.label "Қазір емес">
 <!ENTITY updateAvailable.cancelButton.accesskey "м">
+
 <!ENTITY updateAvailable.panelUI.label "&brandShorterName; жаңартуын жүктеп алу">
 
 <!ENTITY updateManual.message "&brandShorterName; жаңа нұсқасын жүктеп алыңыз, оны орнатуға көмектесеміз.">
@@ -1133,8 +1170,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "Қосымшаларыңызды <image class='addon-toolbar-icon'/> мәзірінен <image class='addon-addon-icon'/> шерту арқылы басқарыңыз.">
-<!ENTITY addonPostInstall.incognito.label "Бұл кеңейтуге жекелік шолу терезелерінде орындалуға рұқсат ету.">
-<!ENTITY addonPostInstall.incognito.accesskey "а">
+<!ENTITY addonPostInstall.incognito.checkbox.label "Бұл кеңейтуге жекелік шолу терезелерінде орындалуға рұқсат ету">
+<!ENTITY addonPostInstall.incognito.checkbox.accesskey "а">
 
 <!ENTITY addonPrivateBrowsing.header2.label "Жекелік шолу режиміндегі кеңейтулерге өзгеріс">
 <!ENTITY addonPrivateBrowsing.body2.label "&brandShorterName; ішіне қосылған әрбір жаңа кеңейту жекелік шолу терезелерінде жасамайды, сіз оған рұқсат беруіңіз керек.">

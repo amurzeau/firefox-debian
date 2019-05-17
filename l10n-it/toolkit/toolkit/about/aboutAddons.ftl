@@ -77,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = Ultimo aggiornamento
 detail-contributions-description = Lo sviluppatore di questo componente aggiuntivo chiede agli utenti una piccola donazione per contribuire al suo sviluppo.
+detail-contributions-button = Contribuisci
+    .title = Contribuisci allo sviluppo di questo componente aggiuntivo
+    .accesskey = C
 detail-update-type =
     .value = Aggiornamento automatico
 detail-update-default =
@@ -89,7 +92,11 @@ detail-update-manual =
     .label = Disattivato
     .tooltiptext = Non installare automaticamente gli aggiornamenti
 detail-private-browsing-label = Funzionamento in finestre anonime
-detail-private-browsing-description = L’estensione sarà attiva nelle finestre anonime e avrà accesso alle tue attività online. <label data-l10n-name="detail-private-browsing-learn-more">Ulteriori informazioni</label>
+detail-private-browsing-description2 = Se viene garantito il permesso, l’estensione potrà accedere alle tue attività online nelle finestre anonime. <label data-l10n-name="detail-private-browsing-learn-more">Ulteriori informazioni</label>
+detail-private-disallowed-label = Disattivata in finestre anonime
+detail-private-disallowed-description = Questa estensione non funziona in navigazione anonima. <label data-l10n-name="detail-private-browsing-learn-more">Ulteriori informazioni</label>
+detail-private-required-label = Richiede accesso alle finestre anonime
+detail-private-required-description = Questa estensione ha accesso alle tue attività online nelle finestre anonime. <label data-l10n-name="detail-private-browsing-learn-more">Ulteriori informazioni</label>
 detail-private-browsing-on =
     .label = Consenti
     .tooltiptext = Attiva in Navigazione anonima
@@ -146,7 +153,7 @@ private-browsing-description2 =
     funzionamento sia stato consentito nelle impostazioni. Questa modifica è
     stata introdotta per garantire la riservatezza dei dati di navigazione
     quando si utilizzano finestre anonime.
-    <label data-l10n-name="private-browsing-learn-more">Scopri come gestire le impostazioni delle estensioni.</label>
+    <label data-l10n-name="private-browsing-learn-more">Scopri come gestire le impostazioni delle estensioni</label>
 extensions-view-discover =
     .name = Esplora
     .tooltiptext = { extensions-view-discover.name }
@@ -245,15 +252,49 @@ shortcuts-modifier-other = Includi Ctrl o Alt
 shortcuts-invalid = Combinazione non valida
 shortcuts-letter = Inserisci una lettera
 shortcuts-system = Non è possibile sostituire una scorciatoia da tastiera di { -brand-short-name }
+shortcuts-exists = Già utilizzata da { $addon }
 shortcuts-card-expand-button = Visualizza altre { $numberToShow }
 shortcuts-card-collapse-button = Mostra meno scorciatoie
 go-back-button =
     .tooltiptext = Torna indietro
 
 ## Add-on actions
-remove-addon-button = Elimina
+report-addon-button = Segnala
+remove-addon-button = Rimuovi
 disable-addon-button = Disattiva
 enable-addon-button = Attiva
+expand-addon-button = Altre opzioni
 
 addons-enabled-heading = Attivo
 addons-disabled-heading = Disattivato
+
+ask-to-activate-button = Chiedi prima di attivare
+always-activate-button = Attiva sempre
+never-activate-button = Non attivare mai
+
+addon-detail-author-label = Autore
+addon-detail-version-label = Versione
+addon-detail-last-updated-label = Ultimo aggiornamento
+addon-detail-homepage-label = Sito web
+addon-detail-rating-label = Voto
+addon-name-disabled = { $name } (disattivato)
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } recensione
+       *[other] { $numberOfReviews } recensioni
+}
+pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> è stato rimosso.
+pending-uninstall-undo-button = Annulla
+addon-detail-updates-label = Aggiornamento automatico
+addon-detail-updates-radio-default = Predefinito
+addon-detail-updates-radio-on = Attivo
+addon-detail-updates-radio-off = Disattivato
+addon-detail-update-check-label = Controlla aggiornamenti
+install-update-button = Aggiorna
+addon-badge-private-browsing-allowed =
+    .title = Attiva in finestre anonime
+addon-detail-private-browsing-help = Se viene garantito il permesso, l’estensione potrà accedere alle tue attività online nelle finestre anonime. <a data-l10n-name="learn-more">Ulteriori informazioni</a>
+addon-detail-private-browsing-allow = Consenti
+addon-detail-private-browsing-disallow = Non consentire
+available-updates-heading = Aggiornamenti disponibili
+recent-updates-heading = Aggiornamenti recenti

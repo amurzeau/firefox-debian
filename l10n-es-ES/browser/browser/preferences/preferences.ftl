@@ -282,6 +282,7 @@ update-application-check-choose =
 update-application-manual =
     .label = No buscar actualizaciones (no recomendado)
     .accesskey = N
+update-application-warning-cross-user-setting = Esta configuración se aplicará a todas las cuentas de Windows y los perfiles { -brand-short-name } usando esta instalación de { -brand-short-name }.
 update-application-use-service =
     .label = Usar un servicio en segundo plano para instalar actualizaciones
     .accesskey = p
@@ -333,6 +334,9 @@ browsing-search-on-start-typing =
     .accesskey = x
 browsing-cfr-recommendations =
     .label = Recomendar extensiones mientras se navega
+    .accesskey = R
+browsing-cfr-features =
+    .label = Recomendar funciones mientras navega
     .accesskey = R
 browsing-cfr-recommendations-learn-more = Saber más
 
@@ -528,6 +532,7 @@ sync-mobilepromo-single = Conectar otro dispositivo
 sync-mobilepromo-multi = Administrar dispositivos
 sync-connect-another-device = Conectar otro dispositivo
 sync-manage-devices = Administrar dispositivos
+sync-fxa-begin-pairing = Emparejar un dispositivo
 sync-tos-link = Términos del Servicio
 sync-fxa-privacy-notice = Aviso sobre privacidad
 
@@ -655,6 +660,7 @@ addressbar-suggestions-settings = Cambiar preferencias de sugerencias de buscado
 
 content-blocking-header = Bloqueo de contenido
 content-blocking-description = Bloquee el contenido de terceros que le rastrea en la web. Controle cuánto de su actividad en línea se almacena y comparte entre sitios web.
+content-blocking-section-description = Proteja su privacidad mientras navega. Bloquee contenidos invisibles que rastrean los sitios que visita y crean un perfil sobre usted. Bloquear este tipo de contenido puede hacer que las páginas carguen más rápido.
 content-blocking-learn-more = Saber más
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -670,15 +676,24 @@ content-blocking-setting-custom =
 content-blocking-standard-description = Solo bloquea rastreadores conocidos en ventanas privadas.
 content-blocking-standard-desc = Balanceado para protección y rendimiento. Permite algunos rastreadores para que los sitios funcionen adecuadamente.
 content-blocking-strict-desc = Bloquea todos los rastreadores que { -brand-short-name } detecte. Puede causar errores en algunos sitios web.
+content-blocking-strict-description = Una mayor protección puede provocar que algunos sitios dejen de funcionar correctamente.
 content-blocking-custom-desc = Elija qué va a bloquear
 content-blocking-private-trackers = Rastreadores conocidos solo en ventanas privadas
 content-blocking-third-party-cookies = Cookies de rastreo de terceros
+content-blocking-all-cookies = Todas las cookies
+content-blocking-unvisited-cookies = Cookies de sitios no visitados
 content-blocking-all-windows-trackers = Rastreadores conocidos en todas las ventanas
 content-blocking-all-third-party-cookies = Todas las cookies de terceros
+content-blocking-cryptominers = Criptomineros
+content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = ¡Atención!
 content-blocking-warning-desc = Bloquear cookies y rastreadores puede hacer que algunos sitios fallen. Es fácil desactivar el bloqueo para los sitios en los que confías.
 content-blocking-warning-description = Bloquear contenido puede provocar que algunos sitios web dejen de funcionar correctamente. Lo mejor es deshabilitar el bloqueo en los sitios de confianza.
 content-blocking-learn-how = Saber cómo
+content-blocking-reload-description = Tiene que recargar las pestañas para que los cambios surtan efecto.
+content-blocking-reload-tabs-button =
+    .label = Recargar todas las pestañas
+    .accesskey = R
 content-blocking-trackers-label =
     .label = Rastreadores
     .accesskey = T
@@ -692,6 +707,17 @@ content-blocking-tracking-protection-change-block-list = Cambiar la lista de blo
 content-blocking-cookies-label =
     .label = Cookies
     .accesskey = C
+content-blocking-expand-section =
+    .tooltiptext = Más información
+# Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
+content-blocking-cryptominers-label =
+    .label = Criptomineros
+    .accesskey = y
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+content-blocking-fingerprinters-label =
+    .label = Fingerprinters
+    .accesskey = F
 
 ## Privacy Section - Tracking
 
@@ -722,20 +748,12 @@ permissions-notification-link = Saber más
 permissions-notification-pause =
     .label = Pausar notificaciones hasta que { -brand-short-name } se reinicie
     .accesskey = n
-permissions-block-autoplay-media =
-    .label = Bloquear en los sitios web la reproducción automática de medios con sonido
+permissions-block-autoplay-media2 =
+    .label = Bloquear sitios web para que no reproduzcan sonido automáticamente
     .accesskey = B
-permissions-block-autoplay-media-menu = Para sitios web que reproducen sonidos automáticamente
 permissions-block-autoplay-media-exceptions =
     .label = Excepciones…
     .accesskey = E
-autoplay-option-ask =
-    .label = Preguntar siempre
-autoplay-option-allow =
-    .label = Permitir reproducción automática
-autoplay-option-dont =
-    .label = No reproducir de manera automática
-permissions-autoplay-link = Más información
 permissions-block-popups =
     .label = Bloquear ventanas emergentes
     .accesskey = B
@@ -771,10 +789,6 @@ addon-recommendations-link = Saber más
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = La recopilación de datos está deshabilitada en esta configuración de compilación
-collection-browser-errors =
-    .label = Permitir a { -brand-short-name } enviar informes de error del navegador (incluyendo mensajes de error) a { -vendor-short-name }
-    .accesskey = e
-collection-browser-errors-link = Saber más
 collection-backlogged-crash-reports =
     .label = Permitir que { -brand-short-name } envíe los informes de fallos pendientes en su nombre
     .accesskey = r

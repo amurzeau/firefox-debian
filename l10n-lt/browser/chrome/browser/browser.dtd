@@ -64,6 +64,8 @@ but will never be visible at the same time. -->
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "t">
 
+<!-- Tab context menu -->
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -108,7 +110,6 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Paslėptos kortelės">
 
 <!ENTITY  listAllTabs.label      "Pateikti visas korteles">
-
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
 <!ENTITY  allTabsMenu.searchTabs.label       "Ieškoti kortelėse">
@@ -130,6 +131,9 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "Spausdinti…">
 <!ENTITY printCmd.accesskey "S">
 <!ENTITY printCmd.commandkey "p">
+
+<!ENTITY importFromAnotherBrowserCmd.label "Importuoti iš kitos naršyklės…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "I">
 
 <!ENTITY taskManagerCmd.label "Užduočių tvarkytuvė">
 
@@ -213,6 +217,28 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenExit.label "Grįžti iš viso ekrano veiksenos">
 <!ENTITY fullScreenExit.accesskey "v">
 
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "Pasiimkite „Firefox“ su savimi">
+<!ENTITY fxa.signin.description.label "Turėkite savo adresyną, žurnalą, slaptažodžius ir kitas nuostatas visuose savo įrenginiuose.">
+<!ENTITY fxa.signin.button.label "Įjungti „&syncBrand.shortName.label;“…">
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "Patikrinkite savo el. paštą">
+<!ENTITY fxa.unverified.description.label "Prieš sinchronizuodami turėsite patvirtinti savo paskyrą.">
+<!ENTITY fxa.unverified.button.label "Atverti „&syncBrand.shortName.label;“ nuostatas…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "Prisijungėte kaip">
+<!ENTITY fxa.menu.manageAccount.label "Tvarkyti paskyrą…">
+<!ENTITY fxa.menu.syncSettings.label "„&syncBrand.shortName.label;“ nuostatos…">
+<!ENTITY fxa.menu.connectAnotherDevice.label "&syncedTabs.sidebar.connectAnotherDevice;">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "Susieti kitą įrenginį…">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
+
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
      respectively before and after the domain requiring fullscreen.
@@ -229,6 +255,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "Grįžti iš viso ekrano (esc)">
 <!ENTITY leaveDOMFullScreen.label "Grįžti iš viso ekrano">
 <!ENTITY leaveDOMFullScreen.accesskey "G">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.label "Vaizdas vaizde">
+<!ENTITY pictureInPicture.accesskey "z">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -408,6 +440,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.label       "Nuostatos">
 <!ENTITY preferencesCmdUnix.accesskey     "N">
 
+<!ENTITY logins.label                           "Prisijungimai ir slaptažodžiai">
+
 <!ENTITY clearRecentHistory.label               "Valyti žurnalą…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
@@ -437,6 +471,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.clearRecent.label "Valyti žurnalą…">
 <!ENTITY appMenuHistory.restoreSession.label "Atkurti paskiausiąjį seansą">
 <!ENTITY appMenuHistory.viewSidebar.label "Rodyti žurnalo parankinę">
+<!ENTITY appMenuHistory.hideSidebar.label "Slėpti žurnalo parankinę">
 <!ENTITY appMenuHistory.recentHistory.label "Žurnalas">
 <!ENTITY appMenuHelp.label "Žinynas">
 
@@ -465,6 +500,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Prisijungti prie „Sync“">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Tvarkyti įrenginius…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Rodyti sinchronizuotų kortelių parankinę">
+<!ENTITY appMenuRemoteTabs.hidesidebar.label "Slėpti sinchronizuotų kortelių parankinę">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Susieti kitą įrenginį">
 
 <!ENTITY appMenuRecentHighlights.label "Paskiausi akcentai">
@@ -879,7 +915,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "Šiai svetainei nesate suteikę jokių ypatingų leidimų.">
 <!ENTITY identity.permissionsReloadHint "Kad būtų pritaikyti pakeitimai, tinklalapį galimai reikia atsiųsti iš naujo.">
 <!ENTITY identity.permissionsPreferences.tooltip "Atverti leidimų nuostatas">
-
 <!ENTITY identity.contentBlockingPreferences.tooltip "Atverti turinio blokavimo nuostatas">
 
 
@@ -931,6 +966,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSignIn.label             "Jungtis prie „&syncBrand.shortName.label;“…">
 <!ENTITY syncSignIn.accesskey         "Y">
 <!ENTITY syncSyncNowItem.label        "Sinchronizuoti dabar">
+<!ENTITY syncSyncNowItemSyncing.label "Sinchronizuojama…">
 <!ENTITY syncSyncNowItem.accesskey    "S">
 <!ENTITY syncReAuthItem.label         "Iš naujo jungtis prie „&syncBrand.shortName.label;“…">
 <!ENTITY syncReAuthItem.accesskey     "n">
@@ -1073,6 +1109,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.acceptButton.accesskey "P">
 <!ENTITY updateAvailable.cancelButton.label "Ne dabar">
 <!ENTITY updateAvailable.cancelButton.accesskey "N">
+
 <!ENTITY updateAvailable.panelUI.label "Parsiųsti „&brandShorterName;“ naujinimą">
 
 <!ENTITY updateManual.message "Parsisiųskite šviežią „&brandShorterName;“ kopiją, o mes jums padėsime ją įsidiegti.">
@@ -1133,8 +1170,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "Tvarkykite savo priedus paspausdami <image class='addon-addon-icon'/>, esantį <image class='addon-toolbar-icon'/> meniu.">
-<!ENTITY addonPostInstall.incognito.label "Leisti šiam priedui veikti privačiojo naršymo languose.">
-<!ENTITY addonPostInstall.incognito.accesskey "L">
+<!ENTITY addonPostInstall.incognito.checkbox.label "Leisti šiam priedui veikti privačiojo naršymo languose">
+<!ENTITY addonPostInstall.incognito.checkbox.accesskey "L">
 
 <!ENTITY addonPrivateBrowsing.header2.label "Pakeisti į priedus privačioje naršymo languose">
 <!ENTITY addonPrivateBrowsing.body2.label "Visi naujai priedai, kuriuos pridėsite į „&brandShorterName;“, neveiks privačiojo naršymo languose, nebent leisite tai per nuostatas.">

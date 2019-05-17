@@ -3,9 +3,9 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 cfr-doorhanger-extension-heading = 推荐扩展
-cfr-doorhanger-pintab-heading = 试试：固定标签页
+cfr-doorhanger-pintab-heading = 试试看：固定标签页
 cfr-doorhanger-extension-sumo-link =
-    .tooltiptext = 我为什么会看到这个？
+    .tooltiptext = 为什么我会看到这个？
 cfr-doorhanger-extension-cancel-button = 暂时不要
     .accesskey = N
 cfr-doorhanger-extension-ok-button = 立刻添加
@@ -40,14 +40,23 @@ cfr-doorhanger-extension-rating =
 #   $total (Number) - The total number of users using the add-on
 cfr-doorhanger-extension-total-users =
     { $total ->
-       *[other] { $total } 用户
+       *[other] { $total } 个用户
     }
-cfr-doorhanger-pintab-description = 快速打开您最常使用的网站，就算重启也保持将网站打开于标签页中。
+cfr-doorhanger-pintab-description = 固定常用的网站，就算重启也能快捷打开。
 
 ## These messages are steps on how to use the feature and are shown together.
 
 cfr-doorhanger-pintab-step1 = <b>右键点击</b>您想要固定的标签页。
 cfr-doorhanger-pintab-step2 = 在菜单中选择<b>固定标签页</b>。
-cfr-doorhanger-pintab-step3 = 若网站有更新，固定的标签页上会出现蓝色小点。
+cfr-doorhanger-pintab-step3 = 若网站有新动向，固定的标签页上会出现蓝色小点。
 cfr-doorhanger-pintab-animation-pause = 暂停
 cfr-doorhanger-pintab-animation-resume = 恢复
+
+## Firefox Accounts Message
+
+cfr-doorhanger-bookmark-fxa-header = 把书签随身带着走
+cfr-doorhanger-bookmark-fxa-body = 找到好网站了！接下来也把该书签同步至移动设备吧。开始使用 { -fxaccount-brand-name }。
+cfr-doorhanger-bookmark-fxa-link-text = 立即同步书签...
+cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
+    .aria-label = 关闭按钮
+    .title = 关闭

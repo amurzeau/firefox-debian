@@ -261,7 +261,7 @@ applications-type-column =
 applications-action-column =
     .label = Ação
     .accesskey = A
-drm-content-header = Conteúdo DRM (Digital Rights Management - Gerenciamento de Direitos Digitais)
+drm-content-header = Conteúdo DRM (Gerenciamento de Direitos Digitais)
 play-drm-content =
     .label = Reproduzir conteúdo controlado por DRM
     .accesskey = R
@@ -272,15 +272,15 @@ update-application-version = Versão { $version } <a data-l10n-name="learn-more"
 update-history =
     .label = Mostrar histórico de atualizações…
     .accesskey = h
-update-application-allow-description = Permitir que o { -brand-short-name }
+update-application-allow-description = Permitir ao { -brand-short-name }
 update-application-auto =
     .label = Instalar atualizações automaticamente (recomendado)
     .accesskey = A
 update-application-check-choose =
-    .label = Busque atualizações, mas você decide se instala
+    .label = Verificar atualizações, mas você decide se instala
     .accesskey = c
 update-application-manual =
-    .label = Nunca busque atualizações (não recomendado)
+    .label = Nunca verificar atualizações (não recomendado)
     .accesskey = N
 update-application-warning-cross-user-setting = Esta configuração se aplicará a todas as contas do Windows e perfis do { -brand-short-name } que usam esta instalação do { -brand-short-name }.
 update-application-use-service =
@@ -343,7 +343,7 @@ browsing-cfr-recommendations-learn-more = Saiba mais
 ## General Section - Proxy
 
 network-settings-title = Configurações de rede
-network-proxy-connection-description = Configure como o { -brand-short-name } se conecta à Internet.
+network-proxy-connection-description = Configure como o { -brand-short-name } se conecta à internet.
 network-proxy-connection-learn-more = Saiba mais
 network-proxy-connection-settings =
     .label = Configurar conexão…
@@ -542,7 +542,7 @@ privacy-header = Privacidade do navegador
 
 ## Privacy Section - Forms
 
-logins-header = Logins e Senhas
+logins-header = Contas e Senhas
 forms-ask-to-save-logins =
     .label = Perguntar se deve salvar contas e senhas de acesso de sites
     .accesskey = r
@@ -574,9 +574,9 @@ history-header = Histórico
 history-remember-label = O { -brand-short-name } irá
     .accesskey = i
 history-remember-option-all =
-    .label = Memorizar tudo
+    .label = Memorizar todo o histórico
 history-remember-option-never =
-    .label = Nunca memorizar
+    .label = Nunca memorizar o histórico
 history-remember-option-custom =
     .label = Usar minhas configurações
 history-remember-description = O { -brand-short-name } memorizará seu histórico de navegação, downloads, formulários e pesquisas.
@@ -630,7 +630,7 @@ sitedata-option-block-unvisited =
 sitedata-option-block-all-third-party =
     .label = Todos os cookies de terceiros (pode atrapalhar alguns sites)
 sitedata-option-block-all =
-    .label = Todos os cookies (atrapalhará vários sites)
+    .label = Todos os cookies (atrapalha vários sites)
 sitedata-clear =
     .label = Limpar dados…
     .accesskey = L
@@ -660,6 +660,7 @@ addressbar-suggestions-settings = Alterar preferências de sugestões de mecanis
 
 content-blocking-header = Bloqueio de conteúdo
 content-blocking-description = Bloqueie conteúdos de terceiros que rastreiam você pela web. Controle quanto da sua atividade online é armazenado e compartilhado entre sites.
+content-blocking-section-description = Proteja sua privacidade enquanto navega. Bloqueie conteúdo invisível que rastreia os sites que você visita e traça seu perfil. Bloquear parte deste conteúdo pode fazer com que algumas páginas sejam carregadas mais rápido.
 content-blocking-learn-more = Saiba mais
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -672,18 +673,27 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Personalizado
     .accesskey = z
-content-blocking-standard-description = Só bloqueia rastreadores conhecidos em janelas privativas.
-content-blocking-standard-desc = Balanceado entre proteção e desempenho. Permite alguns rastreadores, para que a maioria dos sites funcione adequadamente.
+content-blocking-standard-description = Bloqueia somente rastreadores conhecidos em janelas privativas.
+content-blocking-standard-desc = Balanceado entre proteção e desempenho. Permite alguns rastreadores para que a maioria dos sites possa funcionar corretamente.
 content-blocking-strict-desc = Bloqueia todos os rastreadores que o { -brand-short-name } detecta. Pode atrapalhar alguns sites.
+content-blocking-strict-description = Proteção mais forte, pode atrapalhar alguns sites.
 content-blocking-custom-desc = Escolha o que bloquear.
-content-blocking-private-trackers = Rastreadores conhecidos, somente em janelas privativas
+content-blocking-private-trackers = Rastreadores conhecidos, só em janelas privativas
 content-blocking-third-party-cookies = Cookies rastreadores de terceiros
+content-blocking-all-cookies = Todos os cookies
+content-blocking-unvisited-cookies = Cookies de sites não visitados
 content-blocking-all-windows-trackers = Rastreadores conhecidos, em todas as janelas
 content-blocking-all-third-party-cookies = Todos os cookies de terceiros
+content-blocking-cryptominers = Criptomineradores
+content-blocking-fingerprinters = Fingerprinters (rastreadores de "impressões digitais")
 content-blocking-warning-title = Atenção!
 content-blocking-warning-desc = Bloquear cookies e rastreadores pode atrapalhar alguns sites. É fácil desativar o bloqueio em sites que você confia.
 content-blocking-warning-description = O bloqueio de conteúdo pode fazer alguns sites não funcionarem direito. É fácil desativar o bloqueio em sites que você confia.
 content-blocking-learn-how = Saiba como
+content-blocking-reload-description = É preciso recarregar as abas para aplicar essas mudanças.
+content-blocking-reload-tabs-button =
+    .label = Recarregar todas as abas
+    .accesskey = R
 content-blocking-trackers-label =
     .label = Rastreadores
     .accesskey = t
@@ -697,15 +707,17 @@ content-blocking-tracking-protection-change-block-list = Alterar lista de bloque
 content-blocking-cookies-label =
     .label = Cookies
     .accesskey = C
+content-blocking-expand-section =
+    .tooltiptext = Mais informações
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
-    .label = Cryptomineradores
-    .accesskey = y
+    .label = Criptomineradores
+    .accesskey = i
 # Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
 # that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
 content-blocking-fingerprinters-label =
-    .label = Rastreadores de "impressões digitais"
-    .accesskey = m
+    .label = Fingerprinters (rastreadores de "impressões digitais")
+    .accesskey = F
 
 ## Privacy Section - Tracking
 
@@ -736,23 +748,12 @@ permissions-notification-link = Saiba mais
 permissions-notification-pause =
     .label = Pausar as notificações até reiniciar o { -brand-short-name }
     .accesskey = n
-permissions-block-autoplay-media =
-    .label = Bloquear reprodução automática de mídia com som em sites
-    .accesskey = B
-permissions-block-autoplay-media-menu = Para sites que reproduzem som automaticamente
 permissions-block-autoplay-media2 =
     .label = Bloquear nos sites a reprodução automática de som
     .accesskey = B
 permissions-block-autoplay-media-exceptions =
     .label = Exceções…
     .accesskey = E
-autoplay-option-ask =
-    .label = Sempre perguntar
-autoplay-option-allow =
-    .label = Permitir reprodução automática
-autoplay-option-dont =
-    .label = Não reproduzir automaticamente
-permissions-autoplay-link = Saiba mais
 permissions-block-popups =
     .label = Bloquear janelas popup
     .accesskey = B
@@ -783,17 +784,13 @@ collection-studies =
     .label = Permitir que o { -brand-short-name } instale e execute pesquisas
 collection-studies-link = Ver pesquisas do { -brand-short-name }
 addon-recommendations =
-    .label = Permitir ao { -brand-short-name } fazer recomendações personalizadas de extensões
+    .label = Permitir que o { -brand-short-name } faça recomendações personalizadas de extensões
 addon-recommendations-link = Saiba mais
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
-collection-health-report-disabled = O relatório de dados está desabilitado nesta configuração
-collection-browser-errors =
-    .label = Permitir que o { -brand-short-name } envie relatórios de erro do navegador (incluindo mensagens de erro) para a { -vendor-short-name }
-    .accesskey = b
-collection-browser-errors-link = Saiba mais
+collection-health-report-disabled = O relatório de dados está desativado nesta configuração
 collection-backlogged-crash-reports =
-    .label = Permitir ao { -brand-short-name } enviar relatórios de travamento em seu nome
+    .label = Permitir que o { -brand-short-name } envie relatórios de travamento em seu nome
     .accesskey = e
 collection-backlogged-crash-reports-link = Saiba mais
 
@@ -829,10 +826,10 @@ certs-enable-ocsp =
     .label = Consultar servidores OCSP para confirmar a validade atual dos certificados
     .accesskey = o
 certs-view =
-    .label = Ver Certificados…
-    .accesskey = C
+    .label = Ver certificados…
+    .accesskey = c
 certs-devices =
-    .label = Dispositivos de Segurança…
+    .label = Dispositivos de segurança…
     .accesskey = D
 space-alert-learn-more-button =
     .label = Saiba mais

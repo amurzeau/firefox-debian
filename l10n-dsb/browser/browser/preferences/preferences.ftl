@@ -452,7 +452,7 @@ containers-remove-button =
 
 sync-signedout-caption = Wzejśo swój web sobu
 sync-signedout-description = Synchronizěrujśo swóje cytańske znamjenja, historiju, rejtarki, gronidła, dodanki a nastajenja mjazy wšymi wašymi rědami.
-sync-signedout-account-title = Z { -fxaccount-brand-name } zwězaś
+sync-signedout-account-title = Zwězaś z: { -fxaccount-brand-name }
 sync-signedout-account-create = Njamaśo konto? Zachopśo
     .accesskey = k
 sync-signedout-account-signin =
@@ -466,7 +466,7 @@ sync-signedout-account-signin =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = Firefox ześěgnuś za <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> abo <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a>, aby ze swójim mobilnym rědom synchronizěrował.
+sync-mobile-promo = Firefox za <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> abo <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> ześěgnuś, aby ze swójim mobilnym rědom synchronizěrował.
 
 ## Sync Section - Signed in
 
@@ -666,6 +666,7 @@ addressbar-suggestions-settings = Nastajenja za naraźenja pytnice změniś
 
 content-blocking-header = Blokěrowanje wopśimjeśa
 content-blocking-description = Blokěrujśo wopśimjeśe tśeśich, kótarež wam pó webje slědujo. Kontrolěrujśo, kak cesto se waša aktiwita online składujo a mjazy websedłami źěli.
+content-blocking-section-description = Šćitajśo swóju priwatnosć, mjaztym až pśeglědujośo. Blokěrujśo njewidobne wopśimjeśe, kótarež sedła slědujo, ku kótarymž se woglědujośo, a profil wó was twóri. Gaž take wopśimjeśe blokěrujośo, daju se boki snaź malsnjej zacytaś.
 content-blocking-learn-more = Dalšne informacije
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -681,15 +682,24 @@ content-blocking-setting-custom =
 content-blocking-standard-description = Blokěrujo jano znate pśeslědowaki w priwatnych woknach.
 content-blocking-standard-desc = Wurownany za šćit a wugbaśe. Dowólujo někotare pślědowaki, aby websedła pórědnje funkcioněrowali.
 content-blocking-strict-desc = Blokuje wšě přesćěhowaki, kotrež { -brand-short-name } namaka. Tohodla njemóhli někotre websydła korektnje fungować.
+content-blocking-strict-description = Mócnjejšy šćit, móžo zawinowaś, až někotare sedła wěcej njefunkcioněruju.
 content-blocking-custom-desc = Wubjeŕśo, což cośo blokěrowaś.
 content-blocking-private-trackers = Znate pśeslědowaki w priwatnych woknach
 content-blocking-third-party-cookies = Slědujuce cookiejei tśeśich
+content-blocking-all-cookies = Wšykne cookieje
+content-blocking-unvisited-cookies = Cookieje z njewoglědanych sedłow
 content-blocking-all-windows-trackers = Znate pśeslědowaki we wšych woknach
 content-blocking-all-third-party-cookies = Wšykne cookieje tśeśich
+content-blocking-cryptominers = Kryptokopanje
+content-blocking-fingerprinters = Palcowe wótśišće
 content-blocking-warning-title = Glědajśo!
 content-blocking-warning-desc = Gaž cookieje a pśeslědowaki blokěrujośo, njemógli někotare websedła korektnje funkcioněrowaś. Jo lažko, blokěrowanje sedłow, kótarymž dowěriśo, znjemóžniś.
 content-blocking-warning-description = Blokěrowanje wopśimjeśa móžo zawinowaś, až někotare websedła wěcej njefunkcioněruju. Jo lažko, blokěrowanje za sedła znjemóžniś, kótarymž dowěriśo.
 content-blocking-learn-how = Zgóńśo kak
+content-blocking-reload-description = Musyśo swóje rejtarki znowego zacytaś, aby toś te změny nałožył.
+content-blocking-reload-tabs-button =
+    .label = Wšykne rejtarki znowego zacytaś
+    .accesskey = W
 content-blocking-trackers-label =
     .label = Pśeslědowaki
     .accesskey = P
@@ -703,6 +713,8 @@ content-blocking-tracking-protection-change-block-list = Blokěrowańsku lisćin
 content-blocking-cookies-label =
     .label = Cookieje
     .accesskey = C
+content-blocking-expand-section =
+    .tooltiptext = Dalšne informacije
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
     .label = Kryptokopanje
@@ -742,23 +754,12 @@ permissions-notification-link = Dalšne informacije
 permissions-notification-pause =
     .label = Z powěźeńkami pśestaś, daniž se { -brand-short-name } znowego njestartujo
     .accesskey = z
-permissions-block-autoplay-media =
-    .label = Websedłam zakazaś, medije ze zukom wótgraś
-    .accesskey = z
-permissions-block-autoplay-media-menu = Za websedła, kótarež zuk awtomatiski wótgrawaju
 permissions-block-autoplay-media2 =
     .label = Websedłam awtomatiske wótgrawanje zuka zawoboraś
     .accesskey = b
 permissions-block-autoplay-media-exceptions =
     .label = Wuwześa…
     .accesskey = u
-autoplay-option-ask =
-    .label = Pśecej se pšašaś
-autoplay-option-allow =
-    .label = Awtomatiske wótgrawanje dowóliś
-autoplay-option-dont =
-    .label = Awtomatiski njewótgraś
-permissions-autoplay-link = Dalšne informacije
 permissions-block-popups =
     .label = Wuskokujuce wokno blokěrowaś
     .accesskey = k
@@ -794,10 +795,6 @@ addon-recommendations-link = Dalšne informacije
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Datowe rozpšawjenje jo znjemóžnjone za toś tu programowu konfiguraciju
-collection-browser-errors =
-    .label = { -brand-short-name } dowóliś, { -vendor-short-name } zmólkowe rozpšawy (inkluziwnje zmólkowe powěźeńki) pósłaś
-    .accesskey = z
-collection-browser-errors-link = Dalšne informacije
 collection-backlogged-crash-reports =
     .label = { -brand-short-name } dowóliś, njewobźěłane wowaleńske rozpšawy we wašom mjenju pósłaś
     .accesskey = r

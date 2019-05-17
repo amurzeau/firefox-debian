@@ -96,6 +96,7 @@ These two items have the same accesskey but will never be visible at the same ti
 <!ENTITY  moveToNewWindow.accesskey          "W">
 <!ENTITY  reopenInContainer.label            "कंटेनर मध्ये पुन्हा उघडा">
 <!ENTITY  reopenInContainer.accesskey        "e">
+<!ENTITY  bookmarkTab.label                  "टॅब ला वाचनखूण लावा">
 <!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkTab.accesskey              "B">
@@ -106,7 +107,6 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "लपवलेले टॅब्स">
 
 <!ENTITY  listAllTabs.label      "सर्व टॅब्स्ची सूची">
-
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
 <!ENTITY  allTabsMenu.searchTabs.label       "टॅब शोधा">
@@ -128,6 +128,8 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "छपाई करा…">
 <!ENTITY printCmd.accesskey "P">
 <!ENTITY printCmd.commandkey "p">
+
+<!ENTITY importFromAnotherBrowserCmd.accesskey "I">
 
 <!ENTITY taskManagerCmd.label "कार्य व्यवस्थापक">
 
@@ -211,6 +213,16 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenExit.label "पडदाभर मोडपासून बाहेर पडा">
 <!ENTITY fullScreenExit.accesskey "F">
 
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
      respectively before and after the domain requiring fullscreen.
@@ -227,6 +239,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "पूर्ण स्क्रीनमधून बाहेर पडा (esc)">
 <!ENTITY leaveDOMFullScreen.label "पडदाभरपासून बाहेर पडा">
 <!ENTITY leaveDOMFullScreen.accesskey "u">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.accesskey "u">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -403,6 +420,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmd2.accesskey     "O">
 <!ENTITY preferencesCmdUnix.label       "प्राधान्यता">
 <!ENTITY preferencesCmdUnix.accesskey     "n">
+
+<!ENTITY logins.label                           "लॉगिन आणि पासवर्ड">
 
 <!ENTITY clearRecentHistory.label               "ताजा इतिहास नष्ट करा…">
 
@@ -608,7 +627,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY viewFrameInfoCmd.accesskey   "I">
 <!ENTITY reloadImageCmd.label         "प्रतिमा पुन्हा लोड करा">
 <!ENTITY reloadImageCmd.accesskey     "R">
-<!ENTITY viewImageCmd.label           "प्रतिमा दृष्य">
+<!ENTITY viewImageCmd.label           "प्रतिमा पहा">
 <!ENTITY viewImageCmd.accesskey       "I">
 <!ENTITY viewImageInfoCmd.label       "प्रतिमा माहितीचे दृष्य">
 <!ENTITY viewImageInfoCmd.accesskey   "f">
@@ -656,7 +675,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY saveVideoCmd.accesskey       "v">
 <!ENTITY saveAudioCmd.label           "ऑडिओ असे साठवा…">
 <!ENTITY saveAudioCmd.accesskey       "v">
-<!ENTITY emailImageCmd.label          "ईमेल प्रतिमा…">
+<!ENTITY emailImageCmd.label          "प्रतिमा ईमेल करा…">
 <!ENTITY emailImageCmd.accesskey      "g">
 <!ENTITY emailVideoCmd.label          "व्हिडिओ ईमेल करा…">
 <!ENTITY emailVideoCmd.accesskey      "a">
@@ -671,9 +690,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 Location" and "Copy Email Address" should be the same if possible; the two
 context menu items are mutually exclusive. -->
 <!ENTITY copyLinkCmd.accesskey        "a">
-<!ENTITY copyImageCmd.label           "प्रतिमा ठिकाणाचे प्रत बनवा">
+<!ENTITY copyImageCmd.label           "प्रतिमा ठिकाणाची प्रत बनवा">
 <!ENTITY copyImageCmd.accesskey       "o">
-<!ENTITY copyImageContentsCmd.label   "प्रतिमाचे प्रत बनवा">
+<!ENTITY copyImageContentsCmd.label   "प्रतिमेची प्रत बनवा">
 <!ENTITY copyImageContentsCmd.accesskey  "y">
 <!ENTITY copyVideoURLCmd.label        "व्हिडीओ ठिकाणाचे प्रत बनवा">
 <!ENTITY copyVideoURLCmd.accesskey    "o">
@@ -876,7 +895,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsPreferences.tooltip "परवानग्या प्राधान्ये उघडा">
 
 
-
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
 <!ENTITY tabsToolbar.label "ब्राउझर टॅब्स्">
@@ -989,6 +1007,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.cookies.label "कुकीज">
 <!ENTITY contentBlocking.cookiesView.label "कुकीज आणि साईट माहिती">
 
+
+
 <!ENTITY contentBlocking.openBreakageReportView2.label "समस्या नोंदवा">
 <!ENTITY contentBlocking.breakageReportView.label "समस्या अहवाल द्या">
 <!ENTITY contentBlocking.breakageReportView.learnMore "अधिक जाणून घ्या">
@@ -1000,6 +1020,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- LOCALIZATION NOTE (trackingProtection.unblock5.label, trackingProtection.unblock5.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in NON-private browsing mode. -->
+<!ENTITY trackingProtection.unblock5.label "या साइटसाठी अवरोधित करणे बंद करा">
 <!ENTITY trackingProtection.unblock5.accesskey "T">
 <!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate6.label, trackingProtection.unblockPrivate6.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
@@ -1115,6 +1136,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "<image class='addon-toolbar-icon'/> या मेनूत <image class='addon-addon-icon'/> वर क्लिक करून ऍड-ऑन व्यवस्थापित करा.">
+<!ENTITY addonPostInstall.incognito.checkbox.accesskey "A">
 
 <!ENTITY addonPrivateBrowsing.okButton.label "ठीक आहे, समजले">
 <!ENTITY addonPrivateBrowsing.okButton.accesskey "O">

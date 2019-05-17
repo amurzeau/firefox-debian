@@ -77,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = Poslední aktualizace
 detail-contributions-description = Vývojář tohoto doplňku vás žádá o malý příspěvek, kterým pomůžete podpořit další vývoj.
+detail-contributions-button = Přispět
+    .title = Přispějte a pomozte s vývojem tohoto rozšíření
+    .accesskey = P
 detail-update-type =
     .value = Automatické aktualizace
 detail-update-default =
@@ -90,7 +93,14 @@ detail-update-manual =
     .tooltiptext = Aktualizace se instalují manuálně
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Povolit v anonymních oknech
-detail-private-browsing-description = Rozšíření běžící v anonymních oknech mají přístup také k vaší aktivitě na internetu. <label data-l10n-name="detail-private-browsing-learn-more">Zjistit více</label>
+detail-private-browsing-description2 = Zde můžete tomuto rozšíření povolit běh a přístup k vaší aktivitě na internetu v anonymních oknech. <label data-l10n-name="detail-private-browsing-learn-more">Zjistit více</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = Není povoleno v anonymních oknech
+detail-private-disallowed-description = Toto rozšíření v anonymních oknech nefunguje. <label data-l10n-name="detail-private-browsing-learn-more">Zjistit více</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Vyžaduje přístup k anonymním oknům
+detail-private-required-description = Toto rozšíření má přístup k vašim aktivitám v anonymních oknech. <label data-l10n-name="detail-private-browsing-learn-more">Zjistit více</label>
 detail-private-browsing-on =
     .label = Povolit
     .tooltiptext = Povolí rozšíření v anonymních oknech
@@ -141,7 +151,7 @@ legacy-extensions =
 legacy-extensions-description = Tato rozšíření byla zakázána, protože neodpovídají současným standardům aplikace { -brand-short-name }. <label data-l10n-name="legacy-learn-more">Zjistit více o změnách pro doplňky</label>
 private-browsing-description2 =
     Fungování rozšíření pro aplikaci { -brand-short-name } se v anonymním prohlížení mění. Všechna nově nainstalovaná rozšíření, nebudou ve výchozím nastavení v anonymních oknech fungovat, pokud jim to nepovolíte. Rozšíření tak nebudou mít bez vašeho vědomí přístup k tomu, co v anonymním prohlížení děláte.
-    <label data-l10n-name="private-browsing-learn-more">Jak na nastavení rozšíření.</label>
+    <label data-l10n-name="private-browsing-learn-more">Jak na nastavení rozšíření</label>
 extensions-view-discover =
     .name = Získání doplňků
     .tooltiptext = Získejte další zajímavé doplňky
@@ -238,6 +248,10 @@ shortcuts-modifier-other = Zahrnout Ctrl nebo Alt
 shortcuts-invalid = Neplatná kombinace kláves
 shortcuts-letter = Napište písmeno
 shortcuts-system = Nelze přepsat zkratku aplikace { -brand-short-name }
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Tuto zkratku už používá { $addon }
 shortcuts-card-expand-button =
     { $numberToShow ->
         [one] Zobrazit další
@@ -250,8 +264,53 @@ go-back-button =
 
 ## Add-on actions
 
+report-addon-button = Nahlásit
 remove-addon-button = Odebrat
 disable-addon-button = Zakázat
 enable-addon-button = Povolit
+expand-addon-button = Více možností
 addons-enabled-heading = Povoleno
 addons-disabled-heading = Zakázáno
+ask-to-activate-button = Spustit na vyžádání
+always-activate-button = Vždy spustit
+never-activate-button = Nespouštět
+addon-detail-author-label = Autor
+addon-detail-version-label = Verze
+addon-detail-last-updated-label = Poslední aktualizace
+addon-detail-homepage-label = Domovská stránka
+addon-detail-rating-label = Hodnocení
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (zakázáno)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } recenze
+        [few] { $numberOfReviews } recenze
+       *[other] { $numberOfReviews } recenzí
+    }
+
+## Pending uninstall message bar
+
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = Doplněk <span data-l10n-name="addon-name">{ $addon }</span> byl odstraněn.
+pending-uninstall-undo-button = Vrátit zpět
+addon-detail-updates-label = Automatické aktualizace
+addon-detail-updates-radio-default = Výchozí nastavení
+addon-detail-updates-radio-on = Zapnuty
+addon-detail-updates-radio-off = Vypnuty
+addon-detail-update-check-label = Zkontrolovat aktualizace
+install-update-button = Aktualizovat
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Povoleno v anonymních oknech
+addon-detail-private-browsing-help = Povolená rozšíření mají přístup k vašim online aktivitám i během anonymního prohlížení. <a data-l10n-name="learn-more">Zjistit více</a>
+addon-detail-private-browsing-allow = Povolit
+addon-detail-private-browsing-disallow = Nepovolit
+available-updates-heading = Dostupné aktualizace
+recent-updates-heading = Aktualizováno

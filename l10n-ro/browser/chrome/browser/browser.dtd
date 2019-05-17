@@ -64,6 +64,8 @@ but will never be visible at the same time. -->
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "k">
 
+<!-- Tab context menu -->
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -108,7 +110,6 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "File ascunse">
 
 <!ENTITY  listAllTabs.label      "Listează toate filele">
-
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
 <!ENTITY  allTabsMenu.searchTabs.label       "Caută în file">
@@ -130,6 +131,9 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "Tipărește…">
 <!ENTITY printCmd.accesskey "P">
 <!ENTITY printCmd.commandkey "p">
+
+<!ENTITY importFromAnotherBrowserCmd.label "Importă din alt browser…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "I">
 
 <!ENTITY taskManagerCmd.label "Manager de activități">
 
@@ -201,7 +205,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY fxaSignIn.label "Autentifică-te în &syncBrand.shortName.label;">
 <!ENTITY fxaSignedIn.tooltip "Deschide preferințele pentru &syncBrand.shortName.label;">
-<!ENTITY fxaSignInError.label "Reconectează-te la &syncBrand.shortName.label;">
+<!ENTITY fxaSignInError.label "Reconectează-te în &syncBrand.shortName.label;">
 <!ENTITY fxaUnverified.label "Verifică-ți contul">
 
 
@@ -212,6 +216,28 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenAutohide.accesskey "H">
 <!ENTITY fullScreenExit.label "Ieși din modul de ecran complet">
 <!ENTITY fullScreenExit.accesskey "F">
+
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "Ia Firefox cu tine">
+<!ENTITY fxa.signin.description.label "Ia cu tine marcajele, istoricul, parolele și alte setări pe toate dispozitivele.">
+<!ENTITY fxa.signin.button.label "Activează &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "Verifică-ți email-ul">
+<!ENTITY fxa.unverified.description.label "Va trebui să îți verifici contul înainte de a putea sincroniza.">
+<!ENTITY fxa.unverified.button.label "Deschide setările pentru &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "Autentificat ca">
+<!ENTITY fxa.menu.manageAccount.label "Gestionează contul…">
+<!ENTITY fxa.menu.syncSettings.label "Setări pentru &syncBrand.shortName.label;…">
+<!ENTITY fxa.menu.connectAnotherDevice.label "&syncedTabs.sidebar.connectAnotherDevice;">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "Conectează alt dispozitiv…">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
@@ -229,6 +255,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "Ieși din modul de ecran complet (esc)">
 <!ENTITY leaveDOMFullScreen.label "Ieși din modul de ecran complet">
 <!ENTITY leaveDOMFullScreen.accesskey "u">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.label "Picture-in-Picture">
+<!ENTITY pictureInPicture.accesskey "u">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -282,7 +314,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "Deschide panoul cu mesaje despre stocarea în modul offline">
 <!ENTITY urlbar.passwordNotificationAnchor.tooltip        "Deschide panoul cu mesaje despre salvarea parolelor">
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Gestionează utilizarea pluginurilor">
-<!ENTITY urlbar.webNotificationAnchor.tooltip             "Schimbă dacă nu mai dorești notificări de la acest site">
+<!ENTITY urlbar.webNotificationAnchor.tooltip             "Schimbă dacă să mai primești notificări de la acest site sau nu">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Stochează date în stocarea persistentă">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Browserul este controlat de la distanță">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Deschide panoul de autentificare web">
@@ -408,6 +440,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.label       "Preferințe">
 <!ENTITY preferencesCmdUnix.accesskey     "n">
 
+<!ENTITY logins.label                           "Date de autentificare și parole">
+
 <!ENTITY clearRecentHistory.label               "Șterge istoricul recent…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
@@ -437,6 +471,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.clearRecent.label "Șterge istoricul recent…">
 <!ENTITY appMenuHistory.restoreSession.label "Restaurează sesiunea anterioară">
 <!ENTITY appMenuHistory.viewSidebar.label "Vezi bara laterală cu istoricul">
+<!ENTITY appMenuHistory.hideSidebar.label "Ascunde bara laterală de istoric">
 <!ENTITY appMenuHistory.recentHistory.label "Istoric recent">
 <!ENTITY appMenuHelp.label "Ajutor">
 
@@ -454,7 +489,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.showAll.tooltip "Afișează toate filele de pe acest dispozitiv">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
-<!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Pornește sincronizarea filelor pentru a vedea o listă cu file de pe celelalte dispozitive.">
+<!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Activează sincronizarea filelor pentru a vedea o listă cu file de pe celelalte dispozitive.">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
@@ -465,6 +500,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Autentifică-te la Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Gestionează dispozitivele…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Vezi bara laterală cu file sincronizate">
+<!ENTITY appMenuRemoteTabs.hidesidebar.label "Ascunde bara laterală cu file sincronizate">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Conectează alt dispozitiv">
 
 <!ENTITY appMenuRecentHighlights.label "Evidențieri recente">
@@ -574,7 +610,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (changeSearchSettings.button):
      This string won't wrap, so if the translated string is longer,
      consider translating it as if it said only "Search Settings". -->
-<!ENTITY changeSearchSettings.button  "Setări de căutare">
+<!ENTITY changeSearchSettings.button  "Schimbă setările de căutare">
 <!ENTITY changeSearchSettings.tooltip "Schimbă setările de căutare">
 
 <!ENTITY searchInNewTab.label         "Caută într-o filă nouă">
@@ -841,7 +877,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.connectionFile "Pagina este stocată pe calculator.">
 <!ENTITY identity.connectionVerified2 "Ești conectat în mod securizat la acest site, deținut de:">
 <!ENTITY identity.connectionInternal "Aceasta este o pagină securizată &brandShortName;.">
-<!ENTITY identity.extensionPage "Pagina a fost încărcată de la o extensie.">
+<!ENTITY identity.extensionPage "Această pagină a fost încărcată de la o extensie.">
 <!ENTITY identity.insecureLoginForms2 "Datele de autentificare introduse pe această pagină ar putea fi compromise.">
 
 <!-- Strings for connection state warnings. -->
@@ -879,7 +915,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "Nu ai acordat acestui site nicio permisiune specială.">
 <!ENTITY identity.permissionsReloadHint "Ar putea fi nevoie să reîncarci pagina pentru aplicarea modificărilor.">
 <!ENTITY identity.permissionsPreferences.tooltip "Deschide preferințele pentru permisiuni">
-
 <!ENTITY identity.contentBlockingPreferences.tooltip "Deschide preferințele pentru blocarea de conținut">
 
 
@@ -896,10 +931,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Autentifică-te pentru a vedea o listă de file de pe celelalte dispozitive.">
 <!ENTITY syncedTabs.sidebar.unverified.label   "Contul tău trebuie verificat.">
 <!ENTITY syncedTabs.sidebar.notabs.label       "Nicio filă deschisă">
-<!ENTITY syncedTabs.sidebar.openprefs.label    "Deschide preferințele &syncBrand.shortName.label;">
+<!ENTITY syncedTabs.sidebar.openprefs.label    "Deschide preferințele pentru &syncBrand.shortName.label;">
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
-<!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Pornește sincronizarea filelor pentru a vedea o listă cu file de pe celelalte dispozitive.">
+<!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Activează sincronizarea filelor pentru a vedea o listă cu file de pe celelalte dispozitive.">
 <!ENTITY syncedTabs.sidebar.searchPlaceholder  "Caută în filele sincronizate">
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Conectează alt dispozitiv">
 
@@ -926,13 +961,14 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncedTabs.context.managedevices.accesskey          "D">
 
 
-<!ENTITY syncBrand.shortName.label    "Sincronizare">
+<!ENTITY syncBrand.shortName.label    "Sync">
 
-<!ENTITY syncSignIn.label             "Autentifică-te la &syncBrand.shortName.label;…">
+<!ENTITY syncSignIn.label             "Autentifică-te în &syncBrand.shortName.label;…">
 <!ENTITY syncSignIn.accesskey         "Y">
 <!ENTITY syncSyncNowItem.label        "Sincronizează acum">
+<!ENTITY syncSyncNowItemSyncing.label "Se sincronizează…">
 <!ENTITY syncSyncNowItem.accesskey    "S">
-<!ENTITY syncReAuthItem.label         "Reconectare la &syncBrand.shortName.label;…">
+<!ENTITY syncReAuthItem.label         "Reconectează-te în &syncBrand.shortName.label;">
 <!ENTITY syncReAuthItem.accesskey     "R">
 <!ENTITY syncToolbarButton.label      "Sincronizare">
 
@@ -954,23 +990,23 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.uidensity "Densitate">
 <!-- LOCALIZATION NOTE (customizeMode.uidensity.menuNormal.*):
      “Normal” is displayed in the Customize screen, under the Density menu. -->
-<!ENTITY customizeMode.uidensity.menuNormal.label "Normal">
-<!ENTITY customizeMode.uidensity.menuNormal.tooltip "Normal">
+<!ENTITY customizeMode.uidensity.menuNormal.label "Normală">
+<!ENTITY customizeMode.uidensity.menuNormal.tooltip "Normală">
 <!ENTITY customizeMode.uidensity.menuNormal.accessKey "N">
 <!-- LOCALIZATION NOTE (customizeMode.uidensity.menuCompact.*):
      “Compact” is displayed in the Customize screen, under the Density menu.
      It’s an adjective (Density -> Compact). -->
-<!ENTITY customizeMode.uidensity.menuCompact.label "Compact">
-<!ENTITY customizeMode.uidensity.menuCompact.tooltip "Compact">
+<!ENTITY customizeMode.uidensity.menuCompact.label "Compactă">
+<!ENTITY customizeMode.uidensity.menuCompact.tooltip "Compactă">
 <!ENTITY customizeMode.uidensity.menuCompact.accessKey "C">
 <!-- LOCALIZATION NOTE (customizeMode.uidensity.menuTouch.*):
      “Touch” is displayed in the Customize screen, under the Density menu.
      It’s an adjective (Density -> Touch), and it means that control layout is
      optimized for touch devices. -->
-<!ENTITY customizeMode.uidensity.menuTouch.label "Tactil">
-<!ENTITY customizeMode.uidensity.menuTouch.tooltip "Tactil">
+<!ENTITY customizeMode.uidensity.menuTouch.label "Tactilă">
+<!ENTITY customizeMode.uidensity.menuTouch.tooltip "Tactilă">
 <!ENTITY customizeMode.uidensity.menuTouch.accessKey "T">
-<!ENTITY customizeMode.uidensity.autoTouchMode.checkbox.label "Folosește tactil pentru modul tabletă">
+<!ENTITY customizeMode.uidensity.autoTouchMode.checkbox.label "Folosește-o pe cea tactilă pentru modul tabletă">
 
 <!ENTITY customizeMode.autoHideDownloadsButton.label "Ascunde automat">
 
@@ -1073,6 +1109,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.acceptButton.accesskey "D">
 <!ENTITY updateAvailable.cancelButton.label "Nu acum">
 <!ENTITY updateAvailable.cancelButton.accesskey "N">
+
 <!ENTITY updateAvailable.panelUI.label "Descarcă actualizarea pentru &brandShorterName;">
 
 <!ENTITY updateManual.message "Descarcă o nouă copie de &brandShorterName; și noi te vom ajuta la instalarea acesteia.">
@@ -1132,11 +1169,14 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- LOCALIZATION NOTE: (addonPostInstallMessage.label):
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
-<!ENTITY addonPostInstallMessage.label "Gestionează suplimentele dând clic pe <image class='addon-addon-icon'/> în meniul <image class='addon-toolbar-icon'/>.">
+<!ENTITY addonPostInstallMessage.label "Gestionează suplimentele dând clic pe <image class='addon-addon-icon'/> în meniu <image class='addon-toolbar-icon'/>.">
+<!ENTITY addonPostInstall.incognito.checkbox.label "Permite acestei extensii să ruleze în ferestre private">
+<!ENTITY addonPostInstall.incognito.checkbox.accesskey "A">
 
-<!ENTITY addonPrivateBrowsing.header.label "Extensii în ferestre private">
-<!ENTITY addonPrivateBrowsing.body.label "Extensiile sunt blocate implicit în ferestrele private. Nu vor funcționa în navigarea privată și nu vor avea acces atunci la activitatea ta online. Poți autoriza separat fiecare extensie pentru rulare în ferestre private prin gestionarea setărilor.">
-<!ENTITY addonPrivateBrowsing.okButton.label "OK, am înțeles">
+<!ENTITY addonPrivateBrowsing.header2.label "Modificare pentru extensii în ferestre private">
+<!ENTITY addonPrivateBrowsing.body2.label "Orice extensii noi pe care le adaugi în &brandShorterName; nu vor funcționa în ferestrele private dacă nu le permiți să o facă din setări.">
+<!ENTITY addonPrivateBrowsing.learnMore.label "Află cum să gestionezi setările pentru extensii">
+<!ENTITY addonPrivateBrowsing.okButton.label "Ok, am înțeles">
 <!ENTITY addonPrivateBrowsing.okButton.accesskey "O">
 <!ENTITY addonPrivateBrowsing.manageButton.label "Gestionează extensiile">
 <!ENTITY addonPrivateBrowsing.manageButton.accesskey "M">

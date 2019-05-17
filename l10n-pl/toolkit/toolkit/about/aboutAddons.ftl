@@ -77,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = Ostatnia aktualizacja
 detail-contributions-description = Autor tego dodatku prosi o wsparcie niewielką kwotą jego dalszego rozwoju.
+detail-contributions-button = Wspomóż
+    .title = Wspomóż rozwój tego dodatku
+    .accesskey = s
 detail-update-type =
     .value = Aktualizacje automatyczne
 detail-update-default =
@@ -90,7 +93,14 @@ detail-update-manual =
     .tooltiptext = Nie instaluj aktualizacji automatycznie
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Działanie w oknach prywatnych
-detail-private-browsing-description = Rozszerzenie będzie działało w oknach prywatnych i miało dostęp do działań użytkownika w Internecie. <label data-l10n-name="detail-private-browsing-learn-more">Więcej informacji</label>
+detail-private-browsing-description2 = Zezwolenie spowoduje, że rozszerzenie będzie miało dostęp do działań użytkownika w Internecie podczas przeglądania w trybie prywatnym. <label data-l10n-name="detail-private-browsing-learn-more">Więcej informacji</label>.
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = Niedozwolone w oknach prywatnych
+detail-private-disallowed-description = To rozszerzenie nie działa podczas przeglądania w trybie prywatnym. <label data-l10n-name="detail-private-browsing-learn-more">Więcej informacji</label>.
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Wymaga dostępu do okien prywatnych
+detail-private-required-description = To rozszerzenie ma dostęp do działań użytkownika w Internecie podczas przeglądania w trybie prywatnym. <label data-l10n-name="detail-private-browsing-learn-more">Więcej informacji</label>.
 detail-private-browsing-on =
     .label = Zezwalaj
     .tooltiptext = Włącz w trybie prywatnym
@@ -241,11 +251,15 @@ shortcuts-modifier-other = Uwzględnij Ctrl lub Alt
 shortcuts-invalid = Nieprawidłowe połączenie
 shortcuts-letter = Wpisz literę
 shortcuts-system = Nie można zastąpić skrótu przeglądarki { -brand-short-name }
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Jest już używany przez dodatek { $addon }
 shortcuts-card-expand-button =
     { $numberToShow ->
         [one] { $numberToShow } więcej
         [few] { $numberToShow } więcej
-       *[other] { $numberToShow } więcej
+       *[many] { $numberToShow } więcej
     }
 shortcuts-card-collapse-button = Mniej
 go-back-button =
@@ -256,5 +270,24 @@ go-back-button =
 remove-addon-button = Usuń
 disable-addon-button = Wyłącz
 enable-addon-button = Włącz
+expand-addon-button = Więcej opcji
 addons-enabled-heading = Włączone
 addons-disabled-heading = Wyłączone
+addon-detail-author-label = Autor
+addon-detail-version-label = Wersja
+addon-detail-last-updated-label = Ostatnia aktualizacja
+addon-detail-homepage-label = Strona domowa
+addon-detail-rating-label = Ocena
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (wyłączone)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } recenzja
+        [few] { $numberOfReviews } recenzje
+       *[many] { $numberOfReviews } recenzji
+    }

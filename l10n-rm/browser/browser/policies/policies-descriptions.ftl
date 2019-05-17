@@ -10,6 +10,7 @@
 ## These are short descriptions for individual policies, to be displayed
 ## in the documentation section in about:policies.
 
+policy-3rdparty = Definir directivas a las qualas WebExtensions pon acceder via chrome.storage.managed.
 policy-AppUpdateURL = Definir ina URL dad actualisaziun persunalisada per l'applicaziun.
 policy-Authentication = Configurar l'autentificaziun integrada per websites che la sustegnan.
 policy-BlockAboutAddons = Bloccar l'access a l'administraziun da supplements (about:addons).
@@ -56,18 +57,23 @@ policy-HardwareAcceleration = Sche «false», deactivar l'acceleraziun cun agid 
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Definir la pagina da partenza e tut tenor basegn impedir la modificaziun da l'opziun.
 policy-InstallAddonsPermission = Permetter a tschertas websites dad installar supplements.
+policy-LocalFileLinks = Permetter a websites specificas dad utilisar colliaziuns a datotecas localas.
 policy-NetworkPrediction = Activar u deactivar «network prediction» (prelectura DNS).
+policy-NewTabPage = Activar u deactivar la pagina «Nov tab».
 policy-NoDefaultBookmarks = Deactivar la creaziun dals segnapaginas predefinids da { -brand-short-name } ed ils segnapaginas intelligents (Visità il pli savens, Chavazzins utilisads dacurt). Remartga: questa directiva ha mo effect sch'ella vegn utilisada avant ch'il profil vegn avert l'emprima giada.
 policy-OfferToSaveLogins = Gestiunar la dumonda en { -brand-short-name } da memorisar las infurmaziuns d'annunzia. Omaduas valurs, «true» e «false», èn validas.
 policy-OverrideFirstRunPage = Surscriver la pagina che vegn mussada suenter avair avià l'emprima giada. Definir questa directiva cun ina valur vida per deactivar la pagina.
 policy-OverridePostUpdatePage = Surscriver la pagina «What's New» che vegn mussada suenter actualisaziuns. Definir questa directiva cun ina valur vida per impedir che la pagina vegnia mussada.
 policy-Permissions = Configurar permissiuns per camera, microfon, posiziun e notificaziuns.
 policy-PopupBlocking = Permetter a tschertas websites da mussar popups sco standard.
+policy-Preferences = Definescha e fixescha la valur per ina subgruppa da preferenzas.
 policy-Proxy = Configurar ils parameters dal proxy.
 policy-RequestedLocales = Definescha, en la successiun da preferenza, la glista da las linguas («locales») dumandadas da l'applicaziun.
 policy-SanitizeOnShutdown = Stizzar tut las datas da navigaziun cun terminar.
+policy-SanitizeOnShutdown2 = Stizzar las datas da navigaziun cun terminar.
 policy-SearchBar = Definir l'adressa da standard da la trav da tschertgar. L'utilisader la po anc adina persunalisar.
 policy-SearchEngines = Configurar ils parameters da maschinas da tschertgar. Questa directiva è mo disponibla en la versiun Extended Support Release (ESR).
+policy-SearchSuggestEnabled = Activar u deactivar propostas da tschertga.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Installar moduls PKCS #11.
 policy-SSLVersionMax = Definir la versiun maximala da SSL.

@@ -195,7 +195,7 @@ containers-remove-cancel-button = Don’t remove this Container
 ## General Section - Language & Appearance
 
 language-and-appearance-header = Language and Appearance
-fonts-and-colors-header = Fonts & Colours
+fonts-and-colors-header = Fonts and Colours
 default-font = Default font
     .accesskey = D
 default-font-size = Size
@@ -542,7 +542,7 @@ privacy-header = Browser Privacy
 
 ## Privacy Section - Forms
 
-logins-header = Logins & Passwords
+logins-header = Logins and Passwords
 forms-ask-to-save-logins =
     .label = Ask to save logins and passwords for web sites
     .accesskey = r
@@ -579,7 +579,7 @@ history-remember-option-never =
     .label = Never remember history
 history-remember-option-custom =
     .label = Use custom settings for history
-history-remember-description = { -brand-short-name } will remember your browsing, download, form and search history.
+history-remember-description = { -brand-short-name } will remember your browsing, download, form, and search history.
 history-dontremember-description = { -brand-short-name } will use the same settings as private browsing, and will not remember any history as you browse the Web.
 history-private-browsing-permanent =
     .label = Always use private browsing mode
@@ -607,7 +607,7 @@ sitedata-total-size-calculating = Calculating site data and cache size…
 # Variables:
 #   $value (Number) - Value of the unit (for example: 4.6, 500)
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
-sitedata-total-size = Your stored cookies, site data and cache are currently using { $value } { $unit } of disc space.
+sitedata-total-size = Your stored cookies, site data, and cache are currently using { $value } { $unit } of disc space.
 sitedata-learn-more = Learn more
 sitedata-delete-on-close =
     .label = Delete cookies and site data when { -brand-short-name } is closed
@@ -660,6 +660,7 @@ addressbar-suggestions-settings = Change preferences for search engine suggestio
 
 content-blocking-header = Content Blocking
 content-blocking-description = Block third-party content that tracks you around the web. Control how much of your online activity gets stored and shared between web sites.
+content-blocking-section-description = Protect your privacy while you browse. Block invisible content that tracks the sites you visit and profiles you. Blocking some of this content may make pages load faster.
 content-blocking-learn-more = Learn more
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -675,15 +676,24 @@ content-blocking-setting-custom =
 content-blocking-standard-description = Only blocks known trackers in Private Windows.
 content-blocking-standard-desc = Balanced for protection and performance. Allows some trackers so web sites function properly.
 content-blocking-strict-desc = Blocks all trackers { -brand-short-name } detects. May cause some sites to break.
+content-blocking-strict-description = Stronger protection, may cause some sites to break.
 content-blocking-custom-desc = Choose what to block.
 content-blocking-private-trackers = Known trackers only in Private Windows
 content-blocking-third-party-cookies = Third-party tracking cookies
+content-blocking-all-cookies = All cookies
+content-blocking-unvisited-cookies = Cookies from unvisited sites
 content-blocking-all-windows-trackers = Known trackers in all windows
 content-blocking-all-third-party-cookies = All third-party cookies
+content-blocking-cryptominers = Cryptominers
+content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Heads up!
 content-blocking-warning-desc = Blocking cookies and trackers can cause some web sites to break. It’s easy to disable blocking for sites you trust.
 content-blocking-warning-description = Blocking content can cause some web sites to break. It’s easy to disable blocking for sites you trust.
 content-blocking-learn-how = Learn how
+content-blocking-reload-description = You will need to reload your tabs to apply these changes.
+content-blocking-reload-tabs-button =
+    .label = Reload All Tabs
+    .accesskey = R
 content-blocking-trackers-label =
     .label = Trackers
     .accesskey = T
@@ -697,6 +707,8 @@ content-blocking-tracking-protection-change-block-list = Change block list
 content-blocking-cookies-label =
     .label = Cookies
     .accesskey = C
+content-blocking-expand-section =
+    .tooltiptext = More information
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
     .label = Cryptominers
@@ -736,23 +748,12 @@ permissions-notification-link = Learn more
 permissions-notification-pause =
     .label = Pause notifications until { -brand-short-name } restarts
     .accesskey = n
-permissions-block-autoplay-media =
-    .label = Block web sites from automatically playing media with sound
-    .accesskey = B
-permissions-block-autoplay-media-menu = For web sites that autoplay sound
 permissions-block-autoplay-media2 =
     .label = Block web sites from automatically playing sound
     .accesskey = B
 permissions-block-autoplay-media-exceptions =
     .label = Exceptions…
     .accesskey = E
-autoplay-option-ask =
-    .label = Always Ask
-autoplay-option-allow =
-    .label = Allow Autoplay
-autoplay-option-dont =
-    .label = Don't Autoplay
-permissions-autoplay-link = Learn more
 permissions-block-popups =
     .label = Block pop-up windows
     .accesskey = B
@@ -788,10 +789,6 @@ addon-recommendations-link = Learn more
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Data reporting is disabled for this build configuration
-collection-browser-errors =
-    .label = Allow { -brand-short-name } to send browser error reports (including error messages) to { -vendor-short-name }
-    .accesskey = b
-collection-browser-errors-link = Learn more
 collection-backlogged-crash-reports =
     .label = Allow { -brand-short-name } to send backlogged crash reports on your behalf
     .accesskey = c

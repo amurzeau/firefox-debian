@@ -28,6 +28,9 @@ features-title = Wbudowane rozszerzenia programu { -brand-short-name }
 features-name = Nazwa
 features-version = Wersja
 features-id = ID
+processes-title = Zdalne procesy
+processes-type = Typ
+processes-count = Liczba
 app-basics-title = Informacje o aplikacji
 app-basics-name = Nazwa
 app-basics-version = Wersja
@@ -51,8 +54,10 @@ app-basics-profiles = Profile
 app-basics-launcher-process-status = Proces uruchamiający
 app-basics-multi-process-support = Okna wieloprocesowe
 app-basics-process-count = Procesy treści sieciowych
+app-basics-remote-processes-count = Zdalne procesy
 app-basics-enterprise-policies = Zasady organizacji
-app-basics-key-google = Klucz Google
+app-basics-location-service-key-google = Klucz usługi lokalizacji Google
+app-basics-safebrowsing-key-google = Klucz usługi „Bezpieczne przeglądanie” Google
 app-basics-key-mozilla = Klucz usługi lokalizacji Mozilli
 app-basics-safe-mode = Tryb awaryjny
 show-dir-label =
@@ -284,6 +289,6 @@ touch-warning = Asynchroniczne przewijanie/powiększanie za pomocą dotyku wył�
 
 ## Strings representing the status of the Enterprise Policies engine.
 
-policies-inactive = Nieaktywna
-policies-active = Aktywna
+policies-inactive = Nieaktywne
+policies-active = Aktywne
 policies-error = Błąd

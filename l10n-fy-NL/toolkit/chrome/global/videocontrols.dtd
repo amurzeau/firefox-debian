@@ -10,10 +10,13 @@
 <!ENTITY fullscreenButton.exitfullscreenlabel "Folslein skerm ferlitte">
 <!ENTITY castingButton.castingLabel "Nei skerm caste">
 <!ENTITY closedCaption.off "Ut">
-
 <!-- LOCALIZATION NOTE (volumeScrubber.label): This label is exposed to
      accessibility software to clarify what the slider is for. -->
 <!ENTITY volumeScrubber.label "Folumeregelaar">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label): This string is used as part of
+the Picture-in-Picture video toggle button when the mouse is hovering it. -->
+<!ENTITY pictureInPicture.label "Picture-in-Picture">
 
 <!ENTITY stats.media "Media">
 <!ENTITY stats.size "Grutte">
@@ -34,6 +37,8 @@
 <!ENTITY error.srcNotSupported "Fideoformaat of MIME-type is net stipe.">
 <!ENTITY error.noSource2 "Gjin stipe fideoformaat yn MIME-type fûn.">
 <!ENTITY error.generic "Fideo ôfspyljen ôfbrutsen fanwegen in ûnbekende flater.">
+
+<!ENTITY status.pictureInPicture "Dizze fideo wurdt yn Picture-in-Picture-modus ôfspile.">
 
 <!-- LOCALIZATION NOTE (scrubberScale.nameFormat): the #1 string is the current
 media position, and the #2 string is the total duration. For example, when at

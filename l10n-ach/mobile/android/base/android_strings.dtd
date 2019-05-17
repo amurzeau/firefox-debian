@@ -4,10 +4,13 @@
 
 <!ENTITY firstrun_panel_title_welcome "Wajoli">
 <!ENTITY firstrun_urlbar_message2 "Pwoc piyero &brandShortName;">
+<!ENTITY newfirstrun_urlbar_message "Wajoli i &brandShortName;">
 <!ENTITY firstrun_urlbar_subtext2 "Layeny me kunyoni me cing ki bot Mozilla, dul ma pe me nongo magoba ma odyere pi kakube me nono dok tye ayaba.">
+<!ENTITY newfirstrun_urlbar_subtext "Dwir, mung ki tye piri.">
 <!ENTITY firstrun_panel_title_privacy "Mung">
 <!ENTITY firstrun_privacy_message "Yeny calo ngato pe ka neno">
 <!ENTITY firstrun_privacy_subtext "Yeny i mung ki Gwokke ikom lubo kor gengo lulub kor ma nongo itye ka yeny ki pe bi poo ikom gin mukato mamegi ka ityeko yeny.">
+<!ENTITY newfirstrun_privacy_subtext "Yeny i mung gengo lulub kor me cato wil ma lubo kori iwiyamo.">
 <!ENTITY firstrun_panel_title_customize "Yubi">
 <!ENTITY firstrun_customize_message "Wek &brandShortName; obed megi.">
 <!ENTITY firstrun_customize_subtext "Yub &brandShortName; ki med-ikome. Geng kwena me cat, med jami, onyo yer theme manyen me nyuto kwo mamegi.">
@@ -20,8 +23,10 @@
 <!ENTITY firstrun_sync_title "Sync">
 <!ENTITY firstrun_sync_message2 "Cak ki kama i giko iyie ni.">
 <!ENTITY firstrun_sync_subtext2 "Tii ki Ribo me nongo alamabuk, mung me donyo, ki jami mukene ma i gwoko ii &brandShortName; i nyonyo ni weng.">
+<!ENTITY newfirstrun_sync_subtext "Rib jami ma igwoko gi i mobile wa Firefox pi desktop, i mung ki ber bedo.">
 <!ENTITY firstrun_signin_message "Kube, caki">
 <!ENTITY firstrun_signin_button "Dony iye wek itim marom">
+<!ENTITY newfirstrun_signin_button "Cak Ribo">
 <!ENTITY  onboard_start_button_browser "Cak yenyo">
 <!ENTITY firstrun_button_notnow "Pe kombedi">
 <!ENTITY firstrun_button_next "Malubo">
@@ -63,6 +68,12 @@
 <!ENTITY  crash_restart_label "Cak &brandShortName;">
 
 <!ENTITY url_bar_default_text2 "Yeny onyo ket kanonge">
+
+<!-- Localization note: this text will be displayed in the Search Widget -->
+<!ENTITY search_widget_default_text "Yeny kakube">
+<!ENTITY search_widget_default_cropped_text "Yeny">
+<!ENTITY search_widget_logo_description "Yeny kakube ki &brandShortName;">
+
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
      icon in the url bar. -->
@@ -290,11 +301,6 @@
 <!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
      Similar to the already existing "pref_whats_new_notification_summary"-->
 <!ENTITY pref_feature_tips_notification_summary "Nong ngec mapol ikom tic ki &brandShortName; ki jami mukene me &vendorShortName;">
-<!-- Localization note (pref_feature_tips_notification_enabling_hint):
-     Describe the action the user should do to enable this preference
-     Will be used in the context "<Turn on> ... to enable this feature" -->
-<!ENTITY pref_feature_tips_notification_enabling_hint "Caki">
-
 <!-- Localization note (pref_feature_tips_notification_enabling_path):
      Nothing to translate. Simple concatenation of already localized strings. Result is used below. -->
 <!ENTITY pref_feature_tips_notification_enabling_path "&pref_category_privacy_short; > &pref_category_datareporting; > &datareporting_fhr_title;">
@@ -340,6 +346,9 @@
 <!-- Localization note (tab_queue_prompt_settings_button): This button is shown if the user needs to
      enable a permission in Android's setting in order to enable tab queues. -->
 <!ENTITY tab_queue_prompt_settings_button "Cit i ter">
+<!-- Localization note (tab_queue_notification_prompt): This is the text of the default notification
+shown from Android O while a tab is being queued.-->
+<!ENTITY tab_queue_notification_prompt "Medo dirica matidi manyen i lain &#8230;">
 <!ENTITY tab_queue_notification_title "&brandShortName;">
 <!-- Localization note (tab_queue_notification_text_plural2) : The
      formatD is replaced with the number of tabs queued.  The
@@ -398,7 +407,6 @@
 <!ENTITY pref_private_data_searchHistory "Gin mukato me yeny">
 <!ENTITY pref_private_data_formdata2 "Gin mukato me pwom">
 <!ENTITY pref_private_data_cookies2 "Angija ki donyo iyie ma tye katic">
-<!ENTITY pref_private_data_passwords2 "Donyo iyie ma kigwoko">
 <!ENTITY pref_private_data_cache "Kagwoko">
 <!ENTITY pref_private_data_offlineApps "Coc kakube me web ma pe iwi yamo">
 <!ENTITY pref_private_data_siteSettings2 "Ter me kakube">
@@ -406,6 +414,12 @@
 <!ENTITY pref_private_data_syncedTabs "Dirica matino ma kitimo marom">
 
 <!ENTITY pref_default_browser "Ket calo layeny makwongo">
+
+<!ENTITY pref_default_browser2 "Wek &brandShortName; obed layeny mamegi makwongo">
+<!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
+    Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
+    and instruct users to tap on the "Browser app" option on that settings screen to choose a default browser app. -->
+<!ENTITY default_browser_system_settings_toast "Gud purugram me Layeny ka iyer &brandShortName;">
 <!ENTITY pref_default_browser_mozilla_support_tablet "Lim Mozilla Support">
 <!ENTITY pref_about_firefox "Ikom &brandShortName;">
 <!ENTITY pref_vendor_faqs "Lapeny ma pol kare">
@@ -500,6 +514,10 @@
 <!ENTITY find_prev "Mukato">
 <!ENTITY find_next "Malubo">
 <!ENTITY find_close "Lor">
+
+<!-- Localization note (find_error) : Error message shown when there is no result for the
+     searched for text in this webpage -->
+<!ENTITY find_error "Lok pe ononge">
 
 <!-- Localization note (media_sending_to, media_play, media_pause, media_stop) : These strings are used
      as alternate text for accessibility. They are not visible in the UI. -->
@@ -901,14 +919,9 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_description "Juk tuko">
 
 <!-- Notification channels names -->
-<!ENTITY default_notification_channel "&brandShortName;">
-
-<!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "Layeny">
 <!ENTITY mls_notification_channel "Tic me Kabedo pa &vendorShortName;">
 <!ENTITY download_notification_channel "Gam">
-<!-- These push notifications come without a specific channel and/or name from Leanplum -->
-<!ENTITY leanplum_default_notifications_channel "jami angeya ma pire kene me &brandShortName;">
 <!ENTITY media_notification_channel2 "Dwon ki video">
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
 <!ENTITY leanplum_default_notifications_channel2 "ngec ki diro me &vendorShortName;">

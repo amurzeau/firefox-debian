@@ -64,6 +64,8 @@ but will never be visible at the same time. -->
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "л">
 
+<!-- Tab context menu -->
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -108,7 +110,6 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Схаваныя карткі">
 
 <!ENTITY  listAllTabs.label      "Пералічыць усе карткі">
-
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
 <!ENTITY  allTabsMenu.searchTabs.label       "Шукаць карткі">
@@ -130,6 +131,9 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "Друкаваць…">
 <!ENTITY printCmd.accesskey "Д">
 <!ENTITY printCmd.commandkey "p">
+
+<!ENTITY importFromAnotherBrowserCmd.label "Імпартаваць з іншага браўзера…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "ш">
 
 <!ENTITY taskManagerCmd.label "Менеджар задач">
 
@@ -213,6 +217,28 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenExit.label "Выйсці з поўнаэкраннага рэжыму">
 <!ENTITY fullScreenExit.accesskey "В">
 
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "Вазьміце Firefox з сабой">
+<!ENTITY fxa.signin.description.label "Атрымайце доступ к сваім закладкам, гісторыі, паролямі і іншым наладам на ўсіх вашых прыладах.">
+<!ENTITY fxa.signin.button.label "Уключыць &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "Праверце сваю пошту">
+<!ENTITY fxa.unverified.description.label "Вам неабходна пацвердзіць свой уліковы запіс, перш чым вы зможаце сінхранізавацца.">
+<!ENTITY fxa.unverified.button.label "Адкрыць налады &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "Увайшоўшы як">
+<!ENTITY fxa.menu.manageAccount.label "Кіраванне ўліковым запісам…">
+<!ENTITY fxa.menu.syncSettings.label "Налады &syncBrand.shortName.label;…">
+<!ENTITY fxa.menu.connectAnotherDevice.label "&syncedTabs.sidebar.connectAnotherDevice;">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "Злучыць іншую прыладу…">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
+
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
      respectively before and after the domain requiring fullscreen.
@@ -229,6 +255,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "Выйсці з поўнаэкраннага рэжыму (esc)">
 <!ENTITY leaveDOMFullScreen.label "Закрыць поўны экран">
 <!ENTITY leaveDOMFullScreen.accesskey "З">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.label "Выява ў выяве">
+<!ENTITY pictureInPicture.accesskey "ў">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -328,7 +360,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY viewBookmarksSidebar2.label        "Паказаць бакавую панэль закладак">
 <!ENTITY hideBookmarksSidebar.label         "Схаваць бакавую панэль закладак">
 <!ENTITY viewBookmarksToolbar.label         "Паказаць паліцу закладак">
-<!ENTITY hideBookmarksToolbar.label         "Схаваць бакавую панэль закладак">
+<!ENTITY hideBookmarksToolbar.label         "Схаваць паліцу закладак">
 <!ENTITY searchBookmarks.label              "Шукаць у закладках">
 <!ENTITY bookmarkingTools.label             "Прылады закладак">
 <!ENTITY addBookmarksMenu.label             "Дадаць меню закладак на паліцу прылад">
@@ -408,6 +440,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.label       "Налады">
 <!ENTITY preferencesCmdUnix.accesskey     "л">
 
+<!ENTITY logins.label                           "Лагіны і паролі">
+
 <!ENTITY clearRecentHistory.label               "Ачысціць нядаўнюю гісторыю…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
@@ -437,6 +471,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.clearRecent.label "Ачысціць нядаўнюю гісторыю…">
 <!ENTITY appMenuHistory.restoreSession.label "Аднавіць папярэдні сеанс">
 <!ENTITY appMenuHistory.viewSidebar.label "Паказаць панэль гісторыі">
+<!ENTITY appMenuHistory.hideSidebar.label "Схаваць панэль гісторыі">
 <!ENTITY appMenuHistory.recentHistory.label "Нядаўняя гісторыя">
 <!ENTITY appMenuHelp.label "Даведка">
 
@@ -465,6 +500,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Увайсці ў Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Кіраваць прыладамі...">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Паказаць бакавую панэль сінхранізаваных картак">
+<!ENTITY appMenuRemoteTabs.hidesidebar.label "Схаваць бакавую панэль сінхранізаваных картак">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Злучыць іншую прыладу">
 
 <!ENTITY appMenuRecentHighlights.label "Апошнія падсвятленні">
@@ -494,6 +530,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.manageExtension.accesskey "К">
 <!ENTITY customizeMenu.removeExtension.label "Выдаліць пашырэнне">
 <!ENTITY customizeMenu.removeExtension.accesskey "і">
+
+<!-- LOCALIZATION NOTE (reportExtension.label) This label is used in the extensions
+     toolbar buttons context menus, a user can use this command to submit to Mozilla
+     an abuse report related to that extension. "Report" is a verb. -->
+<!ENTITY customizeMenu.reportExtension.label "Паведаміць пра пашырэнне">
+<!ENTITY customizeMenu.reportExtension.accesskey "ш">
 
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
@@ -879,7 +921,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "Вы не давалі гэтаму сайту ніякіх адмысловых дазволаў.">
 <!ENTITY identity.permissionsReloadHint "Магчыма, вам спатрэбіцца перазагрузіць старонку, каб змены пачалі дзейнічаць.">
 <!ENTITY identity.permissionsPreferences.tooltip "Адкрыць налады дазволаў">
-
 <!ENTITY identity.contentBlockingPreferences.tooltip "Адкрыць налады блакаванага змесціва">
 
 
@@ -931,6 +972,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSignIn.label             "Увайсці ў &syncBrand.shortName.label;…">
 <!ENTITY syncSignIn.accesskey         "У">
 <!ENTITY syncSyncNowItem.label        "Сінхранізаваць зараз ">
+<!ENTITY syncSyncNowItemSyncing.label "Сінхранізацыя…">
 <!ENTITY syncSyncNowItem.accesskey    "С">
 <!ENTITY syncReAuthItem.label         "Перазлучыцца з &syncBrand.shortName.label;…">
 <!ENTITY syncReAuthItem.accesskey     "П">
@@ -1073,6 +1115,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.acceptButton.accesskey "С">
 <!ENTITY updateAvailable.cancelButton.label "Не цяпер">
 <!ENTITY updateAvailable.cancelButton.accesskey "Н">
+
 <!ENTITY updateAvailable.panelUI.label "Сцягнуць абнаўленне &brandShorterName;">
 
 <!ENTITY updateManual.message "Сцягніце новую версію &brandShorterName; і мы дапаможам вам яе ўсталяваць.">
@@ -1090,6 +1133,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.acceptButton.accesskey "К">
 <!ENTITY updateRestart.cancelButton.label "Не зараз">
 <!ENTITY updateRestart.cancelButton.accesskey "Н">
+<!ENTITY updateUnsupported.panelUI.label "Вы не можаце выконваць далейшыя абнаўленні">
 <!ENTITY updateRestart.panelUI.label2 "Перазапуск для абнаўлення &brandShorterName;">
 
 <!ENTITY newTabControlled.header.message "Ваша новая картка была зменена.">
@@ -1133,8 +1177,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "Кіруйце вашымі дадаткамі, націснуўшы <image class='addon-addon-icon'/> у меню <image class='addon-toolbar-icon'/>.">
-<!ENTITY addonPostInstall.incognito.label "Дазволіць гэтаму пашырэнню дзейнічаць у прыватных вокнах.">
-<!ENTITY addonPostInstall.incognito.accesskey "Д">
+<!ENTITY addonPostInstall.incognito.checkbox.label "Дазволіць гэтаму пашырэнню дзейнічаць у прыватных вокнах">
+<!ENTITY addonPostInstall.incognito.checkbox.accesskey "в">
 
 <!ENTITY addonPrivateBrowsing.header2.label "Змены пашырэнняў у прыватных вокнах">
 <!ENTITY addonPrivateBrowsing.body2.label "Новыя пашырэнні, якія вы дадаяце да &brandShorterName;, не будуць працаваць у прыватных вокнах, калі вы не выставіце дазвол у наладах.">

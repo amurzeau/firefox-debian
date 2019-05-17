@@ -44,10 +44,11 @@ app-basics-memory-use = Uzo da memöia
 app-basics-performance = Prestaçioin
 app-basics-service-workers = Service worker registræ
 app-basics-profiles = Profî
+app-basics-launcher-process-status = Processo lanciatou
 app-basics-multi-process-support = Barcoin moltiprocesso
 app-basics-process-count = Processi di contegnui web
-app-basics-enterprise-policies = Politiche aziendali
-app-basics-key-google = Ciave Google
+app-basics-enterprise-policies = Critei aziendali
+app-basics-location-service-key-google = Ciave do serviçio de localizaçion de Google
 app-basics-key-mozilla = Ciave do Serviçio de Localizaçion de Mozilla
 app-basics-safe-mode = Mòddo seguo
 show-dir-label =
@@ -77,7 +78,7 @@ place-database-title = Database di leughi
 place-database-integrity = Integritæ
 place-database-verify-integrity = Verifica Integritæ
 js-title = JavaScript
-js-incremental-gc = GC incrementale
+js-incremental-gc = Coleçion de rumenta incrementale
 a11y-title = Acesibilitæ
 a11y-activated = Ativou
 a11y-force-disabled = Inpedisci acesibilitæ
@@ -173,6 +174,7 @@ hardware-h264 = Hardware Decoding H264
 main-thread-no-omtc = thread prinçipâ, no OMTC
 yes = Sci
 no = No
+unknown = Sconosciuo
 
 ## The following strings indicate if an API key has been found.
 ## In some development versions, it's expected for some API keys that they are
@@ -180,6 +182,8 @@ no = No
 
 found = Atrovou
 missing = Manca
+gpu-process-pid = GPUProcessPid
+gpu-process = GPUProcess
 gpu-description = Descriçion
 gpu-vendor-id = ID Vendidô
 gpu-device-id = ID dispoxitivo:
@@ -232,8 +236,11 @@ can-sandbox-media = Sandbox plugin moltimediali
 content-sandbox-level = Livello Sandox de processo de contegnuo
 effective-content-sandbox-level = Contegnuo efetivo do Livello Sandox de processo
 sandbox-proc-type-content = contegnuo
-sandbox-proc-type-file = contegnuo do file
+sandbox-proc-type-file = contegnuo do schedaio
 sandbox-proc-type-media-plugin = plugin do media
+sandbox-proc-type-data-decoder = data decoder
+launcher-process-status-0 = Ativou
+launcher-process-status-2 = Dizabilitou con fòrsa
 launcher-process-status-unknown = Stato no conosciuo
 # Variables
 # $remoteWindows (integer) - Number of remote windows

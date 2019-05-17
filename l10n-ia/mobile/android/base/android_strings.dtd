@@ -4,10 +4,13 @@
 
 <!ENTITY firstrun_panel_title_welcome "Benvenite">
 <!ENTITY firstrun_urlbar_message2 "Gratias pro eliger &brandShortName;">
+<!ENTITY newfirstrun_urlbar_message "Benvenite a &brandShortName;">
 <!ENTITY firstrun_urlbar_subtext2 "Un navigator mobile moderne de Mozilla, le organisation non lucrative que fide in le web libere e aperte.">
+<!ENTITY newfirstrun_urlbar_subtext "Veloce, reservate e sempre a tu latere.">
 <!ENTITY firstrun_panel_title_privacy "Confidentialitate">
 <!ENTITY firstrun_privacy_message "Naviga sin sentir te observate">
 <!ENTITY firstrun_privacy_subtext "Le navigation private con protection contra traciamento bloca traciatores durante que tu naviga e non memorara tu chronologia quando tu termina de navigar.">
+<!ENTITY newfirstrun_privacy_subtext "Le navigation reservate bloca le traciatores que te seque online.">
 <!ENTITY firstrun_panel_title_customize "Personalisar">
 <!ENTITY firstrun_customize_message "Rende &brandShortName; tue.">
 <!ENTITY firstrun_customize_subtext "Personalisa &brandShortName; con additivos. Bloca annuncios, adde functionalitates o elige un nove thema pro reflecter tu personalitate.">
@@ -20,8 +23,10 @@
 <!ENTITY firstrun_sync_title "Sync">
 <!ENTITY firstrun_sync_message2 "Reprende de ubi tu lassava">
 <!ENTITY firstrun_sync_subtext2 "Usa Sync pro trovar marcapaginas, contrasignos, e altere cosas que tu salva in &brandShortName; sur tote tu apparatos.">
+<!ENTITY newfirstrun_sync_subtext "Synchronisa in modo reservate e secur, le informationes salvate su tu apparato mobile, in le Firefox pro scriptorio de tu computator.">
 <!ENTITY firstrun_signin_message "Connecte te e comencia">
 <!ENTITY firstrun_signin_button "Connecter se a Sync">
+<!ENTITY newfirstrun_signin_button "Activa Sync">
 <!ENTITY  onboard_start_button_browser "Comenciar a navigar">
 <!ENTITY firstrun_button_notnow "Plus tarde">
 <!ENTITY firstrun_button_next "Sequente">
@@ -63,6 +68,12 @@
 <!ENTITY  crash_restart_label "Reinitiar &brandShortName;">
 
 <!ENTITY url_bar_default_text2 "Insere un adresse o face un recerca">
+
+<!-- Localization note: this text will be displayed in the Search Widget -->
+<!ENTITY search_widget_default_text "Cercar in le Web">
+<!ENTITY search_widget_default_cropped_text "Cercar">
+<!ENTITY search_widget_logo_description "Cercar in le Web con &brandShortName;">
+
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
      icon in the url bar. -->
@@ -335,6 +346,9 @@
 <!-- Localization note (tab_queue_prompt_settings_button): This button is shown if the user needs to
      enable a permission in Android's setting in order to enable tab queues. -->
 <!ENTITY tab_queue_prompt_settings_button "Ir al parametros">
+<!-- Localization note (tab_queue_notification_prompt): This is the text of the default notification
+shown from Android O while a tab is being queued.-->
+<!ENTITY tab_queue_notification_prompt "Addition de nove scheda al cauda&#8230;">
 <!ENTITY tab_queue_notification_title "&brandShortName;">
 <!-- Localization note (tab_queue_notification_text_plural2) : The
      formatD is replaced with the number of tabs queued.  The
@@ -393,7 +407,6 @@
 <!ENTITY pref_private_data_searchHistory "Chronologia del recercas">
 <!ENTITY pref_private_data_formdata2 "Chronologia de formulario">
 <!ENTITY pref_private_data_cookies2 "Cookies &amp; sessiones active">
-<!ENTITY pref_private_data_passwords2 "Authenticationes salvate">
 <!ENTITY pref_private_data_cache "Memoria tampon">
 <!ENTITY pref_private_data_offlineApps "Datos del sitos web disponibile sin connexion">
 <!ENTITY pref_private_data_siteSettings2 "Parametros del sito">
@@ -401,6 +414,12 @@
 <!ENTITY pref_private_data_syncedTabs "Schedas synchronisate">
 
 <!ENTITY pref_default_browser "Render predefinite le navigator">
+
+<!ENTITY pref_default_browser2 "Rende &brandShortName; tu navigator ordinari">
+<!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
+    Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
+    and instruct users to tap on the "Browser app" option on that settings screen to choose a default browser app. -->
+<!ENTITY default_browser_system_settings_toast "Tocca App Browser e selige &brandShortName;">
 <!ENTITY pref_default_browser_mozilla_support_tablet "Visitar le assistentia Mozilla">
 <!ENTITY pref_about_firefox "A proposito de &brandShortName;">
 <!ENTITY pref_vendor_faqs "Questiones frequente">
@@ -474,7 +493,7 @@
 <!ENTITY share_image_failed "Incapace a compartir iste imagine">
 <!ENTITY save_as_pdf "Salvar como PDF">
 <!ENTITY print "Imprimer">
-<!ENTITY view_page_source "Vider le codification fonte del pagina">
+<!ENTITY view_page_source "Vider le codice fonte del pagina">
 <!ENTITY find_in_page "Trovar in le pagina">
 <!ENTITY desktop_mode "Requestar le version scriptorio del sito">
 <!ENTITY page "Pagina">
@@ -495,6 +514,10 @@
 <!ENTITY find_prev "Previe">
 <!ENTITY find_next "Sequente">
 <!ENTITY find_close "Clauder">
+
+<!-- Localization note (find_error) : Error message shown when there is no result for the
+     searched for text in this webpage -->
+<!ENTITY find_error "Phrase non trovate">
 
 <!-- Localization note (media_sending_to, media_play, media_pause, media_stop) : These strings are used
      as alternate text for accessibility. They are not visible in the UI. -->

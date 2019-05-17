@@ -64,6 +64,8 @@ but will never be visible at the same time. -->
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "u">
 
+<!-- Tab context menu -->
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -108,7 +110,6 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Onglets masqués">
 
 <!ENTITY  listAllTabs.label      "Lister tous les onglets">
-
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
 <!ENTITY  allTabsMenu.searchTabs.label       "Rechercher dans les onglets">
@@ -130,6 +131,9 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "Imprimer…">
 <!ENTITY printCmd.accesskey "p">
 <!ENTITY printCmd.commandkey "p">
+
+<!ENTITY importFromAnotherBrowserCmd.label "Importer depuis un autre navigateur…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "I">
 
 <!ENTITY taskManagerCmd.label "Gestionnaire de tâches">
 
@@ -213,6 +217,28 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenExit.label "Quitter le mode plein écran">
 <!ENTITY fullScreenExit.accesskey "Q">
 
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "Emportez Firefox avec vous">
+<!ENTITY fxa.signin.description.label "Accédez à vos marque-pages, votre historique, vos mots de passe et d’autres paramètres sur l’ensemble de vos appareils.">
+<!ENTITY fxa.signin.button.label "Activer &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "Vérifiez votre adresse électronique">
+<!ENTITY fxa.unverified.description.label "Vous devrez vérifier votre compte avant de pouvoir lancer la synchronisation.">
+<!ENTITY fxa.unverified.button.label "Ouvrir les paramètres de &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "Connecté(e) en tant que">
+<!ENTITY fxa.menu.manageAccount.label "Gérer le compte…">
+<!ENTITY fxa.menu.syncSettings.label "Paramètres de &syncBrand.shortName.label;…">
+<!ENTITY fxa.menu.connectAnotherDevice.label "&syncedTabs.sidebar.connectAnotherDevice;">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "Connecter un autre appareil…">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
+
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
      respectively before and after the domain requiring fullscreen.
@@ -229,6 +255,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "Quitter le mode plein écran (« esc »)">
 <!ENTITY leaveDOMFullScreen.label "Quitter le mode plein écran">
 <!ENTITY leaveDOMFullScreen.accesskey "u">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.label "Incrustation vidéo">
+<!ENTITY pictureInPicture.accesskey "u">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -408,6 +440,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.label       "Préférences">
 <!ENTITY preferencesCmdUnix.accesskey     "f">
 
+<!ENTITY logins.label                           "Identifiants et mots de passe">
+
 <!ENTITY clearRecentHistory.label               "Supprimer l’historique récent…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
@@ -437,6 +471,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.clearRecent.label "Effacer l’historique récent…">
 <!ENTITY appMenuHistory.restoreSession.label "Restaurer la session précédente">
 <!ENTITY appMenuHistory.viewSidebar.label "Afficher le panneau de l’historique">
+<!ENTITY appMenuHistory.hideSidebar.label "Masquer le panneau latéral de l’historique">
 <!ENTITY appMenuHistory.recentHistory.label "Historique récent">
 <!ENTITY appMenuHelp.label "Aide">
 
@@ -465,6 +500,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Se connecter à Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Gérer les appareils…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Panneau latéral des onglets synchronisés">
+<!ENTITY appMenuRemoteTabs.hidesidebar.label "Masquer le panneau latéral des onglets synchronisés">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Connecter un autre appareil">
 
 <!ENTITY appMenuRecentHighlights.label "Éléments-clés récents">
@@ -879,7 +915,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "Vous n’avez pas accordé de permission particulière à ce site.">
 <!ENTITY identity.permissionsReloadHint "Vous devrez peut-être actualiser la page pour que les changements prennent effet.">
 <!ENTITY identity.permissionsPreferences.tooltip "Ouvrir les préférences des permissions">
-
 <!ENTITY identity.contentBlockingPreferences.tooltip "Ouvrir les préférences de blocage de contenu">
 
 
@@ -931,6 +966,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSignIn.label             "Se connecter à &syncBrand.shortName.label;…">
 <!ENTITY syncSignIn.accesskey         "Y">
 <!ENTITY syncSyncNowItem.label        "Synchroniser maintenant">
+<!ENTITY syncSyncNowItemSyncing.label "Synchronisation…">
 <!ENTITY syncSyncNowItem.accesskey    "S">
 <!ENTITY syncReAuthItem.label         "Se reconnecter à &syncBrand.shortName.label;…">
 <!ENTITY syncReAuthItem.accesskey     "r">
@@ -1073,6 +1109,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.acceptButton.accesskey "T">
 <!ENTITY updateAvailable.cancelButton.label "Plus tard">
 <!ENTITY updateAvailable.cancelButton.accesskey "P">
+
 <!ENTITY updateAvailable.panelUI.label "Télécharger la mise à jour de &brandShorterName;">
 
 <!ENTITY updateManual.message "Téléchargez à nouveau &brandShorterName; et nous pourrons vous guider pour l’installer.">
@@ -1133,9 +1170,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "Gérez vos modules en cliquant sur <image class='addon-addon-icon'/> dans le menu <image class='addon-toolbar-icon'/>.">
+<!ENTITY addonPostInstall.incognito.checkbox.label "Autoriser cette extension à s’exécuter dans une fenêtre de navigation privée">
+<!ENTITY addonPostInstall.incognito.checkbox.accesskey "A">
 
-<!ENTITY addonPrivateBrowsing.header.label "Extensions dans les fenêtres de navigation privée">
-<!ENTITY addonPrivateBrowsing.body.label "Par défaut, les extensions ne sont pas autorisées à s’exécuter dans les fenêtres privées. Elles ne fonctionneront pas pendant la navigation privée et n’auront pas accès à vos activités en ligne. Vous pouvez autoriser chaque extension à fonctionner dans les fenêtres privées en modifiant ses paramètres.">
+<!ENTITY addonPrivateBrowsing.header2.label "Changement pour les extensions en fenêtres de navigation privée.">
+<!ENTITY addonPrivateBrowsing.body2.label "Les nouvelles extensions que vous ajouterez à &brandShorterName; ne fonctionneront pas dans les fenêtres de navigation privée à moins d’autoriser explicitement leur exécution dans les paramètres.">
+<!ENTITY addonPrivateBrowsing.learnMore.label "Apprenez comment gérer les paramètres des extensions.">
 <!ENTITY addonPrivateBrowsing.okButton.label "J’ai compris">
 <!ENTITY addonPrivateBrowsing.okButton.accesskey "a">
 <!ENTITY addonPrivateBrowsing.manageButton.label "Gérer les extensions">
