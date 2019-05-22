@@ -1,1 +1,7 @@
-EXTRA_COMPONENTS += ['addonsInfo.js', 'addonsInfo.manifest']
+XPCOM_MANIFESTS += [
+    'addonsInfo.conf',
+]
+
+EXTRA_JS_MODULES += [
+    'addonsInfo.jsm',
+]

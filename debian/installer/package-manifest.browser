@@ -1,4 +1,0 @@
-#include ../../browser/installer/package-manifest.in
-[debian]
-bin/components/addonsInfo.js
-bin/components/addonsInfo.manifest

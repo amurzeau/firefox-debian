@@ -301,7 +301,6 @@ ifneq (,$(filter mips,$(DEB_HOST_ARCH)))
 endif
 	dh_auto_install --builddirectory=build-$(PRODUCT) -- installdir=$(LIB_DIR) \
 		MOZ_APP_BASE_VERSION=$(GRE_VERSION) \
-		MOZ_PKG_MANIFEST=$(CURDIR)/debian/installer/package-manifest.$(PRODUCT) \
 		TAR_CREATE_FLAGS="--exclude=.mkdir.done --hard-dereference -chf" \
 		SIGN_NSS=
 
