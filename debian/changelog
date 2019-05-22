@@ -1,6 +1,21 @@
-firefox (67.0-1) UNRELEASED; urgency=medium
+firefox (67.0-1) experimental; urgency=medium
 
   * New upstream release.
+  * Fixes for mfsa2019-13, also known as:
+    CVE-2019-9816, CVE-2019-9817, CVE-2019-9819, CVE-2019-9820,
+    CVE-2019-9821, CVE-2019-11691, CVE-2019-11692, CVE-2019-11693,
+    CVE-2019-7317, CVE-2019-11695, CVE-2019-11696, CVE-2019-11697,
+    CVE-2019-11698, CVE-2019-11699, CVE-2019-11701, CVE-2019-9814,
+    CVE-2019-9800.
+  * Upload to experimental because the required cbindgen is not available in
+    unstable.
+
+  * debian/control*: Bump nspr, sqlite, rustc, cargo and cbindgen build
+    dependencies.
+  * debian/extra-stuff/addonsInfo.*, debian/extra-stuff/moz.build,
+    debian/installer/package-manifest.browser, debian/rules:
+    Modernize addonsInfo per bz#1431533, bz#1432992, bz#1514594, bz#1524688,
+    etc.
 
  -- Mike Hommey <glandium@debian.org>  Wed, 22 May 2019 09:28:01 +0900
 
