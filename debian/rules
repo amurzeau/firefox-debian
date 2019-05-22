@@ -142,6 +142,8 @@ endif
 
 CXXFLAGS = $(CFLAGS)
 
+export RUSTFLAGS = --cap-lints warn
+
 ifeq ($(DEB_HOST_ARCH_ENDIAN),big)
 ICU_VERSION := $(shell echo U_ICU_VERSION_MAJOR_NUM | cpp -P -include $(CURDIR)/intl/icu/source/common/unicode/uvernum.h)
 ICU_DATA_FILE = icudt$(ICU_VERSION)b.dat

@@ -1140,28 +1140,6 @@ def build_ship_it_shipped_payload(config, task, task_def):
     }
 
 
-@payload_builder('shipit-started', schema={
-    Required('release-name'): basestring,
-    Required('product'): basestring,
-    Required('branch'): basestring,
-    Required('locales'): basestring,
-})
-def build_ship_it_started_payload(config, task, task_def):
-    worker = task['worker']
-    release_config = get_release_config(config)
-
-    task_def['payload'] = {
-        'release_name': worker['release-name'],
-        'product': worker['product'],
-        'version': release_config['version'],
-        'build_number': release_config['build_number'],
-        'branch': worker['branch'],
-        'revision': get_branch_rev(config),
-        'partials': release_config.get('partial_versions', ""),
-        'l10n_changesets': worker['locales'],
-    }
-
-
 @payload_builder('sign-and-push-addons', schema={
     Required('channel'): Any('listed', 'unlisted'),
     Required('upstream-artifacts'): [{
@@ -1654,10 +1632,13 @@ def build_task(config, tasks):
                 DEFAULT_BRANCH_PRIORITY)
 
         tags = task.get('tags', {})
+        attributes = task.get('attributes', {})
+
         tags.update({
             'createdForUser': config.params['owner'],
             'kind': config.kind,
             'label': task['label'],
+            'retrigger': 'true' if attributes.get('retrigger', False) else 'false'
         })
 
         task_def = {
@@ -1692,7 +1673,6 @@ def build_task(config, tasks):
         # add the payload and adjust anything else as required (e.g., scopes)
         payload_builders[task['worker']['implementation']](config, task, task_def)
 
-        attributes = task.get('attributes', {})
         # Resolve run-on-projects
         build_platform = attributes.get('build_platform')
         resolve_keyed_by(task, 'run-on-projects', item_name=task['label'],
