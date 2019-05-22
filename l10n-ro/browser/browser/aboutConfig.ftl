@@ -8,6 +8,7 @@ about-config-warning-text = Schimbarea acestor setări avansate poate fi dăună
 about-config-warning-checkbox = Irită-mă din nou, te rog!
 about-config-warning-button = Accept riscul
 about-config-title = about:config
+about-config2-title = Configurații avansate
 about-config-search-input =
     .placeholder = Caută
 about-config-show-all = Afișează tot
@@ -22,7 +23,7 @@ about-config-pref-delete = Șterge
 
 about-config-pref-add-type-boolean = Boolean
 about-config-pref-add-type-number = Număr
-about-config-pref-add-type-string = Şir
+about-config-pref-add-type-string = Șir
 
 ## Preferences with a non-default value are differentiated visually, and at the
 ## same time the state is made accessible to screen readers using an aria-label

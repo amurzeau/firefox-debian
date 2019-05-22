@@ -77,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = Terakhir Diperbarui
 detail-contributions-description = Pengembang pengaya ini memohon bantuan dukungan Anda untuk membantu kesinambungan pengembangan pengaya dengan memberikan kontribusi kecil.
+detail-contributions-button = Berkontribusi
+    .title = Berkontribusi dalam pengembangan pengaya ini
+    .accesskey = k
 detail-update-type =
     .value = Pemutakhiran Otomatis
 detail-update-default =
@@ -88,6 +91,22 @@ detail-update-automatic =
 detail-update-manual =
     .label = Mati
     .tooltiptext = Jangan otomatis memasang pemutakhiran
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Jalankan di Jendela Pribadi
+detail-private-browsing-description2 = Jika diizinkan, ekstensi akan memiliki akses ke aktivitas daring Anda saat menjelajah secara pribadi. <label data-l10n-name="detail-private-browsing-learn-more">Pelajari lebih lanjut </label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = Tidak Diizinkan di Jendela Pribadi
+detail-private-disallowed-description = Ekstensi ini tidak berjalan saat penjelajahan pribadi. <label data-l10n-name="detail-private-browsing-learn-more">Pelajari lebih lanjut</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Membutuhkan Akses ke Jendela Pribadi
+detail-private-required-description = Ekstensi ini memiliki akses ke aktivitas daring Anda saat menjelajah pribadi. <label data-l10n-name="detail-private-browsing-learn-more">Pelajari lebih lanjut</label>
+detail-private-browsing-on =
+    .label = Izinkan
+    .tooltiptext = Aktifkan di Penjelajahan Pribadi
+detail-private-browsing-off =
+    .label = Jangan Izinkan
+    .tooltiptext = Nonaktifkan di Penjelajahan Pribadi
 detail-home =
     .label = Beranda
 detail-home-value =
@@ -130,6 +149,12 @@ legacy-warning-show-legacy = Tampilkan ekstensi peninggalan
 legacy-extensions =
     .value = Ekstensi Peninggalan
 legacy-extensions-description = Ekstensi ini tidak memenuhi standar { -brand-short-name } saat ini sehingga telah dinonaktifkan. <label data-l10n-name="legacy-learn-more">Pelajari tentang perubahan terhadap pengaya</label>
+private-browsing-description2 =
+    { -brand-short-name } mengubah cara kerja ekstensi di mode penjelajahan pribadi. Setiap ekstensi baru yang Anda tambahkan
+    ke { -brand-short-name } tidak akan berjalan secara baku di Jendela Pribadi. Kecuali Anda mengizinkannya dalam pengaturan,
+    ekstensi tidak akan berfungsi saat menjelajah secara pribadi dan tidak akan memiliki akses ke aktivitas daring Anda
+    pada jendela pribadi tersebut. Kami telah membuat perubahan ini untuk menjaga penelusuran pribadi Anda tetap pribadi.
+    <label data-l10n-name="private-browsing-learn-more">Pelajari cara mengelola pengaturan ekstensi.</label>
 extensions-view-discover =
     .name = Unduh Pengaya
     .tooltiptext = { extensions-view-discover.name }
@@ -207,3 +232,58 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Pasang Versi Baru
     .tooltiptext = Pasang versi baru yang ada pada daftar ini
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = Kelola Pintasan Ekstensi
+    .accesskey = K
+shortcuts-empty-message = Tidak ada pintasan untuk ektensi ini.
+shortcuts-no-addons = Anda tidak memiliki ekstensi yang aktif.
+shortcuts-no-commands = Ekstensi berikut tidak memiliki pintasan:
+shortcuts-input =
+    .placeholder = Ketikkan pintasan
+shortcuts-browserAction = Aktifkan ekstensi
+shortcuts-pageAction = Aktifkan tindakan laman
+shortcuts-sidebarAction = Aktifkan/Nonaktifkan bilah samping
+shortcuts-modifier-mac = Sertakan Ctrl, Alt, atau ⌘
+shortcuts-modifier-other = Sertakan Ctrl atau Alt
+shortcuts-invalid = Kombinasi tidak valid
+shortcuts-letter = Ketikkan huruf
+shortcuts-system = Tidak bisa menimpa pintasan { -brand-short-name }
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Sudah digunakan oleh { $addon }
+shortcuts-card-expand-button =
+    { $numberToShow ->
+       *[other] Tampilkan { $numberToShow } Lainnya
+    }
+shortcuts-card-collapse-button = Lebih Sedikit
+go-back-button =
+    .tooltiptext = Mundur
+
+## Add-on actions
+
+remove-addon-button = Hapus
+disable-addon-button = Nonaktifkan
+enable-addon-button = Aktifkan
+expand-addon-button = Opsi Lainnya
+addons-enabled-heading = Diaktifkan
+addons-disabled-heading = Dinonaktifkan
+addon-detail-author-label = Penyusun
+addon-detail-version-label = Versi
+addon-detail-last-updated-label = Terakhir Diperbarui
+addon-detail-homepage-label = Beranda
+addon-detail-rating-label = Peringkat
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (dinonaktifkan)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+       *[other] { $numberOfReviews } ulasan
+    }

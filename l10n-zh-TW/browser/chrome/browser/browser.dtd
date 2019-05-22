@@ -64,6 +64,8 @@ but will never be visible at the same time. -->
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "k">
 
+<!-- Tab context menu -->
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -108,7 +110,6 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "隱藏分頁">
 
 <!ENTITY  listAllTabs.label      "列出所有分頁">
-
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
 <!ENTITY  allTabsMenu.searchTabs.label       "搜尋分頁">
@@ -130,6 +131,9 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "列印…">
 <!ENTITY printCmd.accesskey "P">
 <!ENTITY printCmd.commandkey "p">
+
+<!ENTITY importFromAnotherBrowserCmd.label "從另一個瀏覽器匯入…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "I">
 
 <!ENTITY taskManagerCmd.label "工作管理員">
 
@@ -213,6 +217,28 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenExit.label "離開全螢幕模式">
 <!ENTITY fullScreenExit.accesskey "F">
 
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "Firefox 隨身帶著走">
+<!ENTITY fxa.signin.description.label "在您的各種裝置上同步書籤、瀏覽紀錄、登入資訊及其他設定。">
+<!ENTITY fxa.signin.button.label "開啟 &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "收信確認">
+<!ENTITY fxa.unverified.description.label "請先驗證您的帳號，即可開始同步。">
+<!ENTITY fxa.unverified.button.label "開啟 &syncBrand.shortName.label; 設定…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "已登入為">
+<!ENTITY fxa.menu.manageAccount.label "管理帳號…">
+<!ENTITY fxa.menu.syncSettings.label "&syncBrand.shortName.label; 設定…">
+<!ENTITY fxa.menu.connectAnotherDevice.label "&syncedTabs.sidebar.connectAnotherDevice;">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "連結其他裝置…">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
+
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
      respectively before and after the domain requiring fullscreen.
@@ -229,6 +255,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "離開全螢幕（Esc）">
 <!ENTITY leaveDOMFullScreen.label "離開全螢幕模式">
 <!ENTITY leaveDOMFullScreen.accesskey "u">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.label "子母畫面">
+<!ENTITY pictureInPicture.accesskey "u">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -408,6 +440,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.label       "偏好設定">
 <!ENTITY preferencesCmdUnix.accesskey     "n">
 
+<!ENTITY logins.label                           "登入資訊與密碼">
+
 <!ENTITY clearRecentHistory.label               "清除最近的歷史記錄…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
@@ -437,6 +471,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.clearRecent.label "清除最近的歷史記錄…">
 <!ENTITY appMenuHistory.restoreSession.label "回復先前的瀏覽狀態">
 <!ENTITY appMenuHistory.viewSidebar.label "檢視歷史側邊欄">
+<!ENTITY appMenuHistory.hideSidebar.label "隱藏瀏覽紀錄側邊欄">
 <!ENTITY appMenuHistory.recentHistory.label "最近紀錄">
 <!ENTITY appMenuHelp.label "說明">
 
@@ -465,6 +500,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "登入至 Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "管理裝置…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "檢視「已同步的分頁」側邊欄">
+<!ENTITY appMenuRemoteTabs.hidesidebar.label "隱藏已同步分頁側邊欄">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "連結其他裝置">
 
 <!ENTITY appMenuRecentHighlights.label "近期焦點">
@@ -494,6 +530,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.manageExtension.accesskey "E">
 <!ENTITY customizeMenu.removeExtension.label "移除擴充套件">
 <!ENTITY customizeMenu.removeExtension.accesskey "v">
+
+<!-- LOCALIZATION NOTE (reportExtension.label) This label is used in the extensions
+     toolbar buttons context menus, a user can use this command to submit to Mozilla
+     an abuse report related to that extension. "Report" is a verb. -->
+<!ENTITY customizeMenu.reportExtension.label "回報擴充套件">
+<!ENTITY customizeMenu.reportExtension.accesskey "o">
 
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
@@ -879,7 +921,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "您並未授予此網站任何特殊權限。">
 <!ENTITY identity.permissionsReloadHint "您可能需要重新載入頁面才能讓變更生效。">
 <!ENTITY identity.permissionsPreferences.tooltip "開啟權限偏好設定">
-
 <!ENTITY identity.contentBlockingPreferences.tooltip "開啟內容封鎖偏好設定">
 
 
@@ -931,6 +972,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSignIn.label             "登入至 &syncBrand.shortName.label;…">
 <!ENTITY syncSignIn.accesskey         "Y">
 <!ENTITY syncSyncNowItem.label        "立刻同步">
+<!ENTITY syncSyncNowItemSyncing.label "同步中…">
 <!ENTITY syncSyncNowItem.accesskey    "S">
 <!ENTITY syncReAuthItem.label         "重新連線至 &syncBrand.shortName.label;…">
 <!ENTITY syncReAuthItem.accesskey     "R">
@@ -1073,6 +1115,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.acceptButton.accesskey "D">
 <!ENTITY updateAvailable.cancelButton.label "暫時不要">
 <!ENTITY updateAvailable.cancelButton.accesskey "N">
+
 <!ENTITY updateAvailable.panelUI.label "下載 &brandShorterName; 更新">
 
 <!ENTITY updateManual.message "下載全新的 &brandShorterName;，我們會協助您安裝。">
@@ -1090,6 +1133,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.acceptButton.accesskey "R">
 <!ENTITY updateRestart.cancelButton.label "暫時不要">
 <!ENTITY updateRestart.cancelButton.accesskey "N">
+<!ENTITY updateUnsupported.panelUI.label "無法繼續更新">
 <!ENTITY updateRestart.panelUI.label2 "重新啟動以更新 &brandShorterName;">
 
 <!ENTITY newTabControlled.header.message "您的「新分頁」已經變更。">
@@ -1133,8 +1177,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "請點擊 <image class='addon-toolbar-icon'/> 選單中的 <image class='addon-addon-icon'/> 來管理附加元件。">
-<!ENTITY addonPostInstall.incognito.label "允許此擴充套件於瀏覽視窗中執行。">
-<!ENTITY addonPostInstall.incognito.accesskey "A">
+<!ENTITY addonPostInstall.incognito.checkbox.label "允許此擴充套件於隱私瀏覽視窗中執行">
+<!ENTITY addonPostInstall.incognito.checkbox.accesskey "A">
 
 <!ENTITY addonPrivateBrowsing.header2.label "於隱私視窗中對擴充套件行為的變更">
 <!ENTITY addonPrivateBrowsing.body2.label "除非您在設定中允許，否則任何新安裝到 &brandShorterName; 的擴充套件都將無法在隱私瀏覽視窗中使用。">

@@ -666,6 +666,7 @@ addressbar-suggestions-settings = Spremeni nastavitve predlogov iskanja
 
 content-blocking-header = Zavračanje vsebine
 content-blocking-description = Zavračajte vsebino tretjih strani, ki vam sledi po spletu. Nadzirajte, koliko vaše spletne dejavnosti se shranjuje in deli med spletnimi stranmi.
+content-blocking-section-description = Zaščitite svojo zasebnost med brskanjem. Zavrnite nevidno vsebino, ki spremlja vaše obiskane strani in ustvarja profil o vas. Če zavrnete nekaj te vsebine, se lahko strani hitreje naložijo.
 content-blocking-learn-more = Več o tem
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -681,15 +682,24 @@ content-blocking-setting-custom =
 content-blocking-standard-description = Zavrača samo znane sledilce v zasebnih oknih.
 content-blocking-standard-desc = Uravnotežena zaščita in delovanje. Omogoča nekaj sledilcev, tako da spletne strani delujejo pravilno.
 content-blocking-strict-desc = Zavrača vse sledilce, ki jih { -brand-short-name } zazna. Lahko povzroči nedelovanje nekaterih strani.
+content-blocking-strict-description = Močnejša zaščita; lahko povzroči nedelovanje nekaterih strani.
 content-blocking-custom-desc = Izberite, kaj želite zavračati.
 content-blocking-private-trackers = Znane sledilce samo v zasebnih oknih
 content-blocking-third-party-cookies = Sledilne piškotke tretjih strani
+content-blocking-all-cookies = Vse piškotke
+content-blocking-unvisited-cookies = Piškotke neobiskanih spletnih strani
 content-blocking-all-windows-trackers = Znane sledilce v vseh oknih
 content-blocking-all-third-party-cookies = Vse piškotke tretjih strani
+content-blocking-cryptominers = Kriptorudarje
+content-blocking-fingerprinters = Sledilce prstnih odtisov
 content-blocking-warning-title = Opozorilo!
 content-blocking-warning-desc = Zavračanje piškotkov in sledilcev lahko povzroči nedelovanje nekaterih spletnih strani. Za strani, ki jim zaupate, lahko enostavno onemogočite zavračanje.
 content-blocking-warning-description = Zavračanje vsebine lahko povzroči nedelovanje nekaterih spletnih mest. Zavračanje vsebine strani, ki jim zaupate, lahko enostavno onemogočite.
 content-blocking-learn-how = Naučite se, kako
+content-blocking-reload-description = Za uveljavitev sprememb boste morali znova naložiti zavihke.
+content-blocking-reload-tabs-button =
+    .label = Znova naloži vse zavihke
+    .accesskey = Z
 content-blocking-trackers-label =
     .label = Sledilce
     .accesskey = S
@@ -703,10 +713,17 @@ content-blocking-tracking-protection-change-block-list = Zamenjaj seznam za zavr
 content-blocking-cookies-label =
     .label = Piškotke
     .accesskey = š
+content-blocking-expand-section =
+    .tooltiptext = Več informacij
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
     .label = Kriptorudarje
     .accesskey = K
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+content-blocking-fingerprinters-label =
+    .label = Sledilce prstnih odtisov
+    .accesskey = p
 
 ## Privacy Section - Tracking
 
@@ -737,23 +754,12 @@ permissions-notification-link = Več o tem
 permissions-notification-pause =
     .label = Ne prikazuj obvestil do naslednjega zagona { -brand-short-name }a
     .accesskey = u
-permissions-block-autoplay-media =
-    .label = Prepreči spletnim stranem samodejno predvajanje zvočnih vsebin
-    .accesskey = z
-permissions-block-autoplay-media-menu = Za spletne strani, ki samodejno predvajajo zvok
 permissions-block-autoplay-media2 =
     .label = Spletnim stranem prepreči samodejno predvajanje zvoka
     .accesskey = z
 permissions-block-autoplay-media-exceptions =
     .label = Izjeme …
     .accesskey = I
-autoplay-option-ask =
-    .label = Vedno vprašaj
-autoplay-option-allow =
-    .label = Dovoli samodejno predvajanje
-autoplay-option-dont =
-    .label = Ne predvajaj samodejno
-permissions-autoplay-link = Več o tem
 permissions-block-popups =
     .label = Prepovej pojavna okna
     .accesskey = r
@@ -789,10 +795,6 @@ addon-recommendations-link = Več o tem
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Pošiljanje podatkov je onemogočeno za to nastavitev graditve
-collection-browser-errors =
-    .label = { -brand-short-name }u dovoli pošiljanje poročil o napakah brskalnika (vključno s sporočili o napakah) organizaciji { -vendor-short-name }
-    .accesskey = b
-collection-browser-errors-link = Več o tem
 collection-backlogged-crash-reports =
     .label = { -brand-short-name }u dovoli, da v vašem imenu pošilja poročila o sesutju iz zaloge
     .accesskey = z

@@ -13,10 +13,10 @@ to disable the "set as default browser" dialog.
  1 file changed, 2 insertions(+)
 
 diff --git a/toolkit/xre/nsXREDirProvider.cpp b/toolkit/xre/nsXREDirProvider.cpp
-index a094e318d6f1..85bb46d79fb7 100644
+index 2caf0b1d865c..4623ed7ec71c 100644
 --- a/toolkit/xre/nsXREDirProvider.cpp
 +++ b/toolkit/xre/nsXREDirProvider.cpp
-@@ -845,6 +845,7 @@ static nsresult DeleteDirIfExists(nsIFile* dir) {
+@@ -848,6 +848,7 @@ static nsresult DeleteDirIfExists(nsIFile* dir) {
  
  static const char* const kAppendPrefDir[] = {"defaults", "preferences",
                                               nullptr};
@@ -24,7 +24,7 @@ index a094e318d6f1..85bb46d79fb7 100644
  
  #ifdef DEBUG_bsmedberg
  static void DumpFileArray(const char* key, nsCOMArray<nsIFile> dirs) {
-@@ -876,6 +877,7 @@ nsresult nsXREDirProvider::GetFilesInternal(const char* aProperty,
+@@ -879,6 +880,7 @@ nsresult nsXREDirProvider::GetFilesInternal(const char* aProperty,
  
      LoadDirIntoArray(mXULAppDir, kAppendPrefDir, directories);
      LoadDirsIntoArray(mAppBundleDirectories, kAppendPrefDir, directories);

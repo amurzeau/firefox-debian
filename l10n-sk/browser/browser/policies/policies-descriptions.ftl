@@ -10,6 +10,7 @@
 ## These are short descriptions for individual policies, to be displayed
 ## in the documentation section in about:policies.
 
+policy-3rdparty = Nastaví, ku ktorým pravidlám majú prístup rozšírenia cez chrome.storage.managed.
 policy-AppUpdateURL = Nastaví vlastnú URL adresu pre aktualizáciu aplikácie.
 policy-Authentication = Konfiguruje integrovanú autentifikáciu webových stránok, ktoré ju podporujú.
 policy-BlockAboutAddons = Zablokuje prístup ku správcovi doplnkov (about:addons).
@@ -56,18 +57,23 @@ policy-HardwareAcceleration = Ak je nastavená hodnota false, vypne hardvérové
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Nastaví a v prípade potreby uzamkne domovskú stránku.
 policy-InstallAddonsPermission = Povolí určitým webovým stránkam inštalovať doplnky.
+policy-LocalFileLinks = Povolí určitým webovým stránkam odkazovať na súbory uložené na pevnom disku.
 policy-NetworkPrediction = Povolí alebo zakáže prednačítavanie DNS (prefetching).
+policy-NewTabPage = Povolí alebo zakáže stránku novej karty.
 policy-NoDefaultBookmarks = Vypne vytváranie predvolených záložiek a chytrých záložiek aplikácie { -brand-short-name } (Najnavštevovanejšie, Naposledy použité značky). Poznámka: toto pravidlo možno efektívne využiť len vtedy, ak bude nastavené pred prvým spustením.
 policy-OfferToSaveLogins = Nastaví pravidlo na uloženie prihlasovacích údajov v aplikácii { -brand-short-name }. Je možné použiť hodnoty true aj false.
 policy-OverrideFirstRunPage = Nastaví vlastnú stránku pri prvom spustení. Ak nechcete pri prvom spustení zobrazovať žiadnu stránku, nastavte toto pravidlo ako prázdne.
 policy-OverridePostUpdatePage = Nastaví vlastnú stránku po aktualizácii aplikácie. Ak nechcete po aktualizácii zobrazovať žiadnu stránku, nastavte toto pravidlo ako prázdne.
 policy-Permissions = Nastaví povolenia pre kameru, mikrofón, polohu a upozornenia.
 policy-PopupBlocking = Povolí určitým webovým stránkam zobrazovať v predvolenom nastavení vyskakovacie okná.
+policy-Preferences = Nastaví a uzamkne hodnotu pre podmnožinu predvolieb.
 policy-Proxy = Nakonfiguruje nastavenia proxy.
 policy-RequestedLocales = Nastaví zoznam požadovaných jazykov aplikácie, v poradí podľa nastavenej priority.
 policy-SanitizeOnShutdown = Vymaže všetky údaje o prehliadaní v priebehu vypnutia.
+policy-SanitizeOnShutdown2 = Vymaže údaje o prehliadaní v priebehu vypnutia.
 policy-SearchBar = Nastaví predvolené umiestnenie vyhľadávacieho poľa. Používateľ ho môže premiestniť.
 policy-SearchEngines = Nakonfiguruje nastavenie vyhľadávacích modulov. Toto pravidlo je dostupné len vo verzii s rozšírenou podporou (ESR).
+policy-SearchSuggestEnabled = Povolí alebo zakáže návrhy vyhľadávania.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Nainštaluje moduly PKCS #11.
 policy-SSLVersionMax = Nastaví maximálnu verziu SSL.

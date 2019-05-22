@@ -64,6 +64,8 @@ but will never be visible at the same time. -->
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "B">
 
+<!-- Tab context menu -->
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -108,7 +110,6 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Skjulte faner">
 
 <!ENTITY  listAllTabs.label      "Vis liste over alle faner">
-
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
 <!ENTITY  allTabsMenu.searchTabs.label       "Søk i faner">
@@ -130,6 +131,9 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "Skriv ut…">
 <!ENTITY printCmd.accesskey "u">
 <!ENTITY printCmd.commandkey "p">
+
+<!ENTITY importFromAnotherBrowserCmd.label "Importer frå ein annan nettlesar…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "I">
 
 <!ENTITY taskManagerCmd.label "Aktivitetshandterar">
 
@@ -213,6 +217,28 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenExit.label "Avslutt fullskjermmodus">
 <!ENTITY fullScreenExit.accesskey "v">
 
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "Ta med deg Firefox">
+<!ENTITY fxa.signin.description.label "Få bokmerke, historikk, passord og andre innstillingar på alle einingane dine.">
+<!ENTITY fxa.signin.button.label "Slå på &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "Sjekk e-posten din">
+<!ENTITY fxa.unverified.description.label "Du må stadfeste kontoen din før du kan synkronisere.">
+<!ENTITY fxa.unverified.button.label "Opne &syncBrand.shortName.label;-innstillingar…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "Logga inn som">
+<!ENTITY fxa.menu.manageAccount.label "Handter kontoen…">
+<!ENTITY fxa.menu.syncSettings.label "&syncBrand.shortName.label;-innstillingar…">
+<!ENTITY fxa.menu.connectAnotherDevice.label "&syncedTabs.sidebar.connectAnotherDevice;">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "Kople til ei anna eining…">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
+
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
      respectively before and after the domain requiring fullscreen.
@@ -229,6 +255,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "Avslutt fullskjerm (esc)">
 <!ENTITY leaveDOMFullScreen.label "Avslutt fullskjerm">
 <!ENTITY leaveDOMFullScreen.accesskey "v">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.label "Bilde-i-bilde">
+<!ENTITY pictureInPicture.accesskey "B">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -408,6 +440,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.label       "Innstillingar">
 <!ENTITY preferencesCmdUnix.accesskey     "I">
 
+<!ENTITY logins.label                           "Innloggingar og passord">
+
 <!ENTITY clearRecentHistory.label               "Slett nyleg historikk…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
@@ -437,6 +471,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.clearRecent.label "Tøm nyleg historikk…">
 <!ENTITY appMenuHistory.restoreSession.label "Bygg oppatt siste programøkt">
 <!ENTITY appMenuHistory.viewSidebar.label "Vis historikksidestolpe">
+<!ENTITY appMenuHistory.hideSidebar.label "Gøym sidestolpen Historikk">
 <!ENTITY appMenuHistory.recentHistory.label "Nyleg historikk">
 <!ENTITY appMenuHelp.label "Hjelp">
 
@@ -465,6 +500,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Logg inn på Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Handter einingar…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Vis sidestolpe for synkroniserte faner">
+<!ENTITY appMenuRemoteTabs.hidesidebar.label "Gøym sidestolpen Synkroniserte faner">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Kople til ei anna eining">
 
 <!ENTITY appMenuRecentHighlights.label "Siste høgdepunkt">
@@ -494,6 +530,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.manageExtension.accesskey "e">
 <!ENTITY customizeMenu.removeExtension.label "Fjern tillegg">
 <!ENTITY customizeMenu.removeExtension.accesskey "F">
+
+<!-- LOCALIZATION NOTE (reportExtension.label) This label is used in the extensions
+     toolbar buttons context menus, a user can use this command to submit to Mozilla
+     an abuse report related to that extension. "Report" is a verb. -->
+<!ENTITY customizeMenu.reportExtension.label "Rapporter utviding">
+<!ENTITY customizeMenu.reportExtension.accesskey "o">
 
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
@@ -879,7 +921,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "Du har ikkje gjeve denne nettstaden spesielle løyve.">
 <!ENTITY identity.permissionsReloadHint "Du må kanskje laste sida på nytt for at endringane skal gjelde.">
 <!ENTITY identity.permissionsPreferences.tooltip "Opne innstillingar for løyve">
-
 <!ENTITY identity.contentBlockingPreferences.tooltip "Opne innstillingar for innhaldsblokkering">
 
 
@@ -931,6 +972,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSignIn.label             "Logg inn på &syncBrand.shortName.label;…">
 <!ENTITY syncSignIn.accesskey         "L">
 <!ENTITY syncSyncNowItem.label        "Synkroniser no">
+<!ENTITY syncSyncNowItemSyncing.label "Synkroniserer…">
 <!ENTITY syncSyncNowItem.accesskey    "S">
 <!ENTITY syncReAuthItem.label         "Kople til &syncBrand.shortName.label; på nytt…">
 <!ENTITY syncReAuthItem.accesskey     "R">
@@ -1073,6 +1115,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.acceptButton.accesskey "L">
 <!ENTITY updateAvailable.cancelButton.label "Ikkje no">
 <!ENTITY updateAvailable.cancelButton.accesskey "k">
+
 <!ENTITY updateAvailable.panelUI.label "Last ned &brandShorterName;-oppdatering">
 
 <!ENTITY updateManual.message "Last ned eit heilt nytt eksemplar av &brandShorterName; og vi vil hjelpe deg med å installere han.">
@@ -1132,9 +1175,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- LOCALIZATION NOTE: (addonPostInstallMessage.label):
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
-<!ENTITY addonPostInstallMessage.label "Administrer tillegga dine ved å klikke på <image class='addon-addon-icon'/> i menyen <image class='addon-toolbar-icon'/>.">
-<!ENTITY addonPostInstall.incognito.label "Tillat at denne utvidinga vert køyrt i private vindauge.">
-<!ENTITY addonPostInstall.incognito.accesskey "a">
+<!ENTITY addonPostInstallMessage.label "Administrer tillegga dine ved å klikke på <image class='addon-addon-icon'/> i <image class='addon-toolbar-icon'/> menyen.">
+<!ENTITY addonPostInstall.incognito.checkbox.label "Tillat denne utvidinga å kløyre i private vindauge">
+<!ENTITY addonPostInstall.incognito.checkbox.accesskey "T">
 
 <!ENTITY addonPrivateBrowsing.header2.label "Endring av korleis utvidingar fungerer i private vindauge">
 <!ENTITY addonPrivateBrowsing.body2.label "Eventuelle nye utvidingar du legg til &brandShorterName; vil ikkje fungere i private vindauge med mindre du tillèt dette i innstillingane.">

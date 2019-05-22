@@ -10,6 +10,7 @@
 ## These are short descriptions for individual policies, to be displayed
 ## in the documentation section in about:policies.
 
+policy-3rdparty = WebExtension’ların chrome.storage.managed aracılığıyla ulaşabileceği ilkeleri ayarla.
 policy-AppUpdateURL = Özel uygulama güncelleme URL'si ayarla.
 policy-Authentication = Destekleyen web siteleri için bütünleşik kimlik doğrulamasını yapılandır.
 policy-BlockAboutAddons = Eklenti yöneticisine (about:addons) erişimi engelle.
@@ -39,7 +40,7 @@ policy-DisableSafeMode = Güvenli kipte yeniden başlatma özelliğini devre dı
 policy-DisableSecurityBypass = Kullanıcının belli güvenlik uyarılarını görmezden gelmesini engelle.
 policy-DisableSetAsDesktopBackground = Resimler için “Masaüstü arka planı olarak ayarla” menü komutunu devre dışı bırak.
 policy-DisableSystemAddonUpdate = Tarayıcının sistem eklentilerini kurmasını ve güncellemesini engelle.
-policy-DisableTelemetry = Telemetri'yi kapat.
+policy-DisableTelemetry = Telemetri’yi kapat.
 policy-DisplayBookmarksToolbar = Varsayılan olarak yer imleri araç çubuğunu göster.
 policy-DisplayMenuBar = Varsayılan olarak menü çubuğunu göster.
 policy-DNSOverHTTPS = HTTP üzerinden DNS’i yapılandır.
@@ -56,18 +57,23 @@ policy-HardwareAcceleration = false ise donanım ivmelenmesini kapat.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Giriş sayfasını ayarla ve isteğe bağlı olarak kilitle.
 policy-InstallAddonsPermission = Belirli websitelerinin eklenti yüklemesine izin ver.
+policy-LocalFileLinks = Belirli web sitelerinin yerel dosyalara bağlantı vermesine izin ver.
 policy-NetworkPrediction = Ağ tahminini (DNS prefetching) aç veya kapat.
+policy-NewTabPage = Yeni Sekme sayfasını etkinleştir veya devre dışı bırak.
 policy-NoDefaultBookmarks = { -brand-short-name }  ile birlikte gelen varsayılan yer imlerinin ve akıllı yer imlerinin (en çok ziyaret edilenler, son kullanılan etiketler) oluşturulmasını devre dışı bırak. Not: Bu ilke yalnızca profil ilk kez çalıştırılmadan önce kullanılırsa etkili olur.
 policy-OfferToSaveLogins = { -brand-short-name } tarayıcısının kullanıcı adı ve parolaları kaydetmeyi önermesini ayarla. true veya false olarak ayarlanabilir.
 policy-OverrideFirstRunPage = İlk açılış sayfasını değiştir. İlk açılış sayfasını devre dışı bırakmak istiyorsanız bu ilkeyi boş olarak ayarlayın.
 policy-OverridePostUpdatePage = Güncelleme sonrası “Yenilikler” sayfasını değiştir. Güncelleme sonrası sayfasını devre dışı bırakmak istiyorsanız bu ilkeyi boş olarak ayarlayabilirsiniz.
 policy-Permissions = Kamera, mikrofon, konum ve bildirim izinlerini yapılandır.
 policy-PopupBlocking = Belirli web sitelerin varsayılan olarak açılır pencere açmasına izin ver.
+policy-Preferences = Bir tercihler alt kümesinin değerini ayarlayıp kilitle.
 policy-Proxy = Vekil sunucu ayarlarını yapılandır.
 policy-RequestedLocales = Uygulamada kullanılması istenen dilleri tercih sırasına göre ayarla.
 policy-SanitizeOnShutdown = Kapanırken tüm gezinti verilerini temizle.
+policy-SanitizeOnShutdown2 = Kapanırken gezinti verilerini temizle.
 policy-SearchBar = Arama çubuğunun varsayılan konumunu ayarla. Kullanıcı daha sonra özelleştirebilir.
 policy-SearchEngines = Arama motoru ayarlarını yapılandır. Bu ilke yalnızca Extended Support Release (ESR) sürümünde geçerlidir.
+policy-SearchSuggestEnabled = Arama önerilerini etkinleştir veya devre dışı bırak.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = PKCS #11 modüllerini yükle.
 policy-SSLVersionMax = Maksimum SSL sürümünü ayarla.

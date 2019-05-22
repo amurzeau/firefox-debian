@@ -10,10 +10,13 @@
 <!ENTITY fullscreenButton.exitfullscreenlabel "Ukončit režim celé obrazovky">
 <!ENTITY castingButton.castingLabel "Přehrát na obrazovce">
 <!ENTITY closedCaption.off "Vypnuto">
-
 <!-- LOCALIZATION NOTE (volumeScrubber.label): This label is exposed to
      accessibility software to clarify what the slider is for. -->
 <!ENTITY volumeScrubber.label "Ovládání hlasitosti">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label): This string is used as part of
+the Picture-in-Picture video toggle button when the mouse is hovering it. -->
+<!ENTITY pictureInPicture.label "Obraz v obraze">
 
 <!ENTITY stats.media "Média">
 <!ENTITY stats.size "Velikost">
@@ -34,6 +37,8 @@
 <!ENTITY error.srcNotSupported "Formát nebo typ MIME videa není podporovaný.">
 <!ENTITY error.noSource2 "Nebylo nalezeno žádné video s podporovaným formátem a typem MIME.">
 <!ENTITY error.generic "Přehrávání videa selhalo z důvodu neznámé chyby.">
+
+<!ENTITY status.pictureInPicture "Toto video se přehrává jako obraz v obraze.">
 
 <!-- LOCALIZATION NOTE (scrubberScale.nameFormat): the #1 string is the current
 media position, and the #2 string is the total duration. For example, when at

@@ -77,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = Paskiausiai atnaujintas
 detail-contributions-description = Šio priedo autorius prašo paremti tolesnį jo kūrimą nedideliu finansiniu įnašu.
+detail-contributions-button = Prisidėkite
+    .title = Prisidėkite prie šio priedo plėtojimo
+    .accesskey = P
 detail-update-type =
     .value = Naujinti automatiškai
 detail-update-default =
@@ -90,7 +93,14 @@ detail-update-manual =
     .tooltiptext = Nediegti priedo naujinimų automatiškai
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Leisti privačiojo naršymo languose
-detail-private-browsing-description = Priedas veiks privačiojo naršymo languose, ir turės prieigą prie jūsų veiksmų internete. <label data-l10n-name="detail-private-browsing-learn-more">Sužinoti daugiau</label>
+detail-private-browsing-description2 = Jums leidus, šis priedas turės prieigą prie jūsų veiklos internete, kai naršote privačiai. <label data-l10n-name="detail-private-browsing-learn-more">Sužinokite daugiau</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = Neleidžiama privačiojo naršymo languose
+detail-private-disallowed-description = Šis priedas neveikia privačiojo naršymo languose. <label data-l10n-name="detail-private-browsing-learn-more">Sužinokite daugiau</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Reikalinga prieiga prie privačiojo naršymo langų
+detail-private-required-description = Šis priedas turi prieigą prie jūsų veiksmų naršant privačiai. <label data-l10n-name="detail-private-browsing-learn-more">Sužinokite daugiau</label>
 detail-private-browsing-on =
     .label = Leisti
     .tooltiptext = Įjungti privačiajame naršyme
@@ -241,6 +251,10 @@ shortcuts-modifier-other = Įtraukti Ctrl arba Alt
 shortcuts-invalid = Netinkama kombinacija
 shortcuts-letter = Surinkite raidę
 shortcuts-system = Negalima naudoti „{ -brand-short-name }“ sparčiųjų klavišų
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Jau naudoja priedas „{ $addon }“
 shortcuts-card-expand-button =
     { $numberToShow ->
         [one] Rodyti dar { $numberToShow }
@@ -256,5 +270,24 @@ go-back-button =
 remove-addon-button = Pašalinti
 disable-addon-button = Išjungti
 enable-addon-button = Įjungti
+expand-addon-button = Daugiau veiksmų
 addons-enabled-heading = Įjungta
 addons-disabled-heading = Išjungta
+addon-detail-author-label = Autorius
+addon-detail-version-label = Laida
+addon-detail-last-updated-label = Paskiausiai atnaujintas
+addon-detail-homepage-label = Svetainė
+addon-detail-rating-label = Įvertinimas
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (išjungtas)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } atsiliepimas
+        [few] { $numberOfReviews } atsiliepimai
+       *[other] { $numberOfReviews } atsiliepimų
+    }

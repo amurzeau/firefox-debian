@@ -74,7 +74,7 @@ index 197048ef901a..aab53563824f 100644
  UNIFIED_SOURCES += [
      'Assertions.cpp',
 diff --git a/tools/profiler/core/platform-linux-android.cpp b/tools/profiler/core/platform-linux-android.cpp
-index a8ae2938dc79..1d7b388b9464 100644
+index 19d0a5c56d41..a11e89df7da9 100644
 --- a/tools/profiler/core/platform-linux-android.cpp
 +++ b/tools/profiler/core/platform-linux-android.cpp
 @@ -60,7 +60,6 @@
@@ -85,7 +85,7 @@ index a8ae2938dc79..1d7b388b9464 100644
  #include "mozilla/PodOperations.h"
  #include "mozilla/DebugOnly.h"
  
-@@ -253,7 +252,7 @@ Sampler::Sampler(PSLockRef aLock)
+@@ -254,7 +253,7 @@ Sampler::Sampler(PSLockRef aLock)
  
    // Request profiling signals.
    struct sigaction sa;

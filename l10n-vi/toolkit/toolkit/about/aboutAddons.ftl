@@ -57,10 +57,10 @@ cmd-preferences =
            *[other] P
         }
 cmd-enable-theme =
-    .label = Sử dụng giao diện
+    .label = Sử dụng chủ đề
     .accesskey = W
 cmd-disable-theme =
-    .label = Dừng sử dụng giao diện
+    .label = Dừng sử dụng chủ đề
     .accesskey = W
 cmd-install-addon =
     .label = Cài đặt
@@ -70,13 +70,16 @@ cmd-contribute =
     .accesskey = C
     .tooltiptext = Đóng góp vào sự phát triển của tiện ích này
 discover-title = Tiện ích là gì?
-discover-description = Tiện ích là những ứng dụng cho phép bạn cá nhân hóa { -brand-short-name } bằng kiểu dáng hoặc chức năng phụ. Hãy thử một thanh lề tiết kiệm thời gian, một trình báo thời tiết, hoặc một giao diện để biến { -brand-short-name } thành của riêng bạn.
+discover-description = Tiện ích là những ứng dụng cho phép bạn cá nhân hóa { -brand-short-name } bằng kiểu dáng hoặc chức năng phụ. Hãy thử một thanh lề tiết kiệm thời gian, một trình báo thời tiết, hoặc một chủ đề để biến { -brand-short-name } thành của riêng bạn.
 discover-footer = Khi bạn kết nối mạng, bảng này sẽ giới thiệu một số tiện ích tốt nhất và thông dụng nhất để bạn thử.
 detail-version =
     .label = Phiên bản
 detail-last-updated =
     .label = Cập nhật lần cuối
 detail-contributions-description = Nhà phát triển tiện ích này đề nghị bạn hỗ trợ một khoản tài chính nhỏ cho việc phát triển.
+detail-contributions-button = Đóng góp
+    .title = Đóng góp cho sự phát triển của tiện ích mở rộng này
+    .accesskey = C
 detail-update-type =
     .value = Cập nhật tự động
 detail-update-default =
@@ -90,7 +93,14 @@ detail-update-manual =
     .tooltiptext = Không tự động cài đặt cập nhật
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Chạy trong cửa sổ riêng tư
-detail-private-browsing-description = Tiện ích mở rộng sẽ hoạt động trong cửa sổ riêng tư và có quyền truy cập vào các hoạt động trực tuyến của bạn. <label data-l10n-name="detail-private-browsing-learn-more">Tìm hiểu thêm</label>
+detail-private-browsing-description2 = Khi được cho phép, tiện ích mở rộng sẽ có quyền truy cập vào các hoạt động trực tuyến của bạn trong khi duyệt web riêng tư. <label data-l10n-name="detail-private-browsing-learn-more">Tìm hiểu thêm</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = Không được phép trong cửa sổ riêng tư
+detail-private-disallowed-description = Tiện ích mở rộng này không chạy trong khi duyệt web riêng tư. <label data-l10n-name="detail-private-browsing-learn-more">Tìm hiểu thêm</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Yêu cầu quyền truy cập vào cửa sổ riêng tư
+detail-private-required-description = Tiện ích mở rộng này có quyền truy cập vào các hoạt động trực tuyến của bạn trong khi duyệt web riêng tư. <label data-l10n-name="detail-private-browsing-learn-more">Tìm hiểu thêm</label>
 detail-private-browsing-on =
     .label = Cho phép
     .tooltiptext = Kích hoạt trong duyệt web riêng tư
@@ -135,9 +145,9 @@ disabled-unsigned-description = Những tiện ích sau chưa được kiểm tr
 disabled-unsigned-learn-more = Tìm hiểu về nỗ lực đảm bảo an toàn trên mạng cho bạn của chúng tôi.
 disabled-unsigned-devinfo = Nếu bạn là lập trình viên và muốn tiện ích của mình được kiểm tra thì có thể đọc <label data-l10n-name="learn-more">tài liệu hướng dẫn</label> của chúng tôi.
 plugin-deprecation-description = Bạn đang thấy thiếu gì đó? Một số phần bổ trợ không còn được hỗ trợ bởi { -brand-short-name }. <label data-l10n-name="learn-more">Tìm hiểu thêm.</label>
-legacy-warning-show-legacy = Hiển thị các phần mở rộng kế thừa
+legacy-warning-show-legacy = Hiển thị các tiện ích mở rộng kế thừa
 legacy-extensions =
-    .value = Phần mở rộng kế thừa
+    .value = Tiện ích mở rộng kế thừa
 legacy-extensions-description = Các tiện ích mở rộng này không đáp ứng tiêu chuẩn hiện tại của { -brand-short-name } do đó chúng đã bị ngừng hoạt động. <label data-l10n-name="legacy-learn-more">Tìm hiểu về các thay đổi tiện ích</label>
 private-browsing-description2 =
     { -brand-short-name } đang thay đổi cách các tiện ích mở rộng hoạt động trong trình duyệt riêng tư. Bất kỳ tiện ích mở rộng mới nào bạn thêm vào
@@ -241,6 +251,10 @@ shortcuts-modifier-other = Bao gồm Ctrl hoặc Alt
 shortcuts-invalid = Kết hợp không hợp lệ
 shortcuts-letter = Nhập một kí tự
 shortcuts-system = Không thể ghi đè một phím tắt { -brand-short-name }
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Đã được sử dụng bởi { $addon }
 shortcuts-card-expand-button =
     { $numberToShow ->
        *[other] Hiển thị { $numberToShow } khác
@@ -254,5 +268,22 @@ go-back-button =
 remove-addon-button = Xóa
 disable-addon-button = Tắt
 enable-addon-button = Bật
+expand-addon-button = Tùy chọn khác
 addons-enabled-heading = Đã bật
-addons-disabled-heading = Đã tắt
+addons-disabled-heading = Đã vô hiệu hóa
+addon-detail-author-label = Tác giả
+addon-detail-version-label = Phiên bản
+addon-detail-last-updated-label = Cập nhật cuối
+addon-detail-homepage-label = Trang chủ
+addon-detail-rating-label = Xêp hạng
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (đã vô hiệu hóa)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+       *[other] { $numberOfReviews } đánh giá
+    }

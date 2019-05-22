@@ -88,6 +88,11 @@ detail-version =
 detail-last-updated =
     .label = Senest opdateret
 detail-contributions-description = Udvikleren af denne tilføjelse forespøger om du vil hjælpe dens videre udvikling ved at bidrage med en lille donation.
+
+detail-contributions-button = Bidrag
+    .title = Bidrag til udviklingen af denne tilføjelse
+    .accesskey = B
+
 detail-update-type =
     .value = Automatiske opdateringer
 detail-update-default =
@@ -103,7 +108,18 @@ detail-update-manual =
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Anvend i private vinduer
 
-detail-private-browsing-description = Udvidelsen vil fungere i private vinduer og dermed have adgang til dine aktiviteter på nettet. <label data-l10n-name="detail-private-browsing-learn-more">Læs mere</label>
+detail-private-browsing-description2 = Udvidelsen har adgang til dine aktiviteter i privat browsing-tilstand, hvis du giver den tilladelse til det. <label data-l10n-name="detail-private-browsing-learn-more">Læs mere</label>
+
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = Virker ikke i privat browsing
+detail-private-disallowed-description = Denne udvidelse virker ikke under privat browsing. <label data-l10n-name="detail-private-browsing-learn-more">Læs mere</label>
+
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Har altid adgang til private vinduer
+detail-private-required-description = Denne udvidelse har adgang til din aktivitet på nettet, når du anvender privat browsing.<label data-l10n-name="detail-private-browsing-learn-more">Læs mere</label>
+
+detail-private-browsing-description = Udvidelsen vil fungere, når du bruger privat browsing og har dermed adgang til dine aktiviteter på nettet. <label data-l10n-name="detail-private-browsing-learn-more">Læs mere</label>
 
 detail-private-browsing-on =
     .label = Tillad
@@ -268,6 +284,11 @@ shortcuts-invalid = Ugyldig kombination
 shortcuts-letter = Indtast et bogstav
 shortcuts-system = Kan ikke tilsidesætte { -brand-short-name }-genvej
 
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Bruges allerede af { $addon }
+
 shortcuts-card-expand-button =
     { $numberToShow ->
         *[other] vis { $numberToShow } til
@@ -282,6 +303,27 @@ go-back-button =
 remove-addon-button = Fjern
 disable-addon-button = Deaktiver
 enable-addon-button = Aktiver
+expand-addon-button = Flere indstillinger
 
 addons-enabled-heading = Aktiveret
 addons-disabled-heading = Deaktiveret
+
+addon-detail-author-label = Udvikler
+addon-detail-version-label = Version
+addon-detail-last-updated-label = Senest opdateret
+addon-detail-homepage-label = Websted
+addon-detail-rating-label = Bedømmelse
+
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (deaktiveret)
+
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } anmeldelse
+       *[other] { $numberOfReviews } anmeldelser
+    }

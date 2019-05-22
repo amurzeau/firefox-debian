@@ -145,6 +145,9 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.accesskey "U">
 <!ENTITY printCmd.commandkey "p">
 
+<!ENTITY importFromAnotherBrowserCmd.label "Importer fra en anden browser…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "I">
+
 <!ENTITY taskManagerCmd.label "Jobliste">
 
 <!ENTITY goOfflineCmd.label "Arbejd offline">
@@ -224,7 +227,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaSignInError.label "Genopret forbindelse til &syncBrand.shortName.label;">
 <!ENTITY fxaUnverified.label "Bekræft din konto">
 
-
 <!ENTITY fullScreenMinimize.tooltip "Minimer">
 <!ENTITY fullScreenRestore.tooltip "Gendan">
 <!ENTITY fullScreenClose.tooltip "Luk">
@@ -232,6 +234,28 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenAutohide.accesskey "S">
 <!ENTITY fullScreenExit.label "Afslut fuld skærm">
 <!ENTITY fullScreenExit.accesskey "A">
+
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "Tag Firefox med dig">
+<!ENTITY fxa.signin.description.label "Få adgang til din historik, dine bogmærker, adgangskoder og andre indstillinger på alle dine enheder.">
+<!ENTITY fxa.signin.button.label "Aktiver &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "Tjek din indbakke">
+<!ENTITY fxa.unverified.description.label "Du skal bekræfte din konto, før du kan begynde at synkronisere.">
+<!ENTITY fxa.unverified.button.label "Åbn indstillingerne for &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "Logget ind som">
+<!ENTITY fxa.menu.manageAccount.label "Håndter konto…">
+<!ENTITY fxa.menu.syncSettings.label "Indstillinger for &syncBrand.shortName.label;…">
+<!ENTITY fxa.menu.connectAnotherDevice.label "&syncedTabs.sidebar.connectAnotherDevice;">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "Opret forbindelse til en ny enhed…">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
@@ -249,6 +273,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "Afslut fuld skærm (esc)">
 <!ENTITY leaveDOMFullScreen.label "Afslut fuld skærm">
 <!ENTITY leaveDOMFullScreen.accesskey "u">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.label "Billede-i-billede">
+<!ENTITY pictureInPicture.accesskey "e">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -447,6 +477,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.label       "Indstillinger">
 <!ENTITY preferencesCmdUnix.accesskey     "I">
 
+<!ENTITY logins.label                           "Logins og adgangskoder">
+
 <!ENTITY clearRecentHistory.label               "Ryd seneste historik…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
@@ -481,6 +513,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.clearRecent.label "Ryd seneste historik…">
 <!ENTITY appMenuHistory.restoreSession.label "Gendan forrige session">
 <!ENTITY appMenuHistory.viewSidebar.label "Vis historik i sidepanel">
+<!ENTITY appMenuHistory.hideSidebar.label "Skjul historik i sidepanel">
 <!ENTITY appMenuHistory.recentHistory.label "Seneste historik">
 <!ENTITY appMenuHelp.label "Hjælp">
 <!ENTITY appMenuHelp.tooltip "Åbn menuen Hjælp">
@@ -512,6 +545,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Log ind på Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Håndter enheder…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Vis synkroniserede faneblade i sidepanel">
+<!ENTITY appMenuRemoteTabs.hidesidebar.label "Skjul synkroniserede faneblade i sidepanel">
 
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Opret forbindelse til en ny enhed">
 
@@ -776,7 +810,7 @@ items are mutually exclusive. -->
 <!ENTITY mediaUnmute.label           "Slå lyd til">
 <!ENTITY mediaUnmute.accesskey       "S">
 <!ENTITY mediaPlaybackRate2.label     "Afspilningshastighed">
-<!ENTITY mediaPlaybackRate2.accesskey "A">
+<!ENTITY mediaPlaybackRate2.accesskey "h">
 <!ENTITY mediaPlaybackRate050x2.label "Langsom (0.5×)">
 <!ENTITY mediaPlaybackRate050x2.accesskey "L">
 <!ENTITY mediaPlaybackRate100x2.label "Normal">
@@ -1004,6 +1038,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSignIn.label             "Log ind på &syncBrand.shortName.label;…">
 <!ENTITY syncSignIn.accesskey         "Y">
 <!ENTITY syncSyncNowItem.label        "Synkroniser nu">
+<!ENTITY syncSyncNowItemSyncing.label "Synkroniserer…">
 <!ENTITY syncSyncNowItem.accesskey    "S">
 <!ENTITY syncReAuthItem.label         "Genopret forbindelse til &syncBrand.shortName.label;…">
 <!ENTITY syncReAuthItem.accesskey     "G">
@@ -1339,6 +1374,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY addonPostInstallMessage.label "Håndter dine tilføjelser ved at klikke på <image class='addon-addon-icon'/> i <image class='addon-toolbar-icon'/>-menuen.">
 <!ENTITY addonPostInstall.incognito.label "Tillad denne udvidelse at virke i private vinduer.">
 <!ENTITY addonPostInstall.incognito.accesskey "T">
+<!ENTITY addonPostInstall.incognito.checkbox.label "Tillad denne udvidelse at virke i private vinduer.">
+<!ENTITY addonPostInstall.incognito.checkbox.accesskey "T">
 
 <!ENTITY addonPrivateBrowsing.header.label "Udvidelser i private vinduer">
 <!ENTITY addonPrivateBrowsing.body.label "Udvidelser har som standard ikke tilladelse til at køre i private vinduer. Det vil sige, at de simpelthen ikke fungerer i private vinduer og derfor heller ikke har adgang til din online adfærd. Gå til indstillinger for at tillade udvidelser at køre i private vinduer.">

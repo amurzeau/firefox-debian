@@ -338,6 +338,9 @@ browsing-search-on-start-typing =
 browsing-cfr-recommendations =
     .label = Preporučuj dodatke dok pretražujem
     .accesskey = r
+browsing-cfr-features =
+    .label = Preporuči mogućnosti tijekom pregledavanja
+    .accesskey = m
 browsing-cfr-recommendations-learn-more = Saznajte više
 
 ## General Section - Proxy
@@ -660,6 +663,7 @@ addressbar-suggestions-settings = Promijenite postavke za prijedloge tražilica
 
 content-blocking-header = Blokiranje sadržaja
 content-blocking-description = Blokirajte sadržaj trećih strana koji vas prati na webu. Kontrolirajte koliko se vaših aktivnosti na mreži sprema i dijeli između web stranica.
+content-blocking-section-description = Zaštitite svoju privatnost dok pregledavate. Blokirajte nevidljivi sadržaj koji prati koje stranice posjećujete i profilira vas. Blokiranje dijela ovog sadržaja može ubrzati učitavanje stranica.
 content-blocking-learn-more = Saznajte više
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -675,15 +679,24 @@ content-blocking-setting-custom =
 content-blocking-standard-description = Blokiraj poznate pratitelje samo u Privatnom pretraživanju.
 content-blocking-standard-desc = Uravnoteženo za zaštitu i performanse. Dozvoli neke pratitelje tako da webstranice funkcioniraju ispravno.
 content-blocking-strict-desc = Blokiraj sve pratitelje koje { -brand-short-name } otkrije. Može uzrokovati greške na nekim stranicama.
+content-blocking-strict-description = Snažnija zaštita, može uzrokovati pucanje nekih web stranica.
 content-blocking-custom-desc = Odaberite što blokirati.
 content-blocking-private-trackers = Poznati pratitelji samo u Privatnom pretraživanju
 content-blocking-third-party-cookies = Kolačići za praćenje trećih strana
+content-blocking-all-cookies = Sve kolačiće
+content-blocking-unvisited-cookies = Kolačiće s neposjećenih stranica
 content-blocking-all-windows-trackers = Poznati pratitelji u svim prozorima
 content-blocking-all-third-party-cookies = Svi kolačići trećih strana
+content-blocking-cryptominers = Kripto rudare
+content-blocking-fingerprinters = Jedinstvene otiske
 content-blocking-warning-title = Upozorenje!
 content-blocking-warning-desc = Blokiranje kolačića i pratitelja može dovesti do grešaka na nekim stranicama. Lako je onemogućiti blokiranje na stranicama kojima vjerujete.
 content-blocking-warning-description = Blokiranje sadržaja može uzrokovati greške u prikazu nekih web stranica. Lako možete isključiti blokiranje na stranicama kojima vjerujete.
 content-blocking-learn-how = Saznajte kako
+content-blocking-reload-description = Morat ćete osvježiti svoje kartice kako bi primijenili ove promjene.
+content-blocking-reload-tabs-button =
+    .label = Osvježi sve kartice
+    .accesskey = r
 content-blocking-trackers-label =
     .label = Pratitelji
     .accesskey = t
@@ -697,6 +710,8 @@ content-blocking-tracking-protection-change-block-list = Promijenite popis bloki
 content-blocking-cookies-label =
     .label = Kolačići
     .accesskey = K
+content-blocking-expand-section =
+    .tooltiptext = Više informacija
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
     .label = Kripto rudari
@@ -736,23 +751,12 @@ permissions-notification-link = Saznajte više
 permissions-notification-pause =
     .label = Pauziraj obavijesti dok se { -brand-short-name } ponovno ne pokrene
     .accesskey = n
-permissions-block-autoplay-media =
-    .label = Blokiraj web stranice da automatski reproduciraju medije sa zvukom
-    .accesskey = B
-permissions-block-autoplay-media-menu = Za web stranice koje automatski reproduciraju zvuk
 permissions-block-autoplay-media2 =
     .label = Blokiraj automatsku reprodukciju zvuka na web stranicama
     .accesskey = B
 permissions-block-autoplay-media-exceptions =
     .label = Iznimke...
     .accesskey = e
-autoplay-option-ask =
-    .label = Uvijek pitaj
-autoplay-option-allow =
-    .label = Dozvoli automatsku reprodukciju
-autoplay-option-dont =
-    .label = Nemoj automatski reproducirati
-permissions-autoplay-link = Saznajte više
 permissions-block-popups =
     .label = Blokiraj skočne prozore
     .accesskey = s
@@ -788,10 +792,6 @@ addon-recommendations-link = Saznajte više
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Izvještaji s podacima su onemogućeni za konfiguraciju
-collection-browser-errors =
-    .label = Dozvolite { -brand-short-name } da šalje izvještaje o greškama preglednika (uključujući poruke o greškama) prema { -vendor-short-name }
-    .accesskey = D
-collection-browser-errors-link = Saznajte više
 collection-backlogged-crash-reports =
     .label = Dozvolite { -brand-short-name } da šalje zapise o rušenju u vaše ime
     .accesskey = o

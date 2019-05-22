@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 addons-window =
-    .title = Gestô di Conponenti azonti
+    .title = Gestô di conponenti azonti
 search-header =
     .placeholder = Çerca in addons.mozilla.org
     .searchbuttonlabel = Çerca
@@ -22,8 +22,9 @@ list-empty-find-updates =
 list-empty-button =
     .label = Ciù informaçioin in sci conponenti azonti
 install-addon-from-file =
-    .label = Installa i conponenti azonti da 'n file…
+    .label = Installa i conponenti azonti da 'n schedaio…
     .accesskey = I
+help-button = Sopòrto conponenti azonti
 tools-menu =
     .tooltiptext = Angæsi pe tutti i conponenti azonti
 show-unsigned-extensions-button =
@@ -31,7 +32,7 @@ show-unsigned-extensions-button =
 show-all-extensions-button =
     .label = Amia tutte e estenscioin
 debug-addons =
-    .label = Debug di Conponenti azonti
+    .label = Debug di conponenti azonti
     .accesskey = B
 cmd-show-details =
     .label = Fanni vedde ciù informaçioin
@@ -63,7 +64,7 @@ cmd-contribute =
     .label = Agiutta
     .accesskey = A
     .tooltiptext = Agiutta a svilupâ sto conponente azonto
-discover-title = E cöse son sti Conponenti azonti?
+discover-title = E cöse son sti conponenti azonti?
 discover-description =
     I conponenti azonti son aplicaçioin che te peuan agiutâ a personalizâ o { -brand-short-name } graçie
     a atre funçionaliæ ò stili. Preuvâ 'na bara pe risparmiâ do tenpo, in notiçiario do tenpo ò 'n tema pe fâ davei o
@@ -87,6 +88,8 @@ detail-update-automatic =
 detail-update-manual =
     .label = Asmòrtou
     .tooltiptext = No instalâ agiornamenti in aotomatico
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Ezegoçion inti barcoin privæ
 detail-private-browsing-on =
     .label = Permetti
     .tooltiptext = Permetti inta Navegaçion privâ
@@ -136,7 +139,7 @@ legacy-extensions =
     .value = Estenscioin Legacy
 legacy-extensions-description = Ste estenscioin no va ben co-i corenti standard de { -brand-short-name } coscì en stæti dizativæ. <label data-l10n-name="legacy-learn-more">Pe saveine de ciù in sci conponenti azonti</label>
 extensions-view-discover =
-    .name = Scarega i Conponenti azonti
+    .name = Scarega conponenti azonti
     .tooltiptext = { extensions-view-discover.name }
 extensions-view-recent-updates =
     .name = Urtimi agiornamenti
@@ -215,6 +218,13 @@ extensions-updates-update-selected =
 
 ## Extension shortcut management
 
+manage-extensions-shortcuts =
+    .label = Gestisci scorsaeiu de estenscioin
+    .accesskey = G
+shortcuts-input =
+    .placeholder = Inserisci 'n scorsaieu
+shortcuts-browserAction = Ativa estenscion
+shortcuts-pageAction = Ativa açion da pagina
 shortcuts-sidebarAction = Ativa/dizativa bara de scianco
 shortcuts-modifier-mac = Includde Ctrl, Alt, ò ⌘
 shortcuts-modifier-other = Includde Ctrl ò Alt
@@ -234,5 +244,6 @@ go-back-button =
 remove-addon-button = Scancella
 disable-addon-button = Dizabilita
 enable-addon-button = Abilita
+expand-addon-button = Ciù inpostaçioin
 addons-enabled-heading = Ativou
 addons-disabled-heading = Dizativou

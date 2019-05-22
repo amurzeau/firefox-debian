@@ -10,6 +10,7 @@
 ## These are short descriptions for individual policies, to be displayed
 ## in the documentation section in about:policies.
 
+policy-3rdparty = Nustatykite strategijas, kurias „WebExtensions“ galės pasiekti per „chrome.storage.managed“.
 policy-AppUpdateURL = Nustatyti pasirinktinį programos naujinimų URL.
 policy-Authentication = Keisti integruotą autentikaciją ją palaikančioms svetainėms.
 policy-BlockAboutAddons = Blokuoti prieigą prie priedų valdymo (about:addons).
@@ -56,18 +57,23 @@ policy-HardwareAcceleration = Jei „false“, išjungti aparatinį spartinimą.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Nustatyti ir papildomai užrakinti pradžios tinklalapį.
 policy-InstallAddonsPermission = Leisti kai kurioms svetainėms diegti priedus.
+policy-LocalFileLinks = Leisti konkrečioms svetainėms susieti vietinius failus.
 policy-NetworkPrediction = Įjungti arba išjungti tinklo nuspėjimą (parengtinis DNS įkėlimas).
+policy-NewTabPage = Įjungti arba išjungti naujos kortelės puslapį.
 policy-NoDefaultBookmarks = Išjungti numatytųjų adresyno įrašų, kurie ateina su „{ -brand-short-name }“, kūrimą, bei išmanųjį adresyną („Lankomiausi“, „Paskiausiai naudotos gairės“). Pastaba: šis nuostatas veikia tik jeigu yra panaudojamas prieš pirmąjį profilio paleidimą.
 policy-OfferToSaveLogins = Taikyti nuostatą, skirtą leisti „{ -brand-short-name }“ siūlyti įsiminti įrašytus prisijungimus ir slaptažodžius. Priimamos „true“ ir „false“ reikšmės.
 policy-OverrideFirstRunPage = Pakeisti pirmo paleidimo puslapį. Padarykite šią strategiją „blank“, norėdami išjungti pirmojo paleidimo puslapį.
 policy-OverridePostUpdatePage = Pakeisti po atnaujinimų rodomą puslapį „Kas naujo“. Padarykite šią strategiją „blank“, norėdami išjungti po atnaujinimų rodomą puslapį.
 policy-Permissions = Konfigūruoti kameros, mikrofono, buvimo vietos nustatymo ir pranešimų leidimus.
 policy-PopupBlocking = Leisti kai kurioms svetainėms pagal numatymą rodyti iškylančiuosius langus.
+policy-Preferences = Nustatykite ir užfiksuokite nuostatų rinkinio reikšmę.
 policy-Proxy = Konfigūruoti įgaliotųjų serverių nuostatas.
 policy-RequestedLocales = Nustatyti programos prašomų kalbų sąrašo pageidavimo tvarką.
 policy-SanitizeOnShutdown = Išvalyti visus naršymo duomenis išjungiant.
+policy-SanitizeOnShutdown2 = Išvalyti navigacijos duomenis išjungimo metu.
 policy-SearchBar = Parinkti numatytąją paieškos lauko vietą. Naudotojui vis tiek leidžiama ją keisti.
 policy-SearchEngines = Konfigūruoti ieškyklių nuostatas. Ši strategija galima tik prailginto palaikymo laidos (ESR) versijoje.
+policy-SearchSuggestEnabled = Įjungti arba išjungti paieškos žodžių siūlymus.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Diegti PKCS #11 modulius.
 policy-SSLVersionMax = Nustatyti didžiausią SSL versiją.

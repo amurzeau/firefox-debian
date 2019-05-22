@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 certmgr-title =
-    .title = Gestô di Certificati
+    .title = Gestô di certificati
 certmgr-tab-mine =
     .label = I teu Certificati
 certmgr-tab-people =
@@ -15,7 +15,7 @@ certmgr-tab-ca =
 certmgr-mine = Ti gh'é sti certificati da ste organizaçioin che te identifican
 certmgr-people = Ti gh'é sti certificati che identifican ste personn-e
 certmgr-servers = Ti gh'é sti certificati che identifican sti server
-certmgr-ca = Ti gh'é sti certificati inti file che identifican ste aotoritæ
+certmgr-ca = Ti gh'é sti certificati inti schedai che identifican ste aotoritæ
 certmgr-detail-general-tab-title =
     .label = Generale
     .accesskey = G
@@ -25,17 +25,17 @@ certmgr-detail-pretty-print-tab-title =
 certmgr-pending-label =
     .value = Verifico o certificato…
 certmgr-subject-info-label =
-    .value = Publicou in sciô
+    .value = Rilasciòu a
 certmgr-issuer-info-label =
     .value = Publicou da
 certmgr-period-of-validity-label =
     .value = Periodo de validitæ
 certmgr-fingerprints-label =
-    .value = Inpronte de die
-certmgr-subject-label = Publicou in sciô
+    .value = Inpronte digitali
+certmgr-subject-label = Rilasciòu a
 certmgr-issuer-label = Publicou da
 certmgr-period-of-validity = Periodo de validitæ
-certmgr-fingerprints = Inpronte de die
+certmgr-fingerprints = Inpronte digitali
 certmgr-cert-detail =
     .title = Detalli do certificato
     .buttonlabelaccept = Særa
@@ -51,13 +51,13 @@ certmgr-cert-detail-serialnumber =
 certmgr-cert-detail-sha256-fingerprint =
     .value = Inpronta digitale SHA-256
 certmgr-cert-detail-sha1-fingerprint =
-    .value = Inpronte de die SHA1
+    .value = Inpronta digitale SHA1
 certmgr-cert-detail-commonname = Nomme Comune (CN)
 certmgr-cert-detail-org = Organizaçion (O)
 certmgr-cert-detail-orgunit = Unitæ de Organizaçion (OU)
 certmgr-cert-detail-serial-number = Numero de serie
 certmgr-cert-detail-sha-256-fingerprint = Inpronta digitale SHA-256
-certmgr-cert-detail-sha-1-fingerprint = Inpronte de die SHA1
+certmgr-cert-detail-sha-1-fingerprint = Inpronta digitale SHA1
 certmgr-edit-ca-cert =
     .title = Cangia e inpostaçioin de fiduccia do certificato CA
     .style = width: 48em;
@@ -147,28 +147,28 @@ exception-mgr-permanent =
 pk11-bad-password = A paròlla segreta a l'é sbalia.
 pkcs12-decode-err = Inposcibile decodificâ l'archivio. Ò o no l'é into formato PKCS #12, ò o l'é corotto, ò a paròlla d'ordine a l'é scoretta.
 pkcs12-unknown-err-restore = Inposcibile arecuviâ l'archivio PKCS #12 pe de raxoin sconosciue.
-pkcs12-unknown-err-backup = Inposcibile fâ l'archivio d'agiornamento do PKCS #12 pe de raxoin sconosciue.
+pkcs12-unknown-err-backup = Inposcibile creâ o schedaio de backup do PKCS #12 pe de raxoin sconosciue.
 pkcs12-unknown-err = A procedua do PKCS #12 a l'é falia pe de raxoin sconosciue.
 pkcs12-info-no-smartcard-backup = Inposcibile agiornâ i certificati da un apægio hardware de seguessa comme 'na smart card.
 pkcs12-dup-data = O certificato e a ciave privâ existan za inte l'apægio de seguessa.
 
 ## PKCS#12 file dialogs
 
-choose-p12-backup-file-dialog = Nomme do file pe-a còpia de seguessa
-file-browse-pkcs12-spec = File PKCS12
-choose-p12-restore-file-dialog = File do certificato da inportâ
+choose-p12-backup-file-dialog = Nomme do schedaio da archiviâ
+file-browse-pkcs12-spec = Schedaio PKCS12
+choose-p12-restore-file-dialog = Schedaio de certificato da inportâ
 
 ## Import certificate(s) file dialog
 
-file-browse-certificate-spec = File di Certificati
-import-ca-certs-prompt = Seleçionn-a o file ch'o gh'à i certificati CA da inportâ
-import-email-cert-prompt = Seleçionn-a o file ch'o gh'à o certificato Email da inportâ
+file-browse-certificate-spec = Schedai de certificato
+import-ca-certs-prompt = Seleçionn-a o schedaio ch'o gh'à i certificati CA da inportâ
+import-email-cert-prompt = Seleçionn-a o schedaio ch'o gh'à o certificato do destinataio de posta da inportâ
 
 ## For editing certificates trust
 
 # Variables:
 #   $certName: the name of certificate
-edit-trust-ca = Sto certificato "{ $certName }" o rapresenta a Aotoritæ di Certificati
+edit-trust-ca = O certificato "{ $certName }" o rapresenta 'na aotoritæ de certificaçion.
 
 ## For Deleting Certificates
 
@@ -183,7 +183,7 @@ delete-ssl-cert-impact = Se ti ti scancelli sta eceçion do server, ghe saian i 
 delete-ca-cert-title =
     .title = Scancella ò leva a fiduccia a-i certificati CA
 delete-ca-cert-confirm = T'æ domandou de scancelâ sti cerficati CA. Mia che saiâ scancelâ anche a fiduccia di cerficati relativi a questa CA. T'ê seguo de scancelâ ò levâ a fiduccia?
-delete-ca-cert-impact = Se ti ti scancelli o ti levi a fiduccia a ina Aotoritæ di Certificati (CA), st'aplicaçion a no poriâ ciù fiase di certificati fæti da sta CA.
+delete-ca-cert-impact = Se ti ti scancelli o ti levi a fiduccia a ina aotoritæ de certificaçion (CA), st'aplicaçion a no poriâ ciù fiase di certificati fæti da sta CA.
 delete-email-cert-title =
     .title = Scancella certificati email
 delete-email-cert-confirm = T'ê seguo de scancelâ sti certificati de personn-e?
@@ -213,7 +213,7 @@ verify-ssl-client =
 verify-ssl-server =
     .value = Certificato SSL do Server
 verify-ssl-ca =
-    .value = Aotoritæ de certificato SSL
+    .value = Aotoritæ de certificaçion SSL
 verify-email-signer =
     .value = Certificato do mitente e-mail
 verify-email-recip =
@@ -234,7 +234,7 @@ add-exception-branded-warning = T'ê apreuvo a cangiâ o mòddo ch'o l'à { -bra
 add-exception-invalid-header = Sto scito o preuva a identificase con dæti no validi.
 add-exception-domain-mismatch-short = Scito sbagliou
 add-exception-domain-mismatch-long = O certificato o l'é de 'n'atro scito, o porieva ese 'n tentativo de sostitoise a-o scito òriginale.
-add-exception-expired-short = Informaçion Vegia
+add-exception-expired-short = Informaçion vegia
 add-exception-expired-long = O certificato o no l'é ciù valido. L'é poscibile ch'o segge stæto arobou ò perduo, e o porieiva ese adeuviou into tentativo de sostitoise a-o scito òriginale.
 add-exception-unverified-or-bad-signature-short = Identitæ no conosciua
 add-exception-unverified-or-bad-signature-long = O certificato o no l'é afidabile perché no l'é poscibile verificâ ch'o segge emesso da 'na Autoritæ riconosciua co-ina firma segua.
@@ -247,10 +247,10 @@ add-exception-no-cert-long = Inposcibile pigiâ o stæto de identificaçion de s
 
 ## Certificate export "Save as" and error dialogs
 
-save-cert-as = Sarva o Certificato into File
+save-cert-as = Sarva o Certificato in sce schedaio
 cert-format-base64 = Certificato X.509 (PEM)
 cert-format-base64-chain = Certificato X.509 con cadenn-a (PEM)
 cert-format-der = Certificato X.509 (DER)
 cert-format-pkcs7 = Certificato X.509 (PKCS#7)
 cert-format-pkcs7-chain = Certificato X.509 con cadenn-a (PKCS#7)
-write-file-failure = Erô do file
+write-file-failure = Erô do schedaio

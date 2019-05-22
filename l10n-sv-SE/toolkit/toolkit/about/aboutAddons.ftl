@@ -77,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = Senast uppdaterad
 detail-contributions-description = Skaparen av det här tillägget ber dig om ett litet bidrag för att stödja den fortsatta utvecklingen.
+detail-contributions-button = Bidra
+    .title = Bidra till utvecklingen av detta tillägg
+    .accesskey = B
 detail-update-type =
     .value = Automatiska uppdateringar
 detail-update-default =
@@ -90,7 +93,14 @@ detail-update-manual =
     .tooltiptext = Installera inte uppdateringar automatiskt
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Kör i privata fönster
-detail-private-browsing-description = Tillägg kommer att fungera i privata fönster och ha tillgång till dina aktiviteter på nätet. <label data-l10n-name="detail-private-browsing-learn-more">Läs mer</label>
+detail-private-browsing-description2 = När det är tillåtet kommer tillägget att ha tillgång till dina onlineaktiviteter medan du surfar. <label data-l10n-name="detail-private-browsing-learn-more">Läs mer</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = Ej tillåtet i privata fönster
+detail-private-disallowed-description = Detta tillägg kan inte köras under privat surfning. <label data-l10n-name="detail-private-browsing-learn-more">Läs mer</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Kräver åtkomst till privata fönster
+detail-private-required-description = Detta tillägg har tillgång till dina onlineaktiviteter medan du surfar. <label data-l10n-name="detail-private-browsing-learn-more">Läs mer</label>
 detail-private-browsing-on =
     .label = Tillåt
     .tooltiptext = Aktivera i privat surfning
@@ -236,6 +246,10 @@ shortcuts-modifier-other = Inkludera Ctrl eller Alt
 shortcuts-invalid = Ogiltig kombination
 shortcuts-letter = Skriv en bokstav
 shortcuts-system = Kan inte skriva över en { -brand-short-name } genväg
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Används redan av { $addon }
 shortcuts-card-expand-button =
     { $numberToShow ->
         [one] Visa { $numberToShow } mer
@@ -247,8 +261,52 @@ go-back-button =
 
 ## Add-on actions
 
+report-addon-button = Rapportera
 remove-addon-button = Ta bort
 disable-addon-button = Inaktivera
 enable-addon-button = Aktivera
+expand-addon-button = Fler alternativ
 addons-enabled-heading = Aktiverad
 addons-disabled-heading = Inaktiverad
+ask-to-activate-button = Fråga om aktivering
+always-activate-button = Aktivera alltid
+never-activate-button = Aktivera aldrig
+addon-detail-author-label = Utvecklare
+addon-detail-version-label = Version
+addon-detail-last-updated-label = Senast uppdaterad
+addon-detail-homepage-label = Hemsida
+addon-detail-rating-label = Betyg
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (inaktiverad)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } recension
+       *[other] { $numberOfReviews } recensioner
+    }
+
+## Pending uninstall message bar
+
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> har tagits bort.
+pending-uninstall-undo-button = Ångra
+addon-detail-updates-label = Tillåt automatiska uppdateringar
+addon-detail-updates-radio-default = Standard
+addon-detail-updates-radio-on = På
+addon-detail-updates-radio-off = Av
+addon-detail-update-check-label = Sök efter uppdateringar
+install-update-button = Uppdatera
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Tillåtet i privata fönster
+addon-detail-private-browsing-help = När det är tillåtet kommer tillägget att ha tillgång till dina onlineaktiviteter medan du surfar. <a data-l10n-name="learn-more">Läs mer</a>
+addon-detail-private-browsing-allow = Tillåt
+addon-detail-private-browsing-disallow = Tillåt inte
+available-updates-heading = Tillgängliga uppdateringar
+recent-updates-heading = Senaste uppdateringar

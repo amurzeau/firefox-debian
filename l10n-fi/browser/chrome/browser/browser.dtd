@@ -64,6 +64,8 @@ but will never be visible at the same time. -->
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "i">
 
+<!-- Tab context menu -->
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -108,7 +110,6 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Piilotetut välilehdet">
 
 <!ENTITY  listAllTabs.label      "Listaa kaikki välilehdet">
-
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
 <!ENTITY  allTabsMenu.searchTabs.label       "Etsi välilehtiä">
@@ -130,6 +131,9 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "Tulosta…">
 <!ENTITY printCmd.accesskey "o">
 <!ENTITY printCmd.commandkey "p">
+
+<!ENTITY importFromAnotherBrowserCmd.label "Tuo toisesta selaimesta…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "T">
 
 <!ENTITY taskManagerCmd.label "Tehtävienhallinta">
 
@@ -213,6 +217,28 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenExit.label "Poistu kokoruututilasta">
 <!ENTITY fullScreenExit.accesskey "o">
 
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "Ota Firefox mukaasi">
+<!ENTITY fxa.signin.description.label "Kirjanmerkkisi, selaushistoriasi, salasanasi ja muut asetukset kaikilla laitteillasi.">
+<!ENTITY fxa.signin.button.label "Ota &syncBrand.shortName.label; käyttöön…">
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "Tarkista sähköpostisi">
+<!ENTITY fxa.unverified.description.label "Tilisi täytyy vahvistaa ennen kuin voit synkronoida.">
+<!ENTITY fxa.unverified.button.label "Avaa &syncBrand.shortName.label;-asetukset…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "Kirjautuneena tilillä">
+<!ENTITY fxa.menu.manageAccount.label "Hallitse tiliä…">
+<!ENTITY fxa.menu.syncSettings.label "&syncBrand.shortName.label;-asetukset…">
+<!ENTITY fxa.menu.connectAnotherDevice.label "&syncedTabs.sidebar.connectAnotherDevice;">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "Yhdistä toiseen laitteeseen…">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
+
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
      respectively before and after the domain requiring fullscreen.
@@ -229,6 +255,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "Poistu kokoruututilasta (esc)">
 <!ENTITY leaveDOMFullScreen.label "Poistu kokoruututilasta">
 <!ENTITY leaveDOMFullScreen.accesskey "P">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.label "Kuva kuvassa">
+<!ENTITY pictureInPicture.accesskey "K">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -408,6 +440,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.label       "Asetukset">
 <!ENTITY preferencesCmdUnix.accesskey     "A">
 
+<!ENTITY logins.label                           "Käyttäjätunnukset ja salasanat">
+
 <!ENTITY clearRecentHistory.label               "Poista historiatietoja…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
@@ -437,6 +471,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.clearRecent.label "Poista viimeaikaisia historiatietoja…">
 <!ENTITY appMenuHistory.restoreSession.label "Palauta edellinen istunto">
 <!ENTITY appMenuHistory.viewSidebar.label "Näytä sivuhistoriapaneeli">
+<!ENTITY appMenuHistory.hideSidebar.label "Piilota historiasivupaneeli">
 <!ENTITY appMenuHistory.recentHistory.label "Viimeaikainen historia">
 <!ENTITY appMenuHelp.label "Ohje">
 
@@ -465,6 +500,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Kirjaudu Sync-palveluun">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Hallitse laitteita…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Näytä synkronoitujen välilehtien sivupaneeli">
+<!ENTITY appMenuRemoteTabs.hidesidebar.label "Piilota synkronoitujen välilehtien sivupaneeli">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Yhdistä toinen laite">
 
 <!ENTITY appMenuRecentHighlights.label "Viimeaikaiset nostot">
@@ -879,7 +915,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "Sivustolle ei ole myönnetty mitään erityisoikeuksia.">
 <!ENTITY identity.permissionsReloadHint "Sivu tarvitsee ehkä päivittää, jotta muutokset tulevat voimaan.">
 <!ENTITY identity.permissionsPreferences.tooltip "Avaa oikeusasetukset">
-
 <!ENTITY identity.contentBlockingPreferences.tooltip "Avaa sisällön eston asetukset">
 
 
@@ -931,6 +966,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSignIn.label             "Kirjaudu &syncBrand.shortName.label;-palveluun…">
 <!ENTITY syncSignIn.accesskey         "K">
 <!ENTITY syncSyncNowItem.label        "Synkronoi">
+<!ENTITY syncSyncNowItemSyncing.label "Synkronoidaan…">
 <!ENTITY syncSyncNowItem.accesskey    "S">
 <!ENTITY syncReAuthItem.label         "Palauta yhteys &syncBrand.shortName.label;-palveluun…">
 <!ENTITY syncReAuthItem.accesskey     "P">
@@ -996,7 +1032,11 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.cookies.label "Evästeet">
 <!ENTITY contentBlocking.cookiesView.label "Evästeet ja sivustotiedot">
 
+<!ENTITY contentBlocking.cryptominers.label "Kryptolouhijat">
+<!ENTITY contentBlocking.cryptominersView.label "Kryptolouhijat">
 
+<!ENTITY contentBlocking.fingerprinters.label "Yksilöijät">
+<!ENTITY contentBlocking.fingerprintersView.label "Yksilöijät">
 
 <!ENTITY contentBlocking.openBreakageReportView2.label "Ilmoita ongelmasta">
 <!ENTITY contentBlocking.breakageReportView.label "Ilmoita ongelmista">
@@ -1069,6 +1109,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.acceptButton.accesskey "L">
 <!ENTITY updateAvailable.cancelButton.label "Ei nyt">
 <!ENTITY updateAvailable.cancelButton.accesskey "E">
+
 <!ENTITY updateAvailable.panelUI.label "Lataa &brandShorterName;-päivitys">
 
 <!ENTITY updateManual.message "Lataa uusi &brandShorterName;-kopio, niin autamme sen asentamisessa.">
@@ -1129,6 +1170,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "Voit hallita lisäosia avaamalla <image class='addon-toolbar-icon'/>-valikon ja napsauttamalla <image class='addon-addon-icon'/>-kuvaketta.">
+<!ENTITY addonPostInstall.incognito.checkbox.label "Salli tämän laajennuksen toiminta yksityisissä ikkunoissa">
+<!ENTITY addonPostInstall.incognito.checkbox.accesskey "S">
 
+<!ENTITY addonPrivateBrowsing.header2.label "Muutos laajennusten toimintaan yksityisissä ikkunoissa">
+<!ENTITY addonPrivateBrowsing.body2.label "Yksikään &brandShorterName;iin lisäämäsi uusi laajennus ei toimi yksityisissä ikkunoissa, ellet salli toimintaa asetuksista.">
+<!ENTITY addonPrivateBrowsing.learnMore.label "Lue lisää kuinka hallita laajennusten asetuksia">
 <!ENTITY addonPrivateBrowsing.okButton.label "Selvä">
+<!ENTITY addonPrivateBrowsing.okButton.accesskey "S">
 <!ENTITY addonPrivateBrowsing.manageButton.label "Hallitse laajennuksia">
+<!ENTITY addonPrivateBrowsing.manageButton.accesskey "H">

@@ -77,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = Diweddarwyd Diwethaf
 detail-contributions-description = Mae datblygwr yr ychwanegyn yn gofyn eich bod yn cynorthwyo i gefnogi datblygiad drwy wneud cyfraniad bychan.
+detail-contributions-button = Cyfrannu
+    .title = Cyfrannwch i ddatblygiad yr ategyn hwn
+    .accesskey = C
 detail-update-type =
     .value = Diweddariadau Awtomatig
 detail-update-default =
@@ -90,7 +93,14 @@ detail-update-manual =
     .tooltiptext = Peidio gosod diweddariadau'n awtomatig
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Rhedeg mewn Ffenestri Preifat
-detail-private-browsing-description = Bydd yr estyniad yn gweithio mewn Ffenestri Preifat, ac yn cael mynediad i'ch gweithgareddau ar-lein. <label data-l10n-name="detail-private-browsing-learn-more"> Dysgu rhagor</label>
+detail-private-browsing-description2 = Pan fydd yna ganiatâd, bydd yr estyniad ar gael i'ch gweithgareddau ar-lein wrth bori preifat. <label data-l10n-name="details-private-browsing-learning-more"> Dysgu rhagor </label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = Heb ei ganiatáu mewn Ffenestri Preifat
+detail-private-disallowed-description = Nid yw'r estyniad hwn yn rhedeg tra'n pori'n preifat. <label data-l10n-name = "details-private-browsing-learning-more">Rhagor o wybodaeth</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Angen Mynediad i Ffenestri Preifat
+detail-private-required-description = Mae gan yr estyniad hwn fynediad i'ch gweithgareddau ar-lein tra'n pori'n breifat. <label data-l10n-name = "details-private-browsing-learning-more">Rhagor o wybodaeth</label>
 detail-private-browsing-on =
     .label = Caniatáu
     .tooltiptext = Caniatáu wrth Bori Preifat
@@ -238,6 +248,10 @@ shortcuts-modifier-other = Cynnwys Ctrl neu Alt
 shortcuts-invalid = Cyfuniad annilys
 shortcuts-letter = Teipiwch lythyr
 shortcuts-system = Methu anwybyddu llwybr byr { -brand-short-name }
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Ar waith eisoes gan { $addon }
 shortcuts-card-expand-button =
     { $numberToShow ->
         [zero] Dangos { $numberToShow } yn Rhagor
@@ -253,8 +267,56 @@ go-back-button =
 
 ## Add-on actions
 
+report-addon-button = Adrodd
 remove-addon-button = Tynnu
 disable-addon-button = Analluogu
 enable-addon-button = Galluogi
+expand-addon-button = Rhagor o Opsiynau
 addons-enabled-heading = Galluogwyd
 addons-disabled-heading = Analluogwyd
+ask-to-activate-button = Gofyn i'w Weithredu
+always-activate-button = Gweithredu Bob Tro
+never-activate-button = Byth Gweithredu
+addon-detail-author-label = Awdur
+addon-detail-version-label = Fersiwn
+addon-detail-last-updated-label = Diweddarwyd Diwethaf
+addon-detail-homepage-label = Tudalen Cartref
+addon-detail-rating-label = Graddio
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (analluogwyd)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [zero] { $numberOfReviews } adolygiad
+        [one] { $numberOfReviews } adolygiad
+        [two] { $numberOfReviews } adolygiad
+        [few] { $numberOfReviews } adolygiad
+        [many] { $numberOfReviews } adolygiad
+       *[other] { $numberOfReviews } adolygiad
+    }
+
+## Pending uninstall message bar
+
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = Mae <span data-l10n-name="addon-name">{ $addon }</span> wedi ei dynnu.
+pending-uninstall-undo-button = Dadwneud
+addon-detail-updates-label = Caniatáu diweddariadau awtomatig
+addon-detail-updates-radio-default = Rhagosodedig
+addon-detail-updates-radio-on = Ymlaen
+addon-detail-updates-radio-off = Diffodd
+addon-detail-update-check-label = Gwirio am Ddiweddariadau
+install-update-button = Diweddaru
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Caniatáu mewn ffenestri preifat
+addon-detail-private-browsing-help = Pan mae'n cael ei ganiatáu, bydd yr estyniad ar gael i'ch gweithgareddau ar-lein tra byddwch yn pori'n breifat. <a data-l10n-name="learn-more"> Gwybod rhagor</a>
+addon-detail-private-browsing-allow = Caniatáu
+addon-detail-private-browsing-disallow = Peidio Caniatáu
+available-updates-heading = Diweddariadau ar Gael
+recent-updates-heading = Diweddariadau Diweddar

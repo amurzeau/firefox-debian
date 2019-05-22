@@ -6,8 +6,13 @@ profiles-title = Sobre os perfis
 profiles-subtitle = Esta página ajuda a gerenciar seus perfis. Cada perfil é um mundo separado que contém histórico, favoritos, configurações e extensões separados.
 profiles-create = Criar um novo perfil
 profiles-restart-title = Reiniciar
-profiles-restart-in-safe-mode = Reiniciar com as extensões desabilitadas…
+profiles-restart-in-safe-mode = Reiniciar com extensões desativadas…
 profiles-restart-normal = Reiniciar normalmente…
+profiles-conflict = Outra cópia do { -brand-product-name } fez mudanças em perfis. Você deve reiniciar o { -brand-short-name } antes de fazer mais alterações.
+profiles-flush-fail-title = As alterações não foram salvas
+profiles-flush-conflict = { profiles-conflict }
+profiles-flush-failed = Um erro inesperado impediu que suas alterações fossem salvas.
+profiles-flush-restart-button = Reiniciar o { -brand-short-name }
 # Variables:
 #   $name (String) - Name of the profile
 profiles-name = Perfil: { $name }

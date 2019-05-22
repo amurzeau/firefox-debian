@@ -10,6 +10,7 @@
 ## These are short descriptions for individual policies, to be displayed
 ## in the documentation section in about:policies.
 
+policy-3rdparty = Beliedsrigels ynstelle dy't troch WebExtensions benadere wurde kinne fia chrome.storage.managed.
 policy-AppUpdateURL = Oanpaste app-fernijings-URL ynstelle.
 policy-Authentication = Yntegrearre autentikaasje konfigurearje foar websites dy't dit stypje.
 policy-BlockAboutAddons = Tagong ta de Add-onbehearder (about:addons) blokkearje.
@@ -56,18 +57,23 @@ policy-HardwareAcceleration = Wannear false, hardwarefersnelling útskeakelje.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = De startside ynstelle en opsjoneel beskoattelje.
 policy-InstallAddonsPermission = Tastean dat bepaalde websites add-ons ynstallearje.
+policy-LocalFileLinks = Spesifike websites tastean te keppeljen nei lokale bestannen.
 policy-NetworkPrediction = ‘Network prediction’ (DNS prefetching) ynskeakelje of útskeakelje.
+policy-NewTabPage = De nije-ljepblêdside ynskeakelje of útskeakelje.
 policy-NoDefaultBookmarks = Oanmeitsjen fan de standertblêdwizers dy't mei { -brand-short-name } mei levere wurde útskeakelje, krekt as de Tûke blêdwizers (Meast besocht, Resinte labels). Noat: dizze beliedsregel is allinnich fan krêft by gebrûk derfan eardat it profyl foar it earst útfierd wurdt.
 policy-OfferToSaveLogins = De ynstelling foar it tastean dat { -brand-short-name } mei oanbiede bewarre oanmeldingen en wachtwurden te ûnthâlde ôftwinge. Sawol de wearde true as false wurdt akseptearre.
 policy-OverrideFirstRunPage = De side dy't foar it earst iepene wurdt ferfange. Stel dizze beliedsregel yn op leech as jo de oanbelangjende side útskeakelje wolle.
 policy-OverridePostUpdatePage = De side ‘Wat is der nij’ nei in fernijing ferfange. Stel dizze beliedsregel yn op leech as jo de oanbelangjende side útskeakelje wolle.
 policy-Permissions = Tastimmingen foar kamera, mikrofoan, lokaasje en notifikaasjes konfigurearje.
 policy-PopupBlocking = Tastean dat bepaalde websites standert pop-ups werjaan.
+policy-Preferences = De wearde foar in subset fan foarkarren ynstelle en beskoattelje.
 policy-Proxy = Proxyynstellingen konfigurearje.
 policy-RequestedLocales = De list fan frege locales foar de tapassing ynstelle, op folchoarder fan foarkar.
 policy-SanitizeOnShutdown = Alle navigaasjegegevens wiskje by ôfsluten.
+policy-SanitizeOnShutdown2 = Navigaasjegegevens wiskje by ôfsluten.
 policy-SearchBar = De standertlokaasje fan de sykbalke ynstelle. De brûker mei dizze noch hieltyd oanpasse.
 policy-SearchEngines = Ynstellingen foar sykmasinen konfigurearje. Dizze beliedsregel is allinnich beskikber yn de Extended Support Release (ESR)-ferzje.
+policy-SearchSuggestEnabled = Syksuggestjes ynskeakelje of útskeakelje.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = PKCS #11-modules ynstallearje.
 policy-SSLVersionMax = De maksimale SSL-ferzje ynstelle.

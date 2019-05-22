@@ -82,6 +82,9 @@ detail-version =
 detail-last-updated =
     .label = Naposledy aktualizované
 detail-contributions-description = Vývojár tohto doplnku by bol rád, keby ste mu na jeho vývoj prispeli malou čiastkou.
+detail-contributions-button = Prispieť
+    .title = Prispejte na vývoj tohto doplnku
+    .accesskey = r
 detail-update-type =
     .value = Automatické aktualizácie
 detail-update-default =
@@ -93,6 +96,22 @@ detail-update-automatic =
 detail-update-manual =
     .label = Vypnuté
     .tooltiptext = Neinštalovať aktualizácie automaticky
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Povoliť v súkromných oknách
+detail-private-browsing-description2 = Tu môžete tomuto rozšíreniu povoliť prístup k vašej aktivite na internete v súkromných oknách. <label data-l10n-name="detail-private-browsing-learn-more">Ďalšie informácie</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = Toto rozšírenie sa nespúšťa v súkromných oknách
+detail-private-disallowed-description = Tvorca rozšírenia zakázal jeho spúšťanie v súkromných oknách. <label data-l10n-name="detail-private-browsing-learn-more">Ďalšie informácie</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Vyžaduje prístup k súkromným oknám
+detail-private-required-description = Toto rozšírenie má prístup k vašim aktivitám v súkromných oknách. <label data-l10n-name="detail-private-browsing-learn-more">Ďalšie informácie</label>
+detail-private-browsing-on =
+    .label = Povoliť
+    .tooltiptext = Povoliť v súkromných oknách
+detail-private-browsing-off =
+    .label = Nepovoliť
+    .tooltiptext = Nepovoliť v súkromných oknách
 detail-home =
     .label = Domovská stránka
 detail-home-value =
@@ -135,6 +154,12 @@ legacy-warning-show-legacy = Zobraziť zastarané rozšírenia
 legacy-extensions =
     .value = Zastarané rozšírenia
 legacy-extensions-description = Tieto rozšírenia nespĺňajú súčasné kritériá prehliadača { -brand-short-name } a boli preto deaktivované. <label data-l10n-name="legacy-learn-more">Ďalšie informácie o zmenách ohľadom doplnkov</label>
+private-browsing-description2 =
+    Fungovanie rozšírení v aplikácii { -brand-short-name } v súkromnom prehliadaní sa mení. Všetky novo nainštalované 
+    rozšírenia do aplikácie { -brand-short-name } nebudú fungovať v súkromných oknách, pokiaľ im to nepovolíte.
+    Rozšírenia tak nebudú mať bez vášho vedomia prístup k tomu, čo robíte v súkromnom prehliadaní. 
+    Týmto krokom sa snažíme zvýšiť vaše súkromie.
+    <label data-l10n-name="private-browsing-learn-more">Ďalšie informácie o správe rozšírení.</label>
 extensions-view-discover =
     .name = Získať doplnky
     .tooltiptext = { extensions-view-discover.name }
@@ -223,12 +248,55 @@ shortcuts-no-addons = Nemáte povolené žiadne rozšírenie.
 shortcuts-no-commands = Nasledujúce rozšírenia nemajú skratky:
 shortcuts-input =
     .placeholder = Zadajte klávesovú skratku
+shortcuts-browserAction = Aktivovať rozšírenie
+shortcuts-pageAction = Aktivovať akciu stránky
+shortcuts-sidebarAction = Prepnúť zobrazenie bočného panela
+shortcuts-modifier-mac = Nezabudnite vložiť aj Ctrl, Alt alebo ⌘
+shortcuts-modifier-other = Nezabudnite vložiť aj Ctrl alebo Alt
 shortcuts-invalid = Neplatná kombinácia klávesov
 shortcuts-letter = Napíšte písmeno
+shortcuts-system = Prepísať skratku aplikácie { -brand-short-name } nie je možné
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Túto skratku už používa { $addon }
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] Zobraziť { $numberToShow } ďalšiu
+        [few] Zobraziť { $numberToShow } ďalšie
+       *[other] Zobraziť { $numberToShow } ďalších
+    }
 shortcuts-card-collapse-button = Zobraziť menej
 go-back-button =
     .tooltiptext = Späť
 
 ## Add-on actions
 
+report-addon-button = Nahlásiť
 remove-addon-button = Odstrániť
+disable-addon-button = Zakázať
+enable-addon-button = Povoliť
+expand-addon-button = Ďalšie možnosti
+addons-enabled-heading = Povolené
+addons-disabled-heading = Zakázané
+addon-detail-author-label = Autor
+addon-detail-version-label = Verzia
+addon-detail-last-updated-label = Posledná aktualizácia
+addon-detail-homepage-label = Domovská stránka
+addon-detail-rating-label = Hodnotenie
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (zakázané)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } recenzia
+        [few] { $numberOfReviews } recenzie
+       *[other] { $numberOfReviews } recenzií
+    }
+
+## Pending uninstall message bar
+

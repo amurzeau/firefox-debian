@@ -77,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = Ultima actualizare
 detail-contributions-description = Dezvoltatorul acestei extensii îți cere sprijinul pentru continuarea perfecționării acesteia printr-o mică donație.
+detail-contributions-button = Contribuie
+    .title = Contrbuie la dezvoltarea acestui supliment
+    .accesskey = C
 detail-update-type =
     .value = Actualizări automate
 detail-update-default =
@@ -90,7 +93,14 @@ detail-update-manual =
     .tooltiptext = Nu instala actualizările automat
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Execută în ferestre private
-detail-private-browsing-description = Extensia va funcționa în ferestre private și va avea acces la activitatea ta online.<label data-l10n-name="detail-private-browsing-learn-more">Află mai multe</label>
+detail-private-browsing-description2 = Când are permisiunea, extensia va avea acces la activitățile tale online în timp ce navighezi privat. <label data-l10n-name="detail-private-browsing-learn-more">Află mai multe</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = Nepermis în ferestre private
+detail-private-disallowed-description = Această extensie nu rulează în navigare privată. <label data-l10n-name="detail-private-browsing-learn-more">Află mai multe</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Necesită acces la ferestre private
+detail-private-required-description = Această extensie are acces la activitățile tale online în navigare privată. <label data-l10n-name="detail-private-browsing-learn-more">Află mai multe</label>
 detail-private-browsing-on =
     .label = Permite
     .tooltiptext = Activează în navigarea privată
@@ -139,7 +149,9 @@ legacy-warning-show-legacy = Afișează extensiile obsolete
 legacy-extensions =
     .value = Extensii obsolete
 legacy-extensions-description = Aceste extensii nu îndeplinesc standardele actuale ale { -brand-short-name } astfel încât au fost dezactivate. <label data-l10n-name="legacy-learn-more">Află despre schimbările aduse suplimentelor</label>
-private-browsing-description = Extensiile sunt blocate implicit în ferestrele private. Înseamnă că nu vor funcționa în navigarea privată și nu vor avea atunci acces la activitățile tale online. Pentru a permite rularea unei extensii în ferestre private, selectează cartela extensiei de mai jos și modifică setarea. <label data-l10n-name="private-browsing-learn-more">Află mai multe.</label>
+private-browsing-description2 =
+    { -brand-short-name } schimbă felul în care extensiile funcționează în navigarea privată. Orice extensie nouă pe care o adaugi în { -brand-short-name } nu va rula în mod implicit în cadrul ferestrelor private. Dacă nu permiți asta din setări, extensia nu va funcționa în timpul navigării private și nu va avea acces la activitățile tale online. Am făcut această modificare pentru ca navigarea privată să rămână privată.
+    <label data-l10n-name="private-browsing-learn-more">Află cum să gestionezi setările pentru extensii</label>.
 extensions-view-discover =
     .name = Descarcă suplimente
     .tooltiptext = { extensions-view-discover.name }
@@ -236,6 +248,10 @@ shortcuts-modifier-other = Include Ctrl sau Alt
 shortcuts-invalid = Combinație invalidă
 shortcuts-letter = Tastează o literă
 shortcuts-system = Scurtăturile { -brand-short-name } nu pot fi înlocuite
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Deja utilizat de { $addon }
 shortcuts-card-expand-button =
     { $numberToShow ->
         [one] Afișează încă { $numberToShow }
@@ -251,5 +267,24 @@ go-back-button =
 remove-addon-button = Elimină
 disable-addon-button = Dezactivează
 enable-addon-button = Activează
+expand-addon-button = Mai multe opțiuni
 addons-enabled-heading = Activat
 addons-disabled-heading = Dezactivat
+addon-detail-author-label = Autor
+addon-detail-version-label = Versiune
+addon-detail-last-updated-label = Ultima actualizare
+addon-detail-homepage-label = Pagină de start
+addon-detail-rating-label = Evaluare
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (dezactivat)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } recenzie
+        [few] { $numberOfReviews } recenzii
+       *[other] { $numberOfReviews } de recenzii
+    }

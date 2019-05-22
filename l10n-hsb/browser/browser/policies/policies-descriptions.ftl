@@ -10,6 +10,7 @@
 ## These are short descriptions for individual policies, to be displayed
 ## in the documentation section in about:policies.
 
+policy-3rdparty = Prawidła nastajić, na kotrež WebExtensions přez chrome.storage.managed přistup maja.
 policy-AppUpdateURL = Swójski aktualizowanski URL za nałoženje nastajić.
 policy-Authentication = Integrowanu awtentifikaciju za websydła konfigurować, kotrež ju podpěruja.
 policy-BlockAboutAddons = Přistup na zrjadowak přidatkow (about:addons) blokować.
@@ -56,18 +57,23 @@ policy-HardwareAcceleration = Jeli njewěrno, hardwarowe pospěšenje znjemóžn
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Startowu stronu nastajić a na přeće zawrěć.
 policy-InstallAddonsPermission = Wěstym websydłam dowolić, přidatki instalować.
+policy-LocalFileLinks = Wěstym websydłam dowolić, na lokalne dataje wotkazać.
 policy-NetworkPrediction = Syćowe předzačitanje (DNS-předzačitanje) zmóžnić abo znjemóžnić.
+policy-NewTabPage = Stronu noweho rajtarka zmóžnić abo znjemóžnić.
 policy-NoDefaultBookmarks = Wutworjenje standardnych zapołožkow { -brand-short-name } znjemóžnić, a inteligentnych zapołožkow (najhusćišo wopytane, tuchwilne znački). Kedźbu: Tute prawidło so jenož wuskutkuje, hdyž jo před prěnim startom profila wužiwaće.
 policy-OfferToSaveLogins = Nastajenje wunuzować, kotrež { -brand-short-name } zmóžnja, sej składowane přizjewjenja a hesła spomjatkować. True kaž tež false so akceptujetej.
 policy-OverrideFirstRunPage = Stronu přepisać, kotraž so při prěnim starće jewi. Stajće tute prawidło na prózdne, jeli chceće tutu stronu znjemóžnić.
 policy-OverridePostUpdatePage = Stronu Nowe funkcije a změny po aktualizaciji přepisać. Stajće tute prawidło na prózdne, jeli chceće tutu stronu znjemóžnić.
 policy-Permissions = Prawa za kameru, mikrofon, stejnišćo a zdźělenki konfigurować.
 policy-PopupBlocking = Wěstym websydłam dowolić, wuskakowace wokna po standardźe pokazać.
+policy-Preferences = Hódnotu za podsadźbu nastajenjow stajić a zawrěć
 policy-Proxy = Nastajenja proksy konfigurować.
 policy-RequestedLocales = Podajće lisćinu požadanych rěčow za nałoženje w preferowanym porjedźe.
 policy-SanitizeOnShutdown = Nawigaciske daty při skónčenju zhašeć.
+policy-SanitizeOnShutdown2 = Nawigaciske daty při kónčenju zhašeć.
 policy-SearchBar = Standardne městno pytanskeho pola nastajić. Wužiwar móže jo hišće přiměrić.
 policy-SearchEngines = Nastajenja pytawow konfigurować. Tute prawidło je jenož za wersiju Extended Support Release (ESR) k dispoziciji.
+policy-SearchSuggestEnabled = Pytanske namjety zmóžnić abo znjemóžnić.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Module PKCS #11 instalować.
 policy-SSLVersionMax = Nastajće maksimalnu SSL-wersiju.

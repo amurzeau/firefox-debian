@@ -2,12 +2,15 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY firstrun_panel_title_welcome "Bem-vindo">
+<!ENTITY firstrun_panel_title_welcome "Boas-vindas">
 <!ENTITY firstrun_urlbar_message2 "Obrigado por escolher o &brandShortName;">
+<!ENTITY newfirstrun_urlbar_message "Boas-vindas ao &brandShortName;">
 <!ENTITY firstrun_urlbar_subtext2 "Um moderno navegador para dispositivos móveis da Mozilla, a fundação sem fins lucrativos comprometida com uma Web livre e aberta.">
+<!ENTITY newfirstrun_urlbar_subtext "Rápido, privativo e do seu lado.">
 <!ENTITY firstrun_panel_title_privacy "Privacidade">
 <!ENTITY firstrun_privacy_message "Navegue como se ninguém estivesse olhando">
 <!ENTITY firstrun_privacy_subtext "A Navegação Privativa com Proteção Contra Rastreamento bloqueia rastreadores enquanto você navega e não irá memorizar o seu histórico quando você terminar.">
+<!ENTITY newfirstrun_privacy_subtext "A navegação privativa bloqueia rastreadores de anúncios que seguem você pela internet.">
 <!ENTITY firstrun_panel_title_customize "Personalizar">
 <!ENTITY firstrun_customize_message "Faça o &brandShortName; seu.">
 <!ENTITY firstrun_customize_subtext "Personalize o &brandShortName; com extensões. Bloqueie anúncios, adicione recursos, ou escolha um novo tema para refletir sua personalidade.">
@@ -20,8 +23,10 @@
 <!ENTITY firstrun_sync_title "Sync">
 <!ENTITY firstrun_sync_message2 "Continue de onde você parou.">
 <!ENTITY firstrun_sync_subtext2 "Use o Sync para encontrar os favoritos, senhas e outras coisas que você salva no &brandShortName; em todos os seus dispositivos.">
+<!ENTITY newfirstrun_sync_subtext "Sincronize as coisas que você salva no celular para o Firefox do computador, com privacidade e segurança.">
 <!ENTITY firstrun_signin_message "Conecte-se para iniciar">
 <!ENTITY firstrun_signin_button "Entrar no Sync">
+<!ENTITY newfirstrun_signin_button "Ativar o Sync">
 <!ENTITY  onboard_start_button_browser "Iniciar navegação">
 <!ENTITY firstrun_button_notnow "Agora não">
 <!ENTITY firstrun_button_next "Próximo">
@@ -63,6 +68,12 @@
 <!ENTITY  crash_restart_label "Reiniciar o &brandShortName;">
 
 <!ENTITY url_bar_default_text2 "Pesquise ou digite um endereço">
+
+<!-- Localization note: this text will be displayed in the Search Widget -->
+<!ENTITY search_widget_default_text "Pesquisar na web">
+<!ENTITY search_widget_default_cropped_text "Pesquisar">
+<!ENTITY search_widget_logo_description "Pesquise na web com o &brandShortName;">
+
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
      icon in the url bar. -->
@@ -335,6 +346,9 @@
 <!-- Localization note (tab_queue_prompt_settings_button): This button is shown if the user needs to
      enable a permission in Android's setting in order to enable tab queues. -->
 <!ENTITY tab_queue_prompt_settings_button "Ir para as configurações">
+<!-- Localization note (tab_queue_notification_prompt): This is the text of the default notification
+shown from Android O while a tab is being queued.-->
+<!ENTITY tab_queue_notification_prompt "Adicionando nova aba à fila&#8230;">
 <!ENTITY tab_queue_notification_title "&brandShortName;">
 <!-- Localization note (tab_queue_notification_text_plural2) : The
      formatD is replaced with the number of tabs queued.  The
@@ -368,7 +382,7 @@
 <!ENTITY pref_use_system_font_size "Usar o tamanho da fonte do sistema">
 <!ENTITY pref_use_system_font_size_summary "Redimensionar o conteúdo de acordo com o tamanho da fonte do sistema">
 
-<!ENTITY pref_media_autoplay_enabled "Permitir reprodução automática">
+<!ENTITY pref_media_autoplay_enabled "Permissão de reprodução automática">
 <!ENTITY pref_media_autoplay_allow "Permitir reprodução automática">
 <!ENTITY pref_media_autoplay_block "Bloquear reprodução automática">
 <!ENTITY pref_zoom_force_enabled "Sempre ativar o zoom">
@@ -393,7 +407,6 @@
 <!ENTITY pref_private_data_searchHistory "Histórico de pesquisas">
 <!ENTITY pref_private_data_formdata2 "Histórico de formulários">
 <!ENTITY pref_private_data_cookies2 "Cookies e contas de acesso ativas">
-<!ENTITY pref_private_data_passwords2 "Contas de acesso salvas">
 <!ENTITY pref_private_data_cache "Cache">
 <!ENTITY pref_private_data_offlineApps "Dados offline de sites">
 <!ENTITY pref_private_data_siteSettings2 "Configurações de sites">
@@ -401,6 +414,12 @@
 <!ENTITY pref_private_data_syncedTabs "Abas sincronizadas">
 
 <!ENTITY pref_default_browser "Tornar navegador padrão">
+
+<!ENTITY pref_default_browser2 "Torne o &brandShortName; seu navegador padrão">
+<!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
+    Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
+    and instruct users to tap on the "Browser app" option on that settings screen to choose a default browser app. -->
+<!ENTITY default_browser_system_settings_toast "Toque em App de navegador e selecione &brandShortName;">
 <!ENTITY pref_default_browser_mozilla_support_tablet "Visitar o suporte da Mozilla">
 <!ENTITY pref_about_firefox "Sobre o &brandShortName;">
 <!ENTITY pref_vendor_faqs "Perguntas frequentes">
@@ -495,6 +514,10 @@
 <!ENTITY find_prev "Anterior">
 <!ENTITY find_next "Próximo">
 <!ENTITY find_close "Fechar">
+
+<!-- Localization note (find_error) : Error message shown when there is no result for the
+     searched for text in this webpage -->
+<!ENTITY find_error "Frase não encontrada">
 
 <!-- Localization note (media_sending_to, media_play, media_pause, media_stop) : These strings are used
      as alternate text for accessibility. They are not visible in the UI. -->
@@ -898,6 +921,7 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_title "Pausa">
 <!ENTITY pip_pause_button_description "Pausar a reprodução">
 
+<!ENTITY pref_notification_settings_link "Gerenciar configurações de notificação">
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "Navegador">
 <!ENTITY mls_notification_channel "Serviço de localização do &vendorShortName;">

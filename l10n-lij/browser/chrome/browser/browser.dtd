@@ -16,7 +16,7 @@
 <!ENTITY mainWindow.titlePrivateBrowsingSuffix "(Navegaçion priva)">
 
 <!ENTITY appmenu.tooltip                     "Arvi menû">
-<!ENTITY navbarOverflow.label                "Atri strumenti…">
+<!ENTITY navbarOverflow.label                "Atri atressi…">
 
 <!-- Tab context menu -->
 <!ENTITY  reloadTab.label                    "Recarega feuggio">
@@ -64,6 +64,8 @@ but will never be visible at the same time. -->
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "z">
 
+<!-- Tab context menu -->
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -108,10 +110,9 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Feuggi ascozi">
 
 <!ENTITY  listAllTabs.label      "Lista de tutti i feuggi">
-
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
-<!ENTITY  allTabsMenu.searchTabs.label       "Bare de Riçerca">
+<!ENTITY  allTabsMenu.searchTabs.label       "Çerca inte schede">
 
 <!ENTITY tabCmd.label "Neuvo feuggio">
 <!ENTITY tabCmd.accesskey "N">
@@ -120,7 +121,7 @@ in "Search through tabs". -->
 displayed on OS X, and only on windows that aren't main browser windows, or
 when there are no windows but Firefox is still running. -->
 <!ENTITY openLocationCmd.label "Arvi Indirisso…">
-<!ENTITY openFileCmd.label "Arvi File…">
+<!ENTITY openFileCmd.label "Arvi schedaio…">
 <!ENTITY openFileCmd.accesskey "v">
 <!ENTITY openFileCmd.commandkey "o">
 <!ENTITY printSetupCmd.label "Inpòsta pagina…">
@@ -131,17 +132,20 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.accesskey "p">
 <!ENTITY printCmd.commandkey "p">
 
+<!ENTITY importFromAnotherBrowserCmd.label "Inportâ da 'n atro navegatô…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "I">
+
 <!ENTITY taskManagerCmd.label "Gestion ativitæ">
 
 <!ENTITY goOfflineCmd.label "Loua feua linia">
 <!ENTITY goOfflineCmd.accesskey "L">
 
-<!ENTITY menubarCmd.label "Bara do Menû">
+<!ENTITY menubarCmd.label "Bara di menû">
 <!ENTITY menubarCmd.accesskey "M">
-<!ENTITY navbarCmd.label "Bara de Navegaçion">
-<!ENTITY personalbarCmd.label "Bara di Segnalibbri">
+<!ENTITY navbarCmd.label "Bara de navegaçion">
+<!ENTITY personalbarCmd.label "Bara di segnalibbri">
 <!ENTITY personalbarCmd.accesskey "B">
-<!ENTITY bookmarksToolbarItem.label "Ògetti da Bara di Segnalibbri">
+<!ENTITY bookmarksToolbarItem.label "Ògetti da bara di segnalibbri">
 
 <!ENTITY toolbarContextMenu.reloadSelectedTab.label "Recarega feuggio seleçionou">
 <!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
@@ -202,7 +206,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaSignIn.label "Acedi a &syncBrand.shortName.label;">
 <!ENTITY fxaSignedIn.tooltip "Arvi e inpostaçioin de &syncBrand.shortName.label;">
 <!ENTITY fxaSignInError.label "Riconetti a &syncBrand.shortName.label;">
-<!ENTITY fxaUnverified.label "Verifica l’account">
+<!ENTITY fxaUnverified.label "Verifico o teu conto">
 
 
 <!ENTITY fullScreenMinimize.tooltip "Riduci">
@@ -212,6 +216,26 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenAutohide.accesskey "A">
 <!ENTITY fullScreenExit.label "Sciòrti da-o mòddo a tutto schermo">
 <!ENTITY fullScreenExit.accesskey "S">
+
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "Pòrta Firefox con ti">
+<!ENTITY fxa.signin.description.label "Repiggia i teu segnalibbri, stöia, poule segrete e atre inpostaçioin in sce tutti i teu dispoxitivi.">
+<!ENTITY fxa.signin.button.label "Ativa &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "Controlla a teu pòsta eletrònica">
+<!ENTITY fxa.unverified.button.label "Arvi e inpostaçioin de &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "Introu comme">
+<!ENTITY fxa.menu.manageAccount.label "Gestisci account…">
+<!ENTITY fxa.menu.syncSettings.label "Inpostaçioin de &syncBrand.shortName.label;…">
+<!ENTITY fxa.menu.connectAnotherDevice.label "&syncedTabs.sidebar.connectAnotherDevice;">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
@@ -229,6 +253,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "Sciòrti da sa tutto schermo (esc)">
 <!ENTITY leaveDOMFullScreen.label "Sciòrti da a tutto schermo">
 <!ENTITY leaveDOMFullScreen.accesskey "h">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.label "Picture-in-Picture">
+<!ENTITY pictureInPicture.accesskey "u">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -286,6 +316,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Sarva dæti inta memöia persistente">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Navegatô in contròllo remòtto">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Arvi panello de aotenticaçion">
+<!ENTITY urlbar.storageAccessAnchor.tooltip               "Arvi o panello di permissi pe-a navegaçion">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Gestisci a condivixon de fòtocamera e/o micròfono co-o scito">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Gestisci a condivixon do micròfono co-o scito">
@@ -321,17 +352,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarksCmd.commandkey "b">
 
 <!ENTITY bookmarksSubview.label             "Segnalibbri">
-<!ENTITY bookmarksMenuButton2.label         "Menû di Segnalibbri">
-<!ENTITY bookmarksMenuButton.other.label    "Atri Segnalibbri">
+<!ENTITY bookmarksMenuButton2.label         "Menû di segnalibbri">
+<!ENTITY bookmarksMenuButton.other.label    "Atri segnalibbri">
 <!ENTITY bookmarksMenuButton.mobile.label   "Segnalibbri mòbili">
 <!ENTITY viewBookmarksSidebar2.label        "Veddi a bara de scianco segnalibbri">
 <!ENTITY hideBookmarksSidebar.label         "Ascondi bara di segnalibbri">
-<!ENTITY viewBookmarksToolbar.label         "Fanni vedde a bara di Segnalibbri">
+<!ENTITY viewBookmarksToolbar.label         "Fanni vedde a bara di segnalibbri">
 <!ENTITY hideBookmarksToolbar.label         "Ascondi bara di segnalibbri">
 <!ENTITY searchBookmarks.label              "Çerca segnalibbri">
-<!ENTITY bookmarkingTools.label             "Atressi di Segnalibbri">
-<!ENTITY addBookmarksMenu.label             "Azonzi o menû di segnalibbri a-a Bara di Atressi">
-<!ENTITY removeBookmarksMenu.label          "Scancella menû di segnalibbri a-a Bara di Atressi">
+<!ENTITY bookmarkingTools.label             "Atressi di segnalibbri">
+<!ENTITY addBookmarksMenu.label             "Azonzi o menû di segnalibbri a-a bara di atressi">
+<!ENTITY removeBookmarksMenu.label          "Scancella menû di segnalibbri a-a bara di atressi">
 
 <!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
@@ -342,7 +373,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY historyButton.label            "Stöia">
 <!ENTITY historySidebarCmd.commandKey   "h">
 
-<!ENTITY toolsMenu.label              "Strumenti">
+<!ENTITY toolsMenu.label              "Atressi">
 <!ENTITY toolsMenu.accesskey          "t">
 
 <!ENTITY keywordfield.label           "Azonzi 'na paròlla ciave pe questa riçerca…">
@@ -359,7 +390,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addons.accesskey             "a">
 <!ENTITY addons.commandkey            "A">
 
-<!ENTITY webDeveloperMenu.label       "Svilupatô Web">
+<!ENTITY webDeveloperMenu.label       "Svilupatô web">
 <!ENTITY webDeveloperMenu.accesskey   "W">
 
 <!ENTITY inspectContextMenu.label     "Ispeçionn-a elemento">
@@ -367,7 +398,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY inspectA11YContextMenu.label     "Ispeçionn-a propietæ de acesibilitæ">
 
-<!ENTITY fileMenu.label         "File">
+<!ENTITY fileMenu.label         "Schedaio">
 <!ENTITY fileMenu.accesskey       "F">
 <!ENTITY newUserContext.label             "Neuvo feuggio contenitô">
 <!ENTITY newUserContext.accesskey         "c">
@@ -407,6 +438,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.label       "Preferense">
 <!ENTITY preferencesCmdUnix.accesskey     "n">
 
+<!ENTITY logins.label                           "Acessi e poule segrete">
+
 <!ENTITY clearRecentHistory.label               "Scancella a stöia ciù neuva…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
@@ -415,11 +448,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY viewMenu.accesskey       "v">
 <!ENTITY viewToolbarsMenu.label       "Bare">
 <!ENTITY viewToolbarsMenu.accesskey     "B">
-<!ENTITY viewSidebarMenu.label "Bare de scianco">
+<!ENTITY viewSidebarMenu.label "Bara de scianco">
 <!ENTITY viewSidebarMenu.accesskey "e">
 <!ENTITY viewCustomizeToolbar.label       "Personalizza…">
 <!ENTITY viewCustomizeToolbar.accesskey     "P">
-<!ENTITY overflowCustomizeToolbar.label       "Personalizza Bara di atressi…">
+<!ENTITY overflowCustomizeToolbar.label       "Personaliza a bara di atressi…">
 <!ENTITY overflowCustomizeToolbar.accesskey   "P">
 
 <!ENTITY historyMenu.label "Stöia">
@@ -435,7 +468,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.showAll.label "Veddi a stöia">
 <!ENTITY appMenuHistory.clearRecent.label "Scancella a stöia ciù neuva…">
 <!ENTITY appMenuHistory.restoreSession.label "Repiggia a sescion primma">
-<!ENTITY appMenuHistory.viewSidebar.label "Veddi a bara de scianco stöia">
+<!ENTITY appMenuHistory.viewSidebar.label "Veddi a bara de scianco da stöia">
 <!ENTITY appMenuHistory.recentHistory.label "Stöia recente">
 <!ENTITY appMenuHelp.label "Agiutto">
 
@@ -460,30 +493,30 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "T'eu amiâ chi i teu feuggi da atri dipoxitivi?">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Arvi preferense de scincronizaçion">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Acedi pe vedde l'elenco di feuggi averti inti atri dispoxitivi.">
-<!ENTITY appMenuRemoteTabs.unverified.label "O teu account o deve ese verificou.">
+<!ENTITY appMenuRemoteTabs.unverified.label "O teu conto o deve ese verificou.">
 <!ENTITY appMenuRemoteTabs.signin.label "Acedi a Sync">
-<!ENTITY appMenuRemoteTabs.managedevices.label "Gestisci Dispoxitivi…">
+<!ENTITY appMenuRemoteTabs.managedevices.label "Gestion di dispoxitivi…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Fanni vedde a bara di feuggi scincronizæ">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Conetti 'n atro dispoxitivo">
 
 <!ENTITY appMenuRecentHighlights.label "Evidensiæ da pöco">
 
-<!ENTITY customizeMenu.addToToolbar.label "Azonzi a-a bara di strumenti">
+<!ENTITY customizeMenu.addToToolbar.label "Azonzi a-a bara di atressi">
 <!ENTITY customizeMenu.addToToolbar.accesskey "A">
 <!-- LOCALIZATION NOTE (customizeMenu.addToOverflowMenu.label,
      customizeMenu.pinToOverflowMenu.label, customizeMenu.unpinFromOverflowMenu.label)
      The overflow menu is the menu that appears if you click the chevron (>> button)
      in the location bar. -->
-<!ENTITY customizeMenu.addToOverflowMenu.label "Azonzi a-o menû Overflow">
+<!ENTITY customizeMenu.addToOverflowMenu.label "Azonzi a-o menû de straripo">
 <!ENTITY customizeMenu.addToOverflowMenu.accesskey "m">
 <!-- LOCALIZATION NOTE (customizeMenu.pinToOverflowMenu.accesskey)
      can appear on the same context menu as menubarCmd and personalbarCmd,
      so they should have different access keys.  -->
-<!ENTITY customizeMenu.pinToOverflowMenu.label "Azonzi a-o menû Overflow">
+<!ENTITY customizeMenu.pinToOverflowMenu.label "Azonzi a-o menû de straripo">
 <!ENTITY customizeMenu.pinToOverflowMenu.accesskey "A">
-<!ENTITY customizeMenu.unpinFromOverflowMenu.label "Leva da-o menû Overflow">
+<!ENTITY customizeMenu.unpinFromOverflowMenu.label "Leva da-o menû de straripo">
 <!ENTITY customizeMenu.unpinFromOverflowMenu.accesskey "L">
-<!ENTITY customizeMenu.removeFromToolbar.label "Scancella da bara di strumenti">
+<!ENTITY customizeMenu.removeFromToolbar.label "Scancella da bara di atressi">
 <!ENTITY customizeMenu.removeFromToolbar.accesskey "b">
 <!ENTITY customizeMenu.addMoreItems.label "Azonzi atri elementi…">
 <!ENTITY customizeMenu.addMoreItems.accesskey "A">
@@ -491,7 +524,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "A">
 <!ENTITY customizeMenu.manageExtension.label "Gestisci estenscion">
 <!ENTITY customizeMenu.manageExtension.accesskey "G">
-<!ENTITY customizeMenu.removeExtension.label "Scancella Estenscion">
+<!ENTITY customizeMenu.removeExtension.label "Scancella estenscion">
 <!ENTITY customizeMenu.removeExtension.accesskey "c">
 
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
@@ -510,9 +543,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.searchSuggestionsNotification.hintPrefix "Conseggi:">
 <!-- LOCALIZATION NOTE (urlbar.searchSuggestionsNotification.hint): &#x1F50E; is the magnifier icon emoji, please don't change it. -->
 <!ENTITY urlbar.searchSuggestionsNotification.hint "Fatte agiutâ a trovâ e cöse! Çerca a &#x1F50E; vixin a-i conseggi de riçerca.">
-<!ENTITY urlbar.searchSuggestionsNotification.changeSettingsWin "Cangia Inpostaçioin…">
+<!ENTITY urlbar.searchSuggestionsNotification.changeSettingsWin "Cangia e inpostaçioin…">
 <!ENTITY urlbar.searchSuggestionsNotification.changeSettingsWin.accesskey "C">
-<!ENTITY urlbar.searchSuggestionsNotification.changeSettingsUnix "Cangia preferense…">
+<!ENTITY urlbar.searchSuggestionsNotification.changeSettingsUnix "Cangia e preferense…">
 <!ENTITY urlbar.searchSuggestionsNotification.changeSettingsUnix.accesskey "C">
 
 <!--
@@ -585,13 +618,13 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY openLinkCmdInTab.accesskey   "v">
 <!ENTITY openLinkCmd.label            "Arvi inte 'n atro barcon">
 <!ENTITY openLinkCmd.accesskey        "v">
-<!ENTITY openLinkInPrivateWindowCmd.label "Arvi colegamento inte 'n neuvo barcon privou">
+<!ENTITY openLinkInPrivateWindowCmd.label "Arvi inte 'n neuvo barcon privou">
 <!ENTITY openLinkInPrivateWindowCmd.accesskey "k">
 <!ENTITY openLinkCmdInCurrent.label     "Arvi colegamento">
 <!ENTITY openLinkCmdInCurrent.accesskey "v">
-<!ENTITY openFrameCmdInTab.label      "Arvi riquaddro in neuvo feuggio">
+<!ENTITY openFrameCmdInTab.label      "Arvi riquaddro inte 'n neuvo feuggio">
 <!ENTITY openFrameCmdInTab.accesskey  "v">
-<!ENTITY openFrameCmd.label           "Arvi riquaddro in neuvo barcon">
+<!ENTITY openFrameCmd.label           "Arvi riquaddro inte 'n neuvo barcon">
 <!ENTITY openFrameCmd.accesskey       "r">
 <!ENTITY openLinkCmdInContainerTab.label "Arvi inte 'n atro contenitô de feuggi">
 <!ENTITY openLinkCmdInContainerTab.accesskey "u">
@@ -622,7 +655,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY viewVideoCmd.accesskey       "i">
 <!ENTITY viewBGImageCmd.label         "Fanni vedde inmagine de sfondo">
 <!ENTITY viewBGImageCmd.accesskey     "F">
-<!ENTITY setDesktopBackgroundCmd.label      "Inpòsta comme sfondo do desktop…">
+<!ENTITY setDesktopBackgroundCmd.label      "Inpòsta comme sfondo da scrivania…">
 <!ENTITY setDesktopBackgroundCmd.accesskey  "s">
 <!ENTITY bookmarkPageCmd2.label       "Azonzi questa pagina a-i segnalibbri">
 <!ENTITY bookmarkPageCmd2.accesskey   "n">
@@ -630,7 +663,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisLinkCmd.accesskey  "l">
 <!ENTITY bookmarkThisFrameCmd.label      "Azonzi sto riquaddro a-i segnalibbri">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "A">
-<!ENTITY pageAction.copyLink.label    "Còpia Colegamento">
+<!ENTITY pageAction.copyLink.label    "Còpia colegamento">
 
 <!-- LOCALIZATION NOTE(pocket-button.tooltiptext, saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label):
   "Pocket" is a brand name. -->
@@ -641,7 +674,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY saveLinkToPocketCmd.accesskey "o">
 <!ENTITY pocketMenuitem.label         "Amia elenco Pocket">
 
-<!ENTITY emailPageCmd.label           "Manda colegamento pe email…">
+<!ENTITY emailPageCmd.label           "Manda colegamento pe pòsta…">
 <!ENTITY emailPageCmd.accesskey       "c">
 <!ENTITY savePageCmd.label            "Sarva pagina co-o nomme…">
 <!ENTITY savePageCmd.accesskey        "a">
@@ -872,28 +905,27 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.moreInfoLinkText2 "Ciù informaçioin">
 
-<!ENTITY identity.clearSiteData "Scancella Cookie e Dæti di Sciti…">
+<!ENTITY identity.clearSiteData "Scancella cookie e dæti di sciti…">
 
 <!ENTITY identity.permissions "Permissi">
 <!ENTITY identity.permissionsEmpty "Nisciun permisso speciale asociou a sto scito.">
 <!ENTITY identity.permissionsReloadHint "Peu dase che ti devi arvî torna a pagina pe vedde i cangiamenti.">
 <!ENTITY identity.permissionsPreferences.tooltip "Arvi preferense di permissi">
-
 <!ENTITY identity.contentBlockingPreferences.tooltip "Arvi preferense do blòcco di contegnui">
 
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
-<!ENTITY tabsToolbar.label "Feuggio do navegatô">
+<!ENTITY tabsToolbar.label "Feuggi do navegatô">
 
 <!-- LOCALIZATION NOTE (syncTabsMenu3.label): This appears in the history menu -->
 <!ENTITY syncTabsMenu3.label     "Feuggi scincronizæ">
 
-<!ENTITY syncedTabs.sidebar.label              "Feuggio scincronizæ">
+<!ENTITY syncedTabs.sidebar.label              "Feuggi scincronizæ">
 <!ENTITY syncedTabs.sidebar.noclients.label    "Acedi a Firefox con atri dispoxitivi pe vedde i feuggi averti.">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Comme pòsso amiâ in sta sescion i feuggi da atri dipoxitivi?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Acedi pe amiâ un elenco di feuggi averti inti atri dispoxitivi.">
-<!ENTITY syncedTabs.sidebar.unverified.label   "O teu account o deve ese verificou.">
+<!ENTITY syncedTabs.sidebar.unverified.label   "O teu conto o deve ese verificou.">
 <!ENTITY syncedTabs.sidebar.notabs.label       "Nisciun feuggio averto">
 <!ENTITY syncedTabs.sidebar.openprefs.label    "Arvi e inpostaçioin de &syncBrand.shortName.label;">
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
@@ -921,7 +953,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.context.openAllInTabs.label              "Arvi tutti i feuggi">
 <!ENTITY syncedTabs.context.openAllInTabs.accesskey          "A">
-<!ENTITY syncedTabs.context.managedevices.label              "Gestisci Dispoxitivi…">
+<!ENTITY syncedTabs.context.managedevices.label              "Gestisci dispoxitivi…">
 <!ENTITY syncedTabs.context.managedevices.accesskey          "D">
 
 
@@ -930,6 +962,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSignIn.label             "Acedi a &syncBrand.shortName.label;…">
 <!ENTITY syncSignIn.accesskey         "y">
 <!ENTITY syncSyncNowItem.label        "Scincronizza oua">
+<!ENTITY syncSyncNowItemSyncing.label "Scincronizzo…">
 <!ENTITY syncSyncNowItem.accesskey    "S">
 <!ENTITY syncReAuthItem.label         "Conetti torna a &syncBrand.shortName.label;…">
 <!ENTITY syncReAuthItem.accesskey     "R">
@@ -940,7 +973,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.done "Fæto">
 <!ENTITY customizeMode.titlebar "Bara do titolo">
 <!ENTITY customizeMode.extraDragSpace "Spaçio de mesciamento">
-<!ENTITY customizeMode.toolbars2 "Bare di strumenti">
+<!ENTITY customizeMode.toolbars2 "Bare di atressi">
 <!ENTITY customizeMode.lwthemes "Temi">
 <!ENTITY customizeMode.lwthemes.myThemes "I mæ temi">
 <!ENTITY customizeMode.lwthemes.recommended "Consegiou">
@@ -948,7 +981,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.lwthemes.menuManage.accessKey "G">
 <!ENTITY customizeMode.lwthemes.menuGetMore "Piggia atri temi">
 <!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "O">
-<!ENTITY customizeMode.overflowList.title2 "Menû Extra">
+<!ENTITY customizeMode.overflowList.title2 "Menû de straripo">
 <!ENTITY customizeMode.overflowList.description "Rebela e mòlla i elementi chi pe tegnili razonzibili ma feua da teu bara di atressi…">
 <!ENTITY customizeMode.uidensity "Densitæ">
 <!-- LOCALIZATION NOTE (customizeMode.uidensity.menuNormal.*):
@@ -978,19 +1011,27 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.selectMicrophone.label "Micròfono da condividde:">
 <!ENTITY getUserMedia.selectMicrophone.accesskey "M">
 <!ENTITY getUserMedia.audioCapture.label "L’aodio do feugio o saiâ condivizo.">
-<!ENTITY getUserMedia.allWindowsShared.message "Tutte i barcoin vixibili into schermo saian condivizi.">
+<!ENTITY getUserMedia.allWindowsShared.message "Tutti i barcoin vixibili into schermo saian condivizi.">
 
 <!ENTITY contentBlocking.title "Blòcco di contengui">
+<!ENTITY contentBlocking.detected "Sta pagina a no gh'à di elementi che peuan ese blocâ.">
+<!ENTITY contentBlocking.notDetected "Sta pagina a gh'à di elementi che peuan ese blocâ.">
 
+<!ENTITY contentBlocking.trackingProtection3.label "Elementi che tracian">
 
+<!ENTITY contentBlocking.manageSettings.label "Gestisci blòcco di contegnui">
+<!ENTITY contentBlocking.manageSettings.accesskey "G">
 
+<!ENTITY contentBlocking.trackersView.label "Elementi che tracian">
 
+<!ENTITY contentBlocking.cookies.label "Cookie">
+<!ENTITY contentBlocking.cookiesView.label "Cookie e dæti di sciti">
 
 <!ENTITY contentBlocking.cryptominers.label "Cryptominer">
 <!ENTITY contentBlocking.cryptominersView.label "Cryptominer">
 
-<!ENTITY contentBlocking.fingerprinters.label "Fingerprinters">
-<!ENTITY contentBlocking.fingerprintersView.label "Fingerprinters">
+<!ENTITY contentBlocking.fingerprinters.label "Rilevatoî de inpronte digitali">
+<!ENTITY contentBlocking.fingerprintersView.label "Rilevatoî de inpronte digitali">
 
 <!ENTITY contentBlocking.openBreakageReportView2.label "Segnala problema">
 <!ENTITY contentBlocking.breakageReportView.label "Segnala problemi">
@@ -1003,9 +1044,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- LOCALIZATION NOTE (trackingProtection.unblock5.label, trackingProtection.unblock5.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in NON-private browsing mode. -->
+<!ENTITY trackingProtection.unblock5.label "Dizabilita o blòcco pe sto scito">
+<!ENTITY trackingProtection.unblock5.accesskey "D">
 <!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate6.label, trackingProtection.unblockPrivate6.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in PRIVATE browsing mode. -->
+<!ENTITY trackingProtection.unblockPrivate5.label "Dizabilita o blòcco tenporaneamente">
+<!ENTITY trackingProtection.unblockPrivate5.accesskey "D">
+<!ENTITY trackingProtection.block6.label "Abilita o blòcco pe sto scito">
+<!ENTITY trackingProtection.block6.accesskey "A">
 <!ENTITY trackingProtection.reload2.label "Carega torna a pagina">
 <!ENTITY trackingProtection.reload2.accesskey "C">
 
@@ -1049,12 +1096,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY emeLearnMoreContextMenu.label            "Atre informaçioin un sce DRM…">
 <!ENTITY emeLearnMoreContextMenu.accesskey        "D">
 
-<!ENTITY updateAvailable.message "Agiorna &brandShorterName; pe avei o megio da velocitæ e da privacy.">
+<!ENTITY updateAvailable.message "Agiorna &brandShorterName; pe-o megio da velocitæ e da privacy.">
 <!ENTITY updateAvailable.whatsnew.label "Amia cöse gh'é de neuvo.">
 <!ENTITY updateAvailable.header.message "Gh'é 'n neuvo agiornamento de &brandShorterName;.">
 <!ENTITY updateAvailable.acceptButton.label "Scarega Agiornamento">
 <!ENTITY updateAvailable.acceptButton.accesskey "S">
-<!ENTITY updateAvailable.cancelButton.label "Oua No">
+<!ENTITY updateAvailable.cancelButton.label "Oua no">
 <!ENTITY updateAvailable.cancelButton.accesskey "N">
 <!ENTITY updateAvailable.panelUI.label "Scarega agiornamento de &brandShorterName;">
 
@@ -1063,22 +1110,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateManual.header.message "&brandShorterName; o no se peu agiornâ a l'urtima verscion.">
 <!ENTITY updateManual.acceptButton.label "Scarega &brandShorterName;">
 <!ENTITY updateManual.acceptButton.accesskey "S">
-<!ENTITY updateManual.cancelButton.label "Oua No">
+<!ENTITY updateManual.cancelButton.label "Oua no">
 <!ENTITY updateManual.cancelButton.accesskey "N">
 <!ENTITY updateManual.panelUI.label "Scarega 'na còpia neuva de &brandShorterName;">
 
 <!ENTITY updateRestart.message2 "Dòppo ina avertua rapida, &brandShorterName; o repigiâ tutti feuggi e barcoin che no ean into mòddo de Naveagçion Privâ.">
 <!ENTITY updateRestart.header.message2 "Arvi torna pe agiornâ &brandShorterName;.">
-<!ENTITY updateRestart.acceptButton.label "Arvi torna e Repiggia">
+<!ENTITY updateRestart.acceptButton.label "Arvi torna e repiggia">
 <!ENTITY updateRestart.acceptButton.accesskey "A">
-<!ENTITY updateRestart.cancelButton.label "Oua No">
+<!ENTITY updateRestart.cancelButton.label "Oua no">
 <!ENTITY updateRestart.cancelButton.accesskey "N">
 <!ENTITY updateRestart.panelUI.label2 "Arvi torna pe agiornâ &brandShorterName;">
 
 <!ENTITY newTabControlled.header.message "A pagina neuvo feuggio a l'é cangiâ.">
 <!ENTITY newTabControlled.keepButton.label "Mantegni i cangi">
 <!ENTITY newTabControlled.keepButton.accesskey "c">
-<!ENTITY newTabControlled.disableButton.label "Dizabilita Estenscion">
+<!ENTITY newTabControlled.disableButton.label "Dizabilita estenscion">
 <!ENTITY newTabControlled.disableButton.accesskey "D">
 
 <!ENTITY homepageControlled.message "'Na estenscion o l'é cangiou e cöse che ti veddi inta pagina prinçipâ. Ti peu repigiâ e teu inpostaçioin se no veu sto cangio.">
@@ -1091,7 +1138,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY tabHideControlled.header.message "Acedi a-i teu feuggi ascoxi">
 <!ENTITY tabHideControlled.keepButton.label "Mantegni ascoxi i feuggi">
 <!ENTITY tabHideControlled.keepButton.accesskey "M">
-<!ENTITY tabHideControlled.disableButton.label "Dizabilita Estenscion">
+<!ENTITY tabHideControlled.disableButton.label "Dizabilita estenscion">
 <!ENTITY tabHideControlled.disableButton.accesskey "D">
 
 <!ENTITY pageActionButton.tooltip "Pagina açioin">
@@ -1110,10 +1157,18 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      display a tooltip for accessibility indicator in toolbar/tabbar. It is also
      used as a textual label for the indicator used by assistive technology
      users. -->
-<!ENTITY accessibilityIndicator.tooltip "Fonçion de Acesibilitæ Abilitâ">
+<!ENTITY accessibilityIndicator.tooltip "Fonçioin de acesibilitæ abilitæ">
 
 <!-- LOCALIZATION NOTE: (addonPostInstallMessage.label):
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "Gestisci e inpostaçioin di conponenti azonti sciacando <image class='addon-addon-icon'/> into <image class='addon-toolbar-icon'/> menû.">
+<!ENTITY addonPostInstall.incognito.checkbox.label "Permetti l’ezegoçion de sta estenscion inti barcoin privæ">
+<!ENTITY addonPostInstall.incognito.checkbox.accesskey "A">
 
+<!ENTITY addonPrivateBrowsing.header2.label "Cangiamenti in scê estenscioin inti barcoin privæ">
+<!ENTITY addonPrivateBrowsing.learnMore.label "Descòvri comme gestî e inpostaçioin de estenscioin.">
+<!ENTITY addonPrivateBrowsing.okButton.label "Va ben, ò capio">
+<!ENTITY addonPrivateBrowsing.okButton.accesskey "V">
+<!ENTITY addonPrivateBrowsing.manageButton.label "Gestisci estenscioin">
+<!ENTITY addonPrivateBrowsing.manageButton.accesskey "G">

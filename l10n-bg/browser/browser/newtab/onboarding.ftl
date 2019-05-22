@@ -27,3 +27,15 @@ onboarding-ghostery-title = Ghostery
 onboarding-ghostery-text = Разглеждайте по-бързо, по-удобно и безопасно с разширения като Ghostery, което спира досадните реклами.
 # Note: "Sync" in this case is a generic verb, as in "to synchronize"
 onboarding-fxa-title = Sync
+onboarding-fxa-text = Регистрирайте { -fxaccount-brand-name } и синхронизирайте отметки, пароли и отворени раздели навсякъде където използвате { -brand-short-name }.
+
+## Message strings belonging to the Return to AMO flow
+
+return-to-amo-sub-header = Страхотно е че имате { -brand-short-name }
+# <icon></icon> will be replaced with the icon belonging to the extension
+#
+# Variables:
+#   $addon-name (String) - Name of the add-on
+return-to-amo-addon-header = Сега нека инсталираме <icon></icon><b>{ $addon-name }.</b>
+return-to-amo-extension-button = Добавяне на разширението
+return-to-amo-get-started-button = Започнете работа с { -brand-short-name }

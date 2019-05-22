@@ -77,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = Posledni raz zaktualizowany
 detail-contributions-description = Wuwiwar tutoho přidatka prosy, zo byšće pomhał, jeho stajne wuwiće podpěrać, darujo mały přinošk.
+detail-contributions-button = Přinošować
+    .title = K wuwiwanju tutoho přidatka přinošować
+    .accesskey = P
 detail-update-type =
     .value = Awtomatiske aktualizacije
 detail-update-default =
@@ -90,7 +93,14 @@ detail-update-manual =
     .tooltiptext = Aktualizacije awtomatisce njeinstalować
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = W priwatnych woknach wuwjesć
-detail-private-browsing-description = Rozšěrjenje budźe w priwatnych woknach fungować a změje přistup na waše aktiwity online. <label data-l10n-name="detail-private-browsing-learn-more">Dalše informacije</label>
+detail-private-browsing-description2 = Jeli maće prawo, ma rozšěrjenje přistup na waše aktiwity online w priwatnym modusu. <label data-l10n-name="detail-private-browsing-learn-more">Dalše informacije</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = W priwatnych woknach njedowoleny
+detail-private-disallowed-description = Tute rozšěrjenje w priwatnym modusu njefunguje. <label data-l10n-name="detail-private-browsing-learn-more">Dalše informacije</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Wužaduje sej přistup na priwatne wokna
+detail-private-required-description = Tute rozšěrjenje ma přistup na aktiwity online w priwatnym modusu. <label data-l10n-name="detail-private-browsing-learn-more">Dalše informacije</label>
 detail-private-browsing-on =
     .label = Dowolić
     .tooltiptext = W priwatnym modusu zmóžnić
@@ -140,7 +150,7 @@ legacy-extensions =
     .value = Zestarjene rozšěrjenja
 legacy-extensions-description = Tute rozšěrjenja su so znjemóžnili, dokelž standardam { -brand-short-name } njewotpowěduja. <label data-l10n-name="legacy-learn-more">Dalše informacije wo změnach tutych přidatkow</label>
 private-browsing-description2 =
-    { -brand-short-name } měnja, kak rozšěrjenja w priwatnym modusu funguja. Now rozšěrjenja, kotrež
+    { -brand-short-name } měnja, kak rozšěrjenja w priwatnym modusu funguja. Nowe rozšěrjenja, kotrež
     { -brand-short-name } přidawaće, po standardźe w priwatnych woknach njefunguja. Chibazo
     dowoleće to w nastajenjach, rozšěrjenje w priwatnym modusu njefunguje a nima přistup na waše
     aktiwity online. Smy tutu změnu sčinili, zo by waš priwatny modus priwatny wóstał. <label data-l10n-name="private-browsing-learn-more">Zhońće wjace wo rjadowanju nastajenjow rozšěrjenja.</label>
@@ -240,6 +250,10 @@ shortcuts-modifier-other = Strg abo Alt zapřijeć
 shortcuts-invalid = Njepłaćiwa kombinacija
 shortcuts-letter = Zapodajće pismik
 shortcuts-system = Tastowa skrótšenka { -brand-short-name } njeda so přepisać
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Wužiwa so hižo přez { $addon }
 shortcuts-card-expand-button =
     { $numberToShow ->
         [one] { $numberToShow } dalši pokazać
@@ -256,5 +270,25 @@ go-back-button =
 remove-addon-button = Wotstronić
 disable-addon-button = Znjemóžnić
 enable-addon-button = Zmóžnić
-addons-enabled-heading = Zmóžnjeny
-addons-disabled-heading = Znjemóžnjeny
+expand-addon-button = Dalše nastajenja
+addons-enabled-heading = Zmóžnjene
+addons-disabled-heading = Znjemóžnjene
+addon-detail-author-label = Awtor
+addon-detail-version-label = Wersija
+addon-detail-last-updated-label = Posledni raz zaktualizowany
+addon-detail-homepage-label = Startowa strona
+addon-detail-rating-label = Pohódnoćenje
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (znjemóžnjeny)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } pohódnoćenje
+        [two] { $numberOfReviews } pohódnoćeni
+        [few] { $numberOfReviews } pohódnoćenja
+       *[other] { $numberOfReviews } pohódnoćenjow
+    }

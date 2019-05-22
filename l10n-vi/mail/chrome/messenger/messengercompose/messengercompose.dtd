@@ -14,7 +14,7 @@
 <!ENTITY newMessage.key "M">
 <!ENTITY newMessageCmd2.key "N">
 <!ENTITY newMessage.accesskey "T">
-<!ENTITY newContact.label "Tên liên hệ trong Sổ Địa Chỉ…">
+<!ENTITY newContact.label "Liên hệ trong sổ địa chỉ…">
 <!ENTITY newContact.accesskey "S">
 <!ENTITY attachMenu.label "Đính kèm">
 <!ENTITY attachMenu.accesskey "k">
@@ -46,7 +46,7 @@
 <!ENTITY sendLaterCmd.label "Gửi Sau">
 <!ENTITY sendLaterCmd.keycode "VK_RETURN">
 <!ENTITY sendLaterCmd.accesskey "S">
-<!ENTITY printSetupCmd.label "Thiết lập Trang…">
+<!ENTITY printSetupCmd.label "Thiết lập trang…">
 <!ENTITY printSetupCmd.accesskey "p">
 <!ENTITY printCmd.label "In…">
 <!ENTITY printCmd.key "P">
@@ -54,7 +54,7 @@
 
 <!-- Edit Menu -->
 <!ENTITY editMenu.label "Chỉnh sửa">
-<!ENTITY editMenu.accesskey "C">
+<!ENTITY editMenu.accesskey "e">
 <!ENTITY undoCmd.label "Hoàn tác">
 <!ENTITY undoCmd.key "Z">
 <!ENTITY undoCmd.accesskey "H">
@@ -72,7 +72,7 @@
 <!ENTITY pasteCmd.accesskey "D">
 <!ENTITY pasteNoFormattingCmd.key "V">
 <!ENTITY pasteAsQuotationCmd.key "o">
-<!ENTITY editRewrapCmd.accesskey "G">
+<!ENTITY editRewrapCmd.accesskey "w">
 <!ENTITY deleteCmd.label "Xóa">
 <!ENTITY deleteCmd.accesskey "X">
 <!ENTITY editRewrapCmd.label "Gói lại">
@@ -87,7 +87,7 @@
 <!ENTITY selectAllCmd.label "Chọn Toàn Bộ">
 <!ENTITY selectAllCmd.accesskey "B">
 <!ENTITY selectAllCmd.key "A">
-<!ENTITY findAgainCmd.label "Tìm Lại">
+<!ENTITY findAgainCmd.label "Tìm tiếp">
 <!ENTITY findAgainCmd.accesskey "i">
 <!ENTITY findAgainCmd.key "G">
 <!ENTITY findAgainCmd.key2 "VK_F3">
@@ -110,7 +110,7 @@
 <!ENTITY viewMenu.accesskey "H">
 <!ENTITY viewToolbarsMenuNew.label "Thanh Công Cụ">
 <!ENTITY viewToolbarsMenuNew.accesskey "C">
-<!ENTITY menubarCmd.label "Menu Bar">
+<!ENTITY menubarCmd.label "Thanh menu">
 <!ENTITY menubarCmd.accesskey "M">
 <!ENTITY showCompositionToolbarCmd.label "Thanh Soạn Thảo">
 <!ENTITY showCompositionToolbarCmd.accesskey "S">
@@ -164,7 +164,7 @@
 <!ENTITY lowPriorityCmd.label "Thấp">
 <!ENTITY lowPriorityCmd.accesskey "h">
 <!ENTITY normalPriorityCmd.label "Bình thường">
-<!ENTITY normalPriorityCmd.accesskey "B">
+<!ENTITY normalPriorityCmd.accesskey "n">
 <!ENTITY highPriorityCmd.label "Cao">
 <!ENTITY highPriorityCmd.accesskey "a">
 <!ENTITY highestPriorityCmd.label "Cao nhất">
@@ -179,7 +179,7 @@
 <!ENTITY messengerCmd.label "Thư &amp; Nhóm tin">
 <!ENTITY messengerCmd.accesskey "T">
 <!ENTITY messengerCmd.commandkey "1">
-<!ENTITY addressBookCmd.label "Sổ Địa Chỉ">
+<!ENTITY addressBookCmd.label "Sổ địa chỉ">
 <!ENTITY addressBookCmd.accesskey "S">
 <!ENTITY addressBookCmd.key "B">
 <!ENTITY preferencesCmdUnix.label "Tùy chỉnh">
@@ -204,7 +204,7 @@
 <!ENTITY sendButton.tooltip "Gửi thư này ngay">
 <!ENTITY sendlaterButton.tooltip "Gửi thư này sau">
 <!ENTITY quoteButton.tooltip "Trích dẫn thư trước">
-<!ENTITY addressButton.tooltip "Chọn một người nhận từ Sổ Địa Chỉ">
+<!ENTITY addressButton.tooltip "Chọn một người nhận từ sổ địa chỉ">
 <!ENTITY spellingButton.tooltip "Kiểm tra chính tả của phần đã chọn hoặc toàn bộ thư">
 <!ENTITY saveButton.tooltip "Lưu thư này">
 <!ENTITY cutButton.tooltip              "Cắt">
@@ -254,7 +254,7 @@
 
 <!-- Message Pane Context Menu -->
 <!ENTITY spellCheckNoSuggestions.label "Không thấy Đề xuất nào">
-<!ENTITY spellCheckIgnoreWord.label "Bỏ qua Từ">
+<!ENTITY spellCheckIgnoreWord.label "Bỏ qua từ">
 <!ENTITY spellCheckIgnoreWord.accesskey "u">
 <!ENTITY spellCheckAddToDictionary.label "Thêm vào Từ điển">
 <!ENTITY spellCheckAddToDictionary.accesskey "v">
@@ -282,6 +282,8 @@
 <!ENTITY selectAll.accesskey "B">
 <!ENTITY attachFile.label "Đính kèm Tập tin…">
 <!ENTITY attachFile.accesskey "k">
+<!ENTITY cancelUpload.label "Hủy tải lên">
+<!ENTITY cancelUpload.accesskey "n">
 <!ENTITY attachPage.label "Đính kèm Trang Web…">
 <!ENTITY attachPage.accesskey "W">
 

@@ -77,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = Última actualización
 detail-contributions-description = El desarrollador de este complemento solicita que ayudes a continuar su desarrollo haciendo una pequeña contribución.
+detail-contributions-button = Colaborar
+    .title = Colaborar con el desarrollo de este complemento
+    .accesskey = C
 detail-update-type =
     .value = Actualizaciones automáticas
 detail-update-default =
@@ -90,7 +93,14 @@ detail-update-manual =
     .tooltiptext = No instalar automáticamente las actualizaciones
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Ejecutar en ventana privada
-detail-private-browsing-description = La extensión se ejecutará en las ventanas privadas y tendrá acceso a su actividad en línea. <label data-l10n-name="detail-private-browsing-learn-more">Saber más</label>
+detail-private-browsing-description2 = Cuando esté permitido, la extensión tendrá acceso a su actividad en línea mientras navega de forma privada. <label data-l10n-name="detail-private-browsing-learn-more">Descubra más</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = No se permite en ventanas privadas
+detail-private-disallowed-description = Esta extensión no se ejecuta durante la navegación privada. <label data-l10n-name="detail-private-browsing-learn-more">Descubra más</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Necesita acceder a ventanas privadas
+detail-private-required-description = Esta extensión tiene acceso a sus actividades en línea mientras navega de forma privada. <label data-l10n-name="detail-private-browsing-learn-more">Descubra más</label>
 detail-private-browsing-on =
     .label = Permitir
     .tooltiptext = Activar en navegación privada
@@ -139,6 +149,12 @@ legacy-warning-show-legacy = Mostrar extensiones clásicas
 legacy-extensions =
     .value = Extensiones clásicas
 legacy-extensions-description = Estas extensiones no cumplen los estándares actuales de { -brand-short-name } por lo que han sido desactivadas. <label data-l10n-name="legacy-learn-more">Conozca sobre los cambios a los complementos</label>
+private-browsing-description2 =
+    { -brand-short-name } está cambiando la forma en que funcionan las extensiones en la navegación privada. Cualquier nueva extensión que agregues a
+    { -brand-short-name } no se ejecutará de forma predeterminada en las ventanas privadas. A menos que lo permitas en los Ajustes, la
+    la extensión no funcionará durante la navegación privada, y no tendrá acceso a tus actividades en línea
+    ahí. Hemos realizado este cambio para mantener privada tu navegación privada.
+    <label data-l10n-name = "private-browsing-learn-more">Descubre cómo administrar la configuración de las extensiones.</label>
 extensions-view-discover =
     .name = Obtener complementos
     .tooltiptext = { extensions-view-discover.name }
@@ -235,6 +251,10 @@ shortcuts-modifier-other = Incluir Ctrl o Alt
 shortcuts-invalid = Combinación no válida
 shortcuts-letter = Escriba una letra
 shortcuts-system = No se puede sobrescribir un acceso directo de { -brand-short-name }.
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Ya lo está usando { $addon }
 shortcuts-card-expand-button =
     { $numberToShow ->
         [one] Mostrar { $numberToShow } más
@@ -249,5 +269,43 @@ go-back-button =
 remove-addon-button = Eliminar
 disable-addon-button = Desactivar
 enable-addon-button = Activar
+expand-addon-button = Más opciones
 addons-enabled-heading = Activado
 addons-disabled-heading = Desactivado
+ask-to-activate-button = Preguntar antes de activar
+always-activate-button = Activar siempre
+never-activate-button = No activar nunca
+addon-detail-author-label = Autor
+addon-detail-version-label = Versión
+addon-detail-last-updated-label = Últ. actualización
+addon-detail-homepage-label = Página de inicio
+addon-detail-rating-label = Calificación
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (deshabilitado)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } revisión
+       *[other] { $numberOfReviews } revisiones
+    }
+
+## Pending uninstall message bar
+
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = Se ha eliminado <span data-l10n-name="addon-name">{ $addon }</span>.
+pending-uninstall-undo-button = Deshacer
+addon-detail-updates-label = Permitir actualizaciones automáticas
+addon-detail-updates-radio-default = Predeterminado
+addon-detail-updates-radio-on = Activado
+addon-detail-updates-radio-off = Desactivar
+addon-detail-update-check-label = Comprobar si hay actualizaciones
+install-update-button = Actualizar
+addon-detail-private-browsing-allow = Permitir
+addon-detail-private-browsing-disallow = No permitir
+available-updates-heading = Actualizaciones disponibles
+recent-updates-heading = Actualizaciones recientes

@@ -3,12 +3,15 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 cfr-doorhanger-extension-heading = Rekomendasi Ekstensi
+cfr-doorhanger-pintab-heading = Coba Yang Ini: Sematkan Tab
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Mengapa saya melihat ini?
 cfr-doorhanger-extension-cancel-button = Jangan Sekarang
     .accesskey = J
 cfr-doorhanger-extension-ok-button = Tambahkan Sekarang
     .accesskey = T
+cfr-doorhanger-pintab-ok-button = Sematkan Tab Ini
+    .accesskey = S
 cfr-doorhanger-extension-manage-settings-button = Kelola Pengaturan Rekomendasi
     .accesskey = K
 cfr-doorhanger-extension-never-show-recommendation = Jangan Tampilkan Rekomendasi Ini
@@ -39,3 +42,20 @@ cfr-doorhanger-extension-total-users =
     { $total ->
        *[other] { $total } pengguna
     }
+cfr-doorhanger-pintab-description = Dapatkan akses mudah ke situs yang paling sering Anda gunakan. Jaga agar situs tetap terbuka di tab (bahkan saat Anda memuat ulang).
+
+## These messages are steps on how to use the feature and are shown together.
+
+cfr-doorhanger-pintab-step1 = <b>Klik kanan</b> pada tab yang ingin Anda sematkan.
+cfr-doorhanger-pintab-step2 = Pilih <b>Sematkan Tab</b> dari menu.
+cfr-doorhanger-pintab-step3 = Jika situs  diperbarui, akan ada titik biru pada tab yang Anda sematkan.
+cfr-doorhanger-pintab-animation-pause = Jeda
+cfr-doorhanger-pintab-animation-resume = Lanjutkan
+
+## Firefox Accounts Message
+
+cfr-doorhanger-bookmark-fxa-header = Sinkronkan markah Anda di mana saja.
+cfr-doorhanger-bookmark-fxa-link-text = Sinkronkan markah sekarang…
+cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
+    .aria-label = Tombol tutup
+    .title = T

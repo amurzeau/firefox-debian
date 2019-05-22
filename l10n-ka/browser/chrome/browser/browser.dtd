@@ -64,6 +64,8 @@ but will never be visible at the same time. -->
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "ნ">
 
+<!-- Tab context menu -->
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -108,7 +110,6 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "დამალული ჩანართები">
 
 <!ENTITY  listAllTabs.label      "ყველა ჩანართის სია">
-
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
 <!ENTITY  allTabsMenu.searchTabs.label       "ჩანართების ძიება">
@@ -131,10 +132,13 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.accesskey "ა">
 <!ENTITY printCmd.commandkey "p">
 
+<!ENTITY importFromAnotherBrowserCmd.label "გადმოტანა სხვა ბრაუზერიდან…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "ბ">
+
 <!ENTITY taskManagerCmd.label "ამოცანათა მმართველი">
 
 <!ENTITY goOfflineCmd.label "კავშირგარეშე რეჟიმი">
-<!ENTITY goOfflineCmd.accesskey "გ">
+<!ENTITY goOfflineCmd.accesskey "კ">
 
 <!ENTITY menubarCmd.label "მენიუს ზოლი">
 <!ENTITY menubarCmd.accesskey "ზ">
@@ -200,7 +204,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "&syncBrand.shortName.label; – შესვლა">
-<!ENTITY fxaSignedIn.tooltip "სინქრონიზაციის პარამეტრების გახსნა">
+<!ENTITY fxaSignedIn.tooltip "გახსენით &syncBrand.shortName.label; – პარამეტრები">
 <!ENTITY fxaSignInError.label "&syncBrand.shortName.label; – ხელახლა დაკავშირება">
 <!ENTITY fxaUnverified.label "თქვენი ანგარიშის დადასტურება">
 
@@ -212,6 +216,28 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenAutohide.accesskey "დ">
 <!ENTITY fullScreenExit.label "სრულეკრანიანი რეჟიმიდან გამოსვლა">
 <!ENTITY fullScreenExit.accesskey "ს">
+
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "თან წაიყოლეთ Firefox">
+<!ENTITY fxa.signin.description.label "მიიღეთ წვდომა თქვენს სანიშნებთან, ისტორიასთან, პაროლებსა და სხვა პარამეტრებთან, ყველა თქვენს მოწყობილობაზე.">
+<!ENTITY fxa.signin.button.label "ჩართეთ &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "შეამოწმეთ თქვენი ელფოსტა">
+<!ENTITY fxa.unverified.description.label "ჯერ საჭიროა ანგარიშის დამოწმება, სინქრონიზაციის დასაწყებად.">
+<!ENTITY fxa.unverified.button.label "გახსენით &syncBrand.shortName.label; – პარამეტრები…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "შესული, როგორც">
+<!ENTITY fxa.menu.manageAccount.label "ანგარიშის მართვა…">
+<!ENTITY fxa.menu.syncSettings.label "&syncBrand.shortName.label; – პარამეტრები…">
+<!ENTITY fxa.menu.connectAnotherDevice.label "&syncedTabs.sidebar.connectAnotherDevice;">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "სხვა მოწყობილობის დაკავშირება…">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
@@ -229,6 +255,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "სრული ეკრანიდან გამოსვლა (esc)">
 <!ENTITY leaveDOMFullScreen.label "სრულეკრანიანი რეჟიმიდან გამოსვლა">
 <!ENTITY leaveDOMFullScreen.accesskey "ს">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.label "ეკრანი-ეკრანში">
+<!ENTITY pictureInPicture.accesskey "ე">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -278,7 +310,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "მდებარეობის მოთხოვნის არე">
 <!ENTITY urlbar.autoplayNotificationAnchor.tooltip        "თვითგაშვების სამართავის გახსნა">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "დამატების ჩადგმის შეტყობინების არის გახსნა">
-<!ENTITY urlbar.canvasNotificationAnchor.tooltip          "გრაფიკული გამოსახულების მონაცემთა მიღების უფლებების მართვა">
+<!ENTITY urlbar.canvasNotificationAnchor.tooltip          "გრაფიკის გამოსახვის მონაცემებზე წვდომის უფლებების მართვა">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "კავშირგარეშე საცავის შეტყობინების არის გახსნა">
 <!ENTITY urlbar.passwordNotificationAnchor.tooltip        "პაროლის შენახვის შეტყობინების არის გახსნა">
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "გამოყენებული მოდულების მართვა">
@@ -306,7 +338,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "ამ საიტისთვის, მუდმივ მეხსიერებასთან წვდომა შეზღუდული გაქვთ.">
 <!ENTITY urlbar.popupBlocked.tooltip             "ამ საიტზე, ამომხტომი ფანჯრები შეზღუდული გაქვთ.">
 <!ENTITY urlbar.autoplayMediaBlocked.tooltip     "ამ საიტისთვის მედიაფაილების თვითგაშვების უფლება შეზღუდული გაქვთ.">
-<!ENTITY urlbar.canvasBlocked.tooltip            "ამ საიტისთვის, გრაფიკული გამოსახულების მონაცემთა მიღების უფლება შეზღუდული გაქვთ.">
+<!ENTITY urlbar.canvasBlocked.tooltip            "ამ საიტისთვის, გრაფიკის გამოსახვის მონაცემებზე წვდომის უფლება შეზღუდული გაქვთ.">
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "ამ საიტისთვის Adobe Flash მოდულის გამოყენების უფლება შეზღუდული გაქვთ.">
 <!ENTITY urlbar.midiBlocked.tooltip              "ამ საიტისთვის MIDI წვდომის უფლება შეზღუდული გაქვთ.">
 
@@ -376,7 +408,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY manageUserContext.accesskey      "ა">
 <!ENTITY newNavigatorCmd.label        "ახალი ფანჯარა">
 <!ENTITY newNavigatorCmd.key        "N">
-<!ENTITY newNavigatorCmd.accesskey      "ა">
+<!ENTITY newNavigatorCmd.accesskey      "ნ">
 <!ENTITY newPrivateWindow.label     "ახალი პირადი ფანჯარა">
 <!ENTITY newPrivateWindow.accesskey "ფ">
 
@@ -408,6 +440,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.label       "პარამეტრები">
 <!ENTITY preferencesCmdUnix.accesskey     "ტ">
 
+<!ENTITY logins.label                           "ანგარიშები და პაროლები">
+
 <!ENTITY clearRecentHistory.label               "უახლესი ისტორიის გასუფთავება...">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
@@ -437,6 +471,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.clearRecent.label "უახლესი ისტორიის გასუფთავება…">
 <!ENTITY appMenuHistory.restoreSession.label "წინა სეანსის აღდგენა">
 <!ENTITY appMenuHistory.viewSidebar.label "ისტორიის გვერდითი ზოლის ჩვენება">
+<!ENTITY appMenuHistory.hideSidebar.label "ისტორიის გვერდითი ზოლის დამალვა">
 <!ENTITY appMenuHistory.recentHistory.label "უახლესი ისტორია">
 <!ENTITY appMenuHelp.label "დახმარება">
 
@@ -465,6 +500,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Sync-ში შესვლა">
 <!ENTITY appMenuRemoteTabs.managedevices.label "მოწყობილობების მართვა…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "დასინქრონებული ჩანართების გვერდითი ზოლის ნახვა">
+<!ENTITY appMenuRemoteTabs.hidesidebar.label "დასინქრონებული ჩანართების გვერდითი ზოლის დამალვა">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "სხვა მოწყობილობის დაკავშირება">
 
 <!ENTITY appMenuRecentHighlights.label "ბოლო მნიშვნელოვანი">
@@ -495,6 +531,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.removeExtension.label "გაფართოების ამოშლა">
 <!ENTITY customizeMenu.removeExtension.accesskey "მ">
 
+<!-- LOCALIZATION NOTE (reportExtension.label) This label is used in the extensions
+     toolbar buttons context menus, a user can use this command to submit to Mozilla
+     an abuse report related to that extension. "Report" is a verb. -->
+<!ENTITY customizeMenu.reportExtension.label "გაფართოების გასაჩივრება">
+<!ENTITY customizeMenu.reportExtension.accesskey "ჩ">
+
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
     secondary commands. -->
@@ -502,10 +544,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "მოძებნეთ ან შეიყვანეთ მისამართი">
-<!ENTITY urlbar.accesskey             "d">
+<!ENTITY urlbar.accesskey             "ს">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "გაფართოება:">
-<!ENTITY urlbar.switchToTab.label     "გადასვლა დაფაზე:">
+<!ENTITY urlbar.switchToTab.label     "გადასვლა ჩანართზე:">
 
 <!-- LOCALIZATION NOTE (urlbar.searchSuggestionsNotification.hintPrefix): Shown just before the suggestions opt-out hint. -->
 <!ENTITY urlbar.searchSuggestionsNotification.hintPrefix "რჩევა:">
@@ -602,7 +644,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY reloadFrameCmd.label         "ჩარჩოს განახლება">
 <!ENTITY reloadFrameCmd.accesskey     "ხ">
 <!ENTITY viewPartialSourceForSelectionCmd.label "მონიშნულის წყაროს ჩვენება">
-<!ENTITY viewPartialSourceCmd.accesskey "წ">
+<!ENTITY viewPartialSourceCmd.accesskey "ო">
 <!ENTITY viewPageSourceCmd.label      "გვერდის წყაროს ჩვენება">
 <!ENTITY viewPageSourceCmd.accesskey  "წ">
 <!ENTITY viewFrameSourceCmd.label     "ჩარჩოს წყაროს ჩვენება">
@@ -662,9 +704,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY saveAudioCmd.label           "ხმოვანი ფაილის შენახვა როგორც…">
 <!ENTITY saveAudioCmd.accesskey       "ნ">
 <!ENTITY emailImageCmd.label          "სურათის გაგზავნა ელფოსტით…">
-<!ENTITY emailImageCmd.accesskey      "ე">
+<!ENTITY emailImageCmd.accesskey      "ფ">
 <!ENTITY emailVideoCmd.label          "ვიდეოს გაგზავნა ელფოსტით…">
-<!ENTITY emailVideoCmd.accesskey      "ე">
+<!ENTITY emailVideoCmd.accesskey      "ფ">
 <!ENTITY emailAudioCmd.label          "ხმოვანი ფაილის გაგზავნა ელფოსტით…">
 <!ENTITY emailAudioCmd.accesskey      "ე">
 <!ENTITY playPluginCmd.label          "ამ მოდულის ჩართვა">
@@ -723,7 +765,7 @@ fast. -->
 <!ENTITY mediaPlaybackRate200x2.label "გიჟური (2×)">
 <!ENTITY mediaPlaybackRate200x2.accesskey "გ">
 <!ENTITY mediaLoop.label             "გამეორება დაუსრულებლად">
-<!ENTITY mediaLoop.accesskey         "გ">
+<!ENTITY mediaLoop.accesskey         "ო">
 <!-- LOCALIZATION NOTE: The access keys for "Show Controls" and
 "Hide Controls" are the same because the two context-menu
 items are mutually exclusive. -->
@@ -734,7 +776,7 @@ items are mutually exclusive. -->
 <!ENTITY videoFullScreen.label       "სრულ ეკრანზე">
 <!ENTITY videoFullScreen.accesskey   "ს">
 <!ENTITY videoSaveImage.label        "კადრის შენახვა როგორც…">
-<!ENTITY videoSaveImage.accesskey    "ა">
+<!ENTITY videoSaveImage.accesskey    "კ">
 <!-- LOCALIZATION NOTE: The access keys for "Show Statistics" and
 "Hide Statistics" are the same because the two context-menu
 items are mutually exclusive. -->
@@ -851,14 +893,14 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.weakEncryption "ეს გვერდი სუსტ დაშიფვრას იყენებს.">
 
 <!-- Strings for connection state warnings in the subview. -->
-<!ENTITY identity.description.insecure "კავშირი ამ საიტთან დაუცველია. თქვენ მიერ გადაგზავნილი ინფორმაცია შესაძლოა სხვებმაც ნახონ (მაგალითად პაროლები, შეტყობინებები, საკრედიტო ბარათების მონაცემები და ა.შ.).">
+<!ENTITY identity.description.insecure "კავშირი ამ საიტთან დაუცველია. თქვენ მიერ გადაგზავნილი ინფორმაცია შესაძლოა სხვებმაც ნახონ (მაგალითად პაროლები, შეტყობინებები, საკრედიტო ბარათების ნომრები და ა.შ.).">
 <!ENTITY identity.description.insecureLoginForms "ამ გვერდზე შეყვანილი ანგარიშის მონაცემები დაუცველია და შესაძლოა მოიპარონ.">
 <!ENTITY identity.description.weakCipher "საიტთან კავშირი სუსტ დაშიფვრას იყენებს და დაუცველია.">
 <!ENTITY identity.description.weakCipher2 "სხვებსაც შეუძლიათ თქვენი ინფორმაციის ნახვა ან ვებსაიტის ქცევის შეცვლა.">
 <!ENTITY identity.description.activeBlocked "&brandShortName; ზღუდავს გვერდის დაუცველ ნაწილებს.">
 <!ENTITY identity.description.passiveLoaded "კავშირი დაუცველია და თქვენ მიერ ამ საიტთან გაზიარებული პირადი მონაცემები, შესაძლოა სხვებმაც ნახონ.">
 <!ENTITY identity.description.passiveLoaded2 "ეს ვებსაიტი შეიცავს შიგთავსს, რომელიც დაუცველია (როგორიცაა სურათები).">
-<!ENTITY identity.description.passiveLoaded3 "მიუხედავად იმისა, რომ &brandShortName; ზღუდავს გარკვეულ შიგთავსს, დაუცველი ნაწილი მაინც დარჩა (როგორიცაა სურათები).">
+<!ENTITY identity.description.passiveLoaded3 "მიუხედავად იმისა, რომ &brandShortName; ზღუდავს გარკვეულ შიგთავსს, დაუცველი ნაწილი მაინც რჩება (როგორიცაა სურათები).">
 <!ENTITY identity.description.activeLoaded "საიტი შეიცავს შიგთავსს, რომელიც დაუცველია (როგორიცაა სკრიპტები) და მასთან კავშირი, ვერ უზრუნველყოფს პირადი მონაცემების უსაფრთხოებას.">
 <!ENTITY identity.description.activeLoaded2 "ინფორმაცია, რომელსაც ამ საიტს გაუზიარებთ შესაძლოა სხვებმაც ნახონ (მაგალითად პაროლები, შეტყობინებები, საკრედიტო ბარათები, ა.შ.).">
 
@@ -879,7 +921,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "ამ საიტისთვის განსაკუთრებული უფლებები არ მიგიციათ.">
 <!ENTITY identity.permissionsReloadHint "ცვლილებების ასამოქმედებლად შესაძლოა გვერდის ხელახლა ჩატვირთვა დაგჭირდეთ.">
 <!ENTITY identity.permissionsPreferences.tooltip "ნებართვების პარამეტრების გახსნა">
-
 <!ENTITY identity.contentBlockingPreferences.tooltip "შიგთავსის შეზღუდვის პარამეტრების გახსნა">
 
 
@@ -931,6 +972,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSignIn.label             "&syncBrand.shortName.label; – შესვლა…">
 <!ENTITY syncSignIn.accesskey         "შ">
 <!ENTITY syncSyncNowItem.label        "დასინქრონება ახლავე">
+<!ENTITY syncSyncNowItemSyncing.label "სინქრონდება…">
 <!ENTITY syncSyncNowItem.accesskey    "ს">
 <!ENTITY syncReAuthItem.label         "&syncBrand.shortName.label; – ხელახლა დაკავშირება…">
 <!ENTITY syncReAuthItem.accesskey     "ხ">
@@ -1073,6 +1115,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.acceptButton.accesskey "ჩ">
 <!ENTITY updateAvailable.cancelButton.label "ახლა არა">
 <!ENTITY updateAvailable.cancelButton.accesskey "ა">
+
 <!ENTITY updateAvailable.panelUI.label "&brandShorterName; განახლების ჩამოტვირთვა">
 
 <!ENTITY updateManual.message "ჩამოტვირთეთ &brandShorterName; -ის ახალი ვერსია და ჩვენ დაგეხმარებით მის დაყენებაში.">
@@ -1090,6 +1133,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.acceptButton.accesskey "გ">
 <!ENTITY updateRestart.cancelButton.label "ახლა არა">
 <!ENTITY updateRestart.cancelButton.accesskey "ა">
+<!ENTITY updateUnsupported.panelUI.label "მეტად ვეღარ განაახლებთ">
 <!ENTITY updateRestart.panelUI.label2 "გასაახლებლად, გაუშვით ხელახლა &brandShorterName;">
 
 <!ENTITY newTabControlled.header.message "ახალი ჩანართის გვერდი შეიცვალა.">
@@ -1133,8 +1177,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "მართეთ თქვენი დამატებები <image class='addon-addon-icon'/> ხატულაზე დაწკაპებით, <image class='addon-toolbar-icon'/> მენიუში.">
-<!ENTITY addonPostInstall.incognito.label "დაშვება ამ გაფართოების, პირად ფანჯრებში.">
-<!ENTITY addonPostInstall.incognito.accesskey "ნ">
+<!ENTITY addonPostInstall.incognito.checkbox.label "დაშვება ამ გაფართოების, პირად ფანჯრებში">
+<!ENTITY addonPostInstall.incognito.checkbox.accesskey "დ">
 
 <!ENTITY addonPrivateBrowsing.header2.label "გაფართოებების გამოყენება პირად ფანჯრებში">
 <!ENTITY addonPrivateBrowsing.body2.label "ახლად დაყენებულ გაფართოებებს &brandShorterName; არ გაუშვებს პირად ფანჯრებში, სანამ თქვენ არ დაუშვებთ პარამეტრებიდან.">

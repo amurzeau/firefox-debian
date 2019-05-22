@@ -534,7 +534,7 @@ sync-connect-another-device = In oar apparaat ferbine
 sync-manage-devices = Apparaten beheare
 sync-fxa-begin-pairing = In apparaat keppelje
 sync-tos-link = Tsjinstbetingsten (In)
-sync-fxa-privacy-notice = Privacy-opmerking
+sync-fxa-privacy-notice = Privacyferklearring
 
 ## Privacy Section
 
@@ -660,6 +660,7 @@ addressbar-suggestions-settings = Foarkarren foar sykmasinesuggestjes wizigje
 
 content-blocking-header = Ynhâldsblokkearring
 content-blocking-description = Blokkearje ynhâld fan tredden dy't jo sneupgedrach folget. Bepaal hoefolle fan jo online-aktiviteit bewarre wurdt en tusken websites dield wurdt.
+content-blocking-section-description = Beskermje jo privacy wylst jo sneupe. Blokkearje ûnsichtbere ynhâld dy't de troch jo besochte websites folget en jo profilearje. Troch wat fan dizze ynhâld te blokkearjen lade siden mooglik flugger.
 content-blocking-learn-more = Mear ynfo
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -675,15 +676,24 @@ content-blocking-setting-custom =
 content-blocking-standard-description = Blokkearret allinnich bekende trackers yn priveefinsters.
 content-blocking-standard-desc = Balansearre foar beskerming en prestaasjes. Stiet bepaalde trackers ta, sadat websites goed wurkje.
 content-blocking-strict-desc = Blokkearret alle trackers dy't { -brand-short-name } detektearret. Kin derfoar soargje dat bepaalde websites net goed wurkje.
+content-blocking-strict-description = Strangere beskerming, kin derfoar soargje dat bepaalde websites net goed wurkje.
 content-blocking-custom-desc = Kies wat der blokkearre wurdt.
 content-blocking-private-trackers = Bekende trackers allinnich yn priveefinsters
 content-blocking-third-party-cookies = Tracking-cookies fan tredden
+content-blocking-all-cookies = Alle cookies
+content-blocking-unvisited-cookies = Cookies fan net-besochte websites
 content-blocking-all-windows-trackers = Bekende trackers yn alle finsters
 content-blocking-all-third-party-cookies = Alle cookies fan tredden
+content-blocking-cryptominers = Cryptominers
+content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Let op!
 content-blocking-warning-desc = It blokkearjen fan cookies kin derfoar soargje dat bepaalde websites net goed wurkje. Blokkearring kin ienfâldich útskeakele wurde foar websites dy't jo fertrouwe.
 content-blocking-warning-description = It blokkearjen fan ynhâld kin derfoar soargje dat bepaalde websites net goed wurkje. Blokkearring kin ienfâldich útskeakele wurde foar websites dy't jo fertrouwe.
 content-blocking-learn-how = Mear ynfo
+content-blocking-reload-description = Jo moatte jo ljepblêden fernije om dizze wizigingen ta te passen.
+content-blocking-reload-tabs-button =
+    .label = Alle ljepblêden fernije
+    .accesskey = A
 content-blocking-trackers-label =
     .label = Trackers
     .accesskey = T
@@ -697,6 +707,8 @@ content-blocking-tracking-protection-change-block-list = Blokkearlist wizigje
 content-blocking-cookies-label =
     .label = Cookies
     .accesskey = C
+content-blocking-expand-section =
+    .tooltiptext = Mear ynformaasje
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
     .label = Cryptominers
@@ -736,23 +748,12 @@ permissions-notification-link = Mear ynfo
 permissions-notification-pause =
     .label = Notifikaasjes pauzearje oant { -brand-short-name } opnij start wurdt
     .accesskey = N
-permissions-block-autoplay-media =
-    .label = Automatysk ôfspyljen fan media mei lûd troch websites blokkearje
-    .accesskey = s
-permissions-block-autoplay-media-menu = Foar websites dy’t automatysk lûd ôfspylje
 permissions-block-autoplay-media2 =
-    .label = Automatysk ôfspyljen fan lûd troch websites bokkearje
+    .label = Automatysk ôfspyljen fan lûd troch websites blokkearje
     .accesskey = s
 permissions-block-autoplay-media-exceptions =
     .label = Utsûnderingen…
     .accesskey = U
-autoplay-option-ask =
-    .label = Altyd freegje
-autoplay-option-allow =
-    .label = Automatysk ôfspylje tastean
-autoplay-option-dont =
-    .label = Net automatysk ôfspylje
-permissions-autoplay-link = Mear ynfo
 permissions-block-popups =
     .label = Pop-upfinsters blokkearje
     .accesskey = P
@@ -788,10 +789,6 @@ addon-recommendations-link = Mear ynfo
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Gegevensrapporten binne foar dizze build-konfiguraasje útskeakele
-collection-browser-errors =
-    .label = { -brand-short-name } tastean om flaterrapporten (ynklusyf flaterberjochten) nei { -vendor-short-name } te ferstjoeren
-    .accesskey = f
-collection-browser-errors-link = Mear ynfo
 collection-backlogged-crash-reports =
     .label = { -brand-short-name } tastean om út jo namme jo efterstallige ûngelokrapporten te ferstjoeren
     .accesskey = r

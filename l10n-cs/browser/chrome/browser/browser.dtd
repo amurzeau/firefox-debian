@@ -64,6 +64,8 @@ but will never be visible at the same time. -->
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "P">
 
+<!-- Tab context menu -->
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -108,7 +110,6 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Skryté panely">
 
 <!ENTITY  listAllTabs.label      "Seznam všech panelů">
-
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
 <!ENTITY  allTabsMenu.searchTabs.label       "Najít panel">
@@ -130,6 +131,9 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "Tisk…">
 <!ENTITY printCmd.accesskey "T">
 <!ENTITY printCmd.commandkey "p">
+
+<!ENTITY importFromAnotherBrowserCmd.label "Importovat z jiného prohlížeče…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "m">
 
 <!ENTITY taskManagerCmd.label "Správce úloh">
 
@@ -213,6 +217,28 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenExit.label "Ukončit režim celé obrazovky">
 <!ENTITY fullScreenExit.accesskey "k">
 
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "Vezměte si Firefox s sebou">
+<!ENTITY fxa.signin.description.label "Mějte své záložky, historii i uložená hesla s sebou na všech svých zařízeních.">
+<!ENTITY fxa.signin.button.label "Zapnout &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "Podívejte se do své e-mailové schránky">
+<!ENTITY fxa.unverified.description.label "Před zahájením synchronizace prosím ověřte svůj účet.">
+<!ENTITY fxa.unverified.button.label "Nastavení služby &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "Přihlášen(a) jako">
+<!ENTITY fxa.menu.manageAccount.label "Správa účtu…">
+<!ENTITY fxa.menu.syncSettings.label "Nastavení synchronizace…">
+<!ENTITY fxa.menu.connectAnotherDevice.label "&syncedTabs.sidebar.connectAnotherDevice;">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "Připojit další zařízení…">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
+
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
      respectively before and after the domain requiring fullscreen.
@@ -229,6 +255,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "Ukončit režim celé obrazovky (esc)">
 <!ENTITY leaveDOMFullScreen.label "Ukončit režim celé obrazovky">
 <!ENTITY leaveDOMFullScreen.accesskey "k">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.label "Obraz v obraze">
+<!ENTITY pictureInPicture.accesskey "v">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -408,6 +440,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.label       "Předvolby">
 <!ENTITY preferencesCmdUnix.accesskey     "v">
 
+<!ENTITY logins.label                           "Přihlašovací údaje">
+
 <!ENTITY clearRecentHistory.label               "Vymazat nedávnou historii…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
@@ -437,6 +471,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.clearRecent.label "Vymazat nedávnou historii…">
 <!ENTITY appMenuHistory.restoreSession.label "Obnovit předchozí relaci">
 <!ENTITY appMenuHistory.viewSidebar.label "Zobrazit v postranní liště">
+<!ENTITY appMenuHistory.hideSidebar.label "Zavřít v postranní liště">
 <!ENTITY appMenuHistory.recentHistory.label "Nedávná historie">
 <!ENTITY appMenuHelp.label "Nápověda">
 
@@ -465,6 +500,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Přihlásit se ke službě Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Správa zařízení…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Zobrazit v postranní liště">
+<!ENTITY appMenuRemoteTabs.hidesidebar.label "Zavřít v postranní liště">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Připojit další zařízení">
 
 <!ENTITY appMenuRecentHighlights.label "Vybrané">
@@ -494,6 +530,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.manageExtension.accesskey "e">
 <!ENTITY customizeMenu.removeExtension.label "Odebrat rozšíření">
 <!ENTITY customizeMenu.removeExtension.accesskey "r">
+
+<!-- LOCALIZATION NOTE (reportExtension.label) This label is used in the extensions
+     toolbar buttons context menus, a user can use this command to submit to Mozilla
+     an abuse report related to that extension. "Report" is a verb. -->
+<!ENTITY customizeMenu.reportExtension.label "Nahlásit rozšíření">
+<!ENTITY customizeMenu.reportExtension.accesskey "N">
 
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
@@ -879,7 +921,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "Tento server nemá žádná zvláštní oprávnění.">
 <!ENTITY identity.permissionsReloadHint "Pro provedení změn budete možná muset obnovit stránku.">
 <!ENTITY identity.permissionsPreferences.tooltip "Otevřít nastavení oprávnění">
-
 <!ENTITY identity.contentBlockingPreferences.tooltip "Otevřít nastavení blokování obsahu">
 
 
@@ -931,6 +972,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSignIn.label             "Přihlásit se do &syncBrand.shortName.label;…">
 <!ENTITY syncSignIn.accesskey         "i">
 <!ENTITY syncSyncNowItem.label        "Synchronizovat">
+<!ENTITY syncSyncNowItemSyncing.label "Probíhá synchronizace…">
 <!ENTITY syncSyncNowItem.accesskey    "S">
 <!ENTITY syncReAuthItem.label         "Opětovné připojení k &syncBrand.shortName.label;…">
 <!ENTITY syncReAuthItem.accesskey     "p">
@@ -1073,6 +1115,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.acceptButton.accesskey "S">
 <!ENTITY updateAvailable.cancelButton.label "Teď ne">
 <!ENTITY updateAvailable.cancelButton.accesskey "n">
+
 <!ENTITY updateAvailable.panelUI.label "Stáhnout aktualizaci aplikace &brandShorterName;">
 
 <!ENTITY updateManual.message "Stáhněte si novou verzi aplikace &brandShorterName; a my vám pomůžeme s její instalací.">
@@ -1090,6 +1133,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.acceptButton.accesskey "R">
 <!ENTITY updateRestart.cancelButton.label "Teď ne">
 <!ENTITY updateRestart.cancelButton.accesskey "n">
+<!ENTITY updateUnsupported.panelUI.label "Další aktualizace už nebudou dostupné">
 <!ENTITY updateRestart.panelUI.label2 "Restartovat a aktualizovat aplikaci &brandShorterName;">
 
 <!ENTITY newTabControlled.header.message "Obsah nového panelu byl změněn.">
@@ -1133,12 +1177,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "Své doplňky spravujte klepnutím na <image class='addon-addon-icon'/> v nabídce <image class='addon-toolbar-icon'/>.">
-<!ENTITY addonPostInstall.incognito.label "Povolit toto rozšíření v anonymních oknech.">
-<!ENTITY addonPostInstall.incognito.accesskey "P">
+<!ENTITY addonPostInstall.incognito.checkbox.label "Povolit toto rozšíření v anonymních oknech">
+<!ENTITY addonPostInstall.incognito.checkbox.accesskey "P">
 
 <!ENTITY addonPrivateBrowsing.header2.label "Změna fungování rozšíření v anonymních oknech">
 <!ENTITY addonPrivateBrowsing.body2.label "Nově nainstalovaná rozšíření budou v anonymních oknech aplikace &brandShorterName; vypnutá, dokud je pro anonymní režim explicitně nezapnete v nastavení.">
-<!ENTITY addonPrivateBrowsing.learnMore.label "Jak na nastavení rozšíření.">
+<!ENTITY addonPrivateBrowsing.learnMore.label "Jak na nastavení rozšíření">
 <!ENTITY addonPrivateBrowsing.okButton.label "Ok, rozumím">
 <!ENTITY addonPrivateBrowsing.okButton.accesskey "O">
 <!ENTITY addonPrivateBrowsing.manageButton.label "Správa rozšíření">

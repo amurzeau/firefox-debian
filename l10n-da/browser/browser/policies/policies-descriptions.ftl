@@ -9,6 +9,8 @@
 ## These are short descriptions for individual policies, to be displayed
 ## in the documentation section in about:policies.
 
+policy-3rdparty = Indstil politikker, som WebExtensions kan tilgå via chrome.storage.managed.
+
 policy-AppUpdateURL = Indstil tilpasset URL for app-opdateringer
 
 policy-Authentication = Indstil integreret godkendelse for websteder, der understøtter det
@@ -100,7 +102,11 @@ policy-Homepage = Indstil og lås eventuelt startsiden.
 
 policy-InstallAddonsPermission = Tillad bestemte websteder at installere tilføjelser.
 
+policy-LocalFileLinks = Tillad specifikke websteder at linke til lokale filer.
+
 policy-NetworkPrediction = Slå network prediction (DNS prefetching) til eller fra.
+
+policy-NewTabPage = Slå siden Nyt faneblad til eller fra.
 
 policy-NoDefaultBookmarks = Deaktiver oprettelse af standard-bogmærker, der følger med { -brand-short-name }, samt de smarte bogmærker (Mest besøgte, Seneste mærkater). NB: Denne politik virker kun, hvis den aktiveres før profilen anvendes første gang.
 
@@ -114,15 +120,21 @@ policy-Permissions = Indstil tilladelser for kamera, mikrofon, position og beske
 
 policy-PopupBlocking = Tillad bestemte websteder at vise pop op-vinduer som standard.
 
+policy-Preferences = Indstil og lås værdien for en undergruppe af indstillingerne.
+
 policy-Proxy = Opsæt proxy-indstillinger.
 
 policy-RequestedLocales = Vælg rækkefølgen af sprog, der skal anvendes i programmet.
 
 policy-SanitizeOnShutdown = Ryd al browsing-data ved lukning.
 
+policy-SanitizeOnShutdown2 = Ryd browsing-data ved lukning.
+
 policy-SearchBar = Indstil standard-placering af søgefeltet. Brugeren kan stadig tilpasse feltet. 
 
 policy-SearchEngines = Opsæt indstillinger for søgetjenester. Denne politik er kun tilgængelig for Extended Support Release (ESR).
+
+policy-SearchSuggestEnabled = Slå søgeforslag til eller fra.
 
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Installer PKCS #11 moduler.

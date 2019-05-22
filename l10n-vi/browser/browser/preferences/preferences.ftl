@@ -66,7 +66,7 @@ feature-enable-requires-restart = { -brand-short-name } phải khởi động l�
 feature-disable-requires-restart = { -brand-short-name } phải khởi động lại để vô hiệu hóa tính năng này.
 should-restart-title = Khởi động lại { -brand-short-name }
 should-restart-ok = Khởi động lại { -brand-short-name } ngay
-cancel-no-restart-button = Hủy
+cancel-no-restart-button = Hủy bỏ
 restart-later = Khởi động lại sau
 
 ## Extension Control Notifications
@@ -182,7 +182,7 @@ containers-remove-cancel-button = Không xóa ngăn chứa này
 
 ## General Section - Language & Appearance
 
-language-and-appearance-header = Ngôn ngữ và giao diện
+language-and-appearance-header = Ngôn ngữ và chủ đề
 fonts-and-colors-header = Phông & Màu sắc
 default-font = Phông mặc định
     .accesskey = D
@@ -366,10 +366,10 @@ home-homepage-custom-url =
 use-current-pages =
     .label =
         { $tabCount ->
-            [1] Sử dụng Trang hiện tại
-           *[other] Dùng các Trang hiện tại
+            [1] Dùng các trang hiện tại
+           *[other] Dùng các trang hiện tại
         }
-    .accesskey = a
+    .accesskey = C
 choose-bookmark =
     .label = Dùng trang đánh dấu…
     .accesskey = d
@@ -479,9 +479,9 @@ sync-engine-history =
     .label = Lịch sử
     .accesskey = r
 sync-engine-tabs =
-    .label = Mở thẻ
+    .label = Thẻ đang mở
     .tooltiptext = Danh sách những trang web đang mở trên các thiết bị được đồng bộ
-    .accesskey = T
+    .accesskey = t
 sync-engine-logins =
     .label = Đăng nhập
     .tooltiptext = Tên đăng nhập và mật khẩu bạn đã được lưu
@@ -511,7 +511,7 @@ sync-device-name-change =
     .label = Thay đổi tên thiết bị…
     .accesskey = h
 sync-device-name-cancel =
-    .label = Hủy
+    .label = Hủy bỏ
     .accesskey = n
 sync-device-name-save =
     .label = Lưu
@@ -648,6 +648,7 @@ addressbar-suggestions-settings = Thay đổi tùy chỉnh phần gợi ý của
 
 content-blocking-header = Chặn nội dung
 content-blocking-description = Chặn nội dung của bên thứ ba theo dõi bạn trên web. Kiểm soát số lượng hoạt động trực tuyến của bạn được lưu trữ và chia sẻ giữa các trang web.
+content-blocking-section-description = Bảo vệ riêng tư của bạn trong khi bạn duyệt. Chặn nội dung vô hình của các trang web bạn đang xem truy cập và hồ sơ bạn. Chặn một số nội dung này có thể làm cho các trang tải nhanh hơn.
 content-blocking-learn-more = Tìm hiểu thêm
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -663,15 +664,24 @@ content-blocking-setting-custom =
 content-blocking-standard-description = Chỉ chặn các trình theo dõi đã biết trong cửa sổ riêng tư.
 content-blocking-standard-desc = Cân bằng giữa sự bảo mật và hiệu suất. Cho phép một số trình theo dõi để các trang web hoạt động chính xác.
 content-blocking-strict-desc = Chặn tất cả trình theo dõi mà { -brand-short-name } phát hiện. Có thể khiến một số trang web bị hỏng.
+content-blocking-strict-description = Bảo vệ mạnh mẽ hơn, có thể khiến một số trang web bị vỡ.
 content-blocking-custom-desc = Chọn những gì bạn muốn chặn.
-content-blocking-private-trackers = Trình theo dõi được biết chỉ trong Cửa sổ riêng tư
+content-blocking-private-trackers = Trình theo dõi được biết chỉ trong cửa sổ riêng tư
 content-blocking-third-party-cookies = Cookie theo dõi của bên thứ ba
+content-blocking-all-cookies = Tất cả cookie
+content-blocking-unvisited-cookies = Cookie từ các trang không mong muốn
 content-blocking-all-windows-trackers = Các trình theo dõi đã biết trong tất cả cửa sổ
 content-blocking-all-third-party-cookies = Toàn bộ cookie từ bên thứ ba
+content-blocking-cryptominers = Tiền điện tử
+content-blocking-fingerprinters = Vân tay
 content-blocking-warning-title = Hãy cẩn thận!
 content-blocking-warning-desc = Chặn cookie và trình theo dõi có thể khiến một số trang web bị hỏng. Dễ dàng để tắt tính năng chặn cho các trang web bạn tin tưởng.
 content-blocking-warning-description = Chặn nội dung có thể khiến một số trang web bị hỏng. Dễ dàng vô hiệu hóa chặn cho các trang web mà bạn tin tưởng.
 content-blocking-learn-how = Tìm hiểu cách thức
+content-blocking-reload-description = Bạn sẽ cần tải lại các thẻ của mình để áp dụng những thay đổi này.
+content-blocking-reload-tabs-button =
+    .label = Tải lại tất cả các thẻ
+    .accesskey = R
 content-blocking-trackers-label =
     .label = Trình theo dõi
     .accesskey = T
@@ -685,6 +695,8 @@ content-blocking-tracking-protection-change-block-list = Thay đổi danh sách 
 content-blocking-cookies-label =
     .label = Cookie
     .accesskey = C
+content-blocking-expand-section =
+    .tooltiptext = Thông tin chi tiết
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
     .label = Tiền điện tử
@@ -724,23 +736,12 @@ permissions-notification-link = Tìm hiểu thêm
 permissions-notification-pause =
     .label = Tạm dừng thông báo cho đến khi { -brand-short-name } khởi động lại
     .accesskey = n
-permissions-block-autoplay-media =
-    .label = Chặn các trang web tự động phát nội dung có âm thanh
-    .accesskey = B
-permissions-block-autoplay-media-menu = Đối với các trang web tự động phát âm thanh
 permissions-block-autoplay-media2 =
     .label = Chặn các trang web tự động phát âm thanh
     .accesskey = B
 permissions-block-autoplay-media-exceptions =
     .label = Ngoại trừ...
     .accesskey = E
-autoplay-option-ask =
-    .label = Luôn hỏi
-autoplay-option-allow =
-    .label = Cho phép tự động phát
-autoplay-option-dont =
-    .label = Không tự động phát
-permissions-autoplay-link = Tìm hiểu thêm
 permissions-block-popups =
     .label = Chặn các cửa sổ bật lên
     .accesskey = B
@@ -776,10 +777,6 @@ addon-recommendations-link = Tìm hiểu thêm
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Dữ liệu báo cáo bị vô hiệu hóa với cấu hình này
-collection-browser-errors =
-    .label = Cho phép { -brand-short-name } gửi báo cáo lỗi trình duyệt (bao gồm thông báo lỗi) cho { -vendor-short-name }
-    .accesskey = b
-collection-browser-errors-link = Tìm hiểu thêm
 collection-backlogged-crash-reports =
     .label = Cho phép { -brand-short-name } thay bạn gửi các báo cáo sự cố còn tồn đọng
     .accesskey = c

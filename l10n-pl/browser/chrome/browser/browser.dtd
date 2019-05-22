@@ -64,6 +64,8 @@ but will never be visible at the same time. -->
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "D">
 
+<!-- Tab context menu -->
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -108,7 +110,6 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Ukryte karty">
 
 <!ENTITY  listAllTabs.label      "Pokaż wszystkie karty">
-
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
 <!ENTITY  allTabsMenu.searchTabs.label       "Przeszukaj karty">
@@ -130,6 +131,9 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "Drukuj…">
 <!ENTITY printCmd.accesskey "D">
 <!ENTITY printCmd.commandkey "p">
+
+<!ENTITY importFromAnotherBrowserCmd.label "Importuj z innej przeglądarki…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "I">
 
 <!ENTITY taskManagerCmd.label "Menedżer zadań">
 
@@ -213,6 +217,28 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenExit.label "Opuść tryb pełnoekranowy">
 <!ENTITY fullScreenExit.accesskey "O">
 
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "Zabierz Firefoksa ze sobą">
+<!ENTITY fxa.signin.description.label "Zakładki, historia, hasła i pozostałe ustawienia na wszystkich urządzeniach.">
+<!ENTITY fxa.signin.button.label "Włącz synchronizację…">
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "Sprawdź pocztę">
+<!ENTITY fxa.unverified.description.label "Przed synchronizacją musisz zweryfikować konto.">
+<!ENTITY fxa.unverified.button.label "Otwórz ustawienia synchronizacji…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "Zalogowano jako">
+<!ENTITY fxa.menu.manageAccount.label "Zarządzaj kontem…">
+<!ENTITY fxa.menu.syncSettings.label "Ustawienia synchronizacji…">
+<!ENTITY fxa.menu.connectAnotherDevice.label "&syncedTabs.sidebar.connectAnotherDevice;">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "Połącz inne urządzenie…">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
+
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
      respectively before and after the domain requiring fullscreen.
@@ -229,6 +255,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "Opuść tryb pełnoekranowy (esc)">
 <!ENTITY leaveDOMFullScreen.label "Opuść tryb pełnoekranowy">
 <!ENTITY leaveDOMFullScreen.accesskey "u">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.label "Obraz w obrazie">
+<!ENTITY pictureInPicture.accesskey "O">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -408,6 +440,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.label       "Preferencje">
 <!ENTITY preferencesCmdUnix.accesskey     "r">
 
+<!ENTITY logins.label                           "Dane logowania i hasła">
+
 <!ENTITY clearRecentHistory.label               "Wyczyść historię przeglądania…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
@@ -436,7 +470,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.showAll.label "Wyświetl całą historię">
 <!ENTITY appMenuHistory.clearRecent.label "Wyczyść historię przeglądania…">
 <!ENTITY appMenuHistory.restoreSession.label "Przywróć poprzednią sesję">
-<!ENTITY appMenuHistory.viewSidebar.label "Wyświetl historię w panelu bocznym">
+<!ENTITY appMenuHistory.viewSidebar.label "Wyświetl panel historii">
+<!ENTITY appMenuHistory.hideSidebar.label "Ukryj panel historii">
 <!ENTITY appMenuHistory.recentHistory.label "Ostatnio odwiedzone">
 <!ENTITY appMenuHelp.label "Pomoc">
 
@@ -464,7 +499,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.unverified.label "Konto musi zostać zweryfikowane.">
 <!ENTITY appMenuRemoteTabs.signin.label "Zaloguj się do synchronizacji">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Zarządzaj urządzeniami…">
-<!ENTITY appMenuRemoteTabs.sidebar.label "Wyświetl karty z innych urządzeń w panelu bocznym">
+<!ENTITY appMenuRemoteTabs.sidebar.label "Wyświetl panel kart z innych urządzeń">
+<!ENTITY appMenuRemoteTabs.hidesidebar.label "Ukryj panel kart z innych urządzeń">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Połącz inne urządzenie">
 
 <!ENTITY appMenuRecentHighlights.label "Ostatnio wyróżnione">
@@ -555,7 +591,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      These two strings are used to build the header above the list of one-click
      search providers:  "Search for <used typed keywords> with:" -->
 <!ENTITY searchFor.label              "Szukaj „">
-<!ENTITY searchWith.label             "” z:">
+<!ENTITY searchWith.label             "” w:">
 
 <!-- LOCALIZATION NOTE (search.label, searchAfter.label):
      This string is used to build the header above the list of one-click search
@@ -570,7 +606,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      The wording of this string should be as close as possible to
      searchFor.label and searchWith.label. This string will be used instead of
      them when the user has not typed any keyword. -->
-<!ENTITY searchWithHeader.label       "Szukaj w">
+<!ENTITY searchWithHeader.label       "Szukaj w:">
 <!-- LOCALIZATION NOTE (changeSearchSettings.button):
      This string won't wrap, so if the translated string is longer,
      consider translating it as if it said only "Search Settings". -->
@@ -879,7 +915,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "Strona korzysta z domyślnych uprawnień.">
 <!ENTITY identity.permissionsReloadHint "Ponowne wczytanie strony może być konieczne, aby wprowadzone zmiany przyniosły skutek.">
 <!ENTITY identity.permissionsPreferences.tooltip "Otwórz ustawienia uprawnień">
-
 <!ENTITY identity.contentBlockingPreferences.tooltip "Otwórz ustawienia blokowania treści">
 
 
@@ -931,6 +966,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSignIn.label             "Zaloguj się, aby rozpocząć synchronizację…">
 <!ENTITY syncSignIn.accesskey         "s">
 <!ENTITY syncSyncNowItem.label        "Synchronizuj teraz">
+<!ENTITY syncSyncNowItemSyncing.label "Synchronizowanie…">
 <!ENTITY syncSyncNowItem.accesskey    "S">
 <!ENTITY syncReAuthItem.label         "Zaloguj się ponownie, aby synchronizować…">
 <!ENTITY syncReAuthItem.accesskey     "Z">
@@ -1073,6 +1109,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.acceptButton.accesskey "P">
 <!ENTITY updateAvailable.cancelButton.label "Nie teraz">
 <!ENTITY updateAvailable.cancelButton.accesskey "N">
+
 <!ENTITY updateAvailable.panelUI.label "Pobierz aktualizację programu &brandShorterName;">
 
 <!ENTITY updateManual.message "Pobierz świeżą kopię programu &brandShorterName;, a my pomożemy ją zainstalować.">
@@ -1133,8 +1170,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "Zarządzaj dodatkami klikając <image class='addon-addon-icon'/> w menu <image class='addon-toolbar-icon'/>.">
-<!ENTITY addonPostInstall.incognito.label "To rozszerzenie może działać w oknach prywatnych.">
-<!ENTITY addonPostInstall.incognito.accesskey "T">
+<!ENTITY addonPostInstall.incognito.checkbox.label "To rozszerzenie może działać w oknach prywatnych">
+<!ENTITY addonPostInstall.incognito.checkbox.accesskey "T">
 
 <!ENTITY addonPrivateBrowsing.header2.label "Zmiana działania rozszerzeń w oknach prywatnych">
 <!ENTITY addonPrivateBrowsing.body2.label "Rozszerzenia dodane do przeglądarki &brandShorterName; nie będą działać w oknach prywatnych, jeśli nie zostanie to zmienione w ustawieniach.">

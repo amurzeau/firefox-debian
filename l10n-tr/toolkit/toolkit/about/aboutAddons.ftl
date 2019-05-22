@@ -77,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = Son güncelleme
 detail-contributions-description = Bu eklentinin geliştiricisi, sizden ufak bir katkıda bulunarak süregelen geliştirme faaliyetlerini desteklemenizi istiyor.
+detail-contributions-button = Katkıda bulunun
+    .title = Bu eklentinin geliştirilmesine katkıda bulunun
+    .accesskey = K
 detail-update-type =
     .value = Otomatik güncellemeler
 detail-update-default =
@@ -90,7 +93,14 @@ detail-update-manual =
     .tooltiptext = Güncellemeleri kendiliğinden kurma
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Gizli pencerede çalışabilir
-detail-private-browsing-description = Bu eklenti gizli pencelerde de çalışacak ve web’deki etkinliklerinize erişebilecek. <label data-l10n-name="detail-private-browsing-learn-more">Daha fazla bilgi alın</label>
+detail-private-browsing-description2 = Bu izni verdiğinizde eklenti, gizli gezinti sırasında yaptıklarınızı görebilecektir. <label data-l10n-name="detail-private-browsing-learn-more">Daha fazla bilgi alın</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = Gizli pencerelerde izin verilmiyor
+detail-private-disallowed-description = Gizli gezinti sırasında bu eklenti çalışmaz. <label data-l10n-name="detail-private-browsing-learn-more">Daha fazla bilgi alın</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Gizli pencerelere erişmesi gerekiyor
+detail-private-required-description = Bu eklenti, gizli gezinti sırasında yaptıklarınıza erişebilir. <label data-l10n-name="detail-private-browsing-learn-more">Daha fazla bilgi alın</label>
 detail-private-browsing-on =
     .label = İzin ver
     .tooltiptext = Gizli gezintide izin ver
@@ -241,6 +251,10 @@ shortcuts-modifier-other = Ctrl veya Alt kullanmalısınız
 shortcuts-invalid = Geçersiz kombinasyon
 shortcuts-letter = Bir harf yazın
 shortcuts-system = { -brand-short-name } kısayollarını değiştiremezsiniz
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = { $addon } tarafından zaten kullanılıyor
 shortcuts-card-expand-button =
     { $numberToShow ->
         [one] { $numberToShow } tane daha göster
@@ -255,5 +269,23 @@ go-back-button =
 remove-addon-button = Kaldır
 disable-addon-button = Etkisizleştir
 enable-addon-button = Etkinleştir
+expand-addon-button = Diğer seçenekler
 addons-enabled-heading = Etkin
 addons-disabled-heading = Devre dışı
+addon-detail-author-label = Geliştiren
+addon-detail-version-label = Sürüm
+addon-detail-last-updated-label = Son güncelleme
+addon-detail-homepage-label = Web sitesi
+addon-detail-rating-label = Puan
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (devre dışı)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } inceleme
+       *[other] { $numberOfReviews } inceleme
+    }

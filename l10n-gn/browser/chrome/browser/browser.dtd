@@ -108,7 +108,6 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Tendayke kañymby">
 
 <!ENTITY  listAllTabs.label      "Opaite tendayke jehechauka">
-
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
 <!ENTITY  allTabsMenu.searchTabs.label       "Eheka tendayke">
@@ -130,6 +129,9 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "Mbokuatia…">
 <!ENTITY printCmd.accesskey "P">
 <!ENTITY printCmd.commandkey "p">
+
+<!ENTITY importFromAnotherBrowserCmd.label "Egueruka ambue kundaháragui…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "I">
 
 <!ENTITY taskManagerCmd.label "Tembiapo ñangarekohára">
 
@@ -213,6 +215,28 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenExit.label "Mba'erechaha tuichavéva rekógui ñesẽ">
 <!ENTITY fullScreenExit.accesskey "F">
 
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "Egueraha Firefox nendive">
+<!ENTITY fxa.signin.description.label "Egueraha nde rechaukaha, tembiasakue, ñe’ẽñemi ha ambue ñemboheko opaite mba’e’okápe.">
+<!ENTITY fxa.signin.button.label "Emyandy &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "Ehecha ne ñanduti veve">
+<!ENTITY fxa.unverified.description.label "Ehechajeyva’erã ne mba’ete embojuehe mboyve.">
+<!ENTITY fxa.unverified.button.label "Eike &syncBrand.shortName.label; Ñoĩporã…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "Heraguapy kóicha">
+<!ENTITY fxa.menu.manageAccount.label "Mba'ete ñangareko…">
+<!ENTITY fxa.menu.syncSettings.label "&syncBrand.shortName.label; Moĩporã…">
+<!ENTITY fxa.menu.connectAnotherDevice.label "&syncedTabs.sidebar.connectAnotherDevice;">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "Embojuaju ambue mba’e’oka…">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
+
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
      respectively before and after the domain requiring fullscreen.
@@ -229,6 +253,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "Esẽ mba'erechaha tuichavévagui (esc)">
 <!ENTITY leaveDOMFullScreen.label "Mba'erechaha tuichavévagui ñesẽ">
 <!ENTITY leaveDOMFullScreen.accesskey "u">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.label "Ta'anga ta'angápe">
+<!ENTITY pictureInPicture.accesskey "u">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -407,6 +437,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmd2.accesskey     "O">
 <!ENTITY preferencesCmdUnix.label       "Jerohoryvéva">
 <!ENTITY preferencesCmdUnix.accesskey     "n">
+
+<!ENTITY logins.label                           "Tembiapo ñepyrũ ha Ñe’ẽñemi">
 
 <!ENTITY clearRecentHistory.label               "Tembiasakue ramovéva ñemopotĩ…">
 
@@ -879,7 +911,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "Nome'ẽi ko tenda ñemoneĩ ha'etéva.">
 <!ENTITY identity.permissionsReloadHint "Ikatu hína kuatiarogue emyanyhẽjey umi moambuepyre oñemboheko hag̃ua.">
 <!ENTITY identity.permissionsPreferences.tooltip "Oĩ moneĩ jeguerohoryvéva">
-
 <!ENTITY identity.contentBlockingPreferences.tooltip "Eike tetepy jokoha erohoryvévape">
 
 
@@ -931,6 +962,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSignIn.label             "&syncBrand.shortName.label;-pe jeike…">
 <!ENTITY syncSignIn.accesskey         "Y">
 <!ENTITY syncSyncNowItem.label        "Embojuehe ko'ág̃a">
+<!ENTITY syncSyncNowItemSyncing.label "Embojuehehína…">
 <!ENTITY syncSyncNowItem.accesskey    "S">
 <!ENTITY syncReAuthItem.label         "&syncBrand.shortName.label;…-pe jeikejey">
 <!ENTITY syncReAuthItem.accesskey     "R">
@@ -1133,9 +1165,11 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "Eñangareko ne rembipuru'i eikutúvo <image class='addon-addon-icon'/> poravorã <image class='addon-toolbar-icon'/> pegua.">
-<!ENTITY addonPostInstall.incognito.label "Emoneĩ ko jepysokue oiko hag̃ua Windows ñemiguápe.">
-<!ENTITY addonPostInstall.incognito.accesskey "A">
+<!ENTITY addonPostInstall.incognito.checkbox.label "Emoneĩ ko jepysokue oñembohekóvo Windows ñemiguápe">
+<!ENTITY addonPostInstall.incognito.checkbox.accesskey "A">
 
+<!ENTITY addonPrivateBrowsing.header2.label "Emoambue jepysokue Ovetã ñemiguápe">
+<!ENTITY addonPrivateBrowsing.body2.label "Oimeraẽ ambue jepysokue embojuajúva &brandShorterName; rehe ndoikomo’ãi ovetã ñemíme neremoneĩriramo ñembohekópe.">
 <!ENTITY addonPrivateBrowsing.learnMore.label "Eñangarekokuaa jepysokue ñembohekóre.">
 <!ENTITY addonPrivateBrowsing.okButton.label "Oĩma, aikumby">
 <!ENTITY addonPrivateBrowsing.okButton.accesskey "O">

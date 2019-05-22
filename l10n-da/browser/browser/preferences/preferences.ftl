@@ -138,7 +138,7 @@ use-firefox-sync = Ved tilladelse af samtidig kørsel benyttes to forskellige pr
 get-started-not-logged-in = Log ind på { -sync-brand-short-name }…
 get-started-configured = Åbn indstillinger for { -sync-brand-short-name }
 always-check-default =
-    .label = Undersøg altid om { -brand-short-name } er din standardbrowser
+    .label = Undersøg altid om { -brand-short-name } er min standardbrowser
     .accesskey = U
 is-default = { -brand-short-name } er sat som din standardbrowser
 is-not-default = { -brand-short-name } er ikke din standardbrowser
@@ -350,7 +350,7 @@ browsing-use-cursor-navigation =
     .label = Brug altid markør og tastatur til at navigere på sider
     .accesskey = m
 browsing-search-on-start-typing =
-    .label = Begynd søgning mens du taster
+    .label = Begynd søgning mens jeg taster
     .accesskey = s
 browsing-cfr-recommendations =
     .label = Anbefal udvidelser mens jeg browser
@@ -429,7 +429,7 @@ search-show-suggestions-url-bar-option =
 # "ahead" refers to location (appearing most proximate to), not time
 # (appearing before).
 search-show-suggestions-above-history-option =
-    .label = Vis søgeforslag før resultater fra din browserhistorik i adressefeltet
+    .label = Vis søgeforslag før resultater fra min browserhistorik i adressefeltet
 search-suggestions-cant-show = Søgeforslag vil ikke blive vist i adressefeltet, fordi du har sat { -brand-short-name } op til aldrig at gemme historik.
 search-one-click-header = Lyn-søgetjenester
 search-one-click-desc = Vælg de alternative søgetjenester, der vises under adressefeltet og søgefeltet, når du begynder at indtaste en søgeterm.
@@ -705,11 +705,20 @@ addressbar-suggestions-settings = Skift indstillinger for søgeforslag
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Blokering af indhold
+
+content-blocking-section-description = Beskyt dit privatliv på nettet. Bloker usynligt indhold, der sporer besøgte websteder, og som opretter profiler ud fra din adfærd. Ved at blokere noget af dette indhold kan sider indlæses hurtigere.
+
 content-blocking-desc = Bloker indhold fra tredjepart, fx reklamer eller kode, der kan gøre din browsing langsommere og som kan spore dig rundt på nettet. Tilpas dine indstillinger for at få den bedste balance mellem beskyttelse og ydelse.
 
 content-blocking-description = Bloker tredjeparts-indhold, der sporer dig rundt på nettet. Kontroller hvor meget af din aktivitet på nettet, der gemmes og deles mellem websteder.
 
 content-blocking-learn-more = Læs mere
+
+content-blocking-reload-description = Du skal genindlæse dine faneblade, før ændringerne slår igennem.
+content-blocking-reload-tabs-button =
+  .label = Genindlæs alle faneblade
+  .accesskey = G
+
 content-blocking-restore-defaults =
     .label = Gendan standard
     .accesskey = G
@@ -743,12 +752,18 @@ content-blocking-setting-custom =
 content-blocking-standard-description = Blokerer kun kendte sporings-tjenester i private vinduer
 content-blocking-standard-desc = Balanceret mellem beskyttelse og ydelse. Tillader nogle sporings-tjenester for at websteder kan fungere ordentligt.
 content-blocking-strict-desc = Blokerer alle sporings-tjenester, som { -brand-short-name } opdager. Kan forhindre nogle websteder i at fungere.
+content-blocking-strict-description = Bedre bedskyttelse, men kan forhindre nogle websteder i at fungere.
 content-blocking-custom-desc = Vælg selv, hvad der skal blokeres.
 
 content-blocking-private-trackers = Kendte sporings-tjenester kun i private vinduer
 content-blocking-third-party-cookies = Sporings-cookies fra tredjepart
+content-blocking-all-cookies = Alle cookies
+content-blocking-unvisited-cookies = Cookies fra ikke-besøgte websteder
 content-blocking-all-windows-trackers = Kendte sporings-tjenester i alle vinduer
 content-blocking-all-third-party-cookies = Alle tredjeparts-cookies
+
+content-blocking-cryptominers = Cryptominers
+content-blocking-fingerprinters = Fingerprinters
 
 content-blocking-warning-title = Vigtigt!
 content-blocking-warning-desc = Nogen websteder kan holde op med at fungere, når du blokerer cookies og sporings-tjenester. Det er nemt at slå blokering fra for websteder, du stoler på.
@@ -815,6 +830,9 @@ sitedata-option-block-all =
 content-blocking-cookies-label =
   .label = Cookies
   .accesskey = C
+
+content-blocking-expand-section = 
+  .tooltiptext = Mere information
 
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
@@ -907,7 +925,7 @@ permissions-addon-exceptions =
     .label = Undtagelser…
     .accesskey = t
 permissions-a11y-privacy-checkbox =
-    .label = Lad ikke tilgængeligheds-tjenester få adgang til din browser
+    .label = Lad ikke tilgængeligheds-tjenester få adgang til min browser
     .accesskey = t
 permissions-a11y-privacy-link = Læs mere
 

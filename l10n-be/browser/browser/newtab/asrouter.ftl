@@ -36,7 +36,7 @@ cfr-doorhanger-extension-rating =
         { $total ->
             [one] { $total } зорка
             [few] { $total } зоркі
-           *[other] { $total } зорак
+           *[many] { $total } зорак
         }
 # Variables:
 #   $total (Number) - The total number of users using the add-on
@@ -44,7 +44,7 @@ cfr-doorhanger-extension-total-users =
     { $total ->
         [one] { $total } карыстальнік
         [few] { $total } карыстальнікі
-       *[other] { $total } карыстальнікаў
+       *[many] { $total } карыстальнікаў
     }
 cfr-doorhanger-pintab-description = Атрымайце зручны доступ да найчасцей наведаных сайтаў. Трымайце сайты адкрытымі ў картках (нават пасля перазапуску).
 
@@ -55,3 +55,12 @@ cfr-doorhanger-pintab-step2 = Выберыце <b>Прышпіліць карт�
 cfr-doorhanger-pintab-step3 = Калі сайт абнавіўся, вы ўбачыце блакітную кропку на прышпіленай картцы.
 cfr-doorhanger-pintab-animation-pause = Прыпыніць
 cfr-doorhanger-pintab-animation-resume = Працягнуць
+
+## Firefox Accounts Message
+
+cfr-doorhanger-bookmark-fxa-header = Сінхранізуйце свае закладкі ўсюды.
+cfr-doorhanger-bookmark-fxa-body = Выдатная знаходка! Цяпер не заставайцеся без гэтай закладкі на вашых мабільных прыладах. Пачніце працу з { -fxaccount-brand-name }.
+cfr-doorhanger-bookmark-fxa-link-text = Сінхранізаваць закладкі зараз…
+cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
+    .aria-label = Кнопка закрыцця
+    .title = Закрыць

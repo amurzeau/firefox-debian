@@ -11,17 +11,17 @@
 <!-- General Settings -->
 <!ENTITY enableGlodaSearch.label       "Ativar pesquisa global e indexação">
 <!ENTITY enableGlodaSearch.accesskey   "A">
-<!ENTITY dateTimeFormatting.label      "Formatação de Data e Hora">
+<!ENTITY dateTimeFormatting.label      "Formatação de data e hora">
 <!ENTITY languageSelector.label        "Idioma">
 <!ENTITY allowHWAccel.label            "Usar aceleração de hardware quando disponível">
 <!ENTITY allowHWAccel.accesskey        "h">
-<!ENTITY storeType.label               "Tipo de armazenamento de mensagem para contas novas:">
+<!ENTITY storeType.label               "Tipo de armazenamento de mensagens de contas novas:">
 <!ENTITY storeType.accesskey           "T">
 <!ENTITY mboxStore2.label              "Um arquivo por pasta (mbox)">
 <!ENTITY maildirStore.label            "Um arquivo por mensagem (maildir)">
 
 <!ENTITY scrolling.label               "Navegação">
-<!ENTITY useAutoScroll.label           "Autorrolagem">
+<!ENTITY useAutoScroll.label           "Rolagem automática">
 <!ENTITY useAutoScroll.accesskey       "t">
 <!ENTITY useSmoothScrolling.label      "Rolagem suave">
 <!ENTITY useSmoothScrolling.accesskey  "R">
@@ -34,7 +34,7 @@
 <!ENTITY checkDefaultsNow.label        "Verificar agora…">
 <!ENTITY checkDefaultsNow.accesskey    "V">
 <!ENTITY configEditDesc.label          "Configuração avançada">
-<!ENTITY configEdit.label              "Editor de config…">
+<!ENTITY configEdit.label              "Editor de configurações…">
 <!ENTITY configEdit.accesskey          "E">
 <!ENTITY returnReceiptsInfo.label      "Determine como o &brandShortName; trata as confirmações de leitura.">
 <!ENTITY showReturnReceipts.label      "Confirmações de leitura…">
@@ -85,15 +85,15 @@
 <!ENTITY showSettings.accesskey        "C">
 <!ENTITY proxiesConfigure.label        "Determine como o &brandShortName; conecta-se à internet.">
 <!ENTITY connectionsInfo.caption       "Conexão">
-<!ENTITY offlineInfo.caption           "Off-line">
-<!ENTITY offlineInfo.label             "Configure o modo off-line.">
-<!ENTITY showOffline.label             "Configurar modo off-line…">
+<!ENTITY offlineInfo.caption           "Desconectado">
+<!ENTITY offlineInfo.label             "Configurar o modo desconectado">
+<!ENTITY showOffline.label             "Desconectado…">
 <!ENTITY showOffline.accesskey         "o">
 
 <!ENTITY Diskspace                       "Espaço em disco">
 <!ENTITY offlineCompactFolders.label     "Condensar todas as pastas se puder liberar pelo menos">
 <!ENTITY offlineCompactFolders.accesskey "n">
-<!ENTITY offlineCompactFoldersMB.label   "MB">
+<!ENTITY offlineCompactFoldersMB.label   "MB no total">
 
 <!-- LOCALIZATION NOTE:
   The entities useCacheBefore.label and useCacheAfter.label appear on a single
@@ -105,7 +105,7 @@
 <!ENTITY useCacheBefore.accesskey        "s">
 <!ENTITY useCacheAfter.label             "MB de espaço para o cache">
 <!ENTITY overrideSmartCacheSize.label    "Substituir o gerenciamento automático do cache">
-<!ENTITY overrideSmartCacheSize.accesskey "v">
+<!ENTITY overrideSmartCacheSize.accesskey "u">
 <!ENTITY clearCacheNow.label             "Limpar cache agora">
 <!ENTITY clearCacheNow.accesskey         "L">
 

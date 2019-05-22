@@ -77,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = Slědny raz zaktualizěrowany
 detail-contributions-description = Wuwijaŕ toś togo dodanka pšosy, aby wy pomagał, jogo stawne wuwiśe pódpěraś, z tym až pósćiwaśo mały pśinosk.
+detail-contributions-button = Pśinosowaś
+    .title = K wuwijanjeju toś togo dodanka pśinosowaś
+    .accesskey = P
 detail-update-type =
     .value = Awtomatiske aktualizacije
 detail-update-default =
@@ -90,7 +93,14 @@ detail-update-manual =
     .tooltiptext = Aktualizacije awtomatiski njeinstalěrowaś
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = W priwatnych woknach wuwjasć
-detail-private-browsing-description = Rozšyrjenje buźo w priwatnych woknach funkcioněrowaś a změjo pśistup k wašym aktiwitam online. <label data-l10n-name="detail-private-browsing-learn-more">Dalšne informacije</label>
+detail-private-browsing-description2 = Joćli ma pšawo, ma rozšyrjenje pśistup k wašym aktiwitam online w priwatnem modusu. <label data-l10n-name="detail-private-browsing-learn-more">Dalšne informacije</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = W priwatnych woknach njedowólony
+detail-private-disallowed-description = Toś to rozšyrjenje w priwatnem modusu njefunkcioněrujo. <label data-l10n-name="detail-private-browsing-learn-more">Dalšne informacije</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Pomina se pśistup k priwatnym woknam
+detail-private-required-description = Toś to rozšyrjenje ma pśistup k aktiwitam online w priwatnem modusu. <label data-l10n-name="detail-private-browsing-learn-more">Dalšne informacije</label>
 detail-private-browsing-on =
     .label = Dowóliś
     .tooltiptext = W priwatnem modusu zmóžniś
@@ -240,6 +250,10 @@ shortcuts-modifier-other = Strg abo Alt zapśimjeś
 shortcuts-invalid = Njepłaśiwa kombinacija
 shortcuts-letter = Zapódajśo pismik
 shortcuts-system = Tastowa skrotconka { -brand-short-name } njedajo se pśepisaś
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Wužywa se južo pśez { $addon }
 shortcuts-card-expand-button =
     { $numberToShow ->
         [one] { $numberToShow } dalšny pokazaś
@@ -256,5 +270,25 @@ go-back-button =
 remove-addon-button = Wótwónoźeś
 disable-addon-button = Znjemóžniś
 enable-addon-button = Zmóžniś
-addons-enabled-heading = Zmóžnjony
-addons-disabled-heading = Znjemóžnjony
+expand-addon-button = Dalšne nastajenja
+addons-enabled-heading = Zmóžnjone
+addons-disabled-heading = Znjemóžnjone
+addon-detail-author-label = Awtor
+addon-detail-version-label = Wersija
+addon-detail-last-updated-label = Slědny raz zaktualizěrowany
+addon-detail-homepage-label = Startowy bok
+addon-detail-rating-label = Pógódnośenje
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (znjemóžnjony)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } pógódnośenje
+        [two] { $numberOfReviews } pógódnośeni
+        [few] { $numberOfReviews } pógódnośenja
+       *[other] { $numberOfReviews } pógódnośenjow
+    }

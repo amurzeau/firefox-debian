@@ -10,6 +10,7 @@
 ## These are short descriptions for individual policies, to be displayed
 ## in the documentation section in about:policies.
 
+policy-3rdparty = Pšawidła nastajiś, ku kótarymž WebExtensions maju pśistup pśez chrome.storage.managed.
 policy-AppUpdateURL = Swójski aktualizěrowański URL za nałoženje nastajiś.
 policy-Authentication = Integrěrowanu awtentifikaciju za websedła konfigurěrowaś, kótarež ju pódpěraju.
 policy-BlockAboutAddons = Pśistup k zastojnikoju dodankow (about:addons) blokěrowaś.
@@ -56,18 +57,23 @@ policy-HardwareAcceleration = Jolic njewěrno, hardwarowe póspěšenje znjemó�
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Startowy bok nastajiś a na žycenje zastajiś.
 policy-InstallAddonsPermission = Wěstym websedłam dowóliś, dodanki instalěrowaś.
+policy-LocalFileLinks = Wěstym websedłam dowóliś, na lokalne dataje wótkazaś.
 policy-NetworkPrediction = Seśowe pśedzacytanje (DNS-pśedzacytanje) zmóžniś abo znjemóžniś.
+policy-NewTabPage = Bok nowego rejtarka zmóžniś abo znjemóžniś.
 policy-NoDefaultBookmarks = Napóranje standardnych cytańskich znamjenjow { -brand-short-name } znjemóžniś, a inteligentnych cytańskich znamjenjow (nejcesćej woglědane, tuchylne wobznamjenja). Glědajśo: Toś to pšawidło se jano wustatkujo, gaž jo pśed prědnym startom profila wužywaśo.
 policy-OfferToSaveLogins = Nastajenje wunuźiś, kótarež { -brand-short-name } zmóžnja, se skłaźone pśizjawjenja a gronidłaa spomnjeś. Ako true tak teke false se akceptěrujotej.
 policy-OverrideFirstRunPage = Bok pśepisaś, kótaryž se pśi prědnom starśe pokazujo. Stajśo toś to pšawidło na prozne, jolic cośo toś ten bok znjemóžniś.
 policy-OverridePostUpdatePage = Bok Nowe funkcije a změny pó aktualizaciji pśepisaś. Stajśo toś to pšawidło na prozne, jolic cośo toś ten bok znjemóžniś.
 policy-Permissions = Pšawa za kameru, mikrofon, stojnišćo a powěźeńki konfigurěrowaś.
 policy-PopupBlocking = Wěstym websedłam dowóliś, wuskokujuce wokna pó standarźe pokazaś.
+policy-Preferences = Gódnotu za pódsajźbu nastajenjow stajiś a zastajiś
 policy-Proxy = Nastajenja proksy konfigurěrowaś.
 policy-RequestedLocales = Pódajśo lisćinu pominanych rěcow za nałoženje w preferěrowanem pórěźe.
 policy-SanitizeOnShutdown = Nawigaciske daty pśi skóńcenju wulašowaś.
+policy-SanitizeOnShutdown2 = Nawigaciske daty pśi kóńcenju wulašowaś.
 policy-SearchBar = Standardne městno pytańskego póla nastajiś. Wužywaŕ móžo jo hyšći pśiměriś.
 policy-SearchEngines = Nastajenja pytnicow konfigurěrowaś. Toś to pšawidło jo jano za wersiju Extended Support Release (ESR) k dispoziciji.
+policy-SearchSuggestEnabled = Pytańske naraźenja zmóžniś abo znjemóžniś.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Module PKCS #11 instalěrowaś.
 policy-SSLVersionMax = Nastajśo maksimalnu SSL-wersiju.

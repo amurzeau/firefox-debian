@@ -8,6 +8,11 @@ profiles-create = Ustvari nov profil
 profiles-restart-title = Ponovno zaženi
 profiles-restart-in-safe-mode = Ponovno zaženi z onemogočenimi dodatki …
 profiles-restart-normal = Običajen ponovni zagon …
+profiles-conflict = Druga namestitev { -brand-product-name }a je spremenila podatke v profilu. Pred nadaljnjimi spremembami morate ponovno zagnati { -brand-short-name }.
+profiles-flush-fail-title = Spremembe niso bile shranjene
+profiles-flush-conflict = { profiles-conflict }
+profiles-flush-failed = Nepričakovana napaka je preprečila shranjevanje sprememb.
+profiles-flush-restart-button = Ponovno zaženi { -brand-short-name }
 # Variables:
 #   $name (String) - Name of the profile
 profiles-name = Profil: { $name }
@@ -26,6 +31,7 @@ profiles-rename = Preimenuj
 profiles-remove = Odstrani
 profiles-set-as-default = Nastavi kot privzeti profil
 profiles-launch-profile = Zaženi profil v novem brskalniku
+profiles-cannot-set-as-default-title = Nastavitev privzetega profila ni bila mogoča
 profiles-cannot-set-as-default-message = Privzetega profila za { -brand-short-name } ni bilo mogoče zamenjati.
 profiles-yes = da
 profiles-no = ne

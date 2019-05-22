@@ -77,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = 최종 수정일
 detail-contributions-description = 이 부가 기능 개발자에게 작은 도움을 통해 개발이 지속될 수 있도록 지원할 수 있습니다.
+detail-contributions-button = 공헌하기
+    .title = 이 부가기능의 개발에 기여합니다
+    .accesskey = C
 detail-update-type =
     .value = 자동 업데이트
 detail-update-default =
@@ -90,7 +93,14 @@ detail-update-manual =
     .tooltiptext = 업데이트 자동 설치 중단
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = 사생활 보호 모드에서 실행
-detail-private-browsing-description = 확장 기능이 사생활 보호 모드에서 작동하며 사용자의 온라인 활동에 접근할 수 있습니다. <label data-l10n-name="detail-private-browsing-learn-more">더 알아보기</label>
+detail-private-browsing-description2 = 허용되면, 확장 기능은 사생활 보호 브라우징 중에 사용자 온라인 활동에 접근할 수 있습니다. <label data-l10n-name="detail-private-browsing-learn-more">더 알아보기</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = 사생활 보호 창에서 허용안됨
+detail-private-disallowed-description = 이 확장기능은 사생활 보호 모드에서는 실행되지 않습니다. <label data-l10n-name="detail-private-browsing-learn-more">더 알아보기</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = 사생활 보호 창에 대한 접근 필요
+detail-private-required-description = 이 확장기능은 사생활 보호모드에서 온라인 활동에 접근 할 수 있습니다. <label data-l10n-name="detail-private-browsing-learn-more">더 알아보기</label>
 detail-private-browsing-on =
     .label = 허용
     .tooltiptext = 사생활 보호 모드에서 사용
@@ -240,6 +250,10 @@ shortcuts-modifier-other = Ctrl 또는 Alt 포함
 shortcuts-invalid = 잘못된 조합
 shortcuts-letter = 문자 입력
 shortcuts-system = { -brand-short-name } 단축키를 재정의 할 수 없음
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = 이미 { $addon }에서 사용 중입니다.
 shortcuts-card-expand-button =
     { $numberToShow ->
        *[other] { $numberToShow }개 더 보기
@@ -253,5 +267,22 @@ go-back-button =
 remove-addon-button = 삭제
 disable-addon-button = 비활성화
 enable-addon-button = 활성화
+expand-addon-button = 옵션 더보기
 addons-enabled-heading = 활성화 됨
 addons-disabled-heading = 비활성화 됨
+addon-detail-author-label = 제작자
+addon-detail-version-label = 버전
+addon-detail-last-updated-label = 최종 수정일
+addon-detail-homepage-label = 홈페이지
+addon-detail-rating-label = 평가
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (사용 안 함)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+       *[other] { $numberOfReviews }개의 리뷰
+    }

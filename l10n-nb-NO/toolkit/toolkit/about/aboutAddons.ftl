@@ -77,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = Sist oppdatert
 detail-contributions-description = Utvikleren av denne utvidelsen ber om at du hjelper å støtte videre utvikling ved å gjøre en liten donasjon.
+detail-contributions-button = Bidra
+    .title = Bidra til utviklingen av denne utvidelsen
+    .accesskey = B
 detail-update-type =
     .value = Automatiske oppdateringer
 detail-update-default =
@@ -90,7 +93,14 @@ detail-update-manual =
     .tooltiptext = Ikke automatisk installer oppdateringer
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Kjør i private vindu
-detail-private-browsing-description = Utvidelser vil fungere i private vindu, og få tilgang til dine aktiviteter på nettet. <label data-l10n-name="detail-private-browsing-learn-more">Les mer</label>
+detail-private-browsing-description2 = Utvidelsen har tilgang til dine aktiviteter mens du bruker privat nettlesing, hvis du gir tilgang til det. <label data-l10n-name="detail-private-browsing-learn-more">Les mer</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = Ikke tillatt i private vinduer
+detail-private-disallowed-description = Denne utvidelsen fungerer ikke under privat nettlesing. <label data-l10n-name="detail-private-browsing-learn-more">Les mer</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Krever tilgang til private vinduer
+detail-private-required-description = Denne utvidelsen har tilgang til din aktivitet på nettet, når du bruker privat nettlesing. <label data-l10n-name="detail-private-browsing-learn-more">Les mer</label>
 detail-private-browsing-on =
     .label = Tillat
     .tooltiptext = Tillat i privat nettlesing
@@ -241,6 +251,10 @@ shortcuts-modifier-other = Inkluder Ctrl eller Alt
 shortcuts-invalid = Ugyldig kombinasjon
 shortcuts-letter = Skriv en bokstav
 shortcuts-system = Kan ikke overskrive en { -brand-short-name }-snarvei
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Brukes allerede av { $addon }
 shortcuts-card-expand-button =
     { $numberToShow ->
        *[other] Vis { $numberToShow } mer
@@ -254,5 +268,23 @@ go-back-button =
 remove-addon-button = Fjern
 disable-addon-button = Deaktiver
 enable-addon-button = Aktiver
+expand-addon-button = Flere innstillinger
 addons-enabled-heading = Aktivert
 addons-disabled-heading = Deaktivert
+addon-detail-author-label = Utvikler
+addon-detail-version-label = Versjon
+addon-detail-last-updated-label = Sist oppdatert
+addon-detail-homepage-label = Hjemmeside
+addon-detail-rating-label = Vurdering
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (avslått)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } vurdering
+       *[other] { $numberOfReviews } vurderinger
+    }

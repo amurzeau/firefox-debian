@@ -8,6 +8,11 @@ profiles-create = 새 프로필 생성
 profiles-restart-title = 재시작
 profiles-restart-in-safe-mode = 부가 기능을 비활성화 하고 재시작…
 profiles-restart-normal = 정상적으로 재시작…
+profiles-conflict = { -brand-product-name }의 다른 사본이 프로필을 변경했습니다. 변경하기 전에 { -brand-short-name }를 다시 시작해야 합니다.
+profiles-flush-fail-title = 변경 내용이 저장되지 않음
+profiles-flush-conflict = { profiles-conflict }
+profiles-flush-failed = 예상치 못한 오류가 발생하여 변경 내용을 저장하지 못했습니다.
+profiles-flush-restart-button = { -brand-short-name } 다시 시작
 # Variables:
 #   $name (String) - Name of the profile
 profiles-name = 프로필: { $name }
@@ -51,7 +56,7 @@ profiles-delete-profile-failed-title = 오류
 profiles-delete-profile-failed-message = 이 프로필을 지우는 동안 오류가 발생 했습니다.
 profiles-opendir =
     { PLATFORM() ->
-        [macos] Finder에 표시
-        [windows] 다른 폴더
+        [macos] Finder에서 보기
+        [windows] 폴더 열기
        *[other] 디렉토리 열기
     }

@@ -8,7 +8,7 @@ Closes: #763900
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/memory/build/mozjemalloc.cpp b/memory/build/mozjemalloc.cpp
-index 0a25d1e062fb..9afbd5486494 100644
+index 3a69c68c7ca3..688d228387e9 100644
 --- a/memory/build/mozjemalloc.cpp
 +++ b/memory/build/mozjemalloc.cpp
 @@ -182,7 +182,7 @@ using namespace mozilla;

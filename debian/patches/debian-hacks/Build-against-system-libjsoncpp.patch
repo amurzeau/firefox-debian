@@ -4,15 +4,15 @@ Subject: Build against system libjsoncpp
 
 ---
  config/system-headers.mozbuild                |  4 ++
- .../components/jsoncpp/src/lib_json/moz.build | 49 +------------------
+ .../components/jsoncpp/src/lib_json/moz.build | 48 +------------------
  .../crashreporter/minidump-analyzer/moz.build |  2 +-
- 3 files changed, 6 insertions(+), 49 deletions(-)
+ 3 files changed, 6 insertions(+), 48 deletions(-)
 
 diff --git a/config/system-headers.mozbuild b/config/system-headers.mozbuild
-index 0c5519849da4..f430c806b2b1 100644
+index 1ff025eb030d..e13cef5c5c8d 100644
 --- a/config/system-headers.mozbuild
 +++ b/config/system-headers.mozbuild
-@@ -1350,3 +1350,7 @@ if CONFIG['MOZ_WAYLAND']:
+@@ -1345,3 +1345,7 @@ if CONFIG['MOZ_WAYLAND']:
          'wayland-egl.h',
          'wayland-util.h',
      ]
@@ -21,10 +21,10 @@ index 0c5519849da4..f430c806b2b1 100644
 +    'json/json.h',
 +]
 diff --git a/toolkit/components/jsoncpp/src/lib_json/moz.build b/toolkit/components/jsoncpp/src/lib_json/moz.build
-index e515c5680673..5e20a3d42fd9 100644
+index ca40df60b712..5e20a3d42fd9 100644
 --- a/toolkit/components/jsoncpp/src/lib_json/moz.build
 +++ b/toolkit/components/jsoncpp/src/lib_json/moz.build
-@@ -4,53 +4,6 @@
+@@ -4,52 +4,6 @@
  # License, v. 2.0. If a copy of the MPL was not distributed with this
  # file, You can obtain one at http://mozilla.org/MPL/2.0/.
  
@@ -45,7 +45,7 @@ index e515c5680673..5e20a3d42fd9 100644
 -        '-Xclang',
 -        '-fcxx-exceptions',
 -    ]
--elif CONFIG['CC_TYPE'] not in ('msvc', 'clang-cl'):
+-else:
 -    CXXFLAGS += [
 -        '-fexceptions',
 -    ]
@@ -56,9 +56,9 @@ index e515c5680673..5e20a3d42fd9 100644
  Library('jsoncpp')
  
 -# Suppress warnings in third-party code.
--if CONFIG['CC_TYPE'] in ('msvc', 'clang-cl'):
+-if CONFIG['CC_TYPE'] == 'clang-cl':
 -    CXXFLAGS += [
--        '-wd4005', # macro redefinition
+-        '-Wno-macro-redefined',
 -    ]
 -elif CONFIG['CC_TYPE'] in ('clang', 'gcc'):
 -    CXXFLAGS += [
@@ -71,10 +71,9 @@ index e515c5680673..5e20a3d42fd9 100644
 -        '-Wno-c++11-narrowing',
 -    ]
 -
--if CONFIG['CC_TYPE'] in ('clang', 'clang-cl', 'gcc'):
--    CXXFLAGS += [
--        '-Wno-implicit-fallthrough',
--    ]
+-CXXFLAGS += [
+-    '-Wno-implicit-fallthrough',
+-]
 -
 -if CONFIG['CC_TYPE'] == 'clang-cl':
 -    AllowCompilerWarnings()  # workaround for bug 1090497

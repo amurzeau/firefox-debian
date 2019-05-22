@@ -3,12 +3,15 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 cfr-doorhanger-extension-heading = Προτεινόμενη επέκταση
+cfr-doorhanger-pintab-heading = Δοκιμάστε αυτό: Καρφίτσωμα καρτέλας
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Γιατί το βλέπω αυτό
 cfr-doorhanger-extension-cancel-button = Όχι τώρα
     .accesskey = χ
 cfr-doorhanger-extension-ok-button = Προσθήκη τώρα
     .accesskey = σ
+cfr-doorhanger-pintab-ok-button = Καρφίτσωμα καρτέλας
+    .accesskey = Κ
 cfr-doorhanger-extension-manage-settings-button = Διαχείριση ρυθμίσεων προτάσεων
     .accesskey = Δ
 cfr-doorhanger-extension-never-show-recommendation = Να μην εμφανίζεται αυτή η πρόταση
@@ -41,3 +44,12 @@ cfr-doorhanger-extension-total-users =
         [one] { $total } χρήστης
        *[other] { $total } χρήστες
     }
+cfr-doorhanger-pintab-description = Αποκτήστε εύκολη πρόσβαση σε ιστοσελίδες συχνής χρήσης. Διατηρήστε τις ιστοσελίδες ανοικτές σε μια καρτέλα (ακόμη κι όταν κάνετε επανεκκίνηση).
+
+## These messages are steps on how to use the feature and are shown together.
+
+cfr-doorhanger-pintab-step1 = <b>Κάντε δεξί κλικ</b> στην καρτέλα που θέλετε να καρφιτσώσετε.
+cfr-doorhanger-pintab-step2 = Επιλέξτε το <b>Καρφίτσωμα καρτέλας</b> από το μενού.
+cfr-doorhanger-pintab-step3 = Αν αυτή η ιστοσελίδα ενημερωθεί, θα δείτε μια μπλε κουκκίδα στην καρφιτσωμένη σας καρτέλα.
+cfr-doorhanger-pintab-animation-pause = Παύση
+cfr-doorhanger-pintab-animation-resume = Συνέχιση

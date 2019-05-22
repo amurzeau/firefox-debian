@@ -64,6 +64,8 @@ but will never be visible at the same time. -->
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "T">
 
+<!-- Tab context menu -->
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -108,10 +110,9 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Tabiau Cudd">
 
 <!ENTITY  listAllTabs.label      "Rhestru pob tab">
-
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
-<!ENTITY  allTabsMenu.searchTabs.label       "Tabiau Chwilio">
+<!ENTITY  allTabsMenu.searchTabs.label       "Chwilio'r Tabiau">
 
 <!ENTITY tabCmd.label "Tab Newydd">
 <!ENTITY tabCmd.accesskey "T">
@@ -130,6 +131,9 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "Argraffu…">
 <!ENTITY printCmd.accesskey "A">
 <!ENTITY printCmd.commandkey "p">
+
+<!ENTITY importFromAnotherBrowserCmd.label "Mewnforio o Borwr Arall…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "M">
 
 <!ENTITY taskManagerCmd.label "Rheolwr Tasgau">
 
@@ -213,6 +217,28 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenExit.label "Gadael Modd Sgrin Lawn">
 <!ENTITY fullScreenExit.accesskey "L">
 
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "Cymrwch Firefox gyda Chi">
+<!ENTITY fxa.signin.description.label "Cewch eich nodau tudalen, hanes, cyfrineiriau a gosodiadau eraill ar eich holl ddyfeisiau.">
+<!ENTITY fxa.signin.button.label "Trowch &syncBrand.shortName.label; ymlaen…">
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "Gwiriwch eich e-bost">
+<!ENTITY fxa.unverified.description.label "Bydd angen i chi wirio eich cyfrif cyn y gallwch gydweddu.">
+<!ENTITY fxa.unverified.button.label "Agor Dewisiadau &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "Mewngofnodwyd fel">
+<!ENTITY fxa.menu.manageAccount.label "Rheoli Cyfrif…">
+<!ENTITY fxa.menu.syncSettings.label "Gosodiadau &syncBrand.shortName.label;…">
+<!ENTITY fxa.menu.connectAnotherDevice.label "&syncedTabs.sidebar.connectAnotherDevice;">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "Cysylltu Dyfais Arall…">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
+
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
      respectively before and after the domain requiring fullscreen.
@@ -229,6 +255,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "Gadael y Sgrin Lawn (esc)">
 <!ENTITY leaveDOMFullScreen.label "Gadael Sgrin Lawn">
 <!ENTITY leaveDOMFullScreen.accesskey "S">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.label "Llun mewn Llun">
+<!ENTITY pictureInPicture.accesskey "L">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -408,6 +440,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.label       "Dewisiadau">
 <!ENTITY preferencesCmdUnix.accesskey     "w">
 
+<!ENTITY logins.label                           "Mewngofnodion a Cyfrineiriau">
+
 <!ENTITY clearRecentHistory.label               "Clirio Hanes Diweddar…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
@@ -437,6 +471,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.clearRecent.label "Clirio Hanes Diweddar…">
 <!ENTITY appMenuHistory.restoreSession.label "Adfer y Sesiwn Flaenorol">
 <!ENTITY appMenuHistory.viewSidebar.label "Gweld Bar Ochr Hanes">
+<!ENTITY appMenuHistory.hideSidebar.label "Cuddio'r Bar Ochr Hanes">
 <!ENTITY appMenuHistory.recentHistory.label "Hanes Diweddar">
 <!ENTITY appMenuHelp.label "Cymorth">
 
@@ -465,6 +500,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Mewngofnodwch i Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Rheoli Dyfeisiadau…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Gweld Bar Ochr Tabiau wedi eu Cydweddu">
+<!ENTITY appMenuRemoteTabs.hidesidebar.label "Cuddio'r Bar Ochr Cydweddwyd">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Cysylltu Dyfais Arall">
 
 <!ENTITY appMenuRecentHighlights.label "Uchafbwyntiau Diweddar">
@@ -494,6 +530,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.manageExtension.accesskey "E">
 <!ENTITY customizeMenu.removeExtension.label "Tynnu'r Estyniad">
 <!ENTITY customizeMenu.removeExtension.accesskey "T">
+
+<!-- LOCALIZATION NOTE (reportExtension.label) This label is used in the extensions
+     toolbar buttons context menus, a user can use this command to submit to Mozilla
+     an abuse report related to that extension. "Report" is a verb. -->
+<!ENTITY customizeMenu.reportExtension.label "Adrodd ar yr Estyniad">
+<!ENTITY customizeMenu.reportExtension.accesskey "A">
 
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
@@ -879,7 +921,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "Nid ydych wedi rhoi i'r wefan hon unrhyw ganiatâd arbennig.">
 <!ENTITY identity.permissionsReloadHint "Efallai y bydd angen ail lwytho'r dudalen i newidiadau ddod ar waith.">
 <!ENTITY identity.permissionsPreferences.tooltip "Agor Dewisiadau Caniatâd">
-
 <!ENTITY identity.contentBlockingPreferences.tooltip "Agor Dewisiadau Rhwystro Cynnwys">
 
 
@@ -900,7 +941,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Cychwynnwch gydweddu tabiau er mwyn gweld rhestr o dabiau o'ch dyfeisiau eraill.">
-<!ENTITY syncedTabs.sidebar.searchPlaceholder  "Chwilio'r tabiau wedi eu cydweddu">
+<!ENTITY syncedTabs.sidebar.searchPlaceholder  "Chwilio tabiau wedi eu cydweddu">
 <!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Cysylltu Dyfais Arall">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
@@ -931,6 +972,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSignIn.label             "Mewngofnodi i &syncBrand.shortName.label;…">
 <!ENTITY syncSignIn.accesskey         "Y">
 <!ENTITY syncSyncNowItem.label        "Cydweddu Nawr">
+<!ENTITY syncSyncNowItemSyncing.label "Cydweddu…">
 <!ENTITY syncSyncNowItem.accesskey    "y">
 <!ENTITY syncReAuthItem.label         "Ail gysylltu i &syncBrand.shortName.label;…">
 <!ENTITY syncReAuthItem.accesskey     "A">
@@ -1073,6 +1115,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.acceptButton.accesskey "L">
 <!ENTITY updateAvailable.cancelButton.label "Nid Nawr">
 <!ENTITY updateAvailable.cancelButton.accesskey "N">
+
 <!ENTITY updateAvailable.panelUI.label "Llwytho diweddariad &brandShorterName; i lawr">
 
 <!ENTITY updateManual.message "Llwythwch gopi newydd o &brandShorterName; i lawr ac mi wnawn ni eich helpu i'w gosod.">
@@ -1133,11 +1176,11 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "Rheolwch eich ychwanegion drwy glicio <image class='addon-addon-icon'/> yn newislen <image class='addon-toolbar-icon'/>.">
-<!ENTITY addonPostInstall.incognito.label "Caniatáu i'r estyniad yma redeg mewn Ffenestr Breifat.">
-<!ENTITY addonPostInstall.incognito.accesskey "C">
+<!ENTITY addonPostInstall.incognito.checkbox.label "Caniatáu i'r estyniad yma redeg mewn Ffenestri Preifat">
+<!ENTITY addonPostInstall.incognito.checkbox.accesskey "C">
 
 <!ENTITY addonPrivateBrowsing.header2.label "Newid i estyniadau mewn Ffenestri Preifat">
-<!ENTITY addonPrivateBrowsing.body2.label "Bydd unrhyw estyniad newydd y byddwch yn eu hychwanegu i &brandShorterName; ddim yn gweithio mewn Ffenestri Preifat oni bai eich bod yn caniatáu hynny yn y gosodiadau.">
+<!ENTITY addonPrivateBrowsing.body2.label "Ni fydd unrhyw estyniad newydd y byddwch yn eu hychwanegu i &brandShorterName; yn gweithio mewn Ffenestri Preifat oni bai eich bod yn caniatáu hynny yn y gosodiadau.">
 <!ENTITY addonPrivateBrowsing.learnMore.label "Dysgu sut i reoli gosodiadau estyniad.">
 <!ENTITY addonPrivateBrowsing.okButton.label "Iawn, rwy'n deall">
 <!ENTITY addonPrivateBrowsing.okButton.accesskey "I">

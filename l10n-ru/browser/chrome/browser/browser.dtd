@@ -64,6 +64,8 @@ but will never be visible at the same time. -->
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "а">
 
+<!-- Tab context menu -->
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -108,7 +110,6 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Скрытые вкладки">
 
 <!ENTITY  listAllTabs.label      "Список всех вкладок">
-
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
 <!ENTITY  allTabsMenu.searchTabs.label       "Поиск вкладок">
@@ -130,6 +131,9 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "Печать…">
 <!ENTITY printCmd.accesskey "ч">
 <!ENTITY printCmd.commandkey "p">
+
+<!ENTITY importFromAnotherBrowserCmd.label "Импорт из другого браузера…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "з">
 
 <!ENTITY taskManagerCmd.label "Диспетчер задач">
 
@@ -202,7 +206,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaSignIn.label "Войти в Синхронизацию">
 <!ENTITY fxaSignedIn.tooltip "Открыть настройки Синхронизации">
 <!ENTITY fxaSignInError.label "Снова подсоединиться к Синхронизации">
-<!ENTITY fxaUnverified.label "Подтвердить свой аккаунт">
+<!ENTITY fxaUnverified.label "Подтвердите свой аккаунт">
 
 
 <!ENTITY fullScreenMinimize.tooltip "Свернуть">
@@ -212,6 +216,28 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenAutohide.accesskey "к">
 <!ENTITY fullScreenExit.label "Выйти из полноэкранного режима">
 <!ENTITY fullScreenExit.accesskey "ы">
+
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "Возьмите Firefox с собой">
+<!ENTITY fxa.signin.description.label "Получите доступ к вашим закладкам, истории, паролям и другим параметрам на всех ваших устройствах.">
+<!ENTITY fxa.signin.button.label "Включить Синхронизацию…">
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "Проверьте свою почту">
+<!ENTITY fxa.unverified.description.label "Для включения синхронизации, вам необходимо подтвердить свой Аккаунт.">
+<!ENTITY fxa.unverified.button.label "Открыть настройки Синхронизации…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "Вы вошли как">
+<!ENTITY fxa.menu.manageAccount.label "Управление аккаунтом…">
+<!ENTITY fxa.menu.syncSettings.label "Настройки Синхронизации…">
+<!ENTITY fxa.menu.connectAnotherDevice.label "&syncedTabs.sidebar.connectAnotherDevice;">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "Подключить другое устройство…">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
@@ -229,6 +255,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "Выйти из полноэкранного режима (esc)">
 <!ENTITY leaveDOMFullScreen.label "Выйти из полноэкранного режима">
 <!ENTITY leaveDOMFullScreen.accesskey "ы">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.label "Картинка в картинке">
+<!ENTITY pictureInPicture.accesskey "и">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -408,6 +440,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.label       "Настройки">
 <!ENTITY preferencesCmdUnix.accesskey     "Н">
 
+<!ENTITY logins.label                           "Логины и пароли">
+
 <!ENTITY clearRecentHistory.label               "Удалить недавнюю историю…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
@@ -437,6 +471,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.clearRecent.label "Удалить историю…">
 <!ENTITY appMenuHistory.restoreSession.label "Восстановить предыдущую сессию">
 <!ENTITY appMenuHistory.viewSidebar.label "Боковая панель журнала">
+<!ENTITY appMenuHistory.hideSidebar.label "Скрыть боковую панель журнала">
 <!ENTITY appMenuHistory.recentHistory.label "Недавняя история">
 <!ENTITY appMenuHelp.label "Справка">
 
@@ -465,6 +500,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Войти в Синхронизацию">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Управление устройствами…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Показать боковую панель облачных вкладок">
+<!ENTITY appMenuRemoteTabs.hidesidebar.label "Скрыть боковую панель облачных вкладок">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Подключить другое устройство">
 
 <!ENTITY appMenuRecentHighlights.label "Последнее Избранное">
@@ -879,7 +915,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "Вы не давали этому сайту каких-либо специальных разрешений.">
 <!ENTITY identity.permissionsReloadHint "Чтобы изменения возымели действие, вам, возможно, потребуется перезагрузить страницу.">
 <!ENTITY identity.permissionsPreferences.tooltip "Открыть настройки разрешений">
-
 <!ENTITY identity.contentBlockingPreferences.tooltip "Открыть настройки блокировки содержимого">
 
 
@@ -931,6 +966,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSignIn.label             "Войти в Синхронизацию…">
 <!ENTITY syncSignIn.accesskey         "о">
 <!ENTITY syncSyncNowItem.label        "Синхронизировать">
+<!ENTITY syncSyncNowItemSyncing.label "Синхронизация…">
 <!ENTITY syncSyncNowItem.accesskey    "х">
 <!ENTITY syncReAuthItem.label         "Переприсоединиться к Синхронизации…">
 <!ENTITY syncReAuthItem.accesskey     "и">
@@ -1073,6 +1109,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.acceptButton.accesskey "а">
 <!ENTITY updateAvailable.cancelButton.label "Не сейчас">
 <!ENTITY updateAvailable.cancelButton.accesskey "е">
+
 <!ENTITY updateAvailable.panelUI.label "Загрузите обновление &brandShorterName;">
 
 <!ENTITY updateManual.message "Загрузите новую версию &brandShorterName; и мы поможем вам её установить.">
@@ -1133,8 +1170,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "Управляйте своими дополнениями, щёлкнув по <image class='addon-addon-icon'/> в меню <image class='addon-toolbar-icon'/>.">
-<!ENTITY addonPostInstall.incognito.label "Разрешить этому расширению работать в приватных окнах.">
-<!ENTITY addonPostInstall.incognito.accesskey "ш">
+<!ENTITY addonPostInstall.incognito.checkbox.label "Разрешить этому расширению работать в приватных окнах">
+<!ENTITY addonPostInstall.incognito.checkbox.accesskey "ш">
 
 <!ENTITY addonPrivateBrowsing.header2.label "Изменение в работе расширений в приватных окнах">
 <!ENTITY addonPrivateBrowsing.body2.label "Любые новые расширения, которые вы добавите в &brandShorterName; не будут работать в приватных окнах, если вы не разрешите этого в настройках.">

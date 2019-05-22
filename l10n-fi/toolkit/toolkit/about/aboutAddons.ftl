@@ -91,6 +91,22 @@ detail-update-automatic =
 detail-update-manual =
     .label = Pois käytöstä
     .tooltiptext = Älä asenna päivityksiä automaattisesti
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Suoritus yksityisissä ikkunoissa
+detail-private-browsing-description2 = Kun sallittu, tällä laajennuksella on pääsy verkossa tekemiisi asioihin yksityisissä ikkunoissa. <label data-l10n-name="detail-private-browsing-learn-more">Lue lisää</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = Ei sallittu yksityisissä ikkunoissa
+detail-private-disallowed-description = Tätä laajennusta ei suoriteta yksityisissä ikkunoissa. <label data-l10n-name="detail-private-browsing-learn-more">Lue lisää</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Vaatii pääsyn yksityisiin ikkunoihin
+detail-private-required-description = Tällä laajennuksella on pääsy verkkotoimintaasi yksityisissä ikkunoissa. <label data-l10n-name="detail-private-browsing-learn-more">Lue lisää</label>
+detail-private-browsing-on =
+    .label = Salli
+    .tooltiptext = Ota käyttöön yksityisessä selauksessa
+detail-private-browsing-off =
+    .label = Älä salli
+    .tooltiptext = Poista käytöstä yksityisessä selauksessa
 detail-home =
     .label = Kotisivu
 detail-home-value =
@@ -133,6 +149,9 @@ legacy-warning-show-legacy = Näytä perinteiset laajennukset
 legacy-extensions =
     .value = Perinteiset laajennukset
 legacy-extensions-description = Nämä laajennukset eivät täytä { -brand-short-name }in nykyisiä vaatimuksia, joten ne on poistettu käytöstä. <label data-l10n-name="legacy-learn-more">Lue lisää muutoksista lisäosiin</label>
+private-browsing-description2 =
+    { -brand-short-name }-laajennusten toiminta yksityisissä ikkunoissa muuttuu. Uutena { -brand-short-name }iin lisättyjä laajennuksia ei enää suoriteta oletuksena yksityisissä ikkunoissa. Jos et salli suorittamista asetuksista, laajennus ei toimi yksityisen selaamisen aikana eikä siten sinä aikana pääse käsiksi tekemisiisi verkossa. Olemme tehneet tämän muutoksen, jotta yksityinen selaus pysyy yksityisenä.
+    <label data-l10n-name="private-browsing-learn-more">Lue lisää kuinka hallita laajennusten asetuksia</label>
 extensions-view-discover =
     .name = Lataa lisäosia
     .tooltiptext = { extensions-view-discover.name }
@@ -140,8 +159,8 @@ extensions-view-recent-updates =
     .name = Tuoreet päivitykset
     .tooltiptext = { extensions-view-recent-updates.name }
 extensions-view-available-updates =
-    .name = Saatavilla olevat päivitykset
-    .tooltiptext = { extensions-view-available-updates.name }
+    .name = Päivitykset
+    .tooltiptext = Saatavilla olevat päivitykset
 
 ## These are global warnings
 
@@ -218,6 +237,7 @@ manage-extensions-shortcuts =
     .accesskey = t
 shortcuts-empty-message = Tällä lisäosalle ei ole pikanäppäimiä.
 shortcuts-no-addons = Yhtäkään lisäosaa ei ole otettu käyttöön.
+shortcuts-no-commands = Seuraavilla laajennuksilla ei ole pikanäppäimiä:
 shortcuts-input =
     .placeholder = Kirjoita näppäinyhdistelmä
 shortcuts-browserAction = Aktivoi laajennus
@@ -228,6 +248,15 @@ shortcuts-modifier-other = Paina Ctrl- tai Alt-näppäintä
 shortcuts-invalid = Virheellinen yhdistelmä
 shortcuts-letter = Kirjoita kirjain
 shortcuts-system = { -brand-short-name }-pikanäppäintä ei voi korvata
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = { $addon } käyttää tätä jo
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] Näytä { $numberToShow } lisää
+       *[other] Näytä { $numberToShow } lisää
+    }
 shortcuts-card-collapse-button = Näytä vähemmän
 go-back-button =
     .tooltiptext = Takaisin
@@ -236,3 +265,15 @@ go-back-button =
 
 remove-addon-button = Poista
 disable-addon-button = Poista käytöstä
+enable-addon-button = Käytä
+expand-addon-button = Lisää valintoja
+addons-enabled-heading = Käytössä
+addons-disabled-heading = Ei käytössä
+addon-detail-author-label = Tekijä
+addon-detail-version-label = Versio
+addon-detail-last-updated-label = Päivitetty viimeksi
+addon-detail-homepage-label = Kotisivu
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (ei käytössä)

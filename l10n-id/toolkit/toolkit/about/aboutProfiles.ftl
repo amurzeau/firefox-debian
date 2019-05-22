@@ -8,6 +8,11 @@ profiles-create = Buat Profil Baru
 profiles-restart-title = Mulai Ulang
 profiles-restart-in-safe-mode = Mulai Ulang dengan Pengaya Dinonaktifkan…
 profiles-restart-normal = Mulai ulang dengan normal…
+profiles-conflict = Salinan lain dari { -brand-product-name } telah membuat perubahan pada profil. Anda harus memulai ulang { -brand-short-name } sebelum membuat lebih banyak perubahan.
+profiles-flush-fail-title = Perubahan tidak disimpan
+profiles-flush-conflict = { profiles-conflict }
+profiles-flush-failed = Kesalahan tak terduga telah mencegah perubahan Anda disimpan.
+profiles-flush-restart-button = Mulai Ulang { -brand-short-name }
 # Variables:
 #   $name (String) - Name of the profile
 profiles-name = Profil: { $name }
@@ -26,6 +31,8 @@ profiles-rename = Ubah Nama
 profiles-remove = Hapus
 profiles-set-as-default = Setel sebagai profil baku
 profiles-launch-profile = Luncurkan profil di peramban baru
+profiles-cannot-set-as-default-title = Gagal menyetel bawaan
+profiles-cannot-set-as-default-message = Profil bawaan tidak bisa diubah untuk { -brand-short-name }.
 profiles-yes = ya
 profiles-no = tidak
 profiles-rename-profile-title = Ganti Nama Profil

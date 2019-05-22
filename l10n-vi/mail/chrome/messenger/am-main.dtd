@@ -4,8 +4,8 @@
 
 <!-- extracted from am-main.xul -->
 
-<!ENTITY accountTitle.label "Account Settings">
-<!ENTITY accountName.label "Tên Tài Khoản:">
+<!ENTITY accountTitle.label "Cài đặt tài khoản">
+<!ENTITY accountName.label "Tên tài khoản:">
 <!ENTITY accountName.accesskey "n">
 <!ENTITY identityTitle.label "Định danh Mặc định">
 <!ENTITY identityDesc.label "Mỗi tài khoản có một định danh, đó là thông tin để người khác nhận ra khi họ đọc thư của bạn.">
@@ -15,7 +15,7 @@
 <!ENTITY email.accesskey "E">
 <!ENTITY replyTo.label "Địa chỉ Trả-lời-tới:">
 <!ENTITY replyTo.accesskey "a">
-<!ENTITY replyTo.placeholder "Recipients will reply to this other address">
+<!ENTITY replyTo.placeholder "Người nhận sẽ trả lời địa chỉ khác này">
 <!ENTITY organization.label "Tổ chức:">
 <!ENTITY organization.accesskey "h">
 <!ENTITY signatureText.label "Chữ kí:">
@@ -28,7 +28,7 @@
 <!ENTITY choose.label "Chọn…">
 <!ENTITY choose.accesskey "C">
 <!ENTITY editVCard.label "Chỉnh sửa vCard…">
-<!ENTITY editVCard.accesskey "s">
+<!ENTITY editVCard.accesskey "d">
 <!-- LOCALIZATION NOTE (attachVCard.label) : do not translate "vCard" in below line -->
 <!ENTITY attachVCard.label "Đính kèm vCard của tôi vào thư">
 <!ENTITY attachVCard.accesskey "v">
@@ -41,3 +41,5 @@
 <!ENTITY smtpName.accesskey "M">
 <!ENTITY smtpDefaultServer.label "Sử dụng Máy chủ Mặc định">
 
+<!ENTITY smtpServerEdit.label "Chỉnh sửa máy chủ SMTP…">
+<!ENTITY smtpServerEdit.accesskey "P">

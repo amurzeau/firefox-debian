@@ -64,6 +64,8 @@ but will never be visible at the same time. -->
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "t">
 
+<!-- Tab context menu -->
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -108,7 +110,6 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Verborgen tabbladen">
 
 <!ENTITY  listAllTabs.label      "Alle tabbladtitels tonen">
-
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
 <!ENTITY  allTabsMenu.searchTabs.label       "Tabbladen doorzoeken">
@@ -130,6 +131,9 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "Afdrukken…">
 <!ENTITY printCmd.accesskey "d">
 <!ENTITY printCmd.commandkey "p">
+
+<!ENTITY importFromAnotherBrowserCmd.label "Importeren vanuit een andere browser…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "b">
 
 <!ENTITY taskManagerCmd.label "Taakbeheerder">
 
@@ -213,6 +217,28 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenExit.label "Volledigschermmodus verlaten">
 <!ENTITY fullScreenExit.accesskey "d">
 
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "Neem Firefox met u mee">
+<!ENTITY fxa.signin.description.label "Bereik uw bladwijzers, geschiedenis, wachtwoorden en andere instellingen op al uw apparaten.">
+<!ENTITY fxa.signin.button.label "&syncBrand.shortName.label; inschakelen…">
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "Controleer uw e-mail">
+<!ENTITY fxa.unverified.description.label "U dient uw account te verifiëren voordat u kunt synchroniseren.">
+<!ENTITY fxa.unverified.button.label "&syncBrand.shortName.label;-instellingen openen…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "Aangemeld als">
+<!ENTITY fxa.menu.manageAccount.label "Account beheren…">
+<!ENTITY fxa.menu.syncSettings.label "&syncBrand.shortName.label;-instellingen…">
+<!ENTITY fxa.menu.connectAnotherDevice.label "&syncedTabs.sidebar.connectAnotherDevice;">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "Een ander apparaat verbinden…">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
+
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
      respectively before and after the domain requiring fullscreen.
@@ -229,6 +255,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "Volledig scherm verlaten (esc)">
 <!ENTITY leaveDOMFullScreen.label "Volledig scherm verlaten">
 <!ENTITY leaveDOMFullScreen.accesskey "v">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.label "Picture-in-Picture">
+<!ENTITY pictureInPicture.accesskey "u">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -323,8 +355,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY bookmarksSubview.label             "Bladwijzers">
 <!ENTITY bookmarksMenuButton2.label         "Bladwijzermenu">
-<!ENTITY bookmarksMenuButton.other.label "Andere bladwijzers">
-<!ENTITY bookmarksMenuButton.mobile.label "Mobiel-bladwijzers">
+<!ENTITY bookmarksMenuButton.other.label    "Andere bladwijzers">
+<!ENTITY bookmarksMenuButton.mobile.label   "Mobiel-bladwijzers">
 <!ENTITY viewBookmarksSidebar2.label        "Bladwijzerzijbalk weergeven">
 <!ENTITY hideBookmarksSidebar.label         "Bladwijzerzijbalk verbergen">
 <!ENTITY viewBookmarksToolbar.label         "Bladwijzerwerkbalk weergeven">
@@ -408,6 +440,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.label       "Voorkeuren">
 <!ENTITY preferencesCmdUnix.accesskey     "V">
 
+<!ENTITY logins.label                           "Aanmeldingen en wachtwoorden">
+
 <!ENTITY clearRecentHistory.label               "Recente geschiedenis wissen…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
@@ -437,6 +471,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.clearRecent.label "Recente geschiedenis wissen…">
 <!ENTITY appMenuHistory.restoreSession.label "Vorige sessie herstellen">
 <!ENTITY appMenuHistory.viewSidebar.label "Geschiedeniszijbalk weergeven">
+<!ENTITY appMenuHistory.hideSidebar.label "Geschiedeniszijbalk verbergen">
 <!ENTITY appMenuHistory.recentHistory.label "Recente geschiedenis">
 <!ENTITY appMenuHelp.label "Help">
 
@@ -465,6 +500,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Aanmelden bij Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Apparaten beheren…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Weergeven in zijbalk">
+<!ENTITY appMenuRemoteTabs.hidesidebar.label "Zijbalk met gesynchroniseerde tabbladen verbergen">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Een ander apparaat verbinden">
 
 <!ENTITY appMenuRecentHighlights.label "Recente Highlights">
@@ -811,10 +847,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY bidiSwitchTextDirectionItem.accesskey    "t">
 <!ENTITY bidiSwitchTextDirectionItem.commandkey   "X">
 
-<!ENTITY findOnCmd.label "Zoeken op deze pagina…">
+<!ENTITY findOnCmd.label     "Zoeken op deze pagina…">
 <!ENTITY findOnCmd.accesskey "Z">
 <!ENTITY findOnCmd.commandkey "f">
-<!ENTITY findAgainCmd.label "Opnieuw zoeken">
+<!ENTITY findAgainCmd.label  "Opnieuw zoeken">
 <!ENTITY findAgainCmd.accesskey "w">
 <!ENTITY findAgainCmd.commandkey "g">
 <!ENTITY findAgainCmd.commandkey2 "VK_F3">
@@ -879,7 +915,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "U hebt deze website geen speciale toestemmingen gegeven.">
 <!ENTITY identity.permissionsReloadHint "Mogelijk dient u de pagina te vernieuwen om wijzigingen van kracht te laten worden.">
 <!ENTITY identity.permissionsPreferences.tooltip "Voorkeuren voor toestemmingen openen">
-
 <!ENTITY identity.contentBlockingPreferences.tooltip "Voorkeuren voor inhoudsblokkering openen">
 
 
@@ -931,6 +966,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSignIn.label             "Aanmelden bij &syncBrand.shortName.label;…">
 <!ENTITY syncSignIn.accesskey         "y">
 <!ENTITY syncSyncNowItem.label        "Nu synchroniseren">
+<!ENTITY syncSyncNowItemSyncing.label "Synchroniseren…">
 <!ENTITY syncSyncNowItem.accesskey    "N">
 <!ENTITY syncReAuthItem.label         "Opnieuw verbinden met &syncBrand.shortName.label;…">
 <!ENTITY syncReAuthItem.accesskey     "O">
@@ -1002,9 +1038,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.fingerprinters.label "Fingerprinters">
 <!ENTITY contentBlocking.fingerprintersView.label "Fingerprinters">
 
-<!ENTITY contentBlocking.openBreakageReportView2.label "Een probleem rapporteren">
-<!ENTITY contentBlocking.breakageReportView.label "Problemen rapporteren">
-<!ENTITY contentBlocking.breakageReportView2.description "Inhoudsblokkering kan problemen met bepaalde websites veroorzaken. Als u problemen rapporteert, helpt u &brandShortName; voor iedereen te verbeteren. (Hierdoor wordt zowel een URL als informatie over uw browserinstellingen naar Mozilla verzonden.)">
+<!ENTITY contentBlocking.openBreakageReportView2.label "Een probleem melden">
+<!ENTITY contentBlocking.breakageReportView.label "Problemen melden">
+<!ENTITY contentBlocking.breakageReportView2.description "Inhoudsblokkering kan problemen met bepaalde websites veroorzaken. Als u problemen meldt, helpt u &brandShortName; voor iedereen te verbeteren. (Hierdoor wordt zowel een URL als informatie over uw browserinstellingen naar Mozilla verzonden.)">
 <!ENTITY contentBlocking.breakageReportView.learnMore "Meer info">
 <!ENTITY contentBlocking.breakageReportView.collection.url.label "URL">
 <!ENTITY contentBlocking.breakageReportView.collection.comments.label "Welke problemen ondervond u? (Optioneel)">
@@ -1073,6 +1109,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.acceptButton.accesskey "d">
 <!ENTITY updateAvailable.cancelButton.label "Niet nu">
 <!ENTITY updateAvailable.cancelButton.accesskey "N">
+
 <!ENTITY updateAvailable.panelUI.label "&brandShorterName;-update downloaden">
 
 <!ENTITY updateManual.message "Download een nieuwe kopie van &brandShorterName; en we helpen u deze te installeren.">
@@ -1133,8 +1170,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "Beheer uw add-ons door op <image class='addon-addon-icon'/> in het menu <image class='addon-toolbar-icon'/> te klikken.">
-<!ENTITY addonPostInstall.incognito.label "Deze extensie toestaan om in privévensters te worden uitgevoerd">
-<!ENTITY addonPostInstall.incognito.accesskey "D">
+<!ENTITY addonPostInstall.incognito.checkbox.label "Deze extensie in privévensters laten uitvoeren">
+<!ENTITY addonPostInstall.incognito.checkbox.accesskey "D">
 
 <!ENTITY addonPrivateBrowsing.header2.label "Wijziging aan extensies in privévensters">
 <!ENTITY addonPrivateBrowsing.body2.label "Nieuwe extensies die u aan &brandShorterName; toevoegt werken niet in privévensters, tenzij u dit toestaat in de instellingen.">
@@ -1143,3 +1180,4 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY addonPrivateBrowsing.okButton.accesskey "O">
 <!ENTITY addonPrivateBrowsing.manageButton.label "Extensies beheren">
 <!ENTITY addonPrivateBrowsing.manageButton.accesskey "b">
+

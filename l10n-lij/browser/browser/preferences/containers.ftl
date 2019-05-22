@@ -52,8 +52,12 @@ containers-color-pink =
     .label = Rêuza
 containers-color-purple =
     .label = Pórpoa
+containers-color-toolbar =
+    .label = Cô da bara di atressi
+containers-icon-fence =
+    .label = Recinto
 containers-icon-fingerprint =
-    .label = Inpronta do dio
+    .label = Inpronta digitale
 containers-icon-briefcase =
     .label = Valixe
 # String represents a money sign but currently uses a dollar sign

@@ -3,12 +3,15 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 cfr-doorhanger-extension-heading = Extension recommendate
+cfr-doorhanger-pintab-heading = Prova isto: Fixar scheda
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Perque io vide isto
 cfr-doorhanger-extension-cancel-button = Non ora
     .accesskey = N
 cfr-doorhanger-extension-ok-button = Adde ora
     .accesskey = A
+cfr-doorhanger-pintab-ok-button = Fixar scheda
+    .accesskey = F
 cfr-doorhanger-extension-manage-settings-button = Gere le definitiones del recommendation
     .accesskey = G
 cfr-doorhanger-extension-never-show-recommendation = Non plus me monstrar iste recommendation
@@ -41,8 +44,21 @@ cfr-doorhanger-extension-total-users =
         [one] { $total } usator
        *[other] { $total } usatores
     }
+cfr-doorhanger-pintab-description = Accede facilemente al sitos web que tu usa plus frequentemente. Mantene le sitos aperte in un scheda (anque quando tu reinitialisa).
 
 ## These messages are steps on how to use the feature and are shown together.
 
+cfr-doorhanger-pintab-step1 = <b>Clicca dextre</b> sur le scheda que tu desira appunctar.
+cfr-doorhanger-pintab-step2 = Elige <b>Appunctar scheda</b> ab le menu.
+cfr-doorhanger-pintab-step3 = Si le sito ha un actualisation tu videra un puncto blau sur tu scheda appunctate.
 cfr-doorhanger-pintab-animation-pause = Pausar
 cfr-doorhanger-pintab-animation-resume = Resumer
+
+## Firefox Accounts Message
+
+cfr-doorhanger-bookmark-fxa-header = Synchronisa tu marcapaginas ubique.
+cfr-doorhanger-bookmark-fxa-body = Grande discoperta! Ora non restar sin iste marcapagina sur tu apparatos mobile. Comencia con un { -fxaccount-brand-name }.
+cfr-doorhanger-bookmark-fxa-link-text = Synchronisa marcapaginas ora…
+cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
+    .aria-label = Button Clauder
+    .title = Clauder

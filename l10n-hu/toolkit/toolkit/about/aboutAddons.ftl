@@ -77,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = Utoljára frissítve
 detail-contributions-description = A kiegészítő fejlesztője azt kéri, hogy egy csekély összeggel támogassa a további fejlesztést.
+detail-contributions-button = Közreműködés
+    .title = Közreműködés ezen kiegészítő fejlesztésében
+    .accesskey = K
 detail-update-type =
     .value = Automatikus frissítések
 detail-update-default =
@@ -90,7 +93,14 @@ detail-update-manual =
     .tooltiptext = Ne legyenek automatikus frissítések
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Futtatás privát ablakokban
-detail-private-browsing-description = A kiegészítő privát ablakokban is fog működni, és hozzáfér az online tevékenységéhez. <label data-l10n-name="detail-private-browsing-learn-more">További tudnivalók</label>
+detail-private-browsing-description2 = Ha engedélyezve van, akkor a kiegészítő privát böngészésben is hozzá fog férni az online tevékenységéhez. <label data-l10n-name="detail-private-browsing-learn-more">Tudjon meg többet</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = Privát ablakokban nem engedélyezett
+detail-private-disallowed-description = Ez a kiegészítő nem fut privát böngészéskor. <label data-l10n-name="detail-private-browsing-learn-more">További információk</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Hozzáférés szükséges a privát ablakokhoz
+detail-private-required-description = Ez a kiegészítő hozzáfér az online tevékenységéhez privát böngészés közben. <label data-l10n-name="detail-private-browsing-learn-more">További információ</label>
 detail-private-browsing-on =
     .label = Engedélyezés
     .tooltiptext = Engedélyezés privát böngészésben
@@ -241,6 +251,10 @@ shortcuts-modifier-other = Ctrl vagy Alt gombot tartalmaz
 shortcuts-invalid = Érvénytelen kombináció
 shortcuts-letter = Írjon be egy betűt
 shortcuts-system = Nem írhat felül egy { -brand-short-name } gyorsbillentyűt
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Már használja: { $addon }
 shortcuts-card-expand-button =
     { $numberToShow ->
         [one] Még { $numberToShow } megjelenítése
@@ -252,8 +266,51 @@ go-back-button =
 
 ## Add-on actions
 
+report-addon-button = Jelentés
 remove-addon-button = Eltávolítás
 disable-addon-button = Letiltás
 enable-addon-button = Engedélyezés
+expand-addon-button = További beállítások
 addons-enabled-heading = Engedélyezve
 addons-disabled-heading = Tiltva
+ask-to-activate-button = Aktiválás kérésre
+always-activate-button = Mindig aktiválja
+never-activate-button = Soha ne aktiválja
+addon-detail-author-label = Szerző
+addon-detail-version-label = Verzió
+addon-detail-last-updated-label = Utoljára frissítve
+addon-detail-homepage-label = Honlap
+addon-detail-rating-label = Értékelés
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (letiltva)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } értékelés
+       *[other] { $numberOfReviews } értékelés
+    }
+
+## Pending uninstall message bar
+
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> has been removed.
+pending-uninstall-undo-button = Visszavonás
+addon-detail-updates-label = Automatikus frissítések engedélyezése
+addon-detail-updates-radio-default = Alapértelmezett
+addon-detail-updates-radio-on = Be
+addon-detail-updates-radio-off = Ki
+addon-detail-update-check-label = Frissítések keresése
+install-update-button = Frissítés
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Engedélyezett privát ablakokban
+addon-detail-private-browsing-allow = Engedélyezés
+addon-detail-private-browsing-disallow = Tiltás
+available-updates-heading = Elérhető frissítések
+recent-updates-heading = Legutóbbi frissítések

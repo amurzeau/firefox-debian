@@ -64,6 +64,8 @@ but will never be visible at the same time. -->
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "i">
 
+<!-- Tab context menu -->
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -108,7 +110,6 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Ivinell kuzh">
 
 <!ENTITY  listAllTabs.label      "Roll an holl ivinelloù">
-
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
 <!ENTITY  allTabsMenu.searchTabs.label       "Klask ivinelloù">
@@ -130,6 +131,9 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "Moullañ…">
 <!ENTITY printCmd.accesskey "M">
 <!ENTITY printCmd.commandkey "p">
+
+<!ENTITY importFromAnotherBrowserCmd.label "Enporzhiañ eus ur merdeer all...">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "E">
 
 <!ENTITY taskManagerCmd.label "Ardoer trevelloù">
 
@@ -213,6 +217,28 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenExit.label "Kuitaat ar mod skramm a-bezh">
 <!ENTITY fullScreenExit.accesskey "K">
 
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "Kemerit Firefox ganeoc'h">
+<!ENTITY fxa.signin.description.label "Tapit ho sinedoù, ho roll istor, ho kerioù tremen hag arventennoù all war ho holl drevnadoù.">
+<!ENTITY fxa.signin.button.label "Gweredekaat &syncBrand.shortName.label;...">
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "Gwiriekait ho chomlec'h postel">
+<!ENTITY fxa.unverified.description.label "Dav vo deoc'h gwiriekaat ho kont a-raok goubredañ.">
+<!ENTITY fxa.unverified.button.label "Digeriñ arventennoù &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "Kennasket evel">
+<!ENTITY fxa.menu.manageAccount.label "Merañ ar gont…">
+<!ENTITY fxa.menu.syncSettings.label "Arventennoù &syncBrand.shortName.label;…">
+<!ENTITY fxa.menu.connectAnotherDevice.label "&syncedTabs.sidebar.connectAnotherDevice;">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "Kennaskañ un trevnad all…">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
+
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
      respectively before and after the domain requiring fullscreen.
@@ -229,6 +255,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "Kuitaat ar mod skramm a-bezh (Esc)">
 <!ENTITY leaveDOMFullScreen.label "Kuitaat ar mod skramm a-bezh">
 <!ENTITY leaveDOMFullScreen.accesskey "u">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.label "Skeudenn-ouzh-skeudenn">
+<!ENTITY pictureInPicture.accesskey "S">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -408,6 +440,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.label       "Gwellvezioù">
 <!ENTITY preferencesCmdUnix.accesskey     "l">
 
+<!ENTITY logins.label                           "Titouroù kennaskañ">
+
 <!ENTITY clearRecentHistory.label               "Skarzhañ ar roll istor nevesañ…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
@@ -437,6 +471,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.clearRecent.label "Skarzhañ ar roll istor nevesañ…">
 <!ENTITY appMenuHistory.restoreSession.label "Assav an estez kent">
 <!ENTITY appMenuHistory.viewSidebar.label "Gwelout barrenn gostez ar roll istor">
+<!ENTITY appMenuHistory.hideSidebar.label "Kuzhat barrenn gostez ar roll istor">
 <!ENTITY appMenuHistory.recentHistory.label "Roll istor nevesañ">
 <!ENTITY appMenuHelp.label "Skoazell">
 
@@ -465,6 +500,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Kennaskañ ouzh Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Ardeiñ an trevnadoù…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Gwelout barrenn-gostez an ivinelloù goubredet ">
+<!ENTITY appMenuRemoteTabs.hidesidebar.label "Kuzhat barrenn-gostez an ivinelloù goubredet ">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Kennaskañ un trevnad all">
 
 <!ENTITY appMenuRecentHighlights.label "Usskedoù nevez">
@@ -879,7 +915,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "N'ho peus roet aotre arbennik ebet d'al lec'hienn-mañ.">
 <!ENTITY identity.permissionsReloadHint "Ret eo deoc'h adkargañ ar bajenn evit arloañ ar c'hemmoù.">
 <!ENTITY identity.permissionsPreferences.tooltip "Digeriñ gwellvezioù an aotreoù">
-
 <!ENTITY identity.contentBlockingPreferences.tooltip "Digeriñ ar gwellvezioù stankadur endalc'had">
 
 
@@ -931,6 +966,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSignIn.label             "En em gennaskañ ouzh &syncBrand.shortName.label;">
 <!ENTITY syncSignIn.accesskey         "Y">
 <!ENTITY syncSyncNowItem.label        "Goubredañ bremañ">
+<!ENTITY syncSyncNowItemSyncing.label "O c'houbredañ...">
 <!ENTITY syncSyncNowItem.accesskey    "G">
 <!ENTITY syncReAuthItem.label         "En em adkennaskañ ouzh &syncBrand.shortName.label;…">
 <!ENTITY syncReAuthItem.accesskey     "a">
@@ -1073,6 +1109,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.acceptButton.accesskey "P">
 <!ENTITY updateAvailable.cancelButton.label "Diwezhatoc'h">
 <!ENTITY updateAvailable.cancelButton.accesskey "D">
+
 <!ENTITY updateAvailable.panelUI.label "Pellgargañ hizivadenn &brandShorterName;">
 
 <!ENTITY updateManual.message "Pellgargit un eilad nevez eus &brandShorterName; ha skoazellañ a raimp d'e staliañ.">
@@ -1133,9 +1170,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "Merit hoc'h askouezhioù en ur glikañ war <image class='addon-addon-icon'/> el lañser <image class='addon-toolbar-icon'/>.">
+<!ENTITY addonPostInstall.incognito.checkbox.label "Aotren an askouezh-mañ da vezañ lañset en ur prenestr merdeiñ prevez">
+<!ENTITY addonPostInstall.incognito.checkbox.accesskey "A">
 
-<!ENTITY addonPrivateBrowsing.header.label "Askouezhioù en ur prenestr prevez">
-<!ENTITY addonPrivateBrowsing.body.label "N'eo ket aotreet an askouezhioù da vont en-dro dre ziouer er prenestroù prevez.  Ne 'z aint ket en-dro en ur verdeiñ prevez ha n'hallint ket haeziñ hoc'h oberiantiz enlinenn. Gallout a rit aotren pep askouezh da vont en-dro er prenestroù prevez en arventennoù.">
+<!ENTITY addonPrivateBrowsing.header2.label "Cheñchamant evit an askouezhioù er merdeiñ prevez">
+<!ENTITY addonPrivateBrowsing.body2.label "Forzh pe askouezh nevez a ouzhpennit da &brandShorterName; a vo stanket er prenestroù prevez estreget mard aotreit anezho en arventennoù.">
+<!ENTITY addonPrivateBrowsing.learnMore.label "Deskit penaos merañ arventennoù an askouezhioù.">
 <!ENTITY addonPrivateBrowsing.okButton.label "Mat eo, komprenet am eus">
 <!ENTITY addonPrivateBrowsing.okButton.accesskey "M">
 <!ENTITY addonPrivateBrowsing.manageButton.label "Merañ an askouezhioù">

@@ -77,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = Última actualización
 detail-contributions-description = El programador de este complemento pide que lo ayuden a apoyar su desarrollo continuo a través de un pequeño aporte.
+detail-contributions-button = Contribuir
+    .title = Contribuir al desarrollo de este complemento
+    .accesskey = C
 detail-update-type =
     .value = Actualización automática
 detail-update-default =
@@ -90,7 +93,14 @@ detail-update-manual =
     .tooltiptext = No instalar actualizaciones automáticamente
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Ejecutar en ventanas privadas
-detail-private-browsing-description = Las extensiones funcionarán en las ventanas privadas, y tendrán acceso a tus actividades en línea. <label data-l10n-name="detail-private-browsing-learn-more">Aprender más</label>
+detail-private-browsing-description2 = Al permitirse, la extensión tendrá acceso a tus actividades en línea durante una navegación privada. <label data-l10n-name="detail-private-browsing-learn-more">Aprender más</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = No permitido en ventanas privadas
+detail-private-disallowed-description = Esta extensión no se ejecuta en navegación privada. <label data-l10n-name="detail-private-browsing-learn-more">Aprender más</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Requiere acceso a ventanas privadas
+detail-private-required-description = Esta extensión tiene acceso a tus actividades en línea durante la navegación privada. <label data-l10n-name="detail-private-browsing-learn-more"> Aprender más</label>
 detail-private-browsing-on =
     .label = Permitir
     .tooltiptext = Activar en navegación privada
@@ -139,7 +149,7 @@ legacy-warning-show-legacy = Mostrar extensiones heredadas
 legacy-extensions =
     .value = Extensiones heredadas
 legacy-extensions-description = Estas extensiones no cumplen con los estándares actuales de { -brand-short-name } por lo que han sido desactivadas. <label data-l10n-name="legacy-learn-more">Aprender más sobre los cambios a los complementos</label>
-private-browsing-description = Por defecto, las extensiones no tienen permitido ejecutarse en ventanas privadas. Esto significa que no funcionarán durante la navegación privada y no tendrán acceso a tus actividades en línea. Para permitir a una extensión ejecutarse en ventanas privadas, selecciona la tarjeta de extensiones a continuación y cambia tu ajuste. <label data-l10n-name="private-browsing-learn-more">Aprender más.</label>
+private-browsing-description2 = { -brand-short-name } está cambiando cómo las extensiones funcionan en la navegación privada. Cualquier extensión nueva que añadas a { -brand-short-name } no será ejecutada por defecto en ventanas privadas. Salvo que la permitas en los ajustes, la extensión no funcionará durante la navegación privada y no tendrá acceso a tus actividades en línea realizadas allí. Hemos realizado este cambio para mantener privada tu navegación privada. <label data-l10n-name="private-browsing-learn-more">Aprende cómo gestionar los ajustes de extensiones.</label>
 extensions-view-discover =
     .name = Obtener nuevos
     .tooltiptext = Obtener complementos
@@ -236,6 +246,10 @@ shortcuts-modifier-other = Incluye Ctrl o Alt
 shortcuts-invalid = Combinación inválida
 shortcuts-letter = Escribe una letra
 shortcuts-system = No se puede sobrescribir un atajo de { -brand-short-name }
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Ya en uso por { $addon }
 shortcuts-card-expand-button =
     { $numberToShow ->
         [one] Mostrar { $numberToShow } más
@@ -250,5 +264,23 @@ go-back-button =
 remove-addon-button = Remover
 disable-addon-button = Desactivar
 enable-addon-button = Activar
+expand-addon-button = Más opciones
 addons-enabled-heading = Activado
 addons-disabled-heading = Desactivado
+addon-detail-author-label = Autor
+addon-detail-version-label = Versión
+addon-detail-last-updated-label = Última actualización
+addon-detail-homepage-label = Página de inicio
+addon-detail-rating-label = Clasificación
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (desactivado)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } evaluación
+       *[other] { $numberOfReviews } evaluaciones
+    }

@@ -335,6 +335,9 @@ browsing-search-on-start-typing =
 browsing-cfr-recommendations =
     .label = Suosittele laajennuksia selaamisen yhteydessä
     .accesskey = S
+browsing-cfr-features =
+    .label = Suosittele ominaisuuksia selaamisen yhteydessä
+    .accesskey = u
 browsing-cfr-recommendations-learn-more = Lue lisää
 
 ## General Section - Proxy
@@ -443,7 +446,7 @@ containers-remove-button =
 
 sync-signedout-caption = Pidä oma selain aina mukanasi
 sync-signedout-description = Synkronoi kirjanmerkit, sivuhistoria, välilehdet, salasanat, lisäosat ja asetukset kaikilla laitteillasi.
-sync-signedout-account-title = Yhdistä { -fxaccount-brand-name }in
+sync-signedout-account-title = Yhdistä { -fxaccount-brand-name(case: "illative") }
 sync-signedout-account-create = Eikö sinulla ole tiliä? Aloitetaan
     .accesskey = E
 sync-signedout-account-signin =
@@ -527,6 +530,9 @@ sync-device-name-save =
     .accesskey = T
 sync-mobilepromo-single = Yhdistä toinen laite
 sync-mobilepromo-multi = Hallitse laitteita
+sync-connect-another-device = Yhdistä toinen laite
+sync-manage-devices = Hallitse laitteita
+sync-fxa-begin-pairing = Parita laite
 sync-tos-link = Käyttöehdot
 sync-fxa-privacy-notice = Tietosuojakäytäntö
 
@@ -654,6 +660,7 @@ addressbar-suggestions-settings = Muuta hakukoneiden ehdotusten asetuksia
 
 content-blocking-header = Sisällön esto
 content-blocking-description = Voit estää kolmannen osapuolen sisältöä, joka seuraa sinua ympäri verkkoa. Voit myös hallita, kuinka paljon tekemisiäsi verkossa tallennetaan ja jaetaan sivustojen välillä.
+content-blocking-section-description = Suojaa yksityisyyttäsi selatessasi. Estä näkymätön sisältö, joka seuraa vierailemiasi sivuja ja profiloi sinua. Jonkin tällaisen sisällön estäminen saattaa nopeuttaa sivujen latautumista.
 content-blocking-learn-more = Lue lisää
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -669,15 +676,24 @@ content-blocking-setting-custom =
 content-blocking-standard-description = Estää tunnetut seuraimet vain yksityisissä ikkunoissa.
 content-blocking-standard-desc = Tasapuolinen suojauksen ja suorituskyvyn välillä. Sallii jotkin seuraimet, jotta verkkosivustot toimivat.
 content-blocking-strict-desc = Estää kaikki { -brand-short-name }in havaitsemat seuraimet. Voi aiheuttaa joidenkin sivustojen toimimattomuutta.
+content-blocking-strict-description = Vahvempi suoja. Saattaa aiheuttaa joidenkin sivustojen toimimattomuutta.
 content-blocking-custom-desc = Valitse, mitä estetään.
 content-blocking-private-trackers = Tunnetut seuraimet vain yksityisissä ikkunoissa
 content-blocking-third-party-cookies = Kolmannen osapuolen seurainevästeet
+content-blocking-all-cookies = Kaikki evästeet
+content-blocking-unvisited-cookies = Evästeet sivustoilta, joilla ei ole käyty
 content-blocking-all-windows-trackers = Tunnetut seuraimet kaikissa ikkunoissa
 content-blocking-all-third-party-cookies = Kaikki kolmannen osapuolen evästeet
+content-blocking-cryptominers = Kryptolouhijat
+content-blocking-fingerprinters = Yksilöijät
 content-blocking-warning-title = Huomio!
 content-blocking-warning-desc = Evästeiden ja seuraimien estäminen voi aiheuttaa joidenkin sivustojen toimimattomuutta. Esto on helppo poistaa sivustoilta, joihin luotat.
-content-blocking-warning-description = Sisällön estäminen voi aiheuttaa joidenkin sivustojen rikkoutumisen. Voit helposti poistaa eston luottamiltasi sivustoilta.
+content-blocking-warning-description = Sisällön estäminen voi aiheuttaa joidenkin sivustojen toimimattomuutta. Voit poistaa eston luottamiltasi sivustoilta.
 content-blocking-learn-how = Lue miten
+content-blocking-reload-description = Kaikki välilehdet tarvitsee päivittää, jotta muutokset tulevat voimaan.
+content-blocking-reload-tabs-button =
+    .label = Päivitä kaikki välilehdet
+    .accesskey = P
 content-blocking-trackers-label =
     .label = Seuraimet
     .accesskey = S
@@ -691,6 +707,17 @@ content-blocking-tracking-protection-change-block-list = Muuta estolistaa
 content-blocking-cookies-label =
     .label = Evästeet
     .accesskey = E
+content-blocking-expand-section =
+    .tooltiptext = Lisätietoja
+# Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
+content-blocking-cryptominers-label =
+    .label = Kryptolouhijat
+    .accesskey = y
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+content-blocking-fingerprinters-label =
+    .label = Yksilöijät
+    .accesskey = s
 
 ## Privacy Section - Tracking
 
@@ -721,23 +748,12 @@ permissions-notification-link = Lue lisää
 permissions-notification-pause =
     .label = Älä näytä ilmoituksia ennen kuin { -brand-short-name } uudelleenkäynnistetään
     .accesskey = k
-permissions-block-autoplay-media =
-    .label = Estä sivustot toistamasta äänellistä mediaa automaattisesti
-    .accesskey = E
-permissions-block-autoplay-media-menu = Äänen automaattinen toisto
 permissions-block-autoplay-media2 =
     .label = Estä sivustoja toistamasta ääntä automaattisesti
     .accesskey = E
 permissions-block-autoplay-media-exceptions =
     .label = Poikkeukset…
     .accesskey = P
-autoplay-option-ask =
-    .label = Kysy aina
-autoplay-option-allow =
-    .label = Salli automaattinen toisto
-autoplay-option-dont =
-    .label = Älä salli automaattista toistoa
-permissions-autoplay-link = Lue lisää
 permissions-block-popups =
     .label = Estä ponnahdusikkunat
     .accesskey = E
@@ -773,10 +789,6 @@ addon-recommendations-link = Lue lisää
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Tietojen kerääminen ei ole käytössä tässä koostamiskokoonpanossa
-collection-browser-errors =
-    .label = Salli, että { -brand-short-name } lähettää selaimen virheraportit (virheilmoitukset mukaan lukien) { -vendor-short-name }lle
-    .accesskey = v
-collection-browser-errors-link = Lue lisää
 collection-backlogged-crash-reports =
     .label = Salli, että { -brand-short-name } lähettää lähettämättömät kaatumisilmoitukset puolestasi
     .accesskey = e

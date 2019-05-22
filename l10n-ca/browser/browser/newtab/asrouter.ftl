@@ -3,12 +3,15 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 cfr-doorhanger-extension-heading = Extensió recomanada
+cfr-doorhanger-pintab-heading = Proveu això: Fixa la pestanya
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Per què veig això?
 cfr-doorhanger-extension-cancel-button = Ara no
     .accesskey = n
 cfr-doorhanger-extension-ok-button = Afegeix-la ara
     .accesskey = A
+cfr-doorhanger-pintab-ok-button = Fixa aquesta pestanya
+    .accesskey = F
 cfr-doorhanger-extension-manage-settings-button = Gestiona els paràmetres de recomanacions
     .accesskey = G
 cfr-doorhanger-extension-never-show-recommendation = No em mostris aquesta recomanació
@@ -41,3 +44,12 @@ cfr-doorhanger-extension-total-users =
         [one] { $total } usuari
        *[other] { $total } usuaris
     }
+cfr-doorhanger-pintab-description = Accediu fàcilment als llocs més utilitzats. Manteniu els llocs oberts en una pestanya (fins i tot quan reinicieu).
+
+## These messages are steps on how to use the feature and are shown together.
+
+cfr-doorhanger-pintab-step1 = <b>Feu clic amb el botó dret</b> a la pestanya que voleu fixar.
+cfr-doorhanger-pintab-step2 = Trieu <b>Fixa la pestanya</b> al menú.
+cfr-doorhanger-pintab-step3 = Si el contingut del lloc s'actualitza, veureu un punt blau a la pestanya fixa.
+cfr-doorhanger-pintab-animation-pause = Pausa
+cfr-doorhanger-pintab-animation-resume = Reprèn

@@ -4,10 +4,13 @@
 
 <!ENTITY firstrun_panel_title_welcome "Chào mừng">
 <!ENTITY firstrun_urlbar_message2 "Cảm ơn bạn đã chọn &brandShortName;">
+<!ENTITY newfirstrun_urlbar_message "Chào mừng đến với &brandShortName;">
 <!ENTITY firstrun_urlbar_subtext2 "Một trình duyệt di động hiện đại từ Mozilla, chúng tôi cam kết mang đến một trang web tự do và mở.">
+<!ENTITY newfirstrun_urlbar_subtext "Nhanh chóng, riêng tư, và về phía bạn.">
 <!ENTITY firstrun_panel_title_privacy "Riêng tư">
 <!ENTITY firstrun_privacy_message "Duyệt web không để lại dấu vết">
 <!ENTITY firstrun_privacy_subtext "Duyệt web riêng tư với trình chống theo dõi sẽ ngăn chặn các trình theo dõi trong khi bạn duyệt web và sẽ không ghi nhớ lịch sử duyệt web của bạn.">
+<!ENTITY newfirstrun_privacy_subtext "Trình duyệt riêng tư chặn trình theo dõi quảng cáo theo bạn trực tuyến.">
 <!ENTITY firstrun_panel_title_customize "Tùy chỉnh">
 <!ENTITY firstrun_customize_message "Tạo ra &brandShortName; theo cách của riêng bạn.">
 <!ENTITY firstrun_customize_subtext "Tùy chỉnh &brandShortName; với các tiện ích. Chặn quảng cáo, thêm các tính năng, hoặc chọn một diện mạo mới để phản ánh cá tính của bạn.">
@@ -20,8 +23,10 @@
 <!ENTITY firstrun_sync_title "Đồng bộ hóa">
 <!ENTITY firstrun_sync_message2 "Tiếp tục trang mà bạn vừa rời khỏi.">
 <!ENTITY firstrun_sync_subtext2 "Sử dụng đồng bộ hóa để tìm trang đánh dấu, mật khẩu và những thứ bạn lưu vào &brandShortName; trên tất cả các thiết bị của bạn.">
+<!ENTITY newfirstrun_sync_subtext "Đồng bộ hóa những thứ bạn lưu trên thiết bị di động với Firefox cho máy tính để bàn, riêng tư và an toàn.">
 <!ENTITY firstrun_signin_message "Thiết lập kết nối và bắt đầu">
 <!ENTITY firstrun_signin_button "Đăng nhập để đồng bộ">
+<!ENTITY newfirstrun_signin_button "Bật đồng bộ hóa">
 <!ENTITY  onboard_start_button_browser "Bắt đầu duyệt web">
 <!ENTITY firstrun_button_notnow "Không phải lúc này">
 <!ENTITY firstrun_button_next "Tiếp">
@@ -63,6 +68,12 @@
 <!ENTITY  crash_restart_label "Khởi động lại &brandShortName;">
 
 <!ENTITY url_bar_default_text2 "Tìm kiếm hoặc nhập địa chỉ">
+
+<!-- Localization note: this text will be displayed in the Search Widget -->
+<!ENTITY search_widget_default_text "Tìm kiếm trên mạng">
+<!ENTITY search_widget_default_cropped_text "Tìm kiếm">
+<!ENTITY search_widget_logo_description "Tìm kiếm trên mạng với &brandShortName;">
+
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
      icon in the url bar. -->
@@ -193,9 +204,9 @@
 <!ENTITY pref_learn_more "Tìm hiểu thêm">
 <!ENTITY pref_category_installed_search_engines "Công cụ tìm kiếm đã được cài đặt">
 <!ENTITY pref_category_add_search_providers "Thêm nhiều công cụ tìm kiếm">
-<!ENTITY pref_category_search_restore_defaults "Phục hồi công cụ tìm kiếm">
-<!ENTITY pref_search_restore_defaults "Phục hồi mặc định">
-<!ENTITY pref_search_restore_defaults_summary "Phục hồi mặc định">
+<!ENTITY pref_category_search_restore_defaults "Khôi phục công cụ tìm kiếm">
+<!ENTITY pref_search_restore_defaults "Khôi phục về mặc định">
+<!ENTITY pref_search_restore_defaults_summary "Khôi phục về mặc định">
 <!-- Localization note (pref_search_hint) : "TIP" as in "hint", "clue" etc. Displayed as an
      advisory message on the customise search providers settings page explaining how to add new
      search providers.
@@ -335,6 +346,9 @@
 <!-- Localization note (tab_queue_prompt_settings_button): This button is shown if the user needs to
      enable a permission in Android's setting in order to enable tab queues. -->
 <!ENTITY tab_queue_prompt_settings_button "Vào phần cài đặt">
+<!-- Localization note (tab_queue_notification_prompt): This is the text of the default notification
+shown from Android O while a tab is being queued.-->
+<!ENTITY tab_queue_notification_prompt "Thêm thẻ mới vào hàng đợi&#8230;">
 <!ENTITY tab_queue_notification_title "&brandShortName;">
 <!-- Localization note (tab_queue_notification_text_plural2) : The
      formatD is replaced with the number of tabs queued.  The
@@ -393,7 +407,6 @@
 <!ENTITY pref_private_data_searchHistory "Lịch sử tìm kiếm">
 <!ENTITY pref_private_data_formdata2 "Lịch sử biểu mẫu">
 <!ENTITY pref_private_data_cookies2 "Cookie và phiên đăng nhập đang hoạt động">
-<!ENTITY pref_private_data_passwords2 "Phiên đăng nhập đã lưu">
 <!ENTITY pref_private_data_cache "Bộ nhớ đệm">
 <!ENTITY pref_private_data_offlineApps "Dữ liệu trang web ngoại tuyến">
 <!ENTITY pref_private_data_siteSettings2 "Cài đặt trang">
@@ -401,6 +414,12 @@
 <!ENTITY pref_private_data_syncedTabs "Các thẻ đã đồng bộ">
 
 <!ENTITY pref_default_browser "Đặt trình duyệt làm mặc định">
+
+<!ENTITY pref_default_browser2 "Đặt &brandShortName; làm trình duyệt mặc định của bạn">
+<!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
+    Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
+    and instruct users to tap on the "Browser app" option on that settings screen to choose a default browser app. -->
+<!ENTITY default_browser_system_settings_toast "Nhấn vào ứng dụng Trình duyệt &amp; chọn &brandShortName;">
 <!ENTITY pref_default_browser_mozilla_support_tablet "Tới trang hỗ trợ của Mozilla">
 <!ENTITY pref_about_firefox "Giới thiệu &brandShortName;">
 <!ENTITY pref_vendor_faqs "Câu hỏi thường gặp">
@@ -495,6 +514,10 @@
 <!ENTITY find_prev "Trước">
 <!ENTITY find_next "Tiếp theo">
 <!ENTITY find_close "Đóng">
+
+<!-- Localization note (find_error) : Error message shown when there is no result for the
+     searched for text in this webpage -->
+<!ENTITY find_error "Không tìm thấy cụm từ này">
 
 <!-- Localization note (media_sending_to, media_play, media_pause, media_stop) : These strings are used
      as alternate text for accessibility. They are not visible in the UI. -->
@@ -848,7 +871,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 
 <!ENTITY activity_stream_topsites "Các trang vào nhiều nhất">
 <!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->
-<!ENTITY activity_stream_topstories "Khuyên dùng bởi &brandPocket;">
+<!ENTITY activity_stream_topstories "Được đề xuất bởi &brandPocket;">
 <!ENTITY activity_stream_highlights "Nổi bật">
 
 <!-- LOCALIZATION NOTE (activity_stream_link_more1): Link-like text displayed to take user to a website with more content from Pocket. -->
@@ -895,6 +918,7 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_title "Tạm dừng">
 <!ENTITY pip_pause_button_description "Tạm dừng phát">
 
+<!ENTITY pref_notification_settings_link "Quản lý cài đặt thông báo">
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "Trình duyệt">
 <!ENTITY mls_notification_channel "&vendorShortName; Dịch vụ vị trí">

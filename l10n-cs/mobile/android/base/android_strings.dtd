@@ -4,10 +4,13 @@
 
 <!ENTITY firstrun_panel_title_welcome "Vítejte">
 <!ENTITY firstrun_urlbar_message2 "Děkujeme, že jste si zvolili &brandShortName;">
+<!ENTITY newfirstrun_urlbar_message "Vítá vás &brandShortName;">
 <!ENTITY firstrun_urlbar_subtext2 "Moderní mobilní prohlížeč od Mozilly, neziskové organizace zaměřené na otevřený web.">
+<!ENTITY newfirstrun_urlbar_subtext "Rychlý, soukromý a vždy na vaší straně.">
 <!ENTITY firstrun_panel_title_privacy "Soukromí">
 <!ENTITY firstrun_privacy_message "Prohlížejte web, jako když se nikdo nedívá">
 <!ENTITY firstrun_privacy_subtext "Anonymní prohlížení s funkcí Ochrana proti sledování blokuje sledovací prvky, zatímco prohlížíte web, a nebude si pamatovat vaši historii.">
+<!ENTITY newfirstrun_privacy_subtext "Anonymní prohlížení blokuje sledující reklamy, které sledují vaše chování na internetu.">
 <!ENTITY firstrun_panel_title_customize "Přizpůsobení">
 <!ENTITY firstrun_customize_message "Udělejte si aplikaci &brandShortName; podle sebe.">
 <!ENTITY firstrun_customize_subtext "Přizpůsobte si aplikaci &brandShortName; s doplňky. Blokujte reklamy, přidávejte funkce, nebo si vyberte nový vzhled, který bude odrazem vaší osobnosti.">
@@ -20,8 +23,10 @@
 <!ENTITY firstrun_sync_title "Synchronizace">
 <!ENTITY firstrun_sync_message2 "Pokračujte tam, kde jste skončili.">
 <!ENTITY firstrun_sync_subtext2 "Používejte Sync k nalezení záložek, hesel a dalších věcí uložených v aplikaci &brandShortName; na všech vašich zařízeních.">
+<!ENTITY newfirstrun_sync_subtext "Synchronizujte věci, které ukládáte na mobilu, s Firefoxem pro počítač – soukromě a bezpečně.">
 <!ENTITY firstrun_signin_message "Připojte se a začněte">
 <!ENTITY firstrun_signin_button "Přihlásit se ke službě Sync">
+<!ENTITY newfirstrun_signin_button "Zapnout synchronizaci">
 <!ENTITY  onboard_start_button_browser "Začít prohlížet">
 <!ENTITY firstrun_button_notnow "Nyní ne">
 <!ENTITY firstrun_button_next "Další">
@@ -63,6 +68,12 @@
 <!ENTITY  crash_restart_label "Restartovat &brandShortName;">
 
 <!ENTITY url_bar_default_text2 "Zadejte adresu nebo dotaz pro vyhledávač">
+
+<!-- Localization note: this text will be displayed in the Search Widget -->
+<!ENTITY search_widget_default_text "Vyhledat na webu">
+<!ENTITY search_widget_default_cropped_text "Vyhledat">
+<!ENTITY search_widget_logo_description "Vyhledávání na webu s aplikací &brandShortName;">
+
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
      icon in the url bar. -->
@@ -290,11 +301,6 @@
 <!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
      Similar to the already existing "pref_whats_new_notification_summary"-->
 <!ENTITY pref_feature_tips_notification_summary "Zjistěte více o používání aplikace &brandShortName; a dalších produktech společnosti &vendorShortName;">
-<!-- Localization note (pref_feature_tips_notification_enabling_hint):
-     Describe the action the user should do to enable this preference
-     Will be used in the context "<Turn on> ... to enable this feature" -->
-<!ENTITY pref_feature_tips_notification_enabling_hint "Zapnout">
-
 <!-- Localization note (pref_feature_tips_notification_enabling_path):
      Nothing to translate. Simple concatenation of already localized strings. Result is used below. -->
 <!ENTITY pref_feature_tips_notification_enabling_path "&pref_category_privacy_short; > &pref_category_datareporting; > &datareporting_fhr_title;">
@@ -340,6 +346,9 @@
 <!-- Localization note (tab_queue_prompt_settings_button): This button is shown if the user needs to
      enable a permission in Android's setting in order to enable tab queues. -->
 <!ENTITY tab_queue_prompt_settings_button "Přejít do Nastavení">
+<!-- Localization note (tab_queue_notification_prompt): This is the text of the default notification
+shown from Android O while a tab is being queued.-->
+<!ENTITY tab_queue_notification_prompt "Do fronty je přidáván nový panel&#8230;">
 <!ENTITY tab_queue_notification_title "&brandShortName;">
 <!-- Localization note (tab_queue_notification_text_plural2) : The
      formatD is replaced with the number of tabs queued.  The
@@ -398,7 +407,6 @@
 <!ENTITY pref_private_data_searchHistory "Historie vyhledávání">
 <!ENTITY pref_private_data_formdata2 "Historie formulářů">
 <!ENTITY pref_private_data_cookies2 "Cookies a aktivní přihlášení">
-<!ENTITY pref_private_data_passwords2 "Uložené přihlašovací údaje">
 <!ENTITY pref_private_data_cache "Mezipaměť">
 <!ENTITY pref_private_data_offlineApps "Offline data">
 <!ENTITY pref_private_data_siteSettings2 "Nastavení serveru">
@@ -406,6 +414,12 @@
 <!ENTITY pref_private_data_syncedTabs "Synchronizované panely">
 
 <!ENTITY pref_default_browser "Nastavit jako výchozí prohlížeč">
+
+<!ENTITY pref_default_browser2 "Použít aplikaci &brandShortName; jako výchozí prohlížeč">
+<!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
+    Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
+    and instruct users to tap on the "Browser app" option on that settings screen to choose a default browser app. -->
+<!ENTITY default_browser_system_settings_toast "Klepněte na „Prohlížeč“ a vyberte &brandShortName;">
 <!ENTITY pref_default_browser_mozilla_support_tablet "Navštivte nápovědu">
 <!ENTITY pref_about_firefox "O aplikaci &brandShortName;">
 <!ENTITY pref_vendor_faqs "Časté otázky">
@@ -500,6 +514,10 @@
 <!ENTITY find_prev "Předchozí">
 <!ENTITY find_next "Další">
 <!ENTITY find_close "Zavřít">
+
+<!-- Localization note (find_error) : Error message shown when there is no result for the
+     searched for text in this webpage -->
+<!ENTITY find_error "Hledaný text nenalezen">
 
 <!-- Localization note (media_sending_to, media_play, media_pause, media_stop) : These strings are used
      as alternate text for accessibility. They are not visible in the UI. -->
@@ -901,15 +919,9 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_description "Pozastavit přehrávání">
 
 <!-- Notification channels names -->
-<!ENTITY default_notification_channel "&brandShortName;">
-
-<!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "Prohlížeč">
 <!ENTITY mls_notification_channel "Geolokační služba &vendorShortName;">
 <!ENTITY download_notification_channel "Stahování">
-<!ENTITY media_notification_channel "Přehrávání médií">
-<!-- These push notifications come without a specific channel and/or name from Leanplum -->
-<!ENTITY leanplum_default_notifications_channel "Oznámení z aplikace &brandShortName;">
 <!ENTITY media_notification_channel2 "Zvuk a video">
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
 <!ENTITY leanplum_default_notifications_channel2 "Tipy pro &vendorShortName;">

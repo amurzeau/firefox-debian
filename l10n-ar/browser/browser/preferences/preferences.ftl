@@ -341,6 +341,9 @@ browsing-search-on-start-typing =
 browsing-cfr-recommendations =
     .label = امتدادات موصى بها وأنت تتصفّح
     .accesskey = ص
+browsing-cfr-features =
+    .label = مزايا مستحسنة وأنت تتصفّح أرجاء الوِب
+    .accesskey = س
 browsing-cfr-recommendations-learn-more = اطّلع على المزيد
 
 ## General Section - Proxy
@@ -533,6 +536,9 @@ sync-device-name-save =
     .accesskey = ح
 sync-mobilepromo-single = أوصِل جهازا آخر
 sync-mobilepromo-multi = أدِر الأجهزة
+sync-connect-another-device = صِلْ جهازا آخر
+sync-manage-devices = أدِر الأجهزة
+sync-fxa-begin-pairing = اقرن أحد أجهزتك
 sync-tos-link = بنود الخدمة
 sync-fxa-privacy-notice = تنويه الخصوصية
 
@@ -660,6 +666,7 @@ addressbar-suggestions-settings = غيّر تفضيلات اقتراحات مح�
 
 content-blocking-header = حجب المحتوى
 content-blocking-description = احجب المحتوى من الأطراف الثالثة والذي يتعقّبك في أرجاء الوِب. تحكّم بمقدار نشاطك الشبكي الذي يُخزّن ويُشارك بين المواقع.
+content-blocking-section-description = احمِ خصوصيتك وأنت تتصفح الوِب بحجب المحتوى الذي يتعقّب المواقع التي تزورها دون أن تعلم، كما ويسجّلها باسمك. يمكنك بحجب جزء من هذا المحتوى تحميل الصفحات بسرعة أكبر.
 content-blocking-learn-more = اطّلع على المزيد
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -675,14 +682,24 @@ content-blocking-setting-custom =
 content-blocking-standard-description = احجب المتعقّبات المعروفة في النوافذ الخاصة فقط.
 content-blocking-standard-desc = الموازنة بين الحماية والأداء. يتيح عمل بعض المتعقّبات لتعمل المواقع كما ينبغي.
 content-blocking-strict-desc = يحجب كل المتعقّبات التي يكتشفها { -brand-short-name }. قد يتسبّب بعطب بعض المواقع.
+content-blocking-strict-description = حماية أقوى وأعتى، لكنها قد تعطب بعض المواقع.
 content-blocking-custom-desc = اختر ما تريد حجبه.
 content-blocking-private-trackers = المتعقّبات المعروفة فقط في النوافذ الخاصة
 content-blocking-third-party-cookies = الكعكات التعقّبية من الأطراف الثالثة
+content-blocking-all-cookies = كل الكعكات
+content-blocking-unvisited-cookies = الكعكات من المواقع غير المُزارة
 content-blocking-all-windows-trackers = المتعقّبات المعروفة في كل النوافذ
 content-blocking-all-third-party-cookies = كل الكعكات من الأطراف الثالثة
+content-blocking-cryptominers = المُعدّنات المعمّاة
+content-blocking-fingerprinters = مسجّلات البصمات
 content-blocking-warning-title = كُن على علم!
 content-blocking-warning-desc = حجب الكعكات والمتعقّبات قد يتسبّب بعطب بعض المواقع. من السهل تعطيل الحجب في المواقع التي تثق بها.
+content-blocking-warning-description = يمكن أن تعطب بعض المواقع إن حُجب المحتوى. يمكنك بسهولة إلغاء أي نوع حجب للمواقع التي تثق بها.
 content-blocking-learn-how = اطّلع على الطريقة
+content-blocking-reload-description = عليك إعادة تحميل الألسنة لتأخذ هذه التغييرات مفعولها.
+content-blocking-reload-tabs-button =
+    .label = أعِد تحميل كل الألسنة
+    .accesskey = ع
 content-blocking-trackers-label =
     .label = المتعقّبات
     .accesskey = ق
@@ -696,6 +713,17 @@ content-blocking-tracking-protection-change-block-list = غيّر قائمة ا�
 content-blocking-cookies-label =
     .label = الكعكات
     .accesskey = ك
+content-blocking-expand-section =
+    .tooltiptext = معلومات أكثر
+# Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
+content-blocking-cryptominers-label =
+    .label = المُعدّنات المعمّاة
+    .accesskey = ن
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+content-blocking-fingerprinters-label =
+    .label = مسجّلات البصمات
+    .accesskey = ص
 
 ## Privacy Section - Tracking
 
@@ -726,23 +754,12 @@ permissions-notification-link = اطّلع على المزيد
 permissions-notification-pause =
     .label = ألبِث التنبيهات حتى يُعاد تشغيل { -brand-short-name }
     .accesskey = ث
-permissions-block-autoplay-media =
-    .label = امنع المواقع من تشغيل الوسائط التي تحتوي صوتا تلقائيا
-    .accesskey = م
-permissions-block-autoplay-media-menu = عند فتحي مواقع تُشغّل الصوت تلقائيا
 permissions-block-autoplay-media2 =
     .label = امنع المواقع من تشغيل الصوت تلقائيا
     .accesskey = م
 permissions-block-autoplay-media-exceptions =
     .label = الاستثناءات…
     .accesskey = س
-autoplay-option-ask =
-    .label = اسألني دائما
-autoplay-option-allow =
-    .label = اسمح بالتشغيل التلقائي
-autoplay-option-dont =
-    .label = امنع التشغيل التلقائي
-permissions-autoplay-link = اطّلع على المزيد
 permissions-block-popups =
     .label = احجب النوافذ المنبثقة
     .accesskey = ذ
@@ -778,10 +795,6 @@ addon-recommendations-link = اطّلع على المزيد
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = الإبلاغ عن البيانات معطّل في إعدادات البناء
-collection-browser-errors =
-    .label = اسمح بأن يُرسل { -brand-short-name } تقارير بأخطاء المتصفح (بما في ذلك رسائل الأخطاء) إلى { -vendor-short-name }.
-    .accesskey = خ
-collection-browser-errors-link = اطّلع على المزيد
 collection-backlogged-crash-reports =
     .label = اسمح بأن يُرسل { -brand-short-name } بلاغات الانهيار المعلقة نيابة عنك
     .accesskey = ع

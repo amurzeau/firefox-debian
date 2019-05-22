@@ -3,12 +3,15 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 cfr-doorhanger-extension-heading = Препоручене екстензије
+cfr-doorhanger-pintab-heading = Пробајте ово: закачи језичак
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Зашто видим ово
 cfr-doorhanger-extension-cancel-button = Не сада
     .accesskey = Н
 cfr-doorhanger-extension-ok-button = Додај сада
     .accesskey = Д
+cfr-doorhanger-pintab-ok-button = Закачи овај језичак
+    .accesskey = З
 cfr-doorhanger-extension-manage-settings-button = Управљај препорукама
     .accesskey = У
 cfr-doorhanger-extension-never-show-recommendation = Не приказуј ми ову препоруку
@@ -43,3 +46,12 @@ cfr-doorhanger-extension-total-users =
         [few] { $total } корисника
        *[other] { $total } корисника
     }
+cfr-doorhanger-pintab-description = Имајте брз приступ сајтовима које најчешће користите. Оставите сајтове отвореним у језичку (чак и након поновног покретања).
+
+## These messages are steps on how to use the feature and are shown together.
+
+cfr-doorhanger-pintab-step1 = Кликните <b>десним кликом</b> на језичак који желите закачити.
+cfr-doorhanger-pintab-step2 = Изаберите <b>„Закачи језичак“</b> опцију из менија.
+cfr-doorhanger-pintab-step3 = Уколико има новости на сајту, видећете плаву тачку на вашем закаченом језичку.
+cfr-doorhanger-pintab-animation-pause = Заустави
+cfr-doorhanger-pintab-animation-resume = Настави

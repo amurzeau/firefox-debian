@@ -4,10 +4,13 @@
 
 <!ENTITY firstrun_panel_title_welcome "Καλώς ήλθατε">
 <!ENTITY firstrun_urlbar_message2 "Ευχαριστούμε που επιλέξατε το &brandShortName;">
+<!ENTITY newfirstrun_urlbar_message "Καλώς ορίσατε στο &brandShortName;">
 <!ENTITY firstrun_urlbar_subtext2 "Ένα σύγχρονο πρόγραμμα περιήγησης για κινητά από τη Mozilla, τον μη κερδοσκοπικό οργανισμό, που έχει αφοσιωθεί σε ένα ελεύθερο και ανοικτό διαδίκτυο.">
+<!ENTITY newfirstrun_urlbar_subtext "Γρήγορο, ιδιωτικό και στο πλευρό σας.">
 <!ENTITY firstrun_panel_title_privacy "Απόρρητο">
 <!ENTITY firstrun_privacy_message "Περιηγηθείτε σαν να μην βλέπει κανείς">
 <!ENTITY firstrun_privacy_subtext "Η ιδιωτική περιήγηση με προστασία από καταγραφή αποκλείει ιχνηλάτες ενώ περιηγείστε και θα διαγράψει το ιστορικό σας όταν τελειώσετε με την περιήγηση.">
+<!ENTITY newfirstrun_privacy_subtext "Η ιδιωτική περιήγηση αποκλείει ιχνηλάτες διαφήμισης που σάς ακολουθούν στο διαδίκτυο.">
 <!ENTITY firstrun_panel_title_customize "Προσαρμογή">
 <!ENTITY firstrun_customize_message "Κάντε το &brandShortName; δικό σας.">
 <!ENTITY firstrun_customize_subtext "Προσαρμόστε το &brandShortName; με πρόσθετα. Αποκλείστε διαφημίσεις, προσθέστε λειτουργίες ή επιλέξτε ένα νέο θέμα για να αναδείξετε την προσωπικότητά σας.">
@@ -20,8 +23,10 @@
 <!ENTITY firstrun_sync_title "Sync">
 <!ENTITY firstrun_sync_message2 "Συνεχίστε από εκεί που σταματήσατε.">
 <!ENTITY firstrun_sync_subtext2 "Χρησιμοποιήστε το Sync για να βρείτε τους σελιδοδείκτες, τους κωδικούς πρόσβασης και άλλα στοιχεία που αποθηκεύετε στο &brandShortName;, σε όλες σας τις συσκευές.">
+<!ENTITY newfirstrun_sync_subtext "Συγχρονίστε τα δεδομένα που αποθηκεύετε στο κινητό με το Firefox για υπολογιστές, με ασφάλεια και απόρρητο.">
 <!ENTITY firstrun_signin_message "Συνδεθείτε και ξεκινήστε">
 <!ENTITY firstrun_signin_button "Είσοδος στο Sync">
+<!ENTITY newfirstrun_signin_button "Ενεργοποίηση Sync">
 <!ENTITY  onboard_start_button_browser "Έναρξη περιήγησης">
 <!ENTITY firstrun_button_notnow "Όχι τώρα">
 <!ENTITY firstrun_button_next "Επόμενο">
@@ -63,6 +68,12 @@
 <!ENTITY  crash_restart_label "Επανεκκίνηση του &brandShortName;">
 
 <!ENTITY url_bar_default_text2 "Αναζήτηση ή εισαγωγή διεύθυνσης">
+
+<!-- Localization note: this text will be displayed in the Search Widget -->
+<!ENTITY search_widget_default_text "Αναζήτηση στον ιστό">
+<!ENTITY search_widget_default_cropped_text "Αναζήτηση">
+<!ENTITY search_widget_logo_description "Αναζήτηση στον ιστό με το &brandShortName;">
+
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
      icon in the url bar. -->
@@ -290,12 +301,6 @@
 <!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
      Similar to the already existing "pref_whats_new_notification_summary"-->
 <!ENTITY pref_feature_tips_notification_summary "Μάθετε περισσότερα σχετικά με τη χρήση του &brandShortName; και άλλων προϊόντων της &vendorShortName;">
-
-<!-- Localization note (pref_feature_tips_notification_enabling_hint):
-     Describe the action the user should do to enable this preference
-     Will be used in the context "<Turn on> ... to enable this feature" -->
-<!ENTITY pref_feature_tips_notification_enabling_hint "Ενεργοποίηση">
-
 <!-- Localization note (pref_feature_tips_notification_enabling_path):
      Nothing to translate. Simple concatenation of already localized strings. Result is used below. -->
 <!ENTITY pref_feature_tips_notification_enabling_path "&pref_category_privacy_short; > &pref_category_datareporting; > &datareporting_fhr_title;">
@@ -341,6 +346,9 @@
 <!-- Localization note (tab_queue_prompt_settings_button): This button is shown if the user needs to
      enable a permission in Android's setting in order to enable tab queues. -->
 <!ENTITY tab_queue_prompt_settings_button "Μεταβείτε στις Ρυθμίσεις">
+<!-- Localization note (tab_queue_notification_prompt): This is the text of the default notification
+shown from Android O while a tab is being queued.-->
+<!ENTITY tab_queue_notification_prompt "Προσθήκη νέας καρτέλας στην ουρά&#8230;">
 <!ENTITY tab_queue_notification_title "&brandShortName;">
 <!-- Localization note (tab_queue_notification_text_plural2) : The
      formatD is replaced with the number of tabs queued.  The
@@ -379,10 +387,10 @@
 <!ENTITY pref_media_autoplay_block "Φραγή αυτόμ. αναπαραγωγής">
 <!ENTITY pref_zoom_force_enabled "Ενεργοποίηση μεγέθυνσης πάντα">
 <!ENTITY pref_zoom_force_enabled_summary "Εξαναγκασμός δυνατότητας μεγέθυνσης σε κάθε σελίδα">
-<!ENTITY pref_voice_input "Φωνητική εισαγωγή">
-<!ENTITY pref_voice_input_summary2 "Να επιτρέπεται η υπαγόρευση στη μπάρα διευθύνσεων">
+<!ENTITY pref_voice_input "Φωνητική είσοδος">
+<!ENTITY pref_voice_input_summary2 "Να επιτρέπεται η υπαγόρευση στη γραμμή URL">
 <!ENTITY pref_qrcode_enabled "Αναγνώστης κωδικών QR">
-<!ENTITY pref_qrcode_enabled_summary2 "Να επιτρέπεται η χρήση του αναγνώστη κωδικών QR στη μπάρα διευθύνσεων">
+<!ENTITY pref_qrcode_enabled_summary2 "Να επιτρέπεται η σάρωση QR στη γραμμή URL">
 
 <!ENTITY pref_use_master_password "Χρήση ενός κύριου κωδικού">
 <!ENTITY pref_sync_default_title "Λογαριασμός Firefox">
@@ -399,7 +407,6 @@
 <!ENTITY pref_private_data_searchHistory "Ιστορικό αναζήτησης">
 <!ENTITY pref_private_data_formdata2 "Ιστορικό φορμών">
 <!ENTITY pref_private_data_cookies2 "Cookies &amp; ενεργές συνδέσεις">
-<!ENTITY pref_private_data_passwords2 "Αποθηκευμένα στοιχεία σύνδεσης">
 <!ENTITY pref_private_data_cache "Προσωρινή μνήμη">
 <!ENTITY pref_private_data_offlineApps "Δεδομένα ιστοσελίδων για εργασία χωρίς σύνδεση">
 <!ENTITY pref_private_data_siteSettings2 "Ρυθμίσεις ιστοσελίδων">
@@ -407,6 +414,12 @@
 <!ENTITY pref_private_data_syncedTabs "Συγχρονισμένες καρτέλες">
 
 <!ENTITY pref_default_browser "Ορισμός ως προεπιλεγμένο πρόγραμμα περιήγησης">
+
+<!ENTITY pref_default_browser2 "Ορισμός του &brandShortName; ως προεπιλογής">
+<!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
+    Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
+    and instruct users to tap on the "Browser app" option on that settings screen to choose a default browser app. -->
+<!ENTITY default_browser_system_settings_toast "Πατήστε το \&quot;Εφαρμογή προγρ. περιήγησης\&quot; &amp; επιλέξτε το &brandShortName;">
 <!ENTITY pref_default_browser_mozilla_support_tablet "Επισκεφθείτε την Υποστήριξη Mozilla">
 <!ENTITY pref_about_firefox "Σχετικά με το &brandShortName;">
 <!ENTITY pref_vendor_faqs "Συχνές ερωτήσεις">
@@ -502,6 +515,10 @@
 <!ENTITY find_next "Επόμενο">
 <!ENTITY find_close "Κλείσιμο">
 
+<!-- Localization note (find_error) : Error message shown when there is no result for the
+     searched for text in this webpage -->
+<!ENTITY find_error "Η φράση δεν βρέθηκε">
+
 <!-- Localization note (media_sending_to, media_play, media_pause, media_stop) : These strings are used
      as alternate text for accessibility. They are not visible in the UI. -->
 <!ENTITY media_sending_to "Αποστολή σε συσκευή">
@@ -552,7 +569,7 @@
 <!-- Localization note (pref_scroll_title_bar2): Label for setting that controls
      whether or not the dynamic toolbar is enabled. -->
 <!ENTITY pref_scroll_title_bar2 "Περιήγηση πλήρους οθόνης">
-<!ENTITY pref_scroll_title_bar_summary2 "Απόκρυψη της μπάρας εργαλείων του &brandShortName; κατά την κύλιση προς τα κάτω σε μια σελίδα">
+<!ENTITY pref_scroll_title_bar_summary2 "Απόκρυψη της γραμμής εργαλείων του &brandShortName; κατά την κύλιση προς τα κάτω σε μια σελίδα">
 
 <!ENTITY pref_tab_queue_title3 "Ουρά αναμονής καρτελών">
 <!ENTITY pref_tab_queue_summary4 "Αποθήκευση συνδέσμων μέχρι την επόμενη φορά που θα ανοίξετε το &brandShortName;">
@@ -847,8 +864,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY whatsnew_notification_title "Το &brandShortName; είναι ενημερωμένο">
 <!ENTITY whatsnew_notification_summary "Μάθετε τι νέο υπάρχει σε αυτή την έκδοση">
 
-<!ENTITY promotion_add_page_shortcut "Προσθήκη συντόμ. σελίδας">
-
 <!ENTITY helper_first_offline_bookmark_title "Ανάγνωση χωρίς σύνδεση">
 <!ENTITY helper_first_offline_bookmark_message "Βρείτε τα στοιχεία της προβολής ανάγνωσης στους σελιδοδείκτες σας, ακόμα και χωρίς σύνδεση.">
 <!ENTITY helper_first_offline_bookmark_button "Μετάβαση στους σελιδοδείκτες">
@@ -907,15 +922,9 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_description "Παύση αναπαραγωγής">
 
 <!-- Notification channels names -->
-<!ENTITY default_notification_channel "&brandShortName;">
-
-<!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "Πρόγραμμα περιήγησης">
 <!ENTITY mls_notification_channel "Υπηρεσία τοποθεσίας &vendorShortName;">
 <!ENTITY download_notification_channel "Λήψεις">
-<!ENTITY media_notification_channel "Αναπαραγωγή πολυμέσων">
-<!-- These push notifications come without a specific channel and/or name from Leanplum -->
-<!ENTITY leanplum_default_notifications_channel "Ειδοποιήσεις push του &brandShortName;">
 <!ENTITY media_notification_channel2 "Ήχος και βίντεο">
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
 <!ENTITY leanplum_default_notifications_channel2 "Συμβουλές και κόλπα της &vendorShortName;">

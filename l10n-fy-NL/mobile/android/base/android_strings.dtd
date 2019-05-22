@@ -4,10 +4,13 @@
 
 <!ENTITY firstrun_panel_title_welcome "Wolkom">
 <!ENTITY firstrun_urlbar_message2 "Tank foar it kiezen fan &brandShortName;">
+<!ENTITY newfirstrun_urlbar_message "Wolkom by &brandShortName;">
 <!ENTITY firstrun_urlbar_subtext2 "In moderne mobile browser fan Mozilla, de non-profitorganisaasje mei tawijing oan in frij en iepen web.">
+<!ENTITY newfirstrun_urlbar_subtext "Fluch, privee en oan jo side.">
 <!ENTITY firstrun_panel_title_privacy "Privacy">
 <!ENTITY firstrun_privacy_message "Sneup as oft gjinien mei sjocht">
 <!ENTITY firstrun_privacy_subtext "Priveenavigaasje mei Beskerming tsjin folgjen blokkearret trackers wylst jo sneupe en ûnthâldt gjin skiednis sa gau as jo hjirmei stopje.">
+<!ENTITY newfirstrun_privacy_subtext "Priveenavigaasje blokkearret advertinsjetrackers dy\&apos;t jo online folgje.">
 <!ENTITY firstrun_panel_title_customize "Oanpasse">
 <!ENTITY firstrun_customize_message "Meitsje &brandShortName; fan josels.">
 <!ENTITY firstrun_customize_subtext "Pas &brandShortName; oan mei add-ons. Blokkearje advertinsjes, foegje funksjes ta, of kies in nij tema om jo persoanlikheid wer te jaan.">
@@ -20,8 +23,10 @@
 <!ENTITY firstrun_sync_title "Sync">
 <!ENTITY firstrun_sync_message2 "Gean troch wêr\&apos;t jo bleaun wiene.">
 <!ENTITY firstrun_sync_subtext2 "Brûk Sync om de blêdwizers, wachtwurden en oare saken dy\&apos;t jo yn &brandShortName; op al jo apparaten bewarje te finen.">
+<!ENTITY newfirstrun_sync_subtext "Syngronisearje de dingen dy\&apos;t jo op mobyl bewarje nei Firefox foar desktop, privee en feilich.">
 <!ENTITY firstrun_signin_message "Meitsje ferbining en begjin">
 <!ENTITY firstrun_signin_button "Oanmelde by Sync">
+<!ENTITY newfirstrun_signin_button "Sync ynskeakelje">
 <!ENTITY  onboard_start_button_browser "Start mei browsen">
 <!ENTITY firstrun_button_notnow "Niet nu">
 <!ENTITY firstrun_button_next "Folgjende">
@@ -63,6 +68,12 @@
 <!ENTITY  crash_restart_label "&brandShortName; werstarte">
 
 <!ENTITY url_bar_default_text2 "Sykje of fier adres yn">
+
+<!-- Localization note: this text will be displayed in the Search Widget -->
+<!ENTITY search_widget_default_text "Sykje op it web">
+<!ENTITY search_widget_default_cropped_text "Sykje">
+<!ENTITY search_widget_logo_description "Sykje op it web mei &brandShortName;">
+
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
      icon in the url bar. -->
@@ -290,12 +301,6 @@
 <!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
      Similar to the already existing "pref_whats_new_notification_summary"-->
 <!ENTITY pref_feature_tips_notification_summary "Mear ynfo oer it gebrûk fan &brandShortName; en oare &vendorShortName;-produkten">
-
-<!-- Localization note (pref_feature_tips_notification_enabling_hint):
-     Describe the action the user should do to enable this preference
-     Will be used in the context "<Turn on> ... to enable this feature" -->
-<!ENTITY pref_feature_tips_notification_enabling_hint "Ynskeakelje">
-
 <!-- Localization note (pref_feature_tips_notification_enabling_path):
      Nothing to translate. Simple concatenation of already localized strings. Result is used below. -->
 <!ENTITY pref_feature_tips_notification_enabling_path "&pref_category_privacy_short; > &pref_category_datareporting; > &datareporting_fhr_title;">
@@ -341,6 +346,9 @@
 <!-- Localization note (tab_queue_prompt_settings_button): This button is shown if the user needs to
      enable a permission in Android's setting in order to enable tab queues. -->
 <!ENTITY tab_queue_prompt_settings_button "Nei Ynstellingen">
+<!-- Localization note (tab_queue_notification_prompt): This is the text of the default notification
+shown from Android O while a tab is being queued.-->
+<!ENTITY tab_queue_notification_prompt "Nij ljepblêd oan wachtrige tafoegje&#8230;">
 <!ENTITY tab_queue_notification_title "&brandShortName;">
 <!-- Localization note (tab_queue_notification_text_plural2) : The
      formatD is replaced with the number of tabs queued.  The
@@ -399,7 +407,6 @@
 <!ENTITY pref_private_data_searchHistory "Sykskiednis">
 <!ENTITY pref_private_data_formdata2 "Formulierskiednis">
 <!ENTITY pref_private_data_cookies2 "Cookies &amp; aktive oanmeldingen">
-<!ENTITY pref_private_data_passwords2 "Bewarre oanmeldingen">
 <!ENTITY pref_private_data_cache "Buffer">
 <!ENTITY pref_private_data_offlineApps "Offlinewebsitegegevens">
 <!ENTITY pref_private_data_siteSettings2 "Website-ynstellingen">
@@ -407,6 +414,12 @@
 <!ENTITY pref_private_data_syncedTabs "Syngronisearre ljepblêden">
 
 <!ENTITY pref_default_browser "Standertbrowser meitsje">
+
+<!ENTITY pref_default_browser2 "&brandShortName; jo standertbrowser meitsje">
+<!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
+    Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
+    and instruct users to tap on the "Browser app" option on that settings screen to choose a default browser app. -->
+<!ENTITY default_browser_system_settings_toast "Tik op de Browser-app &amp; selektearje &brandShortName;">
 <!ENTITY pref_default_browser_mozilla_support_tablet "Mozilla Support besykje">
 <!ENTITY pref_about_firefox "Oer &brandShortName;">
 <!ENTITY pref_vendor_faqs "FAQ’s">
@@ -501,6 +514,10 @@
 <!ENTITY find_prev "Foarige">
 <!ENTITY find_next "Folgjende">
 <!ENTITY find_close "Slute">
+
+<!-- Localization note (find_error) : Error message shown when there is no result for the
+     searched for text in this webpage -->
+<!ENTITY find_error "Tekst net fûn">
 
 <!-- Localization note (media_sending_to, media_play, media_pause, media_stop) : These strings are used
      as alternate text for accessibility. They are not visible in the UI. -->
@@ -847,8 +864,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY whatsnew_notification_title "&brandShortName; is by de tiid">
 <!ENTITY whatsnew_notification_summary "Untdek wat der nij is yn dizze ferzje">
 
-<!ENTITY promotion_add_page_shortcut "Sidefluchkeppeling tafoegje">
-
 <!ENTITY helper_first_offline_bookmark_title "Offline lêze">
 <!ENTITY helper_first_offline_bookmark_message "Fyn jo lêzerwerjefte-items yn de blêdwizers, sels offline.">
 <!ENTITY helper_first_offline_bookmark_button "Nei Blêdwizers">
@@ -907,15 +922,9 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_description "Ofspyljen pauzearje">
 
 <!-- Notification channels names -->
-<!ENTITY default_notification_channel "&brandShortName;">
-
-<!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "Browser">
 <!ENTITY mls_notification_channel "&vendorShortName;-lokaasjetsjinst">
 <!ENTITY download_notification_channel "Downloads">
-<!ENTITY media_notification_channel "Media ôfspylje">
-<!-- These push notifications come without a specific channel and/or name from Leanplum -->
-<!ENTITY leanplum_default_notifications_channel "&brandShortName;-pushnotifikaasjes">
 <!ENTITY media_notification_channel2 "Lûd en fideo">
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
 <!ENTITY leanplum_default_notifications_channel2 "&vendorShortName;-tips en -trúks">

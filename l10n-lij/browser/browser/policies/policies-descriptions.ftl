@@ -12,7 +12,7 @@
 
 policy-AppUpdateURL = Inpòsta 'na URL personâ de agiornamento.
 policy-Authentication = Configua l'aotenticaçion integrâ pe-i sciti ch'a sopòrtan.
-policy-BlockAboutAddons = Blòcca l'acesso a-o Gestô di conponenti azonti (about:addons).
+policy-BlockAboutAddons = Blòcca l'acesso a-o gestô di conponenti azonti (about:addons).
 policy-BlockAboutConfig = Blòcca l'acesso a-a pagina about:config.
 policy-BlockAboutProfiles = Blòcca l'acesso a-a pagina about:profiles.
 policy-BlockAboutSupport = Blòcca l'acesso a-a pagina about:support.
@@ -22,7 +22,7 @@ policy-CertificatesDescription = Azonzi certificati ò deuvia certificati predef
 policy-Cookies = Permetti ò no nega o permisso -ai sciti de mette di cookie.
 policy-DisableAppUpdate = No fâ agiornâ o navegatô.
 policy-DisableBuiltinPDFViewer = Diabilita PDF.js, o letô PDF incòrporou in { -brand-short-name }.
-policy-DisableDeveloperTools = Blòcca l'acesso a-i strumenti do svilupatô.
+policy-DisableDeveloperTools = Blòcca l'acesso a-i atressi do svilupatô.
 policy-DisableFeedbackCommands = Dizabilita i comandi pe mandâ i comenti da-o menû agiutto (Manda comento e segnala scito scito mascarson)
 policy-DisableFirefoxAccounts = Dizabilita i serviççi bazæ in sce { -fxaccount-brand-name }, incluzo Sync.
 # Firefox Screenshots is the name of the feature, and should not be translated.
@@ -45,16 +45,19 @@ policy-DisplayMenuBar = Fanni vedde a bara do menû comme preinpostaçion.
 policy-DNSOverHTTPS = Configua DNS over HTTPS.
 policy-DontCheckDefaultBrowser = Dizabilita o contròllo se o navegatô o l'é predefinio quande arvo.
 # “lock” means that the user won’t be able to change this setting
-policy-EnableTrackingProtection = Abilita ò dizabilita o Blòcco di contegnui de deciddi se blocâ a decixon.
+policy-EnableTrackingProtection = Abilita ò dizabilita o Blòcco di contegnui e opçionalmente blòcca a impostaçion.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
 policy-Extensions = Installa, dizinstalla ò bloòcca e estenscioin. L'òpçion de instalaçion piggiâ de URL ò di parametri. In cangio la dizinstalaçion e vlòcco piggiâ de estescioin ID.
+policy-ExtensionUpdate = Abilita o dizabilita o agiornamento aotomatico de estenscioin.
 policy-FlashPlugin = Permetti ò nega l'uzo di plugin Flash.
 policy-HardwareAcceleration = Se false, asmòrta l'aceleraçion hardware.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Inpòsta e blòcca (se ti veu) a pagina prinçipâ.
 policy-InstallAddonsPermission = Permetti a çerti sciti de instalâ conponenti azonti.
+policy-NetworkPrediction = Abilita o dizabilita a prediçion da ræ (preletûa DNS).
+policy-Permissions = Inpòsta i permissi do micròfono, fötocamera, poxiçion e notificaçion.
 policy-PopupBlocking = Permetti a çerti sciti de mostrâ di popup comme òpçion predefinia.
 policy-Proxy = Configuraçion inpostaçioin do proxy.
 policy-SanitizeOnShutdown = Scancella tutti i dæti de navegaçion quande asmòrto.
@@ -64,5 +67,6 @@ policy-SearchEngines = Configuraçion inpostaçioin do motô de riçerca. Sta ò
 policy-SecurityDevices = Instaala mòdolo PKCS #11.
 policy-SSLVersionMax = Inpòsta a verscion mascima de SSL.
 policy-SSLVersionMin = Inpòsta a verscion minima de SSL.
+policy-SupportMenu = Azonzi 'na voxe de menû personalizâ into menû d'agiutto.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Blòcca a vixita a di sciti. Amia a documentaçion pe avei ciù detalli in sciô formou.

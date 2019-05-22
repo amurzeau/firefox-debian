@@ -10,6 +10,7 @@
 ## These are short descriptions for individual policies, to be displayed
 ## in the documentation section in about:policies.
 
+policy-3rdparty = 設定 WebExtension 可透過 chrome.storage.managed 存取的政策。
 policy-AppUpdateURL = 設定自訂的應用程式更新網址。
 policy-Authentication = 為支援的網站設定整合驗證功能。
 policy-BlockAboutAddons = 防止開啟附加元件管理員（about:addons）。
@@ -20,6 +21,7 @@ policy-Bookmarks = 在書籤工具列、選單或當中的資料夾建立書籤�
 policy-CaptivePortal = 開啟或關閉支援 Captive portal。
 policy-CertificatesDescription = 新增憑證，或使用內建憑證。
 policy-Cookies = 允許或拒絕網站設定 Cookie。
+policy-DefaultDownloadDirectory = 設定預設下載資料夾。
 policy-DisableAppUpdate = 防止瀏覽器更新。
 policy-DisableBuiltinPDFViewer = 停用 { -brand-short-name } 內建的 PDF 閱讀器 PDF.js。
 policy-DisableDeveloperTools = 防止使用開發者工具。
@@ -44,6 +46,7 @@ policy-DisplayBookmarksToolbar = 預設顯示書籤工具列。
 policy-DisplayMenuBar = 預設顯示選單列。
 policy-DNSOverHTTPS = 設定 DNS over HTTPS。
 policy-DontCheckDefaultBrowser = 啟動時不檢查是否為預設瀏覽器。
+policy-DownloadDirectory = 設定並鎖定下載資料夾。
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = 開啟或關閉內容封鎖功能，並可選擇鎖定該功能。
 # A “locked” extension can’t be disabled or removed by the user. This policy
@@ -51,23 +54,30 @@ policy-EnableTrackingProtection = 開啟或關閉內容封鎖功能，並可選�
 # English or translate them as verbs.
 policy-Extensions = 安裝、移除或鎖定擴充套件。安裝選項可加入網址或路徑作為參數。移除和鎖定選項則需要擴充套件 ID 作為參數。
 policy-ExtensionUpdate = 開啟或關閉擴充套件自動更新。
+policy-FirefoxHome = 設定 Firefox Home。
 policy-FlashPlugin = 允許或拒絕使用 Flash 擴充套件。
 policy-HardwareAcceleration = 若停用，就會關閉硬體加速。
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = 設定或鎖定首頁。
 policy-InstallAddonsPermission = 允許某些網站安裝附加元件。
+policy-LocalFileLinks = 允許特定網站鏈結到本機檔案。
 policy-NetworkPrediction = 開啟或關閉網路預測（DNS 預讀）功能。
+policy-NewTabPage = 啟用或停用「新分頁」頁面。
 policy-NoDefaultBookmarks = 停止建立 { -brand-short-name } 內建的預設書籤及智慧書籤（最常造訪、最近新增的標籤）。註: 此原則僅在設定檔首次啟動前設定才有效。
 policy-OfferToSaveLogins = 強制允許 { -brand-short-name } 提供記住登入資訊與密碼的設定。true 與 false 設定都接受。
 policy-OverrideFirstRunPage = 覆蓋首次執行頁面。若您想停用首次執行頁面，請將原則設為空白。
 policy-OverridePostUpdatePage = 覆蓋更新後會開啟的「有什麼新鮮事」頁面。若您想停用此頁面，請將原則設為空白。
 policy-Permissions = 設定攝影機、麥克風、地理位置、通知等權限。
 policy-PopupBlocking = 允許某些網站預設可顯示彈出視窗。
+policy-Preferences = 鎖定部分偏好設定的內容。
+policy-PromptForDownloadLocation = 下載檔案時，詢問要將檔案儲存至何處。
 policy-Proxy = 設定代理伺服器選項。
 policy-RequestedLocales = 為應用程式設定使用的語系清單順序。
 policy-SanitizeOnShutdown = 關閉瀏覽器時清除所有瀏覽資料。
+policy-SanitizeOnShutdown2 = 關機時，清除上網資料。
 policy-SearchBar = 設定搜尋列的預設位置，使用者仍然可以自訂。
 policy-SearchEngines = 調整搜尋引擎設定。此原則僅對 Extended Support Release（ESR）版本有效。
+policy-SearchSuggestEnabled = 啟用或停用搜尋建議。
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = 安裝 PKCS #11 模組。
 policy-SSLVersionMax = 設定最大 SSL 版本。

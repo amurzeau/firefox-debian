@@ -7,7 +7,13 @@
 
 <!ENTITY fromAddr.label "De:">
 <!ENTITY fromAddr.accesskey "D">
-<!ENTITY subject.label  "Assunto:">
+<!ENTITY toAddr.label "Para:">
+<!ENTITY ccAddr.label "Cc:">
+<!ENTITY bccAddr.label "Bcc:">
+<!ENTITY replyAddr.label "Responder-Para:">
+<!ENTITY newsgroupsAddr.label "Grupo de notícias:">
+<!ENTITY followupAddr.label "Reencaminhar-Para:">
+<!ENTITY subject.label "Assunto:">
 <!ENTITY subject.accesskey "s">
 <!ENTITY attachments.label "Anexos:">
 <!ENTITY attachments.accesskey "x">

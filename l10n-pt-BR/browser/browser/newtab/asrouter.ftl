@@ -12,9 +12,9 @@ cfr-doorhanger-extension-ok-button = Adicionar agora
     .accesskey = A
 cfr-doorhanger-pintab-ok-button = Fixar esta aba
     .accesskey = x
-cfr-doorhanger-extension-manage-settings-button = Gerenciar definições de recomendações
+cfr-doorhanger-extension-manage-settings-button = Gerenciar configurações de recomendações
     .accesskey = m
-cfr-doorhanger-extension-never-show-recommendation = Não me mostrar esta recomendação
+cfr-doorhanger-extension-never-show-recommendation = Não mostrar esta recomendação
     .accesskey = s
 cfr-doorhanger-extension-learn-more-link = Saiba mais
 # This string is used on a new line below the add-on name
@@ -50,6 +50,15 @@ cfr-doorhanger-pintab-description = Tenha acesso fácil aos sites que você mais
 
 cfr-doorhanger-pintab-step1 = <b>Clique com o botão direito</b> na aba que deseja fixar.
 cfr-doorhanger-pintab-step2 = Selecione <b>Fixar aba</b> no menu.
-cfr-doorhanger-pintab-step3 = Se o site for atualizado, você verá um ponto azul na aba fixada.
+cfr-doorhanger-pintab-step3 = Se o site tiver uma atualização, aparece um ponto azul na aba fixada.
 cfr-doorhanger-pintab-animation-pause = Pausar
 cfr-doorhanger-pintab-animation-resume = Continuar
+
+## Firefox Accounts Message
+
+cfr-doorhanger-bookmark-fxa-header = Sincronize seus favoritos em qualquer lugar.
+cfr-doorhanger-bookmark-fxa-body = Ótimo achado! Agora não fique sem este favorito nos seus dispositivos móveis. Comece com uma { -fxaccount-brand-name }.
+cfr-doorhanger-bookmark-fxa-link-text = Sincronizar favoritos agora…
+cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
+    .aria-label = Botão fechar
+    .title = Fechar

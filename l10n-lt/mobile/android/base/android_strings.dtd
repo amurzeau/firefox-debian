@@ -4,10 +4,13 @@
 
 <!ENTITY firstrun_panel_title_welcome "Sveiki">
 <!ENTITY firstrun_urlbar_message2 "Ačiū, kad pasirinkote „&brandShortName;“">
+<!ENTITY newfirstrun_urlbar_message "Sveiki, čia „&brandShortName;“">
 <!ENTITY firstrun_urlbar_subtext2 "Tai moderni mobilioji naršyklė iš „Mozillos“, ne pelno siekiančios organizacijos, atsidavusios nemokamam ir laisvam internetui.">
+<!ENTITY newfirstrun_urlbar_subtext "Greita, privati, ir jūsų pusėje.">
 <!ENTITY firstrun_panel_title_privacy "Privatumas">
 <!ENTITY firstrun_privacy_message "Naršykite lyg niekas nestebėtų">
 <!ENTITY firstrun_privacy_subtext "Privatusis naršymas su apsauga nuo stebėjimo blokuoja stebėjimo elementus jums naršant bei neveda naršymo žurnalo.">
+<!ENTITY newfirstrun_privacy_subtext "Privatusis naršymas blokuoja reklaminius elementus, kurie seka jus naršant.">
 <!ENTITY firstrun_panel_title_customize "Tinkinimas">
 <!ENTITY firstrun_customize_message "Pritaikykite „&brandShortName;“ sau.">
 <!ENTITY firstrun_customize_subtext "Praplėskite „&brandShortName;“ su priedais. Blokuokite reklamas, pridėkite funkcionalumo, ar pasirinkite jūsų asmenybę atitinkantį grafinį apvalkalą.">
@@ -20,8 +23,10 @@
 <!ENTITY firstrun_sync_title "Sinchronizavimas">
 <!ENTITY firstrun_sync_message2 "Tęskite nuo ten, kur baigėte.">
 <!ENTITY firstrun_sync_subtext2 "Naudokitės „Sync“ norėdami rasti adresyno įrašus, slaptažodžius bei kitus su „&brandShortName;“ išsaugotus dalykus, visuose savo įrenginiuose.">
+<!ENTITY newfirstrun_sync_subtext "Sinchronizuokite mobiliojoje „Firefox“ įrašytus dalykus su kompiuterine „Firefox“, privačiai ir saugiai.">
 <!ENTITY firstrun_signin_message "Prisijunkite ir pradėkite">
 <!ENTITY firstrun_signin_button "Prisijungti prie „Sync“">
+<!ENTITY newfirstrun_signin_button "Įjungti „Sync“">
 <!ENTITY  onboard_start_button_browser "Pradėti naršymą">
 <!ENTITY firstrun_button_notnow "Ne dabar">
 <!ENTITY firstrun_button_next "Toliau">
@@ -63,6 +68,12 @@
 <!ENTITY  crash_restart_label "Paleisti „&brandShortName;“ iš naujo">
 
 <!ENTITY url_bar_default_text2 "Įveskite adresą arba paieškos žodžius">
+
+<!-- Localization note: this text will be displayed in the Search Widget -->
+<!ENTITY search_widget_default_text "Ieškokite saityne">
+<!ENTITY search_widget_default_cropped_text "Ieškoti">
+<!ENTITY search_widget_logo_description "Ieškokite saityne su „&brandShortName;“">
+
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
      icon in the url bar. -->
@@ -290,12 +301,6 @@
 <!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
      Similar to the already existing "pref_whats_new_notification_summary"-->
 <!ENTITY pref_feature_tips_notification_summary "Sužinokite daugiau apie „&brandShortName;“ bei kitų „&vendorShortName;“ produktų galimybes.">
-
-<!-- Localization note (pref_feature_tips_notification_enabling_hint):
-     Describe the action the user should do to enable this preference
-     Will be used in the context "<Turn on> ... to enable this feature" -->
-<!ENTITY pref_feature_tips_notification_enabling_hint "Įjunkite">
-
 <!-- Localization note (pref_feature_tips_notification_enabling_path):
      Nothing to translate. Simple concatenation of already localized strings. Result is used below. -->
 <!ENTITY pref_feature_tips_notification_enabling_path "&pref_category_privacy_short; > &pref_category_datareporting; > &datareporting_fhr_title;">
@@ -341,6 +346,9 @@
 <!-- Localization note (tab_queue_prompt_settings_button): This button is shown if the user needs to
      enable a permission in Android's setting in order to enable tab queues. -->
 <!ENTITY tab_queue_prompt_settings_button "Eiti į nustatymus">
+<!-- Localization note (tab_queue_notification_prompt): This is the text of the default notification
+shown from Android O while a tab is being queued.-->
+<!ENTITY tab_queue_notification_prompt "Į eilę pridedama nauja kortelė&#8230;">
 <!ENTITY tab_queue_notification_title "&brandShortName;">
 <!-- Localization note (tab_queue_notification_text_plural2) : The
      formatD is replaced with the number of tabs queued.  The
@@ -399,7 +407,6 @@
 <!ENTITY pref_private_data_searchHistory "Paieškos istorija">
 <!ENTITY pref_private_data_formdata2 "Formų istorija">
 <!ENTITY pref_private_data_cookies2 "Slapukai ir esami prisijungimai">
-<!ENTITY pref_private_data_passwords2 "Įrašyti prisijungimai">
 <!ENTITY pref_private_data_cache "Podėlis">
 <!ENTITY pref_private_data_offlineApps "Duomenys darbui neprisijungus">
 <!ENTITY pref_private_data_siteSettings2 "Svetainių nustatymai">
@@ -407,6 +414,12 @@
 <!ENTITY pref_private_data_syncedTabs "Sinchronizuotos kortelės">
 
 <!ENTITY pref_default_browser "Paskirti numatytąja naršykle">
+
+<!ENTITY pref_default_browser2 "Skirti „&brandShortName;“ numatytąja naršykle">
+<!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
+    Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
+    and instruct users to tap on the "Browser app" option on that settings screen to choose a default browser app. -->
+<!ENTITY default_browser_system_settings_toast "Bakstelėkite „Browser app“ ir pasirinkite „&brandShortName;“">
 <!ENTITY pref_default_browser_mozilla_support_tablet "Aplankyti „Mozillos“ žinyną">
 <!ENTITY pref_about_firefox "Apie „&brandShortName;“">
 <!ENTITY pref_vendor_faqs "Dažni klausimai">
@@ -501,6 +514,10 @@
 <!ENTITY find_prev "Ankstenis">
 <!ENTITY find_next "Toliau">
 <!ENTITY find_close "Užverti">
+
+<!-- Localization note (find_error) : Error message shown when there is no result for the
+     searched for text in this webpage -->
+<!ENTITY find_error "Ieškoma frazė nerasta">
 
 <!-- Localization note (media_sending_to, media_play, media_pause, media_stop) : These strings are used
      as alternate text for accessibility. They are not visible in the UI. -->
@@ -844,8 +861,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY whatsnew_notification_title "Naudojama paskiausia „&brandShortName;“ laida">
 <!ENTITY whatsnew_notification_summary "Sužinokite, kas naujo šioje laidoje">
 
-<!ENTITY promotion_add_page_shortcut "Pridėti tinklalapio šaukinį">
-
 <!ENTITY helper_first_offline_bookmark_title "Skaityti neprisijungus">
 <!ENTITY helper_first_offline_bookmark_message "Raskite savo skaitymo rodinio įrašus adresyne, net ir neprisijungus.">
 <!ENTITY helper_first_offline_bookmark_button "Eiti į adresyną">
@@ -904,15 +919,9 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_description "Pristabdyti grojimą">
 
 <!-- Notification channels names -->
-<!ENTITY default_notification_channel "&brandShortName;">
-
-<!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "Naršyklė">
 <!ENTITY mls_notification_channel "„&vendorShortName;“ vietos nustatymo paslauga">
 <!ENTITY download_notification_channel "Atsiuntimai">
-<!ENTITY media_notification_channel "Medijos atkūrimas">
-<!-- These push notifications come without a specific channel and/or name from Leanplum -->
-<!ENTITY leanplum_default_notifications_channel "„&brandShortName;“ siunčiami pranešimai">
 <!ENTITY media_notification_channel2 "Garsas ir vaizdas">
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
 <!ENTITY leanplum_default_notifications_channel2 "„&vendorShortName;“ patarimai">

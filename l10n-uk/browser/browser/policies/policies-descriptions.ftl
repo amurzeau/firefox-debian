@@ -10,6 +10,7 @@
 ## These are short descriptions for individual policies, to be displayed
 ## in the documentation section in about:policies.
 
+policy-3rdparty = Встановити політики, за якими WebExtensions можуть отримувати доступ через chrome.storage.managed.
 policy-AppUpdateURL = Встановити власну URL-адресу для оновлення додатка.
 policy-Authentication = Налаштувати інтегровану авторизацію для підтримуваних веб-сайтів.
 policy-BlockAboutAddons = Заблокувати доступ до керування додатками (about:addons).
@@ -56,18 +57,23 @@ policy-HardwareAcceleration = Значення false вимикає апарат
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Встановити і за бажанням заблокувати домівку.
 policy-InstallAddonsPermission = Дозволити певним веб-сайтам встановлювати додатки.
+policy-LocalFileLinks = Дозволити певним веб-сайтам посилання на локальні файли.
 policy-NetworkPrediction = Вмикає чи вимикає прогнозування мережі (попереднє отримання DNS).
+policy-NewTabPage = Увімкнути чи вимкнути сторінку нової вкладки.
 policy-NoDefaultBookmarks = Вимкнути створення типових закладок, пов'язаних з { -brand-short-name }, а також інтелектуальних закладок (Найбільш відвідувані, Останні мітки). Примітка: цю політику можливо застосувати лише при першому запуску профілю.
 policy-OfferToSaveLogins = Примусово пропонувати збереження паролів у налаштуваннях { -brand-short-name }. Працюють обидва значення true і false.
 policy-OverrideFirstRunPage = Замінити сторінку першого запуску. Для вимкнення цієї сторінки залиште значення для цього правила порожнім.
 policy-OverridePostUpdatePage = Замінити сторінку "Що нового" після оновлення. Для вимкнення цієї сторінки залиште значення для цього правила порожнім.
 policy-Permissions = Налаштувати дозволи для камери, мікрофона, розташування та сповіщень.
 policy-PopupBlocking = Дозволити певним веб-сайтам типово відображати виринаючі вікна.
+policy-Preferences = Встановити і зафіксувати значення для набору налаштувань.
 policy-Proxy = Налаштувати параметри проксі.
 policy-RequestedLocales = Встановіть перелік запитуваних мов для програми в бажаному порядку.
 policy-SanitizeOnShutdown = Стирати всі дані перегляду при завершенні роботи.
+policy-SanitizeOnShutdown2 = Очищати дані навігації при виході з програми.
 policy-SearchBar = Встановити типове розташування панелі пошуку. Користувачу все одно дозволяється змінювати.
 policy-SearchEngines = Налаштувати засіб пошуку. Ця політика доступна лише у версії Extended Support Release (ESR).
+policy-SearchSuggestEnabled = Увімкнути чи вимкнути пропозиції пошуку.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Встановити модулі PKCS #11.
 policy-SSLVersionMax = Встановлює максимальну версію SSL.

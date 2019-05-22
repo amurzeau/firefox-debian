@@ -8,6 +8,7 @@ about-config-warning-text = Cambiar iste parametros avantiate pote esser nocive 
 about-config-warning-checkbox = Memora me postea, per favor!
 about-config-warning-button = Io accepta le risco!
 about-config-title = about:config
+about-config2-title = Configurationes avantiate
 about-config-search-input =
     .placeholder = Cercar
 about-config-show-all = Monstrar toto
@@ -20,7 +21,7 @@ about-config-pref-delete = Deler
 
 ## Labels for the type selection radio buttons shown when adding preferences.
 
-about-config-pref-add-type-boolean = Cifra binari
+about-config-pref-add-type-boolean = Booleano
 about-config-pref-add-type-number = Numero
 about-config-pref-add-type-string = Catena
 

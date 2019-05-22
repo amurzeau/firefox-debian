@@ -12,5 +12,28 @@
 ##
 ## Reference: https://www.mozilla.org/styleguide/communications/translation/
 
--brand-short-name = Thunderbird
--vendor-short-name = Mozilla
+-brand-shorter-name = Thunderbird
+-brand-short-name =
+    { $case ->
+       *[nom] Thunderbird
+        [gen] Thunderbirdu
+        [dat] Thunderbirdu
+        [acc] Thunderbird
+        [voc] Thunderbirde
+        [loc] Thunderbirdu
+        [ins] Thunderbirdem
+    }
+-brand-full-name = Mozilla Thunderbird
+# This brand name can be used in messages where the product name needs to
+# remain unchanged across different versions (Daily, Beta, etc.).
+-brand-product-name = Thunderbird
+-vendor-short-name =
+    { $case ->
+       *[nom] Mozilla
+        [gen] Mozilly
+        [dat] Mozille
+        [acc] Mozillu
+        [voc] Mozillo
+        [loc] Mozille
+        [ins] Mozillou
+    }

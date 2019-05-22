@@ -53,7 +53,7 @@ category-sync =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
-help-button-label = Supporto a { -brand-short-name }
+help-button-label = Supporto per { -brand-short-name }
 addons-button-label = Estensioni e temi
 focus-search =
     .key = f
@@ -97,7 +97,7 @@ extension-controlled-privacy-containers = Le schede contenitore sono necessarie 
 extension-controlled-websites-content-blocking-all-trackers = Questa impostazione è attualmente gestita da un’estensione (<img data-l10n-name="icon"/> { $name }).
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
-extension-controlled-proxy-config = Le impostazioni di <img data-l10n-name="icon"/> { $name } relative alla connessione a Internet sono attualmente gestite da un’estensione ({ -brand-short-name }).
+extension-controlled-proxy-config = Le impostazioni di { -brand-short-name } relative alla connessione a Internet sono attualmente gestite da un’estensione (<img data-l10n-name="icon"/> { $name }).
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -335,7 +335,7 @@ browsing-cfr-recommendations =
     .accesskey = S
 browsing-cfr-features =
     .label = Suggerisci funzioni durante la navigazione
-    .accesskey = f    
+    .accesskey = f
 browsing-cfr-recommendations-learn-more = Ulteriori informazioni
 
 ## General Section - Proxy
@@ -660,6 +660,7 @@ addressbar-suggestions-settings = Modifica le impostazioni relative ai suggerime
 
 content-blocking-header = Blocco contenuti
 content-blocking-description = Blocca i contenuti di terze parti che ti seguono attraverso il Web. Controlla quanto della tua attività online viene archiviato e condiviso tra siti web.
+content-blocking-section-description = Proteggi la tua privacy durante la navigazione. Blocca contenuti invisibili in grado di tracciare i siti che visiti e creare un profilo con le tue informazioni. Il blocco di alcuni di questi contenuti potrebbe velocizzare il caricamento delle pagine.
 content-blocking-learn-more = Ulteriori informazioni
 content-blocking-setting-standard =
     .label = Normale
@@ -674,15 +675,24 @@ content-blocking-setting-custom =
 content-blocking-standard-description = Blocca solo elementi traccianti conosciuti in finestre anonime.
 content-blocking-standard-desc = Il perfetto equilibrio tra protezione e prestazioni. Consenti alcuni elementi traccianti in modo da garantire il corretto funzionamento dei siti.
 content-blocking-strict-desc = Blocca tutti gli elementi traccianti rilevati da { -brand-short-name }. Alcuni siti potrebbero non funzionare correttamente.
+content-blocking-strict-description = Maggiore protezione, alcuni siti potrebbero non funzionare correttamente.
 content-blocking-custom-desc = Scegli che cosa bloccare.
 content-blocking-private-trackers = Elementi traccianti conosciuti in finestre anonime
 content-blocking-third-party-cookies = Cookie traccianti di terze parti
+content-blocking-all-cookies = Tutti i cookie
+content-blocking-unvisited-cookies = Cookie da siti web non visitati
 content-blocking-all-windows-trackers = Elementi traccianti conosciuti in qualunque finestra
 content-blocking-all-third-party-cookies = Tutti i cookie di terze parti
+content-blocking-cryptominers = Cryptominer
+content-blocking-fingerprinters = Fingerprinter
 content-blocking-warning-title = Attenzione
 content-blocking-warning-desc = Il blocco di cookie ed elementi traccianti potrebbe impedire il corretto funzionamento di alcuni siti. È semplice disattivare il blocco per i siti che ritieni affidabili.
 content-blocking-warning-description = Il blocco di contenuti potrebbe impedire il corretto funzionamento di alcuni siti. È semplice disattivare il blocco per i siti che ritieni affidabili.
 content-blocking-learn-how = Scopri come
+content-blocking-reload-description = È necessario ricaricare le schede per applicare le modifiche.
+content-blocking-reload-tabs-button =
+  .label = Ricarica tutte le schede
+  .accesskey = R
 content-blocking-trackers-label =
     .label = Elementi traccianti
     .accesskey = E
@@ -696,6 +706,8 @@ content-blocking-tracking-protection-change-block-list = Cambia elenco per blocc
 content-blocking-cookies-label =
     .label = Cookie
     .accesskey = C
+content-blocking-expand-section =
+  .tooltiptext = Ulteriori informazioni
 content-blocking-cryptominers-label =
   .label = Cryptominer
   .accesskey = y
@@ -732,23 +744,12 @@ permissions-notification-link = Ulteriori informazioni
 permissions-notification-pause =
     .label = Sospendi notifiche fino al riavvio di { -brand-short-name }
     .accesskey = n
-permissions-block-autoplay-media =
-    .label = Impedisci ai siti web di riprodurre automaticamente contenuti sonori
-    .accesskey = m
 permissions-block-autoplay-media2 =
     .label = Impedisci ai siti web di riprodurre automaticamente audio
     .accesskey = m
-permissions-block-autoplay-media-menu = Per i siti web che cercano di riprodurre automaticamente contenuti sonori:
 permissions-block-autoplay-media-exceptions =
     .label = Eccezioni…
     .accesskey = E
-autoplay-option-ask =
-    .label = chiedi sempre
-autoplay-option-allow =
-    .label = consenti riproduzione
-autoplay-option-dont =
-    .label = non riprodurre
-permissions-autoplay-link = Ulteriori informazioni
 permissions-block-popups =
     .label = Blocca le finestre pop-up
     .accesskey = B
@@ -780,16 +781,12 @@ collection-studies =
 collection-studies-link = Visualizza studi di { -brand-short-name }
 
 addon-recommendations =
-    .label = Consenti a { -brand-short-name } di visualizzare consigli personalizzati relativi alle estensioni
+    .label = Consenti a { -brand-short-name } di visualizzare suggerimenti personalizzati relativi alle estensioni
 addon-recommendations-link = Ulteriori informazioni
 
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = L’invio dei dati è stato disattivato nella configurazione utilizzata per questa build
-collection-browser-errors =
-    .label = Consenti a { -brand-short-name } di inviare a { -vendor-short-name } le segnalazioni di errori nel browser (inclusi i messaggi di errore)
-    .accesskey = b
-collection-browser-errors-link = Ulteriori informazioni
 collection-backlogged-crash-reports =
     .label = Consenti a { -brand-short-name } di inviare segnalazioni di arresto anomalo in sospeso
     .accesskey = C

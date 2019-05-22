@@ -79,6 +79,9 @@ detail-version =
 detail-last-updated =
     .label = Апошняе абнаўленне
 detail-contributions-description = Распрацоўца гэтага дадатка просіць падтрымаць яго распрацоўку невялікім ахвяраваннем.
+detail-contributions-button = Зрабіць унёсак
+    .title = Зрабіць унёсак у распрацоўку гэтага дадатку
+    .accesskey = с
 detail-update-type =
     .value = Аўтаматычныя абнаўленні
 detail-update-default =
@@ -92,7 +95,14 @@ detail-update-manual =
     .tooltiptext = Не ўсталёўваць абнаўленні аўтаматычна
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Задзейнічаць у прыватных вокнах
-detail-private-browsing-description = Пашырэнне будзе працаваць у прыватных вокнах і мець доступ да вашай актыўнасці ў сеціве. <label data-l10n-name="detail-private-browsing-learn-more">Падрабязней</label>
+detail-private-browsing-description2 = Калі дазволена, пашырэнне будзе мець доступ да вашай актыўнасці ў інтэрнэце ў час прыватнага аглядання. <label data-l10n-name="detail-private-browsing-learn-more">Падрабязней</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = Не дазволена ў прыватных вокнах
+detail-private-disallowed-description = Гэта пашырэнне не працуе ў час прыватнага аглядання. <label data-l10n-name="detail-private-browsing-learn-more">Падрабязней</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Патрабуе доступ да прыватных акон
+detail-private-required-description = Гэта пашырэнне мае доступ да вашай дзейнасці ў сеціве ў час прыватнага аглядання. <label data-l10n-name="detail-private-browsing-learn-more">Падрабязней</label>
 detail-private-browsing-on =
     .label = Дазволіць
     .tooltiptext = Уключаць у рэжыме прыватнага аглядання
@@ -143,7 +153,7 @@ legacy-extensions =
 legacy-extensions-description = Гэтыя пашырэнні не адпавядаюць бягучым стандартам { -brand-short-name }, таму яны былі выключаны. <label data-l10n-name="legacy-learn-more">Даведацца аб зменах у дадатках</label>
 private-browsing-description2 =
     { -brand-short-name } змяняе парадак працы пашырэнняў у прыватным агляданні. Усе новыя пашырэнні, якія вы дадаяце да
-    { -brand-short-name }, тыпова не будуць дзейнічаць прыватных вокнах. Пакуль вы не выставіце дазвол у наладах,
+    { -brand-short-name }, тыпова не будуць дзейнічаць у прыватных вокнах. Пакуль вы не выставіце дазвол у наладах,
     пашырэнне не будзе працаваць у час прыватнага аглядання, і не будзе мець доступу да вашай сеціўнай
     актыўнасці ў гэтым рэжыме. Мы зрабілі гэта для аховы вашай прыватнасці.
     <label data-l10n-name="private-browsing-learn-more">Даведайцеся, як кіраваць наладамі пашырэння.</label>
@@ -243,11 +253,15 @@ shortcuts-modifier-other = Улучыце Ctrl або Alt
 shortcuts-invalid = Недапушчальная камбінацыя
 shortcuts-letter = Увядзіце літару
 shortcuts-system = Нельга перавызначыць спалучэнне клавіш { -brand-short-name }
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Ужо выкарыстоўваецца дадаткам { $addon }
 shortcuts-card-expand-button =
     { $numberToShow ->
         [one] Паказаць яшчэ { $numberToShow }
         [few] Паказаць яшчэ { $numberToShow }
-       *[other] Паказаць яшчэ { $numberToShow }
+       *[many] Паказаць яшчэ { $numberToShow }
     }
 shortcuts-card-collapse-button = Паказаць менш
 go-back-button =
@@ -255,8 +269,53 @@ go-back-button =
 
 ## Add-on actions
 
+report-addon-button = Паведаміць
 remove-addon-button = Выдаліць
 disable-addon-button = Адключыць
 enable-addon-button = Уключыць
+expand-addon-button = Дадатковыя параметры
 addons-enabled-heading = Уключана
 addons-disabled-heading = Выключана
+ask-to-activate-button = Спытаць для задзейнічання
+always-activate-button = Заўсёды задейнічаць
+never-activate-button = Ніколі не задзейнічаць
+addon-detail-author-label = Аўтар
+addon-detail-version-label = Версія
+addon-detail-last-updated-label = Апошняе абнаўленне
+addon-detail-homepage-label = Хатняя старонка
+addon-detail-rating-label = Ацэнка
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (адключана)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } водгук
+        [few] { $numberOfReviews } водгукі
+       *[many] { $numberOfReviews } водгукаў
+    }
+
+## Pending uninstall message bar
+
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> быў выдалены.
+pending-uninstall-undo-button = Адмяніць
+addon-detail-updates-label = Дазволіць аўтаматычныя абнаўленні
+addon-detail-updates-radio-default = Прадвызначана
+addon-detail-updates-radio-on = Укл.
+addon-detail-updates-radio-off = Выкл.
+addon-detail-update-check-label = Праверыць наяўнасць абнаўленняў
+install-update-button = Абнавіць
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Дазволена ў прыватных вокнах
+addon-detail-private-browsing-help = Калі дазволена, пашырэнне будзе мець доступ да вашай дзейнасці ў сеціве ў час прыватнага аглядання. <a data-l10n-name="learn-more">Даведацца больш</a>
+addon-detail-private-browsing-allow = Дазволіць
+addon-detail-private-browsing-disallow = Не дазваляць
+available-updates-heading = Даступныя абнаўленні
+recent-updates-heading = Нядаўнія абнаўленні

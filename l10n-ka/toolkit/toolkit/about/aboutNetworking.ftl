@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 title = ქსელის შესახებ
-warning = ეს მეტად საცდელია. უფროსების ნებართვის გარეშე, არ გამოიყენოთ.
+warning = ეს მეტად საცდელია. ნუ გამოიყენებთ უფროსების დაუკითხავად.
 show-next-time-checkbox = გაფრთხილების ჩვენება ყოველ ჯერზე
 ok = გასაგებია
 http = HTTP
@@ -38,12 +38,12 @@ set-log-file = აღრიცხვის ფაილის მითითე
 set-log-modules = აღრიცხვის მოდულების მითითება
 start-logging = აღრიცხვის დაწყება
 stop-logging = აღრიცხვის შეჩერება
-dns-lookup = DNS მოძიება
+dns-lookup = DNS-მოძიება
 dns-lookup-button = მოთხოვნა
 dns-domain = დომენი:
 dns-lookup-table-column = IPs
-rcwn = RCWN სტატისტიკა
-rcwn-status = RCWN სტატუსი
+rcwn = RCWN-სტატისტიკა
+rcwn-status = RCWN-მდგომარეობა
 rcwn-cache-won-count = კეშის გამოყენება
 rcwn-net-won-count = ქსელით კეშის ჩანაცვლება
 total-network-requests = ქსელის მოთხოვნები სულ

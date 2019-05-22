@@ -338,6 +338,9 @@ browsing-search-on-start-typing =
 browsing-cfr-recommendations =
     .label = Recomandă extensii pe măsură ce navighezi
     .accesskey = R
+browsing-cfr-features =
+    .label = Funcționalități recomandate în timpul navigării
+    .accesskey = f
 browsing-cfr-recommendations-learn-more = Află mai multe
 
 ## General Section - Proxy
@@ -364,7 +367,7 @@ home-restore-defaults =
 # "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = Pagina de start Firefox (Implicit)
+    .label = Pagină de start Firefox (Implicit)
 home-mode-choice-custom =
     .label = URL-uri personalizate…
 home-mode-choice-blank =
@@ -495,7 +498,7 @@ sync-engine-tabs =
     .tooltiptext = O listă cu ce este deschis pe toate dispozitivele sincronizate
     .accesskey = T
 sync-engine-logins =
-    .label = Autentificări
+    .label = Date de autentificare
     .tooltiptext = Numele de utilizatori și parolele pe care le-ai salvat
     .accesskey = L
 sync-engine-addresses =
@@ -550,8 +553,8 @@ forms-exceptions =
     .label = Excepții…
     .accesskey = x
 forms-saved-logins =
-    .label = Autentificări salvate…
-    .accesskey = l
+    .label = Date de autentificare salvate…
+    .accesskey = L
 forms-master-pw-use =
     .label = Folosește o parolă generală
     .accesskey = U
@@ -660,6 +663,7 @@ addressbar-suggestions-settings = Schimbă preferințele pentru sugestiile motoa
 
 content-blocking-header = Blocare de conținut
 content-blocking-description = Blochează conținutul de la terți care te urmărește pe web. Controlează cât din activitatea ta online este stocată și partajată între site-urile web.
+content-blocking-section-description = Protejează-ți intimitatea la navigare. Blochează conținuturile invizibile care urmăresc pe ce site-uri intri și îți creează profilul. Blocarea unei părți din aceste conținuturi poate conduce la încărcarea mai rapidă a paginilor.
 content-blocking-learn-more = Află mai multe
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -675,15 +679,24 @@ content-blocking-setting-custom =
 content-blocking-standard-description = Blochează numai elementele de urmărire cunoscute în ferestrele private.
 content-blocking-standard-desc = Echilibrată pentru protecție și performanță. Permite unele elemente de urmărire pentru ca site-urile web să funcționeze corespunzător.
 content-blocking-strict-desc = Blochează toate elementele de urmărire pe care le depistează { -brand-short-name }. Poate produce disfuncționalități pe unele site-uri.
+content-blocking-strict-description = Protecție mai puternică, poate împiedica funcționarea unor site-uri.
 content-blocking-custom-desc = Alege ce să blochezi.
 content-blocking-private-trackers = Elemente de urmărire cunoscute numai în ferestre private
 content-blocking-third-party-cookies = Cookie-uri de urmărire de la terți
+content-blocking-all-cookies = Toate cookie-urile
+content-blocking-unvisited-cookies = Cookie-uri de la site-uri nevizitate
 content-blocking-all-windows-trackers = Elemente de urmărire cunoscute în toate ferestrele
 content-blocking-all-third-party-cookies = Toate cookie-urile de la terți
+content-blocking-cryptominers = Criptomineri
+content-blocking-fingerprinters = Detectoare de amprente digitale
 content-blocking-warning-title = Atenție!
 content-blocking-warning-desc = Blocarea cookie-urilor și a elementelor de urmărire poate produce disfuncționalități pe anumite site-uri web. Poți dezactiva ușor blocarea pentru site-urile în care ai încredere.
 content-blocking-warning-description = Blocarea conținutului poate împiedica funcționarea unor site-uri web. Deblocarea se poare realiza ușor pentru site-urile în care ai încredere.
 content-blocking-learn-how = Află cum
+content-blocking-reload-description = Va trebui să reîncarci filele pentru aplicarea acestor modificări.
+content-blocking-reload-tabs-button =
+    .label = Reîncarcă toate filele
+    .accesskey = R
 content-blocking-trackers-label =
     .label = Elemente de urmărire
     .accesskey = T
@@ -697,6 +710,8 @@ content-blocking-tracking-protection-change-block-list = Modifică lista de bloc
 content-blocking-cookies-label =
     .label = Cookie-uri
     .accesskey = C
+content-blocking-expand-section =
+    .tooltiptext = Mai multe informații
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
     .label = Criptomineri
@@ -736,23 +751,12 @@ permissions-notification-link = Află mai multe
 permissions-notification-pause =
     .label = Pune pe pauză notificările până la repornirea lui { -brand-short-name }
     .accesskey = n
-permissions-block-autoplay-media =
-    .label = Blochează site-urile web să redea automat conținut media cu sunet
-    .accesskey = B
-permissions-block-autoplay-media-menu = Pentru site-urile web care redau automat sunet
 permissions-block-autoplay-media2 =
     .label = Blochează redarea automată de către site-uri a sonorului
     .accesskey = B
 permissions-block-autoplay-media-exceptions =
     .label = Excepții…
     .accesskey = E
-autoplay-option-ask =
-    .label = Întreabă întotdeauna
-autoplay-option-allow =
-    .label = Permite redarea automată
-autoplay-option-dont =
-    .label = Nu reda automat
-permissions-autoplay-link = Află mai multe
 permissions-block-popups =
     .label = Blochează ferestrele pop-up
     .accesskey = B
@@ -788,10 +792,6 @@ addon-recommendations-link = Află mai multe
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Raportarea datelor este dezactivată în configurația folosită
-collection-browser-errors =
-    .label = Permite ca { -brand-short-name } să trimită rapoarte de eroare ale browserului (inclusiv mesajele erorilor) către { -vendor-short-name }
-    .accesskey = b
-collection-browser-errors-link = Află mai multe
 collection-backlogged-crash-reports =
     .label = Permite ca { -brand-short-name } să trimită în numele tău rapoarte de defecțiuni înregistrate în jurnal
     .accesskey = c
@@ -855,7 +855,7 @@ space-alert-over-5gb-message =
     }
 space-alert-under-5gb-ok-button =
     .label = Ok, am înțeles
-    .accesskey = k
+    .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } rămâne fără spațiu pe disc. Este posibil ca conținutul site-ului web să nu fie afișat corespunzător. Vizitează „Află mai multe” pentru a optimiza utilizarea discului în vederea unei mai bune experiențe de navigare.
 
 ## The following strings are used in the Download section of settings

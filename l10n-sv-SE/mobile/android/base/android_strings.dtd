@@ -4,10 +4,13 @@
 
 <!ENTITY firstrun_panel_title_welcome "Välkommen">
 <!ENTITY firstrun_urlbar_message2 "Tack för att du valde &brandShortName;">
+<!ENTITY newfirstrun_urlbar_message "Välkommen till &brandShortName;">
 <!ENTITY firstrun_urlbar_subtext2 "En modern webbläsare från Mozilla, en ideell organisation engagerad i en fri och öppen webb.">
+<!ENTITY newfirstrun_urlbar_subtext "Snabb, privat och på din sida.">
 <!ENTITY firstrun_panel_title_privacy "Sekretess">
 <!ENTITY firstrun_privacy_message "Surfa utan att känna dig övervakad">
 <!ENTITY firstrun_privacy_subtext "Privat surfning med spårningsskydd som blockerar trackers medan du surfar och raderar all historik när du slutar surfa.">
+<!ENTITY newfirstrun_privacy_subtext "Privat surfning blockerar annonsspårare som följer dig online.">
 <!ENTITY firstrun_panel_title_customize "Anpassa">
 <!ENTITY firstrun_customize_message "Gör &brandShortName; till din egen.">
 <!ENTITY firstrun_customize_subtext "Anpassa &brandShortName; med tillägg. Blockera annonser, lägg till funktioner eller välj ett nytt tema som speglar din personlighet.">
@@ -20,8 +23,10 @@
 <!ENTITY firstrun_sync_title "Sync">
 <!ENTITY firstrun_sync_message2 "Fortsätt där du slutade.">
 <!ENTITY firstrun_sync_subtext2 "Använd Sync för att hitta bokmärken, lösenord och andra saker som du sparar till &brandShortName; på alla dina enheter.">
+<!ENTITY newfirstrun_sync_subtext "Synkronisera de saker du sparar på mobilen till Firefox för datorer, privat och säkert.">
 <!ENTITY firstrun_signin_message "Anslut och kom igång">
 <!ENTITY firstrun_signin_button "Logga in till Sync">
+<!ENTITY newfirstrun_signin_button "Aktivera Sync">
 <!ENTITY  onboard_start_button_browser "Börja surfa">
 <!ENTITY firstrun_button_notnow "Inte just nu">
 <!ENTITY firstrun_button_next "Nästa">
@@ -63,6 +68,12 @@
 <!ENTITY  crash_restart_label "Starta om &brandShortName;">
 
 <!ENTITY url_bar_default_text2 "Sök eller skriv in adressen">
+
+<!-- Localization note: this text will be displayed in the Search Widget -->
+<!ENTITY search_widget_default_text "Sök på webben">
+<!ENTITY search_widget_default_cropped_text "Sök">
+<!ENTITY search_widget_logo_description "Sök på webben med &brandShortName;">
+
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
      icon in the url bar. -->
@@ -290,12 +301,6 @@
 <!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
      Similar to the already existing "pref_whats_new_notification_summary"-->
 <!ENTITY pref_feature_tips_notification_summary "Läs mer om att använda &brandShortName; och andra prudukter från &vendorShortName;">
-
-<!-- Localization note (pref_feature_tips_notification_enabling_hint):
-     Describe the action the user should do to enable this preference
-     Will be used in the context "<Turn on> ... to enable this feature" -->
-<!ENTITY pref_feature_tips_notification_enabling_hint "Aktivera">
-
 <!-- Localization note (pref_feature_tips_notification_enabling_path):
      Nothing to translate. Simple concatenation of already localized strings. Result is used below. -->
 <!ENTITY pref_feature_tips_notification_enabling_path "&pref_category_privacy_short; > &pref_category_datareporting; > &datareporting_fhr_title;">
@@ -341,6 +346,9 @@
 <!-- Localization note (tab_queue_prompt_settings_button): This button is shown if the user needs to
      enable a permission in Android's setting in order to enable tab queues. -->
 <!ENTITY tab_queue_prompt_settings_button "Gå till Inställningar">
+<!-- Localization note (tab_queue_notification_prompt): This is the text of the default notification
+shown from Android O while a tab is being queued.-->
+<!ENTITY tab_queue_notification_prompt "Lägger till ny flik till kö&#8230;">
 <!ENTITY tab_queue_notification_title "&brandShortName;">
 <!-- Localization note (tab_queue_notification_text_plural2) : The
      formatD is replaced with the number of tabs queued.  The
@@ -399,7 +407,6 @@
 <!ENTITY pref_private_data_searchHistory "Sökhistorik">
 <!ENTITY pref_private_data_formdata2 "Formulärhistorik">
 <!ENTITY pref_private_data_cookies2 "Kakor och aktiva inloggningar">
-<!ENTITY pref_private_data_passwords2 "Sparade inloggningar">
 <!ENTITY pref_private_data_cache "Cache">
 <!ENTITY pref_private_data_offlineApps "Nedkopplad webbplatsdata">
 <!ENTITY pref_private_data_siteSettings2 "Platsinställningar">
@@ -407,6 +414,12 @@
 <!ENTITY pref_private_data_syncedTabs "Synkade flikar">
 
 <!ENTITY pref_default_browser "Gör till standardwebbläsare">
+
+<!ENTITY pref_default_browser2 "Gör &brandShortName; till din standardwebbläsare">
+<!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
+    Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
+    and instruct users to tap on the "Browser app" option on that settings screen to choose a default browser app. -->
+<!ENTITY default_browser_system_settings_toast "Klicka på webbläsarapp &amp; välj &brandShortName;">
 <!ENTITY pref_default_browser_mozilla_support_tablet "Besök Mozilla Support">
 <!ENTITY pref_about_firefox "Om &brandShortName;">
 <!ENTITY pref_vendor_faqs "Vanliga frågor">
@@ -501,6 +514,10 @@
 <!ENTITY find_prev "Föregående">
 <!ENTITY find_next "Nästa">
 <!ENTITY find_close "Stäng">
+
+<!-- Localization note (find_error) : Error message shown when there is no result for the
+     searched for text in this webpage -->
+<!ENTITY find_error "Frasen hittades inte">
 
 <!-- Localization note (media_sending_to, media_play, media_pause, media_stop) : These strings are used
      as alternate text for accessibility. They are not visible in the UI. -->
@@ -844,8 +861,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY whatsnew_notification_title "&brandShortName; är redan uppdaterad">
 <!ENTITY whatsnew_notification_summary "Se vad som är nytt i den här versionen">
 
-<!ENTITY promotion_add_page_shortcut "Lägg till genväg till sida">
-
 <!ENTITY helper_first_offline_bookmark_title "Läs offline">
 <!ENTITY helper_first_offline_bookmark_message "Hitta innehållet i din läsvy i bokmärken, även offline.">
 <!ENTITY helper_first_offline_bookmark_button "Gå till bokmärken">
@@ -903,16 +918,11 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_title "Pausa">
 <!ENTITY pip_pause_button_description "Pausa uppspelning">
 
-<!-- Notification channels names -->
-<!ENTITY default_notification_channel "&brandShortName;">
-
+<!ENTITY pref_notification_settings_link "Hantera aviseringsinställningar">
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "Webbläsare">
 <!ENTITY mls_notification_channel "&vendorShortName; platstjänst">
 <!ENTITY download_notification_channel "Hämtningar">
-<!ENTITY media_notification_channel "Medieuppspelning">
-<!-- These push notifications come without a specific channel and/or name from Leanplum -->
-<!ENTITY leanplum_default_notifications_channel "&brandShortName; Push-meddelanden">
 <!ENTITY media_notification_channel2 "Ljud och video">
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
 <!ENTITY leanplum_default_notifications_channel2 "&vendorShortName; tips och tricks">

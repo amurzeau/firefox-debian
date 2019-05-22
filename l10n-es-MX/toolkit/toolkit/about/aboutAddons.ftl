@@ -225,7 +225,19 @@ shortcuts-modifier-mac = Incluir Ctrl, Alt o ⌘
 shortcuts-modifier-other = Incluir Ctrl o Alt
 shortcuts-invalid = Combinación inválida
 shortcuts-card-collapse-button = Mostrar menos
+go-back-button =
+    .tooltiptext = Regresar
 
 ## Add-on actions
 
 remove-addon-button = Eliminar
+disable-addon-button = Deshabilitar
+enable-addon-button = Habilitar
+addons-enabled-heading = Habilitado
+addons-disabled-heading = Deshabilitado
+addon-detail-author-label = Autor
+addon-detail-version-label = Versión
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (deshabilitado)

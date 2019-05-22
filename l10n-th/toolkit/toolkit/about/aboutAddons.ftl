@@ -77,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = อัปเดตล่าสุด
 detail-contributions-description = นักพัฒนาส่วนเสริมนี้ใคร่ขอให้คุณช่วยสนับสนุนการพัฒนาอย่างต่อเนื่องโดยการสมทบทุนสักเล็กน้อย
+detail-contributions-button = มีส่วนร่วม
+    .title = มีส่วนร่วมกับการพัฒนาส่วนเสริมนี้
+    .accesskey = ม
 detail-update-type =
     .value = การอัปเดตอัตโนมัติ
 detail-update-default =
@@ -88,6 +91,18 @@ detail-update-automatic =
 detail-update-manual =
     .label = ปิด
     .tooltiptext = ไม่ติดตั้งการอัปเดตโดยอัตโนมัติ
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = เรียกใช้ในหน้าต่างส่วนตัว
+detail-private-browsing-description2 = เมื่ออนุญาตแล้ว ส่วนขยายจะสามารถเข้าถึงกิจกรรมออนไลน์ของคุณขณะท่องเว็บแบบส่วนตัวได้ <label data-l10n-name="detail-private-browsing-learn-more">เรียนรู้เพิ่มเติม</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = ไม่อนุญาตในหน้าต่างส่วนตัว
+detail-private-browsing-on =
+    .label = อนุญาต
+    .tooltiptext = เปิดใช้งานในการท่องเว็บแบบส่วนตัว
+detail-private-browsing-off =
+    .label = ไม่อนุญาต
+    .tooltiptext = ปิดใช้งานในการท่องเว็บแบบส่วนตัว
 detail-home =
     .label = หน้าแรก
 detail-home-value =
@@ -206,3 +221,57 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = ติดตั้งการอัปเดต
     .tooltiptext = ติดตั้งการอัปเดตที่มีในรายการนี้
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = จัดการทางลัดส่วนขยาย
+    .accesskey = จ
+shortcuts-empty-message = ไม่มีทางลัดสำหรับส่วนขยายนี้
+shortcuts-no-addons = คุณไม่ได้เปิดใช้งานส่วนขยายใด ๆ
+shortcuts-no-commands = ส่วนขยายดังต่อไปนี้ไม่มีทางลัด:
+shortcuts-input =
+    .placeholder = พิมพ์ทางลัด
+shortcuts-browserAction = เปิดใช้งานส่วนขยาย
+shortcuts-pageAction = เปิดใช้งานการกระทำหน้า
+shortcuts-sidebarAction = เปิด/ปิดแถบข้าง
+shortcuts-modifier-mac = รวม Ctrl, Alt หรือ ⌘
+shortcuts-modifier-other = รวม Ctrl หรือ Alt
+shortcuts-letter = พิมพ์ตัวอักษร
+shortcuts-system = ไม่สามารถเขียนทับทางลัด { -brand-short-name }
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = มีการใช้งานอยู่แล้วโดย { $addon }
+shortcuts-card-expand-button =
+    { $numberToShow ->
+       *[other] แสดงเพิ่มเติมอีก { $numberToShow }
+    }
+shortcuts-card-collapse-button = แสดงน้อยลง
+go-back-button =
+    .tooltiptext = ย้อนกลับ
+
+## Add-on actions
+
+remove-addon-button = เอาออก
+disable-addon-button = ปิดใช้งาน
+enable-addon-button = เปิดใช้งาน
+expand-addon-button = ตัวเลือกเพิ่มเติม
+addons-enabled-heading = เปิดใช้งานอยู่
+addons-disabled-heading = ปิดใช้งานอยู่
+addon-detail-author-label = ผู้สร้าง
+addon-detail-version-label = รุ่น
+addon-detail-last-updated-label = อัปเดตล่าสุด
+addon-detail-homepage-label = หน้าแรก
+addon-detail-rating-label = การจัดอันดับ
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (ปิดใช้งานอยู่)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+       *[other] { $numberOfReviews } บทวิจารณ์
+    }

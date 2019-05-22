@@ -3,11 +3,14 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 cfr-doorhanger-extension-heading = Estenscioin consegiæ
+cfr-doorhanger-pintab-heading = Prova quésto: aponta sto feuggio
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Perché mi veddo questo?
 cfr-doorhanger-extension-cancel-button = Oua no
     .accesskey = O
 cfr-doorhanger-extension-ok-button = Azonzi oua
+    .accesskey = A
+cfr-doorhanger-pintab-ok-button = Aponta sto feuggio
     .accesskey = A
 cfr-doorhanger-extension-manage-settings-button = Gestisci inpostaçioin consegiæ
     .accesskey = G
@@ -41,9 +44,12 @@ cfr-doorhanger-extension-total-users =
         [one] { $total } utente
        *[other] { $total } utenti
     }
+cfr-doorhanger-pintab-description = Acedi façilmente a-i sciti ciù uzæ.  Tegni i sciti averti inte 'n feuggio (anche dòppo 'n re-inandio).
 
 ## These messages are steps on how to use the feature and are shown together.
 
 cfr-doorhanger-pintab-step1 = <b>Sciacca drito</b> in sciô feuggio quade t'eu amugiâ.
+cfr-doorhanger-pintab-step2 = Seleçionn-a <b>Aponta sto feuggio</b> da-o menû.
+cfr-doorhanger-pintab-step3 = Se o scito o l'à 'n agiornamento ti vediæ 'n balin bleu in sciô feuggio apontou.
 cfr-doorhanger-pintab-animation-pause = Pösa
 cfr-doorhanger-pintab-animation-resume = Repiggia

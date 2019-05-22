@@ -64,6 +64,8 @@ but will never be visible at the same time. -->
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "พ">
 
+<!-- Tab context menu -->
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -108,7 +110,6 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "แท็บที่ซ่อนอยู่">
 
 <!ENTITY  listAllTabs.label      "แสดงรายการแท็บทั้งหมด">
-
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
 <!ENTITY  allTabsMenu.searchTabs.label       "ค้นหาแท็บ">
@@ -130,6 +131,9 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "พิมพ์…">
 <!ENTITY printCmd.accesskey "พ">
 <!ENTITY printCmd.commandkey "p">
+
+<!ENTITY importFromAnotherBrowserCmd.label "นำเข้าจากเบราว์เซอร์อื่น…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "น">
 
 <!ENTITY taskManagerCmd.label "ตัวจัดการงาน">
 
@@ -213,6 +217,28 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenExit.label "ออกจากโหมดเต็มหน้าจอ">
 <!ENTITY fullScreenExit.accesskey "จ">
 
+ <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
+     for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "นำ Firefox ไปกับคุณ">
+<!ENTITY fxa.signin.description.label "รับที่คั่นหน้า, ประวัติ, รหัสผ่าน และการตั้งค่าอื่น ๆ ของคุณในอุปกรณ์ทั้งหมดของคุณ">
+<!ENTITY fxa.signin.button.label "เปิด &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
+     for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "ตรวจสอบอีเมลของคุณ">
+<!ENTITY fxa.unverified.description.label "คุณจำเป็นต้องยืนยันบัญชีของคุณก่อนจึงจะสามารถซิงค์ได้">
+<!ENTITY fxa.unverified.button.label "เปิดการตั้งค่า &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "ลงชื่อเข้าเป็น">
+<!ENTITY fxa.menu.manageAccount.label "จัดการบัญชี…">
+<!ENTITY fxa.menu.syncSettings.label "การตั้งค่า &syncBrand.shortName.label;…">
+<!ENTITY fxa.menu.connectAnotherDevice.label "&syncedTabs.sidebar.connectAnotherDevice;">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "เชื่อมต่ออุปกรณ์อื่น…">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
+
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
      respectively before and after the domain requiring fullscreen.
@@ -229,6 +255,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "ออกจากภาพเต็มหน้าจอ (esc)">
 <!ENTITY leaveDOMFullScreen.label "ออกจากภาพเต็มหน้าจอ">
 <!ENTITY leaveDOMFullScreen.accesskey "อ">
+
+<!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
+     these two strings are used when right-clicking on a video in the
+     content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.label "ภาพที่เล่นควบคู่">
+<!ENTITY pictureInPicture.accesskey "ภ">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
@@ -278,7 +310,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "เปิดแผงคำขอตำแหน่งที่ตั้ง">
 <!ENTITY urlbar.autoplayNotificationAnchor.tooltip        "เปิดแผงการเล่นอัตโนมัติ">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "เปิดแผงข้อความการติดตั้งส่วนเสริม">
-<!ENTITY urlbar.canvasNotificationAnchor.tooltip          "จัดการการอนุญาตการส่งออกผืนผ้าใบ">
+<!ENTITY urlbar.canvasNotificationAnchor.tooltip          "จัดการสิทธิอนุญาตการส่งออกผืนผ้าใบ">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "เปิดแผงข้อความที่เก็บข้อมูลออฟไลน์">
 <!ENTITY urlbar.passwordNotificationAnchor.tooltip        "เปิดแผงข้อความบันทึกรหัสผ่าน">
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "จัดการการใช้ปลั๊กอิน">
@@ -286,7 +318,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "จัดเก็บข้อมูลในที่เก็บข้อมูลถาวร">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "เบราว์เซอร์อยู่ภายใต้การควบคุมระยะไกล">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "เปิดแผง ​Web Authentication">
-<!ENTITY urlbar.storageAccessAnchor.tooltip               "เปิดแผงสิทธิ์กิจกรรมการเรียกดู">
+<!ENTITY urlbar.storageAccessAnchor.tooltip               "เปิดแผงสิทธิอนุญาตกิจกรรมการท่องเว็บ">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "จัดการการแบ่งปันกล้องและ/หรือไมโครโฟนของคุณกับไซต์">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "จัดการการแบ่งปันไมโครโฟนของคุณกับไซต์">
@@ -408,6 +440,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.label       "ค่ากำหนด">
 <!ENTITY preferencesCmdUnix.accesskey     "ด">
 
+<!ENTITY logins.label                           "การเข้าสู่ระบบและรหัสผ่าน">
+
 <!ENTITY clearRecentHistory.label               "ล้างประวัติล่าสุด…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
@@ -437,6 +471,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.clearRecent.label "ล้างประวัติล่าสุด…">
 <!ENTITY appMenuHistory.restoreSession.label "เรียกคืนวาระก่อนหน้า">
 <!ENTITY appMenuHistory.viewSidebar.label "ดูแถบข้างประวัติ">
+<!ENTITY appMenuHistory.hideSidebar.label "ซ่อนแถบข้างประวัติ">
 <!ENTITY appMenuHistory.recentHistory.label "ประวัติล่าสุด">
 <!ENTITY appMenuHelp.label "ช่วยเหลือ">
 
@@ -465,6 +500,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "ลงชื่อเข้า Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "จัดการอุปกรณ์…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "ดูแถบข้างแท็บที่ซิงค์">
+<!ENTITY appMenuRemoteTabs.hidesidebar.label "ซ่อนแถบข้างแท็บที่ซิงค์">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "เชื่อมต่ออุปกรณ์อื่น">
 
 <!ENTITY appMenuRecentHighlights.label "รายการเด่นล่าสุด">
@@ -705,7 +741,7 @@ items are mutually exclusive. -->
 items are mutually exclusive. -->
 <!ENTITY mediaMute.label             "ปิดเสียง">
 <!ENTITY mediaMute.accesskey         "ส">
-<!ENTITY mediaUnmute.label           "เปิดเสียง">
+<!ENTITY mediaUnmute.label           "เลิกปิดเสียง">
 <!ENTITY mediaUnmute.accesskey       "ส">
 <!ENTITY mediaPlaybackRate2.label     "ความเร็วในการเล่น">
 <!ENTITY mediaPlaybackRate2.accesskey "ร">
@@ -875,11 +911,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.clearSiteData "ล้างคุกกี้และข้อมูลไซต์…">
 
-<!ENTITY identity.permissions "การอนุญาต">
-<!ENTITY identity.permissionsEmpty "คุณไม่ได้อนุญาตไซต์นี้ด้วยสิทธิพิเศษใด ๆ">
+<!ENTITY identity.permissions "สิทธิอนุญาต">
+<!ENTITY identity.permissionsEmpty "คุณไม่ได้อนุญาตไซต์นี้ด้วยสิทธิอนุญาตพิเศษใด ๆ">
 <!ENTITY identity.permissionsReloadHint "คุณอาจจำเป็นต้องโหลดหน้าใหม่เพื่อให้การเปลี่ยนแปลงมีผล">
-<!ENTITY identity.permissionsPreferences.tooltip "เปิดค่ากำหนดการอนุญาต">
-
+<!ENTITY identity.permissionsPreferences.tooltip "เปิดค่ากำหนดสิทธิอนุญาต">
 <!ENTITY identity.contentBlockingPreferences.tooltip "เปิดค่ากำหนดการปิดกั้นเนื้อหา">
 
 
@@ -931,6 +966,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSignIn.label             "ลงชื่อเข้า &syncBrand.shortName.label;…">
 <!ENTITY syncSignIn.accesskey         "ล">
 <!ENTITY syncSyncNowItem.label        "ซิงค์ตอนนี้">
+<!ENTITY syncSyncNowItemSyncing.label "กำลังซิงค์…">
 <!ENTITY syncSyncNowItem.accesskey    "ง">
 <!ENTITY syncReAuthItem.label         "เชื่อมต่อกับ &syncBrand.shortName.label; ใหม่…">
 <!ENTITY syncReAuthItem.accesskey     "ช">
@@ -1073,6 +1109,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateAvailable.acceptButton.accesskey "ด">
 <!ENTITY updateAvailable.cancelButton.label "ไม่ใช่ตอนนี้">
 <!ENTITY updateAvailable.cancelButton.accesskey "ม">
+
 <!ENTITY updateAvailable.panelUI.label "ดาวน์โหลดการอัปเดต &brandShorterName;">
 
 <!ENTITY updateManual.message "ดาวน์โหลดสำเนาใหม่ของ &brandShorterName; และเราจะช่วยคุณติดตั้ง">
@@ -1133,8 +1170,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
 <!ENTITY addonPostInstallMessage.label "จัดการส่วนเสริมของคุณโดยคลิก <image class='addon-addon-icon'/> ใน <image class='addon-toolbar-icon'/> เมนู">
+<!ENTITY addonPostInstall.incognito.checkbox.label "อนุญาตให้ส่วนขยายนี้ทำงานในหน้าต่างส่วนตัว">
+<!ENTITY addonPostInstall.incognito.checkbox.accesskey "อ">
 
-<!ENTITY addonPrivateBrowsing.header.label "ส่วนขยายในหน้าต่างส่วนตัว">
+<!ENTITY addonPrivateBrowsing.header2.label "การเปลี่ยนแปลงกับส่วนขยายในหน้าต่างส่วนตัว">
+<!ENTITY addonPrivateBrowsing.body2.label "ส่วนขยายใหม่ใด ๆ ที่คุณเพิ่มไปยัง &brandShorterName; จะไม่ทำงานในหน้าต่างส่วนตัวนอกจากคุณจะอนุญาตสิ่งนี้ในการตั้งค่า">
+<!ENTITY addonPrivateBrowsing.learnMore.label "เรียนรู้วิธีการจัดการการตั้งค่าส่วนขยาย">
 <!ENTITY addonPrivateBrowsing.okButton.label "ตกลง เข้าใจแล้ว">
 <!ENTITY addonPrivateBrowsing.okButton.accesskey "ต">
 <!ENTITY addonPrivateBrowsing.manageButton.label "จัดการส่วนขยาย">

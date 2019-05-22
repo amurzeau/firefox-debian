@@ -5,7 +5,7 @@
 addons-window =
     .title = Gerenciador de extensões
 search-header =
-    .placeholder = Pesquisar addons.mozilla.org
+    .placeholder = Pesquisar em addons.mozilla.org
     .searchbuttonlabel = Pesquisar
 search-header-shortcut =
     .key = f
@@ -31,14 +31,14 @@ preferences =
        *[other] Preferências do { -brand-short-name }
     }
 tools-menu =
-    .tooltiptext = Ferramentas para todos os complementos
+    .tooltiptext = Ferramentas para todas as extensões
 show-unsigned-extensions-button =
     .label = Algumas extensões não puderam ser verificadas
 show-all-extensions-button =
     .label = Mostrar todas as extensões
 debug-addons =
     .label = Depurar extensões
-    .accesskey = B
+    .accesskey = x
 cmd-show-details =
     .label = Mostrar mais informações
     .accesskey = E
@@ -75,13 +75,16 @@ discover-description =
     funcionalidades ou estilos extras. Experimente um painel que otimiza seu tempo, um notificador sobre o clima ou um tema para tornar seu { -brand-short-name }
     único.
 discover-footer =
-    Quando estiver conectado à internet, este painel apresentará alguns
-      dos melhores e mais populares complementos para você experimentar.
+    Quando estiver conectado à internet, este painel apresenta algumas
+    das melhores e mais populares extensões para você experimentar.
 detail-version =
     .label = Versão
 detail-last-updated =
     .label = Última atualização
 detail-contributions-description = O autor solicita o seu apoio no desenvolvimento através de uma pequena contribuição.
+detail-contributions-button = Contribua
+    .title = Contribua com o desenvolvimento desta extensão
+    .accesskey = C
 detail-update-type =
     .value = Atualização automática
 detail-update-default =
@@ -94,8 +97,15 @@ detail-update-manual =
     .label = Desativada
     .tooltiptext = Não instalar atualizações automaticamente
 # Used as a description for the option to allow or block an add-on in private windows.
-detail-private-browsing-label = Executar em janelas privativas
-detail-private-browsing-description = A extensão funcionará em janelas privativas e terá acesso à sua atividade online. <label data-l10n-name="detail-private-browsing-learn-more">Saiba mais</label>
+detail-private-browsing-label = Funcionar em janelas privativas
+detail-private-browsing-description2 = Quando permitido, a extensão terá acesso à sua atividade online durante a navegação privativa. <label data-l10n-name="detail-private-browsing-learn-more">Saiba mais</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = Não permitido em janelas privativas
+detail-private-disallowed-description = Esta extensão não funciona durante a navegação privativa. <label data-l10n-name="detail-private-browsing-learn-more">Saiba mais</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Requer acesso a janelas privativas
+detail-private-required-description = Esta extensão tem acesso a suas atividades online durante a navegação privativa. <label data-l10n-name="detail-private-browsing-learn-more">Saiba mais</label>
 detail-private-browsing-on =
     .label = Permitir
     .tooltiptext = Ativar na navegação privativa
@@ -135,10 +145,10 @@ detail-rating =
 addon-restart-now =
     .label = Reiniciar agora
 disabled-unsigned-heading =
-    .value = Algumas extensões foram desabilitadas
+    .value = Algumas extensões foram desativadas
 disabled-unsigned-description = As seguintes extensões não foram verificadas para uso no { -brand-short-name }. Você pode <label data-l10n-name="find-addons">procurar substitutos</label> ou solicitar que o desenvolvedor peça a sua verificação.
 disabled-unsigned-learn-more = Saiba mais sobre nossos esforços para ajudar a manter os usuários seguros.
-disabled-unsigned-devinfo = Os desenvolvedores interessados que seus complementos sejam verificados, devem ler o nosso <label data-l10n-name="learn-more">manual</label>.
+disabled-unsigned-devinfo = Desenvolvedores interessados em ter suas extensões verificadas devem ler nosso <label data-l10n-name="learn-more">manual</label>.
 plugin-deprecation-description = Faltando alguma coisa? Alguns plugins não são mais suportados pelo { -brand-short-name }. <label data-l10n-name="learn-more">Saiba mais.</label>
 legacy-warning-show-legacy = Mostrar extensões legadas
 legacy-extensions =
@@ -163,18 +173,18 @@ extensions-view-available-updates =
 ## These are global warnings
 
 extensions-warning-safe-mode-label =
-    .value = Todos as extensões foram desabilitadas pelo modo seguro.
+    .value = Todos as extensões foram desativadas pelo modo de segurança.
 extensions-warning-safe-mode-container =
     .tooltiptext = { extensions-warning-safe-mode-label.value }
 extensions-warning-check-compatibility-label =
-    .value = A verificação de compatibilidade está desabilitada. Pode ter complementos incompatíveis.
+    .value = A verificação de compatibilidade de extensões está desativada. Você pode ter extensões incompatíveis.
 extensions-warning-check-compatibility-container =
     .tooltiptext = { extensions-warning-check-compatibility-label.value }
 extensions-warning-check-compatibility-enable =
     .label = Ativar
     .tooltiptext = Ativar verificação de compatibilidade de extensões
 extensions-warning-update-security-label =
-    .value = A verificação de segurança da conexão está desativada. Atualizações de complementos podem comprometer seu computador.
+    .value = A verificação de segurança de atualizações de extensões está desativada. Atualizações de extensões podem comprometer seu computador.
 extensions-warning-update-security-container =
     .tooltiptext = { extensions-warning-update-security-label.value }
 extensions-warning-update-security-enable =
@@ -204,10 +214,10 @@ extensions-updates-update-addons-automatically =
 ## extensions-updates-update-addons-automatically.label menu item).
 
 extensions-updates-reset-updates-to-automatic =
-    .label = Definir atualização automática para todos
+    .label = Definir atualização automática de tudo
     .accesskey = D
 extensions-updates-reset-updates-to-manual =
-    .label = Definir atualização manual para todos
+    .label = Definir atualização manual de tudo
     .accesskey = D
 
 ## Status messages displayed when updating add-ons
@@ -246,6 +256,10 @@ shortcuts-modifier-other = Incluir Ctrl ou Alt
 shortcuts-invalid = Combinação inválida
 shortcuts-letter = Digite uma letra
 shortcuts-system = Não é possível substituir um atalho do { -brand-short-name }
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Já em uso por { $addon }
 shortcuts-card-expand-button =
     { $numberToShow ->
         [one] Mostrar mais { $numberToShow }
@@ -257,8 +271,52 @@ go-back-button =
 
 ## Add-on actions
 
+report-addon-button = Relatar
 remove-addon-button = Remover
 disable-addon-button = Desativar
 enable-addon-button = Ativar
+expand-addon-button = Mais opções
 addons-enabled-heading = Ativado
 addons-disabled-heading = Desativado
+ask-to-activate-button = Perguntar para ativar
+always-activate-button = Sempre ativar
+never-activate-button = Nunca ativar
+addon-detail-author-label = Autor
+addon-detail-version-label = Versão
+addon-detail-last-updated-label = Última atualização
+addon-detail-homepage-label = Página inicial
+addon-detail-rating-label = Classificação
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (desativado)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } avaliação
+       *[other] { $numberOfReviews } avaliações
+    }
+
+## Pending uninstall message bar
+
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> foi removido.
+pending-uninstall-undo-button = Desfazer
+addon-detail-updates-label = Permitir atualização automática
+addon-detail-updates-radio-default = Padrão
+addon-detail-updates-radio-on = Ligado
+addon-detail-updates-radio-off = Desligado
+addon-detail-update-check-label = Verificar se há atualizações
+install-update-button = Atualizar
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Permitida em janelas privativas
+addon-detail-private-browsing-help = Com permissão, a extensão tem acesso à sua atividade online durante a navegação privativa. <a data-l10n-name="learn-more">Saiba mais</a>
+addon-detail-private-browsing-allow = Permitir
+addon-detail-private-browsing-disallow = Não permitir
+available-updates-heading = Atualizações disponíveis
+recent-updates-heading = Atualizações recentes

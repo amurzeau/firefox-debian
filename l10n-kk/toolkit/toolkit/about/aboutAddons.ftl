@@ -77,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = Соңғы жаңартылған
 detail-contributions-description = Бұл кеңейтудің әзірлеушісі сізден шағын ғана демеушілік етіп, оның жұмысын қолдау көрсетуді сұраған.
+detail-contributions-button = Үлес қосу
+    .title = Бұл қосымшаның өндірісіне үлес қосу
+    .accesskey = с
 detail-update-type =
     .value = Автожаңартулар
 detail-update-default =
@@ -90,7 +93,14 @@ detail-update-manual =
     .tooltiptext = Жаңартуларды автоорнатпау
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Жекелік шолу режиміндегі терезелерде орындау
-detail-private-browsing-description = Кеңейту жекелік терезелерінде жұмыс істейтін болады, және сіздің желідегі белсенділікке қол жеткізе алады. <label data-l10n-name="detail-private-browsing-learn-more">Көбірек білу</label>
+detail-private-browsing-description2 = Рұқсат етілген кезде, жекелік шолу кезінде кеңейтулер сіздің желілік белсенділігіңізге қол жеткізе алады. <label data-l10n-name="detail-private-browsing-learn-more">Көбірек білу</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overriden by the user.
+detail-private-disallowed-label = Жекелік шолу терезелерінде рұқсат етілмеген
+detail-private-disallowed-description = Бұл кеңейту жекелік шолу режимінде жасамайды. <label data-l10n-name="detail-private-browsing-learn-more">Көбірек білу</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Жекелік терезелеріне қатынау рұқсатын талап етеді
+detail-private-required-description = Бұл кеңейту жекелік шолу кезінде сіздің желідегі әрекеттеріңізге қол жеткізе алады. <label data-l10n-name="detail-private-browsing-learn-more">Көбірек білу</label>
 detail-private-browsing-on =
     .label = Рұқсат ету
     .tooltiptext = Жекелік шолу режимінде іске қосу
@@ -236,6 +246,10 @@ shortcuts-modifier-other = Ctrl немесе Alt қосыңыз
 shortcuts-invalid = Комбинация жарамсыз
 shortcuts-letter = Әріпті теріңіз
 shortcuts-system = { -brand-short-name } жарлығын қайта анықтау мүмкін емес
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = { $addon } қолдануда
 shortcuts-card-expand-button =
     { $numberToShow ->
        *[other] Тағы { $numberToShow } көрсету
@@ -249,5 +263,22 @@ go-back-button =
 remove-addon-button = Өшіру
 disable-addon-button = Сөндіру
 enable-addon-button = Іске қосу
+expand-addon-button = Көбірек опциялар
 addons-enabled-heading = Іске қосулы
 addons-disabled-heading = Сөндірілген
+addon-detail-author-label = Авторы
+addon-detail-version-label = Нұсқасы
+addon-detail-last-updated-label = Соңғы жаңартылған
+addon-detail-homepage-label = Үй парағы
+addon-detail-rating-label = Рейтингі
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (сөндірілген)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+       *[other] { $numberOfReviews } пікір
+    }
