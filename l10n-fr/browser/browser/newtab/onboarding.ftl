@@ -9,7 +9,9 @@ onboarding-button-label-learn-more = En savoir plus
 onboarding-button-label-try-now = Essayer
 onboarding-button-label-get-started = Pour commencer
 onboarding-welcome-header = Bienvenue dans { -brand-short-name }
+onboarding-welcome-body = Vous avez le navigateur.<br/>Découvrez les autres ressources de { -brand-product-name }.
 onboarding-welcome-learn-more = Découvrir tous les avantages.
+onboarding-join-form-header = Rejoignez { -brand-product-name }
 onboarding-join-form-body = Saisissez votre adresse électronique pour vous lancer.
 onboarding-join-form-email =
     .placeholder = Adresse électronique
@@ -23,7 +25,15 @@ onboarding-start-browsing-button-label = Commencer la navigation
 
 onboarding-benefit-products-title = Des logiciels à votre service
 onboarding-benefit-products-text = Améliorez votre productivité grâce à un ensemble d’outils qui respectent votre vie privée sur tous vos appareils.
+onboarding-benefit-knowledge-title = Des connaissances utiles
+onboarding-benefit-knowledge-text = Apprenez tout ce qu’il faut savoir pour naviguer intelligemment et en sécurité.
 onboarding-benefit-privacy-title = Le respect de la vie privée, pour de vrai
+# "Personal Data Promise" is a concept that should be translated consistently
+# across the product. It refers to a concept shown elsewhere to the user: "The
+# Firefox Personal Data Promise is the way we honor your data in everything we
+# make and do. We take less data. We keep it safe. And we make sure that we are
+# transparent about how we use it."
+onboarding-benefit-privacy-text = Tout ce que nous faisons respecte notre « Garantie en matière de données personnelles » : collecter moins de données, les protéger, ne rien cacher.
 
 ## These strings belong to the individual onboarding messages.
 
@@ -52,26 +62,53 @@ onboarding-tracking-protection-button =
         [windows] Modifier les options
        *[other] Modifier les préférences
     }
+onboarding-tracking-protection-title2 = Protection contre le pistage
+onboarding-tracking-protection-text2 = { -brand-short-name } empêche les sites web de vous pister pendant votre navigation, ce qui complique la tâche des publicités qui tentent de vous suivre sur le Web.
+onboarding-tracking-protection-button2 = Principes de fonctionnement
 onboarding-data-sync-title = Emportez vos paramètres avec vous
 # "Sync" is short for synchronize.
 onboarding-data-sync-text = Synchronisez vos marque-pages et vos mots de passe partout où vous utilisez { -brand-product-name }.
 onboarding-data-sync-button = Activer { -sync-brand-short-name }
+# "Sync" is short for synchronize.
+onboarding-data-sync-text2 = Synchronisez marque-pages, mots de passe, etc., partout où vous utilisez { -brand-product-name }.
+onboarding-data-sync-button2 = Se connecter à { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Suivez de près les fuites de données
 onboarding-firefox-monitor-text = { -monitor-brand-name } vérifie si votre adresse électronique fait partie d’une fuite de données et vous alerte si elle apparaît dans une nouvelle fuite de données.
 onboarding-firefox-monitor-button = S’abonner aux alertes
-onboarding-browse-privately-button = Ouvrir une fenêtre de navigation privée
+onboarding-browse-privately-title = Naviguez en toute confidentialité
+onboarding-browse-privately-text = La navigation privée efface vos historiques de navigation et de recherches pour que les autres utilisateurs de votre ordinateur n’en sachent rien.
+onboarding-browse-privately-button =
+    Ouvrir une fenêtre de
+    navigation privée
 onboarding-firefox-send-title = Protégez les fichiers que vous partagez
 onboarding-firefox-send-text = { -send-brand-name } protège les fichiers que vous partagez avec un chiffrement de bout en bout et un lien qui expire automatiquement.
+onboarding-firefox-send-text2 = Envoyez vos fichiers sur { -send-brand-name } pour les partager avec un chiffrement de bout en bout et un lien qui expire automatiquement.
 onboarding-firefox-send-button = Essayer { -send-brand-name }
-onboarding-mobile-phone-title = Installer { -brand-product-name } sur votre téléphone
+onboarding-mobile-phone-title = Installez { -brand-product-name } sur votre téléphone
 onboarding-mobile-phone-text = Téléchargez { -brand-product-name } pour iOS ou Android et synchronisez vos données entre vos appareils.
 # "Mobile" is short for mobile/cellular phone, "Browser" is short for web
 # browser.
 onboarding-mobile-phone-button = Télécharger le navigateur mobile
 onboarding-send-tabs-title = Envoyez-vous des onglets
+# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
+# tab's context menu.
+onboarding-send-tabs-text = L’envoi d’onglets partage instantanément des pages entre vos appareils sans avoir à copier, coller ou quitter le navigateur.
+onboarding-send-tabs-button =
+    Commencer à utiliser
+    « Envoyer l’onglet »
+onboarding-pocket-anywhere-title = Lisez et écoutez, où que vous soyez
+# "downtime" refers to the user's free/spare time.
+onboarding-pocket-anywhere-text = { -pocket-brand-name } sauvegarde vos contenus préférés pour que vous puissiez les lire, les écouter et les regarder pendant votre temps libre, même si vous êtes hors ligne.
+onboarding-pocket-anywhere-text2 = Enregistrez vos contenus préférés hors connexion avec l’application { -pocket-brand-name } pour les lire, regarder ou écouter quand bon vous semble.
 onboarding-pocket-anywhere-button = Essayer { -pocket-brand-name }
+onboarding-lockwise-passwords-title = Emmenez vos mots de passe partout
 onboarding-lockwise-passwords-text = { -lockwise-brand-name } conserve vos mots de passe en lieu sûr, vous permettant ainsi de vous connecter facilement à vos comptes.
 onboarding-lockwise-passwords-button = Installer { -lockwise-brand-name }
+onboarding-lockwise-passwords-text2 = Conservez en sécurité les mots de passe que vous enregistrez et connectez-vous en toute simplicité à vos comptes avec { -lockwise-brand-name }.
+onboarding-lockwise-passwords-button2 = Obtenir l’application
+onboarding-facebook-container-title = Fixez les limites avec Facebook
+onboarding-facebook-container-text = { -facebook-container-brand-name } garde votre identité Facebook séparée de tout le reste, rendant plus difficile de vous pister de site en site.
+onboarding-facebook-container-text2 = { -facebook-container-brand-name } conserve votre profil séparé de tout le reste. Il est ainsi plus difficile pour Facebook de vous cibler avec des publicités.
 onboarding-facebook-container-button = Installer l’extension
 
 ## Message strings belonging to the Return to AMO flow
