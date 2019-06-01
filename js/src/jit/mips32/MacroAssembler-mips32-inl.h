@@ -820,19 +820,23 @@ void MacroAssembler::branchTestSymbol(Condition cond, const ValueOperand& value,
 
 void MacroAssembler::branchTestBigInt(Condition cond, Register tag,
                                       Label* label) {
-  branchTestBigIntImpl(cond, tag, label);
+  MOZ_ASSERT(cond == Equal || cond == NotEqual);
+  ma_b(tag, ImmTag(JSVAL_TAG_BIGINT), label, cond);
 }
 
 void MacroAssembler::branchTestBigInt(Condition cond, const BaseIndex& address,
                                       Label* label) {
   SecondScratchRegisterScope scratch2(*this);
-  splitTag(value, scratch2);
+  computeEffectiveAddress(address, scratch2);
+  splitTag(scratch2, scratch2);
   branchTestBigInt(cond, scratch2, label);
 }
 
 void MacroAssembler::branchTestBigInt(Condition cond, const ValueOperand& value,
                                       Label* label) {
-  branchTestBigInt(cond, value.typeReg(), label);
+  SecondScratchRegisterScope scratch2(*this);
+  splitTag(value, scratch2);
+  branchTestBigInt(cond, scratch2, label);
 }
 
 void MacroAssembler::branchTestBigIntTruthy(bool b, const ValueOperand& value,
