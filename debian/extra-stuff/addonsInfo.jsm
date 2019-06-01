@@ -8,6 +8,7 @@ function compare(a, b) {
 
 function dump_addons(path) {
   AddonManager.getAllAddons().then(function(addons) {
+    var resProtoHandler;
     var file = Cc["@mozilla.org/file/local;1"]
                .createInstance(Ci.nsIFile);
     file.initWithPath(path);
@@ -29,6 +30,13 @@ function dump_addons(path) {
       out.writeString("\n");
       if (extension.getResourceURI) {
         var location = extension.getResourceURI("");
+        if (location.scheme == "resource") {
+            if (!resProtoHandler) {
+                resProtoHandler = Services.io.getProtocolHandler("resource")
+                                  .QueryInterface(Ci.nsIResProtocolHandler);
+            }
+            location = Services.io.newURI(resProtoHandler.resolveURI(location));
+        }
         if (location instanceof Ci.nsIJARURI) {
             location = location.JARFile;
         }
