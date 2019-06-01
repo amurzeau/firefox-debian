@@ -1,3 +1,21 @@
+firefox (67.0-2) unstable; urgency=medium
+
+  * debian/extra-stuff/addonsInfo.jsm:
+    - Avoid running -dumps-addons-info without a running Firefox counting as a
+      crash.
+    - Support addons in resource:// locations in -dump-addons-info
+
+  * js/src/wasm/WasmSignalHandlers.cpp: Include struct definitions for
+    user_vfp and user_vfp_exc. Fixes FTBFS on armhf. bz#1526653.
+  * js/src/jit/mips*/MacroAssembler-mips*-inl.h,
+    js/src/jit/mips*/Trampoline-mips*.cpp: Fix functions: branchTestBigInt,
+    negPtr, generateVMWrapper on MIPS. bz#1544631.
+  * toolkit/modules/sessionstore/PrivacyFilter.jsm: Update and harden form
+    data filtering for privacy to account for no data being passed in.
+    bz#1553413.
+
+ -- Mike Hommey <glandium@debian.org>  Sat, 01 Jun 2019 09:18:27 +0900
+
 firefox (67.0-1) experimental; urgency=medium
 
   * New upstream release.
