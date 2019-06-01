@@ -1,3 +1,12 @@
+firefox (67.0-3) unstable; urgency=medium
+
+  * media/webrtc/trunk/webrtc/system_wrappers/source/cpu_features.cc: Remove
+    WebRtc_GetCPUFeaturesARM from cpu_features.cc. It is already in
+    cpu_features_linux.c (and is not in cpu_features.cc in webrtc upstream).
+    Fixes FTBFS on armhf. bz#1523162.
+
+ -- Mike Hommey <glandium@debian.org>  Sat, 01 Jun 2019 13:44:05 +0900
+
 firefox (67.0-2) unstable; urgency=medium
 
   * debian/extra-stuff/addonsInfo.jsm:
