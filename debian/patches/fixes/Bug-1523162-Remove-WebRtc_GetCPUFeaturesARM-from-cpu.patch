@@ -1,0 +1,34 @@
+From: Mike Hommey <mh@glandium.org>
+Date: Sat, 1 Jun 2019 13:26:05 +0900
+Subject: Bug 1523162 - Remove WebRtc_GetCPUFeaturesARM from cpu_features.cc.
+
+It is already in cpu_features_linux.c (and is not in cpu_features.cc in
+webrtc upstream).
+---
+ .../webrtc/system_wrappers/source/cpu_features.cc   | 13 -------------
+ 1 file changed, 13 deletions(-)
+
+diff --git a/media/webrtc/trunk/webrtc/system_wrappers/source/cpu_features.cc b/media/webrtc/trunk/webrtc/system_wrappers/source/cpu_features.cc
+index 92db38c01c7f..7417f53d5967 100644
+--- a/media/webrtc/trunk/webrtc/system_wrappers/source/cpu_features.cc
++++ b/media/webrtc/trunk/webrtc/system_wrappers/source/cpu_features.cc
+@@ -67,19 +67,6 @@ static int GetCPUInfo(CPUFeature feature) {
+   (void)feature;
+   return 0;
+ }
+-
+-#if !defined(ANDROID)
+-#ifdef WEBRTC_ARCH_ARM_V7
+-uint64_t WebRtc_GetCPUFeaturesARM(void) {
+-  return kCPUFeatureARMv7
+-#ifdef WEBRTC_ARCH_ARM_NEON
+-         | kCPUFeatureNEON
+-#endif
+-         | kCPUFeatureVFPv3;
+-}
+-#endif // WEBRTC_ARCH_ARM_V7
+-#endif // !ANDROID
+-
+ #endif
+ 
+ WebRtc_CPUInfo WebRtc_GetCPUInfo = GetCPUInfo;
