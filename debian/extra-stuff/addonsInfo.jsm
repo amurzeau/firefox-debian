@@ -1,4 +1,5 @@
 const {XPCOMUtils} = ChromeUtils.import("resource://gre/modules/XPCOMUtils.jsm");
+const {Services} = ChromeUtils.import("resource://gre/modules/Services.jsm");
 const {AddonManager} = ChromeUtils.import("resource://gre/modules/AddonManager.jsm");
 
 function compare(a, b) {
@@ -60,6 +61,9 @@ function dump_addons(path) {
       out.writeString("\n");
     });
     out.close();
+    // Avoid running -dumps-addons-info without a running Firefox counting as
+    // a crash.
+    Services.startup.trackStartupCrashEnd();
   });
 }
 
