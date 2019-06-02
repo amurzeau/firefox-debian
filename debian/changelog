@@ -1,3 +1,15 @@
+firefox (67.0-4) unstable; urgency=medium
+
+  * debian/rules: Work around FTBFS on mips* by disabling webrtc
+    Build fails because of missing configurations for mips*.
+  * debian/control*: Build-Conflicts with libnss3-dev 2:3.44-1.
+    Closes: #929846.
+
+  * js/src/jit/mips32/MacroAssembler-mips32-inl.h: Fix FTBFS on mips/mipsel.
+    bz#1556197.
+
+ -- Mike Hommey <glandium@debian.org>  Sun, 02 Jun 2019 13:13:13 +0900
+
 firefox (67.0-3) unstable; urgency=medium
 
   * media/webrtc/trunk/webrtc/system_wrappers/source/cpu_features.cc: Remove
