@@ -21,6 +21,7 @@ policy-Bookmarks = Permet de créer des marque-pages dans la Barre personnelle, 
 policy-CaptivePortal = Permet ou interdit la prise en charge du portail captif.
 policy-CertificatesDescription = Permet d’ajouter des certificats ou d’utiliser des certificats prédéfinis.
 policy-Cookies = Permet ou interdit aux sites de définir des cookies.
+policy-DefaultDownloadDirectory = Définit le répertoire de téléchargement par défaut.
 policy-DisableAppUpdate = Empêche le navigateur de se mettre à jour.
 policy-DisableBuiltinPDFViewer = Désactive PDF.js, la visionneuse PDF intégrée dans { -brand-short-name }.
 policy-DisableDeveloperTools = Bloque l’accès aux outils de développement.
@@ -45,6 +46,7 @@ policy-DisplayBookmarksToolbar = Affiche la barre personnelle par défaut.
 policy-DisplayMenuBar = Affiche la barre de menus par défaut.
 policy-DNSOverHTTPS = Permet de configurer le DNS via HTTPS.
 policy-DontCheckDefaultBrowser = Désactive la vérification du navigateur par défaut au démarrage.
+policy-DownloadDirectory = Permet de définir et verrouiller le répertoire de téléchargement.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Active ou désactive le blocage de contenu et permet de verrouiller ce choix.
 # A “locked” extension can’t be disabled or removed by the user. This policy
@@ -52,6 +54,7 @@ policy-EnableTrackingProtection = Active ou désactive le blocage de contenu et 
 # English or translate them as verbs.
 policy-Extensions = Installe, désinstalle ou verrouille les extensions. L’option d’installation accepte des URL ou des chemins comme paramètres. Les options Désinstaller et Verrouiller utilisent les identifiants des extensions.
 policy-ExtensionUpdate = Activer ou désactiver la mise à jour automatique des extensions.
+policy-FirefoxHome = Configure l’accueil de Firefox.
 policy-FlashPlugin = Autorise ou non l’utilisation du plugin Flash.
 policy-HardwareAcceleration = Si faux, désactive l’accélération matérielle.
 # “lock” means that the user won’t be able to change this setting
@@ -67,6 +70,7 @@ policy-OverridePostUpdatePage = Contrôle la page « Nouveautés » après une
 policy-Permissions = Configure les permissions pour la caméra, le microphone, la localisation et les notifications.
 policy-PopupBlocking = Autorise certains sites web à afficher des popups par défaut.
 policy-Preferences = Définit et verrouille la valeur d’un sous-ensemble de préférences.
+policy-PromptForDownloadLocation = Demande où enregistrer les fichiers lors du téléchargement.
 policy-Proxy = Configure les paramètres du proxy.
 policy-RequestedLocales = Définit la liste des locales demandées par l’application, dans l’ordre de préférence.
 policy-SanitizeOnShutdown = Supprime toutes les données de navigation à la fermeture.
