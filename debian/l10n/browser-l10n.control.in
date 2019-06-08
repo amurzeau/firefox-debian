@@ -6,7 +6,7 @@ Depends: ${misc:Depends},
 %ifdef L10N_RECOMMENDS
 Recommends: @L10N_RECOMMENDS@
 %endif
-%if TRANSITION
+%if TRANSITION && L10N_TRANSITION
 Breaks: iceweasel-l10n-@L10N_LANG@ (<< 45)
 Replaces: iceweasel-l10n-@L10N_LANG@ (<< 45)
 Provides: iceweasel-l10n-@L10N_LANG@
