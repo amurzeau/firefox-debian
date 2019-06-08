@@ -6,7 +6,11 @@ Depends: ${misc:Depends},
 %ifdef L10N_RECOMMENDS
 Recommends: @L10N_RECOMMENDS@
 %endif
-%if TRANSITION && L10N_TRANSITION
+%if L10N_LANG == bn
+Breaks: @browser@-l10n-bn-in (<< 68), @browser@-l10n-bn-bd (<< 68)
+Replaces: @browser@-l10n-bn-in (<< 68), @browser@-l10n-bn-bd (<< 68)
+Provides: @browser@-l10n-bn-in, @browser@-l10n-bn-bd
+%elif TRANSITION && L10N_TRANSITION
 Breaks: iceweasel-l10n-@L10N_LANG@ (<< 45)
 Replaces: iceweasel-l10n-@L10N_LANG@ (<< 45)
 Provides: iceweasel-l10n-@L10N_LANG@

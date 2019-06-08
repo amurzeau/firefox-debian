@@ -189,6 +189,9 @@ Architecture: all
 Section: localization
 Depends: ${misc:Depends},
          firefox (>= ${source:Version}), firefox (<< ${source:Version}.1~)
+Breaks: firefox-l10n-bn-in (<< 68), firefox-l10n-bn-bd (<< 68)
+Replaces: firefox-l10n-bn-in (<< 68), firefox-l10n-bn-bd (<< 68)
+Provides: firefox-l10n-bn-in, firefox-l10n-bn-bd
 Description: Bengali language package for Firefox
  Firefox is a powerful, extensible web browser with support for modern
  web application technologies.
