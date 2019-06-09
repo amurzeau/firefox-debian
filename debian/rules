@@ -136,7 +136,7 @@ endif
 endif
 
 ifneq (,$(filter mips mipsel,$(DEB_HOST_ARCH)))
-CFLAGS += -mfp32
+CONFIGURE_FLAGS += --disable-ion
 endif
 
 CXXFLAGS = $(CFLAGS)
@@ -299,9 +299,6 @@ override_dh_clean:
 override_dh_auto_install: stamps/install-$(PRODUCT)
 
 stamps/install-$(PRODUCT)::
-ifneq (,$(filter mips,$(DEB_HOST_ARCH)))
-	sed -i '/"javascript.options.\(baselinejit\|ion\)"/s/true/false/' build-$(PRODUCT)/dist/bin/greprefs.js
-endif
 	dh_auto_install --builddirectory=build-$(PRODUCT) -- installdir=$(LIB_DIR) \
 		MOZ_APP_BASE_VERSION=$(GRE_VERSION) \
 		TAR_CREATE_FLAGS="--exclude=.mkdir.done --hard-dereference -chf" \
