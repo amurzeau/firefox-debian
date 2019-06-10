@@ -49,7 +49,7 @@ NTLM
 Since version 30.0, NTLMv1 authentication has been disabled because
 it's known as insecure. Companies and organizations still deploying
 the older protocol should upgrade to NTLMv2, unfortunately, it's not
-supported by iceweasel.
+supported by @Browser@.
 It is however still possible to toggle the preference to continue using
 NTLMv1, though the NTLM auth support is considered deprecated, by
 switching the network.negotiate-auth.allow-insecure-ntlm-v1 preference
