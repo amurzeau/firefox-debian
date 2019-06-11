@@ -2,7 +2,6 @@ fixes/Allow-.js-preference-files-to-set-locked-prefs-with-.patch
 fixes/Bug-1463035-Remove-MOZ_SIGNAL_TRAMPOLINE.-r-darchons.patch
 fixes/Bug-1526653-Include-struct-definitions-for-user_vfp-.patch
 fixes/Bug-1544631-Fix-functions-branchTestBigInt-negPtr-ge.patch
-fixes/Bug-1553413-Update-and-harden-form-data-filtering-fo.patch
 fixes/Bug-1523162-Remove-WebRtc_GetCPUFeaturesARM-from-cpu.patch
 fixes/Bug-1556197-amend-Bug-1544631-for-fixing-mips32.patch
 porting/Add-xptcall-support-for-SH4-processors.patch
