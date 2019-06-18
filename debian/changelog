@@ -1,3 +1,10 @@
+firefox-esr (60.7.1esr-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2019-18, also known as CVE-2019-11707.
+
+ -- Mike Hommey <glandium@debian.org>  Tue, 18 Jun 2019 11:15:36 -0700
+
 firefox-esr (60.7.0esr-1) unstable; urgency=medium
 
   * New upstream release.
