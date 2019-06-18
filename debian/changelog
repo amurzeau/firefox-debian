@@ -1,3 +1,10 @@
+firefox (67.0.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2019-18, also known as CVE-2019-11707.
+
+ -- Mike Hommey <glandium@debian.org>  Tue, 18 Jun 2019 11:35:40 -0700
+
 firefox (67.0.2-1) unstable; urgency=medium
 
   * New upstream release.
