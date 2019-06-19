@@ -5,6 +5,7 @@
 from __future__ import absolute_import, unicode_literals, print_function
 
 import buildconfig
+import os
 import pipes
 import subprocess
 import sys
@@ -52,7 +53,7 @@ def execute_node_cmd(node_cmd_list):
         print('Executing "{}"'.format(printable_cmd), file=sys.stderr)
         sys.stderr.flush()
 
-        output = subprocess.check_output(node_cmd_list)
+        output = subprocess.check_output(node_cmd_list, stderr=open(os.devnull, 'w'))
 
         # Process the node script output
         #
