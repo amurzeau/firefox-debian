@@ -34,6 +34,7 @@ policies-notice =
         [windows] Jo organisaasje hat de mooglikheid om guon opsjes te wizigjen útskeakele.
        *[other] Jo organisaasje hat de mooglikheid om guon foarkarren te wizigjen útskeakele.
     }
+managed-notice = Jo browser wurdt troch jo organisaasje beheard.
 pane-general-title = Algemien
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = Privacy & Befeiliging
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Firefox-account
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -293,6 +290,21 @@ update-pref-write-failure-title = Skriuwflater
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Kin foarkar net bewarje. Koe net skriuwe nei bestân: { $path }
+update-setting-write-failure-title = Flater by bewarjen fernijingsfoarkarren
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    { -brand-short-name } hat in flater oantroffen en hat dizze wiziging net bewarre. Merk op dat foar it ynstellen fan dizze fernijingsfoarkar skriuwrjochten foar ûndersteand bestân nedich binne. Jo of jo systeembehearder kin dizze flater oplosse troch de groep ‘Gebruikers’ folsleine tagong ta dit bestân te jaan.
+    
+    Koe net skriuwe nei bestân: { $path }
+update-in-progress-title = Fernijing wurdt útfierd
+update-in-progress-message = Wolle jo dat { -brand-short-name } trochgiet mei dizze fernijing?
+update-in-progress-ok-button = &Ferwerpe
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Trochgean
 
 ## General Section - Performance
 
@@ -528,8 +540,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Bewarje
     .accesskey = B
-sync-mobilepromo-single = Noch in apparaat keppelje
-sync-mobilepromo-multi = Apparaten beheare
 sync-connect-another-device = In oar apparaat ferbine
 sync-manage-devices = Apparaten beheare
 sync-fxa-begin-pairing = In apparaat keppelje
@@ -549,6 +559,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Utsûnderingen…
     .accesskey = s
+forms-generate-passwords =
+    .label = Sterke wachtwurden foarstelle en generearje
+    .accesskey = w
 forms-saved-logins =
     .label = Bewarre oanmeldingen…
     .accesskey = m
@@ -687,7 +700,6 @@ content-blocking-all-third-party-cookies = Alle cookies fan tredden
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Let op!
-content-blocking-warning-desc = It blokkearjen fan cookies kin derfoar soargje dat bepaalde websites net goed wurkje. Blokkearring kin ienfâldich útskeakele wurde foar websites dy't jo fertrouwe.
 content-blocking-warning-description = It blokkearjen fan ynhâld kin derfoar soargje dat bepaalde websites net goed wurkje. Blokkearring kin ienfâldich útskeakele wurde foar websites dy't jo fertrouwe.
 content-blocking-learn-how = Mear ynfo
 content-blocking-reload-description = Jo moatte jo ljepblêden fernije om dizze wizigingen ta te passen.
@@ -754,6 +766,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Utsûnderingen…
     .accesskey = U
+permissions-autoplay = Automatysk ôfspylje
+permissions-autoplay-settings =
+    .label = Ynstellingen…
+    .accesskey = Y
 permissions-block-popups =
     .label = Pop-upfinsters blokkearje
     .accesskey = P

@@ -34,6 +34,7 @@ abuse-report-submit-button = Invia
 abuse-report-messagebar-aborted = Segnalazione per <span data-l10n-name="addon-name">{ $addon-name }</span> annullata.
 abuse-report-messagebar-submitting = Invio segnalazione per <span data-l10n-name="addon-name">{ $addon-name }</span>.
 abuse-report-messagebar-submitted = Grazie per aver inviato una segnalazione. Rimuovere <span data-l10n-name="addon-name">{ $addon-name }</span>?
+abuse-report-messagebar-submitted-noremove = Grazie per aver inviato una segnalazione.
 abuse-report-messagebar-removed-extension = Grazie per aver inviato una segnalazione. L’estensione <span data-l10n-name="addon-name">{ $addon-name }</span> è stata rimossa.
 abuse-report-messagebar-removed-theme = Grazie per aver inviato una segnalazione. Il tema <span data-l10n-name="addon-name">{ $addon-name }</span> è stato rimosso.
 abuse-report-messagebar-error = Si è verificato un errore durante l’invio della segnalazione per <span data-l10n-name="addon-name">{ $addon-name }</span>.
@@ -41,8 +42,10 @@ abuse-report-messagebar-error-recent-submit = La segnalazione per <span data-l10
 
 ## Message bars actions.
 
-abuse-report-messagebar-action-remove = Sì, rimuovilo
-abuse-report-messagebar-action-keep = No, voglio tenerlo
+abuse-report-messagebar-action-remove-extension = Rimuovi
+abuse-report-messagebar-action-keep-extension = Mantieni
+abuse-report-messagebar-action-remove-theme = Rimuovi
+abuse-report-messagebar-action-keep-theme = Mantieni
 abuse-report-messagebar-action-retry = Riprova
 abuse-report-messagebar-action-cancel = Annulla
 

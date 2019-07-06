@@ -93,28 +93,28 @@ detail-update-manual =
     .tooltiptext = Nie instaluj aktualizacji automatycznie
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Działanie w oknach prywatnych
-detail-private-browsing-description2 = Zezwolenie spowoduje, że rozszerzenie będzie miało dostęp do działań użytkownika w Internecie podczas przeglądania w trybie prywatnym. <label data-l10n-name="detail-private-browsing-learn-more">Więcej informacji</label>.
+detail-private-browsing-description2 = Zezwolenie spowoduje, że rozszerzenie będzie miało dostęp do działań użytkownika w Internecie podczas przeglądania w trybie prywatnym. <label data-l10n-name="detail-private-browsing-learn-more">Więcej informacji</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = Niedozwolone w oknach prywatnych
-detail-private-disallowed-description = To rozszerzenie nie działa podczas przeglądania w trybie prywatnym. <label data-l10n-name="detail-private-browsing-learn-more">Więcej informacji</label>.
+detail-private-disallowed-description = To rozszerzenie nie działa podczas przeglądania w trybie prywatnym. <label data-l10n-name="detail-private-browsing-learn-more">Więcej informacji</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = Wymaga dostępu do okien prywatnych
-detail-private-required-description = To rozszerzenie ma dostęp do działań użytkownika w Internecie podczas przeglądania w trybie prywatnym. <label data-l10n-name="detail-private-browsing-learn-more">Więcej informacji</label>.
+detail-private-required-description = To rozszerzenie ma dostęp do działań użytkownika w Internecie podczas przeglądania w trybie prywatnym. <label data-l10n-name="detail-private-browsing-learn-more">Więcej informacji</label>
 detail-private-browsing-on =
-    .label = Zezwalaj
+    .label = zezwalaj
     .tooltiptext = Włącz w trybie prywatnym
 detail-private-browsing-off =
-    .label = Nie zezwalaj
+    .label = nie zezwalaj
     .tooltiptext = Wyłącz w trybie prywatnym
 detail-home =
     .label = Strona domowa
 detail-home-value =
-    .value = Strona domowa
+    .value = { detail-home.label }
 detail-repository =
     .label = Profil dodatku
 detail-repository-value =
-    .value = Profil dodatku
+    .value = { detail-repository.label }
 detail-check-for-updates =
     .label = Sprawdź dostępność aktualizacji
     .accesskey = S
@@ -151,13 +151,16 @@ legacy-extensions =
 legacy-extensions-description = Te rozszerzenia nie spełniają obecnych standardów programu { -brand-short-name } i z tego powodu zostały wyłączone. <label data-l10n-name="legacy-learn-more">Więcej informacji o zmianach w dodatkach</label>.
 private-browsing-description2 =
     { -brand-short-name } zmienia sposób działania rozszerzeń w trybie prywatnym. Rozszerzenia dodane
-    do przeglądarki domyślnie nie będą działały w oknach prywatnych. Jeśli nie zostanie to zmienione
+    do programu domyślnie nie będą działały w oknach prywatnych. Jeśli nie zostanie to zmienione
     w ustawieniach, rozszerzenie nie będzie działało w trybie prywatnym i nie będzie miało dostępu
     do działań użytkownika. Wprowadziliśmy tę zmianę, aby prywatne przeglądanie zawsze było prywatne.
     <label data-l10n-name="private-browsing-learn-more">Więcej informacji o zarządzaniu ustawieniami rozszerzeń.</label>
 extensions-view-discover =
     .name = Pobierz dodatki
-    .tooltiptext = Pobierz dodatki
+    .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Polecane
+    .tooltiptext = Wyświetl polecane dodatki
 extensions-view-recent-updates =
     .name = Ostatnie aktualizacje
     .tooltiptext = Wyświetl ostatnie aktualizacje
@@ -170,18 +173,18 @@ extensions-view-available-updates =
 extensions-warning-safe-mode-label =
     .value = Wszystkie dodatki zostały wyłączone przez tryb awaryjny
 extensions-warning-safe-mode-container =
-    .tooltiptext = Wszystkie dodatki zostały wyłączone przez tryb awaryjny
+    .tooltiptext = { extensions-warning-safe-mode-label.value }
 extensions-warning-check-compatibility-label =
     .value = Sprawdzanie zgodności dodatków jest wyłączone. Dodatki mogą być niezgodne.
 extensions-warning-check-compatibility-container =
-    .tooltiptext = Sprawdzanie zgodności dodatków jest wyłączone. Dodatki mogą być niezgodne
+    .tooltiptext = { extensions-warning-check-compatibility-label.value }
 extensions-warning-check-compatibility-enable =
     .label = Włącz
     .tooltiptext = Włącz sprawdzanie zgodności dodatków
 extensions-warning-update-security-label =
     .value = Sprawdzanie bezpieczeństwa aktualizacji jest wyłączone. Aktualizacje mogą powodować zagrożenie.
 extensions-warning-update-security-container =
-    .tooltiptext = Sprawdzanie bezpieczeństwa aktualizacji jest wyłączone. Aktualizacje mogą powodować zagrożenie
+    .tooltiptext = { extensions-warning-update-security-label.value }
 extensions-warning-update-security-enable =
     .label = Włącz
     .tooltiptext = Włącz sprawdzanie bezpieczeństwa aktualizacji dodatków
@@ -238,7 +241,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Zarządzaj skrótami rozszerzeń
     .accesskey = Z
-shortcuts-empty-message = To rozszerzenie nie ma skrótów.
 shortcuts-no-addons = Nie włączono żadnych rozszerzeń.
 shortcuts-no-commands = Te rozszerzenia nie mają skrótów:
 shortcuts-input =
@@ -250,7 +252,7 @@ shortcuts-modifier-mac = Uwzględnij Ctrl, Alt lub ⌘
 shortcuts-modifier-other = Uwzględnij Ctrl lub Alt
 shortcuts-invalid = Nieprawidłowe połączenie
 shortcuts-letter = Wpisz literę
-shortcuts-system = Nie można zastąpić skrótu przeglądarki { -brand-short-name }
+shortcuts-system = Nie można zastąpić skrótu programu { -brand-short-name }
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -265,19 +267,66 @@ shortcuts-card-collapse-button = Mniej
 go-back-button =
     .tooltiptext = Wstecz
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    Rozszerzenia i motywy są jak aplikacje dla przeglądarki. Umożliwiają
+    chronienie haseł, pobieranie filmów, szukanie zniżek, blokowanie
+    irytujących reklam, zmienianie wyglądu przeglądarki i wiele więcej.
+    Te małe programy są często tworzone przez osoby trzecie. Poniżej
+    znajduje się wybór wyjątkowo bezpiecznych, wydajnych i funkcjonalnych
+    dodatków <a data-l10n-name="learn-more-trigger">polecanych</a> przez przeglądarkę { -brand-product-name }.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations = Część tych poleceń jest spersonalizowanych na podstawie pozostałych zainstalowanych rozszerzeń, preferencji profilu i statystyk użytkowania.
+discopane-notice-learn-more = Więcej informacji
+privacy-policy = Zasady ochrony prywatności
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = Autor: <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Użytkownicy: { $dailyUsers }
+install-extension-button = Dodaj do programu { -brand-product-name }
+install-theme-button = Zainstaluj motyw
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Zarządzaj
+find-more-addons = Znajdź więcej dodatków
+
 ## Add-on actions
 
+report-addon-button = Zgłoś
 remove-addon-button = Usuń
 disable-addon-button = Wyłącz
 enable-addon-button = Włącz
 expand-addon-button = Więcej opcji
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Opcje
+       *[other] Preferencje
+    }
+details-addon-button = Szczegóły
+release-notes-addon-button = Informacje o wydaniu
+permissions-addon-button = Uprawnienia
 addons-enabled-heading = Włączone
 addons-disabled-heading = Wyłączone
+ask-to-activate-button = Pytaj o aktywację
+always-activate-button = Zawsze aktywuj
+never-activate-button = Nigdy nie aktywuj
 addon-detail-author-label = Autor
 addon-detail-version-label = Wersja
 addon-detail-last-updated-label = Ostatnia aktualizacja
 addon-detail-homepage-label = Strona domowa
 addon-detail-rating-label = Ocena
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Ocena: { NUMBER($rating, maximumFractionDigits: 1) } z 5
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -291,3 +340,38 @@ addon-detail-reviews-link =
         [few] { $numberOfReviews } recenzje
        *[many] { $numberOfReviews } recenzji
     }
+
+## Pending uninstall message bar
+
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = Usunięto dodatek <span data-l10n-name="addon-name">{ $addon }</span>.
+pending-uninstall-undo-button = Cofnij
+addon-detail-updates-label = Automatyczne aktualizacje
+addon-detail-updates-radio-default = Domyślne
+addon-detail-updates-radio-on = Włączone
+addon-detail-updates-radio-off = Wyłączone
+addon-detail-update-check-label = Sprawdź dostępność aktualizacji
+install-update-button = Uaktualnij
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Dozwolone w oknach prywatnych
+addon-detail-private-browsing-help = Zezwolenie spowoduje, że rozszerzenie będzie miało dostęp do działań użytkownika w Internecie podczas przeglądania w trybie prywatnym. <a data-l10n-name="learn-more">Więcej informacji</a>
+addon-detail-private-browsing-allow = Zezwól
+addon-detail-private-browsing-disallow = Nie zezwalaj
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Polecane
+    .alt = Polecane
+available-updates-heading = Dostępne aktualizacje
+recent-updates-heading = Ostatnie aktualizacje
+release-notes-loading = Wczytywanie…
+release-notes-error = Przepraszamy, podczas pobierania informacji o wydaniu wystąpił błąd.
+addon-permissions-empty = To rozszerzenie nie wymaga żadnych uprawnień
+recommended-extensions-heading = Polecane rozszerzenia
+recommended-themes-heading = Polecane motywy
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Masz ochotę coś stworzyć? <a data-l10n-name="link">Utwórz własny motyw za pomocą Firefox Color.</a>

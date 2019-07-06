@@ -2,6 +2,8 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
+<!ENTITY aboutTelemetry.showArchivedPingData "ข้อมูล ping ที่เก็บถาวร">
+<!ENTITY aboutTelemetry.archivePingType "ชนิด Ping">
 <!ENTITY aboutTelemetry.archivePingHeader "Ping">
 <!ENTITY aboutTelemetry.optionGroupToday "วันนี้">
 <!ENTITY aboutTelemetry.optionGroupYesterday "เมื่อวานนี้">
@@ -10,6 +12,7 @@
 	These strings are displayed when selecting Archived pings, and they’re
 	used to move to the next or previous ping. -->
 <!ENTITY aboutTelemetry.previousPing "&lt;&lt;">
+<!ENTITY aboutTelemetry.nextPing "&gt;&gt;">
 
 <!ENTITY aboutTelemetry.pageTitle "ข้อมูลการวัดและส่งข้อมูลทางไกล">
 <!ENTITY aboutTelemetry.moreInformations "กำลังมองหาข้อมูลเพิ่มเติม?">
@@ -28,7 +31,7 @@
 <!ENTITY aboutTelemetry.addonDetailsSection "รายละเอียดส่วนเสริม">
 <!ENTITY aboutTelemetry.lateWritesSection "  การเขียนทีหลัง">
 <!ENTITY aboutTelemetry.rawPayloadSection "ส่วนข้อมูลดิบ">
-<!ENTITY aboutTelemetry.raw "JSON ดิบ">
+<!ENTITY aboutTelemetry.raw "ข้อมูลดิบ JSON">
 
 <!ENTITY aboutTelemetry.fullSqlWarning "  หมายเหตุ: การดีบั๊ก SQL ที่ทำงานช้าถูกเปิดใช้งาน คำสั่ง SQL แบบเต็มอาจถูกแสดงไว้ด้านล่างแต่จะไม่ถูกส่งออกไป">
 <!ENTITY aboutTelemetry.hideStackSymbols "แสดงข้อมูลสแตกดิบ">

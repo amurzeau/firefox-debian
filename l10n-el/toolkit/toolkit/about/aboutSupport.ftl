@@ -35,8 +35,15 @@ app-basics-name = Όνομα
 app-basics-version = Έκδοση
 app-basics-build-id = ID έκδοσης
 app-basics-update-channel = Κανάλι ενημερώσεων
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] Ενημέρωση καταλόγου
+       *[other] Ενημέρωση φακέλου
+    }
 app-basics-update-history = Ιστορικό ενημερώσεων
 app-basics-show-update-history = Προβολή ιστορικού ενημερώσεων
+# Represents the path to the binary used to start the application.
+app-basics-binary = Δυαδική εφαρμογή
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Κατάλογος προφίλ
@@ -82,6 +89,8 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Αρχείο καταγραφής αποφάσεων
 graphics-crash-guards-title = Απενεργοποιημένες λειτουργίες φύλαξης κατάρρευσης
 graphics-workarounds-title = Λύσεις
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Πρωτόκολλο παραθύρου
 place-database-title = Βάση δεδομένων τοποθεσιών
 place-database-integrity = Ακεραιότητα
 place-database-verify-integrity = Επαλήθευση ακεραιότητας
@@ -199,6 +208,7 @@ gpu-device-id = ID συσκευής
 gpu-subsys-id = ID υποσυστήματος
 gpu-drivers = Προγράμματα οδήγησης
 gpu-ram = RAM
+gpu-driver-vendor = Εκδότης προγράμματος οδήγησης
 gpu-driver-version = Έκδοση προγράμματος οδήγησης
 gpu-driver-date = Ημερομηνία οδηγού
 gpu-active = Ενεργό

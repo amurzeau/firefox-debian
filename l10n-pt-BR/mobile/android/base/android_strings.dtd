@@ -21,12 +21,15 @@
 <!ENTITY firstrun_data_message "Menos dados, mais economia">
 <!ENTITY firstrun_data_subtext2 "Desligar imagens para economizar dados em todos os sites que visitar.">
 <!ENTITY firstrun_sync_title "Sync">
-<!ENTITY firstrun_sync_message2 "Continue de onde você parou.">
+<!ENTITY updatednewfirstrun_sync_title "Conta">
+<!ENTITY firstrun_sync_message2 "Continue de onde parou.">
 <!ENTITY firstrun_sync_subtext2 "Use o Sync para encontrar os favoritos, senhas e outras coisas que você salva no &brandShortName; em todos os seus dispositivos.">
 <!ENTITY newfirstrun_sync_subtext "Sincronize as coisas que você salva no celular para o Firefox do computador, com privacidade e segurança.">
+<!ENTITY updatednewfirstrun_sync_subtext "Entre na sua conta para aproveitar ao máximo o &brandShortName;">
 <!ENTITY firstrun_signin_message "Conecte-se para iniciar">
 <!ENTITY firstrun_signin_button "Entrar no Sync">
 <!ENTITY newfirstrun_signin_button "Ativar o Sync">
+<!ENTITY updatednewfirstrun_signin_button "Entrar no &brandShortName;">
 <!ENTITY  onboard_start_button_browser "Iniciar navegação">
 <!ENTITY firstrun_button_notnow "Agora não">
 <!ENTITY firstrun_button_next "Próximo">
@@ -66,6 +69,12 @@
 <!ENTITY  sending_crash_report "Enviando relatório de travamento\u2026">
 <!ENTITY  crash_close_label "Fechar">
 <!ENTITY  crash_restart_label "Reiniciar o &brandShortName;">
+
+<!-- Localization note (crash_notification_title, crash_notification_message, crash_notification_negative_button_text)
+     Text displayed in a system notification to allow starting the Crash Reporter (Android Q and later).-->
+<!ENTITY  crash_notification_title "O &brandShortName; travou">
+<!ENTITY  crash_notification_message "Toque para relatar à &vendorShortName;">
+<!ENTITY  crash_notification_negative_button_text "Ignorar">
 
 <!ENTITY url_bar_default_text2 "Pesquise ou digite um endereço">
 
@@ -108,6 +117,10 @@
 <!ENTITY bookmark_folder_updated "Pasta atualizada">
 <!ENTITY bookmark_parent_folder "Pasta superior">
 <!ENTITY bookmark_add_folder "Adicionar nova pasta">
+
+<!-- Localization note (bookmark_default_folder_title): Default title is used if user doesn't specify
+     one when he is creating a bookmark folder -->
+<!ENTITY bookmark_default_folder_title "(sem título)">
 
 <!ENTITY reader_saved_offline "Salvo off-line">
 <!-- Localization note (reader_switch_to_bookmarks) : This
@@ -212,7 +225,7 @@
      search providers.
      The &formatI; in the string will be replaced by a small image of the icon described, and can be moved to wherever
      it is applicable. -->
-<!ENTITY pref_search_hint2 "Dica: Adicione qualquer site à sua lista de provedores de pesquisa com um toque longo no campo de pesquisa e em seguida tocando no ícone &formatI;.">
+<!ENTITY pref_search_hint2 "Dica: Adicione qualquer site à sua lista de mecanismos de pesquisa com um toque longo no campo de pesquisa e em seguida tocando no ícone &formatI;">
 <!ENTITY pref_category_advanced "Avançado">
 <!-- Localization note (pref_category_advanced_summary3): “data saver” in this
      context means consuming less data, e.g. by not loading images, not
@@ -413,8 +426,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY pref_private_data_downloadFiles2 "Downloads">
 <!ENTITY pref_private_data_syncedTabs "Abas sincronizadas">
 
-<!ENTITY pref_default_browser "Tornar navegador padrão">
-
 <!ENTITY pref_default_browser2 "Torne o &brandShortName; seu navegador padrão">
 <!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
     Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
@@ -455,7 +466,7 @@ shown from Android O while a tab is being queued.-->
      en-US/chrome/browser/preferences/advanced.dtd (healthReportSection.label,
      healthReportDesc.label, telemetrySection.label, telemetryDesc.label,
      crashReporterDesc.label). -->
-<!ENTITY datareporting_fhr_title "Relatório de integridade do &brandShortName;">
+<!ENTITY datareporting_fhr_title "Relatório de Integridade do &brandShortName;">
 <!ENTITY datareporting_fhr_summary2 "Compartilhar com a &vendorShortName; dados sobre a saúde do seu navegador e ajudar você a entender o desempenho do seu navegador">
 <!ENTITY datareporting_telemetry_title "Telemetria">
 <!ENTITY datareporting_telemetry_summary "Compartilhar dados de desempenho, uso, hardware e personalização com a &vendorShortName; para nos ajudar a melhorar o &brandShortName;">
@@ -546,7 +557,7 @@ shown from Android O while a tab is being queued.-->
      just "Pin Site" or "Unpin Site" would mean. -->
 <!ENTITY contextmenu_pin_to_top_sites "Fixar nos sites preferidos">
 <!ENTITY contextmenu_unpin_from_top_sites "Desafixar dos preferidos">
-<!ENTITY contextmenu_add_search_engine "Adicionar mecanismo de pesquisa">
+<!ENTITY contextmenu_add_search_engine "Adicionar pesquisador">
 
 <!-- Localization note (pinned_page_to_top_sites, unpinned_page_from_top_sites): These strings are shown in a snackbar
      after the user pins/unpins the currently displayed page from top sites. -->
@@ -591,6 +602,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_location "Endereço">
 <!ENTITY bookmark_edit_keyword "Palavra-chave">
 <!ENTITY bookmark_select_folder "Selecionar pasta">
+
+<!ENTITY bookmark_edit_undo "Desfazer">
 
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
      dialog that appears after selecting the "Edit Site Settings" context menu item. -->
@@ -642,7 +655,7 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY home_most_recent_empty "Sites visitados recentemente serão vistos aqui.">
 <!-- Localization note (home_most_recent_emptyhint2): "Psst" is a sound that might be used to attract someone's attention unobtrusively, and intended to hint at Private Browsing to the user.
      The placeholders &formatS1; and &formatS2; are used to mark the location of text underlining. -->
-<!ENTITY home_most_recent_emptyhint2 "Psst: ao usar uma &formatS1;Nova aba privativa&formatS2;, seu histórico não será salvo.">
+<!ENTITY home_most_recent_emptyhint2 "Dica: ao usar uma &formatS1;nova aba privativa&formatS2;, o histórico não é salvo.">
 
 <!-- Localization note (home_default_empty): This string is used as the default text when there
      is no data to show in an about:home panel that was created by an add-on. -->
@@ -679,6 +692,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY filepicker_audio_title "Escolher ou gravar um som">
 <!ENTITY filepicker_image_title "Escolher ou tirar uma foto">
 <!ENTITY filepicker_video_title "Escolher ou gravar um vídeo">
+
+<!ENTITY filepicker_permission_denied "Permissão necessária não concedida, revertendo para o selecionador de arquivos do sistema.">
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "Conectado a">
@@ -934,3 +949,4 @@ Picture-in-picture mini window -->
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
 web sites through the HTML Notifications API. -->
 <!ENTITY site_notifications_channel "Notificações do site">
+<!ENTITY crash_handler_notifications_channel "Relator de travamentos do &brandShortName;">

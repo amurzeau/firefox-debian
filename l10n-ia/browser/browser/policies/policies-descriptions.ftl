@@ -32,7 +32,7 @@ policy-DisableFirefoxScreenshots = Disactivar le functionalitate Firefox Screens
 policy-DisableFirefoxStudies = Impedir a { -brand-short-name } de exequer studios.
 policy-DisableForgetButton = Impedir accesso al button Oblidar.
 policy-DisableFormHistory = Non rememorar le chronologia de recercas e formularios.
-policy-DisableMasterPasswordCreation = Si ver, non pote ser create un contrasigno principal.
+policy-DisableMasterPasswordCreation = Si ver, non pote esser create un contrasigno principal.
 policy-DisablePocket = Disactivar le functionalitate pro salvar paginas web in Pocket.
 policy-DisablePrivateBrowsing = Disactivar le Navigation private.
 policy-DisableProfileImport = Disactivar le commando del menu pro importar datos ab un altere navigator.
@@ -53,6 +53,7 @@ policy-EnableTrackingProtection = Activar o disactivar le Blocada de contentos e
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
 policy-Extensions = Installar, disinstallar o blocar le extensiones. Le option Installar require URLs o percursos como parametros. Le optiones Disinstallar e Blocate require le extension IDs.
+policy-ExtensionSettings = Gerer tote le aspectos del installation de extensiones.
 policy-ExtensionUpdate = Activar o disactivar le actualisation automatic de extensiones.
 policy-FirefoxHome = Configura Firefox Home.
 policy-FlashPlugin = Consentir o negar le uso del plugin Flash.
@@ -73,8 +74,8 @@ policy-Preferences = Defini e bloca le valor de un sub-ensemble de preferentias.
 policy-PromptForDownloadLocation = Demandar ubi salvar le files quando on discarga.
 policy-Proxy = Configurar le parametros del servitor proxy.
 policy-RequestedLocales = Defini le lista del localisationes desirate pro le applicationes in ordine de tu preferentias.
-policy-SanitizeOnShutdown = Clarar tote le datos de navigation al clausura.
-policy-SanitizeOnShutdown2 = Clarar datos de navigation al clausura.
+policy-SanitizeOnShutdown = Eliminar tote le datos de navigation al clausura.
+policy-SanitizeOnShutdown2 = Eliminar datos de navigation al clausura.
 policy-SearchBar = Definir le localisation predefinite del barra de recerca. Le usator pote ancora lo personalisar.
 policy-SearchEngines = Configurar le parametros del motores de recerca. Iste criterio es solmente disponibile sur le version con supporto extendite (Extended Support Release - ESR).
 policy-SearchSuggestEnabled = Activar o disactivar suggestiones de recerca.
@@ -84,4 +85,4 @@ policy-SSLVersionMax = Stabilir le version SSL maxime.
 policy-SSLVersionMin = Stabilir le version SSL minime.
 policy-SupportMenu = Adder un selection de supporto personalisate al menu de adjuta.
 # “format” refers to the format used for the value of this policy.
-policy-WebsiteFilter = Blocar de ser visitate sitos web. Vider documentation pro altere detalios sur le formato.
+policy-WebsiteFilter = Blocar le accesso a sitos web. Vider documentation pro plus detalios sur le formato.

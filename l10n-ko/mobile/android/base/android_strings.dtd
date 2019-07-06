@@ -21,12 +21,15 @@
 <!ENTITY firstrun_data_message "더 적은 데이터, 더 많은 절약">
 <!ENTITY firstrun_data_subtext2 "데이터 사용량을 줄이기 위해 방문하는 모든 사이트에서 이미지를 가져오지 않습니다.">
 <!ENTITY firstrun_sync_title "Sync">
+<!ENTITY updatednewfirstrun_sync_title "계정">
 <!ENTITY firstrun_sync_message2 "중단했던 지점에서 다시 시작하세요.">
 <!ENTITY firstrun_sync_subtext2 "Sync를 이용해서 즐겨찾기나 비밀번호, &brandShortName;에 저장한 다른 설정을 사용하는 모든 기기에서 찾아보세요.">
 <!ENTITY newfirstrun_sync_subtext "사적으로 안전하게 모바일 환경에서 저장한 것을 데스크탑용 Firefox와 동기화하세요.">
+<!ENTITY updatednewfirstrun_sync_subtext "&brandShortName;를 최대한 활용하려면 계정에 로그인하세요.">
 <!ENTITY firstrun_signin_message "연결 및 시작하기">
 <!ENTITY firstrun_signin_button "Sync 로그인">
 <!ENTITY newfirstrun_signin_button "Sync 켜기">
+<!ENTITY updatednewfirstrun_signin_button "&brandShortName;에 로그인">
 <!ENTITY  onboard_start_button_browser "브라우징 시작">
 <!ENTITY firstrun_button_notnow "다음에">
 <!ENTITY firstrun_button_next "다음">
@@ -66,6 +69,12 @@
 <!ENTITY  sending_crash_report "문제 보내기\u2026">
 <!ENTITY  crash_close_label "닫기">
 <!ENTITY  crash_restart_label "&brandShortName; 다시 시작">
+
+<!-- Localization note (crash_notification_title, crash_notification_message, crash_notification_negative_button_text)
+     Text displayed in a system notification to allow starting the Crash Reporter (Android Q and later).-->
+<!ENTITY  crash_notification_title "&brandShortName; 충돌됨">
+<!ENTITY  crash_notification_message "탭하여 &vendorShortName;에 보고">
+<!ENTITY  crash_notification_negative_button_text "무시">
 
 <!ENTITY url_bar_default_text2 "검색어 또는 주소를 입력하세요">
 
@@ -108,6 +117,10 @@
 <!ENTITY bookmark_folder_updated "폴더 업데이트됨">
 <!ENTITY bookmark_parent_folder "상위 폴더">
 <!ENTITY bookmark_add_folder "새 폴더 추가">
+
+<!-- Localization note (bookmark_default_folder_title): Default title is used if user doesn't specify
+     one when he is creating a bookmark folder -->
+<!ENTITY bookmark_default_folder_title "(제목 없음)">
 
 <!ENTITY reader_saved_offline "오프라인으로 저장됨">
 <!-- Localization note (reader_switch_to_bookmarks) : This
@@ -413,8 +426,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY pref_private_data_downloadFiles2 "다운로드">
 <!ENTITY pref_private_data_syncedTabs "동기화된 탭">
 
-<!ENTITY pref_default_browser "기본 브라우저로 지정">
-
 <!ENTITY pref_default_browser2 "&brandShortName;를 기본 웹 브라우저로 만들기">
 <!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
     Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
@@ -592,6 +603,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_keyword "키워드">
 <!ENTITY bookmark_select_folder "폴더 선택">
 
+<!ENTITY bookmark_edit_undo "실행 취소">
+
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
      dialog that appears after selecting the "Edit Site Settings" context menu item. -->
 <!ENTITY site_settings_title3       "사이트 설정">
@@ -679,6 +692,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY filepicker_audio_title "음성 선택 또는 녹음">
 <!ENTITY filepicker_image_title "사진 선택 또는 촬영">
 <!ENTITY filepicker_video_title "동영상 선택 또는 녹화">
+
+<!ENTITY filepicker_permission_denied "필요한 권한이 부여되지 않아 시스템 파일 선택기로 되돌아갑니다.">
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "현재 웹 사이트는 인증 되었음">
@@ -918,6 +933,7 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_title "일시 중지">
 <!ENTITY pip_pause_button_description "재생 일시 중지">
 
+<!ENTITY pref_notification_settings_link "알림 설정 관리">
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "브라우저">
 <!ENTITY mls_notification_channel "&vendorShortName; 위치 기반 서비스">
@@ -930,3 +946,4 @@ Picture-in-picture mini window -->
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
 web sites through the HTML Notifications API. -->
 <!ENTITY site_notifications_channel "사이트 알림">
+<!ENTITY crash_handler_notifications_channel "&brandShortName; 충돌 보고서">

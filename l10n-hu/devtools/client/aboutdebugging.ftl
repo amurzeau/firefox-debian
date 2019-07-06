@@ -82,11 +82,10 @@ about-debugging-refresh-usb-devices-button = Eszközök frissítése
 about-debugging-setup-title = Beállítások
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Állítsa be a kapcsolódási módot, amellyel távolról akar hibát keresni a készüléken.
-# Link displayed in the Setup page that leads to MDN page with list of supported devices.
-# Temporarily leads to https://support.mozilla.org/en-US/kb/will-firefox-work-my-mobile-device#w_android-devices
-about-debugging-setup-link-android-devices = A támogatott androidos eszközök listájának megtekintése
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
 about-debugging-setup-this-firefox = Használja a <a>{ about-debugging-this-firefox-runtime-name }</a> lehetőséget a lapok, kiegészítők és service workerek hibakeresésére a { -brand-shorter-name } ezen verzióján.
+# Explanatory text in the Setup page about what the 'This Firefox' page is for
+about-debugging-setup-this-firefox2 = Használja a <a>{ about-debugging-this-firefox-runtime-name }</a> lehetőséget a kiegészítők és service workerek hibakeresésére a { -brand-shorter-name } ezen verzióján.
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Eszköz csatlakoztatása
 # USB section of the Setup page
@@ -106,16 +105,22 @@ about-debugging-setup-usb-status-enabled = Engedélyezve
 about-debugging-setup-usb-status-disabled = Tiltva
 about-debugging-setup-usb-status-updating = Frissítés…
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-dev-menu = Engedélyezze a fejlesztői menüt az androidos eszközén. <a>Tudja meg hogyan</a>
+about-debugging-setup-usb-step-enable-dev-menu2 = Engedélyezze a fejlesztői menüt az androidos eszközén.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug = Engedélyezze az USB hibakeresést az Android fejlesztői menüben. <a>Tudja meg hogyan</a>
+about-debugging-setup-usb-step-enable-debug2 = Engedélyezze az USB-s hibakeresést az androidos fejlesztői menüben.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug-firefox = Engedélyezze az USB hibakeresést a Firefoxban az androidos eszközén. <a>Tudja meg hogyan</a>
+about-debugging-setup-usb-step-enable-debug-firefox2 = Engedélyezze az USB-s hibakeresést a Firefoxban az androidos eszközén.
 # USB section step by step guide
 about-debugging-setup-usb-step-plug-device = Csatlakoztassa az androidos eszközt a számítógépéhez.
+# Text shown in the USB section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/docs/Tools/Remote_Debugging/Debugging_over_USB
+about-debugging-setup-usb-troubleshoot = Problémája van az USB-s eszköz csatlakoztatásakor? <a>Hibaelhárítás</a>
 # Network section of the Setup page
 about-debugging-setup-network =
     .title = Hálózat helye
+# Text shown in the Network section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Debugging_over_a_network
+about-debugging-setup-network-troubleshoot = Problémája van a hálózati helyhez csatlakozáskor? <a>Hibaelhárítás</a>
 # Text of a button displayed after the network locations "Host" input.
 # Clicking on it will add the new network location to the list.
 about-debugging-network-locations-add-button = Hozzáadás
@@ -203,11 +208,6 @@ about-debugging-connection-prompt-enable-button = Kapcsolódási kérdés enged�
 about-debugging-connection-prompt-disable-button = Kapcsolódási kérdés letiltása
 # Title of a modal dialog displayed on remote runtime pages after clicking on the Profile Runtime button.
 about-debugging-profiler-dialog-title2 = Profilkészítő
-# Label of a checkbox displayed in the runtime page for "This Firefox".
-# This checkbox will toggle preferences that enable local addon debugging.
-# The "Learn more" link points to MDN.
-# https://developer.mozilla.org/docs/Tools/about:debugging#Enabling_add-on_debugging
-about-debugging-extension-debug-setting-label = Kiegészítők hibakeresésének engedélyezése. <a>További információk</a>
 # Clicking on the header of a debug target category will expand or collapse the debug
 # target items in the category. This text is used as ’title’ attribute of the header,
 # to describe this feature.
@@ -296,3 +296,9 @@ about-debugging-main-process-description2 = A célböngésző fő folyamata
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = Üzenet bezárása
+# Label text used for the error details of message component.
+about-debugging-message-details-label-error = Hiba részletei
+# Label text used for the warning details of message component.
+about-debugging-message-details-label-warning = Figyelmeztetés részletei
+# Label text used for default state of details of message component.
+about-debugging-message-details-label = Részletek

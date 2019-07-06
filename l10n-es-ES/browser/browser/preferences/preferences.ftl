@@ -34,6 +34,7 @@ policies-notice =
         [windows] Su organización ha deshabilitado la posibilidad de cambiar algunas opciones.
        *[other] Su organización ha deshabilitado la posibilidad de cambiar algunas preferencias.
     }
+managed-notice = Su navegador está siendo administrado por su organización.
 pane-general-title = General
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = Privacidad & Seguridad
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Cuenta Firefox
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -293,6 +290,21 @@ update-pref-write-failure-title = Error de escritura
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = No se puede guardar la preferencia. No se ha podido escribir al archivo: { $path }
+update-setting-write-failure-title = Error al guardar las preferencias de actualización
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    { -brand-short-name } ha encontrado un error y no ha guardado los cambios.  Tenga en cuenta que establecer esta preferencia de actualización requiere permiso para escribir en el archivo indicado a continuación. Usted o un administrador del sistema pueden resolver el error otorgando al grupo de Usuarios el control total de este archivo.
+    
+    No se puede escribir en el archivo: { $path }
+update-in-progress-title = Actualización en curso
+update-in-progress-message = ¿Quiere que { -brand-short-name } continúe con la actualización?
+update-in-progress-ok-button = &Ignorar
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Continuar
 
 ## General Section - Performance
 
@@ -528,8 +540,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Guardar
     .accesskey = u
-sync-mobilepromo-single = Conectar otro dispositivo
-sync-mobilepromo-multi = Administrar dispositivos
 sync-connect-another-device = Conectar otro dispositivo
 sync-manage-devices = Administrar dispositivos
 sync-fxa-begin-pairing = Emparejar un dispositivo
@@ -687,7 +697,6 @@ content-blocking-all-third-party-cookies = Todas las cookies de terceros
 content-blocking-cryptominers = Criptomineros
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = ¡Atención!
-content-blocking-warning-desc = Bloquear cookies y rastreadores puede hacer que algunos sitios fallen. Es fácil desactivar el bloqueo para los sitios en los que confías.
 content-blocking-warning-description = Bloquear contenido puede provocar que algunos sitios web dejen de funcionar correctamente. Lo mejor es deshabilitar el bloqueo en los sitios de confianza.
 content-blocking-learn-how = Saber cómo
 content-blocking-reload-description = Tiene que recargar las pestañas para que los cambios surtan efecto.
@@ -754,6 +763,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Excepciones…
     .accesskey = E
+permissions-autoplay = Reproducción automática
+permissions-autoplay-settings =
+    .label = Configuración...
+    .accesskey = C
 permissions-block-popups =
     .label = Bloquear ventanas emergentes
     .accesskey = B

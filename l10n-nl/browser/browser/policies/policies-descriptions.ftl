@@ -10,7 +10,7 @@
 ## These are short descriptions for individual policies, to be displayed
 ## in the documentation section in about:policies.
 
-policy-3rdparty = Beleidsregels instellen die door WebExtensions kunnen worden benaderd via chrome.storage.managed.
+policy-3rdparty = Beleidsregels instellen zodat WebExtensions via chrome.storage.managed toegang kunnen krijgen.
 policy-AppUpdateURL = Aangepaste app-update-URL instellen.
 policy-Authentication = Geïntegreerde authenticatie configureren voor websites die dit ondersteunen.
 policy-BlockAboutAddons = Toegang tot de Add-onbeheerder (about:addons) blokkeren.
@@ -21,6 +21,7 @@ policy-Bookmarks = Bladwijzers maken in de Bladwijzerwerkbalk, het menu Bladwijz
 policy-CaptivePortal = Ondersteuning voor hotspot-aanmeldingspagina inschakelen of uitschakelen.
 policy-CertificatesDescription = Certificaten toevoegen of ingebouwde certificaten gebruiken.
 policy-Cookies = Toestaan of weigeren dat websites cookies instellen.
+policy-DefaultDownloadDirectory = Standaard downloadmap instellen.
 policy-DisableAppUpdate = Voorkomen dat de browser wordt bijgewerkt.
 policy-DisableBuiltinPDFViewer = PDF.js uitschakelen, de ingebouwde PDF-viewer in { -brand-short-name }.
 policy-DisableDeveloperTools = Toegang tot de ontwikkelaarshulpmiddelen blokkeren.
@@ -45,13 +46,16 @@ policy-DisplayBookmarksToolbar = Standaard de Bladwijzerwerkbalk weergeven.
 policy-DisplayMenuBar = Standaard de Menubalk weergeven.
 policy-DNSOverHTTPS = DNS over HTTPS configureren.
 policy-DontCheckDefaultBrowser = Controle op standaardbrowser bij opstarten uitschakelen.
+policy-DownloadDirectory = De downloadmap instellen en vergrendelen.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Inhoudsblokkering inschakelen of uitschakelen en optioneel vergrendelen.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
-policy-Extensions = Extensies installeren, verwijderen of vergrendelen. De optie voor installeren gebruikt URL’s of paden als parameters. De opties voor verwijderen en vergrendelen gebruiken extensie-ID’s.
+policy-Extensions = Extensies installeren, de-installeren of vergrendelen. De optie voor installeren gebruikt URL’s of paden als parameters. De opties voor de-installeren en vergrendelen gebruiken extensie-ID’s.
+policy-ExtensionSettings = Alle aspecten van installatie van extensies beheren.
 policy-ExtensionUpdate = Automatische extensie-updates inschakelen of uitschakelen.
+policy-FirefoxHome = De startpagina van Firefox instellen.
 policy-FlashPlugin = Gebruik van de Flash-plug-in toestaan of weigeren.
 policy-HardwareAcceleration = Wanneer false, hardwareversnelling uitschakelen.
 # “lock” means that the user won’t be able to change this setting
@@ -62,11 +66,12 @@ policy-NetworkPrediction = ‘Network prediction’ (DNS prefetching) inschakele
 policy-NewTabPage = De nieuw-tabbladpagina inschakelen of uitschakelen.
 policy-NoDefaultBookmarks = Aanmaken van de standaardbladwijzers die met { -brand-short-name } worden meegeleverd uitschakelen, evenals de Slimme bladwijzers (Meest bezocht, Recente labels). Noot: deze beleidsregel is alleen van kracht bij gebruik ervan voordat het profiel voor het eerst wordt uitgevoerd.
 policy-OfferToSaveLogins = De instelling voor het toestaan dat { -brand-short-name } mag aanbieden opgeslagen aanmeldingen en wachtwoorden te onthouden afdwingen. Zowel de waarde true als false wordt geaccepteerd.
-policy-OverrideFirstRunPage = De pagina die voor het eerst wordt geopend vervangen. Stel deze beleidsregel in op leeg als u de betreffende pagina wilt uitschakelen.
+policy-OverrideFirstRunPage = De pagina voor eerste keer uitvoeren vervangen. Stel deze beleidsregel in op leeg als u de betreffende pagina wilt uitschakelen.
 policy-OverridePostUpdatePage = De pagina ‘Wat is er nieuw’ na een update vervangen. Stel deze beleidsregel in op leeg als u de betreffende pagina wilt uitschakelen.
 policy-Permissions = Toestemmingen voor camera, microfoon, locatie en notificaties configureren.
 policy-PopupBlocking = Toestaan dat bepaalde websites standaard pop-ups weergeven.
 policy-Preferences = De waarde voor een subset van voorkeuren instellen en vergrendelen.
+policy-PromptForDownloadLocation = Vragen waar gedownloade bestanden moeten worden opgeslagen.
 policy-Proxy = Proxyinstellingen configureren.
 policy-RequestedLocales = De lijst van gevraagde locales voor de toepassing instellen, op volgorde van voorkeur.
 policy-SanitizeOnShutdown = Alle navigatiegegevens wissen bij afsluiten.
@@ -81,4 +86,3 @@ policy-SSLVersionMin = De minimale SSL-versie instellen.
 policy-SupportMenu = Een aangepast menu-item voor ondersteuning aan het menu Help toevoegen.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Het bezoeken van websites blokkeren. Zie de documentatie voor meer informatie over de notatie.
-

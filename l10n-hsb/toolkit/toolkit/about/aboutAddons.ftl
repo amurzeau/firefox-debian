@@ -95,7 +95,7 @@ detail-update-manual =
 detail-private-browsing-label = W priwatnych woknach wuwjesć
 detail-private-browsing-description2 = Jeli maće prawo, ma rozšěrjenje přistup na waše aktiwity online w priwatnym modusu. <label data-l10n-name="detail-private-browsing-learn-more">Dalše informacije</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = W priwatnych woknach njedowoleny
 detail-private-disallowed-description = Tute rozšěrjenje w priwatnym modusu njefunguje. <label data-l10n-name="detail-private-browsing-learn-more">Dalše informacije</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
@@ -157,6 +157,9 @@ private-browsing-description2 =
 extensions-view-discover =
     .name = Přidatki wobstarać
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Doporučenja
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Nowe aktualizacije
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -237,7 +240,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Tastowe skrótšenki rozšěrjenjow rjadować
     .accesskey = T
-shortcuts-empty-message = Tastowe skrótšenki za tute rozšěrjenje njejsu.
 shortcuts-no-addons = Njejśce žane rozšěrjenja zmóžnił.
 shortcuts-no-commands = Slědowace rozšěrjenja tastowe skrótšenki nimaja:
 shortcuts-input =
@@ -265,19 +267,60 @@ shortcuts-card-collapse-button = Mjenje pokazać
 go-back-button =
     .tooltiptext = Wróćo hić
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro = Rozšěrjenja a drasty su kaž nałoženja za waš wobhladowak, a škitaja hesła, sćahuja wideja, namakaja hrabnjenčka, blokuja wobćežne wabjenje, měnjeja napohlad wašeho wobhladowaka a wjele wjace. Tute małe softwarowe programy so husto wot třećich wuwiwaja. Tu je wuběr { -brand-product-name }<a data-l10n-name="learn-more-trigger">doporučenych</a> rozšěrjenjow za { -brand-product-name } za wosebitu wěstotu, wukon a funkcionalnosć.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations = Někotre z tutych doporučenjow su personalizowane. Bazuja na rozšěrjenjach, kotrež sće instalował, profilowych nastajenjach a wužiwanskej statistice.
+discopane-notice-learn-more = Dalše informacije
+privacy-policy = Prawidła priwatnosće
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = wot <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Wužiwarjo: { $dailyUsers }
+install-extension-button = { -brand-product-name } přidać
+install-theme-button = Drastu instalować
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Rjadować
+find-more-addons = Wobhladajće sej dalše přidatki
+
 ## Add-on actions
 
+report-addon-button = Zdźělić
 remove-addon-button = Wotstronić
 disable-addon-button = Znjemóžnić
 enable-addon-button = Zmóžnić
 expand-addon-button = Dalše nastajenja
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Nastajenja
+       *[other] Nastajenja
+    }
+details-addon-button = Podrobnosće
+release-notes-addon-button = Wersijowe informacije
+permissions-addon-button = Prawa
 addons-enabled-heading = Zmóžnjene
 addons-disabled-heading = Znjemóžnjene
+ask-to-activate-button = Za aktiwizowanje so prašeć
+always-activate-button = Přeco aktiwizować
+never-activate-button = Ženje njeaktiwizować
 addon-detail-author-label = Awtor
 addon-detail-version-label = Wersija
 addon-detail-last-updated-label = Posledni raz zaktualizowany
 addon-detail-homepage-label = Startowa strona
 addon-detail-rating-label = Pohódnoćenje
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Pohódnoćeny z { NUMBER($rating, maximumFractionDigits: 1) } z 5
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -292,3 +335,38 @@ addon-detail-reviews-link =
         [few] { $numberOfReviews } pohódnoćenja
        *[other] { $numberOfReviews } pohódnoćenjow
     }
+
+## Pending uninstall message bar
+
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> je so wotstronił.
+pending-uninstall-undo-button = Cofnyć
+addon-detail-updates-label = Awtomatiske aktualizacije dowolić
+addon-detail-updates-radio-default = Standard
+addon-detail-updates-radio-on = Zapinjeny
+addon-detail-updates-radio-off = Wupinjeny
+addon-detail-update-check-label = Za aktualizacijemi pytać
+install-update-button = Aktualizować
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = W priwatnych woknach dowoleny
+addon-detail-private-browsing-help = Jeli maće prawo, ma rozšěrjenje přistup na waše aktiwity online w priwatnym modusu. <a data-l10n-name="detail-private-browsing-learn-more">Dalše informacije</a>
+addon-detail-private-browsing-allow = Dowolić
+addon-detail-private-browsing-disallow = Njedowolić
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Doporučena
+    .alt = Doporučena
+available-updates-heading = K dispoziciji stejace aktualizacije
+recent-updates-heading = Najnowše aktualizacije
+release-notes-loading = Začituje so…
+release-notes-error = Při začitowanju wersijowych informacijow je bohužel zmylk wustupił.
+addon-permissions-empty = Tute rozšěrjenje sej prawa njewužaduje
+recommended-extensions-heading = Doporučene rozšěrjenja
+recommended-themes-heading = Doporučene drasty
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Čujeće so kreatiwny? <a data-l10n-name="link">Wutworće swójsku drastu z Firefox Color.</a>

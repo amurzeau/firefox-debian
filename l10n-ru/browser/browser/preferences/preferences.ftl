@@ -34,6 +34,7 @@ policies-notice =
         [windows] Ваша организация запретила возможность изменения некоторых настроек.
        *[other] Ваша организация запретила возможность изменения некоторых настроек.
     }
+managed-notice = Этим браузером управляет ваша организация.
 pane-general-title = Основные
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = Приватность и Защита
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Аккаунт Firefox
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -296,6 +293,21 @@ update-pref-write-failure-title = Ошибка записи
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Не удалось сохранить настройку. Не удалось произвести запись в файл: { $path }
+update-setting-write-failure-title = Ошибка при сохранении настроек обновления
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    { -brand-short-name } столкнулся с ошибкой и не смог сохранить это изменение. Обратите внимание, что для установки этой настройки обновления требуется разрешение на запись в файл, указанный ниже. Вы или системный администратор можете исправить эту проблему, если предоставите группе «Пользователи» полный доступ к этому файлу.
+    
+    Не удалось произвести запись в файл: { $path }
+update-in-progress-title = Идёт обновление
+update-in-progress-message = Вы хотите продолжить обновление { -brand-short-name }?
+update-in-progress-ok-button = &Отменить
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Продолжить
 
 ## General Section - Performance
 
@@ -531,8 +543,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Сохранить
     .accesskey = х
-sync-mobilepromo-single = Подключить другое устройство
-sync-mobilepromo-multi = Управление устройствами
 sync-connect-another-device = Подключить другое устройство
 sync-manage-devices = Управление устройствами
 sync-fxa-begin-pairing = Соединиться с устройством
@@ -552,6 +562,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Исключения…
     .accesskey = ю
+forms-generate-passwords =
+    .label = Предлагать и генерировать надежные пароли
+    .accesskey = н
 forms-saved-logins =
     .label = Сохранённые логины…
     .accesskey = х
@@ -690,7 +703,6 @@ content-blocking-all-third-party-cookies = Все сторонние куки
 content-blocking-cryptominers = Криптомайнеры
 content-blocking-fingerprinters = Сборщики цифровых отпечатков
 content-blocking-warning-title = Осторожно!
-content-blocking-warning-desc = Блокировка куков и трекеров может вызывать проблемы с некоторыми веб-сайтами. Можно легко отключить блокировку для сайтов, которым вы доверяете.
 content-blocking-warning-description = Блокировка содержимого может вызывать проблемы с некоторыми веб-сайтами. Можно легко отключить блокировку для сайтов, которым вы доверяете.
 content-blocking-learn-how = Подробнее
 content-blocking-reload-description = Вам понадобится обновить свои вкладки, чтобы применить эти изменения.
@@ -757,6 +769,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Исключения…
     .accesskey = ю
+permissions-autoplay = Автовоспроизведение
+permissions-autoplay-settings =
+    .label = Параметры…
+    .accesskey = м
 permissions-block-popups =
     .label = Блокировать всплывающие окна
     .accesskey = о

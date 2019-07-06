@@ -9,14 +9,14 @@ update-checkForUpdatesButton =
     .label = Sprawdź dostępność aktualizacji
     .accesskey = S
 update-updateButton =
-    .label = Uruchom ponownie, aby uaktualnić
+    .label = Uruchom ponownie, aby uaktualnić przeglądarkę { -brand-shorter-name }
     .accesskey = U
 update-checkingForUpdates = Poszukiwanie aktualizacji…
 update-downloading = <img data-l10n-name="icon"/> Pobieranie aktualizacji — <label data-l10n-name="download-status"/>
 update-applying = Instalowanie aktualizacji…
 update-failed = Aktualizacja się nie powiodła. <label data-l10n-name="failed-link">Pobierz najnowszą wersję</label>.
 update-failed-main = Aktualizacja się nie powiodła. <a data-l10n-name="failed-link-main">Pobierz najnowszą wersję</a>.
-update-adminDisabled = Aktualizacje zablokowane przez administratora.
+update-adminDisabled = Aktualizacje zablokowane przez administratora komputera.
 update-noUpdatesFound = { -brand-short-name } jest aktualny.
 update-otherInstanceHandlingUpdates = Inna instancja właśnie aktualizuje program { -brand-short-name }.
 update-manual = Aktualizacje dostępne na <label data-l10n-name="manual-link"/>.

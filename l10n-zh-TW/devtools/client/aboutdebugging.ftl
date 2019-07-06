@@ -82,11 +82,10 @@ about-debugging-refresh-usb-devices-button = 重新整理裝置
 about-debugging-setup-title = 設定
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = 設定要用哪種方式來從遠端對您的裝置除錯。
-# Link displayed in the Setup page that leads to MDN page with list of supported devices.
-# Temporarily leads to https://support.mozilla.org/en-US/kb/will-firefox-work-my-mobile-device#w_android-devices
-about-debugging-setup-link-android-devices = 檢視支援的 Android 裝置清單
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
 about-debugging-setup-this-firefox = 於這個版本的 { -brand-shorter-name } 使用 <a>{ about-debugging-this-firefox-runtime-name }</a> 來對分頁、擴充套件與 Service Worker 除錯。
+# Explanatory text in the Setup page about what the 'This Firefox' page is for
+about-debugging-setup-this-firefox2 = 於這個版本的 { -brand-shorter-name } 使用 <a>{ about-debugging-this-firefox-runtime-name }</a> 來對擴充套件與 Service Worker 除錯。
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = 連線到裝置
 # USB section of the Setup page
@@ -106,16 +105,22 @@ about-debugging-setup-usb-status-enabled = 已啟用
 about-debugging-setup-usb-status-disabled = 已停用
 about-debugging-setup-usb-status-updating = 更新中…
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-dev-menu = 開啟 Android 裝置的開發者選單。<a>了解怎麼做</a>
+about-debugging-setup-usb-step-enable-dev-menu2 = 於您的 Android 裝置開啟「開發者選單」。
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug = 於 Android 的開發者選單開啟 USB 除錯模式。<a>了解怎麼做</a>
+about-debugging-setup-usb-step-enable-debug2 = 於「開發者選單」開啟「USB 除錯」。
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug-firefox = 於 Android 裝置上的 Firefox 開啟 USB 除錯模式。<a>了解怎麼做</a>
+about-debugging-setup-usb-step-enable-debug-firefox2 = 於 Android 裝置上的 Firefox 開啟「USB 除錯」。
 # USB section step by step guide
 about-debugging-setup-usb-step-plug-device = 將 Android 裝置連線到您的電腦。
+# Text shown in the USB section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/docs/Tools/Remote_Debugging/Debugging_over_USB
+about-debugging-setup-usb-troubleshoot = 連線到 USB 裝置時發生問題？<a>疑難排解</a>
 # Network section of the Setup page
 about-debugging-setup-network =
     .title = 網路位置
+# Text shown in the Network section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Debugging_over_a_network
+about-debugging-setup-network-troubleshoot = 透過網路連線到裝置時發生問題？<a>疑難排解</a>
 # Text of a button displayed after the network locations "Host" input.
 # Clicking on it will add the new network location to the list.
 about-debugging-network-locations-add-button = 新增
@@ -203,11 +208,6 @@ about-debugging-connection-prompt-enable-button = 開啟連線提示
 about-debugging-connection-prompt-disable-button = 關閉連線提示
 # Title of a modal dialog displayed on remote runtime pages after clicking on the Profile Runtime button.
 about-debugging-profiler-dialog-title2 = 效能檢測器
-# Label of a checkbox displayed in the runtime page for "This Firefox".
-# This checkbox will toggle preferences that enable local addon debugging.
-# The "Learn more" link points to MDN.
-# https://developer.mozilla.org/docs/Tools/about:debugging#Enabling_add-on_debugging
-about-debugging-extension-debug-setting-label = 開啟擴充套件除錯功能。<a>了解更多資訊</a>
 # Clicking on the header of a debug target category will expand or collapse the debug
 # target items in the category. This text is used as ’title’ attribute of the header,
 # to describe this feature.
@@ -296,3 +296,9 @@ about-debugging-main-process-description2 = 目標瀏覽器的主要 Process
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = 關閉訊息
+# Label text used for the error details of message component.
+about-debugging-message-details-label-error = 錯誤詳細資訊
+# Label text used for the warning details of message component.
+about-debugging-message-details-label-warning = 警告詳細資訊
+# Label text used for default state of details of message component.
+about-debugging-message-details-label = 詳細資訊

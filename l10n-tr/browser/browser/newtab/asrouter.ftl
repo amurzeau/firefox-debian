@@ -53,3 +53,12 @@ cfr-doorhanger-pintab-step2 = Menüden <b>Sekmeyi sabitle</b>’yi seçin.
 cfr-doorhanger-pintab-step3 = Sitede bir güncelleme olursa sabit sekmenizde mavi bir nokta göreceksiniz.
 cfr-doorhanger-pintab-animation-pause = Duraklat
 cfr-doorhanger-pintab-animation-resume = Devam et
+
+## Firefox Accounts Message
+
+cfr-doorhanger-bookmark-fxa-header = Yer imlerinize her yerden ulaşın.
+cfr-doorhanger-bookmark-fxa-body = Bu yer imine mobil cihazlarınızdan da ulaşmak istemez miydiniz? Hemen { -fxaccount-brand-name } açın.
+cfr-doorhanger-bookmark-fxa-link-text = Yer imlerini eşitle…
+cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
+    .aria-label = Kapat düğmesi
+    .title = Kapat

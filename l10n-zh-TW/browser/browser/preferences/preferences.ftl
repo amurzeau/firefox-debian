@@ -34,6 +34,7 @@ policies-notice =
         [windows] 您的組織已鎖定某些選項。
        *[other] 您的組織已鎖定某些偏好設定。
     }
+managed-notice = 您的瀏覽器受到組織管理。
 pane-general-title = 一般
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = 隱私權與安全性
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Firefox 帳號
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -281,6 +278,21 @@ update-pref-write-failure-title = 寫入失敗
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = 無法儲存偏好設定。無法寫入檔案: { $path }
+update-setting-write-failure-title = 儲存更新偏好設定時發生錯誤
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    { -brand-short-name } 遇到錯誤，並未儲存此變更。請注意: 調整此更新偏好設定，需要能夠寫入下列檔案的權限。您或您的系統管理員可以透過授予使用者此檔案的完整控制權，來解決本問題。
+    
+    無法寫入下列檔案: { $path }
+update-in-progress-title = 更新中
+update-in-progress-message = 您希望 { -brand-short-name } 繼續此更新嗎？
+update-in-progress-ok-button = 捨棄 (&D)
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = 繼續 (&C)
 
 ## General Section - Performance
 
@@ -516,8 +528,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = 儲存
     .accesskey = v
-sync-mobilepromo-single = 連結其他裝置
-sync-mobilepromo-multi = 管理裝置
 sync-connect-another-device = 連結其他裝置
 sync-manage-devices = 管理裝置
 sync-fxa-begin-pairing = 與裝置配對
@@ -537,6 +547,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = 例外網站…
     .accesskey = x
+forms-generate-passwords =
+    .label = 產生強密碼
+    .accesskey = u
 forms-saved-logins =
     .label = 已存登入資訊…
     .accesskey = L
@@ -675,7 +688,6 @@ content-blocking-all-third-party-cookies = 所有第三方 Cookie
 content-blocking-cryptominers = 加密貨幣採礦程式
 content-blocking-fingerprinters = 數位指紋追蹤程式
 content-blocking-warning-title = 注意！
-content-blocking-warning-desc = 封鎖 Cookie 與追蹤器可能會造成某些網站故障。若開啟網站遇到問題，很簡單就能為您信任的網站關閉封鎖。
 content-blocking-warning-description = 封鎖內容後可能造成某些網站無法正常運作。很簡單就能為您信任的網站關閉封鎖功能。
 content-blocking-learn-how = 了解要怎麼做
 content-blocking-reload-description = 需要重新載入分頁才能套用變更。
@@ -742,6 +754,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = 例外網站…
     .accesskey = E
+permissions-autoplay = 自動播放
+permissions-autoplay-settings =
+    .label = 設定…
+    .accesskey = t
 permissions-block-popups =
     .label = 封鎖彈出型視窗
     .accesskey = B

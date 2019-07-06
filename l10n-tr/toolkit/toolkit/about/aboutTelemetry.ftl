@@ -3,8 +3,8 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 about-telemetry-ping-data-source = Ping verisi kaynağı:
-about-telemetry-show-current-ping-data = Şu anki ping verisi
-about-telemetry-show-archived-ping-data = Arşivlenmiş ping verisi
+about-telemetry-show-current-ping-data = Şu anki ping verileri
+about-telemetry-show-archived-ping-data = Arşivlenmiş ping verileri
 about-telemetry-show-subsession-data = Alt oturum verilerini göster
 about-telemetry-choose-ping = Ping'i seçin:
 about-telemetry-archive-ping-type = Ping türü
@@ -15,6 +15,7 @@ about-telemetry-option-group-older = Daha eski
 about-telemetry-previous-ping = <<
 about-telemetry-next-ping = >>
 about-telemetry-page-title = Telemetri Verileri
+about-telemetry-current-store = Geçerli depo:
 about-telemetry-more-information = Daha fazla bilgi almak mı istiyorsunuz?
 about-telemetry-firefox-data-doc = <a data-l10n-name="data-doc-link">Firefox Veri Belgeleri</a>, veri araçlarlarımızla nasıl çalışabileceğinize dair rehberleri içerir.
 about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Firefox Telemetri istemcisi belgeleri</a> kavram tanımlarını, API belgelerini ve veri referanslarını içerir.
@@ -141,3 +142,6 @@ about-telemetry-origin-count = sayaç
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Firefox Köken Telemetrisi</a> verileri göndermeden öne şifreler. Böylece { $telemetryServerOwner } bazı şeyleri sayabilir ama hangi { -brand-product-name } tarayıcılarının bu sayıma dahil olduğunu bilemez. (<a data-l10n-name="prio-blog-link">Daha fazla bilgi alın</a>)
+# Variables:
+#  $process (String): type of process in subsection headers ( e.g. "content", "parent" )
+about-telemetry-process = { $process } işlemi

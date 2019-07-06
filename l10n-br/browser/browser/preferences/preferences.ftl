@@ -34,6 +34,7 @@ policies-notice =
         [windows] Diweredekaet eo bet ho parregezh da gemmañ dibarzhioù 'zo.
        *[other] Diweredekaet eo bet ho parregezh da gemmañ gwellvezioù 'zo.
     }
+managed-notice = Ardoet eo ho merdeer gant hoc'h aozadur.
 pane-general-title = Hollek
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = Buhez prevez ha diogelroez
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Kont Firefox
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -302,6 +299,21 @@ update-pref-write-failure-title = Fazi skrivañ
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = N'haller ket enrollañ ho kwellvezioù. N'haller ket skrivañ er restr: { $path }
+update-setting-write-failure-title = Fazi en ur enrollañ ar gwellvezioù hizivaat
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    Degouezhet ez eus bet ur fazi gant { -brand-short-name } ha n'eo ket bet enrollet ar c'hemmoù. Kemmañ ar gwellvez-se a azgoulenn kaout an aotre da skrivañ er restr dindan. Un ardoer reizhiad pe c'hwi hoc'h unan a c'hallfe diskoulmañ ar fazi en ur aotren ar strollad Arveriaded da reoliañ ar restr-mañ.
+    
+    Dic'houest eo da skrivañ er restr: { $path }
+update-in-progress-title = Hizivadenn war ober
+update-in-progress-message = Fallout a ra deoc'h e kendalc'hfe { -brand-short-name } da hizivaat?
+update-in-progress-ok-button = &Argas
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Kenderc'hel
 
 ## General Section - Performance
 
@@ -537,8 +549,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Enrollañ
     .accesskey = E
-sync-mobilepromo-single = Kennaskañ un trevnad all
-sync-mobilepromo-multi = Merañ an trevnadoù
 sync-connect-another-device = Kennaskit un trevnad all
 sync-manage-devices = Merañ an trevnadoù
 sync-fxa-begin-pairing = Koublañ un trevnad
@@ -696,7 +706,6 @@ content-blocking-all-third-party-cookies = Holl doupinoù an tredeoù
 content-blocking-cryptominers = Kriptogleuzerien
 content-blocking-fingerprinters = Dinoerien roudoù niverel
 content-blocking-warning-title = Diwallit!
-content-blocking-warning-desc = Stankañ toupinoù ha heulierien a c'hall mirout lec'hiennoù 'zo da vont en-dro en un doare dereat. Aes eo diweredekaat ar stankadur evit al lec'hiennoù ho peus fiziañs eno.
 content-blocking-warning-description = Stankañ endalc'hadoù a c'hall lakaat lec'hiennoù 'zo da vont en-dro a-dreuz. Aes eo diweredekaat ar stankadur evit al lec'hiennoù ho peus fiziañs eno.
 content-blocking-learn-how = Deskit penaos
 content-blocking-reload-description = Ezhomm ho po da adkargañ hoc'h ivinelloù evit arloañ ar c'hemmoù.
@@ -763,6 +772,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Nemedennoù...
     .accesskey = N
+permissions-autoplay = Lenn emgefreek
+permissions-autoplay-settings =
+    .label = Arventennoù...
+    .accesskey = A
 permissions-block-popups =
     .label = Herzel an diflugelloù
     .accesskey = H

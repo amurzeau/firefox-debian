@@ -66,7 +66,7 @@ cmd-install-addon =
     .label = ჩადგმა
     .accesskey = ი
 cmd-contribute =
-    .label = წვლილის გაღება
+    .label = შემოწირულობა
     .accesskey = წ
     .tooltiptext = შეიტანეთ წვლილი ამ დამატების შემუშავებაში
 discover-title = რა არის დამატებები?
@@ -74,9 +74,7 @@ discover-description =
     დამატებები არის პროგრამები, რომლებიც საშუალებას გაძლევთ უკეთ მოირგოთ { -brand-short-name }
     დამატებითი შესაძლებლობებითა და გაფორმებით. სცადეთ დროის დასაზოგი გვერდითი ზოლი, ამინდის მომხსენებელი, ან თემების საშუალებით გახადეთ { -brand-short-name }
     უფრო მეტად თქვენებური.
-discover-footer =
-    ინტერნეტთან კავშირის დროს, ამ არეში გამოჩნდება
-      საუკეთესო და რჩეული დამატებები, რომელიც შეგიძლიათ გამოსცადოთ.
+discover-footer = ინტერნეტთან კავშირის დროს, აქ გამოჩნდება საუკეთესო და რჩეული დამატებები, რომელიც შეგიძლიათ გამოსცადოთ.
 detail-version =
     .label = ვერსია
 detail-last-updated =
@@ -100,7 +98,7 @@ detail-update-manual =
 detail-private-browsing-label = პირად ფანჯრებში გაშვება
 detail-private-browsing-description2 = დაშვების შემთხვევაში, გაფართოებას წვდომა ექნება თქვენს მოქმედებებზე პირად ფანჯრებში. <label data-l10n-name="detail-private-browsing-learn-more">იხილეთ ვრცლად</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = არაა დაშვებული პირად ფანჯრებში
 detail-private-disallowed-description = ეს გაფართოება არ გაეშვება პირადი თვალიერებისას. <label data-l10n-name="detail-private-browsing-learn-more">ვრცლად</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
@@ -146,14 +144,14 @@ addon-restart-now =
     .label = ხელახლა გაშვება
 disabled-unsigned-heading =
     .value = ზოგიერთი დამატება გამორთულია
-disabled-unsigned-description = ეს დამატებები არაა დამოწმებული { -brand-short-name }-ში გამოსაყენებლად. თქვენ შეგიძლიათ <label data-l10n-name="find-addons">მონახოთ შემცვლელები</label> ან სთხოვოთ შემქმნელს მათი დამოწმება.
+disabled-unsigned-description = ეს დამატებები დაუმოწმებელია და { -brand-short-name } ვერ გამოიყენებს. შეგიძლიათ <label data-l10n-name="find-addons">მონახოთ შემცვლელები</label> ან სთხოვოთ შემქმნელს მათი დამოწმება.
 disabled-unsigned-learn-more = შეიტყვეთ მეტი ჩვენი ძალისხმევის შესახებ, ინტერნეტში თქვენი უსაფრთხოების დაცვისთვის.
 disabled-unsigned-devinfo = შემმუშავებლებს, რომელთაც თავიანთი დამატებების დამოწმება სურთ, შეუძლიათ განაგრძონ ჩვენი <label data-l10n-name="learn-more">სახელმძღვანელოს კითხვა</label>.
 plugin-deprecation-description = რამეს ვერ პოულობთ? { -brand-short-name } აღარ იძლევა ზოგიერთი მოდულის გამოყენების შესაძლებლობას. <label data-l10n-name="learn-more">იხილეთ ვრცლად.</label>
 legacy-warning-show-legacy = მოძველებული გაფართოებების ჩვენება
 legacy-extensions =
     .value = მოძველებული გაფართოებები
-legacy-extensions-description = ეს გაფართოებები არ შეესაბამება { -brand-short-name }-ის არსებულ სტანდარტებს და შესაბამისად ამორთულია. <label data-l10n-name="legacy-learn-more">ვრცლად, დამატებებთან დაკავშირებული ცვლილებების შესახებ</label>
+legacy-extensions-description = ეს გაფართოებები არ შეესაბამება მოთხოვნებს, რომელთაც { -brand-short-name } ადგენს და შესაბამისად ამორთულია. <label data-l10n-name="legacy-learn-more">ვრცლად, დამატებებთან დაკავშირებული ცვლილებების შესახებ</label>
 private-browsing-description2 =
     { -brand-short-name } ცვლის გაფართოებების მუშაობას პირადი თვალიერებისას. ნებისმიერ ახლად დაყენებულ დამატებას
     { -brand-short-name } არ გაუშვებს ნაგულისხმევად პირად ფანჯრებში. მანამ, სანამ თავად არ დაუშვებთ პარამეტრებიდან,
@@ -163,6 +161,9 @@ private-browsing-description2 =
 extensions-view-discover =
     .name = კატალოგი
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = შემოთავაზებები
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = ბოლო განახლებები
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -243,7 +244,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = გაფართოებების ღილაკების მართვა
     .accesskey = ღ
-shortcuts-empty-message = ამ გაფართოებისთვის სწრაფი ღილაკები არაა.
 shortcuts-no-addons = არცერთი გაფართოება არ გაქვთ ჩართული.
 shortcuts-no-commands = სწრაფი ღილაკები არ აქვს შემდეგ გაფართოებებს:
 shortcuts-input =
@@ -268,13 +268,53 @@ shortcuts-card-collapse-button = ნაკლების ჩვენება
 go-back-button =
     .tooltiptext = უკან გადასვლა
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    გაფართოებები, ერთგვარი პროგრამებია ბრაუზერისთვის, რომლებიც საშუალებას გაძლევთ
+    დაიცვათ პაროლები, ჩამოტვირთოთ ვიდეოები, მოიძიოთ საყიდლები, შეზღუდოთ
+    მომაბეზრებელი რეკლამები, შეცვალოთ ბრაუზერის იერსახე და კიდევ უამრავი რამ.
+    ეს პატარა პროგრამული ნაწილები ხშირ შემთხვევაში შექმნილია ცალკეული მხარის მიერ.
+    აქ შეგიძლია იხილით ისინი, რომელთაც { -brand-product-name } <a data-l10n-name="learn-more-trigger">გირჩევთ</a>
+    მეტი უსაფრთხოებისთვის, წარმადობისა და შესაძლებლობებისთვის.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations =
+    შემოთავაზებების ნაწილი არის მორგებული თქვენზე. ისინი ეფუძნება თქვენ მიერ
+    დაყენებულ სხვა გაფართოებებს, პროფილის პარამეტრებსა და გამოყენების სტატისტიკას.
+discopane-notice-learn-more = ვრცლად
+privacy-policy = პირადულობის დებულება
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = შემქმნელი <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = მომხმარებლები: { $dailyUsers }
+install-extension-button = დაემატოს { -brand-product-name }
+install-theme-button = თემის ჩადგმა
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = მართვა
+find-more-addons = სხვა დამატებების მოძიება
+
 ## Add-on actions
 
-report-addon-button = მოხსენება
+report-addon-button = საჩივარი
 remove-addon-button = მოცილება
 disable-addon-button = ამორთვა
 enable-addon-button = ჩართვა
 expand-addon-button = დამატებითი პარამეტრები
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] პარამეტრები
+       *[other] პარამეტრები
+    }
+details-addon-button = ვრცლად
+release-notes-addon-button = გამოშვების მონაცემები
+permissions-addon-button = ნებართვები
 addons-enabled-heading = ჩართულია
 addons-disabled-heading = ამორთულია
 ask-to-activate-button = ნებართვა გასაშვებად
@@ -285,6 +325,11 @@ addon-detail-version-label = ვერსია
 addon-detail-last-updated-label = ბოლო განახლება
 addon-detail-homepage-label = მთავარი გვერდი
 addon-detail-rating-label = შეფასება
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = { NUMBER($rating, maximumFractionDigits: 1) } შეფასება 5-იდან
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -317,5 +362,18 @@ addon-badge-private-browsing-allowed =
 addon-detail-private-browsing-help = დაშვების შემთხვევაში, გაფართოებას წვდომა ექნება თქვენს მოქმედებებზე პირად ფანჯრებში. <a data-l10n-name="learn-more">ვრცლად</a>
 addon-detail-private-browsing-allow = დაშვება
 addon-detail-private-browsing-disallow = აკრძალვა
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = შემოთავაზებული
+    .alt = შემოთავაზებული
 available-updates-heading = ხელმისწვდომი განახლებები
 recent-updates-heading = ბოლო განახლებები
+release-notes-loading = იტვირთება...
+release-notes-error = სამწუხაროდ, ვერსიის მონაცემების ჩვენებისას მოხდა შეცდომა.
+addon-permissions-empty = გაფართოება არ ითხოვს რამე ნებართვას
+recommended-extensions-heading = შემოთავაზებული გაფართოებები
+recommended-themes-heading = შემოთავაზებული თემები
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = შემოქმედებით უნარებს ფლობთ? <a data-l10n-name="link">ააწყვეთ საკუთარი გაფორმება Firefox Color-ით.</a>

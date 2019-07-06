@@ -34,6 +34,7 @@ policies-notice =
         [windows] Waša organizacija je změny někotrych nastajenjow znjemóžnił.
        *[other] Waša organizacija je změny někotrych nastajenjow znjemóžnił.
     }
+managed-notice = Waš wobhladowka so wot wašeje organizacije rjaduje.
 pane-general-title = Powšitkowny
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = Priwatnosć a wěstota
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Konto Firefox
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -299,6 +296,21 @@ update-pref-write-failure-title = Pisanski zmylk
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Nastajenje njeda so składować. Njebě móžno, do dataje pisać: { $path }
+update-setting-write-failure-title = Zmylk při składowanju aktualizowanskich nastajenjow
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    { -brand-short-name } je na zmylk storčił a njeje tutu změnu składował. Dźiwajće na to, zo sej tute aktualizowanske nastajenje pisanske prawo za slědowacu dataju wužaduje. Wy abo systemowy administrator móžetej zmylk porjedźić, hdyž wužiwarskej skupinje połnu kontrolu nad tutej dataju datej.
+    
+    Njeda so do dataje pisać: { $path }
+update-in-progress-title = Aktualizacija běži
+update-in-progress-message = Chceće, zo { -brand-short-name } z tutej aktualizaciju pokročuje?
+update-in-progress-ok-button = &Zaćisnyć
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Dale
 
 ## General Section - Performance
 
@@ -534,8 +546,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Składować
     .accesskey = k
-sync-mobilepromo-single = Z druhim gratom zwjazać
-sync-mobilepromo-multi = Graty rjadować
 sync-connect-another-device = Z druhim gratom zwjazać
 sync-manage-devices = Graty rjadować
 sync-fxa-begin-pairing = Grat zwjazać
@@ -555,6 +565,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Wuwzaća…
     .accesskey = u
+forms-generate-passwords =
+    .label = Mócne hesła wutworić a namjetować
+    .accesskey = h
 forms-saved-logins =
     .label = Składowane přizjewjenja…
     .accesskey = S
@@ -693,7 +706,6 @@ content-blocking-all-third-party-cookies = Wšě placki třećich
 content-blocking-cryptominers = Kryptokopanje
 content-blocking-fingerprinters = Porstowe wotćišće
 content-blocking-warning-title = Kedźbu!
-content-blocking-warning-desc = Hdyž placki a přesćěhowaki blokujeće, njemóhli někotre websydła korektnje fungować. Je lochko, blokowanje sydłow, kotrymž dowěrjeće, znjemóžnić.
 content-blocking-warning-description = Blokowanje wobsaha móže zawinować, zo někotre websydła hižo njefunguja. Je lochko, blokowanje za sydła znjemóžnić, kotrymž dowěrjeće.
 content-blocking-learn-how = Zhońće kak
 content-blocking-reload-description = Dyrbiće swoje rajtarki znowa začitać, zo byšće tute změny nałožił.
@@ -760,6 +772,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Wuwzaća…
     .accesskey = u
+permissions-autoplay = Awtomatiske wothraće
+permissions-autoplay-settings =
+    .label = Nastajenja…
+    .accesskey = N
 permissions-block-popups =
     .label = Wuskakowace wokno blokować
     .accesskey = k

@@ -5,11 +5,11 @@
 <!ENTITY firstrun_panel_title_welcome "Добро пожаловать">
 <!ENTITY firstrun_urlbar_message2 "Спасибо, что выбрали &brandShortName;">
 <!ENTITY newfirstrun_urlbar_message "Добро пожаловать в &brandShortName;">
-<!ENTITY firstrun_urlbar_subtext2 "Современный мобильный браузер от Mozilla, некоммерческой организации, преданной свободному и открытому Интернету.">
+<!ENTITY firstrun_urlbar_subtext2 "Современный мобильный браузер от Mozilla, некоммерческой организации, преданной идее свободного и открытого Интернета.">
 <!ENTITY newfirstrun_urlbar_subtext "Быстрый, приватный и всегда на вашей стороне.">
 <!ENTITY firstrun_panel_title_privacy "Приватность">
-<!ENTITY firstrun_privacy_message "Сёрфите Интернет не опасаясь слежки">
-<!ENTITY firstrun_privacy_subtext "Приватный просмотр с защитой от отслеживания блокирует трекеры, пока вы сёрфите, и не будет помнить вашу историю после завершения сёрфинга.">
+<!ENTITY firstrun_privacy_message "Просматривайте веб-страницы не опасаясь слежки">
+<!ENTITY firstrun_privacy_subtext "Приватный просмотр с защитой от отслеживания блокирует трекеры во время просмотра и не будет помнить вашу историю после завершения просмотра.">
 <!ENTITY newfirstrun_privacy_subtext "Приватный просмотр блокирует рекламные трекеры, которые отслеживают вас в Интернете.">
 <!ENTITY firstrun_panel_title_customize "Настраивайте">
 <!ENTITY firstrun_customize_message "Сделайте &brandShortName; своим.">
@@ -21,12 +21,15 @@
 <!ENTITY firstrun_data_message "Меньше трафика, больше экономии">
 <!ENTITY firstrun_data_subtext2 "Отключайте изображения, чтобы уменьшить расход трафика на каждом посещаемом сайте.">
 <!ENTITY firstrun_sync_title "Синхронизация">
+<!ENTITY updatednewfirstrun_sync_title "Аккаунт">
 <!ENTITY firstrun_sync_message2 "Начните с того места, на котором остановились.">
 <!ENTITY firstrun_sync_subtext2 "Используйте синхронизацию для доступа к закладкам, паролям и многому другому, что вы сохраните в &brandShortName;, на всех ваших устройствах.">
 <!ENTITY newfirstrun_sync_subtext "Синхронизируйте вещи, которые вы сохраняете на мобильном, с Firefox для компьютеров, приватно и безопасно.">
+<!ENTITY updatednewfirstrun_sync_subtext "Войдите в аккаунт, чтобы получить максимум от &brandShortName;">
 <!ENTITY firstrun_signin_message "Соединитесь и вперёд">
 <!ENTITY firstrun_signin_button "Войти в Синхронизацию">
 <!ENTITY newfirstrun_signin_button "Включить синхронизацию">
+<!ENTITY updatednewfirstrun_signin_button "Войти в &brandShortName;">
 <!ENTITY  onboard_start_button_browser "Начать веб-сёрфинг">
 <!ENTITY firstrun_button_notnow "Не сейчас">
 <!ENTITY firstrun_button_next "Далее">
@@ -66,6 +69,12 @@
 <!ENTITY  sending_crash_report "Отправка сообщения о падении\u2026">
 <!ENTITY  crash_close_label "Закрыть">
 <!ENTITY  crash_restart_label "Перезапустить &brandShortName;">
+
+<!-- Localization note (crash_notification_title, crash_notification_message, crash_notification_negative_button_text)
+     Text displayed in a system notification to allow starting the Crash Reporter (Android Q and later).-->
+<!ENTITY  crash_notification_title "С &brandShortName; произошел сбой">
+<!ENTITY  crash_notification_message "Нажмите, чтобы сообщить в &vendorShortName;">
+<!ENTITY  crash_notification_negative_button_text "Игнорировать">
 
 <!ENTITY url_bar_default_text2 "Введите запрос или адрес">
 
@@ -108,6 +117,10 @@
 <!ENTITY bookmark_folder_updated "Папка обновлена">
 <!ENTITY bookmark_parent_folder "Родительская папка">
 <!ENTITY bookmark_add_folder "Добавить новую папку">
+
+<!-- Localization note (bookmark_default_folder_title): Default title is used if user doesn't specify
+     one when he is creating a bookmark folder -->
+<!ENTITY bookmark_default_folder_title "(без названия)">
 
 <!ENTITY reader_saved_offline "Сохранено в автономном режиме">
 <!-- Localization note (reader_switch_to_bookmarks) : This
@@ -413,8 +426,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY pref_private_data_downloadFiles2 "Загрузки">
 <!ENTITY pref_private_data_syncedTabs "Облачные вкладки">
 
-<!ENTITY pref_default_browser "Сделать браузером по умолчанию">
-
 <!ENTITY pref_default_browser2 "Сделайте &brandShortName; своим браузером по умолчанию">
 <!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
     Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
@@ -592,6 +603,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_keyword "Краткое имя">
 <!ENTITY bookmark_select_folder "Выбрать папку">
 
+<!ENTITY bookmark_edit_undo "Отменить">
+
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
      dialog that appears after selecting the "Edit Site Settings" context menu item. -->
 <!ENTITY site_settings_title3       "Параметры сайта">
@@ -679,6 +692,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY filepicker_audio_title "Выбрать или записать звук">
 <!ENTITY filepicker_image_title "Выбрать или сделать фотографию">
 <!ENTITY filepicker_video_title "Выбрать или записать видео">
+
+<!ENTITY filepicker_permission_denied "Нужные права не были получены, активирован системный выбор файлов.">
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "Вы соединены с">
@@ -918,6 +933,7 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_title "Приостановить">
 <!ENTITY pip_pause_button_description "Приостановить воспроизведение">
 
+<!ENTITY pref_notification_settings_link "Управление настройками уведомлений">
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "Браузер">
 <!ENTITY mls_notification_channel "Служба местоположения &vendorShortName;">
@@ -930,3 +946,4 @@ Picture-in-picture mini window -->
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
 web sites through the HTML Notifications API. -->
 <!ENTITY site_notifications_channel "Уведомления сайтов">
+<!ENTITY crash_handler_notifications_channel "Сообщения о падениях &brandShortName;">

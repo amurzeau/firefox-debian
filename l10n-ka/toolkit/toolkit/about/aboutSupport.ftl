@@ -3,10 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 page-title = მონაცემები გაუმართაობის მოსაგვარებლად
-page-subtitle =
-    ეს გვერდი შეიცავს ტექნიკურ მონაცემებს, რომელიც შესაძლოა წარმოქმნილი ხარვეზის
-    მოგვარებაში დაგეხმაროთ. თუ { -brand-short-name }-ის შესახებ ხშირად დასმულ კითხვებზე
-    ეძებთ პასუხს, ეწვიეთ ჩვენს <a data-l10n-name="support-link">მხარდაჭერის გვერდს</a>.
+page-subtitle = ეს გვერდი შეიცავს ტექნიკურ მონაცემებს, რომლებიც შესაძლოა წარმოქმნილი ხარვეზის მოგვარებაში დაგეხმაროთ. თუ ხშირად დასმულ საკითხებზე ეძებთ პასუხს, რომლითაც შეგეძლებათ გამართოთ { -brand-short-name }, იხილეთ ჩვენი <a data-l10n-name="support-link">მხარდაჭერის გვერდი</a>.
 crashes-title = უეცარი გათიშვების მოხსენებები
 crashes-id = მოხსენების ID
 crashes-send-date = გადაიგზავნა
@@ -35,8 +32,15 @@ app-basics-name = სახელი
 app-basics-version = ვერსია
 app-basics-build-id = ანაწყობის ID
 app-basics-update-channel = განახლების არხი
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] განახლების მდებარეობა
+       *[other] განახლების საქაღალდე
+    }
 app-basics-update-history = განახლების ისტორია
 app-basics-show-update-history = განახლების ისტორიის ჩვენება
+# Represents the path to the binary used to start the application.
+app-basics-binary = პროგრამის ორობითი ფაილი
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] პროფილის საქაღალდე
@@ -82,6 +86,8 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = გადაწყვეტილებების ჩანაწერები
 graphics-crash-guards-title = უეცარი გათიშვებისგან დაცვის მიერ გამორთული შესაძლებლობები
 graphics-workarounds-title = შემოვლითი გზები
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = ფანჯრის ოქმი
 place-database-title = Places მონაცემთა ბაზა
 place-database-integrity = მთლიანობა
 place-database-verify-integrity = მთლიანობის გადამოწმება
@@ -118,7 +124,7 @@ media-device-format = ფორმატი
 media-device-channels = არხები
 media-device-rate = სიხშირე
 media-device-latency = დაყოვნება
-intl-title = გასაერთაშორისოება & გადათარგმნა
+intl-title = საერთაშორისოობა და ცალკეულ ენებზე მორგება
 intl-app-title = პროგრამის პარამეტრები
 intl-locales-requested = მოთხოვნილი ენები
 intl-locales-available = ხელმისაწვდომი ენები

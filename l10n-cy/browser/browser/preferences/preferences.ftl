@@ -34,6 +34,7 @@ policies-notice =
         [windows] Mae eich corff wedi analluogi'r gallu i newid rhai dewisiadau.
        *[other] Mae eich corff wedi analluogi'r gallu i newid rhai dewisiadau.
     }
+managed-notice = Mae eich porwr yn cael ei reoli gan eich sefydliad.
 pane-general-title = Cyffredinol
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = Preifatrwydd a Diogelwch
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Cyfrif Firefox
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -81,25 +78,25 @@ restart-later = Ailgychwyn Rhywbryd Eto
 
 # This string is shown to notify the user that their home page
 # is being controlled by an extension.
-extension-controlled-homepage-override = Mae estyniad, <img data-l10n-name="icon"/> { $name }, yn rheoli eich tudalen cartref.
+extension-controlled-homepage-override = Mae estyniad <img data-l10n-name="icon"/> { $name }, yn rheoli eich tudalen cartref.
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
-extension-controlled-new-tab-url = Mae estyniad, <img data-l10n-name="icon"/> { $name }, yn rheoli eich tudalen Tab Newydd.
+extension-controlled-new-tab-url = Mae estyniad <img data-l10n-name="icon"/> { $name }, yn rheoli eich tudalen Tab Newydd.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
-extension-controlled-web-notifications = Mae estyniad, <img data-l10n-name="icon"/> { $name }, yn rheoli'r gosodiad hwn.
+extension-controlled-web-notifications = Mae estyniad <img data-l10n-name="icon"/> { $name }, yn rheoli'r gosodiad hwn.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
-extension-controlled-default-search = Mae'r estyniad, <img data-l10n-name="icon"/> { $name }, wedi gosod eich peiriant chwilio ragosodedig.
+extension-controlled-default-search = Mae'r estyniad <img data-l10n-name="icon"/> { $name }, wedi gosod eich peiriant chwilio ragosodedig.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
-extension-controlled-privacy-containers = Mae estyniad, <img data-l10n-name="icon"/> { $name }, angen Tabiau Cynhwysydd.
+extension-controlled-privacy-containers = Mae estyniad <img data-l10n-name="icon"/> { $name }, angen Tabiau Cynhwysydd.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = Mae estyniad, <img data-l10n-name="icon"/> { $name }, yn rheoli'r gosodiad hwn.
+extension-controlled-websites-content-blocking-all-trackers = Mae estyniad <img data-l10n-name="icon"/> { $name }, yn rheoli'r gosodiad hwn.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
-extension-controlled-proxy-config = Mae estyniad, <img data-l10n-name="icon"/> { $name }, yn rheoli sut mae { -brand-short-name } yn cysylltu â'r rhyngrwyd.
+extension-controlled-proxy-config = Mae estyniad <img data-l10n-name="icon"/> { $name }, yn rheoli sut mae { -brand-short-name } yn cysylltu â'r rhyngrwyd.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -137,7 +134,7 @@ set-as-my-default-browser =
     .label = Gwneud yn Ragosodedig…
     .accesskey = R
 startup-restore-previous-session =
-    .label = Adfer sesiwn flaenorol
+    .label = Adfer y sesiwn flaenorol
     .accesskey = A
 startup-restore-warn-on-quit =
     .label = Rhybuddio wrth adael y porwr
@@ -148,7 +145,7 @@ ctrl-tab-recently-used-order =
     .label = Mae Ctrl+Tab yn cylchdroi drwy dabiau yn y drefn y'u defnyddiwyd yn ddiweddar
     .accesskey = T
 open-new-link-as-tabs =
-    .label = Agor dolenni mewn tabiau yn lle mewn ffenestri newydd
+    .label = Agor dolenni mewn tabiau ac nid mewn ffenestri newydd
     .accesskey = f
 warn-on-close-multiple-tabs =
     .label = Rhybuddio wrth gau mwy nag un tab
@@ -219,7 +216,7 @@ colors-settings =
     .label = Lliwiau…
     .accesskey = i
 language-header = Iaith
-choose-language-description = Dewis eich iaith ar gyfer dangos tudalennau
+choose-language-description = Dewis eich dewis iaith i ddangos tudalennau
 choose-button =
     .label = Dewis…
     .accesskey = D
@@ -279,7 +276,7 @@ play-drm-content =
     .accesskey = C
 play-drm-content-learn-more = Dysgu rhagor
 update-application-title = Diweddariadau { -brand-short-name }
-update-application-description = Cadw { -brand-short-name } yn gyfredol ar gyfer y perfformiad, sefydlogrwydd a diogelwch gorau.
+update-application-description = Cadw { -brand-short-name } yn gyfredol am y perfformiad, y sefydlogrwydd a'r diogelwch gorau.
 update-application-version = Fersiwn { $version } <a data-l10n-name="learn-more">Beth sy'n newydd</a>
 update-history =
     .label = Dangos Hanes Diweddaru…
@@ -294,7 +291,7 @@ update-application-check-choose =
 update-application-manual =
     .label = Byth gwirio am ddiweddariadau (ddim yn argymell)
     .accesskey = B
-update-application-warning-cross-user-setting = Bydd y gosodiad hwn yn berthnasol i bob cyfrif Windows a { -brand-short-name } proffiliau sy'n ddefnyddio'r gosodiad hwn o { -brand-short-name }.
+update-application-warning-cross-user-setting = Bydd y gosodiad hwn yn berthnasol i bob cyfrif Windows a proffiliau { -brand-short-name } sy'n ddefnyddio'r gosodiad { -brand-short-name } hwn.
 update-application-use-service =
     .label = Defnyddio gwasanaethau cefndirol i osod diweddariadau
     .accesskey = c
@@ -305,12 +302,27 @@ update-pref-write-failure-title = Methiant Ysgrifennu
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Methu cadw'r dewisiadau. Methu ysgrifnenu i ffeil: { $path }
+update-setting-write-failure-title = Gwall wrth gadw dewisiadau Diweddaru
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    Bu gwall ar { -brand-short-name } ac nid yw wedi cadw'r newid hwn. Noder bod gosod caniatâd ar gyfer y diweddariad hwn yn gofyn am ganiatâd i ysgrifennu at y ffeil isod. Efallai y byddwch chi neu weinyddwr system yn gallu datrys y gwall trwy roi rheolaeth lawn i'r ffeil hon i'r grŵp Defnyddwyr.
+    
+    Doedd dim modd ysgrifennu i ffeil: { $path }
+update-in-progress-title = Wrthi'n Diweddaru
+update-in-progress-message = Hoffech chi i { -brand-short-name } barhau gyda'r diweddariad hwn?
+update-in-progress-ok-button = &Dileu
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Parhau
 
 ## General Section - Performance
 
 performance-title = Perfformiad
 performance-use-recommended-settings-checkbox =
-    .label = Defnyddio gosodiadau perfformiad sy'n cael eu hargymell
+    .label = Defnyddio'r gosodiadau perfformiad sy'n cael eu hargymell
     .accesskey = D
 performance-use-recommended-settings-desc = Mae'r gosodiadau hyn wedi eu teilwrio i galedwedd a system weithredu eich cyfrifiadur.
 performance-settings-learn-more = Dysgu rhagor
@@ -456,7 +468,7 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
-sync-signedout-caption = Cymrwch eich Gwe gyda Chi
+sync-signedout-caption = Mynd â'ch  Gwe gyda Chi
 sync-signedout-description = Cydweddwch eich nodau tudalen, hanes, tabiau, cyfrineiriau, ychwanegion a dewisiadau ymysg eich dyfeisiau i gyd.
 sync-signedout-account-title = Cysylltwch gyda { -fxaccount-brand-name }
 sync-signedout-account-create = Dim cyfrif? Cychwynnwch arni
@@ -503,7 +515,7 @@ sync-engine-history =
     .label = Hanes
     .accesskey = H
 sync-engine-tabs =
-    .label = Agor Tabiau
+    .label = Agor tabiau
     .tooltiptext = Rhestr o'r hyn sydd ar agor ar bob dyfais wedi eu cydweddu
     .accesskey = T
 sync-engine-logins =
@@ -540,8 +552,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Cadw
     .accesskey = C
-sync-mobilepromo-single = Cysylltu unrhyw ddyfais arall
-sync-mobilepromo-multi = Rheoli dyfeisiau
 sync-connect-another-device = Cysylltu dyfais arall
 sync-manage-devices = Rheoli dyfeisiau
 sync-fxa-begin-pairing = Paru dyfais
@@ -561,6 +571,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Eithriadau…
     .accesskey = i
+forms-generate-passwords =
+    .label = Awgrymu a chynhyrchu cyfrineiriau cryf
+    .accesskey = A
 forms-saved-logins =
     .label = Mewngofnodion wedi eu Cadw…
     .accesskey = M
@@ -590,7 +603,7 @@ history-remember-option-all =
 history-remember-option-never =
     .label = Peidio cofio hanes
 history-remember-option-custom =
-    .label = Defnyddio gosodiadau cyfaddasu ar gyfer hanes
+    .label = Defnyddio gosodiadau cyfaddas ar gyfer hanes
 history-remember-description = Bydd { -brand-short-name } yn cofio eich hanes pori, llwytho i lawr, ffurflenni a chwilio.
 history-dontremember-description = Bydd { -brand-short-name } yn defnyddio'r un gosodiadau â phori preifat, ond ni fydd yn cofio unrhyw hanes wrth i chi bori'r We.
 history-private-browsing-permanent =
@@ -664,7 +677,7 @@ addressbar-locbar-bookmarks-option =
     .label = Nodau Tudalen
     .accesskey = N
 addressbar-locbar-openpage-option =
-    .label = Tabiau ar agor
+    .label = Tabiau agored
     .accesskey = T
 addressbar-suggestions-settings = Newid dewisiadau am awgrymiadau peiriannau chwilio
 
@@ -699,7 +712,6 @@ content-blocking-all-third-party-cookies = Pob cwci trydydd parti
 content-blocking-cryptominers = Cryptogloddwyr
 content-blocking-fingerprinters = Bysbrintwyr
 content-blocking-warning-title = Rhybudd!
-content-blocking-warning-desc = Gall rwystro cwcis a thracwyr achosi i rai gwefannau i dorri. Mae'n hawdd i analluogi rhwystro ar wefannau rydych yn ymddiried ynddyn nhw.
 content-blocking-warning-description = Gall rhwystro cynnwys achosi i rai gwefannau dorri. Mae'n hawdd i analluogi rhwystro gwefannau rydych chi'n ymddiried ynddyn nhw.
 content-blocking-learn-how = Dysgu sut
 content-blocking-reload-description = Bydd angen ail lwytho'ch tabiau i osod y newidiadau hyn.
@@ -766,6 +778,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Eithriadau...
     .accesskey = E
+permissions-autoplay = Awtochwarae
+permissions-autoplay-settings =
+    .label = Gosodiadau…
+    .accesskey = G
 permissions-block-popups =
     .label = Rhwystro ffenestri llamlen
     .accesskey = R

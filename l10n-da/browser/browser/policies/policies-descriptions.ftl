@@ -33,6 +33,8 @@ policy-CertificatesDescription = Tilføj certifikater eller brug indbyggede cert
 
 policy-Cookies = Tillad eller nægt websteder at sætte cookies.
 
+policy-DefaultDownloadDirectory = Indstil standard-mappe for hentede filer.
+
 policy-DisableAppUpdate = Deaktiver opdatering af browseren.
 
 policy-DisableBuiltinPDFViewer = Deaktiver PDF.js, den indbyggede PDF-viser i { -brand-short-name }.
@@ -82,6 +84,8 @@ policy-DNSOverHTTPS = Opsæt DNS via HTTPS.
 
 policy-DontCheckDefaultBrowser = Deaktiver check om standard-browser ved opstart.
 
+policy-DownloadDirectory = Indstil og lås valg af mappe til filhentninger.
+
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Slå Blokering af indhold til eller fra. Brugeren kan eventuelt forhindres i at ændre indstillingen.
 
@@ -91,7 +95,11 @@ policy-EnableTrackingProtection = Slå Blokering af indhold til eller fra. Bruge
 # https://github.com/mozilla/policy-templates/blob/master/README.md#extensions-machine-only
 policy-Extensions = Installer, afinstaller eller lås udvidelser. Valgmuligheden Installer tager URL’er eller stier som parametre. Valgmulighederne Afinstaller og Låst tager udvidelelses-ID som parameter.
 
+policy-ExtensionSettings = Håndter alle aspekter af udvidelses-installering.
+
 policy-ExtensionUpdate = Slå automatisk opdatering af udvidelser til eller fra.
+
+policy-FirefoxHome = Indstil Firefox' startside.
 
 policy-FlashPlugin = Tillad eller afvis brug af Flash-plugin.
 
@@ -122,6 +130,8 @@ policy-PopupBlocking = Tillad bestemte websteder at vise pop op-vinduer som stan
 
 policy-Preferences = Indstil og lås værdien for en undergruppe af indstillingerne.
 
+policy-PromptForDownloadLocation = Spørg hvor hentede filer skal gemmes.
+
 policy-Proxy = Opsæt proxy-indstillinger.
 
 policy-RequestedLocales = Vælg rækkefølgen af sprog, der skal anvendes i programmet.
@@ -139,9 +149,9 @@ policy-SearchSuggestEnabled = Slå søgeforslag til eller fra.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Installer PKCS #11 moduler.
 
-policy-SSLVersionMax = Angiv den laveste SSL-version.
+policy-SSLVersionMax = Angiv den højeste SSL-version.
 
-policy-SSLVersionMin = Angiv den højeste SSL-version.
+policy-SSLVersionMin = Angiv den laveste SSL-version.
 
 policy-SupportMenu = Føj et tilpasset menupunkt til menuen Hjælp.
 

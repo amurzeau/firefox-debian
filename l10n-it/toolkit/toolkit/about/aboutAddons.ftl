@@ -157,6 +157,9 @@ private-browsing-description2 =
 extensions-view-discover =
     .name = Esplora
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Consigli
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Aggiornamenti recenti
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -237,7 +240,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Gestisci scorciatoie da tastiera
     .accesskey = G
-shortcuts-empty-message = Non sono presenti scorciatoie da tastiera per questa estensione.
 shortcuts-no-addons = Non ci sono estensioni attive.
 shortcuts-no-commands = Le seguenti estensioni non hanno scorciatoie da tastiera:
 shortcuts-input =
@@ -258,13 +260,53 @@ shortcuts-card-collapse-button = Mostra meno scorciatoie
 go-back-button =
     .tooltiptext = Torna indietro
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    Estensioni e temi sono l’equivalente delle app per il tuo browser;
+    permettono di proteggere password, scaricare video, risparmiare negli
+    acquisti online, bloccare pubblicità fastidiose, cambiare l’aspetto del
+    browser, e molto altro ancora. Questi software sono spesso sviluppati da
+    terze parti. Ecco una selezione <a data-l10n-name="learn-more-trigger">
+    consigliata</a> da { -brand-product-name }, con la garanzia di sicurezza,
+    prestazioni e funzionalità al massimo livello.
+
+discopane-notice-recommendations =
+    Alcuni consigli in questa pagina sono personalizzati. Sono basati sulle
+    estensioni già installate, le impostazioni del profilo e statistiche
+    d’utilizzo.
+discopane-notice-learn-more = Ulteriori informazioni
+
+privacy-policy = Informativa sulla privacy
+
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = di <a data-l10n-name="author">{ $author }</a>
+user-count = Utenti: { $dailyUsers }
+install-extension-button = Aggiungi a { -brand-product-name }
+install-theme-button = Installa tema
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Gestisci
+find-more-addons = Trova altri componenti aggiuntivi
+
 ## Add-on actions
 report-addon-button = Segnala
 remove-addon-button = Rimuovi
 disable-addon-button = Disattiva
 enable-addon-button = Attiva
 expand-addon-button = Altre opzioni
-
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Opzioni
+       *[other] Preferenze
+    }
+details-addon-button = Dettagli
+release-notes-addon-button = Note di versione
+permissions-addon-button = Permessi
 addons-enabled-heading = Attivo
 addons-disabled-heading = Disattivato
 
@@ -277,6 +319,13 @@ addon-detail-version-label = Versione
 addon-detail-last-updated-label = Ultimo aggiornamento
 addon-detail-homepage-label = Sito web
 addon-detail-rating-label = Voto
+
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+  .title = Voto: { NUMBER($rating, maximumFractionDigits: 1) } su 5
+
 addon-name-disabled = { $name } (disattivato)
 addon-detail-reviews-link =
     { $numberOfReviews ->
@@ -296,5 +345,14 @@ addon-badge-private-browsing-allowed =
 addon-detail-private-browsing-help = Se viene garantito il permesso, l’estensione potrà accedere alle tue attività online nelle finestre anonime. <a data-l10n-name="learn-more">Ulteriori informazioni</a>
 addon-detail-private-browsing-allow = Consenti
 addon-detail-private-browsing-disallow = Non consentire
+addon-badge-recommended =
+  .title = Consigliata
+  .alt = Consigliata
 available-updates-heading = Aggiornamenti disponibili
 recent-updates-heading = Aggiornamenti recenti
+release-notes-loading = Caricamento in corso…
+release-notes-error = Siamo spiacenti, si è verificato un errore nel caricamento delle note di versione.
+addon-permissions-empty = Questa estensione non richiede alcun permesso
+recommended-extensions-heading = Estensioni consigliate
+recommended-themes-heading = Temi consigliati
+recommended-theme-1 = Ti senti creativo? <a data-l10n-name="link">Disegna il tuo tema con Firefox Color</a>.

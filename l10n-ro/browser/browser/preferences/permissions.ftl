@@ -34,8 +34,15 @@ permissions-button-cancel =
 permissions-button-ok =
     .label = Salvează schimbările
     .accesskey = S
+permissions-autoplay-menu = Implicit pentru toate site-urile web:
 permissions-searchbox =
     .placeholder = Caută site web
+permissions-capabilities-autoplay-allow =
+    .label = Permite audio și video
+permissions-capabilities-autoplay-block =
+    .label = Blochează audio
+permissions-capabilities-autoplay-blockall =
+    .label = Blochează audio și video
 permissions-capabilities-allow =
     .label = Permite
 permissions-capabilities-block =
@@ -51,7 +58,7 @@ permissions-capabilities-listitem-allow-session =
 
 ## Invalid Hostname Dialog
 
-permissions-invalid-uri-title = Nume de gazdă nevalid
+permissions-invalid-uri-title = A fost introdusă o denumire invalidă de gazdă
 permissions-invalid-uri-label = Te rugăm să introduci un nume de gazdă valid
 
 ## Exceptions - Tracking Protection
@@ -94,7 +101,13 @@ permissions-exceptions-addons-desc = Poți specifica ce site-uri web au permisiu
 permissions-exceptions-autoplay-media-window2 =
     .title = Excepții - Redare automată
     .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = Poți specifica ce site-uri web au întotdeauna sau niciodată permisiunea de a reda automat conținut media cu sunet. Tastează adresa site-ului pe care vrei să-l gestionezi și apoi dă clic pe Blochează sau Permite.
+permissions-exceptions-autoplay-media-desc2 = Poți specifica ce site-uri web au întotdeauna sau niciodată permisiunea de a reda automat conținut multimedia cu sunet. Tastează adresa site-ului pe care vrei să-l gestionezi și apoi dă clic pe Blochează sau Permite.
+
+## Site Permissions - Autoplay
+
+permissions-site-autoplay-window =
+    .title = Setări - Redare automată
+    .style = { permissions-window.style }
 
 ## Site Permissions - Notifications
 

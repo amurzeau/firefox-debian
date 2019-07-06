@@ -131,7 +131,6 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "Imprimir…">
 <!ENTITY printCmd.accesskey "I">
 <!ENTITY printCmd.commandkey "p">
-
 <!ENTITY importFromAnotherBrowserCmd.label "Importar de outro navegador…">
 <!ENTITY importFromAnotherBrowserCmd.accesskey "I">
 
@@ -330,17 +329,19 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Gerenciar o uso do software DRM">
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "Abrir o painel MIDI">
 
-<!ENTITY urlbar.cameraBlocked.tooltip            "Você bloqueou sua câmera para este site.">
-<!ENTITY urlbar.microphoneBlocked.tooltip        "Você bloqueou seu microfone para este site.">
-<!ENTITY urlbar.screenBlocked.tooltip            "Você bloqueou o compartilhamento de tela para este site.">
-<!ENTITY urlbar.geolocationBlocked.tooltip       "Você bloqueou informações de localização para este site.">
-<!ENTITY urlbar.webNotificationsBlocked.tooltip  "Você bloqueou as notificações para este site.">
-<!ENTITY urlbar.persistentStorageBlocked.tooltip "Você bloqueou o armazenamento persistente para este site.">
+<!ENTITY urlbar.cameraBlocked.tooltip            "Você bloqueou sua câmera neste site.">
+<!ENTITY urlbar.microphoneBlocked.tooltip        "Você bloqueou seu microfone neste site.">
+<!ENTITY urlbar.screenBlocked.tooltip            "Você bloqueou o compartilhamento de tela neste site.">
+<!ENTITY urlbar.geolocationBlocked.tooltip       "Você bloqueou informações de localização neste site.">
+<!ENTITY urlbar.webNotificationsBlocked.tooltip  "Você bloqueou notificações deste site.">
+<!ENTITY urlbar.persistentStorageBlocked.tooltip "Você bloqueou o armazenamento persistente deste site.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Você bloqueou pop-ups para esse site.">
 <!ENTITY urlbar.autoplayMediaBlocked.tooltip     "Você bloqueou a reprodução automática de mídia com som para esse site.">
-<!ENTITY urlbar.canvasBlocked.tooltip            "Você bloqueou a extração de dados da tela para este site.">
+<!ENTITY urlbar.canvasBlocked.tooltip            "Você bloqueou a extração de dados da tela neste site.">
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "Você bloqueou o uso do Adobe Flash neste site.">
-<!ENTITY urlbar.midiBlocked.tooltip              "Você bloqueou o acesso MIDI para este site.">
+<!ENTITY urlbar.midiBlocked.tooltip              "Você bloqueou o acesso a MIDI neste site.">
+
+<!ENTITY urlbar.installBlocked.tooltip           "Você bloqueou a instalação de extensões deste site.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Mostrar histórico">
 
@@ -439,8 +440,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmd2.accesskey     "O">
 <!ENTITY preferencesCmdUnix.label       "Preferências">
 <!ENTITY preferencesCmdUnix.accesskey     "P">
-
-<!ENTITY logins.label                           "Contas e Senhas">
+<!ENTITY logins.label                           "Contas e senhas">
 
 <!ENTITY clearRecentHistory.label               "Limpar histórico recente…">
 
@@ -534,7 +534,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (reportExtension.label) This label is used in the extensions
      toolbar buttons context menus, a user can use this command to submit to Mozilla
      an abuse report related to that extension. "Report" is a verb. -->
-<!ENTITY customizeMenu.reportExtension.label "Reportar extensão">
+<!ENTITY customizeMenu.reportExtension.label "Denunciar extensão">
 <!ENTITY customizeMenu.reportExtension.accesskey "o">
 
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
@@ -552,7 +552,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (urlbar.searchSuggestionsNotification.hintPrefix): Shown just before the suggestions opt-out hint. -->
 <!ENTITY urlbar.searchSuggestionsNotification.hintPrefix "Dica:">
 <!-- LOCALIZATION NOTE (urlbar.searchSuggestionsNotification.hint): &#x1F50E; is the magnifier icon emoji, please don't change it. -->
-<!ENTITY urlbar.searchSuggestionsNotification.hint "Obtenha ajuda para encontrar as coisas! Procure a &#x1F50E; ao lado das sugestões de pesquisa.">
+<!ENTITY urlbar.searchSuggestionsNotification.hint "Receba ajuda para encontrar as coisas! Procure a &#x1F50E; ao lado das sugestões de pesquisa.">
 <!ENTITY urlbar.searchSuggestionsNotification.changeSettingsWin "Alterar opções…">
 <!ENTITY urlbar.searchSuggestionsNotification.changeSettingsWin.accesskey "A">
 <!ENTITY urlbar.searchSuggestionsNotification.changeSettingsUnix "Alterar preferências…">
@@ -605,7 +605,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      intentionally left empty for en-US and can be used by other localizations to
      display a string after the search engine name.  This string will be displayed
      as:  "Search <selected engine name><searchAfter.label text>" -->
-<!ENTITY search.label                 "Pesquisa ">
+<!ENTITY search.label                 "Pesquisar com ">
 <!ENTITY searchAfter.label            "">
 
 <!-- LOCALIZATION NOTE (searchWithHeader.label):
@@ -745,10 +745,10 @@ items are mutually exclusive. -->
 <!-- LOCALIZATION NOTE: The access keys for "Mute" and
 "Unmute" are the same because the two context-menu
 items are mutually exclusive. -->
-<!ENTITY mediaMute.label             "Mudo">
-<!ENTITY mediaMute.accesskey         "M">
+<!ENTITY mediaMute.label             "Silenciar">
+<!ENTITY mediaMute.accesskey         "S">
 <!ENTITY mediaUnmute.label           "Ativar som">
-<!ENTITY mediaUnmute.accesskey       "A">
+<!ENTITY mediaUnmute.accesskey       "s">
 <!ENTITY mediaPlaybackRate2.label     "Velocidade de reprodução">
 <!ENTITY mediaPlaybackRate2.accesskey "d">
 <!ENTITY mediaPlaybackRate050x2.label "Lenta (0,5 ×)">
@@ -886,6 +886,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.extensionPage "Esta página é carregada a partir de uma extensão.">
 <!ENTITY identity.insecureLoginForms2 "As contas de acesso inseridas nesta página podem ser comprometidas.">
 
+<!ENTITY identity.customRoot "Conexão homologada por uma entidade certificadora que não é reconhecida pela Mozilla.">
+
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "O &brandShortName; bloqueou partes desta página que não são seguras.">
 <!ENTITY identity.passiveLoaded "Partes desta página não são seguras (tais como imagens).">
@@ -903,6 +905,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.description.passiveLoaded3 "Apesar do &brandShortName; ter bloqueado algum conteúdo, ainda há elementos na página que não são seguros (como imagens).">
 <!ENTITY identity.description.activeLoaded "Este site tem conteúdo que não é seguro (como scripts) e sua conexão com ele não é privativa.">
 <!ENTITY identity.description.activeLoaded2 "Informações que compartilhar com este site (tais como senhas, mensagens, cartões de créditos, etc.) podem ser vistas por terceiros.">
+
+<!ENTITY identity.description.customRoot "A Mozilla não reconhece esta entidade certificadora. Ela pode ter sido adicionada pelo seu sistema operacional ou por um administrador.">
 
 <!ENTITY identity.enableMixedContentBlocking.label "Ativar proteção">
 <!ENTITY identity.enableMixedContentBlocking.accesskey "e">
@@ -989,7 +993,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.lwthemes.recommended "Recomendados">
 <!ENTITY customizeMode.lwthemes.menuManage "Gerenciar">
 <!ENTITY customizeMode.lwthemes.menuManage.accessKey "G">
-<!ENTITY customizeMode.lwthemes.menuGetMore "Obter mais temas">
+<!ENTITY customizeMode.lwthemes.menuGetMore "Instalar mais temas">
 <!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "b">
 <!ENTITY customizeMode.overflowList.title2 "Menu expandido">
 <!ENTITY customizeMode.overflowList.description "Arraste e solte itens aqui para mantê-los ao alcance, mas fora da sua barra de ferramentas…">
@@ -1041,16 +1045,16 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.cryptominers.label "Criptomineradores">
 <!ENTITY contentBlocking.cryptominersView.label "Criptomineradores">
 
-<!ENTITY contentBlocking.fingerprinters.label 'Fingerprinters (rastreadores de "impressões digitais")'>
-<!ENTITY contentBlocking.fingerprintersView.label 'Fingerprinters (rastreadores de "impressões digitais")'>
+<!ENTITY contentBlocking.fingerprinters.label "Fingerprinters (rastreadores de identidade digital)">
+<!ENTITY contentBlocking.fingerprintersView.label "Fingerprinters (rastreadores de identidade digital)">
 
-<!ENTITY contentBlocking.openBreakageReportView2.label "Reportar um problema">
-<!ENTITY contentBlocking.breakageReportView.label "Reportar problemas">
-<!ENTITY contentBlocking.breakageReportView2.description "O bloqueio de conteúdo pode causar problemas com alguns sites. Quando você reportar problemas, ajudará a tornar o &brandShortName; melhor para todos. (Será enviada uma URL, bem como informações sobre suas configurações do navegador, à Mozilla).">
+<!ENTITY contentBlocking.openBreakageReportView2.label "Relatar um problema">
+<!ENTITY contentBlocking.breakageReportView.label "Relatar problemas">
+<!ENTITY contentBlocking.breakageReportView2.description "O bloqueio de conteúdo pode causar problemas com alguns sites. Ao relatar problemas, você ajuda a tornar o &brandShortName; melhor para todos (o endereço da página é enviado à Mozilla, bem como informações sobre as configurações do navegador).">
 <!ENTITY contentBlocking.breakageReportView.learnMore "Saiba mais">
 <!ENTITY contentBlocking.breakageReportView.collection.url.label "URL">
-<!ENTITY contentBlocking.breakageReportView.collection.comments.label "Quais problemas você teve? (Opcional)">
-<!ENTITY contentBlocking.breakageReportView.sendReport.label "Enviar relatório">
+<!ENTITY contentBlocking.breakageReportView.collection.comments.label "Que problemas você teve? (opcional)">
+<!ENTITY contentBlocking.breakageReportView.sendReport.label "Enviar relato">
 <!ENTITY contentBlocking.breakageReportView.cancel.label "Cancelar">
 
 <!-- LOCALIZATION NOTE (trackingProtection.unblock5.label, trackingProtection.unblock5.accesskey):
@@ -1176,7 +1180,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- LOCALIZATION NOTE: (addonPostInstallMessage.label):
      The first <image> tag is replaced with the icon for the add-ons menu.
      The second <image> tag is replaced with the icon for the toolbar menu. -->
-<!ENTITY addonPostInstallMessage.label "Gerencie suas extensões clicando em <image class='addon-addon-icon'/> no menu <image class='addon-toolbar-icon'/>">
+<!ENTITY addonPostInstallMessage.label "Gerencie extensões clicando em <image class='addon-addon-icon'/> no menu <image class='addon-toolbar-icon'/>">
 <!ENTITY addonPostInstall.incognito.checkbox.label "Permitir que esta extensão funcione em janelas privativas">
 <!ENTITY addonPostInstall.incognito.checkbox.accesskey "P">
 

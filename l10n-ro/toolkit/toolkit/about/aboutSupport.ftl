@@ -35,22 +35,29 @@ app-basics-name = Nume
 app-basics-version = Versiune
 app-basics-build-id = ID-ul versiunii compilate
 app-basics-update-channel = Canal de actualizare
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] Directorul actualizărilor
+       *[other] Dosarul actualizărilor
+    }
 app-basics-update-history = Istoricul actualizărilor
 app-basics-show-update-history = Afișează istoricul actualizărilor
+# Represents the path to the binary used to start the application.
+app-basics-binary = Fișierul binar al aplicației
 app-basics-profile-dir =
     { PLATFORM() ->
-        [linux] Director de profiluri
-       *[other] Dosar de profiluri
+        [linux] Directorul profilurilor
+       *[other] Dosarul profilurilor
     }
 app-basics-enabled-plugins = Pluginuri activate
 app-basics-build-config = Configurația versiunii compilate
 app-basics-user-agent = Agent utilizator
 app-basics-os = SO
-app-basics-memory-use = Utilizare memorie
+app-basics-memory-use = Utilizarea memoriei
 app-basics-performance = Performanță
 app-basics-service-workers = Scripturi Service Worker înregistrate
 app-basics-profiles = Profiluri
-app-basics-launcher-process-status = Proces de lansare
+app-basics-launcher-process-status = Procesul lansatorului
 app-basics-multi-process-support = Ferestre multiproces
 app-basics-process-count = Procese pentru conținut web
 app-basics-remote-processes-count = Procese la distanță
@@ -82,6 +89,8 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Jurnal de decizii
 graphics-crash-guards-title = Funcții dezactivate de Crash Guard
 graphics-workarounds-title = Alternative
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Protocol de ferestre
 place-database-title = Bază de date cu locuri
 place-database-integrity = Integritate
 place-database-verify-integrity = Verifică integritatea
@@ -173,8 +182,8 @@ text-copied = Text copiat în clipboard
 ## The verb "blocked" here refers to a graphics feature such as "Direct2D" or "OpenGL layers".
 
 blocked-driver = Blocat pentru versiunea ta de driver pentru adaptorul grafic.
-blocked-gfx-card = Blocate pentru adaptorul grafic al dumneavoastră din cauza unor probleme nerezolvate ale driverului.
-blocked-os-version = Blocate pentru versiunea sistemului dumneavoastră de operare.
+blocked-gfx-card = Blocate pentru placa ta grafică din cauza unor probleme nerezolvate de driver.
+blocked-os-version = Blocate pentru versiunea sistemului tău de operare.
 blocked-mismatched-version = Blocat din cauza necorelării versiunilor driverelor grafice între registru și DLL.
 # Variables
 # $driverVersion - The graphics driver version string
@@ -204,6 +213,7 @@ gpu-device-id = ID-ul dispozitivului
 gpu-subsys-id = ID-ul subsys
 gpu-drivers = Drivere
 gpu-ram = RAM
+gpu-driver-vendor = Distribuitorul driverului
 gpu-driver-version = Versiunea driverului
 gpu-driver-date = Data driverului
 gpu-active = Activ
@@ -230,14 +240,14 @@ d3d9video-crash-buard = Decodor video D3D9
 glcontext-crash-guard = OpenGL
 reset-on-next-restart = Resetează la următoarea repornire
 gpu-process-kill-button = Termină procesul GPU
-gpu-device-reset = Resetare dispozitiv
+gpu-device-reset = Resetarea dispozitivului
 gpu-device-reset-button = Declanșează resetarea dispozitivului
 uses-tiling = Folosește tiling
 content-uses-tiling = Folosește Tiling (Conținut)
 off-main-thread-paint-enabled = Desenare în afara firului de execuție principal activată
 off-main-thread-paint-worker-count = Număr de workeri pentru desenare în afara firului de execuție principal
 low-end-machine = A detectat o mașină cu performanțe scăzute
-target-frame-rate = Frecvență-țintă de cadre
+target-frame-rate = Frecvență de cadre țintă
 audio-backend = Backend audio
 max-audio-channels = Canale maxime
 channel-layout = Aspect preferat al canalelor
@@ -268,7 +278,7 @@ multi-process-status-0 = Activate de utilizator
 multi-process-status-1 = Activate în mod implicit
 multi-process-status-2 = Dezactivate
 multi-process-status-4 = Dezactivate de instrumentele de accesibilitate
-multi-process-status-6 = Dezactivat din cauza introducerii de text nesuportat
+multi-process-status-6 = Dezactivat din cauza introducerii de text neacceptat
 multi-process-status-7 = Dezactivate de suplimente
 multi-process-status-8 = Dezactivate forțat
 multi-process-status-unknown = Stare necunoscută

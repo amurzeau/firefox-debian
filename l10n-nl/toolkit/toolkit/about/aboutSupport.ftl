@@ -35,8 +35,15 @@ app-basics-name = Naam
 app-basics-version = Versie
 app-basics-build-id = Build-ID
 app-basics-update-channel = Updatekanaal
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] Map bijwerken
+       *[other] Map bijwerken
+    }
 app-basics-update-history = Updategeschiedenis
 app-basics-show-update-history = Updategeschiedenis tonen
+# Represents the path to the binary used to start the application.
+app-basics-binary = Binair toepassingsbestand
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Profielmap
@@ -82,6 +89,8 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Beslissingenlogboek
 graphics-crash-guards-title = Door crashbeveiliging uitgeschakelde functies
 graphics-workarounds-title = Workarounds
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Vensterprotocol
 place-database-title = Places-database
 place-database-integrity = Integriteit
 place-database-verify-integrity = Integriteit verifiëren

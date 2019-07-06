@@ -95,7 +95,7 @@ detail-update-manual =
 detail-private-browsing-label = Gizli pencerede çalışabilir
 detail-private-browsing-description2 = Bu izni verdiğinizde eklenti, gizli gezinti sırasında yaptıklarınızı görebilecektir. <label data-l10n-name="detail-private-browsing-learn-more">Daha fazla bilgi alın</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = Gizli pencerelerde izin verilmiyor
 detail-private-disallowed-description = Gizli gezinti sırasında bu eklenti çalışmaz. <label data-l10n-name="detail-private-browsing-learn-more">Daha fazla bilgi alın</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
@@ -158,6 +158,9 @@ private-browsing-description2 =
 extensions-view-discover =
     .name = Eklentileri edinin
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Öneriler
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Yakın zamandaki güncellemeler
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -238,7 +241,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Eklenti kısayollarını yönet
     .accesskey = E
-shortcuts-empty-message = Bu eklentiye ait kısayol yok.
 shortcuts-no-addons = Herhangi bir eklentiyi etkinleştirmediniz.
 shortcuts-no-commands = Aşağıdaki eklentilerin kısayolları yok:
 shortcuts-input =
@@ -264,14 +266,45 @@ shortcuts-card-collapse-button = Daha az göster
 go-back-button =
     .tooltiptext = Geri dön
 
+## Recommended add-ons page
+
+discopane-notice-learn-more = Daha fazla bilgi al
+privacy-policy = Gizlilik İlkeleri
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = geliştiren: <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Kullanıcı: { $dailyUsers }
+install-extension-button = { -brand-product-name }’a ekle
+install-theme-button = Temayı yükle
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Yönet
+find-more-addons = Daha fazla eklenti bul
+
 ## Add-on actions
 
+report-addon-button = Şikâyet et
 remove-addon-button = Kaldır
 disable-addon-button = Etkisizleştir
 enable-addon-button = Etkinleştir
 expand-addon-button = Diğer seçenekler
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Seçenekler
+       *[other] Tercihler
+    }
+details-addon-button = Ayrıntılar
+release-notes-addon-button = Sürüm notları
+permissions-addon-button = İzinler
 addons-enabled-heading = Etkin
 addons-disabled-heading = Devre dışı
+ask-to-activate-button = Etkinleştirmek için sor
+always-activate-button = Her zaman etkinleştir
+never-activate-button = Asla etkinleştirme
 addon-detail-author-label = Geliştiren
 addon-detail-version-label = Sürüm
 addon-detail-last-updated-label = Son güncelleme
@@ -289,3 +322,30 @@ addon-detail-reviews-link =
         [one] { $numberOfReviews } inceleme
        *[other] { $numberOfReviews } inceleme
     }
+
+## Pending uninstall message bar
+
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> kaldırıldı.
+pending-uninstall-undo-button = Geri al
+addon-detail-updates-label = Otomatik güncellemelere izin ver
+addon-detail-updates-radio-default = Varsayılan
+addon-detail-updates-radio-on = Açık
+addon-detail-updates-radio-off = Kapalı
+addon-detail-update-check-label = Güncellemeleri denetle
+install-update-button = Güncelle
+addon-detail-private-browsing-allow = İzin ver
+addon-detail-private-browsing-disallow = İzin verme
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Öneriliyor
+    .alt = Öneriliyor
+available-updates-heading = Mevcut güncellemeler
+recent-updates-heading = Son güncellenenler
+release-notes-loading = Yükleniyor…
+release-notes-error = Üzgünüz, sürüm notları yüklenirken bir hata meydana geldi.
+addon-permissions-empty = Bu eklenti herhangi bir izin gerektirmiyor
+recommended-extensions-heading = Önerilen eklentiler
+recommended-themes-heading = Önerilen temalar

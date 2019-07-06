@@ -31,13 +31,20 @@ features-id = ID
 processes-title = Zdalne procesy
 processes-type = Typ
 processes-count = Liczba
-app-basics-title = Informacje o aplikacji
+app-basics-title = Informacje o programie
 app-basics-name = Nazwa
 app-basics-version = Wersja
 app-basics-build-id = ID kompilacji
 app-basics-update-channel = Kanał aktualizacji
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] Katalog aktualizacji
+       *[other] Folder aktualizacji
+    }
 app-basics-update-history = Historia aktualizacji
 app-basics-show-update-history = Wyświetl historię aktualizacji
+# Represents the path to the binary used to start the application.
+app-basics-binary = Plik binarny programu
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Katalog profilu
@@ -83,6 +90,8 @@ graphics-gpu2-title = GPU 2
 graphics-decision-log-title = Decyzje
 graphics-crash-guards-title = Funkcje wyłączone dla ochrony przed awariami
 graphics-workarounds-title = Obejścia problemów
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Protokół okien
 place-database-title = Baza danych „Places”
 place-database-integrity = Integralność
 place-database-verify-integrity = Sprawdź integralność
@@ -205,6 +214,7 @@ gpu-device-id = ID urządzenia
 gpu-subsys-id = ID podsystemu
 gpu-drivers = Sterowniki
 gpu-ram = RAM
+gpu-driver-vendor = Dostawca sterownika
 gpu-driver-version = Wersja sterownika
 gpu-driver-date = Data sterownika
 gpu-active = Aktywna

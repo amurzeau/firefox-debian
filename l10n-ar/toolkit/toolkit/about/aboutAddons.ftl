@@ -79,6 +79,22 @@ detail-update-automatic =
 detail-update-manual =
     .label = مطفأة
     .tooltiptext = لا نصّب التحديثات تلقائيًا
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = تشغيله في النوافذ الخاصة
+detail-private-browsing-description2 = إن سمحت به فسيملك هذا الامتداد تصريح الوصول إلى نشاطك على الإنترنت وأنت تتصفح تصفحا خاصا. <label data-l10n-name="detail-private-browsing-learn-more">اطّلع على المزيد</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overridden by the user.
+detail-private-disallowed-label = ليس مسموحًا بأن تعمل في النوافذ الخاصة
+detail-private-disallowed-description = لا يعمل هذا الامتداد وأنت تتصفح تصفحا خاصا. <label data-l10n-name="detail-private-browsing-learn-more">اطّلع على المزيد</label>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = تطلب الوصول إلى النوافذ الخاصة
+detail-private-required-description = لهذا الامتداد تصريح الوصول إلى نشاطك على الإنترنت وأنت تتصفح تصفحا خاصا. <label data-l10n-name="detail-private-browsing-learn-more">اطّلع على المزيد</label>
+detail-private-browsing-on =
+    .label = مسموح
+    .tooltiptext = فعّل تشغيله عند التصفح تصفحا خاصا
+detail-private-browsing-off =
+    .label = غير مسموح
+    .tooltiptext = عطّل تشغيله عند التصفح تصفحا خاصا
 detail-home =
     .label = صفحة البداية
 detail-home-value =
@@ -121,6 +137,7 @@ legacy-warning-show-legacy = اعرض الامتدادات العتيقة
 legacy-extensions =
     .value = امتدادات عتيقة
 legacy-extensions-description = لا تحقق هذه الامتدادات معايير { -brand-short-name } الحالية، لذا عُطّلت. <label data-l10n-name="legacy-learn-more">تعرّف على التغييرات على الإضافات</label>
+private-browsing-description2 = بدأ { -brand-short-name } بتغيير كيفية عمل الامتدادات في التصفح الخاص. مبدئيًا، لن تعمل أي امتدادات جديدة تُضيفها إلى { -brand-short-name } في النوافذ الخاصة. إن لم تغيّر ذلك وتسمح به في الإعدادات فلن يعمل الامتداد وأنت في التصفح الخاص، ولن يملك حق الوصول إلى نشاطك على الوِب فيها. أجرينا هذا التغيير ليكون التصفح الخاص خاصًا بحق. <label data-l10n-name="private-browsing-learn-more">اطّلع على طريقة إدارة إعدادات الامتدادات</label>
 extensions-view-discover =
     .name = احصل على الإضافات
     .tooltiptext = { extensions-view-discover.name }
@@ -198,3 +215,25 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = نصّب التحديثات
     .tooltiptext = نصّب التحديثات المتاحة في هذه اللائحة
+
+## Extension shortcut management
+
+manage-extensions-shortcuts =
+    .label = أدِر اختصارات الامتدادات
+    .accesskey = د
+shortcuts-no-addons = ليس لديك أيّ امتدادات مفعّلة.
+shortcuts-no-commands = لا اختصارات للامتدادات الآتية:
+shortcuts-input =
+    .placeholder = اكتب اختصارًا
+
+## Recommended add-ons page
+
+
+## Add-on actions
+
+
+## Pending uninstall message bar
+
+addon-detail-private-browsing-help = إن سمحت به فسيملك هذا الامتداد تصريح الوصول إلى نشاطك على الإنترنت وأنت تتصفح تصفحا خاصا. <a data-l10n-name="learn-more">اطّلع على المزيد</label>
+addon-detail-private-browsing-allow = مسموح
+addon-detail-private-browsing-disallow = غير مسموح

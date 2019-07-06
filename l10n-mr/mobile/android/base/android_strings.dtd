@@ -21,12 +21,15 @@
 <!ENTITY firstrun_data_message "कमी डाटा, अधिक बचत">
 <!ENTITY firstrun_data_subtext2 "प्रत्येक साईट भेटीवर कमी माहिती खर्च करण्यासाठी प्रतिमा अडवा.">
 <!ENTITY firstrun_sync_title "ताळमेळ">
+<!ENTITY updatednewfirstrun_sync_title "खाते">
 <!ENTITY firstrun_sync_message2 "आपण जिथून सोडले तिथून उचला.">
 <!ENTITY firstrun_sync_subtext2 "आपल्या सर्व डिव्हाइसेसवर &brandShortName; मध्ये आपण जतन केलेले बुकमार्क, संकेतशब्द आणि इतर गोष्टी शोधण्यासाठी Sync वापरा.">
 <!ENTITY newfirstrun_sync_subtext "मोबाईल मध्ये साठवलेल्या गोष्टी Firefox डेस्कटॉप वर सुरक्षित आणि खाजगीरित्या मिळवा.">
+<!ENTITY updatednewfirstrun_sync_subtext "&brandShortName; मधून जास्तीतजास्त फायदा मिळवण्यासाठी साइन इन करा">
 <!ENTITY firstrun_signin_message "जोडणी करा, प्रारंभ करा">
 <!ENTITY firstrun_signin_button "सींक करण्यासाठी साइन इन करा">
 <!ENTITY newfirstrun_signin_button "सिंक चालू करा">
+<!ENTITY updatednewfirstrun_signin_button "&brandShortName; मध्ये साइन इन करा">
 <!ENTITY  onboard_start_button_browser "ब्राउझिंगला सुरुवात करा">
 <!ENTITY firstrun_button_notnow "सध्या नाही">
 <!ENTITY firstrun_button_next "पुढे">
@@ -66,6 +69,12 @@
 <!ENTITY  sending_crash_report "आपत्ती अहवाल\u2026 पाठवत आहे">
 <!ENTITY  crash_close_label "बंद करा">
 <!ENTITY  crash_restart_label "&brandShortName; पुनःसुरू करा">
+
+<!-- Localization note (crash_notification_title, crash_notification_message, crash_notification_negative_button_text)
+     Text displayed in a system notification to allow starting the Crash Reporter (Android Q and later).-->
+<!ENTITY  crash_notification_title "&brandShortName; क्रॅश झाला">
+<!ENTITY  crash_notification_message "&vendorShortName; ला कळवण्यासाठी टॅप करा">
+<!ENTITY  crash_notification_negative_button_text "दुर्लक्ष करा">
 
 <!ENTITY url_bar_default_text2 "शोधा किंवा पत्ता द्या">
 
@@ -108,6 +117,10 @@
 <!ENTITY bookmark_folder_updated "फोल्डर अद्ययावत झाले आहे">
 <!ENTITY bookmark_parent_folder "मुळ संचयिका">
 <!ENTITY bookmark_add_folder "नवीन फोल्डर जोडा">
+
+<!-- Localization note (bookmark_default_folder_title): Default title is used if user doesn't specify
+     one when he is creating a bookmark folder -->
+<!ENTITY bookmark_default_folder_title "(शिर्षक नाही)">
 
 <!ENTITY reader_saved_offline "ऑफलाईन साठविलेले">
 <!-- Localization note (reader_switch_to_bookmarks) : This
@@ -413,8 +426,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY pref_private_data_downloadFiles2 "डाउनलोडस्">
 <!ENTITY pref_private_data_syncedTabs "ताळमेळीत झालेले टॅब्स">
 
-<!ENTITY pref_default_browser "मुलभूत ब्राउझर म्हणून वापरा">
-
 <!ENTITY pref_default_browser2 "&brandShortName; ला पूर्वनिर्धारित ब्राउझर बनवा">
 <!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
     Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
@@ -592,6 +603,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_keyword "संकेतशब्द">
 <!ENTITY bookmark_select_folder "फोल्डर निवडा">
 
+<!ENTITY bookmark_edit_undo "पूर्ववत् करा">
+
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
      dialog that appears after selecting the "Edit Site Settings" context menu item. -->
 <!ENTITY site_settings_title3       "साइट सेटिंग">
@@ -679,6 +692,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY filepicker_audio_title "ध्वनी निवडा किंवा रेकॉर्ड करा">
 <!ENTITY filepicker_image_title "फोटो काढा किंवा निवडा">
 <!ENTITY filepicker_video_title "ध्वनी निवडा किंवा रेकॉर्ड करा">
+
+<!ENTITY filepicker_permission_denied "जरुरी परवानग्या मिळाल्या नाहीत, प्रणालीच्या फाईल पीकरकडे परत जात आहोत.">
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "आपण यांच्यासह जुळलेले आहात">
@@ -931,3 +946,4 @@ Picture-in-picture mini window -->
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
 web sites through the HTML Notifications API. -->
 <!ENTITY site_notifications_channel "साइट सुचना">
+<!ENTITY crash_handler_notifications_channel "&brandShortName; क्रॅश रिपोर्टर">

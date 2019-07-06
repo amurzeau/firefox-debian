@@ -35,8 +35,15 @@ app-basics-name = Назва
 app-basics-version = Версія
 app-basics-build-id = ID збірки
 app-basics-update-channel = Канал оновлення
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] Тека оновлення
+       *[other] Каталог оновлення
+    }
 app-basics-update-history = Історія оновлень
 app-basics-show-update-history = Показати історію оновлень
+# Represents the path to the binary used to start the application.
+app-basics-binary = Бінарний файл програми
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Тека профілю
@@ -82,6 +89,8 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Журнал рішень
 graphics-crash-guards-title = Можливості, вимкнені захистом від збоїв
 graphics-workarounds-title = Способи обходу
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Віконний протокол
 place-database-title = База даних Places
 place-database-integrity = Цілісність
 place-database-verify-integrity = Перевірити цілісність
@@ -204,6 +213,7 @@ gpu-device-id = ID пристрою
 gpu-subsys-id = ID підсистеми
 gpu-drivers = Драйвери
 gpu-ram = RAM
+gpu-driver-vendor = Постачальник драйвера
 gpu-driver-version = Версія драйвера
 gpu-driver-date = Дата драйвера
 gpu-active = Активний

@@ -34,6 +34,7 @@ policies-notice =
         [windows] 您的组织已禁用某些选项。
        *[other] 您的组织已禁用某些首选项。
     }
+managed-notice = 您的浏览器正由组织管理。
 pane-general-title = 常规
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = 隐私与安全
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Firefox 账户
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -148,7 +145,7 @@ ctrl-tab-recently-used-order =
     .label = 按下 Ctrl+Tab 时，依照最近使用顺序循环切换标签页
     .accesskey = T
 open-new-link-as-tabs =
-    .label = 在新标签页中打开链接而不是新窗口
+    .label = 打开链接在新标签页而非新窗口
     .accesskey = w
 warn-on-close-multiple-tabs =
     .label = 关闭多个标签页时警告您
@@ -289,6 +286,21 @@ update-pref-write-failure-title = 写入失败
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = 无法保存首选项。未能写入文件：{ $path }
+update-setting-write-failure-title = 保存“更新”首选项时出错
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    { -brand-short-name } 遇到错误，未能保存此更改。请注意，设置此更新首选项需要写入下列文件的权限。您或系统管理员可以通过授予用户组对此文件的完全控制权来解决此错误。
+    
+    无法写入文件：{ $path }
+update-in-progress-title = 正在更新
+update-in-progress-message = 您要继续 { -brand-short-name } 的此次更新吗？
+update-in-progress-ok-button = 放弃
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = 继续
 
 ## General Section - Performance
 
@@ -524,8 +536,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = 保存
     .accesskey = v
-sync-mobilepromo-single = 连接其他设备
-sync-mobilepromo-multi = 管理设备
 sync-connect-another-device = 连接其他设备
 sync-manage-devices = 管理设备
 sync-fxa-begin-pairing = 配对设备
@@ -545,6 +555,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = 例外…
     .accesskey = x
+forms-generate-passwords =
+    .label = 建议并生成高强度密码
+    .accesskey = u
 forms-saved-logins =
     .label = 已保存的登录信息…
     .accesskey = L
@@ -683,7 +696,6 @@ content-blocking-all-third-party-cookies = 所有第三方 Cookie
 content-blocking-cryptominers = 加密货币挖矿程序
 content-blocking-fingerprinters = 数字指纹跟踪程序
 content-blocking-warning-title = 注意！
-content-blocking-warning-desc = 拦截 Cookie 与跟踪器可能导致某些网站异常。但对您信任的网站禁用拦截非常简单。
 content-blocking-warning-description = 拦截内容后可能导致某些网站异常。但对您信任的网站禁用拦截非常简单。
 content-blocking-learn-how = 了解方法
 content-blocking-reload-description = 需要重新载入标签页才能应用变更。
@@ -750,6 +762,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = 例外…
     .accesskey = E
+permissions-autoplay = 自动播放
+permissions-autoplay-settings =
+    .label = 设置…
+    .accesskey = t
 permissions-block-popups =
     .label = 拦截弹出式窗口
     .accesskey = B

@@ -15,6 +15,7 @@ about-telemetry-option-group-older = Plus ancian
 about-telemetry-previous-ping = <<
 about-telemetry-next-ping = >>
 about-telemetry-page-title = Datos de telemetria
+about-telemetry-current-store = Archivo actual
 about-telemetry-more-information = Cerca tu plus informationes?
 about-telemetry-firefox-data-doc = Le <a data-l10n-name="data-doc-link">Firefox Data Documentation</a> contine guidas re le uso de nostre instrumentos de dato.
 about-telemetry-telemetry-client-doc = Le <a data-l10n-name="client-doc-link">Firefox Telemetry client documentation</a> include definitiones pro conceptos, documentation re le API e referentias de datos.
@@ -141,3 +142,6 @@ about-telemetry-origin-count = conto
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-origins-explanation = Le <a data-l10n-name="origin-doc-link">Telemetria Origin de Firefox</a> codifica datos ante que illos es inviate, assi que { $telemetryServerOwner } pote contar le cosas, ma non sape si o non ulle date { -brand-product-name } collabora a ille conto. (<a data-l10n-name="prio-blog-link">saper plus</a>)
+# Variables:
+#  $process (String): type of process in subsection headers ( e.g. "content", "parent" )
+about-telemetry-process = Processo “{ $process }”

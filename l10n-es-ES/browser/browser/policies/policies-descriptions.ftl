@@ -53,7 +53,9 @@ policy-EnableTrackingProtection = Activar o desactivar el bloqueo de contenido y
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
 policy-Extensions = Instalar, desinstalar o bloquear extensiones. La opción de instalar usa URLs o rutas como parámetros. Las opciones para desinstalar y bloquear usan los ID de las extensiones.
+policy-ExtensionSettings = Administrar todos los aspectos de la instalación de extensiones.
 policy-ExtensionUpdate = Habilitar o deshabilitar actualizaciones automáticas de extensiones.
+policy-FirefoxHome = Configurar la página de inicio de Firefox.
 policy-FlashPlugin = Permitir o denegar el uso del plugin Flash.
 policy-HardwareAcceleration = Si es falso, desactiva la aceleración por hardware.
 # “lock” means that the user won’t be able to change this setting
@@ -69,6 +71,7 @@ policy-OverridePostUpdatePage = Anular la página "Qué hay de nuevo" posterior 
 policy-Permissions = Configurar permisos para cámara, micrófono, ubicación y notificaciones.
 policy-PopupBlocking = Permitir que ciertos sitios web muestren ventanas emergentes de forma predeterminada.
 policy-Preferences = Establezca y bloquee el valor para un subconjunto de preferencias.
+policy-PromptForDownloadLocation = Preguntar dónde guardar los archivos que se descargan.
 policy-Proxy = Configurar los ajustes del proxy.
 policy-RequestedLocales = Establecer la lista de localizaciones solicitadas para la aplicación, ordenadas por preferencia.
 policy-SanitizeOnShutdown = Limpiar todos los datos de navegación al cerrar.

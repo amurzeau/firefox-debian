@@ -24,9 +24,11 @@
 <!ENTITY firstrun_sync_message2 "Adloc\&apos;hit el lec\&apos;h m\&apos;ho peus paouezet.">
 <!ENTITY firstrun_sync_subtext2 "Grit gant Sync evit adkavout ar sinedoù, ar gerioù-tremen, hag an holl draoù enrollet e &brandShortName; war ho holl drevnadoù.">
 <!ENTITY newfirstrun_sync_subtext "Goubredit ar pezh a enrollit war hoc\&apos;h hezougell evit Firefox war urzhiataer, en un doare prevez ha diogel.">
+<!ENTITY updatednewfirstrun_sync_subtext "Kennaskit d\&apos;ho kont evit kaout ar muiañ eus &brandShortName;">
 <!ENTITY firstrun_signin_message "Kennaskit, krogit ganti">
 <!ENTITY firstrun_signin_button "Kennaskañ ouzh Sync">
 <!ENTITY newfirstrun_signin_button "Gweredekaat Sync">
+<!ENTITY updatednewfirstrun_signin_button "Kennaskit da &brandShortName;">
 <!ENTITY  onboard_start_button_browser "Krog da verdeiñ">
 <!ENTITY firstrun_button_notnow "Ket evit ar mare">
 <!ENTITY firstrun_button_next "War-lerc\&apos;h">
@@ -66,6 +68,12 @@
 <!ENTITY  sending_crash_report "Kas Danevell ar Sac\&apos;hadennoù\u2026">
 <!ENTITY  crash_close_label "Serriñ">
 <!ENTITY  crash_restart_label "Adloc\&apos;hañ &brandShortName;">
+
+<!-- Localization note (crash_notification_title, crash_notification_message, crash_notification_negative_button_text)
+     Text displayed in a system notification to allow starting the Crash Reporter (Android Q and later).-->
+<!ENTITY  crash_notification_title "Sac\&apos;het eo &brandShortName;">
+<!ENTITY  crash_notification_message "Stokit evit danevelliñ da &vendorShortName;">
+<!ENTITY  crash_notification_negative_button_text "Leuskel a-gostez">
 
 <!ENTITY url_bar_default_text2 "Bizskrivit un termen da glask pe ur chomlec\&apos;h">
 
@@ -108,6 +116,10 @@
 <!ENTITY bookmark_folder_updated "Teuliad hizivaet">
 <!ENTITY bookmark_parent_folder "Teuliad kar">
 <!ENTITY bookmark_add_folder "Ouzhpennañ un teuliad">
+
+<!-- Localization note (bookmark_default_folder_title): Default title is used if user doesn't specify
+     one when he is creating a bookmark folder -->
+<!ENTITY bookmark_default_folder_title "(titl ebet)">
 
 <!ENTITY reader_saved_offline "Enrollet ezlinenn">
 <!-- Localization note (reader_switch_to_bookmarks) : This
@@ -413,8 +425,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY pref_private_data_downloadFiles2 "Pellgargadurioù">
 <!ENTITY pref_private_data_syncedTabs "Ivinelloù goubredet">
 
-<!ENTITY pref_default_browser "Lakaat da verdeer dre ziouer">
-
 <!ENTITY pref_default_browser2 "Lakaat &brandShortName; da vezañ ho merdeer dre ziouer">
 <!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
     Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
@@ -592,6 +602,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_keyword "Gerioù alc\&apos;hwez">
 <!ENTITY bookmark_select_folder "Dibab un teuliad">
 
+<!ENTITY bookmark_edit_undo "Dizober">
+
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
      dialog that appears after selecting the "Edit Site Settings" context menu item. -->
 <!ENTITY site_settings_title3       "Arventennoù al lec\&apos;hienn">
@@ -679,6 +691,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY filepicker_audio_title "Dibab pe enrollañ ur son">
 <!ENTITY filepicker_image_title "Dibab pe dapout ur skeudenn">
 <!ENTITY filepicker_video_title "Dibab pe enrollañ ur video">
+
+<!ENTITY filepicker_permission_denied "N\&apos;eo ket bet roet an aotreoù a-zere, distreiñ a raio da zibaber restroù ar reizhiad.">
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "Kennasket oc\&apos;h ouzh">
@@ -918,6 +932,7 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_title "Ehan">
 <!ENTITY pip_pause_button_description "Ehaniñ al lenn">
 
+<!ENTITY pref_notification_settings_link "Merañ an arventennoù rebuziñ">
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "Merdeer">
 <!ENTITY mls_notification_channel "&vendorShortName; Servij lec\&apos;heladur">
@@ -930,3 +945,4 @@ Picture-in-picture mini window -->
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
 web sites through the HTML Notifications API. -->
 <!ENTITY site_notifications_channel "Rebuzadurioù al lec\&apos;hienn">
+<!ENTITY crash_handler_notifications_channel "Daneveller sac\&apos;hadennoù &brandShortName;">

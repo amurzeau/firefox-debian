@@ -32,8 +32,15 @@ app-basics-name = Namn
 app-basics-version = Version
 app-basics-build-id = Versions-ID
 app-basics-update-channel = Uppdateringskanal
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] Uppdatera mapp
+       *[other] Uppdatera mapp
+    }
 app-basics-update-history = Uppdateringshistorik
 app-basics-show-update-history = Visa uppdateringshistorik
+# Represents the path to the binary used to start the application.
+app-basics-binary = Binär applikation
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Profilmapp
@@ -79,6 +86,8 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Beslutslogg
 graphics-crash-guards-title = Kraschskydd inaktiverade funktioner
 graphics-workarounds-title = Lösningar
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Fönsterprotokoll
 place-database-title = Platser databas
 place-database-integrity = Integritet
 place-database-verify-integrity = Verifiera integritet

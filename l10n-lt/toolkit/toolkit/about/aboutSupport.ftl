@@ -32,8 +32,15 @@ app-basics-name = Pavadinimas
 app-basics-version = Laida
 app-basics-build-id = Versijos ID
 app-basics-update-channel = Atnaujinimų kanalas
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] Naujinimų aplankas
+       *[other] Naujinimų aplankas
+    }
 app-basics-update-history = Atnaujinimo žurnalas
 app-basics-show-update-history = Rodyti atnaujinimo žurnalą
+# Represents the path to the binary used to start the application.
+app-basics-binary = Pagrindinis programos failas
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Profilio aplankas
@@ -79,6 +86,8 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Sprendimų žurnalas
 graphics-crash-guards-title = Strigčių apsaugos išjungtos funkcijos
 graphics-workarounds-title = Apėjimai
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Langų protokolas
 place-database-title = Vietų duomenų bazė
 place-database-integrity = Nepažeistumas
 place-database-verify-integrity = Patikrinti nepažeistumą
@@ -201,6 +210,7 @@ gpu-device-id = Įrenginio ID
 gpu-subsys-id = Posistemio ID
 gpu-drivers = Tvarkyklės
 gpu-ram = RAM
+gpu-driver-vendor = Tvarkyklės leidėjas
 gpu-driver-version = Tvarkyklės laida
 gpu-driver-date = Tvarkyklės data
 gpu-active = Aktyvi

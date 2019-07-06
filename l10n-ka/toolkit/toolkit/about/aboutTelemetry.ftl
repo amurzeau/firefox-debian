@@ -15,6 +15,7 @@ about-telemetry-option-group-older = უფრო ძველი
 about-telemetry-previous-ping = <<
 about-telemetry-next-ping = >>
 about-telemetry-page-title = გაზომვების მონაცემები
+about-telemetry-current-store = მიმდინარე ოდენობა:
 about-telemetry-more-information = მეტ ინფორმაციას ეძებთ?
 about-telemetry-firefox-data-doc = <a data-l10n-name="data-doc-link">Firefox-ის მონაცემთა მასალები</a> შეიცავს მითითებებს, მონაცემთა ხელსაწყოებთან მუშაობის შესახებ.
 about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Firefox-გაზომვების კლიენტის მასალები</a> შეიცავს განმარტებებს, კონცეფციას, API-დოკუმენტაციასა და მითითებებს, მონაცემების შესახებ.
@@ -68,7 +69,7 @@ about-telemetry-histogram-stats =
     }
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
-about-telemetry-page-subtitle = ამ გვერდზე ნაჩვენებია გაზომვების მიერ შეგროვებული ინფორმაცია წარმადობის, აპარატურის, პროგრამის გამოყენებისა და შერჩეული პარამეტრების შესახებ, რომელიც იგზავნება { $telemetryServerOwner }-ში, { -brand-full-name }-ის გასაუმჯობესებლად.
+about-telemetry-page-subtitle = ამ გვერდზე ნაჩვენებია გაზომვების მიერ შეგროვებული ინფორმაცია წარმადობის, აპარატურის, პროგრამის გამოყენებისა და შერჩეული პარამეტრების შესახებ, რომელიც იგზავნება { $telemetryServerOwner }-ში, რომ გავაუმჯობესოთ { -brand-full-name }.
 about-telemetry-settings-explanation = გაზომვებით აღირიცხება { about-telemetry-data-type }, რომელთა ატვირთვაც <a data-l10n-name="upload-link">{ about-telemetry-upload-type }</a>.
 # Variables:
 #   $name (String): ping name, e.g. “saved-session”
@@ -91,7 +92,7 @@ about-telemetry-results-for-search = შედეგები “{ $searchTerms 
 # Variables:
 #   $sectionName (String): the section name from the structure of the ping.
 #   $currentSearchText (String): the current text in the search input
-about-telemetry-no-search-results = ვწუხვართ! შედეგები “{ $currentSearchText }” ფრაზისთვის არ მოიძებნა { $sectionName }-ში
+about-telemetry-no-search-results = ვწუხვართ! შედეგები „{ $currentSearchText }“ ფრაზისთვის არ მოიძებნა { $sectionName }-ში
 # Variables:
 #   $searchTerms (String): the searched terms
 about-telemetry-no-search-results-all = ვწუხვართ! არცერთ განყოფილებაში არ მოიძებნა შედეგები ფრაზისთვის “{ $searchTerms }”
@@ -141,3 +142,6 @@ about-telemetry-origin-count = რაოდენობა
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Firefox-ის წყაროს გაზომვები</a> შიფრავს მონაცემებს გადაგზავნამდე, შესაბამისად { $telemetryServerOwner } შეძლებს მათ აღრიცხვას, თუმცა არ ეცოდინება რომელი { -brand-product-name } აწვდის საჭირო მონაცემებს. (<a data-l10n-name="prio-blog-link">ვრცლად</a>)
+# Variables:
+#  $process (String): type of process in subsection headers ( e.g. "content", "parent" )
+about-telemetry-process = { $process } ამოცანა

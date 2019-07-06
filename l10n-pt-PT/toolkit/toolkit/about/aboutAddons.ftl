@@ -97,7 +97,7 @@ detail-update-manual =
 detail-private-browsing-label = Executar em janelas privadas
 detail-private-browsing-description2 = Quando permitido, a extensão irá ter acesso às suas atividades online durante a navegação privada. <label data-l10n-name="detail-private-browsing-learn-more">Saber mais</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = Não permitido em janelas privadas
 detail-private-disallowed-description = Esta extensão não é executada durante a navegação privada. <label data-l10n-name="detail-private-browsing-learn-more">Saber mais</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
@@ -160,6 +160,9 @@ private-browsing-description2 =
 extensions-view-discover =
     .name = Obter extras
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Recomendações
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Atualizações recentes
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -240,7 +243,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Gerir atalhos de extensões
     .accesskey = s
-shortcuts-empty-message = Não existem atalhos para esta extensão.
 shortcuts-no-addons = Não tem quaisquer extensões ativadas.
 shortcuts-no-commands = As seguintes extensões não possuem atalhos:
 shortcuts-input =
@@ -266,6 +268,37 @@ shortcuts-card-collapse-button = Mostrar menos
 go-back-button =
     .tooltiptext = Retroceder
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    As extensões são como aplicações para o seu navegador, estas permitem-lhe
+    proteger palavras-passe, transferir vídeos, encontrar ofertas, bloquear anúncios irritantes, alterar
+    a aparência do seu navegador, e muito mais. Estes pequenos programas de software são
+    muitas vezes programados por terceiros. Aqui está uma seleção que o { -brand-product-name }
+    <a data-l10n-name="learn-more-trigger">recomenda</a> para segurança, desempenho e funcionalidade excecionais.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations =
+    Algumas destas recomendações são personalizadas. Estas são baseadas noutras
+    extensões que instalou, preferências de perfil e estatísticas de utilização.
+discopane-notice-learn-more = Saber mais
+privacy-policy = Política de privacidade
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = por <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Utilizadores: { $dailyUsers }
+install-extension-button = Adicionar ao { -brand-product-name }
+install-theme-button = Instalar tema
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Gerir
+find-more-addons = Encontrar mais extras
+
 ## Add-on actions
 
 report-addon-button = Reportar
@@ -273,8 +306,16 @@ remove-addon-button = Remover
 disable-addon-button = Desativar
 enable-addon-button = Ativar
 expand-addon-button = Mais opções
-addons-enabled-heading = Ativado
-addons-disabled-heading = Desativado
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Opções
+       *[other] Preferências
+    }
+details-addon-button = Detalhes
+release-notes-addon-button = Notas de lançamento
+permissions-addon-button = Permissões
+addons-enabled-heading = Ativados
+addons-disabled-heading = Desativados
 ask-to-activate-button = Solicitar ativação
 always-activate-button = Ativar sempre
 never-activate-button = Nunca ativar
@@ -283,6 +324,11 @@ addon-detail-version-label = Versão
 addon-detail-last-updated-label = Última atualização
 addon-detail-homepage-label = Página inicial
 addon-detail-rating-label = Avaliação
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Avaliado com { NUMBER($rating, maximumFractionDigits: 1) } de 5
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -315,5 +361,18 @@ addon-badge-private-browsing-allowed =
 addon-detail-private-browsing-help = Quando permitido, a extensão irá ter acesso às suas atividades online durante a navegação privada. <a data-l10n-name="learn-more">Saber mais</a>
 addon-detail-private-browsing-allow = Permitir
 addon-detail-private-browsing-disallow = Não permitir
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Recomendada
+    .alt = Recomendada
 available-updates-heading = Atualizações disponíveis
 recent-updates-heading = Atualizações recentes
+release-notes-loading = A carregar…
+release-notes-error = Desculpe mas ocorreu um erro ao carregar as notas de lançamento.
+addon-permissions-empty = Esta extensão não requer quaisquer permissões
+recommended-extensions-heading = Extensões recomendadas
+recommended-themes-heading = Temas recomendados
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = A sentir-se criativo(a)? <a data-l10n-name="link">Crie o seu próprio tema com o Firefox Color.</a>

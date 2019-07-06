@@ -34,6 +34,7 @@ policies-notice =
         [windows] Jūsų organizacija apribojo galimybę keisti dalį nuostatų.
        *[other] Jūsų organizacija apribojo galimybę keisti dalį nuostatų.
     }
+managed-notice = Jūsų naršyklę tvarko jūsų organizacija.
 pane-general-title = Bendrosios
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = Privatumas ir saugumas
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = „Firefox“ paskyra
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -296,6 +293,21 @@ update-pref-write-failure-title = Įrašymo klaida
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Nepavyko įrašyti nuostatos. Negalima įrašyti į failą: { $path }
+update-setting-write-failure-title = Klaida įrašant naujinimų nuostatas
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    „{ -brand-short-name }“ susidūrė su klaida ir neįrašė šio pakeitimo. Atminkite, kad norint pakeisti šią naujinimų nuostatą, reikalingas leidimas rašyti į žemiau nurodytą failą. Jūs, arba sistemos prižiūrėtojas, gali pabandyti tai sutvarkyti, suteikiant visišką šio failo valdymo teisę „Users“ grupei.
+    
+    Nepavyko rašymas į failą: { $path }
+update-in-progress-title = Vyksta naujinimas
+update-in-progress-message = Ar norite, kad „{ -brand-short-name }“ tęstų šį naujinimą?
+update-in-progress-ok-button = &Atsisakyti
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Tęsti
 
 ## General Section - Performance
 
@@ -531,8 +543,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Įrašyti
     .accesskey = r
-sync-mobilepromo-single = Susieti kitą įrenginį
-sync-mobilepromo-multi = Tvarkyti įrenginius
 sync-connect-another-device = Susieti kitą įrenginį
 sync-manage-devices = Tvarkyti įrenginius
 sync-fxa-begin-pairing = Susieti įrenginį
@@ -552,6 +562,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Išimtys…
     .accesskey = š
+forms-generate-passwords =
+    .label = Siūlyti ir generuoti stiprius slaptažodžius
+    .accesskey = i
 forms-saved-logins =
     .label = Įrašyti prisijungimai…
     .accesskey = p
@@ -690,7 +703,6 @@ content-blocking-all-third-party-cookies = Visi trečiųjų šalių slapukai
 content-blocking-cryptominers = Kriptovaliutų kasėjai
 content-blocking-fingerprinters = Skaitmeninių atspaudų stebėjimas
 content-blocking-warning-title = Dėmesio!
-content-blocking-warning-desc = Užblokavus slapukus ir stebėjimo elementus, gali sutrikti kai kurių svetainių veikimas. Galite lengvai išjungti blokavimą patikimose svetainėse.
 content-blocking-warning-description = Blokuojant turinį gali sutrikti kai kurių svetainių veikimas. Blokavimą galima lengvai išjungti patikimose svetainėse.
 content-blocking-learn-how = Sužinoti kaip
 content-blocking-reload-description = Norėdami pritaikyti šiuos pakeitimus, turėsite įkelti savo korteles iš naujo.
@@ -757,6 +769,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Išimtys…
     .accesskey = I
+permissions-autoplay = Automatinis grojimas
+permissions-autoplay-settings =
+    .label = Nuostatos…
+    .accesskey = t
 permissions-block-popups =
     .label = Neleisti iškylančiųjų langų
     .accesskey = N

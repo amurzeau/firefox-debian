@@ -32,8 +32,15 @@ app-basics-name = Mě
 app-basics-version = Wersija
 app-basics-build-id = Wersijowy ID
 app-basics-update-channel = Aktualizěrowański kanal
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] Aktualizěrowański zapis
+       *[other] Aktualizěrowański zarědnik
+    }
 app-basics-update-history = Aktualizaciska historija
 app-basics-show-update-history = Aktualizacisku historiju pokazaś
+# Represents the path to the binary used to start the application.
+app-basics-binary = Nałožeńska binarna dataja
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Profilowy zarědnik
@@ -79,6 +86,8 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Protokol rozsuźenja
 graphics-crash-guards-title = Funkcije, kótarež su se wót wowaleńskego stražnika znjemóžnili
 graphics-workarounds-title = Nuzowe rozwězanja
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Woknowy protokol
 place-database-title = Datowa banka historije a cytańskich znamjenjow
 place-database-integrity = Integrita
 place-database-verify-integrity = Integritu pśeglědowaś
@@ -206,6 +215,7 @@ gpu-device-id = ID rěda
 gpu-subsys-id = Subsys-ID
 gpu-drivers = Gónjaki
 gpu-ram = RAM
+gpu-driver-vendor = Zgótowaŕ gónjaka
 gpu-driver-version = Wersija gónjaka
 gpu-driver-date = Datum gónjaka
 gpu-active = Aktiwny

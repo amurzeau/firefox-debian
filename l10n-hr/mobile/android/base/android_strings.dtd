@@ -24,9 +24,11 @@
 <!ENTITY firstrun_sync_message2 "Nastavite gdje ste stali.">
 <!ENTITY firstrun_sync_subtext2 "Koristite Sinkronizaciju kako biste našli zabilješke, lozinke i ostalo što spremate na &brandShortName; kod svih vaših uređaja.">
 <!ENTITY newfirstrun_sync_subtext "Sinkronizirajte stvari koje spremite na mobitelu s Firefoxom za računala, privatno i sigurno.">
+<!ENTITY updatednewfirstrun_sync_subtext "Prijavite se u svoj račun kako biste na najbolji način iskoristili &brandShortName;">
 <!ENTITY firstrun_signin_message "Povežite se, započnite">
 <!ENTITY firstrun_signin_button "Prijavite se u Sync">
 <!ENTITY newfirstrun_signin_button "Uključite sinkronizaciju">
+<!ENTITY updatednewfirstrun_signin_button "Prijavite se u &brandShortName;">
 <!ENTITY  onboard_start_button_browser "Započni pregledavanje">
 <!ENTITY firstrun_button_notnow "Ne sada">
 <!ENTITY firstrun_button_next "Sljedeći">
@@ -66,6 +68,12 @@
 <!ENTITY  sending_crash_report "Slanje izvještaja o rušenju\u2026">
 <!ENTITY  crash_close_label "Zatvori">
 <!ENTITY  crash_restart_label "Ponovno pokreni &brandShortName;">
+
+<!-- Localization note (crash_notification_title, crash_notification_message, crash_notification_negative_button_text)
+     Text displayed in a system notification to allow starting the Crash Reporter (Android Q and later).-->
+<!ENTITY  crash_notification_title "&brandShortName; se srušio">
+<!ENTITY  crash_notification_message "Pritisnite za slanje izvještaja &vendorShortName;">
+<!ENTITY  crash_notification_negative_button_text "Zanemari">
 
 <!ENTITY url_bar_default_text2 "Pretražite ili upišite adresu">
 
@@ -108,6 +116,10 @@
 <!ENTITY bookmark_folder_updated "Mapa ažurirana">
 <!ENTITY bookmark_parent_folder "Nadređena mapa">
 <!ENTITY bookmark_add_folder "Dodaj novu mapu">
+
+<!-- Localization note (bookmark_default_folder_title): Default title is used if user doesn't specify
+     one when he is creating a bookmark folder -->
+<!ENTITY bookmark_default_folder_title "(bez naslova)">
 
 <!ENTITY reader_saved_offline "Spremljeno izvanmrežno">
 <!-- Localization note (reader_switch_to_bookmarks) : This
@@ -413,8 +425,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY pref_private_data_downloadFiles2 "Preuzimanja">
 <!ENTITY pref_private_data_syncedTabs "Sinkronizirane kartice">
 
-<!ENTITY pref_default_browser "Učinite zadanim pretraživačem">
-
 <!ENTITY pref_default_browser2 "Učinite &brandShortName; zadanim preglednikom">
 <!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
     Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
@@ -592,6 +602,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_keyword "Ključna riječ">
 <!ENTITY bookmark_select_folder "Izaberite mapu">
 
+<!ENTITY bookmark_edit_undo "Vrati">
+
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
      dialog that appears after selecting the "Edit Site Settings" context menu item. -->
 <!ENTITY site_settings_title3       "Postavke stranice">
@@ -679,6 +691,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY filepicker_audio_title "Odaberite ili snimite zvuk">
 <!ENTITY filepicker_image_title "Odaberite ili snimite sliku">
 <!ENTITY filepicker_video_title "Odaberite ili snimite video">
+
+<!ENTITY filepicker_permission_denied "Obavezna dopuštenja nisu odobrena, povratak na odabir datoteka od strane sustava.">
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "Povezani ste na">
@@ -918,6 +932,7 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_title "Zaustavi">
 <!ENTITY pip_pause_button_description "Zaustavi reprodukciju">
 
+<!ENTITY pref_notification_settings_link "Upravljanje postavkama obavijesti">
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "Preglednik">
 <!ENTITY mls_notification_channel "&vendorShortName; lokacijska usluga">
@@ -930,3 +945,4 @@ Picture-in-picture mini window -->
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
 web sites through the HTML Notifications API. -->
 <!ENTITY site_notifications_channel "Obavijesti stranica">
+<!ENTITY crash_handler_notifications_channel "&brandShortName; prijavitelj rušenja">

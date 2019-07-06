@@ -70,16 +70,16 @@ connection-proxy-socks-remote-dns =
 connection-dns-over-https =
     .label = Virkja DNS yfir HTTPS
     .accesskey = b
-connection-dns-over-https-url = Vefslóð
-    .accesskey = U
-    .tooltiptext = Vefslóð til að leysa DNS yfir HTTPS
 # Variables:
 #   $url (String) - URL for the DNS over HTTPS provider
 connection-dns-over-https-url-default =
     .label = Nota sjálfgefið ({ $url })
     .accesskey = l
     .tooltiptext = Nota sjálfgefna vefslóð til að leysa DNS yfir HTTPS
+connection-dns-over-https-url-resolver = Nota Provider
+    .accesskey = P
 connection-dns-over-https-url-custom =
     .label = Sérvalið
     .accesskey = C
     .tooltiptext = Sláðu inn valda vefslóð til að leysa DNS yfir HTTPS
+connection-dns-over-https-custom-label = Sérsníða

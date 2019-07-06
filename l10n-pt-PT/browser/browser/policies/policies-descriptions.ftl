@@ -53,6 +53,7 @@ policy-EnableTrackingProtection = Ativar ou desativar o Bloqueio de conteúdo e 
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
 policy-Extensions = Instalar, desinstalar ou bloquear extensões. A opção Instalar usa URLs ou caminhos como parâmetros. As opções Desinstalar e Bloquear usam IDs de extensões.
+policy-ExtensionSettings = Gerir todos os aspetos de instalação de extensões.
 policy-ExtensionUpdate = Ativar ou desativar atualizações automáticas de extensões.
 policy-FirefoxHome = Configurar o Firefox Home.
 policy-FlashPlugin = Permitir ou negar a utilização do plugin Flash.
@@ -64,7 +65,7 @@ policy-LocalFileLinks = Permitir a websites específicos ligar a ficheiros locai
 policy-NetworkPrediction = Ativar ou desativar a previsão de rede (pré-obtenção de DNS).
 policy-NewTabPage = Ativar ou desativar a página de novo separador.
 policy-NoDefaultBookmarks = Desativar a criação de marcadores predefinidos empacotados com o { -brand-short-name }, e os Marcadores inteligentes (Mais visitados, Etiquetas recentes). Nota: esta política é apenas eficaz se utilizada antes da primeira execução do perfil.
-policy-OfferToSaveLogins = Forçar a definição para permitir o { -brand-short-name } oferecer para memorizar credenciais guardadas e palavras-passe. Ambos os valores true e false são aceites.
+policy-OfferToSaveLogins = Forçar a definição para permitir ao { -brand-short-name } oferecer para memorizar credenciais guardadas e palavras-passe. Ambos os valores true e false são aceites.
 policy-OverrideFirstRunPage = Sobrepor a página de primeira execução. Defina esta política para blank se pretende desativar a página de primeira execução.
 policy-OverridePostUpdatePage = Sobrepor a página "Novidades" pós-atualização. Defina esta política para blank se pretende desativar a página pós-atualização.
 policy-Permissions = Configurar permissões para a câmara, microfone, localização e notificações.

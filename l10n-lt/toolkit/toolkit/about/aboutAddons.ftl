@@ -95,7 +95,7 @@ detail-update-manual =
 detail-private-browsing-label = Leisti privačiojo naršymo languose
 detail-private-browsing-description2 = Jums leidus, šis priedas turės prieigą prie jūsų veiklos internete, kai naršote privačiai. <label data-l10n-name="detail-private-browsing-learn-more">Sužinokite daugiau</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = Neleidžiama privačiojo naršymo languose
 detail-private-disallowed-description = Šis priedas neveikia privačiojo naršymo languose. <label data-l10n-name="detail-private-browsing-learn-more">Sužinokite daugiau</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
@@ -158,6 +158,9 @@ private-browsing-description2 =
 extensions-view-discover =
     .name = Parsisiųsti priedų
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Rekomendacijos
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Paskiausiai atnaujinti
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -238,7 +241,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Tvarkyti sparčiuosius klavišus priedams
     .accesskey = s
-shortcuts-empty-message = Šiam priedui sparčiųjų klavišų nėra.
 shortcuts-no-addons = Neturite jokių įjungtų priedų.
 shortcuts-no-commands = Šie priedai neturi sparčiųjų klavišų komandų:
 shortcuts-input =
@@ -265,19 +267,68 @@ shortcuts-card-collapse-button = Rodyti mažiau
 go-back-button =
     .tooltiptext = Eiti atgal
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    Priedai ir grafiniai apvalkalai yra tarsi programos jūsų naršyklei, ir jie leidžia
+    jums apsaugoti slaptažodžius, siųstis vaizdo įrašus, rasti akcijas, blokuoti
+    erzinančias reklamas, keisti naršyklės išvaizdą, ir dar daugiau. Šias nedideles
+    programas dažniausiai kuria trečiosios šalys. Čia pateikiame rinkinį, kurį
+    „{ -brand-product-name }“ <a data-l10n-name="learn-more-trigger">rekomenduoja</a>
+    išskirtiniam saugumui, našumui ir funkcionalumui.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations =
+    Kai kurios iš šių rekomendacijų yra pritaikytos būtent jums. Yra atsižvelgiama į kitus
+    jūsų įdiegtus priedus, profilio pasirinkimus, ir naudojimo statistikas.
+discopane-notice-learn-more = Sužinoti daugiau
+privacy-policy = Privatumo nuostatai
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = sukūrė <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Naudotojų: { $dailyUsers }
+install-extension-button = Pridėti į „{ -brand-product-name }“
+install-theme-button = Įdiegti grafinį apvalkalą
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Tvarkyti
+find-more-addons = Rasti daugiau priedų
+
 ## Add-on actions
 
+report-addon-button = Pranešti
 remove-addon-button = Pašalinti
 disable-addon-button = Išjungti
 enable-addon-button = Įjungti
 expand-addon-button = Daugiau veiksmų
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Nuostatos
+       *[other] Nuostatos
+    }
+details-addon-button = Išsamiau
+release-notes-addon-button = Laidos apžvalga
+permissions-addon-button = Leidimai
 addons-enabled-heading = Įjungta
 addons-disabled-heading = Išjungta
+ask-to-activate-button = Klausti prieš aktyvinant
+always-activate-button = Visada aktyvinti
+never-activate-button = Niekada neaktyvinti
 addon-detail-author-label = Autorius
 addon-detail-version-label = Laida
 addon-detail-last-updated-label = Paskiausiai atnaujintas
 addon-detail-homepage-label = Svetainė
 addon-detail-rating-label = Įvertinimas
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Įvertinta { NUMBER($rating, maximumFractionDigits: 1) } iš 5
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -291,3 +342,38 @@ addon-detail-reviews-link =
         [few] { $numberOfReviews } atsiliepimai
        *[other] { $numberOfReviews } atsiliepimų
     }
+
+## Pending uninstall message bar
+
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = <span data-l10n-name="addon-name">„{ $addon }“</span> buvo pašalintas.
+pending-uninstall-undo-button = Atšaukti
+addon-detail-updates-label = Leisti automatinius naujinimus
+addon-detail-updates-radio-default = Numatytasis
+addon-detail-updates-radio-on = Taip
+addon-detail-updates-radio-off = Ne
+addon-detail-update-check-label = Tikrinti, ar yra naujinimų
+install-update-button = Atnaujinti
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Leidžiama privačiojo naršymo languose
+addon-detail-private-browsing-help = Leidus, priedas turės priėjimą prie jūsų veiklos internete naršant privačiai. <a data-l10n-name="learn-more">Sužinokite daugiau</a>
+addon-detail-private-browsing-allow = Leisti
+addon-detail-private-browsing-disallow = Neleisti
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Rekomenduojamas
+    .alt = Rekomenduojamas
+available-updates-heading = Galimi naujinimai
+recent-updates-heading = Paskiausiai atnaujinti
+release-notes-loading = Įkeliama…
+release-notes-error = Atsiprašome, bet įkeliant laidos apžvalgą įvyko klaida.
+addon-permissions-empty = Šis priedas nereikalauja jokių leidimų
+recommended-extensions-heading = Rekomenduojami priedai
+recommended-themes-heading = Rekomenduojami grafiniai apvalkalai
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Jaučiatės kūrybiškai? <a data-l10n-name="link">Sukurkite savo grafinį apvalkalą su „Firefox Color“.</a>

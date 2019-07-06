@@ -8,6 +8,11 @@
 
 # Page Title strings
 
+# Page title (ie tab title) for the Setup page
+about-debugging-page-title-setup-page = การดีบั๊ก - ตั้งค่า
+# Page title (ie tab title) for the Runtime page
+# { $selectedRuntimeId } is the id of the current runtime, such as "this-firefox", "localhost:6080", ...
+about-debugging-page-title-runtime-page = การดีบั๊ก - รันไทม์ / { $selectedRuntimeId }
 
 # Sidebar strings
 
@@ -17,6 +22,9 @@ about-debugging-this-firefox-runtime-name = { -brand-shorter-name } นี้
 # Sidebar heading for selecting the currently running instance of Firefox
 about-debugging-sidebar-this-firefox =
     .name = { about-debugging-this-firefox-runtime-name }
+# Sidebar heading for connecting to some remote source
+about-debugging-sidebar-setup =
+    .name = ตั้งค่า
 # Text displayed in the about:debugging sidebar when USB devices discovery is enabled.
 about-debugging-sidebar-usb-enabled = เปิดใช้งาน USB อยู่
 # Text displayed in the about:debugging sidebar when USB devices discovery is disabled
@@ -35,6 +43,9 @@ about-debugging-sidebar-item-connect-button = เชื่อมต่อ
 about-debugging-sidebar-item-connect-button-connecting = กำลังเชื่อมต่อ…
 # Text displayed in buttons found in sidebar items when the connection failed.
 about-debugging-sidebar-item-connect-button-connection-failed = การเชื่อมต่อล้มเหลว
+# Text displayed in connection warning on sidebar item of the runtime when connecting to
+# the runtime is taking too much time.
+about-debugging-sidebar-item-connect-button-connection-not-responding = การเชื่อมต่อยังรอค้างอยู่ ตรวจสอบข้อความบนเบราว์เซอร์เป้าหมาย
 # Text displayed as connection error in sidebar item when the connection has timed out.
 about-debugging-sidebar-item-connect-button-connection-timeout = การเชื่อมต่อหมดเวลา
 # Temporary text displayed in sidebar items representing remote runtimes after
@@ -44,6 +55,9 @@ about-debugging-sidebar-item-connected-label = เชื่อมต่อแล
 # Firefox) has not been detected yet. Typically, Android phones connected via USB with
 # USB debugging enabled, but where Firefox is not started.
 about-debugging-sidebar-runtime-item-waiting-for-browser = กำลังรอเบราว์เซอร์…
+# Text displayed in sidebar items for remote devices that have been disconnected from the
+# computer.
+about-debugging-sidebar-runtime-item-unplugged = ถอดปลั๊กแล้ว
 # Title for runtime sidebar items that are related to a specific device (USB, WiFi).
 about-debugging-sidebar-runtime-item-name =
     .title = { $displayName } ({ $deviceName })
@@ -51,6 +65,9 @@ about-debugging-sidebar-runtime-item-name =
 # locations).
 about-debugging-sidebar-runtime-item-name-no-device =
     .title = { $displayName }
+# Text to show in the footer of the sidebar that links to a help page
+# (currently: https://developer.mozilla.org/docs/Tools/about:debugging)
+about-debugging-sidebar-support = ฝ่ายสนับสนุนการดีบั๊ก
 # Text to show as the ALT attribute of a help icon that accompanies the help about
 # debugging link in the footer of the sidebar
 about-debugging-sidebar-support-icon =
@@ -63,13 +80,16 @@ about-debugging-refresh-usb-devices-button = เรียกอุปกรณ�
 
 # Title of the Setup page.
 about-debugging-setup-title = ตั้งค่า
-# Link displayed in the Setup page that leads to MDN page with list of supported devices.
-# Temporarily leads to https://support.mozilla.org/en-US/kb/will-firefox-work-my-mobile-device#w_android-devices
-about-debugging-setup-link-android-devices = ดูรายการอุปกรณ์ Android ที่รองรับ
+# Introduction text in the Setup page to explain how to configure remote debugging.
+about-debugging-setup-intro = กำหนดค่าวิธีการเชื่อมต่อที่คุณต้องการดีบั๊กอุปกรณ์ของคุณจากระยะไกล
+# Explanatory text in the Setup page about what the 'This Firefox' page is for
+about-debugging-setup-this-firefox = ใช้ <a>{ about-debugging-this-firefox-runtime-name }</a> เพื่อดีบั๊กแท็บ, ส่วนขยายและตัวทำงานบริการบน { -brand-shorter-name } รุ่นนี้
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = เชื่อมต่ออุปกรณ์
 # USB section of the Setup page
 about-debugging-setup-usb-title = USB
+# Explanatory text displayed in the Setup page when USB debugging is disabled
+about-debugging-setup-usb-disabled = การเปิดใช้งานสิ่งนี้จะดาวน์โหลดและเพิ่มส่วนประกอบการดีบั๊กผ่าน USB ของ Android ที่จำเป็นใน { -brand-shorter-name }
 # Text of the button displayed in the USB section of the setup page when USB debugging is disabled.
 # Clicking on it will download components needed to debug USB Devices remotely.
 about-debugging-setup-usb-enable-button = เปิดใช้งานอุปกรณ์ USB
@@ -83,19 +103,27 @@ about-debugging-setup-usb-status-enabled = เปิดใช้งานอย�
 about-debugging-setup-usb-status-disabled = ปิดใช้งานอยู่
 about-debugging-setup-usb-status-updating = กำลังอัปเดต…
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-dev-menu = เปิดใช้งานเมนูนักพัฒนาในอุปกรณ์ Android ของคุณ <a>เรียนรู้วิธี</a>
+about-debugging-setup-usb-step-enable-dev-menu2 = เปิดใช้งานเมนูนักพัฒนาในอุปกรณ์ Android ของคุณ
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug = เปิดใช้งานการดีบั๊ก USB ในเมนูนักพัฒนา Android <a>เรียนรู้วิธี</a>
+about-debugging-setup-usb-step-enable-debug2 = เปิดใช้งานการดีบั๊ก USB ในเมนูนักพัฒนา Android
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug-firefox = เปิดใช้งานการดีบั๊ก USB ใน Firefox ในอุปกรณ์ Android <a>เรียนรู้วิธี</a>
+about-debugging-setup-usb-step-enable-debug-firefox2 = เปิดใช้งานการดีบั๊ก USB ใน Firefox ในอุปกรณ์ Android
 # USB section step by step guide
 about-debugging-setup-usb-step-plug-device = เชื่อมต่ออุปกรณ์ Android กับคอมพิวเตอร์ของคุณ
+# Text shown in the USB section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/docs/Tools/Remote_Debugging/Debugging_over_USB
+about-debugging-setup-usb-troubleshoot = มีปัญหาในการเชื่อมต่อกับอุปกรณ์ USB? <a>แก้ไขปัญหา</a>
 # Network section of the Setup page
 about-debugging-setup-network =
     .title = ตำแหน่งที่ตั้งเครือข่าย
+# Text shown in the Network section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Debugging_over_a_network
+about-debugging-setup-network-troubleshoot = มีปัญหาในการเชื่อมต่อผ่านตำแหน่งที่ตั้งเครือข่าย? <a>แก้ไขปัญหา</a>
 # Text of a button displayed after the network locations "Host" input.
 # Clicking on it will add the new network location to the list.
 about-debugging-network-locations-add-button = เพิ่ม
+# Text to display when there are no locations to show.
+about-debugging-network-locations-empty-text = ยังไม่ได้เพิ่มตำแหน่งที่ตั้งเครือข่าย
 # Text of the label for the text input that allows users to add new network locations in
 # the Connect page. A host is a hostname and a port separated by a colon, as suggested by
 # the input's placeholder "localhost:6080".
@@ -130,6 +158,16 @@ about-debugging-runtime-shared-workers =
 # Title of the other workers category.
 about-debugging-runtime-other-workers =
     .name = ตัวทำงานอื่น ๆ
+# Title of the processes category.
+about-debugging-runtime-processes =
+    .name = โปรเซส
+# Label of the button opening the performance profiler panel in runtime pages for remote
+# runtimes.
+about-debugging-runtime-profile-button2 = ประสิทธิภาพโปรไฟล์
+# This string is displayed in the runtime page if the current configuration of the
+# target runtime is incompatible with service workers. "Learn more" points to MDN.
+# https://developer.mozilla.org/en-US/docs/Tools/about%3Adebugging#Service_workers_not_compatible
+about-debugging-runtime-service-workers-not-compatible = การกำหนดค่าเบราว์เซอร์ของคุณเข้ากันไม่ได้กับตัวทำงานบริการ <a>เรียนรู้เพิ่มเติม</a>
 # Displayed for runtime info in runtime pages.
 # { $name } is brand name such as "Firefox Nightly"
 # { $version } is version such as "64.0a1"
@@ -137,11 +175,14 @@ about-debugging-runtime-name = { $name } ({ $version })
 # Text of a button displayed in Runtime pages for remote runtimes.
 # Clicking on the button will close the connection to the runtime.
 about-debugging-runtime-disconnect-button = ตัดการเชื่อมต่อ
-# Label of a checkbox displayed in the runtime page for "This Firefox".
-# This checkbox will toggle preferences that enable local addon debugging.
-# The "Learn more" link points to MDN.
-# https://developer.mozilla.org/docs/Tools/about:debugging#Enabling_add-on_debugging
-about-debugging-extension-debug-setting-label = เปิดใช้งานการดีบั๊กส่วนขยาย <a>เรียนรู้เพิ่มเติม</a>
+# Text of the connection prompt button displayed in Runtime pages, when the preference
+# "devtools.debugger.prompt-connection" is false on the target runtime.
+about-debugging-connection-prompt-enable-button = เปิดใช้งานพรอมต์การเชื่อมต่อ
+# Text of the connection prompt button displayed in Runtime pages, when the preference
+# "devtools.debugger.prompt-connection" is true on the target runtime.
+about-debugging-connection-prompt-disable-button = ปิดใช้งานพรอมต์การเชื่อมต่อ
+# Title of a modal dialog displayed on remote runtime pages after clicking on the Profile Runtime button.
+about-debugging-profiler-dialog-title2 = ตัวสร้างโปรไฟล์
 # Clicking on the header of a debug target category will expand or collapse the debug
 # target items in the category. This text is used as ’title’ attribute of the header,
 # to describe this feature.
@@ -159,12 +200,19 @@ about-debugging-debug-target-inspect-button = ตรวจสอบ
 # Text of a button displayed in the "This Firefox" page, in the Temporary Extension
 # section. Clicking on the button will open a file picker to load a temporary extension
 about-debugging-tmp-extension-install-button = โหลดส่วนเสริมชั่วคราว…
+# Text displayed when trying to install a temporary extension in the "This Firefox" page.
+about-debugging-tmp-extension-install-error = เกิดข้อผิดพลาดระหว่างติดตั้งส่วนเสริมแบบชั่วคราว
 # Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will reload the extension.
 about-debugging-tmp-extension-reload-button = โหลดใหม่
 # Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will uninstall the extension and remove it from the page.
 about-debugging-tmp-extension-remove-button = เอาออก
+# Message displayed in the file picker that opens to select a temporary extension to load
+# (triggered by the button using "about-debugging-tmp-extension-install-button")
+# manifest.json .xpi and .zip should not be localized.
+# Note: this message is only displayed in Windows and Linux platforms.
+about-debugging-tmp-extension-install-message = เลือกไฟล์ manifest.json หรือไฟล์เก็บถาวร .xpi/.zip
 # This string is displayed as a message about the add-on having a temporaryID.
 about-debugging-tmp-extension-temporary-id = WebExtension นี้มี ID ชั่วคราว <a>เรียนรู้เพิ่มเติม</a>
 # Text displayed for extensions in "runtime" pages, before displaying a link the extension's
@@ -192,6 +240,14 @@ about-debugging-worker-action-push = ผลัก
 about-debugging-worker-action-start = เริ่ม
 # This string is displayed as a label of the button that unregisters a service worker.
 about-debugging-worker-action-unregister = เลิกลงทะเบียน
+# Displayed for service workers in runtime pages that listen to Fetch events.
+about-debugging-worker-fetch-listening =
+    .label = ดึงข้อมูล
+    .value = กำลังรับฟังเหตุการณ์การดึงข้อมูล
+# Displayed for service workers in runtime pages that do not listen to Fetch events.
+about-debugging-worker-fetch-not-listening =
+    .label = ดึงข้อมูล
+    .value = ไม่ได้รับฟังเหตุการณ์การดึงข้อมูลอยู่
 # Displayed for service workers in runtime pages that are currently running (service
 # worker instance is active).
 about-debugging-worker-status-running = กำลังทำงาน
@@ -215,3 +271,9 @@ about-debugging-main-process-description2 = โปรเซสหลักสำ
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = ปิดข้อความ
+# Label text used for the error details of message component.
+about-debugging-message-details-label-error = รายละเอียดข้อผิดพลาด
+# Label text used for the warning details of message component.
+about-debugging-message-details-label-warning = รายละเอียดคำเตือน
+# Label text used for default state of details of message component.
+about-debugging-message-details-label = รายละเอียด

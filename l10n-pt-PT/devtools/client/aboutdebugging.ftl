@@ -33,7 +33,7 @@ about-debugging-sidebar-usb-disabled = USB desativado
 # Connection status (connected) for runtime items in the sidebar
 aboutdebugging-sidebar-runtime-connection-status-connected = Ligado
 # Connection status (disconnected) for runtime items in the sidebar
-aboutdebugging-sidebar-runtime-connection-status-disconnected = Desligado
+aboutdebugging-sidebar-runtime-connection-status-disconnected = Desassociado
 # Text displayed in the about:debugging sidebar when no device was found.
 about-debugging-sidebar-no-devices = Nenhum dispositivo descoberto
 # Text displayed in buttons found in sidebar items representing remote runtimes.
@@ -82,11 +82,10 @@ about-debugging-refresh-usb-devices-button = Atualizar dispositivos
 about-debugging-setup-title = Configuração
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Configure o método de ligação com o qual deseja depurar remotamente o seu dispositivo.
-# Link displayed in the Setup page that leads to MDN page with list of supported devices.
-# Temporarily leads to https://support.mozilla.org/en-US/kb/will-firefox-work-my-mobile-device#w_android-devices
-about-debugging-setup-link-android-devices = Ver lista de dispositivos Android suportados
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
 about-debugging-setup-this-firefox = Utilize <a>{ about-debugging-this-firefox-runtime-name }</a> para depurar separadores, extensões e service workers nesta versão do { -brand-shorter-name }.
+# Explanatory text in the Setup page about what the 'This Firefox' page is for
+about-debugging-setup-this-firefox2 = Utilize <a>{ about-debugging-this-firefox-runtime-name }</a> para depurar extensões e service workers nesta versão do { -brand-shorter-name }.
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Ligue um dispositivo
 # USB section of the Setup page
@@ -106,16 +105,22 @@ about-debugging-setup-usb-status-enabled = Ativado
 about-debugging-setup-usb-status-disabled = Desativado
 about-debugging-setup-usb-status-updating = A atualizar...
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-dev-menu = Ative o menu de programador no seu dispositivo Android. <a>Saber como</a>
+about-debugging-setup-usb-step-enable-dev-menu2 = Ative o menu de programador no seu dispositivo Android.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug = Ative a depuração USB no menu de programador Android. <a>Saber como</a>
+about-debugging-setup-usb-step-enable-debug2 = Ative a depuração USB no menu de programador Android.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug-firefox = Ative a depuração USB no Firefox no dispositivo Android. <a>Saber como</a>
+about-debugging-setup-usb-step-enable-debug-firefox2 = Ative a depuração USB no Firefox no dispositivo Android.
 # USB section step by step guide
 about-debugging-setup-usb-step-plug-device = Ligue o dispositivo Android ao seu computador.
+# Text shown in the USB section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/docs/Tools/Remote_Debugging/Debugging_over_USB
+about-debugging-setup-usb-troubleshoot = Problemas ao ligar ao dispositivo USB? <a>Resolução de problemas</a>
 # Network section of the Setup page
 about-debugging-setup-network =
     .title = Localização da rede
+# Text shown in the Network section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Debugging_over_a_network
+about-debugging-setup-network-troubleshoot = Problemas ao ligar via localização de rede? <a>Resolução de problemas</a>
 # Text of a button displayed after the network locations "Host" input.
 # Clicking on it will add the new network location to the list.
 about-debugging-network-locations-add-button = Adicionar
@@ -173,7 +178,7 @@ about-debugging-runtime-service-workers-not-compatible = A configuração do seu
 # "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/WebIDE/Troubleshooting
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
 # { $minVersion } is the minimum version that is compatible with the current Firefox instance (same format)
-about-debugging-browser-version-too-old = O navegador ligado tem uma versão antiga ({ $runtimeVersion }). A versão mínima suportada é ({ $minVersion }). Isto é uma configuração não suportada e pode causar com que as DevTools falhem. Por favor atualize o navegador ligado. <a>Resolução de problemas</a>
+about-debugging-browser-version-too-old = O navegador ligado tem uma versão antiga ({ $runtimeVersion }). A versão mínima suportada é ({ $minVersion }). Esta é uma configuração não suportada e pode causar com que as DevTools falhem. Por favor atualize o navegador ligado. <a>Resolução de problemas</a>
 # Dedicated message for a backward compatibility issue that occurs when connecting:
 # - from Fx 67 to 66 or to 65
 # - from Fx 68 to 66
@@ -187,7 +192,7 @@ about-debugging-browser-version-too-old-67-debugger = O painel Depurador pode n�
 # { $localID } is the build ID of the current Firefox instance (same format)
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
 # { $localVersion } is the version of your current browser (same format)
-about-debugging-browser-version-too-recent = O navegador ligado é mais recente ({ $runtimeVersion }, buildID { $runtimeID }) do que a sua versão do { -brand-shorter-name } ({ $localVersion }, buildID { $localID }). A versão mínima suportada é ({ $minVersion }). Isto é uma configuração não suportada e pode causar com que as DevTools falhem. Por favor atualize o Firefox. <a>Resolução de problemas</a>
+about-debugging-browser-version-too-recent = O navegador ligado é mais recente ({ $runtimeVersion }, buildID { $runtimeID }) do que a sua versão do { -brand-shorter-name } ({ $localVersion }, buildID { $localID }). Esta é uma configuração não suportada e pode fazer com que as DevTools falhem. Por favor atualize o Firefox. <a>Resolução de problemas</a>
 # Displayed for runtime info in runtime pages.
 # { $name } is brand name such as "Firefox Nightly"
 # { $version } is version such as "64.0a1"
@@ -203,11 +208,6 @@ about-debugging-connection-prompt-enable-button = Ativar solicitação de ligaç
 about-debugging-connection-prompt-disable-button = Desativar solicitação de ligação
 # Title of a modal dialog displayed on remote runtime pages after clicking on the Profile Runtime button.
 about-debugging-profiler-dialog-title2 = Perfilador
-# Label of a checkbox displayed in the runtime page for "This Firefox".
-# This checkbox will toggle preferences that enable local addon debugging.
-# The "Learn more" link points to MDN.
-# https://developer.mozilla.org/docs/Tools/about:debugging#Enabling_add-on_debugging
-about-debugging-extension-debug-setting-label = Ativar a depuração de extensões. <a>Saber mais</a>
 # Clicking on the header of a debug target category will expand or collapse the debug
 # target items in the category. This text is used as ’title’ attribute of the header,
 # to describe this feature.
@@ -239,7 +239,7 @@ about-debugging-tmp-extension-remove-button = Remover
 # Note: this message is only displayed in Windows and Linux platforms.
 about-debugging-tmp-extension-install-message = Selecione o ficheiro manifest.json ou arquivo .xpi/.zip
 # This string is displayed as a message about the add-on having a temporaryID.
-about-debugging-tmp-extension-temporary-id = Este WebExtension tem um ID temporário. <a>Saber mais</a>
+about-debugging-tmp-extension-temporary-id = Esta WebExtension tem um ID temporário. <a>Saber mais</a>
 # Text displayed for extensions in "runtime" pages, before displaying a link the extension's
 # manifest URL.
 about-debugging-extension-manifest-url =
@@ -296,3 +296,9 @@ about-debugging-main-process-description2 = Processo principal para o navegador 
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = Fechar mensagem
+# Label text used for the error details of message component.
+about-debugging-message-details-label-error = Detalhes do erro
+# Label text used for the warning details of message component.
+about-debugging-message-details-label-warning = Detalhes do aviso
+# Label text used for default state of details of message component.
+about-debugging-message-details-label = Detalhes

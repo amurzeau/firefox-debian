@@ -32,8 +32,15 @@ app-basics-name = Név
 app-basics-version = Verzió
 app-basics-build-id = Build az.
 app-basics-update-channel = Frissítési csatorna
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] Könyvtár frissítése
+       *[other] Mappa frissítése
+    }
 app-basics-update-history = Frissítési előzmények
 app-basics-show-update-history = Frissítési előzmények megjelenítése
+# Represents the path to the binary used to start the application.
+app-basics-binary = Alkalmazás binárisa
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Profilkönyvtár
@@ -79,6 +86,8 @@ graphics-gpu2-title = 2. GPU
 graphics-decision-log-title = Döntésnapló
 graphics-crash-guards-title = Összeomlásvédelem által letiltott funkciók
 graphics-workarounds-title = Kerülő eljárások
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Ablakprotokoll
 place-database-title = Helyek adatbázisa
 place-database-integrity = Sértetlenség
 place-database-verify-integrity = Sértetlenség ellenőrzése

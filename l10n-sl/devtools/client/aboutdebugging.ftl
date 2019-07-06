@@ -82,11 +82,10 @@ about-debugging-refresh-usb-devices-button = Osveži naprave
 about-debugging-setup-title = Nastavitev
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Nastavite način povezave, s katero želite oddaljeno razhroščevati napravo.
-# Link displayed in the Setup page that leads to MDN page with list of supported devices.
-# Temporarily leads to https://support.mozilla.org/en-US/kb/will-firefox-work-my-mobile-device#w_android-devices
-about-debugging-setup-link-android-devices = Oglejte si seznam podprtih naprav Android
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
 about-debugging-setup-this-firefox = Uporabite <a>{ about-debugging-this-firefox-runtime-name }</a> za razhroščevanje zavihkov, razširitev in service workerjev v tej različici { -brand-shorter-name }a.
+# Explanatory text in the Setup page about what the 'This Firefox' page is for
+about-debugging-setup-this-firefox2 = Uporabite <a>{ about-debugging-this-firefox-runtime-name }</a> za razhroščevanje razširitev in service workerjev v tej različici { -brand-shorter-name }a.
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Poveži napravo
 # USB section of the Setup page
@@ -106,13 +105,16 @@ about-debugging-setup-usb-status-enabled = Omogočeno
 about-debugging-setup-usb-status-disabled = Onemogočeno
 about-debugging-setup-usb-status-updating = Posodabljanje …
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-dev-menu = Na napravi Android omogočite meni Možnosti za razvijalce. <a>Več o tem</a>
+about-debugging-setup-usb-step-enable-dev-menu2 = Na napravi Android omogočite meni Možnosti za razvijalce.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug = Omogočite razhroščevanje USB v Androidovih možnostih za razvijalce. <a>Več o tem</a>
+about-debugging-setup-usb-step-enable-debug2 = Omogočite razhroščevanje USB v Androidovih možnostih za razvijalce.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug-firefox = Omogočite oddaljeno razhroščevanje USB v Firefoxu na napravi Android. <a>Več o tem</a>
+about-debugging-setup-usb-step-enable-debug-firefox2 = Omogočite oddaljeno razhroščevanje USB v Firefoxu na napravi Android.
 # USB section step by step guide
 about-debugging-setup-usb-step-plug-device = Povežite napravo Android z računalnikom.
+# Text shown in the USB section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/docs/Tools/Remote_Debugging/Debugging_over_USB
+about-debugging-setup-usb-troubleshoot = Težave pri povezovanju z napravo USB? <a>Odpravljanje težav</a>
 # Network section of the Setup page
 about-debugging-setup-network =
     .title = Lokacija omrežja
@@ -164,7 +166,7 @@ about-debugging-runtime-processes =
     .name = Procesi
 # Label of the button opening the performance profiler panel in runtime pages for remote
 # runtimes.
-about-debugging-runtime-profile-button = Izvajalnik profila
+about-debugging-runtime-profile-button2 = Spremljajte učinkovitost
 # This string is displayed in the runtime page if the current configuration of the
 # target runtime is incompatible with service workers. "Learn more" points to MDN.
 # https://developer.mozilla.org/en-US/docs/Tools/about%3Adebugging#Service_workers_not_compatible
@@ -202,12 +204,7 @@ about-debugging-connection-prompt-enable-button = Omogoči poziv za povezavo
 # "devtools.debugger.prompt-connection" is true on the target runtime.
 about-debugging-connection-prompt-disable-button = Onemogoči poziv za povezavo
 # Title of a modal dialog displayed on remote runtime pages after clicking on the Profile Runtime button.
-about-debugging-profiler-dialog-title = Spremljanje učinkovitosti
-# Label of a checkbox displayed in the runtime page for "This Firefox".
-# This checkbox will toggle preferences that enable local addon debugging.
-# The "Learn more" link points to MDN.
-# https://developer.mozilla.org/docs/Tools/about:debugging#Enabling_add-on_debugging
-about-debugging-extension-debug-setting-label = Omogoči razhroščevanje razširitev. <a>Več o tem</a>
+about-debugging-profiler-dialog-title2 = Profiler
 # Clicking on the header of a debug target category will expand or collapse the debug
 # target items in the category. This text is used as ’title’ attribute of the header,
 # to describe this feature.
@@ -296,3 +293,9 @@ about-debugging-main-process-description2 = Glavni proces za ciljni brskalnik
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = Zapri sporočilo
+# Label text used for the error details of message component.
+about-debugging-message-details-label-error = Podrobnosti napake
+# Label text used for the warning details of message component.
+about-debugging-message-details-label-warning = Podrobnosti opozorila
+# Label text used for default state of details of message component.
+about-debugging-message-details-label = Podrobnosti

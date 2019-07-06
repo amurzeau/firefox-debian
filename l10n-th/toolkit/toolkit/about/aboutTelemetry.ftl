@@ -2,11 +2,17 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+about-telemetry-ping-data-source = แหล่งข้อมูล Ping:
+about-telemetry-show-current-ping-data = ข้อมูล ping ปัจจุบัน
+about-telemetry-show-archived-ping-data = ข้อมูล ping ที่เก็บถาวร
+about-telemetry-choose-ping = เลือก ping:
+about-telemetry-archive-ping-type = ชนิด Ping
 about-telemetry-archive-ping-header = Ping
 about-telemetry-option-group-today = วันนี้
 about-telemetry-option-group-yesterday = เมื่อวานนี้
 about-telemetry-option-group-older = เก่ากว่า
 about-telemetry-previous-ping = <<
+about-telemetry-next-ping = >>
 about-telemetry-page-title = ข้อมูลการวัดและส่งข้อมูลทางไกล
 about-telemetry-more-information = กำลังมองหาข้อมูลเพิ่มเติม?
 about-telemetry-show-in-Firefox-json-viewer = เปิดในตัวดู JSON
@@ -22,7 +28,7 @@ about-telemetry-slow-sql-section = คำสั่ง SQL ที่ช้า
 about-telemetry-addon-details-section = รายละเอียดส่วนเสริม
 about-telemetry-late-writes-section = การเขียนทีหลัง
 about-telemetry-raw-payload-section = ส่วนข้อมูลดิบ
-about-telemetry-raw = JSON ดิบ
+about-telemetry-raw = ข้อมูลดิบ JSON
 about-telemetry-full-sql-warning = หมายเหตุ: การดีบั๊ก SQL ที่ทำงานช้าถูกเปิดใช้งาน คำสั่ง SQL แบบเต็มอาจถูกแสดงไว้ด้านล่างแต่จะไม่ถูกส่งออกไป
 about-telemetry-hide-stack-symbols = แสดงข้อมูลสแตกดิบ
 # Variables:
@@ -44,6 +50,8 @@ about-telemetry-results-for-search = ผลลัพธ์สำหรับ “
 # Variables:
 #   $sectionName (String): is replaced by the section name.
 about-telemetry-no-data-to-display = ขออภัย! ขณะนี้ไม่มีข้อมูลใน “{ $sectionName }”
+# used as a tooltip for the “current” ping title in the sidebar
+about-telemetry-current-ping-sidebar = ping ปัจจุบัน
 # used in the “Ping Type” select
 about-telemetry-telemetry-ping-type-all = ทั้งหมด
 # button label to copy the histogram
@@ -69,5 +77,11 @@ about-telemetry-late-writes-title = การเขียนภายหลั�
 about-telemetry-stack-title = สแตก:
 about-telemetry-memory-map-title = ผังหน่วยความจำ:
 about-telemetry-error-fetching-symbols = เกิดข้อผิดพลาดระหว่างการดึงข้อมูลสัญลักษณ์ ตรวจสอบว่าคุณเชื่อมต่อกับอินเทอร์เน็ตอยู่แล้วลองใหม่อีกครั้ง
+about-telemetry-time-stamp-header = บันทึกเวลา
 about-telemetry-category-header = หมวดหมู่
 about-telemetry-method-header = วิธีการ
+about-telemetry-object-header = วัตถุ
+about-telemetry-extra-header = พิเศษ
+# Variables:
+#  $process (String): type of process in subsection headers ( e.g. "content", "parent" )
+about-telemetry-process = โปรเซส { $process }

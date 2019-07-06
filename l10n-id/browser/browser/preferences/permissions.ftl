@@ -34,8 +34,15 @@ permissions-button-cancel =
 permissions-button-ok =
     .label = Simpan Perubahan
     .accesskey = S
+permissions-autoplay-menu = Baku untuk semua situs Web:
 permissions-searchbox =
     .placeholder = Cari Situs Web
+permissions-capabilities-autoplay-allow =
+    .label = Izinkan Audio dan Video
+permissions-capabilities-autoplay-block =
+    .label = Blokir Audio
+permissions-capabilities-autoplay-blockall =
+    .label = Blokir Audio dan Video
 permissions-capabilities-allow =
     .label = Izinkan
 permissions-capabilities-block =
@@ -95,6 +102,13 @@ permissions-exceptions-autoplay-media-window2 =
     .title = Kekecualian - Putar Otomatis
     .style = { permissions-window.style }
 permissions-exceptions-autoplay-media-desc2 = Anda dapat menentukan situs web mana saja yang selalu atau tidak diizinkan memutar otomatis media dengan suara. Ketik alamat situs yang akan diatur, lalu klik Blokir atau Izinkan.
+
+## Site Permissions - Autoplay
+
+permissions-site-autoplay-window =
+    .title = Pengaturan - Putar-otomatis
+    .style = { permissions-window.style }
+permissions-site-autoplay-desc = Anda dapat mengelola situs yang tidak mengikuti pengaturan putar-otomatis baku Anda di sini.
 
 ## Site Permissions - Notifications
 

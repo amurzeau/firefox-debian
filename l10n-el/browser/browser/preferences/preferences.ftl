@@ -34,6 +34,7 @@ policies-notice =
         [windows] Ο οργανισμός σας έχει απενεργοποιήσει την ικανότητα αλλαγής μερικών επιλογών.
        *[other] Ο οργανισμός σας έχει απενεργοποιήσει την ικανότητα αλλαγής μερικών προτιμήσεων.
     }
+managed-notice = Το πρόγραμμα περιήγησής σας ρυθμίζεται από τον οργανισμό σας.
 pane-general-title = Γενικά
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = Απόρρητο & ασφάλεια
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Λογαριασμός Firefox
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -293,6 +290,21 @@ update-pref-write-failure-title = Αποτυχία εγγραφής
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Αδυναμία αποθήκευσης προτίμησης. Αδυναμία εγγραφής σε αρχείο: { $path }
+update-setting-write-failure-title = Σφάλμα αποθήκευσης προτιμήσεων ενημερώσεων
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    Το { -brand-short-name } αντιμετώπισε σφάλμα και δεν αποθήκευσε αυτή την αλλαγή. Σημειώστε ότι η ρύθμιση αυτής της προτίμησης ενημερώσεων απαιτεί δικαίωμα εγγραφής στο παρακάτω αρχείο. Εσείς ή κάποιος διαχειριστής συστήματος ενδέχεται να μπορέσει να επιλύσει το σφάλμα, χορηγώντας στην ομάδα Χρήστες τον πλήρη έλεγχο για αυτό το αρχείο.
+    
+    Αδυναμία εγγραφής στο αρχείο: { $path }
+update-in-progress-title = Ενημέρωση σε εξέλιξη
+update-in-progress-message = Θέλετε το { -brand-short-name } να συνεχίσει με αυτή την ενημέρωση;
+update-in-progress-ok-button = &Απόρριψη
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Συνέχεια
 
 ## General Section - Performance
 
@@ -528,8 +540,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Αποθήκευση
     .accesskey = θ
-sync-mobilepromo-single = Σύνδεση άλλης συσκευής
-sync-mobilepromo-multi = Διαχείριση συσκευών
 sync-connect-another-device = Σύνδεση άλλης συσκευής
 sync-manage-devices = Διαχείριση συσκευών
 sync-fxa-begin-pairing = Σύζευξη συσκευής
@@ -549,6 +559,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Εξαιρέσεις…
     .accesskey = ξ
+forms-generate-passwords =
+    .label = Πρόταση και δημιουργία ισχυρών κωδικών πρόσβασης
+    .accesskey = ρ
 forms-saved-logins =
     .label = Αποθηκευμένοι λογαριασμοί…
     .accesskey = π
@@ -687,7 +700,6 @@ content-blocking-all-third-party-cookies = Όλα τα cookies τρίτων
 content-blocking-cryptominers = Εξορύκτες κρυπτονομισμάτων
 content-blocking-fingerprinters = Ανιχνευτές αποτυπωμάτων
 content-blocking-warning-title = Προσοχή!
-content-blocking-warning-desc = Η φραγή των cookies και των ιχνηλατών μπορεί να προκαλέσει δυσλειτουργία σε ορισμένες ιστοσελίδες. Μπορείτε εύκολα να απενεργοποιήσετε τη φραγή σε ιστοσελίδες που εμπιστεύεστε.
 content-blocking-warning-description = Η φραγή περιεχομένου μπορεί να προκαλέσει δυσλειτουργία σε ορισμένες ιστοσελίδες. Μπορείτε εύκολα να απενεργοποιήσετε τη φραγή σε ιστοσελίδες που εμπιστεύεστε.
 content-blocking-learn-how = Μάθετε πώς
 content-blocking-reload-description = Θα πρέπει να φορτώσετε ξανά τις καρτέλες σας για εφαρμογή των αλλαγών αυτών.
@@ -754,6 +766,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Εξαιρέσεις…
     .accesskey = Ε
+permissions-autoplay = Αυτόματη αναπαραγωγή
+permissions-autoplay-settings =
+    .label = Ρυθμίσεις...
+    .accesskey = θ
 permissions-block-popups =
     .label = Φραγή αναδυόμενων παραθύρων
     .accesskey = Φ

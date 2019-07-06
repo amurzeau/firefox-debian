@@ -34,6 +34,7 @@ policies-notice =
         [windows] A sua organização desativou a habilidade de alterar algumas opções.
        *[other] A sua organização desativou a habilidade de alterar algumas preferências.
     }
+managed-notice = O seu navegador está a ser gerido pela sua organização.
 pane-general-title = Geral
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = Privacidade e Segurança
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Conta Firefox
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -227,7 +224,7 @@ translate-exceptions =
     .label = Exceções…
     .accesskey = x
 check-user-spelling =
-    .label = Corrigir ortografia ao escrever
+    .label = Verificar a sua ortografia enquanto escreve
     .accesskey = t
 
 ## General Section - Files and Applications
@@ -293,6 +290,21 @@ update-pref-write-failure-title = Falha na escrita
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Não foi possível guardar a preferência. Não foi possível escrever no ficheiro: { $path }
+update-setting-write-failure-title = Erro ao guardar as preferências de atualização
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    O { -brand-short-name } encontrou um erro e não guardou esta alteração. Note que definir esta atualização requer permissão para escrever no ficheiro abaixo. Você ou um administrador do sistema pode resolver o erro ao conceder ao grupo Utilizadores controlo total para este ficheiro.
+    
+    Não foi possível escrever para ficheiro: { $path }
+update-in-progress-title = Atualização em progresso
+update-in-progress-message = Pretende que o { -brand-short-name } continue com esta atualização?
+update-in-progress-ok-button = &Descartar
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Continuar
 
 ## General Section - Performance
 
@@ -467,7 +479,7 @@ sync-mobile-promo = Transfira o Firefox para <img data-l10n-name="android-icon"/
 sync-profile-picture =
     .tooltiptext = Alterar imagem de perfil
 sync-disconnect =
-    .label = Desligar…
+    .label = Desassociar…
     .accesskey = D
 sync-manage-account = Gerir conta
     .accesskey = o
@@ -528,8 +540,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Guardar
     .accesskey = r
-sync-mobilepromo-single = Ligar outro dispositivo
-sync-mobilepromo-multi = Gerir dispositivos
 sync-connect-another-device = Ligar outro dispositivo
 sync-manage-devices = Gerir dispositivos
 sync-fxa-begin-pairing = Emparelhar um dispositivo
@@ -687,7 +697,6 @@ content-blocking-all-third-party-cookies = Todos os cookies de terceiros
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Atenção!
-content-blocking-warning-desc = Bloquear cookies e trackers pode causar com que alguns websites quebrem. É fácil desativar o bloqueio para sites que confia.
 content-blocking-warning-description = Bloquear conteúdo pode causar com que alguns websites quebrem. É fácil desativar o bloqueio para sites em que confia.
 content-blocking-learn-how = Saber mais
 content-blocking-reload-description = Irá precisar de recarregar os seus separadores para aplicar estas alterações.
@@ -754,6 +763,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Exceções…
     .accesskey = E
+permissions-autoplay = Reprodução automática
+permissions-autoplay-settings =
+    .label = Definições…
+    .accesskey = f
 permissions-block-popups =
     .label = Bloquear janelas pop-up
     .accesskey = B

@@ -34,6 +34,7 @@ policies-notice =
         [windows] Organizația ta a dezactivat posibilitatea de a modifica anumite opțiuni.
        *[other] Organizația ta a dezactivat posibilitatea de a modifica anumite preferințe.
     }
+managed-notice = Browserul este gestionat de organizația ta.
 pane-general-title = General
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = Confidențialitate și securitate
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Cont Firefox
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -105,7 +102,7 @@ extension-controlled-proxy-config = O extensie, <img data-l10n-name="icon"/> { $
 #
 # <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
 # <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
-extension-controlled-enable = Pentru a activa extensia, mergi la suplimentele <img data-l10n-name="addons-icon"/> din meniul <img data-l10n-name="menu-icon"/>.
+extension-controlled-enable = Pentru a activa extensia, mergi la <img data-l10n-name="addons-icon"/>Suplimente din meniul <img data-l10n-name="menu-icon"/>.
 
 ## Preferences UI Search Results
 
@@ -296,6 +293,21 @@ update-pref-write-failure-title = Eșec la scriere
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Nu se poate salva preferința. Nu s-a putut scrie în fișier: { $path }
+update-setting-write-failure-title = Eroare la salvarea preferințelor de actualizare
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    { -brand-short-name } a întâmpinat o eroare și nu a salvat această modificare. Reține că setarea acestei preferințe de actualizare necesită permisiunea de a scrie în fișierul de mai jos. Poți rezolva eroarea tu sau administratorul sistemului acordând grupului de utilizatori control deplin asupra acestui fișier.
+    
+    Nu s-a putut scrie în fișierul: { $path }
+update-in-progress-title = Actualizare în curs
+update-in-progress-message = Vrei ca { -brand-short-name } să continue cu această actualizare?
+update-in-progress-ok-button = Înlătură
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Continuă
 
 ## General Section - Performance
 
@@ -359,7 +371,7 @@ home-new-windows-tabs-description2 = Alege ce vezi când deschizi pagina de star
 
 ## Home Section - Home Page Customization
 
-home-homepage-mode-label = Pagina de start și ferestrele noi
+home-homepage-mode-label = Pagină de start și ferestre noi
 home-newtabs-mode-label = File noi
 home-restore-defaults =
     .label = Restaurează valorile implicite
@@ -531,13 +543,11 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Salvează
     .accesskey = v
-sync-mobilepromo-single = Conectează alt dispozitiv
-sync-mobilepromo-multi = Gestionează dispozitivele
 sync-connect-another-device = Conectează alt dispozitiv
 sync-manage-devices = Gestionează dispozitivele
 sync-fxa-begin-pairing = Asociază un dispozitiv
 sync-tos-link = Termenii de utilizare a serviciului
-sync-fxa-privacy-notice = Politica de confidențialitate
+sync-fxa-privacy-notice = Declarație de confidențialitate
 
 ## Privacy Section
 
@@ -690,7 +700,6 @@ content-blocking-all-third-party-cookies = Toate cookie-urile de la terți
 content-blocking-cryptominers = Criptomineri
 content-blocking-fingerprinters = Detectoare de amprente digitale
 content-blocking-warning-title = Atenție!
-content-blocking-warning-desc = Blocarea cookie-urilor și a elementelor de urmărire poate produce disfuncționalități pe anumite site-uri web. Poți dezactiva ușor blocarea pentru site-urile în care ai încredere.
 content-blocking-warning-description = Blocarea conținutului poate împiedica funcționarea unor site-uri web. Deblocarea se poare realiza ușor pentru site-urile în care ai încredere.
 content-blocking-learn-how = Află cum
 content-blocking-reload-description = Va trebui să reîncarci filele pentru aplicarea acestor modificări.
@@ -757,6 +766,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Excepții…
     .accesskey = E
+permissions-autoplay = Redare automată
+permissions-autoplay-settings =
+    .label = Setări…
+    .accesskey = t
 permissions-block-popups =
     .label = Blochează ferestrele pop-up
     .accesskey = B
@@ -778,7 +791,7 @@ permissions-a11y-privacy-link = Află mai multe
 
 collection-header = Colectarea și utilizarea de date din { -brand-short-name }
 collection-description = Ne străduim să îți oferim posibilitatea de a face alegeri și colectăm doar ceea ce avem nevoie ca să furnizăm și să îmbunătățim { -brand-short-name } pentru toată lumea. Întotdeauna solicităm permisiunea înainte de a primi informații cu caracter personal.
-collection-privacy-notice = Politica de confidențialitate
+collection-privacy-notice = Declarație de confidențialitate
 collection-health-report =
     .label = Permite ca { -brand-short-name } să trimită informații tehnice și interactive către { -vendor-short-name }
     .accesskey = r
@@ -854,7 +867,7 @@ space-alert-over-5gb-message =
        *[other] { -brand-short-name } rămâne fără spațiu pe disc. Este posibil ca conținutul site-ului web să nu fie afișat corespunzător. Poți șterge datele stocate în Preferințe > Avansat > Cookie-uri și date ale site-urilor.
     }
 space-alert-under-5gb-ok-button =
-    .label = Ok, am înțeles
+    .label = OK, am înțeles
     .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } rămâne fără spațiu pe disc. Este posibil ca conținutul site-ului web să nu fie afișat corespunzător. Vizitează „Află mai multe” pentru a optimiza utilizarea discului în vederea unei mai bune experiențe de navigare.
 

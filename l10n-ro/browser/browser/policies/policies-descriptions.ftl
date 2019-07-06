@@ -21,13 +21,14 @@ policy-Bookmarks = Creează marcaje în bara de marcaje, în meniul de marcaje s
 policy-CaptivePortal = Activează sau dezactivează suportul pentru portaluri captive.
 policy-CertificatesDescription = Adaugă certificate sau folosește certificate încorporate.
 policy-Cookies = Permite sau blochează setarea de cookie-uri de către site-urile web.
+policy-DefaultDownloadDirectory = Setează directorul implicit de descărcare.
 policy-DisableAppUpdate = Împiedică actualizarea browserului.
 policy-DisableBuiltinPDFViewer = Dezactivează PDF.js, vizualizatorul de fișiere PDF încorporat în { -brand-short-name }.
 policy-DisableDeveloperTools = Blochează accesul la uneltele de dezvoltare.
 policy-DisableFeedbackCommands = Dezactivează comenzile de trimis feedback în meniul de Ajutor (Trimite feedback și Raportează site-uri înșelătoare).
 policy-DisableFirefoxAccounts = Dezactivează serviciile pe bază necesare pentru { -fxaccount-brand-name }, inclusiv Sync
 # Firefox Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Dezactivează capturile de ecran din Firefox.
+policy-DisableFirefoxScreenshots = Dezactivează funcționalitatea de capturi de ecran din Firefox.
 policy-DisableFirefoxStudies = Împiedică efectuarea de studii de către { -brand-short-name }.
 policy-DisableForgetButton = Împiedică accesul la butonul de uitare.
 policy-DisableFormHistory = Nu memora istoricul căutărilor și al formularelor.
@@ -45,13 +46,16 @@ policy-DisplayBookmarksToolbar = Afișează implicit bara de marcaje.
 policy-DisplayMenuBar = Afișează implicit bara de meniu.
 policy-DNSOverHTTPS = Configurează DNS prin HTTPS.
 policy-DontCheckDefaultBrowser = Dezactivează verificarea de browser implicit la pornire.
+policy-DownloadDirectory = Setează și blochează directorul de descărcare.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Activează sau dezactivează blocarea conținutului și, opțional, blochează opțiunea.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
 policy-Extensions = Instalează, dezinstalează sau blochează extensii. Opțiunea de instalare ia URL-urile sau căile drept parametri. Opțiunile Dezinstalează și Blocată iau ID-uri de extensii.
+policy-ExtensionSettings = Gestionează toate aspectele de instalare a extensiilor.
 policy-ExtensionUpdate = Activează sau dezactivează actualizările automate de extensii.
+policy-FirefoxHome = Configurează pagina de start Firefox.
 policy-FlashPlugin = Permite sau respinge utilizarea pluginului Flash.
 policy-HardwareAcceleration = Dacă este dezactivat, oprește accelerarea hardware.
 # “lock” means that the user won’t be able to change this setting
@@ -62,11 +66,12 @@ policy-NetworkPrediction = Activează sau dezactivează predicția de rețea (pr
 policy-NewTabPage = Activează sau dezactivează pagina Filă nouă.
 policy-NoDefaultBookmarks = Dezactivează crearea marcajelor implicite care vin la pachet cu { -brand-short-name } și crearea de marcaje inteligente (Cele mai vizitate, Etichete recente). Obs: politica produce efecte numai dacă este folosită înainte de prima utilizare a profilului.
 policy-OfferToSaveLogins = Impune setarea care permite { -brand-short-name } să se ofere să țină minte datele de autentificare și parolele salvate. Sunt acceptate atât valoarea de adevărat, cât și cea de fals.
-policy-OverrideFirstRunPage = Înlocuiește pagina de întâmpinare la prima utilizare. Lasă politica goală dacă vrei să dezactivezi pagina de întâmpinare la prima utilizare.
-policy-OverridePostUpdatePage = Înlocuiește pagina „Noutăți” după actualizare. Lasă politica goală dacă vrei să dezactivezi pagina post-actualizare.
+policy-OverrideFirstRunPage = Anulează pagina de întâmpinare la prima utilizare. Lasă politica goală dacă vrei să dezactivezi pagina de întâmpinare la prima utilizare.
+policy-OverridePostUpdatePage = Anulează pagina „Noutăți” după actualizare. Lasă politica goală dacă vrei să dezactivezi pagina post-actualizare.
 policy-Permissions = Configurează permisiunile pentru cameră, microfon, locație și notificări.
 policy-PopupBlocking = Permite anumitor site-uri web să afișeze implicit ferestre pop-up.
 policy-Preferences = Setează și blochează valoarea pentru un subset de preferințe.
+policy-PromptForDownloadLocation = Întreabă unde să fie salvate fișierele la descărcare.
 policy-Proxy = Configurează setările proxy.
 policy-RequestedLocales = Setează lista de limbi solicitate de aplicație, în ordinea preferinței.
 policy-SanitizeOnShutdown = Șterge toate datele de navigare la închidere.

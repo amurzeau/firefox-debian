@@ -43,6 +43,11 @@ about-debugging-sidebar-item-connect-button = Jeike
 about-debugging-sidebar-item-connect-button-connecting = Oikehína...
 # Text displayed in buttons found in sidebar items when the connection failed.
 about-debugging-sidebar-item-connect-button-connection-failed = Ojavy jeike
+# Text displayed in connection warning on sidebar item of the runtime when connecting to
+# the runtime is taking too much time.
+about-debugging-sidebar-item-connect-button-connection-not-responding = Pe jeike oha’arõ gueteri, ehechajey oĩpa ñe’ẽmondo kundaha ohotahápe
+# Text displayed as connection error in sidebar item when the connection has timed out.
+about-debugging-sidebar-item-connect-button-connection-timeout = Jeike imbeguetereíma
 # Temporary text displayed in sidebar items representing remote runtimes after
 # successfully connecting to them. Temporary UI, do not localize.
 about-debugging-sidebar-item-connected-label = Jeikepyre
@@ -50,6 +55,9 @@ about-debugging-sidebar-item-connected-label = Jeikepyre
 # Firefox) has not been detected yet. Typically, Android phones connected via USB with
 # USB debugging enabled, but where Firefox is not started.
 about-debugging-sidebar-runtime-item-waiting-for-browser = Aha’arõhína kundahápe…
+# Text displayed in sidebar items for remote devices that have been disconnected from the
+# computer.
+about-debugging-sidebar-runtime-item-unplugged = Ñesẽmbyre
 # Title for runtime sidebar items that are related to a specific device (USB, WiFi).
 about-debugging-sidebar-runtime-item-name =
     .title = { $displayName } ({ $deviceName })
@@ -74,11 +82,10 @@ about-debugging-refresh-usb-devices-button = Embohekopyahu mba'e'oka
 about-debugging-setup-title = Ñembosako’i
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Emboheko mba’éichapa eikéta emopotĩ hag̃ua okáguio ne mba’e’oka.
-# Link displayed in the Setup page that leads to MDN page with list of supported devices.
-# Temporarily leads to https://support.mozilla.org/en-US/kb/will-firefox-work-my-mobile-device#w_android-devices
-about-debugging-setup-link-android-devices = Ehecha mba’e’oka Android rysýi ojokupytýva
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
 about-debugging-setup-this-firefox = Eipuru <a>{ about-debugging-this-firefox-runtime-name }</a> emopotĩ hag̃ua tendayke, jepysokue ha Mba'apohára mba'epytyvõrãguáva ko peteĩchagua { -brand-shorter-name }.
+# Explanatory text in the Setup page about what the 'This Firefox' page is for
+about-debugging-setup-this-firefox2 = Eipuru { about-debugging-this-firefox-runtime-name }</a> emopotĩ hag̃ua tendayke, jepysokue ha service workers kóva ko { -brand-shorter-name } rehegua.
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Embojuaju peteĩ mba'e'oka
 # USB section of the Setup page
@@ -98,16 +105,22 @@ about-debugging-setup-usb-status-enabled = Jurujapyre
 about-debugging-setup-usb-status-disabled = Pe'apyre
 about-debugging-setup-usb-status-updating = Hekopyahuhína...
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-dev-menu = Embojuruja mboguatahára poravorã ne Android mba’e’okápe. <a>Ehecha mba’éichapa</a>
+about-debugging-setup-usb-step-enable-dev-menu2 = Emyandy mboguatahára poravoha ne Android mba’e’okápe.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug = Embojuruja mopotĩha poravorã ne Android mboguatahára poravorãme. <a>Ehecha mba’éichapa</a>
+about-debugging-setup-usb-step-enable-debug2 = Emyandy USB mopotĩha mboguatahára poravoha Android pegua.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug-firefox = Embojuruja USB mopotĩha Firefox-pe ne Android mba’e’okápe. <a>Ehecha mba’éichapa</a>
+about-debugging-setup-usb-step-enable-debug-firefox2 = Emyandy USB mopotĩha Firefox-pe Android mba’e’okápe.
 # USB section step by step guide
 about-debugging-setup-usb-step-plug-device = Embojuaju Android mba’e’oka ne mohendaha rehe.
+# Text shown in the USB section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/docs/Tools/Remote_Debugging/Debugging_over_USB
+about-debugging-setup-usb-troubleshoot = ¿Apañuãi eikekuévo USB mba’e’okápe? <a>Emoĩporã apañuãi</a>
 # Network section of the Setup page
 about-debugging-setup-network =
     .title = Ñanduti rendaite
+# Text shown in the Network section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Debugging_over_a_network
+about-debugging-setup-network-troubleshoot = ¿Apañuãi eikekuévo ñanduti rendaite rupive? <a>Emoĩporã apañuãi</a>
 # Text of a button displayed after the network locations "Host" input.
 # Clicking on it will add the new network location to the list.
 about-debugging-network-locations-add-button = Mbojuaju
@@ -156,7 +169,7 @@ about-debugging-runtime-processes =
     .name = Tapereko
 # Label of the button opening the performance profiler panel in runtime pages for remote
 # runtimes.
-about-debugging-runtime-profile-button = Runtime mba'ete
+about-debugging-runtime-profile-button2 = Mba’ete apopyre
 # This string is displayed in the runtime page if the current configuration of the
 # target runtime is incompatible with service workers. "Learn more" points to MDN.
 # https://developer.mozilla.org/en-US/docs/Tools/about%3Adebugging#Service_workers_not_compatible
@@ -194,12 +207,7 @@ about-debugging-connection-prompt-enable-button = Embojuruja jeikeha rechaha
 # "devtools.debugger.prompt-connection" is true on the target runtime.
 about-debugging-connection-prompt-disable-button = Eipe'a jeikeha rechaha
 # Title of a modal dialog displayed on remote runtime pages after clicking on the Profile Runtime button.
-about-debugging-profiler-dialog-title = Apopyre mbohapyha
-# Label of a checkbox displayed in the runtime page for "This Firefox".
-# This checkbox will toggle preferences that enable local addon debugging.
-# The "Learn more" link points to MDN.
-# https://developer.mozilla.org/docs/Tools/about:debugging#Enabling_add-on_debugging
-about-debugging-extension-debug-setting-label = Embojuruja jepysokue mopotĩha. <a>Eikuaave</a>
+about-debugging-profiler-dialog-title2 = Ñemyatyrõha
 # Clicking on the header of a debug target category will expand or collapse the debug
 # target items in the category. This text is used as ’title’ attribute of the header,
 # to describe this feature.
@@ -285,3 +293,12 @@ about-debugging-main-process-name = Tembiapo ñemboguata
 # Displayed as description for the Main Process debug target in the Processes category.
 # Only for remote browsers, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-main-process-description2 = Tembiapo ñemboguata kundaha og̃uahẽ hag̃ua.
+# Alt text used for the close icon of message component (warnings, errors and notifications).
+about-debugging-message-close-icon =
+    .alt = Emboty ñe’ẽmondo
+# Label text used for the error details of message component.
+about-debugging-message-details-label-error = Mba'emimi jejavygua
+# Label text used for the warning details of message component.
+about-debugging-message-details-label-warning = Mba'emimi je'epihyigua
+# Label text used for default state of details of message component.
+about-debugging-message-details-label = Mba'emimi

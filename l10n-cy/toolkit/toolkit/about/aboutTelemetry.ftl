@@ -15,6 +15,7 @@ about-telemetry-option-group-older = Hŷn
 about-telemetry-previous-ping = <<
 about-telemetry-next-ping = >>
 about-telemetry-page-title = Data Telemetreg
+about-telemetry-current-store = Storfa Gyfredol:
 about-telemetry-more-information = Chwilio am ragor o wybodaeth?
 about-telemetry-firefox-data-doc = Mae'r <a data-l10n-name="data-doc-link">Firefox Data Documentation</a> yn cynnwys canllawiau ar sut i weithio gyda'n offer data.
 about-telemetry-telemetry-client-doc = Mae <a data-l10n-name="client-doc-link">dogfennaeth cleient Firefox Telemetry</a> yn cynnwys diffiniadau o gysyniadau, dogfennaeth API a chyfeiriadau data.
@@ -85,7 +86,7 @@ about-telemetry-ping-details-current = Mae pob darn o wybodaeth wedi ei anfon we
 # Variables:
 #   $selectedTitle (String): the section name from the structure of the ping.
 about-telemetry-filter-placeholder =
-    .placeholder = Canfod yn { $selectedTitle }
+    .placeholder = Canfod yn y { $selectedTitle }
 about-telemetry-filter-all-placeholder =
     .placeholder = Canfod ym mhob adran
 # Variables:
@@ -145,3 +146,6 @@ about-telemetry-origin-count = cyfrif
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-origins-explanation = Mae <a data-l10n-name="origin-doc-link">Firefox Origin Telemetry</a> yn amgodio data cyn iddo gael ei anfon fel bod { $telemetryServerOwner } yn gallu cyfrif pethau, ond heb wybod a yw { -brand-product-name } wedi cyfrannu i'r cyfrif hwnnw. (<a data-l10n-name="prio-blog-link">Dysgu rhagor</a>)
+# Variables:
+#  $process (String): type of process in subsection headers ( e.g. "content", "parent" )
+about-telemetry-process = Proses { $process }

@@ -35,8 +35,15 @@ app-basics-name = Namme
 app-basics-version = Ferzje
 app-basics-build-id = Build-ID
 app-basics-update-channel = Fernijingskanaal
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] Map fernije
+       *[other] Map fernije
+    }
 app-basics-update-history = Fernijingsskiednis
 app-basics-show-update-history = Fernijingsskiednis toane
+# Represents the path to the binary used to start the application.
+app-basics-binary = Binêr tapassingsbestân
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Profylmap
@@ -82,6 +89,8 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Beslútloch
 graphics-crash-guards-title = Utskeakele funksjes fan ûngelokbeskerming
 graphics-workarounds-title = Workarounds
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Finsterprotokol
 place-database-title = Places-database
 place-database-integrity = Yntegriteit
 place-database-verify-integrity = Yntegriteit ferifearje
@@ -199,6 +208,7 @@ gpu-device-id = Apparaat-ID
 gpu-subsys-id = Subsysteem-ID
 gpu-drivers = Stjoerprogramma’s
 gpu-ram = RAM
+gpu-driver-vendor = Leveransier fan stjoerprogramma
 gpu-driver-version = Stjoerprogrammaferzje
 gpu-driver-date = Datum fan stjoerprogramma
 gpu-active = Aktyf

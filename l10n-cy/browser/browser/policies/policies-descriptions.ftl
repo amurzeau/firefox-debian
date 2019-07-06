@@ -53,6 +53,7 @@ policy-EnableTrackingProtection = Galluogi neu analluogi Rhwystro Cynnwys ac o d
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
 policy-Extensions = Gosod, dadosod neu gloi estyniadau. Mae'r dewis gosod yn cymryd URL neu lwybrau fel paramedrau. Mae'r dewisiadau Dadosod a Chloi yn cymryd dynodiad estyniadau.
+policy-ExtensionSettings = Rheoli pob agwedd o osod estyniad.
 policy-ExtensionUpdate = Galluogi neu analluogi diweddaru estyniadau'n awtomatig.
 policy-FirefoxHome = Ffurfweddu Firefox Home.
 policy-FlashPlugin = Caniatáu neu wrthod defnydd o'r ychwanegyn Flash.
@@ -76,7 +77,7 @@ policy-RequestedLocales = Gosodwch y rhestr o locales gofynnol ar gyfer y rhagle
 policy-SanitizeOnShutdown = Clirio'r holl ddata llywio wrth adael
 policy-SanitizeOnShutdown2 = Clirio data llywio wrth gau.
 policy-SearchBar = Gosod y lleoliad ragosodedig y bar chwilio. Mae'r defnyddiwr dal yn cael ei gyfaddasu.
-policy-SearchEngines = Ffurfweddu gosodiadau peiriannau chwilio. Dim ond yn y fersiwn Extended Support Release (ESR) ma'r polisi hwn ar gael.
+policy-SearchEngines = Ffurfweddu gosodiadau peiriannau chwilio. Dim ond yn y fersiwn Extended Support Release (ESR) mae'r polisi hwn ar gael.
 policy-SearchSuggestEnabled = Galluogi neu analluogi awgrymiadau chwilio.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Gosod modiwlau PKCS #11.

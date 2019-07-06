@@ -95,7 +95,7 @@ detail-update-manual =
 detail-private-browsing-label = Eipuru ovetã ñemíme
 detail-private-browsing-description2 = Oñemoneĩ vove, pe jepysokue ikatu oike hembiapo ñandutiguápe oikundaha ñeminguévo. <label data-l10n-name="detail-private-browsing-learn-more">Eikuaave</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = Noñemoneĩri ovetã ñemíme
 detail-private-disallowed-description = Ko jepysokue nomba’apói eikundaha ñemigua jave. <label data-l10n-name="detail-private-browsing-learn-more">Eikuaave</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
@@ -157,6 +157,9 @@ private-browsing-description2 =
 extensions-view-discover =
     .name = Moĩmbaha rupity
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Je’eporã
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Ñembohekopyahu ramovéva
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -237,7 +240,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Eñangareko jepysokue jeike pya’eha rehe
     .accesskey = S
-shortcuts-empty-message = Ndaipóri mbopya'eha ko jepysokuépe g̃uarã.
 shortcuts-no-addons = Ndoguerekói jepysokue ijurujáva.
 shortcuts-no-commands = Ko’ã jepysokue ndoguerekói jeike pya’eha:
 shortcuts-input =
@@ -250,6 +252,10 @@ shortcuts-modifier-other = Emoinge Ctrl or Alt
 shortcuts-invalid = Ñembojopyru ndoikóiva
 shortcuts-letter = Ehai peteĩ tai
 shortcuts-system = Ndaikatúi eipe’a peteĩ mbopya’eha { -brand-short-name } mba’éva
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Oipurúma { $addon }
 shortcuts-card-expand-button =
     { $numberToShow ->
         [one] Ehechave { $numberToShow }
@@ -259,20 +265,104 @@ shortcuts-card-collapse-button = Ehechauka'ive
 go-back-button =
     .tooltiptext = Guevijey
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro = Umi jepysokue ha téma ha’e tembipuru’i kundahápe g̃uarã ha omo’ã ñe’ẽñemi, ta’ãngamýi ñemboguejy, joguarã jejuhu, maranduñemurã jejoko, kundahára rova ñemoambue ha hetave mba’e. Mbohapyhaguáva hetave jey umi omoheñóiva software. Rome’ẽ jeporavorã { -brand-product-name } <a data-l10n-name="learn-more-trigger">je’eporãpy</a> tekorosãme, apopyre ha tembiaporape ijojaha’ỹva.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations = Heta ko’ã ñe’ẽporã ha’e ñemomba’epyre. Ojehecha ambue jepysokue ñemohendapyre, ne mba’ete erohoryvéva ha ijepurukue.
+discopane-notice-learn-more = Kuaave
+privacy-policy = Temiñemi purureko
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = <a data-l10n-name="author">{ $author }</a> rupi
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Puruhára: { $dailyUsers }
+install-extension-button = Embojuaju { -brand-product-name }
+install-theme-button = Emohenda téma
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Ñangareko
+find-more-addons = Ehekave moimbaha
+
 ## Add-on actions
 
+report-addon-button = Momarandu
 remove-addon-button = Mboguete
 disable-addon-button = Pe'a
 enable-addon-button = Mbojuruja
 expand-addon-button = Jeporavorãve
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Jerohoryvéva
+       *[other] Jeporavorã
+    }
+details-addon-button = Mba'emimi
+release-notes-addon-button = Jehaipy rehegua
+permissions-addon-button = Moneĩ
 addons-enabled-heading = Mbojurujapyre
 addons-disabled-heading = Pe'apyre
+ask-to-activate-button = Eporandu emyandy hag̃ua
+always-activate-button = Emyandy tapia
+never-activate-button = Ani emyandy araka'eve
 addon-detail-author-label = Apohára
 addon-detail-version-label = Peteĩchagua
 addon-detail-last-updated-label = Mbohekopyahu paha
 addon-detail-homepage-label = Kuatiarogue ñepyrũha
 addon-detail-rating-label = Jeporavopy
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Mbopapapyre { NUMBER($rating, maximumFractionDigits: 1) } 5 peve
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
 addon-name-disabled = { $name } (jepe'apyre)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } jehechajey
+       *[other] { $numberOfReviews } jehechajey
+    }
+
+## Pending uninstall message bar
+
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = Oñemboguete <span data-l10n-name="addon-name">{ $addon }</span>.
+pending-uninstall-undo-button = Mboguevi
+addon-detail-updates-label = Emoneĩ mbohekopyahu ijeheguíva
+addon-detail-updates-radio-default = Ijypykue
+addon-detail-updates-radio-on = Hendypyre
+addon-detail-updates-radio-off = Mbogue
+addon-detail-update-check-label = Eheka mohekopyahu
+install-update-button = Mohekopyahu
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Emoneĩ ovetã ñemíme
+addon-detail-private-browsing-help = Hendy jave, pe jepysokue ikatu oike ejapóva guivépe eikundaha ñemi aja. <a data-l10n-name="learn-more">Eikuaave</a>
+addon-detail-private-browsing-allow = Moneĩ
+addon-detail-private-browsing-disallow = Ani emoneĩ
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Je'eporãpyre
+    .alt = Je'eporãpyre
+available-updates-heading = Ñembohekopyahu eipurukuaáva
+recent-updates-heading = Mohekopyahu ramoveguáva
+release-notes-loading = Henyhẽhína…
+release-notes-error = Rombyasy, hákatu oiko jejavy henyhẽnguévo jehaipy rehegua.
+addon-permissions-empty = Ko jepysokue noikotevẽi ñemoneĩ
+recommended-extensions-heading = Jepysokue je’eporãpyre
+recommended-themes-heading = Téma je’eporãpyre
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = ¿Emoheñoisépa? <a data-l10n-name="link">Emoheñoi ne temarã Firefox Color ndive.</a>

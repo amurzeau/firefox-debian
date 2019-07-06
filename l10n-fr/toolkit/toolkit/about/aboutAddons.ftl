@@ -97,7 +97,7 @@ detail-update-manual =
 detail-private-browsing-label = Exécution dans les fenêtres privées
 detail-private-browsing-description2 = Si autorisée, l’extension aura accès à vos activités en ligne pendant la navigation privée. <label data-l10n-name="detail-private-browsing-learn-more">En savoir plus</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = Non autorisé dans les fenêtres privées
 detail-private-disallowed-description = Cette extension ne s’exécute pas en navigation privée. <label data-l10n-name="detail-private-browsing-learn-more">En savoir plus</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
@@ -270,6 +270,9 @@ go-back-button =
 
 ## Recommended add-ons page
 
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro = Les extensions et les thèmes sont comme des applications pour votre navigateur qui vous permettent de protéger vos mots de passe, télécharger des vidéos, trouver de bonnes affaires, bloquer les publicités gênantes, changer l’apparence de votre navigateur, etc. Ces petits logiciels sont souvent produits par des développeurs tiers. Voici une sélection que { -brand-product-name } <a data-l10n-name="learn-more-trigger">recommande</a> pour une sécurité, des performances et des fonctionnalités poussées.
 # Notice to make user aware that the recommendations are personalized.
 discopane-notice-recommendations = Certaines de ces recommandations sont personnalisées. Cette sélection se fonde sur d’autres extensions que vous avez installées, les préférences de votre profil et les statistiques d’utilisation.
 discopane-notice-learn-more = En savoir plus
@@ -296,6 +299,14 @@ remove-addon-button = Supprimer
 disable-addon-button = Désactiver
 enable-addon-button = Activer
 expand-addon-button = Plus d’options
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Options
+       *[other] Préférences
+    }
+details-addon-button = Détails
+release-notes-addon-button = Notes de version
+permissions-addon-button = Permissions
 addons-enabled-heading = Activé
 addons-disabled-heading = Désactivé
 ask-to-activate-button = Demander pour activer
@@ -340,7 +351,21 @@ install-update-button = Mettre à jour
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed =
     .title = Autorisé dans les fenêtres privées
+addon-detail-private-browsing-help = Lorsqu’elle est autorisée, l’extension a accès à vos activités en ligne lors d’une navigation privée. <a data-l10n-name="learn-more">En savoir plus</a>
 addon-detail-private-browsing-allow = Autoriser
 addon-detail-private-browsing-disallow = Ne pas autoriser
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Recommandée
+    .alt = Recommandée
 available-updates-heading = Mises à jour disponibles
 recent-updates-heading = Mises à jour récentes
+release-notes-loading = Chargement…
+release-notes-error = Désolé, une erreur s’est produite lors du chargement des notes de version.
+addon-permissions-empty = Cette extension ne nécessite aucune autorisation
+recommended-extensions-heading = Extensions recommandées
+recommended-themes-heading = Thèmes recommandés
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Vous avez la fibre créative ? <a data-l10n-name="link">Créez votre propre thème avec Firefox Color.</a>

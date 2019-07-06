@@ -34,6 +34,7 @@ policies-notice =
         [windows] Vaša organizacija vam je onemogočila spreminjanje nekaterih možnosti.
        *[other] Vaša organizacija vam je onemogočila spreminjanje nekaterih nastavitev.
     }
+managed-notice = Vaš brskalnik upravlja vaša organizacija.
 pane-general-title = Splošno
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = Zasebnost in varnost
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Firefox Račun
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -299,6 +296,21 @@ update-pref-write-failure-title = Napaka pri pisanju
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Nastavitve ni bilo mogoče shraniti. Ni bilo mogoče pisati v datoteko: { $path }
+update-setting-write-failure-title = Napaka pri shranjevanju nastavitev posodobitve
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    { -brand-short-name } je naletel na napako in te spremembe ni shranil. Upoštevajte, da takšna nastavitev posodobitev zahteva dovoljenje za pisanje v spodnjo datoteko. Napako lahko morda odpravite sami ali vaš skrbnik sistema, tako da skupini Users omogoči popoln dostop do te datoteke.
+    
+    Ni mogoče pisati v datoteko: { $path }
+update-in-progress-title = Posodobitev v teku
+update-in-progress-message = Želite, da { -brand-short-name } nadaljuje s to posodobitvijo?
+update-in-progress-ok-button = &Opusti
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Nadaljuj
 
 ## General Section - Performance
 
@@ -534,8 +546,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Shrani
     .accesskey = S
-sync-mobilepromo-single = Poveži drugo napravo
-sync-mobilepromo-multi = Upravljanje naprav
 sync-connect-another-device = Poveži drugo napravo
 sync-manage-devices = Upravljanje naprav
 sync-fxa-begin-pairing = Seznani napravo
@@ -555,6 +565,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Izjeme …
     .accesskey = i
+forms-generate-passwords =
+    .label = Predlagaj in ustvarjaj močna gesla
+    .accesskey = u
 forms-saved-logins =
     .label = Shranjene prijave …
     .accesskey = H
@@ -693,7 +706,6 @@ content-blocking-all-third-party-cookies = Vse piškotke tretjih strani
 content-blocking-cryptominers = Kriptorudarje
 content-blocking-fingerprinters = Sledilce prstnih odtisov
 content-blocking-warning-title = Opozorilo!
-content-blocking-warning-desc = Zavračanje piškotkov in sledilcev lahko povzroči nedelovanje nekaterih spletnih strani. Za strani, ki jim zaupate, lahko enostavno onemogočite zavračanje.
 content-blocking-warning-description = Zavračanje vsebine lahko povzroči nedelovanje nekaterih spletnih mest. Zavračanje vsebine strani, ki jim zaupate, lahko enostavno onemogočite.
 content-blocking-learn-how = Naučite se, kako
 content-blocking-reload-description = Za uveljavitev sprememb boste morali znova naložiti zavihke.
@@ -760,6 +772,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Izjeme …
     .accesskey = I
+permissions-autoplay = Samodejno predvajanje
+permissions-autoplay-settings =
+    .label = Nastavitve …
+    .accesskey = t
 permissions-block-popups =
     .label = Prepovej pojavna okna
     .accesskey = r

@@ -25,7 +25,7 @@ policy-DefaultDownloadDirectory = Definir o diretório de download padrão.
 policy-DisableAppUpdate = Impedir a atualização do navegador.
 policy-DisableBuiltinPDFViewer = Desativar o PDF.js, o visualizador de PDF integrado no { -brand-short-name }.
 policy-DisableDeveloperTools = Bloquear acesso às ferramentas do desenvolvedor.
-policy-DisableFeedbackCommands = Desativar comandos de envio de comentários no menu Ajuda (Enviar opinião e Denunciar site malicioso).
+policy-DisableFeedbackCommands = Desativar comandos de envio de comentários no menu Ajuda (Enviar opinião e Denunciar site enganoso).
 policy-DisableFirefoxAccounts = Desativar serviços baseados em { -fxaccount-brand-name }, incluindo o Sync.
 # Firefox Screenshots is the name of the feature, and should not be translated.
 policy-DisableFirefoxScreenshots = Desativar o recurso de captura de tela do Firefox.
@@ -53,6 +53,7 @@ policy-EnableTrackingProtection = Ativar ou desativar o bloqueio de conteúdo e,
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
 policy-Extensions = Instalar, desinstalar e bloquear extensões. A opção “Instalar” recebe URLs ou caminhos como parâmetros. As opções “Desinstalar” e "Bloqueado" usam IDs de extensões.
+policy-ExtensionSettings = Gerenciar todos os aspectos da instalação de extensões.
 policy-ExtensionUpdate = Ativar ou desativar atualizações automáticas de extensões.
 policy-FirefoxHome = Configurar a página inicial do Firefox.
 policy-FlashPlugin = Permitir ou negar o uso do plugin Flash.
@@ -64,7 +65,7 @@ policy-LocalFileLinks = Permitir que sites específicos tenham links para arquiv
 policy-NetworkPrediction = Ativar ou desativar predição de rede (carregamento antecipado de DNS).
 policy-NewTabPage = Ativar ou desativar a página de nova aba.
 policy-NoDefaultBookmarks = Desativar a criação de favoritos padrões empacotados com o { -brand-short-name }, além dos favoritos inteligente (mais visitados e etiquetas recentes). Nota: esta política somente é efetiva se usada antes da primeira execução do perfil.
-policy-OfferToSaveLogins = Impor as configurações para permitir que o { -brand-short-name } ofereça lembrar logins e senhas salvas. Tanto "true" como "false" são valores aceitos.
+policy-OfferToSaveLogins = Impor as configurações para permitir que o { -brand-short-name } ofereça memorizar contas de acesso e senhas salvas. Tanto "true" como "false" são valores aceitos.
 policy-OverrideFirstRunPage = Substituir a página de primeira execução. Defina esta política como vazio se quiser desativar a página de primeira execução.
 policy-OverridePostUpdatePage = Substituir a página “Novidades” exibida após uma atualização. Defina esta política como vazio se quiser desativar a exibição de uma página após atualizações.
 policy-Permissions = Configurar permissões para câmera, microfone, localização e notificações.
@@ -76,7 +77,7 @@ policy-RequestedLocales = Definir a lista de idiomas solicitados para a aplicaç
 policy-SanitizeOnShutdown = Limpar todos os dados de navegação ao desligar.
 policy-SanitizeOnShutdown2 = Limpar dados de navegação ao fechar.
 policy-SearchBar = Definir a localização padrão da barra de pesquisa. O usuário ainda pode personalizar tal localização.
-policy-SearchEngines = Definir as configurações do mecanismo de pesquisa. Esta política está disponível somente na versão Extended Support Release (ESR).
+policy-SearchEngines = Definir configurações de mecanismos de pesquisa. Esta política está disponível somente na versão Extended Support Release (ESR).
 policy-SearchSuggestEnabled = Ativar ou desativar sugestões de pesquisa.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Instalar módulos PKCS #11.

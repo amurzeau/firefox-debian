@@ -3,12 +3,47 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-## UI strings for the simplified onboarding modal
+### UI strings for the simplified onboarding modal / about:welcome
+### Various strings use a non-breaking space to avoid a single dangling /
+### widowed word, so test on various window sizes if you also want this.
 
+
+## These button action text can be split onto multiple lines, so use explicit
+## newlines in translations to control where the line break appears (e.g., to
+## avoid breaking quoted text).
+
+onboarding-button-label-learn-more = Daha fazla bilgi al
 onboarding-button-label-try-now = Hemen deneyin
 onboarding-button-label-get-started = Başlayalım
+
+## Welcome modal dialog strings
+
 onboarding-welcome-header = { -brand-short-name } tarayıcısına hoş geldiniz
+onboarding-welcome-body = Tarayıcınız hazır.<br/>Ama { -brand-product-name } yalnızca bir tarayıcı değil.
+onboarding-welcome-learn-more = Avantajlar hakkında daha fazla bilgi alın.
+onboarding-join-form-header = { -brand-product-name }’a katılın
+onboarding-join-form-body = Başlamak için e-posta adresinizi yazın.
+onboarding-join-form-email =
+    .placeholder = E-postanızı yazın
+onboarding-join-form-email-error = Geçerli bir e-posta gerekiyor
+onboarding-join-form-legal = Devam ederseniz <a data-l10n-name="terms">Hizmet Koşulları</a>’nı ve <a data-l10n-name="privacy">Gizlilik Bildirimi</a>’ni kabul etmiş olursunuz.
+onboarding-join-form-continue = Devam et
 onboarding-start-browsing-button-label = Gezinmeye başla
+
+## These are individual benefit messages shown with an image, title and
+## description.
+
+onboarding-benefit-products-title = Kullanışlı ürünler
+onboarding-benefit-products-text = Tüm cihazlarınızda gizliliğinize saygı gösteren araçlarımızla her işinizi halledin.
+onboarding-benefit-knowledge-title = Pratik bilgi
+onboarding-benefit-knowledge-text = İnterneti anlamak ve internette güvende kalmak için bilmeniz gereken her şeyi öğrenin.
+onboarding-benefit-privacy-title = Gerçek gizlilik
+# "Personal Data Promise" is a concept that should be translated consistently
+# across the product. It refers to a concept shown elsewhere to the user: "The
+# Firefox Personal Data Promise is the way we honor your data in everything we
+# make and do. We take less data. We keep it safe. And we make sure that we are
+# transparent about how we use it."
+onboarding-benefit-privacy-text = Yaptığımız her şeyde Kişisel Veri Sözümüzü tutmaya ant içtik: Daha az veri topla. Güvenle sakla. Sır tutma.
 
 ## These strings belong to the individual onboarding messages.
 
@@ -28,6 +63,35 @@ onboarding-ghostery-text = Sinir bozucu reklamları engellemenize izin veren Gho
 # Note: "Sync" in this case is a generic verb, as in "to synchronize"
 onboarding-fxa-title = Eşitle
 onboarding-fxa-text = Yer imlerinizi, parolalarınızı ve açık sekmelerinizi { -brand-short-name } kullandığınız tüm cihazlarınızla eşitlemek için { -fxaccount-brand-name } açın.
+onboarding-tracking-protection-title2 = İzlenme koruması
+onboarding-tracking-protection-text2 = { -brand-short-name } web sitelerinin internette sizi izlemesini engeller, reklamların hangi sitelerde gezdiğinizi takip etmesini zorlaştırır.
+onboarding-tracking-protection-button2 = Nasıl çalışır?
+onboarding-data-sync-title = Ayarlarınızı yanınızda taşıyın
+# "Sync" is short for synchronize.
+onboarding-data-sync-text2 = Yer imlerinizi, parolalarınızı ve daha fazlasını { -brand-product-name } kullandığınız her yerde senkronize edin.
+onboarding-data-sync-button2 = { -sync-brand-short-name }’e giriş yap
+onboarding-firefox-monitor-title = Veri ihlallerinden haberiniz olsun
+onboarding-firefox-monitor-text = { -monitor-brand-name }, e-posta adresinizin veri ihlallerinde yer alıp almadığını takip eder ve verilerinizin çalındığını tespit ederse sizi uyarır.
+onboarding-firefox-monitor-button = Uyarılara kaydolun
+onboarding-browse-privately-title = Gizlice dolaşın
+onboarding-browse-privately-text = Gizli Gezinti, arama ve gezinti geçmişinizi temizleyerek bilgisayarınızı kullanan başkalarının ne yaptığınızı öğrenmesini önler.
+onboarding-browse-privately-button = Gizli pencere aç
+onboarding-firefox-send-title = Paylaştığınız dosyalar gizli kalsın
+onboarding-firefox-send-text2 = Dosyalarınızı uçtan uca şifreleme ve otomatik olarak kendini imha eden bir linkle paylaşmak için { -send-brand-name }’i kullanın.
+onboarding-firefox-send-button = { -send-brand-name }’i dene
+onboarding-mobile-phone-title = { -brand-product-name } tarayıcısını telefonunuza yükleyin
+onboarding-mobile-phone-text = iOS veya Android için { -brand-product-name } tarayıcısını yükleyin, verilerinize tüm cihazlarınızdan ulaşın.
+# "Mobile" is short for mobile/cellular phone, "Browser" is short for web
+# browser.
+onboarding-mobile-phone-button = Mobil tarayıcıyı indir
+onboarding-send-tabs-title = Kendinize sekme gönderin
+# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
+# tab's context menu.
+onboarding-send-tabs-text = Sekme Gönder özelliğiyle, kopyala-yapıştır yapmadan ve tarayıcınızdan ayrılmadan cihazlarınızdan arasında anında sekme paylaşabilirsiniz.
+onboarding-send-tabs-button = Sekme Gönder’i kullanma başla
+onboarding-lockwise-passwords-button2 = Uygulamayı indir
+onboarding-facebook-container-title = Facebook’un sınırlarını belirleyin
+onboarding-facebook-container-button = Eklentiyi yükle
 
 ## Message strings belonging to the Return to AMO flow
 

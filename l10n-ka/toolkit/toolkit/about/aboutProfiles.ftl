@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 profiles-title = პროფილების შესახებ
-profiles-subtitle = ეს გვერდი გეხმარებათ თქვენი პროფილების მართვაში. თითოეული პროფილი განცალკევებული სამყაროა, რომელიც შეიცავს განცალკევებულ ისტორიას, სანიშნებს, პარამეტრებს და დამატებებს.
+profiles-subtitle = ეს გვერდი გეხმარებათ თქვენი პროფილების მართვაში. თითოეული პროფილი განცალკევებული სამყაროა, რომელიც შეიცავს განცალკევებულ ისტორიას, სანიშნებს, პარამეტრებსა და დამატებებს.
 profiles-create = ახალი პროფილის შექმნა
 profiles-restart-title = ხელახლა გაშვება
 profiles-restart-in-safe-mode = ხელახლა გაშვება გამორთული დამატებებით…
@@ -32,7 +32,7 @@ profiles-remove = მოცილება
 profiles-set-as-default = ნაგულისხმევ პროფილად დაყენება
 profiles-launch-profile = პროფილის გაშვება ახალ ბრაუზერში
 profiles-cannot-set-as-default-title = ნაგულისხმევად დაყენება ვერ ხერხდება
-profiles-cannot-set-as-default-message = ნაგულისხმევი პროფილი ვერ შეიცვლება { -brand-short-name }-ისთვის.
+profiles-cannot-set-as-default-message = ნაგულისხმევი პროფილი რომელსაც { -brand-short-name } იყენებს, ვერ შეიცვლება.
 profiles-yes = დიახ
 profiles-no = არა
 profiles-rename-profile-title = პროფილის გადარქმევა

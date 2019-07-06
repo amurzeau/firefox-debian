@@ -100,7 +100,7 @@ detail-update-manual =
 detail-private-browsing-label = Εκτέλεση σε ιδιωτικά παράθυρα
 detail-private-browsing-description2 = Αν της επιτραπεί, αυτή η επέκταση θα έχει πρόσβαση στις διαδικτυακές σας δραστηριότητες κατά την ιδιωτική περιήγηση. <label data-l10n-name="detail-private-browsing-learn-more">Μάθετε περισσότερα</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = Δεν επιτρέπεται στα ιδιωτικά παράθυρα
 detail-private-disallowed-description = Αυτή η επέκταση δεν εκτελείται κατά την ιδιωτική περιήγηση. <label data-l10n-name="detail-private-browsing-learn-more">Μάθετε περισσότερα</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
@@ -162,6 +162,9 @@ private-browsing-description2 =
 extensions-view-discover =
     .name = Λήψη προσθέτων
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Προτάσεις
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Πρόσφατες ενημερώσεις
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -242,7 +245,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Διαχείριση συντομεύσεων επέκτασης
     .accesskey = σ
-shortcuts-empty-message = Δεν υπάρχουν συντομεύσεις για αυτή την επέκταση.
 shortcuts-no-addons = Δεν έχετε ενεργοποιήσει καμία επέκταση.
 shortcuts-no-commands = Οι εξής επεκτάσεις δεν έχουν συντομεύσεις:
 shortcuts-input =
@@ -268,19 +270,68 @@ shortcuts-card-collapse-button = Εμφάνιση λιγότερων
 go-back-button =
     .tooltiptext = Επιστροφή
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    Οι επεκτάσεις και τα θέματα είναι σαν εφαρμογές για το πρόγραμμα περιήγησής σας και σας επιτρέπουν
+    να προστατεύετε τους κωδικούς πρόσβασής σας, να κάνετε λήψη βίντεο, να βρίσκετε προσφορές, να αποκλείσετε ενοχλητικές διαφημίσεις, να αλλάξετε
+    την εμφάνιση του προγράμματος περιήγησής σας και πολλά άλλα. Αυτά τα μικρά προγράμματα
+    αναπτύσσονται συνήθως από τρίτους. Ορίστε μια συλλογή που το { -brand-product-name }
+    <a data-l10n-name="learn-more-trigger">προτείνει</a> για εξαιρετική
+    ασφάλεια, επιδόσεις και λειτουργικότητα.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations =
+    Μερικές από αυτές τις προτάσεις είναι εξατομικευμένες. Βασίζονται σε άλλες
+    επεκτάσεις που έχετε εγκαταστήσει, σε προτιμήσεις προφίλ και σε στατιστικά χρήσης.
+discopane-notice-learn-more = Μάθετε περισσότερα
+privacy-policy = Πολιτική απορρήτου
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = από <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Χρήστες: { $dailyUsers }
+install-extension-button = Προσθήκη στο { -brand-product-name }
+install-theme-button = Εγκατάσταση θέματος
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Διαχείριση
+find-more-addons = Εύρεση περισσότερων προσθέτων
+
 ## Add-on actions
 
+report-addon-button = Αναφορά
 remove-addon-button = Αφαίρεση
 disable-addon-button = Απενεργοποίηση
 enable-addon-button = Ενεργοποίηση
 expand-addon-button = Περισσότερες επιλογές
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Επιλογές
+       *[other] Προτιμήσεις
+    }
+details-addon-button = Λεπτομέρειες
+release-notes-addon-button = Σημειώσεις έκδοσης
+permissions-addon-button = Δικαιώματα
 addons-enabled-heading = Ενεργό
 addons-disabled-heading = Ανενεργό
+ask-to-activate-button = Ερώτηση για ενεργοποίηση
+always-activate-button = Πάντα ενεργοποιημένο
+never-activate-button = Ποτέ ενεργοποιημένο
 addon-detail-author-label = Δημιουργός
 addon-detail-version-label = Έκδοση
 addon-detail-last-updated-label = Τελευταία ενημέρωση
 addon-detail-homepage-label = Αρχική σελίδα
 addon-detail-rating-label = Βαθμολογία
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Με βαθμό { NUMBER($rating, maximumFractionDigits: 1) } από 5
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -293,3 +344,38 @@ addon-detail-reviews-link =
         [one] { $numberOfReviews } κριτική
        *[other] { $numberOfReviews } κριτικές
     }
+
+## Pending uninstall message bar
+
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = Το <span data-l10n-name="addon-name">{ $addon }</span> έχει αφαιρεθεί.
+pending-uninstall-undo-button = Αναίρεση
+addon-detail-updates-label = Να επιτρέπονται αυτόματες ενημερώσεις
+addon-detail-updates-radio-default = Προεπιλογή
+addon-detail-updates-radio-on = Ενεργό
+addon-detail-updates-radio-off = Ανενεργό
+addon-detail-update-check-label = Έλεγχος για ενημερώσεις
+install-update-button = Ενημέρωση
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Επιτρέπεται σε ιδιωτικά παράθυρα
+addon-detail-private-browsing-help = Όταν επιτρέπεται, η επέκταση θα έχει πρόσβαση στις δραστηριότητές σας στο διαδίκτυο κατά την ιδιωτική περιήγηση. <a data-l10n-name="learn-more">Μάθετε περισσότερα</a>
+addon-detail-private-browsing-allow = Αποδοχή
+addon-detail-private-browsing-disallow = Απόρριψη
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Προτείνεται
+    .alt = Προτείνεται
+available-updates-heading = Διαθέσιμες ενημερώσεις
+recent-updates-heading = Πρόσφατες ενημερώσεις
+release-notes-loading = Φόρτωση...
+release-notes-error = Λυπούμαστε, αλλά προέκυψε σφάλμα φόρτωσης των σημειώσεων έκδοσης.
+addon-permissions-empty = Αυτή η επέκταση δεν απαιτεί δικαιώματα
+recommended-extensions-heading = Προτεινόμενες επεκτάσεις
+recommended-themes-heading = Προτεινόμενα θέματα
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Αισθάνεστε δημιουργικοί; <a data-l10n-name="link">Δημιουργήστε το δικό σας θέμα με το Firefox Color.</a>

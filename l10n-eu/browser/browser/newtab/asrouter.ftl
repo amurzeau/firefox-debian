@@ -53,3 +53,12 @@ cfr-doorhanger-pintab-step2 = Hautatu <b>Ainguratu fitxa</b> menu-aukera.
 cfr-doorhanger-pintab-step3 = Gunea eguneratzen bada, puntu urdin bat ikusiko duzu ainguratutako fitxan.
 cfr-doorhanger-pintab-animation-pause = Pausatu
 cfr-doorhanger-pintab-animation-resume = Berrekin
+
+## Firefox Accounts Message
+
+cfr-doorhanger-bookmark-fxa-header = Sinkronizatu laster-markak edonon.
+cfr-doorhanger-bookmark-fxa-body = Ondo ikusia! Orain ez galdu laster-marka hau zure gailu mugikorretan. Hasi { -fxaccount-brand-name } erabiltzen.
+cfr-doorhanger-bookmark-fxa-link-text = Sinkronizatu laster-markak orain…
+cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
+    .aria-label = Ixteko botoia
+    .title = Itxi

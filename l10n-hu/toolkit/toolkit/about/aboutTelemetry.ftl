@@ -15,6 +15,7 @@ about-telemetry-option-group-older = Régebbi
 about-telemetry-previous-ping = <<
 about-telemetry-next-ping = <i>
 about-telemetry-page-title = Telemetriai adatok
+about-telemetry-current-store = Jelenlegi bolt:
 about-telemetry-more-information = Több információt keres?
 about-telemetry-firefox-data-doc = A <a data-l10n-name="data-doc-link">Firefox adatok dokumentáció</a> útmutatókat tartalmaz arról, hogyan dolgozzon az adateszközeinkkel.
 about-telemetry-telemetry-client-doc = A <a data-l10n-name="client-doc-link">Firefox telemetria ügyfél dokumentáció</a> fogalomdefiníciókat, API dokumentációkat és adathivatkozásokat tartalmaz.
@@ -141,3 +142,6 @@ about-telemetry-origin-count = darabszám
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-origins-explanation = A <a data-l10n-name="origin-doc-link">Firefox eredettel kapcsolatos telemetria</a> kódolja az adatokat az elküldés előtt, így a { $telemetryServerOwner } csak összeszámolhat dolgokat, de nem tudja, hogy pontosan mely { -brand-product-name } járult hozzá ahhoz a számhoz. (<a data-l10n-name="prio-blog-link">további információk</a>)
+# Variables:
+#  $process (String): type of process in subsection headers ( e.g. "content", "parent" )
+about-telemetry-process = { $process } folyamat

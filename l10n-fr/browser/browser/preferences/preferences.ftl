@@ -34,6 +34,7 @@ policies-notice =
         [windows] Votre organisation a désactivé la possibilité de changer certaines options.
        *[other] Votre organisation a désactivé la possibilité de changer certaines préférences.
     }
+managed-notice = Votre navigateur est géré par votre organisation.
 pane-general-title = Général
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = Vie privée et sécurité
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Compte Firefox
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -293,6 +290,21 @@ update-pref-write-failure-title = Échec d’écriture
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Impossible d’enregistrer les préférences. Impossible d’écrire dans le fichier : { $path }
+update-setting-write-failure-title = Erreur lors de l’enregistrement des préférences de mise à jour
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    { -brand-short-name } a rencontré une erreur et n’a pas enregistré cette modification. Notez que modifier cette préférence de mise à jour nécessite la permission d’écriture pour le fichier ci-dessous. Vous, ou un administrateur système, pouvez peut-être corriger l’erreur en accordant au groupe Users l’accès complet à ce fichier.
+    
+    Écriture impossible dans le fichier : { $path }
+update-in-progress-title = Mise à jour en cours
+update-in-progress-message = Voulez-vous que { -brand-short-name } continue cette mise à jour ?
+update-in-progress-ok-button = &Abandonner
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Continuer
 
 ## General Section - Performance
 
@@ -528,8 +540,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Enregistrer
     .accesskey = E
-sync-mobilepromo-single = Connecter un autre appareil
-sync-mobilepromo-multi = Gérer les appareils
 sync-connect-another-device = Connecter un autre appareil
 sync-manage-devices = Gérer les appareils
 sync-fxa-begin-pairing = Associer un appareil
@@ -549,6 +559,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Exceptions…
     .accesskey = x
+forms-generate-passwords =
+    .label = Suggérer et créer des mots de passe robustes
+    .accesskey = u
 forms-saved-logins =
     .label = Identifiants enregistrés…
     .accesskey = I
@@ -687,7 +700,6 @@ content-blocking-all-third-party-cookies = Tous les cookies tiers
 content-blocking-cryptominers = Mineurs de cryptomonnaies
 content-blocking-fingerprinters = Détecteurs d’empreinte numérique
 content-blocking-warning-title = Attention !
-content-blocking-warning-desc = Bloquer les cookies et les traqueurs peut empêcher certains sites de fonctionner. Vous pouvez facilement désactiver le blocage pour les sites en lesquels vous avez confiance.
 content-blocking-warning-description = Le blocage de contenu peut empêcher certains sites de fonctionner. Vous pouvez facilement désactiver le blocage pour les sites en lesquels vous avez confiance.
 content-blocking-learn-how = Découvrez comment
 content-blocking-reload-description = Vous devrez actualiser vos onglets pour appliquer ces modifications.
@@ -754,6 +766,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Exceptions…
     .accesskey = x
+permissions-autoplay = Lecture automatique
+permissions-autoplay-settings =
+    .label = Paramètres…
+    .accesskey = P
 permissions-block-popups =
     .label = Bloquer les fenêtres popup
     .accesskey = B

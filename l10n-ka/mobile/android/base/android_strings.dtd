@@ -21,12 +21,15 @@
 <!ENTITY firstrun_data_message "ნაკლები მონაცემები, მეტი დანაზოგი">
 <!ENTITY firstrun_data_subtext2 "გამორთეთ გამოსახულებები ნებისმიერ საიტზე ნაკლები მონაცემის დასახარჯად.">
 <!ENTITY firstrun_sync_title "სინქრონიზაცია">
+<!ENTITY updatednewfirstrun_sync_title "ანგარიში">
 <!ENTITY firstrun_sync_message2 "განაგრძეთ იქიდან, სადაც გაჩერდით.">
-<!ENTITY firstrun_sync_subtext2 "გამოიყენეთ სინქრონიზაცია სანიშნების, პაროლების და &brandShortName;-ში დამახსოვრებული სხვა მონაცემების, ყველა მოწყობილობაზე გასაზიარებლად.">
+<!ENTITY firstrun_sync_subtext2 "გამოიყენეთ სინქრონიზაცია სანიშნების, პაროლებისა და სხვა მონაცემების, რომელთაც &brandShortName; ინახავს, ყველა მოწყობილობაზე გასაზიარებლად.">
 <!ENTITY newfirstrun_sync_subtext "დაასინქრონეთ ნებისმიერი რამ, რასაც შეინახავთ მობილურში, კომპიუტერის Firefox-ზე, უსაფრთხოდ და დაცულად.">
+<!ENTITY updatednewfirstrun_sync_subtext "შედით ანგარიშზე, რომ შეგეძლოთ სრულყოფილად გამოიყენოთ &brandShortName;">
 <!ENTITY firstrun_signin_message "დაუკავშირდით და დაიწყეთ">
 <!ENTITY firstrun_signin_button "Sync-ში შესვლა">
 <!ENTITY newfirstrun_signin_button "ჩართეთ Sync">
+<!ENTITY updatednewfirstrun_signin_button "შესვლა &brandShortName;">
 <!ENTITY  onboard_start_button_browser "დაიწყეთ მოგზაურობა ინტერნეტში">
 <!ENTITY firstrun_button_notnow "ახლა არა">
 <!ENTITY firstrun_button_next "შემდეგი">
@@ -67,12 +70,18 @@
 <!ENTITY  crash_close_label "დახურვა">
 <!ENTITY  crash_restart_label "ხელახლა გაეშვას &brandShortName;">
 
+<!-- Localization note (crash_notification_title, crash_notification_message, crash_notification_negative_button_text)
+     Text displayed in a system notification to allow starting the Crash Reporter (Android Q and later).-->
+<!ENTITY  crash_notification_title "&brandShortName; უეცრად გაითიშა">
+<!ENTITY  crash_notification_message "შეეხეთ, რომ ეცნობოს &vendorShortName;-ს">
+<!ENTITY  crash_notification_negative_button_text "უგულებელყოფა">
+
 <!ENTITY url_bar_default_text2 "მოძებნეთ ან შეიყვანეთ მისამართი">
 
 <!-- Localization note: this text will be displayed in the Search Widget -->
 <!ENTITY search_widget_default_text "ინტერნეტში ძიება">
 <!ENTITY search_widget_default_cropped_text "ძიება">
-<!ENTITY search_widget_logo_description "მოიძიეთ ინტერნეტში &brandShortName;-ით">
+<!ENTITY search_widget_logo_description "გამოიყენეთ &brandShortName; ვებსივრცეში ძიებისთვის">
 
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
@@ -108,6 +117,10 @@
 <!ENTITY bookmark_folder_updated "საქაღალდე განახლდა">
 <!ENTITY bookmark_parent_folder "საქაღალდე">
 <!ENTITY bookmark_add_folder "ახალი საქაღალდის დამატება">
+
+<!-- Localization note (bookmark_default_folder_title): Default title is used if user doesn't specify
+     one when he is creating a bookmark folder -->
+<!ENTITY bookmark_default_folder_title "(უსათაურო)">
 
 <!ENTITY reader_saved_offline "შენახულია კავშირგარეშე წვდომისთვის">
 <!-- Localization note (reader_switch_to_bookmarks) : This
@@ -413,8 +426,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY pref_private_data_downloadFiles2 "ჩამოტვირთვები">
 <!ENTITY pref_private_data_syncedTabs "დასინქრონებული ჩანართები">
 
-<!ENTITY pref_default_browser "ნაგულისხმევი ბრაუზერი">
-
 <!ENTITY pref_default_browser2 "გახადეთ &brandShortName; ნაგულისხმევი ბრაუზერი">
 <!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
     Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
@@ -429,7 +440,7 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY pref_dialog_default "ნაგულისხმევი">
 <!ENTITY pref_dialog_remove "წაშლა">
 <!ENTITY pref_dialog_activitystream_header_content "დამატებითი მასალა">
-<!ENTITY pref_dialog_activitystream_recentBookmarks "ბოლოს ჩანიშნულები">
+<!ENTITY pref_dialog_activitystream_recentBookmarks "ბოლოს ჩანიშნული">
 <!ENTITY pref_dialog_activitystream_visited "მონახულებული">
 
 <!ENTITY pref_search_last_toast "თქვენ არ შეგიძლიათ უკანასკნელი საძიებო სისტემის წაშლა ან გამორთვა.">
@@ -491,7 +502,7 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY share "გაზიარება">
 <!ENTITY share_title "გაზიარება -">
 <!ENTITY share_image_failed "ამ გამოსახულების გაზიარება ვერ ხერხდება">
-<!ENTITY save_as_pdf "შენახვა PDF ფორმატში">
+<!ENTITY save_as_pdf "შენახვა PDF-ფორმატში">
 <!ENTITY print "დაბეჭდვა">
 <!ENTITY view_page_source "გვერდის წყარო">
 <!ENTITY find_in_page "პოვნა გვერდზე">
@@ -592,6 +603,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_keyword "საკვანძო სიტყვა">
 <!ENTITY bookmark_select_folder "საქაღალდის მითითება">
 
+<!ENTITY bookmark_edit_undo "დაბრუნება">
+
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
      dialog that appears after selecting the "Edit Site Settings" context menu item. -->
 <!ENTITY site_settings_title3       "საიტის პარამეტრები">
@@ -679,6 +692,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY filepicker_audio_title "ხმოვანი სიგნალის შერჩევა ან ჩაწერა">
 <!ENTITY filepicker_image_title "ფოტოს შერჩევა ან გადაღება">
 <!ENTITY filepicker_video_title "ვიდეოს შერჩევა ან ჩაწერა">
+
+<!ENTITY filepicker_permission_denied "მოთხოვნილი ნებართვები უარყოფილია, დაბრუნება ფაილების სისტემურ შემრჩევში.">
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "თქვენ კავშირზე ხართ დომენთან">
@@ -934,3 +949,4 @@ Picture-in-picture mini window -->
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
 web sites through the HTML Notifications API. -->
 <!ENTITY site_notifications_channel "საიტის შეტყობინებები">
+<!ENTITY crash_handler_notifications_channel "&brandShortName; – უეცარი გათიშვების მომხსენებელი">

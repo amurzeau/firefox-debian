@@ -24,6 +24,7 @@ list-empty-button =
 install-addon-from-file =
     .label = ایڈ اون مسل سے تنصیب کریں...
     .accesskey = ت
+help-button = ایڈ اون ہمایت کردہ
 preferences =
     { PLATFORM() ->
         [windows] { -brand-short-name } اختیارات
@@ -76,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = آخری تازہ کاری
 detail-contributions-description = اس ایڈ اون کا ڈیولپر آپ سے درخواست کرتا ہے کہ آپ اس کی جاری تکمیل کاری کو کچھ مدد دے کر اس کی معاونت کریں۔
+detail-contributions-button = تعاون کریں
+    .title = اس ایڈ اون کے ڈیولپمینٹ میں تعاون کریں
+    .accesskey = C
 detail-update-type =
     .value = خودکار تازہ کاریاں
 detail-update-default =
@@ -205,3 +209,21 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = تازہ کاریاں تنصیب کریں
     .tooltiptext = اس فہرست میں دستیاب تازہ کاریاں تنصیب کریں
+
+## Extension shortcut management
+
+
+## Recommended add-ons page
+
+
+## Add-on actions
+
+disable-addon-button = غیر فعال
+enable-addon-button = فعال
+addons-enabled-heading = فعال
+addons-disabled-heading = غیر فعال
+
+## Pending uninstall message bar
+
+addon-detail-updates-radio-on = آن کریں
+addon-detail-updates-radio-off = بند کریں

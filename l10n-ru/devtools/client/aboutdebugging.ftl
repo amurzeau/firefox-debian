@@ -82,11 +82,10 @@ about-debugging-refresh-usb-devices-button = Обновить список ус�
 about-debugging-setup-title = Настройка
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Выберите метод подключения, с помощью которого вы хотите удалённо отлаживать ваше устройство.
-# Link displayed in the Setup page that leads to MDN page with list of supported devices.
-# Temporarily leads to https://support.mozilla.org/en-US/kb/will-firefox-work-my-mobile-device#w_android-devices
-about-debugging-setup-link-android-devices = Посмотреть список поддерживаемых Android-устройств
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
-about-debugging-setup-this-firefox = Используйте <a>{ about-debugging-this-firefox-runtime-name }</a>, чтобы отлаживать вкладки, расширения и service workers на этой версии { -brand-shorter-name }.
+about-debugging-setup-this-firefox = Используйте <a>{ about-debugging-this-firefox-runtime-name }</a> для отладки вкладок, расширений и service workers на этой версии { -brand-shorter-name }.
+# Explanatory text in the Setup page about what the 'This Firefox' page is for
+about-debugging-setup-this-firefox2 = Используйте <a>{ about-debugging-this-firefox-runtime-name }</a> для отладки расширений и service workers на этой версии { -brand-shorter-name }.
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Подключить устройство
 # USB section of the Setup page
@@ -106,16 +105,22 @@ about-debugging-setup-usb-status-enabled = Включён
 about-debugging-setup-usb-status-disabled = Отключён
 about-debugging-setup-usb-status-updating = Обновление…
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-dev-menu = Включите меню разработчика на вашем Android-устройстве. <a>Узнайте как</a>
+about-debugging-setup-usb-step-enable-dev-menu2 = Включите режим разработчика на вашем Android-устройстве.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug = Включите отладку по USB в меню разработчика Android. <a>Узнайте как</a>
+about-debugging-setup-usb-step-enable-debug2 = Включите отладку по USB в меню разработчика Android.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug-firefox = Включите отладку по USB в Firefox на вашем Android-устройстве. <a>Узнайте как</a>
+about-debugging-setup-usb-step-enable-debug-firefox2 = Включите отладку по USB в Firefox на вашем Android-устройстве.
 # USB section step by step guide
 about-debugging-setup-usb-step-plug-device = Подключите Android-устройство к вашему компьютеру.
+# Text shown in the USB section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/docs/Tools/Remote_Debugging/Debugging_over_USB
+about-debugging-setup-usb-troubleshoot = Не можете подключиться к USB-устройству? <a>Поиск решения</a>
 # Network section of the Setup page
 about-debugging-setup-network =
     .title = Сетевое расположение
+# Text shown in the Network section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Debugging_over_a_network
+about-debugging-setup-network-troubleshoot = Проблемы с подключением через сетевое расположение? <a>Поиск решения</a>
 # Text of a button displayed after the network locations "Host" input.
 # Clicking on it will add the new network location to the list.
 about-debugging-network-locations-add-button = Добавить
@@ -164,7 +169,7 @@ about-debugging-runtime-processes =
     .name = Процессы
 # Label of the button opening the performance profiler panel in runtime pages for remote
 # runtimes.
-about-debugging-runtime-profile-button = Профиль Runtime
+about-debugging-runtime-profile-button2 = Профилировать производительность
 # This string is displayed in the runtime page if the current configuration of the
 # target runtime is incompatible with service workers. "Learn more" points to MDN.
 # https://developer.mozilla.org/en-US/docs/Tools/about%3Adebugging#Service_workers_not_compatible
@@ -202,12 +207,7 @@ about-debugging-connection-prompt-enable-button = Включить запрос 
 # "devtools.debugger.prompt-connection" is true on the target runtime.
 about-debugging-connection-prompt-disable-button = Отключить запрос на подключение
 # Title of a modal dialog displayed on remote runtime pages after clicking on the Profile Runtime button.
-about-debugging-profiler-dialog-title = Профайлер производительности
-# Label of a checkbox displayed in the runtime page for "This Firefox".
-# This checkbox will toggle preferences that enable local addon debugging.
-# The "Learn more" link points to MDN.
-# https://developer.mozilla.org/docs/Tools/about:debugging#Enabling_add-on_debugging
-about-debugging-extension-debug-setting-label = Включить отладку расширений. <a>Подробнее</a>
+about-debugging-profiler-dialog-title2 = Профайлер
 # Clicking on the header of a debug target category will expand or collapse the debug
 # target items in the category. This text is used as ’title’ attribute of the header,
 # to describe this feature.
@@ -296,3 +296,9 @@ about-debugging-main-process-description2 = Главный процесс цел
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = Закрыть сообщение
+# Label text used for the error details of message component.
+about-debugging-message-details-label-error = Сведения об ошибке
+# Label text used for the warning details of message component.
+about-debugging-message-details-label-warning = Сведения о предупреждении
+# Label text used for default state of details of message component.
+about-debugging-message-details-label = Подробности

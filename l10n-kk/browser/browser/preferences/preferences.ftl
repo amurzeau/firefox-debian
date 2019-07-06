@@ -34,6 +34,7 @@ policies-notice =
         [windows] Сіздің ұйымыңыз кейбір баптауларды өзгертуді бұғаттаған.
        *[other] Сіздің ұйымыңыз кейбір баптауларды өзгертуді бұғаттаған.
     }
+managed-notice = Браузеріңіз сіздің ұйымыңызбен басқаралады.
 pane-general-title = Жалпы
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = Жекелік және қауіпсіздік
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Firefox тіркелгісі
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -293,6 +290,21 @@ update-pref-write-failure-title = Жазу қатесі
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Баптауды сақтау мүмкін емес. Файлға жазу қатесі: { $path }
+update-setting-write-failure-title = Жаңарту баптауларын сақтау қатемен аяқталды.
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    { -brand-short-name } қатеге тап болып, бұл өзгерісті сақтамады. Бұл жаңарту баптауын өзгерту төмендегі файлға жазу құқығын талап ететінің ескеріңіз. Сіз немесе жүйелік әкімші бұл мәселені Пайдаланушылар тобына бұл файлға толық қатынау құқығын беру арқылы шеше алады.
+    
+    Файлға жазу қатесі: { $path }
+update-in-progress-title = Жаңарту орындалуда
+update-in-progress-message = { -brand-short-name } бұл жаңартумен жалғастыруды қалайсыз ба?
+update-in-progress-ok-button = Тай&дыру
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = Жалға&стыру
 
 ## General Section - Performance
 
@@ -528,8 +540,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Сақтау
     .accesskey = а
-sync-mobilepromo-single = Басқа құрылғыны байланыстыру
-sync-mobilepromo-multi = Құрылғыларды басқару
 sync-connect-another-device = Басқа құрылғыны байланыстыру
 sync-manage-devices = Құрылғыларды басқару
 sync-fxa-begin-pairing = Құрылғыны жұптау
@@ -549,6 +559,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Ережелерден бөлек…
     .accesskey = р
+forms-generate-passwords =
+    .label = Қатаң парольдерді ұсыну және генерациялау
+    .accesskey = ы
 forms-saved-logins =
     .label = Сақталған логиндер…
     .accesskey = л
@@ -687,7 +700,6 @@ content-blocking-all-third-party-cookies = Барлық үшінші жақты 
 content-blocking-cryptominers = Криптомайнерлер
 content-blocking-fingerprinters = Баспаны жинаушылар
 content-blocking-warning-title = Ескерту!
-content-blocking-warning-desc = Cookies файлдарын және трекерлерді бұғаттау кейбір веб-сайттар жұмысын бұзуы мүмкін. Өзіңіз сенетін сайттар үшін бұғаттауды сөндіру оңай.
 content-blocking-warning-description = Құраманы бұғаттау кейбір веб-сайттар жұмысын бұзуы мүмкін. Сенімді сайттар үшін бұғаттауды өшіру оңай.
 content-blocking-learn-how = Көбірек білу
 content-blocking-reload-description = Бұл өзгерістер іске асуы үшін беттерді қайта жүктеу керек болады.
@@ -754,6 +766,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Ережелерден бөлек…
     .accesskey = Е
+permissions-autoplay = Автоойнату
+permissions-autoplay-settings =
+    .label = Баптаулар…
+    .accesskey = т
 permissions-block-popups =
     .label = "Атып шығатын" терезелерді болдырмау
     .accesskey = б

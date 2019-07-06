@@ -15,6 +15,7 @@ about-telemetry-option-group-older = 較舊
 about-telemetry-previous-ping = <<
 about-telemetry-next-ping = >>
 about-telemetry-page-title = Telemetry 資料
+about-telemetry-current-store = 目前的儲存區:
 about-telemetry-more-information = 想了解更多嗎？
 about-telemetry-firefox-data-doc = <a data-l10n-name="data-doc-link">Firefox Data Documentation</a> 當中描述了我們使用資料工具的方式。
 about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Firefox Telemetry 客戶端文件</a>當中包含資料收集概念、API 文件以及資料格式的參考資料。
@@ -140,3 +141,6 @@ about-telemetry-origin-count = 數量
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Firefox Origin Telemetry</a> 會在送出資料前為資料編碼，這樣 { $telemetryServerOwner } 才可以計數，但不知道是由哪一套 { -brand-product-name } 所送出的資料。（<a data-l10n-name="prio-blog-link">了解更多資訊</a>）
+# Variables:
+#  $process (String): type of process in subsection headers ( e.g. "content", "parent" )
+about-telemetry-process = { $process } 處理程序

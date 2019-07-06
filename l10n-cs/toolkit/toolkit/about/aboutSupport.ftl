@@ -35,13 +35,12 @@ app-basics-name = Název
 app-basics-version = Verze
 app-basics-build-id = ID sestavení
 app-basics-update-channel = Kanál aktualizací
+app-basics-update-dir = Složka, kde je aplikace nainstalována
 app-basics-update-history = Historie aktualizací
 app-basics-show-update-history = Zobrazit historii aktualizací
-app-basics-profile-dir =
-    { PLATFORM() ->
-        [linux] Adresář profilu
-       *[other] Složka profilu
-    }
+# Represents the path to the binary used to start the application.
+app-basics-binary = Binární soubor aplikace
+app-basics-profile-dir = Složka s profilem aplikace
 app-basics-enabled-plugins = Povolené zásuvné moduly
 app-basics-build-config = Nastavení sestavení
 app-basics-user-agent = Identifikace prohlížeče
@@ -62,8 +61,7 @@ app-basics-safe-mode = Nouzový režim
 show-dir-label =
     { PLATFORM() ->
         [macos] Zobrazit ve Finderu
-        [windows] Otevřít složku
-       *[other] Otevřít adresář
+       *[other] Otevřít
     }
 modified-key-prefs-title = Důležité změněné předvolby
 modified-prefs-name = Název
@@ -82,6 +80,8 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Protokol rozhodování
 graphics-crash-guards-title = Zakázat funkce Crash Guard
 graphics-workarounds-title = Možná řešení
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Protokol zobrazování oken
 place-database-title = Databáze Places
 place-database-integrity = Integrita
 place-database-verify-integrity = Zkontrolovat integritu

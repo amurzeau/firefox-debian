@@ -21,12 +21,15 @@
 <!ENTITY firstrun_data_message "Mjenjej datow, wěcej zažaržanjow">
 <!ENTITY firstrun_data_subtext2 "Blokěrujśo wobraze, aby mjenjej datow na kuždom sedle pśetrjebował, ku kótaremuž se woglědujośo.">
 <!ENTITY firstrun_sync_title "Snychronizěrowaś">
+<!ENTITY updatednewfirstrun_sync_title "Konto">
 <!ENTITY firstrun_sync_message2 "Cyńśo tam dalej, źož sćo pśestał.">
 <!ENTITY firstrun_sync_subtext2 "Wužywajśo Sync, aby cytańske znamjenja, gronidła a druge wěcy namakał, kótarež w &brandShortName; na wšych swójich rědach składujośo.">
 <!ENTITY newfirstrun_sync_subtext "Synchronizěrujśo informacije, kótarež na mobilnem rěźe składujośo, z Firefox za desktop, priwatnje a wěsće.">
+<!ENTITY updatednewfirstrun_sync_subtext "Pśizjawśo se pla swójogo konta, aby nejlěpše z &brandShortName; wuwónoźeł">
 <!ENTITY firstrun_signin_message "Zwězajśo se, zachopśo">
 <!ENTITY firstrun_signin_button "Pla Sync pśizjawiś">
 <!ENTITY newfirstrun_signin_button "Sync zašaltowaś">
+<!ENTITY updatednewfirstrun_signin_button "Pla &brandShortName; pśizjawiś">
 <!ENTITY  onboard_start_button_browser "Pśeglědowanje startowaś">
 <!ENTITY firstrun_button_notnow "Nic ned">
 <!ENTITY firstrun_button_next "Pśiducy">
@@ -66,6 +69,12 @@
 <!ENTITY  sending_crash_report "Wowaleńska rozpšawa so sćelo\u2026">
 <!ENTITY  crash_close_label "Zacyniś">
 <!ENTITY  crash_restart_label "&brandShortName; znowego startowaś">
+
+<!-- Localization note (crash_notification_title, crash_notification_message, crash_notification_negative_button_text)
+     Text displayed in a system notification to allow starting the Crash Reporter (Android Q and later).-->
+<!ENTITY  crash_notification_title "&brandShortName; jo wótwalił">
+<!ENTITY  crash_notification_message "Pótusniśo, aby &vendorShortName; informěrował">
+<!ENTITY  crash_notification_negative_button_text "Ignorěrowaś">
 
 <!ENTITY url_bar_default_text2 "Adresu pytaś abo zapódaś">
 
@@ -108,6 +117,10 @@
 <!ENTITY bookmark_folder_updated "Zarědnik jo aktualizěrowany">
 <!ENTITY bookmark_parent_folder "Nadrědowany zarědnik">
 <!ENTITY bookmark_add_folder "Nowy zarědnik pśidaś">
+
+<!-- Localization note (bookmark_default_folder_title): Default title is used if user doesn't specify
+     one when he is creating a bookmark folder -->
+<!ENTITY bookmark_default_folder_title "(žeden titel)">
 
 <!ENTITY reader_saved_offline "Offline skłaźony">
 <!-- Localization note (reader_switch_to_bookmarks) : This
@@ -413,8 +426,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY pref_private_data_downloadFiles2 "Ześěgnjenja">
 <!ENTITY pref_private_data_syncedTabs "Synchronizěrowane rejtarki">
 
-<!ENTITY pref_default_browser "Jako standardny wobglědowak nastajiś">
-
 <!ENTITY pref_default_browser2 "&brandShortName; k wašomu standardnemu wobglědowakoju cyniś">
 <!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
     Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
@@ -592,6 +603,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_keyword "Klucowe słowo">
 <!ENTITY bookmark_select_folder "Zarědnik wubraś">
 
+<!ENTITY bookmark_edit_undo "Anulěrowaś">
+
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
      dialog that appears after selecting the "Edit Site Settings" context menu item. -->
 <!ENTITY site_settings_title3       "Sedłowe nastajenja">
@@ -679,6 +692,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY filepicker_audio_title "Wubjeŕśo abo nagrajśo zuk">
 <!ENTITY filepicker_image_title "Wubjeŕśo abo wótmolujśo wobraz">
 <!ENTITY filepicker_video_title "Wubjeŕśo abo nagrajśo wideo">
+
+<!ENTITY filepicker_permission_denied "Trěbne pšawa njejsu se dali, wrośijo se k systemowemu datajowemu wuběrakoju.">
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "Sćo zwězany z">
@@ -918,6 +933,7 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_title "Zastajiś">
 <!ENTITY pip_pause_button_description "Wótgrawanje zastajiś">
 
+<!ENTITY pref_notification_settings_link "Zdźěleńske nastajenja zastojaś">
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "Wobglědowak">
 <!ENTITY mls_notification_channel "Stojnišćowa słužba &vendorShortName;">
@@ -930,3 +946,4 @@ Picture-in-picture mini window -->
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
 web sites through the HTML Notifications API. -->
 <!ENTITY site_notifications_channel "Sedłowe powěźeńki">
+<!ENTITY crash_handler_notifications_channel "&brandShortName; - rozpšawjak wowalenjow">

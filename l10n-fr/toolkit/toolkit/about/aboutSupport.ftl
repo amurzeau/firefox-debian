@@ -35,8 +35,15 @@ app-basics-name = Nom
 app-basics-version = Version
 app-basics-build-id = Identifiant de compilation
 app-basics-update-channel = Canal de mise à jour
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] Répertoire pour les mises à jour
+       *[other] Dossier pour les mises à jour
+    }
 app-basics-update-history = Historique des mises à jour
 app-basics-show-update-history = Afficher l’historique des mises à jour
+# Represents the path to the binary used to start the application.
+app-basics-binary = Binaire de l’application
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Répertoire de profil
@@ -82,6 +89,8 @@ graphics-gpu2-title = GPU 2
 graphics-decision-log-title = Journal des décisions
 graphics-crash-guards-title = Fonctionnalités désactivées par la protection contre les plantages
 graphics-workarounds-title = Solutions de contournement
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Protocole de fenêtrage
 place-database-title = Base de données « Places »
 place-database-integrity = Intégrité
 place-database-verify-integrity = Vérifier l’intégrité

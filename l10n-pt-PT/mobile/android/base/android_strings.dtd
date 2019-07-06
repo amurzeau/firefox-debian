@@ -24,9 +24,11 @@
 <!ENTITY firstrun_sync_message2 "Retome onde ficou.">
 <!ENTITY firstrun_sync_subtext2 "Utilize o Sync para encontrar os marcadores, palavras-passe, e outras coisas que guarda no &brandShortName; em todos os seus dispositivos.">
 <!ENTITY newfirstrun_sync_subtext "Sincronize as coisas que guarda em dispositivos móveis no Firefox para computador, de forma privada e segura.">
+<!ENTITY updatednewfirstrun_sync_subtext "Inicie sessão na sua conta para aproveitar ao máximo o &brandShortName;">
 <!ENTITY firstrun_signin_message "Ligue-se para começar">
 <!ENTITY firstrun_signin_button "Iniciar sessão no Sync">
 <!ENTITY newfirstrun_signin_button "Ligar o Sync">
+<!ENTITY updatednewfirstrun_signin_button "Iniciar sessão no &brandShortName;">
 <!ENTITY  onboard_start_button_browser "Iniciar navegação">
 <!ENTITY firstrun_button_notnow "Agora não">
 <!ENTITY firstrun_button_next "Seguinte">
@@ -66,6 +68,12 @@
 <!ENTITY  sending_crash_report "A enviar relatório de falha\u2026">
 <!ENTITY  crash_close_label "Fechar">
 <!ENTITY  crash_restart_label "Reiniciar o &brandShortName;">
+
+<!-- Localization note (crash_notification_title, crash_notification_message, crash_notification_negative_button_text)
+     Text displayed in a system notification to allow starting the Crash Reporter (Android Q and later).-->
+<!ENTITY  crash_notification_title "O &brandShortName; falhou">
+<!ENTITY  crash_notification_message "Toque para reportar à &vendorShortName;">
+<!ENTITY  crash_notification_negative_button_text "Ignorar">
 
 <!ENTITY url_bar_default_text2 "Pesquisar ou introduzir um endereço">
 
@@ -108,6 +116,10 @@
 <!ENTITY bookmark_folder_updated "Pasta atualizada">
 <!ENTITY bookmark_parent_folder "Pasta parente">
 <!ENTITY bookmark_add_folder "Adicionar nova pasta">
+
+<!-- Localization note (bookmark_default_folder_title): Default title is used if user doesn't specify
+     one when he is creating a bookmark folder -->
+<!ENTITY bookmark_default_folder_title "(sem título)">
 
 <!ENTITY reader_saved_offline "Guardado offline">
 <!-- Localization note (reader_switch_to_bookmarks) : This
@@ -413,8 +425,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY pref_private_data_downloadFiles2 "Transferências">
 <!ENTITY pref_private_data_syncedTabs "Separadores sincronizados">
 
-<!ENTITY pref_default_browser "Tornar navegador predefinido">
-
 <!ENTITY pref_default_browser2 "Fazer do &brandShortName; o seu navegador predefinido">
 <!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
     Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
@@ -592,6 +602,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_keyword "Palavra-chave">
 <!ENTITY bookmark_select_folder "Selecionar pasta">
 
+<!ENTITY bookmark_edit_undo "Desfazer">
+
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
      dialog that appears after selecting the "Edit Site Settings" context menu item. -->
 <!ENTITY site_settings_title3       "Definições do site">
@@ -679,6 +691,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY filepicker_audio_title "Escolher ou gravar um som">
 <!ENTITY filepicker_image_title "Escolher ou tirar uma foto">
 <!ENTITY filepicker_video_title "Escolher ou gravar um vídeo">
+
+<!ENTITY filepicker_permission_denied "Permissões requeridas não garantidas, a reverter para o seletor de ficheiros do sistema.">
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "Está ligado a">
@@ -931,3 +945,4 @@ Picture-in-picture mini window -->
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
 web sites through the HTML Notifications API. -->
 <!ENTITY site_notifications_channel "Notificações de sites">
+<!ENTITY crash_handler_notifications_channel "Relator de falhas do &brandShortName;">

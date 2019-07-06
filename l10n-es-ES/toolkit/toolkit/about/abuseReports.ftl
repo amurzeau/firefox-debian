@@ -30,6 +30,7 @@ abuse-report-submit-button = Enviar
 abuse-report-messagebar-aborted = Se canceló el informe sobre <span data-l10n-name="addon-name">{ $addon-name }</span>.
 abuse-report-messagebar-submitting = Enviando informe sobre <span data-l10n-name="addon-name">{ $addon-name }</span>.
 abuse-report-messagebar-submitted = Gracias por enviar el informe. ¿Quiere eliminar <span data-l10n-name="addon-name">{ $addon-name }</span>?
+abuse-report-messagebar-submitted-noremove = Gracias por enviar el informe.
 abuse-report-messagebar-removed-extension = Gracias por enviar el informe. Ha eliminado la extensión <span data-l10n-name="addon-name">{ $addon-name }</span>.
 abuse-report-messagebar-removed-theme = Gracias por enviar el informe. Ha eliminado el tema <span data-l10n-name="addon-name">{ $addon-name }</span>.
 abuse-report-messagebar-error = Hubo un error al enviar el informe sobre <span data-l10n-name="addon-name">{ $addon-name }</span>.
@@ -37,8 +38,10 @@ abuse-report-messagebar-error-recent-submit = No se envió el informe sobre <spa
 
 ## Message bars actions.
 
-abuse-report-messagebar-action-remove = Sí, eliminarlo
-abuse-report-messagebar-action-keep = No, conservarlo
+abuse-report-messagebar-action-remove-extension = Sí, eliminarlo
+abuse-report-messagebar-action-keep-extension = No, guardarlo
+abuse-report-messagebar-action-remove-theme = Sí, eliminarlo
+abuse-report-messagebar-action-keep-theme = No, guardarlo
 abuse-report-messagebar-action-retry = Reintentar
 abuse-report-messagebar-action-cancel = Cancelar
 
@@ -55,7 +58,15 @@ abuse-report-settings-suggestions-homepage = Cambie la página de inicio y de nu
 abuse-report-deceptive-reason = Pretender ser algo que no es
 abuse-report-deceptive-example = Ejemplo: descripción o imágenes erróneas
 abuse-report-broken-reason-extension = No funciona, cuelga los sitios web o ralentiza { -brand-product-name }
+abuse-report-broken-reason-theme = No funciona o no se visualiza correctamente
 abuse-report-broken-example = Ejemplo: la función es lenta, difícil de usar o no funciona; ciertas partes de los sitios web no se cargan o se muestran de forma incorrecta
+abuse-report-broken-suggestions-extension = Parece que ha identificado un problema. Además de enviar un informe por aquí, lo mejor para conseguir que se resuelva un problema de funcionalidad es contactar con el desarrollador de la extensión. <a data-l10n-name="support-link">Acceda al sitio web de la extensión</a> para conseguir los datos de contacto del desarrollador.
+abuse-report-broken-suggestions-theme = Parece que ha identificado un problema. Además de enviar un informe por aquí, lo mejor para conseguir que se resuelva un problema de funcionalidad es contactar con el desarrollador del tema. <a data-l10n-name="support-link">Acceda al sitio web del tema</a> para conseguir los datos de contacto del desarrollador.
+abuse-report-policy-reason = Contenido violento, ilegal o de odio.
+abuse-report-policy-suggestions =
+    Nota: Los problemas relacionados con derechos de autor y marcas registradas deben informarse en un proceso separado.
+    <a data-l10n-name="report-infringement-link">Utilice estas instrucciones</a> para
+    informar del problema
 abuse-report-unwanted-reason = Nunca quise esta extensión y no puedo desinstalarla
 abuse-report-unwanted-example = Ejemplo: una aplicación la instaló sin mi permiso
 abuse-report-other-reason = Otra cosa

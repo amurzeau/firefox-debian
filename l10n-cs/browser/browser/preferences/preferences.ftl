@@ -34,6 +34,7 @@ policies-notice =
         [windows] Vaše organizace zakázala změny některých možností.
        *[other] Vaše organizace zakázala změny některých předvoleb.
     }
+managed-notice = Tento prohlížeč je spravován vaší organizací.
 pane-general-title = Obecné
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = Soukromí a zabezpečení
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Účet Firefoxu
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -124,7 +121,7 @@ startup-header = Spuštění
 # { -brand-short-name } will be 'Firefox Developer Edition',
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
-    .label = Povolit současné spuštění aplikací { -brand-short-name } a Firefox
+    .label = Povolit současné spuštění aplikace { -brand-short-name } a Firefox
 use-firefox-sync = Tip: Budou použity oddělené uživatelské profily. Pro sdílení dat mezi nimi můžete použít { -sync-brand-short-name(case: "acc") }.
 get-started-not-logged-in = Přihlášení k { -sync-brand-short-name(case: "dat") }…
 get-started-configured = Otevřít nastavení { -sync-brand-short-name(case: "gen") }
@@ -296,6 +293,27 @@ update-pref-write-failure-title = Chyba při zápisu
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Vaše předvolby se nepodařilo uložit. Není možný zápis do souboru: { $path }
+update-setting-write-failure-title = Chyba při ukládání nastavení aktualizací
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    Aplikace { -brand-short-name } zaznamenala problém při ukládání změny nastavení. Změna těchto nastavení vyžaduje oprávnění k zápisu do níže uvedeného souboru. Vy nebo správce vašeho systému můžete tento problém vyřešit přidělením úplných oprávnění k tomuto souboru pro skupinu Users.
+    
+    Není možný zápis do souboru: { $path }
+update-in-progress-title = Probíhá aktualizace
+update-in-progress-message =
+    { -brand-short-name.gender ->
+        [masculine] Chcete, aby { -brand-short-name } pokračoval v aktualizaci?
+        [feminine] Chcete, aby { -brand-short-name } pokračovala v aktualizaci?
+        [neuter] Chcete, aby { -brand-short-name } pokračovalo v aktualizaci?
+       *[other] Chcete, aby aplikace { -brand-short-name } pokračovala v aktualizaci?
+    }
+update-in-progress-ok-button = &Nepokračovat
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Pokračovat
 
 ## General Section - Performance
 
@@ -535,8 +553,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Uložit
     .accesskey = l
-sync-mobilepromo-single = Připojit další zařízení
-sync-mobilepromo-multi = Spravovat zařízení
 sync-connect-another-device = Připojit další zařízení
 sync-manage-devices = Správa zařízení
 sync-fxa-begin-pairing = Připojit zařízení
@@ -556,6 +572,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Výjimky…
     .accesskey = k
+forms-generate-passwords =
+    .label = Generovat a navrhovat silná hesla
+    .accesskey = G
 forms-saved-logins =
     .label = Uložené přihlašovací údaje…
     .accesskey = l
@@ -691,10 +710,9 @@ content-blocking-all-cookies = Všechny cookies
 content-blocking-unvisited-cookies = Cookies z dosud nenavštívených stránek
 content-blocking-all-windows-trackers = Sledovací prvky blokovány ve všech oknech
 content-blocking-all-third-party-cookies = Všechny cookies třetích stran blokovány vždy
-content-blocking-cryptominers = Těžbu kryptoměn
-content-blocking-fingerprinters = Vytváření otisku prohlížeče
+content-blocking-cryptominers = Těžba kryptoměn blokována ve všech oknech
+content-blocking-fingerprinters = Vytváření otisku prohlížeče blokováno ve všech oknech
 content-blocking-warning-title = Pozor!
-content-blocking-warning-desc = Blokování cookies a sledovacích prvků může omezit fungování některých stránek. Pro stránky, kterým důvěřujete, ale můžete blokování snadno vypnout.
 content-blocking-warning-description = Blokování obsahu může omezit fungování některých stránek. Pro stránky, kterým důvěřujete, ho můžete snadno vypnout.
 content-blocking-learn-how = Jak na to?
 content-blocking-reload-description = Aby se změny projevily, obnovte vaše panely.
@@ -761,6 +779,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Výjimky…
     .accesskey = y
+permissions-autoplay = Automatické přehrávání
+permissions-autoplay-settings =
+    .label = Nastavení…
+    .accesskey = t
 permissions-block-popups =
     .label = Blokovat vyskakovací okna
     .accesskey = B

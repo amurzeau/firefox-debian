@@ -13,17 +13,18 @@
 policy-3rdparty = Ορίστε πολιτικές που μπορούν να προσπελάσουν τα WebExtensions μέσω του chrome.storage.managed.
 policy-AppUpdateURL = Ορισμός προσαρμοσμένου URL ενημέρωσης εφαρμογής.
 policy-Authentication = Ρύθμιση ενσωματωμένης πιστοποίησης για ιστοσελίδες που την υποστηρίζουν.
-policy-BlockAboutAddons = Φραγή πρόσβασης στη Διαχείριση προσθέτων (about:addons).
-policy-BlockAboutConfig = Φραγή πρόσβασης στη σελίδα about:config.
-policy-BlockAboutProfiles = Φραγή πρόσβασης στη σελίδα about:profiles.
-policy-BlockAboutSupport = Φραγή πρόσβασης στη σελίδα about:support.
+policy-BlockAboutAddons = Αποκλεισμός πρόσβασης στη Διαχείριση προσθέτων (about:addons).
+policy-BlockAboutConfig = Αποκλεισμός πρόσβασης στη σελίδα about:config.
+policy-BlockAboutProfiles = Αποκλεισμός πρόσβασης στη σελίδα about:profiles.
+policy-BlockAboutSupport = Αποκλεισμός πρόσβασης στη σελίδα about:support.
 policy-Bookmarks = Δημιουργία σελιδοδεικτών στη γραμμή σελιδοδεικτών, στο μενού σελιδοδεικτών ή σε ένα συγκεκριμένο φάκελο μέσα τους.
 policy-CaptivePortal = Ενεργοποίηση ή απενεργοποίηση υποστήριξης captive portal.
 policy-CertificatesDescription = Προσθήκη πιστοποιητικών ή χρήση ενσωματωμένων πιστοποιητικών.
 policy-Cookies = Αποδοχή ή άρνηση αιτημάτων αποθήκευσης cookies.
+policy-DefaultDownloadDirectory = Ορισμός προεπιλεγμένου καταλόγου λήψης.
 policy-DisableAppUpdate = Αποτροπή ενημέρωσης προγράμματος περιήγησης.
 policy-DisableBuiltinPDFViewer = Απενεργοποίηση PDF.js, του ενσωματωμένου προγράμματος προβολής PDF στο { -brand-short-name }.
-policy-DisableDeveloperTools = Φραγή πρόσβασης στα εργαλεία προγραμματιστή.
+policy-DisableDeveloperTools = Αποκλεισμός πρόσβασης στα εργαλεία προγραμματιστή.
 policy-DisableFeedbackCommands = Απενεργοποίηση εντολών για αποστολή σχολίων από το μενού "Βοήθεια" (Υποβολή σχολίων και αναφορά παραπλανητικής ιστοσελίδας).
 policy-DisableFirefoxAccounts = Απενεργοποίηση υπηρεσιών { -fxaccount-brand-name }, καθώς και του Sync.
 # Firefox Screenshots is the name of the feature, and should not be translated.
@@ -45,13 +46,16 @@ policy-DisplayBookmarksToolbar = Προβολή της γραμμής σελιδ
 policy-DisplayMenuBar = Προβολή γραμμής μενού από προεπιλογή.
 policy-DNSOverHTTPS = Ρύθμιση DNS αντί HTTPS.
 policy-DontCheckDefaultBrowser = Απενεργοποίηση ελέγχου για το προεπιλεγμένο πρόγραμμα περιήγησης κατά την εκκίνηση.
+policy-DownloadDirectory = Ορισμός και κλείδωμα καταλόγου λήψης.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Ενεργοποίηση ή απενεργοποίηση φραγής περιεχομένου και προαιρετικό κλείδωμα.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
 policy-Extensions = Εγκατάσταση, απεγκατάσταση ή κλείδωμα επεκτάσεων. Η επιλογή εγκατάστασης λαμβάνει τα URLs ή τις διαδρομές ως παραμέτρους. Οι επιλογές απεγκατάστασης και κλειδώματος λαμβάνουν IDs επεκτάσεων.
+policy-ExtensionSettings = Διαχείριση όλων των πτυχών της εγκατάστασης επεκτάσεων.
 policy-ExtensionUpdate = Ενεργοποίηση ή απενεργοποίηση αυτόματων ενημερώσεων επεκτάσεων.
+policy-FirefoxHome = Ρύθμιση παραμέτρων της Αρχικής Firefox.
 policy-FlashPlugin = Αποδοχή ή απόρριψη χρήσης του αρθρώματος Flash.
 policy-HardwareAcceleration = Αν είναι ψευδές, απενεργοποίηση επιτάχυνσης υλικού.
 # “lock” means that the user won’t be able to change this setting
@@ -66,9 +70,10 @@ policy-OverrideFirstRunPage = Παράκαμψη της σελίδας πρώτ�
 policy-OverridePostUpdatePage = Παράκαμψη της σελίδας "Τι νέο υπάρχει" μετά την ενημέρωση. Αφήστε αυτή την πολιτική κενή αν θέλετε να απενεργοποιήσετε τη σελίδα μετά την ενημέρωση.
 policy-Permissions = Ρύθμιση δικαιωμάτων για κάμερα, μικρόφωνο, τοποθεσία και ειδοποιήσεις.
 policy-PopupBlocking = Αποδοχή αναδυόμενων από ορισμένες ιστοσελίδες, από προεπιλογή.
-policy-Preferences = Ορίστε και κλειδώστε την τιμή ενός υποσυνόλου προτιμήσεων.
+policy-Preferences = Ορισμός και κλείδωμα τιμής ενός υποσυνόλου προτιμήσεων.
+policy-PromptForDownloadLocation = Ερώτηση για την τοποθεσία αποθήκευσης αρχείων κατά τη λήψη.
 policy-Proxy = Προσαρμογή ρυθμίσεων μεσολάβησης.
-policy-RequestedLocales = Ορίστε τη λίστα απαιτούμενων γλωσσών για την εφαρμογή σε σειρά προτίμησης.
+policy-RequestedLocales = Ορισμός λίστας απαιτούμενων γλωσσών για την εφαρμογή σε σειρά προτίμησης.
 policy-SanitizeOnShutdown = Εκκαθάριση όλων των δεδομένων πλοήγησης κατά τον τερματισμό λειτουργίας.
 policy-SanitizeOnShutdown2 = Εκκαθάριση δεδομένων πλοήγησης κατά τον τερματισμό λειτουργίας.
 policy-SearchBar = Ορίστε την προεπιλεγμένη τοποθεσία της γραμμής αναζήτησης. Ο χρήστης θα μπορεί να την προσαρμόσει.
@@ -76,8 +81,8 @@ policy-SearchEngines = Διαμόρφωση ρυθμίσεων μηχανής α
 policy-SearchSuggestEnabled = Ενεργοποίηση ή απενεργοποίηση προτάσεων αναζήτησης.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Εγκατάσταση προσθέτων PKCS #11.
-policy-SSLVersionMax = Ορίστε τη μέγιστη έκδοση SSL.
-policy-SSLVersionMin = Ορίστε την ελάχιστη έκδοση SSL.
+policy-SSLVersionMax = Ορισμός μέγιστης έκδοσης SSL.
+policy-SSLVersionMin = Ορισμός ελάχιστης έκδοσης SSL.
 policy-SupportMenu = Προσθήκη προσαρμοσμένου στοιχείου μενού υποστήριξης στο μενού βοήθειας.
 # “format” refers to the format used for the value of this policy.
-policy-WebsiteFilter = Αποκλεισμός επίσκεψης σε ιστοσελίδας. Δείτε την τεκμηρίωση για περισσότερες λεπτομέρειες στο format.
+policy-WebsiteFilter = Αποκλεισμός επίσκεψης σε ιστοσελίδες. Δείτε την τεκμηρίωση για περισσότερες λεπτομέρειες σχετικά με τη μορφή.

@@ -32,8 +32,15 @@ app-basics-name = Enw
 app-basics-version = Fersiwn
 app-basics-build-id = Cyfeirnod Adeiladu
 app-basics-update-channel = Sianel Diweddaru
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] Diweddaru Cyfeiriadur
+       *[other] Diweddaru Ffolder
+    }
 app-basics-update-history = Hanes Diweddaru
 app-basics-show-update-history = Dangos Hanes Diweddaru
+# Represents the path to the binary used to start the application.
+app-basics-binary = Deuaidd y Rhaglen
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Cyfeiriadur Proffil
@@ -79,6 +86,8 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Cofnod Penderfynnu
 graphics-crash-guards-title = Nodweddion Crash Guard wedi ei Analluogi
 graphics-workarounds-title = Dulliau Datrys
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Protocol Ffenestr
 place-database-title = Cronfa Ddata Mannau
 place-database-integrity = Cyfanrwydd
 place-database-verify-integrity = Gwirio Cyfanrwydd

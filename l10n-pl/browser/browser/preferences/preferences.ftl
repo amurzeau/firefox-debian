@@ -5,7 +5,7 @@
 do-not-track-description = Informuj witryny o preferencjach względem śledzenia (wysyłanie nagłówka „Do Not Track”):
 do-not-track-learn-more = Więcej informacji
 do-not-track-option-default-content-blocking-known =
-    .label = gdy włączone jest blokowanie znanych elementów śledzących
+    .label = gdy { -brand-short-name } blokuje znane elementy śledzące
 do-not-track-option-always =
     .label = zawsze
 pref-page =
@@ -34,6 +34,7 @@ policies-notice =
         [windows] Administrator zablokował możliwość zmiany niektórych opcji
        *[other] Administrator zablokował możliwość zmiany niektórych preferencji
     }
+managed-notice = Przeglądarka jest zarządzana przez administratora
 pane-general-title = Ogólne
 category-general =
     .tooltiptext = Ogólne ustawienia
@@ -46,13 +47,9 @@ category-search =
 pane-privacy-title = Prywatność i bezpieczeństwo
 category-privacy =
     .tooltiptext = Ustawienia dotyczące prywatności i bezpieczeństwa
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Konto Firefoksa
-category-sync =
-    .tooltiptext = Konto Firefoksa
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
-    .tooltiptext = { pane-sync-title2 }
+    .tooltiptext = Ustawienia dotyczące synchronizacji
 help-button-label = Wsparcie programu { -brand-short-name }
 addons-button-label = Dodatki i motywy
 focus-search =
@@ -62,10 +59,10 @@ close-button =
 
 ## Browser Restart Dialog
 
-feature-enable-requires-restart = Konieczne jest ponowne uruchomienie programu, aby włączyć tę funkcję.
-feature-disable-requires-restart = Konieczne jest ponowne uruchomienie programu, aby wyłączyć tę funkcję.
-should-restart-title = Wymagane ponowne uruchamianie programu
-should-restart-ok = Uruchom ponownie
+feature-enable-requires-restart = Konieczne jest ponowne uruchomienie przeglądarki { -brand-short-name }, aby włączyć tę funkcję.
+feature-disable-requires-restart = Konieczne jest ponowne uruchomienie przeglądarki { -brand-short-name }, aby wyłączyć tę funkcję.
+should-restart-title = Ponowne uruchomienie przeglądarki { -brand-short-name }
+should-restart-ok = Uruchom przeglądarkę { -brand-short-name } ponownie
 cancel-no-restart-button = Anuluj
 restart-later = Później
 
@@ -99,7 +96,7 @@ extension-controlled-privacy-containers = Rozszerzenie „{ $name }” <img dat
 extension-controlled-websites-content-blocking-all-trackers = Rozszerzenie „{ $name }” <img data-l10n-name="icon"/> kontroluje to ustawienie.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
-extension-controlled-proxy-config = Rozszerzenie „{ $name }” <img data-l10n-name="icon"/> kontroluje, jak przeglądarka łączy się z Internetem.
+extension-controlled-proxy-config = Rozszerzenie „{ $name }” <img data-l10n-name="icon"/> kontroluje, jak { -brand-short-name } łączy się z Internetem.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -116,7 +113,7 @@ search-results-empty-message =
         [windows] Niestety! W opcjach niczego nie odnaleziono dla wyszukiwania „<span data-l10n-name="query"></span>”.
        *[other] Niestety! W preferencjach niczego nie odnaleziono dla wyszukiwania „<span data-l10n-name="query"></span>”.
     }
-search-results-help-link = Potrzebujesz pomocy? Odwiedź <a data-l10n-name="url">witrynę wsparcia</a>.
+search-results-help-link = Potrzebujesz pomocy? Odwiedź <a data-l10n-name="url">pomoc przeglądarki { -brand-short-name }</a>.
 
 ## General Section
 
@@ -125,9 +122,9 @@ startup-header = Uruchamianie
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
     .label = Jednoczesne działanie programu { -brand-short-name } oraz programu Firefox
-use-firefox-sync = Podczas jednoczesnego działania wykorzystywane są oddzielne profile. Można wykorzystać synchronizację, aby dzielić dane między nimi.
-get-started-not-logged-in = Zaloguj się, aby synchronizować…
-get-started-configured = Otwórz ustawienia synchronizacji
+use-firefox-sync = Podczas jednoczesnego działania wykorzystywane są oddzielne profile. Można wykorzystać { -sync-brand-short-name(case: "acc", capitalization: "lower") }, aby dzielić dane między nimi.
+get-started-not-logged-in = Zaloguj się do { -sync-brand-short-name(case: "gen", capitalization: "lower") }…
+get-started-configured = Otwórz ustawienia { -sync-brand-short-name(case: "gen", capitalization: "lower") }
 always-check-default =
     .label = Sprawdzanie, czy { -brand-short-name } jest domyślną przeglądarką
     .accesskey = e
@@ -154,7 +151,7 @@ warn-on-close-multiple-tabs =
     .label = Ostrzeganie przed zamknięciem wielu kart
     .accesskey = a
 warn-on-open-many-tabs =
-    .label = Ostrzeganie o otwarciu zbyt wielu kart mogących spowolnić program
+    .label = Ostrzeganie o otwarciu zbyt wielu kart mogących spowolnić przeglądarkę { -brand-short-name }
     .accesskey = m
 switch-links-to-new-tabs =
     .label = Przechodzenie do nowych kart otwieranych poprzez odnośniki
@@ -214,11 +211,11 @@ choose-language-description = Wybierz preferowany język, w jakim mają być wy
 choose-button =
     .label = Wybierz…
     .accesskey = e
-choose-browser-language-description = Wybierz język używany do wyświetlania interfejsu użytkownika programu (menu, wiadomości, powiadomienia itp.).
+choose-browser-language-description = Wybierz język używany do wyświetlania interfejsu użytkownika przeglądarki { -brand-short-name } (menu, wiadomości, powiadomienia itp.).
 manage-browser-languages-button =
     .label = Wybierz alternatywne…
     .accesskey = W
-confirm-browser-language-change-description = Uruchom przeglądarkę ponownie, aby zastosować zmiany.
+confirm-browser-language-change-description = Uruchom przeglądarkę { -brand-short-name } ponownie, aby zastosować zmiany.
 confirm-browser-language-change-button = Uruchom ponownie
 translate-web-pages =
     .label = Tłumaczenie stron WWW
@@ -269,13 +266,13 @@ play-drm-content =
     .label = Odtwarzanie treści chronionych przez DRM.
     .accesskey = O
 play-drm-content-learn-more = Więcej informacji
-update-application-title = Aktualizacje
-update-application-description = Utrzymuj program aktualnym dla najlepszej wydajności, stabilności i bezpieczeństwa.
+update-application-title = Aktualizacje przeglądarki { -brand-short-name }
+update-application-description = Utrzymuj przeglądarkę { -brand-short-name } aktualną dla najlepszej wydajności, stabilności i bezpieczeństwa.
 update-application-version = Wersja: { $version }. <a data-l10n-name="learn-more">Informacje o wydaniu</a>.
 update-history =
     .label = Wyświetl historię aktualizacji…
     .accesskey = W
-update-application-allow-description = Zezwalaj na:
+update-application-allow-description = Zezwalaj przeglądarce { -brand-short-name } na:
 update-application-auto =
     .label = automatyczne instalowanie aktualizacji (zalecane)
     .accesskey = a
@@ -296,6 +293,21 @@ update-pref-write-failure-title = Błąd zapisu
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Nie udało się zapisać ustawienia. Nie można było zapisać pliku: { $path }
+update-setting-write-failure-title = Błąd podczas zachowywania preferencji aktualizacji
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    W przeglądarce { -brand-short-name } wystąpił błąd i nie zachowano tej zmiany. Zauważ, że ustawienie tej preferencji aktualizacji wymaga uprawnienia do zapisu do poniższego pliku. Ty lub administrator komputera może móc rozwiązać błąd przez udzielenie grupie „Użytkownicy” pełnej kontroli nad tym plikiem.
+    
+    Nie można zapisać do pliku: { $path }
+update-in-progress-title = Trwa aktualizacja
+update-in-progress-message = Czy { -brand-short-name } ma kontynuować tę aktualizację?
+update-in-progress-ok-button = &Odrzuć
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Kontynuuj
 
 ## General Section - Performance
 
@@ -411,7 +423,7 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Podpowiedzi wyszukiwania nad historią przeglądania w wynikach paska adresu
-search-suggestions-cant-show = Podpowiedzi wyszukiwania nie będą wyświetlane w podpowiedziach paska adresu, ponieważ wyłączono zachowywanie historii przeglądania.
+search-suggestions-cant-show = Podpowiedzi wyszukiwania nie będą wyświetlane w podpowiedziach paska adresu, ponieważ wyłączono zachowywanie historii przeglądania programu { -brand-short-name }.
 search-one-click-header = Dodatkowe wyszukiwarki
 search-one-click-desc = Wybierz dodatkowe wyszukiwarki wyświetlane na dole wyników wyszukiwania w pasku adresu i pasku wyszukiwania.
 search-choose-engine-column =
@@ -486,7 +498,7 @@ sync-sign-in =
     .label = Zaloguj
     .accesskey = o
 sync-signedin-settings-header = Ustawienia synchronizacji
-sync-signedin-settings-desc = Wybierz, co synchronizować pomiędzy urządzeniami:
+sync-signedin-settings-desc = Wybierz, co synchronizować pomiędzy urządzeniami za pomocą przeglądarki { -brand-short-name }:
 sync-engine-bookmarks =
     .label = zakładki
     .accesskey = z
@@ -531,8 +543,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Zachowaj
     .accesskey = Z
-sync-mobilepromo-single = Połącz inne urządzenie
-sync-mobilepromo-multi = Zarządzaj urządzeniami
 sync-connect-another-device = Połącz inne urządzenie
 sync-manage-devices = Zarządzaj urządzeniami
 sync-fxa-begin-pairing = Powiąż urządzenie
@@ -552,6 +562,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Wyjątki…
     .accesskey = i
+forms-generate-passwords =
+    .label = Proponowanie i generowanie silnych haseł
+    .accesskey = s
 forms-saved-logins =
     .label = Zachowane dane logowania…
     .accesskey = d
@@ -594,7 +607,7 @@ history-remember-search-option =
     .label = Zachowywanie historii pola wyszukiwania i formularzy
     .accesskey = o
 history-clear-on-close-option =
-    .label = Czyszczenie historii podczas zamykania programu
+    .label = Czyszczenie historii podczas zamykania przeglądarki { -brand-short-name }
     .accesskey = z
 history-clear-on-close-settings =
     .label = Ustawienia…
@@ -613,7 +626,7 @@ sitedata-total-size-calculating = Obliczanie rozmiaru danych i pamięci podręc
 sitedata-total-size = Przechowywane ciasteczka, dane i pamięć podręczna stron zajmują { $value } { $unit } na dysku.
 sitedata-learn-more = Więcej informacji
 sitedata-delete-on-close =
-    .label = Usuwanie ciasteczek i danych stron podczas zamykania programu
+    .label = Usuwanie ciasteczek i danych stron podczas zamykania przeglądarki { -brand-short-name }
     .accesskey = U
 sitedata-delete-on-close-private-browsing = W stale aktywnym trybie przeglądania prywatnego ciasteczka i dane stron są zawsze usuwane podczas zamykania programu { -brand-short-name }.
 sitedata-allow-cookies-option =
@@ -678,7 +691,7 @@ content-blocking-setting-custom =
     .accesskey = W
 content-blocking-standard-description = Blokowanie znanych elementów śledzących tylko w oknach prywatnych.
 content-blocking-standard-desc = Wyważone pod kątem ochrony i szybkości wczytywania stron. Dopuszcza pewne elementy śledzące, aby strony działały prawidłowo.
-content-blocking-strict-desc = Blokowanie wszystkich wykrytych elementów śledzących. Może powodować problemy z niektórymi stronami.
+content-blocking-strict-desc = Blokowanie wszystkich elementów śledzących wykrytych przez przeglądarkę { -brand-short-name }. Może powodować problemy z niektórymi stronami.
 content-blocking-strict-description = Silniejsza ochrona, ale może powodować problemy z niektórymi stronami.
 content-blocking-custom-desc = Wybierz, co blokować:
 content-blocking-private-trackers = znane elementy śledzące w oknach prywatnych
@@ -690,7 +703,6 @@ content-blocking-all-third-party-cookies = wszystkie ciasteczka zewnętrznych wi
 content-blocking-cryptominers = elementy używające komputera użytkownika do generowania kryptowalut
 content-blocking-fingerprinters = śledzenie przez zbieranie informacji o konfiguracji
 content-blocking-warning-title = Ostrzeżenie
-content-blocking-warning-desc = Blokowanie ciasteczek i elementów śledzących może powodować problemy z niektórymi stronami. Blokowanie można łatwo wyłączyć na stronach, którym ufasz.
 content-blocking-warning-description = Blokowanie treści może powodować problemy z niektórymi stronami. Blokowanie można łatwo wyłączyć na stronach, którym ufasz.
 content-blocking-learn-how = Więcej informacji
 content-blocking-reload-description = Zastosowanie tych zmian wymaga odświeżenia kart.
@@ -749,7 +761,7 @@ permissions-notification-settings =
     .accesskey = s
 permissions-notification-link = Więcej informacji
 permissions-notification-pause =
-    .label = Wstrzymaj powiadomienia do czasu ponownego uruchomienia programu
+    .label = Wstrzymaj powiadomienia do czasu ponownego uruchomienia przeglądarki { -brand-short-name }
     .accesskey = W
 permissions-block-autoplay-media2 =
     .label = Blokowanie automatycznego odtwarzania dźwięku przez strony
@@ -757,6 +769,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Wyjątki…
     .accesskey = W
+permissions-autoplay = Automatyczne odtwarzanie
+permissions-autoplay-settings =
+    .label = Ustawienia…
+    .accesskey = n
 permissions-block-popups =
     .label = Blokowanie wyskakujących okien
     .accesskey = B
@@ -780,20 +796,20 @@ collection-header = Dane zbierane przez program { -brand-short-name }
 collection-description = Dążymy do zapewnienia odpowiedniego wyboru i zbierania wyłącznie niezbędnych danych, aby dostarczać i doskonalić program { -brand-short-name } dla nas wszystkich. Zawsze prosimy o pozwolenie przed przesłaniem danych osobistych.
 collection-privacy-notice = Prywatność
 collection-health-report =
-    .label = Przesyłanie do Mozilli danych technicznych i o interakcjach z programem.
+    .label = Przesyłanie do organizacji { -vendor-short-name } danych technicznych i o interakcjach z przeglądarką { -brand-short-name }.
     .accesskey = z
 collection-health-report-link = Więcej informacji
 collection-studies =
-    .label = Instalowanie i przeprowadzanie badań.
-collection-studies-link = Wyświetl badania
+    .label = Instalowanie i przeprowadzanie badań przez przeglądarkę { -brand-short-name }.
+collection-studies-link = Wyświetl badania przeglądarki { -brand-short-name }
 addon-recommendations =
-    .label = Personalizowane polecenia rozszerzeń.
+    .label = Personalizowane polecenia rozszerzeń przez przeglądarkę { -brand-short-name }.
 addon-recommendations-link = Więcej informacji
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Przesyłanie danych jest wyłączone przy tej konfiguracji programu
 collection-backlogged-crash-reports =
-    .label = Przesyłanie zgromadzonych raportów z awarii.
+    .label = Przesyłanie zgromadzonych raportów z awarii przeglądarki { -brand-short-name }.
     .accesskey = o
 collection-backlogged-crash-reports-link = Więcej informacji
 
@@ -850,13 +866,13 @@ space-alert-over-5gb-pref-button =
         }
 space-alert-over-5gb-message =
     { PLATFORM() ->
-        [windows] Zaczyna brakować miejsca na dysku. Zawartość stron może być wyświetlana niepoprawnie. Przechowywane dane może wyczyścić w Opcje → Prywatność i bezpieczeństwo → Ciasteczka i dane stron.
-       *[other] Zaczyna brakować miejsca na dysku. Zawartość stron może być wyświetlana niepoprawnie. Przechowywane dane może wyczyścić w Preferencje → Prywatność i bezpieczeństwo → Ciasteczka i dane stron.
+        [windows] Przeglądarce { -brand-short-name } zaczyna brakować miejsca na dysku. Zawartość stron może być wyświetlana niepoprawnie. Przechowywane dane może wyczyścić w Opcje → Prywatność i bezpieczeństwo → Ciasteczka i dane stron.
+       *[other] Przeglądarce { -brand-short-name } zaczyna brakować miejsca na dysku. Zawartość stron może być wyświetlana niepoprawnie. Przechowywane dane może wyczyścić w Preferencje → Prywatność i bezpieczeństwo → Ciasteczka i dane stron.
     }
 space-alert-under-5gb-ok-button =
     .label = OK
     .accesskey = O
-space-alert-under-5gb-message = Zaczyna brakować miejsca na dysku. Zawartość stron może być wyświetlana niepoprawnie. Skorzystaj z odnośnika „Więcej informacji”, aby zoptymalizować użycie dysku dla lepszego przeglądania.
+space-alert-under-5gb-message = Przeglądarce { -brand-short-name } zaczyna brakować miejsca na dysku. Zawartość stron może być wyświetlana niepoprawnie. Skorzystaj z odnośnika „Więcej informacji”, aby zoptymalizować użycie dysku dla lepszego przeglądania.
 
 ## The following strings are used in the Download section of settings
 

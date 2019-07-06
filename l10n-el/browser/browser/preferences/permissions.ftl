@@ -34,8 +34,15 @@ permissions-button-cancel =
 permissions-button-ok =
     .label = Αποθήκευση αλλαγών
     .accesskey = Π
+permissions-autoplay-menu = Προεπιλογή για όλες τις ιστοσελίδες:
 permissions-searchbox =
     .placeholder = Αναζήτηση ιστοσελίδας
+permissions-capabilities-autoplay-allow =
+    .label = Αποδοχή ήχου και βίντεο
+permissions-capabilities-autoplay-block =
+    .label = Φραγή ήχου
+permissions-capabilities-autoplay-blockall =
+    .label = Φραγή ήχου και βίντεο
 permissions-capabilities-allow =
     .label = Αποδοχή
 permissions-capabilities-block =
@@ -46,8 +53,6 @@ permissions-capabilities-listitem-allow =
     .value = Αποδοχή
 permissions-capabilities-listitem-block =
     .value = Φραγή
-permissions-capabilities-listitem-allow-first-party =
-    .value = Να επιτρέπεται μόνο στους άμεσα εμπλεκόμενους
 permissions-capabilities-listitem-allow-session =
     .value = Αποδοχή για τη συνεδρία
 
@@ -97,6 +102,13 @@ permissions-exceptions-autoplay-media-window2 =
     .title = Εξαιρέσεις - Αυτόματη αναπαραγωγή
     .style = { permissions-window.style }
 permissions-exceptions-autoplay-media-desc2 = Μπορείτε να καθορίσετε σε ποιες ιστοσελίδες επιτρέπεται ή όχι η αυτόματη αναπαραγωγή πολυμέσων με ήχο. Πληκτρολογήστε τη διεύθυνση της ιστοσελίδας που θέλετε να διαχειριστείτε και, έπειτα, επιλέξτε "Φραγή" ή "Αποδοχή".
+
+## Site Permissions - Autoplay
+
+permissions-site-autoplay-window =
+    .title = Ρυθμίσεις - Αυτόματη αναπαραγωγή
+    .style = { permissions-window.style }
+permissions-site-autoplay-desc = Εδώ μπορείτε να διαχειριστείτε τις ιστοσελίδες που δεν ακολουθούν τις προεπιλεγμένες ρυθμίσεις αυτόματης αναπαραγωγής.
 
 ## Site Permissions - Notifications
 

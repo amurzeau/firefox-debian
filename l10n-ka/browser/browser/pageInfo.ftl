@@ -94,7 +94,7 @@ security-view-identity-validity =
 security-view-privacy =
     .value = პირადულობა და ისტორია
 security-view-privacy-history-value = ამ საიტზე აქამდე ნამყოფი ვარ?
-security-view-privacy-sitedata-value = ინახავს ეს საიტი ჩემს კომპიუტერში მონაცემებს?
+security-view-privacy-sitedata-value = ინახავს ეს საიტი ჩემს კომპიუტერში ინფორმაციას?
 security-view-privacy-clearsitedata =
     .label = ფუნთუშებისა და საიტის მონაცემების გასუფთავება
     .accesskey = გ
@@ -113,7 +113,7 @@ help-button =
 ##   $value (number) - Amount of data being stored
 ##   $unit (string) - The unit of data being stored (Usually KB)
 
-security-site-data-cookies = დიახ, ფუნთუშებსა და { $value } { $unit } საიტის მონაცემებს
+security-site-data-cookies = დიახ, ფუნთუშებსა და { $value } { $unit } მოცულობის მონაცემებს
 security-site-data-only = დიახ, { $value }{ $unit } საიტის მონაცემებს
 security-site-data-cookies-only = დიახ, ფუნთუშებს
 security-site-data-no = არა
@@ -219,7 +219,7 @@ media-file-size = { $size } კბ
 # Variables:
 #   $website (string) - The website name
 media-block-image =
-    .label = სურათების შეზღუდვა { $website }-ზე
+    .label = სურათების შეზღუდვა საიტზე { $website }
     .accesskey = ბ
 # This string is used to display the URL of the website on top of the
 # pageInfo dialog box

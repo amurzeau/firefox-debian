@@ -34,6 +34,7 @@ policies-notice =
         [windows] Vaša organizácia vám zakázala meniť niektoré možnosti.
        *[other] Vaša organizácia vám zakázala meniť niektoré možnosti.
     }
+managed-notice = Váš prehliadač spravuje vaša organizácia.
 pane-general-title = Všeobecné
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = Súkromie a bezpečnosť
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Účet Firefox
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -296,6 +293,13 @@ update-pref-write-failure-title = Chyba pri zápise
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Nepodarilo sa nám uložiť nastavenie. Nebolo možné zapísať údaje do súboru { $path }
+update-setting-write-failure-title = Chyba pri ukladaní nastavení aktualizácií
+update-in-progress-title = Prebieha aktualizácia
+update-in-progress-message = Chcete, aby { -brand-short-name } pokračoval v aktualizácii?
+update-in-progress-ok-button = &Zrušiť
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Pokračovať
 
 ## General Section - Performance
 
@@ -531,8 +535,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Uložiť
     .accesskey = U
-sync-mobilepromo-single = Pripojiť ďalšie zariadenie
-sync-mobilepromo-multi = Spravovať zariadenia
 sync-connect-another-device = Pripojiť ďalšie zariadenie
 sync-manage-devices = Spravovať zariadenia
 sync-fxa-begin-pairing = Spárovať zariadenie
@@ -663,6 +665,7 @@ addressbar-suggestions-settings = Zmeniť nastavenia pre návrhy vyhľadávania
 
 content-blocking-header = Blokovanie obsahu a ochrana pred sledovaním
 content-blocking-description = Zablokujte obsah tretích strán, ktorý vás sleduje naprieč webom. Sami si určite, aká časť z vašej aktivity na internete sa bude ukladať a zdieľať medzi stránkami.
+content-blocking-section-description = Chráňte svoje súkromie pri surfovaní na internete. Zablokujte neviditeľný obsah, ktorý vás sleduje na navštívených stránkach a tvorí profil vášho správania. Blokovanie takéhoto obsahu môže zrýchliť načítavanie stránok.
 content-blocking-learn-more = Ďalšie informácie
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -682,13 +685,13 @@ content-blocking-strict-description = Viac blokovaného obsahu zvyšuje pravdepo
 content-blocking-custom-desc = Vyberte si, čo chcete blokovať.
 content-blocking-private-trackers = Známe sledovacie prvky sú blokované v režime Súkromné prehliadanie
 content-blocking-third-party-cookies = Blokované sú sledovacie cookies tretích strán
+content-blocking-all-cookies = Všetky cookies
 content-blocking-unvisited-cookies = Cookies z nenavštívených stránok
 content-blocking-all-windows-trackers = Známe sledovacie prvky sú blokované vždy
 content-blocking-all-third-party-cookies = Blokované sú všetky cookies tretích strán
 content-blocking-cryptominers = Blokovaná je ťažba kryptomien
 content-blocking-fingerprinters = Blokovaná je tvorba odtlačku prehliadača
 content-blocking-warning-title = Pozor!
-content-blocking-warning-desc = Blokovanie cookies a sledovacích prvkov môže spôsobiť rozbitie niektorých webových stránok. Na dôveryhodných stránkach môžete blokovanie jednoducho vypnúť.
 content-blocking-warning-description = Blokovanie obsahu môže spôsobiť rozbitie niektorých webových stránok. Na dôveryhodných stránkach môžete blokovanie jednoducho vypnúť.
 content-blocking-learn-how = Ďalšie informácie
 content-blocking-reload-description = Aby sa zmeny prejavili, musíte obnoviť vaše karty.

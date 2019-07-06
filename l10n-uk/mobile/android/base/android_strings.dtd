@@ -21,12 +21,15 @@
 <!ENTITY firstrun_data_message "Менше даних, більше заощаджень">
 <!ENTITY firstrun_data_subtext2 "Вимкніть зображення на відвідуваних сайтах, щоб зменшити споживання даних.">
 <!ENTITY firstrun_sync_title "Синхронізація">
+<!ENTITY updatednewfirstrun_sync_title "Обліковий запис">
 <!ENTITY firstrun_sync_message2 "Продовжуйте з місця, на якому ви зупинилися.">
 <!ENTITY firstrun_sync_subtext2 "Використовуйте синхронізацію для доступу до закладок, паролів та інших даних, які ви зберігаєте в &brandShortName;, на всіх пристроях.">
 <!ENTITY newfirstrun_sync_subtext "Користуйтеся приватною і безпечною синхронізацією Firefox між мобільним і комп\&apos;ютером.">
+<!ENTITY updatednewfirstrun_sync_subtext "Увійдіть до свого облікового запису для отримання максимуму від &brandShortName;">
 <!ENTITY firstrun_signin_message "Під’єднайтесь і вперед">
 <!ENTITY firstrun_signin_button "Увійти до Синхронізації">
 <!ENTITY newfirstrun_signin_button "Увімкнути синхронізацію">
+<!ENTITY updatednewfirstrun_signin_button "Увійти в &brandShortName;">
 <!ENTITY  onboard_start_button_browser "Почати перегляд">
 <!ENTITY firstrun_button_notnow "Не зараз">
 <!ENTITY firstrun_button_next "Далі">
@@ -66,6 +69,12 @@
 <!ENTITY  sending_crash_report "Надсилання звіту про збій\u2026">
 <!ENTITY  crash_close_label "Закрити">
 <!ENTITY  crash_restart_label "Перезапустити &brandShortName;">
+
+<!-- Localization note (crash_notification_title, crash_notification_message, crash_notification_negative_button_text)
+     Text displayed in a system notification to allow starting the Crash Reporter (Android Q and later).-->
+<!ENTITY  crash_notification_title "Збій &brandShortName;">
+<!ENTITY  crash_notification_message "Торкніться, щоб повідомити &vendorShortName;">
+<!ENTITY  crash_notification_negative_button_text "Ігнорувати">
 
 <!ENTITY url_bar_default_text2 "Введіть запит чи адресу">
 
@@ -108,6 +117,10 @@
 <!ENTITY bookmark_folder_updated "Теку оновлено">
 <!ENTITY bookmark_parent_folder "Основна тека">
 <!ENTITY bookmark_add_folder "Додати нову теку">
+
+<!-- Localization note (bookmark_default_folder_title): Default title is used if user doesn't specify
+     one when he is creating a bookmark folder -->
+<!ENTITY bookmark_default_folder_title "(без назви)">
 
 <!ENTITY reader_saved_offline "Збережено автономно">
 <!-- Localization note (reader_switch_to_bookmarks) : This
@@ -413,8 +426,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY pref_private_data_downloadFiles2 "Завантаження">
 <!ENTITY pref_private_data_syncedTabs "Синхронізовані вкладки">
 
-<!ENTITY pref_default_browser "Зробити типовим браузером">
-
 <!ENTITY pref_default_browser2 "Зробити &brandShortName; типовим браузером">
 <!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
     Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
@@ -592,6 +603,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_keyword "Ключове слово">
 <!ENTITY bookmark_select_folder "Обрати теку">
 
+<!ENTITY bookmark_edit_undo "Повернути">
+
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
      dialog that appears after selecting the "Edit Site Settings" context menu item. -->
 <!ENTITY site_settings_title3       "Налаштування сайту">
@@ -679,6 +692,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY filepicker_audio_title "Виберіть чи запишіть звук">
 <!ENTITY filepicker_image_title "Виберіть чи зробіть фото">
 <!ENTITY filepicker_video_title "Виберіть чи запишіть відео">
+
+<!ENTITY filepicker_permission_denied "Необхідні дозволи не отримано, активовано системний вибір файлів.">
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "Ви підключені до">
@@ -921,6 +936,7 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_title "Пауза">
 <!ENTITY pip_pause_button_description "Призупинити відтворення">
 
+<!ENTITY pref_notification_settings_link "Керувати налаштуваннями сповіщень">
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "Браузер">
 <!ENTITY mls_notification_channel "Послуга розташування &vendorShortName;">
@@ -933,3 +949,4 @@ Picture-in-picture mini window -->
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
 web sites through the HTML Notifications API. -->
 <!ENTITY site_notifications_channel "Сповіщення сайтів">
+<!ENTITY crash_handler_notifications_channel "Звіти про збої &brandShortName;">

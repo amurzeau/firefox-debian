@@ -95,7 +95,7 @@ detail-update-manual =
 detail-private-browsing-label = Futtatás privát ablakokban
 detail-private-browsing-description2 = Ha engedélyezve van, akkor a kiegészítő privát böngészésben is hozzá fog férni az online tevékenységéhez. <label data-l10n-name="detail-private-browsing-learn-more">Tudjon meg többet</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = Privát ablakokban nem engedélyezett
 detail-private-disallowed-description = Ez a kiegészítő nem fut privát böngészéskor. <label data-l10n-name="detail-private-browsing-learn-more">További információk</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
@@ -158,6 +158,9 @@ private-browsing-description2 =
 extensions-view-discover =
     .name = Kiegészítők letöltése
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Javaslatok
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Legutóbbi frissítések
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -238,7 +241,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Kiegészítő-gyorsbillentyűk kezelése
     .accesskey = o
-shortcuts-empty-message = Ennek a kiegészítőnek nincsenek gyorsbillentyűi.
 shortcuts-no-addons = Egyetlen kiegészítő sincs engedélyezve.
 shortcuts-no-commands = A következő kiegészítők nem rendelkeznek gyorsbillentyűvel:
 shortcuts-input =
@@ -264,6 +266,39 @@ shortcuts-card-collapse-button = Kevesebb megjelenítése
 go-back-button =
     .tooltiptext = Ugrás vissza
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    A kiegészítők és témák olyanok, mint az alkalmazások a böngészője számára,
+    és segítségükkel megvédheti a jelszavait, videókat tölthet le, leárazásokat
+    találhat, blokkolhatja a zavaró hirdetéseket, módosíthatja a böngésző
+    kinézetét, és még sok mást is tehet. Ezek a kis programokat általában
+    harmadik felek készítik. Itt vagy egy válogatás, amelyet a { -brand-product-name }
+    a kivételes biztonságuk, teljesítményük és funkcionalitásuk miatt 
+    <a data-l10n-name="learn-more-trigger">javasol</a>.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations =
+    Ezen javaslatok egy része személyre szabott. Ennek alapja a telepített kiegészítői,
+    a profilbeállításai és a használati statisztikái.
+discopane-notice-learn-more = További tudnivalók
+privacy-policy = Adatvédelmi irányelvek
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = szerző: <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Felhasználók: { $dailyUsers }
+install-extension-button = Hozzáadás a { -brand-product-name }hoz
+install-theme-button = Téma telepítése
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Kezelés
+find-more-addons = Több kiegészítő keresése
+
 ## Add-on actions
 
 report-addon-button = Jelentés
@@ -271,6 +306,14 @@ remove-addon-button = Eltávolítás
 disable-addon-button = Letiltás
 enable-addon-button = Engedélyezés
 expand-addon-button = További beállítások
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Beállítások
+       *[other] Beállítások
+    }
+details-addon-button = Részletek
+release-notes-addon-button = Kiadási megjegyzések
+permissions-addon-button = Engedélyek
 addons-enabled-heading = Engedélyezve
 addons-disabled-heading = Tiltva
 ask-to-activate-button = Aktiválás kérésre
@@ -281,6 +324,11 @@ addon-detail-version-label = Verzió
 addon-detail-last-updated-label = Utoljára frissítve
 addon-detail-homepage-label = Honlap
 addon-detail-rating-label = Értékelés
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Értékelés: { NUMBER($rating, maximumFractionDigits: 1) } az 5-ből
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -310,7 +358,21 @@ install-update-button = Frissítés
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed =
     .title = Engedélyezett privát ablakokban
+addon-detail-private-browsing-help = Ha engedélyezve van, a kiegészítő hozzá fog férni az online tevékenységekhez privát böngészés közben. <a data-l10n-name="learn-more">További tudnivalók</a>
 addon-detail-private-browsing-allow = Engedélyezés
 addon-detail-private-browsing-disallow = Tiltás
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Ajánlott
+    .alt = Ajánlott
 available-updates-heading = Elérhető frissítések
 recent-updates-heading = Legutóbbi frissítések
+release-notes-loading = Betöltés…
+release-notes-error = Sajnáljuk, de hiba történt a kiadási megjegyzések betöltésekor.
+addon-permissions-empty = Ez a kiegészítő nem igényel semmilyen engedélyt
+recommended-extensions-heading = Ajánlott kiegészítők
+recommended-themes-heading = Ajánlott témák
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Kreatívnak érzi magát? <a data-l10n-name="link">Állítsa össze a saját témáját a Firefox Color használatával.</a>

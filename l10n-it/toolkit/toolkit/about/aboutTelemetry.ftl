@@ -15,6 +15,7 @@ about-telemetry-option-group-older = Più vecchi
 about-telemetry-previous-ping = <<
 about-telemetry-next-ping = >>
 about-telemetry-page-title = Dati telemetria
+about-telemetry-current-store = Store corrente:
 about-telemetry-more-information = Per approfondire:
 about-telemetry-firefox-data-doc = La <a data-l10n-name="data-doc-link">documentazione Firefox Data</a> include guide sull’utilizzo degli strumenti dedicati alla gestione dei dati.
 about-telemetry-telemetry-client-doc = La <a data-l10n-name="client-doc-link">documentazione del client Firefox Telemetry</a> include definizioni, documentazione relativa alle API e fonti di riferimento per i dati.
@@ -139,3 +140,4 @@ about-telemetry-origin-section = Telemetria “Origin”
 about-telemetry-origin-origin = origine
 about-telemetry-origin-count = totale
 about-telemetry-origins-explanation = La <a data-l10n-name="origin-doc-link">telemetria “Origin” in Firefox</a> codifica i dati prima dell’invio. In questo modo { $telemetryServerOwner } può effettuare conteggi, ma non può determinare se una specifica istanza di { -brand-product-name } abbia contribuito o meno a quel totale. <a data-l10n-name="prio-blog-link">Ulteriori informazioni</a>.
+about-telemetry-process = Processo “{ $process }”

@@ -32,8 +32,15 @@ app-basics-name = Namn
 app-basics-version = Versjon
 app-basics-build-id = Bygg-ID
 app-basics-update-channel = Oppdateringskanal
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] Oppdateringsmappe
+       *[other] Oppdateringsmappe
+    }
 app-basics-update-history = Oppdateringshistorikk
 app-basics-show-update-history = Vis oppdateringshistorikk
+# Represents the path to the binary used to start the application.
+app-basics-binary = Programfil
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Profilmappe
@@ -79,6 +86,8 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Avgjerdslogg
 graphics-crash-guards-title = Krasjvern slo av funksjonar
 graphics-workarounds-title = Løysingar
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Protokoll for vindaugshandterar
 place-database-title = Plasser database
 place-database-integrity = Integritet
 place-database-verify-integrity = Stadfest integritet
@@ -196,6 +205,7 @@ gpu-device-id = Einings-ID
 gpu-subsys-id = Subsys-ID
 gpu-drivers = Drivarar
 gpu-ram = RAM
+gpu-driver-vendor = Drivar-produsent
 gpu-driver-version = Drivarversjon
 gpu-driver-date = Drivardato
 gpu-active = Aktiv
@@ -261,7 +271,7 @@ multi-process-status-1 = Slått på som standard
 multi-process-status-2 = Slått av
 multi-process-status-4 = Avslått av tilgjengeverktøy
 multi-process-status-6 = Slått av av ikkje-støtta tekst-input
-multi-process-status-7 = Slått av av utvidingar
+multi-process-status-7 = Slått av av tillegg
 multi-process-status-8 = Tvinga deaktivering
 multi-process-status-unknown = Ukjend status
 async-pan-zoom = Asynkron pan/zoom

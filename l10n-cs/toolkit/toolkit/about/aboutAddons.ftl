@@ -20,7 +20,7 @@ list-empty-recent-updates =
 list-empty-find-updates =
     .label = Zkontrolovat aktualizace
 list-empty-button =
-    .label = Zjistěte více informací o doplňcích
+    .label = Zjistit více informací o doplňcích
 install-addon-from-file =
     .label = Instalovat doplněk ze souboru…
     .accesskey = I
@@ -95,7 +95,7 @@ detail-update-manual =
 detail-private-browsing-label = Povolit v anonymních oknech
 detail-private-browsing-description2 = Zde můžete tomuto rozšíření povolit běh a přístup k vaší aktivitě na internetu v anonymních oknech. <label data-l10n-name="detail-private-browsing-learn-more">Zjistit více</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = Není povoleno v anonymních oknech
 detail-private-disallowed-description = Toto rozšíření v anonymních oknech nefunguje. <label data-l10n-name="detail-private-browsing-learn-more">Zjistit více</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
@@ -155,6 +155,9 @@ private-browsing-description2 =
 extensions-view-discover =
     .name = Získání doplňků
     .tooltiptext = Získejte další zajímavé doplňky
+extensions-view-discopane =
+    .name = Doporučení
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Aktualizováno
     .tooltiptext = Nedávno aktualizované doplňky
@@ -235,7 +238,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Správa klávesových zkratek pro rozšíření
     .accesskey = S
-shortcuts-empty-message = Toto rozšíření nemá žádné klávesové zkratky.
 shortcuts-no-addons = Nemáte povoleno žádné rozšíření.
 shortcuts-no-commands = Následující rozšíření nemají žádné klávesové zkratky:
 shortcuts-input =
@@ -262,13 +264,52 @@ shortcuts-card-collapse-button = Zobrazit méně
 go-back-button =
     .tooltiptext = Zpátky
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    Rozšíření a vzhledy jsou jako aplikace pro váš prohlížeč. S nimi můžete chránit
+    svá hesla, stahovat videa, hledat výhodné nabídky, blokovat otravné reklamy,
+    měnit vzhled prohlížeče a mnoho dalšího. Tyto malé prográmky většinou vytváří
+    někdy jiný než my. Zde je výběr rozšíření <a data-l10n-name="learn-more-trigger">doporučených</a>
+    pro aplikaci { -brand-product-name } díky jejich jedinečné bezpečnosti a funkcím.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations =
+    Některá z těchto doporučení se zobrazují na základě informací o ostatních
+    vámi nainstalovaných rozšíření, nastavení profilu a statistik o používání.
+discopane-notice-learn-more = Zjistit více
+privacy-policy = Zásady ochrany osobních údajů
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = od autora <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Počet uživatelů: { $dailyUsers }
+install-extension-button = Přidat do aplikace { -brand-product-name }
+install-theme-button = Nainstalovat vzhled
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Správa
+find-more-addons = Najít další doplňky
+
 ## Add-on actions
 
 report-addon-button = Nahlásit
 remove-addon-button = Odebrat
 disable-addon-button = Zakázat
 enable-addon-button = Povolit
-expand-addon-button = Více možností
+expand-addon-button = Další možnosti
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Možnosti
+       *[other] Předvolby
+    }
+details-addon-button = Podrobnosti
+release-notes-addon-button = Poznámky k vydání
+permissions-addon-button = Oprávnění
 addons-enabled-heading = Povoleno
 addons-disabled-heading = Zakázáno
 ask-to-activate-button = Spustit na vyžádání
@@ -279,6 +320,11 @@ addon-detail-version-label = Verze
 addon-detail-last-updated-label = Poslední aktualizace
 addon-detail-homepage-label = Domovská stránka
 addon-detail-rating-label = Hodnocení
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Hodnoceno { NUMBER($rating, maximumFractionDigits: 1) } z 5 hvězdiček
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -309,8 +355,21 @@ install-update-button = Aktualizovat
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed =
     .title = Povoleno v anonymních oknech
-addon-detail-private-browsing-help = Povolená rozšíření mají přístup k vašim online aktivitám i během anonymního prohlížení. <a data-l10n-name="learn-more">Zjistit více</a>
+addon-detail-private-browsing-help = Povolená rozšíření mají přístup k vašim online aktivitám i v anonymních oknech. <a data-l10n-name="learn-more">Zjistit více</a>
 addon-detail-private-browsing-allow = Povolit
 addon-detail-private-browsing-disallow = Nepovolit
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Doporučené
+    .alt = Doporučené
 available-updates-heading = Dostupné aktualizace
 recent-updates-heading = Aktualizováno
+release-notes-loading = Načítání…
+release-notes-error = Omlouváme se, ale při načítání poznámek k vydání nastala chyba.
+addon-permissions-empty = Toto rozšíření neotřenuje žádná oprávnění.
+recommended-extensions-heading = Doporučená rozšíření
+recommended-themes-heading = Doporučené vzhledy
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Jste tvořiví? <a data-l10n-name="link">Vyrobte si vlastní vzhled pomocí Firefox Color.</a>

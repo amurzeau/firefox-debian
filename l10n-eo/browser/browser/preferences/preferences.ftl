@@ -34,6 +34,7 @@ policies-notice =
         [windows] Via organizaĵo malŝaltis la eblon ŝanĝi kelkajn elekteblojn.
        *[other] Via organizaĵo malŝaltis la eblon ŝanĝi kelkajn preferojn.
     }
+managed-notice = Via retumilo estas administrata de via organizo.
 pane-general-title = Ĉefaj
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = Privateco kaj sekureco
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Konto de Firefox
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -293,6 +290,21 @@ update-pref-write-failure-title = Malsukcesa skribo
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Ne eblis konservi preferon. Ne eblis skribi en la dosiero: { $path }
+update-setting-write-failure-title = Eraro dum konservo de ĝisdatigoj
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    { -brand-short-name } trovis eraron kaj ne konservis tiun ĉi ŝanĝon. Bonvolu noti ke oni bezonas povi skribi la suban dosieron, por povi agordi tiun ĉi ĝisdatigan preferon. Vi, aŭ sisteman administranton povus eble solvi la eraron jene: rajtigi al la grupo Users plenan regadon de tiu ĉi dosiero.
+    
+    Ne eblis skribi la dosieron: { $path }
+update-in-progress-title = Ĝisdatigo plenumata
+update-in-progress-message = Ĉu vi volas ke { -brand-short-name } daŭrigu tiun ĉi ĝisdatigon?
+update-in-progress-ok-button = &Abandoni
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Daŭrigi
 
 ## General Section - Performance
 
@@ -528,8 +540,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Konservi
     .accesskey = K
-sync-mobilepromo-single = Konekti alian aparaton
-sync-mobilepromo-multi = Administri aparatojn
 sync-connect-another-device = Konekti alian aparaton
 sync-manage-devices = Administri aparatojn
 sync-fxa-begin-pairing = Asocii aparaton
@@ -549,6 +559,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Esceptoj…
     .accesskey = c
+forms-generate-passwords =
+    .label = Sugesti kaj krei fortikajn pasvortojn
+    .accesskey = S
 forms-saved-logins =
     .label = Konservitaj akreditiloj…
     .accesskey = a
@@ -687,7 +700,6 @@ content-blocking-all-third-party-cookies = Ĉiuj nerektaj kuketoj
 content-blocking-cryptominers = Miniloj de ĉifromono
 content-blocking-fingerprinters = Identigiloj de ciferecaj spuroj
 content-blocking-warning-title = Atentu!
-content-blocking-warning-desc = La blokado de kuketoj kaj spuriloj povas misfunkciigi kelkajn retejojn. Estas facile malaktivigi la blokadon por tiuj retejoj, kiujn vi fidas.
 content-blocking-warning-description = La blokado de enhavo povas misfunkciigi kelkajn retejojn. Estas facile malaktivigi la blokadon por retejoj, kiujn vi fidas.
 content-blocking-learn-how = Pli da informo
 content-blocking-reload-description = Vi bezonos reŝargi viajn langetojn por apliki tiujn ĉi ŝanĝojn.
@@ -754,6 +766,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Esceptoj
     .accesskey = E
+permissions-autoplay = Aŭtomata ludado
+permissions-autoplay-settings =
+    .label = Agordoj…
+    .accesskey = A
 permissions-block-popups =
     .label = Bloki ŝprucfenestrojn
     .accesskey = B

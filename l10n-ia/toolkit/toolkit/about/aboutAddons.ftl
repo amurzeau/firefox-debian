@@ -97,11 +97,11 @@ detail-update-manual =
     .label = Inactive
     .tooltiptext = Non installar automaticamente le actualisationes
 # Used as a description for the option to allow or block an add-on in private windows.
-detail-private-browsing-label = Aperir in Fenestra private
+detail-private-browsing-label = Execution in fenestras private
 detail-private-browsing-description2 = Quando consentite, le extension habera accesso a tu activitates online durante le navigation anonyme. <label data-l10n-name="detail-private-browsing-learn-more">Saper plus</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
-detail-private-disallowed-label = Fenestras private non consentite
+# cannot be overridden by the user.
+detail-private-disallowed-label = Non permittite in fenestras private
 detail-private-disallowed-description = Iste extension non flue durante le navigation anonyme. <label data-l10n-name="detail-private-browsing-learn-more">Saper plus</label>.
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = Require accesso a Fenestras private
@@ -154,10 +154,13 @@ legacy-warning-show-legacy = Monstrar le extensiones obsolete
 legacy-extensions =
     .value = Extensiones obsolete
 legacy-extensions-description = Iste extensiones non satisface le standards actual de { -brand-short-name } e ha essite disactivate. <label data-l10n-name="legacy-learn-more">Saper lo que cambiava al additivos</label>
-private-browsing-description2 = { -brand-short-name } es cambiar como le extensiones functiona in Navigation private. Cata nove extension que tu adde a { -brand-short-name } non fluera de ordinario in le Fenestras private. A minus que tu lo consenti in le parametros, le extension non functiona in Navigation private e illac non habera accesso a tu activitates online. Nos ha facite iste cambio pro mantener private tu navigation anonyme. <label data-l10n-name="private-browsing-learn-more">Apprende a gerer le parametros del extension.</label>
+private-browsing-description2 = { -brand-short-name } cambia le functionamento del extensiones in Navigation private. Omne nove extensiones que tu adde a { -brand-short-name } normalmente non se executara in le Fenestras private. Si tu non lo permitte in le configuration, le extension non functionara in Navigation private e non habera accesso a tu activitates online illac. Nos ha facite iste cambio pro mantener private tu navigation private. <label data-l10n-name="private-browsing-learn-more">Discoperi como configurar le extensiones.</label>
 extensions-view-discover =
     .name = Obtener additivos
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Recommendationes
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Actualisationes recente
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -238,7 +241,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Gerer le vias breve del extension
     .accesskey = V
-shortcuts-empty-message = Il non ha vias breve in iste extension
 shortcuts-no-addons = Tu non ha ulle extensiones activate
 shortcuts-no-commands = Le sequente extensiones non ha claves accelerator:
 shortcuts-input =
@@ -264,6 +266,30 @@ shortcuts-card-collapse-button = Monstrar minus
 go-back-button =
     .tooltiptext = Regreder
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro = Le extensiones e le themas es como mini-applicationes pro tu navigator e illos te consenti de proteger contrasignos, discargar videos, trovar offertas, blocar enoiose avisos publicitari, cambiar le apparentia de tu navigator e multo plus. Iste micre programmas software es sovente disveloppate per un tertie parte. Ecce un selection que { -brand-product-name } <a data-l10n-name="learn-more-trigger">recommenda</a> pro securitate, rendimento e functionalitate exceptional.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations = Parte de iste recommendationes es personalisate. Illos basate sur preferentias de profilo e statistica de uso de altere extensiones que tu ha installate.
+discopane-notice-learn-more = Saper plus
+privacy-policy = Politica de confidentialitate
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = per <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Usatores: { $dailyUsers }
+install-extension-button = Adder a { -brand-product-name }
+install-theme-button = Installar thema
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Gerer
+find-more-addons = Trovar altere additivos
+
 ## Add-on actions
 
 report-addon-button = Reportar
@@ -271,6 +297,14 @@ remove-addon-button = Remover
 disable-addon-button = Disactivar
 enable-addon-button = Activar
 expand-addon-button = Altere optiones
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Optiones
+       *[other] Preferentias
+    }
+details-addon-button = Detalios
+release-notes-addon-button = Notas pro iste version
+permissions-addon-button = Permissos
 addons-enabled-heading = Activate
 addons-disabled-heading = Disactivate
 ask-to-activate-button = Demandar pro activar
@@ -281,6 +315,11 @@ addon-detail-version-label = Version
 addon-detail-last-updated-label = Ultime actualisation
 addon-detail-homepage-label = Pagina initial
 addon-detail-rating-label = Valutation
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Voto: { NUMBER($rating, maximumFractionDigits: 1) } su 5
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -309,9 +348,17 @@ install-update-button = Actualisar
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed =
-    .title = Consentite in fenestras reservate
+    .title = Permittite in fenestras private
 addon-detail-private-browsing-help = Quando consentite, le extension habera accesso a tu activitates online durante le navigation reservate. <a data-l10n-name="learn-more">Saper plus</a>
 addon-detail-private-browsing-allow = Consentir
 addon-detail-private-browsing-disallow = Non consentir
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Recommendate
+    .alt = Recommendate
 available-updates-heading = Actualisationes disponibile
 recent-updates-heading = Actualisationes recente
+release-notes-loading = Cargamento…
+release-notes-error = Pardono, ma il habeva un error cargante le notas de revision
+addon-permissions-empty = Iste extension non require ulle permission

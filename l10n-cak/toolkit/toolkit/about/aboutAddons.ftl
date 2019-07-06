@@ -158,6 +158,9 @@ private-browsing-description2 =
 extensions-view-discover =
     .name = Kek'ulutäj ri taq tz'aqat
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Taq chilab'enïk
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = K'ak'a' taq k'exoj
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -238,7 +241,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Kenuk'samajïx Kichojokem taq K'amal
     .accesskey = i
-shortcuts-empty-message = Majun ruchojokem re k'amal re'.
 shortcuts-no-addons = Majun ak'amal atzijon.
 shortcuts-no-commands = Re taq k'amal re' majun ruq'a' rokem pitz'b'äl:
 shortcuts-input =
@@ -264,19 +266,65 @@ shortcuts-card-collapse-button = Tik'ut pe Jub'a'
 go-back-button =
     .tooltiptext = Titzolin
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    Ri taq k'amal chuqa' ri taq wachinel e ruchokoy okik'amaya'l chuqa' nikiya' q'ij chi re
+    ye'achajij ri ewan taq  tzij, ye'aqasaj taq silowäch, ye'akanoj taq sujuj, ye'aq'ät taq eltzijol,
+    najäl ruwäch ri okik'amaya'l chuqa' ch'aqa' chik. Jutaqil e aj röx winäq ri yeb'anon re ko'öl taq runuk'samaj cholkema'. Niqasüj jun rucha'oj { -brand-product-name }
+    <a data-l10n-name="learn-more-trigger">echilab'en</a> pa metz'etel
+    jikomal, rub'eyal nisamäj chuqa' rusamaj.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations = Jujun chi ke re taq chilab'enïk re' e'ichinan. K'o kixe'el pa jujun chik taq k'amal e'ayakon, kajowab'al rub'i' awäch chuqa' rumolob'a' rokisaxik.
+discopane-notice-learn-more = Tetamäx ch'aqa' chik
+privacy-policy = Ichinan Na'oj
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = ruma <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Okisanela': { $dailyUsers }
+install-extension-button = Titz'aqatisäx pa { -brand-product-name }
+install-theme-button = Tiyak Wachinel
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Tinuk'samajïx
+find-more-addons = Kekanöx ch'aqa' chik taq tz'aqat
+
 ## Add-on actions
 
+report-addon-button = Tiya' rutzijol
 remove-addon-button = Tiyuj
 disable-addon-button = Tichup
 enable-addon-button = Titzij
 expand-addon-button = Ch'aqa' chik taq Cha'oj
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Taq cha'oj
+       *[other] Taq ajowab'äl
+    }
+details-addon-button = Kib'anikil
+release-notes-addon-button = Ruch'utitzijol re ruwäch re'
+permissions-addon-button = Taq ya'oj q'ij
 addons-enabled-heading = Tzijon
 addons-disabled-heading = Chupun
+ask-to-activate-button = Tik'utüx richin Nitzij
+always-activate-button = Junelik Titzij
+never-activate-button = Majub'ey Titzij
 addon-detail-author-label = B'anel
 addon-detail-version-label = Ruwäch
 addon-detail-last-updated-label = Ruk'isib'äl K'exoj
 addon-detail-homepage-label = Ruxaq tikirib'äl
 addon-detail-rating-label = Kejqalem
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Retal ruq'ij { NUMBER($rating, maximumFractionDigits: 1) } richin 5
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -289,3 +337,28 @@ addon-detail-reviews-link =
         [one] { $numberOfReviews } nik'oj
        *[other] { $numberOfReviews } taq nik'oj
     }
+
+## Pending uninstall message bar
+
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = Xyuj el <span data-l10n-name="addon-name">{ $addon }</span>.
+pending-uninstall-undo-button = Titzolïx
+addon-detail-updates-label = Tiya' q'ij chi ke ri Kiyonil k'exoj
+addon-detail-updates-radio-default = K'o wi
+addon-detail-updates-radio-on = Titzij
+addon-detail-updates-radio-off = Tichup
+addon-detail-update-check-label = Kekanöx taq k'exoj
+install-update-button = Tik'ex
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Tiya' q'ij pa taq ichinan tzuwäch
+addon-detail-private-browsing-help = Toq tzij, ri k'amal pa ronojel samaj xtok wi toq atokinäq pa k'amaya'l pan ichinan rub'anikil. <a data-l10n-name="learn-more">Tetamäx ch'aqa' chik</a>
+addon-detail-private-browsing-allow = Tiya' q'ij
+addon-detail-private-browsing-disallow = Man Tiya' Q'ij
+available-updates-heading = Taq K'exoj e K'o
+recent-updates-heading = K'ak'a' taq K'exoj
+release-notes-loading = Nusamajib'ej…
+release-notes-error = Takuyu' qamak, xa xk'ulwachitäj jun sachoj toq nok pa ch'utaq rutzijol ri ko'öl wuj.
+addon-permissions-empty = Majun ya'oj q'ij nrajo re k'amal re'

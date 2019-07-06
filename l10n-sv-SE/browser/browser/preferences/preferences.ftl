@@ -34,6 +34,7 @@ policies-notice =
         [windows] Ditt företag har inaktiverat möjligheten att ändra vissa inställningar.
        *[other] Ditt företag har inaktiverat möjligheten att ändra vissa inställningar.
     }
+managed-notice = Din webbläsare hanteras av din organisation.
 pane-general-title = Allmänt
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = Sekretess & säkerhet
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Firefox-konto
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -293,6 +290,21 @@ update-pref-write-failure-title = Skrivfel
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Det gick inte att spara inställningen. Kunde inte skriva till fil: { $path }
+update-setting-write-failure-title = Det gick inte att spara uppdateringsinställningar
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    { -brand-short-name } stötte på ett fel och lagrade inte den här ändringen. Observera att ange denna uppdateringsinställning kräver tillstånd att skriva till filen nedan. Du eller en systemadministratör kan eventuellt lösa felet genom att ge användargruppen fullständig kontroll till den här filen.
+    
+    Kunde inte skriva till fil: { $path }
+update-in-progress-title = Uppdatering pågår
+update-in-progress-message = Vill du att { -brand-short-name } ska fortsätta med denna uppdatering?
+update-in-progress-ok-button = &Ignorera
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Fortsätt
 
 ## General Section - Performance
 
@@ -528,8 +540,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Spara
     .accesskey = S
-sync-mobilepromo-single = Anslut en annan enhet
-sync-mobilepromo-multi = Hantera enheter
 sync-connect-another-device = Anslut en annan enhet
 sync-manage-devices = Hantera enheter
 sync-fxa-begin-pairing = Para ihop en enhet
@@ -549,6 +559,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Undantag…
     .accesskey = d
+forms-generate-passwords =
+    .label = Föreslå och skapa starka lösenord
+    .accesskey = r
 forms-saved-logins =
     .label = Sparade inloggningar…
     .accesskey = l
@@ -687,7 +700,6 @@ content-blocking-all-third-party-cookies = Alla kakor från tredje part
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Se upp!
-content-blocking-warning-desc = Att blockera kakor och trackers kan begränsa funktionaliteten hos vissa webbplatser. Det är enkelt att inaktivera blockering för webbplatser du litar på.
 content-blocking-warning-description = Att blockera innehåll kan begränsa funktionaliteten hos vissa webbplatser. Det är enkelt att inaktivera blockering för webbplatser du litar på.
 content-blocking-learn-how = Lär dig hur
 content-blocking-reload-description = Du måste ladda om dina flikar för att kunna tillämpa ändringarna.
@@ -754,6 +766,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Undantag
     .accesskey = U
+permissions-autoplay = Automatisk uppspelning
+permissions-autoplay-settings =
+    .label = Inställningar…
+    .accesskey = n
 permissions-block-popups =
     .label = Blockera popup-fönster
     .accesskey = B
