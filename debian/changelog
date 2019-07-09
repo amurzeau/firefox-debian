@@ -1,13 +1,35 @@
-firefox (68.0-1) UNRELEASED; urgency=medium
+firefox (68.0-1) unstable; urgency=medium
 
   * New upstream release.
+  * Fixes for mfsa2019-21, also known as:
+    CVE-2019-9811, CVE-2019-11711, CVE-2019-11712, CVE-2019-11713,
+    CVE-2019-11714, CVE-2019-11715, CVE-2019-11716, CVE-2019-11717,
+    CVE-2019-11718, CVE-2019-11720, CVE-2019-11721, CVE-2019-11730,
+    CVE-2019-11723, CVE-2019-11724, CVE-2019-11725, CVE-2019-11727,
+    CVE-2019-11728, CVE-2019-11710, CVE-2019-11709.
 
- -- Mike Hommey <glandium@debian.org>  Wed, 10 Jul 2019 07:56:46 +0900
+  * debian/control*: Bump nss, sqlite, rustc, cargo and cbindgen build
+    dependencies. Remove Build-Conflicts with nss 3.44-1, since we now
+    build-depend on a more recent version.
+  * debian/rules, debian/control: Don't build against system sqlite, as
+    Debian doesn't have the required version yet.
+  * [firefox-esr] debian/l10n/browser-l10n.control*, debian/l10n/gen:
+    Don't generate iceweasel l10n transition packages for locales that
+    were never offered with iceweasel.
+  * debian/control, debian/l10n/browser-l10n.control.in: Add transition
+    dependencies for Bengali l10n. There is now only one Bengali l10n
+    package instead of two.
+  * debian/rules: Disable JIT at build time on mips because it fails to build.
+
+  * build/gyp.mozbuild: Revert patch that disables libyuv assembly on
+    mips64. It apparently compiles, now.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 10 Jul 2019 08:22:05 +0900
 
 firefox (67.0.4-1) unstable; urgency=medium
 
   * New upstream release.
-  * Fixes for mfsa219-19, also known as CVE-2019-11708.
+  * Fixes for mfsa2019-19, also known as CVE-2019-11708.
 
  -- Mike Hommey <glandium@debian.org>  Thu, 20 Jun 2019 11:05:27 -0700
 
