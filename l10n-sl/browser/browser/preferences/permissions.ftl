@@ -34,8 +34,15 @@ permissions-button-cancel =
 permissions-button-ok =
     .label = Shrani spremembe
     .accesskey = S
+permissions-autoplay-menu = Privzeto za vse spletne strani:
 permissions-searchbox =
     .placeholder = Išči po spletni strani
+permissions-capabilities-autoplay-allow =
+    .label = Dovoli zvok in video
+permissions-capabilities-autoplay-block =
+    .label = Zavrni zvok
+permissions-capabilities-autoplay-blockall =
+    .label = Zavrni zvok in video
 permissions-capabilities-allow =
     .label = Dovoli
 permissions-capabilities-block =
@@ -46,8 +53,6 @@ permissions-capabilities-listitem-allow =
     .value = Dovoli
 permissions-capabilities-listitem-block =
     .value = Prepovej
-permissions-capabilities-listitem-allow-first-party =
-    .value = Dovoli samo lastne
 permissions-capabilities-listitem-allow-session =
     .value = Dovoli v tej seji
 
@@ -58,10 +63,6 @@ permissions-invalid-uri-label = Prosim, vnesite veljaven naslov.
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-tracking-protection-window =
-    .title = Izjeme – Zaščita pred sledenjem
-    .style = { permissions-window.style }
-permissions-exceptions-tracking-protection-desc = Na teh spletnih straneh ste onemogočili zaščito pred sledenjem.
 permissions-exceptions-content-blocking-window =
     .title = Izjeme – Zavračanje vsebine
     .style = { permissions-window.style }
@@ -101,6 +102,13 @@ permissions-exceptions-autoplay-media-window2 =
     .title = Izjeme – Samodejno predvajanje
     .style = { permissions-window.style }
 permissions-exceptions-autoplay-media-desc2 = Določite lahko, katere strani smejo vedno samodejno predvajati vsebine z zvokom in katere jih ne smejo nikoli. Vnesite točen naslov strani in kliknite gumb Prepovej ali Dovoli.
+
+## Site Permissions - Autoplay
+
+permissions-site-autoplay-window =
+    .title = Nastavitve – Samodejno predvajanje
+    .style = { permissions-window.style }
+permissions-site-autoplay-desc = Tukaj lahko upravljate spletne strani, za katere ne veljajo privzete nastavitve samodejnega predvajanja.
 
 ## Site Permissions - Notifications
 

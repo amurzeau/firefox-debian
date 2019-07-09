@@ -99,7 +99,7 @@ detail-update-manual =
 detail-private-browsing-label = Delovanje v zasebnih oknih
 detail-private-browsing-description2 = Če je dovoljeno, bo imela razširitev dostop do vaše spletne dejavnosti v zasebnem brskanju. <label data-l10n-name="detail-private-browsing-learn-more">Več o tem</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = Ni dovoljeno v zasebnih oknih
 detail-private-disallowed-description = Ta razširitev ne deluje v zasebnem brskanju. <label data-l10n-name="detail-private-browsing-learn-more">Več o tem</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
@@ -159,6 +159,9 @@ private-browsing-description2 =
 extensions-view-discover =
     .name = Prenesi dodatke
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Priporočila
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Nedavne posodobitve
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -239,7 +242,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Upravljanje bližnjic razširitev
     .accesskey = b
-shortcuts-empty-message = Za to razširitev ni bližnjic.
 shortcuts-no-addons = Nimate omogočenih razširitev.
 shortcuts-no-commands = Naslednje razširitve nimajo dodeljenih bližnjic:
 shortcuts-input =
@@ -267,19 +269,68 @@ shortcuts-card-collapse-button = Prikaži manj
 go-back-button =
     .tooltiptext = Nazaj
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    Razširitve in teme so kot aplikacije za vaš brskalnik in vam omogočajo
+    varovanje gesel, prenašanje videoposnetkov, iskanje ponudb, zavračanje
+    nadležnih oglasov, spreminjanje izgleda brskalnika in še veliko več. Te majhne
+    programčke pogosto razvijajo tretje osebe. Tukaj je izbira, ki jo { -brand-product-name }
+    <a data-l10n-name="learn-more-trigger">priporoča</a> zaradi izjemne varnosti,
+    zmogljivosti in funkcionalnosti.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations =
+    Nekatera od teh priporočil so prilagojena za vas. Temeljijo na vaših
+    ostalih razširitvah, nastavitvah profila in statistiki uporabe.
+discopane-notice-learn-more = Več o tem
+privacy-policy = Politika zasebnosti
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = (<a data-l10n-name="author">{ $author }</a>)
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Uporabnikov: { $dailyUsers }
+install-extension-button = Dodaj v { -brand-product-name }
+install-theme-button = Namesti temo
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Upravljaj
+find-more-addons = Poišči več dodatkov
+
 ## Add-on actions
 
+report-addon-button = Prijavi
 remove-addon-button = Odstrani
 disable-addon-button = Onemogoči
 enable-addon-button = Omogoči
 expand-addon-button = Več možnosti
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Možnosti
+       *[other] Nastavitve
+    }
+details-addon-button = Podrobnosti
+release-notes-addon-button = Opombe ob izdaji
+permissions-addon-button = Dovoljenja
 addons-enabled-heading = Omogočeno
 addons-disabled-heading = Onemogočeno
+ask-to-activate-button = Vprašaj pred uporabo
+always-activate-button = Vedno omogoči
+never-activate-button = Nikoli ne omogoči
 addon-detail-author-label = Avtor
 addon-detail-version-label = Različica
 addon-detail-last-updated-label = Zadnja posodobitev
 addon-detail-homepage-label = Domača stran
 addon-detail-rating-label = Ocena
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Ocena { NUMBER($rating, maximumFractionDigits: 1) } od 5
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -294,3 +345,38 @@ addon-detail-reviews-link =
         [few] { $numberOfReviews } ocene
        *[other] { $numberOfReviews } ocen
     }
+
+## Pending uninstall message bar
+
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = Dodatek <span data-l10n-name="addon-name">{ $addon }</span> je bil odstranjen.
+pending-uninstall-undo-button = Razveljavi
+addon-detail-updates-label = Dovoli samodejne posodobitve
+addon-detail-updates-radio-default = Privzeto
+addon-detail-updates-radio-on = Vključeno
+addon-detail-updates-radio-off = Izključeno
+addon-detail-update-check-label = Poišči posodobitve
+install-update-button = Posodobi
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Dovoljeno v zasebnih oknih
+addon-detail-private-browsing-help = Če je dovoljeno, bo imela razširitev dostop do vaše spletne dejavnosti v zasebnem brskanju. <a data-l10n-name="learn-more">Več o tem</a>
+addon-detail-private-browsing-allow = Dovoli
+addon-detail-private-browsing-disallow = Ne dovoli
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Priporočeno
+    .alt = Priporočeno
+available-updates-heading = Razpoložljive posodobitve
+recent-updates-heading = Nedavne posodobitve
+release-notes-loading = Nalaganje …
+release-notes-error = Pri nalaganju opomb k izdaji je prišlo do napake.
+addon-permissions-empty = Ta razširitev ne zahteva nobenih dovoljenj
+recommended-extensions-heading = Priporočene razširitve
+recommended-themes-heading = Priporočene teme
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Ste ustvarjalno razpoloženi? <a data-l10n-name="link">Ustvarite lastno temo s Firefox Colorjem.</a>

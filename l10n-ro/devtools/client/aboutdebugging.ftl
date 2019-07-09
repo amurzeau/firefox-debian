@@ -12,7 +12,7 @@
 about-debugging-page-title-setup-page = Depanare - Configurare
 # Page title (ie tab title) for the Runtime page
 # { $selectedRuntimeId } is the id of the current runtime, such as "this-firefox", "localhost:6080", ...
-about-debugging-page-title-runtime-page = Depanare - Timp de execuție / { $selectedRuntimeId }
+about-debugging-page-title-runtime-page = Depanare - Mediu de execuție / { $selectedRuntimeId }
 
 # Sidebar strings
 
@@ -38,11 +38,11 @@ aboutdebugging-sidebar-runtime-connection-status-disconnected = Deconectat
 about-debugging-sidebar-no-devices = Niciun dispozitiv descoperit
 # Text displayed in buttons found in sidebar items representing remote runtimes.
 # Clicking on the button will attempt to connect to the runtime.
-about-debugging-sidebar-item-connect-button = Conectare
+about-debugging-sidebar-item-connect-button = Conectează-te
 # Text displayed in buttons found in sidebar items when the runtime is connecting.
 about-debugging-sidebar-item-connect-button-connecting = Se conectează…
 # Text displayed in buttons found in sidebar items when the connection failed.
-about-debugging-sidebar-item-connect-button-connection-failed = Conexiunea a eșuat.
+about-debugging-sidebar-item-connect-button-connection-failed = Conexiunea a eșuat
 # Text displayed in connection warning on sidebar item of the runtime when connecting to
 # the runtime is taking too much time.
 about-debugging-sidebar-item-connect-button-connection-not-responding = Conexiunea este încă în așteptare, verifică mesajele în browserul-țintă
@@ -81,12 +81,11 @@ about-debugging-refresh-usb-devices-button = Reîmprospătează dispozitivele
 # Title of the Setup page.
 about-debugging-setup-title = Configurare
 # Introduction text in the Setup page to explain how to configure remote debugging.
-about-debugging-setup-intro = Configurează metoda de conectare cu care dorești să depanezi de la distanță dispozitivul.
-# Link displayed in the Setup page that leads to MDN page with list of supported devices.
-# Temporarily leads to https://support.mozilla.org/en-US/kb/will-firefox-work-my-mobile-device#w_android-devices
-about-debugging-setup-link-android-devices = Vezi lista dispozitivelor Android suportate
+about-debugging-setup-intro = Configurează metoda de conectare cu care vrei să depanezi de la distanță dispozitivul.
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
 about-debugging-setup-this-firefox = Folosește <a>{ about-debugging-this-firefox-runtime-name }</a> pentru a depana file, extensii și scripturi service worker pe această versiune de { -brand-shorter-name }.
+# Explanatory text in the Setup page about what the 'This Firefox' page is for
+about-debugging-setup-this-firefox2 = Folosește <a>{ about-debugging-this-firefox-runtime-name }</a> pentru a depana extensii și scripturi service worker pe această versiune de { -brand-shorter-name }.
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Conectează un dispozitiv
 # USB section of the Setup page
@@ -106,16 +105,22 @@ about-debugging-setup-usb-status-enabled = Activat
 about-debugging-setup-usb-status-disabled = Dezactivat
 about-debugging-setup-usb-status-updating = Se actualizează…
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-dev-menu = Activează meniul Dezvoltator de pe dispozitivul Android. <a>Află cum</a>
+about-debugging-setup-usb-step-enable-dev-menu2 = Activează meniul pentru dezvoltatori pe dispozitivul Android.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug = Activează Depanare USB în meniul Dezvoltator al dispozitivului Android. <a>Află cum</a>
+about-debugging-setup-usb-step-enable-debug2 = Activează depanarea USB în meniul pentru dezvoltatori de pe dispozitivul Android.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug-firefox = Activează Depanare USB în Firefox pe dispozitivul Android. <a>Află cum</a>
+about-debugging-setup-usb-step-enable-debug-firefox2 = Activează depanarea USB în Firefox pe dispozitivul Android.
 # USB section step by step guide
 about-debugging-setup-usb-step-plug-device = Conectează dispozitivul Android la calculator.
+# Text shown in the USB section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/docs/Tools/Remote_Debugging/Debugging_over_USB
+about-debugging-setup-usb-troubleshoot = Probleme de conectare la dispozitivul USB? <a>Depanare</a>
 # Network section of the Setup page
 about-debugging-setup-network =
     .title = Locație în rețea
+# Text shown in the Network section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Debugging_over_a_network
+about-debugging-setup-network-troubleshoot = Probleme de conectare prin intermediul locației în rețea? <a>Depanare</a>
 # Text of a button displayed after the network locations "Host" input.
 # Clicking on it will add the new network location to the list.
 about-debugging-network-locations-add-button = Adaugă
@@ -131,7 +136,7 @@ about-debugging-network-locations-remove-button = Elimină
 # Text used as error message if the format of the input value was invalid in the network locations form of the Setup page.
 # Variables:
 #   $host-value (string) - The input value submitted by the user in the network locations form
-about-debugging-network-location-form-invalid = Gazdă nevalidă „{ $host-value }”. Formatul așteptat este „numele-gazdei:numărul-portului”.
+about-debugging-network-location-form-invalid = Gazdă invalidă „{ $host-value }”. Formatul așteptat este „numele-gazdei:numărul-portului”.
 # Text used as error message if the input value was already registered in the network locations form of the Setup page.
 # Variables:
 #   $host-value (string) - The input value submitted by the user in the network locations form
@@ -155,16 +160,16 @@ about-debugging-runtime-service-workers =
     .name = Scripturi Service Worker
 # Title of the shared workers category.
 about-debugging-runtime-shared-workers =
-    .name = Shared Workers
+    .name = Workeri partajați
 # Title of the other workers category.
 about-debugging-runtime-other-workers =
-    .name = Alți Workers
+    .name = Alți workeri
 # Title of the processes category.
 about-debugging-runtime-processes =
     .name = Procese
 # Label of the button opening the performance profiler panel in runtime pages for remote
 # runtimes.
-about-debugging-runtime-profile-button = Profil de execuție
+about-debugging-runtime-profile-button2 = Profilează performanța
 # This string is displayed in the runtime page if the current configuration of the
 # target runtime is incompatible with service workers. "Learn more" points to MDN.
 # https://developer.mozilla.org/en-US/docs/Tools/about%3Adebugging#Service_workers_not_compatible
@@ -202,12 +207,7 @@ about-debugging-connection-prompt-enable-button = Activează mesajul de conexiun
 # "devtools.debugger.prompt-connection" is true on the target runtime.
 about-debugging-connection-prompt-disable-button = Dezactivează mesajul de conexiune
 # Title of a modal dialog displayed on remote runtime pages after clicking on the Profile Runtime button.
-about-debugging-profiler-dialog-title = Profil de performanță
-# Label of a checkbox displayed in the runtime page for "This Firefox".
-# This checkbox will toggle preferences that enable local addon debugging.
-# The "Learn more" link points to MDN.
-# https://developer.mozilla.org/docs/Tools/about:debugging#Enabling_add-on_debugging
-about-debugging-extension-debug-setting-label = Activează depanarea extensiilor. <a>Află mai multe</a>
+about-debugging-profiler-dialog-title2 = Profilator
 # Clicking on the header of a debug target category will expand or collapse the debug
 # target items in the category. This text is used as ’title’ attribute of the header,
 # to describe this feature.
@@ -265,6 +265,14 @@ about-debugging-worker-action-push = Push
 about-debugging-worker-action-start = Pornește
 # This string is displayed as a label of the button that unregisters a service worker.
 about-debugging-worker-action-unregister = Dezînregistrează
+# Displayed for service workers in runtime pages that listen to Fetch events.
+about-debugging-worker-fetch-listening =
+    .label = Fetch
+    .value = Se ascultă evenimente fetch
+# Displayed for service workers in runtime pages that do not listen to Fetch events.
+about-debugging-worker-fetch-not-listening =
+    .label = Fetch
+    .value = Nu se ascultă evenimente fetch
 # Displayed for service workers in runtime pages that are currently running (service
 # worker instance is active).
 about-debugging-worker-status-running = În rulare
@@ -274,7 +282,7 @@ about-debugging-worker-status-stopped = Oprit
 about-debugging-worker-status-registering = În înregistrare
 # Displayed for service workers in runtime pages, to label the scope of a worker
 about-debugging-worker-scope =
-    .label = Domeniu
+    .label = Domeniu de aplicare
 # Displayed for service workers in runtime pages, to label the push service endpoint (url)
 # of a worker
 about-debugging-worker-push-service =
@@ -284,7 +292,13 @@ about-debugging-worker-push-service =
 about-debugging-main-process-name = Proces principal
 # Displayed as description for the Main Process debug target in the Processes category.
 # Only for remote browsers, if `devtools.aboutdebugging.process-debugging` is true.
-about-debugging-main-process-description2 = Procesul principal pentru browserul țintă
+about-debugging-main-process-description2 = Procesul principal pentru browserul-țintă
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = Închide mesajul
+# Label text used for the error details of message component.
+about-debugging-message-details-label-error = Detalii cu privire la eroare
+# Label text used for the warning details of message component.
+about-debugging-message-details-label-warning = Detalii cu privire la avertisment
+# Label text used for default state of details of message component.
+about-debugging-message-details-label = Detalii

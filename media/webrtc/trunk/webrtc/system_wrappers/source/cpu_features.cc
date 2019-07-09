@@ -67,6 +67,7 @@ static int GetCPUInfo(CPUFeature feature) {
   (void)feature;
   return 0;
 }
+
 #endif
 
 WebRtc_CPUInfo WebRtc_GetCPUInfo = GetCPUInfo;

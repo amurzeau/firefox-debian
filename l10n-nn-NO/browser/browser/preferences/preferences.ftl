@@ -34,6 +34,7 @@ policies-notice =
         [windows] Din organisasjon har slått av mulegheita til å endre visse innstillingar.
        *[other] Din organisasjon har slått av mulegheita til å endre visse innstillingar.
     }
+managed-notice = Nettlessaren din vert administrert av organisasjonen din.
 pane-general-title = Generelt
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = Personvern og sikkerheit
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Firefox-konto
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -142,7 +139,7 @@ startup-restore-previous-session =
 startup-restore-warn-on-quit =
     .label = Åtvar meg når eg avsluttar nettlesaren
 disable-extension =
-    .label = Slå av tillegg
+    .label = Slå av utviding
 tabs-group-header = Faner
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab vekslar mellom faner i nyleg brukt-rekkjefølgje
@@ -293,6 +290,13 @@ update-pref-write-failure-title = Skrivfeil
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Klarte ikkje å lagre innstillinga. Kunne ikkje skrive til fila: { $path }
+update-setting-write-failure-title = Klarte ikkje å lagre oppdateringsinnstillingar
+update-in-progress-title = Oppdatering i framdrift
+update-in-progress-message = Vil du at { -brand-short-name } skal halde fram med denne oppdateringa?
+update-in-progress-ok-button = &Avvis
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Fortset
 
 ## General Section - Performance
 
@@ -333,7 +337,7 @@ browsing-search-on-start-typing =
     .label = Søk etter tekst når eg byrjar å skrive
     .accesskey = k
 browsing-cfr-recommendations =
-    .label = Tilrå tillegg når du surfar
+    .label = Tilrå utvidingar når du surfar
     .accesskey = T
 browsing-cfr-features =
     .label = Tilrå funksjonar medan du surfar
@@ -528,8 +532,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Lagre
     .accesskey = L
-sync-mobilepromo-single = Kople til ei anna eining
-sync-mobilepromo-multi = Handter einingar
 sync-connect-another-device = Kople til ei anna eining
 sync-manage-devices = Handter einingar
 sync-fxa-begin-pairing = Par ei eining
@@ -549,6 +551,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Unntak…
     .accesskey = n
+forms-generate-passwords =
+    .label = Foreslå og generer sterke passord
+    .accesskey = o
 forms-saved-logins =
     .label = Lagre innloggingar…
     .accesskey = L
@@ -687,7 +692,6 @@ content-blocking-all-third-party-cookies = Alle tredjeparts infokapslar
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Sjå opp!
-content-blocking-warning-desc = Blokkering av infokapslar og sporfølgjarar kan føre til at nokre nettsider sluttar å fungere. Det er enkelt å deaktivere blokkering for nettsider du stolar på.
 content-blocking-warning-description = Blokkering av innhald kan føre til at nokre nettstadar sluttar å fungere. Det er enkelt å deaktivere blokkering for nettstadar du stolar på.
 content-blocking-learn-how = Finn ut korleis
 content-blocking-reload-description = Du må oppdatere fanene dine for å kunne bruke desse endringane.
@@ -754,6 +758,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Unntak…
     .accesskey = U
+permissions-autoplay = Automatisk avspeling
+permissions-autoplay-settings =
+    .label = Innstillingar
+    .accesskey = n
 permissions-block-popups =
     .label = Blokker sprettoppvindauge
     .accesskey = B

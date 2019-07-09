@@ -95,7 +95,7 @@ detail-update-manual =
 detail-private-browsing-label = Xhiroje në Dritare Private
 detail-private-browsing-description2 = Po u lejua, zgjerimi do të mund të hyjë në veprimtaritë tuaja <em>online</em> gjatë shfletimit privat. <label data-l10n-name="detail-private-browsing-learn-more">Mësoni më tepër</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = Nuk Lejohet në Dritare Private
 detail-private-disallowed-description = Ky zgjerim nuk punon nën shfletim privat. <label data-l10n-name="detail-private-browsing-learn-more">Mësoni më tepër</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
@@ -156,6 +156,9 @@ private-browsing-description2 =
 extensions-view-discover =
     .name = Merrni Shtesa
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Rekomandime
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Përditësime Së Fundi
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -236,7 +239,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Administroni Shkurtore Zgjerimesh
     .accesskey = A
-shortcuts-empty-message = S’ka shkurtore për këtë zgjerim.
 shortcuts-no-addons = S’keni të aktivizuar ndonjë zgjerim.
 shortcuts-no-commands = Zgjerimet vijuese nuk kanë shkurtore:
 shortcuts-input =
@@ -262,19 +264,63 @@ shortcuts-card-collapse-button = Shfaq Më Pak
 go-back-button =
     .tooltiptext = Shkoni mbrapsht
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    Zgjerimet dhe temat janë si aplikacione për shfletuesin tuaj, dhe ju lejojnë të mbroni fjalëkalimet, të shkarkoni video, të gjeni pazare me leverdi, të bllokoni reklama bezdisëse, të ndryshoni pamjen e shfletuesit tuaj, etj. Këta programe të vegjël software shpesh krijohen nga një palë e tretë. Ja një përzgjedhje { -brand-product-name }
+    <a data-l10n-name="learn-more-trigger">rekomandimesh</a> për siguri, punim dhe funksione të veçanta. 
+    security, performance, and functionality.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations = Disa nga këto rekomandime janë të personalizuara. Ato bazohen në zgjerime të tjera që keni instaluar, në parapëlqime profili dhe statistika përdorimi.
+discopane-notice-learn-more = Mësoni më tepër
+privacy-policy = Rregulla Privatësie
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = nga <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Përdorues: { $dailyUsers }
+install-extension-button = Shtoje te { -brand-product-name }
+install-theme-button = Instaloni Temë
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Administroni
+find-more-addons = Gjeni më tepër shtesa
+
 ## Add-on actions
 
+report-addon-button = Raportoje
 remove-addon-button = Hiqe
 disable-addon-button = Çaktivizoje
 enable-addon-button = Aktivizoje
 expand-addon-button = Më tepër Mundësi
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Mundësi
+       *[other] Parapëlqime
+    }
+details-addon-button = Hollësi
+release-notes-addon-button = Shënime Versioni
+permissions-addon-button = Leje
 addons-enabled-heading = I aktivizuar
 addons-disabled-heading = I çaktivizuar
+ask-to-activate-button = Pyet për Aktivizim
+always-activate-button = Aktivizoje Përherë
+never-activate-button = Mos e Aktivizo Kurrë
 addon-detail-author-label = Autor
 addon-detail-version-label = Version
 addon-detail-last-updated-label = Përditësuar Së Fundi
 addon-detail-homepage-label = Kreu
 addon-detail-rating-label = Vlerësim
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Vlerësuar me { NUMBER($rating, maximumFractionDigits: 1) } nga 5 të mundshme
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -287,3 +333,38 @@ addon-detail-reviews-link =
         [one] { $numberOfReviews } shqyrtim
        *[other] { $numberOfReviews } shqyrtime
     }
+
+## Pending uninstall message bar
+
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> është hequr.
+pending-uninstall-undo-button = Zhbëje
+addon-detail-updates-label = Lejo përditësime të vetvetishme
+addon-detail-updates-radio-default = Parazgjedhje
+addon-detail-updates-radio-on = On
+addon-detail-updates-radio-off = Off
+addon-detail-update-check-label = Kontrollo për Përditësime
+install-update-button = Përditësojeni
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = E lejuar në dritare private
+addon-detail-private-browsing-help = Nën lejim, zgjerimi do të mund të shohë veprimtaritë tuaja në linjë, teksa shfletoni privatisht. <a data-l10n-name="learn-more">Mësoni më tepër</a>
+addon-detail-private-browsing-allow = Lejoje
+addon-detail-private-browsing-disallow = Mos e Lejo
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = E këshilluar
+    .alt = E këshilluar
+available-updates-heading = Përditësime të Gatshme
+recent-updates-heading = Përditësime Së Fundi
+release-notes-loading = Po ngarkohet…
+release-notes-error = Na ndjeni, por pati një gabim gjatë ngarkimit të shënimeve të versionit.
+addon-permissions-empty = Ky zgjerim nuk lyp ndonjë leje
+recommended-extensions-heading = Zgjerime të Këshilluara
+recommended-themes-heading = Tema të Këshilluara
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Ju ka kapluar fryma krijuese? <a data-l10n-name="link">Krijoni temën tuaj me  Firefox Color.</a>

@@ -159,7 +159,9 @@ functionality specific to thunderbird. -->
 <!ENTITY securityOverride.warningContent "
 <p>คุณไม่ควรเพิ่มข้อยกเว้นหากคุณกำลังใช้งานการเชื่อมต่ออินเทอร์เน็ตที่คุณไม่เชื่อถือโดยสมบูรณ์ หรือหากคุณไม่เคยเห็นคำเตือนสำหรับเซิร์ฟเวอร์นี้</p>
 
-<button id='getMeOutOfHereButton'>&securityOverride.getMeOutOfHereButton;</button> <button id='exceptionDialogButton'>&securityOverride.exceptionButtonLabel;</button>">
+<button id='getMeOutOfHereButton'>&securityOverride.getMeOutOfHereButton;</button>
+<button id='exceptionDialogButton'>&securityOverride.exceptionButtonLabel;</button>
+">
 
 <!ENTITY remoteXUL.title "XUL ระยะไกล">
 <!ENTITY remoteXUL.longDesc "<p><ul><li>โปรดติดต่อเจ้าของเว็บไซต์เพื่อแจ้งพวกเขาให้ทราบถึงปัญหานี้</li></ul></p>">

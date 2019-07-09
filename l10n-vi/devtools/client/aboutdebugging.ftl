@@ -82,11 +82,10 @@ about-debugging-refresh-usb-devices-button = Làm mới thiết bị
 about-debugging-setup-title = Cài đặt
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Định cấu hình phương thức kết nối mà bạn muốn gỡ lỗi từ xa cho thiết bị của mình.
-# Link displayed in the Setup page that leads to MDN page with list of supported devices.
-# Temporarily leads to https://support.mozilla.org/en-US/kb/will-firefox-work-my-mobile-device#w_android-devices
-about-debugging-setup-link-android-devices = Xem danh sách các thiết bị Android được hỗ trợ
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
 about-debugging-setup-this-firefox = Sử dụng <a>{ about-debugging-this-firefox-runtime-name }</a> để gỡ lỗi các thẻ, tiện ích mở rộng và service workers trên phiên bản này của{ -brand-shorter-name }.
+# Explanatory text in the Setup page about what the 'This Firefox' page is for
+about-debugging-setup-this-firefox2 = Sử dụng <a>{ about-debugging-this-firefox-runtime-name }</a> để sửa lỗi các phần mở rộng và các trình làm việc dịch vụ trên phiên bản của { -brand-shorter-name }.
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Kết nối thiết bị
 # USB section of the Setup page
@@ -106,16 +105,22 @@ about-debugging-setup-usb-status-enabled = Đã bật
 about-debugging-setup-usb-status-disabled = Đã tắt
 about-debugging-setup-usb-status-updating = Đang cập nhật...
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-dev-menu = Bật menu nhà phát triển trên thiết bị Android của bạn. <a>Tìm hiểu cách làm</a>
+about-debugging-setup-usb-step-enable-dev-menu2 = Bật menu Nhà phát triển trên thiết bị Android của bạn.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug = Bật gỡ lỗi USB trong menu nhà phát triển Android. <a>Tìm hiểu cách làm</a>
+about-debugging-setup-usb-step-enable-debug2 = Bật gỡ lỗi USB trong Menu dành cho nhà phát triển Android.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug-firefox = Bật gỡ lỗi USB trong Firefox trên thiết bị Android. <a>Tìm hiểu cách làm</a>
+about-debugging-setup-usb-step-enable-debug-firefox2 = Bật gỡ lỗi USB trong Firefox trên thiết bị Android.
 # USB section step by step guide
 about-debugging-setup-usb-step-plug-device = Kết nối thiết bị Android với máy tính của bạn.
+# Text shown in the USB section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/docs/Tools/Remote_Debugging/Debugging_over_USB
+about-debugging-setup-usb-troubleshoot = Sự cố kết nối với thiết bị USB? <a>Khắc phục sự cố</a>
 # Network section of the Setup page
 about-debugging-setup-network =
     .title = Vị trí mạng
+# Text shown in the Network section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Debugging_over_a_network
+about-debugging-setup-network-troubleshoot = Sự cố kết nối qua vị trí mạng? <a>Khắc phục sự</a>
 # Text of a button displayed after the network locations "Host" input.
 # Clicking on it will add the new network location to the list.
 about-debugging-network-locations-add-button = Thêm
@@ -164,7 +169,7 @@ about-debugging-runtime-processes =
     .name = Tiến trình
 # Label of the button opening the performance profiler panel in runtime pages for remote
 # runtimes.
-about-debugging-runtime-profile-button = Hồ sơ runtime
+about-debugging-runtime-profile-button2 = Hồ sơ hiệu suất
 # This string is displayed in the runtime page if the current configuration of the
 # target runtime is incompatible with service workers. "Learn more" points to MDN.
 # https://developer.mozilla.org/en-US/docs/Tools/about%3Adebugging#Service_workers_not_compatible
@@ -202,12 +207,7 @@ about-debugging-connection-prompt-enable-button = Kích hoạt nhắc nhở kế
 # "devtools.debugger.prompt-connection" is true on the target runtime.
 about-debugging-connection-prompt-disable-button = Vô hiệu hóa nhắc nhở kết nối
 # Title of a modal dialog displayed on remote runtime pages after clicking on the Profile Runtime button.
-about-debugging-profiler-dialog-title = Trình biên dịch hiệu suất
-# Label of a checkbox displayed in the runtime page for "This Firefox".
-# This checkbox will toggle preferences that enable local addon debugging.
-# The "Learn more" link points to MDN.
-# https://developer.mozilla.org/docs/Tools/about:debugging#Enabling_add-on_debugging
-about-debugging-extension-debug-setting-label = Cho phép gỡ lỗi tiện ích mở rộng. <a>Tìm hiểu thêm</a>
+about-debugging-profiler-dialog-title2 = Profiler
 # Clicking on the header of a debug target category will expand or collapse the debug
 # target items in the category. This text is used as ’title’ attribute of the header,
 # to describe this feature.
@@ -296,3 +296,9 @@ about-debugging-main-process-description2 = Quy trình chính cho trình duyệt
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = Đóng thông báo
+# Label text used for the error details of message component.
+about-debugging-message-details-label-error = Chi tiết lỗi
+# Label text used for the warning details of message component.
+about-debugging-message-details-label-warning = Chi tiết cảnh báo
+# Label text used for default state of details of message component.
+about-debugging-message-details-label = Chi tiết

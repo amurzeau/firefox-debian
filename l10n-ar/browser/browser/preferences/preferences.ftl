@@ -34,6 +34,7 @@ policies-notice =
         [windows] منعت الشركة إمكانية تغيير بعض الخيارات.
        *[other] منعت الشركة إمكانية تغيير بعض التفضيلات.
     }
+managed-notice = تُدير منظّمتك المتصفح الذي تستخدم الآن.
 pane-general-title = عام
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = الخصوصية و الأمان
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = حساب فَيَرفُكس
-category-sync =
-    .tooltiptext = { pane-sync-title }
 help-button-label = دعم { -brand-short-name }
 addons-button-label = الامتدادات والسمات
 focus-search =
@@ -299,6 +296,21 @@ update-pref-write-failure-title = فشلت الكتابة
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = تعذّر حفظ التفضيلات. تعذّرت الكتابة في الملف: { $path }
+update-setting-write-failure-title = حدث عُطل أثناء تحديث التفضيلات
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    واجه { -brand-short-name } عُطلًا ولم يحفظ هذا التغيير. كي تضبط تفضيل التحديث هذا سيكون عليك تقديم تصريحك للكتابة في الملف أدناه. يمكنك أنت أو يمكن لمدير النظام أن يحلّ هذا العُطل بمنح مجموعة ”المستخدمين/Users“ التصريح الكامل للتحكّم بهذا الملف.
+    
+    تعذّرت الكتابة في الملف: { $path }
+update-in-progress-title = يجري الآن التحديث
+update-in-progress-message = أتريد من { -brand-short-name } مواصلة العمل على هذا التحديث؟
+update-in-progress-ok-button = أ&همِل
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = وا&صِل
 
 ## General Section - Performance
 
@@ -534,8 +546,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = احفظ
     .accesskey = ح
-sync-mobilepromo-single = أوصِل جهازا آخر
-sync-mobilepromo-multi = أدِر الأجهزة
 sync-connect-another-device = صِلْ جهازا آخر
 sync-manage-devices = أدِر الأجهزة
 sync-fxa-begin-pairing = اقرن أحد أجهزتك
@@ -693,7 +703,6 @@ content-blocking-all-third-party-cookies = كل الكعكات من الأطرا
 content-blocking-cryptominers = المُعدّنات المعمّاة
 content-blocking-fingerprinters = مسجّلات البصمات
 content-blocking-warning-title = كُن على علم!
-content-blocking-warning-desc = حجب الكعكات والمتعقّبات قد يتسبّب بعطب بعض المواقع. من السهل تعطيل الحجب في المواقع التي تثق بها.
 content-blocking-warning-description = يمكن أن تعطب بعض المواقع إن حُجب المحتوى. يمكنك بسهولة إلغاء أي نوع حجب للمواقع التي تثق بها.
 content-blocking-learn-how = اطّلع على الطريقة
 content-blocking-reload-description = عليك إعادة تحميل الألسنة لتأخذ هذه التغييرات مفعولها.

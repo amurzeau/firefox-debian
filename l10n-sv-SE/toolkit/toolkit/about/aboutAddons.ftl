@@ -93,9 +93,9 @@ detail-update-manual =
     .tooltiptext = Installera inte uppdateringar automatiskt
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Kör i privata fönster
-detail-private-browsing-description2 = När det är tillåtet kommer tillägget att ha tillgång till dina onlineaktiviteter medan du surfar. <label data-l10n-name="detail-private-browsing-learn-more">Läs mer</label>
+detail-private-browsing-description2 = När det är tillåtet kommer tillägget att ha tillgång till dina onlineaktiviteter under privat surfning. <label data-l10n-name="detail-private-browsing-learn-more">Läs mer</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = Ej tillåtet i privata fönster
 detail-private-disallowed-description = Detta tillägg kan inte köras under privat surfning. <label data-l10n-name="detail-private-browsing-learn-more">Läs mer</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
@@ -153,6 +153,9 @@ private-browsing-description2 = { -brand-short-name } ändrar hur tillägg funge
 extensions-view-discover =
     .name = Hämta tillägg
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Rekommendationer
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Nyligen uppdaterade
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -233,7 +236,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Hantera genvägar för tillägg
     .accesskey = g
-shortcuts-empty-message = Det finns inga genvägar för det här tillägget.
 shortcuts-no-addons = Du har inga tillägg aktiverade.
 shortcuts-no-commands = Följande tillägg har inte genvägar:
 shortcuts-input =
@@ -259,6 +261,38 @@ shortcuts-card-collapse-button = Visa mindre
 go-back-button =
     .tooltiptext = Gå tillbaka
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    Tillägg och teman är som appar för din webbläsare, och de låter dig
+    skydda lösenord, ladda ner videor, hitta erbjudanden, blockera irriterande annonser, ändra
+    hur din webbläsare ser ut, och mycket mer. Dessa små program är
+    ofta utvecklad av en tredje part. Här är ett urval { -brand-product-name }
+    <a data-l10n-name="learn-more-trigger">rekommenderar</a> för exceptionell
+    säkerhet, prestanda och funktionalitet.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations =
+    Några av dessa rekommendationer är personliga. De är baserade på andra
+    tillägg som du har installerat, profilinställningar och användarstatistik.
+discopane-notice-learn-more = Lär dig mer
+privacy-policy = Sekretesspolicy
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = av <a data-l10n-name="author"> { $author } </a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Användare: { $dailyUsers }
+install-extension-button = Lägg till i { -brand-product-name }
+install-theme-button = Installera tema
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Hantera
+find-more-addons = Hitta fler tillägg
+
 ## Add-on actions
 
 report-addon-button = Rapportera
@@ -266,6 +300,14 @@ remove-addon-button = Ta bort
 disable-addon-button = Inaktivera
 enable-addon-button = Aktivera
 expand-addon-button = Fler alternativ
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Inställningar
+       *[other] Inställningar
+    }
+details-addon-button = Detaljer
+release-notes-addon-button = Versionsfakta
+permissions-addon-button = Behörigheter
 addons-enabled-heading = Aktiverad
 addons-disabled-heading = Inaktiverad
 ask-to-activate-button = Fråga om aktivering
@@ -276,6 +318,11 @@ addon-detail-version-label = Version
 addon-detail-last-updated-label = Senast uppdaterad
 addon-detail-homepage-label = Hemsida
 addon-detail-rating-label = Betyg
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Betyg { NUMBER($rating, maximumFractionDigits: 1) } av 5
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -305,8 +352,21 @@ install-update-button = Uppdatera
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed =
     .title = Tillåtet i privata fönster
-addon-detail-private-browsing-help = När det är tillåtet kommer tillägget att ha tillgång till dina onlineaktiviteter medan du surfar. <a data-l10n-name="learn-more">Läs mer</a>
+addon-detail-private-browsing-help = När det är tillåtet kommer tillägget att ha tillgång till dina onlineaktiviteter under privat surfning. <a data-l10n-name="learn-more">Läs mer</a>
 addon-detail-private-browsing-allow = Tillåt
 addon-detail-private-browsing-disallow = Tillåt inte
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Rekommenderad
+    .alt = Rekommenderad
 available-updates-heading = Tillgängliga uppdateringar
 recent-updates-heading = Senaste uppdateringar
+release-notes-loading = Laddar…
+release-notes-error = Tyvärr, men det gick inte att läsa in versionsfakta.
+addon-permissions-empty = Detta tillägg kräver inga behörigheter
+recommended-extensions-heading = Rekommenderade tillägg
+recommended-themes-heading = Rekommenderade teman
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Känner du dig kreativ? <a data-l10n-name="link">Skapa ditt egna tema med Firefox Color.</a>

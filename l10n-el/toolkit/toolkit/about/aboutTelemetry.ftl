@@ -15,6 +15,7 @@ about-telemetry-option-group-older = Παλαιότερα
 about-telemetry-previous-ping = <<
 about-telemetry-next-ping = >>
 about-telemetry-page-title = Δεδομένα τηλεμετρίας
+about-telemetry-current-store = Τρέχον αποθετήριο:
 about-telemetry-more-information = Ψάχνετε περισσότερες πληροφορίες;
 about-telemetry-firefox-data-doc = Η <a data-l10n-name="data-doc-link">τεκμηρίωση δεδομένων του Firefox</a> περιέχει οδηγίες σχετικά με το πώς να εργαστείτε με τα εργαλεία δεδομένων μας.
 about-telemetry-telemetry-client-doc = Η <a data-l10n-name="client-doc-link">τεκμηρίωση πελάτη τηλεμετρίας του Firefox</a> περιλαμβάνει ορισμούς για ιδέες, τεκμηρίωση API και αναφορές δεδομένων.
@@ -141,3 +142,6 @@ about-telemetry-origin-count = μέτρηση
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-origins-explanation = Το <a data-l10n-name="origin-doc-link">Firefox Origin Telemetry</a> κωδικοποιεί τα δεδομένα πριν αποσταλούν έτσι, ώστε η { $telemetryServerOwner } να μπορέσει να μετρήσει πράγματα, αλλά δεν θα γνωρίζει αν συνεισέφερε το παρόν { -brand-product-name } σε αυτή τη μέτρηση. (<a data-l10n-name="prio-blog-link">Μάθετε περισσότερα</a>)
+# Variables:
+#  $process (String): type of process in subsection headers ( e.g. "content", "parent" )
+about-telemetry-process = Διεργασία { $process }

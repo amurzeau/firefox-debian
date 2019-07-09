@@ -35,8 +35,15 @@ app-basics-name = Nombre
 app-basics-version = Versión
 app-basics-build-id = ID de compilación
 app-basics-update-channel = Canal de actualización
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] Directorio de actualización
+       *[other] Carpeta de actualización
+    }
 app-basics-update-history = Historial de actualizaciones
 app-basics-show-update-history = Mostrar historial de actualizaciones
+# Represents the path to the binary used to start the application.
+app-basics-binary = Binario de aplicación
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Directorio del perfil
@@ -82,6 +89,8 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Registro de decisiones
 graphics-crash-guards-title = Funciones desactivadas de protección contra fallos
 graphics-workarounds-title = Soluciones
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Protocolo de ventana
 place-database-title = Base de datos de lugares
 place-database-integrity = Integridad
 place-database-verify-integrity = Verificar integridad
@@ -199,6 +208,7 @@ gpu-device-id = ID de dispositivo
 gpu-subsys-id = ID del subsistema
 gpu-drivers = Controladores
 gpu-ram = RAM
+gpu-driver-vendor = Productor del driver
 gpu-driver-version = Versión del driver
 gpu-driver-date = Fecha del driver
 gpu-active = Activo

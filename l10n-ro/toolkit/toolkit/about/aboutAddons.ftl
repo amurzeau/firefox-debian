@@ -95,7 +95,7 @@ detail-update-manual =
 detail-private-browsing-label = Execută în ferestre private
 detail-private-browsing-description2 = Când are permisiunea, extensia va avea acces la activitățile tale online în timp ce navighezi privat. <label data-l10n-name="detail-private-browsing-learn-more">Află mai multe</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = Nepermis în ferestre private
 detail-private-disallowed-description = Această extensie nu rulează în navigare privată. <label data-l10n-name="detail-private-browsing-learn-more">Află mai multe</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
@@ -155,6 +155,9 @@ private-browsing-description2 =
 extensions-view-discover =
     .name = Descarcă suplimente
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Recomandări
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Actualizări recente
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -169,14 +172,14 @@ extensions-warning-safe-mode-label =
 extensions-warning-safe-mode-container =
     .tooltiptext = { extensions-warning-safe-mode-label.value }
 extensions-warning-check-compatibility-label =
-    .value = Verificarea compatibilității suplimentelor este dezactivată. Ați putea avea suplimente incompatibile.
+    .value = Verificarea compatibilității suplimentelor este dezactivată. Ai putea avea suplimente incompatibile.
 extensions-warning-check-compatibility-container =
     .tooltiptext = { extensions-warning-check-compatibility-label.value }
 extensions-warning-check-compatibility-enable =
     .label = Activează
     .tooltiptext = Activează verificarea compatibilității suplimentelor
 extensions-warning-update-security-label =
-    .value = Verificarea securității actualizărilor de suplimente este dezactivată. Ați putea primi actualizări compromise.
+    .value = Verificarea securității actualizărilor de suplimente este dezactivată. Ai putea primi actualizări compromise.
 extensions-warning-update-security-container =
     .tooltiptext = { extensions-warning-update-security-label.value }
 extensions-warning-update-security-enable =
@@ -235,7 +238,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Gestionează scurtături de extensii
     .accesskey = S
-shortcuts-empty-message = Nu există comenzi rapide pentru această extensie.
 shortcuts-no-addons = Nu ai activat nicio extensie.
 shortcuts-no-commands = Următoarele extensii nu au comenzi rapide:
 shortcuts-input =
@@ -262,19 +264,60 @@ shortcuts-card-collapse-button = Afișează mai puțin
 go-back-button =
     .tooltiptext = Înapoi
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro = Extensiile și temele sunt ca un fel de aplicații pentru browser și îți permit să îți protejezi parolele, să descarci videoclipuri, să descoperi oferte, să blochezi reclame enervante, să schimbi aspectul browserului și multe altele. Aceste programe software mici sunt adesea dezvoltate de părți terțe. Iată o selecție pe care { -brand-product-name } <a data-l10n-name="learn-more-trigger">o recomandă</a> pentru securitate, performanță și funcționalitate de excepție.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations = Unele dintre aceste recomandări sunt personalizate în baza altor extensii pe care le-ai instalat, a preferințelor de profil și a statisticilor de utilizare.
+discopane-notice-learn-more = Află mai multe
+privacy-policy = Politică de confidențialitate
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = de către <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Utilizatori: { $dailyUsers }
+install-extension-button = Adaugă în { -brand-product-name }
+install-theme-button = Instalează tema
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Gestionează
+find-more-addons = Găsește mai multe suplimente
+
 ## Add-on actions
 
+report-addon-button = Raportează
 remove-addon-button = Elimină
 disable-addon-button = Dezactivează
 enable-addon-button = Activează
 expand-addon-button = Mai multe opțiuni
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Opțiuni
+       *[other] Preferințe
+    }
+details-addon-button = Detalii
+release-notes-addon-button = Note privind versiunea
+permissions-addon-button = Permisiuni
 addons-enabled-heading = Activat
 addons-disabled-heading = Dezactivat
+ask-to-activate-button = Întreabă pentru activare
+always-activate-button = Activează întotdeauna
+never-activate-button = Nu activa niciodată
 addon-detail-author-label = Autor
 addon-detail-version-label = Versiune
 addon-detail-last-updated-label = Ultima actualizare
 addon-detail-homepage-label = Pagină de start
 addon-detail-rating-label = Evaluare
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Evaluat la { NUMBER($rating, maximumFractionDigits: 1) } din 5
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -288,3 +331,38 @@ addon-detail-reviews-link =
         [few] { $numberOfReviews } recenzii
        *[other] { $numberOfReviews } de recenzii
     }
+
+## Pending uninstall message bar
+
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> a fost eliminat.
+pending-uninstall-undo-button = Anulează
+addon-detail-updates-label = Permite actualizările automate
+addon-detail-updates-radio-default = Implicit
+addon-detail-updates-radio-on = Activate
+addon-detail-updates-radio-off = Dezactivate
+addon-detail-update-check-label = Caută actualizări
+install-update-button = Actualizare
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Permis în ferestre private
+addon-detail-private-browsing-help = Când are accesul permis, extensia va avea acces la activitățile tale online în navigarea privată. <a data-l10n-name="learn-more">Află mai multe</a>
+addon-detail-private-browsing-allow = Permite
+addon-detail-private-browsing-disallow = Nu permite
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Recomandată
+    .alt = Recomandată
+available-updates-heading = Actualizări disponibile
+recent-updates-heading = Actualizări recente
+release-notes-loading = Se încarcă...
+release-notes-error = Ne pare rău, dar a intervenit o eroare la încărcarea notelor privind versiunea.
+addon-permissions-empty = Această extensie nu necesită nicio permisiune
+recommended-extensions-heading = Extensii recomandate
+recommended-themes-heading = Teme recomandate
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Te simți creativ? <a data-l10n-name="link">Construiește-ți propria temă cu Firefox Color.</a>

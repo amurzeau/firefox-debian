@@ -4,10 +4,8 @@
 
 do-not-track-description = Saitidele saadetakse signaal, et sa ei soovi olla jälitatud
 do-not-track-learn-more = Rohkem teavet
-do-not-track-option-default =
-    .label = ainult siis, kui jälitamisvastane kaitse on lubatud
-do-not-track-option-default-content-blocking =
-    .label = ainult siis, kui { -brand-short-name } on seadistatud teadaolevaid jälitajaid blokkima
+do-not-track-option-default-content-blocking-known =
+    .label = Kui { -brand-short-name } on seadistatud tuntud jälitajaid blokkima
 do-not-track-option-always =
     .label = alati
 pref-page =
@@ -36,6 +34,7 @@ policies-notice =
         [windows] Sinu organisatsioon on keelanud mõningate sätete muutmise.
        *[other] Sinu organisatsioon on keelanud mõningate eelistuste muutmise.
     }
+managed-notice = Brauserit haldab sinu organisatsioon.
 pane-general-title = Üldine
 category-general =
     .tooltiptext = { pane-general-title }
@@ -48,10 +47,9 @@ category-search =
 pane-privacy-title = Privaatsus ja turvalisus
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Firefoxi konto
-category-sync =
-    .tooltiptext = { pane-sync-title }
+pane-sync-title2 = { -sync-brand-short-name }
+category-sync2 =
+    .tooltiptext = { pane-sync-title2 }
 help-button-label = { -brand-short-name }i abi
 addons-button-label = Laiendused ja teemad
 focus-search =
@@ -93,9 +91,6 @@ extension-controlled-default-search = Vaikeotsingumootori on määranud laiendus
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = Laiendus <img data-l10n-name="icon"/> { $name } nõuab, et konteinerkaardid oleks lubatud.
-# This string is shown to notify the user that their tracking protection preferences
-# are being controlled by an extension.
-extension-controlled-websites-tracking-protection-mode = Jälitamisvastast kaitset haldab laiendus <img data-l10n-name="icon"/> { $name }.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
 extension-controlled-websites-content-blocking-all-trackers = Seda sätet haldab laiendus <img data-l10n-name="icon"/> { $name }.
@@ -141,6 +136,8 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Taastatakse eelmine seanss
     .accesskey = T
+startup-restore-warn-on-quit =
+    .label = Brauserist väljumisel hoiatatakse
 disable-extension =
     .label = Keela see laiendus
 tabs-group-header = Kaardid
@@ -152,9 +149,6 @@ open-new-link-as-tabs =
     .accesskey = L
 warn-on-close-multiple-tabs =
     .label = Hoiatus, kui suletakse mitu kaarti korraga
-    .accesskey = H
-warn-on-quit-close-multiple-tabs =
-    .label = Hoiatus, kui rakendusest väljumisel suletakse mitu kaarti
     .accesskey = H
 warn-on-open-many-tabs =
     .label = Hoiatus, kui mitme kaardi avamine võib aeglustada { -brand-short-name }i tööd
@@ -285,6 +279,7 @@ update-application-check-choose =
 update-application-manual =
     .label = Uuendusi ei otsita (mittesoovitatav)
     .accesskey = e
+update-application-warning-cross-user-setting = See säte rakendub kõigile Windowsi kontodele ja { -brand-short-name }i profiilidele, mis kasutavad seda { -brand-short-name }i paigaldust.
 update-application-use-service =
     .label = Uuenduste paigaldamiseks kasutatakse taustateenust
     .accesskey = d
@@ -295,6 +290,21 @@ update-pref-write-failure-title = Viga kirjutamisel
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Sätete salvestamine polnud võimalik. Järgmisse faili polnud võimalik kirjutada: { $path }
+update-setting-write-failure-title = Uuendamise sätete salvestamisel esines viga
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    { -brand-short-name }il esines viga ja muudatust ei salvestatud. Antud sätte muutmiseks on vajalikud õigused alloleva faili muutmiseks. Probleem võib laheneda, kui sina või sinu süsteemiadministraator annab Users grupile täielikud muutmise õigused sellele failile.
+    
+    Järgmist faili polnud võimalik muuta: { $path }
+update-in-progress-title = Uuendamine
+update-in-progress-message = Kas soovid, et { -brand-short-name } jätkaks uuendamisega?
+update-in-progress-ok-button = &Loobu
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = %Jätka
 
 ## General Section - Performance
 
@@ -302,7 +312,7 @@ performance-title = Jõudlus
 performance-use-recommended-settings-checkbox =
     .label = Kasutatakse soovitatud jõudluse sätteid
     .accesskey = u
-performance-use-recommended-settings-desc = Need sätted on kohandatud sinu arvuti riistvarale ja operatsioonisüsteemile.
+performance-use-recommended-settings-desc = Need sätted on kohandatud sinu arvuti riistvara ja operatsioonisüsteemiga.
 performance-settings-learn-more = Rohkem teavet
 performance-allow-hw-accel =
     .label = Võimalusel kasutatakse riistvaralist kiirendust
@@ -335,8 +345,11 @@ browsing-search-on-start-typing =
     .label = Sisestamise alustamisel otsitakse teksti
     .accesskey = e
 browsing-cfr-recommendations =
-    .label = Sirvimise ajal soovitatakse laiendusi
-    .accesskey = S
+    .label = Veebilehitsemise ajal soovitatakse laiendusi
+    .accesskey = V
+browsing-cfr-features =
+    .label = Veebilehitsemise ajal soovitatakse funktsionaalsusi
+    .accesskey = f
 browsing-cfr-recommendations-learn-more = Rohkem teavet
 
 ## General Section - Proxy
@@ -527,8 +540,9 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Salvesta
     .accesskey = v
-sync-mobilepromo-single = Ühenda teine seade
-sync-mobilepromo-multi = Halda seadmeid
+sync-connect-another-device = Ühenda teine seade
+sync-manage-devices = Halda seadmeid
+sync-fxa-begin-pairing = Lisa seade
 sync-tos-link = Teenuse tingimused
 sync-fxa-privacy-notice = Privaatsusest
 
@@ -538,7 +552,6 @@ privacy-header = Veebilehitseja privaatsus
 
 ## Privacy Section - Forms
 
-forms-header = Vormid ja paroolid
 logins-header = Kasutajatunnused ja paroolid
 forms-ask-to-save-logins =
     .label = Küsitakse saitide kasutajatunnuste meelespidamise nõusolekut
@@ -606,15 +619,10 @@ sitedata-total-size-calculating = Saidi andmete ja vahemälu suuruse arvutamine�
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Salvestatud küpsised, saitide andmed ja vahemälu kasutavad praegu { $value } { $unit } salvestuspinda.
 sitedata-learn-more = Rohkem teavet
-sitedata-keep-until = Säilitatakse kuni
-    .accesskey = n
-sitedata-keep-until-expire =
-    .label = nad aeguvad
-sitedata-keep-until-closed =
-    .label = { -brand-short-name } suletakse
 sitedata-delete-on-close =
     .label = { -brand-short-name }i sulgemisel kustutatakse küpsised ja saitide andmed
     .accesskey = u
+sitedata-delete-on-close-private-browsing = Püsivas privaatse lehitsemise režiimis kustutatakse küpsised ja saitide andmed alati { -brand-short-name }i sulgemisel.
 sitedata-allow-cookies-option =
     .label = Küpsised ja saitide andmed lubatakse
     .accesskey = K
@@ -625,29 +633,20 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Seejuures blokitakse
     .accesskey = u
-sitedata-block-trackers-option-recommended =
-    .label = kolmanda osapoole jälitajad (soovitatav)
-sitedata-block-trackers-option =
-    .label = kolmanda osapoole jälitajad
-sitedata-block-unvisited-option =
-    .label = küpsised varem külastamata saitidelt
-sitedata-block-all-third-party-option =
-    .label = kõik kolmanda osapoole küpsised (võib mõne saidi katki teha)
-sitedata-block-all-option =
-    .label = kõik küpsised (paljud saidid lakkavad toimimast)
+sitedata-option-block-trackers =
+    .label = Kolmanda osapoole jälitajad
+sitedata-option-block-unvisited =
+    .label = Küpsised külastamata veebisaitidelt
+sitedata-option-block-all-third-party =
+    .label = Kõik kolmanda osapoole küpsised (võib põhjustada mõnel veebisaidil probleeme)
+sitedata-option-block-all =
+    .label = Kõik küpsised (mõned veebisaidid lähevad katki)
 sitedata-clear =
     .label = Kustuta andmed…
     .accesskey = u
 sitedata-settings =
     .label = Halda andmeid…
     .accesskey = H
-sitedata-cookies-exceptions =
-    .label = Erandid…
-    .accesskey = E
-# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
-# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
-# Cookies and Site Data section.
-sitedata-warning-your-settings-prevent-changes = Sisu blokkimise sätted takistavad antud sätete muutmist.
 sitedata-cookies-permissions =
     .label = Halda õigusi…
     .accesskey = H
@@ -670,28 +669,11 @@ addressbar-suggestions-settings = Muuda otsingumootorite soovituste sätteid
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Sisu blokkimine
-content-blocking-desc = Järgnevate sätete abil on võimalik blokkida kolmanda osapoole sisu nagu reklaamid või kood, mis võib aeglustada sinu veebilehitsemist ning jälitada sind üle mitme veebilehe. Leia parim tasakaal enda kaitsmise ja kiiruse vahel.
 content-blocking-description = Bloki kolmanda osapoole sisu, mis jälitab sind kogu veebis. Kontrolli, kui palju sinu tegevusest veebisaidid salvestada ja omavahel jagada saavad.
+content-blocking-section-description = Kaitse veebilehitsemise ajal oma privaatsust. Bloki nähtamatu sisu, mis jälitab ning profileerib sinu tegevust. Sellise sisu blokkimine võib teha lehtede laadimise kiiremaks.
 content-blocking-learn-more = Rohkem teavet
-content-blocking-restore-defaults =
-    .label = Taasta vaikeväärtused
-    .accesskey = T
-content-blocking-toggle-on =
-    .tooltiptext = Lülita sisu blokkimine välja
-content-blocking-toggle-off =
-    .tooltiptext = Lülita sisu blokkimine sisse
-content-blocking-toggle-label-on = SEES
-    .accesskey = S
-content-blocking-toggle-label-off = VÄLJAS
-    .accesskey = L
-content-blocking-category-label = Blokitavate asjade valik
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-slow-loading-trackers-label =
-    .label = Aeglaselt laadivad jälitajad
-    .accesskey = A
-content-blocking-fastblock-new-description = Blokitakse ainult lehtede kiiret avanemist takistavad jälitajad.
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
 content-blocking-setting-standard =
     .label = Tavaline
     .accesskey = T
@@ -701,75 +683,53 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Kohandatud
     .accesskey = K
+content-blocking-standard-description = Tuntud jälitajad blokitakse vaid privaatsetes akendes.
 content-blocking-standard-desc = Tasakaalustatud kaitse ja jõudlus. Mõned jälitajad on lubatud, et saidid töötaks korrektselt.
 content-blocking-strict-desc = Blokitakse kõik { -brand-short-name }i tuvastatud jälitajad. Mõned saidid ei pruugi korrektselt toimida.
+content-blocking-strict-description = Tugevam kaitse, võib põhjustada mõnel saidil probleeme.
 content-blocking-custom-desc = Võimaldab blokitava sisu ise valida.
 content-blocking-private-trackers = tuntud jälitajad ainult privaatsetes akendes
 content-blocking-third-party-cookies = kolmanda osapoole jälitamise küpsised
+content-blocking-all-cookies = Kõik küpsised
+content-blocking-unvisited-cookies = Küpsised külastamata saitidelt
 content-blocking-all-windows-trackers = tuntud jälitajad kõigis akendes
 content-blocking-all-third-party-cookies = kõik kolmanda osapoole küpsised
+content-blocking-cryptominers = krüptorahakaevurid
+content-blocking-fingerprinters = seadmetuvastajad
 content-blocking-warning-title = Tähelepanu!
-content-blocking-warning-desc = Küpsiste ja jälitajate blokkimine võib põhjustada probleeme mõnel saidil. Blokkimise keelamine usaldatud saitidel on lihtne.
+content-blocking-warning-description = Sisu blokkimine võib põhjustada mõnede saitide purunemise. Blokkimise keelamine usaldusväärsetel saitidel on lihtne.
 content-blocking-learn-how = Vaata juhendit
-content-blocking-tracking-protection-trackers-label =
+content-blocking-reload-description = Tehtud muudatuste rakendamiseks tuleb sul kaardid uuesti laadida.
+content-blocking-reload-tabs-button =
+    .label = Laadi kõik kaardid uuesti
+    .accesskey = u
+content-blocking-trackers-label =
     .label = Jälitajad
-    .accesskey = l
-content-blocking-tracking-protection-all-detected-trackers-label =
-    .label = Kõik tuvastatud jälitajad
+    .accesskey = J
+content-blocking-tracking-protection-option-all-windows =
+    .label = Kõigis akendes
     .accesskey = K
-content-blocking-tracking-protection-new-description = Blokitakse kõik teadaolevad jälitajad. (Võib takistada mõne lehe laadimist.)
-content-blocking-tracking-protection-option-always =
-    .label = alati
-    .accesskey = a
-content-blocking-tracking-protection-option-private =
-    .label = ainult privaatsetes akendes
+content-blocking-option-private =
+    .label = Vaid privaatsetes akendes
     .accesskey = p
 content-blocking-tracking-protection-change-block-list = Muuda blokkimise nimekirja
-content-blocking-third-party-cookies-label =
-    .label = Kolmanda osapoole küpsised
-    .accesskey = m
-content-blocking-reject-trackers-description = Võimaldab blokkida kõik kolmanda osapoole küpsised või ainult need, mida kasutavad jälitajad.
-# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
-# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
-# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
-# the UI.
-content-blocking-reject-trackers-warning-your-settings-prevent-changes = Sinu küpsiste ja saitide andmete sätted ei võimalda teha muudatusi kolmanda osapoole küpsiste sätetes.
-content-blocking-change-cookie-settings =
-    .label = Muuda küpsiste sätteid
-    .accesskey = u
-content-blocking-reject-trackers-block-trackers-option-recommended =
-    .label = jälitajad (soovitatav)
-    .accesskey = j
-content-blocking-reject-trackers-block-trackers-option =
-    .label = jälitajad
-    .accesskey = t
-content-blocking-reject-trackers-all-third-parties-option =
-    .label = kõik kolmanda osapoole küpsised (mõned saidid võivad katki minna)
-    .accesskey = o
 content-blocking-cookies-label =
     .label = küpsised
     .accesskey = k
+content-blocking-expand-section =
+    .tooltiptext = Rohkem teavet
+# Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
+content-blocking-cryptominers-label =
+    .label = krüptorahakaevurid
+    .accesskey = ü
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+content-blocking-fingerprinters-label =
+    .label = seadmetuvastajad
+    .accesskey = j
 
 ## Privacy Section - Tracking
 
-tracking-header = Jälitamisvastane kaitse
-tracking-desc = Jälitamisvastane kaitse blokib jälitajad, kes koguvad andmeid sinu veebilehitsemise kohta üle mitme veebilehe. <a data-l10n-name="learn-more">Rohkem teavet jälitamisvastase kaitse ja sinu privaatsuse kohta</a>
-tracking-mode-label = Teadaolevad jälitajad blokitakse
-tracking-mode-always =
-    .label = alati
-    .accesskey = a
-tracking-mode-private =
-    .label = ainult privaatsetes akendes
-    .accesskey = r
-tracking-mode-never =
-    .label = mitte kunagi
-    .accesskey = g
-tracking-exceptions =
-    .label = Erandid…
-    .accesskey = d
-tracking-change-block-list =
-    .label = Muuda blokkimise nimekirja…
-    .accesskey = M
 tracking-manage-exceptions =
     .label = Halda erandeid…
     .accesskey = e
@@ -797,20 +757,16 @@ permissions-notification-link = Rohkem teavet
 permissions-notification-pause =
     .label = Pane teavitused { -brand-short-name }i taaskäivitumiseni pausile
     .accesskey = P
-permissions-block-autoplay-media =
-    .label = Saitidel keelatakse heliga meedia automaatne esitamine
-    .accesskey = m
-permissions-block-autoplay-media-menu = Heli sisaldava meedia automaatne esitamine
+permissions-block-autoplay-media2 =
+    .label = Veebisaitidel ei lubata automaatselt heli esitada
+    .accesskey = h
 permissions-block-autoplay-media-exceptions =
     .label = Erandid…
     .accesskey = E
-autoplay-option-ask =
-    .label = vajab alati nõusoleku kinnitamist
-autoplay-option-allow =
-    .label = on lubatud
-autoplay-option-dont =
-    .label = on keelatud
-permissions-autoplay-link = Rohkem teavet
+permissions-autoplay = Automaatne esitamine
+permissions-autoplay-settings =
+    .label = Sätted…
+    .accesskey = t
 permissions-block-popups =
     .label = Hüpikaknad blokitakse
     .accesskey = H
@@ -840,13 +796,12 @@ collection-health-report-link = Rohkem teavet
 collection-studies =
     .label = { -brand-short-name }il lubatakse paigaldada ja käivitada uuringuid
 collection-studies-link = Vaata { -brand-short-name }i uuringuid
+addon-recommendations =
+    .label = { -brand-short-name }il lubatakse isikustatult lisasid soovitada
+addon-recommendations-link = Rohkem teavet
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Selle kompileerimise konfiguratsiooniga on andmete raporteerimine keelatud
-collection-browser-errors =
-    .label = Luba { -brand-short-name }il saata { -vendor-short-name }le brauseri vearaporteid (sisaldavad veateateid)
-    .accesskey = M
-collection-browser-errors-link = Rohkem teavet
 collection-backlogged-crash-reports =
     .label = { -brand-short-name }il lubatakse saatmata vearaporteid saata
     .accesskey = s

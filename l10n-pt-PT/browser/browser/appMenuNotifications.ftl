@@ -5,7 +5,7 @@
 appmenu-update-available =
     .label = Uma nova atualização do { -brand-shorter-name } está disponível.
     .buttonlabel = Transferir atualização
-    .buttonaccesskey = D
+    .buttonaccesskey = T
     .secondarybuttonlabel = Agora não
     .secondarybuttonaccesskey = n
 appmenu-update-available-message = Atualize o seu { -brand-shorter-name } para o mais recente em velocidade e privacidade
@@ -46,4 +46,4 @@ appmenu-addon-private-browsing =
     .secondarybuttonlabel = Ok, entendi
     .secondarybuttonaccesskey = O
 appmenu-addon-private-browsing-message = Quaisquer novas extensões que adicione ao { -brand-shorter-name } não irão funcionar em janelas privadas a menos que permita isto nas definições.
-appmenu-addon-private-browsing-learn-more = Saber como gerir definições de extensões.
+appmenu-addon-private-browsing-learn-more = Saber como gerir definições de extensões

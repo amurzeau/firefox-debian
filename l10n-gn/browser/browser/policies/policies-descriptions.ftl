@@ -21,6 +21,7 @@ policy-Bookmarks = Emoheñói techaukaha tembipuru renda rechaukahápe, pe techa
 policy-CaptivePortal = Embojuruja térã eipe’a pe pytyvõha ñapytĩmbýva.
 policy-CertificatesDescription = Embojuaju mboajepyre térã eipuru mboajepyre moingepyre.
 policy-Cookies = Emoneĩ térã embotove ani ñanduti renda omoinge kookie.
+policy-DefaultDownloadDirectory = Emoha’eño marandurenda mboguejerã ijypykuéva.
 policy-DisableAppUpdate = Ani eheja oñembohekopyahu kundahára.
 policy-DisableBuiltinPDFViewer = Eipe’aite PDF.js, PDF jehechaha oĩva { -brand-short-name } ndive.
 policy-DisableDeveloperTools = Ejoko ñangarekohára rembipurúpe jeike.
@@ -45,30 +46,39 @@ policy-DisplayBookmarksToolbar = Ehechauka Techaukaha rembipuru renda ijypykue r
 policy-DisplayMenuBar = Ehechauka Poravorã renda ijypykue rupi.
 policy-DNSOverHTTPS = Emboheko DNS pe HTTPS ári.
 policy-DontCheckDefaultBrowser = Eipe’a kundahára jehechajey ijypykuéva oñepyrũvo tembiapo.
+policy-DownloadDirectory = Emoha’eño ha ejoko marandurenda mboguejerã.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Embojuruja térã eipe’a tetepy jejoko ha ejoko ejaposérõnte.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
 policy-Extensions = Emboguejy, eipe’a térã ejoko jepysokue. Pe poravopyrã Ñemohenda ojapyhy URL kundaharape térã tape hechapyrãva. Umi poravopyrã pe’a ha joko oguereko jepysokue ID.
+policy-ExtensionSettings = Eñangareko opaite mba’e jepysokue ñemohendáre.
 policy-ExtensionUpdate = Embojuruja térã eipe’a ñembohekopyahu ijeheguíva jepysokue rehegua.
+policy-FirefoxHome = Emboheko Firefox ñepyrũ.
 policy-FlashPlugin = Emoneĩ térã embotove mboguejyrã’i Flash jepuru.
 policy-HardwareAcceleration = Japúramo, eipe’a hardware mbopya’eha.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Emopyenda ha ejoko ejaposẽramo kuatiarogue ñepyrũha.
 policy-InstallAddonsPermission = Emoneĩ ndahetái ñanduti rendápe omboguejývo moimbaha.
+policy-LocalFileLinks = Emoneĩ ñanduti renda moha’eñopyrépe ojuajúvo marandurenda pypeguáva.
 policy-NetworkPrediction = Embojuruja térã eipe’a ñanduti kuaapy (DNS oheka mboyve).
+policy-NewTabPage = Emyandy ha embogue kuatiarogue Tendayke Pyahu.
 policy-NoDefaultBookmarks = Eipe’a techaukaha ijypyguáva ñemoheñói oikehápe { -brand-short-name }, ha umi techaukaha ha’evéva (teramoĩ ojehecha ha ojehupiramovéva). Kuaarã: ko purureko oiko eipurúvo mba’ete tembiapo ñepyrũgua mboyve añoite.
 policy-OfferToSaveLogins = Emboheko emoneĩ hag̃ua { -brand-short-name }-pe omomandu’ávo emoñepyrũvo tembiapo ha ñe’ẽñemi ñongatupyre. Oñemoneĩ añetegua ha japúva.
 policy-OverrideFirstRunPage = Emboyke kuatiarogue tembiapo ñepyrũguáva. Emboaje ko purureko mba’eve’ỹre eipe’aséramo kuatiarogue tembiapo ñepyrũguáva.
 policy-OverridePostUpdatePage = Emboyke kuatiarogue “Mba’epyahu” embohekopyahu rire. Emboaje ko purureko mba’eve’ỹre eipe’aséramo kuatiarogue embohekopyahu rire.
 policy-Permissions = Emboheko ñemoneĩ ta’anganohẽha, ñe’ẽatãha, tendaite ha marandu’ípe g̃uarã.
 policy-PopupBlocking = Emoneĩ ndahetái ñanduti rendápe ohechaukávo ovetã iñapysẽva ijypykue rupi.
+policy-Preferences = Emboheko ha ejoko tepykue jeguerohoryvéva aty’ípe g̃uarã.
+policy-PromptForDownloadLocation = Eporandu moõpa eñongatúta marandurenda emboguejykuévo.
 policy-Proxy = Emboheko proxy mohendahavusu.
 policy-RequestedLocales = Emopyenda tenda jerurepyre rusýi emomba’apo hag̃ua hekoitépe.
 policy-SanitizeOnShutdown = Embogue opaite kundaha mba’ekuaarã emboguekuévo.
+policy-SanitizeOnShutdown2 = Emboguete kundaha mba’ekuaarã esẽnguévo.
 policy-SearchBar = Emboheko jehekaha rendaite ijypykue rupi. Pe puruhára ikatu gueteri oñemomba’e hese.
 policy-SearchEngines = Emboheko jehekaha ñemoĩporã. Ko purureko eipurukuaa pe Extended Support Release (ESR) rupive.
+policy-SearchSuggestEnabled = Emyandy térã embogue jeheka rehegua.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Emohenda PKCS # 11 ra'ãha.
 policy-SSLVersionMax = Emboheko SSL rembiapokue ipyahuvéva.

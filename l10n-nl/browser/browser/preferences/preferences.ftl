@@ -34,6 +34,7 @@ policies-notice =
         [windows] Uw organisatie heeft de mogelijkheid tot het wijzigen van enkele opties uitgeschakeld.
        *[other] Uw organisatie heeft de mogelijkheid tot het wijzigen van enkele voorkeuren uitgeschakeld.
     }
+managed-notice = Uw browser wordt door uw organisatie beheerd.
 pane-general-title = Algemeen
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = Privacy & Beveiliging
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Firefox-account
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -293,6 +290,21 @@ update-pref-write-failure-title = Schrijffout
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Kan voorkeur niet opslaan. Kon niet schrijven naar bestand: { $path }
+update-setting-write-failure-title = Fout bij opslaan updatevoorkeuren
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    { -brand-short-name } heeft een fout aangetroffen en heeft deze wijziging niet opgeslagen. Merk op dat voor het instellen van deze updatevoorkeur schrijfrechten voor onderstaand bestand benodigd zijn. U of uw systeembeheerder kan deze fout oplossen door de groep Gebruikers volledige toegang tot dit bestand te geven.
+    
+    Kon niet schrijven naar bestand: { $path }
+update-in-progress-title = Update wordt uitgevoerd
+update-in-progress-message = Wilt u dat { -brand-short-name } doorgaat met deze update?
+update-in-progress-ok-button = &Verwerpen
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Doorgaan
 
 ## General Section - Performance
 
@@ -528,8 +540,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Opslaan
     .accesskey = s
-sync-mobilepromo-single = Een ander apparaat verbinden
-sync-mobilepromo-multi = Apparaten beheren
 sync-connect-another-device = Een ander apparaat verbinden
 sync-manage-devices = Apparaten beheren
 sync-fxa-begin-pairing = Een apparaat koppelen
@@ -549,6 +559,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Uitzonderingen…
     .accesskey = t
+forms-generate-passwords =
+    .label = Sterke wachtwoorden voorstellen en genereren
+    .accesskey = w
 forms-saved-logins =
     .label = Opgeslagen aanmeldingen…
     .accesskey = m
@@ -687,7 +700,6 @@ content-blocking-all-third-party-cookies = Alle cookies van derden
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Let op!
-content-blocking-warning-desc = Het blokkeren van cookies en trackers kan ervoor zorgen dat bepaalde websites niet goed werken. Blokkering kan eenvoudig worden uitgeschakeld voor websites die u vertrouwt.
 content-blocking-warning-description = Het blokkeren van inhoud kan ervoor zorgen dat bepaalde websites niet goed werken. Blokkering kan eenvoudig worden uitgeschakeld voor websites die u vertrouwt.
 content-blocking-learn-how = Meer info
 content-blocking-reload-description = U dient uw tabbladen te vernieuwen om deze wijzigingen toe te passen.
@@ -754,6 +766,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Uitzonderingen…
     .accesskey = U
+permissions-autoplay = Automatisch afspelen
+permissions-autoplay-settings =
+    .label = Instellingen…
+    .accesskey = I
 permissions-block-popups =
     .label = Pop-upvensters blokkeren
     .accesskey = P

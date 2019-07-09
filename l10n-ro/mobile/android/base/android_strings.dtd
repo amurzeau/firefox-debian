@@ -21,12 +21,15 @@
 <!ENTITY firstrun_data_message "Trafic de date mai mic, mai mult trafic economisit">
 <!ENTITY firstrun_data_subtext2 "Oprește imaginile pentru a consuma mai puțin trafic de date pe fiecare site pe care îl vizitezi.">
 <!ENTITY firstrun_sync_title "Sincronizare">
+<!ENTITY updatednewfirstrun_sync_title "Cont">
 <!ENTITY firstrun_sync_message2 "Continuă de unde ai rămas.">
 <!ENTITY firstrun_sync_subtext2 "Folosește Sync pentru a găsi pe toate dispozitivele tale marcajele, parolele și celelalte lucruri pe care le salvezi în &brandShortName;.">
 <!ENTITY newfirstrun_sync_subtext "Sincronizează lucrurile salvate pe dispozitivul mobil cu Firefox pentru desktop, în mod privat și sigur.">
+<!ENTITY updatednewfirstrun_sync_subtext "Intră în cont pentru a obține maximul de la &brandShortName;">
 <!ENTITY firstrun_signin_message "Conectează-te și începe">
 <!ENTITY firstrun_signin_button "Autentifică-te la Sync">
 <!ENTITY newfirstrun_signin_button "Activează Sync">
+<!ENTITY updatednewfirstrun_signin_button "Autentifică-te în &brandShortName;">
 <!ENTITY  onboard_start_button_browser "Începe navigarea">
 <!ENTITY firstrun_button_notnow "Nu chiar acum">
 <!ENTITY firstrun_button_next "Înainte">
@@ -35,7 +38,7 @@
 
 <!ENTITY firstrun_readerview_title "Articole">
 <!-- Localization note (firstrun_readerview_message): This is a casual way of describing getting rid of unnecessary things, and is referring to simplifying websites so only the article text and images are visible, removing unnecessary headers or ads. -->
-<!ENTITY firstrun_readerview_message "Scapă de dezordine">
+<!ENTITY firstrun_readerview_message "Scapă de elementele inutile">
 <!ENTITY firstrun_readerview_subtext "Folosește modul de lectură pentru citirea comodă a articolelor \u2014 chiar și offline.">
 
 <!-- Localization note (firstrun_devices_title): This is a casual way of addressing the user, somewhat referring to their online identity (which would include other devices, Firefox usage, accounts, etc). -->
@@ -66,6 +69,12 @@
 <!ENTITY  sending_crash_report "Se trimite raportul de defecțiune\u2026">
 <!ENTITY  crash_close_label "Închide">
 <!ENTITY  crash_restart_label "Repornește &brandShortName;">
+
+<!-- Localization note (crash_notification_title, crash_notification_message, crash_notification_negative_button_text)
+     Text displayed in a system notification to allow starting the Crash Reporter (Android Q and later).-->
+<!ENTITY  crash_notification_title "&brandShortName; s-a închis neașteptat">
+<!ENTITY  crash_notification_message "Atinge pentru a raporta la &vendorShortName;">
+<!ENTITY  crash_notification_negative_button_text "Ignoră">
 
 <!ENTITY url_bar_default_text2 "Caută sau introdu adresa">
 
@@ -108,6 +117,10 @@
 <!ENTITY bookmark_folder_updated "Dosar actualizat">
 <!ENTITY bookmark_parent_folder "Dosar părinte">
 <!ENTITY bookmark_add_folder "Adaugă dosar nou">
+
+<!-- Localization note (bookmark_default_folder_title): Default title is used if user doesn't specify
+     one when he is creating a bookmark folder -->
+<!ENTITY bookmark_default_folder_title "(fără titlu)">
 
 <!ENTITY reader_saved_offline "Salvat offline">
 <!-- Localization note (reader_switch_to_bookmarks) : This
@@ -413,8 +426,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY pref_private_data_downloadFiles2 "Descărcările">
 <!ENTITY pref_private_data_syncedTabs "Filele sincronizate">
 
-<!ENTITY pref_default_browser "Desemnează ca browser implicit">
-
 <!ENTITY pref_default_browser2 "Desemnează &brandShortName; ca browserul tău implicit">
 <!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
     Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
@@ -592,6 +603,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_keyword "Cuvânt cheie">
 <!ENTITY bookmark_select_folder "Selectează dosarul">
 
+<!ENTITY bookmark_edit_undo "Anulează">
+
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
      dialog that appears after selecting the "Edit Site Settings" context menu item. -->
 <!ENTITY site_settings_title3       "Setările site-ului">
@@ -679,6 +692,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY filepicker_audio_title "Alege sau înregistrează în format audio">
 <!ENTITY filepicker_image_title "Alege sau fă o poză">
 <!ENTITY filepicker_video_title "Alege sau înregistrează în format video">
+
+<!ENTITY filepicker_permission_denied "Permisiunile solicitate nu au fost acordate, se revine la selectorul de fișiere al sistemului.">
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "Ești conectat la">
@@ -918,6 +933,7 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_title "Pauză">
 <!ENTITY pip_pause_button_description "Întrerupe redarea">
 
+<!ENTITY pref_notification_settings_link "Gestionează setările de notificare">
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "Browser">
 <!ENTITY mls_notification_channel "Serviciu de localizare &vendorShortName;">
@@ -925,8 +941,9 @@ Picture-in-picture mini window -->
 <!ENTITY media_notification_channel2 "Sunet și video">
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
 <!ENTITY leanplum_default_notifications_channel2 "Ponturi și trucuri &vendorShortName;">
-<!ENTITY updater_notification_channel "Actualizări aplicație">
+<!ENTITY updater_notification_channel "Actualizările aplicației">
 <!ENTITY synced_tabs_notification_channel "File sincronizate">
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
 web sites through the HTML Notifications API. -->
-<!ENTITY site_notifications_channel "Notificări site">
+<!ENTITY site_notifications_channel "Notificările site-urilor">
+<!ENTITY crash_handler_notifications_channel "Raportor de defecțiuni &brandShortName;">

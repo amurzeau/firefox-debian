@@ -53,6 +53,7 @@ policy-EnableTrackingProtection = 启用或禁用内容拦截，并可选择锁�
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
 policy-Extensions = 安装，移除或锁定扩展。安装选项可将网址或路径作为参数。移除和锁定选项则需要扩展 ID 作为参数。
+policy-ExtensionSettings = 管理扩展的各种安装设置。
 policy-ExtensionUpdate = 启用或禁用扩展自动更新。
 policy-FirefoxHome = 配置 Firefox 主页。
 policy-FlashPlugin = 允许或拒绝使用 Flash 插件。
@@ -74,7 +75,7 @@ policy-PromptForDownloadLocation = 下载前询问文件保存位置。
 policy-Proxy = 配置代理设置
 policy-RequestedLocales = 设置应用程序表明语言区域偏好的语言区域请求列表。
 policy-SanitizeOnShutdown = 关闭浏览器时清除所有浏览数据。
-policy-SanitizeOnShutdown2 = 关机时,，清除上网数据。
+policy-SanitizeOnShutdown2 = 关机时，清除上网数据。
 policy-SearchBar = 设置搜索栏的默认位置，用户仍可自定义。
 policy-SearchEngines = 配置搜索引擎设置。此策略仅适用于延长支持版（ESR）。
 policy-SearchSuggestEnabled = 启用或禁用搜索建议。

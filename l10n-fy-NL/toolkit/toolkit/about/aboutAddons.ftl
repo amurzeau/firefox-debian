@@ -100,7 +100,7 @@ detail-update-manual =
 detail-private-browsing-label = Utfiere yn priveefinsters
 detail-private-browsing-description2 = Wannear tastien, hat de útwreiding tagong ta jo online-aktiviteiten yn priveenavigaasje. <label data-l10n-name="detail-private-browsing-learn-more">Mear ynfo</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = Net tastien yn priveefinsters
 detail-private-disallowed-description = Dizze útwreiding wurket net yn priveenavigaasje. <label data-l10n-name="detail-private-browsing-learn-more">Mear ynfo</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
@@ -163,6 +163,9 @@ private-browsing-description2 =
 extensions-view-discover =
     .name = Add-ons krije
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Oanrekommandaasjes
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Resinte fernijingen
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -243,7 +246,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Utwreidingsfluchtoetsen beheare
     .accesskey = U
-shortcuts-empty-message = Der binne gjin fluchtoetsen foar dizze útwreiding.
 shortcuts-no-addons = Jo hawwe gjin útwreidingen ynskeakele.
 shortcuts-no-commands = De folgjende útwreidingen hawwe gjin fluchtoetsen:
 shortcuts-input =
@@ -268,19 +270,68 @@ shortcuts-card-collapse-button = Minder toane
 go-back-button =
     .tooltiptext = Tebekgean
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    Utwreidingen en tema's binne as apps foar jo browser en sy litte jo wachtwurden
+    beskermje, fideo’s downloade, oanbiedingen fine, ferfelende advertinsjes blokkearje, wizigje
+    hoe't jo browser derút sjocht, en noch folle mear. Dizze lytse softwareprogramma's binne
+    faaks ûntwikkele troch in tredde partij. Hjir is in seleksje dy't { -brand-product-name }
+    <a data-l10n-name="learn-more-trigger">oanrekommandearret</a> foar bjusterbaarlike
+    befeiliging, prestaasjes en funksjonaliteit.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations =
+    Inkelde fan dizze oanrekommandaasjes binne personalisearre. Se binne basearre op oare
+    troch jo ynstallearre útwreidingen, profylfoarkarren en brûksstatistiken.
+discopane-notice-learn-more = Mear ynfo
+privacy-policy = Privacybelied
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = troch <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Brûkers: { $dailyUsers }
+install-extension-button = Tafoegje oan { -brand-product-name }
+install-theme-button = Tema ynstallearje
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Beheare
+find-more-addons = Mear add-ons sykje
+
 ## Add-on actions
 
+report-addon-button = Rapportearje
 remove-addon-button = Fuortsmite
 disable-addon-button = Utskeakelje
 enable-addon-button = Ynskeakelje
 expand-addon-button = Mear opsjes
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Opsjes
+       *[other] Foarkarren
+    }
+details-addon-button = Details
+release-notes-addon-button = Utjefteopmerkingen
+permissions-addon-button = Tastimmingen
 addons-enabled-heading = Ynskeakele
 addons-disabled-heading = Utskeakele
+ask-to-activate-button = Freegje om te aktivearjen
+always-activate-button = Altyd aktivearje
+never-activate-button = Nea aktivearje
 addon-detail-author-label = Skriuwer
 addon-detail-version-label = Ferzje
 addon-detail-last-updated-label = Lêst bywurke
 addon-detail-homepage-label = Startside
 addon-detail-rating-label = Wurdearring
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Beoardiele mei { NUMBER($rating, maximumFractionDigits: 1) } fan de 5
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -293,3 +344,38 @@ addon-detail-reviews-link =
         [one] { $numberOfReviews } beoardieling
        *[other] { $numberOfReviews } beoardielingen
     }
+
+## Pending uninstall message bar
+
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> is fuortsmiten.
+pending-uninstall-undo-button = Ungedien meitsje
+addon-detail-updates-label = Automatyske fernijingen tastean
+addon-detail-updates-radio-default = Standert
+addon-detail-updates-radio-on = Oan
+addon-detail-updates-radio-off = Ut
+addon-detail-update-check-label = Kontrolearje op fernijingen
+install-update-button = Bywurkje
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Tastien yn priveefinsters
+addon-detail-private-browsing-help = Wannear tastien, hat de útwreiding tagong ta jo online-aktiviteiten yn priveenavigaasje. <a data-l10n-name="learn-more">Mear ynfo</a>
+addon-detail-private-browsing-allow = Tastean
+addon-detail-private-browsing-disallow = Net tastean
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Oanrekommandearre
+    .alt = Oanrekommandearre
+available-updates-heading = Beskikbere fernijingen
+recent-updates-heading = Resinte fernijingen
+release-notes-loading = Lade…
+release-notes-error = Sorry, mar der wie in flater mei it laden fan de útjefteopmerkingen.
+addon-permissions-empty = Foar dizze útwreiding binne gjin tastimmingen fereaske
+recommended-extensions-heading = Oanrekommandearre útwreidingen
+recommended-themes-heading = Oanrekommandearre tema's
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Fiele jo jo kreätyf? <a data-l10n-name="link"> Bou jo eigen tema mei Firefox Color.</a>

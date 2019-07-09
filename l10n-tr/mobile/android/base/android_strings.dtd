@@ -21,12 +21,15 @@
 <!ENTITY firstrun_data_message "Daha az veri, daha çok tasarruf">
 <!ENTITY firstrun_data_subtext2 "Girdiğiniz her sitede daha az veri harcamak için resimleri kapatabilirsiniz.">
 <!ENTITY firstrun_sync_title "Sync">
+<!ENTITY updatednewfirstrun_sync_title "Hesap">
 <!ENTITY firstrun_sync_message2 "Kaldığın yerden devam et.">
 <!ENTITY firstrun_sync_subtext2 "Tüm cihazlarınızda &brandShortName;’a kaydettiğiniz yer imlerine, parolalara ve diğer bilgilere ulaşmak için Sync’i kullanabilirsiniz.">
 <!ENTITY newfirstrun_sync_subtext "Mobil cihazınızda kaydettiğiniz her şeyi bilgisayarınızdaki Firefox’a güvenle aktarın.">
+<!ENTITY updatednewfirstrun_sync_subtext "&brandShortName;’tan en iyi şekilde yararlanmak için hesabınıza giriş yapın">
 <!ENTITY firstrun_signin_message "Bağlan, kullanmaya başla">
 <!ENTITY firstrun_signin_button "Sync’e giriş yap">
 <!ENTITY newfirstrun_signin_button "Sync’i etkinleştir">
+<!ENTITY updatednewfirstrun_signin_button "&brandShortName;’a giriş yapın">
 <!ENTITY  onboard_start_button_browser "Gezinmeye başla">
 <!ENTITY firstrun_button_notnow "Daha sonra">
 <!ENTITY firstrun_button_next "İleri">
@@ -66,6 +69,12 @@
 <!ENTITY  sending_crash_report "Çökme raporu gönderiliyor\u2026">
 <!ENTITY  crash_close_label "Kapat">
 <!ENTITY  crash_restart_label "&brandShortName; baştan başlasın">
+
+<!-- Localization note (crash_notification_title, crash_notification_message, crash_notification_negative_button_text)
+     Text displayed in a system notification to allow starting the Crash Reporter (Android Q and later).-->
+<!ENTITY  crash_notification_title "&brandShortName; çöktü">
+<!ENTITY  crash_notification_message "&vendorShortName;’ya bildirmek için dokunun">
+<!ENTITY  crash_notification_negative_button_text "Görmezden gel">
 
 <!ENTITY url_bar_default_text2 "Arama yapın veya adres yazın">
 
@@ -108,6 +117,10 @@
 <!ENTITY bookmark_folder_updated "Dizin güncellendi">
 <!ENTITY bookmark_parent_folder "Üst dizin">
 <!ENTITY bookmark_add_folder "Yeni dizin ekle">
+
+<!-- Localization note (bookmark_default_folder_title): Default title is used if user doesn't specify
+     one when he is creating a bookmark folder -->
+<!ENTITY bookmark_default_folder_title "(başlık yok)">
 
 <!ENTITY reader_saved_offline "Çevrimdışı kaydedildi">
 <!-- Localization note (reader_switch_to_bookmarks) : This
@@ -413,8 +426,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY pref_private_data_downloadFiles2 "İndirilenler">
 <!ENTITY pref_private_data_syncedTabs "Eşitlenmiş sekmeler">
 
-<!ENTITY pref_default_browser "Varsayılan tarayıcı yap">
-
 <!ENTITY pref_default_browser2 "&brandShortName; varsayılan tarayıcınız olsun">
 <!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
     Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
@@ -592,6 +603,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_keyword "Anahtar kelime">
 <!ENTITY bookmark_select_folder "Dizin seç">
 
+<!ENTITY bookmark_edit_undo "Geri al">
+
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
      dialog that appears after selecting the "Edit Site Settings" context menu item. -->
 <!ENTITY site_settings_title3       "Site Ayarları">
@@ -679,6 +692,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY filepicker_audio_title "Bir ses seçin veya kaydedin">
 <!ENTITY filepicker_image_title "Bir resim seçin veya çekin">
 <!ENTITY filepicker_video_title "Bir video seçin veya kaydedin">
+
+<!ENTITY filepicker_permission_denied "Gerekli izinler verilmedi. Sistem dosya seçicisine dönülüyor.">
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "Bağlandığınız site:">
@@ -918,6 +933,7 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_title "Duraklat">
 <!ENTITY pip_pause_button_description "Oynatmayı duraklat">
 
+<!ENTITY pref_notification_settings_link "Bildirim ayarlarını yönet">
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "Tarayıcı">
 <!ENTITY mls_notification_channel "&vendorShortName; Konum Hizmeti">
@@ -930,3 +946,4 @@ Picture-in-picture mini window -->
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
 web sites through the HTML Notifications API. -->
 <!ENTITY site_notifications_channel "Site bildirimleri">
+<!ENTITY crash_handler_notifications_channel "&brandShortName; Çökme Raporcusu">

@@ -21,12 +21,15 @@
 <!ENTITY firstrun_data_message "Dữ liệu ít hơn, tiết kiệm nhiều hơn">
 <!ENTITY firstrun_data_subtext2 "Tắt hiển thị ảnh để giảm dữ liệu mà bạn cần tải cho mỗi trang.">
 <!ENTITY firstrun_sync_title "Đồng bộ hóa">
+<!ENTITY updatednewfirstrun_sync_title "Tài khoản">
 <!ENTITY firstrun_sync_message2 "Tiếp tục trang mà bạn vừa rời khỏi.">
 <!ENTITY firstrun_sync_subtext2 "Sử dụng đồng bộ hóa để tìm trang đánh dấu, mật khẩu và những thứ bạn lưu vào &brandShortName; trên tất cả các thiết bị của bạn.">
 <!ENTITY newfirstrun_sync_subtext "Đồng bộ hóa những thứ bạn lưu trên thiết bị di động với Firefox cho máy tính để bàn, riêng tư và an toàn.">
+<!ENTITY updatednewfirstrun_sync_subtext "Đăng nhập vào tài khoản của bạn để tận dụng tối đa &brandShortName;">
 <!ENTITY firstrun_signin_message "Thiết lập kết nối và bắt đầu">
 <!ENTITY firstrun_signin_button "Đăng nhập để đồng bộ">
 <!ENTITY newfirstrun_signin_button "Bật đồng bộ hóa">
+<!ENTITY updatednewfirstrun_signin_button "Đăng nhập vào &brandShortName;">
 <!ENTITY  onboard_start_button_browser "Bắt đầu duyệt web">
 <!ENTITY firstrun_button_notnow "Không phải lúc này">
 <!ENTITY firstrun_button_next "Tiếp">
@@ -66,6 +69,12 @@
 <!ENTITY  sending_crash_report "Đang gửi báo cáo lỗi\u2026">
 <!ENTITY  crash_close_label "Đóng">
 <!ENTITY  crash_restart_label "Khởi động lại &brandShortName;">
+
+<!-- Localization note (crash_notification_title, crash_notification_message, crash_notification_negative_button_text)
+     Text displayed in a system notification to allow starting the Crash Reporter (Android Q and later).-->
+<!ENTITY  crash_notification_title "&brandShortName; đã bị vỡ">
+<!ENTITY  crash_notification_message "Nhấn để báo cáo cho &vendorShortName;">
+<!ENTITY  crash_notification_negative_button_text "Bỏ qua">
 
 <!ENTITY url_bar_default_text2 "Tìm kiếm hoặc nhập địa chỉ">
 
@@ -108,6 +117,10 @@
 <!ENTITY bookmark_folder_updated "Thư mục đã cập nhật">
 <!ENTITY bookmark_parent_folder "Thư mục cha">
 <!ENTITY bookmark_add_folder "Thêm thư mục mới">
+
+<!-- Localization note (bookmark_default_folder_title): Default title is used if user doesn't specify
+     one when he is creating a bookmark folder -->
+<!ENTITY bookmark_default_folder_title "(không tiêu đề)">
 
 <!ENTITY reader_saved_offline "Đã lưu ngoại tuyến">
 <!-- Localization note (reader_switch_to_bookmarks) : This
@@ -413,8 +426,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY pref_private_data_downloadFiles2 "Tải xuống">
 <!ENTITY pref_private_data_syncedTabs "Các thẻ đã đồng bộ">
 
-<!ENTITY pref_default_browser "Đặt trình duyệt làm mặc định">
-
 <!ENTITY pref_default_browser2 "Đặt &brandShortName; làm trình duyệt mặc định của bạn">
 <!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
     Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
@@ -592,6 +603,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_keyword "Từ khóa">
 <!ENTITY bookmark_select_folder "Chọn thư mục">
 
+<!ENTITY bookmark_edit_undo "Hoàn tác">
+
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
      dialog that appears after selecting the "Edit Site Settings" context menu item. -->
 <!ENTITY site_settings_title3       "Cài đặt trang">
@@ -680,6 +693,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY filepicker_image_title "Chọn hoặc chụp một bức ảnh">
 <!ENTITY filepicker_video_title "Chọn hoặc ghi một đoạn video">
 
+<!ENTITY filepicker_permission_denied "Quyền yêu cầu đã không được cấp, đang trở lại bộ chọn tập tin hệ thống.">
+
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "Bạn đang kết nối đến">
 <!-- Localization note (identity_run_by) : This string appears between a
@@ -744,7 +759,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY updater_start_title2 "Bản cập nhật cho &brandShortName; đã sẵn sàng">
 <!ENTITY updater_start_select2 "Chạm để tải xuống">
 
-<!ENTITY updater_downloading_title2 "Đang tải &brandShortName;">
+<!ENTITY updater_downloading_title2 "Đang tải xuống &brandShortName;">
 <!ENTITY updater_downloading_title_failed2 "Tải xuống bị lỗi">
 <!ENTITY updater_downloading_select2 "Chạm để áp dụng cập nhật khi tải xong">
 <!ENTITY updater_downloading_retry2 "Chạm để thử lại">
@@ -931,3 +946,4 @@ Picture-in-picture mini window -->
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
 web sites through the HTML Notifications API. -->
 <!ENTITY site_notifications_channel "Các thông báo trang">
+<!ENTITY crash_handler_notifications_channel "Báo cáo lỗi &brandShortName;">

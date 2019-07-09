@@ -15,7 +15,8 @@ about-telemetry-option-group-older = 更早
 about-telemetry-previous-ping = <<
 about-telemetry-next-ping = >>
 about-telemetry-page-title = 遥测数据
-about-telemetry-more-information = 寻找更多信息？
+about-telemetry-current-store = 当前存储：
+about-telemetry-more-information = 想了解更多吗？
 about-telemetry-firefox-data-doc = <a data-l10n-name="data-doc-link">Firefox 数据文档</a> 介绍了使用我们的数据工具的方式。
 about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Firefox 遥测客户端文档</a> 包括概念、API 文档以及数据引用的定义。
 about-telemetry-telemetry-dashboard = <a data-l10n-name="dashboard-link">遥测面板</a> 直观显示了 Mozilla 通过遥测收到的数据。
@@ -140,3 +141,6 @@ about-telemetry-origin-count = 数量
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Firefox 原点遥测</a>会在数据发送之前对其进行编码，接着 { $telemetryServerOwner } 才能计数，但不知道是否会有任何给定的{ -brand-product-name } 参与了该计数。（<a data-l10n-name="prio-blog-link">了解详情</a>）
+# Variables:
+#  $process (String): type of process in subsection headers ( e.g. "content", "parent" )
+about-telemetry-process = { $process } 进程

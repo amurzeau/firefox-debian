@@ -95,7 +95,7 @@ detail-update-manual =
 detail-private-browsing-label = Lanĉi en privataj fenestroj
 detail-private-browsing-description2 = Kiam tio ĉi estas permesata, la etendaĵo havos aliron al viaj agoj en la reto, ankaŭ dum privata retumo. <label data-l10n-name="detail-private-browsing-learn-more">Pli da informo</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = Ne permesita en privataj fenestroj
 detail-private-disallowed-description = Tiu ĉi etendaĵo ne funkcias dum privata retumo. <label data-l10n-name="detail-private-browsing-learn-more">Pli da informo</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
@@ -153,6 +153,9 @@ private-browsing-description2 = { -brand-short-name } modifis la funkciadon de e
 extensions-view-discover =
     .name = Elŝuti aldonaĵojn
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Rekomendoj
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Ĵusaj ĝisdatigoj
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -233,7 +236,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Administri alirklavojn de etendaĵoj
     .accesskey = A
-shortcuts-empty-message = Estas neniu alirklavo por tiu ĉi etendaĵo.
 shortcuts-no-addons = Vi havas neniun aktivan etendaĵon.
 shortcuts-no-commands = La jenaj etendaĵoj ne havas alirklavojn:
 shortcuts-input =
@@ -259,19 +261,60 @@ shortcuts-card-collapse-button = Montri malpli
 go-back-button =
     .tooltiptext = Iri reen
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro = Etendaĵoj kaj etosoj estas kiel programoj por via retumilo, kiuj permesas al vi protekti pasvortojn, elŝuti filmetojn, serĉi ofertojn, bloki ĝenajn reklamojn, ŝanĝi la aspekton de via retumilo kaj fari multe pli da aferoj. Tiuj etaj programoj estas ofte ne programitaj de ni. Jen <a data-l10n-name="learn-more-trigger">kelkaj rekomendoj</a> de { -brand-product-name } por eksterordinaraj sekureco, efikeco kaj funkcioj.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations = Kelkaj el tiuj ĉi rekomendoj estas personecigitaj. Ili baziĝas sur la listo de viaj nunaj etendaĵoj, preferoj de profilo kaj statistikoj de uzo.
+discopane-notice-learn-more = Pli da informo
+privacy-policy = Politiko pri privateco
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = de <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Uzantoj: { $dailyUsers }
+install-extension-button = Aldoni al { -brand-product-name }
+install-theme-button = Instali etoson
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Administri
+find-more-addons = Serĉi pli da aldonaĵoj
+
 ## Add-on actions
 
+report-addon-button = Denunci
 remove-addon-button = Forigi
 disable-addon-button = Malaktivigi
 enable-addon-button = Aktivigi
 expand-addon-button = Pli da elektebloj
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Preferoj
+       *[other] Preferoj
+    }
+details-addon-button = Detaloj
+release-notes-addon-button = Notoj pri liverado
+permissions-addon-button = Permesoj
 addons-enabled-heading = Aktiva
 addons-disabled-heading = Malaktiva
+ask-to-activate-button = Demandi antaŭ ol aktivigi
+always-activate-button = Ĉiam aktivigi
+never-activate-button = Neniam aktivigi
 addon-detail-author-label = Aŭtoro
 addon-detail-version-label = Versio
 addon-detail-last-updated-label = Laste ĝisdatigita
 addon-detail-homepage-label = Ĉefpaĝo
 addon-detail-rating-label = Taksado
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Taksado { NUMBER($rating, maximumFractionDigits: 1) } el 5
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -284,3 +327,38 @@ addon-detail-reviews-link =
         [one] { $numberOfReviews } revizio
        *[other] { $numberOfReviews } revizioj
     }
+
+## Pending uninstall message bar
+
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> estis forigita.
+pending-uninstall-undo-button = Malfari
+addon-detail-updates-label = Permesi aŭtomatajn ĝisdatigojn
+addon-detail-updates-radio-default = Norma
+addon-detail-updates-radio-on = Ŝaltita
+addon-detail-updates-radio-off = Malŝaltita
+addon-detail-update-check-label = Kontroli ĉu estas ĝisdatigoj
+install-update-button = Ĝisdatigi
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Permesita en privataj fenestroj
+addon-detail-private-browsing-help = Se tio estas permesita, la etendaĵo havos aliron al viaj retumaj agoj dum vi private retumas. <a data-l10n-name="learn-more">Pli da informo</a>
+addon-detail-private-browsing-allow = Permesi
+addon-detail-private-browsing-disallow = Ne permesi
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Rekomendita
+    .alt = Rekomendita
+available-updates-heading = Haveblaj ĝisdatigoj
+recent-updates-heading = Ĵusaj ĝisdatigoj
+release-notes-loading = Ŝargado…
+release-notes-error = Bedaŭrinde okazis eraro dum la ŝargado de la notoj pri liverado.
+addon-permissions-empty = Tiu ĉi etendaĵo postulas neniun permeson
+recommended-extensions-heading = Rekomenditaj etendaĵoj
+recommended-themes-heading = Rekomenditaj etosoj
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Ĉu vi kreemas? <a data-l10n-name="link">Kreu vian propran etoson per Firefox Color.</a>

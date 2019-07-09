@@ -15,6 +15,7 @@ about-telemetry-option-group-older = Mai vechi
 about-telemetry-previous-ping = <<
 about-telemetry-next-ping = >>
 about-telemetry-page-title = Date de telemetrie
+about-telemetry-current-store = Magazin curent:
 about-telemetry-more-information = Cauți mai multe informații?
 about-telemetry-firefox-data-doc = <a data-l10n-name="data-doc-link">Documentația de date Firefox</a> conține ghiduri despre cum să lucrezi cu uneltele noastre de date.
 about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Documentația privind clientul de telemetrie Firefox</a> include definiții de concepte, documentație API și referințe de date.
@@ -69,7 +70,7 @@ about-telemetry-histogram-stats =
     }
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
-about-telemetry-page-subtitle = Această pagină arată informațiile colectate prin telemetrie despre performanță, hardware, utilizare și personalizări. Aceste informații sunt trimise la { $telemetryServerOwner } pentru a ajuta la îmbunătățirea { -brand-full-name }.
+about-telemetry-page-subtitle = Această pagină afișează informațiile colectate prin telemetrie despre performanță, hardware, utilizare și personalizări. Aceste informații sunt trimise la { $telemetryServerOwner } pentru a ajuta la îmbunătățirea { -brand-full-name }.
 about-telemetry-settings-explanation = Telemetria colectează { about-telemetry-data-type } și încărcarea este <a data-l10n-name="upload-link">{ about-telemetry-upload-type }</a>.
 # Variables:
 #   $name (String): ping name, e.g. “saved-session”
@@ -142,3 +143,6 @@ about-telemetry-origin-count = număr
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Firefox Origin Telemetry</a> codifică datele înainte de transmitere astfel încât { $telemetryServerOwner } poate număra, dar nu știe dacă orice { -brand-product-name } dat a contribuit sau nu la numărătoarea respectivă. (<a data-l10n-name="prio-blog-link">learn more</a>)
+# Variables:
+#  $process (String): type of process in subsection headers ( e.g. "content", "parent" )
+about-telemetry-process = Proces { $process }

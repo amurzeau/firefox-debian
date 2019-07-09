@@ -80,11 +80,14 @@ detail-version =
 detail-last-updated =
     .label = Päivitetty viimeksi
 detail-contributions-description = Tämän lisäosan kehittäjä toivoo, että tukisit lisäosan kehitystyötä pienellä summalla.
+detail-contributions-button = Auta
+    .title = Auta lisäosan kehitystyössä
+    .accesskey = A
 detail-update-type =
     .value = Automaattinen päivitys
 detail-update-default =
     .label = Oletus
-    .tooltiptext = Asenna päivitykset automaattisesti vain jos se on oletusasetus
+    .tooltiptext = Asenna päivitykset automaattisesti vain, jos se on oletusasetus
 detail-update-automatic =
     .label = Käytössä
     .tooltiptext = Asenna päivitykset automaattisesti
@@ -95,7 +98,7 @@ detail-update-manual =
 detail-private-browsing-label = Suoritus yksityisissä ikkunoissa
 detail-private-browsing-description2 = Kun sallittu, tällä laajennuksella on pääsy verkossa tekemiisi asioihin yksityisissä ikkunoissa. <label data-l10n-name="detail-private-browsing-learn-more">Lue lisää</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = Ei sallittu yksityisissä ikkunoissa
 detail-private-disallowed-description = Tätä laajennusta ei suoriteta yksityisissä ikkunoissa. <label data-l10n-name="detail-private-browsing-learn-more">Lue lisää</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
@@ -136,7 +139,7 @@ detail-show-preferences =
            *[other] Muokkaa tämän lisäosan asetuksia
         }
 detail-rating =
-    .value = Arvosana:
+    .value = Arvostelu:
 addon-restart-now =
     .label = Käynnistä uudelleen
 disabled-unsigned-heading =
@@ -155,6 +158,9 @@ private-browsing-description2 =
 extensions-view-discover =
     .name = Lataa lisäosia
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Suositukset
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Tuoreet päivitykset
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -235,7 +241,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Hallitse laajennusten pikanäppäimiä
     .accesskey = t
-shortcuts-empty-message = Tällä lisäosalle ei ole pikanäppäimiä.
 shortcuts-no-addons = Yhtäkään lisäosaa ei ole otettu käyttöön.
 shortcuts-no-commands = Seuraavilla laajennuksilla ei ole pikanäppäimiä:
 shortcuts-input =
@@ -261,19 +266,108 @@ shortcuts-card-collapse-button = Näytä vähemmän
 go-back-button =
     .tooltiptext = Takaisin
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    Laajennukset ja teemat ovat kuin sovelluksia selaimessa. Ne voivat suojata salasanojasi,
+    ladata videoita, löytää hyviä tarjouksia, estää ärsyttäviä mainoksia, muuttaa
+    selaimen ulkoasua ja paljon muuta. Nämä pienet ohjelmat ovat usein kolmansien
+    osapuolten kehittämiä. Tässä on valikoima { -brand-product-name }in
+    <a data-l10n-name="learn-more-trigger">suosittelemia</a> laajennuksia
+    tietoturvan, suorituskyvyn ja toiminnallisuuden parantamiseksi.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations =
+    Jotkin näistä suosituksista ovat henkilökohtaisia. Suositukset pohjautuvat
+    muihin asentamiisi laajennuksiin, profiiliasetuksiin ja käyttötilastoihin.
+discopane-notice-learn-more = Lue lisää
+privacy-policy = Tietosuojaseloste
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = Tekijä: <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Käyttäjiä: { $dailyUsers }
+install-extension-button = Lisää { -brand-product-name }iin
+install-theme-button = Asenna teema
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Hallitse
+find-more-addons = Etsi lisää lisäosia
+
 ## Add-on actions
 
+report-addon-button = Raportoi
 remove-addon-button = Poista
 disable-addon-button = Poista käytöstä
 enable-addon-button = Käytä
 expand-addon-button = Lisää valintoja
+preferences-addon-button = Asetukset
+details-addon-button = Tiedot
+release-notes-addon-button = Julkaisutiedot
+permissions-addon-button = Oikeudet
 addons-enabled-heading = Käytössä
 addons-disabled-heading = Ei käytössä
+ask-to-activate-button = Kysy aktivointia
+always-activate-button = Aktivoi aina
+never-activate-button = Älä koskaan aktivoi
 addon-detail-author-label = Tekijä
 addon-detail-version-label = Versio
 addon-detail-last-updated-label = Päivitetty viimeksi
 addon-detail-homepage-label = Kotisivu
+addon-detail-rating-label = Arvostelu
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Arvostelu { NUMBER($rating, maximumFractionDigits: 1) }/5
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
 addon-name-disabled = { $name } (ei käytössä)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } arvio
+       *[other] { $numberOfReviews } arviota
+    }
+
+## Pending uninstall message bar
+
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> on poistettu.
+pending-uninstall-undo-button = Kumoa
+addon-detail-updates-label = Automaattiset päivitykset
+addon-detail-updates-radio-default = Oletus
+addon-detail-updates-radio-on = Käytössä
+addon-detail-updates-radio-off = Ei käytössä
+addon-detail-update-check-label = Tarkista päivitykset
+install-update-button = Päivitä
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Sallittu yksityisissä ikkunoissa
+addon-detail-private-browsing-help = Kun sallittu, laajennus voi seurata, mitä teet verkossa yksityisen selauksen tilassa. <a data-l10n-name="learn-more">Lue lisää</a>
+addon-detail-private-browsing-allow = Salli
+addon-detail-private-browsing-disallow = Älä salli
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Suositeltu
+    .alt = Suositeltu
+available-updates-heading = Saatavilla olevat päivitykset
+recent-updates-heading = Tuoreet päivitykset
+release-notes-loading = Ladataan…
+release-notes-error = Julkaisutietojen lataaminen epäonnistui.
+addon-permissions-empty = Tämä laajennus ei vaadi mitään oikeuksia
+recommended-extensions-heading = Suositellut laajennukset
+recommended-themes-heading = Suositellut teemat
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Haluatko kokeilla itse? <a data-l10n-name="link">Voit luoda oman teeman Firefox Color -ohjelmalla.</a>

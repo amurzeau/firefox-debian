@@ -100,7 +100,7 @@ detail-update-manual =
 detail-private-browsing-label = Uitvoeren in privévensters
 detail-private-browsing-description2 = Wanneer toegestaan, heeft de extensie toegang tot uw online-activiteiten tijdens privénavigatie. <label data-l10n-name="detail-private-browsing-learn-more">Meer info</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = Niet toegestaan in privévensters
 detail-private-disallowed-description = Deze extensie werkt niet tijdens privénavigatie. <label data-l10n-name="detail-private-browsing-learn-more">Meer info</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
@@ -167,6 +167,9 @@ private-browsing-description2 =
 extensions-view-discover =
     .name = Add-ons verkrijgen
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Aanbevelingen
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Recente updates
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -247,7 +250,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Extensiesneltoetsen beheren
     .accesskey = E
-shortcuts-empty-message = Er zijn geen sneltoetsen voor deze extensie.
 shortcuts-no-addons = U hebt geen extensies ingeschakeld.
 shortcuts-no-commands = De volgende extensies hebben geen sneltoetsen:
 shortcuts-input =
@@ -272,12 +274,53 @@ shortcuts-card-collapse-button = Minder tonen
 go-back-button =
     .tooltiptext = Teruggaan
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    Extensies en thema's zijn als apps voor uw browser en zij laten u wachtwoorden
+    beschermen, video’s downloaden, koopjes vinden, vervelende advertenties blokkeren, wijzigen
+    hoe uw browser eruit ziet, en nog veel meer. Deze kleine softwareprogramma's zijn
+    vaak ontwikkeld door een derde partij. Hier is een selectie die { -brand-product-name }
+    <a data-l10n-name="learn-more-trigger">aanbeveelt</a> voor uitstekende
+    beveiliging, prestaties en functionaliteit.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations =
+    Enkele van deze aanbevelingen zijn gepersonaliseerd. Ze zijn gebaseerd op andere
+    door u geïnstalleerde extensies, profielvoorkeuren en gebruiksstatistieken.
+discopane-notice-learn-more = Meer info
+privacy-policy = Privacybeleid
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = door <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Gebruikers: { $dailyUsers }
+install-extension-button = Toevoegen aan { -brand-product-name }
+install-theme-button = Thema installeren
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Beheren
+find-more-addons = Meer add-ons zoeken
+
 ## Add-on actions
 
+report-addon-button = Rapporteren
 remove-addon-button = Verwijderen
 disable-addon-button = Uitschakelen
 enable-addon-button = Inschakelen
 expand-addon-button = Meer opties
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Opties
+       *[other] Voorkeuren
+    }
+details-addon-button = Details
+release-notes-addon-button = Uitgaveopmerkingen
+permissions-addon-button = Toestemmingen
 addons-enabled-heading = Ingeschakeld
 addons-disabled-heading = Uitgeschakeld
 ask-to-activate-button = Vragen om te activeren
@@ -288,6 +331,11 @@ addon-detail-version-label = Versie
 addon-detail-last-updated-label = Laatst bijgewerkt
 addon-detail-homepage-label = Startpagina
 addon-detail-rating-label = Waardering
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Beoordeeld met { NUMBER($rating, maximumFractionDigits: 1) } van de 5
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -320,6 +368,18 @@ addon-badge-private-browsing-allowed =
 addon-detail-private-browsing-help = Wanneer toegestaan, heeft de extensie toegang tot uw online-activiteiten tijdens privénavigatie. <a data-l10n-name="learn-more">Meer info</a>
 addon-detail-private-browsing-allow = Toestaan
 addon-detail-private-browsing-disallow = Niet toestaan
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Aanbevolen
+    .alt = Aanbevolen
 available-updates-heading = Beschikbare updates
 recent-updates-heading = Recente updates
-
+release-notes-loading = Laden…
+release-notes-error = Sorry, maar er is een fout opgetreden bij het laden van de uitgaveopmerkingen.
+addon-permissions-empty = Voor deze extensie zijn geen toestemmingen vereist
+recommended-extensions-heading = Aanbevolen extensies
+recommended-themes-heading = Aanbevolen thema’s
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Voelt u zich creatief? <a data-l10n-name="link"> Bouw uw eigen thema met Firefox Color.</a>

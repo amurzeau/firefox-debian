@@ -34,6 +34,7 @@ policies-notice =
         [windows] Sua organização desativou a possibilidade de modificar algumas opções
        *[other] Sua organização desativou a possibilidade de modificar algumas preferências
     }
+managed-notice = Seu navegador está sendo gerenciado por nossa organização.
 pane-general-title = Geral
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = Privacidade e Segurança
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Conta Firefox
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -154,8 +151,8 @@ warn-on-close-multiple-tabs =
     .label = Avisar quando fechar múltiplas abas
     .accesskey = m
 warn-on-open-many-tabs =
-    .label = Avisar que quando abrir muitas abas, o { -brand-short-name } pode ficar lento
-    .accesskey = d
+    .label = Ao abrir muitas abas, avisar que o { -brand-short-name } pode ficar lento
+    .accesskey = m
 switch-links-to-new-tabs =
     .label = Quando abrir um link em uma nova aba, alternar para ela imediatamente
     .accesskey = u
@@ -293,6 +290,21 @@ update-pref-write-failure-title = Erro de gravação
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Não foi possível salvar preferências. Não conseguiu escrever no arquivo: { $path }
+update-setting-write-failure-title = Erro ao salvar preferências de atualização
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    O { -brand-short-name } encontrou um erro e não salvou esta alteração. Note que definir esta preferência de atualização requer permissão para escrever no arquivo abaixo. Você ou um administrador do sistema deve conseguir resolver o erro dando ao grupo 'Users' total controle sobre este arquivo.
+    
+    Não foi possível escrever no arquivo: { $path }
+update-in-progress-title = Atualização em andamento
+update-in-progress-message = Quer que o { -brand-short-name } continue esta atualização?
+update-in-progress-ok-button = &Descartar
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Continuar
 
 ## General Section - Performance
 
@@ -408,7 +420,7 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Mostrar sugestões de pesquisa antes do histórico de navegação nos resultados da barra de endereços
-search-suggestions-cant-show = As sugestões de pesquisa não serão mostradas nos resultados da barra de endereço, porque você configurou o { -brand-short-name } para nunca lembrar o histórico.
+search-suggestions-cant-show = As sugestões de pesquisa não serão mostradas nos resultados da barra de endereço, porque você configurou o { -brand-short-name } para nunca memorizar o histórico.
 search-one-click-header = Mecanismos de pesquisa em um clique
 search-one-click-desc = Escolha os mecanismos de pesquisa alternativos que aparecem abaixo da barra de endereços e da barra de pesquisa quando você começa a digitar uma palavra-chave.
 search-choose-engine-column =
@@ -446,8 +458,8 @@ containers-remove-button =
 
 sync-signedout-caption = Leve a web com você
 sync-signedout-description = Sincronize seus favoritos, histórico, abas, senhas, extensões e preferências com todos os seus dispositivos.
-sync-signedout-account-title = Conectar com uma { -fxaccount-brand-name }
-sync-signedout-account-create = Não tem uma conta? Inscreva-se agora
+sync-signedout-account-title = Conecte com sua { -fxaccount-brand-name }
+sync-signedout-account-create = Não tem uma conta? Crie agora
     .accesskey = C
 sync-signedout-account-signin =
     .label = Entrar…
@@ -460,7 +472,7 @@ sync-signedout-account-signin =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = Baixe o Firefox para <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> ou <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> para sincronizar com o seu dispositivo móvel.
+sync-mobile-promo = Baixe o Firefox para <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> ou <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> para sincronizar com seu dispositivo móvel.
 
 ## Sync Section - Signed in
 
@@ -528,8 +540,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Salvar
     .accesskey = v
-sync-mobilepromo-single = Conectar outro dispositivo
-sync-mobilepromo-multi = Gerenciar dispositivos
 sync-connect-another-device = Conectar outro dispositivo
 sync-manage-devices = Gerenciar dispositivos
 sync-fxa-begin-pairing = Parear um dispositivo
@@ -549,6 +559,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Exceções…
     .accesskey = x
+forms-generate-passwords =
+    .label = Sugerir e gerar senhas fortes
+    .accesskey = u
 forms-saved-logins =
     .label = Contas de acesso salvas…
     .accesskey = l
@@ -602,7 +615,7 @@ history-clear-button =
 
 ## Privacy Section - Site Data
 
-sitedata-header = Cookies e Dados de sites
+sitedata-header = Cookies e dados de sites
 sitedata-total-size-calculating = Calculando o tamanho dos dados de sites e cache…
 # Variables:
 #   $value (Number) - Value of the unit (for example: 4.6, 500)
@@ -685,9 +698,8 @@ content-blocking-unvisited-cookies = Cookies de sites não visitados
 content-blocking-all-windows-trackers = Rastreadores conhecidos, em todas as janelas
 content-blocking-all-third-party-cookies = Todos os cookies de terceiros
 content-blocking-cryptominers = Criptomineradores
-content-blocking-fingerprinters = Fingerprinters (rastreadores de "impressões digitais")
+content-blocking-fingerprinters = Fingerprinters (rastreadores de identidade digital)
 content-blocking-warning-title = Atenção!
-content-blocking-warning-desc = Bloquear cookies e rastreadores pode atrapalhar alguns sites. É fácil desativar o bloqueio em sites que você confia.
 content-blocking-warning-description = O bloqueio de conteúdo pode fazer alguns sites não funcionarem direito. É fácil desativar o bloqueio em sites que você confia.
 content-blocking-learn-how = Saiba como
 content-blocking-reload-description = É preciso recarregar as abas para aplicar essas mudanças.
@@ -716,7 +728,7 @@ content-blocking-cryptominers-label =
 # Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
 # that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
 content-blocking-fingerprinters-label =
-    .label = Fingerprinters (rastreadores de "impressões digitais")
+    .label = Fingerprinters (rastreadores de identidade digital)
     .accesskey = F
 
 ## Privacy Section - Tracking
@@ -754,6 +766,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Exceções…
     .accesskey = E
+permissions-autoplay = Reprodução automática
+permissions-autoplay-settings =
+    .label = Configurações…
+    .accesskey = f
 permissions-block-popups =
     .label = Bloquear janelas popup
     .accesskey = B
@@ -767,13 +783,13 @@ permissions-addon-exceptions =
     .label = Exceções…
     .accesskey = E
 permissions-a11y-privacy-checkbox =
-    .label = Impedir que os serviços de acessibilidade acessem o seu navegador
+    .label = Impedir que serviços de acessibilidade acessem seu navegador
     .accesskey = a
 permissions-a11y-privacy-link = Saiba mais
 
 ## Privacy Section - Data Collection
 
-collection-header = Coleta e Uso de Dados pelo { -brand-short-name }
+collection-header = Coleta e uso de dados pelo { -brand-short-name }
 collection-description = Nos esforçamos para proporcionar escolhas e coletar somente o necessário para fornecer e melhorar o { -brand-short-name } para todos. Sempre pedimos permissão antes de receber informações pessoais.
 collection-privacy-notice = Nota sobre privacidade
 collection-health-report =
@@ -781,8 +797,8 @@ collection-health-report =
     .accesskey = r
 collection-health-report-link = Saiba mais
 collection-studies =
-    .label = Permitir que o { -brand-short-name } instale e execute pesquisas
-collection-studies-link = Ver pesquisas do { -brand-short-name }
+    .label = Permitir que o { -brand-short-name } instale e execute estudos
+collection-studies-link = Ver estudos do { -brand-short-name }
 addon-recommendations =
     .label = Permitir que o { -brand-short-name } faça recomendações personalizadas de extensões
 addon-recommendations-link = Saiba mais
@@ -790,7 +806,7 @@ addon-recommendations-link = Saiba mais
 # or builds with no Telemetry support available.
 collection-health-report-disabled = O relatório de dados está desativado nesta configuração
 collection-backlogged-crash-reports =
-    .label = Permitir que o { -brand-short-name } envie relatórios de travamento em seu nome
+    .label = Permitir que o { -brand-short-name } envie relatos de travamento em seu nome
     .accesskey = e
 collection-backlogged-crash-reports-link = Saiba mais
 
@@ -800,9 +816,9 @@ collection-backlogged-crash-reports-link = Saiba mais
 ## https://developers.google.com/safe-browsing/developers_guide_v2#AcceptableUsage
 
 security-header = Segurança
-security-browsing-protection = Conteúdo Enganoso e Proteção Contra Software Perigoso
+security-browsing-protection = Proteção contra Conteúdo Enganoso e Softwares Perigosos
 security-enable-safe-browsing =
-    .label = Bloquear conteúdo perigoso e malicioso
+    .label = Bloquear conteúdo perigoso e enganoso
     .accesskey = B
 security-enable-safe-browsing-link = Saiba mais
 security-block-downloads =
@@ -847,8 +863,8 @@ space-alert-over-5gb-pref-button =
         }
 space-alert-over-5gb-message =
     { PLATFORM() ->
-        [windows] { -brand-short-name } está ficando sem espaço em disco. Conteúdos de sites podem não ser exibidos corretamente. Você pode limpar dados armazenados em Opções > Privacidade e Segurança > Cookies e Dados de sites.
-       *[other] { -brand-short-name } está ficando sem espaço em disco. Conteúdos de sites podem não ser exibidos corretamente. Você pode limpar dados armazenados em Preferências > Privacidade e Segurança > Cookies e Dados de sites.
+        [windows] { -brand-short-name } está ficando sem espaço em disco. Conteúdos de sites podem não ser exibidos corretamente. Você pode limpar dados armazenados em Opções > Privacidade e Segurança > Cookies e dados de sites.
+       *[other] { -brand-short-name } está ficando sem espaço em disco. Conteúdos de sites podem não ser exibidos corretamente. Você pode limpar dados armazenados em Preferências > Privacidade e Segurança > Cookies e dados de sites.
     }
 space-alert-under-5gb-ok-button =
     .label = OK, entendi

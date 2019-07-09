@@ -99,7 +99,7 @@ detail-update-manual =
 detail-private-browsing-label = 於隱私視窗中執行
 detail-private-browsing-description2 = 若允許執行，擴充套件可在隱私瀏覽模式中取得您的線上行為。<label data-l10n-name="detail-private-browsing-learn-more">了解更多資訊</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = 不允許於隱私視窗使用
 detail-private-disallowed-description = 此擴充套件無法於隱私瀏覽模式中運作。<label data-l10n-name="detail-private-browsing-learn-more">了解更多資訊</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
@@ -157,6 +157,9 @@ private-browsing-description2 = { -brand-short-name } 將調整擴充套件於�
 extensions-view-discover =
     .name = 安裝附加元件
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = 推薦項目
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = 最近的更新
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -237,7 +240,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = 管理擴充套件快速鍵
     .accesskey = S
-shortcuts-empty-message = 此擴充套件沒有用到快速鍵。
 shortcuts-no-addons = 您並未啟用任何擴充套件。
 shortcuts-no-commands = 下列擴充套件沒有快速鍵:
 shortcuts-input =
@@ -262,6 +264,30 @@ shortcuts-card-collapse-button = 顯示更少
 go-back-button =
     .tooltiptext = 回上一頁
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro = 擴充套件與佈景主題就是可以在瀏覽器中使用的應用程式，讓您獲得保護登入資訊、下載影片、比價、調整瀏覽器的外觀等等新增功能。這些小程式通常都不是由 Mozilla 開發的。以下是一些 { -brand-product-name } 所 <a data-l10n-name="learn-more-trigger">推薦</a>，在安全性、效能、功能等方便都表現傑出的精選項目。
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations = 某些項目是根據您安裝的其他擴充套件、偏好設定、使用統計推導而出的個人化建議。
+discopane-notice-learn-more = 了解更多
+privacy-policy = 隱私權保護政策
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = 作者: <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = 使用者數: { $dailyUsers }
+install-extension-button = 安裝到 { -brand-product-name }
+install-theme-button = 安裝佈景主題
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = 管理
+find-more-addons = 看更多附加元件！
+
 ## Add-on actions
 
 report-addon-button = 回報
@@ -269,6 +295,14 @@ remove-addon-button = 移除
 disable-addon-button = 停用
 enable-addon-button = 啟用
 expand-addon-button = 更多選項
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] 選項
+       *[other] 偏好設定
+    }
+details-addon-button = 詳細資訊
+release-notes-addon-button = 新鮮事
+permissions-addon-button = 權限
 addons-enabled-heading = 已啟用
 addons-disabled-heading = 已停用
 ask-to-activate-button = 啟用時詢問
@@ -279,6 +313,11 @@ addon-detail-version-label = 版本
 addon-detail-last-updated-label = 最近更新時間
 addon-detail-homepage-label = 首頁
 addon-detail-rating-label = 評分
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = 評分: { NUMBER($rating, maximumFractionDigits: 1) }，滿分 5 分
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -310,5 +349,18 @@ addon-badge-private-browsing-allowed =
 addon-detail-private-browsing-help = 允許後，您在隱私瀏覽模式上網時，擴充套件將可得知您的線上行為。<a data-l10n-name="learn-more">了解更多</a>
 addon-detail-private-browsing-allow = 允許
 addon-detail-private-browsing-disallow = 不允許
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = 推薦
+    .alt = 推薦
 available-updates-heading = 可用的更新
 recent-updates-heading = 最近的更新
+release-notes-loading = 載入中…
+release-notes-error = 抱歉，載入新鮮事時發生錯誤。
+addon-permissions-empty = 此擴充套件並未要求任何權限
+recommended-extensions-heading = 推薦的擴充套件
+recommended-themes-heading = 推薦的佈景主題
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = 突然有個靈感嗎？<a data-l10n-name="link">使用 Firefox Color 來打造自己的佈景主題。</a>

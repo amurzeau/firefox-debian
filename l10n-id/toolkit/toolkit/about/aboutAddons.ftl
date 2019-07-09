@@ -95,7 +95,7 @@ detail-update-manual =
 detail-private-browsing-label = Jalankan di Jendela Pribadi
 detail-private-browsing-description2 = Jika diizinkan, ekstensi akan memiliki akses ke aktivitas daring Anda saat menjelajah secara pribadi. <label data-l10n-name="detail-private-browsing-learn-more">Pelajari lebih lanjut </label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = Tidak Diizinkan di Jendela Pribadi
 detail-private-disallowed-description = Ekstensi ini tidak berjalan saat penjelajahan pribadi. <label data-l10n-name="detail-private-browsing-learn-more">Pelajari lebih lanjut</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
@@ -158,6 +158,9 @@ private-browsing-description2 =
 extensions-view-discover =
     .name = Unduh Pengaya
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Rekomendasi
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Versi Baru
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -238,7 +241,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Kelola Pintasan Ekstensi
     .accesskey = K
-shortcuts-empty-message = Tidak ada pintasan untuk ektensi ini.
 shortcuts-no-addons = Anda tidak memiliki ekstensi yang aktif.
 shortcuts-no-commands = Ekstensi berikut tidak memiliki pintasan:
 shortcuts-input =
@@ -263,14 +265,37 @@ shortcuts-card-collapse-button = Lebih Sedikit
 go-back-button =
     .tooltiptext = Mundur
 
+## Recommended add-ons page
+
+discopane-notice-learn-more = Pelajari lebih lanjut
+privacy-policy = Kebijakan Privasi
+install-extension-button = Tambahkan ke { -brand-product-name }
+install-theme-button = Pasang Tema
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Kelola
+find-more-addons = Temukan lebih banyak pengaya
+
 ## Add-on actions
 
+report-addon-button = Laporkan
 remove-addon-button = Hapus
 disable-addon-button = Nonaktifkan
 enable-addon-button = Aktifkan
 expand-addon-button = Opsi Lainnya
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Pengaturan
+       *[other] Preferensi
+    }
+details-addon-button = Detail
+release-notes-addon-button = Catatan Rilis
+permissions-addon-button = Hak Akses
 addons-enabled-heading = Diaktifkan
 addons-disabled-heading = Dinonaktifkan
+ask-to-activate-button = Minta untuk Mengaktifkan
+always-activate-button = Selalu Aktif
+never-activate-button = Jangan Pernah Aktifkan
 addon-detail-author-label = Penyusun
 addon-detail-version-label = Versi
 addon-detail-last-updated-label = Terakhir Diperbarui
@@ -287,3 +312,25 @@ addon-detail-reviews-link =
     { $numberOfReviews ->
        *[other] { $numberOfReviews } ulasan
     }
+
+## Pending uninstall message bar
+
+pending-uninstall-undo-button = Batal
+addon-detail-updates-label = Izinkan pembaruan otomatis
+addon-detail-updates-radio-off = Nonaktif
+addon-detail-update-check-label = Periksa Versi Baru
+install-update-button = Perbarui
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Diizinkan di jendela pribadi
+addon-detail-private-browsing-allow = Izinkan
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Disarankan
+    .alt = Disarankan
+available-updates-heading = Versi Baru yang Tersedia
+release-notes-loading = Memuat…
+recommended-extensions-heading = Ekstensi yang Disarankan
+recommended-themes-heading = Tema yang Disarankan

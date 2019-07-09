@@ -95,7 +95,7 @@ detail-update-manual =
 detail-private-browsing-label = Kjør i private vindu
 detail-private-browsing-description2 = Utvidelsen har tilgang til dine aktiviteter mens du bruker privat nettlesing, hvis du gir tilgang til det. <label data-l10n-name="detail-private-browsing-learn-more">Les mer</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = Ikke tillatt i private vinduer
 detail-private-disallowed-description = Denne utvidelsen fungerer ikke under privat nettlesing. <label data-l10n-name="detail-private-browsing-learn-more">Les mer</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
@@ -158,6 +158,9 @@ private-browsing-description2 =
 extensions-view-discover =
     .name = Last ned utvidelser
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Anbefalinger
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Nylig oppdatert
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -238,7 +241,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Håndter snarveier for utvidelser
     .accesskey = s
-shortcuts-empty-message = Det er ingen snarveier for denne utvidelsen.
 shortcuts-no-addons = Du har ingen utvidelser aktivert.
 shortcuts-no-commands = Følgende utvidelser har ikke snarveier:
 shortcuts-input =
@@ -263,19 +265,68 @@ shortcuts-card-collapse-button = Vis mindre
 go-back-button =
     .tooltiptext = Gå tilbake
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    Utvidelser og temaer er som apper for nettleseren din, og de lar deg
+    beskytte dine passord, laste ned videoer, finn tilbud, blokkere irriterende reklame, endre
+    hvordan nettleseren din ser ut, og mye mer. Disse små programmene er
+    ofte utviklet av en tredjepart. Her er et utvalg { -brand-product-name }
+    <a data-l10n-name="learn-more-trigger">anbefaler</a> for eksepsjonell
+    sikkerhet, ytelse og funksjonalitet.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations =
+    Noen av disse anbefalingene er målrettet deg. De er basert på andre
+    utvidelser du har installert, profilinnstillinger og statistikk for bruk.
+discopane-notice-learn-more = Les mer
+privacy-policy = Personvernbestemmelser
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = av <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Brukere: { $dailyUsers }
+install-extension-button = Legg til i { -brand-product-name }
+install-theme-button = Installer tema
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Behandle
+find-more-addons = Finn flere utvidelser
+
 ## Add-on actions
 
+report-addon-button = Rapporter
 remove-addon-button = Fjern
 disable-addon-button = Deaktiver
 enable-addon-button = Aktiver
 expand-addon-button = Flere innstillinger
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Innstillinger
+       *[other] Innstillinger
+    }
+details-addon-button = Detaljer
+release-notes-addon-button = Versjonsnotat
+permissions-addon-button = Tillatelser
 addons-enabled-heading = Aktivert
 addons-disabled-heading = Deaktivert
+ask-to-activate-button = Spør om aktivering
+always-activate-button = Aktiver alltid
+never-activate-button = Aktiver aldri
 addon-detail-author-label = Utvikler
 addon-detail-version-label = Versjon
 addon-detail-last-updated-label = Sist oppdatert
 addon-detail-homepage-label = Hjemmeside
 addon-detail-rating-label = Vurdering
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Vurdert { NUMBER($rating, maximumFractionDigits: 1) } av 5
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -288,3 +339,38 @@ addon-detail-reviews-link =
         [one] { $numberOfReviews } vurdering
        *[other] { $numberOfReviews } vurderinger
     }
+
+## Pending uninstall message bar
+
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> er fjernet.
+pending-uninstall-undo-button = Angre
+addon-detail-updates-label = Tillat automatiske oppdateringer
+addon-detail-updates-radio-default = Standard
+addon-detail-updates-radio-on = På
+addon-detail-updates-radio-off = Av
+addon-detail-update-check-label = Se etter oppdateringer
+install-update-button = Oppdater
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Tillat i private vindu
+addon-detail-private-browsing-help = Når det er tillatt, vil utvidelsen få tilgang til dine aktiviteter på nett mens du bruker privat nettlesing. <a data-l10n-name="learn-more">Les mer</a>
+addon-detail-private-browsing-allow = Tillat
+addon-detail-private-browsing-disallow = Ikke tillat
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Anbefalt
+    .alt = Anbefalt
+available-updates-heading = Tilgjengelige oppdateringer
+recent-updates-heading = Nylig oppdatert
+release-notes-loading = Laster…
+release-notes-error = Beklager, men en feil oppstod under lasting av versjonsnotatet.
+addon-permissions-empty = Denne utvidelsen krever ingen tillatelser
+recommended-extensions-heading = Anbefalte utvidelser
+recommended-themes-heading = Anbefalte temaer
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Er du i det kreative hjørnet? <a data-l10n-name="link">Bygg ditt eget tema med Firefox Color.</a>

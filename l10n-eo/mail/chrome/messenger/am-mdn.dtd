@@ -2,32 +2,32 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY pane.title                   "Return Receipts">
-<!ENTITY useGlobalPrefs.label         "Use my global return receipt preferences for this account">
+<!ENTITY pane.title                   "Konfirmoj pri legi">
+<!ENTITY useGlobalPrefs.label         "Uzi miajn ĝeneralajn agordojn de leg‑konfirmoj por tiu ĉi konto">
 <!ENTITY useGlobalPrefs.accesskey     "U">
-<!ENTITY globalReceipts.label         "Global Preferences…">
-<!ENTITY globalReceipts.accesskey     "G">
-<!ENTITY useCustomPrefs.label         "Customize return receipts for this account">
-<!ENTITY useCustomPrefs.accesskey     "C">
-<!ENTITY requestReceipt.label         "When sending messages, always request a return receipt">
-<!ENTITY requestReceipt.accesskey     "W">
-<!ENTITY receiptArrive.label          "When a receipt arrives:">
-<!ENTITY leaveIt.label                "Leave it in my Inbox">
-<!ENTITY leaveIt.accesskey            "I">
+<!ENTITY globalReceipts.label         "Ĝeneralaj agordoj…">
+<!ENTITY globalReceipts.accesskey     "a">
+<!ENTITY useCustomPrefs.label         "Propraj agordoj de leg‑konfirmoj por tiu ĉi konto">
+<!ENTITY useCustomPrefs.accesskey     "P">
+<!ENTITY requestReceipt.label         "Kiam sendi mesaĝojn, ĉiam peti pri leg‑konfirmo">
+<!ENTITY requestReceipt.accesskey     "s">
+<!ENTITY receiptArrive.label          "Ricevitajn leg‑konfirmojn:">
+<!ENTITY leaveIt.label                "restigi en “ricevujo”">
+<!ENTITY leaveIt.accesskey            "r">
 <!-- LOCALIZATION NOTE moveToSent.label Translate: 'Sent' according to Netscape glossary -->
-<!ENTITY moveToSent.label             "Move it to my &quot;Sent&quot; folder">
-<!ENTITY moveToSent.accesskey         "M">
-<!ENTITY requestMDN.label             "When I receive a request for a return receipt:">
-<!ENTITY returnSome.label             "Allow return receipts for some messages">
-<!ENTITY returnSome.accesskey         "e">
-<!ENTITY never.label                  "Never send a return receipt">
-<!ENTITY never.accesskey              "N">
-<!ENTITY notInToCc.label              "If I'm not in the To or Cc of the message:">
-<!ENTITY notInToCc.accesskey          "T">
-<!ENTITY outsideDomain.label          "If the sender is outside my domain:">
-<!ENTITY outsideDomain.accesskey      "s">
-<!ENTITY otherCases.label             "In all other cases:">
-<!ENTITY otherCases.accesskey         "o">
-<!ENTITY askMe.label                  "Ask me">
-<!ENTITY alwaysSend.label             "Always send">
-<!ENTITY neverSend.label              "Never send">
+<!ENTITY moveToSent.label             "movi al “senditujo”">
+<!ENTITY moveToSent.accesskey         "m">
+<!ENTITY requestMDN.label             "Post ricevi leg‑konfirmon:">
+<!ENTITY returnSome.label             "sendi leg‑konfirmon nur kiam:">
+<!ENTITY returnSome.accesskey         "n">
+<!ENTITY never.label                  "neniam sendi leg‑konfirmon">
+<!ENTITY never.accesskey              "n">
+<!ENTITY notInToCc.label              "en la kampoj “al” aŭ “kopio” ne estas mia adreso:">
+<!ENTITY notInToCc.accesskey          "k">
+<!ENTITY outsideDomain.label          "la sendinto estas ekster mia nomregno:">
+<!ENTITY outsideDomain.accesskey      "e">
+<!ENTITY otherCases.label             "en ĉiuj aliaj okazoj:">
+<!ENTITY otherCases.accesskey         "l">
+<!ENTITY askMe.label                  "demandi">
+<!ENTITY alwaysSend.label             "ĉiam sendi">
+<!ENTITY neverSend.label              "neniam sendi">

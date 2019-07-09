@@ -34,6 +34,7 @@ policies-notice =
         [windows] Organisaatiosi on estänyt joidenkin asetusten muuttamisen.
        *[other] Organisaatiosi on estänyt joidenkin asetusten muuttamisen.
     }
+managed-notice = Organisaatiosi hallitsee selaimesi asetuksia.
 pane-general-title = Yleiset
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = Tietosuoja ja turvallisuus
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Firefox-tili
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -293,6 +290,12 @@ update-pref-write-failure-title = Kirjoittaminen epäonnistui
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Asetuksen tallentaminen epäonnistui. Ei voitu kirjoittaa tiedostoon: { $path }
+update-in-progress-title = Päivitys meneillään
+update-in-progress-message = Haluatko, että { -brand-short-name } jatkaa tämän päivityksen asentamista?
+update-in-progress-ok-button = &Hylkää
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Jatka
 
 ## General Section - Performance
 
@@ -528,8 +531,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Tallenna
     .accesskey = T
-sync-mobilepromo-single = Yhdistä toinen laite
-sync-mobilepromo-multi = Hallitse laitteita
 sync-connect-another-device = Yhdistä toinen laite
 sync-manage-devices = Hallitse laitteita
 sync-fxa-begin-pairing = Parita laite
@@ -549,6 +550,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Poikkeukset…
     .accesskey = e
+forms-generate-passwords =
+    .label = Ehdota ja luo vahvoja salasanoja
+    .accesskey = u
 forms-saved-logins =
     .label = Tallennetut kirjautumistiedot…
     .accesskey = k
@@ -687,7 +691,6 @@ content-blocking-all-third-party-cookies = Kaikki kolmannen osapuolen evästeet
 content-blocking-cryptominers = Kryptolouhijat
 content-blocking-fingerprinters = Yksilöijät
 content-blocking-warning-title = Huomio!
-content-blocking-warning-desc = Evästeiden ja seuraimien estäminen voi aiheuttaa joidenkin sivustojen toimimattomuutta. Esto on helppo poistaa sivustoilta, joihin luotat.
 content-blocking-warning-description = Sisällön estäminen voi aiheuttaa joidenkin sivustojen toimimattomuutta. Voit poistaa eston luottamiltasi sivustoilta.
 content-blocking-learn-how = Lue miten
 content-blocking-reload-description = Kaikki välilehdet tarvitsee päivittää, jotta muutokset tulevat voimaan.
@@ -754,6 +757,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Poikkeukset…
     .accesskey = P
+permissions-autoplay = Automaattinen toisto
+permissions-autoplay-settings =
+    .label = Asetukset…
+    .accesskey = t
 permissions-block-popups =
     .label = Estä ponnahdusikkunat
     .accesskey = E

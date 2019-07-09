@@ -113,6 +113,9 @@ about-debugging-setup-link-android-devices = Vis liste med understøttede Androi
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
 about-debugging-setup-this-firefox = Brug <a>{ about-debugging-this-firefox-runtime-name }</a> til at debugge faneblade, udvidelser og service-workers i denne version af { -brand-shorter-name }.
 
+# Explanatory text in the Setup page about what the 'This Firefox' page is for
+about-debugging-setup-this-firefox2 = Brug <a>{ about-debugging-this-firefox-runtime-name }</a> til at debugge udvidelser og service-workers i denne version af { -brand-shorter-name }.
+
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Opret forbindelse til en enhed
 
@@ -148,11 +151,28 @@ about-debugging-setup-usb-step-enable-debug = Aktiver USB-debugging i udvikler-m
 about-debugging-setup-usb-step-enable-debug-firefox = Aktiver USB-debugging i Firefox på Android-enheden. <a>Læs mere</a>
 
 # USB section step by step guide
+about-debugging-setup-usb-step-enable-dev-menu2 = Aktiver udvikler-menuen på din Android-enhed. 
+
+# USB section step by step guide
+about-debugging-setup-usb-step-enable-debug2 = Aktiver USB-debugging i udvikler-menuen på Android-enheden. 
+
+# USB section step by step guide
+about-debugging-setup-usb-step-enable-debug-firefox2 = Aktiver USB-debugging i Firefox på Android-enheden.
+
+# USB section step by step guide
 about-debugging-setup-usb-step-plug-device = Opret forbindelse til Android-enheden på din computer.
+
+# Text shown in the USB section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/docs/Tools/Remote_Debugging/Debugging_over_USB
+about-debugging-setup-usb-troubleshoot = Har du problemer med at oprette forbindelse til USB-enheden? <a>Fejlsøg</a>
 
 # Network section of the Setup page
 about-debugging-setup-network =
   .title = Netværksplacering
+
+# Text shown in the Network section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Debugging_over_a_network
+about-debugging-setup-network-troubleshoot = Har du problemer med netværksplaceringen? <a>Fejlsøg</a>
 
 # Text of a button displayed after the network locations "Host" input.
 # Clicking on it will add the new network location to the list.
@@ -205,6 +225,10 @@ about-debugging-runtime-other-workers =
 # Title of the processes category.
 about-debugging-runtime-processes =
   .name = Processer
+
+# Label of the button opening the performance profiler panel in runtime pages for remote
+# runtimes.
+about-debugging-runtime-profile-button2 = Profilér ydelse
 
 # Label of the button opening the performance profiler panel in runtime pages for remote
 # runtimes.
@@ -275,6 +299,9 @@ about-debugging-connection-prompt-enable-button = Aktiver forbindelses-prompt
 # Text of the connection prompt button displayed in Runtime pages, when the preference
 # "devtools.debugger.prompt-connection" is true on the target runtime.
 about-debugging-connection-prompt-disable-button = Deaktiver forbindelses-prompt
+
+# Title of a modal dialog displayed on remote runtime pages after clicking on the Profile Runtime button.
+about-debugging-profiler-dialog-title2 = Profilering
 
 # Title of a modal dialog displayed on remote runtime pages after clicking on the Profile Runtime button.
 about-debugging-profiler-dialog-title = Ydelses-profilering
@@ -401,3 +428,12 @@ about-debugging-main-process-description2 = Hoved-proces for mål-browser
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
   .alt = Luk besked
+
+# Label text used for the error details of message component.
+about-debugging-message-details-label-error = Detaljer om fejl
+
+# Label text used for the warning details of message component.
+about-debugging-message-details-label-warning = Detaljer om advarsel
+
+# Label text used for default state of details of message component.
+about-debugging-message-details-label = Detaljer

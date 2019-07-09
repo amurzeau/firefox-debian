@@ -82,11 +82,10 @@ about-debugging-refresh-usb-devices-button = Rědy aktualizěrowaś
 about-debugging-setup-title = Zarědowanje
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Konfigurěrujśo zwiskowu metodu, z kótarejuž cośo swój rěd znazdala za zmólkami pśespytowaś.
-# Link displayed in the Setup page that leads to MDN page with list of supported devices.
-# Temporarily leads to https://support.mozilla.org/en-US/kb/will-firefox-work-my-mobile-device#w_android-devices
-about-debugging-setup-link-android-devices = Lisćinu pódpěranych rědow Android pokazaś
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
 about-debugging-setup-this-firefox = Wužywajśo <a>{ about-debugging-this-firefox-runtime-name }</a>, aby rejtarki, rozšyrjenja a service workers toś teje wersije { -brand-shorter-name } za zmólkami pśespytował.
+# Explanatory text in the Setup page about what the 'This Firefox' page is for
+about-debugging-setup-this-firefox2 = Wužywajśo <a>{ about-debugging-this-firefox-runtime-name }</a>, aby rozšyrjenja a service workers toś teje wersije { -brand-shorter-name } za zmólkami pśepytował.
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Z rědom zwězaś
 # USB section of the Setup page
@@ -106,16 +105,22 @@ about-debugging-setup-usb-status-enabled = Zmóžnjony
 about-debugging-setup-usb-status-disabled = Znjemóžnjony
 about-debugging-setup-usb-status-updating = Aktualizěrujo se…
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-dev-menu = Zmóžniśo meni wuwijarjow na swójom rěźe Android. <a>Zgóńśo kak</a>
+about-debugging-setup-usb-step-enable-dev-menu2 = Wuwijarski meni na wašom rěźe Android zmóžniś.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug = Zmóžniśo pytanje zmólkow USB w meniju wuwijarja Android. <a>Zgóńśo kak</a>
+about-debugging-setup-usb-step-enable-debug2 = Pytanje zmólkow USB we wuwijarskem meniju Android zmóžniś.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug-firefox = Zmóžniśo pytanje zmólkow w Firefox na rěźe Android. <a>Zgóńśo kak</a>
+about-debugging-setup-usb-step-enable-debug-firefox2 = Pytanje zmólkow USB w Firefox na rěźe Android zmóžniś.
 # USB section step by step guide
 about-debugging-setup-usb-step-plug-device = Zwězajśo rěd Android ze swójim licadłom.
+# Text shown in the USB section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/docs/Tools/Remote_Debugging/Debugging_over_USB
+about-debugging-setup-usb-troubleshoot = Maśo problemy pśi zwězowanju z USB-rědom? <a>Problem rozwězaś</a>
 # Network section of the Setup page
 about-debugging-setup-network =
     .title = Seśowa adresa
+# Text shown in the Network section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Debugging_over_a_network
+about-debugging-setup-network-troubleshoot = Maśo problemy pśi zwězowanju pśez seśowu adresu? <a>Problem rozwězaś</a>
 # Text of a button displayed after the network locations "Host" input.
 # Clicking on it will add the new network location to the list.
 about-debugging-network-locations-add-button = Pśidaś
@@ -164,7 +169,7 @@ about-debugging-runtime-processes =
     .name = Procese
 # Label of the button opening the performance profiler panel in runtime pages for remote
 # runtimes.
-about-debugging-runtime-profile-button = Profilowy běžny cas
+about-debugging-runtime-profile-button2 = Profilowe wugbaśe
 # This string is displayed in the runtime page if the current configuration of the
 # target runtime is incompatible with service workers. "Learn more" points to MDN.
 # https://developer.mozilla.org/en-US/docs/Tools/about%3Adebugging#Service_workers_not_compatible
@@ -202,12 +207,7 @@ about-debugging-connection-prompt-enable-button = Zwiskowe napominanje zmóžni�
 # "devtools.debugger.prompt-connection" is true on the target runtime.
 about-debugging-connection-prompt-disable-button = Zwiskowe napominanje znjemóžniś
 # Title of a modal dialog displayed on remote runtime pages after clicking on the Profile Runtime button.
-about-debugging-profiler-dialog-title = Wugbaśowy profilěrowak
-# Label of a checkbox displayed in the runtime page for "This Firefox".
-# This checkbox will toggle preferences that enable local addon debugging.
-# The "Learn more" link points to MDN.
-# https://developer.mozilla.org/docs/Tools/about:debugging#Enabling_add-on_debugging
-about-debugging-extension-debug-setting-label = Pytanje zmólkow za rozšyrjenja zmóžniś. <a>Dalšne informacije</a>
+about-debugging-profiler-dialog-title2 = Profilowaŕ
 # Clicking on the header of a debug target category will expand or collapse the debug
 # target items in the category. This text is used as ’title’ attribute of the header,
 # to describe this feature.
@@ -296,3 +296,9 @@ about-debugging-main-process-description2 = Głowny proces za celowy wobglědowa
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = Powěźeńku zacyniś
+# Label text used for the error details of message component.
+about-debugging-message-details-label-error = Zmólkowe drobnostki
+# Label text used for the warning details of message component.
+about-debugging-message-details-label-warning = Warnowańske drobnostki
+# Label text used for default state of details of message component.
+about-debugging-message-details-label = Drobnostki

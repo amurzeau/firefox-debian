@@ -32,8 +32,15 @@ app-basics-name = Tên
 app-basics-version = Phiên bản
 app-basics-build-id = ID bản dựng
 app-basics-update-channel = Kênh cập nhật
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] Cập nhật thư mục
+       *[other] Cập nhật thư mục
+    }
 app-basics-update-history = Lịch sử cập nhật
 app-basics-show-update-history = Hiển thị lịch sử cập nhật
+# Represents the path to the binary used to start the application.
+app-basics-binary = Ứng dụng nhị phân
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Thư mục hồ sơ
@@ -79,6 +86,8 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Nhật ký quyết định
 graphics-crash-guards-title = Vô hiệu hóa tính năng bảo vệ sự cố
 graphics-workarounds-title = Cách giải quyết
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Giao thức cửa sổ
 place-database-title = Cơ sở dữ liệu địa điểm
 place-database-integrity = Tính toàn vẹn
 place-database-verify-integrity = Xác nhận tính toàn vẹn
@@ -176,6 +185,7 @@ gpu-device-id = ID Thiết bị
 gpu-subsys-id = ID hệ thống con
 gpu-drivers = Trình điều khiển
 gpu-ram = RAM
+gpu-driver-vendor = Nhà cung cấp trình điều khiển
 gpu-driver-version = Phiên bản trình điều khiển
 gpu-driver-date = Ngày ra mắt trình điều khiển
 gpu-active = Hoạt động

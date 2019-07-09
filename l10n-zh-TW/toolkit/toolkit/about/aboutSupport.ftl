@@ -35,8 +35,15 @@ app-basics-name = 名稱
 app-basics-version = 版本
 app-basics-build-id = Build ID
 app-basics-update-channel = 更新頻道
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] 更新目錄
+       *[other] 更新資料夾
+    }
 app-basics-update-history = 更新記錄
 app-basics-show-update-history = 顯示更新記錄
+# Represents the path to the binary used to start the application.
+app-basics-binary = 應用程式二進位檔案
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] 設定檔目錄
@@ -82,6 +89,8 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = 決策紀錄
 graphics-crash-guards-title = 因 Crash Guard 停用的功能
 graphics-workarounds-title = Workarounds
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = 視窗通訊協定
 place-database-title = Places 資料庫
 place-database-integrity = 資料完整
 place-database-verify-integrity = 確認資料完整

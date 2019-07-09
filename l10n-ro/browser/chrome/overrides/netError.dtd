@@ -10,9 +10,7 @@
 <!ENTITY returnToPreviousPage.label "Întoarce-te">
 <!ENTITY returnToPreviousPage1.label "Întoarce-te (Recomandat)">
 <!ENTITY advanced.label "Avansat">
-<!ENTITY continue2.label "Mai multe…">
 <!ENTITY advanced2.label "Avansat…">
-<!ENTITY moreInformation.label "Mai multe informații">
 <!ENTITY viewCertificate.label "Vezi certificatul">
 
 <!-- Specific error messages -->
@@ -51,9 +49,9 @@
 
 <!ENTITY openPortalLoginPage.label2 "Deschide pagina de autentificare în rețea">
 
-<!ENTITY malformedURI.pageTitle "URL nevalid">
+<!ENTITY malformedURI.pageTitle "URL invalid">
 <!-- Localization note (malformedURI.title1) - "Hmm" is a sound made when considering or puzzling over something. You don't have to include it in your translation if your language does not have a written word like this. -->
-<!ENTITY malformedURI.title1 "Hmm. Adresa nu arată în regulă.">
+<!ENTITY malformedURI.title1 "Hmm. Adresa nu pare să fie în regulă.">
 
 <!ENTITY netInterrupt.title "Conexiunea a fost întreruptă">
 <!ENTITY netInterrupt.longDesc "&sharedLongDesc;">
@@ -61,10 +59,10 @@
 <!ENTITY notCached.title "Document expirat">
 <!ENTITY notCached.longDesc "<p>Documentul solicitat nu este disponibil în cache-ul &brandShortName;.</p><ul><li>Ca măsură de precauție pentru securitate, &brandShortName; nu cere din nou în mod automat documente sensibile.</li><li>Dă clic pe Încearcă din nou pentru a cere iar documentul de la site-ul web.</li></ul>">
 
-<!ENTITY netOffline.title "Mod deconectat">
+<!ENTITY netOffline.title "Mod offline">
 <!ENTITY netOffline.longDesc2 "
-<ul>
-  <li>Apasă pe &quot;Încearcă din nou&quot; pentru comutarea pe modul conectat și încearcă să reîncarci pagina.</li>
+<ul> 
+  <li>Apasă pe „Încearcă din nou” pentru a comuta la modul online și a reîncărca pagina.</li>
 </ul>
 ">
 
@@ -107,12 +105,16 @@
 <!ENTITY nssFailure2.longDesc2 "<ul> <li>Pagina pe care încerci să o vezi nu poate fi afișată deoarece nu s-a putut verifica autenticitatea datelor primite.</li> <li>Te rugăm să contactezi proprietarii site-ului web pentru a-i informa despre această problemă</li> </ul>">
 
 <!ENTITY certerror.longpagetitle1 "Conexiunea nu este securizată">
+
 <!ENTITY certerror.longpagetitle2 "Avertisment: Urmează un posibil risc de securitate">
 <!ENTITY certerror.sts.longpagetitle  "Nu s-a realizat conectarea: Posibilă problemă de securitate">
 <!-- Localization note (certerror.introPara, certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara "Proprietarul <span class='hostname'/> și-a configurat site-ul web necorespunzător.  Pentru a proteja informațiile împotriva furtului, &brandShortName; nu s-a conectat la acest site web.">
+<!-- Localization note (certerror.introPara2) - The text content of the span tag
+will be replaced at runtime with the name of the server to which the user
+was trying to connect. -->
 <!ENTITY certerror.introPara2 "&brandShortName; a detectat o posibilă amenințare de securitate și nu a continuat la <span class='hostname'/>. Dacă vizitezi acest site, atacatorii ar putea încerca să fure informații precum parolele, e-mailurile sau detaliile cardului de credit.">
 <!ENTITY certerror.sts.introPara "&brandShortName; a detectat o posibilă amenințare de securitate și nu a continuat la <span class='hostname'/>, deoarece acest site web necesită o conexiune securizată.">
 
@@ -153,6 +155,7 @@ was trying to connect. -->
 
 
 <!ENTITY securityOverride.exceptionButtonLabel "Adaugă excepție…">
+
 <!ENTITY securityOverride.exceptionButton1Label "Acceptă riscul și continuă">
 
 <!ENTITY errorReporting.automatic2 "Raportează erori precum aceasta pentru a ajuta Mozilla să identifice și să blocheze site-urile rău intenționate">
@@ -173,6 +176,7 @@ was trying to connect. -->
 <!ENTITY certerror.wrongSystemTimeWithoutReference "<p>&brandShortName; nu s-a conectat la <span id='wrongSystemTimeWithoutReference_URL'/> deoarece ceasul calculatorului tău pare că afișează ora greșită, iar aceasta împiedică o conexiune securizată.</p> <p>Ceasul calculatorului este setat la <span id='wrongSystemTimeWithoutReference_systemDate'/>. Pentru a rezolva această problemă, schimbă setările privind data și ora pentru a se potrivi cu cele corecte.</p>">
 
 <!ENTITY certerror.pagetitle1  "Conexiune nesecurizată">
+
 <!ENTITY certerror.pagetitle2  "Avertisment: Urmează un posibil risc de securitate">
 <!ENTITY certerror.sts.pagetitle  "Nu s-a realizat conectarea: Posibilă problemă de securitate">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Acest site folosește HTTP Strict Transport Security (HSTS) pentru a specifica că &brandShortName; se poate conecta doar în mod securizat la el. Drept rezultat, nu este posibil să adaugi o excepție acestui certificat.">
@@ -196,7 +200,7 @@ was trying to connect. -->
 <!ENTITY clockSkewError.title "Ceasul calculatorului indică o oră greșită">
 <!ENTITY clockSkewError.longDesc "Calculatorul crede că este <span id='wrongSystemTime_systemDate1'/>, ceea ce împiedică &brandShortName; să stabilească o conexiune securizată. Pentru a vizita <span class='hostname'></span>, actualizează ceasul calculatorului în setările de sistem pe data, ora și fusul orar curente, apoi reîmprospătează <span class='hostname'></span>.">
 
-<!ENTITY prefReset.longDesc "Se pare că setările de securitate a rețelei sunt de vină. Vrei restaurarea setărilor implicite?">
+<!ENTITY prefReset.longDesc "Se pare că setările de securitate ale rețelei sunt de vină. Vrei să restaurezi setările implicite?">
 <!ENTITY prefReset.label "Restaurează setările implicite">
 
 <!ENTITY networkProtocolError.title "Eroare legată de protocolul de rețea">

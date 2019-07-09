@@ -21,12 +21,15 @@
 <!ENTITY firstrun_data_message "Менш трафіку, больш эканоміі">
 <!ENTITY firstrun_data_subtext2 "Адключайце выявы, каб паменшыць расход трафіку на кожным наведаным сайце.">
 <!ENTITY firstrun_sync_title "Sync">
+<!ENTITY updatednewfirstrun_sync_title "Уліковы запіс">
 <!ENTITY firstrun_sync_message2 "Працягвайце адтуль, дзе спыніліся.">
 <!ENTITY firstrun_sync_subtext2 "Выкарыстоўвайце Sync для доступу да закладак, пароляў і іншых дадзеных, якія вы захоўваеце ў &brandShortName; на ўсіх прыладах.">
 <!ENTITY newfirstrun_sync_subtext "Сінхранізуйце рэчы, захаваныя на тэлефоне, з Firefox на камп\&apos;ютары, прыватна і бяспечна.">
+<!ENTITY updatednewfirstrun_sync_subtext "Увайдзіце ў свой уліковы запіс, каб атрымаць максімальную аддачу ад &brandShortName;">
 <!ENTITY firstrun_signin_message "Падключайцеся і пачынайце">
 <!ENTITY firstrun_signin_button "Увайсці ў Sync">
 <!ENTITY newfirstrun_signin_button "Уключыць Sync">
+<!ENTITY updatednewfirstrun_signin_button "Увайсці ў &brandShortName;">
 <!ENTITY  onboard_start_button_browser "Пачаць агляданне">
 <!ENTITY firstrun_button_notnow "Не зараз">
 <!ENTITY firstrun_button_next "Далей">
@@ -66,6 +69,12 @@
 <!ENTITY  sending_crash_report "Дасыланне справаздачы аб падзенні\u2026">
 <!ENTITY  crash_close_label "Зачыніць">
 <!ENTITY  crash_restart_label "Перазапусціць &brandShortName;">
+
+<!-- Localization note (crash_notification_title, crash_notification_message, crash_notification_negative_button_text)
+     Text displayed in a system notification to allow starting the Crash Reporter (Android Q and later).-->
+<!ENTITY  crash_notification_title "&brandShortName; упаў">
+<!ENTITY  crash_notification_message "Націсніце, каб паведаміць у &vendorShortName;">
+<!ENTITY  crash_notification_negative_button_text "Ігнараваць">
 
 <!ENTITY url_bar_default_text2 "Шукаць ці ўвесці адрас">
 
@@ -108,6 +117,10 @@
 <!ENTITY bookmark_folder_updated "Папка абноўлена">
 <!ENTITY bookmark_parent_folder "Бацькоўская папка">
 <!ENTITY bookmark_add_folder "Дадаць новую папку">
+
+<!-- Localization note (bookmark_default_folder_title): Default title is used if user doesn't specify
+     one when he is creating a bookmark folder -->
+<!ENTITY bookmark_default_folder_title "(без назвы)">
 
 <!ENTITY reader_saved_offline "Захавана па-за сеткай">
 <!-- Localization note (reader_switch_to_bookmarks) : This
@@ -413,8 +426,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY pref_private_data_downloadFiles2 "Сцягванні">
 <!ENTITY pref_private_data_syncedTabs "Сінхранізаваныя карткі">
 
-<!ENTITY pref_default_browser "Зрабіць прадвызначаным браўзерам">
-
 <!ENTITY pref_default_browser2 "Зрабіць &brandShortName; прадвызначаным браўзерам">
 <!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
     Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
@@ -592,6 +603,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_keyword "Ключавое слова">
 <!ENTITY bookmark_select_folder "Выбраць папку">
 
+<!ENTITY bookmark_edit_undo "Адмяніць">
+
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
      dialog that appears after selecting the "Edit Site Settings" context menu item. -->
 <!ENTITY site_settings_title3       "Налады сайта">
@@ -679,6 +692,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY filepicker_audio_title "Выбраць ці запісаць гук">
 <!ENTITY filepicker_image_title "Выбраць выяву ці зрабіць фота">
 <!ENTITY filepicker_video_title "Выбраць ці запісаць відэя">
+
+<!ENTITY filepicker_permission_denied "Запытаныя дазволы не прадстаўлены, вяртаемся да сістэмнага дыялогу выбару файлаў.">
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "Вы з злучаны з">
@@ -934,3 +949,4 @@ Picture-in-picture mini window -->
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
 web sites through the HTML Notifications API. -->
 <!ENTITY site_notifications_channel "Абвесткі сайта">
+<!ENTITY crash_handler_notifications_channel "Справаздача аб падзенні &brandShortName;">

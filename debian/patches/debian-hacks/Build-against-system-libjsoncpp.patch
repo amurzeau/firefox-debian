@@ -9,12 +9,12 @@ Subject: Build against system libjsoncpp
  3 files changed, 6 insertions(+), 48 deletions(-)
 
 diff --git a/config/system-headers.mozbuild b/config/system-headers.mozbuild
-index 1ff025eb030d..e13cef5c5c8d 100644
+index bcf5c4925564..5950b4e87ac1 100644
 --- a/config/system-headers.mozbuild
 +++ b/config/system-headers.mozbuild
-@@ -1345,3 +1345,7 @@ if CONFIG['MOZ_WAYLAND']:
-         'wayland-egl.h',
-         'wayland-util.h',
+@@ -1351,3 +1351,7 @@ if CONFIG['OS_TARGET'] == 'Linux' and CONFIG['CPU_ARCH'].startswith('mips'):
+     system_headers += [
+         'sys/cachectl.h',
      ]
 +
 +system_headers += [

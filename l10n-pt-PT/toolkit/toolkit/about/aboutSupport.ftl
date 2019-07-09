@@ -35,8 +35,15 @@ app-basics-name = Nome
 app-basics-version = Versão
 app-basics-build-id = ID da compilação
 app-basics-update-channel = Canal de atualização
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] Diretório de atualizações
+       *[other] Pasta de atualizações
+    }
 app-basics-update-history = Histórico de atualizações
 app-basics-show-update-history = Mostrar histórico de atualizações
+# Represents the path to the binary used to start the application.
+app-basics-binary = Binário da aplicação
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Diretório do perfil
@@ -82,6 +89,8 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Registo de decisões
 graphics-crash-guards-title = Funcionalidades desativadas do Crash Guard
 graphics-workarounds-title = Alternativas
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Protocolo de janela
 place-database-title = Base de dados de locais
 place-database-integrity = Integridade
 place-database-verify-integrity = Verificar integridade

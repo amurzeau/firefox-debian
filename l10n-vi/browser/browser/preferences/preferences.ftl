@@ -34,6 +34,7 @@ policies-notice =
         [windows] Tổ chức của bạn đã vô hiệu hóa khả năng thay đổi một số tùy chọn.
        *[other] Tổ chức của bạn đã vô hiệu hóa khả năng thay đổi một số tùy chọn.
     }
+managed-notice = Trình duyệt của bạn đang được quản lý bởi tổ chức của bạn.
 pane-general-title = Tổng quát
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = Riêng tư & bảo mật
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Tài khoản Firefox
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -281,6 +278,21 @@ update-pref-write-failure-title = Lỗi ghi
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Không thể lưu tùy chọn. Không thể ghi vào tập tin: { $path }
+update-setting-write-failure-title = Lỗi khi lưu tùy chọn cập nhật
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    { -brand-short-name } đã gặp lỗi và đã không lưu thay đổi này. Lưu ý rằng thiết lập tùy chọn cập nhật này yêu cầu quyền ghi vào tập tin bên dưới. Bạn hoặc quản trị viên hệ thống có thể giải quyết lỗi bằng cách cấp cho nhóm Người dùng toàn quyền kiểm soát tệp này.
+    
+    Không thể ghi vào tệp: { $path }
+update-in-progress-title = Đang cập nhật
+update-in-progress-message = Bạn có muốn { -brand-short-name } tiếp tục với bản cập nhật này không?
+update-in-progress-ok-button = &Hủy bỏ
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Tiếp tục
 
 ## General Section - Performance
 
@@ -516,8 +528,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Lưu
     .accesskey = u
-sync-mobilepromo-single = Kết nối thiết bị khác
-sync-mobilepromo-multi = Quản lý các thiết bị
 sync-connect-another-device = Kết nối thiết bị khác
 sync-manage-devices = Quản lý thiết bị
 sync-fxa-begin-pairing = Ghép nối thiết bị
@@ -537,6 +547,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Ngoại trừ…
     .accesskey = x
+forms-generate-passwords =
+    .label = Đề xuất và tạo mật khẩu mạnh
+    .accesskey = u
 forms-saved-logins =
     .label = Đăng nhập đã lưu…
     .accesskey = L
@@ -675,7 +688,6 @@ content-blocking-all-third-party-cookies = Toàn bộ cookie từ bên thứ ba
 content-blocking-cryptominers = Tiền điện tử
 content-blocking-fingerprinters = Vân tay
 content-blocking-warning-title = Hãy cẩn thận!
-content-blocking-warning-desc = Chặn cookie và trình theo dõi có thể khiến một số trang web bị hỏng. Dễ dàng để tắt tính năng chặn cho các trang web bạn tin tưởng.
 content-blocking-warning-description = Chặn nội dung có thể khiến một số trang web bị hỏng. Dễ dàng vô hiệu hóa chặn cho các trang web mà bạn tin tưởng.
 content-blocking-learn-how = Tìm hiểu cách thức
 content-blocking-reload-description = Bạn sẽ cần tải lại các thẻ của mình để áp dụng những thay đổi này.
@@ -742,6 +754,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Ngoại trừ...
     .accesskey = E
+permissions-autoplay = Tự động phát
+permissions-autoplay-settings =
+    .label = Cài đặt…
+    .accesskey = t
 permissions-block-popups =
     .label = Chặn các cửa sổ bật lên
     .accesskey = B

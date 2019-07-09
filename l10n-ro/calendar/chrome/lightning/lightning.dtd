@@ -47,8 +47,8 @@
      lightning.calendarproperties.forceEmailScheduling.tooltiptext2)
      - tooltiptext1 is used in the calendar wizard when setting a new caldav calendar
      - tooltiptext2 is used in the calendar properties dialog for caldav calendars -->
-<!ENTITY lightning.calendarproperties.forceEmailScheduling.tooltiptext1     "Pentru moment, poți activa acesta numai în dialogul proprietăți a calendarului dacă server-ul calendarului este responsabil de planificare.">
-<!ENTITY lightning.calendarproperties.forceEmailScheduling.tooltiptext2     "Această opțiune este disponibilă numai dacă server-ul calendarului este responsabil de planificare. Activarea va permite întoarcerea la planificare standard pe bază de email față de planificare de server.">
+<!ENTITY lightning.calendarproperties.forceEmailScheduling.tooltiptext1     "Pentru moment, poți activa acesta numai în dialogul de proprietăți a calendarului, dacă serverul calendarului este responsabil de planificare.">
+<!ENTITY lightning.calendarproperties.forceEmailScheduling.tooltiptext2     "Această opțiune este disponibilă numai dacă serverul calendarului gestionează planificarea. Activarea va permite revenirea la planificarea standard pe bază de e-mail, în locul lăsării acesteia pe server.">
 
 <!-- iMIP Bar (meeting support) -->
 <!ENTITY lightning.imipbar.btnAccept.label                                  "Acceptă">
@@ -74,7 +74,7 @@
 <!ENTITY lightning.imipbar.btnReschedule.label                              "Reprogramează">
 <!ENTITY lightning.imipbar.btnReschedule.tooltiptext                        "Reprogramează evenimentul">
 <!ENTITY lightning.imipbar.btnSaveCopy.label                                "Salvează o copie">
-<!ENTITY lightning.imipbar.btnSaveCopy.tooltiptext                          "Salvați o copie a evenimentului din calendar în mod independent de răspunsul de la organizator. Lista de participanți va fi ștearsă.">
+<!ENTITY lightning.imipbar.btnSaveCopy.tooltiptext                          "Salvează o copie a evenimentului din calendar, independent de răspunsul organizatorului. Lista de participanți va fi ștearsă.">
 <!ENTITY lightning.imipbar.btnTentative.label                               "Provizoriu">
 <!ENTITY lightning.imipbar.btnTentative2.tooltiptext                        "Acceptă provizoriu invitația la eveniment">
 <!ENTITY lightning.imipbar.btnTentativeRecurrences.label                    "Acceptă toate provizoriu">

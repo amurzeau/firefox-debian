@@ -21,12 +21,15 @@
 <!ENTITY firstrun_data_message "Manj kot je podatkov, več je prihrankov">
 <!ENTITY firstrun_data_subtext2 "Izključite slike in porabite manj podatkov med obiskovanjem strani.">
 <!ENTITY firstrun_sync_title "Sync">
+<!ENTITY updatednewfirstrun_sync_title "Račun">
 <!ENTITY firstrun_sync_message2 "Nadaljujte, kjer ste končali.">
 <!ENTITY firstrun_sync_subtext2 "Uporabite Sync za prenos zaznamkov, gesel in drugih shranjenih &brandShortName;ovih podatkov med vsemi svojimi napravami.">
 <!ENTITY newfirstrun_sync_subtext "Sinhronizirajte podatke, ki jih shranite na mobilnem telefonu, s Firefoxom za namizje – zasebno in varno.">
+<!ENTITY updatednewfirstrun_sync_subtext "Prijavite se v svoj račun, da boste kar najbolje izkoristili &brandShortName;">
 <!ENTITY firstrun_signin_message "Povežite se in začnite">
 <!ENTITY firstrun_signin_button "Prijava v Sync">
 <!ENTITY newfirstrun_signin_button "Vklopi Sync">
+<!ENTITY updatednewfirstrun_signin_button "Prijava v &brandShortName;">
 <!ENTITY  onboard_start_button_browser "Začnite brskati">
 <!ENTITY firstrun_button_notnow "Ne zdaj">
 <!ENTITY firstrun_button_next "Naprej">
@@ -66,6 +69,12 @@
 <!ENTITY  sending_crash_report "Pošiljanje poročila o sesutju \u2026">
 <!ENTITY  crash_close_label "Zapri">
 <!ENTITY  crash_restart_label "Ponovno zaženi &brandShortName;">
+
+<!-- Localization note (crash_notification_title, crash_notification_message, crash_notification_negative_button_text)
+     Text displayed in a system notification to allow starting the Crash Reporter (Android Q and later).-->
+<!ENTITY  crash_notification_title "&brandShortName; se je sesul">
+<!ENTITY  crash_notification_message "Tapnite za poročilo organizaciji &vendorShortName;">
+<!ENTITY  crash_notification_negative_button_text "Prezri">
 
 <!ENTITY url_bar_default_text2 "Iskanje ali naslov strani">
 
@@ -108,6 +117,10 @@
 <!ENTITY bookmark_folder_updated "Mapa posodobljena">
 <!ENTITY bookmark_parent_folder "Nadrejena mapa">
 <!ENTITY bookmark_add_folder "Dodaj novo mapo">
+
+<!-- Localization note (bookmark_default_folder_title): Default title is used if user doesn't specify
+     one when he is creating a bookmark folder -->
+<!ENTITY bookmark_default_folder_title "(brez naslova)">
 
 <!ENTITY reader_saved_offline "Shranjeno za delo brez povezave">
 <!-- Localization note (reader_switch_to_bookmarks) : This
@@ -413,8 +426,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY pref_private_data_downloadFiles2 "Prenosi">
 <!ENTITY pref_private_data_syncedTabs "Sinhronizirani zavihki">
 
-<!ENTITY pref_default_browser "Nastavi kot privzeti brskalnik">
-
 <!ENTITY pref_default_browser2 "Nastavi &brandShortName; kot privzet brskalnik">
 <!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
     Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
@@ -592,6 +603,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_keyword "Ključna beseda">
 <!ENTITY bookmark_select_folder "Izberite mapo">
 
+<!ENTITY bookmark_edit_undo "Razveljavi">
+
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
      dialog that appears after selecting the "Edit Site Settings" context menu item. -->
 <!ENTITY site_settings_title3       "Nastavitve strani">
@@ -679,6 +692,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY filepicker_audio_title "Izberi ali posnemi zvok">
 <!ENTITY filepicker_image_title "Izberi ali posnemi sliko">
 <!ENTITY filepicker_video_title "Izberi ali posnemi video">
+
+<!ENTITY filepicker_permission_denied "Zahtevana dovoljenja niso dodeljena, vračanje na sistemski izbirnik datotek.">
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "Povezani ste na stran">
@@ -934,3 +949,4 @@ Picture-in-picture mini window -->
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
 web sites through the HTML Notifications API. -->
 <!ENTITY site_notifications_channel "Obvestila strani">
+<!ENTITY crash_handler_notifications_channel "Poročevalec o sesutju programske opreme &brandShortName;">

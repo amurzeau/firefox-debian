@@ -95,7 +95,7 @@ detail-update-manual =
 detail-private-browsing-label = Køyr i privat vindauge
 detail-private-browsing-description2 = Viss du tillèt det, vil utvidinga ha tilgang til aktivitetane dine medan du brukar privat nettlesing. <label data-l10n-name="detail-private-browsing-learn-more">Les meir</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = Ikkje tillate i private vindauge
 detail-private-disallowed-description = Denne utvidinga fungerer ikkje med privat surfning. <label data-l10n-name="detail-private-browsing-learn-more">Les meir</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
@@ -105,8 +105,8 @@ detail-private-browsing-on =
     .label = Tillat
     .tooltiptext = Tillat i privat nettlesing
 detail-private-browsing-off =
-    .label = Tillat ikkje
-    .tooltiptext = Tillat ikkje i privat nettlesing
+    .label = Ikkje tillat
+    .tooltiptext = Ikkje tillat i privat nettlesing
 detail-home =
     .label = Heimeside
 detail-home-value =
@@ -150,7 +150,7 @@ legacy-extensions =
     .value = Forelda utvidingar
 legacy-extensions-description = Desse utvidingane oppfyller ikkje gjeldande standardar i { -brand-short-name } og er difor slått av. <label data-l10n-name="legacy-learn-more">Les meir om endringar av tillegg</label>
 private-browsing-description2 =
-    { -brand-short-name } endar korleis utvidingar fungerer i privat nettlesingsmodus. Eventuelle nye utvidingar du legg til i
+    { -brand-short-name } endrar korleis utvidingar fungerer i privat nettlesingsmodus. Eventuelle nye utvidingar du legg til i
     { -brand-short-name } vert ikkje køyrt som standard i private vindauge, med mindre du tillèt det i innstillingane.
     Utvidinga vil ikkje fungere under privat nettlesing, og vil ikkje ha tilgang til aktivitetane dine på nettet.
     Vi har gjort denne endringa for å halde privat nettlesing privat.
@@ -158,6 +158,9 @@ private-browsing-description2 =
 extensions-view-discover =
     .name = Last ned tillegg
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Tilrådingar
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Nyleg oppdatert
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -238,7 +241,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Handter snarvegar for tillegg
     .accesskey = H
-shortcuts-empty-message = Det er ingen snarvegar for denne utvidinga.
 shortcuts-no-addons = Du har ingen utvidinga aktiverte.
 shortcuts-no-commands = Følgjande utvidingar har ikkje snarvegar:
 shortcuts-input =
@@ -263,19 +265,55 @@ shortcuts-card-collapse-button = Vis mindre
 go-back-button =
     .tooltiptext = Gå tilbake
 
+## Recommended add-ons page
+
+discopane-notice-learn-more = Les meir
+privacy-policy = Personvernpraksis
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = av <a data-l10n-name="author"> { $author } </a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Brukarar: { $dailyUsers }
+install-extension-button = Legg til i { -brand-product-name }
+install-theme-button = Installer tema
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Handter
+find-more-addons = Finn fleire tillegg
+
 ## Add-on actions
 
+report-addon-button = Rapporter
 remove-addon-button = Fjern
 disable-addon-button = Slå av
 enable-addon-button = Slå på
 expand-addon-button = Fleire alternativ
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Innstillingar
+       *[other] Innstillingar
+    }
+details-addon-button = Detaljar
+release-notes-addon-button = Versjonsnotat
+permissions-addon-button = Løyve
 addons-enabled-heading = Påslått
 addons-disabled-heading = Avslått
+ask-to-activate-button = Spør om aktivering
+always-activate-button = Alttid aktiver
+never-activate-button = Aldri aktiver
 addon-detail-author-label = Utviklar
 addon-detail-version-label = Versjon
 addon-detail-last-updated-label = Sist oppdatert
 addon-detail-homepage-label = Heimeside
 addon-detail-rating-label = Vurdering
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Vurdert til { NUMBER($rating, maximumFractionDigits: 1) } av 5
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -291,6 +329,31 @@ addon-detail-reviews-link =
 
 ## Pending uninstall message bar
 
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> er fjerna.
+pending-uninstall-undo-button = Angre
+addon-detail-updates-label = Tillat automatiske oppdateringar
 addon-detail-updates-radio-default = Standard
 addon-detail-updates-radio-on = På
 addon-detail-updates-radio-off = Av
+addon-detail-update-check-label = Sjå etter oppdateringar
+install-update-button = Oppdater
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Tillat i private vindauge
+addon-detail-private-browsing-allow = Tillat
+addon-detail-private-browsing-disallow = Ikkje tillat
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Tilrådd
+    .alt = Tilrådd
+available-updates-heading = Tilgjengelege oppdateringar
+recent-updates-heading = Nylege oppdateringar
+release-notes-loading = Lastar…
+release-notes-error = Beklagar, men ein feil oppstod under lasting av versjonsnotatet.
+addon-permissions-empty = Denne utvidinga krev inkje løyve
+recommended-extensions-heading = Tilrådde utvidingar
+recommended-themes-heading = Tilrådde tema

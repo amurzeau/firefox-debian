@@ -123,7 +123,6 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "ముద్రించు…">
 <!ENTITY printCmd.accesskey "P">
 <!ENTITY printCmd.commandkey "p">
-
 <!ENTITY importFromAnotherBrowserCmd.accesskey "I">
 
 
@@ -205,6 +204,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
  <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
      for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "Firefoxని మీతో తీసుకెళ్ళండి">
 
 <!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
      for the Firefox Account toolbar unverified menu screen. -->
@@ -212,6 +212,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
      for the Firefox Account toolbart menu screen. The `Signed in as` text is
      followed by the user's email. -->
+<!ENTITY fxa.menu.manageAccount.label "ఖాతాను నిర్వహించు…">
+<!ENTITY fxa.menu.syncSettings.label "&syncBrand.shortName.label; అమరికలు…">
+<!ENTITY fxa.menu.connectAnotherDevice.label "&syncedTabs.sidebar.connectAnotherDevice;">
 
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
@@ -311,6 +314,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "అడోబి ఫ్లాష్ చొప్పింతను వాడనీయకుండా ఈ వెబ్‌సైటును మీరు నిరోధించారు.">
 <!ENTITY urlbar.midiBlocked.tooltip              "MIDI సౌలభ్యాన్ని పొందకుండా ఈ వెబ్‌సైటుని మీరు నిరోధించారు.">
 
+
 <!ENTITY urlbar.openHistoryPopup.tooltip                "చరిత్రను చూపించు">
 
 <!ENTITY searchItem.title             "వెతకడం">
@@ -408,7 +412,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.label       "అభిరుచులు">
 <!ENTITY preferencesCmdUnix.accesskey     "n">
 
-
 <!ENTITY clearRecentHistory.label               "ఇటీవలి చరిత్రను తుడిచివేయి…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
@@ -493,6 +496,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.manageExtension.label "పొడగింత నిర్వహణ">
 <!ENTITY customizeMenu.manageExtension.accesskey "E">
 <!ENTITY customizeMenu.removeExtension.accesskey "v">
+
+<!-- LOCALIZATION NOTE (reportExtension.label) This label is used in the extensions
+     toolbar buttons context menus, a user can use this command to submit to Mozilla
+     an abuse report related to that extension. "Report" is a verb. -->
 
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
@@ -838,6 +845,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.extensionPage "ఈ పేజీ ఒక పొడగింత నుండి తెరవబడింది.">
 <!ENTITY identity.insecureLoginForms2 "ఈ పేజీలో మీరు ఇచ్చే లాగిన్లు రాజీపడవచ్చు.">
 
+
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "ఈ పేజీలో సురక్షితంకాని భాగాలను &brandShortName; నిరోధించింది.">
 <!ENTITY identity.passiveLoaded "ఈ పేజీలోని కొన్ని భాగాలు సురక్షితమైనవి కావు (బొమ్మల వంటివి).">
@@ -855,6 +863,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.description.passiveLoaded3 "&brandShortName; కొంత కాంటెంట్‌ను నిరోధించినప్పటికీ, ఇంకా ఈ పేజీలో సురక్షితం కాని కాంటెంట్ ఉంది (బొమ్మల వంటివి).">
 <!ENTITY identity.description.activeLoaded "ఈ వెబ్‌సైట్ సురక్షితం కాని కాంటెంట్‌ను కలిగివుంది (స్క్రిప్టుల వంటివి) మరియు దానికి మీరు గుట్టుగా అనుసంధానంకాలేదు.">
 <!ENTITY identity.description.activeLoaded2 "ఈ సైటుతో మీరు పంచుకునే సమాచారాన్ని ఇతరులు చూడవచ్చు (సంకేతపదాలు, సందేశాలు, క్రెడిట్ కార్డులు, మొదలైనవి).">
+
 
 <!ENTITY identity.enableMixedContentBlocking.label "రక్షణను చేతనించు">
 <!ENTITY identity.enableMixedContentBlocking.accesskey "E">
@@ -1121,3 +1130,4 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY addonPostInstallMessage.label "పొడిగింతల నిర్వహణకై <image class='addon-toolbar-icon'/> మెనూ లోని <image class='addon-addon-icon'/> మీద నొక్కండి.">
 
 <!ENTITY addonPrivateBrowsing.okButton.label "సరే, అర్థమయ్యింది">
+<!ENTITY addonPrivateBrowsing.manageButton.label "పొడగింతలను నిర్వహించండి">

@@ -14,7 +14,7 @@
 <!ENTITY newContact.label                               "Contact în agendă…">
 <!ENTITY newContact.accesskey                           "C">
 <!ENTITY newContact.key                                 "N">
-<!ENTITY newListCmd.label                               "Listă de adrese…">
+<!ENTITY newListCmd.label                               "Listă de adrese de e-mail…">
 <!ENTITY newListCmd.accesskey                           "l">
 <!ENTITY newAddressBookCmd.label                        "O nouă listă de contacte…">
 <!ENTITY newAddressBookCmd.accesskey                    "c">
@@ -83,7 +83,7 @@
 <!ENTITY abPropertiesMenu.accesskey                     "i">
 <!ENTITY contactPropertiesMenu.label                    "Proprietățile contactului">
 <!ENTITY contactPropertiesMenu.accesskey                "i">
-<!ENTITY mailingListPropertiesMenu.label                "Proprietățile listei de adrese">
+<!ENTITY mailingListPropertiesMenu.label                "Proprietățile listei de adrese de e-mail">
 <!ENTITY mailingListPropertiesMenu.accesskey            "i">
 
 <!-- View Menu -->
@@ -129,9 +129,9 @@ because displayed names don't have the comma in between. -->
 <!ENTITY addressBookCmd.key                             "B">
 <!ENTITY searchAddressesCmd.label                       "Caută adrese…">
 <!ENTITY searchAddressesCmd.accesskey                   "s">
-<!ENTITY importCmd.label                                "Import…">
+<!ENTITY importCmd.label                                "Importă…">
 <!ENTITY importCmd.accesskey                            "I">
-<!ENTITY exportCmd.label                                "Export…">
+<!ENTITY exportCmd.label                                "Exportă…">
 <!ENTITY exportCmd.accesskey                            "E">
 <!ENTITY preferencesCmd2.label                          "Opțiuni">
 <!ENTITY preferencesCmd2.accesskey                      "O">
@@ -173,9 +173,6 @@ because displayed names don't have the comma in between. -->
 <!ENTITY newmsgButton.tooltip                           "Trimite un mesaj e-mail">
 <!ENTITY newIM.tooltip                                  "Trimite un mesaj instantaneu sau conversează prin chat">
 <!ENTITY deleteButton2.tooltip                          "Șterge elementul selectat">
-
-<!-- Dir Tree header -->
-<!ENTITY dirTreeHeader.label                            "Agende de contacte">
 
 <!-- Search Bar -->
 <!ENTITY SearchNameOrEmail.label                        "Nume sau e-mail">

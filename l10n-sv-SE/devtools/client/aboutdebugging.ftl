@@ -82,11 +82,10 @@ about-debugging-refresh-usb-devices-button = Uppdatera enheter
 about-debugging-setup-title = Konfiguration
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Konfigurera anslutningsmetoden som du vill fjärrfelsöka din enhet med.
-# Link displayed in the Setup page that leads to MDN page with list of supported devices.
-# Temporarily leads to https://support.mozilla.org/en-US/kb/will-firefox-work-my-mobile-device#w_android-devices
-about-debugging-setup-link-android-devices = Visa lista över Android-enheter som stöds
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
 about-debugging-setup-this-firefox = Använd <a>{ about-debugging-this-firefox-runtime-name }</a> för att felsöka flikar, tillägg och service workers i den här versionen av { -brand-shorter-name }.
+# Explanatory text in the Setup page about what the 'This Firefox' page is for
+about-debugging-setup-this-firefox2 = Använd <a>{ about-debugging-this-firefox-runtime-name }</a> för att felsöka tillägg och service workers i den här versionen av { -brand-shorter-name }.
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Anslut en enhet
 # USB section of the Setup page
@@ -106,16 +105,22 @@ about-debugging-setup-usb-status-enabled = Aktiverad
 about-debugging-setup-usb-status-disabled = Inaktiverad
 about-debugging-setup-usb-status-updating = Uppdaterar…
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-dev-menu = Aktivera utvecklarmenyn på din Android-enhet. <a>Läs hur</a>
+about-debugging-setup-usb-step-enable-dev-menu2 = Aktivera utvecklarmenyn på din Android-enhet.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug = Aktivera USB-felsökning i Android-utvecklarmenyn. <a>Läs hur</a>
+about-debugging-setup-usb-step-enable-debug2 = Aktivera USB-felsökning i Android utvecklarmeny.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug-firefox = Aktivera USB-felsökning i Firefox på Android-enheten. <a>Läs hur</a>
+about-debugging-setup-usb-step-enable-debug-firefox2 = Aktivera USB-felsökning i Firefox på Android-enheten.
 # USB section step by step guide
 about-debugging-setup-usb-step-plug-device = Anslut Android-enheten till din dator.
+# Text shown in the USB section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/docs/Tools/Remote_Debugging/Debugging_over_USB
+about-debugging-setup-usb-troubleshoot = Problem med att ansluta till USB-enheten? <a>Felsökning</a>
 # Network section of the Setup page
 about-debugging-setup-network =
     .title = Nätverksplats
+# Text shown in the Network section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Debugging_over_a_network
+about-debugging-setup-network-troubleshoot = Problem med att ansluta via nätverksplats? <a>Felsökning</a>
 # Text of a button displayed after the network locations "Host" input.
 # Clicking on it will add the new network location to the list.
 about-debugging-network-locations-add-button = Lägg till
@@ -203,11 +208,6 @@ about-debugging-connection-prompt-enable-button = Aktivera anslutningsprompten
 about-debugging-connection-prompt-disable-button = Inaktivera anslutningsprompten
 # Title of a modal dialog displayed on remote runtime pages after clicking on the Profile Runtime button.
 about-debugging-profiler-dialog-title2 = Profiler
-# Label of a checkbox displayed in the runtime page for "This Firefox".
-# This checkbox will toggle preferences that enable local addon debugging.
-# The "Learn more" link points to MDN.
-# https://developer.mozilla.org/docs/Tools/about:debugging#Enabling_add-on_debugging
-about-debugging-extension-debug-setting-label = Aktivera tilläggsfelsökning. <a>Läs mer</a>
 # Clicking on the header of a debug target category will expand or collapse the debug
 # target items in the category. This text is used as ’title’ attribute of the header,
 # to describe this feature.
@@ -296,3 +296,9 @@ about-debugging-main-process-description2 = Huvudprocess för målwebbläsaren
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = Stäng meddelande
+# Label text used for the error details of message component.
+about-debugging-message-details-label-error = Detaljer om felet
+# Label text used for the warning details of message component.
+about-debugging-message-details-label-warning = Varningsdetaljer
+# Label text used for default state of details of message component.
+about-debugging-message-details-label = Detaljer

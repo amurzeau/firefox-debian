@@ -21,12 +21,15 @@
 <!ENTITY firstrun_data_message "Λιγότερα δεδομένα, μεγαλύτερη οικονομία">
 <!ENTITY firstrun_data_subtext2 "Απενεργοποιήστε τις εικόνες για να ξοδεύετε λιγότερα δεδομένα σε κάθε ιστοσελίδα που επισκέπτεστε.">
 <!ENTITY firstrun_sync_title "Sync">
+<!ENTITY updatednewfirstrun_sync_title "Λογαριασμός">
 <!ENTITY firstrun_sync_message2 "Συνεχίστε από εκεί που σταματήσατε.">
 <!ENTITY firstrun_sync_subtext2 "Χρησιμοποιήστε το Sync για να βρείτε τους σελιδοδείκτες, τους κωδικούς πρόσβασης και άλλα στοιχεία που αποθηκεύετε στο &brandShortName;, σε όλες σας τις συσκευές.">
 <!ENTITY newfirstrun_sync_subtext "Συγχρονίστε τα δεδομένα που αποθηκεύετε στο κινητό με το Firefox για υπολογιστές, με ασφάλεια και απόρρητο.">
+<!ENTITY updatednewfirstrun_sync_subtext "Συνδεθείτε στο λογαριασμό σας για να αξιοποιήσετε στο έπακρο το &brandShortName;">
 <!ENTITY firstrun_signin_message "Συνδεθείτε και ξεκινήστε">
 <!ENTITY firstrun_signin_button "Είσοδος στο Sync">
 <!ENTITY newfirstrun_signin_button "Ενεργοποίηση Sync">
+<!ENTITY updatednewfirstrun_signin_button "Σύνδεση στο &brandShortName;">
 <!ENTITY  onboard_start_button_browser "Έναρξη περιήγησης">
 <!ENTITY firstrun_button_notnow "Όχι τώρα">
 <!ENTITY firstrun_button_next "Επόμενο">
@@ -66,6 +69,12 @@
 <!ENTITY  sending_crash_report "Γίνεται αποστολή αναφοράς σφάλματος\u2026">
 <!ENTITY  crash_close_label "Κλείσιμο">
 <!ENTITY  crash_restart_label "Επανεκκίνηση του &brandShortName;">
+
+<!-- Localization note (crash_notification_title, crash_notification_message, crash_notification_negative_button_text)
+     Text displayed in a system notification to allow starting the Crash Reporter (Android Q and later).-->
+<!ENTITY  crash_notification_title "Το &brandShortName; κατέρρευσε">
+<!ENTITY  crash_notification_message "Πατήστε για αναφορά στη &vendorShortName;">
+<!ENTITY  crash_notification_negative_button_text "Παράβλεψη">
 
 <!ENTITY url_bar_default_text2 "Αναζήτηση ή εισαγωγή διεύθυνσης">
 
@@ -108,6 +117,10 @@
 <!ENTITY bookmark_folder_updated "Ο φάκελος ενημερώθηκε">
 <!ENTITY bookmark_parent_folder "Γονικός φάκελος">
 <!ENTITY bookmark_add_folder "Προσθήκη νέου φακέλου">
+
+<!-- Localization note (bookmark_default_folder_title): Default title is used if user doesn't specify
+     one when he is creating a bookmark folder -->
+<!ENTITY bookmark_default_folder_title "(χωρίς τίτλο)">
 
 <!ENTITY reader_saved_offline "Αποθηκευμένα για χρήση χωρίς σύνδεση">
 <!-- Localization note (reader_switch_to_bookmarks) : This
@@ -413,8 +426,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY pref_private_data_downloadFiles2 "Λήψεις">
 <!ENTITY pref_private_data_syncedTabs "Συγχρονισμένες καρτέλες">
 
-<!ENTITY pref_default_browser "Ορισμός ως προεπιλεγμένο πρόγραμμα περιήγησης">
-
 <!ENTITY pref_default_browser2 "Ορισμός του &brandShortName; ως προεπιλογής">
 <!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
     Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
@@ -592,6 +603,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_keyword "Λέξη κλειδί">
 <!ENTITY bookmark_select_folder "Επιλογή φακέλου">
 
+<!ENTITY bookmark_edit_undo "Αναίρεση">
+
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
      dialog that appears after selecting the "Edit Site Settings" context menu item. -->
 <!ENTITY site_settings_title3       "Ρυθμίσεις σελίδας">
@@ -679,6 +692,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY filepicker_audio_title "Επιλέξτε ή εγγράψτε έναν ήχο">
 <!ENTITY filepicker_image_title "Επιλέξτε ή τραβήξτε μια εικόνα">
 <!ENTITY filepicker_video_title "Επιλέξτε ή τραβήξτε ένα βίντεο">
+
+<!ENTITY filepicker_permission_denied "Δεν χορηγήθηκαν τα απαιτούμενα δικαιώματα, επαναφορά στην εφαρμογή επιλογής αρχείων συστήματος.">
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "Έχει συνδεθεί στο">
@@ -921,6 +936,7 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_title "Παύση">
 <!ENTITY pip_pause_button_description "Παύση αναπαραγωγής">
 
+<!ENTITY pref_notification_settings_link "Διαχείριση ρυθμίσεων ειδοποιήσεων">
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "Πρόγραμμα περιήγησης">
 <!ENTITY mls_notification_channel "Υπηρεσία τοποθεσίας &vendorShortName;">
@@ -933,3 +949,4 @@ Picture-in-picture mini window -->
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
 web sites through the HTML Notifications API. -->
 <!ENTITY site_notifications_channel "Ειδοποιήσεις ιστοσελίδας">
+<!ENTITY crash_handler_notifications_channel "Αναφορά κατάρρευσης &brandShortName;">

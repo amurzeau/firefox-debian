@@ -32,8 +32,15 @@ app-basics-name = Mjeno
 app-basics-version = Wersija
 app-basics-build-id = Wersijowy ID
 app-basics-update-channel = Aktualizowanski kanal
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] Aktualizowanski zapis
+       *[other] Aktualizowanski rjadowak
+    }
 app-basics-update-history = Aktualizaciska historija
 app-basics-show-update-history = Aktualizacisku historiju pokazać
+# Represents the path to the binary used to start the application.
+app-basics-binary = Nałoženska binarna dataja
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Profilowy zapis
@@ -79,6 +86,8 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Rozsudowy protokol
 graphics-crash-guards-title = Funkcije, kotrež su so wot spadoweho stražnika znjemóžnili
 graphics-workarounds-title = Nuzowe rozrisanja
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Woknowy protokol
 place-database-title = Datowa banka historije a zapołožkow
 place-database-integrity = Integrita
 place-database-verify-integrity = Integritu přepruwować
@@ -206,6 +215,7 @@ gpu-device-id = ID grata
 gpu-subsys-id = Subsys-ID
 gpu-drivers = Ćěrjaki
 gpu-ram = RAM
+gpu-driver-vendor = Zhotowjer ćěrjaka
 gpu-driver-version = Wersija ćěrjaka
 gpu-driver-date = Datum ćěrjaka
 gpu-active = Aktiwny

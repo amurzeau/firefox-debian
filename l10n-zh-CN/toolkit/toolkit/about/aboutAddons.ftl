@@ -10,7 +10,7 @@ search-header =
 search-header-shortcut =
     .key = f
 loading-label =
-    .value = 载入中…
+    .value = 正在载入…
 list-empty-installed =
     .value = 您没有安装任何此类型的附加组件
 list-empty-available-updates =
@@ -77,8 +77,8 @@ detail-version =
 detail-last-updated =
     .label = 上次更新
 detail-contributions-description = 此附加组件的开发者希望通过您的小额捐款，帮助支持其持续开发。
-detail-contributions-button = 贡献
-    .title = 参与开发此附加组件
+detail-contributions-button = 捐助
+    .title = 捐助此附加组件的开发
     .accesskey = C
 detail-update-type =
     .value = 自动更新
@@ -95,7 +95,7 @@ detail-update-manual =
 detail-private-browsing-label = 在隐私窗口中运行
 detail-private-browsing-description2 = 允许后，扩展可在隐私浏览中获知您的在线活动。<label data-l10n-name="detail-private-browsing-learn-more">详细了解</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = 不支持隐私窗口
 detail-private-disallowed-description = 此扩展不支持在隐私浏览窗口中运行。<label data-l10n-name="detail-private-browsing-learn-more">详细了解</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
@@ -155,6 +155,9 @@ private-browsing-description2 =
 extensions-view-discover =
     .name = 获取附加组件
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = 推荐
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = 最近更新
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -235,7 +238,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = 管理扩展快捷键
     .accesskey = S
-shortcuts-empty-message = 此扩展没有快捷键。
 shortcuts-no-addons = 您没有启用任何扩展。
 shortcuts-no-commands = 下列扩展没有快捷键：
 shortcuts-input =
@@ -260,13 +262,45 @@ shortcuts-card-collapse-button = 显示更少
 go-back-button =
     .tooltiptext = 返回
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro = 扩展与主题就像手机上的应用，让您获得密码保护、视频下载、优惠信息、拦截恼人广告、改变浏览器外观等功能。这些小型软件程序通常由第三方开发。以下是一些 { -brand-product-name } 所<a data-l10n-name="learn-more-trigger">推荐</a>，在安全性、性能、功能等方面表现突出的精选项目。
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations = 下面某些是根据您安装的其他附加组件、偏好设置、使用统计推导出的个性化推荐。
+discopane-notice-learn-more = 详细了解
+privacy-policy = 隐私政策
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = 作者：<a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = 用户量：{ $dailyUsers }
+install-extension-button = 添加至 { -brand-product-name }
+install-theme-button = 安装主题
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = 管理
+find-more-addons = 寻找更多附加组件
+
 ## Add-on actions
 
-report-addon-button = 报告
+report-addon-button = 举报
 remove-addon-button = 移除
 disable-addon-button = 禁用
 enable-addon-button = 启用
 expand-addon-button = 更多选项
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] 选项
+       *[other] 首选项
+    }
+details-addon-button = 详细信息
+release-notes-addon-button = 发行说明
+permissions-addon-button = 权限
 addons-enabled-heading = 已启用
 addons-disabled-heading = 已禁用
 ask-to-activate-button = 需要时询问
@@ -277,6 +311,11 @@ addon-detail-version-label = 版本
 addon-detail-last-updated-label = 上次更新
 addon-detail-homepage-label = 主页
 addon-detail-rating-label = 评分
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = 评分：{ NUMBER($rating, maximumFractionDigits: 1) } / 5
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -286,7 +325,7 @@ addon-name-disabled = { $name }（已禁用）
 #   $numberOfReviews (number) - The number of reviews received
 addon-detail-reviews-link =
     { $numberOfReviews ->
-       *[other] { $numberOfReviews } 则评价
+       *[other] { $numberOfReviews } 条评价
     }
 
 ## Pending uninstall message bar
@@ -308,5 +347,18 @@ addon-badge-private-browsing-allowed =
 addon-detail-private-browsing-help = 若允许，扩展可在隐私浏览中获知您的在线活动。 <a data-l10n-name="learn-more">详细了解</a>
 addon-detail-private-browsing-allow = 允许
 addon-detail-private-browsing-disallow = 不允许
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = 推荐
+    .alt = 推荐
 available-updates-heading = 可用更新
 recent-updates-heading = 最近更新
+release-notes-loading = 正在载入…
+release-notes-error = 抱歉，载入发行说明时出错。
+addon-permissions-empty = 此扩展未要求任何权限
+recommended-extensions-heading = 推荐扩展
+recommended-themes-heading = 推荐主题
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = 有好的创意？<a data-l10n-name="link">使用 Firefox Color 打造自己的主题。</a>

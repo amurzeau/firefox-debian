@@ -31,9 +31,10 @@ search-input-box =
         }
 policies-notice =
     { PLATFORM() ->
-        [windows] 기관에서 몇몇 옵션을 바꿀 수 없게 하였습니다.
-       *[other] 기관에서 몇몇 설정을 바꿀 수 없게 하였습니다.
+        [windows] 속한 회사나 단체에서 몇몇 옵션을 바꿀 수 없게 하였습니다.
+       *[other] 속한 회사나 단체에서 몇몇 설정을 바꿀 수 없게 하였습니다.
     }
+managed-notice = 속한 회사나 단체에서 브라우저를 관리하고 있습니다.
 pane-general-title = 일반
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = 개인 정보 및 보안
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Firefox 계정
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -163,15 +160,15 @@ show-tabs-in-taskbar =
     .label = Windows 작업표시줄에 탭 미리 보기 표시
     .accesskey = k
 browser-containers-enabled =
-    .label = 포함 탭 활성화
+    .label = 컨테이너 탭 활성화
     .accesskey = n
 browser-containers-learn-more = 더 알아보기
 browser-containers-settings =
     .label = 설정…
     .accesskey = i
-containers-disable-alert-title = 모든 포함 탭을 닫으시겠습니까?
-containers-disable-alert-desc = 지금 포함 탭을 비활성화 하면 { $tabCount }개의 포함 탭이 닫히게 됩니다. 포함 탭을 비활성화 하시겠습니까?
-containers-disable-alert-ok-button = { $tabCount }개의 포함탭 닫기
+containers-disable-alert-title = 모든 컨테이너 탭을 닫으시겠습니까?
+containers-disable-alert-desc = 지금 컨테이너 탭을 비활성화 하면 { $tabCount }개의 컨테이너 탭이 닫히게 됩니다. 컨테이너 탭을 비활성화 하시겠습니까?
+containers-disable-alert-ok-button = { $tabCount }개의 컨테이너 탭 닫기
 containers-disable-alert-cancel-button = 활성화 하기
 containers-remove-alert-title = 이 컨테이너를 삭제하시겠습니까?
 # Variables:
@@ -270,7 +267,7 @@ update-application-check-choose =
 update-application-manual =
     .label = 업데이트 확인 안함(권장하지 않음)
     .accesskey = N
-update-application-warning-cross-user-setting = 이 설정은 이 { -brand-short-name } 설치를 사용하는 모든 윈도우즈 계정 및 { -brand-short-name } 프로파일에 적용됩니다.
+update-application-warning-cross-user-setting = 이 설정은 이 { -brand-short-name } 설치를 사용하는 모든 윈도우즈 계정 및 { -brand-short-name } 프로필에 적용됩니다.
 update-application-use-service =
     .label = 업데이트 설치 시 백그라운드 작업으로 하기
     .accesskey = b
@@ -281,6 +278,21 @@ update-pref-write-failure-title = 쓰기 실패
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = 환경 설정을 저장할 수 없습니다. 파일에 쓸 수 없습니다: { $path }
+update-setting-write-failure-title = 업데이트 설정 저장 중 오류 발생
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    오류가 발생하여 { -brand-short-name }가 이 변경 내용을 저장하지 않았습니다. 이 업데이트 환경 설정을 하려면 아래 파일에 쓰기 권한이 필요합니다. 사용자나 시스템 관리자가 사용자 그룹에 이 파일에 대한 모든 권한을 부여하여 오류를 해결할 수 있습니다.
+    
+    파일에 쓸 수 없음: { $path }
+update-in-progress-title = 업데이트 진행 중
+update-in-progress-message = { -brand-short-name }가 이 업데이트를 계속하길 원하십니까?
+update-in-progress-ok-button = 취소
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = 계속
 
 ## General Section - Performance
 
@@ -354,7 +366,7 @@ home-restore-defaults =
 home-mode-choice-default =
     .label = Firefox 홈페이지(기본값)
 home-mode-choice-custom =
-    .label = 사용자 정의 URL…
+    .label = 사용자 지정 URL…
 home-mode-choice-blank =
     .label = 빈 페이지
 home-homepage-custom-url =
@@ -421,7 +433,7 @@ search-keyword-warning-bookmark = 북마크에서 이미 사용 중인 키워드
 ## Containers Section
 
 containers-back-link = « 뒤로가기
-containers-header = 포함 탭
+containers-header = 컨테이너 탭
 containers-add-button =
     .label = 새 컨테이너 추가
     .accesskey = A
@@ -434,7 +446,7 @@ containers-remove-button =
 
 sync-signedout-caption = 웹과 함께 하세요.
 sync-signedout-description = 북마크, 방문 기록, 탭, 비밀번호, 부가기능, 설정을 모든 기기에 걸쳐 동기화 하세요.
-sync-signedout-account-title = { -fxaccount-brand-name }와 연결
+sync-signedout-account-title = { -fxaccount-brand-name }과 연결
 sync-signedout-account-create = 계정이 없으신가요? 시작하세요
     .accesskey = C
 sync-signedout-account-signin =
@@ -516,8 +528,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = 저장
     .accesskey = v
-sync-mobilepromo-single = 다른 기기에 연결
-sync-mobilepromo-multi = 기기 관리
 sync-connect-another-device = 다른 기기 연결
 sync-manage-devices = 기기 관리
 sync-fxa-begin-pairing = 기기 연결하기
@@ -537,6 +547,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = 예외 목록…
     .accesskey = x
+forms-generate-passwords =
+    .label = 강력한 암호 제안 및 생성
+    .accesskey = u
 forms-saved-logins =
     .label = 저장된 로그인…
     .accesskey = L
@@ -566,7 +579,7 @@ history-remember-option-all =
 history-remember-option-never =
     .label = 방문 기록 저장 안 함
 history-remember-option-custom =
-    .label = 방문 기록 사용자 정의 설정 사용
+    .label = 방문 기록 사용자 지정 설정 사용
 history-remember-description = { -brand-short-name }가 탐색과 다운로드, 서식, 검색 히스토리를 저장합니다.
 history-dontremember-description = { -brand-short-name }는 사생활 보호 모드와 같은 설정을 가지며 웹 사이트 방문 중 어떤 기록도 저장하지 않습니다.
 history-private-browsing-permanent =
@@ -659,7 +672,7 @@ content-blocking-setting-strict =
     .label = 엄격
     .accesskey = r
 content-blocking-setting-custom =
-    .label = 사용자 정의
+    .label = 사용자 지정
     .accesskey = C
 content-blocking-standard-description = 사생활 보호 창에서 알려진 추적기만 차단합니다.
 content-blocking-standard-desc = 보호와 성능 사이의 균형을 유지합니다. 웹 사이트가 제대로 작동하도록 일부 추적기를 허용합니다.
@@ -675,7 +688,6 @@ content-blocking-all-third-party-cookies = 모든 제3자 쿠키
 content-blocking-cryptominers = 크립토마이너
 content-blocking-fingerprinters = 핑거프린터
 content-blocking-warning-title = 조심하세요!
-content-blocking-warning-desc = 쿠키와 추적기를 차단하면 일부 웹사이트가 정상 작동하지 않을 수 있습니다. 신뢰하는 사이트에 대한 차단은 쉽게 해제할 수 있습니다.
 content-blocking-warning-description = 콘텐츠를 차단하면 일부 웹사이트가 깨질 수 있습니다. 신뢰할 수 있는 사이트에 대한 차단은 쉽게 해제 할 수 있습니다.
 content-blocking-learn-how = 방법 알아보기
 content-blocking-reload-description = 이러한 변경 사항을 적용하려면 탭을 다시 로드해야 합니다.
@@ -742,6 +754,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = 예외 목록…
     .accesskey = E
+permissions-autoplay = 자동 재생
+permissions-autoplay-settings =
+    .label = 설정…
+    .accesskey = t
 permissions-block-popups =
     .label = 팝업 창 차단
     .accesskey = B
@@ -788,9 +804,9 @@ collection-backlogged-crash-reports-link = 더 알아보기
 ## https://developers.google.com/safe-browsing/developers_guide_v2#AcceptableUsage
 
 security-header = 보안
-security-browsing-protection = 사기성있는 내용과 위험한 소프트웨어 보호
+security-browsing-protection = 사기성 콘텐츠 및 위험한 소프트웨어 보호
 security-enable-safe-browsing =
-    .label = 위험하고 사기성있는 내용을 차단
+    .label = 위험하고 사기성 콘텐츠 차단
     .accesskey = B
 security-enable-safe-browsing-link = 더 알아보기
 security-block-downloads =

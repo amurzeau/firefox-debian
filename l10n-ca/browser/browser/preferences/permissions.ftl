@@ -34,8 +34,15 @@ permissions-button-cancel =
 permissions-button-ok =
     .label = Desa els canvis
     .accesskey = s
+permissions-autoplay-menu = Per defecte per a tots els llocs web:
 permissions-searchbox =
     .placeholder = Cerca el lloc web
+permissions-capabilities-autoplay-allow =
+    .label = Permet l'àudio i el vídeo
+permissions-capabilities-autoplay-block =
+    .label = Bloca l'àudio
+permissions-capabilities-autoplay-blockall =
+    .label = Bloca l'àudio i el vídeo
 permissions-capabilities-allow =
     .label = Permet
 permissions-capabilities-block =
@@ -46,8 +53,6 @@ permissions-capabilities-listitem-allow =
     .value = Permet
 permissions-capabilities-listitem-block =
     .value = Bloca
-permissions-capabilities-listitem-allow-first-party =
-    .value = Permet només al domini principal
 permissions-capabilities-listitem-allow-session =
     .value = Permet durant la sessió
 
@@ -97,6 +102,13 @@ permissions-exceptions-autoplay-media-window2 =
     .title = Excepcions - Reproducció automàtica
     .style = { permissions-window.style }
 permissions-exceptions-autoplay-media-desc2 = Podeu especificar quins llocs web tenen o no permís per reproduir automàticament elements multimèdia amb so. Escriviu l'adreça exacta del lloc que voleu gestionar i feu clic a Bloca o Permet.
+
+## Site Permissions - Autoplay
+
+permissions-site-autoplay-window =
+    .title = Paràmetres - Reproducció automàtica
+    .style = { permissions-window.style }
+permissions-site-autoplay-desc = Aquí podeu gestionar els llocs que no segueixen els vostres paràmetres de reproducció automàtica per defecte.
 
 ## Site Permissions - Notifications
 

@@ -38,6 +38,9 @@ policies-notice =
         [windows] Din organisation har deaktiveret muligheden for at ændre visse indstillinger.
        *[other] Din organisation har deaktiveret muligheden for at ændre visse indstillinger.
     }
+
+managed-notice = Din browser bliver forvaltet af din organisation.
+
 pane-general-title = Generelt
 category-general =
     .tooltiptext = { pane-general-title }
@@ -313,6 +316,26 @@ update-pref-write-failure-title = Fejl med at gemme
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Kunne ikke gemme indstillingen. Kunne ikke skrive til filen: { $path }
+
+update-setting-write-failure-title = Kunne ikke gemme indstillinger for opdatering
+
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    { -brand-short-name } stødte på en fejl og gemte ikke ændringen. Bemærk, at for at kunne gemme ændringer, skal der være tilladelse til at skrive til den nedennævnte fil. Du eller en systemadministrator kan måske løse problemet ved at give gruppen Users fuld kontrol over filen.
+
+    Kunne ikke skrive til filen: { $path }
+
+update-in-progress-title = Opdatering…
+
+update-in-progress-message = Skal { -brand-short-name } fortsætte med denne opdatering?
+
+update-in-progress-ok-button = &Annuller
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Fortsæt
 
 ## General Section - Performance
 
@@ -678,6 +701,9 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Undtagelser…
     .accesskey = U
+forms-generate-passwords =
+    .label = Hjælp med at lave stærke adgangskoder
+    .accesskey = a
 # This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
@@ -905,6 +931,13 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Undtagelser…
     .accesskey = U
+
+permissions-autoplay = Automatisk afspilning
+
+permissions-autoplay-settings =
+    .label = Indstillinger…
+    .accesskey = I
+
 autoplay-option-ask =
     .label = Spørg altid
 autoplay-option-allow =

@@ -21,12 +21,15 @@
 <!ENTITY firstrun_data_message "Menos datos, más ahorro">
 <!ENTITY firstrun_data_subtext2 "Desactivá imágenes para perder menos tiempo en cada sitio que visitás.">
 <!ENTITY firstrun_sync_title "Sync">
+<!ENTITY updatednewfirstrun_sync_title "Cuenta">
 <!ENTITY firstrun_sync_message2 "Continúá desde donde dejaste.">
 <!ENTITY firstrun_sync_subtext2 "Usá Sync para encontrar los marcadores, contraseñas y otras cosas que guardás en &brandShortName; en todos tus dispositivos.">
 <!ENTITY newfirstrun_sync_subtext "Sincronice el contenido que guarda en el dispositivo móvil con Firefox para el escritorio, de forma privada y segura.">
+<!ENTITY updatednewfirstrun_sync_subtext "Iniciá sesión en tu cuenta para aprovechar &brandShortName; al máximo">
 <!ENTITY firstrun_signin_message "Conectate, empecemos">
 <!ENTITY firstrun_signin_button "Registrarse en Sync">
 <!ENTITY newfirstrun_signin_button "Activar la sincronización">
+<!ENTITY updatednewfirstrun_signin_button "Ingresá en &brandShortName;">
 <!ENTITY  onboard_start_button_browser "Iniciar navegación">
 <!ENTITY firstrun_button_notnow "No ahora">
 <!ENTITY firstrun_button_next "Siguiente">
@@ -66,6 +69,12 @@
 <!ENTITY  sending_crash_report "Enviando informe de fallos\u2026">
 <!ENTITY  crash_close_label "Cerrar">
 <!ENTITY  crash_restart_label "Reiniciar &brandShortName;">
+
+<!-- Localization note (crash_notification_title, crash_notification_message, crash_notification_negative_button_text)
+     Text displayed in a system notification to allow starting the Crash Reporter (Android Q and later).-->
+<!ENTITY  crash_notification_title "&brandShortName; falló">
+<!ENTITY  crash_notification_message "Tocá para informar a &vendorShortName;">
+<!ENTITY  crash_notification_negative_button_text "Ignorar">
 
 <!ENTITY url_bar_default_text2 "Buscar o ingresar dirección">
 
@@ -108,6 +117,10 @@
 <!ENTITY bookmark_folder_updated "Carpeta actualizada">
 <!ENTITY bookmark_parent_folder "Carpeta superior">
 <!ENTITY bookmark_add_folder "Agregar nueva carpeta">
+
+<!-- Localization note (bookmark_default_folder_title): Default title is used if user doesn't specify
+     one when he is creating a bookmark folder -->
+<!ENTITY bookmark_default_folder_title "(sin título)">
 
 <!ENTITY reader_saved_offline "Guardado sin conexión">
 <!-- Localization note (reader_switch_to_bookmarks) : This
@@ -413,8 +426,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY pref_private_data_downloadFiles2 "Descargas">
 <!ENTITY pref_private_data_syncedTabs "Pestañas sincronizadas">
 
-<!ENTITY pref_default_browser "Establecer navegador predeterminado">
-
 <!ENTITY pref_default_browser2 "Hacer de &brandShortName; su navegador predeterminado">
 <!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
     Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
@@ -592,6 +603,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_keyword "Palabra clave">
 <!ENTITY bookmark_select_folder "Seleccionar carpeta">
 
+<!ENTITY bookmark_edit_undo "Deshacer">
+
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
      dialog that appears after selecting the "Edit Site Settings" context menu item. -->
 <!ENTITY site_settings_title3       "Configuración del sitio">
@@ -679,6 +692,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY filepicker_audio_title "Seleccionar o grabar un sonido">
 <!ENTITY filepicker_image_title "Seleccionar o tomar una foto">
 <!ENTITY filepicker_video_title "Seleccionar o grabar un video">
+
+<!ENTITY filepicker_permission_denied "Permisos requeridos no otorgados, volviendo al selector de archivos del sistema.">
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "Está conectado a">
@@ -921,6 +936,7 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_title "Pausa">
 <!ENTITY pip_pause_button_description "Pausar reproducción">
 
+<!ENTITY pref_notification_settings_link "Administrar configuración de notificaciones">
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "Navegador">
 <!ENTITY mls_notification_channel "&vendorShortName; Servicio de localización">
@@ -933,3 +949,4 @@ Picture-in-picture mini window -->
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
 web sites through the HTML Notifications API. -->
 <!ENTITY site_notifications_channel "Notificaciones del sitio">
+<!ENTITY crash_handler_notifications_channel "&brandShortName; Informe de fallo">

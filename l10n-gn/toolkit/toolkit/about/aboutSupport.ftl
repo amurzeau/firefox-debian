@@ -32,8 +32,15 @@ app-basics-name = Téra
 app-basics-version = Peteĩchagua
 app-basics-build-id = ID jejapo
 app-basics-update-channel = Ñembohekopyahu mbohapeha
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] Embohekopyahu Marandurenda'aty
+       *[other] Ñembohekopyahu Ñongatuha
+    }
 app-basics-update-history = Ñembohekopyahu rembiasakue
 app-basics-show-update-history = Ñembohekopyahu rembiasakue jehechauka
+# Represents the path to the binary used to start the application.
+app-basics-binary = Binario tembipuru’i rehegua
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Marandurenda mba'ete
@@ -79,6 +86,8 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Jehaipy ñemboaje
 graphics-crash-guards-title = Hesegua ojokóva Apopyvusu je'a Ñangarekoha
 graphics-workarounds-title = Ñemyatyrõ sapy'agua
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Ovetã raperekoite
 place-database-title = Mba'ekuaarã renda
 place-database-integrity = Tekoite
 place-database-verify-integrity = Tekoporã Jehechajey
@@ -196,6 +205,7 @@ gpu-device-id = ID mba'e'oka rehegua
 gpu-subsys-id = Subsys ID
 gpu-drivers = Drivers
 gpu-ram = RAM
+gpu-driver-vendor = Driver kuave’ẽha
 gpu-driver-version = Mbojueheha peteĩchagua
 gpu-driver-date = Ñangarekohára arange
 gpu-active = Hendýva

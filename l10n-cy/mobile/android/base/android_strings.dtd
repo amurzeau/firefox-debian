@@ -21,12 +21,15 @@
 <!ENTITY firstrun_data_message "Llai o ddata, mwy o arbedion">
 <!ENTITY firstrun_data_subtext2 "Diffoddwch ddelweddau a gwario llai ar ddata pob gwefan fyddwch yn mynd iddyn nhw.">
 <!ENTITY firstrun_sync_title "Sync">
+<!ENTITY updatednewfirstrun_sync_title "Cyfrif">
 <!ENTITY firstrun_sync_message2 "Parhau lle roeddech o\&apos;r blaen.">
 <!ENTITY firstrun_sync_subtext2 "Defnyddiwch Sync i ganfod nodau tudalen, cyfrineiriau a phethau eraill rydych wedi eu cadw i &brandShortName; ar eich holl ddyfeisiau.">
 <!ENTITY newfirstrun_sync_subtext "Cydweddwch y pethau rydych chi\&apos;n eu cadw ar Firefox symudol i Firefox y bwrdd gwaith, yn breifat ac yn ddiogel.">
+<!ENTITY updatednewfirstrun_sync_subtext "Mewngofnodwch i\&apos;ch cyfrif i gael y mwyaf o &brandShortName;">
 <!ENTITY firstrun_signin_message "Cysylltu a chychwyn arni">
 <!ENTITY firstrun_signin_button "Mewngofnodwch i Sync">
 <!ENTITY newfirstrun_signin_button "Cychwyn Sync">
+<!ENTITY updatednewfirstrun_signin_button "Mewngofnodi i &brandShortName;">
 <!ENTITY  onboard_start_button_browser "Cychwyn Pori">
 <!ENTITY firstrun_button_notnow "Dim nawr">
 <!ENTITY firstrun_button_next "Nesaf">
@@ -66,6 +69,12 @@
 <!ENTITY  sending_crash_report "Anfon adroddiad chwalu\u2026">
 <!ENTITY  crash_close_label "Cau">
 <!ENTITY  crash_restart_label "Ailgychwyn &brandShortName;">
+
+<!-- Localization note (crash_notification_title, crash_notification_message, crash_notification_negative_button_text)
+     Text displayed in a system notification to allow starting the Crash Reporter (Android Q and later).-->
+<!ENTITY  crash_notification_title "Mae &brandShortName; wedi chwalu">
+<!ENTITY  crash_notification_message "Tapio i ddweud wrth &vendorShortName;">
+<!ENTITY  crash_notification_negative_button_text "Anwybyddu">
 
 <!ENTITY url_bar_default_text2 "Chwilio neu gyfeiriad gwe">
 
@@ -108,6 +117,10 @@
 <!ENTITY bookmark_folder_updated "Diweddarwyd y ffolder">
 <!ENTITY bookmark_parent_folder "Ffolder Rhiant">
 <!ENTITY bookmark_add_folder "Ychwanegu ffolder newydd">
+
+<!-- Localization note (bookmark_default_folder_title): Default title is used if user doesn't specify
+     one when he is creating a bookmark folder -->
+<!ENTITY bookmark_default_folder_title "(dim teitl)">
 
 <!ENTITY reader_saved_offline "Cadwyd all-lein">
 <!-- Localization note (reader_switch_to_bookmarks) : This
@@ -413,8 +426,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY pref_private_data_downloadFiles2 "Llwythi">
 <!ENTITY pref_private_data_syncedTabs "Tabiau wedi eu cydweddu">
 
-<!ENTITY pref_default_browser "Porwr rhagosodedig">
-
 <!ENTITY pref_default_browser2 "Gwneud &brandShortName; eich porwr rhagosodedig">
 <!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
     Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
@@ -592,6 +603,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_keyword "Allweddair">
 <!ENTITY bookmark_select_folder "Dewis ffolder">
 
+<!ENTITY bookmark_edit_undo "Dadwneud">
+
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
      dialog that appears after selecting the "Edit Site Settings" context menu item. -->
 <!ENTITY site_settings_title3       "Gosodiadau Gwefan">
@@ -679,6 +692,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY filepicker_audio_title "Dewis neu recordio sain">
 <!ENTITY filepicker_image_title "Dewis neu dynnu llun">
 <!ENTITY filepicker_video_title "Dewis neu recordio fideo">
+
+<!ENTITY filepicker_permission_denied "Heb roi\&apos;r caniatâd gofynnol, gan ddychwelyd at ddewiswr ffeiliau\&apos;r system.">
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "Rydych wedi cysylltu â">
@@ -918,6 +933,7 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_title "Oedi">
 <!ENTITY pip_pause_button_description "Oedi chwarae">
 
+<!ENTITY pref_notification_settings_link "Rheoli gosodiadau hysbysu">
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "Porwr">
 <!ENTITY mls_notification_channel "Gwasanaeth Lleoli &vendorShortName;">
@@ -930,3 +946,4 @@ Picture-in-picture mini window -->
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
 web sites through the HTML Notifications API. -->
 <!ENTITY site_notifications_channel "Hysbysiadau gwefannau">
+<!ENTITY crash_handler_notifications_channel "Adroddwr Chwalu &brandShortName;">

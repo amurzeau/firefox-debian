@@ -24,14 +24,6 @@ certmgr-detail-pretty-print-tab-title =
     .accesskey = ร
 certmgr-pending-label =
     .value = กำลังตรวจสอบใบรับรอง…
-certmgr-subject-info-label =
-    .value = ออกให้
-certmgr-issuer-info-label =
-    .value = ออกโดย
-certmgr-period-of-validity-label =
-    .value = ระยะเวลาที่มีผล
-certmgr-fingerprints-label =
-    .value = ลายนิ้วมือ
 certmgr-subject-label = ออกให้
 certmgr-issuer-label = ออกโดย
 certmgr-period-of-validity = ระยะเวลาที่มีผล
@@ -40,18 +32,6 @@ certmgr-cert-detail =
     .title = รายละเอียดใบรับรอง
     .buttonlabelaccept = ปิด
     .buttonaccesskeyaccept = ป
-certmgr-cert-detail-cn =
-    .value = ชื่อสามัญ (CN)
-certmgr-cert-detail-o =
-    .value = องค์กร (O)
-certmgr-cert-detail-ou =
-    .value = หน่วยงาน (OU)
-certmgr-cert-detail-serialnumber =
-    .value = หมายเลขอนุกรม
-certmgr-cert-detail-sha256-fingerprint =
-    .value = ลายนิ้วมือ SHA-256
-certmgr-cert-detail-sha1-fingerprint =
-    .value = ลายนิ้วมือ SHA1
 certmgr-cert-detail-commonname = ชื่อสามัญ (CN)
 certmgr-cert-detail-org = องค์กร (O)
 certmgr-cert-detail-orgunit = หน่วยงาน (OU)
@@ -80,13 +60,9 @@ certmgr-token-name =
 certmgr-begins-on = เริ่มเมื่อ
 certmgr-begins-label =
     .label = เริ่มเมื่อ
-certmgr-begins-value =
-    .value = { certmgr-begins-label.label }
 certmgr-expires-on = หมดอายุเมื่อ
 certmgr-expires-label =
     .label = หมดอายุเมื่อ
-certmgr-expires-value =
-    .value = { certmgr-expires-label.label }
 certmgr-email =
     .label = ที่อยู่อีเมล
 certmgr-serial =
@@ -188,6 +164,12 @@ delete-email-cert-title =
     .title = ลบใบรับรองอีเมล
 delete-email-cert-confirm = คุณต้องการลบใบรับรองอีเมลของบุคคลเหล่านี้หรือไม่?
 delete-email-cert-impact = หากคุณลบใบรับรองอีเมลของบุคคล คุณจะไม่สามารถส่งอีเมลที่เข้ารหัสให้กับบุคคลนั้นได้อีกต่อไป
+# Used for semi-uniquely representing a cert.
+#
+# Variables:
+#   $serialNumber : the serial number of the cert in AA:BB:CC hex format.
+cert-with-serial =
+    .value = ใบรับรองที่มีหมายเลขซีเรียล: { $serialNumber }
 
 ## Cert Viewer
 
@@ -227,7 +209,9 @@ cert-not-verified-unknown = ไม่สามารถพิสูจน์ใ�
 add-exception-branded-warning = คุณกำลังก้าวล่วงวิธีการที่ { -brand-short-name } จะทำการระบุตัวตนเว็บไซต์นี้
 add-exception-invalid-header = ไซต์นี้พยายามจะระบุตัวเองด้วยข้อมูลที่ไม่ถูกต้อง
 add-exception-domain-mismatch-short = เว็บไซต์ผิด
+add-exception-domain-mismatch-long = ใบรับรองเป็นของไซต์อื่น ซึ่งอาจหมายความว่ามีคนพยายามเลียนแบบไซต์นี้
 add-exception-expired-short = ข้อมูลล้าสมัย
+add-exception-expired-long = ใบรับรองไม่ถูกต้องในขณะนี้ อาจถูกขโมยหรือสูญหาย และอาจถูกนำไปใช้โดยบางคนเพื่อปลอมแปลงไซต์นี้
 add-exception-unverified-or-bad-signature-short = ไม่ทราบข้อมูลประจำตัว
 add-exception-unverified-or-bad-signature-long = ใบรับรองไม่น่าเชื่อถือ เพราะไม่ได้รับการตรวจสอบจากองค์กรรับรองที่เป็นที่รู้จักโดยใช้ลายเซ็นที่ปลอดภัย
 add-exception-valid-short = ใบรับรองถูกต้อง
@@ -235,6 +219,7 @@ add-exception-valid-long = เว็บไซต์นี้มีการร�
 add-exception-checking-short = กำลังตรวจสอบข้อมูล
 add-exception-checking-long = กำลังพยายามระบุไซต์นี้…
 add-exception-no-cert-short = ไม่มีข้อมูล
+add-exception-no-cert-long = ไม่สามารถรับสถานะการระบุตัวตนสำหรับไซต์นี้
 
 ## Certificate export "Save as" and error dialogs
 

@@ -136,6 +136,11 @@
 <!ENTITY options.timestampMessages.label      "Activează marcajele de timp">
 <!ENTITY options.timestampMessages.tooltip    "Dacă activezi opțiunea, comenzile și ieșirile din consola web vor afișa un marcaj de timp">
 
+<!-- LOCALIZATION NOTE (options.warningGroups.label): This is the
+   - label for the checkbox that toggles the warningGroups feature in the Web Console -->
+<!ENTITY options.warningGroups.label      "Grupează mesaje similare">
+<!ENTITY options.warningGroups.tooltip    "Când este activat, mesajele similare sunt plasate în grupuri">
+
 <!-- LOCALIZATION NOTE (options.debugger.label): This is the label for the
   -  heading of the group of Debugger preferences in the options panel. -->
 <!ENTITY options.debugger.label            "Depanator">
@@ -152,7 +157,7 @@
 
 <!-- LOCALIZATION NOTE (options.stylesheetAutocompletion.label): This is the
    - label for the checkbox that toggles autocompletion of css in the Style Editor -->
-<!ENTITY options.stylesheetAutocompletion.label      "Completare automată CSS">
+<!ENTITY options.stylesheetAutocompletion.label      "Completează automat CSS">
 <!ENTITY options.stylesheetAutocompletion.tooltip    "Completează automat proprietăți CSS, valori și selectori în editorul de stiluri pe măsură ce tastezi">
 
 <!-- LOCALIZATION NOTE (options.screenshot.label): This is the label for the
@@ -162,7 +167,7 @@
 
 <!-- LOCALIZATION NOTE (options.screenshot.clipboard.label): This is the
    - label for the checkbox that toggles screenshot to clipboard feature. -->
-<!ENTITY options.screenshot.clipboard.label      "Captură de ecran pe clipboard">
+<!ENTITY options.screenshot.clipboard.label      "Realizează captură de ecran în clipboard">
 <!ENTITY options.screenshot.clipboard.tooltip    "Salvează capturile de ecran direct în clipboard">
 
 <!-- LOCALIZATION NOTE (options.screenshot.audio.label): This is the
@@ -175,21 +180,21 @@
   -  Profiler i.e. devtools.profiler.ui.show-platform-data a boolean preference
   -  in about:config, in the options panel. -->
 <!ENTITY options.showPlatformData.label    "Afișează datele platformei Gecko">
-<!ENTITY options.showPlatformData.tooltip  "Dacă activezi opțiunea, rapoartele generatorului de profiluri JavaScript vor include
-simbolurile din platforma Gecko">
+<!ENTITY options.showPlatformData.tooltip  "Dacă activezi opțiunea, rapoartele profilatorului JavaScript vor include
+simbolurile platformei Gecko">
 
 <!-- LOCALIZATION NOTE (options.sourceeditor.*): Options under the editor
   -  section. -->
 
-<!ENTITY options.sourceeditor.label                     "Preferințe editor">
+<!ENTITY options.sourceeditor.label                     "Preferințe pentru editor">
 <!ENTITY options.sourceeditor.detectindentation.label   "Detectează indentările">
 <!ENTITY options.sourceeditor.detectindentation.tooltip "Dedu indentarea în baza contextului-sursă">
-<!ENTITY options.sourceeditor.autoclosebrackets.label   "Închide automat parantezele drepte și acoladele">
-<!ENTITY options.sourceeditor.autoclosebrackets.tooltip "Închide automat paranteze de sfârșit">
+<!ENTITY options.sourceeditor.autoclosebrackets.label   "Închide automat parantezele și acoladele">
+<!ENTITY options.sourceeditor.autoclosebrackets.tooltip "Inserează automat paranteze și acolade de închidere">
 <!ENTITY options.sourceeditor.expandtab.label           "Indentează folosind spații">
 <!ENTITY options.sourceeditor.expandtab.tooltip         "Folosește spații în locul caracterului de tabulare">
-<!ENTITY options.sourceeditor.tabsize.label             "Mărime caracter de tabulare">
+<!ENTITY options.sourceeditor.tabsize.label             "Mărimea tabulării">
 <!ENTITY options.sourceeditor.tabsize.accesskey         "T">
 <!ENTITY options.sourceeditor.keybinding.label          "Combinații de taste">
 <!ENTITY options.sourceeditor.keybinding.accesskey      "K">
-<!ENTITY options.sourceeditor.keybinding.default.label  "Implicit">
+<!ENTITY options.sourceeditor.keybinding.default.label  "Implicite">

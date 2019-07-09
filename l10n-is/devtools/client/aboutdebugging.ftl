@@ -32,6 +32,9 @@ about-debugging-sidebar-item-connected-label = Tengd(ur)
 # Firefox) has not been detected yet. Typically, Android phones connected via USB with
 # USB debugging enabled, but where Firefox is not started.
 about-debugging-sidebar-runtime-item-waiting-for-browser = Beðið eftir vafra…
+# Text displayed in sidebar items for remote devices that have been disconnected from the
+# computer.
+about-debugging-sidebar-runtime-item-unplugged = Ótengt
 # Title for runtime sidebar items that are related to a specific device (USB, WiFi).
 about-debugging-sidebar-runtime-item-name =
     .title = { $displayName }{ $deviceName }
@@ -56,9 +59,6 @@ about-debugging-refresh-usb-devices-button = Endurglæða tæki
 about-debugging-setup-title = Uppsetning
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Stilla tengileiðina sem þú vilt nota til að kemba tækið þitt með í fjarvinnslu.
-# Link displayed in the Setup page that leads to MDN page with list of supported devices.
-# Temporarily leads to https://support.mozilla.org/en-US/kb/will-firefox-work-my-mobile-device#w_android-devices
-about-debugging-setup-link-android-devices = Skoða lista af öllum Android tækjum sem eru studd
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Tengja tæki
 # USB section of the Setup page
@@ -77,12 +77,6 @@ about-debugging-setup-usb-updating-button = Uppfæri…
 about-debugging-setup-usb-status-enabled = Virkt
 about-debugging-setup-usb-status-disabled = Óvirkt
 about-debugging-setup-usb-status-updating = Uppfæri…
-# USB section step by step guide
-about-debugging-setup-usb-step-enable-dev-menu = Virkja þróunarvalmyndina á Android tækinu þínu.<a>Læra hvernig</a>
-# USB section step by step guide
-about-debugging-setup-usb-step-enable-debug = Virkja USB kembiforrit í Android þróunarvalmyndinni.  <a> Lærðu hvernig </a>
-# USB section step by step guide
-about-debugging-setup-usb-step-enable-debug-firefox = Virkja USB kembiforrit í Firefox á Android tækinu. <a>Lærðu hvernig</a>
 # USB section step by step guide
 about-debugging-setup-usb-step-plug-device = Tengja Android tækið við tölvuna þína.
 # Network section of the Setup page
@@ -107,6 +101,45 @@ about-debugging-network-location-form-invalid = Ógildur hýsill "{ $host-value 
 
 # Runtime Page strings
 
+# Below are the titles for the various categories of debug targets that can be found
+# on "runtime" pages of about:debugging.
+# Title of the temporary extensions category (only available for "This Firefox" runtime).
+about-debugging-runtime-temporary-extensions =
+    .name = Tímabundnar viðbætur
+# Title of the extensions category.
+about-debugging-runtime-extensions =
+    .name = Viðbætur
+# Title of the tabs category.
+about-debugging-runtime-tabs =
+    .name = Flipar
+# Text of a button displayed in Runtime pages for remote runtimes.
+# Clicking on the button will close the connection to the runtime.
+about-debugging-runtime-disconnect-button = Aftengja
 
 # Debug Targets strings
 
+# Displayed in the categories of "runtime" pages that don't have any debug target to
+# show. Debug targets depend on the category (extensions, tabs, workers...).
+about-debugging-debug-target-list-empty = Ekkert ennþá.
+# Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
+# Clicking on the button will reload the extension.
+about-debugging-tmp-extension-reload-button = Endurhlaða
+# Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
+# Clicking on the button will uninstall the extension and remove it from the page.
+about-debugging-tmp-extension-remove-button = Fjarlægja
+# This string is displayed as a label of the button that pushes a test payload
+# to a service worker.
+# Notes, this relates to the "Push" API, which is normally not localized so it is
+# probably better to not localize it.
+about-debugging-worker-action-push = Senda
+# This string is displayed as a label of the button that starts a service worker.
+about-debugging-worker-action-start = Byrja
+# This string is displayed as a label of the button that unregisters a service worker.
+about-debugging-worker-action-unregister = Afskrá
+# Displayed for service workers in runtime pages that are currently running (service
+# worker instance is active).
+about-debugging-worker-status-running = Í gangi
+# Label text used for the warning details of message component.
+about-debugging-message-details-label-warning = Viðvörunarupplýsingar
+# Label text used for default state of details of message component.
+about-debugging-message-details-label = Nánar

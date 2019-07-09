@@ -34,6 +34,7 @@ policies-notice =
         [windows] Nde atyguasu omboguéma ikatúva omambue heta Jeporavorã.
        *[other] Nde atyguasu omboguéma ikatúva omambue heta jererohoryvéva.
     }
+managed-notice = Pe kundaha rehe oñangareko atyguasu.
 pane-general-title = Tuichakue
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = Ñemigua ha Tekorosã
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Firefox mba'ete
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -293,6 +290,21 @@ update-pref-write-failure-title = Ojavy jehai
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Ndaikatúi eñongatu pe jeguerohoryvéva. Ndaikatúi ehai marandurendápe: { $path }
+update-setting-write-failure-title = Ojavy eñongatúvo mbohekopyahu eguerohoryvéva
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    { -brand-short-name } ojuhu jejavy ha noñongatúi ko moambuepy. Ehechakuaáke pe ñemboheko ko jegueroryvéva ñemboheko rehegua oikotevẽ ñemoneĩ ehai hag̃ua marandurendápe ag̃a guive. Ikatuhína nde térã peteĩ ñangarekoha apopyvusu rehegua ikatu omoĩporã jejavy ome’ẽvo Puruha atýpe oñangarekóvo ko marandurenda rehe.
+    
+    Ndaikatúi ojehai marandurendápe: { $path }
+update-in-progress-title = Oñembohekopyahuhína
+update-in-progress-message = ¿Eipotápa { -brand-short-name } omongu’ejey ñembohekopyahu?
+update-in-progress-ok-button = &Hejarei
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Ku'ejey
 
 ## General Section - Performance
 
@@ -528,8 +540,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Eñongatu
     .accesskey = v
-sync-mobilepromo-single = Embojuaju ambue mba'e'oka
-sync-mobilepromo-multi = Mba'e'oka ñangarekoha
 sync-connect-another-device = Embojuaju ambue mba’e’oka
 sync-manage-devices = Eñangareko mba'e'okáre
 sync-fxa-begin-pairing = Embojoja mba'e'oka
@@ -549,6 +559,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Oĩ'ỹva
     .accesskey = x
+forms-generate-passwords =
+    .label = Ere ha emoheñói ñe’ẽñemi hekorosãva
+    .accesskey = u
 forms-saved-logins =
     .label = Emoñepyrũ tembiapo ñongatupyre…
     .accesskey = L
@@ -660,6 +673,7 @@ addressbar-suggestions-settings = Jerohoryvéva jehekaha mongu'eha je'epyre momb
 
 content-blocking-header = Ejoko tetepy
 content-blocking-description = Ejoko pe tetepy mbohapyháva ohapykuehóva ñandutípe. Eñangareko hembiapo ñanduti pegua ombyaty ha omoherakuãramo ambue ñanduti renda ndive.
+content-blocking-section-description = Emo’ã nde rekoñemi eikundahakuévo. Ejoko tetepy ohapykuehóva umi tenda eike hague ha ojapo mba’ete. Ejokóvo ndahetái tetepy ikatuhína ombopya’eve kuatiarogue ñemyenyhẽ.
 content-blocking-learn-more = Eikuaave
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -675,6 +689,7 @@ content-blocking-setting-custom =
 content-blocking-standard-description = Ejoko jehekaha ojekuaáva ovetã ñemiguápe añoite.
 content-blocking-standard-desc = Ijojáva omo’ã ha oikoporã hag̃ua. Omoneĩ ndahetái tapykuehápe ikatu hag̃uáicha ñanduti renda oiko hekopete.
 content-blocking-strict-desc = Ojoko opaite tapykuehoha ohecháva { -brand-short-name }. Ikatuhína ombojavy tenda.
+content-blocking-strict-description = Peteĩ ñemo’ã imbaretevéva ikatu ombojavyka ndahetái tenda.
 content-blocking-custom-desc = Eiporavo mba’etépa ejokóta.
 content-blocking-private-trackers = Jehekaha ojekuaáva ovetã ñemiguápe añoite
 content-blocking-third-party-cookies = Jehekaha kookie mbohapyguáva
@@ -685,7 +700,6 @@ content-blocking-all-third-party-cookies = Opaite kookie mbohapyguáva
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = ¡Ema'ẽmi!
-content-blocking-warning-desc = Kookie ha tapykuehoha jejoko ikatu nomomba’apo porãi ñanduti renda. Ndahasýi eipe’a hag̃ua jokoha tenda ejeroviaha pegua.
 content-blocking-warning-description = Tetepy jejoko ikatu nomomba’apo porãi ñanduti renda. Ikatúramo eipe’a pe jokoha tenda ejeroviaha pegua.
 content-blocking-learn-how = Mba’éicha eikuaa
 content-blocking-reload-description = Emonyhẽjeyva’erã umi tendayke oiko hag̃ua ko’ã moambuepyre.
@@ -752,6 +766,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Ykepegua...
     .accesskey = E
+permissions-autoplay = Mbohetajehegui
+permissions-autoplay-settings =
+    .label = Ñemboheko
+    .accesskey = t
 permissions-block-popups =
     .label = Ovetã apysẽ joko
     .accesskey = B

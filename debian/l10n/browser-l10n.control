@@ -19,11 +19,6 @@
 %define L10N_RECOMMENDS hunspell-ar
 %include @PRODUCT@-l10n.control.in
 
-%define L10N_LANG as
-%define L10N_LANGUAGE Assamese
-%undef L10N_RECOMMENDS
-%include @PRODUCT@-l10n.control.in
-
 %define L10N_LANG ast
 %define L10N_LANGUAGE Asturian
 %undef L10N_RECOMMENDS
@@ -44,14 +39,9 @@
 %define L10N_RECOMMENDS hunspell-bg | myspell-bg
 %include @PRODUCT@-l10n.control.in
 
-%define L10N_LANG bn-bd
-%define L10N_LANGUAGE Bengali (Bangladesh)
-%define L10N_RECOMMENDS hunspell-bn
-%include @PRODUCT@-l10n.control.in
-
-%define L10N_LANG bn-in
-%define L10N_LANGUAGE Bengali (India)
-%define L10N_RECOMMENDS hunspell-bn
+%define L10N_LANG bn
+%define L10N_LANGUAGE Bengali
+%undef L10N_RECOMMENDS
 %include @PRODUCT@-l10n.control.in
 
 %define L10N_LANG br
@@ -111,11 +101,6 @@
 
 %define L10N_LANG en-gb
 %define L10N_LANGUAGE English (United Kingdom)
-%define L10N_RECOMMENDS hunspell-en-gb | hunspell-en-us
-%include @PRODUCT@-l10n.control.in
-
-%define L10N_LANG en-za
-%define L10N_LANGUAGE English (South Africa)
 %define L10N_RECOMMENDS hunspell-en-gb | hunspell-en-us
 %include @PRODUCT@-l10n.control.in
 
@@ -304,19 +289,9 @@
 %define L10N_RECOMMENDS hunspell-lv | myspell-lv
 %include @PRODUCT@-l10n.control.in
 
-%define L10N_LANG mai
-%define L10N_LANGUAGE Maithili
-%undef L10N_RECOMMENDS
-%include @PRODUCT@-l10n.control.in
-
 %define L10N_LANG mk
 %define L10N_LANGUAGE Macedonian
 %undef L10N_RECOMMENDS
-%include @PRODUCT@-l10n.control.in
-
-%define L10N_LANG ml
-%define L10N_LANGUAGE Malayalam
-%define L10N_RECOMMENDS hunspell-ml
 %include @PRODUCT@-l10n.control.in
 
 %define L10N_LANG mr
@@ -357,11 +332,6 @@
 %define L10N_LANG oc
 %define L10N_LANGUAGE Occitan
 %define L10N_RECOMMENDS hunspell-oc
-%include @PRODUCT@-l10n.control.in
-
-%define L10N_LANG or
-%define L10N_LANGUAGE Oriya
-%undef L10N_RECOMMENDS
 %include @PRODUCT@-l10n.control.in
 
 %define L10N_LANG pa-in

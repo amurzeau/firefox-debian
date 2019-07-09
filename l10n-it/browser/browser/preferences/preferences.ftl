@@ -34,6 +34,7 @@ policies-notice =
         [windows] La possibilità di modificare alcune opzioni è stata disattivata dalla propria azienda.
        *[other] La possibilità di modificare alcune preferenze è stata disattivata dalla propria azienda.
     }
+managed-notice = Il browser è gestito dalla propria azienda.
 pane-general-title = Generale
 category-general =
     .tooltiptext = { pane-general-title }
@@ -47,9 +48,6 @@ pane-privacy-title = Privacy e sicurezza
 category-privacy =
     .tooltiptext = { pane-privacy-title }
 # The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Account Firefox
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -288,9 +286,19 @@ update-enable-search-update =
     .label = Aggiorna automaticamente i motori di ricerca
     .accesskey = M
 update-pref-write-failure-title = Errore di scrittura
+update-setting-write-failure-title = Errore durante il salvataggio delle preferenze
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Errore durante il salvataggio della preferenza. Impossibile scrivere il file: { $path }
+
+update-setting-write-failure-message =
+    Si è verificato un errore e questa modifica non è stata salvata. Per aggiornare le preferenze è necessario avere i permessi di scrittura sul file indicato in seguito. Dovrebbe essere possibile correggere il problema assegnando al gruppo Utenti il pieno controllo di questo file.
+
+    Impossibile scrivere il file: { $path }
+update-in-progress-title = Aggiornamento in corso
+update-in-progress-message = Consentire a { -brand-short-name } di completare l’aggiornamento?
+update-in-progress-ok-button = I&nterrompi
+update-in-progress-cancel-button = &Continua
 
 ## General Section - Performance
 
@@ -331,10 +339,10 @@ browsing-search-on-start-typing =
     .label = Cerca nel testo quando si digita qualcosa
     .accesskey = e
 browsing-cfr-recommendations =
-    .label = Suggerisci estensioni durante la navigazione
-    .accesskey = S
+    .label = Consiglia estensioni durante la navigazione
+    .accesskey = C
 browsing-cfr-features =
-    .label = Suggerisci funzioni durante la navigazione
+    .label = Consiglia funzioni durante la navigazione
     .accesskey = f
 browsing-cfr-recommendations-learn-more = Ulteriori informazioni
 
@@ -493,7 +501,7 @@ sync-engine-tabs =
     .tooltiptext = Elementi aperti nei dispositivi sincronizzati
     .accesskey = h
 sync-engine-logins =
-    .label = Accessi
+    .label = Credenziali
     .tooltiptext = Nomi utente e password salvati
     .accesskey = i
 sync-engine-addresses =
@@ -526,9 +534,7 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Salva
     .accesskey = S
-sync-mobilepromo-single = Connetti un altro dispositivo
 sync-connect-another-device = Connetti un altro dispositivo
-sync-mobilepromo-multi = Gestisci dispositivi
 sync-manage-devices = Gestisci dispositivi
 sync-fxa-begin-pairing = Associa un dispositivo
 sync-tos-link = Condizioni di utilizzo del servizio
@@ -540,15 +546,18 @@ privacy-header = Privacy del browser
 
 ## Privacy Section - Forms
 
-logins-header = Accessi e password
+logins-header = Credenziali e password
 forms-ask-to-save-logins =
     .label = Chiedi se salvare le credenziali di accesso ai siti web
     .accesskey = C
 forms-exceptions =
     .label = Eccezioni…
     .accesskey = z
+forms-generate-passwords =
+    .label = Suggerisci e genera password complesse
+    .accesskey = u
 forms-saved-logins =
-    .label = Accessi salvati…
+    .label = Credenziali salvate…
     .accesskey = s
 forms-master-pw-use =
     .label = Utilizza una password principale
@@ -686,7 +695,6 @@ content-blocking-all-third-party-cookies = Tutti i cookie di terze parti
 content-blocking-cryptominers = Cryptominer
 content-blocking-fingerprinters = Fingerprinter
 content-blocking-warning-title = Attenzione
-content-blocking-warning-desc = Il blocco di cookie ed elementi traccianti potrebbe impedire il corretto funzionamento di alcuni siti. È semplice disattivare il blocco per i siti che ritieni affidabili.
 content-blocking-warning-description = Il blocco di contenuti potrebbe impedire il corretto funzionamento di alcuni siti. È semplice disattivare il blocco per i siti che ritieni affidabili.
 content-blocking-learn-how = Scopri come
 content-blocking-reload-description = È necessario ricaricare le schede per applicare le modifiche.
@@ -747,9 +755,13 @@ permissions-notification-pause =
 permissions-block-autoplay-media2 =
     .label = Impedisci ai siti web di riprodurre automaticamente audio
     .accesskey = m
+permissions-autoplay = Riproduzione automatica
 permissions-block-autoplay-media-exceptions =
     .label = Eccezioni…
     .accesskey = E
+permissions-autoplay-settings =
+    .label = Impostazioni…
+    .accesskey = t
 permissions-block-popups =
     .label = Blocca le finestre pop-up
     .accesskey = B

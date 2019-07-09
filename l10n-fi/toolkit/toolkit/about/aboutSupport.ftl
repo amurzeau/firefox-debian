@@ -35,8 +35,11 @@ app-basics-name = Nimi
 app-basics-version = Versio
 app-basics-build-id = Koosteen tunniste
 app-basics-update-channel = Päivityskanava
+app-basics-update-dir = Päivityskansio
 app-basics-update-history = Päivityshistoria
 app-basics-show-update-history = Näytä päivityshistoria
+# Represents the path to the binary used to start the application.
+app-basics-binary = Sovelluksen ohjelmatiedosto
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Profiilikansio
@@ -82,6 +85,8 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Päätösloki
 graphics-crash-guards-title = Kaatumisvahdin käytöstä poistamat ominaisuudet
 graphics-workarounds-title = Hätäratkaisut
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Ikkunointiprotokolla
 place-database-title = Places-tietokanta
 place-database-integrity = Virheettömyys
 place-database-verify-integrity = Tarkista virheettömyys
@@ -199,6 +204,7 @@ gpu-device-id = Laitteen tunnus
 gpu-subsys-id = Alijärjestelmän tunnus
 gpu-drivers = Ajurit
 gpu-ram = Muisti
+gpu-driver-vendor = Ajurin tekijä
 gpu-driver-version = Ajurin versio
 gpu-driver-date = Ajurin päiväys
 gpu-active = Aktiivinen
@@ -242,7 +248,7 @@ loaded-lib-versions = Käytössä oleva versio
 has-seccomp-bpf = Seccomp-BPF (Järjestelmäkutsujen suodatus)
 has-seccomp-tsync = Seccomp-säikeiden synkronointi
 has-user-namespaces = Käyttäjän nimiavaruudet
-has-privileged-user-namespaces = Käyttäjän nimiavaruudet privileged prosesseille
+has-privileged-user-namespaces = Käyttäjän nimiavaruudet etuoikeutetuille prosesseille
 can-sandbox-content = Sisältöprosessin suorittaminen hiekkalaatikossa
 can-sandbox-media = Medialiitännäisen suorittaminen hiekkalaatikossa
 content-sandbox-level = Sisältöprosessin hiekkalaatikkotaso

@@ -6,6 +6,12 @@ process-type-web = Spletna vsebina
 # process used to run privileged pages,
 # such as about:home
 process-type-privileged = Prednostna vsebina
+# process used to run privileged about pages,
+# such as about:home
+process-type-privilegedabout = Prednostna stran »about:«
+# process used to run privileged mozilla pages,
+# such as accounts.firefox.com
+process-type-privilegedmozilla = Prednostna vsebina Mozille
 process-type-extension = Razširitev
 # process used to open file:// URLs
 process-type-file = Krajevna datoteka

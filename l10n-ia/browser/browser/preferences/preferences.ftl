@@ -34,6 +34,7 @@ policies-notice =
         [windows] Tu organisation ha disactivate le poter de cambiar alcun optiones.
        *[other] Tu organisation ha disactivate le poter de cambiar alcun preferentias.
     }
+managed-notice = Tu navigator debe ser gerite per tu organisation.
 pane-general-title = General
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = Confidentialitate e securitate
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Conto Firefox
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -293,6 +290,21 @@ update-pref-write-failure-title = Error de scriptura
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Incapace a salvar le option. Impossibile scriber al file: { $path }
+update-setting-write-failure-title = Impossibile registrar preferentias de actualisation
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    { -brand-short-name } ha incontrate un error e non ha potite registrar iste cambiamento. Nota que modificar iste preferentia de actualisation necessita le permission de scriber al file mentionate infra. Tu, o un administrator de systema, pote forsan corriger le problema per conceder al gruppo Usatores le controlo complete de iste file.
+    
+    Impossibile scriber al file: { $path }
+update-in-progress-title = Actualisation in curso
+update-in-progress-message = Vole tu que { -brand-short-name } continua iste actualisation?
+update-in-progress-ok-button = &Discartar
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Continuar
 
 ## General Section - Performance
 
@@ -528,8 +540,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Salvar
     .accesskey = v
-sync-mobilepromo-single = Connecte altere apparato
-sync-mobilepromo-multi = Gerer le apparatos
 sync-connect-another-device = Connecter un altere apparato
 sync-manage-devices = Gerer apparatos
 sync-fxa-begin-pairing = Accopular un apparato
@@ -632,7 +642,7 @@ sitedata-option-block-all-third-party =
 sitedata-option-block-all =
     .label = Tote le cookies (impedira alcun sitos web de functionar)
 sitedata-clear =
-    .label = Clarar le datos...
+    .label = Eliminar datos...
     .accesskey = l
 sitedata-settings =
     .label = Gerer le datos...
@@ -687,7 +697,6 @@ content-blocking-all-third-party-cookies = Tote le cookies de tertie partes
 content-blocking-cryptominers = Crypto-minatores
 content-blocking-fingerprinters = Dactylogrammatores
 content-blocking-warning-title = Attention!
-content-blocking-warning-desc = Blocar cookies e traciatores pote impedir le functionamento de alcun sitos. Il es facile inactiva le blocar de sitos que tu fide.
 content-blocking-warning-description = Alcun sitos web pote non functionar correctemente con le blocage de contento. Es facile disactivar le blocage pro sitos de confidentia.
 content-blocking-learn-how = Apprender como
 content-blocking-reload-description = Tu debera recargar tu schedas pro applicar iste cambios.
@@ -754,6 +763,9 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Exceptiones…
     .accesskey = E
+permissions-autoplay-settings =
+    .label = Parametros…
+    .accesskey = r
 permissions-block-popups =
     .label = Blocar le fenestras emergente
     .accesskey = B
@@ -847,13 +859,13 @@ space-alert-over-5gb-pref-button =
         }
 space-alert-over-5gb-message =
     { PLATFORM() ->
-        [windows] { -brand-short-name } es fluente foras de spatio de disco. Le contentos del sito web non pote monstrar se correctemente. Tu pote clarar datos immagazinate in Optiones > Confidentialitate & Securitate > Cookies e Datos de sito.
-       *[other] { -brand-short-name } es fluente foras de spatio de disco. Le contentos del sito web non pote monstrar se correctemente. Tu pote clarar datos immagazinate in Preferentias > Confidentialitate & Securitate > Cookies e Datos de sito.
+        [windows] Le spatio de disco disponibile a { -brand-short-name } es quasi exhaurite. Le contento de sitos web pote non monstrar se correctemente. Tu pote eliminar datos immagazinate in Optiones > Confidentialitate & Securitate > Cookies e Datos de sito.
+       *[other] Le spatio de disco disponibile a { -brand-short-name } es quasi exhaurite. Le contento de sitos web pote non monstrar se correctemente. Tu pote eliminar datos immagazinate in Preferentias > Confidentialitate & Securitate > Cookies e Datos de sito.
     }
 space-alert-under-5gb-ok-button =
     .label = De accordo
     .accesskey = D
-space-alert-under-5gb-message = { -brand-short-name } non ha plus spatio de disco bastante. Le contentos del sito web pote non ser monstrate correctemente. Visita “Apprende plus” pro optimisar le uso de tu disco a fin de un melior experientia de navigation.
+space-alert-under-5gb-message = { -brand-short-name } non ha bastante spatio de disco disponibile. Le contento de sitos web pote non esser monstrate correctemente. Visita “Apprender plus” pro optimisar le uso de tu disco pro un melior experientia de navigation.
 
 ## The following strings are used in the Download section of settings
 

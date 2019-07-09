@@ -1,3 +1,9 @@
+firefox (68.0-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 10 Jul 2019 07:56:46 +0900
+
 firefox (67.0.4-1) unstable; urgency=medium
 
   * New upstream release.

@@ -82,11 +82,10 @@ about-debugging-refresh-usb-devices-button = Atnaujinti įrenginius
 about-debugging-setup-title = Sąranka
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Konfigūruokite prisijungimo būdą, kuriuo norite derinti savo įrenginį per nuotolį.
-# Link displayed in the Setup page that leads to MDN page with list of supported devices.
-# Temporarily leads to https://support.mozilla.org/en-US/kb/will-firefox-work-my-mobile-device#w_android-devices
-about-debugging-setup-link-android-devices = Peržiūrėti palaikomų „Android“ įrenginių sąrašą
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
 about-debugging-setup-this-firefox = Naudokite <a>„{ about-debugging-this-firefox-runtime-name }“</a>, norėdami su šia „{ -brand-shorter-name }“ laida derinti korteles, priedus, aptarnavimo scenarijus.
+# Explanatory text in the Setup page about what the 'This Firefox' page is for
+about-debugging-setup-this-firefox2 = Norėdami derinti priedus ir aptarnavimo scenarijus su šia „{ -brand-shorter-name }“ laida, naudokite <a>{ about-debugging-this-firefox-runtime-name }</a>.
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Prijungti įrenginį
 # USB section of the Setup page
@@ -106,16 +105,22 @@ about-debugging-setup-usb-status-enabled = Įjungta
 about-debugging-setup-usb-status-disabled = Išjungta
 about-debugging-setup-usb-status-updating = Atnaujinama…
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-dev-menu = Savo „Android“ įrenginyje įjunkite „programuotojų“ meniu. <a>Sužinokite kaip</a>
+about-debugging-setup-usb-step-enable-dev-menu2 = Įjunkite programuotojo meniu savo „Android“ įrenginyje.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug = Įjunkite derinimą per USB, esantį „Android“ programuotojų meniu. <a>Sužinokite kaip</a>
+about-debugging-setup-usb-step-enable-debug2 = Įjunkite USB derinimą per „Android“ programuotojo meniu.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug-firefox = Įjunkite derinimą per USB, esantį „Android“ įrenginio „Firefox“ naršyklėje.  <a>Sužinokite kaip</a>
+about-debugging-setup-usb-step-enable-debug-firefox2 = Įjunkite USB derinimą per „Android“ įrenginyje esančią „Firefox“.
 # USB section step by step guide
 about-debugging-setup-usb-step-plug-device = Prijunkite „Android“ įrenginį prie kompiuterio.
+# Text shown in the USB section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/docs/Tools/Remote_Debugging/Debugging_over_USB
+about-debugging-setup-usb-troubleshoot = Problemos jungiantis prie USB įrenginio? <a>Informacija problemų sprendimui</a>
 # Network section of the Setup page
 about-debugging-setup-network =
     .title = Tinklo vieta
+# Text shown in the Network section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Debugging_over_a_network
+about-debugging-setup-network-troubleshoot = Problemos jungiantis per tinklo vietą? <a>Informacija problemų sprendimų</a>
 # Text of a button displayed after the network locations "Host" input.
 # Clicking on it will add the new network location to the list.
 about-debugging-network-locations-add-button = Pridėti
@@ -164,7 +169,7 @@ about-debugging-runtime-processes =
     .name = Procesai
 # Label of the button opening the performance profiler panel in runtime pages for remote
 # runtimes.
-about-debugging-runtime-profile-button = Profilio įrenginio darinys
+about-debugging-runtime-profile-button2 = Matuoti našumą
 # This string is displayed in the runtime page if the current configuration of the
 # target runtime is incompatible with service workers. "Learn more" points to MDN.
 # https://developer.mozilla.org/en-US/docs/Tools/about%3Adebugging#Service_workers_not_compatible
@@ -202,12 +207,7 @@ about-debugging-connection-prompt-enable-button = Įjungti prisijungimo praneši
 # "devtools.debugger.prompt-connection" is true on the target runtime.
 about-debugging-connection-prompt-disable-button = Išjungti prisijungimo pranešimą
 # Title of a modal dialog displayed on remote runtime pages after clicking on the Profile Runtime button.
-about-debugging-profiler-dialog-title = Našumo profiliuoklė
-# Label of a checkbox displayed in the runtime page for "This Firefox".
-# This checkbox will toggle preferences that enable local addon debugging.
-# The "Learn more" link points to MDN.
-# https://developer.mozilla.org/docs/Tools/about:debugging#Enabling_add-on_debugging
-about-debugging-extension-debug-setting-label = Įjungti priedų derinimą. <a>Sužinokite daugiau</a>
+about-debugging-profiler-dialog-title2 = Profiliuoklė
 # Clicking on the header of a debug target category will expand or collapse the debug
 # target items in the category. This text is used as ’title’ attribute of the header,
 # to describe this feature.
@@ -296,3 +296,9 @@ about-debugging-main-process-description2 = Pagrindinis įrenginio darinio narš
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = Užverti pranešimą
+# Label text used for the error details of message component.
+about-debugging-message-details-label-error = Klaidos informacija
+# Label text used for the warning details of message component.
+about-debugging-message-details-label-warning = Įspėjimo informacija
+# Label text used for default state of details of message component.
+about-debugging-message-details-label = Išsamiau

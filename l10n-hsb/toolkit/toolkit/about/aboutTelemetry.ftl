@@ -15,6 +15,7 @@ about-telemetry-option-group-older = Starši
 about-telemetry-previous-ping = <<
 about-telemetry-next-ping = >>
 about-telemetry-page-title = Telemetrijne daty
+about-telemetry-current-store = Aktualny wobchod:
 about-telemetry-more-information = Pytaće dalše informacije?
 about-telemetry-firefox-data-doc = <a data-l10n-name="data-doc-link">Datowa dokumentacija Firefox</a> nawody wo dźěłanju z našimi datowymi nastrojemi wobsahuje.
 about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Klientowa dokumentacija za telemetriju Firefox</a> definicije za koncepty, API-dokumentaciju a datowe referency wobsahuje.
@@ -143,3 +144,6 @@ about-telemetry-origin-count = ličba
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Telemetrija Origin Firefox</a> daty zaklučuje, prjedy hač so pósćelu, zo by { $telemetryServerOwner } móhł wěcy ličić, ale njewě, hač daty { -brand-product-name } je k ličbje přinošował. (<a data-l10n-name="prio-blog-link">dalše informacije</a>)
+# Variables:
+#  $process (String): type of process in subsection headers ( e.g. "content", "parent" )
+about-telemetry-process = Proces { $process }

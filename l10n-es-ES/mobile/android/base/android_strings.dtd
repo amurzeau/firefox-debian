@@ -24,9 +24,11 @@
 <!ENTITY firstrun_sync_message2 "Continúa donde lo dejaste.">
 <!ENTITY firstrun_sync_subtext2 "Utiliza Sync para encontrar los marcadores, contraseñas y otras cosas que guardas en &brandShortName; en todos sus dispositivos.">
 <!ENTITY newfirstrun_sync_subtext "Sincroniza de forma privada y segura la información que tienes en el móvil con Firefox para escritorio.">
+<!ENTITY updatednewfirstrun_sync_subtext "Inicia sesión tu cuenta para aprovechar al máximo &brandShortName;">
 <!ENTITY firstrun_signin_message "Conéctese y en marcha">
 <!ENTITY firstrun_signin_button "Inicie sesión en Sync">
 <!ENTITY newfirstrun_signin_button "Activar Sync">
+<!ENTITY updatednewfirstrun_signin_button "Inicia sesión en &brandShortName;">
 <!ENTITY  onboard_start_button_browser "Comenzar a navegar">
 <!ENTITY firstrun_button_notnow "Ahora no">
 <!ENTITY firstrun_button_next "Siguiente">
@@ -66,6 +68,12 @@
 <!ENTITY  sending_crash_report "Enviando informe de fallo\u2026">
 <!ENTITY  crash_close_label "Cerrar">
 <!ENTITY  crash_restart_label "Reiniciar &brandShortName;">
+
+<!-- Localization note (crash_notification_title, crash_notification_message, crash_notification_negative_button_text)
+     Text displayed in a system notification to allow starting the Crash Reporter (Android Q and later).-->
+<!ENTITY  crash_notification_title "se produjo un fallo con &brandShortName;">
+<!ENTITY  crash_notification_message "Selecciona para informar a &vendorShortName;">
+<!ENTITY  crash_notification_negative_button_text "Ignorar">
 
 <!ENTITY url_bar_default_text2 "Término de búsqueda o dirección">
 
@@ -108,6 +116,10 @@
 <!ENTITY bookmark_folder_updated "Carpeta actualizada">
 <!ENTITY bookmark_parent_folder "Carpeta padre">
 <!ENTITY bookmark_add_folder "Añadir carpeta nueva">
+
+<!-- Localization note (bookmark_default_folder_title): Default title is used if user doesn't specify
+     one when he is creating a bookmark folder -->
+<!ENTITY bookmark_default_folder_title "(sin título)">
 
 <!ENTITY reader_saved_offline "Guardado sin conexión">
 <!-- Localization note (reader_switch_to_bookmarks) : This
@@ -413,8 +425,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY pref_private_data_downloadFiles2 "Descargas">
 <!ENTITY pref_private_data_syncedTabs "Pestañas sincronizadas">
 
-<!ENTITY pref_default_browser "Convertir en predeterminado">
-
 <!ENTITY pref_default_browser2 "Convierte a &brandShortName; en tu navegador predeterminado">
 <!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
     Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
@@ -592,6 +602,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_keyword "Palabra clave">
 <!ENTITY bookmark_select_folder "Seleccionar carpeta">
 
+<!ENTITY bookmark_edit_undo "Deshacer">
+
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
      dialog that appears after selecting the "Edit Site Settings" context menu item. -->
 <!ENTITY site_settings_title3       "Configuración del sitio">
@@ -612,7 +624,7 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY button_yes "Sí">
 <!ENTITY button_no "No">
 <!ENTITY button_clear_data "Limpiar datos">
-<!ENTITY button_set "Configurar">
+<!ENTITY button_set "Aceptar">
 <!ENTITY button_clear "Limpiar">
 <!ENTITY button_copy "Copiar">
 
@@ -679,6 +691,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY filepicker_audio_title "Elegir o grabar un sonido">
 <!ENTITY filepicker_image_title "Elegir o tomar una foto">
 <!ENTITY filepicker_video_title "Elegir o grabar un vídeo">
+
+<!ENTITY filepicker_permission_denied "No se ha otorgado el permiso requerido, volviendo al selector de archivos del sistema.">
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "Está conectado a">
@@ -934,3 +948,4 @@ Picture-in-picture mini window -->
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
 web sites through the HTML Notifications API. -->
 <!ENTITY site_notifications_channel "Notificaciones del sitio">
+<!ENTITY crash_handler_notifications_channel "Informe de fallos de &brandShortName;">

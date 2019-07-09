@@ -97,7 +97,7 @@ detail-update-manual =
 detail-private-browsing-label = Задзейнічаць у прыватных вокнах
 detail-private-browsing-description2 = Калі дазволена, пашырэнне будзе мець доступ да вашай актыўнасці ў інтэрнэце ў час прыватнага аглядання. <label data-l10n-name="detail-private-browsing-learn-more">Падрабязней</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = Не дазволена ў прыватных вокнах
 detail-private-disallowed-description = Гэта пашырэнне не працуе ў час прыватнага аглядання. <label data-l10n-name="detail-private-browsing-learn-more">Падрабязней</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
@@ -160,6 +160,9 @@ private-browsing-description2 =
 extensions-view-discover =
     .name = Атрымаць дадаткі
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Рэкамендацыі
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Нядаўнія абнаўленні
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -240,7 +243,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Кіраваць спалучэннямі клавіш пашырэнняў
     .accesskey = ы
-shortcuts-empty-message = Гэта пашырэнне не мае спалучэнняў клавіш.
 shortcuts-no-addons = У вас не ўключана ніводнага пашырэння.
 shortcuts-no-commands = Наступныя пашырэнні не маюць спалучэнняў клавіш:
 shortcuts-input =
@@ -267,6 +269,38 @@ shortcuts-card-collapse-button = Паказаць менш
 go-back-button =
     .tooltiptext = Вярнуцца
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    Пашырэнні і тэмы - як праграмы для вашага браўзера, яны дазваляюць
+    вам абараняць паролі, сцягваць відэа, знаходзіць зніжкі, блакаваць
+    раздражняльныя аб'явы, змяняць выгляд браўзера і шмат іншага. Гэтыя
+    невялікія праграмы часта распрацаваны трэцім бокам. Гэты набор { -brand-product-name }
+    <a data-l10n-name="learn-more-trigger">рэкамендуе </a> для выключнай
+    бяспекі, прадукцыйнасці і функцыянальнасці.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations =
+    Некаторыя з гэтых рэкамендацый персаніфікаваныя. Яны заснаваны на іншых
+    пашырэннях, якія вы ўсталявалі, перавагах профілю і статыстыцы выкарыстання.
+discopane-notice-learn-more = Даведацца больш
+privacy-policy = Палітыка прыватнасці
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = ад <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Карыстальнікаў: { $dailyUsers }
+install-extension-button = Дадаць у { -brand-product-name }
+install-theme-button = Усталяваць тэму
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Кіраванне
+find-more-addons = Знайсці больш дадаткаў
+
 ## Add-on actions
 
 report-addon-button = Паведаміць
@@ -274,6 +308,14 @@ remove-addon-button = Выдаліць
 disable-addon-button = Адключыць
 enable-addon-button = Уключыць
 expand-addon-button = Дадатковыя параметры
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Налады
+       *[other] Перавагі
+    }
+details-addon-button = Падрабязнасці
+release-notes-addon-button = Заўвагі да выпуску
+permissions-addon-button = Правы доступу
 addons-enabled-heading = Уключана
 addons-disabled-heading = Выключана
 ask-to-activate-button = Спытаць для задзейнічання
@@ -284,6 +326,11 @@ addon-detail-version-label = Версія
 addon-detail-last-updated-label = Апошняе абнаўленне
 addon-detail-homepage-label = Хатняя старонка
 addon-detail-rating-label = Ацэнка
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Ацэнена на { NUMBER($rating, maximumFractionDigits: 1) } з 5
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -317,5 +364,18 @@ addon-badge-private-browsing-allowed =
 addon-detail-private-browsing-help = Калі дазволена, пашырэнне будзе мець доступ да вашай дзейнасці ў сеціве ў час прыватнага аглядання. <a data-l10n-name="learn-more">Даведацца больш</a>
 addon-detail-private-browsing-allow = Дазволіць
 addon-detail-private-browsing-disallow = Не дазваляць
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Рэкамендаваныя
+    .alt = Рэкамендаваныя
 available-updates-heading = Даступныя абнаўленні
 recent-updates-heading = Нядаўнія абнаўленні
+release-notes-loading = Загрузка…
+release-notes-error = Выбачайце, здарылася памылка пры загрузцы заўваг да выпуску.
+addon-permissions-empty = Гэта пашырэнне не патрабуе якіх-небудзь дазволаў
+recommended-extensions-heading = Рэкамендаваныя пашырэнні
+recommended-themes-heading = Рэкамендаваныя тэмы
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Адчуваеце натхненне? <a data-l10n-name="link">Стварыце ўласную тэму з дапамогай Firefox Color.</a>

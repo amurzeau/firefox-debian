@@ -35,8 +35,15 @@ app-basics-name = 이름
 app-basics-version = 버전
 app-basics-build-id = 빌드 ID
 app-basics-update-channel = 업데이트 채널
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] 업데이트 디렉토리
+       *[other] 업데이트 폴더
+    }
 app-basics-update-history = 업데이트 기록
 app-basics-show-update-history = 업데이트 기록 표시
+# Represents the path to the binary used to start the application.
+app-basics-binary = 애플리케이션 바이너리
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] 프로필 저장 폴더
@@ -82,6 +89,8 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = 의사결정 로그
 graphics-crash-guards-title = 크래시 보호 비활성화 기능
 graphics-workarounds-title = 회피방법
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = 윈도우 프로토콜
 place-database-title = 위치 데이터베이스
 place-database-integrity = 무결성
 place-database-verify-integrity = 무결성 확인

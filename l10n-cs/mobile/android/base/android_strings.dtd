@@ -67,6 +67,9 @@
 <!ENTITY  crash_close_label "Zavřít">
 <!ENTITY  crash_restart_label "Restartovat &brandShortName;">
 
+<!-- Localization note (crash_notification_title, crash_notification_message, crash_notification_negative_button_text)
+     Text displayed in a system notification to allow starting the Crash Reporter (Android Q and later).-->
+
 <!ENTITY url_bar_default_text2 "Zadejte adresu nebo dotaz pro vyhledávač">
 
 <!-- Localization note: this text will be displayed in the Search Widget -->
@@ -108,6 +111,9 @@
 <!ENTITY bookmark_folder_updated "Složka aktualizována">
 <!ENTITY bookmark_parent_folder "Nadřazená složka">
 <!ENTITY bookmark_add_folder "Přidat novou složku">
+
+<!-- Localization note (bookmark_default_folder_title): Default title is used if user doesn't specify
+     one when he is creating a bookmark folder -->
 
 <!ENTITY reader_saved_offline "Uloženo offline">
 <!-- Localization note (reader_switch_to_bookmarks) : This
@@ -413,8 +419,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY pref_private_data_downloadFiles2 "Stahování">
 <!ENTITY pref_private_data_syncedTabs "Synchronizované panely">
 
-<!ENTITY pref_default_browser "Nastavit jako výchozí prohlížeč">
-
 <!ENTITY pref_default_browser2 "Použít aplikaci &brandShortName; jako výchozí prohlížeč">
 <!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
     Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
@@ -592,6 +596,7 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_keyword "Klíčové slovo">
 <!ENTITY bookmark_select_folder "Vybrat složku">
 
+
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
      dialog that appears after selecting the "Edit Site Settings" context menu item. -->
 <!ENTITY site_settings_title3       "Nastavení serveru">
@@ -679,6 +684,7 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY filepicker_audio_title "Vyberte nebo nahrajte zvuk">
 <!ENTITY filepicker_image_title "Vyberte nebo vyfoťte obrázek">
 <!ENTITY filepicker_video_title "Vyberte nebo natočte video">
+
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "Jste připojeni k">
@@ -918,6 +924,7 @@ Picture-in-picture mini window -->
 <!ENTITY pip_pause_button_title "Pozastavit">
 <!ENTITY pip_pause_button_description "Pozastavit přehrávání">
 
+<!ENTITY pref_notification_settings_link "Nastavení oznámení">
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "Prohlížeč">
 <!ENTITY mls_notification_channel "Geolokační služba &vendorShortName;">
@@ -930,3 +937,4 @@ Picture-in-picture mini window -->
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
 web sites through the HTML Notifications API. -->
 <!ENTITY site_notifications_channel "Oznámení stránky">
+<!ENTITY crash_handler_notifications_channel "Hlášení pádů aplikace &brandShortName;">

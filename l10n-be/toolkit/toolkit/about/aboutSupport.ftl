@@ -35,8 +35,15 @@ app-basics-name = Назва
 app-basics-version = Версія
 app-basics-build-id = ID зборкі
 app-basics-update-channel = Канал абнаўлення
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] Каталог абнаўлення
+       *[other] Папка абнаўлення
+    }
 app-basics-update-history = Гісторыя абнаўленняў
 app-basics-show-update-history = Паказаць гісторыю абнаўленняў
+# Represents the path to the binary used to start the application.
+app-basics-binary = Двайковы файл праграмы
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Дырэкторыя профілю
@@ -82,6 +89,8 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Журнал рашэнняў
 graphics-crash-guards-title = Адключаныя магчымасці абаронцы ад падзенняў
 graphics-workarounds-title = Абыходныя шляхі
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Аконны пратакол
 place-database-title = База звестак месцаў
 place-database-integrity = Цэльнасць
 place-database-verify-integrity = Праверыць цэльнасць

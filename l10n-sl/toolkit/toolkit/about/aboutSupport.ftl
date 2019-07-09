@@ -35,8 +35,15 @@ app-basics-name = Ime
 app-basics-version = Različica
 app-basics-build-id = ID gradnje
 app-basics-update-channel = Posodobitveni kanal
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] Posodobi mapo
+       *[other] Posodobi mapo
+    }
 app-basics-update-history = Zgodovina posodobitev
 app-basics-show-update-history = Prikaži zgodovino posodobitev
+# Represents the path to the binary used to start the application.
+app-basics-binary = Binarna datoteka aplikacije
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Mapa s profilom
@@ -82,6 +89,8 @@ graphics-gpu2-title = GPE št. 2
 graphics-decision-log-title = Dnevnik odločitev
 graphics-crash-guards-title = Onemogočene možnosti zaščite pred sesutjem
 graphics-workarounds-title = Zaobidenja
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Okenski protokol
 place-database-title = Podatkovna zbirka mest
 place-database-integrity = Celovitost
 place-database-verify-integrity = Preveri celovitost
@@ -209,6 +218,7 @@ gpu-device-id = ID naprave
 gpu-subsys-id = ID podsistema
 gpu-drivers = Gonilniki
 gpu-ram = RAM
+gpu-driver-vendor = Ponudnik gonilnika
 gpu-driver-version = Različica gonilnika
 gpu-driver-date = Datum gonilnika
 gpu-active = Dejaven

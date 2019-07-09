@@ -95,7 +95,7 @@ detail-update-manual =
 detail-private-browsing-label = Rhedeg mewn Ffenestri Preifat
 detail-private-browsing-description2 = Pan fydd yna ganiatâd, bydd yr estyniad ar gael i'ch gweithgareddau ar-lein wrth bori preifat. <label data-l10n-name="details-private-browsing-learning-more"> Dysgu rhagor </label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
-# cannot be overriden by the user.
+# cannot be overridden by the user.
 detail-private-disallowed-label = Heb ei ganiatáu mewn Ffenestri Preifat
 detail-private-disallowed-description = Nid yw'r estyniad hwn yn rhedeg tra'n pori'n preifat. <label data-l10n-name = "details-private-browsing-learning-more">Rhagor o wybodaeth</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
@@ -155,6 +155,9 @@ private-browsing-description2 =
 extensions-view-discover =
     .name = Estyn Ychwanegion
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Argymhellion
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Diweddariadau Diweddar
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -235,7 +238,6 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Rheoli Estyniad Llwybrau Byr
     .accesskey = R
-shortcuts-empty-message = Nid oes llwybrau byr ar gyfer yr estyniad hwn.
 shortcuts-no-addons = Nid oes gennych unrhyw estyniadau wedi'u galluogi.
 shortcuts-no-commands = Nid oes gan yr estyniadau canlynol lwybrau byr:
 shortcuts-input =
@@ -265,6 +267,36 @@ shortcuts-card-collapse-button = Dangos Llai
 go-back-button =
     .tooltiptext = Mynd nôl
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    Mae estyniadau a themâu yn debyg i apiau ar gyfer eich porwr, ac maen nhw'n gadael i chi
+    diogelu cyfrineiriau, llwytho fideos i lawr, dod o hyd i gytundebau, rhwystro hysbysebion blin, newid
+    golwg eich porwr a llawer mwy. Mae'r rhaglenni meddalwedd bach hyn fel arfer yn cael eu datblygu gan drydydd parti. Dyma detholiad y mae { -brand-product-name }<a data-l10n-name="learn-more-trigger">
+    yn eu hargymell </a> am ddiogelwch, perfformiad, a swyddogaethau gwell.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations =
+    Mae rhai o'r argymhellion hyn wedi'u personoli. Maen nhw'n seiliedig ar 
+    estyniadau eraill rydych chi wedi'u gosod, eich proffil dewisiadau, a'ch ystadegau defnydd.
+discopane-notice-learn-more = Dysgu rhagor
+privacy-policy = Polisi Preifatrwydd
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = gan <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Defnyddwyr: { $dailyUsers }
+install-extension-button = Ychwanegu at { -brand-product-name }
+install-theme-button = Gosod Thema
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Rheoli
+find-more-addons = Canfod rhagor o ychwanegion
+
 ## Add-on actions
 
 report-addon-button = Adrodd
@@ -272,6 +304,14 @@ remove-addon-button = Tynnu
 disable-addon-button = Analluogu
 enable-addon-button = Galluogi
 expand-addon-button = Rhagor o Opsiynau
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Opsiynau
+       *[other] Dewisiadau
+    }
+details-addon-button = Manylion
+release-notes-addon-button = Nodiadau Rhyddhau
+permissions-addon-button = Caniatâd
 addons-enabled-heading = Galluogwyd
 addons-disabled-heading = Analluogwyd
 ask-to-activate-button = Gofyn i'w Weithredu
@@ -282,6 +322,11 @@ addon-detail-version-label = Fersiwn
 addon-detail-last-updated-label = Diweddarwyd Diwethaf
 addon-detail-homepage-label = Tudalen Cartref
 addon-detail-rating-label = Graddio
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Graddiwyd { NUMBER($rating, maximumFractionDigits: 1) } allan o 5
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -318,5 +363,18 @@ addon-badge-private-browsing-allowed =
 addon-detail-private-browsing-help = Pan mae'n cael ei ganiatáu, bydd yr estyniad ar gael i'ch gweithgareddau ar-lein tra byddwch yn pori'n breifat. <a data-l10n-name="learn-more"> Gwybod rhagor</a>
 addon-detail-private-browsing-allow = Caniatáu
 addon-detail-private-browsing-disallow = Peidio Caniatáu
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Cymeradwy
+    .alt = Cymeradwy
 available-updates-heading = Diweddariadau ar Gael
 recent-updates-heading = Diweddariadau Diweddar
+release-notes-loading = Llwytho…
+release-notes-error = Ymddiheuriadau ond bu gwall llwytho'r nodiadau ryddhau.
+addon-permissions-empty = Nid oes angen unrhyw ganiatâd ar yr estyniad hwn
+recommended-extensions-heading = Estyniadau Cymeradwy
+recommended-themes-heading = Themâu Cymeradwy
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Teimlo'n greadigol? <a data-l10n-name="link">Adeiladwch eich thema eich hun gyda Firefox Color. </a>

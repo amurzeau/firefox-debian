@@ -21,12 +21,15 @@
 <!ENTITY firstrun_data_message "Lebih sedikit data, lebih banyak hematnya">
 <!ENTITY firstrun_data_subtext2 "Nonaktifkan gambar untuk menghemat kuota data di setiap situs yang Anda buka.">
 <!ENTITY firstrun_sync_title "Sync">
+<!ENTITY updatednewfirstrun_sync_title "Akun">
 <!ENTITY firstrun_sync_message2 "Mulai dari situasi saat Anda pergi.">
 <!ENTITY firstrun_sync_subtext2 "Gunakan Sync untuk menemukan markah, sandi, dan hal lainnya yang Anda simpan ke &brandShortName; di semua peranti Anda.">
 <!ENTITY newfirstrun_sync_subtext "Sinkronkan hal-hal yang Anda simpan di ponsel ke Firefox untuk desktop, secara pribadi dan aman.">
+<!ENTITY updatednewfirstrun_sync_subtext "Masuk ke akun Anda untuk memaksimalkan &brandShortName;">
 <!ENTITY firstrun_signin_message "Sambungkan, dan mulai">
 <!ENTITY firstrun_signin_button "Masuk ke Sync">
 <!ENTITY newfirstrun_signin_button "Aktifkan Sync">
+<!ENTITY updatednewfirstrun_signin_button "Masuk ke &brandShortName;">
 <!ENTITY  onboard_start_button_browser "Mulai Menjelajah">
 <!ENTITY firstrun_button_notnow "Tidak saat ini">
 <!ENTITY firstrun_button_next "Selanjutnya">
@@ -66,6 +69,12 @@
 <!ENTITY  sending_crash_report "Mengirim laporan kerusakan\u2026">
 <!ENTITY  crash_close_label "Tutup">
 <!ENTITY  crash_restart_label "Mulai ulang &brandShortName;">
+
+<!-- Localization note (crash_notification_title, crash_notification_message, crash_notification_negative_button_text)
+     Text displayed in a system notification to allow starting the Crash Reporter (Android Q and later).-->
+<!ENTITY  crash_notification_title "&brandShortName; bermasalah">
+<!ENTITY  crash_notification_message "Ketuk untuk melaporkan ke &vendorShortName;">
+<!ENTITY  crash_notification_negative_button_text "Abaikan">
 
 <!ENTITY url_bar_default_text2 "Cari atau masukkan alamat">
 
@@ -108,6 +117,10 @@
 <!ENTITY bookmark_folder_updated "Folder diperbarui">
 <!ENTITY bookmark_parent_folder "Folder Induk">
 <!ENTITY bookmark_add_folder "Tambah folder baru">
+
+<!-- Localization note (bookmark_default_folder_title): Default title is used if user doesn't specify
+     one when he is creating a bookmark folder -->
+<!ENTITY bookmark_default_folder_title "(tanpa judul)">
 
 <!ENTITY reader_saved_offline "Simpan luring">
 <!-- Localization note (reader_switch_to_bookmarks) : This
@@ -413,8 +426,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY pref_private_data_downloadFiles2 "Unduhan">
 <!ENTITY pref_private_data_syncedTabs "Tab yang disinkronkan">
 
-<!ENTITY pref_default_browser "Jadikan peramban utama">
-
 <!ENTITY pref_default_browser2 "Jadikan &brandShortName; sebagai peramban baku">
 <!-- LOCALIZATION NOTE (default_browser_system_settings_toast):
     Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
@@ -592,6 +603,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_keyword "Kata Kunci">
 <!ENTITY bookmark_select_folder "Pilih folder">
 
+<!ENTITY bookmark_edit_undo "Urungkan">
+
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
      dialog that appears after selecting the "Edit Site Settings" context menu item. -->
 <!ENTITY site_settings_title3       "Pengaturan Situs">
@@ -679,6 +692,8 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY filepicker_audio_title "Pilih atau rekam suara">
 <!ENTITY filepicker_image_title "Pilih atau ambil gambar">
 <!ENTITY filepicker_video_title "Pilih atau rekam video">
+
+<!ENTITY filepicker_permission_denied "Izin yang diperlukan tidak diberikan, kembali ke pemilih berkas sistem.">
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "Anda tersambung ke">
@@ -931,3 +946,4 @@ Picture-in-picture mini window -->
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
 web sites through the HTML Notifications API. -->
 <!ENTITY site_notifications_channel "Notifikasi situs">
+<!ENTITY crash_handler_notifications_channel "Pelapor Kerusakan &brandShortName;">

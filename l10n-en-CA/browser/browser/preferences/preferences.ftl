@@ -34,6 +34,7 @@ policies-notice =
         [windows] Your organization has disabled the ability to change some options.
        *[other] Your organization has disabled the ability to change some preferences.
     }
+managed-notice = Your browser is being managed by your organization.
 pane-general-title = General
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +47,6 @@ category-search =
 pane-privacy-title = Privacy & Security
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Firefox Account
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -293,6 +290,21 @@ update-pref-write-failure-title = Write Failure
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Unable to save preference. Could not write to file: { $path }
+update-setting-write-failure-title = Error saving Update preferences
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    { -brand-short-name } encountered an error and didn’t save this change. Note that setting this update preference requires permission to write to the file below. You or a system administrator may be able resolve the error by granting the Users group full control to this file.
+    
+    Could not write to file: { $path }
+update-in-progress-title = Update In Progress
+update-in-progress-message = Do you want { -brand-short-name } to continue with this update?
+update-in-progress-ok-button = &Discard
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Continue
 
 ## General Section - Performance
 
@@ -528,8 +540,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Save
     .accesskey = v
-sync-mobilepromo-single = Connect another device
-sync-mobilepromo-multi = Manage devices
 sync-connect-another-device = Connect another device
 sync-manage-devices = Manage devices
 sync-fxa-begin-pairing = Pair a device
@@ -549,6 +559,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Exceptions…
     .accesskey = x
+forms-generate-passwords =
+    .label = Suggest and generate strong passwords
+    .accesskey = u
 forms-saved-logins =
     .label = Saved Logins…
     .accesskey = L
@@ -687,7 +700,6 @@ content-blocking-all-third-party-cookies = All third-party cookies
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Heads up!
-content-blocking-warning-desc = Blocking cookies and trackers can cause some websites to break. It’s easy to disable blocking for sites you trust.
 content-blocking-warning-description = Blocking content can cause some websites to break. It’s easy to disable blocking for sites you trust.
 content-blocking-learn-how = Learn how
 content-blocking-reload-description = You will need to reload your tabs to apply these changes.
@@ -754,6 +766,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Exceptions…
     .accesskey = E
+permissions-autoplay = Autoplay
+permissions-autoplay-settings =
+    .label = Settings…
+    .accesskey = t
 permissions-block-popups =
     .label = Block pop-up windows
     .accesskey = B
