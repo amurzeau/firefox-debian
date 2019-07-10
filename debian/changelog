@@ -1,4 +1,4 @@
-firefox-esr (60.8.0esr-1) unstable; urgency=medium
+firefox-esr (60.8.0esr-1~deb10u1) buster-security; urgency=medium
 
   * New upstream release.
   * Fixes for mfsa2019-22, also known as:
