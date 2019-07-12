@@ -1,3 +1,15 @@
+firefox (68.0-2) unstable; urgency=medium
+
+  * debian/rules, debian/upstream.mk: Account for next Debian release.
+  * debian/rules, debian/control: Build against system sqlite again.
+
+  * gfx/skia/skia/third_party/skcms/src/Transform_inl.h: Work around GCC ICE
+    on mips*, i386 and s390x.  Closes: #931757
+  * python/mozbuild/mozbuild/action/langpack_manifest.py: Use build id as
+    langpack version for reproducibility. bz#1565504.
+
+ -- Mike Hommey <glandium@debian.org>  Fri, 12 Jul 2019 20:37:51 +0900
+
 firefox (68.0-1) unstable; urgency=medium
 
   * New upstream release.
