@@ -23,3 +23,4 @@ debian-hacks/Use-the-Mozilla-Location-Service-key-when-the-Google.patch
 debian-hacks/Avoid-using-vmrs-vmsr-on-armel.patch
 debian-hacks/Use-remoting-name-for-call-to-gdk_set_program_class.patch
 debian-hacks/Attempt-to-work-around-make-issue-happening-on-arch-.patch
+debian-hacks/Use-build-id-as-langpack-version-for-reproducibility.patch
