@@ -21,8 +21,11 @@ PRODUCT := browser
 include debian/upstream.mk
 
 SYSTEM_LIBS = zlib ffi
+ifeq (,$(filter wheezy jessie stretch buster,$(DIST)))
+SYSTEM_LIBS += nspr nss
+endif
 ifeq (,$(filter wheezy jessie stretch,$(DIST)))
-SYSTEM_LIBS += nspr nss libevent
+SYSTEM_LIBS += libevent
 endif
 ifeq (,$(filter wheezy jessie,$(DIST)))
 SYSTEM_LIBS += vpx
