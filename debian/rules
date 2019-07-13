@@ -291,14 +291,13 @@ endif
 	dh_auto_clean --builddirectory=build-l10n
 	find . -name "*.pyc" -o -name "*.pyo" | xargs --no-run-if-empty rm -f
 
+override_dh_clean:
+	dh_clean -XCargo.toml.orig
 	for dir in $(AUTOCONF_DIRS); do \
 		for file in config.guess config.sub; do \
 			sed -i '2!b;/^exec "/ d' $$dir/$$file; \
 		done; \
 	done
-
-override_dh_clean:
-	dh_clean -XCargo.toml.orig
 
 override_dh_auto_install-arch: stamps/install-$(PRODUCT)
 override_dh_auto_install-indep:
