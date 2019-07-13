@@ -67,6 +67,7 @@ export MOZCONFIG=$(CURDIR)/$(MOZ_OBJDIR)/mozconfig
 $(MOZ_OBJDIR)/mozconfig:
 	mkdir -p $(MOZ_OBJDIR)
 	@echo mk_add_options MOZ_OBJDIR=$(MOZ_OBJDIR) > $@
+	@echo ac_add_options --enable-project=tools/crashreporter >> $@
 
 $(MOZ_OBJDIR)/config.status: $(MOZ_OBJDIR)/mozconfig
 	$(CURDIR)/mach configure
