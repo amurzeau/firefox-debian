@@ -2,9 +2,8 @@
 TESTDIR = $(shell dh_testdir || echo no)
 ifeq (,$(TESTDIR))
 include debian/make.mk
-# Use dpkg-buildflags to get hardening flags, exclude non-hardening flags,
-# and disable read-only relocations.
-dpkg_buildflags = $(and $(1),$(shell DEB_BUILD_MAINT_OPTIONS=hardening=-relro DEB_CFLAGS_MAINT_STRIP="$(shell DEB_BUILD_MAINT_OPTIONS=hardening=-all dpkg-buildflags --get $(1))" dpkg-buildflags --get $(1)))
+# Use dpkg-buildflags to get hardening flags, and exclude non-hardening flags.
+dpkg_buildflags = $(and $(1),$(shell DEB_CFLAGS_MAINT_STRIP="$(shell DEB_BUILD_MAINT_OPTIONS=hardening=-all dpkg-buildflags --get $(1))" dpkg-buildflags --get $(1)))
 $(call lazy,CFLAGS,$$(call dpkg_buildflags,CFLAGS))
 $(call lazy,CPPFLAGS,$$(call dpkg_buildflags,CPPFLAGS))
 $(call lazy,LDFLAGS,$$(call dpkg_buildflags,LDFLAGS))
