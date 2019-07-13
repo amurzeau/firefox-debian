@@ -6,7 +6,7 @@ uc = $(subst a,A,$(subst b,B,$(subst c,C,$(subst d,D,$(subst e,E,$(subst f,F,$(s
 __VARS := $(.VARIABLES)
 
 dump:
-	@$(foreach var,$(sort $(filter-out $(__VARS) __VARS preprocess system_lib ___%,$(.VARIABLES))),echo '$(var) = $(subst ','\'',$(subst \,\\,$($(var))))';)
+	@$(foreach var,$(sort $(filter-out $(__VARS) __VARS CR define_package download_package preprocess system_lib ___%,$(.VARIABLES))),echo '$(var) = $(subst ','\'',$(subst \,\\,$($(var))))';)
 
 dump-%:
 	@echo '$(subst ','\'',$(subst \,\\,$($*)))'
