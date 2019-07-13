@@ -6,11 +6,6 @@ PRODUCT := browser
 include debian/upstream.mk
 
 ARCHES := amd64 i386
-DPKG_ARCHES := $(shell dpkg --print-architecture) $(shell dpkg --print-foreign-architectures)
-
-ifneq ($(ARCHES),$(filter $(ARCHES),$(DPKG_ARCHES)))
-$(foreach arch,$(filter-out $(filter $(ARCHES),$(DPKG_ARCHES)),$(ARCHES)),$(error Please run `dpkg --add-architecture $(arch)`))
-endif
 
 .DEFAULT_GOAL = symbols
 
@@ -46,6 +41,7 @@ export APT_CONFIG=$(CURDIR)/debian/symbols.apt.conf
 apt-tmp:
 	mkdir -p apt-tmp/config/apt.conf.d apt-tmp/config/preferences.d apt-tmp/dpkg apt-tmp/lists/lists/partial
 	touch apt-tmp/dpkg/status
+	for arch in $(ARCHES); do echo $$arch; done > apt-tmp/dpkg/arch
 	apt-get update
 
 $(PACKAGES): apt-tmp
