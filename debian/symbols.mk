@@ -113,4 +113,4 @@ syms.zip:
 	(cd syms; zip -rmD ../syms.zip .)
 
 upload: syms.zip
-	curl -X POST -H 'Auth-Token: $(API_TOKEN)' --form syms.zip=@syms.zip https://crash-stats.mozilla.com/symbols/upload
+	curl -X POST -H 'Auth-Token: $(API_TOKEN)' --form syms.zip=@syms.zip https://symbols.mozilla.org/upload/
