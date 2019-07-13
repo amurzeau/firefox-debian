@@ -250,7 +250,7 @@ stamps/build-$(PRODUCT):: stamps/configure-check-$(PRODUCT)
 L10N_BUILD_STAMPS = $(foreach lang,$(L10N_LANGS),stamps/build-l10n-$(lang))
 stamps/build-l10n:: $(L10N_BUILD_STAMPS)
 
-stamps/configure-l10n:: stamps/prepare-configure
+stamps/configure-l10n:: stamps/prepare-configure debian/$($(PRODUCT)).mozconfig
 	$(if $(wildcard build-l10n),,mkdir build-l10n)
 	$(if $(wildcard l10n),,mkdir -p l10n)
 	cd build-l10n && \
