@@ -266,7 +266,7 @@ $(L10N_BUILD_STAMPS):: stamps/build-l10n-%: stamps/configure-l10n
 	-cd $(CURDIR)/build-l10n && PYTHONIOENCODING=utf-8 $(CURDIR)/mach compare-locales --merge $(CURDIR)/build-l10n/l10n-$* $(CURDIR)/$(PRODUCT)/locales/l10n.toml $(CURDIR)/l10n $*
 	$(MAKE) -C build-l10n/$(PRODUCT)/locales langpack-$* MOZ_CHROME_FILE_FORMAT=flat MOZ_LANGPACK_EID=langpack-$*@$($(PRODUCT)).mozilla.org PKG_LANGPACK_BASENAME='$$(MOZ_LANGPACK_EID)' PKG_LANGPACK_PATH=xpi/ LOCALE_MERGEDIR=$(CURDIR)/build-l10n/l10n-$*
 
-override_dh_auto_build override_dh_auto_build-arch: stamps/build-$(PRODUCT)
+override_dh_auto_build-arch: stamps/build-$(PRODUCT)
 
 override_dh_auto_build-indep: stamps/build-l10n
 
@@ -301,7 +301,8 @@ endif
 override_dh_clean:
 	dh_clean -XCargo.toml.orig
 
-override_dh_auto_install: stamps/install-$(PRODUCT)
+override_dh_auto_install-arch: stamps/install-$(PRODUCT)
+override_dh_auto_install-indep:
 
 stamps/install-$(PRODUCT)::
 	dh_auto_install --builddirectory=build-$(PRODUCT) -- installdir=$(LIB_DIR) \
@@ -321,7 +322,7 @@ stamps/dh_install:: debian/noinstall debian/$($(PRODUCT))-symbolic.svg
 	awk '{print "debian/tmp/" $$1 }' < debian/noinstall | xargs rm -r
 	dh_install --fail-missing
 
-override_dh_install: stamps/dh_install
+override_dh_install-arch: stamps/dh_install
 
 override_dh_strip:
 ifneq (,$(filter wheezy jessie,$(DIST)))
@@ -336,7 +337,7 @@ override_dh_shlibdeps:
 	dh_shlibdeps -a -l$(CURDIR)/debian/tmp$(LIB_DIR) -- -xlibgtk2.0-0
 
 ifdef TRANSITION
-override_dh_gencontrol:
+override_dh_gencontrol-indep:
 	dh_gencontrol$(foreach pkg,$(subst $($(PRODUCT)),iceweasel,$(L10N_PACKAGES)) iceweasel-l10n-all, -p$(pkg)) -- -v1:$(DEBIAN_VERSION)
 	dh_gencontrol$(foreach pkg,$(subst $($(PRODUCT)),iceweasel,$(L10N_PACKAGES)) iceweasel-l10n-all, -N$(pkg))
 endif
