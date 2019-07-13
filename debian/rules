@@ -145,13 +145,14 @@ CONFIGURE_FLAGS += --disable-ion
 endif
 
 CXXFLAGS = $(CFLAGS)
+RUSTFLAGS = --remap-path-prefix=$(CURDIR)=.
 
 ifeq ($(DEB_HOST_ARCH_ENDIAN),big)
 ICU_VERSION := $(shell echo U_ICU_VERSION_MAJOR_NUM | cpp -P -include $(CURDIR)/intl/icu/source/common/unicode/uvernum.h)
 ICU_DATA_FILE = icudt$(ICU_VERSION)b.dat
 endif
 
-EXPORTS := CC CXX CFLAGS CXXFLAGS CPPFLAGS LDFLAGS MOZILLA_OFFICIAL ICU_DATA_FILE
+EXPORTS := CC CXX CFLAGS CXXFLAGS CPPFLAGS LDFLAGS MOZILLA_OFFICIAL ICU_DATA_FILE RUSTFLAGS
 $(call lazy,CONFIGURE_ENV,$$(foreach export,$(EXPORTS),$$(export)="$$($$(export))"))
 
 IN_FILES := $(wildcard debian/*.in)
