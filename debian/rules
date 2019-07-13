@@ -330,6 +330,8 @@ else
 	dh_strip --dbgsym-migration='$($(PRODUCT))-dbg (<< 49.0-4~)'
 endif
 
+override_dh_strip_nondeterminism:
+
 override_dh_shlibdeps:
 	dh_shlibdeps -a -l$(CURDIR)/debian/tmp$(LIB_DIR) -- -xlibgtk2.0-0
 
