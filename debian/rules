@@ -60,7 +60,9 @@ endif
 endif
 
 ifeq (firefox-esr,$(DEBIAN_SOURCE))
+ifneq (,$(filter wheezy jessie stretch buster,$(DIST)))
 TRANSITION = 1
+endif
 endif
 
 BRANDING_CONFIGURE_FLAG = $(if $(filter $(BRANDING),$(OFFICIAL_BRANDING)),--enable-official-branding,--with-branding=$(BRANDING))
