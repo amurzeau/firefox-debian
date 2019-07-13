@@ -35,7 +35,8 @@ DBGTYPE=buildid
 else
 DBGTYPE=dbg
 endif
-$(eval $(call define_package,$(PACKAGE_NAME)-$(DBG)))
+DBG_PACKAGE_NAME = $(PACKAGE_NAME)-$(DBG)
+$(eval $(call define_package,$(DBG_PACKAGE_NAME)))
 
 export APT_CONFIG=$(CURDIR)/debian/symbols.apt.conf
 apt-tmp:
@@ -56,7 +57,7 @@ define CR
 
 endef
 
-$(NON_DEBUG_PACKAGES:%=%.x): $(PACKAGE_NAME)_%.x: $(PACKAGE_NAME)_% $(PACKAGE_NAME)-$(DBG)_%
+$(NON_DEBUG_PACKAGES:%=%.x): $(PACKAGE_NAME)_%.x: $(PACKAGE_NAME)_% $(DBG_PACKAGE_NAME)_%
 	$(foreach deb,$^,dpkg-deb -x $(deb) $@$(CR))
 	@touch $@
 
