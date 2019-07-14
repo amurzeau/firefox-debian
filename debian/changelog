@@ -1,3 +1,39 @@
+firefox (68.0-3) unstable; urgency=medium
+
+  * debian/browser.README.Debian.in: Fix a reference to iceweasel in
+    README.Debian. Thanks Edward Betts.
+  * debian/rules:
+    - Only exclude "-g" from dpkg-buildflags output. All the other flags
+      that used to be excluded either already match upstream or add
+      reproducibility.
+    - Don't unexpectedly reset LDFLAGS.
+    - [firefox-esr] Remove iceweasel transitional packages on bullseye.
+    - Disable dh_strip_nondeterminism. Upstream build system already avoids
+      non-determinism it would strip, so there is no need for it further
+      modifying files.
+    - Avoid arch:all builds building arch:any stuff.
+    - Move AUTOCONF_DIRS cleanup after dh_clean.
+    - Add rust flags to improve reproducibility.
+    - Only touch or remove configure when it wasn't there to begin with.
+    - Call configure using its full path.
+    - Factor common configure arguments.
+    - Build langpacks with --disable-compile-environment, and pass less
+      configure arguments.
+    - Build each langpack from a separate build directory. This means time
+      wasted running configure more times, but all locales can now be built
+      in parallel.
+  * debian/symbols.mk, debian/symbols.apt.conf, debian/symbols.sources.list:
+    Miscellaneous changes to symbols download script.
+  * debian/make.mk: Exclude symbols.mk variables from dump output.
+  * debian/browser.mozconfig.in: Remove redundant --prefix=/usr.
+  * debian/control.in, debian/rules, debian/symbols.mk, debian/upstream.mk:
+    Remove packaging scripts compatibility with Wheezy.
+
+  * moz.configure: Only add confvars.sh as a dependency to config.status
+    when it exists. bz#1560340.
+
+ -- Mike Hommey <glandium@debian.org>  Sun, 14 Jul 2019 15:20:45 +0900
+
 firefox (68.0-2) unstable; urgency=medium
 
   * debian/rules, debian/upstream.mk: Account for next Debian release.
