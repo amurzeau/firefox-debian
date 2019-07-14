@@ -21,13 +21,13 @@ PRODUCT := browser
 include debian/upstream.mk
 
 SYSTEM_LIBS = zlib ffi
-ifeq (,$(filter wheezy jessie stretch buster,$(DIST)))
+ifeq (,$(filter jessie stretch buster,$(DIST)))
 SYSTEM_LIBS += nspr nss sqlite
 endif
-ifeq (,$(filter wheezy jessie stretch,$(DIST)))
+ifeq (,$(filter jessie stretch,$(DIST)))
 SYSTEM_LIBS += libevent
 endif
-ifeq (,$(filter wheezy jessie,$(DIST)))
+ifeq (,$(filter jessie,$(DIST)))
 SYSTEM_LIBS += vpx
 endif
 
@@ -36,11 +36,6 @@ USE_SYSTEM_$(1) ?= 1
 SYSTEM_LIBS_VARS += $$(if $$(USE_SYSTEM_$(1)),USE_SYSTEM_$(1))
 endef
 $(foreach lib,$(sort $(call uc,$(SYSTEM_LIBS))),$(eval $(call system_lib,$(lib))))
-
-ifeq ($(DIST),wheezy)
-CC := /usr/lib/gcc-mozilla/bin/gcc
-CXX := /usr/lib/gcc-mozilla/bin/g++
-endif
 
 OFFICIAL_BRANDING := browser/branding/official
 MOZILLA_OFFICIAL := 1
@@ -60,7 +55,7 @@ endif
 endif
 
 ifeq (firefox-esr,$(DEBIAN_SOURCE))
-ifneq (,$(filter wheezy jessie stretch buster,$(DIST)))
+ifneq (,$(filter jessie stretch buster,$(DIST)))
 TRANSITION = 1
 endif
 endif
@@ -331,7 +326,7 @@ stamps/dh_install:: debian/noinstall debian/$($(PRODUCT))-symbolic.svg
 override_dh_install-arch: stamps/dh_install
 
 override_dh_strip:
-ifneq (,$(filter wheezy jessie,$(DIST)))
+ifneq (,$(filter jessie,$(DIST)))
 	dh_strip -a --dbg-package=$($(PRODUCT))-dbg
 else
 	dh_strip --dbgsym-migration='$($(PRODUCT))-dbg (<< 49.0-4~)'

@@ -4,13 +4,10 @@ Priority: optional
 Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
 Uploaders: Mike Hommey <glandium@debian.org>
 Build-Depends: autotools-dev,
-%if DIST == wheezy || DIST == jessie
+%if DIST == jessie
                debhelper (>= 9),
 %else
                debhelper (>= 9.20160114),
-%endif
-%if DIST == wheezy
-               gcc-mozilla,
 %endif
                autoconf2.13,
                libx11-dev,
@@ -59,7 +56,7 @@ Build-Depends: autotools-dev,
                nasm (>= 2.13) [amd64 i386],
                rustc (>= 1.34),
                cargo (>= 0.35),
-%if DIST == wheezy || DIST == jessie || DIST == stretch
+%if DIST == jessie || DIST == stretch
                llvm-4.0-dev,
                libclang-4.0-dev,
                clang-4.0,
@@ -140,7 +137,7 @@ Description: Web browser based on Firefox - Transitional package
  This is a transitional package, it can be safely removed.
 %endif
 
-%if DIST == wheezy || DIST == jessie
+%if DIST == jessie
 Package: @browser@-dbg
 Architecture: any
 Priority: extra
