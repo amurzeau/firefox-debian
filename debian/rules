@@ -65,6 +65,11 @@ TRANSITION = 1
 endif
 endif
 
+COMMON_CONFIGURE_FLAGS += --target=$(DEB_HOST_GNU_TYPE)
+COMMON_CONFIGURE_FLAGS += --host=$(DEB_BUILD_GNU_TYPE)
+COMMON_CONFIGURE_FLAGS += --prefix=/usr
+COMMON_CONFIGURE_FLAGS += --enable-project=$(PRODUCT)
+
 COMMON_CONFIGURE_FLAGS += $(if $(filter $(BRANDING),$(OFFICIAL_BRANDING)),--enable-official-branding,--with-branding=$(BRANDING))
 
 # Define PRODUCT, product and Product variables (replacing product with the
@@ -86,11 +91,6 @@ LDFLAGS += -Wl,--as-needed
 # the same anyways, but it allows elfhack to work in combination with
 # unstripped binaries when they would normally be larger than 2GiB.
 LDFLAGS += -Wl,--compress-debug-sections=zlib
-
-COMMON_CONFIGURE_FLAGS += --target=$(DEB_HOST_GNU_TYPE)
-COMMON_CONFIGURE_FLAGS += --host=$(DEB_BUILD_GNU_TYPE)
-COMMON_CONFIGURE_FLAGS += --prefix=/usr
-COMMON_CONFIGURE_FLAGS += --enable-project=$(PRODUCT)
 
 # Disable debug symbols when building on 32-bits machines, because
 # a) the rust compiler can't deal with it in the available address
