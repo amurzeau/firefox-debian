@@ -241,7 +241,7 @@ endif
 	MOZCONFIG=$(CURDIR)/debian/$($(PRODUCT)).mozconfig \
 	ASFLAGS="-g" \
 	$(CONFIGURE_ENV) \
-	../configure --target=$(DEB_HOST_GNU_TYPE) --host=$(DEB_BUILD_GNU_TYPE) --prefix=/usr $(CONFIGURE_FLAGS) \
+	$(CURDIR)/configure --target=$(DEB_HOST_GNU_TYPE) --host=$(DEB_BUILD_GNU_TYPE) --prefix=/usr $(CONFIGURE_FLAGS) \
 		$(BRANDING_CONFIGURE_FLAG)
 	sed -i "/MOZ_APP_REMOTINGNAME/s/'[^']*',/'$(MOZ_APP_REMOTINGNAME)',/" build-$(PRODUCT)/config.status
 
@@ -259,7 +259,7 @@ stamps/configure-l10n:: stamps/prepare-configure debian/l10n.mozconfig
 	cd build-l10n && \
 	MOZCONFIG=$(CURDIR)/debian/l10n.mozconfig \
 	$(CONFIGURE_ENV) \
-	../configure --target=$(DEB_HOST_GNU_TYPE) --host=$(DEB_BUILD_GNU_TYPE) --prefix=/usr $(CONFIGURE_FLAGS) \
+	$(CURDIR)/configure --target=$(DEB_HOST_GNU_TYPE) --host=$(DEB_BUILD_GNU_TYPE) --prefix=/usr $(CONFIGURE_FLAGS) \
 		--with-l10n-base=$(CURDIR)/l10n \
 		$(BRANDING_CONFIGURE_FLAG)
 
