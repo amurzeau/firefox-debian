@@ -266,7 +266,6 @@ stamps/configure-l10n:: stamps/prepare-configure
 	$(CONFIGURE_ENV) \
 	$(CURDIR)/configure \
 		$(COMMON_CONFIGURE_FLAGS) \
-		$(CONFIGURE_FLAGS) \
 		--disable-compile-environment \
 		--with-l10n-base=$(CURDIR)/l10n
 
