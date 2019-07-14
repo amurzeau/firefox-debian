@@ -196,14 +196,16 @@ endif
 
 override_dh_auto_configure:
 
-stamps/prepare-configure:: stamps/dummy
+configure js/src/configure:
+	cp -f $@.in $@ && chmod +x $@
+	echo $@ >> debian/extra-clean
+
+stamps/prepare-configure:: stamps/dummy configure js/src/configure
 	for dir in $(AUTOCONF_DIRS); do \
 		for file in config.guess config.sub; do \
 			sed -i '2!b;/^#/ i\exec "/usr/share/misc/'$$file'" "$$@"' $$dir/$$file; \
 		done; \
 	done
-	cp -f configure.in configure && chmod +x configure
-	cp -f js/src/configure.in js/src/configure && chmod +x js/src/configure
 
 stamps/configure-check-$(PRODUCT):: stamps/configure-$(PRODUCT)
 # Ensure --{with,enable}-system options properly set expected variables
@@ -280,7 +282,7 @@ endif
 
 override_dh_auto_clean::
 	rm -f $(filter-out debian/control,$(GENERATED_FILES))
-	rm -f configure js/src/configure old-configure js/src/old-configure
+	rm -f $$(cat debian/extra-clean 2>/dev/null) debian/extra-clean old-configure js/src/old-configure
 	rm -rf stamps l10n
 	debian/rules debian/control TESTDIR=
 
