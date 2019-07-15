@@ -324,6 +324,7 @@ stamps/dh_install:: debian/noinstall debian/$($(PRODUCT))-symbolic.svg
 	dh_install --fail-missing
 
 override_dh_install-arch: stamps/dh_install
+override_dh_install-indep: stamps/dh_install-l10n
 
 override_dh_strip:
 ifneq (,$(filter jessie,$(DIST)))
@@ -344,8 +345,6 @@ override_dh_gencontrol-indep:
 endif
 
 install binary binary-arch binary-indep: $(filter-out %.pc,$(GENERATED_FILES))
-
-binary binary-indep: stamps/dh_install-l10n
 
 binary binary-arch binary-indep build build-arch build-indep clean install:
 	dh $@
