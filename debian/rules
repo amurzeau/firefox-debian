@@ -347,7 +347,7 @@ endif
 install binary binary-arch binary-indep: $(filter-out %.pc,$(GENERATED_FILES))
 
 binary binary-arch binary-indep build build-arch build-indep clean install:
-	dh $@
+	debian/dh $@
 
 .PHONY: build clean binary-indep binary-arch binary install
 
