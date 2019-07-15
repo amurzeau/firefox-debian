@@ -247,7 +247,7 @@ endif
 	sed -i "/MOZ_APP_REMOTINGNAME/s/'[^']*',/'$(MOZ_APP_REMOTINGNAME)',/" build-$(PRODUCT)/config.status
 
 stamps/build-$(PRODUCT):: stamps/configure-check-$(PRODUCT)
-	dh_auto_build --parallel --builddirectory=build-$(PRODUCT) -- \
+	+dh_auto_build --parallel --builddirectory=build-$(PRODUCT) -- \
 		LD_LIBS=-Wl,--no-gc-sections \
 		_LEAKTEST_FILES=leaktest.py
 
