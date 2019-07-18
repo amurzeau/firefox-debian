@@ -1,3 +1,16 @@
+firefox (68.0.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+  * debian/rules:
+    - Hook stamps/dh_install-l10n to override_dh_install-indep rather than
+      binary-indep.
+    - Pass make job server down through dh_auto_build.
+  * debian/rules, debian/dh: Wrap dh to ensure debian/rules is invoked with
+    parallelism.
+
+ -- Mike Hommey <glandium@debian.org>  Fri, 19 Jul 2019 07:53:19 +0900
+
 firefox (68.0-3) unstable; urgency=medium
 
   * debian/browser.README.Debian.in: Fix a reference to iceweasel in
