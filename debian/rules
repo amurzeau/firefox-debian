@@ -81,6 +81,9 @@ MOZ_APP_REMOTINGNAME := $(call uc_first,$($(PRODUCT)))
 LIB_DIR := /usr/lib/$($(PRODUCT))
 SHARE_DIR := /usr/share/$($(PRODUCT))
 
+# Work around https://github.com/rust-lang/cargo/issues/7147
+export CARGO_HOME=$(CURDIR)/debian/.cargo
+
 LDFLAGS += -Wl,--as-needed
 # Make the linker generate compressed debug sections. dh_strip would do
 # the same anyways, but it allows elfhack to work in combination with
@@ -283,7 +286,7 @@ endif
 override_dh_auto_clean::
 	rm -f $(filter-out debian/control,$(GENERATED_FILES))
 	rm -f $$(cat debian/extra-clean 2>/dev/null) debian/extra-clean old-configure js/src/old-configure
-	rm -rf stamps l10n
+	rm -rf stamps l10n $(CARGO_HOME)
 	debian/rules debian/control TESTDIR=
 
 ifeq ($(DEB_HOST_ARCH_ENDIAN),big)
