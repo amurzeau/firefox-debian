@@ -88,12 +88,12 @@ jobs:
     - name: ship-geckoview
       job:
           type: decision-task
-          treeherder-symbol: ship_geckoview_release
-          target-tasks-method: ship_geckoview_release
+          treeherder-symbol: ship_geckoview_beta
+          target-tasks-method: ship_geckoview_beta
           include-push-tasks: true
-          android-release-type: release
+          android-release-type: beta
       run-on-projects:
-          - mozilla-release
+          - mozilla-beta
       when: []    # never (hook only)
 
 
@@ -164,21 +164,10 @@ jobs:
           - mozilla-beta
           - mozilla-release
           - mozilla-esr60
+          - mozilla-esr68
       when:
-          by-project:
-              # No default branch
-              mozilla-central:
-                  - {weekday: 'Monday', hour: 10, minute: 0}
-                  - {weekday: 'Thursday', hour: 10, minute: 0}
-              mozilla-beta:
-                  - {weekday: 'Monday', hour: 10, minute: 0}
-                  - {weekday: 'Thursday', hour: 10, minute: 0}
-              mozilla-release:
-                  - {weekday: 'Monday', hour: 10, minute: 0}
-                  - {weekday: 'Thursday', hour: 10, minute: 0}
-              mozilla-esr60:
-                  - {weekday: 'Monday', hour: 10, minute: 0}
-                  - {weekday: 'Thursday', hour: 10, minute: 0}
+          - {weekday: 'Monday', hour: 10, minute: 0}
+          - {weekday: 'Thursday', hour: 10, minute: 0}
 
     - name: pipfile-update
       job:
