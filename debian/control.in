@@ -80,6 +80,9 @@ Build-Depends: autotools-dev,
 Build-Conflicts: graphicsmagick-imagemagick-compat,
                  liboss4-salsa-dev,
                  libhildonmime-dev,
+%if USE_SYSTEM_VPX
+                 libvpx-dev (>= 1.8.0),
+%endif
                  libosso-dev
 Standards-Version: 3.9.8.0
 Vcs-Git: https://salsa.debian.org/mozilla-team/firefox.git -b @SHORT_SOURCE_CHANNEL@/master
