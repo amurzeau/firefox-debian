@@ -7,7 +7,7 @@ Subject: Set javascript.options.showInConsole
  1 file changed, 1 insertion(+)
 
 diff --git a/modules/libpref/init/all.js b/modules/libpref/init/all.js
-index 5703ffd8f416..c7b245b50c16 100644
+index d4cf92869340..48027a634e73 100644
 --- a/modules/libpref/init/all.js
 +++ b/modules/libpref/init/all.js
 @@ -1434,6 +1434,7 @@ pref("javascript.options.ion.threshold",    1000);
