@@ -76,7 +76,7 @@ $(call uc,$(PRODUCT)) := $(call uc,$(DISPLAY_NAME))
 Product := $(call uc_first,$(PRODUCT))
 $(Product) := $(DISPLAY_NAME)
 
-MOZ_APP_REMOTINGNAME := $(call uc_first,$($(PRODUCT)))
+export MOZ_APP_REMOTINGNAME := $(call uc_first,$($(PRODUCT)))
 
 LIB_DIR := /usr/lib/$($(PRODUCT))
 SHARE_DIR := /usr/share/$($(PRODUCT))
@@ -247,7 +247,6 @@ endif
 	$(CURDIR)/configure \
 		$(COMMON_CONFIGURE_FLAGS) \
 		$(CONFIGURE_FLAGS)
-	sed -i "/MOZ_APP_REMOTINGNAME/s/'[^']*',/'$(MOZ_APP_REMOTINGNAME)',/" build-$(PRODUCT)/config.status
 
 stamps/build-$(PRODUCT):: stamps/configure-check-$(PRODUCT)
 	+dh_auto_build --parallel --builddirectory=build-$(PRODUCT) -- \
