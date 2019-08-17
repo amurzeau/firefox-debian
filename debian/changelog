@@ -1,3 +1,11 @@
+firefox (68.0.2-2) unstable; urgency=medium
+
+  * debian/rules: Fix MOZ_APP_REMOTINGNAME. Upstream build system changes
+    made the config.status editing trick stop working. Export the variable for
+    configure to pick it instead. Closes: #932256
+
+ -- Mike Hommey <glandium@debian.org>  Sun, 18 Aug 2019 08:41:43 +0900
+
 firefox (68.0.2-1) unstable; urgency=medium
 
   * New upstream release.
