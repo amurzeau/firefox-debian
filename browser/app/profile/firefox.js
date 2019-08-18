@@ -996,7 +996,7 @@ pref("security.certerrors.recordEventTelemetry", true);
 pref("security.certerrors.permanentOverride", true);
 pref("security.certerrors.mitm.priming.enabled", true);
 pref("security.certerrors.mitm.priming.endpoint", "https://mitmdetection.services.mozilla.com/");
-pref("security.certerrors.mitm.auto_enable_enterprise_roots", true);
+pref("security.certerrors.mitm.auto_enable_enterprise_roots", false);
 
 // Whether to start the private browsing mode at application startup
 pref("browser.privatebrowsing.autostart", false);
@@ -1707,10 +1707,9 @@ pref("reader.errors.includeURLs", true);
 
 pref("view_source.tab", true);
 
-pref("dom.serviceWorkers.enabled", true);
-
-// Enable Push API.
-pref("dom.push.enabled", true);
+// SW + Push intentionally disabled on ESR per bug 1557565
+pref("dom.serviceWorkers.enabled", false);
+pref("dom.push.enabled", false);
 
 // These are the thumbnail width/height set in about:newtab.
 // If you change this, ENSURE IT IS THE SAME SIZE SET

@@ -7,7 +7,7 @@ Subject: Don't auto-disable extensions in system directories
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/browser/app/profile/firefox.js b/browser/app/profile/firefox.js
-index dd570566c913..1c754fd3a5b8 100644
+index 217b4bebd020..c86448b3a40d 100644
 --- a/browser/app/profile/firefox.js
 +++ b/browser/app/profile/firefox.js
 @@ -62,7 +62,7 @@ pref("extensions.systemAddon.update.enabled", true);
