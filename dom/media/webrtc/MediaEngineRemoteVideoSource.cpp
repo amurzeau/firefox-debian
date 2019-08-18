@@ -104,7 +104,7 @@ dom::MediaSourceEnum MediaEngineRemoteVideoSource::GetMediaSource() const {
 }
 
 void MediaEngineRemoteVideoSource::Init() {
-  LOG(__PRETTY_FUNCTION__);
+  LOG("%s", __PRETTY_FUNCTION__);
   AssertIsOnOwningThread();
 
   char deviceName[kMaxDeviceNameLength];
@@ -125,7 +125,7 @@ void MediaEngineRemoteVideoSource::Init() {
 }
 
 void MediaEngineRemoteVideoSource::Shutdown() {
-  LOG(__PRETTY_FUNCTION__);
+  LOG("%s", __PRETTY_FUNCTION__);
   AssertIsOnOwningThread();
 
   if (!mInitDone) {
@@ -145,7 +145,7 @@ void MediaEngineRemoteVideoSource::Shutdown() {
 }
 
 void MediaEngineRemoteVideoSource::SetName(nsString aName) {
-  LOG(__PRETTY_FUNCTION__);
+  LOG("%s", __PRETTY_FUNCTION__);
   AssertIsOnOwningThread();
 
   mDeviceName = std::move(aName);
@@ -209,7 +209,7 @@ nsresult MediaEngineRemoteVideoSource::Allocate(
     const nsString& aDeviceId,
     const mozilla::ipc::PrincipalInfo& aPrincipalInfo,
     const char** aOutBadConstraint) {
-  LOG(__PRETTY_FUNCTION__);
+  LOG("%s", __PRETTY_FUNCTION__);
   AssertIsOnOwningThread();
 
   MOZ_ASSERT(mState == kReleased);
@@ -247,7 +247,7 @@ nsresult MediaEngineRemoteVideoSource::Allocate(
 }
 
 nsresult MediaEngineRemoteVideoSource::Deallocate() {
-  LOG(__PRETTY_FUNCTION__);
+  LOG("%s", __PRETTY_FUNCTION__);
   AssertIsOnOwningThread();
 
   MOZ_ASSERT(mState == kStopped || mState == kAllocated);
@@ -283,7 +283,7 @@ nsresult MediaEngineRemoteVideoSource::Deallocate() {
 void MediaEngineRemoteVideoSource::SetTrack(
     const RefPtr<SourceMediaStream>& aStream, TrackID aTrackID,
     const PrincipalHandle& aPrincipal) {
-  LOG(__PRETTY_FUNCTION__);
+  LOG("%s", __PRETTY_FUNCTION__);
   AssertIsOnOwningThread();
 
   MOZ_ASSERT(mState == kAllocated);
@@ -308,7 +308,7 @@ void MediaEngineRemoteVideoSource::SetTrack(
 }
 
 nsresult MediaEngineRemoteVideoSource::Start() {
-  LOG(__PRETTY_FUNCTION__);
+  LOG("%s", __PRETTY_FUNCTION__);
   AssertIsOnOwningThread();
 
   MOZ_ASSERT(mState == kAllocated || mState == kStopped);
@@ -361,7 +361,7 @@ nsresult MediaEngineRemoteVideoSource::Start() {
 }
 
 nsresult MediaEngineRemoteVideoSource::FocusOnSelectedSource() {
-  LOG(__PRETTY_FUNCTION__);
+  LOG("%s", __PRETTY_FUNCTION__);
   AssertIsOnOwningThread();
 
   int result;
@@ -371,7 +371,7 @@ nsresult MediaEngineRemoteVideoSource::FocusOnSelectedSource() {
 }
 
 nsresult MediaEngineRemoteVideoSource::Stop() {
-  LOG(__PRETTY_FUNCTION__);
+  LOG("%s", __PRETTY_FUNCTION__);
   AssertIsOnOwningThread();
 
   if (mState == kStopped || mState == kAllocated) {
@@ -397,7 +397,7 @@ nsresult MediaEngineRemoteVideoSource::Stop() {
 nsresult MediaEngineRemoteVideoSource::Reconfigure(
     const MediaTrackConstraints& aConstraints, const MediaEnginePrefs& aPrefs,
     const nsString& aDeviceId, const char** aOutBadConstraint) {
-  LOG(__PRETTY_FUNCTION__);
+  LOG("%s", __PRETTY_FUNCTION__);
   AssertIsOnOwningThread();
 
   MOZ_ASSERT(mInitDone);
@@ -778,7 +778,7 @@ bool MediaEngineRemoteVideoSource::ChooseCapability(
     const NormalizedConstraints& aConstraints, const MediaEnginePrefs& aPrefs,
     const nsString& aDeviceId, webrtc::CaptureCapability& aCapability,
     const DistanceCalculation aCalculate) {
-  LOG(__PRETTY_FUNCTION__);
+  LOG("%s", __PRETTY_FUNCTION__);
   AssertIsOnOwningThread();
 
   if (MOZ_LOG_TEST(gMediaManagerLog, LogLevel::Debug)) {
@@ -944,7 +944,7 @@ void MediaEngineRemoteVideoSource::GetSettings(
 }
 
 void MediaEngineRemoteVideoSource::Refresh(int aIndex) {
-  LOG(__PRETTY_FUNCTION__);
+  LOG("%s", __PRETTY_FUNCTION__);
   AssertIsOnOwningThread();
 
   // NOTE: mCaptureIndex might have changed when allocated!
