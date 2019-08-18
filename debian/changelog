@@ -1,3 +1,9 @@
+firefox-esr (68.0.2esr-1) unstable; urgency=medium
+
+  * New upstream ESR release.
+
+ -- Mike Hommey <glandium@debian.org>  Sun, 18 Aug 2019 22:27:52 +0900
+
 firefox (68.0.2-3) unstable; urgency=medium
 
   * debian/control.in: Take source package name from preprocessing.
