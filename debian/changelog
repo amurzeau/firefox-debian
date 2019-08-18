@@ -1,3 +1,18 @@
+firefox (68.0.2-3) unstable; urgency=medium
+
+  * debian/control.in: Take source package name from preprocessing.
+
+  * build/moz.configure/old.configure: Avoid race condition creating
+    old-configure. bz#1574761.
+  * dom/media/systemservices/CamerasChild.cpp,
+    dom/media/systemservices/CamerasParent.cpp,
+    dom/media/systemservices/VideoEngine.cpp,
+    dom/media/webrtc/MediaEngineRemoteVideoSource.cpp: Don't use
+    __PRETTY_FUNCTION__ or __FUNCTION__ as format strings. bz#1531309.
+    Closes: #925680.
+
+ -- Mike Hommey <glandium@debian.org>  Sun, 18 Aug 2019 20:47:26 +0900
+
 firefox (68.0.2-2) unstable; urgency=medium
 
   * debian/rules: Fix MOZ_APP_REMOTINGNAME. Upstream build system changes
