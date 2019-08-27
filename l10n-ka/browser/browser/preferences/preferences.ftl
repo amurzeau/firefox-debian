@@ -29,11 +29,6 @@ search-input-box =
             [windows] პარამეტრებში ძიება
            *[other] პარამეტრებში ძიება
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] თქვენს დაწესებულებას შეზღუდული აქვს გარკვეული პარამეტრების შეცვლის შესაძლებლობა.
-       *[other] თქვენს დაწესებულებას შეზღუდული აქვს გარკვეული პარამეტრების შეცვლის შესაძლებლობა.
-    }
 managed-notice = თქვენი ბრაუზერი იმართება დაწესებულების მიერ.
 pane-general-title = მთავარი
 category-general =
@@ -110,8 +105,8 @@ search-results-header = ძიების შედეგები
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message =
     { PLATFORM() ->
-        [windows] ვწუხვართ! შედეგები „<span data-l10n-name="query"></span>“ ფრაზისთვის ვერ მოიძებნა.
-       *[other] ვწუხვართ! შედეგები „<span data-l10n-name="query"></span>“ ფრაზისთვის ვერ მოიძებნა.
+        [windows] ვწუხვართ! შედეგები ფრაზისთვის „<span data-l10n-name="query"></span>“ ვერ მოიძებნა.
+       *[other] ვწუხვართ! შედეგები ფრაზისთვის „<span data-l10n-name="query"></span>“ ვერ მოიძებნა.
     }
 search-results-help-link = გესაჭიროებათ დახმარება? ეწვიეთ <a data-l10n-name="url">{ -brand-short-name } მხარდაჭერის გვერდს</a>
 
@@ -123,8 +118,8 @@ startup-header = ჩართვისას
 separate-profile-mode =
     .label = ნებართვა, რომ { -brand-short-name } და Firefox გაეშვას ერთდროულად
 use-firefox-sync = რჩევა: ეს სხვადასხვა პროფილებს იყენებს. მათ შორის მონაცემების გასაზიარებლად { -sync-brand-short-name } გამოიყენეთ.
-get-started-not-logged-in = { -sync-brand-short-name }-ში შესვლა…
-get-started-configured = { -sync-brand-short-name }-პარამეტრების გახსნა
+get-started-not-logged-in = შედით { -sync-brand-short-name }ში…
+get-started-configured = { -sync-brand-short-name(case: "gen") } პარამეტრების გახსნა
 always-check-default =
     .label = ყოველთვის შემოწმდეს, არის თუ არა { -brand-short-name } ნაგულისხმევი ბრაუზერი
     .accesskey = ვ
@@ -398,6 +393,49 @@ choose-bookmark =
     .label = სანიშნის გამოყენება…
     .accesskey = ს
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Firefox საწყისი გვერდი
+home-prefs-content-description = აირჩიეთ, თუ რისი გამოჩენა გსურთ Firefox-ის საწყის გვერდზე.
+home-prefs-content-discovery-description = შიგთავსის მოძიება Firefox-ის მთავარ გვერდზე, საშუალებას გაძლევთ აღმოაჩინოთ მაღალი ხარისხის, გამოსადეგი სტატიები მთელ ინტერნეტში.
+home-prefs-search-header =
+    .label = საძიებო ველი
+home-prefs-topsites-header =
+    .label = რჩეული საიტები
+home-prefs-topsites-description = ხშირად მონახულებული საიტები
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = { $provider } გირჩევთ
+home-prefs-recommended-by-description = მნიშვნელოვანი ამბები ინტერნეტ-სამყაროდან, შერჩეული თქვენი ინტერესების მიხედვით
+home-prefs-recommended-by-learn-more = როგორ მუშაობს
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = დაფინანსებული სტატიები
+home-prefs-highlights-header =
+    .label = მნიშვნელოვანი საიტები
+home-prefs-highlights-description = თქვენ მიერ შენახული ან ბოლოს მონახულებული საიტები
+home-prefs-highlights-option-visited-pages =
+    .label = მონახულებული გვერდები
+home-prefs-highlights-options-bookmarks =
+    .label = სანიშნები
+home-prefs-highlights-option-most-recent-download =
+    .label = ბოლო ჩამოტვირთვები
+home-prefs-highlights-option-saved-to-pocket =
+    .label = { -pocket-brand-name }-ში შენახული გვერდები
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = ცნობები
+home-prefs-snippets-description = სიახლეები { -vendor-short-name }-სა და { -brand-product-name }-ისგან
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } რიგად
+           *[other] { $num } რიგად
+        }
+
 ## Search Section
 
 search-bar-header = ძიების ველი
@@ -472,7 +510,7 @@ sync-signedout-account-signin =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = ჩამოტვირთეთ Firefox <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android-ისთვის</a> ან <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS-ისთვის</a> თქვენს მობილურ მოწყობილობასთან სინქრონიზაციისთვის.
+sync-mobile-promo = Firefox ჩამოტვირთეთ <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android-ისთვის</a> ან <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS-ისთვის</a> თქვენს მობილურ მოწყობილობასთან სინქრონიზაციისთვის.
 
 ## Sync Section - Signed in
 
@@ -562,6 +600,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = ძლიერი პაროლების შემოთავაზება და შედგენა
     .accesskey = ზ
+forms-fill-logins-and-passwords =
+    .label = ანგარიშის მონაცემების თვითშევსება
+    .accesskey = ა
 forms-saved-logins =
     .label = შენახული შესვლები…
     .accesskey = შ
@@ -637,11 +678,15 @@ sitedata-disallow-cookies-option =
 sitedata-block-desc = შეზღუდული შიგთავსი
     .accesskey = გ
 sitedata-option-block-trackers =
-    .label = მესამე მხარის მეთვალყურეები
+    .label = გარეშე მეთვალყურეები
+sitedata-option-block-cross-site-trackers =
+    .label = საიტთაშორისი მეთვალყურეები
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = საიტთაშორისი და სოციალური ქსელის მეთვალყურეები
 sitedata-option-block-unvisited =
     .label = ფუნთუშები მოუნახულებელი საიტებიდან
 sitedata-option-block-all-third-party =
-    .label = ყველა მესამე მხარის ფუნთუშა (შეიძლება გამოიწვიოს საიტების გაუმართაობა)
+    .label = ყველა გარეშე ფუნთუშა (შეიძლება დააზიანოს საიტები)
 sitedata-option-block-all =
     .label = ყველა ფუნთუშა (გამოიწვევს საიტების გაუმართაობას)
 sitedata-clear =
@@ -672,7 +717,7 @@ addressbar-suggestions-settings = საძიებო სისტემის
 ## Privacy Section - Content Blocking
 
 content-blocking-header = შიგთავსის შეზღუდვა
-content-blocking-description = შეზღუდეთ მესამე მხარის შიგთავსი, რომელიც მთელ ინტერნეტში გადევნებთ თვალს. თავად განსაზღვრეთ, თქვენი მოქმედებების რა ნაწილი შეიძლება იყოს შენახული ან გაზიარებული საიტებს შორის.
+content-blocking-enhanced-tracking-protection = თვალთვალისგან გაძლიერებული დაცვა
 content-blocking-section-description = დაიცავით პირადი მონაცემები საიტების მონახულებისას. შეზღუდეთ გვერდებზე ფარული ნაწილები, რომლებიც თვალს ადევნებს და აღრიცხავს ყველა საიტს, რომელსაც ეწვევით. ზოგიერთი მათგანის შეზღუდვა, აგრეთვე ასწრაფებს გვერდების ჩატვირთვასაც.
 content-blocking-learn-more = იხილეთ ვრცლად
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -686,28 +731,38 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = მორგებული
     .accesskey = გ
-content-blocking-standard-description = ცნობილ მეთვალყურეებს შეზღუდავს მხოლოდ პირად ფანჯრებში.
 content-blocking-standard-desc = წონასწორული მდგომარეობა უსაფრთხოებასა და წარმადობას შორის. მეთვალყურეების ნაწილი დაშვებულია, საიტების გამართულად მუშაობისთვის.
-content-blocking-strict-desc = ზღუდავს ყველა მეთვალყურეს, რომელსაც { -brand-short-name } აღმოაჩენს. საიტების ნაწილმა, შესაძლოა ვერ იმუშაოს გამართულად.
 content-blocking-strict-description = გაძლიერებული დაცვა, მეტ ხარვეზს წარმოშობს საიტზე.
 content-blocking-custom-desc = შესაზღუდი შიგთავსის შერჩევა.
 content-blocking-private-trackers = ცნობილი მეთვალყურეები მხოლოდ პირად ფანჯრებში.
-content-blocking-third-party-cookies = მესამე მხარის მეთვალყურეების ფუნთუშები
+content-blocking-third-party-cookies = გარეშე მეთვალყურეების ფუნთუშები
+content-blocking-etp-standard-desc = წონასწორული უსაფრთხოებასა და წარმადობას შორის. გვერდები ჩაიტვირთება ჩვეულებრივ.
+content-blocking-etp-strict-desc = მძლავრი დაცვა, თუმცა გამოიწვევს საიტების ან შიგთავსის ნაწილის გაუმართაობას.
+content-blocking-etp-custom-desc = აირჩიეთ, რომელი მეთვალყურე საშუალებები შეიზღუდოს
+content-blocking-private-windows = მეთვალყურე შიგთავსი პირად ფანჯრებში
+content-blocking-cross-site-tracking-cookies = საიტთაშორისი მეთვალყურე ფუნთუშები
+content-blocking-social-media-trackers = სოციალური ქსელის მეთვალყურეები
 content-blocking-all-cookies = ყველა ფუნთუშა
 content-blocking-unvisited-cookies = ფუნთუშები, მოუნახულებელი საიტებიდან
 content-blocking-all-windows-trackers = ცნობილი მეთვალყურეები ყველა ფანჯარაში
-content-blocking-all-third-party-cookies = მესამე მხარის ყველა ფუნთუშა
+content-blocking-all-windows-tracking-content = მეთვალყურე შიგთავსი ყველა ფანჯარაში
+content-blocking-all-third-party-cookies = ყველა გარეშე ფუნთუშა
 content-blocking-cryptominers = კრიპტოვალუტის გამომმუშავებელი
 content-blocking-fingerprinters = მომხმარებლის ამომცნობი
 content-blocking-warning-title = ფრთხილად!
 content-blocking-warning-description = შიგთავსის შეზღუდვის შედეგად, საიტების ნაწილმა შესაძლოა ვერ იმუშაოს გამართულად. სანდო საიტებზე, მარტივად შეგეძლებათ შეზღუდვის გათიშვა.
 content-blocking-learn-how = იხილეთ ვრცლად
+content-blocking-etp-warning-description = მეთვალყურეების შეზღუდვით, შესაძლოა დაზიანდეს ზოგიერთი საიტის შესაძლებლობები. შიგთავსის სრულად სანახავად, ხელახლა გახსენით გვერდი დაშვებული მეთვალყურეებით.
+content-blocking-warning-learn-how = იხილეთ როგორ
 content-blocking-reload-description = საჭიროა ჩანართების ხელახლა გახსნა ცვლილებების ასახვისთვის.
 content-blocking-reload-tabs-button =
     .label = ყველა ჩანართის ხელახლა გახსნა
     .accesskey = ხ
 content-blocking-trackers-label =
     .label = მეთვალყურეები
+    .accesskey = თ
+content-blocking-tracking-content-label =
+    .label = მეთვალყურე შიგთავსი
     .accesskey = თ
 content-blocking-tracking-protection-option-all-windows =
     .label = ყველა ფანჯარაში

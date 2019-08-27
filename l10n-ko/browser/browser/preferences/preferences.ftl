@@ -29,11 +29,6 @@ search-input-box =
             [windows] 옵션에서 찾기
            *[other] 설정에서 찾기
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] 속한 회사나 단체에서 몇몇 옵션을 바꿀 수 없게 하였습니다.
-       *[other] 속한 회사나 단체에서 몇몇 설정을 바꿀 수 없게 하였습니다.
-    }
 managed-notice = 속한 회사나 단체에서 브라우저를 관리하고 있습니다.
 pane-general-title = 일반
 category-general =
@@ -386,6 +381,45 @@ choose-bookmark =
     .label = 북마크 사용…
     .accesskey = B
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Firefox 홈 콘텐츠
+home-prefs-content-description = Firefox 홈 화면에 나올 콘텐츠를 선택하세요.
+home-prefs-content-discovery-description = Firefox 홈의 콘텐츠 탐색 기능을 사용하면 웹에 있는 고품질의 관련 문서를 탐색할 수 있습니다.
+home-prefs-search-header =
+    .label = 웹 검색
+home-prefs-topsites-header =
+    .label = 상위 사이트
+home-prefs-topsites-description = 가장 많이 방문한 사이트
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = { $provider } 추천
+home-prefs-recommended-by-description = 여러분에게 맞춰진 웹에서 제공되는 훌륭한 컨텐츠
+home-prefs-recommended-by-learn-more = 사용 방법
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = 후원된 스토리
+home-prefs-highlights-header =
+    .label = 하이라이트
+home-prefs-highlights-description = 저장하거나 방문한 사이트 모음
+home-prefs-highlights-option-visited-pages =
+    .label = 방문한 페이지
+home-prefs-highlights-options-bookmarks =
+    .label = 즐겨찾기
+home-prefs-highlights-option-most-recent-download =
+    .label = 가장 최근 다운로드
+home-prefs-highlights-option-saved-to-pocket =
+    .label = { -pocket-brand-name }에 저장된 페이지
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = 짧은 요약
+home-prefs-snippets-description = { -vendor-short-name }와 { -brand-product-name } 소식
+home-prefs-sections-rows-option =
+    .label = { $num } 행
+
 ## Search Section
 
 search-bar-header = 검색 표시줄
@@ -550,6 +584,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = 강력한 암호 제안 및 생성
     .accesskey = u
+forms-fill-logins-and-passwords =
+    .label = 로그인과 비밀번호 자동완성
+    .accesskey = i
 forms-saved-logins =
     .label = 저장된 로그인…
     .accesskey = L
@@ -626,6 +663,10 @@ sitedata-block-desc = 차단 유형
     .accesskey = T
 sitedata-option-block-trackers =
     .label = 제3자 추적기
+sitedata-option-block-cross-site-trackers =
+    .label = 교차 사이트 추적기
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = 교차 사이트 및 소셜 미디어 추적기
 sitedata-option-block-unvisited =
     .label = 방문하지 않은 웹 사이트의 쿠키
 sitedata-option-block-all-third-party =
@@ -660,7 +701,7 @@ addressbar-suggestions-settings = 검색 엔진 추천 설정 변경
 ## Privacy Section - Content Blocking
 
 content-blocking-header = 콘텐츠 차단
-content-blocking-description = 사용자의 웹 활동을 추적하는 제3차 콘텐츠를 차단합니다. 웹사이트 간에 사용자의 온라인 활동이 얼마나 저장되고 공유되는지를 제어하세요.
+content-blocking-enhanced-tracking-protection = 향상된 추적 방지 기능
 content-blocking-section-description = 탐색하는 동안 개인 정보를 보호하십시오. 사용자가 방문하는 사이트를 추적하고 개인을 식별하는 보이지 않는 콘텐츠를 차단합니다. 이 콘텐츠 중 일부를 차단하면 페이지가 더 빨리 로드 될 수 있습니다.
 content-blocking-learn-more = 자세히 보기
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -674,28 +715,38 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = 사용자 지정
     .accesskey = C
-content-blocking-standard-description = 사생활 보호 창에서 알려진 추적기만 차단합니다.
 content-blocking-standard-desc = 보호와 성능 사이의 균형을 유지합니다. 웹 사이트가 제대로 작동하도록 일부 추적기를 허용합니다.
-content-blocking-strict-desc = { -brand-short-name }가 감지하는 모든 추적기를 차단합니다. 일부 사이트가 정상 작동하지 않을 수 있습니다.
 content-blocking-strict-description = 강한 보호 기능으로 인해 일부 사이트가 손상될 수 있습니다.
 content-blocking-custom-desc = 차단할 항목을 선택하세요.
 content-blocking-private-trackers = 사생활 보호 모드에서 알려진 추적기만
 content-blocking-third-party-cookies = 제3자 추적 쿠키
+content-blocking-etp-standard-desc = 보호와 성능사이의 균형이 잡혀 있습니다. 페이지가 정상적으로 로드됩니다.
+content-blocking-etp-strict-desc = 더 강력한 보호 기능을 제공하지만, 일부 사이트나 콘텐츠가 손상될 수 있습니다.
+content-blocking-etp-custom-desc = 차단할 추적기와 스크립트를 선택하십시오.
+content-blocking-private-windows = 사생활 보호 창의 추적 콘텐츠
+content-blocking-cross-site-tracking-cookies = 교차 사이트 추적 쿠키
+content-blocking-social-media-trackers = 소셜 미디어 추적기
 content-blocking-all-cookies = 모든 쿠키
 content-blocking-unvisited-cookies = 방문하지 않은 사이트의 쿠키
 content-blocking-all-windows-trackers = 알려진 추적기를 모든 창에서
+content-blocking-all-windows-tracking-content = 모든 창의 추적 콘텐츠
 content-blocking-all-third-party-cookies = 모든 제3자 쿠키
 content-blocking-cryptominers = 크립토마이너
 content-blocking-fingerprinters = 핑거프린터
 content-blocking-warning-title = 조심하세요!
 content-blocking-warning-description = 콘텐츠를 차단하면 일부 웹사이트가 깨질 수 있습니다. 신뢰할 수 있는 사이트에 대한 차단은 쉽게 해제 할 수 있습니다.
 content-blocking-learn-how = 방법 알아보기
+content-blocking-etp-warning-description = 추적기 차단은 일부 사이트의 기능에 영향을 줄 수 있습니다. 모든 콘텐츠를 로드하려면 추적기가 있는 페이지를 다시 로드하십시오.
+content-blocking-warning-learn-how = 방법 알아보기
 content-blocking-reload-description = 이러한 변경 사항을 적용하려면 탭을 다시 로드해야 합니다.
 content-blocking-reload-tabs-button =
     .label = 모든 탭 다시 읽기
     .accesskey = R
 content-blocking-trackers-label =
     .label = 추적기
+    .accesskey = T
+content-blocking-tracking-content-label =
+    .label = 추적 콘텐츠
     .accesskey = T
 content-blocking-tracking-protection-option-all-windows =
     .label = 모든 창에서

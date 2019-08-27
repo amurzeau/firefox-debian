@@ -155,9 +155,6 @@ legacy-extensions-description = Nämä laajennukset eivät täytä { -brand-shor
 private-browsing-description2 =
     { -brand-short-name }-laajennusten toiminta yksityisissä ikkunoissa muuttuu. Uutena { -brand-short-name }iin lisättyjä laajennuksia ei enää suoriteta oletuksena yksityisissä ikkunoissa. Jos et salli suorittamista asetuksista, laajennus ei toimi yksityisen selaamisen aikana eikä siten sinä aikana pääse käsiksi tekemisiisi verkossa. Olemme tehneet tämän muutoksen, jotta yksityinen selaus pysyy yksityisenä.
     <label data-l10n-name="private-browsing-learn-more">Lue lisää kuinka hallita laajennusten asetuksia</label>
-extensions-view-discover =
-    .name = Lataa lisäosia
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-discopane =
     .name = Suositukset
     .tooltiptext = { extensions-view-discopane.name }
@@ -253,6 +250,12 @@ shortcuts-modifier-other = Paina Ctrl- tai Alt-näppäintä
 shortcuts-invalid = Virheellinen yhdistelmä
 shortcuts-letter = Kirjoita kirjain
 shortcuts-system = { -brand-short-name }-pikanäppäintä ei voi korvata
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Päällekkäinen pikanäppäin
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } on käytössä pikanäppäimenä enemmän kuin yhdessä tapauksessa. Päällekkäiset pikanäppäimet saattavat aiheuttaa odottamatonta käytöstä.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -311,6 +314,16 @@ release-notes-addon-button = Julkaisutiedot
 permissions-addon-button = Oikeudet
 addons-enabled-heading = Käytössä
 addons-disabled-heading = Ei käytössä
+extension-enabled-heading = Käytössä
+extension-disabled-heading = Ei käytössä
+theme-enabled-heading = Käytössä
+theme-disabled-heading = Ei käytössä
+plugin-enabled-heading = Käytössä
+plugin-disabled-heading = Ei käytössä
+dictionary-enabled-heading = Käytössä
+dictionary-disabled-heading = Ei käytössä
+locale-enabled-heading = Käytössä
+locale-disabled-heading = Ei käytössä
 ask-to-activate-button = Kysy aktivointia
 always-activate-button = Aktivoi aina
 never-activate-button = Älä koskaan aktivoi

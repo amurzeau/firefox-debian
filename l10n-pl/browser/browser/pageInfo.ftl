@@ -3,19 +3,21 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/. --
 
 page-info-window =
-    .style = width: 650px; min-height: 525px;
+    .style = width: 700px; min-height: 650px;
 copy =
     .key = C
 menu-copy =
     .label = Kopiuj
     .accesskey = K
 select-all =
-    .key = a
+    .key = A
 menu-select-all =
     .label = Zaznacz wszystko
     .accesskey = a
 close-window =
-    .key = a
+    .key = A
+close-dialog =
+    .key = w
 general-tab =
     .label = Ogólne
     .accesskey = O

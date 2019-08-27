@@ -28,7 +28,7 @@ containers-name-label = Nome
 containers-name-text =
     .placeholder = Digite um nome para o contêiner
 containers-icon-label = Ícone
-    .accesskey = I
+    .accesskey = Í
     .style = { -containers-labels-style }
 containers-color-label = Cor
     .accesskey = o
@@ -59,7 +59,7 @@ containers-icon-fence =
 containers-icon-fingerprint =
     .label = Impressão digital
 containers-icon-briefcase =
-    .label = Porta-arquivos
+    .label = Maleta
 # String represents a money sign but currently uses a dollar sign
 # so don't change to local currency. See Bug 1291672.
 containers-icon-dollar =

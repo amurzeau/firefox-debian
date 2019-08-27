@@ -29,11 +29,6 @@ search-input-box =
             [windows] Знайсці ў наладах
            *[other] Знайсці ў перавагах
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Ваша арганізацыя выключыла магчымасць змяняць некаторыя налады.
-       *[other] Ваша арганізацыя выключыла магчымасць змяняць некаторыя налады.
-    }
 managed-notice = Вашым браўзерам кіруе ваша арганізацыя.
 pane-general-title = Агульныя
 category-general =
@@ -401,6 +396,50 @@ choose-bookmark =
     .label = Ужыць закладку…
     .accesskey = з
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Хатні экран Firefox
+home-prefs-content-description = Выберыце пажаданае змесціва для хатняга экрана Firefox.
+home-prefs-content-discovery-description = Выяўленне змесціва на хатняй старонцы Firefox дазволіць вам знаходзіць высакаякасныя рэлевантныя артыкулы з усяго сеціва.
+home-prefs-search-header =
+    .label = Пошук у сеціве
+home-prefs-topsites-header =
+    .label = Папулярныя сайты
+home-prefs-topsites-description = Сайты, якія вы наведваеце найчасцей
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Рэкамендавана { $provider }
+home-prefs-recommended-by-description = Выдатнае змесціва з усяго інтэрнэту, выбранае спецыяльна для вас
+home-prefs-recommended-by-learn-more = Як гэта працуе
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Артыкулы ад спонсараў
+home-prefs-highlights-header =
+    .label = Выбранае
+home-prefs-highlights-description = Выбраныя сайты, якія вы захавалі ці наведалі
+home-prefs-highlights-option-visited-pages =
+    .label = Наведаныя старонкі
+home-prefs-highlights-options-bookmarks =
+    .label = Закладкі
+home-prefs-highlights-option-most-recent-download =
+    .label = Нядаўнія сцягванні
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Захаваныя ў { -pocket-brand-name } старонкі
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Урыўкі
+home-prefs-snippets-description = Абнаўленні ад { -vendor-short-name } і { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } радок
+            [few] { $num } радкі
+           *[many] { $num } радкоў
+        }
+
 ## Search Section
 
 search-bar-header = Радок пошуку
@@ -547,7 +586,7 @@ sync-connect-another-device = Злучыць іншую прыладу
 sync-manage-devices = Кіраваць прыладамі
 sync-fxa-begin-pairing = Спараваць прыладу
 sync-tos-link = Умовы абслугоўвання
-sync-fxa-privacy-notice = Паведамленнем аб прыватнасці
+sync-fxa-privacy-notice = Паведамленне аб прыватнасці
 
 ## Privacy Section
 
@@ -565,6 +604,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Прапаноўваць і генераваць надзейныя паролі
     .accesskey = г
+forms-fill-logins-and-passwords =
+    .label = Аўтаматычна запаўняць лагіны і паролі
+    .accesskey = ў
 forms-saved-logins =
     .label = Захаваныя лагіны…
     .accesskey = З
@@ -641,6 +683,10 @@ sitedata-block-desc = Тып заблакаванага
     .accesskey = Т
 sitedata-option-block-trackers =
     .label = Трэкеры трэцяга боку
+sitedata-option-block-cross-site-trackers =
+    .label = Міжсайтавыя трэкеры
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Трэкеры міжсайтавыя і сацыяльных сетак
 sitedata-option-block-unvisited =
     .label = Кукі з ненаведаных вэб-сайтаў
 sitedata-option-block-all-third-party =
@@ -675,7 +721,7 @@ addressbar-suggestions-settings = Змяніць налады для падка�
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Блакаванне змесціва
-content-blocking-description = Блакуйце змесціва трэцяга боку, якое асочвае вас па сеціве. Кантралюйце, што з вашай анлайн-актыўнасці захоўваецца і распаўсюджваецца паміж вэб-сайтамі.
+content-blocking-enhanced-tracking-protection = Узмоцненая ахова ад сачэння
 content-blocking-section-description = Ахоўвайце сваю прыватнасць у час аглядання. Блакуйце нябачнае змесціва, якое асочвае сайты, што вы наведваеце, і збірае ваш профіль. Блакаванне часткі гэтага змесціва можа паскорыць загрузку старонак.
 content-blocking-learn-more = Падрабязней
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -689,28 +735,38 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Адмыслова
     .accesskey = с
-content-blocking-standard-description = Блакуе толькі вядомыя трэкеры ў прыватных вокнах.
 content-blocking-standard-desc = Збалансаваная абарона і прадукцыйнасць. Дазваляе некаторыя трэкеры, таму сайты працуюць спраўна.
-content-blocking-strict-desc = Блакуе ўсе трэкеры, якія { -brand-short-name } заўважае. Можа парушыць працу некаторых сайтаў.
 content-blocking-strict-description = Больш моцная абарона, можа парушыць працу некаторых сайтаў.
 content-blocking-custom-desc = Выберыце, што блакаваць.
 content-blocking-private-trackers = Вядомыя трэкеры толькі ў прыватных вокнах
 content-blocking-third-party-cookies = Трэцебаковыя кукі сачэння
+content-blocking-etp-standard-desc = Збалансаваная ахова і прадукцыйнасць. Старонкі загружаюцца нармальна.
+content-blocking-etp-strict-desc = Больш моцная ахова, але можа прывесці да парушэння некаторых сайтаў ці змесціва.
+content-blocking-etp-custom-desc = Выберыце, якія трэкеры і скрыпты трэба заблакаваць.
+content-blocking-private-windows = Змест з элементамі сачэння ў прыватных вокнах
+content-blocking-cross-site-tracking-cookies = Кукі сачэння між сайтамі
+content-blocking-social-media-trackers = Трэкеры сацыяльных сетак
 content-blocking-all-cookies = Усе кукі
 content-blocking-unvisited-cookies = Кукі з ненаведаных сайтаў
 content-blocking-all-windows-trackers = Вядомыя трэкеры ва ўсіх вокнах
+content-blocking-all-windows-tracking-content = Элементы сачэння ва ўсіх вокнах
 content-blocking-all-third-party-cookies = Усе кукі трэцяга боку
 content-blocking-cryptominers = Майнеры крыптавалют
 content-blocking-fingerprinters = Збіральнікі адбіткаў пальцаў
 content-blocking-warning-title = Увага!
 content-blocking-warning-description = Блакаванне змесціва можа парушыць працу некаторых вэб-сайтаў. Адключыць блакаванне на сайтах, якім вы давяраеце, лёгка.
 content-blocking-learn-how = Даведацца, як
+content-blocking-etp-warning-description = Блакаванне трэкераў можа адбіцца на функцыянальнасці некаторых сайтаў. Абнавіце старонку з трэкерамі, каб загрузіць усё змесціва.
+content-blocking-warning-learn-how = Даведацца, як
 content-blocking-reload-description = Вам трэба будзе перазагрузіць свае карткі, каб прымяніць гэтыя змены.
 content-blocking-reload-tabs-button =
     .label = Перачытаць усе карткі
     .accesskey = к
 content-blocking-trackers-label =
     .label = Трэкеры
+    .accesskey = е
+content-blocking-tracking-content-label =
+    .label = Элементы сачэння
     .accesskey = е
 content-blocking-tracking-protection-option-all-windows =
     .label = Ва ўсіх вокнах

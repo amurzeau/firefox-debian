@@ -26,9 +26,29 @@ onboarding-join-form-body = Introdu adresa de e-mail ca să începi.
 onboarding-join-form-email =
     .placeholder = Introdu adresa de e-mail.
 onboarding-join-form-email-error = Este necesară o adresă de e-mail validă
-onboarding-join-form-legal = Prin continuare, ești de acord cu <a data-l10n-name="terms">Termenii de utilizare a serviciilor</a> și <a data-l10n-name="privacy">Declarația de confidențialitate</a>.
+onboarding-join-form-legal = Continuând, ești de acord cu <a data-l10n-name="terms">Termenii de utilizare a serviciilor</a> și <a data-l10n-name="privacy">Declarația de confidențialitate</a>.
 onboarding-join-form-continue = Continuă
 onboarding-start-browsing-button-label = Începe să navighezi
+onboarding-cards-dismiss =
+    .title = Înlătură
+    .aria-label = Înlătură
+
+## Firefox Sync modal dialog strings.
+
+onboarding-sync-welcome-header = Ia { -brand-product-name } cu tine
+onboarding-sync-welcome-content = Ia marcajele, istoricul, parolele și alte setări cu tine pe toate dispozitivele.
+onboarding-sync-welcome-learn-more-link = Află mai multe despre Conturi Firefox
+onboarding-sync-form-invalid-input = Necesită o adresă de e-mail validă
+onboarding-sync-legal-notice = Continuând, ești de acord cu <a data-l10n-name="terms">Termenii de utilizare a serviciului</a> și <a data-l10n-name="privacy">Declarație de confidențialitate</a>.
+onboarding-sync-form-input =
+    .placeholder = E-mail
+onboarding-sync-form-continue-button = Continuă
+onboarding-sync-form-skip-login-button = Omite acest pas
+
+## This is part of the line "Enter your email to continue to Firefox Sync"
+
+onboarding-sync-form-header = Introdu e-mailul tău
+onboarding-sync-form-sub-header = pentru a continua la { -sync-brand-name }.
 
 ## These are individual benefit messages shown with an image, title and
 ## description.
@@ -43,7 +63,7 @@ onboarding-benefit-privacy-title = Confidențialitate cu adevărat
 # Firefox Personal Data Promise is the way we honor your data in everything we
 # make and do. We take less data. We keep it safe. And we make sure that we are
 # transparent about how we use it."
-onboarding-benefit-privacy-text = Tot ce facem respectă promisiunea noastră privind datele cu caracter personal: Colectare mai puțină. Păstrare în siguranță. Fără secrete.
+onboarding-benefit-privacy-text = Ne ținem de promisiunea noastră privind datele cu caracter personal prin tot ceea ce facem: Luăm mai puține informații. Le păstrăm în siguranță. Fără secrete.
 
 ## These strings belong to the individual onboarding messages.
 

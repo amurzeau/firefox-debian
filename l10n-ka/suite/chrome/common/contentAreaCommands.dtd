@@ -7,7 +7,7 @@
 <!ENTITY popupWindowRejectCmd.accesskey "ა">
 <!ENTITY popupWindowAllowCmd.label      "ამ საიტიდან ამომხტომი ფანჯრების დაშვება">
 <!ENTITY popupWindowAllowCmd.accesskey  "დ">
-<!ENTITY openLinkCmdInTab.label       "ბმულის ახალ დაფაზე გახსნა">
+<!ENTITY openLinkCmdInTab.label       "ბმულის ახალ ჩანართზე გახსნა">
 <!ENTITY openLinkCmdInTab.accesskey   "გ">
 <!ENTITY openLinkCmd.label            "ბმულის ახალ სარკმლეში გახსნა">
 <!ENTITY openLinkCmd.accesskey        "რ">
@@ -17,7 +17,7 @@
 <!ENTITY openLinkInWindowCmd.accesskey "ხ">
 <!ENTITY openFrameCmd.label           "ჩარჩოს ახალ სარკმელში გახსნა">
 <!ENTITY openFrameCmd.accesskey       "ჩ">
-<!ENTITY openFrameCmdInTab.label      "ჩარჩოს ახალ დაფაზე გახსნა">
+<!ENTITY openFrameCmdInTab.label      "ჩარჩოს ახალ ჩანართზე გახსნა">
 <!ENTITY openFrameCmdInTab.accesskey  "რ">
 <!ENTITY keywordfield.label           "საკვანძო სიტყვის დამატება ამ ძიებაში…">
 <!ENTITY keywordfield.accesskey       "კ">
@@ -53,6 +53,8 @@
 <!ENTITY reloadImageCmd.accesskey     "გ">
 <!ENTITY viewImageCmd.label           "სურათის ნახვა">
 <!ENTITY viewImageCmd.accesskey       "ვ">
+<!ENTITY viewImageInfoCmd.label       "გამოსახულების მონაცემთა ჩვენება">
+<!ENTITY viewImageInfoCmd.accesskey   "ც">
 <!ENTITY viewVideoCmd.label           "ვიდეოს ნახვა">
 <!ENTITY viewVideoCmd.accesskey       "ვ">
 <!ENTITY viewBGImageCmd.label         "ფონური სურათის ნახვა">
@@ -103,10 +105,10 @@
 <!ENTITY mediaPause.label             "შეჩერება">
 <!ENTITY mediaPause.accesskey         "შ">
 <!ENTITY mediaMute.label              "დადუმება">
-<!ENTITY mediaMute.accesskey          "დ">
+<!ENTITY mediaMute.accesskey          "უ">
 <!ENTITY mediaUnmute.label            "ხმის ჩართვა">
 <!ENTITY mediaUnmute.accesskey        "ხ">
-<!ENTITY mediaPlaybackRate.label        "დაკრის სიჩქარე">
+<!ENTITY mediaPlaybackRate.label        "დაკვრის სიჩქარე">
 <!ENTITY mediaPlaybackRate.accesskey    "ჩ">
 <!ENTITY mediaPlaybackRate050.label     "შენელებული (½×)">
 <!ENTITY mediaPlaybackRate050.accesskey "შ">

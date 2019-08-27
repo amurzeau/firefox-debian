@@ -29,11 +29,6 @@ search-input-box =
             [windows] Tìm trong phần tùy chọn
            *[other] Tìm trong phần tùy chỉnh
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Tổ chức của bạn đã vô hiệu hóa khả năng thay đổi một số tùy chọn.
-       *[other] Tổ chức của bạn đã vô hiệu hóa khả năng thay đổi một số tùy chọn.
-    }
 managed-notice = Trình duyệt của bạn đang được quản lý bởi tổ chức của bạn.
 pane-general-title = Tổng quát
 category-general =
@@ -386,6 +381,45 @@ choose-bookmark =
     .label = Dùng trang đánh dấu…
     .accesskey = d
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Nội dung trang chủ của Firefox
+home-prefs-content-description = Chọn nội dung mà bạn muốn thêm vào trang chủ của Firefox.
+home-prefs-content-discovery-description = Khám phá nội dung trong trang chủ Firefox cho phép bạn khám phá các bài viết chất lượng cao, có liên quan trên web.
+home-prefs-search-header =
+    .label = Tìm kiếm web
+home-prefs-topsites-header =
+    .label = Các trang Web hàng đầu
+home-prefs-topsites-description = Những trang bạn truy cập nhiều nhất
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Được đề xuất bởi { $provider }
+home-prefs-recommended-by-description = Nội dung tuyệt vời từ trên web, được cá nhân hóa cho bạn
+home-prefs-recommended-by-learn-more = Nó hoạt động như thế nào
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Bài viết quảng cáo
+home-prefs-highlights-header =
+    .label = Nổi bật
+home-prefs-highlights-description = Một lựa chọn các trang web mà bạn đã lưu hoặc truy cập
+home-prefs-highlights-option-visited-pages =
+    .label = Trang đã truy cập
+home-prefs-highlights-options-bookmarks =
+    .label = Trang đánh dấu
+home-prefs-highlights-option-most-recent-download =
+    .label = Tải xuống gần đây nhất
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Trang đã được lưu vào { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Đoạn
+home-prefs-snippets-description = Cập nhật từ { -vendor-short-name } và { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label = { $num } hàng
+
 ## Search Section
 
 search-bar-header = Thanh tìm kiếm
@@ -550,6 +584,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Đề xuất và tạo mật khẩu mạnh
     .accesskey = u
+forms-fill-logins-and-passwords =
+    .label = Tự động điền đăng nhập và mật khẩu
+    .accesskey = i
 forms-saved-logins =
     .label = Đăng nhập đã lưu…
     .accesskey = L
@@ -626,6 +663,10 @@ sitedata-block-desc = Loại bị chặn
     .accesskey = T
 sitedata-option-block-trackers =
     .label = Trình theo dõi của bên thứ ba
+sitedata-option-block-cross-site-trackers =
+    .label = Trình theo dõi chéo trang web
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Trình theo dõi chéo và truyền thông xã hội
 sitedata-option-block-unvisited =
     .label = Cookie từ các trang web không mong muốn
 sitedata-option-block-all-third-party =
@@ -660,7 +701,7 @@ addressbar-suggestions-settings = Thay đổi tùy chỉnh phần gợi ý của
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Chặn nội dung
-content-blocking-description = Chặn nội dung của bên thứ ba theo dõi bạn trên web. Kiểm soát số lượng hoạt động trực tuyến của bạn được lưu trữ và chia sẻ giữa các trang web.
+content-blocking-enhanced-tracking-protection = Trình chống theo dõi nâng cao
 content-blocking-section-description = Bảo vệ riêng tư của bạn trong khi bạn duyệt. Chặn nội dung vô hình của các trang web bạn đang xem truy cập và hồ sơ bạn. Chặn một số nội dung này có thể làm cho các trang tải nhanh hơn.
 content-blocking-learn-more = Tìm hiểu thêm
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -674,28 +715,38 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Tùy chọn
     .accesskey = C
-content-blocking-standard-description = Chỉ chặn các trình theo dõi đã biết trong cửa sổ riêng tư.
 content-blocking-standard-desc = Cân bằng giữa sự bảo mật và hiệu suất. Cho phép một số trình theo dõi để các trang web hoạt động chính xác.
-content-blocking-strict-desc = Chặn tất cả trình theo dõi mà { -brand-short-name } phát hiện. Có thể khiến một số trang web bị hỏng.
 content-blocking-strict-description = Bảo vệ mạnh mẽ hơn, có thể khiến một số trang web bị vỡ.
 content-blocking-custom-desc = Chọn những gì bạn muốn chặn.
 content-blocking-private-trackers = Trình theo dõi được biết chỉ trong cửa sổ riêng tư
 content-blocking-third-party-cookies = Cookie theo dõi của bên thứ ba
+content-blocking-etp-standard-desc = Cân bằng để bảo vệ và hiệu suất. Các trang sẽ tải bình thường.
+content-blocking-etp-strict-desc = Bảo vệ mạnh mẽ hơn, nhưng có thể khiến một số trang web và nội dung bị phá vỡ.
+content-blocking-etp-custom-desc = Chọn trình theo dõi và tập lệnh để chặn.
+content-blocking-private-windows = Trình theo dõi nội dung trong cửa sổ riêng tư
+content-blocking-cross-site-tracking-cookies = Cookie theo dõi chéo trang web
+content-blocking-social-media-trackers = Trình theo dõi truyền thông xã hội
 content-blocking-all-cookies = Tất cả cookie
 content-blocking-unvisited-cookies = Cookie từ các trang không mong muốn
 content-blocking-all-windows-trackers = Các trình theo dõi đã biết trong tất cả cửa sổ
+content-blocking-all-windows-tracking-content = Trình theo dõi nội dung trong tất cả cửa sổ
 content-blocking-all-third-party-cookies = Toàn bộ cookie từ bên thứ ba
 content-blocking-cryptominers = Tiền điện tử
 content-blocking-fingerprinters = Vân tay
 content-blocking-warning-title = Hãy cẩn thận!
 content-blocking-warning-description = Chặn nội dung có thể khiến một số trang web bị hỏng. Dễ dàng vô hiệu hóa chặn cho các trang web mà bạn tin tưởng.
 content-blocking-learn-how = Tìm hiểu cách thức
+content-blocking-etp-warning-description = Chặn trình theo dõi có thể ảnh hưởng đến chức năng của một số trang web. Tải lại một trang với trình theo dõi để tải tất cả nội dung.
+content-blocking-warning-learn-how = Tìm hiểu cách thức
 content-blocking-reload-description = Bạn sẽ cần tải lại các thẻ của mình để áp dụng những thay đổi này.
 content-blocking-reload-tabs-button =
     .label = Tải lại tất cả các thẻ
     .accesskey = R
 content-blocking-trackers-label =
     .label = Trình theo dõi
+    .accesskey = T
+content-blocking-tracking-content-label =
+    .label = Trình theo dõi nội dung
     .accesskey = T
 content-blocking-tracking-protection-option-all-windows =
     .label = Trong tất cả các cửa sổ

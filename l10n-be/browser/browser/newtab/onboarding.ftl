@@ -29,6 +29,26 @@ onboarding-join-form-email-error = Патрабуецца сапраўдны а�
 onboarding-join-form-legal = Працягваючы, вы згаджаецеся з <a data-l10n-name="terms">Умовамі абслугоўвання</a> і <a data-l10n-name="privacy">Палітыкай прыватнасці</a>.
 onboarding-join-form-continue = Працягнуць
 onboarding-start-browsing-button-label = Пачаць агляданне
+onboarding-cards-dismiss =
+    .title = Адхіліць
+    .aria-label = Адхіліць
+
+## Firefox Sync modal dialog strings.
+
+onboarding-sync-welcome-header = Вазьміце { -brand-product-name } з сабой
+onboarding-sync-welcome-content = Атрымайце доступ да вашых закладак, гісторыі, пароляў і іншых налад на ўсіх вашых прыладах.
+onboarding-sync-welcome-learn-more-link = Даведайцеся больш пра ўліковыя запісы Firefox
+onboarding-sync-form-invalid-input = Патрабуецца сапраўдны адрас эл.пошты
+onboarding-sync-legal-notice = Працягваючы, вы згаджаецеся з <a data-l10n-name="terms">умовамі абслугоўвання</a> і <a data-l10n-name="privacy">паведамленнем аб прыватнасці</a>.
+onboarding-sync-form-input =
+    .placeholder = Эл.пошта
+onboarding-sync-form-continue-button = Працягнуць
+onboarding-sync-form-skip-login-button = Прапусціць гэты крок
+
+## This is part of the line "Enter your email to continue to Firefox Sync"
+
+onboarding-sync-form-header = Увядзіце сваю электронную пошту
+onboarding-sync-form-sub-header = каб прадоўжыць з { -sync-brand-name }.
 
 ## These are individual benefit messages shown with an image, title and
 ## description.

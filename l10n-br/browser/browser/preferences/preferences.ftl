@@ -29,11 +29,6 @@ search-input-box =
             [windows] Klask en dibarzhioù
            *[other] Klask er gwellvezioù
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Diweredekaet eo bet ho parregezh da gemmañ dibarzhioù 'zo.
-       *[other] Diweredekaet eo bet ho parregezh da gemmañ gwellvezioù 'zo.
-    }
 managed-notice = Ardoet eo ho merdeer gant hoc'h aozadur.
 pane-general-title = Hollek
 category-general =
@@ -407,6 +402,52 @@ choose-bookmark =
     .label = Arverañ ur sined…
     .accesskey = r
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Endalc'had Degemer Firefox
+home-prefs-content-description = Dibabit peseurt endalc'had a fell deoc'h kaout war ho skramm Firefox Degemer.
+home-prefs-content-discovery-description = Gant ann dizoloadenn endalc'hadoù e Firefox Home e c'hallit dizoloiñ pennadoù a berzhded uhel eus pep lec'h er web.
+home-prefs-search-header =
+    .label = Klask web
+home-prefs-topsites-header =
+    .label = Lec'hiennoù gwellañ
+home-prefs-topsites-description = Al lec'hiennoù a weladennit ar muiañ
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Erbedet gant { $provider }
+home-prefs-recommended-by-description = Danvez eus an dibab eus pep lec'h er web, personelaet evidoc'h
+home-prefs-recommended-by-learn-more = Penaos ez a en-dro
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Istorioù kevelet
+home-prefs-highlights-header =
+    .label = Mareoù pouezus
+home-prefs-highlights-description = Un dibab a lec'hiennoù ho peus enrollet pe gweladennet
+home-prefs-highlights-option-visited-pages =
+    .label = Pajennoù gweladennet
+home-prefs-highlights-options-bookmarks =
+    .label = Sinedoù
+home-prefs-highlights-option-most-recent-download =
+    .label = Pellgargadurioù nevez
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Pajennoù enrollet e { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Notennigoù
+home-prefs-snippets-description = Keleier eus { -vendor-short-name } ha { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } renk
+            [two] { $num } renk
+            [few] { $num } renk
+            [many] { $num } a renkoù
+           *[other] { $num } renk
+        }
+
 ## Search Section
 
 search-bar-header = Barrenn glask
@@ -678,7 +719,6 @@ addressbar-suggestions-settings = Kemmañ ar gwellvezioù evit ar c'hinnigoù lu
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Stankañ endalc'hadoù
-content-blocking-description = Stankañ endalc'hadoù an tredeoù a heuilh ac'hanoc'h etrezek ar web. Reoliañ kementad ho obererezh enlinenn a zo kadavet ha rannet etre al lec'hiennoù.
 content-blocking-section-description = Gwarezit ho puhez prevez pa verdeit. Stankit an endalc'hadoù diwelus a heuilh al lec'hiennoù a weladennit hag a sav un aelad diwar ho penn. Stankañ ul lodenn eus an endalc'had-mañ a c'hall lakaat ar pajennoù da gargañ buanoc'h.
 content-blocking-learn-more = Gouzout hiroc'h
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -692,9 +732,7 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Personelaet
     .accesskey = P
-content-blocking-standard-description = Stankañ an heulierien anavezet er merdeiñ prevez nemetken.
 content-blocking-standard-desc = Kempouezet etre gwarez ha mont-en-dro. Aotren a ra heulierien 'zo evit ma 'z afe en-dro al lec'hiennoù.
-content-blocking-strict-desc = Stankañ an holl heulierien dinoet gant { -brand-short-name }. Gallout a ra mirout lec'hiennoù 'zo da vont en-dro en un doare dereat.
 content-blocking-strict-description = Gwarez gwelloc'h, gallout a ra lakaat lec'hiennoù zo da vont en-dro falloc'h.
 content-blocking-custom-desc = Dibabit petra stankañ.
 content-blocking-private-trackers = An heulierien anavezet er merdeiñ prevez hepken

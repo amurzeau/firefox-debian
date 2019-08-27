@@ -29,11 +29,6 @@ search-input-box =
             [windows] Buscar en opciones
            *[other] Buscar en preferencias
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Su organización deshabilitó la posibilidad de cambiar algunas opciones.
-       *[other] Su organización deshabilitó la posibilidad de cambiar algunas perferencias.
-    }
 managed-notice = El navegador está siendo administrado por la organización.
 pane-general-title = General
 category-general =
@@ -398,6 +393,49 @@ choose-bookmark =
     .label = Usar un marcador…
     .accesskey = m
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Contenido de la página de inicio de Firefox
+home-prefs-content-description = Elija qué contenido desea en la Pantalla de inicio de Firefox.
+home-prefs-content-discovery-description = Content Discovery en la página de inicio de Firefox le permite descubrir artículos relevantes de alta calidad en toda la web.
+home-prefs-search-header =
+    .label = Búsqueda en la web
+home-prefs-topsites-header =
+    .label = Más visitados
+home-prefs-topsites-description = Los sitios que más visita
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Recomendado por { $provider }
+home-prefs-recommended-by-description = El mejor contenido de toda la web, personalizado para usted
+home-prefs-recommended-by-learn-more = Cómo funciona
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Historias patrocinadas
+home-prefs-highlights-header =
+    .label = Destacados
+home-prefs-highlights-description = Una selección de sitios que guardó o visitó
+home-prefs-highlights-option-visited-pages =
+    .label = Sitios visitados
+home-prefs-highlights-options-bookmarks =
+    .label = Marcadores
+home-prefs-highlights-option-most-recent-download =
+    .label = Descargado recientemente
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Páginas guardadas en { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Recortes
+home-prefs-snippets-description = Actualizaciones de { -vendor-short-name } y { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] fila de { $num }
+           *[other] filas de { $num }
+        }
+
 ## Search Section
 
 search-bar-header = Barra de búsqueda
@@ -562,6 +600,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Sugerir y generar contraseñas seguras.
     .accesskey = u
+forms-fill-logins-and-passwords =
+    .label = Autocompletar inicios de sesión y contraseñas
+    .accesskey = i
 forms-saved-logins =
     .label = Ingresos guardados…
     .accesskey = I
@@ -638,6 +679,10 @@ sitedata-block-desc = Tipo de contenido bloqueado
     .accesskey = T
 sitedata-option-block-trackers =
     .label = Rastreadores de terceros
+sitedata-option-block-cross-site-trackers =
+    .label = Rastreadores de sitios cruzados
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Rastreadores de sitios y redes sociales
 sitedata-option-block-unvisited =
     .label = Cookies de sitios web no visitados
 sitedata-option-block-all-third-party =
@@ -672,7 +717,7 @@ addressbar-suggestions-settings = Cambiar preferencias para sugerencias de busca
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Bloqueo de contenido
-content-blocking-description = Bloquea el contenido de terceros que lo rastrea en la web. Controle cuánto de su actividad en línea se almacena y comparte entre sitios web.
+content-blocking-enhanced-tracking-protection = Protección de rastreo mejorada
 content-blocking-section-description = Proteja su privacidad al navegar. Bloquee contenido que rastree los sitios visitados y arma perfiles. Bloquear algún contenido puede hacer que las páginas carguen más rápido.
 content-blocking-learn-more = Conocer más
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -686,28 +731,38 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Personalizado
     .accesskey = z
-content-blocking-standard-description = Sólo bloquea rastreadores conocidos en pestañas privadas.
 content-blocking-standard-desc = Equilibrado para la protección y el rendimiento. Permite algunos rastreadores para que los sitios web funcionen correctamente.
-content-blocking-strict-desc = Bloquea todos los rastreadores detectados por { -brand-short-name }. Puede causar que algunos sitios fallen.
 content-blocking-strict-description = Una protección más fuerte puede causar que algunos sitios fallen.
 content-blocking-custom-desc = Elegir qué bloquear
 content-blocking-private-trackers = Rastreadores conocidos solo en Ventanas privadas
 content-blocking-third-party-cookies = Cookies de rastreo de terceros
+content-blocking-etp-standard-desc = Equilibrado para protección y rendimiento. Las páginas se van a cargar normalmente.
+content-blocking-etp-strict-desc = Mayor protección, pero puede causar que algunos sitios o contenido no se carguen.
+content-blocking-etp-custom-desc = Elija qué rastreadores y secuencias de comandos quiere bloquear.
+content-blocking-private-windows = Rastreo de contenido en ventanas privadas
+content-blocking-cross-site-tracking-cookies = Cookies de rastreo de sitios cruzados
+content-blocking-social-media-trackers = Rastreadores de redes sociales
 content-blocking-all-cookies = Todas las cookies
 content-blocking-unvisited-cookies = Cookies de sitios no visitados
 content-blocking-all-windows-trackers = Rastreadores conocidos en todas las ventanas.
+content-blocking-all-windows-tracking-content = Rastreo de contenido en todas las ventanas
 content-blocking-all-third-party-cookies = Todas las cookies de terceros
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = ¡Atención!
 content-blocking-warning-description = El bloqueo de contenido puede hacer que algunos sitios web no se carguen correctamente. Es fácil deshabilitar el bloqueo para sitios en los que confía.
 content-blocking-learn-how = Aprender como
+content-blocking-etp-warning-description = El bloqueo de rastreadores podría afectar la funcionalidad de algunos sitios. Vuelva a cargar una página con rastreadores para cargar todo el contenido.
+content-blocking-warning-learn-how = Aprender como
 content-blocking-reload-description = Tendrá que volver a cargar las pestañas para aplicar estos cambios.
 content-blocking-reload-tabs-button =
     .label = Recargar todas las pestañas
     .accesskey = R
 content-blocking-trackers-label =
     .label = Rastreadores
+    .accesskey = T
+content-blocking-tracking-content-label =
+    .label = Contenido de rastreo
     .accesskey = T
 content-blocking-tracking-protection-option-all-windows =
     .label = En todas las ventanas

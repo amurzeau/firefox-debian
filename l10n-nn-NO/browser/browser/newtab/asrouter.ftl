@@ -2,8 +2,15 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## These messages are used as headings in the recommendation doorhanger
+
 cfr-doorhanger-extension-heading = Tilrådde utvidingar
-cfr-doorhanger-pintab-heading = Prøv dette: fest fana
+cfr-doorhanger-feature-heading = Tilrådd funksjon
+cfr-doorhanger-pintab-heading = Prøv dette: Fest fana
+
+
+
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Kvifor ser eg dette?
 cfr-doorhanger-extension-cancel-button = Ikkje no
@@ -62,3 +69,45 @@ cfr-doorhanger-bookmark-fxa-link-text = Synkroniser bokmerke no…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Lat att-knapp
     .title = Lat att
+
+## Protections panel
+
+cfr-protections-panel-header = Surf utan å bli følgd
+cfr-protections-panel-body = Behald dine data for deg sjølv. { -brand-short-name } beskyttar deg mot mange av dei vanlegaste sporfølgjarane som følgjer det du gjer på nettet.
+cfr-protections-panel-link-text = Les meir
+
+## What's New toolbar button and panel
+
+cfr-whatsnew-button =
+    .label = Kva er nytt
+    .tooltiptext = Kva er nytt
+cfr-whatsnew-panel-header = Kva er nytt
+
+## Bookmark Sync
+
+cfr-doorhanger-sync-bookmarks-header = Få dette bokmerket på telefonen din
+cfr-doorhanger-sync-bookmarks-body = Ta med bokmerke, passord, historikk, og meir, overalt der du er logga inn på { -brand-product-name }.
+cfr-doorhanger-sync-bookmarks-ok-button = Slå på { -sync-brand-short-name }
+    .accesskey = S
+
+## Login Sync
+
+cfr-doorhanger-sync-logins-header = Gløym aldri meir eit passord
+cfr-doorhanger-sync-logins-body = Lagre og synkroniser passorda dine sikkert med alle einingane dine.
+cfr-doorhanger-sync-logins-ok-button = Slå på { -sync-brand-short-name }
+    .accesskey = S
+
+## Send Tab
+
+cfr-doorhanger-send-tab-header = Les dette medan du er påfarten
+cfr-doorhanger-send-tab-recipe-header = Ta denne oppskrifta med på kjøkkenet
+cfr-doorhanger-send-tab-body = Send fane lèt deg enkelt dele denne lenka til telefonen din eller kvar som helst du er logga inn på { -brand-product-name }.
+cfr-doorhanger-send-tab-ok-button = Prøv send fane
+    .accesskey = P
+
+## Firefox Send
+
+cfr-doorhanger-firefox-send-header = Del denne PDF-fila sikkert
+cfr-doorhanger-firefox-send-body = Hald dei sensitive dokumenta dine trygge mot nysgjerrige auge med ende-til-ende-kryptering og ei lenke som forsvinn når du er ferdig.
+cfr-doorhanger-firefox-send-ok-button = Prøv { -send-brand-name }
+    .accesskey = P

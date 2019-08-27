@@ -27,13 +27,23 @@ features-title = { -brand-short-name }i erifunktsioonid
 features-name = Nimi
 features-version = Versioon
 features-id = ID
+processes-title = Kaugprotsessid
+processes-type = Tüüp
+processes-count = Arv
 app-basics-title = Rakendusest
 app-basics-name = Nimi
 app-basics-version = Versioon
 app-basics-build-id = Kompileerimise ID
 app-basics-update-channel = Uuendustekanal
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] Uuenduste kaust
+       *[other] Uuenduste kaust
+    }
 app-basics-update-history = Uuenduste ajalugu
 app-basics-show-update-history = Kuva uuenduste ajalugu
+# Represents the path to the binary used to start the application.
+app-basics-binary = Rakenduse täitmisfail
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Profiili kaust
@@ -47,10 +57,13 @@ app-basics-memory-use = Mälukasutus
 app-basics-performance = Jõudlus
 app-basics-service-workers = Registreeritud Service Workerid
 app-basics-profiles = Profiilid
+app-basics-launcher-process-status = Käivitusprotsess
 app-basics-multi-process-support = Mitme protsessiga aknad
 app-basics-process-count = Veebisisu protsessid
+app-basics-remote-processes-count = Kaugprotsessid
 app-basics-enterprise-policies = Rühmapoliitikad
-app-basics-key-google = Google võti
+app-basics-location-service-key-google = Google'i asukohateenuse võti
+app-basics-safebrowsing-key-google = Google Safebrowsingu võti
 app-basics-key-mozilla = Mozilla asukohateenuse võti
 app-basics-safe-mode = Ohutu režiim
 show-dir-label =
@@ -76,6 +89,8 @@ graphics-gpu2-title = 2. GPU
 graphics-decision-log-title = Otsuste logi
 graphics-crash-guards-title = Vigade vältimise tõttu keelatud funktsionaalsus
 graphics-workarounds-title = Hädalahendused
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Graafilise kasutajaliidese protokoll
 place-database-title = Asukohtade andmebaas
 place-database-integrity = Terviklus
 place-database-verify-integrity = Verifitseeri terviklus
@@ -176,6 +191,8 @@ hardware-h264 = Riistvaraline H264-dekodeerimise tugi
 main-thread-no-omtc = peamine lõim, ilma OMTC'ta
 yes = jah
 no = ei
+unknown = Tundmatu
+virtual-monitor-disp = Virtual Monitor Display
 
 ## The following strings indicate if an API key has been found.
 ## In some development versions, it's expected for some API keys that they are
@@ -183,12 +200,15 @@ no = ei
 
 found = leitud
 missing = puudub
+gpu-process-pid = GPU protsessi pid
+gpu-process = GPU protsess
 gpu-description = Kirjeldus
 gpu-vendor-id = Tootja ID
 gpu-device-id = Seadme ID
 gpu-subsys-id = Alamsüsteemi ID
 gpu-drivers = Draiverid
 gpu-ram = RAM
+gpu-driver-vendor = Draiveri tarnija
 gpu-driver-version = Draiveri versioon
 gpu-driver-date = Draiveri kuupäev
 gpu-active = Aktiivne
@@ -215,11 +235,14 @@ d3d9video-crash-buard = D3D9 video dekodeerija
 glcontext-crash-guard = OpenGL
 reset-on-next-restart = Lähtesta järgmisel taaskäivitusel
 gpu-process-kill-button = Peata GPU protsessi töö
+gpu-device-reset = Seadme lähtestamine
 gpu-device-reset-button = Kutsu esile seadme lähtestamine
 uses-tiling = Uses Tiling
 content-uses-tiling = Uses Tiling (Content)
 off-main-thread-paint-enabled = Off Main Thread Painting Enabled
 off-main-thread-paint-worker-count = Off Main Thread Painting Worker Count
+low-end-machine = Tuvastati väikse võimekusega arvuti
+target-frame-rate = Target Frame Rate
 audio-backend = Helisüsteem
 max-audio-channels = Maksimaalne arv kanaleid
 channel-layout = Eelistatud kanalite asetus
@@ -237,6 +260,11 @@ effective-content-sandbox-level = Sisuprotsessi aedikustamise tase
 sandbox-proc-type-content = sisu
 sandbox-proc-type-file = faili sisu
 sandbox-proc-type-media-plugin = meediaplugin
+sandbox-proc-type-data-decoder = data decoder
+launcher-process-status-0 = lubatud
+launcher-process-status-1 = ebaõnnestumise tõttu keelatud
+launcher-process-status-2 = jõuga keelatud
+launcher-process-status-unknown = tundmatu olek
 # Variables
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows

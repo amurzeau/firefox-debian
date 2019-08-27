@@ -29,11 +29,6 @@ search-input-box =
             [windows] Treuva in Inpostaçioin
            *[other] Treuva in Preferense
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] A teu òrganizaçion a l'à dizabilitou a poscibilitæ de cangiâ quarche òpçion
-       *[other] A teu òrganizaçion a l'à dizabilitou a poscibilitæ de cangiâ quarche preferensa
-    }
 pane-general-title = Generale
 category-general =
     .tooltiptext = { pane-general-title }
@@ -139,7 +134,7 @@ startup-restore-warn-on-quit =
     .label = Avertime quande særo o navegatô
 disable-extension =
     .label = Dizabilita estençion
-tabs-group-header = feuggi
+tabs-group-header = Feuggi
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab mostra l'anteprimma di feuggi averti
     .accesskey = T
@@ -380,6 +375,48 @@ use-current-pages =
 choose-bookmark =
     .label = Adeuvia o segnalibbro…
     .accesskey = s
+
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Pagina iniçiâ de Firefox
+home-prefs-content-description = Çerni i contegnui che ti veu vedde inta pagina iniçiâ de Firefox.
+home-prefs-search-header =
+    .label = Çerca into Web
+home-prefs-topsites-header =
+    .label = I megio sciti
+home-prefs-topsites-description = I sciti che ti vixiti de ciù
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Consegiou da { $provider }
+home-prefs-recommended-by-description = I megio contegnui pigiæ in gio pe-a ræ, personalizæ pe ti
+home-prefs-recommended-by-learn-more = Comme o fonçionn-a
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Stöie sponsorizæ
+home-prefs-highlights-header =
+    .label = In evidensa
+home-prefs-highlights-description = 'Na seleçion di sciti che t'ê sarvou ò vixitou
+home-prefs-highlights-option-visited-pages =
+    .label = Pagine vixitæ
+home-prefs-highlights-options-bookmarks =
+    .label = Segnalibbri
+home-prefs-highlights-option-most-recent-download =
+    .label = Urtimi descaregamenti
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Pagine sarvæ in { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Snippet
+home-prefs-snippets-description = Agiornamenti da { -vendor-short-name } e { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } riga
+           *[other] { $num } righe
+        }
 
 ## Search Section
 
@@ -660,7 +697,6 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Personalizzou
     .accesskey = P
-content-blocking-standard-description = Blòcca solo i elementi che tracian conosciui inti barcoin privæ.
 content-blocking-strict-description = Proteçion ciù fòrte, çerti sciti porieivan no fonçionâ ben.
 content-blocking-custom-desc = Çerni cöse blòccâ
 content-blocking-private-trackers = Elementi che tracian conosciui inti barcoin privæ

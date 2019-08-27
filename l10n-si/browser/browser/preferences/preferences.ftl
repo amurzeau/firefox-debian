@@ -16,16 +16,14 @@ pane-general-title = සාමාන්‍ය
 category-general =
     .tooltiptext = { pane-general-title }
 pane-home-title = නිවස
+category-home =
+    .tooltiptext = { pane-home-title }
 pane-search-title = සෙවුම
 category-search =
     .tooltiptext = { pane-search-title }
 pane-privacy-title = පුද්ගලිකත්වය සහ ආරක්ෂාව
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Firefox ගිනුම
-category-sync =
-    .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } සහය
 addons-button-label = දිගු සහ තේමාවන්
 focus-search =
@@ -306,6 +304,39 @@ choose-bookmark =
     .label = පිටු සලකුණු භාවිතා කරන්න…
     .accesskey = B
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Firefox මුල්පිටු අන්තර්ගතය
+home-prefs-content-description = Firefox මුල් පිටුවෙහි ඔබට අවැසි වන්නේ කුමන අන්තර්ගතයදැයි තෝරන්න.
+home-prefs-search-header =
+    .label = ජාල සෙවුම
+home-prefs-topsites-header =
+    .label = ප්‍රමුඛ අඩවි
+home-prefs-topsites-description = ඔබ වැඩිපුරම පිවිසෙන අඩවි
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = { $provider } විසින් නිර්දේශිතයි
+home-prefs-recommended-by-learn-more = එය ක්‍රියාත්මක වන්නේ කෙසේද
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = අනුග්‍රාහක කතා
+home-prefs-highlights-header =
+    .label = ඉස්මතු කිරීම්
+home-prefs-highlights-description = ඔබ සුරකින ලද හෝ පිවිසි අඩවි තෝරාගැනීමක්
+home-prefs-highlights-option-visited-pages =
+    .label = පිවිසුනු පිටු
+home-prefs-highlights-options-bookmarks =
+    .label = පිටු සලකුණු
+home-prefs-highlights-option-most-recent-download =
+    .label = මෑතකාලීන බාගත
+home-prefs-snippets-description = { -vendor-short-name } සහ { -brand-product-name } වෙතින් යාවත්
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } තීරය
+           *[other] { $num } තීර
+        }
+
 ## Search Section
 
 search-bar-header = සෙවුම් තීරය
@@ -417,8 +448,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = සුරකින්න
     .accesskey = v
-sync-mobilepromo-single = තවත් මෙවලමක් සම්බන්ධ කරන්න
-sync-mobilepromo-multi = මෙවලම් පාලනය කරන්න
 sync-tos-link = සේවා කොන්දේසි
 sync-fxa-privacy-notice = පෞද්ගලිකත්ව දැන්වීම
 
@@ -547,13 +576,6 @@ permissions-notification-pause =
 permissions-block-autoplay-media-exceptions =
     .label = හැරදැමීම්...
     .accesskey = E
-autoplay-option-ask =
-    .label = සෑමවිටම විමසන්න
-autoplay-option-allow =
-    .label = ස්වයං වාදනයට ඉඩ දෙන්න
-autoplay-option-dont =
-    .label = ස්වයං වාදනයට ඉඩ නොදෙන්න
-permissions-autoplay-link = තවත් දැනගන්න
 permissions-block-popups =
     .label = පොප්-අප් කවුළු වලකන්න
     .accesskey = B
@@ -573,7 +595,6 @@ permissions-a11y-privacy-link = තවත් දැනගන්න
 collection-privacy-notice = පෞද්ගලිකත්ව දැනුම්දීම
 collection-health-report-link = තවත් දැනගන්න
 addon-recommendations-link = තවත් දැනගන්න
-collection-browser-errors-link = තවත් දැනගන්න
 collection-backlogged-crash-reports-link = තවත් දැනගන්න
 
 ## Privacy Section - Security

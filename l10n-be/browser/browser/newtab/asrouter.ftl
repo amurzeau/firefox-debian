@@ -2,8 +2,15 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## These messages are used as headings in the recommendation doorhanger
+
 cfr-doorhanger-extension-heading = Рэкамендаванае пашырэнне
+cfr-doorhanger-feature-heading = Рэкамендаваная функцыя
 cfr-doorhanger-pintab-heading = Паспрабуйце: Прышпіліць картку
+
+
+
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Чаму я гэта бачу
 cfr-doorhanger-extension-cancel-button = Не зараз
@@ -64,3 +71,45 @@ cfr-doorhanger-bookmark-fxa-link-text = Сінхранізаваць закла�
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Кнопка закрыцця
     .title = Закрыць
+
+## Protections panel
+
+cfr-protections-panel-header = Аглядайце без старонніх вачэй
+cfr-protections-panel-body = Захоўвайце свае дадзеныя пры сабе. { -brand-short-name } абараняе вас ад многіх самых распаўсюджаных трэкераў, якія сочаць за тым, што вы робіце ў інтэрнэце.
+cfr-protections-panel-link-text = Даведацца больш
+
+## What's New toolbar button and panel
+
+cfr-whatsnew-button =
+    .label = Што новага
+    .tooltiptext = Што новага
+cfr-whatsnew-panel-header = Што новага
+
+## Bookmark Sync
+
+cfr-doorhanger-sync-bookmarks-header = Атрымаць гэтую закладку на свой тэлефон
+cfr-doorhanger-sync-bookmarks-body = Вазьміце свае закладкі, паролі, гісторыю і іншае ўсюды, дзе вы карыстаецеся { -brand-product-name }.
+cfr-doorhanger-sync-bookmarks-ok-button = Уключыць { -sync-brand-short-name }
+    .accesskey = У
+
+## Login Sync
+
+cfr-doorhanger-sync-logins-header = Ніколі не губляйце пароль ізноў
+cfr-doorhanger-sync-logins-body = Бяспечна захоўвайце і сінхранізуйце паролі на ўсіх сваіх прыладах.
+cfr-doorhanger-sync-logins-ok-button = Уключыць { -sync-brand-short-name }
+    .accesskey = У
+
+## Send Tab
+
+cfr-doorhanger-send-tab-header = Чытайце гэта на хаду
+cfr-doorhanger-send-tab-recipe-header = Вазьміце гэты рэцэпт на кухню
+cfr-doorhanger-send-tab-body = Адпраўка картак дазваляе лёгка дзяліцца гэтай спасылкай на ваш тэлефон або ў любое іншае месца, дзе вы ўвайшлі ў { -brand-product-name }.
+cfr-doorhanger-send-tab-ok-button = Паспрабуйце адпраўку картак
+    .accesskey = П
+
+## Firefox Send
+
+cfr-doorhanger-firefox-send-header = Дзяліцеся гэтым PDF бяспечна
+cfr-doorhanger-firefox-send-body = Трымайце свае далікатныя дакументы далей ад старонніх вачэй з дапамогай скразнога шыфравання і спасылкі, якая знікае пасля выкарыстання.
+cfr-doorhanger-firefox-send-ok-button = Паспрабуйце { -send-brand-name }
+    .accesskey = П

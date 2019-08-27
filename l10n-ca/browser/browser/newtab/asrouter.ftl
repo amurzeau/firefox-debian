@@ -2,8 +2,15 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## These messages are used as headings in the recommendation doorhanger
+
 cfr-doorhanger-extension-heading = Extensió recomanada
+cfr-doorhanger-feature-heading = Funció recomanada
 cfr-doorhanger-pintab-heading = Proveu això: Fixa la pestanya
+
+
+
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Per què veig això?
 cfr-doorhanger-extension-cancel-button = Ara no
@@ -62,3 +69,45 @@ cfr-doorhanger-bookmark-fxa-link-text = Sincronitza ara les adreces d'interès�
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Botó Tanca
     .title = Tanca
+
+## Protections panel
+
+cfr-protections-panel-header = Navegueu sense sentir-vos observat
+cfr-protections-panel-body = Protegiu les vostres dades. El { -brand-short-name } us protegeix de molts dels elements de seguiment més habituals que recopilen dades sobre allò que feu a Internet.
+cfr-protections-panel-link-text = Més informació
+
+## What's New toolbar button and panel
+
+cfr-whatsnew-button =
+    .label = Novetats
+    .tooltiptext = Novetats
+cfr-whatsnew-panel-header = Novetats
+
+## Bookmark Sync
+
+cfr-doorhanger-sync-bookmarks-header = Accediu a aquesta adreça d'interès des del vostre telèfon
+cfr-doorhanger-sync-bookmarks-body = Accediu a les adreces d'interès, les contrasenyes, l'historial i molt més arreu on tingueu una sessió iniciada en el { -brand-product-name }.
+cfr-doorhanger-sync-bookmarks-ok-button = Activa el { -sync-brand-short-name }
+    .accesskey = A
+
+## Login Sync
+
+cfr-doorhanger-sync-logins-header = No perdeu mai més cap contrasenya
+cfr-doorhanger-sync-logins-body = Emmagatzemeu i sincronitzeu de forma segura les contrasenyes en tots els vostres dispositius.
+cfr-doorhanger-sync-logins-ok-button = Activa el { -sync-brand-short-name }
+    .accesskey = A
+
+## Send Tab
+
+cfr-doorhanger-send-tab-header = Llegiu-ho sobre la marxa
+cfr-doorhanger-send-tab-recipe-header = Emporta't aquesta recepta a la cuina
+cfr-doorhanger-send-tab-body = «Envia la pestanya» us permet compartir fàcilment aquest enllaç amb el vostre telèfon o arreu on tingueu una sessió iniciada en el { -brand-product-name }.
+cfr-doorhanger-send-tab-ok-button = Prova «Envia la pestanya»
+    .accesskey = P
+
+## Firefox Send
+
+cfr-doorhanger-firefox-send-header = Compartiu aquest PDF de forma segura
+cfr-doorhanger-firefox-send-body = Manteniu els vostres documents confidencials lluny de mirades indiscretes amb un xifratge d'extrem a extrem i un enllaç que desapareix quan hàgiu acabat.
+cfr-doorhanger-firefox-send-ok-button = Prova el { -send-brand-name }
+    .accesskey = P

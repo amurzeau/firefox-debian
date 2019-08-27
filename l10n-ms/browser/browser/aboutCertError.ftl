@@ -5,6 +5,7 @@
 # Variables:
 # $hostname (String) - Hostname of the website with cert error.
 cert-error-intro = { $hostname } menggunakan sijil keselamatan yang tidak sah.
+cert-error-mitm-intro = Laman web membuktikan identiti melalui sijil yang dikeluarkan oleh pihak berkuasa sijil.
 cert-error-trust-unknown-issuer-intro = Ada pihak cuba menyamar sebagai laman ini dan anda tidak sepatutnya meneruskan.
 # Variables:
 # $hostname (String) - Hostname of the website with cert error.
@@ -37,3 +38,10 @@ cert-error-code-prefix-link = Kod ralat: <a data-l10n-name="error-code-link">{ $
 # $hostname (String) - Hostname of the website with cert error.
 cert-error-symantec-distrust-description = Laman web membuktikan identiti melalui sijil yang dikeluarkan oleh pihak berkuasa sijil. Kebanyakan pelayar tidak lagi mempercayai sijil yang dikeluarkan oleh GeoTrust, RapidSSL, Symantec, Thawte, dan VeriSign. { $hostname } menggunakan sijil daripada salah satu pihak berkuasa ini dan oleh itu identiti laman web tidak dapat dibuktikan.
 cert-error-symantec-distrust-admin = Anda boleh maklumkan pentadbir laman web perihal masalah ini.
+# Variables:
+# $hasHSTS (Boolean) - Indicates whether HSTS header is present.
+cert-error-details-hsts-label = HTTP Keselamatan Pengangkutan Rapi: { $hasHSTS }
+# Variables:
+# $hasHPKP (Boolean) - Indicates whether HPKP header is present.
+cert-error-details-key-pinning-label = HTTP Penyematan Kunci Awam: { $hasHPKP }
+cert-error-details-cert-chain-label = Rantaian sijil:

@@ -29,11 +29,6 @@ search-input-box =
             [windows] Eheka Jeporavorãme
            *[other] Eheka Jerohoryvévape
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Nde atyguasu omboguéma ikatúva omambue heta Jeporavorã.
-       *[other] Nde atyguasu omboguéma ikatúva omambue heta jererohoryvéva.
-    }
 managed-notice = Pe kundaha rehe oñangareko atyguasu.
 pane-general-title = Tuichakue
 category-general =
@@ -398,6 +393,49 @@ choose-bookmark =
     .label = Techaukaha puru…
     .accesskey = B
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Kuatiarogue retepy Firefox ñepyrũháme
+home-prefs-content-description = Eiporavo mba’e retepýpa eipota Firefox mba’erechaha ñepyrũháme.
+home-prefs-content-discovery-description = Content Discovery Firefox kuatiarogue ñepyrũme ohechaukakuaa tetepy oikóva ha iporãva ñandutípe g̃uarã.
+home-prefs-search-header =
+    .label = Ñandutípe jeheka
+home-prefs-topsites-header =
+    .label = Tenda Ojeikevéva
+home-prefs-topsites-description = Umi tenda ojeikeveha
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = { $provider } he'i ndéve reike hag̃ua
+home-prefs-recommended-by-description = Iporãvéva ñanduti retepy, oñemomba’éva ndéve g̃uarã
+home-prefs-recommended-by-learn-more = Mba’éichapa omba’apo
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Tembiasakue jehepyme'ẽguáva
+home-prefs-highlights-header =
+    .label = Mba'erechapyrã
+home-prefs-highlights-description = Tenda jeporavopy eñongatu térã eike hague
+home-prefs-highlights-option-visited-pages =
+    .label = Tenda jeikepyre
+home-prefs-highlights-options-bookmarks =
+    .label = Techaukaha
+home-prefs-highlights-option-most-recent-download =
+    .label = Oñemboguejy ramovéva
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Kuatiarogue ñongatupyre { -pocket-brand-name }-pe
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Mba'epehẽ
+home-prefs-snippets-description = { -vendor-short-name } ha { -brand-product-name } ñembohekopyahu
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } rysýi
+           *[other] { $num } rysýi
+        }
+
 ## Search Section
 
 search-bar-header = Jeheka Renda
@@ -562,6 +600,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Ere ha emoheñói ñe’ẽñemi hekorosãva
     .accesskey = u
+forms-fill-logins-and-passwords =
+    .label = Tembiapo ñepyrũ ha ñe’ẽñemi myanyhẽjehegui
+    .accesskey = i
 forms-saved-logins =
     .label = Emoñepyrũ tembiapo ñongatupyre…
     .accesskey = L
@@ -638,6 +679,8 @@ sitedata-block-desc = Peteĩchagua tetepy jokopyre
     .accesskey = T
 sitedata-option-block-trackers =
     .label = Mbohapyháva rekaha
+sitedata-option-block-cross-site-trackers =
+    .label = Tenda ojoasáva rapykuehóva
 sitedata-option-block-unvisited =
     .label = Ñanduto renda kookie ojeike’ỹha
 sitedata-option-block-all-third-party =
@@ -672,7 +715,6 @@ addressbar-suggestions-settings = Jerohoryvéva jehekaha mongu'eha je'epyre momb
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Ejoko tetepy
-content-blocking-description = Ejoko pe tetepy mbohapyháva ohapykuehóva ñandutípe. Eñangareko hembiapo ñanduti pegua ombyaty ha omoherakuãramo ambue ñanduti renda ndive.
 content-blocking-section-description = Emo’ã nde rekoñemi eikundahakuévo. Ejoko tetepy ohapykuehóva umi tenda eike hague ha ojapo mba’ete. Ejokóvo ndahetái tetepy ikatuhína ombopya’eve kuatiarogue ñemyenyhẽ.
 content-blocking-learn-more = Eikuaave
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -686,28 +728,33 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Ñemomba'e
     .accesskey = C
-content-blocking-standard-description = Ejoko jehekaha ojekuaáva ovetã ñemiguápe añoite.
 content-blocking-standard-desc = Ijojáva omo’ã ha oikoporã hag̃ua. Omoneĩ ndahetái tapykuehápe ikatu hag̃uáicha ñanduti renda oiko hekopete.
-content-blocking-strict-desc = Ojoko opaite tapykuehoha ohecháva { -brand-short-name }. Ikatuhína ombojavy tenda.
 content-blocking-strict-description = Peteĩ ñemo’ã imbaretevéva ikatu ombojavyka ndahetái tenda.
 content-blocking-custom-desc = Eiporavo mba’etépa ejokóta.
 content-blocking-private-trackers = Jehekaha ojekuaáva ovetã ñemiguápe añoite
 content-blocking-third-party-cookies = Jehekaha kookie mbohapyguáva
+content-blocking-cross-site-tracking-cookies = Kookie rapykuehoha hendaitáva
+content-blocking-social-media-trackers = Ava ñandutieta rapykuehoha
 content-blocking-all-cookies = Opavavete kookie
 content-blocking-unvisited-cookies = Kookie eike’ỹ hague
 content-blocking-all-windows-trackers = Jehekaha ojekuaáva opaite ovetãme
+content-blocking-all-windows-tracking-content = Tetepy rapykuehoha opaite ovetãme
 content-blocking-all-third-party-cookies = Opaite kookie mbohapyguáva
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = ¡Ema'ẽmi!
 content-blocking-warning-description = Tetepy jejoko ikatu nomomba’apo porãi ñanduti renda. Ikatúramo eipe’a pe jokoha tenda ejeroviaha pegua.
 content-blocking-learn-how = Mba’éicha eikuaa
+content-blocking-warning-learn-how = Mba'éichapa eikuaáta
 content-blocking-reload-description = Emonyhẽjeyva’erã umi tendayke oiko hag̃ua ko’ã moambuepyre.
 content-blocking-reload-tabs-button =
     .label = Embohekopyahu opaite tendayke
     .accesskey = E
 content-blocking-trackers-label =
     .label = Hekahára
+    .accesskey = T
+content-blocking-tracking-content-label =
+    .label = Tetepy rapykuehoha
     .accesskey = T
 content-blocking-tracking-protection-option-all-windows =
     .label = Opaite ovetãme

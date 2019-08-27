@@ -150,9 +150,6 @@ legacy-extensions =
     .value = Äldre tillägg
 legacy-extensions-description = Dessa tillägg uppfyller inte nuvarande standarder i { -brand-short-name } så de har inaktiverats. <label data-l10n-name="legacy-learn-more">Läs mer om ändringar av tillägg</label>
 private-browsing-description2 = { -brand-short-name } ändrar hur tillägg fungerar i privat surfläge. Alla nya tillägg du lägger till i { -brand-short-name } kommer inte att köras som standard i privata fönster. Om du inte tillåter detta i inställningarna, kommer tillägget inte fungera när du är i privat surfläge, och kommer inte ha åtkomst till dina onlineaktiviteter där. Vi har gjort denna ändring för att hålla privat surfning privat. <label data-l10n-name="private-browsing-learn-more">Läs hur du hanterar tilläggsinställningar.</label>
-extensions-view-discover =
-    .name = Hämta tillägg
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-discopane =
     .name = Rekommendationer
     .tooltiptext = { extensions-view-discopane.name }
@@ -248,6 +245,12 @@ shortcuts-modifier-other = Inkludera Ctrl eller Alt
 shortcuts-invalid = Ogiltig kombination
 shortcuts-letter = Skriv en bokstav
 shortcuts-system = Kan inte skriva över en { -brand-short-name } genväg
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Dubblett av genväg
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } används som genväg i mer än ett fall. Dubbletter av genvägar kan ge oväntade effekter.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -310,6 +313,16 @@ release-notes-addon-button = Versionsfakta
 permissions-addon-button = Behörigheter
 addons-enabled-heading = Aktiverad
 addons-disabled-heading = Inaktiverad
+extension-enabled-heading = Aktiverad
+extension-disabled-heading = Inaktiverad
+theme-enabled-heading = Aktiverad
+theme-disabled-heading = Inaktiverad
+plugin-enabled-heading = Aktiverad
+plugin-disabled-heading = Inaktiverad
+dictionary-enabled-heading = Aktiverad
+dictionary-disabled-heading = Inaktiverad
+locale-enabled-heading = Aktiverad
+locale-disabled-heading = Inaktiverad
 ask-to-activate-button = Fråga om aktivering
 always-activate-button = Aktivera alltid
 never-activate-button = Aktivera aldrig

@@ -29,11 +29,6 @@ search-input-box =
             [windows] Serĉi en elektebloj
            *[other] Serĉi en preferoj
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Via organizaĵo malŝaltis la eblon ŝanĝi kelkajn elekteblojn.
-       *[other] Via organizaĵo malŝaltis la eblon ŝanĝi kelkajn preferojn.
-    }
 managed-notice = Via retumilo estas administrata de via organizo.
 pane-general-title = Ĉefaj
 category-general =
@@ -398,6 +393,49 @@ choose-bookmark =
     .label = Uzi legosignon…
     .accesskey = s
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Enhavo de la hejmekrano de Firefox
+home-prefs-content-description = Elektu la enhavon, kiun vi volas en via hejmekrano de Firefox.
+home-prefs-content-discovery-description = Malkovro de enhavo en la eka paĝo de Firefox permesas al vi trovi altkvalitajn elstarajn artikolojn el la tuta teksaĵo.
+home-prefs-search-header =
+    .label = Serĉo en la reto
+home-prefs-topsites-header =
+    .label = Plej vizitaj
+home-prefs-topsites-description = Viaj plej vizititaj retejoj
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Rekomendita de { $provider }
+home-prefs-recommended-by-description = Bonega enhavo de la tuta Teksaĵo, personecigita por vi
+home-prefs-recommended-by-learn-more = Kiel funkcias tio
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Patronitaj artikoloj
+home-prefs-highlights-header =
+    .label = Elstaraĵoj
+home-prefs-highlights-description = Retejoj elektitaj inter tiuj, kiun vi vizitis aŭ konservis
+home-prefs-highlights-option-visited-pages =
+    .label = Vizititaj paĝoj
+home-prefs-highlights-options-bookmarks =
+    .label = Legosignoj
+home-prefs-highlights-option-most-recent-download =
+    .label = Lasta elŝuto
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Paĝoj konservitaj en { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Fragmentoj
+home-prefs-snippets-description = Ĝisdatigoj de { -vendor-short-name } kaj { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } vico
+           *[other] { $num } vicoj
+        }
+
 ## Search Section
 
 search-bar-header = Serĉa strio
@@ -562,6 +600,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Sugesti kaj krei fortikajn pasvortojn
     .accesskey = S
+forms-fill-logins-and-passwords =
+    .label = Aŭtomate plenigi akreditilojn kaj pasvortojn
+    .accesskey = A
 forms-saved-logins =
     .label = Konservitaj akreditiloj…
     .accesskey = a
@@ -638,6 +679,10 @@ sitedata-block-desc = Blokita tipo
     .accesskey = B
 sitedata-option-block-trackers =
     .label = Nerektaj spuriloj
+sitedata-option-block-cross-site-trackers =
+    .label = Interetejaj spuriloj
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Interretejaj kaj sociretaj spuriloj
 sitedata-option-block-unvisited =
     .label = Kuketoj el nevizititaj retejoj
 sitedata-option-block-all-third-party =
@@ -672,7 +717,7 @@ addressbar-suggestions-settings = Ŝanĝi preferojn pri serĉilaj sugestoj
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Blokado de enhavo
-content-blocking-description = Bloku nerektan enhavon, kiu spuras vin tra la reto. Regu kiom multe de via retuma informo estas konservita kaj dividita inter retejoj.
+content-blocking-enhanced-tracking-protection = Plibonigita protekto kontraŭ spurado
 content-blocking-section-description = Protektu vian privatecon dum vi retumas. Bloku nevideblan enhavon, kiu registras la retejojn, kiujn vi vizitas por konstrui profilon pri vi. Bloki parton de tiu enhavo povas rapidigi la ŝargadon de paĝoj.
 content-blocking-learn-more = Pli da informo
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -686,28 +731,38 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Personecigita
     .accesskey = P
-content-blocking-standard-description = Bloki nur konatajn spurilojn en privataj fenestroj.
 content-blocking-standard-desc = Ekvilibro inter protekto kaj efikeco. Kelkaj spuriloj estas permesataj, por ke retejoj funkciu bone.
-content-blocking-strict-desc = Ĉiuj spuriloj trovitaj de { -brand-short-name } estos blokitaj. Tio povas misfunkciigi kelkajn retejojn.
 content-blocking-strict-description = Pli severa protekto, kiu povus misfunkciigi kelkajn retejojn.
 content-blocking-custom-desc = Elektu kion bloki.
 content-blocking-private-trackers = Konataj spuriloj nur en fenestroj de privata retumo.
 content-blocking-third-party-cookies = Spurantaj nerektaj kuketoj
+content-blocking-etp-standard-desc = Ekvilibrita por protekto kaj efikeco. Paĝoj ŝargiĝos normale.
+content-blocking-etp-strict-desc = Pli forta proteko, sed kelkaj retejoj aŭ enhavjo povus ne bone funkcii.
+content-blocking-etp-custom-desc = Elektu blokotajn spurilojn kaj skriptojn
+content-blocking-private-windows = Spurila enhavo en privataj fenestroj
+content-blocking-cross-site-tracking-cookies = Interretejaj spuriloj
+content-blocking-social-media-trackers = Sociretaj spuriloj
 content-blocking-all-cookies = Ĉiuj kuketoj
 content-blocking-unvisited-cookies = Kuketoj el ne vizititaj retejoj
 content-blocking-all-windows-trackers = Konataj spuriloj en ĉiuj fenestroj
+content-blocking-all-windows-tracking-content = Spurila enhavo en ĉiuj fenestroj
 content-blocking-all-third-party-cookies = Ĉiuj nerektaj kuketoj
 content-blocking-cryptominers = Miniloj de ĉifromono
 content-blocking-fingerprinters = Identigiloj de ciferecaj spuroj
 content-blocking-warning-title = Atentu!
 content-blocking-warning-description = La blokado de enhavo povas misfunkciigi kelkajn retejojn. Estas facile malaktivigi la blokadon por retejoj, kiujn vi fidas.
 content-blocking-learn-how = Pli da informo
+content-blocking-etp-warning-description = Blokado de spuriloj povas influi la funkciadon de kelkaj retejoj. Reŝargu paĝon kun spuriloj por ŝargi la tutan enhavon.
+content-blocking-warning-learn-how = Pli da informo
 content-blocking-reload-description = Vi bezonos reŝargi viajn langetojn por apliki tiujn ĉi ŝanĝojn.
 content-blocking-reload-tabs-button =
     .label = Reŝargi ĉiujn langetojn
     .accesskey = R
 content-blocking-trackers-label =
     .label = Spuriloj
+    .accesskey = S
+content-blocking-tracking-content-label =
+    .label = Spurila enhavo
     .accesskey = S
 content-blocking-tracking-protection-option-all-windows =
     .label = En ĉiuj fenestroj

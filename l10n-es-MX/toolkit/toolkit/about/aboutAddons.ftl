@@ -20,7 +20,7 @@ list-empty-recent-updates =
 list-empty-find-updates =
     .label = Buscar actualizaciones
 list-empty-button =
-    .label = Obtenga más información sobre complementos
+    .label = Aprender más sobre los complementos
 install-addon-from-file =
     .label = Instalar complemento desde archivo…
     .accesskey = I
@@ -138,9 +138,6 @@ legacy-warning-show-legacy = Mostrar las extensiones heredadas
 legacy-extensions =
     .value = Extensiones heredadas
 legacy-extensions-description = Estas extensiones no cumplen los estándares actuales de { -brand-short-name } por lo que han sido desactivadas. <label data-l10n-name="legacy-learn-more">Aprender más sobre los cambios de los complementos</label>
-extensions-view-discover =
-    .name = Obtener complementos
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-recent-updates =
     .name = Actualizaciones recientes
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -218,6 +215,7 @@ extensions-updates-update-selected =
 
 ## Extension shortcut management
 
+shortcuts-no-addons = No tienes complementos habilitados.
 shortcuts-browserAction = Activar extensión
 shortcuts-pageAction = Activar acción de página
 shortcuts-sidebarAction = Alternar la barra lateral
@@ -228,12 +226,42 @@ shortcuts-card-collapse-button = Mostrar menos
 go-back-button =
     .tooltiptext = Regresar
 
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    Los complementos y temas son como aplicaciones para el navegador y permiten
+    proteger tus contraseñas, descargar vídeos, encontrar ofertas, bloquear publicidad,
+    cambiar la apariencia del navegador y mucho más. Suelen ser terceros quienes desarrollan
+    estos pequeños programas de software. Estos son algunos <a data-l10n-name="learn-more-trigger">recomendados</a>
+    por { -brand-product-name }, para una seguridad, rendimiento
+    y funcionalidad excepcionales.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations = Algunas de estas recomendaciones son personalizadas. Se basan complementos instaladas, preferencias de tu perfil y estadísticas de uso.
+discopane-notice-learn-more = Saber más
+install-theme-button = Instalar tema
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Administrar
+find-more-addons = Encuentra más complementos
+
 ## Add-on actions
 
+report-addon-button = Denunciar
 remove-addon-button = Eliminar
 disable-addon-button = Deshabilitar
 enable-addon-button = Habilitar
-addons-enabled-heading = Habilitado
+expand-addon-button = Más opciones
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Opciones
+       *[other] Preferencias
+    }
+details-addon-button = Detalles
+release-notes-addon-button = Informe de novedades
+permissions-addon-button = Permisos
+addons-enabled-heading = Habilitados
 addons-disabled-heading = Deshabilitado
 addon-detail-author-label = Autor
 addon-detail-version-label = Versión
@@ -241,3 +269,23 @@ addon-detail-version-label = Versión
 # Variables:
 #   $name (string) - The name of the add-on
 addon-name-disabled = { $name } (deshabilitado)
+
+## Pending uninstall message bar
+
+pending-uninstall-undo-button = Deshacer
+addon-detail-updates-label = Permitir actualizaciones automáticas
+addon-detail-updates-radio-default = Predeterminado
+addon-detail-updates-radio-on = Activado
+addon-detail-updates-radio-off = Desactivado
+addon-detail-update-check-label = Buscar actualizaciones
+install-update-button = Actualizar
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Permitido en ventanas privadas
+addon-detail-private-browsing-allow = Permitir
+addon-detail-private-browsing-disallow = No permitir
+available-updates-heading = Actualizaciones disponibles
+recent-updates-heading = Actualizaciones recientes
+release-notes-loading = Cargando…
+recommended-extensions-heading = Complementos recomendados

@@ -34,9 +34,24 @@ cert-error-domain-mismatch-single-nolink = વેબસાઇટ્સ પ્ર
 # $subject-alt-names (String) - Alternate domain names for which the cert is valid.
 cert-error-domain-mismatch-multiple = વેબસાઇટ્સ પ્રમાણપત્ર દ્વારા તેમની ઓળખ સાબિત કરે છે. { -brand-short-name } આ સાઇટ પર વિશ્વાસ કરતું નથી કારણ કે તે પ્રમાણપત્રનો ઉપયોગ કરે છે જે { $hostname } માટે માન્ય નથી. પ્રમાણપત્ર ફક્ત નીચેના નામો માટે માન્ય છે: { $subject-alt-names }
 # Variables:
+# $hostname (String) - Hostname of the website with cert error.
+# $not-after-local-time (Date) - Certificate is not valid after this time.
+cert-error-expired-now = વેબસાઈટો તેમની ઓળખ પ્રમાણપત્રો દ્વારા સાબિત કરે છે, જે સેટ ટાઇમ અવધિ માટે માન્ય છે. { $hostname } માટેનો પ્રમાણપત્ર { $not-after-local-time } પર સમાપ્ત થયો નથી.
+# Variables:
+# $hostname (String) - Hostname of the website with cert error.
+# $not-before-local-time (Date) - Certificate is not valid before this time.
+cert-error-not-yet-valid-now = વેબસાઈટો તેમની ઓળખ પ્રમાણપત્રો દ્વારા સાબિત કરે છે, જે સેટ ટાઇમ અવધિ માટે માન્ય છે. { $hostname } માટેનો પ્રમાણપત્ર { $not-before-local-time } સુધી માન્ય રહેશે નહીં.
+# Variables:
 # $error (String) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
 cert-error-code-prefix-link = ભૂલ કોડ: <a data-l10n-name="error-code-link">{ $error }</a>
 # Variables:
 # $hostname (String) - Hostname of the website with cert error.
 cert-error-symantec-distrust-description = વેબસાઇટ્સ પ્રમાણપત્રો દ્વારા તેમની ઓળખ સાબિત કરે છે, જે પ્રમાણપત્ર સત્તાવાળાઓ દ્વારા જાહેર કરવામાં આવે છે. મોટાભાગના બ્રાઉઝર્સ હવે GeoTrust, RapidSSL, Symantec, Thawte, અને VeriSign દ્વારા પ્રમાણિત પ્રમાણપત્રો પર વિશ્વાસ કરતા નથી. { $hostname } આ અધિકારીઓમાંથી એકમાંથી પ્રમાણપત્રનો ઉપયોગ કરે છે અને તેથી વેબસાઇટની ઓળખ સાબિત કરી શકાતી નથી.
 cert-error-symantec-distrust-admin = તમે વેબસાઇટના વ્યવસ્થાપકને આ સમસ્યાની જાણ કરી શકો છો.
+# Variables:
+# $hasHSTS (Boolean) - Indicates whether HSTS header is present.
+cert-error-details-hsts-label = HTTP સખત પરિવહન સુરક્ષા: { $hasHSTS }
+# Variables:
+# $hasHPKP (Boolean) - Indicates whether HPKP header is present.
+cert-error-details-key-pinning-label = HTTP સાર્વજનિક કી પિનિંગ: { $hasHPKP }
+cert-error-details-cert-chain-label = પ્રમાણપત્ર સાંકળ:

@@ -29,11 +29,6 @@ search-input-box =
             [windows] Localizar nas opções
            *[other] Localizar nas preferências
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] A sua organização desativou a habilidade de alterar algumas opções.
-       *[other] A sua organização desativou a habilidade de alterar algumas preferências.
-    }
 managed-notice = O seu navegador está a ser gerido pela sua organização.
 pane-general-title = Geral
 category-general =
@@ -398,6 +393,49 @@ choose-bookmark =
     .label = Utilizar marcador…
     .accesskey = m
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Conteúdo do ecrã inicial do Firefox
+home-prefs-content-description = Escolha que conteúdo deseja no seu ecrã inicial do Firefox.
+home-prefs-content-discovery-description = A descoberta de conteúdo no Início do Firefox permite-lhe descobrir artigos relevantes e de alta qualidade de toda a web.
+home-prefs-search-header =
+    .label = Pesquisa Web
+home-prefs-topsites-header =
+    .label = Sites mais visitados
+home-prefs-topsites-description = Os sites que mais visita
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Recomendado por { $provider }
+home-prefs-recommended-by-description = Ótimo conteúdo de toda a web, personalizado para si
+home-prefs-recommended-by-learn-more = Como funciona
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Histórias patrocinadas
+home-prefs-highlights-header =
+    .label = Destaques
+home-prefs-highlights-description = Uma seleção de sites que guardou ou visitou
+home-prefs-highlights-option-visited-pages =
+    .label = Páginas visitadas
+home-prefs-highlights-options-bookmarks =
+    .label = Marcadores
+home-prefs-highlights-option-most-recent-download =
+    .label = Transferência mais recente
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Páginas guardadas no { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Excertos
+home-prefs-snippets-description = Atualizações da { -vendor-short-name } e do { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } linha
+           *[other] { $num } linhas
+        }
+
 ## Search Section
 
 search-bar-header = Barra de pesquisa
@@ -559,6 +597,12 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Exceções…
     .accesskey = x
+forms-generate-passwords =
+    .label = Sugerir e gerar palavras-passe fortes
+    .accesskey = u
+forms-fill-logins-and-passwords =
+    .label = Auto-preencher credenciais e palavras-passe
+    .accesskey = i
 forms-saved-logins =
     .label = Credenciais guardadas…
     .accesskey = g
@@ -669,7 +713,6 @@ addressbar-suggestions-settings = Alterar preferências para as sugestões dos m
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Bloqueio de conteúdo
-content-blocking-description = Bloqueie conteúdo de terceiros que lhe monitoriza pela web. Controle quanto da sua atividade online é armazenada e partilhada entre websites.
 content-blocking-section-description = Proteja a sua privacidade enquanto navega. Bloqueie conteúdo invisível que monitoriza os sites que visita e lhe perfila. Bloquear parte deste conteúdo pode fazer com que as páginas carreguem mais rapidamente.
 content-blocking-learn-more = Saber mais
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -683,9 +726,7 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Personalizado
     .accesskey = e
-content-blocking-standard-description = Apenas bloqueia trackers em janelas privadas.
 content-blocking-standard-desc = Equilibrado para proteção e desempenho. Permite alguns trackers para que os websites funcionem corretamente.
-content-blocking-strict-desc = Bloqueia todos os trackers que o { -brand-short-name } deteta. Pode causar com que alguns sites quebrem.
 content-blocking-strict-description = Proteção mais forte, pode causar com que alguns sites quebrem.
 content-blocking-custom-desc = Escolha o que bloquear.
 content-blocking-private-trackers = Trackers conhecidos apenas em janelas privadas

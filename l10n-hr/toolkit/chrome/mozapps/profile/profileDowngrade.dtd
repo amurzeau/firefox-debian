@@ -1,0 +1,20 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!-- LOCALIZATION NOTE:
+ This UI can be most easily shown by modifying the version in compatibility.ini
+ to a newer version and then starting Firefox.
+ For this feature, "installation" is used to mean "this discrete download of
+ Firefox" and "version" is used to mean "the specific revision number of a
+ given Firefox channel". These terms are not synonymous.
+-->
+<!ENTITY window.title "Pokrenuli ste stariju Firefox inačicu">
+<!ENTITY window.style "width: 490px;">
+
+<!ENTITY window.nosync "Korištenje starije Firefox inačice može oštetiti zabilješke i povijest pretraživanja koje su već spremljeni u postojeći Firefox profil. Kako bi zaštitili vaše podatke, stvorite novi profil za ovu &brandShortName; instalaciju.">
+<!ENTITY window.sync "Korištenje starije Firefox inačice može oštetiti zabilješke i povijest pretraživanja koje su već spremljeni u postojeći Firefox profil. Kako bi zaštitili vaše podatke, stvorite novi profil za ovu &brandShortName; instalaciju. Uvijek se možete prijaviti u svoj &syncBrand.fxAccount.label; i sinkronizirati svoje zabilješke i povijest pretraživanja između profila.">
+
+<!ENTITY window.create "Stvori novi profil">
+<!ENTITY window.quit-win "Izlaz">
+<!ENTITY window.quit-nonwin "Izlaz">

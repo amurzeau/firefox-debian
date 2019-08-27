@@ -39,10 +39,6 @@ category-search =
 pane-privacy-title = ឯកជន​ភាព & សុវត្ថិភាព
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = គណនី Firefox
-category-sync =
-    .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } ជំនួយ
 focus-search =
     .key = f
@@ -334,6 +330,35 @@ choose-bookmark =
     .label = ប្រើ​ចំណាំ…
     .accesskey = ច
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = ខ្លឹមសារ Firefox Home
+home-prefs-content-description = ជ្រើសរើស​ខ្លឹមសារ​អ្វីដែលអ្នកចង់បាននៅលើអេក្រង់ Firefox Home របស់អ្នក។
+home-prefs-search-header =
+    .label = ការស្វែងរកតាម​អ៊ីនធឺណិត
+home-prefs-topsites-header =
+    .label = សាយកំពូល
+home-prefs-topsites-description = គេហទំព័រ​ដែល​អ្នក​មើល​ច្រើន​បំផុត
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = បានណែនាំដោយ { $provider }
+home-prefs-recommended-by-learn-more = របៀប​ដែល​វា​ដំណើរការ
+home-prefs-highlights-header =
+    .label = រឿងសំខាន់ៗ
+home-prefs-highlights-description = ការជ្រើសរើស​គេហទំព័រ​ដែល​អ្នក​បាន​រក្សាទុក ឬ​មើល
+home-prefs-highlights-option-visited-pages =
+    .label = ទំព័រ​ដែល​បាន​ទស្សនា
+home-prefs-highlights-options-bookmarks =
+    .label = ចំណាំ
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = អត្ថបទសង្ខេប
+home-prefs-snippets-description = បច្ចុប្បន្នភាពពី { -vendor-short-name } និង { -brand-product-name }
+
 ## Search Section
 
 search-bar-header = របារស្វែងរក
@@ -445,8 +470,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = រក្សា​ទុក
     .accesskey = v
-sync-mobilepromo-single = តភ្ជាប់ឧបករណ៍ផ្សេងទៀត
-sync-mobilepromo-multi = គ្រប់គ្រងឧបករណ៍
 sync-tos-link = លក្ខខ័ណ្ឌ​សេវាកម្ម
 sync-fxa-privacy-notice = គោលនយោបាយ​ឯកជន
 
@@ -580,8 +603,6 @@ permissions-notification-pause =
 permissions-block-autoplay-media-exceptions =
     .label = ករណីលើកលែង…
     .accesskey = E
-autoplay-option-ask =
-    .label = សួរជានិច្ច
 permissions-block-popups =
     .label = ទប់ស្កាត់​​បង្អួច​លេច​ឡើង
     .accesskey = ទ
@@ -611,7 +632,6 @@ collection-health-report-link = ស្វែងយល់​​បន្ថែម
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = ការ​រាយការណ៍​ទិន្នន័យ​ត្រូវ​បាន​បិទ​សម្រាប់​ការ​កំណត់​រចនាសម្ព័ន្ធ​កំណែ​នេះ
-collection-browser-errors-link = ស្វែងយល់​បន្ថែម
 collection-backlogged-crash-reports-link = ស្វែងយល់​​បន្ថែម
 
 ## Privacy Section - Security

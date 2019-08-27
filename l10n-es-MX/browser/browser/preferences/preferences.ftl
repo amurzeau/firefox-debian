@@ -29,11 +29,7 @@ search-input-box =
             [windows] Encontrar en opciones
            *[other] Encontrar en configuraciones
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Tu organización ha deshabilitado la posibilidad de cambiar algunas opciones.
-       *[other] Tu organización ha deshabilitado la posibilidad de cambiar algunas preferencias.
-    }
+managed-notice = Tu organización gestiona el navegador.
 pane-general-title = General
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +42,6 @@ category-search =
 pane-privacy-title = Privacidad y seguridad
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Cuenta de Firefox
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -282,6 +274,7 @@ update-application-check-choose =
 update-application-manual =
     .label = Nunca busque actualizaciones (no recomendado)
     .accesskey = N
+update-application-warning-cross-user-setting = Este ajuste se aplicará a todas las cuentas de Windows y perfiles de { -brand-short-name } usando esta instalación de { -brand-short-name }.
 update-application-use-service =
     .label = Utilizar un servicio en segundo plano para instalar las actualizaciones
     .accesskey = s
@@ -292,6 +285,21 @@ update-pref-write-failure-title = Error de escritura
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = No se pudo guardar la preferencia. No se pudo escribir al archivo: { $path }
+update-setting-write-failure-title = Error al guardar las preferencias de actualizaciones
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    { -brand-short-name } encontró un error y no guardó esta modificación. Observa que establecer esta preferencia de actualización requiere de permiso para escribir el archivo mostrado más abajo. Si no eres capaz, pide a un administrador que conceda al grupo Usuarios control total para este archivo.
+    
+    No se pudo escribir en el archivo: { $path }
+update-in-progress-title = Actualización en curso
+update-in-progress-message = ¿Quieres que { -brand-short-name } continúe con esta actualización?
+update-in-progress-ok-button = &Descartar
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Continuar
 
 ## General Section - Performance
 
@@ -333,6 +341,9 @@ browsing-search-on-start-typing =
     .accesskey = x
 browsing-cfr-recommendations =
     .label = Recomendar extensiones mientras se navega
+    .accesskey = R
+browsing-cfr-features =
+    .label = Recomendar funciones mientras navegas
     .accesskey = R
 browsing-cfr-recommendations-learn-more = Aprender más
 
@@ -381,6 +392,49 @@ use-current-pages =
 choose-bookmark =
     .label = Usar marcador…
     .accesskey = m
+
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Contenido de la página de inicio de Firefox
+home-prefs-content-description = Selecciona el contenido que desea en la pantalla de inicio de Firefox.
+home-prefs-content-discovery-description = El descubrimiento de contenido en la página de inicio de Firefox te muestra artículos relevantes y de alta calidad provenientes de toda la red.
+home-prefs-search-header =
+    .label = Búsqueda web
+home-prefs-topsites-header =
+    .label = Sitios populares
+home-prefs-topsites-description = Los sitios que más visitas
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Recomendado por { $provider }
+home-prefs-recommended-by-description = El mejor contenido de la web, personalizado para ti
+home-prefs-recommended-by-learn-more = Cómo funciona
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Artículos patrocinados
+home-prefs-highlights-header =
+    .label = Destacados
+home-prefs-highlights-description = Una selección de sitios que has guardado o visitado
+home-prefs-highlights-option-visited-pages =
+    .label = Páginas visitadas
+home-prefs-highlights-options-bookmarks =
+    .label = Marcadores
+home-prefs-highlights-option-most-recent-download =
+    .label = Descargado recientemente
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Páginas guardadas en { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Fragmentos
+home-prefs-snippets-description = Actualizaciones de { -vendor-short-name } y { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } fila
+           *[other] { $num } filas
+        }
 
 ## Search Section
 
@@ -524,8 +578,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Guardar
     .accesskey = v
-sync-mobilepromo-single = Conectar otro dispositivo
-sync-mobilepromo-multi = Administrar dispositivos
 sync-connect-another-device = Conectar otro dispositivo
 sync-manage-devices = Administrar dispositivos
 sync-fxa-begin-pairing = Asociar un dispositivo
@@ -545,6 +597,12 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Excepciones…
     .accesskey = x
+forms-generate-passwords =
+    .label = Sugiere y genera contraseñas fuertes
+    .accesskey = u
+forms-fill-logins-and-passwords =
+    .label = Autollenar inicios de sesión y contraseñas
+    .accesskey = i
 forms-saved-logins =
     .label = Inicios de sesión guardados…
     .accesskey = I
@@ -608,6 +666,7 @@ sitedata-learn-more = Aprender más
 sitedata-delete-on-close =
     .label = Eliminar cookies y datos del sitio cuando se cierra { -brand-short-name }
     .accesskey = c
+sitedata-delete-on-close-private-browsing = En el modo de navegación privada permanente, las cookies y los datos del sitio se borrarán siempre cuando se cierre { -brand-short-name }.
 sitedata-allow-cookies-option =
     .label = Aceptar cookies y datos del sitio
     .accesskey = A
@@ -620,6 +679,10 @@ sitedata-block-desc = Tipo de contenido bloqueado
     .accesskey = T
 sitedata-option-block-trackers =
     .label = Rastreadores de terceros
+sitedata-option-block-cross-site-trackers =
+    .label = Rastreadores multisitio
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Rastreadores multisitio y de red social
 sitedata-option-block-unvisited =
     .label = Cookies de sitios web no visitados
 sitedata-option-block-all-third-party =
@@ -654,7 +717,8 @@ addressbar-suggestions-settings = Cambiar las preferencias para las sugerencias 
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Bloqueo de contenido
-content-blocking-description = Bloquear el contenido de terceros que te rastrea en la web. Controla cuánto de tu actividad en línea se almacena y compartes entre sitios web.
+content-blocking-enhanced-tracking-protection = Protección antirrastreo mejorada
+content-blocking-section-description = Protege tu privacidad mientras navegas. Bloquea el contenido invisible que rastrea los sitios que visitas. Bloquear parte de este contenido puede hacer que las páginas se carguen más rápido.
 content-blocking-learn-more = Saber más
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -667,25 +731,39 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Personalizar
     .accesskey = P
-content-blocking-standard-description = Sólo bloquea rastreadores conocidos en pestañas privadas.
 content-blocking-standard-desc = Balanceado para protección y rendimiento. Permite algunos rastreadores, así lo sitios web funcionan adecuadamente.
-content-blocking-strict-desc = Bloquear todos los rastreadores que { -brand-short-name } detecte. Puede causar errores en algunos sitios web.
+content-blocking-strict-description = Protección más fuerte; puede interferir con el funcionamiento de algunos sitios.
 content-blocking-custom-desc = Elegir que bloquear
 content-blocking-private-trackers = Rastreadores conocidos solo en ventanas privadas
 content-blocking-third-party-cookies = Cookies de rastreadores de terceros
+content-blocking-etp-standard-desc = Equilibrada entre protección y rendimiento. Las páginas se cargarán con normalidad.
+content-blocking-etp-strict-desc = Protección más elevada, pero puede causar que algunos sitios o contenidos fallen.
+content-blocking-etp-custom-desc = Elige cuáles rastreadores y scripts quieres bloquear.
+content-blocking-private-windows = Contenido de rastreo en ventanas privadas
+content-blocking-cross-site-tracking-cookies = Cookies de rastreo multisitio
+content-blocking-social-media-trackers = Rastreadores de red social
 content-blocking-all-cookies = Todas las cookies
 content-blocking-unvisited-cookies = Cookies de sitios no visitados
 content-blocking-all-windows-trackers = Rastreadores conocidos en todas las ventanas
+content-blocking-all-windows-tracking-content = Contenido de rastreo en todas las ventanas
 content-blocking-all-third-party-cookies = Todas las cookies de terceros
+content-blocking-cryptominers = Criptomineros
+content-blocking-fingerprinters = Huellas dactilares
 content-blocking-warning-title = ¡Atención!
-content-blocking-warning-desc = Bloquear cookies y rastreadores puede causar que algunos sitios web fallen. Es fácil de deshabilitar el bloqueo en sitios en lo que confías.
+content-blocking-warning-description = Bloquear el contenido puede hacer que algunos sitios dejen de funcionar. Es fácil desactivar el bloqueo para los sitios en los que confías.
 content-blocking-learn-how = Saber cómo
+content-blocking-etp-warning-description = Bloquear rastreadores puede repercutir en el funcionamiento de algunos sitios. Actualiza una página con los rastreadores para que se cargue todo el contenido.
+content-blocking-warning-learn-how = Aprende cómo
+content-blocking-reload-description = Tendrás que volver a cargar tus pestañas para aplicar estos cambios.
 content-blocking-reload-tabs-button =
     .label = Recargar todas las pestañas
     .accesskey = R
 content-blocking-trackers-label =
     .label = Rastreadores
     .accesskey = T
+content-blocking-tracking-content-label =
+    .label = Contenido de rastreo
+    .accesskey = C
 content-blocking-tracking-protection-option-all-windows =
     .label = En todas las ventanas
     .accesskey = A
@@ -702,6 +780,11 @@ content-blocking-expand-section =
 content-blocking-cryptominers-label =
     .label = Criptomineros
     .accesskey = y
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+content-blocking-fingerprinters-label =
+    .label = Fingerprinters
+    .accesskey = F
 
 ## Privacy Section - Tracking
 
@@ -732,9 +815,16 @@ permissions-notification-link = Saber más
 permissions-notification-pause =
     .label = Pausar las notificaciones hasta que { -brand-short-name } reinicie
     .accesskey = n
+permissions-block-autoplay-media2 =
+    .label = Bloquear la reproducción automática de sonido en los sitios web
+    .accesskey = B
 permissions-block-autoplay-media-exceptions =
     .label = Excepciones...
     .accesskey = E
+permissions-autoplay = Reproducción automática
+permissions-autoplay-settings =
+    .label = Configuración…
+    .accesskey = C
 permissions-block-popups =
     .label = Bloquear ventanas emergentes
     .accesskey = B

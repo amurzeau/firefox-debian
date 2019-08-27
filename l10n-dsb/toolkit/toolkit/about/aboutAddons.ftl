@@ -154,9 +154,6 @@ private-browsing-description2 =
     { -brand-short-name } pśidawaśo, pó standarźe w priwatnych woknach njefunkcioněruju. Snaźkuli
     dowólujośo to w nastajenjach, rozšyrjenje w priwatnem modusu njefunkcioněrujo a njama pśistup k wašym
     aktiwitam online. Smy toś tu změnu cynili, aby waš priwatny modus priwatny wóstał. <label data-l10n-name="private-browsing-learn-more">Zgóńśo wěcej wó zastojanju nastajenjow rozšyrjenja.</label>
-extensions-view-discover =
-    .name = Dodanki wobstaraś
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-discopane =
     .name = Dopórucenja
     .tooltiptext = { extensions-view-discopane.name }
@@ -252,6 +249,12 @@ shortcuts-modifier-other = Strg abo Alt zapśimjeś
 shortcuts-invalid = Njepłaśiwa kombinacija
 shortcuts-letter = Zapódajśo pismik
 shortcuts-system = Tastowa skrotconka { -brand-short-name } njedajo se pśepisaś
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Dwójna tastowa skrotconka
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } se ako tastowa skrotconka wěcej raz wužywa. Dwójne tastowe skrotconki mógu njewótcakane zaźaržanje zawinowaś.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -308,6 +311,16 @@ release-notes-addon-button = Wersijowe informacije
 permissions-addon-button = Pšawa
 addons-enabled-heading = Zmóžnjone
 addons-disabled-heading = Znjemóžnjone
+extension-enabled-heading = Zmóžnjony
+extension-disabled-heading = Znjemóžnjony
+theme-enabled-heading = Zmóžnjony
+theme-disabled-heading = Znjemóžnjony
+plugin-enabled-heading = Zmóžnjony
+plugin-disabled-heading = Znjemóžnjony
+dictionary-enabled-heading = Zmóžnjony
+dictionary-disabled-heading = Znjemóžnjony
+locale-enabled-heading = Zmóžnjony
+locale-disabled-heading = Znjemóžnjony
 ask-to-activate-button = Za aktiwěrowanje se pšašaś
 always-activate-button = Pśecej aktiwěrowaś
 never-activate-button = Nigda njeaktiwěrowaś

@@ -15,3 +15,11 @@ cert-error-untrusted-default = সার্টিফিকেটের উৎস
 # Variables:
 # $error (String) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
 cert-error-code-prefix-link = ভুল কোড: <a data-l10n-name="error-code-link">{ $error }</a>
+cert-error-symantec-distrust-admin = আপনি এই সমস্যা সম্পর্কে ওয়েবসাইট প্রশাসককে অবহিত করতে পারেন।
+# Variables:
+# $hasHSTS (Boolean) - Indicates whether HSTS header is present.
+cert-error-details-hsts-label = HTTP কঠোর পরিবহন নিরাপত্তা: { $hasHSTS }
+# Variables:
+# $hasHPKP (Boolean) - Indicates whether HPKP header is present.
+cert-error-details-key-pinning-label = HTTP পাবলিক কী পিন: { $hasHPKP }
+cert-error-details-cert-chain-label = সার্টিফিকেট চেইন:

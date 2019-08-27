@@ -172,7 +172,6 @@
 <!ENTITY compactVersion.accesskey "K">
 <!ENTITY folderPaneBar.label "Nástroje panelů složek">
 <!ENTITY folderPaneBar.accesskey "a">
-<!ENTITY folderModeSelector.label "Zobrazení složek">
 
 <!-- Sort Menu -->
 <!ENTITY sortMenu.label "Seřadit podle">
@@ -587,6 +586,7 @@
 <!ENTITY fileButton.tooltip "Přesune označenou zprávu do složky">
 <!ENTITY archiveButton.tooltip "Archivovat označené zprávy">
 <!ENTITY openConversationButton.tooltip "Zobrazit konverzaci k vybrané zprávě">
+<!ENTITY openMsgConversationButton.tooltip "Zobrazit konverzaci k vybrané zprávě">
 <!ENTITY nextButton.tooltip "Přejde na další nepřečtenou zprávu">
 <!ENTITY nextMsgButton.tooltip "Přejde na další zprávu">
 <!ENTITY previousButton.tooltip "Přejde na předcházející nepřečtenou zprávu">
@@ -605,7 +605,6 @@
 <!ENTITY tagButton.tooltip "Přidá štítek">
 <!ENTITY compactButton.tooltip "Ze zvolené složky odstraní smazané zprávy">
 <!ENTITY appmenuButton1.tooltip "Zobrazí nabídku aplikace &brandShortName;">
-
 <!ENTITY addonsButton.tooltip "Spravujte své doplňky">
 
 <!-- Toolbar Button Popup -->
@@ -707,6 +706,7 @@
 <!ENTITY saveAsVirtualFolderMenu.label "Uložit hledání jako složku…">
 
 <!-- Thread Pane -->
+<!ENTITY selectColumn.label "Vybrat zprávy">
 <!ENTITY threadColumn.label "Vlákno">
 <!ENTITY fromColumn.label "Od">
 <!ENTITY recipientColumn.label "Příjemce">

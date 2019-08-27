@@ -4,6 +4,7 @@
 
 about-telemetry-ping-data-source = Fonto de datumoj de «ping»:
 about-telemetry-show-current-ping-data = Nunaj datumoj de «ping»
+about-telemetry-show-current-data = Nunaj datumoj
 about-telemetry-show-archived-ping-data = Arkĥivo de datumoj de «ping»
 about-telemetry-show-subsession-data = Montri datumojn de subseancoj
 about-telemetry-choose-ping = Elekti «ping»:
@@ -76,6 +77,7 @@ about-telemetry-settings-explanation = Telemezuro kolektas nun { about-telemetry
 #   $timeStamp (String): ping localized timestamp, e.g. “2017/07/08 10:40:46”
 about-telemetry-ping-details = Ĉiu informpeco estas sendita en pako ene de “<a data-l10n-name="ping-link">ping-oj</a>”. Vi nun vidas la ping { $name }, { $timestamp }.
 about-telemetry-ping-details-current = Ĉiu informpeco estas sendita en pako ene de “<a data-l10n-name="ping-link">ping-oj</a>“. Vi nun vidas la ping nuna.
+about-telemetry-data-details-current = La informoj estas senditaj en pakedoj, kiuj nomiĝas “<a data-l10n-name="ping-link">pings</a>“. Vi vidas la nunajn datumojn.
 # string used as a placeholder for the search field
 # More info about it can be found here:
 # https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
@@ -102,6 +104,8 @@ about-telemetry-no-search-results-all = Bedaŭrinde ne estis rezultoj por “{ $
 about-telemetry-no-data-to-display = Bedaŭrinde nuntempe ne estas datumoj disponeblaj en “{ $sectionName }”
 # used as a tooltip for the “current” ping title in the sidebar
 about-telemetry-current-ping-sidebar = nuna ping
+# used as a tooltip for the “current” ping title in the sidebar
+about-telemetry-current-data-sidebar = nunaj datumoj
 # used in the “Ping Type” select
 about-telemetry-telemetry-ping-type-all = ĉiuj
 # button label to copy the histogram

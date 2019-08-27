@@ -15,3 +15,10 @@ cert-error-untrusted-default = Lo certificat proven pas d'una font segura.
 # $error (String) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
 cert-error-code-prefix-link = Còdi d’error : <a data-l10n-name="error-code-link">{ $error }</a>
 cert-error-symantec-distrust-admin = Podètz avisar l’administrator d’aqueste site web d’aquel problèma.
+# Variables:
+# $hasHSTS (Boolean) - Indicates whether HSTS header is present.
+cert-error-details-hsts-label = Seguretat estricta de transpòrt HTTP: { $hasHSTS }
+# Variables:
+# $hasHPKP (Boolean) - Indicates whether HPKP header is present.
+cert-error-details-key-pinning-label = Clau publica fixa HTTP : { $hasHPKP }
+cert-error-details-cert-chain-label = Cadena de certificats :

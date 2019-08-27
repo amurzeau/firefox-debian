@@ -77,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = Aleqqem aneggaru
 detail-contributions-description = Aneflay n uzegrir-agi isutur-ak-d tallelt akken ad iseddu taneflit-ines ticki tmuddeḍ-as cwiṭ n tewsa.
+detail-contributions-button = Ttekki
+    .title = Ttekki deg usnerni n uzegrir-agi
+    .accesskey = T
 detail-update-type =
     .value = Aleqqem awurman
 detail-update-default =
@@ -90,6 +93,11 @@ detail-update-manual =
     .tooltiptext = Ur sebdad ara ileqman s wudem awurman
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Sker deg usfaylu uslig
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overridden by the user.
+detail-private-disallowed-label = Ur yettusireg ara deg isfuyla usligen
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Yesra anekcum ɣer isfuyla usligen
 detail-private-browsing-on =
     .label = Sireg
     .tooltiptext = Sermed aya deg iccer uslig
@@ -138,9 +146,9 @@ legacy-warning-show-legacy = Sken akk iseɣzaf iqburen
 legacy-extensions =
     .value = Iseγzaf iqburen
 legacy-extensions-description = Iseγzaf-agi ur sεin ara ilugan n { -brand-short-name } imiranen γef aya ittwasensen. <label data-l10n-name="legacy-learn-more">Issin ugar ɣef usnifel ɣer izegrar</label>
-extensions-view-discover =
-    .name = Awi-d izegrar
-    .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Iwellihen
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Ileqman n melmi kan
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -222,6 +230,7 @@ manage-extensions-shortcuts =
     .label = Sefrek inegzumen n isiɣzaf
     .accesskey = i
 shortcuts-no-addons = Ur ɣur-k ara ula d yiwen n usiɣzef iremden.
+shortcuts-no-commands = Isiɣzaf id-iteddun ur sɛin ara inegzumen:
 shortcuts-input =
     .placeholder = Sekcem anegzum
 shortcuts-browserAction = Rmed isiɣzaf
@@ -231,6 +240,11 @@ shortcuts-modifier-mac = Seddu Ctrl, Alt, neɣ ⌘
 shortcuts-modifier-other = Seddu Ctrl neɣ Alt
 shortcuts-invalid = Yir tuddsa
 shortcuts-letter = Sekcem asekkil
+shortcuts-system = Ur yezmir ad isnifel anegzum n { -brand-short-name }
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Iseqdac-it yakan { $addon }
 shortcuts-card-collapse-button = Sken qel
 go-back-button =
     .tooltiptext = Uɣal ɣer deffir
@@ -271,6 +285,16 @@ release-notes-addon-button = Iwenniten n lqem
 permissions-addon-button = Tisirag
 addons-enabled-heading = Irmed
 addons-disabled-heading = Arurmid
+extension-enabled-heading = Irmed
+extension-disabled-heading = Yensa
+theme-enabled-heading = Irmed
+theme-disabled-heading = Yensa
+plugin-enabled-heading = Irmed
+plugin-disabled-heading = Yensa
+dictionary-enabled-heading = Irmed
+dictionary-disabled-heading = Arurmid
+locale-enabled-heading = Irmed
+locale-disabled-heading = Arurmid
 ask-to-activate-button = Suter armed
 always-activate-button = Rmed yal tikelt
 never-activate-button = weṛǧin ad yermed
@@ -283,6 +307,14 @@ addon-detail-rating-label = Tizmilin
 # Variables:
 #   $name (string) - The name of the add-on
 addon-name-disabled = { $name } ( d arurmid)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } iceggiren
+       *[other] { $numberOfReviews } iceggiren
+    }
 
 ## Pending uninstall message bar
 
@@ -302,8 +334,15 @@ addon-badge-private-browsing-allowed =
     .title = Yettusireg def usfaylu uslig kan
 addon-detail-private-browsing-allow = Sireg
 addon-detail-private-browsing-disallow = Ur ttaǧǧa ara
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Ihul
+    .alt = Ihul
 available-updates-heading = Ileqman yellan
 recent-updates-heading = Ileqman n melmi kan
 release-notes-loading = Asali…
 release-notes-error = Suref-aɣ, teḍṛa-d tuccḍa deg usali n iwenniten n lqem.
 addon-permissions-empty = Asiɣzef-agi ur yesra ara tisirag
+recommended-extensions-heading = Isiɣzaf ihulen
+recommended-themes-heading = Isental ihulen

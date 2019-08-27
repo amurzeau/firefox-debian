@@ -39,6 +39,15 @@ about-debugging-sidebar-no-devices = কোন ডিভাইস পাওয়�
 # Text displayed in buttons found in sidebar items representing remote runtimes.
 # Clicking on the button will attempt to connect to the runtime.
 about-debugging-sidebar-item-connect-button = সংযুক্ত করুন
+# Text displayed in buttons found in sidebar items when the runtime is connecting.
+about-debugging-sidebar-item-connect-button-connecting = সংযুক্ত করা হচ্ছে …
+# Text displayed in buttons found in sidebar items when the connection failed.
+about-debugging-sidebar-item-connect-button-connection-failed = সংযোগ ব্যর্থ হয়েছে
+# Text displayed in connection warning on sidebar item of the runtime when connecting to
+# the runtime is taking too much time.
+about-debugging-sidebar-item-connect-button-connection-not-responding = সংযোগটি এখনও অমীমাংসিত, গন্তব্য ব্রাউজারের বার্তাগুলো দেখুন
+# Text displayed as connection error in sidebar item when the connection has timed out.
+about-debugging-sidebar-item-connect-button-connection-timeout = সংযোগের সময় উত্তীর্ণ হয়ে গেছে
 # Temporary text displayed in sidebar items representing remote runtimes after
 # successfully connecting to them. Temporary UI, do not localize.
 about-debugging-sidebar-item-connected-label = সংযুক্ত হয়েছে
@@ -46,6 +55,9 @@ about-debugging-sidebar-item-connected-label = সংযুক্ত হয়ে�
 # Firefox) has not been detected yet. Typically, Android phones connected via USB with
 # USB debugging enabled, but where Firefox is not started.
 about-debugging-sidebar-runtime-item-waiting-for-browser = ব্রাউজার এর জন্য অপেক্ষা করা হচ্ছে…
+# Text displayed in sidebar items for remote devices that have been disconnected from the
+# computer.
+about-debugging-sidebar-runtime-item-unplugged = অসংযুক্ত
 # Title for runtime sidebar items that are related to a specific device (USB, WiFi).
 about-debugging-sidebar-runtime-item-name =
     .title = { $displayName } ({ $deviceName })
@@ -213,3 +225,8 @@ about-debugging-worker-push-service =
 # Displayed as name for the Main Process debug target in the Processes category. Only for
 # remote runtimes, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-main-process-name = প্রধান প্রক্রিয়া
+# Alt text used for the close icon of message component (warnings, errors and notifications).
+about-debugging-message-close-icon =
+    .alt = বার্তা বন্ধ করুন
+# Label text used for default state of details of message component.
+about-debugging-message-details-label = বিস্তারিত

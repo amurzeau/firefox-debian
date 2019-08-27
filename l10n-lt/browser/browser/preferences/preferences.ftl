@@ -29,11 +29,6 @@ search-input-box =
             [windows] Rasti nuostatose
            *[other] Rasti nuostatose
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Jūsų organizacija apribojo galimybę keisti dalį nuostatų.
-       *[other] Jūsų organizacija apribojo galimybę keisti dalį nuostatų.
-    }
 managed-notice = Jūsų naršyklę tvarko jūsų organizacija.
 pane-general-title = Bendrosios
 category-general =
@@ -401,6 +396,50 @@ choose-bookmark =
     .label = Tinklalapis iš adresyno…
     .accesskey = T
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = „Firefox“ pradžios turinys
+home-prefs-content-description = Pasirinkite, kokį turinį norite matyti „Firefox“ pradžios ekrane
+home-prefs-content-discovery-description = „Firefox“ turinio atradimas pradžios tinklalapyje leidžia atrasti aukštos kokybės ir jums galimai įdomius straipsnius iš interneto.
+home-prefs-search-header =
+    .label = Paieška internete
+home-prefs-topsites-header =
+    .label = Lankomiausios svetainės
+home-prefs-topsites-description = Dažniausiai lankomos svetainės
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Rekomendavo „{ $provider }“
+home-prefs-recommended-by-description = Puikus turinys iš viso saityno, parinktas specialiai jums
+home-prefs-recommended-by-learn-more = Kaip tai veikia
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Rėmėjų straipsniai
+home-prefs-highlights-header =
+    .label = Akcentai
+home-prefs-highlights-description = Aplankytų bei išsaugotų svetainių rinkinys
+home-prefs-highlights-option-visited-pages =
+    .label = Aplankyti tinklalapiai
+home-prefs-highlights-options-bookmarks =
+    .label = Adresynas
+home-prefs-highlights-option-most-recent-download =
+    .label = Paskiausias atsisiuntimas
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Į „{ -pocket-brand-name }“ įrašyti tinklalapiai
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Iškarpos
+home-prefs-snippets-description = „{ -vendor-short-name }“ ir „{ -brand-product-name }“ naujienos
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } eilutė
+            [few] { $num } eilučių
+           *[other] { $num } eilutės
+        }
+
 ## Search Section
 
 search-bar-header = Paieškos laukas
@@ -565,6 +604,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Siūlyti ir generuoti stiprius slaptažodžius
     .accesskey = i
+forms-fill-logins-and-passwords =
+    .label = Automatiškai užpildyti prisijungimus ir slaptažodžius
+    .accesskey = m
 forms-saved-logins =
     .label = Įrašyti prisijungimai…
     .accesskey = p
@@ -641,6 +683,10 @@ sitedata-block-desc = Blokuojamas tipas
     .accesskey = t
 sitedata-option-block-trackers =
     .label = Trečiųjų šalių stebėjimo elementai
+sitedata-option-block-cross-site-trackers =
+    .label = Tarp svetainių veikiantys stebėjimo elementai
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Tarp svetainių veikiantys ir socialinių tinklų stebėjimo elementai
 sitedata-option-block-unvisited =
     .label = Slapukai iš neaplankytų svetainių
 sitedata-option-block-all-third-party =
@@ -675,7 +721,7 @@ addressbar-suggestions-settings = Keisti ieškyklių siūlymų nuostatas
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Turinio blokavimas
-content-blocking-description = Blokuokite trečiųjų šalių turinį, kuris stebi jūsų veiklą internete. Kontroliuokite, kiek jūsų veiklos saugoma ir dalijamasi tarp svetainių.
+content-blocking-enhanced-tracking-protection = Išplėsta apsauga nuo stebėjimo
 content-blocking-section-description = Saugokite savo privatumą naršydami. Blokuokite nematomą turinį, kuris seka jūsų lankomas svetaines ir jus profiliuoja. Užblokavus dalį šio turinio gali pagreitėti tinklalapių įkėlimas.
 content-blocking-learn-more = Sužinoti daugiau
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -689,22 +735,29 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Kitas
     .accesskey = K
-content-blocking-standard-description = Blokuoja tik žinomus stebėjimo elementus privačiojo naršymo languose.
 content-blocking-standard-desc = Pritaikyta saugumui ir našumui. Leidžia dalį stebėjimo elementų, kad svetainės veiktų tinkamai.
-content-blocking-strict-desc = Blokuoja visus „{ -brand-short-name }“ aptinkamus stebėjimo elementus. Gali sutrikti kai kurių svetainių veikimas.
 content-blocking-strict-description = Stipresnė apsauga, tačiau gali sutrikti kai kurių svetainių veikimas.
 content-blocking-custom-desc = Pasirinkite, ką blokuoti.
 content-blocking-private-trackers = Žinomi stebėjimo elementai tik privačiojo naršymo languose
 content-blocking-third-party-cookies = Trečiųjų šalių stebėjimo slapukai
+content-blocking-etp-standard-desc = Subalansuota apsaugai ir našumui. Tinklalapiai bus įkeliami įprastai.
+content-blocking-etp-strict-desc = Stipresnė apsauga, tačiau gali sutrikti kai kurių svetainių veikimas.
+content-blocking-etp-custom-desc = Pasirinkite, kurios stebėjimo elementus ir scenarijus norite blokuoti.
+content-blocking-private-windows = Stebėjimui naudojamas turinys privačiojo naršymo languose
+content-blocking-cross-site-tracking-cookies = Tarp svetainių veikiantys stebėjimo slapukai
+content-blocking-social-media-trackers = Socialinių tinklų stebėjimo elementai
 content-blocking-all-cookies = Visi slapukai
 content-blocking-unvisited-cookies = Slapukai iš nelankytų svetainių
 content-blocking-all-windows-trackers = Žinomi stebėjimo elementai visuose languose
+content-blocking-all-windows-tracking-content = Stebėjimui naudojamas turinys visuose languose
 content-blocking-all-third-party-cookies = Visi trečiųjų šalių slapukai
 content-blocking-cryptominers = Kriptovaliutų kasėjai
 content-blocking-fingerprinters = Skaitmeninių atspaudų stebėjimas
 content-blocking-warning-title = Dėmesio!
 content-blocking-warning-description = Blokuojant turinį gali sutrikti kai kurių svetainių veikimas. Blokavimą galima lengvai išjungti patikimose svetainėse.
 content-blocking-learn-how = Sužinoti kaip
+content-blocking-etp-warning-description = Stebėjimo elementų blokavimas gali sutrikdyti kai kurių svetainių veikimą. Norėdami įkelti visą turinį, tinklalapį su stebėjimo elementais įkelkite iš naujo.
+content-blocking-warning-learn-how = Sužinoti kaip
 content-blocking-reload-description = Norėdami pritaikyti šiuos pakeitimus, turėsite įkelti savo korteles iš naujo.
 content-blocking-reload-tabs-button =
     .label = Iš naujo įkelti visas korteles
@@ -712,6 +765,9 @@ content-blocking-reload-tabs-button =
 content-blocking-trackers-label =
     .label = Stebėjimo elementai
     .accesskey = S
+content-blocking-tracking-content-label =
+    .label = Stebėjimui naudojamas turinys
+    .accesskey = t
 content-blocking-tracking-protection-option-all-windows =
     .label = Visuose languose
     .accesskey = V

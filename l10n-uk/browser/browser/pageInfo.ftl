@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/. --
 
 page-info-window =
-    .style = width: 435px; min-height: 480px;
+    .style = width: 690px; min-height: 610px;
 copy =
     .key = C
 menu-copy =
@@ -16,6 +16,8 @@ menu-select-all =
     .accesskey = и
 close-window =
     .key = A
+close-dialog =
+    .key = w
 general-tab =
     .label = Основна
     .accesskey = с

@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/. --
 
 page-info-window =
-    .style = width: 600px; min-height: 550px;
+    .style = width: 620px; min-height: 550px;
 copy =
     .key = C
 menu-copy =
@@ -16,6 +16,8 @@ menu-select-all =
     .accesskey = s
 close-window =
     .key = A
+close-dialog =
+    .key = w
 general-tab =
     .label = Genel
     .accesskey = G
@@ -75,7 +77,7 @@ permissions-for =
     .value = İzinler:
 security-tab =
     .label = Güvenlik
-    .accesskey = G
+    .accesskey = e
 security-view =
     .label = Sertifikayı göster
     .accesskey = S
@@ -226,6 +228,6 @@ media-block-image =
 # Variables:
 #   $website (string) - The url of the website pageInfo is getting info for
 page-info-page =
-    .title = Sayfa bilgisi - { $website }
+    .title = Sayfa Bilgileri - { $website }
 page-info-frame =
-    .title = Çerçeve bilgisi - { $website }
+    .title = Çerçeve Bilgileri - { $website }

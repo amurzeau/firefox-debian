@@ -160,9 +160,6 @@ private-browsing-description2 =
     extension won’t work while private browsing, and won’t have access to your online activities
     there. We’ve made this change to keep your private browsing private.
     <label data-l10n-name="private-browsing-learn-more">Learn how to manage extension settings</label>
-extensions-view-discover =
-    .name = Get Add-ons
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-discopane =
     .name = Recommendations
     .tooltiptext = { extensions-view-discopane.name }
@@ -258,6 +255,12 @@ shortcuts-modifier-other = Include Ctrl or Alt
 shortcuts-invalid = Invalid combination
 shortcuts-letter = Type a letter
 shortcuts-system = Can’t override a { -brand-short-name } shortcut
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Duplicate shortcut
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } is being used as a shortcut in more than one case. Duplicate shortcuts may cause unexpected behaviour.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -319,6 +322,16 @@ release-notes-addon-button = Release Notes
 permissions-addon-button = Permissions
 addons-enabled-heading = Enabled
 addons-disabled-heading = Disabled
+extension-enabled-heading = Enabled
+extension-disabled-heading = Disabled
+theme-enabled-heading = Enabled
+theme-disabled-heading = Disabled
+plugin-enabled-heading = Enabled
+plugin-disabled-heading = Disabled
+dictionary-enabled-heading = Enabled
+dictionary-disabled-heading = Disabled
+locale-enabled-heading = Enabled
+locale-disabled-heading = Disabled
 ask-to-activate-button = Ask to Activate
 always-activate-button = Always Activate
 never-activate-button = Never Activate

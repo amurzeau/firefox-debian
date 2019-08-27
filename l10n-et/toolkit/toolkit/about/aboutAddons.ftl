@@ -154,9 +154,13 @@ legacy-warning-show-legacy = Kuva aegunud laiendusi
 legacy-extensions =
     .value = Aegunud laiendused
 legacy-extensions-description = Need laiendused ei vasta tänapäevastele { -brand-short-name }i standarditele ja need keelati. <label data-l10n-name="legacy-learn-more">Vaata rohkem teavet lisadega toimunud muudatuste kohta</label>
+private-browsing-description2 = { -brand-short-name } on muutmas seda, kuidas laiendused töötavad privaatse veebilehitsemise režiimis. Uued { -brand-short-name }ile paigaldatud laiendused privaatsetes akendes vaikimisi enam ei tööta. Kui sa sätetes ei luba laienduse töötamist privaatsetes akendes, siis ei ole sel ligipääsu sinu tegevusele neis akendes. Me tegime selle muudatuse, et hoida sinu privaatne veebilehitsemine täielikult privaatsena. <label data-l10n-name="private-browsing-learn-more">Rohkem teavet laienduste sätete haldamise kohta</label>
 extensions-view-discover =
     .name = Hangi lisasid
     .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Soovitused
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Hiljutised uuendused
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -234,12 +238,134 @@ extensions-updates-update-selected =
 
 ## Extension shortcut management
 
+manage-extensions-shortcuts =
+    .label = Halda laienduste kiirklahve
+    .accesskey = H
+shortcuts-no-addons = Ühtki laiendust pole lubatud.
+shortcuts-no-commands = Järgmistel laiendustel puuduvad kiirklahvid:
+shortcuts-input =
+    .placeholder = Sisesta kiirklahvide kombinatsioon
+shortcuts-browserAction = Aktiveeri laiendus
+shortcuts-pageAction = Aktiveeri lehe toiming
+shortcuts-sidebarAction = Kuva/peida külgriba
+shortcuts-modifier-mac = Kaasa Ctrl, Alt või ⌘
+shortcuts-modifier-other = Kaasa Ctrl või Alt
+shortcuts-invalid = Sobimatu kombinatsioon
+shortcuts-letter = Sisesta täht
+shortcuts-system = Pole võimalik üle kirjutada { -brand-short-name }i kiirklahvide kombinatsiooni
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Lisa { $addon } juba kasutab seda
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] Näita veel ühte
+       *[other] Näita veel { $numberToShow }
+    }
+shortcuts-card-collapse-button = Näita vähem
+go-back-button =
+    .tooltiptext = Mine tagasi
 
 ## Recommended add-ons page
 
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro = Laiendused ja teemad on nagu äpid sinu brauseri jaoks. Need aitavad sul kaitsta paroole, laadida alla videoid, otsida häid tehinguid, blokkida tüütuid reklaame, muuta brauseri välimust ja veel palju muud. Need väikesed programmid on tihti arendatud kolmandate osapoolte poolt. Siin on valik { -brand-product-name }i poolt <a data-l10n-name="learn-more-trigger">soovitatud</a> lisasid, mis paistavad silma oma erakordse turvalisuse, võimekuse või funktsionaalsuse poolest.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations =
+    Mõned neist soovitustest on isikupärastatud. Need baseeruvad sinu teistel paigaldatud lisadel,
+    profiili sätetel ja kasutamise statistikal.
+discopane-notice-learn-more = Rohkem teavet
+privacy-policy = Privaatsusreeglid
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = arendajalt <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Kasutajaid: { $dailyUsers }
+install-extension-button = Paigalda { -brand-product-name }ile
+install-theme-button = Paigalda teema
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Halda
+find-more-addons = Avasta veel lisasid
 
 ## Add-on actions
 
+report-addon-button = Raporteeri
+remove-addon-button = Eemalda
+disable-addon-button = Keela
+enable-addon-button = Luba
+expand-addon-button = Rohkem sätteid
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Sätted
+       *[other] Eelistused
+    }
+details-addon-button = Üksikasjad
+release-notes-addon-button = Väljalaskemärkmed
+permissions-addon-button = Õigused
+addons-enabled-heading = Lubatud
+addons-disabled-heading = Keelatud
+ask-to-activate-button = Aktiveerimiseks küsitakse luba
+always-activate-button = Alati aktiivne
+never-activate-button = Mitte kunagi aktiivne
+addon-detail-author-label = Autor
+addon-detail-version-label = Versioon
+addon-detail-last-updated-label = Viimati uuendatud
+addon-detail-homepage-label = Koduleht
+addon-detail-rating-label = Hinnang
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Hinnatud hindele { NUMBER($rating, maximumFractionDigits: 1) } 5-st
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (keelatud)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] 1 kommentaar
+       *[other] { $numberOfReviews } kommentaari
+    }
 
 ## Pending uninstall message bar
 
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = Lisa <span data-l10n-name="addon-name">{ $addon }</span> eemaldati.
+pending-uninstall-undo-button = Võta tagasi
+addon-detail-updates-label = Automaatsed uuendused
+addon-detail-updates-radio-default = vaikimisi
+addon-detail-updates-radio-on = sees
+addon-detail-updates-radio-off = väljas
+addon-detail-update-check-label = Kontrolli uuendusi
+install-update-button = Uuenda
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Töötamine privaatsetes akendes
+addon-detail-private-browsing-help = Lubamise korral saab laiendus ligipääsu sinu tegevusele privaatsetes akendes. <a data-l10n-name="learn-more">Rohkem teavet</a>
+addon-detail-private-browsing-allow = lubatud
+addon-detail-private-browsing-disallow = keelatud
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Soovitus
+    .alt = Soovitus
+available-updates-heading = Saadaolevad uuendused
+recent-updates-heading = Hiljutised uuendused
+release-notes-loading = Laadimine…
+release-notes-error = Vabandust, väljalasketeate laadimisel esines viga.
+addon-permissions-empty = See laiendus ei nõua eriõigusi
+recommended-extensions-heading = Soovitatavad laiendused
+recommended-themes-heading = Soovitatavad teemad
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Tunned end loomingulisena? <a data-l10n-name="link">Loo endale oma teema Firefox Coloriga.</a>

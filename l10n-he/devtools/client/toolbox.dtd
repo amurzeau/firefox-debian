@@ -10,11 +10,6 @@
 <!ENTITY toggleToolboxF12.keycode          "VK_F12">
 <!ENTITY toggleToolboxF12.keytext          "F12">
 
-<!-- LOCALIZATION NOTE (browserToolboxStatusMessage): This is the label
-  -  shown next to status details when the Browser Toolbox fails to connect or
-  -  appears to be taking a while to do so. -->
-<!ENTITY browserToolboxStatusMessage "מצב חיבור לארגז הכלים של הדפדפן:">
-
 <!-- LOCALIZATION NOTE (options.context.advancedSettings): This is the label for
   -  the heading of the advanced settings group in the options panel. -->
 <!ENTITY options.context.advancedSettings "הגדרות מתקדמות">
@@ -27,7 +22,7 @@
   -  for the checkbox option to show user agent styles in the Inspector
   -  panel. -->
 <!ENTITY options.showUserAgentStyles.label "הצגת סגנונות דפדפן">
-<!ENTITY options.showUserAgentStyles.tooltip "הפעלת אפשרות זו תציג את סגנונות בררת המחדל שנטענים על ידי הדפדפן.">
+<!ENTITY options.showUserAgentStyles.tooltip "הפעלת אפשרות זו תציג את סגנונות בררת המחדל שנטענים על־ידי הדפדפן.">
 
 <!-- LOCALIZATION NOTE (options.collapseAttrs.label): This is the label
   -  for the checkbox option to enable collapse attributes in the Inspector
@@ -140,6 +135,11 @@
 <!ENTITY options.timestampMessages.label      "הצגת חותמות זמן">
 <!ENTITY options.timestampMessages.tooltip    "הפעלת אפשרות זו תציג חותמות זמן בפקודות ובפלט במסוף הרשת">
 
+<!-- LOCALIZATION NOTE (options.warningGroups.label): This is the
+   - label for the checkbox that toggles the warningGroups feature in the Web Console -->
+<!ENTITY options.warningGroups.label      "קיבוץ הודעות דומות">
+<!ENTITY options.warningGroups.tooltip    "כשאפשרות זו מופעלת, הודעות דומות יוצבו בקבוצות">
+
 <!-- LOCALIZATION NOTE (options.debugger.label): This is the label for the
   -  heading of the group of Debugger preferences in the options panel. -->
 <!ENTITY options.debugger.label            "מנפה שגיאות">
@@ -152,12 +152,12 @@
 <!-- LOCALIZATION NOTE (options.styleeditor.label): This is the label for the
   -  heading of the group of Style Editor preferences in the options
   -  panel. -->
-<!ENTITY options.styleeditor.label            "עורך סגנון">
+<!ENTITY options.styleeditor.label            "עורך סגנונות">
 
 <!-- LOCALIZATION NOTE (options.stylesheetAutocompletion.label): This is the
    - label for the checkbox that toggles autocompletion of css in the Style Editor -->
 <!ENTITY options.stylesheetAutocompletion.label      "השלמה אוטומטית של CSS">
-<!ENTITY options.stylesheetAutocompletion.tooltip    "השלמה אוטומטית של מאפייני CSS, ערכים ובוררים בעורך הסגנון תוך כדי הקלדה">
+<!ENTITY options.stylesheetAutocompletion.tooltip    "השלמה אוטומטית של מאפייני CSS, ערכים ובוררים בעורך הסגנונות תוך כדי הקלדה">
 
 <!-- LOCALIZATION NOTE (options.screenshot.label): This is the label for the
    -  heading of the group of Screenshot preferences in the options

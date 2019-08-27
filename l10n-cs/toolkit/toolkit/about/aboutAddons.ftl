@@ -152,9 +152,6 @@ legacy-extensions-description = Tato rozšíření byla zakázána, protože neo
 private-browsing-description2 =
     Fungování rozšíření pro aplikaci { -brand-short-name } se v anonymním prohlížení mění. Všechna nově nainstalovaná rozšíření, nebudou ve výchozím nastavení v anonymních oknech fungovat, pokud jim to nepovolíte. Rozšíření tak nebudou mít bez vašeho vědomí přístup k tomu, co v anonymním prohlížení děláte.
     <label data-l10n-name="private-browsing-learn-more">Jak na nastavení rozšíření</label>
-extensions-view-discover =
-    .name = Získání doplňků
-    .tooltiptext = Získejte další zajímavé doplňky
 extensions-view-discopane =
     .name = Doporučení
     .tooltiptext = { extensions-view-discopane.name }
@@ -250,6 +247,12 @@ shortcuts-modifier-other = Zahrnout Ctrl nebo Alt
 shortcuts-invalid = Neplatná kombinace kláves
 shortcuts-letter = Napište písmeno
 shortcuts-system = Nelze přepsat zkratku aplikace { -brand-short-name }
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Duplicitní zkratka
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = Zkratka { $shortcut } se používá na více místech. To může způsobit její neočekávané chování.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -312,6 +315,16 @@ release-notes-addon-button = Poznámky k vydání
 permissions-addon-button = Oprávnění
 addons-enabled-heading = Povoleno
 addons-disabled-heading = Zakázáno
+extension-enabled-heading = Povolená rozšíření
+extension-disabled-heading = Zakázaná rozšíření
+theme-enabled-heading = Aktivní vzhled
+theme-disabled-heading = Zakázané vzhledy
+plugin-enabled-heading = Povolené moduly
+plugin-disabled-heading = Zakázané moduly
+dictionary-enabled-heading = Povolené slovníky
+dictionary-disabled-heading = Zakázané slovníky
+locale-enabled-heading = Povolené jazyky
+locale-disabled-heading = Zakázané jazyky
 ask-to-activate-button = Spustit na vyžádání
 always-activate-button = Vždy spustit
 never-activate-button = Nespouštět
@@ -361,8 +374,8 @@ addon-detail-private-browsing-disallow = Nepovolit
 # This is the tooltip text for the recommended badge for an extension in about:addons. The
 # badge is a small icon displayed next to an extension when it is recommended on AMO.
 addon-badge-recommended =
-    .title = Doporučené
-    .alt = Doporučené
+    .title = Doporučené rozšíření
+    .alt = { addon-badge-recommended.title }
 available-updates-heading = Dostupné aktualizace
 recent-updates-heading = Aktualizováno
 release-notes-loading = Načítání…

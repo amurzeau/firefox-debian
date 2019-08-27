@@ -13,8 +13,11 @@
 ##
 ## Reference: https://www.mozilla.org/styleguide/communications/translation/
 
--brand-short-name = فایرفاکس
--vendor-short-name = موزیلا
+-brand-shorter-name = Firefox
+-brand-short-name = Firefox
 -brand-full-name = موزیلا فایرفاکس
--brand-shorter-name = فایرفاکس
+# This brand name can be used in messages where the product name needs to
+# remain unchanged across different versions (Nightly, Beta, etc.).
+-brand-product-name = Firefox
+-vendor-short-name = موزیلا
 trademarkInfo = فایرفاکس و نشان‌های فایرفاکس، علائم تجاری بنیاد موزیلا محسوب می‌شوند.

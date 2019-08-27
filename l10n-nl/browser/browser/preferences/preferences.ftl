@@ -29,11 +29,6 @@ search-input-box =
             [windows] Zoeken in opties
            *[other] Zoeken in voorkeuren
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Uw organisatie heeft de mogelijkheid tot het wijzigen van enkele opties uitgeschakeld.
-       *[other] Uw organisatie heeft de mogelijkheid tot het wijzigen van enkele voorkeuren uitgeschakeld.
-    }
 managed-notice = Uw browser wordt door uw organisatie beheerd.
 pane-general-title = Algemeen
 category-general =
@@ -398,6 +393,49 @@ choose-bookmark =
     .label = Bladwijzer gebruiken…
     .accesskey = B
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Inhoud van Firefox-startpagina
+home-prefs-content-description = Kies welke inhoud u op uw Firefox-startscherm wilt laten weergeven.
+home-prefs-content-discovery-description = Via Content Discovery op de Firefox-startpagina kunt u relevante artikelen op het hele web met hoge kwaliteit vinden.
+home-prefs-search-header =
+    .label = Zoeken op het web
+home-prefs-topsites-header =
+    .label = Topwebsites
+home-prefs-topsites-description = De websites die u het vaakst bezoekt
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Aanbevolen door { $provider }
+home-prefs-recommended-by-description = Geweldige inhoud van het web, gepersonaliseerd voor u
+home-prefs-recommended-by-learn-more = Hoe het werkt
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Gesponsorde verhalen
+home-prefs-highlights-header =
+    .label = Highlights
+home-prefs-highlights-description = Een selectie van websites die u hebt opgeslagen of bezocht
+home-prefs-highlights-option-visited-pages =
+    .label = Bezochte pagina’s
+home-prefs-highlights-options-bookmarks =
+    .label = Bladwijzers
+home-prefs-highlights-option-most-recent-download =
+    .label = Meest recent gedownload
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Naar { -pocket-brand-name } opgeslagen pagina’s
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Snippets
+home-prefs-snippets-description = Updates van { -vendor-short-name } en { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } rij
+           *[other] { $num } rijen
+        }
+
 ## Search Section
 
 search-bar-header = Zoekbalk
@@ -562,6 +600,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Sterke wachtwoorden voorstellen en genereren
     .accesskey = w
+forms-fill-logins-and-passwords =
+    .label = Aanmeldingen en wachtwoorden automatisch invullen
+    .accesskey = A
 forms-saved-logins =
     .label = Opgeslagen aanmeldingen…
     .accesskey = m
@@ -638,6 +679,10 @@ sitedata-block-desc = Geblokkeerd type
     .accesskey = t
 sitedata-option-block-trackers =
     .label = Trackers van derden
+sitedata-option-block-cross-site-trackers =
+    .label = Cross-site-trackers
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Cross-site- en sociale-mediatrackers
 sitedata-option-block-unvisited =
     .label = Cookies van niet-bezochte websites
 sitedata-option-block-all-third-party =
@@ -672,7 +717,7 @@ addressbar-suggestions-settings = Voorkeuren voor zoekmachinesuggesties wijzigen
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Inhoudsblokkering
-content-blocking-description = Blokkeer inhoud van derden die uw surfgedrag volgt. Bepaal hoeveel van uw online-activiteit wordt bewaard en tussen websites wordt gedeeld.
+content-blocking-enhanced-tracking-protection = Verbeterde bescherming tegen volgen
 content-blocking-section-description = Bescherm uw privacy terwijl u surft. Blokkeer onzichtbare inhoud die de door u bezochte websites volgt en u profileert. Door wat van deze inhoud te blokkeren laden pagina’s mogelijk sneller.
 content-blocking-learn-more = Meer info
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -686,22 +731,29 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Aangepast
     .accesskey = A
-content-blocking-standard-description = Blokkeert alleen bekende trackers in privévensters.
 content-blocking-standard-desc = Gebalanceerd voor bescherming en prestaties. Staat bepaalde trackers toe, zodat websites goed werken.
-content-blocking-strict-desc = Blokkeert alle trackers die { -brand-short-name } detecteert. Kan ervoor zorgen dat bepaalde websites niet goed werken.
 content-blocking-strict-description = Strengere bescherming, kan ervoor zorgen dat bepaalde websites niet goed werken.
 content-blocking-custom-desc = Kies wat er wordt geblokkeerd.
 content-blocking-private-trackers = Bekende trackers alleen in privévensters
 content-blocking-third-party-cookies = Tracking-cookies van derden
+content-blocking-etp-standard-desc = Gebalanceerd voor bescherming en prestaties. Pagina’s laden normaal.
+content-blocking-etp-strict-desc = Sterkere bescherming, maar kan er voor zorgen dat sommige websites of inhoud niet werken.
+content-blocking-etp-custom-desc = Kies welke trackers en scripts u wilt blokkeren.
+content-blocking-private-windows = Volginhoud in privévensters
+content-blocking-cross-site-tracking-cookies = Cross-site-trackingcookies
+content-blocking-social-media-trackers = Sociale-mediatrackers
 content-blocking-all-cookies = Alle cookies
 content-blocking-unvisited-cookies = Cookies van niet-bezochte websites
 content-blocking-all-windows-trackers = Bekende trackers in alle vensters
+content-blocking-all-windows-tracking-content = Volginhoud in alle vensters
 content-blocking-all-third-party-cookies = Alle cookies van derden
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Let op!
 content-blocking-warning-description = Het blokkeren van inhoud kan ervoor zorgen dat bepaalde websites niet goed werken. Blokkering kan eenvoudig worden uitgeschakeld voor websites die u vertrouwt.
 content-blocking-learn-how = Meer info
+content-blocking-etp-warning-description = Het blokkeren van trackers kan de functionaliteit van sommige websites beïnvloeden. Laad een pagina met trackers opnieuw om alle inhoud te laden.
+content-blocking-warning-learn-how = Meer info
 content-blocking-reload-description = U dient uw tabbladen te vernieuwen om deze wijzigingen toe te passen.
 content-blocking-reload-tabs-button =
     .label = Alle tabbladen vernieuwen
@@ -709,6 +761,9 @@ content-blocking-reload-tabs-button =
 content-blocking-trackers-label =
     .label = Trackers
     .accesskey = T
+content-blocking-tracking-content-label =
+    .label = Volginhoud
+    .accesskey = V
 content-blocking-tracking-protection-option-all-windows =
     .label = In alle vensters
     .accesskey = a

@@ -4,6 +4,7 @@
 
 about-telemetry-ping-data-source = პინგის მონაცემების წყარო:
 about-telemetry-show-current-ping-data = პინგის მიმდინარე მონაცემები
+about-telemetry-show-current-data = მიმდინარე მონაცემები
 about-telemetry-show-archived-ping-data = პინგის დაარქივებული მონაცემები
 about-telemetry-show-subsession-data = ქვესეანსის მონაცემების ჩვენება
 about-telemetry-choose-ping = პინგის არჩევა:
@@ -76,6 +77,7 @@ about-telemetry-settings-explanation = გაზომვებით აღი�
 #   $timeStamp (String): ping localized timestamp, e.g. “2017/07/08 10:40:46”
 about-telemetry-ping-details = მონაცემების ცალკეული ნაწილები იკვრება და იგზავნება „<a data-l10n-name="ping-link">პინგებად</a>“. თქვენ ნახულობთ { $name }, { $timestamp } პინგს.
 about-telemetry-ping-details-current = მონაცემების ცალკეული ნაწილები იკვრება და იგზავნება „<a data-l10n-name="ping-link">პინგებად</a>“. თქვენ ნახულობთ მიმდინარე პინგს.
+about-telemetry-data-details-current = მონაცემების ცალკეული ნაწილები იკვრება და იგზავნება „<a data-l10n-name="ping-link">პინგებად</a>“. თქვენ ნახულობთ მიმდინარე მონაცემებს.
 # string used as a placeholder for the search field
 # More info about it can be found here:
 # https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
@@ -87,21 +89,23 @@ about-telemetry-filter-all-placeholder =
     .placeholder = ყველა განყოფილებაში ძიება
 # Variables:
 #   $searchTerms (String): the searched terms
-about-telemetry-results-for-search = შედეგები “{ $searchTerms }” ფრაზისთვის
+about-telemetry-results-for-search = შედეგები ფრაზისთვის „{ $searchTerms }“
 # More info about it can be found here: https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $sectionName (String): the section name from the structure of the ping.
 #   $currentSearchText (String): the current text in the search input
-about-telemetry-no-search-results = ვწუხვართ! შედეგები „{ $currentSearchText }“ ფრაზისთვის არ მოიძებნა { $sectionName }-ში
+about-telemetry-no-search-results = ვწუხვართ! შედეგები ფრაზისთვის „{ $currentSearchText }“ არ მოიძებნა არეში { $sectionName }
 # Variables:
 #   $searchTerms (String): the searched terms
-about-telemetry-no-search-results-all = ვწუხვართ! არცერთ განყოფილებაში არ მოიძებნა შედეგები ფრაზისთვის “{ $searchTerms }”
+about-telemetry-no-search-results-all = ვწუხვართ! არცერთ განყოფილებაში არ მოიძებნა შედეგები ფრაზისთვის „{ $searchTerms }“
 # This message is displayed when a section is empty.
 # Variables:
 #   $sectionName (String): is replaced by the section name.
 about-telemetry-no-data-to-display = ვწუხვართ! მონაცემები „{ $sectionName }“ განყოფილებაში, ამჟამად არაა ხელმისაწვდომი
 # used as a tooltip for the “current” ping title in the sidebar
 about-telemetry-current-ping-sidebar = მიმდინარე პინგი
+# used as a tooltip for the “current” ping title in the sidebar
+about-telemetry-current-data-sidebar = მიმდინარე მონაცემები
 # used in the “Ping Type” select
 about-telemetry-telemetry-ping-type-all = ყველა
 # button label to copy the histogram

@@ -305,6 +305,25 @@ choose-bookmark =
     .label = Úsáid Leabharmharc…
     .accesskey = L
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-topsites-header =
+    .label = Barrshuímh
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Molta ag { $provider }
+home-prefs-highlights-header =
+    .label = Buaicphointí
+home-prefs-highlights-options-bookmarks =
+    .label = Leabharmharcanna
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Gearrthóga
+
 ## Search Section
 
 search-engine-default-header = Inneall Cuardaigh Réamhshocraithe

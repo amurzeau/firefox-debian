@@ -29,11 +29,7 @@ search-input-box =
             [windows] חיפוש באפשרויות
            *[other] חיפוש בהעדפות
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] הארגון שלך חסם את האפשרות לשנות מספר אפשרויות.
-       *[other] הארגון שלך חסם את האפשרות לשנות מספר העדפות.
-    }
+managed-notice = הדפדפן שלך מנוהל על־ידי הארגון שלך.
 pane-general-title = כללי
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +42,6 @@ category-search =
 pane-privacy-title = פרטיות ואבטחה
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = חשבון Firefox
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -293,6 +285,21 @@ update-pref-write-failure-title = כשל בכתיבה
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = לא ניתן לשמור את ההעדפה. לא ניתן לכתוב לקובץ: { $path }
+update-setting-write-failure-title = שגיאה בשמירת העדפות עדכון
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    ‏{ -brand-short-name } נתקל בשגיאה ולא שמר את השינוי הזה. נא לשים לב כי שינוי ההגדרה של העדפת העדכון דורשת הרשאה לכתוב לקובץ שלהלן. ייתכן שתהיה לך או למנהל מערכת אפשרות לתקן את השגיאה על־ידי הענקת שליטה מלאה לקבוצה 'משתמשים' עבור קובץ זה.
+    
+    לא ניתן לכתוב לקובץ: { $path }
+update-in-progress-title = העדכון בתהליך
+update-in-progress-message = האם ברצונך ש־{ -brand-short-name } ימשיך בעדכון זה?
+update-in-progress-ok-button = &ביטול
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &המשך
 
 ## General Section - Performance
 
@@ -386,6 +393,49 @@ choose-bookmark =
     .label = שימוש בסימנייה…
     .accesskey = ס
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = תוכן מסך הבית של Firefox
+home-prefs-content-description = בחירת תוכן שיוצג במסך הבית של Firefox.
+home-prefs-content-discovery-description = גילוי תוכן במסך הבית של Firefox מאפשר לך לגלות מאמרים רלוונטים ובאיכות גבוהה מכל רחבי הרשת.
+home-prefs-search-header =
+    .label = חיפוש ברשת
+home-prefs-topsites-header =
+    .label = אתרים מובילים
+home-prefs-topsites-description = האתרים בהם ביקרת הכי הרבה
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = מומלץ על־ידי { $provider }
+home-prefs-recommended-by-description = תוכן נהדר מכל רחבי הרשת, בהתאמה אישית להעדפותיך
+home-prefs-recommended-by-learn-more = איך זה עובד
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = סיפורים ממומנים
+home-prefs-highlights-header =
+    .label = מומלצים
+home-prefs-highlights-description = מבחר של אתרים ששמרת או ביקרת בהם
+home-prefs-highlights-option-visited-pages =
+    .label = עמודים בהם ביקרת
+home-prefs-highlights-options-bookmarks =
+    .label = סימניות
+home-prefs-highlights-option-most-recent-download =
+    .label = ההורדות האחרונות
+home-prefs-highlights-option-saved-to-pocket =
+    .label = עמודים שנשמרו ל־{ -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = פתקיות
+home-prefs-snippets-description = עדכונים מ־{ -vendor-short-name } ו־{ -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] שורה אחת
+           *[other] { $num } שורות
+        }
+
 ## Search Section
 
 search-bar-header = שורת החיפוש
@@ -428,7 +478,7 @@ search-keyword-warning-title = מילת מפתח כפולה
 # Variables:
 #   $name (String) - Name of a search engine.
 search-keyword-warning-engine = בחרת להשתמש במילת מפתח שנמצאת כרגע בשימוש עבור "{ $name }". אנא בחר במילה אחרת.
-search-keyword-warning-bookmark = בחרת להשתמש במילת מפתח שנמצאת כרגע בשימוש על ידי סימנייה. נא לבחור במילה אחרת.
+search-keyword-warning-bookmark = בחרת להשתמש במילת מפתח שנמצאת כרגע בשימוש על־ידי סימנייה. נא לבחור במילה אחרת.
 
 ## Containers Section
 
@@ -483,7 +533,7 @@ sync-sign-in =
     .label = כניסה
     .accesskey = כ
 sync-signedin-settings-header = הגדרות סנכרון
-sync-signedin-settings-desc = נא לבחור את הפריטים שיסונכרנו להתקנים שלך באמצעות { -brand-short-name }.
+sync-signedin-settings-desc = נא לבחור את הפריטים שיסונכרנו למכשירים שלך באמצעות { -brand-short-name }
 sync-engine-bookmarks =
     .label = סימניות
     .accesskey = ס
@@ -518,9 +568,9 @@ sync-engine-prefs =
         }
     .tooltiptext = הגדרות כלליות, פרטיות ואבטחה ששינית
     .accesskey = ת
-sync-device-name-header = שם התקן
+sync-device-name-header = שם המכשיר
 sync-device-name-change =
-    .label = שינוי שם התקן…
+    .label = שינוי שם מכשיר…
     .accesskey = ש
 sync-device-name-cancel =
     .label = ביטול
@@ -528,8 +578,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = שמירה
     .accesskey = ש
-sync-mobilepromo-single = חיבור התקן נוסף
-sync-mobilepromo-multi = ניהול התקנים
 sync-connect-another-device = חיבור מכשיר נוסף
 sync-manage-devices = ניהול מכשירים
 sync-fxa-begin-pairing = צימוד מכשיר
@@ -549,6 +597,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = חריגות…
     .accesskey = ר
+forms-fill-logins-and-passwords =
+    .label = מילוי אוטומטי של כניסות וססמאות
+    .accesskey = מ
 forms-saved-logins =
     .label = כניסות שמורות…
     .accesskey = כ
@@ -625,6 +676,8 @@ sitedata-block-desc = סוג שנחסם
     .accesskey = ס
 sitedata-option-block-trackers =
     .label = רכיבי מעקב צד־שלישי
+sitedata-option-block-cross-site-trackers =
+    .label = רכיבי מעקב חוצי אתרים
 sitedata-option-block-unvisited =
     .label = עוגיות מאתרים שלא ביקרת בהם
 sitedata-option-block-all-third-party =
@@ -659,7 +712,6 @@ addressbar-suggestions-settings = שינוי העדפות של הצעות מנו
 ## Privacy Section - Content Blocking
 
 content-blocking-header = חסימת תוכן
-content-blocking-description = חסימת תוכן צד־שלישי שעוקב אחריך ברחבי האינטרנט. שליטה בכמות הפעילות המקוונת שלך שנשמרת ומשותפת בין אתרים.
 content-blocking-learn-more = מידע נוסף
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -672,23 +724,28 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = התאמה אישית
     .accesskey = ה
-content-blocking-standard-description = חסימת רכיבי מעקב מוכרים בחלונות פרטיים בלבד.
 content-blocking-standard-desc = מאוזן בין הגנה לביצועים. מאפשר את פעולתם של חלק מרכיבי המעקב כדי שהאתרים יפעלו כראוי.
-content-blocking-strict-desc = חסימת כל רכיבי המעקב ש־{ -brand-short-name } מזהה. עשוי לשבש פעילות של אתרים.
 content-blocking-strict-description = הגנה חזקה יותר, שעשויה לשבש פעילות של אתרים.
 content-blocking-custom-desc = בחירת הפריטים שייחסמו.
 content-blocking-private-trackers = רכיבי מעקב מוכרים בחלונות פרטיים בלבד
 content-blocking-third-party-cookies = עוגיות מעקב צד־שלישי
+content-blocking-etp-standard-desc = מאוזן בין הגנה לביצועים. דפים ייטענו כרגיל.
+content-blocking-etp-strict-desc = הגנה חזקה יותר, אך עשויה לשבש פעילות של אתרים או תוכן.
+content-blocking-private-windows = תוכן מעקב בחלונות פרטיים
+content-blocking-cross-site-tracking-cookies = עוגיות מעקב חוצות אתרים
+content-blocking-social-media-trackers = רכיבי מעקב של מדיה חברתית
 content-blocking-all-cookies = כל העוגיות
 content-blocking-unvisited-cookies = עוגיות מאתרים שלא ביקרתי בהם
 content-blocking-all-windows-trackers = רכיבי מעקב מוכרים בכל החלונות
+content-blocking-all-windows-tracking-content = תוכן מעקב בכל החלונות
 content-blocking-all-third-party-cookies = כל העוגיות צד־שלישי
 content-blocking-cryptominers = כורי מטבעות דיגיטליים
 content-blocking-fingerprinters = רכיבי זהות דיגיטלית
 content-blocking-warning-title = לתשומת לבך!
-content-blocking-warning-desc = חסימת עוגיות ורכיבי מעקב עשויה לשבש פעילות של מספר אתרים. קל להשבית חסימה של אתרים המהימנים בעיניך.
 content-blocking-warning-description = חסימת תוכן עלולה לגרום לאתרים מסוימים להישבר. קל לבטל חסימה עבור אתרים בטוחים.
 content-blocking-learn-how = מידע נוסף
+content-blocking-etp-warning-description = חסימת רכיבי מעקב עשויה להשפיע על הפונקציונליות של אתרים מסוימים. יש לטעון מחדש דף עם רכיבי מעקב כדי לטעון את כל התוכן.
+content-blocking-warning-learn-how = מידע נוסף
 content-blocking-reload-description = יהיה עליך לטעון מחדש את הלשוניות שלך כדי להחיל שינויים אלו.
 content-blocking-reload-tabs-button =
     .label = טעינת כל הלשוניות מחדש
@@ -696,6 +753,9 @@ content-blocking-reload-tabs-button =
 content-blocking-trackers-label =
     .label = רכיבי מעקב
     .accesskey = ר
+content-blocking-tracking-content-label =
+    .label = תוכן מעקב
+    .accesskey = ת
 content-blocking-tracking-protection-option-all-windows =
     .label = בכל החלונות
     .accesskey = כ
@@ -753,6 +813,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = חריגות…
     .accesskey = ח
+permissions-autoplay = ניגון אוטומטי
+permissions-autoplay-settings =
+    .label = הגדרות…
+    .accesskey = ה
 permissions-block-popups =
     .label = חסימת חלונות קופצים
     .accesskey = ח

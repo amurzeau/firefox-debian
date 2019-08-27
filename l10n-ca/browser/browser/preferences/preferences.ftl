@@ -29,11 +29,6 @@ search-input-box =
             [windows] Cerca en les opcions
            *[other] Cerca en les preferències
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] La vostra organització ha inhabilitat la possibilitat de canviar algunes opcions.
-       *[other] La vostra organització ha inhabilitat la possibilitat de canviar algunes preferències.
-    }
 managed-notice = El navegador està gestionat per la vostra organització.
 pane-general-title = General
 category-general =
@@ -398,6 +393,49 @@ choose-bookmark =
     .label = Utilitza una adreça d'interès…
     .accesskey = z
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Contingut d'inici del Firefox
+home-prefs-content-description = Trieu el contingut que voleu a la pantalla d'inici del Firefox.
+home-prefs-content-discovery-description = El descobriment de contingut en la pàgina d'inici del Firefox us permet descobrir articles de gran qualitat i rellevants de tot el web.
+home-prefs-search-header =
+    .label = Cerca web
+home-prefs-topsites-header =
+    .label = Llocs principals
+home-prefs-topsites-description = Els llocs que visiteu més sovint
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Recomanat per { $provider }
+home-prefs-recommended-by-description = El contingut més interessant de tot el web, personalitzat per a vós
+home-prefs-recommended-by-learn-more = Com funciona
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Articles patrocinats
+home-prefs-highlights-header =
+    .label = Destacats
+home-prefs-highlights-description = Una selecció dels llocs que heu desat o visitat
+home-prefs-highlights-option-visited-pages =
+    .label = Pàgines visitades
+home-prefs-highlights-options-bookmarks =
+    .label = Adreces d'interès
+home-prefs-highlights-option-most-recent-download =
+    .label = Baixada més recent
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Pàgines desades al { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Retalls
+home-prefs-snippets-description = Actualitzacions de { -vendor-short-name } i del { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } fila
+           *[other] { $num } files
+        }
+
 ## Search Section
 
 search-bar-header = Barra de cerca
@@ -559,6 +597,12 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Excepcions…
     .accesskey = x
+forms-generate-passwords =
+    .label = Suggereix i genera contrasenyes segures
+    .accesskey = u
+forms-fill-logins-and-passwords =
+    .label = Emplena automàticament inicis de sessió i contrasenyes
+    .accesskey = i
 forms-saved-logins =
     .label = Inicis de sessió desats…
     .accesskey = I
@@ -635,6 +679,10 @@ sitedata-block-desc = Tipus de contingut blocat
     .accesskey = T
 sitedata-option-block-trackers =
     .label = Elements de seguiment de tercers
+sitedata-option-block-cross-site-trackers =
+    .label = Elements de seguiment entre llocs
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Elements de seguiment de xarxes socials i entre llocs
 sitedata-option-block-unvisited =
     .label = Galetes de llocs web no visitats
 sitedata-option-block-all-third-party =
@@ -669,7 +717,6 @@ addressbar-suggestions-settings = Canvia les preferències dels suggeriments de 
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Bloqueig de contingut
-content-blocking-description = Bloqueu el contingut de tercers que us fan el seguiment mentre navegueu. Podeu controlar quanta activitat en línia voleu emmagatzemar i compartir entre els llocs web.
 content-blocking-section-description = Protegiu la vostra privadesa mentre navegueu. Bloqueu el contingut invisible que fa el seguiment dels llocs que visiteu per crear un perfil vostre amb aquesta informació. Blocant aquest contingut, és possible que les pàgines es carreguin més ràpid.
 content-blocking-learn-more = Més informació
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -683,22 +730,29 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Personalitzat
     .accesskey = z
-content-blocking-standard-description = Bloca només els elements de seguiment coneguts en finestres privades.
 content-blocking-standard-desc = Equilibri entre protecció i rendiment. Permet alguns elements de seguiment perquè els llocs web funcionin correctament.
-content-blocking-strict-desc = Bloca tots els elements de seguiment que detecta el { -brand-short-name }. Pot fer que alguns llocs no funcionin correctament.
 content-blocking-strict-description = Més protecció, pot fer que alguns llocs no funcionin correctament.
 content-blocking-custom-desc = Trieu què voleu blocar.
 content-blocking-private-trackers = Elements de seguiment coneguts en finestres privades
 content-blocking-third-party-cookies = Galetes de seguiment de tercers
+content-blocking-etp-standard-desc = Equilibri entre protecció i rendiment. Les pàgines es carregaran amb normalitat.
+content-blocking-etp-strict-desc = Més protecció, però pot fer que alguns llocs o algun contingut no funcionin correctament.
+content-blocking-etp-custom-desc = Trieu quins elements de seguiment i scripts cal blocar.
+content-blocking-private-windows = Contingut que fa seguiment en finestres privades
+content-blocking-cross-site-tracking-cookies = Galetes de seguiment entre llocs
+content-blocking-social-media-trackers = Elements de seguiment de xarxes socials
 content-blocking-all-cookies = Totes les galetes
 content-blocking-unvisited-cookies = Galetes de llocs no visitats
 content-blocking-all-windows-trackers = Elements de seguiment coneguts en totes les finestres
+content-blocking-all-windows-tracking-content = Contingut que fa seguiment en totes les finestres
 content-blocking-all-third-party-cookies = Totes les galetes de tercers
 content-blocking-cryptominers = Miners de criptomonedes
-content-blocking-fingerprinters = Creadors d'empremtes digitals
+content-blocking-fingerprinters = Generadors d'empremtes digitals
 content-blocking-warning-title = Atenció!
 content-blocking-warning-description = El bloqueig de contingut pot fer que alguns llocs web no funcionin correctament. És fàcil desactivar el bloqueig dels llocs en què confieu.
 content-blocking-learn-how = Vegeu com fer-ho
+content-blocking-etp-warning-description = El bloqueig d'elements de seguiment pot afectar la funcionalitat d'alguns llocs. Torneu a carregar la pàgina amb els elements de seguiment per carregar-ne tot el contingut.
+content-blocking-warning-learn-how = Vegeu com fer-ho
 content-blocking-reload-description = Cal tornar a carregar les pestanyes per aplicar aquests canvis.
 content-blocking-reload-tabs-button =
     .label = Torna a carregar totes les pestanyes
@@ -706,6 +760,9 @@ content-blocking-reload-tabs-button =
 content-blocking-trackers-label =
     .label = Elements de seguiment
     .accesskey = t
+content-blocking-tracking-content-label =
+    .label = Contingut que fa seguiment
+    .accesskey = o
 content-blocking-tracking-protection-option-all-windows =
     .label = En totes les finestres
     .accesskey = f
@@ -725,8 +782,8 @@ content-blocking-cryptominers-label =
 # Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
 # that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
 content-blocking-fingerprinters-label =
-    .label = Creadors d'empremtes digitals
-    .accesskey = C
+    .label = Generadors d'empremtes digitals
+    .accesskey = G
 
 ## Privacy Section - Tracking
 

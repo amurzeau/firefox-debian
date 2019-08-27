@@ -1,0 +1,52 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+window-close =
+    .key = w
+focus-search-shortcut =
+    .key = f
+focus-search-altshortcut =
+    .key = k
+copy-provider-url-cmd =
+    .label = Copiază URL-ul
+    .accesskey = y
+copy-username-cmd =
+    .label = Copiază numele de utilizator
+    .accesskey = U
+edit-username-cmd =
+    .label = Editează numele de utilizator
+    .accesskey = d
+copy-password-cmd =
+    .label = Copiază parola
+    .accesskey = C
+edit-password-cmd =
+    .label = Editează parola
+    .accesskey = E
+search-filter =
+    .accesskey = S
+    .placeholder = Caută
+column-heading-provider =
+    .label = Furnizor
+column-heading-username =
+    .label = Nume de utilizator
+column-heading-password =
+    .label = Parolă
+remove =
+    .label = Elimină
+    .accesskey = R
+import =
+    .label = Importă…
+    .accesskey = I
+close-button =
+    .label = Închide
+    .accesskey = C
+show-passwords =
+    .label = Afișează parolele
+    .accesskey = P
+hide-passwords =
+    .label = Ascunde parolele
+    .accesskey = P
+remove-all-passwords-prompt = Sigur dorești să elimini toate parolele?
+remove-all-passwords-title = Elimină toate parolele
+no-master-password-prompt = Sigur dorești să afișezi parolele?

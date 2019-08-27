@@ -2,8 +2,15 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## These messages are used as headings in the recommendation doorhanger
+
 cfr-doorhanger-extension-heading = Aanbevolen extensie
+cfr-doorhanger-feature-heading = Aanbevolen functie
 cfr-doorhanger-pintab-heading = Probeer dit: Tabblad vastmaken
+
+
+
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Waarom zie ik dit
 cfr-doorhanger-extension-cancel-button = Niet nu
@@ -62,3 +69,45 @@ cfr-doorhanger-bookmark-fxa-link-text = Bladwijzers nu synchroniseren…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Knop Sluiten
     .title = Sluiten
+
+## Protections panel
+
+cfr-protections-panel-header = Surf zonder te worden gevolgd
+cfr-protections-panel-body = Houd uw gegevens voor uzelf. { -brand-short-name } beschermt u tegen veel van de meest voorkomende trackers die volgen wat u online doet.
+cfr-protections-panel-link-text = Meer info
+
+## What's New toolbar button and panel
+
+cfr-whatsnew-button =
+    .label = Wat is er nieuw
+    .tooltiptext = Wat is er nieuw
+cfr-whatsnew-panel-header = Wat is er nieuw
+
+## Bookmark Sync
+
+cfr-doorhanger-sync-bookmarks-header = Deze bladwijzer op uw telefoon ontvangen
+cfr-doorhanger-sync-bookmarks-body = Neem uw bladwijzers, wachtwoorden, geschiedenis en meer mee naar overal waar u bent aangemeld bij { -brand-product-name }.
+cfr-doorhanger-sync-bookmarks-ok-button = { -sync-brand-short-name } inschakelen
+    .accesskey = i
+
+## Login Sync
+
+cfr-doorhanger-sync-logins-header = Verlies nooit meer een wachtwoord
+cfr-doorhanger-sync-logins-body = Bewaar en synchroniseer uw wachtwoorden veilig op al uw apparaten.
+cfr-doorhanger-sync-logins-ok-button = { -sync-brand-short-name } inschakelen
+    .accesskey = i
+
+## Send Tab
+
+cfr-doorhanger-send-tab-header = Dit onderweg lezen
+cfr-doorhanger-send-tab-recipe-header = Dit recept meenemen naar de keuken
+cfr-doorhanger-send-tab-body = Met Send Tab kunt u eenvoudig deze koppeling met uw telefoon delen, of waar u ook maar bent aangemeld bij { -brand-product-name }.
+cfr-doorhanger-send-tab-ok-button = Send Tab proberen
+    .accesskey = p
+
+## Firefox Send
+
+cfr-doorhanger-firefox-send-header = Dit pdf-document veilig delen
+cfr-doorhanger-firefox-send-body = Houd uw gevoelige documenten weg bij nieuwsgierige blikken met end-to-end-versleuteling en een koppeling die verdwijnt als u klaar bent.
+cfr-doorhanger-firefox-send-ok-button = { -send-brand-name } proberen
+    .accesskey = p

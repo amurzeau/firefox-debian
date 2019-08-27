@@ -3,12 +3,23 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-## UI strings for the simplified onboarding modal
+### UI strings for the simplified onboarding modal / about:welcome
+### Various strings use a non-breaking space to avoid a single dangling /
+### widowed word, so test on various window sizes if you also want this.
+
+
+## These button action text can be split onto multiple lines, so use explicit
+## newlines in translations to control where the line break appears (e.g., to
+## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = מידע נוסף
 onboarding-button-label-try-now = נסו זאת כעת
 onboarding-button-label-get-started = תחילת עבודה
+
+## Welcome modal dialog strings
+
 onboarding-welcome-header = ברוכים הבאים אל { -brand-short-name }
+onboarding-welcome-body = הדפדפן כבר בידיך.<br/>עכשיו נציג את שאר { -brand-product-name }.
 onboarding-welcome-learn-more = מידע נוסף על היתרונות.
 onboarding-join-form-header = הצטרפות אל { -brand-product-name }
 onboarding-join-form-body = נא להכניס את כתובת הדוא״ל שלך כדי להתחיל.
@@ -18,11 +29,34 @@ onboarding-join-form-email-error = נדרשת כתובת דוא״ל חוקית
 onboarding-join-form-legal = בחירה בהמשך התהליך מהווה הסכמה ל<a data-l10n-name="terms">תנאי השירות</a> ול<a data-l10n-name="privacy">הצהרת הפרטיות</a>.
 onboarding-join-form-continue = המשך
 onboarding-start-browsing-button-label = התחלת גלישה
+onboarding-cards-dismiss =
+    .title = הסרה
+    .aria-label = הסרה
+
+## Firefox Sync modal dialog strings.
+
+onboarding-sync-welcome-header = { -brand-product-name } אתך בדרכים
+onboarding-sync-welcome-content = קבלת המועדפים, ההיסטוריה, הססמאות והגדרות נוספות בכל המכשירים שלך.
+onboarding-sync-welcome-learn-more-link = מידע נוסף על חשבונות Firefox
+onboarding-sync-form-invalid-input = נדרשת כתובת דוא״ל חוקית
+onboarding-sync-legal-notice = בחירה בהמשך התהליך מהווה את הסכמתך ל<a data-l10n-name="terms">תנאי השירות</a> ול<a data-l10n-name="privacy">הצהרת הפרטיות</a>.
+onboarding-sync-form-input =
+    .placeholder = דוא״ל
+onboarding-sync-form-continue-button = המשך
+onboarding-sync-form-skip-login-button = דילוג על שלב זה
+
+## This is part of the line "Enter your email to continue to Firefox Sync"
+
+onboarding-sync-form-header = נא להקליד את כתובת הדוא״ל שלך
+onboarding-sync-form-sub-header = כדי להמשיך אל { -sync-brand-name }.
 
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
 onboarding-benefit-products-title = מוצרים שימושיים
+onboarding-benefit-products-text = לבצע משימות עם משפחת כלים שמכבדת את הפרטיות שלך בכל המכשירים שלך.
+onboarding-benefit-knowledge-title = ידע מעשי
+onboarding-benefit-privacy-title = פרטיות אמיתית
 
 ## These strings belong to the individual onboarding messages.
 
@@ -42,22 +76,23 @@ onboarding-ghostery-text = גלישה מהירה, חכמה או בטוחה יו�
 # Note: "Sync" in this case is a generic verb, as in "to synchronize"
 onboarding-fxa-title = סנכרון
 onboarding-fxa-text = הירשמו ל־{ -fxaccount-brand-name } וסנכרנו את הסימניות, הססמאות והלשוניות הפתוחות בכל מקום שבו תשתמשו ב־{ -brand-short-name }.
-# "Update" is a verb, as in "Update the existing settings", not "Options about
-# updates".
-onboarding-tracking-protection-button =
-    { PLATFORM() ->
-        [windows] עדכון אפשרויות
-       *[other] עדכון העדפות
-    }
+onboarding-tracking-protection-title2 = הגנה מפני מעקב
 onboarding-tracking-protection-button2 = איך זה עובד
-onboarding-data-sync-button = הפעלת { -sync-brand-short-name }
+onboarding-data-sync-title = ההגדרות שלך הולכות אתך
+# "Sync" is short for synchronize.
+onboarding-data-sync-text2 = סנכרון הסימניות, הססמאות ופריטים נוספים שלך בכל מקום בו יש לך את { -brand-product-name }.
+onboarding-data-sync-button2 = כניסה ל־{ -sync-brand-short-name }
+onboarding-firefox-monitor-button = הרשמה להתרעות
 onboarding-browse-privately-title = גלישה בפרטיות
 onboarding-browse-privately-button = פתיחת חלון פרטי
+onboarding-firefox-send-button = לנסות את { -send-brand-name }
 onboarding-mobile-phone-title = קבלת { -brand-product-name } לטלפון שלך
 # "Mobile" is short for mobile/cellular phone, "Browser" is short for web
 # browser.
-onboarding-mobile-phone-button = הורדת דפדפן נייד
-onboarding-lockwise-passwords-button = קבלת { -lockwise-brand-name }
+onboarding-mobile-phone-button = הורדת דפדפן לנייד
+onboarding-lockwise-passwords-title = לקחת את הססמאות שלך לכל מקום
+onboarding-lockwise-passwords-button2 = הורדת היישומון
+onboarding-facebook-container-title = הגדרת גבולות מול Facebook
 onboarding-facebook-container-button = הוספת ההרחבה
 
 ## Message strings belonging to the Return to AMO flow

@@ -2,8 +2,15 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## These messages are used as headings in the recommendation doorhanger
+
 cfr-doorhanger-extension-heading = Jepysokue jeroviaháva
+cfr-doorhanger-feature-heading = Tembiapoite ñe’ẽporãpyre
 cfr-doorhanger-pintab-heading = Eipuru kóva: Emboja tendayke
+
+
+
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Mba’ére ahechahína kóva
 cfr-doorhanger-extension-cancel-button = Ko'ág̃a nahániri
@@ -62,3 +69,45 @@ cfr-doorhanger-bookmark-fxa-link-text = Embojuehehína techaukaha...
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Emboty votõ
     .title = Emboty
+
+## Protections panel
+
+cfr-protections-panel-header = Eikundaha ejehapykueho’ỹre
+cfr-protections-panel-body = Eñongatu ne mba’ekuaarã ndéve g̃uarã. { -brand-short-name } omo’ãta heta tapykuehohágui ohecháva mba’etépa ejapo ñandutípe.
+cfr-protections-panel-link-text = Eikuaave
+
+## What's New toolbar button and panel
+
+cfr-whatsnew-button =
+    .label = Oĩpa mba'e pyahu
+    .tooltiptext = Oĩpa mba'e pyahu
+cfr-whatsnew-panel-header = Oĩpa mba'e pyahu
+
+## Bookmark Sync
+
+cfr-doorhanger-sync-bookmarks-header = Emoĩ pe techaukaha ne pumbyrýpe
+cfr-doorhanger-sync-bookmarks-body = Egueraha nde rechaukaha, ñe’ẽñemi, tembiasakue ha hetave opaite hendápe eñepyrũ haguépe tembiapo { -brand-product-name }-pe.
+cfr-doorhanger-sync-bookmarks-ok-button = Emyandy { -sync-brand-short-name }
+    .accesskey = T
+
+## Login Sync
+
+cfr-doorhanger-sync-logins-header = Anivéke nderesarái ne ñe’ẽñemígui
+cfr-doorhanger-sync-logins-body = Embyaty ha embojuehe tekorosãme ne ñe’ẽñemi opaite ne mba’e’okápe.
+cfr-doorhanger-sync-logins-ok-button = Embojuruja { -sync-brand-short-name }
+    .accesskey = E
+
+## Send Tab
+
+cfr-doorhanger-send-tab-header = Emoñe’ẽ kóva pya’e
+cfr-doorhanger-send-tab-recipe-header = Egueraha ko tembi’urape kosináme
+cfr-doorhanger-send-tab-body = Emondo tendayke emoherakuã hag̃ua ko juajuha ne pumbyrýpe térã oimehápe eñepyrũ haguépe tembiapo { -brand-product-name }-pe.
+cfr-doorhanger-send-tab-ok-button = Eñeha’ã emondo tendayke
+    .accesskey = T
+
+## Firefox Send
+
+cfr-doorhanger-firefox-send-header = Emoherakuã ko PDF tekorosãme
+cfr-doorhanger-firefox-send-body = Eguereko nde kuatiakuéra ñemiguáva ambue ñema’ẽgui ipapapyetéva reheve ha juajuha oguéva ejapopa vove.
+cfr-doorhanger-firefox-send-ok-button = Ehecha { -send-brand-name }
+    .accesskey = T

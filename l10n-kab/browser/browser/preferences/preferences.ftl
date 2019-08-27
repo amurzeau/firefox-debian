@@ -29,11 +29,6 @@ search-input-box =
             [windows] Af deg iɣewwaṛen
            *[other] Af deg ismenyifen
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Tuddsa-ik tessens tazmert n ubeddel n kra n iɣewwaṛen.
-       *[other] Tuddsa-ik tessens tazmert n ubeddel n kra n ismenyifen.
-    }
 managed-notice = Iminig-ik tessefrak-it tuddsa-ik.
 pane-general-title = Amatu
 category-general =
@@ -398,6 +393,49 @@ choose-bookmark =
     .label = Ticraḍ n isebtar…
     .accesskey = T
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Agbur agejdan Firefox
+home-prefs-content-description = Fren agbur i tebɣiḍ deg ugdil agejdan Firefox.
+home-prefs-content-discovery-description = Agbur n usebter agejdan n Firefox yessumur imagraden usdiden n tɣara ifazen i d-yekkan seg kuẓ n tɣemmaṛ n Web.
+home-prefs-search-header =
+    .label = Anadi Web
+home-prefs-topsites-header =
+    .label = Ismal ifazen
+home-prefs-topsites-description = Ismal i tettwaliḍ aṭas
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Iwelleh-it-id { $provider }
+home-prefs-recommended-by-description = Agbur meqqren seg umaḍal, yettwag i kečč
+home-prefs-recommended-by-learn-more = Amek iteddu
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Tiqṣidin yettwarefden
+home-prefs-highlights-header =
+    .label = Asebrureq
+home-prefs-highlights-description = Tafrant n yismal i teskelseḍ neɣ i twalaḍ
+home-prefs-highlights-option-visited-pages =
+    .label = isebtar yettwarzan
+home-prefs-highlights-options-bookmarks =
+    .label = Ticraḍ n isebtar
+home-prefs-highlights-option-most-recent-download =
+    .label = Isidar imaynuten
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Isebtar yettwaḥerzen ar { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Tiwzillin
+home-prefs-snippets-description = Ileqman seg { -vendor-short-name } d { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } izirig
+           *[other] { $num } izirigen
+        }
+
 ## Search Section
 
 search-bar-header = Afeggag n unadi
@@ -672,7 +710,6 @@ addressbar-suggestions-settings = Snifel ismenyifen i yisumar n umsedday n unadi
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Asewḥel n ugbur
-content-blocking-description = Sewḥel Agbur n tɣawsiwin tis kraḍ i k-yeṭṭafaren di web. Senqed acḥal seg urmud-ik di web i yettwakelsen u yettwabḍan gar ismal.
 content-blocking-section-description = Mmesten tabaḍnit-ik deg tunigin. Sewḥel igburen ur d-yettbanen ara, i k-yeṭṭafaṛen seg usmel ɣer wayeḍ daɣen ttwalin amaɣnu-ik. Sewḥel aḥric n yigburen-a i zemren ad sɣiwlen asali n yisebtar.
 content-blocking-learn-more = Issin ugar
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -686,9 +723,7 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Udmawan
     .accesskey = d
-content-blocking-standard-description = Issewḥal kan ineḍfaren yettwasnen deg isfuyla usligen.
 content-blocking-standard-desc = Iseggem i ummesten akked tmellit. Isirig kra n ineḍfaren akken ismal web ad ddun akken iwata.
-content-blocking-strict-desc = Isewḥal akk ineḍfaren id-yettaf { -brand-short-name }. Kra n yesmal zemren ad ḥebsen.
 content-blocking-strict-description = Ammesten iǧehden, maca yezmer ad isewḥel kra n yismal ur teddun ara akken iwata.
 content-blocking-custom-desc = Fren ayen ara tesweḥleḍ.
 content-blocking-private-trackers = Ineḍfaren yettwasnen deg usfaylu uslig kan
@@ -697,10 +732,12 @@ content-blocking-all-cookies = Inagan n tuqqna meṛṛa
 content-blocking-unvisited-cookies = Inagan n tuqqna n yismal ur yettwarzan ara
 content-blocking-all-windows-trackers = Ineḍfaren yettwasnen deg akk isfuyla
 content-blocking-all-third-party-cookies = Akk inagan n tuqqna n wis kraḍ
+content-blocking-cryptominers = Ikripṭuminaren
 content-blocking-fingerprinters = Idsilen umḍinen
 content-blocking-warning-title = Aqeṛṛu d afella!
 content-blocking-warning-description = Asewḥel n ugbru yezmer ur yettaǧǧa ara kra n yismal ad ddun akken iwata. Tzemreḍ s wudem fessusen ad tsenseḍ asewḥel i yismal i tettamned.
 content-blocking-learn-how = Issin amek
+content-blocking-warning-learn-how = Issin amek
 content-blocking-reload-description = Yessefk ad talseḍ asali n yiccaren-ik akken ad ddun ibeddilen-a.
 content-blocking-reload-tabs-button =
     .label = Smiren akk accaren
@@ -720,6 +757,10 @@ content-blocking-cookies-label =
     .accesskey = I
 content-blocking-expand-section =
     .tooltiptext = Ugar n telɣut
+# Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
+content-blocking-cryptominers-label =
+    .label = Ikripṭuminaren
+    .accesskey = k
 # Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
 # that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
 content-blocking-fingerprinters-label =

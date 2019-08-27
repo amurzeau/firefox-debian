@@ -53,3 +53,19 @@ cfr-doorhanger-pintab-step2 = Изберете <b>Закачане на разд
 cfr-doorhanger-pintab-step3 = Ако страницата се обнови ще видите синя точка на закачения раздел.
 cfr-doorhanger-pintab-animation-pause = Пауза
 cfr-doorhanger-pintab-animation-resume = Продължаване
+
+## Firefox Accounts Message
+
+cfr-doorhanger-bookmark-fxa-header = Синхронизирайте отметките си навсякъде.
+cfr-doorhanger-bookmark-fxa-body = Чудесно откритие! Сега не оставайте без тази отметка на мобилните си устройства. Започнете с { -fxaccount-brand-name }.
+cfr-doorhanger-bookmark-fxa-link-text = Синхронизиране на отметките сега…
+cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
+    .aria-label = Бутон за затваряне
+    .title = Затваряне
+
+## What's New toolbar button and panel
+
+cfr-whatsnew-button =
+    .label = Какво е новото
+    .tooltiptext = Новото в това издание
+cfr-whatsnew-panel-header = Какво е новото

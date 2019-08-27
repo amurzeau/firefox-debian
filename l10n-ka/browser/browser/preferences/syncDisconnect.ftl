@@ -3,10 +3,10 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 sync-disconnect-dialog =
-    .title = გსურთ გამოითიშოს { -sync-brand-short-name }?
+    .title = გაითიშოს { -sync-brand-short-name }?
     .style = width: 36em; min-height: 35em;
-sync-disconnect-heading = ამასთან, გნებავთ წაიშალოს ბრაუზერის მონაცემები ამ კომპიუტერიდან? თქვენი { -sync-brand-name } მონაცემები, მაინც დარჩება თქვენს ანგარიშზე.
-sync-disconnect-remove-sync-caption = { -sync-brand-name } მონაცემების წაშლა
+sync-disconnect-heading = ამასთან, გნებავთ წაიშალოს ბრაუზერის მონაცემები ამ კომპიუტერიდან? თქვენი { -sync-brand-name(case: "gen") } მონაცემები, მაინც დარჩება თქვენს ანგარიშზე.
+sync-disconnect-remove-sync-caption = { -sync-brand-name(case: "gen") } მონაცემების წაშლა
 sync-disconnect-remove-sync-data = სანიშნები, ისტორია, პაროლები და ა. შ.
 sync-disconnect-remove-other-caption = სხვა პირადი მონაცემების წაშლა
 sync-disconnect-remove-other-data = ფუნთუშები, კეში, საიტების კავშირგარეშე მონაცემები და ა. შ.

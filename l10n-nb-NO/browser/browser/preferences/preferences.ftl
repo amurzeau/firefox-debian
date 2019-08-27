@@ -29,11 +29,6 @@ search-input-box =
             [windows] Søk i innstillinger
            *[other] Søk i innstillinger
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Din organisasjon har slått av muligheten til å endre visse innstillinger.
-       *[other] Din organisasjon har slått av muligheten til å endre visse innstillinger.
-    }
 managed-notice = Nettleseren din administreres av organisasjonen din.
 pane-general-title = Generelt
 category-general =
@@ -376,7 +371,7 @@ home-restore-defaults =
 # "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = Firefox startside (standard)
+    .label = Firefox-startside (standard)
 home-mode-choice-custom =
     .label = Tilpassede nettadresser…
 home-mode-choice-blank =
@@ -397,6 +392,49 @@ use-current-pages =
 choose-bookmark =
     .label = Bruk bokmerke …
     .accesskey = u
+
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Innhold Firefox-startside
+home-prefs-content-description = Velg hvilket innhold som du vil ha på din Firefox-startside.
+home-prefs-content-discovery-description = Innholdsoppdagelse på Firefox startside lar deg oppdage relevante artikler av høy kvalitet fra nettet.
+home-prefs-search-header =
+    .label = Nettsøk
+home-prefs-topsites-header =
+    .label = Mest besøkte
+home-prefs-topsites-description = Mest besøkte nettsteder
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Anbefalt av { $provider }
+home-prefs-recommended-by-description = Bra innhold fra hele nettet, tilpasset for deg
+home-prefs-recommended-by-learn-more = Hvordan det virker
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Sponsede historier
+home-prefs-highlights-header =
+    .label = Høydepunkter
+home-prefs-highlights-description = Et utvalg av nettsteder som du har lagret eller besøkt
+home-prefs-highlights-option-visited-pages =
+    .label = Besøkte nettsider
+home-prefs-highlights-options-bookmarks =
+    .label = Bokmerker
+home-prefs-highlights-option-most-recent-download =
+    .label = Siste nedlasting
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Side lagret til { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Snutter
+home-prefs-snippets-description = Nyheter fra { -vendor-short-name } og { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } rekke
+           *[other] { $num } rekker
+        }
 
 ## Search Section
 
@@ -528,7 +566,7 @@ sync-engine-prefs =
             [windows] Innstillinger
            *[other] Innstillinger
         }
-    .tooltiptext = Generelle, personvern og sikkerhetsinnstillinger du har endret
+    .tooltiptext = Generelle, personvern- og sikkerhetsinnstillinger du har endret
     .accesskey = I
 sync-device-name-header = Enhetsnavn
 sync-device-name-change =
@@ -562,6 +600,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Foreslå og generer sterke passord
     .accesskey = o
+forms-fill-logins-and-passwords =
+    .label = Autoutfyll innlogginger og passord
+    .accesskey = i
 forms-saved-logins =
     .label = Lagrede innlogginger …
     .accesskey = L
@@ -638,6 +679,10 @@ sitedata-block-desc = Type blokkert
     .accesskey = T
 sitedata-option-block-trackers =
     .label = Tredjeparts-sporere
+sitedata-option-block-cross-site-trackers =
+    .label = Sporing på tvers av nettsteder
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Sporing på tvers av nettsteder og sosiale media-sporere
 sitedata-option-block-unvisited =
     .label = Infokapsler fra ubesøkte nettsteder
 sitedata-option-block-all-third-party =
@@ -672,7 +717,7 @@ addressbar-suggestions-settings = Endre innstillinger for søkeforslag
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Innholdsblokkering
-content-blocking-description = Blokker tredjepartsinnhold som sporer deg på nettet. Kontroller hvor mye av din internett-aktivitet som blir lagret og delt mellom nettsteder.
+content-blocking-enhanced-tracking-protection = Utvidet sporingsbeskyttelse
 content-blocking-section-description = Beskytt personvernet ditt mens du surfer. Blokker usynlig innhold som sporer nettsidene du besøker og profilerer deg. Blokkering av noe av dette innholdet kan gjøre nettsider raskere å laste.
 content-blocking-learn-more = Les mer
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -686,28 +731,38 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Tilpasset
     .accesskey = p
-content-blocking-standard-description = Blokker kun kjente sporere i private vindu.
 content-blocking-standard-desc = Balansert for beskyttelse og ytelse. Tillater noen sporere slik at nettsteder fungerer som de skal.
-content-blocking-strict-desc = Blokkerer alle sporere { -brand-short-name } oppdager. Dette kan begrense funksjonaliteten på visse nettsteder, eller gjøre at nettstedene ikke fungerer.
 content-blocking-strict-description = Sterkere beskyttelse, men kan forhindre noen nettsteder fra å fungere.
 content-blocking-custom-desc = Velg hva du vil blokkere.
 content-blocking-private-trackers = Kjente sporere bare i Private vindu
 content-blocking-third-party-cookies = Tredjeparts sporingsinfokapsler
+content-blocking-etp-standard-desc = Balansert for beskyttelse og ytelse. Sider lastes normalt.
+content-blocking-etp-strict-desc = Sterkere beskyttelse, men kan føre til at noen nettsteder eller innhold ikke vil fungere.
+content-blocking-etp-custom-desc = Velg hvilke sporere og skript som skal blokkeres.
+content-blocking-private-windows = Sporingsinnhold i private vinduer
+content-blocking-cross-site-tracking-cookies = Sporingsinfokapsler på tvers av nettsteder
+content-blocking-social-media-trackers = Sporing via sosiale medier
 content-blocking-all-cookies = Alle infokapsler
 content-blocking-unvisited-cookies = Infokapsler fra ubesøkte nettsteder
 content-blocking-all-windows-trackers = Kjente sporere i alle vinduer
+content-blocking-all-windows-tracking-content = Sporingsinnhold i alle vinduer
 content-blocking-all-third-party-cookies = Alle tredjeparts infokapsler
 content-blocking-cryptominers = Kryptominere
 content-blocking-fingerprinters = Nettleseravtrykk
 content-blocking-warning-title = Se opp!
 content-blocking-warning-description = Blokkering av innhold kan føre til at noen nettsteder slutter å fungere. Det er enkelt å deaktivere blokkering for nettsteder du stoler på.
 content-blocking-learn-how = Finn ut hvordan
+content-blocking-etp-warning-description = Blokkering av sporere kan påvirke funksjonaliteten på noen nettsteder.
+content-blocking-warning-learn-how = Les hvordan
 content-blocking-reload-description = Du må oppdatere fanene dine for å kunne bruke disse endringene.
 content-blocking-reload-tabs-button =
     .label = Last inn alle faner på nytt
     .accesskey = L
 content-blocking-trackers-label =
     .label = Sporere
+    .accesskey = S
+content-blocking-tracking-content-label =
+    .label = Sporingsinnhold
     .accesskey = S
 content-blocking-tracking-protection-option-all-windows =
     .label = I alle vindu

@@ -2,6 +2,34 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+pane-general-title = Általános
+category-general =
+    .tooltiptext = { pane-general-title }
+general-language-and-appearance-header = Nyelv és megjelenés
+general-incoming-mail-header = Bejövő levelek
+general-files-and-attachment-header = Fájlok és mellékletek
+general-tags-header = Címkék
+general-reading-and-display-header = Olvasás és megjelenítés
+general-updates-header = Frissítések
+general-network-and-diskspace-header = Hálózat és lemezterület
+general-indexing-label = Indexelés
+composition-category-header = Szerkesztés
+composition-attachments-header = Mellékletek
+composition-spelling-title = Helyesírás
+compose-html-style-title = HTML stílus
+composition-addressing-header = Címzés
+privacy-main-header = Adatvédelem
+privacy-passwords-header = Jelszavak
+privacy-junk-header = Levélszemét
+privacy-data-collection-header = Adatgyűjtés és -felhasználás
+privacy-security-header = Biztonság
+privacy-scam-detection-title = Átverésészlelés
+privacy-anti-virus-title = Antivírus
+privacy-certificates-title = Tanúsítványok
+chat-pane-header = Csevegés
+chat-status-title = Állapot
+chat-notifications-title = Értesítések
+chat-pane-styling-header = Stíluskezelés
 choose-messenger-language-description = Válassza ki a { -brand-short-name } menüijeinek, üzeneteinek és értesítéseinek megjelenítési nyelvét
 manage-messenger-languages-button =
     .label = Alternatívák beállítása…

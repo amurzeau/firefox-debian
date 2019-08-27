@@ -27,7 +27,7 @@
 <!ENTITY contextOutgoing.accesskey "S">
 <!ENTITY contextArchive.label "Lưu trữ">
 <!ENTITY contextArchive.accesskey "A">
-
+<!ENTITY contextPeriodic.accesskey "e">
 
 <!ENTITY filterActionDesc.label "Thực hiện các hành động này:">
 <!ENTITY filterActionDesc.accesskey "P">
@@ -37,7 +37,7 @@
 
 <!-- New Style Filter Rule Actions -->
 <!ENTITY moveMessage.label "Di chuyển thư tới">
-<!ENTITY copyMessage.label "Sao chép thư tới">
+<!ENTITY copyMessage.label "Sao chép thư đến">
 <!ENTITY forwardTo.label "Chuyển tiếp thư tới">
 <!ENTITY replyWithTemplate.label "Trả lời bằng mẫu">
 <!ENTITY markMessageRead.label "Đánh dấu là đã đọc">

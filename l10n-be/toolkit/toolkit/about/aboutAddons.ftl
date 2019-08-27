@@ -157,9 +157,6 @@ private-browsing-description2 =
     пашырэнне не будзе працаваць у час прыватнага аглядання, і не будзе мець доступу да вашай сеціўнай
     актыўнасці ў гэтым рэжыме. Мы зрабілі гэта для аховы вашай прыватнасці.
     <label data-l10n-name="private-browsing-learn-more">Даведайцеся, як кіраваць наладамі пашырэння.</label>
-extensions-view-discover =
-    .name = Атрымаць дадаткі
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-discopane =
     .name = Рэкамендацыі
     .tooltiptext = { extensions-view-discopane.name }
@@ -255,6 +252,12 @@ shortcuts-modifier-other = Улучыце Ctrl або Alt
 shortcuts-invalid = Недапушчальная камбінацыя
 shortcuts-letter = Увядзіце літару
 shortcuts-system = Нельга перавызначыць спалучэнне клавіш { -brand-short-name }
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Дублікат спалучэння клавіш
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } выкарыстоўваецца як спалучэнне клавіш больш чым у адным выпадку. Дубліраваныя спалучэнні могуць выклікаць нечаканыя паводзіны.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -318,6 +321,16 @@ release-notes-addon-button = Заўвагі да выпуску
 permissions-addon-button = Правы доступу
 addons-enabled-heading = Уключана
 addons-disabled-heading = Выключана
+extension-enabled-heading = Уключана
+extension-disabled-heading = Адключана
+theme-enabled-heading = Уключана
+theme-disabled-heading = Выключана
+plugin-enabled-heading = Уключана
+plugin-disabled-heading = Адключана
+dictionary-enabled-heading = Уключана
+dictionary-disabled-heading = Адключана
+locale-enabled-heading = Уключана
+locale-disabled-heading = Выключана
 ask-to-activate-button = Спытаць для задзейнічання
 always-activate-button = Заўсёды задейнічаць
 never-activate-button = Ніколі не задзейнічаць

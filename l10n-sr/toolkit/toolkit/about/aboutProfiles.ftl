@@ -8,6 +8,7 @@ profiles-create = Направи нови профил
 profiles-restart-title = Поново покрени
 profiles-restart-in-safe-mode = Поново покрени са онемогућеним додацима…
 profiles-restart-normal = Поново покрени као иначе…
+profiles-flush-restart-button = Поново покрени { -brand-short-name }
 # Variables:
 #   $name (String) - Name of the profile
 profiles-name = Профил: { $name }
@@ -26,6 +27,8 @@ profiles-rename = Преименуј
 profiles-remove = Уклони
 profiles-set-as-default = Постави као подразумевани профил
 profiles-launch-profile = Покрени профил у новом прегледачу
+profiles-cannot-set-as-default-title = Није могуће поставити подразумевано
+profiles-cannot-set-as-default-message = Подразумевани профил се не може мењати за { -brand-short-name }.
 profiles-yes = да
 profiles-no = не
 profiles-rename-profile-title = Преименуј профил

@@ -158,9 +158,6 @@ private-browsing-description2 =
     გაფართოება ვერ იმუშავებს პირადი თვალიერებისას და არ ექნება წვდომა თქვენს მოქმედებებზე, გვერდების მონახულებისას.
     ეს ცვლილებები ემსახურება თქვენი პირადი მონაცემების უსაფრთხოებას ინტერნეტში.
     <label data-l10n-name="private-browsing-learn-more">იხილეთ, როგორ იმართება გაფართოებების პარამეტრები.</label>
-extensions-view-discover =
-    .name = კატალოგი
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-discopane =
     .name = შემოთავაზებები
     .tooltiptext = { extensions-view-discopane.name }
@@ -256,6 +253,12 @@ shortcuts-modifier-other = გამოყენებული იყოს Ctr
 shortcuts-invalid = არასწორი შერჩევა
 shortcuts-letter = აკრიფეთ ასონიშანი
 shortcuts-system = ვერ გადაეწერება სწრაფ ღილაკს, რომელსაც { -brand-short-name } იყენებს
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = განმეორებული მალსახმობი
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } მალსახმობის სახით გამოიყენება ერთზე მეტ შემთხვევაში. განმეორებულმა მალსახმობებმა, შესაძლოა მოულოდნელი შედეგები წარმოშვას.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -317,6 +320,16 @@ release-notes-addon-button = გამოშვების მონაცე�
 permissions-addon-button = ნებართვები
 addons-enabled-heading = ჩართულია
 addons-disabled-heading = ამორთულია
+extension-enabled-heading = ჩართულია
+extension-disabled-heading = ამორთულია
+theme-enabled-heading = ჩართულია
+theme-disabled-heading = ამორთულია
+plugin-enabled-heading = ჩართულია
+plugin-disabled-heading = ამორთულია
+dictionary-enabled-heading = ჩართულია
+dictionary-disabled-heading = ამორთულია
+locale-enabled-heading = ჩართულია
+locale-disabled-heading = ამორთულია
 ask-to-activate-button = ნებართვა გასაშვებად
 always-activate-button = ყოველთვის გაეშვას
 never-activate-button = არასდროს გაეშვას

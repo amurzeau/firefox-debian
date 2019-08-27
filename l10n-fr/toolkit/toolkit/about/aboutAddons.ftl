@@ -98,7 +98,7 @@ detail-private-browsing-label = Exécution dans les fenêtres privées
 detail-private-browsing-description2 = Si autorisée, l’extension aura accès à vos activités en ligne pendant la navigation privée. <label data-l10n-name="detail-private-browsing-learn-more">En savoir plus</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
 # cannot be overridden by the user.
-detail-private-disallowed-label = Non autorisé dans les fenêtres privées
+detail-private-disallowed-label = Non autorisée dans les fenêtres privées
 detail-private-disallowed-description = Cette extension ne s’exécute pas en navigation privée. <label data-l10n-name="detail-private-browsing-learn-more">En savoir plus</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = Nécessite un accès aux fenêtres privées
@@ -157,9 +157,6 @@ private-browsing-description2 =
     l’extension ne fonctionnera pas en navigation privée et n’aura pas accès à vos activités en ligne.
     Nous avons apporté cette modification pour que votre navigation privée reste confidentielle.
     <label data-l10n-name="private-browsing-learn-more"> Découvrez comment gérer les paramètres d’extension.</ label>
-extensions-view-discover =
-    .name = Catalogue
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-discopane =
     .name = Recommandations
     .tooltiptext = { extensions-view-discopane.name }
@@ -255,6 +252,12 @@ shortcuts-modifier-other = Inclure Ctrl ou Alt
 shortcuts-invalid = Combinaison invalide
 shortcuts-letter = Saisissez une lettre
 shortcuts-system = Impossible de remplacer un raccourci { -brand-short-name }
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Raccourci en doublon
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } est utilisé comme raccourci dans plusieurs cas. Les raccourcis en doublon peuvent provoquer un comportement imprévisible.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -309,6 +312,16 @@ release-notes-addon-button = Notes de version
 permissions-addon-button = Permissions
 addons-enabled-heading = Activé
 addons-disabled-heading = Désactivé
+extension-enabled-heading = Activées
+extension-disabled-heading = Désactivées
+theme-enabled-heading = Activés
+theme-disabled-heading = Désactivés
+plugin-enabled-heading = Activés
+plugin-disabled-heading = Désactivés
+dictionary-enabled-heading = Activés
+dictionary-disabled-heading = Désactivés
+locale-enabled-heading = Activées
+locale-disabled-heading = Désactivées
 ask-to-activate-button = Demander pour activer
 always-activate-button = Toujours activer
 never-activate-button = Ne jamais activer
@@ -350,7 +363,7 @@ install-update-button = Mettre à jour
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed =
-    .title = Autorisé dans les fenêtres privées
+    .title = Autorisée dans les fenêtres privées
 addon-detail-private-browsing-help = Lorsqu’elle est autorisée, l’extension a accès à vos activités en ligne lors d’une navigation privée. <a data-l10n-name="learn-more">En savoir plus</a>
 addon-detail-private-browsing-allow = Autoriser
 addon-detail-private-browsing-disallow = Ne pas autoriser

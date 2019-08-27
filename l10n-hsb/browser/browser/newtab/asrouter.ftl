@@ -2,8 +2,15 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## These messages are used as headings in the recommendation doorhanger
+
 cfr-doorhanger-extension-heading = Doporučene rozšěrjenje
+cfr-doorhanger-feature-heading = Doporučena funkcija
 cfr-doorhanger-pintab-heading = Spytajće to: Rajtark připjeć
+
+
+
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Čehodla so to pokazuje
 cfr-doorhanger-extension-cancel-button = Nic nětko
@@ -66,3 +73,45 @@ cfr-doorhanger-bookmark-fxa-link-text = Synchronizujće nětko zapołožki…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Tłóčatko Začinić
     .title = Začinić
+
+## Protections panel
+
+cfr-protections-panel-header = Přehladujće bjez toho, zo by wam slědowało
+cfr-protections-panel-body = Wobchowajće swoje daty za sebje. { -brand-short-name } was před wjele z najhusćišich přesćěhowakow škita, kotrež slěduja, štož online činiće.
+cfr-protections-panel-link-text = Dalše informacije
+
+## What's New toolbar button and panel
+
+cfr-whatsnew-button =
+    .label = Nowe funkcije a změny
+    .tooltiptext = Nowe funkcije a změny
+cfr-whatsnew-panel-header = Nowe funkcije a změny
+
+## Bookmark Sync
+
+cfr-doorhanger-sync-bookmarks-header = Přinjesće tutu zapołožku na swój telefon
+cfr-doorhanger-sync-bookmarks-body = Wzmiće swoje zapołožki, hesła, historiju a wjace wšudźe sobu, hdźež sće so pola { -brand-product-name } přizjewił.
+cfr-doorhanger-sync-bookmarks-ok-button = { -sync-brand-short-name } zmóžnić
+    .accesskey = m
+
+## Login Sync
+
+cfr-doorhanger-sync-logins-header = Njezhubjejće ženje wjace hesło
+cfr-doorhanger-sync-logins-body = Składujće a synchronizujće swoje hesła ze wšěmi swojimi gratami.
+cfr-doorhanger-sync-logins-ok-button = { -sync-brand-short-name } zmóžnić
+    .accesskey = z
+
+## Send Tab
+
+cfr-doorhanger-send-tab-header = Čitajće to po puću
+cfr-doorhanger-send-tab-recipe-header = Donjesće tutón recept do kuchnje
+cfr-doorhanger-send-tab-body = Send Tab wam zmóžnja, tutón wotkaz lochko ze swojim telefonom dźělić abo wšudźe, hdźež sće so pola { -brand-product-name } přizjewił.
+cfr-doorhanger-send-tab-ok-button = Send Tab wupruwować
+    .accesskey = T
+
+## Firefox Send
+
+cfr-doorhanger-firefox-send-header = Dźělće tutón PDF wěsće
+cfr-doorhanger-firefox-send-body = Škitajće swoje sensibelne dokumenty před wćipnymi pohladami ze zaklučowanjom kónc do kónca a z wotkazom, kotryž so zhubi, hdyž sće hotowy.
+cfr-doorhanger-firefox-send-ok-button = { -send-brand-name } wupruwować
+    .accesskey = u

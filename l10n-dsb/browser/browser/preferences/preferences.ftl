@@ -29,11 +29,6 @@ search-input-box =
             [windows] W nastajenjach pytaś
            *[other] W nastajenjach pytaś
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Waša organizacija jo změny někotarych nastajenjow znjemóžnił.
-       *[other] Waša organizacija jo změny někotarych nastajenjow znjemóžnił.
-    }
 managed-notice = Waš wobglědowak se wót wašeje organizacije zastoj.
 pane-general-title = Powšykne
 category-general =
@@ -404,6 +399,51 @@ choose-bookmark =
     .label = Cytańske znamje wužywaś…
     .accesskey = C
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Wopśimjeśe startowego boka Firefox
+home-prefs-content-description = Wubjeŕśo, kótare wopśimjeśe cośo na swójej startowej wobrazowce Firefox měś.
+home-prefs-content-discovery-description = Content Discovery na startowem boku Firefox wam zmóžnja, w interneśe relewantne nastawki wusokeje kwality namakaś.
+home-prefs-search-header =
+    .label = Webpytanje
+home-prefs-topsites-header =
+    .label = Nejcesćej woglědane sedła
+home-prefs-topsites-description = Sedła, ku kótarymž se nejcesćej woglědujośo
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Wót { $provider } dopórucony
+home-prefs-recommended-by-description = Wjelicne wopśimjeśe z cełego weba, wubrane specielnje za was
+home-prefs-recommended-by-learn-more = Kak funkcioněrujo
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Sponsorowane tšojenja pokazaś
+home-prefs-highlights-header =
+    .label = Wjerški
+home-prefs-highlights-description = Wuběrk websedłow, kótarež sćo składował abo se woglědał
+home-prefs-highlights-option-visited-pages =
+    .label = Woglědane boki
+home-prefs-highlights-options-bookmarks =
+    .label = Cytańske znamjenja
+home-prefs-highlights-option-most-recent-download =
+    .label = Nejnowše ześěgnjenje
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Boki skłaźone do { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Kuski
+home-prefs-snippets-description = Aktualizacije wót { -vendor-short-name } a { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } smužka
+            [two] { $num } smužce
+            [few] { $num }smužki
+           *[other] { $num } smužkow
+        }
+
 ## Search Section
 
 search-bar-header = Pytańske pólo
@@ -568,6 +608,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Mócne gronidła napóraś a naraźiś
     .accesskey = r
+forms-fill-logins-and-passwords =
+    .label = Pśizjawjenja a gronidła awtomatiski zapisaś
+    .accesskey = i
 forms-saved-logins =
     .label = Skłaźone pśizjawjenja…
     .accesskey = S
@@ -644,6 +687,10 @@ sitedata-block-desc = Blokěrowany typ
     .accesskey = t
 sitedata-option-block-trackers =
     .label = Pśeslědowaki tśeśich
+sitedata-option-block-cross-site-trackers =
+    .label = Pśeslědowaki mjazy sedłami
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Pśeslědowaki mjazy sedłami a socialnych medijow
 sitedata-option-block-unvisited =
     .label = Cookieje z njewoglědanych websedłow
 sitedata-option-block-all-third-party =
@@ -678,7 +725,7 @@ addressbar-suggestions-settings = Nastajenja za naraźenja pytnice změniś
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Blokěrowanje wopśimjeśa
-content-blocking-description = Blokěrujśo wopśimjeśe tśeśich, kótarež wam pó webje slědujo. Kontrolěrujśo, kak cesto se waša aktiwita online składujo a mjazy websedłami źěli.
+content-blocking-enhanced-tracking-protection = Pólěpšony slědowański šćit
 content-blocking-section-description = Šćitajśo swóju priwatnosć, mjaztym až pśeglědujośo. Blokěrujśo njewidobne wopśimjeśe, kótarež sedła slědujo, ku kótarymž se woglědujośo, a profil wó was twóri. Gaž take wopśimjeśe blokěrujośo, daju se boki snaź malsnjej zacytaś.
 content-blocking-learn-more = Dalšne informacije
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -692,22 +739,29 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Swójski
     .accesskey = S
-content-blocking-standard-description = Blokěrujo jano znate pśeslědowaki w priwatnych woknach.
 content-blocking-standard-desc = Wurownany za šćit a wugbaśe. Dowólujo někotare pślědowaki, aby websedła pórědnje funkcioněrowali.
-content-blocking-strict-desc = Blokuje wšě přesćěhowaki, kotrež { -brand-short-name } namaka. Tohodla njemóhli někotre websydła korektnje fungować.
 content-blocking-strict-description = Mócnjejšy šćit, móžo zawinowaś, až někotare sedła wěcej njefunkcioněruju.
 content-blocking-custom-desc = Wubjeŕśo, což cośo blokěrowaś.
 content-blocking-private-trackers = Znate pśeslědowaki w priwatnych woknach
 content-blocking-third-party-cookies = Slědujuce cookiejei tśeśich
+content-blocking-etp-standard-desc = Wuwažony za šćit a wugbaśe. Boki se normalnje zacytaju.
+content-blocking-etp-strict-desc = Mócnjejšy šćit, ale móžo zawinowaś, až někotare sedła abo wopśimjeśe wěcej njefunkcioněruju.
+content-blocking-etp-custom-desc = Wubjeŕśo, kótare pśeslědowaki a skripty maju se blokěrowaś.
+content-blocking-private-windows = Slědujuce wopśimjeśe w priwatnych woknach
+content-blocking-cross-site-tracking-cookies = Slědujuce cookieje mjazy sedłami
+content-blocking-social-media-trackers = Pśeslědowaki socialnych medijow
 content-blocking-all-cookies = Wšykne cookieje
 content-blocking-unvisited-cookies = Cookieje z njewoglědanych sedłow
 content-blocking-all-windows-trackers = Znate pśeslědowaki we wšych woknach
+content-blocking-all-windows-tracking-content = Slědujuce wopśimjeśe we wšych woknach
 content-blocking-all-third-party-cookies = Wšykne cookieje tśeśich
 content-blocking-cryptominers = Kryptokopanje
 content-blocking-fingerprinters = Palcowe wótśišće
 content-blocking-warning-title = Glědajśo!
 content-blocking-warning-description = Blokěrowanje wopśimjeśa móžo zawinowaś, až někotare websedła wěcej njefunkcioněruju. Jo lažko, blokěrowanje za sedła znjemóžniś, kótarymž dowěriśo.
 content-blocking-learn-how = Zgóńśo kak
+content-blocking-etp-warning-description = Blokěrowanje pśeslědowakow mógło funkcionalnosć někotarych websedłow wobwliwowaś. Zacytajśo bok z pśeslědowakami znowego, aby wšykno wopśimjeśe zacytał.
+content-blocking-warning-learn-how = Zgóńśo kak
 content-blocking-reload-description = Musyśo swóje rejtarki znowego zacytaś, aby toś te změny nałožył.
 content-blocking-reload-tabs-button =
     .label = Wšykne rejtarki znowego zacytaś
@@ -715,6 +769,9 @@ content-blocking-reload-tabs-button =
 content-blocking-trackers-label =
     .label = Pśeslědowaki
     .accesskey = P
+content-blocking-tracking-content-label =
+    .label = Slědujuce wopśimjeśe
+    .accesskey = S
 content-blocking-tracking-protection-option-all-windows =
     .label = We wšych woknach
     .accesskey = W

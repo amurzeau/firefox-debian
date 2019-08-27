@@ -2,8 +2,15 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## These messages are used as headings in the recommendation doorhanger
+
 cfr-doorhanger-extension-heading = Chilab'en K'amal
+cfr-doorhanger-feature-heading = Chilab'en Samaj
 cfr-doorhanger-pintab-heading = Tatojtob'ej rere': Pin Tab
+
+
+
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Aruma nintz'ët re'
 cfr-doorhanger-extension-cancel-button = Wakami Mani
@@ -62,3 +69,45 @@ cfr-doorhanger-bookmark-fxa-link-text = Wakami yexim taq yaketal...
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Tz'apïy pitz'b'äl
     .title = Titz'apïx
+
+## Protections panel
+
+cfr-protections-panel-header = Katok pa k'amaya'l akuchi' man yatoqäx ta
+cfr-protections-panel-body = Tik'oje' pan aq'a' ri awetamab'al. { -brand-short-name } yatruto' pa kiq'a' ri ojqanela' at kojqan toq yatok pa k'amab'ey.
+cfr-protections-panel-link-text = Tetamäx ch'aqa' chik
+
+## What's New toolbar button and panel
+
+cfr-whatsnew-button =
+    .label = K'ak'a' Rutzijol
+    .tooltiptext = K'ak'a' Rutzijol
+cfr-whatsnew-panel-header = Achike natzijoj
+
+## Bookmark Sync
+
+cfr-doorhanger-sync-bookmarks-header = Taya' re yaketal re' pan awoyonib'al
+cfr-doorhanger-sync-bookmarks-body = Ke'ak'waj ri taq ayaketal, ewan atzij, natab'äl chuqa' ch'aqa' chik pa xab'achike k'ojlib'äl akuchi' natikirisaj molojri'ïl pa { -brand-product-name }.
+cfr-doorhanger-sync-bookmarks-ok-button = Titzij { -sync-brand-short-name }
+    .accesskey = i
+
+## Login Sync
+
+cfr-doorhanger-sync-logins-header = Man Tasäch chik jun Ewan Tzij
+cfr-doorhanger-sync-logins-body = Ütz ke'ayaka' ri ewan taq atzij chuqa' ke'axima' pa ronojel taq awokisab'al.
+cfr-doorhanger-sync-logins-ok-button = Titzij { -sync-brand-short-name }
+    .accesskey = T
+
+## Send Tab
+
+cfr-doorhanger-send-tab-header = Tisik'ïx re re' pa b'enam
+cfr-doorhanger-send-tab-recipe-header = Tik'wäx re retal rikil pa rute' q'aq'
+cfr-doorhanger-send-tab-body = Send Tab anin nuya' q'ij chawe nakomonij re ximöy tzij re' pan awoyonib'al o xab'akuchi' k'ojlib'äl akuchi' natikirisaj molojri'ïl pa { -brand-product-name }.
+cfr-doorhanger-send-tab-ok-button = Tatojtob'ej Send Tab
+    .accesskey = t
+
+## Firefox Send
+
+cfr-doorhanger-firefox-send-header = Ütz tikomonïx re PDF re'
+cfr-doorhanger-firefox-send-body = Ke'akolo' ri nïm taq awuj chuwäch itzel kitz'etik winaqi' rik'in chijun ewan rusik'ixik chuqa' rik'in jun ximonel, ri nisach el toq nik'is.
+cfr-doorhanger-firefox-send-ok-button = Titojtob'ëx { -send-brand-name }
+    .accesskey = t

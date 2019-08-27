@@ -34,8 +34,11 @@ permissions-button-cancel =
 permissions-button-ok =
     .label = Salvar le cambios
     .accesskey = S
+permissions-autoplay-menu = Predefinition pro tote le sitos web:
 permissions-searchbox =
     .placeholder = Cercar in le sito web
+permissions-capabilities-autoplay-allow =
+    .label = Permitter audio e video
 permissions-capabilities-autoplay-block =
     .label = Blocar audio
 permissions-capabilities-autoplay-blockall =
@@ -64,6 +67,10 @@ permissions-exceptions-content-blocking-window =
     .title = Exceptiones - Blocada de contentos
     .style = { permissions-window.style }
 permissions-exceptions-content-blocking-desc = Tu ha disactivate le Blocada de contentos pro iste sito web.
+permissions-exceptions-etp-window =
+    .title = Exceptiones del Protection meliorate contra le traciamento
+    .style = { permissions-window.style }
+permissions-exceptions-etp-desc = Tu ha arrestate le protectiones sur iste sitos web.
 
 ## Exceptions - Cookies
 
@@ -102,6 +109,10 @@ permissions-exceptions-autoplay-media-desc2 = Tu pote specificar le sitos web qu
 
 ## Site Permissions - Autoplay
 
+permissions-site-autoplay-window =
+    .title = Configuration - Autoreproduction
+    .style = { permissions-window.style }
+permissions-site-autoplay-desc = Specifica hic le sitos web que non seque tu configuration predefinite de autoreproduction.
 
 ## Site Permissions - Notifications
 

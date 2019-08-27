@@ -4,10 +4,6 @@
 
 do-not-track-description = Neldu lowe internet siñaal "Hoto rewindo" so a yiɗaa ñukkindeede
 do-not-track-learn-more = Ɓeydu humpito
-do-not-track-option-default =
-    .label = E sahaa ndeenka rewindo tan
-do-not-track-option-default-content-blocking =
-    .label = So wonaa nde { -brand-short-name } suɓaa yo faddo dewinde teskaaɗe
 do-not-track-option-always =
     .label = Sahaa kala
 pref-page =
@@ -31,11 +27,6 @@ search-input-box =
             [windows] Yiylo e Cuɓe
            *[other] Yiylo e Cuɓoraaɗe
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Yuɓɓo maa daaƴii kattanɗe waylude won e cuɓe.
-       *[other] Yuɓɓo maa daaƴii kattanɗe waylude won e cuɓe.
-    }
 pane-general-title = Kuuɓal
 category-general =
     .tooltiptext = { pane-general-title }
@@ -48,10 +39,6 @@ category-search =
 pane-privacy-title = Suturo & Kisal
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Konte Firefox
-category-sync =
-    .tooltiptext = { pane-sync-title }
 help-button-label = Wallitorde { -brand-short-name }
 addons-button-label = Jokke & Kettule
 focus-search =
@@ -93,9 +80,6 @@ extension-controlled-default-search = Timmitere, <img data-l10n-name="icon"/> { 
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = Timmitere, <img data-l10n-name="icon"/> { $name }, ena naamnii Tabbe Mooftirɗe.
-# This string is shown to notify the user that their tracking protection preferences
-# are being controlled by an extension.
-extension-controlled-websites-tracking-protection-mode = Timmitere, <img data-l10n-name="icon"/> { $name }, nana ɗowa ndeenka dewindol.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
 extension-controlled-websites-content-blocking-all-trackers = Jokkel, <img data-l10n-name="icon"/>{ $name }, jogii ndee ñaawirde.
@@ -153,9 +137,6 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = Reentin am so tabbe keewɗe ine uddidee
     .accesskey = k
-warn-on-quit-close-multiple-tabs =
-    .label = Tintinde ma so a yaltii a uddii tabbe keewɗe
-    .accesskey = t
 warn-on-open-many-tabs =
     .label = Reentin am so udditgol tabbe keewɗe ena keɓori leeltinde { -brand-short-name }
     .accesskey = d
@@ -385,6 +366,48 @@ choose-bookmark =
     .label = Huutoro Maantorol…
     .accesskey = M
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Loowdi Jaɓɓorgo Firefox
+home-prefs-content-description = Suɓo hol loowdi njiɗɗaa e yaynirde jaɓɓorgo Firefox maa.
+home-prefs-search-header =
+    .label = Njiilaw Geese
+home-prefs-topsites-header =
+    .label = Lowre Rowrowe
+home-prefs-topsites-description = Lowe ɗe ɓurɗaa waawde yillaade
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Waggini ɗum ko { $provider }
+home-prefs-recommended-by-description = Loowdi dowrowri geese, keertinanaandi ma
+home-prefs-recommended-by-learn-more = Hol no gollortoo
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Daari joɓanaaɗi
+home-prefs-highlights-header =
+    .label = Jalbine
+home-prefs-highlights-description = Suɓngo lowe ɗe ndannduɗaa walla ɗe njilliɗaa
+home-prefs-highlights-option-visited-pages =
+    .label = Kelle jiyaaɗe
+home-prefs-highlights-options-bookmarks =
+    .label = Maantore
+home-prefs-highlights-option-most-recent-download =
+    .label = Cakkitiiɗe awteede
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Kelle kisnaaɗe e { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Taƴitine
+home-prefs-snippets-description = Kesɗitineiwde e { -vendor-short-name } kañum e { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } gorol
+           *[other] { $num } gorol
+        }
+
 ## Search Section
 
 search-bar-header = Palal NJiilaw
@@ -527,8 +550,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Danndu
     .accesskey = D
-sync-mobilepromo-single = Seŋ kaɓirgel goɗngel
-sync-mobilepromo-multi = Toppito kaɓirɗe
 sync-tos-link = Laabi Carwol
 sync-fxa-privacy-notice = Tintinol Suturo
 
@@ -538,7 +559,6 @@ privacy-header = Suturo Wanngorde
 
 ## Privacy Section - Forms
 
-forms-header = Formileeruuji & pinle
 logins-header = Ceŋorɗe & Pinle
 forms-ask-to-save-logins =
     .label = Laaɓndo mbele a hisnat baccooje e pinle lowe
@@ -606,12 +626,6 @@ sitedata-total-size-calculating = Nana hiisoo keɓe lowre kam e ɓetol moggon…
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = A mooftii kuukiije, lowre kañum moggel kuutortoo jooni ko { $value } { $unit } boowal mbeɗu nguu.
 sitedata-learn-more = Jokku taro
-sitedata-keep-until = Mooftu haa
-    .accesskey = u
-sitedata-keep-until-expire =
-    .label = Ɗe mbuntii
-sitedata-keep-until-closed =
-    .label = { -brand-short-name } uddaama
 sitedata-delete-on-close =
     .label = Momtu kuukiiji e keɓe lowre ndee so { -brand-short-name } uddiima
     .accesskey = c
@@ -625,29 +639,12 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Sifaa paddaaɗo
     .accesskey = S
-sitedata-block-trackers-option-recommended =
-    .label = Dewindiiɗi goɗɗi (basiyaaɗi)
-sitedata-block-trackers-option =
-    .label = Dewindiiɗi goɗɗi
-sitedata-block-unvisited-option =
-    .label = Kuukiiji lowe geese ɗe njillaaka
-sitedata-block-all-third-party-option =
-    .label = Kuukiiji goɗɗi ɗii kala (ina mbaawi saabaade taƴondiral e lowe geese)
-sitedata-block-all-option =
-    .label = Kuukiiji ɗii kala (ina mbaawi saabaade taƴondiral e lowe geese)
 sitedata-clear =
     .label = Momtu Keɓe…
     .accesskey = l
 sitedata-settings =
     .label = Yuɓɓin keɓe…
     .accesskey = M
-sitedata-cookies-exceptions =
-    .label = Palooje…
-    .accesskey = P
-# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
-# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
-# Cookies and Site Data section.
-sitedata-warning-your-settings-prevent-changes = Teelte maa to paddagol loowdi ina kaɗa kala waylo teelte kuukiiji e keɓe lowre ndee.
 
 ## Privacy Section - Address Bar
 
@@ -667,83 +664,11 @@ addressbar-suggestions-settings = Waylu cuɓe wonande cakkitte yiylorde
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Paddagol loowdi
-content-blocking-desc = Faddo loowɗeele goɗɗe, ko wayi no jeeyle walla kod baawɗe leeltinde banngagol maa walla rewindaade ma e nder geese. Neɗɗin teelte maa ngam jerondiral moƴƴal hakkunde ndeenka e yuumteende.
 content-blocking-learn-more = Ɓeydu humpito
-content-blocking-restore-defaults =
-    .label = Waɗtu no ardunoo
-    .accesskey = W
-content-blocking-toggle-on =
-    .tooltiptext = Ñif paddagol loowdi
-content-blocking-toggle-off =
-    .tooltiptext = Hurmin paddagol loowdi
-content-blocking-toggle-label-on = ON
-    .accesskey = O
-content-blocking-toggle-label-off = OFF
-    .accesskey = O
-content-blocking-category-label = Suɓo ko faddetee
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-slow-loading-trackers-label =
-    .label = Dewindiiɗe loowngo-leelngo
-    .accesskey = D
-content-blocking-fastblock-new-description = Faddo tan dewinde kaɗooje loowgol jaawngol kelle.
-content-blocking-tracking-protection-trackers-label =
-    .label = Dewindiiɗe
-    .accesskey = D
-content-blocking-tracking-protection-all-detected-trackers-label =
-    .label = Dewindiiɗe jiytaaɗe ɗee fof
-    .accesskey = D
-content-blocking-tracking-protection-new-description = Faddo dewindiiɗe ganndaaɗe ɗee kala. (Ngam haɗde loowgol won ɗeen kelle.)
-content-blocking-tracking-protection-option-always =
-    .label = Sahaa kala
-    .accesskey = S
-content-blocking-tracking-protection-option-private =
-    .label = Nder kenorɗe keeriiɗe tan
-    .accesskey = N
 content-blocking-tracking-protection-change-block-list = Waylo doggol padde
-content-blocking-third-party-cookies-label =
-    .label = Kuukiiji goɗɗi
-    .accesskey = K
-content-blocking-reject-trackers-description = Faddo kuukiiji goɗɗi ɗii kala walla ɗi dewindiiɗi ɗii toɗɗii ɗii.
-# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
-# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
-# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
-# the UI.
-content-blocking-reject-trackers-warning-your-settings-prevent-changes = Teelte maa nder kuukiiji e keɓe lowre ndee ina kaɗa kala baylugol teelte kuukiiji goɗɗi.
-content-blocking-change-cookie-settings =
-    .label = Waylu teelte kuukiiji
-    .accesskey = W
-content-blocking-reject-trackers-block-trackers-option-recommended =
-    .label = Dewindiiɗi (basiyaaɗi)
-    .accesskey = D
-content-blocking-reject-trackers-block-trackers-option =
-    .label = Dewindiiɗi
-    .accesskey = D
-content-blocking-reject-trackers-all-third-parties-option =
-    .label = Kuukiiji goɗɗi ɗii kala (ina mbaawi saabaade taƴondiral e lowe geese)
-    .accesskey = K
 
 ## Privacy Section - Tracking
 
-tracking-header = Huutoro Ndeenka Dewindol
-tracking-desc = Ndeenka Dewindol ina haɗa rewindotooɓe ceŋol maa ƴettude keɓe banngogol maa e nder lowe keewɗe, <a data-l10n-name="learn-more">Ɓeydu humpito baɗte Ndeenka Dewindol kam e suturo maa </a>
-tracking-mode-label = Huutoro ndeenka dewindagol ngam faddaade ñukkintooɓe anndaaɓe
-tracking-mode-always =
-    .label = Sahaa kala
-    .accesskey = a
-tracking-mode-private =
-    .label = E henorde suuriinde tan
-    .accesskey = o
-tracking-mode-never =
-    .label = Hay sahaa
-    .accesskey = H
-tracking-exceptions =
-    .label = Paltooje…
-    .accesskey = a
-tracking-change-block-list =
-    .label = Waylu Doggol Daaƴol…
-    .accesskey = W
 
 ## Privacy Section - Permissions
 
@@ -768,20 +693,9 @@ permissions-notification-link = Ɓeydu humpito
 permissions-notification-pause =
     .label = Dartin tintine haa { -brand-short-name } hurmitii
     .accesskey = n
-permissions-block-autoplay-media =
-    .label = Haɗ lowe tarde mejaa baɗɗo daande ɗoon e ɗoon
-    .accesskey = B
-permissions-block-autoplay-media-menu = Wonande lowe jaɓooje hito
 permissions-block-autoplay-media-exceptions =
     .label = Paltooje...
     .accesskey = E
-autoplay-option-ask =
-    .label = Naamno e sahaa kala
-autoplay-option-allow =
-    .label = Yamir janngol ɗoon e ɗoon
-autoplay-option-dont =
-    .label = Woto tar e jaajol
-permissions-autoplay-link = Ɓeydu humpito
 permissions-block-popups =
     .label = Falo kenorɗe cuppitte
     .accesskey = B
@@ -814,10 +728,6 @@ collection-studies-link = Yiy jaŋdeeji { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Ciimti keɓe ko daaƴaaɗi wonande kaa ngonka mahngo
-collection-browser-errors =
-    .label = Yamir { -brand-short-name } yo neldu ciimti juume (yantude heen mesaasuuji juume) to { -vendor-short-name }
-    .accesskey = b
-collection-browser-errors-link = Ɓeydu humpito
 collection-backlogged-crash-reports =
     .label = Yamir { -brand-short-name } yo neldu jaŋte kooke leeltuɗe e innde maa
     .accesskey = c

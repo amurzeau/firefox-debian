@@ -155,9 +155,6 @@ private-browsing-description2 =
     w ustawieniach, rozszerzenie nie będzie działało w trybie prywatnym i nie będzie miało dostępu
     do działań użytkownika. Wprowadziliśmy tę zmianę, aby prywatne przeglądanie zawsze było prywatne.
     <label data-l10n-name="private-browsing-learn-more">Więcej informacji o zarządzaniu ustawieniami rozszerzeń.</label>
-extensions-view-discover =
-    .name = Pobierz dodatki
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-discopane =
     .name = Polecane
     .tooltiptext = Wyświetl polecane dodatki
@@ -192,8 +189,8 @@ extensions-warning-update-security-enable =
 ## Strings connected to add-on updates
 
 extensions-updates-check-for-updates =
-    .label = Znajdź aktualizacje
-    .accesskey = n
+    .label = Sprawdź dostępność aktualizacji
+    .accesskey = S
 extensions-updates-view-updates =
     .label = Wyświetl ostatnie aktualizacje
     .accesskey = W
@@ -240,7 +237,7 @@ extensions-updates-update-selected =
 
 manage-extensions-shortcuts =
     .label = Zarządzaj skrótami rozszerzeń
-    .accesskey = Z
+    .accesskey = d
 shortcuts-no-addons = Nie włączono żadnych rozszerzeń.
 shortcuts-no-commands = Te rozszerzenia nie mają skrótów:
 shortcuts-input =
@@ -253,6 +250,12 @@ shortcuts-modifier-other = Uwzględnij Ctrl lub Alt
 shortcuts-invalid = Nieprawidłowe połączenie
 shortcuts-letter = Wpisz literę
 shortcuts-system = Nie można zastąpić skrótu programu { -brand-short-name }
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Podwójny skrót
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } jest używane jako skrót w więcej niż jednym przypadku. Podwójne skróty mogą powodować niepoprawne działanie.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -314,6 +317,16 @@ release-notes-addon-button = Informacje o wydaniu
 permissions-addon-button = Uprawnienia
 addons-enabled-heading = Włączone
 addons-disabled-heading = Wyłączone
+extension-enabled-heading = Włączone
+extension-disabled-heading = Wyłączone
+theme-enabled-heading = Włączone
+theme-disabled-heading = Wyłączone
+plugin-enabled-heading = Włączone
+plugin-disabled-heading = Wyłączone
+dictionary-enabled-heading = Włączone
+dictionary-disabled-heading = Wyłączone
+locale-enabled-heading = Włączone
+locale-disabled-heading = Wyłączone
 ask-to-activate-button = Pytaj o aktywację
 always-activate-button = Zawsze aktywuj
 never-activate-button = Nigdy nie aktywuj
@@ -347,19 +360,19 @@ addon-detail-reviews-link =
 #   $addon (string) - Name of the add-on
 pending-uninstall-description = Usunięto dodatek <span data-l10n-name="addon-name">{ $addon }</span>.
 pending-uninstall-undo-button = Cofnij
-addon-detail-updates-label = Automatyczne aktualizacje
-addon-detail-updates-radio-default = Domyślne
-addon-detail-updates-radio-on = Włączone
-addon-detail-updates-radio-off = Wyłączone
+addon-detail-updates-label = Automatyczne aktualizacje:
+addon-detail-updates-radio-default = ustawienia domyślne
+addon-detail-updates-radio-on = włączone
+addon-detail-updates-radio-off = wyłączone
 addon-detail-update-check-label = Sprawdź dostępność aktualizacji
 install-update-button = Uaktualnij
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed =
-    .title = Dozwolone w oknach prywatnych
+    .title = Dozwolone w oknach prywatnych:
 addon-detail-private-browsing-help = Zezwolenie spowoduje, że rozszerzenie będzie miało dostęp do działań użytkownika w Internecie podczas przeglądania w trybie prywatnym. <a data-l10n-name="learn-more">Więcej informacji</a>
-addon-detail-private-browsing-allow = Zezwól
-addon-detail-private-browsing-disallow = Nie zezwalaj
+addon-detail-private-browsing-allow = zezwalaj
+addon-detail-private-browsing-disallow = nie zezwalaj
 # This is the tooltip text for the recommended badge for an extension in about:addons. The
 # badge is a small icon displayed next to an extension when it is recommended on AMO.
 addon-badge-recommended =

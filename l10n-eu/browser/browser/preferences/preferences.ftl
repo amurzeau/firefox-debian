@@ -29,11 +29,6 @@ search-input-box =
             [windows] Bilatu aukeretan
            *[other] Bilatu hobespenetan
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Zure erakundeak hainbat aukera aldatzeko modua desgaitu du.
-       *[other] Zure erakundeak hainbat hobespen aldatzeko modua desgaitu du.
-    }
 managed-notice = Nabigatzailea zure erakundeak kudeatzen du.
 pane-general-title = Orokorra
 category-general =
@@ -398,6 +393,49 @@ choose-bookmark =
     .label = Erabili laster-marka…
     .accesskey = b
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Firefoxen hasiera-orriko edukia
+home-prefs-content-description = Aukeratu zein eduki nahi duzun Firefoxen hasiera-orriko pantailan.
+home-prefs-content-discovery-description = Firefoxen hasierako edukien aurkikuntzaren bidez kalitate altuko artikulu esanguratsuak aurki ditzakezu webean.
+home-prefs-search-header =
+    .label = Web bilaketa
+home-prefs-topsites-header =
+    .label = Gune erabilienak
+home-prefs-topsites-description = Gehien bisitatzen dituzun guneak
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = { $provider } hornitzaileak gomendatuta
+home-prefs-recommended-by-description = Webeko eduki baliotsua, zuretzat pertsonalizatuta
+home-prefs-recommended-by-learn-more = Nola dabilen
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Babesleen istorioak
+home-prefs-highlights-header =
+    .label = Nabarmendutakoak
+home-prefs-highlights-description = Gorde edo bisitatu dituzun guneen hautapena
+home-prefs-highlights-option-visited-pages =
+    .label = Bisitatutako orriak
+home-prefs-highlights-options-bookmarks =
+    .label = Laster-markak
+home-prefs-highlights-option-most-recent-download =
+    .label = Azken deskarga
+home-prefs-highlights-option-saved-to-pocket =
+    .label = { -pocket-brand-name }-en gordetako orriak
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Mezu-zatiak
+home-prefs-snippets-description = { -vendor-short-name } eta { -brand-product-name }i buruzko eguneraketak
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] Errenkada bat
+           *[other] { $num } errenkada
+        }
+
 ## Search Section
 
 search-bar-header = Bilaketa-barra
@@ -562,6 +600,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Iradoki eta sortu pasahitz sendoak
     .accesskey = d
+forms-fill-logins-and-passwords =
+    .label = Automatikoki bete erabiltzaile-izen eta pasahitzak
+    .accesskey = A
 forms-saved-logins =
     .label = Gordetako saio-hasierak…
     .accesskey = s
@@ -638,6 +679,10 @@ sitedata-block-desc = Mota blokeatuta
     .accesskey = M
 sitedata-option-block-trackers =
     .label = Hirugarren jarraipen-elementuak
+sitedata-option-block-cross-site-trackers =
+    .label = Guneen arteko jarraipen-elementuak
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Guneen arteko eta sare sozialetako jarraipen-elementuak
 sitedata-option-block-unvisited =
     .label = Bisitatu gabeko guneetako cookieak
 sitedata-option-block-all-third-party =
@@ -672,7 +717,7 @@ addressbar-suggestions-settings = Aldatu bilaketa-motorren iradokizunetarako hob
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Edukia blokeatzea
-content-blocking-description = Blokeatu webean zure jarraipena egiten duen hirugarrenen edukia. Kontrolatu zure lineako jarduera zenbateraino gordetzen eta partekatzen den webguneen artean.
+content-blocking-enhanced-tracking-protection = Jarraipenaren babes hobetua
 content-blocking-section-description = Nabigatzean, babestu zure pribatutasuna. Blokeatu bisitatutako guneen jarraipena egin eta zure profila sortzeko erabiltzen den eduki ikusgaitza. Eduki hauetako batzuk blokeatzean orriak azkarrago karga litezke.
 content-blocking-learn-more = Argibide gehiago
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -686,22 +731,29 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Pertsonalizatua
     .accesskey = s
-content-blocking-standard-description = Jarraipen-elementu ezagunak leiho pribatuetan blokeatzen ditu soilik.
 content-blocking-standard-desc = Orekatua babeserako eta errendimendurako. Zenbait jarraipen-elementu onartzen ditu, beraz webguneak ondo ibiliko dira.
-content-blocking-strict-desc = { -brand-short-name }(e)k antzemandako jarraipen-elementu guztiak blokeatzen ditu. Zenbait webgune haustea eragin lezake.
 content-blocking-strict-description = Babes sendoagoa, hainbat gune haustea eragin lezake.
 content-blocking-custom-desc = Aukeratu zer blokeatu.
 content-blocking-private-trackers = Jarraipen-elementu ezagunak soilik leiho pribatuetan
 content-blocking-third-party-cookies = Hirugarrenen jarraipen-cookieak
+content-blocking-etp-standard-desc = Babeserako eta errendimendurako orekatua. Orriak ohi bezala kargatuko dira.
+content-blocking-etp-strict-desc = Babes sendoagoa baina zenbait gune edo eduki apurtzea eragin lezake.
+content-blocking-etp-custom-desc = Aukeratu blokeatu beharreko jarraipen-elementu eta scriptak.
+content-blocking-private-windows = Edukiaren jarraipena leiho pribatuetan
+content-blocking-cross-site-tracking-cookies = Guneen arteko cookie jarraipen-egileak
+content-blocking-social-media-trackers = Sare sozialetako jarraipen-elementuak
 content-blocking-all-cookies = Cookie guztiak
 content-blocking-unvisited-cookies = Bisitatu gabeko guneetako cookieak
 content-blocking-all-windows-trackers = Jarraipen-elementu ezagunak leiho guztietan
+content-blocking-all-windows-tracking-content = Edukiaren jarraipena leiho guztietan
 content-blocking-all-third-party-cookies = Hirugarrenen cookie guztiak
 content-blocking-cryptominers = Kriptomeatzariak
 content-blocking-fingerprinters = Hatz-marka bidezko jarraipena egiten duten elementuak
 content-blocking-warning-title = Argi!
 content-blocking-warning-description = Edukia blokeatzeak zenbait webgune haustea eragin lezake. Erraza da konfiantzazko guneetarako blokeoa desgaitzea.
 content-blocking-learn-how = Ikasi nola
+content-blocking-etp-warning-description = Jarraipen-elementuak blokeatuz gero, zenbait gunetako eginbideak kaltetu litezke. Eduki guztiak kargatzeko, berritu jarraipen-elementuak dituen orria.
+content-blocking-warning-learn-how = Ikasi nola
 content-blocking-reload-description = Zure fitxak berritu beharko dituzu aldaketa hauek eragina izan dezaten.
 content-blocking-reload-tabs-button =
     .label = Berritu fitxa guztiak
@@ -709,6 +761,9 @@ content-blocking-reload-tabs-button =
 content-blocking-trackers-label =
     .label = Jarraipen-elementuak
     .accesskey = r
+content-blocking-tracking-content-label =
+    .label = Edukiaren jarraipena
+    .accesskey = E
 content-blocking-tracking-protection-option-all-windows =
     .label = Leiho guztietan
     .accesskey = z

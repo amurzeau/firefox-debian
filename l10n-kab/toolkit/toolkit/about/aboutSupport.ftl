@@ -24,14 +24,24 @@ features-title = { -brand-short-name } Timahilin
 features-name = Isem
 features-version = Lqem
 features-id = ID
+processes-type = Tawsit
 processes-count = Amḍan
 app-basics-title = Iɣewwaṛen izaduren n usnas
 app-basics-name = Isem
 app-basics-version = Lqem
 app-basics-build-id = Asulay n usefsu
 app-basics-update-channel = Abadu n uleqqem
+# This message refers to the folder used to store updates on the device,
+# as in "Folder for updates". "Update" is a noun, not a verb.
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] Akaram n Ileqman
+       *[other] Akaram n Ileqman
+    }
 app-basics-update-history = Amazray n ileqman
 app-basics-show-update-history = Sken amazray n ileqman
+# Represents the path to the binary used to start the application.
+app-basics-binary = Timsint n usnas
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Akaram n umaɣnu
@@ -47,7 +57,7 @@ app-basics-service-workers = Tanfa Workers iţwaklesen
 app-basics-profiles = Imeɣna
 app-basics-launcher-process-status = Akala n tnekra
 app-basics-multi-process-support = Isfuyla agetakala
-app-basics-process-count = Ikalan n ugbur web
+app-basics-remote-processes-count = Ikalan inmeggagen
 app-basics-enterprise-policies = Tasertit n tkebbanit
 app-basics-location-service-key-google = Tasarutt n umeẓlu n wadi Google
 app-basics-key-mozilla = Tasarutt n umeẓlu n wadi Mozilla
@@ -224,7 +234,6 @@ uses-tiling = Iseqdac akallaj
 content-uses-tiling = Seqdec asebleḍ (Agbur)
 off-main-thread-paint-enabled = Painting beṛṛa n tnelli n uselkem agejdan yermed
 off-main-thread-paint-worker-count = Uṭṭun n iseqdacen Painting beṛṛa n tnelli
-low-end-machine = Aff timacinin yesεan tamellit d afeelayt
 target-frame-rate = Afmiḍi n n ukatar asaḍas
 audio-backend = Ameslaw ɣer deffir
 max-audio-channels = Amḍan afellay n ibuda

@@ -29,11 +29,6 @@ search-input-box =
             [windows] Caută în Opțiuni
            *[other] Caută în Preferințe
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Organizația ta a dezactivat posibilitatea de a modifica anumite opțiuni.
-       *[other] Organizația ta a dezactivat posibilitatea de a modifica anumite preferințe.
-    }
 managed-notice = Browserul este gestionat de organizația ta.
 pane-general-title = General
 category-general =
@@ -401,6 +396,50 @@ choose-bookmark =
     .label = Folosește un marcaj…
     .accesskey = B
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Conținutul paginii de start Firefox
+home-prefs-content-description = Alege ce conținut vrei pe ecranul de start Firefox.
+home-prefs-content-discovery-description = Descoperirea de conținut din pagina de start Firefox îți permite să descoperi articole relevante de calitate înaltă de pe web.
+home-prefs-search-header =
+    .label = Căutare web
+home-prefs-topsites-header =
+    .label = Site-uri de top
+home-prefs-topsites-description = Site-urile pe care le vizitezi cel mai des
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Recomandat de { $provider }
+home-prefs-recommended-by-description = Conținut nemaipomenit de pe web, personalizat pentru tine
+home-prefs-recommended-by-learn-more = Cum funcționează
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Articole sponsorizate
+home-prefs-highlights-header =
+    .label = Evidențieri
+home-prefs-highlights-description = O selecție a site-urilor pe care le-ai salvat sau vizitat
+home-prefs-highlights-option-visited-pages =
+    .label = Pagini vizitate
+home-prefs-highlights-options-bookmarks =
+    .label = Marcaje
+home-prefs-highlights-option-most-recent-download =
+    .label = Cele mai recente descărcări
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Pagini salvate în { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Fragmente
+home-prefs-snippets-description = Știri de la { -vendor-short-name } și { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } rând
+            [few] { $num } rânduri
+           *[other] { $num } de rânduri
+        }
+
 ## Search Section
 
 search-bar-header = Bară de căutare
@@ -562,6 +601,12 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Excepții…
     .accesskey = x
+forms-generate-passwords =
+    .label = Sugerează și generează parole puternice
+    .accesskey = u
+forms-fill-logins-and-passwords =
+    .label = Completează automat autentificări și parole
+    .accesskey = i
 forms-saved-logins =
     .label = Date de autentificare salvate…
     .accesskey = L
@@ -638,6 +683,8 @@ sitedata-block-desc = Tipul conținutului blocat
     .accesskey = T
 sitedata-option-block-trackers =
     .label = Elemente de urmărire de la terți
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Elemente de urmărire ale rețelelor sociale și cel între site-uri
 sitedata-option-block-unvisited =
     .label = Cookie-uri de pe site-uri web nevizitate
 sitedata-option-block-all-third-party =
@@ -672,8 +719,8 @@ addressbar-suggestions-settings = Schimbă preferințele pentru sugestiile motoa
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Blocare de conținut
-content-blocking-description = Blochează conținutul de la terți care te urmărește pe web. Controlează cât din activitatea ta online este stocată și partajată între site-urile web.
-content-blocking-section-description = Protejează-ți intimitatea la navigare. Blochează conținuturile invizibile care urmăresc pe ce site-uri intri și îți creează profilul. Blocarea unei părți din aceste conținuturi poate conduce la încărcarea mai rapidă a paginilor.
+content-blocking-enhanced-tracking-protection = Protecție îmbunătățită împotriva urmăririi
+content-blocking-section-description = Protejează-ți intimitatea la navigare. Blochează conținuturile invizibile care urmăresc ce site-uri vizitezi și îți creează profilul. Blocarea unei părți din aceste conținuturi poate conduce la încărcarea mai rapidă a paginilor.
 content-blocking-learn-more = Află mai multe
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -686,28 +733,38 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Personalizată
     .accesskey = C
-content-blocking-standard-description = Blochează numai elementele de urmărire cunoscute în ferestrele private.
 content-blocking-standard-desc = Echilibrată pentru protecție și performanță. Permite unele elemente de urmărire pentru ca site-urile web să funcționeze corespunzător.
-content-blocking-strict-desc = Blochează toate elementele de urmărire pe care le depistează { -brand-short-name }. Poate produce disfuncționalități pe unele site-uri.
 content-blocking-strict-description = Protecție mai puternică, poate împiedica funcționarea unor site-uri.
 content-blocking-custom-desc = Alege ce să blochezi.
 content-blocking-private-trackers = Elemente de urmărire cunoscute numai în ferestre private
 content-blocking-third-party-cookies = Cookie-uri de urmărire de la terți
+content-blocking-etp-standard-desc = Echilibrat pentru protecție și performanță. Paginile se vor încărca normal.
+content-blocking-etp-strict-desc = O protecție mai puternică, dar poate provoca funcționarea necorespunzătoare a site-urilor sau a conținutului.
+content-blocking-etp-custom-desc = Alege ce elemente de urmărire și scripturi să blochezi.
+content-blocking-private-windows = Conținut de urmărire în ferestre private
+content-blocking-cross-site-tracking-cookies = Cookie-uri de urmărire între site-uri
+content-blocking-social-media-trackers = Elemente de urmărire ale rețelelor sociale
 content-blocking-all-cookies = Toate cookie-urile
 content-blocking-unvisited-cookies = Cookie-uri de la site-uri nevizitate
 content-blocking-all-windows-trackers = Elemente de urmărire cunoscute în toate ferestrele
+content-blocking-all-windows-tracking-content = Conținut de urmărire în toate ferestrele
 content-blocking-all-third-party-cookies = Toate cookie-urile de la terți
 content-blocking-cryptominers = Criptomineri
 content-blocking-fingerprinters = Detectoare de amprente digitale
 content-blocking-warning-title = Atenție!
 content-blocking-warning-description = Blocarea conținutului poate împiedica funcționarea unor site-uri web. Deblocarea se poare realiza ușor pentru site-urile în care ai încredere.
 content-blocking-learn-how = Află cum
+content-blocking-etp-warning-description = Blocarea elementelor de urmărire poate afecta funcționalitatea unor site-uri. Reîncarcă o pagină cu elemente de urmărire pentru a încărca tot conținutul.
+content-blocking-warning-learn-how = Află cum
 content-blocking-reload-description = Va trebui să reîncarci filele pentru aplicarea acestor modificări.
 content-blocking-reload-tabs-button =
     .label = Reîncarcă toate filele
     .accesskey = R
 content-blocking-trackers-label =
     .label = Elemente de urmărire
+    .accesskey = T
+content-blocking-tracking-content-label =
+    .label = Conținut de urmărire
     .accesskey = T
 content-blocking-tracking-protection-option-all-windows =
     .label = În toate ferestrele

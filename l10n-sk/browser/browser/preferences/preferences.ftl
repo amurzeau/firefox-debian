@@ -29,11 +29,6 @@ search-input-box =
             [windows] Hľadať
            *[other] Hľadať
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Vaša organizácia vám zakázala meniť niektoré možnosti.
-       *[other] Vaša organizácia vám zakázala meniť niektoré možnosti.
-    }
 managed-notice = Váš prehliadač spravuje vaša organizácia.
 pane-general-title = Všeobecné
 category-general =
@@ -393,6 +388,50 @@ choose-bookmark =
     .label = Použiť záložku…
     .accesskey = z
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Obsah domovskej stránky Firefoxu
+home-prefs-content-description = Vyberte si obsah, ktorý chcete mať na domovskej stránke svojho Firefoxu.
+home-prefs-content-discovery-description = Odporúčanie obsahu na domovskej stránke Firefoxu vám umožňuje objaviť vysokokvalitné a relevantné články z celého internetu.
+home-prefs-search-header =
+    .label = Vyhľadávanie na webe
+home-prefs-topsites-header =
+    .label = Top stránky
+home-prefs-topsites-description = Najnavštevovanejšie stránky
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Odporúča { $provider }
+home-prefs-recommended-by-description = Skvelý obsah z celého webu, vybraný špeciálne pre vás
+home-prefs-recommended-by-learn-more = Ako to funguje
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Sponzorované stránky
+home-prefs-highlights-header =
+    .label = Vybrané stránky
+home-prefs-highlights-description = Výber stránok, ktoré ste si uložili alebo ste ich navštívili
+home-prefs-highlights-option-visited-pages =
+    .label = Navštívené stránky
+home-prefs-highlights-options-bookmarks =
+    .label = Záložky
+home-prefs-highlights-option-most-recent-download =
+    .label = Nedávne prevzatia
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Stránky uložené do služby { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Snippety
+home-prefs-snippets-description = Informácie od Mozilly a od { -brand-product-name }u
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } riadok
+            [few] { $num } riadky
+           *[other] { $num } riadkov
+        }
+
 ## Search Section
 
 search-bar-header = Vyhľadávací panel
@@ -585,9 +624,9 @@ history-remember-option-never =
 history-remember-option-custom =
     .label = Použiť vlastné nastavenia
 history-remember-description = { -brand-short-name } si bude pamätať históriu vášho prehliadania, preberania, formulárov a vyhľadávania.
-history-dontremember-description = { -brand-short-name } použije totožné nastavenia s režimom Súkromné prehliadanie a nebude si pamätať žiadnu históriu prehliadania webu.
+history-dontremember-description = { -brand-short-name } použije totožné nastavenia s režimom súkromného prehliadania a nebude si pamätať žiadnu históriu prehliadania webu.
 history-private-browsing-permanent =
-    .label = Natrvalo zapnúť režim Súkromné prehliadanie
+    .label = Natrvalo zapnúť režim súkromného prehliadania
     .accesskey = a
 history-remember-browser-option =
     .label = Pamätať si históriu prehliadania a prevzatých súborov
@@ -664,7 +703,6 @@ addressbar-suggestions-settings = Zmeniť nastavenia pre návrhy vyhľadávania
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Blokovanie obsahu a ochrana pred sledovaním
-content-blocking-description = Zablokujte obsah tretích strán, ktorý vás sleduje naprieč webom. Sami si určite, aká časť z vašej aktivity na internete sa bude ukladať a zdieľať medzi stránkami.
 content-blocking-section-description = Chráňte svoje súkromie pri surfovaní na internete. Zablokujte neviditeľný obsah, ktorý vás sleduje na navštívených stránkach a tvorí profil vášho správania. Blokovanie takéhoto obsahu môže zrýchliť načítavanie stránok.
 content-blocking-learn-more = Ďalšie informácie
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -678,12 +716,10 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Vlastné
     .accesskey = V
-content-blocking-standard-description = Blokuje známe sledovacie prvky v režime Súkromné prehliadanie.
 content-blocking-standard-desc = Vyvážená úroveň ochrany a výkonu. Povoľuje niektoré sledovacie sledovacie prvky, aby stránky fungovali správne.
-content-blocking-strict-desc = Blokuje všetky sledovacie prvky, ktoré { -brand-short-name } nájde. Toto nastavenie môže obmedziť fungovanie niektorých stránok.
 content-blocking-strict-description = Viac blokovaného obsahu zvyšuje pravdepodobnosť, že niektoré stránky nebudú správne fungovať.
 content-blocking-custom-desc = Vyberte si, čo chcete blokovať.
-content-blocking-private-trackers = Známe sledovacie prvky sú blokované v režime Súkromné prehliadanie
+content-blocking-private-trackers = Známe sledovacie prvky sú blokované v režime súkromného prehliadania
 content-blocking-third-party-cookies = Blokované sú sledovacie cookies tretích strán
 content-blocking-all-cookies = Všetky cookies
 content-blocking-unvisited-cookies = Cookies z nenavštívených stránok
@@ -694,6 +730,8 @@ content-blocking-fingerprinters = Blokovaná je tvorba odtlačku prehliadača
 content-blocking-warning-title = Pozor!
 content-blocking-warning-description = Blokovanie obsahu môže spôsobiť rozbitie niektorých webových stránok. Na dôveryhodných stránkach môžete blokovanie jednoducho vypnúť.
 content-blocking-learn-how = Ďalšie informácie
+content-blocking-etp-warning-description = Blokovanie sledovacích prvkov môže ovplyvniť fungovanie niektorých stránok. Pre načítanie všetkého obsahu obnovte stránku s povolenými sledovacími prvkami.
+content-blocking-warning-learn-how = Ďalšie informácie
 content-blocking-reload-description = Aby sa zmeny prejavili, musíte obnoviť vaše karty.
 content-blocking-reload-tabs-button =
     .label = Obnoviť všetky karty
@@ -705,8 +743,8 @@ content-blocking-tracking-protection-option-all-windows =
     .label = Vo všetkých oknách
     .accesskey = V
 content-blocking-option-private =
-    .label = V režime Súkromné prehliadanie
-    .accesskey = S
+    .label = Iba v súkromných oknách
+    .accesskey = s
 content-blocking-tracking-protection-change-block-list = Zmeniť zoznam blokovania
 content-blocking-cookies-label =
     .label = Cookies

@@ -29,11 +29,6 @@ search-input-box =
             [windows] ابحث في الخيارات
            *[other] ابحث في التفضيلات
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] منعت الشركة إمكانية تغيير بعض الخيارات.
-       *[other] منعت الشركة إمكانية تغيير بعض التفضيلات.
-    }
 managed-notice = تُدير منظّمتك المتصفح الذي تستخدم الآن.
 pane-general-title = عام
 category-general =
@@ -47,6 +42,9 @@ category-search =
 pane-privacy-title = الخصوصية و الأمان
 category-privacy =
     .tooltiptext = { pane-privacy-title }
+pane-sync-title2 = { -sync-brand-short-name }
+category-sync2 =
+    .tooltiptext = { pane-sync-title2 }
 help-button-label = دعم { -brand-short-name }
 addons-button-label = الامتدادات والسمات
 focus-search =
@@ -404,6 +402,53 @@ choose-bookmark =
     .label = استخدم علامة…
     .accesskey = ع
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = محتوى فَيَرفُكس الرئيسي
+home-prefs-content-description = اختر المحتوى الذي تريد عرضه في شاشة بداية فَيَرفُكس.
+home-prefs-content-discovery-description = تتيح لك ميزة ”اكتشاف المحتوى“ في صفحة بداية فَيَرفُكس رؤية مقالات عالية الجودة لها علاقة بما تتابع، تأتيك من أرجاء الوِب.
+home-prefs-search-header =
+    .label = ابحث في الوِب
+home-prefs-topsites-header =
+    .label = المواقع الأكثر زيارة
+home-prefs-topsites-description = أكثر المواقع المزارة
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = ينصح به { $provider }
+home-prefs-recommended-by-description = محتوى مميز من أرجاء الوِب انتقيناه لك أنت
+home-prefs-recommended-by-learn-more = آلية العمل
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = الأخبار الممولة
+home-prefs-highlights-header =
+    .label = أهم الأحداث
+home-prefs-highlights-description = مجموعة المواقع التي حفظتها أو زرتها
+home-prefs-highlights-option-visited-pages =
+    .label = الصفحات المزارة
+home-prefs-highlights-options-bookmarks =
+    .label = العلامات
+home-prefs-highlights-option-most-recent-download =
+    .label = آخر ما نُزّل
+home-prefs-highlights-option-saved-to-pocket =
+    .label = الصفحات المحفوظة في { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = المقتطفات
+home-prefs-snippets-description = التحديثات من { -vendor-short-name } و{ -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [zero] لا صفوف
+            [one] صف واحد
+            [two] صفان
+            [few] { $num } صفوف
+            [many] { $num } صفا
+           *[other] { $num } صف
+        }
+
 ## Search Section
 
 search-bar-header = شريط البحث
@@ -565,6 +610,12 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = الاستثناءات…
     .accesskey = س
+forms-generate-passwords =
+    .label = ولّد كلمات سر قوية واقترحها عليّ
+    .accesskey = ك
+forms-fill-logins-and-passwords =
+    .label = املأ جلسات الولوج وكلمات السر تلقائيا
+    .accesskey = م
 forms-saved-logins =
     .label = جلسات الولوج المحفوظة…
     .accesskey = ح
@@ -675,7 +726,6 @@ addressbar-suggestions-settings = غيّر تفضيلات اقتراحات مح�
 ## Privacy Section - Content Blocking
 
 content-blocking-header = حجب المحتوى
-content-blocking-description = احجب المحتوى من الأطراف الثالثة والذي يتعقّبك في أرجاء الوِب. تحكّم بمقدار نشاطك الشبكي الذي يُخزّن ويُشارك بين المواقع.
 content-blocking-section-description = احمِ خصوصيتك وأنت تتصفح الوِب بحجب المحتوى الذي يتعقّب المواقع التي تزورها دون أن تعلم، كما ويسجّلها باسمك. يمكنك بحجب جزء من هذا المحتوى تحميل الصفحات بسرعة أكبر.
 content-blocking-learn-more = اطّلع على المزيد
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -689,9 +739,7 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = مخصّص
     .accesskey = خ
-content-blocking-standard-description = احجب المتعقّبات المعروفة في النوافذ الخاصة فقط.
 content-blocking-standard-desc = الموازنة بين الحماية والأداء. يتيح عمل بعض المتعقّبات لتعمل المواقع كما ينبغي.
-content-blocking-strict-desc = يحجب كل المتعقّبات التي يكتشفها { -brand-short-name }. قد يتسبّب بعطب بعض المواقع.
 content-blocking-strict-description = حماية أقوى وأعتى، لكنها قد تعطب بعض المواقع.
 content-blocking-custom-desc = اختر ما تريد حجبه.
 content-blocking-private-trackers = المتعقّبات المعروفة فقط في النوافذ الخاصة
@@ -769,6 +817,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = الاستثناءات…
     .accesskey = س
+permissions-autoplay = التشغيل التلقائي
+permissions-autoplay-settings =
+    .label = الإعدادات…
+    .accesskey = ع
 permissions-block-popups =
     .label = احجب النوافذ المنبثقة
     .accesskey = ذ

@@ -4,6 +4,7 @@
 
 about-telemetry-ping-data-source = Source des données de ping :
 about-telemetry-show-current-ping-data = Données de ping actuelles
+about-telemetry-show-current-data = Données actuelles
 about-telemetry-show-archived-ping-data = Données de ping archivées
 about-telemetry-show-subsession-data = Afficher les données de sous-session
 about-telemetry-choose-ping = Sélectionner le ping :
@@ -76,6 +77,7 @@ about-telemetry-settings-explanation = La télémétrie collecte les { about-tel
 #   $timeStamp (String): ping localized timestamp, e.g. “2017/07/08 10:40:46”
 about-telemetry-ping-details = Chaque information est envoyée empaquetée dans des « <a data-l10n-name="ping-link">pings</a> ». Vous visionnez le ping { $name }, { $timestamp }.
 about-telemetry-ping-details-current = Chaque information est envoyée empaquetée dans des « <a data-l10n-name="ping-link">pings</a> ». Vous visionnez le ping courant.
+about-telemetry-data-details-current = Les informations sont envoyées dans des paquets appelés « <a data-l10n-name="ping-link">pings</a> ». Vous visualisez les données actuelles.
 # string used as a placeholder for the search field
 # More info about it can be found here:
 # https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
@@ -102,6 +104,8 @@ about-telemetry-no-search-results-all = Désolé, il n’y a aucun résultat pou
 about-telemetry-no-data-to-display = Désolé, aucune donnée n’est disponible dans « { $sectionName } »
 # used as a tooltip for the “current” ping title in the sidebar
 about-telemetry-current-ping-sidebar = ping courant
+# used as a tooltip for the “current” ping title in the sidebar
+about-telemetry-current-data-sidebar = données actuelles
 # used in the “Ping Type” select
 about-telemetry-telemetry-ping-type-all = tout
 # button label to copy the histogram
@@ -141,7 +145,7 @@ about-telemetry-origin-origin = origine
 about-telemetry-origin-count = comptage
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
-about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Firefox Origin Telemetry</a> encode les données avant de les envoyer de façon à ce que { $telemetryServerOwner } puisse compter différentes choses, mais ne puisse pas savoir si oui ou non tel { -brand-product-name } a contribué à ce comptage. <a data-l10n-name="prio-blog-link">En savoir plus</a>
+about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Firefox Origin Telemetry</a> encode les données avant de les envoyer de façon à ce que { $telemetryServerOwner } puisse compter différentes choses, mais ne puisse pas savoir si tel { -brand-product-name } a contribué ou non à ce comptage. <a data-l10n-name="prio-blog-link">En savoir plus</a>
 # Variables:
 #  $process (String): type of process in subsection headers ( e.g. "content", "parent" )
 about-telemetry-process = Processus « { $process } »

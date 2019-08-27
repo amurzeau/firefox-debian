@@ -10,7 +10,7 @@ search-header =
 search-header-shortcut =
     .key = f
 loading-label =
-    .value = Caricamento…
+    .value = Caricamento in corso…
 list-empty-installed =
     .value = Non risulta installato alcun componente aggiuntivo di questo tipo
 list-empty-available-updates =
@@ -77,7 +77,7 @@ detail-version =
 detail-last-updated =
     .label = Ultimo aggiornamento
 detail-contributions-description = Lo sviluppatore di questo componente aggiuntivo chiede agli utenti una piccola donazione per contribuire al suo sviluppo.
-detail-contributions-button = Contribuisci
+detail-contributions-button = Fai una donazione
     .title = Contribuisci allo sviluppo di questo componente aggiuntivo
     .accesskey = C
 detail-update-type =
@@ -95,8 +95,10 @@ detail-private-browsing-label = Funzionamento in finestre anonime
 detail-private-browsing-description2 = Se viene garantito il permesso, l’estensione potrà accedere alle tue attività online nelle finestre anonime. <label data-l10n-name="detail-private-browsing-learn-more">Ulteriori informazioni</label>
 detail-private-disallowed-label = Disattivata in finestre anonime
 detail-private-disallowed-description = Questa estensione non funziona in navigazione anonima. <label data-l10n-name="detail-private-browsing-learn-more">Ulteriori informazioni</label>
+detail-private-disallowed-description2 = Questa estensione non funziona in navigazione anonima. <<a data-l10n-name="learn-more">Ulteriori informazioni</a>
 detail-private-required-label = Richiede accesso alle finestre anonime
 detail-private-required-description = Questa estensione ha accesso alle tue attività online nelle finestre anonime. <label data-l10n-name="detail-private-browsing-learn-more">Ulteriori informazioni</label>
+detail-private-required-description2 = Questa estensione ha accesso alle tue attività online nelle finestre anonime. <a data-l10n-name="learn-more">Ulteriori informazioni</a>
 detail-private-browsing-on =
     .label = Consenti
     .tooltiptext = Attiva in Navigazione anonima
@@ -154,9 +156,6 @@ private-browsing-description2 =
     stata introdotta per garantire la riservatezza dei dati di navigazione
     quando si utilizzano finestre anonime.
     <label data-l10n-name="private-browsing-learn-more">Scopri come gestire le impostazioni delle estensioni</label>
-extensions-view-discover =
-    .name = Esplora
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-discopane =
     .name = Consigli
     .tooltiptext = { extensions-view-discopane.name }
@@ -254,6 +253,15 @@ shortcuts-modifier-other = Includi Ctrl o Alt
 shortcuts-invalid = Combinazione non valida
 shortcuts-letter = Inserisci una lettera
 shortcuts-system = Non è possibile sostituire una scorciatoia da tastiera di { -brand-short-name }
+
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Scorciatoia da tastiera duplicata
+
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = La combinazione { $shortcut } è utilizzata come scorciatoia da tastiera per più comandi. Scorciatoie duplicate possono causare comportamenti imprevisti.
+
 shortcuts-exists = Già utilizzata da { $addon }
 shortcuts-card-expand-button = Visualizza altre { $numberToShow }
 shortcuts-card-collapse-button = Mostra meno scorciatoie
@@ -307,8 +315,23 @@ preferences-addon-button =
 details-addon-button = Dettagli
 release-notes-addon-button = Note di versione
 permissions-addon-button = Permessi
-addons-enabled-heading = Attivo
-addons-disabled-heading = Disattivato
+addons-enabled-heading = Elementi attivi
+addons-disabled-heading = Elementi disattivati
+
+extension-enabled-heading = Attive
+extension-disabled-heading = Disattivate
+
+theme-enabled-heading = Attivi
+theme-disabled-heading = Disattivati
+
+plugin-enabled-heading = Attivi
+plugin-disabled-heading = Disattivati
+
+dictionary-enabled-heading = Attivi
+dictionary-disabled-heading = Disattivati
+
+locale-enabled-heading = Attive
+locale-disabled-heading = Disattivate
 
 ask-to-activate-button = Chiedi prima di attivare
 always-activate-button = Attiva sempre
@@ -342,12 +365,18 @@ addon-detail-update-check-label = Controlla aggiornamenti
 install-update-button = Aggiorna
 addon-badge-private-browsing-allowed =
     .title = Attiva in finestre anonime
+addon-badge-private-browsing-allowed2 =
+    .title = Attiva in finestre anonime
+    .aria-label = { addon-badge-private-browsing-allowed2.title }
 addon-detail-private-browsing-help = Se viene garantito il permesso, l’estensione potrà accedere alle tue attività online nelle finestre anonime. <a data-l10n-name="learn-more">Ulteriori informazioni</a>
 addon-detail-private-browsing-allow = Consenti
 addon-detail-private-browsing-disallow = Non consentire
 addon-badge-recommended =
   .title = Consigliata
   .alt = Consigliata
+addon-badge-recommended2 =
+  .title = Vengono consigliate solo estensioni che soddisfano i requisiti di sicurezza e prestazioni di { -brand-product-name }
+  .aria-label = { addon-badge-recommended2.title }
 available-updates-heading = Aggiornamenti disponibili
 recent-updates-heading = Aggiornamenti recenti
 release-notes-loading = Caricamento in corso…

@@ -21,6 +21,7 @@
 <!ENTITY firstrun_data_message "Menej prenesených dát, väčšia úspora">
 <!ENTITY firstrun_data_subtext2 "Vypnutím obrázkov prenesiete menej dát na každej stránke, ktorú navštívite.">
 <!ENTITY firstrun_sync_title "Synchronizácia">
+<!ENTITY updatednewfirstrun_sync_title "Účet">
 <!ENTITY firstrun_sync_message2 "Pokračujte tam, kde ste prestali.">
 <!ENTITY firstrun_sync_subtext2 "Nájdite pomocou služby Sync záložky, heslá a ďalšie veci, ktoré ste si uložili do prehliadača &brandShortName; na všetkých svojich zariadeniach.">
 <!ENTITY newfirstrun_sync_subtext "Zosynchronizujte si veci, ktoré si uložíte na mobile s počítačom - bezpečne a s ohľadom na súkromie.">
@@ -68,7 +69,6 @@
 <!ENTITY  sending_crash_report "Odosiela sa správa o zlyhaní\u2026">
 <!ENTITY  crash_close_label "Zavrieť">
 <!ENTITY  crash_restart_label "Reštartovať &brandShortName;">
-
 <!-- Localization note (crash_notification_title, crash_notification_message, crash_notification_negative_button_text)
      Text displayed in a system notification to allow starting the Crash Reporter (Android Q and later).-->
 <!ENTITY  crash_notification_title "Aplikácia &brandShortName; zlyhala">
@@ -116,7 +116,6 @@
 <!ENTITY bookmark_folder_updated "Priečinok bol aktualizovaný">
 <!ENTITY bookmark_parent_folder "Nadradený priečinok">
 <!ENTITY bookmark_add_folder "Pridať nový priečinok">
-
 <!-- Localization note (bookmark_default_folder_title): Default title is used if user doesn't specify
      one when he is creating a bookmark folder -->
 <!ENTITY bookmark_default_folder_title "(bez názvu)">
@@ -147,7 +146,7 @@
      We can't use android plural forms, sadly. See bug #753859. -->
 <!ENTITY num_tabs2 "Počet kariet: &formatD;">
 <!ENTITY new_tab_opened "Nová karta otvorená">
-<!ENTITY new_private_tab_opened "Nová súkromná karta otvorená">
+<!ENTITY new_private_tab_opened "Bola otvorená nová súkromná karta">
 <!-- Localization note (switch_button_message): This string should be as short
      as possible because it's shown as a label in a toast.  Ideally, this string
      is upper-case, to match Google and Android's convention. -->
@@ -279,6 +278,7 @@
 <!ENTITY pref_cookies_menu "Súbory cookies">
 <!ENTITY pref_cookies_accept_all "Povolené">
 <!ENTITY pref_cookies_not_accept_foreign "Povolené, okrem cookies tretích strán">
+<!ENTITY pref_cookies_not_accept_trackers "Povolené, okrem sledovacích cookies">
 <!ENTITY pref_cookies_disabled "Zakázané">
 
 <!-- Localization note (pref_category_data_saver): “data saver” in this
@@ -301,7 +301,7 @@
 <!ENTITY pref_donottrack_summary "&brandShortName; požiada webové stránky, aby nesledovali vašu aktivitu">
 
 <!ENTITY pref_tracking_protection_enabled "Zapnutá">
-<!ENTITY pref_tracking_protection_enabled_pb "Zapnutá v režime Súkromné prehliadanie">
+<!ENTITY pref_tracking_protection_enabled_pb "Zapnutá v režime súkromného prehliadania">
 <!ENTITY pref_tracking_protection_disabled "Vypnutá">
 
 <!ENTITY pref_whats_new_notification "Novinky v aplikácii &brandShortName;">
@@ -339,11 +339,6 @@
 
 <!ENTITY pref_pwa "Progresívne webové aplikácie">
 <!ENTITY pref_pwa_summary "Umožňuje webovým aplikáciám, aby boli pridané na domovskú obrazovku">
-
-<!ENTITY tracking_protection_prompt_title "Teraz s Ochranou pred sledovaním">
-<!ENTITY tracking_protection_prompt_text "Aktívne blokuje prvky umožňujúce sledovanie, takže sa už viac nemusíte obávať.">
-<!ENTITY tracking_protection_prompt_tip_text "Ďalšie informácie v nastaveniach Súkromia">
-<!ENTITY tracking_protection_prompt_action_button "Rozumiem">
 
 <!ENTITY tab_queue_toast_message3 "Karta bola uložená do prehliadača &brandShortName;">
 <!ENTITY tab_queue_toast_action "Otvoriť teraz">
@@ -430,7 +425,6 @@ shown from Android O while a tab is being queued.-->
     Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
     and instruct users to tap on the "Browser app" option on that settings screen to choose a default browser app. -->
 <!ENTITY default_browser_system_settings_toast "Ťuknite na „Prehliadač“ a vyberte &brandShortName;">
-<!ENTITY pref_default_browser_mozilla_support_tablet "Navštíviť Podporu Mozilly">
 <!ENTITY pref_about_firefox "O prehliadači &brandShortName;">
 <!ENTITY pref_vendor_faqs "Často kladené otázky">
 <!ENTITY pref_vendor_feedback "Odoslať spätnú väzbu">
@@ -691,7 +685,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY filepicker_audio_title "Vyberte alebo nahrajte zvuk">
 <!ENTITY filepicker_image_title "Vyberte alebo spravte snímku">
 <!ENTITY filepicker_video_title "Vyberte alebo natočte video">
-
 <!ENTITY filepicker_permission_denied "Požadované povolenia nie sú udelené, vraciam sa do výberu súborov.">
 
 <!-- Site identity popup -->
@@ -824,7 +817,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      We don't have control over the style of this dialog and it looks
      unpolished when this string is longer than one line so ideally keep it
      short! -->
-<!ENTITY intent_uri_private_browsing_multiple_match_title "Ukončiť režim Súkromné prehliadanie?">
+<!ENTITY intent_uri_private_browsing_multiple_match_title "Ukončiť režim súkromného prehliadania?">
 
 <!-- DevTools Authentication -->
 <!-- LOCALIZATION NOTE (devtools_auth_scan_header): This header text appears

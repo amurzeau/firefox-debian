@@ -160,9 +160,6 @@ private-browsing-description2 =
     Rozšírenia tak nebudú mať bez vášho vedomia prístup k tomu, čo robíte v súkromnom prehliadaní. 
     Týmto krokom sa snažíme zvýšiť vaše súkromie.
     <label data-l10n-name="private-browsing-learn-more">Ďalšie informácie o správe rozšírení.</label>
-extensions-view-discover =
-    .name = Získať doplnky
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-discopane =
     .name = Odporúčania
     .tooltiptext = { extensions-view-discopane.name }
@@ -258,6 +255,12 @@ shortcuts-modifier-other = Nezabudnite vložiť aj Ctrl alebo Alt
 shortcuts-invalid = Neplatná kombinácia klávesov
 shortcuts-letter = Napíšte písmeno
 shortcuts-system = Prepísať skratku aplikácie { -brand-short-name } nie je možné
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Duplicitná skratka
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = Skratka { $shortcut } sa používa na viacerých miestach. To môže spôsobiť jej neočakávané správanie.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -274,6 +277,14 @@ go-back-button =
 
 ## Recommended add-ons page
 
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    Rozšírenia a témy vzhľadu sú ako aplikácie pre váš prehliadač. S nimi môžete
+    chrániť svoje heslá, preberať videá, hľadať výhodné ponuky, blokovať reklamy,
+    meniť vzhľad prehliadača a omnoho viac. Tieto malé programy väčšinou vyrába
+    niekto iný ako my. Tu je výber <a data-l10n-name="learn-more-trigger">odporúčaných</a>
+    rozšírení pre { -brand-product-name }, ktoré majú jedinečnú bezpečnosť a funkcie.
 # Notice to make user aware that the recommendations are personalized.
 discopane-notice-recommendations =
     Niektoré z týchto odporúčaní sú vám prispôsobené. Sú založené na rozšíreniach, ktoré už
@@ -312,6 +323,16 @@ release-notes-addon-button = Poznámky k vydaniu
 permissions-addon-button = Povolenia
 addons-enabled-heading = Povolené
 addons-disabled-heading = Zakázané
+extension-enabled-heading = Povolené rozšírenia
+extension-disabled-heading = Zakázané rozšírenia
+theme-enabled-heading = Aktívna téma vzhľadu
+theme-disabled-heading = Zakázané témy vzhľadu
+plugin-enabled-heading = Povolené zásuvné moduly
+plugin-disabled-heading = Zakázané zásuvné moduly
+dictionary-enabled-heading = Povolené slovníky
+dictionary-disabled-heading = Zakázané slovníky
+locale-enabled-heading = Povolené jazyky
+locale-disabled-heading = Zakázané jazyky
 ask-to-activate-button = Vyžiadať aktivovanie
 always-activate-button = Vždy aktivovať
 never-activate-button = Nikdy neaktivovať
@@ -320,6 +341,11 @@ addon-detail-version-label = Verzia
 addon-detail-last-updated-label = Posledná aktualizácia
 addon-detail-homepage-label = Domovská stránka
 addon-detail-rating-label = Hodnotenie
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Ohodnotené na { NUMBER($rating, maximumFractionDigits: 1) } z 5
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -346,10 +372,25 @@ addon-detail-updates-radio-on = Zapnuté
 addon-detail-updates-radio-off = Vypnuté
 addon-detail-update-check-label = Vyhľadať aktualizácie
 install-update-button = Aktualizovať
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Povolené v súkromných oknách
 addon-detail-private-browsing-help = Povolené rozšírenia majú prístup k vašim aktivitám na internete v súkromných oknách. <a data-l10n-name="learn-more">Ďalšie informácie</a>
 addon-detail-private-browsing-allow = Povoliť
 addon-detail-private-browsing-disallow = Nepovoliť
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Odporúčané rozšírenie
+    .alt = Odporúčané rozšírenie
+available-updates-heading = K dispozícii je aktualizácia
 recent-updates-heading = Naposledy aktualizované
 release-notes-loading = Načítava sa…
 release-notes-error = Pri načítaní poznámok k vydaniu sa vyskytla chyba.
 addon-permissions-empty = Toto rozšírenie nevyžaduje žiadne povolenia
+recommended-extensions-heading = Odporúčané rozšírenia
+recommended-themes-heading = Odporúčané témy vzhľadu
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Ste tvoriví? <a data-l10n-name="link">Vytvorte si svoju vlastnú tému vzhľadu pomocou Firefox Color.</a>

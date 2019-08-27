@@ -29,11 +29,6 @@ search-input-box =
             [windows] Canfod yn Dewisiadau
            *[other] Canfod yn Dewisiadau
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Mae eich corff wedi analluogi'r gallu i newid rhai dewisiadau.
-       *[other] Mae eich corff wedi analluogi'r gallu i newid rhai dewisiadau.
-    }
 managed-notice = Mae eich porwr yn cael ei reoli gan eich sefydliad.
 pane-general-title = Cyffredinol
 category-general =
@@ -410,6 +405,53 @@ choose-bookmark =
     .label = Defnyddio Nod Tudalen…
     .accesskey = N
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Cynnwys Cartref Firefox
+home-prefs-content-description = Dewis pa gynnwys rydych eisiau ar eich sgrin Firefox Cartref.
+home-prefs-content-discovery-description = Mae Darganfod Cynnwys yng Nghartref Firefox yn caniatáu i chi ddarganfod erthyglau perthnasol o ansawdd uchel ar draws y we.
+home-prefs-search-header =
+    .label = Chwilio'r We
+home-prefs-topsites-header =
+    .label = Hoff Wefannau
+home-prefs-topsites-description = Y gwefannau rydych yn ymweld â nhw amlaf
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Argymhellwyd gan { $provider }
+home-prefs-recommended-by-description = Cynnwys gwych o ar draws y we, wedi ei ddewis yn arbennig i chi
+home-prefs-recommended-by-learn-more = Sut mae'n gweithio
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Straeon wedi eu Noddi
+home-prefs-highlights-header =
+    .label = Goreuon
+home-prefs-highlights-description = Detholiad o wefannau rydych wedi eu cadw neu ymweld â nhw
+home-prefs-highlights-option-visited-pages =
+    .label = Tudalennau Ymwelwyd â Nhw
+home-prefs-highlights-options-bookmarks =
+    .label = Nodau Tudalen
+home-prefs-highlights-option-most-recent-download =
+    .label = Llwytho i Lawr Mwyaf Diweddar
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Tudalennau wedi eu Cadw i { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Tameidiau
+home-prefs-snippets-description = Diweddariadau gan { -vendor-short-name } a { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [zero] { $num } rhes
+            [one] { $num } rhes
+            [two] { $num } rhes
+            [few] { $num } rhes
+            [many] { $num } rhes
+           *[other] { $num } rhes
+        }
+
 ## Search Section
 
 search-bar-header = Bar Chwilio
@@ -574,6 +616,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Awgrymu a chynhyrchu cyfrineiriau cryf
     .accesskey = A
+forms-fill-logins-and-passwords =
+    .label = Awtolanw mewngofnodion a chyfrineiriau
+    .accesskey = A
 forms-saved-logins =
     .label = Mewngofnodion wedi eu Cadw…
     .accesskey = M
@@ -650,6 +695,10 @@ sitedata-block-desc = Mathau wedi'u rhwystro
     .accesskey = M
 sitedata-option-block-trackers =
     .label = Tracwyr trydydd parti
+sitedata-option-block-cross-site-trackers =
+    .label = Tracwyr traws-gwefan
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Tracwyr traws-gwefan a chyfryngau cymdeithasol
 sitedata-option-block-unvisited =
     .label = Cwcis o wefannau heb ymweld â nhw
 sitedata-option-block-all-third-party =
@@ -684,7 +733,7 @@ addressbar-suggestions-settings = Newid dewisiadau am awgrymiadau peiriannau chw
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Rhwystro Cynnwys
-content-blocking-description = Rhwystro cynnwys trydydd parti sy'n eich dilyn o amgylch y we. Rheolwch faint o'ch gweithgaredd ar-lein sy'n cael ei storio a'i rannu rhwng gwefannau.
+content-blocking-enhanced-tracking-protection = Diogelwch Uwch Rhag Tracio
 content-blocking-section-description = Diogelwch eich preifatrwydd wrth bori. Rhwystrwch gynnwys cudd sy'n tracio'r gwefannau fyddwch chi'n ymweld â nhw ac sy'n creu proffil ohonoch chi. Gall rwystro peth o'r cynnwys hwn wneud i dudalennau lwytho'n gynt.
 content-blocking-learn-more = Dysgu Rhagor
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -698,22 +747,29 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Cyfaddasu
     .accesskey = C
-content-blocking-standard-description = Dim ond rhwystro tracwyr hysbys mewn Ffenestri Preifat.
 content-blocking-standard-desc = Cymantoledd rhwng diogelwch a pherfformiad. Yn caniatáu rhai tracwyr fel bod gwefannau'n gweithio'n iawn.
-content-blocking-strict-desc = Rhwystro pob traciwr mae { -brand-short-name } yn eu canfod. Gall achosi rhai gwefannau i dorri.
 content-blocking-strict-description = Gall amddiffyniad cryfach beri i rai safleoedd dorri.
 content-blocking-custom-desc = Dewis beth i'w rhwystro.
 content-blocking-private-trackers = Tracwyr hysbys mewn Ffenestri Preifat yn unig.
 content-blocking-third-party-cookies = Cwcis tracio trydydd parti
+content-blocking-etp-standard-desc = Yn gytbwys ar gyfer diogelwch a pherfformiad. Bydd tudalennau'n llwytho'n arferol.
+content-blocking-etp-strict-desc = Diogelwch cryfach, ond gall achosi i rai gwefannau neu gynnwys dorri.
+content-blocking-etp-custom-desc = Dewiswch pa dracwyr a sgriptiau i'w rhwystro.
+content-blocking-private-windows = Tracio cynnwys mewn Ffenestri Preifat
+content-blocking-cross-site-tracking-cookies = Cwcis tracio traws-gwefan
+content-blocking-social-media-trackers = Tracwyr cyfryngau cymdeithasol
 content-blocking-all-cookies = Pob cwci
 content-blocking-unvisited-cookies = Cwcis o safleoedd heb ymweld â nhw
 content-blocking-all-windows-trackers = Tracwyr hysbys ymhob ffenestr
+content-blocking-all-windows-tracking-content = Tracio cynnwys ym mhob ffenestr
 content-blocking-all-third-party-cookies = Pob cwci trydydd parti
 content-blocking-cryptominers = Cryptogloddwyr
 content-blocking-fingerprinters = Bysbrintwyr
 content-blocking-warning-title = Rhybudd!
 content-blocking-warning-description = Gall rhwystro cynnwys achosi i rai gwefannau dorri. Mae'n hawdd i analluogi rhwystro gwefannau rydych chi'n ymddiried ynddyn nhw.
 content-blocking-learn-how = Dysgu sut
+content-blocking-etp-warning-description = Gall rhwystro tracwyr effeithio ar ymarferoldeb rhai gwefannau. Ail-lwytho tudalen gyda thracwyr i lwytho'r holl gynnwys.
+content-blocking-warning-learn-how = Dysgu sut
 content-blocking-reload-description = Bydd angen ail lwytho'ch tabiau i osod y newidiadau hyn.
 content-blocking-reload-tabs-button =
     .label = Ail lwytho Pob Tab
@@ -721,6 +777,9 @@ content-blocking-reload-tabs-button =
 content-blocking-trackers-label =
     .label = Tracwyr
     .accesskey = T
+content-blocking-tracking-content-label =
+    .label = Cynnwys tracio
+    .accesskey = t
 content-blocking-tracking-protection-option-all-windows =
     .label = Ym mhob ffenestr
     .accesskey = f

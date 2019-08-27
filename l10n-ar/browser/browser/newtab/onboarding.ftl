@@ -3,9 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-## UI strings for the simplified onboarding modal
-
-
 ### UI strings for the simplified onboarding modal / about:welcome
 ### Various strings use a non-breaking space to avoid a single dangling /
 ### widowed word, so test on various window sizes if you also want this.
@@ -23,6 +20,7 @@ onboarding-button-label-get-started = فلنبدأ
 
 onboarding-welcome-header = مرحبًا بك في { -brand-short-name }
 onboarding-welcome-body = وصلك الآن المتصفّح.<br/>اطّلع على بقيّة منتجات { -brand-product-name }.
+onboarding-welcome-learn-more = اعرف المزيد حول فوائد ذلك.
 onboarding-join-form-header = انضم إلى { -brand-product-name }
 onboarding-join-form-body = أدخِل عنوان البريد الإلكتروني لتبدأ.
 onboarding-join-form-email =
@@ -31,6 +29,26 @@ onboarding-join-form-email-error = مطلوب بريد إلكتروني صالح
 onboarding-join-form-legal = بالمتابعة فأنت توافق على <a data-l10n-name="terms">شروط الخدمة</a> و<a data-l10n-name="privacy">تنويه الخصوصية</a>.
 onboarding-join-form-continue = واصِل
 onboarding-start-browsing-button-label = ابدأ التصفح
+onboarding-cards-dismiss =
+    .title = ألغِ
+    .aria-label = ألغِ
+
+## Firefox Sync modal dialog strings.
+
+onboarding-sync-welcome-header = خذ معك { -brand-product-name } أينما ذهبت
+onboarding-sync-welcome-content = تشارك العلامات، وتأريخ التصفح، وكلمات السر وباقي الإعدادات على جميع أجهزتك.
+onboarding-sync-welcome-learn-more-link = اطّلع على المزيد عن حسابات فَيَرفُكس
+onboarding-sync-form-invalid-input = مطلوب بريد إلكتروني صالح
+onboarding-sync-legal-notice = بمواصلة هذه العملية أنت توافق على <a data-l10n-name="terms">بنود الخدمة</a> و<a data-l10n-name="privacy">تنويه الخصوصية</a>.
+onboarding-sync-form-input =
+    .placeholder = البريد الإلكتروني
+onboarding-sync-form-continue-button = تابِع
+onboarding-sync-form-skip-login-button = تجاوز هذه الخطوة
+
+## This is part of the line "Enter your email to continue to Firefox Sync"
+
+onboarding-sync-form-header = أدخِل بريدك الإلكتروني
+onboarding-sync-form-sub-header = لمواصلة استخدام { -sync-brand-name }
 
 ## These are individual benefit messages shown with an image, title and
 ## description.
@@ -64,21 +82,9 @@ onboarding-ghostery-text = تصفّح بشكل أسرع، أو ربما أكثر
 # Note: "Sync" in this case is a generic verb, as in "to synchronize"
 onboarding-fxa-title = زامِن
 onboarding-fxa-text = سجّل حساب { -fxaccount-brand-name } وزامن علاماتك وكلمات السر وافتح الألسنة في كل مكان تستخدم { -brand-short-name } فيه.
-onboarding-tracking-protection-title = تحكّم بما تريد أن يتعقّبك
-onboarding-tracking-protection-text = أتنزعج من الإعلانات وهي تسير ورائك في الوِب؟ يساعدك{ -brand-short-name } بالتحكم بالكيفية التي يتعقّبك فيها المعلنون وأنت تجوب الوِب.
-# "Update" is a verb, as in "Update the existing settings", not "Options about
-# updates".
-onboarding-tracking-protection-button =
-    { PLATFORM() ->
-        [windows] حدّث الخيارات
-       *[other] حدّث التفضيلات
-    }
 onboarding-tracking-protection-title2 = الحماية من التعقّب
 onboarding-tracking-protection-text2 = يساعدك { -brand-short-name } بمنع المواقع من تعقّبك في الوِب، ما يصعّب الأمر على الإعلانات بمعرفة ما تفعل وأين تذهب.
 onboarding-data-sync-title = خُذ إعداداتك أينما ذهبت
-# "Sync" is short for synchronize.
-onboarding-data-sync-text = زامِن العلامات وكلمات السر في كل مكان تستخدم فيه { -brand-product-name }.
-onboarding-data-sync-button = فعّل { -sync-brand-short-name }
 # "Sync" is short for synchronize.
 onboarding-data-sync-text2 = زامِن علاماتك وكلمات السر وغيرها الكثير في أيّ مكان تستخدم فيه { -brand-product-name }.
 onboarding-data-sync-button2 = لِج إلى { -sync-brand-short-name }
@@ -86,15 +92,18 @@ onboarding-browse-privately-title = تصفَّح بخصوصية
 onboarding-browse-privately-text = يمسح التصفح الخاص تأريخ البحث والتصفح ليُبقيه سرًا على أي شخص يستخدم هذا الحاسوب.
 onboarding-browse-privately-button = افتح نافذة خاصة
 onboarding-firefox-send-title = أبقِ ملفاتك التي شاركتها خاصّة
-onboarding-firefox-send-text = يحمي { -send-brand-name } ملفاتك التي شاركته عبر تعمية الطرفين وبرابط ينقضي أجله تلقائيا.
 onboarding-firefox-send-button = جرّب { -send-brand-name }
 onboarding-mobile-phone-title = نزّل { -brand-product-name } على المحمول
 onboarding-mobile-phone-text = نزّل { -brand-product-name } على آي‌أوإس وأندرويد لتُزامن بياناتك عبر مختلف الأجهزة.
 # "Mobile" is short for mobile/cellular phone, "Browser" is short for web
 # browser.
 onboarding-mobile-phone-button = نزّل متصفّح المحمول
+onboarding-pocket-anywhere-text2 = احفظ ما تحبّ من محتوى وتصفّحه دون اتصال عبر تطبيق { -pocket-brand-name }. بهذا تقرأه وتسمعه وتطالعه متى ما أردت وحينما تشاء.
 onboarding-pocket-anywhere-button = جرّب { -pocket-brand-name }
-onboarding-lockwise-passwords-button = نزّل { -lockwise-brand-name }
+onboarding-lockwise-passwords-title = خُذ معك كلمات السر أينما ذهبت
+onboarding-lockwise-passwords-text2 = حافظ على كلمات السر التي حفظتها آمنة ولِج إلى حساباتك عبر { -lockwise-brand-name } ودون عناء.
+onboarding-lockwise-passwords-button2 = نزّل التطبيق
+onboarding-facebook-container-text2 = يفصل { -facebook-container-brand-name } ملفك الشخصي عن المعلومات الأخرى، وهكذا تكون مهمة فيسبوك في إيصال الإعلانات إليك أصعب وأصعب.
 onboarding-facebook-container-button = أضِف الامتداد
 
 ## Message strings belonging to the Return to AMO flow

@@ -8,7 +8,15 @@ abuse-report-subtitle = Kva er problemet?
 # Variables:
 #   $author-name (string) - Name of the add-on author
 abuse-report-addon-authored-by = av <a data-l10n-name="author-name">{ $author-name }</a>
+abuse-report-learnmore =
+    Er du usikker på kva for problem du skal velje?
+    <a data-l10n-name="learnmore-link">Les meir om rapportering av utvidingar og tema</a>
 abuse-report-submit-description = Beskriv problemet (valfritt)
+abuse-report-textarea =
+    .placeholder = Det er lettare for oss å løyse eit problem viss vi har detaljar. Beskriv kva du opplever. Takk for at du hjelper oss med å gjere nettet til ein betre stad.
+abuse-report-submit-note =
+    Merkand: Ta ikkje med personleg informasjon (som namn, e-postadresse, telefonnummer eller postadresse).
+    { -vendor-short-name } beheld ei permanent arkivering av desse rapportane.
 
 ## Panel buttons.
 
@@ -53,6 +61,21 @@ abuse-report-settings-suggestions-search = Endre standardinnstillingane dine for
 abuse-report-settings-suggestions-homepage = Endre startside og ny fane-sida
 abuse-report-deceptive-reason = Gjev seg ut for å vere noko den ikkje er
 abuse-report-deceptive-example = Døme: villeiande skildring eller bilde
+abuse-report-broken-reason-extension = Fungerer ikkje, øydeleggjer nettstadar, eller gjer { -brand-product-name } treg
+abuse-report-broken-reason-theme = Verkar ikkje eller øydeleggjer utsjånaden til nettsida
+abuse-report-broken-example = Til dømes: Funksjonar er trege, vanskeleg å bruke, eller fungerar ikkje; delar av nettstadar vil ikkje laste eller ser uvanlege ut
+abuse-report-broken-suggestions-extension =
+    Det høyrest ut som om du har identifisert ein feil. I tillegg til å sende inn ein rapport her, så er den beste måten å få retta funksjonell feil på å kontakte utvidingsutviklaren.
+    <a data-l10n-name="support-link">Besøk nettstaden til utvidinga</a> for å få informasjon om utviklaren.
+abuse-report-broken-suggestions-theme =
+    Det høyrest ut som om du har identifisert ein feil. I tillegg til å sende inn en rapport her, så er den beste måten
+    å få retta funksjonelle feil på å kontakte temautviklaren.
+    <a data-l10n-name="support-link">Besøk nettstaden til temaet</a> for å få informasjon om utviklaren.
+abuse-report-policy-reason = Hatefullt, valdeleg, eller ulovleg innhald
+abuse-report-policy-suggestions =
+    Merknad: Opphavsrett- og varemerkerproblem vert rapporterte på ein annan måte.
+    <a data-l10n-name="report-infringement-link">Bruk desse instruksjonane</a> for å
+    rapportere problemet.
 abuse-report-unwanted-reason = Ville aldri ha denne utvidinga og greier ikkje å kvitte meg med henne
 abuse-report-unwanted-example = Døme: Eit program installerte den utan løyve frå meg
 abuse-report-other-reason = Noko anna

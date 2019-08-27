@@ -29,11 +29,6 @@ search-input-box =
             [windows] Знайти в налаштуваннях
            *[other] Знайти в налаштуваннях
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Ваша організація вимкнула можливість зміни деяких налаштувань.
-       *[other] Ваша організація вимкнула можливість зміни деяких налаштувань.
-    }
 managed-notice = Вашим браузером керує ваша організація.
 pane-general-title = Загальні
 category-general =
@@ -401,6 +396,50 @@ choose-bookmark =
     .label = Використати закладку…
     .accesskey = к
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Домівка Firefox
+home-prefs-content-description = Оберіть бажаний вміст для показу в домівці Firefox.
+home-prefs-content-discovery-description = Огляд вмісту в домівці Firefox дозволяє вам знаходити високоякісні, цікаві статті з усього інтернету.
+home-prefs-search-header =
+    .label = Пошук в Інтернеті
+home-prefs-topsites-header =
+    .label = Популярні сайти
+home-prefs-topsites-description = Сайти, які ви відвідуєте найчастіше
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Рекомендовано { $provider }
+home-prefs-recommended-by-description = Чудові матеріали з усього інтернету, відібрані спеціально для вас
+home-prefs-recommended-by-learn-more = Як це працює
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Матеріали від спонсорів
+home-prefs-highlights-header =
+    .label = Обране
+home-prefs-highlights-description = Відібрані веб-сайти, які ви зберегли чи відвідали
+home-prefs-highlights-option-visited-pages =
+    .label = Відвідані сторінки
+home-prefs-highlights-options-bookmarks =
+    .label = Закладки
+home-prefs-highlights-option-most-recent-download =
+    .label = Останні завантаження
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Збережене в { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Фрагменти
+home-prefs-snippets-description = Оновлення від { -vendor-short-name } та { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } рядок
+            [few] { $num } рядки
+           *[many] { $num } рядків
+        }
+
 ## Search Section
 
 search-bar-header = Панель пошуку
@@ -565,6 +604,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Пропонувати й генерувати надійні паролі
     .accesskey = г
+forms-fill-logins-and-passwords =
+    .label = Автозаповнення паролів
+    .accesskey = з
 forms-saved-logins =
     .label = Збережені паролі…
     .accesskey = л
@@ -641,6 +683,10 @@ sitedata-block-desc = Тип блокування
     .accesskey = и
 sitedata-option-block-trackers =
     .label = Стороннє стеження
+sitedata-option-block-cross-site-trackers =
+    .label = Стеження між сайтами
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Стеження між сайтами і соціальні мережі
 sitedata-option-block-unvisited =
     .label = Куки з невідвіданих веб-сайтів
 sitedata-option-block-all-third-party =
@@ -675,7 +721,7 @@ addressbar-suggestions-settings = Змінити налаштування про
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Блокування вмісту
-content-blocking-description = Блокуйте сторонній вміст, що стежить за вами в інтернеті. Контролюйте обсяг вашої онлайн-активності, що зберігається і передається між веб-сайтами.
+content-blocking-enhanced-tracking-protection = Розширений захист від стеження
 content-blocking-section-description = Захищайте свою приватність під час перегляду. Блокуйте невидимий вміст, що відстежує відвідані вами сайти і створює ваш профіль. Блокування деякого вмісту може пришвидшити завантаження сторінок.
 content-blocking-learn-more = Докладніше
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -689,22 +735,29 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Власне
     .accesskey = л
-content-blocking-standard-description = Блокує лише відомі елементи стеження у приватних вікнах.
 content-blocking-standard-desc = Збалансовано для захисту і швидкодії. Дозволяє деякі елементи стеження для належної роботи веб-сайтів.
-content-blocking-strict-desc = Блокує все виявлене { -brand-short-name } стеження. Може пошкодити роботу деяких сайтів.
 content-blocking-strict-description = Сильніший захист. Може пошкодити роботу деяких сайтів.
 content-blocking-custom-desc = Оберіть, що блокувати.
 content-blocking-private-trackers = Відомі елементи стеження лише у приватних вікнах
 content-blocking-third-party-cookies = Сторонні куки стеження
+content-blocking-etp-standard-desc = Збалансований захист і швидкодія. Сторінки завантажуватимуться нормально.
+content-blocking-etp-strict-desc = Надійніший захист, але може пошкоджувати деякі сайти чи їх вміст.
+content-blocking-etp-custom-desc = Оберіть тип стеження і скриптів для блокування.
+content-blocking-private-windows = Стеження в приватних вікнах
+content-blocking-cross-site-tracking-cookies = Куки стеження між сайтами
+content-blocking-social-media-trackers = Стеження соціальних мереж
 content-blocking-all-cookies = Усі куки
 content-blocking-unvisited-cookies = Куки з невідвіданих сайтів
 content-blocking-all-windows-trackers = Відомі елементи стеження у всіх вікнах
+content-blocking-all-windows-tracking-content = Стеження у всіх вікнах
 content-blocking-all-third-party-cookies = Усі сторонні куки
 content-blocking-cryptominers = Криптомайнери
 content-blocking-fingerprinters = Зчитування відбитку браузера
 content-blocking-warning-title = Увага!
 content-blocking-warning-description = Блокування вмісту може пошкоджувати роботу деяких веб-сайтів. Можна легко вимкнути блокування для сайтів, яким ви довіряєте.
 content-blocking-learn-how = Навчитися
+content-blocking-etp-warning-description = Блокування стеження може вплинути на функціональність деяких сайтів. Перезавантажте сторінку зі стеженням, щоб завантажити весь вміст.
+content-blocking-warning-learn-how = Навчитися
 content-blocking-reload-description = Вам необхідно перезавантажити вкладки для застосування змін.
 content-blocking-reload-tabs-button =
     .label = Перезавантажити всі вкладки
@@ -712,6 +765,9 @@ content-blocking-reload-tabs-button =
 content-blocking-trackers-label =
     .label = Стеження
     .accesskey = т
+content-blocking-tracking-content-label =
+    .label = Вміст стеження
+    .accesskey = ж
 content-blocking-tracking-protection-option-all-windows =
     .label = У всіх вікнах
     .accesskey = х

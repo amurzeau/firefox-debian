@@ -29,11 +29,6 @@ search-input-box =
             [windows] Pesquisar em opções
            *[other] Pesquisar em preferências
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Sua organização desativou a possibilidade de modificar algumas opções
-       *[other] Sua organização desativou a possibilidade de modificar algumas preferências
-    }
 managed-notice = Seu navegador está sendo gerenciado por nossa organização.
 pane-general-title = Geral
 category-general =
@@ -279,7 +274,7 @@ update-application-check-choose =
 update-application-manual =
     .label = Nunca verificar atualizações (não recomendado)
     .accesskey = N
-update-application-warning-cross-user-setting = Esta configuração se aplicará a todas as contas do Windows e perfis do { -brand-short-name } que usam esta instalação do { -brand-short-name }.
+update-application-warning-cross-user-setting = Esta configuração se aplica a todas as contas do Windows e perfis do { -brand-short-name } que usam esta instalação do { -brand-short-name }.
 update-application-use-service =
     .label = Usar um serviço em segundo plano para instalar atualizações
     .accesskey = s
@@ -364,7 +359,7 @@ network-proxy-connection-settings =
 ## Home Section
 
 home-new-windows-tabs-header = Novas janelas e abas
-home-new-windows-tabs-description2 = Escolha o que ver quando abrir sua página inicial, novas janelas e novas abas.
+home-new-windows-tabs-description2 = Escolha o que ver quando abrir a página inicial, novas janelas e novas abas.
 
 ## Home Section - Home Page Customization
 
@@ -397,6 +392,49 @@ use-current-pages =
 choose-bookmark =
     .label = Usar favorito…
     .accesskey = f
+
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Conteúdo inicial do Firefox
+home-prefs-content-description = Escolha que conteúdo você quer na tela inicial do Firefox.
+home-prefs-content-discovery-description = A descoberta de conteúdo na página inicial do Firefox permite descobrir artigos relevantes, de alta qualidade, pela web afora.
+home-prefs-search-header =
+    .label = Pesquisar na web
+home-prefs-topsites-header =
+    .label = Sites preferidos
+home-prefs-topsites-description = Os sites que você mais visita
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Recomendado pelo { $provider }
+home-prefs-recommended-by-description = Os melhores conteúdos disponíveis na Web, personalizados pra você
+home-prefs-recommended-by-learn-more = Como funciona
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Histórias patrocinadas
+home-prefs-highlights-header =
+    .label = Destaques
+home-prefs-highlights-description = Uma seleção de sites que você salvou ou visitou
+home-prefs-highlights-option-visited-pages =
+    .label = Páginas visitadas
+home-prefs-highlights-options-bookmarks =
+    .label = Favoritos
+home-prefs-highlights-option-most-recent-download =
+    .label = Downloads mais recentes
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Páginas salvas no { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Snippets
+home-prefs-snippets-description = Atualizações da { -vendor-short-name } e do { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } linha
+           *[other] { $num } linhas
+        }
 
 ## Search Section
 
@@ -544,7 +582,7 @@ sync-connect-another-device = Conectar outro dispositivo
 sync-manage-devices = Gerenciar dispositivos
 sync-fxa-begin-pairing = Parear um dispositivo
 sync-tos-link = Termos de serviço
-sync-fxa-privacy-notice = Nota sobre privacidade
+sync-fxa-privacy-notice = Aviso de privacidade
 
 ## Privacy Section
 
@@ -552,7 +590,7 @@ privacy-header = Privacidade do navegador
 
 ## Privacy Section - Forms
 
-logins-header = Contas e Senhas
+logins-header = Contas e senhas
 forms-ask-to-save-logins =
     .label = Perguntar se deve salvar contas e senhas de acesso de sites
     .accesskey = r
@@ -562,9 +600,12 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Sugerir e gerar senhas fortes
     .accesskey = u
+forms-fill-logins-and-passwords =
+    .label = Preencher contas e senhas automaticamente
+    .accesskey = P
 forms-saved-logins =
-    .label = Contas de acesso salvas…
-    .accesskey = l
+    .label = Contas salvas…
+    .accesskey = s
 forms-master-pw-use =
     .label = Usar uma senha mestra
     .accesskey = U
@@ -592,8 +633,8 @@ history-remember-option-never =
     .label = Nunca memorizar o histórico
 history-remember-option-custom =
     .label = Usar minhas configurações
-history-remember-description = O { -brand-short-name } memorizará seu histórico de navegação, downloads, formulários e pesquisas.
-history-dontremember-description = O { -brand-short-name } usará as mesmas configurações da navegação privativa e não memorizará nenhum histórico.
+history-remember-description = O { -brand-short-name } está memorizando seu histórico de navegação, downloads, formulários e pesquisas.
+history-dontremember-description = O { -brand-short-name } está usando as mesmas configurações da navegação privativa, não memorizando nenhum histórico.
 history-private-browsing-permanent =
     .label = Sempre usar o modo de navegação privativa
     .accesskey = v
@@ -616,11 +657,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cookies e dados de sites
-sitedata-total-size-calculating = Calculando o tamanho dos dados de sites e cache…
+sitedata-total-size-calculating = Calculando o tamanho dos dados de sites e do cache…
 # Variables:
 #   $value (Number) - Value of the unit (for example: 4.6, 500)
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
-sitedata-total-size = Seus cookies, dados de sites e cache armazenados estão atualmente usando { $value } { $unit } do espaço em disco.
+sitedata-total-size = Seus cookies, dados de sites e cache armazenados estão no momento ocupando { $value }{ $unit } de espaço em disco.
 sitedata-learn-more = Saiba mais
 sitedata-delete-on-close =
     .label = Apagar cookies e dados de sites quando o { -brand-short-name } for fechado
@@ -638,6 +679,10 @@ sitedata-block-desc = Tipo bloqueado
     .accesskey = T
 sitedata-option-block-trackers =
     .label = Rastreadores de terceiros
+sitedata-option-block-cross-site-trackers =
+    .label = Rastreadores entre sites
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Rastreadores entre sites e de mídias sociais
 sitedata-option-block-unvisited =
     .label = Cookies de sites não visitados
 sitedata-option-block-all-third-party =
@@ -672,7 +717,7 @@ addressbar-suggestions-settings = Alterar preferências de sugestões de mecanis
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Bloqueio de conteúdo
-content-blocking-description = Bloqueie conteúdos de terceiros que rastreiam você pela web. Controle quanto da sua atividade online é armazenado e compartilhado entre sites.
+content-blocking-enhanced-tracking-protection = Proteção aprimorada contra rastreamento
 content-blocking-section-description = Proteja sua privacidade enquanto navega. Bloqueie conteúdo invisível que rastreia os sites que você visita e traça seu perfil. Bloquear parte deste conteúdo pode fazer com que algumas páginas sejam carregadas mais rápido.
 content-blocking-learn-more = Saiba mais
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -686,22 +731,29 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Personalizado
     .accesskey = z
-content-blocking-standard-description = Bloqueia somente rastreadores conhecidos em janelas privativas.
 content-blocking-standard-desc = Balanceado entre proteção e desempenho. Permite alguns rastreadores para que a maioria dos sites possa funcionar corretamente.
-content-blocking-strict-desc = Bloqueia todos os rastreadores que o { -brand-short-name } detecta. Pode atrapalhar alguns sites.
 content-blocking-strict-description = Proteção mais forte, pode atrapalhar alguns sites.
 content-blocking-custom-desc = Escolha o que bloquear.
 content-blocking-private-trackers = Rastreadores conhecidos, só em janelas privativas
 content-blocking-third-party-cookies = Cookies rastreadores de terceiros
+content-blocking-etp-standard-desc = Balanceado entre proteção e desempenho. Páginas são carregadas normalmente.
+content-blocking-etp-strict-desc = Proteção reforçada, mas pode atrapalhar alguns sites ou conteúdos.
+content-blocking-etp-custom-desc = Escolha que rastreadores e scripts bloquear.
+content-blocking-private-windows = Conteúdo de rastreamento em janelas privativas
+content-blocking-cross-site-tracking-cookies = Cookies de rastreamento entre sites
+content-blocking-social-media-trackers = Rastreadores de mídias sociais
 content-blocking-all-cookies = Todos os cookies
 content-blocking-unvisited-cookies = Cookies de sites não visitados
 content-blocking-all-windows-trackers = Rastreadores conhecidos, em todas as janelas
+content-blocking-all-windows-tracking-content = Conteúdo de rastreamento em todas as janelas
 content-blocking-all-third-party-cookies = Todos os cookies de terceiros
 content-blocking-cryptominers = Criptomineradores
 content-blocking-fingerprinters = Fingerprinters (rastreadores de identidade digital)
 content-blocking-warning-title = Atenção!
 content-blocking-warning-description = O bloqueio de conteúdo pode fazer alguns sites não funcionarem direito. É fácil desativar o bloqueio em sites que você confia.
 content-blocking-learn-how = Saiba como
+content-blocking-etp-warning-description = Bloquear rastreadores pode afetar a funcionalidade de alguns sites. Recarregue uma página com rastreadores para carregar todo o conteúdo.
+content-blocking-warning-learn-how = Saiba como
 content-blocking-reload-description = É preciso recarregar as abas para aplicar essas mudanças.
 content-blocking-reload-tabs-button =
     .label = Recarregar todas as abas
@@ -709,6 +761,9 @@ content-blocking-reload-tabs-button =
 content-blocking-trackers-label =
     .label = Rastreadores
     .accesskey = t
+content-blocking-tracking-content-label =
+    .label = Conteúdo de rastreamento
+    .accesskey = C
 content-blocking-tracking-protection-option-all-windows =
     .label = Em todas as janelas
     .accesskey = a
@@ -758,7 +813,7 @@ permissions-notification-settings =
     .accesskey = C
 permissions-notification-link = Saiba mais
 permissions-notification-pause =
-    .label = Pausar as notificações até reiniciar o { -brand-short-name }
+    .label = Inibir notificações até o { -brand-short-name } ser reiniciado
     .accesskey = n
 permissions-block-autoplay-media2 =
     .label = Bloquear nos sites a reprodução automática de som
@@ -790,8 +845,8 @@ permissions-a11y-privacy-link = Saiba mais
 ## Privacy Section - Data Collection
 
 collection-header = Coleta e uso de dados pelo { -brand-short-name }
-collection-description = Nos esforçamos para proporcionar escolhas e coletar somente o necessário para fornecer e melhorar o { -brand-short-name } para todos. Sempre pedimos permissão antes de receber informações pessoais.
-collection-privacy-notice = Nota sobre privacidade
+collection-description = Nos esforçamos para proporcionar escolhas e coletar somente o necessário para melhorar e fornecer o { -brand-short-name } para todos. Sempre pedimos permissão antes de receber informações pessoais.
+collection-privacy-notice = Aviso de privacidade
 collection-health-report =
     .label = Permitir que o { -brand-short-name } envie dados técnicos e de interação para a { -vendor-short-name }
     .accesskey = r
@@ -816,16 +871,16 @@ collection-backlogged-crash-reports-link = Saiba mais
 ## https://developers.google.com/safe-browsing/developers_guide_v2#AcceptableUsage
 
 security-header = Segurança
-security-browsing-protection = Proteção contra Conteúdo Enganoso e Softwares Perigosos
+security-browsing-protection = Proteção contra conteúdo enganoso e softwares perigosos
 security-enable-safe-browsing =
-    .label = Bloquear conteúdo perigoso e enganoso
+    .label = Bloquear conteúdo perigoso ou enganoso
     .accesskey = B
 security-enable-safe-browsing-link = Saiba mais
 security-block-downloads =
     .label = Bloquear downloads perigosos
     .accesskey = d
 security-block-uncommon-software =
-    .label = Avisar sobre softwares indesejados e incomuns
+    .label = Avisar sobre softwares indesejados ou incomuns
     .accesskey = c
 
 ## Privacy Section - Certificates

@@ -4,6 +4,8 @@
 
 do-not-track-description = Указване на сайтовете, че не желаете да бъдете проследявани
 do-not-track-learn-more = Научете повече
+do-not-track-option-default-content-blocking-known =
+    .label = Само когато { -brand-short-name } е настроен да спира проследяването
 do-not-track-option-always =
     .label = Винаги
 pref-page =
@@ -27,10 +29,7 @@ search-input-box =
             [windows] Търсене в настройките
            *[other] Търсене в настройките
         }
-policies-notice =
-    { PLATFORM() ->
-       *[other] Възможността да променяте някои настройки е ограничена от вашата организация.
-    }
+managed-notice = Мрежовият четец се управлява от вашето ведомство.
 pane-general-title = Основни
 category-general =
     .tooltiptext = { pane-general-title }
@@ -43,10 +42,6 @@ category-search =
 pane-privacy-title = Поверителност и защита
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Firefox Account
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -82,6 +77,9 @@ extension-controlled-homepage-override = Разширението „<img data-l
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Разширението „<img data-l10n-name="icon"/> { $name }“ управлява страницата за нов раздел.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = Разширението „<img data-l10n-name="icon"/> { $name }“ управлява настройката.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Разширението „<img data-l10n-name="icon"/> { $name }“ е задало стандартната търсеща машина.
@@ -131,8 +129,10 @@ set-as-my-default-browser =
     .label = Задаване като стандартен…
     .accesskey = с
 startup-restore-previous-session =
-    .label = Възстановяване на предишна сесия
+    .label = Възстановяване на предишната сесия
     .accesskey = с
+startup-restore-warn-on-quit =
+    .label = Предупреждаване при затваряне на четеца
 disable-extension =
     .label = Изключване на разширението
 tabs-group-header = Раздели
@@ -253,7 +253,7 @@ applications-type-column =
 applications-action-column =
     .label = Действие
     .accesskey = Д
-drm-content-header = Съдържание с управление на цифрови права (DRM)
+drm-content-header = Съдържание с цифрови права (DRM)
 play-drm-content =
     .label = Изпълняване на съдържание под DRM
     .accesskey = И
@@ -266,20 +266,42 @@ update-history =
     .accesskey = х
 update-application-allow-description = Разрешаване на { -brand-short-name }
 update-application-auto =
-    .label = Да инсталира обновяванията автоматично (препоръчва се)
+    .label = Да инсталира обновявания автоматично (препоръчително)
     .accesskey = и
 update-application-check-choose =
-    .label = Да прави проверка за обновяванията, но да дава избор дали да бъдат инсталирани
+    .label = Да прави проверка за обновявания, но да дава избор дали да бъдат инсталирани
     .accesskey = п
 update-application-manual =
     .label = Никога да не прави проверка за обновявания (непрепоръчително)
     .accesskey = Н
+update-application-warning-cross-user-setting = Тази настройка ще бъде приложена към всички профили в Windows и всички профили на { -brand-short-name }, използващи тази инсталация на { -brand-short-name }.
 update-application-use-service =
     .label = Използване на услуга във фонов режим за инсталиране на обновявания
     .accesskey = у
 update-enable-search-update =
     .label = Автоматично обновяване на търсещите машини
     .accesskey = т
+update-pref-write-failure-title = Грешка при запазване
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = Настройките не могат да бъдат запазени. Във файлa „{ $path }“ не може да бъде записвано.
+update-setting-write-failure-title = Грешка при запазване на настройките за обновяване
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    Поради възникнала грешка { -brand-short-name } не запази промяната.
+    
+    Обърнете внимание, че задаването на тази настройка за обновяване изисква права за запис във файла по-долу. Вие или системен администратор може да успеете да разрешите проблема, като предоставите на групата потребители пълни права над този файл.¶
+    ¶
+    Във файлa „{ $path }“ не може да бъде записвано.
+update-in-progress-title = Обновяване е в процес на изпълнение
+update-in-progress-message = Желаете ли { -brand-short-name } да продължи с обновяването?
+update-in-progress-ok-button = &Отхвърляне
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Продължаване
 
 ## General Section - Performance
 
@@ -319,6 +341,12 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Търсене на текст при започване на въвеждане
     .accesskey = Т
+browsing-cfr-recommendations =
+    .label = Препоръчване на разширения
+    .accesskey = П
+browsing-cfr-features =
+    .label = Препоръчване на възможности
+    .accesskey = в
 browsing-cfr-recommendations-learn-more = Научете повече
 
 ## General Section - Proxy
@@ -366,6 +394,49 @@ use-current-pages =
 choose-bookmark =
     .label = Отметка…
     .accesskey = О
+
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Начална страница на Firefox
+home-prefs-content-description = Изберете съдържанието, което искате да виждате на началната страница на Firefox.
+home-prefs-content-discovery-description = Откриването на съдържание от началната страница на Firefox ви позволява да откривате висококачествени и подходящи статии от мрежата.
+home-prefs-search-header =
+    .label = Търсене в Мрежата
+home-prefs-topsites-header =
+    .label = Често посещавани страници
+home-prefs-topsites-description = Най-посещаваните от вас страници
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Препоръчано от { $provider }
+home-prefs-recommended-by-description = Отлично съдържание от цялата Мрежа, подбрано лично за вас
+home-prefs-recommended-by-learn-more = Как работи
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Платени публикации
+home-prefs-highlights-header =
+    .label = Акценти
+home-prefs-highlights-description = Избрани страници, които сте запазили или посетили
+home-prefs-highlights-option-visited-pages =
+    .label = Посетени страници
+home-prefs-highlights-options-bookmarks =
+    .label = Отметки
+home-prefs-highlights-option-most-recent-download =
+    .label = Последни изтегляния
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Страници, запазени в { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Изрезки
+home-prefs-snippets-description = Новости от { -vendor-short-name } и { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } ред
+           *[other] { $num } реда
+        }
 
 ## Search Section
 
@@ -509,8 +580,9 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Запазване
     .accesskey = З
-sync-mobilepromo-single = Добавяне на устройство
-sync-mobilepromo-multi = Управление на устройства
+sync-connect-another-device = Добавяне на устройство
+sync-manage-devices = Управление на устройства
+sync-fxa-begin-pairing = Сдвояване на устройство
 sync-tos-link = Условия на услугата
 sync-fxa-privacy-notice = Политика на поверителност
 
@@ -527,6 +599,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Изключения…
     .accesskey = к
+forms-generate-passwords =
+    .label = Предлагане и създаване на силни пароли
+    .accesskey = р
 forms-saved-logins =
     .label = Запазени регистрации…
     .accesskey = р
@@ -585,8 +660,12 @@ sitedata-total-size-calculating = Изчисляване на размера н�
 # Variables:
 #   $value (Number) - Value of the unit (for example: 4.6, 500)
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
-sitedata-total-size = Буферът, бисквитките и данните от страници момента заемат { $value } { $unit } дисково пространство.
+sitedata-total-size = Буферът, бисквитките и данните от страници в момента заемат { $value } { $unit } дисково пространство.
 sitedata-learn-more = Научете повече
+sitedata-delete-on-close =
+    .label = Изтриване на бисквитки и данни на страници при затваряне на { -brand-short-name }
+    .accesskey = д
+sitedata-delete-on-close-private-browsing = В постоянен режим на поверително разглеждане бисквитките и данните на страници винаги ще бъдат изчиствани при затваряне на { -brand-short-name }.
 sitedata-allow-cookies-option =
     .label = Разрешаване на бисквитки и данни
     .accesskey = р
@@ -597,12 +676,23 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Вид на ограничения ресурс
     .accesskey = в
+sitedata-option-block-trackers =
+    .label = Проследяващи трети страни
+sitedata-option-block-unvisited =
+    .label = Бисквитки от непосетени страници
+sitedata-option-block-all-third-party =
+    .label = Всички странични бисквитки (може да наруши работата на страниците)
+sitedata-option-block-all =
+    .label = Всички бисквитки (ще наруши работата на страниците)
 sitedata-clear =
     .label = Изчистване на данни…
     .accesskey = т
 sitedata-settings =
     .label = Управление на данни…
     .accesskey = у
+sitedata-cookies-permissions =
+    .label = Управление на права…
+    .accesskey = п
 
 ## Privacy Section - Address Bar
 
@@ -622,9 +712,37 @@ addressbar-suggestions-settings = Настройки на предложения
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Ограничаване на съдържание
+content-blocking-section-description = Защитете личните си данни, докато разглеждате. Ограничете невидимото съдържание, което следи посещаваните от вас страници и ви профилира. Спирането на част от това съдържание може да подобри зареждането на страниците.
 content-blocking-learn-more = Научете повече
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = Стандартно
+    .accesskey = с
+content-blocking-setting-strict =
+    .label = Строго
+    .accesskey = т
+content-blocking-setting-custom =
+    .label = По избор
+    .accesskey = и
+content-blocking-standard-desc = Баланс между защита и бързодействие. За да работят напълно страниците, разрешава някои проследявания.
+content-blocking-strict-description = Високото ниво на защита може да наруши работата на някои страници.
+content-blocking-custom-desc = Изберете какво да бъде ограничавано.
+content-blocking-private-trackers = Известните проследявания само в поверителни прозорци
+content-blocking-third-party-cookies = Странични бисквитки за проследяване
+content-blocking-all-cookies = Всички бисквитки
+content-blocking-unvisited-cookies = Бисквитки от непосетени страници
+content-blocking-all-windows-trackers = Проследявания във всички прозорци
+content-blocking-all-third-party-cookies = Всички странични бисквитки
+content-blocking-cryptominers = Добиване на криптовалути
+content-blocking-fingerprinters = Снемане на цифров отпечатък
 content-blocking-warning-title = Внимание!
+content-blocking-warning-description = Ограничаването на съдържание може да наруши работата на някои страници. Лесно е да го изключите за страниците, на които вярвате.
 content-blocking-learn-how = Научете как
+content-blocking-reload-description = За да бъдат приложени промените, разделите трябва да бъдат презаредени.
+content-blocking-reload-tabs-button =
+    .label = Презареждане на всички раздели
+    .accesskey = р
 content-blocking-trackers-label =
     .label = Проследявания
     .accesskey = П
@@ -638,10 +756,17 @@ content-blocking-tracking-protection-change-block-list = Промяна спис
 content-blocking-cookies-label =
     .label = Бисквитки
     .accesskey = б
+content-blocking-expand-section =
+    .tooltiptext = Повече информация
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
-    .label = Копачи на криптовалути
+    .label = Добиване на криптовалути
     .accesskey = к
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+content-blocking-fingerprinters-label =
+    .label = Снемане на цифров отпечатък
+    .accesskey = ц
 
 ## Privacy Section - Tracking
 
@@ -672,9 +797,16 @@ permissions-notification-link = Научете повече
 permissions-notification-pause =
     .label = Спиране на известията до рестарт на { -brand-short-name }
     .accesskey = з
+permissions-block-autoplay-media2 =
+    .label = Блокиране на уеб сайтовете от автоматично възпроизвеждане на звук
+    .accesskey = Б
 permissions-block-autoplay-media-exceptions =
     .label = Изключения…
     .accesskey = ю
+permissions-autoplay = Автоматично възпроизвеждане
+permissions-autoplay-settings =
+    .label = Настройки…
+    .accesskey = н
 permissions-block-popups =
     .label = Спиране на изскачащите прозорци
     .accesskey = С
@@ -704,6 +836,8 @@ collection-health-report-link = Научете повече
 collection-studies =
     .label = Разрешаване на { -brand-short-name } да инсталира и извършва изследвания
 collection-studies-link = Преглед на изследванията на { -brand-short-name }
+addon-recommendations =
+    .label = Разрешаване на { -brand-short-name } да прави персонализирани препоръки за разширения
 addon-recommendations-link = Научете повече
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
@@ -779,3 +913,7 @@ space-alert-under-5gb-message = Дисковото пространство до
 desktop-folder-name = Плот
 downloads-folder-name = Изтегляния
 choose-download-folder-title = Избиране на папка за изтегляне:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Запазване на файла в { $service-name }
