@@ -47,7 +47,6 @@ Build-Depends: autotools-dev,
 %if USE_SYSTEM_LIBEVENT
                libevent-dev (>= 1.4.1),
 %endif
-               libjsoncpp-dev,
                libpulse-dev,
                libasound2-dev,
                yasm (>= 1.1),
