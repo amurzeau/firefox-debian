@@ -20,7 +20,6 @@ debian-hacks/Add-debian-extra-stuff-to-upstream-build-system-dire.patch
 debian-hacks/Don-t-build-image-gtests.patch
 debian-hacks/Allow-to-override-ICU_DATA_FILE-from-the-environment.patch
 debian-hacks/Set-program-name-from-the-remoting-name.patch
-debian-hacks/Build-against-system-libjsoncpp.patch
 debian-hacks/Use-the-Mozilla-Location-Service-key-when-the-Google.patch
 debian-hacks/Avoid-using-vmrs-vmsr-on-armel.patch
 debian-hacks/Use-remoting-name-for-call-to-gdk_set_program_class.patch

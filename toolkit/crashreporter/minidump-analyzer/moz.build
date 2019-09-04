@@ -48,7 +48,7 @@ USE_LIBS += [
 ]
 
 LOCAL_INCLUDES += [
-    '%/usr/include/jsoncpp',
+    '/toolkit/components/jsoncpp/include',
 ]
 
 if CONFIG['OS_TARGET'] != 'WINNT':
