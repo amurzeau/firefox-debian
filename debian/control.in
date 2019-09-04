@@ -23,7 +23,6 @@ Build-Depends: autotools-dev,
 %endif
                libreadline-dev,
                python2.7,
-               python-minimal (>= 2.6.6-13~),
                python3,
                dpkg-dev (>= 1.16.1.1~),
 %if USE_SYSTEM_NSPR
