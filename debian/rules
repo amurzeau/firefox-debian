@@ -15,7 +15,7 @@ $(call lazy,DEB_BUILD_ARCH_BITS,$$(shell dpkg-architecture -qDEB_BUILD_ARCH_BITS
 $(call lazy,DEB_HOST_ARCH,$$(shell dpkg-architecture -qDEB_HOST_ARCH))
 $(call lazy,DEB_HOST_ARCH_ENDIAN,$$(shell dpkg-architecture -qDEB_HOST_ARCH_ENDIAN))
 
-PYTHON := python -B
+PYTHON := python2.7 -B
 
 PRODUCT := browser
 include debian/upstream.mk
