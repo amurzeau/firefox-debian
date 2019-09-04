@@ -1,3 +1,25 @@
+firefox-esr (68.1.0esr-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2019-26, also known as
+    CVE-2019-11746, CVE-2019-11744, CVE-2019-11742, CVE-2019-11752,
+    CVE-2019-9812, CVE-2019-11743, CVE-2019-11748, CVE-2019-11749,
+    CVE-2019-11750, CVE-2019-11738, CVE-2019-11747, CVE-2019-11735,
+    CVE-2019-11740.
+
+  * debian/upstream.mk: Read source repo and revision from json when
+    getting upstream info. Instead of the .txt file that doesn't exist
+    as of 69.
+  * debian/control*:
+    - Remove unused build dependency against python-ply.
+    - Remove python-minimal build dependency. All supported versions
+      of Debian have a new enough version.
+  * debian/l10n/gen, debian/latest_nightly.py, debian/rules,
+    debian/symbols.mk, debian/upstream.mk, debian/watch: Use explicit
+    python2.7 instead of python.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 04 Sep 2019 10:22:21 +0900
+
 firefox-esr (68.0.2esr-1) unstable; urgency=medium
 
   * New upstream ESR release.
