@@ -53,7 +53,7 @@
 <!ENTITY saveAsTemplateCmd.accesskey "T">
 <!ENTITY getNewMsgForCmd.label "获取新消息">
 <!ENTITY getNewMsgForCmd.accesskey "w">
-<!ENTITY getAllNewMsgCmdPopupMenu.label "添加账户">
+<!ENTITY getAllNewMsgCmdPopupMenu.label "所有账户">
 <!ENTITY getAllNewMsgCmdPopupMenu.accesskey "A">
 <!ENTITY getNewMsgCurrentAccountCmdPopupMenu.label "当前账户">
 <!ENTITY getNewMsgCurrentAccountCmdPopupMenu.accesskey "C">
@@ -153,7 +153,7 @@
 <!ENTITY showFolderPaneCmd.accesskey "F">
 <!ENTITY showFolderPaneColsCmd.label "文件夹窗格列">
 <!ENTITY showFolderPaneColsCmd.accesskey "P">
-<!ENTITY showMessageCmd.label "消息">
+<!ENTITY showMessageCmd.label "消息窗格">
 <!ENTITY showMessageCmd.accesskey "M">
 
 <!ENTITY folderView.label "文件夹">
@@ -172,7 +172,6 @@
 <!ENTITY compactVersion.accesskey "C">
 <!ENTITY folderPaneBar.label "文件夹窗格工具栏">
 <!ENTITY folderPaneBar.accesskey "F">
-<!ENTITY folderModeSelector.label "文件夹视图">
 
 <!-- Sort Menu -->
 <!ENTITY sortMenu.label "排序">
@@ -587,6 +586,7 @@
 <!ENTITY fileButton.tooltip "移动选择的消息">
 <!ENTITY archiveButton.tooltip "归档选中的消息">
 <!ENTITY openConversationButton.tooltip "显示选定消息的对话">
+<!ENTITY openMsgConversationButton.tooltip "显示选定消息的对话">
 <!ENTITY nextButton.tooltip "转至下一条未读消息">
 <!ENTITY nextMsgButton.tooltip "移动到下一条信息">
 <!ENTITY previousButton.tooltip "转到上一条未读消息">
@@ -605,7 +605,6 @@
 <!ENTITY tagButton.tooltip "为消息添加标签">
 <!ENTITY compactButton.tooltip "从选中文件夹移除已删除消息">
 <!ENTITY appmenuButton1.tooltip "显示 &brandShortName; 菜单">
-
 <!ENTITY addonsButton.tooltip "管理您的附加组件">
 
 <!-- Toolbar Button Popup -->
@@ -724,7 +723,7 @@
 <!ENTITY readColumn.label "已读">
 <!ENTITY receivedColumn.label "接收时间">
 <!ENTITY starredColumn.label "已加星标">
-<!ENTITY locationColumn.label "地址">
+<!ENTITY locationColumn.label "位置">
 <!ENTITY idColumn.label "按接收时间排序">
 <!ENTITY attachmentColumn.label "附件">
 

@@ -29,11 +29,6 @@ search-input-box =
             [windows] Najít v možnostech
            *[other] Najít v předvolbách
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Vaše organizace zakázala změny některých možností.
-       *[other] Vaše organizace zakázala změny některých předvoleb.
-    }
 managed-notice = Tento prohlížeč je spravován vaší organizací.
 pane-general-title = Obecné
 category-general =
@@ -407,6 +402,50 @@ choose-bookmark =
     .label = Použít záložku…
     .accesskey = z
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Obsah domovské stránky Firefoxu
+home-prefs-content-description = Vyberte obsah, který chcete mít na výchozí domovské stránce Firefoxu.
+home-prefs-content-discovery-description = Doporučování obsahu na domovské stránce obsahu vám nabídne kvalitní a relevantní články z celého internetu.
+home-prefs-search-header =
+    .label = Vyhledávání na webu
+home-prefs-topsites-header =
+    .label = Top stránky
+home-prefs-topsites-description = Nejnavštěvovanější stránky
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Doporučení ze služby { $provider }
+home-prefs-recommended-by-description = Skvělý obsah z celého webu, vybraný speciálně pro vás
+home-prefs-recommended-by-learn-more = Jak to funguje
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Sponzorované články
+home-prefs-highlights-header =
+    .label = Vybrané
+home-prefs-highlights-description = Výběr z uložených nebo navštívených stránek
+home-prefs-highlights-option-visited-pages =
+    .label = Navštívené stránky
+home-prefs-highlights-options-bookmarks =
+    .label = Záložky
+home-prefs-highlights-option-most-recent-download =
+    .label = Nedávná stahování
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Stránky uložené do služby { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Útržky
+home-prefs-snippets-description = Aktuální informace od společnosti { -vendor-short-name } a aplikace { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } řádek
+            [few] { $num } řádky
+           *[other] { $num } řádků
+        }
+
 ## Search Section
 
 search-bar-header = Vyhledávací pole
@@ -575,6 +614,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Generovat a navrhovat silná hesla
     .accesskey = G
+forms-fill-logins-and-passwords =
+    .label = Automaticky vyplňovat přihlašovací údaje
+    .accesskey = y
 forms-saved-logins =
     .label = Uložené přihlašovací údaje…
     .accesskey = l
@@ -651,6 +693,10 @@ sitedata-block-desc = Blokovat
     .accesskey = t
 sitedata-option-block-trackers =
     .label = Cookies sledovacích prvků třetích stran
+sitedata-option-block-cross-site-trackers =
+    .label = Sledující prvky
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Sledující prvky, např. sociálních sítí
 sitedata-option-block-unvisited =
     .label = Cookies z dosud nenavštívených stránek
 sitedata-option-block-all-third-party =
@@ -685,7 +731,7 @@ addressbar-suggestions-settings = Nastavit našeptávání vyhledávače
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Blokování obsahu
-content-blocking-description = Blokuje obsah třetích stran, který vás na webu sleduje. Sami určete, jak velká část z vašich aktivit na internetu se bude ukládat a sdílet mezi stránkami.
+content-blocking-enhanced-tracking-protection = Rozšířená ochrana proti sledování
 content-blocking-section-description = Chraňte své soukromí při prohlížení internetu. Zablokujte neviditelný obsah, který vás sleduje na navštívených stránkách a vytváří profil vašeho chování. Blokování takového obsahu navíc může zrychlit načítání stránek.
 content-blocking-learn-more = Zjistit více
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -699,22 +745,29 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Vlastní
     .accesskey = V
-content-blocking-standard-description = Blokuje sledovací prvky jen v anonymních oknech.
 content-blocking-standard-desc = Vyvážená úroveň ochrany. Povoluje některé sledovací prvky, aby stránky fungovaly správně.
-content-blocking-strict-desc = Blokuje všechny sledovací prvky, které { -brand-short-name } najde. Může omezit fungování některých stránek.
 content-blocking-strict-description = Více blokovaného obsahu zvyšuje pravděpodobnost, že některé stránky nebudou správně fungovat.
 content-blocking-custom-desc = Sami vyberte, co a kde se má blokovat.
 content-blocking-private-trackers = Sledovací prvky blokovány v anonymních oknech
 content-blocking-third-party-cookies = Cookies sledovacích prvků třetích stran blokovány ve všech oknech
+content-blocking-etp-standard-desc = Vyvážená ochrana a výkon. Neovlivní správné načítání webových stránek.
+content-blocking-etp-strict-desc = Silnější ochrana. Může omezit fungování některých stránek.
+content-blocking-etp-custom-desc = Vyberte sledující prvky a skripty, které chcete zablokovat.
+content-blocking-private-windows = Sledující obsah v anonymních oknech
+content-blocking-cross-site-tracking-cookies = Sledovací cookies
+content-blocking-social-media-trackers = Sledující prvky sociálních sítí
 content-blocking-all-cookies = Všechny cookies
 content-blocking-unvisited-cookies = Cookies z dosud nenavštívených stránek
 content-blocking-all-windows-trackers = Sledovací prvky blokovány ve všech oknech
+content-blocking-all-windows-tracking-content = Sledující obsah ve všech oknech
 content-blocking-all-third-party-cookies = Všechny cookies třetích stran blokovány vždy
 content-blocking-cryptominers = Těžba kryptoměn blokována ve všech oknech
 content-blocking-fingerprinters = Vytváření otisku prohlížeče blokováno ve všech oknech
 content-blocking-warning-title = Pozor!
 content-blocking-warning-description = Blokování obsahu může omezit fungování některých stránek. Pro stránky, kterým důvěřujete, ho můžete snadno vypnout.
 content-blocking-learn-how = Jak na to?
+content-blocking-etp-warning-description = Blokování sledujícího obsahu může ovlivnit fungování některých stránek. Pro načtení veškerého obsahu obnovte stránku s povolenými sledujícími prvky.
+content-blocking-warning-learn-how = Jak na to
 content-blocking-reload-description = Aby se změny projevily, obnovte vaše panely.
 content-blocking-reload-tabs-button =
     .label = Obnovit všechny panely
@@ -722,6 +775,9 @@ content-blocking-reload-tabs-button =
 content-blocking-trackers-label =
     .label = Sledovací prvky
     .accesskey = S
+content-blocking-tracking-content-label =
+    .label = Sledující obsah
+    .accesskey = o
 content-blocking-tracking-protection-option-all-windows =
     .label = ve všech oknech
     .accesskey = v

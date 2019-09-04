@@ -24,7 +24,7 @@ list-empty-button =
 install-addon-from-file =
     .label = Instalar de um arquivo…
     .accesskey = I
-help-button = Suporte para Extensões
+help-button = Suporte para extensões
 preferences =
     { PLATFORM() ->
         [windows] Opções do { -brand-short-name }
@@ -160,9 +160,6 @@ private-browsing-description2 =
     extensão não funcionará durante a navegação privativa e não terá acesso à sua atividade online.
     Fizemos esta alteração para assegurar sua navegação privativa.
     <label data-l10n-name="private-browsing-learn-more">Saiba como gerenciar configurações de extensões.</label>
-extensions-view-discover =
-    .name = Adicionar
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-discopane =
     .name = Recomendações
     .tooltiptext = { extensions-view-discopane.name }
@@ -258,6 +255,12 @@ shortcuts-modifier-other = Incluir Ctrl ou Alt
 shortcuts-invalid = Combinação inválida
 shortcuts-letter = Digite uma letra
 shortcuts-system = Não é possível substituir um atalho do { -brand-short-name }
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Atalho duplicado
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } está sendo usado como atalho em mais de um caso. Atalhos duplicados podem causar comportamento inesperado.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -315,17 +318,27 @@ preferences-addon-button =
        *[other] Preferências
     }
 details-addon-button = Detalhes
-release-notes-addon-button = Notas de lançamento
+release-notes-addon-button = Notas da versão
 permissions-addon-button = Permissões
 addons-enabled-heading = Ativado
 addons-disabled-heading = Desativado
+extension-enabled-heading = Ativado
+extension-disabled-heading = Desativado
+theme-enabled-heading = Ativado
+theme-disabled-heading = Desativado
+plugin-enabled-heading = Ativado
+plugin-disabled-heading = Desativado
+dictionary-enabled-heading = Ativado
+dictionary-disabled-heading = Desativado
+locale-enabled-heading = Ativado
+locale-disabled-heading = Desativado
 ask-to-activate-button = Perguntar para ativar
 always-activate-button = Sempre ativar
 never-activate-button = Nunca ativar
 addon-detail-author-label = Autor
 addon-detail-version-label = Versão
 addon-detail-last-updated-label = Última atualização
-addon-detail-homepage-label = Página inicial
+addon-detail-homepage-label = Página web
 addon-detail-rating-label = Classificação
 # The average rating that the add-on has received.
 # Variables:
@@ -351,11 +364,11 @@ addon-detail-reviews-link =
 #   $addon (string) - Name of the add-on
 pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> foi removido.
 pending-uninstall-undo-button = Desfazer
-addon-detail-updates-label = Permitir atualização automática
+addon-detail-updates-label = Atualização automática
 addon-detail-updates-radio-default = Padrão
-addon-detail-updates-radio-on = Ligado
-addon-detail-updates-radio-off = Desligado
-addon-detail-update-check-label = Verificar se há atualizações
+addon-detail-updates-radio-on = Ativada
+addon-detail-updates-radio-off = Desativada
+addon-detail-update-check-label = Procurar atualização
 install-update-button = Atualizar
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.

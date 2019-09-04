@@ -155,9 +155,6 @@ private-browsing-description2 =
     ekstensi tidak akan berfungsi saat menjelajah secara pribadi dan tidak akan memiliki akses ke aktivitas daring Anda
     pada jendela pribadi tersebut. Kami telah membuat perubahan ini untuk menjaga penelusuran pribadi Anda tetap pribadi.
     <label data-l10n-name="private-browsing-learn-more">Pelajari cara mengelola pengaturan ekstensi.</label>
-extensions-view-discover =
-    .name = Unduh Pengaya
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-discopane =
     .name = Rekomendasi
     .tooltiptext = { extensions-view-discopane.name }
@@ -269,6 +266,14 @@ go-back-button =
 
 discopane-notice-learn-more = Pelajari lebih lanjut
 privacy-policy = Kebijakan Privasi
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = oleh <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Pengguna: { $dailyUsers }
 install-extension-button = Tambahkan ke { -brand-product-name }
 install-theme-button = Pasang Tema
 # The label of the button that appears after installing an add-on. Upon click,
@@ -293,6 +298,16 @@ release-notes-addon-button = Catatan Rilis
 permissions-addon-button = Hak Akses
 addons-enabled-heading = Diaktifkan
 addons-disabled-heading = Dinonaktifkan
+extension-enabled-heading = Aktif
+extension-disabled-heading = Nonaktif
+theme-enabled-heading = Aktif
+theme-disabled-heading = Nonaktif
+plugin-enabled-heading = Aktif
+plugin-disabled-heading = Nonaktif
+dictionary-enabled-heading = Aktif
+dictionary-disabled-heading = Nonaktif
+locale-enabled-heading = Aktif
+locale-disabled-heading = Nonaktif
 ask-to-activate-button = Minta untuk Mengaktifkan
 always-activate-button = Selalu Aktif
 never-activate-button = Jangan Pernah Aktifkan
@@ -315,8 +330,12 @@ addon-detail-reviews-link =
 
 ## Pending uninstall message bar
 
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> telah dihapus.
 pending-uninstall-undo-button = Batal
 addon-detail-updates-label = Izinkan pembaruan otomatis
+addon-detail-updates-radio-default = Baku
 addon-detail-updates-radio-off = Nonaktif
 addon-detail-update-check-label = Periksa Versi Baru
 install-update-button = Perbarui
@@ -325,12 +344,19 @@ install-update-button = Perbarui
 addon-badge-private-browsing-allowed =
     .title = Diizinkan di jendela pribadi
 addon-detail-private-browsing-allow = Izinkan
+addon-detail-private-browsing-disallow = Jangan Izinkan
 # This is the tooltip text for the recommended badge for an extension in about:addons. The
 # badge is a small icon displayed next to an extension when it is recommended on AMO.
 addon-badge-recommended =
     .title = Disarankan
     .alt = Disarankan
 available-updates-heading = Versi Baru yang Tersedia
+recent-updates-heading = Versi Terkini
 release-notes-loading = Memuat…
+release-notes-error = Maaf, galat terjadi ketika memuat catatan rilis.
+addon-permissions-empty = Ekstensi ini tidak memerlukan izin apa pun
 recommended-extensions-heading = Ekstensi yang Disarankan
 recommended-themes-heading = Tema yang Disarankan
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Merasa kreatif? <a data-l10n-name="link">Buat tema Anda sendiri dengan Firefox Color.</a>

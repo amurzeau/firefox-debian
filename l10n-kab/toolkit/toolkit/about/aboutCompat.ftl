@@ -4,4 +4,6 @@
 
 label-disable = Ssens
 label-enable = Rmed
+label-more-information = Ugar n talɣut: Abug { $bug }
+text-disabled-in-about-config = Tamahilt-a tensa deg about:config
 text-title = about:compat

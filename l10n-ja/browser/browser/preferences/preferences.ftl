@@ -32,12 +32,6 @@ search-input-box =
            *[other] 設定を検索
         }
 
-policies-notice =
-    { PLATFORM() ->
-        [windows] あなたの所属組織が一部のオプションの変更を制限しています。
-       *[other] あなたの所属組織が一部の設定の変更を制限しています。
-    }
-
 managed-notice = ご使用のブラウザーはあなたの所属組織に管理されています。
 
 pane-general-title = 一般
@@ -98,7 +92,7 @@ extension-controlled-new-tab-url = 拡張機能 <img data-l10n-name="icon"/> { $
 
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
-extension-controlled-web-notifications= 拡張機能 <img data-l10n-name="icon"/> { $name } により、この設定が変更されています。
+extension-controlled-web-notifications = 拡張機能 <img data-l10n-name="icon"/> { $name } により、この設定が変更されています。
 
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
@@ -498,6 +492,49 @@ choose-bookmark =
     .label = ブックマークを使う...
     .accesskey = B
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Firefox Home コンテンツ
+home-prefs-content-description = Firefox Home に表示するコンテンツを選びましょう。
+home-prefs-content-discovery-description = Firefox Home のコンテンツディスカバリーは関連性の高い優れた記事をウェブ上から発見できます。
+
+home-prefs-search-header =
+    .label = ウェブ検索
+home-prefs-topsites-header =
+    .label = トップサイト
+home-prefs-topsites-description = よく訪れるサイト
+
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = { $provider } のおすすめ
+home-prefs-recommended-by-description = ウェブ上の様々な場所から集められた、あなたにピッタリの優れたコンテンツ
+home-prefs-recommended-by-learn-more = 使い方
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = 広告記事
+
+home-prefs-highlights-header =
+    .label = ハイライト
+home-prefs-highlights-description = 保存したり訪れたりしたサイトうち主なもの
+home-prefs-highlights-option-visited-pages =
+    .label = 訪れたページ
+home-prefs-highlights-options-bookmarks =
+    .label = ブックマーク
+home-prefs-highlights-option-most-recent-download =
+    .label = 最近のダウンロード
+home-prefs-highlights-option-saved-to-pocket =
+    .label = { -pocket-brand-name } に保存されたページ
+
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = スニペット
+home-prefs-snippets-description = { -vendor-short-name } と { -brand-product-name } に関する最新情報
+home-prefs-sections-rows-option =
+    .label = { $num } 行
+
 ## Search Section
 
 search-bar-header = 検索バー
@@ -699,6 +736,12 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = 例外サイト...
     .accesskey = x
+forms-generate-passwords =
+    .label = 強固なパスワードを生成、提案する
+    .accesskey = u
+forms-fill-logins-and-passwords =
+    .label = ログイン情報とパスワードを自動入力する
+    .accesskey = i
 forms-saved-logins =
     .label = 保存されているログイン情報...
     .accesskey = L
@@ -793,6 +836,11 @@ sitedata-block-desc = ブロックの種類
 
 sitedata-option-block-trackers =
     .label = サードパーティトラッカー
+
+sitedata-option-block-cross-site-trackers =
+    .label = クロスサイトトラッカー
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = クロスサイトトラッカーとソーシャルメディアトラッカー
 sitedata-option-block-unvisited =
     .label = 未訪問のウェブサイトの Cookie
 sitedata-option-block-all-third-party =
@@ -834,7 +882,7 @@ addressbar-suggestions-settings = 検索エンジンの検索候補の設定を�
 
 content-blocking-header = コンテンツブロッキング
 
-content-blocking-description = ウェブ上の行動を追跡するサードパーティコンテンツをブロックします。ウェブサイト間で蓄積、共有されるあなたのオンラインアクティビティをコントロールします。
+content-blocking-enhanced-tracking-protection = 強化型トラッキング防止機能
 
 content-blocking-section-description = ブラウジング中のあなたのプライバシーを保護します。あなたが訪問したサイトを追跡して訪問者の情報を収集する目に見えないコンテンツをブロックします。このようなコンテンツをブロックすると、ページの読み込みが速くなる可能性があります。
 
@@ -852,26 +900,34 @@ content-blocking-setting-custom =
   .label = カスタム
   .accesskey = C
 
-content-blocking-standard-description = プライベートウィンドウのみ既知のトラッカーをブロックします。
-
 content-blocking-standard-desc = 保護と性能をバランスよく。ウェブサイトが正しく機能するようトラッカーを一部許可します。
-content-blocking-strict-desc = { -brand-short-name } が検出したトラッカーをすべてブロックします。一部のサイトが機能しなくなる可能性があります。
 content-blocking-strict-description = より強固な保護です。一部のサイトが機能しなくなる可能性があります。
 content-blocking-custom-desc = ブロックする項目を選択します。
 
 content-blocking-private-trackers = 既知のトラッカー (プライベートウィンドウのみ)
 content-blocking-third-party-cookies = サードパーティのトラッカー Cookie
+
+content-blocking-etp-standard-desc = 保護と性能をバランスよく。ページが正しく機能するように読み込みます。
+content-blocking-etp-strict-desc = より強固な保護ですが、一部のサイトやコンテンツが機能しなくなる可能性があります。
+content-blocking-etp-custom-desc = ブロックするトラッカーとスクリプトを選択します。
+
+content-blocking-private-windows = トラッキングコンテンツ (プライベートウィンドウのみ)
+content-blocking-cross-site-tracking-cookies = クロスサイトトラッキング Cookie
+content-blocking-social-media-trackers = ソーシャルメディアトラッカー
 content-blocking-all-cookies = すべての Cookie
 content-blocking-unvisited-cookies = 未訪問のサイトの Cookie
 content-blocking-all-windows-trackers = 既知のトラッカー (すべてのウィンドウ)
+content-blocking-all-windows-tracking-content = トラッキングコンテンツ (すべてのウィンドウ)
 content-blocking-all-third-party-cookies = サードパーティ Cookie すべて
-
 content-blocking-cryptominers = 暗号通貨マイニング
 content-blocking-fingerprinters = フィンガープリント採取
 
 content-blocking-warning-title = 注意！
 content-blocking-warning-description = コンテンツをブロックすると、一部のウェブサイトが機能しなくなる可能性があります。信頼するサイトはブロッキングを無効にできます。
 content-blocking-learn-how = 詳細
+
+content-blocking-etp-warning-description = トラッカーをブロックすると、一部のサイトの機能に影響がある可能性があります。すべてのコンテンツを読み込むには、トラッカーを許容してページを再読み込みします。
+content-blocking-warning-learn-how = 詳細
 
 content-blocking-reload-description = これらの変更を適用するには、タブを再読み込みする必要があります。
 content-blocking-reload-tabs-button =
@@ -880,6 +936,10 @@ content-blocking-reload-tabs-button =
 
 content-blocking-trackers-label =
   .label = トラッカー
+  .accesskey = T
+
+content-blocking-tracking-content-label =
+  .label = トラッキングコンテンツ
   .accesskey = T
 content-blocking-tracking-protection-option-all-windows =
   .label = すべてのウィンドウ

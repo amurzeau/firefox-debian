@@ -93,11 +93,14 @@ detail-update-manual =
     .tooltiptext = No instal·lis actualitzacions automàticament
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Executa en finestres privades
+detail-private-browsing-description2 = Si ho permeteu, l'extensió tindrà accés a la vostra activitat a Internet encara que utilitzeu la navegació privada. <label data-l10n-name="detail-private-browsing-learn-more">Més informació</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
 # cannot be overridden by the user.
 detail-private-disallowed-label = No es permet en finestres privades
+detail-private-disallowed-description = Aquesta extensió no s'executa durant la navegació privada. <label data-l10n-name="detail-private-browsing-learn-more">Més informació</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = Necessita accés a les finestres privades
+detail-private-required-description = Aquesta extensió té accés a la vostra activitat a Internet durant la navegació privada. <label data-l10n-name="detail-private-browsing-learn-more">Més informació</label>
 detail-private-browsing-on =
     .label = Permet
     .tooltiptext = Activa en la navegació privada
@@ -146,9 +149,9 @@ legacy-warning-show-legacy = Mostra les extensions antigues
 legacy-extensions =
     .value = Extensions antigues
 legacy-extensions-description = Aquestes extensions no compleixen els estàndards actuals del { -brand-short-name } i s'han desactivat. <label data-l10n-name="legacy-learn-more">Més informació sobre els canvis en els complements</label>
-extensions-view-discover =
-    .name = Més complements
-    .tooltiptext = { extensions-view-discover.name }
+private-browsing-description2 =
+    El { -brand-short-name } ha canviat el funcionament de les extensions en la navegació privada. Per defecte, les extensions noves que s'afegeixin al { -brand-short-name } no s'executaran en les finestres privades. Llevat que ho permeteu als paràmetres, l'extensió no funcionarà durant la navegació privada i no tindrà accés a les vostres activitats en línia. Hem fet aquest canvi per garantir la privadesa de la vostra navegació quan s'utilitzen les finestres privades.
+    <label data-l10n-name="private-browsing-learn-more">Més informació sobre com gestionar els paràmetres de les extensions</label>
 extensions-view-discopane =
     .name = Recomanacions
     .tooltiptext = { extensions-view-discopane.name }
@@ -243,6 +246,13 @@ shortcuts-modifier-mac = Cal incloure Ctrl, Alt o ⌘
 shortcuts-modifier-other = Cal incloure Ctrl o Alt
 shortcuts-invalid = La combinació no és vàlida
 shortcuts-letter = Escriviu una lletra
+shortcuts-system = Les dreceres del { -brand-short-name } no es poden substituir
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Drecera duplicada
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } ja s'utilitza com a drecera en més d’un cas. Les dreceres duplicades poden causar un comportament inesperat.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -258,6 +268,13 @@ go-back-button =
 
 ## Recommended add-ons page
 
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro = Les extensions i els temes són com les aplicacions per al navegador i us permeten protegir les contrasenyes, baixar vídeos, trobar ofertes, bloquejar anuncis molestos, canviar com es veu el vostre navegador i molt més. Aquests petits programes sovint són desenvolupats per tercers. Aquí teniu una selecció <a data-l10n-name="learn-more-trigger">recomanada</a> pel { -brand-product-name } per aconseguir un nivell excepcional de seguretat, rendiment i funcionalitat.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations =
+    Algunes d’aquestes recomanacions són personalitzades. Es basen en altres
+    extensions que heu instal·lat, preferències del perfil i estadístiques d’ús.
 discopane-notice-learn-more = Més informació
 privacy-policy = Política de privadesa
 # Refers to the author of an add-on, shown below the name of the add-on.
@@ -290,8 +307,18 @@ preferences-addon-button =
 details-addon-button = Detalls
 release-notes-addon-button = Notes de la versió
 permissions-addon-button = Permisos
-addons-enabled-heading = Activats
-addons-disabled-heading = Desactivats
+addons-enabled-heading = Activat
+addons-disabled-heading = Desactivat
+extension-enabled-heading = Activada
+extension-disabled-heading = Desactivada
+theme-enabled-heading = Activat
+theme-disabled-heading = Desactivat
+plugin-enabled-heading = Desactivat
+plugin-disabled-heading = Desactivat
+dictionary-enabled-heading = Activat
+dictionary-disabled-heading = Desactivat
+locale-enabled-heading = Activat
+locale-disabled-heading = Desactivat
 ask-to-activate-button = Demana si vull activar-lo
 always-activate-button = Activa'l sempre
 never-activate-button = No l'activis mai
@@ -334,6 +361,7 @@ install-update-button = Actualitza
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed =
     .title = Es permet en finestres privades
+addon-detail-private-browsing-help = Si ho permeteu, l'extensió tindrà accés a la vostra activitat a Internet encara que utilitzeu la navegació privada. <label data-l10n-name="detail-private-browsing-learn-more">Més informació</label>
 addon-detail-private-browsing-allow = Permet
 addon-detail-private-browsing-disallow = No ho permetis
 # This is the tooltip text for the recommended badge for an extension in about:addons. The

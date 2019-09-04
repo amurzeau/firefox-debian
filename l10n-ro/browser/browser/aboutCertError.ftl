@@ -12,7 +12,7 @@ cert-error-trust-unknown-issuer-intro = Cineva ar putea încerca să uzurpe iden
 # Variables:
 # $hostname (String) - Hostname of the website with cert error.
 cert-error-trust-unknown-issuer = Site-urile web își demonstrează identitatea prin intermediul certificatelor. { -brand-short-name } nu are încredere în { $hostname } deoarece emițătorul certificatului este necunoscut, certificatul este autosemnat sau serverul nu trimite certificatele intermediare corecte.
-cert-error-trust-cert-invalid = Certificatul nu este de încredere deoarece a fost emis de o autoritate de certificare invalidă.
+cert-error-trust-cert-invalid = Certificatul nu prezintă încredere deoarece a fost emis de o autoritate de certificare nevalidă.
 cert-error-trust-untrusted-issuer = Certificatul nu prezintă încredere deoarece certificatul emitentului nu prezintă încredere.
 cert-error-trust-signature-algorithm-disabled = Certificatul nu prezintă încredere deoarece a fost semnat folosind un algoritm de semnare care a fost dezactivat deoarece acel algoritm nu este securizat.
 cert-error-trust-expired-issuer = Certificatul nu prezintă încredere deoarece certificatul emitentului a expirat.
@@ -48,3 +48,10 @@ cert-error-code-prefix-link = Codul erorii: <a data-l10n-name="error-code-link">
 # $hostname (String) - Hostname of the website with cert error.
 cert-error-symantec-distrust-description = Site-urile web își demonstrează identitatea prin intermediul certificatelor, care sunt emise de autorități de certificare. Majoritatea browserelor nu mai au încredere în certificatele emise de GeoTrust, RapidSSL, Symantec, Thawte și VeriSign. { $hostname } folosește un certificat de la una dintre aceste autorități și, prin urmare, identitatea site-ului web nu poate fi demonstrată.
 cert-error-symantec-distrust-admin = Poți notifica administratorul site-ului web despre această problemă.
+# Variables:
+# $hasHSTS (Boolean) - Indicates whether HSTS header is present.
+cert-error-details-hsts-label = Securitate strictă la transport HTTP: { $hasHSTS }
+# Variables:
+# $hasHPKP (Boolean) - Indicates whether HPKP header is present.
+cert-error-details-key-pinning-label = Fixarea cheii publice HTTP: { $hasHPKP }
+cert-error-details-cert-chain-label = Lanț de certificate:

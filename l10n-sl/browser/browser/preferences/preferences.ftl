@@ -29,11 +29,6 @@ search-input-box =
             [windows] Najdi v možnostih
            *[other] Najdi v nastavitvah
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Vaša organizacija vam je onemogočila spreminjanje nekaterih možnosti.
-       *[other] Vaša organizacija vam je onemogočila spreminjanje nekaterih nastavitev.
-    }
 managed-notice = Vaš brskalnik upravlja vaša organizacija.
 pane-general-title = Splošno
 category-general =
@@ -404,6 +399,51 @@ choose-bookmark =
     .label = Uporabi zaznamek …
     .accesskey = z
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Vsebina domače strani Firefoxa
+home-prefs-content-description = Izberite vsebino, ki jo želite prikazati na domači strani Firefoxa.
+home-prefs-content-discovery-description = Odkrivanje vsebine na Firefoxovi domači strani vam pomaga odkriti kakovostne članke na spletu, ki bi vas utegnili zanimati.
+home-prefs-search-header =
+    .label = Iskanje po spletu
+home-prefs-topsites-header =
+    .label = Glavne strani
+home-prefs-topsites-description = Strani, ki jih največkrat obiščete
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Priporoča { $provider }
+home-prefs-recommended-by-description = Odlična vsebina iz celega spleta, prilagojena vašemu okusu
+home-prefs-recommended-by-learn-more = Kako deluje
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Zgodbe oglaševalcev
+home-prefs-highlights-header =
+    .label = Poudarki
+home-prefs-highlights-description = Izbor strani, ki ste jih shranili ali obiskali
+home-prefs-highlights-option-visited-pages =
+    .label = Obiskane strani
+home-prefs-highlights-options-bookmarks =
+    .label = Zaznamki
+home-prefs-highlights-option-most-recent-download =
+    .label = Najnovejši prenos
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Strani, shranjene v { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Izrezki
+home-prefs-snippets-description = Novice organizacije { -vendor-short-name } in { -brand-product-name }a
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } vrstica
+            [two] { $num } vrstici
+            [few] { $num } vrstice
+           *[other] { $num } vrstic
+        }
+
 ## Search Section
 
 search-bar-header = Iskalna vrstica
@@ -568,6 +608,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Predlagaj in ustvarjaj močna gesla
     .accesskey = u
+forms-fill-logins-and-passwords =
+    .label = Samodejno izpolni prijave in gesla
+    .accesskey = S
 forms-saved-logins =
     .label = Shranjene prijave …
     .accesskey = H
@@ -644,6 +687,10 @@ sitedata-block-desc = Zavračaj
     .accesskey = Z
 sitedata-option-block-trackers =
     .label = Sledilce tretjih strani
+sitedata-option-block-cross-site-trackers =
+    .label = Spletne sledilce
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Spletne sledilce in sledilce družbenih omrežij
 sitedata-option-block-unvisited =
     .label = Piškotke neobiskanih spletnih strani
 sitedata-option-block-all-third-party =
@@ -678,7 +725,7 @@ addressbar-suggestions-settings = Spremeni nastavitve predlogov iskanja
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Zavračanje vsebine
-content-blocking-description = Zavračajte vsebino tretjih strani, ki vam sledi po spletu. Nadzirajte, koliko vaše spletne dejavnosti se shranjuje in deli med spletnimi stranmi.
+content-blocking-enhanced-tracking-protection = Izboljšana zaščita pred sledenjem
 content-blocking-section-description = Zaščitite svojo zasebnost med brskanjem. Zavrnite nevidno vsebino, ki spremlja vaše obiskane strani in ustvarja profil o vas. Če zavrnete nekaj te vsebine, se lahko strani hitreje naložijo.
 content-blocking-learn-more = Več o tem
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -692,22 +739,29 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Po meri
     .accesskey = m
-content-blocking-standard-description = Zavrača samo znane sledilce v zasebnih oknih.
 content-blocking-standard-desc = Uravnotežena zaščita in delovanje. Omogoča nekaj sledilcev, tako da spletne strani delujejo pravilno.
-content-blocking-strict-desc = Zavrača vse sledilce, ki jih { -brand-short-name } zazna. Lahko povzroči nedelovanje nekaterih strani.
 content-blocking-strict-description = Močnejša zaščita; lahko povzroči nedelovanje nekaterih strani.
 content-blocking-custom-desc = Izberite, kaj želite zavračati.
 content-blocking-private-trackers = Znane sledilce samo v zasebnih oknih
 content-blocking-third-party-cookies = Sledilne piškotke tretjih strani
+content-blocking-etp-standard-desc = Uravnotežena zaščita in delovanje. Strani bodo delovale običajno.
+content-blocking-etp-strict-desc = Močnejša zaščita, ki pa lahko povzroči nedelovanje nekaterih strani ali vsebine.
+content-blocking-etp-custom-desc = Izberite, katere sledilce in skripte želite zavračati.
+content-blocking-private-windows = Sledilno vsebino v zasebnih oknih
+content-blocking-cross-site-tracking-cookies = Spletne sledilne piškotke
+content-blocking-social-media-trackers = Sledilce družbenih omrežij
 content-blocking-all-cookies = Vse piškotke
 content-blocking-unvisited-cookies = Piškotke neobiskanih spletnih strani
 content-blocking-all-windows-trackers = Znane sledilce v vseh oknih
+content-blocking-all-windows-tracking-content = Sledilno vsebino v vseh oknih
 content-blocking-all-third-party-cookies = Vse piškotke tretjih strani
 content-blocking-cryptominers = Kriptorudarje
 content-blocking-fingerprinters = Sledilce prstnih odtisov
 content-blocking-warning-title = Opozorilo!
 content-blocking-warning-description = Zavračanje vsebine lahko povzroči nedelovanje nekaterih spletnih mest. Zavračanje vsebine strani, ki jim zaupate, lahko enostavno onemogočite.
 content-blocking-learn-how = Naučite se, kako
+content-blocking-etp-warning-description = Zavračanje sledilcev lahko vpliva na delovanje nekaterih strani. Naložite stran s sledilci, da naložite vso vsebino.
+content-blocking-warning-learn-how = Naučite se, kako
 content-blocking-reload-description = Za uveljavitev sprememb boste morali znova naložiti zavihke.
 content-blocking-reload-tabs-button =
     .label = Znova naloži vse zavihke
@@ -715,6 +769,9 @@ content-blocking-reload-tabs-button =
 content-blocking-trackers-label =
     .label = Sledilce
     .accesskey = S
+content-blocking-tracking-content-label =
+    .label = Sledilno vsebino
+    .accesskey = v
 content-blocking-tracking-protection-option-all-windows =
     .label = V vseh oknih
     .accesskey = s

@@ -6,7 +6,7 @@
 # $hostname (String) - Hostname of the website with cert error.
 cert-error-intro = Witryna „{ $hostname }” używa nieprawidłowego certyfikatu bezpieczeństwa.
 cert-error-mitm-intro = Strony internetowe dowodzą swojej tożsamości przy użyciu certyfikatów, wystawianych przez organizacje certyfikujące.
-cert-error-mitm-mozilla = { -brand-short-name } to oprogramowanie tworzone przez organizację Mozilla, która zarządza całkowicie otwartym magazynem organizacji certyfikujących (CA). Magazyn ten pomaga dopilnować przestrzegania przez organizacje certyfikujące najlepszych praktyk dla bezpieczeństwa użytkowników.
+cert-error-mitm-mozilla = { -brand-short-name } to oprogramowanie tworzone przez organizację Mozilla, która zarządza całkowicie otwartym magazynem organów certyfikacji (CA). Magazyn ten pomaga dopilnować przestrzegania przez organy certyfikacji najlepszych praktyk dla bezpieczeństwa użytkowników.
 cert-error-mitm-connection = Zamiast certyfikatów systemowych { -brand-short-name } używa magazynu CA organizacji Mozilla, aby weryfikować bezpieczeństwo połączeń. Połączenie nie jest uznawane za bezpieczne, jeśli oprogramowanie antywirusowe lub sieciowe przechwytuje połączenie z certyfikatem bezpieczeństwa wystawionym przez organizację certyfikującą nieobecną w magazynie CA organizacji Mozilla.
 cert-error-trust-unknown-issuer-intro = Ktoś może próbować podszywać się pod tę witrynę. Odradzamy kontynuowanie.
 # Variables:
@@ -48,3 +48,10 @@ cert-error-code-prefix-link = Kod błędu: <a data-l10n-name="error-code-link">{
 # $hostname (String) - Hostname of the website with cert error.
 cert-error-symantec-distrust-description = Strony internetowe dowodzą swojej tożsamości przy użyciu certyfikatów, wystawianych przez organizacje certyfikujące. Większość przeglądarek nie ufa już certyfikatom wystawianym przez GeoTrust, RapidSSL, Symantec, Thawte i Verisign. Tożsamość tej strony nie może zostać potwierdzona, ponieważ domena „{ $hostname }” używa certyfikatu od jednego z tych wystawców.
 cert-error-symantec-distrust-admin = Można powiadomić administratora strony o tym problemie.
+# Variables:
+# $hasHSTS (Boolean) - Indicates whether HSTS header is present.
+cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
+# Variables:
+# $hasHPKP (Boolean) - Indicates whether HPKP header is present.
+cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
+cert-error-details-cert-chain-label = Łańcuch certyfikatu:

@@ -2,8 +2,15 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## These messages are used as headings in the recommendation doorhanger
+
 cfr-doorhanger-extension-heading = Eklenti Önerisi
+cfr-doorhanger-feature-heading = Özellik Önerisi
 cfr-doorhanger-pintab-heading = Bunu deneyin: Sekme sabitleme
+
+
+
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Bunu neden görüyorum?
 cfr-doorhanger-extension-cancel-button = Daha sonra
@@ -62,3 +69,45 @@ cfr-doorhanger-bookmark-fxa-link-text = Yer imlerini eşitle…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Kapat düğmesi
     .title = Kapat
+
+## Protections panel
+
+cfr-protections-panel-header = Takip edilmeden gezin
+cfr-protections-panel-body = Verileriniz sizde kalsın. { -brand-short-name }, internette ne yaptığınızı öğrenmeye çalışan takipçilerin çoğundan sizi korur.
+cfr-protections-panel-link-text = Daha fazla bilgi alın
+
+## What's New toolbar button and panel
+
+cfr-whatsnew-button =
+    .label = Yeni neler var?
+    .tooltiptext = Yeni neler var?
+cfr-whatsnew-panel-header = Yeni neler var?
+
+## Bookmark Sync
+
+cfr-doorhanger-sync-bookmarks-header = Bu yer imini telefonunuza gönderin
+cfr-doorhanger-sync-bookmarks-body = Yer imlerinize, parolalarınıza, geçmişinize ve diğer bilgilerinize { -brand-product-name } tarayıcınıza giriş yaptığınız her yerden ulaşın.
+cfr-doorhanger-sync-bookmarks-ok-button = { -sync-brand-short-name }’i aç
+    .accesskey = a
+
+## Login Sync
+
+cfr-doorhanger-sync-logins-header = Bir daha hiçbir parolanızı unutmayın
+cfr-doorhanger-sync-logins-body = Parolalanızı güvenle depolayın, onlara tüm cihazlarınızdan ulaşın.
+cfr-doorhanger-sync-logins-ok-button = { -sync-brand-short-name }’i aç
+    .accesskey = a
+
+## Send Tab
+
+cfr-doorhanger-send-tab-header = Bu yazıyı yolda okuyun
+cfr-doorhanger-send-tab-recipe-header = Bu yazıyı yanınızda taşıyın
+cfr-doorhanger-send-tab-body = Sekme Gönder özelliğiyle bu bağlantıyı kolayca telefonunuza veya { -brand-product-name }’a giriş yaptığınız her yere gönderebilirsiniz.
+cfr-doorhanger-send-tab-ok-button = Sekme göndermeyi dene
+    .accesskey = S
+
+## Firefox Send
+
+cfr-doorhanger-firefox-send-header = Bu PDF’i güvenle paylaşın
+cfr-doorhanger-firefox-send-body = Uçtan uca şifreleme ve işiniz bittiğinde kaybolan bir bağlantıyla hassas belgelerinizi meraklı gözlerden koruyun.
+cfr-doorhanger-firefox-send-ok-button = { -send-brand-name }’i deneyin
+    .accesskey = d

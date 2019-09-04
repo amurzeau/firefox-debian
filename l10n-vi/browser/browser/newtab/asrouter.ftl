@@ -2,8 +2,15 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## These messages are used as headings in the recommendation doorhanger
+
 cfr-doorhanger-extension-heading = Tiện ích được đề xuất
+cfr-doorhanger-feature-heading = Tính năng được đề xuất
 cfr-doorhanger-pintab-heading = Hãy thử cái này: Ghim thẻ
+
+
+
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Tại sao tôi thấy cái này
 cfr-doorhanger-extension-cancel-button = Không phải bây giờ
@@ -60,3 +67,45 @@ cfr-doorhanger-bookmark-fxa-link-text = Đồng bộ trang đánh dấu ngay bâ
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Nút đóng
     .title = Đóng
+
+## Protections panel
+
+cfr-protections-panel-header = Duyệt mà không bị theo dõi
+cfr-protections-panel-body = Giữ dữ liệu của bạn cho chính mình. { -brand-short-name } bảo vệ bạn khỏi nhiều trình theo dõi phổ biến nhất theo dõi những gì bạn làm trực tuyến.
+cfr-protections-panel-link-text = Tìm hiểu thêm
+
+## What's New toolbar button and panel
+
+cfr-whatsnew-button =
+    .label = Có gì mới
+    .tooltiptext = Có gì mới
+cfr-whatsnew-panel-header = Có gì mới
+
+## Bookmark Sync
+
+cfr-doorhanger-sync-bookmarks-header = Nhận dấu trang này trên điện thoại của bạn
+cfr-doorhanger-sync-bookmarks-body = Nhận dấu trang, mật khẩu, lịch sử của bạn và nhiều nơi khác mà bạn đã đăng nhập vào { -brand-product-name }.
+cfr-doorhanger-sync-bookmarks-ok-button = Bật { -sync-brand-short-name }
+    .accesskey = T
+
+## Login Sync
+
+cfr-doorhanger-sync-logins-header = Không bao giờ mất mật khẩu lần nữa
+cfr-doorhanger-sync-logins-body = Lưu trữ an toàn và đồng bộ hóa mật khẩu của bạn với tất cả các thiết bị của bạn.
+cfr-doorhanger-sync-logins-ok-button = Bật { -sync-brand-short-name }
+    .accesskey = T
+
+## Send Tab
+
+cfr-doorhanger-send-tab-header = Đọc cái này khi đang di chuyển
+cfr-doorhanger-send-tab-recipe-header = Mang công thức này vào bếp
+cfr-doorhanger-send-tab-body = Gửi thẻ cho phép bạn dễ dàng chia sẻ liên kết này với điện thoại của mình hoặc bất cứ nơi nào bạn đăng nhập vào { -brand-product-name }.
+cfr-doorhanger-send-tab-ok-button = Thử trình gửi thẻ
+    .accesskey = T
+
+## Firefox Send
+
+cfr-doorhanger-firefox-send-header = Chia sẻ PDF này một cách an toàn
+cfr-doorhanger-firefox-send-body = Giữ các tài liệu nhạy cảm của bạn an toàn khỏi những con mắt tò mò với mã hóa đầu cuối và một liên kết sẽ biến mất khi bạn thực hiện xong.
+cfr-doorhanger-firefox-send-ok-button = Thử { -send-brand-name }
+    .accesskey = T

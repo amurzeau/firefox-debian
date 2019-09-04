@@ -29,11 +29,6 @@ search-input-box =
             [windows] વિકલ્પોમાં શોધો
            *[other] પસંદગીઓમાં શોધો
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] તમારી સંસ્થા કેટલાક વિકલ્પો બદલવા અક્ષમ છે.
-       *[other] તમારી સંસ્થા કેટલાક પસંદગીઓ બદલવા અક્ષમ છે.
-    }
 pane-general-title = સામાન્ય
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +41,6 @@ category-search =
 pane-privacy-title = ગોપનીયતા & સુરક્ષા
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Firefox ખાતુ
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -382,6 +373,48 @@ choose-bookmark =
     .label = બુકમાર્ક વાપરો…
     .accesskey = B
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Firefox મુખ્ય સામગ્રી
+home-prefs-content-description = તમારી Firefox મુખ્ય સ્ક્રીન પર કઈ સામગ્રી તમે ઇચ્છો તે પસંદ કરો.
+home-prefs-search-header =
+    .label = વેબ શોધ
+home-prefs-topsites-header =
+    .label = ટોચની સાઇટ્સ
+home-prefs-topsites-description = તમે સૌથી વધુ મુલાકાત લો છો તે સાઇટ્સ
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = { $provider } દ્વારા ભલામણ
+home-prefs-recommended-by-description = તમારા માટે વ્યક્તિગત કરેલ વેબ પરથી, વિખ્યાત સામગ્રી
+home-prefs-recommended-by-learn-more = તે કેવી રીતે કામ કરે છે
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = પ્રાયોજિત વાર્તાઓ
+home-prefs-highlights-header =
+    .label = વીતી ગયેલું
+home-prefs-highlights-description = સાઇટ્સની પસંદગી કે જે તમે સાચવી અથવા મુલાકાત લીધી છે
+home-prefs-highlights-option-visited-pages =
+    .label = મુલાકાત લીધેલા પૃષ્ઠો
+home-prefs-highlights-options-bookmarks =
+    .label = બુકમાર્ક્સ
+home-prefs-highlights-option-most-recent-download =
+    .label = સૌથી તાજેતરની ડાઉનલોડ
+home-prefs-highlights-option-saved-to-pocket =
+    .label = { -pocket-brand-name } પર સાચવેલ પૃષ્ઠો
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = જાણકારી આપનારા ઉતારા ક કાપલીઓ
+home-prefs-snippets-description = { -vendor-short-name } અને { -brand-product-name } તરફથી અપડેટ્સ
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } પંક્તિ
+           *[other] { $num } પંક્તિઓ
+        }
+
 ## Search Section
 
 search-bar-header = શોધ બાર
@@ -524,8 +557,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = સંગ્રહો
     .accesskey = v
-sync-mobilepromo-single = બીજા ઉપકરણ સાથે જોડાણ કરો
-sync-mobilepromo-multi = ઉપકરણો સંચાલિત કરો
 sync-connect-another-device = બીજા ઉપકરણ સાથે જોડાણ કરો
 sync-manage-devices = ઉપકરણો સંચાલિત કરો
 sync-fxa-begin-pairing = ઉપકરણ જોડો
@@ -654,7 +685,6 @@ addressbar-suggestions-settings = શોધ એન્જિન સૂચનો �
 ## Privacy Section - Content Blocking
 
 content-blocking-header = સામગ્રી અવરોધિત
-content-blocking-description = તૃતીય-પક્ષ સામગ્રીને અવરોધિત કરો જે તમને વેબ પર ટ્રૅક કરે છે. વેબસાઇટ્સની વચ્ચે તમારી કેટલી ઑનલાઇન પ્રવૃત્તિ સંગ્રહિત અને શેર કરવામાં આવે તે નિયંત્રિત કરો.
 content-blocking-learn-more = વધુ શીખો
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -667,9 +697,7 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = વૈવિધ્યપૂર્ણ
     .accesskey = C
-content-blocking-standard-description = ખાનગી વિન્ડોમાં ફક્ત જાણીતા ટ્રૅકર્સને અવરોધિત કરો.
 content-blocking-standard-desc = સુરક્ષા અને પ્રદર્શન માટે સંતુલિત છે. કેટલાક ટ્રેકર્સને મંજૂરી આપે છે જેથી વેબસાઇટ્સ યોગ્ય રીતે કાર્ય કરે.
-content-blocking-strict-desc = { -brand-short-name } ને મળેલ બધા ટ્રેકર્સને અવરોધ કરે છે. કેટલીક સાઇટ્સ ને રોકી શકે છે.
 content-blocking-custom-desc = શું અવરોધિત છે તે પસંદ કરો
 content-blocking-private-trackers = ખાનગી વિન્ડોઝમાં ફક્ત જાણીતા ટ્રૅકર્સ
 content-blocking-third-party-cookies = તૃતીય પક્ષ ટ્રેકિંગ કૂકીઝ
@@ -677,7 +705,6 @@ content-blocking-all-cookies = બધી કૂકીઝ
 content-blocking-all-windows-trackers = બધા વિન્ડોઝમાં જાણીતા ટ્રેકર્સ
 content-blocking-all-third-party-cookies = બધા તૃતીય પક્ષ કૂકીઝ
 content-blocking-warning-title = હેડ્સ અપ!
-content-blocking-warning-desc = કૂકીઝ અને ટ્રેકર્સને અવરોધિત કરવાથી કેટલીક વેબસાઇટ્સ રોકાઈ શકે છે. તમે વિશ્વાસ કરો છો તે સાઇટ્સ માટે અવરોધિત કરવાનું બંધ કરવું સરળ છે.
 content-blocking-learn-how = કેવી રીતે તે જાણો
 content-blocking-reload-tabs-button =
     .label = બધા ટૅબ્સ ફરીથી લોડ કરો

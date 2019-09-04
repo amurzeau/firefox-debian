@@ -29,6 +29,26 @@ onboarding-join-form-email-error = Eikotevẽ ñandutiveve oikóva
 onboarding-join-form-legal = Eku’ejeývo, emoneĩma umi <a data-l10n-name="terms">Mba'epytyvõrã ñemboguata</a> ha <a data-l10n-name="privacy">Temiñemi purureko</a>.
 onboarding-join-form-continue = Eku'ejey
 onboarding-start-browsing-button-label = Eñepyrũ eikundaha
+onboarding-cards-dismiss =
+    .title = Emboyke
+    .aria-label = Emboyke
+
+## Firefox Sync modal dialog strings.
+
+onboarding-sync-welcome-header = Egueraha { -brand-product-name } nendive
+onboarding-sync-welcome-content = Eike nde techaukaha, tembiasakue, ñe’ẽñemi ha ambueve ñemoĩporã opaite nde mba’e’okápe.
+onboarding-sync-welcome-learn-more-link = Eikuaave Firefox Accounts rehegua
+onboarding-sync-form-invalid-input = Eikotevẽ peteĩ ñanduti veve oikóva
+onboarding-sync-legal-notice = Ejapóva, emoneĩ ko'ã <a data-l10n-name="terms">Mba'epytyvõrã ñemboguata</a> ha <a data-l10n-name="privacy">Ñemigua purureko</a>.
+onboarding-sync-form-input =
+    .placeholder = Ñandutiveve
+onboarding-sync-form-continue-button = Eku'ejey
+onboarding-sync-form-skip-login-button = Ehejánte kóva
+
+## This is part of the line "Enter your email to continue to Firefox Sync"
+
+onboarding-sync-form-header = Emoinge ne ñandutiveve
+onboarding-sync-form-sub-header = eike hag̃ua { -sync-brand-name }-pe.
 
 ## These are individual benefit messages shown with an image, title and
 ## description.

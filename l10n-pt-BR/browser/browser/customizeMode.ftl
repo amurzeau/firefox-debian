@@ -4,7 +4,7 @@
 
 customize-mode-restore-defaults =
     .label = Restaurar padrão
-customize-mode-menu-and-toolbars-header = Arraste seus itens favoritos para sua barra de ferramentas ou ao menu.
+customize-mode-menu-and-toolbars-header = Arraste seus itens preferidos para a barra de ferramentas ou para o menu expandido.
 customize-mode-overflow-list-title = Menu expandido
 customize-mode-uidensity =
     .label = Densidade
@@ -43,3 +43,5 @@ customize-mode-undo-cmd =
     .label = Desfazer
 customize-mode-lwthemes-my-themes =
     .value = Meus temas
+customize-mode-touchbar-cmd =
+    .label = Personalizar barra de toque…

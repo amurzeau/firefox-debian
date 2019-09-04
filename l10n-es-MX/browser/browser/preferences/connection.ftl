@@ -54,6 +54,8 @@ connection-proxy-socks5 =
 connection-proxy-noproxy = Sin proxy para
     .accesskey = n
 connection-proxy-noproxy-desc = Ejemplo: .mozilla.org, .net.nz, 192.168.1.0/24
+# Do not translate localhost, 127.0.0.1 and ::1.
+connection-proxy-noproxy-localhost-desc = Las conexiones a localhost, 127.0.0.1 y ::1 nunca se canalizan por proxy.
 connection-proxy-autotype =
     .label = URL de configuración automática de proxy
     .accesskey = A
@@ -70,16 +72,15 @@ connection-proxy-socks-remote-dns =
 connection-dns-over-https =
     .label = Habilitar DNS por HTTPS
     .accesskey = H
-connection-dns-over-https-url = URL
-    .accesskey = U
-    .tooltiptext = URL para resolver DNS por HTTPS
+connection-dns-over-https-url-resolver = Usar Proveedor
+    .accesskey = P
 # Variables:
-#   $url (String) - URL for the DNS over HTTPS provider
-connection-dns-over-https-url-default =
-    .label = Usar por defecto ({ $url })
-    .accesskey = a
-    .tooltiptext = Use la URL por defecto para resolver los DNS sobre HTTPS
+#   $name (String) - Display name or URL for the DNS over HTTPS provider
+connection-dns-over-https-url-item-default =
+    .label = { $name } (Predeterminado)
+    .tooltiptext = Usa la URL predeterminada para resolver DNS sobre HTTPS
 connection-dns-over-https-url-custom =
     .label = Personalizar
     .accesskey = e
     .tooltiptext = Ingrese su URL preferida para resolver los DNS sobre HTTPS
+connection-dns-over-https-custom-label = Personalizado

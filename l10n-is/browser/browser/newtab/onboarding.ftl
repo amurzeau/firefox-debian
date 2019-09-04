@@ -28,6 +28,26 @@ onboarding-join-form-email =
 onboarding-join-form-email-error = Nauðsynlegt að setja inn tölvupóstfang sem er gilt
 onboarding-join-form-continue = Halda áfram
 onboarding-start-browsing-button-label = Fara að vafra
+onboarding-cards-dismiss =
+    .title = Hafna
+    .aria-label = Hafna
+
+## Firefox Sync modal dialog strings.
+
+onboarding-sync-welcome-header = Taktu { -brand-product-name } með þér
+onboarding-sync-welcome-content = Fáðu bókamerki, sögu, lykilorð og aðrar stillingar á öllum tækjunum þínum.
+onboarding-sync-welcome-learn-more-link = Frekari upplýsingar um Firefox reikninga
+onboarding-sync-form-invalid-input = Krafist er gilds netfangs
+onboarding-sync-legal-notice = Með því að halda áfram samþykkir þú <a data-l10n-name="terms">Skilmálar þjónustu</a> og <a data-l10n-name="privacy">Tilkynning um friðhelgi</a>.
+onboarding-sync-form-input =
+    .placeholder = Netfang
+onboarding-sync-form-continue-button = Áfram
+onboarding-sync-form-skip-login-button = Sleppa þessu skrefi
+
+## This is part of the line "Enter your email to continue to Firefox Sync"
+
+onboarding-sync-form-header = Sláðu inn netfangið þitt
+onboarding-sync-form-sub-header = fara áfram á { -sync-brand-name }
 
 ## These are individual benefit messages shown with an image, title and
 ## description.
@@ -35,6 +55,7 @@ onboarding-start-browsing-button-label = Fara að vafra
 onboarding-benefit-products-title = Gagnlegar vörur
 onboarding-benefit-products-text = Afgreiddu verkefni með tólum sem virða friðhelgi einkalífsins á öllum þínum tækjum.
 onboarding-benefit-knowledge-title = Hagnýt þekking
+onboarding-benefit-knowledge-text = Lærðu allt sem er nauðsynlegt til að verða vitrari og öruggari á netinu.
 onboarding-benefit-privacy-title = Sönn persónuvernd
 
 ## These strings belong to the individual onboarding messages.
@@ -55,7 +76,12 @@ onboarding-ghostery-text = Vafra hraðar, betur eða á öruggari máta með vi�
 # Note: "Sync" in this case is a generic verb, as in "to synchronize"
 onboarding-fxa-title = Samstilla
 onboarding-fxa-text = Skráðu þig fyrir { -fxaccount-brand-name } og samstilltu bókamerki, lykilorð og opna flipa hvar sem þú notar { -brand-short-name }.
+onboarding-tracking-protection-title2 = Vörn gegn því að fylgst sé með þér
 onboarding-tracking-protection-button2 = Hvernig þetta virkar
+onboarding-data-sync-title = Taktu stillingarnar þínar með þér
+# "Sync" is short for synchronize.
+onboarding-data-sync-text2 = Samstilla bókamerkin og lykilorðin þín, hvar sem þú notar { -brand-product-name }.
+onboarding-data-sync-button2 = Skrá sig inn í { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Vertu á verði gegn gagnalekum
 onboarding-firefox-monitor-button = Skráðu þig fyrir tilkynningum
 onboarding-browse-privately-title = Huliðsvöfrun

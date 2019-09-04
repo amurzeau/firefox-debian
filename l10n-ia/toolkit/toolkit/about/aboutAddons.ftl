@@ -155,9 +155,6 @@ legacy-extensions =
     .value = Extensiones obsolete
 legacy-extensions-description = Iste extensiones non satisface le standards actual de { -brand-short-name } e ha essite disactivate. <label data-l10n-name="legacy-learn-more">Saper lo que cambiava al additivos</label>
 private-browsing-description2 = { -brand-short-name } cambia le functionamento del extensiones in Navigation private. Omne nove extensiones que tu adde a { -brand-short-name } normalmente non se executara in le Fenestras private. Si tu non lo permitte in le configuration, le extension non functionara in Navigation private e non habera accesso a tu activitates online illac. Nos ha facite iste cambio pro mantener private tu navigation private. <label data-l10n-name="private-browsing-learn-more">Discoperi como configurar le extensiones.</label>
-extensions-view-discover =
-    .name = Obtener additivos
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-discopane =
     .name = Recommendationes
     .tooltiptext = { extensions-view-discopane.name }
@@ -253,6 +250,12 @@ shortcuts-modifier-other = Include Ctrl o Alt
 shortcuts-invalid = Combination non valide
 shortcuts-letter = Scribe un littera
 shortcuts-system = Impossibile supplantar un via breve de { -brand-short-name }
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Via breve de claviero duplicate
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } es usate como un via breve in plus de un caso. Le vias breve de claviero duplicate pote causar comportamento inaxpectate.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -307,6 +310,16 @@ release-notes-addon-button = Notas pro iste version
 permissions-addon-button = Permissos
 addons-enabled-heading = Activate
 addons-disabled-heading = Disactivate
+extension-enabled-heading = Activate
+extension-disabled-heading = Disactivate
+theme-enabled-heading = Activate
+theme-disabled-heading = Disactivate
+plugin-enabled-heading = Activate
+plugin-disabled-heading = Disactivate
+dictionary-enabled-heading = Activate
+dictionary-disabled-heading = Disactivate
+locale-enabled-heading = Activate
+locale-disabled-heading = Disactivate
 ask-to-activate-button = Demandar pro activar
 always-activate-button = Sempre activar
 never-activate-button = Non activar jammais
@@ -362,3 +375,8 @@ recent-updates-heading = Actualisationes recente
 release-notes-loading = Cargamento…
 release-notes-error = Pardono, ma il habeva un error cargante le notas de revision
 addon-permissions-empty = Iste extension non require ulle permission
+recommended-extensions-heading = Extensiones recommendate
+recommended-themes-heading = Themas recommendate
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Senti te creative? <a data-l10n-name="link">Crea tu proprie thema con Firefox Color.</a>

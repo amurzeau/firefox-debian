@@ -29,11 +29,6 @@ search-input-box =
             [windows] Sök i inställningar
            *[other] Sök i inställningar
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Ditt företag har inaktiverat möjligheten att ändra vissa inställningar.
-       *[other] Ditt företag har inaktiverat möjligheten att ändra vissa inställningar.
-    }
 managed-notice = Din webbläsare hanteras av din organisation.
 pane-general-title = Allmänt
 category-general =
@@ -348,7 +343,7 @@ browsing-cfr-recommendations =
     .label = Rekommendera tillägg när du surfar
     .accesskey = R
 browsing-cfr-features =
-    .label = Rekommendera funktioner medans du surfar
+    .label = Rekommendera funktioner medan du surfar
     .accesskey = f
 browsing-cfr-recommendations-learn-more = Läs mer
 
@@ -397,6 +392,49 @@ use-current-pages =
 choose-bookmark =
     .label = Använd bokmärke…
     .accesskey = d
+
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Innehåll Firefox-startskärm
+home-prefs-content-description = Välj vilket innehåll du vill ha på din startskärm i Firefox.
+home-prefs-content-discovery-description = Content Discovery på Firefox startsida låter dig upptäcka högkvalitativa, relevanta artiklar från hela webben.
+home-prefs-search-header =
+    .label = Webbsök
+home-prefs-topsites-header =
+    .label = Mest besökta
+home-prefs-topsites-description = Sidorna du besöker mest
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Rekommenderas av { $provider }
+home-prefs-recommended-by-description = Bra innehåll från hela webben, anpassat för dig
+home-prefs-recommended-by-learn-more = Hur fungerar det
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Sponsrade nyheter
+home-prefs-highlights-header =
+    .label = Höjdpunkter
+home-prefs-highlights-description = Ett urval av sidor du har sparat eller besökt
+home-prefs-highlights-option-visited-pages =
+    .label = Besökta sidor
+home-prefs-highlights-options-bookmarks =
+    .label = Bokmärken
+home-prefs-highlights-option-most-recent-download =
+    .label = Senaste nedladdning
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Sidor sparade till { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Kort information
+home-prefs-snippets-description = Uppdateringar från { -vendor-short-name } och { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } rad
+           *[other] { $num } rader
+        }
 
 ## Search Section
 
@@ -562,6 +600,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Föreslå och skapa starka lösenord
     .accesskey = r
+forms-fill-logins-and-passwords =
+    .label = Autofyll inloggningar och lösenord
+    .accesskey = A
 forms-saved-logins =
     .label = Sparade inloggningar…
     .accesskey = l
@@ -638,6 +679,10 @@ sitedata-block-desc = Typ blockerad
     .accesskey = T
 sitedata-option-block-trackers =
     .label = Tredjeparts trackers
+sitedata-option-block-cross-site-trackers =
+    .label = Globala trackers
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Globala och sociala medie-trackers
 sitedata-option-block-unvisited =
     .label = Kakor från obesökta webbplatser
 sitedata-option-block-all-third-party =
@@ -672,7 +717,7 @@ addressbar-suggestions-settings = Ändra inställningar för förslag från sök
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Innehållsblockering
-content-blocking-description = Blockera innehåll från tredje part som spårar dig på webben. Kontrollera hur mycket av din onlineaktivitet som lagras och delas mellan webbplatser.
+content-blocking-enhanced-tracking-protection = Förbättrat spårningsskydd
 content-blocking-section-description = Skydda din integritet medan du surfar. Blockera osynligt innehåll som spårar de webbplatser du besöker och profilerar dig. Att blockera något av detta innehåll kan göra att sidor laddas snabbare.
 content-blocking-learn-more = Läs mer
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -686,22 +731,29 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Anpassad
     .accesskey = A
-content-blocking-standard-description = Blockera endast kända trackers i privata fönster.
 content-blocking-standard-desc = Balanserad för skydd och prestanda. Tillåter vissa trackers så att webbplatser fungerar korrekt.
-content-blocking-strict-desc = Blockerar alla trackers { -brand-short-name } detekterar. Det kan begränsa funktionaliteten hos vissa webbplatser.
 content-blocking-strict-description = Starkare skydd, kan orsaka fel på vissa webbplatser.
 content-blocking-custom-desc = Välj vad du vill blockera.
 content-blocking-private-trackers = Kända trackers endast i privata fönster
 content-blocking-third-party-cookies = Spårningskakor från tredje part
+content-blocking-etp-standard-desc = Balanserad för skydd och prestanda. Sidor laddas normalt.
+content-blocking-etp-strict-desc = Starkare skydd, men kan leda till att vissa webbplatser eller innehåll inte fungerar.
+content-blocking-etp-custom-desc = Välj vilka trackers och skript som ska blockeras.
+content-blocking-private-windows = Spåra innehåll i privat fönster
+content-blocking-cross-site-tracking-cookies = Globala spårningskakor
+content-blocking-social-media-trackers = Sociala media-trackers
 content-blocking-all-cookies = Alla kakor
 content-blocking-unvisited-cookies = Kakor från obesökta webbplatser
 content-blocking-all-windows-trackers = Kända trackers i alla fönster
+content-blocking-all-windows-tracking-content = Spåra innehåll i alla fönster
 content-blocking-all-third-party-cookies = Alla kakor från tredje part
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Se upp!
 content-blocking-warning-description = Att blockera innehåll kan begränsa funktionaliteten hos vissa webbplatser. Det är enkelt att inaktivera blockering för webbplatser du litar på.
 content-blocking-learn-how = Lär dig hur
+content-blocking-etp-warning-description = Blockering av trackers kan påverka funktionaliteten på vissa webbplatser. Ladda om en sida med trackers för att ladda allt innehåll.
+content-blocking-warning-learn-how = Lär dig hur
 content-blocking-reload-description = Du måste ladda om dina flikar för att kunna tillämpa ändringarna.
 content-blocking-reload-tabs-button =
     .label = Ladda om alla flikar
@@ -709,6 +761,9 @@ content-blocking-reload-tabs-button =
 content-blocking-trackers-label =
     .label = Trackers
     .accesskey = T
+content-blocking-tracking-content-label =
+    .label = Spårningsinnehåll
+    .accesskey = i
 content-blocking-tracking-protection-option-all-windows =
     .label = I alla fönster
     .accesskey = a

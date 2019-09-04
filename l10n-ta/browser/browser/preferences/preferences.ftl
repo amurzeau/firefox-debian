@@ -27,11 +27,6 @@ search-input-box =
             [windows] தேர்வுகளில் கண்டுபிடி
            *[other] முன்னுரிமைகளில் கண்டுபிடி
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] சில விருப்பங்களை மாற்றும் ஆற்றலை உங்கள் நிறுவனம் முடக்கியுள்ளது.
-       *[other] சில முன்னுரிமைகளை மாற்றும் ஆற்றலை உங்கள் நிறுவனம் முடக்கியுள்ளது.
-    }
 pane-general-title = பொது
 category-general =
     .tooltiptext = { pane-general-title }
@@ -44,10 +39,6 @@ category-search =
 pane-privacy-title = தனியுரிமை & பாதுகாப்பு
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = பயர்பாக்ஸ் கணக்கு
-category-sync =
-    .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } ஆதரவு
 focus-search =
     .key = f
@@ -197,6 +188,10 @@ choose-language-description = பக்கங்களை காட்ட உங
 choose-button =
     .label = தேர்ந்தெடு...
     .accesskey = o
+manage-browser-languages-button =
+    .label = மாற்று வழிகளை அமை…
+    .accesskey = i
+confirm-browser-language-change-button = செயற்படுத்தி மீட்தொடங்கு
 translate-web-pages =
     .label = வலை உள்ளடக்கத்தை மொழிபெயர்
     .accesskey = T
@@ -268,6 +263,13 @@ update-application-use-service =
 update-enable-search-update =
     .label = தேடுபொறிகளைத் தானாகப் புதுப்பிக்கும்
     .accesskey = e
+update-pref-write-failure-title = தோல்வியை எழுது
+update-setting-write-failure-title = புதுப்பிப்பு விருப்பங்களைச் சேமிப்பதில் பிழை
+update-in-progress-title = புதுப்பிப்பு செயலிலுள்ளது
+update-in-progress-ok-button = & நிராகரி
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &தொடரவும்
 
 ## General Section - Performance
 
@@ -354,6 +356,45 @@ use-current-pages =
 choose-bookmark =
     .label = புத்தககுறியை பயன்படுத்தவும்...
     .accesskey = ப
+
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Firefox முகப்பு உள்ளடக்கம்
+home-prefs-content-description = உங்கள் பயர்பாக்ஸ் முகப்புத் திரையில் என்ன உள்ளடக்கம் வேண்டுமென்று தேர்ந்தெடு.
+home-prefs-content-discovery-description = பயர்பாஃசு முகப்பில் உள்ள உள்ளடக்க கண்டுபிடிப்பு, வலைத்தளங்களில் உள்ள உயர் தர, தொடர்புடைய கட்டுரைகளைக் கண்டறிய அனுமதிக்கிறது.
+home-prefs-search-header =
+    .label = வலை தேடல்
+home-prefs-topsites-header =
+    .label = சிறந்த தளங்கள்
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = { $provider } என்பவரால் பரிந்துரைக்கப்பட்டது
+home-prefs-recommended-by-description = இணையத்திலிருந்து சிறந்த உள்ளடக்கங்கள், உங்களுக்காக தனிப்பயனாக்கப்பட்டவை
+home-prefs-recommended-by-learn-more = இது எப்படி செயல்படுகிறது
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = விளம்பரக் கதைகள்
+home-prefs-highlights-header =
+    .label = மிளிர்ப்புகள்
+home-prefs-highlights-option-visited-pages =
+    .label = பார்வையிட்டத் தளம்
+home-prefs-highlights-options-bookmarks =
+    .label = புத்தகக்குறிகள்
+home-prefs-highlights-option-most-recent-download =
+    .label = அண்மைய பதிவிறக்கம்
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = துணுக்குகள்
+home-prefs-snippets-description = { -vendor-short-name } மற்றும் { -brand-product-name } இலிருந்து புதுப்பிப்புகள்
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } வரிசை
+           *[other] { $num } வரிசைகள்
+        }
 
 ## Search Section
 
@@ -497,8 +538,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = சேமி
     .accesskey = v
-sync-mobilepromo-single = மற்றொரு சாதனத்தை இணை
-sync-mobilepromo-multi = சாதனங்களை நிர்வகி
 sync-tos-link = சேவை விதிமுறைகள்
 sync-fxa-privacy-notice = தனியுரிம கொள்கை
 
@@ -574,6 +613,10 @@ sitedata-total-size-calculating = தள தரவு மற்றும் இ�
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = நீங்கள் சேமித்த நினைவிகள், தள தரவு மற்றும் இடையகத்தின் தற்போதைய பயனளவு வன்தட்டில் { $value }{ $unit } அளவு பயன்படுத்தியுள்ளது.
 sitedata-learn-more = மேலும் அறிய
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = வகை தடுக்கப்பட்டது
+    .accesskey = T
 sitedata-clear =
     .label = தரவினை அழி
     .accesskey = l
@@ -598,6 +641,18 @@ addressbar-suggestions-settings = தேடுபொறி பரிந்து
 
 ## Privacy Section - Content Blocking
 
+content-blocking-learn-more = மேலும் அறிய
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = நிலையான
+    .accesskey = d
+content-blocking-setting-strict =
+    .label = கண்டிப்பாக
+    .accesskey = r
+content-blocking-setting-custom =
+    .label = தனிப்பயன்
+    .accesskey = C
 
 ## Privacy Section - Tracking
 
@@ -625,23 +680,12 @@ permissions-notification-link = மேலும் அறிய
 permissions-notification-pause =
     .label = { -brand-short-name } மறுதொடங்கும் வரை அறிவிப்புகளை இடைநிறுத்து
     .accesskey = n
-permissions-block-autoplay-media =
-    .label = ஊடகங்ளை சத்தத்துடன் தானாக இயக்கும் தளங்களைத் தடு
-    .accesskey = B
-permissions-block-autoplay-media-menu = தானாக சத்தங்களை எழுப்பும் தளங்களுக்காக
 permissions-block-autoplay-media2 =
     .label = வலைத்தளங்களில் தானாக ஒலி இயக்குவதைத் தடு
     .accesskey = த
 permissions-block-autoplay-media-exceptions =
     .label = விதிவிலக்குகள்...
     .accesskey = E
-autoplay-option-ask =
-    .label = எப்போதும் கேள்
-autoplay-option-allow =
-    .label = தானியக்கத்தை அனுமதி
-autoplay-option-dont =
-    .label = தானியக்கம் வேண்டாம்
-permissions-autoplay-link = மேலும் அறிய
 permissions-block-popups =
     .label = பாப் அப் (துள்ளும்) சாளரங்களை தடுக்கவும்
     .accesskey = ப
@@ -674,10 +718,6 @@ collection-studies-link = { -brand-short-name } பாடத்திட்ட�
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = இந்தக் கட்டமைப்பிற்கு தரவு அறிக்கை முடக்கப்பட்டுள்ளது
-collection-browser-errors =
-    .label = { -brand-short-name } உலாவி பிழை அறிக்கைகளை அனுப்ப அனுமதி ({ -vendor-short-name } (பிழை செய்திகள் உட்பட)
-    .accesskey = b
-collection-browser-errors-link = மேலும் அறிய
 collection-backlogged-crash-reports =
     .label = { -brand-short-name } உங்கள் சார்பாக பின்புல சிதைவு அறிக்கையை அனுப்ப அனுமதி
     .accesskey = c

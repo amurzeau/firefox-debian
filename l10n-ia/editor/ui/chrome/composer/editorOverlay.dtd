@@ -11,7 +11,14 @@
 <!ENTITY pasteNoFormatting.accesskey "n">
 <!ENTITY pasteAs.label "Collar como">
 <!ENTITY pasteAs.accesskey "o">
+<!ENTITY pasteAsQuotationCmd.label "Collar como citation">
+<!ENTITY pasteAsQuotationCmd.accesskey "C">
+<!ENTITY pasteAsQuotationCmd.key "i">
 <!ENTITY findBarCmd.label "Trovar…">
+<!ENTITY findReplaceCmd.label "Trovar e reimplaciar…">
+<!ENTITY enableInlineSpellChecker.label "Corrector orthographic durante que tu scribe">
+<!ENTITY checkSpellingCmd2.label "Verificar le orthographia…">
+<!ENTITY checkSpellingCmd2.accesskey "r">
 
 <!-- Insert menu items -->
 <!ENTITY insertMenu.label "Inserer">
@@ -28,14 +35,22 @@
 <!ENTITY insertHTMLCmd.accesskey "H">
 <!ENTITY insertMathCmd.label "Math…">
 <!ENTITY insertMathCmd.accesskey "M">
+<!ENTITY insertCharsCmd.label "Characteres e symbolos…">
+<!ENTITY insertCharsCmd.accesskey "C">
 
 <!-- Used just in context popup. -->
 <!ENTITY createLinkCmd.label "Crear ligamine…">
 <!ENTITY createLinkCmd.accesskey "g">
 
 <!-- Font Face SubMenu -->
+<!ENTITY FontFaceSelect.tooltip "Eliger un typo de character">
 <!ENTITY fontfaceMenu.label "Typo de character">
 <!ENTITY fontfaceMenu.accesskey "C">
+<!ENTITY fontVarWidth.label "Largessa variabile">
+<!ENTITY fontVarWidth.accesskey "v">
+<!ENTITY fontFixedWidth.label "Largessa fixe">
+<!ENTITY fontFixedWidth.accesskey "x">
+<!ENTITY fontFixedWidth.key "T">
 <!ENTITY fontTimes.label "Tempores">
 <!ENTITY fontTimes.accesskey "T">
 
@@ -102,6 +117,10 @@
 <!ENTITY formatlistMenu.accesskey "L">
 <!ENTITY noneCmd.label "Nulle">
 <!ENTITY noneCmd.accesskey "N">
+<!ENTITY listNumberedCmd.label "Numerate">
+<!ENTITY listNumberedCmd.accesskey "m">
+<!ENTITY listTermCmd.label "Termino">
+<!ENTITY listTermCmd.accesskey "T">
 <!ENTITY listDefinitionCmd.label "Definition">
 <!ENTITY listDefinitionCmd.accesskey "D">
 
@@ -139,6 +158,8 @@
 <!ENTITY tableInsertMenu.accesskey "I">
 <!ENTITY tableTable.label "Tabella">
 <!ENTITY tableTable.accesskey "T">
+<!ENTITY tableRows.label "Riga(s)">
+<!ENTITY tableRow.accesskey "R">
 <!ENTITY tableColumn.label "Columna">
 <!ENTITY tableColumns.label "Columna(s)">
 <!ENTITY tableColumn.accesskey "o">

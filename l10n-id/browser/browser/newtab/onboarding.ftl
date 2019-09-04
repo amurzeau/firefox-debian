@@ -29,6 +29,26 @@ onboarding-join-form-email-error = Surel harus valid
 onboarding-join-form-legal = Dengan melanjutkan, berarti Anda setuju dengan <a data-l10n-name="terms">Ketentuan Layanan</a> dan <a data-l10n-name="privacy">Pernyataan Privasi</a>.
 onboarding-join-form-continue = Lanjut
 onboarding-start-browsing-button-label = Mulai Menjelajah
+onboarding-cards-dismiss =
+    .title = Tutup
+    .aria-label = Tutup
+
+## Firefox Sync modal dialog strings.
+
+onboarding-sync-welcome-header = Bawa { -brand-product-name } bersama Anda
+onboarding-sync-welcome-content = Dapatkan markah, riwayat, sandi, dan setelan lainnya di semua peranti Anda.
+onboarding-sync-welcome-learn-more-link = Pelajari selengkapnya tentang Firefox Accounts
+onboarding-sync-form-invalid-input = Surel harus valid
+onboarding-sync-legal-notice = Dengan melanjutkan, Anda menyetujui <a data-l10n-name="terms">Ketentuan Layanan</a> dan <a data-l10n-name="privacy">Pernyataan Privasi</a>.
+onboarding-sync-form-input =
+    .placeholder = Surel
+onboarding-sync-form-continue-button = Lanjutkan
+onboarding-sync-form-skip-login-button = Lewati langkah ini
+
+## This is part of the line "Enter your email to continue to Firefox Sync"
+
+onboarding-sync-form-header = Masukkan surel Anda
+onboarding-sync-form-sub-header = Lanjutkan ke { -sync-brand-name }
 
 ## These are individual benefit messages shown with an image, title and
 ## description.

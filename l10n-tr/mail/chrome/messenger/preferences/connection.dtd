@@ -38,18 +38,19 @@
 <!ENTITY  noproxy.label                 "Vekil Sunucu Kullanma:">
 <!ENTITY  noproxy.accesskey             "n">
 <!ENTITY  noproxyExplain.label          "Örnek: .mozilla.org, .net.tr, 192.168.1.0/24">
+<!-- LOCALIZATION NOTE (noproxyLocalhostDesc.label): Do not translate
+  localhost, 127.0.0.1 and ::1.
+-->
+<!ENTITY  noproxyLocalhostDesc.label   "Localhost, 127.0.0.1 ve ::1 ile olan bağlantılar asla vekil sunucudan geçmez.">
 <!ENTITY  shareproxy.label              "Bu vekil sunucuyu bütün protokollerde kullan">
 <!ENTITY  shareproxy.accesskey          "v">
 <!ENTITY  autologinproxy.label          "Parola kayıtlıysa kimlik doğrulama isteme">
 <!ENTITY  autologinproxy.accesskey      "i">
-<!ENTITY  autologinproxy.tooltip        "Bu seçenek, hesap bilgilerini kaydettiğiniz vekil sunucularda sessizce oturum açar. Kimlik doğrulama başarısız olursa bilgileriniz sorulur.">
+<!ENTITY  autologinproxy.tooltip        "Bu seçenek, hesap bilgilerini kaydettiğiniz vekil sunucularda kimliğinizi sessizce doğrular. Kimlik doğrulama başarısız olursa bilgileriniz sorulur.">
 <!ENTITY  socksRemoteDNS.label          "SOCKS v5 kullanırken vekil sunucu DNS’i">
 <!ENTITY  socksRemoteDNS.accesskey      "d">
 <!ENTITY  dnsOverHttps.label            "HTTP üzerinden DNS’i etkinleştir">
 <!ENTITY  dnsOverHttps.accesskey        "D">
-<!ENTITY  dnsOverHttpsUrl.label         "URL">
-<!ENTITY  dnsOverHttpsUrl.accesskey     "R">
-<!ENTITY  dnsOverHttpsUrl.tooltip       "HTTPS üzerinden DNS çözümleme adresi">
 <!ENTITY  dnsOverHttpsUrlDefault.label     "Varsayılanı kullan">
 <!ENTITY  dnsOverHttpsUrlDefault.accesskey "l">
 <!ENTITY  dnsOverHttpsUrlDefault.tooltip   "DNS’i HTTPS üzerinden çözümlemek için varsayılan adresi kullan">

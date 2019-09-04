@@ -3,22 +3,29 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY autoconfigWizard2.title         "Eksistowace e-mejlowe konto konfigurować">
+
+<!ENTITY emailWizard.title               "Nastajće swoju eksistowacu e-mejlowu adresu">
+<!ENTITY emailWizard.caption             "Wašu tuchwilnu e-mejlowu adresu wužiwać">
 <!ENTITY name.label                      "Waše mjeno:">
 <!ENTITY name.accesskey                  "m">
 <!ENTITY name.placeholder                "Předmjeno Swójbne mjeno">
+<!ENTITY fullname.placeholder            "Waše dospołne mjeno">
 <!ENTITY name.text                       "Waše mjeno, kaž so druhim pokazuje">
+<!ENTITY name.error                      "Prošu zapodajće swoje mjeno">
 <!ENTITY email.label                     "E-mejlowa adresa:">
 <!ENTITY email.accesskey                 "E">
 <!-- LOCALIZATION NOTE(email.placeholder): Domain @example.com must stay in English -->
 <!ENTITY email2.placeholder              "wy@example.com">
+<!ENTITY email3.placeholder              "Waša e-mejlowa adresa">
 <!ENTITY email.text                      "Waša eksistowaca e-mejlowa adresa">
+<!ENTITY email.error                     "Njepłaćiwa e-mejlowa adsresa">
 <!ENTITY password.label                  "Hesło:">
 <!ENTITY password.accesskey              "H">
 <!ENTITY password.placeholder            "Hesło">
 <!ENTITY password.text                   "Opcionalny, budźe so jenož wužiwac, zo by wužiwarske mjeno přepruwowało">
+<!ENTITY password.toggle                 "Hesło pokazać/schować">
 <!ENTITY rememberPassword.label          "Hesło składować">
 <!ENTITY rememberPassword.accesskey      "s">
-
 <!ENTITY usernameEx.label                "Waše přizjewjenje:">
 <!ENTITY usernameEx.accesskey            "z">
 <!-- LOCALIZATION NOTE(usernameEx.placeholder): YOURDOMAIN refers to the Windows domain in ActiveDirectory. yourusername refers to the user's account name in Windows. -->
@@ -26,15 +33,21 @@
 <!-- LOCALIZATION NOTE(usernameEx.text): Domain refers to the Windows domain in ActiveDirectory. We mean the user's login in Windows at the local corporate network. -->
 <!ENTITY usernameEx.text                 "Domenowe přizjewjenje">
 
+<!ENTITY protocol.label                  "Protokol:">
 <!ENTITY imapLong.label                  "IMAP (zdalene rjadowaki)">
 <!ENTITY pop3Long.label                  "POP3 (wašu e-mejl na wašim ličaku wostajić)">
 
 <!ENTITY incoming.label                  "Dochadźace:">
+<!ENTITY incomingColumn.label            "Dochadźace">
 <!ENTITY outgoing.label                  "Wuchadźace:">
+<!ENTITY outgoingColumn.label            "Wuchadźace">
 <!ENTITY username.label                  "Wužiwarske mjeno:">
 <!ENTITY hostname.label                  "Mjeno serwera">
 <!ENTITY port.label                      "Port">
 <!ENTITY ssl.label                       "SSL">
+<!ENTITY serverRow.label                 "Serwer:">
+<!ENTITY portRow.label                   "Port:">
+<!ENTITY sslRow.label                    "SSL:">
 <!ENTITY auth.label                      "Awtentifikacija">
 <!ENTITY imap.label                      "IMAP">
 <!ENTITY pop3.label                      "POP3">
@@ -60,15 +73,21 @@
 <!ENTITY stop.label                      "Stój">
 <!ENTITY stop.accesskey                  "S">
 <!-- LOCALIZATION NOTE (half-manual-test.label): This is the text that is
-     displayed on the button in manual edit mode which will re-guess
+     displayed on the button in manual config mode which will re-guess
      the account configuration, taking into account the settings that
      the user has manually changed. -->
 <!ENTITY half-manual-test.label          "Znowa testować">
 <!ENTITY half-manual-test.accesskey      "t">
 <!ENTITY manual-edit.label               "Manuelna konfiguracija">
 <!ENTITY manual-edit.accesskey           "M">
+<!ENTITY manual-config.label             "Manuelnje konfigurować…">
+<!ENTITY manual-config.accesskey         "M">
 <!ENTITY open-provisioner.label          "Wobstarajće sej nowu e-mejlowu adresu…">
 <!ENTITY open-provisioner.accesskey      "s">
+
+
+<!ENTITY get-help.label                  "Pomoc sej wobstarać">
+<!ENTITY get-help.accesskey              "P">
 
 
 <!ENTITY warning.label                   "Warnowanje!">

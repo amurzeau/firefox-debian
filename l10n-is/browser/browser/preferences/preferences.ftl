@@ -29,11 +29,6 @@ search-input-box =
             [windows] Leita í stillingum
            *[other] Leita í stillingum
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Fyrirtækið þitt hefur lokað á að breyta sumum stillingum.
-       *[other] Fyrirtækið þitt hefur lokað á að breyta sumum stillingum.
-    }
 managed-notice = Vafra þínum er stjórnað af skipulagsheild þinni.
 pane-general-title = Almennt
 category-general =
@@ -390,6 +385,48 @@ choose-bookmark =
     .label = Nota bókamerki…
     .accesskey = b
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Upphafssíða Firefox
+home-prefs-content-description = Veldu hvaða efni þú vilt á Firefox heimaskjánum þínum.
+home-prefs-search-header =
+    .label = Vefleit
+home-prefs-topsites-header =
+    .label = Efstu vefsvæði
+home-prefs-topsites-description = Mest heimsóttu vefsíður
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Með þessu mælir { $provider }
+home-prefs-recommended-by-description = Frábært efni víðsvegar að af vefnum, sérsniðið fyrir þig
+home-prefs-recommended-by-learn-more = Hvernig það virkar
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Kostaðar sögur
+home-prefs-highlights-header =
+    .label = Hápunktar
+home-prefs-highlights-description = Úrval af vefsvæðum sem þú hefur vistað eða heimsótt
+home-prefs-highlights-option-visited-pages =
+    .label = Heimsóttar síður
+home-prefs-highlights-options-bookmarks =
+    .label = Bókamerki
+home-prefs-highlights-option-most-recent-download =
+    .label = Síðasta niðurhal
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Síður vistaðar í { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Bútar
+home-prefs-snippets-description = Uppfærslur frá { -vendor-short-name } og { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } röð
+           *[other] { $num } raðir
+        }
+
 ## Search Section
 
 search-bar-header = Leitarslá
@@ -661,7 +698,6 @@ addressbar-suggestions-settings = Breyta stillingum fyrir ábendingar leitarvél
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Blokkun efnis
-content-blocking-description = Blokka efni frá þriðja aðila sem rekur feril þinn um netið. Stjórnaðu hversu mikið af netvirkni þinni er geymd og deilt á milli vefsíðna.
 content-blocking-learn-more = Læra meira
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -674,9 +710,7 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Sérsniðið
     .accesskey = C
-content-blocking-standard-description = Blokka einungis þekkta rekjara í huliðsgluggum.
 content-blocking-standard-desc = Jafnvægi á vernd og vinnslu. Leyfir suma rekjara svo vefsíður virki rétt.
-content-blocking-strict-desc = Blokka alla rekjara sem { -brand-short-name } uppgötvar. Getur valdið því að sumar síður hrynji.
 content-blocking-custom-desc = Velja hvað skal blokka.
 content-blocking-private-trackers = Þekktir rekjarar einungis í huliðsglugga.
 content-blocking-third-party-cookies = Vefkökur frá þriðja aðila
@@ -684,7 +718,8 @@ content-blocking-all-cookies = Allar vefkökur
 content-blocking-unvisited-cookies = Vefkökur frá óheimsóttum vefsíðum
 content-blocking-all-windows-trackers = Þekktir rekjarar í öllum gluggum
 content-blocking-all-third-party-cookies = Allar vefkökur þriðja aðila
-content-blocking-cryptominers = Rafnám
+content-blocking-cryptominers = Rafmynt grafarar
+content-blocking-fingerprinters = Fingraför
 content-blocking-warning-title = Gættu þín!
 content-blocking-learn-how = Læra hvernig
 content-blocking-reload-tabs-button =
@@ -707,8 +742,13 @@ content-blocking-expand-section =
     .tooltiptext = Nánari upplýsingar
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
-    .label = Rafnám
-    .accesskey = y
+    .label = Rafmynt grafarar
+    .accesskey = R
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+content-blocking-fingerprinters-label =
+    .label = Fingraför
+    .accesskey = F
 
 ## Privacy Section - Tracking
 

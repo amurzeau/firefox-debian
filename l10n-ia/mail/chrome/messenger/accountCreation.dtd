@@ -2,43 +2,96 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
+
 <!ENTITY name.label                      "Tu nomine:">
 <!ENTITY name.accesskey                  "n">
+<!ENTITY fullname.placeholder            "Tu nomine integre">
 <!ENTITY email.label                     "Adresse email:">
 <!ENTITY email.accesskey                 "e">
 <!-- LOCALIZATION NOTE(email.placeholder): Domain @example.com must stay in English -->
 <!ENTITY email2.placeholder              "you@example.com">
+<!ENTITY email3.placeholder              "Tu adresse email">
+<!ENTITY email.text                      "Tu adresse email existente">
+<!ENTITY email.error                     "Adresse email non valide">
+<!ENTITY password.label                  "Contrasigno:">
+<!ENTITY password.accesskey              "C">
+<!ENTITY password.placeholder            "Contrasigno">
+<!ENTITY rememberPassword.label          "Rememorar le contrasigno">
+<!ENTITY rememberPassword.accesskey      "m">
+<!ENTITY usernameEx.label                "Tu credential:">
+<!ENTITY usernameEx.accesskey            "c">
 <!-- LOCALIZATION NOTE(usernameEx.placeholder): YOURDOMAIN refers to the Windows domain in ActiveDirectory. yourusername refers to the user's account name in Windows. -->
 <!-- LOCALIZATION NOTE(usernameEx.text): Domain refers to the Windows domain in ActiveDirectory. We mean the user's login in Windows at the local corporate network. -->
+<!ENTITY usernameEx.text                 "Accesso al dominio">
 
+<!ENTITY protocol.label                  "Protocollo:">
 
+<!ENTITY incoming.label                  "In entrata:">
+<!ENTITY incomingColumn.label            "In entrata">
 <!ENTITY outgoing.label                  "In exito:">
+<!ENTITY outgoingColumn.label            "In exito">
+<!ENTITY username.label                  "Nomine del usator:">
+<!ENTITY port.label                      "Porta">
+<!ENTITY ssl.label                       "SSL">
+<!ENTITY serverRow.label                 "Servitor:">
+<!ENTITY portRow.label                   "Porta:">
+<!ENTITY sslRow.label                    "SSL:">
+<!ENTITY auth.label                      "Authentication">
+<!ENTITY imap.label                      "IMAP">
+<!ENTITY pop3.label                      "POP3">
 <!-- LOCALIZATION NOTE(exchange.label): Do not translate Exchange, it is a product name. -->
+<!ENTITY smtp.label                      "SMTP">
+<!ENTITY autodetect.label                "Detectar automaticamente">
 <!-- LOCALIZATION NOTE(noEncryption.label): Neither SSL/TLS nor STARTTLS.
      Transmission of emails in cleartext over the Internet. -->
+<!ENTITY noEncryption.label              "Nulle">
+<!ENTITY starttls.label                  "STARTTLS">
+<!ENTITY sslTls.label                    "SSL/TLS">
 
 <!-- LOCALIZATION NOTE(exchange-hostname.label): Do not translate Exchange, it is a product name. -->
+<!ENTITY exchange-hostname.label         "Servitor Exchange:">
 
+<!ENTITY cancel.label                    "Cancellar">
+<!ENTITY cancel.accesskey                "a">
+<!ENTITY continue.label                  "Continuar">
+<!ENTITY continue.accesskey              "C">
+<!ENTITY stop.label                      "Cessar">
+<!ENTITY stop.accesskey                  "C">
 <!-- LOCALIZATION NOTE (half-manual-test.label): This is the text that is
-     displayed on the button in manual edit mode which will re-guess
+     displayed on the button in manual config mode which will re-guess
      the account configuration, taking into account the settings that
      the user has manually changed. -->
+<!ENTITY manual-edit.label               "Configuration manual">
+<!ENTITY manual-edit.accesskey           "M">
+<!ENTITY manual-config.label             "Configura manualmente…">
+<!ENTITY manual-config.accesskey         "M">
 
 
+<!ENTITY get-help.label                  "Obtener auxilio">
+<!ENTITY get-help.accesskey              "A">
+
+
+<!ENTITY warning.label                   "Advertentia!">
+<!ENTITY incomingSettings.label          "Parametros in arrivata:">
 <!ENTITY outgoingSettings.label          "Parametros in exito:">
+<!ENTITY technicaldetails.label          "Detalios technic">
 <!-- LOCALIZATION NOTE (confirmWarning.label): If there is a security
      warning on the outgoing server, then the user will need to check a
      checkbox beside this text before continuing. -->
 <!ENTITY confirmWarning.label            "Io comprehende le riscos.">
+<!ENTITY confirmWarning.accesskey        "u">
 <!-- LOCALIZATION NOTE (doneAccount.label): If there is a security warning
      on the incoming or outgoing servers, then the page that pops up will
      have this text in a button to continue by creating the account. -->
 <!ENTITY doneAccount.label               "Facite">
+<!ENTITY doneAccount.accesskey           "D">
 <!-- LOCALIZATION NOTE (changeSettings.label): If there is a security warning on
      the incoming or outgoing servers, then the page that pops up will have
      this text in a button to take you back to the previous page to change
      the settings and try again. -->
 <!ENTITY changeSettings.label            "Cambiar parametros">
+<!ENTITY changeSettings.accesskey        "S">
 
 
+<!ENTITY insecureServer.tooltip.title    "Attention! Servitor insecur.">
 

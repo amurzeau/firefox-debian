@@ -27,11 +27,6 @@ search-input-box =
             [windows] ఎంపికలలో వెతకండి
            *[other] ప్రాధాన్యతలు తెరువు
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] కొన్ని ఎంపికలను మార్చుకునే సౌలభ్యాన్ని మీ సంస్థ అచేతనం చేసింది.
-       *[other] కొన్ని అభిరుచులను మార్చుకునే సౌలభ్యాన్ని మీ సంస్థ అచేతనం చేసింది.
-    }
 managed-notice = మీ విహారిణి మీ సంస్థ ద్వారా నిర్వహించబడుతోంది.
 pane-general-title = సాధారణం
 category-general =
@@ -260,6 +255,11 @@ update-application-use-service =
 update-enable-search-update =
     .label = సెర్చింజన్లను స్వయంచాలకంగా తాజాకరించు
     .accesskey = e
+update-in-progress-message = { -brand-short-name } ఈ తాజాకరణతో కొనసాగాలని అనుకుంటున్నారా?
+update-in-progress-ok-button = విస్మరించు (&D)
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = కొనసాగించు (&C)
 
 ## General Section - Performance
 
@@ -344,6 +344,48 @@ use-current-pages =
 choose-bookmark =
     .label = ఇష్టాంశాన్ని వాడు…
     .accesskey = B
+
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Firefox ముంగిలి విషయం
+home-prefs-content-description = మీ Firefox ముంగిలి తెరలో మీకు కావలసిన విషయాల్ని ఎంచుకోండి.
+home-prefs-search-header =
+    .label = జాల వెతుకులాట
+home-prefs-topsites-header =
+    .label = మేటి సైట్లు
+home-prefs-topsites-description = మీరు తరచూ చూసే సైట్లు
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = { $provider }చే సిఫార్సు చేయబడినది
+home-prefs-recommended-by-description = ప్రపంచం నలుమూలలనుండి మీకోసం వ్యక్తిగతీకరించబడిన ఆసక్తికర సమాచారం
+home-prefs-recommended-by-learn-more = ఇది ఎలా పనిచేస్తుంది
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = ప్రాయోజిక కథనాలు
+home-prefs-highlights-header =
+    .label = విశేషాలు
+home-prefs-highlights-description = మీరు భద్రపరచిన లేదా సందర్శించిన సైట్ల నుండి ఎంపికచేసినవి
+home-prefs-highlights-option-visited-pages =
+    .label = చూసిన పేజీలు
+home-prefs-highlights-options-bookmarks =
+    .label = ఇష్టాంశాలు
+home-prefs-highlights-option-most-recent-download =
+    .label = ఇటీవలి దింపుకోలు
+home-prefs-highlights-option-saved-to-pocket =
+    .label = { -pocket-brand-name }లో భద్రపరచిన పేజీలు
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = సంగతులు
+home-prefs-snippets-description = { -vendor-short-name }, { -brand-product-name } నుండి విశేషాలు
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } వరుస
+           *[other] { $num } వరుసలు
+        }
 
 ## Search Section
 
@@ -484,7 +526,9 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = భద్రపరచు
     .accesskey = v
+sync-connect-another-device = మరొక పరికరాన్ని అనుసంధానించు
 sync-manage-devices = పరికరాల నిర్వహణ
+sync-fxa-begin-pairing = ఒక పరికరాన్ని జతచేయి
 sync-tos-link = సేవా నిబంధనలు
 sync-fxa-privacy-notice = గోప్యతా నోటీసు
 
@@ -531,6 +575,7 @@ history-remember-option-never =
     .label = ఎప్పుడూ చరిత్రను గుర్తుపెట్టుకోదు
 history-remember-option-custom =
     .label = చరిత్ర కోసం అభిమత అమరికలు వాడుతుంది
+history-remember-description = { -brand-short-name } మీ విహరణ, దింపుకోళ్ళ, ఫారాల, వెతుకులాటల చరిత్రను గుర్తుపెట్టుకుంటుంది.
 history-dontremember-description = { -brand-short-name } గోప్య వీక్షణం అమరికలనే వాడుతుంది మరియు మీ వీక్షణ చరిత్రని గుర్తుంచుకోదు.
 history-private-browsing-permanent =
     .label = ఎల్లప్పుడూ ఆంతరంగిక విహారణ రీతిని వాడు
@@ -576,6 +621,9 @@ sitedata-clear =
 sitedata-settings =
     .label = డేటాని నిర్వహించండి…
     .accesskey = M
+sitedata-cookies-permissions =
+    .label = అనుమతులను నిర్వహించండి…
+    .accesskey = P
 
 ## Privacy Section - Address Bar
 
@@ -665,6 +713,10 @@ permissions-notification-link = ఇంకా తెలుసుకోండి
 permissions-block-autoplay-media-exceptions =
     .label = మినహాయింపులు…
     .accesskey = E
+permissions-autoplay = స్వీయారంభం
+permissions-autoplay-settings =
+    .label = అమరికలు…
+    .accesskey = t
 permissions-block-popups =
     .label = పాప్-అప్ విండోలను నిరోధించు
     .accesskey = B

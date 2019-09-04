@@ -27,6 +27,14 @@ serviceworker-worker-debug = Depurar
 # Text for the start link displayed for a registered but not running Service Worker.
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start = Initiar
+# Text for the debug link displayed for an already started Service Worker, when we
+# are in multi e10s mode, which effectively disables this link.
+serviceworker-worker-debug-forbidden = Debug
+    .title = Debug pro "service workers" es disponibile solmente si "multi e10s" es disactivate
+# Text for the start link displayed for a registered but not running Service Worker.
+# Clicking on the link will attempt to start the service worker.
+serviceworker-worker-start2 = Initiar
+    .title = Es possibile initiar "service workers" solmente si "multi e10s" es disactivate
 # Text displayed for the updated time of the service worker. The <time> element will
 # display the last update time of the service worker script.
 serviceworker-worker-updated = Actualisate <time>{ DATETIME($date, month: "long", year: "numeric", day: "numeric", hour: "numeric", minute: "numeric", second: "numeric") }</time>
@@ -61,3 +69,11 @@ serviceworker-empty-suggestions-debugger = Naviga inter le registrationes de to 
 # Suggestion to go to about:debugging in order to see Service Workers for all domains.
 # Clicking on the link will open about:debugging in a new tab.
 serviceworker-empty-suggestions-aboutdebugging = Inspectar le Laborantes de servicio ex altere dominios. <a>Aperir re:depuration</a>
+# Text displayed while we are loading the manifest file
+manifest-loading = Cargante le manifesto…
+# Text displayed when the manifest has been successfully loaded
+manifest-loaded-ok = Manifesto cargate
+# Text displayed when there has been an error while trying to load the manifest
+manifest-loaded-error = Il habeva un error a cargar le manifesto:
+# Text displayed when the page has no manifest available
+manifest-non-existing = Nulle manifestos a inspectar trovate.

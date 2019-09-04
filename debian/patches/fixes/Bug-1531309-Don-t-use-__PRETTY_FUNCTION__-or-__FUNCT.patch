@@ -397,10 +397,10 @@ index b7ce5ce879f3..08fd6c441132 100644
  
  }  // namespace camera
 diff --git a/dom/media/webrtc/MediaEngineRemoteVideoSource.cpp b/dom/media/webrtc/MediaEngineRemoteVideoSource.cpp
-index 3589146d47db..17aa118726e5 100644
+index 0ba69424c6c5..24e68eff9055 100644
 --- a/dom/media/webrtc/MediaEngineRemoteVideoSource.cpp
 +++ b/dom/media/webrtc/MediaEngineRemoteVideoSource.cpp
-@@ -68,7 +68,7 @@ dom::MediaSourceEnum MediaEngineRemoteVideoSource::GetMediaSource() const {
+@@ -104,7 +104,7 @@ dom::MediaSourceEnum MediaEngineRemoteVideoSource::GetMediaSource() const {
  }
  
  void MediaEngineRemoteVideoSource::Init() {
@@ -409,7 +409,7 @@ index 3589146d47db..17aa118726e5 100644
    AssertIsOnOwningThread();
  
    char deviceName[kMaxDeviceNameLength];
-@@ -89,7 +89,7 @@ void MediaEngineRemoteVideoSource::Init() {
+@@ -125,7 +125,7 @@ void MediaEngineRemoteVideoSource::Init() {
  }
  
  void MediaEngineRemoteVideoSource::Shutdown() {
@@ -418,7 +418,7 @@ index 3589146d47db..17aa118726e5 100644
    AssertIsOnOwningThread();
  
    if (!mInitDone) {
-@@ -109,7 +109,7 @@ void MediaEngineRemoteVideoSource::Shutdown() {
+@@ -145,7 +145,7 @@ void MediaEngineRemoteVideoSource::Shutdown() {
  }
  
  void MediaEngineRemoteVideoSource::SetName(nsString aName) {
@@ -427,7 +427,7 @@ index 3589146d47db..17aa118726e5 100644
    AssertIsOnOwningThread();
  
    mDeviceName = std::move(aName);
-@@ -193,7 +193,7 @@ nsresult MediaEngineRemoteVideoSource::Allocate(
+@@ -209,7 +209,7 @@ nsresult MediaEngineRemoteVideoSource::Allocate(
      const nsString& aDeviceId,
      const mozilla::ipc::PrincipalInfo& aPrincipalInfo,
      const char** aOutBadConstraint) {
@@ -436,7 +436,7 @@ index 3589146d47db..17aa118726e5 100644
    AssertIsOnOwningThread();
  
    MOZ_ASSERT(mState == kReleased);
-@@ -231,7 +231,7 @@ nsresult MediaEngineRemoteVideoSource::Allocate(
+@@ -247,7 +247,7 @@ nsresult MediaEngineRemoteVideoSource::Allocate(
  }
  
  nsresult MediaEngineRemoteVideoSource::Deallocate() {
@@ -445,7 +445,7 @@ index 3589146d47db..17aa118726e5 100644
    AssertIsOnOwningThread();
  
    MOZ_ASSERT(mState == kStopped || mState == kAllocated);
-@@ -267,7 +267,7 @@ nsresult MediaEngineRemoteVideoSource::Deallocate() {
+@@ -283,7 +283,7 @@ nsresult MediaEngineRemoteVideoSource::Deallocate() {
  void MediaEngineRemoteVideoSource::SetTrack(
      const RefPtr<SourceMediaStream>& aStream, TrackID aTrackID,
      const PrincipalHandle& aPrincipal) {
@@ -454,7 +454,7 @@ index 3589146d47db..17aa118726e5 100644
    AssertIsOnOwningThread();
  
    MOZ_ASSERT(mState == kAllocated);
-@@ -292,7 +292,7 @@ void MediaEngineRemoteVideoSource::SetTrack(
+@@ -308,7 +308,7 @@ void MediaEngineRemoteVideoSource::SetTrack(
  }
  
  nsresult MediaEngineRemoteVideoSource::Start() {
@@ -463,7 +463,7 @@ index 3589146d47db..17aa118726e5 100644
    AssertIsOnOwningThread();
  
    MOZ_ASSERT(mState == kAllocated || mState == kStopped);
-@@ -345,7 +345,7 @@ nsresult MediaEngineRemoteVideoSource::Start() {
+@@ -361,7 +361,7 @@ nsresult MediaEngineRemoteVideoSource::Start() {
  }
  
  nsresult MediaEngineRemoteVideoSource::FocusOnSelectedSource() {
@@ -472,7 +472,7 @@ index 3589146d47db..17aa118726e5 100644
    AssertIsOnOwningThread();
  
    int result;
-@@ -355,7 +355,7 @@ nsresult MediaEngineRemoteVideoSource::FocusOnSelectedSource() {
+@@ -371,7 +371,7 @@ nsresult MediaEngineRemoteVideoSource::FocusOnSelectedSource() {
  }
  
  nsresult MediaEngineRemoteVideoSource::Stop() {
@@ -481,7 +481,7 @@ index 3589146d47db..17aa118726e5 100644
    AssertIsOnOwningThread();
  
    if (mState == kStopped || mState == kAllocated) {
-@@ -381,7 +381,7 @@ nsresult MediaEngineRemoteVideoSource::Stop() {
+@@ -397,7 +397,7 @@ nsresult MediaEngineRemoteVideoSource::Stop() {
  nsresult MediaEngineRemoteVideoSource::Reconfigure(
      const MediaTrackConstraints& aConstraints, const MediaEnginePrefs& aPrefs,
      const nsString& aDeviceId, const char** aOutBadConstraint) {
@@ -490,7 +490,7 @@ index 3589146d47db..17aa118726e5 100644
    AssertIsOnOwningThread();
  
    MOZ_ASSERT(mInitDone);
-@@ -762,7 +762,7 @@ bool MediaEngineRemoteVideoSource::ChooseCapability(
+@@ -778,7 +778,7 @@ bool MediaEngineRemoteVideoSource::ChooseCapability(
      const NormalizedConstraints& aConstraints, const MediaEnginePrefs& aPrefs,
      const nsString& aDeviceId, webrtc::CaptureCapability& aCapability,
      const DistanceCalculation aCalculate) {
@@ -499,7 +499,7 @@ index 3589146d47db..17aa118726e5 100644
    AssertIsOnOwningThread();
  
    if (MOZ_LOG_TEST(gMediaManagerLog, LogLevel::Debug)) {
-@@ -928,7 +928,7 @@ void MediaEngineRemoteVideoSource::GetSettings(
+@@ -944,7 +944,7 @@ void MediaEngineRemoteVideoSource::GetSettings(
  }
  
  void MediaEngineRemoteVideoSource::Refresh(int aIndex) {

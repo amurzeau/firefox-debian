@@ -4,6 +4,7 @@
 
 about-telemetry-ping-data-source = Ping-datan lähde:
 about-telemetry-show-current-ping-data = Tämänhetkinen ping-data
+about-telemetry-show-current-data = Nykyinen data
 about-telemetry-show-archived-ping-data = Arkistoitu ping-data
 about-telemetry-show-subsession-data = Näytä ali-istuntodata
 about-telemetry-choose-ping = Valitse ping:
@@ -76,6 +77,7 @@ about-telemetry-settings-explanation = Kaukomittaus kerää { about-telemetry-da
 #   $timeStamp (String): ping localized timestamp, e.g. “2017/07/08 10:40:46”
 about-telemetry-ping-details = Kukin informaation palanen lähetetään koottuna ”<a data-l10n-name="ping-link">pingeihin</a>”. Katselet juuri { $name }, { $timestamp }-pingiä.
 about-telemetry-ping-details-current = Kukin informaation palanen lähetetään koottuna ”<a data-l10n-name="ping-link">pingeihin</a>”. Katselet juuri nykyinen-pingiä.
+about-telemetry-data-details-current = Kukin informaation palanen lähetetään koottuna ”<a data-l10n-name="ping-link">pingeihin</a>”. Katselet juuri nykyistä dataa.
 # string used as a placeholder for the search field
 # More info about it can be found here:
 # https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
@@ -102,6 +104,8 @@ about-telemetry-no-search-results-all = Ei hakutuloksia mistään osiosta haulle
 about-telemetry-no-data-to-display = Osiossa ”{ $sectionName }” ei ole tällä hetkellä dataa
 # used as a tooltip for the “current” ping title in the sidebar
 about-telemetry-current-ping-sidebar = nykyinen ping
+# used as a tooltip for the “current” ping title in the sidebar
+about-telemetry-current-data-sidebar = nykyinen data
 # used in the “Ping Type” select
 about-telemetry-telemetry-ping-type-all = kaikki
 # button label to copy the histogram

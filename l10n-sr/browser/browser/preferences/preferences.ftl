@@ -29,11 +29,6 @@ search-input-box =
             [windows] Нађи у опцијама
            *[other] Нађи у поставкама
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Ваша организација је онемогућила могућност измене неких опција.
-       *[other] Ваша организација је онемогућила могућност измене неких опција.
-    }
 pane-general-title = Опште
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +41,6 @@ category-search =
 pane-privacy-title = Приватност и безбедност
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Firefox налог
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -389,6 +380,50 @@ choose-bookmark =
     .label = Користи забелешку…
     .accesskey = з
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Садржај Firefox почетне странице
+home-prefs-content-description = Изаберите садржај који желите видети на вашој Firefox почетној страници.
+home-prefs-content-discovery-description = Откривање садржаја на Firefox почетној вам омогућава да добијете веома квалитетне и вама значајне чланке са целог веба.
+home-prefs-search-header =
+    .label = Веб претрага
+home-prefs-topsites-header =
+    .label = Омиљени сајтови
+home-prefs-topsites-description = Сајтови које највише посећујете
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Предложио { $provider }
+home-prefs-recommended-by-description = Одличан садржај из целог света, персонализован за вас
+home-prefs-recommended-by-learn-more = Како ово ради
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Спонзорисане приче
+home-prefs-highlights-header =
+    .label = Истакнуто
+home-prefs-highlights-description = Изабрани сајтови које сте сачували или посетили
+home-prefs-highlights-option-visited-pages =
+    .label = Посећене странице
+home-prefs-highlights-options-bookmarks =
+    .label = Забелешке
+home-prefs-highlights-option-most-recent-download =
+    .label = Најновије преузимање
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Странице сачуване у { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Исечци
+home-prefs-snippets-description = Новости од { -vendor-short-name }-е и { -brand-product-name }-а
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } ред
+            [few] { $num } реда
+           *[other] { $num } редова
+        }
+
 ## Search Section
 
 search-bar-header = Трака за претрагу
@@ -531,8 +566,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Сачувај
     .accesskey = ч
-sync-mobilepromo-single = Повежите други уређај
-sync-mobilepromo-multi = Управљајте уређајима
 sync-connect-another-device = Повежи други уређај
 sync-manage-devices = Управљај уређајима
 sync-fxa-begin-pairing = Упари уређај
@@ -627,7 +660,7 @@ sitedata-disallow-cookies-option =
 sitedata-block-desc = Тип блокираних колачића
     .accesskey = Т
 sitedata-option-block-trackers =
-    .label = Пратиоци треће старне
+    .label = Пратиоци треће стране
 sitedata-option-block-unvisited =
     .label = Колачићи са непосећених веб сајтова
 sitedata-option-block-all-third-party =
@@ -662,7 +695,7 @@ addressbar-suggestions-settings = Измени поставке предлога
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Блокирање садржаја
-content-blocking-description = Блокирај садржај треће стране који вас прати на вебу. Управљајте бележењем ваших активности на вебу и дељењем ових активности на овим веб сајтовима.
+content-blocking-section-description = Заштитите своју приватност док прегледате интернет. Блокирајте невидљиви садржај који прати веб странице које посетите и који вас профилише. Блокирањем неких од ових садржаја странице се брже учитавају.
 content-blocking-learn-more = Сазнајте више
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -675,18 +708,19 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Прилагођено
     .accesskey = г
-content-blocking-standard-description = Блокирај познате пратиоце само у приватним прозорима.
 content-blocking-standard-desc = Уравнотежено за заштиту и перформансе. Дозвољава неке пратиоце тако да веб сајтови прописно раде.
-content-blocking-strict-desc = Блокирај све пратиоце које { -brand-short-name } уочи. Може сломити неке сајтове.
+content-blocking-strict-description = Снажнија заштита, може проузроковати проблеме са отварањем појединих веб страница.
 content-blocking-custom-desc = Изаберите шта треба блокирати.
 content-blocking-private-trackers = Познате пратиоце само у приватним прозорима
 content-blocking-third-party-cookies = Колачиће за праћење трећих страна
 content-blocking-all-windows-trackers = Познате пратиоце у свим прозорима
 content-blocking-all-third-party-cookies = Све колачиће треће стране
+content-blocking-cryptominers = Крипто-рударе
+content-blocking-fingerprinters = Хватаче отиска
 content-blocking-warning-title = Напомена!
-content-blocking-warning-desc = Блокирање колачића и пратиоца може сломити неке сајтове. Лако можете онемогућити блокирање на сајтовима којима верујете.
 content-blocking-warning-description = Блокирање садржаја може узроковати сломљене сајтове у неким случајевима. Лако је онемогућити блокирање за сајтове којима верујете.
 content-blocking-learn-how = Сазнајте више
+content-blocking-reload-description = Да бисте применили ове измене, морате поново учитати своје језичке.
 content-blocking-reload-tabs-button =
     .label = Поново учитај све језичке
     .accesskey = у
@@ -727,7 +761,7 @@ permissions-header = Дозволе
 permissions-location = Локација
 permissions-location-settings =
     .label = Поставке…
-    .accesskey = л
+    .accesskey = е
 permissions-camera = Камера
 permissions-camera-settings =
     .label = Поставке…
@@ -735,11 +769,11 @@ permissions-camera-settings =
 permissions-microphone = Микрофон
 permissions-microphone-settings =
     .label = Поставке…
-    .accesskey = м
+    .accesskey = в
 permissions-notification = Обавештења
 permissions-notification-settings =
     .label = Поставке…
-    .accesskey = н
+    .accesskey = а
 permissions-notification-link = Сазнајте више
 permissions-notification-pause =
     .label = Паузирај обавештења док се { -brand-short-name } не рестартује

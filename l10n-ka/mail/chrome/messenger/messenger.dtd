@@ -8,7 +8,7 @@
 <!-- File Menu -->
 <!ENTITY newFolderCmd.label "საქაღალდე…">
 <!ENTITY newFolderCmd.accesskey "ქ">
-<!ENTITY closeTabCmd2.label "დაფის დახურვა">
+<!ENTITY closeTabCmd2.label "ჩანართის დახურვა">
 <!ENTITY closeTabCmd2.accesskey "ხ">
 <!ENTITY closeOtherTabsCmd2.label "სხვა დაფების დახურვა">
 <!ENTITY closeOtherTabsCmd2.accesskey "ვ">
@@ -170,9 +170,8 @@
 <!ENTITY recentFolders.accesskey "ბ">
 <!ENTITY compactVersion.label "შემჭიდროებული ჩვენება">
 <!ENTITY compactVersion.accesskey "შ">
-<!ENTITY folderPaneBar.label "საქაღალდის დაფის ხელსაწყოები">
+<!ENTITY folderPaneBar.label "ხელსაწყოები საქაღალდის არეში">
 <!ENTITY folderPaneBar.accesskey "ს">
-<!ENTITY folderModeSelector.label "საქაღალდის ხედები">
 
 <!-- Sort Menu -->
 <!ENTITY sortMenu.label "დალაგება">
@@ -201,7 +200,7 @@
 <!ENTITY sortByFromCmd.accesskey "გ">
 <!ENTITY sortByRecipientCmd.label "მიმღებით">
 <!ENTITY sortByRecipientCmd.accesskey "მ">
-<!ENTITY sortByCorrespondentCmd.label "მომწოდებლებით">
+<!ENTITY sortByCorrespondentCmd.label "გამომგზავნები">
 <!ENTITY sortByCorrespondentCmd.accesskey "წ">
 <!ENTITY sortByUnreadCmd.label "წასაკითხები">
 <!ENTITY sortByUnreadCmd.accesskey "კ">
@@ -587,6 +586,7 @@
 <!ENTITY fileButton.tooltip "შერჩეული წერილის შენახვა">
 <!ENTITY archiveButton.tooltip "შერჩეული წერილის დაარქივება">
 <!ENTITY openConversationButton.tooltip "მითითებული შეტყობინების სრული საუბრის ჩვენება">
+<!ENTITY openMsgConversationButton.tooltip "მითითებული შეტყობინების სრული საუბრის ჩვენება">
 <!ENTITY nextButton.tooltip "გადასვლა შემდეგ წასაკითხ წერილზე">
 <!ENTITY nextMsgButton.tooltip "გადასვლა შემდეგ წერილზე">
 <!ENTITY previousButton.tooltip "გადასვლა წინა წასაკითხ წერილზე">
@@ -601,11 +601,10 @@
 <!ENTITY junkButton.tooltip "შერჩეული წერილების ჯართად მონიშვნა">
 <!ENTITY notJunkButton.tooltip "შერჩეული წერილების გამოსადეგად ჩათვლა">
 <!ENTITY addressBookButton.tooltip "წიგნაკზე გადასვლა">
-<!ENTITY chatButton.tooltip "სასაუბრო დაფის ჩვენება">
+<!ENTITY chatButton.tooltip "სასაუბრო არეს ჩვენება">
 <!ENTITY tagButton.tooltip "წერილების დაჭდევება">
 <!ENTITY compactButton.tooltip "წაშლილი წერილების მოცილება შერჩეული საქაღალდიდან">
 <!ENTITY appmenuButton1.tooltip "&brandShortName; მენიუს ჩვენება">
-
 <!ENTITY addonsButton.tooltip "მართეთ თქვენი დამატებები">
 
 <!-- Toolbar Button Popup -->
@@ -657,7 +656,7 @@
 <!ENTITY folderContextPauseUpdates.accesskey "გ">
 <!ENTITY folderContextOpenInNewWindow.label "გახსნა ახალ ფანჯარაში">
 <!ENTITY folderContextOpenInNewWindow.accesskey "ხ">
-<!ENTITY folderContextOpenNewTab.label "გახსნა ახალ დაფაზე">
+<!ENTITY folderContextOpenNewTab.label "გახსნა ახალ ჩანართში">
 <!ENTITY folderContextOpenNewTab.accesskey "ლ">
 <!ENTITY folderContextNew.label "ახალი ქვესაქაღალდე…">
 <!ENTITY folderContextNew.accesskey "ქ">
@@ -707,10 +706,11 @@
 <!ENTITY saveAsVirtualFolderMenu.label "ძიების შედეგების საქაღალდედ დამახსოვრება…">
 
 <!-- Thread Pane -->
+<!ENTITY selectColumn.label "წერილების შერჩევა">
 <!ENTITY threadColumn.label "მიმოწერა">
 <!ENTITY fromColumn.label "გამგზავნი">
 <!ENTITY recipientColumn.label "მიმღები">
-<!ENTITY correspondentColumn.label "მომწოდებლები">
+<!ENTITY correspondentColumn.label "გამომგზავნები">
 <!ENTITY subjectColumn.label "თემა">
 <!ENTITY dateColumn.label "თარიღი">
 <!ENTITY priorityColumn.label "პრიორიტეტი">
@@ -730,10 +730,11 @@
 
 <!-- Thread Pane Tooltips -->
 <!ENTITY columnChooser2.tooltip "სვეტების შერჩევა საჩვენებლად">
+<!ENTITY selectColumn.tooltip "ყველას მონიშვნა ან გაუქმება">
 <!ENTITY threadColumn2.tooltip "მიმოწერის ჩვენება">
 <!ENTITY fromColumn2.tooltip "გამომგზავნის მიხედვით">
 <!ENTITY recipientColumn2.tooltip "მიმღების მიხედვით">
-<!ENTITY correspondentColumn2.tooltip "მომწოდებლის მიხედვით">
+<!ENTITY correspondentColumn2.tooltip "გამომგზავნების მიხედვით">
 <!ENTITY subjectColumn2.tooltip "თემის მიხედვით">
 <!ENTITY dateColumn2.tooltip "თარიღის მიხედვით">
 <!ENTITY priorityColumn2.tooltip "უპირატესობის მიხედვით">
@@ -759,7 +760,7 @@
      cutCmd.accessKey which is defined in textcontext.dtd from toolkit. Right
      now, both menu items can't be visible at the same time, but should someone
      enable copy/paste of message, this key would probably need to be changed. -->
-<!ENTITY contextOpenNewTab.label "წერილის ახალ დაფაზე გახსნა">
+<!ENTITY contextOpenNewTab.label "წერილის ახალ ჩანართში გახსნა">
 <!ENTITY contextOpenNewTab.accesskey "ხ">
 <!ENTITY contextOpenConversation.label "წერილის გახსნა განსახილველად">
 <!ENTITY contextOpenConversation.accesskey "ვ">

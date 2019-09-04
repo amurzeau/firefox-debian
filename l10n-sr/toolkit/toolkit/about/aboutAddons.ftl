@@ -82,6 +82,9 @@ detail-version =
 detail-last-updated =
     .label = Последњи пут ажурирано
 detail-contributions-description = Програмер овог додатка моли да подржите његов непрекидан развој, тако што ћете дати мали допринос.
+detail-contributions-button = Допринеси
+    .title = Допринеси развоју овог додатка
+    .accesskey = и
 detail-update-type =
     .value = Аутоматска ажурирања
 detail-update-default =
@@ -151,9 +154,9 @@ private-browsing-description2 =
     приступ вашим активностима на мрежи. Начинили смо ову измену да бисмо одржали ваше коришћење 
     интернета у приватном режиму приватним.
     <label data-l10n-name="private-browsing-learn-more">Сазнајте како да управљате подешавањима екстензија</label>
-extensions-view-discover =
-    .name = Додаци
-    .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Препоруке
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Недавна ажурирања
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -234,7 +237,87 @@ extensions-updates-update-selected =
 manage-extensions-shortcuts =
     .label = Управљај пречицама екстензија
     .accesskey = с
+shortcuts-no-addons = Немате омогућених проширења.
 shortcuts-browserAction = Активирај екстензију
+
+## Recommended add-ons page
+
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro = Проширења и теме су као апликације за ваш прегледач и омогућавају вам да заштитите лозинке, преузмете видео записе, пронађете понуде, блокирате досадне огласе, промените изглед претраживача и још много тога. Ове мале софтверске програме често развија трећа страна. Ево избора које { -brand-product-name } <a data-l10n-name="learn-more-trigger">препоручује</a> за изузетну безбедност, перформансе и употребљивост.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations = Неке од ових препорука су персонализоване. Оне се заснивају на другим проширењима која сте инсталирали, поставкама профила и статистици употребе.
+discopane-notice-learn-more = Сазнајте више
+privacy-policy = Политика приватности
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = од стране <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Корисници: { $dailyUsers }
+install-extension-button = Додај у { -brand-product-name }
+install-theme-button = Инсталирај тему
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Управљај
+find-more-addons = Пронађи више додатака
 
 ## Add-on actions
 
+report-addon-button = Пријави
+remove-addon-button = Уклони
+disable-addon-button = Онемогући
+enable-addon-button = Омогући
+expand-addon-button = Више опција
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Подешавања
+       *[other] Поставке
+    }
+details-addon-button = Детаљи
+release-notes-addon-button = Белешке о издању
+permissions-addon-button = Дозволе
+addons-enabled-heading = Омогућено
+addons-disabled-heading = Онемогућено
+ask-to-activate-button = Питај за активирање
+always-activate-button = Увек активирај
+never-activate-button = Никад не активирај
+addon-detail-author-label = Аутор
+addon-detail-version-label = Издање
+addon-detail-last-updated-label = Последњи пут ажурирано
+addon-detail-homepage-label = Матична страница
+addon-detail-rating-label = Оцена
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (искључено)
+
+## Pending uninstall message bar
+
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = Додатак <span data-l10n-name="addon-name">{ $addon }</span> је уклоњен.
+pending-uninstall-undo-button = Опозови
+addon-detail-updates-label = Дозволи аутоматско ажурирање
+addon-detail-updates-radio-default = Подразумевано
+addon-detail-updates-radio-on = Укључено
+addon-detail-updates-radio-off = Искључено
+addon-detail-update-check-label = Провери ажурирања
+install-update-button = Ажурирај
+addon-detail-private-browsing-help = Када је дозвољено, проширење ће имати приступ вашим активностима на мрежи у приватном прегледавању. <a data-l10n-name="learn-more">Сазнај више</a>
+addon-detail-private-browsing-allow = Дозволи
+addon-detail-private-browsing-disallow = Не дозволи
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Препоручено
+    .alt = Препоручено
+release-notes-loading = Учитава се...
+release-notes-error = Нажалост, дошло је до грешке при учитавању напомена о издању.
+recommended-extensions-heading = Препоручена проширења
+recommended-themes-heading = Препоручене теме
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Креативни сте? <a data-l10n-name="link">Направите своју сопствену тему уз помоћ Firefox Color-а.</a>

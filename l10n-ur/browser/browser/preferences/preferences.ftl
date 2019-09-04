@@ -237,6 +237,7 @@ update-enable-search-update =
     .label = تلاش کے انجن کو خود بخود اپڈیٹ  کریں
     .accesskey = e
 update-pref-write-failure-title = لکھیں مے ناکام
+update-in-progress-title = اپ ڈیٹ جاری ہے
 
 ## General Section - Performance
 
@@ -315,6 +316,39 @@ use-current-pages =
 choose-bookmark =
     .label = بک مارک استعمال کریں…
     .accesskey = B
+
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Firefox ابتائی مواد
+home-prefs-search-header =
+    .label = وءب تلاش
+home-prefs-topsites-header =
+    .label = بہترین سائٹیں
+home-prefs-topsites-description = سائٹس جو آُپ سب سے زیادہ ملاحظہ کرتے ہیں
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = { $provider } کی جانب سے تجویز کردہ
+home-prefs-recommended-by-learn-more = یہ کس طرح کام کرتا ہے
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = سرپرست شدہ کہاناں
+home-prefs-highlights-header =
+    .label = شہ سرخياں
+home-prefs-highlights-option-visited-pages =
+    .label = دورہ کردہ صفحہات
+home-prefs-highlights-options-bookmarks =
+    .label = بک مارک
+home-prefs-highlights-option-most-recent-download =
+    .label = حالیہ ڈاؤن لوڈ شدہ
+home-prefs-highlights-option-saved-to-pocket =
+    .label = صفحات { -pocket-brand-name } میں محفوظ کر دیئے گئے ہیں
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = سنپیٹ
+home-prefs-snippets-description = { -vendor-short-name } اور{ -brand-product-name } کی جانب سے تازہ کاریاں
 
 ## Search Section
 
@@ -608,6 +642,7 @@ permissions-notification-link = مزید سیکھیں
 permissions-block-autoplay-media-exceptions =
     .label = استثنیات…
     .accesskey = E
+permissions-autoplay = آٹو پلے
 permissions-block-popups =
     .label = پوپ اپ دریچے بلاک کیجیے
     .accesskey = B

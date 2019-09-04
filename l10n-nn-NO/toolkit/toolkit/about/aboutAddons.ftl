@@ -155,9 +155,6 @@ private-browsing-description2 =
     Utvidinga vil ikkje fungere under privat nettlesing, og vil ikkje ha tilgang til aktivitetane dine på nettet.
     Vi har gjort denne endringa for å halde privat nettlesing privat.
     <label data-l10n-name="private-browsing-learn-more">Les om korleis du administrerer utvidingsinnstillingar.</label>
-extensions-view-discover =
-    .name = Last ned tillegg
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-discopane =
     .name = Tilrådingar
     .tooltiptext = { extensions-view-discopane.name }
@@ -253,6 +250,8 @@ shortcuts-modifier-other = Inkluder Ctrl eller Alt
 shortcuts-invalid = Ugyldig kombinasjon
 shortcuts-letter = Skriv ein bokstav
 shortcuts-system = Kan ikkje overskrive ein { -brand-short-name }-snarveg
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Duplisert hurtigtast
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -267,6 +266,19 @@ go-back-button =
 
 ## Recommended add-ons page
 
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    Utvidingar og tema er som appar for nettlesaren din, og dei let deg
+    beskytte passorda dine, laste ned videoar, finne tilbod, blokkere irriterande reklame, endre
+    korleis nettlesaren din ser ut, og mykje meir. Desse små programma er
+    ofte utvikla av ein tredjepart. Her er eit utval { -brand-product-name }
+    <a data-l10n-name="learn-more-trigger">tilrår</a> for eksepsjonell
+    sikkerheit, yting og funksjonalitet.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations =
+    Nokre av desse tilrådingane er målretta deg. Dei er baserte på andre
+    utvidingar du har installert, profilinnstillingar og statistikk for bruk.
 discopane-notice-learn-more = Les meir
 privacy-policy = Personvernpraksis
 # Refers to the author of an add-on, shown below the name of the add-on.
@@ -301,6 +313,16 @@ release-notes-addon-button = Versjonsnotat
 permissions-addon-button = Løyve
 addons-enabled-heading = Påslått
 addons-disabled-heading = Avslått
+extension-enabled-heading = Slått på
+extension-disabled-heading = Slått av
+theme-enabled-heading = Slått på
+theme-disabled-heading = Slått av
+plugin-enabled-heading = Slått på
+plugin-disabled-heading = Slått av
+dictionary-enabled-heading = Slått på
+dictionary-disabled-heading = Slått av
+locale-enabled-heading = Slått på
+locale-disabled-heading = Slått av
 ask-to-activate-button = Spør om aktivering
 always-activate-button = Alttid aktiver
 never-activate-button = Aldri aktiver
@@ -343,6 +365,7 @@ install-update-button = Oppdater
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed =
     .title = Tillat i private vindauge
+addon-detail-private-browsing-help = Når det er tillate, vil utvidinga få tilgang til aktivitetane dine på nettet medan du brukar privat nettlesing. <a data-l10n-name="learn-more">Les meir</a>
 addon-detail-private-browsing-allow = Tillat
 addon-detail-private-browsing-disallow = Ikkje tillat
 # This is the tooltip text for the recommended badge for an extension in about:addons. The
@@ -357,3 +380,6 @@ release-notes-error = Beklagar, men ein feil oppstod under lasting av versjonsno
 addon-permissions-empty = Denne utvidinga krev inkje løyve
 recommended-extensions-heading = Tilrådde utvidingar
 recommended-themes-heading = Tilrådde tema
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Er du i det kreative hjørnet? <a data-l10n-name="link">Bygg ditt eige tema med Firefox Color.</a>

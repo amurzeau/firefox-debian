@@ -29,11 +29,6 @@ search-input-box =
             [windows] Найти в настройках
            *[other] Найти в настройках
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Ваша организация запретила возможность изменения некоторых настроек.
-       *[other] Ваша организация запретила возможность изменения некоторых настроек.
-    }
 managed-notice = Этим браузером управляет ваша организация.
 pane-general-title = Основные
 category-general =
@@ -401,6 +396,50 @@ choose-bookmark =
     .label = Использовать закладку…
     .accesskey = в
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Домашняя страница Firefox
+home-prefs-content-description = Выберите, какое содержимое вы хотите видеть на домашней странице Firefox.
+home-prefs-content-discovery-description = Обнаружение содержимого на домашней странице Firefox позволит вам находить высококачественные релевантные статьи со всего Интернета.
+home-prefs-search-header =
+    .label = Поиск в Интернете
+home-prefs-topsites-header =
+    .label = Топ сайтов
+home-prefs-topsites-description = Сайты, которые вы чаще всего посещаете
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Рекомендовано { $provider }
+home-prefs-recommended-by-description = Отличный контент со всего Интернета, отобранный по вашему вкусу
+home-prefs-recommended-by-learn-more = Как это работает
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Статьи спонсоров
+home-prefs-highlights-header =
+    .label = Избранное
+home-prefs-highlights-description = Избранные сайты, которые вы сохранили или посещали
+home-prefs-highlights-option-visited-pages =
+    .label = Посещённые страницы
+home-prefs-highlights-options-bookmarks =
+    .label = Закладки
+home-prefs-highlights-option-most-recent-download =
+    .label = Недавние загрузки
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Страницы, сохранённые в { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Заметки
+home-prefs-snippets-description = Обновления от { -vendor-short-name } и { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } строка
+            [few] { $num } строки
+           *[many] { $num } строк
+        }
+
 ## Search Section
 
 search-bar-header = Панель поиска
@@ -565,6 +604,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Предлагать и генерировать надежные пароли
     .accesskey = н
+forms-fill-logins-and-passwords =
+    .label = Автозаполнять логины и пароли
+    .accesskey = в
 forms-saved-logins =
     .label = Сохранённые логины…
     .accesskey = х
@@ -641,6 +683,10 @@ sitedata-block-desc = Тип заблокированного
     .accesskey = п
 sitedata-option-block-trackers =
     .label = Сторонние трекеры
+sitedata-option-block-cross-site-trackers =
+    .label = Межсайтовые трекеры
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Межсайтовые и социальные трекеры
 sitedata-option-block-unvisited =
     .label = Куки с непосещённых сайтов
 sitedata-option-block-all-third-party =
@@ -675,7 +721,7 @@ addressbar-suggestions-settings = Изменить настройки для п�
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Блокировка содержимого
-content-blocking-description = Блокирует стороннее содержимое, отслеживающее вас в Интернете. Контролируйте, что из вашей онлайн-активности хранится и пересылается между сайтами.
+content-blocking-enhanced-tracking-protection = Улучшенная защита от отслеживания
 content-blocking-section-description = Защищайте свою приватность во время веб-сёрфинга. Блокируйте невидимый контент, который отслеживает, какие сайты вы посещаете, и профилирует вас. Блокировка некоторого содержимого может ускорить загрузку страниц.
 content-blocking-learn-more = Подробнее
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -689,22 +735,29 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Персональная
     .accesskey = а
-content-blocking-standard-description = Блокирует только известные трекеры в приватных окнах.
 content-blocking-standard-desc = Обеспечивает наилучший баланс защиты и производительности. Разрешает некоторые трекеры для корректной работы веб-сайтов.
-content-blocking-strict-desc = Блокирует все трекеры, известные { -brand-short-name }. Может вызывать проблемы с некоторыми веб-сайтами.
 content-blocking-strict-description = Усиленная защита может вызывать проблемы с некоторыми веб-сайтами.
 content-blocking-custom-desc = Выберите, что блокировать.
 content-blocking-private-trackers = Все известные трекеры в приватных окнах
 content-blocking-third-party-cookies = Куки сторонних трекеров
+content-blocking-etp-standard-desc = Обеспечивает наилучший баланс защиты и производительности. Страницы будут загружаться нормально.
+content-blocking-etp-strict-desc = Усиленная защита может вызывать проблемы с некоторыми веб-сайтами и их содержимым.
+content-blocking-etp-custom-desc = Выберите, какие трекеры и скрипты необходимо блокировать.
+content-blocking-private-windows = Отслеживающее содержимое в приватных окнах
+content-blocking-cross-site-tracking-cookies = Межсайтовые отслеживающие куки
+content-blocking-social-media-trackers = Трекеры социальных сетей
 content-blocking-all-cookies = Все куки
 content-blocking-unvisited-cookies = Куки с непосещённых сайтов
 content-blocking-all-windows-trackers = Все известные трекеры во всех окнах
+content-blocking-all-windows-tracking-content = Отслеживающее содержимое во всех окнах
 content-blocking-all-third-party-cookies = Все сторонние куки
 content-blocking-cryptominers = Криптомайнеры
 content-blocking-fingerprinters = Сборщики цифровых отпечатков
 content-blocking-warning-title = Осторожно!
 content-blocking-warning-description = Блокировка содержимого может вызывать проблемы с некоторыми веб-сайтами. Можно легко отключить блокировку для сайтов, которым вы доверяете.
 content-blocking-learn-how = Подробнее
+content-blocking-etp-warning-description = Блокировка трекеров может нарушить работу некоторых сайтов. Перезагрузите страницу с трекерами, чтобы загрузить все содержимое.
+content-blocking-warning-learn-how = Подробнее
 content-blocking-reload-description = Вам понадобится обновить свои вкладки, чтобы применить эти изменения.
 content-blocking-reload-tabs-button =
     .label = Обновить все вкладки
@@ -712,6 +765,9 @@ content-blocking-reload-tabs-button =
 content-blocking-trackers-label =
     .label = Трекеры
     .accesskey = е
+content-blocking-tracking-content-label =
+    .label = Отслеживающее содержимое
+    .accesskey = ж
 content-blocking-tracking-protection-option-all-windows =
     .label = Во всех окнах
     .accesskey = е

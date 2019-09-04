@@ -29,11 +29,6 @@ search-input-box =
             [windows] Seçeneklerde ara
            *[other] Tercihlerde ara
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Kurumunuz bazı seçenekleri değiştirme olanağını devre dışı bırakmış.
-       *[other] Kurumunuz bazı tercihleri değiştirme olanağını devre dışı bırakmış.
-    }
 managed-notice = Tarayıcınız kuruluşunuz tarafından yönetiliyor.
 pane-general-title = Genel
 category-general =
@@ -348,8 +343,8 @@ browsing-cfr-recommendations =
     .label = Gezinirken yeni eklentiler öner
     .accesskey = G
 browsing-cfr-features =
-    .label = Gezinti yeni özellikler öner
-    .accesskey = G
+    .label = Gezinirken yeni özellikler öner
+    .accesskey = z
 browsing-cfr-recommendations-learn-more = Daha fazla bilgi al
 
 ## General Section - Proxy
@@ -397,6 +392,49 @@ use-current-pages =
 choose-bookmark =
     .label = Yer imi kullan…
     .accesskey = m
+
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Firefox giriş sayfası içeriği
+home-prefs-content-description = Firefox giriş sayfasında görmek istediğiniz içerikleri seçin.
+home-prefs-content-discovery-description = Firefox giriş sayfasındaki içerik keşfi özelliği, internetteki kaliteli ve ilginizi çekebilecek yazıları keşfetmenizi sağlar.
+home-prefs-search-header =
+    .label = Web araması
+home-prefs-topsites-header =
+    .label = Sık kullanılan siteler
+home-prefs-topsites-description = En çok ziyaret ettiğiniz siteler
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = { $provider } öneriyor
+home-prefs-recommended-by-description = İnternetin her yanından sizin için seçtiğimiz kaliteli içerikler
+home-prefs-recommended-by-learn-more = Nasıl çalışıyor?
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Sponsorlu haberler
+home-prefs-highlights-header =
+    .label = Öne çıkanlar
+home-prefs-highlights-description = Kaydettiğiniz ve ziyaret ettiğiniz sitelerin bir seçkisi
+home-prefs-highlights-option-visited-pages =
+    .label = Ziyaret ettiğim sayfalar
+home-prefs-highlights-options-bookmarks =
+    .label = Yer imleri
+home-prefs-highlights-option-most-recent-download =
+    .label = Son indirme
+home-prefs-highlights-option-saved-to-pocket =
+    .label = { -pocket-brand-name }’a kaydettiğim sayfalar
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Duyurular
+home-prefs-snippets-description = { -vendor-short-name } ve { -brand-product-name }’tan haberler
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } satır
+           *[other] { $num } satır
+        }
 
 ## Search Section
 
@@ -562,6 +600,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Güçlü parolalar öner ve oluştur
     .accesskey = G
+forms-fill-logins-and-passwords =
+    .label = Kullanıcı adı ve parolaları otomatik doldur
+    .accesskey = ı
 forms-saved-logins =
     .label = Kayıtlı hesaplar…
     .accesskey = K
@@ -638,6 +679,10 @@ sitedata-block-desc = Engellenecek tür
     .accesskey = ü
 sitedata-option-block-trackers =
     .label = Üçüncü taraf takipçileri
+sitedata-option-block-cross-site-trackers =
+    .label = Siteler arası takipçiler
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Siteler arası takipçiler ve sosyal medya takipçileri
 sitedata-option-block-unvisited =
     .label = Ziyaret etmediğim sitelerden gelen çerezler
 sitedata-option-block-all-third-party =
@@ -672,7 +717,7 @@ addressbar-suggestions-settings = Arama motoru önerileri için tercihleri deği
 ## Privacy Section - Content Blocking
 
 content-blocking-header = İçerik engelleme
-content-blocking-description = Web’de sizi takip eden üçüncü taraf içeriklerini engelleyebilirsiniz. İnternette yaptıklarınızın ne kadarının depolanacağına ve siteler arasında paylaşılacağına siz karar verin.
+content-blocking-enhanced-tracking-protection = Gelişmiş izlenme koruması
 content-blocking-section-description = Gezinirken gizliliğinizi koruyun. Ziyaret ettiğiniz siteleri izleyen ve profilinizi çıkarak görünmez içerikleri engelleyebilirsiniz. Bu içerikleri engellemek sayfaların daha hızlı yüklenmesini de sağlayabilir.
 content-blocking-learn-more = Daha fazla bilgi al
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -686,28 +731,38 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Özel
     .accesskey = Ö
-content-blocking-standard-description = Bilinen takipçileri yalnızca gizli penceredeyken engeller.
 content-blocking-standard-desc = Koruma ve performans dengesi sunar. Web sitelerinin düzgün çalışabilmesi için bazı takipçilere izin verir.
-content-blocking-strict-desc = { -brand-short-name } tarafından bulunan tüm takipçileri engeller. Bazı siteler düzgün çalışmayabilir.
 content-blocking-strict-description = Daha güçlü koruma. Bazı sitelerin bozulmasına neden olabilir.
 content-blocking-custom-desc = Nelerin engelleneceğini seçin.
 content-blocking-private-trackers = Bilinen takipçileri yalnızca gizli pencelerde engeller
 content-blocking-third-party-cookies = Üçüncü taraf takip çerezlerini engeller
+content-blocking-etp-standard-desc = Dengeli koruma ve performans. Sayfalar normal şekilde yüklenir.
+content-blocking-etp-strict-desc = Daha güçlü koruma, ama bazı siteler ve içerikler düzgün çalışmayabilir.
+content-blocking-etp-custom-desc = Hangi takipçilerin ve betiklerin engelleneceğini seçin.
+content-blocking-private-windows = Gizli pencelerde takip amaçlı içerikler
+content-blocking-cross-site-tracking-cookies = Siteler arası takip çerezleri
+content-blocking-social-media-trackers = Sosyal medya takipçileri
 content-blocking-all-cookies = Tüm çerezler
 content-blocking-unvisited-cookies = Ziyaret etmediğim sitelerden gelen çerezler
 content-blocking-all-windows-trackers = Bilinen takipçileri tüm pencerelerde engeller
+content-blocking-all-windows-tracking-content = Tüm pencerelerde takip amaçlı içerikler
 content-blocking-all-third-party-cookies = Tüm üçüncü taraf çerezlerini engeller
 content-blocking-cryptominers = Kripto madencileri
 content-blocking-fingerprinters = Parmak izi toplayıcılar
 content-blocking-warning-title = Dikkat!
 content-blocking-warning-description = İçerikleri engellemek bazı sitelerin bozulmasına neden olabilir. Güvendiğiniz sitelerde engellemeyi kolayca kapatabilirsiniz.
 content-blocking-learn-how = Engellemeyi kapatmayı öğrenin
+content-blocking-etp-warning-description = Takipçileri engellemek bazı sitelerin düzgün çalışmamasına yol açabilir. Takipçi içeren bir sayfanın tüm içeriğini yüklemek için sayfayı tazeleyin.
+content-blocking-warning-learn-how = Nasıl yapılacağını öğrenin
 content-blocking-reload-description = Bu değişiklikleri uygulamak için sekmelerinizi tazelemeniz gerekiyor.
 content-blocking-reload-tabs-button =
     .label = Tüm sekmeleri tazele
     .accesskey = T
 content-blocking-trackers-label =
     .label = Takipçiler
+    .accesskey = T
+content-blocking-tracking-content-label =
+    .label = Takip amaçlı içerikler
     .accesskey = T
 content-blocking-tracking-protection-option-all-windows =
     .label = Tüm pencerelerde

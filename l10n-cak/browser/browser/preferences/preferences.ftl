@@ -29,11 +29,6 @@ search-input-box =
             [windows] Tikanöx pa Taq Cha'oj
            *[other] Tikanöx pa Taq Ajowab'äl
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Ri amoloj xeruchüp rub'eyal richin yejal jujun taq cha'oj.
-       *[other] Ri amoloj xeruchüp rub'eyal richin yejal jujun taq ajowab'äl.
-    }
 managed-notice = Ri awokik'amaya'l ninuk'samajiïx ruma ri amoloj.
 pane-general-title = Chijun
 category-general =
@@ -290,6 +285,21 @@ update-pref-write-failure-title = Rusachoj Tz'ib'anïk
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Man xyake' ta ri ajowab'äl. Man xtz'ib'äx ta chi re ri yakb'äl: { $path }
+update-setting-write-failure-title = Xsach toq xyak ri Ruk'exoj taq ajowab'äl
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    { -brand-short-name } xrïl jun sachoj ruma ri' toq man xuyäk ta re jaloj re'. Tatz'eta' chi re runuk'ulem re rajowab'al jaloj re' nrajo' chi niya' q'ij richin nitz'ib'äx pa ri yakb'äl. Rik'in jub'a' rat o jun runuk'samajel q'inoj yixtikïr nisöl re sachoj, rik'in ruchajixik chijun ri yakb'äl ruma ri molaj okisanela'. 
+    
+    Man tikirel ta xtz'ib'äx chupam ri yakb'äl: { $path }
+update-in-progress-title = Nitajin Nik'ex
+update-in-progress-message = ¿La nawajo' chi ri { -brand-short-name } nuk'isib'ej ri k'exoj?
+update-in-progress-ok-button = &Tich'aqïx
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Titikïr chik el
 
 ## General Section - Performance
 
@@ -382,6 +392,49 @@ use-current-pages =
 choose-bookmark =
     .label = Tokisäx yaketal…
     .accesskey = y
+
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Etamab'äl pa ri Rutikirib'al Firefox
+home-prefs-content-description = Tacha' achike etamab'äl nawajo' pa ri Rutikirib'al Firefox ruwäch.
+home-prefs-content-discovery-description = Content Discovery pa Rutikirib'al Firefox nuya' q'ij chawe richin ye'awïl nima'q taq cholna'oj ri nïm kejqalem pa ronojel ajk'amaya'l.
+home-prefs-search-header =
+    .label = Ajk'amaya'l Kanoxïk
+home-prefs-topsites-header =
+    .label = Jeb'ël Taq Ruxaq
+home-prefs-topsites-description = Taq ruxaq yalan ye'atz'ët
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Chilab'en ruma { $provider }
+home-prefs-recommended-by-description = Nïm rupam chijun ri ajk'amaya'l, ichinan awuma rat
+home-prefs-recommended-by-learn-more = Achike rub'eyal nisamäj
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = To'on taq B'anob'äl
+home-prefs-highlights-header =
+    .label = Ya'on kiq'ij
+home-prefs-highlights-description = Jun rucha'onem ruxaq, ri xayäk o xatz'ët
+home-prefs-highlights-option-visited-pages =
+    .label = Taq Ruxaq Etz'eton
+home-prefs-highlights-options-bookmarks =
+    .label = Yaketal
+home-prefs-highlights-option-most-recent-download =
+    .label = K'a B'a' Keqasäx
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Taq Ruxaq Eyakon pa { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Taq pir
+home-prefs-snippets-description = Kik'exoj { -vendor-short-name } chuqa' { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } cholaj
+           *[other] { $num } taq cholaj
+        }
 
 ## Search Section
 
@@ -544,6 +597,12 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Taq man relik ta…
     .accesskey = e
+forms-generate-passwords =
+    .label = Nuchilab'ej chuqa' yerunük' nïm ewan taq tzij
+    .accesskey = c
+forms-fill-logins-and-passwords =
+    .label = Ruyonil ketz'aqatisäx ri tikirib'äl molojri'ïl chuqa' ewan taq tzij
+    .accesskey = i
 forms-saved-logins =
     .label = Yakon kitikirib'al molojri'ïl…
     .accesskey = k
@@ -620,6 +679,10 @@ sitedata-block-desc = Q'aton ruwäch
     .accesskey = r
 sitedata-option-block-trackers =
     .label = Rojqanela' aj rox winäq
+sitedata-option-block-cross-site-trackers =
+    .label = Kojqanela' xoch'in taq ruxaq
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Kojqanela' taq ruxaq chuqa' aj winäq k'amab'ey
 sitedata-option-block-unvisited =
     .label = Taq kuki man etz'eton ta ajkamaya'l taq ruxaq
 sitedata-option-block-all-third-party =
@@ -654,7 +717,7 @@ addressbar-suggestions-settings = Kek'ex ri taq kajowab'al ri taq kichilab'enik 
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Ruq'atik Rupam
-content-blocking-description = Taq'ata' rupam kichin aj rox winäq yatkojqaj pa ajk'amaya'l. Tachajij jarupe' ri asamaj pa k'amab'ey yeyak chuqa' yekomonïx chi kikojol ajk'amaya'l taq ruxaq.
+content-blocking-enhanced-tracking-protection = Utzirisan Chajinïk chuwäch Ojqanem
 content-blocking-section-description = Tachajij ri awichinanem toq yatok pa k'amaya'l. Ke'aq'ata' rupam yekikanoj ri ruxaq e'atz'eton chuqa' yerunük' taq ruwäch b'i'aj. Yeq'at taq rupam nitikïr nub'än chi yesamäj anin ri taq ruxaq.
 content-blocking-learn-more = Tetamäx Ch'aqa' Chik
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -668,22 +731,29 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Ichinan
     .accesskey = I
-content-blocking-standard-description = Xa xe yeruq'ät ojqanela' etaman kiwäch pa Ichinan taq Ruwi'.
 content-blocking-standard-desc = Pajon richin ri chajinïk chuqa' ri rub'eyal nisamäj. Niya' q'ij chi ke jujun taq ojqanela' richin ütz yesamäj ri ajk'amaya'l ruxaq.
-content-blocking-strict-desc = Yeruq'ät konojel ri ojqanela' yetz'et ruma ri { -brand-short-name }. Rik'in jub'a' nub'än chi jujun ta ruxaq man yesamäj ta ütz.
 content-blocking-strict-description = Jun nïm chajinïk, rik'in jub'a' nub'än chi jujun taq ruxaq k'amaya'l man ütz ta yesamäj.
 content-blocking-custom-desc = Ticha' achike niq'at.
 content-blocking-private-trackers = Ojqanela' etaman kiwäch xa xe pa Ichinan Tzuwäch
 content-blocking-third-party-cookies = Kikuki ojqanem kichin aj rox winäq
+content-blocking-etp-standard-desc = Silan richin chajinem chuqa' rub'eyal nisamäj. Achi'el jutaqil xkesamäj ri taq ruxaq.
+content-blocking-etp-strict-desc = Nïm chajinem, xa xe chi nub'än chi jujun taq ruxaq o rupam man yesamäj ta.
+content-blocking-etp-custom-desc = Ke'acha' achike taq ojqanela' chuqa' kiskrip taq komando nawajo' ye'aq'ät
+content-blocking-private-windows = Kichajinik taq rupam pan Ichinan taq Tzuwäch
+content-blocking-cross-site-tracking-cookies = kikuki kojqanik xoch'in taq ruxaq
+content-blocking-social-media-trackers = Kojqanem aj winäq k'amab'ey
 content-blocking-all-cookies = Ronojel taq kuki
 content-blocking-unvisited-cookies = Taq kikuki ruxaq k'amaya'l man e tz'eton ta
 content-blocking-all-windows-trackers = Ojqanela' etaman kiwäch pa ronojel tzuwäch
+content-blocking-all-windows-tracking-content = Rojqaxik rupam pa ronojel tzuwäch
 content-blocking-all-third-party-cookies = Ronojel kikuki aj rox winäq
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = ¡Tak'axäx!
 content-blocking-warning-description = Ri ruq'atik rupam nitikïr nub'än chi jujun ajk'amaya'l ruxaq man ütz ta yesamäj. Man k'ayew ta richin nachüp ri kiq'atik ruxaq k'amaya'l akuqub'an ak'u'x chi kij.
 content-blocking-learn-how = Tetamäx achike rub'eyal
+content-blocking-etp-warning-description = Ri kiq'atik taq ojqanela' rik'in jub'a' nutz'ila' rub'eyal yesamäj jujun taq ruxaq. Tasamajij chik jun ruxaq rik'in ojqanela' richin nasamajib'ej ronojel ri rupam.
+content-blocking-warning-learn-how = Tetamäx achike rub'eyal
 content-blocking-reload-description = K'o chi ye'asamajib'ej chik ri taq ruwi' richin ye'awokisaj re taq jaloj re'.
 content-blocking-reload-tabs-button =
     .label = Kesamajib'ëx Chik Konojel Ri Taq Ruwi'
@@ -691,6 +761,9 @@ content-blocking-reload-tabs-button =
 content-blocking-trackers-label =
     .label = Ojqanela'
     .accesskey = O
+content-blocking-tracking-content-label =
+    .label = Rupam ojqanem
+    .accesskey = o
 content-blocking-tracking-protection-option-all-windows =
     .label = Pa ronojel tzuwäch
     .accesskey = t
@@ -748,6 +821,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Taq man relik ta…
     .accesskey = E
+permissions-autoplay = Ruyon titz'ijtäj
+permissions-autoplay-settings =
+    .label = Taq nuk'ulem…
+    .accesskey = l
 permissions-block-popups =
     .label = Keq'at elenel taq tzuwäch
     .accesskey = K

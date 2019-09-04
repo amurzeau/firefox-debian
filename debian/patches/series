@@ -1,7 +1,6 @@
 fixes/Allow-.js-preference-files-to-set-locked-prefs-with-.patch
 fixes/Bug-1526653-Include-struct-definitions-for-user_vfp-.patch
 fixes/Bug-1556197-amend-Bug-1544631-for-fixing-mips32.patch
-fixes/Bug-1560340-Only-add-confvars.sh-as-a-dependency-to-.patch
 fixes/Bug-1574761-Avoid-race-condition-creating-old-config.patch
 fixes/Bug-1531309-Don-t-use-__PRETTY_FUNCTION__-or-__FUNCT.patch
 porting/Add-xptcall-support-for-SH4-processors.patch
@@ -25,5 +24,4 @@ debian-hacks/Build-against-system-libjsoncpp.patch
 debian-hacks/Use-the-Mozilla-Location-Service-key-when-the-Google.patch
 debian-hacks/Avoid-using-vmrs-vmsr-on-armel.patch
 debian-hacks/Use-remoting-name-for-call-to-gdk_set_program_class.patch
-debian-hacks/Attempt-to-work-around-make-issue-happening-on-arch-.patch
 debian-hacks/Use-build-id-as-langpack-version-for-reproducibility.patch

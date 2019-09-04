@@ -155,9 +155,6 @@ private-browsing-description2 =
     расширение не будет работать во время приватного просмотра и не будет иметь доступа к вашей активности в Интернете.
     Мы внесли это изменение, чтобы сделать ваш приватный просмотр по-настоящему приватным.
     <label data-l10n-name="private-browsing-learn-more">Узнайте, как управлять настройками расширений.</label>
-extensions-view-discover =
-    .name = Загрузить дополнения
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-discopane =
     .name = Рекомендации
     .tooltiptext = { extensions-view-discopane.name }
@@ -253,6 +250,12 @@ shortcuts-modifier-other = Добавьте Ctrl или Alt
 shortcuts-invalid = Неверная комбинация
 shortcuts-letter = Введите букву
 shortcuts-system = Нельзя переопределить горячую клавишу { -brand-short-name }
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Дублирующееся сочетание клавиш
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } используется более одного раза. Дублирующиеся сочетания клавиш могут вызвать неожиданное поведение.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -313,8 +316,18 @@ preferences-addon-button =
 details-addon-button = Подробности
 release-notes-addon-button = Примечания к выпуску
 permissions-addon-button = Разрешения
-addons-enabled-heading = Включено
-addons-disabled-heading = Отключено
+addons-enabled-heading = Включены
+addons-disabled-heading = Отключены
+extension-enabled-heading = Включены
+extension-disabled-heading = Отключены
+theme-enabled-heading = Включены
+theme-disabled-heading = Отключены
+plugin-enabled-heading = Включены
+plugin-disabled-heading = Отключены
+dictionary-enabled-heading = Включены
+dictionary-disabled-heading = Отключены
+locale-enabled-heading = Включены
+locale-disabled-heading = Отключены
 ask-to-activate-button = Включать по запросу
 always-activate-button = Всегда включать
 never-activate-button = Никогда не включать

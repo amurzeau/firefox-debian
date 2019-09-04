@@ -4,9 +4,25 @@
 
 # An old map warning, see https://en.wikipedia.org/wiki/Here_be_dragons
 about-config-warning-title = खतरनाक इलाके!
+about-config-warning-text = इन उच्च श्रेणी की सेटिंग्स को बदलने से इस एप्लीकेशन कि स्थिरता, सुरक्षा, प्रदर्शन को हानि हो सकती है। हमें तब ही आगे बढ़ना चाहिए यदि हमें पता हो कि हम सही हैं।
+about-config-warning-checkbox = कृपया मुझे फिर सताओ।
+about-config-warning-button = मैं जोखिम स्वीकार करता हूं
+about-config2-title = उन्नत कॉन्फ़िगरेशन
+about-config-search-input =
+    .placeholder = खोजें
+about-config-show-all = सभी दिखाएँ
+about-config-pref-add = जोड़ें
+about-config-pref-toggle = टागल करें
+about-config-pref-edit = संपादन
+about-config-pref-save = सहेजें
+about-config-pref-reset = रीसेट
+about-config-pref-delete = मिटाएँ
 
 ## Labels for the type selection radio buttons shown when adding preferences.
 
+about-config-pref-add-type-boolean = बुलियन
+about-config-pref-add-type-number = संख्या
+about-config-pref-add-type-string = स्ट्रिंग
 
 ## Preferences with a non-default value are differentiated visually, and at the
 ## same time the state is made accessible to screen readers using an aria-label
@@ -15,3 +31,7 @@ about-config-warning-title = खतरनाक इलाके!
 ## Variables:
 ##   $value (String): The full value of the preference.
 
+about-config-pref-accessible-value-default =
+    .aria-label = { $value } (default)
+about-config-pref-accessible-value-custom =
+    .aria-label = { $value } (custom)

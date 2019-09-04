@@ -155,9 +155,6 @@ private-browsing-description2 =
     Utvidelsen vil ikke fungere under privat nettlesing, og vil ikke ha tilgang til dine aktiviteter på nettet.
     Vi har gjort denne endringen for å holde privat nettlesing privat.
     <label data-l10n-name="private-browsing-learn-more">Les om hvordan du administrerer utvidelsesinnstillinger.</label>
-extensions-view-discover =
-    .name = Last ned utvidelser
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-discopane =
     .name = Anbefalinger
     .tooltiptext = { extensions-view-discopane.name }
@@ -253,6 +250,12 @@ shortcuts-modifier-other = Inkluder Ctrl eller Alt
 shortcuts-invalid = Ugyldig kombinasjon
 shortcuts-letter = Skriv en bokstav
 shortcuts-system = Kan ikke overskrive en { -brand-short-name }-snarvei
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Duplisert hurtigtast
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } brukes som en hurtigtast i mer enn ett tilfelle. Dublerte hurtigtaster kan forårsake uventet oppførsel.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -314,6 +317,16 @@ release-notes-addon-button = Versjonsnotat
 permissions-addon-button = Tillatelser
 addons-enabled-heading = Aktivert
 addons-disabled-heading = Deaktivert
+extension-enabled-heading = Påslått
+extension-disabled-heading = Avslått
+theme-enabled-heading = Påslått
+theme-disabled-heading = Avslått
+plugin-enabled-heading = Påslått
+plugin-disabled-heading = Avslått
+dictionary-enabled-heading = Påslått
+dictionary-disabled-heading = Avslått
+locale-enabled-heading = Påslått
+locale-disabled-heading = Avslått
 ask-to-activate-button = Spør om aktivering
 always-activate-button = Aktiver alltid
 never-activate-button = Aktiver aldri

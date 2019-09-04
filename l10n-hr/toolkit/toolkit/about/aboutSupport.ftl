@@ -14,21 +14,35 @@ extensions-name = Naziv
 extensions-enabled = Omogućeno
 extensions-version = Inačica
 extensions-id = ID
+security-software-title = Sigurnosni softver
 security-software-type = Vrsta
 security-software-name = Naziv
 security-software-antivirus = Antivirus
+security-software-antispyware = Antispyware
 security-software-firewall = Vatrozid
 features-title = { -brand-short-name } mogućnosti
 features-name = Naziv
 features-version = Inačica
 features-id = ID
+processes-title = Udaljeni procesi
+processes-type = Vrsta
+processes-count = Broj
 app-basics-title = Osnove aplikacije
 app-basics-name = Naziv
 app-basics-version = Inačica
 app-basics-build-id = Build ID
 app-basics-update-channel = Kanal ažuriranja
+# This message refers to the folder used to store updates on the device,
+# as in "Folder for updates". "Update" is a noun, not a verb.
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] Ažuriraj mapu
+       *[other] Ažuriraj mapu
+    }
 app-basics-update-history = Povijest ažuriranja
 app-basics-show-update-history = Prikaži povijest ažuriranja
+# Represents the path to the binary used to start the application.
+app-basics-binary = Binarna aplikacija
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Direktorij profila
@@ -42,9 +56,12 @@ app-basics-memory-use = Zauzeće memorije
 app-basics-performance = Performanse
 app-basics-service-workers = Registrirani service workeri
 app-basics-profiles = Profili
+app-basics-launcher-process-status = Pokretački proces
 app-basics-multi-process-support = Više procesni prozori
-app-basics-process-count = Procesi web sadržaja
-app-basics-key-google = Google Key
+app-basics-remote-processes-count = Udaljeni procesi
+app-basics-enterprise-policies = Pravila poduzeća
+app-basics-location-service-key-google = Google Location Service Key
+app-basics-safebrowsing-key-google = Google Safebrowsing Key
 app-basics-key-mozilla = Mozilla Location Service Key
 app-basics-safe-mode = Sigurni način rada
 show-dir-label =
@@ -70,6 +87,8 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Zapis odluka
 graphics-crash-guards-title = Onemogućene značajke čuvara rušenja
 graphics-workarounds-title = Zaobilazna rješenja
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Protokol prozora
 place-database-title = Baza podataka mjesta
 place-database-integrity = Cjelovitost
 place-database-verify-integrity = Provjeri cjelovitost
@@ -79,6 +98,7 @@ a11y-title = Pristupačnost
 a11y-activated = Aktivirano
 a11y-force-disabled = Onemogući pristupačnost
 a11y-handler-used = Korišteni rukovatelj pristupnosti
+a11y-instantiator = Accessibility Instantiator
 library-version-title = Inačice biblioteke
 copy-text-to-clipboard-label = Kopiraj tekst u međuspremnik
 copy-raw-data-to-clipboard-label = Kopiraj neobrađene podatke u međuspremnik
@@ -105,6 +125,15 @@ media-device-format = Oblik
 media-device-channels = Kanali
 media-device-rate = Stopa
 media-device-latency = Latencija
+intl-title = Internacionalizacija i lokalizacija
+intl-app-title = Postavke aplikacije
+intl-locales-requested = Traženi jezici
+intl-locales-available = Dostupni jezici
+intl-locales-supported = Jezik aplikacije
+intl-locales-default = Zadani jezik
+intl-os-title = Operacijski sustav
+intl-os-prefs-system-locales = Jezici sustava
+intl-regional-prefs = Regionalne postavke
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
@@ -166,6 +195,7 @@ main-thread-no-omtc = glavna nit, bez OMTC
 yes = Da
 no = Ne
 unknown = Nepoznato
+virtual-monitor-disp = Prikaz virtualnog monitora
 
 ## The following strings indicate if an API key has been found.
 ## In some development versions, it's expected for some API keys that they are
@@ -173,15 +203,28 @@ unknown = Nepoznato
 
 found = Pronađeno
 missing = Nedostaje
+gpu-process-pid = GPUProcessPid
+gpu-process = GPUProcess
 gpu-description = Opis
 gpu-vendor-id = ID proizvođača
 gpu-device-id = ID uređaja
 gpu-subsys-id = Subsys ID
 gpu-drivers = Upravljački programi
 gpu-ram = RAM
+gpu-driver-vendor = Izdavatelj upravljačkog programa
 gpu-driver-version = Inačica upravljačkog programa
 gpu-driver-date = Datum upravljačkog programa
 gpu-active = Aktivan
+webgl1-wsiinfo = WebGL 1 WSI informacije upravljačkog programa
+webgl1-renderer = WebGL 1 Renderer upravljačkog programa
+webgl1-version = WebGL 1 inačica upravljačkog programa
+webgl1-driver-extensions = WebGL 1 dodaci upravljačkog programa
+webgl1-extensions = WebGL 1 dodaci
+webgl2-wsiinfo = WebGL 2 WSI informacije upravljačkog programa
+webgl2-renderer = WebGL 2 Renderer upravljačkog programa
+webgl2-version = WebGL 2 inačica upravljačkog programa
+webgl2-driver-extensions = WebGL 2 dodaci upravljačkog programa
+webgl2-extensions = WebGL 2 dodaci
 blocklisted-bug = Blokiran zbog poznatih problema
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
@@ -194,8 +237,18 @@ d3d11video-crash-guard = D3D11 video dekoder
 d3d9video-crash-buard = D3D9 video dekoder
 glcontext-crash-guard = OpenGL
 reset-on-next-restart = Vrati na početne prilikom sljedećeg pokretanja
+gpu-process-kill-button = Prekini GPU proces
+gpu-device-reset = Ponovno pokretanje uređaja
+gpu-device-reset-button = Aktiviraj ponovno pokretanje uređaja
+uses-tiling = Koristi sličice
+content-uses-tiling = Koristi sličice (sadržaj)
+off-main-thread-paint-enabled = Omogućeno iscrtavanje izvan glavnog procesa
+off-main-thread-paint-worker-count = Broj radnika za iscrtavanje izvan glavnog procesa
+target-frame-rate = Ciljani broj sličica
+audio-backend = Audio pozadina
 max-audio-channels = Maksimalno kanala
 channel-layout = Željeni raspored kanala
+sample-rate = Željena učestalost uzorka
 min-lib-versions = Očekivana najmanja inačica
 loaded-lib-versions = Korištena inačica
 has-seccomp-bpf = Seccomp-BPF (filtriranje sistemskih poziva)
@@ -204,8 +257,16 @@ has-user-namespaces = Korisnički imenski prostori
 has-privileged-user-namespaces = Korisnički imenski prostori za privilegirane procese
 can-sandbox-content = Sandboxing sadržajnog procesa
 can-sandbox-media = Sandboxing media priključka
+content-sandbox-level = Sandbox razina sadržajnog procesa
+effective-content-sandbox-level = Sandbox razina učinkovitog sadržajnog procesa
 sandbox-proc-type-content = sadržaj
+sandbox-proc-type-file = sadržaj datoteke
 sandbox-proc-type-media-plugin = medij priključak
+sandbox-proc-type-data-decoder = dekoder podataka
+launcher-process-status-0 = Omogućeno
+launcher-process-status-1 = Onemogućeno zbog kvara
+launcher-process-status-2 = Prisilno onemogućeno
+launcher-process-status-unknown = Nepoznato stanje
 # Variables
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
@@ -224,6 +285,7 @@ wheel-enabled = wheel unos omogućen
 touch-enabled = touch unos omogućen
 drag-enabled = povlačenje klizne trake uključeno
 keyboard-enabled = tipkovnica omogućena
+autoscroll-enabled = automatsko klizanje omogućeno
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference
@@ -233,3 +295,6 @@ touch-warning = async touch input je onemoguće zbog nepodržane postavke: { $pr
 
 ## Strings representing the status of the Enterprise Policies engine.
 
+policies-inactive = Neaktivno
+policies-active = Aktivno
+policies-error = Greška

@@ -5,7 +5,7 @@
 do-not-track-description = Saitidele saadetakse signaal, et sa ei soovi olla jälitatud
 do-not-track-learn-more = Rohkem teavet
 do-not-track-option-default-content-blocking-known =
-    .label = Kui { -brand-short-name } on seadistatud tuntud jälitajaid blokkima
+    .label = kui { -brand-short-name } on seadistatud tuntud jälitajaid blokkima
 do-not-track-option-always =
     .label = alati
 pref-page =
@@ -29,11 +29,6 @@ search-input-box =
             [windows] Otsi sätetest
            *[other] Otsi eelistustest
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Sinu organisatsioon on keelanud mõningate sätete muutmise.
-       *[other] Sinu organisatsioon on keelanud mõningate eelistuste muutmise.
-    }
 managed-notice = Brauserit haldab sinu organisatsioon.
 pane-general-title = Üldine
 category-general =
@@ -378,9 +373,9 @@ home-restore-defaults =
 home-mode-choice-default =
     .label = Firefoxi avaleht (vaikimisi)
 home-mode-choice-custom =
-    .label = Kohandatud URLid…
+    .label = kohandatud URLid…
 home-mode-choice-blank =
-    .label = Tühi leht
+    .label = tühi leht
 home-homepage-custom-url =
     .placeholder = Aseta URL…
 # This string has a special case for '1' and [other] (default). If necessary for
@@ -397,6 +392,49 @@ use-current-pages =
 choose-bookmark =
     .label = Kasuta järjehoidjat…
     .accesskey = j
+
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Firefoxi avalehe sisu
+home-prefs-content-description = Vali sisu, mida soovid Firefoxi avalehel näha.
+home-prefs-content-discovery-description = Sisu avastamise funktsionaalsus Firefoxi avalehel võimaldab sul leida kõrge kvaliteediga seonduvaid artikleid kogu internetist.
+home-prefs-search-header =
+    .label = Veebiotsing
+home-prefs-topsites-header =
+    .label = Top saidid
+home-prefs-topsites-description = Enim külastatud saidid
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = { $provider } soovitab
+home-prefs-recommended-by-description = Parim veebisisu sinu huvidest lähtuvalt
+home-prefs-recommended-by-learn-more = Kuidas see töötab?
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Sponsitud postitused
+home-prefs-highlights-header =
+    .label = Esiletõstetud
+home-prefs-highlights-description = Valik saitidest, mille oled salvestanud või mida oled külastanud
+home-prefs-highlights-option-visited-pages =
+    .label = Külastatud lehed
+home-prefs-highlights-options-bookmarks =
+    .label = Järjehoidjad
+home-prefs-highlights-option-most-recent-download =
+    .label = Viimane allalaadimine
+home-prefs-highlights-option-saved-to-pocket =
+    .label = { -pocket-brand-name }isse salvestatud lehed
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Infokillud
+home-prefs-snippets-description = Uuendused { -vendor-short-name }lt ja { -brand-product-name }ilt
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } rida
+           *[other] { $num } rida
+        }
 
 ## Search Section
 
@@ -559,6 +597,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Erandid…
     .accesskey = r
+forms-generate-passwords =
+    .label = Soovitatakse ja genereeritakse tugevaid paroole
+    .accesskey = S
 forms-saved-logins =
     .label = Salvestatud kasutajakontod…
     .accesskey = l
@@ -634,13 +675,13 @@ sitedata-disallow-cookies-option =
 sitedata-block-desc = Seejuures blokitakse
     .accesskey = u
 sitedata-option-block-trackers =
-    .label = Kolmanda osapoole jälitajad
+    .label = kolmanda osapoole jälitajad
 sitedata-option-block-unvisited =
-    .label = Küpsised külastamata veebisaitidelt
+    .label = küpsised külastamata veebisaitidelt
 sitedata-option-block-all-third-party =
-    .label = Kõik kolmanda osapoole küpsised (võib põhjustada mõnel veebisaidil probleeme)
+    .label = kõik kolmanda osapoole küpsised (võib põhjustada mõnel veebisaidil probleeme)
 sitedata-option-block-all =
-    .label = Kõik küpsised (mõned veebisaidid lähevad katki)
+    .label = kõik küpsised (mõned veebisaidid lähevad katki)
 sitedata-clear =
     .label = Kustuta andmed…
     .accesskey = u
@@ -669,7 +710,6 @@ addressbar-suggestions-settings = Muuda otsingumootorite soovituste sätteid
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Sisu blokkimine
-content-blocking-description = Bloki kolmanda osapoole sisu, mis jälitab sind kogu veebis. Kontrolli, kui palju sinu tegevusest veebisaidid salvestada ja omavahel jagada saavad.
 content-blocking-section-description = Kaitse veebilehitsemise ajal oma privaatsust. Bloki nähtamatu sisu, mis jälitab ning profileerib sinu tegevust. Sellise sisu blokkimine võib teha lehtede laadimise kiiremaks.
 content-blocking-learn-more = Rohkem teavet
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -683,15 +723,13 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Kohandatud
     .accesskey = K
-content-blocking-standard-description = Tuntud jälitajad blokitakse vaid privaatsetes akendes.
 content-blocking-standard-desc = Tasakaalustatud kaitse ja jõudlus. Mõned jälitajad on lubatud, et saidid töötaks korrektselt.
-content-blocking-strict-desc = Blokitakse kõik { -brand-short-name }i tuvastatud jälitajad. Mõned saidid ei pruugi korrektselt toimida.
 content-blocking-strict-description = Tugevam kaitse, võib põhjustada mõnel saidil probleeme.
 content-blocking-custom-desc = Võimaldab blokitava sisu ise valida.
 content-blocking-private-trackers = tuntud jälitajad ainult privaatsetes akendes
 content-blocking-third-party-cookies = kolmanda osapoole jälitamise küpsised
 content-blocking-all-cookies = Kõik küpsised
-content-blocking-unvisited-cookies = Küpsised külastamata saitidelt
+content-blocking-unvisited-cookies = küpsised külastamata saitidelt
 content-blocking-all-windows-trackers = tuntud jälitajad kõigis akendes
 content-blocking-all-third-party-cookies = kõik kolmanda osapoole küpsised
 content-blocking-cryptominers = krüptorahakaevurid
@@ -707,25 +745,25 @@ content-blocking-trackers-label =
     .label = Jälitajad
     .accesskey = J
 content-blocking-tracking-protection-option-all-windows =
-    .label = Kõigis akendes
-    .accesskey = K
+    .label = kõigis akendes
+    .accesskey = k
 content-blocking-option-private =
-    .label = Vaid privaatsetes akendes
+    .label = vaid privaatsetes akendes
     .accesskey = p
 content-blocking-tracking-protection-change-block-list = Muuda blokkimise nimekirja
 content-blocking-cookies-label =
-    .label = küpsised
-    .accesskey = k
+    .label = Küpsised
+    .accesskey = K
 content-blocking-expand-section =
     .tooltiptext = Rohkem teavet
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
-    .label = krüptorahakaevurid
-    .accesskey = ü
+    .label = Krüptorahakaevurid
+    .accesskey = K
 # Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
 # that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
 content-blocking-fingerprinters-label =
-    .label = seadmetuvastajad
+    .label = Seadmetuvastajad
     .accesskey = j
 
 ## Privacy Section - Tracking

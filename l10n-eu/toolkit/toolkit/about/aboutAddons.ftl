@@ -150,9 +150,6 @@ legacy-extensions =
     .value = Legatu-hedapenak
 legacy-extensions-description = Hedapen hauek ez dira { -brand-short-name }(r)en gutxieneko kalitatera heltzen eta desaktibatu egin dira. <label data-l10n-name="legacy-learn-more">Gehigarrien aldaketei buruzko argibide gehiago</label>
 private-browsing-description2 = { -brand-short-name } aldatzen ari da hedapenak nola dabiltzan nabigatze pribatuan. { -brand-short-name }(e)ra gehitutako hedapen berriak lehenespenez ez dira leiho pribatuetan ibiliko. Ezarpenetan baimendu ezean, hedapena ez da ibiliko modu pribatuan nabigatu ahala eta bertan ez du zure lineako jardueretarako sarbiderik izango. Zure nabigatze pribatua benetan pribatu mantentzeko egin dugu aldaketa hau. <label data-l10n-name="private-browsing-learn-more">Hedapenen ezarpenak kudeatzeko argibide gehiago.</label>
-extensions-view-discover =
-    .name = Eskuratu gehigarriak
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-discopane =
     .name = Gomendioak
     .tooltiptext = { extensions-view-discopane.name }
@@ -248,6 +245,12 @@ shortcuts-modifier-other = Kontuan hartu Ktrl edo Alt
 shortcuts-invalid = Konbinazio baliogabea
 shortcuts-letter = Idatzi letra bat
 shortcuts-system = Ezin da { -brand-short-name }(r)en lasterbidea gainidatzi
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Bikoiztutako lasterbidea
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } behin baino gehiagotan ari da erabiltzen lasterbide gisa. Bikoiztutako lasterbideek espero gabeko portaera eragin lezakete.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -302,6 +305,16 @@ release-notes-addon-button = Bertsio-oharrak
 permissions-addon-button = Baimenak
 addons-enabled-heading = Gaituta
 addons-disabled-heading = Desgaituta
+extension-enabled-heading = Gaituta
+extension-disabled-heading = Desgaituta
+theme-enabled-heading = Gaituta
+theme-disabled-heading = Desgaituta
+plugin-enabled-heading = Gaituta
+plugin-disabled-heading = Desgaituta
+dictionary-enabled-heading = Gaituta
+dictionary-disabled-heading = Desgaituta
+locale-enabled-heading = Gaituta
+locale-disabled-heading = Desgaituta
 ask-to-activate-button = Galdetu aktibatzea
 always-activate-button = Aktibatu beti
 never-activate-button = Ez aktibatu inoiz

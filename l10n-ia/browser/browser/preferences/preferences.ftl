@@ -29,11 +29,6 @@ search-input-box =
             [windows] Cercar in le optiones
            *[other] Cercar in le preferentias
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Tu organisation ha disactivate le poter de cambiar alcun optiones.
-       *[other] Tu organisation ha disactivate le poter de cambiar alcun preferentias.
-    }
 managed-notice = Tu navigator debe ser gerite per tu organisation.
 pane-general-title = General
 category-general =
@@ -274,10 +269,10 @@ update-application-auto =
     .label = Installar le actualisationes automaticamente (recommendate)
     .accesskey = A
 update-application-check-choose =
-    .label = Recercar actualisationes ma permitter que tu decide si tu los installara
+    .label = Cercar actualisationes, ma lassar te decider si tu los installa
     .accesskey = C
 update-application-manual =
-    .label = Non recercar jammais actualisationes (non recommendate)
+    .label = Non cercar jammais actualisationes (non recommendate)
     .accesskey = N
 update-application-warning-cross-user-setting = Iste configuration sera applicate a tote le contos de Windows e profilos de { -brand-short-name } per iste installation de { -brand-short-name }.
 update-application-use-service =
@@ -397,6 +392,49 @@ use-current-pages =
 choose-bookmark =
     .label = Usar un marcapaginas…
     .accesskey = m
+
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Pagina initial de Firefox
+home-prefs-content-description = Elige qual contento tu desira pro tu pagina initial de Firefox.
+home-prefs-content-discovery-description = Content Discovery in Firefox Home te consenti de discoperir articulos pertinente, de alte qualitate, in le Web.
+home-prefs-search-header =
+    .label = Recerca del Web
+home-prefs-topsites-header =
+    .label = Sitos popular
+home-prefs-topsites-description = Le sitos que tu visita plus
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Recommendate per { $provider }
+home-prefs-recommended-by-description = Grande contento ex tote le Web, personalisate pro te
+home-prefs-recommended-by-learn-more = Como illo labora
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Articulos sponsorisate
+home-prefs-highlights-header =
+    .label = In evidentia
+home-prefs-highlights-description = Un selection de sitos que tu ha salvate o visitate
+home-prefs-highlights-option-visited-pages =
+    .label = Paginas visitate
+home-prefs-highlights-options-bookmarks =
+    .label = Marcapaginas
+home-prefs-highlights-option-most-recent-download =
+    .label = Discargamento plus recente
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Paginas salvate in { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Breve novas
+home-prefs-snippets-description = Actualitates de { -vendor-short-name } e { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } riga
+           *[other] { $num } rigas
+        }
 
 ## Search Section
 
@@ -559,6 +597,12 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Exceptiones…
     .accesskey = x
+forms-generate-passwords =
+    .label = Suggerer e generar contrasignos robuste
+    .accesskey = u
+forms-fill-logins-and-passwords =
+    .label = Auto-popular le authenticationes pro accessos e contrasignos
+    .accesskey = A
 forms-saved-logins =
     .label = Authenticationes salvate…
     .accesskey = L
@@ -635,6 +679,10 @@ sitedata-block-desc = Typo de contentos blocate
     .accesskey = T
 sitedata-option-block-trackers =
     .label = Traciatores de tertie partes
+sitedata-option-block-cross-site-trackers =
+    .label = Traciatores tra sitos e tra retes social
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Traciatores tra sitos e tra retes social
 sitedata-option-block-unvisited =
     .label = Cookies de sitos web non visitate
 sitedata-option-block-all-third-party =
@@ -669,7 +717,7 @@ addressbar-suggestions-settings = Cambiar le preferentias pro le suggestiones de
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Blocage de contento
-content-blocking-description = Bloca le contento de tertios que te tracia per le web. Controla quanto de tu activitate in linea es immagazinate e condividite inter le sitos web.
+content-blocking-enhanced-tracking-protection = Protection de traciamento meliorate
 content-blocking-section-description = Protege tu confidentialitate durante que tu naviga. Bloca le contento invisibile que tracia le sitos que tu visita e crea tu profilo. Blocar parte de iste contento pote render plus veloce cargar paginas.
 content-blocking-learn-more = Saper plus
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -683,22 +731,29 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Personalisate
     .accesskey = P
-content-blocking-standard-description = Le traciatores cognoscite es blocate solmente in le Fenestras private.
 content-blocking-standard-desc = Equilibrio perfecte inter protection e rendimento. Permitte alcun traciatores a fin que le sitos web functiona correctemente.
-content-blocking-strict-desc = Bloca tote le traciatores que { -brand-short-name } detecta. Pote impedir alcun sitos de functionar.
 content-blocking-strict-description = Un protection plus forte pote facer errar in alcun sitos.
 content-blocking-custom-desc = Elige que blocar.
 content-blocking-private-trackers = Traciatores note solo in Fenestras private
 content-blocking-third-party-cookies = Cookies traciator de tertie partes
+content-blocking-etp-standard-desc = Balanciate pro protection e performance. Paginas cargara normalmente.
+content-blocking-etp-strict-desc = Protection plus forte, ma pote causar alcun sitos o contento collaber.
+content-blocking-etp-custom-desc = Elige qual traciatores e scripts blocar.
+content-blocking-private-windows = Contento traciator in Fenestras reservate
+content-blocking-cross-site-tracking-cookies = Cookies traciator tra sitos
+content-blocking-social-media-trackers = Traciatores de retes social
 content-blocking-all-cookies = Tote le cookies
 content-blocking-unvisited-cookies = Cookie ab sitos web non visitate
 content-blocking-all-windows-trackers = Traciatores note in tote le fenestras
+content-blocking-all-windows-tracking-content = Contento traciator in tote le fenestras
 content-blocking-all-third-party-cookies = Tote le cookies de tertie partes
 content-blocking-cryptominers = Crypto-minatores
 content-blocking-fingerprinters = Dactylogrammatores
 content-blocking-warning-title = Attention!
 content-blocking-warning-description = Alcun sitos web pote non functionar correctemente con le blocage de contento. Es facile disactivar le blocage pro sitos de confidentia.
 content-blocking-learn-how = Apprender como
+content-blocking-etp-warning-description = Blocar traciatores poterea haber impacto sur le functionalitate de alcun sitos.
+content-blocking-warning-learn-how = Apprende como
 content-blocking-reload-description = Tu debera recargar tu schedas pro applicar iste cambios.
 content-blocking-reload-tabs-button =
     .label = Recargar tote le schedas
@@ -706,6 +761,9 @@ content-blocking-reload-tabs-button =
 content-blocking-trackers-label =
     .label = Traciatores
     .accesskey = T
+content-blocking-tracking-content-label =
+    .label = Contento traciator
+    .accesskey = t
 content-blocking-tracking-protection-option-all-windows =
     .label = In tote le fenestras
     .accesskey = t
@@ -763,6 +821,7 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Exceptiones…
     .accesskey = E
+permissions-autoplay = Autoreproduction
 permissions-autoplay-settings =
     .label = Parametros…
     .accesskey = r

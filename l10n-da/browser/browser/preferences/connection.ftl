@@ -65,6 +65,9 @@ connection-proxy-noproxy = Ingen proxy for
 
 connection-proxy-noproxy-desc = Fx .mozilla.org, .net.dk, 192.168.1.0/24
 
+# Do not translate localhost, 127.0.0.1 and ::1.
+connection-proxy-noproxy-localhost-desc = Forbindelser til localhost, 127.0.0.1 og ::1 er aldrig forbundet via en proxy.
+
 connection-proxy-autotype =
     .label = Automatisk proxy-konfigurations-URL
     .accesskey = U
@@ -85,17 +88,6 @@ connection-proxy-socks-remote-dns =
 connection-dns-over-https =
     .label = Aktiver DNS via HTTPS
     .accesskey = H
-
-connection-dns-over-https-url = URL
-    .accesskey = U
-    .tooltiptext = URL til DNS-opslag via HTTPS
-
-# Variables:
-#   $url (String) - URL for the DNS over HTTPS provider
-connection-dns-over-https-url-default =
-    .label = Brug ({ $url }) som standard
-    .accesskey = B
-    .tooltiptext = Brug standard-URL'en til DNS-opslag over HTTPS
 
 connection-dns-over-https-url-resolver = Brug leverandør
     .accesskey = l

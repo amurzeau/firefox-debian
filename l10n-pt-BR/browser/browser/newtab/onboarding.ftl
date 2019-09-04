@@ -19,16 +19,36 @@ onboarding-button-label-get-started = Começar
 ## Welcome modal dialog strings
 
 onboarding-welcome-header = Boas-vindas ao { -brand-short-name }
-onboarding-welcome-body = Você instalou o navegador.<br/>Descubra outros produtos e serviços da { -brand-product-name }.
+onboarding-welcome-body = Você instalou o navegador.<br/>Conheça outros produtos e serviços do { -brand-product-name }.
 onboarding-welcome-learn-more = Saiba mais sobre os benefícios.
 onboarding-join-form-header = Junte-se ao { -brand-product-name }
 onboarding-join-form-body = Digite seu endereço de e-mail para começar.
 onboarding-join-form-email =
     .placeholder = Digite seu e-mail
 onboarding-join-form-email-error = É necessário um e-mail válido
-onboarding-join-form-legal = Ao continuar, você concorda com os <a data-l10n-name="terms">Termos do Serviço</a> e <a data-l10n-name="privacy">Aviso de Privacidade</a>.
+onboarding-join-form-legal = Ao continuar, você concorda com os <a data-l10n-name="terms">Termos de Serviço</a> e o <a data-l10n-name="privacy">Aviso de Privacidade</a>.
 onboarding-join-form-continue = Continuar
 onboarding-start-browsing-button-label = Comece a navegar
+onboarding-cards-dismiss =
+    .title = Dispensar
+    .aria-label = Dispensar
+
+## Firefox Sync modal dialog strings.
+
+onboarding-sync-welcome-header = Leve o { -brand-product-name } com você
+onboarding-sync-welcome-content = Tenha seus favoritos, histórico, senhas e outras configurações em todos os seus dispositivos.
+onboarding-sync-welcome-learn-more-link = Saiba mais sobre a Conta Firefox
+onboarding-sync-form-invalid-input = Necessário um e-mail válido
+onboarding-sync-legal-notice = Ao continuar você concorda com os <a data-l10n-name="terms">Termos de serviço</a> e a <a data-l10n-name="privacy">Política de privacidade</a>.
+onboarding-sync-form-input =
+    .placeholder = E-mail
+onboarding-sync-form-continue-button = Continuar
+onboarding-sync-form-skip-login-button = Pular essa etapa
+
+## This is part of the line "Enter your email to continue to Firefox Sync"
+
+onboarding-sync-form-header = Insira seu email
+onboarding-sync-form-sub-header = para continuar com o { -sync-brand-name }.
 
 ## These are individual benefit messages shown with an image, title and
 ## description.
@@ -43,7 +63,7 @@ onboarding-benefit-privacy-title = Privacidade verdadeira
 # Firefox Personal Data Promise is the way we honor your data in everything we
 # make and do. We take less data. We keep it safe. And we make sure that we are
 # transparent about how we use it."
-onboarding-benefit-privacy-text = Tudo o que fazemos honra nossa Promessa de Dados Pessoais: Levar menos. Manter seguro. Sem segredos.
+onboarding-benefit-privacy-text = Tudo o que fazemos honra nossa promessa de como lidar com dados pessoais: Coletar pouco. Manter seguro. Sem segredos.
 
 ## These strings belong to the individual onboarding messages.
 
@@ -53,7 +73,7 @@ onboarding-benefit-privacy-text = Tudo o que fazemos honra nossa Promessa de Dad
 ## The string for the button is found above, in the UI strings section
 
 onboarding-private-browsing-title = Navegação privativa
-onboarding-private-browsing-text = Navegue sozinho. A navegação privativa com bloqueio de conteúdo impede que rastreadores on-line sigam você pela web.
+onboarding-private-browsing-text = Navegue sozinho. A navegação privativa com bloqueio de conteúdo impede que rastreadores online sigam você pela web.
 onboarding-screenshots-title = Screenshots
 onboarding-screenshots-text = Crie, salve e compartilhe capturas de tela - sem sair do { -brand-short-name }. Capture uma região ou uma página inteira enquanto navega. Então salve na nuvem para acessar e compartilhar com facilidade.
 onboarding-addons-title = Extensões
@@ -69,12 +89,12 @@ onboarding-tracking-protection-button2 = Como funciona
 onboarding-data-sync-title = Leve suas configurações com você
 # "Sync" is short for synchronize.
 onboarding-data-sync-text2 = Sincronize favoritos, senhas e outras coisas em todo lugar que usar o { -brand-product-name }.
-onboarding-data-sync-button2 = Entrar no { -sync-brand-short-name }
+onboarding-data-sync-button2 = Entre no { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Fique atento a vazamentos de dados
 onboarding-firefox-monitor-text = O { -monitor-brand-name } verifica se seu e-mail apareceu em um vazamento de dados e manda um alerta para você caso apareça em um novo vazamento.
 onboarding-firefox-monitor-button = Cadastre-se para receber alertas
 onboarding-browse-privately-title = Navegue com privacidade
-onboarding-browse-privately-text = A navegação privativa limpa sua pesquisa e seu histórico de navegação para manter em segredo de qualquer um que use seu computador.
+onboarding-browse-privately-text = A navegação privativa limpa seu histórico de pesquisa e navegação para manter em segredo de qualquer um que use o computador.
 onboarding-browse-privately-button = Abrir uma janela privativa
 onboarding-firefox-send-title = Mantenha privativos seus arquivos compartilhados
 onboarding-firefox-send-text2 = Envie seus arquivos para pelo { -send-brand-name } para compartilhar com criptografia de ponta a ponta e um link que expira automaticamente.
@@ -83,7 +103,7 @@ onboarding-mobile-phone-title = Instale o { -brand-product-name } no seu celular
 onboarding-mobile-phone-text = Baixe o { -brand-product-name } para iOS ou Android e sincronize seus dados entre dispositivos.
 # "Mobile" is short for mobile/cellular phone, "Browser" is short for web
 # browser.
-onboarding-mobile-phone-button = Baixar o navegador para celular
+onboarding-mobile-phone-button = Baixe o navegador para celular
 onboarding-send-tabs-title = Envie abas para si mesmo instantaneamente
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
@@ -101,7 +121,7 @@ onboarding-facebook-container-button = Adicionar a extensão
 
 ## Message strings belonging to the Return to AMO flow
 
-return-to-amo-sub-header = Ótimo, agora você tem o { -brand-short-name }
+return-to-amo-sub-header = Ótimo, você tem o { -brand-short-name }
 # <icon></icon> will be replaced with the icon belonging to the extension
 #
 # Variables:

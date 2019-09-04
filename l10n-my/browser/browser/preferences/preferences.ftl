@@ -27,11 +27,6 @@ search-input-box =
             [windows] ရွေးစရာများထဲမှ ရှာပါ
            *[other] နှစ်သက်ရာအပြင်အဆင်များထဲမှ ရှာပါ
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] သင့် အဖွဲ့အစည်းမှ အခြားသော လုပ်ဆောင်ချက်များအား တားမြစ်ထားသည်
-       *[other] သင့် အဖွဲ့အစည်းမှ အခြားသော  လုပ်ဆောင်ချက် အပြင်အဆင် များအား တားမြစ်ထားသည်
-    }
 pane-general-title = အထွေထွေ
 category-general =
     .tooltiptext = { pane-general-title }
@@ -44,10 +39,6 @@ category-search =
 pane-privacy-title = ကိုယ်ရေးကာကွယ်မှု နှင့် လုံခြုံရေး
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Firefox အကောင့်
-category-sync =
-    .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } အထောက်အပံ့
 addons-button-label = တိုးချဲ့မှုနှင့် အပြင်အဆင်များ
 focus-search =
@@ -352,6 +343,33 @@ choose-bookmark =
     .label = စာမှတ်ကို အသုံးပြုပါ…
     .accesskey = B
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-topsites-header =
+    .label = ထိပ်တန်းဝဘ်ဆိုက်များ
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = { $provider } က အကြံပြုထားသည်
+home-prefs-recommended-by-learn-more = ဘယ်လိုအလုပ်လုပ်လဲ
+home-prefs-highlights-header =
+    .label = ဦးစားပေးအကြောင်းအရာများ
+home-prefs-highlights-option-visited-pages =
+    .label = လည်ပတ်ခဲ့သည့်စာမျက်နှာများ
+home-prefs-highlights-options-bookmarks =
+    .label = စာမှတ်များ
+home-prefs-highlights-option-most-recent-download =
+    .label = လတ်တလောဆွဲချမှုများ
+home-prefs-highlights-option-saved-to-pocket =
+    .label = { -pocket-brand-name } တွင် သိမ်းထားသည့် စာမျက်နှာများ
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = မှတ်စုတိုများ
+home-prefs-snippets-description = { -vendor-short-name } နှင့် { -brand-product-name } မှ အပ်ဒိတ်များ
+
 ## Search Section
 
 search-bar-header = ရှာဖွေရေးဘားတန်း
@@ -494,8 +512,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = သိမ်းဆည်းပါ
     .accesskey = v
-sync-mobilepromo-single = အခြားကိရိယာကို ချိတ်ဆက်ရန်
-sync-mobilepromo-multi = ကိရိယာများကို စီမံရန်
 sync-connect-another-device = အခြားကိရိယာကို ချိတ်ပါ။
 sync-manage-devices = ကိရိယာများကို စီမံပါ။
 sync-fxa-begin-pairing = ကိရိယာတစ်ခု တွဲဖက်ပါ။

@@ -92,7 +92,7 @@ detail-update-manual =
     .label = Dezactivate
     .tooltiptext = Nu instala actualizările automat
 # Used as a description for the option to allow or block an add-on in private windows.
-detail-private-browsing-label = Execută în ferestre private
+detail-private-browsing-label = Rulează în ferestre private
 detail-private-browsing-description2 = Când are permisiunea, extensia va avea acces la activitățile tale online în timp ce navighezi privat. <label data-l10n-name="detail-private-browsing-learn-more">Află mai multe</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
 # cannot be overridden by the user.
@@ -152,9 +152,6 @@ legacy-extensions-description = Aceste extensii nu îndeplinesc standardele actu
 private-browsing-description2 =
     { -brand-short-name } schimbă felul în care extensiile funcționează în navigarea privată. Orice extensie nouă pe care o adaugi în { -brand-short-name } nu va rula în mod implicit în cadrul ferestrelor private. Dacă nu permiți asta din setări, extensia nu va funcționa în timpul navigării private și nu va avea acces la activitățile tale online. Am făcut această modificare pentru ca navigarea privată să rămână privată.
     <label data-l10n-name="private-browsing-learn-more">Află cum să gestionezi setările pentru extensii</label>.
-extensions-view-discover =
-    .name = Descarcă suplimente
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-discopane =
     .name = Recomandări
     .tooltiptext = { extensions-view-discopane.name }
@@ -236,7 +233,7 @@ extensions-updates-update-selected =
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
-    .label = Gestionează scurtături de extensii
+    .label = Gestionează comenzile rapide ale extensiilor
     .accesskey = S
 shortcuts-no-addons = Nu ai activat nicio extensie.
 shortcuts-no-commands = Următoarele extensii nu au comenzi rapide:
@@ -247,7 +244,7 @@ shortcuts-pageAction = Activează acțiunea pe pagină
 shortcuts-sidebarAction = Comută bara laterală
 shortcuts-modifier-mac = Include Ctrl, Alt sau ⌘
 shortcuts-modifier-other = Include Ctrl sau Alt
-shortcuts-invalid = Combinație invalidă
+shortcuts-invalid = Combinație nevalidă
 shortcuts-letter = Tastează o literă
 shortcuts-system = Scurtăturile { -brand-short-name } nu pot fi înlocuite
 # String displayed when a keyboard shortcut is already used by another add-on
@@ -270,13 +267,13 @@ go-back-button =
 # ("recommends") in the final sentence is a link to external documentation.
 discopane-intro = Extensiile și temele sunt ca un fel de aplicații pentru browser și îți permit să îți protejezi parolele, să descarci videoclipuri, să descoperi oferte, să blochezi reclame enervante, să schimbi aspectul browserului și multe altele. Aceste programe software mici sunt adesea dezvoltate de părți terțe. Iată o selecție pe care { -brand-product-name } <a data-l10n-name="learn-more-trigger">o recomandă</a> pentru securitate, performanță și funcționalitate de excepție.
 # Notice to make user aware that the recommendations are personalized.
-discopane-notice-recommendations = Unele dintre aceste recomandări sunt personalizate în baza altor extensii pe care le-ai instalat, a preferințelor de profil și a statisticilor de utilizare.
+discopane-notice-recommendations = Unele dintre aceste recomandări sunt personalizate. Această selecție se bazează pe alte extensii pe care le-ai instalat, pe preferințele de profil și pe statisticile de utilizare.
 discopane-notice-learn-more = Află mai multe
 privacy-policy = Politică de confidențialitate
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
 #   $author (string) - The name of the add-on developer.
-created-by-author = de către <a data-l10n-name="author">{ $author }</a>
+created-by-author = de <a data-l10n-name="author">{ $author }</a>
 # Shows the number of daily users of the add-on.
 # Variables:
 #   $dailyUsers (number) - The number of daily users.
@@ -305,6 +302,16 @@ release-notes-addon-button = Note privind versiunea
 permissions-addon-button = Permisiuni
 addons-enabled-heading = Activat
 addons-disabled-heading = Dezactivat
+extension-enabled-heading = Activate
+extension-disabled-heading = Dezactivate
+theme-enabled-heading = Activate
+theme-disabled-heading = Dezactivate
+plugin-enabled-heading = Activate
+plugin-disabled-heading = Dezactivate
+dictionary-enabled-heading = Activate
+dictionary-disabled-heading = Dezactivate
+locale-enabled-heading = Activate
+locale-disabled-heading = Dezactivate
 ask-to-activate-button = Întreabă pentru activare
 always-activate-button = Activează întotdeauna
 never-activate-button = Nu activa niciodată

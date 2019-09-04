@@ -4,8 +4,6 @@
 
 do-not-track-description = तपाईँ आफु ट्रयाक हुन चाहन्न भन्नको लागि वेबसाइटहरूलाई “Do Not Track” सङ्केत पठाउनुहोस्
 do-not-track-learn-more = अझै जान्नुहोस्
-do-not-track-option-default =
-    .label = केवल ट्रयाकिङ्ग सुरक्षा प्रयोग गर्दा
 do-not-track-option-always =
     .label = सधैँ
 pref-page =
@@ -29,11 +27,6 @@ search-input-box =
             [windows] विकल्पहरू मा फेला पार्नुहोस्
            *[other] प्राथमिकताहरू मा फेला पार्नुहोस्
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] तपाईंको संगठनले केही विकल्पहरू परिवर्तन गर्ने क्षमता अक्षम गरेको छ।
-       *[other] तपाईंको संगठनले केही प्राथमिकताहरू परिवर्तन गर्ने क्षमता अक्षम गरेको छ।
-    }
 pane-general-title = सामान्य
 category-general =
     .tooltiptext = { pane-general-title }
@@ -46,10 +39,6 @@ category-search =
 pane-privacy-title = गोपनीयता & सुरक्षा
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Firefox खाता
-category-sync =
-    .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } समर्थन
 focus-search =
     .key = f
@@ -84,9 +73,6 @@ extension-controlled-new-tab-url = यो एक्सटेन्सन, <img d
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = यो एक्सटेन्सन, <img data-l10n-name="icon"/> { $name } , लाई कन्टेनर ट्याबहरू चाहिन्छ ।
-# This string is shown to notify the user that their tracking protection preferences
-# are being controlled by an extension.
-extension-controlled-websites-tracking-protection-mode = यो एक्सटेन्सन, <img data-l10n-name="icon"/> { $name }, ले ट्रयाकिङ्ग सुरक्षा नियन्त्रण गरिरहेको छ।
 
 ## Preferences UI Search Results
 
@@ -341,6 +327,47 @@ choose-bookmark =
     .label = पुस्तकचिनो प्रयोग गर्नुहोस्...
     .accesskey = B
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Firefox गृह सामग्री
+home-prefs-content-description = तपाईंको Firefox गृह पृष्ठमा तपाईँ कुन सामग्री राख्न चाहनुहुन्छ छान्नुहोस् ।
+home-prefs-search-header =
+    .label = वेब खोजि
+home-prefs-topsites-header =
+    .label = शीर्ष साइटहरू
+home-prefs-topsites-description = तपाईंले धेरै भ्रमण गर्नुभएका साइटहरू
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = { $provider } द्वारा सिफारिस गरिएको
+home-prefs-recommended-by-description = वेब वरिपरिका राम्रा सामग्रीहरु, तपाईंको लागि निजीकृत गरिएको
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = प्रायोजित गरिएको कथाहरू
+home-prefs-highlights-header =
+    .label = विशेषताहरू
+home-prefs-highlights-description = तपाईंले सुरक्षित गर्नुभएको वा भ्रमण गर्नुभएको साइटहरू
+home-prefs-highlights-option-visited-pages =
+    .label = भ्रमण गरिएका पृष्ठहरू
+home-prefs-highlights-options-bookmarks =
+    .label = पुस्तकचिनोहरू
+home-prefs-highlights-option-most-recent-download =
+    .label = सबैभन्दा नयाँ डाउनलोड
+home-prefs-highlights-option-saved-to-pocket =
+    .label = { -pocket-brand-name } मा सङ्ग्रह गरिएका पृष्ठहरू
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = स्निप्पेटस्
+home-prefs-snippets-description = { -vendor-short-name } र { -brand-product-name } का अद्यावधिकहरू
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } पक्ति
+           *[other] { $num } पक्ति
+        }
+
 ## Search Section
 
 search-bar-header = खोजीपट्टि
@@ -442,8 +469,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = सङ्ग्रह गर्नुहोस्
     .accesskey = v
-sync-mobilepromo-single = अर्को उपकरण जडान गर्नुहोस्
-sync-mobilepromo-multi = यन्त्रहरू प्रबन्धन गर्नुहोस्
 sync-tos-link = सेवाको सर्तहरू
 sync-fxa-privacy-notice = गोपनीयता नीति
 
@@ -453,7 +478,6 @@ privacy-header = ब्राउजर गोपनीयता
 
 ## Privacy Section - Forms
 
-forms-header = फारमहरू & गोप्यशब्दहरू
 forms-exceptions =
     .label = अपवादहरू...
     .accesskey = x
@@ -504,18 +528,9 @@ history-clear-on-close-settings =
 ## Privacy Section - Site Data
 
 sitedata-learn-more = अझ जान्नुहोस्
-sitedata-keep-until = सम्म राख्नुहोस्
-    .accesskey = u
-sitedata-keep-until-expire =
-    .label = तिनीहरूको समय अवधि सकियो
-sitedata-keep-until-closed =
-    .label = { -brand-short-name } बन्द गरियो
 sitedata-clear =
     .label = डेटा खालीगर्नुहोस्…
     .accesskey = l
-sitedata-cookies-exceptions =
-    .label = अपवादहरू...
-    .accesskey = E
 
 ## Privacy Section - Address Bar
 
@@ -537,23 +552,6 @@ addressbar-suggestions-settings = खोज इन्जिन सुझाव�
 
 ## Privacy Section - Tracking
 
-tracking-header = ट्रयाकिङ्ग सुरक्षा
-tracking-mode-label = ज्ञात ट्रयाकरहरू रोक्न ट्रयाकिङ्ग सुरक्षा प्रयोग गर्नुहोस्
-tracking-mode-always =
-    .label = सधैँ
-    .accesskey = y
-tracking-mode-private =
-    .label = निजी सञ्झ्यालमा मात्र खोल्नुहोस्
-    .accesskey = l
-tracking-mode-never =
-    .label = कहिले पनि होइन
-    .accesskey = N
-tracking-exceptions =
-    .label = अपवादहरू...
-    .accesskey = x
-tracking-change-block-list =
-    .label = ब्लक सूची परिवर्तन गर्नुहोस्…
-    .accesskey = C
 
 ## Privacy Section - Permissions
 
@@ -607,7 +605,6 @@ collection-health-report-link = अझ जान्नुहोस्
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = यस निर्माण कन्फिगरेसनको लागि डाटा रिपोर्टिङ अक्षम गरिएको छ
-collection-browser-errors-link = अझ जान्नुहोस्
 collection-backlogged-crash-reports-link = अझ जान्नुहोस्
 
 ## Privacy Section - Security

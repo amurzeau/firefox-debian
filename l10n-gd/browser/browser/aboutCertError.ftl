@@ -34,9 +34,24 @@ cert-error-domain-mismatch-single-nolink = Bidh làraichean-lìn a’ dearbhadh 
 # $subject-alt-names (String) - Alternate domain names for which the cert is valid.
 cert-error-domain-mismatch-multiple = Bidh làraichean-lìn a’ dearbhadh cò iad le teisteanasan tèarainteachd. Chan eil earbsa aig { -brand-short-name } san làrach seo a chionn ’s gu bheil e a’ cleachdadh teisteanas nach eil dligheach airson { $hostname }. Chan eil an teisteanas dligheach ach airson nan ainmean a leanas: { $subject-alt-names }
 # Variables:
+# $hostname (String) - Hostname of the website with cert error.
+# $not-after-local-time (Date) - Certificate is not valid after this time.
+cert-error-expired-now = Bidh làraichean-lìn a’ dearbhadh cò iad le teisteanasan a dh’obraicheas fad greis. Dh’fhalbh an ùine air an teisteanas aig { $hostname } { $not-after-local-time }
+# Variables:
+# $hostname (String) - Hostname of the website with cert error.
+# $not-before-local-time (Date) - Certificate is not valid before this time.
+cert-error-not-yet-valid-now = Bidh làraichean-lìn a’ dearbhadh cò iad le teisteanasan a dh’obraicheas fad greis. Cha bhi teisteanas airson { $hostname } dligheach ron { $not-before-local-time }.
+# Variables:
 # $error (String) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
 cert-error-code-prefix-link = Còd na mearachd: <a data-l10n-name="error-code-link">{ $error }</a>
 # Variables:
 # $hostname (String) - Hostname of the website with cert error.
 cert-error-symantec-distrust-description = Bidh làraichean-lìn a’ dearbhadh cò iad le teisteanasan tèarainteachd a tha ’gam foillseachadh le ùghdarrasan theisteanasan. Chan eil earbsa aig a’ mhòrchuid de bhrabhsairean ann an GeoTrust, RapidSSL, Symantec, Thawte agus VeriSign tuilleadh. Tha { $hostname } a’ cleachdadh teisteanas o aon dhe na h-ùghdarrasan seo agus cha ghabh dearbh-aithne na làraich-lìn a dhearbhadh ri linn sin.
 cert-error-symantec-distrust-admin = ’S urrainn dhut fios a leigeil gu rianaire na làraich-lìn seo mun duilgheadas seo.
+# Variables:
+# $hasHSTS (Boolean) - Indicates whether HSTS header is present.
+cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
+# Variables:
+# $hasHPKP (Boolean) - Indicates whether HPKP header is present.
+cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
+cert-error-details-cert-chain-label = Sèine an teisteanais:

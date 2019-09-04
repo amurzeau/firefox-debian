@@ -34,8 +34,15 @@ permissions-button-cancel =
 permissions-button-ok =
     .label = Запазване
     .accesskey = З
+permissions-autoplay-menu = Стандартно за всички страници:
 permissions-searchbox =
     .placeholder = Търсене на страница
+permissions-capabilities-autoplay-allow =
+    .label = Разрешаване на аудио и видео
+permissions-capabilities-autoplay-block =
+    .label = Без аудио
+permissions-capabilities-autoplay-blockall =
+    .label = Спиране на аудио и видео
 permissions-capabilities-allow =
     .label = Разрешаване
 permissions-capabilities-block =
@@ -46,8 +53,6 @@ permissions-capabilities-listitem-allow =
     .value = Разрешаване
 permissions-capabilities-listitem-block =
     .value = Забраняване
-permissions-capabilities-listitem-allow-first-party =
-    .value = Разрешаване само на оригиналната страница
 permissions-capabilities-listitem-allow-session =
     .value = Разрешаване за сесията
 
@@ -58,12 +63,8 @@ permissions-invalid-uri-label = Моля, въведете валидно име
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-tracking-protection-window =
-    .title = Изключения – защита от проследяване
-    .style = { permissions-window.style }
-permissions-exceptions-tracking-protection-desc = Изключили сте защитата от проследяване за следните страници.
 permissions-exceptions-content-blocking-window =
-    .title = Изключения - Ограничаване на съдържание
+    .title = Изключения – Ограничаване на съдържание
     .style = { permissions-window.style }
 permissions-exceptions-content-blocking-desc = Изключили сте ограничаването на съдържание за тези страници.
 
@@ -100,7 +101,14 @@ permissions-exceptions-addons-desc = Може да посочите страни
 permissions-exceptions-autoplay-media-window2 =
     .title = Изключения – Автоматично възпроизвеждане
     .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = Може да укажете страниците, на които винаги е разрешено или забранено автоматично да възпроизвеждат медия със звук. Въведете точния адрес на сайтта и изберете „Забраняване“ или „Разрешаване“.
+permissions-exceptions-autoplay-media-desc2 = Може да укажете страниците, на които винаги е разрешено или забранено автоматично да възпроизвеждат медия със звук. Въведете точния адрес на страницата и изберете „Забраняване“ или „Разрешаване“.
+
+## Site Permissions - Autoplay
+
+permissions-site-autoplay-window =
+    .title = Настройки – Автоматично възпроизвеждане
+    .style = { permissions-window.style }
+permissions-site-autoplay-desc = Тук можете да управлявате страниците, които не следват настройките за автоматично възпроизвеждане по подразбиране.
 
 ## Site Permissions - Notifications
 
@@ -110,7 +118,7 @@ permissions-site-notification-window =
 permissions-site-notification-desc = Следните страници са поискали да ви изпращат известия. Може да определите на кои е позволено да го правят. Също така може да спрете новите запитвания за получаване на известия.
 permissions-site-notification-disable-label =
     .label = Спиране на всички нови запитвания за изпращане на известия
-permissions-site-notification-disable-desc = По този начин ще попречите на страниците, които не са в списъка да искат разрешение да изпращат известия. Спирането на известията може наруши работата на страниците.
+permissions-site-notification-disable-desc = По този начин ще попречите на страниците, които не са в списъка да искат разрешение да изпращат известия. Спирането на известията може да наруши работата на страниците.
 
 ## Site Permissions - Location
 
@@ -120,7 +128,7 @@ permissions-site-location-window =
 permissions-site-location-desc = Следните страници са поискали достъп до вашето местоположение. Може да определите на кои е позволено да го правят. Също може да спрете бъдещите запитвания за достъп до местоположението ви.
 permissions-site-location-disable-label =
     .label = Спиране на всички нови запитвания за достъп до местоположението
-permissions-site-location-disable-desc = По този начин ще попречите на страниците, които не са в списъка да искат разрешение за достъп до местоположението. Спирането достъпа до местоположението ви може наруши работата на страниците.
+permissions-site-location-disable-desc = По този начин ще попречите на страниците, които не са в списъка да искат разрешение за достъп до местоположението. Спирането достъпа до местоположението ви може да наруши работата на страниците.
 
 ## Site Permissions - Camera
 
@@ -130,7 +138,7 @@ permissions-site-camera-window =
 permissions-site-camera-desc = Следните страници са поискали достъп до вашата камера. Може да определите на кои е позволено да го правят. Също може да спрете бъдещите запитвания за достъп до камерата ви.
 permissions-site-camera-disable-label =
     .label = Спиране на всички нови запитвания за достъп до камерата
-permissions-site-camera-disable-desc = По този начин ще попречите на страниците, които не са в списъка да искат разрешение за достъп до камерата. Спирането на достъпа да камерата ви може наруши работата на страниците.
+permissions-site-camera-disable-desc = По този начин ще попречите на страниците, които не са в списъка да искат разрешение за достъп до камерата. Спирането на достъпа да камерата ви може да наруши работата на страниците.
 
 ## Site Permissions - Microphone
 
@@ -140,4 +148,4 @@ permissions-site-microphone-window =
 permissions-site-microphone-desc = Следните страници са поискали достъп до вашия микрофон. Може да определите на кои е позволено да го правят. Също може да спрете бъдещите запитвания за достъп до микрофона ви.
 permissions-site-microphone-disable-label =
     .label = Спиране на всички нови запитвания за достъп до микрофона
-permissions-site-microphone-disable-desc = По този начин ще попречите на страниците, които не са в списъка да искат разрешение за достъп до микрофона. Спирането на достъпа да микрофона ви може наруши работата на страниците.
+permissions-site-microphone-disable-desc = По този начин ще попречите на страниците, които не са в списъка да искат разрешение за достъп до микрофона. Спирането на достъпа да микрофона ви може да наруши работата на страниците.

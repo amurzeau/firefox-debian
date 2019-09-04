@@ -155,9 +155,6 @@ private-browsing-description2 =
     neveiks naršant privačiai, ir neturės prieigos prie tokios jūsų veiklos. Šį pakeitimą atlikome
     norėdami išlaikyti jūsų privatųjį naršymą privačiu.
     <label data-l10n-name="private-browsing-learn-more">Sužinokite, kaip tvarkyti priedų nuostatas.</label>
-extensions-view-discover =
-    .name = Parsisiųsti priedų
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-discopane =
     .name = Rekomendacijos
     .tooltiptext = { extensions-view-discopane.name }
@@ -253,6 +250,12 @@ shortcuts-modifier-other = Įtraukti Ctrl arba Alt
 shortcuts-invalid = Netinkama kombinacija
 shortcuts-letter = Surinkite raidę
 shortcuts-system = Negalima naudoti „{ -brand-short-name }“ sparčiųjų klavišų
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Pasikartojantis spartusis klavišas
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } jau naudojamas kaip spartusis klavišas. Pasikartojantys spartieji klavišai gali sukelti nepageidaujamų pasekmių.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -316,6 +319,16 @@ release-notes-addon-button = Laidos apžvalga
 permissions-addon-button = Leidimai
 addons-enabled-heading = Įjungta
 addons-disabled-heading = Išjungta
+extension-enabled-heading = Įjungtas
+extension-disabled-heading = Išjungtas
+theme-enabled-heading = Įjungtas
+theme-disabled-heading = Išjungtas
+plugin-enabled-heading = Įjungtas
+plugin-disabled-heading = Išjungtas
+dictionary-enabled-heading = Įjungtas
+dictionary-disabled-heading = Išjungtas
+locale-enabled-heading = Įjungta
+locale-disabled-heading = Išjungta
 ask-to-activate-button = Klausti prieš aktyvinant
 always-activate-button = Visada aktyvinti
 never-activate-button = Niekada neaktyvinti

@@ -29,6 +29,7 @@ search-input-box =
             [windows] ਚੋਣਾਂ 'ਚ ਲੱਭੋ
            *[other] ਮੇਰੀ ਪਸੰਦ 'ਚ ਲੱਭੋ
         }
+managed-notice = ਤੁਹਾਡੇ ਬਰਾਊਜ਼ਰ ਦਾ ਬੰਦੋਬਸਤ ਤੁਹਾਡੀ ਸੰਸਥਾ ਵਲੋਂ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ।
 pane-general-title = ਆਮ
 category-general =
     .tooltiptext = { pane-general-title }
@@ -41,10 +42,6 @@ category-search =
 pane-privacy-title = ਪਰਦੇਦਾਰੀ ਤੇ ਸੁਰੱਖਿਆ
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = ਫਾਇਰਫਾਕਸ ਖਾਤਾ
-category-sync =
-    .tooltiptext = { pane-sync-title }
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
@@ -194,6 +191,7 @@ choose-language-description = ਸਫ਼ੇ ਨੂੰ ਵੇਖਣ ਲਈ ਆਪ�
 choose-button =
     .label = …ਚੁਣੋ
     .accesskey = o
+choose-browser-language-description = ਮੇਨੂ, ਸੁਨੇਹੇ ਅਤੇ { -brand-short-name } ਤੋਂ ਸੁਨੇਹੇ ਵੇਖਾਉਣ ਲਈ ਵਰਤਣ ਵਾਸਤੇ ਭਾਸ਼ਾ ਚੁਣੋ।
 manage-browser-languages-button =
     .label = ...ਬਦਲ ਨਿਯਤ ਕਰੋ
     .accesskey = I
@@ -274,6 +272,13 @@ update-pref-write-failure-title = ਲਿਖਣਾ ਅਸਫ਼ਲ
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = ਪਸੰਦ ਸੰਭਾਲਣ ਲਈ ਅਸਫ਼ਲ ਹੈ। ਫ਼ਾਈਲ ਲਿਖੀ ਨਹੀਂ ਜਾ ਸਕੀ: { $path }
+update-setting-write-failure-title = ਅਪਡੇਟ ਤਰਜੀਹਾਂ ਨੂੰ ਸੰਭਾਲਣ ਲਈ ਗਲਤੀ
+update-in-progress-title = ਅੱਪਡੇਟ ਜਾਰੀ ਹੈ
+update-in-progress-message = ਕੀ ਤੁਸੀਂ { -brand-short-name } ਨੂੰ ਇਸ ਅੱਪਡੇਟ ਨਾਲ ਜਾਰੀ ਰੱਖਣ ਦੇਣਾ ਚਾਹੁੰਦੇ ਹੋ?
+update-in-progress-ok-button = ਖਾਰਜ ਕਰੋ(&D)
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = ਜਾਰੀ ਰੱਖੋ(&C)
 
 ## General Section - Performance
 
@@ -365,6 +370,48 @@ use-current-pages =
 choose-bookmark =
     .label = …ਬੁੱਕਮਾਰਕ ਵਰਤੋ
     .accesskey = B
+
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = ਫਾਇਰਫਾਕਸ ਮੁੱਖ ਪੰਨਾ
+home-prefs-content-description = ਉਹ ਸਮੱਗਰੀ ਚੁਣੋ ਜੋ ਤੁਸੀਂ ਆਪਣੇ ਫਾਇਰਫਾਕਸ ਮੁੱਖ ਪੰਨੇ 'ਤੇ ਚਾਹੁੰਦੇ ਹੋ।
+home-prefs-search-header =
+    .label = ਵੈੱਬ ਖੋਜ
+home-prefs-topsites-header =
+    .label = ਸਿਖਰਲੀਆਂ ਸਾਈਟਾਂ
+home-prefs-topsites-description = ਤੁਹਾਡੇ ਵੱਲੋਂ ਸਭ ਤੋਂ ਵੱਧ ਵੇਖੀਆਂ ਸਾਈਟਾਂ
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = { $provider } ਵਲੋਂ ਸਿਫਾਰਸ਼ੀ
+home-prefs-recommended-by-description = ਸਮੁੱਚੇ ਵੈੱਬ ਤੋਂ ਸ਼ਾਨਦਾਰ ਸਮੱਗਰੀ, ਤੁਹਾਡੇ ਲਈ ਵਿਅਕਤੀਗਤ ਹੈ
+home-prefs-recommended-by-learn-more = ਇਹ ਕਿਵੇਂ ਕੰਮ ਕਰਦੀ ਹੈ
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = ਸਪਾਂਸਰ ਕੀਤੀਆਂ ਕਹਾਣੀਆਂ
+home-prefs-highlights-header =
+    .label = ਹਾਈਲਾਈਟ
+home-prefs-highlights-description = ਉਹਨਾਂ ਸਾਈਟਾਂ ਦੀ ਚੋਣ ਕਰੋ ਜੋ ਤੁਸੀਂ ਸੁਰੱਖਿਅਤ ਜਾਂ ਵਿਜ਼ਿਟ ਕੀਤੀ ਹੈ
+home-prefs-highlights-option-visited-pages =
+    .label = ਵੇਖੇ ਗਏ ਸਫੇ
+home-prefs-highlights-options-bookmarks =
+    .label = ਬੁੱਕਮਾਰਕ
+home-prefs-highlights-option-most-recent-download =
+    .label = ਸਭ ਤੋਂ ਤਾਜ਼ਾ ਕੀਤੇ ਡਾਊਨਲੋਡ
+home-prefs-highlights-option-saved-to-pocket =
+    .label = ਪੰਨਿਆਂ ਨੂੰ { -pocket-brand-name } ਵਿੱਚ ਸੁਰੱਖਿਅਤ ਕੀਤਾ ਗਿਆ ਹੈ
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = ਛੋਟੇ ਟੋਟੇ
+home-prefs-snippets-description = { -vendor-short-name } ਅਤੇ { -brand-product-name } ਤੋਂ ਅੱਪਡੇਟ
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } ਕਤਾਰ
+           *[other] { $num } ਕਤਾਰਾਂ
+        }
 
 ## Search Section
 
@@ -508,8 +555,6 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = ਸੰਭਾਲੋ
     .accesskey = v
-sync-mobilepromo-single = ਹੋਰ ਡਿਵਾਈਸ ਨਾਲ ਕਨੈਕਟ ਕਰੋ
-sync-mobilepromo-multi = ਡਿਵਾਈਸਾਂ ਦਾ ਬੰਦੋਬਸਤ ਕਰੋ
 sync-connect-another-device = ਹੋਰ ਡਿਵਾਈਸ ਨਾਲ ਕਨੈਕਟ ਕਰੋ
 sync-manage-devices = ਡਿਵਾਈਸਾਂ ਦਾ ਬੰਦੋਬਸਤ ਕਰੋ
 sync-fxa-begin-pairing = ਡਿਵਾਈਸ ਨਾਲ ਜੋੜਾ ਬਣਾਓ
@@ -529,6 +574,12 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = …ਛੋਟਾਂ
     .accesskey = x
+forms-generate-passwords =
+    .label = ਮਜ਼ਬੂਤ ਪਾਸਵਰਡ ਸੁਝਾਓ ਅਤੇ ਤਿਆਰ ਕਰੋ
+    .accesskey = u
+forms-fill-logins-and-passwords =
+    .label = ਆਪਣੇ-ਆਪ ਭਰਨ ਲਈ ਲਾਗਇਨ ਅਤੇ ਪਾਸਵਰਡ
+    .accesskey = i
 forms-saved-logins =
     .label = …ਸੰਭਾਲੇ ਹੋਏ ਲਾਗਇਨ
     .accesskey = L
@@ -605,6 +656,10 @@ sitedata-block-desc = ਪਾਬੰਦੀ ਲਗਾਈ ਕਿਸਮ
     .accesskey = T
 sitedata-option-block-trackers =
     .label = ਤੀਜੀ-ਧਿਰ ਟਰੈਕਰ
+sitedata-option-block-cross-site-trackers =
+    .label = ਅੰਤਰ-ਸਾਈਟ ਟਰੈਕਰ
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = ਅੰਤਰ-ਸਾਈਟ ਅਤੇ ਸਾਮਿਜਕ ਮੀਡਿਆ ਟਰੈਕਰ
 sitedata-option-block-unvisited =
     .label = ਅਣਪਛਾਤੀਆਂ ਵੈਬਸਾਈਟਾਂ ਤੋਂ ਕੂਕੀਜ਼
 sitedata-option-block-all-third-party =
@@ -639,6 +694,8 @@ addressbar-suggestions-settings = ਖੋਜ ਇੰਜਣ ਸੁਝਾਵਾਂ �
 ## Privacy Section - Content Blocking
 
 content-blocking-header = ਸਮੱਗਰੀ ਪਾਬੰਦੀ
+content-blocking-enhanced-tracking-protection = ਵਧੇਰੇ ਟਰੈਕਿੰਗ ਸੁਰੱਖਿਆ
+content-blocking-section-description = ਤੁਹਾਡੇ ਬਰਾਊਜ਼ ਕਰਨ ਦੇ ਦੌਰਾਨ ਤੁਹਾਡੀ ਪਰਦੇਦਾਰੀ ਦੀ ਸੁਰੱਖਿਆ ਕਰਦਾ ਹੈ। ਅਦਿੱਖ ਸਮੱਗਰੀ, ਜੋ ਕਿ ਤੁਹਾਡੇ ਸਾਈਟਾਂ ਨੂੰ ਖੋਲ੍ਹਣ ਨੂੰ ਟਰੈਕ ਕਰਕੇ ਤੁਹਾਡਾ ਪਰੋਫਾਈਲ ਬਣਾਉਂਦੀ ਹੈ, ‘ਤੇ ਪਾਬੰਦੀ ਲਗਾਉਂਦਾ ਹੈ। ਇਹਨਾਂ ਵਿੱਚੋਂ ਕੁਝ ਸਮੱਗਰੀ ‘ਤੇ ਪਾਬੰਦੀ ਲਗਾਉਣ ਨਾਲ ਸਫ਼ੇ ਵੱਧ ਤੇਜ਼ੀ ਨਾਲ ਲੋਡ ਵੀ ਹੋ ਸਕਦੇ ਹਨ।
 content-blocking-learn-more = ਹੋਰ ਜਾਣੋ
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -651,24 +708,34 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = ਚੁਣਿੰਦਾ
     .accesskey = c
-content-blocking-standard-description = ਸਿਰਫ਼ ਨਿੱਜੀ ਵਿੰਡੋ ਵਿੱਚ ਪਛਾਣੇ ਹੋਏ ਟਰੈਕਰਾਂ ਉੱਤੇ ਪਾਬੰਦੀ ਲਗਾਉ।
+content-blocking-standard-desc = ਸੁਰੱਖਿਆ ਅਤੇ ਕਾਰਗੁਜ਼ਾਰੀ ਵਿਚਾਲੇ ਸੰਤੁਲਨ ਹੈ। ਕੁਝ ਟਰੈਕਰਾਂ ਨੂੰ ਕੰਮ ਕਰਨ ਦਿੰਦਾ ਹੈ ਤਾਂ ਕਿ ਵੈੱਬਸਾਈਟਾਂ ਠੀਕ ਤਰ੍ਹਾਂ ਕੰਮ ਕਰਨ।
 content-blocking-strict-description = ਹੋਰ ਵੱਧ ਸੁਰੱਖਿਆ, ਪਰ ਹੋਰ ਸਕਦਾ ਹੈ ਕਿ ਕੁਝ ਸਾਈਟਾਂ ਕੰਮ ਨਾ ਕਰਨ।
 content-blocking-custom-desc = ਚੁਣੋ ਕਿ ਕਿਸ ਉੱਤੇ ਪਾਬੰਦੀ ਲਗਾਉਣੀ ਹੈ।
 content-blocking-private-trackers = ਪ੍ਰਾਈਵੇਟ ਵਿੰਡੋ ਵਿੱਚ ਕੇਵਲ ਜਾਣ-ਪਛਾਣੇ ਟਰੈਕਰ ਹੀ
 content-blocking-third-party-cookies = ਤੀਜੀ-ਧਿਰ ਟਰੈਕ ਕਰਨ ਵਾਲੇ ਕੂਕੀਜ਼
+content-blocking-etp-standard-desc = ਸੁਰੱਖਿਆ ਅਤੇ ਕਾਰਗੁਜ਼ਾਰੀ ਵਿਚਾਲੇ ਸੰਤੁਲਨ ਹੈ, ਸਫ਼ੇ ਆਮ ਨਾਲੋਂ ਵੱਧ ਤੇਜ਼ੀ ਨਾਲ ਲੋਡ ਹੁੰਦੇ ਹਨ।
+content-blocking-etp-strict-desc = ਵਧੇਰੇ ਸੁਰੱਖਿਆ, ਪਰ ਕੁਝ ਸਾਈਟਾਂ ਜਾਂ ਸਮੱਗਰੀ ਦੇ ਨਾ ਕੰਮ ਕਰਨ ਦਾ ਕਾਰਨ ਹੋ ਸਕਦਾ ਹੈ।
+content-blocking-private-windows = ਪ੍ਰਾਈਵੇਟ ਵਿੰਡੋਆਂ ‘ਚ ਸਮੱਗਰੀ ਟਰੈਕਿੰਗ
+content-blocking-cross-site-tracking-cookies = ਅੰਤਰ-ਸਾਈਟ ਟਰੈਕਿੰਗ ਕੂਕੀਜ਼
+content-blocking-social-media-trackers = ਸਮਾਜਿਕ ਮੀਡਿਆ ਟਰੈਕਰ
 content-blocking-all-cookies = ਸਾਰੇ ਕੂਕੀਜ਼
 content-blocking-unvisited-cookies = ਨਾ-ਖੋਲ੍ਹੀਆਂ ਸਾਈਟਾਂ ਤੋਂ ਕੂਕੀਜ਼
 content-blocking-all-windows-trackers = ਸਾਰੀਆਂ ਵਿੰਡੋਆਂ ਵਿੱਚ ਜਾਣ-ਪਛਾਣੇ ਟਰੈਕਰ
+content-blocking-all-windows-tracking-content = ਸਾਰੀਆਂ ਵਿੰਡੋਆਂ ‘ਚ ਸਮੱਗਰੀ ਟਰੈਕਿੰਗ
 content-blocking-all-third-party-cookies = ਸਾਰੇ ਤੀਜੀ-ਧਿਰ ਕੂਕੀਜ਼
 content-blocking-cryptominers = ਕ੍ਰਿਪਟੋ-ਮਾਈਨਰ
 content-blocking-fingerprinters = ਫਿੰਗਰਪਰਿੰਟਰ
 content-blocking-warning-title = ਧਿਆਨ ਰੱਖੋ!
 content-blocking-learn-how = ਸਿੱਖੋ ਕਿ ਕਿਵੇਂ
+content-blocking-warning-learn-how = ਹੋਰ ਸਿੱਖੋ
 content-blocking-reload-tabs-button =
     .label = ਸਾਰੀਆਂ ਟੈਬਾਂ ਮੁੜ-ਲੋਡ ਕਰੋ
     .accesskey = R
 content-blocking-trackers-label =
     .label = ਟਰੈਕਰ
+    .accesskey = T
+content-blocking-tracking-content-label =
+    .label = ਟਰੈਕਿੰਗ ਸਮੱਗਰੀ
     .accesskey = T
 content-blocking-tracking-protection-option-all-windows =
     .label = ਸਾਰੀਆਂ ਵਿੰਡੋਆਂ ‘ਚ
@@ -682,6 +749,10 @@ content-blocking-cookies-label =
     .accesskey = C
 content-blocking-expand-section =
     .tooltiptext = ਹੋਰ ਜਾਣਕਾਰੀ
+# Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
+content-blocking-cryptominers-label =
+    .label = ਕ੍ਰਿਪਟੋ-ਮਾਈਨਰ
+    .accesskey = y
 # Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
 # that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
 content-blocking-fingerprinters-label =
@@ -717,9 +788,16 @@ permissions-notification-link = ਹੋਰ ਜਾਣੋ
 permissions-notification-pause =
     .label = { -brand-short-name } ਮੁੜ-ਚਾਲੂ ਹੋਣ ਤੱਕ ਸੂਚਨਾਵਾਂ ਨੂੰ ਰੋਕੋ
     .accesskey = n
+permissions-block-autoplay-media2 =
+    .label = ਆਪਣੇ-ਆਪ ਆਵਾਜ਼ ਚਲਾਉਣ ਵਾਲੀਆਂ ਵੈਬਸਾਈਟਾਂ ਉੱਤੇ ਪਾਬੰਦੀ ਲਾਓ
+    .accesskey = B
 permissions-block-autoplay-media-exceptions =
     .label = ਛੋਟਾਂ…
     .accesskey = E
+permissions-autoplay = ਆਪੇ-ਚਲਾਓ
+permissions-autoplay-settings =
+    .label = …ਸੈਟਿੰਗਾਂ
+    .accesskey = t
 permissions-block-popups =
     .label = ਪੋਪਅੱਪ ਵਿੰਡੋ 'ਤੇ ਪਾਬੰਦੀ ਲਗਾਓ
     .accesskey = B

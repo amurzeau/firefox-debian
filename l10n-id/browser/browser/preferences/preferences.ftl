@@ -29,11 +29,6 @@ search-input-box =
             [windows] Temukan di Pengaturan
            *[other] Temukan di Pengaturan
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Organisasi Anda telah menonaktifkan kemampuan untuk mengubah beberapa pengaturan.
-       *[other] Organisasi Anda telah menonaktifkan kemampuan untuk mengubah beberapa pengaturan.
-    }
 managed-notice = Peramban Anda dikelola oleh organisasi Anda.
 pane-general-title = Umum
 category-general =
@@ -386,6 +381,45 @@ choose-bookmark =
     .label = Gunakan Markah…
     .accesskey = h
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Konten Beranda Firefox
+home-prefs-content-description = Pilih konten yang ingin Anda tampilkan dalam Beranda Firefox.
+home-prefs-content-discovery-description = Penemuan Konten dalam Firefox Home memungkinkan Anda untuk menemukan artikel bermutu tinggi dan relevan dari seluruh web.
+home-prefs-search-header =
+    .label = Pencarian Web
+home-prefs-topsites-header =
+    .label = Situs Teratas
+home-prefs-topsites-description = Situs yang sering Anda kunjungi
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Disarankan oleh { $provider }
+home-prefs-recommended-by-description = Konten bermutu dari seluruh web, khusus untuk Anda
+home-prefs-recommended-by-learn-more = Panduan
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Konten Sponsor
+home-prefs-highlights-header =
+    .label = Sorotan
+home-prefs-highlights-description = Sejumlah situs yang Anda simpan atau kunjungi
+home-prefs-highlights-option-visited-pages =
+    .label = Laman yang Dikunjungi
+home-prefs-highlights-options-bookmarks =
+    .label = Markah
+home-prefs-highlights-option-most-recent-download =
+    .label = Unduhan Terbaru
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Laman Disimpan di { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Catatan Kecil
+home-prefs-snippets-description = Pembaruan dari { -vendor-short-name } dan { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label = { $num } baris
+
 ## Search Section
 
 search-bar-header = Bilah Pencarian
@@ -626,6 +660,8 @@ sitedata-block-desc = Tipe yang diblokir
     .accesskey = T
 sitedata-option-block-trackers =
     .label = Pelacak pihak ketiga
+sitedata-option-block-cross-site-trackers =
+    .label = Pelacak lintas situs
 sitedata-option-block-unvisited =
     .label = Kuki dari situs yang tidak dikunjungi
 sitedata-option-block-all-third-party =
@@ -660,7 +696,6 @@ addressbar-suggestions-settings = Ubah pengaturan untuk saran mesin pencari
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Pemblokiran Konten
-content-blocking-description = Blokir konten pihak ketiga yang melacak Anda di seantero web. Kendalikan berapa banyak aktivitas daring Anda yang tersimpan dan dibagi antara situs.
 content-blocking-section-description = Lindungi privasi Anda saat menjelajah. Blokir konten tak terlihat yang melacak situs yang Anda kunjungi dan profil Anda. Memblokir sebagian konten ini dapat membuat laman dimuat lebih cepat.
 content-blocking-learn-more = Pelajari Lebih Lanjut
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -674,13 +709,13 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Ubahsuai
     .accesskey = U
-content-blocking-standard-description = Hanya memblokir pelacak yang sudah diketahui di Jendela Privat
 content-blocking-standard-desc = Imbang antara proteksi dan performa. Memungkinkan sejumlah pelacak agar situs berfungsi dengan baik.
-content-blocking-strict-desc = Blokir semua pelacak yang dideteksi { -brand-short-name } . Dapat menyebabkan kerusakan situs.
 content-blocking-strict-description = Perlindungan yang lebih kuat, dapat menyebabkan beberapa situs rusak.
 content-blocking-custom-desc = Pilih yang diblokir.
 content-blocking-private-trackers = Hanya pelacak yang dikenal di Jendela Privat
 content-blocking-third-party-cookies = Kuki pelacak pihak ketiga
+content-blocking-cross-site-tracking-cookies = Kuki pelacakan lintas situs
+content-blocking-social-media-trackers = Pelacak media sosial
 content-blocking-all-cookies = Semua kuki
 content-blocking-unvisited-cookies = Kuki dari situs yang belum dikunjungi
 content-blocking-all-windows-trackers = Pelacak yang dikenal di seluruh jendela
@@ -690,6 +725,7 @@ content-blocking-fingerprinters = Pelacak Sidik
 content-blocking-warning-title = Perhatian!
 content-blocking-warning-description = Pemblokiran konten bisa menyebabkan beberapa situs web tidak berfungsi. Mudah sekali untuk menonaktifkan pemblokiran pada situs yang Anda percayai.
 content-blocking-learn-how = Pelajari caranya
+content-blocking-warning-learn-how = Pelajari caranya
 content-blocking-reload-description = Anda harus memuat ulang tab Anda untuk menerapkan perubahan ini.
 content-blocking-reload-tabs-button =
     .label = Muat Ulang Semua Tab

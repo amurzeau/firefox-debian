@@ -8,14 +8,14 @@
 <!-- Labels and Access Keys -->
 <!ENTITY addToAddressBook.label         "Thêm vào: ">
 <!ENTITY addToAddressBook.accesskey     "v">
-<!ENTITY ListName.label                 "Tên Danh Sách: ">
+<!ENTITY ListName.label                 "Tên danh sách: ">
 <!ENTITY ListName.accesskey             "S">
-<!ENTITY ListNickName.label             "Tên hiệu Danh sách: ">
+<!ENTITY ListNickName.label             "Biệt hiệu danh sách: ">
 <!ENTITY ListNickName.accesskey         "n">
 <!ENTITY ListDescription.label          "Mô tả: ">
 <!ENTITY ListDescription.accesskey      "M">
 <!-- See bug 58485, when we implement drag and drop, add 'or drag addresses' back in -->
 <!ENTITY AddressTitle.label             "Nhập địa chỉ email để thêm chúng vào danh sách thư:">
 <!ENTITY AddressTitle.accesskey         "m">
-<!ENTITY UpButton.label                 "Chuyển Lên">
-<!ENTITY DownButton.label               "Chuyển Xuống">
+<!ENTITY UpButton.label                 "Di chuyển lên">
+<!ENTITY DownButton.label               "Di chuyển xuống">

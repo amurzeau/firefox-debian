@@ -29,6 +29,26 @@ onboarding-join-form-email-error = Geçerli bir e-posta gerekiyor
 onboarding-join-form-legal = Devam ederseniz <a data-l10n-name="terms">Hizmet Koşulları</a>’nı ve <a data-l10n-name="privacy">Gizlilik Bildirimi</a>’ni kabul etmiş olursunuz.
 onboarding-join-form-continue = Devam et
 onboarding-start-browsing-button-label = Gezinmeye başla
+onboarding-cards-dismiss =
+    .title = Kapat
+    .aria-label = Kapat
+
+## Firefox Sync modal dialog strings.
+
+onboarding-sync-welcome-header = { -brand-product-name }’u yanınızda taşıyın
+onboarding-sync-welcome-content = Yer imlerinizi, geçmişinizi, parolalarınızı ve diğer ayarlarınızı tüm cihazlarınızda kullanabilirsiniz.
+onboarding-sync-welcome-learn-more-link = Firefox Hesapları hakkında bilgi alın
+onboarding-sync-form-invalid-input = Geçerli bir e-posta gerekiyor
+onboarding-sync-legal-notice = Devam ederseniz <a data-l10n-name="terms">Kullanım Koşullarını</a> ve <a data-l10n-name="privacy">Gizlilik Bildirimini</a> kabul etmiş sayılırsınız.
+onboarding-sync-form-input =
+    .placeholder = E-posta
+onboarding-sync-form-continue-button = Devam et
+onboarding-sync-form-skip-login-button = Bu adımı atla
+
+## This is part of the line "Enter your email to continue to Firefox Sync"
+
+onboarding-sync-form-header = E-posta adresinizi girip
+onboarding-sync-form-sub-header = { -sync-brand-name }'e devam edin.
 
 ## These are individual benefit messages shown with an image, title and
 ## description.
@@ -71,8 +91,8 @@ onboarding-data-sync-title = Ayarlarınızı yanınızda taşıyın
 onboarding-data-sync-text2 = Yer imlerinizi, parolalarınızı ve daha fazlasını { -brand-product-name } kullandığınız her yerde senkronize edin.
 onboarding-data-sync-button2 = { -sync-brand-short-name }’e giriş yap
 onboarding-firefox-monitor-title = Veri ihlallerinden haberiniz olsun
-onboarding-firefox-monitor-text = { -monitor-brand-name }, e-posta adresinizin veri ihlallerinde yer alıp almadığını takip eder ve verilerinizin çalındığını tespit ederse sizi uyarır.
-onboarding-firefox-monitor-button = Uyarılara kaydolun
+onboarding-firefox-monitor-text = { -monitor-brand-name }, e-posta adresinizin veri ihlallerinde yer alıp almadığını takip eder, verileriniz ele geçirilirse sizi uyarır.
+onboarding-firefox-monitor-button = Uyarılara kaydol
 onboarding-browse-privately-title = Gizlice dolaşın
 onboarding-browse-privately-text = Gizli Gezinti, arama ve gezinti geçmişinizi temizleyerek bilgisayarınızı kullanan başkalarının ne yaptığınızı öğrenmesini önler.
 onboarding-browse-privately-button = Gizli pencere aç
@@ -89,8 +109,14 @@ onboarding-send-tabs-title = Kendinize sekme gönderin
 # tab's context menu.
 onboarding-send-tabs-text = Sekme Gönder özelliğiyle, kopyala-yapıştır yapmadan ve tarayıcınızdan ayrılmadan cihazlarınızdan arasında anında sekme paylaşabilirsiniz.
 onboarding-send-tabs-button = Sekme Gönder’i kullanma başla
+onboarding-pocket-anywhere-title = Her yerde okuyun ve dinleyin
+onboarding-pocket-anywhere-text2 = Beğendiğiniz içerikleri { -pocket-brand-name } uygulamasına çevrimdışı kaydedin; sonra internetiniz yokken bile onları okuyun, dinleyin ve izleyin.
+onboarding-pocket-anywhere-button = { -pocket-brand-name }’ı deneyin
+onboarding-lockwise-passwords-title = Parolalarınızı yanınızda taşıyın
+onboarding-lockwise-passwords-text2 = { -lockwise-brand-name } ile parolalarınızı güvenle kaydedip saklayın, hesaplarınıza kolayca giriş yapın.
 onboarding-lockwise-passwords-button2 = Uygulamayı indir
 onboarding-facebook-container-title = Facebook’un sınırlarını belirleyin
+onboarding-facebook-container-text2 = { -facebook-container-brand-name } profilinizi diğer sitelerden ayrı tutar, böylece Facebook’ reklamlarının sizi hedeflemesini zorlaştırır.
 onboarding-facebook-container-button = Eklentiyi yükle
 
 ## Message strings belonging to the Return to AMO flow

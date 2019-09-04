@@ -12,6 +12,8 @@ abuse-report-learnmore =
     Neviete, ktorý problém vybrať?
     <a data-l10n-name="learnmore-link">Pozrite sa na ďalšie informácie o nahlasovaní rozšírení a tém vzhľadu</a>
 abuse-report-submit-description = Popis problému (voliteľný)
+abuse-report-textarea =
+    .placeholder = Ak váš problém podrobne popíšete, môžeme ho jednoduchšie vyriešiť. Ďakujeme vám za hlásenie.
 abuse-report-submit-note = Poznámka: nezadávajte, prosím, žiadne osobné údaje (meno, e-mailovú adresu, telefónne číslo ani adresu). { -vendor-short-name } si tieto hlásenia trvalo ukladá.
 
 ## Panel buttons.
@@ -32,11 +34,38 @@ abuse-report-messagebar-submitting = Odosielanie hlásenia o doplnku <span data-
 abuse-report-messagebar-submitted = Ďakujeme vám za hlásenie. Chcete doplnok <span data-l10n-name="addon-name">{ $addon-name }</span> odstrániť?
 abuse-report-messagebar-submitted-noremove = Ďakujeme vám za hlásenie.
 abuse-report-messagebar-removed-extension = Ďakujeme vám za hlásenie. Rozšírenie <span data-l10n-name="addon-name">{ $addon-name }</span> bolo odstránené.
+abuse-report-messagebar-removed-theme = Ďakujeme vám za hlásenie. Téma vzhľadu <span data-l10n-name="addon-name">{ $addon-name }</span> bolo odstránené.
+abuse-report-messagebar-error = Pri odosielaní hlásenia o doplnku <span data-l10n-name="addon-name">{ $addon-name }</span> nastala chyba.
+abuse-report-messagebar-error-recent-submit = Hlásenie o doplnku <span data-l10n-name="addon-name">{ $addon-name }</span> nebolo odoslané, pretože ste ho už nedávno nahlásili.
 
 ## Message bars actions.
 
+abuse-report-messagebar-action-remove-extension = Áno, odstrániť
+abuse-report-messagebar-action-keep-extension = Nie, ponechať
+abuse-report-messagebar-action-remove-theme = Áno, odstrániť
+abuse-report-messagebar-action-keep-theme = Nie, ponechať
 abuse-report-messagebar-action-retry = Skúsiť znova
 abuse-report-messagebar-action-cancel = Zrušiť
 
 ## Abuse report reasons (optionally paired with related examples and/or suggestions)
 
+abuse-report-damage-reason = Poškodzuje môj počítač a údaje
+abuse-report-damage-example = Príklad: malvér alebo krádež údajov
+abuse-report-spam-reason = Spam alebo reklamy
+abuse-report-spam-example = Príklad: vkladanie reklám do webových stránok
+abuse-report-settings-reason = Zmena vyhľadávacieho modulu, domovskej stránky alebo stránky novej karty bez predchádzajúceho upozornenia
+abuse-report-settings-suggestions = Pred nahlásením tohto rozšírenia skúste upraviť svoje nastavenia:
+abuse-report-settings-suggestions-search = Zmena vyhľadávacieho modulu
+abuse-report-settings-suggestions-homepage = Zmena domovskej stránky a stránky novej karty
+abuse-report-deceptive-reason = Vydáva sa za niečo iné
+abuse-report-deceptive-example = Príklad: zavádzajúci popis alebo náhľady
+abuse-report-broken-reason-extension = Nefunguje, rozbíja webové stránky alebo spomaľuje { -brand-product-name }
+abuse-report-broken-reason-theme = Nefunguje alebo rozbíja rozhranie prehliadača
+abuse-report-broken-example = Príklad: funkcie sú pomalé, ťažko sa používa, nefunguje, obmedzuje fungovanie alebo zobrazovanie webových stránok
+abuse-report-broken-suggestions-extension = Zdá sa, že ste objavili chybu. Okrem odoslania hlásenia nám v riešení problému pomôže, ak kontaktujete aj autora rozšírenia. <a data-l10n-name="support-link">Navštívte stránky rozšírenia</a>, kde na autora nájdete kontakt.
+abuse-report-broken-suggestions-theme = Zdá sa, že ste objavili chybu. Okrem odoslania hlásenia nám v riešení problému pomôže, ak kontaktujete aj autora témy vzhľadu. <a data-l10n-name="support-link">Navštívte stránky témy vzhľadu</a>, kde na autora nájdete kontakt.
+abuse-report-policy-reason = Nenávistný, násilný alebo nelegálny obsah
+abuse-report-policy-suggestions = Poznámka: problémy s autorskými právami, prosím, hláste podľa <a data-l10n-name="report-infringement-link">tohto návodu</a>.
+abuse-report-unwanted-reason = Nevyžiadané rozšírenie, ktoré nejde odstrániť
+abuse-report-unwanted-example = Príklad: nainštalované cudzou aplikáciou bez môjho vedomia
+abuse-report-other-reason = V niečom inom

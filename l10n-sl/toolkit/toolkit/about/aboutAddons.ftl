@@ -156,9 +156,6 @@ legacy-extensions-description = Te razširitve ne ustrezajo trenutnim standardom
 private-browsing-description2 =
     { -brand-short-name } spreminja delovanje razširitev v zasebnem brskanju. Nove razširitve, dodane v { -brand-short-name } privzeto ne bodo delovale v zasebnih oknih. Razširitve ne bodo delovale v zasebnem brskanju in ne bodo imele dostopa do vaše spletne dejavnosti, razen če to dovolite v nastavitvah.
     <label data-l10n-name="private-browsing-learn-more">Več o upravljanju nastavitev razširitev</label>
-extensions-view-discover =
-    .name = Prenesi dodatke
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-discopane =
     .name = Priporočila
     .tooltiptext = { extensions-view-discopane.name }
@@ -254,6 +251,12 @@ shortcuts-modifier-other = Vključi Ctrl ali Alt
 shortcuts-invalid = Neveljavna kombinacija
 shortcuts-letter = Vnesite črko
 shortcuts-system = Bližnjice { -brand-short-name }a ni mogoče preglasiti
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Podvojena bližnjica
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } se uporablja kot bližnjica v več primerih. Podvojene bližnjice lahko povzročijo nepričakovano vedenje.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -318,6 +321,16 @@ release-notes-addon-button = Opombe ob izdaji
 permissions-addon-button = Dovoljenja
 addons-enabled-heading = Omogočeno
 addons-disabled-heading = Onemogočeno
+extension-enabled-heading = Omogočeno
+extension-disabled-heading = Onemogočeno
+theme-enabled-heading = Omogočeno
+theme-disabled-heading = Onemogočeno
+plugin-enabled-heading = Omogočeno
+plugin-disabled-heading = Onemogočeno
+dictionary-enabled-heading = Omogočeno
+dictionary-disabled-heading = Onemogočeno
+locale-enabled-heading = Omogočeno
+locale-disabled-heading = Onemogočeno
 ask-to-activate-button = Vprašaj pred uporabo
 always-activate-button = Vedno omogoči
 never-activate-button = Nikoli ne omogoči

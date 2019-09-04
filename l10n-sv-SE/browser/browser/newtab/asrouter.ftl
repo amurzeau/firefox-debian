@@ -2,8 +2,15 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## These messages are used as headings in the recommendation doorhanger
+
 cfr-doorhanger-extension-heading = Rekommenderade tillägg
+cfr-doorhanger-feature-heading = Rekommenderad funktion
 cfr-doorhanger-pintab-heading = Prova detta: Fäst flik
+
+
+
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Varför ser jag detta
 cfr-doorhanger-extension-cancel-button = Inte nu
@@ -62,3 +69,44 @@ cfr-doorhanger-bookmark-fxa-link-text = Synkronisera bokmärken nu...
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Stäng knapp
     .title = Stäng
+
+## Protections panel
+
+cfr-protections-panel-header = Surfa utan att bli följd
+cfr-protections-panel-body = Behåll dina data för dig själv. { -brand-short-name } skyddar dig från många av de vanligaste trackarna som följer vad du gör online.
+cfr-protections-panel-link-text = Läs mer
+
+## What's New toolbar button and panel
+
+cfr-whatsnew-button =
+    .label = Vad är nytt
+    .tooltiptext = Vad är nytt
+cfr-whatsnew-panel-header = Vad är nytt
+
+## Bookmark Sync
+
+cfr-doorhanger-sync-bookmarks-header = Få det här bokmärket på din telefon
+cfr-doorhanger-sync-bookmarks-body = Ta med dig dina bokmärken, lösenord, historik, med mera överallt där du är inloggad på { -brand-product-name }.
+cfr-doorhanger-sync-bookmarks-ok-button = Slå på { -sync-brand-short-name }
+    .accesskey = T
+
+## Login Sync
+
+cfr-doorhanger-sync-logins-header = cfr-doorhanger-sync-logins-header = Förlora aldrig ett lösenord igen
+cfr-doorhanger-sync-logins-ok-button = Slå på { -sync-brand-short-name }
+    .accesskey = T
+
+## Send Tab
+
+cfr-doorhanger-send-tab-header = Läs detta var du än är
+cfr-doorhanger-send-tab-recipe-header = Ta med det här receptet till köket
+cfr-doorhanger-send-tab-body = Send Tab låter dig enkelt dela den här länken till din telefon eller var du än är inloggad på { -brand-product-name }.
+cfr-doorhanger-send-tab-ok-button = Prova Send Tab
+    .accesskey = S
+
+## Firefox Send
+
+cfr-doorhanger-firefox-send-header = Dela denna PDF säkert
+cfr-doorhanger-firefox-send-body = Håll dina känsliga dokument säkra från nyfikna ögon med end-to-end-kryptering och en länk som försvinner när du är klar.
+cfr-doorhanger-firefox-send-ok-button = Prova{ -send-brand-name }
+    .accesskey = T

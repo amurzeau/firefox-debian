@@ -29,11 +29,6 @@ search-input-box =
             [windows] Keresés a beállításokban
            *[other] Keresés a beállításokban
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] A szervezete letiltotta egyes beállítások módosítását.
-       *[other] A szervezete letiltotta egyes beállítások módosítását.
-    }
 managed-notice = A böngészőjét a szervezete kezeli.
 pane-general-title = Általános
 category-general =
@@ -398,6 +393,49 @@ choose-bookmark =
     .label = Könyvjelző használata…
     .accesskey = n
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Firefox kezdőlap tartalma
+home-prefs-content-description = Válassza ki milyen tartalmat szeretne a Firefox kezdőlapon.
+home-prefs-content-discovery-description = A Firefox kezdőlapon lévő tartalomfelfedezéssel kiváló minőségű, releváns cikkeket találhat szerte a weben.
+home-prefs-search-header =
+    .label = Webes keresés
+home-prefs-topsites-header =
+    .label = Népszerű oldalak
+home-prefs-topsites-description = A leggyakrabban látogatott oldalak
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = A(z) { $provider } ajánlásával
+home-prefs-recommended-by-description = Nagyszerű tartalom szerte a webről, személyre szabva
+home-prefs-recommended-by-learn-more = Hogyan működik
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Szponzorált történetek
+home-prefs-highlights-header =
+    .label = Kiemelések
+home-prefs-highlights-description = Válogatás azon oldalakból, amelyeket elmentett vagy felkeresett
+home-prefs-highlights-option-visited-pages =
+    .label = Látogatott oldalak
+home-prefs-highlights-options-bookmarks =
+    .label = Könyvjelzők
+home-prefs-highlights-option-most-recent-download =
+    .label = Legutóbbi letöltés
+home-prefs-highlights-option-saved-to-pocket =
+    .label = { -pocket-brand-name }be mentett lapok
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Töredékek
+home-prefs-snippets-description = Hírek a { -vendor-short-name } és a { -brand-product-name } felől
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } sor
+           *[other] { $num } sor
+        }
+
 ## Search Section
 
 search-bar-header = Keresősáv
@@ -562,6 +600,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Erős jelszavak javaslata az előállítása
     .accesskey = j
+forms-fill-logins-and-passwords =
+    .label = Bejelentkezések és jelszavak automatikus kitöltése
+    .accesskey = i
 forms-saved-logins =
     .label = Mentett bejelentkezések…
     .accesskey = t
@@ -638,6 +679,10 @@ sitedata-block-desc = Blokkolt típus
     .accesskey = B
 sitedata-option-block-trackers =
     .label = Harmadik féltől származó követők
+sitedata-option-block-cross-site-trackers =
+    .label = Weboldalak közti nyomkövetők
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Webhelyek közötti és közösségi média követők
 sitedata-option-block-unvisited =
     .label = Nem látogatott webhelyekről származó sütik
 sitedata-option-block-all-third-party =
@@ -672,7 +717,7 @@ addressbar-suggestions-settings = Keresőszolgáltatás-javaslatok beállítása
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Tartalomblokkolás
-content-blocking-description = A harmadik féltől származó tartalmak blokkolása, melyek követik a weben. Irányítsa, hogy az online tevékenysége mekkora része legyen tárolva és megosztva a webhelyek közt.
+content-blocking-enhanced-tracking-protection = Továbbfejlesztett követés elleni védelem
 content-blocking-section-description = Védje meg a magánszféráját böngészés közben. Blokkolja a láthatatlan tartalmakat, melyek követik, hogy mely oldalakat látogat, és profilt építenek Önről. Egyes tartalmak blokkolása a weboldalak gyorsabb betöltését is eredményezheti.
 content-blocking-learn-more = További tudnivalók
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -686,22 +731,29 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Egyéni
     .accesskey = E
-content-blocking-standard-description = Csak az ismert követők blokkolása a privát ablakokban.
 content-blocking-standard-desc = Kiegyensúlyozott védelem és teljesítmény. Engedélyez néhány követőt, hogy a webhelyek megfelelően működjenek.
-content-blocking-strict-desc = A { -brand-short-name } blokkolja az összes észlelt követőt. Egyes webhelyek lehet, hogy nem fognak megfelelően működni.
 content-blocking-strict-description = Erősebb védelem, emiatt egyes weboldalak nem fognak megfelelően működni.
 content-blocking-custom-desc = Válassza ki, mit akar blokkolni.
 content-blocking-private-trackers = Ismert követők csak privát ablakokban
 content-blocking-third-party-cookies = Harmadik féltől származó követő sütik
+content-blocking-etp-standard-desc = Kiegyensúlyozott védelem és teljesítmény. Az oldalak normálisan fognak betölteni.
+content-blocking-etp-strict-desc = Erősebb védelem, de egyes webhelyek és tartalmak hibásan működhetnek.
+content-blocking-etp-custom-desc = Válassza ki a blokkolni kívánt nyomkövetőket és parancsfájlokat.
+content-blocking-private-windows = Követés elleni védelem a privát ablakokban
+content-blocking-cross-site-tracking-cookies = Webhelyek közötti nyomkövető sütik
+content-blocking-social-media-trackers = Közösségimédia-követők
 content-blocking-all-cookies = Minden süti
 content-blocking-unvisited-cookies = Sütik a nem látogatott oldalakról
 content-blocking-all-windows-trackers = Ismert követők minden ablakban
+content-blocking-all-windows-tracking-content = Tartalomkövetés az összes ablakban
 content-blocking-all-third-party-cookies = Összes harmadik féltől származó süti
 content-blocking-cryptominers = Kriptobányászok
 content-blocking-fingerprinters = Ujjlenyomat-készítők
 content-blocking-warning-title = Figyelem!
 content-blocking-warning-description = A tartalomblokkolás egyes webhelyek hibás működését okozhatja. A blokkolás könnyen letiltható azokon az oldalakon, melyekben megbízik.
 content-blocking-learn-how = Tudja meg, hogyan
+content-blocking-etp-warning-description = A nyomkövetők blokkolása befolyásolhatja az egyes webhelyek működését. Töltse újra az oldalt a nyomkövetőkkel, hogy betöltse az összes tartalmat.
+content-blocking-warning-learn-how = Tudja meg, hogyan
 content-blocking-reload-description = A módosítások alkalmazásához frissítenie kell a lapokat.
 content-blocking-reload-tabs-button =
     .label = Összes lap frissítése
@@ -709,6 +761,9 @@ content-blocking-reload-tabs-button =
 content-blocking-trackers-label =
     .label = Követők
     .accesskey = K
+content-blocking-tracking-content-label =
+    .label = Nyomkövető tartalom
+    .accesskey = k
 content-blocking-tracking-protection-option-all-windows =
     .label = Minden ablakban
     .accesskey = M

@@ -3,9 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-## UI strings for the simplified onboarding modal
-
-
 ### UI strings for the simplified onboarding modal / about:welcome
 ### Various strings use a non-breaking space to avoid a single dangling /
 ### widowed word, so test on various window sizes if you also want this.
@@ -26,10 +23,26 @@ onboarding-join-form-email =
     .placeholder = ای میل درز کریں
 onboarding-join-form-continue = جاری رکھیں
 onboarding-start-browsing-button-label = براؤزنگ شروع کریں
+onboarding-cards-dismiss =
+    .title = برخاست کریں
+    .aria-label = برخاست کریں
+
+## Firefox Sync modal dialog strings.
+
+onboarding-sync-form-invalid-input = جائز ای میل کی ظرورت ہے
+onboarding-sync-form-input =
+    .placeholder = ای میل
+onboarding-sync-form-continue-button = جاری رکھیں
+onboarding-sync-form-skip-login-button = اس مرحلے کو چھوڑیں
+
+## This is part of the line "Enter your email to continue to Firefox Sync"
+
+onboarding-sync-form-header = اپنی ای میل داخل کریں
 
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
+onboarding-benefit-knowledge-title = عملی علم
 
 ## These strings belong to the individual onboarding messages.
 
@@ -54,7 +67,6 @@ onboarding-firefox-send-title = اپنی مشترکہ امسال نجی رکھی
 # browser.
 onboarding-mobile-phone-button = موبائل براؤزر ڈاؤن لوڈ کریں
 onboarding-pocket-anywhere-button = { -pocket-brand-name } آزمائیں
-onboarding-lockwise-passwords-button = { -lockwise-brand-name } جاصل کریں
 
 ## Message strings belonging to the Return to AMO flow
 

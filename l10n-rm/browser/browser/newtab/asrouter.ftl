@@ -57,3 +57,15 @@ cfr-doorhanger-pintab-animation-resume = Cuntinuar
 ## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = Sincronisescha tes segnapaginas dapertut.
+cfr-doorhanger-bookmark-fxa-body = Ina buna scuverta! Fa ussa la segira che ti chattas quest segnapagina era sin tes apparats mobils. Creescha in { -fxaccount-brand-name }.
+cfr-doorhanger-bookmark-fxa-link-text = Sincronisar ussa ils segnapaginas…
+cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
+    .aria-label = Buttun per serrar
+    .title = Serrar
+
+## What's New toolbar button and panel
+
+cfr-whatsnew-button =
+    .label = Novaziuns
+    .tooltiptext = Novaziuns
+cfr-whatsnew-panel-header = Novaziuns

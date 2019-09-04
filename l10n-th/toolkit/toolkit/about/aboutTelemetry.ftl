@@ -14,6 +14,7 @@ about-telemetry-option-group-older = เก่ากว่า
 about-telemetry-previous-ping = <<
 about-telemetry-next-ping = >>
 about-telemetry-page-title = ข้อมูลการวัดและส่งข้อมูลทางไกล
+about-telemetry-current-store = ส่วนจัดเก็บปัจจุบัน:
 about-telemetry-more-information = กำลังมองหาข้อมูลเพิ่มเติม?
 about-telemetry-show-in-Firefox-json-viewer = เปิดในตัวดู JSON
 about-telemetry-home-section = หน้าแรก
@@ -26,11 +27,28 @@ about-telemetry-events-section = เหตุการณ์
 about-telemetry-simple-measurements-section = การวัดอย่างง่าย
 about-telemetry-slow-sql-section = คำสั่ง SQL ที่ช้า
 about-telemetry-addon-details-section = รายละเอียดส่วนเสริม
+about-telemetry-captured-stacks-section = สแตกที่ถูกจับ
 about-telemetry-late-writes-section = การเขียนทีหลัง
 about-telemetry-raw-payload-section = ส่วนข้อมูลดิบ
 about-telemetry-raw = ข้อมูลดิบ JSON
 about-telemetry-full-sql-warning = หมายเหตุ: การดีบั๊ก SQL ที่ทำงานช้าถูกเปิดใช้งาน คำสั่ง SQL แบบเต็มอาจถูกแสดงไว้ด้านล่างแต่จะไม่ถูกส่งออกไป
 about-telemetry-hide-stack-symbols = แสดงข้อมูลสแตกดิบ
+# Selects the correct release version
+# Variables:
+#   $channel (String): represents the corresponding release data string
+about-telemetry-data-type =
+    { $channel ->
+        [release] ข้อมูลการเปิดตัว
+       *[prerelease] ข้อมูลก่อนเปิดตัว
+    }
+# Selects the correct upload string
+# Variables:
+#   $uploadcase (String): represents a corresponding upload string
+about-telemetry-upload-type =
+    { $uploadcase ->
+        [enabled] เปิดใช้งานแล้ว
+       *[disabled] ปิดใช้งานแล้ว
+    }
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-page-subtitle = หน้านี้แสดงข้อมูลเกี่ยวกับประสิทธิภาพ, ฮาร์ดแวร์, การใช้งาน และการปรับแต่งที่เก็บรวบรวมไว้โดยตัววัดและส่งข้อมูลทางไกล ข้อมูลนี้จะถูกส่งไปยัง { $telemetryServerOwner } เพื่อช่วยปรับปรุง { -brand-full-name }
@@ -46,6 +64,14 @@ about-telemetry-filter-all-placeholder =
 # Variables:
 #   $searchTerms (String): the searched terms
 about-telemetry-results-for-search = ผลลัพธ์สำหรับ “{ $searchTerms }”
+# More info about it can be found here: https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
+# Variables:
+#   $sectionName (String): the section name from the structure of the ping.
+#   $currentSearchText (String): the current text in the search input
+about-telemetry-no-search-results = ขออภัย! ไม่มีผลลัพธ์ใน { $sectionName } สำหรับ “{ $currentSearchText }”
+# Variables:
+#   $searchTerms (String): the searched terms
+about-telemetry-no-search-results-all = ขออภัย! ไม่มีผลลัพธ์ในส่วนใด ๆ สำหรับ “{ $searchTerms }”
 # This message is displayed when a section is empty.
 # Variables:
 #   $sectionName (String): is replaced by the section name.
@@ -72,6 +98,10 @@ about-telemetry-keys-header = คุณสมบัติ
 about-telemetry-names-header = ชื่อ
 about-telemetry-values-header = ค่า
 # Variables:
+#   $stackKey (String): the string key for this stack
+#   $capturedStacksCount (Integer):  the number of times this stack was captured
+about-telemetry-captured-stacks-title = { $stackKey } (จำนวนครั้งที่จับ: { $capturedStacksCount })
+# Variables:
 #   $lateWriteCount (Integer): the number of the late writes
 about-telemetry-late-writes-title = การเขียนภายหลัง #{ $lateWriteCount }
 about-telemetry-stack-title = สแตก:
@@ -82,6 +112,8 @@ about-telemetry-category-header = หมวดหมู่
 about-telemetry-method-header = วิธีการ
 about-telemetry-object-header = วัตถุ
 about-telemetry-extra-header = พิเศษ
+about-telemetry-origin-origin = ที่มา
+about-telemetry-origin-count = จำนวน
 # Variables:
 #  $process (String): type of process in subsection headers ( e.g. "content", "parent" )
 about-telemetry-process = โปรเซส { $process }

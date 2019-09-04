@@ -2,8 +2,15 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## These messages are used as headings in the recommendation doorhanger
+
 cfr-doorhanger-extension-heading = Rekomendasi Ekstensi
+cfr-doorhanger-feature-heading = Fitur yang Direkomendasikan
 cfr-doorhanger-pintab-heading = Coba Yang Ini: Sematkan Tab
+
+
+
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Mengapa saya melihat ini?
 cfr-doorhanger-extension-cancel-button = Jangan Sekarang
@@ -60,3 +67,27 @@ cfr-doorhanger-bookmark-fxa-link-text = Sinkronkan markah sekarang…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Tombol tutup
     .title = T
+
+## Protections panel
+
+cfr-protections-panel-header = Menjelajah tanpa diikuti
+
+## What's New toolbar button and panel
+
+cfr-whatsnew-button =
+    .label = Yang Baru
+    .tooltiptext = Yang Baru
+cfr-whatsnew-panel-header = Yang Baru
+
+## Bookmark Sync
+
+
+## Login Sync
+
+
+## Send Tab
+
+
+## Firefox Send
+
+cfr-doorhanger-firefox-send-header = Bagikan PDF ini dengan aman

@@ -27,11 +27,7 @@ search-input-box =
             [windows] विकल्पों में खोजें
            *[other] वरियताओं में खोजें
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] आपके संगठन ने कुछ विकल्पों को बदलने की क्षमता अक्षम कर दिया है.
-       *[other] आपके संगठन ने कुछ प्राथमिकताओं को बदलने की क्षमता अक्षम कर दिया है.
-    }
+managed-notice = आपके ब्राउज़र को आपके संगठन द्वारा प्रबंधित किया जा रहा है।
 pane-general-title = सामान्य
 category-general =
     .tooltiptext = { pane-general-title }
@@ -126,6 +122,8 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = पिछला सत्र पुनर्बहाल करें
     .accesskey = s
+startup-restore-warn-on-quit =
+    .label = ब्राउज़र को छोड़ने पर आपको चेतावनी देता है
 disable-extension =
     .label = एक्सटेंशन अक्षम करें
 tabs-group-header = टैब
@@ -273,6 +271,7 @@ update-application-use-service =
 update-enable-search-update =
     .label = स्वचालित रूप से खोज इंजन का अद्यतन करें
     .accesskey = e
+update-in-progress-title = अद्यतन जारी है
 update-in-progress-ok-button = और छोड़े
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
@@ -316,6 +315,9 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = जब टाइप करना शुरू करते हैं तभी पाठ के लिए खोजें
     .accesskey = x
+browsing-cfr-features =
+    .label = ब्राउज़ करते समय सुविधाओं की सिफारिश करें
+    .accesskey = f
 browsing-cfr-recommendations-learn-more = और जानें
 
 ## General Section - Proxy
@@ -363,6 +365,48 @@ use-current-pages =
 choose-bookmark =
     .label = बुकमार्क का उपयोग करें…
     .accesskey = B
+
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Firefox होम सामग्री
+home-prefs-content-description = चुनें जो सामग्री आप अपने Firefox होम स्क्रीन पर चाहते हैं ।
+home-prefs-search-header =
+    .label = वेब खोज
+home-prefs-topsites-header =
+    .label = सर्वोच्च साइटें
+home-prefs-topsites-description = साइटों आप सबसे अधिक यात्रा
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = { $provider } द्वारा अनुशंसित
+home-prefs-recommended-by-description = वेब से शानदार सामग्री, आपके लिए व्यक्तिगत बनाया गया
+home-prefs-recommended-by-learn-more = यह किस प्रकार काम करता है
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = प्रायोजित कहानियां
+home-prefs-highlights-header =
+    .label = प्रमुखताएँ
+home-prefs-highlights-description = आपके द्वारा सहेजी गई या विज़िट की गई साइटों का चयन
+home-prefs-highlights-option-visited-pages =
+    .label = देखे गए पृष्ठ
+home-prefs-highlights-options-bookmarks =
+    .label = बुकमार्क
+home-prefs-highlights-option-most-recent-download =
+    .label = सबसे हालिया डाउनलोड
+home-prefs-highlights-option-saved-to-pocket =
+    .label = पृष्ठ { -pocket-brand-name } में सहेजे गए
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = अंश
+home-prefs-snippets-description = { -vendor-short-name } और { -brand-product-name } से अद्यतन
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } row
+           *[other] { $num } rows
+        }
 
 ## Search Section
 
@@ -506,6 +550,9 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = सहेजें
     .accesskey = v
+sync-connect-another-device = अन्य डिवाइस जोड़ें
+sync-manage-devices = डिवाइस को प्रबंधित करें
+sync-fxa-begin-pairing = एक डिवाइस जोड़े
 sync-tos-link = सेवा शर्त
 sync-fxa-privacy-notice = गोपनीयता नीति
 
@@ -522,6 +569,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = अपवाद…
     .accesskey = x
+forms-generate-passwords =
+    .label = सुझाव दें और मजबूत पासवर्ड बनाएं
+    .accesskey = u
 forms-saved-logins =
     .label = सहेजें गए लॉगइन देखें...
     .accesskey = L
@@ -628,7 +678,6 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = मनपसंद
     .accesskey = त
-content-blocking-standard-description = निजी विंडो में केवल ज्ञात ट्रैकर्स को बाधित करता है।
 content-blocking-custom-desc = अवरोधित करने के लिए चुनें।
 content-blocking-private-trackers = निजी विंडो में केवल ज्ञात ट्रैकर्स
 content-blocking-third-party-cookies = तीसरे-पक्ष की ट्रैकिंग कुकीज़
@@ -637,6 +686,9 @@ content-blocking-all-windows-trackers = सभी विंडो में ज�
 content-blocking-all-third-party-cookies = सभी तृतीय-पक्ष कुकीज़
 content-blocking-warning-title = सावधान!
 content-blocking-learn-how = सीखें कि कैसे
+content-blocking-reload-tabs-button =
+    .label = सभी टैब फिर लोड करें
+    .accesskey = R
 content-blocking-trackers-label =
     .label = ट्रैकर
     .accesskey = T
@@ -685,6 +737,10 @@ permissions-notification-pause =
 permissions-block-autoplay-media-exceptions =
     .label = अपवाद...
     .accesskey = E
+permissions-autoplay = ऑटोप्‍ले
+permissions-autoplay-settings =
+    .label = सेटिंग…
+    .accesskey = t
 permissions-block-popups =
     .label = पॉपअप विंडो को अवरोधित करें
     .accesskey = B

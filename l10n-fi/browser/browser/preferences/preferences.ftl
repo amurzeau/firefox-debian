@@ -29,11 +29,6 @@ search-input-box =
             [windows] Hae asetuksista
            *[other] Hae asetuksista
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Organisaatiosi on estänyt joidenkin asetusten muuttamisen.
-       *[other] Organisaatiosi on estänyt joidenkin asetusten muuttamisen.
-    }
 managed-notice = Organisaatiosi hallitsee selaimesi asetuksia.
 pane-general-title = Yleiset
 category-general =
@@ -290,6 +285,15 @@ update-pref-write-failure-title = Kirjoittaminen epäonnistui
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Asetuksen tallentaminen epäonnistui. Ei voitu kirjoittaa tiedostoon: { $path }
+update-setting-write-failure-title = Päivitysasetusten tallennusvirhe
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    { -brand-short-name } havaitsi virheen eikä tallentanut tätä muutosta. Huomaa, että tämän päivitysasetuksen muuttaminen vaatii oikeuden kirjoittaa alla olevaan tiedostoon. Sinä tai järjestelmän ylläpitäjä voi pystyä ratkaisemaan virheen antamalla täydet oikeudet tähän tiedostoon Käyttäjät-ryhmälle.
+    
+    Ei onnistuttu kirjoittamaan tiedostoon: { $path }
 update-in-progress-title = Päivitys meneillään
 update-in-progress-message = Haluatko, että { -brand-short-name } jatkaa tämän päivityksen asentamista?
 update-in-progress-ok-button = &Hylkää
@@ -388,6 +392,49 @@ use-current-pages =
 choose-bookmark =
     .label = Käytä kirjanmerkkiä…
     .accesskey = m
+
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Firefoxin aloitussivun sisältö
+home-prefs-content-description = Valitse Firefoxin aloitussivulle haluamasi sisältö.
+home-prefs-content-discovery-description = Firefoxin aloitussivun sisällön esittely näyttää laadukkaita ja olennaisia artikkeleita ympäri verkkoa.
+home-prefs-search-header =
+    .label = Verkkohaku
+home-prefs-topsites-header =
+    .label = Ykkössivustot
+home-prefs-topsites-description = Useimmin vierailemasi sivustot
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Suositukset lähteestä { $provider }
+home-prefs-recommended-by-description = Hyvää sisältöä kaikkialta verkosta, juuri sinulle
+home-prefs-recommended-by-learn-more = Kuinka se toimii
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Sponsoroidut tarinat
+home-prefs-highlights-header =
+    .label = Nostot
+home-prefs-highlights-description = Valikoima sivustoja, joilla olet käynyt tai jotka olet tallentanut
+home-prefs-highlights-option-visited-pages =
+    .label = Vieraillut sivustot
+home-prefs-highlights-options-bookmarks =
+    .label = Kirjanmerkit
+home-prefs-highlights-option-most-recent-download =
+    .label = Viimeisimmät lataukset
+home-prefs-highlights-option-saved-to-pocket =
+    .label = { -pocket-brand-name }iin tallennetut sivut
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Tiedonmuruset
+home-prefs-snippets-description = Päivitykset { -vendor-short-name }lta ja { -brand-product-name }ilta
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } rivi
+           *[other] { $num } riviä
+        }
 
 ## Search Section
 
@@ -663,7 +710,6 @@ addressbar-suggestions-settings = Muuta hakukoneiden ehdotusten asetuksia
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Sisällön esto
-content-blocking-description = Voit estää kolmannen osapuolen sisältöä, joka seuraa sinua ympäri verkkoa. Voit myös hallita, kuinka paljon tekemisiäsi verkossa tallennetaan ja jaetaan sivustojen välillä.
 content-blocking-section-description = Suojaa yksityisyyttäsi selatessasi. Estä näkymätön sisältö, joka seuraa vierailemiasi sivuja ja profiloi sinua. Jonkin tällaisen sisällön estäminen saattaa nopeuttaa sivujen latautumista.
 content-blocking-learn-more = Lue lisää
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -677,13 +723,12 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Oma
     .accesskey = O
-content-blocking-standard-description = Estää tunnetut seuraimet vain yksityisissä ikkunoissa.
 content-blocking-standard-desc = Tasapuolinen suojauksen ja suorituskyvyn välillä. Sallii jotkin seuraimet, jotta verkkosivustot toimivat.
-content-blocking-strict-desc = Estää kaikki { -brand-short-name }in havaitsemat seuraimet. Voi aiheuttaa joidenkin sivustojen toimimattomuutta.
 content-blocking-strict-description = Vahvempi suoja. Saattaa aiheuttaa joidenkin sivustojen toimimattomuutta.
 content-blocking-custom-desc = Valitse, mitä estetään.
 content-blocking-private-trackers = Tunnetut seuraimet vain yksityisissä ikkunoissa
 content-blocking-third-party-cookies = Kolmannen osapuolen seurainevästeet
+content-blocking-social-media-trackers = Sosiaalisen median seuraimet
 content-blocking-all-cookies = Kaikki evästeet
 content-blocking-unvisited-cookies = Evästeet sivustoilta, joilla ei ole käyty
 content-blocking-all-windows-trackers = Tunnetut seuraimet kaikissa ikkunoissa
@@ -693,6 +738,8 @@ content-blocking-fingerprinters = Yksilöijät
 content-blocking-warning-title = Huomio!
 content-blocking-warning-description = Sisällön estäminen voi aiheuttaa joidenkin sivustojen toimimattomuutta. Voit poistaa eston luottamiltasi sivustoilta.
 content-blocking-learn-how = Lue miten
+content-blocking-etp-warning-description = Seuraimien estäminen saattaa vaikuttaa joidenkin sivustojen toimintaan. Lataa sivu uudelleen seurainten kera ladataksesi kaiken sisällön.
+content-blocking-warning-learn-how = Lue lisää
 content-blocking-reload-description = Kaikki välilehdet tarvitsee päivittää, jotta muutokset tulevat voimaan.
 content-blocking-reload-tabs-button =
     .label = Päivitä kaikki välilehdet

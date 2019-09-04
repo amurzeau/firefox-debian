@@ -29,16 +29,11 @@ search-input-box =
             [windows] Søk i innstillingar
            *[other] Søk i innstillingar
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Din organisasjon har slått av mulegheita til å endre visse innstillingar.
-       *[other] Din organisasjon har slått av mulegheita til å endre visse innstillingar.
-    }
 managed-notice = Nettlessaren din vert administrert av organisasjonen din.
 pane-general-title = Generelt
 category-general =
     .tooltiptext = { pane-general-title }
-pane-home-title = Heim
+pane-home-title = Start
 category-home =
     .tooltiptext = { pane-home-title }
 pane-search-title = Søk
@@ -291,8 +286,16 @@ update-pref-write-failure-title = Skrivfeil
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Klarte ikkje å lagre innstillinga. Kunne ikkje skrive til fila: { $path }
 update-setting-write-failure-title = Klarte ikkje å lagre oppdateringsinnstillingar
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    { -brand-short-name } oppdaga ein feil og lagra ikkje denne endringa. Merk, for å kunne lagre endringa av denne oppdateringsinnstillinga, vert det krevd løyve til å skrive til fila nedanfor. Du eller ein systemadministrator kan kanskje løyse feilen ved å gje gruppa Brukarar full tilgang til denne fila.
+    
+    Kunne ikke skrive til filen: { $path }
 update-in-progress-title = Oppdatering i framdrift
-update-in-progress-message = Vil du at { -brand-short-name } skal halde fram med denne oppdateringa?
+update-in-progress-message = Vil du at { -brand-short-name } skal fortsetje med denne oppdateringa?
 update-in-progress-ok-button = &Avvis
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
@@ -389,6 +392,49 @@ use-current-pages =
 choose-bookmark =
     .label = Bruk bokmerke…
     .accesskey = u
+
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Innhald på: Firefox-startside
+home-prefs-content-description = Vel kva for innhald du vil ha på Firefox-startsida di.
+home-prefs-content-discovery-description = Innhaldsoppdaging på Firefox startside lèt deg oppdage relevante artiklar av høg kvalitet frå nettet.
+home-prefs-search-header =
+    .label = Nettsøk
+home-prefs-topsites-header =
+    .label = Mest besøkte
+home-prefs-topsites-description = Sidene du besøkjer mest
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Tilrådd av { $provider }
+home-prefs-recommended-by-description = Bra innhald frå heile nettet, tilpassa for deg
+home-prefs-recommended-by-learn-more = Korleis det fungerar
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Sponsa historiar
+home-prefs-highlights-header =
+    .label = Høgdepunkt
+home-prefs-highlights-description = Eit utval av nettsider som du har lagra eller besøkt
+home-prefs-highlights-option-visited-pages =
+    .label = Besøkte sider
+home-prefs-highlights-options-bookmarks =
+    .label = Bokmerke
+home-prefs-highlights-option-most-recent-download =
+    .label = Siste nedlasting
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Sider lagra til { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Snuttar
+home-prefs-snippets-description = Oppdateringar frå { -vendor-short-name } og { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } rekkje
+           *[other] { $num } rekkjer
+        }
 
 ## Search Section
 
@@ -536,7 +582,7 @@ sync-connect-another-device = Kople til ei anna eining
 sync-manage-devices = Handter einingar
 sync-fxa-begin-pairing = Par ei eining
 sync-tos-link = Tenestevilkår
-sync-fxa-privacy-notice = Personvernerklæring
+sync-fxa-privacy-notice = Personvernpraksis
 
 ## Privacy Section
 
@@ -554,6 +600,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Foreslå og generer sterke passord
     .accesskey = o
+forms-fill-logins-and-passwords =
+    .label = Autoutfyll innloggingar og passord
+    .accesskey = i
 forms-saved-logins =
     .label = Lagre innloggingar…
     .accesskey = L
@@ -630,6 +679,10 @@ sitedata-block-desc = Type blokkert
     .accesskey = T
 sitedata-option-block-trackers =
     .label = Tredjeparts-sporfølgjarar
+sitedata-option-block-cross-site-trackers =
+    .label = Sporing på tvers av nettstadar
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Sporing på tvers av nettstadar og sosiale media-sporfølgjarar
 sitedata-option-block-unvisited =
     .label = Infokapslar frå ubesøkte nettsider
 sitedata-option-block-all-third-party =
@@ -664,7 +717,7 @@ addressbar-suggestions-settings = Endre innstillingar for søkjeforslag
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Innhaldsblokkering
-content-blocking-description = Blokker tredjepartsinnhald som sporar deg på nettet. Kontroller kor mykje av internett-aktiviteten din som blir lagra og delt mellom nettstadar.
+content-blocking-enhanced-tracking-protection = Utvida sporingsvern
 content-blocking-section-description = Ta vare på personvernet ditt når du surfar. Blokker usynleg innhald som sporar sidene du besøkjer og profilerer deg. Blokkering av noko av dette innhaldet kan gjere sider raskare å laste.
 content-blocking-learn-more = Les meir
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -678,28 +731,38 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Tilpassa
     .accesskey = p
-content-blocking-standard-description = Blokker berre kjende sporfølgjarar i private vindauge.
 content-blocking-standard-desc = Balansert for vern og yting. Tillèt nokre sporfølgjarar slik at nettsider fungerer som dei skal.
-content-blocking-strict-desc = Blokkerer alle sporfølgjarar { -brand-short-name } oppdagar. Dette kan avgrense funksjonaliteten på nokre nettsider, eller gjere at nettsidene ikkje fungerer.
 content-blocking-strict-description = Sterkare vern kan føre til feil på nettsider.
 content-blocking-custom-desc = Vell kva du vil blokkere.
 content-blocking-private-trackers = Kjende sporfølgjarar berre i Private vindauge
 content-blocking-third-party-cookies = Tredjeparts sporingsinfokapslar
+content-blocking-etp-standard-desc = Balansert for vern og yting. Sider vil laste normalt.
+content-blocking-etp-strict-desc = Sterkare vern, men kan føre til at nokre nettstadar eller innhald ikkje vil fungere.
+content-blocking-etp-custom-desc = Vel kva for sporfølgjarar og skript som skal blokkerast.
+content-blocking-private-windows = Sporingsinnhald i private vindauge
+content-blocking-cross-site-tracking-cookies = Sporingsinfokapslar på tvers av nettstadar
+content-blocking-social-media-trackers = Sporing via sosiale medium
 content-blocking-all-cookies = Alle infokapslar
 content-blocking-unvisited-cookies = Infokapslar frå ikkje-besøkte nettsider
 content-blocking-all-windows-trackers = Kjende sporfølgjarar i alle vindauge
+content-blocking-all-windows-tracking-content = Sporingsinnhald i alle vindauge
 content-blocking-all-third-party-cookies = Alle tredjeparts infokapslar
-content-blocking-cryptominers = Cryptominers
+content-blocking-cryptominers = Kryptominarar
 content-blocking-fingerprinters = Fingerprinters
-content-blocking-warning-title = Sjå opp!
+content-blocking-warning-title = Viktig!
 content-blocking-warning-description = Blokkering av innhald kan føre til at nokre nettstadar sluttar å fungere. Det er enkelt å deaktivere blokkering for nettstadar du stolar på.
 content-blocking-learn-how = Finn ut korleis
+content-blocking-etp-warning-description = Blokkering av sporfølgjarar kan påverke funksjonaliteten på nokre nettstadar.
+content-blocking-warning-learn-how = Les korleis
 content-blocking-reload-description = Du må oppdatere fanene dine for å kunne bruke desse endringane.
 content-blocking-reload-tabs-button =
     .label = Oppdater alle faner
     .accesskey = O
 content-blocking-trackers-label =
     .label = Sporfølgjarar
+    .accesskey = S
+content-blocking-tracking-content-label =
+    .label = Sporingsinnhald
     .accesskey = S
 content-blocking-tracking-protection-option-all-windows =
     .label = I alle vindauge
@@ -783,7 +846,7 @@ permissions-a11y-privacy-link = Les meir
 
 collection-header = Datainnsamling og bruk for { -brand-short-name }
 collection-description = Vi prøver alltid å gje deg val og samlar inn berre det vi treng for å levere og forbetre { -brand-short-name } for alle. Vi ber alltid om løyve før vi får personopplysningar.
-collection-privacy-notice = Personvernerklæring
+collection-privacy-notice = Personvernpraksis
 collection-health-report =
     .label = Tillat { -brand-short-name } å sende teknisk- og interaksjonsdata til { -vendor-short-name }
     .accesskey = r

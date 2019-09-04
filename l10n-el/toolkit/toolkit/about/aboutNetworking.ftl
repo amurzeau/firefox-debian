@@ -57,3 +57,13 @@ rcwn-avg-long = Μεγάλος μέσος όρος
 rcwn-std-dev-long = Μακρά τυπική απόκλιση
 rcwn-cache-slow = Αργή μέτρηση cache
 rcwn-cache-not-slow = Η cache δεν μετρά αργά
+networkid = ID δικτύου
+networkid-id = ID δικτύου
+
+## Link is intended as "network link"
+
+networkid-isUp = Η σύνδεση είναι ενεργή
+networkid-statusKnown = Η κατάσταση σύνδεσης είναι γνωστή
+
+
+

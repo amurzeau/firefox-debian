@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-do-not-track-description = Informuj witryny o preferencjach względem śledzenia (wysyłanie nagłówka „Do Not Track”):
+do-not-track-description = Informowanie witryn o preferencjach względem śledzenia (wysyłanie nagłówka „Do Not Track”):
 do-not-track-learn-more = Więcej informacji
 do-not-track-option-default-content-blocking-known =
     .label = gdy { -brand-short-name } blokuje znane elementy śledzące
@@ -29,11 +29,6 @@ search-input-box =
             [windows] Szukaj w opcjach
            *[other] Szukaj w preferencjach
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Administrator zablokował możliwość zmiany niektórych opcji
-       *[other] Administrator zablokował możliwość zmiany niektórych preferencji
-    }
 managed-notice = Przeglądarka jest zarządzana przez administratora
 pane-general-title = Ogólne
 category-general =
@@ -351,9 +346,9 @@ browsing-cfr-recommendations =
     .label = Polecanie rozszerzeń podczas przeglądania
     .accesskey = P
 browsing-cfr-features =
-    .label = Polecenie funkcji podczas przeglądania
+    .label = Polecanie funkcji podczas przeglądania
     .accesskey = u
-browsing-cfr-recommendations-learn-more = Więcej informacji
+browsing-cfr-recommendations-learn-more = Więcej informacji
 
 ## General Section - Proxy
 
@@ -401,6 +396,50 @@ choose-bookmark =
     .label = Użyj zakładki…
     .accesskey = z
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Strona startowa Firefoksa
+home-prefs-content-description = Wybierz, co wyświetlać na stronie startowej Firefoksa.
+home-prefs-content-discovery-description = Funkcja odkrywania treści na stronie startowej Firefoksa umożliwia odkrywanie spersonalizowanych artykułów o wysokiej jakości z całego Internetu.
+home-prefs-search-header =
+    .label = Pasek wyszukiwania
+home-prefs-topsites-header =
+    .label = Popularne
+home-prefs-topsites-description = Najczęściej odwiedzane strony.
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Polecane przez { $provider }
+home-prefs-recommended-by-description = Świetne rzeczy z całego Internetu, wybrane specjalnie dla Ciebie
+home-prefs-recommended-by-learn-more = Jak to działa?
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Sponsorowane artykuły
+home-prefs-highlights-header =
+    .label = Wyróżnione
+home-prefs-highlights-description = Wybierane z zachowanych i odwiedzonych stron.
+home-prefs-highlights-option-visited-pages =
+    .label = Historia
+home-prefs-highlights-options-bookmarks =
+    .label = Zakładki
+home-prefs-highlights-option-most-recent-download =
+    .label = Ostatnio pobrane pliki
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Zachowane w { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Od Mozilli
+home-prefs-snippets-description = Informacje od organizacji { -vendor-short-name } i przeglądarki { -brand-product-name }.
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } wiersz
+            [few] { $num } wiersze
+           *[many] { $num } wierszy
+        }
+
 ## Search Section
 
 search-bar-header = Pasek wyszukiwania
@@ -447,7 +486,7 @@ search-keyword-warning-bookmark = Wybrano słowo kluczowe używane obecnie przez
 
 ## Containers Section
 
-containers-back-link = « Powrót
+containers-back-link = « Wróć
 containers-header = Karty z kontekstem
 containers-add-button =
     .label = Dodaj kontekst
@@ -565,6 +604,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Proponowanie i generowanie silnych haseł
     .accesskey = s
+forms-fill-logins-and-passwords =
+    .label = Wypełnianie danych logowania i haseł
+    .accesskey = W
 forms-saved-logins =
     .label = Zachowane dane logowania…
     .accesskey = d
@@ -641,6 +683,10 @@ sitedata-block-desc = Blokowanie:
     .accesskey = B
 sitedata-option-block-trackers =
     .label = śledzące zewnętrznych witryn
+sitedata-option-block-cross-site-trackers =
+    .label = śledzące między witrynami
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = śledzące między witrynami i serwisów społecznościowych
 sitedata-option-block-unvisited =
     .label = nieodwiedzonych witryn
 sitedata-option-block-all-third-party =
@@ -675,9 +721,9 @@ addressbar-suggestions-settings = Zmień ustawienia podpowiedzi dostarczanych pr
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Blokowanie treści
-content-blocking-description = Blokowanie elementów zewnętrznych witryn, które śledzą aktywność użytkowników sieci. Zdecyduj, jak wiele informacji o aktywności ma być przechowywane i współdzielone przez witryny.
+content-blocking-enhanced-tracking-protection = Wzmocniona ochrona przed śledzeniem
 content-blocking-section-description = Chroń swoją prywatność podczas przeglądania. Blokuj niewidoczne elementy, które śledzą odwiedzane witryny i Cię profilują. Zablokowanie niektórych treści może przyspieszyć wczytywanie stron.
-content-blocking-learn-more = Więcej informacji
+content-blocking-learn-more = Więcej informacji
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 content-blocking-setting-standard =
@@ -689,22 +735,29 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Własne
     .accesskey = W
-content-blocking-standard-description = Blokowanie znanych elementów śledzących tylko w oknach prywatnych.
 content-blocking-standard-desc = Wyważone pod kątem ochrony i szybkości wczytywania stron. Dopuszcza pewne elementy śledzące, aby strony działały prawidłowo.
-content-blocking-strict-desc = Blokowanie wszystkich elementów śledzących wykrytych przez przeglądarkę { -brand-short-name }. Może powodować problemy z niektórymi stronami.
 content-blocking-strict-description = Silniejsza ochrona, ale może powodować problemy z niektórymi stronami.
 content-blocking-custom-desc = Wybierz, co blokować:
 content-blocking-private-trackers = znane elementy śledzące w oknach prywatnych
 content-blocking-third-party-cookies = ciasteczka zewnętrznych witryn używane do śledzenia
+content-blocking-etp-standard-desc = Równowaga między bezpieczeństwem a szybkością wczytywania stron. Strony będą działać bez problemów.
+content-blocking-etp-strict-desc = Silniejsza ochrona, ale może powodować niepoprawne działanie niektórych stron.
+content-blocking-etp-custom-desc = Wybierz, które elementy śledzące i skrypty blokować:
+content-blocking-private-windows = treści z elementami śledzącymi w oknach prywatnych
+content-blocking-cross-site-tracking-cookies = ciasteczka śledzące między witrynami
+content-blocking-social-media-trackers = elementy śledzące serwisów społecznościowych
 content-blocking-all-cookies = wszystkie ciasteczka
 content-blocking-unvisited-cookies = ciasteczka z nieodwiedzonych witryn
 content-blocking-all-windows-trackers = znane elementy śledzące we wszystkich oknach
+content-blocking-all-windows-tracking-content = treści z elementami śledzącymi we wszystkich oknach
 content-blocking-all-third-party-cookies = wszystkie ciasteczka zewnętrznych witryn
 content-blocking-cryptominers = elementy używające komputera użytkownika do generowania kryptowalut
-content-blocking-fingerprinters = śledzenie przez zbieranie informacji o konfiguracji
+content-blocking-fingerprinters = elementy śledzące przez zbieranie informacji o konfiguracji
 content-blocking-warning-title = Ostrzeżenie
 content-blocking-warning-description = Blokowanie treści może powodować problemy z niektórymi stronami. Blokowanie można łatwo wyłączyć na stronach, którym ufasz.
-content-blocking-learn-how = Więcej informacji
+content-blocking-learn-how = Więcej informacji
+content-blocking-etp-warning-description = Blokowanie elementów śledzących może wpłynąć na funkcjonowanie niektórych stron. Odśwież stronę z włączonymi elementami śledzącymi, aby wyświetlić całą jej zawartość.
+content-blocking-warning-learn-how = Więcej informacji
 content-blocking-reload-description = Zastosowanie tych zmian wymaga odświeżenia kart.
 content-blocking-reload-tabs-button =
     .label = Odśwież wszystkie karty
@@ -712,18 +765,21 @@ content-blocking-reload-tabs-button =
 content-blocking-trackers-label =
     .label = elementy śledzące:
     .accesskey = e
+content-blocking-tracking-content-label =
+    .label = treści z elementami śledzącymi:
+    .accesskey = e
 content-blocking-tracking-protection-option-all-windows =
     .label = zawsze
     .accesskey = z
 content-blocking-option-private =
-    .label = w oknach prywatnych
+    .label = w oknach prywatnych
     .accesskey = w
 content-blocking-tracking-protection-change-block-list = Zmień listę blokowanych
 content-blocking-cookies-label =
     .label = ciasteczka:
     .accesskey = c
 content-blocking-expand-section =
-    .tooltiptext = Więcej informacji
+    .tooltiptext = Więcej informacji
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
     .label = elementy używające komputera użytkownika do generowania kryptowalut
@@ -731,7 +787,7 @@ content-blocking-cryptominers-label =
 # Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
 # that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
 content-blocking-fingerprinters-label =
-    .label = śledzenie przez zbieranie informacji o konfiguracji
+    .label = elementy śledzące przez zbieranie informacji o konfiguracji
     .accesskey = k
 
 ## Privacy Section - Tracking
@@ -804,12 +860,12 @@ collection-studies =
 collection-studies-link = Wyświetl badania przeglądarki { -brand-short-name }
 addon-recommendations =
     .label = Personalizowane polecenia rozszerzeń przez przeglądarkę { -brand-short-name }.
-addon-recommendations-link = Więcej informacji
+addon-recommendations-link = Więcej informacji
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Przesyłanie danych jest wyłączone przy tej konfiguracji programu
 collection-backlogged-crash-reports =
-    .label = Przesyłanie zgromadzonych raportów z awarii przeglądarki { -brand-short-name }.
+    .label = Przesyłanie zgromadzonych zgłoszeń awarii przeglądarki { -brand-short-name }.
     .accesskey = o
 collection-backlogged-crash-reports-link = Więcej informacji
 

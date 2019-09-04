@@ -10,7 +10,7 @@ search-header =
 search-header-shortcut =
     .key = f
 loading-label =
-    .value = Đang mở…
+    .value = Đang tải…
 list-empty-installed =
     .value = Bạn không có tiện ích nào thuộc kiểu này được cài đặt
 list-empty-available-updates =
@@ -155,9 +155,6 @@ private-browsing-description2 =
     tiện ích mở rộng sẽ không chạy trong khi duyệt web riêng tư và sẽ không có quyền truy cập vào các hoạt động trực tuyến của bạn.
     Chúng tôi đã thực hiện thay đổi này để giữ trình duyệt của bạn riêng tư.
     <label data-l10n-name="private-browsing-learn-more">Tìm hiểu cách quản lý cài đặt tiện ích mở rộng.</label>
-extensions-view-discover =
-    .name = Tải thêm tiện ích
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-discopane =
     .name = Được đề xuất
     .tooltiptext = { extensions-view-discopane.name }
@@ -253,6 +250,12 @@ shortcuts-modifier-other = Bao gồm Ctrl hoặc Alt
 shortcuts-invalid = Kết hợp không hợp lệ
 shortcuts-letter = Nhập một kí tự
 shortcuts-system = Không thể ghi đè một phím tắt { -brand-short-name }
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Phím tắt trùng lặp
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } đang được sử dụng làm phím tắt trong nhiều trường hợp. Phím tắt trùng lặp có thể gây ra hành vi bất ngờ.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -314,6 +317,16 @@ release-notes-addon-button = Ghi chú phát hành
 permissions-addon-button = Quyền hạn
 addons-enabled-heading = Đã bật
 addons-disabled-heading = Đã vô hiệu hóa
+extension-enabled-heading = Đã bật
+extension-disabled-heading = Đã tắt
+theme-enabled-heading = Đã bật
+theme-disabled-heading = Đã tắt
+plugin-enabled-heading = Đã bật
+plugin-disabled-heading = Đã tắt
+dictionary-enabled-heading = Đã bật
+dictionary-disabled-heading = Đã tắt
+locale-enabled-heading = Đã bật
+locale-disabled-heading = Đã tắt
 ask-to-activate-button = Hỏi trước khi kích hoạt
 always-activate-button = Luôn kích hoạt
 never-activate-button = Không bao giờ kích hoạt

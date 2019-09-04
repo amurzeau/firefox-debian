@@ -2,8 +2,15 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## These messages are used as headings in the recommendation doorhanger
+
 cfr-doorhanger-extension-heading = Προτεινόμενη επέκταση
+cfr-doorhanger-feature-heading = Προτεινόμενη λειτουργία
 cfr-doorhanger-pintab-heading = Δοκιμάστε αυτό: Καρφίτσωμα καρτέλας
+
+
+
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Γιατί το βλέπω αυτό
 cfr-doorhanger-extension-cancel-button = Όχι τώρα
@@ -62,3 +69,33 @@ cfr-doorhanger-bookmark-fxa-link-text = Συγχρονισμός σελιδοδ�
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Κουμπί κλεισίματος
     .title = Κλείσιμο
+
+## Protections panel
+
+cfr-protections-panel-header = Περιήγηση χωρίς παρακολούθηση
+cfr-protections-panel-link-text = Μάθετε περισσότερα
+
+## What's New toolbar button and panel
+
+cfr-whatsnew-button =
+    .label = Τι νέο υπάρχει
+    .tooltiptext = Τι νέο υπάρχει
+cfr-whatsnew-panel-header = Τι νέο υπάρχει
+
+## Bookmark Sync
+
+cfr-doorhanger-sync-bookmarks-ok-button = Ενεργοποίηση { -sync-brand-short-name }
+    .accesskey = Ε
+
+## Login Sync
+
+
+## Send Tab
+
+cfr-doorhanger-send-tab-header = Διαβάστε το εν κινήσει
+
+## Firefox Send
+
+cfr-doorhanger-firefox-send-header = Μοιραστείτε αυτό το PDF με ασφάλεια
+cfr-doorhanger-firefox-send-ok-button = Δοκιμή του { -send-brand-name }
+    .accesskey = Δ

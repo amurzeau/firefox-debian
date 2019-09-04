@@ -77,6 +77,9 @@ detail-version =
 detail-last-updated =
     .label = Posljednja dopuna
 detail-contributions-description = Razvijatelja ovog dodatka zanima jeste li voljni pomoći razvoju malom donacijom.
+detail-contributions-button = Doprinesite
+    .title = Doprinesite razvoju ovog dodatka
+    .accesskey = D
 detail-update-type =
     .value = Automatske dopune
 detail-update-default =
@@ -147,9 +150,9 @@ legacy-extensions =
     .value = Zastarjeli dodaci
 legacy-extensions-description = Ovi dodaci ne zadovoljavaju trenutne { -brand-short-name } standarde te se isključeni. <label data-l10n-name="legacy-learn-more">Saznajte o promjenama u dodacima</label>
 private-browsing-description2 = { -brand-short-name } mijenja način na koji dodaci rade u privatnom pretraživanju. Svaki novi dodatak koji dodate u { -brand-short-name } neće automatski raditi u privatnom pretraživanju. Ukoliko ne dozvolite u postavkama, dodatak neće raditi dok koristite privatno pretraživanje i neće imati pristup vašim aktivnostima. Napravili smo ovu izmjenu kako bismo zadržali vaše pretraživanje privatnim. <label data-l10n-name="private-browsing-learn-more">Saznajte kako upravljati postavkama dodataka</label>
-extensions-view-discover =
-    .name = Pronađi dopune
-    .tooltiptext = { extensions-view-discover.name }
+extensions-view-discopane =
+    .name = Preporuke
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Nedavne dopune
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -227,15 +230,139 @@ extensions-updates-update-selected =
 
 ## Extension shortcut management
 
+manage-extensions-shortcuts =
+    .label = Upravljanje tipkovničkim kraticama dodatka
+    .accesskey = U
+shortcuts-no-addons = Nemate omogućenih dodataka
+shortcuts-no-commands = Sljedeći dodaci nemaju prečice:
+shortcuts-input =
+    .placeholder = Upišite prečac
+shortcuts-browserAction = Aktiviraj dodatak
+shortcuts-pageAction = Aktiviraj radnju stranice
+shortcuts-sidebarAction = Prikaži/sakrij bočnu traku
+shortcuts-modifier-mac = Uključi Ctrl, Alt ili ⌘
+shortcuts-modifier-other = Uključi Ctrl ili Alt
+shortcuts-invalid = Nepodržana kombinacija
+shortcuts-letter = Upišite slovo
+shortcuts-system = Nije moguće izmijeniti { -brand-short-name } prečac
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Duplikat prečice
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } se koristi kao prečica u više od jednog slučaja. Duplikati prečice mogu uzrokovati neočekivano ponašanje.
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Već se koristi od strane { $addon }
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] Prikaži još { $numberToShow }
+        [few] Prikaži još { $numberToShow }
+       *[other] Prikaži još { $numberToShow }
+    }
+shortcuts-card-collapse-button = Prikaži manje
+go-back-button =
+    .tooltiptext = Idi natrag
 
 ## Recommended add-ons page
 
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    Dodaci i teme su kao aplikacije za vaš preglednik i oni vam omogućavaju
+    da zaštitite lozinke, preuzimate video na disk, pronađete akcije, blokirate
+    naporne reklame, izmjenite kako vaš preglednik izgleda i puno više. Ovi mali
+    programi su često razvijeni od treće strane. Ovdje možete pronaći
+    { -brand-product-name } izbor <a data-l10n-name="learn-more-trigger">preporučenih dodataka</a>
+    za dodatnu sigurnost, perfomanse i funkcionalnost.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations =
+    Nekki prijedlozi su personalizirani. Bazirani su na drugim dodacima koje
+    ste već instalirali, postavkama profila ili statistici korištenja.
+discopane-notice-learn-more = Saznajte više
+privacy-policy = Politika privatnosti
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = od <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Korisnici: { $dailyUsers }
+install-extension-button = Dodaj u { -brand-product-name }
+install-theme-button = Instaliraj temu
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Upravljanje
+find-more-addons = Pronađite više dodataka
 
 ## Add-on actions
 
+report-addon-button = Prijavi
+remove-addon-button = Ukloni
+disable-addon-button = Onemogući
+enable-addon-button = Omogući
+expand-addon-button = Više mogućnosti
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Mogućnosti
+       *[other] Mogućnosti
+    }
+details-addon-button = Detalji
+release-notes-addon-button = Bilješke izdanja
+permissions-addon-button = Dopuštenja
+addons-enabled-heading = Omogućeno
+addons-disabled-heading = Onemogućeno
+extension-enabled-heading = Omogućeno
+extension-disabled-heading = Onemogućeno
+theme-enabled-heading = Omogućeno
+theme-disabled-heading = Onemogućeno
+plugin-enabled-heading = Omogućeno
+plugin-disabled-heading = Onemogućeno
+dictionary-enabled-heading = Omogućeno
+dictionary-disabled-heading = Onemogućeno
+locale-enabled-heading = Omogućeno
+locale-disabled-heading = Onemogućeno
+ask-to-activate-button = Pitaj prilikom aktivacije
+always-activate-button = Uvijek aktiviraj
+never-activate-button = Nikada nemoj aktivirati
+addon-detail-author-label = Autor
+addon-detail-version-label = Inačica
+addon-detail-last-updated-label = Posljednje ažuriranje
+addon-detail-homepage-label = Početna stranica
+addon-detail-rating-label = Ocjena
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Ocjenjeno je { NUMBER($rating, maximumFractionDigits: 1) } od 5
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (onemogućeno)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } recenzija
+        [few] { $numberOfReviews } recenzije
+       *[other] { $numberOfReviews } recenzija
+    }
 
 ## Pending uninstall message bar
 
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> je uklonjen.
+pending-uninstall-undo-button = Vrati
+addon-detail-updates-label = Dozvoli automatska ažuriranja
+addon-detail-updates-radio-default = Zadano
+addon-detail-updates-radio-on = Uključeno
+addon-detail-updates-radio-off = Isključeno
+addon-detail-update-check-label = Provjeri dostupnost dopuna
+install-update-button = Ažuriraj
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed =
@@ -243,3 +370,18 @@ addon-badge-private-browsing-allowed =
 addon-detail-private-browsing-help = Kada je dopušteno, dodatak će imati pristup vašoj aktivnosti na mreži dok ste u načinu privatnog pretraživanja. <a data-l10n-name="learn-more">Saznajte više</a>
 addon-detail-private-browsing-allow = Dozvoli
 addon-detail-private-browsing-disallow = Nemoj dozvoliti
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Preporučeno
+    .alt = Preporučeno
+available-updates-heading = Dostupne dopune
+recent-updates-heading = Nedavne dopune
+release-notes-loading = Učitavanje…
+release-notes-error = Došlo je do greške pri učitavanju bilješki izdanja.
+addon-permissions-empty = Ovaj dodatak ne zahtjeva nikakve dozvole.
+recommended-extensions-heading = Preporučeni dodatci
+recommended-themes-heading = Preporučene teme
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Osjećate li se kreativno? <a data-l10n-name="link">Izradite vlastitu temu s Firefox Color.</a>

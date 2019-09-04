@@ -58,7 +58,7 @@ permissions-capabilities-listitem-allow-session =
 
 ## Invalid Hostname Dialog
 
-permissions-invalid-uri-title = A fost introdusă o denumire invalidă de gazdă
+permissions-invalid-uri-title = A fost introdusă o denumire nevalidă de gazdă
 permissions-invalid-uri-label = Te rugăm să introduci un nume de gazdă valid
 
 ## Exceptions - Tracking Protection
@@ -67,6 +67,10 @@ permissions-exceptions-content-blocking-window =
     .title = Excepții - Blocare de conținut
     .style = { permissions-window.style }
 permissions-exceptions-content-blocking-desc = Ai dezactivat blocarea de conținut pe aceste site-uri web.
+permissions-exceptions-etp-window =
+    .title = Excepții pentru protecția îmbunătățită împotriva urmăririi
+    .style = { permissions-window.style }
+permissions-exceptions-etp-desc = Ai dezactivat protecțiile pe aceste site-uri web.
 
 ## Exceptions - Cookies
 
@@ -108,6 +112,7 @@ permissions-exceptions-autoplay-media-desc2 = Poți specifica ce site-uri web au
 permissions-site-autoplay-window =
     .title = Setări - Redare automată
     .style = { permissions-window.style }
+permissions-site-autoplay-desc = Poți gestiona aici site-urile care nu respectă setările implicite de redare automată.
 
 ## Site Permissions - Notifications
 

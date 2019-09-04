@@ -29,11 +29,6 @@ search-input-box =
             [windows] Rechercher dans les options
            *[other] Rechercher dans les préférences
         }
-policies-notice =
-    { PLATFORM() ->
-        [windows] Votre organisation a désactivé la possibilité de changer certaines options.
-       *[other] Votre organisation a désactivé la possibilité de changer certaines préférences.
-    }
 managed-notice = Votre navigateur est géré par votre organisation.
 pane-general-title = Général
 category-general =
@@ -398,6 +393,49 @@ choose-bookmark =
     .label = Marque-page…
     .accesskey = m
 
+## Home Section - Firefox Home Content Customization
+
+home-prefs-content-header = Contenu de la page d’accueil de Firefox
+home-prefs-content-description = Choisissez le contenu que vous souhaitez pour la page d’accueil de Firefox.
+home-prefs-content-discovery-description = La découverte de contenu dans l’accueil de Firefox vous propose des articles pertinents et de bonne qualité en provenance des quatre coins du Web.
+home-prefs-search-header =
+    .label = Recherche web
+home-prefs-topsites-header =
+    .label = Sites les plus visités
+home-prefs-topsites-description = Les sites que vous visitez le plus
+# Variables:
+#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+home-prefs-recommended-by-header =
+    .label = Recommandations par { $provider }
+home-prefs-recommended-by-description = Du contenu intéressant en provenance du Web, personnalisé pour vous
+home-prefs-recommended-by-learn-more = Mode d’emploi
+home-prefs-recommended-by-option-sponsored-stories =
+    .label = Articles sponsorisés
+home-prefs-highlights-header =
+    .label = Éléments-clés
+home-prefs-highlights-description = Une sélection de sites que vous avez sauvegardés ou visités
+home-prefs-highlights-option-visited-pages =
+    .label = Pages visitées
+home-prefs-highlights-options-bookmarks =
+    .label = Marque-pages
+home-prefs-highlights-option-most-recent-download =
+    .label = Dernier téléchargement
+home-prefs-highlights-option-saved-to-pocket =
+    .label = Pages enregistrées dans { -pocket-brand-name }
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+home-prefs-snippets-header =
+    .label = Brèves
+home-prefs-snippets-description = Actualité de { -vendor-short-name } et { -brand-product-name }
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } ligne
+           *[other] { $num } lignes
+        }
+
 ## Search Section
 
 search-bar-header = Barre de recherche
@@ -562,6 +600,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Suggérer et créer des mots de passe robustes
     .accesskey = u
+forms-fill-logins-and-passwords =
+    .label = Renseigner automatiquement les identifiants et les mots de passe
+    .accesskey = R
 forms-saved-logins =
     .label = Identifiants enregistrés…
     .accesskey = I
@@ -638,6 +679,10 @@ sitedata-block-desc = Type de contenu bloqué
     .accesskey = T
 sitedata-option-block-trackers =
     .label = Traqueurs tiers
+sitedata-option-block-cross-site-trackers =
+    .label = Traqueurs d’un site à l’autre
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Traqueurs d’un site à l’autre et sur les réseaux sociaux
 sitedata-option-block-unvisited =
     .label = Cookies de sites web non visités
 sitedata-option-block-all-third-party =
@@ -672,8 +717,8 @@ addressbar-suggestions-settings = Modifier les préférences pour les suggestion
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Blocage de contenu
-content-blocking-description = Bloquez les contenus tiers qui vous pistent sur le Web. Contrôlez le niveau d’activité en ligne qui est enregistrée et partagée avec des sites web.
-content-blocking-section-description = Protégez votre vie privée pendant votre navigation. Bloquez les contenus invisibles qui vous pistent de site en site et dressent votre profil. Bloquer une partie de ces contenus peut accélérer le chargement des pages.
+content-blocking-enhanced-tracking-protection = Protection renforcée contre le pistage
+content-blocking-section-description = Protégez votre vie privée pendant votre navigation. Bloquez les contenus invisibles qui vous pistent de site en site et dressent votre profil. Le blocage d’une partie de ces contenus peut accélérer le chargement des pages.
 content-blocking-learn-more = En savoir plus
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -686,22 +731,29 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Personnalisé
     .accesskey = P
-content-blocking-standard-description = Bloque uniquement les traqueurs connus dans les fenêtres de navigation privée.
 content-blocking-standard-desc = Équilibré entre protection et performances. Autorise quelques traqueurs pour que les sites web fonctionnent correctement.
-content-blocking-strict-desc = Bloque tous les traqueurs détectés par { -brand-short-name }. Peut provoquer le dysfonctionnement de certains sites.
 content-blocking-strict-description = Une protection renforcée, mais qui peut empêcher certains sites de fonctionner correctement.
 content-blocking-custom-desc = Choisissez ce que vous souhaitez bloquer.
-content-blocking-private-trackers = Les traqueurs connus dans les fenêtres de navigation privée seulement
-content-blocking-third-party-cookies = Les cookies tiers utilisés pour le pistage
+content-blocking-private-trackers = Traqueurs connus dans les fenêtres de navigation privée seulement
+content-blocking-third-party-cookies = Cookies tiers utilisés pour le pistage
+content-blocking-etp-standard-desc = Équilibré entre protection et performances. Les pages se chargeront normalement.
+content-blocking-etp-strict-desc = Protection renforcée, mais certains sites ou contenus peuvent ne pas fonctionner correctement.
+content-blocking-etp-custom-desc = Choisissez les traqueurs et les scripts à bloquer.
+content-blocking-private-windows = Contenu utilisé pour le pistage dans les fenêtres de navigation privée
+content-blocking-cross-site-tracking-cookies = Cookies utilisés pour le pistage entre les sites
+content-blocking-social-media-trackers = Traqueurs de réseaux sociaux
 content-blocking-all-cookies = Tous les cookies
 content-blocking-unvisited-cookies = Cookies de sites non visités
-content-blocking-all-windows-trackers = Les traqueurs connus dans toutes les fenêtres
+content-blocking-all-windows-trackers = Traqueurs connus dans toutes les fenêtres
+content-blocking-all-windows-tracking-content = Contenu utilisé pour le pistage dans toutes les fenêtres
 content-blocking-all-third-party-cookies = Tous les cookies tiers
 content-blocking-cryptominers = Mineurs de cryptomonnaies
 content-blocking-fingerprinters = Détecteurs d’empreinte numérique
 content-blocking-warning-title = Attention !
 content-blocking-warning-description = Le blocage de contenu peut empêcher certains sites de fonctionner. Vous pouvez facilement désactiver le blocage pour les sites en lesquels vous avez confiance.
 content-blocking-learn-how = Découvrez comment
+content-blocking-etp-warning-description = Le blocage des traqueurs peut avoir une incidence sur les fonctionnalités de certains sites. Actualisez une page avec les traqueurs pour charger tout le contenu.
+content-blocking-warning-learn-how = Me montrer comment faire
 content-blocking-reload-description = Vous devrez actualiser vos onglets pour appliquer ces modifications.
 content-blocking-reload-tabs-button =
     .label = Actualiser tous les onglets
@@ -709,6 +761,9 @@ content-blocking-reload-tabs-button =
 content-blocking-trackers-label =
     .label = Traqueurs
     .accesskey = T
+content-blocking-tracking-content-label =
+    .label = Contenu utilisé pour le pistage
+    .accesskey = C
 content-blocking-tracking-protection-option-all-windows =
     .label = Dans toutes les fenêtres
     .accesskey = t

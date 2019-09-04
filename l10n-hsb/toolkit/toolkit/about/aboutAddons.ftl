@@ -154,9 +154,6 @@ private-browsing-description2 =
     { -brand-short-name } přidawaće, po standardźe w priwatnych woknach njefunguja. Chibazo
     dowoleće to w nastajenjach, rozšěrjenje w priwatnym modusu njefunguje a nima přistup na waše
     aktiwity online. Smy tutu změnu sčinili, zo by waš priwatny modus priwatny wóstał. <label data-l10n-name="private-browsing-learn-more">Zhońće wjace wo rjadowanju nastajenjow rozšěrjenja.</label>
-extensions-view-discover =
-    .name = Přidatki wobstarać
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-discopane =
     .name = Doporučenja
     .tooltiptext = { extensions-view-discopane.name }
@@ -252,6 +249,12 @@ shortcuts-modifier-other = Strg abo Alt zapřijeć
 shortcuts-invalid = Njepłaćiwa kombinacija
 shortcuts-letter = Zapodajće pismik
 shortcuts-system = Tastowa skrótšenka { -brand-short-name } njeda so přepisać
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Dwójna tastowa skrótšenka
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } so jako tastowa skrótšenka wjacekróć wužiwa. Dwójne tastowe skrótšenki móža njewočakowane zadźerženje zawinować.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -308,6 +311,16 @@ release-notes-addon-button = Wersijowe informacije
 permissions-addon-button = Prawa
 addons-enabled-heading = Zmóžnjene
 addons-disabled-heading = Znjemóžnjene
+extension-enabled-heading = Zmóžnjeny
+extension-disabled-heading = Znjemóžnjeny
+theme-enabled-heading = Zmóžnjeny
+theme-disabled-heading = Znjemóžnjeny
+plugin-enabled-heading = Zmóžnjeny
+plugin-disabled-heading = Znjemóžnjeny
+dictionary-enabled-heading = Zmóžnjeny
+dictionary-disabled-heading = Znjemóžnjeny
+locale-enabled-heading = Zmóžnjeny
+locale-disabled-heading = Znjemóžnjeny
 ask-to-activate-button = Za aktiwizowanje so prašeć
 always-activate-button = Přeco aktiwizować
 never-activate-button = Ženje njeaktiwizować

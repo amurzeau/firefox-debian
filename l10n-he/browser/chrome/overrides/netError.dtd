@@ -9,10 +9,7 @@
 <!ENTITY retry.label "נסה שוב">
 <!ENTITY returnToPreviousPage.label "חזרה">
 <!ENTITY returnToPreviousPage1.label "חזרה (מומלץ)">
-<!ENTITY advanced.label "מתקדם">
-<!ENTITY continue2.label "עוד…">
 <!ENTITY advanced2.label "מתקדם…">
-<!ENTITY moreInformation.label "מידע נוסף">
 <!ENTITY viewCertificate.label "הצגת אישור">
 
 <!-- Specific error messages -->
@@ -23,7 +20,7 @@
 <!ENTITY deniedPortAccess.title "כתובת זו מוגבלת">
 <!ENTITY deniedPortAccess.longDesc "">
 
-<!ENTITY dnsNotFound.pageTitle "שרת לא נמצא">
+<!ENTITY dnsNotFound.pageTitle "השרת לא נמצא">
 <!-- Localization note (dnsNotFound.title1) - "Hmm" is a sound made when considering or puzzling over something. You don't have to include it in your translation if your language does not have a written word like this. -->
 <!ENTITY dnsNotFound.title1 "אבוי. יש לנו בעיה למצוא את האתר הזה.">
 <!ENTITY dnsNotFound.longDesc1 "
@@ -31,7 +28,7 @@
 <ul>
   <li>לנסות שוב מאוחר יותר.</li>
   <li>לבדוק את החיבור שלך לאינטרנט.</li>
-  <li>אם החיבור שלך לאינטרנט מוגן על ידי חומת אש, יש לוודא כי הגישה של &brandShortName; לאינטרנט מורשית ופעילה.</li>
+  <li>אם החיבור שלך לאינטרנט מוגן על־ידי חומת אש, יש לוודא כי הגישה של &brandShortName; לאינטרנט מורשית ופעילה.</li>
 </ul>
 ">
 
@@ -130,13 +127,11 @@
 </ul>
 ">
 
-<!ENTITY certerror.longpagetitle1 "החיבור שלך אינו מאובטח">
 <!ENTITY certerror.longpagetitle2 "אזהרה: סכנת אבטחה אפשרית לפניך">
 <!ENTITY certerror.sts.longpagetitle  "לא בוצעה התחברות: חולשת אבטחה אפשרית">
-<!-- Localization note (certerror.introPara, certerror.introPara2) - The text content of the span tag
+<!-- Localization note (certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
-<!ENTITY certerror.introPara "הבעלים של <span class='hostname'/> הגדירו את האתר שלהם בצורה לקויה.  על מנת להגן על המידע שלך מפני גניבה, &brandShortName; לא התחבר לאתר זה.">
 <!ENTITY certerror.introPara2 "‏&brandShortName; זיהה איום אבטחה אפשרי ולא המשיך אל <span class='hostname'/>. אם ברצונך לבקר באתר זה, תוקפים יכולים לנסות לגנוב מידע כמו הססמאות, הודעות דוא״ל או פרטי כרטיס האשראי שלך.">
 <!ENTITY certerror.sts.introPara "‏&brandShortName; זיהה איום אבטחה אפשרי ולא המשיך אל <span class='hostname'/> מכיוון שאתר זה דורש חיבור מאובטח.">
 
@@ -146,10 +141,17 @@ was trying to connect. -->
 
 <!ENTITY certerror.whatCanYouDoAboutItTitle "מה ניתן לעשות בנדון?">
 
+<!ENTITY certerror.unknownIssuer.whatCanYouDoAboutIt "
+<p>כנראה שהבעיה היא באתר, ואין שום דבר שאפשר לעשות כדי לפתור זאת.</p>
+<p>אם הינך ברשת ארגונית או אם מותקנת תוכנת אנטיוירוס, ניתן לפנות אל צוותי התמיכה לקבלת סיוע. באפשרותך גם להודיע למנהל האתר על הבעיה.</p>
+">
 
 <!ENTITY certerror.expiredCert.whatCanYouDoAboutIt2 "<p>שעון המחשב שלך מוגדר ל־<span id='wrongSystemTime_systemDate2'/>. נא לוודא שהתאריך, השעה ואזור הזמן הנכונים מוגדרים בהגדרות המערכת במחשב, ולאחר מכן לרענן את <span class='hostname'/>.</p>
 <p>אם השעון שלך כבר מוגדר לשעה הנכונה, יתכן שהאתר לא מוגדר כראוי, ואין שום דבר שבאפשרותך לעשות כדי לפתור את התקלה. ניתן ליידע את מנהל האתר בנוגע לבעיה.</p>">
 
+<!ENTITY certerror.badCertDomain.whatCanYouDoAboutIt "
+<p>כנראה שהבעיה היא באתר, ואין שום דבר שאפשר לעשות כדי לפתור זאת. ניתן להודיע למנהל האתר על הבעיה.</p>
+">
 
 <!ENTITY sharedLongDesc "<ul> 
 <li>האתר איננו זמין כרגע או שהוא עמוס מדי. נא לנסות שוב בעוד מספר רגעים.</li> 
@@ -163,8 +165,6 @@ was trying to connect. -->
 <!ENTITY corruptedContentErrorv2.title "שגיאת תוכן פגום">
 <!ENTITY corruptedContentErrorv2.longDesc "<p>לא ניתן להציג דף זה מכיון שאותרה שגיאה בתעבורת הנתונים.</p><ul><li>נא ליצור קשר עם בעלי האתר כדי לדווח להם על בעיה זו.</li></ul>">
 
-
-<!ENTITY securityOverride.exceptionButtonLabel "הוספת חריגה…">
 <!ENTITY securityOverride.exceptionButton1Label "קבלת הסיכון והמשך">
 
 <!ENTITY errorReporting.automatic2 "דיווח על תקלות מסוג זה כדי לסייע ל־Mozilla לזהות ולחסום אתרים מסוכנים">
@@ -173,24 +173,13 @@ was trying to connect. -->
 <!ENTITY remoteXUL.title "XUL מרוחק">
 <!ENTITY remoteXUL.longDesc "<p><ul><li>פנה אל בעלי האתר כדי ליידע אותם על הבעיה.</li></ul></p>">
 
-<!ENTITY sslv3Used.title "לא ניתן להיכנס באופן מאובטח">
+<!ENTITY sslv3Used.title "לא ניתן להתחבר באופן מאובטח">
 <!-- LOCALIZATION NOTE (sslv3Used.longDesc2) - Do not translate
      "SSL_ERROR_UNSUPPORTED_VERSION". -->
 <!ENTITY sslv3Used.longDesc2 "מידע מתקדם: SSL_ERROR_UNSUPPORTED_VERSION">
 
-<!-- LOCALIZATION NOTE (certerror.wrongSystemTime2,
-                        certerror.wrongSystemTimeWithoutReference) - The <span id='..' />
-     tags will be injected with actual values, please leave them unchanged. -->
-<!ENTITY certerror.wrongSystemTime2 "<p> &brandShortName; לא התחבר אל <span id='wrongSystemTime_URL'/> מכיוון שנראה ששעון המחשב שלך לא מכוון כראוי, מה שמונע חיבור מאובטח.</p> <p>שעון המחשב שלך מכוון ל־<span id='wrongSystemTime_systemDate'/>, כשהוא אמור להיות <span id='wrongSystemTime_actualDate'/>. לתיקון הבעיה, יש לשנות את הגדרות התאריך והשעה כך שיהיו תואמים לזמן הנוכחי.</p>">
-<!ENTITY certerror.wrongSystemTimeWithoutReference "<p>&brandShortName; לא התחבר אל <span id='wrongSystemTimeWithoutReference_URL'/> מכיוון שנראה ששעון המחשב שלך לא מכוון כראוי, מה שמונע חיבור מאובטח.</p> <p>שעון המחשב שלך מכוון ל־<span id='wrongSystemTimeWithoutReference_systemDate'/>. לתיקון הבעיה, יש לשנות את הגדרות התאריך והשעה כך שיהיו תואמים לזמן הנוכחי.</p>">
-
-<!ENTITY certerror.pagetitle1  "חיבור בלתי מאובטח">
 <!ENTITY certerror.pagetitle2  "אזהרה: סכנת אבטחה אפשרית לפניך">
 <!ENTITY certerror.sts.pagetitle  "לא בוצעה התחברות: חולשת אבטחה אפשרית">
-<!ENTITY certerror.whatShouldIDo.badStsCertExplanation "אתר זה משתמש ב־HTTP
-Strict Transport Security (HSTS) כדי לציין ש־&brandShortName; יוכל
-להתחבר אליו
-באופן מאובטח בלבד. כתוצאה מכך, לא ניתן להוסיף חריגה עבור אישור זה.">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "ל־<span class='hostname'></span> יש מדיניות אבטחה בשם אבטחת תעבורה מחמירה של HTTP ‏(HSTS), כלומר &brandShortName; יכול להתחבר לאתר באופן מאובטח בלבד. לא ניתן להוסיף חריגה כדי לבקר באתר זה.">
 <!ENTITY certerror.copyToClipboard.label "העתקת טקסט ללוח">
 
