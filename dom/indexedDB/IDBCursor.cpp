@@ -389,15 +389,21 @@ void IDBCursor::Continue(JSContext* aCx, JS::Handle<JS::Value> aKey,
   }
 
   Key key;
-  aRv = key.SetFromJSVal(aCx, aKey);
-  if (aRv.Failed()) {
+  auto result = key.SetFromJSVal(aCx, aKey, aRv);
+  if (!result.Is(Ok, aRv)) {
+    if (result.Is(Invalid, aRv)) {
+      aRv.Throw(NS_ERROR_DOM_INDEXEDDB_DATA_ERR);
+    }
     return;
   }
 
   if (IsLocaleAware() && !key.IsUnset()) {
     Key tmp;
-    aRv = key.ToLocaleBasedKey(tmp, mSourceIndex->Locale());
-    if (aRv.Failed()) {
+    result = key.ToLocaleBasedKey(tmp, mSourceIndex->Locale(), aRv);
+    if (!result.Is(Ok, aRv)) {
+      if (result.Is(Invalid, aRv)) {
+        aRv.Throw(NS_ERROR_DOM_INDEXEDDB_DATA_ERR);
+      }
       return;
     }
     key = tmp;
@@ -487,15 +493,21 @@ void IDBCursor::ContinuePrimaryKey(JSContext* aCx, JS::Handle<JS::Value> aKey,
   }
 
   Key key;
-  aRv = key.SetFromJSVal(aCx, aKey);
-  if (aRv.Failed()) {
+  auto result = key.SetFromJSVal(aCx, aKey, aRv);
+  if (!result.Is(Ok, aRv)) {
+    if (result.Is(Invalid, aRv)) {
+      aRv.Throw(NS_ERROR_DOM_INDEXEDDB_DATA_ERR);
+    }
     return;
   }
 
   if (IsLocaleAware() && !key.IsUnset()) {
     Key tmp;
-    aRv = key.ToLocaleBasedKey(tmp, mSourceIndex->Locale());
-    if (aRv.Failed()) {
+    result = key.ToLocaleBasedKey(tmp, mSourceIndex->Locale(), aRv);
+    if (!result.Is(Ok, aRv)) {
+      if (result.Is(Invalid, aRv)) {
+        aRv.Throw(NS_ERROR_DOM_INDEXEDDB_DATA_ERR);
+      }
       return;
     }
     key = tmp;
@@ -509,8 +521,11 @@ void IDBCursor::ContinuePrimaryKey(JSContext* aCx, JS::Handle<JS::Value> aKey,
   }
 
   Key primaryKey;
-  aRv = primaryKey.SetFromJSVal(aCx, aPrimaryKey);
-  if (aRv.Failed()) {
+  result = primaryKey.SetFromJSVal(aCx, aPrimaryKey, aRv);
+  if (!result.Is(Ok, aRv)) {
+    if (result.Is(Invalid, aRv)) {
+      aRv.Throw(NS_ERROR_DOM_INDEXEDDB_DATA_ERR);
+    }
     return;
   }
 
