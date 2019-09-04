@@ -138,12 +138,12 @@ endif
 L10N_REPO := https://hg.mozilla.org/l10n-central
 
 ifeq (file,$(origin VERSION))
-$(call lazy,L10N_CHANGESETS,$$(shell python debian/l10n_revs.py < $(PRODUCT)/locales/l10n-changesets.json))
+$(call lazy,L10N_CHANGESETS,$$(shell $$(PYTHON) debian/l10n_revs.py < $(PRODUCT)/locales/l10n-changesets.json))
 else
 SOURCE_REV ?= $(patsubst %.tar.$(SOURCE_TARBALL_EXT),%,$(notdir $(SOURCE_URL)))
 SOURCE_REPO ?= $(patsubst %/,%,$(dir $(patsubst %/,%,$(dir $(SOURCE_URL)))))
 
-$(call lazy,L10N_CHANGESETS,$$(shell curl -sL $(SOURCE_REPO)/raw-file/$(SOURCE_REV)/$(PRODUCT)/locales/l10n-changesets.json | python debian/l10n_revs.py))
+$(call lazy,L10N_CHANGESETS,$$(shell curl -sL $(SOURCE_REPO)/raw-file/$(SOURCE_REV)/$(PRODUCT)/locales/l10n-changesets.json | $$(PYTHON) debian/l10n_revs.py))
 endif
 
 L10N_REV = $(subst $1:,,$(filter $1:%,$(L10N_CHANGESETS)))

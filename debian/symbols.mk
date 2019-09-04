@@ -1,6 +1,6 @@
 include debian/make.mk
 
-PYTHON := python -B
+PYTHON := python2.7 -B
 PRODUCT := browser
 
 include debian/upstream.mk
