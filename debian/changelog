@@ -1,3 +1,12 @@
+firefox-esr (60.9.0esr-1~deb9u1) stretch-security; urgency=medium
+
+  * New upstream release.
+    Fixes for mfsa2019-27, also known as:
+    CVE-2019-11746, CVE-2019-11744, CVE-2019-11742, CVE-2019-11752,
+    CVE-2019-9812, CVE-2019-11743, CVE-2019-11740.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 04 Sep 2019 09:23:23 +0900
+
 firefox-esr (60.8.0esr-1~deb9u1) stretch-security; urgency=medium
 
   * New upstream release.
