@@ -1,3 +1,16 @@
+firefox (69.0.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fix for mfsa2019-31, also known as CVE-2019-11754.
+
+  * debian/control*:
+    - Bump nss, rustc, cargo and cbindgen build dependencies. Closes: #939412.
+    - Remove build dependency versions where Debian has had the right version
+      since Jessie.
+  * debian/source/lintian-overrides: Adjust DotZlib.chm path.
+
+ -- Mike Hommey <glandium@debian.org>  Tue, 24 Sep 2019 06:39:36 +0900
+
 firefox (69.0-1) unstable; urgency=medium
 
   * New upstream release.
