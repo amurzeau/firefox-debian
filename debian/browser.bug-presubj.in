@@ -28,7 +28,11 @@ If @Browser@ still crashes, please submit the crash to Mozilla, then
 visit `about:crashes` and paste the url to the corresponding submitted
 crash report in your bug report.
 
+%if DIST == jessie
 Alternatively, please install the @browser@-dbg package and run
+%else
+Alternatively, please install the @browser@-dbgsym package and run
+%endif
 @Browser@ under gdb with:
 
     gdb --args @browser@ [command-line-arguments]
