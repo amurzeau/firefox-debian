@@ -7,10 +7,21 @@ about-config-warning-title = ਇਹ ਹੈ ਡਰੈਗਨ!
 about-config-warning-text = ਇਹਨਾਂ ਤਕਨੀਕੀ ਸੈਟਿੰਗਾਂ ਨੂੰ ਬਦਲਣਾ ਇਸ ਐਪਲੀਕੇਸ਼ਨ ਦੀ ਸਥਿਰਤਾ, ਸੁਰੱਖਿਆ ਅਤੇ ਕਾਰਗੁਜ਼ਾਰੀ ਲਈ ਨੁਕਸਾਨਦੇਹ ਹੋ ਸਕਦਾ ਹੈ। ਤੁਹਾਨੂੰ ਸਿਰਫ ਤਾਂ ਹੀ ਜਾਰੀ ਰਹਿਣਾ ਚਾਹੀਦਾ ਹੈ ਜੇ ਤੁਸੀਂ ਯਕੀਨੀ ਹੋ ਕਿ ਤੁਸੀਂ ਕੀ ਕਰ ਰਹੇ ਹੋ।
 about-config-warning-checkbox = ਮੈਨੂੰ ਫਿਰ ਪਰੇਸ਼ਾਨ ਕਰੋ, ਕਿਰਪਾ ਕਰਕੇ!
 about-config-warning-button = ਮੈਂ ਖ਼ਤਰੇ ਨੂੰ ਮਨਜ਼ੂਰ ਕਰਦਾ/ਕਰਦੀ ਹਾਂ
-about-config-title = about:config
 about-config2-title = ਤਕਨੀਕੀ ਸੰਰਚਨਾ
 about-config-search-input =
     .placeholder = ਖੋਜ
+
+## These strings appear on the warning you see when first visiting about:config.
+
+about-config-intro-warning-title = ਧਿਆਨ ਨਾਲ ਅੱਗੇ ਵਧੋ
+about-config-intro-warning-checkbox = ਮੈਨੂੰ ਸੂਚਿਤ ਕਰੋ ਜਦੋਂ ਮੈਂ ਇਨ੍ਹਾਂ ਤਰਜੀਹਾਂ ਨੂੰ ਵੇਖਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਾਂਗਾ
+about-config-intro-warning-button = ਖ਼ਤਰੇ ਨੂੰ ਮੰਨੋ ਤੇ ਜਾਰੀ ਰੱਖੋ
+
+
+
+about-config-page-title = ਤਕਨੀਕੀ ਪਸੰਦਾਂ
+about-config-search-input1 =
+    .placeholder = ਪਸੰਦ ਨਾਂ ਖੋਜੋ
 about-config-show-all = ਸਾਰੇ ਦਿਖਾਓ
 about-config-pref-add = ਜੋੜੋ
 about-config-pref-toggle = ਬਦਲੋ
@@ -18,6 +29,18 @@ about-config-pref-edit = ਸੰਪਾਦਿਤ ਕਰੋ
 about-config-pref-save = ਸੰਭਾਲੋ
 about-config-pref-reset = ਮੁੜ-ਸੈੱਟ
 about-config-pref-delete = ਹਟਾਓ
+about-config-pref-add-button =
+    .title = ਜੋੜੋ
+about-config-pref-toggle-button =
+    .title = ਬਦਲੋ
+about-config-pref-edit-button =
+    .title = ਸੰਪਾਦਿਤ ਕਰੋ
+about-config-pref-save-button =
+    .title = ਸੰਭਾਲੋ
+about-config-pref-reset-button =
+    .title = ਮੁੜ-ਸੈੱਟ
+about-config-pref-delete-button =
+    .title = ਹਟਾਓ
 
 ## Labels for the type selection radio buttons shown when adding preferences.
 

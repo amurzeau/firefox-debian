@@ -7,10 +7,19 @@ about-config-warning-title = Inilah naga!
 about-config-warning-text = Mengubah nilai bawaan pada pengaturan canggih ini dapat mengakibatkan kerusakan pada stabilitas, keamanan, dan kinerja aplikasi ini. Hanya lanjutkan jika benar-benar tahu apa yang akan Anda lakukan.
 about-config-warning-checkbox = Tanya lagi nanti!
 about-config-warning-button = Saya terima risikonya
-about-config-title = about:config
 about-config2-title = Konfigurasi Lanjutan
 about-config-search-input =
     .placeholder = Cari
+
+## These strings appear on the warning you see when first visiting about:config.
+
+about-config-intro-warning-title = Lanjutkan dengan Kehati-hatian
+
+
+
+about-config-page-title = Preferensi Tingkat Lanjut
+about-config-search-input1 =
+    .placeholder = Cari nama preferensi
 about-config-show-all = Tampilkan Semua
 about-config-pref-add = Tambah
 about-config-pref-toggle = Aktifkan/Nonaktifkan
@@ -18,6 +27,18 @@ about-config-pref-edit = Edit
 about-config-pref-save = Simpan
 about-config-pref-reset = Setel Ulang
 about-config-pref-delete = Hapus
+about-config-pref-add-button =
+    .title = Tambah
+about-config-pref-toggle-button =
+    .title = Aktifkan/Nonaktifkan
+about-config-pref-edit-button =
+    .title = Edit
+about-config-pref-save-button =
+    .title = Simpan
+about-config-pref-reset-button =
+    .title = Setel ulang
+about-config-pref-delete-button =
+    .title = Hapus
 
 ## Labels for the type selection radio buttons shown when adding preferences.
 

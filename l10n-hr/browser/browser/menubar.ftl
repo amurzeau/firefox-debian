@@ -47,7 +47,7 @@ menu-file-print-preview =
     .label = Pregled ispisa
     .accesskey = s
 menu-file-print =
-    .label = Ispis...
+    .label = Ispiši …
     .accesskey = p
 menu-file-import-from-another-browser =
     .label = Uvoz iz drugog preglednika…
@@ -113,8 +113,8 @@ menu-view-history-button =
 menu-view-synced-tabs-sidebar =
     .label = Sinkronizirane kartice
 menu-view-full-zoom =
-    .label = Uvećanje
-    .accesskey = v
+    .label = Zumiraj
+    .accesskey = Z
 menu-view-full-zoom-enlarge =
     .label = Uvećaj
     .accesskey = v
@@ -153,7 +153,7 @@ menu-view-full-screen =
     .label = Potpuni zaslon
     .accesskey = o
 
-##
+
 
 menu-view-show-all-tabs =
     .label = Prikaži sve kartice
@@ -212,12 +212,21 @@ menu-tools-addons =
 menu-tools-sync-sign-in =
     .label = Prijavite se u { -sync-brand-short-name }…
     .accesskey = Y
+menu-tools-fxa-sign-in =
+    .label = Prijavite se u { -brand-product-name } …
+    .accesskey = a
+menu-tools-turn-on-sync =
+    .label = Uključi { -sync-brand-short-name } …
+    .accesskey = u
 menu-tools-sync-now =
     .label = Sinkroniziraj sada
     .accesskey = S
 menu-tools-sync-re-auth =
     .label = Ponovno povezivanje na { -sync-brand-short-name }a…
     .accesskey = v
+menu-tools-fxa-re-auth =
+    .label = Ponovno povezivanje na { -brand-product-name } …
+    .accesskey = n
 menu-tools-web-developer =
     .label = Web programer
     .accesskey = W
@@ -239,7 +248,7 @@ menu-preferences =
            *[other] P
         }
 menu-tools-layout-debugger =
-    .label = Debugger rasporeda
+    .label = Ispravljač grešaka rasporeda
     .accesskey = r
 
 ## Window Menu
@@ -258,16 +267,16 @@ menu-help-product =
     .label = { -brand-shorter-name } pomoć
     .accesskey = p
 menu-help-show-tour =
-    .label = { -brand-shorter-name } Vodič
+    .label = { -brand-shorter-name } vodič
     .accesskey = o
 menu-help-keyboard-shortcuts =
-    .label = Tipkovničke kratice
+    .label = Tipkovnički prečaci
     .accesskey = k
 menu-help-troubleshooting-info =
     .label = Rješavanje problema
     .accesskey = R
 menu-help-feedback-page =
-    .label = Pošalji povratne informacije…
+    .label = Pošalji povratne informacije …
     .accesskey = e
 menu-help-safe-mode-without-addons =
     .label = Ponovno pokreni s isključenim dodacima…

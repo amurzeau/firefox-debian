@@ -262,6 +262,62 @@ applications-type-column =
 applications-action-column =
     .label = Gwezh
     .accesskey = w
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = restr { $extension }
+applications-action-save =
+    .label = Enrollañ ar restr
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Arverañ { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Arverañ { $app-name } (dre ziouer)
+applications-use-other =
+    .label = Arverañ re all…
+applications-select-helper = Diuzañ an arload skoazellañ
+applications-manage-app =
+    .label = Munudoù an arload…
+applications-always-ask =
+    .label = Goulenn bewech
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Arverañ { $plugin-name } (e { -brand-short-name })
+applications-preview-inapp =
+    .label = Alberz e { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = Endalc'had Digital Rights Management (DRM)
 play-drm-content =
     .label = Lenn un endalc'had reoliet gant DRM
@@ -348,6 +404,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Klask an destenn pa grogan da skrivañ
     .accesskey = K
+browsing-picture-in-picture-toggle-enabled =
+    .label = Gweredekaat ar reoliadurioù video skeudenn-war-skeudenn
+    .accesskey = G
+browsing-picture-in-picture-learn-more = Gouzout hiroc'h
 browsing-cfr-recommendations =
     .label = Erbediñ askouezhioù p'emaoc'h o merdeiñ
     .accesskey = R
@@ -506,6 +566,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Kemerit ho web ganeoc'h
 sync-signedout-description = Goubredit ho sinedoù, roll istor, ivinelloù, gerioù-tremen, askouezhioù ha gwellvezioù dre veur a urzhiataer pe trevnad.
 sync-signedout-account-title = Kennaskit gant un { -fxaccount-brand-name }
@@ -526,11 +590,17 @@ sync-mobile-promo = Pellgargañ Firefox evit <img data-l10n-name="android-icon"/
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = Kemmañ ar skeudenn aelad
 sync-disconnect =
     .label = Digennaskañ…
     .accesskey = D
+sync-sign-out =
+    .label = Digennaskañ…
+    .accesskey = g
 sync-manage-account = Ardeiñ ar gont
     .accesskey = A
 sync-signedin-unverified = { $email } n'eo ket gwiriet.
@@ -546,6 +616,46 @@ sync-sign-in =
     .accesskey = a
 sync-signedin-settings-header = Arventennoù Sync
 sync-signedin-settings-desc = Dibabit petra goubredan war ho trevnad en ur arverañ { -brand-short-name }.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Goubredañ: YA
+prefs-syncing-off = Goubredañ: KET
+prefs-sync-setup =
+    .label = Arventennañ { -sync-brand-short-name }…
+    .accesskey = A
+prefs-sync-offer-setup-label = Goubredit ho sinedoù, roll istor, ivinelloù, gerioù-tremen, askouezhioù ha gwellvezioù dre veur a urzhiataer pe trevnad.
+prefs-sync-now =
+    .labelnotsyncing = Goubredañ bremañ
+    .accesskeynotsyncing = G
+    .labelsyncing = O c'houbredañ...
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = Emaoc'h o c'houbredañ an elfennoù-mañ:
+sync-currently-syncing-bookmarks = Sinedoù
+sync-currently-syncing-history = Roll istor
+sync-currently-syncing-tabs = Ivinelloù digor
+sync-currently-syncing-logins-passwords = Titouroù kennaskañ
+sync-currently-syncing-addresses = Chomlec'hioù
+sync-currently-syncing-creditcards = Kartennoù kred
+sync-currently-syncing-addons = Askouezhioù
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Dibarzhioù
+       *[other] Gwellvezioù
+    }
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = Dibabit petra goubredañ
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Enrollañ ar c'hemmoù
+    .buttonaccesskeyaccept = E
+    .buttonlabelextra2 = Digennaskañ...
+    .buttonaccesskeyextra2 = D
+sync-choose-heading = Dibabit petra goubredañ war ho kont evit an trevnadoù a ra gant { -sync-brand-short-name }:
 sync-engine-bookmarks =
     .label = Sinedoù
     .accesskey = S
@@ -559,6 +669,10 @@ sync-engine-tabs =
 sync-engine-logins =
     .label = Titouroù kennaskañ
     .tooltiptext = Anvioù implijer ha gerioù-tremen enrollet ganeoc'h
+    .accesskey = T
+sync-engine-logins-passwords =
+    .label = Titouroù kennaskañ
+    .tooltiptext = Titouroù kennaskañ enrollet ganeoc'h
     .accesskey = T
 sync-engine-addresses =
     .label = Chomlec'hioù
@@ -580,6 +694,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Arventennoù hollek, buhez prevez ha diogelroez kemmet ganeoc'h
     .accesskey = G
+
+## The device name controls.
+
 sync-device-name-header = Anv an trevnad
 sync-device-name-change =
     .label = Kemmañ anv an trevnad…
@@ -609,6 +726,16 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Nemedennoù…
     .accesskey = m
+forms-generate-passwords =
+    .label = Kinnig ha krouiñ gerioù-tremen kreñv
+    .accesskey = K
+forms-breach-alerts =
+    .label = Diskouez galvoù diwall a-zivout ar gerioù-tremen war al lec'hiennoù frailhet
+    .accesskey = D
+forms-breach-alerts-learn-more-link = Gouzout hiroc'h
+forms-fill-logins-and-passwords =
+    .label = Leuniañ an titouroù kennaskañ ent emgefreek
+    .accesskey = L
 forms-saved-logins =
     .label = Titouroù kennaskañ enrollet...
     .accesskey = k
@@ -618,6 +745,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Kemmañ ar ger-tremen mestr…
     .accesskey = K
+forms-master-pw-fips-title = E mod FIPS emaoc'h bremañ. Azgoulenn a ra FIPS ur ger-tremen mestr bet roet.
+forms-master-pw-fips-desc = Fazi en ur gemmañ ar ger-tremen
 
 ## Privacy Section - History
 
@@ -685,6 +814,10 @@ sitedata-block-desc = Rizh stanket
     .accesskey = R
 sitedata-option-block-trackers =
     .label = Heulierien un trede
+sitedata-option-block-cross-site-trackers =
+    .label = Heulierien etre-lec'hienn
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Heulierien etre-lec'hienn ha kevredadel
 sitedata-option-block-unvisited =
     .label = Toupinoù al lec'hiennoù n'int ket bet gweladennet
 sitedata-option-block-all-third-party =
@@ -720,6 +853,8 @@ addressbar-suggestions-settings = Kemmañ ar gwellvezioù evit ar c'hinnigoù lu
 
 content-blocking-header = Stankañ endalc'hadoù
 content-blocking-section-description = Gwarezit ho puhez prevez pa verdeit. Stankit an endalc'hadoù diwelus a heuilh al lec'hiennoù a weladennit hag a sav un aelad diwar ho penn. Stankañ ul lodenn eus an endalc'had-mañ a c'hall lakaat ar pajennoù da gargañ buanoc'h.
+content-blocking-enhanced-tracking-protection = Gwarez heuliañ araoket
+content-blocking-section-top-level-description = An heulierien a heuilh ac'hanoc'h enlinenn evit tapout titouroù diwar-benn ho poazioù merdeiñ hag ho kreizennoù dedenn. { -brand-short-name } a stank lodenn vrasañ anezho.
 content-blocking-learn-more = Gouzout hiroc'h
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -737,15 +872,41 @@ content-blocking-strict-description = Gwarez gwelloc'h, gallout a ra lakaat lec'
 content-blocking-custom-desc = Dibabit petra stankañ.
 content-blocking-private-trackers = An heulierien anavezet er merdeiñ prevez hepken
 content-blocking-third-party-cookies = Toupinoù heuliañ tredeoù
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Skoueriek
+    .accesskey = S
+enhanced-tracking-protection-setting-strict =
+    .label = Strizh
+    .accesskey = S
+enhanced-tracking-protection-setting-custom =
+    .label = Personelaet
+    .accesskey = P
+
+
+
+content-blocking-etp-standard-desc = Kempouez etre gwarez ha digonusted. Ar pajennoù a gargo en un doare ordinal.
+content-blocking-etp-strict-desc = Gwarez kreñvoc'h, met gallout a ra lakaat lec'hiennoù 'zo da derriñ.
+content-blocking-etp-custom-desc = Dibabit pe heulier pe skript herzel.
+content-blocking-private-windows = Heulierien er prenestroù prevez
+content-blocking-cross-site-tracking-cookies = Toupinoù heuliañ etre-lec'hienn
+content-blocking-social-media-trackers = Heulierien media kevredadel
 content-blocking-all-cookies = An holl doupinoù
 content-blocking-unvisited-cookies = Toupinoù al lec'hiennoù n'int ket bet gweladennet
 content-blocking-all-windows-trackers = An holl heulierien en holl brenestroù
+content-blocking-all-windows-tracking-content = Endalc'had heuliañ en holl brenestroù
 content-blocking-all-third-party-cookies = Holl doupinoù an tredeoù
 content-blocking-cryptominers = Kriptogleuzerien
 content-blocking-fingerprinters = Dinoerien roudoù niverel
 content-blocking-warning-title = Diwallit!
 content-blocking-warning-description = Stankañ endalc'hadoù a c'hall lakaat lec'hiennoù 'zo da vont en-dro a-dreuz. Aes eo diweredekaat ar stankadur evit al lec'hiennoù ho peus fiziañs eno.
 content-blocking-learn-how = Deskit penaos
+content-blocking-etp-warning-description = Stankañ an heulierien a c'hallfe kaout un efed war implij lec'hiennoù 'zo. Adkargit ur bajenn gant an heulierien evit kargañ pep tra.
+content-blocking-warning-learn-how = Deskit penaos
 content-blocking-reload-description = Ezhomm ho po da adkargañ hoc'h ivinelloù evit arloañ ar c'hemmoù.
 content-blocking-reload-tabs-button =
     .label = Adkargañ an holl ivinelloù
@@ -753,6 +914,9 @@ content-blocking-reload-tabs-button =
 content-blocking-trackers-label =
     .label = Heulierien
     .accesskey = H
+content-blocking-tracking-content-label =
+    .label = Endalc'had heuliañ
+    .accesskey = E
 content-blocking-tracking-protection-option-all-windows =
     .label = En holl brenestroù
     .accesskey = E

@@ -7,10 +7,24 @@ about-config-warning-title = ระวังมังกร!
 about-config-warning-text = การเปลี่ยนการตั้งค่าขั้นสูงเหล่านี้อาจเป็นอันตรายต่อเสถียรภาพ ความปลอดภัย และประสิทธิภาพของแอปพลิเคชันนี้ คุณควรดำเนินการต่อเฉพาะเมื่อคุณแน่ใจว่าคุณกำลังทำอะไรอยู่เท่านั้น
 about-config-warning-checkbox = ได้โปรดกวนฉันอีกที!
 about-config-warning-button = ฉันยอมรับความเสี่ยง
-about-config-title = about:config
 about-config2-title = การกำหนดค่าขั้นสูง
 about-config-search-input =
     .placeholder = ค้นหา
+
+## These strings appear on the warning you see when first visiting about:config.
+
+about-config-intro-warning-title = ดำเนินการต่อด้วยความระมัดระวัง
+about-config-intro-warning-text = การเปลี่ยนแปลงค่ากำหนดขั้นสูงอาจส่งผลต่อประสิทธิภาพหรือความปลอดภัยของ { -brand-short-name } ได้
+about-config-intro-warning-checkbox = เตือนเมื่อฉันพยายามเข้าถึงการตั้งค่าเหล่านี้
+about-config-intro-warning-button = ยอมรับความเสี่ยงและดำเนินการต่อ
+
+
+
+# This is shown on the page before searching but after the warning is accepted.
+about-config-caution-text = การเปลี่ยนแปลงค่ากำหนดเหล่านี้อาจส่งผลต่อประสิทธิภาพหรือความปลอดภัยของ { -brand-short-name } ได้
+about-config-page-title = ค่ากำหนดขั้นสูง
+about-config-search-input1 =
+    .placeholder = ค้นหาชื่อค่ากำหนด
 about-config-show-all = แสดงทั้งหมด
 about-config-pref-add = เพิ่ม
 about-config-pref-toggle = เปิด/ปิด
@@ -18,6 +32,18 @@ about-config-pref-edit = แก้ไข
 about-config-pref-save = บันทึก
 about-config-pref-reset = กลับค่าเดิม
 about-config-pref-delete = ลบ
+about-config-pref-add-button =
+    .title = เพิ่ม
+about-config-pref-toggle-button =
+    .title = เปิด/ปิด
+about-config-pref-edit-button =
+    .title = แก้ไข
+about-config-pref-save-button =
+    .title = บันทึก
+about-config-pref-reset-button =
+    .title = กลับค่าเดิม
+about-config-pref-delete-button =
+    .title = ลบ
 
 ## Labels for the type selection radio buttons shown when adding preferences.
 

@@ -29,6 +29,7 @@ search-input-box =
             [windows] Tschertgar en las preferenzas
            *[other] Tschertgar en las preferenzas
         }
+managed-notice = Tes navigatur vegn administrà da tia organisaziun.
 pane-general-title = General
 category-general =
     .tooltiptext = { pane-general-title }
@@ -252,6 +253,62 @@ applications-type-column =
 applications-action-column =
     .label = Acziun
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = Datoteca { $extension }
+applications-action-save =
+    .label = Memorisar la datoteca
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Utilisar { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Utilisar { $app-name } (standard)
+applications-use-other =
+    .label = Autra applicaziun…
+applications-select-helper = Tscherner in'applicaziun externa
+applications-manage-app =
+    .label = Detagls davart l'applicaziun…
+applications-always-ask =
+    .label = Dumandar mintga giada
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Utilisar { $plugin-name } (en { -brand-short-name })
+applications-preview-inapp =
+    .label = Prevista en { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = Cuntegn DRM (Digital Rights Management)
 play-drm-content =
     .label = Far ir cuntegn controllà da DRM
@@ -284,6 +341,21 @@ update-pref-write-failure-title = Errur cun memorisar
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Errur durant memorisar la preferenza. Impussibel da scriver en la datoteca: { $path }
+update-setting-write-failure-title = Errur cun memorisar preferenzas per actualisaziuns
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    { -brand-short-name } è fruntà sin in problem e n'ha betg memorisà questa midada. Igl è necessari da pudair scriver en la datoteca sutvart per pudair definir quest parameter dad actualisaziuns. Eventualmain pos ti u l'administratur dal sistem schliar il problem cun permetter a la gruppa d'utilisaders l'access cumplain a questa datoteca.
+    
+    Impussibel da scriver en la datoteca: { $path }
+update-in-progress-title = Actualisaziun en lavur
+update-in-progress-message = Vuls ti che { -brand-short-name } cuntinueschia cun questa actualisaziun?
+update-in-progress-ok-button = &Annullar
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Cuntinuar
 
 ## General Section - Performance
 
@@ -323,6 +395,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Retschertgar il text cura che ti cumenzas a tippar
     .accesskey = x
+browsing-picture-in-picture-toggle-enabled =
+    .label = Activar las controllas per maletg-en-maletg
+    .accesskey = A
+browsing-picture-in-picture-learn-more = Ulteriuras infurmaziuns
 browsing-cfr-recommendations =
     .label = Recumandar extensiuns durant la navigaziun
     .accesskey = R
@@ -478,6 +554,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Prenda tes web cun tai
 sync-signedout-description = Sincronisescha tes segnapaginas, tia cronologia, tes tabs, tes pleds-clav, tes supplements e tias preferenzas cun tut tes apparats.
 sync-signedout-account-title = Connectar cun in { -fxaccount-brand-name }
@@ -498,11 +578,17 @@ sync-mobile-promo = Telechargiar Firefox per <img data-l10n-name="android-icon"/
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = Midar il maletg da profil
 sync-disconnect =
     .label = Deconnectar…
     .accesskey = D
+sync-sign-out =
+    .label = Sortir…
+    .accesskey = o
 sync-manage-account = Administrar il conto
     .accesskey = o
 sync-signedin-unverified = L'adressa { $email } n'è anc betg verifitgada.
@@ -518,6 +604,46 @@ sync-sign-in =
     .accesskey = a
 sync-signedin-settings-header = Parameters da Sync
 sync-signedin-settings-desc = Tscherna tge che duai vegnir sincronisà tranter tes apparats che utiliseschan { -brand-short-name }.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Sincronisaziun: ACTIVADA
+prefs-syncing-off = Sincronisaziun: DEACTIVADA
+prefs-sync-setup =
+    .label = Configurar { -sync-brand-short-name }…
+    .accesskey = C
+prefs-sync-offer-setup-label = Sincronisescha tes segnapaginas, tia cronologia, tes tabs, tes pleds-clav, tes supplements e tias preferenzas cun tut tes apparats.
+prefs-sync-now =
+    .labelnotsyncing = Sincronisar ussa
+    .accesskeynotsyncing = u
+    .labelsyncing = Sincronisar…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = Ils suandants elements vegnan actualmain sincronisads:
+sync-currently-syncing-bookmarks = Segnapaginas
+sync-currently-syncing-history = Cronologia
+sync-currently-syncing-tabs = Tabs averts
+sync-currently-syncing-logins-passwords = Infurmaziuns d'annunzia e pleds-clav
+sync-currently-syncing-addresses = Adressas
+sync-currently-syncing-creditcards = Cartas da credit
+sync-currently-syncing-addons = Supplements
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Preferenzas
+       *[other] Preferenzas
+    }
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = Decider tge sincronisar
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Memorisar las midadas
+    .buttonaccesskeyaccept = M
+    .buttonlabelextra2 = Deconnectar…
+    .buttonaccesskeyextra2 = D
+sync-choose-heading = Tscherna tge che duai vegnir sincronisà cun tes conto per apparats che utiliseschan { -sync-brand-short-name }:
 sync-engine-bookmarks =
     .label = ils segnapaginas
     .accesskey = g
@@ -530,6 +656,10 @@ sync-engine-tabs =
     .accesskey = T
 sync-engine-logins =
     .label = Infurmaziuns d'annunzia
+    .tooltiptext = Nums d'utilisader e pleds-clav che ti has memorisà
+    .accesskey = I
+sync-engine-logins-passwords =
+    .label = Infurmaziuns d'annunzia e pleds-clav
     .tooltiptext = Nums d'utilisader e pleds-clav che ti has memorisà
     .accesskey = I
 sync-engine-addresses =
@@ -552,6 +682,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Preferenzas generalas, da la protecziun da datas e da segirezza che ti has midà
     .accesskey = a
+
+## The device name controls.
+
 sync-device-name-header = Num da l'apparat
 sync-device-name-change =
     .label = Midar il num da l'apparat…
@@ -581,6 +714,16 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Excepziuns…
     .accesskey = x
+forms-generate-passwords =
+    .label = Proponer e generar pleds-clav cumplexs
+    .accesskey = x
+forms-breach-alerts =
+    .label = Mussar avertiments per ils pleds-clav da websites cun sperditas da datas
+    .accesskey = b
+forms-breach-alerts-learn-more-link = Ulteriuras infurmaziuns
+forms-fill-logins-and-passwords =
+    .label = Emplenir automaticamain infurmaziuns d'annunzia
+    .accesskey = i
 forms-saved-logins =
     .label = Infurmaziuns d'annunzia memorisadas…
     .accesskey = n
@@ -590,6 +733,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Midar il pled-clav universal…
     .accesskey = d
+forms-master-pw-fips-title = Ti es actualmain en il modus FIPS. FIPS pretenda in pled-clav universal.
+forms-master-pw-fips-desc = I n'è betg reussì da midar il pled-clav
 
 ## Privacy Section - History
 
@@ -657,6 +802,10 @@ sitedata-block-desc = Tip da cuntegn bloccà
     .accesskey = T
 sitedata-option-block-trackers =
     .label = Fastizaders da terzas partidas
+sitedata-option-block-cross-site-trackers =
+    .label = Fastizaders tranter websites
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Fastizaders tranter websites e da raits socialas
 sitedata-option-block-unvisited =
     .label = Cookies da websites betg visitadas
 sitedata-option-block-all-third-party =
@@ -692,6 +841,8 @@ addressbar-suggestions-settings = Midar las preferenzas per propostas da maschin
 
 content-blocking-header = Bloccada da cuntegn
 content-blocking-section-description = Protegia tia sfera privata durant la navigaziun. Blochescha cuntegn invisibel che po fastizar las websites che ti visitas e skizzar tes profil. Cun bloccar ina part da quest cuntegn chargian las paginas eventualmain pli svelt.
+content-blocking-enhanced-tracking-protection = Protecziun avanzada cunter il fastizar
+content-blocking-section-top-level-description = Fastizaders ta suondan online per rimnar infurmaziuns davart tias disas da navigar e tes interess. { -brand-short-name } blochescha blers da quests fastizaders ed auters scripts donnegius.
 content-blocking-learn-more = Ulteriuras infurmaziuns
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -709,15 +860,41 @@ content-blocking-strict-description = Ina protecziun pli severa, po avair per co
 content-blocking-custom-desc = Tscherna tge bloccar.
 content-blocking-private-trackers = Fastizaders enconuschents mo en il modus privat
 content-blocking-third-party-cookies = Cookies che fastizeschan da terzas partidas
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Standard
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = Restrictiv
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = Persunalisà
+    .accesskey = u
+
+
+
+content-blocking-etp-standard-desc = Equiliber tranter protecziun e prestaziun. Paginas chargian normal.
+content-blocking-etp-strict-desc = Ina protecziun pli severa, ma po avair per consequenza che tschertas websites u tscherts cuntegns na funcziuneschan betg pli.
+content-blocking-etp-custom-desc = Tscherna ils fastizaders ed ils scripts che duain vegnir bloccads.
+content-blocking-private-windows = Cuntegn che fastizescha en fanestras privatas
+content-blocking-cross-site-tracking-cookies = Cookies che fastizeschan tranter websites
+content-blocking-social-media-trackers = Fastizaders da raits socialas
 content-blocking-all-cookies = Tut ils cookies
 content-blocking-unvisited-cookies = Cookies da websites betg visitadas
 content-blocking-all-windows-trackers = Fastizaders enconuschents en tut las fanestras
+content-blocking-all-windows-tracking-content = Cuntegn che fastizescha en tut las fanestras
 content-blocking-all-third-party-cookies = Tut ils cookies da terzas partidas
 content-blocking-cryptominers = Criptominiers
 content-blocking-fingerprinters = Improntaders dal det
 content-blocking-warning-title = Attenziun!
 content-blocking-warning-description = La bloccada da cuntegn po impedir che tschertas websites funcziunian. Igl è simpel da deactivar la bloccada per las websites che ti tegnas per fidablas.
 content-blocking-learn-how = Vegnir a savair co
+content-blocking-etp-warning-description = La bloccada da fastizaders po influenzar las funcziunalitads da tschertas websites. Rechargiar ina pagina cun fastizaders per chargiar l'entir cuntegn.
+content-blocking-warning-learn-how = Vegnir a savair co
 content-blocking-reload-description = Igl è necessari da rechargiar ils tabs per applitgar las midadas.
 content-blocking-reload-tabs-button =
     .label = Rechargiar tut ils tabs
@@ -725,6 +902,9 @@ content-blocking-reload-tabs-button =
 content-blocking-trackers-label =
     .label = Fastizaders
     .accesskey = F
+content-blocking-tracking-content-label =
+    .label = Cuntegn che fastizescha
+    .accesskey = t
 content-blocking-tracking-protection-option-all-windows =
     .label = En tut las fanestras
     .accesskey = t
@@ -782,6 +962,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Excepziuns…
     .accesskey = E
+permissions-autoplay = Reproducziun automatica
+permissions-autoplay-settings =
+    .label = Parameters…
+    .accesskey = P
 permissions-block-popups =
     .label = Bloccar fanestras pop-up
     .accesskey = p

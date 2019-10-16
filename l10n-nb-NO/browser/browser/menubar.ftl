@@ -153,7 +153,7 @@ menu-view-full-screen =
     .label = Fullskjerm
     .accesskey = F
 
-##
+
 
 menu-view-show-all-tabs =
     .label = Vis alle faner
@@ -212,12 +212,21 @@ menu-tools-addons =
 menu-tools-sync-sign-in =
     .label = Logg inn på { -sync-brand-short-name } …
     .accesskey = L
+menu-tools-fxa-sign-in =
+    .label = Logg inn på { -brand-product-name }…
+    .accesskey = g
+menu-tools-turn-on-sync =
+    .label = Slå på { -sync-brand-short-name }…
+    .accesskey = S
 menu-tools-sync-now =
     .label = Synkroniser nå
     .accesskey = r
 menu-tools-sync-re-auth =
     .label = Koble til { -sync-brand-short-name } på nytt …
     .accesskey = o
+menu-tools-fxa-re-auth =
+    .label = Koble til { -brand-product-name } på nytt…
+    .accesskey = K
 menu-tools-web-developer =
     .label = Nettsideutvikling
     .accesskey = t

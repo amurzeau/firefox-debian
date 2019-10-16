@@ -76,12 +76,21 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY menubarCmd.label "Панель меню">
 <!ENTITY menubarCmd.accesskey "н">
 <!ENTITY navbarCmd.label "Панель навігації">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY navbar.accessibleLabel "Навігація">
 <!ENTITY personalbarCmd.label "Панель закладок">
 <!ENTITY personalbarCmd.accesskey "к">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY personalbar.accessibleLabel "Закладки">
 <!ENTITY bookmarksToolbarItem.label "Елементи панелі закладок">
 
 <!ENTITY pageSourceCmd.label "Програмний код сторінки">
 <!ENTITY pageSourceCmd.accesskey "а">
+
 <!ENTITY pageSourceCmd.commandkey "u">
 <!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
 Option+Command keyboard shortcut letter that Safari and Chrome use for "View
@@ -92,6 +101,7 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 
 <!ENTITY pageInfoCmd.label "Інформація про сторінку">
 <!ENTITY pageInfoCmd.accesskey "І">
+
 <!ENTITY pageInfoCmd.commandkey "i">
 <!ENTITY ldbCmd.label "Зневаджувач шаблона">
 <!ENTITY ldbCmd.accesskey "ш">
@@ -116,6 +126,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaSignInError.label "Повторно підключитись до Синхронізації">
 <!ENTITY fxaUnverified.label "Підтвердьте свій обліковий запис">
 
+
+<!ENTITY togglePictureInPicture.key2 "}">
+<!ENTITY togglePictureInPicture.key "]"> <!-- } is above this key on many keyboards -->
 
 <!ENTITY fullScreenMinimize.tooltip "Згорнути">
 <!ENTITY fullScreenRestore.tooltip "Відновити">
@@ -146,13 +159,24 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.menu.signedInAs.label "Вхід виконано">
 <!ENTITY fxa.menu.manageAccount.label "Керувати обліковим записом…">
 <!ENTITY fxa.menu.syncSettings.label "Налаштування Синхронізації…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbar menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.syncSettings2.label "Налаштування Синхронізації">
 <!ENTITY fxa.menu.connectAnotherDevice2.label "Під'єднати інший пристрій…">
 <!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
 <!ENTITY fxa.menu.signin.label "Увійти в &brandProductName;">
 <!ENTITY fxa.menu.turnOnSync.label "Увімкнути Синхронізацію">
-<!ENTITY fxa.menu.account.label "Обліковий запис">
 <!ENTITY fxa.menu.firefoxServices.label "Сервіси &brandProductName;">
+
+<!ENTITY fxa.menu.account.label "Обліковий запис">
+<!ENTITY fxa.menu.settings.label "Налаштування">
+<!ENTITY fxa.menu.accountSettings.label "Налаштування облікового запису">
+<!ENTITY fxa.menu.signOut.label "Вийти…">
+<!ENTITY fxa.menu.deviceSettings.label "Налаштування пристрою">
+<!ENTITY fxa.menu.setupSync.label "Налаштувати синхронізацію…">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
      for the Firefox Account toolbar menu screen.  -->
@@ -195,6 +219,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY bookmarksMenu.label "Закладки">
 <!ENTITY bookmarksMenu.accesskey "З">
+
 <!ENTITY bookmarkThisPageCmd.label "Закласти цю сторінку">
 <!ENTITY editThisBookmarkCmd.label "Редагувати цю закладку">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
@@ -236,6 +261,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Керувати використанням плагінів">
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "Налаштувати отримання сповіщень від сайту">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Зберігати дані в постійному сховищі">
+
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Браузер знаходиться під віддаленим керуванням">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Відкрити панель веб-авторизації">
 <!ENTITY urlbar.storageAccessAnchor.tooltip               "Відкрити панель дозволів активності перегляду">
@@ -249,6 +275,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Керувати перекладом сторінок">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Керувати використанням програмного забезпечення DRM">
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "Відкрити MIDI панель">
+
+<!ENTITY urlbar.permissionsGranted.tooltip       "Ви надали цьому веб-сайту додаткові дозволи.">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Ви заблокували камеру для цього веб-сайту.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Ви заблокували мікрофон для цього веб-сайту.">
@@ -419,8 +447,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Хочете побачити тут свої вкладки з інших пристроїв?">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Відкрити налаштування синхронізації">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Увійдіть, щоб переглядати список вкладок з інших ваших пристроїв.">
+<!ENTITY appMenuRemoteTabs.welcome.label "Переглядайте список вкладок з ваших інших пристроїв.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Ваш обліковий запис потребує підтвердження.">
 <!ENTITY appMenuRemoteTabs.signin.label "Увійти в Синхронізацію">
+<!ENTITY appMenuRemoteTabs.signintosync.label "Увійти в Синхронізацію…">
+<!ENTITY appMenuRemoteTabs.turnonsync.label "Увімкнути Синхронізацію…">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Керувати пристроями…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Переглянути бічну панель синхронізованих вкладок">
 <!ENTITY appMenuRemoteTabs.hidesidebar.label "Приховати бічну панель Синхронізовані вкладки">
@@ -508,6 +539,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      This is set as the aria-label attribute for the search input box in the
      in-content search UI, to be used by screen readers. -->
 <!ENTITY contentSearchInput.label     "Черга пошуку">
+
 <!ENTITY contentSearchSubmit.tooltip  "Відправити пошуковий запит">
 
 <!-- LOCALIZATION NOTE (searchInput.placeholder):
@@ -812,13 +844,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.connection "З'єднання">
 <!ENTITY identity.connectionSecure "Захищене з'єднання">
-
-<!-- LOCALIZATION NOTE (identity.securityView.label2)
-     This is the header of the security subview in the Site Identity panel. -->
-<!ENTITY identity.securityView.label2 "Безпека з'єднання">
-
-<!ENTITY identity.connectionSecure2 "З'єднання безпечне">
 <!ENTITY identity.connectionNotSecure "Незахищене з'єднання">
+
+<!ENTITY identity.connectionSecure3 "Захищене з'єднання">
+<!ENTITY identity.connectionNotSecure2 "Незахищене з'єднання">
 <!ENTITY identity.connectionNotSecureSecurityView "Ваше з'єднання з цим сайтом незахищене.">
 <!ENTITY identity.connectionFile "Ця сторінка збережена на вашому комп'ютері.">
 <!ENTITY identity.connectionVerified2 "Ви безпечно підключились до цього сайту, власником якого є:">
@@ -828,7 +857,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.insecureLoginForms2 "Паролі, введені на цій сторінці, можуть бути скомпрометовані.">
 <!ENTITY identity.customRoot "З'єднання засвідчене сертифікатом, видавець якого не розпізнається Mozilla.">
 
-<!ENTITY identity.evOwnerLabel "Власник сайту:">
+<!ENTITY identity.evOwnerLabel2 "Сертифікат виданий:">
 
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "&brandShortName; заблокував небезпечні частини цієї сторінки.">
@@ -864,8 +893,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.permissions "Дозволи">
 
-<!-- LOCALIZATION NOTE (identity.permissions2): "set" as in "configured for this website" -->
-<!ENTITY identity.permissions2 "Дозволи встановлено">
+<!ENTITY identity.permissions3 "Дозволи">
 <!ENTITY identity.permissionsEmpty "Ви не надали цьому сайту жодних спеціальних дозволів.">
 <!ENTITY identity.permissionsReloadHint "Для застосування змін, можливо, доведеться перезавантажити сторінку.">
 <!ENTITY identity.permissionsPreferences.tooltip "Відкрити налаштування дозволів">
@@ -878,7 +906,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      protections.etpMoreInfo.label: The text a screen reader speaks when focused on the info button. -->
 <!ENTITY protections.etpMoreInfo.label "Більше інформації про розширений захист від стеження">
 <!ENTITY protections.settings.label "Налаштування захисту">
-<!ENTITY protections.report.label "Показати повний звіт">
+<!ENTITY protections.showreport.label "Показати звіт">
 <!-- LOCALIZATION NOTE:
      protections.siteNotWorking.label: The link to be clicked to open the sub-panel view
      protections.siteNotWorkingView.title: The heading/title of the sub-panel view -->
@@ -895,15 +923,23 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY protections.siteNotWorkingView.issueList.payments "Платежами">
 <!ENTITY protections.siteNotWorkingView.issueList.comments "Коментарями">
 <!ENTITY protections.siteNotWorkingView.issueList.videos "Відео">
-<!ENTITY protections.siteNotWorkingView.siteStillBroken.label "Сайт все одно не працює належним чином після вимкнення захисту?">
 <!ENTITY protections.siteNotWorkingView.sendReport.label "Надіслати звіт">
 
+<!-- LOCALIZATION NOTE (protections.blocking2.label, protections.notBlocking2.label, protections.notFound.label):
+     In the protections panel, Content Blocking category items are in three sections:
+     "Blocked" for categories being blocked in the current page,
+     "Allowed" for categories detected but not blocked in the current page, and
+     "None Detected" for categories not detected in the current page.
+     These strings are used in the header labels of each of these sections. -->
 <!ENTITY protections.blocking2.label "Заблоковано">
 <!ENTITY protections.notBlocking2.label "Дозволено">
+<!ENTITY protections.notFound.label "Не виявлено">
+<!-- LOCALIZATION NOTE (protections.notBlocking.why.label, protections.notBlocking.why.etp*.tooltip):
+     The "Allowed" header also includes a "Why?" link that, when hovered, shows
+     a tooltip explaining why these items were not blocked in the page. -->
 <!ENTITY protections.notBlocking.why.label "Чому?">
 <!ENTITY protections.notBlocking.why.etpOn.tooltip "Блокування їх може пошкодити елементи деяких веб-сайтів. Деякі кнопки, поля заповнення форм і входів можуть не працювати без стеження.">
 <!ENTITY protections.notBlocking.why.etpOff.tooltip "Вимкнення захисту дозволить всі елементи стеження на цьому сайті. Це також може покращити деякі функції веб-сайту.">
-<!ENTITY protections.notFound.label "Не виявлено">
 <!ENTITY protections.socialMediaTrackers.label "Стеження соціальних мереж">
 <!ENTITY protections.crossSiteTrackingCookies.label "Куки стеження між сайтами">
 <!ENTITY protections.trackingContent.label "Вміст стеження">
@@ -914,7 +950,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY protections.crossSiteTrackingCookies.description "Ці куки переслідують вас від одного сайту до іншого, з метою збирання даних про вашу діяльність онлайн. Вони встановлюються сторонніми рекламними й аналітичними компаніями.">
 <!ENTITY protections.cryptominers.description "Криптомайнери використовують ресурси вашої системи для створення цифрових грошей. Криптомайнингові скрипти споживають заряд вашого акумулятора, сповільнюють роботу комп'ютера, а також можуть збільшити ваші витрати на електроенергію.">
 <!ENTITY protections.fingerprinters.description "Засоби зчитування відбитку браузера збирають дані про налаштування вашого браузера і комп'ютера, з метою створення вашого профілю. Використовуючи такий цифровий відбиток, вони можуть стежити за вами на багатьох різних веб-сайтах.">
-<!ENTITY protections.trackingContent.description "Веб-сайти можуть завантажувати зовнішню рекламу, відео, а також інший вміст, що містить код стеження. Блокування такого вмісту може допомогти сайтам швидше завантажуватись, але при цьому деякі кнопки, поля форм і входів можуть не працювати.">
+<!ENTITY protections.trackingContent2.description "Веб-сайти можуть завантажувати зовнішню рекламу, відео, а також інший вміст з кодом стеження. Блокування такого вмісту може допомогти сайтам швидше завантажуватись, але при цьому деякі кнопки, поля форм і входів можуть не працювати.">
 <!ENTITY protections.socialMediaTrackers.description "Соціальні мережі розміщують елементи стеження на інших веб-сайтах, щоб стежити за вашими діями в інтернеті. Це дозволяє їм дізнаватися більше про вас, окрім того, чим ви ділитеся в своєму профілі.">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
@@ -954,18 +990,18 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection3.label "Стеження">
 
 <!ENTITY contentBlocking.manageSettings.label "Керувати блокуванням вмісту">
-
-<!ENTITY contentBlocking.trackingProtection4.label "Вміст стеження">
-
-<!ENTITY contentBlocking.manageSettings2.label "Керувати налаштуваннями захисту">
 <!ENTITY contentBlocking.manageSettings.accesskey "К">
 
 <!ENTITY contentBlocking.trackersView.label "Стеження">
-
 <!ENTITY contentBlocking.trackersView.strictInfo.label 'Щоб заблокувати все стеження, встановіть значення блокування вмісту "Суворе".'>
 
 <!ENTITY contentBlocking.cookies.label "Куки">
 <!ENTITY contentBlocking.cookiesView.label "Куки і дані сайтів">
+
+<!ENTITY contentBlocking.trackingProtection4.label "Вміст стеження">
+
+<!ENTITY contentBlocking.manageSettings2.label "Керувати налаштуваннями захисту">
+<!ENTITY contentBlocking.manageSettings2.accesskey "К">
 
 <!ENTITY contentBlocking.socialblock.label "Стеження соціальних мереж">
 
@@ -981,6 +1017,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView.label "Звіт про проблему">
 <!ENTITY contentBlocking.breakageReportView2.description "Блокування вмісту може пошкодити роботу деяких веб-сайтів. Коли ви звітуєте про проблеми, ви допомагаєте покращити &brandShortName;. (В Mozilla відправиться URL-адреса, а також інформація про налаштування вашого браузера.)">
 <!ENTITY contentBlocking.breakageReportView.learnMore "Докладніше">
+
 <!ENTITY contentBlocking.breakageReportView.title "Повідомити про пошкоджений сайт">
 <!ENTITY contentBlocking.breakageReportView3.description "Блокування певних елементів стеження може призвести до проблем з деякими веб-сайтами. Звіт про такі проблеми, допомагає покращувати роботу &brandShortName;. При надсиланні цього звіту, в Mozilla відправиться URL-адреса з інформацією про налаштування вашого браузера.">
 <!ENTITY contentBlocking.breakageReportView2.learnMore "Докладніше">
@@ -1036,6 +1073,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY newTabControlled.disableButton.accesskey "м">
 
 <!ENTITY homepageControlled.message "Розширення змінило сторінку вашої домівки. Якщо ви не хочете цього, можете відновити налаштування.">
+
 <!ENTITY homepageControlled.header.message "Сторінка вашої домівки була змінена.">
 <!ENTITY homepageControlled.keepButton.label "Зберегти зміни">
 <!ENTITY homepageControlled.keepButton.accesskey "б">

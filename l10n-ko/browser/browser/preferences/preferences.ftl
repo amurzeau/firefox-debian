@@ -143,7 +143,7 @@ open-new-link-as-tabs =
     .label = 링크를 새 창 대신 새 탭에서 열기
     .accesskey = w
 warn-on-close-multiple-tabs =
-    .label = 여러 개의 탭을 동시에 닫으려고 할 때 알려주기
+    .label = 여러 개의 탭을 닫을 때 경고하기
     .accesskey = m
 warn-on-open-many-tabs =
     .label = 여러개의 탭을 열어서 { -brand-short-name }가 느려질 수 있으면 알려주기
@@ -212,7 +212,7 @@ check-user-spelling =
 
 ## General Section - Files and Applications
 
-files-and-applications-title = 파일과 애플리케이션
+files-and-applications-title = 파일 및 응용 프로그램
 download-header = 다운로드
 download-save-to =
     .label = 저장 위치
@@ -231,16 +231,72 @@ download-choose-folder =
 download-always-ask-where =
     .label = 파일 저장 위치 항상 묻기
     .accesskey = A
-applications-header = 애플리케이션
+applications-header = 응용 프로그램
 applications-description = { -brand-short-name } 가 다운로드 받은 파일이나 브라우저에서 사용하고 있는 응용프로그램에 대해 어떻게 처리할 지 선택하십시오.
 applications-filter =
-    .placeholder = 파일 타입 혹은 애플리케이션 검색
+    .placeholder = 파일 형식 또는 응용 프로그램 검색
 applications-type-column =
     .label = 파일 형식
     .accesskey = T
 applications-action-column =
     .label = 실행
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } 파일
+applications-action-save =
+    .label = 파일 저장
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = { $app-name } 사용
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = { $app-name } 사용(기본값)
+applications-use-other =
+    .label = 다른 프로그램 사용…
+applications-select-helper = 지원 프로그램 선택
+applications-manage-app =
+    .label = 응용 프로그램 세부사항…
+applications-always-ask =
+    .label = 항상 물어 보기
+applications-type-pdf = PDF 문서(PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = { $plugin-name } 사용({ -brand-short-name })
+applications-preview-inapp =
+    .label = { -brand-short-name } 미리 보기
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = 디지털 권리 관리(DRM) 콘텐츠
 play-drm-content =
     .label = DRM 제어 콘텐츠 재생
@@ -248,7 +304,7 @@ play-drm-content =
 play-drm-content-learn-more = 더 알아보기
 update-application-title = { -brand-short-name } 업데이트
 update-application-description = { -brand-short-name }가 최상의 성능, 안정성, 보안을 유지할 수 있도록 최신 버전으로 유지합니다.
-update-application-version = 버전 { $version } <a data-l10n-name="learn-more">새로운 기능</a>
+update-application-version = 버전 { $version } <a data-l10n-name="learn-more">새 기능</a>
 update-history =
     .label = 업데이트 기록 보기…
     .accesskey = p
@@ -327,6 +383,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = 타이핑을 시작하면 검색
     .accesskey = x
+browsing-picture-in-picture-toggle-enabled =
+    .label = 화면 속 화면 비디오 컨트롤 사용
+    .accesskey = E
+browsing-picture-in-picture-learn-more = 더 알아보기
 browsing-cfr-recommendations =
     .label = 탐색시 확장 기능 추천
     .accesskey = R
@@ -339,7 +399,7 @@ browsing-cfr-recommendations-learn-more = 더 알아보기
 
 network-settings-title = 네트워크 설정
 network-proxy-connection-description = { -brand-short-name }가 인터넷에 접근하는 방법을 설정하세요.
-network-proxy-connection-learn-more = 자세히 보기
+network-proxy-connection-learn-more = 더 알아보기
 network-proxy-connection-settings =
     .label = 설정…
     .accesskey = e
@@ -429,11 +489,17 @@ search-bar-shown =
     .label = 도구 모음에 검색 표시줄 추가
 search-engine-default-header = 기본 검색 사이트
 search-engine-default-desc = 주소바와 검색바에서 사용할 기본 검색 엔진을 선택하세요.
+search-engine-default-private-desc = 사생활 보호 창에서 사용할 기본 검색 엔진을 선택하십시오.
+search-separate-default-engine =
+    .label = 이 검색 엔진을 사생활 보호 창에서 사용
+    .accesskey = U
+search-suggestions-header = 검색 제안
+search-suggestions-desc = 검색 엔진의 제안 사항 표시 방법을 선택하십시오.
 search-suggestions-option =
-    .label = 검색어 자동 완성 사용
+    .label = 검색 제안 사용
     .accesskey = s
 search-show-suggestions-url-bar-option =
-    .label = 주소창 결과에 검색 추천 보이기
+    .label = 주소창 결과에 검색 제안 보이기
     .accesskey = l
 # This string describes what the user will observe when the system
 # prioritizes search suggestions over browsing history in the results
@@ -441,8 +507,9 @@ search-show-suggestions-url-bar-option =
 # "ahead" refers to location (appearing most proximate to), not time
 # (appearing before).
 search-show-suggestions-above-history-option =
-    .label = 주소창 결과의 방문 기록 앞에 검색 추천 보이기
-search-suggestions-cant-show = { -brand-short-name }가 탐색 목록을 저장하지 않도록 설정했기 때문에 주소창 결과에 검색 추천이 나오지 않을 것입니다.
+    .label = 주소창 결과의 방문 기록 앞에 검색 제안 보이기
+suggestions-addressbar-settings = 방문 기록, 북마크 및 탭 제안에 대한 설정 변경
+search-suggestions-cant-show = 방문 기록을 기억하지 않도록 { -brand-short-name }를 구성했기 때문에 검색 제안이 주소창 결과에 표시되지 않습니다.
 search-one-click-header = 원클릭 검색 사이트
 search-one-click-desc = 단어 입력을 시작했을 때 주소바와 검색바 아래에 나타날 대체 검색 엔진을 선택하세요.
 search-choose-engine-column =
@@ -478,6 +545,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = 웹과 함께 하세요.
 sync-signedout-description = 북마크, 방문 기록, 탭, 비밀번호, 부가기능, 설정을 모든 기기에 걸쳐 동기화 하세요.
 sync-signedout-account-title = { -fxaccount-brand-name }과 연결
@@ -498,11 +569,17 @@ sync-mobile-promo = 모바일 기기와 동기화하기 위해서 Firefox <img d
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = 프로필 사진 변경
 sync-disconnect =
     .label = 연결 끊기…
     .accesskey = D
+sync-sign-out =
+    .label = 로그아웃…
+    .accesskey = g
 sync-manage-account = 계정 관리
     .accesskey = o
 sync-signedin-unverified = { $email } 은 아직 인증되지 않았습니다.
@@ -518,6 +595,48 @@ sync-sign-in =
     .accesskey = g
 sync-signedin-settings-header = 동기화 설정
 sync-signedin-settings-desc = { -brand-short-name }를 사용 중인 기기에서 동기화할 내용을 선택하세요.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = 동기화 : 켜짐
+prefs-syncing-off = 동기화 : 꺼짐
+prefs-sync-setup =
+    .label = { -sync-brand-short-name } 설정…
+    .accesskey = S
+prefs-sync-offer-setup-label = 북마크, 방문 기록, 탭, 비밀번호, 부가기능 및 설정을 모든 기기에 걸쳐 동기화하세요.
+prefs-sync-now =
+    .labelnotsyncing = 지금 동기화
+    .accesskeynotsyncing = N
+    .labelsyncing = 동기화중…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = 현재 다음 항목을 동기화 중입니다:
+sync-currently-syncing-bookmarks = 북마크
+sync-currently-syncing-history = 방문 기록
+sync-currently-syncing-tabs = 열린 탭
+sync-currently-syncing-logins-passwords = 로그인과 비밀번호
+sync-currently-syncing-addresses = 주소
+sync-currently-syncing-creditcards = 신용카드
+sync-currently-syncing-addons = 부가 기능
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] 설정
+       *[other] 설정
+    }
+sync-change-options =
+    .label = 변경…
+    .accesskey = C
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = 동기화할 항목 선택
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = 변경 내용 저장
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = 연결 끊기…
+    .buttonaccesskeyextra2 = D
 sync-engine-bookmarks =
     .label = 북마크
     .accesskey = m
@@ -530,6 +649,10 @@ sync-engine-tabs =
     .accesskey = T
 sync-engine-logins =
     .label = 로그인
+    .tooltiptext = 저장한 사용자 이름과 비밀번호
+    .accesskey = L
+sync-engine-logins-passwords =
+    .label = 로그인과 비밀번호
     .tooltiptext = 저장한 사용자 이름과 비밀번호
     .accesskey = L
 sync-engine-addresses =
@@ -552,6 +675,9 @@ sync-engine-prefs =
         }
     .tooltiptext = 변경된 일반, 개인 정보 및 보안 설정
     .accesskey = S
+
+## The device name controls.
+
 sync-device-name-header = 기기 이름
 sync-device-name-change =
     .label = 기기 이름 바꾸기…
@@ -584,6 +710,10 @@ forms-exceptions =
 forms-generate-passwords =
     .label = 강력한 암호 제안 및 생성
     .accesskey = u
+forms-breach-alerts =
+    .label = 유출된 웹 사이트의 비밀번호에 대한 경고 표시
+    .accesskey = b
+forms-breach-alerts-learn-more-link = 더 알아보기
 forms-fill-logins-and-passwords =
     .label = 로그인과 비밀번호 자동완성
     .accesskey = i
@@ -596,6 +726,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = 기본 비밀번호 변경…
     .accesskey = M
+forms-master-pw-fips-title = 현재 FIPS 모드입니다. FIPS는 기본 비밀번호가 설정되어야 합니다.
+forms-master-pw-fips-desc = 비밀번호 변경 실패
 
 ## Privacy Section - History
 
@@ -696,14 +828,15 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = 열린 탭
     .accesskey = O
-addressbar-suggestions-settings = 검색 엔진 추천 설정 변경
+addressbar-suggestions-settings = 검색 엔진 제안 설정 변경
 
 ## Privacy Section - Content Blocking
 
 content-blocking-header = 콘텐츠 차단
-content-blocking-enhanced-tracking-protection = 향상된 추적 방지 기능
 content-blocking-section-description = 탐색하는 동안 개인 정보를 보호하십시오. 사용자가 방문하는 사이트를 추적하고 개인을 식별하는 보이지 않는 콘텐츠를 차단합니다. 이 콘텐츠 중 일부를 차단하면 페이지가 더 빨리 로드 될 수 있습니다.
-content-blocking-learn-more = 자세히 보기
+content-blocking-enhanced-tracking-protection = 향상된 추적 방지 기능
+content-blocking-section-top-level-description = 추적기는 온라인에서 사용자를 따라다니며 브라우징 습관과 관심사에 대한 정보를 수집합니다. { -brand-short-name }는 이러한 많은 추적기 및 기타 악성 스크립트를 차단합니다.
+content-blocking-learn-more = 더 알아보기
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 content-blocking-setting-standard =
@@ -720,6 +853,23 @@ content-blocking-strict-description = 강한 보호 기능으로 인해 일부 �
 content-blocking-custom-desc = 차단할 항목을 선택하세요.
 content-blocking-private-trackers = 사생활 보호 모드에서 알려진 추적기만
 content-blocking-third-party-cookies = 제3자 추적 쿠키
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = 표준
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = 엄격
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = 사용자 지정
+    .accesskey = C
+
+
+
 content-blocking-etp-standard-desc = 보호와 성능사이의 균형이 잡혀 있습니다. 페이지가 정상적으로 로드됩니다.
 content-blocking-etp-strict-desc = 더 강력한 보호 기능을 제공하지만, 일부 사이트나 콘텐츠가 손상될 수 있습니다.
 content-blocking-etp-custom-desc = 차단할 추적기와 스크립트를 선택하십시오.
@@ -840,7 +990,7 @@ collection-studies =
 collection-studies-link = { -brand-short-name } 연구 보기
 addon-recommendations =
     .label = { -brand-short-name }가 개인화된 확장 기능 추천을 하도록 허용
-addon-recommendations-link = 자세히 보기
+addon-recommendations-link = 더 알아보기
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = 이 빌드 설정에서는 데이터 보고가 비활성화 되어 있음

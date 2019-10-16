@@ -103,9 +103,11 @@ detail-private-browsing-description2 = Wanneer toegestaan, heeft de extensie toe
 # cannot be overridden by the user.
 detail-private-disallowed-label = Niet toegestaan in privévensters
 detail-private-disallowed-description = Deze extensie werkt niet tijdens privénavigatie. <label data-l10n-name="detail-private-browsing-learn-more">Meer info</label>
+detail-private-disallowed-description2 = Deze extensie wordt tijdens privénavigatie niet uitgevoerd. <a data-l10n-name="learn-more">Meer info</a>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = Vereist toegang tot privévensters
 detail-private-required-description = Deze extensie heeft toegang tot uw online-activiteiten tijdens privénavigatie. <label data-l10n-name="detail-private-browsing-learn-more">Meer info</label>
+detail-private-required-description2 = Deze extensie heeft tijdens privénavigatie toegang tot uw online-activiteiten. <a data-l10n-name="learn-more">Meer info</a>
 detail-private-browsing-on =
     .label = Toestaan
     .tooltiptext = Inschakelen in privénavigatie
@@ -141,7 +143,7 @@ detail-show-preferences =
            *[other] Voorkeuren van deze add-on wijzigen
         }
 detail-rating =
-    .value = Beoordeling
+    .value = Waardering
 addon-restart-now =
     .label = Nu herstarten
 disabled-unsigned-heading =
@@ -308,6 +310,10 @@ install-theme-button = Thema installeren
 # the detailed add-on view is opened, from where the add-on can be managed.
 manage-addon-button = Beheren
 find-more-addons = Meer add-ons zoeken
+# This is a label for the button to open the "more options" menu, it is only
+# used for screen readers.
+addon-options-button =
+    .aria-label = Meer opties
 
 ## Add-on actions
 
@@ -378,6 +384,11 @@ install-update-button = Bijwerken
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed =
     .title = Toegestaan in privévensters
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed2 =
+    .title = Toegestaan in privévensters
+    .aria-label = { addon-badge-private-browsing-allowed2.title }
 addon-detail-private-browsing-help = Wanneer toegestaan, heeft de extensie toegang tot uw online-activiteiten tijdens privénavigatie. <a data-l10n-name="learn-more">Meer info</a>
 addon-detail-private-browsing-allow = Toestaan
 addon-detail-private-browsing-disallow = Niet toestaan
@@ -386,6 +397,11 @@ addon-detail-private-browsing-disallow = Niet toestaan
 addon-badge-recommended =
     .title = Aanbevolen
     .alt = Aanbevolen
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended2 =
+    .title = { -brand-product-name } beveelt alleen extensies aan die voldoen aan onze normen voor beveiliging en prestaties
+    .aria-label = { addon-badge-recommended2.title }
 available-updates-heading = Beschikbare updates
 recent-updates-heading = Recente updates
 release-notes-loading = Laden…

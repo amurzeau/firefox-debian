@@ -84,6 +84,35 @@ cfr-whatsnew-button =
     .label = Kas naujo
     .tooltiptext = Kas naujo
 cfr-whatsnew-panel-header = Kas naujo
+cfr-whatsnew-release-notes-link-text = Skaityti laidos apžvalgą
+cfr-whatsnew-fx70-title = „{ -brand-short-name }“ už jūsų privatumą dabar kovoja dar labiau
+cfr-whatsnew-fx70-body =
+    Paskiausias naujinimas pagerina apsaugą nuo stebėjimo, ir leidžia dar lengviau
+    sukurti saugius slaptažodžius visoms svetainėms.
+cfr-whatsnew-tracking-protect-title = Apsaugokite save nuo stebėjimo elementų
+cfr-whatsnew-tracking-protect-body =
+    „{ -brand-short-name }“ blokuoja daugelį dažniausiai pasitaikančių socialinių ir tarp svetainių veikiančių
+    stebėjimo elementų, sekančių jūsų veiklą internete.
+cfr-whatsnew-tracking-protect-link-text = Peržiūrėti jūsų ataskaitą
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+        [one] Užblokuotas stebėjimo elementas
+        [few] Užblokuoti stebėjimo elementai
+       *[other] Užblokuota stebėjimo elementų
+    }
+cfr-whatsnew-tracking-blocked-subtitle = Nuo { DATETIME($earliestDate, month: "long", year: "numeric") }
+cfr-whatsnew-tracking-blocked-link-text = Peržiūrėti ataskaitą
+cfr-whatsnew-lockwise-backup-title = Pasidarykite savo slaptažodžių kopiją
+cfr-whatsnew-lockwise-backup-body = Dabar susikurkite saugius slaptažodžius, kuriuos galėsite pasiekti visur, kur prisijungiate.
+cfr-whatsnew-lockwise-backup-link-text = Įjungti atsargines kopijas
+cfr-whatsnew-lockwise-take-title = Turėkite savo slaptažodžius su savimi
+cfr-whatsnew-lockwise-take-body =
+    Mobilioji „{ -lockwise-brand-short-name }“ programa leidžia saugiai
+    pasiekti savo slaptažodžius iš bet kur.
+cfr-whatsnew-lockwise-take-link-text = Parsisiųskite programą
 
 ## Bookmark Sync
 
@@ -113,3 +142,16 @@ cfr-doorhanger-firefox-send-header = Dalintis šiuo PDF saugiai
 cfr-doorhanger-firefox-send-body = Laikykite savo svarbius failus saugiai, naudodamiesi ištisiniu šifravimu ir gaudami saitą, kuris išnyksta po nustato laiko.
 cfr-doorhanger-firefox-send-ok-button = Išbandyti „{ -send-brand-name }“
     .accesskey = b
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-ok-button = Peržiūrėti apsaugas
+    .accesskey = p
+cfr-doorhanger-socialtracking-close-button = Užverti
+    .accesskey = U
+cfr-doorhanger-socialtracking-heading = „{ -brand-short-name }“ neleido socialiniam tinklui čia jūsų sekti
+cfr-doorhanger-socialtracking-description = Jūsų privatumas yra svarbus. „{ -brand-short-name }“ jau blokuoja dažniausius socialinių tinklų stebėjimo elementus, taip ribojant, kiek duomenų jie gali surinkti apie jūsų naršymo veiklą.
+cfr-doorhanger-fingerprinters-heading = „{ -brand-short-name }“ šioje svetainėje užblokavo skaitmeninių atspaudų stebėjimo elementą
+cfr-doorhanger-fingerprinters-description = Jūsų privatumas yra svarbus. „{ -brand-short-name }“ jau blokuoja skaitmeninių atspaudų stebėjimo elementus, kurie renka jūsų įrenginį identifikuoti leidžiančią informaciją, kad galėtų jus sekti.
+cfr-doorhanger-cryptominers-heading = „{ -brand-short-name }“ šioje svetainėje užblokavo kriptovaliutų kasėją
+cfr-doorhanger-cryptominers-description = Jūsų privatumas yra svarbus. „{ -brand-short-name }“ jau blokuoja kriptovaliutų kasėjus, kurie naudoja jūsų sistemos resursus skaitmeninių pinigų kasimui.

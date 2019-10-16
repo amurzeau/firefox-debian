@@ -172,7 +172,6 @@
 <!ENTITY compactVersion.accesskey "c">
 <!ENTITY folderPaneBar.label "Bară de unelte în panoul de dosare">
 <!ENTITY folderPaneBar.accesskey "F">
-<!ENTITY folderModeSelector.label "Vizualizări dosare">
 
 <!-- Sort Menu -->
 <!ENTITY sortMenu.label "Sortează după">
@@ -238,7 +237,7 @@
 <!ENTITY ignoredThreadsCmd.label "Conversații ignorate">
 <!ENTITY ignoredThreadsCmd.accesskey "i">
 
-<!ENTITY headersMenu.label "Antete">
+<!ENTITY headersMenu.label "Anteturi">
 <!ENTITY headersMenu.accesskey "n">
 <!ENTITY headersAllCmd.label "Toate">
 <!ENTITY headersAllCmd.accesskey "a">
@@ -267,7 +266,7 @@
 <!ENTITY viewAttachmentsInlineCmd.label "Afișează atașamentele în mesaj">
 <!ENTITY viewAttachmentsInlineCmd.accesskey "a">
 
-<!ENTITY pageSourceCmd.label "Sursă mesaj">
+<!ENTITY pageSourceCmd.label "Sursa mesajului">
 <!ENTITY pageSourceCmd.accesskey "u">
 <!ENTITY pageSourceCmd.key "U">
 <!ENTITY getNewMessagesCmd.key "y">
@@ -367,11 +366,11 @@
 <!ENTITY forwardAsInline.accesskey "i">
 <!ENTITY forwardAsAttachmentCmd.label "Atașament">
 <!ENTITY forwardAsAttachmentCmd.accesskey "A">
-<!ENTITY editAsNewMsgCmd.label "Editare ca mesaj nou">
+<!ENTITY editAsNewMsgCmd.label "Editează ca mesaj nou">
 <!ENTITY editAsNewMsgCmd.accesskey "E">
 <!ENTITY editAsNewMsgCmd.key "e">
-<!ENTITY editDraftMsgCmd.label "Editează ciorna">
-<!ENTITY editDraftMsgCmd.accesskey "d">
+<!ENTITY editDraftMsgCmd.label "Editează mesajul nefinalizat">
+<!ENTITY editDraftMsgCmd.accesskey "D">
 <!ENTITY editTemplateMsgCmd.label "Editare șablon">
 <!ENTITY editTemplateMsgCmd.accesskey "t">
 <!ENTITY newMsgFromTemplateCmd.label "Mesaj nou bazat pe șablon">
@@ -392,8 +391,8 @@
 <!ENTITY killThreadMenu.label "Ignoră conversația">
 <!ENTITY killThreadMenu.accesskey "I">
 <!ENTITY killThreadMenu.key "k">
-<!ENTITY killSubthreadMenu.label "Ignoră conversația din interior">
-<!ENTITY killSubthreadMenu.accesskey "s">
+<!ENTITY killSubthreadMenu.label "Ignoră conversația subsidiară">
+<!ENTITY killSubthreadMenu.accesskey "S">
 <!ENTITY killSubthreadMenu.key "k">
 <!ENTITY watchThreadMenu.label "Urmărește conversația">
 <!ENTITY watchThreadMenu.accesskey "U">
@@ -487,7 +486,7 @@
 <!ENTITY savedFiles.key "j">
 <!ENTITY filtersCmd2.label "Filtre pentru mesaje">
 <!ENTITY filtersCmd2.accesskey "F">
-<!ENTITY filtersApply.label "Filtrează dosarul">
+<!ENTITY filtersApply.label "Execută filtre pe dosar">
 <!ENTITY filtersApply.accesskey "r">
 <!ENTITY filtersApplyToSelection.label "Rulează filtrele pe mesajele selectate">
 <!ENTITY filtersApplyToSelection.accesskey "s">
@@ -501,7 +500,7 @@
 <!ENTITY importCmd.accesskey "I">
 <!ENTITY clearRecentHistory.label "Șterge istoricul recent…">
 <!ENTITY clearRecentHistory.accesskey "i">
-<!ENTITY accountManagerCmd2.label "Setările conturilor">
+<!ENTITY accountManagerCmd2.label "Setări pentru conturi">
 <!ENTITY accountManagerCmd2.accesskey "c">
 <!-- LOCALIZATION NOTE (accountManagerCmdUnix.accesskey):
      Belongs to accountManagerCmd.label, which is placed under the Edit menu
@@ -522,7 +521,7 @@
 <!ENTITY errorConsoleCmd.label "Consolă de erori">
 <!ENTITY errorConsoleCmd.accesskey "e">
 <!ENTITY errorConsoleCmd.commandkey "j">
-<!ENTITY scratchpadCmd.label "Ciornă">
+<!ENTITY scratchpadCmd.label "Panou de probe JavaScript">
 <!ENTITY scratchpadCmd.accesskey "S">
 
 <!--LOCALIZATION NOTE (scratchpadCmd.keycode):
@@ -604,8 +603,7 @@
 <!ENTITY chatButton.tooltip "Afișează fila pentru chat">
 <!ENTITY tagButton.tooltip "Etichetează mesaje">
 <!ENTITY compactButton.tooltip "Elimină mesajele șterse din dosarul selectat">
-<!ENTITY appmenuButton1.tooltip "Afișare meniu &brandShortName;">
-
+<!ENTITY appmenuButton1.tooltip "Afișează meniul &brandShortName;">
 <!ENTITY addonsButton.tooltip "Gestionează-ți suplimentele">
 
 <!-- Toolbar Button Popup -->
@@ -707,6 +705,7 @@
 <!ENTITY saveAsVirtualFolderMenu.label "Salvează căutarea ca dosar…">
 
 <!-- Thread Pane -->
+<!ENTITY selectColumn.label "Selectează mesaje">
 <!ENTITY threadColumn.label "Conversație">
 <!ENTITY fromColumn.label "Expeditor">
 <!ENTITY recipientColumn.label "Destinatar">
@@ -765,9 +764,9 @@
 <!ENTITY contextOpenConversation.accesskey "n">
 <!ENTITY contextOpenContainingFolder.label "Deschide mesajul în dosarul în care se află">
 <!ENTITY contextOpenContainingFolder.accesskey "n">
-<!ENTITY contextEditMsgAsNew.label "Editare ca mesaj nou">
+<!ENTITY contextEditMsgAsNew.label "Editează ca mesaj nou">
 <!ENTITY contextEditMsgAsNew.accesskey "E">
-<!ENTITY contextEditDraftMsg.label "Editează ciorna">
+<!ENTITY contextEditDraftMsg.label "Editează mesajul nefinalizat">
 <!ENTITY contextEditTemplate.label "Editează șablonul">
 <!ENTITY contextEditTemplate.accesskey "t">
 <!ENTITY contextArchive.label "Arhivează">
@@ -801,7 +800,7 @@
 <!ENTITY contextKillThreadMenu.label "Ignoră conversația">
 <!ENTITY contextKillSubthreadMenu.accesskey "b">
 <!ENTITY contextKillThreadMenu.accesskey "I">
-<!ENTITY contextKillSubthreadMenu.label "Ignoră conversația din interior">
+<!ENTITY contextKillSubthreadMenu.label "Ignoră conversația subsidiară">
 <!ENTITY contextWatchThreadMenu.label "Urmărește conversația">
 <!-- LOCALIZATION NOTE (contextWatchThreadMenu.accesskey):
      In the en-US locale we ran out of access keys, so there is an empty access key for
@@ -880,7 +879,7 @@
      to get to the box faster. If the global indexer is disabled, the search
      box will be collapsed and the user will never see this message.
   -->
-<!ENTITY search.label.base1 "Căutare #1">
+<!ENTITY search.label.base1 "Caută #1">
 <!-- LOCALIZATION NOTE (search.keyLabel.nonmac):
      The description of the key-binding to get into the global search box on
      windows and linux (which use the control key). We use the key defined in

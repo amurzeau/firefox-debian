@@ -153,7 +153,7 @@ menu-view-full-screen =
     .label = Mba'erechaha tuichavéva
     .accesskey = F
 
-##
+
 
 menu-view-show-all-tabs =
     .label = Opaite tendayke jehechauka
@@ -212,12 +212,21 @@ menu-tools-addons =
 menu-tools-sync-sign-in =
     .label = { -sync-brand-short-name }-pe jeike…
     .accesskey = Y
+menu-tools-fxa-sign-in =
+    .label = Eñepyrũ tembiapo { -brand-product-name }-pe…
+    .accesskey = g
+menu-tools-turn-on-sync =
+    .label = Emyandy { -sync-brand-short-name }...
+    .accesskey = n
 menu-tools-sync-now =
     .label = Embojuehe ko'ág̃a
     .accesskey = S
 menu-tools-sync-re-auth =
     .label = { -sync-brand-short-name }…-pe jeikejey
     .accesskey = R
+menu-tools-fxa-re-auth =
+    .label = Eikejey { -brand-product-name }-pe...
+    .accesskey = E
 menu-tools-web-developer =
     .label = Ñanduti mboguatahára
     .accesskey = W

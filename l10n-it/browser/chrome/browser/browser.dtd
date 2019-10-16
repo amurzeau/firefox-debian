@@ -43,8 +43,10 @@
 <!ENTITY menubarCmd.label "Barra dei menu">
 <!ENTITY menubarCmd.accesskey "m">
 <!ENTITY navbarCmd.label "Barra di navigazione">
+<!ENTITY navbar.accessibleLabel "Navigazione">
 <!ENTITY personalbarCmd.label "Barra dei segnalibri">
 <!ENTITY personalbarCmd.accesskey "s">
+<!ENTITY personalbar.accessibleLabel "Segnalibri">
 <!ENTITY bookmarksToolbarItem.label "Elementi della barra dei segnalibri">
 <!ENTITY pageSourceCmd.label "Sorgente pagina">
 <!ENTITY pageSourceCmd.accesskey "o">
@@ -68,6 +70,9 @@
 <!ENTITY showAllTabsCmd.accesskey "h">
 <!ENTITY toggleReaderMode.key "R">
 <!ENTITY toggleReaderMode.win.keycode "VK_F9">
+<!-- Original keys: ] and }, using the characters on the same key for the Italian keyboard layout -->
+<!ENTITY togglePictureInPicture.key2 "*">
+<!ENTITY togglePictureInPicture.key "+">
 <!ENTITY fxaSignIn.label "Accedi a &syncBrand.shortName.label;">
 <!ENTITY fxaSignedIn.tooltip "Apri le impostazioni di &syncBrand.shortName.label;">
 <!ENTITY fxaSignInError.label "Riconnetti a &syncBrand.shortName.label;">
@@ -90,12 +95,18 @@
 <!ENTITY fxa.menu.signedInAs.label "Accesso effettuato come">
 <!ENTITY fxa.menu.manageAccount.label "Gestisci account…">
 <!ENTITY fxa.menu.syncSettings.label "Impostazioni di &syncBrand.shortName.label;…">
+<!ENTITY fxa.menu.syncSettings2.label "Impostazioni di &syncBrand.shortName.label;">
 <!ENTITY fxa.menu.connectAnotherDevice2.label "Connetti un altro dispositivo…">
 <!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 <!ENTITY fxa.menu.signin.label "Accedi a &brandProductName;">
 <!ENTITY fxa.menu.turnOnSync.label "Attiva &syncBrand.shortName.label;">
-<!ENTITY fxa.menu.account.label "Account">
 <!ENTITY fxa.menu.firefoxServices.label "Servizi di &brandProductName;">
+<!ENTITY fxa.menu.account.label "Account">
+<!ENTITY fxa.menu.settings.label "Impostazioni">
+<!ENTITY fxa.menu.accountSettings.label "Impostazioni account">
+<!ENTITY fxa.menu.signOut.label "Disconnetti…">
+<!ENTITY fxa.menu.deviceSettings.label "Impostazioni dispositivo">
+<!ENTITY fxa.menu.setupSync.label "Configura &syncBrand.shortName.label;…">
 <!ENTITY fxa.service.sendTab.description "Invia immediatamente una scheda a qualsiasi dispositivo connesso al tuo account.">
 <!ENTITY fullscreenWarning.beforeDomain.label "">
 <!ENTITY fullscreenWarning.afterDomain.label "è ora visualizzato a schermo intero">
@@ -160,13 +171,14 @@
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip "Gestisci la traduzione della pagina">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip "Gestisci l’utilizzo del software DRM">
 <!ENTITY urlbar.midiNotificationAnchor.tooltip "Apri pannello MIDI">
-<!ENTITY urlbar.cameraBlocked.tooltip "La fotocamera è bloccata per questo sito.">
-<!ENTITY urlbar.microphoneBlocked.tooltip "Il microfono è bloccato per questo sito.">
-<!ENTITY urlbar.screenBlocked.tooltip "La condivisione dello schermo è bloccata per questo sito.">
-<!ENTITY urlbar.geolocationBlocked.tooltip "Il rilevamento della posizione è bloccato per questo sito.">
-<!ENTITY urlbar.webNotificationsBlocked.tooltip "Le notifiche sono bloccate per questo sito.">
-<!ENTITY urlbar.persistentStorageBlocked.tooltip "Il salvataggio dati nell’archivio permanente è bloccato per questo sito.">
-<!ENTITY urlbar.popupBlocked.tooltip "Sono state bloccate delle finestre pop-up per questo sito web.">
+<!ENTITY urlbar.permissionsGranted.tooltip "Sono stati concessi permessi aggiuntivi a questo sito web.">
+<!ENTITY urlbar.cameraBlocked.tooltip "La fotocamera è bloccata per questo sito web.">
+<!ENTITY urlbar.microphoneBlocked.tooltip "Il microfono è bloccato per questo sito web.">
+<!ENTITY urlbar.screenBlocked.tooltip "La condivisione dello schermo è bloccata per questo sito web.">
+<!ENTITY urlbar.geolocationBlocked.tooltip "Il rilevamento della posizione è bloccato per questo sito web.">
+<!ENTITY urlbar.webNotificationsBlocked.tooltip "Le notifiche sono bloccate per questo sito web.">
+<!ENTITY urlbar.persistentStorageBlocked.tooltip "Il salvataggio dati nell’archivio permanente è bloccato per questo sito web.">
+<!ENTITY urlbar.popupBlocked.tooltip "Sono state bloccate delle finestre pop-up per questo sito web web.">
 <!ENTITY urlbar.autoplayMediaBlocked.tooltip "È stata bloccata la riproduzione automatica di contenuti sonori per questo sito web.">
 <!ENTITY urlbar.canvasBlocked.tooltip "È stato bloccato l’accesso ai dati dei canvas per questo sito web.">
 <!ENTITY urlbar.flashPluginBlocked.tooltip "È stato bloccato l’utilizzo del plugin Adobe Flash per questo sito web.">
@@ -286,8 +298,11 @@
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Come fare per visualizzare in questa sezione le schede da altri dispositivi?">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Apri preferenze Sync">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Accedi per visualizzare un elenco delle schede aperte in altri dispositivi.">
+<!ENTITY appMenuRemoteTabs.welcome.label "Visualizza un elenco delle schede aperte in altri dispositivi.">
 <!ENTITY appMenuRemoteTabs.unverified.label "L’account non è ancora stato verificato.">
 <!ENTITY appMenuRemoteTabs.signin.label "Accedi a Sync">
+<!ENTITY appMenuRemoteTabs.signintosync.label "Accedi a &syncBrand.shortName.label;…">
+<!ENTITY appMenuRemoteTabs.turnonsync.label "Attiva &syncBrand.shortName.label;…">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Gestione dispositivi…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Visualizza barra laterale Schede sincronizzate">
 <!ENTITY appMenuRemoteTabs.hidesidebar.label "Nascondi barra laterale Schede sincronizzate">
@@ -539,11 +554,11 @@
 <!ENTITY editBookmark.showForNewBookmarks.label "Visualizza editor quando si salva">
 <!ENTITY editBookmark.showForNewBookmarks.accesskey "V">
 <!ENTITY identity.securityView.label "Sicurezza del sito">
-<!ENTITY identity.securityView.label2 "Sicurezza connessione">
 <!ENTITY identity.connection "Connessione">
 <!ENTITY identity.connectionSecure "Connessione sicura">
-<!ENTITY identity.connectionSecure2 "Connessione sicura">
 <!ENTITY identity.connectionNotSecure "Connessione non sicura">
+<!ENTITY identity.connectionSecure3 "Connessione sicura">
+<!ENTITY identity.connectionNotSecure2 "Connessione non sicura">
 <!ENTITY identity.connectionNotSecureSecurityView "La connessione con questo sito non è sicura.">
 <!ENTITY identity.connectionFile "Questa pagina è salvata sul dispositivo in uso.">
 <!ENTITY identity.connectionVerified2 "La connessione con questo sito è sicura. Il proprietario del sito è:">
@@ -552,7 +567,7 @@
 <!ENTITY identity.extensionPage "Questa pagina è caricata da un’estensione.">
 <!ENTITY identity.insecureLoginForms2 "Gli accessi effettuati in questa pagina potrebbero essere vulnerabili.">
 <!ENTITY identity.customRoot "Connessione verificata da un certificato emesso da un’autorità non riconosciuta da Mozilla.">
-<!ENTITY identity.evOwnerLabel "Proprietario sito:">
+<!ENTITY identity.evOwnerLabel2 "Certificato rilasciato a:">
 <!ENTITY identity.activeBlocked "Alcuni elementi non sicuri di questa pagina sono stati bloccati da &brandShortName;.">
 <!ENTITY identity.passiveLoaded "Alcuni elementi di questa pagina non sono sicuri (ad esempio immagini).">
 <!ENTITY identity.activeLoaded "La protezione è disattivata per questa pagina.">
@@ -578,7 +593,7 @@
 <!ENTITY identity.moreInfoLinkText2 "Ulteriori informazioni">
 <!ENTITY identity.clearSiteData "Elimina cookie e dati dei siti web…">
 <!ENTITY identity.permissions "Permessi">
-<!ENTITY identity.permissions2 "Permessi impostati">
+<!ENTITY identity.permissions3 "Permessi">
 <!ENTITY identity.permissionsEmpty "Nessun permesso speciale associato a questo sito.">
 <!ENTITY identity.permissionsReloadHint "Potrebbe essere necessario ricaricare la pagina per rendere effettive le modifiche.">
 <!ENTITY identity.permissionsPreferences.tooltip "Apri preferenze per i permessi">
@@ -586,7 +601,7 @@
 <!ENTITY protections.etpOFF.header "La protezione antitracciamento avanzata è DISATTIVATA per questo sito">
 <!ENTITY protections.etpMoreInfo.label "Ulteriori informazioni sulla protezione antitracciamento avanzata">
 <!ENTITY protections.settings.label "Impostazioni protezione">
-<!ENTITY protections.report.label "Visualizza il rapporto completo">
+<!ENTITY protections.showreport.label "Visualizza rapporto">
 <!ENTITY protections.siteNotWorking.label "Il sito non funziona?">
 <!ENTITY protections.siteNotWorkingView.title "Sito non funzionante">
 <!ENTITY protections.siteNotWorkingView.header "Disattivare le protezioni se si riscontrano problemi con:">
@@ -595,24 +610,24 @@
 <!ENTITY protections.siteNotWorkingView.issueList.payments "Pagamenti">
 <!ENTITY protections.siteNotWorkingView.issueList.comments "Commenti">
 <!ENTITY protections.siteNotWorkingView.issueList.videos "Video">
-<!ENTITY protections.siteNotWorkingView.siteStillBroken.label "Il sito non funziona nonostante le protezioni siano state disattivate?">
 <!ENTITY protections.siteNotWorkingView.sendReport.label "Invia una segnalazione">
 <!ENTITY protections.blocking2.label "Bloccati">
 <!ENTITY protections.notBlocking2.label "Consentiti">
 <!ENTITY protections.notBlocking.why.label "Perché?">
 <!ENTITY protections.notBlocking.why.etpOn.tooltip "Il blocco di questi elementi potrebbe causare il parziale malfunzionamento di alcuni siti web. Senza elementi traccianti, alcuni pulsanti, moduli e campi di accesso non funzionano correttamente.">
 <!ENTITY protections.notBlocking.why.etpOff.tooltip "Disattivando le protezioni verranno consentiti tutti gli elementi traccianti su questo sito. Questa operazione potrebbe anche migliorare il funzionamento di alcune parti del sito web.">
+<!ENTITY protections.notBlocking.why.etpOff2.tooltip "Tutti gli elementi traccianti in questo sito sono stati caricati in quanto le protezioni sono disattivate.">
 <!ENTITY protections.notFound.label "Non rilevati">
 <!ENTITY protections.socialMediaTrackers.label "Traccianti dei social media">
 <!ENTITY protections.crossSiteTrackingCookies.label "Cookie traccianti intersito">
 <!ENTITY protections.trackingContent.label "Contenuti traccianti">
 <!ENTITY protections.fingerprinters.label "Fingerprinter">
 <!ENTITY protections.cryptominers.label "Cryptominer">
-<!ENTITY protections.noTrackersFound.description "Nessun elemento tracciante noto a &brandShortName; è stato rilevato in questa pagina.">
+<!ENTITY protections.noTrackersFound.description "Nessun elemento tracciante conosciuto da &brandShortName; è stato rilevato in questa pagina.">
 <!ENTITY protections.crossSiteTrackingCookies.description "Questi cookie ti seguono da un sito all’altro per raccogliere informazioni su ciò che fai online. Sono impostati da terze parti come agenzie pubblicitarie e di analisi dati.">
 <!ENTITY protections.cryptominers.description "I cryptominer utilizzano le risorse del sistema per effettuare il “mining” di valute digitali. Questi script consumano la batteria, rallentano il computer e possono aumentare il costo della bolletta elettrica.">
 <!ENTITY protections.fingerprinters.description "I fingerprinter raccolgono informazioni sulle impostazioni del browser e del computer al fine di creare un tuo profilo. Utilizzando questa “impronta digitale” sono in grado di seguirti attraverso siti diversi.">
-<!ENTITY protections.trackingContent.description "I siti web possono caricare pubblicità, video e altri contenuti da fonti esterne che includono elementi traccianti. Il blocco degli elementi traccianti può velocizzare il caricamento dei siti, ma può causare il malfunzionamento di pulsanti, moduli e campi di accesso.">
+<!ENTITY protections.trackingContent2.description "I siti web possono caricare pubblicità, video e altri contenuti da fonti esterne che includono elementi traccianti. Il blocco degli elementi traccianti può velocizzare il caricamento dei siti, ma può causare il malfunzionamento di pulsanti, moduli e campi di accesso.">
 <!ENTITY protections.socialMediaTrackers.description "I social network impostano elementi traccianti in altri siti per scoprire cosa fai, leggi e guardi quando sei online. In questo modo sono in grado di raccogliere molte più informazioni rispetto a quello che condividi nei tuoi profili online.">
 <!ENTITY identity.contentBlockingPreferences.tooltip "Apri preferenze relative al blocco contenuti">
 <!ENTITY tabsToolbar.label "Schede del browser">
@@ -640,8 +655,9 @@
 <!ENTITY contentBlocking.trackingProtection3.label "Elementi traccianti">
 <!ENTITY contentBlocking.trackingProtection4.label "Contenuti traccianti">
 <!ENTITY contentBlocking.manageSettings.label "Gestisci blocco contenuti">
-<!ENTITY contentBlocking.manageSettings2.label "Gestisci impostazioni protezione">
 <!ENTITY contentBlocking.manageSettings.accesskey "G">
+<!ENTITY contentBlocking.manageSettings2.label "Gestisci impostazioni protezione">
+<!ENTITY contentBlocking.manageSettings2.accesskey "G">
 <!ENTITY contentBlocking.trackersView.label "Elementi traccianti">
 <!ENTITY contentBlocking.trackersView.strictInfo.label "Per bloccare tutti gli elementi traccianti, impostare il blocco contenuti su “Restrittivo”.">
 <!ENTITY contentBlocking.socialblock.label "Traccianti dei social media">

@@ -69,6 +69,19 @@ serviceworker-empty-suggestions-debugger = Přehladujće swoju registrowanje ser
 # Suggestion to go to about:debugging in order to see Service Workers for all domains.
 # Clicking on the link will open about:debugging in a new tab.
 serviceworker-empty-suggestions-aboutdebugging = Přepytujće service workers wot druhich domenow. <a>about:debugging wočinić</a>
+# Header for the Manifest page when we have an actual manifest
+manifest-view-header = Manifest nałoženja
+# Header for the Manifest page when there's no manifest to inspect
+# The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
+manifest-empty-intro = Dyrbiće manifest webnałoženja přidać, zo byšće jón tu přepruwował. <a>Dalše informacije</a>
+# Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
+manifest-item-warnings = Zmylki a warnowanja
+# Header for the Identity section of Manifest inspection displayed in the application panel.
+manifest-item-identity = Identita
+# Header for the Presentation section of Manifest inspection displayed in the application panel.
+manifest-item-presentation = Prezentacija
+# Header for the Icon section of Manifest inspection displayed in the application panel.
+manifest-item-icons = Symbole
 # Text displayed while we are loading the manifest file
 manifest-loading = Manifest so čita…
 # Text displayed when the manifest has been successfully loaded
@@ -77,3 +90,22 @@ manifest-loaded-ok = Manifest je so začitał.
 manifest-loaded-error = Při čitanju manifesta je zmylk nastał.
 # Text displayed when the page has no manifest available
 manifest-non-existing = Žadyn manifest namakany.
+# Text displayed when the page has a manifest embedded in a Data URL and
+# thus we cannot link to it.
+manifest-json-link-data-url = Manifest je zasadźeny w DATA URL.
+# Sidebar navigation item for Manifest sidebar item section
+sidebar-item-manifest = Manifest
+    .alt = Manifestowy symbol
+    .title = Manifest
+# Sidebar navigation item for Service Workers sidebar item section
+sidebar-item-service-workers = Service Workers
+    .alt = Symbol Service Workers
+    .title = Service Workers
+# Text for the ALT and TITLE attributes of the warning icon
+icon-warning =
+    .alt = Warnowanski symbol
+    .title = Warnowanje
+# Text for the ALT and TITLE attributes of the error icon
+icon-error =
+    .alt = Zmylkowy symbol
+    .title = Zmylk

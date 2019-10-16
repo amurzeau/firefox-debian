@@ -241,6 +241,62 @@ applications-type-column =
 applications-action-column =
     .label = ਐਕਸ਼ਨ
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } ਫਾਈਲ
+applications-action-save =
+    .label = ਫਾਈਲ ਨੂੰ ਸੰਭਾਲੋ
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = { $app-name } ਵਰਤੋਂ
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = { $app-name } ਵਰਤੋਂ (ਡਿਫਾਲਟ)
+applications-use-other =
+    .label = …ਹੋਰ ਵਰਤੋਂ
+applications-select-helper = ਮਦਦਗਾਰ ਐਪਲੀਕੇਸ਼ਨ ਚੁਣੋ
+applications-manage-app =
+    .label = …ਐਪਲੀਕੇਸ਼ਨ ਵੇਰਵਾ
+applications-always-ask =
+    .label = ਹਮੇਸ਼ਾ ਪੁੱਛੋ
+applications-type-pdf = ਪੋਰਟੇਬਲ ਡੌਕੂਮੈਂਟ ਫਾਰਮੈਟ (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = { $plugin-name } ਵਰਤੋਂ ({ -brand-short-name } ਵਿੱਚ)
+applications-preview-inapp =
+    .label = { -brand-short-name } ਵਿੱਚ ਝਲਕ
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 drm-content-header = ਡਿਜ਼ਿਟਲ ਰਾਈਟਸ ਮੈਨਜੇਮੈਂਟ (DRM) ਸਮੱਗਰੀ
 play-drm-content =
     .label = DRM-ਕੰਟਰੋਲ ਕੀਤੀ ਸਮੱਗਰੀ ਚਲਾਓ
@@ -589,6 +645,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = …ਮਾਸਟਰ ਪਾਸਵਰਡ ਨੂੰ ਵਰਤੋਂ
     .accesskey = M
+forms-master-pw-fips-title = ਇਸ ਸਮੇਂ ਤੁਸੀਂ FIPS ਮੋਡ ਵਿੱਚ ਹੋ। FIPS ਨੂੰ ਇੱਕ ਨਾ-ਖਾਲੀ ਮਾਸਟਰ ਪਾਸਵਰਡ ਲੋੜੀਦਾ ਹੈ
+forms-master-pw-fips-desc = ਪਾਸਵਰਡ ਨੂੰ ਬਦਲਣਾ ਫੇਲ੍ਹ ਹੋਇਆ
 
 ## Privacy Section - History
 
@@ -694,8 +752,8 @@ addressbar-suggestions-settings = ਖੋਜ ਇੰਜਣ ਸੁਝਾਵਾਂ �
 ## Privacy Section - Content Blocking
 
 content-blocking-header = ਸਮੱਗਰੀ ਪਾਬੰਦੀ
-content-blocking-enhanced-tracking-protection = ਵਧੇਰੇ ਟਰੈਕਿੰਗ ਸੁਰੱਖਿਆ
 content-blocking-section-description = ਤੁਹਾਡੇ ਬਰਾਊਜ਼ ਕਰਨ ਦੇ ਦੌਰਾਨ ਤੁਹਾਡੀ ਪਰਦੇਦਾਰੀ ਦੀ ਸੁਰੱਖਿਆ ਕਰਦਾ ਹੈ। ਅਦਿੱਖ ਸਮੱਗਰੀ, ਜੋ ਕਿ ਤੁਹਾਡੇ ਸਾਈਟਾਂ ਨੂੰ ਖੋਲ੍ਹਣ ਨੂੰ ਟਰੈਕ ਕਰਕੇ ਤੁਹਾਡਾ ਪਰੋਫਾਈਲ ਬਣਾਉਂਦੀ ਹੈ, ‘ਤੇ ਪਾਬੰਦੀ ਲਗਾਉਂਦਾ ਹੈ। ਇਹਨਾਂ ਵਿੱਚੋਂ ਕੁਝ ਸਮੱਗਰੀ ‘ਤੇ ਪਾਬੰਦੀ ਲਗਾਉਣ ਨਾਲ ਸਫ਼ੇ ਵੱਧ ਤੇਜ਼ੀ ਨਾਲ ਲੋਡ ਵੀ ਹੋ ਸਕਦੇ ਹਨ।
+content-blocking-enhanced-tracking-protection = ਵਧੇਰੇ ਟਰੈਕਿੰਗ ਸੁਰੱਖਿਆ
 content-blocking-learn-more = ਹੋਰ ਜਾਣੋ
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -713,6 +771,23 @@ content-blocking-strict-description = ਹੋਰ ਵੱਧ ਸੁਰੱਖਿਆ,
 content-blocking-custom-desc = ਚੁਣੋ ਕਿ ਕਿਸ ਉੱਤੇ ਪਾਬੰਦੀ ਲਗਾਉਣੀ ਹੈ।
 content-blocking-private-trackers = ਪ੍ਰਾਈਵੇਟ ਵਿੰਡੋ ਵਿੱਚ ਕੇਵਲ ਜਾਣ-ਪਛਾਣੇ ਟਰੈਕਰ ਹੀ
 content-blocking-third-party-cookies = ਤੀਜੀ-ਧਿਰ ਟਰੈਕ ਕਰਨ ਵਾਲੇ ਕੂਕੀਜ਼
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = ਮਿਆਰੀ
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = ਸਖ਼ਤ
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = ਚੁਣਿੰਦਾ
+    .accesskey = c
+
+##
+
 content-blocking-etp-standard-desc = ਸੁਰੱਖਿਆ ਅਤੇ ਕਾਰਗੁਜ਼ਾਰੀ ਵਿਚਾਲੇ ਸੰਤੁਲਨ ਹੈ, ਸਫ਼ੇ ਆਮ ਨਾਲੋਂ ਵੱਧ ਤੇਜ਼ੀ ਨਾਲ ਲੋਡ ਹੁੰਦੇ ਹਨ।
 content-blocking-etp-strict-desc = ਵਧੇਰੇ ਸੁਰੱਖਿਆ, ਪਰ ਕੁਝ ਸਾਈਟਾਂ ਜਾਂ ਸਮੱਗਰੀ ਦੇ ਨਾ ਕੰਮ ਕਰਨ ਦਾ ਕਾਰਨ ਹੋ ਸਕਦਾ ਹੈ।
 content-blocking-private-windows = ਪ੍ਰਾਈਵੇਟ ਵਿੰਡੋਆਂ ‘ਚ ਸਮੱਗਰੀ ਟਰੈਕਿੰਗ

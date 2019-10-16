@@ -6,7 +6,8 @@ about-logins-page-title = כניסות וססמאות
 
 # "Google Play" and "App Store" are both branding and should not be translated
 
-login-app-promo-subtitle = קבלת היישומון { -lockwise-brand-name } בחינם
+login-app-promo-title = לקחת את הססמאות שלך לכל מקום
+login-app-promo-subtitle = הורדת היישומון { -lockwise-brand-name } בחינם
 login-app-promo-android =
     .alt = הורדה מ־Google Play
 login-app-promo-apple =
@@ -35,8 +36,7 @@ menu-menuitem-preferences =
         [windows] אפשרויות
        *[other] העדפות
     }
-menu-menuitem-feedback = שליחת משוב
-menu-menuitem-faq = תשובות לשאלות נפוצות
+about-logins-menu-menuitem-help = עזרה
 menu-menuitem-android-app = ‏{ -lockwise-brand-short-name } עבור Android
 menu-menuitem-iphone-app = ‏{ -lockwise-brand-short-name } עבור iPhone ו־iPad
 
@@ -54,6 +54,8 @@ login-list-name-option = שם (A-Z)
 login-list-last-changed-option = שינוי אחרון
 login-list-last-used-option = שימוש אחרון
 login-list-intro-title = לא נמצאו כניסות
+about-logins-login-list-empty-search-title = לא נמצאו כניסות
+about-logins-login-list-empty-search-description = אין תוצאות התואמות לחיפוש שלך.
 login-list-item-title-new-login = כניסה חדשה
 login-list-item-subtitle-new-login = נא להזין את פרטי הכניסה שלך
 login-list-item-subtitle-missing-username = (אין שם משתמש)
@@ -70,10 +72,9 @@ login-item-delete-button = מחיקה
 login-item-origin-label = כתובת אתר
 login-item-origin =
     .placeholder = https://www.example.com
-login-item-open-site-button = פתיחה
 login-item-username-label = שם משתמש
-login-item-username =
-    .placeholder = name@example.com
+about-logins-login-item-username =
+    .placeholder = (אין שם משתמש)
 login-item-copy-username-button-text = העתקה
 login-item-copied-username-button-text = הועתק!
 login-item-password-label = ססמה
@@ -117,3 +118,13 @@ confirm-discard-changes-dialog-message = כל השינויים שלא נשמרו
 breach-alert-text = ססמאות הודלפו או נגנבו מאתר זה מאז שעדכנת לאחרונה את פרטי הכניסה שלך. יש לשנות את הססמה שלך כדי להגן על חשבונך.
 breach-alert-dismiss =
     .title = סגירת התראה זו
+
+## Error Messages
+
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login = כבר קיימת רשומה עבור { $loginTitle } עם שם משתמש זה.
+# This is a generic error message.
+about-logins-error-message-default = אירעה שגיאה במהלך הניסיון לשמור ססמה זו.

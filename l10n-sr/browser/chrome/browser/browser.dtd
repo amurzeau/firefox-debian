@@ -133,12 +133,25 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
      for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "Проверите вашу е-пошту">
+
 
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
-     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     for the Firefox Account toolbar menu screen. The `Signed in as` text is
      followed by the user's email. -->
 <!ENTITY fxa.menu.signedInAs.label "Пријављени као">
 <!ENTITY fxa.menu.manageAccount.label "Управљај налогом…">
+<!ENTITY fxa.menu.syncSettings.label "&syncBrand.shortName.label; подешавања…">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "Повежи други уређај…">
+
+<!ENTITY fxa.menu.signin.label "Пријавите се у &brandProductName;">
+<!ENTITY fxa.menu.turnOnSync.label "Укључите &syncBrand.shortName.label;">
+<!ENTITY fxa.menu.account.label "Налог">
+<!ENTITY fxa.menu.firefoxServices.label "&brandProductName; услуге">
+
+<!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
+     for the Firefox Account toolbar menu screen.  -->
+<!ENTITY fxa.service.sendTab.description "У трену пошаљите језичак на било који други уређај где сте већ пријављени.">
 
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
@@ -181,6 +194,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
 
 <!ENTITY addCurPagesCmd.label "Забележи све језичке…">
+
 <!ENTITY showAllBookmarks2.label "Прикажи све забелешке">
 <!ENTITY recentBookmarks.label "Недавно забележене">
 <!ENTITY otherBookmarksCmd.label "Остале забелешке">
@@ -229,6 +243,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Управљајте превођењем странице">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Управљајте употребом DRM софтвера">
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "Отвори MIDI панел">
+
+<!ENTITY urlbar.permissionsGranted.tooltip       "Дали сте овој страници додатне дозволе.">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Блокирали сте камеру за овај веб сајт.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Блокирали сте микрофон за овај веб сајт.">
@@ -302,6 +318,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY fileMenu.label         "Датотека">
 <!ENTITY fileMenu.accesskey       "Д">
+
 <!ENTITY newUserContext.label             "Нови контејнер">
 <!ENTITY newUserContext.accesskey         "ј">
 <!ENTITY manageUserContext.label          "Управљај контејнерима">
@@ -351,6 +368,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY viewToolbarsMenu.accesskey     "А">
 <!ENTITY viewSidebarMenu.label "Бочна палета">
 <!ENTITY viewSidebarMenu.accesskey "Б">
+
 <!ENTITY viewCustomizeToolbar.label       "Прилагоди…">
 <!ENTITY viewCustomizeToolbar.accesskey     "ш">
 <!ENTITY overflowCustomizeToolbar.label       "Прилагоди алатну траку…">
@@ -364,6 +382,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY historyRestoreLastSession.label "Обнови претходну сесију">
 
 <!ENTITY showAllHistoryCmd2.label "Преглед целог историјата">
+
 <!ENTITY showAllHistoryCmd.commandkey "H">
 
 <!ENTITY appMenuHistory.showAll.label "Прикажи целу историју">
@@ -509,6 +528,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      searchFor.label and searchWith.label. This string will be used instead of
      them when the user has not typed any keyword. -->
 <!ENTITY searchWithHeader.label       "Претражи са:">
+
+<!-- LOCALIZATION NOTE (searchWithDesc.label):
+     This string prompts the user to use the list of one-click search engines in
+     the Urlbar and searchbar. -->
+
 <!-- LOCALIZATION NOTE (changeSearchSettings.button):
      This string won't wrap, so if the translated string is longer,
      consider translating it as if it said only "Search Settings". -->
@@ -582,9 +606,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY emailPageCmd.label           "Веза е-поште…">
 <!ENTITY emailPageCmd.accesskey       "е">
+<!-- alternate for content area context menu -->
 <!ENTITY savePageCmd.label            "Сачувај страницу као…">
 <!ENTITY savePageCmd.accesskey        "С">
-<!-- alternate for content area context menu -->
 <!ENTITY savePageCmd.accesskey2       "С">
 <!ENTITY savePageCmd.commandkey       "s">
 <!ENTITY saveFrameCmd.label           "Сачувај оквир као…">
@@ -689,22 +713,26 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY fullZoomEnlargeCmd.label       "Увеличај">
 <!ENTITY fullZoomEnlargeCmd.accesskey   "У">
+
 <!ENTITY fullZoomEnlargeCmd.commandkey  "+">
 <!ENTITY fullZoomEnlargeCmd.commandkey2 "="> <!-- + is above this key on many keyboards -->
 <!ENTITY fullZoomEnlargeCmd.commandkey3 "">
 
 <!ENTITY fullZoomReduceCmd.label        "Умањи">
 <!ENTITY fullZoomReduceCmd.accesskey    "м">
+
 <!ENTITY fullZoomReduceCmd.commandkey   "-">
 <!ENTITY fullZoomReduceCmd.commandkey2  "">
 
 <!ENTITY fullZoomResetCmd.label         "Ресетуј">
 <!ENTITY fullZoomResetCmd.accesskey     "Р">
+
 <!ENTITY fullZoomResetCmd.commandkey    "0">
 <!ENTITY fullZoomResetCmd.commandkey2   "">
 
 <!ENTITY fullZoomToggleCmd.label        "Увећај само текст">
 <!ENTITY fullZoomToggleCmd.accesskey    "т">
+
 <!ENTITY fullZoom.label                 "Увећај">
 <!ENTITY fullZoom.accesskey             "У">
 
@@ -722,6 +750,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY quitApplicationCmd.key         "Q">
 
 <!ENTITY closeCmd.label                 "Затвори">
+
 <!ENTITY closeCmd.key                   "W">
 <!ENTITY closeCmd.accesskey             "З">
 
@@ -776,12 +805,18 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.connection "Веза">
 <!ENTITY identity.connectionSecure "Безбедна веза">
 <!ENTITY identity.connectionNotSecure "Веза није безбедна">
+
+<!ENTITY identity.connectionSecure3 "Безбедна веза">
+<!ENTITY identity.connectionNotSecure2 "Небезбедна веза">
+<!ENTITY identity.connectionNotSecureSecurityView "Нисте безбедно повезани са овом страницом.">
 <!ENTITY identity.connectionFile "Ова страница се складишти на рачунару.">
 <!ENTITY identity.connectionVerified2 "Безбедно сте повезани на овај сајт, који је у власништву:">
+<!ENTITY identity.connectionVerified3 "Безбедно сте повезани са овом страницом.">
 <!ENTITY identity.connectionInternal "Ово је безбедна &brandShortName; страница.">
 <!ENTITY identity.extensionPage "Ова страница је учитана са екстензије.">
 <!ENTITY identity.insecureLoginForms2 "Пријаве које су унесене на овој страници су можда угрожене.">
 <!ENTITY identity.customRoot "Везу је проверио издавач сертификата који Mozilla не препознаје.">
+
 
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "&brandShortName; је блокирао делове странице које нису безбедне.">
@@ -816,10 +851,55 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.clearSiteData "Обриши колачиће и податке сајта…">
 
 <!ENTITY identity.permissions "Дозволе">
+
+<!ENTITY identity.permissions3 "Дозволе">
 <!ENTITY identity.permissionsEmpty "Овом сајту нису додељене никакве посебне дозволе.">
 <!ENTITY identity.permissionsReloadHint "Можда ћете морати поново учитати страницу да примените промене.">
 <!ENTITY identity.permissionsPreferences.tooltip "Отвори поставке дозвола">
 <!ENTITY identity.contentBlockingPreferences.tooltip "Отвори поставке блокирања садржаја">
+
+
+<!ENTITY protections.etpON.header "Побољшана заштита од праћења је УКЉУЧЕНА на овој страници">
+<!ENTITY protections.etpOFF.header "Побољшана заштита од праћења је ИСКЉУЧЕНА на овој страници">
+<!-- LOCALIZATION NOTE:
+     protections.etpMoreInfo.label: The text a screen reader speaks when focused on the info button. -->
+<!ENTITY protections.etpMoreInfo.label "Више података о побољшаној заштити од праћења">
+<!ENTITY protections.settings.label "Подешавања заштите">
+<!-- LOCALIZATION NOTE:
+     protections.siteNotWorking.label: The link to be clicked to open the sub-panel view
+     protections.siteNotWorkingView.title: The heading/title of the sub-panel view -->
+<!ENTITY protections.siteNotWorking.label "Страница не ради?">
+<!ENTITY protections.siteNotWorkingView.title "Страница не ради?">
+<!-- LOCALIZATION NOTE:
+     In the Site Not Working? view, we suggest turning off protections if
+     the user is experiencing issues with any of a variety of functionality.
+     protections.siteNotWorkingView.header: The header of the list
+     protections.siteNotWorkingView.issueList.*: The list items, shown in a <ul> -->
+<!ENTITY protections.siteNotWorkingView.header "Искључите заштиту ако имате проблеме са ставкама:">
+<!ENTITY protections.siteNotWorkingView.issueList.logInFields "Поља за пријаву">
+<!ENTITY protections.siteNotWorkingView.issueList.forms "Обрасци">
+<!ENTITY protections.siteNotWorkingView.issueList.payments "Плаћања">
+<!ENTITY protections.siteNotWorkingView.issueList.comments "Коментари">
+<!ENTITY protections.siteNotWorkingView.issueList.videos "Видео записи">
+<!ENTITY protections.siteNotWorkingView.sendReport.label "Пошаљите извештај">
+
+<!-- LOCALIZATION NOTE (protections.blocking2.label, protections.notBlocking2.label, protections.notFound.label):
+     In the protections panel, Content Blocking category items are in three sections:
+     "Blocked" for categories being blocked in the current page,
+     "Allowed" for categories detected but not blocked in the current page, and
+     "None Detected" for categories not detected in the current page.
+     These strings are used in the header labels of each of these sections. -->
+<!ENTITY protections.blocking2.label "Блокирано">
+<!ENTITY protections.notBlocking2.label "Дозвољено">
+<!ENTITY protections.notFound.label "Нису уочени">
+<!-- LOCALIZATION NOTE (protections.notBlocking.why.label, protections.notBlocking.why.etp*.tooltip):
+     The "Allowed" header also includes a "Why?" link that, when hovered, shows
+     a tooltip explaining why these items were not blocked in the page. -->
+<!ENTITY protections.notBlocking.why.label "Зашто?">
+<!ENTITY protections.notBlocking.why.etpOff.tooltip "Ако искључите заштиту, дозволићете пратиоце на овој страници. Овим можете побољшати рад ове веб странице.">
+<!ENTITY protections.socialMediaTrackers.label "Пратиоци с друштвених мрежа">
+<!ENTITY protections.trackingContent.label "Садржај који прати">
+<!ENTITY protections.noTrackersFound.description "&brandShortName; није уочио познате пратиоце на овој страници.">
 
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
@@ -835,7 +915,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncSignIn.label             "Пријави се на &syncBrand.shortName.label;…">
 <!ENTITY syncSignIn.accesskey         "П">
+
 <!ENTITY syncSyncNowItem.label        "Синхронизуј сада">
+<!ENTITY syncSyncNowItemSyncing.label "Синхронизујем…">
 <!ENTITY syncSyncNowItem.accesskey    "С">
 <!ENTITY syncReAuthItem.label         "Поново се повежи на &syncBrand.shortName.label;…">
 <!ENTITY syncReAuthItem.accesskey     "ж">
@@ -857,6 +939,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection3.label "Пратиоци">
 
 <!ENTITY contentBlocking.manageSettings.label "Управљај блокирањем садржаја">
+
+<!ENTITY contentBlocking.trackingProtection4.label "Садржаји који прате">
+
+<!ENTITY contentBlocking.manageSettings2.label "Управљајте подешавањима заштите">
 <!ENTITY contentBlocking.manageSettings.accesskey "У">
 
 <!ENTITY contentBlocking.trackersView.label "Пратиоци">
@@ -864,6 +950,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY contentBlocking.cookies.label "Колачићи">
 <!ENTITY contentBlocking.cookiesView.label "Колачићи и подаци сајта">
+
+<!ENTITY contentBlocking.socialblock.label "Пратиоци с друштвених мрежа">
+
 
 <!ENTITY contentBlocking.cryptominers.label "Крипто-рудари">
 <!ENTITY contentBlocking.cryptominersView.label "Крипто-рудари">

@@ -36,8 +36,7 @@ menu-menuitem-preferences =
         [windows] Beállítások
        *[other] Beállítások
     }
-menu-menuitem-feedback = Visszajelzés küldése
-menu-menuitem-faq = Gyakran Ismételt Kérdések
+about-logins-menu-menuitem-help = Súgó
 menu-menuitem-android-app = { -lockwise-brand-short-name } Androidra
 menu-menuitem-iphone-app = { -lockwise-brand-short-name } iPhone és iPad készülékekhez
 
@@ -57,9 +56,16 @@ login-list-last-changed-option = Legutóbbi módosítás
 login-list-last-used-option = Legutóbbi használat
 login-list-intro-title = Nincsenek bejelentkezések
 login-list-intro-description = Ha elment egy jelszót a { -brand-product-name }ban, akkor az itt fog megjelenni.
+about-logins-login-list-empty-search-title = Nincsenek bejelentkezések
+about-logins-login-list-empty-search-description = Nincs találat, amely megfelel a keresésnek.
 login-list-item-title-new-login = Új bejelentkezés
 login-list-item-subtitle-new-login = Adja meg a bejelentkezési adatait
 login-list-item-subtitle-missing-username = (nincs felhasználónév)
+about-logins-list-item-warning-icon =
+    .alt = Figyelmeztetés ikon
+    .title = Adatsértésben érintett weboldal
+about-logins-list-item-breach-icon =
+    .title = Adatsértésben érintett weboldal
 
 ## Introduction screen
 
@@ -67,7 +73,7 @@ login-intro-heading = A mentett bejelentkezéseit keresi? Állítsa be a { -sync
 login-intro-description = Ha egy másik eszközön mentette a bejelentkezéseit a { -brand-product-name }ban, akkor így érheti el őket itt:
 login-intro-instruction-fxa = Hozzon létre egyet, vagy jelentkezzen be a { -fxaccount-brand-name }jába azon az eszközön, amelyen a bejelentkezéseit menti
 login-intro-instruction-fxa-settings = Győződjön meg róla, hogy bejelölte a Bejelentkezések választómezőt a { -sync-brand-short-name } beállításokban
-login-intro-instruction-faq = További segítségért keresse fel a { -lockwise-brand-short-name }-zal kapcsolatos <a data-l10n-name="faq">gyakran ismétlődő kérdéseket</a>
+about-logins-intro-instruction-help = További segítéségért keresse fel a <a data-l10n-name="help-link">{ -lockwise-brand-short-name } támogatást</a>
 
 ## Login
 
@@ -77,10 +83,9 @@ login-item-delete-button = Törlés
 login-item-origin-label = Honlap címe
 login-item-origin =
     .placeholder = https://www.example.com
-login-item-open-site-button = Indítás
 login-item-username-label = Felhasználónév
-login-item-username =
-    .placeholder = email@example.com
+about-logins-login-item-username =
+    .placeholder = (nincs felhasználónév)
 login-item-copy-username-button-text = Másolás
 login-item-copied-username-button-text = Másolva!
 login-item-password-label = Jelszó
@@ -134,3 +139,18 @@ breach-alert-text = A jelszavai kiszivárogtak vagy ellopták őket a weboldalr�
 breach-alert-link = Tudjon meg többet erről az adatsértésről.
 breach-alert-dismiss =
     .title = Figyelmeztetés bezárása
+
+## Error Messages
+
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login = Már létezik egy bejegyzés azzal a felhasználónévvel ennél: { $loginTitle }.
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = Már létezik bejegyzése a(z) { $loginTitle } oldalhoz ezzel a felhasználónévvel. <a data-l10n-name="duplicate-link">Ugrás a létező bejegyzéshez?</a>
+# This is a generic error message.
+about-logins-error-message-default = Hiba történt a jelszó mentésekor.

@@ -79,6 +79,33 @@ cfr-whatsnew-button =
 
 cfr-whatsnew-panel-header = Novità
 
+cfr-whatsnew-release-notes-link-text = Leggi le note di versione
+
+cfr-whatsnew-fx70-title = { -brand-short-name } si batte ancora più duramente per la tua privacy
+cfr-whatsnew-fx70-body = L’ultimo aggiornamento rende la protezione antitracciamento più efficace e ti permette di creare password sicure per qualunque sito in modo semplice.
+cfr-whatsnew-tracking-protect-title = Proteggiti dal tracciamento
+cfr-whatsnew-tracking-protect-body = { -brand-short-name } blocca molti dei traccianti social e intersito più comuni che cercano di seguire ciò che fai online.
+cfr-whatsnew-tracking-protect-link-text = Visualizza il tuo rapporto personalizzato
+
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+  { $blockedCount ->
+    [one] Tracciante bloccato
+   *[other] Traccianti bloccati
+  }
+cfr-whatsnew-tracking-blocked-subtitle = Dal { DATETIME($earliestDate, month: "long", year: "numeric") }
+cfr-whatsnew-tracking-blocked-link-text = Visualizza il rapporto
+
+cfr-whatsnew-lockwise-backup-title = Salva le tue password
+cfr-whatsnew-lockwise-backup-body = Genera password sicure a cui puoi accedere da ogni dispositivo connesso al tuo account.
+cfr-whatsnew-lockwise-backup-link-text = Attiva il salvataggio
+
+cfr-whatsnew-lockwise-take-title = Porta le tue password sempre con te
+cfr-whatsnew-lockwise-take-body = L’app mobile { -lockwise-brand-short-name } ti permette di accedere in modo sicuro alle password salvate, ovunque ti trovi.
+cfr-whatsnew-lockwise-take-link-text = Ottieni l’app
+
 ## Bookmark Sync
 
 cfr-doorhanger-sync-bookmarks-header = Ritrova questo segnalibro sul tuo telefono
@@ -107,6 +134,19 @@ cfr-doorhanger-firefox-send-header = Condividi questo PDF in modo sicuro
 cfr-doorhanger-firefox-send-body = Mantieni i tuoi documenti riservati al sicuro con crittografia end-to-end e un link che scompare automaticamente dopo l’utilizzo.
 cfr-doorhanger-firefox-send-ok-button = Prova { -send-brand-name }
   .accesskey = P
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-ok-button = Visualizza protezioni
+  .accesskey = V
+cfr-doorhanger-socialtracking-close-button = Chiudi
+  .accesskey = C
+cfr-doorhanger-socialtracking-heading = { -brand-short-name } ha impedito a un social network di tracciarti
+cfr-doorhanger-socialtracking-description = La tua privacy è importante. Adesso { -brand-short-name } blocca i traccianti dei social media più comuni, limitando la quantità di dati che sono in grado di raccogliere sulla tua attività online.
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name } ha bloccato un fingerprinter in questa pagina
+cfr-doorhanger-fingerprinters-description = La tua privacy è importante. Adesso { -brand-short-name } blocca i fingerprinter, elementi che raccolgono informazioni in grado di identificare il tuo dispositivo in modo univoco al fine di tracciare la tua attività online.
+cfr-doorhanger-cryptominers-heading = { -brand-short-name } ha bloccato un cryptominer in questa pagina
+cfr-doorhanger-cryptominers-description = La tua privacy è importante. Adesso { -brand-short-name } blocca i cryptominer, elementi che utilizzano le risorse del tuo sistema per effettuare il “mining” di valute digitali.
 
 ## Protections panel
 

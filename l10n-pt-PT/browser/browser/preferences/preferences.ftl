@@ -253,6 +253,62 @@ applications-type-column =
 applications-action-column =
     .label = Ação
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = Ficheiro { $extension }
+applications-action-save =
+    .label = Guardar ficheiro
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Utilizar { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Utilizar { $app-name } (predefinição)
+applications-use-other =
+    .label = Outra…
+applications-select-helper = Selecione a aplicação auxiliar
+applications-manage-app =
+    .label = Detalhes da aplicação…
+applications-always-ask =
+    .label = Perguntar sempre
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Utilizar { $plugin-name } (em { -brand-short-name })
+applications-preview-inapp =
+    .label = Pré-visualizar no { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 drm-content-header = Conteúdo com Gestão de Direitos Digitais (DRM)
 play-drm-content =
     .label = Reproduzir conteúdo controlado por DRM
@@ -612,6 +668,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Alterar palavra-passe mestra…
     .accesskey = m
+forms-master-pw-fips-title = Atualmente, está no modo FIPS. Este modo requer uma palavra-passe mestra não vazia.
+forms-master-pw-fips-desc = Erro ao alterar palavra-passe
 
 ## Privacy Section - History
 
@@ -731,6 +789,23 @@ content-blocking-strict-description = Proteção mais forte, pode causar com que
 content-blocking-custom-desc = Escolha o que bloquear.
 content-blocking-private-trackers = Trackers conhecidos apenas em janelas privadas
 content-blocking-third-party-cookies = Cookies de monitorização de terceiros
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Padrão
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = Estrito
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = Personalizado
+    .accesskey = e
+
+##
+
 content-blocking-all-cookies = Todos os cookies
 content-blocking-unvisited-cookies = Cookies de sites não visitados
 content-blocking-all-windows-trackers = Trackers conhecidos em todas as janelas

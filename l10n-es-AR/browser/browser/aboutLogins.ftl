@@ -36,8 +36,7 @@ menu-menuitem-preferences =
         [windows] Opciones
        *[other] Preferencias
     }
-menu-menuitem-feedback = Enviar opinión
-menu-menuitem-faq = Preguntas frecuentes
+about-logins-menu-menuitem-help = Ayuda
 menu-menuitem-android-app = { -lockwise-brand-short-name } para Android
 menu-menuitem-iphone-app = { -lockwise-brand-short-name } para iPhone y iPad
 
@@ -56,10 +55,17 @@ login-list-breached-option = Sitios web vulnerados
 login-list-last-changed-option = Última modificación
 login-list-last-used-option = Usado por última vez
 login-list-intro-title = No se encontraron inicios de sesión
-login-list-intro-description = Cuando guarde una contraseña en { -brand-product-name }, va aparecer aquí.
+login-list-intro-description = Cuando guarde una contraseña en { -brand-product-name }, va a aparecer aquí.
+about-logins-login-list-empty-search-title = No se encontraron inicios de sesión
+about-logins-login-list-empty-search-description = No hay resultados que coincidan con su busqueda.
 login-list-item-title-new-login = Nuevo inicio de sesión
 login-list-item-subtitle-new-login = Ingrese sus credenciales de inicio de sesión
 login-list-item-subtitle-missing-username = (sin nombre de usuario)
+about-logins-list-item-warning-icon =
+    .alt = Icono de advertencia
+    .title = Sitio web violado
+about-logins-list-item-breach-icon =
+    .title = Sitio web violado
 
 ## Introduction screen
 
@@ -67,7 +73,7 @@ login-intro-heading = ¿Está buscando sus inicios de sesión guardados? Configu
 login-intro-description = Si guardó sus inicios de sesión en { -brand-product-name } en un dispositivo diferente, estos son los pasos a seguir para tenerlas aquí también:
 login-intro-instruction-fxa = Cree o inicie sesión en su { -fxaccount-brand-name } en el dispositivo donde guardó sus inicios de sesión
 login-intro-instruction-fxa-settings = Asegúrese de haber seleccionado la casilla de verificación Inicios de sesión en la Configuración de { -sync-brand-short-name }
-login-intro-instruction-faq = Vaya a { -lockwise-brand-short-name } <a data-l10n-name="faq"> preguntas frecuentes </a> para obtener más ayuda
+about-logins-intro-instruction-help = Vaya a <a data-l10n-name="help-link"> { -lockwise-brand-short-name } Ayuda</a> para obtener más ayuda
 
 ## Login
 
@@ -77,10 +83,9 @@ login-item-delete-button = Eliminar
 login-item-origin-label = Dirección web
 login-item-origin =
     .placeholder = https://www.example.com
-login-item-open-site-button = Lanzamiento
 login-item-username-label = Nombre de usuario
-login-item-username =
-    .placeholder = nombre@example.com
+about-logins-login-item-username =
+    .placeholder = (sin nombre de usuario)
 login-item-copy-username-button-text = Copiar
 login-item-copied-username-button-text = ¡Copiado!
 login-item-password-label = Contraseña
@@ -134,3 +139,18 @@ breach-alert-text = Las contraseñas fueron filtradas o robadas de este sitio we
 breach-alert-link = Obtenga más información sobre esta violación.
 breach-alert-dismiss =
     .title = Cerrar este alerta
+
+## Error Messages
+
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login = Ya hay una entrada para { $loginTitle } con ese nombre de usuario.
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = Ya hay una entrada para { $loginTitle } con ese nombre de usuario. <a data-l10n-name="duplicate-link"> ¿Quiere ir a esa entrada? </a>
+# This is a generic error message.
+about-logins-error-message-default = Se produjo un error al intentar guardar esta contraseña.

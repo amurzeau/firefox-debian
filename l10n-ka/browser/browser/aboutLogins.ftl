@@ -36,8 +36,7 @@ menu-menuitem-preferences =
         [windows] პარამეტრები
        *[other] პარამეტრები
     }
-menu-menuitem-feedback = გამოხმაურება
-menu-menuitem-faq = ხშირად დასმული კითხვები
+about-logins-menu-menuitem-help = დახმარება
 menu-menuitem-android-app = { -lockwise-brand-short-name } Android-ისთვის
 menu-menuitem-iphone-app = { -lockwise-brand-short-name } iPhone-ისა და iPad-ისთვის
 
@@ -57,9 +56,16 @@ login-list-last-changed-option = ბოლოს ჩასწორებულ�
 login-list-last-used-option = ბოლოს გამოყენებული
 login-list-intro-title = მონაცემები ვერ მოიძებნა
 login-list-intro-description = როცა პაროლს შეინახავს { -brand-product-name }, გამოჩნდება აქ.
+about-logins-login-list-empty-search-title = მონაცემები ვერ მოიძებნა
+about-logins-login-list-empty-search-description = ძიების შესაბამისი შედეგები ვერ მოიძებნა.
 login-list-item-title-new-login = ანგარიშის ახალი მონაცემები
 login-list-item-subtitle-new-login = შეიყვანეთ თქვენი მონაცემები
 login-list-item-subtitle-missing-username = (მომხმარებლის სახელის გარეშე)
+about-logins-list-item-warning-icon =
+    .alt = გაფრთხილების ნიშანი
+    .title = იერიშმიტანილი საიტი
+about-logins-list-item-breach-icon =
+    .title = იერიშმიტანილი საიტი
 
 ## Introduction screen
 
@@ -67,7 +73,7 @@ login-intro-heading = ანგარიშის შენახულ მო�
 login-intro-description = თუ თქვენს მონაცემებს { -brand-product-name } სხვა მოწყობილობაზე ინახავს, ნახეთ როგორ უნდა გადმოიტანოთ აქ:
 login-intro-instruction-fxa = შედით ან შექმენით { -fxaccount-brand-name } იმ მოწყობილობიდან, რომელზეც თქვენი ანგარიშები ინახება
 login-intro-instruction-fxa-settings = დარწმუნდით, რომ მონიშნული გაქვთ ანგარიშების უჯრა { -sync-brand-short-name(case: "gen") } პარამეტრებში
-login-intro-instruction-faq = იხილეთ { -lockwise-brand-short-name } – <a data-l10n-name="faq">ხშირად დასმული კითხვები</a> მხარდაჭერის მისაღებად.
+about-logins-intro-instruction-help = იხილეთ <a data-l10n-name="help-link">{ -lockwise-brand-short-name }-მხარდაჭერის</a> გვერდი, დახმარების მისაღებად
 
 ## Login
 
@@ -77,10 +83,9 @@ login-item-delete-button = წაშლა
 login-item-origin-label = საიტის მისამართი
 login-item-origin =
     .placeholder = https://www.example.com
-login-item-open-site-button = ხილვა
 login-item-username-label = მომხმარებლის სახელი
-login-item-username =
-    .placeholder = სახელი@example.com
+about-logins-login-item-username =
+    .placeholder = (მომხმარებლის სახელის გარეშე)
 login-item-copy-username-button-text = ასლი
 login-item-copied-username-button-text = ასლი აღებულია!
 login-item-password-label = პაროლი
@@ -111,8 +116,8 @@ confirmation-dialog-dismiss-button =
     .title = გაუქმება
 enable-password-sync-notification-message =
     { PLATFORM() ->
-        [windows] გსურთ თქვენი ანგარიშების გამოყენება შეგეძლოთ ყველგან, სადაც { -brand-product-name } გიყენიათ? გადადით თქვენი { -sync-brand-short-name(case: "gen") } პარამეტრებში და მონიშნეთ ანგარიშების უჯრა.
-       *[other] გსურთ თქვენი ანგარიშების გამოყენება შეგეძლოთ ყველგან, სადაც { -brand-product-name } გიყენიათ? გადადით თქვენი { -sync-brand-short-name(case: "gen") } პარამეტრებში და მონიშნეთ ანგარიშების უჯრა.
+        [windows] გსურთ თქვენი ანგარიშები თან იქონიოთ ყველგან, სადაც { -brand-product-name } გიყენიათ? გადადით { -sync-brand-short-name(case: "gen") } პარამეტრებში და მონიშნეთ ანგარიშების უჯრა.
+       *[other] გსურთ თქვენი ანგარიშები თან იქონიოთ ყველგან, სადაც { -brand-product-name } გიყენიათ? გადადით { -sync-brand-short-name(case: "gen") } პარამეტრებში და მონიშნეთ ანგარიშების უჯრა.
     }
 enable-password-sync-preferences-button =
     .label =
@@ -134,3 +139,18 @@ breach-alert-text = პაროლების მონაცემები �
 breach-alert-link = იხილეთ ვრცლად, ამ მიტაცების შესახებ.
 breach-alert-dismiss =
     .title = ამ ცნობის დახურვა
+
+## Error Messages
+
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login = ჩანაწერი ანგარიშისთვის { $loginTitle } ამ მომხმარებლის სახელით უკვე არსებობს.
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = ჩანაწერი ანგარიშისთვის { $loginTitle } ამ მომხმარებლის სახელით უკვე არსებობს. <a data-l10n-name="duplicate-link">გსურთ გასავლა ამ ჩანაწერზე?</a>
+# This is a generic error message.
+about-logins-error-message-default = შეცდომა, ამ პაროლის შენახვისას.

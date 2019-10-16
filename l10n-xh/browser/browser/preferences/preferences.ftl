@@ -4,8 +4,6 @@
 
 do-not-track-description = Thumelela iiwebhsayithi umqondiso othi "Musa ukuTreka" obonisa ukuba akufuni kutrekwa
 do-not-track-learn-more = Funda ngakumbi
-do-not-track-option-default =
-    .label = Kuphela xa usebenzisa uKhuseleko lokuTreka
 do-not-track-option-always =
     .label = Qho
 pref-page =
@@ -23,10 +21,6 @@ category-search =
 pane-privacy-title = UbuNgasese noKhuseleko
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = IAkhawunti yeFirefox
-category-sync =
-    .tooltiptext = { pane-sync-title }
 help-button-label = INkxaso ye{ -brand-short-name }
 focus-search =
     .key = f
@@ -182,6 +176,62 @@ applications-type-column =
 applications-action-column =
     .label = Inyathelo
     .accesskey = I
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = Ifayile ye-{ $extension }
+applications-action-save =
+    .label = Gcina Ifayile
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Sebenzisa i-{ $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Sebenzisa { $app-name } (okwesiseko)
+applications-use-other =
+    .label = Sebenzisa enye…
+applications-select-helper = Lungiselela ukukhetha Inkqubo Yoncedo
+applications-manage-app =
+    .label = IiNkcukacha zeAplikheshini…
+applications-always-ask =
+    .label = Soloko ucela
+applications-type-pdf = Ifomathi yoxwebhu oluphathekayo (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Sebenzisa i-{ $plugin-name } (kwi-{ -brand-short-name })
+applications-preview-inapp =
+    .label = Imbonakalo yangaphambili kwi-{ -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 play-drm-content-learn-more = Funda okungakumbi
 update-application-title = I-{ -brand-short-name } iZihlaziyi
 update-application-version = Uhlobo { $version } <a data-l10n-name="learn-more">Yintoni entsha</a>
@@ -266,6 +316,9 @@ use-current-pages =
 choose-bookmark =
     .label = Sebenzisa iBhukhmakhi…
     .accesskey = B
+
+## Home Section - Firefox Home Content Customization
+
 
 ## Search Section
 
@@ -353,7 +406,6 @@ sync-fxa-privacy-notice = Isaziso sabucala
 
 ## Privacy Section - Forms
 
-forms-header = Iifomu neePhaswedi
 forms-exceptions =
     .label = Izinxaxhi…
     .accesskey = x
@@ -366,6 +418,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Guqula iPhaswedi eyiMasta…
     .accesskey = P
+forms-master-pw-fips-title = Kungokunje ukwimo ye-FIPS. I-FIPS ifuna iPhaswedi yeMasta engekho ze.
+forms-master-pw-fips-desc = Ukuguqulwa Kwegama Lokugqithisa Akuphumelelanga
 
 ## Privacy Section - History
 
@@ -404,9 +458,6 @@ history-clear-on-close-settings =
 ## Privacy Section - Site Data
 
 sitedata-learn-more = Funda okungakumbi
-sitedata-cookies-exceptions =
-    .label = Izinxaxhi…
-    .accesskey = z
 
 ## Privacy Section - Address Bar
 
@@ -421,21 +472,15 @@ addressbar-suggestions-settings = Tshintsha iipreferensi zamacebiso enjini yokuk
 ## Privacy Section - Content Blocking
 
 
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+
+##
+
+
 ## Privacy Section - Tracking
 
-tracking-header = Ukhuseleko Lokutreka
-tracking-mode-always =
-    .label = Qho
-    .accesskey = o
-tracking-mode-private =
-    .label = Kuphela kwiiwindow zabucala
-    .accesskey = l
-tracking-mode-never =
-    .label = Ungaze
-    .accesskey = U
-tracking-exceptions =
-    .label = Ezikhethekileyo…
-    .accesskey = z
 
 ## Privacy Section - Permissions
 

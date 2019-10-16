@@ -15,6 +15,11 @@ login-app-promo-apple =
 login-filter =
     .placeholder = Etsi kirjautumistietoja
 create-login-button = Luo uusi kirjautumistieto
+# This string is used as alternative text for favicon images.
+# Variables:
+#   $title (String) - The title of the website associated with the favicon.
+login-favicon =
+    .alt = Favicon sivustolle { $title }
 fxaccounts-sign-in-text = Käytä salasanojasi kaikilla laitteillasi
 fxaccounts-sign-in-button = Kirjaudu { -sync-brand-short-name }-palveluun
 fxaccounts-avatar-button =
@@ -27,8 +32,7 @@ menu =
 # This menuitem is only visible on Windows
 menu-menuitem-import = Tuo salasanoja…
 menu-menuitem-preferences = Asetukset
-menu-menuitem-feedback = Lähetä palautetta
-menu-menuitem-faq = Usein kysytyt kysymykset
+about-logins-menu-menuitem-help = Ohje
 menu-menuitem-android-app = { -lockwise-brand-short-name } Androidille
 menu-menuitem-iphone-app = { -lockwise-brand-short-name } iPhonelle ja iPadille
 
@@ -43,18 +47,29 @@ login-list-count =
     }
 login-list-sort-label-text = Järjestys:
 login-list-name-option = Nimi (A–Ö)
+login-list-breached-option = Tietovuodon kokeneet sivustot
 login-list-last-changed-option = Viimeksi muokattu
 login-list-last-used-option = Viimeksi käytetty
 login-list-intro-title = Kirjautumistietoja ei löytynyt
-login-list-intro-description = Kun tallennat salasanan { -brand-product-name }iin, se ilmestyy tänne.
+login-list-intro-description = Kun tallennat salasanan { -brand-product-name }-selaimeen, se ilmestyy tänne.
+about-logins-login-list-empty-search-title = Kirjautumistietoja ei löytynyt
+about-logins-login-list-empty-search-description = Hakuasi vastaavia tuloksia ei löytynyt.
 login-list-item-title-new-login = Uusi kirjautumistieto
 login-list-item-subtitle-new-login = Anna kirjautumistietosi
 login-list-item-subtitle-missing-username = (ei käyttäjätunnusta)
+about-logins-list-item-warning-icon =
+    .alt = Varoituskuvake
+    .title = Tietovuodon kokenut sivusto
+about-logins-list-item-breach-icon =
+    .title = Tietovuodon kokenut sivusto
 
 ## Introduction screen
 
 login-intro-heading = Etsitkö tallennettuja kirjautumistietojasi? Ota { -sync-brand-short-name } käyttöön.
-login-intro-description = Jos tallensit kirjautumistietosi { -brand-product-name }iin toisella laitteella, saat ne käyttöön seuraavasti:
+login-intro-description = Jos tallensit kirjautumistietosi { -brand-product-name }-selaimeen toisella laitteella, saat ne käyttöön seuraavasti:
+login-intro-instruction-fxa = Luo tili tai kirjaudu { -fxaccount-brand-name(case: "allative") } laitteella, jolle kirjautumistietosi on tallennettu
+login-intro-instruction-fxa-settings = Varmista, että Kirjautumistiedot-valinta on rastitettu { -sync-brand-short-name }-asetuksissa
+about-logins-intro-instruction-help = Siirry <a data-l10n-name="help-link">{ -lockwise-brand-short-name }-tukeen</a> saadaksesi ohjeita
 
 ## Login
 
@@ -65,8 +80,8 @@ login-item-origin-label = Verkkosivuston osoite
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Käyttäjätunnus
-login-item-username =
-    .placeholder = nimi@example.com
+about-logins-login-item-username =
+    .placeholder = (ei käyttäjätunnusta)
 login-item-copy-username-button-text = Kopioi
 login-item-copied-username-button-text = Kopioitu!
 login-item-password-label = Salasana
@@ -95,6 +110,14 @@ master-password-reload-button =
 confirmation-dialog-cancel-button = Peruuta
 confirmation-dialog-dismiss-button =
     .title = Peruuta
+enable-password-sync-notification-message =
+    { PLATFORM() ->
+        [windows] Haluatko kirjautumistietosi mukaasi minne tahansa, kun käytät { -brand-product-name }ia? Siirry { -sync-brand-short-name }-asetuksiin ja rastita Kirjautumistiedot-valinta.
+       *[other] Haluatko kirjautumistietosi mukaasi minne tahansa, kun käytät { -brand-product-name }ia? Siirry { -sync-brand-short-name }-asetuksiin ja rastita Kirjautumistiedot-valinta.
+    }
+enable-password-sync-preferences-button =
+    .label = Siirry { -sync-brand-short-name }-asetuksiin
+    .accesskey = S
 confirm-delete-dialog-title = Poistetaanko tämä kirjautumistieto?
 confirm-delete-dialog-message = Tätä toimintoa ei voi perua.
 confirm-delete-dialog-confirm-button = Poista
@@ -104,6 +127,17 @@ confirm-discard-changes-dialog-confirm-button = Hylkää
 
 ## Breach Alert notification
 
+breach-alert-text = Salasanat vuotivat tai niitä varastettiin tältä sivustolta sen jälkeen, kun olet viimeksi päivittänyt kirjautumistietosi. Suojaa tilisi vaihtamalla salasanasi.
 breach-alert-link = Lue lisää tästä vuodosta.
 breach-alert-dismiss =
     .title = Sulje tämä hälytys
+
+## Error Messages
+
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login = Tietue sivustolle { $loginTitle } kyseisellä käyttäjätunnuksella on jo olemassa.
+# This is a generic error message.
+about-logins-error-message-default = Tätä salasanaa tallentaessa ilmeni virhe.

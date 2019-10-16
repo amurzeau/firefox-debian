@@ -73,10 +73,10 @@ restart-later = Khởi động lại sau
 
 # This string is shown to notify the user that their home page
 # is being controlled by an extension.
-extension-controlled-homepage-override = Một phần mở rông, <img data-l10n-name="icon"/> { $name }, đang kiểm soát trang chủ của bạn.
+extension-controlled-homepage-override = Một tiện ích mở rông, <img data-l10n-name="icon"/> { $name }, đang kiểm soát trang chủ của bạn.
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
-extension-controlled-new-tab-url = Một phần mở rông, <img data-l10n-name="icon"/> { $name }, đang kiểm soát phần thẻ mới của bạn.
+extension-controlled-new-tab-url = Một tiện ích mở rông, <img data-l10n-name="icon"/> { $name }, đang kiểm soát phần thẻ mới của bạn.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Một tiện ích mở rộng, <img data-l10n-name="icon"/> { $name }, đang kiểm soát cài đặt này.
@@ -85,7 +85,7 @@ extension-controlled-web-notifications = Một tiện ích mở rộng, <img dat
 extension-controlled-default-search = Một tiện ích mở rộng, <img data-l10n-name="icon"/> { $name }, đã cài đặt công cụ tìm kiếm mặc định của bạn.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
-extension-controlled-privacy-containers = Một tiện ích mở rộng này, <img data-l10n-name="icon"/> { $name }, yêu cầu thẻ ngăn chứa.
+extension-controlled-privacy-containers = Một tiện ích mở rộng, <img data-l10n-name="icon"/> { $name }, yêu cầu thẻ ngăn chứa.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
 extension-controlled-websites-content-blocking-all-trackers = Một tiện ích mở rộng, <img data-l10n-name="icon"/> { $name }, đang kiểm soát cài đặt này.
@@ -241,6 +241,62 @@ applications-type-column =
 applications-action-column =
     .label = Thao tác
     .accesskey = a
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = Tập tin { $extension }
+applications-action-save =
+    .label = Lưu Tập Tin
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Dùng { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Dùng { $app-name } (mặc định)
+applications-use-other =
+    .label = Dùng chương trình khác…
+applications-select-helper = Chọn ứng dụng trợ giúp
+applications-manage-app =
+    .label = Chi tiết ứng dụng…
+applications-always-ask =
+    .label = Luôn hỏi
+applications-type-pdf = Định dạng tài liệu di động (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Dùng { $plugin-name } (trong { -brand-short-name })
+applications-preview-inapp =
+    .label = Xem trước trong { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = Nội dung quản lý bản quyền kỹ thuật số (DRM)
 play-drm-content =
     .label = Phát nội dung DRM được kiểm soát
@@ -327,6 +383,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Tìm kiếm văn bản khi bạn bắt đầu nhập
     .accesskey = x
+browsing-picture-in-picture-toggle-enabled =
+    .label = Bật điều khiển video hình trong hình
+    .accesskey = E
+browsing-picture-in-picture-learn-more = Tìm hiểu thêm
 browsing-cfr-recommendations =
     .label = Đề xuất tiện ích mở rộng khi duyệt
     .accesskey = R
@@ -478,6 +538,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Mang trang web theo bạn
 sync-signedout-description = Đồng bộ trang đánh dấu, lịch sử, thẻ, mật khẩu, tiện ích và tùy chỉnh tới tất cả các thiết bị của bạn.
 sync-signedout-account-title = Kết nối với một { -fxaccount-brand-name }
@@ -498,11 +562,17 @@ sync-mobile-promo = Tải Firefox cho <img data-l10n-name="android-icon"/> <a da
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = Đổi hình hồ sơ
 sync-disconnect =
     .label = Ngắt kết nối…
     .accesskey = D
+sync-sign-out =
+    .label = Đăng xuất…
+    .accesskey = g
 sync-manage-account = Quản lý tài khoản
     .accesskey = k
 sync-signedin-unverified = { $email } chưa được kiểm tra.
@@ -518,6 +588,45 @@ sync-sign-in =
     .accesskey = g
 sync-signedin-settings-header = Cài đặt đồng bộ hóa
 sync-signedin-settings-desc = Chọn những thứ bạn muốn đồng bộ sử dụng { -brand-short-name }.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Đồng bộ hóa: BẬT
+prefs-syncing-off = Đồng bộ hóa: TẮT
+prefs-sync-setup =
+    .label = Thiết lập { -sync-brand-short-name }…
+    .accesskey = S
+prefs-sync-offer-setup-label = Đồng bộ trang đánh dấu, lịch sử, thẻ, mật khẩu, tiện ích và tùy chỉnh tới tất cả các thiết bị của bạn.
+prefs-sync-now =
+    .labelnotsyncing = Đồng bộ hóa ngay
+    .accesskeynotsyncing = N
+    .labelsyncing = Đang đồng bộ hóa…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = Bạn hiện đang đồng bộ hóa các mục này:
+sync-currently-syncing-bookmarks = Trang đánh dấu
+sync-currently-syncing-history = Lịch sử
+sync-currently-syncing-tabs = Thẻ đang mở
+sync-currently-syncing-logins-passwords = Đăng nhập và mật khẩu
+sync-currently-syncing-addresses = Địa chỉ
+sync-currently-syncing-creditcards = Thẻ tín dụng
+sync-currently-syncing-addons = Tiện ích
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Tùy chọn
+       *[other] Tùy chỉnh
+    }
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = Chọn những gì để đồng bộ hóa
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Lưu thay đổi
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = Ngắt kết nối…
+    .buttonaccesskeyextra2 = D
 sync-engine-bookmarks =
     .label = Trang đánh dấu
     .accesskey = d
@@ -531,6 +640,10 @@ sync-engine-tabs =
 sync-engine-logins =
     .label = Đăng nhập
     .tooltiptext = Tên đăng nhập và mật khẩu bạn đã được lưu
+    .accesskey = L
+sync-engine-logins-passwords =
+    .label = Đăng nhập và mật khẩu
+    .tooltiptext = Tên đăng nhập và mật khẩu bạn đã lưu
     .accesskey = L
 sync-engine-addresses =
     .label = Địa chỉ
@@ -552,6 +665,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Các cài đặt chung, cài đặt về sự riêng tư, và bảo mật mà bạn đã thay đổi
     .accesskey = s
+
+## The device name controls.
+
 sync-device-name-header = Tên thiết bị
 sync-device-name-change =
     .label = Thay đổi tên thiết bị…
@@ -566,7 +682,7 @@ sync-connect-another-device = Kết nối thiết bị khác
 sync-manage-devices = Quản lý thiết bị
 sync-fxa-begin-pairing = Ghép nối thiết bị
 sync-tos-link = Điều khoản dịch vụ
-sync-fxa-privacy-notice = Chính sách riêng tư
+sync-fxa-privacy-notice = Thông báo bảo mật
 
 ## Privacy Section
 
@@ -584,6 +700,10 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Đề xuất và tạo mật khẩu mạnh
     .accesskey = u
+forms-breach-alerts =
+    .label = Hiển thị cảnh báo về mật khẩu cho các trang web bị rò rỉ
+    .accesskey = b
+forms-breach-alerts-learn-more-link = Tìm hiểu thêm
 forms-fill-logins-and-passwords =
     .label = Tự động điền đăng nhập và mật khẩu
     .accesskey = i
@@ -596,6 +716,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Thay đổi mật khẩu chính…
     .accesskey = M
+forms-master-pw-fips-title = Bạn đang ở chế độ FIPS. FIPS yêu cầu Mật khẩu Chính không được để trống.
+forms-master-pw-fips-desc = Thay đổi mật khẩu không thành công
 
 ## Privacy Section - History
 
@@ -701,8 +823,9 @@ addressbar-suggestions-settings = Thay đổi tùy chỉnh phần gợi ý của
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Chặn nội dung
-content-blocking-enhanced-tracking-protection = Trình chống theo dõi nâng cao
 content-blocking-section-description = Bảo vệ riêng tư của bạn trong khi bạn duyệt. Chặn nội dung vô hình của các trang web bạn đang xem truy cập và hồ sơ bạn. Chặn một số nội dung này có thể làm cho các trang tải nhanh hơn.
+content-blocking-enhanced-tracking-protection = Trình chống theo dõi nâng cao
+content-blocking-section-top-level-description = Trình theo dõi theo bạn trên mạng để thu thập thông tin về thói quen và sở thích duyệt web của bạn. { -brand-short-name } chặn nhiều trình theo dõi và các tập lệnh độc hại khác.
 content-blocking-learn-more = Tìm hiểu thêm
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -720,6 +843,23 @@ content-blocking-strict-description = Bảo vệ mạnh mẽ hơn, có thể khi
 content-blocking-custom-desc = Chọn những gì bạn muốn chặn.
 content-blocking-private-trackers = Trình theo dõi được biết chỉ trong cửa sổ riêng tư
 content-blocking-third-party-cookies = Cookie theo dõi của bên thứ ba
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Tiêu chuẩn
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = Nghiêm ngặt
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = Tùy chỉnh
+    .accesskey = C
+
+
+
 content-blocking-etp-standard-desc = Cân bằng để bảo vệ và hiệu suất. Các trang sẽ tải bình thường.
 content-blocking-etp-strict-desc = Bảo vệ mạnh mẽ hơn, nhưng có thể khiến một số trang web và nội dung bị phá vỡ.
 content-blocking-etp-custom-desc = Chọn trình theo dõi và tập lệnh để chặn.
@@ -733,7 +873,7 @@ content-blocking-all-windows-tracking-content = Trình theo dõi nội dung tron
 content-blocking-all-third-party-cookies = Toàn bộ cookie từ bên thứ ba
 content-blocking-cryptominers = Tiền điện tử
 content-blocking-fingerprinters = Vân tay
-content-blocking-warning-title = Hãy cẩn thận!
+content-blocking-warning-title = Hãy cân nhắc!
 content-blocking-warning-description = Chặn nội dung có thể khiến một số trang web bị hỏng. Dễ dàng vô hiệu hóa chặn cho các trang web mà bạn tin tưởng.
 content-blocking-learn-how = Tìm hiểu cách thức
 content-blocking-etp-warning-description = Chặn trình theo dõi có thể ảnh hưởng đến chức năng của một số trang web. Tải lại một trang với trình theo dõi để tải tất cả nội dung.
@@ -830,7 +970,7 @@ permissions-a11y-privacy-link = Tìm hiểu thêm
 
 collection-header = Thu thập và sử dụng dữ liệu { -brand-short-name }
 collection-description = Chúng tôi cố gắng cung cấp cho bạn sự lựa chọn và chỉ thu thập những gì chúng tôi cần để cung cấp và cải thiện { -brand-short-name } cho tất cả mọi người. Chúng tôi luôn xin phép trước khi thu thập thông tin cá nhân.
-collection-privacy-notice = Chính sách riêng tư
+collection-privacy-notice = Thông báo bảo mật
 collection-health-report =
     .label = Cho phép { -brand-short-name } gửi dữ liệu kỹ thuật và tương tác tới { -vendor-short-name }
     .accesskey = r
@@ -902,13 +1042,13 @@ space-alert-over-5gb-pref-button =
         }
 space-alert-over-5gb-message =
     { PLATFORM() ->
-        [windows] { -brand-short-name } sắp hết dung lượng đĩa. Nội dung trang web có thể không hiển thị chính xác. Bạn có thể xóa dữ liệu được lưu trữ trong Tùy chọn > Riêng tư & Bảo mật > Cookie và Dữ liệu trang.
-       *[other] { -brand-short-name } sắp hết dung lượng đĩa. Nội dung trang web có thể không hiển thị chính xác. Bạn có thể xóa dữ liệu được lưu trữ trong Tùy chọn > Riêng tư & Bảo mật > Cookie và Dữ liệu trang.
+        [windows] Không đủ dung lượng đĩa cho { -brand-short-name }. Nội dung trang web có thể không hiển thị chính xác. Bạn có thể xóa dữ liệu được lưu trữ trong Tùy chọn > Riêng tư & Bảo mật > Cookie và Dữ liệu trang.
+       *[other] Không đủ dung lượng đĩa cho { -brand-short-name }. Nội dung trang web có thể không hiển thị chính xác. Bạn có thể xóa dữ liệu được lưu trữ trong Tùy chọn > Riêng tư & Bảo mật > Cookie và Dữ liệu trang.
     }
 space-alert-under-5gb-ok-button =
     .label = OK, đã hiểu
     .accesskey = K
-space-alert-under-5gb-message = { -brand-short-name } đang hết dung lượng đĩa. Nội dung trang web có thể không hiển thị chính xác. Truy cập “Tìm hiểu thêm” để tối ưu hóa việc sử dụng đĩa của bạn để có trải nghiệm duyệt web tốt hơn.
+space-alert-under-5gb-message = Không đủ dung lượng đĩa cho { -brand-short-name }. Nội dung trang web có thể không hiển thị chính xác. Truy cập “Tìm hiểu thêm” để tối ưu hóa việc sử dụng đĩa của bạn để có trải nghiệm duyệt web tốt hơn.
 
 ## The following strings are used in the Download section of settings
 

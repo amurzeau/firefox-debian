@@ -22,12 +22,15 @@ learn-more = <span data-l10n-name="link">Več o tem</span>
 ##   $display (string) - A CSS display value e.g. "inline-block".
 
 inactive-css-not-grid-or-flex-container = <strong>{ $property }</strong> ne vpliva na ta element, ker ni niti vsebnik flex niti vsebnik grid.
+inactive-css-not-grid-or-flex-container-or-multicol-container = <strong>{ $property }</strong> ne vpliva na ta element, ker ni vsebnik flex, vsebnik grid ali vsebnik z več stolpci.
 inactive-css-not-grid-or-flex-item = <strong>{ $property }</strong> ne vpliva na ta element, ker ni vsebnik grid ali flex.
 inactive-css-not-grid-item = <strong>{ $property }</strong> ne vpliva na ta element, ker ni element grid.
 inactive-css-not-grid-container = <strong>{ $property }</strong> ne vpliva na ta element, ker ni vsebnik grid.
 inactive-css-not-flex-item = <strong>{ $property }</strong> ne vpliva na ta element, ker ni element flex.
 inactive-css-not-flex-container = <strong>{ $property }</strong> ne vpliva na ta element, ker ni vsebnik flex.
 inactive-css-not-inline-or-tablecell = <strong>{ $property }</strong> ne vpliva na ta element, ker ni vrstični element ali element celice tabele.
+inactive-css-property-because-of-display = <strong>{ $property }</strong> ne vpliva na ta element, ker prikazuje <strong>{ $display }</strong>.
+inactive-css-property-is-impossible-to-override-in-visited = <strong>{ $property }</strong> ni mogoče preglasiti zaradi omejitve <strong>:visited</strong>.
 
 ## In the Rule View when a CSS property cannot be successfully applied we display
 ## an icon. When this icon is hovered this message is displayed to explain how
@@ -37,9 +40,13 @@ inactive-css-not-grid-or-flex-container-fix = Poskusite dodati <strong>display:g
 inactive-css-not-grid-or-flex-container-or-multicol-container-fix = Poskusite dodati <strong>display:grid</strong>, <strong>display:flex</strong> ali <strong>columns:2</strong>. { learn-more }
 inactive-css-not-grid-or-flex-item-fix = Poskusite dodati <strong>display:grid</strong>, <strong>display:flex</strong>, <strong>display:inline-grid</strong> ali <strong>display:inline-flex</strong>. { learn-more }
 inactive-css-not-grid-item-fix = Nadrejenemu elementu poskusite dodati <strong>display:grid</strong> ali <strong>display:inline-grid</strong>. { learn-more }
+inactive-css-not-grid-or-flex-item-fix-2 = Poskusite dodati <strong>display:grid</strong>, <strong>display:flex</strong>, <strong>display:inline-grid</strong> ali <strong>display:inline-flex</strong>. { learn-more }
+inactive-css-not-grid-item-fix-2 = Nadrejenemu elementu poskusite dodati <strong>display:grid</strong> ali <strong>display:inline-grid</strong>. { learn-more }
 inactive-css-not-grid-container-fix = Poskusite dodati <strong>display:grid</strong> ali <strong>display:inline-grid</strong>. { learn-more }
 inactive-css-not-flex-item-fix = Nadrejenemu elementu poskusite dodati <strong>display:flex</strong> ali <strong>display:inline-flex</strong>. { learn-more }
+inactive-css-not-flex-item-fix-2 = Nadrejenemu elementu poskusite dodati <strong>display:flex</strong> ali <strong>display:inline-flex</strong>. { learn-more }
 inactive-css-not-flex-container-fix = Poskusite dodati <strong>display:flex</strong> ali <strong>display:inline-flex</strong>. { learn-more }
 inactive-css-not-inline-or-tablecell-fix = Poskusite dodati <strong>display:inline</strong> ali <strong>display:table-cell</strong>. { learn-more }
 inactive-css-non-replaced-inline-or-table-row-or-row-group-fix = Poskusite dodati <strong>display:inline-block</strong> ali <strong>display:block</strong>. { learn-more }
 inactive-css-non-replaced-inline-or-table-column-or-column-group-fix = Poskusite dodati <strong>display:inline-block</strong>. { learn-more }
+inactive-css-not-display-block-on-floated-fix = Poskusite odstraniti<strong>float</strong> ali dodati <strong>display:block</strong>. { learn-more }

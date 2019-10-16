@@ -83,6 +83,20 @@ newtab-menu-delete-history = Slett frå historikk
 newtab-menu-save-to-pocket = Lagre til { -pocket-brand-name }
 newtab-menu-delete-pocket = Slett frå { -pocket-brand-name }
 newtab-menu-archive-pocket = Arkiver i { -pocket-brand-name }
+newtab-menu-show-privacy-info = Våre sponsorar og ditt personvern
+
+## Message displayed in a modal window to explain privacy and provide context for sponsored content.
+
+newtab-privacy-modal-button-done = Ferdig
+newtab-privacy-modal-header = Personvernet ditt er viktig.
+newtab-privacy-modal-paragraph =
+    I tillegg til å servere fengslande historier, viser vi deg også relevante,
+    høgt kontrollert innhald frå utvalde sponsorar. Du kan vere sikker på, at dine surfedata
+    aldri forlèt dit personlege eksemplar av  { -brand-product-name } — vi ser dei ikkje, og sponsorane våre ser dei ikkje heller.
+newtab-privacy-modal-link = Lær deg korleis personvernet fungerer på den nye fana
+
+
+
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = Fjern bokmerke
 # Bookmark is a verb here.
@@ -148,7 +162,7 @@ newtab-section-expand-section-label =
 
 ## Section Headers.
 
-newtab-section-header-topsites = Mest besøkte nettsider
+newtab-section-header-topsites = Mest besøkte nettstadar
 newtab-section-header-highlights = Høgdepunkt
 # Variables:
 #  $provider (String): Name of the corresponding content provider.

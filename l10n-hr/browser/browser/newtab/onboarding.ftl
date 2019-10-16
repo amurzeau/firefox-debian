@@ -21,6 +21,11 @@ onboarding-button-label-get-started = Započnite
 onboarding-welcome-header = Dobro došli u { -brand-short-name }
 onboarding-welcome-body = Imate preglednik.<br/>Upoznajte ostatak { -brand-product-name }.
 onboarding-welcome-learn-more = Saznajte više o prednostima.
+onboarding-welcome-modal-get-body = Imaš preglednik.<br/>Sad upoznaj ostatak { -brand-product-name }.
+onboarding-welcome-modal-supercharge-body = Nadopuni svoju zaštitu privatnosti.
+onboarding-welcome-modal-privacy-body = Imaš preglednik. Dodajmo još više zaštite privatnosti.
+onboarding-welcome-modal-family-learn-more = Saznaj više o { -brand-product-name } obitelji proizvoda.
+onboarding-welcome-form-header = Započni ovdje
 onboarding-join-form-header = Pridruži se { -brand-product-name }
 onboarding-join-form-body = Unesite vašu adresu e-pošte kako biste počeli.
 onboarding-join-form-email =
@@ -64,6 +69,11 @@ onboarding-benefit-privacy-title = Prava privatnost
 # make and do. We take less data. We keep it safe. And we make sure that we are
 # transparent about how we use it."
 onboarding-benefit-privacy-text = Sve što radimo poštuje naše obećanje o osobnim podacima: Uzmi manje podataka. Drži ih na sigurnom. Bez tajni.
+onboarding-benefit-sync-title = { -sync-brand-short-name }
+onboarding-benefit-sync-text = Uzmi svoje oznake, lozinke, povijest i još mnogo toga gdje god koristiš { -brand-product-name }.
+onboarding-benefit-monitor-title = { -monitor-brand-short-name }
+onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
+onboarding-benefit-lockwise-text = Upravljaj lozinkama koje su zaštićene i prenosive.
 
 ## These strings belong to the individual onboarding messages.
 
@@ -72,8 +82,8 @@ onboarding-benefit-privacy-text = Sve što radimo poštuje naše obećanje o oso
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = Privatno pretraživanje
-onboarding-private-browsing-text = Pretražujte sami. Privatno pretraživanje s blokiranjem sadržaja blokira pratitelje koji vas prate po internetu.
+onboarding-private-browsing-title = Privatno pregledavanje
+onboarding-private-browsing-text = Pregledaj web anonimno. Privatno pregledavanje s blokiranjem sadržaja blokira pratitelje koji vas prate po internetu.
 onboarding-screenshots-title = Snimke ekrana
 onboarding-screenshots-text = Snimite, spremite i dijelite snimke ekrana - bez napuštanja { -brand-short-name }a. Snimite dio ili cijelu stranicu dok pretražujete. Onda spremite na internet za brzi pristup i dijeljenje.
 onboarding-addons-title = Dodaci
@@ -92,14 +102,14 @@ onboarding-data-sync-text2 = Sinkronizirajte svoje zabilješke, lozinke i više 
 onboarding-data-sync-button2 = Prijavite se u { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Budite upozoreni na curenje podataka
 onboarding-firefox-monitor-text = { -monitor-brand-name } nadzire pojavljuje li se vaša adresa e-pošte u podacima koji su procurili na Internet i obavještava vas ukoliko otkrije.
-onboarding-firefox-monitor-button = Prijavite se za obavijesti
+onboarding-firefox-monitor-button = Prijavi se za upozorenja
 onboarding-browse-privately-title = Pretražujte privatno
-onboarding-browse-privately-text = Privatno pretraživanje briše povijest pretraživanja i pregledavanja kako bi ostalo skriveno od ostalih koje koriste isto računalo.
+onboarding-browse-privately-text = Privatno pregledavanje briše povijest pretraživanja i pregledavanja kako bi ostalo skriveno od ostalih koje koriste isto računalo.
 onboarding-browse-privately-button = Otvori privatni prozor
 onboarding-firefox-send-title = Držite svoje dijeljene datoteke privatnima
 onboarding-firefox-send-text2 = Prenesite svoje datoteke na { -send-brand-name } kako biste ih dijelili s potpunom enkripcijom i poveznicom koja se automatski briše.
 onboarding-firefox-send-button = Isprobajte { -send-brand-name }
-onboarding-mobile-phone-title = Preuzmite { -brand-product-name } za vaš telefon
+onboarding-mobile-phone-title = Preuzmi { -brand-product-name } za svoj mobitel
 onboarding-mobile-phone-text = Preuzmite { -brand-product-name } za iOS ili Android i sinkronizirajte svoje podatke na svim uređajima.
 # "Mobile" is short for mobile/cellular phone, "Browser" is short for web
 # browser.
@@ -109,9 +119,9 @@ onboarding-send-tabs-title = Trenutno pošaljite sami sebi kartice
 # tab's context menu.
 onboarding-send-tabs-text = Pošalji kartice trenutno dijeli web stranice između vaših uređaja bez da morate kopirati, zalijepiti ili napustiti vaš preglednik.
 onboarding-send-tabs-button = Počnite korisitit slanje kartica
-onboarding-pocket-anywhere-title = Čitajte i slušajte bilo gdje
-onboarding-pocket-anywhere-text2 = Spremite vaš omiljeni sadržaj lokalno s { -pocket-brand-name } aplikacijom i čitajte, slušajte i gledajte kada god vam to odgovara.
-onboarding-pocket-anywhere-button = Probajte { -pocket-brand-name }
+onboarding-pocket-anywhere-title = Čitaj i slušaj bilo gdje
+onboarding-pocket-anywhere-text2 = Spremi svoj omiljeni sadržaj lokalno s { -pocket-brand-name } aplikacijom i čitaj, slušaj i gledaj kad god želiš.
+onboarding-pocket-anywhere-button = Probaj { -pocket-brand-name }
 onboarding-lockwise-passwords-title = Ponesite svoje lozinke posvuda
 onboarding-lockwise-passwords-text2 = Zaštitite lozinke koje spremite i jednostavno se prijavite u svoje račune s { -lockwise-brand-name }.
 onboarding-lockwise-passwords-button2 = Preuzmite aplikaciju

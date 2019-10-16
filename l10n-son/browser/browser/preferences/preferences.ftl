@@ -17,10 +17,6 @@ category-search =
 pane-privacy-title = Sutura nda saajaw
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Firefox kontu
-category-sync =
-    .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } faaba
 focus-search =
     .key = f
@@ -160,6 +156,62 @@ applications-type-column =
 applications-action-column =
     .label = Teera
     .accesskey = T
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } tuku
+applications-action-save =
+    .label = Tuku gaabu
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Goy nda { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Goy nda { $app-name } (tilasu)
+applications-use-other =
+    .label = Goy nda iwaani…
+applications-select-helper = Faabakaw porogaram suuba
+applications-manage-app =
+    .label = Porogaram šilbayhayey…
+applications-always-ask =
+    .label = Hãa waati kul
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Goy nda { $plugin-name } ({ -brand-short-name } ra)
+applications-preview-inapp =
+    .label = Moo-fur { -brand-short-name } ra
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 play-drm-content-learn-more = Bay ka tonton
 update-application-title = { -brand-short-name } taagandirey
 update-history =
@@ -235,6 +287,9 @@ use-current-pages =
 choose-bookmark =
     .label = Doo-šilbay goyandi...
     .accesskey = D
+
+## Home Section - Firefox Home Content Customization
+
 
 ## Search Section
 
@@ -324,7 +379,6 @@ sync-fxa-privacy-notice = Sutura laasaabay
 
 ## Privacy Section - Forms
 
-forms-header = Takarey nda šennikufaley
 forms-exceptions =
     .label = Hasarawey…
     .accesskey = s
@@ -337,6 +391,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Takaddaɲaa šennikufal barmay
     .accesskey = T
+forms-master-pw-fips-title = Sohõda war goo FIPS yaayi ra. FIPS ga takaddaɲaa šennikufal kaŋ ši koonu waažibandi.
+forms-master-pw-fips-desc = Šennikufal mana hin ka barmay mana
 
 ## Privacy Section - History
 
@@ -374,9 +430,6 @@ history-clear-on-close-settings =
 
 ## Privacy Section - Site Data
 
-sitedata-cookies-exceptions =
-    .label = Hasarawey…
-    .accesskey = H
 
 ## Privacy Section - Address Bar
 
@@ -391,21 +444,15 @@ addressbar-suggestions-settings = Ibaa&ey barmay ceecijinay honnandiyaney se
 ## Privacy Section - Content Blocking
 
 
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+
+##
+
+
 ## Privacy Section - Tracking
 
-tracking-header = Ganayan jejebu
-tracking-mode-always =
-    .label = Waati kul
-    .accesskey = i
-tracking-mode-private =
-    .label = Sutura zanfuney hinne ra
-    .accesskey = i
-tracking-mode-never =
-    .label = Abada
-    .accesskey = b
-tracking-exceptions =
-    .label = Hasarawey…
-    .accesskey = H
 
 ## Privacy Section - Permissions
 

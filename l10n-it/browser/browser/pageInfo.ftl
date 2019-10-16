@@ -14,8 +14,6 @@ select-all =
 menu-select-all =
     .label = Seleziona tutto
     .accesskey = t
-close-window =
-    .key = A
 close-dialog =
     .key = w
 general-tab =
@@ -57,7 +55,7 @@ media-type =
 media-size =
     .label = Dimensione
 media-count =
-    .label = Conteggio
+    .label = Numero
 media-dimension =
     .value = Dimensioni:
 media-long-desc =
@@ -121,6 +119,8 @@ security-site-data-cookies-only = Sì, cookie
 security-site-data-no = No
 image-size-unknown = Sconosciuto
 not-set-verified-by = Non specificato
+page-info-not-specified =
+    .value = Non specificato
 not-set-alternative-text = Non specificato
 not-set-date = Non specificato
 media-img = Immagine
@@ -143,6 +143,8 @@ general-quirks-mode =
 general-strict-mode =
     .value = Modalità rispetto standard
 security-no-owner = Non sono disponibili informazioni sul proprietario di questo sito web.
+page-info-security-no-owner =
+    .value = Non sono disponibili informazioni sul proprietario di questo sito web.
 media-select-folder = Selezionare una cartella per salvare l’immagine
 media-unknown-not-cached =
     .value = Sconosciuto (non in cache)
@@ -161,9 +163,9 @@ general-meta-tags =
 #   $visits (number) - The number of previous visits
 security-visits-number =
     { $visits ->
-         [0] No
-         [one] Sì, 1 volta
-        *[other] Sì, { $visits } volte
+        [0] No
+        [one] Sì, 1 volta
+       *[other] Sì, { $visits } volte
     }
 # This string is used to display the size of a media file
 # Variables:

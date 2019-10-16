@@ -41,12 +41,14 @@
 <!ENTITY fileAccessDenied.title "הגישה לקובץ נדחתה">
 <!ENTITY fileAccessDenied.longDesc "
 <ul>
-  <li>יתכן שהקובץ הוסר, הועבר או שההרשאות מונעות את הגישה אליו.</li>
+  <li>ייתכן שהקובץ הוסר, הועבר או שההרשאות מונעות את הגישה אליו.</li>
 </ul>
 ">
 
 <!ENTITY generic.title "שגיאה כללית">
-<!ENTITY generic.longDesc "<p>&brandShortName; אינו יכול לטעון דף זה מסיבה לא ידועה.</p>">
+<!ENTITY generic.longDesc "
+<p>מסיבה בלתי ידועה, אין ל־&brandShortName; אפשרות לטעון דף זה.</p>
+">
 
 <!ENTITY captivePortal.title "כניסה לרשת">
 <!ENTITY captivePortal.longDesc2 "
@@ -71,14 +73,18 @@
 </ul>">
 
 <!ENTITY contentEncodingError.title "שגיאה בקידוד תוכן">
-<!ENTITY contentEncodingError.longDesc "<ul> 
-<li>אנא צור קשר עם בעלי האתר כדי ליידע אותם על בעיה זו.</li> 
-</ul>">
+<!ENTITY contentEncodingError.longDesc "
+<ul>
+  <li>נא ליצור קשר עם בעלי האתר כדי ליידע אותם על בעיה זו.</li>
+</ul>
+">
 
 <!ENTITY unsafeContentType.title "סוג קובץ מסוכן">
-<!ENTITY unsafeContentType.longDesc "<ul> 
-<li>בבקשה צור קשר עם בעלי האתר כדי ליידע אותם על בעיה זו.</li> 
-</ul>">
+<!ENTITY unsafeContentType.longDesc "
+<ul>
+  <li>נא ליצור קשר עם בעלי האתר כדי ליידע אותם על בעיה זו.</li>
+</ul>
+">
 
 <!ENTITY netReset.title "החיבור הופסק">
 <!ENTITY netReset.longDesc "&sharedLongDesc;">
@@ -89,9 +95,7 @@
 <!ENTITY unknownProtocolFound.title "כתובת זו אינה מובנת">
 <!ENTITY unknownProtocolFound.longDesc "
 <ul>
-  <li>
-    ייתכן שצריך להתקין יישום אחר כדי לגשת לכתובת זו.
-  </li>
+  <li>ייתכן שיהיה צורך להתקין יישום אחר כדי לפתוח כתובת זו.</li>
 </ul>
 ">
 
@@ -109,9 +113,11 @@
 </ul>">
 
 <!ENTITY redirectLoop.title "הדף מבצע העברה לא תקינה">
-<!ENTITY redirectLoop.longDesc "<ul> 
-<li>בעיה זו נגרמת לעיתים מסירוב לקבל עוגיות או ניטרולן.</li> 
-</ul>">
+<!ENTITY redirectLoop.longDesc "
+<ul>
+  <li>בעיה זו נגרמת לעיתים מסירוב לקבל עוגיות או ניטרולן.</li>
+</ul>
+">
 
 <!ENTITY unknownSocketType.title "תגובה לא צפויה מהשרת">
 <!ENTITY unknownSocketType.longDesc "<ul> 
@@ -119,11 +125,11 @@
 <li>ייכתן וההגדרות השרת אינן תקניות</li> 
 </ul>">
 
-<!ENTITY nssFailure2.title "קישור מאובטח נכשל">
+<!ENTITY nssFailure2.title "חיבור מאובטח נכשל">
 <!ENTITY nssFailure2.longDesc2 "
 <ul>
-  <li>לא ניתן להציג את הדף המבוקש כיוון שאין אפשרות לאמת את אמינות המידע שהתקבל.</li>
-  <li>נא ליצור קשר עם בעלי האתר וליידע אותם על בעיה זו.</li>
+  <li>לא ניתן להציג את הדף המבוקש מכיוון שאין אפשרות לאמת את אמינות הנתונים שהתקבלו.</li>
+  <li>נא ליצור קשר עם בעלי האתר כדי ליידע אותם על בעיה זו.</li>
 </ul>
 ">
 
@@ -160,10 +166,10 @@ was trying to connect. -->
 </ul>">
 
 <!ENTITY cspBlocked.title "נחסם בהתאם למדיניות האבטחה של התוכן">
-<!ENTITY cspBlocked.longDesc "<p>&brandShortName; מונע מדף זה להיטען בצורה זו מאחר שהדף כולל מדיניות אבטחת תוכן שמונעת זאת.</p>">
+<!ENTITY cspBlocked.longDesc "<p>&brandShortName; מנע מדף זה להיטען בדרך הזו מכיוון שלדף יש מדיניות אבטחת תוכן שאינה מאפשרת זאת.</p>">
 
 <!ENTITY corruptedContentErrorv2.title "שגיאת תוכן פגום">
-<!ENTITY corruptedContentErrorv2.longDesc "<p>לא ניתן להציג דף זה מכיון שאותרה שגיאה בתעבורת הנתונים.</p><ul><li>נא ליצור קשר עם בעלי האתר כדי לדווח להם על בעיה זו.</li></ul>">
+<!ENTITY corruptedContentErrorv2.longDesc "<p>לא ניתן להציג את הדף המבוקש מכיוון שאותרה שגיאה בתעבורת הנתונים.</p><ul><li>נא ליצור קשר עם בעלי האתר כדי ליידע אותם על בעיה זו.</li></ul>">
 
 <!ENTITY securityOverride.exceptionButton1Label "קבלת הסיכון והמשך">
 
@@ -171,7 +177,7 @@ was trying to connect. -->
 <!ENTITY errorReporting.learnMore "מידע נוסף…">
 
 <!ENTITY remoteXUL.title "XUL מרוחק">
-<!ENTITY remoteXUL.longDesc "<p><ul><li>פנה אל בעלי האתר כדי ליידע אותם על הבעיה.</li></ul></p>">
+<!ENTITY remoteXUL.longDesc "<p><ul><li>נא ליצור קשר עם בעלי האתר כדי ליידע אותם על בעיה זו.</li></ul></p>">
 
 <!ENTITY sslv3Used.title "לא ניתן להתחבר באופן מאובטח">
 <!-- LOCALIZATION NOTE (sslv3Used.longDesc2) - Do not translate
@@ -186,7 +192,7 @@ was trying to connect. -->
 <!ENTITY inadequateSecurityError.title "החיבור שלך אינו מאובטח">
 <!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
      "NS_ERROR_NET_INADEQUATE_SECURITY". -->
-<!ENTITY inadequateSecurityError.longDesc "<p>האתר בכתובת <span class='hostname'></span> משתמש בטכנולוגית אבטחה שאינה עדכנית וחשופה להתקפות. תוקף יכול בקלות לחשוף מידע שלכאורה אמור היה להיות מוגן. על מנהל האתר לתקן את השרת לפני שיהיה ניתן לבקר באתר זה.</p><p>קוד שגיאה: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
+<!ENTITY inadequateSecurityError.longDesc "<p>האתר בכתובת <span class='hostname'></span> משתמש בטכנולוגיית אבטחה מיושנת החשופה לתקיפות. תוקף יכול לחשוף בקלות מידע שעשוי להחשב כמאובטח. על מנהל האתר לתקן את השרת לפני שיהיה ניתן לבקר באתר.</p><p>קוד שגיאה: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
 
 <!ENTITY blockedByPolicy.title "עמוד חסום">
 
@@ -203,5 +209,9 @@ was trying to connect. -->
 <!ENTITY prefReset.longDesc "נראה שהגדרות אבטחת הרשת שלך עשוי לגרום לכך. האם ברצונך לשחזר להגדרות ברירת מחדל?">
 <!ENTITY prefReset.label "שחזור הגדרות בררת המחדל">
 
+<!ENTITY enableTls10.longDesc "יתכן שאתר זה אינו תומך בפרוטוקול TLS 1.2 שהוא הגרסה המינימלית הנתמכת על־ידי &brandShortName;. הפעלת TLS 1.0 ו־TLS 1.1 עשויה לאפשר לחיבור זה להצליח.">
+<!ENTITY enableTls10.note "TLS 1.0 ו־TLS 1.1 יושבתו לצמיתות בגרסה עתידית.">
+<!ENTITY enableTls10.label "הפעלת TLS 1.0 ו־1.1">
+
 <!ENTITY networkProtocolError.title "שגיאת פרוטוקול רשת">
-<!ENTITY networkProtocolError.longDesc "<p>לא ניתן להציג את הדף שברצונך לצפות מכיוון שאותרה שגיאה בפרוטוקול הרשת.</p><ul><li>נא ליצור קשר עם בעלי האתר וליידע אותם על בעיה זו.</li></ul>">
+<!ENTITY networkProtocolError.longDesc "<p>לא ניתן להציג את הדף המבוקש מכיוון שאותרה שגיאה בפרוטוקול הרשת.</p><ul><li>נא ליצור קשר עם בעלי האתר כדי ליידע אותם על בעיה זו.</li></ul>">

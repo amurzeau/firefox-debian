@@ -153,7 +153,7 @@ menu-view-full-screen =
     .label = Plen schermo
     .accesskey = P
 
-##
+
 
 menu-view-show-all-tabs =
     .label = Monstrar tote le schedas
@@ -212,11 +212,20 @@ menu-tools-addons =
 menu-tools-sync-sign-in =
     .label = Connecter se a { -sync-brand-short-name }…
     .accesskey = Y
+menu-tools-fxa-sign-in =
+    .label = Connecter se a { -brand-product-name }…
+    .accesskey = n
+menu-tools-turn-on-sync =
+    .label = Accende { -sync-brand-short-name }…
+    .accesskey = A
 menu-tools-sync-now =
     .label = Synchronisar ora
     .accesskey = S
 menu-tools-sync-re-auth =
     .label = Reconnecter se a { -sync-brand-short-name }…
+    .accesskey = R
+menu-tools-fxa-re-auth =
+    .label = Reconnecter se a { -brand-product-name }…
     .accesskey = R
 menu-tools-web-developer =
     .label = Developpator web

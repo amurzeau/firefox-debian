@@ -36,8 +36,7 @@ menu-menuitem-preferences =
         [windows] Opcje
        *[other] Preferencje
     }
-menu-menuitem-feedback = Wyślij opinię
-menu-menuitem-faq = Najczęściej zadawane pytania
+about-logins-menu-menuitem-help = Pomoc
 menu-menuitem-android-app = { -lockwise-brand-short-name } na Androida
 menu-menuitem-iphone-app = { -lockwise-brand-short-name } na iPhone’a i iPada
 
@@ -58,9 +57,16 @@ login-list-last-changed-option = Ostatnia modyfikacja
 login-list-last-used-option = Ostatnie użycie
 login-list-intro-title = Brak danych logowania
 login-list-intro-description = Tutaj będą wyświetlane hasła zachowane w przeglądarce { -brand-product-name }.
+about-logins-login-list-empty-search-title = Nie odnaleziono danych logowania
+about-logins-login-list-empty-search-description = Brak wyników pasujących do wyszukiwania.
 login-list-item-title-new-login = Nowe dane logowania
 login-list-item-subtitle-new-login = Wprowadź dane logowania
 login-list-item-subtitle-missing-username = (bez nazwy użytkownika)
+about-logins-list-item-warning-icon =
+    .alt = Ikona ostrzeżenia
+    .title = Witryna z wyciekiem haseł
+about-logins-list-item-breach-icon =
+    .title = Witryna z wyciekiem haseł
 
 ## Introduction screen
 
@@ -68,7 +74,7 @@ login-intro-heading = Szukasz swoich zachowanych haseł? Skonfiguruj { -sync-bra
 login-intro-description = Aby przenieść tutaj dane logowania zachowane w przeglądarce { -brand-product-name } na innym urządzeniu:
 login-intro-instruction-fxa = Zarejestruj się lub zaloguj na { -fxaccount-brand-name(case: "loc", capitalization: "lower") } na urządzeniu, w którym zachowano dane logowania
 login-intro-instruction-fxa-settings = Upewnij się, że opcja „Dane logowania” jest zaznaczona w ustawieniach { -sync-brand-short-name(case: "gen", capitalization: "lower") }
-login-intro-instruction-faq = <a data-l10n-name="faq">Najczęściej zadawane pytania</a> usługi { -lockwise-brand-short-name } zawierają więcej informacji
+about-logins-intro-instruction-help = <a data-l10n-name="help-link">Pomoc usługi { -lockwise-brand-short-name }</a> zawiera więcej informacji
 
 ## Login
 
@@ -78,10 +84,9 @@ login-item-delete-button = Usuń
 login-item-origin-label = Adres witryny
 login-item-origin =
     .placeholder = https://www.example.com
-login-item-open-site-button = Otwórz
 login-item-username-label = Nazwa użytkownika
-login-item-username =
-    .placeholder = e-mail@example.com
+about-logins-login-item-username =
+    .placeholder = (bez nazwy użytkownika)
 login-item-copy-username-button-text = Kopiuj
 login-item-copied-username-button-text = Skopiowano
 login-item-password-label = Hasło
@@ -135,3 +140,18 @@ breach-alert-text = Od czasu ostatniej zmiany danych logowania hasła z tej wit
 breach-alert-link = Więcej informacji o tym wycieku.
 breach-alert-dismiss =
     .title = Zamknij to powiadomienie
+
+## Error Messages
+
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login = Dane logowania dla witryny „{ $loginTitle }” z tą nazwą użytkownika już istnieją.
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = Dane logowania dla witryny „{ $loginTitle }” z tą nazwą użytkownika już istnieją. <a data-l10n-name="duplicate-link">Przejść do istniejących danych?</a>
+# This is a generic error message.
+about-logins-error-message-default = Wystąpił błąd podczas zapisywania tego hasła.

@@ -76,12 +76,21 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY menubarCmd.label "Barra de menu">
 <!ENTITY menubarCmd.accesskey "u">
 <!ENTITY navbarCmd.label "Barra de navigation">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY navbar.accessibleLabel "Navigation">
 <!ENTITY personalbarCmd.label "Barra de marcapaginas">
 <!ENTITY personalbarCmd.accesskey "m">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY personalbar.accessibleLabel "Marcapaginas">
 <!ENTITY bookmarksToolbarItem.label "Elementos del barra de marcapaginas">
 
 <!ENTITY pageSourceCmd.label "Codice fonte del pagina">
 <!ENTITY pageSourceCmd.accesskey "f">
+
 <!ENTITY pageSourceCmd.commandkey "u">
 <!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
 Option+Command keyboard shortcut letter that Safari and Chrome use for "View
@@ -92,6 +101,7 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 
 <!ENTITY pageInfoCmd.label "Informationes del pagina">
 <!ENTITY pageInfoCmd.accesskey "I">
+
 <!ENTITY pageInfoCmd.commandkey "i">
 <!ENTITY ldbCmd.label "Depurator de disposition">
 <!ENTITY ldbCmd.accesskey "D">
@@ -116,6 +126,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaSignInError.label "Reconnecter se a &syncBrand.shortName.label;">
 <!ENTITY fxaUnverified.label "Verificar tu conto">
 
+
+<!ENTITY togglePictureInPicture.key2 "}">
+<!ENTITY togglePictureInPicture.key "]"> <!-- } is above this key on many keyboards -->
 
 <!ENTITY fullScreenMinimize.tooltip "Minimisar">
 <!ENTITY fullScreenRestore.tooltip "Restaurar">
@@ -146,13 +159,24 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.menu.signedInAs.label "Authenticate como">
 <!ENTITY fxa.menu.manageAccount.label "Gerer le conto…">
 <!ENTITY fxa.menu.syncSettings.label "Parametros de &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbar menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.syncSettings2.label "Parametros de &syncBrand.shortName.label;">
 <!ENTITY fxa.menu.connectAnotherDevice2.label "Connecter un altere apparato…">
 <!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
 <!ENTITY fxa.menu.signin.label "Accede a &brandProductName;">
 <!ENTITY fxa.menu.turnOnSync.label "Activar &syncBrand.shortName.label;">
-<!ENTITY fxa.menu.account.label "Conto">
 <!ENTITY fxa.menu.firefoxServices.label "Servicios de &brandProductName;">
+
+<!ENTITY fxa.menu.account.label "Conto">
+<!ENTITY fxa.menu.settings.label "Parametros">
+<!ENTITY fxa.menu.accountSettings.label "Parametros del conto">
+<!ENTITY fxa.menu.signOut.label "Disconnexion…">
+<!ENTITY fxa.menu.deviceSettings.label "Parametros del apparato">
+<!ENTITY fxa.menu.setupSync.label "Configurar &syncBrand.shortName.label;…">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
      for the Firefox Account toolbar menu screen.  -->
@@ -195,6 +219,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY bookmarksMenu.label "Marcapaginas">
 <!ENTITY bookmarksMenu.accesskey "M">
+
 <!ENTITY bookmarkThisPageCmd.label "Adder un marcapaginas">
 <!ENTITY editThisBookmarkCmd.label "Modificar iste marcapaginas">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
@@ -236,6 +261,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Gerer utilisation del plugin">
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "Indicar si tu pote reciper notificationes del sito">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Stockar datos in le immagazinage persistente">
+
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Le navigator es sub controlo remote">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Aperir le quadro de authentication web">
 <!ENTITY urlbar.storageAccessAnchor.tooltip               "Aperir le panello de permissiones de activitates">
@@ -249,6 +275,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Gerer le traduction del pagina">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Gerer le utilisation de software de DRM">
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "Aperir le quadro MIDI">
+
+<!ENTITY urlbar.permissionsGranted.tooltip       "Tu ha concedite altere permissos a iste sito web.">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Tu ha blocate tu camera pro iste sito web.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Tu ha blocate tu microphono pro iste sito web.">
@@ -419,8 +447,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Desira tu vider le schedas de altere apparatos hic?">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Aperir le preferentias de Sync">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Authentica te pro vider un lista de schedas de tu altere apparatos.">
+<!ENTITY appMenuRemoteTabs.welcome.label "Vider un lista de schedas de tu altere apparatos.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Il necesse verificar tu conto.">
 <!ENTITY appMenuRemoteTabs.signin.label "Connecter se a Sync">
+<!ENTITY appMenuRemoteTabs.signintosync.label "Acceder a &syncBrand.shortName.label;…">
+<!ENTITY appMenuRemoteTabs.turnonsync.label "Activar &syncBrand.shortName.label;…">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Gerer le apparatos…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Vider le barra lateral de schedas synchronisate">
 <!ENTITY appMenuRemoteTabs.hidesidebar.label "Celar le barra lateral de schedas synchronisate">
@@ -508,6 +539,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      This is set as the aria-label attribute for the search input box in the
      in-content search UI, to be used by screen readers. -->
 <!ENTITY contentSearchInput.label     "Cerca">
+
 <!ENTITY contentSearchSubmit.tooltip  "Submitter cerca">
 
 <!-- LOCALIZATION NOTE (searchInput.placeholder):
@@ -654,7 +686,7 @@ context menu items are mutually exclusive. -->
 <!ENTITY copyVideoURLCmd.accesskey    "o">
 <!ENTITY copyAudioURLCmd.label        "Copiar le adresse del audio">
 <!ENTITY copyAudioURLCmd.accesskey    "o">
-<!ENTITY copyEmailCmd.label           "Copiar le adresse email">
+<!ENTITY copyEmailCmd.label           "Copiar le adresse de e-mail">
 <!-- LOCALIZATION NOTE (copyEmailCmd.accesskey): The access keys for "Copy Link
 Location" and "Copy Email Address" should be the same if possible; the two
 context menu items are mutually exclusive. -->
@@ -812,13 +844,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.connection "Connexion">
 <!ENTITY identity.connectionSecure "Connexion secur">
-
-<!-- LOCALIZATION NOTE (identity.securityView.label2)
-     This is the header of the security subview in the Site Identity panel. -->
-<!ENTITY identity.securityView.label2 "Securitate de connexion">
-
-<!ENTITY identity.connectionSecure2 "Connexion secur">
 <!ENTITY identity.connectionNotSecure "Le connexion non es secur">
+
+<!ENTITY identity.connectionSecure3 "Connexion secur">
+<!ENTITY identity.connectionNotSecure2 "Connexion non secur">
 <!ENTITY identity.connectionNotSecureSecurityView "Tu non es connectite con securitate a iste sito.">
 <!ENTITY identity.connectionFile "Iste pagina es stockate in tu computator.">
 <!ENTITY identity.connectionVerified2 "Tu es connectite con securitate a iste sito, cuje proprietario es:">
@@ -828,7 +857,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.insecureLoginForms2 "Le informationes de authentication scribite in iste pagina pote esser compromittite.">
 <!ENTITY identity.customRoot "Connexion verificate per un certificate emittite per un autoritate non recognoscite per Mozilla.">
 
-<!ENTITY identity.evOwnerLabel "Proprietario del sito:">
+<!ENTITY identity.evOwnerLabel2 "Certificato expedite a:">
 
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "&brandShortName; ha blocate partes de iste pagina que non es secur.">
@@ -864,8 +893,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.permissions "Permissiones">
 
-<!-- LOCALIZATION NOTE (identity.permissions2): "set" as in "configured for this website" -->
-<!ENTITY identity.permissions2 "Configuration de permissiones">
+<!ENTITY identity.permissions3 "Permissos">
 <!ENTITY identity.permissionsEmpty "Tu non ha concedite ulle permission special a iste sito.">
 <!ENTITY identity.permissionsReloadHint "Il es possibile que tu debe recargar le pagina pro que le cambios se applica.">
 <!ENTITY identity.permissionsPreferences.tooltip "Aperir le preferentias del permissos">
@@ -878,7 +906,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      protections.etpMoreInfo.label: The text a screen reader speaks when focused on the info button. -->
 <!ENTITY protections.etpMoreInfo.label "Saper plus re Protection de traciamento meliorate">
 <!ENTITY protections.settings.label "Parametros de protection">
-<!ENTITY protections.report.label "Monstrar le reporto complete">
+<!ENTITY protections.showreport.label "Monstrar le reporto">
 <!-- LOCALIZATION NOTE:
      protections.siteNotWorking.label: The link to be clicked to open the sub-panel view
      protections.siteNotWorkingView.title: The heading/title of the sub-panel view -->
@@ -895,15 +923,23 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY protections.siteNotWorkingView.issueList.payments "Pagamentos">
 <!ENTITY protections.siteNotWorkingView.issueList.comments "Commentos">
 <!ENTITY protections.siteNotWorkingView.issueList.videos "Videos">
-<!ENTITY protections.siteNotWorkingView.siteStillBroken.label "Sito ancora corrupte post disactivation de protectiones?">
 <!ENTITY protections.siteNotWorkingView.sendReport.label "Inviar un reporto">
 
+<!-- LOCALIZATION NOTE (protections.blocking2.label, protections.notBlocking2.label, protections.notFound.label):
+     In the protections panel, Content Blocking category items are in three sections:
+     "Blocked" for categories being blocked in the current page,
+     "Allowed" for categories detected but not blocked in the current page, and
+     "None Detected" for categories not detected in the current page.
+     These strings are used in the header labels of each of these sections. -->
 <!ENTITY protections.blocking2.label "Blocate">
 <!ENTITY protections.notBlocking2.label "Permittite">
+<!ENTITY protections.notFound.label "Nulle detection">
+<!-- LOCALIZATION NOTE (protections.notBlocking.why.label, protections.notBlocking.why.etp*.tooltip):
+     The "Allowed" header also includes a "Why?" link that, when hovered, shows
+     a tooltip explaining why these items were not blocked in the page. -->
 <!ENTITY protections.notBlocking.why.label "Perque?">
 <!ENTITY protections.notBlocking.why.etpOn.tooltip "Blocar isto poterea rumper elementos de alcun sitos web. Sin traciatores, alcun buttones, formas, e campos pro accesso pote non functionar.">
-<!ENTITY protections.notBlocking.why.etpOff.tooltip "Disactivar protectiones consentira tote le traciatores sur iste sito. Pote alsi meliorar alcun functionalitates del sito web.">
-<!ENTITY protections.notFound.label "Nulle detection">
+<!ENTITY protections.notBlocking.why.etpOff.tooltip "Disactivar le protectiones permittera tote le traciatores sur iste sito. Isto poterea totevia meliorar alcun functionalitates del sito web.">
 <!ENTITY protections.socialMediaTrackers.label "Traciatores de medios social">
 <!ENTITY protections.crossSiteTrackingCookies.label "Le cookies de traciamento tra sitos">
 <!ENTITY protections.trackingContent.label "Contento traciante">
@@ -913,8 +949,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY protections.crossSiteTrackingCookies.description "Iste cookies te seque de sito a sito pro colliger datos re lo que tu face online. Illos es ponite per tertie partes tal como publicitarios e companias de analyse datos.">
 <!ENTITY protections.cryptominers.description "Minatores occulte usa potentia de calculo de tu systema pro cavar moneta digital. Scripts del minatores occulte exhauri tu batteria, relenta tu computator e pote accrescer le factura de tu energia.">
-<!ENTITY protections.fingerprinters.description "Identificatores collige parametros de tu navigator e computator pro crear un profilo de te. Per iste impression digital, illos pote traciar te inter le differente sitos web.">
-<!ENTITY protections.trackingContent.description "Sitos web pote cargar avisos publicitari externe, videos e altere contento que contine codification de traciamento. Blocar contento traciator pote adjutar a cargar sitos plus velocemente, ma alcun buttones, formas e campos de accesso pote non functionar.">
+<!ENTITY protections.fingerprinters.description "Dactylogrammatores collige parametros de tu navigator e computator pro crear un profilo de te. Per iste dactylogramma, illos pote traciar te inter differente sitos web.">
+<!ENTITY protections.trackingContent2.description "Sitos web pote cargar avisos publicitari externe, videos e altere contento con codification de traciamento. Blocar contento traciator pote adjutar a cargar sitos plus velocemente, ma alcun buttones, formas e campos de accesso pote non functionar.">
 <!ENTITY protections.socialMediaTrackers.description "Retes social placia traciatores sur altere sitos web pro sequer lo que tu face, vide e observa online. Iste consenti al companias de retes social de saper plus re te, ultra illo que tu comparti sur tu profilo de retes social.">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
@@ -954,18 +990,18 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection3.label "Traciatores">
 
 <!ENTITY contentBlocking.manageSettings.label "Gerer le blocage de contentos">
+<!ENTITY contentBlocking.manageSettings.accesskey "G">
+
+<!ENTITY contentBlocking.trackersView.label "Traciatores">
+<!ENTITY contentBlocking.trackersView.strictInfo.label "Pro blocar tote le traciatores, mitte le blocage de contento a “Stricte”.">
+
+<!ENTITY contentBlocking.cookies.label "Cookies">
+<!ENTITY contentBlocking.cookiesView.label "Cookies e datos de sitos">
 
 <!ENTITY contentBlocking.trackingProtection4.label "Contento traciante">
 
 <!ENTITY contentBlocking.manageSettings2.label "Gerer parametros de protection">
-<!ENTITY contentBlocking.manageSettings.accesskey "G">
-
-<!ENTITY contentBlocking.trackersView.label "Traciatores">
-
-<!ENTITY contentBlocking.trackersView.strictInfo.label "Pro blocar tote le traciatores dispone a “Stricte” le blocage del contento.">
-
-<!ENTITY contentBlocking.cookies.label "Cookies">
-<!ENTITY contentBlocking.cookiesView.label "Cookies e datos de sitos">
+<!ENTITY contentBlocking.manageSettings2.accesskey "t">
 
 <!ENTITY contentBlocking.socialblock.label "Traciatores de medios social">
 
@@ -981,8 +1017,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView.label "Reportar problemas">
 <!ENTITY contentBlocking.breakageReportView2.description "Le Blocada de contentos pote causar problemas con alcun sitos web. Quando tu reporta problemas, tu adjutara a render &brandShortName; melior pro totes. (Isto inviara a Mozilla un URL tam ben como informationes circa configurationes de tu navigator.)">
 <!ENTITY contentBlocking.breakageReportView.learnMore "Saper plus">
+
 <!ENTITY contentBlocking.breakageReportView.title "Reportar sito rupte">
-<!ENTITY contentBlocking.breakageReportView3.description "Blocar certe traciatores pote causar problemas con alcun sitos web. Reportar iste problemas adjuta render melior &brandShortName; pro totes. Le invio de iste reporto transmittera a Mozilla un URL e informationes re parametros de tu navigator.">
+<!ENTITY contentBlocking.breakageReportView3.description "Blocar certe traciatores pote causar problemas con alcun sitos web. Reportar iste problemas adjuta a meliorar &brandShortName; pro totes. Le invio de iste reporto transmittera a Mozilla un URL e informationes sur le configuration de tu navigator.">
 <!ENTITY contentBlocking.breakageReportView2.learnMore "Saper plus">
 <!ENTITY contentBlocking.breakageReportView.collection.url.label "URL">
 <!ENTITY contentBlocking.breakageReportView.collection.comments.label "Que problema ha tu? (Optional)">
@@ -1036,6 +1073,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY newTabControlled.disableButton.accesskey "I">
 
 <!ENTITY homepageControlled.message "Un extension cambiava lo que tu vide quando tu aperi tu pagina casa. Tu pote restaurar tu parametros si tu non vole iste modification.">
+
 <!ENTITY homepageControlled.header.message "Tu pagina principal cambiava.">
 <!ENTITY homepageControlled.keepButton.label "Mantener le cambios">
 <!ENTITY homepageControlled.keepButton.accesskey "M">

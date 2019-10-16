@@ -18,7 +18,7 @@ list-empty-available-updates =
 list-empty-recent-updates =
     .value = לא עדכנת תוספות כלשהן לאחרונה
 list-empty-find-updates =
-    .label = בדיקת עדכונים
+    .label = בדיקה אחר עדכונים
 list-empty-button =
     .label = מידע נוסף על תוספות
 install-addon-from-file =
@@ -68,7 +68,7 @@ cmd-install-addon =
 cmd-contribute =
     .label = תרומה
     .accesskey = ת
-    .tooltiptext = תרומה לפיתוח של תוספת זו
+    .tooltiptext = מתן תרומה לפיתוח תוספת זו
 discover-title = מה הן תוספות?
 discover-description = תוספות הן יישומים המאפשרים לך להתאים אישית את { -brand-short-name } עם סגנון  או פונקציונליות נוספים. נסה סרגל־צד חוסך זמן, מדווח מזג אוויר, או מראה שונה כדי להפוך את { -brand-short-name }  לשלך.
 discover-footer =
@@ -100,9 +100,11 @@ detail-private-browsing-description2 = כאשר אפשרות זו מופעלת, 
 # cannot be overridden by the user.
 detail-private-disallowed-label = לא מופעלת בחלונות פרטיים
 detail-private-disallowed-description = הרחבה זו לא פועלת בזמן גלישה פרטית. <label data-l10n-name="detail-private-browsing-learn-more">מידע נוסף</label>
+detail-private-disallowed-description2 = הרחבה זו לא פועלת בזמן גלישה פרטית. <a data-l10n-name="learn-more">מידע נוסף</a>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = דורשת גישה לחלונות פרטיים
-detail-private-required-description = להרחבה זו יש גישה לפעילויות  המקוונות שלך בזמן גלישה פרטית. <label data-l10n-name="detail-private-browsing-learn-more">מידע נוסף</label>
+detail-private-required-description = להרחבה זו יש גישה לפעילויות המקוונות שלך בזמן גלישה פרטית. <label data-l10n-name="detail-private-browsing-learn-more">מידע נוסף</label>
+detail-private-required-description2 = להרחבה זו יש גישה לפעילויות המקוונות שלך בזמן גלישה פרטית. <a data-l10n-name="learn-more">מידע נוסף</a>
 detail-private-browsing-on =
     .label = לאפשר
     .tooltiptext = הפעלה בגלישה פרטית
@@ -118,7 +120,7 @@ detail-repository =
 detail-repository-value =
     .value = { detail-repository.label }
 detail-check-for-updates =
-    .label = בדיקת עדכונים
+    .label = בדיקה אחר עדכונים
     .accesskey = ב
     .tooltiptext = בדיקת עדכונים לתוספת זו
 detail-show-preferences =
@@ -188,7 +190,7 @@ extensions-warning-update-security-enable =
 ## Strings connected to add-on updates
 
 extensions-updates-check-for-updates =
-    .label = בדיקת עדכונים
+    .label = בדיקה אחר עדכונים
     .accesskey = ב
 extensions-updates-view-updates =
     .label = הצגת עדכונים אחרונים
@@ -291,6 +293,10 @@ install-theme-button = התקנת ערכת נושא
 # the detailed add-on view is opened, from where the add-on can be managed.
 manage-addon-button = ניהול
 find-more-addons = חיפוש תוספות נוספות
+# This is a label for the button to open the "more options" menu, it is only
+# used for screen readers.
+addon-options-button =
+    .aria-label = אפשרויות נוספות
 
 ## Add-on actions
 
@@ -345,12 +351,17 @@ addon-detail-updates-label = עדכונים אוטומטיים
 addon-detail-updates-radio-default = ברירת מחדל
 addon-detail-updates-radio-on = פעיל
 addon-detail-updates-radio-off = כבוי
-addon-detail-update-check-label = בדיקת עדכונים
+addon-detail-update-check-label = בדיקה אחר עדכונים
 install-update-button = עדכון
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed =
     .title = מופעלת בחלונות פרטיים
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed2 =
+    .title = מופעלת בחלונות פרטיים
+    .aria-label = { addon-badge-private-browsing-allowed2.title }
 addon-detail-private-browsing-help = אם אפשרות זו מופעלת, להרחבה תהיה גישה לפעילויות המקוונות שלך בזמן גלישה פרטית. <a data-l10n-name="learn-more">מידע נוסף</a>
 addon-detail-private-browsing-allow = לאפשר
 addon-detail-private-browsing-disallow = לא לאפשר
@@ -359,6 +370,11 @@ addon-detail-private-browsing-disallow = לא לאפשר
 addon-badge-recommended =
     .title = מומלצת
     .alt = מומלצת
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended2 =
+    .title = ‏{ -brand-product-name } ממליץ רק על הרחבות שעומדות בתקנים שלנו לאבטחה וביצועים
+    .aria-label = { addon-badge-recommended2.title }
 available-updates-heading = עדכונים זמינים
 recent-updates-heading = עדכונים אחרונים
 release-notes-loading = בטעינה…

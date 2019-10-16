@@ -253,6 +253,62 @@ applications-type-column =
 applications-action-column =
     .label = করণীয়
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } ফাইল
+applications-action-save =
+    .label = ফাইল সংরক্ষণ করুন
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = { $app-name } ব্যবহার করা হবে
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = { $app-name } ব্যবহার করা হবে (ডিফল্ট)
+applications-use-other =
+    .label = অন্য অ্যাপ্লিকেশন ব্যবহার করা হবে…
+applications-select-helper = সহায়ক অ্যাপ্লিকেশন নির্বাচন করুন
+applications-manage-app =
+    .label = অ্যাপ্লিকেশনের বিবরণ…
+applications-always-ask =
+    .label = সর্বদা জিজ্ঞাসা কর
+applications-type-pdf = বহনযোগ্য ডকুমেন্ট ফরম্যাট (পিডিএফ)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = { $plugin-name } ব্যবহার করা হবে ({ -brand-short-name } তে)
+applications-preview-inapp =
+    .label = { -brand-short-name }-র ভেতর প্রদর্শন করা হবে
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = ডিজিটাল অধিকার ব্যবস্থাপনা (DRM) কন্টেন্ট
 play-drm-content =
     .label = DRM-নিয়ন্ত্রিত কন্টেন্ট প্লে করুন
@@ -282,6 +338,10 @@ update-enable-search-update =
     .label = স্বয়ংক্রিয়ভাবে অনুসন্ধান ইঞ্জিন হালনাগাদ হবে
     .accesskey = e
 update-pref-write-failure-title = অকৃতকার্য লিখুন।
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = পছন্দ সংরক্ষণ করতে ব্যর্থ। ফাইল রাইট করা যায়নি: { $path }
+update-setting-write-failure-title = পছন্দগুলোর হালনাগাদ সংরক্ষণ করার সময় ত্রূটি
 update-in-progress-title = হালনাগাদের অগ্রগতি
 update-in-progress-message = আপনি কি { -brand-short-name } এই হালনাগাদে চালিয়ে যেতে চান?
 update-in-progress-ok-button = &বাতিল
@@ -327,9 +387,16 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = টাইপ আরম্ভ করলে তৎক্ষণাৎ অনুসন্ধান শুরু করা হবে
     .accesskey = x
+browsing-picture-in-picture-toggle-enabled =
+    .label = পিকচার-ইন-পিকচার ভিডিও নিয়ন্ত্রন চালু করুন
+    .accesskey = E
+browsing-picture-in-picture-learn-more = আরও জানুন
 browsing-cfr-recommendations =
     .label = আপনার ব্রাউজ হিসাবে প্রস্তাবিত এক্সটেনশন
     .accesskey = R
+browsing-cfr-features =
+    .label = ব্রাউজ করার সাথে সাথে ফিচারের পরামর্শ  দিন
+    .accesskey = f
 browsing-cfr-recommendations-learn-more = আরও জানুন
 
 ## General Section - Proxy
@@ -429,6 +496,7 @@ search-bar-shown =
     .label = টুলবারে অনুসন্ধান বার যুক্ত করুন
 search-engine-default-header = ডিফল্ট অনুসন্ধান ইঞ্জিন
 search-engine-default-desc = ঠিকানা বার এবং অনুসন্ধান বারে ব্যবহারের জন্য ডিফল্ট অনুসন্ধান ইঞ্জিন পছন্দ করুন।
+search-suggestions-header = অনুসন্ধান প্রস্তাবনা
 search-suggestions-option =
     .label = অনুসন্ধান পরামর্শ প্রদান করুন
     .accesskey = s
@@ -478,6 +546,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = আপনার ওয়েব আপনার সঙ্গে নিন
 sync-signedout-description = আপনার সকল ডিভাইস জুড়ে আপনার বুকমার্ক, ইতিহাস, ট্যাব, পাসওয়ার্ড, অ্যাড টার্ন, এবং পছন্দ সিংক্রোনাইজ করুন.
 sync-signedout-account-title = { -fxaccount-brand-name } এর সাথে কানেক্ট করো
@@ -498,11 +570,17 @@ sync-mobile-promo = Firefox ডাউনলোড <img data-l10n-name="android-i
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = প্রোফাইলের ছবি পরিবর্তন করুন
 sync-disconnect =
     .label = বিচ্ছিন্ন…
     .accesskey = D
+sync-sign-out =
+    .label = সাইন আউট...
+    .accesskey = g
 sync-manage-account = অ্যাকাউন্ট ব্যবস্থাপনা
     .accesskey = o
 sync-signedin-unverified = { $email } যাচাই কৃত না
@@ -518,6 +596,31 @@ sync-sign-in =
     .accesskey = g
 sync-signedin-settings-header = সিঙ্ক সেটিং
 sync-signedin-settings-desc = { -brand-short-name } দিয়ে আপনার ডিভাইসে কি কি সিঙ্ক্রোনাইজ করা হবে তা নির্বাচন করুন।
+
+## Sync section - enabling or disabling sync.
+
+prefs-sync-now =
+    .labelnotsyncing = এখনই সিঙ্ক করুন
+    .accesskeynotsyncing = N
+    .labelsyncing = সিঙ্ক হচ্ছে…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-bookmarks = বুকমার্ক
+sync-currently-syncing-history = ইতিহাস
+sync-currently-syncing-tabs = ট্যাব খুলুন
+sync-currently-syncing-logins-passwords = লগইন ও পাসওয়ার্ড
+sync-currently-syncing-addresses = ঠিকানা
+sync-currently-syncing-creditcards = ক্রেডিট কার্ড
+sync-currently-syncing-addons = অ্যাড-অন
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] অপশন
+       *[other] পছন্দসমূহ
+    }
+
+## The "Choose what to sync" dialog.
+
 sync-engine-bookmarks =
     .label = বুকমার্ক
     .accesskey = m
@@ -531,6 +634,10 @@ sync-engine-tabs =
 sync-engine-logins =
     .label = লগইন
     .tooltiptext = আপনার সংরক্ষিত ব্যবহারকারী নাম ও পাসওয়ার্ড
+    .accesskey = L
+sync-engine-logins-passwords =
+    .label = লগইন ও পাসওয়ার্ড
+    .tooltiptext = ব্যবহারকারী নাম ও পাসওয়ার্ড যা আপনি সংরক্ষণ করেছেন
     .accesskey = L
 sync-engine-addresses =
     .label = ঠিকানা
@@ -552,6 +659,9 @@ sync-engine-prefs =
         }
     .tooltiptext = সাধারণ, গোপনীয়তা এবং নিরাপত্তা সেটিং এ আপনি যা পরিবর্তন করেছেন
     .accesskey = s
+
+## The device name controls.
+
 sync-device-name-header = ডিভাইসের নাম
 sync-device-name-change =
     .label = ডিভাইসের নাম পরিবর্তন…
@@ -581,6 +691,10 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = ব্যতিক্রম...
     .accesskey = x
+forms-generate-passwords =
+    .label = শক্তিশালী পাসওয়ার্ডের পরামর্শ দিন এবং তৈরি করুন
+    .accesskey = u
+forms-breach-alerts-learn-more-link = আরও জানুন
 forms-fill-logins-and-passwords =
     .label = লগইন এবং পাসওয়ার্ড সয়ংক্রিয়ভাবে পূরণ করুন
     .accesskey = i
@@ -593,6 +707,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = মাস্টার পাসওয়ার্ড পরিবর্তন...
     .accesskey = M
+forms-master-pw-fips-title = আপনি বর্তমানে FIPS মোড ব্যবহার করছেন। FIPS-এর ক্ষেত্রে মাস্টার পাসওয়ার্ড ফাঁকা রাখা যাবে না।
+forms-master-pw-fips-desc = পাসওয়ার্ড পরিবর্তন করতে ব্যর্থ
 
 ## Privacy Section - History
 
@@ -660,6 +776,10 @@ sitedata-block-desc = টাইপ ব্লক করা হয়েছে
     .accesskey = T
 sitedata-option-block-trackers =
     .label = তৃতীয় পক্ষের ট্র্যাকার
+sitedata-option-block-cross-site-trackers =
+    .label = ক্রস সাইট ট্র্যাকার
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = ক্রস সাইট এবং সোশ্যাল মিডিয়া ট্র্যাকার
 sitedata-option-block-unvisited =
     .label = অদেখা ওয়েবসাইট থেকে কুকি
 sitedata-option-block-all-third-party =
@@ -694,6 +814,7 @@ addressbar-suggestions-settings = অনুসন্ধান ইঞ্জিন
 ## Privacy Section - Content Blocking
 
 content-blocking-header = কনটেন্ট ব্লকিং
+content-blocking-enhanced-tracking-protection = বর্ধিত ট্র্যাকিং সুরক্ষা
 content-blocking-learn-more = আরও জানুন
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -707,13 +828,42 @@ content-blocking-setting-custom =
     .label = স্বনির্ধারিত
     .accesskey = C
 content-blocking-standard-desc = সুরক্ষা এবং সমন্বয়ের মাঝে ভারসাম্য রাখার জন্য। কিছু ট্র্যাকার অনুমোদন করে যাতে ওয়েবসাইট ঠিকমতো কাজ করে।
+content-blocking-strict-description = শক্তিশালী নিরাপত্তা দেয় , কিন্তু কিছু সাইট ঠিকঠাক কাজ নাও করতে পারে ।
 content-blocking-custom-desc = নির্বাচন করুন কি ব্লক করবেন
 content-blocking-private-trackers = পরিচিত ট্র্যাকার শুধুমাত্র ব্যক্তিগত উইন্ডো তে
 content-blocking-third-party-cookies = তৃতীয় পক্ষের ট্র্যাকিং কুকি
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = প্রমিত
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = প্রখর
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = স্বনির্ধারিত
+    .accesskey = C
+
+
+
+content-blocking-etp-standard-desc = সুরক্ষা এবং পারফরমেন্সের জন্য ভারসাম্যযুক্ত। পাতাগুলো সাধারনভাবে লোড হবে।
+content-blocking-etp-strict-desc = শক্তিশালী নিরাপত্তা দেয় , কিন্তু কিছু সাইট বা কন্টেন্ট ঠিকঠাক কাজ নাও করতে পারে ।
+content-blocking-etp-custom-desc = কোন ট্র্যাকার এবং স্ক্রিপ্টগুলো ব্লক করতে হবে তা বাছাই করুন।
+content-blocking-private-windows = ব্যক্তিগত উইন্ডোতে ট্রাকিং সুরক্ষা ব্যবহার করুন
+content-blocking-cross-site-tracking-cookies = ক্রস-সাইট ট্র্যাকিং কুকিজ
+content-blocking-social-media-trackers = সোশ্যাল মিডিয়া ট্র্যাকার
 content-blocking-all-cookies = সব কুকি
+content-blocking-unvisited-cookies = অদেখা ওয়েবসাইটের কুকি
 content-blocking-all-windows-trackers = সব উইন্ডোতে পরিচিত ট্র্যাকার
+content-blocking-all-windows-tracking-content = সমস্ত উইন্ডোতে কন্টেন্ট ট্র্যাকিং
 content-blocking-all-third-party-cookies = সকল তৃতীয়-পক্ষের কুকিগুলো
+content-blocking-cryptominers = ক্রিপ্টোমাইনার
+content-blocking-fingerprinters = ফিঙ্গারপ্রিন্টারস
 content-blocking-warning-title = সাধুবাদ জানাই!
+content-blocking-warning-description = কন্টেন্ট ব্লক করার ফলে কিছু ওয়েবসাইট ঠিকঠাক কাজ নাও করতে পারে। আপনার বিশ্বস্ত সাইটের জন্য ব্লকিং বন্ধ করা সহজ।
 content-blocking-learn-how = শিখুন কিভাবে হয়
 content-blocking-warning-learn-how = শিখুন কিভাবে হয়
 content-blocking-reload-description = এই পরিবর্তনগুলি প্রয়োগ করার জন্য আপনাকে আপনার ট্যাব পুনরায় লোড করতে হবে।
@@ -723,6 +873,9 @@ content-blocking-reload-tabs-button =
 content-blocking-trackers-label =
     .label = ট্র্যাকার
     .accesskey = ট
+content-blocking-tracking-content-label =
+    .label = ট্র্যাকিং কন্টেন্ট
+    .accesskey = T
 content-blocking-tracking-protection-option-all-windows =
     .label = সবগুলো উইন্ডোতে
     .accesskey = A

@@ -153,7 +153,7 @@ menu-view-full-screen =
     .label = Połna wobrazowka
     .accesskey = P
 
-##
+
 
 menu-view-show-all-tabs =
     .label = Wšě rajtarki pokazać
@@ -166,7 +166,7 @@ menu-view-bidi-switch-page-direction =
 
 menu-history =
     .label = Historija
-    .accesskey = s
+    .accesskey = H
 menu-history-show-all-history =
     .label = Wšu historiju pokazać
 menu-history-clear-recent-history =
@@ -202,7 +202,7 @@ menu-bookmarks-mobile =
 
 menu-tools =
     .label = Nastroje
-    .accesskey = N
+    .accesskey = s
 menu-tools-downloads =
     .label = Sćehnjenja
     .accesskey = h
@@ -212,11 +212,20 @@ menu-tools-addons =
 menu-tools-sync-sign-in =
     .label = Pola { -sync-brand-short-name } přizjewić…
     .accesskey = P
+menu-tools-fxa-sign-in =
+    .label = Přizjewće so pola { -brand-product-name }…
+    .accesskey = e
+menu-tools-turn-on-sync =
+    .label = { -sync-brand-short-name } zmóžnić
+    .accesskey = m
 menu-tools-sync-now =
     .label = Nětko synchronizować
     .accesskey = N
 menu-tools-sync-re-auth =
     .label = Zaso z { -sync-brand-short-name } zwjazać…
+    .accesskey = Z
+menu-tools-fxa-re-auth =
+    .label = Zaso z { -brand-product-name } zwjazać…
     .accesskey = Z
 menu-tools-web-developer =
     .label = Webwuwiwar

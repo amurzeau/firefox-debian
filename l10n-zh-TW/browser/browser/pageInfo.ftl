@@ -14,8 +14,6 @@ select-all =
 menu-select-all =
     .label = 全選
     .accesskey = A
-close-window =
-    .key = A
 close-dialog =
     .key = w
 general-tab =
@@ -121,6 +119,8 @@ security-site-data-cookies-only = 有，僅 Cookie
 security-site-data-no = 無
 image-size-unknown = 未知
 not-set-verified-by = 未指定
+page-info-not-specified =
+    .value = 未指定
 not-set-alternative-text = 未指定
 not-set-date = 未指定
 media-img = 圖片
@@ -143,6 +143,8 @@ general-quirks-mode =
 general-strict-mode =
     .value = 標準遵循模式
 security-no-owner = 這個網站沒有提供擁有者資訊。
+page-info-security-no-owner =
+    .value = 這個網站沒有提供擁有者資訊。
 media-select-folder = 請選擇要儲存圖片的資料夾
 media-unknown-not-cached =
     .value = 未知（未快取）
@@ -201,7 +203,7 @@ media-image-type =
 #   $scaledx (number) - The scaled horizontal size of an image
 #   $scaledy (number) - The scaled vertical size of an image
 media-dimensions-scaled =
-    .value = { $dimx }px × { $dimy }px (縮放為 { $scaledx }px × { $scaledy }px)
+    .value = { $dimx }px × { $dimy }px（縮放為 { $scaledx }px × { $scaledy }px）
 # This string is used to display the size of an image in pixels
 # Variables:
 #   $dimx (number) - The horizontal size of an image

@@ -36,8 +36,7 @@ menu-menuitem-preferences =
         [windows] Настройки
        *[other] Настройки
     }
-menu-menuitem-feedback = Отправить отзыв
-menu-menuitem-faq = Часто задаваемые вопросы
+about-logins-menu-menuitem-help = Помощь
 menu-menuitem-android-app = { -lockwise-brand-short-name } для Android
 menu-menuitem-iphone-app = { -lockwise-brand-short-name } для iPhone и iPad
 
@@ -51,16 +50,23 @@ login-list-count =
         [few] { $count } логина
        *[many] { $count } логинов
     }
-login-list-sort-label-text = Сортировать по:
+login-list-sort-label-text = Сортировать:
 login-list-name-option = В алфавитном порядке
 login-list-breached-option = Взломанные сайты
 login-list-last-changed-option = По последнему изменению
 login-list-last-used-option = По последнему использованию
 login-list-intro-title = Логины не найдены
 login-list-intro-description = Когда вы сохраните пароль в { -brand-product-name }, он появится здесь.
+about-logins-login-list-empty-search-title = Логины не найдены
+about-logins-login-list-empty-search-description = Результатов, подходящих под ваш запрос, не найдено
 login-list-item-title-new-login = Новый логин
 login-list-item-subtitle-new-login = Введите свои учётные данные
 login-list-item-subtitle-missing-username = (нет имени пользователя)
+about-logins-list-item-warning-icon =
+    .alt = Значок предупреждения
+    .title = Атакованный сайт
+about-logins-list-item-breach-icon =
+    .title = Атакованный сайт
 
 ## Introduction screen
 
@@ -68,7 +74,7 @@ login-intro-heading = Ищите сохранённые логины? Настр
 login-intro-description = Если вы сохранили ваши логины в { -brand-product-name } на другом устройстве, то вот как получить к ним доступ здесь:
 login-intro-instruction-fxa = Создайте или войдите в ваш { -fxaccount-brand-name } на устройстве, где сохранены ваши логины
 login-intro-instruction-fxa-settings = Убедитесь, что вы установили флажок «Логины» в настройках { -sync-brand-short-name(case: "genitive") }
-login-intro-instruction-faq = Посетите <a data-l10n-name="faq">часто задаваемые вопросы</a> по { -lockwise-brand-short-name } для получения помощи
+about-logins-intro-instruction-help = Посетите <a data-l10n-name="help-link">Поддержку { -lockwise-brand-short-name }</a> для получения помощи
 
 ## Login
 
@@ -78,10 +84,9 @@ login-item-delete-button = Удалить
 login-item-origin-label = Адрес веб-сайта
 login-item-origin =
     .placeholder = https://www.example.com
-login-item-open-site-button = Открыть
 login-item-username-label = Имя пользователя
-login-item-username =
-    .placeholder = имя@example.com
+about-logins-login-item-username =
+    .placeholder = (нет имени пользователя)
 login-item-copy-username-button-text = Копировать
 login-item-copied-username-button-text = Скопировано!
 login-item-password-label = Пароль
@@ -95,7 +100,7 @@ login-item-save-changes-button = Сохранить изменения
 login-item-save-new-button = Сохранить
 login-item-cancel-button = Отмена
 login-item-time-changed = Последнее изменение: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
-login-item-time-created = Создано: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
+login-item-time-created = Создан: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
 login-item-time-used = Последнее использование: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
 
 ## Master Password notification
@@ -135,3 +140,18 @@ breach-alert-text = С момента последнего обновления 
 breach-alert-link = Узнать больше об этой утечке.
 breach-alert-dismiss =
     .title = Закрыть это уведомление
+
+## Error Messages
+
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login = Запись для { $loginTitle } с таким именем пользователя уже существует.
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = Запись для { $loginTitle } с таким именем пользователя уже существует. <a data-l10n-name="duplicate-link">Перейти к существующей записи?</a>
+# This is a generic error message.
+about-logins-error-message-default = При попытке сохранить этот пароль произошла ошибка.

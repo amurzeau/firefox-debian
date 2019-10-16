@@ -15,6 +15,11 @@ login-app-promo-apple =
 login-filter =
     .placeholder = লগইন অনুসন্ধান
 create-login-button = নতুন লগইন তৈরি করুন
+# This string is used as alternative text for favicon images.
+# Variables:
+#   $title (String) - The title of the website associated with the favicon.
+login-favicon =
+    .alt = { $title } এর জন্য ফ্যাভিকন
 fxaccounts-sign-in-text = আপনার অন্যান্য ডিভাইসে আপনার পাসওয়ার্ড পান
 fxaccounts-sign-in-button = { -sync-brand-short-name } এ সাইন ইন করুন
 fxaccounts-avatar-button =
@@ -31,11 +36,14 @@ menu-menuitem-preferences =
         [windows] অপশন
        *[other] পছন্দসমূহ
     }
-menu-menuitem-feedback = প্রতিক্রিয়া জানান
-menu-menuitem-faq = প্রায়শই জিজ্ঞাসিত প্রশ্ন
+about-logins-menu-menuitem-help = সহায়তা
+menu-menuitem-android-app = Android জন্য { -lockwise-brand-short-name }
+menu-menuitem-iphone-app = iPhone ও iPad এর জন্য { -lockwise-brand-short-name }
 
 ## Login List
 
+login-list =
+    .aria-label = অনুসন্ধানের সাথে লগইন মিলেছে
 login-list-count =
     { $count ->
         [one] { $count } লগ ইন
@@ -43,16 +51,26 @@ login-list-count =
     }
 login-list-sort-label-text = ক্রমানুসার:
 login-list-name-option = নাম (A-Z)
+login-list-breached-option = ভাঙা ওয়েবসাইট
 login-list-last-changed-option = সর্বশেষ পরিবর্তিত
 login-list-last-used-option = সর্বশেষ ব্যবহৃত
 login-list-intro-title = কোন লগ ইন পাওয়া যায়নি
 login-list-intro-description = আপনি যখন { -brand-product-name } এ পাসওয়ার্ড সরক্ষণ করবেন, তা এখানে প্রদর্শিত হবে।
+about-logins-login-list-empty-search-title = কোনও লগইন পাওয়া যায়নি
+about-logins-login-list-empty-search-description = আপনার অনুসন্ধানের সাথে কোনও কিছু মিলছে না।
 login-list-item-title-new-login = নতুন লগইন
 login-list-item-subtitle-missing-username = (কোনও ব্যবহারকারীর নাম নেই)
+about-logins-list-item-warning-icon =
+    .alt = সতর্কতা আইকন
+    .title = ভাঙা ওয়েবসাইট
+about-logins-list-item-breach-icon =
+    .title = ভাঙা ওয়েবসাইট
 
 ## Introduction screen
 
 login-intro-heading = আপনার সংরক্ষিত লগইন সন্ধান করছেন? { -sync-brand-short-name } সেট আপ করুন।
+login-intro-instruction-fxa-settings = নিশ্চিত করুন যে আপনি { -sync-brand-short-name } সেটিং এ লগইন চেকবক্সটি নির্বাচন করেছেন
+about-logins-intro-instruction-help = আরও সহায়তার জন্য <a data-l10n-name="help-link">{ -lockwise-brand-short-name } দেখুন
 
 ## Login
 
@@ -62,10 +80,9 @@ login-item-delete-button = মুছে ফেলুন
 login-item-origin-label = ওয়েবসাইটের ঠিকানা
 login-item-origin =
     .placeholder = https://www.example.com
-login-item-open-site-button = চালু করুন
 login-item-username-label = ব্যবহারকারীর নাম
-login-item-username =
-    .placeholder = name@example.com
+about-logins-login-item-username =
+    .placeholder = (কোনও ব্যবহারকারীর নাম নেই)
 login-item-copy-username-button-text = অনুলিপি
 login-item-copied-username-button-text = অনুলিপি করা হয়েছে!
 login-item-password-label = পাসওয়ার্ড
@@ -84,6 +101,7 @@ login-item-time-used = সর্বশেষ ব্যবহৃত: { DATETIME($
 
 ## Master Password notification
 
+master-password-notification-message = সংরক্ষিত লগইন এবং পাসওয়ার্ড দেখতে দয়া করে আপনার মাস্টার পাসওয়ার্ড দিন
 master-password-reload-button =
     .label = লগ ইন
     .accesskey = L
@@ -93,6 +111,13 @@ master-password-reload-button =
 confirmation-dialog-cancel-button = বাতিল
 confirmation-dialog-dismiss-button =
     .title = বাতিল
+enable-password-sync-preferences-button =
+    .label =
+        { PLATFORM() ->
+            [windows] অপশনের জন্য { -sync-brand-short-name } দেখুন
+           *[other] পছন্দসমূহের জন্য { -sync-brand-short-name } দেখুন
+        }
+    .accesskey = v
 confirm-delete-dialog-title = লগইন মুছে দেওয়া হবে?
 confirm-delete-dialog-message = এই পরিবর্তনটি অপরিবর্তনীয়!
 confirm-delete-dialog-confirm-button = মুছে ফেলুন
@@ -104,3 +129,8 @@ confirm-discard-changes-dialog-confirm-button = বাতিল
 
 breach-alert-dismiss =
     .title = সতর্ক করা বন্ধ করুন
+
+## Error Messages
+
+# This is a generic error message.
+about-logins-error-message-default = এই পাসওয়ার্ডটি সংরক্ষণ করার চেষ্টা করার সময় একটি ত্রুটি ঘটেছে।

@@ -49,6 +49,9 @@ menu-file-print-preview =
 menu-file-print =
     .label = چاپ...
     .accesskey = چ
+menu-file-import-from-another-browser =
+    .label = وارد کردن از مرورگری دیگر
+    .accesskey = و
 menu-file-go-offline =
     .label = آفلاین کار کن
     .accesskey = ک
@@ -150,7 +153,7 @@ menu-view-full-screen =
     .label = تمام‌صفحه
     .accesskey = ت
 
-##
+
 
 menu-view-show-all-tabs =
     .label = نمایش همه زبانه‌ها
@@ -209,12 +212,21 @@ menu-tools-addons =
 menu-tools-sync-sign-in =
     .label = ورود به { -sync-brand-short-name }…
     .accesskey = Y
+menu-tools-fxa-sign-in =
+    .label = ورود به { -brand-product-name }ٕ‍ٕ…
+    .accesskey = g
+menu-tools-turn-on-sync =
+    .label = روشن کردن { -sync-brand-short-name } ...
+    .accesskey = n
 menu-tools-sync-now =
     .label = انجام هم‌گام‌سازی
     .accesskey = ه
 menu-tools-sync-re-auth =
     .label = اتصال مجدد به { -sync-brand-short-name }…
     .accesskey = ت
+menu-tools-fxa-re-auth =
+    .label = اتصال مجدد به { -brand-product-name }…
+    .accesskey = R
 menu-tools-web-developer =
     .label = توسعه‌دهنده وب
     .accesskey = و

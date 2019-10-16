@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!--LOCALIZATION NOTE messengercompose.dtd Main UI for message composition -->
-<!ENTITY msgComposeWindow.title "Redactare mesaj: (fără subiect)">
+<!ENTITY msgComposeWindow.title "Redactează mesajul: (fără subiect)">
 
 <!-- File Menu -->
 <!ENTITY fileMenu.label "Fișier">
@@ -16,7 +16,7 @@
 <!ENTITY newMessage.accesskey "M">
 <!ENTITY newContact.label "Contact în agendă…">
 <!ENTITY newContact.accesskey "C">
-<!ENTITY attachMenu.label "Anexează">
+<!ENTITY attachMenu.label "Atașează">
 <!ENTITY attachMenu.accesskey "x">
 <!ENTITY attachFileCmd.label "Fișier(e)…">
 <!ENTITY attachFileCmd.accesskey "F">
@@ -40,8 +40,8 @@
 <!ENTITY saveAsCmd.accesskey "c">
 <!ENTITY saveAsFileCmd.label "Fișier…">
 <!ENTITY saveAsFileCmd.accesskey "F">
-<!ENTITY saveAsDraftCmd.label "Ciornă">
-<!ENTITY saveAsDraftCmd.accesskey "C">
+<!ENTITY saveAsDraftCmd.label "Mesaj nefinalizat">
+<!ENTITY saveAsDraftCmd.accesskey "D">
 <!ENTITY saveAsTemplateCmd.label "Șablon">
 <!ENTITY saveAsTemplateCmd.accesskey "l">
 <!ENTITY sendNowCmd.label "Trimite acum">
@@ -217,7 +217,7 @@
 <!ENTITY addressBookCmd.label "Agendă de contacte">
 <!ENTITY addressBookCmd.accesskey "A">
 <!ENTITY addressBookCmd.key "B">
-<!ENTITY accountManagerCmd2.label "Setările conturilor">
+<!ENTITY accountManagerCmd2.label "Setări pentru conturi">
 <!ENTITY accountManagerCmd2.accesskey "c">
 <!ENTITY accountManagerCmdUnix2.accesskey "S">
 <!ENTITY preferencesCmd2.label "Opțiuni">
@@ -279,23 +279,23 @@
 <!ENTITY attachmentBucketCloseButton.tooltip "Ascunde panoul atașamentelor">
 
 <!-- Format Toolbar, imported from editorAppShell.xul -->
-<!ENTITY SmileButton.tooltip "Inserează o figură zâmbitoare">
+<!ENTITY SmileButton.tooltip "Inserează un chip zâmbitor">
 <!ENTITY smiley1Cmd.label "Zâmbet">
-<!ENTITY smiley2Cmd.label "Scârbit">
-<!ENTITY smiley3Cmd.label "Clipit">
+<!ENTITY smiley2Cmd.label "Încruntat">
+<!ENTITY smiley3Cmd.label "Făcând cu ochiul">
 <!ENTITY smiley4Cmd.label "Cu limba scoasă">
 <!ENTITY smiley5Cmd.label "Râzând">
 <!ENTITY smiley6Cmd.label "Rușinat">
-<!ENTITY smiley7Cmd.label "Nedecis">
-<!ENTITY smiley8Cmd.label "Surpriză">
+<!ENTITY smiley7Cmd.label "Nehotărât">
+<!ENTITY smiley8Cmd.label "Surprins">
 <!ENTITY smiley9Cmd.label "Sărut">
 <!ENTITY smiley10Cmd.label "Țipăt">
-<!ENTITY smiley11Cmd.label "Șmecher">
-<!ENTITY smiley12Cmd.label "Gură aurită">
-<!ENTITY smiley13Cmd.label "Ar trebui să taci">
-<!ENTITY smiley14Cmd.label "Nevinovat">
+<!ENTITY smiley11Cmd.label "Cool">
+<!ENTITY smiley12Cmd.label "Cu bani în gură">
+<!ENTITY smiley13Cmd.label "Cu piciorul în gură">
+<!ENTITY smiley14Cmd.label "Inocent">
 <!ENTITY smiley15Cmd.label "Plânset">
-<!ENTITY smiley16Cmd.label "Buze pecetluite">
+<!ENTITY smiley16Cmd.label "Cu buzele pecetluite">
 
 <!-- Message Pane Context Menu -->
 <!ENTITY spellCheckNoSuggestions.label "Nicio sugestie găsită">

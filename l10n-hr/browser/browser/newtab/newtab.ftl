@@ -83,6 +83,16 @@ newtab-menu-delete-history = Obriši iz povijesti
 newtab-menu-save-to-pocket = Spremi u { -pocket-brand-name }
 newtab-menu-delete-pocket = Izbriši iz { -pocket-brand-name }a
 newtab-menu-archive-pocket = Arhiviraj u { -pocket-brand-name }
+newtab-menu-show-privacy-info = Naši sponzori i tvoja privatnost
+
+## Message displayed in a modal window to explain privacy and provide context for sponsored content.
+
+newtab-privacy-modal-button-done = Gotovo
+newtab-privacy-modal-header = Tvoja privatnost je važna.
+newtab-privacy-modal-link = Saznaj kako privatnost funkcionira na novoj kartici
+
+
+
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = Ukloni zabilješku
 # Bookmark is a verb here.
@@ -116,6 +126,7 @@ newtab-menu-open-file = Otvori datoteku
 
 newtab-label-visited = Posjećeno
 newtab-label-bookmarked = Zabilježeno
+newtab-label-removed-bookmark = Zabilješka uklonjena
 newtab-label-recommended = Popularno
 newtab-label-saved = Spremljeno u { -pocket-brand-name }
 newtab-label-download = Preuzeto
@@ -128,8 +139,8 @@ newtab-label-download = Preuzeto
 ## meant as a call to action for the given section.
 
 newtab-section-menu-remove-section = Ukloni odjel
-newtab-section-menu-collapse-section = Skupi odjel
-newtab-section-menu-expand-section = Proširi odjel
+newtab-section-menu-collapse-section = Sklopi odjeljak
+newtab-section-menu-expand-section = Rasklopi odjeljak
 newtab-section-menu-manage-section = Upravljanje odjelom
 newtab-section-menu-manage-webext = Upravljanje dodatkom
 newtab-section-menu-add-topsite = Dodaj najbolju stranicu
@@ -141,9 +152,9 @@ newtab-section-menu-privacy-notice = Politika privatnosti
 ## Section aria-labels
 
 newtab-section-collapse-section-label =
-    .aria-label = Skupi odjel
+    .aria-label = Sklopi odjeljak
 newtab-section-expand-section-label =
-    .aria-label = Proširi odjel
+    .aria-label = Rasklopi odjeljak
 
 ## Section Headers.
 
@@ -155,11 +166,11 @@ newtab-section-header-pocket = Preporučeno od { $provider }
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
-newtab-empty-section-highlights = Započnite pretraživati i pokazat ćemo vam neke od izvrsnih članaka, videa i drugih web stranica prema vašim nedavno posjećenim stranicama ili zabilješkama.
+newtab-empty-section-highlights = Započni pregledavanje i pokazat ćemo ti neke od izvrsnih članaka, videa i drugih web stranica prema tvojim nedavno posjećenim stranicama ili zabilješkama.
 # Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 # Variables:
 #  $provider (String): Name of the content provider for this section, e.g "Pocket".
-newtab-empty-section-topstories = Provjerite kasnije za više najpopularnijih priča od { $provider }. Ne možete čekati? Odaberite popularne teme kako biste pronašli više kvalitetnih priča s cijelog weba.
+newtab-empty-section-topstories = Provjeri kasnije daljnje najpopularnije priče od { $provider }. Ne možeš dočekati? Odaberi popularnu temu za pronalaženje daljnjih kvalitetnih priča s cijelog weba.
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
@@ -176,8 +187,8 @@ newtab-discovery-empty-section-topstories-timed-out = Uh! Skoro smo učitali ova
 newtab-pocket-read-more = Popularne teme:
 newtab-pocket-more-recommendations = Više preporuka
 newtab-pocket-how-it-works = Kako ovo funkcionira
-newtab-pocket-cta-button = Nabavite { -pocket-brand-name }
-newtab-pocket-cta-text = Spremite priče koje vam se sviđaju u { -pocket-brand-name } i napajajte vaš um s vrhunskim štivom.
+newtab-pocket-cta-button = Nabavi { -pocket-brand-name }
+newtab-pocket-cta-text = Spremi priče koje ti se sviđaju u { -pocket-brand-name } i napuni si mozak vrhunskim štivom.
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.

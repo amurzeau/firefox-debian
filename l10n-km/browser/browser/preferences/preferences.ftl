@@ -216,6 +216,62 @@ applications-type-column =
 applications-action-column =
     .label = អំពើ
     .accesskey = ព
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = ឯកសារ { $extension }
+applications-action-save =
+    .label = រក្សា​ទុក​ឯកសារ
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = ប្រើ { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = ប្រើ { $app-name } (លំនាំដើម)
+applications-use-other =
+    .label = ប្រើ​ផ្សេងទៀត…
+applications-select-helper = ជ្រើស​កម្មវិធី​ជំនួយ
+applications-manage-app =
+    .label = សេចក្ដី​លម្អិត​អំពី​កម្មវិធី…
+applications-always-ask =
+    .label = សួរ​ជានិច្ច
+applications-type-pdf = ទ្រង់ទ្រាយ​ឯកសារ​ចល័ត (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = ប្រើ { $plugin-name } (ក្នុង { -brand-short-name })
+applications-preview-inapp =
+    .label = មើល​ជាមុន​ក្នុង { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 drm-content-header = ខ្លឹមសារ​ការគ្រប់គ្រងសិទ្ធិឌីជីថល (DRM)
 play-drm-content =
     .label = លេងខ្លឹមសារ​ដែលគ្រប់គ្រងដោយ DRM
@@ -491,6 +547,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = ផ្លាស់ប្ដូរ​ពាក្យ​សម្ងាត់​មេ…
     .accesskey = M
+forms-master-pw-fips-title = បច្ចុប្បន្ន​នេះ អ្នក​ស្ថិត​នៅក្នុង​របៀប FIPS ។ FIPS ទាមទារ​ពាក្យសម្ងាត់​មេ​ដែល​មិន​ទទេ​ ។
+forms-master-pw-fips-desc = បាន​បរាជ័យ​ក្នុង​ការ​ផ្លាស់ប្ដូរ​ពាក្យសម្ងាត់
 
 ## Privacy Section - History
 
@@ -572,6 +630,20 @@ content-blocking-setting-standard =
 content-blocking-setting-custom =
     .label = ផ្ទាល់ខ្លួន
     .accesskey = C
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = ស្ដង់ដា
+    .accesskey = d
+enhanced-tracking-protection-setting-custom =
+    .label = ផ្ទាល់ខ្លួន
+    .accesskey = C
+
+##
+
 content-blocking-learn-how = ស្វែងយល់​ពី​របៀប
 
 ## Privacy Section - Tracking

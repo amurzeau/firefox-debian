@@ -83,6 +83,16 @@ newtab-menu-delete-history = Tembiasakue Rysýigui Ñeguenohẽ
 newtab-menu-save-to-pocket = Eñongatu { -pocket-brand-name }-pe
 newtab-menu-delete-pocket = Embogue { -pocket-brand-name }-pe
 newtab-menu-archive-pocket = Eñongatu { -pocket-brand-name }-pe
+newtab-menu-show-privacy-info = Ore pytyvõhára ha iñemigua
+
+## Message displayed in a modal window to explain privacy and provide context for sponsored content.
+
+newtab-privacy-modal-button-done = Oĩma
+newtab-privacy-modal-header = Ne ñemigua tuichamba’e.
+newtab-privacy-modal-link = Eikuaa mba’éicha omba’apo ñemigua tendayke pyahúpe
+
+
+
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = Techaukaha Mboguete
 # Bookmark is a verb here.

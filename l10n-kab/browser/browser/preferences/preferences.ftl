@@ -253,6 +253,62 @@ applications-type-column =
 applications-action-column =
     .label = Tigawt
     .accesskey = i
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = Afaylu { $extension }
+applications-action-save =
+    .label = Sekles afaylu
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Seqdec { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Seqdec { $app-name } (s uwennez amezwaru)
+applications-use-other =
+    .label = Seqdec wiyaḍ...
+applications-select-helper = Seqdec asnas azɣaray
+applications-manage-app =
+    .label = Aglam leqqayen n usnas…
+applications-always-ask =
+    .label = Sutur yal tikelt
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Seqdec { $plugin-name } (deg { -brand-short-name })
+applications-preview-inapp =
+    .label = Sken deg { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = Izerfan n usefrek n ugbur umḍin (DRM)
 play-drm-content =
     .label = Γɣaṛ agbur ittwaḥerzen s DRM-
@@ -339,6 +395,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Nadi aḍris ticki tebda tira
     .accesskey = N
+browsing-picture-in-picture-toggle-enabled =
+    .label = Rmeb asenqed i uslaɣ n uvidyu
+    .accesskey = R
+browsing-picture-in-picture-learn-more = Issin ugar
 browsing-cfr-recommendations =
     .label = Welleh isizaf ticki tettiniged
     .accesskey = W
@@ -445,6 +505,12 @@ search-bar-shown =
     .label = Rnu afeggag n unadi deg ufeggag n ifecka
 search-engine-default-header = Amsedday n unadi amezwer
 search-engine-default-desc = Fren amsedday n unadi amezwer ad tesqedceḍ deg ufeggag n tansa akked deg ufeggag n unadi.
+search-engine-default-private-desc = Fren amsedday n unadi amezwer i useqdec deg yisfuyla n tunigin tusligt.
+search-separate-default-engine =
+    .label = Seqdec amsedday-a n unadi deg usfaylu n tunigin tusligt
+    .accesskey = q
+search-suggestions-header = Nadi isumar
+search-suggestions-desc = Fren amek ara d-banen isumar deg yimseddayen n unadi.
 search-suggestions-option =
     .label = Sken isumar n unadi
     .accesskey = S
@@ -458,6 +524,7 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Sken-d asumer n unadi uqbel amazray n tunigin deg ugemmuḍ deg ufeggag n tansa
+suggestions-addressbar-settings = Beddel ismenyifen i uzray n tunigin, ticraḍ n yisebtar akked isumar n yiccaren
 search-suggestions-cant-show = Anadi n isumar ur d ittwaskan ara deg yigmaḍ n ufeggag n tansa acku tsewleḍ { -brand-short-name } akken ur iḥerrez ara amazray.
 search-one-click-header = Imseddayen n unadi ara tkecmeḍ s yiwen n usiti
 search-one-click-desc = Fren imseddayen n unadi-nniḍen ad d-ibanen daw ufeggag n tansa akked ufeggag n unadi m'ara ad tebduḍ ad tsekcameḍ awal n tsarut.
@@ -494,6 +561,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Awi web-inek yid-k
 sync-signedout-description = Semtawi ticraḍ-inek n yisebtar, amazray, accaren, awalen uffiren, izegrar, akked yismenyifen d yibenkan-inek akk.
 sync-signedout-account-title = Qqen ɣer { -fxaccount-brand-name }
@@ -514,11 +585,17 @@ sync-mobile-promo = Sider Firefox i <img data-l10n-name="android-icon"/> <a data
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = Beddel tugna n umaɣnu
 sync-disconnect =
     .label = Tuffɣa…
     .accesskey = k
+sync-sign-out =
+    .label = Ffeɣ…
+    .accesskey = F
 sync-manage-account = Sefrek amiḍan
     .accesskey = m
 sync-signedin-unverified = { $email } ur ittusenqed ara.
@@ -534,6 +611,48 @@ sync-sign-in =
     .accesskey = Q
 sync-signedin-settings-header = Iɣewwaren n umtawi
 sync-signedin-settings-desc = Fren ayen ara temtawiḍ deg yibenk-ik s useqdec n { -brand-short-name }.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Amtawi: IRMED
+prefs-syncing-off = Amtawi: INSA
+prefs-sync-setup =
+    .label = Sbadu { -sync-brand-short-name }...
+    .accesskey = S
+prefs-sync-offer-setup-label = Mtawi ticraḍ-ik n yisebtar, azray, iccaren, awalen uffiren, izegrar akked ismenyifen gar yibenkan-ik.
+prefs-sync-now =
+    .labelnotsyncing = Mtawi tura
+    .accesskeynotsyncing = T
+    .labelsyncing = Amtawi…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = Iferdisen-a mtawin akka tura:
+sync-currently-syncing-bookmarks = Ticraḍ n yisebtar
+sync-currently-syncing-history = Azray
+sync-currently-syncing-tabs = Ldi iccaren
+sync-currently-syncing-logins-passwords = Inekcam d wawalen uffiren
+sync-currently-syncing-addresses = Tansiwin
+sync-currently-syncing-creditcards = Tikarḍiwin n usmad
+sync-currently-syncing-addons = Izegrar
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Iɣewwaṛen
+       *[other] Ismenyifen
+    }
+sync-change-options =
+    .label = Snifel…
+    .accesskey = f
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = Fren iferdisen ara yemtawin
+    .style = width: 38em; min-height: 35em;
+    .buttonlabelaccept = Sekles ibeddilen
+    .buttonaccesskeyaccept = b
+    .buttonlabelextra2 = Se déconnecter…
+    .buttonaccesskeyextra2 = S
 sync-engine-bookmarks =
     .label = Ticraḍ n yisebtar
     .accesskey = c
@@ -548,6 +667,10 @@ sync-engine-logins =
     .label = Anekcum
     .tooltiptext = Isem n uqesdac d wawalen uffiren i teskelseḍ
     .accesskey = Y
+sync-engine-logins-passwords =
+    .label = Inekcam d wawalen uffiren
+    .tooltiptext = Ismawen n yiseqdacen akked wawalen uffiren i teskelseḍ
+    .accesskey = I
 sync-engine-addresses =
     .label = Tansiwin
     .tooltiptext = Tansiwin n lpusṭa i teskelseḍ (aselkim kan)
@@ -568,6 +691,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Amatu, tabaḍnit, akked yiɣewwaren n tɣellist ttubeddlen
     .accesskey = y
+
+## The device name controls.
+
 sync-device-name-header = Isem n yibenk
 sync-device-name-change =
     .label = Beddel isem n yibenk…
@@ -600,6 +726,13 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Sumer daɣen rnu awalen uffiren iǧehden
     .accesskey = S
+forms-breach-alerts =
+    .label = Sken ilɣa i wawalen uffiren n yismal i teɛna trewla n yisefka
+    .accesskey = k
+forms-breach-alerts-learn-more-link = Issin ugar
+forms-fill-logins-and-passwords =
+    .label = Ččar inekcam d wawalen uffiren s wudem awurman
+    .accesskey = i
 forms-saved-logins =
     .label = Inekcumen yettwakelsen…
     .accesskey = e
@@ -609,6 +742,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Snifel awal uffir agejdan…
     .accesskey = a
+forms-master-pw-fips-title = Aql-ak deg uskar FIPS . FIPS yesra awal uffir agejdan arilem.
+forms-master-pw-fips-desc = Asnifel n wawal uffir agejdan ur yeddi ara
 
 ## Privacy Section - History
 
@@ -676,6 +811,10 @@ sitedata-block-desc = Tawsit tewḥel
     .accesskey = T
 sitedata-option-block-trackers =
     .label = Ineḍfaren n wis kraḍ
+sitedata-option-block-cross-site-trackers =
+    .label = Ineḍfaṛen gar yismal
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Ineḍfaṛen gar yismal akked iẓeḍwa inmettiyen
 sitedata-option-block-unvisited =
     .label = Inagan n tuqqna seg ismal web ur yettwarzan ara
 sitedata-option-block-all-third-party =
@@ -711,6 +850,8 @@ addressbar-suggestions-settings = Snifel ismenyifen i yisumar n umsedday n unadi
 
 content-blocking-header = Asewḥel n ugbur
 content-blocking-section-description = Mmesten tabaḍnit-ik deg tunigin. Sewḥel igburen ur d-yettbanen ara, i k-yeṭṭafaṛen seg usmel ɣer wayeḍ daɣen ttwalin amaɣnu-ik. Sewḥel aḥric n yigburen-a i zemren ad sɣiwlen asali n yisebtar.
+content-blocking-enhanced-tracking-protection = Ammesten yettwaseǧhed mgal aḍfaṛ
+content-blocking-section-top-level-description = Inefḍfaṛen ad k-ḍefṛen srid akken ad leqḍen talɣut ɣef tnumi-ik n tunigin akked wayen tḥemmleḍ. { -brand-short-name } ad yessewḥel ddeqs n yineḍfaṛen-a akked yir iskripten.
 content-blocking-learn-more = Issin ugar
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -728,15 +869,40 @@ content-blocking-strict-description = Ammesten iǧehden, maca yezmer ad isewḥe
 content-blocking-custom-desc = Fren ayen ara tesweḥleḍ.
 content-blocking-private-trackers = Ineḍfaren yettwasnen deg usfaylu uslig kan
 content-blocking-third-party-cookies = Inagan n tuqna n uḍfar n tɣawsiwin tis kraḍ
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Tizeɣt
+    .accesskey = z
+enhanced-tracking-protection-setting-strict =
+    .label = Uḥris
+    .accesskey = ḥ
+enhanced-tracking-protection-setting-custom =
+    .label = Udmawan
+    .accesskey = d
+
+
+
+content-blocking-etp-standard-desc = Yerked gar ummesten akked tmellit. ISebtar ad d-alin s wudem amagnu.
+content-blocking-etp-strict-desc = Ammesten yettwaseǧhed, maca kra n yismal akked ugbur yemzer ur teddun ara akken iwata.
+content-blocking-etp-custom-desc = Fren ineḍfaṛen akked iskripten ara tesweḥleḍ.
+content-blocking-private-windows = Agbur yettwaseqdec i uḍfaṛ deg yisfuyla n tunigin tuligt
+content-blocking-cross-site-tracking-cookies = Inagan n tuqqna i uḍfaṛ gar yismal
+content-blocking-social-media-trackers = Ineḍfaṛen n iẓeḍwa inmettiyen
 content-blocking-all-cookies = Inagan n tuqqna meṛṛa
 content-blocking-unvisited-cookies = Inagan n tuqqna n yismal ur yettwarzan ara
 content-blocking-all-windows-trackers = Ineḍfaren yettwasnen deg akk isfuyla
+content-blocking-all-windows-tracking-content = Agbur yettwaseqdec i uḍfaṛ deg yisfuyla meṛṛa
 content-blocking-all-third-party-cookies = Akk inagan n tuqqna n wis kraḍ
 content-blocking-cryptominers = Ikripṭuminaren
 content-blocking-fingerprinters = Idsilen umḍinen
 content-blocking-warning-title = Aqeṛṛu d afella!
 content-blocking-warning-description = Asewḥel n ugbru yezmer ur yettaǧǧa ara kra n yismal ad ddun akken iwata. Tzemreḍ s wudem fessusen ad tsenseḍ asewḥel i yismal i tettamned.
 content-blocking-learn-how = Issin amek
+content-blocking-etp-warning-description = Asewḥel n yineḍfaṛen yezmer ad yeglu s kra n lexṣaṣ deg tmahilin n kra n yismal. Smiren asebter s yineḍfaṛen akken ad d-yali ugbur meṛṛa.
 content-blocking-warning-learn-how = Issin amek
 content-blocking-reload-description = Yessefk ad talseḍ asali n yiccaren-ik akken ad ddun ibeddilen-a.
 content-blocking-reload-tabs-button =
@@ -745,6 +911,9 @@ content-blocking-reload-tabs-button =
 content-blocking-trackers-label =
     .label = Ineḍfaren
     .accesskey = I
+content-blocking-tracking-content-label =
+    .label = Agbur n uḍfaṛ
+    .accesskey = A
 content-blocking-tracking-protection-option-all-windows =
     .label = Deg akk isufyla
     .accesskey = a

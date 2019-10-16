@@ -253,6 +253,62 @@ applications-type-column =
 applications-action-column =
     .label = Handling
     .accesskey = H
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension }-fil
+applications-action-save =
+    .label = Lagre filen
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Bruk { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Bruk { $app-name } (standard)
+applications-use-other =
+    .label = Annet …
+applications-select-helper = Velg program
+applications-manage-app =
+    .label = Programinformasjon …
+applications-always-ask =
+    .label = Spør alltid
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = { $plugin-name } (i { -brand-short-name })
+applications-preview-inapp =
+    .label = Forhåndsvis i { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = Digital Rights Management (DRM) innhold
 play-drm-content =
     .label = Spill DRM-kontrollert innhold
@@ -339,6 +395,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Søk etter tekst når jeg begynner å skrive
     .accesskey = k
+browsing-picture-in-picture-toggle-enabled =
+    .label = Aktiver videokontroller for bilde-i-bilde
+    .accesskey = e
+browsing-picture-in-picture-learn-more = Les mer
 browsing-cfr-recommendations =
     .label = Anbefal utvidelser mens du surfer
     .accesskey = r
@@ -359,7 +419,7 @@ network-proxy-connection-settings =
 ## Home Section
 
 home-new-windows-tabs-header = Nye vinduer og faner
-home-new-windows-tabs-description2 = Velg hva du ser når du åpner startsiden, nye vinduer og nye faner.
+home-new-windows-tabs-description2 = Velg hva du vil se når du åpner startsiden, nye vinduer og nye faner.
 
 ## Home Section - Home Page Customization
 
@@ -445,6 +505,12 @@ search-bar-shown =
     .label = Legg til søkelinje i verktøylinjen
 search-engine-default-header = Standard søkemotor
 search-engine-default-desc = Velg standardsøkemotor som skal brukes i adresselinjen og søkelinjen.
+search-engine-default-private-desc = Velg hvilklen søkmotor du vil bruke i private vindu.
+search-separate-default-engine =
+    .label = Bruk denne søkemotoren i private vindu
+    .accesskey = u
+search-suggestions-header = Søkeforslag
+search-suggestions-desc = Velg hvordan forslag fra søkemotorer skal vises.
 search-suggestions-option =
     .label = Tilby søkeforslag
     .accesskey = T
@@ -458,6 +524,7 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Vis søkeforslag før nettleserhistorikk i adressefeltsresultatene
+suggestions-addressbar-settings = Endre innstillinger for nettleserhistorikk, bokmerker og faneforslag
 search-suggestions-cant-show = Søkeforslag vil ikke vises i adresselinjeresultatene fordi du har konfigurert { -brand-short-name } til å aldri huske historikk.
 search-one-click-header = Ettklikks søkemotorer
 search-one-click-desc = Velg alternative søkemotorer som vises under adresselinjen og søkelinjen når du begynner å skrive inn et søkeord.
@@ -494,6 +561,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Ta med deg webben
 sync-signedout-description = Synkroniser bokmerker, historikk, faner, passord, utvidelser og innstillinger på tvers av alle enhetene dine.
 sync-signedout-account-title = Koble til en { -fxaccount-brand-name }
@@ -514,11 +585,17 @@ sync-mobile-promo = Last ned Firefox for <img data-l10n-name="android-icon"/> <a
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = Endre profilbilde
 sync-disconnect =
     .label = Koble fra…
     .accesskey = f
+sync-sign-out =
+    .label = Logg ut…
+    .accesskey = g
 sync-manage-account = Behandle konto
     .accesskey = o
 sync-signedin-unverified = { $email } er ikke bekreftet.
@@ -534,6 +611,48 @@ sync-sign-in =
     .accesskey = g
 sync-signedin-settings-header = Sync-innstillinger
 sync-signedin-settings-desc = Velg hva du vil synkronisere på enhetene dine med { -brand-short-name }.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Synkronisering: PÅ
+prefs-syncing-off = Synkronisering: AV
+prefs-sync-setup =
+    .label = Konfigurer { -sync-brand-short-name }
+    .accesskey = K
+prefs-sync-offer-setup-label = Synkroniser bokmerker, historikk, faner, passord, utvidelser og innstillinger på tvers av alle enhetene dine.
+prefs-sync-now =
+    .labelnotsyncing = Synkroniser nå
+    .accesskeynotsyncing = n
+    .labelsyncing = Synkroniserer…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = Du synkroniserer for tiden disse elementene:
+sync-currently-syncing-bookmarks = Bokmerker
+sync-currently-syncing-history = Historikk
+sync-currently-syncing-tabs = Åpne faner
+sync-currently-syncing-logins-passwords = Innlogginger og passord
+sync-currently-syncing-addresses = Adresser
+sync-currently-syncing-creditcards = Kredittkort
+sync-currently-syncing-addons = Utvidelser
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Innstillinger
+       *[other] Innstillinger
+    }
+sync-change-options =
+    .label = Endre…
+    .accesskey = E
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = Velg hva som skal synkroniseres
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Lagre endringer
+    .buttonaccesskeyaccept = L
+    .buttonlabelextra2 = Koble fra
+    .buttonaccesskeyextra2 = K
 sync-engine-bookmarks =
     .label = Bokmerker
     .accesskey = B
@@ -548,6 +667,10 @@ sync-engine-logins =
     .label = Innlogginger
     .tooltiptext = Brukarnavn og passord du har lagret
     .accesskey = I
+sync-engine-logins-passwords =
+    .label = Innlogginger og passord
+    .tooltiptext = Brukernavn og passord som du har lagret
+    .accesskey = l
 sync-engine-addresses =
     .label = Adresser
     .tooltiptext = Postadresser du har lagret (bare datamaskin)
@@ -568,6 +691,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Generelle, personvern- og sikkerhetsinnstillinger du har endret
     .accesskey = I
+
+## The device name controls.
+
 sync-device-name-header = Enhetsnavn
 sync-device-name-change =
     .label = Endre enhetsnavn…
@@ -600,6 +726,10 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Foreslå og generer sterke passord
     .accesskey = o
+forms-breach-alerts =
+    .label = Vis varsler om passord for datalekkasjer på nettsteder
+    .accesskey = p
+forms-breach-alerts-learn-more-link = Les mer
 forms-fill-logins-and-passwords =
     .label = Autoutfyll innlogginger og passord
     .accesskey = i
@@ -612,6 +742,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Endre hovedpassord …
     .accesskey = d
+forms-master-pw-fips-title = Du er i FIPS-modus. FIPS krever at du bruker et hovedpassord.
+forms-master-pw-fips-desc = Passordendring mislyktes
 
 ## Privacy Section - History
 
@@ -682,7 +814,7 @@ sitedata-option-block-trackers =
 sitedata-option-block-cross-site-trackers =
     .label = Sporing på tvers av nettsteder
 sitedata-option-block-cross-site-and-social-media-trackers =
-    .label = Sporing på tvers av nettsteder og sosiale media-sporere
+    .label = Sporing på tvers av nettsteder og sporere fra sosiale medier
 sitedata-option-block-unvisited =
     .label = Infokapsler fra ubesøkte nettsteder
 sitedata-option-block-all-third-party =
@@ -717,8 +849,9 @@ addressbar-suggestions-settings = Endre innstillinger for søkeforslag
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Innholdsblokkering
-content-blocking-enhanced-tracking-protection = Utvidet sporingsbeskyttelse
 content-blocking-section-description = Beskytt personvernet ditt mens du surfer. Blokker usynlig innhold som sporer nettsidene du besøker og profilerer deg. Blokkering av noe av dette innholdet kan gjøre nettsider raskere å laste.
+content-blocking-enhanced-tracking-protection = Utvidet sporingsbeskyttelse
+content-blocking-section-top-level-description = Sporere følger deg rundt på nettet for å samle informasjon om surfevanene og interessene dine. { -brand-short-name } blokkerer mange av disse sporere og andre ondsinnede skript.
 content-blocking-learn-more = Les mer
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -736,12 +869,29 @@ content-blocking-strict-description = Sterkere beskyttelse, men kan forhindre no
 content-blocking-custom-desc = Velg hva du vil blokkere.
 content-blocking-private-trackers = Kjente sporere bare i Private vindu
 content-blocking-third-party-cookies = Tredjeparts sporingsinfokapsler
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Standard
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = Streng
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = Tilpasset
+    .accesskey = T
+
+
+
 content-blocking-etp-standard-desc = Balansert for beskyttelse og ytelse. Sider lastes normalt.
 content-blocking-etp-strict-desc = Sterkere beskyttelse, men kan føre til at noen nettsteder eller innhold ikke vil fungere.
 content-blocking-etp-custom-desc = Velg hvilke sporere og skript som skal blokkeres.
 content-blocking-private-windows = Sporingsinnhold i private vinduer
 content-blocking-cross-site-tracking-cookies = Sporingsinfokapsler på tvers av nettsteder
-content-blocking-social-media-trackers = Sporing via sosiale medier
+content-blocking-social-media-trackers = Sporere fra sosiale medier
 content-blocking-all-cookies = Alle infokapsler
 content-blocking-unvisited-cookies = Infokapsler fra ubesøkte nettsteder
 content-blocking-all-windows-trackers = Kjente sporere i alle vinduer
@@ -848,7 +998,7 @@ collection-header = Datainnsamling og bruk for { -brand-short-name }
 collection-description = Vi prøver alltid å gi deg valg og samler bare det vi trenger for å levere og forbedre { -brand-short-name } for alle. Vi ber alltid om tillatelse før vi aksepterer personopplysninger.
 collection-privacy-notice = Personvernbestemmelser
 collection-health-report =
-    .label = Tillat { -brand-short-name } å sende teknisk- og interaksjonsdata til { -vendor-short-name }
+    .label = Tillat { -brand-short-name } å sende tekniske data og data for bruk til { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Les mer
 collection-studies =

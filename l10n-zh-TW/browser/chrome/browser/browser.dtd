@@ -76,12 +76,21 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY menubarCmd.label "選單列">
 <!ENTITY menubarCmd.accesskey "M">
 <!ENTITY navbarCmd.label "瀏覽工具列">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY navbar.accessibleLabel "導覽">
 <!ENTITY personalbarCmd.label "書籤工具列">
 <!ENTITY personalbarCmd.accesskey "B">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY personalbar.accessibleLabel "書籤">
 <!ENTITY bookmarksToolbarItem.label "書籤工具列項目">
 
 <!ENTITY pageSourceCmd.label "頁面原始碼">
 <!ENTITY pageSourceCmd.accesskey "o">
+
 <!ENTITY pageSourceCmd.commandkey "u">
 <!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
 Option+Command keyboard shortcut letter that Safari and Chrome use for "View
@@ -92,6 +101,7 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 
 <!ENTITY pageInfoCmd.label "頁面資訊">
 <!ENTITY pageInfoCmd.accesskey "I">
+
 <!ENTITY pageInfoCmd.commandkey "i">
 <!ENTITY ldbCmd.label "版面除錯器">
 <!ENTITY ldbCmd.accesskey "L">
@@ -116,6 +126,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaSignInError.label "重新連線至 &syncBrand.shortName.label;">
 <!ENTITY fxaUnverified.label "確認您的帳號">
 
+
+<!ENTITY togglePictureInPicture.key2 "}">
+<!ENTITY togglePictureInPicture.key "]"> <!-- } is above this key on many keyboards -->
 
 <!ENTITY fullScreenMinimize.tooltip "縮到最小">
 <!ENTITY fullScreenRestore.tooltip "還原">
@@ -146,20 +159,27 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.menu.signedInAs.label "已登入為">
 <!ENTITY fxa.menu.manageAccount.label "管理帳號…">
 <!ENTITY fxa.menu.syncSettings.label "&syncBrand.shortName.label; 設定…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbar menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.syncSettings2.label "&syncBrand.shortName.label; 設定">
 <!ENTITY fxa.menu.connectAnotherDevice2.label "連結其他裝置…">
 <!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
 <!ENTITY fxa.menu.signin.label "登入 &brandProductName;">
 <!ENTITY fxa.menu.turnOnSync.label "開啟 &syncBrand.shortName.label;">
-<!ENTITY fxa.menu.account.label "帳號">
 <!ENTITY fxa.menu.firefoxServices.label "&brandProductName; 服務">
+
+<!ENTITY fxa.menu.account.label "帳號">
+<!ENTITY fxa.menu.settings.label "設定">
+<!ENTITY fxa.menu.accountSettings.label "帳號設定">
+<!ENTITY fxa.menu.signOut.label "登出…">
+<!ENTITY fxa.menu.deviceSettings.label "裝置設定">
+<!ENTITY fxa.menu.setupSync.label "設定 &syncBrand.shortName.label;…">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
      for the Firefox Account toolbar menu screen.  -->
-<!ENTITY fxa.service.send.description "使用端對端加密，以及會自動過期的鏈結來上傳要分享的檔案。">
-<!ENTITY fxa.service.send.launch "啟動 &sendShortName;">
-<!ENTITY fxa.service.monitor.description "檢查您的電子郵件信箱是否曾出現在資料外洩事件中，並且在未來發生資料外洩時收到警報通知。">
-<!ENTITY fxa.service.monitor.launch "啟動 &monitorShortName;">
 <!ENTITY fxa.service.sendTab.description "立即傳送分頁到任何您登入過的裝置。">
 
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
@@ -199,6 +219,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY bookmarksMenu.label "書籤">
 <!ENTITY bookmarksMenu.accesskey "B">
+
 <!ENTITY bookmarkThisPageCmd.label "將本頁加入書籤">
 <!ENTITY editThisBookmarkCmd.label "編輯此書籤">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
@@ -240,6 +261,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "管理附加元件使用情況">
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "變更您是否要收到來自此網站的通知">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "將資料儲存於持續性儲存空間">
+
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "瀏覽器正被遠端控制中">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "開啟 Web 身份驗證面板">
 <!ENTITY urlbar.storageAccessAnchor.tooltip               "開啟瀏覽活動權限面板">
@@ -253,6 +275,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "管理頁面翻譯">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "管理 DRM 軟體使用">
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "開啟 MIDI 面板">
+
+<!ENTITY urlbar.permissionsGranted.tooltip       "您已授予此網站更多權限。">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "您已封鎖此網站的攝影機存取權限。">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "您已封鎖此網站存取您麥克風的權限。">
@@ -402,7 +426,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.recentHistory.label "最近紀錄">
 <!ENTITY appMenuHelp.label "說明">
 
-<!ENTITY appMenuRemoteTabs.label "已同步的分頁">
+<!ENTITY appMenuRemoteTabs.label "同步的分頁">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.notabs.label): This is shown beneath
      the name of a device when that device has no open tabs -->
 <!ENTITY appMenuRemoteTabs.notabs.label "無已開啟的分頁">
@@ -423,10 +447,13 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "想在這裡看到您其他裝置上開啟的分頁嗎？">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "開啟 Sync 偏好設定">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "登入以檢視您其他裝置中的分頁清單。">
+<!ENTITY appMenuRemoteTabs.welcome.label "檢視您其他裝置中的分頁清單。">
 <!ENTITY appMenuRemoteTabs.unverified.label "需要驗證您的帳號。">
 <!ENTITY appMenuRemoteTabs.signin.label "登入至 Sync">
+<!ENTITY appMenuRemoteTabs.signintosync.label "登入 &syncBrand.shortName.label;…">
+<!ENTITY appMenuRemoteTabs.turnonsync.label "開啟 &syncBrand.shortName.label;…">
 <!ENTITY appMenuRemoteTabs.managedevices.label "管理裝置…">
-<!ENTITY appMenuRemoteTabs.sidebar.label "檢視「已同步的分頁」側邊欄">
+<!ENTITY appMenuRemoteTabs.sidebar.label "檢視「同步的分頁」側邊欄">
 <!ENTITY appMenuRemoteTabs.hidesidebar.label "隱藏已同步分頁側邊欄">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "連結其他裝置">
 
@@ -512,6 +539,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      This is set as the aria-label attribute for the search input box in the
      in-content search UI, to be used by screen readers. -->
 <!ENTITY contentSearchInput.label     "搜尋字串">
+
 <!ENTITY contentSearchSubmit.tooltip  "送出搜尋">
 
 <!-- LOCALIZATION NOTE (searchInput.placeholder):
@@ -816,13 +844,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.connection "連線">
 <!ENTITY identity.connectionSecure "安全連線">
-
-<!-- LOCALIZATION NOTE (identity.securityView.label2)
-     This is the header of the security subview in the Site Identity panel. -->
-<!ENTITY identity.securityView.label2 "連線安全性">
-
-<!ENTITY identity.connectionSecure2 "安全連線">
 <!ENTITY identity.connectionNotSecure "連線不安全">
+
+<!ENTITY identity.connectionSecure3 "安全連線">
+<!ENTITY identity.connectionNotSecure2 "不安全連線">
 <!ENTITY identity.connectionNotSecureSecurityView "您並未安全地連線至此網站。">
 <!ENTITY identity.connectionFile "此頁面位於您的電腦上。">
 <!ENTITY identity.connectionVerified2 "您已安全地連線至此網站，本網站擁有者為:">
@@ -832,7 +857,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.insecureLoginForms2 "在此頁面輸入的登入資訊可能會被洩漏。">
 <!ENTITY identity.customRoot "連線是由 Mozilla 不認識的憑證簽發者所驗證。">
 
-<!ENTITY identity.evOwnerLabel "網站擁有者:">
+<!ENTITY identity.evOwnerLabel2 "憑證簽發給:">
 
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "&brandShortName; 已經封鎖此頁面中不安全的部分。">
@@ -868,8 +893,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.permissions "權限">
 
-<!-- LOCALIZATION NOTE (identity.permissions2): "set" as in "configured for this website" -->
-<!ENTITY identity.permissions2 "權限集">
+<!ENTITY identity.permissions3 "權限">
 <!ENTITY identity.permissionsEmpty "您並未授予此網站任何特殊權限。">
 <!ENTITY identity.permissionsReloadHint "您可能需要重新載入頁面才能讓變更生效。">
 <!ENTITY identity.permissionsPreferences.tooltip "開啟權限偏好設定">
@@ -882,7 +906,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      protections.etpMoreInfo.label: The text a screen reader speaks when focused on the info button. -->
 <!ENTITY protections.etpMoreInfo.label "關於加強型追蹤保護功能的更多資訊">
 <!ENTITY protections.settings.label "保護設定">
-<!ENTITY protections.report.label "顯示完整報告">
+<!ENTITY protections.showreport.label "顯示報告">
 <!-- LOCALIZATION NOTE:
      protections.siteNotWorking.label: The link to be clicked to open the sub-panel view
      protections.siteNotWorkingView.title: The heading/title of the sub-panel view -->
@@ -893,17 +917,26 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      the user is experiencing issues with any of a variety of functionality.
      protections.siteNotWorkingView.header: The header of the list
      protections.siteNotWorkingView.issueList.*: The list items, shown in a <ul> -->
-<!ENTITY protections.siteNotWorkingView.header "如果遇到以下問題，請關閉保護:">
+<!ENTITY protections.siteNotWorkingView.header "如果下列功能出現問題，請關閉保護:">
 <!ENTITY protections.siteNotWorkingView.issueList.logInFields "登入欄位">
 <!ENTITY protections.siteNotWorkingView.issueList.forms "表單">
 <!ENTITY protections.siteNotWorkingView.issueList.payments "付款">
 <!ENTITY protections.siteNotWorkingView.issueList.comments "註解">
 <!ENTITY protections.siteNotWorkingView.issueList.videos "影片">
-<!ENTITY protections.siteNotWorkingView.siteStillBroken.label "關閉保護後網站仍然不正常？">
-<!ENTITY protections.siteNotWorkingView.sendReport.label "回報">
+<!ENTITY protections.siteNotWorkingView.sendReport.label "請回報給我們">
 
-<!ENTITY protections.blocking.label "封鎖">
-<!ENTITY protections.notBlocking.label "不封鎖">
+<!-- LOCALIZATION NOTE (protections.blocking2.label, protections.notBlocking2.label, protections.notFound.label):
+     In the protections panel, Content Blocking category items are in three sections:
+     "Blocked" for categories being blocked in the current page,
+     "Allowed" for categories detected but not blocked in the current page, and
+     "None Detected" for categories not detected in the current page.
+     These strings are used in the header labels of each of these sections. -->
+<!ENTITY protections.blocking2.label "已封鎖">
+<!ENTITY protections.notBlocking2.label "已允許">
+<!ENTITY protections.notFound.label "未偵測到">
+<!-- LOCALIZATION NOTE (protections.notBlocking.why.label, protections.notBlocking.why.etp*.tooltip):
+     The "Allowed" header also includes a "Why?" link that, when hovered, shows
+     a tooltip explaining why these items were not blocked in the page. -->
 <!ENTITY protections.notBlocking.why.label "為什麼？">
 <!ENTITY protections.notBlocking.why.etpOn.tooltip "封鎖這些項目可能會造成某些網站上的元素不正常。若沒有追蹤器，某些按鈕、表單、登入欄位可能無法正常運作。">
 <!ENTITY protections.notBlocking.why.etpOff.tooltip "若關閉保護，將放行此網站上的所有追蹤器。可能也會改善某些網站功能。">
@@ -917,7 +950,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY protections.crossSiteTrackingCookies.description "一些第三方廣告商或分析公司，會設定這些 Cookie 在不同網站間跟蹤您，收集您的上網紀錄。">
 <!ENTITY protections.cryptominers.description "加密貨幣採礦程式會使用您電腦的運算能力來對數位貨幣「採礦」，消耗您的電腦電力、拖慢系統效能、增加電費支出。">
 <!ENTITY protections.fingerprinters.description "數位指紋追蹤程式會針對您的瀏覽器、電腦設定來建立您的獨特輪廓，並在不同網站間追蹤您。">
-<!ENTITY protections.trackingContent.description "網站中可能會有含有追蹤用程式碼的外部廣告、影片、其他內容。封鎖追蹤內容可以讓網站更快載入，但某些按鈕、表單、登入欄位可能無法正常運作。">
+<!ENTITY protections.trackingContent2.description "網站中可能會有包含追蹤碼的外部廣告、影片或其他內容。封鎖追蹤內容可以讓網站更快載入，但某些按鈕、表單、登入欄位可能無法正常運作。">
 <!ENTITY protections.socialMediaTrackers.description "社群網站會在其他網站放置追蹤器，以追蹤您除了在社群網站分享的東西之外，還在網路上做了或看了什麼，更加了解您的一舉一動。">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
@@ -925,9 +958,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY tabsToolbar.label "瀏覽器分頁">
 
 <!-- LOCALIZATION NOTE (syncTabsMenu3.label): This appears in the history menu -->
-<!ENTITY syncTabsMenu3.label     "已同步的分頁">
+<!ENTITY syncTabsMenu3.label     "同步的分頁">
 
-<!ENTITY syncedTabs.sidebar.label              "已同步的分頁">
+<!ENTITY syncedTabs.sidebar.label              "同步的分頁">
 
 <!ENTITY syncBrand.shortName.label    "Sync">
 
@@ -957,18 +990,18 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection3.label "追蹤器">
 
 <!ENTITY contentBlocking.manageSettings.label "管理內容封鎖功能">
-
-<!ENTITY contentBlocking.trackingProtection4.label "追蹤用內容">
-
-<!ENTITY contentBlocking.manageSettings2.label "管理保護設定">
 <!ENTITY contentBlocking.manageSettings.accesskey "M">
 
 <!ENTITY contentBlocking.trackersView.label "追蹤器">
-
 <!ENTITY contentBlocking.trackersView.strictInfo.label "若要封鎖所有追蹤器，請將內容封鎖功能設定為「嚴格」。">
 
 <!ENTITY contentBlocking.cookies.label "Cookie">
 <!ENTITY contentBlocking.cookiesView.label "Cookie 與網站資料">
+
+<!ENTITY contentBlocking.trackingProtection4.label "追蹤用內容">
+
+<!ENTITY contentBlocking.manageSettings2.label "管理保護設定">
+<!ENTITY contentBlocking.manageSettings2.accesskey "M">
 
 <!ENTITY contentBlocking.socialblock.label "社交媒體追蹤器">
 
@@ -984,6 +1017,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView.label "回報問題">
 <!ENTITY contentBlocking.breakageReportView2.description "內容封鎖功能可能會造成某些網站運作不正常。當您回報問題時，就能幫助讓所有人的 &brandShortName; 變得更好。（將會回報網址與您的瀏覽器相關設定給 Mozilla。）">
 <!ENTITY contentBlocking.breakageReportView.learnMore "了解更多">
+
 <!ENTITY contentBlocking.breakageReportView.title "回報網站問題">
 <!ENTITY contentBlocking.breakageReportView3.description "封鎖部分追蹤器後，可能會造成某些網站運作不正常。回報問題可幫助讓所有人的 &brandShortName; 變得更好。將會回報網址與您的瀏覽器相關設定給 Mozilla。">
 <!ENTITY contentBlocking.breakageReportView2.learnMore "了解更多">
@@ -1039,6 +1073,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY newTabControlled.disableButton.accesskey "D">
 
 <!ENTITY homepageControlled.message "有套擴充套件修改了您的首頁。若您不想要這個修改，可還原此設定。">
+
 <!ENTITY homepageControlled.header.message "您的「新分頁」已經變更。">
 <!ENTITY homepageControlled.keepButton.label "保留變更">
 <!ENTITY homepageControlled.keepButton.accesskey "K">

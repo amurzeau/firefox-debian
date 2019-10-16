@@ -7,11 +7,11 @@ page-subtitle =
     דף זה מכיל מידע טכני שאולי שימושי עבורך
     כשתנסה לפתור בעיות. אם אתה מחפש תשובות לשאלות נפוצות
     על { -brand-short-name }, עבור ל<a data-l10n-name="support-link">אתר התמיכה</a>.
-crashes-title = דיווחי קריסות
-crashes-id = קוד דיווח
+crashes-title = דיווחי קריסה
+crashes-id = מזהה דיווח
 crashes-send-date = נשלח
-crashes-all-reports = כל דיווחי הקריסות
-crashes-no-config = יישום זה לא הוגדר להציג דיווחי קריסות.
+crashes-all-reports = כל דיווחי הקריסה
+crashes-no-config = יישום זה לא הוגדר להציג דיווחי קריסה.
 extensions-title = הרחבות
 extensions-name = שם
 extensions-enabled = מאופשר
@@ -33,6 +33,8 @@ app-basics-name = שם
 app-basics-version = גרסה
 app-basics-build-id = מזהה גרסה
 app-basics-update-channel = ערוץ עדכונים
+# This message refers to the folder used to store updates on the device,
+# as in "Folder for updates". "Update" is a noun, not a verb.
 app-basics-update-dir =
     { PLATFORM() ->
         [linux] ספריית עדכון
@@ -54,7 +56,6 @@ app-basics-performance = ביצועים
 app-basics-service-workers = Service Workers רשומים
 app-basics-profiles = פרופילים
 app-basics-multi-process-support = חלונות מרובי תהליכים
-app-basics-process-count = תהליכי תוכן רשת
 app-basics-enterprise-policies = ערכות מדיניות ארגוניות
 app-basics-location-service-key-google = מפתח עבור שירותי המיקום של Google
 app-basics-key-mozilla = מפתח עבור שירותי המיקום של Mozilla
@@ -63,7 +64,7 @@ show-dir-label =
     { PLATFORM() ->
         [macos] הצגה ב־Finder
         [windows] פתיחת תיקייה
-       *[other] פתיחת תיקייה
+       *[other] פתיחת ספרייה
     }
 modified-key-prefs-title = העדפות חשובות ששונו
 modified-prefs-name = שם
@@ -104,6 +105,13 @@ sandbox-sys-call-number = קריאת מערכת
 sandbox-sys-call-args = ארגומנטים
 safe-mode-title = לנסות במצב בטוח
 restart-in-safe-mode-label = הפעלה מחדש עם תוספות מנוטרלות…
+
+## Media titles
+
+audio-backend = מנגנון שמע
+max-audio-channels = מספר הערוצים המרבי
+channel-layout = פריסת הערוצים המועדפת
+sample-rate = קצב הדגימה המועדף
 media-title = מדיה
 media-output-devices-title = התקני פלט
 media-input-devices-title = התקני קלט
@@ -116,6 +124,9 @@ media-device-format = תצורה
 media-device-channels = ערוצים
 media-device-rate = קצב
 media-device-latency = עיכוב
+
+
+
 intl-title = בינלאומי ושפות
 intl-app-title = הגדרות יישום
 intl-locales-requested = שפות מבוקשות
@@ -130,7 +141,7 @@ intl-regional-prefs = העדפות אזוריות
 report-crash-for-days =
     { $days ->
         [one] דיווחי קריסה מהיום האחרון
-       *[other] דיווחי קריסה מ־{ $days } הימים האחרונים.
+       *[other] דיווחי קריסה מ־{ $days } הימים האחרונים
     }
 # Variables
 # $minutes (integer) - Number of minutes since crash
@@ -157,11 +168,11 @@ crashes-time-days =
 # $reports (integer) - Number of pending reports
 pending-reports =
     { $reports ->
-        [one] כל דיווחי הקריסות (כולל קריסה נוספת בטווח הזמן הנתון)
-       *[other] כל דיווחי הקריסות (כולל { $reports } קריסות נוספות בטווח הזמן הנתון)
+        [one] כל דיווחי הקריסה (כולל קריסה נוספת בטווח הזמן הנתון)
+       *[other] כל דיווחי הקריסה (כולל { $reports } קריסות נוספות בטווח הזמן הנתון)
     }
 raw-data-copied = מידע גולמי הועתק ללוח
-text-copied = טקסט הועתק ללוח
+text-copied = הטקסט הועתק ללוח
 
 ## The verb "blocked" here refers to a graphics feature such as "Direct2D" or "OpenGL layers".
 
@@ -219,12 +230,7 @@ gpu-device-reset-button = הפעלת איפוס התקן
 uses-tiling = שימוש בריצוף
 content-uses-tiling = שימוש בריצוף (תוכן)
 off-main-thread-paint-enabled = ציור מחוץ להליך הראשי מופעל
-low-end-machine = זוהתה מכונה חלשה יותר
 target-frame-rate = קצב תמונות ייעודי
-audio-backend = מנגנון שמע
-max-audio-channels = מספר הערוצים המרבי
-channel-layout = פריסת הערוצים המועדפת
-sample-rate = קצב הדגימה המועדף
 min-lib-versions = גרסת מינימום מצופה
 loaded-lib-versions = גרסה שבשימוש
 has-seccomp-bpf = Seccomp-BPF (System Call Filtering)
@@ -249,7 +255,7 @@ multi-process-status-2 = מנוטרל
 multi-process-status-4 = נוטרל עקב כלי נגישות
 multi-process-status-6 = נוטרל עקב קלט טקסט לא נתמך
 multi-process-status-7 = נוטרל על־ידי תוספות
-multi-process-status-8 = נוטרל בכוח
+multi-process-status-8 = מושבת בכוח
 multi-process-status-unknown = מצב לא ידוע
 apz-none = אין
 wheel-enabled = קלט גלגל מופעל

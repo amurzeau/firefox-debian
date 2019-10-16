@@ -3,6 +3,15 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 about-logins-page-title = 登入資訊與密碼
+
+# "Google Play" and "App Store" are both branding and should not be translated
+
+login-app-promo-title = 密碼隨身帶著走
+login-app-promo-subtitle = 下載免費 { -lockwise-brand-name } app
+login-app-promo-android =
+    .alt = 到 Google Play 下載
+login-app-promo-apple =
+    .alt = 到 App Store 下載
 login-filter =
     .placeholder = 搜尋登入資訊
 create-login-button = 新增登入資訊
@@ -27,8 +36,7 @@ menu-menuitem-preferences =
         [windows] 選項
        *[other] 偏好設定
     }
-menu-menuitem-feedback = 傳送意見回饋
-menu-menuitem-faq = 常見問題
+about-logins-menu-menuitem-help = 說明
 menu-menuitem-android-app = { -lockwise-brand-short-name } for Android
 menu-menuitem-iphone-app = { -lockwise-brand-short-name } for iPhone and iPad
 
@@ -47,9 +55,16 @@ login-list-last-changed-option = 上次修改
 login-list-last-used-option = 上次使用
 login-list-intro-title = 找不到登入資訊
 login-list-intro-description = 當您在 { -brand-product-name } 中儲存密碼後，就會顯示於此處。
+about-logins-login-list-empty-search-title = 找不到登入資訊
+about-logins-login-list-empty-search-description = 沒有符合您搜尋條件的結果。
 login-list-item-title-new-login = 新增登入資訊
 login-list-item-subtitle-new-login = 請輸入您的登入帳密
 login-list-item-subtitle-missing-username = （無使用者名稱）
+about-logins-list-item-warning-icon =
+    .alt = 警告圖示
+    .title = 網站發生過資料外洩事件
+about-logins-list-item-breach-icon =
+    .title = 發生資料外洩事件的網站
 
 ## Introduction screen
 
@@ -57,7 +72,7 @@ login-intro-heading = 在找您儲存的登入資訊嗎？請設定 { -sync-bran
 login-intro-description = 若您在其他裝置上儲存登入資訊到 { -brand-product-name } 過，請參考下列步驟，即可在此裝置使用:
 login-intro-instruction-fxa = 在您儲存登入資訊的裝置，註冊或登入 { -fxaccount-brand-name }
 login-intro-instruction-fxa-settings = 確定在 { -sync-brand-short-name } 設定中勾選了「登入資訊」選取盒
-login-intro-instruction-faq = 若有更多問題，可參考 { -lockwise-brand-short-name } <a data-l10n-name="faq">常見問題</a>
+about-logins-intro-instruction-help = 若需協助，請到 <a data-l10n-name="help-link">{ -lockwise-brand-short-name } 技術支援站</a>
 
 ## Login
 
@@ -67,10 +82,9 @@ login-item-delete-button = 刪除
 login-item-origin-label = 網站網址
 login-item-origin =
     .placeholder = https://www.example.com
-login-item-open-site-button = 開啟
 login-item-username-label = 使用者名稱
-login-item-username =
-    .placeholder = name@example.com
+about-logins-login-item-username =
+    .placeholder = （無使用者名稱）
 login-item-copy-username-button-text = 複製
 login-item-copied-username-button-text = 已複製！
 login-item-password-label = 密碼
@@ -124,3 +138,18 @@ breach-alert-text = 自您上次更新登入資訊以來，此網站發生了密
 breach-alert-link = 了解此事件的更多資訊
 breach-alert-dismiss =
     .title = 關閉此警報
+
+## Error Messages
+
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login = 使用該使用者名稱的 { $loginTitle } 項目已經存在。
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = 已有於 { $loginTitle } 使用相同使用者名稱的項目存在。<a data-l10n-name="duplicate-link">要前往現有項目嗎？</a>
+# This is a generic error message.
+about-logins-error-message-default = 嘗試儲存此密碼時發生錯誤。

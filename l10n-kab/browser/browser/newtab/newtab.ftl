@@ -83,6 +83,13 @@ newtab-menu-delete-history = Kkes seg umazray
 newtab-menu-save-to-pocket = Sekles ɣer { -pocket-brand-name }
 newtab-menu-delete-pocket = Kkes si { -pocket-brand-name }
 newtab-menu-archive-pocket = Ḥrez di { -pocket-brand-name }
+
+## Message displayed in a modal window to explain privacy and provide context for sponsored content.
+
+newtab-privacy-modal-button-done = Immed
+
+
+
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = Kkes tacreṭ-agi
 # Bookmark is a verb here.
@@ -164,9 +171,12 @@ newtab-empty-section-topstories = Ulac wiyaḍ. Uɣal-d ticki s wugar n imagrade
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
+newtab-discovery-empty-section-topstories-header = Ulac d acu yellan.
 newtab-discovery-empty-section-topstories-content = Uɣal-d ticki akken ad tafeḍ ugar n teqsiḍin.
 newtab-discovery-empty-section-topstories-try-again-button = Ɛreḍ tikelt nniḍen
 newtab-discovery-empty-section-topstories-loading = Asali…
+# Displays when a layout in a section took too long to fetch articles.
+newtab-discovery-empty-section-topstories-timed-out = Ihuh! Waqil tigezmi ur d-tuli ara akken iwata.
 
 ## Pocket Content Section.
 

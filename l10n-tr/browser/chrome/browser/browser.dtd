@@ -76,12 +76,21 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY menubarCmd.label "Menü çubuğu">
 <!ENTITY menubarCmd.accesskey "M">
 <!ENTITY navbarCmd.label "Gezinti araç çubuğu">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY navbar.accessibleLabel "Gezinme">
 <!ENTITY personalbarCmd.label "Yer imleri araç çubuğu">
 <!ENTITY personalbarCmd.accesskey "Y">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY personalbar.accessibleLabel "Yer imleri">
 <!ENTITY bookmarksToolbarItem.label "Yer imleri araç çubuğu öğeleri">
 
 <!ENTITY pageSourceCmd.label "Sayfa kaynağı">
 <!ENTITY pageSourceCmd.accesskey "a">
+
 <!ENTITY pageSourceCmd.commandkey "u">
 <!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
 Option+Command keyboard shortcut letter that Safari and Chrome use for "View
@@ -92,6 +101,7 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 
 <!ENTITY pageInfoCmd.label "Sayfa bilgileri">
 <!ENTITY pageInfoCmd.accesskey "b">
+
 <!ENTITY pageInfoCmd.commandkey "i">
 <!ENTITY ldbCmd.label "Düzen hata ayıklayıcısı">
 <!ENTITY ldbCmd.accesskey "D">
@@ -116,6 +126,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaSignInError.label "&syncBrand.shortName.label;’e yeniden bağlan">
 <!ENTITY fxaUnverified.label "Hesabınızı doğrulayın">
 
+
+ <!-- } is above this key on many keyboards -->
 
 <!ENTITY fullScreenMinimize.tooltip "Küçült">
 <!ENTITY fullScreenRestore.tooltip "Geri getir">
@@ -146,13 +158,24 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.menu.signedInAs.label "Giriş yapan kullanıcı">
 <!ENTITY fxa.menu.manageAccount.label "Hesabı yönet…">
 <!ENTITY fxa.menu.syncSettings.label "&syncBrand.shortName.label; ayarları…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbar menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.syncSettings2.label "&syncBrand.shortName.label; ayarları">
 <!ENTITY fxa.menu.connectAnotherDevice2.label "Başka bir cihaz bağla…">
 <!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
 <!ENTITY fxa.menu.signin.label "&brandProductName;’a giriş yap">
 <!ENTITY fxa.menu.turnOnSync.label "&syncBrand.shortName.label;’i etkinleştir">
-<!ENTITY fxa.menu.account.label "Hesap">
 <!ENTITY fxa.menu.firefoxServices.label "&brandProductName; hizmetleri">
+
+<!ENTITY fxa.menu.account.label "Hesap">
+<!ENTITY fxa.menu.settings.label "Ayarlar">
+<!ENTITY fxa.menu.accountSettings.label "Hesap ayarları">
+<!ENTITY fxa.menu.signOut.label "Çıkış yap…">
+<!ENTITY fxa.menu.deviceSettings.label "Cihaz ayarları">
+<!ENTITY fxa.menu.setupSync.label "&syncBrand.shortName.label;’i kur…">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
      for the Firefox Account toolbar menu screen.  -->
@@ -195,6 +218,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY bookmarksMenu.label "Yer imleri">
 <!ENTITY bookmarksMenu.accesskey "Y">
+
 <!ENTITY bookmarkThisPageCmd.label "Bu sayfayı yer imlerine ekle">
 <!ENTITY editThisBookmarkCmd.label "Bu yer imini düzenle">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
@@ -236,6 +260,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Yan uygulama kullanımını yönet">
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "Sitenin bildirim gönderip gönderemeyeceğini ayarlayın">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Kalıcı depolamada veri depola">
+
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Tarayıcı uzaktan kontrol ediliyor">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Web kimlik doğrulaması panelini aç">
 <!ENTITY urlbar.storageAccessAnchor.tooltip               "Gezinme etkinliği izin panelini aç">
@@ -249,6 +274,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Sayfa çevirisini yönet">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "DRM yazılımı kullanımını yönet">
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "MIDI panelini aç">
+
+<!ENTITY urlbar.permissionsGranted.tooltip       "Bu siteye ek izinler verdiniz.">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Bu sitenin kameranızı kullanmasını engellediniz.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Bu sitenin mikrofonunuzu kullanmasını engellediniz.">
@@ -419,8 +446,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Diğer cihazlarınızdaki sekmeleri burada görmek ister misiniz?">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Sync tercihlerini aç">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Diğer cihazlarınızdaki sekmeleri görmek için giriş yapın.">
+<!ENTITY appMenuRemoteTabs.welcome.label "Diğer cihazlarınızdaki sekmelerin listesini görün.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Hesabınızın doğrulanması gerekiyor.">
 <!ENTITY appMenuRemoteTabs.signin.label "Sync’e giriş yapın">
+<!ENTITY appMenuRemoteTabs.signintosync.label "&syncBrand.shortName.label;’e giriş yap…">
+<!ENTITY appMenuRemoteTabs.turnonsync.label "&syncBrand.shortName.label;’i etkinleştir…">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Cihazları yönet…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Kenar çubuğunda göster">
 <!ENTITY appMenuRemoteTabs.hidesidebar.label "Eşitlenmiş sekmeler kenar çubuğunu gizle">
@@ -508,6 +538,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      This is set as the aria-label attribute for the search input box in the
      in-content search UI, to be used by screen readers. -->
 <!ENTITY contentSearchInput.label     "Arama sorgusu">
+
 <!ENTITY contentSearchSubmit.tooltip  "Aramayı gönder">
 
 <!-- LOCALIZATION NOTE (searchInput.placeholder):
@@ -812,13 +843,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.connection "Bağlantı">
 <!ENTITY identity.connectionSecure "Güvenli bağlantı">
-
-<!-- LOCALIZATION NOTE (identity.securityView.label2)
-     This is the header of the security subview in the Site Identity panel. -->
-<!ENTITY identity.securityView.label2 "Bağlantı Güvenliği">
-
-<!ENTITY identity.connectionSecure2 "Bağlantı güvenli">
 <!ENTITY identity.connectionNotSecure "Bağlantı güvenli değil">
+
+<!ENTITY identity.connectionSecure3 "Bağlantı güvenli">
+<!ENTITY identity.connectionNotSecure2 "Bağlantı güvenli değil">
 <!ENTITY identity.connectionNotSecureSecurityView "Bu siteye güvenli bir şekilde bağlanmadınız.">
 <!ENTITY identity.connectionFile "Bu sayfa bilgisayarınızda depolanıyor.">
 <!ENTITY identity.connectionVerified2 "Bu siteye güvenli bir şekilde bağlandınız. Site sahibi:">
@@ -828,7 +856,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.insecureLoginForms2 "Bu sayfaya girilen hesap bilgileri ele geçirilebilir.">
 <!ENTITY identity.customRoot "Bağlantı, Mozilla’nın tanımadığı bir sertifika yayıncısı tarafından doğrulandı.">
 
-<!ENTITY identity.evOwnerLabel "Site sahibi:">
+<!ENTITY identity.evOwnerLabel2 "Sertifika sahibi:">
 
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "&brandShortName; bu sayfanın güvenli olmayan kısımlarını engelledi.">
@@ -864,8 +892,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.permissions "İzinler">
 
-<!-- LOCALIZATION NOTE (identity.permissions2): "set" as in "configured for this website" -->
-<!ENTITY identity.permissions2 "Ayarlanan izinler">
+<!ENTITY identity.permissions3 "İzinler">
 <!ENTITY identity.permissionsEmpty "Bu siteye özel bir izin vermediniz.">
 <!ENTITY identity.permissionsReloadHint "Değişikliklerin uygulanması için bu sayfayı tazelemeniz gerekebilir.">
 <!ENTITY identity.permissionsPreferences.tooltip "İzin tercihlerini aç">
@@ -878,7 +905,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      protections.etpMoreInfo.label: The text a screen reader speaks when focused on the info button. -->
 <!ENTITY protections.etpMoreInfo.label "Gelişmiş izlenme koruması hakkında daha fazla bilgi">
 <!ENTITY protections.settings.label "Koruma ayarları">
-<!ENTITY protections.report.label "Raporun tamamını göster">
+<!ENTITY protections.showreport.label "Raporu göster">
 <!-- LOCALIZATION NOTE:
      protections.siteNotWorking.label: The link to be clicked to open the sub-panel view
      protections.siteNotWorkingView.title: The heading/title of the sub-panel view -->
@@ -895,26 +922,34 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY protections.siteNotWorkingView.issueList.payments "Ödemeler">
 <!ENTITY protections.siteNotWorkingView.issueList.comments "Yorumlar">
 <!ENTITY protections.siteNotWorkingView.issueList.videos "Videolar">
-<!ENTITY protections.siteNotWorkingView.siteStillBroken.label "Korumaları kapatmanıza rağmen site düzgün çalışmıyor mu?">
 <!ENTITY protections.siteNotWorkingView.sendReport.label "Rapor gönderin">
 
+<!-- LOCALIZATION NOTE (protections.blocking2.label, protections.notBlocking2.label, protections.notFound.label):
+     In the protections panel, Content Blocking category items are in three sections:
+     "Blocked" for categories being blocked in the current page,
+     "Allowed" for categories detected but not blocked in the current page, and
+     "None Detected" for categories not detected in the current page.
+     These strings are used in the header labels of each of these sections. -->
 <!ENTITY protections.blocking2.label "Engellendi">
 <!ENTITY protections.notBlocking2.label "İzin verildi">
+<!ENTITY protections.notFound.label "Bulunmadı">
+<!-- LOCALIZATION NOTE (protections.notBlocking.why.label, protections.notBlocking.why.etp*.tooltip):
+     The "Allowed" header also includes a "Why?" link that, when hovered, shows
+     a tooltip explaining why these items were not blocked in the page. -->
 <!ENTITY protections.notBlocking.why.label "Neden?">
 <!ENTITY protections.notBlocking.why.etpOn.tooltip "Bunları engellemek bazı web sitelerini kısmen bozabilir. Takipçiler engellendiğinde bazı düğmeler, formlar ve giriş alanları çalışmayabilir.">
 <!ENTITY protections.notBlocking.why.etpOff.tooltip "Korumaları kapattığınızda bu sitedeki tüm takipçilere izin verilecektir. Önceden çalışmayan site işlevleri de çalışır hale gelebilir.">
-<!ENTITY protections.notFound.label "Hiçbir şey bulunamadı">
 <!ENTITY protections.socialMediaTrackers.label "Sosyal Medya Takipçileri">
 <!ENTITY protections.crossSiteTrackingCookies.label "Siteler arası takip çerezleri">
 <!ENTITY protections.trackingContent.label "Takip amaçlı içerikler">
 <!ENTITY protections.fingerprinters.label "Parmak izi toplayıcılar">
-<!ENTITY protections.cryptominers.label "Kripto madenciler">
+<!ENTITY protections.cryptominers.label "Kripto madencileri">
 <!ENTITY protections.noTrackersFound.description "Bu sayfada &brandShortName; tarayıcısının tanıdığı bir takipçi tespit edilmedi.">
 
-<!ENTITY protections.crossSiteTrackingCookies.description "Bu çerezler çevrimiçi olarak yaptığınız şeyler hakkında veriler toplamak için sizi siteden siteye takip eder. Reklamverenler ve analiz şirketleri gibi üçüncü taraflar tarafından ayarlanmışlardır.">
+<!ENTITY protections.crossSiteTrackingCookies.description "Bu çerezler, internette yaptığınız şeyler hakkında veri toplamak için sizi siteden siteye takip eder. Reklam verenler ve analiz şirketleri gibi üçüncü taraflar tarafından yerleştirilirler.">
 <!ENTITY protections.cryptominers.description "Kripto madencileri sayısal para madenciliğinde bulunmak için sisteminizin hesaplama gücünü kullanır. Kripto madencilik komut dosyaları pilinizi tüketir, bilgisayarınızı yavaşlatır ve elektrik faturanızı kabartabilir.">
 <!ENTITY protections.fingerprinters.description "Parmak izi toplayıcıları profilinizi oluşturmak için tarayıcı ve bilgisayarınızdaki ayarları toplarlar. Bu dijital parmak izini kullanarak farklı web siteler arasında sizi takip edebilirler.">
-<!ENTITY protections.trackingContent.description "Web siteleri; takip kodu içeren harici reklamlar, videolar ve başka içerikler yükleyebilir. Takip amaçlı içerikleri engellemek sitelerin daha hızlı yüklenmesini sağlayabilir ama bazı düğmeler, formlar ve giriş alanları çalışmayabilir.">
+<!ENTITY protections.trackingContent2.description "Web siteleri; takip kodu içeren harici reklamlar, videolar ve başka içerikler yükleyebilir. Takip amaçlı içerikleri engellemek sitelerin daha hızlı yüklenmesini sağlayabilir ama bazı düğmeler, formlar ve giriş alanları çalışmayabilir.">
 <!ENTITY protections.socialMediaTrackers.description "Sosya ağlar, internette yaptıklarınızı, gördüklerinizi ve izlediklerinizi takip etmek için diğer web sitelerine takipçiler yerleştirirler. Bu sayede sosyal medya şirketleri, sosyal medya profillerinizde paylaştıklarınızdan çok daha fazla şey öğrenebilir.">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
@@ -954,25 +989,25 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection3.label "Takipçiler">
 
 <!ENTITY contentBlocking.manageSettings.label "İçerik engellemeyi yönet">
-
-<!ENTITY contentBlocking.trackingProtection4.label "Takip amaçlı içerikler">
-
-<!ENTITY contentBlocking.manageSettings2.label "Koruma ayarlarını yönet">
 <!ENTITY contentBlocking.manageSettings.accesskey "e">
 
 <!ENTITY contentBlocking.trackersView.label "Takipçiler">
-
 <!ENTITY contentBlocking.trackersView.strictInfo.label "Tüm takipçileri engellemek için içerik engellemeyi “Sıkı” olarak ayarlayın.">
 
 <!ENTITY contentBlocking.cookies.label "Çerezler">
 <!ENTITY contentBlocking.cookiesView.label "Çerezler ve site verileri">
 
+<!ENTITY contentBlocking.trackingProtection4.label "Takip amaçlı içerikler">
+
+<!ENTITY contentBlocking.manageSettings2.label "Koruma ayarlarını yönet">
+<!ENTITY contentBlocking.manageSettings2.accesskey "K">
+
 <!ENTITY contentBlocking.socialblock.label "Sosyal medya takipçileri">
 
 <!ENTITY contentBlocking.cookies2.label "Siteler arası takip çerezleri">
 
-<!ENTITY contentBlocking.cryptominers.label "Kripto madenciler">
-<!ENTITY contentBlocking.cryptominersView.label "Kripto madenciler">
+<!ENTITY contentBlocking.cryptominers.label "Kripto madencileri">
+<!ENTITY contentBlocking.cryptominersView.label "Kripto madencileri">
 
 <!ENTITY contentBlocking.fingerprinters.label "Parmak izi toplayıcılar">
 <!ENTITY contentBlocking.fingerprintersView.label "Parmak izi toplayıcılar">
@@ -981,6 +1016,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView.label "Sorun bildir">
 <!ENTITY contentBlocking.breakageReportView2.description "İçerik engelleme bazı web sitelerinde sorunlara yol açabilir. Bu sorunları bize bildirirseniz &brandShortName; tarayıcısını iyileştirme şansımız olur. (Sorunlu sayfanın adresi ve tarayıcı ayarlarınızla ilgili bilgiler Mozilla’ya gönderilecektir.)">
 <!ENTITY contentBlocking.breakageReportView.learnMore "Daha fazla bilgi al">
+
 <!ENTITY contentBlocking.breakageReportView.title "Bozuk Bir Siteyi Bildirin">
 <!ENTITY contentBlocking.breakageReportView3.description "Bazı takipçileri engellemek bazı web sitelerinde sorunlara yol açabilir. Bu sorunları bize bildirirseniz &brandShortName; tarayıcısını iyileştirme şansımız olur. Bu rapor, sayfanın adresini ve tarayıcı ayarlarınızla ilgili bilgileri Mozilla’ya gönderir.">
 <!ENTITY contentBlocking.breakageReportView2.learnMore "Daha fazla bilgi alın">
@@ -1036,6 +1072,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY newTabControlled.disableButton.accesskey "E">
 
 <!ENTITY homepageControlled.message "Bir eklenti, giriş sayfanızı değiştirdi. Bu değişikliği istemiyorsanız önceki ayarlarınızı geri yükleyebilirsiniz.">
+
 <!ENTITY homepageControlled.header.message "Giriş sayfanız değişti.">
 <!ENTITY homepageControlled.keepButton.label "Değişiklikleri koru">
 <!ENTITY homepageControlled.keepButton.accesskey "D">

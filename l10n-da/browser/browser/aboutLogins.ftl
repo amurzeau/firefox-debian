@@ -40,8 +40,7 @@ menu-menuitem-preferences =
       [windows] Indstillinger
      *[other] Indstillinger
   }
-menu-menuitem-feedback = Indsend feedback
-menu-menuitem-faq = Ofte stillede spørgsmål
+about-logins-menu-menuitem-help = Hjælp
 menu-menuitem-android-app = { -lockwise-brand-short-name } til Android
 menu-menuitem-iphone-app = { -lockwise-brand-short-name } til iPhone og iPad
 
@@ -61,9 +60,18 @@ login-list-last-changed-option = Senest ændret
 login-list-last-used-option = Senest brugt
 login-list-intro-title = Ingen logins fundet
 login-list-intro-description = Når du gemmer et login i { -brand-product-name } vil det blive vist hér.
+about-logins-login-list-empty-search-title = Ingen logins fundet
+about-logins-login-list-empty-search-description = Din søgning gav ingen resultater
 login-list-item-title-new-login = Nyt login
 login-list-item-subtitle-new-login = Indtast login-oplysninger
 login-list-item-subtitle-missing-username = (intet brugernavn)
+
+about-logins-list-item-warning-icon = 
+  .alt = Advarselsikon
+  .title = Websted med datalæk
+
+about-logins-list-item-breach-icon =
+  .title = Websted med datalæk
 
 ## Introduction screen
 
@@ -71,7 +79,7 @@ login-intro-heading = Leder du efter dine gemte logins? Opsæt { -sync-brand-sho
 login-intro-description = Hvis du har gemt dine logins i { -brand-product-name } på en anden enhed, så skal du gøre sådan for at anvende dem her også:
 login-intro-instruction-fxa = Opret eller log ind på din { -fxaccount-brand-name } på den enhed, hvor dine logins er gemt
 login-intro-instruction-fxa-settings = Vær sikker på, at du har sat et flueben ud for Logins i { -sync-brand-short-name }-indstillingerne.
-login-intro-instruction-faq = Besøg  <a data-l10n-name="faq">ofte stillede spørgsmål</a> for { -lockwise-brand-short-name }, hvis du har brug for mere hjælp
+about-logins-intro-instruction-help = Besøg <a data-l10n-name="help-link">{ -lockwise-brand-short-name } denne side</a> for at få mere hjælp
 
 ## Login
 
@@ -81,10 +89,9 @@ login-item-delete-button = Slet
 login-item-origin-label = Webstedets adresse
 login-item-origin =
   .placeholder = https://www.eksempel.dk
-login-item-open-site-button = Åbn
 login-item-username-label = Brugernavn
-login-item-username =
-  .placeholder = navn@eksempel.dk
+about-logins-login-item-username =
+  .placeholder = (intet brugernavn)
 login-item-copy-username-button-text = Kopier
 login-item-copied-username-button-text = Kopieret!
 login-item-password-label = Adgangskode
@@ -141,3 +148,20 @@ breach-alert-text = Adgangskoder er blevet lækket eller stjålet fra dette webs
 breach-alert-link = Læs mere om denne datalæk.
 breach-alert-dismiss = 
     .title = Luk denne advarsel
+
+## Error Messages
+
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login = Der findes allerede et login for { $loginTitle } med samme brugernavn.
+
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = Der findes allerede et login for { $loginTitle } med samme brugernavn. <a data-l10n-name="duplicate-link">Gå til eksisterende login?</a>
+
+# This is a generic error message.
+about-logins-error-message-default = Der opstod en fejl med at gemme adgangskoden.

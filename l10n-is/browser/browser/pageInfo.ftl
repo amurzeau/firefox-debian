@@ -14,8 +14,6 @@ select-all =
 menu-select-all =
     .label = Velja allt
     .accesskey = j
-close-window =
-    .key = A
 general-tab =
     .label = Almennt
     .accesskey = A
@@ -119,6 +117,8 @@ security-site-data-cookies-only = Já, smákökur
 security-site-data-no = Nei
 image-size-unknown = Óþekkt
 not-set-verified-by = Ekki skilgreint
+page-info-not-specified =
+    .value = Ekki skilgreint
 not-set-alternative-text = Ekki skilgreint
 not-set-date = Ekki skilgreint
 media-img = Mynd
@@ -141,6 +141,8 @@ general-quirks-mode =
 general-strict-mode =
     .value = Staðalhamur
 security-no-owner = Þetta vefsvæði sendir ekki upplýsingar um eiganda.
+page-info-security-no-owner =
+    .value = Þetta vefsvæði sendir ekki upplýsingar um eiganda.
 media-select-folder = Veldu möppu til að vista myndirnar
 media-unknown-not-cached =
     .value = Óþekkt (ekki í skyndiminni)
@@ -176,6 +178,17 @@ properties-general-size =
         { $bytes ->
             [one] { $kb } KB ({ $bytes } bæti)
            *[other] { $kb } KB ({ $bytes } bæti)
+        }
+# This string is used to display the type and number
+# of frames of a animated image
+# Variables:
+#   $type (string) - The type of a animated image
+#   $frames (number) - The number of frames in an animated image
+media-animated-image-type =
+    .value =
+        { $frames ->
+            [one] { $type } Mynd (animated, { $frames } frame)
+           *[other] { $type } Myndir (animated, { $frames } frames)
         }
 # This string is used to display the type of
 # an image

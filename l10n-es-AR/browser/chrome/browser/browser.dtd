@@ -76,12 +76,21 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY menubarCmd.label "Barra de menú">
 <!ENTITY menubarCmd.accesskey "M">
 <!ENTITY navbarCmd.label "Barra de navegación">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY navbar.accessibleLabel "Navegación">
 <!ENTITY personalbarCmd.label "Barra de marcadores">
 <!ENTITY personalbarCmd.accesskey "B">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY personalbar.accessibleLabel "Marcadores">
 <!ENTITY bookmarksToolbarItem.label "Items de la barra de marcadores">
 
 <!ENTITY pageSourceCmd.label "Código fuente">
 <!ENTITY pageSourceCmd.accesskey "o">
+
 <!ENTITY pageSourceCmd.commandkey "u">
 <!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
 Option+Command keyboard shortcut letter that Safari and Chrome use for "View
@@ -92,6 +101,7 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 
 <!ENTITY pageInfoCmd.label "Información de la página">
 <!ENTITY pageInfoCmd.accesskey "I">
+
 <!ENTITY pageInfoCmd.commandkey "i">
 <!ENTITY ldbCmd.label "Depurador de diseño">
 <!ENTITY ldbCmd.accesskey "L">
@@ -116,6 +126,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaSignInError.label "Reconectar a &syncBrand.shortName.label;">
 <!ENTITY fxaUnverified.label "Verifique su cuenta">
 
+
+<!ENTITY togglePictureInPicture.key2 "}">
+<!ENTITY togglePictureInPicture.key "]"> <!-- } is above this key on many keyboards -->
 
 <!ENTITY fullScreenMinimize.tooltip "Minimizar">
 <!ENTITY fullScreenRestore.tooltip "Restaurar">
@@ -146,13 +159,24 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.menu.signedInAs.label "Ingresado como">
 <!ENTITY fxa.menu.manageAccount.label "Administrar cuenta…">
 <!ENTITY fxa.menu.syncSettings.label "Configuración de &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbar menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.syncSettings2.label "Configuración de &syncBrand.shortName.label;">
 <!ENTITY fxa.menu.connectAnotherDevice2.label "Conectar otro dispositivo…">
 <!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
 <!ENTITY fxa.menu.signin.label "Inicie sesión en &brandProductName;">
 <!ENTITY fxa.menu.turnOnSync.label "Activar &syncBrand.shortName.label;">
-<!ENTITY fxa.menu.account.label "Cuenta">
 <!ENTITY fxa.menu.firefoxServices.label "&brandProductName; Servicios">
+
+<!ENTITY fxa.menu.account.label "Cuenta">
+<!ENTITY fxa.menu.settings.label "Configuración">
+<!ENTITY fxa.menu.accountSettings.label "Configuración de la cuenta">
+<!ENTITY fxa.menu.signOut.label "Cerrar sesión…">
+<!ENTITY fxa.menu.deviceSettings.label "Ajustes del dispositivo">
+<!ENTITY fxa.menu.setupSync.label "Configurar &syncBrand.shortName.label;…">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
      for the Firefox Account toolbar menu screen.  -->
@@ -195,6 +219,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY bookmarksMenu.label "Marcadores">
 <!ENTITY bookmarksMenu.accesskey "M">
+
 <!ENTITY bookmarkThisPageCmd.label "Marcar esta página">
 <!ENTITY editThisBookmarkCmd.label "Editar este marcador">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
@@ -236,6 +261,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Administrar uso de plugins">
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "Cambiar si se reciben notificaciones del sitio">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Datos guardados en almacenamiento persistente">
+
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "El navegador está controlado remotamente">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Abrir el panel de autenticación Web">
 <!ENTITY urlbar.storageAccessAnchor.tooltip               "Abrir el panel de permisos de actividad de navegación">
@@ -250,18 +276,20 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Administrar uso de software DRM">
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "Abrir panel MIDI">
 
-<!ENTITY urlbar.cameraBlocked.tooltip            "Ha bloqueado la cámara para este sitio web.">
-<!ENTITY urlbar.microphoneBlocked.tooltip        "Ha bloqueado el micrófono para este sitio web.">
-<!ENTITY urlbar.screenBlocked.tooltip            "Ha bloqueado este sitio web para que no comparta la pantalla.">
-<!ENTITY urlbar.geolocationBlocked.tooltip       "Ha bloqueado la información de ubicación para este sitio web.">
-<!ENTITY urlbar.webNotificationsBlocked.tooltip  "Ha bloqueado notificaciones para este sitio web.">
-<!ENTITY urlbar.persistentStorageBlocked.tooltip "Se ha bloqueado el almacenamiento persistente para este sitio web.">
-<!ENTITY urlbar.popupBlocked.tooltip             "Ha bloquedo emergentes para este sitio web.">
-<!ENTITY urlbar.autoplayMediaBlocked.tooltip     "Bloqueó el micrófono para este sitio web.">
-<!ENTITY urlbar.canvasBlocked.tooltip            "Se ha bloqueado la extracción de datos de canvas para este sitio web.">
+<!ENTITY urlbar.permissionsGranted.tooltip       "Otorgó a este sitio web permisos adicionales.">
+
+<!ENTITY urlbar.cameraBlocked.tooltip            "Bloqueó la cámara para este sitio web.">
+<!ENTITY urlbar.microphoneBlocked.tooltip        "Bloqueó el micrófono para este sitio web.">
+<!ENTITY urlbar.screenBlocked.tooltip            "Bloqueó este sitio web para que no comparta la pantalla.">
+<!ENTITY urlbar.geolocationBlocked.tooltip       "Bloqueó la información de ubicación para este sitio web.">
+<!ENTITY urlbar.webNotificationsBlocked.tooltip  "Bloqueó las notificaciones para este sitio web.">
+<!ENTITY urlbar.persistentStorageBlocked.tooltip "Bloqueó el almacenamiento persistente para este sitio web.">
+<!ENTITY urlbar.popupBlocked.tooltip             "Bloqueó las ventanas emergentes para este sitio web.">
+<!ENTITY urlbar.autoplayMediaBlocked.tooltip     "Bloqueó los medios de reproducción automática con sonido para este sitio web.">
+<!ENTITY urlbar.canvasBlocked.tooltip            "Bloqueó la extracción de datos de canvas para este sitio web.">
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "Bloqueó esta web para que no use el plugin de Adobe Flash.">
-<!ENTITY urlbar.midiBlocked.tooltip              "Ha bloqueado el acceso a MIDI para este sitio web.">
-<!ENTITY urlbar.installBlocked.tooltip           "Ha bloqueado la instalación de complementos para este sitio web.">
+<!ENTITY urlbar.midiBlocked.tooltip              "Bloqueó el acceso a MIDI para este sitio web.">
+<!ENTITY urlbar.installBlocked.tooltip           "Bloqueó la instalación de complementos para este sitio web.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Mostrar historial">
 
@@ -419,8 +447,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "¿Desea ver las pestañas de sus otros dispositivos acá?">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Abrir las preferencias de Sync">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Ingrese para ver una lista de pestañas de los otros dispositivos.">
+<!ENTITY appMenuRemoteTabs.welcome.label "Ver una lista de pestañas de sus otros dispositivos.">
 <!ENTITY appMenuRemoteTabs.unverified.label "La cuenta necesita ser verificada.">
 <!ENTITY appMenuRemoteTabs.signin.label "Ingresar a Sync">
+<!ENTITY appMenuRemoteTabs.signintosync.label "Iniciar sesión en &syncBrand.shortName.label;…">
+<!ENTITY appMenuRemoteTabs.turnonsync.label "Habilitar &syncBrand.shortName.label;…">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Administrar dispositivos...">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Ver barra lateral de pestañas sincronizadas">
 <!ENTITY appMenuRemoteTabs.hidesidebar.label "Ocultar la Barra lateral de Pestañas sincronizadas">
@@ -508,6 +539,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      This is set as the aria-label attribute for the search input box in the
      in-content search UI, to be used by screen readers. -->
 <!ENTITY contentSearchInput.label     "Pedido de búsqueda">
+
 <!ENTITY contentSearchSubmit.tooltip  "Enviar búsqueda">
 
 <!-- LOCALIZATION NOTE (searchInput.placeholder):
@@ -812,13 +844,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.connection "Conexión">
 <!ENTITY identity.connectionSecure "Conexión segura">
-
-<!-- LOCALIZATION NOTE (identity.securityView.label2)
-     This is the header of the security subview in the Site Identity panel. -->
-<!ENTITY identity.securityView.label2 "Seguridad de la conexión">
-
-<!ENTITY identity.connectionSecure2 "Conexión asegurada">
 <!ENTITY identity.connectionNotSecure "Conexión insegura">
+
+<!ENTITY identity.connectionSecure3 "Conexión segura">
+<!ENTITY identity.connectionNotSecure2 "Conexión insegura">
 <!ENTITY identity.connectionNotSecureSecurityView "Su conexión a este sitio no es segura.">
 <!ENTITY identity.connectionFile "Esta página está guardada en su computadora.">
 <!ENTITY identity.connectionVerified2 "La conexión a este sitio es segura, provisto por:">
@@ -828,10 +857,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.insecureLoginForms2 "Los ingresos en esta página pueden estar comprometidos.">
 <!ENTITY identity.customRoot "Conexión verificada por un emisor de certificados no reconocido por Mozilla.">
 
-<!ENTITY identity.evOwnerLabel "El dueño de este sitio es:">
+<!ENTITY identity.evOwnerLabel2 "Certificado emitido a:">
 
 <!-- Strings for connection state warnings. -->
-<!ENTITY identity.activeBlocked "&brandShortName; ha bloqueado partes de esta página que no son seguras.">
+<!ENTITY identity.activeBlocked "&brandShortName; bloqueó las partes de esta página que no son seguras.">
 <!ENTITY identity.passiveLoaded "Partes de esta página no son seguras (como las imágenes).">
 <!ENTITY identity.activeLoaded "Ha deshabilitado la protección en esta página.">
 <!ENTITY identity.weakEncryption "Esta página usa cifrado débil.">
@@ -841,10 +870,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.description.insecureLoginForms "La información de ingreso que se usó en esta página no es segura puede estar comprometida.">
 <!ENTITY identity.description.weakCipher "La conexión a este sitio usa cifrado débil y no es privada.">
 <!ENTITY identity.description.weakCipher2 "Otras personas pueden ver la información o modificar el comportamiento del sitio.">
-<!ENTITY identity.description.activeBlocked "&brandShortName; ha bloqueado partes de esta página que no son seguras.">
+<!ENTITY identity.description.activeBlocked "&brandShortName; bloqueó las partes de esta página que no son seguras.">
 <!ENTITY identity.description.passiveLoaded "La conexión no es privada y la información que se comparta con el sitio puede ser vista por otros.">
 <!ENTITY identity.description.passiveLoaded2 "Este sitio incluye contenido que no es seguro (como las imágenes).">
-<!ENTITY identity.description.passiveLoaded3 "Aunque &brandShortName; ha bloqueado algún contenido, aún hay contenido en la página que no es seguro (como las imágenes).">
+<!ENTITY identity.description.passiveLoaded3 "Aunque &brandShortName; bloqueó algún contenido, todavía hay contenido en la página que no es seguro (tal como las imágenes).">
 <!ENTITY identity.description.activeLoaded "Este sitio incluye contenido que no es seguro (como scripts) y la conexión no es privada.">
 <!ENTITY identity.description.activeLoaded2 "La información compartida con este sitio puede ser vista por otros (como contraseñas, mensajes, tarjetas de crédito, etc.).">
 <!ENTITY identity.description.customRoot "Mozilla no reconoce a este emisor de certificados. Puede haber sido agregado desde el sistema operativo o por un administrador.">
@@ -864,21 +893,20 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.permissions "Permisos">
 
-<!-- LOCALIZATION NOTE (identity.permissions2): "set" as in "configured for this website" -->
-<!ENTITY identity.permissions2 "Ajuste de permisos">
+<!ENTITY identity.permissions3 "Permisos">
 <!ENTITY identity.permissionsEmpty "No ha dado permisos especiales a este sitio.">
 <!ENTITY identity.permissionsReloadHint "Hay que recargar la página para que se apliquen los cambios.">
 <!ENTITY identity.permissionsPreferences.tooltip "Abrir las preferencias de permisos">
 <!ENTITY identity.contentBlockingPreferences.tooltip "Abrir Preferencias de bloqueo de contenido">
 
 
-<!ENTITY protections.etpON.header "La protección contra rastreo mejorada ahora está habilitada para este sitio">
-<!ENTITY protections.etpOFF.header "La protección contra rastreo mejorada ahora está deshabilitada para este sitio">
+<!ENTITY protections.etpON.header "La protección contra rastreo aumentada ahora está habilitada para este sitio">
+<!ENTITY protections.etpOFF.header "La protección contra rastreo aumentada ahora está deshabilitada para este sitio">
 <!-- LOCALIZATION NOTE:
      protections.etpMoreInfo.label: The text a screen reader speaks when focused on the info button. -->
-<!ENTITY protections.etpMoreInfo.label "Más información sobre la protección de seguimiento mejorada">
+<!ENTITY protections.etpMoreInfo.label "Más información sobre la protección contra rastreo aumentada">
 <!ENTITY protections.settings.label "Configuración de protección">
-<!ENTITY protections.report.label "Mostrar informe completo">
+<!ENTITY protections.showreport.label "Mostrar informe">
 <!-- LOCALIZATION NOTE:
      protections.siteNotWorking.label: The link to be clicked to open the sub-panel view
      protections.siteNotWorkingView.title: The heading/title of the sub-panel view -->
@@ -895,26 +923,34 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY protections.siteNotWorkingView.issueList.payments "Pagos">
 <!ENTITY protections.siteNotWorkingView.issueList.comments "Comentarios">
 <!ENTITY protections.siteNotWorkingView.issueList.videos "Videos">
-<!ENTITY protections.siteNotWorkingView.siteStillBroken.label "¿El sitio sigue sin cargarse después de deshabilitar las protecciones?">
 <!ENTITY protections.siteNotWorkingView.sendReport.label "Enviar informe">
 
+<!-- LOCALIZATION NOTE (protections.blocking2.label, protections.notBlocking2.label, protections.notFound.label):
+     In the protections panel, Content Blocking category items are in three sections:
+     "Blocked" for categories being blocked in the current page,
+     "Allowed" for categories detected but not blocked in the current page, and
+     "None Detected" for categories not detected in the current page.
+     These strings are used in the header labels of each of these sections. -->
 <!ENTITY protections.blocking2.label "Bloqueado">
 <!ENTITY protections.notBlocking2.label "Permitido">
+<!ENTITY protections.notFound.label "Ninguno detectado">
+<!-- LOCALIZATION NOTE (protections.notBlocking.why.label, protections.notBlocking.why.etp*.tooltip):
+     The "Allowed" header also includes a "Why?" link that, when hovered, shows
+     a tooltip explaining why these items were not blocked in the page. -->
 <!ENTITY protections.notBlocking.why.label "¿Por qué?">
 <!ENTITY protections.notBlocking.why.etpOn.tooltip "Bloquear estos podría dañar elementos de algunos sitios web. Sin rastreadores algunos botones, formularios y campos de inicio de sesión podrían no funcionar.">
 <!ENTITY protections.notBlocking.why.etpOff.tooltip "Desactivar las protecciones habilitará todos los rastreadores en este sitio. También puede mejorar su funcionalidad.">
-<!ENTITY protections.notFound.label "Ninguno detectado">
 <!ENTITY protections.socialMediaTrackers.label "Rastreadores de redes sociales">
 <!ENTITY protections.crossSiteTrackingCookies.label "Cookies de rastreo de sitios cruzados">
 <!ENTITY protections.trackingContent.label "Contenido de rastreo">
-<!ENTITY protections.fingerprinters.label "Identificadores de huellas digitales">
+<!ENTITY protections.fingerprinters.label "Detectores de huellas digitales">
 <!ENTITY protections.cryptominers.label "Criptomineros">
-<!ENTITY protections.noTrackersFound.description "No hay rastreadores conocidos para &brandShortName; fueron detectados en esta página.">
+<!ENTITY protections.noTrackersFound.description "No se detectaron rastreadores conocidos para &brandShortName; en esta página.">
 
 <!ENTITY protections.crossSiteTrackingCookies.description "Estas cookies lo siguen de un sitio a otro para recopilar datos sobre lo que hace en línea. Las establecen terceros, como anunciantes y empresas de análisis.">
 <!ENTITY protections.cryptominers.description "Los criptomineros utilizan la potencia informática de su sistema para extraer dinero digital. Las secuencias de comandos de cifrado de los mismos agotan su batería, ralentizan su computadora y pueden aumentar su factura de electricidad.">
-<!ENTITY protections.fingerprinters.description "Los identificadores de huellas digitales recopilan la configuración de su navegador y computadora para crear un perfil suyo. Usando esta huella digital, pueden rastrearlo a través de diferentes sitios web.">
-<!ENTITY protections.trackingContent.description "Los sitios web pueden cargar anuncios externos, videos y otro contenido que contenga código de rastreo. El bloqueo del contenido de rastreo puede ayudar a que los sitios se carguen más rápido, pero es posible que algunos botones, formularios y campos de inicio de sesión no funcionen.">
+<!ENTITY protections.fingerprinters.description "Los detectores de huellas digitales recolectan la configuración de su navegador y su computadora para crear un perfil suyo. Usando este detector de huella digital pueden seguirlo a través de diferentes sitios web.">
+<!ENTITY protections.trackingContent2.description "Los sitios pueden cargar publicidades externas, videos y otro contenido con código de rastreo. Bloquear el contenido de rastreo puede ayudar a que los sitios carguen más rápido pero algunos botones, formularios y campos de ingreso pueden dejar de funcionar.">
 <!ENTITY protections.socialMediaTrackers.description "Las redes sociales ubican rastreadores en otros sitios web para seguir lo que hace, ve y mira en línea. Esto permite que las empresas de redes sociales aprendan más sobre usted más allá de lo que comparte en sus perfiles de redes sociales.">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
@@ -954,18 +990,18 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection3.label "Rastreadores">
 
 <!ENTITY contentBlocking.manageSettings.label "Administrar el Bloqueo de contenido">
-
-<!ENTITY contentBlocking.trackingProtection4.label "Contenido de rastreo">
-
-<!ENTITY contentBlocking.manageSettings2.label "Administrar la configuración de protección">
 <!ENTITY contentBlocking.manageSettings.accesskey "M">
 
 <!ENTITY contentBlocking.trackersView.label "Rastreadores">
-
 <!ENTITY contentBlocking.trackersView.strictInfo.label "Para bloquear todos los rastreadores, configure el bloqueo de contenido en “Estricto”.">
 
 <!ENTITY contentBlocking.cookies.label "Cookies">
 <!ENTITY contentBlocking.cookiesView.label "Cookies y datos del sitio">
+
+<!ENTITY contentBlocking.trackingProtection4.label "Contenido de rastreo">
+
+<!ENTITY contentBlocking.manageSettings2.label "Administrar la configuración de protección">
+<!ENTITY contentBlocking.manageSettings2.accesskey "M">
 
 <!ENTITY contentBlocking.socialblock.label "Rastreadores de redes sociales">
 
@@ -974,13 +1010,14 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.cryptominers.label "Cryptominers">
 <!ENTITY contentBlocking.cryptominersView.label "Cryptominers">
 
-<!ENTITY contentBlocking.fingerprinters.label "Fingerprinters">
-<!ENTITY contentBlocking.fingerprintersView.label "Fingerprinters">
+<!ENTITY contentBlocking.fingerprinters.label "Detectores de huellas digitales">
+<!ENTITY contentBlocking.fingerprintersView.label "Detectores de huellas digitales">
 
 <!ENTITY contentBlocking.openBreakageReportView2.label "Informar sobre un problema">
 <!ENTITY contentBlocking.breakageReportView.label "Informar problemas">
 <!ENTITY contentBlocking.breakageReportView2.description "El bloqueo de contenido puede causar problemas con algunos sitios. Cuando informa sobre problemas, ayuda a mejorar &brandShortName; para todos. (Esto enviará la URL a Mozilla así como la información de la configuración del navegador).">
 <!ENTITY contentBlocking.breakageReportView.learnMore "Conocer más">
+
 <!ENTITY contentBlocking.breakageReportView.title "Informar de un sitio que no se carga">
 <!ENTITY contentBlocking.breakageReportView3.description "El bloqueo de ciertos rastreadores puede causar problemas con algunos sitios web. Informar sobre estos problemas ayuda a que &brandShortName; sea mejor para todos. Al enviar este informe, se enviará a Mozilla una URL e información sobre la configuración de su navegador.">
 <!ENTITY contentBlocking.breakageReportView2.learnMore "Aprender más">
@@ -1036,6 +1073,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY newTabControlled.disableButton.accesskey "D">
 
 <!ENTITY homepageControlled.message "Una extensión cambió lo que ve como su página de inicio. Puede restaurar su configuración si no desea este cambio.">
+
 <!ENTITY homepageControlled.header.message "Cambió su página de inicio.">
 <!ENTITY homepageControlled.keepButton.label "Mantener los cambios">
 <!ENTITY homepageControlled.keepButton.accesskey "K">

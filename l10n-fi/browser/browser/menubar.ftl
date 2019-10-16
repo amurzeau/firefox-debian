@@ -153,7 +153,7 @@ menu-view-full-screen =
     .label = Kokoruututila
     .accesskey = K
 
-##
+
 
 menu-view-show-all-tabs =
     .label = Näytä kaikki välilehdet
@@ -212,6 +212,9 @@ menu-tools-addons =
 menu-tools-sync-sign-in =
     .label = Kirjaudu { -sync-brand-short-name }-palveluun…
     .accesskey = K
+menu-tools-turn-on-sync =
+    .label = Ota { -sync-brand-short-name } käyttöön…
+    .accesskey = O
 menu-tools-sync-now =
     .label = Synkronoi
     .accesskey = S
@@ -255,10 +258,10 @@ menu-help =
     .label = Ohje
     .accesskey = O
 menu-help-product =
-    .label = { -brand-shorter-name }in ohje
-    .accesskey = o
+    .label = Ohjelman ohje
+    .accesskey = O
 menu-help-show-tour =
-    .label = { -brand-shorter-name }in esittely
+    .label = Ohjelman esittely
     .accesskey = e
 menu-help-keyboard-shortcuts =
     .label = Näppäinkomennot

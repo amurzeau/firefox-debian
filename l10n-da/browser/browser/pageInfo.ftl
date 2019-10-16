@@ -17,9 +17,6 @@ menu-select-all =
     .label = Marker alt
     .accesskey = a
 
-close-window =
-    .key = A
-
 close-dialog =
     .key = w
 
@@ -135,6 +132,8 @@ security-site-data-no = Nej
 
 image-size-unknown = Ukendt
 not-set-verified-by = Ikke angivet
+page-info-not-specified =
+    .value = Ikke angivet
 not-set-alternative-text = Ikke angivet
 not-set-date = Ikke angivet
 media-img = Billede
@@ -158,6 +157,8 @@ general-quirks-mode =
 general-strict-mode =
     .value = Standardoverholdelsestilstand
 security-no-owner = Dette websted leverer ingen ejerskabsinformation.
+page-info-security-no-owner =
+    .value = Dette websted leverer ingen ejerskabsinformation.
 media-select-folder = Vælg en mappe hvor billederne gemmes
 media-unknown-not-cached =
     .value = Ukendt (ikke i cache)

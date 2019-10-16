@@ -23,16 +23,21 @@
 <!ENTITY firstrun_sync_title "Sync">
 <!ENTITY updatednewfirstrun_sync_title "Conta">
 <!ENTITY firstrun_sync_message2 "Continue de onde parou.">
+<!ENTITY firstrun_sync_message3 "Sincronize seus favoritos, histórico e senhas com seu celular.">
 <!ENTITY firstrun_sync_subtext2 "Use o Sync para encontrar os favoritos, senhas e outras coisas que você salva no &brandShortName; em todos os seus dispositivos.">
 <!ENTITY newfirstrun_sync_subtext "Sincronize as coisas que você salva no celular para o Firefox do computador, com privacidade e segurança.">
 <!ENTITY updatednewfirstrun_sync_subtext "Entre na sua conta para aproveitar ao máximo o &brandShortName;">
 <!ENTITY firstrun_signin_message "Conecte-se para iniciar">
+<!ENTITY firstrun_sendtab_title "Enviar aba">
+<!ENTITY firstrun_sendtab_message "Compartilhe abas do celular para o computador — imediatamente.">
 <!ENTITY firstrun_signin_button "Entrar no Sync">
 <!ENTITY newfirstrun_signin_button "Ativar o Sync">
 <!ENTITY updatednewfirstrun_signin_button "Entrar no &brandShortName;">
-<!ENTITY  onboard_start_button_browser "Iniciar navegação">
+<!ENTITY onboard_start_button_browser "Iniciar navegação">
 <!ENTITY firstrun_button_notnow "Agora não">
 <!ENTITY firstrun_button_next "Próximo">
+
+<!ENTITY firstrun_signin_button2 "Entrar">
 
 <!ENTITY firstrun_tabqueue_title "Links">
 
@@ -44,6 +49,8 @@
 <!-- Localization note (firstrun_devices_title): This is a casual way of addressing the user, somewhat referring to their online identity (which would include other devices, Firefox usage, accounts, etc). -->
 <!ENTITY firstrun_account_title "Você">
 <!ENTITY firstrun_account_message "Tem o &brandShortName; em outro dispositivo?">
+
+<!ENTITY firstrun_signup_button "Criar uma conta">
 
 <!ENTITY  onboard_start_restricted1 "Fique seguro e no controle com esta versão simplificada do &brandShortName;.">
 
@@ -278,7 +285,7 @@
 <!ENTITY pref_cookies_menu "Cookies">
 <!ENTITY pref_cookies_accept_all "Ativados">
 <!ENTITY pref_cookies_not_accept_foreign "Ativados, exceto de terceiros">
-<!ENTITY pref_cookies_not_accept_trackers "Ativado, exceto cookies de rastreamento">
+<!ENTITY pref_cookies_not_accept_trackers "Ativados, exceto cookies de rastreamento">
 <!ENTITY pref_cookies_disabled "Desativados">
 
 <!-- Localization note (pref_category_data_saver): “data saver” in this
@@ -378,7 +385,7 @@ shown from Android O while a tab is being queued.-->
      The action is shown below a header saying "Clear private data"; See pref_clear_private_data -->
 <!ENTITY pref_clear_private_data_now_tablet "Limpar agora">
 <!ENTITY pref_clear_on_exit_title3 "Limpar dados ao sair">
-<!ENTITY pref_clear_on_exit_summary2 "O &brandShortName; limpará automaticamente seus dados sempre que selecionar \&quot;Sair\&quot; no menu principal">
+<!ENTITY pref_clear_on_exit_summary2 "O &brandShortName; limpará automaticamente seus dados sempre que selecionar \&quot;Sair\&quot; no menu principal (aparece no menu ao marcar esta opção)">
 <!ENTITY pref_clear_on_exit_dialog_title "Selecionar quais dados limpar">
 <!ENTITY pref_restore_tabs "Restaurar abas">
 <!ENTITY pref_restore_always "Restaurar sempre">
@@ -495,6 +502,7 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY share "Compartilhar">
 <!ENTITY share_title "Compartilhar via">
 <!ENTITY share_image_failed "Não foi possível compartilhar esta imagem">
+<!ENTITY share_error_toast_message "Não foi possível compartilhar com o app indicado">
 <!ENTITY save_as_pdf "Salvar como PDF">
 <!ENTITY print "Imprimir">
 <!ENTITY view_page_source "Ver código-fonte da página">
@@ -595,7 +603,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_location "Endereço">
 <!ENTITY bookmark_edit_keyword "Palavra-chave">
 <!ENTITY bookmark_select_folder "Selecionar pasta">
-
 <!ENTITY bookmark_edit_undo "Desfazer">
 
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
@@ -689,6 +696,7 @@ shown from Android O while a tab is being queued.-->
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "Conectado a">
+
 <!-- Localization note (identity_run_by) : This string appears between a
 domain name (above) and an organization name (below). E.g.
 
@@ -878,6 +886,18 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_title "Disponível offline">
 <!ENTITY helper_triple_readerview_open_message "Marcar itens do leitor para lê-los offline.">
 <!ENTITY helper_triple_readerview_open_button "Adicionar aos favoritos">
+
+<!-- LOCALIZATION NOTE (activity_stream_signin_title, activity_stream_signin_description, activity_stream_signup_button,
+activity_stream_signin_prompt, activity_stream_signin_prompt_button):
+- These labels are shown in the Activity Stream recommending the user to sign in. -->
+<!ENTITY activity_stream_signin_title "Boas-vindas ao &brandShortName;">
+<!ENTITY activity_stream_signin_description "Comece a sincronizar favoritos, senhas e muito mais com sua Conta Firefox.">
+<!ENTITY activity_stream_signin_button "Entrar">
+
+<!ENTITY activity_stream_signup_button "Criar uma conta">
+<!ENTITY activity_stream_signin_prompt "Já tem uma conta?">
+<!-- LOCALIZATION NOTE (activity_stream_signin_prompt_button): To be used in continuation of activity_stream_signin_prompt. -->
+<!ENTITY activity_stream_signin_prompt_button "Entre.">
 
 <!ENTITY activity_stream_topsites "Sites preferidos">
 <!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->

@@ -259,6 +259,62 @@ applications-type-column =
 applications-action-column =
     .label = Dejanje
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = Datoteka { $extension }
+applications-action-save =
+    .label = Shrani datoteko
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Uporabi { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Uporabi { $app-name } (privzeto)
+applications-use-other =
+    .label = Uporabi drugo …
+applications-select-helper = Izbira pomožnega programa
+applications-manage-app =
+    .label = Podrobnosti programa …
+applications-always-ask =
+    .label = Vedno vprašaj
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Uporabi { $plugin-name } (v { -brand-short-name })
+applications-preview-inapp =
+    .label = Predogled v { -brand-short-name }u
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = Vsebina upravljanja digitalnih pravic (DRM)
 play-drm-content =
     .label = Predvajaj vsebino, zaščiteno z DRM
@@ -340,11 +396,15 @@ browsing-use-onscreen-keyboard =
     .label = Prikaži tipkovnico na dotik, ko je potrebno
     .accesskey = o
 browsing-use-cursor-navigation =
-    .label = Vselej uporabi tipke na tipkovnici za navigacijo po straneh
+    .label = Vselej uporabljaj puščice na tipkovnici za krmarjenje po straneh
     .accesskey = t
 browsing-search-on-start-typing =
     .label = Začni iskati ob začetku tipkanja
     .accesskey = k
+browsing-picture-in-picture-toggle-enabled =
+    .label = Omogoči kontrolnike za sliko v sliki
+    .accesskey = s
+browsing-picture-in-picture-learn-more = Več o tem
 browsing-cfr-recommendations =
     .label = Med brskanjem priporoči razširitve
     .accesskey = r
@@ -453,6 +513,12 @@ search-bar-shown =
     .label = Dodaj iskalno vrstico v orodno vrstico
 search-engine-default-header = Privzet iskalnik
 search-engine-default-desc = Izberite privzeti iskalnik, ki ga želite uporabiti v naslovni in iskalni vrstici.
+search-engine-default-private-desc = Izberite privzeti iskalnik v zasebnih oknih.
+search-separate-default-engine =
+    .label = Uporabi ta iskalnik v zasebnih oknih
+    .accesskey = i
+search-suggestions-header = Predlogi za iskanje
+search-suggestions-desc = Izberite, kako naj se prikazujejo predlogi iskalnikov.
 search-suggestions-option =
     .label = Predlogi iskanja
     .accesskey = s
@@ -466,6 +532,7 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Med rezultati naslovne vrstice prikaži predloge iskanja pred zgodovino brskanja
+suggestions-addressbar-settings = Spremeni nastavitve za zgodovino brskanja, zaznamke in predloge zavihkov
 search-suggestions-cant-show = Predlogi iskanja v vrstici z naslovom ne bodo prikazani, ker ste { -brand-short-name } nastavili tako, da si nikoli ne zapomni zgodovine.
 search-one-click-header = Iskalniki, dostopni z enim klikom
 search-one-click-desc = Izberite nadomestne iskalnike, ki se pojavijo pod naslovno in iskalno vrstico, ko začnete vnašati ključno besedo.
@@ -502,6 +569,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Ponesite svoj splet s seboj
 sync-signedout-description = Sinhronizirajte zaznamke, zgodovino, zavihke, gesla, dodatke in nastavitve vseh vaših naprav.
 sync-signedout-account-title = Poveži s { -fxaccount-brand-name }om
@@ -522,11 +593,17 @@ sync-mobile-promo = Prenesite Firefox za <img data-l10n-name="android-icon"/> <a
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = Spremeni sliko profila
 sync-disconnect =
     .label = Odklopi …
     .accesskey = k
+sync-sign-out =
+    .label = Odjava …
+    .accesskey = j
 sync-manage-account = Upravljanje računa
     .accesskey = U
 sync-signedin-unverified = { $email } ni potrjen.
@@ -542,6 +619,48 @@ sync-sign-in =
     .accesskey = P
 sync-signedin-settings-header = Nastavitve Synca
 sync-signedin-settings-desc = Izberite, kaj želite sinhronizirati med svojimi napravami s pomočjo { -brand-short-name }a
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Sinhronizacija: OMOGOČENO
+prefs-syncing-off = Sinhronizacija: ONEMOGOČENO
+prefs-sync-setup =
+    .label = Nastavi { -sync-brand-short-name } …
+    .accesskey = s
+prefs-sync-offer-setup-label = Sinhronizirajte zaznamke, zgodovino, zavihke, gesla, dodatke in nastavitve vseh vaših naprav.
+prefs-sync-now =
+    .labelnotsyncing = Sinhroniziraj zdaj
+    .accesskeynotsyncing = z
+    .labelsyncing = Sinhroniziranje …
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = Trenutno se sinhronizirajo naslednji podatki:
+sync-currently-syncing-bookmarks = Zaznamki
+sync-currently-syncing-history = Zgodovina
+sync-currently-syncing-tabs = Odprti zavihki
+sync-currently-syncing-logins-passwords = Prijave in gesla
+sync-currently-syncing-addresses = Naslovi
+sync-currently-syncing-creditcards = Kreditne kartice
+sync-currently-syncing-addons = Dodatki
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Možnosti
+       *[other] Nastavitve
+    }
+sync-change-options =
+    .label = Spremeni …
+    .accesskey = S
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = Izberite, kaj želite sinhronizirati
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Shrani spremembe
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = Odklopi …
+    .buttonaccesskeyextra2 = d
 sync-engine-bookmarks =
     .label = Zaznamke
     .accesskey = m
@@ -555,6 +674,10 @@ sync-engine-tabs =
 sync-engine-logins =
     .label = Prijave
     .tooltiptext = Shranjena uporabniška imena in gesla
+    .accesskey = P
+sync-engine-logins-passwords =
+    .label = Prijave in gesla
+    .tooltiptext = Uporabniška imena in gesla, ki ste jih shranili
     .accesskey = P
 sync-engine-addresses =
     .label = Naslove
@@ -576,6 +699,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Spremenjene splošne nastavitve ter nastavitve zasebnosti in varnosti
     .accesskey = N
+
+## The device name controls.
+
 sync-device-name-header = Ime naprave
 sync-device-name-change =
     .label = Spremeni ime naprave …
@@ -608,6 +734,10 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Predlagaj in ustvarjaj močna gesla
     .accesskey = u
+forms-breach-alerts =
+    .label = Prikaži opozorila o geslih za ogrožene spletne strani
+    .accesskey = P
+forms-breach-alerts-learn-more-link = Več o tem
 forms-fill-logins-and-passwords =
     .label = Samodejno izpolni prijave in gesla
     .accesskey = S
@@ -620,6 +750,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Nastavi glavno geslo …
     .accesskey = G
+forms-master-pw-fips-title = Trenutno ste v načinu FIPS. FIPS zahteva glavno geslo, ki ni prazno.
+forms-master-pw-fips-desc = Sprememba gesla neuspešna
 
 ## Privacy Section - History
 
@@ -725,8 +857,9 @@ addressbar-suggestions-settings = Spremeni nastavitve predlogov iskanja
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Zavračanje vsebine
-content-blocking-enhanced-tracking-protection = Izboljšana zaščita pred sledenjem
 content-blocking-section-description = Zaščitite svojo zasebnost med brskanjem. Zavrnite nevidno vsebino, ki spremlja vaše obiskane strani in ustvarja profil o vas. Če zavrnete nekaj te vsebine, se lahko strani hitreje naložijo.
+content-blocking-enhanced-tracking-protection = Izboljšana zaščita pred sledenjem
+content-blocking-section-top-level-description = Sledilci vas spremljajo po spletu ter zbirajo podatke o vaših navadah in zanimanjih. { -brand-short-name } zavrača veliko teh sledilcev in drugih zlonamernih skriptov.
 content-blocking-learn-more = Več o tem
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -744,6 +877,23 @@ content-blocking-strict-description = Močnejša zaščita; lahko povzroči nede
 content-blocking-custom-desc = Izberite, kaj želite zavračati.
 content-blocking-private-trackers = Znane sledilce samo v zasebnih oknih
 content-blocking-third-party-cookies = Sledilne piškotke tretjih strani
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Običajno
+    .accesskey = č
+enhanced-tracking-protection-setting-strict =
+    .label = Strogo
+    .accesskey = S
+enhanced-tracking-protection-setting-custom =
+    .label = Po meri
+    .accesskey = m
+
+
+
 content-blocking-etp-standard-desc = Uravnotežena zaščita in delovanje. Strani bodo delovale običajno.
 content-blocking-etp-strict-desc = Močnejša zaščita, ki pa lahko povzroči nedelovanje nekaterih strani ali vsebine.
 content-blocking-etp-custom-desc = Izberite, katere sledilce in skripte želite zavračati.

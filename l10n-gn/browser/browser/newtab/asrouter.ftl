@@ -82,6 +82,30 @@ cfr-whatsnew-button =
     .label = Oĩpa mba'e pyahu
     .tooltiptext = Oĩpa mba'e pyahu
 cfr-whatsnew-panel-header = Oĩpa mba'e pyahu
+cfr-whatsnew-release-notes-link-text = Emoñe’ẽ jehaipy rehegua
+cfr-whatsnew-fx70-title = { -brand-short-name } oñorairõve ne ñemigua rehe
+cfr-whatsnew-fx70-body = Ñembohekopyahu omo’ã porãve jehapykuehópe ha ikatu emoheñói ñe’ẽñemi hekorosãva peteĩteĩva tendápe g̃uarã.
+cfr-whatsnew-tracking-protect-title = Eñemo’ã tapykuehohágui
+cfr-whatsnew-tracking-protect-body =
+    { -brand-short-name } ojoko heta tapykuehoha ava’atygua ha tenda ojuasáva
+    ohapykuerehóva oikóva ñandutípe.
+cfr-whatsnew-tracking-protect-link-text = Ehecha ne marandu’i
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+        [one] Tapykuehoha jokopyre
+       *[other] Tapykuehoha jokopyre
+    }
+cfr-whatsnew-tracking-blocked-subtitle = Oiko { DATETIME($earliestDate, month: "long", year: "numeric") }
+cfr-whatsnew-tracking-blocked-link-text = Marandu’i jehecha
+cfr-whatsnew-lockwise-backup-title = Eñongatujo’a ne ñe’ẽñemi
+cfr-whatsnew-lockwise-backup-body = Ko’ág̃a ikatúma ejapo ñe’ẽñemi hekorosãva ikatuhápe eike emoñepyrũhápe tembiapo.
+cfr-whatsnew-lockwise-backup-link-text = Emyandy ñongatujo’a
+cfr-whatsnew-lockwise-take-title = Egueraha ne ñe’ẽñemi nendive
+cfr-whatsnew-lockwise-take-body = Pe tembipuru’i oku’éva { -lockwise-brand-short-name } omoneĩ eikévo tekorosãme nde ñe’ẽñemi ñongatupyrépe oimeraẽva tenda guive.
+cfr-whatsnew-lockwise-take-link-text = Eguereko tembipuru'i
 
 ## Bookmark Sync
 
@@ -111,3 +135,16 @@ cfr-doorhanger-firefox-send-header = Emoherakuã ko PDF tekorosãme
 cfr-doorhanger-firefox-send-body = Eguereko nde kuatiakuéra ñemiguáva ambue ñema’ẽgui ipapapyetéva reheve ha juajuha oguéva ejapopa vove.
 cfr-doorhanger-firefox-send-ok-button = Ehecha { -send-brand-name }
     .accesskey = T
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-ok-button = Ehecha ñemo’ã
+    .accesskey = P
+cfr-doorhanger-socialtracking-close-button = Mboty
+    .accesskey = C
+cfr-doorhanger-socialtracking-heading = { -brand-short-name } ojoko ani nde rapykueho ápe ava ñandutieta
+cfr-doorhanger-socialtracking-description = Ne ñemigua tuichamba’e. { -brand-short-name } ko’ág̃a ojoko umi ava ñandutieta rapykuehoha, omomichĩvo mba’ekuaarã retakue ñembyaty ejapóva guive ñandutípe.
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name } ojoko kuãhũ juhuha ko kuatiaroguépe
+cfr-doorhanger-fingerprinters-description = Ne ñemigua tuichamba’e. { -brand-short-name } ko’ág̃a ojoko umi Kuãhũ kuaaukaha, ombyatýva marandu kuaaukaha nde mba’e’oka rehegua ohapykueho hag̃ua.
+cfr-doorhanger-cryptominers-heading = { -brand-short-name }  ojoko criptominero ko kuatiaroguépe
+cfr-doorhanger-cryptominers-description = Ne ñemigua tuichamba’e. { -brand-short-name } ko’ág̃a ojoko umi criptominero, oipurúva tembipurupyahu apopyvusu mbaretekue oguenohẽ hag̃ua viru ñandutigua.

@@ -10,10 +10,15 @@
 <!-- Menu items:  the . means that the menu item isn't implemented yet -->
 
 <!-- Toolbar-only items -->
+<!ENTITY compositionToolbar.tooltip "Barra de instrumentos de composition">
+<!ENTITY previewToolbarCmd.label "Navigar">
+<!ENTITY previewToolbarCmd.tooltip "Cargar iste pagina in le navigator">
 
 <!-- File menu items -->
 <!ENTITY exportToTextCmd.label "Exportation como texto…">
 <!ENTITY exportToTextCmd.accesskey "x">
+<!ENTITY previewCmd.label "Navigar in le pagina">
+<!ENTITY previewCmd.accesskey "v">
 <!ENTITY sendPageCmd.label "Inviar pagina…">
 <!ENTITY sendPageCmd.accesskey "v">
 
@@ -28,6 +33,8 @@
 <!-- Format menu items -->
 <!ENTITY formatMenu.label "Formato">
 <!ENTITY formatMenu.accesskey "o">
+<!ENTITY grid.label "Grillia de position">
+<!ENTITY grid.accesskey "t">
 <!ENTITY pageProperties.label "Titulo e proprietates del pagina…">
 <!ENTITY pageProperties.accesskey "g">
 

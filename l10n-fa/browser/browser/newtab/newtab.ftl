@@ -47,6 +47,9 @@ newtab-topsites-add-button = افزودن
 
 ## Top Sites - Delete history confirmation dialog. 
 
+
+## Top Sites - Delete history confirmation dialog.
+
 newtab-confirm-delete-history-p1 = آیا از پاک کردن همه نمونه‌های این صفحه از تاریخ‌چه خود اطمینان دارید؟
 # "This action" refers to deleting a page from history.
 newtab-confirm-delete-history-p2 = این عمل قابل برگشت نیست.
@@ -88,6 +91,10 @@ newtab-menu-bookmark = نشانک
 ## Context Menu - Downloaded Menu. "Download" in these cases is not a verb, 
 ## it is a noun. As in, "Copy the link that belongs to this downloaded item".
 
+
+## Context Menu - Downloaded Menu. "Download" in these cases is not a verb,
+## it is a noun. As in, "Copy the link that belongs to this downloaded item".
+
 newtab-menu-copy-download-link = رونوشت از پیوندِ بارگیری
 newtab-menu-go-to-download-page = رفتن به صفحهٔ بارگیری
 newtab-menu-remove-download = حذف از تاریخچه
@@ -109,11 +116,16 @@ newtab-menu-open-file = باز کردن پرونده
 
 newtab-label-visited = مشاهده شده
 newtab-label-bookmarked = نشانک شده
+newtab-label-removed-bookmark = نشانک حذف شد
 newtab-label-recommended = موضوعات داغ
 newtab-label-saved = در { -pocket-brand-name } ذخیره شد
 newtab-label-download = دریافت شد
 
 ## Section Menu: These strings are displayed in the section context menu and are 
+## meant as a call to action for the given section.
+
+
+## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
 
 newtab-section-menu-remove-section = حذف قسمت
@@ -126,6 +138,13 @@ newtab-section-menu-add-search-engine = افزودن موتور جست‌وجو
 newtab-section-menu-move-up = جابه‌جایی به بالا
 newtab-section-menu-move-down = جابه‌جایی به پایین
 newtab-section-menu-privacy-notice = نکات حریم‌خصوصی
+
+## Section aria-labels
+
+newtab-section-collapse-section-label =
+    .aria-label = جمع‌کردن بخش
+newtab-section-expand-section-label =
+    .aria-label = باز کردن بخش
 
 ## Section Headers.
 
@@ -141,16 +160,25 @@ newtab-empty-section-highlights = مرور کردن را شروع کنید و ش
 # Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 # Variables:
 #  $provider (String): Name of the content provider for this section, e.g "Pocket".
-newtab-empty-section-topstories = فعلا تموم شد. بعدا دوباره سر بزن تا مطالب جدید از { $provider } ببینی. نمی‌تونی صبر کنی؟ یک موضوع محبوب رو انتخاب کن تا مطالب جالب مرتبط از سراسر دنیا رو پیدا کنی.
+newtab-empty-section-topstories = فعلاً تمام شد. بعداً دوباره سر بزن تا مطالب جدیدی از { $provider } ببینی. نمی‌توانی صبر کنی؟ یک موضوع محبوب را انتخاب کن تا مطالب جالب مرتبط از سراسر دنیا را پیدا کنی.
+
+## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
+
+newtab-discovery-empty-section-topstories-header = تمام شد!
+newtab-discovery-empty-section-topstories-content = بعداً سر بزن تا مطالب بیشتری ببینی.
+newtab-discovery-empty-section-topstories-try-again-button = تلاش دوباره
+newtab-discovery-empty-section-topstories-loading = در حال بارگذاری...
+# Displays when a layout in a section took too long to fetch articles.
+newtab-discovery-empty-section-topstories-timed-out = آخ! ما تقریباً این بخش را بارگذاری کرده بودیم، اما کامل نیست.
 
 ## Pocket Content Section.
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = موضوع‌های محبوب:
 newtab-pocket-more-recommendations = توصیه‌های بیشتر
-newtab-pocket-how-it-works = این چجوری کار میکنه
+newtab-pocket-how-it-works = این چطور کار می‌کند
 newtab-pocket-cta-button = دریافت { -pocket-brand-name }
-newtab-pocket-cta-text = مطالبی که دوست دارید را در { -pocket-brand-name } ذخیره کنید، و به ذهن خود را با مطالب فوق‌العاده انرژی بدهید.
+newtab-pocket-cta-text = مطالبی که دوست دارید را در { -pocket-brand-name } ذخیره کنید، و به ذهن خود با مطالب فوق‌العاده انرژی بدهید.
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.

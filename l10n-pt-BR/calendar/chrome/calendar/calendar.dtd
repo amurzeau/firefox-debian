@@ -6,10 +6,11 @@
 <!ENTITY calendar.calendar.label     "Agenda">
 <!ENTITY calendar.calendar.accesskey "A">
 
-<!ENTITY calendar.newevent.button.tooltip         "Criar um novo evento" >
-<!ENTITY calendar.newtask.button.tooltip          "Criar uma nova tarefa" >
+<!ENTITY calendar.newevent.button.tooltip         "Criar novo evento" >
+<!ENTITY calendar.newtask.button.tooltip          "Criar nova tarefa" >
 
 <!ENTITY calendar.unifinder.todoitems.label       "Tarefas" >
+
 <!ENTITY calendar.unifinder.showcompletedtodos.label "Exibir tarefas concluídas">
 
 <!ENTITY calendar.today.button.label          "Hoje">
@@ -20,7 +21,7 @@
 <!ENTITY calendar.events.filter.today.label "Eventos de hoje">
 <!ENTITY calendar.events.filter.future.label "Todos os eventos futuros">
 <!ENTITY calendar.events.filter.current.label "Dia selecionado">
-<!ENTITY calendar.events.filter.currentview.label "Eventos na visualização atual">
+<!ENTITY calendar.events.filter.currentview.label "Eventos na visão atual">
 <!ENTITY calendar.events.filter.next7Days.label "Eventos nos próximos 7 dias">
 <!ENTITY calendar.events.filter.next14Days.label "Eventos nos próximos 14 dias">
 <!ENTITY calendar.events.filter.next31Days.label "Eventos nos próximos 31 dias">
@@ -60,10 +61,10 @@
 <!ENTITY calendar.today.button.tooltip          "Vai para hoje" >
 <!ENTITY calendar.todaypane.button.tooltip      "Exibe painel hoje" >
 
-<!ENTITY calendar.day.button.tooltip            "Altera para visualização diária" >
-<!ENTITY calendar.week.button.tooltip           "Altera para visualização semanal" >
-<!ENTITY calendar.month.button.tooltip          "Altera para visualização mensal" >
-<!ENTITY calendar.multiweek.button.tooltip      "Altera para visualização multissemanal" >
+<!ENTITY calendar.day.button.tooltip            "Muda para visão do dia" >
+<!ENTITY calendar.week.button.tooltip           "Muda para visão da semana" >
+<!ENTITY calendar.month.button.tooltip          "Muda para visão do mês" >
+<!ENTITY calendar.multiweek.button.tooltip      "Muda para visão semanal" >
 
 <!ENTITY calendar.nextday.label                 "Próximo dia" >
 <!ENTITY calendar.prevday.label                 "Dia anterior" >
@@ -93,7 +94,7 @@
 <!ENTITY calendar.day.button.label              "Dia" >
 <!ENTITY calendar.week.button.label             "Semana" >
 <!ENTITY calendar.month.button.label            "Mês" >
-<!ENTITY calendar.multiweek.button.label        "Multissemana" >
+<!ENTITY calendar.multiweek.button.label        "Semanal" >
 <!ENTITY calendar.onlyworkday.checkbox.label    "Somente dias úteis" >
 <!ENTITY calendar.onlyworkday.checkbox.accesskey  "o" >
 <!ENTITY calendar.displaytodos.checkbox.label   "Ver tarefas" >
@@ -101,7 +102,7 @@
 <!ENTITY calendar.completedtasks.checkbox.label     "Exibir tarefas concluídas" >
 <!ENTITY calendar.completedtasks.checkbox.accesskey "c" >
 
-<!ENTITY calendar.orientation.label "Girar visualização" >
+<!ENTITY calendar.orientation.label "Alternar visão" >
 <!ENTITY calendar.orientation.accesskey "G" >
 
 <!ENTITY calendar.search.options.searchfor " contém">
@@ -362,7 +363,7 @@
 <!ENTITY calendarproperties.name.label                     "Nome:">
 <!ENTITY calendarproperties.readonly.label                 "Somente leitura">
 <!ENTITY calendarproperties.firealarms.label               "Exibir lembretes">
-<!ENTITY calendarproperties.cache3.label                   "Suporte off-line">
+<!ENTITY calendarproperties.cache3.label                   "Suporte offline">
 <!ENTITY calendarproperties.enabled.label                  "Ativar esta agenda">
 <!ENTITY calendarproperties.forceDisabled.label            "O provedor desta agenda não foi encontrado. Isto normalmente ocorre quando você desativa ou desinstala certas extensões.">
 <!ENTITY calendarproperties.unsubscribe.label              "Cancelar inscrição">
@@ -384,14 +385,14 @@
 <!ENTITY calendar.print.title.label "Título:">
 <!ENTITY calendar.print.layout.label "Modelo:">
 <!ENTITY calendar.print.range.label "O que imprimir">
-<!ENTITY calendar.print.currentView2.label "Visualização atual">
+<!ENTITY calendar.print.currentView2.label "Visão atual">
 <!ENTITY calendar.print.selectedEventsAndTasks.label "Eventos/tarefas selecionados">
 <!ENTITY calendar.print.tasks.label "Tarefas">
 <!ENTITY calendar.print.events.label "Eventos">
 <!ENTITY calendar.print.custom.label "Período personalizado:">
 <!ENTITY calendar.print.from.label "De:">
 <!ENTITY calendar.print.to.label "Até:">
-<!ENTITY calendar.print.settingsGroup.label "Configurações de impressão">
+<!ENTITY calendar.print.settingsGroup.label "Configuração de impressão">
 <!ENTITY calendar.print.optionsGroup.label "Opções">
 <!ENTITY calendar.print.taskswithnoduedate.label "Tarefas sem data de vencimento">
 <!ENTITY calendar.print.completedtasks.label "Tarefas concluídas">

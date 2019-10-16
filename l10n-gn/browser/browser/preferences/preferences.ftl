@@ -253,6 +253,62 @@ applications-type-column =
 applications-action-column =
     .label = Ñemongu'e
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } marandurenda
+applications-action-save =
+    .label = Marandurenda ñongatu
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = { $app-name } jepuru
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = { $app-name } jeporu (ijypykue)
+applications-use-other =
+    .label = Ambuéva jepuru…
+applications-select-helper = Eiporavo tembipuru'i pytyvõrãva
+applications-manage-app =
+    .label = Tembipuru'i mba'emimi…
+applications-always-ask =
+    .label = Porandu tapia
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = { $plugin-name } jepuru ({ -brand-short-name }-pe)
+applications-preview-inapp =
+    .label = { -brand-short-name }-pe jehecha'ypy
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = Tembiapo Ñandutigua Derécho (TÑD) retepy
 play-drm-content =
     .label = Emboheta tetepy oñangarekóva DRM rehe
@@ -339,6 +395,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Eheka moñe'ẽrã ehaikuévo
     .accesskey = x
+browsing-picture-in-picture-toggle-enabled =
+    .label = Embojuruja ta’ãngamýi ñangarekoha picture-in-picture
+    .accesskey = E
+browsing-picture-in-picture-learn-more = Kuaave
 browsing-cfr-recommendations =
     .label = Eñe’eporã jepysokue rehe eikumdaha aja
     .accesskey = R
@@ -445,6 +505,8 @@ search-bar-shown =
     .label = Toñembojoaju jeheka renda tembipuru rendápe
 search-engine-default-header = Hekaha ypykuéva
 search-engine-default-desc = Eiporavo hekaha mongu'eha ijypykuéva eipuru hag̃ua kundaharape ha jehekaha rendápe.
+search-suggestions-header = Ñe'ẽporã jehekarã
+search-suggestions-desc = Eiporavo mba’éichapa osẽta ñe'ẽporã jehekaha mongu’eha.
 search-suggestions-option =
     .label = Ehechauka ñe'ẽreka joguaha
     .accesskey = s
@@ -494,6 +556,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Egueraha neñanduti nendive
 sync-signedout-description = Embojuehe nde rechaukaha, tembiasakue, tendayke, ñe'ẽñemi, moĩmbaha ha jerohoryvéva opaite nemba'e'oka rupi.
 sync-signedout-account-title = Eike { -fxaccount-brand-name } ndive
@@ -514,11 +580,17 @@ sync-mobile-promo = Emboguejy Aguaratata kóvape g̃uarã:<img data-l10n-name="a
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = Emoambue nera'ãga nemba'ete pegua
 sync-disconnect =
     .label = Ñesẽte…
     .accesskey = D
+sync-sign-out =
+    .label = Ñesẽte
+    .accesskey = ñ
 sync-manage-account = Mba'ete ñangarekoha
     .accesskey = o
 sync-signedin-unverified = { $email } ndojehechajeýi gueteri.
@@ -534,6 +606,48 @@ sync-sign-in =
     .accesskey = g
 sync-signedin-settings-header = Ñembojuehe ñemoĩporã
 sync-signedin-settings-desc = Eiporavo mba'éichapa embojuehéta nemba'e'oka { -brand-short-name } ndive.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Ñembojuehe: ON
+prefs-syncing-off = Ñembojuehe: OFF
+prefs-sync-setup =
+    .label = Emboheko { -sync-brand-short-name }…
+    .accesskey = E
+prefs-sync-offer-setup-label = Embojuehe techaukaha, tembiasakue, tendayke, ñe'ẽñemi, moĩmbaha ha jerohoryvéva opaite ne mba'e'okápe.
+prefs-sync-now =
+    .labelnotsyncing = Embojuehe ko’ág̃a
+    .accesskeynotsyncing = N
+    .labelsyncing = Embojuehe...
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = Ko’ág̃aite oñembojuehe ko’ã mba’epuru:
+sync-currently-syncing-bookmarks = Techaukaha
+sync-currently-syncing-history = Tembiasakue
+sync-currently-syncing-tabs = Tendayke ijurujáva
+sync-currently-syncing-logins-passwords = Tembiapo ñepyrũ ha ñe’ẽñemi
+sync-currently-syncing-addresses = Kundaharape
+sync-currently-syncing-creditcards = Kuatia'atã ñemurã
+sync-currently-syncing-addons = Moĩmbaha
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Jerohoryvéva
+       *[other] Jerohoryvéva
+    }
+sync-change-options =
+    .label = Moambue
+    .accesskey = M
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = Eiporavo embojueheséva
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Eñongatu moambuepy
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = Emboty tembiapo…
+    .buttonaccesskeyextra2 = D
 sync-engine-bookmarks =
     .label = Techaukaha
     .accesskey = m
@@ -548,6 +662,10 @@ sync-engine-logins =
     .label = Tembiapo moñepyrũ
     .tooltiptext = Puruhára réra ha ñe'ẽñemi reñongatúva'ekue
     .accesskey = T
+sync-engine-logins-passwords =
+    .label = Tembiapo ñepyrũ ha ñe’ẽñemi
+    .tooltiptext = Puruhára réra ha ñe’ẽñemi ñongatupyre
+    .accesskey = L
 sync-engine-addresses =
     .label = Kundaharape
     .tooltiptext = Pareha Papapy reñongatuva'ekue (mohendahápe g̃uarãnte)
@@ -568,6 +686,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Ñangareko Pavẽ, Rekovepypegua ha Tekorosã rehegua remoambuévakuri
     .accesskey = s
+
+## The device name controls.
+
 sync-device-name-header = Mba'e'oka Réra
 sync-device-name-change =
     .label = Emoambue mba'e'oka réra…
@@ -600,6 +721,10 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Ere ha emoheñói ñe’ẽñemi hekorosãva
     .accesskey = u
+forms-breach-alerts =
+    .label = Ehechauka kyhyjerã ñe’ẽñemi rehegua tenda imarãvape
+    .accesskey = b
+forms-breach-alerts-learn-more-link = Kuaave
 forms-fill-logins-and-passwords =
     .label = Tembiapo ñepyrũ ha ñe’ẽñemi myanyhẽjehegui
     .accesskey = i
@@ -612,6 +737,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Ñe'ẽñemiguasu moambue...
     .accesskey = M
+forms-master-pw-fips-title = Ko'ag̃aite oĩhína FIPS rekópe. FIPS oikotevẽ ñe'ẽñemiete inandi'ỹva.
+forms-master-pw-fips-desc = Ñe'ẽñemi moambue jejavy
 
 ## Privacy Section - History
 
@@ -681,6 +808,8 @@ sitedata-option-block-trackers =
     .label = Mbohapyháva rekaha
 sitedata-option-block-cross-site-trackers =
     .label = Tenda ojoasáva rapykuehóva
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Tenda ha ava ñandutieta rapykuehoha
 sitedata-option-block-unvisited =
     .label = Ñanduto renda kookie ojeike’ỹha
 sitedata-option-block-all-third-party =
@@ -716,6 +845,8 @@ addressbar-suggestions-settings = Jerohoryvéva jehekaha mongu'eha je'epyre momb
 
 content-blocking-header = Ejoko tetepy
 content-blocking-section-description = Emo’ã nde rekoñemi eikundahakuévo. Ejoko tetepy ohapykuehóva umi tenda eike hague ha ojapo mba’ete. Ejokóvo ndahetái tetepy ikatuhína ombopya’eve kuatiarogue ñemyenyhẽ.
+content-blocking-enhanced-tracking-protection = Tapykueho mo’ãha iporãvéva
+content-blocking-section-top-level-description = Umi tapykuehoha oike ñandutípe ombyaty hag̃ua marandu umi nerembiapo rapykuere. { -brand-short-name } ojoko heta tapykuehoha ha ambue scripts imarãva.
 content-blocking-learn-more = Eikuaave
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -733,6 +864,27 @@ content-blocking-strict-description = Peteĩ ñemo’ã imbaretevéva ikatu ombo
 content-blocking-custom-desc = Eiporavo mba’etépa ejokóta.
 content-blocking-private-trackers = Jehekaha ojekuaáva ovetã ñemiguápe añoite
 content-blocking-third-party-cookies = Jehekaha kookie mbohapyguáva
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Ypykue
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = Mbaretépe
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = Ñemomba’epyre
+    .accesskey = C
+
+
+
+content-blocking-etp-standard-desc = Imbytéva ñemo’ã ha tembiapokuépe g̃uarã. Umi kuatiarogue henyhẽta hekoitépe.
+content-blocking-etp-strict-desc = Ñemo’ãve, hákatu ikatu ndahetái tenda térã tetepy nahenyhẽi.
+content-blocking-etp-custom-desc = Eiporavo mba’ete tapykuehoha ha scripts ejokose.
+content-blocking-private-windows = Tetepy rapykueho ovetã ñemíme
 content-blocking-cross-site-tracking-cookies = Kookie rapykuehoha hendaitáva
 content-blocking-social-media-trackers = Ava ñandutieta rapykuehoha
 content-blocking-all-cookies = Opavavete kookie
@@ -745,6 +897,7 @@ content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = ¡Ema'ẽmi!
 content-blocking-warning-description = Tetepy jejoko ikatu nomomba’apo porãi ñanduti renda. Ikatúramo eipe’a pe jokoha tenda ejeroviaha pegua.
 content-blocking-learn-how = Mba’éicha eikuaa
+content-blocking-etp-warning-description = Ejokóva tapykuehoha ikatu ombyai heta tenda rembiapoite. Emyanyhẽjey kuatiarogue tapykuehoha ndive emyanyhẽ hag̃ua tetepy tuichaháicha.
 content-blocking-warning-learn-how = Mba'éichapa eikuaáta
 content-blocking-reload-description = Emonyhẽjeyva’erã umi tendayke oiko hag̃ua ko’ã moambuepyre.
 content-blocking-reload-tabs-button =

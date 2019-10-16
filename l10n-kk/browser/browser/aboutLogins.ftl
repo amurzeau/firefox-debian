@@ -3,11 +3,27 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 about-logins-page-title = Логиндер және парольдер
+
+# "Google Play" and "App Store" are both branding and should not be translated
+
+login-app-promo-title = Парольдеріңізді барлық жерде алыңыз
+login-app-promo-subtitle = Тегін { -lockwise-brand-name } қолданбасын алыңыз
+login-app-promo-android =
+    .alt = Оны Google Play ішінен алыңыз
+login-app-promo-apple =
+    .alt = App Store ішінен жүктеп алыңыз
 login-filter =
     .placeholder = Логиндерден іздеу
 create-login-button = Жаңа торапты жасау
+# This string is used as alternative text for favicon images.
+# Variables:
+#   $title (String) - The title of the website associated with the favicon.
+login-favicon =
+    .alt = { $title } үшін таңбаша
 fxaccounts-sign-in-text = Парольдеріңізді басқа құрылғыларыңызды алыңыз
 fxaccounts-sign-in-button = { -sync-brand-short-name } ішіне кіріңіз
+fxaccounts-avatar-button =
+    .title = Тіркелгіні басқару
 
 ## The ⋯ menu that is in the top corner of the page
 
@@ -20,8 +36,7 @@ menu-menuitem-preferences =
         [windows] Баптаулар
        *[other] Баптаулар
     }
-menu-menuitem-feedback = Кері байланыс хабарламасын жіберу
-menu-menuitem-faq = Жиі қойылатын сұрақтар
+about-logins-menu-menuitem-help = Көмек
 menu-menuitem-android-app = Android үшін { -lockwise-brand-short-name }
 menu-menuitem-iphone-app = iPhone және iPad үшін { -lockwise-brand-short-name }
 
@@ -35,15 +50,29 @@ login-list-count =
     }
 login-list-sort-label-text = Бойынша сұрыптау:
 login-list-name-option = Аты (A-Z)
+login-list-breached-option = Бұзылған веб-сайттар
 login-list-last-changed-option = Соңғы рет өзгертілген
 login-list-last-used-option = Соңғы қолданылған
 login-list-intro-title = Логиндер табылмады
+login-list-intro-description = { -brand-product-name } ішінде парольді сақтағаннан кейін, ол осында көрсетіледі.
+about-logins-login-list-empty-search-title = Логиндер табылмады
+about-logins-login-list-empty-search-description = Іздеуіңізге сәйкес нәтижелер жоқ.
 login-list-item-title-new-login = Жаңа логин
 login-list-item-subtitle-new-login = Логин мәліметтерін енгізіңіз
 login-list-item-subtitle-missing-username = (пайдаланушы аты жоқ)
+about-logins-list-item-warning-icon =
+    .alt = Ескерту таңбашасы
+    .title = Шабуылданған сайт
+about-logins-list-item-breach-icon =
+    .title = Шабуылданған сайт
 
 ## Introduction screen
 
+login-intro-heading = Сақталған логиндерді іздеудесіз бе? { -sync-brand-short-name } баптаңыз.
+login-intro-description = Логиндерді басқа құрылғыдағы { -brand-product-name } ішіне сақтасаңыз, оларды осында келесідей алуға болады:
+login-intro-instruction-fxa = Логиндеріңіз сақталған құрылғыда { -fxaccount-brand-name } тіркелгісін жасаңыз немесе оған кіріңіз
+login-intro-instruction-fxa-settings = { -sync-brand-short-name } баптауларында Логиндер белгіленгеніне көз жеткізіңіз
+about-logins-intro-instruction-help = Көбірек білу үшін, <a data-l10n-name="help-link">{ -lockwise-brand-short-name } қолдау көрсету сайтын</a> шолыңыз
 
 ## Login
 
@@ -53,10 +82,9 @@ login-item-delete-button = Өшіру
 login-item-origin-label = Веб-сайт адресі
 login-item-origin =
     .placeholder = https://www.example.com
-login-item-open-site-button = Жөнелту
 login-item-username-label = Пайдаланушы аты
-login-item-username =
-    .placeholder = name@example.com
+about-logins-login-item-username =
+    .placeholder = (пайдаланушы аты жоқ)
 login-item-copy-username-button-text = Көшіріп алу
 login-item-copied-username-button-text = Көшірілді!
 login-item-password-label = Пароль
@@ -75,6 +103,7 @@ login-item-time-used = Соңғы рет қолданылған: { DATETIME($tim
 
 ## Master Password notification
 
+master-password-notification-message = Сақталған логиндер мен парольдері қарау үшін басты парольді енгізіңіз
 master-password-reload-button =
     .label = Кіру
     .accesskey = к
@@ -99,4 +128,9 @@ confirm-discard-changes-dialog-message = Барлық сақталмаған ө�
 confirm-discard-changes-dialog-confirm-button = Тайдыру
 
 ## Breach Alert notification
+
+breach-alert-dismiss =
+    .title = Бұл ескертуді жабу
+
+## Error Messages
 

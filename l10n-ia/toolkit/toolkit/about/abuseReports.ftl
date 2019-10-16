@@ -12,7 +12,9 @@ abuse-report-learnmore = Es tu incerte re qual problema seliger? <a data-l10n-na
 abuse-report-submit-description = Describe le problema (optional)
 abuse-report-textarea =
     .placeholder = Il es plus facile pro nos abbordar un problema si nos ha detalios. Per favor describe tu experientia. Gratias pro adjutar nos a mantener le Web salubre.
-abuse-report-submit-note = Nota: non includer informationes personal (tal como nomine, adresse de email, numero de telephono, adresse physic). { -vendor-short-name } mantene un registration permanente de iste reportos.
+abuse-report-submit-note =
+    Nota: non include informationes personal (como nomine, adresse de e-mail, numero de telephono, adresse physic).
+    { -vendor-short-name } mantene un registration permanente de iste reportos.
 
 ## Panel buttons.
 
@@ -60,8 +62,8 @@ abuse-report-deceptive-example = Exemplo: description o graphica fraudulente
 abuse-report-broken-reason-extension = Non functiona, rumpe sitos web, o relenta { -brand-product-name }
 abuse-report-broken-reason-theme = Non functiona o rumpe le exhibition del navigator
 abuse-report-broken-example = Exemplo: le functionalitate es lente, dur a usar, o non functiona; partes de sitos web non carga o pare inusual
-abuse-report-broken-suggestions-extension = Il pare que tu ha identificate un defecto. In addition a inviar un signalation ci, le melior maniera de resolver un problema de functionalitate es de continger le disveloppator del  extension. <a data-l10n-name="support-link">Visita le sito web del extension</a> pro haber informationes del disveloppator.
-abuse-report-broken-suggestions-theme = Il pare que tu ha identificate un defecto. In addition a inviar un signalation ci, le melior maniera de resolver un problema de functionalitate es de continger le disveloppator del  thema. <a data-l10n-name="support-link">Visita le sito web del thema</a> pro haber informationes del disveloppator.
+abuse-report-broken-suggestions-extension = Il pare que tu ha identificate un defecto. In addition a inviar un signalation ci, le melior maniera de resolver un problema de functionalitate es de contactar le programmator del extension. <a data-l10n-name="support-link">Visita le sito web del extension</a> pro obtener le informationes del disveloppator.
+abuse-report-broken-suggestions-theme = Il pare que tu ha identificate un defecto. In addition a inviar un signalation ci, le melior maniera de resolver un problema de functionalitate es de contactar le disveloppator del thema. <a data-l10n-name="support-link">Visita le sito web del thema</a> pro obtener le informationes del disveloppator.
 abuse-report-policy-reason = Contento odiose, violente o illegal
 abuse-report-policy-suggestions = Nota: problemas de derectos de autor e marca de fabrica debe ser signalate in un procedura differente. <a data-l10n-name="report-infringement-link">Usa iste instructiones</a> pro signalar le problema.
 abuse-report-unwanted-reason = Io jammais voleva iste extension e non pote remover illo

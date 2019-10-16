@@ -7,10 +7,24 @@ about-config-warning-title = Ɣur-k dagi talafsa!
 about-config-warning-text = Asnifel n ismenyifen-agi zemren ad sexṣeren arkad, taɣellist d timellit n usnas-agi. Tzemreḍ kan ad kemleḍ ma yella teẓriḍ ayen tmahaleḍ.
 about-config-warning-checkbox = Mmekti-yi-d tikkelt-nniḍen.
 about-config-warning-button = Gziɣ uguren!
-about-config-title = ɣef:tawila
 about-config2-title = Tawila leqqayen
 about-config-search-input =
     .placeholder = Nadi
+
+## These strings appear on the warning you see when first visiting about:config.
+
+about-config-intro-warning-title = Kemmel, maca ɣur-k.
+about-config-intro-warning-text = Abeddel n yismenyifen n twila lqayen zemren ad ḥazen tamlellit neɣ taɣellist n { -brand-short-name }.
+about-config-intro-warning-checkbox = Lɣu-yi-d ticki ɛerḍeɣ ad kecmeɣ ɣer yismenyifen-a.
+about-config-intro-warning-button = Qbel ugur u kemmel
+
+
+
+# This is shown on the page before searching but after the warning is accepted.
+about-config-caution-text = Abeddel n yismenyifen-a lqayen zemren ad ḥazen tamlellit neɣ taɣellist n { -brand-short-name }.
+about-config-page-title = Ismenyifen leqqayen
+about-config-search-input1 =
+    .placeholder = Nadi isem n usmenyif
 about-config-show-all = Sken akk
 about-config-pref-add = Rnu
 about-config-pref-toggle = Nṭew
@@ -18,6 +32,18 @@ about-config-pref-edit = Ẓreg
 about-config-pref-save = Sekles
 about-config-pref-reset = Wennez tikkelt-nniḍen
 about-config-pref-delete = Kkes
+about-config-pref-add-button =
+    .title = Rnu
+about-config-pref-toggle-button =
+    .title = Nṭew
+about-config-pref-edit-button =
+    .title = Ẓreg
+about-config-pref-save-button =
+    .title = Sekles
+about-config-pref-reset-button =
+    .title = Wennez tikelt nniḍen
+about-config-pref-delete-button =
+    .title = Kkes
 
 ## Labels for the type selection radio buttons shown when adding preferences.
 

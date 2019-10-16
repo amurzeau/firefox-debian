@@ -7,10 +7,24 @@ about-config-warning-title = Đây là những con rồng!
 about-config-warning-text = Thay đổi những thiết lập nâng cao này có thể gây hại cho sự ổn định, bảo mật và tính năng của ứng dụng này. Bạn chỉ nên tiếp tục nếu bạn hoàn toàn chắc chắn về những gì mình đang làm.
 about-config-warning-checkbox = Nhắc tôi một lần nữa!
 about-config-warning-button = Tôi chấp nhận rủi ro
-about-config-title = about:config
 about-config2-title = Cấu hình nâng cao
 about-config-search-input =
     .placeholder = Tìm kiếm
+
+## These strings appear on the warning you see when first visiting about:config.
+
+about-config-intro-warning-title = Tiến hành thận trọng
+about-config-intro-warning-text = Thay đổi tùy chọn cấu hình nâng cao có thể ảnh hưởng đến hiệu suất hoặc bảo mật { -brand-short-name }.
+about-config-intro-warning-checkbox = Cảnh báo khi tôi cố gắng truy cập các tùy chọn này
+about-config-intro-warning-button = Chấp nhận rủi ro và tiếp tục
+
+
+
+# This is shown on the page before searching but after the warning is accepted.
+about-config-caution-text = Thay đổi các tùy chọn này có thể ảnh hưởng đến hiệu suất hoặc bảo mật { -brand-short-name }.
+about-config-page-title = Tùy chọn nâng cao
+about-config-search-input1 =
+    .placeholder = Tên tùy chọn tìm kiếm
 about-config-show-all = Hiển thị tất cả
 about-config-pref-add = Thêm
 about-config-pref-toggle = Bật/Tắt
@@ -18,6 +32,18 @@ about-config-pref-edit = Chỉnh sửa
 about-config-pref-save = Lưu
 about-config-pref-reset = Đặt lại
 about-config-pref-delete = Xóa
+about-config-pref-add-button =
+    .title = Thêm
+about-config-pref-toggle-button =
+    .title = Bật/Tắt
+about-config-pref-edit-button =
+    .title = Chỉnh sửa
+about-config-pref-save-button =
+    .title = Lưu
+about-config-pref-reset-button =
+    .title = Đặt lại
+about-config-pref-delete-button =
+    .title = Xóa
 
 ## Labels for the type selection radio buttons shown when adding preferences.
 

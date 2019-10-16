@@ -69,6 +69,19 @@ serviceworker-empty-suggestions-debugger = Stap tooch jo registraasje fan de Ser
 # Suggestion to go to about:debugging in order to see Service Workers for all domains.
 # Clicking on the link will open about:debugging in a new tab.
 serviceworker-empty-suggestions-aboutdebugging = Ynspektearje Service Workers fan oare domeinen. <a>about:debugging iepenje</a>
+# Header for the Manifest page when we have an actual manifest
+manifest-view-header = App-manifest
+# Header for the Manifest page when there's no manifest to inspect
+# The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
+manifest-empty-intro = Jo moatte in webapp-manifest tafoegje om dit hjir te ynspektearjen. <a>Mear ynfo</a>
+# Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
+manifest-item-warnings = Flaters en warskôgingen
+# Header for the Identity section of Manifest inspection displayed in the application panel.
+manifest-item-identity = Identiteit
+# Header for the Presentation section of Manifest inspection displayed in the application panel.
+manifest-item-presentation = Presintaasje
+# Header for the Icon section of Manifest inspection displayed in the application panel.
+manifest-item-icons = Piktogrammen
 # Text displayed while we are loading the manifest file
 manifest-loading = Manifest lade…
 # Text displayed when the manifest has been successfully loaded
@@ -77,3 +90,22 @@ manifest-loaded-ok = Manifest laden.
 manifest-loaded-error = Der is in flater bard by it laden fan it manifest:
 # Text displayed when the page has no manifest available
 manifest-non-existing = Gjin manifest fûn om te ynspektearjen.
+# Text displayed when the page has a manifest embedded in a Data URL and
+# thus we cannot link to it.
+manifest-json-link-data-url = It manifest is ynbed yn in gegevens-URL.
+# Sidebar navigation item for Manifest sidebar item section
+sidebar-item-manifest = Manifest
+    .alt = Piktogram Manifest
+    .title = Manifest
+# Sidebar navigation item for Service Workers sidebar item section
+sidebar-item-service-workers = Service Workers
+    .alt = Piktogram Service Workers
+    .title = Service Workers
+# Text for the ALT and TITLE attributes of the warning icon
+icon-warning =
+    .alt = Warskôgingspiktogram
+    .title = Warskôging
+# Text for the ALT and TITLE attributes of the error icon
+icon-error =
+    .alt = Flaterpiktogram
+    .title = Flater

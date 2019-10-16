@@ -4,6 +4,8 @@
 
 <!ENTITY  paneGeneral.title       "Yleiset">
 <!ENTITY  paneAlarms.title        "Hälytykset">
-<!ENTITY  paneCategories.title    "Tyypit">
+<!ENTITY  paneCategories.title    "Luokat">
 <!ENTITY  paneViews.title         "Näkymät">
-<!ENTITY  paneTimezones.title     "Aikavyöhyke">
+<!ENTITY  panelHeader.title       "Kalenteri">
+<!ENTITY  panelReminder.title     "Hälytykset">
+<!ENTITY  panelCatecory.title     "Luokat">

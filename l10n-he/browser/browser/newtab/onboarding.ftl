@@ -35,11 +35,11 @@ onboarding-cards-dismiss =
 
 ## Firefox Sync modal dialog strings.
 
-onboarding-sync-welcome-header = { -brand-product-name } אתך בדרכים
+onboarding-sync-welcome-header = { -brand-product-name } איתך בכל מקום
 onboarding-sync-welcome-content = קבלת המועדפים, ההיסטוריה, הססמאות והגדרות נוספות בכל המכשירים שלך.
 onboarding-sync-welcome-learn-more-link = מידע נוסף על חשבונות Firefox
 onboarding-sync-form-invalid-input = נדרשת כתובת דוא״ל חוקית
-onboarding-sync-legal-notice = בחירה בהמשך התהליך מהווה את הסכמתך ל<a data-l10n-name="terms">תנאי השירות</a> ול<a data-l10n-name="privacy">הצהרת הפרטיות</a>.
+onboarding-sync-legal-notice = בחירה בהמשך התהליך מהווה הסכמה ל<a data-l10n-name="terms">תנאי השירות</a> ול<a data-l10n-name="privacy">הצהרת הפרטיות</a>.
 onboarding-sync-form-input =
     .placeholder = דוא״ל
 onboarding-sync-form-continue-button = המשך
@@ -84,6 +84,7 @@ onboarding-data-sync-text2 = סנכרון הסימניות, הססמאות ופ�
 onboarding-data-sync-button2 = כניסה ל־{ -sync-brand-short-name }
 onboarding-firefox-monitor-button = הרשמה להתרעות
 onboarding-browse-privately-title = גלישה בפרטיות
+onboarding-browse-privately-text = גלישה פרטית מנקה את היסטוריית החיפוש והגלישה שלך כדי לשמור עליה בסוד מכל מי שמשתמש במחשב שלך.
 onboarding-browse-privately-button = פתיחת חלון פרטי
 onboarding-firefox-send-button = לנסות את { -send-brand-name }
 onboarding-mobile-phone-title = קבלת { -brand-product-name } לטלפון שלך

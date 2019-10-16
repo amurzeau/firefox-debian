@@ -31,13 +31,13 @@ appmenu-update-restart =
     .buttonaccesskey = R
     .secondarybuttonlabel = Agora não
     .secondarybuttonaccesskey = n
-appmenu-update-restart-message = Após um reinício rápido, o { -brand-shorter-name } irá restaurar todas as suas abas e janelas abertas que não sejam de Navegação Privativa.
+appmenu-update-restart-message = Após um reinício rápido, o { -brand-shorter-name } irá restaurar todas as abas e janelas abertas que não sejam de navegação privativa.
 appmenu-addon-private-browsing-installed =
     .buttonlabel = OK, entendi
     .buttonaccesskey = O
 appmenu-addon-post-install-message = Gerencie extensões clicando em <image data-l10n-name='addon-install-icon'></image> no menu <image data-l10n-name='addon-menu-icon'></image>
 appmenu-addon-post-install-incognito-checkbox =
-    .label = Permitir esta extensão funcionar em janelas privativas
+    .label = Permitir esta extensão em janelas privativas
     .accesskey = P
 appmenu-addon-private-browsing =
     .label = Alteração de extensões em janelas privativas

@@ -14,8 +14,6 @@ select-all =
 menu-select-all =
     .label = Selecionar tudo
     .accesskey = S
-close-window =
-    .key = a
 close-dialog =
     .key = w
 general-tab =
@@ -69,7 +67,7 @@ media-save-image-as =
     .label = Salvar como…
     .accesskey = a
 media-preview =
-    .value = Visualizar mídia:
+    .value = Mídia:
 perm-tab =
     .label = Permissões
     .accesskey = P
@@ -121,6 +119,8 @@ security-site-data-cookies-only = Sim, cookies
 security-site-data-no = Não
 image-size-unknown = Desconhecido
 not-set-verified-by = Não especificado
+page-info-not-specified =
+    .value = Não especificado
 not-set-alternative-text = Não especificado
 not-set-date = Não especificado
 media-img = Imagem
@@ -143,6 +143,8 @@ general-quirks-mode =
 general-strict-mode =
     .value = Modo de conformidade com normas
 security-no-owner = Este site não fornece informações de propriedade.
+page-info-security-no-owner =
+    .value = Este site não fornece informações de propriedade.
 media-select-folder = Selecione uma pasta onde salvar as imagens
 media-unknown-not-cached =
     .value = Desconhecido (não armazenado em cache)
@@ -167,7 +169,7 @@ security-visits-number =
     { $visits ->
         [0] Não
         [one] Sim, uma vez
-       *[other] SIm, { $visits } vezes
+       *[other] Sim, { $visits } vezes
     }
 # This string is used to display the size of a media file
 # Variables:

@@ -248,6 +248,62 @@ applications-type-column =
 applications-action-column =
     .label = Əməliyyat
     .accesskey = Ə
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } faylı
+applications-action-save =
+    .label = Fərqli saxla
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = { $app-name } istifadə olunsun
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = { $app-name } istifadə olunsun (standart)
+applications-use-other =
+    .label = Başqasından istifadə et…
+applications-select-helper = Köməkçi proqramı seçin
+applications-manage-app =
+    .label = Proqram detalları…
+applications-always-ask =
+    .label = Həmişə soruş
+applications-type-pdf = Daşına bilən sənəd formatı (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = { $plugin-name } istifadə et ({ -brand-short-name } içində)
+applications-preview-inapp =
+    .label = { -brand-short-name } ilə ön baxış et
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 drm-content-header = Rəqəmsal Hüquqların İdarəsi (DRM) Məzmunu
 play-drm-content =
     .label = DRM-idarəli məzmunu oxut (güvənilir deyil)
@@ -582,6 +638,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Ana parolu dəyişdir…
     .accesskey = d
+forms-master-pw-fips-title = Hazırda FIPS rejimindəsiniz. FIPS rejimi üçün ana parol lazımdır.
+forms-master-pw-fips-desc = Parolu dəyişdirmək mümkün olmadı.
 
 ## Privacy Section - History
 
@@ -693,6 +751,23 @@ content-blocking-standard-desc = Qoruma və məhsuldarlıq arasında tarazlaşd�
 content-blocking-custom-desc = Nəyi əngəlləyəcəyini seçin.
 content-blocking-private-trackers = Ancaq Məxfi Pəncərələrdə bilinən izləyicilər
 content-blocking-third-party-cookies = Üçüncü tərəf izləmə çərəzləri
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Standart
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = Sərt
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = Fərdi
+    .accesskey = F
+
+##
+
 content-blocking-all-windows-trackers = Bütün pəncərələrdə bilinən izləyicilər
 content-blocking-all-third-party-cookies = Bütün üçüncü tərəf çərəzləri
 content-blocking-warning-title = Diqqət!

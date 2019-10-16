@@ -71,6 +71,8 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
 ## Protections panel
 
 cfr-protections-panel-header = Menjelajah tanpa diikuti
+cfr-protections-panel-body = Simpan data Anda untuk diri sendiri. { -brand-short-name } melindungi Anda dari banyak pelacak umum yang mengikuti apa yang Anda lakukan daring.
+cfr-protections-panel-link-text = Pelajari lebih lanjut
 
 ## What's New toolbar button and panel
 
@@ -78,12 +80,35 @@ cfr-whatsnew-button =
     .label = Yang Baru
     .tooltiptext = Yang Baru
 cfr-whatsnew-panel-header = Yang Baru
+cfr-whatsnew-release-notes-link-text = Baca catatan rilis
+cfr-whatsnew-fx70-title = { -brand-short-name } kini berjuang lebih keras untuk privasi Anda
+cfr-whatsnew-fx70-body =
+    Pembaruan terbaru meningkatkan fitur Perlindungan Pelacakan dan membuatnya
+    lebih mudah dari sebelumnya untuk membuat kata sandi aman untuk setiap situs.
+cfr-whatsnew-tracking-protect-title = Lindungi diri anda dari para pelacak
+cfr-whatsnew-tracking-protect-link-text = Lihat Laporan Anda
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+       *[other] Pelacak diblokir
+    }
+cfr-whatsnew-tracking-blocked-subtitle = Sejak { DATETIME($earliestDate, month: "long", year: "numeric") }
+cfr-whatsnew-tracking-blocked-link-text = Lihat Laporan
+cfr-whatsnew-lockwise-backup-title = Cadangkan kata sandi Anda
+cfr-whatsnew-lockwise-backup-link-text = Nyalakan pencadangan
+cfr-whatsnew-lockwise-take-title = Bawa sandi ke mana Anda pergi
+cfr-whatsnew-lockwise-take-link-text = Dapatkan aplikasinya
 
 ## Bookmark Sync
 
+cfr-doorhanger-sync-bookmarks-header = Dapatkan markah ini di telepon Anda
 
 ## Login Sync
 
+cfr-doorhanger-sync-logins-header = Jangan Pernah Kehilangan Kata Sandi Lagi
+cfr-doorhanger-sync-logins-body = Simpan dan sinkronkan kata sandi Anda dengan aman ke semua peranti Anda.
 
 ## Send Tab
 
@@ -91,3 +116,8 @@ cfr-whatsnew-panel-header = Yang Baru
 ## Firefox Send
 
 cfr-doorhanger-firefox-send-header = Bagikan PDF ini dengan aman
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-close-button = Tutup
+    .accesskey = T

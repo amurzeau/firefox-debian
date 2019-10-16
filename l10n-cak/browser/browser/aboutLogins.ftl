@@ -36,8 +36,7 @@ menu-menuitem-preferences =
         [windows] Taq cha'oj
        *[other] Taq ajowab'äl
     }
-menu-menuitem-feedback = Ketaq taq Tzijol
-menu-menuitem-faq = Jutaqil taq K'utunïk
+about-logins-menu-menuitem-help = To'ïk
 menu-menuitem-android-app = { -lockwise-brand-short-name } richin Android
 menu-menuitem-iphone-app = { -lockwise-brand-short-name } richin iPhone chuqa' iPad
 
@@ -57,9 +56,16 @@ login-list-last-changed-option = Ruk'isib'äl Jaloj
 login-list-last-used-option = Ruk'isib'äl Rokisaxik
 login-list-intro-title = Majun tikirib'äl molojri'ïl xilitäj
 login-list-intro-description = Toq nayäk jun ewan tzij pa { -brand-product-name }, wawe' xtiq'alajin pe.
+about-logins-login-list-empty-search-title = Majun tikirib'äl molojri'ïl xilitäj
+about-logins-login-list-empty-search-description = Majun xilitäj achi'el ri nakanoj.
 login-list-item-title-new-login = K'ak'a' Tikirib'äl Molojri'ïl
 login-list-item-subtitle-new-login = Ke'atz'ib'aj ri taq retamab'al rutikirib'al molojri'ïl
 login-list-item-subtitle-missing-username = (majun rub'i' okisanel)
+about-logins-list-item-warning-icon =
+    .alt = Ruwachib'al k'ayewal
+    .title = Ajk'amaya'l ruxaq ojqan
+about-logins-list-item-breach-icon =
+    .title = Tz'ilan Ajk'amaya'l taq Ruxaq
 
 ## Introduction screen
 
@@ -67,7 +73,7 @@ login-intro-heading = ¿La ye'akanoj rutikirib'al taq amolojri'ïl e'ayakon kan?
 login-intro-description = We xe'ayäk ri rutikirib'al amolojri'ïl pa { -brand-product-name } pa jun chik wi okisab'äl, wawe' nik'ut pe richin nak'ul wawe' chuqa':
 login-intro-instruction-fxa = Tatz'uku' o tatikirisaj molojri'ïl pa { -fxaccount-brand-name } chupam ri okisab'äl, akuchi' e yakäl ri tikirib'äl amolojri'ïl
 login-intro-instruction-fxa-settings = Tatz'eta' chi xacha' ri k'ojlib'äl richin kitikitib'al molojri'ïl pa ri runuk'ulem { -sync-brand-short-name }.
-login-intro-instruction-faq = Titz'et { -lockwise-brand-short-name } <a data-l10n-name="faq">jutaqil taq k'utunïk</a> richin jub'a' chik ato'ik
+about-logins-intro-instruction-help = Tatz'eta' <a data-l10n-name="help-link">{ -lockwise-brand-short-name } Tob'äl</a> richin ch'aqa' chik to'ïk.
 
 ## Login
 
@@ -77,10 +83,9 @@ login-item-delete-button = Tiyuj
 login-item-origin-label = Ajk'amaya'l Ochochib'äl
 login-item-origin =
     .placeholder = https://www.example.com
-login-item-open-site-button = Titikirisäx
 login-item-username-label = Rub'i' okisanel
-login-item-username =
-    .placeholder = xwan@example.com
+about-logins-login-item-username =
+    .placeholder = (majun rub'i' okisanel)
 login-item-copy-username-button-text = Tiwachib'ëx
 login-item-copied-username-button-text = ¡Xwachib'ëx!
 login-item-password-label = Ewan tzij
@@ -134,3 +139,18 @@ breach-alert-text = Xechayüx o xe'eleq'äx ri ewan taq tzij pa re ajk'amaya'l r
 breach-alert-link = Tawetamaj mas chi rij re tz'ilanem.
 breach-alert-dismiss =
     .title = Titz'apïx re rutzijol k'ayewal re'
+
+## Error Messages
+
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login = K'o chik jun rokem { $loginTitle } rik'in ri b'i'aj ri'.
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = K'o chik jun okib'äl richin { $loginTitle } rik'in ri rub'i' winäq ri'. <a data-l10n-name="duplicate-link">¿La nawajo' yab'e pa ri okib'äl ri'?</a>
+# This is a generic error message.
+about-logins-error-message-default = Xk'ulwachitäj jun sachoj toq niyak re ewan tzij.

@@ -71,7 +71,7 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
 ## Protections panel
 
 cfr-protections-panel-header = 上網不被追蹤
-cfr-protections-panel-body = 自己保留自己的資料。{ -brand-short-name } 不讓常見的追蹤器記錄您的上網行為。
+cfr-protections-panel-body = 保留自己的資料。{ -brand-short-name } 不讓常見的追蹤器記錄您的上網行為。
 cfr-protections-panel-link-text = 了解更多
 
 ## What's New toolbar button and panel
@@ -80,12 +80,40 @@ cfr-whatsnew-button =
     .label = 有什麼新鮮事
     .tooltiptext = 有什麼新鮮事
 cfr-whatsnew-panel-header = 有什麼新鮮事
+cfr-whatsnew-release-notes-link-text = 閱讀發行公告
+cfr-whatsnew-fx70-title = { -brand-short-name } 現在起為了您的隱私權更加努力
+cfr-whatsnew-fx70-body = 最新版本當中加強了追蹤保護功能，也讓您更簡單就能針對各個網站產生安全的密碼。
+cfr-whatsnew-tracking-protect-title = 保護自己，不被追蹤
+cfr-whatsnew-tracking-protect-body = { -brand-short-name } 會封鎖許多在不同網站間追蹤您的常見社交型及跨網站追蹤器。
+cfr-whatsnew-tracking-protect-link-text = 檢視您的追蹤報告
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+       *[other] 追蹤器封鎖數量
+    }
+cfr-whatsnew-tracking-blocked-subtitle = 自 { DATETIME($earliestDate, month: "long", year: "numeric") } 起
+cfr-whatsnew-tracking-blocked-link-text = 檢視報告
+cfr-whatsnew-lockwise-backup-title = 備份您的密碼
+cfr-whatsnew-lockwise-backup-body = 可以為任何需要登入的網站產生安全密碼。
+cfr-whatsnew-lockwise-backup-link-text = 開啟備份
+cfr-whatsnew-lockwise-take-title = 密碼隨身帶著走
+cfr-whatsnew-lockwise-take-body = { -lockwise-brand-short-name } 的行動 App 可讓您在任何地方安全地讀取備份下來的密碼。
+cfr-whatsnew-lockwise-take-link-text = 下載 App
 
 ## Bookmark Sync
 
 cfr-doorhanger-sync-bookmarks-header = 在手機上使用此書籤
 cfr-doorhanger-sync-bookmarks-body = 將您的書籤、密碼、瀏覽紀錄等資料，同步到登入至 { -brand-product-name } 的所有裝置。
 cfr-doorhanger-sync-bookmarks-ok-button = 開啟 { -sync-brand-short-name }
+    .accesskey = T
+
+## Login Sync
+
+cfr-doorhanger-sync-logins-header = 不再搞丟密碼
+cfr-doorhanger-sync-logins-body = 安全地儲存密碼，並同步到您的所有裝置中。
+cfr-doorhanger-sync-logins-ok-button = 開啟 { -sync-brand-short-name }
     .accesskey = T
 
 ## Send Tab
@@ -102,3 +130,16 @@ cfr-doorhanger-firefox-send-header = 安全地分享這份 PDF
 cfr-doorhanger-firefox-send-body = 使用端對端加密，以及會在使用完之後自動消失的鏈結，來確保您敏感性文件的安全。
 cfr-doorhanger-firefox-send-ok-button = 試用 { -send-brand-name }
     .accesskey = T
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-ok-button = 請參考保護內容
+    .accesskey = P
+cfr-doorhanger-socialtracking-close-button = 關閉
+    .accesskey = C
+cfr-doorhanger-socialtracking-heading = { -brand-short-name } 防止社群網站在此追蹤您
+cfr-doorhanger-socialtracking-description = 您的隱私相當重要。{ -brand-short-name } 現在起會封鎖常見的社交媒體追蹤器，限制這些網站收集您的線上活動。
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name } 封鎖了此頁面上的數位指紋追蹤程式
+cfr-doorhanger-fingerprinters-description = 您的隱私相當重要。{ -brand-short-name } 現在起會封鎖數位指紋追蹤程式，不讓這些程式為了追蹤您而收集可識別出所使用裝置的相關資訊。
+cfr-doorhanger-cryptominers-heading = { -brand-short-name } 封鎖了此頁面上的加密貨幣採礦程式
+cfr-doorhanger-cryptominers-description = 您的隱私相當重要。{ -brand-short-name } 現在起會封鎖加密貨幣採礦程式，不讓這些程式使用您的電腦運算能力來對數位貨幣「採礦」。

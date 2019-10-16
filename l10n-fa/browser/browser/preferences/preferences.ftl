@@ -29,6 +29,7 @@ search-input-box =
             [windows] پیدا‌کردن در گزینه‌ها
            *[other] پیدا‌کردن در ترجیحات
         }
+managed-notice = مرورگر شما توسط سازمان شما مدیریت می شود.
 pane-general-title = عمومی
 category-general =
     .tooltiptext = { pane-general-title }
@@ -41,6 +42,9 @@ category-search =
 pane-privacy-title = حریم‌خصوصی و امنیت
 category-privacy =
     .tooltiptext = { pane-privacy-title }
+pane-sync-title2 = { -sync-brand-short-name }
+category-sync2 =
+    .tooltiptext = { pane-sync-title2 }
 help-button-label = پشتیبانی { -brand-short-name }
 addons-button-label = افزونه‌ها و پوسته‌ها
 focus-search =
@@ -249,6 +253,62 @@ applications-type-column =
 applications-action-column =
     .label = عمل
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } پرونده
+applications-action-save =
+    .label = ذخیرهٔ پرونده
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = استفاده از { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = استفاده از { $app-name } (پیش‌فرض)
+applications-use-other =
+    .label = استفاده از برنامه‌ای دیگر…
+applications-select-helper = انتخاب برنامهٔ راهنما
+applications-manage-app =
+    .label = جزئیات برنامه…
+applications-always-ask =
+    .label = هر بار پرسیده شود
+applications-type-pdf = قالب پروندهٔ همراه (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = استفاده از { $plugin-name } (در { -brand-short-name })
+applications-preview-inapp =
+    .label = پیش‌نمایش در { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = محتوا مدیریت حقوق دیجیتال(DRM)
 play-drm-content =
     .label = پخش محتوا کنترل شده-DRM
@@ -280,6 +340,13 @@ update-pref-write-failure-title = خطای نگارش
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = امکان ذخیرهٔ ترجیحات نیست. نوشتن در پرونده امکان‌پذیر نبود: { $path }
+update-setting-write-failure-title = خطا در ذخیره کردن ترجیحات بروزرسانی
+update-in-progress-title = در حال بروزرسانی
+update-in-progress-message = آیا می‌خواهید { -brand-short-name } به این بروزرسانی ادامه بدهد؟
+update-in-progress-ok-button = &نادیده گرفتن
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &ادامه
 
 ## General Section - Performance
 
@@ -319,6 +386,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = هنگامی که شروع به وارد کردن حروف می‌کنم، به دنبال متن جست‌وجو شود
     .accesskey = ج
+browsing-picture-in-picture-toggle-enabled =
+    .label = کنترل‌های ویدیویی تصویر در تصویر را فعال کنید
+    .accesskey = E
+browsing-picture-in-picture-learn-more = بیشتر بدانید
 browsing-cfr-recommendations-learn-more = بیشتر بدانید
 
 ## General Section - Proxy
@@ -402,6 +473,7 @@ home-prefs-highlights-option-saved-to-pocket =
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = قطعه‌ها
+home-prefs-snippets-description = بروزرسانی از { -vendor-short-name } و { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -467,6 +539,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = وب را با خودتان همراه کنید
 sync-signedout-description = نشانک‌ها، تاریخچه، زبانه‌ها، گذرواژه‌ها، افزونه‌ها و ترجیحات خود را در تمام دستگاه‌هایتان همگام کنید.
 sync-signedout-account-title = اتصال به یک { -fxaccount-brand-name }
@@ -487,11 +563,17 @@ sync-mobile-promo = بارگیری فایرفاکس برای <img data-l10n-name
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = تغییرتصویر نمایه
 sync-disconnect =
     .label = قطع ارتباط…
     .accesskey = ق
+sync-sign-out =
+    .label = خروج...
+    .accesskey = g
 sync-manage-account = مدیریت حساب
     .accesskey = ح
 sync-signedin-unverified = { $email } تایید نشده است.
@@ -507,6 +589,45 @@ sync-sign-in =
     .accesskey = و
 sync-signedin-settings-header = تنظیمات همگام‌سازی
 sync-signedin-settings-desc = اینکه چه چیزهایی بر روی دستگاه‌هایتان توسط { -brand-short-name } همگام‌سازی شوند را انتخاب کنید.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = همگام‌سازی: روشن
+prefs-syncing-off = همگام‌سازی: خاموش
+prefs-sync-setup =
+    .label = راه اندازی { -sync-brand-short-name }...
+    .accesskey = S
+prefs-sync-offer-setup-label = نشانک‌ها، تاریخچه، زبانه‌ها، گذرواژه‌ها، افزونه‌ها و ترجیحات خود را در تمام دستگاه‌هایتان همگام کنید.
+prefs-sync-now =
+    .labelnotsyncing = هم‌اکنون همگام‌سازی کنید
+    .accesskeynotsyncing = N
+    .labelsyncing = درحال همگام‌سازی...
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = شما در حال همگام‌سازی این موارد هستید:
+sync-currently-syncing-bookmarks = نشانک‌ها
+sync-currently-syncing-history = تاریخچه
+sync-currently-syncing-tabs = زبانه‌های باز
+sync-currently-syncing-logins-passwords = ورودها و گذرواژه‌ها
+sync-currently-syncing-addresses = نشانی‌ها
+sync-currently-syncing-creditcards = کارت‌های اعتباری
+sync-currently-syncing-addons = افزونه‌ها
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] گزینه‌ها
+       *[other] ترجیحات
+    }
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = چه چیزی را می‌خواهید همگام کنید
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = ذخیره تغییرات
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = قطع ارتباط
+    .buttonaccesskeyextra2 = D
 sync-engine-bookmarks =
     .label = نشانک‌ها
     .accesskey = ن
@@ -521,6 +642,10 @@ sync-engine-logins =
     .label = ورودها
     .tooltiptext = نام کاربری و کلمه عبوری که شما ذخیره کرده‌اید
     .accesskey = و
+sync-engine-logins-passwords =
+    .label = ورودها و گذرواژه‌ها
+    .tooltiptext = نام‌های کاربری و گذرواژه‌هایی که ذخیره کرده‌اید
+    .accesskey = L
 sync-engine-addresses =
     .label = آدرس‌ها
     .tooltiptext = آدرس پستی که شما ذخیره کرده‌ اید(تنها رومیزی)
@@ -541,6 +666,9 @@ sync-engine-prefs =
         }
     .tooltiptext = عمومی،‌ حریم شخصی، و تنظیمات امنیتی که شما تغییر داده اید
     .accesskey = ت
+
+## The device name controls.
+
 sync-device-name-header = نام دستگاه
 sync-device-name-change =
     .label = تغییر نام دستگاه…
@@ -551,6 +679,9 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = ذخیره
     .accesskey = ذ
+sync-connect-another-device = اتصال یک دستگاه دیگر
+sync-manage-devices = مدیریت دستگاه‌ها
+sync-fxa-begin-pairing = جفت کردن یک دستگاه
 sync-tos-link = شرایط ارائهٔ خدمات
 sync-fxa-privacy-notice = نکات حفظ حریم خصوصی
 
@@ -567,6 +698,10 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = استثناها…
     .accesskey = ث
+forms-generate-passwords =
+    .label = پیشنهاد و تولید گذرواژه‌های قوی
+    .accesskey = u
+forms-breach-alerts-learn-more-link = بیشتر بدانید
 forms-saved-logins =
     .label = ورودهای ذخیره شده
     .accesskey = و
@@ -576,6 +711,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = تنظیم گذرواژهٔ اصلی…
     .accesskey = ص
+forms-master-pw-fips-title = شما هم‌اکنون در حالت FIPS هستید. در این حالت لازم است گذرواژهٔ اصلی خالی نباشد.
+forms-master-pw-fips-desc = تغییر گذرواژه شکست خورد
 
 ## Privacy Section - History
 
@@ -672,6 +809,7 @@ addressbar-suggestions-settings = تغییر ترجیحات مربوط به پی
 ## Privacy Section - Content Blocking
 
 content-blocking-header = مسدود کردن محتوا
+content-blocking-enhanced-tracking-protection = محفاظت پیشرفته در برابر ردیابی
 content-blocking-learn-more = بیشتر بدانید
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -686,9 +824,30 @@ content-blocking-setting-custom =
     .accesskey = C
 content-blocking-custom-desc = انتخاب کنید چه چیزی مسدود شود.
 content-blocking-third-party-cookies = کوکی‌هایِ ردیبابِ متفرقه
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = استاندارد
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = شدید
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = سفارشی
+    .accesskey = C
+
+
+
+content-blocking-all-cookies = همه کوکی‌ها
 content-blocking-all-windows-trackers = ردیاب‌های شناخته شده در تمام پنجره‌ها
 content-blocking-all-third-party-cookies = تمام کوکی‌های متفرقه
+content-blocking-cryptominers = استخراج کننده‌های رمزارزها
 content-blocking-warning-title = هوشیار باشید!
+content-blocking-learn-how = بیشتر بدانید
+content-blocking-warning-learn-how = بیشتر بدانید
 content-blocking-trackers-label =
     .label = ردیاب‌ها
     .accesskey = T
@@ -742,6 +901,9 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = استثاناها…
     .accesskey = E
+permissions-autoplay-settings =
+    .label = تنظیمات...
+    .accesskey = t
 permissions-block-popups =
     .label = مسدود کردن پنجره‌های بازشو
     .accesskey = م

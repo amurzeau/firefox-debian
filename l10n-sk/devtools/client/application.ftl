@@ -69,3 +69,43 @@ serviceworker-empty-suggestions-debugger = Prezrite si registráciu Service Work
 # Suggestion to go to about:debugging in order to see Service Workers for all domains.
 # Clicking on the link will open about:debugging in a new tab.
 serviceworker-empty-suggestions-aboutdebugging = Preskúmajte Service Workery z iných domén. <a>Otvoriť about:debugging</a>
+# Header for the Manifest page when we have an actual manifest
+manifest-view-header = Manifest aplikácie
+# Header for the Manifest page when there's no manifest to inspect
+# The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
+manifest-empty-intro = Manifest musíte vložiť sem na kontrolu. <a>Ďalšie informácie</a>
+# Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
+manifest-item-warnings = Chyby a varovania
+# Header for the Identity section of Manifest inspection displayed in the application panel.
+manifest-item-identity = Identita
+# Header for the Presentation section of Manifest inspection displayed in the application panel.
+manifest-item-presentation = Prezentácia
+# Header for the Icon section of Manifest inspection displayed in the application panel.
+manifest-item-icons = Ikony
+# Text displayed while we are loading the manifest file
+manifest-loading = Manifest sa načítava…
+# Text displayed when the manifest has been successfully loaded
+manifest-loaded-ok = Manifest bol načítaný.
+# Text displayed when there has been an error while trying to load the manifest
+manifest-loaded-error = Pri načítaní manifestu nastala chyba:
+# Text displayed when the page has no manifest available
+manifest-non-existing = Nenašiel sa žiadny manifest.
+# Text displayed when the page has a manifest embedded in a Data URL and
+# thus we cannot link to it.
+manifest-json-link-data-url = Manifest je vložený do dátovej URL.
+# Sidebar navigation item for Manifest sidebar item section
+sidebar-item-manifest = Manifest
+    .alt = Ikona manifestu
+    .title = Manifest
+# Sidebar navigation item for Service Workers sidebar item section
+sidebar-item-service-workers = Service Workery
+    .alt = Ikona Service Workerov
+    .title = Service Workery
+# Text for the ALT and TITLE attributes of the warning icon
+icon-warning =
+    .alt = Ikona varovania
+    .title = Varovanie
+# Text for the ALT and TITLE attributes of the error icon
+icon-error =
+    .alt = Ikona chyby
+    .title = Chyba

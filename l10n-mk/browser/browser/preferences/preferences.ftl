@@ -114,6 +114,62 @@ applications-type-column =
 applications-action-column =
     .label = Дејство
     .accesskey = Д
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } датотека
+applications-action-save =
+    .label = Сними ја датотеката
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Употреби { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Употреби { $app-name } (осново)
+applications-use-other =
+    .label = Употреби друго…
+applications-select-helper = Избирање на помошна програма
+applications-manage-app =
+    .label = Детали за програмата…
+applications-always-ask =
+    .label = Секогаш прашај
+applications-type-pdf = Формат за преносн документи (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Употреби { $plugin-name } (во { -brand-short-name })
+applications-preview-inapp =
+    .label = Преглед во { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 play-drm-content-learn-more = Дознајте повеќе
 update-application-use-service =
     .label = Користи позадински сервис за да се инсталираат надградби
@@ -262,6 +318,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Промени ја главната лозинка…
     .accesskey = г
+forms-master-pw-fips-title = Моментално сте во FIPS режим. FIPS бара главна лозинка која не е празна.
+forms-master-pw-fips-desc = Промената на лозинката не успеа
 
 ## Privacy Section - History
 
@@ -293,6 +351,13 @@ history-clear-on-close-settings =
 
 
 ## Privacy Section - Content Blocking
+
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+
+##
 
 
 ## Privacy Section - Tracking

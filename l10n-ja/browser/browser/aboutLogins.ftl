@@ -34,14 +34,13 @@ fxaccounts-avatar-button =
 menu =
   .title = メニューを開きます
 # This menuitem is only visible on Windows
-menu-menuitem-import = パスワードののインポート...
+menu-menuitem-import = パスワードのインポート...
 menu-menuitem-preferences =
   { PLATFORM() ->
       [windows] オプション
      *[other] 設定
   }
-menu-menuitem-feedback = フィードバックを送信
-menu-menuitem-faq = よくある質問
+about-logins-menu-menuitem-help = ヘルプ
 menu-menuitem-android-app = { -lockwise-brand-short-name } for Android
 menu-menuitem-iphone-app = { -lockwise-brand-short-name } for iPhone and iPad
 
@@ -57,9 +56,17 @@ login-list-last-changed-option = 最終更新日時
 login-list-last-used-option = 最終利用日時
 login-list-intro-title = ログイン情報はありません
 login-list-intro-description = { -brand-product-name } にパスワードを保存すると、ここに表示されます。
+about-logins-login-list-empty-search-title = ログイン情報はありません
+about-logins-login-list-empty-search-description = 検索条件に一致するログイン情報はありません。
 login-list-item-title-new-login = 新しいログイン情報
 login-list-item-subtitle-new-login = 認証情報を入力してください
 login-list-item-subtitle-missing-username = (ユーザー名なし)
+about-logins-list-item-warning-icon = 
+  .alt = 警告アイコン
+  .title = 漏洩したウェブサイト
+
+about-logins-list-item-breach-icon =
+  .title = 漏洩したウェブサイト
 
 ## Introduction screen
 
@@ -67,7 +74,7 @@ login-intro-heading = 保存したログイン情報をお探しですか？ { -
 login-intro-description = 別の端末の { -brand-product-name } に保存したログイン情報は、以下の手順で取得できます:
 login-intro-instruction-fxa = ログイン情報を保存した端末で { -fxaccount-brand-name } を作成、またはログインしてください
 login-intro-instruction-fxa-settings = { -sync-brand-short-name } の設定のログイン情報のチェックボックスが選択されているか確認してください
-login-intro-instruction-faq = { -lockwise-brand-short-name } の <a data-l10n-name="faq">よくある質問</a> により詳しい情報があります
+about-logins-intro-instruction-help = <a data-l10n-name="help-link">{ -lockwise-brand-short-name } サポート</a> で詳細なヘルプを確認できます
 
 ## Login
 
@@ -77,10 +84,9 @@ login-item-delete-button = 削除
 login-item-origin-label = ウェブサイトの URL
 login-item-origin =
   .placeholder = https://www.example.com
-login-item-open-site-button = ウェブサイトに移動
 login-item-username-label = ユーザー名
-login-item-username =
-  .placeholder = name@example.com
+about-logins-login-item-username =
+  .placeholder = (ユーザー名なし)
 login-item-copy-username-button-text = コピー
 login-item-copied-username-button-text = コピーしました！
 login-item-password-label = パスワード
@@ -135,5 +141,22 @@ confirm-discard-changes-dialog-confirm-button = 破棄
 
 breach-alert-text = ログイン情報の最後の更新の後に、このサイトからパスワードの漏洩、または盗難がありました。アカウントの保護のため、パスワードを変更してください。
 breach-alert-link = この情報漏洩について
-breach-alert-dismiss = 
+breach-alert-dismiss =
     .title = この警告を閉じる
+
+## Error Messages
+
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login = そのユーザー名は { $loginTitle } では登録済みです。
+
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = そのユーザー名は { $loginTitle } では登録済みです。<a data-l10n-name="duplicate-link">既存の登録ユーザーに移動しますか？</a>
+
+# This is a generic error message.
+about-logins-error-message-default = このパスワードの保存中にエラーが発生しました。

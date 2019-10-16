@@ -153,7 +153,7 @@ menu-view-full-screen =
     .label = Folslein skerm
     .accesskey = F
 
-##
+
 
 menu-view-show-all-tabs =
     .label = Alle ljepblêden toane
@@ -212,11 +212,20 @@ menu-tools-addons =
 menu-tools-sync-sign-in =
     .label = Oanmelde by { -sync-brand-short-name }…
     .accesskey = y
+menu-tools-fxa-sign-in =
+    .label = Oanmelde by { -brand-product-name }…
+    .accesskey = m
+menu-tools-turn-on-sync =
+    .label = { -sync-brand-short-name } ynskeakelje…
+    .accesskey = y
 menu-tools-sync-now =
     .label = No syngronisearje
     .accesskey = N
 menu-tools-sync-re-auth =
     .label = Opnij ferbine mei { -sync-brand-short-name }…
+    .accesskey = O
+menu-tools-fxa-re-auth =
+    .label = Opnij ferbine mei { -brand-product-name }…
     .accesskey = O
 menu-tools-web-developer =
     .label = Webûntwikkeler

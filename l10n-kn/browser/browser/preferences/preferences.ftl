@@ -186,6 +186,62 @@ applications-type-column =
 applications-action-column =
     .label = ಕಾರ್ಯ
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } ಕಡತ
+applications-action-save =
+    .label = ಕಡತವನ್ನು ಉಳಿಸು
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = { $app-name } ಅನ್ನು ಬಳಸು
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = { $app-name } ಅನ್ನು ಬಳಸು (ಡೀಫಾಲ್ಟ್‍)
+applications-use-other =
+    .label = ಇನ್ನೊಂದನ್ನು ಬಳಸು…
+applications-select-helper = ಸಹಾಯಕ ಅನ್ವಯವನ್ನು ಆರಿಸಿ
+applications-manage-app =
+    .label = ಅನ್ವಯ ವಿವರಗಳು…
+applications-always-ask =
+    .label = ಪ್ರತಿ ಬಾರಿಯೂ ಕೇಳು
+applications-type-pdf = ಪೋರ್ಟೆಬಲ್ ಡಾಕ್ಯುಮೆಂಟ್ ಫಾರ್ಮ್ಯಾಟ್ (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = { $plugin-name } ಅನ್ನು ಬಳಸು ({ -brand-short-name } ನಲ್ಲಿ)
+applications-preview-inapp =
+    .label = { -brand-short-name } ನಲ್ಲಿನ ಮುನ್ನೋಟ
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 play-drm-content-learn-more = ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ
 update-application-title = { -brand-short-name } ನವೀಕರಣಗಳು
 update-application-version = ಆವೃತ್ತಿ{ $version } <a data-l10n-name="learn-more">ಹೊಸತೇನಿದೆ</a>
@@ -414,6 +470,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = ಮಾಸ್ಟರ್ ಗುಪ್ತಪದವನ್ನು ಬದಲಾಯಿಸು...
     .accesskey = M
+forms-master-pw-fips-title = ನೀವು ಸದ್ಯಕ್ಕೆ FIPS ವಿಧಾನದಲ್ಲಿದ್ದೀರಿ. FIPS ಗೆ ಒಂದು ಖಾಲಿ ಇರದ ಮಾಸ್ಟರ್ ಗುಪ್ತಪದದ ಅಗತ್ಯವಿದೆ.
+forms-master-pw-fips-desc = ಗುಪ್ತಪದವನ್ನು ಬದಲಾಯಿಸುವಲ್ಲಿ ವಿಫಲಗೊಂಡಿದೆ
 
 ## Privacy Section - History
 
@@ -478,6 +536,13 @@ addressbar-suggestions-settings = ಹುಡುಕು ಯಂತ್ರಗಳ ಸ�
 ## Privacy Section - Content Blocking
 
 content-blocking-learn-more = ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+
+##
+
 
 ## Privacy Section - Tracking
 

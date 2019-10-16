@@ -98,15 +98,17 @@ detail-private-browsing-description2 = 允许后，扩展可在隐私浏览中�
 # cannot be overridden by the user.
 detail-private-disallowed-label = 不支持隐私窗口
 detail-private-disallowed-description = 此扩展不支持在隐私浏览窗口中运行。<label data-l10n-name="detail-private-browsing-learn-more">详细了解</label>
+detail-private-disallowed-description2 = 隐私浏览时不会运行此扩展。<a data-l10n-name="learn-more">详细了解</a>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
-detail-private-required-label = 要求介入隐私窗口
-detail-private-required-description = 此扩展有权访问您在隐私浏览窗口中的活动情况。<label data-l10n-name="detail-private-browsing-learn-more">详细了解</label>
+detail-private-required-label = 会自动于隐私浏览窗口中运作
+detail-private-required-description = 此扩展可以获知您在隐私浏览窗口中的上网情况。<label data-l10n-name="detail-private-browsing-learn-more">详细了解</label>
+detail-private-required-description2 = 此扩展可以获知您在隐私浏览窗口中的上网情况。<a data-l10n-name="learn-more">详细了解</a>
 detail-private-browsing-on =
     .label = 允许
-    .tooltiptext = 在隐私浏览中启用
+    .tooltiptext = 在隐私浏览模式中启用
 detail-private-browsing-off =
     .label = 不允许
-    .tooltiptext = 在隐私浏览中禁用
+    .tooltiptext = 在隐私浏览模式中禁用
 detail-home =
     .label = 主页
 detail-home-value =
@@ -138,13 +140,13 @@ detail-show-preferences =
 detail-rating =
     .value = 评分
 addon-restart-now =
-    .label = 立即重开
+    .label = 立即重启浏览器
 disabled-unsigned-heading =
     .value = 一些附加组件已被禁用
 disabled-unsigned-description = 下列附加组件未通过针对是否适用于 { -brand-short-name } 的验证。您可以<label data-l10n-name="find-addons">找找有无替代品</label>或者请开发者申请验证。
 disabled-unsigned-learn-more = 了解我们为保障您的网上安全做了哪些努力。
 disabled-unsigned-devinfo = 想要自己的附加组件获得验证的开发者可继续阅读我们的<label data-l10n-name="learn-more">相关手册</label>。
-plugin-deprecation-description = 少些东西？某些插件已不再被 { -brand-short-name } 支持。 <label data-l10n-name="learn-more">详细了解。</label>
+plugin-deprecation-description = 少了些东西？{ -brand-short-name } 不再支持某些插件了。 <label data-l10n-name="learn-more">详细了解。</label>
 legacy-warning-show-legacy = 显示旧式扩展
 legacy-extensions =
     .value = 旧式扩展
@@ -221,7 +223,7 @@ extensions-updates-installed =
 extensions-updates-downloaded =
     .value = 您的附加组件更新已经下载。
 extensions-updates-restart =
-    .label = 立即重开以完成安装
+    .label = 立即重启浏览器以完成安装
 extensions-updates-none-found =
     .value = 没有找到可用的更新
 extensions-updates-manual-updates-found =
@@ -252,7 +254,7 @@ shortcuts-duplicate = 快捷键重复
 # String displayed when a keyboard shortcut is already assigned to more than one add-on
 # Variables:
 #   $shortcut (string) - Shortcut string for the add-on
-shortcuts-duplicate-warning-message = { $shortcut } 被不止一个附加组件设为快捷键，重复的快捷键可能会导致意外行为。
+shortcuts-duplicate-warning-message = 有超过一个附加组件使用 { $shortcut } 作为快捷键，重复的快捷键可能会导致无法预料的行为。
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -269,7 +271,7 @@ go-back-button =
 
 # Explanatory introduction to the list of recommended add-ons. The action word
 # ("recommends") in the final sentence is a link to external documentation.
-discopane-intro = 扩展与主题就像手机上的应用，让您获得密码保护、视频下载、优惠信息、拦截恼人广告、改变浏览器外观等功能。这些小型软件程序通常由第三方开发。以下是一些 { -brand-product-name } 所<a data-l10n-name="learn-more-trigger">推荐</a>，在安全性、性能、功能等方面表现突出的精选项目。
+discopane-intro = 扩展与主题跟手机上的应用一样，帮您保护密码、下载视频、提供优惠信息、拦截恼人广告、改变浏览器外观等等。这些小程序通常由第三方开发。以下是一些 { -brand-product-name } 所<a data-l10n-name="learn-more-trigger">推荐</a>的，在安全性、性能、功能等方面表现突出的项目。
 # Notice to make user aware that the recommendations are personalized.
 discopane-notice-recommendations = 下面某些是根据您安装的其他附加组件、偏好设置、使用统计推导出的个性化推荐。
 discopane-notice-learn-more = 详细了解
@@ -288,6 +290,10 @@ install-theme-button = 安装主题
 # the detailed add-on view is opened, from where the add-on can be managed.
 manage-addon-button = 管理
 find-more-addons = 寻找更多附加组件
+# This is a label for the button to open the "more options" menu, it is only
+# used for screen readers.
+addon-options-button =
+    .aria-label = 更多选项
 
 ## Add-on actions
 
@@ -357,6 +363,11 @@ install-update-button = 更新
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed =
     .title = 已允许在隐私窗口中运行
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed2 =
+    .title = 允许运行于隐私窗口
+    .aria-label = { addon-badge-private-browsing-allowed2.title }
 addon-detail-private-browsing-help = 若允许，扩展可在隐私浏览中获知您的在线活动。 <a data-l10n-name="learn-more">详细了解</a>
 addon-detail-private-browsing-allow = 允许
 addon-detail-private-browsing-disallow = 不允许
@@ -365,6 +376,11 @@ addon-detail-private-browsing-disallow = 不允许
 addon-badge-recommended =
     .title = 推荐
     .alt = 推荐
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended2 =
+    .title = { -brand-product-name } 只推荐符合我们的安全和性能标准的扩展。
+    .aria-label = { addon-badge-recommended2.title }
 available-updates-heading = 可用更新
 recent-updates-heading = 最近更新
 release-notes-loading = 正在载入…

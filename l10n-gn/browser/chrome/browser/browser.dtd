@@ -76,12 +76,21 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY menubarCmd.label "Poravorã renda">
 <!ENTITY menubarCmd.accesskey "M">
 <!ENTITY navbarCmd.label "Kundaha rembipuru renda">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY navbar.accessibleLabel "Ñekundaha">
 <!ENTITY personalbarCmd.label "Techaukaha rembipuru renda">
 <!ENTITY personalbarCmd.accesskey "B">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY personalbar.accessibleLabel "Techaukaha">
 <!ENTITY bookmarksToolbarItem.label "Techaukaha rembipuru renda remimoĩ">
 
 <!ENTITY pageSourceCmd.label "Ayvu reñoiha kuatiarogue">
 <!ENTITY pageSourceCmd.accesskey "o">
+
 <!ENTITY pageSourceCmd.commandkey "u">
 <!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
 Option+Command keyboard shortcut letter that Safari and Chrome use for "View
@@ -92,6 +101,7 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 
 <!ENTITY pageInfoCmd.label "Kuatiarogue rehegua marandu">
 <!ENTITY pageInfoCmd.accesskey "I">
+
 <!ENTITY pageInfoCmd.commandkey "i">
 <!ENTITY ldbCmd.label "Moha'ãnga mopotĩha">
 <!ENTITY ldbCmd.accesskey "L">
@@ -116,6 +126,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaSignInError.label "&syncBrand.shortName.label;-pe jeikejey">
 <!ENTITY fxaUnverified.label "Ehechajey nemba'ete">
 
+
+<!ENTITY togglePictureInPicture.key2 "}">
+<!ENTITY togglePictureInPicture.key "]"> <!-- } is above this key on many keyboards -->
 
 <!ENTITY fullScreenMinimize.tooltip "Momichĩ">
 <!ENTITY fullScreenRestore.tooltip "Mbojevy">
@@ -146,13 +159,24 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.menu.signedInAs.label "Heraguapy kóicha">
 <!ENTITY fxa.menu.manageAccount.label "Mba'ete ñangareko…">
 <!ENTITY fxa.menu.syncSettings.label "&syncBrand.shortName.label; Moĩporã…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbar menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.syncSettings2.label "&syncBrand.shortName.label; Ñemboheko">
 <!ENTITY fxa.menu.connectAnotherDevice2.label "Embojuaju ambue mba’e’oka…">
 <!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
 <!ENTITY fxa.menu.signin.label "Eike &brandProductName;">
 <!ENTITY fxa.menu.turnOnSync.label "Emyandy &syncBrand.shortName.label;">
-<!ENTITY fxa.menu.account.label "Mba'ete">
 <!ENTITY fxa.menu.firefoxServices.label "&brandProductName; Mba'epuru">
+
+<!ENTITY fxa.menu.account.label "Mba'ete">
+<!ENTITY fxa.menu.settings.label "Ñemboheko">
+<!ENTITY fxa.menu.accountSettings.label "Mba'ete ñemboheko">
+<!ENTITY fxa.menu.signOut.label "Ñesẽ…">
+<!ENTITY fxa.menu.deviceSettings.label "Mba'e'oka ñemboheko">
+<!ENTITY fxa.menu.setupSync.label "Emboheko &syncBrand.shortName.label;…">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
      for the Firefox Account toolbar menu screen.  -->
@@ -195,6 +219,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY bookmarksMenu.label "Techaukaha">
 <!ENTITY bookmarksMenu.accesskey "B">
+
 <!ENTITY bookmarkThisPageCmd.label "Kuatiarogue mbojoapy">
 <!ENTITY editThisBookmarkCmd.label "Ko techaukaha mbosako'i">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
@@ -236,6 +261,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Mba'ejoajurã jepuru ñangareko">
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "Emoambue eipotárõ oñemog̃uahẽ ndéve ñemomarandu ko ñandutirenda omondóva.">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Mba'ekuaarã ñembyaty, ñembyaty hi'arekuaávape">
+
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Kundahára oĩ ñangarekoha okayguáva poguýpe">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Eike pe ñanduti mboajeha rupápe">
 <!ENTITY urlbar.storageAccessAnchor.tooltip               "Embojuruja kundaha rembiapo ñemoneĩ rupa">
@@ -249,6 +275,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Eñangareko kuatiarogue ñe'ẽasa rehe">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Eñangareko DRM software jepuru rehe">
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "Eike ta'ãngarupa MIDI pe">
+
+<!ENTITY urlbar.permissionsGranted.tooltip       "Oñeme’ẽ ko ñanduti rendápe ñemoneĩ jo’a.">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Ejokóma ne ta'ãngamýi ko ñanduti rendápe g̃uarã.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Ejokóma ne ñe'ẽatãha ko ñanduti rendápe g̃uarã.">
@@ -419,8 +447,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Ehechasépa tendaykekuéra ambue mba'e'okaguáva ko'ápe?">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Eike Sync jerohoryvévape">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Emoñepyrũ tembiapopa'ũ ehecha hag̃ua tendayke rysýi ambue ne mba'e'okaguáva.">
+<!ENTITY appMenuRemoteTabs.welcome.label "Ehecha tendayke rysýi ambue ne mba'e'okagua.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Tekotevẽ ñemboaje ne mba'ete.">
 <!ENTITY appMenuRemoteTabs.signin.label "Eike Sync-pe">
+<!ENTITY appMenuRemoteTabs.signintosync.label "Eñepyrũ tembiapo &syncBrand.shortName.label;…">
+<!ENTITY appMenuRemoteTabs.turnonsync.label "Emyandy &syncBrand.shortName.label;…">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Mba'e'oka ñangarekoha…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Ehecha mbojuehepyre tenda yképe">
 <!ENTITY appMenuRemoteTabs.hidesidebar.label "Emokañy tenda yke tendayke mbojuehepyrére">
@@ -508,6 +539,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      This is set as the aria-label attribute for the search input box in the
      in-content search UI, to be used by screen readers. -->
 <!ENTITY contentSearchInput.label     "Porandu jeheka rehegua">
+
 <!ENTITY contentSearchSubmit.tooltip  "Jeheka mondo">
 
 <!-- LOCALIZATION NOTE (searchInput.placeholder):
@@ -812,13 +844,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.connection "Jeike">
 <!ENTITY identity.connectionSecure "Jeikekatu">
-
-<!-- LOCALIZATION NOTE (identity.securityView.label2)
-     This is the header of the security subview in the Site Identity panel. -->
-<!ENTITY identity.securityView.label2 "Jeikeha hekorosãva">
-
-<!ENTITY identity.connectionSecure2 "Eike tekorosãme">
 <!ENTITY identity.connectionNotSecure "Jeikekatu'ỹre">
+
+<!ENTITY identity.connectionSecure3 "Jeikekatu">
+<!ENTITY identity.connectionNotSecure2 "Jeikekatu'ỹ">
 <!ENTITY identity.connectionNotSecureSecurityView "Nde jeike nahekorosãi ko tendápe.">
 <!ENTITY identity.connectionFile "Ko kuatiarogue oñeñongatu mohendahápe.">
 <!ENTITY identity.connectionVerified2 "Eikhína tekorosãme ko tendápe, mba'eteépe:">
@@ -828,7 +857,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.insecureLoginForms2 "Ojehaiva'ekue jeike hag̃ua ko kuatiaroguépe oñemondakuaa.">
 <!ENTITY identity.customRoot "Jeike ohechapyréva mboajepyre me’ẽha Mozilla omoneĩ’ỹva.">
 
-<!ENTITY identity.evOwnerLabel "Tenda ijárava:">
+<!ENTITY identity.evOwnerLabel2 "Mboajepyre osẽmava:">
 
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "&brandShortName; ojokóma ko kuatiarogue pehẽ ijerovia'ỹha.">
@@ -864,8 +893,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.permissions "Moneĩ">
 
-<!-- LOCALIZATION NOTE (identity.permissions2): "set" as in "configured for this website" -->
-<!ENTITY identity.permissions2 "Ñemoneĩ aty">
+<!ENTITY identity.permissions3 "Moneĩ">
 <!ENTITY identity.permissionsEmpty "Nome'ẽi ko tenda ñemoneĩ ha'etéva.">
 <!ENTITY identity.permissionsReloadHint "Ikatu hína kuatiarogue emyanyhẽjey umi moambuepyre oñemboheko hag̃ua.">
 <!ENTITY identity.permissionsPreferences.tooltip "Oĩ moneĩ jeguerohoryvéva">
@@ -878,7 +906,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      protections.etpMoreInfo.label: The text a screen reader speaks when focused on the info button. -->
 <!ENTITY protections.etpMoreInfo.label "Maranduve jehapykuehoha iporãvéva mo’ãha rehegua">
 <!ENTITY protections.settings.label "Ñemo’ã ñemboheko">
-<!ENTITY protections.report.label "Ehechaukapaite marandu’i">
+<!ENTITY protections.showreport.label "Ehechauka marandu'i">
 <!-- LOCALIZATION NOTE:
      protections.siteNotWorking.label: The link to be clicked to open the sub-panel view
      protections.siteNotWorkingView.title: The heading/title of the sub-panel view -->
@@ -895,15 +923,23 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY protections.siteNotWorkingView.issueList.payments "Jehepume'ẽ">
 <!ENTITY protections.siteNotWorkingView.issueList.comments "Je'erei">
 <!ENTITY protections.siteNotWorkingView.issueList.videos "Ta'ãngamýi">
-<!ENTITY protections.siteNotWorkingView.siteStillBroken.label "¿Ko tenda moñemyanyhẽi gueteri ojepe’a rire ñemo’ã?">
 <!ENTITY protections.siteNotWorkingView.sendReport.label "Emondo marandu'i">
 
+<!-- LOCALIZATION NOTE (protections.blocking2.label, protections.notBlocking2.label, protections.notFound.label):
+     In the protections panel, Content Blocking category items are in three sections:
+     "Blocked" for categories being blocked in the current page,
+     "Allowed" for categories detected but not blocked in the current page, and
+     "None Detected" for categories not detected in the current page.
+     These strings are used in the header labels of each of these sections. -->
 <!ENTITY protections.blocking2.label "Jokopyre">
 <!ENTITY protections.notBlocking2.label "Moneĩmbyre ">
+<!ENTITY protections.notFound.label "Ndaipóri juhupyre">
+<!-- LOCALIZATION NOTE (protections.notBlocking.why.label, protections.notBlocking.why.etp*.tooltip):
+     The "Allowed" header also includes a "Why?" link that, when hovered, shows
+     a tooltip explaining why these items were not blocked in the page. -->
 <!ENTITY protections.notBlocking.why.label "¿Mba'ére?">
 <!ENTITY protections.notBlocking.why.etpOn.tooltip "Ko’ãva jejoko ikatu ombyai mba’epuru ñanduti renda pegua. Jehapykuehoha’ỹre heta votõ, myanyhẽha ha tembiapo ñepyrũ rekoha ikatu ndoikói.">
 <!ENTITY protections.notBlocking.why.etpOff.tooltip "Ñemo’ãha jepe’a ombojurujáta opaite jehapykuehoha ko tendápe. Ikatu avei omba’apo porãve.">
-<!ENTITY protections.notFound.label "Ndaipóri juhupyre">
 <!ENTITY protections.socialMediaTrackers.label "Ava ñandutieta rapykuehoha">
 <!ENTITY protections.crossSiteTrackingCookies.label "Kookie rapykuehoha tenda ojoasáva rehegua">
 <!ENTITY protections.trackingContent.label "Tetepu rapykuehoha">
@@ -914,7 +950,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY protections.crossSiteTrackingCookies.description "Ko’ã kookie ohapykueho opaite hendápe ombyaty hag̃ua mba’ekuaarã ojapóva ñandutípe. Omboaje mbohapyháva, mombe’uháramo ha mba’apoha tesa’ỹijoha.">
 <!ENTITY protections.cryptominers.description "Ymi criptominero oipurúva nde apopyvusu rembipurupyahu oguenohẽ hag̃ua viru ñandutiguáva. Umi ojuapykuerigua ipapapýva mbohapeha oipurupa ibatería, omombegue ne mohendaha ha ikatu ohupi electricidad repy.">
 <!ENTITY protections.fingerprinters.description "Umi Kuãhũ kuaaukaha ombyaty ne kundaha ha mohendaha ñemboheko omoheñói hag̃ua imba’eterã. Oipurúva ko kuãhũ ikatu ohapykueho heta ñanduti renda rupive.">
-<!ENTITY protections.trackingContent.description "Umi ñanduti renda ikatu omyanyhẽ marandu ñemurã okayguávagui, ta’ãngamýi ha ambue tetepy oguerekóva ayvu rapykuehoha. Pe tetepy jejoko rapykuehoha ikatu nepytyvõ umi tenda henyhẽ pya’eve hag̃ua, hákatu ikatuhína ndahetái votõ, myanyhẽha ha tembiapo ñepyrũ rekoha ndoikói.">
+<!ENTITY protections.trackingContent2.description "Tendakuéra ikatu ohupi maranduñemurã okaygua, ta’ãngamýi ha ambue tetepy orekóva tapykuehoha ayvu. Tetepy rapykuehoha jejoko ikatu oipytyvõ tendakuérape henyhẽ pya’eve hag̃ua hákatu heta votõ, myanyhẽha ha jeikeha kora ikatu ndoikovéi.">
 <!ENTITY protections.socialMediaTrackers.description "Umi ava ñandutieta ohechakuaa tapykuehoha ambue ñanduti rendápe ohapykueho hag̃ua hembiapo, ohecha tapia ñandutípe. Kóva omoneĩ mba’apohaguasu ava ñandutietápe oikuaavévo ndehegui umi emoherakuãvagui ava ñandutietápe.">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
@@ -954,18 +990,18 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection3.label "Tapykuehohára">
 
 <!ENTITY contentBlocking.manageSettings.label "Eñangareko tetepy jejoko rehe">
-
-<!ENTITY contentBlocking.trackingProtection4.label "Tetepy jehapykueho">
-
-<!ENTITY contentBlocking.manageSettings2.label "Eñangareko ñemo’ã ñembohekóre">
 <!ENTITY contentBlocking.manageSettings.accesskey "M">
 
 <!ENTITY contentBlocking.trackersView.label "Hekahára">
-
 <!ENTITY contentBlocking.trackersView.strictInfo.label "Ejoko hag̃ua opaite tapykuehoha, emboheko tetepy jokoha “Strict”-pe.">
 
 <!ENTITY contentBlocking.cookies.label "Kookie">
 <!ENTITY contentBlocking.cookiesView.label "Kookie ha mba’ekuaarã renda rehegua">
+
+<!ENTITY contentBlocking.trackingProtection4.label "Tetepy jehapykueho">
+
+<!ENTITY contentBlocking.manageSettings2.label "Eñangareko ñemo’ã ñembohekóre">
+<!ENTITY contentBlocking.manageSettings2.accesskey "M">
 
 <!ENTITY contentBlocking.socialblock.label "Ava ñandutieta vore rapykuehoha">
 
@@ -981,6 +1017,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView.label "Emombe’u apañuãi">
 <!ENTITY contentBlocking.breakageReportView2.description "Pe tetepy jejoko ikatu omoapañuãi tendápe. Oñemomarandúvo apañuãi, oipytyvõ &brandShortName; opavavépe g̃uarã. (Kóva oguerahaukáta URL Mozilla-pe ha péicha avei marandu’i kundahára ñemboheko rehegua).">
 <!ENTITY contentBlocking.breakageReportView.learnMore "Kuaave">
+
 <!ENTITY contentBlocking.breakageReportView.title "Emombe’u tenda henyhẽ’ỹva">
 <!ENTITY contentBlocking.breakageReportView3.description "Pe tapykuehoha jejoko ikatu omoapañuãi heta ñanduti rendápe. Emombe’úvo ko’ã apañuãi eipytyvõta &brandShortName; oikoporãvétaha opavavépe g̃uarã. Emondóvo ko marandu, og̃uahẽta Mozilla-pe peteĩ URL ha marandu ne kundaha ñemboheko rehegua.">
 <!ENTITY contentBlocking.breakageReportView2.learnMore "Kuaave">
@@ -1036,6 +1073,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY newTabControlled.disableButton.accesskey "D">
 
 <!ENTITY homepageControlled.message "Peteĩ jepysokue omoambue ojehecháva nde kuatiarogue ñepyrũramo. Ikatu ombojevy iñemboheko ndereipotáirõ iñambue.">
+
 <!ENTITY homepageControlled.header.message "Emoambue nde kuatiarogue ñepyrũ.">
 <!ENTITY homepageControlled.keepButton.label "Eguerekóke moambuepyre">
 <!ENTITY homepageControlled.keepButton.accesskey "K">

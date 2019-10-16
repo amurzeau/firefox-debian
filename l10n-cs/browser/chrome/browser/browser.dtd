@@ -76,12 +76,21 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY menubarCmd.label "Hlavní nabídka">
 <!ENTITY menubarCmd.accesskey "H">
 <!ENTITY navbarCmd.label "Navigační lišta">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY navbar.accessibleLabel "Navigace">
 <!ENTITY personalbarCmd.label "Lišta záložek">
 <!ENTITY personalbarCmd.accesskey "z">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY personalbar.accessibleLabel "Záložky">
 <!ENTITY bookmarksToolbarItem.label "Záložky nástrojové lišty">
 
 <!ENTITY pageSourceCmd.label "Zdrojový kód stránky">
 <!ENTITY pageSourceCmd.accesskey "j">
+
 <!ENTITY pageSourceCmd.commandkey "u">
 <!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
 Option+Command keyboard shortcut letter that Safari and Chrome use for "View
@@ -92,6 +101,7 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 
 <!ENTITY pageInfoCmd.label "Informace o stránce">
 <!ENTITY pageInfoCmd.accesskey "I">
+
 <!ENTITY pageInfoCmd.commandkey "i">
 <!ENTITY ldbCmd.label "Debugger rozložení">
 <!ENTITY ldbCmd.accesskey "l">
@@ -116,6 +126,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaSignInError.label "Opětovné připojení k &syncBrand.shortName.label;">
 <!ENTITY fxaUnverified.label "Ověřte svůj účet">
 
+
+<!ENTITY togglePictureInPicture.key2 "(">
+<!ENTITY togglePictureInPicture.key ")"> <!-- } is above this key on many keyboards -->
 
 <!ENTITY fullScreenMinimize.tooltip "Minimalizovat">
 <!ENTITY fullScreenRestore.tooltip "Obnovit">
@@ -145,14 +158,23 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      followed by the user's email. -->
 <!ENTITY fxa.menu.signedInAs.label "Přihlášen(a) jako">
 <!ENTITY fxa.menu.manageAccount.label "Správa účtu…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbar menu screen. The `Signed in as` text is
+     followed by the user's email. -->
 <!ENTITY fxa.menu.syncSettings.label "Nastavení synchronizace…">
 <!ENTITY fxa.menu.connectAnotherDevice2.label "Připojit další zařízení…">
 <!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
 <!ENTITY fxa.menu.signin.label "Přihlásit se k aplikaci &brandProductName;">
 <!ENTITY fxa.menu.turnOnSync.label "Zapnout &syncBrand.shortName.label;">
-<!ENTITY fxa.menu.account.label "Účet">
 <!ENTITY fxa.menu.firefoxServices.label "Služby aplikace &brandProductName;">
+
+<!ENTITY fxa.menu.account.label "Účet">
+<!ENTITY fxa.menu.settings.label "Nastavení">
+<!ENTITY fxa.menu.accountSettings.label "Nastavení účtu">
+<!ENTITY fxa.menu.signOut.label "Odhlásit se…">
+<!ENTITY fxa.menu.deviceSettings.label "Nastavení zařízení">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
      for the Firefox Account toolbar menu screen.  -->
@@ -195,6 +217,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY bookmarksMenu.label "Záložky">
 <!ENTITY bookmarksMenu.accesskey "o">
+
 <!ENTITY bookmarkThisPageCmd.label "Přidat stránku do záložek">
 <!ENTITY editThisBookmarkCmd.label "Upravit záložku">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
@@ -236,6 +259,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Správa využití zásuvného modulu">
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "Změní, jestli můžete ze serveru přijímat oznámení">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Uložit data natrvalo">
+
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Prohlížeč je ovládán vzdáleně">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Otevřít panel webové autentizace">
 <!ENTITY urlbar.storageAccessAnchor.tooltip               "Otevřít nastavení přístupu k informacím o vašem prohlížení">
@@ -249,6 +273,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Spravovat překlad stránky">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Správa využívání softwaru DRM">
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "Otevřít MIDI panel">
+
+<!ENTITY urlbar.permissionsGranted.tooltip       "Tomuto serveru jste udělili dodatečná oprávnění.">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Tomuto serveru jste zablokovali přístup k vaší kameře.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Tomuto serveru jste zablokovali přístup k vašemu mikrofonu.">
@@ -416,11 +442,14 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.subtitle "Chcete zde vidět vaše panely z ostatních zařízení?">
+<!ENTITY appMenuRemoteTabs.noclients.subtitle "Chcete zde vidět své panely z ostatních zařízení?">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Otevřít předvolby synchronizace">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Pro zobrazení seznamu panelů z vašich ostatních zařízení se prosím přihlaste.">
+<!ENTITY appMenuRemoteTabs.welcome.label "Seznam panelů z ostatních zařízení">
 <!ENTITY appMenuRemoteTabs.unverified.label "Je potřeba ověřit váš účet.">
 <!ENTITY appMenuRemoteTabs.signin.label "Přihlásit se ke službě Sync">
+<!ENTITY appMenuRemoteTabs.signintosync.label "Přihlášení k &syncBrand.shortName.label;…">
+<!ENTITY appMenuRemoteTabs.turnonsync.label "Zapnout &syncBrand.shortName.label;…">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Správa zařízení…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Zobrazit v postranní liště">
 <!ENTITY appMenuRemoteTabs.hidesidebar.label "Zavřít v postranní liště">
@@ -508,6 +537,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      This is set as the aria-label attribute for the search input box in the
      in-content search UI, to be used by screen readers. -->
 <!ENTITY contentSearchInput.label     "Vyhledávací dotaz">
+
 <!ENTITY contentSearchSubmit.tooltip  "Potvrdí hledání">
 
 <!-- LOCALIZATION NOTE (searchInput.placeholder):
@@ -812,13 +842,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.connection "Spojení">
 <!ENTITY identity.connectionSecure "Zabezpečené spojení">
-
-<!-- LOCALIZATION NOTE (identity.securityView.label2)
-     This is the header of the security subview in the Site Identity panel. -->
-<!ENTITY identity.securityView.label2 "Bezpečnost spojení">
-
-<!ENTITY identity.connectionSecure2 "Spojení je zabezpečeno">
 <!ENTITY identity.connectionNotSecure "Spojení není zabezpečeno">
+
+<!ENTITY identity.connectionSecure3 "Zabezpečené spojení">
+<!ENTITY identity.connectionNotSecure2 "Spojení není zabezpečené">
 <!ENTITY identity.connectionNotSecureSecurityView "Spojení s tímto serverem není zabezpečené.">
 <!ENTITY identity.connectionFile "Tato stránka je uložena ve vašem počítači.">
 <!ENTITY identity.connectionVerified2 "Spojení s tímto serverem je zabezpečené. Jeho provozovatelem je:">
@@ -828,7 +855,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.insecureLoginForms2 "Přihlašovací údaje zadané na této stránce mohou být vyzrazeny.">
 <!ENTITY identity.customRoot "Připojení je ověřeno vydavatelem certifikátů, kterého Mozilla nezná.">
 
-<!ENTITY identity.evOwnerLabel "Provozovatel serveru:">
+<!ENTITY identity.evOwnerLabel2 "Certifikát vydán pro:">
 
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "Aplikace &brandShortName; zablokovala nezabezpečené části této stránky.">
@@ -864,8 +891,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.permissions "Oprávnění">
 
-<!-- LOCALIZATION NOTE (identity.permissions2): "set" as in "configured for this website" -->
-<!ENTITY identity.permissions2 "Oprávnění nastavena">
+<!ENTITY identity.permissions3 "Oprávnění">
 <!ENTITY identity.permissionsEmpty "Tento server nemá žádná zvláštní oprávnění.">
 <!ENTITY identity.permissionsReloadHint "Pro provedení změn budete možná muset obnovit stránku.">
 <!ENTITY identity.permissionsPreferences.tooltip "Otevřít nastavení oprávnění">
@@ -878,7 +904,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      protections.etpMoreInfo.label: The text a screen reader speaks when focused on the info button. -->
 <!ENTITY protections.etpMoreInfo.label "Více informací o rozšířené ochraně proti sledování">
 <!ENTITY protections.settings.label "Nastavení ochrany">
-<!ENTITY protections.report.label "Podrobné statistiky">
+<!ENTITY protections.showreport.label "Zobrazit podrobnosti">
 <!-- LOCALIZATION NOTE:
      protections.siteNotWorking.label: The link to be clicked to open the sub-panel view
      protections.siteNotWorkingView.title: The heading/title of the sub-panel view -->
@@ -895,25 +921,34 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY protections.siteNotWorkingView.issueList.payments "platbami">
 <!ENTITY protections.siteNotWorkingView.issueList.comments "psaním komentářů">
 <!ENTITY protections.siteNotWorkingView.issueList.videos "přehráváním videí">
-<!ENTITY protections.siteNotWorkingView.siteStillBroken.label "Stránka nefunguje ani po vypnutí ochrany proti sledování?">
 <!ENTITY protections.siteNotWorkingView.sendReport.label "Poslat hlášení">
 
-<!ENTITY protections.blocking.label "Blokováno">
-<!ENTITY protections.notBlocking.label "Neblokováno">
+<!-- LOCALIZATION NOTE (protections.blocking2.label, protections.notBlocking2.label, protections.notFound.label):
+     In the protections panel, Content Blocking category items are in three sections:
+     "Blocked" for categories being blocked in the current page,
+     "Allowed" for categories detected but not blocked in the current page, and
+     "None Detected" for categories not detected in the current page.
+     These strings are used in the header labels of each of these sections. -->
+<!ENTITY protections.blocking2.label "Zablokováno">
+<!ENTITY protections.notBlocking2.label "Povoleno">
+<!ENTITY protections.notFound.label "Nenalezeno">
+<!-- LOCALIZATION NOTE (protections.notBlocking.why.label, protections.notBlocking.why.etp*.tooltip):
+     The "Allowed" header also includes a "Why?" link that, when hovered, shows
+     a tooltip explaining why these items were not blocked in the page. -->
 <!ENTITY protections.notBlocking.why.label "Proč?">
 <!ENTITY protections.notBlocking.why.etpOn.tooltip "Blokování těchto prvků může ovlivnit fungování webové stránky. Bez sledovacích prvků nemusí některá tlačítka nebo formuláře správně fungovat.">
 <!ENTITY protections.notBlocking.why.etpOff.tooltip "Vypnutí ochrany povolí načtení všech sledovacích prvků na této stránce. Může to vyřešit případné problémy s jejím fungováním.">
-<!ENTITY protections.socialMediaTrackers.label "Sledovací prvky sociálních sítí">
+<!ENTITY protections.socialMediaTrackers.label "Sledující prvky sociálních sítí">
 <!ENTITY protections.crossSiteTrackingCookies.label "Sledovací cookies">
 <!ENTITY protections.trackingContent.label "Sledující obsah">
 <!ENTITY protections.fingerprinters.label "Vytváření otisku prohlížeče">
 <!ENTITY protections.cryptominers.label "Těžba kryptoměn">
-<!ENTITY protections.noTrackersFound.description "Na této stránce nebyly nalezené žádné sledovací prvky, které &brandShortName; zná.">
+<!ENTITY protections.noTrackersFound.description "Aplikace &brandShortName; na této stránce nenalezla žádné známé sledovací prvky.">
 
 <!ENTITY protections.crossSiteTrackingCookies.description "Tyto cookies slouží k vašemu sledování napříč webovými stránkami a sběru dat o tom, co na internetu děláte. Používají je třetí strany jako jsou reklamní systémy nebo analytické společnosti.">
 <!ENTITY protections.cryptominers.description "Těžba kryptoměn využívá výpočetní výkon vašeho počítače k získávání digitálních měn. Běžící skripty vybíjí vaši baterii a zpomalují váš počítač.">
-<!ENTITY protections.fingerprinters.description "Sběrem informací o vašem prohlížeči a počítači lze vytvořit unikátní otisk a ten pak použít k vašemu sledování napříč různými a nijak nesouvisejícímí servery a webovými stránkami.">
-<!ENTITY protections.trackingContent.description "Webové stránky mohou načítat externí reklamy, videa a další obsah, který obsahuje sledovací kód. Po zablokování sledujícího obsahu se stránky načítají rychleji, ale některá tlačítka nebo formuláře nemusí správně fungovat.">
+<!ENTITY protections.fingerprinters.description "Sběrem informací o vašem prohlížeči a počítači lze vytvořit unikátní otisk a ten pak použít k vašemu sledování napříč různými a nijak nesouvisejícími servery a webovými stránkami.">
+<!ENTITY protections.trackingContent2.description "Webové stránky mohou načítat externí reklamy, videa a další obsah, který obsahuje sledovací kód. Po zablokování sledujícího obsahu se stránky načítají rychleji, ale některá tlačítka nebo formuláře nemusí správně fungovat.">
 <!ENTITY protections.socialMediaTrackers.description "Sociální sítě umisťují na ostatní stránky sledovací prvky, pomocí kterých mohou sledovat, co na internetu sledujete. Tím získávají informace o vašich zájmech i bez toho, abyste na dané sítí něco sdíleli s ostatními.">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
@@ -953,20 +988,20 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection3.label "Sledovací prvky">
 
 <!ENTITY contentBlocking.manageSettings.label "Nastavení blokování obsahu">
-
-<!ENTITY contentBlocking.trackingProtection4.label "Sledující obsah">
-
-<!ENTITY contentBlocking.manageSettings2.label "Nastavení ochrany">
 <!ENTITY contentBlocking.manageSettings.accesskey "N">
 
 <!ENTITY contentBlocking.trackersView.label "Sledovací prvky">
-
-<!ENTITY contentBlocking.trackersView.strictInfo.label "Všechny sledovací prvky zablokuje úroveň „Přísné“.">
+<!ENTITY contentBlocking.trackersView.strictInfo.label "Všechny sledovací prvky zablokuje úroveň „Přísná“.">
 
 <!ENTITY contentBlocking.cookies.label "Cookies">
 <!ENTITY contentBlocking.cookiesView.label "Cookies a data stránek">
 
-<!ENTITY contentBlocking.socialblock.label "Sledovací prvky sociálních sítí">
+<!ENTITY contentBlocking.trackingProtection4.label "Sledující obsah">
+
+<!ENTITY contentBlocking.manageSettings2.label "Nastavení ochrany">
+<!ENTITY contentBlocking.manageSettings2.accesskey "N">
+
+<!ENTITY contentBlocking.socialblock.label "Sledující prvky sociálních sítí">
 
 <!ENTITY contentBlocking.cookies2.label "Sledovací cookies">
 
@@ -980,6 +1015,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView.label "Nahlásit problémy">
 <!ENTITY contentBlocking.breakageReportView2.description "Blokování obsahu může způsobovat problémy na některých stránkách. Jejich nahlášením významně pomůžete aplikaci &brandShortName; dále vylepšovat. S vaším hlášením se Mozille odešle URL stránky a informace o vašem nastavení blokování obsahu.">
 <!ENTITY contentBlocking.breakageReportView.learnMore "Zjistit více">
+
 <!ENTITY contentBlocking.breakageReportView.title "Nahlásit nefunkční stránku">
 <!ENTITY contentBlocking.breakageReportView3.description "Blokování sledovacích prvků může na některých stránkách způsobovat problémy. Jejich nahlášením významně pomůžete aplikaci &brandShortName; dále vylepšovat. S vaším hlášením se Mozille odešle URL stránky a informace o vašem nastavení blokování obsahu.">
 <!ENTITY contentBlocking.breakageReportView2.learnMore "Zjistit více">
@@ -1035,6 +1071,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY newTabControlled.disableButton.accesskey "Z">
 
 <!ENTITY homepageControlled.message "Rozšíření změnilo obsah zobrazovaný na vaší domovské stránce. Pokud tuto změnu nechcete, můžete obnovit svoje původní nastavení.">
+
 <!ENTITY homepageControlled.header.message "Vaše domovská stránka byla změněna.">
 <!ENTITY homepageControlled.keepButton.label "Zachovat změny">
 <!ENTITY homepageControlled.keepButton.accesskey "Z">

@@ -350,7 +350,7 @@
 <!ENTITY replySenderCmd.label "Afzender beantwoorden">
 <!ENTITY replySenderCmd.accesskey "z">
 <!ENTITY replyNewsgroupCmd2.label "Reageren naar nieuwsgroep">
-<!ENTITY replyNewsgroupCmd2.accesskey  "R">
+<!ENTITY replyNewsgroupCmd2.accesskey "R">
 <!ENTITY replyToAllMsgCmd.label "Allen beantwoorden">
 <!ENTITY replyToAllMsgCmd.accesskey "d">
 <!ENTITY replyToAllMsgCmd.key "r">
@@ -706,6 +706,7 @@
 <!ENTITY saveAsVirtualFolderMenu.label "Zoekopdracht als een map bewaren…">
 
 <!-- Thread Pane -->
+<!ENTITY selectColumn.label "Berichten selecteren">
 <!ENTITY threadColumn.label "Conversatie">
 <!ENTITY fromColumn.label "Van">
 <!ENTITY recipientColumn.label "Ontvanger">
@@ -729,6 +730,7 @@
 
 <!-- Thread Pane Tooltips -->
 <!ENTITY columnChooser2.tooltip "Weer te geven kolommen selecteren">
+<!ENTITY selectColumn.tooltip "Alle berichten selecteren/deselecteren">
 <!ENTITY threadColumn2.tooltip "Berichtconversaties weergeven">
 <!ENTITY fromColumn2.tooltip "Sorteren op van">
 <!ENTITY recipientColumn2.tooltip "Sorteren op ontvanger">
@@ -956,7 +958,7 @@
 <!ENTITY preferencesCmdMac2.label       "Voorkeuren">
 <!ENTITY preferencesCmdMac.commandkey   ",">
 <!ENTITY preferencesCmdMac.modifiers    "accel">
-<!ENTITY servicesMenuMac.label          "Voorzieningen">
+<!ENTITY servicesMenuMac.label          "Services">
 <!ENTITY hideThisAppCmdMac.label        "Verberg &brandShortName;">
 <!ENTITY hideThisAppCmdMac.commandkey   "H">
 <!ENTITY hideThisAppCmdMac.modifiers    "accel">

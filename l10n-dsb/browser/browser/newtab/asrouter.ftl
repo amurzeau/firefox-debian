@@ -86,6 +86,32 @@ cfr-whatsnew-button =
     .label = Nowe funkcije a změny
     .tooltiptext = Nowe funkcije a změny
 cfr-whatsnew-panel-header = Nowe funkcije a změny
+cfr-whatsnew-release-notes-link-text = Wersijowe informacije cytaś
+cfr-whatsnew-fx70-title = { -brand-short-name } šěščej za wašu priwatnosć wójujo
+cfr-whatsnew-fx70-body = Nejnowša aktualizacija funkciju slědowański šćit pólěpšujo a wólažcujo wěcej nježli gdy do togo, wěste gronidła za kužde sedło napóraś.
+cfr-whatsnew-tracking-protect-title = Šćitajśo se pśed pśeslědowakami
+cfr-whatsnew-tracking-protect-body =
+    { -brand-short-name } wjele cestych pśeslědowakow socialnych a drugich sedłow, kótarež
+    slěduju, což online gótujośo.
+cfr-whatsnew-tracking-protect-link-text = Wašu rozpšawu pokazaś
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+        [one] Pśeslědowak jo se zablokěrował
+        [two] Pśeslědowaka stej se zablokěrowałej
+        [few] Pśeslědowaki su se zablokěrowali
+       *[other] Přeslědowaki su se zablokěrowali
+    }
+cfr-whatsnew-tracking-blocked-subtitle = Wót { DATETIME($earliestDate, month: "long", year: "numeric") }
+cfr-whatsnew-tracking-blocked-link-text = Rozpšawu pokazaś
+cfr-whatsnew-lockwise-backup-title = Zawěsććo swóje gronidła
+cfr-whatsnew-lockwise-backup-body = Napórajśo něnto wěste gronidła, ku kótarymž maśo wšuźi pśistup, źož se pśizjawijośo.
+cfr-whatsnew-lockwise-backup-link-text = Zawěsćenja zmóžniś
+cfr-whatsnew-lockwise-take-title = Wzejśo swóje gronidła sobu
+cfr-whatsnew-lockwise-take-body = Mobilne nałoženje { -lockwise-brand-short-name } wam wěsty pśistup k wašym zawěsćonym gronidłam wót wšuźi zmóžnja,
+cfr-whatsnew-lockwise-take-link-text = Wobstarajśo se nałoženje
 
 ## Bookmark Sync
 
@@ -115,3 +141,16 @@ cfr-doorhanger-firefox-send-header = Źělśo toś ten PDF wěsće
 cfr-doorhanger-firefox-send-body = Šćitajśo swoje sensibelne dokumenty pśed narskimi póglědnjenjami z koděrowanim kóńc do kóńca a z wótkazom, kótaryž se zgubijo, gaž sćo gótowy.
 cfr-doorhanger-firefox-send-ok-button = { -send-brand-name } wopytaś
     .accesskey = o
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-ok-button = Šćity pokazaś
+    .accesskey = p
+cfr-doorhanger-socialtracking-close-button = Zacyniś
+    .accesskey = Z
+cfr-doorhanger-socialtracking-heading = { -brand-short-name } socialnej seśi zawoborał, wam how slědowaś
+cfr-doorhanger-socialtracking-description = Waša priwatnosć jo wažna. { -brand-short-name } něnto zwucone pśeslědowaki socialnych medijow blokěrujo, wobgranicujo tšochu datow, kótarež mógu wó tom zběraś, což wy online gótujośo.
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name } jo zablokěrował palcowe wótśišće na toś tom boku
+cfr-doorhanger-fingerprinters-description = Waša priwatnosć jo wažna. { -brand-short-name } něnto palcowe wótśišće blokěrujo, kótarež jasnje idenficěrujobne informacije wó wašom rěźe gromaźe, aby wam slědowali.
+cfr-doorhanger-cryptominers-heading = { -brand-short-name } jo zablokěrował kryptokopak na toś tom boku
+cfr-doorhanger-cryptominers-description = Waša priwatnosć jo wažna. { -brand-short-name } něnto kryptokopaki blokěrujo, kótarež liceńske wugbaśe wašogo systema wužywaju, aby digitalne pjenjeze wudobywali.

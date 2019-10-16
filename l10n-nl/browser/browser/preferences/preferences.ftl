@@ -253,6 +253,62 @@ applications-type-column =
 applications-action-column =
     .label = Actie
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension }-bestand
+applications-action-save =
+    .label = Bestand opslaan
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = { $app-name } gebruiken
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = { $app-name } gebruiken (standaard)
+applications-use-other =
+    .label = Andere gebruiken…
+applications-select-helper = Hulptoepassing selecteren
+applications-manage-app =
+    .label = Toepassingsdetails…
+applications-always-ask =
+    .label = Altijd vragen
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = { $plugin-name } gebruiken (in { -brand-short-name })
+applications-preview-inapp =
+    .label = Voorbeeld in { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = Digital Rights Management (DRM)-inhoud
 play-drm-content =
     .label = DRM-beheerde inhoud afspelen
@@ -339,6 +395,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Naar tekst zoeken wanneer u begint met typen
     .accesskey = t
+browsing-picture-in-picture-toggle-enabled =
+    .label = Picture-in-picture-videobesturing inschakelen
+    .accesskey = P
+browsing-picture-in-picture-learn-more = Meer info
 browsing-cfr-recommendations =
     .label = Extensies aanbevelen terwijl u surft
     .accesskey = a
@@ -445,6 +505,12 @@ search-bar-shown =
     .label = Zoekbalk toevoegen in werkbalk
 search-engine-default-header = Standaardzoekmachine
 search-engine-default-desc = Kies de standaardzoekmachine die u in de adresbalk en zoekbalk wilt gebruiken.
+search-engine-default-private-desc = Kies de standaardzoekmachine die u in privévensters wilt gebruiken.
+search-separate-default-engine =
+    .label = Deze zoekmachine in privévensters gebruiken
+    .accesskey = u
+search-suggestions-header = Zoeksuggesties
+search-suggestions-desc = Kies hoe suggesties van zoekmachines worden weergegeven.
 search-suggestions-option =
     .label = Zoeksuggesties geven
     .accesskey = Z
@@ -458,6 +524,7 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Zoeksuggesties boven browsergeschiedenis tonen in adresbalkresultaten
+suggestions-addressbar-settings = Voorkeuren voor navigatiegeschiedenis, bladwijzers en tabbladsuggesties wijzigen
 search-suggestions-cant-show = Zoeksuggesties worden niet in locatiebalkresultaten getoond, omdat u { -brand-short-name } hebt geconfigureerd om nooit geschiedenis te onthouden.
 search-one-click-header = Eén-klik-zoekmachines
 search-one-click-desc = Kies de alternatieve zoekmachines die onder de adresbalk en zoekbalk verschijnen als u een sleutelwoord begint in te voeren.
@@ -494,6 +561,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Neem uw web mee
 sync-signedout-description = Synchroniseer uw bladwijzers, geschiedenis, tabbladen, wachtwoorden, add-ons en voorkeuren op al uw apparaten.
 sync-signedout-account-title = Verbinding maken met een { -fxaccount-brand-name }
@@ -514,11 +585,17 @@ sync-mobile-promo = Download Firefox voor <img data-l10n-name="android-icon"/> <
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = Profielafbeelding wijzigen
 sync-disconnect =
     .label = Verbinding verbreken…
     .accesskey = v
+sync-sign-out =
+    .label = Afmelden…
+    .accesskey = f
 sync-manage-account = Account beheren
     .accesskey = b
 sync-signedin-unverified = { $email } is niet geverifieerd.
@@ -534,6 +611,48 @@ sync-sign-in =
     .accesskey = m
 sync-signedin-settings-header = Sync-instellingen
 sync-signedin-settings-desc = Kies wat u wilt synchroniseren op uw apparaten die { -brand-short-name } gebruiken.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Synchroniseren: AAN
+prefs-syncing-off = Synchroniseren: UIT
+prefs-sync-setup =
+    .label = { -sync-brand-short-name } instellen…
+    .accesskey = s
+prefs-sync-offer-setup-label = Synchroniseer uw bladwijzers, geschiedenis, tabbladen, wachtwoorden, add-ons en voorkeuren op al uw apparaten.
+prefs-sync-now =
+    .labelnotsyncing = Nu synchroniseren
+    .accesskeynotsyncing = N
+    .labelsyncing = Synchroniseren…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = U synchroniseert momenteel deze onderdelen:
+sync-currently-syncing-bookmarks = Bladwijzers
+sync-currently-syncing-history = Geschiedenis
+sync-currently-syncing-tabs = Open tabbladen
+sync-currently-syncing-logins-passwords = Aanmeldingen en wachtwoorden
+sync-currently-syncing-addresses = Adressen
+sync-currently-syncing-creditcards = Creditcards
+sync-currently-syncing-addons = Add-ons
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Opties
+       *[other] Voorkeuren
+    }
+sync-change-options =
+    .label = Wijzigen…
+    .accesskey = W
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = Kies wat u wilt synchroniseren
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Wijzigingen opslaan
+    .buttonaccesskeyaccept = o
+    .buttonlabelextra2 = Verbinding verbreken…
+    .buttonaccesskeyextra2 = b
 sync-engine-bookmarks =
     .label = Bladwijzers
     .accesskey = B
@@ -548,6 +667,10 @@ sync-engine-logins =
     .label = Aanmeldingen
     .tooltiptext = Gebruikersnamen en wachtwoorden die u hebt opgeslagen
     .accesskey = n
+sync-engine-logins-passwords =
+    .label = Aanmeldingen en wachtwoorden
+    .tooltiptext = Door u opgeslagen gebruikersnamen en wachtwoorden
+    .accesskey = A
 sync-engine-addresses =
     .label = Adressen
     .tooltiptext = Postadressen die u hebt opgeslagen (alleen desktop)
@@ -568,6 +691,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Algemene, privacy- en beveiligingsinstellingen die u hebt gewijzigd
     .accesskey = O
+
+## The device name controls.
+
 sync-device-name-header = Apparaatnaam
 sync-device-name-change =
     .label = Apparaatnaam wijzigen…
@@ -590,7 +716,7 @@ privacy-header = Browserprivacy
 
 ## Privacy Section - Forms
 
-logins-header = Aanmeldingen en Wachtwoorden
+logins-header = Aanmeldingen en wachtwoorden
 forms-ask-to-save-logins =
     .label = Vragen voor opslaan van aanmeldingen en wachtwoorden voor websites
     .accesskey = r
@@ -600,6 +726,10 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Sterke wachtwoorden voorstellen en genereren
     .accesskey = w
+forms-breach-alerts =
+    .label = Waarschuwingen over wachtwoorden voor getroffen websites tonen
+    .accesskey = f
+forms-breach-alerts-learn-more-link = Meer info
 forms-fill-logins-and-passwords =
     .label = Aanmeldingen en wachtwoorden automatisch invullen
     .accesskey = A
@@ -612,6 +742,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Hoofdwachtwoord wijzigen…
     .accesskey = z
+forms-master-pw-fips-title = U bent momenteel in FIPS-modus. FIPS vereist een ingesteld hoofdwachtwoord.
+forms-master-pw-fips-desc = Wachtwoordwijziging mislukt
 
 ## Privacy Section - History
 
@@ -704,8 +836,8 @@ sitedata-cookies-permissions =
 addressbar-header = Adresbalk
 addressbar-suggest = Bij gebruik van de adresbalk, suggesties weergeven uit
 addressbar-locbar-history-option =
-    .label = Geschiedenis
-    .accesskey = G
+    .label = Navigatiegeschiedenis
+    .accesskey = g
 addressbar-locbar-bookmarks-option =
     .label = Bladwijzers
     .accesskey = d
@@ -717,8 +849,9 @@ addressbar-suggestions-settings = Voorkeuren voor zoekmachinesuggesties wijzigen
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Inhoudsblokkering
-content-blocking-enhanced-tracking-protection = Verbeterde bescherming tegen volgen
 content-blocking-section-description = Bescherm uw privacy terwijl u surft. Blokkeer onzichtbare inhoud die de door u bezochte websites volgt en u profileert. Door wat van deze inhoud te blokkeren laden pagina’s mogelijk sneller.
+content-blocking-enhanced-tracking-protection = Verbeterde bescherming tegen volgen
+content-blocking-section-top-level-description = Trackers volgen u online om gegevens over uw surfgedrag en interesses te verzamelen. { -brand-short-name } blokkeert veel van deze trackers en andere kwaadwillende scripts.
 content-blocking-learn-more = Meer info
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -736,6 +869,23 @@ content-blocking-strict-description = Strengere bescherming, kan ervoor zorgen d
 content-blocking-custom-desc = Kies wat er wordt geblokkeerd.
 content-blocking-private-trackers = Bekende trackers alleen in privévensters
 content-blocking-third-party-cookies = Tracking-cookies van derden
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Standaard
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = Streng
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = Aangepast
+    .accesskey = A
+
+
+
 content-blocking-etp-standard-desc = Gebalanceerd voor bescherming en prestaties. Pagina’s laden normaal.
 content-blocking-etp-strict-desc = Sterkere bescherming, maar kan er voor zorgen dat sommige websites of inhoud niet werken.
 content-blocking-etp-custom-desc = Kies welke trackers en scripts u wilt blokkeren.

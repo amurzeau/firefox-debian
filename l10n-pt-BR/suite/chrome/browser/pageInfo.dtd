@@ -24,6 +24,7 @@
 
 <!ENTITY  generalTab            "Geral">
 <!ENTITY  generalTab.accesskey  "G">
+<!ENTITY  generalTitle          "Título:">
 <!ENTITY  generalURL            "Endereço:">
 <!ENTITY  generalType           "Tipo:">
 <!ENTITY  generalMode           "Renderização:">
@@ -62,6 +63,8 @@
 <!ENTITY  mediaTab.accesskey    "M">
 <!ENTITY  mediaURL              "Endereço:">
 <!ENTITY  mediaAlt              "Texto substituto:">
+<!ENTITY  mediaLocation         "Local:">
+<!ENTITY  mediaText             "Texto associado:">
 <!ENTITY  mediaAltHeader        "Texto substituto">
 <!ENTITY  mediaAddress          "Endereço">
 <!ENTITY  mediaType             "Tipo">
@@ -70,6 +73,7 @@
 <!ENTITY  mediaDimensions       "Dimensões especificadas:">
 <!ENTITY  mediaPhysDimensions   "Dimensões reais:">
 <!ENTITY  mediaTitle            "Título:">
+<!ENTITY  mediaDimension        "Dimensões:">
 <!ENTITY  mediaLongdesc         "Descrição longa:">
 <!ENTITY  mediaBlockImage.accesskey "B">
 <!ENTITY  mediaSaveAs           "Salvar como...">
@@ -87,7 +91,7 @@
 <!ENTITY  permUseDefault        "Usar padrão">
 <!ENTITY  permAskAlways         "Sempre perguntar">
 <!ENTITY  permAllow             "Permitir">
-<!ENTITY  permAllowSession      "Permitir para sessão">
+<!ENTITY  permAllowSession      "Permitir nesta sessão">
 <!ENTITY  permBlock             "Bloquear">
 <!ENTITY  permissionsFor        "Permissões para:">
 <!ENTITY  permImage             "Carregar imagens">
@@ -99,7 +103,7 @@
 
 <!ENTITY  securityTab           "Segurança">
 <!ENTITY  securityTab.accesskey "S">
-<!ENTITY  securityHeader        "Informações de segurança para esta página">
+<!ENTITY  securityHeader        "Informações de segurança desta página">
 <!ENTITY  securityView.certView "Ver certificado">
 <!ENTITY  securityView.accesskey "V">
 <!ENTITY  securityView.unknown   "Desconhecido">
@@ -110,12 +114,14 @@
 <!ENTITY  securityView.identity.domain   "Site: ">
 <!ENTITY  securityView.identity.verifier "Verificado por: ">
 
+<!ENTITY  securityView.identity.validity "Expira em:">
+
 <!ENTITY  securityView.privacy.header                   "Privacidade e Histórico">
 <!ENTITY  securityView.privacy.history                  "Eu visitei este site hoje mais cedo?">
 <!ENTITY  securityView.privacy.cookies                  "Este site está armazenando informações (cookies) no meu computador?">
 <!ENTITY  securityView.privacy.viewCookies              "Ver cookies">
 <!ENTITY  securityView.privacy.viewCookies.accessKey    "k">
-<!ENTITY  securityView.privacy.passwords                "Eu tenho alguma senha salva para este site?">
+<!ENTITY  securityView.privacy.passwords                "Eu salvei alguma senha deste site?">
 <!ENTITY  securityView.privacy.viewPasswords            "Ver senhas armazenadas">
 <!ENTITY  securityView.privacy.viewPasswords.accessKey  "r">
 

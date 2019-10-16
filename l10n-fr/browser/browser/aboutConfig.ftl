@@ -7,10 +7,24 @@ about-config-warning-title = Prudence, vous partez à l’aventure
 about-config-warning-text = La modification de ces préférences avancées peut être dommageable pour la stabilité, la sécurité et les performances de cette application. Ne continuez que si vous savez ce que vous faites.
 about-config-warning-checkbox = Me le rappeler la prochaine fois
 about-config-warning-button = Je prends le risque
-about-config-title = about:config
 about-config2-title = Configurations avancées
 about-config-search-input =
     .placeholder = Rechercher
+
+## These strings appear on the warning you see when first visiting about:config.
+
+about-config-intro-warning-title = Agissez avec précaution
+about-config-intro-warning-text = Modifier les préférences de configuration avancées peut affecter les performances et la sécurité de { -brand-short-name }.
+about-config-intro-warning-checkbox = M’avertir lorsque j’essaie d’accéder à ces préférences
+about-config-intro-warning-button = Accepter le risque et poursuivre
+
+
+
+# This is shown on the page before searching but after the warning is accepted.
+about-config-caution-text = Modifier ces préférences peut affecter les performances et la sécurité de { -brand-short-name }.
+about-config-page-title = Préférences avancées
+about-config-search-input1 =
+    .placeholder = Rechercher un nom de préférence
 about-config-show-all = Tout afficher
 about-config-pref-add = Ajouter
 about-config-pref-toggle = Inverser
@@ -18,6 +32,18 @@ about-config-pref-edit = Modifier
 about-config-pref-save = Enregistrer
 about-config-pref-reset = Réinitialiser
 about-config-pref-delete = Supprimer
+about-config-pref-add-button =
+    .title = Ajouter
+about-config-pref-toggle-button =
+    .title = Inverser
+about-config-pref-edit-button =
+    .title = Modifier
+about-config-pref-save-button =
+    .title = Enregistrer
+about-config-pref-reset-button =
+    .title = Réinitialiser
+about-config-pref-delete-button =
+    .title = Supprimer
 
 ## Labels for the type selection radio buttons shown when adding preferences.
 

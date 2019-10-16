@@ -1,0 +1,67 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+urlbar-identity-button =
+    .aria-label = Poglejte podatke o strani
+
+## Tooltips for images appearing in the address bar
+
+urlbar-services-notification-anchor =
+    .tooltiptext = Odpri ploščo s sporočili o namestitvah
+urlbar-web-notification-anchor =
+    .tooltiptext = Spremenite, ali lahko prejemate obvestila te strani
+urlbar-midi-notification-anchor =
+    .tooltiptext = Odpri ploščo MIDI
+urlbar-eme-notification-anchor =
+    .tooltiptext = Upravljajte uporabo programske opreme DRM
+urlbar-web-authn-anchor =
+    .tooltiptext = Odpri ploščo za spletno overitev
+urlbar-canvas-notification-anchor =
+    .tooltiptext = Upravljaj z dovoljenji za izločanje platna
+urlbar-web-rtc-share-microphone-notification-anchor =
+    .tooltiptext = Upravljajte dovoljenje za uporabo mikrofona na tej strani
+urlbar-default-notification-anchor =
+    .tooltiptext = Odpri ploščo s sporočili
+urlbar-geolocation-notification-anchor =
+    .tooltiptext = Odpri ploščo z zahtevami za lokacijo
+urlbar-storage-access-anchor =
+    .tooltiptext = Odpri ploščo z dovoljenji za brskanje
+urlbar-translate-notification-anchor =
+    .tooltiptext = Prevedi stran
+urlbar-web-rtc-share-screen-notification-anchor =
+    .tooltiptext = Upravljajte dovoljenje za deljenje oken ali zaslona na tej strani
+urlbar-indexed-db-notification-anchor =
+    .tooltiptext = Odpri ploščo s sporočili o shrambi brez povezave
+urlbar-password-notification-anchor =
+    .tooltiptext = Odpri ploščo s sporočili o shranjevanju gesel
+urlbar-translated-notification-anchor =
+    .tooltiptext = Upravljajte prevod strani
+urlbar-plugins-notification-anchor =
+    .tooltiptext = Upravljanje uporabe vtičnikov
+urlbar-web-rtc-share-devices-notification-anchor =
+    .tooltiptext = Upravljajte dovoljenje za uporabo kamere in/ali mikrofona na tej strani
+urlbar-autoplay-notification-anchor =
+    .tooltiptext = Odpri ploščo samodejnega predvajanja
+urlbar-persistent-storage-notification-anchor =
+    .tooltiptext = Shrani podatke v trajni shrambi
+urlbar-addons-notification-anchor =
+    .tooltiptext = Odpri ploščo s sporočili o namestitvah dodatkov
+
+## Page Action Context Menu
+
+page-action-add-to-urlbar =
+    .label = Dodaj v naslovno vrstico
+page-action-manage-extension =
+    .label = Upravljaj razširitev ...
+page-action-remove-from-urlbar =
+    .label = Odstrani iz naslovne vrstice
+
+## Auto-hide Context Menu
+
+full-screen-autohide =
+    .label = Skrij orodne vrstice
+    .accesskey = S
+full-screen-exit =
+    .label = Izhod iz celozaslonskega načina
+    .accesskey = C

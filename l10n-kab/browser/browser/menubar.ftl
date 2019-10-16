@@ -153,7 +153,7 @@ menu-view-full-screen =
     .label = Agdil Ačaran
     .accesskey = A
 
-##
+
 
 menu-view-show-all-tabs =
     .label = Sken akk accaren
@@ -212,11 +212,20 @@ menu-tools-addons =
 menu-tools-sync-sign-in =
     .label = Kcem ɣer { -sync-brand-short-name }…
     .accesskey = Y
+menu-tools-fxa-sign-in =
+    .label = Qqen ɣer { -brand-product-name }...
+    .accesskey = q
+menu-tools-turn-on-sync =
+    .label = Rmed { -sync-brand-short-name }...
+    .accesskey = d
 menu-tools-sync-now =
     .label = Mtawi tura
     .accesskey = M
 menu-tools-sync-re-auth =
     .label = Qqen i tikelt-nniḍen ɣeṛ { -sync-brand-short-name }…
+    .accesskey = Q
+menu-tools-fxa-re-auth =
+    .label = Qqen i tikelt-nniḍen ɣeṛ{ -brand-product-name }...
     .accesskey = Q
 menu-tools-web-developer =
     .label = Aneflay web

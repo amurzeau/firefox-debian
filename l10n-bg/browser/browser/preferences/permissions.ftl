@@ -40,9 +40,9 @@ permissions-searchbox =
 permissions-capabilities-autoplay-allow =
     .label = Разрешаване на аудио и видео
 permissions-capabilities-autoplay-block =
-    .label = Без аудио
+    .label = Без звук
 permissions-capabilities-autoplay-blockall =
-    .label = Спиране на аудио и видео
+    .label = Без звук и видео
 permissions-capabilities-allow =
     .label = Разрешаване
 permissions-capabilities-block =
@@ -67,6 +67,10 @@ permissions-exceptions-content-blocking-window =
     .title = Изключения – Ограничаване на съдържание
     .style = { permissions-window.style }
 permissions-exceptions-content-blocking-desc = Изключили сте ограничаването на съдържание за тези страници.
+permissions-exceptions-etp-window =
+    .title = Изключения в разширената защита от проследяване
+    .style = { permissions-window.style }
+permissions-exceptions-etp-desc = Защитите са изключени за тези страници.
 
 ## Exceptions - Cookies
 

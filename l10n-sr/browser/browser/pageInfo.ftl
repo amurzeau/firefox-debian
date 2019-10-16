@@ -14,8 +14,6 @@ select-all =
 menu-select-all =
     .label = Изабери све
     .accesskey = И
-close-window =
-    .key = A
 general-tab =
     .label = Опште
     .accesskey = О
@@ -119,6 +117,8 @@ security-site-data-cookies-only = Да, колачиће
 security-site-data-no = Не
 image-size-unknown = Непознат
 not-set-verified-by = Неодређено
+page-info-not-specified =
+    .value = Неодређено
 not-set-alternative-text = Неодређено
 not-set-date = Неодређено
 media-img = Слика
@@ -141,6 +141,8 @@ general-quirks-mode =
 general-strict-mode =
     .value = Поштовање стандарда
 security-no-owner = Овај веб сајт не објављује податке о власништву.
+page-info-security-no-owner =
+    .value = Овај веб сајт не објављује податке о власништву.
 media-select-folder = Изаберите фасциклу за чување слика
 media-unknown-not-cached =
     .value = Непозната (није кеширана)
@@ -169,6 +171,17 @@ security-visits-number =
         [few] Да, више
        *[other] Да, { $visits } пута
     }
+# This string is used to display the size of a media file
+# Variables:
+#   $kb (number) - The size of an image in Kilobytes
+#   $bytes (number) - The size of an image in Bytes
+properties-general-size =
+    .value =
+        { $bytes ->
+            [one] { $kb } КВ ({ $bytes } бајт)
+            [few] { $kb } КВ ({ $bytes } бајта)
+           *[other] { $kb } КВ ({ $bytes } бајтова)
+        }
 # This string is used to display the type of
 # an image
 # Variables:

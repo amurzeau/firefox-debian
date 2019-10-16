@@ -36,8 +36,7 @@ menu-menuitem-preferences =
         [windows] Seçenekler
        *[other] Tercihler
     }
-menu-menuitem-feedback = Görüş gönder
-menu-menuitem-faq = Sıkça sorulan sorular
+about-logins-menu-menuitem-help = Yardım
 menu-menuitem-android-app = Android için { -lockwise-brand-short-name }
 menu-menuitem-iphone-app = iPhone ve iPad için { -lockwise-brand-short-name }
 
@@ -57,9 +56,16 @@ login-list-last-changed-option = Son değişiklik
 login-list-last-used-option = Son kullanım
 login-list-intro-title = Hiç hesap bulunamadı
 login-list-intro-description = { -brand-product-name } tarayıcısında kaydettiğiniz parolalar burada görünecektir.
+about-logins-login-list-empty-search-title = Hiç hesap bulunamadı
+about-logins-login-list-empty-search-description = Aramanızla eşleşen sonuç bulunamadı.
 login-list-item-title-new-login = Yeni hesap
 login-list-item-subtitle-new-login = Hesap bilgilerinizi girin
 login-list-item-subtitle-missing-username = (kullanıcı adı yok)
+about-logins-list-item-warning-icon =
+    .alt = Uyarı simgesi
+    .title = Bu site ihlale uğramış
+about-logins-list-item-breach-icon =
+    .title = Bu site ihlale uğramış
 
 ## Introduction screen
 
@@ -67,7 +73,7 @@ login-intro-heading = Kayıtlı hesaplarınızı mı arıyorsunuz? { -sync-brand
 login-intro-description = Hesaplarınızı farklı bir cihazdaki { -brand-product-name } tarayıcınıza kaydettiyseniz onları buraya aktarabilirsiniz:
 login-intro-instruction-fxa = Hesaplarınızın kayıtlı olduğu cihazda  { -fxaccount-brand-name } hesabı açın veya hesabınıza giriş yapın
 login-intro-instruction-fxa-settings = { -sync-brand-short-name } ayarlarında “Hesaplar”ı işaretlediğinizden emin olun
-login-intro-instruction-faq = Daha fazla yardım için { -lockwise-brand-short-name } <a data-l10n-name="faq">sıkça sorulan sorular</a> sayfasını ziyaret edin
+about-logins-intro-instruction-help = Daha fazla yardım için <a data-l10n-name="help-link">{ -lockwise-brand-short-name } Destek</a>'i ziyaret edebilirsiniz
 
 ## Login
 
@@ -77,10 +83,9 @@ login-item-delete-button = Sil
 login-item-origin-label = Web sitesi adresi
 login-item-origin =
     .placeholder = https://www.example.com
-login-item-open-site-button = Aç
 login-item-username-label = Kullanıcı adı
-login-item-username =
-    .placeholder = kullanici@example.com
+about-logins-login-item-username =
+    .placeholder = (kullanıcı adı yok)
 login-item-copy-username-button-text = Kopyala
 login-item-copied-username-button-text = Kopyalandı!
 login-item-password-label = Parola
@@ -134,3 +139,18 @@ breach-alert-text = Giriş bilgilerinizi son güncellemenizden bu yana bu web si
 breach-alert-link = Bu ihlal hakkında daha fazla bilgi edinin.
 breach-alert-dismiss =
     .title = Bu uyarıyı kapat
+
+## Error Messages
+
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login = Bu kullanıcı adına sahip bir { $loginTitle } hesabı zaten var.
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = { $loginTitle } için bu kullanıcı adına sahip bir kayıt zaten var. <a data-l10n-name="duplicate-link">Mevcut kayda gitmek ister misiniz?</a>
+# This is a generic error message.
+about-logins-error-message-default = Bu parola kaydedilirken bir hata oluştu.

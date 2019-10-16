@@ -6,8 +6,8 @@ about-logins-page-title = 我的密码
 
 # "Google Play" and "App Store" are both branding and should not be translated
 
-login-app-promo-title = 随身携带您的密码
-login-app-promo-subtitle = 获取免费的 { -lockwise-brand-name } 应用
+login-app-promo-title = 密码随身带着走
+login-app-promo-subtitle = 免费下载 { -lockwise-brand-name } 应用
 login-app-promo-android =
     .alt = 从 Google Play 获取
 login-app-promo-apple =
@@ -21,7 +21,7 @@ create-login-button = 新建登录信息
 login-favicon =
     .alt = { $title } - 网站图标
 fxaccounts-sign-in-text = 在您的其他设备上取得您的密码
-fxaccounts-sign-in-button = 登录至{ -sync-brand-short-name }
+fxaccounts-sign-in-button = 登录{ -sync-brand-short-name }服务
 fxaccounts-avatar-button =
     .title = 管理账户
 
@@ -36,8 +36,7 @@ menu-menuitem-preferences =
         [windows] 选项
        *[other] 偏好设置
     }
-menu-menuitem-feedback = 发送反馈
-menu-menuitem-faq = 常见问题
+about-logins-menu-menuitem-help = 帮助
 menu-menuitem-android-app = { -lockwise-brand-short-name }（Android 版）
 menu-menuitem-iphone-app = { -lockwise-brand-short-name }（iPhone / iPad 版）
 
@@ -56,9 +55,16 @@ login-list-last-changed-option = 最后修改
 login-list-last-used-option = 上次使用
 login-list-intro-title = 未找到登录信息
 login-list-intro-description = 当您保存密码到 { -brand-product-name } 后，它会出现在这里。
+about-logins-login-list-empty-search-title = 未找到登录信息
+about-logins-login-list-empty-search-description = 没有符合您搜索条件的结果。
 login-list-item-title-new-login = 新建登录信息
 login-list-item-subtitle-new-login = 输入您的登录凭据
 login-list-item-subtitle-missing-username = （无用户名）
+about-logins-list-item-warning-icon =
+    .alt = 警告图标
+    .title = 发生数据外泄的网站
+about-logins-list-item-breach-icon =
+    .title = 发生数据外泄的网站
 
 ## Introduction screen
 
@@ -66,7 +72,7 @@ login-intro-heading = 在找您保存的登录信息？请设置“{ -sync-brand
 login-intro-description = 若您曾在其他设备上将登录信息保存到 { -brand-product-name }，请按以下步骤操作：
 login-intro-instruction-fxa = 在您保存登录信息的设备，注册或登录 { -fxaccount-brand-name }
 login-intro-instruction-fxa-settings = 确定您已在“{ -sync-brand-short-name }”设置中勾选了“登录信息”复选框
-login-intro-instruction-faq = 若需帮助，可参阅 { -lockwise-brand-short-name } <a data-l10n-name="faq">常见问题</a>
+about-logins-intro-instruction-help = 若需帮助，请访问 <a data-l10n-name="help-link">{ -lockwise-brand-short-name } 用户支持</a>
 
 ## Login
 
@@ -76,10 +82,9 @@ login-item-delete-button = 删除
 login-item-origin-label = 网址
 login-item-origin =
     .placeholder = https://www.example.com
-login-item-open-site-button = 前往
 login-item-username-label = 用户名
-login-item-username =
-    .placeholder = name@example.com
+about-logins-login-item-username =
+    .placeholder = （无用户名）
 login-item-copy-username-button-text = 复制
 login-item-copied-username-button-text = 已复制！
 login-item-password-label = 密码
@@ -133,3 +138,18 @@ breach-alert-text = 自您上次更新这份登录信息后，该网站上的密
 breach-alert-link = 详细了解此事件
 breach-alert-dismiss =
     .title = 关闭此警报
+
+## Error Messages
+
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login = 已存在使用该用户名的 { $loginTitle } 条目。
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = 已存在具有该用户名的 { $loginTitle } 条目。<a data-l10n-name="duplicate-link">要转至现有条目吗？</a>
+# This is a generic error message.
+about-logins-error-message-default = 尝试保存该密码时发生错误。

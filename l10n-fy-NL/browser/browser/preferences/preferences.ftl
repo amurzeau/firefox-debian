@@ -253,6 +253,62 @@ applications-type-column =
 applications-action-column =
     .label = Aksje
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension }-bestân
+applications-action-save =
+    .label = Bewarje bestân
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Brûk { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Brûk { $app-name } (standert)
+applications-use-other =
+    .label = Brûk oare…
+applications-select-helper = Helptapassing selektearje
+applications-manage-app =
+    .label = Applikaasjedetails…
+applications-always-ask =
+    .label = Altyd freegje
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = { $plugin-name } brûke (yn { -brand-short-name })
+applications-preview-inapp =
+    .label = Foarbyld yn { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = Digital Rights Management (DRM)-ynhâld
 play-drm-content =
     .label = DRM-kontrolearre ynhâld ôfspylje
@@ -339,6 +395,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Nei tekst sykje as ik begjin mei typen
     .accesskey = N
+browsing-picture-in-picture-toggle-enabled =
+    .label = Picture-in-picture-fideobestjoering ynskeakelje
+    .accesskey = P
+browsing-picture-in-picture-learn-more = Mear ynfo
 browsing-cfr-recommendations =
     .label = Utwreidingen oanrekommandearje wylst jo sneupe
     .accesskey = a
@@ -445,6 +505,12 @@ search-bar-shown =
     .label = Sykbalke yn arkbalke tafoegje
 search-engine-default-header = Standertsykmasine
 search-engine-default-desc = Kies de standert sykmasine foar gebrûk yn de adresbalke en sykbalke.
+search-engine-default-private-desc = Kies de standertsykmasine dy't jo yn priveefinsters brûke wolle.
+search-separate-default-engine =
+    .label = Dizze sykmasine yn priveefinsters brûke
+    .accesskey = s
+search-suggestions-header = Sykfoarstellen
+search-suggestions-desc = Kies hoe't sykfoarstellen fan sykmasinen werjûn wurde.
 search-suggestions-option =
     .label = Sykfoarstellen jaan
     .accesskey = S
@@ -458,6 +524,7 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Syksuggestjes boppe browserskiednis toane yn adresbalkeresultaten
+suggestions-addressbar-settings = Foarkarren foar navigaasjeskiednis, blêdwizers en ljepblêdfoarstellen wizigje
 search-suggestions-cant-show = Sykfoarstellen wurde net yn lokaasjebalkresultaten toand, omdat jo { -brand-short-name } konfigurearre hawwe om nea skiednis te ûnthâlden.
 search-one-click-header = Ien-klik-sykmasinen
 search-one-click-desc = Kies de alternative sykmasinen dy't ûnder de adresbalke en sykbalke ferskine as jo in kaaiwurd begjinne yn te fieren.
@@ -494,6 +561,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Nim jo web mei jo mei
 sync-signedout-description = Syngronisearje jo blêdwizers, skiednis, ljepblêden, wachtwurden, add-ons en foarkarren op al jo apparaten.
 sync-signedout-account-title = Ferbining meitsje mei in { -fxaccount-brand-name }
@@ -514,11 +585,17 @@ sync-mobile-promo = Download Firefox foar <img data-l10n-name="android-icon"/> <
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = Profylôfbylding wizigje
 sync-disconnect =
     .label = Ferbining ferbrekke…
     .accesskey = b
+sync-sign-out =
+    .label = Ofmelde…
+    .accesskey = O
 sync-manage-account = Account beheare
     .accesskey = h
 sync-signedin-unverified = { $email } is net ferifiearre.
@@ -534,6 +611,48 @@ sync-sign-in =
     .accesskey = m
 sync-signedin-settings-header = Syngronisaasjeynstellingen
 sync-signedin-settings-desc = Kieze wat jo syngronisearje wolle op jo apparaten dy't { -brand-short-name } brûke.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Syngronisaasje: OAN
+prefs-syncing-off = Syngronisaasje: ÚT
+prefs-sync-setup =
+    .label = { -sync-brand-short-name } ynstelle…
+    .accesskey = y
+prefs-sync-offer-setup-label = Syngronisearje jo blêdwizers, skiednis, ljepblêden, wachtwurden, add-ons en foarkarren op al jo apparaten.
+prefs-sync-now =
+    .labelnotsyncing = No syngronisearje
+    .accesskeynotsyncing = N
+    .labelsyncing = Syngronisearret…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = Jo syngronisearje op it stuit dizze items:
+sync-currently-syncing-bookmarks = Blêdwizers
+sync-currently-syncing-history = Skiednis
+sync-currently-syncing-tabs = Iepen ljeplêden
+sync-currently-syncing-logins-passwords = Oanmeldingen en wachtwurden
+sync-currently-syncing-addresses = Adressen
+sync-currently-syncing-creditcards = Creditcards
+sync-currently-syncing-addons = Add-ons
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Foarkarren
+       *[other] Foarkarren
+    }
+sync-change-options =
+    .label = Wizigje…
+    .accesskey = W
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = Kies wat jo syngronisearje wolle
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Wizigingen bewarje
+    .buttonaccesskeyaccept = W
+    .buttonlabelextra2 = Ferbrekke…
+    .buttonaccesskeyextra2 = F
 sync-engine-bookmarks =
     .label = Blêdwizers
     .accesskey = w
@@ -548,6 +667,10 @@ sync-engine-logins =
     .label = Oanmeldingen
     .tooltiptext = Brûkersnammen en wachtwurden dy't jo bewarre hawwe
     .accesskey = O
+sync-engine-logins-passwords =
+    .label = Oanmeldingen en wachtwurden
+    .tooltiptext = Oanmeldingen en wachtwurden dy't jo bewarre hawwe
+    .accesskey = a
 sync-engine-addresses =
     .label = Adressen
     .tooltiptext = Bewarre adressen (allinnich desktop)
@@ -568,6 +691,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Algemiene, privacy- en feilichheidsynstellingen dy't jo wizige hawwe
     .accesskey = F
+
+## The device name controls.
+
 sync-device-name-header = Apparaatnamme
 sync-device-name-change =
     .label = Apparaatnamme wizigje…
@@ -600,6 +726,10 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Sterke wachtwurden foarstelle en generearje
     .accesskey = w
+forms-breach-alerts =
+    .label = Warskôgingen oer wachtwurden foar troffen websites toane
+    .accesskey = f
+forms-breach-alerts-learn-more-link = Mear ynfo
 forms-fill-logins-and-passwords =
     .label = Oanmeldingen en wachtwurden automatysk ynfolje
     .accesskey = O
@@ -612,6 +742,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Haadwachtwurd wizigje
     .accesskey = a
+forms-master-pw-fips-title = Jo binne no yn FIPS-modus. FIPS fereasket dat it haadwachtwurd net leech is.
+forms-master-pw-fips-desc = Wachtwurdwiziging mislearre.
 
 ## Privacy Section - History
 
@@ -717,8 +849,9 @@ addressbar-suggestions-settings = Foarkarren foar sykmasinesuggestjes wizigje
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Ynhâldsblokkearring
-content-blocking-enhanced-tracking-protection = Ferbettere beskerming tsjin folgjen
 content-blocking-section-description = Beskermje jo privacy wylst jo sneupe. Blokkearje ûnsichtbere ynhâld dy't de troch jo besochte websites folget en jo profilearje. Troch wat fan dizze ynhâld te blokkearjen lade siden mooglik flugger.
+content-blocking-enhanced-tracking-protection = Ferbettere beskerming tsjin folgjen
+content-blocking-section-top-level-description = Trackers folgje jo online om gegevens oer jo sneupgedrach en ynteresses te sammeljen. { -brand-short-name } blokkearret in protte fan dizze trackers en oare kweawollende skripts.
 content-blocking-learn-more = Mear ynfo
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -736,6 +869,23 @@ content-blocking-strict-description = Strangere beskerming, kin derfoar soargje 
 content-blocking-custom-desc = Kies wat der blokkearre wurdt.
 content-blocking-private-trackers = Bekende trackers allinnich yn priveefinsters
 content-blocking-third-party-cookies = Tracking-cookies fan tredden
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Standert
+    .accesskey = S
+enhanced-tracking-protection-setting-strict =
+    .label = Strang
+    .accesskey = t
+enhanced-tracking-protection-setting-custom =
+    .label = Oanpast
+    .accesskey = O
+
+
+
 content-blocking-etp-standard-desc = Balansearre foar beskerming en prestaasjes. Siden lade normaal.
 content-blocking-etp-strict-desc = Sterkere beskerming, mar kin der foar soargje dat guon websites of ynhâld net wurkje.
 content-blocking-etp-custom-desc = Kies hokker trackers en scripts jo blokkearje wolle.

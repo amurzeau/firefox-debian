@@ -83,6 +83,17 @@ newtab-menu-delete-history = 从历史记录中删除
 newtab-menu-save-to-pocket = 保存到 { -pocket-brand-name }
 newtab-menu-delete-pocket = 从 { -pocket-brand-name } 删除
 newtab-menu-archive-pocket = 在 { -pocket-brand-name } 中存档
+newtab-menu-show-privacy-info = 我们的赞助商﹠您的隐私
+
+## Message displayed in a modal window to explain privacy and provide context for sponsored content.
+
+newtab-privacy-modal-button-done = 完成
+newtab-privacy-modal-header = 隐私是公民的基本权利。
+newtab-privacy-modal-paragraph = 除了提供引人入胜的文章之外，我们还与赞助商合作展示有价值，且经甄选的内容。请放心，您的浏览数据永远只会留在本机 { -brand-product-name } 中  — 我们看不到，我们的赞助商亦然。
+newtab-privacy-modal-link = 了解新标签页如何保障您的隐私
+
+
+
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = 移除书签
 # Bookmark is a verb here.

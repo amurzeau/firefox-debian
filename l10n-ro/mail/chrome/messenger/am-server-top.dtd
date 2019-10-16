@@ -4,12 +4,12 @@
 
 <!ENTITY messageStorage.label "Stocare de mesaje">
 <!ENTITY securitySettings.label "Setări de securitate">
-<!ENTITY serverSettings.label "Setările serverului">
-<!ENTITY serverType.label "Tip server:">
-<!ENTITY serverName.label "Denumire server:">
-<!ENTITY serverName.accesskey "s">
+<!ENTITY serverSettings.label "Setări pentru server">
+<!ENTITY serverType.label "Tipul serverului:">
+<!ENTITY serverName.label "Denumirea serverului:">
+<!ENTITY serverName.accesskey "S">
 <!ENTITY userName.label "Nume de utilizator:">
-<!ENTITY userName.accesskey "u">
+<!ENTITY userName.accesskey "N">
 <!ENTITY port.label "Port:">
 <!ENTITY port.accesskey "P">
 <!ENTITY serverPortDefault.label "Implicit:">
@@ -20,7 +20,7 @@
 -->
 <!ENTITY biffStart.label "Caută mesaje noi la fiecare ">
 <!ENTITY biffStart.accesskey "u">
-<!ENTITY biffEnd.label "Minute">
+<!ENTITY biffEnd.label "minute">
 <!ENTITY useIdleNotifications.label "Permite notificări imediate de la server atunci când apar mesaje noi">
 <!ENTITY useIdleNotifications.accesskey "w">
 <!ENTITY connectionSecurity.label "Securitatea conexiunii:">
@@ -29,17 +29,17 @@
 <!ENTITY connectionSecurityType-1.label "STARTTLS, dacă e disponibil">
 <!ENTITY connectionSecurityType-2.label "STARTTLS">
 <!ENTITY connectionSecurityType-3.label "SSL/TLS">
-<!ENTITY authMethod.label "Metoda de autentificare:">
+<!ENTITY authMethod.label "Metodă de autentificare:">
 <!ENTITY authMethod.accesskey "M">
-<!ENTITY leaveOnServer.label "Păstrează mesajele pe server">
-<!ENTITY leaveOnServer.accesskey "v">
-<!ENTITY headersOnly.label "Descarcă doar antetele">
+<!ENTITY leaveOnServer.label "Lasă mesajele pe server">
+<!ENTITY leaveOnServer.accesskey "g">
+<!ENTITY headersOnly.label "Descarcă doar anteturile">
 <!ENTITY headersOnly.accesskey "D">
 <!ENTITY deleteByAgeFromServer.label "Pentru cel mult">
-<!ENTITY deleteByAgeFromServer.accesskey "n">
+<!ENTITY deleteByAgeFromServer.accesskey "o">
 <!ENTITY daysEnd.label "zile">
 <!ENTITY deleteOnServer2.label "Până le șterg eu">
-<!ENTITY deleteOnServer2.accesskey "P">
+<!ENTITY deleteOnServer2.accesskey "d">
 <!ENTITY downloadOnBiff.label "Descarcă automat mesajele noi">
 <!ENTITY downloadOnBiff.accesskey "D">
 <!ENTITY deleteMessagePrefix.label "Când șterg un mesaj:">
@@ -54,7 +54,7 @@
 <!ENTITY expungeOnExit.accesskey "e">
 <!ENTITY emptyTrashOnExit.label "Golește coșul de gunoi la ieșire">
 <!ENTITY emptyTrashOnExit.accesskey "G">
-<!ENTITY loginAtStartup.label "Caută mesaje noi la fiecare">
+<!ENTITY loginAtStartup.label "Caută mesaje noi la pornire">
 <!ENTITY loginAtStartup.accesskey "C">
 <!-- LOCALIZATION NOTE (maxMessagesStart.label) : translate below 2 lines with grammar dependency
     maxMessengerStart.label will be followed by maxMessagesEnd.label with the number
@@ -81,7 +81,7 @@
 <!ENTITY browseNewsrc.label "Răsfoiește…">
 <!ENTITY browseNewsrc.accesskey "e">
 
-<!ENTITY accountTitle.label "Setările contului">
+<!ENTITY accountTitle.label "Setări pentru cont">
 <!ENTITY accountSettingsDesc.label "Acesta este un cont special. Cu acesta nu sunt asociate identități.">
 <!ENTITY storeType.label "Tipul de stocare al mesajelor:">
 <!ENTITY storeType.accesskey "T">

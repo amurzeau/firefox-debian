@@ -4,13 +4,26 @@
 
 # An old map warning, see https://en.wikipedia.org/wiki/Here_be_dragons
 about-config-warning-title = כאן יש דרקונים!
-about-config-warning-text = שינוי ערכי בררת המחדל של הגדרות מתקדמות אלו יכול להזיק ליציבות, אבטחה והביצועים של ישום זה. מוטב להמשיך רק אם השלכות מעשיך ברורות לך לחלוטין.
+about-config-warning-text = שינוי ערכי ברירת המחדל של הגדרות מתקדמות אלו יכול להזיק ליציבות, אבטחה, והביצועים של יישום זה. מוטב להמשיך רק אם השלכות מעשיך ברורות לך לחלוטין.
 about-config-warning-checkbox = תציקו לי שוב, בבקשה!
 about-config-warning-button = הסיכון מקובל עלי
-about-config-title = about:config
 about-config2-title = תצורות מתקדמות
 about-config-search-input =
     .placeholder = חיפוש
+
+## These strings appear on the warning you see when first visiting about:config.
+
+about-config-intro-warning-text = שינוי העדפות התצורה המתקדמות עשוי להשפיע על הביצועים או אבטחה של { -brand-short-name }.
+about-config-intro-warning-checkbox = להזהיר אותי כשאני מנסה לגשת להעדפות האלו
+about-config-intro-warning-button = קבלת הסיכון והמשך
+
+
+
+# This is shown on the page before searching but after the warning is accepted.
+about-config-caution-text = שינוי העדפות אלו עשוי להשפיע על הביצועים או אבטחה של { -brand-short-name }.
+about-config-page-title = העדפות מתקדמות
+about-config-search-input1 =
+    .placeholder = חיפוש שם העדפה
 about-config-show-all = הצגת הכל
 about-config-pref-add = הוספה
 about-config-pref-toggle = החלפה
@@ -18,6 +31,18 @@ about-config-pref-edit = עריכה
 about-config-pref-save = שמירה
 about-config-pref-reset = איפוס
 about-config-pref-delete = מחיקה
+about-config-pref-add-button =
+    .title = הוספה
+about-config-pref-toggle-button =
+    .title = החלפה
+about-config-pref-edit-button =
+    .title = עריכה
+about-config-pref-save-button =
+    .title = שמירה
+about-config-pref-reset-button =
+    .title = איפוס
+about-config-pref-delete-button =
+    .title = מחיקה
 
 ## Labels for the type selection radio buttons shown when adding preferences.
 

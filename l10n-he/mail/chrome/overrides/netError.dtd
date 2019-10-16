@@ -34,10 +34,15 @@
 </ul>
 ">
 
+<!ENTITY fileAccessDenied.longDesc "
+<ul>
+  <li>ייתכן שהקובץ הוסר, הועבר או שההרשאות מונעות את הגישה אליו.</li>
+</ul>
+">
 
 <!ENTITY generic.title "שגיאה כללית">
 <!ENTITY generic.longDesc "
-<p>&brandShortName; אינו יכול לטעון דף זה מסיבה לא ידועה.</p>
+<p>מסיבה בלתי ידועה, אין ל־&brandShortName; אפשרות לטעון דף זה.</p>
 ">
 
 <!ENTITY malformedURI.title "כתובת לא חוקית">
@@ -64,13 +69,14 @@
 <!ENTITY contentEncodingError.title "שגיאה בקידוד תוכן">
 <!ENTITY contentEncodingError.longDesc "
 <ul>
-  <li>אנא צור קשר עם בעלי האתר כדי ליידע אותם על בעיה זו.</li>
-</ul>">
+  <li>נא ליצור קשר עם בעלי האתר כדי ליידע אותם על בעיה זו.</li>
+</ul>
+">
 
 <!ENTITY unsafeContentType.title "סוג קובץ מסוכן">
 <!ENTITY unsafeContentType.longDesc "
 <ul>
-  <li>בבקשה צור קשר עם בעלי האתר כדי ליידע אותם על בעיה זו.</li>
+  <li>נא ליצור קשר עם בעלי האתר כדי ליידע אותם על בעיה זו.</li>
 </ul>
 ">
 
@@ -80,6 +86,11 @@
 <!ENTITY netTimeout.title "תם הזמן המוקצב לחיבור">
 <!ENTITY netTimeout.longDesc "&sharedLongDesc;">
 
+<!ENTITY unknownProtocolFound.longDesc "
+<ul>
+  <li>ייתכן שיהיה צורך להתקין יישום אחר כדי לפתוח כתובת זו.</li>
+</ul>
+">
 
 <!ENTITY proxyConnectFailure.title "השרת המתווך דחה את ההתחברות">
 <!ENTITY proxyConnectFailure.longDesc "
@@ -112,9 +123,15 @@
 </ul>
 ">
 
-<!ENTITY nssFailure2.title "קישור מאובטח נכשל">
+<!ENTITY nssFailure2.title "חיבור מאובטח נכשל">
+<!ENTITY nssFailure2.longDesc2 "
+<ul>
+  <li>לא ניתן להציג את הדף המבוקש מכיוון שאין אפשרות לאמת את אמינות הנתונים שהתקבלו.</li>
+  <li>נא ליצור קשר עם בעלי האתר כדי ליידע אותם על בעיה זו.</li>
+</ul>
+">
 
-<!ENTITY nssBadCert.title "קישור מאובטח נכשל">
+<!ENTITY nssBadCert.title "חיבור מאובטח נכשל">
 <!ENTITY nssBadCert.longDesc2 "
 <ul>
   <li>תופעה זו יכולה להיות בעיה בהגדרה בשרת או שמדובר בשרת שמנסה להתחזות לשרת אחר. </li>
@@ -130,12 +147,14 @@
 </ul>
 ">
 
+<!ENTITY cspBlocked.longDesc "<p>&brandShortName; מנע מדף זה להיטען בדרך הזו מכיוון שלדף יש מדיניות אבטחת תוכן שאינה מאפשרת זאת.</p>">
 
 <!ENTITY corruptedContentErrorv2.title "שגיאת תוכן פגום">
+<!ENTITY corruptedContentErrorv2.longDesc "<p>לא ניתן להציג את הדף המבוקש מכיוון שאותרה שגיאה בתעבורת הנתונים.</p><ul><li>נא ליצור קשר עם בעלי האתר כדי ליידע אותם על בעיה זו.</li></ul>">
 
 <!ENTITY securityOverride.linkText "באפשרותך גם להוסיף חריגה…">
 <!ENTITY securityOverride.getMeOutOfHereButton "תוציא אותי מכאן!">
-<!ENTITY securityOverride.exceptionButtonLabel "הוסף חריגה…">
+<!ENTITY securityOverride.exceptionButtonLabel "הוספת חריגה…">
 
 <!-- LOCALIZATION NOTE (securityOverride.warningContent) - Do not translate the
 contents of the <button> tags. It uses strings already defined above. The
@@ -149,8 +168,12 @@ functionality specific to thunderbird. -->
 ">
 
 <!ENTITY remoteXUL.title "XUL מרוחק">
-<!ENTITY remoteXUL.longDesc "<p><ul><li>פנה אל בעלי האתר כדי ליידע אותם על הבעיה.</li></ul></p>">
+<!ENTITY remoteXUL.longDesc "<p><ul><li>נא ליצור קשר עם בעלי האתר כדי ליידע אותם על בעיה זו.</li></ul></p>">
 
 <!ENTITY inadequateSecurityError.title "החיבור שלך אינו מאובטח">
 <!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
      "NS_ERROR_NET_INADEQUATE_SECURITY". -->
+<!ENTITY inadequateSecurityError.longDesc "<p>האתר בכתובת <span class='hostname'></span> משתמש בטכנולוגיית אבטחה מיושנת החשופה לתקיפות. תוקף יכול לחשוף בקלות מידע שעשוי להחשב כמאובטח. על מנהל האתר לתקן את השרת לפני שיהיה ניתן לבקר באתר.</p><p>קוד שגיאה: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
+
+
+<!ENTITY networkProtocolError.longDesc "<p>לא ניתן להציג את הדף המבוקש מכיוון שאותרה שגיאה בפרוטוקול הרשת.</p><ul><li>נא ליצור קשר עם בעלי האתר כדי ליידע אותם על בעיה זו.</li></ul>">

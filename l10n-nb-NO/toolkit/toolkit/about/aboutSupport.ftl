@@ -32,6 +32,8 @@ app-basics-name = Navn
 app-basics-version = Versjon
 app-basics-build-id = Bygg-ID
 app-basics-update-channel = Oppdateringskanal
+# This message refers to the folder used to store updates on the device,
+# as in "Folder for updates". "Update" is a noun, not a verb.
 app-basics-update-dir =
     { PLATFORM() ->
         [linux] Oppdateringsmappe
@@ -56,7 +58,6 @@ app-basics-service-workers = Registrerte tjenestearbeidere
 app-basics-profiles = Profiler
 app-basics-launcher-process-status = Oppstartsprosess
 app-basics-multi-process-support = Multiprosess-vinduer
-app-basics-process-count = Nettinnholdsprosesser
 app-basics-remote-processes-count = Fjernprosesser
 app-basics-enterprise-policies = Virksomhets-policy
 app-basics-location-service-key-google = Google Location Service-nøkkel
@@ -112,7 +113,14 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argument
 safe-mode-title = Prøv sikker modus
 restart-in-safe-mode-label = Start på nytt uten utvidelser …
-media-title = Media
+
+## Media titles
+
+audio-backend = Lydgrensesnitt
+max-audio-channels = Maks kanaler
+channel-layout = Foretrukket kanaloppsett
+sample-rate = Foretrukket samplingshastighet
+media-title = Medier
 media-output-devices-title = Ut-enheter
 media-input-devices-title = Inn-enheter
 media-device-name = Navn
@@ -124,6 +132,12 @@ media-device-format = Format
 media-device-channels = Kanaler
 media-device-rate = Hastighet
 media-device-latency = Forsinkelse
+media-capabilities-title = Mediefunksjoner
+# List all the entries of the database.
+media-capabilities-enumerate = Telle opp databasen
+
+
+
 intl-title = Internasjonalisering og lokalisering
 intl-app-title = Programinnstillinger
 intl-locales-requested = Forespurte språkversjoner
@@ -238,12 +252,7 @@ uses-tiling = Bruker Tiling
 content-uses-tiling = Bruker Tiling (innhold)
 off-main-thread-paint-enabled = Opptegning utenfor hovedtråd aktivert
 off-main-thread-paint-worker-count = Opptegning utenfor hovedtråd workerantall
-low-end-machine = Oppdaget en maskin med lav ytelse
 target-frame-rate = Mål for framerate
-audio-backend = Lydgrensesnitt
-max-audio-channels = Maks kanaler
-channel-layout = Foretrukket kanaloppsett
-sample-rate = Foretrukket samplingshastighet
 min-lib-versions = Forventet minimumsversjon
 loaded-lib-versions = Versjon i bruk
 has-seccomp-bpf = Seccomp-BPF (systemkall-filtrering)
@@ -256,7 +265,7 @@ content-sandbox-level = Nivå for sandkasse for innholdsprosesser
 effective-content-sandbox-level = Effektiv sandbox-nivå for innholdsprosess
 sandbox-proc-type-content = innhold
 sandbox-proc-type-file = filinnhold
-sandbox-proc-type-media-plugin = programtillegg for media
+sandbox-proc-type-media-plugin = programtillegg for medier
 sandbox-proc-type-data-decoder = datadekoder
 launcher-process-status-0 = Aktivert
 launcher-process-status-1 = Deaktivert på grunn av feil

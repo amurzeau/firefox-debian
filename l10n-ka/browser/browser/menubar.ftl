@@ -153,7 +153,7 @@ menu-view-full-screen =
     .label = სრული ეკრანი
     .accesskey = ს
 
-##
+
 
 menu-view-show-all-tabs =
     .label = ყველა ჩანართის ჩვენება
@@ -212,14 +212,23 @@ menu-tools-addons =
 menu-tools-sync-sign-in =
     .label = { -sync-brand-short-name } – შესვლა…
     .accesskey = შ
+menu-tools-fxa-sign-in =
+    .label = { -brand-product-name } – შესვლა...
+    .accesskey = ვ
+menu-tools-turn-on-sync =
+    .label = ჩართეთ { -sync-brand-short-name }...
+    .accesskey = ჩ
 menu-tools-sync-now =
     .label = დასინქრონება ახლავე
     .accesskey = ს
 menu-tools-sync-re-auth =
     .label = { -sync-brand-short-name } – ხელახლა დაკავშირება…
     .accesskey = ხ
+menu-tools-fxa-re-auth =
+    .label = { -brand-product-name } – ხელახლა დაკავშირება...
+    .accesskey = ლ
 menu-tools-web-developer =
-    .label = ვებშემმუშავება
+    .label = ვებშემუშავება
     .accesskey = ვ
 menu-tools-page-source =
     .label = გვერდის წყარო

@@ -97,6 +97,27 @@ onboarding-browse-privately-title = Navighescha en il modus privat
 onboarding-browse-privately-text = Il modus privat stizza tia cronologia da tschertga e navigaziun per che las autras persunas che utiliseschan tes computer na la vesian betg.
 onboarding-browse-privately-button = Avrir ina fanestra privata
 onboarding-firefox-send-title = Protegia las datotecas che ti cundividas
+onboarding-firefox-send-text2 = Transferescha tias datotecas a { -send-brand-name } per las cundivider cun criptadi fin-a-fin ed ina colliaziun che scroda automaticamain.
+onboarding-firefox-send-button = Emprova { -send-brand-name }
+onboarding-mobile-phone-title = Installescha { -brand-product-name } sin tes telefonin
+onboarding-mobile-phone-text = Telechargia { -brand-product-name } per iOS u Android e sincronisescha tias datas sin tut tes apparats.
+# "Mobile" is short for mobile/cellular phone, "Browser" is short for web
+# browser.
+onboarding-mobile-phone-button = Telechargiar il navigatur mobil
+onboarding-send-tabs-title = Trametta tabs averts a tes auters apparats
+# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
+# tab's context menu.
+onboarding-send-tabs-text = «Trametter il tab» pussibilitescha da cundivider immediatamain paginas cun auters apparats, senza stuair copiar & encollar u bandunar il navigatur.
+onboarding-send-tabs-button = Cumenzar ad utilisar «Trametter il tab»
+onboarding-pocket-anywhere-title = Leger e tadlar nua ch'i saja
+onboarding-pocket-anywhere-text2 = Memorisescha tes cuntegns preferids en l'app { -pocket-brand-name } e legia, taidla e guarda cura e sco ch'i para e plascha – era senza connexiun cun l'internet.
+onboarding-pocket-anywhere-button = Emprova { -pocket-brand-name }
+onboarding-lockwise-passwords-title = Prenda tes pleds-clav cun tai – dapertut
+onboarding-lockwise-passwords-text2 = Protegia ils pleds-clav che ti memoriseschas e t'annunzia tuttina a moda simpla en tes contos cun { -lockwise-brand-name }.
+onboarding-lockwise-passwords-button2 = Ir per l'app
+onboarding-facebook-container-title = Mussa ils cunfins a Facebook
+onboarding-facebook-container-text2 = { -facebook-container-brand-name } separa tes profil da tut il rest per render pli grev a Facebook da ta mussar reclama individualisada.
+onboarding-facebook-container-button = Agiuntar l'extensiun
 
 ## Message strings belonging to the Return to AMO flow
 

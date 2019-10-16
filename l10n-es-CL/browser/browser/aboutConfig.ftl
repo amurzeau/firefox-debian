@@ -10,6 +10,21 @@ about-config-warning-button = Acepto el riesgo
 about-config2-title = Configuraciones avanzadas
 about-config-search-input =
     .placeholder = Buscar
+
+## These strings appear on the warning you see when first visiting about:config.
+
+about-config-intro-warning-title = Proceder con precaución
+about-config-intro-warning-text = Cambiar las preferencias de configuración avanzada puede afectar el rendimiento o la seguridad de { -brand-short-name }.
+about-config-intro-warning-checkbox = Avisarme cuando intente acceder a estas preferencias
+about-config-intro-warning-button = Aceptar el riesgo y continuar
+
+
+
+# This is shown on the page before searching but after the warning is accepted.
+about-config-caution-text = Cambiar estas preferencias puede afectar el rendimiento o la seguridad de { -brand-short-name }.
+about-config-page-title = Preferencias avanzadas
+about-config-search-input1 =
+    .placeholder = Buscar preferencia por nombre
 about-config-show-all = Mostrar Todo
 about-config-pref-add = Añadir
 about-config-pref-toggle = Modificar
@@ -17,6 +32,18 @@ about-config-pref-edit = Editar
 about-config-pref-save = Guardar
 about-config-pref-reset = Restablecer
 about-config-pref-delete = Eliminar
+about-config-pref-add-button =
+    .title = Añadir
+about-config-pref-toggle-button =
+    .title = Modificar
+about-config-pref-edit-button =
+    .title = Editar
+about-config-pref-save-button =
+    .title = Guardar
+about-config-pref-reset-button =
+    .title = Restablecer
+about-config-pref-delete-button =
+    .title = Eliminar
 
 ## Labels for the type selection radio buttons shown when adding preferences.
 

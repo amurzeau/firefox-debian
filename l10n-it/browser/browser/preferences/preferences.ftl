@@ -252,6 +252,62 @@ applications-type-column =
 applications-action-column =
     .label = Azione
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = file { $extension }
+applications-action-save =
+    .label = Salva file
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Usa { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Usa { $app-name } (predefinito)
+applications-use-other =
+    .label = Usa altro…
+applications-select-helper = Scelta applicazione
+applications-manage-app =
+    .label = Dettagli applicazioni…
+applications-always-ask =
+    .label = Chiedi sempre
+applications-type-pdf = PDF (Portable Document Format)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Usa { $plugin-name } (in { -brand-short-name })
+applications-preview-inapp =
+    .label = Anteprima in { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 drm-content-header = Contenuti con DRM (Digital Rights Management)
 play-drm-content =
     .label = Riproduci contenuti protetti da DRM
@@ -442,12 +498,22 @@ search-bar-shown =
     .label = Aggiungi la barra di ricerca alla barra degli strumenti
 search-engine-default-header = Motore di ricerca predefinito
 search-engine-default-desc = Seleziona il motore di ricerca predefinito da utilizzare nella barra degli indirizzi e nella barra di ricerca.
+
+search-engine-default-private-desc = Seleziona il motore di ricerca predefinito da utilizzare nelle finestre anonime.
+search-separate-default-engine =
+    .label = Utilizza questo motore di ricerca nelle finestre anonime
+    .accesskey = U
+
+search-suggestions-header = Suggerimenti di ricerca
+search-suggestions-desc = Scegli come visualizzare i suggerimenti dai motori di ricerca.
+
 search-suggestions-option =
     .label = Visualizza suggerimenti di ricerca
     .accesskey = V
 search-show-suggestions-url-bar-option =
     .label = Visualizza suggerimenti di ricerca tra i risultati della barra degli indirizzi
     .accesskey = i
+suggestions-addressbar-settings = Modifica le impostazioni dei suggerimenti per cronologia di navigazione, segnalibri e schede
 # This string describes what the user will observe when the system
 # prioritizes search suggestions over browsing history in the results
 # that extend down from the address bar. In the original English string,
@@ -516,6 +582,9 @@ sync-profile-picture =
 sync-disconnect =
     .label = Disconnetti…
     .accesskey = t
+sync-sign-out =
+    .label = Disconnetti…
+    .accesskey = t
 sync-manage-account = Gestisci account
     .accesskey = G
 sync-signedin-unverified = { $email } non è verificato.
@@ -531,6 +600,50 @@ sync-sign-in =
     .accesskey = A
 sync-signedin-settings-header = Impostazioni di sincronizzazione
 sync-signedin-settings-desc = Scegli gli elementi da sincronizzare sui dispositivi con { -brand-short-name }.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Sincronizzazione: ATTIVA
+prefs-syncing-off = Sincronizzazione: DISATTIVATA
+prefs-sync-setup =
+    .label = Configura { -sync-brand-short-name }…
+    .accesskey = C
+prefs-sync-offer-setup-label = Sincronizza segnalibri, cronologia, schede, password, componenti aggiuntivi e impostazioni attraverso tutti i tuoi dispositivi.
+prefs-sync-now =
+    .labelnotsyncing = Sincronizza adesso
+    .accesskeynotsyncing = a
+    .labelsyncing = Sincronizzazione in corso…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = I seguenti elementi vengono attualmente sincronizzati:
+
+sync-currently-syncing-bookmarks = Segnalibri
+sync-currently-syncing-history = Cronologia
+sync-currently-syncing-tabs = Schede aperte
+sync-currently-syncing-logins-passwords = Credenziali e password
+sync-currently-syncing-addresses = Indirizzi
+sync-currently-syncing-creditcards = Carte di credito
+sync-currently-syncing-addons = Componenti aggiuntivi
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Opzioni
+       *[other] Preferenze
+    }
+sync-change-options =
+    .label = Cambia…
+    .accesskey = b
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = Scelta elementi da sincronizzare
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Salva modifiche
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = Disconnetti…
+    .buttonaccesskeyextra2 = D
+
 sync-engine-bookmarks =
     .label = Segnalibri
     .accesskey = e
@@ -541,6 +654,10 @@ sync-engine-tabs =
     .label = Schede aperte
     .tooltiptext = Elementi aperti nei dispositivi sincronizzati
     .accesskey = h
+sync-engine-logins-passwords =
+    .label = Credenziali e password
+    .tooltiptext = Nomi utente e password salvati
+    .accesskey = i
 sync-engine-logins =
     .label = Credenziali
     .tooltiptext = Nomi utente e password salvati
@@ -597,8 +714,12 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Suggerisci e genera password complesse
     .accesskey = u
+forms-breach-alerts =
+    .label = Visualizza avvisi per le password di siti coinvolti in violazioni di dati
+    .accesskey = a
+forms-breach-alerts-learn-more-link = Ulteriori informazioni
 forms-fill-logins-and-passwords =
-    .label = Compila automaticamente credenziali di accesso
+    .label = Compila automaticamente le credenziali di accesso
     .accesskey = i
 forms-saved-logins =
     .label = Credenziali salvate…
@@ -609,6 +730,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Cambia la password principale…
     .accesskey = w
+forms-master-pw-fips-title = Si è in modalità FIPS. FIPS richiede che la password principale sia impostata.
+forms-master-pw-fips-desc = La password non è stata cambiata
 
 ## Privacy Section - History
 
@@ -699,23 +822,24 @@ sitedata-cookies-permissions =
 ## Privacy Section - Address Bar
 
 addressbar-header = Barra degli indirizzi
-addressbar-suggest = Nella barra degli indirizzi visualizza suggerimenti da
+addressbar-suggest = Nella barra degli indirizzi visualizza suggerimenti da:
 addressbar-locbar-history-option =
-    .label = cronologia di navigazione
+    .label = Cronologia di navigazione
     .accesskey = n
 addressbar-locbar-bookmarks-option =
-    .label = segnalibri
+    .label = Segnalibri
     .accesskey = g
 addressbar-locbar-openpage-option =
-    .label = schede aperte
+    .label = Schede aperte
     .accesskey = d
 addressbar-suggestions-settings = Modifica le impostazioni relative ai suggerimenti dei motori di ricerca
 
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Blocco contenuti
-content-blocking-enhanced-tracking-protection = Protezione antitracciamento avanzata
 content-blocking-section-description = Proteggi la tua privacy durante la navigazione. Blocca contenuti invisibili in grado di tracciare i siti che visiti e creare un profilo con le tue informazioni. Il blocco di alcuni di questi contenuti potrebbe velocizzare il caricamento delle pagine.
+content-blocking-enhanced-tracking-protection = Protezione antitracciamento avanzata
+content-blocking-section-top-level-description = Gli elementi traccianti ti seguono online al fine di raccogliere informazioni sui tuoi interessi e le tue abitudini di navigazione. { -brand-short-name } blocca molti di questi traccianti e altri script dannosi.
 content-blocking-learn-more = Ulteriori informazioni
 content-blocking-setting-standard =
     .label = Normale
@@ -731,6 +855,22 @@ content-blocking-strict-description = Maggiore protezione, alcuni siti potrebber
 content-blocking-custom-desc = Scegli che cosa bloccare.
 content-blocking-private-trackers = Elementi traccianti conosciuti in finestre anonime
 content-blocking-third-party-cookies = Cookie traccianti di terze parti
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+enhanced-tracking-protection-setting-standard =
+    .label = Normale
+    .accesskey = N
+enhanced-tracking-protection-setting-strict =
+    .label = Restrittiva
+    .accesskey = R
+enhanced-tracking-protection-setting-custom =
+    .label = Personalizzata
+    .accesskey = P
+
+##
+
 content-blocking-etp-standard-desc = Equilibrio tra protezione e prestazioni. Le pagine si caricheranno normalmente.
 content-blocking-etp-strict-desc = Maggiore protezione, ma alcuni siti o contenuti potrebbero non funzionare correttamente.
 content-blocking-etp-custom-desc = Scegli quali traccianti e script bloccare.
@@ -746,10 +886,9 @@ content-blocking-cryptominers = Cryptominer
 content-blocking-fingerprinters = Fingerprinter
 content-blocking-warning-title = Attenzione
 content-blocking-warning-description = Il blocco di contenuti potrebbe impedire il corretto funzionamento di alcuni siti. È semplice disattivare il blocco per i siti che ritieni affidabili.
+content-blocking-learn-how = Scopri come
 content-blocking-etp-warning-description = Il blocco degli elementi traccianti può impedire il corretto funzionamento di alcuni siti. Ricaricare la pagina con gli elementi traccianti per visualizzare tutti i contenuti.
 content-blocking-warning-learn-how = Scopri come
-
-content-blocking-learn-how = Scopri come
 content-blocking-reload-description = È necessario ricaricare le schede per applicare le modifiche.
 content-blocking-reload-tabs-button =
     .label = Ricarica tutte le schede

@@ -76,12 +76,21 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY menubarCmd.label "Valikkopalkki">
 <!ENTITY menubarCmd.accesskey "V">
 <!ENTITY navbarCmd.label "Navigointipalkki">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY navbar.accessibleLabel "Navigointi">
 <!ENTITY personalbarCmd.label "Kirjanmerkkipalkki">
 <!ENTITY personalbarCmd.accesskey "K">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY personalbar.accessibleLabel "Kirjanmerkit">
 <!ENTITY bookmarksToolbarItem.label "Kirjanmerkkipalkin linkit">
 
 <!ENTITY pageSourceCmd.label "Sivun lähdekoodi">
 <!ENTITY pageSourceCmd.accesskey "n">
+
 <!ENTITY pageSourceCmd.commandkey "u">
 <!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
 Option+Command keyboard shortcut letter that Safari and Chrome use for "View
@@ -92,6 +101,7 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 
 <!ENTITY pageInfoCmd.label "Tietoja sivusta">
 <!ENTITY pageInfoCmd.accesskey "T">
+
 <!ENTITY pageInfoCmd.commandkey "i">
 <!ENTITY ldbCmd.label "Layout Debugger">
 <!ENTITY ldbCmd.accesskey "L">
@@ -117,6 +127,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaUnverified.label "Vahvista tilisi">
 
 
+ <!-- } is above this key on many keyboards -->
+
 <!ENTITY fullScreenMinimize.tooltip "Pienennä ikkuna">
 <!ENTITY fullScreenRestore.tooltip "Palauta">
 <!ENTITY fullScreenClose.tooltip "Sulje">
@@ -137,6 +149,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.unverified.description.label "Tilisi täytyy vahvistaa ennen kuin voit synkronoida.">
 <!ENTITY fxa.unverified.button.label "Avaa &syncBrand.shortName.label;-asetukset…">
 
+<!ENTITY pictureInPictureHideToggle.label "Piilota kuva kuvassa -kytkin">
+<!ENTITY pictureInPictureHideToggle.accesskey "P">
 
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
      for the Firefox Account toolbar menu screen. The `Signed in as` text is
@@ -144,15 +158,27 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.menu.signedInAs.label "Kirjautuneena tilillä">
 <!ENTITY fxa.menu.manageAccount.label "Hallitse tiliä…">
 <!ENTITY fxa.menu.syncSettings.label "&syncBrand.shortName.label;-asetukset…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbar menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.syncSettings2.label "&syncBrand.shortName.label;-asetukset">
 <!ENTITY fxa.menu.connectAnotherDevice2.label "Yhdistä toiseen laitteeseen…">
 <!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
 <!ENTITY fxa.menu.signin.label "Kirjaudu &brandProductName;iin">
 <!ENTITY fxa.menu.turnOnSync.label "Ota &syncBrand.shortName.label; käyttöön">
+<!ENTITY fxa.menu.firefoxServices.label "&brandProductName;-palvelut">
+
 <!ENTITY fxa.menu.account.label "Tili">
+<!ENTITY fxa.menu.settings.label "Asetukset">
+<!ENTITY fxa.menu.accountSettings.label "Tilin asetukset">
+<!ENTITY fxa.menu.signOut.label "Kirjaudu ulos…">
+<!ENTITY fxa.menu.deviceSettings.label "Laiteasetukset">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
      for the Firefox Account toolbar menu screen.  -->
+<!ENTITY fxa.service.sendTab.description "Lähetä välilehti välittömästi mille tahansa laitteelle, johon olet kirjautuneena.">
 
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
@@ -191,6 +217,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY bookmarksMenu.label "Kirjanmerkit">
 <!ENTITY bookmarksMenu.accesskey "K">
+
 <!ENTITY bookmarkThisPageCmd.label "Lisää sivu kirjanmerkkeihin">
 <!ENTITY editThisBookmarkCmd.label "Muokkaa kirjanmerkkiä">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
@@ -232,6 +259,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Hallinnoi liitännäisen käyttöä">
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "Muuta sitä, voitko saada ilmoituksia tältä sivustolta">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Tallenna tietoja pysyvään tallennustilaan">
+
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Selain on kauko-ohjauksessa">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Avaa verkkotodennuksen paneeli">
 <!ENTITY urlbar.storageAccessAnchor.tooltip               "Avaa selaamisen seuraamisoikeuden paneeli">
@@ -245,6 +273,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Hallinnoi sivun kääntämistä toiselle kielelle">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Hallinnoi DRM-ohjelmiston käyttöä">
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "Avaa MIDI-paneeli">
+
+<!ENTITY urlbar.permissionsGranted.tooltip       "Olet myöntänyt tälle sivustolle lisäoikeuksia.">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Olet estänyt kameran tältä sivustolta.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Olet estänyt mikrofonin tältä sivustolta.">
@@ -265,7 +295,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!-- Toolbar items -->
 <!ENTITY homeButton.label             "Aloitussivu">
-<!ENTITY homeButton.defaultPage.tooltip "&brandShortName;in aloitussivu">
+<!ENTITY homeButton.defaultPage.tooltip "&brandShortName;-aloitussivu">
 
 <!ENTITY bookmarksButton.label          "Kirjanmerkit">
 <!ENTITY bookmarksCmd.commandkey "b">
@@ -415,8 +445,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Haluatko nähdä muiden laitteiden välilehdet tässä?">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Avaa Sync-asetukset">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Kirjaudu sisään, jotta voit katsella listaa muiden laitteidesi välilehdistä.">
+<!ENTITY appMenuRemoteTabs.welcome.label "Näytä lista välilehdistä muilta laitteiltasi.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Tilisi tarvitsee vahvistaa.">
 <!ENTITY appMenuRemoteTabs.signin.label "Kirjaudu Sync-palveluun">
+<!ENTITY appMenuRemoteTabs.signintosync.label "Kirjaudu &syncBrand.shortName.label;-palveluun…">
+<!ENTITY appMenuRemoteTabs.turnonsync.label "Ota &syncBrand.shortName.label; käyttöön…">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Hallitse laitteita…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Näytä synkronoitujen välilehtien sivupaneeli">
 <!ENTITY appMenuRemoteTabs.hidesidebar.label "Piilota synkronoitujen välilehtien sivupaneeli">
@@ -504,6 +537,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      This is set as the aria-label attribute for the search input box in the
      in-content search UI, to be used by screen readers. -->
 <!ENTITY contentSearchInput.label     "Hakutermit">
+
 <!ENTITY contentSearchSubmit.tooltip  "Lähetä haku">
 
 <!-- LOCALIZATION NOTE (searchInput.placeholder):
@@ -535,6 +569,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (searchWithDesc.label):
      This string prompts the user to use the list of one-click search engines in
      the Urlbar and searchbar. -->
+<!ENTITY searchWithDesc.label         "Tällä kertaa käytä hakuun:">
 
 <!-- LOCALIZATION NOTE (changeSearchSettings.button):
      This string won't wrap, so if the translated string is longer,
@@ -807,11 +842,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.connection "Yhteys">
 <!ENTITY identity.connectionSecure "Suojattu yhteys">
-
-<!-- LOCALIZATION NOTE (identity.securityView.label2)
-     This is the header of the security subview in the Site Identity panel. -->
-
 <!ENTITY identity.connectionNotSecure "Yhteys ei ole suojattu">
+
+<!ENTITY identity.connectionSecure3 "Yhteys on suojattu">
+<!ENTITY identity.connectionNotSecure2 "Yhteys ei ole suojattu">
 <!ENTITY identity.connectionNotSecureSecurityView "Yhteytesi tähän sivustoon ei ole suojattu.">
 <!ENTITY identity.connectionFile "Sivu on tallennettu tietokoneellesi.">
 <!ENTITY identity.connectionVerified2 "Yhteys sivustoon on suojattu ja sivuston omistaa:">
@@ -821,7 +855,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.insecureLoginForms2 "Tälle sivulle kirjoitettujen kirjautumistietojen turvallisuus voi vaarantua.">
 <!ENTITY identity.customRoot "Yhteys on suojattu varmenteella, jonka myöntäjää Mozilla ei tunnista.">
 
-<!ENTITY identity.evOwnerLabel "Sivuston omistaa:">
+<!ENTITY identity.evOwnerLabel2 "Varmenne myönnetty taholle:">
 
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "&brandShortName; on estänyt suojaamattoman sisällön näyttämisen.">
@@ -857,17 +891,20 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.permissions "Oikeudet">
 
-<!-- LOCALIZATION NOTE (identity.permissions2): "set" as in "configured for this website" -->
+<!ENTITY identity.permissions3 "Käyttöoikeudet">
 <!ENTITY identity.permissionsEmpty "Sivustolle ei ole myönnetty mitään erityisoikeuksia.">
 <!ENTITY identity.permissionsReloadHint "Sivu tarvitsee ehkä päivittää, jotta muutokset tulevat voimaan.">
 <!ENTITY identity.permissionsPreferences.tooltip "Avaa oikeusasetukset">
 <!ENTITY identity.contentBlockingPreferences.tooltip "Avaa sisällön eston asetukset">
 
 
+<!ENTITY protections.etpON.header "Tehostettu seurannan suojaus on PÄÄLLÄ tällä sivustolla">
+<!ENTITY protections.etpOFF.header "Tehostettu seurannan suojaus on POIS PÄÄLTÄ tällä sivustolla">
 <!-- LOCALIZATION NOTE:
      protections.etpMoreInfo.label: The text a screen reader speaks when focused on the info button. -->
+<!ENTITY protections.etpMoreInfo.label "Lisätietoja tehostetusta seurannan suojauksesta">
 <!ENTITY protections.settings.label "Suojauksen asetukset">
-<!ENTITY protections.report.label "Näytä koko raportti">
+<!ENTITY protections.showreport.label "Näytä raportti">
 <!-- LOCALIZATION NOTE:
      protections.siteNotWorking.label: The link to be clicked to open the sub-panel view
      protections.siteNotWorkingView.title: The heading/title of the sub-panel view -->
@@ -878,18 +915,41 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      the user is experiencing issues with any of a variety of functionality.
      protections.siteNotWorkingView.header: The header of the list
      protections.siteNotWorkingView.issueList.*: The list items, shown in a <ul> -->
-<!ENTITY protections.siteNotWorkingView.header "Poista suojaus käytöstä, jos kohtaat ongelmia seuraavien kanssa:">
+<!ENTITY protections.siteNotWorkingView.header "Poista suojaukset käytöstä, jos kohtaat ongelmia seuraavien kanssa:">
 <!ENTITY protections.siteNotWorkingView.issueList.logInFields "Kirjautumiskentät">
 <!ENTITY protections.siteNotWorkingView.issueList.forms "Lomakkeet">
 <!ENTITY protections.siteNotWorkingView.issueList.payments "Maksut">
 <!ENTITY protections.siteNotWorkingView.issueList.comments "Kommentit">
 <!ENTITY protections.siteNotWorkingView.issueList.videos "Videot">
-<!ENTITY protections.siteNotWorkingView.siteStillBroken.label "Eikö sivusto toimi suojauksen poiskytkemisen jälkeenkään?">
 <!ENTITY protections.siteNotWorkingView.sendReport.label "Lähetä raportti">
 
+<!-- LOCALIZATION NOTE (protections.blocking2.label, protections.notBlocking2.label, protections.notFound.label):
+     In the protections panel, Content Blocking category items are in three sections:
+     "Blocked" for categories being blocked in the current page,
+     "Allowed" for categories detected but not blocked in the current page, and
+     "None Detected" for categories not detected in the current page.
+     These strings are used in the header labels of each of these sections. -->
+<!ENTITY protections.blocking2.label "Estetty">
+<!ENTITY protections.notBlocking2.label "Sallittu">
+<!ENTITY protections.notFound.label "Ei havaittu">
+<!-- LOCALIZATION NOTE (protections.notBlocking.why.label, protections.notBlocking.why.etp*.tooltip):
+     The "Allowed" header also includes a "Why?" link that, when hovered, shows
+     a tooltip explaining why these items were not blocked in the page. -->
 <!ENTITY protections.notBlocking.why.label "Miksi?">
+<!ENTITY protections.notBlocking.why.etpOn.tooltip "Näiden estäminen voisi rikkoa osia joistain sivustoista. Ilman seuraimia jotkin painikkeet, lomakkeet ja kirjautumiskentät eivät välttämättä toimi.">
+<!ENTITY protections.notBlocking.why.etpOff.tooltip "Suojauksien poistaminen käytöstä sallii kaikki seuraimet tällä sivustolla. Se saattaa myös parantaa joidenkin sivustojen toiminnallisuutta.">
 <!ENTITY protections.socialMediaTrackers.label "Sosiaalisen median seuraimet">
+<!ENTITY protections.crossSiteTrackingCookies.label "Sivustorajat ylittävät seurainevästeet">
+<!ENTITY protections.trackingContent.label "Seurantaan tarkoitettu sisältö">
+<!ENTITY protections.fingerprinters.label "Yksilöijät">
+<!ENTITY protections.cryptominers.label "Kryptolouhijat">
+<!ENTITY protections.noTrackersFound.description "Tällä sivulla ei havaittu seuraimia, jotka &brandShortName; tuntee.">
 
+<!ENTITY protections.crossSiteTrackingCookies.description "Nämä evästeet seuraavat sinua sivustolta toiselle ja keräävät tietoja tekemisistäsi verkossa. Ne on asetettu kolmansien osapuolten, kuten mainostajien ja analytiikkayhtiöiden, toimesta.">
+<!ENTITY protections.cryptominers.description "Kryptolouhijat käyttävät tietokoneesi laskentatehoa digitaalisen rahan louhintaan. Kryptolouhintaan tarkoitetut komentosarjat kuluttavat tietokoneen akkua, hidastavat tietokonetta ja voivat vaikuttaa sähkölaskun loppusummaan.">
+<!ENTITY protections.fingerprinters.description "Yksilöijät keräävät asetustietoja selaimestasi sekä tietokoneestasi ja luovat näiden tietojen avulla profiilin sinusta. Tätä digitaalista sormenjälkeä hyödyntämällä sinua voidaan seurata eri verkkosivustojen välillä.">
+<!ENTITY protections.trackingContent2.description "Sivustot saattavat ladata ulkoisia mainoksia, videoita ja muuta sisältöä, joka seuraa sinua. Seurantaan tarkoitetun sisällön estäminen voi nopeuttaa sivujen latautumista, mutta jotkin painikkeet, lomakkeet ja kirjautumiskentät eivät välttämättä toimi.">
+<!ENTITY protections.socialMediaTrackers.description "Sosiaaliset verkot asettavat seuraimia muille verkkosivuille, ja niiden avulla sinua sekä tekemisiäsi voidaan seurata verkossa. Tämä mahdollistaa sosiaalisen median yhtiöiden kerätä sinusta enemmän tietoa kuin mitä itse jaat sosiaalisen median profiileissa.">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
@@ -928,19 +988,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection3.label "Seuraimet">
 
 <!ENTITY contentBlocking.manageSettings.label "Hallitse sisällön estämistä">
-
-
 <!ENTITY contentBlocking.manageSettings.accesskey "H">
 
 <!ENTITY contentBlocking.trackersView.label "Seuraimet">
-
 <!ENTITY contentBlocking.trackersView.strictInfo.label "Kaikki seuraimet voi estää valitsemalla ”Tiukka” sisällön esto.">
 
 <!ENTITY contentBlocking.cookies.label "Evästeet">
 <!ENTITY contentBlocking.cookiesView.label "Evästeet ja sivustotiedot">
 
+<!ENTITY contentBlocking.trackingProtection4.label "Seurantaan tarkoitettu sisältö">
+
+<!ENTITY contentBlocking.manageSettings2.label "Hallitse suojauksen asetuksia">
+<!ENTITY contentBlocking.manageSettings2.accesskey "H">
+
 <!ENTITY contentBlocking.socialblock.label "Sosiaalisen median seuraimet">
 
+<!ENTITY contentBlocking.cookies2.label "Sivustorajat ylittävät seurainevästeet">
 
 <!ENTITY contentBlocking.cryptominers.label "Kryptolouhijat">
 <!ENTITY contentBlocking.cryptominersView.label "Kryptolouhijat">
@@ -952,7 +1015,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView.label "Ilmoita ongelmista">
 <!ENTITY contentBlocking.breakageReportView2.description "Sisällön esto voi aiheuttaa ongelmia joillakin sivustoilla. Ongelmista ilmoittaminen auttaa tekemään &brandShortName;ista paremman kaikille. (Ilmoittaminen lähettää Mozillalle sivun osoitteen sekä tietoja selainasetuksistasi.)">
 <!ENTITY contentBlocking.breakageReportView.learnMore "Lue lisää">
+
 <!ENTITY contentBlocking.breakageReportView.title "Ilmoita rikkinäisestä sivustosta">
+<!ENTITY contentBlocking.breakageReportView3.description "Joidenkin seuraimien estäminen saattaa aiheuttaa ongelmia joillain sivustoilla. Ilmoittamalla näistä ongelmista autat parantamaan &brandShortName;-selainta. Tämän raportin lähettäminen lähettää Mozillalle sivun osoitteen ja tietoja selaimesi asetuksista.">
 <!ENTITY contentBlocking.breakageReportView2.learnMore "Lue lisää">
 <!ENTITY contentBlocking.breakageReportView.collection.url.label "Osoite">
 <!ENTITY contentBlocking.breakageReportView.collection.comments.label "Mitä ongelmia kohtasit? (Valinnainen)">
@@ -1006,6 +1071,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY newTabControlled.disableButton.accesskey "E">
 
 <!ENTITY homepageControlled.message "Laajennus on vaihtanut, mitä näet aloitussivuna. Voit palauttaa asetukset, jos et halua tätä muutosta.">
+
 <!ENTITY homepageControlled.header.message "Aloitussivusi on muuttunut.">
 <!ENTITY homepageControlled.keepButton.label "Säilytä muutokset">
 <!ENTITY homepageControlled.keepButton.accesskey "S">

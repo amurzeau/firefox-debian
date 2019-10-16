@@ -36,8 +36,7 @@ menu-menuitem-preferences =
         [windows] Налады
        *[other] Параметры
     }
-menu-menuitem-feedback = Даслаць водгук
-menu-menuitem-faq = Пытанні і адказы
+about-logins-menu-menuitem-help = Даведка
 menu-menuitem-android-app = { -lockwise-brand-short-name } для Android
 menu-menuitem-iphone-app = { -lockwise-brand-short-name } для iPhone і iPad
 
@@ -58,9 +57,16 @@ login-list-last-changed-option = Апошняе змяненне
 login-list-last-used-option = Апошняе выкарыстанне
 login-list-intro-title = Лагіны не знойдзены
 login-list-intro-description = Калі вы захоўваеце пароль у { -brand-product-name }, ён з'явіцца тут.
+about-logins-login-list-empty-search-title = Лагіны не знойдзены
+about-logins-login-list-empty-search-description = Няма вынікаў, якія адпавядаюць вашаму пошуку.
 login-list-item-title-new-login = Новы лагін
 login-list-item-subtitle-new-login = Увядзіце свае ўліковыя дадзеныя
 login-list-item-subtitle-missing-username = (без імя карыстальніка)
+about-logins-list-item-warning-icon =
+    .alt = Значок папярэджання
+    .title = Сайт з уцечкай
+about-logins-list-item-breach-icon =
+    .title = Узламаны сайт
 
 ## Introduction screen
 
@@ -68,7 +74,7 @@ login-intro-heading = Шукаеце захаваныя лагіны? Налад
 login-intro-description = Калі вы захавалі свае лагіны ў { -brand-product-name } на іншай прыладзе, вось як атрымаць іх тут:
 login-intro-instruction-fxa = Стварыце альбо ўвайдзіце ў свой { -fxaccount-brand-name } на прыладзе, дзе захоўваюцца вашы лагіны
 login-intro-instruction-fxa-settings = Пераканайцеся, што вы ўстанавілі сцяжок Лагіны у наладах { -sync-brand-short-name }
-login-intro-instruction-faq = Каб атрымаць больш інфармацыі, наведайце <a data-l10n-name="faq">Пытанні і адказы</a> { -lockwise-brand-short-name }
+about-logins-intro-instruction-help = Для атрымання дадатковай даведкі наведайце <a data-l10n-name="help-link">{ -lockwise-brand-short-name } падтрымку</a>
 
 ## Login
 
@@ -78,10 +84,9 @@ login-item-delete-button = Сцерці
 login-item-origin-label = Адрас сайта
 login-item-origin =
     .placeholder = https://www.example.com
-login-item-open-site-button = Адкрыць
 login-item-username-label = Імя карыстальніка
-login-item-username =
-    .placeholder = name@example.com
+about-logins-login-item-username =
+    .placeholder = (без імя карыстальніка)
 login-item-copy-username-button-text = Капіяваць
 login-item-copied-username-button-text = Скапіявана!
 login-item-password-label = Пароль
@@ -135,3 +140,18 @@ breach-alert-text = З моманту апошняга абнаўлення да
 breach-alert-link = Даведацца больш пра гэту ўцечку.
 breach-alert-dismiss =
     .title = Закрыць гэта папярэджанне
+
+## Error Messages
+
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login = Запіс для { $loginTitle } з такім імем карыстальніка ўжо ёсць.
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = Запіс для { $loginTitle } з такім імем карыстальніка ўжо ёсць. <a data-l10n-name="duplicate-link">Перайсці да наяўнага запісу?</a>
+# This is a generic error message.
+about-logins-error-message-default = Пры спробе захавання гэтага пароля здарылася памылка.

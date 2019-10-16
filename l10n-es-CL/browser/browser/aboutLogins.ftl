@@ -36,8 +36,7 @@ menu-menuitem-preferences =
         [windows] Opciones
        *[other] Preferencias
     }
-menu-menuitem-feedback = Enviar comentario
-menu-menuitem-faq = Preguntas frecuentes
+about-logins-menu-menuitem-help = Ayuda
 menu-menuitem-android-app = { -lockwise-brand-short-name } para Android
 menu-menuitem-iphone-app = { -lockwise-brand-short-name } para iPhone e iPad
 
@@ -57,9 +56,16 @@ login-list-last-changed-option = Última modificación
 login-list-last-used-option = Último uso
 login-list-intro-title = No se encontraron conexiones
 login-list-intro-description = Cuando guardas una contraseña en { -brand-product-name }, esta será mostrada aquí.
+about-logins-login-list-empty-search-title = No se encontraron conexiones
+about-logins-login-list-empty-search-description = No hay resultados que coincidan con tu búsqueda.
 login-list-item-title-new-login = Nueva conexión
 login-list-item-subtitle-new-login = Ingresa tus credenciales de conexión
 login-list-item-subtitle-missing-username = (sin nombre de usuario)
+about-logins-list-item-warning-icon =
+    .alt = Ícono de advertencia
+    .title = Sitio web vulnerado
+about-logins-list-item-breach-icon =
+    .title = Sitio web vulnerado
 
 ## Introduction screen
 
@@ -67,7 +73,7 @@ login-intro-heading = ¿Buscas tus contraseñas guardadas? Configura { -sync-bra
 login-intro-description = Si guardaste tus conexiones en { -brand-product-name } en un dispositivo diferente, estas son las instrucciones para que las puedas tener también aquí:
 login-intro-instruction-fxa = Crea o conéctate a tu { -fxaccount-brand-name } en el dispositivo en que tienes guardadas tus conexiones
 login-intro-instruction-fxa-settings = Asegúrate de seleccionar la marca de conexiones en los ajustes de { -sync-brand-short-name }
-login-intro-instruction-faq = Visita las <a data-l10n-name="faq">preguntas frecuentes</a> de { -lockwise-brand-short-name } para más ayuda
+about-logins-intro-instruction-help = Visita el <a data-l10n-name="help-link">Soporte de { -lockwise-brand-short-name }</a> para más ayuda
 
 ## Login
 
@@ -77,10 +83,9 @@ login-item-delete-button = Eliminar
 login-item-origin-label = Dirección del sitio web
 login-item-origin =
     .placeholder = https://www.example.com
-login-item-open-site-button = Abrir sitio
 login-item-username-label = Nombre de usuario
-login-item-username =
-    .placeholder = nombre@example.com
+about-logins-login-item-username =
+    .placeholder = (sin nombre de usuario)
 login-item-copy-username-button-text = Copiar
 login-item-copied-username-button-text = ¡Copiado!
 login-item-password-label = Contraseña
@@ -109,6 +114,11 @@ master-password-reload-button =
 confirmation-dialog-cancel-button = Cancelar
 confirmation-dialog-dismiss-button =
     .title = Cancelar
+enable-password-sync-notification-message =
+    { PLATFORM() ->
+        [windows] ¿Quieres tener tus conexiones en todas partes en que usas { -brand-product-name }? Ve a Opciones de { -sync-brand-short-name } y selecciona la casilla de verificación de Conexiones.
+       *[other] ¿Quieres tener tus conexiones en todas partes en que usas { -brand-product-name }? Ve a Preferencias de { -sync-brand-short-name } y selecciona la casilla de verificación de Conexiones.
+    }
 enable-password-sync-preferences-button =
     .label =
         { PLATFORM() ->
@@ -129,3 +139,13 @@ breach-alert-text = Se filtraron o robaron contraseñas de este sitio desde la �
 breach-alert-link = Aprende más sobre esta filtración.
 breach-alert-dismiss =
     .title = Cerrar esta alerta
+
+## Error Messages
+
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login = Ya existe una entrada para { $loginTitle } con ese nombre de usuario.
+# This is a generic error message.
+about-logins-error-message-default = Ocurrió un error mientras se intentaba guardar esta contraseña.

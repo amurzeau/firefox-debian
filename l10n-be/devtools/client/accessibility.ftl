@@ -7,6 +7,7 @@
 
 accessibility-learn-more = Даведацца больш
 accessibility-text-label-header = Тэкставыя меткі і назвы
+accessibility-keyboard-header = Клавіятура
 
 ## Text entries that are used as text alternative for icons that depict accessibility isses.
 
@@ -41,3 +42,14 @@ accessibility-text-label-issue-interactive = Інтэрактыўныя элем
 accessibility-text-label-issue-optgroup-label = Выкарыстоўвайце атрыбут <code>label</code> для маркіроўкі элементаў <span>optgroup</span>. <a>Падрабязней</a>
 accessibility-text-label-issue-optgroup-label2 = Выкарыстоўвайце атрыбут <code>label</code> для маркіроўкі <span>optgroup</span>. <a>Падрабязней</a>
 accessibility-text-label-issue-toolbar = Панэлі інструментаў павінны быць маркіраваны, калі панэляў больш за адну. <a>Падрабязней</a>
+
+## Text entries for a paragraph used in the accessibility panel sidebar's checks section
+## that describe that currently selected accessible object has a keyboard accessibility
+## issue.
+
+accessibility-keyboard-issue-semantics = Факусіраваныя элементы павінны мець інтэрактыўную семантыку. <a>Даведацца больш</a>
+accessibility-keyboard-issue-tabindex = Пазбягайце выкарыстання атрыбута <code>tabindex </code> больш за нуль. <a>Даведацца больш</a>
+accessibility-keyboard-issue-action = Інтэрактыўныя элементы павінны мець магчымасць актывавацца з дапамогай клавіятуры. <a>Даведацца больш</a>
+accessibility-keyboard-issue-focusable = Інтэрактыўныя элементы павінны мець магчымасць атрымліваць фокус. <a>Падрабязней</a>
+accessibility-keyboard-issue-focus-visible = Факусіраваны элемент можа адсутнічаць у стылі фокуса. <a>Даведацца больш</a>
+accessibility-keyboard-issue-mouse-only = Націскныя элементы павінны мець магчымасць атрымліваць фокус і мець інтэрактыўную семантыку. <a>Даведацца больш</a>

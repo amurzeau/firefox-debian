@@ -27,6 +27,7 @@
 <!ENTITY compositionToolbarCmd.accesskey "C">
 <!ENTITY formattingToolbarCmd.label "Thanh công cụ định dạng">
 <!ENTITY formattingToolbarCmd.accesskey "F">
+<!ENTITY editmodeToolbarCmd.label "Sửa thanh công cụ kiểu cách">
 <!ENTITY editmodeToolbarCmd.accesskey "E">
 
 <!-- Format menu items -->
@@ -45,6 +46,7 @@
 <!ENTITY NormalModeTab.label "Bình thường">
 <!ENTITY NormalMode.label "Chế độ chỉnh sửa bình thường">
 <!ENTITY NormalMode.accesskey "N">
+<!ENTITY NormalMode.tooltip "Hiển thị đường viền bảng và neo được đặt tên">
 <!ENTITY AllTagsModeTab.label "Thẻ HTML">
 <!ENTITY AllTagsMode.label "Thẻ HTML">
 <!ENTITY AllTagsMode.accesskey "a">

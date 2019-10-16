@@ -256,6 +256,62 @@ applications-type-column =
 applications-action-column =
     .label = Akce
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = Soubor { $extension }
+applications-action-save =
+    .label = Uložit soubor
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Použít { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Použít { $app-name } (výchozí)
+applications-use-other =
+    .label = Použít jinou…
+applications-select-helper = Zvolit pomocnou aplikaci
+applications-manage-app =
+    .label = Podrobnosti o aplikaci…
+applications-always-ask =
+    .label = Vždy se zeptat
+applications-type-pdf = Přenositelný formát dokumentu (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Použít { $plugin-name } (v aplikaci { -brand-short-name })
+applications-preview-inapp =
+    .label = Zobrazit náhled v aplikaci { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = Obsah chráněný pomocí Digital Rights Management (DRM)
 play-drm-content =
     .label = Přehrávat obsah chráněný pomocí DRM
@@ -348,6 +404,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Psaním vyhledávat text na stránce
     .accesskey = x
+browsing-picture-in-picture-toggle-enabled =
+    .label = Povolit ovládání videa v režimu obraz v obraze
+    .accesskey = E
+browsing-picture-in-picture-learn-more = Zjistit více
 browsing-cfr-recommendations =
     .label = Doporučovat vhodná rozšíření pro navštívené stránky
     .accesskey = r
@@ -455,6 +515,12 @@ search-bar-shown =
     .label = Přidat na lištu vyhledávací pole
 search-engine-default-header = Výchozí vyhledávač
 search-engine-default-desc = Vyberte výchozí vyhledávač pro hledání z adresního řádku nebo vyhledávacího pole.
+search-engine-default-private-desc = Vyberte výchozí vyhledávač pro použití v režimu anonymního prohlížení.
+search-separate-default-engine =
+    .label = Použít tento vyhledávač v režimu anonymního prohlížení
+    .accesskey = u
+search-suggestions-header = Našeptávání
+search-suggestions-desc = Zvolte si, zda a jak má prohlížeč zobrazovat návrhy od vyhledávače.
 search-suggestions-option =
     .label = Našeptávat vyhledávání
     .accesskey = n
@@ -468,6 +534,7 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Našeptávat vyhledávání v adresním řádku nad stránkami z historie prohlížení
+suggestions-addressbar-settings = Nastavit našeptávání z historie prohlížení, záložek a otevřených panelů
 search-suggestions-cant-show = Návrhy vyhledávání se nebudou adresním řádku zobrazovat, protože jste aplikaci { -brand-short-name } nastavili, aby si nikdy nepamatovala historii.
 search-one-click-header = Vyhledávání jedním klepnutím
 search-one-click-desc = Vyberte další vyhledávače, které se zobrazí v nabídce adresního řádku a vyhledávacího pole.
@@ -504,6 +571,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Vezměte si web s sebou
 sync-signedout-description = Synchronizujte své záložky, historii, panely, hesla, doplňky a předvolby ve všech svých zařízeních.
 sync-signedout-account-title = Propojit s účtem Firefoxu
@@ -524,11 +595,17 @@ sync-mobile-promo = Stáhněte si Firefox pro <img data-l10n-name="android-icon
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = Změnit profilový obrázek
 sync-disconnect =
     .label = Odpojit…
     .accesskey = d
+sync-sign-out =
+    .label = Odhlásit se…
+    .accesskey = O
 sync-manage-account = Spravovat účet
     .accesskey = S
 sync-signedin-unverified = Účet { $email } není ověřen.
@@ -544,6 +621,48 @@ sync-sign-in =
     .accesskey = i
 sync-signedin-settings-header = Nastavení synchronizace
 sync-signedin-settings-desc = Vyberte, co má { -brand-short-name } na vašich zařízeních synchronizovat.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Synchronizace zapnuta
+prefs-syncing-off = Synchronizace vypnuta
+prefs-sync-setup =
+    .label = Nastavit { -sync-brand-short-name }…
+    .accesskey = N
+prefs-sync-offer-setup-label = Synchronizujte své záložky, historii, panely, hesla, doplňky a předvolby ve všech svých zařízeních.
+prefs-sync-now =
+    .labelnotsyncing = Synchronizovat
+    .accesskeynotsyncing = S
+    .labelsyncing = Probíhá synchronizace…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = Máte zapnutou synchronizaci následujících dat:
+sync-currently-syncing-bookmarks = Záložky
+sync-currently-syncing-history = Historie
+sync-currently-syncing-tabs = Otevřené panely
+sync-currently-syncing-logins-passwords = Přihlašovací údaje
+sync-currently-syncing-addresses = Adresy
+sync-currently-syncing-creditcards = Platební karty
+sync-currently-syncing-addons = Doplňky
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Možnosti
+       *[other] Předvolby
+    }
+sync-change-options =
+    .label = Změnit…
+    .accesskey = Z
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = Nastavení synchronizace
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Uložit
+    .buttonaccesskeyaccept = U
+    .buttonlabelextra2 = Zrušit synchronizaci…
+    .buttonaccesskeyextra2 = Z
 sync-engine-bookmarks =
     .label = Záložky
     .accesskey = Z
@@ -558,6 +677,10 @@ sync-engine-logins =
     .label = Přihlašovací údaje
     .tooltiptext = Uložená uživatelská jména a hesla
     .accesskey = l
+sync-engine-logins-passwords =
+    .label = Přihlašovací údaje
+    .tooltiptext = Uložená uživatelská jména a hesla
+    .accesskey = P
 sync-engine-addresses =
     .label = Adresy
     .tooltiptext = Uložené poštovní adresy (pouze na počítači)
@@ -582,6 +705,9 @@ sync-engine-prefs =
             [windows] M
            *[other] P
         }
+
+## The device name controls.
+
 sync-device-name-header = Název zařízení
 sync-device-name-change =
     .label = Přejmenovat toto zařízení…
@@ -614,6 +740,10 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Generovat a navrhovat silná hesla
     .accesskey = G
+forms-breach-alerts =
+    .label = Upozorňovat na hesla uložená pro servery, kde došlo k úniku dat
+    .accesskey = ú
+forms-breach-alerts-learn-more-link = Zjistit více
 forms-fill-logins-and-passwords =
     .label = Automaticky vyplňovat přihlašovací údaje
     .accesskey = y
@@ -626,6 +756,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Změnit hlavní heslo…
     .accesskey = m
+forms-master-pw-fips-title = Momentálně jste v režimu FIPS, který vyžaduje neprázdné hlavní heslo.
+forms-master-pw-fips-desc = Neúspěšná změna hesla
 
 ## Privacy Section - History
 
@@ -694,9 +826,9 @@ sitedata-block-desc = Blokovat
 sitedata-option-block-trackers =
     .label = Cookies sledovacích prvků třetích stran
 sitedata-option-block-cross-site-trackers =
-    .label = Sledující prvky
+    .label = Sledovací prvky
 sitedata-option-block-cross-site-and-social-media-trackers =
-    .label = Sledující prvky, např. sociálních sítí
+    .label = Sledovací cookies, např. sociálních sítí
 sitedata-option-block-unvisited =
     .label = Cookies z dosud nenavštívených stránek
 sitedata-option-block-all-third-party =
@@ -731,8 +863,9 @@ addressbar-suggestions-settings = Nastavit našeptávání vyhledávače
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Blokování obsahu
-content-blocking-enhanced-tracking-protection = Rozšířená ochrana proti sledování
 content-blocking-section-description = Chraňte své soukromí při prohlížení internetu. Zablokujte neviditelný obsah, který vás sleduje na navštívených stránkách a vytváří profil vašeho chování. Blokování takového obsahu navíc může zrychlit načítání stránek.
+content-blocking-enhanced-tracking-protection = Rozšířená ochrana proti sledování
+content-blocking-section-top-level-description = Sledovací prvky sbírají informace, co a kde na internetu děláte, jaké máte návyky a co vás zajímá. { -brand-short-name } blokuje mnoho takových prvků i dalších škodlivých skriptů.
 content-blocking-learn-more = Zjistit více
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -750,25 +883,42 @@ content-blocking-strict-description = Více blokovaného obsahu zvyšuje pravdě
 content-blocking-custom-desc = Sami vyberte, co a kde se má blokovat.
 content-blocking-private-trackers = Sledovací prvky blokovány v anonymních oknech
 content-blocking-third-party-cookies = Cookies sledovacích prvků třetích stran blokovány ve všech oknech
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Standardní
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = Přísná
+    .accesskey = P
+enhanced-tracking-protection-setting-custom =
+    .label = Vlastní
+    .accesskey = V
+
+
+
 content-blocking-etp-standard-desc = Vyvážená ochrana a výkon. Neovlivní správné načítání webových stránek.
 content-blocking-etp-strict-desc = Silnější ochrana. Může omezit fungování některých stránek.
-content-blocking-etp-custom-desc = Vyberte sledující prvky a skripty, které chcete zablokovat.
+content-blocking-etp-custom-desc = Vyberte sledovací prvky a skripty, které chcete zablokovat.
 content-blocking-private-windows = Sledující obsah v anonymních oknech
 content-blocking-cross-site-tracking-cookies = Sledovací cookies
 content-blocking-social-media-trackers = Sledující prvky sociálních sítí
 content-blocking-all-cookies = Všechny cookies
 content-blocking-unvisited-cookies = Cookies z dosud nenavštívených stránek
 content-blocking-all-windows-trackers = Sledovací prvky blokovány ve všech oknech
-content-blocking-all-windows-tracking-content = Sledující obsah ve všech oknech
+content-blocking-all-windows-tracking-content = Sledující obsah blokován ve všech oknech
 content-blocking-all-third-party-cookies = Všechny cookies třetích stran blokovány vždy
-content-blocking-cryptominers = Těžba kryptoměn blokována ve všech oknech
-content-blocking-fingerprinters = Vytváření otisku prohlížeče blokováno ve všech oknech
+content-blocking-cryptominers = Těžba kryptoměn
+content-blocking-fingerprinters = Vytváření otisku prohlížeče
 content-blocking-warning-title = Pozor!
 content-blocking-warning-description = Blokování obsahu může omezit fungování některých stránek. Pro stránky, kterým důvěřujete, ho můžete snadno vypnout.
 content-blocking-learn-how = Jak na to?
-content-blocking-etp-warning-description = Blokování sledujícího obsahu může ovlivnit fungování některých stránek. Pro načtení veškerého obsahu obnovte stránku s povolenými sledujícími prvky.
+content-blocking-etp-warning-description = Blokování sledujícího obsahu může ovlivnit fungování některých stránek. Pro načtení veškerého obsahu obnovte stránku s povolenými sledovacími prvky.
 content-blocking-warning-learn-how = Jak na to
-content-blocking-reload-description = Aby se změny projevily, obnovte vaše panely.
+content-blocking-reload-description = Aby se změny projevily, obnovte své panely.
 content-blocking-reload-tabs-button =
     .label = Obnovit všechny panely
     .accesskey = O

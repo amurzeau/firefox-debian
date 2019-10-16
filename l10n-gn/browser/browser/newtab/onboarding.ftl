@@ -21,6 +21,11 @@ onboarding-button-label-get-started = Ñepyrũ
 onboarding-welcome-header = Eg̃uahẽporãite { -brand-short-name }-pe
 onboarding-welcome-body = Eguerekóma kundaha.<br/>Eikuaa opamba’e { -brand-product-name } rehegua.
 onboarding-welcome-learn-more = Eikuaave mba’eporã rehegua.
+onboarding-welcome-modal-get-body = Erekóma kundahára. <br/>Ko’ág̃a eipurukuaánte { -brand-product-name }.
+onboarding-welcome-modal-supercharge-body = Emyanyhẽrasa ne ñemigua ñemo’ã.
+onboarding-welcome-modal-privacy-body = Erekóma kundahára. Ñamoĩvéta ñemigua ñemo’ã.
+onboarding-welcome-modal-family-learn-more = Eñemomaranduve apopyre pehẽnguére { -brand-product-name }.
+onboarding-welcome-form-header = Eñepyrũ ápe
 onboarding-join-form-header = Ejuaju { -brand-product-name } rehe
 onboarding-join-form-body = Eñepyrũ hag̃ua, ehai ne ñanduti veve kundaharape.
 onboarding-join-form-email =
@@ -64,6 +69,12 @@ onboarding-benefit-privacy-title = Ñemigua añetetéva
 # make and do. We take less data. We keep it safe. And we make sure that we are
 # transparent about how we use it."
 onboarding-benefit-privacy-text = Rojapóva guive omomba’e mba’ekuaarã nemba’éva: E’u’ive. Eguereko tekorosãme. Kañygua’ỹre.
+onboarding-benefit-sync-title = { -sync-brand-short-name }
+onboarding-benefit-sync-text = Take your bookmarks, passwords, history, and more everywhere you use { -brand-product-name }.
+onboarding-benefit-monitor-title = { -monitor-brand-short-name }
+onboarding-benefit-monitor-text = Og̃uahẽta ndéve marandu nemba’etéva mba’ekuaarã ñembyai oikóramo.
+onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }{ -lockwise-brand-short-name }
+onboarding-benefit-lockwise-text = Eñangareko ñe’ẽñemi oñemo’ãva ha oku’ekuaávare.
 
 ## These strings belong to the individual onboarding messages.
 

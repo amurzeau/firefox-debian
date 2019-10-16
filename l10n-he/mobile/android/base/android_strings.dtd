@@ -23,16 +23,23 @@
 <!ENTITY firstrun_sync_title "Sync">
 <!ENTITY updatednewfirstrun_sync_title "חשבון">
 <!ENTITY firstrun_sync_message2 "המשך מהמקום שבו הפסקת.">
+<!ENTITY firstrun_sync_message3 "סנכרון הסימניות, ההיסטוריה והססמאות שלך לטלפון שלך.">
 <!ENTITY firstrun_sync_subtext2 "ניתן להשתמש ב־Sync כדי למצוא סימניות, ססמאות ודברים נוספים ששמרת ב־&brandShortName; בכל המכשירים שלך.">
 <!ENTITY newfirstrun_sync_subtext "סינכרון של הדברים שנשמרים בנייד אל Firefox במחשב, בצורה פרטית ומאובטחת.">
 <!ENTITY updatednewfirstrun_sync_subtext "עליך להתחבר לחשבון שלך כי להפיק את המרב מ־&brandShortName;">
+<!ENTITY firstrun_sendtab_title "שליחת לשונית">
+<!ENTITY firstrun_sendtab_message "שיתוף לשוניות מהטלפון הנייד למחשב השולחני — באופן מיידי.">
 <!ENTITY firstrun_signin_message "להישאר בעניינים, קדימה">
 <!ENTITY firstrun_signin_button "כניסה אל Sync">
 <!ENTITY newfirstrun_signin_button "הפעלת Sync">
 <!ENTITY updatednewfirstrun_signin_button "כניסה ל־&brandShortName;">
-<!ENTITY  onboard_start_button_browser "התחלת גלישה">
+<!ENTITY onboard_start_button_browser "התחלת גלישה">
 <!ENTITY firstrun_button_notnow "לא כרגע">
 <!ENTITY firstrun_button_next "הבא">
+
+<!ENTITY firstrun_signin_button2 "כניסה">
+
+<!ENTITY firstrun_signup_button "הרשמה">
 
 <!ENTITY firstrun_tabqueue_title "קישורים">
 
@@ -98,7 +105,7 @@
      used as a label in a toast. It is the verb "to bookmark", not
      the noun "a bookmark". -->
 <!ENTITY bookmark_already_added "כבר נוצרה סימנייה">
-<!ENTITY bookmark_removed "סימנייה נמחקה">
+<!ENTITY bookmark_removed "הסימנייה הוסרה">
 <!ENTITY bookmark_updated "סימניה עודכנה">
 <!ENTITY bookmark_options "אפשרויות">
 <!ENTITY bookmark_save "שמירה">
@@ -243,7 +250,7 @@
 <!ENTITY pref_category_home_add_ons "תוספות">
 <!ENTITY pref_home_updates2 "עדכוני תוכן">
 <!ENTITY pref_home_updates_enabled "מופעל">
-<!ENTITY pref_home_updates_wifi "על רשתות Wi-Fi בלבד">
+<!ENTITY pref_home_updates_wifi "רק בחיבורי Wi-Fi">
 <!ENTITY pref_category_home_homepage "דף בית">
 <!-- Localization note (home_homepage_every_new_tab): The user will see a switch to determine if the
      home page will be use in every new tab. -->
@@ -389,7 +396,7 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY pref_use_system_font_size "שימוש בגודל הגופן של המערכת">
 <!ENTITY pref_use_system_font_size_summary "שינוי גודל תוכן האתר בהתאם לגודל גופן המערכת">
 
-<!ENTITY pref_media_autoplay_enabled "אפשר הפעלה אוטומטית">
+<!ENTITY pref_media_autoplay_enabled "לאפשר ניגון אוטומטי">
 <!ENTITY pref_media_autoplay_allow "לאפשר ניגון אוטומטי">
 <!ENTITY pref_media_autoplay_block "לחסום ניגון אוטומטי">
 <!ENTITY pref_zoom_force_enabled "תמיד להפעיל תקריב">
@@ -404,7 +411,7 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY pref_sync2 "כניסה">
 <!ENTITY pref_sync_summary2 "סנכרון הלשוניות, הסימניות, הכניסות וההיסטוריה שלך">
 <!ENTITY pref_search_suggestions "הצגת הצעות חיפוש">
-<!ENTITY pref_history_search_suggestions "הצגת היסטורית חיפוש">
+<!ENTITY pref_history_search_suggestions "הצגת היסטוריית חיפוש">
 <!ENTITY pref_import_options "אפשרויות יבוא">
 <!ENTITY pref_import_android_summary "יבוא סימניות והיסטוריה מהדפדפן המובנה">
 <!-- Localization note (pref_private_data_openTabs): Open tabs is an option in
@@ -425,13 +432,13 @@ shown from Android O while a tab is being queued.-->
     Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
     and instruct users to tap on the "Browser app" option on that settings screen to choose a default browser app. -->
 <!ENTITY default_browser_system_settings_toast "נא ללחוץ על ישומון הדפדפן ולבחור את &brandShortName;">
-<!ENTITY pref_about_firefox "מידע על &brandShortName;">
+<!ENTITY pref_about_firefox "פרטים על &brandShortName;">
 <!ENTITY pref_vendor_faqs "תשובות לשאלות נפוצות">
 <!ENTITY pref_vendor_feedback "שליחת משוב">
 
 <!ENTITY pref_dialog_set_default "הגדרה כברירת מחדל">
 <!ENTITY pref_dialog_default "ברירת מחדל">
-<!ENTITY pref_dialog_remove "מחיקה">
+<!ENTITY pref_dialog_remove "הסרה">
 <!ENTITY pref_dialog_activitystream_header_content "תכנים נוספים">
 <!ENTITY pref_dialog_activitystream_recentBookmarks "סימניות אחרונות">
 <!ENTITY pref_dialog_activitystream_visited "ביקורים קודמים">
@@ -463,7 +470,7 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY datareporting_fhr_summary2 "משתף נתונים עם &vendorShortName; על בריאות הדפדפן ועוזר לך להבין את ביצועי הדפדפן שלך">
 <!ENTITY datareporting_telemetry_title "Telemetry">
 <!ENTITY datareporting_telemetry_summary "משתף מידע על ביצועים, חומרה, שימוש והתאמות אישיות על הדפדפן שלך עם &vendorShortName; כדי לסייע לנו בשיפור &brandShortName;">
-<!ENTITY datareporting_crashreporter_summary "‏&brandShortName; שולח דיווחי קריסות כדי לעזור ל־&vendorShortName; להפוך את הדפדפן שלך ליציב ומאובטח יותר">
+<!ENTITY datareporting_crashreporter_summary "‏&brandShortName; שולח דיווחי קריסה כדי לסייע ל־&vendorShortName; להפוך את הדפדפן שלך ליציב ומאובטח יותר">
 <!-- Localization note (datareporting_crashreporter_title_short) : This string matches
      (crashReporterSection.label) in en-US/chrome/browser/preferences/advanced.dtd.-->
 <!ENTITY datareporting_crashreporter_title_short "מדווח הקריסות">
@@ -532,7 +539,7 @@ shown from Android O while a tab is being queued.-->
 
 <!ENTITY contextmenu_open_new_tab "פתיחה בלשונית חדשה">
 <!ENTITY contextmenu_open_private_tab "פתיחה בלשונית פרטית">
-<!ENTITY contextmenu_remove "מחיקה">
+<!ENTITY contextmenu_remove "הסרה">
 <!ENTITY contextmenu_add_page_shortcut "הוספת קיצור דרך לדף">
 <!ENTITY contextmenu_set_as_homepage "הגדרה כדף הבית">
 <!ENTITY contextmenu_share "שיתוף">
@@ -595,7 +602,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_location "מיקום">
 <!ENTITY bookmark_edit_keyword "מילת מפתח">
 <!ENTITY bookmark_select_folder "בחירת תיקייה">
-
 <!ENTITY bookmark_edit_undo "ביטול">
 
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
@@ -629,7 +635,7 @@ shown from Android O while a tab is being queued.-->
 
 <!-- Localization note (home_title): This string should be kept in sync
      with the page title defined in aboutHome.dtd -->
-<!ENTITY home_title "דף הבית של &brandShortName;">
+<!ENTITY home_title "מסך הבית של &brandShortName;">
 <!ENTITY home_history_title "היסטוריה">
 <!ENTITY home_synced_devices_smartfolder "מכשירים מסונכרנים">
 <!ENTITY home_synced_devices_number "&formatD; מכשירים">
@@ -878,6 +884,17 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_title "‏‏זמין במצב לא מקוון">
 <!ENTITY helper_triple_readerview_open_message "ניתן להוסיף סימנייה של פריטי תצוגת הקריאה כדי לקרוא אותם ללא חיבור לאינטרנט.">
 <!ENTITY helper_triple_readerview_open_button "הוספה לסימניות">
+
+<!-- LOCALIZATION NOTE (activity_stream_signin_title, activity_stream_signin_description, activity_stream_signup_button,
+activity_stream_signin_prompt, activity_stream_signin_prompt_button):
+- These labels are shown in the Activity Stream recommending the user to sign in. -->
+<!ENTITY activity_stream_signin_title "ברוכים הבאים אל &brandShortName;">
+<!ENTITY activity_stream_signin_description "סנכרון סימניות, ססמאות ועוד עם חשבון ה־Firefox שלך.">
+<!ENTITY activity_stream_signin_button "כניסה">
+
+<!ENTITY activity_stream_signup_button "הרשמה">
+<!ENTITY activity_stream_signin_prompt "כבר יש לך חשבון?">
+<!-- LOCALIZATION NOTE (activity_stream_signin_prompt_button): To be used in continuation of activity_stream_signin_prompt. -->
 
 <!ENTITY activity_stream_topsites "אתרים מובילים">
 <!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->

@@ -253,6 +253,62 @@ applications-type-column =
 applications-action-column =
     .label = Åtgärd
     .accesskey = Å
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension }-fil
+applications-action-save =
+    .label = Spara fil
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Använd { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Använd { $app-name } (standard)
+applications-use-other =
+    .label = Välj program…
+applications-select-helper = Välj hjälpprogram
+applications-manage-app =
+    .label = Programdetaljer…
+applications-always-ask =
+    .label = Fråga alltid
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Använd { $plugin-name } (i { -brand-short-name })
+applications-preview-inapp =
+    .label = Förhandsgranska i { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = Digital Rights Management (DRM) innehåll
 play-drm-content =
     .label = Spela DRM-kontrollerat innehåll
@@ -339,6 +395,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Sök efter text när jag börjar skriva
     .accesskey = x
+browsing-picture-in-picture-toggle-enabled =
+    .label = Aktivera videokontroller för bild-i-bild
+    .accesskey = A
+browsing-picture-in-picture-learn-more = Läs mer
 browsing-cfr-recommendations =
     .label = Rekommendera tillägg när du surfar
     .accesskey = R
@@ -445,6 +505,12 @@ search-bar-shown =
     .label = Lägg till sökfältet i verktygsfältet
 search-engine-default-header = Standard sökmotor
 search-engine-default-desc = Välj standardsökmotor som ska användas i adressfältet och sökfältet.
+search-engine-default-private-desc = Välj standardsökmotor som ska användas i privata fönster.
+search-separate-default-engine =
+    .label = Använd den här sökmotorn i privata fönster
+    .accesskey = A
+search-suggestions-header = Sökförslag
+search-suggestions-desc = Välj hur förslag från sökmotorer ska visas.
 search-suggestions-option =
     .label = Ge sökförslag
     .accesskey = s
@@ -458,6 +524,7 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Visa sökförslag före surfhistoriken i adressfältets resultat
+suggestions-addressbar-settings = Ändra inställningar för surfhistorik, bokmärken och flikförslag
 search-suggestions-cant-show = Sökförslag kommer inte att visas i adressfältet eftersom du har konfigurerat { -brand-short-name } att aldrig spara historik.
 search-one-click-header = Sökfältets sökmotorer
 search-one-click-desc = Välj alternativa sökmotorer som visas under adressfältet och sökfältet när du börjar skriva in ett nyckelord.
@@ -494,6 +561,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Ta med dig webben
 sync-signedout-description = Synkronisera dina bokmärken, historik, flikar, lösenord, tillägg och inställningar på alla dina enheter.
 sync-signedout-account-title = Anslut med ett { -fxaccount-brand-name }
@@ -514,11 +585,17 @@ sync-mobile-promo = Hämta Firefox för <img data-l10n-name="android-icon"/> <a 
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = Ändra profilbild
 sync-disconnect =
     .label = Koppla från…
     .accesskey = f
+sync-sign-out =
+    .label = Logga ut…
+    .accesskey = g
 sync-manage-account = Hantera konto
     .accesskey = o
 sync-signedin-unverified = { $email } är inte verifierat.
@@ -534,6 +611,48 @@ sync-sign-in =
     .accesskey = g
 sync-signedin-settings-header = Sync-inställningar
 sync-signedin-settings-desc = Välj vad du vill synkronisera på dina enheter med { -brand-short-name }.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Synkronisering: PÅ
+prefs-syncing-off = Synkronisering: AV
+prefs-sync-setup =
+    .label = Konfigurera  { -sync-brand-short-name }…
+    .accesskey = K
+prefs-sync-offer-setup-label = Synkronisera dina bokmärken, historik, flikar, lösenord, tillägg och inställningar på alla dina enheter.
+prefs-sync-now =
+    .labelnotsyncing = Synkronisera nu
+    .accesskeynotsyncing = n
+    .labelsyncing = Synkroniserar…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = Du synkroniserar för närvarande dessa objekt:
+sync-currently-syncing-bookmarks = Bokmärken
+sync-currently-syncing-history = Historik
+sync-currently-syncing-tabs = Öppna flikar
+sync-currently-syncing-logins-passwords = Inloggningar och lösenord
+sync-currently-syncing-addresses = Adresser
+sync-currently-syncing-creditcards = Kreditkort
+sync-currently-syncing-addons = Tillägg
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Inställningar
+       *[other] Inställningar
+    }
+sync-change-options =
+    .label = Ändra…
+    .accesskey = n
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = Välj vad som ska synkas
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Spara ändringar
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = Koppla ner…
+    .buttonaccesskeyextra2 = K
 sync-engine-bookmarks =
     .label = Bokmärken
     .accesskey = B
@@ -548,6 +667,10 @@ sync-engine-logins =
     .label = Inloggningar
     .tooltiptext = Användarnamn och lösenord du har sparat
     .accesskey = l
+sync-engine-logins-passwords =
+    .label = Inloggningar och lösenord
+    .tooltiptext = Användarnamn och lösenord du har sparat
+    .accesskey = n
 sync-engine-addresses =
     .label = Adresser
     .tooltiptext = Postadresser du har sparat (endast skrivbord)
@@ -568,6 +691,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Allmänna, sekretess och säkerhetsinställningar du har ändrat
     .accesskey = n
+
+## The device name controls.
+
 sync-device-name-header = Enhetens namn
 sync-device-name-change =
     .label = Ändra enhetsnamn…
@@ -600,6 +726,10 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Föreslå och skapa starka lösenord
     .accesskey = r
+forms-breach-alerts =
+    .label = Visa varningar om lösenord för webbplatser med intrång
+    .accesskey = V
+forms-breach-alerts-learn-more-link = Läs mer
 forms-fill-logins-and-passwords =
     .label = Autofyll inloggningar och lösenord
     .accesskey = A
@@ -612,6 +742,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Byt huvudlösenord…
     .accesskey = B
+forms-master-pw-fips-title = Du är för närvarande i FIPS-läge. FIPS kräver ett huvudlösenord.
+forms-master-pw-fips-desc = Ändring av lösenordet misslyckades
 
 ## Privacy Section - History
 
@@ -717,8 +849,9 @@ addressbar-suggestions-settings = Ändra inställningar för förslag från sök
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Innehållsblockering
-content-blocking-enhanced-tracking-protection = Förbättrat spårningsskydd
 content-blocking-section-description = Skydda din integritet medan du surfar. Blockera osynligt innehåll som spårar de webbplatser du besöker och profilerar dig. Att blockera något av detta innehåll kan göra att sidor laddas snabbare.
+content-blocking-enhanced-tracking-protection = Förbättrat spårningsskydd
+content-blocking-section-top-level-description = Trackers följer dig runt online för att samla in information om dina surfvanor och intressen. { -brand-short-name } blockerar många av dessa trackers och andra skadliga skript.
 content-blocking-learn-more = Läs mer
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -736,16 +869,33 @@ content-blocking-strict-description = Starkare skydd, kan orsaka fel på vissa w
 content-blocking-custom-desc = Välj vad du vill blockera.
 content-blocking-private-trackers = Kända trackers endast i privata fönster
 content-blocking-third-party-cookies = Spårningskakor från tredje part
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Standard
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = Strikt
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = Anpassad
+    .accesskey = A
+
+
+
 content-blocking-etp-standard-desc = Balanserad för skydd och prestanda. Sidor laddas normalt.
 content-blocking-etp-strict-desc = Starkare skydd, men kan leda till att vissa webbplatser eller innehåll inte fungerar.
 content-blocking-etp-custom-desc = Välj vilka trackers och skript som ska blockeras.
-content-blocking-private-windows = Spåra innehåll i privat fönster
+content-blocking-private-windows = Spårningsinnehåll i privat fönster
 content-blocking-cross-site-tracking-cookies = Globala spårningskakor
 content-blocking-social-media-trackers = Sociala media-trackers
 content-blocking-all-cookies = Alla kakor
 content-blocking-unvisited-cookies = Kakor från obesökta webbplatser
 content-blocking-all-windows-trackers = Kända trackers i alla fönster
-content-blocking-all-windows-tracking-content = Spåra innehåll i alla fönster
+content-blocking-all-windows-tracking-content = Spårningsinnehåll i alla fönster
 content-blocking-all-third-party-cookies = Alla kakor från tredje part
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters

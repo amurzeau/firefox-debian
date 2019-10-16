@@ -56,7 +56,7 @@ serviceworker-worker-status-stopped = Zatrzymany
 serviceworker-worker-status-registering = Rejestrowanie…
 # Text displayed when no service workers are visible for the current page. Clicking on the
 # link will open https://developer-mozilla-org/docs/Web/API/Service_Worker_API/Using_Service_Workers
-serviceworker-empty-intro = Należy najpierw zarejestrować wątek usługowy, aby mógł być tutaj wyświetlany. <a>Więcej informacji</a>.
+serviceworker-empty-intro = Należy najpierw zarejestrować wątek usługowy, aby mógł być tutaj wyświetlany. <a>Więcej informacji</a>
 # Text displayed when there are no Service Workers to display for the current page,
 # introducing hints to debug Service Worker issues.
 serviceworker-empty-suggestions = Kilka sugestii, których warto spróbować, jeśli obecna strona powinna mieć wątek usługowy:
@@ -69,6 +69,19 @@ serviceworker-empty-suggestions-debugger = Przejrzyj rejestrację wątków usłu
 # Suggestion to go to about:debugging in order to see Service Workers for all domains.
 # Clicking on the link will open about:debugging in a new tab.
 serviceworker-empty-suggestions-aboutdebugging = Przejrzyj wątki usługowe z innych domen. <a>Otwórz stronę about:debugging</a>
+# Header for the Manifest page when we have an actual manifest
+manifest-view-header = Manifest aplikacji
+# Header for the Manifest page when there's no manifest to inspect
+# The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
+manifest-empty-intro = Należy najpierw dodać manifest aplikacji internetowej, aby mogła być tutaj wyświetlana. <a>Więcej informacji</a>
+# Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
+manifest-item-warnings = Błędy i ostrzeżenia
+# Header for the Identity section of Manifest inspection displayed in the application panel.
+manifest-item-identity = Tożsamość
+# Header for the Presentation section of Manifest inspection displayed in the application panel.
+manifest-item-presentation = Prezentacja
+# Header for the Icon section of Manifest inspection displayed in the application panel.
+manifest-item-icons = Ikony
 # Text displayed while we are loading the manifest file
 manifest-loading = Wczytywanie manifestu…
 # Text displayed when the manifest has been successfully loaded
@@ -77,3 +90,22 @@ manifest-loaded-ok = Wczytano manifest.
 manifest-loaded-error = Wystąpił błąd podczas wczytywania manifestu:
 # Text displayed when the page has no manifest available
 manifest-non-existing = Nie odnaleziono manifestu do zbadania.
+# Text displayed when the page has a manifest embedded in a Data URL and
+# thus we cannot link to it.
+manifest-json-link-data-url = Manifest jest osadzony w adresie URL typu „data:”.
+# Sidebar navigation item for Manifest sidebar item section
+sidebar-item-manifest = Manifest
+    .alt = Ikona manifestu
+    .title = Manifest
+# Sidebar navigation item for Service Workers sidebar item section
+sidebar-item-service-workers = Wątki usługowe
+    .alt = Ikona wątków usługowych
+    .title = Wątki usługowe
+# Text for the ALT and TITLE attributes of the warning icon
+icon-warning =
+    .alt = Ikona ostrzeżenia
+    .title = Ostrzeżenie
+# Text for the ALT and TITLE attributes of the error icon
+icon-error =
+    .alt = Ikona błędu
+    .title = Błąd

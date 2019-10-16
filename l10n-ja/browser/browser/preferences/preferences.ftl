@@ -306,6 +306,75 @@ applications-action-column =
     .label = 取り扱い方法
     .accesskey = A
 
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } ファイル
+applications-action-save =
+    .label = ファイルを保存
+
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = { $app-name } を使用
+
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = { $app-name } を使用 (標準設定)
+
+applications-use-other =
+    .label = 他のプログラムを選択...
+applications-select-helper = プログラムの選択
+
+applications-manage-app =
+    .label = プログラムの管理...
+applications-always-ask =
+    .label = 毎回確認する
+applications-type-pdf = PDF 文書 (PDF)
+
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = { $plugin-name } を使用 ({ -brand-short-name } 内で表示)
+applications-preview-inapp =
+    .label = { -brand-short-name } でプレビュー表示
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+
+applications-action-save-label =
+    .value = { applications-action-save.label }
+
+applications-use-app-label =
+    .value = { applications-use-app.label }
+
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 drm-content-header = デジタル著作権管理 (DRM) コンテンツ
 
 play-drm-content =
@@ -424,6 +493,12 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = キー入力時に検索を開始する
     .accesskey = x
+
+browsing-picture-in-picture-toggle-enabled =
+    .label = ピクチャーインピクチャーの動画の操作を有効にする
+    .accesskey = E
+
+browsing-picture-in-picture-learn-more = 詳細
 
 browsing-cfr-recommendations =
     .label = おすすめの拡張機能を紹介する
@@ -546,6 +621,14 @@ search-bar-shown =
 search-engine-default-header = 既定の検索エンジン
 search-engine-default-desc = アドレスバーと検索バーで使用される既定の検索エンジンを選択してください。
 
+search-engine-default-private-desc = プライベートウィンドウで使用する検索エンジンを選択してください。
+search-separate-default-engine =
+    .label = この検索エンジンをプライベートウィンドウで使用する
+    .accesskey = U
+
+search-suggestions-header = 検索候補
+search-suggestions-desc = 検索エンジンからの検索候補の表示方法を選択してください。
+
 search-suggestions-option =
     .label = 検索候補を使用する
     .accesskey = s
@@ -561,6 +644,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = アドレスバーの入力候補は、検索候補を閲覧履歴より先に表示する
+
+suggestions-addressbar-settings = ブラウジング履歴、ブックマーク、タブの候補の設定を変更
 
 search-suggestions-cant-show = 履歴を保存しない設定となっているため、ロケーションバーに検索候補が表示されません。
 
@@ -606,6 +691,9 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = ウェブを持ち歩こう
 sync-signedout-description = ブックマークやページの表示履歴、タブ、パスワード、アドオン、設定を、お持ちのすべての端末間で同期できます。
 
@@ -629,12 +717,18 @@ sync-mobile-promo = Firefox for <img data-l10n-name="android-icon"/> <a data-l10
 
 ## Sync Section - Signed in
 
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = プロフィール写真を変更します
 
 sync-disconnect =
     .label = 切断...
     .accesskey = D
+
+sync-sign-out =
+    .label = ログアウト...
+    .accesskey = g
 
 sync-manage-account = アカウントの管理
     .accesskey = o
@@ -657,6 +751,50 @@ sync-sign-in =
 sync-signedin-settings-header = Sync 設定
 sync-signedin-settings-desc = 端末上の同期して { -brand-short-name } で使用するものを選んでください。
 
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = 同期: オン
+
+prefs-syncing-off = 同期: オフ
+
+prefs-sync-setup =
+    .label = { -sync-brand-short-name } をセットアップ...
+    .accesskey = S
+
+prefs-sync-offer-setup-label = ブックマーク、履歴、タブ、パスワード、アドオン、設定をあなたの端末すべてに同期化します。
+
+prefs-sync-now =
+    .labelnotsyncing = 今すぐ同期
+    .accesskeynotsyncing = N
+    .labelsyncing = 同期中...
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = これらの項目を同期しています:
+
+sync-currently-syncing-bookmarks = ブックマーク
+sync-currently-syncing-history = 履歴
+sync-currently-syncing-tabs = 開いたタブ
+sync-currently-syncing-logins-passwords = ログイン情報とパスワード
+sync-currently-syncing-addresses = 所在地フォーム
+sync-currently-syncing-creditcards = クレジットカード
+sync-currently-syncing-addons = アドオン
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] オプション
+       *[other] 個人設定
+    }
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = 同期する項目を選択
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = 変更を保存
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = 切断...
+    .buttonaccesskeyextra2 = D
+
 sync-engine-bookmarks =
     .label = ブックマーク
     .accesskey = m
@@ -672,6 +810,11 @@ sync-engine-tabs =
 
 sync-engine-logins =
     .label = ログイン情報
+    .tooltiptext = 保存したユーザー名とパスワードです
+    .accesskey = L
+
+sync-engine-logins-passwords =
+    .label = ログイン情報とパスワード
     .tooltiptext = 保存したユーザー名とパスワードです
     .accesskey = L
 
@@ -698,6 +841,8 @@ sync-engine-prefs =
         }
     .tooltiptext = 変更した一般、プライバシー、セキュリティの設定です
     .accesskey = s
+
+## The device name controls.
 
 sync-device-name-header = 端末名
 
@@ -739,6 +884,10 @@ forms-exceptions =
 forms-generate-passwords =
     .label = 強固なパスワードを生成、提案する
     .accesskey = u
+forms-breach-alerts =
+    .label = 漏洩したウェブサイトのパスワードの警告を表示する
+    .accesskey = b
+forms-breach-alerts-learn-more-link = 詳細
 forms-fill-logins-and-passwords =
     .label = ログイン情報とパスワードを自動入力する
     .accesskey = i
@@ -751,6 +900,9 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = マスターパスワードを変更...
     .accesskey = M
+
+forms-master-pw-fips-title = 現在 FIPS モードです。FIPS モードではマスターパスワードを空には設定できません。
+forms-master-pw-fips-desc = パスワードを変更できませんでした
 
 ## Privacy Section - History
 
@@ -882,9 +1034,11 @@ addressbar-suggestions-settings = 検索エンジンの検索候補の設定を�
 
 content-blocking-header = コンテンツブロッキング
 
+content-blocking-section-description = ブラウジング中のあなたのプライバシーを保護します。あなたが訪問したサイトを追跡して訪問者の情報を収集する目に見えないコンテンツをブロックします。このようなコンテンツをブロックすると、ページの読み込みが速くなる可能性があります。
+
 content-blocking-enhanced-tracking-protection = 強化型トラッキング防止機能
 
-content-blocking-section-description = ブラウジング中のあなたのプライバシーを保護します。あなたが訪問したサイトを追跡して訪問者の情報を収集する目に見えないコンテンツをブロックします。このようなコンテンツをブロックすると、ページの読み込みが速くなる可能性があります。
+content-blocking-section-top-level-description = トラッカーはあなたの習慣や興味に関する情報を収集するために、オンラインであなたを追跡します。{ -brand-short-name } はこれらのトラッカーや悪意のあるスクリプトの多くをブロックします。
 
 content-blocking-learn-more = 詳細
 
@@ -906,6 +1060,21 @@ content-blocking-custom-desc = ブロックする項目を選択します。
 
 content-blocking-private-trackers = 既知のトラッカー (プライベートウィンドウのみ)
 content-blocking-third-party-cookies = サードパーティのトラッカー Cookie
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+  .label = 標準
+  .accesskey = d
+enhanced-tracking-protection-setting-strict =
+  .label = 厳格
+  .accesskey = r
+enhanced-tracking-protection-setting-custom =
+  .label = カスタム
+  .accesskey = C
+##
 
 content-blocking-etp-standard-desc = 保護と性能をバランスよく。ページが正しく機能するように読み込みます。
 content-blocking-etp-strict-desc = より強固な保護ですが、一部のサイトやコンテンツが機能しなくなる可能性があります。

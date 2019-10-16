@@ -73,6 +73,7 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
 ## Protections panel
 
 cfr-protections-panel-header = Selaa ilman seurantaa
+cfr-protections-panel-body = Pidä tietosi itselläsi. { -brand-short-name } suojaa sinua useimmilta yleisimmiltä tekemisiäsi verkossa jäljittäviltä seuraimilta.
 cfr-protections-panel-link-text = Lue lisää
 
 ## What's New toolbar button and panel
@@ -81,22 +82,69 @@ cfr-whatsnew-button =
     .label = Mitä uutta
     .tooltiptext = Mitä uutta
 cfr-whatsnew-panel-header = Mitä uutta
+cfr-whatsnew-release-notes-link-text = Lue julkaisutiedote
+cfr-whatsnew-fx70-title = { -brand-short-name } taistelee nyt entistä lujemmin yksityisyytesi puolesta
+cfr-whatsnew-fx70-body =
+    Viimeisin päivitys parantaa seurannan suojausta ja tekee entistä
+    helpommaksi luoda turvallisen salasanan jokaiselle sivustolle.
+cfr-whatsnew-tracking-protect-title = Suojaa itsesi seuraimilta
+cfr-whatsnew-tracking-protect-body =
+    { -brand-short-name } estää monet yleisimmistä sosiaalisen median ja sivustorajat
+    ylittävistä seuraimista, jotka seuraavat tekemisiäsi verkossa.
+cfr-whatsnew-tracking-protect-link-text = Näytä raportti
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+        [one] Seurain estetty
+       *[other] Seuraimia estetty
+    }
+cfr-whatsnew-tracking-blocked-subtitle = { DATETIME($earliestDate, month: "long", year: "numeric") } lähtien
+cfr-whatsnew-tracking-blocked-link-text = Näytä raportti
+cfr-whatsnew-lockwise-backup-title = Varmuuskopioi salasanasi
+cfr-whatsnew-lockwise-backup-body = Luo turvallisia salasanoja ja käytä niitä mistä hyvänsä kirjaudut sisään.
+cfr-whatsnew-lockwise-backup-link-text = Ota varmuuskopiot käyttöön
+cfr-whatsnew-lockwise-take-title = Ota salasanat mukaasi
+cfr-whatsnew-lockwise-take-body =
+    { -lockwise-brand-short-name }-mobiilisovellus mahdollistaa salasanojesi
+    käytön turvallisesti mistä tahansa.
+cfr-whatsnew-lockwise-take-link-text = Hanki sovellus
 
 ## Bookmark Sync
 
 cfr-doorhanger-sync-bookmarks-header = Saa tämä kirjanmerkki puhelimeesi
+cfr-doorhanger-sync-bookmarks-body = Ota kirjanmerkit, salasanat, historia ja muuta mukaasi minne menetkin, kun kirjaudut { -brand-product-name }-selaimeen.
 cfr-doorhanger-sync-bookmarks-ok-button = Ota { -sync-brand-short-name } käyttöön
     .accesskey = O
 
 ## Login Sync
 
 cfr-doorhanger-sync-logins-header = Lopeta salasanojen unohtaminen
+cfr-doorhanger-sync-logins-body = Talleta ja synkronoi salasanasi turvallisesti kaikkien laitteidesi välillä.
+cfr-doorhanger-sync-logins-ok-button = Ota { -sync-brand-short-name } käyttöön
+    .accesskey = O
 
 ## Send Tab
 
 cfr-doorhanger-send-tab-header = Lue tämä ollessasi liikkeellä
 cfr-doorhanger-send-tab-recipe-header = Vie tämä resepti keittiöön
+cfr-doorhanger-send-tab-body = Lähettämällä välilehden voit jakaa linkin helposti puhelimeesi tai minne tahansa, missä olet kirjautuneena { -brand-product-name }iin.
+cfr-doorhanger-send-tab-ok-button = Kokeile välilehden lähettämistä
+    .accesskey = K
 
 ## Firefox Send
 
 cfr-doorhanger-firefox-send-header = Jaa tämä PDF turvallisesti
+cfr-doorhanger-firefox-send-body = Pidä arkaluonteiset asiakirjasi turvassa uteliailta silmiltä käyttämällä läpisalausta ja automaattisesti vanhenevaa linkkiä.
+cfr-doorhanger-firefox-send-ok-button = Kokeile { -send-brand-name }-palvelua
+    .accesskey = K
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-ok-button = Näytä suojaukset
+    .accesskey = N
+cfr-doorhanger-socialtracking-close-button = Sulje
+    .accesskey = S
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name } esti yksilöijän tällä sivulla
+cfr-doorhanger-cryptominers-heading = { -brand-short-name } esti kryptolouhijan tällä sivulla

@@ -47,6 +47,9 @@ newtab-topsites-add-button = Lisa
 
 ## Top Sites - Delete history confirmation dialog. 
 
+
+## Top Sites - Delete history confirmation dialog.
+
 newtab-confirm-delete-history-p1 = Kas oled kindel, et soovid ajaloost kõik selle lehe kohta käivad kirjed kustutada?
 # "This action" refers to deleting a page from history.
 newtab-confirm-delete-history-p2 = Seda tegevust pole võimalik tagasi võtta.
@@ -80,12 +83,31 @@ newtab-menu-delete-history = Kustuta ajaloost
 newtab-menu-save-to-pocket = Salvesta { -pocket-brand-name }isse
 newtab-menu-delete-pocket = Kustuta { -pocket-brand-name }ist
 newtab-menu-archive-pocket = Arhiveeri { -pocket-brand-name }is
+newtab-menu-show-privacy-info = Meie sponsoritest ja sinu privaatsusest
+
+## Message displayed in a modal window to explain privacy and provide context for sponsored content.
+
+newtab-privacy-modal-button-done = Valmis
+newtab-privacy-modal-header = Sinu privaatsus on oluline.
+newtab-privacy-modal-paragraph =
+    Lisaks põnevate lugude esiletoomisele kuvame me ka asjakohast ja hoolikalt
+    kontrollitud sisu valitud sponsoritelt. Võid kindel olla, et lehitsemise andmed
+    ei välju sinu { -brand-product-name }ist — meie ei näe neid ja ka meie
+    sponsorid mitte.
+newtab-privacy-modal-link = Rohkem teavet uue kaardi privaatsuse kohta
+
+
+
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = Eemalda järjehoidja
 # Bookmark is a verb here.
 newtab-menu-bookmark = Lisa järjehoidjatesse
 
 ## Context Menu - Downloaded Menu. "Download" in these cases is not a verb, 
+## it is a noun. As in, "Copy the link that belongs to this downloaded item".
+
+
+## Context Menu - Downloaded Menu. "Download" in these cases is not a verb,
 ## it is a noun. As in, "Copy the link that belongs to this downloaded item".
 
 newtab-menu-copy-download-link = Kopeeri allalaadimislink
@@ -109,11 +131,16 @@ newtab-menu-open-file = Ava fail
 
 newtab-label-visited = Külastatud
 newtab-label-bookmarked = Järjehoidjatest
+newtab-label-removed-bookmark = Järjehoidja eemaldatud
 newtab-label-recommended = Menukad
 newtab-label-saved = Salvestatud { -pocket-brand-name }isse
 newtab-label-download = Allalaaditud
 
 ## Section Menu: These strings are displayed in the section context menu and are 
+## meant as a call to action for the given section.
+
+
+## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
 
 newtab-section-menu-remove-section = Eemalda osa
@@ -126,6 +153,13 @@ newtab-section-menu-add-search-engine = Lisa otsingumootor
 newtab-section-menu-move-up = Liiguta üles
 newtab-section-menu-move-down = Liiguta alla
 newtab-section-menu-privacy-notice = Privaatsuspoliitika
+
+## Section aria-labels
+
+newtab-section-collapse-section-label =
+    .aria-label = Ahenda osa
+newtab-section-expand-section-label =
+    .aria-label = Laienda osa
 
 ## Section Headers.
 
@@ -142,6 +176,15 @@ newtab-empty-section-highlights = Alusta veebilehitsemist ja me näitame siin h�
 # Variables:
 #  $provider (String): Name of the content provider for this section, e.g "Pocket".
 newtab-empty-section-topstories = Vaata hiljem uuesti, et näha parimaid postitusi teenusepakkujalt { $provider }. Ei suuda oodata? Vali populaarne teema, et leida veel suurepärast sisu internetist.
+
+## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
+
+newtab-discovery-empty-section-topstories-header = Jõudsid lõpuni!
+newtab-discovery-empty-section-topstories-content = Uute lugude vaatamiseks tule hiljem tagasi.
+newtab-discovery-empty-section-topstories-try-again-button = Proovi uuesti
+newtab-discovery-empty-section-topstories-loading = Laadimine…
+# Displays when a layout in a section took too long to fetch articles.
+newtab-discovery-empty-section-topstories-timed-out = Uups! Me peaaegu laadisime selle osa, aga mitte päris.
 
 ## Pocket Content Section.
 

@@ -256,6 +256,62 @@ applications-type-column =
 applications-action-column =
     .label = Acțiune
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = Fișier { $extension }
+applications-action-save =
+    .label = Salvează fișierul
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Folosește { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Folosește { $app-name } (implicit)
+applications-use-other =
+    .label = Folosește altceva…
+applications-select-helper = Selectează aplicația ajutătoare
+applications-manage-app =
+    .label = Detalii privind aplicația…
+applications-always-ask =
+    .label = Întreabă întotdeauna
+applications-type-pdf = Format de document portabil (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Folosește { $plugin-name } (în { -brand-short-name })
+applications-preview-inapp =
+    .label = Previzualizează în { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 drm-content-header = Conținut Digital Rights Management (DRM)
 play-drm-content =
     .label = Redă conținut controlat prin DRM
@@ -342,6 +398,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Caută textul când încep să tastez
     .accesskey = x
+browsing-picture-in-picture-toggle-enabled =
+    .label = Activează comenzile video picture-in-picture
+    .accesskey = E
+browsing-picture-in-picture-learn-more = Află mai multe
 browsing-cfr-recommendations =
     .label = Recomandă extensii pe măsură ce navighezi
     .accesskey = R
@@ -604,6 +664,10 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Sugerează și generează parole puternice
     .accesskey = u
+forms-breach-alerts =
+    .label = Afișează alerte despre parole pentru site-uri web sparte
+    .accesskey = b
+forms-breach-alerts-learn-more-link = Află mai multe
 forms-fill-logins-and-passwords =
     .label = Completează automat autentificări și parole
     .accesskey = i
@@ -616,6 +680,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Schimbă parola generală…
     .accesskey = m
+forms-master-pw-fips-title = Acum te afli în modul FIPS. Pentru FIPS este nevoie de o parolă generală nevidă.
+forms-master-pw-fips-desc = Schimbarea parolei a eșuat
 
 ## Privacy Section - History
 
@@ -683,8 +749,10 @@ sitedata-block-desc = Tipul conținutului blocat
     .accesskey = T
 sitedata-option-block-trackers =
     .label = Elemente de urmărire de la terți
+sitedata-option-block-cross-site-trackers =
+    .label = Elemente de urmărire între site-uri
 sitedata-option-block-cross-site-and-social-media-trackers =
-    .label = Elemente de urmărire ale rețelelor sociale și cel între site-uri
+    .label = Elemente de urmărire ale rețelelor sociale și între site-uri
 sitedata-option-block-unvisited =
     .label = Cookie-uri de pe site-uri web nevizitate
 sitedata-option-block-all-third-party =
@@ -719,8 +787,9 @@ addressbar-suggestions-settings = Schimbă preferințele pentru sugestiile motoa
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Blocare de conținut
-content-blocking-enhanced-tracking-protection = Protecție îmbunătățită împotriva urmăririi
 content-blocking-section-description = Protejează-ți intimitatea la navigare. Blochează conținuturile invizibile care urmăresc ce site-uri vizitezi și îți creează profilul. Blocarea unei părți din aceste conținuturi poate conduce la încărcarea mai rapidă a paginilor.
+content-blocking-enhanced-tracking-protection = Protecție îmbunătățită împotriva urmăririi
+content-blocking-section-top-level-description = Elementele de urmărire te urmăresc online pentru a colecta informații despre obiceiurile și interesele tale de navigare. { -brand-short-name } blochează multe dintre aceste elementele de urmărire și alte scripturi rău-intenționate.
 content-blocking-learn-more = Află mai multe
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -738,6 +807,23 @@ content-blocking-strict-description = Protecție mai puternică, poate împiedic
 content-blocking-custom-desc = Alege ce să blochezi.
 content-blocking-private-trackers = Elemente de urmărire cunoscute numai în ferestre private
 content-blocking-third-party-cookies = Cookie-uri de urmărire de la terți
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Standard
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = Strictă
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = Personalizată
+    .accesskey = C
+
+##
+
 content-blocking-etp-standard-desc = Echilibrat pentru protecție și performanță. Paginile se vor încărca normal.
 content-blocking-etp-strict-desc = O protecție mai puternică, dar poate provoca funcționarea necorespunzătoare a site-urilor sau a conținutului.
 content-blocking-etp-custom-desc = Alege ce elemente de urmărire și scripturi să blochezi.

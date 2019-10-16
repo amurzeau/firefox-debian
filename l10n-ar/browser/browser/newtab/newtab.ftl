@@ -83,6 +83,14 @@ newtab-menu-delete-history = احذف من التأريخ
 newtab-menu-save-to-pocket = احفظ في { -pocket-brand-name }
 newtab-menu-delete-pocket = احذف من { -pocket-brand-name }
 newtab-menu-archive-pocket = أرشِف في { -pocket-brand-name }
+
+## Message displayed in a modal window to explain privacy and provide context for sponsored content.
+
+newtab-privacy-modal-button-done = تمّ
+newtab-privacy-modal-header = خصوصيتك فوق كل شيء.
+
+
+
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = أزل العلامة
 # Bookmark is a verb here.
@@ -116,6 +124,7 @@ newtab-menu-open-file = افتح الملف
 
 newtab-label-visited = مُزارة
 newtab-label-bookmarked = معلّمة
+newtab-label-removed-bookmark = أُزيلت العلامة
 newtab-label-recommended = مُتداول
 newtab-label-saved = حُفِظت في { -pocket-brand-name }
 newtab-label-download = نُزّل

@@ -12,12 +12,20 @@
 ## newlines in translations to control where the line break appears (e.g., to
 ## avoid breaking quoted text).
 
+onboarding-button-label-learn-more = بیشتر یاد بگیرید
 onboarding-button-label-try-now = همین حالا امتحان کنید
 onboarding-button-label-get-started = شروع کنید
 
 ## Welcome modal dialog strings
 
 onboarding-welcome-header = به { -brand-short-name } خوش آمدید
+onboarding-welcome-learn-more = در مورد مزایای آن بیشتر یاد بگیرید.
+onboarding-join-form-header = به { -brand-product-name } بپیوندید
+onboarding-join-form-body = برای شروع، آدرس ایمیل خود را وارد کنید.
+onboarding-join-form-email =
+    .placeholder = ایمیل را وارد کنید
+onboarding-join-form-email-error = به ایمیل معتبر نیاز است
+onboarding-join-form-continue = ادامه
 onboarding-start-browsing-button-label = شروع وب‌گردی
 onboarding-cards-dismiss =
     .title = رد کردن
@@ -25,7 +33,7 @@ onboarding-cards-dismiss =
 
 ## Firefox Sync modal dialog strings.
 
-onboarding-sync-welcome-header = فایرفاکس را همراه خود داشته باشید
+onboarding-sync-welcome-header = { -brand-product-name } را همراه خود داشته باشید
 onboarding-sync-welcome-content = نشانک‌ها، تاریخچه، گذرواژه‌ها و تنظیمات دیگر خود را بر روی تمام دستگاه‌های خود همراه خود داشته باشید.
 onboarding-sync-welcome-learn-more-link = در مورد حساب‌های فایرفاکس بیشتر بدانید
 onboarding-sync-form-invalid-input = رایانامهٔ معتبر لازم است
@@ -38,11 +46,15 @@ onboarding-sync-form-skip-login-button = پرش از این مرحله
 ## This is part of the line "Enter your email to continue to Firefox Sync"
 
 onboarding-sync-form-header = پست‌الکترونیکی خود را وارد کنید
-onboarding-sync-form-sub-header = برای فعال کردن همگام‌سازی فایرفاکس.
+onboarding-sync-form-sub-header = برای ادامه به { -sync-brand-name }.
 
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
+onboarding-benefit-products-title = محصولات مفید
+onboarding-benefit-products-text = به کمک گروهی از ابزارها که به حریم خصوصی شما بر روی دستگاه‌هایتان احترام می‌گذارند، کارها را انجام دهید.
+onboarding-benefit-knowledge-title = دانش کاربردی
+onboarding-benefit-privacy-title = حریم شخصی واقعی
 
 ## These strings belong to the individual onboarding messages.
 
@@ -62,6 +74,14 @@ onboarding-ghostery-text = با افزونه‌هایی مثل Ghostery که ب�
 # Note: "Sync" in this case is a generic verb, as in "to synchronize"
 onboarding-fxa-title = هم‌گام‌سازی
 onboarding-fxa-text = برای { -fxaccount-brand-name } ثبت نام کنید و نشانک‌ها، گدرواژه‌ها و زبانه‌ها را با هرجایی که از { -brand-short-name } استفاده می‌کنید، هم‌گام‌سازی نمایید.
+onboarding-tracking-protection-title2 = محافظت از ردگیری شدن
+onboarding-tracking-protection-text2 = { -brand-short-name } کمک می‌کند تا ردگیری آنلاین شما توسط وبسایت‌ها متوقف شود و آگهی‌ها نیز به سختی شما را در وب دنبال خواهند کرد.
+onboarding-tracking-protection-button2 = چطور کار می‌کند
+onboarding-browse-privately-title = مرور ناشناس
+onboarding-browse-privately-text = مرور ناشناس، سابقه جستجو و مرور شما را پاک می‌کند تا آن را از دید کسانی که از کامپیوتر شما استفاده می‌کنند مخفی نگه دارد.
+onboarding-browse-privately-button = یک پنجره ناشناس باز کنید
+onboarding-firefox-send-button = { -send-brand-name } را امتحان کنید
+onboarding-facebook-container-button = اضافه کردن افزونه
 
 ## Message strings belonging to the Return to AMO flow
 

@@ -34,11 +34,11 @@ same accesskey but will never be visible at the same time. -->
 <!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
 unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
 same accesskey but will never be visible at the same time. -->
-<!ENTITY  unpinTab.accesskey                 "b">
+<!ENTITY  unpinTab.accesskey                 "p">
 <!ENTITY  sendPageToDevice.label             "Gửi trang tới thiết bị">
-<!ENTITY  sendPageToDevice.accesskey         "D">
+<!ENTITY  sendPageToDevice.accesskey         "n">
 <!ENTITY  sendLinkToDevice.label             "Gửi đường dẫn tới thiết bị">
-<!ENTITY  sendLinkToDevice.accesskey         "D">
+<!ENTITY  sendLinkToDevice.accesskey         "n">
 <!ENTITY  undoCloseTab.label                 "Mở lại thẻ vừa đóng">
 <!ENTITY  undoCloseTab.accesskey             "U">
 <!ENTITY  hiddenTabs.label                   "Thẻ đã ẩn">
@@ -76,12 +76,21 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY menubarCmd.label "Thanh menu">
 <!ENTITY menubarCmd.accesskey "M">
 <!ENTITY navbarCmd.label "Thanh điều hướng">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY navbar.accessibleLabel "Điều hướng">
 <!ENTITY personalbarCmd.label "Thanh đánh dấu">
 <!ENTITY personalbarCmd.accesskey "B">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY personalbar.accessibleLabel "Trang đánh dấu">
 <!ENTITY bookmarksToolbarItem.label "Các mục của thanh đánh dấu">
 
 <!ENTITY pageSourceCmd.label "Mở mã nguồn trang">
 <!ENTITY pageSourceCmd.accesskey "o">
+
 <!ENTITY pageSourceCmd.commandkey "u">
 <!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
 Option+Command keyboard shortcut letter that Safari and Chrome use for "View
@@ -92,6 +101,7 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 
 <!ENTITY pageInfoCmd.label "Thông tin về trang này">
 <!ENTITY pageInfoCmd.accesskey "I">
+
 <!ENTITY pageInfoCmd.commandkey "i">
 <!ENTITY ldbCmd.label "Trình gỡ lỗi bố cục">
 <!ENTITY ldbCmd.accesskey "L">
@@ -116,6 +126,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaSignInError.label "Kết nối lại tới &syncBrand.shortName.label;">
 <!ENTITY fxaUnverified.label "Xác minh tài khoản của bạn">
 
+
+<!ENTITY togglePictureInPicture.key2 "}">
+<!ENTITY togglePictureInPicture.key "]"> <!-- } is above this key on many keyboards -->
 
 <!ENTITY fullScreenMinimize.tooltip "Thu nhỏ">
 <!ENTITY fullScreenRestore.tooltip "Khôi phục">
@@ -145,14 +158,23 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      followed by the user's email. -->
 <!ENTITY fxa.menu.signedInAs.label "Đã đăng nhập với tài khoản">
 <!ENTITY fxa.menu.manageAccount.label "Quản lý tài khoản…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbar menu screen. The `Signed in as` text is
+     followed by the user's email. -->
 <!ENTITY fxa.menu.syncSettings.label "Cài đặt &syncBrand.shortName.label;…">
 <!ENTITY fxa.menu.connectAnotherDevice2.label "Kết nối thiết bị khác…">
 <!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
 <!ENTITY fxa.menu.signin.label "Đăng nhập vào &brandProductName;">
 <!ENTITY fxa.menu.turnOnSync.label "Bật &syncBrand.shortName.label;">
-<!ENTITY fxa.menu.account.label "Tài khoản">
 <!ENTITY fxa.menu.firefoxServices.label "Dịch vụ &brandProductName;">
+
+<!ENTITY fxa.menu.account.label "Tài khoản">
+<!ENTITY fxa.menu.settings.label "Cài đặt">
+<!ENTITY fxa.menu.accountSettings.label "Cài đặt tài khoản">
+<!ENTITY fxa.menu.signOut.label "Đăng xuất…">
+<!ENTITY fxa.menu.deviceSettings.label "Cài đặt thiết bị">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
      for the Firefox Account toolbar menu screen.  -->
@@ -195,6 +217,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY bookmarksMenu.label "Trang đánh dấu">
 <!ENTITY bookmarksMenu.accesskey "B">
+
 <!ENTITY bookmarkThisPageCmd.label "Đánh dấu trang này">
 <!ENTITY editThisBookmarkCmd.label "Chỉnh sửa dấu trang này">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
@@ -236,6 +259,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Quản lý sử dụng phần bổ trợ">
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "Thay đổi liệu bạn có thể nhận thông báo từ trang web hay không">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Lưu dữ liệu vào bộ nhớ lâu dài">
+
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Trình duyệt đang ở trong chế độ truy cập từ xa">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Mở bảng điều khiển xác thực web">
 <!ENTITY urlbar.storageAccessAnchor.tooltip               "Mở bảng điều khiển quyền hoạt động duyệt web">
@@ -249,6 +273,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Quản lý việc dịch trang">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Quản lý sử dụng phần mềm DRM">
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "Mở bảng MIDI">
+
+<!ENTITY urlbar.permissionsGranted.tooltip       "Bạn đã cấp cho trang web này các quyền bổ sung.">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Bạn đã chặn camera của mình ở trang này">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Bạn đã chặn micro của mình ở trang này">
@@ -419,8 +445,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Muốn xem thẻ từ các thiết bị khác của bạn ở đây?">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Mở Tùy chỉnh Đồng bộ">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Đăng nhập để xem danh sách thẻ từ các thiết bị khác của bạn.">
+<!ENTITY appMenuRemoteTabs.welcome.label "Xem danh sách các thẻ từ các thiết bị khác của bạn.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Tài khoản của bạn cần phải xác thực.">
 <!ENTITY appMenuRemoteTabs.signin.label "Đăng nhập vào Đồng bộ hóa">
+<!ENTITY appMenuRemoteTabs.signintosync.label "Đăng nhập vào &syncBrand.shortName.label;…">
+<!ENTITY appMenuRemoteTabs.turnonsync.label "Bật &syncBrand.shortName.label;…">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Quản lý các thiết bị…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Xem các thẻ trên thanh lề đã đồng bộ">
 <!ENTITY appMenuRemoteTabs.hidesidebar.label "Ẩn thanh bên đồng bộ hóa">
@@ -508,6 +537,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      This is set as the aria-label attribute for the search input box in the
      in-content search UI, to be used by screen readers. -->
 <!ENTITY contentSearchInput.label     "Truy vấn tìm kiếm">
+
 <!ENTITY contentSearchSubmit.tooltip  "Gửi tìm kiếm">
 
 <!-- LOCALIZATION NOTE (searchInput.placeholder):
@@ -812,13 +842,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.connection "Kết nối">
 <!ENTITY identity.connectionSecure "Kết nối an toàn">
-
-<!-- LOCALIZATION NOTE (identity.securityView.label2)
-     This is the header of the security subview in the Site Identity panel. -->
-<!ENTITY identity.securityView.label2 "Bảo mật kết nối">
-
-<!ENTITY identity.connectionSecure2 "Kết nối an toàn">
 <!ENTITY identity.connectionNotSecure "Kết nối này không an toàn">
+
+<!ENTITY identity.connectionSecure3 "Kết nối an toàn">
+<!ENTITY identity.connectionNotSecure2 "Kết nối không an toàn">
 <!ENTITY identity.connectionNotSecureSecurityView "Bạn không được kết nối an toàn với trang web này.">
 <!ENTITY identity.connectionFile "Trang này đã được lưu ở máy tính của bạn.">
 <!ENTITY identity.connectionVerified2 "Bạn đang kết nối an toàn tới trang này, được sở hữu bởi:">
@@ -828,7 +855,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.insecureLoginForms2 "Đăng nhập vào trang này bạn có thể bị xâm nhập.">
 <!ENTITY identity.customRoot "Kết nối được xác minh bởi nhà phát hành chứng chỉ không được Mozilla công nhận.">
 
-<!ENTITY identity.evOwnerLabel "Trang web thuộc sở hữu của:">
+<!ENTITY identity.evOwnerLabel2 "Chứng chỉ được cấp cho:">
 
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "&brandShortName; đã chặn những phần không an toàn của trang này.">
@@ -864,8 +891,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.permissions "Quyền hạn">
 
-<!-- LOCALIZATION NOTE (identity.permissions2): "set" as in "configured for this website" -->
-<!ENTITY identity.permissions2 "Cài đặt quyền hạn">
+<!ENTITY identity.permissions3 "Quyền hạn">
 <!ENTITY identity.permissionsEmpty "Bạn chưa cấp cho trang này bất kỳ một quyền đặc biệt nào.">
 <!ENTITY identity.permissionsReloadHint "Bạn có thể cần phải tải lại trang để các thay đổi được áp dụng.">
 <!ENTITY identity.permissionsPreferences.tooltip "Mở tùy chọn các quyền">
@@ -878,7 +904,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      protections.etpMoreInfo.label: The text a screen reader speaks when focused on the info button. -->
 <!ENTITY protections.etpMoreInfo.label "Thông tin thêm về trình chống theo dõi nâng cao">
 <!ENTITY protections.settings.label "Cài đặt bảo vệ">
-<!ENTITY protections.report.label "Hiển thị báo cáo đầy đủ">
+<!ENTITY protections.showreport.label "Hiển thị báo cáo">
 <!-- LOCALIZATION NOTE:
      protections.siteNotWorking.label: The link to be clicked to open the sub-panel view
      protections.siteNotWorkingView.title: The heading/title of the sub-panel view -->
@@ -895,11 +921,20 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY protections.siteNotWorkingView.issueList.payments "Thanh toán">
 <!ENTITY protections.siteNotWorkingView.issueList.comments "Bình luận">
 <!ENTITY protections.siteNotWorkingView.issueList.videos "Video">
-<!ENTITY protections.siteNotWorkingView.siteStillBroken.label "Trang web vẫn bị lỗi sau khi tắt bảo vệ?">
 <!ENTITY protections.siteNotWorkingView.sendReport.label "Gửi báo cáo">
 
-<!ENTITY protections.blocking.label "Đang chặn">
-<!ENTITY protections.notBlocking.label "Không chặn">
+<!-- LOCALIZATION NOTE (protections.blocking2.label, protections.notBlocking2.label, protections.notFound.label):
+     In the protections panel, Content Blocking category items are in three sections:
+     "Blocked" for categories being blocked in the current page,
+     "Allowed" for categories detected but not blocked in the current page, and
+     "None Detected" for categories not detected in the current page.
+     These strings are used in the header labels of each of these sections. -->
+<!ENTITY protections.blocking2.label "Đã chặn">
+<!ENTITY protections.notBlocking2.label "Đã cho phép">
+<!ENTITY protections.notFound.label "Không phát hiện">
+<!-- LOCALIZATION NOTE (protections.notBlocking.why.label, protections.notBlocking.why.etp*.tooltip):
+     The "Allowed" header also includes a "Why?" link that, when hovered, shows
+     a tooltip explaining why these items were not blocked in the page. -->
 <!ENTITY protections.notBlocking.why.label "Tại sao?">
 <!ENTITY protections.notBlocking.why.etpOn.tooltip "Chặn những thứ này có thể phá vỡ các yếu tố của một số trang web. Không có trình theo dõi, một số nút, biểu mẫu và trường đăng nhập có thể không hoạt động.">
 <!ENTITY protections.notBlocking.why.etpOff.tooltip "Tắt bảo vệ sẽ cho phép tất cả các trình theo dõi trên trang web này. Nó cũng có thể cải thiện một số chức năng trang web.">
@@ -913,7 +948,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY protections.crossSiteTrackingCookies.description "Những cookie này theo bạn từ trang này sang trang khác để thu thập dữ liệu về những gì bạn làm trực tuyến. Chúng được đặt bởi các bên thứ ba như nhà quảng cáo và công ty phân tích.">
 <!ENTITY protections.cryptominers.description "Tiền điện tử sử dụng sức mạnh tính toán của hệ thống của bạn để khai thác tiền kỹ thuật số. Các tập lệnh mã hóa làm cạn kiệt pin của bạn, làm chậm máy tính của bạn và có thể tăng hóa đơn năng lượng của bạn.">
 <!ENTITY protections.fingerprinters.description "Dấu vân tay thu thập cài đặt từ trình duyệt và máy tính của bạn để tạo hồ sơ về bạn. Sử dụng dấu vân tay kỹ thuật số này, họ có thể theo dõi bạn trên các trang web khác nhau.">
-<!ENTITY protections.trackingContent.description "Trang web có thể tải quảng cáo bên ngoài, video và nội dung khác có chứa mã theo dõi. Chặn nội dung theo dõi có thể giúp các trang web tải nhanh hơn, nhưng một số nút, biểu mẫu và trường đăng nhập có thể không hoạt động.">
+<!ENTITY protections.trackingContent2.description "Trang web có thể tải quảng cáo bên ngoài, video và nội dung khác với đoạn mã theo dõi. Chặn nội dung theo dõi có thể giúp các trang web tải nhanh hơn, nhưng một số nút, biểu mẫu và trường đăng nhập có thể không hoạt động.">
 <!ENTITY protections.socialMediaTrackers.description "Mạng xã hội đặt trình theo dõi trên các trang web khác để theo dõi những gì bạn làm, xem và xem trực tuyến. Điều này cho phép các công ty truyền thông xã hội tìm hiểu thêm về bạn ngoài những gì bạn chia sẻ trên hồ sơ truyền thông xã hội của mình.">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
@@ -953,18 +988,18 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection3.label "Trình theo dõi">
 
 <!ENTITY contentBlocking.manageSettings.label "Quản lý chặn nội dung">
-
-<!ENTITY contentBlocking.trackingProtection4.label "Trình theo dõi nội dung">
-
-<!ENTITY contentBlocking.manageSettings2.label "Quản lý cài đặt bảo vệ">
 <!ENTITY contentBlocking.manageSettings.accesskey "M">
 
 <!ENTITY contentBlocking.trackersView.label "Trình theo dõi">
-
 <!ENTITY contentBlocking.trackersView.strictInfo.label "Để chặn tất cả trình theo dõi, hãy đặt chặn nội dung thành “Nghiêm ngặt”.">
 
 <!ENTITY contentBlocking.cookies.label "Cookie">
 <!ENTITY contentBlocking.cookiesView.label "Cookie và dữ liệu trang">
+
+<!ENTITY contentBlocking.trackingProtection4.label "Trình theo dõi nội dung">
+
+<!ENTITY contentBlocking.manageSettings2.label "Quản lý cài đặt bảo vệ">
+<!ENTITY contentBlocking.manageSettings2.accesskey "M">
 
 <!ENTITY contentBlocking.socialblock.label "Trình theo dõi truyền thông xã hội">
 
@@ -980,6 +1015,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView.label "Báo cáo lỗi">
 <!ENTITY contentBlocking.breakageReportView2.description "Chặn nội dung có thể gây ra sự cố với một số trang web. Khi bạn báo cáo sự cố, bạn sẽ giúp tạo &brandShortName; tốt hơn cho mọi người. (Thao tác này sẽ gửi URL cũng như thông tin về cài đặt trình duyệt của bạn tới Mozilla.)">
 <!ENTITY contentBlocking.breakageReportView.learnMore "Tìm hiểu thêm">
+
 <!ENTITY contentBlocking.breakageReportView.title "Báo cáo một trang web bị hỏng">
 <!ENTITY contentBlocking.breakageReportView3.description "Chặn một số trình theo dõi nhất định có thể gây ra vấn đề với một số trang web. Báo cáo những vấn đề này giúp tạo &brandShortName; tốt hơn cho mọi người. Gửi báo cáo này sẽ gửi một URL và thông tin về cài đặt trình duyệt của bạn đến Mozilla.">
 <!ENTITY contentBlocking.breakageReportView2.learnMore "Tìm hiểu thêm">
@@ -1035,6 +1071,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY newTabControlled.disableButton.accesskey "D">
 
 <!ENTITY homepageControlled.message "Một tiện ích mở rộng đã thay đổi trang chủ của bạn. Bạn có thể khôi phục lại cài đặt của mình nếu không muốn các thay đổi này.">
+
 <!ENTITY homepageControlled.header.message "Trang chủ của bạn đã thay đổi.">
 <!ENTITY homepageControlled.keepButton.label "Giữ các thay đổi">
 <!ENTITY homepageControlled.keepButton.accesskey "K">

@@ -6,9 +6,21 @@ about-logins-page-title = Inekcam & wawalen uffiren
 
 # "Google Play" and "App Store" are both branding and should not be translated
 
+login-app-promo-title = Awi awalen uffiren anda teddiḍ
+login-app-promo-subtitle = Zdem asnas n baṭel { -lockwise-brand-name }
+login-app-promo-android =
+    .alt = Yella di Google Play
+login-app-promo-apple =
+    .alt = Sider si App Store
 login-filter =
     .placeholder = Nadi inekcam
 create-login-button = Rnu anekcum amaynut
+# This string is used as alternative text for favicon images.
+# Variables:
+#   $title (String) - The title of the website associated with the favicon.
+login-favicon =
+    .alt = Tignit i { $title }
+fxaccounts-sign-in-text = Kcem ɣer wawalen-ik uffiren ɣef yibenkan-nniḍen
 fxaccounts-sign-in-button = Qqen ɣer { -sync-brand-short-name }
 fxaccounts-avatar-button =
     .title = Sefrek amiḍan
@@ -24,21 +36,44 @@ menu-menuitem-preferences =
         [windows] iɣewwaṛen
        *[other] Ismenyifen
     }
-menu-menuitem-feedback = Azen tikti
-menu-menuitem-faq = Isteqsiyen i d-yettuɣalen s waṭas.
+about-logins-menu-menuitem-help = Tallalt
+menu-menuitem-android-app = { -lockwise-brand-short-name } i Android
+menu-menuitem-iphone-app = { -lockwise-brand-short-name } i iPhone akked iPad
 
 ## Login List
 
+login-list =
+    .aria-label = Inekcam mmenṭaḍen d unadi
+login-list-count =
+    { $count ->
+        [one] { $count } anekcum
+       *[other] { $count } inekcam
+    }
 login-list-sort-label-text = Smizzwer s:
 login-list-name-option = Isem (A-Z)
+login-list-breached-option = Ismal web ittwakren
 login-list-last-changed-option = Asnifel aneggaru
 login-list-last-used-option = Aseqdec anneggaru
 login-list-intro-title = Ulac inekcam yettwafen
+login-list-intro-description = Ticki teskelseḍ awal uffir deg { -brand-product-name }, ad d-iban dagi.
+about-logins-login-list-empty-search-title = Ulac inekcam yettwafen
+about-logins-login-list-empty-search-description = Ula d yiwen n ugmuḍ ur yemmenṭaḍ d unadi-ik.
 login-list-item-title-new-login = Anekcum amaynut
+login-list-item-subtitle-new-login = Sekcem inekcumen-ik n tuqqna
 login-list-item-subtitle-missing-username = (ulas isem n useqdac)
+about-logins-list-item-warning-icon =
+    .alt = Tginit n ulɣu
+    .title = Asmel i tḥuza trewla n yisefka
+about-logins-list-item-breach-icon =
+    .title = Asmel i tḥuza trewla n yisefka
 
 ## Introduction screen
 
+login-intro-heading = Tettnadiḍ inekcam-ik yettwaskelsen? Swel { -sync-brand-short-name }.
+login-intro-description = Ma teskelseḍ inekcam-ik deg { -brand-product-name } ɣef ddeqs n yibenkan, a-t-an amek ara tkecmeḍ ɣur-sen.
+login-intro-instruction-fxa = Rnu neɣ qqen ɣer { -fxaccount-brand-name } inek ɣef yibenk anida ttwaskelsen yinekcam-ik.
+login-intro-instruction-fxa-settings = Ḍmed d akken trecmeḍ inekcam-ik deg yiɣewwaṛen n { -sync-brand-short-name }.
+about-logins-intro-instruction-help = Rzu ɣer <a data-l10n-name="help-link"> tallelt n { -lockwise-brand-short-name }</a> i wugar n yisallen.
 
 ## Login
 
@@ -48,10 +83,9 @@ login-item-delete-button = Kkes
 login-item-origin-label = Tansa n usmel web
 login-item-origin =
     .placeholder = https://www.example.com
-login-item-open-site-button = Senker
 login-item-username-label = Isem n useqdac
-login-item-username =
-    .placeholder = isem@example.com
+about-logins-login-item-username =
+    .placeholder = (ulas isem n useqdac)
 login-item-copy-username-button-text = Nɣel
 login-item-copied-username-button-text = Inɣel!
 login-item-password-label = Awal uffir
@@ -64,9 +98,13 @@ login-item-copied-password-button-text = Inɣel!
 login-item-save-changes-button = Sekles asnifel
 login-item-save-new-button = Sekles
 login-item-cancel-button = Sefsex
+login-item-time-changed = Abeddel aneggaru: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
+login-item-time-created = Timerna: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
+login-item-time-used = Aseqdec aneggaru: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
 
 ## Master Password notification
 
+master-password-notification-message = Ma ulac aɣilif, sekcem awal uffir agejdan akken ad twaliḍ inekcam d wawalen uffiren yettwaskelsen
 master-password-reload-button =
     .label = Kcem
     .accesskey = K
@@ -76,13 +114,43 @@ master-password-reload-button =
 confirmation-dialog-cancel-button = Sefsex
 confirmation-dialog-dismiss-button =
     .title = Sefsex
+enable-password-sync-notification-message =
+    { PLATFORM() ->
+        [windows] Tebɣiḍ ad tkecmeḍ ɣer yinekcam-ik sekra wanida i tesseqdaceḍ { -brand-product-name } ? Ddu ɣer yiɣewwaṛen n { -sync-brand-short-name } sakin ṛcem taxxamt inekcam.
+       *[other] Tebɣiḍ ad tkecmeḍ ɣer yinekcam-ik sekra wanida i tesseqdaceḍ { -brand-product-name } ? Ddu ɣer yiɣewwaṛen n { -sync-brand-short-name } sakin ṛcem taxxamt inekcam.
+    }
+enable-password-sync-preferences-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Rzu ɣer yiɣewwaṛen n  { -sync-brand-short-name }
+           *[other] Rzu ɣer yismenyifen n  { -sync-brand-short-name }
+        }
+    .accesskey = C
 confirm-delete-dialog-title = Kkes anekcam-agi?
 confirm-delete-dialog-message = Ulac tuɣalin ɣer deffir.
 confirm-delete-dialog-confirm-button = Kkes
 confirm-discard-changes-dialog-title = Sefsex isenfal-agi?
+confirm-discard-changes-dialog-message = Akk isnifal ur nettwakles ara ad ttwaksen.
 confirm-discard-changes-dialog-confirm-button = Kkes
 
 ## Breach Alert notification
 
+breach-alert-text = Awalen uffiren n usmel-a ffɣen neɣ ttwakren deffir n ubeddel aneggaru n telɣut-ik n tuqqna. Beddel awal-ik uffir akken ad yettwamesten umiḍan-ik.
+breach-alert-link = Issin ugar ɣef trewla n yisefka-agi.
 breach-alert-dismiss =
     .title = Mdel ulɣu-agi
+
+## Error Messages
+
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login = Anekcum i { $loginTitle } s yisem-a yella yakan.
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = Anekcum i { $loginTitle } s yisem-a yella yakan.<a data-l10n-name="duplicate-link"> Ddu ɣer unekcum yellan?</a>
+# This is a generic error message.
+about-logins-error-message-default = Teḍra-d tuccḍa deg uɛraḍ n usekles n wawal-a uffir.

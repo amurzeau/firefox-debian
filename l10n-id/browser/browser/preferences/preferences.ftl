@@ -241,6 +241,62 @@ applications-type-column =
 applications-action-column =
     .label = Aksi
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = berkas { $extension }
+applications-action-save =
+    .label = Simpan Berkas
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Gunakan { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Gunakan { $app-name } (bawaan)
+applications-use-other =
+    .label = Gunakan yang lain…
+applications-select-helper = Pilih Aplikasi Pembantu
+applications-manage-app =
+    .label = Detail Aplikasi…
+applications-always-ask =
+    .label = Tanyakan selalu
+applications-type-pdf = Format Dokumen Portabel (Portable Document Format - PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Gunakan { $plugin-name } (di { -brand-short-name })
+applications-preview-inapp =
+    .label = Pratinjau di { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = Konten Digital Rights Management (DRM)
 play-drm-content =
     .label = Putar konten DRM-terkontrol
@@ -327,6 +383,7 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Cari teks saat Anda mulai mengetik
     .accesskey = k
+browsing-picture-in-picture-learn-more = Pelajari lebih lanjut
 browsing-cfr-recommendations =
     .label = Sarankan ekstensi seiring penjelajahan Anda
     .accesskey = r
@@ -478,6 +535,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Bawalah Web bersama Anda
 sync-signedout-description = Sinkronkan markah, riwayat, tab, sandi, pengaya, dan pengaturan di berbagai peranti Anda.
 sync-signedout-account-title = Sambungkan dengan { -fxaccount-brand-name }
@@ -498,11 +559,17 @@ sync-mobile-promo = Unduh Firefox untuk <img data-l10n-name="android-icon"/> <a 
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = Ubah gambar profil
 sync-disconnect =
     .label = Putuskan…
     .accesskey = P
+sync-sign-out =
+    .label = Keluar…
+    .accesskey = K
 sync-manage-account = Kelola Akun
     .accesskey = o
 sync-signedin-unverified = { $email } tidak dapat diverifikasi.
@@ -518,6 +585,43 @@ sync-sign-in =
     .accesskey = M
 sync-signedin-settings-header = Pengaturan Sinkronisasi
 sync-signedin-settings-desc = Pilih apa saja yang akan disinkronkan pada peranti Anda yang menggunakan { -brand-short-name }.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Sinkronisasi: AKTIF
+prefs-syncing-off = Sinkronisasi: NONAKTIF
+prefs-sync-setup =
+    .label = Siapkan { -sync-brand-short-name }…
+    .accesskey = S
+prefs-sync-now =
+    .labelnotsyncing = Sinkronkan Sekarang
+    .accesskeynotsyncing = S
+    .labelsyncing = Menyinkronkan…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-bookmarks = Markah
+sync-currently-syncing-history = Riwayat
+sync-currently-syncing-tabs = Tab terbuka
+sync-currently-syncing-logins-passwords = Info masuk dan sandi
+sync-currently-syncing-addresses = Alamat
+sync-currently-syncing-creditcards = Kartu kredit
+sync-currently-syncing-addons = Pengaya
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Pengaturan
+       *[other] Preferensi
+    }
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = Pilih yang Akan Disinkronkan
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Simpan Perubahan
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = Putuskan…
+    .buttonaccesskeyextra2 = P
 sync-engine-bookmarks =
     .label = Markah
     .accesskey = M
@@ -552,6 +656,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Setelan Umum, Privasi, dan Keamanan yang Anda ubah
     .accesskey = P
+
+## The device name controls.
+
 sync-device-name-header = Nama Peranti
 sync-device-name-change =
     .label = Ubah Nama Peranti…
@@ -584,6 +691,10 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Sarankan dan hasilkan kata sandi yang kuat
     .accesskey = u
+forms-breach-alerts-learn-more-link = Pelajari lebih lanjut
+forms-fill-logins-and-passwords =
+    .label = Isi info masuk dan kata sandi secara otomatis
+    .accesskey = I
 forms-saved-logins =
     .label = Info Masuk Tersimpan…
     .accesskey = I
@@ -593,6 +704,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Ubah Sandi Utama…
     .accesskey = U
+forms-master-pw-fips-title = Anda sedang dalam mode FIPS. Mode ini mewajibkan Sandi Utama harus diisi.
+forms-master-pw-fips-desc = Sandi Gagal Diubah
 
 ## Privacy Section - History
 
@@ -697,6 +810,7 @@ addressbar-suggestions-settings = Ubah pengaturan untuk saran mesin pencari
 
 content-blocking-header = Pemblokiran Konten
 content-blocking-section-description = Lindungi privasi Anda saat menjelajah. Blokir konten tak terlihat yang melacak situs yang Anda kunjungi dan profil Anda. Memblokir sebagian konten ini dapat membuat laman dimuat lebih cepat.
+content-blocking-enhanced-tracking-protection = Perlindungan Pelacakan yang Ditingkatkan
 content-blocking-learn-more = Pelajari Lebih Lanjut
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -714,6 +828,24 @@ content-blocking-strict-description = Perlindungan yang lebih kuat, dapat menyeb
 content-blocking-custom-desc = Pilih yang diblokir.
 content-blocking-private-trackers = Hanya pelacak yang dikenal di Jendela Privat
 content-blocking-third-party-cookies = Kuki pelacak pihak ketiga
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Standar
+    .accesskey = S
+enhanced-tracking-protection-setting-strict =
+    .label = Ketat
+    .accesskey = K
+enhanced-tracking-protection-setting-custom =
+    .label = Ubahsuai
+    .accesskey = U
+
+
+
+content-blocking-etp-strict-desc = Perlindungan yang lebih kuat, tetapi dapat menyebabkan beberapa situs atau konten rusak.
 content-blocking-cross-site-tracking-cookies = Kuki pelacakan lintas situs
 content-blocking-social-media-trackers = Pelacak media sosial
 content-blocking-all-cookies = Semua kuki
@@ -732,6 +864,9 @@ content-blocking-reload-tabs-button =
     .accesskey = M
 content-blocking-trackers-label =
     .label = Pelacak
+    .accesskey = P
+content-blocking-tracking-content-label =
+    .label = Pelacakan konten
     .accesskey = P
 content-blocking-tracking-protection-option-all-windows =
     .label = Di semua jendela
