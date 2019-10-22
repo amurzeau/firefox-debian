@@ -1,3 +1,13 @@
+firefox-esr (68.2.0esr-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2019-33, also known as:
+    CVE-2019-15903, CVE-2019-11757, CVE-2019-11758, CVE-2019-11759,
+    CVE-2019-11760, CVE-2019-11761, CVE-2019-11762, CVE-2019-11763,
+    CVE-2019-11764.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 23 Oct 2019 06:50:01 +0900
+
 firefox-esr (68.1.0esr-1) unstable; urgency=medium
 
   * New upstream release.
