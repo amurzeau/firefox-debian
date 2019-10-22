@@ -7,7 +7,7 @@ Subject: Set DPI to system settings
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/modules/libpref/init/all.js b/modules/libpref/init/all.js
-index ede1c4c64b56..e2d13a1ab61d 100644
+index 9714c8d563a2..8e5d48b19fe8 100644
 --- a/modules/libpref/init/all.js
 +++ b/modules/libpref/init/all.js
 @@ -3035,7 +3035,7 @@ pref("layout.css.report_errors", true);
