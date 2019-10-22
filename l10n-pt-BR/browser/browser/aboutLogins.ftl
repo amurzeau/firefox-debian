@@ -20,8 +20,8 @@ create-login-button = Criar nova conta
 #   $title (String) - The title of the website associated with the favicon.
 login-favicon =
     .alt = Favicon de { $title }
-fxaccounts-sign-in-text = Tenha suas senhas em seus outros dispositivos
-fxaccounts-sign-in-button = Entre no { -sync-brand-short-name }
+fxaccounts-sign-in-text = Tenha suas senhas em outros dispositivos
+fxaccounts-sign-in-button = Entrar no { -sync-brand-short-name }
 fxaccounts-avatar-button =
     .title = Gerenciar conta
 
@@ -36,8 +36,7 @@ menu-menuitem-preferences =
         [windows] Opções
        *[other] Preferências
     }
-menu-menuitem-feedback = Enviar opinião
-menu-menuitem-faq = Perguntas frequentes
+about-logins-menu-menuitem-help = Ajuda
 menu-menuitem-android-app = { -lockwise-brand-short-name } para Android
 menu-menuitem-iphone-app = { -lockwise-brand-short-name } para iPhone e iPad
 
@@ -57,9 +56,16 @@ login-list-last-changed-option = Última modificação
 login-list-last-used-option = Último uso
 login-list-intro-title = Nenhuma conta encontrada
 login-list-intro-description = Quando você salva uma senha no { -brand-product-name }, ela aparece aqui.
+about-logins-login-list-empty-search-title = Nenhuma conta encontrada
+about-logins-login-list-empty-search-description = Nenhum resultado corresponde à sua busca.
 login-list-item-title-new-login = Nova conta
 login-list-item-subtitle-new-login = Informe as credenciais da sua conta
 login-list-item-subtitle-missing-username = (sem nome de usuário)
+about-logins-list-item-warning-icon =
+    .alt = Ícone de alerta
+    .title = Site vazado
+about-logins-list-item-breach-icon =
+    .title = Site vazado
 
 ## Introduction screen
 
@@ -67,7 +73,7 @@ login-intro-heading = Procurando suas contas salvas? Configure o { -sync-brand-s
 login-intro-description = Se você salvou suas contas no { -brand-product-name } em outro dispositivo, veja como tê-las aqui:
 login-intro-instruction-fxa = Crie ou entre na sua { -fxaccount-brand-name } no dispositivo onde suas contas estão salvas
 login-intro-instruction-fxa-settings = Selecione a opção 'Contas de acesso' nas configurações do { -sync-brand-short-name }
-login-intro-instruction-faq = Visite as <a data-l10n-name="faq">perguntas frequentes</a> do { -lockwise-brand-short-name } para mais ajuda
+about-logins-intro-instruction-help = Caso precise de mais ajuda, visite o <a data-l10n-name="help-link">suporte do { -lockwise-brand-short-name }</a>
 
 ## Login
 
@@ -77,10 +83,9 @@ login-item-delete-button = Excluir
 login-item-origin-label = Endereço do site
 login-item-origin =
     .placeholder = https://www.example.com
-login-item-open-site-button = Iniciar
 login-item-username-label = Nome de usuário
-login-item-username =
-    .placeholder = nome@example.com
+about-logins-login-item-username =
+    .placeholder = (sem nome de usuário)
 login-item-copy-username-button-text = Copiar
 login-item-copied-username-button-text = Copiado!
 login-item-password-label = Senha
@@ -134,3 +139,18 @@ breach-alert-text = Senhas foram vazadas ou roubadas deste site desde a última 
 breach-alert-link = Saiba mais sobre este vazamento.
 breach-alert-dismiss =
     .title = Fechar este alerta
+
+## Error Messages
+
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login = Já existe um item de { $loginTitle } com este nome de usuário.
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = Já existe um item de { $loginTitle } com este nome de usuário. <a data-l10n-name="duplicate-link">Ir para o item existente?</a>
+# This is a generic error message.
+about-logins-error-message-default = Ocorreu um erro ao tentar salvar esta senha.

@@ -2,8 +2,15 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## These messages are used as headings in the recommendation doorhanger
+
 cfr-doorhanger-extension-heading = Zgjerim i Këshilluar
+cfr-doorhanger-feature-heading = Veçori e Këshilluar
 cfr-doorhanger-pintab-heading = Provoni Këtë: Fiksoni Skedë
+
+
+
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Pse më del kjo?
 cfr-doorhanger-extension-cancel-button = Jo Tani
@@ -62,3 +69,80 @@ cfr-doorhanger-bookmark-fxa-link-text = Njëkohësoni faqerojtës që tani…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Buton mbylljeje
     .title = Mbylle
+
+## Protections panel
+
+cfr-protections-panel-header = Shfletoni pa qenë i ndjekur
+cfr-protections-panel-body = Mbajini për vete të dhënat tuaja. { -brand-short-name } ju mbron nga shumë prej gjurmuesve më të rëndomtë që ndjekin ç’bëni në internet.
+cfr-protections-panel-link-text = Mësoni më tepër
+
+## What's New toolbar button and panel
+
+cfr-whatsnew-button =
+    .label = Ç’ka të Re
+    .tooltiptext = Ç’ka të Re
+cfr-whatsnew-panel-header = Ç’ka të Re
+cfr-whatsnew-release-notes-link-text = Lexoni shënimet mbi hedhjen në qarkullim
+cfr-whatsnew-fx70-title = { -brand-short-name } tanimë ndeshet më fort për privatësinë tuaj
+cfr-whatsnew-fx70-body = Përditësimet më të reja thellojnë veçorinë e Mbrojtjes Nga Gjurmimi dhe e bëjnë më të lehtë se kurrë krijimin e fjalëkalimeve të siguruar për çdo sajt.
+cfr-whatsnew-tracking-protect-title = Mbroni veten nga gjurmuesit
+cfr-whatsnew-tracking-protect-body = { -brand-short-name } bllokon mjaft gjurmues të rëndomtë rrjetesh shoqërorë dhe të tjerë që ju ndjekin nga sajti në sajt për të gjurmuar ç’bëni në internet.
+cfr-whatsnew-tracking-protect-link-text = Shihni Raportin Tuaj
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+        [one] Gjurmues i bllokuar
+       *[other] Gjurmues të bllokuar
+    }
+cfr-whatsnew-tracking-blocked-subtitle = Që prej { DATETIME($earliestDate, month: "long", year: "numeric") }
+cfr-whatsnew-tracking-blocked-link-text = Shihni Raportin
+cfr-whatsnew-lockwise-backup-title = Kopjeruani fjalëkalimet tuaj
+cfr-whatsnew-lockwise-backup-body = Tanimë prodhoni fjalëkalime të siguruar që mund t’i përdorni kudo që bëni hyrje.
+cfr-whatsnew-lockwise-backup-link-text = Aktivizoni kopjeruajtjet
+cfr-whatsnew-lockwise-take-title = Merrini fjalëkalimet tuaj me vete
+cfr-whatsnew-lockwise-take-body = Aplikacioni { -lockwise-brand-short-name } për celular ju lejon të përdorni në mënyrë të parrezik prej ngado fjalëkalimet që keni kopjeruajtur.
+cfr-whatsnew-lockwise-take-link-text = Merrni aplikacionin
+
+## Bookmark Sync
+
+cfr-doorhanger-sync-bookmarks-header = Merreni këtë faqerojtës në telefonin tuaj
+cfr-doorhanger-sync-bookmarks-body = Merrini faqerojtësit tuaj, fjalëkalimet, historikun, etj, kudo ku keni bërë hyrjen në { -brand-product-name }.
+cfr-doorhanger-sync-bookmarks-ok-button = Aktivizoni { -sync-brand-short-name }
+    .accesskey = A
+
+## Login Sync
+
+cfr-doorhanger-sync-logins-header = Mos Humbni Kurrë Më një Fjalëkalim
+cfr-doorhanger-sync-logins-body = Depozitoni dhe njëkohësoni në mënyrë të sigurt fjalëkalimet tuaj në krejt pajisjet tuaja.
+cfr-doorhanger-sync-logins-ok-button = Aktivizoni { -sync-brand-short-name }
+    .accesskey = A
+
+## Send Tab
+
+cfr-doorhanger-send-tab-header = Lexojeni në rrugë e sipër
+cfr-doorhanger-send-tab-recipe-header = Merreni këtë recetë gatimi me vete në kuzhinë
+cfr-doorhanger-send-tab-body = Dërgoni Skeda ju lejon ta ndani lehtësisht këtë lidhje në telefonin tuaj ose kudo ku keni bërë hyrjen te { -brand-product-name }-i.
+cfr-doorhanger-send-tab-ok-button = Provoni Dërgim Skedash
+    .accesskey = P
+
+## Firefox Send
+
+cfr-doorhanger-firefox-send-header = Ndajeni me të tjerët në mënyrë të parrezik këtë PDF
+cfr-doorhanger-firefox-send-body = Mbajini dokumentet tuaj rezervat të parrezikuar nga sy përgjues, me fshehtëzim skaj-më-skaj dhe një lidhje që zhduket pasi të keni mbaruar punë.
+cfr-doorhanger-firefox-send-ok-button = Provoni { -send-brand-name }
+    .accesskey = P
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-ok-button = Shihni Mbrojtje
+    .accesskey = o
+cfr-doorhanger-socialtracking-close-button = Mbylle
+    .accesskey = M
+cfr-doorhanger-socialtracking-heading = { -brand-short-name } ndali gjurmimin tuaj këtu prej një rrjeti shoqëror
+cfr-doorhanger-socialtracking-description = Privatësia juaj ka vlerë. { -brand-short-name } tanimë bllokon gjurmues prej rrjetesh të zakonshëm mediash shoqërore, duke kufizuar sa të dhëna mund të grumbullojnë rreth asaj çka bëni në internet.
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name } bllokoi në këtë faqe nëj krijuesh shenjash gishtash
+cfr-doorhanger-fingerprinters-description = Privatësia juaj ka vlerë. { -brand-short-name } tanimë bllokon krijues shenjash gishtash, të cilët grumbullojnë rreth pajisjes tuaj të dhëna të identifikueshme në mënyrë unike për t’ju gjurmuar.
+cfr-doorhanger-cryptominers-heading = { -brand-short-name } bllokoi në këtë faqe një nxjerrës kriptomonedhash
+cfr-doorhanger-cryptominers-description = Privatësia juaj ka vlerë. { -brand-short-name } tanimë bllokon nxjerrës kriptomonedhash, të cilët përdorin fuqinë e përllogaritjes së sistemit tuaj për të nxjerrë para dixhitale.

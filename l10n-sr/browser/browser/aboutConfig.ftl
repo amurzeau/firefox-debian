@@ -7,7 +7,7 @@ about-config-warning-title = Опасности следе!
 about-config-warning-text = Промена ових напредних подешавања може бити погубна по стабилност, безбедност и перформансе овог програма. Наставите само ако знате шта радите.
 about-config-warning-checkbox = Досађуј ми и следећи пут, молићу!
 about-config-warning-button = Прихватам ризик
-about-config-title = about:config
+about-config2-title = Напредне конфигурације
 about-config-search-input =
     .placeholder = Претражи
 about-config-show-all = Прикажи све
@@ -17,6 +17,18 @@ about-config-pref-edit = Уреди
 about-config-pref-save = Сачувај
 about-config-pref-reset = Поново постави
 about-config-pref-delete = Обриши
+about-config-pref-add-button =
+    .title = Додај
+about-config-pref-toggle-button =
+    .title = Промени стање
+about-config-pref-edit-button =
+    .title = Уреди
+about-config-pref-save-button =
+    .title = Сачувај
+about-config-pref-reset-button =
+    .title = Поново постави
+about-config-pref-delete-button =
+    .title = Обриши
 
 ## Labels for the type selection radio buttons shown when adding preferences.
 

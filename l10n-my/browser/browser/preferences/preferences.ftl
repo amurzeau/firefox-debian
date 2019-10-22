@@ -227,6 +227,62 @@ applications-type-column =
 applications-action-column =
     .label = ဆောင်ရွက်ချက်
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } ဖိုင်
+applications-action-save =
+    .label = ဖိုင်ကို သိမ်းဆည်းပါ
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = { $app-name } ကို အသုံးပြုပါ
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = { $app-name } ကို အသုံးပြုပါ (မူလသတ်မှတ်ချက်)
+applications-use-other =
+    .label = အခြားအက်ပ်ကို အသုံးပြုရန်…
+applications-select-helper = အကူအညီပေး အက်ပလီကေးရှင်းအားရွေးပါ
+applications-manage-app =
+    .label = အက်ပလီကေ:ရှင်းအသေးစိတ်...
+applications-always-ask =
+    .label = အမြဲမေးပါ
+applications-type-pdf = သယ်ယူရလွယ်ကူသော စာတမ်းပုံစံ (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = ({ $plugin-name } တွင်) { -brand-short-name } ကို အသုံးပြုပါ
+applications-preview-inapp =
+    .label = { -brand-short-name } တွင် အစမ်းကြည့်ရန်
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 drm-content-header = Digital Rights Management (DRM) အကြောင်းအရာ
 play-drm-content =
     .label = DRMဖြင့်ထိန်းထားသော အကြောင်းအရာကို ဖွင့်ပါ
@@ -540,6 +596,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = အဓိကစကားဝှက်ကို ပြောင်းလဲရန်…
     .accesskey = M
+forms-master-pw-fips-title = လတ်တလော FIPS အသွင်အတွင်း ရှိသည်။ FIPSသည် ‌ဗလာမဖြစ်သော ပင်မစကားဝှက်တစ်ခု လိုအပ်နေသည်။
+forms-master-pw-fips-desc = စကားဝှက်ပြောင်းလဲမှု မအောင်မြင်ပါ
 
 ## Privacy Section - History
 
@@ -628,6 +686,19 @@ content-blocking-setting-custom =
 content-blocking-custom-desc = ပိတ်ပင်မည့်အရာကို ရွေးပါ။
 content-blocking-private-trackers = ဝင်းဒိုးအားလုံးတွင်ထင်ရှားခြေရာခံမှုများ
 content-blocking-third-party-cookies = သက်ဗ်ပါတီခြေရာခံနေသောကွတ်ကီးများ
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+enhanced-tracking-protection-setting-strict =
+    .label = တားမြစ်ရန်
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = စိတ်ကြိုက်
+    .accesskey = C
+
+##
+
 content-blocking-all-cookies = ကွတ်ကီးအားလုံး
 content-blocking-unvisited-cookies = မလည်ပတ်သောဆိုက်များမှ ကွတ်ကီးများ
 content-blocking-all-windows-trackers = ဝင်းဒိုးအားလုံးတွင် ထင်ရှားခြေရာခံမှုများ

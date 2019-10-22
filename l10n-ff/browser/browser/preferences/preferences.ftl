@@ -125,11 +125,13 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Artir rogere ɓennunde ndee
     .accesskey = s
+startup-restore-warn-on-quit =
+    .label = Reentin am tuma uddol wanngorde ndee
 disable-extension =
     .label = Daaƴ Jokkel
 tabs-group-header = Tabbe
 ctrl-tab-recently-used-order =
-    .label = Ctrl+Tab yaaɓat hakkunde tabbe e gorol kuutoragol ɓennungol
+    .label = Ctrl+Tab yaaɓat hakkunde tabbe e deggondiral kuutoragol ɓennungol
     .accesskey = T
 open-new-link-as-tabs =
     .label = Uddit jokke e nder tabbe waasa wonde e kenorɗe kese ɗee
@@ -233,7 +235,7 @@ download-choose-folder =
            *[other] y
         }
 download-always-ask-where =
-    .label = Kala sahaa naamno mi ɗo piille ndaɗndetee
+    .label = Kala sahaa naamno mi ɗo piille ndanndetee
     .accesskey = K
 applications-header = Jaaɓnirɗe
 applications-description = Suɓo no { -brand-short-name } waɗdata e piille ɗe ngaawtoto-ɗaa e geese walla jaaɓnirɗe ɗe kuutorto-ɗaa tuma banngagol maa.
@@ -245,6 +247,62 @@ applications-type-column =
 applications-action-column =
     .label = Baɗal
     .accesskey = B
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = Fiilde { $extension }
+applications-action-save =
+    .label = Danndu Fiilde
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Huutoro { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Huutoro { $app-name } (goowaaɗo)
+applications-use-other =
+    .label = Huutoro goɗngal…
+applications-select-helper = Labo Jaaɓnirgal Ballal
+applications-manage-app =
+    .label = Humpito Jaaɓnirgal…
+applications-always-ask =
+    .label = Naamno sahaa kala
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Huutoro { $plugin-name } (nder { -brand-short-name })
+applications-preview-inapp =
+    .label = Yiytino e { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = Loowdi Toppitagol Jojjanɗe Ngaandiwe (DRM)
 play-drm-content =
     .label = Tar loowdi curdaandi DRM
@@ -258,7 +316,7 @@ update-history =
     .accesskey = e
 update-application-allow-description = Yamir { -brand-short-name } to
 update-application-auto =
-    .label = Aafande hoore mum kesɗitine (ina wasiyaa)
+    .label = Aafde kesɗitinee jaajol (ina wasiyaa)
     .accesskey = A
 update-application-check-choose =
     .label = Yuurnito kesɗitine, kono woppu am mi suɓoo aafat ɗe
@@ -266,11 +324,12 @@ update-application-check-choose =
 update-application-manual =
     .label = Hoto yuurnito kesɗitine (wasiyaaka)
     .accesskey = u
+update-application-warning-cross-user-setting = Ngol teeltol maa jammine e konte Windows kala kam e keftinirɗe { -brand-short-name }  kuutortooɗe ndee aadannde { -brand-short-name }.
 update-application-use-service =
     .label = Huutoro carwol cakkitol ngam aafde kesɗitine
     .accesskey = c
 update-enable-search-update =
-    .label = Kesɗitingol ajaaja jiylorɗe
+    .label = Hesɗitin jiylorɗe e jaajol
     .accesskey = l
 update-pref-write-failure-title = Gallugol binndol
 # Variables:
@@ -299,7 +358,7 @@ performance-default-content-process-count =
 
 ## General Section - Browsing
 
-browsing-title = Nana feeroo
+browsing-title = Peeragol
 browsing-use-autoscroll =
     .label = Huutoro ŋaylogol jaajol
     .accesskey = a
@@ -337,7 +396,7 @@ home-new-windows-tabs-description2 = Suɓo ko njiyataa so a udditii hello maa ja
 ## Home Section - Home Page Customization
 
 home-homepage-mode-label = Hello jaɓɓorgo kam e kenorɗe kese
-home-newtabs-mode-label = Yabbe kese
+home-newtabs-mode-label = Tabbe kese
 home-restore-defaults =
     .label = Artir Goowaaɗe
     .accesskey = R
@@ -466,6 +525,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Nawor Geesa Maa
 sync-signedout-description = Sanngoɗin maantore maa, aslol, tabbe, finndeeji, ɓeyditte e cuɓoraade e kaɓirɗi maa fof.
 sync-signedout-account-title = Seŋoro { -fxaccount-brand-name }
@@ -485,6 +548,9 @@ sync-signedout-account-signin =
 sync-mobile-promo = Aawto Firefox mo <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> walla <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> ngam syncude kaɓirgol cinndol maa.
 
 ## Sync Section - Signed in
+
+
+## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Waylu natal heftinirde
@@ -506,6 +572,15 @@ sync-sign-in =
     .accesskey = g
 sync-signedin-settings-header = Yahdin teelte
 sync-signedin-settings-desc = Suɓo ko pot-ɗaa yahdinde nder masiŋon maa kuutortookon { -brand-short-name }.
+
+## Sync section - enabling or disabling sync.
+
+
+## The list of things currently syncing.
+
+
+## The "Choose what to sync" dialog.
+
 sync-engine-bookmarks =
     .label = Maantore am
     .accesskey = t
@@ -540,6 +615,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Teelte Kuuɓɗe Suturo kam e Kisal ɗe mbayluɗaa
     .accesskey = e
+
+## The device name controls.
+
 sync-device-name-header = Innde Kaɓirgol
 sync-device-name-change =
     .label = Waylu Innde Kaɓirgel…
@@ -575,6 +653,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Waylu Finnde Baabaare…
     .accesskey = B
+forms-master-pw-fips-title = Ngon-ɗaa ɗoo ko e mbayka FIPS. Mbayka FIPS ena naamnii Finnde Baabaare nde ɓolɗaani.
+forms-master-pw-fips-desc = Baylugol Finnde Woorii
 
 ## Privacy Section - History
 
@@ -665,6 +745,13 @@ addressbar-suggestions-settings = Waylu cuɓe wonande cakkitte yiylorde
 
 content-blocking-header = Paddagol loowdi
 content-blocking-learn-more = Ɓeydu humpito
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+
+
+
 content-blocking-tracking-protection-change-block-list = Waylo doggol padde
 
 ## Privacy Section - Tracking

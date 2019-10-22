@@ -7,10 +7,24 @@ about-config-warning-title = Njech su tu zmije!
 about-config-warning-text = Hdyž tute rozšěrjene nastajenja změniće, móže so to škódnje na stabilitu, wěstotu a wukon tutoho nałoženja wuskutkować. Wy měł jenož z tym pokročować, jeli sće sej wěsty, štož činiće.
 about-config-warning-checkbox = Wobćežuj mje zaso prošu!
 about-config-warning-button = Akceptuju riziko
-about-config-title = about:config
 about-config2-title = Rozšěrjene konfiguracije
 about-config-search-input =
     .placeholder = Pytać
+
+## These strings appear on the warning you see when first visiting about:config.
+
+about-config-intro-warning-title = Pokročujće z kedźbliwosću
+about-config-intro-warning-text = Hdyž nastajenja rozšěrjeneje konfiguracije změniće, móže to wukon abo wěstotu { -brand-short-name } wobwliwować.
+about-config-intro-warning-checkbox = Warnować, hdyž pospytuju, přistup na tute nastajenja dóstać
+about-config-intro-warning-button = Riziko akceptować a pokročować
+
+
+
+# This is shown on the page before searching but after the warning is accepted.
+about-config-caution-text = Hdyž tute nastajenja změniće, móže to wukon abo wěstotu { -brand-short-name } wobwliwować.
+about-config-page-title = Rozšěrjene nastajenja
+about-config-search-input1 =
+    .placeholder = Mjeno nastajenja pytać
 about-config-show-all = Wšě pokazać
 about-config-pref-add = Přidać
 about-config-pref-toggle = Přešaltować
@@ -18,6 +32,18 @@ about-config-pref-edit = Wobdźěłać
 about-config-pref-save = Składować
 about-config-pref-reset = Wróćo stajić
 about-config-pref-delete = Zhašeć
+about-config-pref-add-button =
+    .title = Přidać
+about-config-pref-toggle-button =
+    .title = Přepinać
+about-config-pref-edit-button =
+    .title = Wobdźěłać
+about-config-pref-save-button =
+    .title = Składować
+about-config-pref-reset-button =
+    .title = Wróćo stajić
+about-config-pref-delete-button =
+    .title = Zhašeć
 
 ## Labels for the type selection radio buttons shown when adding preferences.
 

@@ -252,6 +252,62 @@ applications-type-column =
 applications-action-column =
     .label = Açion
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = schedaio { $extension }
+applications-action-save =
+    .label = Sarva schedaio
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Adeuvia { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Adeuvia { $app-name } (predefinio)
+applications-use-other =
+    .label = Adeuvia atro…
+applications-select-helper = Seleçionn-a 'na aplicaçion de agiutto
+applications-manage-app =
+    .label = Detalli da aplicaçion…
+applications-always-ask =
+    .label = Domanda de longo
+applications-type-pdf = PDF (Portable Document Format)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Adeuvia { $plugin-name } (in { -brand-short-name })
+applications-preview-inapp =
+    .label = Anteprimma in { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = Contegnuo da Gestion di Diritti Digitali (DRM)
 play-drm-content =
     .label = Riproduxi o contegnuo DRM-controlled
@@ -322,6 +378,7 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Çerca tanto che son derê a scrive
     .accesskey = s
+browsing-picture-in-picture-learn-more = Atre informaçioin
 browsing-cfr-recommendations =
     .label = Consegime estenscioin quande navego
     .accesskey = C
@@ -588,6 +645,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Cangia a paròlla segreta prinçipâ…
     .accesskey = C
+forms-master-pw-fips-title = Òua t'ê into mòddo FIPS. A-o FIPS serve 'na paròlla segreta prinçipâ che a no segge veua.
+forms-master-pw-fips-desc = Cangio de paròlla segreta no riescio
 
 ## Privacy Section - History
 
@@ -701,6 +760,23 @@ content-blocking-strict-description = Proteçion ciù fòrte, çerti sciti porie
 content-blocking-custom-desc = Çerni cöse blòccâ
 content-blocking-private-trackers = Elementi che tracian conosciui inti barcoin privæ
 content-blocking-third-party-cookies = Cookie che tracian de terse parte
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Standard
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = Restritivo
+    .accesskey = R
+enhanced-tracking-protection-setting-custom =
+    .label = Personalizzou
+    .accesskey = P
+
+
+
 content-blocking-all-cookies = Tutti i cookie
 content-blocking-all-windows-trackers = Elementi che tracian conosciui in tutti i barcoin
 content-blocking-all-third-party-cookies = Tutti i cookie de terse parte
@@ -767,6 +843,9 @@ permissions-notification-pause =
 permissions-block-autoplay-media-exceptions =
     .label = Eceçioin…
     .accesskey = E
+permissions-autoplay-settings =
+    .label = Inpostaçioin…
+    .accesskey = t
 permissions-block-popups =
     .label = Blòcca i barcoin de pop-up
     .accesskey = B

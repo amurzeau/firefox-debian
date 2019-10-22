@@ -118,7 +118,7 @@ startup-header = ჩართვისას
 separate-profile-mode =
     .label = ნებართვა, რომ { -brand-short-name } და Firefox გაეშვას ერთდროულად
 use-firefox-sync = რჩევა: ეს სხვადასხვა პროფილებს იყენებს. მათ შორის მონაცემების გასაზიარებლად { -sync-brand-short-name } გამოიყენეთ.
-get-started-not-logged-in = შედით { -sync-brand-short-name }ში…
+get-started-not-logged-in = { -sync-brand-short-name } – შესვლა...
 get-started-configured = { -sync-brand-short-name(case: "gen") } პარამეტრების გახსნა
 always-check-default =
     .label = ყოველთვის შემოწმდეს, არის თუ არა { -brand-short-name } ნაგულისხმევი ბრაუზერი
@@ -253,6 +253,62 @@ applications-type-column =
 applications-action-column =
     .label = ქმედება
     .accesskey = ქ
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } ფაილი
+applications-action-save =
+    .label = ფაილის შენახვა
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = { $app-name } (ნაგულისხმევი)
+applications-use-other =
+    .label = სხვა პროგრამა…
+applications-select-helper = დამხმარე პროგრამის შერჩევა
+applications-manage-app =
+    .label = პროგრამის შესახებ…
+applications-always-ask =
+    .label = შეკითხვა ყოველ ჯერზე
+applications-type-pdf = PDF (გადასატანი დოკუმენტი)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = { $plugin-name } მოდული ({ -brand-short-name }-ში)
+applications-preview-inapp =
+    .label = გახსნის { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = ციფრული უფლებების მართვის (DRM) შიგთავსი
 play-drm-content =
     .label = DRM-ს დაქვემდებარებული შიგთავსის გაშვება
@@ -339,6 +395,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = ტექსტის ძიება აკრეფის დაწყებისთანავე
     .accesskey = ტ
+browsing-picture-in-picture-toggle-enabled =
+    .label = ეკრანი-ეკრანში ვიდეოს სამართავი
+    .accesskey = მ
+browsing-picture-in-picture-learn-more = ვრცლად
 browsing-cfr-recommendations =
     .label = გაფართოებების შემოთავაზებები ძიებისას
     .accesskey = შ
@@ -428,7 +488,7 @@ home-prefs-highlights-option-saved-to-pocket =
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = ცნობები
-home-prefs-snippets-description = სიახლეები { -vendor-short-name }-სა და { -brand-product-name }-ისგან
+home-prefs-snippets-description = სიახლეები, რომელთაც გთავაზობთ { -vendor-short-name } და { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -445,6 +505,12 @@ search-bar-shown =
     .label = ძიების ველის დამატება ხელსაწყოთა ზოლზე
 search-engine-default-header = ნაგულისხმევი საძიებო სისტემა
 search-engine-default-desc = მიუთითეთ ნაგულისხმევი საძიებო სისტემა, რომელსაც გამოიყენებთ მისამართებისა და ძიების ველებში.
+search-engine-default-private-desc = მიუთითეთ ნაგულისხმევი საძიებო სისტემა, პირადი ფანჯრებისთვის.
+search-separate-default-engine =
+    .label = ამ საძიებოს გამოყენება პირად ფანჯრებში
+    .accesskey = პ
+search-suggestions-header = ძიების შემოთავაზებები
+search-suggestions-desc = მიუთითეთ, თუ როგორ გსურთ გამოჩნდეს შემოთავაზებები საძიებოებიდან.
 search-suggestions-option =
     .label = ძიების შემოთავაზებები
     .accesskey = ძ
@@ -458,6 +524,7 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = ძიების შემოთავაზებების, მონახულებული გვერდების ისტორიაზე წინ გამოჩენა, მისამართების ველის შედეგებში
+suggestions-addressbar-settings = პარამეტრების შეცვლა ისტორიის, სანიშნებისა და ჩანართის შემოთავაზებებისთვის
 search-suggestions-cant-show = მისამართების ველში ძიების შემოთავაზებები არ გამოჩნდება, ვინაიდან მითითებული გაქვთ, რომ { -brand-short-name } არასოდეს დაიმახსოვრებს ისტორიას.
 search-one-click-header = ერთწკაპიანი საძიებო სისტემები
 search-one-click-desc = მიუთითეთ სათადარიგო საძიებო სისტემები, რომლებიც გამოჩნდება მისამართებისა და ძიების ველების ქვემოთ, საძებნი ფრაზის აკრეფისას.
@@ -494,6 +561,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = წაიყოლეთ თქვენი მონაცემები თან
 sync-signedout-description = დაასინქრონეთ თქვენი სანიშნები, ისტორია, ჩანართები, პაროლები, დამატებები და პარამეტრები ყველა მოწყობილობაზე.
 sync-signedout-account-title = { -fxaccount-brand-name } – დაკავშირება
@@ -514,10 +585,16 @@ sync-mobile-promo = Firefox ჩამოტვირთეთ <img data-l10n-nam
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = პროფილის სურათის შეცვლა
 sync-disconnect =
     .label = გამოთიშვა…
+    .accesskey = გ
+sync-sign-out =
+    .label = გამოსვლა...
     .accesskey = გ
 sync-manage-account = ანგარიშის მართვა
     .accesskey = მ
@@ -534,6 +611,45 @@ sync-sign-in =
     .accesskey = ვ
 sync-signedin-settings-header = სინქრონიზაციის პარამეტრები
 sync-signedin-settings-desc = აირჩიეთ, რისი დასინქრონება გსურთ { -brand-short-name }-ით თქვენს მოწყობილობაზე.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = დასინქრონება: ჩართ.
+prefs-syncing-off = დასინქრონება: გამორ.
+prefs-sync-setup =
+    .label = გამართეთ { -sync-brand-short-name }...
+    .accesskey = თ
+prefs-sync-offer-setup-label = დაასინქრონეთ თქვენი სანიშნეები, ისტორია, ჩანართები, პაროლები, დამატებები და პარამეტრები ყველა მოწყობილობაზე.
+prefs-sync-now =
+    .labelnotsyncing = დასინქრონება ახლავე
+    .accesskeynotsyncing = ნ
+    .labelsyncing = სინქრონდება...
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = ამჟამად დასინქრონებულია:
+sync-currently-syncing-bookmarks = სანიშნები
+sync-currently-syncing-history = ისტორია
+sync-currently-syncing-tabs = გახსნილი ჩანართები
+sync-currently-syncing-logins-passwords = ანგარიშები და პაროლები
+sync-currently-syncing-addresses = მისამართები
+sync-currently-syncing-creditcards = საკრედიტო ბარათები
+sync-currently-syncing-addons = დამატებები
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] პარამეტრები
+       *[other] პარამეტრები
+    }
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = აირჩიეთ, რა დასინქრონდეს
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = ცვლილებების შენახვა
+    .buttonaccesskeyaccept = ხ
+    .buttonlabelextra2 = გამოთიშვა...
+    .buttonaccesskeyextra2 = შ
 sync-engine-bookmarks =
     .label = სანიშნები
     .accesskey = ს
@@ -548,6 +664,10 @@ sync-engine-logins =
     .label = შესვლები
     .tooltiptext = შენახული სახელები და პაროლები
     .accesskey = შ
+sync-engine-logins-passwords =
+    .label = ანგარიშები და პაროლები
+    .tooltiptext = მომხმარებლის შენახული სახელები და პაროლები
+    .accesskey = ო
 sync-engine-addresses =
     .label = მისამართები
     .tooltiptext = შენახული საფოსტო მისამართები (კომპიუტერზე მხოლოდ)
@@ -568,6 +688,9 @@ sync-engine-prefs =
         }
     .tooltiptext = ზოგადი, პირადულობისა და უსაფრთხოების ჩასწორებული პარამეტრები
     .accesskey = რ
+
+## The device name controls.
+
 sync-device-name-header = მოწყობილობის სახელი
 sync-device-name-change =
     .label = მოწყობილობის სახელის შეცვლა…
@@ -600,6 +723,10 @@ forms-exceptions =
 forms-generate-passwords =
     .label = ძლიერი პაროლების შემოთავაზება და შედგენა
     .accesskey = ზ
+forms-breach-alerts =
+    .label = შეტყობინება პაროლებზე, იერიშმიტანილი საიტებისთვის
+    .accesskey = შ
+forms-breach-alerts-learn-more-link = იხილეთ ვრცლად
 forms-fill-logins-and-passwords =
     .label = ანგარიშის მონაცემების თვითშევსება
     .accesskey = ა
@@ -612,6 +739,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = მთავარი პაროლის შეცვლა…
     .accesskey = მ
+forms-master-pw-fips-title = თქვენ FIPS რეჟიმში ხართ. FIPS საჭიროებს მთავარ პაროლს.
+forms-master-pw-fips-desc = პაროლის შეცვლა ვერ მოხერხდა
 
 ## Privacy Section - History
 
@@ -717,8 +846,9 @@ addressbar-suggestions-settings = საძიებო სისტემის
 ## Privacy Section - Content Blocking
 
 content-blocking-header = შიგთავსის შეზღუდვა
-content-blocking-enhanced-tracking-protection = თვალთვალისგან გაძლიერებული დაცვა
 content-blocking-section-description = დაიცავით პირადი მონაცემები საიტების მონახულებისას. შეზღუდეთ გვერდებზე ფარული ნაწილები, რომლებიც თვალს ადევნებს და აღრიცხავს ყველა საიტს, რომელსაც ეწვევით. ზოგიერთი მათგანის შეზღუდვა, აგრეთვე ასწრაფებს გვერდების ჩატვირთვასაც.
+content-blocking-enhanced-tracking-protection = თვალთვალისგან გაძლიერებული დაცვა
+content-blocking-section-top-level-description = მეთვალყურეები თან დაგყვებათ მთელ ინტერნეტში და აგროვებს ინფორმაციას თქვენი ჩვევებისა და მისწრაფებების შესახებ. { -brand-short-name } ზღუდავს ამ მეთვალყურეების უმეტესობასა და სხვა მავნე კოდებსაც.
 content-blocking-learn-more = იხილეთ ვრცლად
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -736,6 +866,23 @@ content-blocking-strict-description = გაძლიერებული დ�
 content-blocking-custom-desc = შესაზღუდი შიგთავსის შერჩევა.
 content-blocking-private-trackers = ცნობილი მეთვალყურეები მხოლოდ პირად ფანჯრებში.
 content-blocking-third-party-cookies = გარეშე მეთვალყურეების ფუნთუშები
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = ჩვეულებრივი
+    .accesskey = ჩ
+enhanced-tracking-protection-setting-strict =
+    .label = მკაცრი
+    .accesskey = კ
+enhanced-tracking-protection-setting-custom =
+    .label = მორგებული
+    .accesskey = გ
+
+
+
 content-blocking-etp-standard-desc = წონასწორული უსაფრთხოებასა და წარმადობას შორის. გვერდები ჩაიტვირთება ჩვეულებრივ.
 content-blocking-etp-strict-desc = მძლავრი დაცვა, თუმცა გამოიწვევს საიტების ან შიგთავსის ნაწილის გაუმართაობას.
 content-blocking-etp-custom-desc = აირჩიეთ, რომელი მეთვალყურე საშუალებები შეიზღუდოს

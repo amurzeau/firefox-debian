@@ -95,12 +95,17 @@ about-debugging-setup-usb-status-disabled = ਅਸਮਰੱਥ ਕੀਤਾ
 about-debugging-setup-usb-status-updating = …ਅੱਪਡੇਟ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ
 # USB section step by step guide
 about-debugging-setup-usb-step-plug-device = ਐਂਡਰਾਈਡ ਡਿਵਾਈਸ ਨੂੰ ਆਪਣੇ ਕੰਪਿਊਟਰ ਨਾਲ ਕਨੈਕਟ ਕਰੋ।
+# Text shown in the USB section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/docs/Tools/Remote_Debugging/Debugging_over_USB
+about-debugging-setup-usb-troubleshoot = ਕੀ USB ਡਿਵਾਈਸ ਨਾਲ ਕਨੈਕਟ ਕਰਨ ਸਮੱਸਿਆਵਾਂ ਹਨ? <a>ਹੱਲ਼ ਲੱਭੋ</a>
 # Network section of the Setup page
 about-debugging-setup-network =
     .title = ਨੈੱਟਵਰਕ ਟਿਕਾਣਾ
 # Text of a button displayed after the network locations "Host" input.
 # Clicking on it will add the new network location to the list.
 about-debugging-network-locations-add-button = ਜੋੜੋ
+# Text to display when there are no locations to show.
+about-debugging-network-locations-empty-text = ਕੋਈ ਵੀ ਨੈੱਟਵਰਕ ਟਿਕਾਣੇ ਹਾਲੇ ਜੋੜੇ ਨਹੀਂ ਗਏ ਹਨ।
 # Text of the label for the text input that allows users to add new network locations in
 # the Connect page. A host is a hostname and a port separated by a colon, as suggested by
 # the input's placeholder "localhost:6080".
@@ -162,12 +167,26 @@ about-debugging-collapse-expand-debug-targets = ਸਮੇਟੋ/ਫੈਲਾਓ
 # Displayed in the categories of "runtime" pages that don't have any debug target to
 # show. Debug targets depend on the category (extensions, tabs, workers...).
 about-debugging-debug-target-list-empty = ਹਾਲੇ ਤੱਕ ਕੁਝ ਨਹੀਂ।
+# Text of a button displayed next to debug targets of "runtime" pages. Clicking on this
+# button will open a DevTools toolbox that will allow inspecting the target.
+# A target can be an addon, a tab, a worker...
+about-debugging-debug-target-inspect-button = ਜਾਂਚ ਕਰੋ
+# Text of a button displayed in the "This Firefox" page, in the Temporary Extension
+# section. Clicking on the button will open a file picker to load a temporary extension
+about-debugging-tmp-extension-install-button = …ਅਸਥਾਈ ਐਡ-ਆਨ ਲੋਡ ਕਰੋ
+# Text displayed when trying to install a temporary extension in the "This Firefox" page.
+about-debugging-tmp-extension-install-error = ਆਰਜ਼ੀ ਐਡ-ਆਨ ਇੰਸਟਾਲੇਸ਼ਨ ਦੌਰਾਨ ਗਲਤੀ ਆਈ ਸੀ।
 # Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will reload the extension.
 about-debugging-tmp-extension-reload-button = ਮੁੜ-ਲੋਡ ਕਰੋ
 # Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will uninstall the extension and remove it from the page.
 about-debugging-tmp-extension-remove-button = ਹਟਾਓ
+# Message displayed in the file picker that opens to select a temporary extension to load
+# (triggered by the button using "about-debugging-tmp-extension-install-button")
+# manifest.json .xpi and .zip should not be localized.
+# Note: this message is only displayed in Windows and Linux platforms.
+about-debugging-tmp-extension-install-message = Manifest.json ਫਾਇਲ ਜਾਂ .xpi / .zip ਅਕਾਇਵ ਚੁਣੋ
 # Text displayed for extensions in "runtime" pages, before displaying a link the extension's
 # manifest URL.
 about-debugging-extension-manifest-url =
@@ -193,3 +212,37 @@ about-debugging-worker-action-push = ਦੱਬੋ
 about-debugging-worker-action-start = ਸ਼ੁਰੂ ਕਰੋ
 # This string is displayed as a label of the button that unregisters a service worker.
 about-debugging-worker-action-unregister = ਅਣ-ਰਜਿਸਟਰ ਕਰੋ
+# Displayed for service workers in runtime pages that listen to Fetch events.
+about-debugging-worker-fetch-listening =
+    .label = ਲਵੋ
+    .value = ਫੈਚ ਈਵੈਂਟਾਂ ਲਈ ਸੁਣਨਾ
+# Displayed for service workers in runtime pages that do not listen to Fetch events.
+about-debugging-worker-fetch-not-listening =
+    .label = ਲਵੋ
+    .value = ਲੈਣ ਦੀਆਂ ਘਟਨਾਵਾਂ ਲਈ ਨਹੀਂ ਸੁਣ ਰਿਹਾ
+# Displayed for service workers in runtime pages that are currently running (service
+# worker instance is active).
+about-debugging-worker-status-running = ਚੱਲ-ਰਿਹਾ
+# Displayed for service workers in runtime pages that are registered but stopped.
+about-debugging-worker-status-stopped = ਰੁਕਿਆ
+# Displayed for service workers in runtime pages that are registering.
+about-debugging-worker-status-registering = ਰਜਿਸਟਰ ਕਰਨਾ
+# Displayed for service workers in runtime pages, to label the scope of a worker
+about-debugging-worker-scope =
+    .label = ਸਕੋਪ
+# Displayed for service workers in runtime pages, to label the push service endpoint (url)
+# of a worker
+about-debugging-worker-push-service =
+    .label = ਪੁਸ਼ ਸੇਵਾ
+# Displayed as name for the Main Process debug target in the Processes category. Only for
+# remote runtimes, if `devtools.aboutdebugging.process-debugging` is true.
+about-debugging-main-process-name = ਮੁੱਖ ਕਿਰਿਆ
+# Alt text used for the close icon of message component (warnings, errors and notifications).
+about-debugging-message-close-icon =
+    .alt = ਸੁਨੇਹਾ ਬੰਦ ਕਰੋ
+# Label text used for the error details of message component.
+about-debugging-message-details-label-error = ਗਲਤੀ ਵੇਰਵੇ
+# Label text used for the warning details of message component.
+about-debugging-message-details-label-warning = ਚੇਤਾਵਨੀ ਵੇਰਵੇ
+# Label text used for default state of details of message component.
+about-debugging-message-details-label = ਵੇਰਵੇ

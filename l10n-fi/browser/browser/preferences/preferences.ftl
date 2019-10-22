@@ -91,7 +91,7 @@ extension-controlled-privacy-containers = Laajennus, <img data-l10n-name="icon"/
 extension-controlled-websites-content-blocking-all-trackers = Laajennus, <img data-l10n-name="icon"/> { $name }, hallitsee tätä asetusta.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
-extension-controlled-proxy-config = Laajennus, <img data-l10n-name="icon"/> { $name }, hallitsee { -brand-short-name }in verkkoyhteysasetuksia.
+extension-controlled-proxy-config = Laajennus, <img data-l10n-name="icon"/> { $name }, hallitsee { -brand-short-name }-selaimen verkkoyhteysasetuksia.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -253,12 +253,68 @@ applications-type-column =
 applications-action-column =
     .label = Toiminto
     .accesskey = o
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension }-tiedosto
+applications-action-save =
+    .label = Tallenna tiedosto
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Käytä ohjelmaa { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Käytä ohjelmaa { $app-name } (oletus)
+applications-use-other =
+    .label = Valitse uusi apuohjelma…
+applications-select-helper = Valitse uusi apuohjelma
+applications-manage-app =
+    .label = Sovellusten tiedot…
+applications-always-ask =
+    .label = Kysy aina
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Käytä liitännäistä { $plugin-name } (ohjelmassa { -brand-short-name })
+applications-preview-inapp =
+    .label = Esikatsele { -brand-short-name }issa
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = Käyttöoikeuksien hallintaa (DRM) käyttävä sisältö
 play-drm-content =
     .label = Toista DRM-suojattua sisältöä
     .accesskey = D
 play-drm-content-learn-more = Lue lisää
-update-application-title = { -brand-short-name }in päivitykset
+update-application-title = Selaimen päivitykset
 update-application-description = Pidä { -brand-short-name } ajan tasalla parhaan suorituskyvyn, vakauden ja turvallisuuden vuoksi.
 update-application-version = Versio { $version } <a data-l10n-name="learn-more">Mitä uutta</a>
 update-history =
@@ -339,6 +395,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Ala etsiä tekstistä heti kirjoitettaessa
     .accesskey = A
+browsing-picture-in-picture-toggle-enabled =
+    .label = Käytä kuva kuvassa -video-ohjaimia
+    .accesskey = K
+browsing-picture-in-picture-learn-more = Lue lisää
 browsing-cfr-recommendations =
     .label = Suosittele laajennuksia selaamisen yhteydessä
     .accesskey = S
@@ -350,7 +410,7 @@ browsing-cfr-recommendations-learn-more = Lue lisää
 ## General Section - Proxy
 
 network-settings-title = Verkkoasetukset
-network-proxy-connection-description = Muokkaa { -brand-short-name }in verkkoyhteysasetuksia.
+network-proxy-connection-description = Muokkaa { -brand-short-name }-selaimen verkkoyhteysasetuksia.
 network-proxy-connection-learn-more = Lue lisää
 network-proxy-connection-settings =
     .label = Asetukset…
@@ -371,7 +431,7 @@ home-restore-defaults =
 # "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = Firefoxin aloitussivu (oletus)
+    .label = Firefox-aloitussivu (oletus)
 home-mode-choice-custom =
     .label = Omat osoitteet…
 home-mode-choice-blank =
@@ -395,9 +455,9 @@ choose-bookmark =
 
 ## Home Section - Firefox Home Content Customization
 
-home-prefs-content-header = Firefoxin aloitussivun sisältö
-home-prefs-content-description = Valitse Firefoxin aloitussivulle haluamasi sisältö.
-home-prefs-content-discovery-description = Firefoxin aloitussivun sisällön esittely näyttää laadukkaita ja olennaisia artikkeleita ympäri verkkoa.
+home-prefs-content-header = Firefox-aloitussivun sisältö
+home-prefs-content-description = Valitse Firefox-aloitussivulle haluamasi sisältö.
+home-prefs-content-discovery-description = Firefox-aloitussivulla olevassa sisällön esittelyosiossa näytetään laadukkaita ja olennaisia artikkeleita ympäri verkkoa.
 home-prefs-search-header =
     .label = Verkkohaku
 home-prefs-topsites-header =
@@ -445,6 +505,8 @@ search-bar-shown =
     .label = Lisää hakupalkki työkalupalkkiin
 search-engine-default-header = Oletushakukone
 search-engine-default-desc = Valitse oletushakukone, jota käytetään osoite- ja hakupalkissa.
+search-suggestions-header = Hakuehdotukset
+search-suggestions-desc = Valitse, millä tavalla hakukoneiden ehdotukset näkyvät.
 search-suggestions-option =
     .label = Näytä hakuehdotuksia
     .accesskey = N
@@ -494,6 +556,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Pidä oma selain aina mukanasi
 sync-signedout-description = Synkronoi kirjanmerkit, sivuhistoria, välilehdet, salasanat, lisäosat ja asetukset kaikilla laitteillasi.
 sync-signedout-account-title = Yhdistä { -fxaccount-brand-name(case: "illative") }
@@ -514,11 +580,17 @@ sync-mobile-promo = Lataa Firefox <img data-l10n-name="android-icon"/> <a data-l
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = Vaihda kuva
 sync-disconnect =
     .label = Katkaise yhteys…
     .accesskey = y
+sync-sign-out =
+    .label = Kirjaudu ulos…
+    .accesskey = K
 sync-manage-account = Hallinnoi tiliä
     .accesskey = H
 sync-signedin-unverified = Sähköpostiosoitetta { $email } ei ole vahvistettu.
@@ -534,6 +606,45 @@ sync-sign-in =
     .accesskey = r
 sync-signedin-settings-header = Synkronointiasetukset
 sync-signedin-settings-desc = Valitse tiedot, jotka synkronoidaan niiden laitteiden kanssa, joilla käytät { -brand-short-name }ia.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Synkronointi: PÄÄLLÄ
+prefs-syncing-off = Synkronointi: POIS PÄÄLTÄ
+prefs-sync-offer-setup-label = Synkronoi kirjanmerkit, historia, välilehdet, salasanat, lisäosat ja asetukset kaikkien laitteidesi välillä.
+prefs-sync-now =
+    .labelnotsyncing = Synkronoi nyt
+    .accesskeynotsyncing = N
+    .labelsyncing = Synkronoidaan…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = Näitä synkronoidaan parhaillaan:
+sync-currently-syncing-bookmarks = Kirjanmerkit
+sync-currently-syncing-history = Historia
+sync-currently-syncing-tabs = Avoimet välilehdet
+sync-currently-syncing-logins-passwords = Käyttäjätunnukset ja salasanat
+sync-currently-syncing-addresses = Osoitteet
+sync-currently-syncing-creditcards = Luottokortit
+sync-currently-syncing-addons = Lisäosat
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Asetukset
+       *[other] Asetukset
+    }
+sync-change-options =
+    .label = Muuta…
+    .accesskey = M
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = Valitse, mitä synkronoidaan
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Tallenna muutokset
+    .buttonaccesskeyaccept = T
+    .buttonlabelextra2 = Katkaise yhteys…
+    .buttonaccesskeyextra2 = K
 sync-engine-bookmarks =
     .label = Kirjanmerkit
     .accesskey = K
@@ -548,6 +659,10 @@ sync-engine-logins =
     .label = Kirjautumistiedot
     .tooltiptext = Tallentamasi käyttäjätunnukset ja salasanat
     .accesskey = r
+sync-engine-logins-passwords =
+    .label = Käyttäjätunnukset ja salasanat
+    .tooltiptext = Tallentamasi käyttäjätunnukset ja salasanat
+    .accesskey = u
 sync-engine-addresses =
     .label = Osoitteet
     .tooltiptext = Tallentamasi postiosoitteet (vain Firefoxin työpöytäversiossa)
@@ -568,6 +683,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Muuttamasi yleiset asetukset sekä tietosuoja- ja turvallisuusasetukset
     .accesskey = e
+
+## The device name controls.
+
 sync-device-name-header = Laitteen nimi
 sync-device-name-change =
     .label = Muuta laitteen nimeä…
@@ -600,6 +718,13 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Ehdota ja luo vahvoja salasanoja
     .accesskey = u
+forms-breach-alerts =
+    .label = Näytä hälytykset salasanoista sivustoille, jotka ovat kokeneet tietomurron
+    .accesskey = h
+forms-breach-alerts-learn-more-link = Lue lisää
+forms-fill-logins-and-passwords =
+    .label = Täytä automaattisesti käyttäjätunnukset ja salasanat
+    .accesskey = T
 forms-saved-logins =
     .label = Tallennetut kirjautumistiedot…
     .accesskey = k
@@ -609,6 +734,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Muuta pääsalasanaa…
     .accesskey = M
+forms-master-pw-fips-title = Olet FIPS-tilassa ja se vaatii pääsalasanan.
+forms-master-pw-fips-desc = Salasanan vaihto epäonnistui
 
 ## Privacy Section - History
 
@@ -676,6 +803,10 @@ sitedata-block-desc = Tyyppi
     .accesskey = T
 sitedata-option-block-trackers =
     .label = Kolmannen osapuolen seuraimet
+sitedata-option-block-cross-site-trackers =
+    .label = Sivustorajat ylittävät seuraimet
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Sivustorajat ylittävät ja sosiaalisen median seuraimet
 sitedata-option-block-unvisited =
     .label = Evästeet vierailemattomilta sivustoilta
 sitedata-option-block-all-third-party =
@@ -711,6 +842,8 @@ addressbar-suggestions-settings = Muuta hakukoneiden ehdotusten asetuksia
 
 content-blocking-header = Sisällön esto
 content-blocking-section-description = Suojaa yksityisyyttäsi selatessasi. Estä näkymätön sisältö, joka seuraa vierailemiasi sivuja ja profiloi sinua. Jonkin tällaisen sisällön estäminen saattaa nopeuttaa sivujen latautumista.
+content-blocking-enhanced-tracking-protection = Tehostettu seurannan suojaus
+content-blocking-section-top-level-description = Seuraimet seuraavat sinua verkossa ja keräävät tietoja selaustapoihisi ja kiinnostuksen kohteisiisi liittyen. { -brand-short-name } estää monet näistä seuraimista ja muita haitallisia komentosarjoja.
 content-blocking-learn-more = Lue lisää
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -728,10 +861,33 @@ content-blocking-strict-description = Vahvempi suoja. Saattaa aiheuttaa joidenki
 content-blocking-custom-desc = Valitse, mitä estetään.
 content-blocking-private-trackers = Tunnetut seuraimet vain yksityisissä ikkunoissa
 content-blocking-third-party-cookies = Kolmannen osapuolen seurainevästeet
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Tavallinen
+    .accesskey = T
+enhanced-tracking-protection-setting-strict =
+    .label = Tiukka
+    .accesskey = u
+enhanced-tracking-protection-setting-custom =
+    .label = Oma
+    .accesskey = O
+
+
+
+content-blocking-etp-standard-desc = Tasapainotettu suojauksen ja suorituskyvyn välillä. Sivut latautuvat normaalisti.
+content-blocking-etp-strict-desc = Vahvempi suojaus, mutta saattaa aiheuttaa sivustojen tai sisällön toimimattomuutta.
+content-blocking-etp-custom-desc = Valitse, mitkä seuraimet ja komentosarjat estetään.
+content-blocking-private-windows = Seurantaan tarkoitettu sisältö yksityisissä ikkunoissa
+content-blocking-cross-site-tracking-cookies = Sivustorajat ylittävät seurainevästeet
 content-blocking-social-media-trackers = Sosiaalisen median seuraimet
 content-blocking-all-cookies = Kaikki evästeet
 content-blocking-unvisited-cookies = Evästeet sivustoilta, joilla ei ole käyty
 content-blocking-all-windows-trackers = Tunnetut seuraimet kaikissa ikkunoissa
+content-blocking-all-windows-tracking-content = Seurantaan tarkoitettu sisältö kaikissa ikkunoissa
 content-blocking-all-third-party-cookies = Kaikki kolmannen osapuolen evästeet
 content-blocking-cryptominers = Kryptolouhijat
 content-blocking-fingerprinters = Yksilöijät
@@ -746,6 +902,9 @@ content-blocking-reload-tabs-button =
     .accesskey = P
 content-blocking-trackers-label =
     .label = Seuraimet
+    .accesskey = S
+content-blocking-tracking-content-label =
+    .label = Seurantaan tarkoitettu sisälö
     .accesskey = S
 content-blocking-tracking-protection-option-all-windows =
     .label = Kaikissa ikkunoissa
@@ -838,7 +997,7 @@ collection-studies =
     .label = Salli, että { -brand-short-name } asentaa ja suorittaa tutkimuksia
 collection-studies-link = Näytä { -brand-short-name }-tutkimukset
 addon-recommendations =
-    .label = Salli { -brand-short-name }in tehdä henkilökohtaisia laajennussuosituksia
+    .label = Salli, että { -brand-short-name } tekee henkilökohtaisia laajennussuosituksia
 addon-recommendations-link = Lue lisää
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.

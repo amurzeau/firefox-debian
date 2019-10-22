@@ -253,6 +253,62 @@ applications-type-column =
 applications-action-column =
     .label = Ενέργεια
     .accesskey = Ε
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } αρχείο
+applications-action-save =
+    .label = Αποθήκευση αρχείου
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Χρήση εφαρμογής "{ $app-name }"
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Χρήση εφαρμογής "{ $app-name }" (προεπιλογή)
+applications-use-other =
+    .label = Χρήση άλλης…
+applications-select-helper = Επιλογή βοηθητικής εφαρμογής
+applications-manage-app =
+    .label = Λεπτομέρειες εφαρμογής…
+applications-always-ask =
+    .label = Πάντα ερώτηση
+applications-type-pdf = Μορφή Φορητού Εγγράφου (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Χρήση αρθρώματος "{ $plugin-name }" (σε { -brand-short-name })
+applications-preview-inapp =
+    .label = Προεπισκόπηση σε { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 drm-content-header = Περιεχόμενο διαχείρισης ψηφιακών δικαιωμάτων (DRM)
 play-drm-content =
     .label = Αναπαραγωγή περιεχομένου με έλεγχο DRM
@@ -339,6 +395,7 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Αναζήτηση κειμένου κατά την έναρξη πληκτρολόγησης
     .accesskey = ν
+browsing-picture-in-picture-learn-more = Μάθετε περισσότερα
 browsing-cfr-recommendations =
     .label = Πρόταση επεκτάσεων κατά την περιήγησή σας
     .accesskey = Π
@@ -600,6 +657,7 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Πρόταση και δημιουργία ισχυρών κωδικών πρόσβασης
     .accesskey = ρ
+forms-breach-alerts-learn-more-link = Μάθετε περισσότερα
 forms-saved-logins =
     .label = Αποθηκευμένοι λογαριασμοί…
     .accesskey = π
@@ -609,6 +667,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Αλλαγή κύριου κωδικού…
     .accesskey = γ
+forms-master-pw-fips-title = Βρίσκεστε σε λειτουργία FIPS . Το FIPS απαιτεί ένα μη-κενό Κύριο κωδικό.
+forms-master-pw-fips-desc = Αποτυχία αλλαγής κωδικού
 
 ## Privacy Section - History
 
@@ -728,6 +788,23 @@ content-blocking-strict-description = Ισχυρότερη προστασία, �
 content-blocking-custom-desc = Επιλέξτε τι θα αποκλείεται.
 content-blocking-private-trackers = Γνωστοί ιχνηλάτες μόνο σε ιδιωτικά παράθυρα
 content-blocking-third-party-cookies = Cookies καταγραφής τρίτων
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Τυπική
+    .accesskey = Τ
+enhanced-tracking-protection-setting-strict =
+    .label = Αυστηρή
+    .accesskey = Α
+enhanced-tracking-protection-setting-custom =
+    .label = Προσαρμοσμένη
+    .accesskey = Π
+
+##
+
 content-blocking-all-cookies = Όλα τα cookies
 content-blocking-unvisited-cookies = Cookies από ιστοσελίδες που δεν έχετε επισκεφθεί
 content-blocking-all-windows-trackers = Γνωστοί ιχνηλάτες σε όλα τα ιδιωτικά παράθυρα

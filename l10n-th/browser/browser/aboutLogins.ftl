@@ -6,6 +6,8 @@ about-logins-page-title = การเข้าสู่ระบบและร
 
 # "Google Play" and "App Store" are both branding and should not be translated
 
+login-app-promo-title = นำรหัสผ่านของคุณไปทุกที่
+login-app-promo-subtitle = รับแอป { -lockwise-brand-name } ฟรี
 login-app-promo-android =
     .alt = รับบน Google Play
 login-app-promo-apple =
@@ -13,6 +15,11 @@ login-app-promo-apple =
 login-filter =
     .placeholder = ค้นหาการเข้าสู่ระบบ
 create-login-button = สร้างการเข้าสู่ระบบใหม่
+# This string is used as alternative text for favicon images.
+# Variables:
+#   $title (String) - The title of the website associated with the favicon.
+login-favicon =
+    .alt = Favicon สำหรับ { $title }
 fxaccounts-sign-in-text = รับรหัสผ่านของคุณบนอุปกรณ์อื่น ๆ ของคุณ
 fxaccounts-sign-in-button = ลงชื่อเข้า { -sync-brand-short-name }
 fxaccounts-avatar-button =
@@ -29,25 +36,35 @@ menu-menuitem-preferences =
         [windows] ตัวเลือก
        *[other] ค่ากำหนด
     }
-menu-menuitem-feedback = ส่งข้อคิดเห็น
-menu-menuitem-faq = คำถามที่พบบ่อย
+about-logins-menu-menuitem-help = ช่วยเหลือ
 menu-menuitem-android-app = { -lockwise-brand-short-name } สำหรับ Android
 menu-menuitem-iphone-app = { -lockwise-brand-short-name } สำหรับ iPhone และ iPad
 
 ## Login List
 
+login-list =
+    .aria-label = การเข้าสู่ระบบที่ตรงกับคำค้น
 login-list-count =
     { $count ->
        *[other] { $count } การเข้าสู่ระบบ
     }
 login-list-sort-label-text = เรียงลำดับตาม:
 login-list-name-option = ชื่อตามตัวอักษร
+login-list-breached-option = เว็บไซต์ที่มีการรั่วไหล
 login-list-last-changed-option = วันที่เปลี่ยนแปลงล่าสุด
 login-list-last-used-option = วันที่ใช้ครั้งล่าสุด
 login-list-intro-title = ไม่พบการเข้าสู่ระบบ
 login-list-intro-description = เมื่อคุณบันทึกรหัสผ่านใน { -brand-product-name } รหัสผ่านจะปรากฏขึ้นที่นี่
+about-logins-login-list-empty-search-title = ไม่พบการเข้าสู่ระบบ
+about-logins-login-list-empty-search-description = ไม่มีผลลัพธ์ที่ตรงกับการค้นหาของคุณ
 login-list-item-title-new-login = การเข้าสู่ระบบใหม่
+login-list-item-subtitle-new-login = ป้อนข้อมูลรับรองการเข้าสู่ระบบของคุณ
 login-list-item-subtitle-missing-username = (ไม่มีชื่อผู้ใช้)
+about-logins-list-item-warning-icon =
+    .alt = ไอคอนคำเตือน
+    .title = เว็บไซต์ที่มีการรั่วไหล
+about-logins-list-item-breach-icon =
+    .title = เว็บไซต์ที่มีการรั่วไหล
 
 ## Introduction screen
 
@@ -55,6 +72,7 @@ login-intro-heading = กำลังมองหาการเข้าสู�
 login-intro-description = หากคุณบันทึกการเข้าสู่ระบบของคุณไว้ที่ { -brand-product-name } บนอุปกรณ์อื่น ๆ คุณสามารถนำมาใช้บนอุปกรณ์นี้ได้ด้วยวิธีนี้:
 login-intro-instruction-fxa = สร้างหรือลงชื่อเข้าใช้ { -fxaccount-brand-name } ของคุณบนอุปกรณ์ที่บันทึกการเข้าสู่ระบบของคุณ
 login-intro-instruction-fxa-settings = ตรวจสอบให้แน่ใจว่าคุณได้เลือกกล่องกาเครื่องหมายการเข้าสู่ระบบในการตั้งค่า { -sync-brand-short-name }
+about-logins-intro-instruction-help = เยี่ยมชม<a data-l10n-name="help-link">ฝ่ายสนับสนุน { -lockwise-brand-short-name }</a> สำหรับวิธีใช้เพิ่มเติม
 
 ## Login
 
@@ -64,10 +82,9 @@ login-item-delete-button = ลบ
 login-item-origin-label = ที่อยู่เว็บไซต์
 login-item-origin =
     .placeholder = https://www.example.com
-login-item-open-site-button = เริ่ม
 login-item-username-label = ชื่อผู้ใช้
-login-item-username =
-    .placeholder = name@example.com
+about-logins-login-item-username =
+    .placeholder = (ไม่มีชื่อผู้ใช้)
 login-item-copy-username-button-text = คัดลอก
 login-item-copied-username-button-text = คัดลอกแล้ว!
 login-item-password-label = รหัสผ่าน
@@ -86,6 +103,7 @@ login-item-time-used = วันที่ใช้ครั้งล่าสุ
 
 ## Master Password notification
 
+master-password-notification-message = โปรดป้อนรหัสผ่านหลักของคุณเพื่อดูการเข้าสู่ระบบและรหัสผ่านที่บันทึกไว้
 master-password-reload-button =
     .label = เข้าสู่ระบบ
     .accesskey = ข
@@ -95,6 +113,13 @@ master-password-reload-button =
 confirmation-dialog-cancel-button = ยกเลิก
 confirmation-dialog-dismiss-button =
     .title = ยกเลิก
+enable-password-sync-preferences-button =
+    .label =
+        { PLATFORM() ->
+            [windows] เยี่ยมชมตัวเลือก { -sync-brand-short-name }
+           *[other] เยี่ยมชมค่ากำหนด { -sync-brand-short-name }
+        }
+    .accesskey = ย
 confirm-delete-dialog-title = ลบการเข้าสู่ระบบนี้?
 confirm-delete-dialog-message = การกระทำนี้ไม่สามารถเลิกทำได้
 confirm-delete-dialog-confirm-button = ลบ
@@ -104,5 +129,12 @@ confirm-discard-changes-dialog-confirm-button = ละทิ้ง
 
 ## Breach Alert notification
 
+breach-alert-text = รหัสผ่านถูกรั่วไหลหรือถูกขโมยจากเว็บไซต์นี้ตั้งแต่คุณอัปเดตรายละเอียดการเข้าสู่ระบบครั้งล่าสุด เปลี่ยนรหัสผ่านของคุณเพื่อปกป้องบัญชีของคุณ
+breach-alert-link = เรียนรู้เพิ่มเติมเกี่ยวกับการรั่วไหลนี้
 breach-alert-dismiss =
     .title = ปิดการแจ้งเตือนนี้
+
+## Error Messages
+
+# This is a generic error message.
+about-logins-error-message-default = เกิดข้อผิดพลาดขณะพยายามบันทึกรหัสผ่านนี้

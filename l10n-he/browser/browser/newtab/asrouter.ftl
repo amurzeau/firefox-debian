@@ -79,6 +79,27 @@ cfr-whatsnew-button =
     .label = מה חדש
     .tooltiptext = מה חדש
 cfr-whatsnew-panel-header = מה חדש
+cfr-whatsnew-release-notes-link-text = קריאת הערור השחרור
+cfr-whatsnew-fx70-title = { -brand-short-name } כעת נלחם יותר למען הפרטיות שלך
+cfr-whatsnew-fx70-body = העדכון האחרון משפר את תכונת הגנת המעקב והופך את האפשרות ליצור ססמאות מאובטחות לכל אתר קלה מאי פעם.
+cfr-whatsnew-tracking-protect-title = הגנה מפני רכיבי מעקב
+cfr-whatsnew-tracking-protect-body = { -brand-short-name } חוסם  הרבה רכיבי מעקב מוכרים של רשתות חברתיות ורכיבי מעקב חוצי אתרים שעוקבים אחרי הפעילויות המקוונות שלך.
+cfr-whatsnew-tracking-protect-link-text = הצגת הדוח שלך
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+        [one] רכיבי מעקב נחסמו
+       *[other] רכיבי מעקב נחסמו
+    }
+cfr-whatsnew-tracking-blocked-subtitle = מאז { DATETIME($earliestDate, month: "long", year: "numeric") }
+cfr-whatsnew-tracking-blocked-link-text = הצגת דוח
+cfr-whatsnew-lockwise-backup-title = גיבוי הססמאות שלך
+cfr-whatsnew-lockwise-backup-link-text = הפעלת גיבויים
+cfr-whatsnew-lockwise-take-title = לקחת את הססמאות שלך לכל מקום
+cfr-whatsnew-lockwise-take-body = היישומון לנייד { -lockwise-brand-short-name } מאפשר לך לגשת באופן מאובטח לססמאות המגובות שלך מכל מקום.
+cfr-whatsnew-lockwise-take-link-text = הורדת היישומון
 
 ## Bookmark Sync
 
@@ -88,6 +109,7 @@ cfr-doorhanger-sync-bookmarks-ok-button = הפעלת { -sync-brand-short-name }
 
 ## Login Sync
 
+cfr-doorhanger-sync-logins-body = אחסון וסנכרון הססמאות שלך באופן מאובטח לכל המכשירים שלך.
 cfr-doorhanger-sync-logins-ok-button = הפעלת { -sync-brand-short-name }
     .accesskey = ה
 
@@ -97,3 +119,14 @@ cfr-doorhanger-sync-logins-ok-button = הפעלת { -sync-brand-short-name }
 ## Firefox Send
 
 cfr-doorhanger-firefox-send-header = שיתוף ה־PDF הזה באופן מאובטח
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-ok-button = הצגת הגנות
+    .accesskey = ג
+cfr-doorhanger-socialtracking-close-button = סגירה
+    .accesskey = ס
+cfr-doorhanger-socialtracking-heading = { -brand-short-name } מנע מעקב של רשת חברתית כאן
+cfr-doorhanger-socialtracking-description = הפרטיות שלך חשובה. { -brand-short-name } חוסם כעת רכיבי מעקב נפוצים של מדיה חברתית, ומגביל את כמות הנתונים שהם יכולים לאסוף על הפעילויות שלך ברשת.
+cfr-doorhanger-cryptominers-heading = { -brand-short-name } חסם כורה מטבעות דיגיטליים בדף זה
+cfr-doorhanger-cryptominers-description = הפרטיות שלך חשובה. { -brand-short-name } חוסם כעת כורי מטבעות דיגיטליים, המשתמשים בכוח העיבוד של המערכת שלך כדי לכרות כסף דיגיטלי.

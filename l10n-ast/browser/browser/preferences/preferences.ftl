@@ -249,6 +249,62 @@ applications-type-column =
 applications-action-column =
     .label = Aición
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = ficheru { $extension }
+applications-action-save =
+    .label = Guardar ficheru
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Usar { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Usar { $app-name } (predetermináu)
+applications-use-other =
+    .label = Usar otru…
+applications-select-helper = Esbilla aplicación auxiliar
+applications-manage-app =
+    .label = Detalles de l'aplicación…
+applications-always-ask =
+    .label = Entrugar siempre
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Usar { $plugin-name } (en { -brand-short-name })
+applications-preview-inapp =
+    .label = Previsualizar en { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 drm-content-header = Conteníu con Digital Rights Management (DRM)
 play-drm-content =
     .label = Reproducir conteníu remanáu por DRM
@@ -280,6 +336,12 @@ update-pref-write-failure-title = Fallu d'escritura
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Nun pue guardase la preferencia. Nun pudo escribise al ficheru: { $path }
+update-in-progress-title = Anovamientu en cursu
+update-in-progress-message = ¿Quies que { -brand-short-name } siga con esti anovamientu?
+update-in-progress-ok-button = &Escartar
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Siguir
 
 ## General Section - Performance
 
@@ -378,8 +440,11 @@ home-prefs-topsites-header =
 #  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 home-prefs-recommended-by-header =
     .label = Recomendáu por { $provider }
+home-prefs-recommended-by-learn-more = Cómo funciona
 home-prefs-highlights-header =
     .label = Destacaos
+home-prefs-highlights-option-visited-pages =
+    .label = Páxines visitaes
 home-prefs-highlights-options-bookmarks =
     .label = Marcadores
 # For the "Snippets" feature traditionally on about:home.
@@ -388,6 +453,12 @@ home-prefs-highlights-options-bookmarks =
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = Retayos
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } filera
+           *[other] { $num } fileres
+        }
 
 ## Search Section
 
@@ -556,6 +627,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Camudar contraseña maestra…
     .accesskey = m
+forms-master-pw-fips-title = Nesti intre tas en mou FIPS. FIPS requier una contraseña maestra non erma.
+forms-master-pw-fips-desc = Fallu al camudar la contraseña
 
 ## Privacy Section - History
 
@@ -657,6 +730,19 @@ addressbar-suggestions-settings = Camudar preferencies pa les suxerencies de los
 
 content-blocking-header = Bloquéu de conteníu
 
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+
+##
+
+content-blocking-tracking-protection-option-all-windows =
+    .label = En toles ventanes
+    .accesskey = t
+content-blocking-cookies-label =
+    .label = Cookies
+    .accesskey = C
+
 ## Privacy Section - Tracking
 
 
@@ -680,6 +766,13 @@ permissions-notification-settings =
     .label = Axustes…
     .accesskey = t
 permissions-notification-link = Deprendi más
+permissions-block-autoplay-media-exceptions =
+    .label = Esceiciones...
+    .accesskey = E
+permissions-autoplay = Reproducción automática
+permissions-autoplay-settings =
+    .label = Axustes...
+    .accesskey = e
 permissions-block-popups =
     .label = Bloquiar ventanes emerxentes
     .accesskey = B

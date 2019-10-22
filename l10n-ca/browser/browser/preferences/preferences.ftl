@@ -253,6 +253,62 @@ applications-type-column =
 applications-action-column =
     .label = Acció
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = fitxer { $extension }
+applications-action-save =
+    .label = Desa el fitxer
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Utilitza { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Utilitza { $app-name } (per defecte)
+applications-use-other =
+    .label = Utilitza una altra aplicació…
+applications-select-helper = Selecciona l'aplicació ajudant
+applications-manage-app =
+    .label = Detalls de l'aplicació…
+applications-always-ask =
+    .label = Demana-m'ho sempre
+applications-type-pdf = PDF (Format de Document Portàtil)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Utilitza { $plugin-name } (en el { -brand-short-name })
+applications-preview-inapp =
+    .label = Previsualitza al { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 drm-content-header = Contingut DRM (Digital Rights Management, Gestió de drets digitals)
 play-drm-content =
     .label = Reprodueix contingut controlat per DRM
@@ -339,6 +395,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Cerca el text en començar a teclejar
     .accesskey = x
+browsing-picture-in-picture-toggle-enabled =
+    .label = Activa els controls de vídeo d'imatge sobre imatge
+    .accesskey = A
+browsing-picture-in-picture-learn-more = Més informació
 browsing-cfr-recommendations =
     .label = Recomana extensions durant la navegació
     .accesskey = R
@@ -600,6 +660,10 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Suggereix i genera contrasenyes segures
     .accesskey = u
+forms-breach-alerts =
+    .label = Mostra alertes sobre contrasenyes per als llocs web relacionats amb filtracions de dades
+    .accesskey = b
+forms-breach-alerts-learn-more-link = Més informació
 forms-fill-logins-and-passwords =
     .label = Emplena automàticament inicis de sessió i contrasenyes
     .accesskey = i
@@ -612,6 +676,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Canvia la contrasenya mestra…
     .accesskey = m
+forms-master-pw-fips-title = Us trobeu en mode FIPS. El FIPS requereix una contrasenya mestra no buida.
+forms-master-pw-fips-desc = El canvi de contrasenya ha fallat
 
 ## Privacy Section - History
 
@@ -718,6 +784,8 @@ addressbar-suggestions-settings = Canvia les preferències dels suggeriments de 
 
 content-blocking-header = Bloqueig de contingut
 content-blocking-section-description = Protegiu la vostra privadesa mentre navegueu. Bloqueu el contingut invisible que fa el seguiment dels llocs que visiteu per crear un perfil vostre amb aquesta informació. Blocant aquest contingut, és possible que les pàgines es carreguin més ràpid.
+content-blocking-enhanced-tracking-protection = Protecció contra el seguiment millorada
+content-blocking-section-top-level-description = Hi ha elements que us fan el seguiment mentre navegueu per recopilar informació sobre els vostres hàbits de navegació i interessos. El { -brand-short-name } bloca molts d'aquests elements de seguiment i altres scripts maliciosos.
 content-blocking-learn-more = Més informació
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -735,6 +803,23 @@ content-blocking-strict-description = Més protecció, pot fer que alguns llocs 
 content-blocking-custom-desc = Trieu què voleu blocar.
 content-blocking-private-trackers = Elements de seguiment coneguts en finestres privades
 content-blocking-third-party-cookies = Galetes de seguiment de tercers
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Estàndard
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = Estricta
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = Personalitzada
+    .accesskey = P
+
+##
+
 content-blocking-etp-standard-desc = Equilibri entre protecció i rendiment. Les pàgines es carregaran amb normalitat.
 content-blocking-etp-strict-desc = Més protecció, però pot fer que alguns llocs o algun contingut no funcionin correctament.
 content-blocking-etp-custom-desc = Trieu quins elements de seguiment i scripts cal blocar.

@@ -53,7 +53,7 @@
 
 <!ENTITY fxaccount_status_auth_server 'שרת חשבון'>
 <!ENTITY fxaccount_status_sync_now 'סנכרון כעת'>
-<!ENTITY fxaccount_status_syncing2 'מסנכרן…'>
+<!ENTITY fxaccount_status_syncing2 'בתהליך סנכרון…'>
 <!ENTITY fxaccount_status_device_name 'שם המכשיר'>
 <!ENTITY fxaccount_status_sync_server 'שרת סנכרון'>
 <!ENTITY fxaccount_status_needs_verification2 'יש לאמת את החשבון שלך. עליך לגעת כדי לשלוח את דוא״ל האימות מחדש.'>
@@ -68,7 +68,7 @@
 <!ENTITY fxaccount_status_passwords2 'כניסות'>
 <!ENTITY fxaccount_status_tabs 'לשוניות פתוחות'>
 <!ENTITY fxaccount_status_additional_settings 'הגדרות נוספות'>
-<!ENTITY fxaccount_pref_sync_use_metered2 'סנכרון רק על גבי Wi-Fi'>
+<!ENTITY fxaccount_pref_sync_use_metered2 'סנכרון רק בחיבורי Wi-Fi'>
 <!-- Localization note: Only affects background syncing, user initiated
      syncs will still be done regardless of the connection -->
 <!ENTITY fxaccount_pref_sync_use_metered_summary2 'למנוע מ־&brandShortName; לסנכרן דרך רשת סלולרית או עם רשת עם כמות נתונים מדודה'>
@@ -78,11 +78,11 @@
      these strings are separated to accommodate languages that decline
      the two uses differently. -->
 <!ENTITY fxaccount_status_linktos2 'תנאי השירות'>
-<!ENTITY fxaccount_status_linkprivacy2 'הודעת פרטיות'>
+<!ENTITY fxaccount_status_linkprivacy2 'הצהרת פרטיות'>
 <!ENTITY fxaccount_remove_account 'ניתוק&ellipsis;'>
 
 <!ENTITY fxaccount_remove_account_dialog_title2 'האם ברצונך להתנתק מ־Sync?'>
-<!ENTITY fxaccount_remove_account_dialog_message2 'היסטורית הגלישה שלך תישאר על מכשיר זה, אך לא תסתנכרן עוד עם החשבון שלך.'>
+<!ENTITY fxaccount_remove_account_dialog_message2 'היסטוריית הגלישה שלך תישאר על מכשיר זה, אך לא תסתנכרן עוד עם החשבון שלך.'>
 <!-- Localization note: format string below will be replaced
      with the Firefox Account's email address. -->
 <!ENTITY fxaccount_remove_account_toast2 'חשבון ה־Firefox בכתובת &formatS; נותק.'>

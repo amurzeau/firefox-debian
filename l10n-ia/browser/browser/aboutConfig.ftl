@@ -7,10 +7,24 @@ about-config-warning-title = Hic sunt dracones!
 about-config-warning-text = Cambiar iste parametros avantiate pote esser nocive al stabilitate, securitate e rendimento de iste application. Tu debe continuar solmente si tu es secur de illo que tu va facer.
 about-config-warning-checkbox = Memora me postea, per favor!
 about-config-warning-button = Io accepta le risco!
-about-config-title = about:config
 about-config2-title = Configurationes avantiate
 about-config-search-input =
     .placeholder = Cercar
+
+## These strings appear on the warning you see when first visiting about:config.
+
+about-config-intro-warning-title = Proceder con cautela
+about-config-intro-warning-text = Cambiar preferentias de configuration avantiate pote haber impacto sur le prestationes e le securitate de { -brand-short-name }.
+about-config-intro-warning-checkbox = Avisar me quando io tenta de acceder a iste preferentias
+about-config-intro-warning-button = Acceptar le risco e continuar
+
+
+
+# This is shown on the page before searching but after the warning is accepted.
+about-config-caution-text = Cambiar iste preferentias pote haber impacto sur le prestationes e le securitate de { -brand-short-name }.
+about-config-page-title = Preferentias avantiate
+about-config-search-input1 =
+    .placeholder = Cercar nomine preferentia
 about-config-show-all = Monstrar toto
 about-config-pref-add = Adder
 about-config-pref-toggle = Mutar
@@ -18,6 +32,18 @@ about-config-pref-edit = Rediger
 about-config-pref-save = Salvar
 about-config-pref-reset = Restabilir
 about-config-pref-delete = Deler
+about-config-pref-add-button =
+    .title = Adder
+about-config-pref-toggle-button =
+    .title = Commutar
+about-config-pref-edit-button =
+    .title = Rediger
+about-config-pref-save-button =
+    .title = Salvar
+about-config-pref-reset-button =
+    .title = Remontar
+about-config-pref-delete-button =
+    .title = Deler
 
 ## Labels for the type selection radio buttons shown when adding preferences.
 

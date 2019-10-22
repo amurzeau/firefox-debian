@@ -153,7 +153,7 @@ menu-view-full-screen =
     .label = Toàn màn hình
     .accesskey = F
 
-##
+
 
 menu-view-show-all-tabs =
     .label = Hiện tất cả các thẻ
@@ -212,11 +212,20 @@ menu-tools-addons =
 menu-tools-sync-sign-in =
     .label = Đăng nhập vào { -sync-brand-short-name }…
     .accesskey = Y
+menu-tools-fxa-sign-in =
+    .label = Đăng nhập vào { -brand-product-name }…
+    .accesskey = g
+menu-tools-turn-on-sync =
+    .label = Bật { -sync-brand-short-name }…
+    .accesskey = n
 menu-tools-sync-now =
     .label = Đồng bộ ngay
     .accesskey = S
 menu-tools-sync-re-auth =
     .label = Kết nối lại với { -sync-brand-short-name }…
+    .accesskey = R
+menu-tools-fxa-re-auth =
+    .label = Kết nối lại vào { -brand-product-name }…
     .accesskey = R
 menu-tools-web-developer =
     .label = Nhà phát triển Web

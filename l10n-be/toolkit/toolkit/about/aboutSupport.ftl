@@ -35,6 +35,8 @@ app-basics-name = Назва
 app-basics-version = Версія
 app-basics-build-id = ID зборкі
 app-basics-update-channel = Канал абнаўлення
+# This message refers to the folder used to store updates on the device,
+# as in "Folder for updates". "Update" is a noun, not a verb.
 app-basics-update-dir =
     { PLATFORM() ->
         [linux] Каталог абнаўлення
@@ -53,13 +55,12 @@ app-basics-enabled-plugins = Уключаныя плагіны
 app-basics-build-config = Канфігурацыя зборкі
 app-basics-user-agent = Дзеяч карыстальніка
 app-basics-os = АС
-app-basics-memory-use = Ужыванне памяці
+app-basics-memory-use = Выкарыстанне памяці
 app-basics-performance = Прадукцыйнасць
 app-basics-service-workers = Зарэгістраваныя сервіс-воркеры
 app-basics-profiles = Профілі
 app-basics-launcher-process-status = Пускавы працэс
 app-basics-multi-process-support = Шматпрацэсныя вокны
-app-basics-process-count = Працэсы вэб-кантэнту
 app-basics-remote-processes-count = Адлеглыя працэсы
 app-basics-enterprise-policies = Карпаратыўная палітыка
 app-basics-location-service-key-google = Ключ Службы вызначэння месцазнаходжання ад Google
@@ -115,6 +116,13 @@ sandbox-sys-call-number = Сістэмны выклік
 sandbox-sys-call-args = Аргументы
 safe-mode-title = Паспрабаваць абаронены рэжым
 restart-in-safe-mode-label = Перазапусціць з адключанымі дадаткамі…
+
+## Media titles
+
+audio-backend = Аудыё-падсістэма
+max-audio-channels = Макс. колькасць каналаў
+channel-layout = Пераважны фармат канала
+sample-rate = Пераважная частата дыскрэтызацыі
 media-title = Медыя
 media-output-devices-title = Прылады вываду
 media-input-devices-title = Прылады ўводу
@@ -127,6 +135,12 @@ media-device-format = Фармат
 media-device-channels = Каналы
 media-device-rate = Частата
 media-device-latency = Затрымка
+media-capabilities-title = Медыя-магчымасці
+# List all the entries of the database.
+media-capabilities-enumerate = Пералічыць базу дадзеных
+
+
+
 intl-title = Інтэрнацыяналізацыя і лакалізацыя
 intl-app-title = Налады праграмы
 intl-locales-requested = Запытаная лакалізацыі
@@ -246,12 +260,7 @@ uses-tiling = Выкарыстоўвае тайлінг
 content-uses-tiling = Выкарыстоўвае тайлінг (кантэнт)
 off-main-thread-paint-enabled = Прамалёўванне па-за асноўным патокам уключана
 off-main-thread-paint-worker-count = Колькасць воркераў прамалёўвання па-за асноўным патокам
-low-end-machine = Выяўлена менш прадукцыйная машына
 target-frame-rate = Мэтавая частата кадраў
-audio-backend = Аудыё-падсістэма
-max-audio-channels = Макс. колькасць каналаў
-channel-layout = Пераважны фармат канала
-sample-rate = Пераважная частата дыскрэтызацыі
 min-lib-versions = Чаканая найменшая версія
 loaded-lib-versions = Версія ў ужыванні
 has-seccomp-bpf = Seccomp-BPF (Фільтраванне сістэмных выклікаў)

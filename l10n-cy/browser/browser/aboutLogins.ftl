@@ -6,8 +6,8 @@ about-logins-page-title = Mewngofnodion a Chyfrineiriau
 
 # "Google Play" and "App Store" are both branding and should not be translated
 
-login-app-promo-title = Ewch â'ch cyfrineiriau i bobman
-login-app-promo-subtitle = Sicrhewch { -lockwise-brand-name } yr ap am ddim
+login-app-promo-title = Ewch â'ch cyfrineiriau i bob man
+login-app-promo-subtitle = Defnyddiwch yr ap { -lockwise-brand-name } - mae am ddim!
 login-app-promo-android =
     .alt = Mae ar gael yn Google Play
 login-app-promo-apple =
@@ -36,8 +36,7 @@ menu-menuitem-preferences =
         [windows] Dewisiadau
        *[other] Dewisiadau
     }
-menu-menuitem-feedback = Anfon Adborth
-menu-menuitem-faq = Cwestiynau Cyffredin
+about-logins-menu-menuitem-help = Cymorth
 menu-menuitem-android-app = { -lockwise-brand-short-name } ar gyfer Android
 menu-menuitem-iphone-app = { -lockwise-brand-short-name } ar gyfer iPhone ac iPad
 
@@ -61,9 +60,16 @@ login-list-last-changed-option = Newidiwyd Diwethaf
 login-list-last-used-option = Defnyddiwyd Diwethaf
 login-list-intro-title = Heb ganfod mewngofnodion
 login-list-intro-description = Pan fyddwch yn cadw cyfrinair yn { -brand-product-name }, bydd yn ymddangos yma.
+about-logins-login-list-empty-search-title = Heb ganfod mewngofnodion
+about-logins-login-list-empty-search-description = Nid oes unrhyw ganlyniadau sy'n cyfateb i'ch chwiliad.
 login-list-item-title-new-login = Mewngofnod Newydd
 login-list-item-subtitle-new-login = Rhowch eich manylion mewngofnodi
 login-list-item-subtitle-missing-username = (dim enw defnyddwyr)
+about-logins-list-item-warning-icon =
+    .alt = Eicon rhybuddio
+    .title = Gwefan wedi dioddef tor-data
+about-logins-list-item-breach-icon =
+    .title = Gwefan wedi dioddef tor-data
 
 ## Introduction screen
 
@@ -71,7 +77,7 @@ login-intro-heading = Chwilio am eich mewngofnodi wedi'u cadw? Gosodwch { -sync-
 login-intro-description = Os gwnaethoch gadw eich mewngofnodion i { -brand-product-name } ar ddyfais wahanol, dyma sut i'w cael yma:
 login-intro-instruction-fxa = Creu neu fewngofnodi i'ch { -fxaccount-brand-name } ar y ddyfais lle mae'ch mewngofnodion yn cael eu cadw
 login-intro-instruction-fxa-settings = Sicrhewch eich bod wedi dewis y blwch gwirio Mewngofnodion yng Ngosodiadau { -sync-brand-short-name }
-login-intro-instruction-faq = Ewch i { -lockwise-brand-short-name } <a data-l10n-name="faq">cwestiynau cyffredin</a> i gael mwy o gymorth
+about-logins-intro-instruction-help = Ewch i <a data-l10n-name="help-link"> Cefnogaeth { -lockwise-brand-short-name }</a> i gael rhagor o gymorth
 
 ## Login
 
@@ -81,10 +87,9 @@ login-item-delete-button = Dileu
 login-item-origin-label = Cyfeiriad Gwefan
 login-item-origin =
     .placeholder = https://www.example.com
-login-item-open-site-button = Cychwyn
 login-item-username-label = Enw Defnyddiwr
-login-item-username =
-    .placeholder = name@example.com
+about-logins-login-item-username =
+    .placeholder = (dim enw defnyddwyr)
 login-item-copy-username-button-text = Copïo
 login-item-copied-username-button-text = Copïwyd
 login-item-password-label = Cyfrinair
@@ -138,3 +143,18 @@ breach-alert-text = Cafodd cyfrineiriau eu ryddhau neu eu dwyn o'r wefan hon ers
 breach-alert-link = Dysgu rhagor am y tor-data hwn.
 breach-alert-dismiss =
     .title = Diffodd y rhybudd
+
+## Error Messages
+
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login = Mae mewngofnod ar gyfer { $loginTitle } â'r enw defnyddiwr hwnnw'n bodoli eisoes.
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = Mae cofnod ar gyfer { $loginTitle } gyda'r enw defnyddiwr hwnnw eisoes yn bodoli. <a data-l10n-name="duplicate-link"> Ewch i'r cofnod presennol? </a>
+# This is a generic error message.
+about-logins-error-message-default = Digwyddodd gwall wrth geisio gadw'r cyfrinair hwn.

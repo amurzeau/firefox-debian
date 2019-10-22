@@ -84,6 +84,35 @@ cfr-whatsnew-button =
     .label = Што новага
     .tooltiptext = Што новага
 cfr-whatsnew-panel-header = Што новага
+cfr-whatsnew-release-notes-link-text = Прачытаць заўвагі да выпуску
+cfr-whatsnew-fx70-title = { -brand-short-name } цяпер мацней змагаецца за вашу прыватнасць
+cfr-whatsnew-fx70-body =
+    Апошняе абнаўленне паляпшае функцыю аховы ад сачэння і робіць
+    лягчэйшым стварэнне бяспечных пароляў для кожнага сайта.
+cfr-whatsnew-tracking-protect-title = Абараніце сябе ад трэкераў
+cfr-whatsnew-tracking-protect-body =
+    { -brand-short-name } блакуе многія сацыяльныя і міжсайтавыя трэкеры,
+    якія назіраюць за тым, што вы робіце ў Інтэрнэце.
+cfr-whatsnew-tracking-protect-link-text = Паглядзець справаздачу
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+        [one] Трэкер заблакаваны
+        [few] Трэкеры заблакавана
+       *[many] Трэкераў заблакавана
+    }
+cfr-whatsnew-tracking-blocked-subtitle = З { DATETIME($earliestDate, month: "long", year: "numeric") }
+cfr-whatsnew-tracking-blocked-link-text = Паглядзець справаздачу
+cfr-whatsnew-lockwise-backup-title = Рэзервовае капіраванне пароляў
+cfr-whatsnew-lockwise-backup-body = Цяпер можна генераваць бяспечныя паролі і атрымліваць доступ да іх у любым месцы.
+cfr-whatsnew-lockwise-backup-link-text = Уключыць рэзервовае капіяванне
+cfr-whatsnew-lockwise-take-title = Вазьміце свае паролі з сабой
+cfr-whatsnew-lockwise-take-body =
+    Праграма { -lockwise-brand-short-name } на тэлефоне дазваляе бяспечна
+    атрымліваць доступ до захаваных пароляў з любога месца.
+cfr-whatsnew-lockwise-take-link-text = Атрымаць праграму
 
 ## Bookmark Sync
 
@@ -113,3 +142,16 @@ cfr-doorhanger-firefox-send-header = Дзяліцеся гэтым PDF бясп�
 cfr-doorhanger-firefox-send-body = Трымайце свае далікатныя дакументы далей ад старонніх вачэй з дапамогай скразнога шыфравання і спасылкі, якая знікае пасля выкарыстання.
 cfr-doorhanger-firefox-send-ok-button = Паспрабуйце { -send-brand-name }
     .accesskey = П
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-ok-button = Паглядзець меры аховы
+    .accesskey = з
+cfr-doorhanger-socialtracking-close-button = Закрыць
+    .accesskey = ц
+cfr-doorhanger-socialtracking-heading = { -brand-short-name } не дазволіў сацыяльнай сетцы сачыць за вамі тут
+cfr-doorhanger-socialtracking-description = Ваша прыватнасць мае значэнне. Цяпер { -brand-short-name } блакуе звычайныя трэкеры сацыяльных сетак, абмяжоўваючы колькасць дадзеных, якія яны могуць сабраць пра тое, што вы робіце ў сеціве.
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name } заблакаваў збіральнік лічбавых адбіткаў на гэтай старонцы
+cfr-doorhanger-fingerprinters-description = Ваша прыватнасць мае значэнне. { -brand-short-name } цяпер блакуе збіральнікі лічбавых адбіткаў, якія збіраюць фрагменты адназначнай інфармацыі пра вашу прыладу, каб асочваць вас.
+cfr-doorhanger-cryptominers-heading = { -brand-short-name } заблакаваў майнер крыптавалют на гэтай старонцы
+cfr-doorhanger-cryptominers-description = Ваша прыватнасць мае значэнне. { -brand-short-name } цяпер блакуе майнеры крыптавалют, якія выкарыстоўваюць вылічальную магутнасць вашай сістэмы для здабычы лічбавых грошай.

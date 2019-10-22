@@ -7,6 +7,7 @@
 
 accessibility-learn-more = En savoir plus
 accessibility-text-label-header = Noms et étiquettes au format texte
+accessibility-keyboard-header = Clavier
 
 ## Text entries that are used as text alternative for icons that depict accessibility isses.
 
@@ -41,3 +42,14 @@ accessibility-text-label-issue-interactive = Les éléments interactifs doivent 
 accessibility-text-label-issue-optgroup-label = Utilisez l’attribut <code>label</code> pour étiqueter les éléments <span>optgroup</span>. <a>En savoir plus</a>
 accessibility-text-label-issue-optgroup-label2 = Utilisez un attribut <code>label</code> pour étiqueter un élément <span>optgroup</span>. <a>En savoir plus</a>
 accessibility-text-label-issue-toolbar = Les barres d’outils doivent être étiquetées lorsqu’il y a plus d’une barre d’outils. <a>En savoir plus</a>
+
+## Text entries for a paragraph used in the accessibility panel sidebar's checks section
+## that describe that currently selected accessible object has a keyboard accessibility
+## issue.
+
+accessibility-keyboard-issue-semantics = Les éléments pouvant obtenir le focus doivent disposer d’une sémantique interactive. <a>En savoir plus</a>
+accessibility-keyboard-issue-tabindex = Évitez d’utiliser une valeur d’attribut <code>tabindex</code> supérieure à zéro. <a>En savoir plus</a>
+accessibility-keyboard-issue-action = Les éléments interactifs doivent pouvoir être activés à l’aide d’un clavier. <a>En savoir plus</a>
+accessibility-keyboard-issue-focusable = Les éléments interactifs doivent pouvoir obtenir le focus. <a>En savoir plus</a>
+accessibility-keyboard-issue-focus-visible = Un élément pouvant obtenir le focus pourrait ne pas avoir de style indiquant le focus. <a>En savoir plus</a>
+accessibility-keyboard-issue-mouse-only = Les éléments cliquables doivent pouvoir obtenir le focus et avoir une sémantique interactive. <a>En savoir plus</a>

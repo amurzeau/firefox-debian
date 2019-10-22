@@ -68,10 +68,10 @@
 <!ENTITY netOffline.longDesc2 "<ul> <li>Натиснете „Повторен опит“, за да превключите към режим с връзка и да презаредите страницата.</li></ul>">
 
 <!ENTITY contentEncodingError.title "Грешка в кодировката на съдържанието">
-<!ENTITY contentEncodingError.longDesc "<ul> <li>Моля, свържете се със собствениците на сайта, за да ги информирате за проблема.</li> </ul>">
+<!ENTITY contentEncodingError.longDesc "<ul> <li>Моля, уведомете собствениците на страницата за проблема.</li> </ul>">
 
 <!ENTITY unsafeContentType.title "Опасен вид файл">
-<!ENTITY unsafeContentType.longDesc "<ul> <li>Моля, свържете се със собствениците на сайта, за да ги информирате за проблема.</li> </ul>">
+<!ENTITY unsafeContentType.longDesc "<ul> <li>Моля, уведомете собствениците на страницата за проблема.</li> </ul>">
 
 <!ENTITY netReset.title "Връзката е прекъсната">
 <!ENTITY netReset.longDesc "&sharedLongDesc;">
@@ -102,7 +102,7 @@
 <!ENTITY unknownSocketType.longDesc "<ul><li>Проверете дали системата има инсталиран Personal Security Manager.</li><li>Настройките на сървъра може да са нестандартни.</li></ul>">
 
 <!ENTITY nssFailure2.title "Неуспешно установяване на шифрована връзка">
-<!ENTITY nssFailure2.longDesc2 "<ul> <li>Страницата не може да бъде показана, защото достоверността на получените данни не може да бъде проверена.</li> <li>Моля, свържете се със собствениците на сайта, за да ги информирате за проблема.</li> </ul>">
+<!ENTITY nssFailure2.longDesc2 "<ul> <li>Страницата не може да бъде показана, защото достоверността на получените данни не може да бъде проверена.</li> <li>Моля, уведомете собствениците на страницата за проблема.</li> </ul>">
 
 <!ENTITY certerror.longpagetitle2 "Внимание: Вероятен риск за сигурността">
 <!ENTITY certerror.sts.longpagetitle  "Неуспешно свързване: Евентуален проблем със сигурността">
@@ -136,7 +136,7 @@ was trying to connect. -->
 <!ENTITY cspBlocked.longDesc "<p>&brandShortName; предотврати зареждането на страницата по този начин, защото тя има политика за сигурност, която го забранява.</p>">
 
 <!ENTITY corruptedContentErrorv2.title "Грешка поради развалено съдържание">
-<!ENTITY corruptedContentErrorv2.longDesc "<p>Страницата не може да бъде показана поради грешка при прехвърляне на данните.</p><ul><li>Моля, свържете се със собствениците на сайта, за да ги информирате за проблема.</li></ul>">
+<!ENTITY corruptedContentErrorv2.longDesc "<p>Страницата не може да бъде показана поради грешка при прехвърляне на данните.</p><ul><li>Моля, уведомете собствениците на страницата за проблема.</li></ul>">
 
 <!ENTITY securityOverride.exceptionButton1Label "Продължаване въпреки риска">
 
@@ -144,7 +144,7 @@ was trying to connect. -->
 <!ENTITY errorReporting.learnMore "Научете повече…">
 
 <!ENTITY remoteXUL.title "Отдалечен XUL">
-<!ENTITY remoteXUL.longDesc "<p><ul><li>Моля, свържете се със собствениците на сайта, за да ги информирате за проблема.</li></ul></p>">
+<!ENTITY remoteXUL.longDesc "<p><ul><li>Моля, уведомете собствениците на страницата за проблема.</li></ul></p>">
 
 <!ENTITY sslv3Used.title "Невъзможно създаване на защитена връзка">
 <!-- LOCALIZATION NOTE (sslv3Used.longDesc2) - Do not translate
@@ -153,7 +153,7 @@ was trying to connect. -->
 
 <!ENTITY certerror.pagetitle2  "Внимание: Вероятен риск за сигурността">
 <!ENTITY certerror.sts.pagetitle  "Неуспешно свързване: Евентуален проблем със сигурността">
-<!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'/> използва политика за сигурност наречена HTTP Strict Transport Security (HSTS), което означава. че &brandShortName; може да използва само сигурни връзки. Не може да добавяте изключение при посещение на тази страница.">
+<!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'></span> използва политика за сигурност наречена HTTP Strict Transport Security (HSTS), което означава, че &brandShortName; може да използва само сигурни връзки. Не може да добавяте изключение при посещение на тази страница.">
 <!ENTITY certerror.copyToClipboard.label "Копиране на текста в системния буфер">
 
 <!ENTITY inadequateSecurityError.title "Връзката е незащитена">
@@ -165,12 +165,20 @@ was trying to connect. -->
 
 <!ENTITY certerror.mitm.title "Софтуер пречи на &brandShortName; да осъществи защитена връзка към страницата">
 <!ENTITY certerror.mitm.longDesc "<span class='hostname'></span> най-вероятно е безопасен сайт, но не може да бъде установена защитена връзка. Проблемът е причинен от <span class='mitm-name'/>, което софтуер на вашия компютър или вашата мрежа.">
+<!ENTITY certerror.mitm.whatCanYouDoAboutIt1 "Ако антивирусната програма има възможност за сканиране на шифровани връзки (обикновено наричана „сканиране на уеб“ или „сканиране на https“), може да я изключите. Ако това не помогне премахнете и инсталирайте отново програмата.">
+<!ENTITY certerror.mitm.whatCanYouDoAboutIt2 "Ако използвате ведомствена мрежа се свържете с отдела за поддръжка.">
+<!ENTITY certerror.mitm.whatCanYouDoAboutIt3 "Ако не сте запознати с <span class='mitm-name'/> това може да е атака и не трябва да продължавате към страницата.">
+<!ENTITY certerror.mitm.sts.whatCanYouDoAboutIt3 "Ако не сте запознати с <span class='mitm-name'/> това може да е атака и няма какво да направите, за да посетите страницата.">
 
-<!ENTITY clockSkewError.title "Часовникът на компютъра е неверен">
-<!ENTITY clockSkewError.longDesc "Часовникът на компютъра показва <span id='wrongSystemTime_systemDate1'/> което пречи на &brandShortName; да осъществи защитена връзка. Сверете датата, часа и часовия пояс на компютъра в системните настройки, за да посетите <span class='hostname'/>. След това презаредете страницата на <span class='hostname'/>.">
+<!ENTITY clockSkewError.title "Часовникът на компютъра не е верен">
+<!ENTITY clockSkewError.longDesc "Часовникът на компютъра показва <span id='wrongSystemTime_systemDate1'/>, което пречи на &brandShortName; да осъществи защитена връзка. За да посетите <span class='hostname'/> сверете датата, часа и часовия пояс на компютъра в системните настройки. След това презаредете страницата на <span class='hostname'/>.">
 
-<!ENTITY prefReset.longDesc "Изглежда вашите настройките на сигурността може да са предизвикали това. Искате ли да възстановите оригиналните настройки?">
-<!ENTITY prefReset.label "Възстановяване на оригиналните настройки">
+<!ENTITY prefReset.longDesc "Изглежда настройките на сигурността може да са предизвикали това. Искате ли да бъдат възстановени настройките по подразбиране?">
+<!ENTITY prefReset.label "Възстановяване на настройки по подразбиране">
+
+<!ENTITY enableTls10.longDesc "Страницата може да не поддържа протокола TLS 1.2, което е минималната версия, поддържана от &brandShortName;. Включване на поддръжката на TLS 1.0 и TLS 1.1 може да позволи осъществяване на връзката.">
+<!ENTITY enableTls10.note "TLS 1.0 и TLS 1.1 ще бъдат премахнати в бъдещо издание.">
+<!ENTITY enableTls10.label "Включване на TLS 1.0 и 1.1">
 
 <!ENTITY networkProtocolError.title "Нарушение на мрежовия протокол">
-<!ENTITY networkProtocolError.longDesc "<p>Страницата не може да бъде показана поради грешка в мрежовия протокол.</p><ul><li>Моля, свържете се със собствениците на сайта, за да ги информирате за проблема.</li></ul>">
+<!ENTITY networkProtocolError.longDesc "<p>Страницата не може да бъде показана поради грешка в мрежовия протокол.</p><ul><li>Моля, уведомете собствениците на страницата за проблема.</li></ul>">

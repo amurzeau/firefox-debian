@@ -82,6 +82,34 @@ cfr-whatsnew-button =
     .label = What’s New
     .tooltiptext = What’s New
 cfr-whatsnew-panel-header = What’s New
+cfr-whatsnew-release-notes-link-text = Read the release notes
+cfr-whatsnew-fx70-title = { -brand-short-name } now fights harder for your privacy
+cfr-whatsnew-fx70-body =
+    The latest update enhances the Tracking Protection feature and makes it
+    easier than ever to create secure passwords for every site.
+cfr-whatsnew-tracking-protect-title = Protect yourself from trackers
+cfr-whatsnew-tracking-protect-body =
+    { -brand-short-name } blocks many common social and cross-site trackers that
+    follow what you do online.
+cfr-whatsnew-tracking-protect-link-text = View Your Report
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+        [one] Tracker blocked
+       *[other] Trackers blocked
+    }
+cfr-whatsnew-tracking-blocked-subtitle = Since { DATETIME($earliestDate, month: "long", year: "numeric") }
+cfr-whatsnew-tracking-blocked-link-text = View Report
+cfr-whatsnew-lockwise-backup-title = Back up your passwords
+cfr-whatsnew-lockwise-backup-body = Now generate secure passwords you can access anywhere you sign in.
+cfr-whatsnew-lockwise-backup-link-text = Turn on backups
+cfr-whatsnew-lockwise-take-title = Take your passwords with you
+cfr-whatsnew-lockwise-take-body =
+    The { -lockwise-brand-short-name } mobile app lets you securely access your
+    backed up passwords from anywhere.
+cfr-whatsnew-lockwise-take-link-text = Get the app
 
 ## Bookmark Sync
 
@@ -111,3 +139,16 @@ cfr-doorhanger-firefox-send-header = Share this PDF securely
 cfr-doorhanger-firefox-send-body = Keep your sensitive documents safe from prying eyes with end-to-end encryption and a link that disappears when you’re done.
 cfr-doorhanger-firefox-send-ok-button = Try { -send-brand-name }
     .accesskey = T
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-ok-button = See Protections
+    .accesskey = P
+cfr-doorhanger-socialtracking-close-button = Close
+    .accesskey = C
+cfr-doorhanger-socialtracking-heading = { -brand-short-name } stopped a social network from tracking you here
+cfr-doorhanger-socialtracking-description = Your privacy matters. { -brand-short-name } now blocks common social media trackers, limiting how much data they can collect about what you do online.
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name } blocked a fingerprinter on this page
+cfr-doorhanger-fingerprinters-description = Your privacy matters. { -brand-short-name } now blocks fingerprinters, which collect pieces of uniquely identifiable information about your device to track you.
+cfr-doorhanger-cryptominers-heading = { -brand-short-name } blocked a cryptominer on this page
+cfr-doorhanger-cryptominers-description = Your privacy matters. { -brand-short-name } now blocks cryptominers, which use your system’s computing power to mine digital money.

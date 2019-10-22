@@ -21,6 +21,11 @@ onboarding-button-label-get-started = Comenzar
 onboarding-welcome-header = Bienvenido a { -brand-short-name }
 onboarding-welcome-body = Tiene el navegador. <br/> Conozca el resto de { -brand-product-name }.
 onboarding-welcome-learn-more = Conocer más sobre las ventajas.
+onboarding-welcome-modal-get-body = Ya tiene el navegador. <br/> Ahora aproveche al máximo { -brand-product-name }.
+onboarding-welcome-modal-supercharge-body = Sobrecargá la protección de su privacidad.
+onboarding-welcome-modal-privacy-body = Tiene el navegador. Agreguemos más protección de privacidad.
+onboarding-welcome-modal-family-learn-more = Obtenga información sobre la familia de productos { -brand-product-name }.
+onboarding-welcome-form-header = Empezar aquí
 onboarding-join-form-header = Únase a { -brand-product-name }
 onboarding-join-form-body = Para empezar, ingrese su dirección de correo electrónico.
 onboarding-join-form-email =
@@ -37,7 +42,7 @@ onboarding-cards-dismiss =
 
 onboarding-sync-welcome-header = Lleve { -brand-product-name } con usted
 onboarding-sync-welcome-content = Acceda a sus marcadores, historial, contraseñas y más ajustes en todos sus dispositivos.
-onboarding-sync-welcome-learn-more-link = Descubra más sobre las Cuentas de Firefox
+onboarding-sync-welcome-learn-more-link = Descubrí más sobre las Cuentas de Firefox
 onboarding-sync-form-invalid-input = Se requiere un correo electrónico válido
 onboarding-sync-legal-notice = Al proceder, acepta los <a data-l10n-name="terms">Términos del servicio</a> y <a data-l10n-name="privacy">Nota de privacidad</a>.
 onboarding-sync-form-input =
@@ -54,7 +59,7 @@ onboarding-sync-form-sub-header = para pasar a { -sync-brand-name }.
 ## description.
 
 onboarding-benefit-products-title = Productos prácticos
-onboarding-benefit-products-text = Haga las cosas con una grupode herramientas que respete su privacidad en todos sus dispositivos.
+onboarding-benefit-products-text = Haga las cosas con una grupo de herramientas que respete su privacidad en todos sus dispositivos.
 onboarding-benefit-knowledge-title = Conocimiento práctico
 onboarding-benefit-knowledge-text = Aprenda todo lo que necesita saber para mantenerse en línea de manera más inteligente y segura.
 onboarding-benefit-privacy-title = Verdadera privacidad
@@ -64,6 +69,12 @@ onboarding-benefit-privacy-title = Verdadera privacidad
 # make and do. We take less data. We keep it safe. And we make sure that we are
 # transparent about how we use it."
 onboarding-benefit-privacy-text = Todo lo que hacemos respeta nuestra Promesa de datos personales: Toma menos información. La mantiene segura. Sin secretos.
+onboarding-benefit-sync-title = { -sync-brand-short-name }
+onboarding-benefit-sync-text = Lleve sus marcadores, contraseñas, historial y más a todos los lugares donde usa { -brand-product-name }.
+onboarding-benefit-monitor-title = { -monitor-brand-short-name }
+onboarding-benefit-monitor-text = Recibí notificaciones cuando tu información personal se encuentre en una violación de datos conocida.
+onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
+onboarding-benefit-lockwise-text = Administrar contraseñas que sean protegidas y portátiles.
 
 ## These strings belong to the individual onboarding messages.
 

@@ -76,12 +76,21 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY menubarCmd.label "মেনু বার M">
 <!ENTITY menubarCmd.accesskey "M">
 <!ENTITY navbarCmd.label "নেভিগেশন টুলবার">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY navbar.accessibleLabel "ন্যাভিগেশন">
 <!ENTITY personalbarCmd.label "বুকমার্ক টুলবার B">
 <!ENTITY personalbarCmd.accesskey "B">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY personalbar.accessibleLabel "বুকমার্ক">
 <!ENTITY bookmarksToolbarItem.label "বুকমার্ক টুলবারের আইটেম">
 
 <!ENTITY pageSourceCmd.label "পাতার সোর্স">
 <!ENTITY pageSourceCmd.accesskey "o">
+
 <!ENTITY pageSourceCmd.commandkey "u">
 <!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
 Option+Command keyboard shortcut letter that Safari and Chrome use for "View
@@ -92,6 +101,7 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 
 <!ENTITY pageInfoCmd.label "পাতার সংক্রান্ত তথ্য">
 <!ENTITY pageInfoCmd.accesskey "I">
+
 <!ENTITY pageInfoCmd.commandkey "i">
 <!ENTITY ldbCmd.label "লেআইট ডিবাগার">
 <!ENTITY ldbCmd.accesskey "L">
@@ -117,6 +127,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaUnverified.label "আপনার অ্যাকাউন্ট যাচাই করুন">
 
 
+<!ENTITY togglePictureInPicture.key2 "}">
+<!ENTITY togglePictureInPicture.key "]"> <!-- } is above this key on many keyboards -->
+
 <!ENTITY fullScreenMinimize.tooltip "ন্যূনতম বিস্তার">
 <!ENTITY fullScreenRestore.tooltip "পূর্বাবস্থায় ফেরানো">
 <!ENTITY fullScreenClose.tooltip "বন্ধ">
@@ -128,13 +141,16 @@ These should match what Safari and other Apple applications use on OS X Lion. --
  <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
      for the Firefox Account toolbar signin menu screen. -->
 <!ENTITY fxa.signin.callout.label "Firefox কে আপনার সাথে নিন">
+<!ENTITY fxa.signin.description.label "আপনার সমস্ত ডিভাইসে আপনার বুকমার্ক, ইতিহাস, পাসওয়ার্ড এবং অন্যান্য সেটিংস পাওয়া যাবে।">
 <!ENTITY fxa.signin.button.label "&syncBrand.shortName.label; চালু করুন…">
 
 <!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
      for the Firefox Account toolbar unverified menu screen. -->
 <!ENTITY fxa.unverified.callout.label "আপনার ইমেইল দেখুন">
+<!ENTITY fxa.unverified.description.label "আপনি সিঙ্ক করার আগে আপনাকে নিজের অ্যাকাউন্টটি যাচাই করাতে হবে।">
 <!ENTITY fxa.unverified.button.label "&syncBrand.shortName.label; সেটিংস খুলুন…">
 
+<!ENTITY pictureInPictureHideToggle.accesskey "H">
 
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
      for the Firefox Account toolbar menu screen. The `Signed in as` text is
@@ -142,12 +158,28 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.menu.signedInAs.label "সাইন ইন করা আছে">
 <!ENTITY fxa.menu.manageAccount.label "অ্যাকাউন্ট ব্যবস্থাপনা…">
 <!ENTITY fxa.menu.syncSettings.label "&syncBrand.shortName.label; সেটিংস…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbar menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.syncSettings2.label "&syncBrand.shortName.label; সেটিং">
 <!ENTITY fxa.menu.connectAnotherDevice2.label "অন্য ডিভাইস সংযুক্ত করুন…">
 <!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
+<!ENTITY fxa.menu.signin.label "&brandProductName; এ সাইন ইন করুন">
+<!ENTITY fxa.menu.turnOnSync.label "&syncBrand.shortName.label; চালু করুন">
+<!ENTITY fxa.menu.firefoxServices.label "&brandProductName; সার্ভিস">
+
+<!ENTITY fxa.menu.account.label "অ্যাকাউন্ট">
+<!ENTITY fxa.menu.settings.label "সেটিং">
+<!ENTITY fxa.menu.accountSettings.label "অ্যাকাউন্ট সেটিং">
+<!ENTITY fxa.menu.signOut.label "সাইন আউট…">
+<!ENTITY fxa.menu.deviceSettings.label "ডিভাইস সেটিং">
+<!ENTITY fxa.menu.setupSync.label "&syncBrand.shortName.label; সেটআপ…">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
      for the Firefox Account toolbar menu screen.  -->
+<!ENTITY fxa.service.sendTab.description "আপনি সাইন ইন থাকা যে কোনও ডিভাইসে তাৎক্ষনিক একটি ট্যাব প্রেরণ করুন।">
 
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
@@ -186,6 +218,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY bookmarksMenu.label "বুকমার্ক">
 <!ENTITY bookmarksMenu.accesskey "B">
+
 <!ENTITY bookmarkThisPageCmd.label "এই পাতা বুকমার্ক করুন">
 <!ENTITY editThisBookmarkCmd.label "বুকমার্ক সম্পাদনা">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
@@ -227,6 +260,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "প্লাগ-ইন ব্যবহার পরিচালনা করুন">
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "এই সাইটটি থেকে আপনি নোটিফিকেশন গ্রহণ করতে পারবেন কিনা তা পরিবর্তন করুন">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "পার্সিস্টেন্ট স্টোরেজে ডাটা স্টোর করুন">
+
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "ব্রাউজার রিমোর্ট কন্ট্রোলের আওতায়">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Web Authentication প্যানেল খুলুন">
 <!ENTITY urlbar.storageAccessAnchor.tooltip               "ব্রাউজিং কার্যকলাপ অনুমতি প্যানেল খুলুন">
@@ -241,6 +275,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "DRM সফটওয়্যারের ব্যবহার নিয়ন্ত্রণ করুন">
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "MIDI প্যানেল খুলুন">
 
+<!ENTITY urlbar.permissionsGranted.tooltip       "আপনি এই সাইটের জন্য বিশেষ অনুমতি দিয়েছেন।">
+
 <!ENTITY urlbar.cameraBlocked.tooltip            "আপনি এই ওয়েব সাইটের জন্য আপনার ক্যামেরা ব্লক করেছেন।">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "আপনি এই ওয়েব সাইটের জন্য আপনার মাইক্রোফোন ব্লক করেছেন">
 <!ENTITY urlbar.screenBlocked.tooltip            "আপনি ওয়েবসাইটটিকে ব্লক করেছেন যেন আপনার স্ক্রিন শেয়ার না হয়">
@@ -252,6 +288,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.canvasBlocked.tooltip            "আপনি এই ওয়েবসাইটের জন্য ক্যানভাস ডেটা নিষ্কাশন অবরোধ করেছেন।">
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "Adobe Flash প্লাগিন দিয়ে ওয়েবসাইটটি আপনি ব্লক করেছেন।">
 <!ENTITY urlbar.midiBlocked.tooltip              "আপনি সাইটটির জন্য MIDI এর প্রবেশ ব্লক করেছেন।">
+<!ENTITY urlbar.installBlocked.tooltip           "আপনি এই ওয়েবসাইটের জন্য অ্যাড-অন ইনস্টলেশন বন্ধ করেছেন।">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "ইতিহাস দেখুন">
 
@@ -384,6 +421,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.clearRecent.label "সাম্প্রতিক ইতিহাস অপসারণ…">
 <!ENTITY appMenuHistory.restoreSession.label "পূর্ববর্তী সেশন পুনরুদ্ধার">
 <!ENTITY appMenuHistory.viewSidebar.label "ইতিহাস সাইডবার প্রদর্শন">
+<!ENTITY appMenuHistory.hideSidebar.label "ইতিহাস সাইডবার লুকাও">
 <!ENTITY appMenuHistory.recentHistory.label "সাম্প্রতিক ইতিহাস">
 <!ENTITY appMenuHelp.label "সাহায্য">
 
@@ -444,6 +482,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (reportExtension.label) This label is used in the extensions
      toolbar buttons context menus, a user can use this command to submit to Mozilla
      an abuse report related to that extension. "Report" is a verb. -->
+<!ENTITY customizeMenu.reportExtension.label "রিপোর্ট এক্সটেনশন">
+<!ENTITY customizeMenu.reportExtension.accesskey "o">
 
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
@@ -494,6 +534,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      This is set as the aria-label attribute for the search input box in the
      in-content search UI, to be used by screen readers. -->
 <!ENTITY contentSearchInput.label     "কোয়েরি অনুসন্ধান">
+
 <!ENTITY contentSearchSubmit.tooltip  "অনুসন্ধান জমা দিন">
 
 <!-- LOCALIZATION NOTE (searchInput.placeholder):
@@ -798,13 +839,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.connection "সংযোগ">
 <!ENTITY identity.connectionSecure "নিরাপদ সংযোগ">
-
-<!-- LOCALIZATION NOTE (identity.securityView.label2)
-     This is the header of the security subview in the Site Identity panel. -->
-<!ENTITY identity.securityView.label2 "সংযোগ সুরক্ষা">
-
-<!ENTITY identity.connectionSecure2 "সংযোগ সুরক্ষিত">
 <!ENTITY identity.connectionNotSecure "সংযোগ নিরাপদ নয়">
+
+<!ENTITY identity.connectionSecure3 "সংযোগ সুরক্ষিত">
+<!ENTITY identity.connectionNotSecure2 "সংযোগ নিরাপদ নয়">
 <!ENTITY identity.connectionNotSecureSecurityView "এই সাইটে আপনার সংযোগ সুরক্ষিত নয়।">
 <!ENTITY identity.connectionFile "এই পাতা আপনার কম্পিউটারে জমা হয়েছে।">
 <!ENTITY identity.connectionVerified2 "আপনি নিরাপদে এই সাইটে সংযুক্ত, যার মালিক:">
@@ -847,17 +885,20 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.permissions "অনুমোদন">
 
-<!-- LOCALIZATION NOTE (identity.permissions2): "set" as in "configured for this website" -->
-<!ENTITY identity.permissions2 "অনুমতির সেট">
+<!ENTITY identity.permissions3 "অনুমোদন">
 <!ENTITY identity.permissionsEmpty "আপনি এই সাইটের জন্য কোনো বিশেষ অনুমতি দেননি।">
 <!ENTITY identity.permissionsReloadHint "পরিবর্তনগুলি প্রয়োগ করার জন্য আপনাকে পাতাটি পুনরায় লোড করার প্রয়োজন হতে পারে।">
 <!ENTITY identity.permissionsPreferences.tooltip "অনুমতির পছন্দ খুলুন">
+<!ENTITY identity.contentBlockingPreferences.tooltip "কন্টেন্ট ব্লক করার অপশন খুলুন">
 
 
+<!ENTITY protections.etpON.header "উন্নত ট্র্যাকিং সুরক্ষা এই সাইটের জন্য চালু আছে">
+<!ENTITY protections.etpOFF.header "উন্নত ট্র্যাকিং সুরক্ষা এই সাইটের জন্য বন্ধ আছে">
 <!-- LOCALIZATION NOTE:
      protections.etpMoreInfo.label: The text a screen reader speaks when focused on the info button. -->
+<!ENTITY protections.etpMoreInfo.label "উন্নত ট্র্যাকিং সুরক্ষা সম্পর্কে আরও তথ্য">
 <!ENTITY protections.settings.label "সুরক্ষা সেটিং">
-<!ENTITY protections.report.label "সম্পূর্ণ প্রতিবেদন দেখুন">
+<!ENTITY protections.showreport.label "রিপোর্ট দেখান">
 <!-- LOCALIZATION NOTE:
      protections.siteNotWorking.label: The link to be clicked to open the sub-panel view
      protections.siteNotWorkingView.title: The heading/title of the sub-panel view -->
@@ -874,11 +915,26 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY protections.siteNotWorkingView.issueList.payments "পেমেন্ট">
 <!ENTITY protections.siteNotWorkingView.issueList.comments "মন্তব্যসমূহ">
 <!ENTITY protections.siteNotWorkingView.issueList.videos "ভিডিওগুলো">
-<!ENTITY protections.siteNotWorkingView.siteStillBroken.label "সুরক্ষা বন্ধ করার পরও সাইটটি কাজ করছে না?">
 <!ENTITY protections.siteNotWorkingView.sendReport.label "একটি রিপোর্ট পাঠান">
 
-<!ENTITY protections.blocking.label "ব্লকিং">
+<!-- LOCALIZATION NOTE (protections.blocking2.label, protections.notBlocking2.label, protections.notFound.label):
+     In the protections panel, Content Blocking category items are in three sections:
+     "Blocked" for categories being blocked in the current page,
+     "Allowed" for categories detected but not blocked in the current page, and
+     "None Detected" for categories not detected in the current page.
+     These strings are used in the header labels of each of these sections. -->
+<!ENTITY protections.blocking2.label "ব্লক করা হয়েছে">
+<!ENTITY protections.notBlocking2.label "অনুমোদিত">
+<!ENTITY protections.notFound.label "কিছুই সনাক্ত করা হয়নি">
+<!-- LOCALIZATION NOTE (protections.notBlocking.why.label, protections.notBlocking.why.etp*.tooltip):
+     The "Allowed" header also includes a "Why?" link that, when hovered, shows
+     a tooltip explaining why these items were not blocked in the page. -->
 <!ENTITY protections.notBlocking.why.label "কেন?">
+<!ENTITY protections.socialMediaTrackers.label "সোশ্যাল মিডিয়া ট্র্যাকার">
+<!ENTITY protections.crossSiteTrackingCookies.label "ক্রস-সাইট ট্র্যাকিং কুকিজ">
+<!ENTITY protections.trackingContent.label "ট্র্যাকিং কন্টেন্ট">
+<!ENTITY protections.fingerprinters.label "ফিঙ্গারপ্রিন্টারস">
+<!ENTITY protections.cryptominers.label "ক্রিপ্টোমাইনার">
 
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
@@ -918,18 +974,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection3.label "ট্রাকারসমূহ">
 
 <!ENTITY contentBlocking.manageSettings.label "কন্টেন্ট ব্লকিং ব্যবস্থাপনা">
-
-
 <!ENTITY contentBlocking.manageSettings.accesskey "M">
 
 <!ENTITY contentBlocking.trackersView.label "ট্রাকার">
-
 <!ENTITY contentBlocking.trackersView.strictInfo.label "সমস্ত ট্র্যাকার ব্লক করতে, কন্টেন্ট ব্লকিং “কঠোর” এ সেট করুন।">
 
 <!ENTITY contentBlocking.cookies.label "কুকি">
 <!ENTITY contentBlocking.cookiesView.label "কুকি ও সাইট ডাটা">
 
+<!ENTITY contentBlocking.trackingProtection4.label "ট্র্যাকিং কন্টেন্ট">
 
+<!ENTITY contentBlocking.manageSettings2.label "সুরক্ষা সেটিংস পরিচালনা করুন">
+<!ENTITY contentBlocking.manageSettings2.accesskey "M">
+
+<!ENTITY contentBlocking.socialblock.label "সোশ্যাল মিডিয়া ট্র্যাকার">
+
+<!ENTITY contentBlocking.cookies2.label "ক্রস-সাইট ট্র্যাকিং কুকিজ">
 
 <!ENTITY contentBlocking.cryptominers.label "ক্রিপ্টোমাইনার">
 <!ENTITY contentBlocking.cryptominersView.label "ক্রিপ্টোমাইনার">
@@ -941,6 +1001,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView.label "সমস্যা রিপোর্ট করুন">
 <!ENTITY contentBlocking.breakageReportView2.description "কন্টেন্ট ব্লকিং কিছু ওয়েবসাইটের সঙ্গে সমস্যা হতে পারে। যখন আপনি সমস্যার রিপোর্ট করেন, তখন আপনি &brandShortName; সবার জন্য ভাল করে তৈরি করতে সহায়তা করবেন। (এটি একটি URL এবং আপনার ব্রাউজার সেটিং সম্পর্কিত তথ্য Mozilla তে পাঠাবে।)">
 <!ENTITY contentBlocking.breakageReportView.learnMore "আরও জানুন">
+
 <!ENTITY contentBlocking.breakageReportView2.learnMore "আরও জানুন">
 <!ENTITY contentBlocking.breakageReportView.collection.url.label "URL">
 <!ENTITY contentBlocking.breakageReportView.collection.comments.label "আপনার কি সমস্যা ছিল? (ঐচ্ছিক)">
@@ -994,6 +1055,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY newTabControlled.disableButton.accesskey "D">
 
 <!ENTITY homepageControlled.message "অাপনি আপনার নীড় পাতায় যা দেখেন তা একটি এক্সটেনশন পরিবর্তন করতে পারে। আপনি আপনার সেটিংস পুনঃস্থাপন করতে পারে যদি পাল্টাতে না চান।">
+
 <!ENTITY homepageControlled.header.message "আপনার নীড় পাতা পরিবর্তিত হয়েছে।">
 <!ENTITY homepageControlled.keepButton.label "পরিবর্তনগুলো রাখো">
 <!ENTITY homepageControlled.keepButton.accesskey "K">

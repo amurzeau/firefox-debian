@@ -83,6 +83,21 @@ newtab-menu-delete-history = Z historije zhašeć
 newtab-menu-save-to-pocket = Pola { -pocket-brand-name } składować
 newtab-menu-delete-pocket = Z { -pocket-brand-name } zhašeć
 newtab-menu-archive-pocket = W { -pocket-brand-name } archiwować
+newtab-menu-show-privacy-info = Naši sponsorojo a waša priwatnosć
+
+## Message displayed in a modal window to explain privacy and provide context for sponsored content.
+
+newtab-privacy-modal-button-done = Dokónčene
+newtab-privacy-modal-header = Waša priwatnosć je wažna
+newtab-privacy-modal-paragraph =
+    Přidatnje k napowědanju putawych powědančkow, pokazujemy wam tež relewantny, 
+    jara přepruwowany wobsah wot wubranych sponsorow. Budźće zawěsćeny, waše přehladowanske 
+    daty wašu wosobinsku wersiju { -brand-product-name } ženje njewopušća ­­- njewidźimy je, a naši 
+    sponsorojo tež nic.
+newtab-privacy-modal-link = Zhońće, kak priwatnosć w nowym rajtarku funguje
+
+
+
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = Zapołožku wotstronić
 # Bookmark is a verb here.

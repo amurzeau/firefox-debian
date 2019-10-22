@@ -166,7 +166,7 @@
 <!ENTITY checkSpellingCmd2.key "p">
 <!ENTITY checkSpellingCmd2.key2 "VK_F7">
 <!ENTITY checkSpellingCmd2.accesskey "r">
-<!ENTITY enableInlineSpellChecker.label "Provjeravaj pravopis tijekom tipkanja">
+<!ENTITY enableInlineSpellChecker.label "Provjeri pravopis tijekom tipkanja">
 <!ENTITY enableInlineSpellChecker.accesskey "s">
 <!ENTITY quoteCmd.label "Citiraj poruku">
 <!ENTITY quoteCmd.accesskey "C">
@@ -229,7 +229,7 @@
 <!ENTITY minimizeWindow.key "m">
 <!ENTITY minimizeWindow.label "Minimiziraj">
 <!ENTITY bringAllToFront.label "Postavi sve na vrh">
-<!ENTITY zoomWindow.label "Uvećanje">
+<!ENTITY zoomWindow.label "Zumiraj">
 <!ENTITY windowMenu.label "Prozor">
 
 <!-- Mail Toolbar -->

@@ -173,7 +173,9 @@ if CONFIG['MOZ_BUILD_APP']:
 else:
     include('/toolkit/toolkit.mozbuild')
 
-CONFIGURE_SUBST_FILES += ['.cargo/config']
+OBJDIR_PP_FILES['.cargo'] += ['.cargo/config.in']
+
+DEFINES['top_srcdir'] = TOPSRCDIR
 
 if not CONFIG['LIBXUL_SDK']:
     DIRS += ['debian/extra-stuff']

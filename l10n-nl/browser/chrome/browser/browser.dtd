@@ -48,7 +48,7 @@ same accesskey but will never be visible at the same time. -->
 in "Search through tabs". -->
 <!ENTITY  allTabsMenu.searchTabs.label       "Tabbladen doorzoeken">
 
-<!ENTITY tabCmd.label "&#xad;Nieuw tabblad">
+<!ENTITY tabCmd.label "Nieuw tabblad">
 <!ENTITY tabCmd.accesskey "t">
 <!ENTITY tabCmd.commandkey "t">
 <!-- LOCALIZATION NOTE (openLocationCmd.label): "Open Location" is only
@@ -76,12 +76,21 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY menubarCmd.label "Menubalk">
 <!ENTITY menubarCmd.accesskey "M">
 <!ENTITY navbarCmd.label "Navigatiewerkbalk">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY navbar.accessibleLabel "Navigatie">
 <!ENTITY personalbarCmd.label "Bladwijzerwerkbalk">
 <!ENTITY personalbarCmd.accesskey "B">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY personalbar.accessibleLabel "Bladwijzers">
 <!ENTITY bookmarksToolbarItem.label "Bladwijzerwerkbalkitems">
 
 <!ENTITY pageSourceCmd.label "Paginabron">
 <!ENTITY pageSourceCmd.accesskey "b">
+
 <!ENTITY pageSourceCmd.commandkey "u">
 <!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
 Option+Command keyboard shortcut letter that Safari and Chrome use for "View
@@ -92,6 +101,7 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 
 <!ENTITY pageInfoCmd.label "Pagina-info">
 <!ENTITY pageInfoCmd.accesskey "i">
+
 <!ENTITY pageInfoCmd.commandkey "i">
 <!ENTITY ldbCmd.label "Lay-out-debugger">
 <!ENTITY ldbCmd.accesskey "L">
@@ -99,9 +109,9 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 <!ENTITY mirrorTabCmd.accesskey "s">
 <!-- LOCALIZATION NOTE (enterFullScreenCmd.label, exitFullScreenCmd.label):
 These should match what Safari and other Apple applications use on OS X Lion. -->
-<!ENTITY enterFullScreenCmd.label "Schermvullende weergave">
+<!ENTITY enterFullScreenCmd.label "Volledig scherm">
 <!ENTITY enterFullScreenCmd.accesskey "S">
-<!ENTITY exitFullScreenCmd.label "Schermvullende weergave verlaten">
+<!ENTITY exitFullScreenCmd.label "Volledig scherm verlaten">
 <!ENTITY exitFullScreenCmd.accesskey "S">
 <!ENTITY fullScreenCmd.label "Volledig scherm">
 <!ENTITY fullScreenCmd.accesskey "d">
@@ -116,6 +126,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaSignInError.label "Opnieuw verbinden met &syncBrand.shortName.label;">
 <!ENTITY fxaUnverified.label "Uw account verifiëren">
 
+
+<!ENTITY togglePictureInPicture.key2 "}">
+<!ENTITY togglePictureInPicture.key "]"> <!-- } is above this key on many keyboards -->
 
 <!ENTITY fullScreenMinimize.tooltip "Minimaliseren">
 <!ENTITY fullScreenRestore.tooltip "Herstellen">
@@ -146,13 +159,24 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.menu.signedInAs.label "Aangemeld als">
 <!ENTITY fxa.menu.manageAccount.label "Account beheren…">
 <!ENTITY fxa.menu.syncSettings.label "&syncBrand.shortName.label;-instellingen…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbar menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.syncSettings2.label "&syncBrand.shortName.label;-instellingen">
 <!ENTITY fxa.menu.connectAnotherDevice2.label "Een ander apparaat verbinden…">
 <!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
 <!ENTITY fxa.menu.signin.label "Aanmelden bij &brandProductName;">
 <!ENTITY fxa.menu.turnOnSync.label "&syncBrand.shortName.label; inschakelen">
-<!ENTITY fxa.menu.account.label "Account">
 <!ENTITY fxa.menu.firefoxServices.label "&brandProductName;-diensten">
+
+<!ENTITY fxa.menu.account.label "Account">
+<!ENTITY fxa.menu.settings.label "Instellingen">
+<!ENTITY fxa.menu.accountSettings.label "Accountinstellingen">
+<!ENTITY fxa.menu.signOut.label "Afmelden…">
+<!ENTITY fxa.menu.deviceSettings.label "Apparaatinstellingen">
+<!ENTITY fxa.menu.setupSync.label "&syncBrand.shortName.label; instellen…">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
      for the Firefox Account toolbar menu screen.  -->
@@ -195,6 +219,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY bookmarksMenu.label "Bladwijzers">
 <!ENTITY bookmarksMenu.accesskey "a">
+
 <!ENTITY bookmarkThisPageCmd.label "Bladwijzer voor deze pagina maken">
 <!ENTITY editThisBookmarkCmd.label "Deze bladwijzer bewerken">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
@@ -236,6 +261,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Plug-in-gebruik beheren">
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "Wijzigen of u notificaties van de website kunt ontvangen">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Gegevens in permanente opslag bewaren">
+
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Browser wordt op afstand bestuurd">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Paneel Webauthenticatie openen">
 <!ENTITY urlbar.storageAccessAnchor.tooltip               "Toestemmingspaneel voor surfactiviteit openen">
@@ -249,6 +275,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Paginavertaling beheren">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Gebruik van DRM-software beheren">
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "MIDI-paneel openen">
+
+<!ENTITY urlbar.permissionsGranted.tooltip       "U hebt deze website aanvullende toestemmingen gegeven.">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "U hebt uw camera voor deze website geblokkeerd.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "U hebt uw microfoon voor deze website geblokkeerd.">
@@ -419,8 +447,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Wilt u hier uw tabbladen van andere apparaten zien?">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Sync-voorkeuren openen">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Meld u aan om een lijst van tabbladen van uw andere apparaten weer te geven.">
+<!ENTITY appMenuRemoteTabs.welcome.label "Bekijk een lijst met tabbladen van uw overige apparaten.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Uw account moet worden geverifieerd.">
 <!ENTITY appMenuRemoteTabs.signin.label "Aanmelden bij Sync">
+<!ENTITY appMenuRemoteTabs.signintosync.label "Aanmelden bij &syncBrand.shortName.label;…">
+<!ENTITY appMenuRemoteTabs.turnonsync.label "&syncBrand.shortName.label; inschakelen…">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Apparaten beheren…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Weergeven in zijbalk">
 <!ENTITY appMenuRemoteTabs.hidesidebar.label "Zijbalk met gesynchroniseerde tabbladen verbergen">
@@ -508,6 +539,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      This is set as the aria-label attribute for the search input box in the
      in-content search UI, to be used by screen readers. -->
 <!ENTITY contentSearchInput.label     "Zoekterm">
+
 <!ENTITY contentSearchSubmit.tooltip  "Zoekopdracht verzenden">
 
 <!-- LOCALIZATION NOTE (searchInput.placeholder):
@@ -812,13 +844,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.connection "Verbinding">
 <!ENTITY identity.connectionSecure "Beveiligde verbinding">
-
-<!-- LOCALIZATION NOTE (identity.securityView.label2)
-     This is the header of the security subview in the Site Identity panel. -->
-<!ENTITY identity.securityView.label2 "Verbindingsbeveiliging">
-
-<!ENTITY identity.connectionSecure2 "Verbinding veilig">
 <!ENTITY identity.connectionNotSecure "Verbinding is niet beveiligd">
+
+<!ENTITY identity.connectionSecure3 "Verbinding beveiligd">
+<!ENTITY identity.connectionNotSecure2 "Verbinding niet beveiligd">
 <!ENTITY identity.connectionNotSecureSecurityView "U hebt een onbeveiligde verbinding met deze website.">
 <!ENTITY identity.connectionFile "Deze pagina is op uw computer opgeslagen.">
 <!ENTITY identity.connectionVerified2 "U hebt een beveiligde verbinding met deze website, welke wordt beheerd door:">
@@ -828,7 +857,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.insecureLoginForms2 "Ingevoerde aanmeldingen op deze pagina zouden kunnen worden onderschept.">
 <!ENTITY identity.customRoot "Verbinding geverifieerd door een certificaatuitgever die niet door Mozilla wordt herkend.">
 
-<!ENTITY identity.evOwnerLabel "Website beheerd door:">
+<!ENTITY identity.evOwnerLabel2 "Certificaat uitgegeven aan:">
 
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "&brandShortName; heeft onderdelen van deze pagina die niet zijn beveiligd geblokkeerd.">
@@ -864,8 +893,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.permissions "Toestemmingen">
 
-<!-- LOCALIZATION NOTE (identity.permissions2): "set" as in "configured for this website" -->
-<!ENTITY identity.permissions2 "Toestemmingen ingesteld">
+<!ENTITY identity.permissions3 "Toestemmingen">
 <!ENTITY identity.permissionsEmpty "U hebt deze website geen speciale toestemmingen gegeven.">
 <!ENTITY identity.permissionsReloadHint "Mogelijk dient u de pagina te vernieuwen om wijzigingen van kracht te laten worden.">
 <!ENTITY identity.permissionsPreferences.tooltip "Voorkeuren voor toestemmingen openen">
@@ -878,7 +906,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      protections.etpMoreInfo.label: The text a screen reader speaks when focused on the info button. -->
 <!ENTITY protections.etpMoreInfo.label "Meer informatie over Verbeterde bescherming tegen volgen">
 <!ENTITY protections.settings.label "Beschermingsinstellingen">
-<!ENTITY protections.report.label "Volledig rapport tonen">
+<!ENTITY protections.showreport.label "Rapport tonen">
 <!-- LOCALIZATION NOTE:
      protections.siteNotWorking.label: The link to be clicked to open the sub-panel view
      protections.siteNotWorkingView.title: The heading/title of the sub-panel view -->
@@ -895,15 +923,23 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY protections.siteNotWorkingView.issueList.payments "Betalingen">
 <!ENTITY protections.siteNotWorkingView.issueList.comments "Opmerkingen">
 <!ENTITY protections.siteNotWorkingView.issueList.videos "Video’s">
-<!ENTITY protections.siteNotWorkingView.siteStillBroken.label "Werkt de website na uitschakelen beschermingen nog steeds niet?">
 <!ENTITY protections.siteNotWorkingView.sendReport.label "Rapport verzenden">
 
+<!-- LOCALIZATION NOTE (protections.blocking2.label, protections.notBlocking2.label, protections.notFound.label):
+     In the protections panel, Content Blocking category items are in three sections:
+     "Blocked" for categories being blocked in the current page,
+     "Allowed" for categories detected but not blocked in the current page, and
+     "None Detected" for categories not detected in the current page.
+     These strings are used in the header labels of each of these sections. -->
 <!ENTITY protections.blocking2.label "Geblokkeerd">
 <!ENTITY protections.notBlocking2.label "Toegestaan">
+<!ENTITY protections.notFound.label "Geen gedetecteerd">
+<!-- LOCALIZATION NOTE (protections.notBlocking.why.label, protections.notBlocking.why.etp*.tooltip):
+     The "Allowed" header also includes a "Why?" link that, when hovered, shows
+     a tooltip explaining why these items were not blocked in the page. -->
 <!ENTITY protections.notBlocking.why.label "Waarom?">
 <!ENTITY protections.notBlocking.why.etpOn.tooltip "Door deze te blokkeren werken elementen van sommige websites mogelijk niet. Zonder trackers werken sommige knoppen, formulieren en aanmeldvelden mogelijk niet.">
 <!ENTITY protections.notBlocking.why.etpOff.tooltip "Door beschermingen uit te schakelen worden alle trackers op deze website toegestaan. Het kan ook de functionaliteit van de website verbeteren.">
-<!ENTITY protections.notFound.label "Geen gedetecteerd">
 <!ENTITY protections.socialMediaTrackers.label "Sociale-mediatrackers">
 <!ENTITY protections.crossSiteTrackingCookies.label "Cross-site-trackingcookies">
 <!ENTITY protections.trackingContent.label "Volginhoud">
@@ -914,7 +950,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY protections.crossSiteTrackingCookies.description "Deze cookies volgen u van website naar website om gegevens over wat u online doet te verzamelen. Ze worden geplaatst door derden, zoals advertentiebureaus en analysebedrijven.">
 <!ENTITY protections.cryptominers.description "Cryptominers gebruiken de rekenkracht van uw systeem om digitale valuta te genereren. Cryptominer-scripts trekken uw accu leeg, vertragen uw computer en kunnen uw energierekening omhoog jagen.">
 <!ENTITY protections.fingerprinters.description "Fingerprinters verzamelen instellingen van uw browser en computer om een profiel van u te maken. Met behulp van deze digitale vingerafdruk kunnen ze u op verschillende websites volgen.">
-<!ENTITY protections.trackingContent.description "Websites kunnen externe advertenties, video’s en andere inhoud laden die volgcode bevat. Het blokkeren van volginhoud kan websites helpen sneller te laden, maar sommige knoppen, formulieren en aanmeldvelden werken mogelijk niet.">
+<!ENTITY protections.trackingContent2.description "Websites kunnen externe advertenties, video’s en andere inhoud laden met volgcode. Het blokkeren van volginhoud kan websites helpen sneller te laden, maar sommige knoppen, formulieren en aanmeldvelden werken mogelijk niet.">
 <!ENTITY protections.socialMediaTrackers.description "Sociale netwerken plaatsen trackers op andere websites om te volgen wat u online doet, ziet en bekijkt. Hierdoor kunnen sociale-mediabedrijven meer over u leren dan wat u deelt op uw sociale-mediaprofielen.">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
@@ -936,7 +972,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSyncNowItem.accesskey    "N">
 <!ENTITY syncReAuthItem.label         "Opnieuw verbinden met &syncBrand.shortName.label;…">
 <!ENTITY syncReAuthItem.accesskey     "O">
-<!ENTITY syncToolbarButton.label      "&#xad;Synchroniseren">
+<!ENTITY syncToolbarButton.label      "Synchroniseren">
 
 <!ENTITY customizeMode.autoHideDownloadsButton.label "Automatisch verbergen">
 
@@ -954,18 +990,18 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection3.label "Trackers">
 
 <!ENTITY contentBlocking.manageSettings.label "Inhoudsblokkering beheren">
-
-<!ENTITY contentBlocking.trackingProtection4.label "Volginhoud">
-
-<!ENTITY contentBlocking.manageSettings2.label "Beschermingsinstellingen beheren">
 <!ENTITY contentBlocking.manageSettings.accesskey "b">
 
 <!ENTITY contentBlocking.trackersView.label "Trackers">
-
 <!ENTITY contentBlocking.trackersView.strictInfo.label "Stel inhoudsblokkering in op ‘Streng’ om alle trackers te blokkeren.">
 
 <!ENTITY contentBlocking.cookies.label "Cookies">
 <!ENTITY contentBlocking.cookiesView.label "Cookies en websitegegevens">
+
+<!ENTITY contentBlocking.trackingProtection4.label "Volginhoud">
+
+<!ENTITY contentBlocking.manageSettings2.label "Beschermingsinstellingen beheren">
+<!ENTITY contentBlocking.manageSettings2.accesskey "B">
 
 <!ENTITY contentBlocking.socialblock.label "Sociale-mediatrackers">
 
@@ -981,6 +1017,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView.label "Problemen melden">
 <!ENTITY contentBlocking.breakageReportView2.description "Inhoudsblokkering kan problemen met bepaalde websites veroorzaken. Als u problemen meldt, helpt u &brandShortName; voor iedereen te verbeteren. (Hierdoor wordt zowel een URL als informatie over uw browserinstellingen naar Mozilla verzonden.)">
 <!ENTITY contentBlocking.breakageReportView.learnMore "Meer info">
+
 <!ENTITY contentBlocking.breakageReportView.title "Niet-werkende website melden">
 <!ENTITY contentBlocking.breakageReportView3.description "Het blokkeren van bepaalde trackers kan problemen met bepaalde websites veroorzaken. Door deze problemen te melden, helpt u &brandShortName; voor iedereen te verbeteren. Als u dit rapport verzendt, wordt zowel een URL als informatie over uw browserinstellingen naar Mozilla verzonden.">
 <!ENTITY contentBlocking.breakageReportView2.learnMore "Meer info">
@@ -1036,6 +1073,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY newTabControlled.disableButton.accesskey "u">
 
 <!ENTITY homepageControlled.message "Een extensie heeft gewijzigd wat u als uw startpagina ziet. Als u dit niet wilt, kunt u uw instellingen terugzetten.">
+
 <!ENTITY homepageControlled.header.message "Uw startpagina is gewijzigd.">
 <!ENTITY homepageControlled.keepButton.label "Wijzigingen behouden">
 <!ENTITY homepageControlled.keepButton.accesskey "b">

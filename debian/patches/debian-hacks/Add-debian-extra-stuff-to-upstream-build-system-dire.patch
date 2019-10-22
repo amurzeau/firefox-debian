@@ -7,12 +7,12 @@ Subject: Add debian/extra-stuff to upstream build system directory traversal
  1 file changed, 3 insertions(+)
 
 diff --git a/moz.build b/moz.build
-index 93c95edf231c..97744a55c448 100644
+index 007b13afc0c4..bfadd7a3e3bf 100644
 --- a/moz.build
 +++ b/moz.build
-@@ -175,4 +175,7 @@ else:
+@@ -177,4 +177,7 @@ OBJDIR_PP_FILES['.cargo'] += ['.cargo/config.in']
  
- CONFIGURE_SUBST_FILES += ['.cargo/config']
+ DEFINES['top_srcdir'] = TOPSRCDIR
  
 +if not CONFIG['LIBXUL_SDK']:
 +    DIRS += ['debian/extra-stuff']

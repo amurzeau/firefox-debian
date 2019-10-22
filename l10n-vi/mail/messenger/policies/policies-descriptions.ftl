@@ -41,6 +41,7 @@ policy-EnableTrackingProtection = Bật hoặc tắt chặn nội dung và tùy 
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
 policy-Extensions = Cài đặt, gỡ cài đặt hoặc khóa tiện ích mở rộng. Tùy chọn cài đặt lấy URL hoặc đường dẫn làm tham số. Các tùy chọn gỡ cài đặt và khóa có ID tiện ích mở rộng.
+policy-ExtensionSettings = Quản lý các cài đặt cài đặt khác nhau cho tiện ích mở rộng.
 policy-ExtensionUpdate = Bật hoặc tắt cập nhật tiện ích mở rộng tự động.
 policy-HardwareAcceleration = Nếu sai, tắt tăng tốc phần cứng.
 policy-InstallAddonsPermission = Cho phép các trang web nhất định để cài đặt tiện ích.
@@ -53,6 +54,7 @@ policy-Preferences = Đặt và khóa giá trị cho một tập hợp con ưu t
 policy-PromptForDownloadLocation = Hỏi nơi lưu tập tin khi tải xuống.
 policy-Proxy = Định cấu hình cài đặt proxy.
 policy-RequestedLocales = Đặt danh sách các ngôn ngữ được yêu cầu cho ứng dụng theo thứ tự ưu tiên.
+policy-SanitizeOnShutdown2 = Xóa dữ liệu điều hướng khi tắt máy.
 policy-SearchEngines = Cấu hình cài đặt công cụ tìm kiếm. Chính sách này chỉ có sẵn trên phiên bản phát hành hỗ trợ mở rộng (ESR).
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Cài đặt các mô-đun PKCS #11.

@@ -2,18 +2,31 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+pane-general-title = General
 category-general =
     .tooltiptext = { pane-general-title }
 general-language-and-appearance-header = Limbă și aspect
+general-incoming-mail-header = Mesaje primite
 general-files-and-attachment-header = Fișiere și atașamente
 general-tags-header = Etichete
+general-reading-and-display-header = Citire și afișare
 general-updates-header = Actualizări
+general-network-and-diskspace-header = Rețea și spațiu pe disc
+general-indexing-label = Indexare
+composition-category-header = Redactare
 composition-attachments-header = Atașamente
+composition-spelling-title = Ortografie
 compose-html-style-title = Stil HTML
+composition-addressing-header = Adrese
+privacy-main-header = Confidențialitate
 privacy-passwords-header = Parole
+privacy-junk-header = Mesaje nesolicitate
+privacy-data-collection-header = Colectare de date și utilizare
 privacy-security-header = Securitate
+privacy-scam-detection-title = Detectarea de înșelăciuni
 privacy-anti-virus-title = Antivirus
 privacy-certificates-title = Certificate
+chat-status-title = Stare
 chat-notifications-title = Notificări
 choose-messenger-language-description = Alege limba de folosit pentru afișarea meniurilor, mesajelor și a notificărilor de la { -brand-short-name }.
 manage-messenger-languages-button =

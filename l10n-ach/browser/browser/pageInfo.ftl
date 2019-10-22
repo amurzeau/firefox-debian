@@ -14,8 +14,6 @@ select-all =
 menu-select-all =
     .label = Yer weng
     .accesskey = w
-close-window =
-    .key = A
 general-tab =
     .label = Lumuku
     .accesskey = G
@@ -119,6 +117,8 @@ security-site-data-cookies-only = Eyo, angija
 security-site-data-no = Pe
 image-size-unknown = Pe ngene
 not-set-verified-by = Pe kicimo
+page-info-not-specified =
+    .value = Pe kicimo
 not-set-alternative-text = Pe kicimo
 not-set-date = Pe kicimo
 media-img = Cal
@@ -141,12 +141,24 @@ general-quirks-mode =
 general-strict-mode =
     .value = Kit ma lubo la por
 security-no-owner = Kabedo me kube man pe poko ngec me nga ma rwode.
+page-info-security-no-owner =
+    .value = Kabedo me kube man pe poko ngec me nga ma rwode.
 media-select-folder = Yer boc me gwoko cal iye
 media-unknown-not-cached =
     .value = Pe ngene (pe kikano)
 permissions-use-default =
     .label = Tii ki makwongo
 security-no-visits = Pe
+# This string is used to display the number of times
+# the user has visited the website prior
+# Variables:
+#   $visits (number) - The number of previous visits
+security-visits-number =
+    { $visits ->
+        [0] Pe
+        [one] Eyo, kicel
+       *[other] Eyo, tyen { $visits }
+    }
 # This string is used to display the type of
 # an image
 # Variables:

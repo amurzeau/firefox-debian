@@ -21,6 +21,11 @@ onboarding-button-label-get-started = Prědne kšace
 onboarding-welcome-header = Witajśo k { -brand-short-name }
 onboarding-welcome-body = Maśo wobglědowak.<br/>Póznajśo zbytk { -brand-product-name }.
 onboarding-welcome-learn-more = Dalšne informacije wó lěpšynach.
+onboarding-welcome-modal-get-body = Maśo wobglědowak.<br/>Wuwónoźćo nejlěpše z { -brand-product-name }.
+onboarding-welcome-modal-supercharge-body = Pśeśěžćo swój šćit priwatnosći.
+onboarding-welcome-modal-privacy-body = Maśo wobglědowak. Pśidajmy wěcej šćita priwatnosći.
+onboarding-welcome-modal-family-learn-more = Zgóńśo wěcej wó produktowej swójźbje { -brand-product-name }.
+onboarding-welcome-form-header = How zachopiś
 onboarding-join-form-header = Pśizamkniśo se k { -brand-product-name }
 onboarding-join-form-body = Zapódajśo swóju e-mailowu adresu, aby zachopił.
 onboarding-join-form-email =
@@ -64,6 +69,12 @@ onboarding-benefit-privacy-title = Napšawdna priwatnosć
 # make and do. We take less data. We keep it safe. And we make sure that we are
 # transparent about how we use it."
 onboarding-benefit-privacy-text = Wšykno, což cynimy, naše zlubjenje za wósobinske daty dopołnjujo: Mjenjej zběraś. Wěsće składowaś. Žedne pótajmstwa.
+onboarding-benefit-sync-title = { -sync-brand-short-name }
+onboarding-benefit-sync-text = Wzejśo swóje cytańske znamjenja, gronidła, historiju a wěcej wšuźi, źož { -brand-product-name } wužywaśo.
+onboarding-benefit-monitor-title = { -monitor-brand-short-name }
+onboarding-benefit-monitor-text = Dostańśo powěźeńki, gaž waše wósobinske informacije su w znatej datowej źěrje.
+onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
+onboarding-benefit-lockwise-text = Zastojśo gronidła, kótarež su šćitane a portabelne.
 
 ## These strings belong to the individual onboarding messages.
 

@@ -93,6 +93,42 @@ cfr-whatsnew-button =
 
 cfr-whatsnew-panel-header = Nyheder
 
+cfr-whatsnew-release-notes-link-text = Læs udgivelsesnoterne
+
+cfr-whatsnew-fx70-title = { -brand-short-name } kæmper nu hårdere for din ret til et privatliv
+cfr-whatsnew-fx70-body =
+    Den nyeste version har forbedret funktionen Beskyttelse mod sporing og gør det
+    nemmere end nogensinde før at lave sikre adgangskoder.
+
+cfr-whatsnew-tracking-protect-title = Beskyt dig selv mod at blive sporet på nettet
+cfr-whatsnew-tracking-protect-body =
+   { -brand-short-name } blokerer mange udbredte sporings-teknologier fra sociale netværk
+   og andre virksomheder, der følger med i, hvad du laver på nettet.
+cfr-whatsnew-tracking-protect-link-text = Se din rapport
+
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+  { $blockedCount ->
+    [one] sporings-mekanisme blokeret
+   *[other] sporings-mekanismer blokeret
+  }
+cfr-whatsnew-tracking-blocked-subtitle =
+   siden { DATETIME($earliestDate, month: "long", year: "numeric") }
+cfr-whatsnew-tracking-blocked-link-text = Se rapport
+
+cfr-whatsnew-lockwise-backup-title = Lav backup af dine adgangskoder
+cfr-whatsnew-lockwise-backup-body =
+   Og opret sikre adgangskoder, du har adgang til overalt, hvor du logger ind.
+cfr-whatsnew-lockwise-backup-link-text = Slå backup til
+
+cfr-whatsnew-lockwise-take-title = Tag dine adgangskoder med dig
+cfr-whatsnew-lockwise-take-body =
+   Med apppen { -lockwise-brand-short-name } får du sikker adgang til dine adgangskoder,
+   uanset hvor du er.
+cfr-whatsnew-lockwise-take-link-text = Hent appen
+
 ## Bookmark Sync
 
 cfr-doorhanger-sync-bookmarks-header = Få dette bogmærke på din telefon
@@ -121,3 +157,16 @@ cfr-doorhanger-firefox-send-header = Del denne PDF-fil sikkert
 cfr-doorhanger-firefox-send-body = Hold dine fortrolige dokumenter sikre med stærk kryptering og et link, der automatisk udløber
 cfr-doorhanger-firefox-send-ok-button = Prøv { -send-brand-name }
   .accesskey = P
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-ok-button = Se beskyttelse
+  .accesskey = b
+cfr-doorhanger-socialtracking-close-button = Luk
+  .accesskey = L
+cfr-doorhanger-socialtracking-heading = { -brand-short-name } forhindrede et socialt netværk i at spore dig på denne side
+cfr-doorhanger-socialtracking-description = Du har ret til et privatliv. { -brand-short-name } blokerer nu de mest almindelige sporings-mekanismer fra sociale medier for at begrænse, hvor meget data de kan indsamle om din adfærd på nettet. 
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name } blokerede en fingerprinter på denne side
+cfr-doorhanger-fingerprinters-description = Du har ret til et privatliv. { -brand-short-name } blokerer nu fingerprinters, der indsamler unikke informationer om din enhed for at spore dig.
+cfr-doorhanger-cryptominers-heading = { -brand-short-name } blokerede en cryptominer på denne side
+cfr-doorhanger-cryptominers-description = Du har ret til et privatliv. { -brand-short-name } blokerer nu cryptominers, der bruger dit systems ressourcer til at udvinde digital valuta.

@@ -251,6 +251,62 @@ applications-type-column =
 applications-action-column =
     .label = Tic
     .accesskey = T
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } pwail
+applications-action-save =
+    .label = Gwok pwail
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Tii ki { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Tii ki { $app-name } (makwongo)
+applications-use-other =
+    .label = Tii ki mukene…
+applications-select-helper = Yer purugram ma Lakony
+applications-manage-app =
+    .label = Matut ikom purugram…
+applications-always-ask =
+    .label = Peny jwijwi
+applications-type-pdf = Kit Coc acoya Ma mako ne yot (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Tii ki { $plugin-name } (i { -brand-short-name })
+applications-preview-inapp =
+    .label = Nen odoco i { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 play-drm-content-learn-more = Nong ngec mapol
 update-application-title = Ngec manyen me { -brand-short-name }
 update-application-description = Gwok { -brand-short-name } ki ngec manyen pi tic maber loyo, cung matek ki ber bedo.
@@ -273,6 +329,12 @@ update-application-use-service =
 update-enable-search-update =
     .label = Ket pire kene ngec manyen i injin yeny
     .accesskey = e
+update-in-progress-title = Tye ka keto Ngec Manyen
+update-in-progress-message = Imito ni { -brand-short-name } omede ki keto ngec manyen man?
+update-in-progress-ok-button = &Juki
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Mede
 
 ## General Section - Performance
 
@@ -307,6 +369,7 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Yeny coc ka acako coyo coc
     .accesskey = c
+browsing-picture-in-picture-learn-more = Nong ngec mapol
 browsing-cfr-recommendations-learn-more = Nong ngec mapol
 
 ## General Section - Proxy
@@ -550,6 +613,7 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Ma kiweko woko…
     .accesskey = a
+forms-breach-alerts-learn-more-link = Nong ngec mapol
 forms-saved-logins =
     .label = Donyo iyie ma kigwoko…
     .accesskey = D
@@ -559,6 +623,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Lok mung me donyo madit…
     .accesskey = m
+forms-master-pw-fips-title = Kombedi itye i kit me FIPS. FIPS mito Ladit me mung me donyo ma peke nono.
+forms-master-pw-fips-desc = Loko mung me donyo Pe olare
 
 ## Privacy Section - History
 
@@ -650,6 +716,13 @@ content-blocking-standard-desc = Opore pi gwokke ki tic. Yee lulub kor mogo wek 
 content-blocking-strict-description = Gwokke makato, romo weko kakube mogo tur woko.
 content-blocking-custom-desc = Yer ngo me agenga.
 content-blocking-private-trackers = Lulub kor ma ngene keken i Dirica me Mung
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+
+##
+
 content-blocking-all-cookies = Angija weng
 content-blocking-unvisited-cookies = Angija ki kakube mape kilimo gi
 content-blocking-all-windows-trackers = Lulub kor ma ngene i dirica weng

@@ -21,6 +21,8 @@ inactive-css-not-flex-item = <strong>{ $property }</strong> non ha effetto su qu
 inactive-css-not-flex-container = <strong>{ $property }</strong> non ha effetto su questo elemento in quanto non è un contenitore flex.
 inactive-css-not-inline-or-tablecell = <strong>{ $property }</strong> non ha effetto su questo elemento in quanto non è “inline” o “table-cell”.
 inactive-css-property-because-of-display = <strong>{ $property }</strong> non ha effetto su questo elemento in quanto il valore di “display” è <strong>{ $display }</strong>.
+inactive-css-not-display-block-on-floated = Il valore di <strong>display</strong> è stato modificato in <strong>block</strong> in quanto l’elemento è <strong>floated<strong>.
+inactive-css-property-is-impossible-to-override-in-visited = Non è possibile ignorare <strong>{ $property }</strong> per la restrizione causata da <strong>:visited</strong>.
 
 ## In the Rule View when a CSS property cannot be successfully applied we display
 ## an icon. When this icon is hovered this message is displayed to explain how
@@ -29,10 +31,14 @@ inactive-css-property-because-of-display = <strong>{ $property }</strong> non ha
 inactive-css-not-grid-or-flex-container-fix = Provare ad aggiungere <strong>display:grid</strong> o <strong>display:flex</strong>. { learn-more }
 inactive-css-not-grid-or-flex-container-or-multicol-container-fix = Provare ad aggiungere <strong>display:grid</strong>, <strong>display:flex</strong> o <strong>columns:2</strong>. { learn-more }
 inactive-css-not-grid-or-flex-item-fix = Provare ad aggiungere <strong>display:grid</strong>, <strong>display:flex</strong>, <strong>display:inline-grid</strong> o <strong>display:inline-flex</strong>. { learn-more }
+inactive-css-not-grid-or-flex-item-fix-2 = Provare ad aggiungere <strong>display:grid</strong>, <strong>display:flex</strong>, <strong>display:inline-grid</strong> o <strong>display:inline-flex</strong>. { learn-more }
 inactive-css-not-grid-item-fix =Provare ad aggiungere <strong>display:grid</strong> o <strong>display:inline-grid</strong> al genitore dell’elemento. { learn-more }
+inactive-css-not-grid-item-fix-2 =Provare ad aggiungere <strong>display:grid</strong> o <strong>display:inline-grid</strong> al genitore dell’elemento. { learn-more }
 inactive-css-not-grid-container-fix = Provare ad aggiungere <strong>display:grid</strong> o <strong>display:inline-grid</strong>. { learn-more }
 inactive-css-not-flex-item-fix = Provare ad aggiungere <strong>display:flex</strong> o <strong>display:inline-flex</strong> al genitore dell’elemento. { learn-more }
+inactive-css-not-flex-item-fix-2 = Provare ad aggiungere <strong>display:flex</strong> o <strong>display:inline-flex</strong> al genitore dell’elemento. { learn-more }
 inactive-css-not-flex-container-fix = Provare ad aggiungere <strong>display:flex</strong> o <strong>display:inline-flex</strong>. { learn-more }
 inactive-css-not-inline-or-tablecell-fix = Provare ad aggiungere <strong>display:inline</strong> o <strong>display:table-cell</strong>. { learn-more }
 inactive-css-non-replaced-inline-or-table-row-or-row-group-fix = Provare ad aggiungere <strong>display:inline-block</strong> o <strong>display:block</strong>. { learn-more }
 inactive-css-non-replaced-inline-or-table-column-or-column-group-fix = Provare ad aggiungere <strong>display:inline-block</strong>. { learn-more }
+inactive-css-not-display-block-on-floated-fix = Provare a rimuovere <strong>float</strong> o aggiungere <strong>display:block</strong>. { learn-more }

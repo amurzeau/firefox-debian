@@ -23,10 +23,10 @@
 <!ENTITY keywordfield.accesskey       "კ">
 <!ENTITY showOnlyThisFrameCmd.label     "მხოლოდ ამ ჩარჩოს ჩვენება">
 <!ENTITY showOnlyThisFrameCmd.accesskey "ო">
-<!ENTITY goBackCmd.label              "უკან">
-<!ENTITY goBackCmd.accesskey          "უ">
-<!ENTITY goForwardCmd.label           "წინ">
-<!ENTITY goForwardCmd.accesskey       "წ">
+<!ENTITY goBackCmd.label              "წინა">
+<!ENTITY goBackCmd.accesskey          "წ">
+<!ENTITY goForwardCmd.label           "მომდევნო">
+<!ENTITY goForwardCmd.accesskey       "მ">
 <!ENTITY goUpCmd.label                "ზემოთ">
 <!ENTITY goUpCmd.accesskey            "ზ">
 <!ENTITY reloadCmd.label              "განახლება">
@@ -155,6 +155,16 @@ items are mutually exclusive. -->
 <!ENTITY spellDictionaries.accesskey    "ე">
 <!ENTITY spellAddDictionaries.label     "სხვა ლექსიკონების ჩამოტვირთვა…">
 <!ENTITY spellAddDictionaries.accesskey "ხ">
+
+<!ENTITY fillLoginMenu.label          "შესვლის მონაცემების შევსება">
+<!ENTITY fillLoginMenu.accesskey      "შ">
+<!ENTITY fillPasswordMenu.label       "პაროლის შევსება">
+<!ENTITY fillPasswordMenu.accesskey   "შ">
+<!ENTITY fillUsernameMenu.label       "მომხმარებლის სახელის შევსება">
+<!ENTITY fillUsernameMenu.accesskey   "შ">
+<!ENTITY noLoginSuggestions.label     "(შესვლის შემოთავაზებები არაა)">
+<!ENTITY viewSavedLogins.label        "შენახული შესვლების ნახვა">
+
 <!-- Developer Tools -->
 <!ENTITY devtoolsInspect.label          "ელემენტზე დაკვირვება">
 <!ENTITY devtoolsInspect.accesskey      "ე">

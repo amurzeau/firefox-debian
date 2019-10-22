@@ -78,15 +78,38 @@ cfr-whatsnew-button =
     .label = Не жаңалық
     .tooltiptext = Не жаңалық
 cfr-whatsnew-panel-header = Не жаңалық
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+       *[other] Блокталған трекерлер
+    }
+cfr-whatsnew-tracking-blocked-subtitle = { DATETIME($earliestDate, month: "long", year: "numeric") } бастап
+cfr-whatsnew-tracking-blocked-link-text = Есептемені қарау
+cfr-whatsnew-lockwise-take-link-text = Қолданбаны алу
 
 ## Bookmark Sync
 
+cfr-doorhanger-sync-bookmarks-ok-button = { -sync-brand-short-name } іске қосу
+    .accesskey = с
 
 ## Login Sync
 
+cfr-doorhanger-sync-logins-header = Парольдерді енді ешқашан ұмытпаңыз
+cfr-doorhanger-sync-logins-body = Парольдерді қауіпсіз түрде сақтаңыз және құрылғыларыңыз арасында синхрондаңыз.
+cfr-doorhanger-sync-logins-ok-button = { -sync-brand-short-name } іске қосу
+    .accesskey = с
 
 ## Send Tab
 
+cfr-doorhanger-send-tab-header = Мұны жолда оқыңыз
+cfr-doorhanger-send-tab-recipe-header = Бұл рецептті ас үйге апарыңыз
 
 ## Firefox Send
 
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-close-button = Жабу
+    .accesskey = Ж

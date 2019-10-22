@@ -69,5 +69,43 @@ serviceworker-empty-suggestions-debugger = Mira tu registro de service worker en
 # Suggestion to go to about:debugging in order to see Service Workers for all domains.
 # Clicking on the link will open about:debugging in a new tab.
 serviceworker-empty-suggestions-aboutdebugging = Inspecciona los service workers de otros dominios. <a>Abrir about:debugging</a>
-# Text displayed when no manifest was found for the current page.
-manifest-empty-intro = No se encontró un manifiesto para inspeccionar.
+# Header for the Manifest page when we have an actual manifest
+manifest-view-header = Manifiesto de la aplicación
+# Header for the Manifest page when there's no manifest to inspect
+# The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
+manifest-empty-intro = Tiene que añadir un Manifiesto de aplicación web para inspeccionarlo aquí. <a>Aprender más</a>
+# Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
+manifest-item-warnings = Errores y advertencias
+# Header for the Identity section of Manifest inspection displayed in the application panel.
+manifest-item-identity = Identidad
+# Header for the Presentation section of Manifest inspection displayed in the application panel.
+manifest-item-presentation = Presentación
+# Header for the Icon section of Manifest inspection displayed in the application panel.
+manifest-item-icons = Íconos
+# Text displayed while we are loading the manifest file
+manifest-loading = Cargando manifiesto…
+# Text displayed when the manifest has been successfully loaded
+manifest-loaded-ok = Manifiesto cargado.
+# Text displayed when there has been an error while trying to load the manifest
+manifest-loaded-error = Hubo un error al cargar el manifiesto:
+# Text displayed when the page has no manifest available
+manifest-non-existing = No se encontró ningún manifiesto para inspeccionar.
+# Text displayed when the page has a manifest embedded in a Data URL and
+# thus we cannot link to it.
+manifest-json-link-data-url = El manifiesto está incrustado en una URL de datos.
+# Sidebar navigation item for Manifest sidebar item section
+sidebar-item-manifest = Manifiesto
+    .alt = Ícono de manifiesto
+    .title = Manifiesto
+# Sidebar navigation item for Service Workers sidebar item section
+sidebar-item-service-workers = Service Workers
+    .alt = Ícono de Service Workers
+    .title = Service Workers
+# Text for the ALT and TITLE attributes of the warning icon
+icon-warning =
+    .alt = Ícono de advertencia
+    .title = Advertencia
+# Text for the ALT and TITLE attributes of the error icon
+icon-error =
+    .alt = Ícono de error
+    .title = Error

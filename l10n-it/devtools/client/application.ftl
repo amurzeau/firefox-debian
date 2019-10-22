@@ -24,6 +24,7 @@ serviceworker-empty-suggestions-console = Verifica la presenza di errori nella c
 serviceworker-empty-suggestions-debugger = Analizza passo per passo la registrazione del service worker e verifica la presenza di eccezioni. <a>Apri Debugger</a>
 serviceworker-empty-suggestions-aboutdebugging = Analizza i service worker da altri domini. <a>Apri about:debugging</a>
 manifest-view-header = Manifesto dell’app
+manifest-empty-intro = È necessario aggiungere il manifesto di una web app per analizzarlo qui. <a>Ulteriori informazioni</a>
 manifest-item-warnings = Errori e avvisi
 manifest-item-identity = Identità
 manifest-item-presentation = Presentazione
@@ -32,3 +33,18 @@ manifest-loading = Caricamento manifesto in corso…
 manifest-loaded-ok = Caricato manifesto.
 manifest-loaded-error = Si è verificato un errore durante il caricamento del manifesto:
 manifest-non-existing = Nessun manifesto trovato da analizzare.
+manifest-json-link-data-url = Il manifesto è incorporato in un Data URL.
+# Sidebar navigation item for Manifest sidebar item section
+sidebar-item-manifest = Manifesto
+  .alt = Icona manifesto
+  .title = Manifesto
+# Sidebar navigation item for Service Workers sidebar item section
+sidebar-item-service-workers = Service worker
+  .alt = Icona service worker
+  .title = Service worker
+icon-warning =
+  .alt = Icona avviso
+  .title = Avviso
+icon-error =
+  .alt = Icona errore
+  .title = Errore

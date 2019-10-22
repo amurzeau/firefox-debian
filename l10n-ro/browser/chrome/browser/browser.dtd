@@ -76,12 +76,19 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY menubarCmd.label "Bară de meniu">
 <!ENTITY menubarCmd.accesskey "M">
 <!ENTITY navbarCmd.label "Bară de navigare">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
 <!ENTITY personalbarCmd.label "Bară de marcaje">
 <!ENTITY personalbarCmd.accesskey "B">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
 <!ENTITY bookmarksToolbarItem.label "Elemente pe bara de marcaje">
 
 <!ENTITY pageSourceCmd.label "Sursa paginii">
 <!ENTITY pageSourceCmd.accesskey "o">
+
 <!ENTITY pageSourceCmd.commandkey "u">
 <!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
 Option+Command keyboard shortcut letter that Safari and Chrome use for "View
@@ -92,6 +99,7 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 
 <!ENTITY pageInfoCmd.label "Informații privind pagina">
 <!ENTITY pageInfoCmd.accesskey "I">
+
 <!ENTITY pageInfoCmd.commandkey "i">
 <!ENTITY ldbCmd.label "Depanator de așezare în pagină">
 <!ENTITY ldbCmd.accesskey "L">
@@ -117,6 +125,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaUnverified.label "Verifică-ți contul">
 
 
+ <!-- } is above this key on many keyboards -->
+
 <!ENTITY fullScreenMinimize.tooltip "Minimizează">
 <!ENTITY fullScreenRestore.tooltip "Restaurează">
 <!ENTITY fullScreenClose.tooltip "Închide">
@@ -137,6 +147,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.unverified.description.label "Va trebui să îți verifici contul înainte de a putea sincroniza.">
 <!ENTITY fxa.unverified.button.label "Deschide setările pentru &syncBrand.shortName.label;…">
 
+<!ENTITY pictureInPictureHideToggle.label "Ascunde comutatorul Picture-in-Picture">
 <!ENTITY pictureInPictureHideToggle.accesskey "H">
 
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
@@ -144,6 +155,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      followed by the user's email. -->
 <!ENTITY fxa.menu.signedInAs.label "Autentificat ca">
 <!ENTITY fxa.menu.manageAccount.label "Gestionează contul…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbar menu screen. The `Signed in as` text is
+     followed by the user's email. -->
 <!ENTITY fxa.menu.syncSettings.label "Setări pentru &syncBrand.shortName.label;…">
 <!ENTITY fxa.menu.connectAnotherDevice2.label "Conectează alt dispozitiv…">
 <!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
@@ -194,6 +209,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY bookmarksMenu.label "Marcaje">
 <!ENTITY bookmarksMenu.accesskey "B">
+
 <!ENTITY bookmarkThisPageCmd.label "Marchează pagina">
 <!ENTITY editThisBookmarkCmd.label "Editează acest marcaj">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
@@ -248,6 +264,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Gestionează traducerea paginii">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Gestionează utilizarea de programe DRM">
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "Deschide panoul MIDI">
+
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Ai blocat camera pentru acest site web.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Ai blocat microfonul pentru acest site web.">
@@ -507,6 +524,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      This is set as the aria-label attribute for the search input box in the
      in-content search UI, to be used by screen readers. -->
 <!ENTITY contentSearchInput.label     "Subiect de căutare">
+
 <!ENTITY contentSearchSubmit.tooltip  "Trimite căutarea">
 
 <!-- LOCALIZATION NOTE (searchInput.placeholder):
@@ -538,6 +556,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (searchWithDesc.label):
      This string prompts the user to use the list of one-click search engines in
      the Urlbar and searchbar. -->
+<!ENTITY searchWithDesc.label         "De data aceasta, caută cu:">
 
 <!-- LOCALIZATION NOTE (changeSearchSettings.button):
      This string won't wrap, so if the translated string is longer,
@@ -650,7 +669,7 @@ context menu items are mutually exclusive. -->
 <!ENTITY copyImageContentsCmd.accesskey  "y">
 <!ENTITY copyVideoURLCmd.label        "Copiază locația videoclipului">
 <!ENTITY copyVideoURLCmd.accesskey    "o">
-<!ENTITY copyAudioURLCmd.label        "Copiază locația secvenței audio">
+<!ENTITY copyAudioURLCmd.label        "Copiază locația secvenței vocale">
 <!ENTITY copyAudioURLCmd.accesskey    "o">
 <!ENTITY copyEmailCmd.label           "Copiază adresa de e-mail">
 <!-- LOCALIZATION NOTE (copyEmailCmd.accesskey): The access keys for "Copy Link
@@ -810,13 +829,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.connection "Conexiune">
 <!ENTITY identity.connectionSecure "Conexiune securizată">
-
-<!-- LOCALIZATION NOTE (identity.securityView.label2)
-     This is the header of the security subview in the Site Identity panel. -->
-<!ENTITY identity.securityView.label2 "Securitatea conexiunii">
-
-<!ENTITY identity.connectionSecure2 "Conexiune securizată">
 <!ENTITY identity.connectionNotSecure "Conexiunea nu este securizată">
+
+<!ENTITY identity.connectionSecure3 "Conexiune securizată">
+<!ENTITY identity.connectionNotSecure2 "Conexiune nesecurizată">
 <!ENTITY identity.connectionNotSecureSecurityView "Nu ești conectat în mod securizat la acest site.">
 <!ENTITY identity.connectionFile "Pagina este stocată pe calculator.">
 <!ENTITY identity.connectionVerified2 "Ești conectat în mod securizat la acest site, deținut de:">
@@ -826,7 +842,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.insecureLoginForms2 "Datele de autentificare introduse pe această pagină ar putea fi compromise.">
 <!ENTITY identity.customRoot "Conexiune verificată de un emițător de certificate nerecunoscut de Mozilla.">
 
-<!ENTITY identity.evOwnerLabel "Site deținut de:">
+<!ENTITY identity.evOwnerLabel2 "Certificat emis către:">
 
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "&brandShortName; a blocat părți de pe această pagină care nu sunt sigure.">
@@ -862,8 +878,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.permissions "Permisiuni">
 
-<!-- LOCALIZATION NOTE (identity.permissions2): "set" as in "configured for this website" -->
-<!ENTITY identity.permissions2 "Set de permisiuni">
+<!ENTITY identity.permissions3 "Permisiuni">
 <!ENTITY identity.permissionsEmpty "Nu ai acordat acestui site nicio permisiune specială.">
 <!ENTITY identity.permissionsReloadHint "Ar putea fi nevoie să reîncarci pagina pentru aplicarea modificărilor.">
 <!ENTITY identity.permissionsPreferences.tooltip "Deschide preferințele pentru permisiuni">
@@ -876,7 +891,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      protections.etpMoreInfo.label: The text a screen reader speaks when focused on the info button. -->
 <!ENTITY protections.etpMoreInfo.label "Mai multe informații despre protecția îmbunătățită împotriva urmăririi">
 <!ENTITY protections.settings.label "Setări pentru protecție">
-<!ENTITY protections.report.label "Afișează raportul complet">
+<!ENTITY protections.showreport.label "Afișează raportul">
 <!-- LOCALIZATION NOTE:
      protections.siteNotWorking.label: The link to be clicked to open the sub-panel view
      protections.siteNotWorkingView.title: The heading/title of the sub-panel view -->
@@ -893,24 +908,34 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY protections.siteNotWorkingView.issueList.payments "Plățile">
 <!ENTITY protections.siteNotWorkingView.issueList.comments "Comentariile">
 <!ENTITY protections.siteNotWorkingView.issueList.videos "Videoclipurile">
-<!ENTITY protections.siteNotWorkingView.siteStillBroken.label "Site-ul tot nu funcționează corespunzător după dezactivarea protecțiilor?">
 <!ENTITY protections.siteNotWorkingView.sendReport.label "Trimite un raport">
 
+<!-- LOCALIZATION NOTE (protections.blocking2.label, protections.notBlocking2.label, protections.notFound.label):
+     In the protections panel, Content Blocking category items are in three sections:
+     "Blocked" for categories being blocked in the current page,
+     "Allowed" for categories detected but not blocked in the current page, and
+     "None Detected" for categories not detected in the current page.
+     These strings are used in the header labels of each of these sections. -->
 <!ENTITY protections.blocking2.label "Blocate">
 <!ENTITY protections.notBlocking2.label "Permise">
+<!ENTITY protections.notFound.label "Nedepistate deloc">
+<!-- LOCALIZATION NOTE (protections.notBlocking.why.label, protections.notBlocking.why.etp*.tooltip):
+     The "Allowed" header also includes a "Why?" link that, when hovered, shows
+     a tooltip explaining why these items were not blocked in the page. -->
 <!ENTITY protections.notBlocking.why.label "De ce?">
 <!ENTITY protections.notBlocking.why.etpOn.tooltip "Blocarea acestora poate împiedica funcționarea elementelor anumitor site-uri web. Fără elementele de urmărire, este posibil ca unele butoane, formulare și câmpuri de autentificare să nu funcționeze.">
-<!ENTITY protections.notFound.label "Nedepistate deloc">
+<!ENTITY protections.notBlocking.why.etpOff.tooltip "Dezactivarea protecțiilor va permite toate elementele de urmărire de pe acest site. Poate îmbunătăți însă unele funcționalități ale site-ului.">
 <!ENTITY protections.socialMediaTrackers.label "Elemente de urmărire ale rețelelor sociale">
 <!ENTITY protections.crossSiteTrackingCookies.label "Cookie-uri de urmărire între site-uri">
 <!ENTITY protections.trackingContent.label "Conținut de urmărire">
 <!ENTITY protections.fingerprinters.label "Detectoare de amprente digitale">
 <!ENTITY protections.cryptominers.label "Criptomineri">
+<!ENTITY protections.noTrackersFound.description "Nu s-a depistat niciun element de urmărire cunoscut de &brandShortName; pe această pagină.">
 
 <!ENTITY protections.crossSiteTrackingCookies.description "Aceste cookie-uri te urmăresc de pe un site pe altul pentru a colecta date despre ceea ce faci online. Acestea sunt setate de terțe părți precum agenții de publicitate și companiile de analiză.">
 <!ENTITY protections.cryptominers.description "Criptomomerii folosesc puterea de calcul a sistemului tău pentru a mina bani digitali. Scripturile de criptominare îți scurg bateria, încetinesc calculatorul și îți pot crește factura la energie.">
 <!ENTITY protections.fingerprinters.description "Detectoarele de amprente digitale colectează setări din browserul și computerul tău pentru a-ți crea un profil. Folosind această amprentă digitală, te pot urmări pe diferite site-uri web.">
-<!ENTITY protections.trackingContent.description "Site-urile web pot încărca reclame externe, videoclipuri și alt conținut care conține cod de urmărire. Blocarea conținutului de urmărire poate ajuta site-urile să se încarce mai rapid, dar este posibil ca unele butoane, formulare și câmpuri de autentificare să nu funcționeze.">
+<!ENTITY protections.trackingContent2.description "Site-urile web pot încărca reclame externe, videoclipuri și alte conținuturi ce conțin coduri de urmărire. Blocarea conținutului de urmărire poate ajuta site-urile să se încarce mai rapid, dar este posibil ca unele butoane, formulare și câmpuri de autentificare să nu funcționeze.">
 <!ENTITY protections.socialMediaTrackers.description "Rețelele sociale plasează elemente de urmărire pe alte site-uri web pentru a urmări ceea ce faci, vezi și urmărești online. Acest lucru permite companiilor rețelelor sociale să afle mai multe despre tine, dincolo de ceea ce împărtășești pe profilurile rețelelor sociale.">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
@@ -957,11 +982,11 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.manageSettings.accesskey "M">
 
 <!ENTITY contentBlocking.trackersView.label "Elemente de urmărire">
-
 <!ENTITY contentBlocking.trackersView.strictInfo.label "Pentru a bloca toate elementele de urmărire, setează blocarea de conținut pe „Strictă”.">
 
 <!ENTITY contentBlocking.cookies.label "Cookie-uri">
 <!ENTITY contentBlocking.cookiesView.label "Cookie-uri și date ale site-urilor">
+
 
 <!ENTITY contentBlocking.socialblock.label "Elemente de urmărire ale rețelelor sociale">
 
@@ -977,6 +1002,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView.label "Raportează probleme">
 <!ENTITY contentBlocking.breakageReportView2.description "Blocarea de conținut poate produce probleme pe unele site-uri web. Prin raportarea problemelor vei ajuta la îmbunătățirea &brandShortName; pentru toți. (Va trimite la Mozilla un URL și informații despre setările browserului.)">
 <!ENTITY contentBlocking.breakageReportView.learnMore "Află mai multe">
+
+<!ENTITY contentBlocking.breakageReportView.title "Raportează un site nefuncțional">
 <!ENTITY contentBlocking.breakageReportView3.description "Blocarea anumitor elemente de urmărire poate produce probleme pe unele site-uri web. Raportarea acestor problemele ajută la îmbunătățirea &brandShortName; pentru toți. Trimițând la Mozilla acest raport vei trimite un URL și informații despre setările browserului.">
 <!ENTITY contentBlocking.breakageReportView2.learnMore "Află mai multe">
 <!ENTITY contentBlocking.breakageReportView.collection.url.label "URL-ul">
@@ -1031,6 +1058,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY newTabControlled.disableButton.accesskey "D">
 
 <!ENTITY homepageControlled.message "O extensie a schimbat ce vezi ca pagină de start. Poți restaura setările dacă nu vrei această modificare.">
+
 <!ENTITY homepageControlled.header.message "Pagina ta de start s-a schimbat.">
 <!ENTITY homepageControlled.keepButton.label "Păstrează modificările">
 <!ENTITY homepageControlled.keepButton.accesskey "K">

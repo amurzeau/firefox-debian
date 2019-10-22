@@ -217,6 +217,62 @@ applications-type-column =
 applications-action-column =
     .label = कार्य
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } फाइल
+applications-action-save =
+    .label = फाइल सङ्ग्रह गर्नुहोस्
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = प्रयोग गर्नुस { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = प्रयोग { $app-name } (तत्काल)
+applications-use-other =
+    .label = अरु प्रयोग गर्नुहोस्…
+applications-select-helper = मद्दतकर्ता अनुप्रयोग छनोट गर्नुहोस्
+applications-manage-app =
+    .label = एप्लिकेसन विवरणहरू
+applications-always-ask =
+    .label = सधै सोध्नुहोस्
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = { $plugin-name } ({ -brand-short-name } मा) प्रयोग गर्नुहोस्
+applications-preview-inapp =
+    .label = { -brand-short-name } मा पूर्वावलोकन हेर्नुहोस्
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 drm-content-header = डिजिटल अधिकार व्यवस्थापन (DRM) सामग्री
 play-drm-content =
     .label = DRM-नियन्त्रित सामग्री प्ले गर्नुहोस्
@@ -490,6 +546,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = मुल गोप्यशब्द परिवर्तन गर्नुहोस्...
     .accesskey = M
+forms-master-pw-fips-title = तपाईँ अहिले FIPS ढाँचामा हुनुहुन्छ। FIPSलाई खाली नभएको मुल गोप्यशब्द चाहिन्छ।
+forms-master-pw-fips-desc = गोप्यशब्द परिवर्तन असफल
 
 ## Privacy Section - History
 
@@ -548,6 +606,13 @@ addressbar-locbar-openpage-option =
 addressbar-suggestions-settings = खोज इन्जिन सुझावहरूका लागि प्राथमिकताहरू परिवर्तन गर्नुहोस्
 
 ## Privacy Section - Content Blocking
+
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+
+##
 
 
 ## Privacy Section - Tracking

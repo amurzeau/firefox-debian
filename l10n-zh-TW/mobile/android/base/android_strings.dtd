@@ -23,16 +23,21 @@
 <!ENTITY firstrun_sync_title "Sync">
 <!ENTITY updatednewfirstrun_sync_title "帳號">
 <!ENTITY firstrun_sync_message2 "從結束的地方繼續。">
+<!ENTITY firstrun_sync_message3 "將您的書籤、瀏覽紀錄、密碼同步到手機。">
 <!ENTITY firstrun_sync_subtext2 "使用 Sync 來尋找您在任何裝置中，儲存到 &brandShortName; 的書籤、密碼，還有更多東西。">
 <!ENTITY newfirstrun_sync_subtext "將您在行動裝置存下的東西私密而安全地同步到 Firefox 桌面版。">
 <!ENTITY updatednewfirstrun_sync_subtext "請登入您的帳號，發揮 &brandShortName; 的最大威力">
 <!ENTITY firstrun_signin_message "開始連線使用">
+<!ENTITY firstrun_sendtab_title "傳送分頁">
+<!ENTITY firstrun_sendtab_message "從行動裝置將分頁即刻傳送到桌面。">
 <!ENTITY firstrun_signin_button "登入至 Sync">
 <!ENTITY newfirstrun_signin_button "開啟同步">
 <!ENTITY updatednewfirstrun_signin_button "登入 &brandShortName;">
-<!ENTITY  onboard_start_button_browser "開始瀏覽">
+<!ENTITY onboard_start_button_browser "開始瀏覽">
 <!ENTITY firstrun_button_notnow "現在不要">
 <!ENTITY firstrun_button_next "下一步">
+
+<!ENTITY firstrun_signin_button2 "登入">
 
 <!ENTITY firstrun_tabqueue_title "鏈結">
 
@@ -44,6 +49,8 @@
 <!-- Localization note (firstrun_devices_title): This is a casual way of addressing the user, somewhat referring to their online identity (which would include other devices, Firefox usage, accounts, etc). -->
 <!ENTITY firstrun_account_title "您">
 <!ENTITY firstrun_account_message "在您別的裝置上有 &brandShortName; 嗎？">
+
+<!ENTITY firstrun_signup_button "註冊">
 
 <!ENTITY  onboard_start_restricted1 "透過這個簡單版的 &brandShortName; 保持安全與控制程度。">
 
@@ -495,6 +502,7 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY share "分享">
 <!ENTITY share_title "分享到">
 <!ENTITY share_image_failed "無法分享此圖片">
+<!ENTITY share_error_toast_message "無法分享到指定的應用程式">
 <!ENTITY save_as_pdf "儲存為 PDF">
 <!ENTITY print "列印">
 <!ENTITY view_page_source "檢視原始碼">
@@ -595,7 +603,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_location "網址">
 <!ENTITY bookmark_edit_keyword "關鍵字">
 <!ENTITY bookmark_select_folder "選擇資料夾">
-
 <!ENTITY bookmark_edit_undo "復原">
 
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
@@ -689,6 +696,7 @@ shown from Android O while a tab is being queued.-->
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "您已連線到">
+
 <!-- Localization note (identity_run_by) : This string appears between a
 domain name (above) and an organization name (below). E.g.
 
@@ -876,6 +884,18 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_message "將閱讀畫面項目加入書籤，以在離線時閱讀。">
 <!ENTITY helper_triple_readerview_open_button "加入書籤">
 
+<!-- LOCALIZATION NOTE (activity_stream_signin_title, activity_stream_signin_description, activity_stream_signup_button,
+activity_stream_signin_prompt, activity_stream_signin_prompt_button):
+- These labels are shown in the Activity Stream recommending the user to sign in. -->
+<!ENTITY activity_stream_signin_title "歡迎使用 &brandShortName;">
+<!ENTITY activity_stream_signin_description "使用您的 Firefox 帳號同步書籤、密碼等資料。">
+<!ENTITY activity_stream_signin_button "登入">
+
+<!ENTITY activity_stream_signup_button "註冊">
+<!ENTITY activity_stream_signin_prompt "已經有帳號了嗎？">
+<!-- LOCALIZATION NOTE (activity_stream_signin_prompt_button): To be used in continuation of activity_stream_signin_prompt. -->
+<!ENTITY activity_stream_signin_prompt_button "請登入。">
+
 <!ENTITY activity_stream_topsites "熱門網站">
 <!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->
 <!ENTITY activity_stream_topstories "&brandPocket; 推薦">
@@ -891,7 +911,7 @@ Stream list for highlights sourced from th user's bookmarks. -->
 Stream list for highlights sourced from th user's bookmarks. -->
 <!ENTITY activity_stream_highlight_label_visited "造訪過">
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_trending): This label is shown in the Activity Stream list for highlights sourced from a recommendations engine. -->
-<!ENTITY activity_stream_highlight_label_trending "熱門趨勢">
+<!ENTITY activity_stream_highlight_label_trending "熱門">
 <!-- LOCALIZATION NOTE (activity_stream_highlights_empty): This text is shown when we could not find highlights for this user. This is also shown on first run. -->
 <!ENTITY activity_stream_highlights_empty "開始上網，我們就會把您在網路上發現的好文章、影片、剛加入書籤的頁面顯示於此處。">
 
@@ -934,7 +954,7 @@ Picture-in-picture mini window -->
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
 <!ENTITY leanplum_default_notifications_channel2 "&vendorShortName; 使用秘訣">
 <!ENTITY updater_notification_channel "應用程式更新">
-<!ENTITY synced_tabs_notification_channel "已同步的分頁">
+<!ENTITY synced_tabs_notification_channel "同步的分頁">
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
 web sites through the HTML Notifications API. -->
 <!ENTITY site_notifications_channel "網站通知">

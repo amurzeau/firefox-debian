@@ -236,6 +236,62 @@ applications-type-column =
 applications-action-column =
     .label = செயல்
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } கோப்பு
+applications-action-save =
+    .label = கோப்பினை சேமி
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = { $app-name }ஐ பயன்படுத்து
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Use { $app-name } (முன்னிருப்பு)
+applications-use-other =
+    .label = வேறொன்றைப் பயன்படுத்து…
+applications-select-helper = உதவி பயன்பாட்டைத் தேர்ந்தெடு
+applications-manage-app =
+    .label = பயன்பாட்டு விவரங்கள்…
+applications-always-ask =
+    .label = எப்போதும் கேள
+applications-type-pdf = போர்ட்டபிள் டாக்குமன்ட் ஃபார்மேட் (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = { $plugin-name }ஐ பயன்படுத்து ({ -brand-short-name }இல்)
+applications-preview-inapp =
+    .label = { -brand-short-name }இல் முன்பார்வை காட்டு
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 drm-content-header = எண்முறை உரிமைகள் மேலாண்மை (DRM) உள்ளடக்கம்
 play-drm-content =
     .label = DRM உள்ளடக்கங்கத்தை இயக்கு
@@ -562,6 +618,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = முதன்மை கடவுச்சொல்லை மாற்றவும்...
     .accesskey = M
+forms-master-pw-fips-title = நீங்கள் தற்போது FIPS முறையில் இருக்கிறீர்கள். FIPS க்கு ஒரு வெற்றில்லாத முதன்மை கடவுச்சொல் தேவைப்படுகிறது.
+forms-master-pw-fips-desc = கடவுச்சொல்லை மாற்ற முடியவில்லை
 
 ## Privacy Section - History
 
@@ -586,7 +644,7 @@ history-remember-option-custom =
 history-remember-description = { -brand-short-name } உங்கள் உலாவல், பதிவிறக்கம், படிவம் மற்றும் தேடல் வரலாற்றை நினைவிற்கொள்ளும்.
 history-dontremember-description = { -brand-short-name } தனி உலாவல் அமைப்புகளையே பயன்படுத்தும் , மற்றும் நீங்கள் இணையத்தை உலாவும் போது எந்த வரலாற்றையும் நினைவில் கொள்ளாது.
 history-private-browsing-permanent =
-    .label = தனிப்பட்ட உலாவலை எப்போதும் பயன்படுத்து
+    .label = கமுக்க உலாவலை எப்போதும் பயன்படுத்து
     .accesskey = p
 history-remember-browser-option =
     .label = உலாவல் மற்றும் பதிவிறக்க வரலாற்றை நினைவுப்படுத்து
@@ -654,6 +712,23 @@ content-blocking-setting-custom =
     .label = தனிப்பயன்
     .accesskey = C
 
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = நிலையான
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = கண்டிப்பாக
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = தனிப்பயன்
+    .accesskey = C
+
+##
+
+
 ## Privacy Section - Tracking
 
 
@@ -706,7 +781,7 @@ permissions-a11y-privacy-link = மேலும் அறிய
 ## Privacy Section - Data Collection
 
 collection-header = { -brand-short-name } தரவுத் திரட்டும் பயனளவும்
-collection-description = நாங்கள் உங்களுக்கு தேர்வுகளை வழங்க உறுதிபூண்டுள்ளோம் மேலும் அனைவருக்கும் { -brand-short-name } வழங்க மற்றும் மேம்படுத்த தேவையானதை மட்டும் சேகரிக்கிறோம். நாங்கள் தனிப்பட்ட தகவல்களைப் பெறும் முன் எப்போதும் அனுமதி கேட்கிறோம்.
+collection-description = நாங்கள் உங்களுக்குத் தேர்வுகளை வழங்க உறுதிபூண்டுள்ளோம் மேலும் அனைவருக்கும் { -brand-short-name } வழங்க மற்றும் மேம்படுத்தத் தேவையானதை மட்டும் சேகரிக்கிறோம். நாங்கள் தனிப்பட்ட தகவல்களைப் பெறும் முன் எப்போதும் அனுமதி கேட்கிறோம்.
 collection-privacy-notice = தனியுரிமை அறிக்கை
 collection-health-report =
     .label = தொழில்நுட்ப மற்றும் தொடர்புத் தரவுகளை { -vendor-short-name } நிறுவனத்திற்கு அனுப்ப { -brand-short-name } உலாவியை அனுமதி

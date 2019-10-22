@@ -21,6 +21,11 @@ onboarding-button-label-get-started = Comenzar
 onboarding-welcome-header = Bienvenido a { -brand-short-name }
 onboarding-welcome-body = Conseguiste el navegador.<br/>Conoce el resto de la familia { -brand-product-name }.
 onboarding-welcome-learn-more = Conoce más sobre los beneficios.
+onboarding-welcome-modal-get-body = Tienes el navegador.<br/>Ahora sácale el máximo provecho a { -brand-product-name }.
+onboarding-welcome-modal-supercharge-body = Maximiza tu protección de privacidad.
+onboarding-welcome-modal-privacy-body = Tienes el navegador. Ahora agrega más protección de privacidad.
+onboarding-welcome-modal-family-learn-more = Conoce acerca de la familia de productos de { -brand-product-name }.
+onboarding-welcome-form-header = Comienza aquí
 onboarding-join-form-header = Únete a { -brand-product-name }
 onboarding-join-form-body = Ingresa tu correo para comenzar.
 onboarding-join-form-email =
@@ -56,7 +61,7 @@ onboarding-sync-form-sub-header = para continuar a { -sync-brand-name }.
 onboarding-benefit-products-title = Productos útiles
 onboarding-benefit-products-text = Termina tus pendientes con una familia de herramientas que respeta tu privacidad a través de tus dispositivos.
 onboarding-benefit-knowledge-title = Conocimiento práctico
-onboarding-benefit-knowledge-text = Conoce todo lo que necesitas saber para mantener inteligente y seguro en línea.
+onboarding-benefit-knowledge-text = Conoce todo lo que necesitas saber para mantenerte inteligente y seguro en línea.
 onboarding-benefit-privacy-title = Privacidad de verdad
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
@@ -64,6 +69,12 @@ onboarding-benefit-privacy-title = Privacidad de verdad
 # make and do. We take less data. We keep it safe. And we make sure that we are
 # transparent about how we use it."
 onboarding-benefit-privacy-text = Todo lo que hacemos respeta nuestra promesa de datos personales: Tomar menos. Mantenerlo seguro. Sin secretos.
+onboarding-benefit-sync-title = { -sync-brand-short-name }
+onboarding-benefit-sync-text = Lleva tus marcadores, contraseñas, historial y más a todas partes donde uses { -brand-product-name }.
+onboarding-benefit-monitor-title = { -monitor-brand-short-name }
+onboarding-benefit-monitor-text = Recibe notificaciones cuando tu información personal sea encontrada en una filtración de datos conocida.
+onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
+onboarding-benefit-lockwise-text = Administra tus contraseñas manteniéndolas protegidas y contigo.
 
 ## These strings belong to the individual onboarding messages.
 

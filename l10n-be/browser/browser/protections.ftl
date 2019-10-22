@@ -14,18 +14,21 @@ graph-week-summary =
 #   $count (Number) - Number of tracking events blocked.
 #   $earliestDate (Number) - Unix timestamp in ms, representing a date. The
 # earliest date recorded in the database.
-graph-total-summary =
+graph-total-tracker-summary =
     { $count ->
-        [one] { $count } трэкер заблакаваны з { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
-        [few] { $count } трэкеры заблакаваны з { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
-       *[many] { $count } трэкераў заблакавана з { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
+        [one] <b>{ $count }</b> трэкер заблакаваны з { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
+        [few] <b>{ $count }</b> трэкеры заблакавана з { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
+       *[many] <b>{ $count }</b> трэкераў заблакавана з { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
     }
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 # The category name in the <b> tag will be bold.
-protection-header-details-standard = Устаноўлены <b>стандартны</b> ўзровень аховы
-protection-header-details-strict = Устаноўлены <b>строгі</b> ўзровень аховы
-protection-header-details-custom = Устаноўлены <b>адмысловы</b> ўзровень аховы
+protection-report-header-details-standard = Устаноўлены <b>стандартны</b> ўзровень аховы
+    .title = Перайсці ў налады прыватнасці
+protection-report-header-details-strict = Устаноўлены <b>строгі</b> ўзровень аховы
+    .title = Перайсці ў налады прыватнасці
+protection-report-header-details-custom = Устаноўлены <b>адмысловы</b> ўзровень аховы
+    .title = Перайсці ў налады прыватнасці
 protection-report-page-title = Меры аховы прыватнасці
 protection-report-content-title = Меры аховы прыватнасці
 etp-card-title = Узмоцненая ахова ад сачэння
@@ -40,7 +43,7 @@ social-tab-contant = Сацыяльныя сеткі размяшчаюць тр
 cookie-tab-title = Міжсайтавыя кукі асочвання
 cookie-tab-content = Гэтыя кукі ідуць за вамі з сайта на сайт, каб сабраць дадзеныя пра тое, што вы робіце ў Інтэрнэце. Яны ўсталёўваюцца трэцім бокам, такімі як рэкламадаўцы і аналітычныя кампаніі. Блакіроўка трэцебаковых кукі асочвання зніжае колькасць рэкламы, якія ідзе за вамі. <a data-l10n-name="learn-more-link">Даведацца больш</a>
 tracker-tab-title = Змест з элементамі сачэння
-tracker-tab-content = Вэб-сайты могуць загружаць вонкавую рэкламу, відэа і іншае змесціва, якое змяшчае код асочвання. Блакіроўка змесціва асочвання можа дапамагчы сайтам хутчэй загружацца, але некаторыя кнопкі, формы і палі ўваходу могуць не працаваць. <a data-l10n-name="learn-more-link">Даведацца больш</a>
+tracker-tab-description = Вэб-сайты могуць загружаць вонкавую рэкламу, відэа і іншае змесціва з кодам асочвання. Блакіроўка змесціва асочвання можа дапамагчы сайтам хутчэй загружацца, але некаторыя кнопкі, формы і палі ўваходу могуць не працаваць. <a data-l10n-name="learn-more-link">Даведацца больш</a>
 fingerprinter-tab-title = Збіральнікі адбіткаў пальцаў
 fingerprinter-tab-content = Збіральнікі адбіткаў пальцаў збіраюць налады вашага браўзера і камп'ютара для стварэння вашага профілю. Выкарыстоўваючы гэты лічбавы адбітак, яны могуць асочваць вас на розных сайтах. <a data-l10n-name="learn-more-link">Даведацца больш</a>
 cryptominer-tab-title = Майнеры крыптавалют
@@ -49,7 +52,8 @@ lockwise-title = Больш ніколі не забывайце свой пар
 lockwise-title-logged-in = { -lockwise-brand-name }
 lockwise-header-content = { -lockwise-brand-name } надзейна захоўвае вашы паролі ў вашым браўзеры.
 lockwise-header-content-logged-in = Бяспечна захоўвайце і сінхранізуйце паролі на ўсіх сваіх прыладах.
-open-about-logins-button = Адкрыць у { -brand-short-name }
+protection-report-view-logins-button = Прагляд лагінаў
+    .title = Перайсці да захаваных лагінаў
 lockwise-no-logins-content = Атрымайце праграму <a data-l10n-name="lockwise-inline-link">{ -lockwise-brand-name }</a>, каб трымаць свае паролі заўжды пры сабе.
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
@@ -71,39 +75,39 @@ lockwise-sync-status =
         [few] Сінхранізуецца з { $count } іншымі прыладамі
        *[many] Сінхранізуецца з { $count } іншымі прыладамі
     }
-lockwise-sync-not-syncing = Не сінхранізуецца з іншымі прыладамі.
+lockwise-sync-not-syncing-devices = Не сінхранізуецца з іншымі прыладамі
 monitor-title = Сачыце за ўцечкамі дадзеных
 monitor-link = Як гэта працуе
-monitor-header-content = Паспрабуйце { -monitor-brand-name }, каб спраўдзіць, ці не ўцяклі вашы дадзеныя, і атрымліваць апавяшчэнні аб новых уцечках.
-monitor-header-content-logged-in = { -monitor-brand-name } папярэдзіць, калі вашы звесткі з'явяцца ў вядомым парушэнні дадзеных
+monitor-header-content-no-account = Паспрабуйце { -monitor-brand-name }, каб спраўдзіць, ці не ўцяклі вашы дадзеныя у вядомых узломах, і атрымліваць апавяшчэнні аб новых уцечках.
+monitor-header-content-signed-in = { -monitor-brand-name } папярэдзіць, калі вашы звесткі з'явяцца ў вядомым парушэнні дадзеных.
 monitor-sign-up = Падпішыцеся на абвесткі аб уцечках
 auto-scan = Аўтаматычна прасканавана сёння
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.
-info-monitored-addresses =
+info-monitored-emails =
     { $count ->
-        [one] Адрас электроннай пошты асочваецца.
-        [few] Адрасы электроннай пошты асочваюцца.
-       *[many] Адрасоў электроннай пошты асочваецца.
+        [one] Адрас электроннай пошты асочваецца
+        [few] Адрасы электроннай пошты асочваецца
+       *[many] Адрасоў электроннай пошты асочваецца
     }
 # This string is displayed after a large numeral that indicates the total number
 # of known data breaches. Don’t add $count to
 # your localization, because it would result in the number showing twice.
-info-known-breaches =
+info-known-breaches-found =
     { $count ->
-        [one] Вядомае парушэнне дадзеных раскрыла вашу інфармацыю.
-        [few] Вядомыя парушэнні дадзеных раскрылі вашу інфармацыю.
-       *[many] Вядомых парушэнняў дадзеных раскрылі вашу інфармацыю.
+        [one] Вядомае парушэнне дадзеных раскрыла вашу інфармацыю
+        [few] Вядомыя парушэнні дадзеных раскрылі вашу інфармацыю
+       *[many] Вядомых парушэнняў дадзеных раскрылі вашу інфармацыю
     }
 # This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
-info-exposed-passwords =
+info-exposed-passwords-found =
     { $count ->
-        [one] Пароль выяўлены ва ўсіх уцечках.
-        [few] Паролі выяўлены ва ўсіх уцечках.
-       *[many] Пароляў выяўлена ва ўсіх уцечках.
+        [one] Пароль выяўлены ва ўсіх уцечках
+        [few] Паролі выяўлена ва ўсіх уцечках
+       *[many] Пароляў выяўлена ва ўсіх уцечках
     }
 full-report-link = Паглядзець поўную справаздачу пра <a data-l10n-name="monitor-inline-link">{ -monitor-brand-name }</a>
 # This string is displayed after a large numeral that indicates the total number
@@ -115,10 +119,6 @@ password-warning =
         [few] Захаваныя лагіны могуць быць раскрыты пры ўцечцы дадзеных. Змяніце гэтыя паролі для лепшай бяспекі ў сеціве. <a data-l10n-name="lockwise-link">Паглядзець захаваныя лагіны</a>
        *[many] Захаваныя лагіны могуць быць раскрыты пры ўцечцы дадзеных. Змяніце гэтыя паролі для лепшай бяспекі ў сеціве. <a data-l10n-name="lockwise-link">Паглядзець захаваныя лагіны</a>
     }
-# This is the title attribute describing the graph report's link to about:settings#privacy
-go-to-privacy-settings = Перайсці ў налады прыватнасці
-# This is the title attribute describing the Lockwise card's link to about:logins
-go-to-saved-logins = Перайсці да захаваных лагінаў
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

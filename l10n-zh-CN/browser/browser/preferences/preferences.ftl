@@ -54,12 +54,12 @@ close-button =
 
 ## Browser Restart Dialog
 
-feature-enable-requires-restart = 必须重新打开 { -brand-short-name } 才能启用此功能。
-feature-disable-requires-restart = 必须重新打开 { -brand-short-name } 才能禁用此功能。
-should-restart-title = 重新打开 { -brand-short-name }
-should-restart-ok = 立即重开 { -brand-short-name }
+feature-enable-requires-restart = 必须重新启动 { -brand-short-name } 才能启用此功能。
+feature-disable-requires-restart = 必须重新启动 { -brand-short-name } 才能禁用此功能。
+should-restart-title = 重新启动 { -brand-short-name }
+should-restart-ok = 立即重启 { -brand-short-name }
 cancel-no-restart-button = 取消
-restart-later = 稍后重开
+restart-later = 稍后重启浏览器
 
 ## Extension Control Notifications
 ##
@@ -118,7 +118,7 @@ startup-header = 启动
 separate-profile-mode =
     .label = 允许 { -brand-short-name } 和 Firefox 同时运行
 use-firefox-sync = 提示：这将使用单独的配置文件，可使用“{ -sync-brand-short-name }”在两套浏览器间共享数据。
-get-started-not-logged-in = 登录至{ -sync-brand-short-name }…
+get-started-not-logged-in = 登录{ -sync-brand-short-name }服务…
 get-started-configured = 打开{ -sync-brand-short-name }服务首选项
 always-check-default =
     .label = 总是检查 { -brand-short-name } 是否是您的默认浏览器
@@ -203,8 +203,8 @@ choose-browser-language-description = 选择 { -brand-short-name } 显示菜单�
 manage-browser-languages-button =
     .label = 设置备用语言…
     .accesskey = l
-confirm-browser-language-change-description = 重开 { -brand-short-name } 以应用这些更改
-confirm-browser-language-change-button = 应用并重新打开
+confirm-browser-language-change-description = 重启 { -brand-short-name } 以应用这些更改
+confirm-browser-language-change-button = 应用并重启浏览器
 translate-web-pages =
     .label = 翻译网页内容
     .accesskey = T
@@ -249,6 +249,62 @@ applications-type-column =
 applications-action-column =
     .label = 操作
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } 文件
+applications-action-save =
+    .label = 保存文件
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = 使用 { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = 使用 { $app-name } 处理（默认）
+applications-use-other =
+    .label = 使用其他…
+applications-select-helper = 选择助手应用程序
+applications-manage-app =
+    .label = 应用程序详细信息…
+applications-always-ask =
+    .label = 每次都问我
+applications-type-pdf = 便携式文档格式 (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = 使用 { $plugin-name } （在 { -brand-short-name } 中）
+applications-preview-inapp =
+    .label = 在 { -brand-short-name } 中预览
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = 采用数字版权管理（DRM）的内容
 play-drm-content =
     .label = 播放采用 DRM 的内容
@@ -335,6 +391,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = 若在文本框外输入，则在页面中查找文本
     .accesskey = x
+browsing-picture-in-picture-toggle-enabled =
+    .label = 启用画中画视频控件
+    .accesskey = E
+browsing-picture-in-picture-learn-more = 详细了解
 browsing-cfr-recommendations =
     .label = 在您浏览时推荐扩展
     .accesskey = R
@@ -437,6 +497,12 @@ search-bar-shown =
     .label = 添加搜索栏到工具栏
 search-engine-default-header = 默认搜索引擎
 search-engine-default-desc = 选择在地址栏和搜索栏中搜索时默认使用的搜索引擎。
+search-engine-default-private-desc = 选择在隐私窗口中默认使用的搜索引擎。
+search-separate-default-engine =
+    .label = 在隐私窗口中使用此搜索引擎
+    .accesskey = U
+search-suggestions-header = 搜索建议
+search-suggestions-desc = 选择搜索引擎建议的呈现方式。
 search-suggestions-option =
     .label = 提供搜索建议
     .accesskey = s
@@ -450,6 +516,7 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = 在地址栏显示的结果中，将搜索建议显示在浏览历史上方
+suggestions-addressbar-settings = 更改浏览记录、书签、标签页建议的首选项
 search-suggestions-cant-show = 由于您已经设置 { -brand-short-name } 不要记住浏览历史，地址栏中将不会显示搜索建议。
 search-one-click-header = 快捷搜索引擎列表
 search-one-click-desc = 请选择在地址栏和搜索栏输入关键词时，您希望显示在下方的其他可选用的搜索引擎。
@@ -486,6 +553,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = 让您个性化的网络体验随身相伴
 sync-signedout-description = 在您的各种设备间同步您的书签、历史记录、标签页、密码、附加组件与首选项。
 sync-signedout-account-title = 使用 { -fxaccount-brand-name }登录，开启同步功能
@@ -506,11 +577,17 @@ sync-mobile-promo = 在 <img data-l10n-name="android-icon"/> <a data-l10n-name="
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = 更改头像
 sync-disconnect =
     .label = 断开连接…
     .accesskey = D
+sync-sign-out =
+    .label = 退出登录…
+    .accesskey = g
 sync-manage-account = 管理账户
     .accesskey = o
 sync-signedin-unverified = { $email } 未验证。
@@ -526,6 +603,48 @@ sync-sign-in =
     .accesskey = g
 sync-signedin-settings-header = 同步设置
 sync-signedin-settings-desc = 选择 { -brand-short-name } 要在您的设备间同步哪些数据。
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = 同步：开
+prefs-syncing-off = 同步：关
+prefs-sync-setup =
+    .label = 设置{ -sync-brand-short-name }
+    .accesskey = S
+prefs-sync-offer-setup-label = 在您的各种设备间同步您的书签、历史记录、标签页、密码、附加组件与首选项。
+prefs-sync-now =
+    .labelnotsyncing = 立即同步
+    .accesskeynotsyncing = N
+    .labelsyncing = 正在同步...
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = 您当前正在同步以下项目：
+sync-currently-syncing-bookmarks = 书签
+sync-currently-syncing-history = 历史记录
+sync-currently-syncing-tabs = 打开的标签页
+sync-currently-syncing-logins-passwords = 登录名和密码
+sync-currently-syncing-addresses = 邮政地址
+sync-currently-syncing-creditcards = 信用卡
+sync-currently-syncing-addons = 附加组件
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] 选项
+       *[other] 首选项
+    }
+sync-change-options =
+    .label = 更改…
+    .accesskey = C
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = 选择要同步的项目
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = 保存更改
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = 断开连接…
+    .buttonaccesskeyextra2 = D
 sync-engine-bookmarks =
     .label = 书签
     .accesskey = m
@@ -539,6 +658,10 @@ sync-engine-tabs =
 sync-engine-logins =
     .label = 登录信息
     .tooltiptext = 您已保存的用户名和密码
+    .accesskey = L
+sync-engine-logins-passwords =
+    .label = 登录名和密码
+    .tooltiptext = 您存入的用户名和密码
     .accesskey = L
 sync-engine-addresses =
     .label = 邮政地址
@@ -560,6 +683,9 @@ sync-engine-prefs =
         }
     .tooltiptext = 您已更改的常规、隐私和安全设置
     .accesskey = s
+
+## The device name controls.
+
 sync-device-name-header = 设备名称
 sync-device-name-change =
     .label = 更改设备名称…
@@ -592,6 +718,10 @@ forms-exceptions =
 forms-generate-passwords =
     .label = 建议并生成高强度密码
     .accesskey = u
+forms-breach-alerts =
+    .label = 显示有关网站密码外泄的提醒
+    .accesskey = b
+forms-breach-alerts-learn-more-link = 详细了解
 forms-fill-logins-and-passwords =
     .label = 自动填写登录名和密码
     .accesskey = i
@@ -604,6 +734,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = 修改主密码…
     .accesskey = M
+forms-master-pw-fips-title = 您正处于 FIPS 模式。该模式需要一个非空的主密码。
+forms-master-pw-fips-desc = 密码修改失败
 
 ## Privacy Section - History
 
@@ -709,8 +841,9 @@ addressbar-suggestions-settings = 更改搜索引擎建议的首选项
 ## Privacy Section - Content Blocking
 
 content-blocking-header = 内容拦截
-content-blocking-enhanced-tracking-protection = 增强型跟踪保护
 content-blocking-section-description = 在浏览时保护您的隐私。拦截会跟踪您访问活动，并分析用户特征的隐藏内容。拦截此类内容也可能使页面加载更快。
+content-blocking-enhanced-tracking-protection = 增强型跟踪保护
+content-blocking-section-top-level-description = 跟踪器会跟踪您的在线活动，收集您的浏览习惯与兴趣爱好。{ -brand-short-name } 可拦截众多跟踪器和其他恶意脚本。
 content-blocking-learn-more = 详细了解
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -728,6 +861,23 @@ content-blocking-strict-description = 更强的保护，可能导致某些网站
 content-blocking-custom-desc = 选择要拦截的内容。
 content-blocking-private-trackers = 仅在隐私窗口中拦截已知的跟踪器
 content-blocking-third-party-cookies = 第三方跟踪型 Cookie
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = 标准
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = 严格
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = 自定义
+    .accesskey = C
+
+
+
 content-blocking-etp-standard-desc = 平衡保护和性能。页面将正常加载。
 content-blocking-etp-strict-desc = 更强大的保护，但可能导致某些网站异常。
 content-blocking-etp-custom-desc = 选择要拦截的跟踪器和脚本。

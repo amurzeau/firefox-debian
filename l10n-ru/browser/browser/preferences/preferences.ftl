@@ -256,6 +256,62 @@ applications-type-column =
 applications-action-column =
     .label = Действие
     .accesskey = е
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } файл
+applications-action-save =
+    .label = Сохранить файл
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Использовать { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Использовать { $app-name } (по умолчанию)
+applications-use-other =
+    .label = Использовать другое…
+applications-select-helper = Выберите вспомогательное приложение
+applications-manage-app =
+    .label = Сведения о приложении…
+applications-always-ask =
+    .label = Всегда спрашивать
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Использовать { $plugin-name } (в { -brand-short-name })
+applications-preview-inapp =
+    .label = Предпросмотр в { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = Содержимое использующее технические средства защиты авторских прав (DRM)
 play-drm-content =
     .label = Воспроизводить контролируемое DRM содержимое
@@ -342,6 +398,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Искать текст на странице по мере его набора
     .accesskey = а
+browsing-picture-in-picture-toggle-enabled =
+    .label = Включить управление видео «картинка в картинке»
+    .accesskey = ю
+browsing-picture-in-picture-learn-more = Подробнее
 browsing-cfr-recommendations =
     .label = Рекомендовать расширения при просмотре
     .accesskey = к
@@ -449,6 +509,12 @@ search-bar-shown =
     .label = Добавить панель поиска на панель инструментов
 search-engine-default-header = Поисковая система по умолчанию
 search-engine-default-desc = Выберите поисковую систему по умолчанию для использования в панели адреса и панели поиска.
+search-engine-default-private-desc = Выберите поисковую систему по умолчанию для использования в приватных окнах.
+search-separate-default-engine =
+    .label = Использовать в Приватных окнах эту поисковую систему
+    .accesskey = п
+search-suggestions-header = Поисковые предложения
+search-suggestions-desc = Выберите, где будут появляться предложения от поисковых систем.
 search-suggestions-option =
     .label = Отображать поисковые предложения
     .accesskey = о
@@ -462,6 +528,7 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Отображать поисковые предложения перед историей веб-сёрфинга при использовании панели адреса
+suggestions-addressbar-settings = Изменить настройки предложений из журнала посещений, закладок и вкладок
 search-suggestions-cant-show = При использовании панели адреса поисковые предложения отображаться не будут, так как вы настроили { -brand-short-name } никогда не запоминать историю.
 search-one-click-header = Поиск одним щелчком
 search-one-click-desc = Выберите альтернативные поисковые системы, которые появятся под панелью адреса и панелью поиска, когда вы начнёте вводить ключевое слово.
@@ -498,6 +565,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Возьмите свой Интернет с собой
 sync-signedout-description = Синхронизируйте свои закладки, историю, вкладки, пароли, дополнения и настройки на всех ваших устройствах.
 sync-signedout-account-title = Соединитесь с { -fxaccount-brand-name(case: "instrumental") }
@@ -518,11 +589,17 @@ sync-mobile-promo = Загрузите Firefox для <img data-l10n-name="andro
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = Изменить фотографию в профиле
 sync-disconnect =
     .label = Отсоединить…
     .accesskey = н
+sync-sign-out =
+    .label = Выйти…
+    .accesskey = ы
 sync-manage-account = Управление аккаунтом
     .accesskey = в
 sync-signedin-unverified = { $email } не подтверждён.
@@ -538,6 +615,45 @@ sync-sign-in =
     .accesskey = о
 sync-signedin-settings-header = Параметры синхронизации
 sync-signedin-settings-desc = Выберите, что нужно синхронизировать на ваших устройствах при помощи { -brand-short-name }.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Синхронизация: ВКЛЮЧЕНА
+prefs-syncing-off = Синхронизация: ОТКЛЮЧЕНА
+prefs-sync-setup =
+    .label = Настроить { -sync-brand-short-name(case: "accusative") }…
+    .accesskey = а
+prefs-sync-offer-setup-label = Синхронизируйте свои закладки, историю, вкладки, пароли, дополнения и настройки на всех ваших устройствах.
+prefs-sync-now =
+    .labelnotsyncing = Синхронизировать
+    .accesskeynotsyncing = х
+    .labelsyncing = Синхронизирую…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = Сейчас вы синхронизируете:
+sync-currently-syncing-bookmarks = Закладки
+sync-currently-syncing-history = Историю
+sync-currently-syncing-tabs = Открытые вкладки
+sync-currently-syncing-logins-passwords = Логины и пароли
+sync-currently-syncing-addresses = Адреса
+sync-currently-syncing-creditcards = Банковские карты
+sync-currently-syncing-addons = Дополнения
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Настройки
+       *[other] Настройки
+    }
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = Выберите, что синхронизировать
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Сохранить изменения
+    .buttonaccesskeyaccept = х
+    .buttonlabelextra2 = Отсоединить…
+    .buttonaccesskeyextra2 = е
 sync-engine-bookmarks =
     .label = Закладки
     .accesskey = к
@@ -552,6 +668,10 @@ sync-engine-logins =
     .label = Логины
     .tooltiptext = Сохранённые имена пользователей и пароли
     .accesskey = ы
+sync-engine-logins-passwords =
+    .label = Логины и пароли
+    .tooltiptext = Сохранённые вами имена пользователей и пароли
+    .accesskey = н
 sync-engine-addresses =
     .label = Адреса
     .tooltiptext = Сохранённые вами почтовые адреса (только для компьютера)
@@ -572,6 +692,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Изменённые вами настройки: Общие, Приватность и Защита
     .accesskey = й
+
+## The device name controls.
+
 sync-device-name-header = Имя устройства
 sync-device-name-change =
     .label = Изменить имя устройства…
@@ -604,6 +727,10 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Предлагать и генерировать надежные пароли
     .accesskey = н
+forms-breach-alerts =
+    .label = Показывать уведомления о паролях для взломанных сайтов
+    .accesskey = ы
+forms-breach-alerts-learn-more-link = Подробнее
 forms-fill-logins-and-passwords =
     .label = Автозаполнять логины и пароли
     .accesskey = в
@@ -616,6 +743,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Сменить мастер-пароль…
     .accesskey = м
+forms-master-pw-fips-title = Вы работаете в режиме соответствия FIPS. При работе в этом режиме необходимо установить мастер-пароль.
+forms-master-pw-fips-desc = Смена пароля не удалась
 
 ## Privacy Section - History
 
@@ -721,8 +850,9 @@ addressbar-suggestions-settings = Изменить настройки для п�
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Блокировка содержимого
-content-blocking-enhanced-tracking-protection = Улучшенная защита от отслеживания
 content-blocking-section-description = Защищайте свою приватность во время веб-сёрфинга. Блокируйте невидимый контент, который отслеживает, какие сайты вы посещаете, и профилирует вас. Блокировка некоторого содержимого может ускорить загрузку страниц.
+content-blocking-enhanced-tracking-protection = Улучшенная защита от отслеживания
+content-blocking-section-top-level-description = Трекеры отслеживают вас в Интернете, чтобы собирать информацию о ваших привычках и интересах. { -brand-short-name } блокирует многие из этих трекеров и других вредоносных скриптов.
 content-blocking-learn-more = Подробнее
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -740,6 +870,23 @@ content-blocking-strict-description = Усиленная защита может
 content-blocking-custom-desc = Выберите, что блокировать.
 content-blocking-private-trackers = Все известные трекеры в приватных окнах
 content-blocking-third-party-cookies = Куки сторонних трекеров
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Стандартная
+    .accesskey = н
+enhanced-tracking-protection-setting-strict =
+    .label = Строгая
+    .accesskey = о
+enhanced-tracking-protection-setting-custom =
+    .label = Персональная
+    .accesskey = а
+
+
+
 content-blocking-etp-standard-desc = Обеспечивает наилучший баланс защиты и производительности. Страницы будут загружаться нормально.
 content-blocking-etp-strict-desc = Усиленная защита может вызывать проблемы с некоторыми веб-сайтами и их содержимым.
 content-blocking-etp-custom-desc = Выберите, какие трекеры и скрипты необходимо блокировать.

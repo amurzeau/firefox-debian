@@ -23,16 +23,21 @@
 <!ENTITY firstrun_sync_title "Sync">
 <!ENTITY updatednewfirstrun_sync_title "Fiók">
 <!ENTITY firstrun_sync_message2 "Folytassa ott, ahol abbahagyta.">
+<!ENTITY firstrun_sync_message3 "Szinkronizálja a könyvjelzőit, előzményeit és jelszavait a telefonjára.">
 <!ENTITY firstrun_sync_subtext2 "Használja a Syncet a könyjzők, jelszavak, és más dolgok megtalálására, amelyeket a &brandShortName; böngészőbe ment az összes eszközén.">
 <!ENTITY newfirstrun_sync_subtext "Szinkronizálja a mobilra mentett dolgokat az asztali Firefoxszal, bizalmasan és biztonságosan.">
 <!ENTITY updatednewfirstrun_sync_subtext "Jelentkezzen be fiókjába, hogy a legtöbbet hozza ki a &brandShortName;ból">
 <!ENTITY firstrun_signin_message "Kapcsolódjon, vágjon bele">
+<!ENTITY firstrun_sendtab_title "Lap küldése">
+<!ENTITY firstrun_sendtab_message "Osszon meg lapokat a mobiljáról az asztali gépére – azonnal.">
 <!ENTITY firstrun_signin_button "Jelentkezzen be a Syncbe">
 <!ENTITY newfirstrun_signin_button "Sync bekapcsolása">
 <!ENTITY updatednewfirstrun_signin_button "Jelentkezzen be a &brandShortName;ba">
-<!ENTITY  onboard_start_button_browser "Böngészés megkezdése">
+<!ENTITY onboard_start_button_browser "Böngészés megkezdése">
 <!ENTITY firstrun_button_notnow "Most nem">
 <!ENTITY firstrun_button_next "Következő">
+
+<!ENTITY firstrun_signin_button2 "Bejelentkezés">
 
 <!ENTITY firstrun_tabqueue_title "Hivatkozások">
 
@@ -44,6 +49,8 @@
 <!-- Localization note (firstrun_devices_title): This is a casual way of addressing the user, somewhat referring to their online identity (which would include other devices, Firefox usage, accounts, etc). -->
 <!ENTITY firstrun_account_title "Ön">
 <!ENTITY firstrun_account_message "Van &brandShortName; telepítve más eszközén is?">
+
+<!ENTITY firstrun_signup_button "Regisztráció">
 
 <!ENTITY  onboard_start_restricted1 "Maradjon biztonságban, tartsa magánál az irányítást a &brandShortName; ezen egyszerű változatával.">
 
@@ -163,7 +170,7 @@
 <!ENTITY settings "Beállítások">
 <!ENTITY settings_title "Beállítások">
 <!ENTITY pref_category_general "Általános">
-<!ENTITY pref_category_general_summary3 "Kezdőképernyő, nyelv, lapfül sor">
+<!ENTITY pref_category_general_summary3 "Kezdőlap, nyelv, lapfül sor">
 
 <!-- Localization note (pref_category_language) : This is the preferences
      section in which the user picks the locale in which to display Firefox
@@ -237,22 +244,22 @@
 <!ENTITY pref_remember_signons2 "Bejelentkezések megjegyzése">
 <!ENTITY pref_manage_logins "Bejelentkezések kezelése">
 
-<!ENTITY pref_category_home "Home">
+<!ENTITY pref_category_home "Kezdőlap">
 <!ENTITY pref_category_home_summary "Kezdőlap testreszabása">
 <!ENTITY pref_category_home_panels "Panelek">
 <!ENTITY pref_category_home_add_ons "Kiegészítők">
 <!ENTITY pref_home_updates2 "Tartalomfrissítések">
 <!ENTITY pref_home_updates_enabled "Engedélyezve">
 <!ENTITY pref_home_updates_wifi "Csak Wi-Fi használatakor">
-<!ENTITY pref_category_home_homepage "Honlap">
+<!ENTITY pref_category_home_homepage "Kezdőlap">
 <!-- Localization note (home_homepage_every_new_tab): The user will see a switch to determine if the
      home page will be use in every new tab. -->
 <!ENTITY home_homepage_every_new_tab "Mindig használja az új lapoknál">
-<!ENTITY home_homepage_title "Honlap beállítása">
+<!ENTITY home_homepage_title "Kezdőlap beállítása">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
      button for this string, they will use the built-in default Firefox homepage (about:home). -->
-<!ENTITY home_homepage_radio_default "&brandShortName; kezdőoldal">
+<!ENTITY home_homepage_radio_default "&brandShortName; kezdőlap">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
      button for this string, a text field will appear below the radio button and allow the
@@ -495,6 +502,7 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY share "Megosztás">
 <!ENTITY share_title "Megosztás ezen:">
 <!ENTITY share_image_failed "Nem lehet megosztani ezt a képet">
+<!ENTITY share_error_toast_message "Nem lehet megosztani a megadott alkalmazással">
 <!ENTITY save_as_pdf "Mentés PDF-ként">
 <!ENTITY print "Nyomtatás">
 <!ENTITY view_page_source "Oldal forrása">
@@ -595,7 +603,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_location "Hely">
 <!ENTITY bookmark_edit_keyword "Kulcsszó">
 <!ENTITY bookmark_select_folder "Válasszon mappát">
-
 <!ENTITY bookmark_edit_undo "Visszavonás">
 
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
@@ -689,6 +696,7 @@ shown from Android O while a tab is being queued.-->
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "A következőhöz csatlakozott:">
+
 <!-- Localization note (identity_run_by) : This string appears between a
 domain name (above) and an organization name (below). E.g.
 
@@ -875,6 +883,18 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_title "Elérhető kapcsolat nélkül">
 <!ENTITY helper_triple_readerview_open_message "Könyvjelzőzze az Olvasó nézet lapjait, hogy kapcsolat nélkül is el tudja olvasni.">
 <!ENTITY helper_triple_readerview_open_button "Hozzáadás a könyvjelzőkhöz">
+
+<!-- LOCALIZATION NOTE (activity_stream_signin_title, activity_stream_signin_description, activity_stream_signup_button,
+activity_stream_signin_prompt, activity_stream_signin_prompt_button):
+- These labels are shown in the Activity Stream recommending the user to sign in. -->
+<!ENTITY activity_stream_signin_title "Üdvözli a &brandShortName;">
+<!ENTITY activity_stream_signin_description "Kezdje el szinkronizálni a könyvjelzőit, jelszavait és egyeket a Firefox-fiókjával.">
+<!ENTITY activity_stream_signin_button "Bejelentkezés">
+
+<!ENTITY activity_stream_signup_button "Regisztráció">
+<!ENTITY activity_stream_signin_prompt "Már van fiókja?">
+<!-- LOCALIZATION NOTE (activity_stream_signin_prompt_button): To be used in continuation of activity_stream_signin_prompt. -->
+<!ENTITY activity_stream_signin_prompt_button "Jelentkezzen be.">
 
 <!ENTITY activity_stream_topsites "Népszerű oldalak">
 <!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->

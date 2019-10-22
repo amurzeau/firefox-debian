@@ -253,6 +253,62 @@ applications-type-column =
 applications-action-column =
     .label = Ago
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } dosiero
+applications-action-save =
+    .label = Konservi dosieron
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Uzi { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Uzi { $app-name } (ĉefa)
+applications-use-other =
+    .label = Uzi alian…
+applications-select-helper = Elekti helpan programon
+applications-manage-app =
+    .label = Detaloj de programo…
+applications-always-ask =
+    .label = Ĉiam demandi
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Uzi { $plugin-name } (en { -brand-short-name })
+applications-preview-inapp =
+    .label = Antaŭvidi en { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 drm-content-header = Enhavo kun cifereca administrado de rajtoj (DRM)
 play-drm-content =
     .label = Ludi DRM-administritan enhavon
@@ -612,6 +668,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Ŝanĝi ĉefan pasvorton…
     .accesskey = v
+forms-master-pw-fips-title = Vi estas nun en FIPSa reĝimo. FIPS postulas nemalplenan  ĉefan pasvorton.
+forms-master-pw-fips-desc = Pasvorto malsukcese ŝanĝita
 
 ## Privacy Section - History
 
@@ -717,8 +775,8 @@ addressbar-suggestions-settings = Ŝanĝi preferojn pri serĉilaj sugestoj
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Blokado de enhavo
-content-blocking-enhanced-tracking-protection = Plibonigita protekto kontraŭ spurado
 content-blocking-section-description = Protektu vian privatecon dum vi retumas. Bloku nevideblan enhavon, kiu registras la retejojn, kiujn vi vizitas por konstrui profilon pri vi. Bloki parton de tiu enhavo povas rapidigi la ŝargadon de paĝoj.
+content-blocking-enhanced-tracking-protection = Plibonigita protekto kontraŭ spurado
 content-blocking-learn-more = Pli da informo
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -736,6 +794,23 @@ content-blocking-strict-description = Pli severa protekto, kiu povus misfunkciig
 content-blocking-custom-desc = Elektu kion bloki.
 content-blocking-private-trackers = Konataj spuriloj nur en fenestroj de privata retumo.
 content-blocking-third-party-cookies = Spurantaj nerektaj kuketoj
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Norma
+    .accesskey = N
+enhanced-tracking-protection-setting-strict =
+    .label = Strikta
+    .accesskey = S
+enhanced-tracking-protection-setting-custom =
+    .label = Personecigita
+    .accesskey = P
+
+##
+
 content-blocking-etp-standard-desc = Ekvilibrita por protekto kaj efikeco. Paĝoj ŝargiĝos normale.
 content-blocking-etp-strict-desc = Pli forta proteko, sed kelkaj retejoj aŭ enhavjo povus ne bone funkcii.
 content-blocking-etp-custom-desc = Elektu blokotajn spurilojn kaj skriptojn

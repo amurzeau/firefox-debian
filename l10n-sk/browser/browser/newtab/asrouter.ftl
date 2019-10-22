@@ -84,6 +84,15 @@ cfr-whatsnew-button =
     .label = Čo je nové
     .tooltiptext = Čo je nové
 cfr-whatsnew-panel-header = Čo je nové
+cfr-whatsnew-release-notes-link-text = Prečítajte si poznámky k vydaniu
+cfr-whatsnew-fx70-title = { -brand-short-name } tvrdo bojuje za vaše súkromie
+cfr-whatsnew-tracking-protect-title = Chráňte sa pred sledovacími prvkami
+cfr-whatsnew-tracking-protect-link-text = Podrobnosti
+cfr-whatsnew-tracking-blocked-subtitle = Od { DATETIME($earliestDate, month: "long", year: "numeric") }
+cfr-whatsnew-tracking-blocked-link-text = Podrobnosti
+cfr-whatsnew-lockwise-take-title = Vezmite si svoje heslá so sebou
+cfr-whatsnew-lockwise-take-body = S mobilnou aplikáciou { -lockwise-brand-short-name } získate bezpečný prístup k vašim zálohovaným prihlasovacím údajom - a to kdekoľvek.
+cfr-whatsnew-lockwise-take-link-text = Prevziať aplikáciu
 
 ## Bookmark Sync
 
@@ -113,3 +122,10 @@ cfr-doorhanger-firefox-send-header = Zdieľajte bezpečne toto PDF
 cfr-doorhanger-firefox-send-body = Zdieľajte svoje dokumenty bez toho, aby vám niekto nazeral cez plece - ochrana pomocou end-to-end šifrovania a odkazov s obmedzenou platnosťou.
 cfr-doorhanger-firefox-send-ok-button = Vyskúšajte { -send-brand-name }
     .accesskey = V
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-ok-button = Podrobnosti
+    .accesskey = P
+cfr-doorhanger-socialtracking-close-button = Zavrieť
+    .accesskey = Z

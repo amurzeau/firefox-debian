@@ -72,6 +72,7 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
 
 ## Protections panel
 
+cfr-protections-panel-header = অনুসৃত না হয়েই ব্রাউজ করুন
 cfr-protections-panel-link-text = আরও জানুন
 
 ## What's New toolbar button and panel
@@ -80,6 +81,26 @@ cfr-whatsnew-button =
     .label = নতুন কি আছে
     .tooltiptext = নতুন যা আছে
 cfr-whatsnew-panel-header = নতুন কি আছে
+cfr-whatsnew-release-notes-link-text = রিলিজ নোট পড়ুন
+cfr-whatsnew-fx70-title = { -brand-short-name } এখন আপনার গোপনীয়তার জন্য আরও কঠোরভাবে লড়াই করে
+cfr-whatsnew-tracking-protect-title = ট্র্যাকারদের থেকে নিজেকে রক্ষা করুন
+cfr-whatsnew-tracking-protect-link-text = আপনার রিপোর্ট দেখুন
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+        [one] ট্র্যাকার  করা হয়েছে
+       *[other] ট্র্যাকারগুলি ব্লক করা হয়েছে
+    }
+cfr-whatsnew-tracking-blocked-subtitle = { DATETIME($earliestDate, month: "long", year: "numeric") } হতে
+cfr-whatsnew-tracking-blocked-link-text = রিপোর্ট দেখুন
+cfr-whatsnew-lockwise-backup-title = আপনার পাসওয়ার্ড ব্যাকআপ করুন
+cfr-whatsnew-lockwise-backup-body = সুরক্ষিত পাসওয়ার্ড তৈরি করুন এখন আপনি সাইন ইন করে যে কোনও জায়গায় ব্যবহার করতে পারবেন।
+cfr-whatsnew-lockwise-backup-link-text = ব্যাকআপ চালু করুন
+cfr-whatsnew-lockwise-take-title = আপনার সাথে আপনার পাসওয়ার্ড নিন
+cfr-whatsnew-lockwise-take-body = { -lockwise-brand-short-name } মোবাইল অ্যাপ্লিকেশনটি যেকোন জায়গা থেকে আপনাকে সুরক্ষিতভাবে আপনার ব্যাকআপ করা পাসওয়ার্ডকে এক্সেস করতে দেয়।
+cfr-whatsnew-lockwise-take-link-text = অ্যাপটি ডাউনলোড করুন
 
 ## Bookmark Sync
 
@@ -89,14 +110,25 @@ cfr-doorhanger-sync-bookmarks-ok-button = চালু করুন { -sync-bran
 
 ## Login Sync
 
+cfr-doorhanger-sync-logins-header = আর কখনও পাসওয়ার্ড হারাবেন না
+cfr-doorhanger-sync-logins-body = নিরাপদভাবে আপনার সকল ডিভাইসে আপনার পাসওয়ার্ড সংরক্ষণ করুন এবং সিঙ্ক করুন।
+cfr-doorhanger-sync-logins-ok-button = { -sync-brand-short-name } চালু করুন
+    .accesskey = T
 
 ## Send Tab
 
+cfr-doorhanger-send-tab-header = যেতে যেতে এটি পড়ুন
 cfr-doorhanger-send-tab-recipe-header = এই রেসিপিটি রান্নাঘরে নিয়ে যান
 cfr-doorhanger-send-tab-ok-button = ট্যাব প্রেরণ চেষ্টা করুন
     .accesskey = ট
 
 ## Firefox Send
 
+cfr-doorhanger-firefox-send-header = নিরাপদে এই PDF টি শেয়ার করুন
 cfr-doorhanger-firefox-send-ok-button = { -send-brand-name } পরখ করুন
     .accesskey = T
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-close-button = বন্ধ
+    .accesskey = C

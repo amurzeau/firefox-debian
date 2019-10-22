@@ -259,6 +259,62 @@ applications-type-column =
 applications-action-column =
     .label = Akcija
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = Dataja { $extension }
+applications-action-save =
+    .label = Dataju składowaś
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = { $app-name } wužywaś
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = { $app-name } wužywaś (standard)
+applications-use-other =
+    .label = Druge wužywaś…
+applications-select-helper = Pomocne nałoženje wubraś
+applications-manage-app =
+    .label = Drobnostki nałoženja…
+applications-always-ask =
+    .label = Pśecej se pšašaś
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = { $plugin-name } wužywaś (w { -brand-short-name })
+applications-preview-inapp =
+    .label = Pśeglěd w { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = Wopśimjeśe Digital Right Management (DRM)
 play-drm-content =
     .label = Wopśimjeśe wóźony pśez DRM wótgraś
@@ -345,6 +401,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Pśi pisanju tekst pytaś
     .accesskey = P
+browsing-picture-in-picture-toggle-enabled =
+    .label = Wóźeńske elementy wideo wobraz-we-wobrazu zmóžniś
+    .accesskey = W
+browsing-picture-in-picture-learn-more = Dalšne informacije
 browsing-cfr-recommendations =
     .label = Rozšyrjenja dopórucyś, gaž pśeglědujośo
     .accesskey = R
@@ -453,6 +513,12 @@ search-bar-shown =
     .label = Pytańske pólo symbolowej rědce pśidaś
 search-engine-default-header = Standardna pytnica
 search-engine-default-desc = Wubjeŕśo standardnu pytnicu, kótaraž ma se w adresowem pólu a pytańskem polu wužywaś.
+search-engine-default-private-desc = Wubjeŕśo standardnu pytnicu za wužywanje w priwatnych woknach.
+search-separate-default-engine =
+    .label = Toś tu pytnicu w priwatnych woknach wužywaś
+    .accesskey = T
+search-suggestions-header = Pytańske naraźenja
+search-suggestions-desc = Wubjeŕśo, kak se naraźenja z pytnicow pokazuju.
 search-suggestions-option =
     .label = Pytańske naraźenja pódaś
     .accesskey = P
@@ -466,6 +532,7 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Pytańske naraźenja pśed pśeglědowańskeju historiju we wuslědkach adresowego póla pokazaś
+suggestions-addressbar-settings = Wubjeŕśo nastajenja za pśeglědowańsku historiju, cytańske znamjenja a rejtarkowe naraźenja
 search-suggestions-cant-show = Pytańske naraźenja njebudu se we wuslědkach adresowego póla pokazaś, dokulaž sćo { -brand-short-name } tak konfigurěrował, až njespomnjejo se nigda historiju.
 search-one-click-header = Pytnice z jadnym kliknjenim
 search-one-click-desc = Wubjeŕśo alternatiwne pytnice, kótarež se pód adresowym pólom a pytańskim pólom pokazuju, gaž klucowe słowo zapódawaśo.
@@ -502,6 +569,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Wzejśo swój web sobu
 sync-signedout-description = Synchronizěrujśo swóje cytańske znamjenja, historiju, rejtarki, gronidła, dodanki a nastajenja mjazy wšymi wašymi rědami.
 sync-signedout-account-title = Zwězaś z: { -fxaccount-brand-name }
@@ -522,11 +593,17 @@ sync-mobile-promo = Firefox za <img data-l10n-name="android-icon"/> <a data-l10n
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = Profilowy wobraz změniś
 sync-disconnect =
     .label = Zwisk źěliś…
     .accesskey = Z
+sync-sign-out =
+    .label = Wótzjawiś…
+    .accesskey = t
 sync-manage-account = Konto zastojaś
     .accesskey = o
 sync-signedin-unverified = { $email } njejo se pśeglědał.
@@ -542,6 +619,48 @@ sync-sign-in =
     .accesskey = z
 sync-signedin-settings-header = Nastajenja synchronizacije
 sync-signedin-settings-desc = Wubjeŕśo, což ma se z { -brand-short-name } na wašych rědach synchronizěrowaś.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Synchronizacija: ZAŠALTOWANA
+prefs-syncing-off = Synchronizacija: WUŠALTOWANA
+prefs-sync-setup =
+    .label = { -sync-brand-short-name } konfigurěrowaś
+    .accesskey = k
+prefs-sync-offer-setup-label = Synchronizěrujśo swóje cytańske znamjenja, historiju, rejtarki, gronidła, dodanki a nastajenja mjazy wšymi wašymi rědami.
+prefs-sync-now =
+    .labelnotsyncing = Něnto synchronizěrowaś
+    .accesskeynotsyncing = N
+    .labelsyncing = Synchronizěrujo se…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = Synchronizěrujośo tuchylu slědujuce zapiski:
+sync-currently-syncing-bookmarks = Cytańske znamjenja
+sync-currently-syncing-history = Historija
+sync-currently-syncing-tabs = Wócynjone rejtarki
+sync-currently-syncing-logins-passwords = Pśizjawjenja a gronidła
+sync-currently-syncing-addresses = Adrese
+sync-currently-syncing-creditcards = Kreditowe kórty
+sync-currently-syncing-addons = Dodanki
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Nastajenja
+       *[other] Nastajenja
+    }
+sync-change-options =
+    .label = Změniś…
+    .accesskey = Z
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = Wubjeŕśo, což ma se synchronizěrowaś
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Změny składowaś
+    .buttonaccesskeyaccept = s
+    .buttonlabelextra2 = Źěliś
+    .buttonaccesskeyextra2 = l
 sync-engine-bookmarks =
     .label = Cytańske znamjenja
     .accesskey = C
@@ -554,6 +673,10 @@ sync-engine-tabs =
     .accesskey = r
 sync-engine-logins =
     .label = Pśizjawjenja
+    .tooltiptext = Wužywarske mjenja a gronidła, kótarež sćo składł
+    .accesskey = P
+sync-engine-logins-passwords =
+    .label = Pśizjawjenja a gronidła
     .tooltiptext = Wužywarske mjenja a gronidła, kótarež sćo składł
     .accesskey = P
 sync-engine-addresses =
@@ -576,6 +699,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Powšykne nastajenja, nastajenja priwatnosći a wěstoty, kótarež sćo změnił
     .accesskey = N
+
+## The device name controls.
+
 sync-device-name-header = Mě rěda
 sync-device-name-change =
     .label = Mě rěda změniś…
@@ -608,6 +734,10 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Mócne gronidła napóraś a naraźiś
     .accesskey = r
+forms-breach-alerts =
+    .label = Warnowanja za gronidła zranjonych websedłow
+    .accesskey = z
+forms-breach-alerts-learn-more-link = Dalšne informacije
 forms-fill-logins-and-passwords =
     .label = Pśizjawjenja a gronidła awtomatiski zapisaś
     .accesskey = i
@@ -620,6 +750,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Głowne gronidło změniś…
     .accesskey = m
+forms-master-pw-fips-title = Sćo tuchylu we FIPS-modusu. FIPS pomina se głowne gronidło.
+forms-master-pw-fips-desc = Změnjanje gronidła njejo se raźiło
 
 ## Privacy Section - History
 
@@ -725,8 +857,9 @@ addressbar-suggestions-settings = Nastajenja za naraźenja pytnice změniś
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Blokěrowanje wopśimjeśa
-content-blocking-enhanced-tracking-protection = Pólěpšony slědowański šćit
 content-blocking-section-description = Šćitajśo swóju priwatnosć, mjaztym až pśeglědujośo. Blokěrujśo njewidobne wopśimjeśe, kótarež sedła slědujo, ku kótarymž se woglědujośo, a profil wó was twóri. Gaž take wopśimjeśe blokěrujośo, daju se boki snaź malsnjej zacytaś.
+content-blocking-enhanced-tracking-protection = Pólěpšony slědowański šćit
+content-blocking-section-top-level-description = Pśeslěěowaki wam online slěduju, aby informacije wó wašych pśeglědowańskich zwuconosćach a zajmach gromaźili. { -brand-short-name } wjele z toś tych pśeslědowakow a druge złosne skripty blokěrujo.
 content-blocking-learn-more = Dalšne informacije
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -744,6 +877,23 @@ content-blocking-strict-description = Mócnjejšy šćit, móžo zawinowaś, až
 content-blocking-custom-desc = Wubjeŕśo, což cośo blokěrowaś.
 content-blocking-private-trackers = Znate pśeslědowaki w priwatnych woknach
 content-blocking-third-party-cookies = Slědujuce cookiejei tśeśich
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Standard
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = Striktny
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = Swójski
+    .accesskey = S
+
+
+
 content-blocking-etp-standard-desc = Wuwažony za šćit a wugbaśe. Boki se normalnje zacytaju.
 content-blocking-etp-strict-desc = Mócnjejšy šćit, ale móžo zawinowaś, až někotare sedła abo wopśimjeśe wěcej njefunkcioněruju.
 content-blocking-etp-custom-desc = Wubjeŕśo, kótare pśeslědowaki a skripty maju se blokěrowaś.

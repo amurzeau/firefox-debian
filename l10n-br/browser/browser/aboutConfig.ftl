@@ -7,10 +7,24 @@ about-config-warning-title = Hic sunt dracones
 about-config-warning-text = Mekaus evit stabilder, diogelroez ha digonusted an arload e c'hall bezañ kemmañ an arventennoù kempleshoc'h. Kendalc'hit mard oc'h sur n'emaoc'h ket oc'h ober ur fazi.
 about-config-warning-checkbox = Hegasit ac'hanon adarre, mar plij!
 about-config-warning-button = Kemer a ran ar riskl
-about-config-title = about:config
 about-config2-title = Kefluniadurioù araoket
 about-config-search-input =
     .placeholder = Klask
+
+## These strings appear on the warning you see when first visiting about:config.
+
+about-config-intro-warning-title = Kendalc'hit gant evezh
+about-config-intro-warning-text = Kemmañ gwellvezioù kefluniadur araokaet a c'hall levezoniñ digonusted ha diogelroez { -brand-short-name }.
+about-config-intro-warning-checkbox = Kelaouiñ ac'hanon pa klaskan haeziñ ar gwellvezioù-se
+about-config-intro-warning-button = Asantiñ ar riskloù ha kenderc'hel
+
+
+
+# This is shown on the page before searching but after the warning is accepted.
+about-config-caution-text = Kemmañ ar gwellvezioù-mañ a c'hall levezoniñ digonusted ha diogelroez { -brand-short-name }.
+about-config-page-title = Gwellvezioù araoket
+about-config-search-input1 =
+    .placeholder = Klask un anv gwellvezioù
 about-config-show-all = Diskouez an holl
 about-config-pref-add = Ouzhpennañ
 about-config-pref-toggle = Trec'haoliñ
@@ -18,6 +32,18 @@ about-config-pref-edit = Embann
 about-config-pref-save = Enrollañ
 about-config-pref-reset = Adderaouekaat
 about-config-pref-delete = Dilemel
+about-config-pref-add-button =
+    .title = Ouzhpennañ
+about-config-pref-toggle-button =
+    .title = Trec'haoliñ
+about-config-pref-edit-button =
+    .title = Embann
+about-config-pref-save-button =
+    .title = Enrollañ
+about-config-pref-reset-button =
+    .title = Adderaouekaat
+about-config-pref-delete-button =
+    .title = Dilemel
 
 ## Labels for the type selection radio buttons shown when adding preferences.
 

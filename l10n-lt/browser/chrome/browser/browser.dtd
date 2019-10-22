@@ -76,12 +76,21 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY menubarCmd.label "Meniu juosta">
 <!ENTITY menubarCmd.accesskey "M">
 <!ENTITY navbarCmd.label "Naršymo juosta">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY navbar.accessibleLabel "Navigacija">
 <!ENTITY personalbarCmd.label "Adresyno juosta">
 <!ENTITY personalbarCmd.accesskey "A">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY personalbar.accessibleLabel "Adresynas">
 <!ENTITY bookmarksToolbarItem.label "Adresyno juostos elementai">
 
 <!ENTITY pageSourceCmd.label "Pirminis tekstas">
 <!ENTITY pageSourceCmd.accesskey "e">
+
 <!ENTITY pageSourceCmd.commandkey "u">
 <!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
 Option+Command keyboard shortcut letter that Safari and Chrome use for "View
@@ -92,6 +101,7 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 
 <!ENTITY pageInfoCmd.label "Informacija apie tinklalapį">
 <!ENTITY pageInfoCmd.accesskey "I">
+
 <!ENTITY pageInfoCmd.commandkey "i">
 <!ENTITY ldbCmd.label "Išdėstymo derintuvė">
 <!ENTITY ldbCmd.accesskey "d">
@@ -116,6 +126,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaSignInError.label "Iš naujo jungtis prie „&syncBrand.shortName.label;“">
 <!ENTITY fxaUnverified.label "Patvirtinkite savo paskyrą">
 
+
+<!ENTITY togglePictureInPicture.key2 "}">
+<!ENTITY togglePictureInPicture.key "]"> <!-- } is above this key on many keyboards -->
 
 <!ENTITY fullScreenMinimize.tooltip "Suskleisti">
 <!ENTITY fullScreenRestore.tooltip "Normalioji veiksena">
@@ -146,13 +159,24 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.menu.signedInAs.label "Prisijungėte kaip">
 <!ENTITY fxa.menu.manageAccount.label "Tvarkyti paskyrą…">
 <!ENTITY fxa.menu.syncSettings.label "„&syncBrand.shortName.label;“ nuostatos…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbar menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.syncSettings2.label "„&syncBrand.shortName.label;“ nuostatas">
 <!ENTITY fxa.menu.connectAnotherDevice2.label "Susieti kitą įrenginį…">
 <!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
 <!ENTITY fxa.menu.signin.label "Prisijungti prie „&brandProductName;“">
 <!ENTITY fxa.menu.turnOnSync.label "Įjungti „&syncBrand.shortName.label;“">
-<!ENTITY fxa.menu.account.label "Paskyra">
 <!ENTITY fxa.menu.firefoxServices.label "„&brandProductName;“ paslaugos">
+
+<!ENTITY fxa.menu.account.label "Paskyra">
+<!ENTITY fxa.menu.settings.label "Nuostatos">
+<!ENTITY fxa.menu.accountSettings.label "Paskyros nuostatos">
+<!ENTITY fxa.menu.signOut.label "Atsijungti…">
+<!ENTITY fxa.menu.deviceSettings.label "Įrenginio nuostatos">
+<!ENTITY fxa.menu.setupSync.label "Konfigūruoti „&syncBrand.shortName.label;“…">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
      for the Firefox Account toolbar menu screen.  -->
@@ -195,6 +219,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY bookmarksMenu.label "Adresynas">
 <!ENTITY bookmarksMenu.accesskey "A">
+
 <!ENTITY bookmarkThisPageCmd.label "Įrašyti į adresyną">
 <!ENTITY editThisBookmarkCmd.label "Taisyti adresyno įrašą">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
@@ -236,6 +261,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Valdyti papildinių naudojimą">
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "Pasirinkite, ar norite gauti pranešimus iš šios svetainės">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Saugoti duomenis išliekančioje atmintyje">
+
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Naršyklė valdoma per nuotolį">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Atverti „Web Authentication“ polangį">
 <!ENTITY urlbar.storageAccessAnchor.tooltip               "Atverti naršymo veiklos leidimų polangį">
@@ -249,6 +275,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Tvarkyti tinklalapio vertimą">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Tvarkyti DRM programinės įrangos naudojimą">
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "Atverti MIDI polangį">
+
+<!ENTITY urlbar.permissionsGranted.tooltip       "Šiai svetainei esate suteikę papildomų leidimų.">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Šioje svetainėje esate užblokavę savo kamerą.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Šioje svetainėje esate užblokavę savo mikrofoną.">
@@ -419,8 +447,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Norite čia matyti savo korteles iš kitų įrenginių?">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Atverti sinchronizavimo nuostatas">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Prisijunkite, norėdami peržiūrėti kituose įrenginiuose esančias korteles.">
+<!ENTITY appMenuRemoteTabs.welcome.label "Peržiūrėkite kituose įrenginiuose esančias korteles.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Jūsų paskyra turi būti patvirtinta.">
 <!ENTITY appMenuRemoteTabs.signin.label "Prisijungti prie „Sync“">
+<!ENTITY appMenuRemoteTabs.signintosync.label "Jungtis prie „&syncBrand.shortName.label;“…">
+<!ENTITY appMenuRemoteTabs.turnonsync.label "Įjungti „&syncBrand.shortName.label;“…">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Tvarkyti įrenginius…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Rodyti sinchronizuotų kortelių parankinę">
 <!ENTITY appMenuRemoteTabs.hidesidebar.label "Slėpti sinchronizuotų kortelių parankinę">
@@ -508,6 +539,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      This is set as the aria-label attribute for the search input box in the
      in-content search UI, to be used by screen readers. -->
 <!ENTITY contentSearchInput.label     "Paieškos užklausa">
+
 <!ENTITY contentSearchSubmit.tooltip  "Išsiųsti paiešką">
 
 <!-- LOCALIZATION NOTE (searchInput.placeholder):
@@ -812,13 +844,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.connection "Ryšys">
 <!ENTITY identity.connectionSecure "Saugus ryšys">
-
-<!-- LOCALIZATION NOTE (identity.securityView.label2)
-     This is the header of the security subview in the Site Identity panel. -->
-<!ENTITY identity.securityView.label2 "Ryšio saugumas">
-
-<!ENTITY identity.connectionSecure2 "Ryšys saugus">
 <!ENTITY identity.connectionNotSecure "Ryšys nėra saugus">
+
+<!ENTITY identity.connectionSecure3 "Ryšys saugus">
+<!ENTITY identity.connectionNotSecure2 "Ryšys nesaugus">
 <!ENTITY identity.connectionNotSecureSecurityView "Nesate saugiai prisijungę prie šios svetainės.">
 <!ENTITY identity.connectionFile "Šis tinklalapis yra įrašytas jūsų kompiuteryje.">
 <!ENTITY identity.connectionVerified2 "Esate saugiai prisijungę prie šios svetainės, kurią valdo:">
@@ -828,7 +857,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.insecureLoginForms2 "Šiame tinklalapyje įvesti prisijungimo duomenys gali būti perimti.">
 <!ENTITY identity.customRoot "Ryšį patvirtino liudijimo išdavėjas, kurio „Mozilla“ neatpažino.">
 
-<!ENTITY identity.evOwnerLabel "Svetainė priklauso:">
+<!ENTITY identity.evOwnerLabel2 "Kam išduotas liudijimas:">
 
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "„&brandShortName;“ užblokavo nesaugias šio tinklalapio dalis.">
@@ -864,8 +893,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.permissions "Leidimai">
 
-<!-- LOCALIZATION NOTE (identity.permissions2): "set" as in "configured for this website" -->
-<!ENTITY identity.permissions2 "Svetainės leidimai">
+<!ENTITY identity.permissions3 "Leidimai">
 <!ENTITY identity.permissionsEmpty "Šiai svetainei nesate suteikę jokių ypatingų leidimų.">
 <!ENTITY identity.permissionsReloadHint "Kad būtų pritaikyti pakeitimai, tinklalapį galimai reikia atsiųsti iš naujo.">
 <!ENTITY identity.permissionsPreferences.tooltip "Atverti leidimų nuostatas">
@@ -878,7 +906,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      protections.etpMoreInfo.label: The text a screen reader speaks when focused on the info button. -->
 <!ENTITY protections.etpMoreInfo.label "Daugiau informacijos apie išplėstą apsaugą nuo stebėjimo">
 <!ENTITY protections.settings.label "Apsaugos nuostatos">
-<!ENTITY protections.report.label "Rodyti visą ataskaitą">
+<!ENTITY protections.showreport.label "Rodyti ataskaitą">
 <!-- LOCALIZATION NOTE:
      protections.siteNotWorking.label: The link to be clicked to open the sub-panel view
      protections.siteNotWorkingView.title: The heading/title of the sub-panel view -->
@@ -895,11 +923,20 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY protections.siteNotWorkingView.issueList.payments "Mokėjimais">
 <!ENTITY protections.siteNotWorkingView.issueList.comments "Komentarais">
 <!ENTITY protections.siteNotWorkingView.issueList.videos "Vaizdo įrašais">
-<!ENTITY protections.siteNotWorkingView.siteStillBroken.label "Svetainė neveikia net ir išjungus apsaugas?">
 <!ENTITY protections.siteNotWorkingView.sendReport.label "Siųsti pranešimą">
 
-<!ENTITY protections.blocking.label "Blokuojama">
-<!ENTITY protections.notBlocking.label "Neblokuojama">
+<!-- LOCALIZATION NOTE (protections.blocking2.label, protections.notBlocking2.label, protections.notFound.label):
+     In the protections panel, Content Blocking category items are in three sections:
+     "Blocked" for categories being blocked in the current page,
+     "Allowed" for categories detected but not blocked in the current page, and
+     "None Detected" for categories not detected in the current page.
+     These strings are used in the header labels of each of these sections. -->
+<!ENTITY protections.blocking2.label "Blokuojama">
+<!ENTITY protections.notBlocking2.label "Leidžiama">
+<!ENTITY protections.notFound.label "Neaptikta jokių">
+<!-- LOCALIZATION NOTE (protections.notBlocking.why.label, protections.notBlocking.why.etp*.tooltip):
+     The "Allowed" header also includes a "Why?" link that, when hovered, shows
+     a tooltip explaining why these items were not blocked in the page. -->
 <!ENTITY protections.notBlocking.why.label "Kodėl?">
 <!ENTITY protections.notBlocking.why.etpOn.tooltip "Šių dalykų blokavimas gali sutrikdyti elementų, esančių svetainėse, veikimą. Be stebėjimo elementų, gali neveikti kai kurie mygtukai, formos, prisijungimo laukai.">
 <!ENTITY protections.notBlocking.why.etpOff.tooltip "Išjungus apsaugas, šioje svetainėje bus leidžiami stebėjimo elementai. Kartu gali pagerėti tam tikras funkcionalumas.">
@@ -913,7 +950,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY protections.crossSiteTrackingCookies.description "Šie slapukai seka jus tarp skirtingų svetainių, rinkdami informaciją, ką veikiate naršydami. Jie yra valdomi trečiųjų šalių, pvz., reklamų kūrėjų arba analitikos kompanijų.">
 <!ENTITY protections.cryptominers.description "Kriptovaliutų kasėjai naudoja jūsų kompiuterio resursus, kad iškastų skaitmeninių pinigų. Šis procesas eikvoja jūsų bateriją, lėtina kompiuterio veikimą, ir gali padidinti sąskaitą už elektrą.">
 <!ENTITY protections.fingerprinters.description "Skaitmeninių atspaudų stebėjimo metu surenkama informacija apie jūsų naršyklės ir kompiuterio parametrus, kad būtų sudarytas jūsų profilis. Jį turint, jus galima sekti tarp skirtingų svetainių.">
-<!ENTITY protections.trackingContent.description "Svetainės gali įkelti išorines reklamas, vaizdo įrašus, ir kitą stebėjimo kodo turintį turinį. Tokio turinio blokavimas gali leisti gerčiau įkelti svetaines, tačiau kartu gali neveikti dalis mygtukų, formų, prisijungimo laukų.">
+<!ENTITY protections.trackingContent2.description "Svetainės gali įkelti išorines reklamas, vaizdo įrašus, ir kitą turinį su stebimo kodu. Tokio turinio blokavimas gali leisti gerčiau įkelti svetaines, tačiau kartu gali neveikti dalis mygtukų, formų, prisijungimo laukų.">
 <!ENTITY protections.socialMediaTrackers.description "Socialiniai tinklai deda stebėjimo elementus kitose svetainėse, kad galėtų sekti ką veikiate, matote, žiūrite naršydami. Tai leidžia kompanijoms sužinoti apie jus žymiai daugiau, negu dalinatės savo socialinių tinklų profiliuose.">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
@@ -953,18 +990,18 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection3.label "Stebėjimo elementai">
 
 <!ENTITY contentBlocking.manageSettings.label "Tvarkyti turinio blokavimą">
-
-<!ENTITY contentBlocking.trackingProtection4.label "Stebėjimui naudojamas turinys">
-
-<!ENTITY contentBlocking.manageSettings2.label "Tvarkyti apsaugos nuostatas">
 <!ENTITY contentBlocking.manageSettings.accesskey "T">
 
 <!ENTITY contentBlocking.trackersView.label "Stebėjimo elementai">
-
 <!ENTITY contentBlocking.trackersView.strictInfo.label "Norėdami blokuoti visus stebėjimo elementus, pasirinkite „griežtą“ turinio blokavimą.">
 
 <!ENTITY contentBlocking.cookies.label "Slapukai">
 <!ENTITY contentBlocking.cookiesView.label "Slapukai ir svetainių duomenys">
+
+<!ENTITY contentBlocking.trackingProtection4.label "Stebėjimui naudojamas turinys">
+
+<!ENTITY contentBlocking.manageSettings2.label "Tvarkyti apsaugos nuostatas">
+<!ENTITY contentBlocking.manageSettings2.accesskey "T">
 
 <!ENTITY contentBlocking.socialblock.label "Socialinių tinklų stebėjimo elementai">
 
@@ -980,6 +1017,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView.label "Pranešti apie problemas">
 <!ENTITY contentBlocking.breakageReportView2.description "Turinio blokavimas gali sutrikdyti kai kurių svetainių veikimą. Pranešdami apie problemas, padėsite tobulinti „&brandShortName;“. „Mozillai“ bus perduodamas svetainės adresas bei informacija apie jūsų naršyklės nuostatas.">
 <!ENTITY contentBlocking.breakageReportView.learnMore "Sužinoti daugiau">
+
 <!ENTITY contentBlocking.breakageReportView.title "Pranešti apie neveikiančią svetainę">
 <!ENTITY contentBlocking.breakageReportView3.description "Stebėjimo elementų blokavimas gali sutrikdyti kai kurių svetainių veikimą. Pranešdami apie problemas, padėsite tobulinti „&brandShortName;“. Išsiuntus šį pranešimą, „Mozillai“ bus perduotas svetainės adresas bei informacija apie jūsų naršyklės nuostatas.">
 <!ENTITY contentBlocking.breakageReportView2.learnMore "Sužinoti daugiau">
@@ -1035,6 +1073,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY newTabControlled.disableButton.accesskey "I">
 
 <!ENTITY homepageControlled.message "Kažkuris priedas pakeitė tai, ką matote kaip savo pradžios tinklalapį. Jei nenorite šio pakeitimo, galite atkurti savo nuostatas.">
+
 <!ENTITY homepageControlled.header.message "Pasikeitė jūsų pradžios tinklalapis.">
 <!ENTITY homepageControlled.keepButton.label "Palikti pakeitimus">
 <!ENTITY homepageControlled.keepButton.accesskey "k">

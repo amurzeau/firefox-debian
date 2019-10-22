@@ -21,12 +21,17 @@ onboarding-button-label-get-started = Começar
 onboarding-welcome-header = Boas-vindas ao { -brand-short-name }
 onboarding-welcome-body = Você instalou o navegador.<br/>Conheça outros produtos e serviços do { -brand-product-name }.
 onboarding-welcome-learn-more = Saiba mais sobre os benefícios.
+onboarding-welcome-modal-get-body = Você instalou o navegador.<br/>Agora aproveite ao máximo o { -brand-product-name }.
+onboarding-welcome-modal-supercharge-body = Potencialize sua proteção de privacidade.
+onboarding-welcome-modal-privacy-body = Você instalou o navegador. Vamos adicionar mais proteção de privacidade.
+onboarding-welcome-modal-family-learn-more = Saiba mais sobre a família de produtos  { -brand-product-name }.
+onboarding-welcome-form-header = Introdução
 onboarding-join-form-header = Junte-se ao { -brand-product-name }
 onboarding-join-form-body = Digite seu endereço de e-mail para começar.
 onboarding-join-form-email =
     .placeholder = Digite seu e-mail
 onboarding-join-form-email-error = É necessário um e-mail válido
-onboarding-join-form-legal = Ao continuar, você concorda com os <a data-l10n-name="terms">Termos de Serviço</a> e o <a data-l10n-name="privacy">Aviso de Privacidade</a>.
+onboarding-join-form-legal = Ao continuar, você concorda com os <a data-l10n-name="terms">Termos do serviço</a> e o <a data-l10n-name="privacy">Aviso de privacidade</a>.
 onboarding-join-form-continue = Continuar
 onboarding-start-browsing-button-label = Comece a navegar
 onboarding-cards-dismiss =
@@ -39,7 +44,7 @@ onboarding-sync-welcome-header = Leve o { -brand-product-name } com você
 onboarding-sync-welcome-content = Tenha seus favoritos, histórico, senhas e outras configurações em todos os seus dispositivos.
 onboarding-sync-welcome-learn-more-link = Saiba mais sobre a Conta Firefox
 onboarding-sync-form-invalid-input = Necessário um e-mail válido
-onboarding-sync-legal-notice = Ao continuar você concorda com os <a data-l10n-name="terms">Termos de serviço</a> e a <a data-l10n-name="privacy">Política de privacidade</a>.
+onboarding-sync-legal-notice = Ao continuar, você concorda com os <a data-l10n-name="terms">Termos do serviço</a> e o <a data-l10n-name="privacy">Aviso de privacidade</a>.
 onboarding-sync-form-input =
     .placeholder = E-mail
 onboarding-sync-form-continue-button = Continuar
@@ -64,6 +69,12 @@ onboarding-benefit-privacy-title = Privacidade verdadeira
 # make and do. We take less data. We keep it safe. And we make sure that we are
 # transparent about how we use it."
 onboarding-benefit-privacy-text = Tudo o que fazemos honra nossa promessa de como lidar com dados pessoais: Coletar pouco. Manter seguro. Sem segredos.
+onboarding-benefit-sync-title = { -sync-brand-short-name }
+onboarding-benefit-sync-text = Tenha seus favoritos, senhas, histórico e muito mais onde quer que use o { -brand-product-name }.
+onboarding-benefit-monitor-title = { -monitor-brand-short-name }
+onboarding-benefit-monitor-text = Seja notificado quando suas informações pessoais estiverem em um vazamento de dados conhecido.
+onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
+onboarding-benefit-lockwise-text = Gerencie suas senhas de modo protegido e portátil.
 
 ## These strings belong to the individual onboarding messages.
 

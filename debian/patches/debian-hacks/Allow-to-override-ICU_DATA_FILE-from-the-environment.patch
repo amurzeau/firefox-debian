@@ -7,10 +7,10 @@ Subject: Allow to override ICU_DATA_FILE from the environment
  1 file changed, 3 insertions(+), 1 deletion(-)
 
 diff --git a/build/autoconf/icu.m4 b/build/autoconf/icu.m4
-index 6afa262b073e..342e9d30a2f3 100644
+index fcdaf74daf6b..120e1797f949 100644
 --- a/build/autoconf/icu.m4
 +++ b/build/autoconf/icu.m4
-@@ -78,7 +78,9 @@ if test -n "$USE_ICU"; then
+@@ -68,7 +68,9 @@ if test -n "$USE_ICU"; then
      # TODO: the l is actually endian-dependent
      # We could make this set as 'l' or 'b' for little or big, respectively,
      # but we'd need to check in a big-endian version of the file.

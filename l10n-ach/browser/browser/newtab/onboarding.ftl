@@ -48,6 +48,7 @@ onboarding-sync-form-skip-login-button = Kal citep man
 ## This is part of the line "Enter your email to continue to Firefox Sync"
 
 onboarding-sync-form-header = Ket email mamegi
+onboarding-sync-form-sub-header = me mede i { -sync-brand-name }
 
 ## These are individual benefit messages shown with an image, title and
 ## description.
@@ -76,12 +77,19 @@ onboarding-tracking-protection-title2 = Gwokke ikom lubo kor
 onboarding-tracking-protection-text2 = { -brand-short-name } konyo me juko kakube ikom lubo kori iwiyamo, weko bedo tek tutwal ki kwena cato wil me lubo kori i kakube.
 onboarding-tracking-protection-button2 = Kit ma tiyo kwede
 onboarding-data-sync-title = Wot ki ter mamegi
+# "Sync" is short for synchronize.
+onboarding-data-sync-text2 = Rib alamabuk mamegi, mung me donyo, ki mapol ka weng ma i tiyo ki { -brand-product-name }.
 onboarding-data-sync-button2 = Dony iyie { -sync-brand-short-name }
 onboarding-browse-privately-title = Yeny i mung
 onboarding-browse-privately-text = Yeny i mung jwayo yeny ki gin mukato me yeny mamegi me gwoko ne i mung ki bot ngat mo keken ma tiyo ki kompiuta ni.
 onboarding-browse-privately-button = Yab dirica me mung
 onboarding-firefox-send-button = Tem { -send-brand-name }
 onboarding-mobile-phone-title = Nong { -brand-product-name } i Cim mamegi
+onboarding-mobile-phone-text = GAm { -brand-product-name } pi iOS onyo Android ka i rib data mamegi i nyonyo weng.
+# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
+# tab's context menu.
+onboarding-send-tabs-text = Send Tabs nywako cut potbukke ikin nyonyo mamegi labongo mite me loko mwono, onyo weko layeny.
+onboarding-send-tabs-button = Cak tic ki Send Tabs
 onboarding-pocket-anywhere-title = Kwan ki Winy Ka mo keken
 onboarding-pocket-anywhere-button = Tem { -pocket-brand-name }
 onboarding-lockwise-passwords-title = Wot ki mung me donyo mamegi ka mo keken

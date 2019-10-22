@@ -77,7 +77,7 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
 ## Protections panel
 
 cfr-protections-panel-header = Przeglądaj bez wścibskich oczu
-cfr-protections-panel-body = Zachowaj prywatność swoich danych. { -brand-short-name } chroni Cię przed wieloma najpopularniejszymi elementami śledzącymi, które monitorują, co robisz w Internecie.
+cfr-protections-panel-body = Zachowaj prywatność swoich danych. { -brand-short-name } chroni Cię przed wieloma najczęściej występującymi elementami śledzącymi, które monitorują, co robisz w Internecie.
 cfr-protections-panel-link-text = Więcej informacji
 
 ## What's New toolbar button and panel
@@ -86,6 +86,35 @@ cfr-whatsnew-button =
     .label = Co nowego
     .tooltiptext = Co nowego
 cfr-whatsnew-panel-header = Co nowego
+cfr-whatsnew-release-notes-link-text = Przeczytaj informacje o wydaniu
+cfr-whatsnew-fx70-title = { -brand-short-name } walczy teraz o Twoją prywatność
+cfr-whatsnew-fx70-body =
+    Najnowsza aktualizacja wzmacnia ochronę przed śledzeniem i sprawia,
+    że generowanie bezpiecznych haseł dla każdej witryny jest łatwiejsze niż kiedykolwiek.
+cfr-whatsnew-tracking-protect-title = Zabezpiecz się przed elementami śledzącymi
+cfr-whatsnew-tracking-protect-body =
+    { -brand-short-name } blokuje wiele najczęściej występujących elementów śledzących serwisów społecznościowych
+    oraz śledzących między witrynami, które monitorują, co robisz w Internecie.
+cfr-whatsnew-tracking-protect-link-text = Wyświetl raport
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+        [one] zablokowany element śledzący
+        [few] zablokowane elementy śledzące
+       *[many] zablokowanych elementów śledzących
+    }
+cfr-whatsnew-tracking-blocked-subtitle = Od { DATETIME($earliestDate, month: "long", year: "numeric") }
+cfr-whatsnew-tracking-blocked-link-text = Wyświetl raport
+cfr-whatsnew-lockwise-backup-title = Utwórz kopię zapasową haseł
+cfr-whatsnew-lockwise-backup-body = Teraz generuj bezpiecznie hasła, do których masz dostęp wszędzie, gdzie się zalogujesz.
+cfr-whatsnew-lockwise-backup-link-text = Włącz kopię zapasową
+cfr-whatsnew-lockwise-take-title = Miej hasła zawsze przy sobie
+cfr-whatsnew-lockwise-take-body =
+    Aplikacja { -lockwise-brand-short-name } na telefon daje bezpieczny dostęp
+    do haseł zachowanych w kopii zapasowej z dowolnego miejsca.
+cfr-whatsnew-lockwise-take-link-text = Pobierz aplikację
 
 ## Bookmark Sync
 
@@ -106,7 +135,7 @@ cfr-doorhanger-sync-logins-ok-button = Włącz { -sync-brand-short-name(case: "a
 cfr-doorhanger-send-tab-header = Przeczytaj to w podróży
 cfr-doorhanger-send-tab-recipe-header = Zabierz ten przepis do kuchni
 cfr-doorhanger-send-tab-body = Funkcja przesyłania kart umożliwia łatwe wysłanie tego odnośnika na telefon lub wszędzie, gdzie korzystasz z przeglądarki { -brand-product-name }.
-cfr-doorhanger-send-tab-ok-button = Wypróbuj wysyłanie kart
+cfr-doorhanger-send-tab-ok-button = Wypróbuj przesyłanie kart
     .accesskey = W
 
 ## Firefox Send
@@ -115,3 +144,16 @@ cfr-doorhanger-firefox-send-header = Bezpiecznie udostępnij ten plik PDF
 cfr-doorhanger-firefox-send-body = Chroń swoje poufne dokumenty przed wścibskimi oczami dzięki szyfrowaniu typu „end-to-end” i odnośnikowi, który znika po użyciu.
 cfr-doorhanger-firefox-send-ok-button = Wypróbuj { -send-brand-name }
     .accesskey = W
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-ok-button = Wyświetl ochronę
+    .accesskey = o
+cfr-doorhanger-socialtracking-close-button = Zamknij
+    .accesskey = Z
+cfr-doorhanger-socialtracking-heading = { -brand-short-name } powstrzymał serwis społecznościowy przed śledzeniem Cię na tej witrynie
+cfr-doorhanger-socialtracking-description = Twoja prywatność jest ważna. { -brand-short-name } blokuje teraz najczęściej występujące elementy śledzące serwisów społecznościowych, ograniczając ilość danych, które mogą zebrać na temat Twoich działań w Internecie.
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name } zablokował na tej witrynie element śledzący przez zbieranie informacji o konfiguracji
+cfr-doorhanger-fingerprinters-description = Twoja prywatność jest ważna. { -brand-short-name } blokuje teraz elementy zbierające jednoznacznie identyfikowalne informacje o używanym urządzeniu, aby Cię śledzić.
+cfr-doorhanger-cryptominers-heading = { -brand-short-name } zablokował na tej witrynie element używający komputera użytkownika do generowania kryptowalut
+cfr-doorhanger-cryptominers-description = Twoja prywatność jest ważna. { -brand-short-name } blokuje teraz elementy wykorzystujące moc obliczeniową Twojego komputera do generowania cyfrowych walut.

@@ -2,8 +2,15 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## These messages are used as headings in the recommendation doorhanger
+
 cfr-doorhanger-extension-heading = Askouezh erbedet
+cfr-doorhanger-feature-heading = Keweriuster erbedet
 cfr-doorhanger-pintab-heading = Klaskit an dra-se: spilhennañ an ivinell
+
+
+
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Perak e welan an dra-mañ
 cfr-doorhanger-extension-cancel-button = Ket bremañ
@@ -68,3 +75,83 @@ cfr-doorhanger-bookmark-fxa-link-text = Goubredit ar sinedoù bremañ...
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Afell serriñ
     .title = Serriñ
+
+## Protections panel
+
+cfr-protections-panel-header = Merdeit hep bezañ heuliet
+cfr-protections-panel-body = Mirit ho roadennoù ganeoc'h. { -brand-short-name } a warez ac'hanoc'h eus lodenn vrasañ an heulierien a sell ouzh ar pezh a rit enlinenn.
+cfr-protections-panel-link-text = Gouzout hiroc'h
+
+## What's New toolbar button and panel
+
+cfr-whatsnew-button =
+    .label = Petra nevez
+    .tooltiptext = Petra nevez
+cfr-whatsnew-panel-header = Petra nevez
+cfr-whatsnew-release-notes-link-text = Lenn an notennoù ermaeziañ
+cfr-whatsnew-fx70-title = { -brand-short-name } a stourm evit ho puhez prevez
+cfr-whatsnew-fx70-body = Gant an hizivadenn ziwezhañ eo kreñvaet ar gwarez a-enep d'an heuliañ hag aesoc'h c'hoazh eo da grouiñ gerioù-tremen diogel evit pep lec'hienn.
+cfr-whatsnew-tracking-protect-title = Gwarezit ac'hanoc'h a-enep d'an heulierien
+cfr-whatsnew-tracking-protect-body = { -brand-short-name } a stank meur a heulier kevredadel hag etre-lec'hienn a vez o spiañ ar pezh a rit enlinenn.
+cfr-whatsnew-tracking-protect-link-text = Gwelout ho tanevell
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+        [one] Heulier stanket
+        [two] Heulierien stanket
+        [few] Heulierien stanket
+        [many] Heulierien stanket
+       *[other] Heulierien stanket
+    }
+cfr-whatsnew-tracking-blocked-subtitle = Abaoe { DATETIME($earliestDate, month: "long", year: "numeric") }
+cfr-whatsnew-tracking-blocked-link-text = Gwelout an danevell
+cfr-whatsnew-lockwise-backup-title = Gwarediñ ho kerioù-tremen
+cfr-whatsnew-lockwise-backup-body = Bremañ eo gouest da grouiñ gerioù-tremen diogel a c'hallit gwelet eus kement lec'h a gennaskit outañ.
+cfr-whatsnew-lockwise-backup-link-text = Gweredekaat ar gwaredoù
+cfr-whatsnew-lockwise-take-title = Kemerit ho kerioù-tremen ganeoc'h
+cfr-whatsnew-lockwise-take-body = Gant arload hezoug { -lockwise-brand-short-name } e c'hallit gwelout ho kerioù-tremen gwaredet adalek forzh pe lec'h.
+cfr-whatsnew-lockwise-take-link-text = Kaout an arload
+
+## Bookmark Sync
+
+cfr-doorhanger-sync-bookmarks-header = Kaout ar sined-mañ war ho pellgomz
+cfr-doorhanger-sync-bookmarks-body = Tapit ho sinedoù, gerioù-tremen roll istor ha muioc'h c'hoazh e pep lec'h ma 'z oc'h kennasket ouzh { -brand-product-name }.
+cfr-doorhanger-sync-bookmarks-ok-button = Gweredekaat { -sync-brand-short-name }
+    .accesskey = G
+
+## Login Sync
+
+cfr-doorhanger-sync-logins-header = Na zisoñjit ket ho ker-tremen ken
+cfr-doorhanger-sync-logins-body = Kadavit ha goubredit ho kerioù-tremen war ho holl drevnadoù.
+cfr-doorhanger-sync-logins-ok-button = Gweredekaat { -sync-brand-short-name }
+    .accesskey = G
+
+## Send Tab
+
+cfr-doorhanger-send-tab-header = Lennit an dra-se pa fell deoc'h
+cfr-doorhanger-send-tab-recipe-header = Kasit ar rekipe-mañ er gegin
+cfr-doorhanger-send-tab-body = Gant "Kas an ivinell" e c'hallit rannañ an ere-mañ d'ho pellgomz pe forzh pelec'h mard hoc'h kennasket ouzh { -brand-product-name }.
+cfr-doorhanger-send-tab-ok-button = Esaeit da gas an ivinell
+    .accesskey = E
+
+## Firefox Send
+
+cfr-doorhanger-firefox-send-header = Rannit ar restr PDF-mañ en un doare diogel
+cfr-doorhanger-firefox-send-body = Mirit ho teulioù kizidik da vezañ spiet gant an enrinegañ penn-ouzh-penn hag un ere a vo dilamet ur wech ma vo echu ganeoc'h.
+cfr-doorhanger-firefox-send-ok-button = Esaeit { -send-brand-name }
+    .accesskey = E
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-ok-button = Gwelout ar gwarezioù
+    .accesskey = G
+cfr-doorhanger-socialtracking-close-button = Serriñ
+    .accesskey = S
+cfr-doorhanger-socialtracking-heading = { -brand-short-name } en deus harzhet ur rouedad kevredadel d'hoc'h heuliañ amañ
+cfr-doorhanger-socialtracking-description = Pouezus eo ho puhez prevez. { -brand-short-name } a stank an heulierien media kevredadel boutin evit bevenniñ ar c'hementad a roadennoù a c'hallont dastum diwar-benn ar pezh a rit enlinenn.
+cfr-doorhanger-fingerprinters-heading = Stanket eo bet un dinoerien roudoù niverel gant { -brand-short-name } war ar bajenn-mañ
+cfr-doorhanger-fingerprinters-description = Pouezus eo ho puhez prevez. { -brand-short-name } a stank an dinoerien roudoù niverel, a zastum titouroù a c'hall servij da adanavezout ac'hanoc'h hag heuliañ ac'hanoc'h.
+cfr-doorhanger-cryptominers-heading = { -brand-short-name } en deus stanket ur c'hriptogleuzier war ar bajenn-mañ
+cfr-doorhanger-cryptominers-description = Pouezus eo ho puhez prevez. { -brand-short-name } a stank kriptogleuzierien, a c'hall implij galloud jediñ ho reizhiad evit mengleuziañ arc'hant niverel.

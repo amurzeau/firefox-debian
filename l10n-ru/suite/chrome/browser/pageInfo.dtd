@@ -24,6 +24,7 @@
 
 <!ENTITY  generalTab            "Основная">
 <!ENTITY  generalTab.accesskey  "а">
+<!ENTITY  generalTitle          "Заголовок:">
 <!ENTITY  generalURL            "Адрес:">
 <!ENTITY  generalType           "Тип:">
 <!ENTITY  generalMode           "Тип визуализации:">
@@ -62,6 +63,8 @@
 <!ENTITY  mediaTab.accesskey    "л">
 <!ENTITY  mediaURL              "Адрес:">
 <!ENTITY  mediaAlt              "Альтернативный текст:">
+<!ENTITY  mediaLocation         "Расположение:">
+<!ENTITY  mediaText             "Связанный текст:">
 <!ENTITY  mediaAltHeader        "Альтернативный текст">
 <!ENTITY  mediaAddress          "Адрес">
 <!ENTITY  mediaType             "Тип">
@@ -70,6 +73,7 @@
 <!ENTITY  mediaDimensions       "Указанные размеры:">
 <!ENTITY  mediaPhysDimensions   "Реальные размеры:">
 <!ENTITY  mediaTitle            "Описание:">
+<!ENTITY  mediaDimension        "Размеры:">
 <!ENTITY  mediaLongdesc         "Длинное описание:">
 <!ENTITY  mediaBlockImage.accesskey "л">
 <!ENTITY  mediaSaveAs           "Сохранить как…">
@@ -109,6 +113,8 @@
 <!ENTITY  securityView.identity.owner    "Владелец:">
 <!ENTITY  securityView.identity.domain   "Веб-сайт:">
 <!ENTITY  securityView.identity.verifier "Подтверждено:">
+
+<!ENTITY  securityView.identity.validity "Действителен по:">
 
 <!ENTITY  securityView.privacy.header                   "Приватность и История">
 <!ENTITY  securityView.privacy.history                  "Посещал ли я этот веб-сайт до сегодняшнего дня?">

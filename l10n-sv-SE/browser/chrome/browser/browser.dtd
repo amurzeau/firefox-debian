@@ -76,12 +76,21 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY menubarCmd.label "Menyfältet">
 <!ENTITY menubarCmd.accesskey "M">
 <!ENTITY navbarCmd.label "Navigeringsfältet">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY navbar.accessibleLabel "Navigering">
 <!ENTITY personalbarCmd.label "Bokmärkesfältet">
 <!ENTITY personalbarCmd.accesskey "B">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY personalbar.accessibleLabel "Bokmärken">
 <!ENTITY bookmarksToolbarItem.label "Bokmärkesfältsposter">
 
 <!ENTITY pageSourceCmd.label "Källkod">
 <!ENTITY pageSourceCmd.accesskey "ä">
+
 <!ENTITY pageSourceCmd.commandkey "u">
 <!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
 Option+Command keyboard shortcut letter that Safari and Chrome use for "View
@@ -92,6 +101,7 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 
 <!ENTITY pageInfoCmd.label "Sidinfo">
 <!ENTITY pageInfoCmd.accesskey "d">
+
 <!ENTITY pageInfoCmd.commandkey "i">
 <!ENTITY ldbCmd.label "Felsök layout">
 <!ENTITY ldbCmd.accesskey "e">
@@ -117,6 +127,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaUnverified.label "Verifiera ditt konto">
 
 
+<!ENTITY togglePictureInPicture.key2 "}">
+<!ENTITY togglePictureInPicture.key "]"> <!-- } is above this key on many keyboards -->
+
 <!ENTITY fullScreenMinimize.tooltip "Minimera">
 <!ENTITY fullScreenRestore.tooltip "Återställ">
 <!ENTITY fullScreenClose.tooltip "Stäng">
@@ -138,7 +151,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.unverified.button.label "Öppna &syncBrand.shortName.label; inställningar…">
 
 <!ENTITY pictureInPictureHideToggle.label "Dölj Picture-in-picture-väljaren">
-<!ENTITY pictureInPictureHideToggle.accesskey "H">
+<!ENTITY pictureInPictureHideToggle.accesskey "D">
 
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
      for the Firefox Account toolbar menu screen. The `Signed in as` text is
@@ -146,13 +159,24 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.menu.signedInAs.label "Inloggad som">
 <!ENTITY fxa.menu.manageAccount.label "Hantera konto…">
 <!ENTITY fxa.menu.syncSettings.label "&syncBrand.shortName.label; inställningar…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbar menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.syncSettings2.label "&syncBrand.shortName.label; inställningar">
 <!ENTITY fxa.menu.connectAnotherDevice2.label "Ansluta en annan enhet…">
 <!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
 <!ENTITY fxa.menu.signin.label "Logga in på &brandProductName;">
 <!ENTITY fxa.menu.turnOnSync.label "Slå på &syncBrand.shortName.label;">
-<!ENTITY fxa.menu.account.label "Konto">
 <!ENTITY fxa.menu.firefoxServices.label "&brandProductName; Tjänster">
+
+<!ENTITY fxa.menu.account.label "Konto">
+<!ENTITY fxa.menu.settings.label "Inställningar">
+<!ENTITY fxa.menu.accountSettings.label "Kontoinställningar">
+<!ENTITY fxa.menu.signOut.label "Logga ut…">
+<!ENTITY fxa.menu.deviceSettings.label "Enhetsinställningar">
+<!ENTITY fxa.menu.setupSync.label "Konfigurera &syncBrand.shortName.label;…">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
      for the Firefox Account toolbar menu screen.  -->
@@ -195,6 +219,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY bookmarksMenu.label "Bokmärken">
 <!ENTITY bookmarksMenu.accesskey "B">
+
 <!ENTITY bookmarkThisPageCmd.label "Bokmärk denna sida">
 <!ENTITY editThisBookmarkCmd.label "Redigera bokmärket">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
@@ -236,6 +261,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Hantera plugins som används">
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "Ändra om du kan ta emot meddelanden från webbplatsen">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Lagra data i beständig lagring">
+
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Webbläsaren är fjärrstyrd">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Öppna panel för webbautentisiering">
 <!ENTITY urlbar.storageAccessAnchor.tooltip               "Öppna behörighetspanelen för surfaktivitet">
@@ -249,6 +275,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Hantera sidaöversättning">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Hantera användningen av DRM-programvara">
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "Öppna MIDI-panelen">
+
+<!ENTITY urlbar.permissionsGranted.tooltip       "Du har beviljat denna webbplats ytterligare behörigheter.">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Du har blockerat din kamera för denna webbsida.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Du har blockerat din mikrofon för denna webbsida.">
@@ -419,8 +447,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Vill du se dina flikar från andra enheter här?">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Öppna synkroniseringsinställningar">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Logga in för att se en lista med flikar från dina andra enheter.">
+<!ENTITY appMenuRemoteTabs.welcome.label "Se en lista med flikar från dina andra enheter.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Ditt konto behöver verifieras.">
 <!ENTITY appMenuRemoteTabs.signin.label "Logga in till Sync">
+<!ENTITY appMenuRemoteTabs.signintosync.label "Logga in till &syncBrand.shortName.label;…">
+<!ENTITY appMenuRemoteTabs.turnonsync.label "Slå på &syncBrand.shortName.label;…">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Hantera enheter…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Visa sidofältet Synkade flikar">
 <!ENTITY appMenuRemoteTabs.hidesidebar.label "Dölj sidofältet Synkade flikar">
@@ -508,6 +539,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      This is set as the aria-label attribute for the search input box in the
      in-content search UI, to be used by screen readers. -->
 <!ENTITY contentSearchInput.label     "Sök fråga">
+
 <!ENTITY contentSearchSubmit.tooltip  "Skicka sökning">
 
 <!-- LOCALIZATION NOTE (searchInput.placeholder):
@@ -812,13 +844,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.connection "Anslutning">
 <!ENTITY identity.connectionSecure "Säker anslutning">
-
-<!-- LOCALIZATION NOTE (identity.securityView.label2)
-     This is the header of the security subview in the Site Identity panel. -->
-<!ENTITY identity.securityView.label2 "Anslutningssäkerhet">
-
-<!ENTITY identity.connectionSecure2 "Anslutningen är säker">
 <!ENTITY identity.connectionNotSecure "Anslutningen är inte säker">
+
+<!ENTITY identity.connectionSecure3 "Anslutningen säker">
+<!ENTITY identity.connectionNotSecure2 "Anslutningen är inte säker">
 <!ENTITY identity.connectionNotSecureSecurityView "Du är inte säkert ansluten till den här webbplatsen.">
 <!ENTITY identity.connectionFile "Den här sidan är lagrad på din dator.">
 <!ENTITY identity.connectionVerified2 "Du är säkert ansluten till denna webbplats, som tillhör:">
@@ -828,7 +857,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.insecureLoginForms2 "Inloggningar du anger på denna sida kan äventyras">
 <!ENTITY identity.customRoot "Anslutning verifierad av en certifikatutgivare som inte känns igen av Mozilla.">
 
-<!ENTITY identity.evOwnerLabel "Webbplats som ägs av:">
+<!ENTITY identity.evOwnerLabel2 "Certifikat utfärdat till:">
 
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "&brandShortName; har blockerat några osäkra komponenter på sidan.">
@@ -864,8 +893,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.permissions "Rättigheter">
 
-<!-- LOCALIZATION NOTE (identity.permissions2): "set" as in "configured for this website" -->
-<!ENTITY identity.permissions2 "Rättigheter angivna">
+<!ENTITY identity.permissions3 "Behörigheter">
 <!ENTITY identity.permissionsEmpty "Du har inte beviljat denna webbplats några särskilda rättigheter.">
 <!ENTITY identity.permissionsReloadHint "Du kan behöva ladda om sidan för att ändringarna ska verkställas.">
 <!ENTITY identity.permissionsPreferences.tooltip "Öppna behörighetsinställningar">
@@ -878,7 +906,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      protections.etpMoreInfo.label: The text a screen reader speaks when focused on the info button. -->
 <!ENTITY protections.etpMoreInfo.label "Mer information om Förbättrat spårningsskydd">
 <!ENTITY protections.settings.label "Skyddsinställningar">
-<!ENTITY protections.report.label "Visa fullständig rapport">
+<!ENTITY protections.showreport.label "Visa rapport">
 <!-- LOCALIZATION NOTE:
      protections.siteNotWorking.label: The link to be clicked to open the sub-panel view
      protections.siteNotWorkingView.title: The heading/title of the sub-panel view -->
@@ -895,26 +923,35 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY protections.siteNotWorkingView.issueList.payments "Betalningar">
 <!ENTITY protections.siteNotWorkingView.issueList.comments "Kommentarer">
 <!ENTITY protections.siteNotWorkingView.issueList.videos "Videor">
-<!ENTITY protections.siteNotWorkingView.siteStillBroken.label "Fungerar webbplatsen fortfarande inte efter att du har stängt av skydd?">
 <!ENTITY protections.siteNotWorkingView.sendReport.label "Skicka in en rapport">
 
-<!ENTITY protections.blocking.label "Blockerar">
-<!ENTITY protections.notBlocking.label "Blockerar inte">
+<!-- LOCALIZATION NOTE (protections.blocking2.label, protections.notBlocking2.label, protections.notFound.label):
+     In the protections panel, Content Blocking category items are in three sections:
+     "Blocked" for categories being blocked in the current page,
+     "Allowed" for categories detected but not blocked in the current page, and
+     "None Detected" for categories not detected in the current page.
+     These strings are used in the header labels of each of these sections. -->
+<!ENTITY protections.blocking2.label "Blockerad">
+<!ENTITY protections.notBlocking2.label "Tillåten">
+<!ENTITY protections.notFound.label "Ingen upptäckt">
+<!-- LOCALIZATION NOTE (protections.notBlocking.why.label, protections.notBlocking.why.etp*.tooltip):
+     The "Allowed" header also includes a "Why?" link that, when hovered, shows
+     a tooltip explaining why these items were not blocked in the page. -->
 <!ENTITY protections.notBlocking.why.label "Varför?">
 <!ENTITY protections.notBlocking.why.etpOn.tooltip "Blockering av dessa kan förstöra delar av vissa webbplatser. Utan trackers fungerar kanske inte vissa knappar, formulär och inloggningsfält.">
 <!ENTITY protections.notBlocking.why.etpOff.tooltip "Genom att stänga av skydd tillåts alla trackers på denna webbplats. Det kan också förbättra vissa webbplatsfunktioner.">
 <!ENTITY protections.socialMediaTrackers.label "Sociala trackers">
 <!ENTITY protections.crossSiteTrackingCookies.label "Globala spårningskakor">
-<!ENTITY protections.trackingContent.label "Spårning av innehåll">
+<!ENTITY protections.trackingContent.label "Spårningsinnehåll">
 <!ENTITY protections.fingerprinters.label "Fingerprinters">
 <!ENTITY protections.cryptominers.label "Cryptominers">
 <!ENTITY protections.noTrackersFound.description "Inga kända trackers för &brandShortName; upptäcktes på den här sidan.">
 
 <!ENTITY protections.crossSiteTrackingCookies.description "Dessa kakor följer dig från sida till sida för att samla in data om vad du gör online. De anges av tredje part som annonsörer och analysföretag.">
-<!ENTITY protections.cryptominers.description "Cryptominers använder ditt systems datakraft för att mina digitala pengar. Cryptomining-skript tömmer ditt batteri, slöar ner din dator och kan öka energiräkningen.">
+<!ENTITY protections.cryptominers.description "Cryptominers använder ditt systems datakraft för att utvinna digitala pengar. Cryptomining-skript tömmer ditt batteri, slöar ner din dator och kan öka energiräkningen.">
 <!ENTITY protections.fingerprinters.description "Fingerprinters samlar inställningar från din webbläsare och dator för att skapa en profil av dig. Med det här digitala fingeravtrycket kan de spåra dig på olika webbplatser.">
-<!ENTITY protections.trackingContent.description "Webbplatser kan ladda externa annonser, videor och annat innehåll som innehåller spårningskod. Blockering av spårningsinnehåll kan hjälpa webbplatser att ladda snabbare, men vissa knappar, formulär och inloggningsfält kanske inte fungerar.">
-<!ENTITY protections.socialMediaTrackers.description "Sociala nätverk placerar trackers på andra webbplatser för att följa vad du gör, ser och tittar på online. Detta gör att företag i sociala medier kan lära sig mer om dig utöver vad du delar i dina sociala medieprofiler.">
+<!ENTITY protections.trackingContent2.description "Webbplatser kan ladda externa annonser, videor och annat innehåll som innehåller spårningskod. Blockering av spårningsinnehåll kan hjälpa webbplatser att ladda snabbare, men vissa knappar, formulär och inloggningsfält kanske inte fungerar.">
+<!ENTITY protections.socialMediaTrackers.description "Sociala nätverk placerar trackers på andra webbplatser för att följa vad du gör, ser och tittar på online. Detta gör att sociala medieföretag kan lära sig mer om dig utöver vad du delar i dina sociala medieprofiler.">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
@@ -953,18 +990,18 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection3.label "Trackers">
 
 <!ENTITY contentBlocking.manageSettings.label "Hantera innehållsblockering">
-
-<!ENTITY contentBlocking.trackingProtection4.label "Spårning av innehåll">
-
-<!ENTITY contentBlocking.manageSettings2.label "Hantera skyddsinställningar">
 <!ENTITY contentBlocking.manageSettings.accesskey "H">
 
 <!ENTITY contentBlocking.trackersView.label "Trackers">
-
 <!ENTITY contentBlocking.trackersView.strictInfo.label "För att blockera alla trackers, sätt innehållsblockering till “Strikt”.">
 
 <!ENTITY contentBlocking.cookies.label "Kakor">
 <!ENTITY contentBlocking.cookiesView.label "Kakor och webbplatsdata">
+
+<!ENTITY contentBlocking.trackingProtection4.label "Spårningsinnehåll">
+
+<!ENTITY contentBlocking.manageSettings2.label "Hantera skyddsinställningar">
+<!ENTITY contentBlocking.manageSettings2.accesskey "H">
 
 <!ENTITY contentBlocking.socialblock.label "Sociala trackers">
 
@@ -980,6 +1017,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView.label "Rapportera problem">
 <!ENTITY contentBlocking.breakageReportView2.description "Innehållsblockering kan orsaka problem med vissa webbplatser. När du rapporterar problem hjälper du till att göra &brandShortName; bättre för alla. (Detta skickar en URL samt information om dina webbläsarinställningar till Mozilla.)">
 <!ENTITY contentBlocking.breakageReportView.learnMore "Läs mer">
+
 <!ENTITY contentBlocking.breakageReportView.title "Rapportera en trasig webbplats">
 <!ENTITY contentBlocking.breakageReportView3.description "Blockering av vissa trackers kan orsaka problem med vissa webbplatser. Att rapportera dessa problem hjälper till att göra &brandShortName; bättre för alla. Genom att skicka in den här rapporten skickas en URL och information om dina webbläsarinställningar till Mozilla.">
 <!ENTITY contentBlocking.breakageReportView2.learnMore "Läs mer">
@@ -1035,6 +1073,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY newTabControlled.disableButton.accesskey "n">
 
 <!ENTITY homepageControlled.message "Ett tillägg har bytt vad du ser som din startsida. Du kan återställa till din inställning om du inte önskar denna ändring.">
+
 <!ENTITY homepageControlled.header.message "Din startsida har ändrats.">
 <!ENTITY homepageControlled.keepButton.label "Behåll ändringar">
 <!ENTITY homepageControlled.keepButton.accesskey "B">

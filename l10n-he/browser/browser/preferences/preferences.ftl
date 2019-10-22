@@ -134,7 +134,7 @@ startup-restore-previous-session =
 startup-restore-warn-on-quit =
     .label = הצגת אזהרה בעת סגירת הדפדפן
 disable-extension =
-    .label = נטרול הרחבה
+    .label = השבתת הרחבה
 tabs-group-header = לשוניות
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab מחליף את הלשוניות לפי סדר השימוש בהן
@@ -193,7 +193,7 @@ default-font = גופן ברירת מחדל
 default-font-size = גודל
     .accesskey = ג
 advanced-fonts =
-    .label = מתקדם...
+    .label = מתקדם…
     .accesskey = מ
 colors-settings =
     .label = צבעים…
@@ -253,6 +253,62 @@ applications-type-column =
 applications-action-column =
     .label = פעולה
     .accesskey = פ
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = קובץ { $extension }‏
+applications-action-save =
+    .label = שמירת קובץ
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = שימוש ב־{ $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = שימוש ב־{ $app-name } (ברירת מחדל)
+applications-use-other =
+    .label = שימוש ביישום אחר…
+applications-select-helper = בחירת יישום מסייע
+applications-manage-app =
+    .label = פרטי יישום…
+applications-always-ask =
+    .label = לשאול תמיד
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = השתמש בתוסף { $plugin-name } (בתוך { -brand-short-name })
+applications-preview-inapp =
+    .label = תצוגה מקדימה ב־{ -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = תוכן ניהול זכויות דיגיטלי (DRM)
 play-drm-content =
     .label = הפעלת תוכן מוגן DRM
@@ -262,7 +318,7 @@ update-application-title = עדכוני { -brand-short-name }
 update-application-description = כדאי להשאיר את { -brand-short-name } עדכני לטובת ביצועים, יציבות ואבטחה ברמה הטובה ביותר.
 update-application-version = גרסה { $version } <a data-l10n-name="learn-more">מה חדש</a>
 update-history =
-    .label = הצגת היסטורית עדכונים…
+    .label = הצגת היסטוריית עדכונים…
     .accesskey = ה
 update-application-allow-description = לאפשר ל־{ -brand-short-name }
 update-application-auto =
@@ -339,6 +395,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = חיפוש מלל עם תחילת הקלדה
     .accesskey = מ
+browsing-picture-in-picture-toggle-enabled =
+    .label = הפעלת בקרי וידאו של תמונה בתוך תמונה
+    .accesskey = ת
+browsing-picture-in-picture-learn-more = מידע נוסף
 browsing-cfr-recommendations =
     .label = קבלת המלצות על הרחבות תוך כדי גלישה
     .accesskey = ק
@@ -445,6 +505,12 @@ search-bar-shown =
     .label = הוספת שורת החיפוש לסרגל הכלים
 search-engine-default-header = מנוע חיפוש ברירת מחדל
 search-engine-default-desc = בחירת מנוע חיפוש ברירת המחדל לשימוש בסרגל הכתובת ובסרגל החיפוש.
+search-engine-default-private-desc = בחירת מנוע חיפוש ברירת המחדל לשימוש בחלונות פרטיים.
+search-separate-default-engine =
+    .label = שימוש במנוע חיפוש זה בחלונות פרטיים
+    .accesskey = ש
+search-suggestions-header = הצעות חיפוש
+search-suggestions-desc = בחירת האופן שבו הצעות ממנועי חיפוש מוצגות.
 search-suggestions-option =
     .label = הצגת המלצות חיפוש
     .accesskey = מ
@@ -457,7 +523,8 @@ search-show-suggestions-url-bar-option =
 # "ahead" refers to location (appearing most proximate to), not time
 # (appearing before).
 search-show-suggestions-above-history-option =
-    .label = הצגת הצעות חיפוש לפני היסטורית הגלישה בתוצאות שורת הכתובת
+    .label = הצגת הצעות חיפוש לפני היסטוריית הגלישה בתוצאות שורת הכתובת
+suggestions-addressbar-settings = שינוי העדפות עבור היסטוריית גלישה, סימניות והצעות לשוניות
 search-suggestions-cant-show = הצעות חיפוש לא יופיעו בתוצאות סרגל המיקום מכיוון שהגדרת ש־{ -brand-short-name } לעולם לא לזכור היסטוריה.
 search-one-click-header = מנועי חיפוש בלחיצה אחת
 search-one-click-desc = בחירת מנועי חיפוש חלופיים שיופיעו מתחת לסרגל הכתובת וסרגל החיפוש עם תחילת ההקלדה של מילות מפתח.
@@ -494,6 +561,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = קחו את הרשת עמכם
 sync-signedout-description = סנכרון הסימניות, ההיסטוריה, הלשוניות, הססמאות, ההרחבות, וההעדפות בין כל מכשיריך.
 sync-signedout-account-title = התחברות עם { -fxaccount-brand-name }
@@ -514,9 +585,15 @@ sync-mobile-promo = הורידו את Firefox עבור <img data-l10n-name="and
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = שינוי תמונת פרופיל
 sync-disconnect =
+    .label = התנתקות…
+    .accesskey = ה
+sync-sign-out =
     .label = התנתקות…
     .accesskey = ה
 sync-manage-account = ניהול חשבון
@@ -534,6 +611,48 @@ sync-sign-in =
     .accesskey = כ
 sync-signedin-settings-header = הגדרות סנכרון
 sync-signedin-settings-desc = נא לבחור את הפריטים שיסונכרנו למכשירים שלך באמצעות { -brand-short-name }
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = סנכרון: פעיל
+prefs-syncing-off = סנכרון: כבוי
+prefs-sync-setup =
+    .label = הגדרת { -sync-brand-short-name }…
+    .accesskey = ג
+prefs-sync-offer-setup-label = סנכרון הסימניות, ההיסטוריה, הלשוניות, הססמאות, ההרחבות, וההעדפות בין כל המכשירים שלך.
+prefs-sync-now =
+    .labelnotsyncing = סנכרון כעת
+    .accesskeynotsyncing = ס
+    .labelsyncing = בתהליך סנכרון…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = כרגע בסנכרון הפריטים הבאים:
+sync-currently-syncing-bookmarks = סימניות
+sync-currently-syncing-history = היסטוריה
+sync-currently-syncing-tabs = לשוניות פתוחות
+sync-currently-syncing-logins-passwords = כניסות וססמאות
+sync-currently-syncing-addresses = כתובות
+sync-currently-syncing-creditcards = כרטיסי אשראי
+sync-currently-syncing-addons = תוספות
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] אפשרויות
+       *[other] העדפות
+    }
+sync-change-options =
+    .label = שינוי…
+    .accesskey = ש
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = בחירת הפריטים לסנכרון
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = שמירת השינויים
+    .buttonaccesskeyaccept = ש
+    .buttonlabelextra2 = התנתקות…
+    .buttonaccesskeyextra2 = ה
 sync-engine-bookmarks =
     .label = סימניות
     .accesskey = ס
@@ -546,7 +665,11 @@ sync-engine-tabs =
     .accesskey = ל
 sync-engine-logins =
     .label = כניסות
-    .tooltiptext = שמות משתמשים וסיסמאות ששמרת
+    .tooltiptext = שמות משתמשים וססמאות ששמרת
+    .accesskey = כ
+sync-engine-logins-passwords =
+    .label = כניסות וססמאות
+    .tooltiptext = שמות משתמשים וססמאות ששמרת
     .accesskey = כ
 sync-engine-addresses =
     .label = כתובות
@@ -568,6 +691,9 @@ sync-engine-prefs =
         }
     .tooltiptext = הגדרות כלליות, פרטיות ואבטחה ששינית
     .accesskey = ת
+
+## The device name controls.
+
 sync-device-name-header = שם המכשיר
 sync-device-name-change =
     .label = שינוי שם מכשיר…
@@ -581,7 +707,7 @@ sync-device-name-save =
 sync-connect-another-device = חיבור מכשיר נוסף
 sync-manage-devices = ניהול מכשירים
 sync-fxa-begin-pairing = צימוד מכשיר
-sync-tos-link = תנאי שימוש
+sync-tos-link = תנאי השירות
 sync-fxa-privacy-notice = הצהרת פרטיות
 
 ## Privacy Section
@@ -597,6 +723,7 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = חריגות…
     .accesskey = ר
+forms-breach-alerts-learn-more-link = מידע נוסף
 forms-fill-logins-and-passwords =
     .label = מילוי אוטומטי של כניסות וססמאות
     .accesskey = מ
@@ -609,6 +736,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = שינוי ססמה ראשית…
     .accesskey = נ
+forms-master-pw-fips-title = הינך כרגע במצב FIPS. ‏FIPS דורש ססמה ראשית לא־ריקה.
+forms-master-pw-fips-desc = שינוי הססמה נכשל
 
 ## Privacy Section - History
 
@@ -630,16 +759,16 @@ history-remember-option-never =
     .label = לעולם לא ישמור היסטוריה
 history-remember-option-custom =
     .label = ישתמש בהגדרות מותאמות אישית להיסטוריה
-history-remember-description = ‏{ -brand-short-name } יזכור את היסטורית הגלישה, ההורדות, הטפסים והחיפוש שלך.
+history-remember-description = ‏{ -brand-short-name } יזכור את היסטוריית הגלישה, ההורדות, הטפסים והחיפוש שלך.
 history-dontremember-description = { -brand-short-name } ישתמש באותן ההגדרות לגלישה פרטית, ולא יזכור היסטוריה כלשהי במהלך הגלישה שלך ברשת.
 history-private-browsing-permanent =
     .label = שימוש תמידי במצב גלישה פרטית
     .accesskey = ה
 history-remember-browser-option =
-    .label = שמירת היסטורית גלישה והורדות
+    .label = שמירת היסטוריית גלישה והורדות
     .accesskey = ש
 history-remember-search-option =
-    .label = שמירת חיפושים והיסטורית טפסים
+    .label = שמירת חיפושים והיסטוריית טפסים
     .accesskey = ט
 history-clear-on-close-option =
     .label = מחיקת היסטוריה כאשר { -brand-short-name } נסגר
@@ -712,6 +841,7 @@ addressbar-suggestions-settings = שינוי העדפות של הצעות מנו
 ## Privacy Section - Content Blocking
 
 content-blocking-header = חסימת תוכן
+content-blocking-section-top-level-description = רכיבי מעקב עוקבים אחריך ברשת כדי לאסוף מידע על הרגלי הגלישה ותחומי העניין שלך. { -brand-short-name } חוסם הרבה מרכיבי המעקב האלו, לרבות תסריטים זדוניים אחרים.
 content-blocking-learn-more = מידע נוסף
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -729,8 +859,26 @@ content-blocking-strict-description = הגנה חזקה יותר, שעשויה �
 content-blocking-custom-desc = בחירת הפריטים שייחסמו.
 content-blocking-private-trackers = רכיבי מעקב מוכרים בחלונות פרטיים בלבד
 content-blocking-third-party-cookies = עוגיות מעקב צד־שלישי
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = רגיל
+    .accesskey = ר
+enhanced-tracking-protection-setting-strict =
+    .label = מחמיר
+    .accesskey = מ
+enhanced-tracking-protection-setting-custom =
+    .label = התאמה אישית
+    .accesskey = ה
+
+
+
 content-blocking-etp-standard-desc = מאוזן בין הגנה לביצועים. דפים ייטענו כרגיל.
 content-blocking-etp-strict-desc = הגנה חזקה יותר, אך עשויה לשבש פעילות של אתרים או תוכן.
+content-blocking-etp-custom-desc = בחירה באילו רכיבי מעקב ותסריטים יש לחסום.
 content-blocking-private-windows = תוכן מעקב בחלונות פרטיים
 content-blocking-cross-site-tracking-cookies = עוגיות מעקב חוצות אתרים
 content-blocking-social-media-trackers = רכיבי מעקב של מדיה חברתית

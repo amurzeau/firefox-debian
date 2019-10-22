@@ -29,6 +29,7 @@ search-input-box =
             [windows] Нађи у опцијама
            *[other] Нађи у поставкама
         }
+managed-notice = Вашим прегледачем управља ваша организација.
 pane-general-title = Опште
 category-general =
     .tooltiptext = { pane-general-title }
@@ -255,6 +256,62 @@ applications-type-column =
 applications-action-column =
     .label = Дејство
     .accesskey = Д
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = Датотека { $extension }
+applications-action-save =
+    .label = Сними датотеку
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Користи { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Користи { $app-name } (подразумевано)
+applications-use-other =
+    .label = Користи друго…
+applications-select-helper = Избор помоћног програма
+applications-manage-app =
+    .label = Детаљи о апликацији…
+applications-always-ask =
+    .label = Увек питај
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Користи { $plugin-name } (за { -brand-short-name })
+applications-preview-inapp =
+    .label = За преглед: { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 drm-content-header = Садржај са дигиталним правима (DRM)
 play-drm-content =
     .label = Пуштај DRM садржај
@@ -287,6 +344,21 @@ update-pref-write-failure-title = Неуспех при упису
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Нисам успео да сачувам поставку. Нисам могао да пишем у датотеку: { $path }
+update-setting-write-failure-title = Грешка при чувању поставки за ажурирање
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    Програм { -brand-short-name } је наишао на грешку и није сачувао ову промену. Имајте на уму да подешавање ове поставке ажурирања захтева дозволу за писање у датотеку наведену испод. Ви или администратор система можете да решите грешку тако што ћете корисничкој групи дати пуну контролу над овом датотеком.
+    
+    Нисам могао да пишем унутар датотеке: { $path }
+update-in-progress-title = Ажурирање у току
+update-in-progress-message = Желите ли да { -brand-short-name } настави са ажурирањем?
+update-in-progress-ok-button = &Одбаци
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Настави
 
 ## General Section - Performance
 
@@ -585,6 +657,12 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = Изузеци
     .accesskey = е
+forms-generate-passwords =
+    .label = Предлажи и стварај јаке лозинке
+    .accesskey = а
+forms-fill-logins-and-passwords =
+    .label = Самостално попуњавај пријаве и лозинке
+    .accesskey = и
 forms-saved-logins =
     .label = Сачуване пријаве
     .accesskey = С
@@ -594,6 +672,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Промени главну лозинку…
     .accesskey = П
+forms-master-pw-fips-title = У овом тренутку налазите се у FIPS режиму. У режиму FIPS није дозвољено користити празну главну лозинку.
+forms-master-pw-fips-desc = Грешка приликом промене лозинке
 
 ## Privacy Section - History
 
@@ -661,6 +741,10 @@ sitedata-block-desc = Тип блокираних колачића
     .accesskey = Т
 sitedata-option-block-trackers =
     .label = Пратиоци треће стране
+sitedata-option-block-cross-site-trackers =
+    .label = Виешстранични пратиоци
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Вишестранични пратиоци и пратиоци са друштвених мрежа
 sitedata-option-block-unvisited =
     .label = Колачићи са непосећених веб сајтова
 sitedata-option-block-all-third-party =
@@ -696,6 +780,7 @@ addressbar-suggestions-settings = Измени поставке предлога
 
 content-blocking-header = Блокирање садржаја
 content-blocking-section-description = Заштитите своју приватност док прегледате интернет. Блокирајте невидљиви садржај који прати веб странице које посетите и који вас профилише. Блокирањем неких од ових садржаја странице се брже учитавају.
+content-blocking-enhanced-tracking-protection = Побољшана заштита од праћења
 content-blocking-learn-more = Сазнајте више
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -713,13 +798,39 @@ content-blocking-strict-description = Снажнија заштита, може 
 content-blocking-custom-desc = Изаберите шта треба блокирати.
 content-blocking-private-trackers = Познате пратиоце само у приватним прозорима
 content-blocking-third-party-cookies = Колачиће за праћење трећих страна
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Обично
+    .accesskey = б
+enhanced-tracking-protection-setting-strict =
+    .label = Строго
+    .accesskey = р
+enhanced-tracking-protection-setting-custom =
+    .label = Прилагођено
+    .accesskey = г
+
+##
+
+content-blocking-etp-custom-desc = Изаберите које пратиоце и скрипте треба блокирати.
+content-blocking-private-windows = Садржај који прати у приватним прозорима
+content-blocking-cross-site-tracking-cookies = Вишестранични колачићи-пратиоци
+content-blocking-social-media-trackers = Пратиоци с друштвених мрежа
+content-blocking-all-cookies = Сви колачићи
+content-blocking-unvisited-cookies = Колачићи са непосећених страница
 content-blocking-all-windows-trackers = Познате пратиоце у свим прозорима
+content-blocking-all-windows-tracking-content = Садржај који прати у свим прозорима
 content-blocking-all-third-party-cookies = Све колачиће треће стране
 content-blocking-cryptominers = Крипто-рударе
 content-blocking-fingerprinters = Хватаче отиска
 content-blocking-warning-title = Напомена!
 content-blocking-warning-description = Блокирање садржаја може узроковати сломљене сајтове у неким случајевима. Лако је онемогућити блокирање за сајтове којима верујете.
 content-blocking-learn-how = Сазнајте више
+content-blocking-etp-warning-description = Блокирање пратилаца може узроковати неисправности на неким веб страницама. Поново учитајте страницу са омогућеним пратиоцима да бисте учитали сав садржај.
+content-blocking-warning-learn-how = Научите како
 content-blocking-reload-description = Да бисте применили ове измене, морате поново учитати своје језичке.
 content-blocking-reload-tabs-button =
     .label = Поново учитај све језичке
@@ -727,6 +838,9 @@ content-blocking-reload-tabs-button =
 content-blocking-trackers-label =
     .label = Пратиоци
     .accesskey = т
+content-blocking-tracking-content-label =
+    .label = Праћење садржаја
+    .accesskey = р
 content-blocking-tracking-protection-option-all-windows =
     .label = У свим прозорима
     .accesskey = а
@@ -784,6 +898,10 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = Изузеци...
     .accesskey = И
+permissions-autoplay = Самостално покретање
+permissions-autoplay-settings =
+    .label = Подешавања…
+    .accesskey = д
 permissions-block-popups =
     .label = Блокирај искачуће прозоре
     .accesskey = ч

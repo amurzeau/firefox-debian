@@ -265,6 +265,62 @@ applications-type-column =
 applications-action-column =
     .label = Gweithred
     .accesskey = G
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = Ffeil { $extension }
+applications-action-save =
+    .label = Cadw Ffeil
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Defnyddio { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Defnyddio { $app-name } (rhagosodiad)
+applications-use-other =
+    .label = Defnyddio arall…
+applications-select-helper = Dewis Rhaglen Gynorthwyol
+applications-manage-app =
+    .label = Manylion y Rhaglen…
+applications-always-ask =
+    .label = Gofyn bob tro
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Defnyddio { $plugin-name } (yn { -brand-short-name })
+applications-preview-inapp =
+    .label = Rhagolwg yn { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = Cynnwys Rheoli Hawliau Digidol (DRM)
 play-drm-content =
     .label = Chwarae cynnwys wedi ei reoli gan DRM
@@ -351,6 +407,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Chwilio am destun wrth i mi gychwyn teipio
     .accesskey = d
+browsing-picture-in-picture-toggle-enabled =
+    .label = Galluogi rheolyddion fideo llun-mewn-llun
+    .accesskey = G
+browsing-picture-in-picture-learn-more = Dysgu rhagor
 browsing-cfr-recommendations =
     .label = Argymell estyniadau wrth i chi bori
     .accesskey = A
@@ -461,6 +521,12 @@ search-bar-shown =
     .label = Ychwanegu'r bar chwilio i'r bar offer
 search-engine-default-header = Peiriant Chwilio Rhagosodedig
 search-engine-default-desc = Dewis y peiriant chwilio ragosodedig i'w ddefnyddio yn y bar cyfeiriad a'r bar chwilio.
+search-engine-default-private-desc = Dewis y peiriant chwilio rhagosodedig i'w ddefnyddio mewn Ffenestri Preifat.
+search-separate-default-engine =
+    .label = Defnyddio'r peiriant chwilio hwn mewn Ffenestri Preifat
+    .accesskey = D
+search-suggestions-header = Awgrymiadau Chwilio
+search-suggestions-desc = Dewis sut mae awgrymiadau gan beiriannau chwilio yn ymddangos.
 search-suggestions-option =
     .label = Darparu awgrymiadau chwilio
     .accesskey = c
@@ -474,6 +540,7 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Dangos awgrymiadau chwilio o flaen hanes yng nghanlyniadau'r bar cyfeiriadau
+suggestions-addressbar-settings = Newid dewisiadau ar gyfer hanes pori, nodau tudalen ac awgrymiadau tabiau
 search-suggestions-cant-show = Ni fydd awgrymiadau chwilio'n cael eu dangos yn y bar lleoliad gan eich bod wedi ffurfweddu { -brand-short-name } i byth cofio hanes.
 search-one-click-header = Peiriannau Chwilio Un Clic
 search-one-click-desc = Dewis peiriant chwilio arall sy'n ymddangos o dan y bar cyfeiriad a'r bar chwilio pan fyddwch yn cychwyn allweddair.
@@ -510,6 +577,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Mynd â'ch  Gwe gyda Chi
 sync-signedout-description = Cydweddwch eich nodau tudalen, hanes, tabiau, cyfrineiriau, ychwanegion a dewisiadau ymysg eich dyfeisiau i gyd.
 sync-signedout-account-title = Cysylltwch gyda { -fxaccount-brand-name }
@@ -530,11 +601,17 @@ sync-mobile-promo = Llwytho Firefox i lawr ar gyfer <img data-l10n-name="android
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = Newid llun proffil
 sync-disconnect =
     .label = Datgysylltu…
     .accesskey = D
+sync-sign-out =
+    .label = Allgofnodi…
+    .accesskey = A
 sync-manage-account = Rheoli cyfrif
     .accesskey = R
 sync-signedin-unverified = { $email } wedi ei wirio.
@@ -550,6 +627,45 @@ sync-sign-in =
     .accesskey = M
 sync-signedin-settings-header = Gosodiadau Sync
 sync-signedin-settings-desc = Dewis beth i'w cydweddu ar eich dyfais gan ddefnyddio { -brand-short-name }.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Cydweddu: YMLAEN
+prefs-syncing-off = Cydweddu: DIFFODD
+prefs-sync-setup =
+    .label = Gosod { -sync-brand-short-name }
+    .accesskey = G
+prefs-sync-offer-setup-label = Cydweddwch eich nodau tudalen, hanes, tabiau, cyfrineiriau, ychwanegion a dewisiadau ar draws eich dyfeisiau i gyd.
+prefs-sync-now =
+    .labelnotsyncing = Cydweddu Nawr
+    .accesskeynotsyncing = N
+    .labelsyncing = Cydweddu…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = Rydych wrthi'n cydweddu'r eitemau hyn:
+sync-currently-syncing-bookmarks = Nodau Tudalen
+sync-currently-syncing-history = Hanes
+sync-currently-syncing-tabs = Tabiau agored
+sync-currently-syncing-logins-passwords = Mewngofnodion a chyfrineiriau
+sync-currently-syncing-addresses = Cyfeiriadau
+sync-currently-syncing-creditcards = Cardiau Credyd
+sync-currently-syncing-addons = Ychwanegion
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Dewisiadau
+       *[other] Dewisiadau
+    }
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = Dewis Beth i'w Gydweddu
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Cadw Newidiadau
+    .buttonaccesskeyaccept = N
+    .buttonlabelextra2 = Datgysylltu…
+    .buttonaccesskeyextra2 = D
 sync-engine-bookmarks =
     .label = Nodau Tudalen
     .accesskey = T
@@ -563,6 +679,10 @@ sync-engine-tabs =
 sync-engine-logins =
     .label = Mewngofnodion
     .tooltiptext = Enwau defnyddwyr a chyfrineiriau rydych wedi eu cadw
+    .accesskey = M
+sync-engine-logins-passwords =
+    .label = Mewngofnodion a chyfrineiriau
+    .tooltiptext = Enwau defnyddwyr a chyfrineiriau rydych wedi'u cadw
     .accesskey = M
 sync-engine-addresses =
     .label = Cyfeiriadau
@@ -584,6 +704,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Gosodiadau Cyffredinol, Preifatrwydd a Diogelwch rydych wedi eu newid
     .accesskey = D
+
+## The device name controls.
+
 sync-device-name-header = Enw Dyfais
 sync-device-name-change =
     .label = Newid Enw'r Ddyfais…
@@ -616,6 +739,10 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Awgrymu a chynhyrchu cyfrineiriau cryf
     .accesskey = A
+forms-breach-alerts =
+    .label = Dangos rhybuddion am gyfrineiriau ar gyfer gwefannau sydd wedi' cael tor-data
+    .accesskey = r
+forms-breach-alerts-learn-more-link = Dysgu rhagor
 forms-fill-logins-and-passwords =
     .label = Awtolanw mewngofnodion a chyfrineiriau
     .accesskey = A
@@ -628,6 +755,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Newid y Prif Gyfrinair…
     .accesskey = N
+forms-master-pw-fips-title = Rydych ym modd FIPS. Mae FIPS angen Prif Gyfrinair nad yw'n wag.
+forms-master-pw-fips-desc = Methu Newid eich Cyfrinair
 
 ## Privacy Section - History
 
@@ -733,8 +862,9 @@ addressbar-suggestions-settings = Newid dewisiadau am awgrymiadau peiriannau chw
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Rhwystro Cynnwys
-content-blocking-enhanced-tracking-protection = Diogelwch Uwch Rhag Tracio
 content-blocking-section-description = Diogelwch eich preifatrwydd wrth bori. Rhwystrwch gynnwys cudd sy'n tracio'r gwefannau fyddwch chi'n ymweld â nhw ac sy'n creu proffil ohonoch chi. Gall rwystro peth o'r cynnwys hwn wneud i dudalennau lwytho'n gynt.
+content-blocking-enhanced-tracking-protection = Diogelwch Uwch Rhag Tracio
+content-blocking-section-top-level-description = Mae tracwyr yn eich dilyn ar-lein i gasglu gwybodaeth am eich arferion pori a'ch diddordebau. Mae { -brand-short-name } yn rhwystro llawer o'r tracwyr hyn a sgriptiau maleisus eraill.
 content-blocking-learn-more = Dysgu Rhagor
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -752,7 +882,24 @@ content-blocking-strict-description = Gall amddiffyniad cryfach beri i rai safle
 content-blocking-custom-desc = Dewis beth i'w rhwystro.
 content-blocking-private-trackers = Tracwyr hysbys mewn Ffenestri Preifat yn unig.
 content-blocking-third-party-cookies = Cwcis tracio trydydd parti
-content-blocking-etp-standard-desc = Yn gytbwys ar gyfer diogelwch a pherfformiad. Bydd tudalennau'n llwytho'n arferol.
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Safonol
+    .accesskey = S
+enhanced-tracking-protection-setting-strict =
+    .label = Llym
+    .accesskey = L
+enhanced-tracking-protection-setting-custom =
+    .label = Cyfaddas
+    .accesskey = C
+
+
+
+content-blocking-etp-standard-desc = Cydbwysedd rhwng diogelwch a pherfformiad. Bydd tudalennau'n llwytho fel arfer.
 content-blocking-etp-strict-desc = Diogelwch cryfach, ond gall achosi i rai gwefannau neu gynnwys dorri.
 content-blocking-etp-custom-desc = Dewiswch pa dracwyr a sgriptiau i'w rhwystro.
 content-blocking-private-windows = Tracio cynnwys mewn Ffenestri Preifat
@@ -768,7 +915,7 @@ content-blocking-fingerprinters = Bysbrintwyr
 content-blocking-warning-title = Rhybudd!
 content-blocking-warning-description = Gall rhwystro cynnwys achosi i rai gwefannau dorri. Mae'n hawdd i analluogi rhwystro gwefannau rydych chi'n ymddiried ynddyn nhw.
 content-blocking-learn-how = Dysgu sut
-content-blocking-etp-warning-description = Gall rhwystro tracwyr effeithio ar ymarferoldeb rhai gwefannau. Ail-lwytho tudalen gyda thracwyr i lwytho'r holl gynnwys.
+content-blocking-etp-warning-description = Gall rhwystro tracwyr effeithio ar ymarferoldeb rhai gwefannau. Ail-lwythwch dudalen gyda thracwyr i lwytho'r holl gynnwys.
 content-blocking-warning-learn-how = Dysgu sut
 content-blocking-reload-description = Bydd angen ail lwytho'ch tabiau i osod y newidiadau hyn.
 content-blocking-reload-tabs-button =

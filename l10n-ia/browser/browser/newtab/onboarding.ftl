@@ -21,11 +21,16 @@ onboarding-button-label-get-started = Comencia
 onboarding-welcome-header = Benvenite a { -brand-short-name }
 onboarding-welcome-body = Tu ha recipite le navigator.<br/>Obtene le resto de { -brand-product-name }.
 onboarding-welcome-learn-more = Saper plus re le beneficios.
+onboarding-welcome-modal-get-body = Tu ha recipite le navigator.<br/>Ora obtene le plus de { -brand-product-name }.
+onboarding-welcome-modal-supercharge-body = Protection del confidentialitate al maxime nivello.
+onboarding-welcome-modal-privacy-body = Tu ha jam le navigator. Adde plus protection de confidentialitate.
+onboarding-welcome-modal-family-learn-more = Apprende re le familia de productos de { -brand-product-name }.
+onboarding-welcome-form-header = Comencia ci
 onboarding-join-form-header = Junge te a { -brand-product-name }
-onboarding-join-form-body = Insere tu adresse email pro comenciar.
+onboarding-join-form-body = Insere tu adresse de e-mail pro comenciar.
 onboarding-join-form-email =
     .placeholder = Insere email
-onboarding-join-form-email-error = Il es necesse un valide adresse email
+onboarding-join-form-email-error = Es necessari un adresse de e-mail valide
 onboarding-join-form-legal = Si tu procede, tu consenti al <a data-l10n-name="terms">Terminos de servicio</a> e  al <a data-l10n-name="privacy">Aviso de confidentialitate</a>.
 onboarding-join-form-continue = Continuar
 onboarding-start-browsing-button-label = Comencia a navigar
@@ -38,7 +43,7 @@ onboarding-cards-dismiss =
 onboarding-sync-welcome-header = Porta { -brand-product-name } con te
 onboarding-sync-welcome-content = Tene tu marcapaginas, chronologia, contrasignos e altere configurationes sur tote tu apparatos.
 onboarding-sync-welcome-learn-more-link = Saper plus super Firefox Accounts
-onboarding-sync-form-invalid-input = Il es necesse un valide adresse email
+onboarding-sync-form-invalid-input = Es necessari un adresse de e-mail valide
 onboarding-sync-legal-notice = Si tu procede, tu consenti a <a data-l10n-name="terms">Terminos de servicio</a> e <a data-l10n-name="privacy">Notification de confidentialitate</a>.
 onboarding-sync-form-input =
     .placeholder = Email
@@ -63,7 +68,13 @@ onboarding-benefit-privacy-title = Confidentialitate ver
 # Firefox Personal Data Promise is the way we honor your data in everything we
 # make and do. We take less data. We keep it safe. And we make sure that we are
 # transparent about how we use it."
-onboarding-benefit-privacy-text = Toto lo que nos face honora nostre "garantia sur tu datos personal": prender minus de illos, mantener los secur e nulle secretos.
+onboarding-benefit-privacy-text = Tote lo que nos face honora nostre promissa sur tu datos personal: nos promitte de prender minus de tu datos, mantener los secur, e non guardar secretos pro te.
+onboarding-benefit-sync-title = { -sync-brand-short-name }
+onboarding-benefit-sync-text = Porta tu marcapaginas, contrasignos, chronologia e altero ancora ubique tu usa { -brand-product-name }.
+onboarding-benefit-monitor-title = { -monitor-brand-short-name }
+onboarding-benefit-monitor-text = Recipe un notification si tu informationes personal es exponite in un violation de datos note.
+onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
+onboarding-benefit-lockwise-text = Gere tu contrasignos protegite e portabile.
 
 ## These strings belong to the individual onboarding messages.
 
@@ -77,7 +88,7 @@ onboarding-private-browsing-text = Naviga per te mesme. Navigation private con l
 onboarding-screenshots-title = Instantaneos
 onboarding-screenshots-text = Captura, salva e comparti instantaneos - sin lassar { -brand-short-name }. Captura un region o un pagina integre durante que tu naviga. Pois salva lo al web pro facile accesso e compartimento.
 onboarding-addons-title = Additivos
-onboarding-addons-text = Adde mesmo altere functionalitates que face laborar plus durmente { -brand-short-name } pro te. Compara precios, controla los meteorologic o exprime tu personalitate con un thema personalisate.
+onboarding-addons-text = Adde ancora plus functionalitates que face { -brand-short-name } travaliar pro te. Compara precios, consulta le meteo, o exprime tu personalitate con un thema personalisate.
 onboarding-ghostery-title = Ghostery
 onboarding-ghostery-text = Naviga plus veloce, in maniera plus intelligente o plus secur con extensiones como Ghostery, que te pone in grado de blocar enoiose avisos publicitari.
 # Note: "Sync" in this case is a generic verb, as in "to synchronize"
@@ -92,7 +103,7 @@ onboarding-data-sync-text2 = Synchronisa tu marcapaginas, contrasignos e altero 
 onboarding-data-sync-button2 = Accede a { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Sta alerte al violationes de datos
 onboarding-firefox-monitor-text = { -monitor-brand-name } controla attentemente si tu email ha apparite in un violation de datos e te avisa si illo es implicate in un nove violation.
-onboarding-firefox-monitor-button = Inscribe te al Alertas
+onboarding-firefox-monitor-button = Inscriber se al Alertas
 onboarding-browse-privately-title = Naviga reservatemente
 onboarding-browse-privately-text = Le navigation reservate clara tu chronologia de recerca e exploration e lo mantene secrete ab quicunque usa tu computator.
 onboarding-browse-privately-button = Aperir un fenestra private

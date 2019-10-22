@@ -253,6 +253,62 @@ applications-type-column =
 applications-action-column =
     .label = Művelet
     .accesskey = M
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } fájl
+applications-action-save =
+    .label = Fájl mentése
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = { $app-name } használata
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = { $app-name } használata (alapértelmezett)
+applications-use-other =
+    .label = Másik használata…
+applications-select-helper = Segédalkalmazás kiválasztása
+applications-manage-app =
+    .label = Alkalmazás részletei…
+applications-always-ask =
+    .label = Rákérdezés mindig
+applications-type-pdf = Hordozható dokumentumformátum (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = { $plugin-name } használata ({ -brand-short-name } böngészőben)
+applications-preview-inapp =
+    .label = Előnézet a { -brand-short-name } böngészőben
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = Digitális jogkezelést (DRM) használó tartalom
 play-drm-content =
     .label = DRM-vezérelt tartalom lejátszása
@@ -339,6 +395,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Szöveg keresése a keresett szó beírásának elkezdésétől
     .accesskey = d
+browsing-picture-in-picture-toggle-enabled =
+    .label = Engedélyezze a kép a képben videóvezérlést
+    .accesskey = E
+browsing-picture-in-picture-learn-more = További tudnivalók
 browsing-cfr-recommendations =
     .label = Kiegészítők ajánlása böngészés közben
     .accesskey = K
@@ -445,6 +505,12 @@ search-bar-shown =
     .label = Keresősáv hozzáadása az eszköztárhoz
 search-engine-default-header = Alapértelmezett keresőszolgáltatás
 search-engine-default-desc = Válassza ki a címsávban és a keresősávban alapértelmezetten használandó keresőszolgáltatást.
+search-engine-default-private-desc = Válassza ki a privát ablakokban használandó alapértelmezett keresőszolgáltatást.
+search-separate-default-engine =
+    .label = E keresőszolgáltatás használata a privát ablakokban
+    .accesskey = h
+search-suggestions-header = Keresési javaslatok
+search-suggestions-desc = Válassza ki, hogyan jelenjenek meg a keresőszolgáltatások javaslatai.
 search-suggestions-option =
     .label = Keresési javaslatok
     .accesskey = K
@@ -458,6 +524,7 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Keresési javaslatok megjelenítése a böngészési előzmények előtt a címsor találatai között
+suggestions-addressbar-settings = Böngészési előzmények, könyvjelzők és lapjavaslatok beállításainak módosítása
 search-suggestions-cant-show = A keresési javaslatok nem jelennek meg a címsáv találatai között, mert a { -brand-short-name } nem jegyzi meg az előzményeket.
 search-one-click-header = Egy kattintásos keresőszolgáltatások
 search-one-click-desc = Válassza ki a címsáv alatt és a keresősávban gépeléskor megjelenő alternatív keresőszolgáltatatásokat.
@@ -494,6 +561,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Vigye magával a webet
 sync-signedout-description = Szinkronizálja könyvjelzőit, előzményeit, lapjait, jelszavait, kiegészítőit és beállításait minden eszközén.
 sync-signedout-account-title = Kapcsolódjon egy { -fxaccount-brand-name }kal
@@ -514,11 +585,17 @@ sync-mobile-promo = Töltse le a Firefox for <img data-l10n-name="android-icon"/
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = Profilkép módosítása
 sync-disconnect =
     .label = A kapcsolat bontása…
     .accesskey = t
+sync-sign-out =
+    .label = Kijelentkezés…
+    .accesskey = K
 sync-manage-account = Fiók kezelése
     .accesskey = F
 sync-signedin-unverified = A(z)  { $email } cím nincs ellenőrizve.
@@ -534,6 +611,48 @@ sync-sign-in =
     .accesskey = B
 sync-signedin-settings-header = Sync beállítások
 sync-signedin-settings-desc = Válassza ki, mit szeretne szinkronizálni eszközei között a { -brand-short-name } segítségével.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Szinkronizálás: BE
+prefs-syncing-off = Szinkronizálás: KI
+prefs-sync-setup =
+    .label = { -sync-brand-short-name } beállítása…
+    .accesskey = S
+prefs-sync-offer-setup-label = Szinkronizálja könyvjelzőit, előzményeit, lapjait, jelszavait, kiegészítőit és beállításait minden eszközén.
+prefs-sync-now =
+    .labelnotsyncing = Szinkronizálás most
+    .accesskeynotsyncing = m
+    .labelsyncing = Szinkronizálás…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = Jelenleg szinkronizálja ezeket az elemeket:
+sync-currently-syncing-bookmarks = Könyvjelzők
+sync-currently-syncing-history = Előzmények
+sync-currently-syncing-tabs = Nyitott lapok
+sync-currently-syncing-logins-passwords = Bejelentkezések és jelszavak
+sync-currently-syncing-addresses = Címek
+sync-currently-syncing-creditcards = Bankkártyák
+sync-currently-syncing-addons = Kiegészítők
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Beállítások
+       *[other] Beállítások
+    }
+sync-change-options =
+    .label = Módosítás…
+    .accesskey = M
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = Válassza ki, mit szeretne szinkronizálni
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Módosítások mentése
+    .buttonaccesskeyaccept = m
+    .buttonlabelextra2 = Kapcsolat bontása…
+    .buttonaccesskeyextra2 = b
 sync-engine-bookmarks =
     .label = Könyvjelzők
     .accesskey = K
@@ -548,6 +667,10 @@ sync-engine-logins =
     .label = Bejelentkezések
     .tooltiptext = A mentett felhasználónevek és jelszavak
     .accesskey = B
+sync-engine-logins-passwords =
+    .label = Bejelentkezések és jelszavak
+    .tooltiptext = Az Ön által mentett bejelentkezések és jelszavak
+    .accesskey = j
 sync-engine-addresses =
     .label = Címek
     .tooltiptext = Mentett postai címek (csak asztali gépen)
@@ -568,6 +691,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Módosított általános, adatvédelmi és biztonsági beállítások
     .accesskey = B
+
+## The device name controls.
+
 sync-device-name-header = Eszköznév
 sync-device-name-change =
     .label = Eszköznév módosítása…
@@ -600,6 +726,10 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Erős jelszavak javaslata az előállítása
     .accesskey = j
+forms-breach-alerts =
+    .label = Figyelmeztetések megjelenítése a feltört webhelyek jelszavaival kapcsolatban
+    .accesskey = f
+forms-breach-alerts-learn-more-link = További tudnivalók
 forms-fill-logins-and-passwords =
     .label = Bejelentkezések és jelszavak automatikus kitöltése
     .accesskey = i
@@ -612,6 +742,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Mesterjelszó megváltoztatása…
     .accesskey = z
+forms-master-pw-fips-title = Jelenleg FIPS-módban van. A FIPS-hez kötelező nem üres mesterjelszót megadni.
+forms-master-pw-fips-desc = Sikertelen jelszóváltoztatás
 
 ## Privacy Section - History
 
@@ -717,8 +849,9 @@ addressbar-suggestions-settings = Keresőszolgáltatás-javaslatok beállítása
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Tartalomblokkolás
-content-blocking-enhanced-tracking-protection = Továbbfejlesztett követés elleni védelem
 content-blocking-section-description = Védje meg a magánszféráját böngészés közben. Blokkolja a láthatatlan tartalmakat, melyek követik, hogy mely oldalakat látogat, és profilt építenek Önről. Egyes tartalmak blokkolása a weboldalak gyorsabb betöltését is eredményezheti.
+content-blocking-enhanced-tracking-protection = Továbbfejlesztett követés elleni védelem
+content-blocking-section-top-level-description = A nyomkövetők követik Önt online, és információkat gyűjtenek a böngészési szokásairól és érdeklődési köreiről. A { -brand-short-name } számos ilyen követőt és rosszindulatú parancsfájlt blokkol.
 content-blocking-learn-more = További tudnivalók
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -736,6 +869,23 @@ content-blocking-strict-description = Erősebb védelem, emiatt egyes weboldalak
 content-blocking-custom-desc = Válassza ki, mit akar blokkolni.
 content-blocking-private-trackers = Ismert követők csak privát ablakokban
 content-blocking-third-party-cookies = Harmadik féltől származó követő sütik
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Szokásos
+    .accesskey = S
+enhanced-tracking-protection-setting-strict =
+    .label = Szigorú
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = Egyéni
+    .accesskey = E
+
+
+
 content-blocking-etp-standard-desc = Kiegyensúlyozott védelem és teljesítmény. Az oldalak normálisan fognak betölteni.
 content-blocking-etp-strict-desc = Erősebb védelem, de egyes webhelyek és tartalmak hibásan működhetnek.
 content-blocking-etp-custom-desc = Válassza ki a blokkolni kívánt nyomkövetőket és parancsfájlokat.

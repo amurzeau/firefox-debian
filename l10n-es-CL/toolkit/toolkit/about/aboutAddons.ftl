@@ -245,6 +245,12 @@ shortcuts-modifier-other = Incluye Ctrl o Alt
 shortcuts-invalid = Combinación inválida
 shortcuts-letter = Escribe una letra
 shortcuts-system = No se puede sobrescribir un atajo de { -brand-short-name }
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Atajo duplicado
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } está siendo utilizado como un atajo en más de un caso. Los atajos duplicados pueden ocasionar comportamientos inesperados.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -281,6 +287,10 @@ install-theme-button = Instalar tema
 # the detailed add-on view is opened, from where the add-on can be managed.
 manage-addon-button = Gestionar
 find-more-addons = Buscar más complementos
+# This is a label for the button to open the "more options" menu, it is only
+# used for screen readers.
+addon-options-button =
+    .aria-label = Más opciones
 
 ## Add-on actions
 
@@ -351,6 +361,11 @@ install-update-button = Actualizar
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed =
     .title = Permitir en ventanas privadas
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed2 =
+    .title = Permitido en ventanas privadas
+    .aria-label = { addon-badge-private-browsing-allowed2.title }
 addon-detail-private-browsing-help = Al permitirse, la extensión tendrá acceso a tus actividades en línea durante la navegación privada. <a data-l10n-name="learn-more">Aprender más</a>
 addon-detail-private-browsing-allow = Permitir
 addon-detail-private-browsing-disallow = No permitir
@@ -359,6 +374,11 @@ addon-detail-private-browsing-disallow = No permitir
 addon-badge-recommended =
     .title = Recomendado
     .alt = Recomendado
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended2 =
+    .title = { -brand-product-name } solo recomienda extensiones que cumplan con nuestros estándares de seguridad y rendimiento
+    .aria-label = { addon-badge-recommended2.title }
 available-updates-heading = Actualizaciones disponibles
 recent-updates-heading = Actualizaciones recientes
 release-notes-loading = Cargando…

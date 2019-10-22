@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-do-not-track-description = 傳送 “Do Not Track” 訊號，告訴網站您不想被追蹤
+do-not-track-description = 傳送「Do Not Track」訊號，告訴網站您不想被追蹤
 do-not-track-learn-more = 了解更多
 do-not-track-option-default-content-blocking-known =
     .label = 僅在 { -brand-short-name } 設定為封鎖已知追蹤器時
@@ -241,6 +241,62 @@ applications-type-column =
 applications-action-column =
     .label = 動作
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } 檔案
+applications-action-save =
+    .label = 儲存檔案
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = 使用 { $app-name } 開啟
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = 使用 { $app-name } 開啟（預設）
+applications-use-other =
+    .label = 使用其他程式…
+applications-select-helper = 選取對應程式
+applications-manage-app =
+    .label = 程式詳細資訊…
+applications-always-ask =
+    .label = 總是詢問
+applications-type-pdf = 可攜式文件格式（PDF）
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf }（{ $type }）
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description }（{ $type }）
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = 使用 { $plugin-name } (在 { -brand-short-name } 開啟)
+applications-preview-inapp =
+    .label = 在 { -brand-short-name } 中預覽
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = 數位權利管理（DRM）內容
 play-drm-content =
     .label = 播放 DRM 內容
@@ -283,7 +339,7 @@ update-setting-write-failure-message =
     
     無法寫入下列檔案: { $path }
 update-in-progress-title = 更新中
-update-in-progress-message = 您希望 { -brand-short-name } 繼續此更新嗎？
+update-in-progress-message = 您希望 { -brand-short-name } 使用此更新繼續嗎？
 update-in-progress-ok-button = 捨棄 (&D)
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
@@ -327,11 +383,15 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = 打字時直接搜尋頁面文字（隨打即找）
     .accesskey = x
+browsing-picture-in-picture-toggle-enabled =
+    .label = 開啟影片子母畫面播放控制元件
+    .accesskey = E
+browsing-picture-in-picture-learn-more = 了解更多
 browsing-cfr-recommendations =
     .label = 隨您上網推薦擴充套件
     .accesskey = R
 browsing-cfr-features =
-    .label = 隨您上網時推薦新功能
+    .label = 隨您上網推薦新功能
     .accesskey = f
 browsing-cfr-recommendations-learn-more = 了解更多
 
@@ -429,6 +489,12 @@ search-bar-shown =
     .label = 在工具列加入搜尋列
 search-engine-default-header = 預設搜尋引擎
 search-engine-default-desc = 請選擇在網址列或搜尋列進行搜尋時，預設要使用的搜尋引擎。
+search-engine-default-private-desc = 選擇於隱私瀏覽視窗使用的預設搜尋引擎。
+search-separate-default-engine =
+    .label = 於隱私瀏覽視窗使用此搜尋引擎
+    .accesskey = U
+search-suggestions-header = 搜尋建議
+search-suggestions-desc = 選擇要如何顯示來自搜尋引擎的建議。
 search-suggestions-option =
     .label = 提供搜尋建議
     .accesskey = s
@@ -442,6 +508,7 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = 在網址列顯示的結果中，將搜尋建議放在瀏覽紀錄前面
+suggestions-addressbar-settings = 更改上網紀錄、書籤、分頁建議的相關偏好設定
 search-suggestions-cant-show = 由於您已經設定 { -brand-short-name } 不要記住瀏覽紀錄，網址列中將不會顯示建議搜尋結果。
 search-one-click-header = 快捷搜尋引擎清單
 search-one-click-desc = 請選擇當您在網址列或搜尋列輸入關鍵字時，可選用的其他搜尋引擎。
@@ -478,6 +545,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = 把 Web 隨身帶著走
 sync-signedout-description = 在您所有裝置間同步書籤、歷史紀錄、分頁、密碼、附加元件與偏好設定。
 sync-signedout-account-title = 連線到 { -fxaccount-brand-name }
@@ -498,11 +569,17 @@ sync-mobile-promo = 下載 Firefox for<img data-l10n-name="android-icon"/> <a da
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = 更改個人資料照片
 sync-disconnect =
     .label = 斷線…
     .accesskey = D
+sync-sign-out =
+    .label = 登出…
+    .accesskey = g
 sync-manage-account = 管理帳號
     .accesskey = o
 sync-signedin-unverified = { $email } 未驗證。
@@ -518,6 +595,48 @@ sync-sign-in =
     .accesskey = g
 sync-signedin-settings-header = 同步設定
 sync-signedin-settings-desc = 請選擇要同步哪些資料到您其他使用 { -brand-short-name } 的裝置上。
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = 同步: 開啟
+prefs-syncing-off = 同步: 關閉
+prefs-sync-setup =
+    .label = 設定 { -sync-brand-short-name }…
+    .accesskey = S
+prefs-sync-offer-setup-label = 在您所有裝置間同步書籤、歷史紀錄、分頁、密碼、附加元件與偏好設定。
+prefs-sync-now =
+    .labelnotsyncing = 立刻同步
+    .accesskeynotsyncing = N
+    .labelsyncing = 同步中…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = 您目前正在同步下列項目:
+sync-currently-syncing-bookmarks = 書籤
+sync-currently-syncing-history = 瀏覽紀錄
+sync-currently-syncing-tabs = 開啟分頁
+sync-currently-syncing-logins-passwords = 登入資訊與密碼
+sync-currently-syncing-addresses = 地址
+sync-currently-syncing-creditcards = 信用卡資料
+sync-currently-syncing-addons = 附加元件
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] 選項
+       *[other] 偏好設定
+    }
+sync-change-options =
+    .label = 修改…
+    .accesskey = C
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = 選擇要同步哪些資料
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = 儲存變更
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = 中斷連線…
+    .buttonaccesskeyextra2 = D
 sync-engine-bookmarks =
     .label = 書籤
     .accesskey = m
@@ -531,6 +650,10 @@ sync-engine-tabs =
 sync-engine-logins =
     .label = 登入資訊
     .tooltiptext = 您儲存的使用者名稱與密碼
+    .accesskey = L
+sync-engine-logins-passwords =
+    .label = 登入資訊與密碼
+    .tooltiptext = 您儲存下來的使用者名稱與密碼
     .accesskey = L
 sync-engine-addresses =
     .label = 地址
@@ -552,6 +675,9 @@ sync-engine-prefs =
         }
     .tooltiptext = 您調整過的一般、隱私權、安全性設定
     .accesskey = s
+
+## The device name controls.
+
 sync-device-name-header = 裝置名稱
 sync-device-name-change =
     .label = 更改裝置名稱…
@@ -584,6 +710,10 @@ forms-exceptions =
 forms-generate-passwords =
     .label = 產生強密碼
     .accesskey = u
+forms-breach-alerts =
+    .label = 針對發生過資料外洩的網站顯示密碼警告
+    .accesskey = b
+forms-breach-alerts-learn-more-link = 了解更多
 forms-fill-logins-and-passwords =
     .label = 自動填寫登入資訊與密碼
     .accesskey = i
@@ -596,6 +726,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = 變更主控密碼…
     .accesskey = M
+forms-master-pw-fips-title = 您目前使用 FIPS 模式。FIPS 模式需要有主控密碼。
+forms-master-pw-fips-desc = 密碼變更失敗
 
 ## Privacy Section - History
 
@@ -701,8 +833,9 @@ addressbar-suggestions-settings = 修改搜尋建議偏好設定
 ## Privacy Section - Content Blocking
 
 content-blocking-header = 內容封鎖
-content-blocking-enhanced-tracking-protection = 加強型追蹤保護
 content-blocking-section-description = 在上網時保護您的隱私。封鎖會在不同網站間追蹤您上網，並對使用者進行分類的隱藏內容。封鎖這類內容也可能讓網頁更快載入。
+content-blocking-enhanced-tracking-protection = 加強型追蹤保護
+content-blocking-section-top-level-description = 追蹤器會在網路上跟蹤您，收集您的興趣與喜好。{ -brand-short-name } 會封鎖許多追蹤器與其他有害指令碼。
 content-blocking-learn-more = 了解更多
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -720,6 +853,23 @@ content-blocking-strict-description = 保護更強，可能造成某些網站無
 content-blocking-custom-desc = 選擇要封鎖哪些內容。
 content-blocking-private-trackers = 僅在隱私視窗中封鎖已知的追蹤器
 content-blocking-third-party-cookies = 第三方追蹤 Cookie
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = 標準
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = 嚴格
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = 自訂
+    .accesskey = C
+
+
+
 content-blocking-etp-standard-desc = 兼顧保護與效能。網站可正常運作。
 content-blocking-etp-strict-desc = 保護更強大，但可能會導致某些網站或內容故障。
 content-blocking-etp-custom-desc = 選擇要封鎖哪些追蹤器與指令碼。

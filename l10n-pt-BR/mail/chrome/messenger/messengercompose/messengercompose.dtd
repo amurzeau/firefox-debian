@@ -21,7 +21,7 @@
 <!ENTITY attachFileCmd.label "Arquivos…">
 <!ENTITY attachFileCmd.accesskey "A">
 <!ENTITY attachFileCmd.key "a">
-<!ENTITY attachCloudCmd.label "Anexo on-line">
+<!ENTITY attachCloudCmd.label "Anexo online">
 <!ENTITY attachCloudCmd.accesskey "l">
 <!ENTITY attachPageCmd.label "Página web…">
 <!ENTITY attachPageCmd.accesskey "w">
@@ -331,7 +331,7 @@
 <!ENTITY selectAll.accesskey "S">
 <!ENTITY attachFile.label "Anexar arquivos…">
 <!ENTITY attachFile.accesskey "n">
-<!ENTITY attachCloud.label "Anexo on-line…">
+<!ENTITY attachCloud.label "Anexo online…">
 <!ENTITY attachCloud.accesskey "l">
 <!ENTITY convertCloud.label "Converter para…">
 <!ENTITY convertCloud.accesskey "C">

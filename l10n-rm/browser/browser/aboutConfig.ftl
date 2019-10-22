@@ -7,10 +7,24 @@ about-config-warning-title = Hic sunt dracones!
 about-config-warning-text = La modificaziun da quests parameters avanzads po cumprometter la stabilitad, segirezza e prestaziun da questa applicaziun. Cuntinuescha mo sche ti sas tge che ti fas.
 about-config-warning-checkbox = Puspè dumandar la proxima giada, grazia.
 about-config-warning-button = Jau accept il ristg
-about-config-title = about:config
 about-config2-title = Configuraziuns avanzadas
 about-config-search-input =
     .placeholder = Tschertgar
+
+## These strings appear on the warning you see when first visiting about:config.
+
+about-config-intro-warning-title = Proceder cun precauziun
+about-config-intro-warning-text = La modificaziun da la configuraziun da las preferenzas avanzadas po cumprometter la prestaziun u la segirezza da { -brand-short-name }.
+about-config-intro-warning-checkbox = Mussar quest avis cun acceder a questas preferenzas
+about-config-intro-warning-button = Acceptar la ristga e cuntinuar
+
+
+
+# This is shown on the page before searching but after the warning is accepted.
+about-config-caution-text = La modificaziun da questas preferenzas po cumprometter la prestaziun u la segirezza da { -brand-short-name }.
+about-config-page-title = Preferenzas avanzadas
+about-config-search-input1 =
+    .placeholder = Tschertgar in num dad ina preferenza
 about-config-show-all = Mussar tut
 about-config-pref-add = Agiuntar
 about-config-pref-toggle = Alternar
@@ -18,6 +32,18 @@ about-config-pref-edit = Modifitgar
 about-config-pref-save = Memorisar
 about-config-pref-reset = Redefinir
 about-config-pref-delete = Stizzar
+about-config-pref-add-button =
+    .title = Agiuntar
+about-config-pref-toggle-button =
+    .title = Alternar
+about-config-pref-edit-button =
+    .title = Modifitgar
+about-config-pref-save-button =
+    .title = Memorisar
+about-config-pref-reset-button =
+    .title = Reinizialisar
+about-config-pref-delete-button =
+    .title = Stizzar
 
 ## Labels for the type selection radio buttons shown when adding preferences.
 

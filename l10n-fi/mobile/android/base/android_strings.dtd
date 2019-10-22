@@ -23,16 +23,21 @@
 <!ENTITY firstrun_sync_title "Sync">
 <!ENTITY updatednewfirstrun_sync_title "Tili">
 <!ENTITY firstrun_sync_message2 "Jatka siitä, mihin jäit.">
+<!ENTITY firstrun_sync_message3 "Synkronoi kirjanmerkit, historia ja salasanat puhelimeesi.">
 <!ENTITY firstrun_sync_subtext2 "Käytä Sync-palvelua löytämään kirjanmerkit, salasanat ynnä muut &brandShortName;iin tallentamasi tiedot kaikilla laitteillasi.">
 <!ENTITY newfirstrun_sync_subtext "Synkronoi kaikki mobiililaitteelle tallentamasi Firefoxin työpöytäversioon, yksityisesti ja turvallisesti.">
 <!ENTITY updatednewfirstrun_sync_subtext "Kirjaudu tilillesi saadaksesi täyden hyödyn irti &brandShortName;ista">
 <!ENTITY firstrun_signin_message "Yhdistä ja aloita">
+<!ENTITY firstrun_sendtab_title "Lähetä välilehti">
+<!ENTITY firstrun_sendtab_message "Jaa välilehdet mobiililaitteelta työpöydälle — välittömästi.">
 <!ENTITY firstrun_signin_button "Kirjaudu sisään Sync-palveluun">
 <!ENTITY newfirstrun_signin_button "Ota Sync käyttöön">
 <!ENTITY updatednewfirstrun_signin_button "Kirjaudu sisään &brandShortName;iin">
-<!ENTITY  onboard_start_button_browser "Aloita selaaminen">
+<!ENTITY onboard_start_button_browser "Aloita selaaminen">
 <!ENTITY firstrun_button_notnow "Ei nyt">
 <!ENTITY firstrun_button_next "Seuraava">
+
+<!ENTITY firstrun_signin_button2 "Kirjaudu sisään">
 
 <!ENTITY firstrun_tabqueue_title "Linkit">
 
@@ -44,6 +49,8 @@
 <!-- Localization note (firstrun_devices_title): This is a casual way of addressing the user, somewhat referring to their online identity (which would include other devices, Firefox usage, accounts, etc). -->
 <!ENTITY firstrun_account_title "Sinä">
 <!ENTITY firstrun_account_message "Onko sinulla &brandShortName; toisella laitteella?">
+
+<!ENTITY firstrun_signup_button "Rekisteröidy">
 
 <!ENTITY  onboard_start_restricted1 "Surffaa turvallisin mielin ja tukevasti kontrollissa tämän yksinkertaisemman &brandShortName;in kanssa.">
 
@@ -58,7 +65,7 @@
 <!ENTITY  tab_offline_version "Näytetään yhteydettömän tilan versio">
 
 <!ENTITY  crash_reporter_title "&brandShortName;: Kaatumisen raportointi">
-<!ENTITY  crash_message2 "&brandShortName; kohtasi odottamattoman ongelman ja kaatui. Avoinna olleiden välilehtien pitäisi olla listattuna aloitussivulla kun käynnistät &brandShortName;in uudestaan">
+<!ENTITY  crash_message2 "&brandShortName; kohtasi odottamattoman ongelman ja kaatui. Avoinna olleiden välilehtien pitäisi olla listattuna aloitussivulla kun käynnistät ohjelman uudestaan">
 <!ENTITY  crash_send_report_message3 "Kerro virheestä &vendorShortName;lle ja auta heitä korjaamaan vika">
 <!ENTITY  crash_include_url2 "Lähetä avoinna olleen sivun osoite">
 <!ENTITY  crash_sorry "Olemme pahoillamme">
@@ -209,7 +216,7 @@
 <!ENTITY pref_category_privacy_short "Tietosuoja">
 <!ENTITY pref_category_privacy_summary4 "Seuranta, kirjautumistiedot, kerätyt tiedot">
 <!ENTITY pref_category_vendor2 "&vendorShortName; &brandShortName;">
-<!ENTITY pref_category_vendor_summary2 "Tietoja &brandShortName;ista, UKK, palaute">
+<!ENTITY pref_category_vendor_summary2 "Tietoja &brandShortName;-selaimesta, UKK, palaute">
 <!ENTITY pref_category_datareporting "Kerätyt tiedot">
 <!ENTITY pref_category_logins "Kirjautumistiedot">
 <!ENTITY pref_learn_more "Lue lisää">
@@ -252,7 +259,7 @@
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
      button for this string, they will use the built-in default Firefox homepage (about:home). -->
-<!ENTITY home_homepage_radio_default "&brandShortName;in aloitussivu">
+<!ENTITY home_homepage_radio_default "&brandShortName;-aloitussivu">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
      button for this string, a text field will appear below the radio button and allow the
@@ -425,7 +432,7 @@ shown from Android O while a tab is being queued.-->
     Message of an Android Toast that appears after our app opens "Android System Settings -> Apps -> Default apps"
     and instruct users to tap on the "Browser app" option on that settings screen to choose a default browser app. -->
 <!ENTITY default_browser_system_settings_toast "Paina Selainsovellus &amp; valitse &brandShortName;">
-<!ENTITY pref_about_firefox "Tietoja &brandShortName;ista">
+<!ENTITY pref_about_firefox "Tietoja: &brandShortName;">
 <!ENTITY pref_vendor_faqs "UKK">
 <!ENTITY pref_vendor_feedback "Anna palautetta">
 
@@ -495,6 +502,7 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY share "Jaa">
 <!ENTITY share_title "Jaa palvelulla">
 <!ENTITY share_image_failed "Kuvan jakaminen ei onnistunut">
+<!ENTITY share_error_toast_message "Jakaminen osoitetulle sovellukselle ei onnistu">
 <!ENTITY save_as_pdf "Tallenna PDF-muodossa">
 <!ENTITY print "Tulosta">
 <!ENTITY view_page_source "Näytä sivun lähdekoodi">
@@ -595,7 +603,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_location "Osoite">
 <!ENTITY bookmark_edit_keyword "Avainsana">
 <!ENTITY bookmark_select_folder "Valitse kansio">
-
 <!ENTITY bookmark_edit_undo "Kumoa">
 
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
@@ -629,7 +636,7 @@ shown from Android O while a tab is being queued.-->
 
 <!-- Localization note (home_title): This string should be kept in sync
      with the page title defined in aboutHome.dtd -->
-<!ENTITY home_title "&brandShortName;in aloitussivu">
+<!ENTITY home_title "Aloitussivu">
 <!ENTITY home_history_title "Sivuhistoria">
 <!ENTITY home_synced_devices_smartfolder "Synkronoidut laitteet">
 <!ENTITY home_synced_devices_number "&formatD; laitetta">
@@ -689,6 +696,7 @@ shown from Android O while a tab is being queued.-->
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "Yhteys muodostettu verkkosivustoon">
+
 <!-- Localization note (identity_run_by) : This string appears between a
 domain name (above) and an organization name (below). E.g.
 
@@ -878,6 +886,18 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_title "Saatavilla yhteydettömässä tilassa">
 <!ENTITY helper_triple_readerview_open_message "Lisää sivuja lukunäkymässä kirjanmerkkeihin lukeaksesi niitä yhteydettömässä tilassa.">
 <!ENTITY helper_triple_readerview_open_button "Lisää kirjanmerkkeihin">
+
+<!-- LOCALIZATION NOTE (activity_stream_signin_title, activity_stream_signin_description, activity_stream_signup_button,
+activity_stream_signin_prompt, activity_stream_signin_prompt_button):
+- These labels are shown in the Activity Stream recommending the user to sign in. -->
+<!ENTITY activity_stream_signin_title "Tervetuloa &brandShortName;-selaimen pariin">
+<!ENTITY activity_stream_signin_description "Aloita kirjanmerkkiesi, salasanojesi ja paljon muun synkronointi Firefox-tilillä.">
+<!ENTITY activity_stream_signin_button "Kirjaudu sisään">
+
+<!ENTITY activity_stream_signup_button "Rekisteröidy">
+<!ENTITY activity_stream_signin_prompt "Onko sinulla jo tili?">
+<!-- LOCALIZATION NOTE (activity_stream_signin_prompt_button): To be used in continuation of activity_stream_signin_prompt. -->
+<!ENTITY activity_stream_signin_prompt_button "Kirjaudu sisään.">
 
 <!ENTITY activity_stream_topsites "Ykkössivustot">
 <!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->

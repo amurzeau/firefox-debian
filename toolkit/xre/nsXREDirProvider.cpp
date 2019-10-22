@@ -1075,9 +1075,6 @@ nsXREDirProvider::DoStartup() {
 void nsXREDirProvider::DoShutdown() {
   AUTO_PROFILER_LABEL("nsXREDirProvider::DoShutdown", OTHER);
 
-  gDataDirProfileLocal = nullptr;
-  gDataDirProfile = nullptr;
-
   if (mProfileNotified) {
     nsCOMPtr<nsIObserverService> obsSvc =
         mozilla::services::GetObserverService();
@@ -1105,6 +1102,9 @@ void nsXREDirProvider::DoShutdown() {
     }
     mProfileNotified = false;
   }
+
+  gDataDirProfileLocal = nullptr;
+  gDataDirProfile = nullptr;
 
   if (XRE_IsParentProcess()) {
 #if defined(MOZ_SANDBOX)

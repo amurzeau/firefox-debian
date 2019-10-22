@@ -7,14 +7,14 @@
 <!-- Note to localizers, don't localize the strings 'width' or 'height' -->
 <!ENTITY  pageInfoWindow.dimensions  "width: 100ch; height: 30em;">
 
-<!ENTITY  copy.key              "C">
-<!ENTITY  copy.label            "Copiar">
-<!ENTITY  copy.accesskey        "C">
-<!ENTITY  selectall.key         "A">
-<!ENTITY  selectall.label       "Seleccionar todo">
-<!ENTITY  selectall.accesskey   "a">
-<!ENTITY  openHelpMac.key       "?">
-<!ENTITY  closeWindow.key       "w">
+<!ENTITY  copy.key               "C">
+<!ENTITY  copy.label             "Copiar">
+<!ENTITY  copy.accesskey         "C">
+<!ENTITY  selectall.key          "A">
+<!ENTITY  selectall.label        "Seleccionar todo">
+<!ENTITY  selectall.accesskey    "a">
+<!ENTITY  openHelpMac.key        "?">
+<!ENTITY  closeWindow.key        "w">
 <!ENTITY  copyLinks.label           "Copiar enlace(s)">
 <!ENTITY  copyLinks.accesskey       "l">
 <!ENTITY  openInNewTab.label        "Abrir en pestaña nueva">
@@ -24,6 +24,7 @@
 
 <!ENTITY  generalTab            "General">
 <!ENTITY  generalTab.accesskey  "G">
+<!ENTITY  generalTitle          "Título:">
 <!ENTITY  generalURL            "Dirección:">
 <!ENTITY  generalType           "Tipo:">
 <!ENTITY  generalMode           "Modo de dibujo:">
@@ -62,6 +63,8 @@
 <!ENTITY  mediaTab.accesskey    "M">
 <!ENTITY  mediaURL              "Dirección:">
 <!ENTITY  mediaAlt              "Texto alternativo:">
+<!ENTITY  mediaLocation         "Ubicación:">
+<!ENTITY  mediaText             "Texto asociado:">
 <!ENTITY  mediaAltHeader        "Texto alternativo">
 <!ENTITY  mediaAddress          "Dirección">
 <!ENTITY  mediaType             "Tipo">
@@ -70,6 +73,7 @@
 <!ENTITY  mediaDimensions       "Dimensiones específicas:">
 <!ENTITY  mediaPhysDimensions   "Dimensiones actuales:">
 <!ENTITY  mediaTitle            "Título:">
+<!ENTITY  mediaDimension        "Dimensiones:">
 <!ENTITY  mediaLongdesc         "Descripción larga:">
 <!ENTITY  mediaBlockImage.accesskey "B">
 <!ENTITY  mediaSaveAs           "Guardar como…">
@@ -110,6 +114,8 @@
 <!ENTITY  securityView.identity.domain   "Sitio web: ">
 <!ENTITY  securityView.identity.verifier "Verificado por: ">
 
+<!ENTITY  securityView.identity.validity "Caduca el:">
+
 <!ENTITY  securityView.privacy.header                   "Privacidad e historial">
 <!ENTITY  securityView.privacy.history                  "¿Visité este sitio antes en el día?">
 <!ENTITY  securityView.privacy.cookies                  "¿Este sitio web almacena información (cookies) en mi computadora?">
@@ -120,4 +126,3 @@
 <!ENTITY  securityView.privacy.viewPasswords.accessKey  "g">
 
 <!ENTITY  securityView.technical.header                 "Detalles técnicos">
-

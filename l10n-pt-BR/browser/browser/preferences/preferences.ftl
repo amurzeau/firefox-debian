@@ -253,6 +253,62 @@ applications-type-column =
 applications-action-column =
     .label = Ação
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = arquivo { $extension }
+applications-action-save =
+    .label = Salvar arquivo
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Abrir com o { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Abrir com o { $app-name } (padrão)
+applications-use-other =
+    .label = Abrir com…
+applications-select-helper = Selecionar aplicativo
+applications-manage-app =
+    .label = Detalhes do aplicativo…
+applications-always-ask =
+    .label = Sempre perguntar
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Usar { $plugin-name } (no { -brand-short-name })
+applications-preview-inapp =
+    .label = Ver no próprio { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = Conteúdo DRM (Gerenciamento de Direitos Digitais)
 play-drm-content =
     .label = Reproduzir conteúdo controlado por DRM
@@ -339,6 +395,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Procurar texto quando começar a digitar
     .accesskey = x
+browsing-picture-in-picture-toggle-enabled =
+    .label = Ativar controles de vídeo picture-in-picture
+    .accesskey = A
+browsing-picture-in-picture-learn-more = Saiba mais
 browsing-cfr-recommendations =
     .label = Recomendar extensões enquanto você navega
     .accesskey = R
@@ -444,7 +504,13 @@ search-bar-hidden =
 search-bar-shown =
     .label = Adicionar a barra de pesquisa na barra de ferramentas
 search-engine-default-header = Mecanismo de pesquisa padrão
-search-engine-default-desc = Escolha o mecanismo de pesquisa padrão a ser usado na barra de endereços e na barra de pesquisa.
+search-engine-default-desc = Escolha o mecanismo de pesquisa padrão usado na barra de endereços e na barra de pesquisa.
+search-engine-default-private-desc = Escolha o mecanismo de pesquisa padrão a ser usado em janelas privativas.
+search-separate-default-engine =
+    .label = Usar este mecanismo de pesquisa em janelas privativas
+    .accesskey = U
+search-suggestions-header = Sugestões de pesquisa
+search-suggestions-desc = Escolha como as sugestões dos mecanismos de pesquisa serão exibidas.
 search-suggestions-option =
     .label = Mostrar sugestões de pesquisa
     .accesskey = u
@@ -458,6 +524,7 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Mostrar sugestões de pesquisa antes do histórico de navegação nos resultados da barra de endereços
+suggestions-addressbar-settings = Alterar preferências de sugestões de histórico de navegação, favoritos e abas
 search-suggestions-cant-show = As sugestões de pesquisa não serão mostradas nos resultados da barra de endereço, porque você configurou o { -brand-short-name } para nunca memorizar o histórico.
 search-one-click-header = Mecanismos de pesquisa em um clique
 search-one-click-desc = Escolha os mecanismos de pesquisa alternativos que aparecem abaixo da barra de endereços e da barra de pesquisa quando você começa a digitar uma palavra-chave.
@@ -494,6 +561,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Leve a web com você
 sync-signedout-description = Sincronize seus favoritos, histórico, abas, senhas, extensões e preferências com todos os seus dispositivos.
 sync-signedout-account-title = Conecte com sua { -fxaccount-brand-name }
@@ -514,11 +585,17 @@ sync-mobile-promo = Baixe o Firefox para <img data-l10n-name="android-icon"/> <
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = Alterar imagem do perfil
 sync-disconnect =
     .label = Desconectar…
     .accesskey = D
+sync-sign-out =
+    .label = Sair…
+    .accesskey = S
 sync-manage-account = Gerenciar conta
     .accesskey = o
 sync-signedin-unverified = { $email } não foi verificado.
@@ -534,6 +611,48 @@ sync-sign-in =
     .accesskey = t
 sync-signedin-settings-header = Configurações do Sync
 sync-signedin-settings-desc = Escolha o que sincronizar em seus dispositivos usando o { -brand-short-name }.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Sincronização: ATIVADA
+prefs-syncing-off = Sincronização: DESATIVADA
+prefs-sync-setup =
+    .label = Configurar o { -sync-brand-short-name }…
+    .accesskey = C
+prefs-sync-offer-setup-label = Sincronize seus favoritos, histórico, abas, senhas, extensões e preferências com todos os seus dispositivos.
+prefs-sync-now =
+    .labelnotsyncing = Sincronizar agora
+    .accesskeynotsyncing = n
+    .labelsyncing = Sincronizando…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = No momento, você está sincronizando estes itens:
+sync-currently-syncing-bookmarks = Favoritos
+sync-currently-syncing-history = Histórico
+sync-currently-syncing-tabs = Abas abertas
+sync-currently-syncing-logins-passwords = Contas e senhas
+sync-currently-syncing-addresses = Endereços
+sync-currently-syncing-creditcards = Cartões de crédito
+sync-currently-syncing-addons = Extensões
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Opções
+       *[other] Preferências
+    }
+sync-change-options =
+    .label = Alterar…
+    .accesskey = A
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = Escolha o que sincronizar
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Salvar alterações
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = Desconectar…
+    .buttonaccesskeyextra2 = D
 sync-engine-bookmarks =
     .label = Favoritos
     .accesskey = F
@@ -546,6 +665,10 @@ sync-engine-tabs =
     .accesskey = A
 sync-engine-logins =
     .label = Contas de acesso
+    .tooltiptext = Nomes de usuário e senhas que você salvou
+    .accesskey = C
+sync-engine-logins-passwords =
+    .label = Contas e senhas
     .tooltiptext = Nomes de usuário e senhas que você salvou
     .accesskey = C
 sync-engine-addresses =
@@ -568,6 +691,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Configurações gerais, de privacidade e de segurança que você alterou
     .accesskey = P
+
+## The device name controls.
+
 sync-device-name-header = Nome do dispositivo
 sync-device-name-change =
     .label = Alterar nome do dispositivo…
@@ -581,7 +707,7 @@ sync-device-name-save =
 sync-connect-another-device = Conectar outro dispositivo
 sync-manage-devices = Gerenciar dispositivos
 sync-fxa-begin-pairing = Parear um dispositivo
-sync-tos-link = Termos de serviço
+sync-tos-link = Termos do serviço
 sync-fxa-privacy-notice = Aviso de privacidade
 
 ## Privacy Section
@@ -592,7 +718,7 @@ privacy-header = Privacidade do navegador
 
 logins-header = Contas e senhas
 forms-ask-to-save-logins =
-    .label = Perguntar se deve salvar contas e senhas de acesso de sites
+    .label = Perguntar se deve salvar contas e senhas de sites
     .accesskey = r
 forms-exceptions =
     .label = Exceções…
@@ -600,6 +726,10 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Sugerir e gerar senhas fortes
     .accesskey = u
+forms-breach-alerts =
+    .label = Exibir alertas sobre senhas de sites vazados
+    .accesskey = v
+forms-breach-alerts-learn-more-link = Saiba mais
 forms-fill-logins-and-passwords =
     .label = Preencher contas e senhas automaticamente
     .accesskey = P
@@ -612,6 +742,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Alterar senha mestra…
     .accesskey = m
+forms-master-pw-fips-title = Você está no momento no modo FIPS. O FIPS necessita de uma senha mestra não vazia.
+forms-master-pw-fips-desc = Falha na alteração da senha
 
 ## Privacy Section - History
 
@@ -717,8 +849,9 @@ addressbar-suggestions-settings = Alterar preferências de sugestões de mecanis
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Bloqueio de conteúdo
-content-blocking-enhanced-tracking-protection = Proteção aprimorada contra rastreamento
 content-blocking-section-description = Proteja sua privacidade enquanto navega. Bloqueie conteúdo invisível que rastreia os sites que você visita e traça seu perfil. Bloquear parte deste conteúdo pode fazer com que algumas páginas sejam carregadas mais rápido.
+content-blocking-enhanced-tracking-protection = Proteção aprimorada contra rastreamento
+content-blocking-section-top-level-description = Rastreadores seguem você por todo canto para coletar informações sobre seus interesses e hábitos de navegação. O { -brand-short-name } bloqueia muitos desses rastreadores e outros scripts maliciosos.
 content-blocking-learn-more = Saiba mais
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -736,6 +869,23 @@ content-blocking-strict-description = Proteção mais forte, pode atrapalhar alg
 content-blocking-custom-desc = Escolha o que bloquear.
 content-blocking-private-trackers = Rastreadores conhecidos, só em janelas privativas
 content-blocking-third-party-cookies = Cookies rastreadores de terceiros
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Padrão
+    .accesskey = P
+enhanced-tracking-protection-setting-strict =
+    .label = Rigoroso
+    .accesskey = R
+enhanced-tracking-protection-setting-custom =
+    .label = Personalizado
+    .accesskey = e
+
+
+
 content-blocking-etp-standard-desc = Balanceado entre proteção e desempenho. Páginas são carregadas normalmente.
 content-blocking-etp-strict-desc = Proteção reforçada, mas pode atrapalhar alguns sites ou conteúdos.
 content-blocking-etp-custom-desc = Escolha que rastreadores e scripts bloquear.

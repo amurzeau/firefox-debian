@@ -222,10 +222,10 @@
 <!ENTITY threads.accesskey "e">
 <!ENTITY allMsgsCmd.label "Sve">
 <!ENTITY allMsgsCmd.accesskey "v">
-<!ENTITY expandAllThreadsCmd.label "Proširi sve teme">
+<!ENTITY expandAllThreadsCmd.label "Rasklopi sve teme">
 <!ENTITY expandAllThreadsCmd.accesskey "e">
 <!ENTITY expandAllThreadsCmd.key "*">
-<!ENTITY collapseAllThreadsCmd.label "Skupi sve teme">
+<!ENTITY collapseAllThreadsCmd.label "Sklopi sve teme">
 <!ENTITY collapseAllThreadsCmd.accesskey "k">
 <!ENTITY collapseAllThreadsCmd.key "\">
 <!ENTITY unreadMsgsCmd.label "Nepročitano">
@@ -263,7 +263,7 @@
 <!ENTITY viewFeedSummaryFeedPropsPref.label "Zadani format">
 <!ENTITY viewFeedSummaryFeedPropsPref.accesskey "d">
 
-<!ENTITY viewAttachmentsInlineCmd.label "Prikaži privitke umetnute">
+<!ENTITY viewAttachmentsInlineCmd.label "Prikaži privitke ugrađeno">
 <!ENTITY viewAttachmentsInlineCmd.accesskey "a">
 
 <!ENTITY pageSourceCmd.label "Izvorni kod poruke">
@@ -362,7 +362,7 @@
 <!ENTITY forwardMsgCmd.key "l">
 <!ENTITY forwardAsMenu.label "Proslijedi kao">
 <!ENTITY forwardAsMenu.accesskey "i">
-<!ENTITY forwardAsInline.label "Umetnuto">
+<!ENTITY forwardAsInline.label "Ugrađeno">
 <!ENTITY forwardAsInline.accesskey "m">
 <!ENTITY forwardAsAttachmentCmd.label "Privitak">
 <!ENTITY forwardAsAttachmentCmd.accesskey "a">
@@ -471,7 +471,7 @@
 <!ENTITY addonPrefsUnix.label "Mogućnosti dodataka">
 <!ENTITY addonPrefsUnix.accesskey "D">
 <!ENTITY addonNoPrefs.label "Postavke dodatka nisu pronađene.">
-<!ENTITY activitymanager.label "Upravitelj aktivnostima">
+<!ENTITY activitymanager.label "Upravljač aktivnosti">
 <!ENTITY activitymanager.accesskey "v">
 <!ENTITY imAccountsStatus.label "Status razgovora">
 <!ENTITY imAccountsStatus.accesskey "z">
@@ -509,20 +509,20 @@
 <!ENTITY accountManagerCmdUnix2.accesskey "a">
 
 <!-- Developer Tools Submenu -->
-<!ENTITY devtoolsMenu.label "Alati za razvijatelje">
+<!ENTITY devtoolsMenu.label "Programerski alati">
 <!ENTITY devtoolsMenu.accesskey "e">
 <!ENTITY devToolboxCmd.label "Alati za razvijatelje">
 <!ENTITY devToolboxCmd.accesskey "t">
 <!ENTITY devToolboxCmd.commandkey "i">
 <!ENTITY debugAddonsCmd.label "Otklanjanje grešaka u dodacima">
 <!ENTITY debugAddonsCmd.accesskey "g">
-<!ENTITY tabsDebugCmd.label "Debugger za sadržaj okvira">
+<!ENTITY tabsDebugCmd.label "Ispravljač grešaka okvira sadržaja">
 <!ENTITY tabsDebugCmd.accesskey "s">
 <!ENTITY errorConsoleCmd.label "Konzola grešaka">
 <!ENTITY errorConsoleCmd.accesskey "e">
 <!ENTITY errorConsoleCmd.commandkey "j">
-<!ENTITY scratchpadCmd.label "Scratchpad">
-<!ENTITY scratchpadCmd.accesskey "S">
+<!ENTITY scratchpadCmd.label "Jednostavni uređivač">
+<!ENTITY scratchpadCmd.accesskey "J">
 
 <!--LOCALIZATION NOTE (scratchpadCmd.keycode):
     This should be a key code constant as per
@@ -581,7 +581,7 @@
 <!ENTITY replyAllButton.tooltip "Odgovori pošiljatelju i svim primateljima">
 <!ENTITY replyListButton.tooltip "Odgovori na popis primatelja">
 <!ENTITY forwardButton.tooltip "Proslijedi odabranu poruku">
-<!ENTITY forwardAsInline.tooltip "Proslijedite odabranu poruku kao umetnuti tekst">
+<!ENTITY forwardAsInline.tooltip "Proslijedi odabranu poruku kao ugrađeni tekst">
 <!ENTITY forwardAsAttachment.tooltip "Proslijedite odabranu poruku kao privitak">
 <!ENTITY fileButton.tooltip "Pohrani odabranu poruku">
 <!ENTITY archiveButton.tooltip "Arhiviraj odabrane poruke">
@@ -706,6 +706,7 @@
 <!ENTITY saveAsVirtualFolderMenu.label "Spremi pretragu kao mapu…">
 
 <!-- Thread Pane -->
+<!ENTITY selectColumn.label "Odaberite poruke">
 <!ENTITY threadColumn.label "Tema">
 <!ENTITY fromColumn.label "Šalje">
 <!ENTITY recipientColumn.label "Primatelj">
@@ -729,6 +730,7 @@
 
 <!-- Thread Pane Tooltips -->
 <!ENTITY columnChooser2.tooltip "Odaberite stupce za prikaz">
+<!ENTITY selectColumn.tooltip "Uključi/isključi odabir svih poruka">
 <!ENTITY threadColumn2.tooltip "Prikaži teme poruka">
 <!ENTITY fromColumn2.tooltip "Sortiraj prema pošiljatelju">
 <!ENTITY recipientColumn2.tooltip "Sortiraj prema primatelju">
@@ -783,8 +785,8 @@
 <!ENTITY contextForward.accesskey "P">
 <!ENTITY contextForwardAsMenu.label "Proslijedi kao">
 <!ENTITY contextForwardAsMenu.accesskey "i">
-<!ENTITY contextForwardAsInline.label "Umetnuto">
-<!ENTITY contextForwardAsInline.accesskey "t">
+<!ENTITY contextForwardAsInline.label "Ugrađeno">
+<!ENTITY contextForwardAsInline.accesskey "g">
 <!ENTITY contextForwardAsAttachmentItem.label "Privitak">
 <!ENTITY contextForwardAsAttachmentItem.accesskey "v">
 <!ENTITY contextMultiForwardAsAttachment.label "Proslijedi kao privitke">
@@ -950,7 +952,7 @@
 <!ENTITY minimizeWindow.label "Minimiziraj">
 <!ENTITY minimizeWindow.key "m">
 <!ENTITY bringAllToFront.label "Postavi sve na vrh">
-<!ENTITY zoomWindow.label "Uvećaj">
+<!ENTITY zoomWindow.label "Zumiraj">
 
 <!-- Mac OS X Application Menu (Cocoa widgets) -->
 <!ENTITY preferencesCmdMac2.label       "Postavke">

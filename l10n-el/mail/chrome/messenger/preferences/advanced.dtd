@@ -5,7 +5,7 @@
 <!ENTITY itemGeneral.label       "Γενικά">
 <!ENTITY dataChoicesTab.label    "Επιλογές δεδομένων">
 <!ENTITY itemUpdate.label        "Ενημέρωση">
-<!ENTITY itemNetworking.label    "Δίκτυο &amp; αποθηκευτικός χώρος">
+<!ENTITY itemNetworking.label    "Δίκτυο &amp; χώρος δίσκου">
 <!ENTITY itemCertificates.label  "Πιστοποιητικά">
 
 <!-- General Settings -->
@@ -37,7 +37,7 @@
 <!ENTITY configEdit.label              "Επεξεργασία ρυθμίσεων…">
 <!ENTITY configEdit.accesskey          "θ">
 <!ENTITY returnReceiptsInfo.label      "Καθορίστε τον τρόπο διαχείρισης των βεβαιώσεων ανάγνωσης από το &brandShortName;">
-<!ENTITY showReturnReceipts.label      "Βεβαιώσεις ανάγνωσης…">
+<!ENTITY showReturnReceipts.label      "Αποδεικτικά ανάγνωσης…">
 <!ENTITY showReturnReceipts.accesskey  "Β">
 
 <!-- Data Choices -->
@@ -90,7 +90,7 @@
 <!ENTITY showOffline.label             "Χωρίς σύνδεση…">
 <!ENTITY showOffline.accesskey         "Χ">
 
-<!ENTITY Diskspace                       "Αποθηκευτικός χώρος">
+<!ENTITY Diskspace                       "Χώρος δίσκου">
 <!ENTITY offlineCompactFolders.label     "Συμπίεση φακέλων πάνω από">
 <!ENTITY offlineCompactFolders.accesskey "π">
 <!ENTITY offlineCompactFoldersMB.label   "MB στο σύνολο">

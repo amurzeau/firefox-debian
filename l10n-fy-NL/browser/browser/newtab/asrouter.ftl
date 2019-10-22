@@ -82,6 +82,34 @@ cfr-whatsnew-button =
     .label = Wat is der nij
     .tooltiptext = Wat is der nij
 cfr-whatsnew-panel-header = Wat is der nij
+cfr-whatsnew-release-notes-link-text = Utjefteopmerkingen lêze
+cfr-whatsnew-fx70-title = { -brand-short-name } fjochtet no noch hurder foar jo privacy
+cfr-whatsnew-fx70-body =
+    De lêste fernijing ferbetteret de funksje Beskerming tsjin folgjen en makket it
+    makliker as ea om feilige wachtwurden foar elke website te meitsjen.
+cfr-whatsnew-tracking-protect-title = Beskermje josels tsjin trackers
+cfr-whatsnew-tracking-protect-body =
+    { -brand-short-name } blokkearret in protte gebrûklike sosjale en cross-site-trackers dy't
+    folgje wat jo online dogge.
+cfr-whatsnew-tracking-protect-link-text = Jo rapport besjen
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+        [one] Tracker blokkearre
+       *[other] Trackers blokkearre
+    }
+cfr-whatsnew-tracking-blocked-subtitle = Sûnt { DATETIME($earliestDate, month: "long", year: "numeric") }
+cfr-whatsnew-tracking-blocked-link-text = Rapport besjen
+cfr-whatsnew-lockwise-backup-title = Meitsje in reservekopy fan jo wachtwurden
+cfr-whatsnew-lockwise-backup-body = Meitsje no feilige wachtwurden dy't jo oeral wêr't jo jo oanmelde benaderje kinne.
+cfr-whatsnew-lockwise-backup-link-text = Reservekopyen ynskeakelje
+cfr-whatsnew-lockwise-take-title = Nim jo wachtwurden mei
+cfr-whatsnew-lockwise-take-body =
+    Mei de mobile app { -lockwise-brand-short-name } hawwe jo oeral feilich
+    tagong ta jo wachtwurden.
+cfr-whatsnew-lockwise-take-link-text = App downloade
 
 ## Bookmark Sync
 
@@ -111,3 +139,16 @@ cfr-doorhanger-firefox-send-header = Dit pdf-dokumint feilich diele
 cfr-doorhanger-firefox-send-body = Hâld jo gefoelige dokuminten wei fan nijsgjirrige blikken mei end-to-end-fersifering en in keppeling dy't ferdwynt as jo klear binne.
 cfr-doorhanger-firefox-send-ok-button = { -send-brand-name } probearje
     .accesskey = p
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-ok-button = Beskermingen besjen
+    .accesskey = B
+cfr-doorhanger-socialtracking-close-button = Slute
+    .accesskey = S
+cfr-doorhanger-socialtracking-heading = { -brand-short-name } hat opkeard dat in sosjaal netwurk jo hjir folget
+cfr-doorhanger-socialtracking-description = Jo privacy is wichtich. { -brand-short-name } blokkearret no faak brûkte sosjale-mediatrackers en beheint sa, hoefolle gegevens se sammelje oer wat jo online dogge.
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name } hat in fingerprinter op dizze side blokkearre
+cfr-doorhanger-fingerprinters-description = Jo privacy is wichtich. { -brand-short-name } blokkearret no fingerprinters, dy't stikjes unyk identifisearbere ynformaasje oer jo apparaat sammelje om jo te folgjen.
+cfr-doorhanger-cryptominers-heading = { -brand-short-name } hat in cryptominer op dizze side blokkearre
+cfr-doorhanger-cryptominers-description = Jo privacy is wichtich. { -brand-short-name } blokkearret no cryptominers, dy't de kompjûterkrêft fan jo systeem brûke om digitaal jild te minen.

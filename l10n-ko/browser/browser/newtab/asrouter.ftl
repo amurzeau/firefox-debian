@@ -23,7 +23,7 @@ cfr-doorhanger-extension-manage-settings-button = 추천 설정 관리
     .accesskey = M
 cfr-doorhanger-extension-never-show-recommendation = 이 추천을 보여주지 않음
     .accesskey = S
-cfr-doorhanger-extension-learn-more-link = 자세히 보기
+cfr-doorhanger-extension-learn-more-link = 더 알아보기
 # This string is used on a new line below the add-on name
 # Variables:
 #   $name (String) - Add-on author name
@@ -77,9 +77,30 @@ cfr-protections-panel-link-text = 더 알아보기
 ## What's New toolbar button and panel
 
 cfr-whatsnew-button =
-    .label = 새로운 기능
-    .tooltiptext = 새로운 기능
-cfr-whatsnew-panel-header = 새로운 기능
+    .label = 새 기능
+    .tooltiptext = 새 기능
+cfr-whatsnew-panel-header = 새 기능
+cfr-whatsnew-release-notes-link-text = 출시 정보 읽기
+cfr-whatsnew-fx70-title = { -brand-short-name }는 이제 사용자의 개인 정보 보호를 위해 더 열심히 싸웁니다
+cfr-whatsnew-fx70-body = 최신 업데이트는 추적 방지 기능을 향상시키고 모든 사이트에 대해 안전한 비밀번호를 만드는 것이 그 어느때보다 쉬워졌습니다.
+cfr-whatsnew-tracking-protect-title = 추적기로부터 보호
+cfr-whatsnew-tracking-protect-body = { -brand-short-name }는 온라인에서 사용자를 따라다니는 많은 일반적인 소셜 및 교차 사이트 추적기를 차단합니다.
+cfr-whatsnew-tracking-protect-link-text = 보고서 보기
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+       *[other] 추적기 차단됨
+    }
+cfr-whatsnew-tracking-blocked-subtitle = { DATETIME($earliestDate, month: "long", year: "numeric") } 이후
+cfr-whatsnew-tracking-blocked-link-text = 보고서 보기
+cfr-whatsnew-lockwise-backup-title = 비밀번호 백업
+cfr-whatsnew-lockwise-backup-body = 이제 로그인하는 곳 어디에서나 접근 할 수 있는 안전한 암호를 생성하십시오.
+cfr-whatsnew-lockwise-backup-link-text = 백업 켜기
+cfr-whatsnew-lockwise-take-title = 비밀번호를 가지고 다니세요
+cfr-whatsnew-lockwise-take-body = { -lockwise-brand-short-name } 모바일 앱을 사용하면 어디서든 백업된 비밀번호에 안전하게 접근 할 수 있습니다.
+cfr-whatsnew-lockwise-take-link-text = 앱 받기
 
 ## Bookmark Sync
 
@@ -109,3 +130,16 @@ cfr-doorhanger-firefox-send-header = 이 PDF를 안전하게 공유하세요
 cfr-doorhanger-firefox-send-body = 종단 간 암호화와 완료시 사라지는 링크를 사용하여 중요한 문서를 안전하게 보관할 수 있습니다.
 cfr-doorhanger-firefox-send-ok-button = { -send-brand-name } 사용해보기
     .accesskey = T
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-ok-button = 보호 보기
+    .accesskey = P
+cfr-doorhanger-socialtracking-close-button = 닫기
+    .accesskey = C
+cfr-doorhanger-socialtracking-heading = { -brand-short-name }가 여기에서 소셜 네트워크가 사용자를 추적하는 것을 중지했습니다
+cfr-doorhanger-socialtracking-description = 개인 정보는 중요합니다. { -brand-short-name }는 이제 일반적인 소셜 미디어 추적기를 차단하여 온라인에서 수행하는 작업에 대해 수집할 수 있는 데이터의 양을 제한합니다.
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name }가 이 페이지에서 핑커프린터를 차단했습니다
+cfr-doorhanger-fingerprinters-description = 개인 정보는 중요합니다. { -brand-short-name }는 이제 디바이스에 대해 고유하게 식별 가능한 정보 조각을 수집하여 사용자를 추적하는 핑거프린터를 차단합니다.
+cfr-doorhanger-cryptominers-heading = { -brand-short-name }가 이 페이지에서 크립토마이너를 차단했습니다
+cfr-doorhanger-cryptominers-description = 개인 정보는 중요합니다. { -brand-short-name }는 이제 시스템의 컴퓨팅 능력을 사용하여 디지털 화폐를 채굴하는 크립토마이너를 차단합니다.

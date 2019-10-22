@@ -3,14 +3,28 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 # An old map warning, see https://en.wikipedia.org/wiki/Here_be_dragons
-about-config-warning-title = اینجا اژدهاها هستند!
+about-config-warning-title = اینجا گودزیلا خوابیده!
 about-config-warning-text = تغییر این تنظیماتِ پیشرفته، می‌تواند برای پایداری، امنیت، و کارایی این برنامه مضر باشد. تنها در صورتی که از کاری که می‌کنید اطمینان دارید، ادامه دهید.
 about-config-warning-checkbox = دوباره من را آزار دهید، لطفاً!
 about-config-warning-button = خطر را می‌پذیرم
-about-config-title = about:config
 about-config2-title = پیکربندی‌های پیشرفته
 about-config-search-input =
     .placeholder = جستجو
+
+## These strings appear on the warning you see when first visiting about:config.
+
+about-config-intro-warning-title = با هوشیاری پیش بروید
+about-config-intro-warning-text = تغییر پیکربندی‌های پیشرفتهٔ ترجیحات می‌تواند بر عملکرد یا امنیت { -brand-short-name } تأثیر بگذارد.
+about-config-intro-warning-checkbox = وقتی سعی می‌کنم به این ترجیحات دسترسی پیدا کنم به من هشدار دهید
+about-config-intro-warning-button = پذیرش خطر و ادامه
+
+
+
+# This is shown on the page before searching but after the warning is accepted.
+about-config-caution-text = تغییر این ترجیحات می‌تواند بر عملکرد یا امنیت { -brand-short-name } تأثیر بگذارد.
+about-config-page-title = ترجیحات پیشرفته
+about-config-search-input1 =
+    .placeholder = جست‌وجوی نام ترجیحات
 about-config-show-all = نمایش همه
 about-config-pref-add = اضافه کردن
 about-config-pref-toggle = تغییر وضعیت
@@ -18,6 +32,18 @@ about-config-pref-edit = ویرایش
 about-config-pref-save = ذخیره
 about-config-pref-reset = بازنشانی
 about-config-pref-delete = حذف
+about-config-pref-add-button =
+    .title = افزودن
+about-config-pref-toggle-button =
+    .title = تغییر وضعیت
+about-config-pref-edit-button =
+    .title = ویرایش
+about-config-pref-save-button =
+    .title = ذخیره
+about-config-pref-reset-button =
+    .title = مقدار اولیه
+about-config-pref-delete-button =
+    .title = حذف
 
 ## Labels for the type selection radio buttons shown when adding preferences.
 

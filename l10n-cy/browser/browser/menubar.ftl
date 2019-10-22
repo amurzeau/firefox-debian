@@ -153,7 +153,7 @@ menu-view-full-screen =
     .label = Sgrin Lawn
     .accesskey = S
 
-##
+
 
 menu-view-show-all-tabs =
     .label = Dangos Pob Tab
@@ -212,11 +212,20 @@ menu-tools-addons =
 menu-tools-sync-sign-in =
     .label = Mewngofnodi i { -sync-brand-short-name }…
     .accesskey = Y
+menu-tools-fxa-sign-in =
+    .label = Mewngofnodi i { -brand-product-name }…
+    .accesskey = M
+menu-tools-turn-on-sync =
+    .label = Cychwyn { -sync-brand-short-name }…
+    .accesskey = C
 menu-tools-sync-now =
     .label = Cydweddu Nawr
     .accesskey = y
 menu-tools-sync-re-auth =
     .label = Ail gysylltu i { -sync-brand-short-name }…
+    .accesskey = A
+menu-tools-fxa-re-auth =
+    .label = Ailgysylltu â { -brand-product-name }…
     .accesskey = A
 menu-tools-web-developer =
     .label = Datblygwr Gwe

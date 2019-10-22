@@ -48,7 +48,7 @@ onboarding-sync-form-skip-login-button = გამოტოვება
 ## This is part of the line "Enter your email to continue to Firefox Sync"
 
 onboarding-sync-form-header = შეიყვანეთ თქვენი ელფოსტა
-onboarding-sync-form-sub-header = { -sync-brand-name }ზე გადასასვლელად.
+onboarding-sync-form-sub-header = { -sync-brand-name }-ზე გადასასვლელად
 
 ## These are individual benefit messages shown with an image, title and
 ## description.
@@ -89,7 +89,7 @@ onboarding-tracking-protection-button2 = როგორ მუშაობს
 onboarding-data-sync-title = წაიყოლეთ თქვენი პარამეტრები თან
 # "Sync" is short for synchronize.
 onboarding-data-sync-text2 = დაასინქრონეთ თქვენი სანიშნები, პაროლები და სხვა მონაცემები ყველგან, სადაც გიყენიათ { -brand-product-name }.
-onboarding-data-sync-button2 = გამოიყენეთ { -sync-brand-short-name }
+onboarding-data-sync-button2 = { -sync-brand-short-name } – შესვლა
 onboarding-firefox-monitor-title = შეიტყვეთ, მონაცემების მიტაცების შესახებ
 onboarding-firefox-monitor-text = { -monitor-brand-name } მუდმივად გადაამოწმებს, არის თუ არა თქვენი ელფოსტა მიტაცებულ მონაცემებს შორის და გაცნობებთ აღმოჩენის შემთხვევაში.
 onboarding-firefox-monitor-button = გამოიწერეთ ცნობები

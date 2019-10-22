@@ -207,6 +207,62 @@ applications-type-column =
 applications-action-column =
     .label = Amal
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } fayl
+applications-action-save =
+    .label = Faylni saqlash
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = { $app-name }dan foydalanish
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = { $app-name }dan foydalanish (standart)
+applications-use-other =
+    .label = Boshqasidan foydalanish
+applications-select-helper = Yordamchi ilova dasturlarni tanlash
+applications-manage-app =
+    .label = Ilova dasturlar ma`lumotlari...
+applications-always-ask =
+    .label = Doimo soʻralsin
+applications-type-pdf = Koʻchirilib yuriladigan hujjat formati (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = { $plugin-name }`dan foydalanish ({ -brand-short-name }da)
+applications-preview-inapp =
+    .label = { -brand-short-name }da koʻrish
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 drm-content-header = Raqamli huquqlar boshqaruvi (DRM) kontenti
 play-drm-content =
     .label = DRM boshqaruvdagi kontentni ishga tushirish
@@ -525,6 +581,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Parol ustasini oʻzgartirish
     .accesskey = u
+forms-master-pw-fips-title = Siz hozirda FIPS usulidasiz. FIPS boʻsh boʻlmagan master maxfiy soʻzni talab qiladi.
+forms-master-pw-fips-desc = Maxfiy soʻzni oʻzgartirib boʻlmadi
 
 ## Privacy Section - History
 
@@ -591,6 +649,13 @@ addressbar-locbar-openpage-option =
 addressbar-suggestions-settings = Qidiruv tizimi tavsiyalari uchun sozlamalarni o‘zgartirish
 
 ## Privacy Section - Content Blocking
+
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+
+##
 
 
 ## Privacy Section - Tracking

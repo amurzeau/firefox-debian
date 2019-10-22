@@ -98,9 +98,11 @@ detail-private-browsing-description2 = Cuando esté permitido, la extensión ten
 # cannot be overridden by the user.
 detail-private-disallowed-label = No se permite en ventanas privadas
 detail-private-disallowed-description = Esta extensión no se ejecuta durante la navegación privada. <label data-l10n-name="detail-private-browsing-learn-more">Descubra más</label>
+detail-private-disallowed-description2 = Esta extensión no se ejecuta mientras esté en navegación privada. <a data-l10n-name="learn-more">Saber más</a>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = Necesita acceder a ventanas privadas
 detail-private-required-description = Esta extensión tiene acceso a sus actividades en línea mientras navega de forma privada. <label data-l10n-name="detail-private-browsing-learn-more">Descubra más</label>
+detail-private-required-description2 = Esta extensión tiene acceso a su actividad en línea mientras navega de forma privada. <a data-l10n-name="learn-more">Saber más</a>
 detail-private-browsing-on =
     .label = Permitir
     .tooltiptext = Activar en navegación privada
@@ -155,9 +157,6 @@ private-browsing-description2 =
     la extensión no funcionará durante la navegación privada, y no tendrá acceso a tus actividades en línea
     ahí. Hemos realizado este cambio para mantener privada tu navegación privada.
     <label data-l10n-name = "private-browsing-learn-more">Descubre cómo administrar la configuración de las extensiones.</label>
-extensions-view-discover =
-    .name = Obtener complementos
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-discopane =
     .name = Recomendaciones
     .tooltiptext = { extensions-view-discopane.name }
@@ -253,6 +252,12 @@ shortcuts-modifier-other = Incluir Ctrl o Alt
 shortcuts-invalid = Combinación no válida
 shortcuts-letter = Escriba una letra
 shortcuts-system = No se puede sobrescribir un acceso directo de { -brand-short-name }.
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Duplicar acceso directo
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } se está usando como atajo en más de un caso. Los accesos directos duplicados pueden causar un comportamiento inesperado.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -295,6 +300,10 @@ install-theme-button = Instalar tema
 # the detailed add-on view is opened, from where the add-on can be managed.
 manage-addon-button = Administrar
 find-more-addons = Buscar más complementos
+# This is a label for the button to open the "more options" menu, it is only
+# used for screen readers.
+addon-options-button =
+    .aria-label = Más opciones
 
 ## Add-on actions
 
@@ -313,6 +322,16 @@ release-notes-addon-button = Notas de la versión
 permissions-addon-button = Permisos
 addons-enabled-heading = Activado
 addons-disabled-heading = Desactivado
+extension-enabled-heading = Habilitado
+extension-disabled-heading = Deshabilitado
+theme-enabled-heading = Habilitado
+theme-disabled-heading = Deshabilitado
+plugin-enabled-heading = Habilitado
+plugin-disabled-heading = Deshabilitado
+dictionary-enabled-heading = Habilitado
+dictionary-disabled-heading = Deshabilitado
+locale-enabled-heading = Habilitado
+locale-disabled-heading = Deshabilitado
 ask-to-activate-button = Preguntar antes de activar
 always-activate-button = Activar siempre
 never-activate-button = No activar nunca
@@ -355,6 +374,11 @@ install-update-button = Actualizar
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed =
     .title = Permitida en ventanas privadas
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed2 =
+    .title = Permitido en ventanas privadas
+    .aria-label = { addon-badge-private-browsing-allowed2.title }
 addon-detail-private-browsing-help = Cuando está activada, la extensión tendrá acceso a todo lo que haces mientras navegas de forma privada. <a data-l10n-name="learn-more">Descubre más</a>
 addon-detail-private-browsing-allow = Permitir
 addon-detail-private-browsing-disallow = No permitir
@@ -363,6 +387,11 @@ addon-detail-private-browsing-disallow = No permitir
 addon-badge-recommended =
     .title = Recomendado
     .alt = Recomendado
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended2 =
+    .title = { -brand-product-name } solo recomienda extensiones que cumplan con nuestros estándares de seguridad y rendimiento
+    .aria-label = { addon-badge-recommended2.title }
 available-updates-heading = Actualizaciones disponibles
 recent-updates-heading = Actualizaciones recientes
 release-notes-loading = Cargando…

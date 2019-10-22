@@ -111,7 +111,7 @@ menu-view-bookmarks =
 menu-view-history-button =
     .label = 歷史
 menu-view-synced-tabs-sidebar =
-    .label = 已同步的分頁
+    .label = 同步的分頁
 menu-view-full-zoom =
     .label = 縮放
     .accesskey = Z
@@ -153,7 +153,7 @@ menu-view-full-screen =
     .label = 全螢幕
     .accesskey = F
 
-##
+
 
 menu-view-show-all-tabs =
     .label = 顯示所有分頁
@@ -172,7 +172,7 @@ menu-history-show-all-history =
 menu-history-clear-recent-history =
     .label = 清除最近的歷史記錄…
 menu-history-synced-tabs =
-    .label = 已同步的分頁
+    .label = 同步的分頁
 menu-history-restore-last-session =
     .label = 回復先前的瀏覽狀態
 menu-history-hidden-tabs =
@@ -212,11 +212,20 @@ menu-tools-addons =
 menu-tools-sync-sign-in =
     .label = 登入至 { -sync-brand-short-name }…
     .accesskey = Y
+menu-tools-fxa-sign-in =
+    .label = 登入 { -brand-product-name }…
+    .accesskey = g
+menu-tools-turn-on-sync =
+    .label = 開啟 { -sync-brand-short-name }…
+    .accesskey = n
 menu-tools-sync-now =
     .label = 立刻同步
     .accesskey = S
 menu-tools-sync-re-auth =
     .label = 重新連線至 { -sync-brand-short-name }…
+    .accesskey = R
+menu-tools-fxa-re-auth =
+    .label = 重新連線到 { -brand-product-name }…
     .accesskey = R
 menu-tools-web-developer =
     .label = 網頁開發者

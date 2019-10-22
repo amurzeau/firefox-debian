@@ -153,7 +153,7 @@ menu-view-full-screen =
     .label = Połna wobrazowka
     .accesskey = P
 
-##
+
 
 menu-view-show-all-tabs =
     .label = Wšykne rejtarki pokazaś
@@ -212,11 +212,20 @@ menu-tools-addons =
 menu-tools-sync-sign-in =
     .label = Pla { -sync-brand-short-name } pśizjawiś…
     .accesskey = P
+menu-tools-fxa-sign-in =
+    .label = Pśizjawśo se pla { -brand-product-name }…
+    .accesskey = a
+menu-tools-turn-on-sync =
+    .label = { -sync-brand-short-name } zmóžniś
+    .accesskey = m
 menu-tools-sync-now =
     .label = Něnto synchronizěrowaś
     .accesskey = N
 menu-tools-sync-re-auth =
     .label = Znowego z { -sync-brand-short-name } zwězaś…
+    .accesskey = Z
+menu-tools-fxa-re-auth =
+    .label = Zasej z { -brand-product-name } zwězaś…
     .accesskey = Z
 menu-tools-web-developer =
     .label = Webwuwijaŕ

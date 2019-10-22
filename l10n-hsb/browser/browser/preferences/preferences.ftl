@@ -259,6 +259,62 @@ applications-type-column =
 applications-action-column =
     .label = Akcija
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = Dataja { $extension }
+applications-action-save =
+    .label = Dataju składować
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = { $app-name } wužiwać
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = { $app-name } wužiwać (standard)
+applications-use-other =
+    .label = Druhu wužiwać…
+applications-select-helper = Pomocne nałoženje wubrać
+applications-manage-app =
+    .label = Podrobnosće nałoženja…
+applications-always-ask =
+    .label = Přeco so prašeć
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = { $plugin-name } wužiwać (w { -brand-short-name })
+applications-preview-inapp =
+    .label = Přehlad w { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = Wobsah Digital Right Management (DRM)
 play-drm-content =
     .label = Wobsah wodźeny přez DRM wothrać
@@ -345,6 +401,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Při pisanju tekst pytać
     .accesskey = P
+browsing-picture-in-picture-toggle-enabled =
+    .label = Wodźenske elementy wideja wobraz-we-wobrazu zmóžnić
+    .accesskey = W
+browsing-picture-in-picture-learn-more = Dalše informacije
 browsing-cfr-recommendations =
     .label = Rozšěrjenja doporučić, hdyž přehladujeće
     .accesskey = R
@@ -453,6 +513,12 @@ search-bar-shown =
     .label = Pytanske polo symbolowej lajsće přidać
 search-engine-default-header = Standardna pytawa
 search-engine-default-desc = Wubjerće standardnu pytawu, kotraž ma so w adresowym polu a pytanskim polu wužiwać.
+search-engine-default-private-desc = Wubjerće standardnu pytawu za wužiwanje w priwatnych woknach.
+search-separate-default-engine =
+    .label = Tutu pytawu w priwatnych woknach wužiwać
+    .accesskey = T
+search-suggestions-header = Pytanske namjety
+search-suggestions-desc = Wubjerće, kak so namjety z pytawow jewja.
 search-suggestions-option =
     .label = Pytanske namjety podać
     .accesskey = P
@@ -466,6 +532,7 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Pytanske namjety před přehladowanskej historiju we wuslědkach adresoweho pola pokazać
+suggestions-addressbar-settings = Wubjerće nastajenja za přehladowansku historiju, zapołožki a rajtarkowe namjety
 search-suggestions-cant-show = Pytanske namjety njebudu so we wuslědkach adresoweho pola pokazać, dokelž sće { -brand-short-name } tak konfigurował, zo sej ženje historiju njespomjatkuje.
 search-one-click-header = Pytawy z jednym kliknjenjom
 search-one-click-desc = Wubjerće alternatiwne pytawy, kotrež so pod adresowym polom a pytanskim polom jewja, hdyž klučowe słowo zapodawaće.
@@ -502,6 +569,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Wzmiće swój web sobu
 sync-signedout-description = Synchronizujće swoje zapołožki, historiju, rajtarki, hesła, přidatki a nastajenja mjez wšěmi wašimi gratami.
 sync-signedout-account-title = Zwjazać z: { -fxaccount-brand-name }
@@ -522,11 +593,17 @@ sync-mobile-promo = Firefox za <img data-l10n-name="android-icon"/> <a data-l10n
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = Profilowy wobraz změnić
 sync-disconnect =
     .label = Zwisk dźělić…
     .accesskey = Z
+sync-sign-out =
+    .label = Wotzjewić…
+    .accesskey = t
 sync-manage-account = Konto rjadować
     .accesskey = o
 sync-signedin-unverified = { $email } njeje so přepruwował.
@@ -542,6 +619,48 @@ sync-sign-in =
     .accesskey = z
 sync-signedin-settings-header = Nastajenja synchronizacije
 sync-signedin-settings-desc = Wubjerće, štož ma so z { -brand-short-name } na wašich gratach synchronizować.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Synchronizacija: ZAPINJENY
+prefs-syncing-off = Synchronizacija: WUPINJENY
+prefs-sync-setup =
+    .label = { -sync-brand-short-name } konfigurować
+    .accesskey = k
+prefs-sync-offer-setup-label = Synchronizujće swoje zapołožki, historiju, rajtarki, hesła, přidatki a nastajenja mjez wšěmi wašimi gratami.
+prefs-sync-now =
+    .labelnotsyncing = Nětko synchronizować
+    .accesskeynotsyncing = N
+    .labelsyncing = Synchronizuje so…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = Synchronizujeće tuchwilu slědowace zapiski:
+sync-currently-syncing-bookmarks = Zapołožki
+sync-currently-syncing-history = Historija
+sync-currently-syncing-tabs = Wočinjene rajtarki
+sync-currently-syncing-logins-passwords = Přizjewjenja a hesła
+sync-currently-syncing-addresses = Adresy
+sync-currently-syncing-creditcards = Kreditne karty
+sync-currently-syncing-addons = Přidatki
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Nastajenja
+       *[other] Nastajenja
+    }
+sync-change-options =
+    .label = Změnić…
+    .accesskey = Z
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = Wubjerće, štož ma so synchronizować
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Změny składować
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = Dźělić
+    .buttonaccesskeyextra2 = D
 sync-engine-bookmarks =
     .label = Zapołožki
     .accesskey = Z
@@ -554,6 +673,10 @@ sync-engine-tabs =
     .accesskey = r
 sync-engine-logins =
     .label = Přizjewjenja
+    .tooltiptext = Wužiwarske mjena a hesła, kotrež sće składował
+    .accesskey = P
+sync-engine-logins-passwords =
+    .label = Přizjewjenja a hesła
     .tooltiptext = Wužiwarske mjena a hesła, kotrež sće składował
     .accesskey = P
 sync-engine-addresses =
@@ -576,6 +699,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Powšitkowne nastajenja, nastajenja priwatnosće a wěstoty, kotrež sće změnił
     .accesskey = N
+
+## The device name controls.
+
 sync-device-name-header = Mjeno grata
 sync-device-name-change =
     .label = Mjeno grata změnić…
@@ -608,6 +734,10 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Mócne hesła wutworić a namjetować
     .accesskey = h
+forms-breach-alerts =
+    .label = Warnowanja za hesła zranjenych websydłow
+    .accesskey = z
+forms-breach-alerts-learn-more-link = Dalše informacije
 forms-fill-logins-and-passwords =
     .label = Přizjewjenja a hesła awtomatisce zapisać
     .accesskey = z
@@ -620,6 +750,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Hłowne hesło změnić…
     .accesskey = m
+forms-master-pw-fips-title = Sće tuchwilu we FIPS-modusu. FIPS sej hłowne hesło žada.
+forms-master-pw-fips-desc = Změnjenje hesła njeje so poradźiło
 
 ## Privacy Section - History
 
@@ -725,8 +857,9 @@ addressbar-suggestions-settings = Nastajenja za namjety pytawy změnić
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Blokowanje wobsaha
-content-blocking-enhanced-tracking-protection = Polěpšeny slědowanski škit
 content-blocking-section-description = Škitajće swoju priwatnosć, mjeztym zo přehladujeće. Blokujće njewidźomny wobsah, kotryž sydła slěduje, kotrež wopytujeće, a profil wo was twori. Hdyž tajki wobsah blokujeće, dadźa so strony snano spěšnišo začitać.
+content-blocking-enhanced-tracking-protection = Polěpšeny slědowanski škit
+content-blocking-section-top-level-description = Přesćěhowaki wam online slěduja, zo bychu informacije wo wašich přehladowanskich zwučenosćach a zajimach hromadźili. { -brand-short-name } wjele z tutych přesćěhowakow a druhe złóstne skripty blokuje.
 content-blocking-learn-more = Dalše informacije
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -744,6 +877,23 @@ content-blocking-strict-description = Sylniši škit, móže zawinować, zo něk
 content-blocking-custom-desc = Wubjerće, štož chceće blokować.
 content-blocking-private-trackers = Znate přeścěhowaki jenož w priwatnych woknach
 content-blocking-third-party-cookies = Slědowace placki třećich
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Standard
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = Striktny
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = Swójski
+    .accesskey = S
+
+
+
 content-blocking-etp-standard-desc = Wuwaženy za škit a wukon. Strony so normalnje začitaja.
 content-blocking-etp-strict-desc = Mócniši škit, ale móže zawinować, zo někotre sydła abo wobsa hižo njefunguja.
 content-blocking-etp-custom-desc = Wubjerće, kotre přesćěhowaki a skripty maja so blokować.

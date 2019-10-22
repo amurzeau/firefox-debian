@@ -82,6 +82,28 @@ cfr-whatsnew-button =
     .label = Novas
     .tooltiptext = Novas
 cfr-whatsnew-panel-header = Novas
+cfr-whatsnew-release-notes-link-text = Lege le notas de version
+cfr-whatsnew-fx70-title = { -brand-short-name } lucta ora plus fortemente pro tu confidentialitate
+cfr-whatsnew-fx70-body = Le ultime actualisation meliora le functionalitate de protection del traciamento e rende plus facile que mais crear contrasignos secur pro cata sito.
+cfr-whatsnew-tracking-protect-title = Protege te ab le traciatores
+cfr-whatsnew-tracking-protect-body = { -brand-short-name } bloca multe commun traciatores, social e tra sitos, que seque lo que tu face online.
+cfr-whatsnew-tracking-protect-link-text = Vide tu reporto
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+        [one] Traciator blocate
+       *[other] Traciatores blocate
+    }
+cfr-whatsnew-tracking-blocked-subtitle = Desde { DATETIME($earliestDate, month: "long", year: "numeric") }
+cfr-whatsnew-tracking-blocked-link-text = Vide reporto
+cfr-whatsnew-lockwise-backup-title = Reserva tu contrasignos
+cfr-whatsnew-lockwise-backup-body = Genera contrasignos secur pro acceder ab cata apparato connexe a tu conto.
+cfr-whatsnew-lockwise-backup-link-text = Activar le salvamentos
+cfr-whatsnew-lockwise-take-title = Porta tu contrasignos con te
+cfr-whatsnew-lockwise-take-body = Le application mobile { -lockwise-brand-short-name } te pone in grado de acceder ab ubique e con securitate a tu contrasignos reservate.
+cfr-whatsnew-lockwise-take-link-text = Discarga le app
 
 ## Bookmark Sync
 
@@ -111,3 +133,16 @@ cfr-doorhanger-firefox-send-header = Comparti con securitate iste PDF
 cfr-doorhanger-firefox-send-body = Mantene secur del oculos indiscrete tu documentos sensibile con cryptographia bilateral e un ligamine que dispare quando tu ha finite.
 cfr-doorhanger-firefox-send-ok-button = Prova { -send-brand-name }
     .accesskey = P
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-ok-button = Vider protectiones
+    .accesskey = p
+cfr-doorhanger-socialtracking-close-button = Clauder
+    .accesskey = C
+cfr-doorhanger-socialtracking-heading = { -brand-short-name } arrestava ci un rete social de te traciar
+cfr-doorhanger-socialtracking-description = Tu confidentialitate es importante. Ora { -brand-short-name } bloca traciatores de retes social commun, limitante quante datos illos pote colliger re que tu face online.
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name } blocava un dactylogrammator in iste pagina
+cfr-doorhanger-fingerprinters-description = Tu confidentialitate es importante. { -brand-short-name } bloca ora le dactylogrammatores, que collige pecias de informationes de tu apparatos pro te traciar.
+cfr-doorhanger-cryptominers-heading = { -brand-short-name } blocava un cryptominator in iste pagina
+cfr-doorhanger-cryptominers-description = Tu confidentialitate es importante. Ora { -brand-short-name } bloca cryptominatores, que usa le potentia de calculo de tu systemas pro cavar moneta digital.

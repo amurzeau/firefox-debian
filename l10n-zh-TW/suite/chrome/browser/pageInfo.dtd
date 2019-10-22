@@ -24,6 +24,7 @@
 
 <!ENTITY  generalTab            "一般">
 <!ENTITY  generalTab.accesskey  "G">
+<!ENTITY  generalTitle          "標題:">
 <!ENTITY  generalURL            "網址:">
 <!ENTITY  generalType           "類型:">
 <!ENTITY  generalMode           "繪製模式:">
@@ -62,6 +63,8 @@
 <!ENTITY  mediaTab.accesskey    "M">
 <!ENTITY  mediaURL              "網址:">
 <!ENTITY  mediaAlt              "替代文字:">
+<!ENTITY  mediaLocation         "位置:">
+<!ENTITY  mediaText             "關聯文字:">
 <!ENTITY  mediaAltHeader        "替代文字">
 <!ENTITY  mediaAddress          "位置">
 <!ENTITY  mediaType             "類型">
@@ -70,6 +73,7 @@
 <!ENTITY  mediaDimensions       "尺寸:">
 <!ENTITY  mediaPhysDimensions   "真實大小:">
 <!ENTITY  mediaTitle            "標題:">
+<!ENTITY  mediaDimension        "尺寸:">
 <!ENTITY  mediaLongdesc         "完整描述:">
 <!ENTITY  mediaBlockImage.accesskey "B">
 <!ENTITY  mediaSaveAs           "另存新檔…">
@@ -109,6 +113,8 @@
 <!ENTITY  securityView.identity.owner    "擁有者:">
 <!ENTITY  securityView.identity.domain   "網站:">
 <!ENTITY  securityView.identity.verifier "驗證機構:">
+
+<!ENTITY  securityView.identity.validity "到期於:">
 
 <!ENTITY  securityView.privacy.header                   "隱私及歷史記錄">
 <!ENTITY  securityView.privacy.history                  "我以前瀏覽過這個網站嗎？">

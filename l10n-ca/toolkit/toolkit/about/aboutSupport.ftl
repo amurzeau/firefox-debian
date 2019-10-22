@@ -36,8 +36,8 @@ app-basics-update-channel = Canal d'actualitzacions
 # as in "Folder for updates". "Update" is a noun, not a verb.
 app-basics-update-dir =
     { PLATFORM() ->
-        [linux] Directori d'actualització
-       *[other] Carpeta d'actualització
+        [linux] Directori d'actualitzacions
+       *[other] Carpeta d'actualitzacions
     }
 app-basics-update-history = Historial d'actualitzacions
 app-basics-show-update-history = Mostra l'historial d'actualitzacions
@@ -51,11 +51,12 @@ app-basics-profile-dir =
 app-basics-enabled-plugins = Connectors habilitats
 app-basics-build-config = Configuració de la versió
 app-basics-user-agent = Agent d'usuari
-app-basics-os = SO
+app-basics-os = Sistema operatiu
 app-basics-memory-use = Utilització de la memòria
 app-basics-performance = Rendiment
 app-basics-service-workers = Processos de treball de servei registrats
 app-basics-profiles = Perfils
+app-basics-launcher-process-status = Procés d'inici
 app-basics-multi-process-support = Finestres multiprocés
 app-basics-remote-processes-count = Processos remots
 app-basics-enterprise-policies = Polítiques d'empresa
@@ -96,6 +97,8 @@ js-incremental-gc = Recollida de deixalles incremental
 a11y-title = Accessibilitat
 a11y-activated = Activat
 a11y-force-disabled = Evita l'accessibilitat
+a11y-handler-used = Gestor d'accessibilitat utilitzat
+a11y-instantiator = Instanciador d'accessibilitat
 library-version-title = Versions de la biblioteca
 copy-text-to-clipboard-label = Copia el text al porta-retalls
 copy-raw-data-to-clipboard-label = Copia les dades sense processar al porta-retalls
@@ -110,6 +113,13 @@ sandbox-sys-call-number = Crida del sistema
 sandbox-sys-call-args = Arguments
 safe-mode-title = Proveu el mode segur
 restart-in-safe-mode-label = Reinicia amb els complements inhabilitats…
+
+## Media titles
+
+audio-backend = Sistema de fons d'àudio
+max-audio-channels = Nombre màxim de canals
+channel-layout = Disposició de canals preferida
+sample-rate = Freqüència de mostratge preferida
 media-title = Multimèdia
 media-output-devices-title = Dispositius de sortida
 media-input-devices-title = Dispositius d'entrada
@@ -122,6 +132,10 @@ media-device-format = Format
 media-device-channels = Canals
 media-device-rate = Freqüència
 media-device-latency = Latència
+media-capabilities-title = Capacitats multimèdia
+
+
+
 intl-title = Internacionalització i localització
 intl-app-title = Paràmetres de l'aplicació
 intl-locales-requested = Llengües sol·licitades
@@ -222,7 +236,6 @@ d3d9video-crash-buard = Descodificador de vídeo D3D9
 glcontext-crash-guard = OpenGL
 reset-on-next-restart = Reinicialitza als valors per defecte en el proper reinici
 gpu-process-kill-button = Finalitza el procés de GPU
-audio-backend = Sistema de fons d'àudio
 min-lib-versions = Versió mínima esperada
 loaded-lib-versions = Versió en ús
 has-seccomp-bpf = Seccomp-BPF (filtratge de crides del sistema)
@@ -235,6 +248,8 @@ content-sandbox-level = Nivell de l'entorn de proves de processos de contingut
 effective-content-sandbox-level = Nivell de l'entorn de proves de processos de contingut efectiu
 sandbox-proc-type-content = contingut
 sandbox-proc-type-media-plugin = connector multimèdia
+launcher-process-status-0 = Activat
+launcher-process-status-1 = Desactivat a causa d'un error
 # Variables
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows

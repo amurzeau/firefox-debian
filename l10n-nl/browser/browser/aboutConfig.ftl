@@ -7,23 +7,46 @@ about-config-warning-title = Here be dragons!
 about-config-warning-text = Het wijzigen van deze uitgebreide voorkeuren kan schadelijk zijn voor de stabiliteit, veiligheid en prestaties van deze toepassing. Ga alleen door als u weet wat u doet.
 about-config-warning-checkbox = Blijf me tot last zijn!
 about-config-warning-button = Ik aanvaard het risico
-
-about-config-title = about:config
-
 about-config2-title = Geavanceerde configuraties
-
 about-config-search-input =
     .placeholder = Zoeken
-about-config-show-all = Alles tonen
 
+## These strings appear on the warning you see when first visiting about:config.
+
+about-config-intro-warning-title = Ga voorzichtig verder
+about-config-intro-warning-text = Het wijzigen van geavanceerde configuratievoorkeuren kan de prestaties of veiligheid van { -brand-short-name } beïnvloeden.
+about-config-intro-warning-checkbox = Mij waarschuwen als ik deze voorkeuren probeer te benaderen
+about-config-intro-warning-button = Het risico aanvaarden en doorgaan
+
+
+
+# This is shown on the page before searching but after the warning is accepted.
+about-config-caution-text = Het wijzigen van deze voorkeuren kan de prestaties of veiligheid van { -brand-short-name } beïnvloeden.
+about-config-page-title = Geavanceerde voorkeuren
+about-config-search-input1 =
+    .placeholder = Naam voorkeursinstelling zoeken
+about-config-show-all = Alles tonen
 about-config-pref-add = Toevoegen
 about-config-pref-toggle = Omschakelen
 about-config-pref-edit = Bewerken
 about-config-pref-save = Opslaan
 about-config-pref-reset = Herinitialiseren
 about-config-pref-delete = Verwijderen
+about-config-pref-add-button =
+    .title = Toevoegen
+about-config-pref-toggle-button =
+    .title = Omschakelen
+about-config-pref-edit-button =
+    .title = Bewerken
+about-config-pref-save-button =
+    .title = Opslaan
+about-config-pref-reset-button =
+    .title = Herinitialiseren
+about-config-pref-delete-button =
+    .title = Verwijderen
 
 ## Labels for the type selection radio buttons shown when adding preferences.
+
 about-config-pref-add-type-boolean = Boolean
 about-config-pref-add-type-number = Getal
 about-config-pref-add-type-string = String
@@ -34,6 +57,7 @@ about-config-pref-add-type-string = String
 ##
 ## Variables:
 ##   $value (String): The full value of the preference.
+
 about-config-pref-accessible-value-default =
     .aria-label = { $value } (standaard)
 about-config-pref-accessible-value-custom =

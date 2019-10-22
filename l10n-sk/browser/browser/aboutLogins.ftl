@@ -36,8 +36,7 @@ menu-menuitem-preferences =
         [windows] Možnosti
        *[other] Možnosti
     }
-menu-menuitem-feedback = Odoslať spätnú väzbu
-menu-menuitem-faq = Často kladené otázky
+about-logins-menu-menuitem-help = Pomocník
 menu-menuitem-android-app = { -lockwise-brand-short-name } pre Android
 menu-menuitem-iphone-app = { -lockwise-brand-short-name } pre iPhone a iPad
 
@@ -58,13 +57,24 @@ login-list-last-changed-option = poslednej úpravy
 login-list-last-used-option = posledného použitia
 login-list-intro-title = Nenašli sa žiadne prihlasovacie údaje
 login-list-intro-description = Tu sa zobrazia prihlasovacie údaje uložené v aplikácii { -brand-product-name }.
+about-logins-login-list-empty-search-title = Nenašli sa žiadne prihlasovacie údaje
+about-logins-login-list-empty-search-description = Vášmu vyhľadávaniu nezodpovedajú žiadne výsledky.
 login-list-item-title-new-login = Nové prihlasovacie údaje
 login-list-item-subtitle-new-login = Zadajte svoje prihlasovacie údaje
 login-list-item-subtitle-missing-username = (žiadne používateľské meno)
+about-logins-list-item-warning-icon =
+    .alt = Ikona varovania
+    .title = Únik dát
+about-logins-list-item-breach-icon =
+    .title = Únik dát
 
 ## Introduction screen
 
 login-intro-heading = Hľadáte svoje uložené prihlasovacie údaje? Nastavte si { -sync-brand-short-name }.
+login-intro-description = Ak ste si uložili prihlasovacie údaje do aplikácie { -brand-product-name } na inom zariadení, môžete ich získať takto:
+login-intro-instruction-fxa = Vytvorte si { -fxaccount-brand-name } alebo sa doň prihláste na zariadení, kde máte prihlasovacie údaje uložené
+login-intro-instruction-fxa-settings = Uistite sa, že máte v nastaveniach služby { -sync-brand-short-name } na danom zariadení zaškrtnutú možnosť synchronizácie prihlasovacích údajov
+about-logins-intro-instruction-help = Ak potrebujete ďalšiu pomoc, navštívte <a data-l10n-name="help-link">pomocníka { -lockwise-brand-short-name }</a>
 
 ## Login
 
@@ -74,10 +84,9 @@ login-item-delete-button = Odstrániť
 login-item-origin-label = Adresa webovej stránky
 login-item-origin =
     .placeholder = https://www.example.com
-login-item-open-site-button = Otvoriť
 login-item-username-label = Používateľské meno
-login-item-username =
-    .placeholder = name@example.com
+about-logins-login-item-username =
+    .placeholder = (žiadne používateľské meno)
 login-item-copy-username-button-text = Kopírovať
 login-item-copied-username-button-text = Skopírované!
 login-item-password-label = Heslo
@@ -106,12 +115,43 @@ master-password-reload-button =
 confirmation-dialog-cancel-button = Zrušiť
 confirmation-dialog-dismiss-button =
     .title = Zrušiť
+enable-password-sync-notification-message =
+    { PLATFORM() ->
+        [windows] Chcete mať svoje heslá všade so sebou? Otvorte nastavenia služby { -sync-brand-short-name } a zaškrtnite možnosť synchronizácie prihlasovacích údajov.
+       *[other] Chcete mať svoje heslá všade so sebou? Otvorte nastavenia služby { -sync-brand-short-name } a zaškrtnite možnosť synchronizácie prihlasovacích údajov.
+    }
+enable-password-sync-preferences-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Navštívte možnosti aplikácie { -sync-brand-short-name }
+           *[other] Navštívte možnosti aplikácie { -sync-brand-short-name }
+        }
+    .accesskey = m
 confirm-delete-dialog-title = Odstrániť tieto prihlasovacie údaje?
 confirm-delete-dialog-message = Túto akciu nie je možné vrátiť späť.
 confirm-delete-dialog-confirm-button = Odstrániť
+confirm-discard-changes-dialog-title = Chcete zahodiť neuložené zmeny?
+confirm-discard-changes-dialog-message = Všetky neuložené zmeny budú stratené.
+confirm-discard-changes-dialog-confirm-button = Zahodiť
 
 ## Breach Alert notification
 
+breach-alert-text = Na tejto stránke prišlo od vašej poslednej zmeny prihlasovacích údajov k úniku dát. Za účelom ochrany vášho účtu vám odporúčame zmeniť si heslo.
 breach-alert-link = Ďalšie informácie o tomto úniku.
 breach-alert-dismiss =
     .title = Zavrieť toto upozornenie
+
+## Error Messages
+
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login = Prihlasovacie údaje pre { $loginTitle } s rovnakým používateľským menom už existujú.
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = Prihlasovacie údaje pre { $loginTitle } s rovnakým používateľským menom už existujú. <a data-l10n-name="duplicate-link">Prejsť na existujúce prihlasovacie údaje.</a>
+# This is a generic error message.
+about-logins-error-message-default = Pri pokuse o uloženie tohto hesla nastala chyba.

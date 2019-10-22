@@ -262,6 +262,62 @@ applications-type-column =
 applications-action-column =
     .label = الإجراء
     .accesskey = ج
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = ملف { $extension }
+applications-action-save =
+    .label = احفظ الملف
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = استخدم { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = استخدم { $app-name } (المبدئي)
+applications-use-other =
+    .label = استخدم تطبيقًا آخر…
+applications-select-helper = اختر التّطبيق المساعد
+applications-manage-app =
+    .label = تفاصيل التطبيق…
+applications-always-ask =
+    .label = اسأل دائمًا
+applications-type-pdf = صيغة المستندات المحمولة (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = استخدم { $plugin-name } (في { -brand-short-name })
+applications-preview-inapp =
+    .label = عاين في { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = محتوى إدارة الحقوق الرقمية (DRM)
 play-drm-content =
     .label = شغّل المحتوى الخاضع لإدارة الحقوق الرقمية
@@ -275,7 +331,7 @@ update-history =
     .accesskey = ظ
 update-application-allow-description = اسمح ل‍{ -brand-short-name } أن
 update-application-auto =
-    .label = نزّل التحديثات تلقائيا (مستحسن)
+    .label = ينزّل التحديثات تلقائيا (مستحسن)
     .accesskey = ن
 update-application-check-choose =
     .label = يلتمس التحديثات، و لكن يترك لك خيار تنصيبها من عدمه
@@ -348,6 +404,7 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = ابحث عن النص مع بداية الكتابة
     .accesskey = ح
+browsing-picture-in-picture-learn-more = اطّلع على المزيد
 browsing-cfr-recommendations =
     .label = امتدادات موصى بها وأنت تتصفّح
     .accesskey = ص
@@ -458,6 +515,12 @@ search-bar-shown =
     .label = أضف شريط البحث إلى شريط الأدوات
 search-engine-default-header = محرك البحث المبدئي
 search-engine-default-desc = اختر محرك البحث المبدئي في شريطي العناوين و البحث.
+search-engine-default-private-desc = اختر أي محرّك بحث يكون المبدئي في النوافذ الخاصة.
+search-separate-default-engine =
+    .label = استعمل محرك البحث هذا في النوافذ الخاصة
+    .accesskey = س
+search-suggestions-header = اقتراحات البحث
+search-suggestions-desc = اختر طريقة عرض اقتراحات محركات البحث.
 search-suggestions-option =
     .label = اعرض اقتراحات البحث
     .accesskey = ع
@@ -471,6 +534,7 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = فضّل اقتراحات البحث على تأريخ التصفح في نتائج شريط العنوان
+suggestions-addressbar-settings = غيّر تفضيلاتك تجاه تأريخ التصفح والعلامات واقتراحات الألسنة
 search-suggestions-cant-show = لن تظهر اقتراحات البحث في نتائج شريط الموقع لأنّك أعددت { -brand-short-name } على ألّا يتذكر التأريخ.
 search-one-click-header = محركات البحث بنقرة واحدة
 search-one-click-desc = اختر محركات البحث البديلة التي تظهر تحت شريطي العناوين و البحث عندما تكتب كلمة بحث.
@@ -507,6 +571,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = خُذ الوِب معك
 sync-signedout-description = زامن علاماتك، و تأريخك، و ألسنتك، و كلمات سرك، و إضافاتك و التفضيلات بين كل أجهزتك.
 sync-signedout-account-title = اتصل باستخدام { -fxaccount-brand-name }
@@ -527,11 +595,17 @@ sync-mobile-promo = نزّل فيرفكس <img data-l10n-name="android-icon"/> <
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = غيّر صورة الحساب
 sync-disconnect =
     .label = اقطع الاتصال…
     .accesskey = ط
+sync-sign-out =
+    .label = اخرج…
+    .accesskey = خ
 sync-manage-account = أدِر الحساب
     .accesskey = س
 sync-signedin-unverified = { $email } ليس مؤكّدًا.
@@ -547,6 +621,48 @@ sync-sign-in =
     .accesskey = ل
 sync-signedin-settings-header = إعدادات المزامنة
 sync-signedin-settings-desc = اختر مالذي تريد مزامنته على أجهزتك باستخدام { -brand-short-name }.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = المزامنة: مفعلة
+prefs-syncing-off = المزامنة: معطلة
+prefs-sync-setup =
+    .label = اضبط { -sync-brand-short-name }…
+    .accesskey = ض
+prefs-sync-offer-setup-label = زامن علاماتك، و تأريخك، و ألسنتك، و كلمات سرك، و إضافاتك و التفضيلات بين كل أجهزتك.
+prefs-sync-now =
+    .labelnotsyncing = زامِن الآن
+    .accesskeynotsyncing = م
+    .labelsyncing = يُزامن…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = تُزامن الآن هذه المعلومات:
+sync-currently-syncing-bookmarks = العلامات
+sync-currently-syncing-history = التأريخ
+sync-currently-syncing-tabs = الألسنة المفتوحة
+sync-currently-syncing-logins-passwords = جلسات الولوج وكلمات السر
+sync-currently-syncing-addresses = العناوين
+sync-currently-syncing-creditcards = بطاقات الائتمان
+sync-currently-syncing-addons = الإضافات
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] الخيارات
+       *[other] التفضيلات
+    }
+sync-change-options =
+    .label = غيّرها…
+    .accesskey = غ
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = اختر ما تريد مزامنته
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = احفظ التغييرات
+    .buttonaccesskeyaccept = ح
+    .buttonlabelextra2 = اقطع الاتصال…
+    .buttonaccesskeyextra2 = ق
 sync-engine-bookmarks =
     .label = علاماتي
     .accesskey = م
@@ -559,6 +675,10 @@ sync-engine-tabs =
     .accesskey = س
 sync-engine-logins =
     .label = جلسات الولوج
+    .tooltiptext = أسماء المستخدمين وكلمات السر التي حفظتها
+    .accesskey = س
+sync-engine-logins-passwords =
+    .label = جلسات الولوج وكلمات السر
     .tooltiptext = أسماء المستخدمين وكلمات السر التي حفظتها
     .accesskey = س
 sync-engine-addresses =
@@ -581,6 +701,9 @@ sync-engine-prefs =
         }
     .tooltiptext = الإعدادات العامة، و إعدادات الخصوصية و الأمن التي غيرتها
     .accesskey = ت
+
+## The device name controls.
+
 sync-device-name-header = اسم الجهاز
 sync-device-name-change =
     .label = غيّر اسم الجهاز…
@@ -613,6 +736,7 @@ forms-exceptions =
 forms-generate-passwords =
     .label = ولّد كلمات سر قوية واقترحها عليّ
     .accesskey = ك
+forms-breach-alerts-learn-more-link = اطّلع على المزيد
 forms-fill-logins-and-passwords =
     .label = املأ جلسات الولوج وكلمات السر تلقائيا
     .accesskey = م
@@ -625,6 +749,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = غيّر كلمة السر الرئيسيّة…
     .accesskey = ر
+forms-master-pw-fips-title = أنت حاليًّا في وضع FIPS. يتطلّب FIPS كلمة سر غير فارغة.
+forms-master-pw-fips-desc = فشل تغيير كلمة السر
 
 ## Privacy Section - History
 
@@ -692,6 +818,8 @@ sitedata-block-desc = النوع المحجوب
     .accesskey = ن
 sitedata-option-block-trackers =
     .label = متعقّبات الأطراف الثالثة
+sitedata-option-block-cross-site-trackers =
+    .label = المتعقّبات بين المواقع
 sitedata-option-block-unvisited =
     .label = الكعكات من المواقع غير المُزارة
 sitedata-option-block-all-third-party =
@@ -727,6 +855,7 @@ addressbar-suggestions-settings = غيّر تفضيلات اقتراحات مح�
 
 content-blocking-header = حجب المحتوى
 content-blocking-section-description = احمِ خصوصيتك وأنت تتصفح الوِب بحجب المحتوى الذي يتعقّب المواقع التي تزورها دون أن تعلم، كما ويسجّلها باسمك. يمكنك بحجب جزء من هذا المحتوى تحميل الصفحات بسرعة أكبر.
+content-blocking-enhanced-tracking-protection = الحماية الموسّعة من التعقب
 content-blocking-learn-more = اطّلع على المزيد
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -744,15 +873,37 @@ content-blocking-strict-description = حماية أقوى وأعتى، لكنه�
 content-blocking-custom-desc = اختر ما تريد حجبه.
 content-blocking-private-trackers = المتعقّبات المعروفة فقط في النوافذ الخاصة
 content-blocking-third-party-cookies = الكعكات التعقّبية من الأطراف الثالثة
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = قياسي
+    .accesskey = ق
+enhanced-tracking-protection-setting-strict =
+    .label = صارم
+    .accesskey = ص
+enhanced-tracking-protection-setting-custom =
+    .label = مخصّص
+    .accesskey = خ
+
+
+
+content-blocking-etp-strict-desc = حماية أقوى وأعتى، لكنها قد تعطب محتويات بعض المواقع أو المواقع نفسها.
+content-blocking-etp-custom-desc = اختر المتعقّبات والسكربتات التي تريد حجبها.
+content-blocking-cross-site-tracking-cookies = كعكات تتعقّبك بين المواقع
+content-blocking-social-media-trackers = متعقبات مواقع التواصل الاجتماعي
 content-blocking-all-cookies = كل الكعكات
 content-blocking-unvisited-cookies = الكعكات من المواقع غير المُزارة
 content-blocking-all-windows-trackers = المتعقّبات المعروفة في كل النوافذ
 content-blocking-all-third-party-cookies = كل الكعكات من الأطراف الثالثة
 content-blocking-cryptominers = المُعدّنات المعمّاة
 content-blocking-fingerprinters = مسجّلات البصمات
-content-blocking-warning-title = كُن على علم!
+content-blocking-warning-title = انتبه!
 content-blocking-warning-description = يمكن أن تعطب بعض المواقع إن حُجب المحتوى. يمكنك بسهولة إلغاء أي نوع حجب للمواقع التي تثق بها.
 content-blocking-learn-how = اطّلع على الطريقة
+content-blocking-warning-learn-how = اطّلع على المزيد
 content-blocking-reload-description = عليك إعادة تحميل الألسنة لتأخذ هذه التغييرات مفعولها.
 content-blocking-reload-tabs-button =
     .label = أعِد تحميل كل الألسنة

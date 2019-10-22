@@ -56,7 +56,7 @@ serviceworker-worker-status-stopped = 중지됨
 serviceworker-worker-status-registering = 등록중
 # Text displayed when no service workers are visible for the current page. Clicking on the
 # link will open https://developer-mozilla-org/docs/Web/API/Service_Worker_API/Using_Service_Workers
-serviceworker-empty-intro = 여기서 검사하려면 서비스 워커를 등록해야 합니다. <a>자세히 보기</a>
+serviceworker-empty-intro = 여기서 검사하려면 서비스 워커를 등록해야 합니다. <a>더 알아보기</a>
 # Text displayed when there are no Service Workers to display for the current page,
 # introducing hints to debug Service Worker issues.
 serviceworker-empty-suggestions = 현재 페이지에 서비스 워커가 있어야 한다면 몇가지 시도해 볼 수 있습니다
@@ -69,5 +69,43 @@ serviceworker-empty-suggestions-debugger = 서비스 워커 등록과정을 살�
 # Suggestion to go to about:debugging in order to see Service Workers for all domains.
 # Clicking on the link will open about:debugging in a new tab.
 serviceworker-empty-suggestions-aboutdebugging = 다른 도메인의 서비스 워커를 조사해 보세요. <a>about:debugging 열기</a>
-# Text displayed when no manifest was found for the current page.
-manifest-empty-intro = 검사할 매니페스트가 없습니다.
+# Header for the Manifest page when we have an actual manifest
+manifest-view-header = 앱 매니페스트
+# Header for the Manifest page when there's no manifest to inspect
+# The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
+manifest-empty-intro = 여기서 검사하려면 웹 앱 매니페스트를 추가해야합니다. <a>더 알아보기</a>
+# Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
+manifest-item-warnings = 오류 및 경고
+# Header for the Identity section of Manifest inspection displayed in the application panel.
+manifest-item-identity = 아이디
+# Header for the Presentation section of Manifest inspection displayed in the application panel.
+manifest-item-presentation = 프레젠테이션
+# Header for the Icon section of Manifest inspection displayed in the application panel.
+manifest-item-icons = 아이콘
+# Text displayed while we are loading the manifest file
+manifest-loading = 매니페스트 로딩 중…
+# Text displayed when the manifest has been successfully loaded
+manifest-loaded-ok = 매니페스트가 로드되었습니다.
+# Text displayed when there has been an error while trying to load the manifest
+manifest-loaded-error = 매니페스트를 로드하는 동안 오류가 발생했습니다:
+# Text displayed when the page has no manifest available
+manifest-non-existing = 검사할 매니페스트가 없습니다.
+# Text displayed when the page has a manifest embedded in a Data URL and
+# thus we cannot link to it.
+manifest-json-link-data-url = 매니페스트는 데이터 URL에 포함됩니다.
+# Sidebar navigation item for Manifest sidebar item section
+sidebar-item-manifest = 매니페스트
+    .alt = 매니페스트 아이콘
+    .title = 매니페스트
+# Sidebar navigation item for Service Workers sidebar item section
+sidebar-item-service-workers = 서비스 워커
+    .alt = 서비스 워커 아이콘
+    .title = 서비스 워커
+# Text for the ALT and TITLE attributes of the warning icon
+icon-warning =
+    .alt = 경고 아이콘
+    .title = 경고
+# Text for the ALT and TITLE attributes of the error icon
+icon-error =
+    .alt = 오류 아이콘
+    .title = 오류

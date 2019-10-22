@@ -118,6 +118,9 @@ about-debugging-setup-usb-troubleshoot = Težave pri povezovanju z napravo USB? 
 # Network section of the Setup page
 about-debugging-setup-network =
     .title = Lokacija omrežja
+# Text shown in the Network section of the setup page with a link to troubleshoot connection errors.
+# The link goes to https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Debugging_over_a_network
+about-debugging-setup-network-troubleshoot = Težave pri povezovanju prek omrežne lokacije? <a>Odpravljanje težav</a>
 # Text of a button displayed after the network locations "Host" input.
 # Clicking on it will add the new network location to the list.
 about-debugging-network-locations-add-button = Dodaj
@@ -260,6 +263,15 @@ about-debugging-extension-id =
 about-debugging-worker-action-push = Potisni
 # This string is displayed as a label of the button that starts a service worker.
 about-debugging-worker-action-start = Začni
+# This string is displayed as a label of the button that pushes a test payload
+# to a service worker.
+# Note this relates to the "Push" API, which is normally not localized so it is
+# probably better to not localize it.
+about-debugging-worker-action-push2 = Potisni
+    .disabledTitle = Potiskanje Service Workerjev je trenutno onemogočeno za večprocesni { -brand-shorter-name }
+# This string is displayed as a label of the button that starts a service worker.
+about-debugging-worker-action-start2 = Začni
+    .disabledTitle = Začenjanje Service Workerjev je trenutno onemogočeno za večprocesni { -brand-shorter-name }
 # This string is displayed as a label of the button that unregisters a service worker.
 about-debugging-worker-action-unregister = Odstrani
 # Displayed for service workers in runtime pages that listen to Fetch events.

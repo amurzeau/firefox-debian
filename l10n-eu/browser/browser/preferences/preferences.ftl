@@ -253,6 +253,62 @@ applications-type-column =
 applications-action-column =
     .label = Ekintza
     .accesskey = E
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } fitxategia
+applications-action-save =
+    .label = Gorde fitxategia
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Erabili { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = { $app-name } erabili (lehenetsia)
+applications-use-other =
+    .label = Beste bat…
+applications-select-helper = Hautatu laguntza-aplikazioa
+applications-manage-app =
+    .label = Aplikazioaren xehetasunak…
+applications-always-ask =
+    .label = Galdetu beti
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Erabili { $plugin-name } ({ -brand-short-name }(e)n)
+applications-preview-inapp =
+    .label = Aurreikusi { -brand-short-name }(e)n
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = DRM edukia
 play-drm-content =
     .label = Erreproduzitu DRM bidez kontrolatutako edukia
@@ -339,6 +395,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Bilatu testua idazten hasi bezain laster
     .accesskey = B
+browsing-picture-in-picture-toggle-enabled =
+    .label = Gaitu bideoa beste bideo batean ikusteko kontrolak
+    .accesskey = G
+browsing-picture-in-picture-learn-more = Argibide gehiago
 browsing-cfr-recommendations =
     .label = Gomendatu hedapenak nabigatu ahala
     .accesskey = G
@@ -494,6 +554,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Eraman ezazu weba zurekin
 sync-signedout-description = Sinkronizatu laster-markak, historia, fitxak, pasahitzak, gehigarriak eta hobespenak zure gailu guztien artean.
 sync-signedout-account-title = Konektatu { -fxaccount-brand-name } erabiliz
@@ -513,6 +577,9 @@ sync-signedout-account-signin =
 sync-mobile-promo = Deskargatu <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> edo <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a>erako Firefox zure gailu mugikorrarekin sinkronizatzeko.
 
 ## Sync Section - Signed in
+
+
+## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Aldatu profileko argazkia
@@ -534,6 +601,34 @@ sync-sign-in =
     .accesskey = H
 sync-signedin-settings-header = Sinkronizazio-ezarpenak
 sync-signedin-settings-desc = Aukeratu zer sinkronizatuko den { -brand-short-name } darabilzun gailuen artean.
+
+## Sync section - enabling or disabling sync.
+
+prefs-sync-now =
+    .labelnotsyncing = Sinkronizatu orain
+    .accesskeynotsyncing = S
+    .labelsyncing = Sinkronizatzen…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-bookmarks = Laster-markak
+sync-currently-syncing-history = Historia
+sync-currently-syncing-tabs = Irekitako fitxak
+sync-currently-syncing-logins-passwords = Saio-hasierak eta pasahitzak
+sync-currently-syncing-addresses = Helbideak
+sync-currently-syncing-creditcards = Kreditu-txartelak
+sync-currently-syncing-addons = Gehigarriak
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Aukerak
+       *[other] Hobespenak
+    }
+sync-change-options =
+    .label = Aldatu…
+    .accesskey = A
+
+## The "Choose what to sync" dialog.
+
 sync-engine-bookmarks =
     .label = Laster-markak
     .accesskey = m
@@ -568,6 +663,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Aldatu dituzun 'Orokorra', 'Pribatutasuna' eta 'Segurtasuna' ataletako ezarpenak
     .accesskey = o
+
+## The device name controls.
+
 sync-device-name-header = Gailuaren izena
 sync-device-name-change =
     .label = Aldatu gailuaren izena…
@@ -600,6 +698,7 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Iradoki eta sortu pasahitz sendoak
     .accesskey = d
+forms-breach-alerts-learn-more-link = Argibide gehiago
 forms-fill-logins-and-passwords =
     .label = Automatikoki bete erabiltzaile-izen eta pasahitzak
     .accesskey = A
@@ -612,6 +711,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Aldatu pasahitz nagusia…
     .accesskey = A
+forms-master-pw-fips-title = Une honetan FIPS moduan zaude. FIPS moduak pasahitz nagusia ezartzea eskatzen du.
+forms-master-pw-fips-desc = Pasahitz aldaketak huts egin du
 
 ## Privacy Section - History
 
@@ -717,8 +818,9 @@ addressbar-suggestions-settings = Aldatu bilaketa-motorren iradokizunetarako hob
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Edukia blokeatzea
-content-blocking-enhanced-tracking-protection = Jarraipenaren babes hobetua
 content-blocking-section-description = Nabigatzean, babestu zure pribatutasuna. Blokeatu bisitatutako guneen jarraipena egin eta zure profila sortzeko erabiltzen den eduki ikusgaitza. Eduki hauetako batzuk blokeatzean orriak azkarrago karga litezke.
+content-blocking-enhanced-tracking-protection = Jarraipenaren babes hobetua
+content-blocking-section-top-level-description = Jarraipen-elementuek zure lineako jarraipena egiten dute zure nabigatze-ohitura eta -interesei buruzko informazioa biltzeko. Jarraipen-elementu eta bestelako script maltzurretako asko blokeatzen ditu { -brand-short-name }(e)k.
 content-blocking-learn-more = Argibide gehiago
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -736,6 +838,23 @@ content-blocking-strict-description = Babes sendoagoa, hainbat gune haustea erag
 content-blocking-custom-desc = Aukeratu zer blokeatu.
 content-blocking-private-trackers = Jarraipen-elementu ezagunak soilik leiho pribatuetan
 content-blocking-third-party-cookies = Hirugarrenen jarraipen-cookieak
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Oinarrizkoa
+    .accesskey = O
+enhanced-tracking-protection-setting-strict =
+    .label = Zorrotza
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = Pertsonalizatua
+    .accesskey = s
+
+
+
 content-blocking-etp-standard-desc = Babeserako eta errendimendurako orekatua. Orriak ohi bezala kargatuko dira.
 content-blocking-etp-strict-desc = Babes sendoagoa baina zenbait gune edo eduki apurtzea eragin lezake.
 content-blocking-etp-custom-desc = Aukeratu blokeatu beharreko jarraipen-elementu eta scriptak.
@@ -806,7 +925,7 @@ permissions-camera-settings =
 permissions-microphone = Mikrofonoa
 permissions-microphone-settings =
     .label = Ezarpenak…
-    .accesskey = m
+    .accesskey = E
 permissions-notification = Jakinarazpenak
 permissions-notification-settings =
     .label = Ezarpenak…

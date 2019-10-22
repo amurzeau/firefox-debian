@@ -253,6 +253,62 @@ applications-type-column =
 applications-action-column =
     .label = Әрекет
     .accesskey = е
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } файлы
+applications-action-save =
+    .label = Файлды сақтау
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = { $app-name } қолдану
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = { $app-name } қолдану (әрқашан да)
+applications-use-other =
+    .label = Басқасын қолдану…
+applications-select-helper = Көмекші бағдарламаны таңдаңыз
+applications-manage-app =
+    .label = Қолданба ақпараты…
+applications-always-ask =
+    .label = Әрқашан сұрау
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = { $plugin-name } қолдану ({ -brand-short-name } құрамында)
+applications-preview-inapp =
+    .label = { -brand-short-name } ішінде алдын-ала қарау
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = Цифрлық құқықтарды басқару (DRM) құрамасы
 play-drm-content =
     .label = DRM-басқарылатын құрамасын ойнау
@@ -339,6 +395,7 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Мәтін терілген кезде оны парақтан іздей бастау
     .accesskey = т
+browsing-picture-in-picture-learn-more = Көбірек білу
 browsing-cfr-recommendations =
     .label = Шолу кезінде кеңейтулерді ұсыну
     .accesskey = с
@@ -494,6 +551,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Өз интернетіңізді өзіңізбен бірге ұстаңыз
 sync-signedout-description = Өзіңіздің бетбелгілер, тарих, беттер, парольдер және қосымшаларыңызды барлық құрылғыларыңыз арасында синхрондаңыз.
 sync-signedout-account-title = { -fxaccount-brand-name } көмегімен байланысу
@@ -513,6 +574,9 @@ sync-signedout-account-signin =
 sync-mobile-promo = Firefox қолданбасын <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> немесе <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> үшін жүктеп алып, мобильді құрылғыңызбен синхрондаңыз.
 
 ## Sync Section - Signed in
+
+
+## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Профиль суретін ауыстыру
@@ -534,6 +598,34 @@ sync-sign-in =
     .accesskey = К
 sync-signedin-settings-header = Синхрондау баптаулары
 sync-signedin-settings-desc = { -brand-short-name } қолданатын құрылғыларыңызда нені синхрондауды таңдаңыз.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Синхрондау: ІСКЕ ҚОСЫЛҒАН
+prefs-syncing-off = Синхрондау: СӨНДІРІЛГЕН
+prefs-sync-now =
+    .labelnotsyncing = Қазір синхрондау
+    .accesskeynotsyncing = н
+    .labelsyncing = Синхрондау…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = Сіз қазір осы элементтерді синхрондап жатырсыз:
+sync-currently-syncing-bookmarks = Бетбелгілер
+sync-currently-syncing-history = Тарих
+sync-currently-syncing-tabs = Ашық беттер
+sync-currently-syncing-logins-passwords = Логиндер және парольдер
+sync-currently-syncing-addresses = Адрестер
+sync-currently-syncing-creditcards = Несиелік карталар
+sync-currently-syncing-addons = Қосымшалар
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Баптаулар
+       *[other] Баптаулар
+    }
+
+## The "Choose what to sync" dialog.
+
 sync-engine-bookmarks =
     .label = Бетбелгілер
     .accesskey = т
@@ -568,6 +660,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Сіз өзгерткен негізгі, жекелік және қауіпсіздік баптаулары
     .accesskey = а
+
+## The device name controls.
+
 sync-device-name-header = Құрылғы аты
 sync-device-name-change =
     .label = Құрылғы атын өзгерту…
@@ -600,6 +695,7 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Қатаң парольдерді ұсыну және генерациялау
     .accesskey = ы
+forms-breach-alerts-learn-more-link = Көбірек білу
 forms-fill-logins-and-passwords =
     .label = Логиндер мен парольдерді автотолтыру
     .accesskey = ы
@@ -612,6 +708,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Мастер-парольді өзгерту…
     .accesskey = т
+forms-master-pw-fips-title = Сіз FIPS -ке сәйкестеу режимінде жұмыс істеп отырсыз. Бұл режим бос емес мастер-парольді талап етеді.
+forms-master-pw-fips-desc = Парольді өзгерту сәтсіз аяқталды
 
 ## Privacy Section - History
 
@@ -731,6 +829,23 @@ content-blocking-strict-description = Қатаң қорғаныс, кейбір 
 content-blocking-custom-desc = Нені бұғаттауды таңдаңыз
 content-blocking-private-trackers = Жекелік терезелерінде барлық белгілі трекерлер
 content-blocking-third-party-cookies = Үшінші жақты бақылайтын cookies
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Қалыпты
+    .accesskey = п
+enhanced-tracking-protection-setting-strict =
+    .label = Қатаң
+    .accesskey = т
+enhanced-tracking-protection-setting-custom =
+    .label = Таңдауыңызша
+    .accesskey = ы
+
+
+
 content-blocking-all-cookies = Барлық cookie файлдары
 content-blocking-unvisited-cookies = Қаралмаған сайттардың cookies файлдары
 content-blocking-all-windows-trackers = Барлық терезелердегі белгілі трекерлер

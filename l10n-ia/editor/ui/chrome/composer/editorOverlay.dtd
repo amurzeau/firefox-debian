@@ -53,6 +53,8 @@
 <!ENTITY fontFixedWidth.key "T">
 <!ENTITY fontTimes.label "Tempores">
 <!ENTITY fontTimes.accesskey "T">
+<!ENTITY fontCourier.label "Courier">
+<!ENTITY fontCourier.accesskey "C">
 
 <!-- Font Size SubMenu -->
 <!ENTITY decreaseFontSize.label "Plus micre">
@@ -66,16 +68,31 @@
 
 <!ENTITY fontSizeMenu.label "Dimension">
 <!ENTITY fontSizeMenu.accesskey "s">
+<!ENTITY size-tinyCmd.label "Micre">
+<!ENTITY size-tinyCmd.accesskey "M">
+<!ENTITY size-smallCmd.label "Parve">
+<!ENTITY size-smallCmd.accesskey "P">
+<!ENTITY size-mediumCmd.label "Medie">
+<!ENTITY size-mediumCmd.accesskey "M">
 <!ENTITY size-largeCmd.label "Grande">
 <!ENTITY size-largeCmd.accesskey "G">
+<!ENTITY size-extraLargeCmd.label "Multo grande">
+<!ENTITY size-extraLargeCmd.accesskey "M">
+<!ENTITY size-hugeCmd.label "Enorme">
+<!ENTITY size-hugeCmd.accesskey "E">
 
 <!-- Font Style SubMenu -->
+<!ENTITY fontStyleMenu.label "Stylo">
+<!ENTITY fontStyleMenu.accesskey "S">
 <!ENTITY styleBoldCmd.label "Hardite">
 <!ENTITY styleBoldCmd.accesskey "H">
 <!ENTITY styleBoldCmd.key "H">
 <!ENTITY styleItalicCmd.label "Italico">
 <!ENTITY styleItalicCmd.accesskey "I">
 <!ENTITY styleItalicCmd.key "I">
+<!ENTITY styleUnderlineCmd.label "Sublinear">
+<!ENTITY styleUnderlineCmd.accesskey "S">
+<!ENTITY styleUnderlineCmd.key "U">
 <!ENTITY styleEm.label "Emphase">
 <!ENTITY styleEm.accesskey "E">
 <!ENTITY styleStrong.label "Emphase plus forte">
@@ -91,6 +108,8 @@
 <!ENTITY styleVar.label "Variabile">
 <!ENTITY styleVar.accesskey "V">
 
+<!ENTITY formatFontColor.label "Color del texto…">
+<!ENTITY formatFontColor.accesskey "C">
 
 
 <!ENTITY paragraphMenu.label "Paragrapho">
@@ -111,6 +130,8 @@
 <!ENTITY heading6Cmd.accesskey "6">
 <!ENTITY paragraphAddressCmd.label "Adresse">
 <!ENTITY paragraphAddressCmd.accesskey "A">
+<!ENTITY paragraphPreformatCmd.label "Preformattate">
+<!ENTITY paragraphPreformatCmd.accesskey "f">
 
 <!-- List menu items -->
 <!ENTITY formatlistMenu.label "Lista">
@@ -123,13 +144,18 @@
 <!ENTITY listTermCmd.accesskey "T">
 <!ENTITY listDefinitionCmd.label "Definition">
 <!ENTITY listDefinitionCmd.accesskey "D">
+<!ENTITY listPropsCmd.label "Proprietates del lista…">
+<!ENTITY listPropsCmd.accesskey "L">
 
+<!ENTITY ParagraphSelect.tooltip "Seliger un formato del paragrapho">
 <!-- Shared in Paragraph, and Toolbar menulist -->
 <!-- isn't used in menu now, but may be added in future -->
 <!ENTITY advancedPropertiesCmd.label "Proprietates avantiate">
 <!ENTITY advancedPropertiesCmd.accesskey "v">
 
 <!-- Align menu items -->
+<!ENTITY alignMenu.label "Alinear">
+<!ENTITY alignMenu.accesskey "A">
 <!ENTITY alignLeft.label "Sinistra">
 <!ENTITY alignLeft.accesskey "S">
 <!ENTITY alignLeft.tooltip "Alinear a sinistra">
@@ -141,6 +167,7 @@
 <!ENTITY alignRight.tooltip "Alinear a dextra">
 
 <!-- Layer toolbar items -->
+<!ENTITY layer.tooltip "Strato">
 
 
 
@@ -152,21 +179,43 @@
 <!ENTITY tableSelectMenu.label "Seliger">
 <!ENTITY tableSelectMenu.accesskey "S">
 
+<!ENTITY tableSelectMenu2.label "Seliger tabella">
+<!ENTITY tableSelectMenu2.accesskey "S">
+<!ENTITY tableInsertMenu2.label "Inserer un tabella">
+<!ENTITY tableInsertMenu2.accesskey "I">
+<!ENTITY tableDeleteMenu2.label "Deler tabella">
+<!ENTITY tableDeleteMenu2.accesskey "D">
 
 <!-- Insert SubMenu -->
 <!ENTITY tableInsertMenu.label "Inserer">
 <!ENTITY tableInsertMenu.accesskey "I">
 <!ENTITY tableTable.label "Tabella">
 <!ENTITY tableTable.accesskey "T">
+<!ENTITY tableRow.label "Riga">
 <!ENTITY tableRows.label "Riga(s)">
 <!ENTITY tableRow.accesskey "R">
+<!ENTITY tableRowAbove.label "Riga supra">
+<!ENTITY tableRowAbove.accesskey "s">
+<!ENTITY tableRowBelow.label "Riga infra">
+<!ENTITY tableRowBelow.accesskey "i">
 <!ENTITY tableColumn.label "Columna">
 <!ENTITY tableColumns.label "Columna(s)">
 <!ENTITY tableColumn.accesskey "o">
+<!ENTITY tableColumnBefore.label "Columna anterior">
+<!ENTITY tableColumnBefore.accesskey "a">
+<!ENTITY tableColumnAfter.label "Columna sequente">
+<!ENTITY tableColumnAfter.accesskey "s">
 <!ENTITY tableCell.label "Cella">
 <!ENTITY tableCells.label "Cella(s)">
 <!ENTITY tableCell.accesskey "C">
 <!ENTITY tableCellContents.label "Contento del cella">
+<!ENTITY tableCellContents.accesskey "n">
+<!ENTITY tableAllCells.label "Tote le cellas">
+<!ENTITY tableAllCells.accesskey "T">
+<!ENTITY tableCellBefore.label "Cella precedente">
+<!ENTITY tableCellBefore.accesskey "d">
+<!ENTITY tableCellAfter.label "Cella sequente">
+<!ENTITY tableCellAfter.accesskey "u">
 <!-- Delete SubMenu -->
 <!ENTITY tableDeleteMenu.label "Deler">
 <!ENTITY tableDeleteMenu.accesskey "D">
@@ -176,9 +225,18 @@
      the access key must exist in both of those strings
      But value must be set here for accesskey to draw properly
 -->
+<!ENTITY tableJoinCells.label "U">
+<!ENTITY tableJoinCells.accesskey "U">
+<!ENTITY tableSplitCell.label "Divider cella">
+<!ENTITY tableSplitCell.accesskey "D">
+<!ENTITY convertToTable.label "Crear tabella ab le selection">
+<!ENTITY convertToTable.accesskey "r">
+<!ENTITY tableProperties.label "Proprietates del tabella…">
+<!ENTITY tableProperties.accesskey "o">
 
 <!-- Toolbar-only items -->
 <!ENTITY menuBar.tooltip "Barra de menu">
+<!ENTITY formatToolbar.tooltip "Barra de formattation">
 <!ENTITY cutToolbarCmd.tooltip "Taliar">
 <!ENTITY copyToolbarCmd.tooltip "Copiar">
 <!ENTITY pasteToolbarCmd.tooltip "Collar">
@@ -186,20 +244,39 @@
 <!ENTITY printToolbarCmd.tooltip "Imprimer iste pagina">
 <!ENTITY findToolbarCmd.label "Trovar">
 <!ENTITY findToolbarCmd.tooltip "Trovar texto in le pagina">
+<!ENTITY spellToolbarCmd.label "Orthographia">
 <!ENTITY imageToolbarCmd.label "Imagine">
 <!ENTITY tableToolbarCmd.label "Tabella">
 <!ENTITY linkToolbarCmd.label "Ligamine">
 <!ENTITY anchorToolbarCmd.label "Ancora">
+<!ENTITY TextColorButton.tooltip "Selige color del texto">
+<!ENTITY BackgroundColorButton.tooltip "Selige color del fundo">
+<!ENTITY throbber.tooltip "Va al pagina principal de &vendorShortName;">
+<!ENTITY throbber.tooltip2 "Va al pagina principal de &brandShortName;">
+<!ENTITY HighlightColorButton.tooltip "Selige le color evidentiate del texto">
 
 <!-- Editor toolbar -->
+<!ENTITY absoluteFontSizeToolbarCmd.tooltip "Defini le dimension del character">
+<!ENTITY decreaseFontSizeToolbarCmd.tooltip "Dimension del character minor">
+<!ENTITY increaseFontSizeToolbarCmd.tooltip "Dimension del character major">
 <!ENTITY boldToolbarCmd.tooltip "Hardite">
 <!ENTITY italicToolbarCmd.tooltip "Italico">
+<!ENTITY underlineToolbarCmd.tooltip "Sublinear">
+<!ENTITY bulletListToolbarCmd.tooltip "Crea o remove le lista punctate">
+<!ENTITY numberListToolbarCmd.tooltip "Crea o remove le lista numerate">
+<!ENTITY AlignPopupButton.tooltip "Seliger alineamento del texto">
+<!ENTITY alignLeftButton.tooltip "Alinear texto preter le margine sinistre">
+<!ENTITY alignCenterButton.tooltip "Alinear texto centrate">
+<!ENTITY alignRightButton.tooltip "Alinear texto preter le margine dextre">
+<!ENTITY alignJustifyButton.tooltip "Alinear texto preter le margines sinistre e dextre">
 
 <!-- Structure Toolbar Context Menu items -->
 <!ENTITY structSelect.label         "Seliger">
 <!ENTITY structSelect.accesskey     "s">
 <!ENTITY structRemoveTag.label      "Remover le tag">
 <!ENTITY structRemoveTag.accesskey  "r">
+<!ENTITY structChangeTag.label      "Modificar tag">
+<!ENTITY structChangeTag.accesskey  "m">
 
 <!-- TOC manipulation -->
 <!ENTITY insertTOC.label          "Inserer">

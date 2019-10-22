@@ -28,10 +28,12 @@ da ima &brandShortName; pravico dostopati do spleta.</li>
 </ul>">
 
 <!ENTITY fileNotFound.title "Datoteke ni mogoče najti">
-<!ENTITY fileNotFound.longDesc "<ul> 
-<li>Preverite, ali so bile velike in male črke v imenu datoteke pravilno natipkane in da ni drugih napak.</li> 
-<li>Preverite, ali je bila datoteka premaknjena, preimenovana ali izbrisana.</li> 
-</ul>">
+<!ENTITY fileNotFound.longDesc "
+<ul>
+  <li>Preverite, ali so bile velike in male črke v imenu datoteke pravilno uporabljene in da ni drugih tipkarskih napak.</li>
+  <li>Preverite, ali je bila datoteka premaknjena, preimenovana ali izbrisana.</li>
+</ul>
+">
 
 <!ENTITY fileAccessDenied.title "Dostop do datoteke je bil zavrnjen">
 <!ENTITY fileAccessDenied.longDesc "
@@ -101,10 +103,11 @@ da ima &brandShortName; pravico dostopati do spleta.</li>
 <!ENTITY proxyResolveFailure.longDesc "
 <ul>
   <li>Preverite nastavitve posrednika in se prepričajte, da so pravilne.</li>
-  <li>Preverite, ali ima vaš računalnik delujočo omrežno povezavo.</li>
+  <li>Prepričajte se, da ima vaš računalnik delujočo omrežno povezavo.</li>
   <li>Če uporabljate posrednika ali požarni zid, se prepričajte, 
     da ima &brandShortName; dovoljenja za dostop do spleta.</li>
-</ul>">
+</ul>
+">
 
 <!ENTITY redirectLoop.title "Stran se ne preusmerja pravilno">
 <!ENTITY redirectLoop.longDesc "<ul> 

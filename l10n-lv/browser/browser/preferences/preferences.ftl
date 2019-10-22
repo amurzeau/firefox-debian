@@ -248,6 +248,62 @@ applications-type-column =
 applications-action-column =
     .label = Darbība
     .accesskey = a
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } fails
+applications-action-save =
+    .label = Saglabāt failu
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Izmantot { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Izmantot { $app-name } (noklusētais)
+applications-use-other =
+    .label = Izmantot citu...
+applications-select-helper = Izvēlieties palīdzības programmu
+applications-manage-app =
+    .label = Programmas iestatījumi...
+applications-always-ask =
+    .label = Vienmēr jautāt
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Izmantot { $plugin-name } (ar { -brand-short-name })
+applications-preview-inapp =
+    .label = Priekšskatīt ar { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 drm-content-header = Digitālā satura tiesību pārvaldības (DRM) saturs
 play-drm-content =
     .label = Atskaņot DRM kontrolētu saturu
@@ -579,6 +635,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Nomainīt galveno paroli...
     .accesskey = m
+forms-master-pw-fips-title = Šobrīd jūs esat FIPS režīmā. FIPS nepieļauj tukšu galveno paroli.
+forms-master-pw-fips-desc = Paroles maiņa neizdevās
 
 ## Privacy Section - History
 
@@ -685,6 +743,23 @@ content-blocking-standard-desc = Līdzsvarots aizsardzībai un veiktspējai. Ļa
 content-blocking-custom-desc = Izvēlies, ko bloķēt.
 content-blocking-private-trackers = Pazīstamos izsekotājus tikai privātajā logā
 content-blocking-third-party-cookies = Trešo pušu izsekošanas sīkfailus
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Standarta
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = Strikts
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = Pielāgots
+    .accesskey = P
+
+##
+
 content-blocking-all-windows-trackers = Pazīstamos izsekotājus visos logos
 content-blocking-all-third-party-cookies = Visus trešo personu sīkfailus
 content-blocking-warning-title = Galvas augšu!

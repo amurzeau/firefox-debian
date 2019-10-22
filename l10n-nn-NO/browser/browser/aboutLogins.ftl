@@ -36,8 +36,7 @@ menu-menuitem-preferences =
         [windows] Innstillingar
        *[other] Val
     }
-menu-menuitem-feedback = Send tilbakemelding
-menu-menuitem-faq = Vanlege spørsmål
+about-logins-menu-menuitem-help = HJelp
 menu-menuitem-android-app = { -lockwise-brand-short-name } for Android
 menu-menuitem-iphone-app = { -lockwise-brand-short-name } for iPhone og iPad
 
@@ -57,9 +56,16 @@ login-list-last-changed-option = Sist endra
 login-list-last-used-option = Sist brukt
 login-list-intro-title = Fann ingen innloggingar
 login-list-intro-description = Når du lagrar eit passord i { -brand-product-name }, vil det visast her.
+about-logins-login-list-empty-search-title = Fann ingen innloggingar
+about-logins-login-list-empty-search-description = Ingen resultat passar med søket ditt.
 login-list-item-title-new-login = Ny innlogging
 login-list-item-subtitle-new-login = Skriv inn innloggingsopplysningar
 login-list-item-subtitle-missing-username = (ikkje noko brukarnamn)
+about-logins-list-item-warning-icon =
+    .alt = Åtvaringsikon
+    .title = Nettstad med datalekkasje
+about-logins-list-item-breach-icon =
+    .title = Nettstad med datalekkasje
 
 ## Introduction screen
 
@@ -67,7 +73,7 @@ login-intro-heading = Ser du etter lagra innloggingar? Konfigurer { -sync-brand-
 login-intro-description = Slik kan du få { -brand-product-name }-innloggingane dine hit, om du har lagra dei på ei anna eining:
 login-intro-instruction-fxa = Lag eller logg inn på { -fxaccount-brand-name } på eininga der innloggingane dine er lagra
 login-intro-instruction-fxa-settings = Forsikre deg om at du har markert avkryssingsboksen for innloggingar i { -sync-brand-short-name }-innstillingane
-login-intro-instruction-faq = Gå til { -lockwise-brand-short-name } <a data-l10n-name="faq">ofte stilte spørsmål</a> for meir hjelp
+about-logins-intro-instruction-help = Gå til <a data-l10n-name="help-link">{ -lockwise-brand-short-name } Support</a> for meir hjelp.
 
 ## Login
 
@@ -77,10 +83,9 @@ login-item-delete-button = Slett
 login-item-origin-label = Nettstadadresse
 login-item-origin =
     .placeholder = https://www.example.com
-login-item-open-site-button = Start
 login-item-username-label = Brukarnamn
-login-item-username =
-    .placeholder = name@example.com
+about-logins-login-item-username =
+    .placeholder = (ikkje noko brukarnamn)
 login-item-copy-username-button-text = Kopier
 login-item-copied-username-button-text = Kopiert!
 login-item-password-label = Passord
@@ -134,3 +139,18 @@ breach-alert-text = Passord vart lekne eller stolne frå denne nettstaden sidan 
 breach-alert-link = Les meir om denne datalekkasjen.
 breach-alert-dismiss =
     .title = Lat att dette varselet
+
+## Error Messages
+
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login = Ei oppføring for { $loginTitle } med dette brukarnamnet finst allereie.
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = Ei oppføring for { $loginTitle } med dette brukarnamnet finst allereie. <a data-l10n-name="duplicate-link">Gå til eksisterande oppføring?</a>
+# This is a generic error message.
+about-logins-error-message-default = Det oppstod ein feil ved forsøk på å lagre dette passordet.

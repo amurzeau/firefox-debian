@@ -173,7 +173,7 @@ about-debugging-runtime-profile-button2 = 성능 프로파일
 # This string is displayed in the runtime page if the current configuration of the
 # target runtime is incompatible with service workers. "Learn more" points to MDN.
 # https://developer.mozilla.org/en-US/docs/Tools/about%3Adebugging#Service_workers_not_compatible
-about-debugging-runtime-service-workers-not-compatible = 브라우저 구성이 서비스 워커와 호환되지 않습니다. <a>자세히 알아보기</a>
+about-debugging-runtime-service-workers-not-compatible = 브라우저 구성이 서비스 워커와 호환되지 않습니다. <a>더 알아보기</a>
 # This string is displayed in the runtime page if the remote browser version is too old.
 # "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/WebIDE/Troubleshooting
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
@@ -267,7 +267,7 @@ about-debugging-worker-action-start = 시작
 # to a service worker.
 # Note this relates to the "Push" API, which is normally not localized so it is
 # probably better to not localize it.
-about-debugging-worker-action-push2 = 푸시
+about-debugging-worker-action-push2 = Push
     .disabledTitle = 서비스 워커 푸시가 현재 다중 프로세스 { -brand-shorter-name }에 대해 비활성화되어 있습니다.
 # This string is displayed as a label of the button that starts a service worker.
 about-debugging-worker-action-start2 = 시작
@@ -286,7 +286,7 @@ about-debugging-worker-fetch-not-listening =
 # worker instance is active).
 about-debugging-worker-status-running = 실행중
 # Displayed for service workers in runtime pages that are registered but stopped.
-about-debugging-worker-status-stopped = 정지됨
+about-debugging-worker-status-stopped = 중지됨
 # Displayed for service workers in runtime pages that are registering.
 about-debugging-worker-status-registering = 등록중
 # Displayed for service workers in runtime pages, to label the scope of a worker

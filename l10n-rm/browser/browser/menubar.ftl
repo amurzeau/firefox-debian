@@ -153,7 +153,7 @@ menu-view-full-screen =
     .label = Maletg entir
     .accesskey = M
 
-##
+
 
 menu-view-show-all-tabs =
     .label = Mussar tut ils tabs
@@ -212,11 +212,20 @@ menu-tools-addons =
 menu-tools-sync-sign-in =
     .label = S'annunziar tar { -sync-brand-short-name }…
     .accesskey = Y
+menu-tools-fxa-sign-in =
+    .label = S'annunziar tar { -brand-product-name }…
+    .accesskey = z
+menu-tools-turn-on-sync =
+    .label = Activar { -sync-brand-short-name }…
+    .accesskey = v
 menu-tools-sync-now =
     .label = Sincronisar ussa
     .accesskey = S
 menu-tools-sync-re-auth =
     .label = Reconnectar cun { -sync-brand-short-name }…
+    .accesskey = R
+menu-tools-fxa-re-auth =
+    .label = Reconnectar cun { -brand-product-name }…
     .accesskey = R
 menu-tools-web-developer =
     .label = Sviluppaders dal web

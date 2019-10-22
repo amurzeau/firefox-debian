@@ -24,6 +24,7 @@
 
 <!ENTITY  generalTab            "Generelt">
 <!ENTITY  generalTab.accesskey  "G">
+<!ENTITY  generalTitle          "Tittel:">
 <!ENTITY  generalURL            "Adresse:">
 <!ENTITY  generalType           "Type:">
 <!ENTITY  generalMode           "Gjengivelsesmodus:">
@@ -62,6 +63,8 @@
 <!ENTITY  mediaTab.accesskey    "M">
 <!ENTITY  mediaURL              "URL:">
 <!ENTITY  mediaAlt              "Alternativ tekst:">
+<!ENTITY  mediaLocation         "Adresse:">
+<!ENTITY  mediaText             "Tilknyttet tekst:">
 <!ENTITY  mediaAltHeader        "Alternativ tekst">
 <!ENTITY  mediaAddress          "Adresse">
 <!ENTITY  mediaType             "Type">
@@ -70,6 +73,7 @@
 <!ENTITY  mediaDimensions       "Dimensjoner:">
 <!ENTITY  mediaPhysDimensions   "Virkelig dimensjon:">
 <!ENTITY  mediaTitle            "Tittelattributt:">
+<!ENTITY  mediaDimension        "Dimensjoner:">
 <!ENTITY  mediaLongdesc         "Lang beskrivelse:">
 <!ENTITY  mediaBlockImage.accesskey "L">
 <!ENTITY  mediaSaveAs           "Lagre som …">
@@ -109,6 +113,8 @@
 <!ENTITY  securityView.identity.owner    "Eier:">
 <!ENTITY  securityView.identity.domain   "Nettsted:">
 <!ENTITY  securityView.identity.verifier "Verifisert av:">
+
+<!ENTITY  securityView.identity.validity "Utløper:">
 
 <!ENTITY  securityView.privacy.header                   "Personvern og historikk">
 <!ENTITY  securityView.privacy.history                  "Har jeg besøkt dette nettstedet tidligere?">

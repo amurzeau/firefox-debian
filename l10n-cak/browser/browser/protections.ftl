@@ -13,17 +13,20 @@ graph-week-summary =
 #   $count (Number) - Number of tracking events blocked.
 #   $earliestDate (Number) - Unix timestamp in ms, representing a date. The
 # earliest date recorded in the database.
-graph-total-summary =
+graph-total-tracker-summary =
     { $count ->
-        [one] { $count } ojqanel q'aton chik pe pa { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
-       *[other] { $count } ojqanela' eq'aton chik pe pa { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }{ DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
+        [one] <b>{ $count }</b> ojqanel q'aton chik pe pa { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
+       *[other] <b>{ $count }</b> ojqanela' eq'aton chik pe pa { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
     }
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 # The category name in the <b> tag will be bold.
-protection-header-details-standard = Ri Rupalem Chajinem nijikib'äx pa <b>Junamil</b>
-protection-header-details-strict = Ri Rupalem Chajinem nijikib'äx pa <b>K'a'alri'ïl</b>
-protection-header-details-custom = Ri Rupalem Chajinem nijikib'äx pan <b>Ichinan</b>
+protection-report-header-details-standard = Ri Rupalem Chajinem nijikib'äx pa <b>Junamil</b>
+    .title = Jät pa Runuk'ulem Ichinanem
+protection-report-header-details-strict = Ri Rupalem Chajinem nijikib'äx pa <b>K'a'alri'ïl</b>
+    .title = Jät pa Runuk'ulem Ichinanem
+protection-report-header-details-custom = Ri Rupalem Chajinem nijikib'äx pan <b>Ichinan</b>
+    .title = Jät pa Runuk'ulem Ichinanem
 protection-report-page-title = Ichinanem taq Chajinïk
 protection-report-content-title = Ichinanem taq Chajinïk
 etp-card-title = Utzirisan Chajinem chuwäch Ojqanem
@@ -38,7 +41,7 @@ social-tab-contant = Ri aj winäq taq k'amab'ey yekiya' taq ojqanela' pa ch'aqa'
 cookie-tab-title = Kikuki Rojqanela' Xoch'in taq Ruxaq
 cookie-tab-content = Re taq kuki re' yatkojqaj pa taq ruxaq richin nikimöl awetamab'al chi rij ri nab'än pa k'amab'ey. Yekiya' kajk'ayij aj rox winäq achi'el eltzijob'äl moloj chuqa' ch'ob'onela' tzij. Ri ruq'atik k'ïy ruxaq nuqasaj jarupe' taq eltzijol yatkojqaj xab'akuchi' yab'e'. <a data-l10n-name="learn-more-link">Tetamäx ch'aqa' chik</a>
 tracker-tab-title = Rojqanem Rupam
-tracker-tab-content = Ri ajk'amaya'l ruxaq yetikïr yekijotob'a' taq eltzijol, taq silowäch chuqa' ch'aqa' chik taq wachinäq kik'wan rub'itz'ib' ojqanem. Toq yeq'at kojqanem rupam, nito'on chi anin yesamäj ri taq ruxaq, xa xe chi jujun taq pitz'ib'äl, taq nojwuj chuqa' taq k'ojlib'äl rik'in jub'a' man ütz ta yesamäj. <a data-l10n-name="learn-more-link">Tetamäx ch'aqa' chik</a>
+tracker-tab-description = Ri ajk'amaya'l ruxaq yetikïr yekijotob'a' taq eltzijol, taq silowäch chuqa' jun chik rupam kik'wan rub'itz'ib' ojqanem. Toq yeq'at kojqanem rupam, nito'on chi anin yesamäj ri taq ruxaq, xa xe chi jujun taq pitz'ib'äl, taq nojwuj chuqa' taq k'ojlib'äl rik'in jub'a' man ütz ta yesamäj. <a data-l10n-name="learn-more-link">Tetamäx ch'aqa' chik</a>
 fingerprinter-tab-title = B'anöy ruwi' q'ab'aj
 fingerprinter-tab-content = Ri b'anöy ruwi' q'ab'aj nikimöl taq runuk'ulem awokik'amaya'l chuqa' akematz'ib' richin nikitz'ük jun ruwäch ab'i'. Toq nikokisaj re retal ruwi' q'ab'aj, yetikïr yatkitzeqelib'ej pa jalajoj taq ajk'amaya'l ruxaq. <a data-l10n-name="learn-more-link">Tetamäx ch'aqa' chik</a>
 cryptominer-tab-title = Cryptominers
@@ -47,7 +50,8 @@ lockwise-title = Man tamestaj chik jun ewan tzij
 lockwise-title-logged-in = { -lockwise-brand-name }
 lockwise-header-content = { -lockwise-brand-name } ütz ke'ayaka' ri ewan taq atzij pan awokik'amaya'l.
 lockwise-header-content-logged-in = Ütz ke'ayaka' ri ewan taq atzij chuqa' ake'axima' pa ronojel awokisab'al.
-open-about-logins-button = Tijaq pa { -brand-short-name }
+protection-report-view-logins-button = Titzet Tikirib'äl Molojri'ïl
+    .title = Keb'etz'et Yakon taq Tikirib'äl Molojri'ïl
 lockwise-no-logins-content = Tak'ulu' ri <a data-l10n-name="lockwise-inline-link">{ -lockwise-brand-name }</a> chokoy richin xab'akuchi' ye'ak'waj ri ewan taq atzij.
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
@@ -67,17 +71,17 @@ lockwise-sync-status =
         [one] Nixim rik'in { $count } chik okisab'äl
        *[other] Nixim rik'in { $count } ch'aqa' chik okisab'äl
     }
-lockwise-sync-not-syncing = Man nixim ta kik'in ch'aqa' chik ta okisab'äl.
+lockwise-sync-not-syncing-devices = Man nixim ta kik'in ch'aqa' chik ta okisab'äl.
 monitor-title = Taya' retal ri kitz'ilanem taq tzij
 monitor-link = Achike rub'eyal nisamäj
-monitor-header-content = Tatz'eta' ri { -monitor-brand-name } richin natz'ët we xatz'iläx pa jun tz'ilanem tzij chuqa' tak'ulu' rutzijol k'ayewal chi kij k'ak'a' taq tz'ilanem.
-monitor-header-content-logged-in = { -monitor-brand-name } nuya' rutzijol chawe toq ri awetamab'al k'o pa jun rutz'ilanem tzij etaman ruwäch
+monitor-header-content-no-account = Tanik'oj { -monitor-brand-name } richin natz'ët we xatz'iläx pa jun tz'ilanem tzij etaman ruwäch chuqa' tak'ulu' rutzijol k'ayewal chi kij k'ak'a' taq tz'ilanem.
+monitor-header-content-signed-in = { -monitor-brand-name } nuya' rutzijol chawe toq ri awetamab'al k'o pa jun rutz'ilanem tzij etaman ruwäch.
 monitor-sign-up = Tatz'ib'aj awi' richin Ye'ak'ül Kitzijol K'ayewal
 auto-scan = Ruyonil nitz'ajwachib'ëx wakami
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.
-info-monitored-addresses =
+info-monitored-emails =
     { $count ->
         [one] Rochochib'al taqoya'l ninik'öx.
        *[other] Taq rochochib'al taqoya'l yenik'öx.
@@ -85,7 +89,7 @@ info-monitored-addresses =
 # This string is displayed after a large numeral that indicates the total number
 # of known data breaches. Don’t add $count to
 # your localization, because it would result in the number showing twice.
-info-known-breaches =
+info-known-breaches-found =
     { $count ->
         [one] Tz'ilanem tzij etaman ruwäch, xuk'üt ri awetamab'al.
        *[other] Taq tz'ilanem tzij etaman kiwäch, xkik'üt ri awetamab'al.
@@ -93,10 +97,10 @@ info-known-breaches =
 # This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
-info-exposed-passwords =
+info-exposed-passwords-found =
     { $count ->
-        [one] Ewan tzij xk'ut chi kikojol ri taq tz'ilanem.
-       *[other] Ewan taq tzij xek'ut chi kikojol ri taq tz'ilanem.
+        [one] Ewan tzij k'utun pa ronojel taq tz'ilanem
+       *[other] Ewan taq tzij ek'utun pa ronojel taq tz'ilanem
     }
 full-report-link = Titz'et chijun rutzijol pa <a data-l10n-name="monitor-inline-link">{ -monitor-brand-name }</a>
 # This string is displayed after a large numeral that indicates the total number
@@ -107,10 +111,6 @@ password-warning =
         [one] Tikirib'äl molojri'ïl tikirel k'utun pa tz'ilanem taq tzij. Tijal re ewan tzij richin ajikomal pa k'amab'ey. <a data-l10n-name="lockwise-link">Ketz'et tikirib'äl taq molojri'ïl</a>
        *[other] Tikirib'äl taq molojri'ïl tikirel ek'utun pa tz'ilanem taq tzij. Kejal re ewan taq tzij richin ajikomal pa k'amab'ey. <a data-l10n-name="lockwise-link"> Ketz'et tikirib'äl taq molojri'ïl eyakon</a>
     }
-# This is the title attribute describing the graph report's link to about:settings#privacy
-go-to-privacy-settings = Jät pa Runuk'ulem Ichinanem
-# This is the title attribute describing the Lockwise card's link to about:logins
-go-to-saved-logins = Jät pan Kitikirib'al Molojri'ïl Eyakon
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

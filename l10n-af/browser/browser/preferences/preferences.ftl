@@ -3,8 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 do-not-track-learn-more = Meer inligting
-do-not-track-option-default =
-    .label = Slegs wanneer volgbeskerming gebruik word
 do-not-track-option-always =
     .label = Altyd
 pref-page =
@@ -22,10 +20,6 @@ category-search =
 pane-privacy-title = Privaatheid en sekuriteit
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-# The word "account" can be translated, do not translate or transliterate "Firefox".
-pane-sync-title = Firefox-rekening
-category-sync =
-    .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name }-ondersteuning
 focus-search =
     .key = f
@@ -181,6 +175,62 @@ applications-type-column =
 applications-action-column =
     .label = Aksie
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension }-lêer
+applications-action-save =
+    .label = Stoor lêer
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Gebruik { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Gebruik { $app-name } (verstek)
+applications-use-other =
+    .label = Gebruik ander…
+applications-select-helper = Kies helper-toepassing
+applications-manage-app =
+    .label = Toepassingdetail…
+applications-always-ask =
+    .label = Vra altyd
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Gebruik { $plugin-name } (in { -brand-short-name })
+applications-preview-inapp =
+    .label = Voorskou in { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 play-drm-content-learn-more = Meer inligting
 update-application-title = { -brand-short-name }-bywerkings
 update-application-version = Weergawe { $version } <a data-l10n-name="learn-more">Wat’s nuut?</a>
@@ -250,6 +300,9 @@ use-current-pages =
 choose-bookmark =
     .label = Gebruik boekmerk…
     .accesskey = b
+
+## Home Section - Firefox Home Content Customization
+
 
 ## Search Section
 
@@ -337,7 +390,6 @@ sync-fxa-privacy-notice = Privaatheidkennisgewing
 
 ## Privacy Section - Forms
 
-forms-header = Vorms en wagwoorde
 forms-exceptions =
     .label = Uitsonderings…
     .accesskey = U
@@ -350,6 +402,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Wysig meesterwagwoord…
     .accesskey = m
+forms-master-pw-fips-title = U is tans in FIPS-modus. FIPS vereis 'n nieleë meesterwagwoord.
+forms-master-pw-fips-desc = Kon nie wagwoord verander nie
 
 ## Privacy Section - History
 
@@ -388,9 +442,6 @@ history-clear-on-close-settings =
 ## Privacy Section - Site Data
 
 sitedata-learn-more = Meer inligting
-sitedata-cookies-exceptions =
-    .label = Uitsonderings…
-    .accesskey = U
 
 ## Privacy Section - Address Bar
 
@@ -405,21 +456,15 @@ addressbar-suggestions-settings = &Verander voorkeure vir voorstelle vanaf soeke
 ## Privacy Section - Content Blocking
 
 
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+
+##
+
+
 ## Privacy Section - Tracking
 
-tracking-header = Volgbeskerming
-tracking-mode-always =
-    .label = Altyd
-    .accesskey = y
-tracking-mode-private =
-    .label = Slegs in private vensters
-    .accesskey = l
-tracking-mode-never =
-    .label = Nooit
-    .accesskey = N
-tracking-exceptions =
-    .label = Uitsonderings…
-    .accesskey = U
 
 ## Privacy Section - Permissions
 

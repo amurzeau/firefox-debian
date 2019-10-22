@@ -13,9 +13,11 @@ menu-menuitem-preferences =
         [windows] ఎంపికలు
        *[other] అభిరుచులు
     }
+about-logins-menu-menuitem-help = సహాయం
 
 ## Login List
 
+login-list-name-option = పేరు (A-Z)
 login-list-last-changed-option = చివరి మార్పు
 login-list-last-used-option = చివరగా వాడినది
 login-list-item-subtitle-missing-username = (వాడుకరి పేరు లేదు)
@@ -26,7 +28,12 @@ login-list-item-subtitle-missing-username = (వాడుకరి పేరు 
 ## Login
 
 login-item-delete-button = తొలగించు
+login-item-origin-label = వెబ్‌సైటు చిరునామా
+login-item-origin =
+    .placeholder = https://www.example.com
 login-item-username-label = వాడుకరి పేరు
+about-logins-login-item-username =
+    .placeholder = (వాడుకరి పేరు లేదు)
 login-item-copy-username-button-text = కాపీచేయి
 login-item-copied-username-button-text = కాపీ అయ్యింది!
 login-item-password-label = సంకేతపదం
@@ -50,6 +57,10 @@ confirmation-dialog-dismiss-button =
     .title = రద్దుచేయి
 confirm-delete-dialog-title = ఈ ప్రవేశాన్ని తొలగించాలా?
 confirm-delete-dialog-confirm-button = తొలగించు
+confirm-discard-changes-dialog-title = భద్రపరచని మార్పులను విస్మరించాలా?
 
 ## Breach Alert notification
+
+
+## Error Messages
 

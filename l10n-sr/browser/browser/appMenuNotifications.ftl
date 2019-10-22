@@ -29,4 +29,13 @@ appmenu-addon-private-browsing-installed =
     .buttonlabel = У реду, разумем
     .buttonaccesskey = У
 appmenu-addon-post-install-message = Управљајте вашим додацима кликом на <image data-l10n-name='addon-install-icon'></image> у <image data-l10n-name='addon-menu-icon'></image> менију.
+appmenu-addon-post-install-incognito-checkbox =
+    .label = Дозволите рад овог проширења у приватним прозорима
+    .accesskey = а
+appmenu-addon-private-browsing =
+    .label = Промените на проширења у приватном прозору
+    .buttonlabel = Управљај проширењима
+    .buttonaccesskey = М
+    .secondarybuttonlabel = У реду, схватам
+    .secondarybuttonaccesskey = О
 appmenu-addon-private-browsing-message = Све нове екстензије које додате у { -brand-shorter-name } неће радити у приватним прозорима осим ако то не дозволите у подешавањима екстензије.

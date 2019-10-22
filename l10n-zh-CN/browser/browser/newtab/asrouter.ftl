@@ -80,11 +80,32 @@ cfr-whatsnew-button =
     .label = 新版变化
     .tooltiptext = 新版变化
 cfr-whatsnew-panel-header = 新版变化
+cfr-whatsnew-release-notes-link-text = 阅读发行说明
+cfr-whatsnew-fx70-title = { -brand-short-name } 为您的隐私而战
+cfr-whatsnew-fx70-body = 最新的更新增强了跟踪保护功能，并可比以往更容易地让为每个站点创建安全密码。
+cfr-whatsnew-tracking-protect-title = 保护自己远离跟踪器
+cfr-whatsnew-tracking-protect-body = { -brand-short-name } 拦截了许多会窥视您浏览活动的常见社交和跨网站型跟踪器。
+cfr-whatsnew-tracking-protect-link-text = 查看您的报告
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+       *[other] 跟踪器拦截数量
+    }
+cfr-whatsnew-tracking-blocked-subtitle = 自{ DATETIME($earliestDate, month: "long", year: "numeric") }起
+cfr-whatsnew-tracking-blocked-link-text = 查看报告
+cfr-whatsnew-lockwise-backup-title = 备份您的密码
+cfr-whatsnew-lockwise-backup-body = 立即生成安全密码，并可在您登录的任何设备访问。
+cfr-whatsnew-lockwise-backup-link-text = 开启备份
+cfr-whatsnew-lockwise-take-title = 随身携带密码
+cfr-whatsnew-lockwise-take-body = { -lockwise-brand-short-name } 移动端应用可让您安全地访问在所有设备中备份的密码。
+cfr-whatsnew-lockwise-take-link-text = 获取应用
 
 ## Bookmark Sync
 
 cfr-doorhanger-sync-bookmarks-header = 在手机上获取此书签
-cfr-doorhanger-sync-bookmarks-body = 将您的书签、密码、历史记录及更多，同步到登录至 { -brand-product-name } 的所有设备。
+cfr-doorhanger-sync-bookmarks-body = 将您的书签、密码、历史记录等数据，同步到登录了{ -brand-product-name }服务的所有设备。
 cfr-doorhanger-sync-bookmarks-ok-button = 开启{ -sync-brand-short-name }
     .accesskey = T
 
@@ -99,7 +120,7 @@ cfr-doorhanger-sync-logins-ok-button = 开启{ -sync-brand-short-name }
 
 cfr-doorhanger-send-tab-header = 随时随地阅读
 cfr-doorhanger-send-tab-recipe-header = 把这篇食谱带到厨房
-cfr-doorhanger-send-tab-body = Send Tab 可轻松地将链接分享到手机，或任何登录至 { -brand-product-name } 的设备。
+cfr-doorhanger-send-tab-body = 标签页发送功能可轻松把网页发到手机上打开，任何登录了{ -brand-product-name }服务的设备也都支持。
 cfr-doorhanger-send-tab-ok-button = 试试标签页发送功能
     .accesskey = T
 
@@ -109,3 +130,16 @@ cfr-doorhanger-firefox-send-header = 安全地分享这份 PDF
 cfr-doorhanger-firefox-send-body = 端到端加密分享文件，链接到期即焚，确保您敏感文件的安全。
 cfr-doorhanger-firefox-send-ok-button = 试用 { -send-brand-name }
     .accesskey = T
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-ok-button = 看看有哪些保护
+    .accesskey = P
+cfr-doorhanger-socialtracking-close-button = 关闭
+    .accesskey = C
+cfr-doorhanger-socialtracking-heading = { -brand-short-name } 正在防御社交网站对您的跟踪
+cfr-doorhanger-socialtracking-description = 隐私是公民的基本权利。现在起，{ -brand-short-name } 会拦截常见的社交媒体跟踪器，限制这些网站收集您的上网活动。
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name } 正在拦截此页面上的数字指纹跟踪程序
+cfr-doorhanger-fingerprinters-description = 隐私是公民的基本权利。现在起 { -brand-short-name } 会拦截数字指纹跟踪程序，阻止其收集身边设备的唯一识别信息。
+cfr-doorhanger-cryptominers-heading = { -brand-short-name } 正在拦截此页面上的加密货币挖矿程序
+cfr-doorhanger-cryptominers-description = 隐私是公民的基本权利。现在起 { -brand-short-name } 会拦截加密货币挖矿程序，不让其使用您的计算机算力来“挖”数字货币

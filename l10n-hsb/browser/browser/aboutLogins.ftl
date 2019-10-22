@@ -36,8 +36,7 @@ menu-menuitem-preferences =
         [windows] Nastajenja
        *[other] Nastajenja
     }
-menu-menuitem-feedback = Komentar pósłać
-menu-menuitem-faq = Huste prašenja
+about-logins-menu-menuitem-help = Pomoc
 menu-menuitem-android-app = { -lockwise-brand-short-name } za Android
 menu-menuitem-iphone-app = { -lockwise-brand-short-name } za iPhone a iPad
 
@@ -59,9 +58,16 @@ login-list-last-changed-option = Poslednjej změnje
 login-list-last-used-option = Poslednim wužiću
 login-list-intro-title = Žane přizjewjenja namakane
 login-list-intro-description = Hdyž hesło w { -brand-product-name } składujeće, wono so tu pokaza.
+about-logins-login-list-empty-search-title = Žane přizjewjenja namakane
+about-logins-login-list-empty-search-description = Njejsu žane wuslědki, kotrež wašemu pytanju wotpowěduja.
 login-list-item-title-new-login = Nowe přizjewjenje
 login-list-item-subtitle-new-login = Zapodajće swoje přizjewjenske daty
 login-list-item-subtitle-missing-username = (žane wužiwarske mjeno)
+about-logins-list-item-warning-icon =
+    .alt = Warnowanski symbol
+    .title = Zranjene websydło
+about-logins-list-item-breach-icon =
+    .title = Zranjene websydło
 
 ## Introduction screen
 
@@ -69,7 +75,7 @@ login-intro-heading = Pytaće swoje składowane přizjewjenja? Konfigurujće { -
 login-intro-description = Jeli sće swoje přizjewjenja { -brand-product-name } na druhim graće składował, tak móžeće je sem přinjesć:
 login-intro-instruction-fxa = Załožće abo přizjewće so pola swojeho { -fxaccount-brand-name } na graće, hdźež waše přizjewjenja su składowane
 login-intro-instruction-fxa-settings = Přeswědčće so, zo sće kontrolny kašćik přizjewjenjow w nastajenjach { -sync-brand-short-name } wubrał
-login-intro-instruction-faq = Čitajće { -lockwise-brand-short-name } <a data-l10n-name="faq">huste prašenja</a> za wjace pomocy
+about-logins-intro-instruction-help = Wopytajće <a data-l10n-name="help-link">pomoc { -lockwise-brand-short-name }</a> za wjace pomocy
 
 ## Login
 
@@ -79,10 +85,9 @@ login-item-delete-button = Zhašeć
 login-item-origin-label = Adresa websydła
 login-item-origin =
     .placeholder = https://www.example.com
-login-item-open-site-button = Startować
 login-item-username-label = Wužiwarske mjeno
-login-item-username =
-    .placeholder = name@example.com
+about-logins-login-item-username =
+    .placeholder = (žane wužiwarske mjeno)
 login-item-copy-username-button-text = Kopěrować
 login-item-copied-username-button-text = Kopěrowane!
 login-item-password-label = Hesło
@@ -136,3 +141,18 @@ breach-alert-text = Hesła su so z tutoho websydła roznjesli abo kradnyli, wot 
 breach-alert-link = Zhońće wjace wo tutej dźěrje.
 breach-alert-dismiss =
     .title = Tute warnowanje začinić
+
+## Error Messages
+
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login = Zapisk za { $loginTitle } z tym wužiwarskim mjenom hižo eksistuje.
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = Zapisk za { $loginTitle } z tym wužiwarskim mjenom hižo eksistuje. <a data-l10n-name="duplicate-link">K eksistowacemu zapiskej?</a>
+# This is a generic error message.
+about-logins-error-message-default = Při pospyće tute hesło składować, je zmylk nastał.

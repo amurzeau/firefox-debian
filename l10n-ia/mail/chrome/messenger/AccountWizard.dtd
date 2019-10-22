@@ -20,7 +20,7 @@
 <!ENTITY fullnameLabel.label "Tu nomine:">
 <!ENTITY fullnameLabel.accesskey "T">
 
-<!ENTITY emailLabel.label "Adresse email:">
+<!ENTITY emailLabel.label "Adresse de e-mail:">
 
 <!-- Entities for Incoming Server page -->
 
@@ -30,8 +30,12 @@
 <!-- LOCALIZATION NOTE (popType.label) : Do not translate "POP" in below line -->
 <!ENTITY popType.label "POP3">
 <!ENTITY popType.accesskey "P">
+<!ENTITY defaultPortLabel.label "Predefinite:">
 <!-- LOCALIZATION NOTE (incomingServerNameDesc.label) : Do not translate "&quot;pop.example.net&quot;" in below line -->
+<!ENTITY incomingServer.label "Servitor in arrivata:">
+<!ENTITY incomingServer.accesskey "S">
 <!-- LOCALIZATION NOTE (incomingUsername.description) : do not translate "&quot;jsmith&quot;" in below line -->
+<!ENTITY incomingUsername.label "Nomine de usator:">
 <!-- LOCALIZATION NOTE (newsServerNameDesc.label) : Do not translate "NNTP" or the "&quot;" entities in below line -->
 
 <!-- Entities for Outgoing Server page -->
@@ -61,8 +65,15 @@
 
 <!-- Entities for Account name page -->
 
+<!ENTITY accnameTitle.label "Nomine del conto">
 <!-- LOCALIZATION NOTE (accnameDesc.label) : do not translate any "&quot;" in below line -->
+<!ENTITY accnameLabel.label "Nomine del conto:">
+<!ENTITY accnameLabel.accesskey "C">
 
 <!-- Entities for Done (Congratulations) page -->
 
+<!ENTITY completionTitle.label "Congratulationes!">
+<!ENTITY completionText.label "Verifica que le information infra es correcte.">
+<!ENTITY serverTypePrefix.label "Typo de servitor in arrivata:">
+<!ENTITY serverNamePrefix.label "Nomine del servitor in arrivata:">
 <!ENTITY smtpServerNamePrefix.label "Nomine del servitor in exito (SMTP):">

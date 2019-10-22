@@ -36,8 +36,7 @@ menu-menuitem-preferences =
         [windows] Jeporavorã
        *[other] Jerohoryvéva
     }
-menu-menuitem-feedback = Temimo'ã Ñemondo
-menu-menuitem-faq = Porandu py’ỹiguáva
+about-logins-menu-menuitem-help = Pytyvõ
 menu-menuitem-android-app = { -lockwise-brand-short-name } Android peg̃uarã
 menu-menuitem-iphone-app = { -lockwise-brand-short-name } iPhone ha iPad peg̃uarã
 
@@ -57,9 +56,16 @@ login-list-last-changed-option = Ñemoambue ipyahuvéva
 login-list-last-used-option = Ojepurúva ipahaitépe
 login-list-intro-title = Ndojejuhúi jeikeha
 login-list-intro-description = Eñongatúvo ñe’ẽñemi { -brand-product-name } ndive, kóva ojehecháta ápe.
+about-logins-login-list-empty-search-title = Ndojejuhúi tembiapo ñepyrũ
+about-logins-login-list-empty-search-description = Ndaipóri pe ehekáva.
 login-list-item-title-new-login = Tembiapo ñepyrũ pyahu
 login-list-item-subtitle-new-login = Emoinge nde reraite tembiapo ñepyrũme
 login-list-item-subtitle-missing-username = (puruhára hera'ỹva)
+about-logins-list-item-warning-icon =
+    .alt = Ta'ãngachu'i kyhyjerã
+    .title = Ñanduti renda imarãva
+about-logins-list-item-breach-icon =
+    .title = Ñanduti renda imarãva
 
 ## Introduction screen
 
@@ -67,7 +73,7 @@ login-intro-heading = ¿Eheka ne ñe’ẽñemi ñongatupyre? Emboheko { -sync-b
 login-intro-description = Eñongatúvo nde jeike { -brand-product-name }-pe ambue mba’e’okápe.
 login-intro-instruction-fxa = Emoheñói térã eike nde { -fxaccount-brand-name }-pe mba’e’oka eñongatuhápe eikehague
 login-intro-instruction-fxa-settings = Eiporavokuaáke nde jeike { -sync-brand-short-name } ñemoĩporãme
-login-intro-instruction-faq = Eike { -lockwise-brand-short-name } <a data-l10n-name="faq">porandu py’ỹigua</a> ñepytyvõrãve
+about-logins-intro-instruction-help = Eho <a data-l10n-name="help-link">-pe { -lockwise-brand-short-name } Pytyvõ</a> eñepytyvõve hag̃ua
 
 ## Login
 
@@ -77,10 +83,9 @@ login-item-delete-button = Mboguete
 login-item-origin-label = Ñanduti kundaharape
 login-item-origin =
     .placeholder = https://www.example.com
-login-item-open-site-button = Jepoi
 login-item-username-label = Puruhára réra
-login-item-username =
-    .placeholder = name@example.com
+about-logins-login-item-username =
+    .placeholder = (puruhára hera’ỹva)
 login-item-copy-username-button-text = Monguatia
 login-item-copied-username-button-text = Monguatiapyre!
 login-item-password-label = Ñe'ẽñemi
@@ -134,3 +139,18 @@ breach-alert-text = Umi ñe’ẽñemi oñembogua térã oñemonda ko ñanduti r
 breach-alert-link = Eñemomaranduve ko mba’evai rehegua.
 breach-alert-dismiss =
     .title = Emboty ko kyhyjeha
+
+## Error Messages
+
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login = Eikekuaáma { $loginTitle }-pe ko puruhára reheve.
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = Eikekuaáma { $loginTitle } ko puruhára réra reheve. <a data-l10n-name="duplicate-link">¿Ehosépa pe jeikehápe?</a>
+# This is a generic error message.
+about-logins-error-message-default = Oiko jejavy eñongatukuévo ñe’ẽñemi.

@@ -21,6 +21,11 @@ onboarding-button-label-get-started = 시작하기
 onboarding-welcome-header = { -brand-short-name }를 사용해 주셔서 감사합니다.
 onboarding-welcome-body = 이제 브라우저가 있습니다.<br/>{ -brand-product-name }의 나머지를 만나 보세요.
 onboarding-welcome-learn-more = 장점 더 알아보기
+onboarding-welcome-modal-get-body = 이제 브라우저가 있습니다.<br/>{ -brand-product-name }를 최대한 활용해 보세요.
+onboarding-welcome-modal-supercharge-body = 개인 정보 보호를 강화하세요.
+onboarding-welcome-modal-privacy-body = 이제 브라우저가 있습니다. 개인 정보 보호 기능을 더 추가해 보세요.
+onboarding-welcome-modal-family-learn-more = { -brand-product-name } 제품군에 대해 알아보세요.
+onboarding-welcome-form-header = 여기서 시작
 onboarding-join-form-header = { -brand-product-name }와 함께하기
 onboarding-join-form-body = 시작하려면 이메일 주소를 입력하세요.
 onboarding-join-form-email =
@@ -37,7 +42,7 @@ onboarding-cards-dismiss =
 
 onboarding-sync-welcome-header = { -brand-product-name }와 함께 하세요
 onboarding-sync-welcome-content = 즐겨찾기와 방문기록, 비밀번호, 다른 설정을 모든 기기에서 사용해 보세요.
-onboarding-sync-welcome-learn-more-link = Firefox 계정 자세히 알아보기
+onboarding-sync-welcome-learn-more-link = Firefox 계정 더 알아보기
 onboarding-sync-form-invalid-input = 유효한 이메일 필요함
 onboarding-sync-legal-notice = 진행하면 <a data-l10n-name="terms">이용 약관</a>과 <a data-l10n-name="privacy">개인 정보 보호 정책</a>에 동의하게 됩니다.
 onboarding-sync-form-input =
@@ -64,6 +69,12 @@ onboarding-benefit-privacy-title = 진정한 개인 정보 보호 정책
 # make and do. We take less data. We keep it safe. And we make sure that we are
 # transparent about how we use it."
 onboarding-benefit-privacy-text = 우리가 하는 모든 활동은 개인 정보 약속을 존중합니다: 적게 가집니다. 안전하게 보관합니다. 비밀은 없습니다.
+onboarding-benefit-sync-title = { -sync-brand-short-name }
+onboarding-benefit-sync-text = { -brand-product-name }를 사용하는 모든 곳에서 북마크나 방문기록, 비밀번호 등을 사용하세요.
+onboarding-benefit-monitor-title = { -monitor-brand-short-name }
+onboarding-benefit-monitor-text = 개인 정보가 알려진 데이터 유출에서 발견되면 알림을 받습니다.
+onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
+onboarding-benefit-lockwise-text = 비밀번호를 보호하면서 항상 가지고 다녀 보세요.
 
 ## These strings belong to the individual onboarding messages.
 

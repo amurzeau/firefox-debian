@@ -76,12 +76,21 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY menubarCmd.label "Menijowa rědka">
 <!ENTITY menubarCmd.accesskey "M">
 <!ENTITY navbarCmd.label "Nawigaciska rědka">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY navbar.accessibleLabel "Nawigacija">
 <!ENTITY personalbarCmd.label "Rědka cytańskich znamjenjow">
 <!ENTITY personalbarCmd.accesskey "c">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY personalbar.accessibleLabel "Cytańske znamjenja">
 <!ENTITY bookmarksToolbarItem.label "Zapiski rědki cytańskich znamjenjow">
 
 <!ENTITY pageSourceCmd.label "Žrědłowy tekst boka">
 <!ENTITY pageSourceCmd.accesskey "t">
+
 <!ENTITY pageSourceCmd.commandkey "u">
 <!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
 Option+Command keyboard shortcut letter that Safari and Chrome use for "View
@@ -92,6 +101,7 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 
 <!ENTITY pageInfoCmd.label "Info wó boku">
 <!ENTITY pageInfoCmd.accesskey "I">
+
 <!ENTITY pageInfoCmd.commandkey "i">
 <!ENTITY ldbCmd.label "Layout Debugger">
 <!ENTITY ldbCmd.accesskey "L">
@@ -116,6 +126,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaSignInError.label "Z &syncBrand.shortName.label; znowego zwězaś">
 <!ENTITY fxaUnverified.label "Wašo konto wobkšuśiś">
 
+
+<!ENTITY togglePictureInPicture.key2 "}">
+<!ENTITY togglePictureInPicture.key "]"> <!-- } is above this key on many keyboards -->
 
 <!ENTITY fullScreenMinimize.tooltip "Miniměrowaś">
 <!ENTITY fullScreenRestore.tooltip "Wótnowiś">
@@ -146,13 +159,24 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.menu.signedInAs.label "Pśizjawjony ako">
 <!ENTITY fxa.menu.manageAccount.label "Konto zastojaś…">
 <!ENTITY fxa.menu.syncSettings.label "Nastajenja &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbar menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.syncSettings2.label "Nastajenja &syncBrand.shortName.label;">
 <!ENTITY fxa.menu.connectAnotherDevice2.label "Drugi rěd zwězaś…">
 <!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
 <!ENTITY fxa.menu.signin.label "Pla &brandProductName; pśizjawiś">
 <!ENTITY fxa.menu.turnOnSync.label "&syncBrand.shortName.label; zmóžniś">
-<!ENTITY fxa.menu.account.label "Konto">
 <!ENTITY fxa.menu.firefoxServices.label "Słužby &brandProductName;">
+
+<!ENTITY fxa.menu.account.label "Konto">
+<!ENTITY fxa.menu.settings.label "Nastajenja">
+<!ENTITY fxa.menu.accountSettings.label "Kontowe nastajenja">
+<!ENTITY fxa.menu.signOut.label "Wótzjawiś…">
+<!ENTITY fxa.menu.deviceSettings.label "Rědowe nastajenja">
+<!ENTITY fxa.menu.setupSync.label "&syncBrand.shortName.label; konfigurěrowaś…">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
      for the Firefox Account toolbar menu screen.  -->
@@ -195,6 +219,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY bookmarksMenu.label "Cytańske znamjenja">
 <!ENTITY bookmarksMenu.accesskey "C">
+
 <!ENTITY bookmarkThisPageCmd.label "Toś ten bok ako cytańske znamje składowaś">
 <!ENTITY editThisBookmarkCmd.label "Toś to cytańske znamje wobźěłaś">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
@@ -236,6 +261,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Wužywanje tykacow zastojaś">
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "Změńśo, lěc móžośo powěźeńki wót sedła dostaś">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Daty w trajnem składowaku składowaś">
+
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Wobglědowak se zdaloka wóźi">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Wobcerk webawtentifikacije wócyniś">
 <!ENTITY urlbar.storageAccessAnchor.tooltip               "Dialog za pšawa pśeglědowańskeje aktiwity wócyniś">
@@ -249,6 +275,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Pśełožowanje boka zastojaś">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Wužywanje softwary DRM zastojaś">
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "MIDI-wobcerk wócyniś">
+
+<!ENTITY urlbar.permissionsGranted.tooltip       "Sćo pśizwólił toś tomu websedłoju pśidatne pšawa.">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Sćo swóju kameru za toś to websedło zablokěrował.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Sćo swój mikrofon za toś to websedło zablokěrował.">
@@ -419,8 +447,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Cośo how swóje rejtarki z drugich rědow wiźeś?">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Synchronizěrowańske nastajenja wócyniś">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Pśizjawśo se, aby se lisćinu rejtarkow ze swójich drugich rědow woglědał.">
+<!ENTITY appMenuRemoteTabs.welcome.label "Woglědajśo se lisćinu rejtarkow ze swójich rědow.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Wašo konto musy se wobkšuśiś.">
 <!ENTITY appMenuRemoteTabs.signin.label "Pla Sync pśizjawiś">
+<!ENTITY appMenuRemoteTabs.signintosync.label "Se pla &syncBrand.shortName.label; pśizjawiś…">
+<!ENTITY appMenuRemoteTabs.turnonsync.label "&syncBrand.shortName.label; zmóžniś…">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Rědy rědowaś…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Bocnicu synchronizěrowanych rejtarkow pokazaś">
 <!ENTITY appMenuRemoteTabs.hidesidebar.label "Bocnicu synchronizěrowanych rejtarkow schowaś">
@@ -508,6 +539,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      This is set as the aria-label attribute for the search input box in the
      in-content search UI, to be used by screen readers. -->
 <!ENTITY contentSearchInput.label     "Pytańske napšašowanje">
+
 <!ENTITY contentSearchSubmit.tooltip  "Pytanje startowaś">
 
 <!-- LOCALIZATION NOTE (searchInput.placeholder):
@@ -812,13 +844,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.connection "Zwisk">
 <!ENTITY identity.connectionSecure "Wěsty zwisk">
-
-<!-- LOCALIZATION NOTE (identity.securityView.label2)
-     This is the header of the security subview in the Site Identity panel. -->
-<!ENTITY identity.securityView.label2 "Zwiskowa wěstota">
-
-<!ENTITY identity.connectionSecure2 "Zwisk jo wěsty">
 <!ENTITY identity.connectionNotSecure "Zwisk njejo wěsty">
+
+<!ENTITY identity.connectionSecure3 "Zwisk jo wěsty">
+<!ENTITY identity.connectionNotSecure2 "Zwisk njejo wěsty">
 <!ENTITY identity.connectionNotSecureSecurityView "Njejsćo wěsće zwězany z toś tym sedłom.">
 <!ENTITY identity.connectionFile "Toś ten bok jo se na wašom licadle składł.">
 <!ENTITY identity.connectionVerified2 "Sćo z toś tym sedłom wěsće zwězany, kótaregož wobsejźaŕ jo:">
@@ -828,7 +857,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.insecureLoginForms2 "Pśizjawjenja, kótarež zapódawaju se na toś tom boku, by mógli wobgrozone byś.">
 <!ENTITY identity.customRoot "Zwisk jo se pśeglědował pśez certifikatowego wudawarja, kótaryž njejo pśipóznaty wót Mozilla.">
 
-<!ENTITY identity.evOwnerLabel "Swójstwownik sedła:">
+<!ENTITY identity.evOwnerLabel2 "Certifikat wudany na:">
 
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "&brandShortName; jo źěle toś togo boka blokěrował, kótarež njejsu wěste.">
@@ -864,8 +893,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.permissions "Pšawa">
 
-<!-- LOCALIZATION NOTE (identity.permissions2): "set" as in "configured for this website" -->
-<!ENTITY identity.permissions2 "Dane pšawa">
+<!ENTITY identity.permissions3 "Pšawa">
 <!ENTITY identity.permissionsEmpty "Njejsćo toś tomu sedłoju wósebne pšawa pśizwólił.">
 <!ENTITY identity.permissionsReloadHint "Musyśo snaź bok znowego zacytaś, aby se změny wustatkowali.">
 <!ENTITY identity.permissionsPreferences.tooltip "Nastajenja pšawow wócyniś">
@@ -878,7 +906,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      protections.etpMoreInfo.label: The text a screen reader speaks when focused on the info button. -->
 <!ENTITY protections.etpMoreInfo.label "Dalšne informacije wó pólěpšonem slědowańskem šćiśe">
 <!ENTITY protections.settings.label "Šćitowe nastajenja">
-<!ENTITY protections.report.label "Dopołnu rozpšawu pokazaś">
+<!ENTITY protections.showreport.label "Rozpšawu pokazaś">
 <!-- LOCALIZATION NOTE:
      protections.siteNotWorking.label: The link to be clicked to open the sub-panel view
      protections.siteNotWorkingView.title: The heading/title of the sub-panel view -->
@@ -895,15 +923,23 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY protections.siteNotWorkingView.issueList.payments "Płaśenja">
 <!ENTITY protections.siteNotWorkingView.issueList.comments "Komentary">
 <!ENTITY protections.siteNotWorkingView.issueList.videos "Wideo">
-<!ENTITY protections.siteNotWorkingView.siteStillBroken.label "Jo sedło pó znjemóžnjenju šćitow hyšći wobškóźone?">
 <!ENTITY protections.siteNotWorkingView.sendReport.label "Rozpšawu pósłaś">
 
+<!-- LOCALIZATION NOTE (protections.blocking2.label, protections.notBlocking2.label, protections.notFound.label):
+     In the protections panel, Content Blocking category items are in three sections:
+     "Blocked" for categories being blocked in the current page,
+     "Allowed" for categories detected but not blocked in the current page, and
+     "None Detected" for categories not detected in the current page.
+     These strings are used in the header labels of each of these sections. -->
 <!ENTITY protections.blocking2.label "Blokěrowany">
 <!ENTITY protections.notBlocking2.label "Dowólony">
+<!ENTITY protections.notFound.label "Njenamakany">
+<!-- LOCALIZATION NOTE (protections.notBlocking.why.label, protections.notBlocking.why.etp*.tooltip):
+     The "Allowed" header also includes a "Why?" link that, when hovered, shows
+     a tooltip explaining why these items were not blocked in the page. -->
 <!ENTITY protections.notBlocking.why.label "Cogodla?">
 <!ENTITY protections.notBlocking.why.etpOn.tooltip "Gaž toś te elementy blokěrujośo, snaź wěste websedła wěcej pšawje njefunkcioněruju. Někotare tłocaški, formulary a pśizjawjeńske póla njemógli bźez pśeslědowakow pčawje funkcioněrowaś.">
 <!ENTITY protections.notBlocking.why.etpOff.tooltip "Gaž šćity znjemóžnjaśo, se wšykne pśeslědowaki na toś tom sedle dowólujo. To móžo wěstu funkcionalnosć websedła pólěpšyś.">
-<!ENTITY protections.notFound.label "Njenamakany">
 <!ENTITY protections.socialMediaTrackers.label "Pśeslědowaki socialnych medijow">
 <!ENTITY protections.crossSiteTrackingCookies.label "Slědujuce cookieje mjazy sedłami">
 <!ENTITY protections.trackingContent.label "Slědujuce wopśimjeśe">
@@ -914,7 +950,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY protections.crossSiteTrackingCookies.description "Toś te cookieje wam wót sedła do sedła slěduju, aby daty wó tom zběrali, což online gótujośo. Stajaju se wót tśeśich póbitowarjow kaž na pśikład wabjarjow a analyzowych pśedewześćow.">
 <!ENTITY protections.cryptominers.description "Kryptokopanje liceńske wugbaśe wašogo systema wužywa, aby digitalne pjenjeze dobyło. Kryptokopanske skripty wašu bateriju proznje, wašo licadło spómałšuju a mógu wašu pśetrjebu energije pówušyś.">
 <!ENTITY protections.fingerprinters.description "Palcowe wótśišće zběraju nastajenja z wašogo wobglědowaka a licadła, aby profil wó was napórali. Gaž toś ten digitalny palcowy wótśišć wužywaśo, mógu wam pśez rozdźělne websedła slědowaś.">
-<!ENTITY protections.trackingContent.description "Websedła mógu eksterne wabjenje, wideo a druge wośimjeśe zacytaś, kótarež slědujucy kod wopśimuju. Gaž slědujuce wopśimjeśe blokěrujośo, móžo to pomagaś, sedła malsnjej zacytaś, ale někotare tłocaški, formulary a pśizjawjeńske póla snaź wěcej njebudu funkcioněrowaś.">
+<!ENTITY protections.trackingContent2.description "Websedła mógu eksterne wabjenje, wideo a druge wośimjeśe ze slědujucym kodom zacytaś. Gaž slědujuce wopśimjeśe blokěrujośo, móžo to pomagaś, sedła malsnjej zacytaś, ale někotare tłocaški, formulary a pśizjawjeńske póla snaź wěcej njebudu funkcioněrowaś.">
 <!ENTITY protections.socialMediaTrackers.description "Socialne seśi placěruju pśeslědowaki na drugich websedłach, aby slědowali, což online gótujośo, wiźiśo a se wobglědujośo. To pśedewześam socialnych medijow dowólujo, wěcej wó was zgónił ako w profilach socialnych medijow źěliśo.">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
@@ -954,18 +990,18 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection3.label "Pśeslědowaki">
 
 <!ENTITY contentBlocking.manageSettings.label "Blokěrowanje wopśimjeśa zastojaś">
-
-<!ENTITY contentBlocking.trackingProtection4.label "Slědujuce wopśimjeśe">
-
-<!ENTITY contentBlocking.manageSettings2.label "Šćitowe nastajenja zastojaś">
 <!ENTITY contentBlocking.manageSettings.accesskey "z">
 
 <!ENTITY contentBlocking.trackersView.label "Pśeslědowaki">
-
 <!ENTITY contentBlocking.trackersView.strictInfo.label "Aby wšykne pśeslědowaki blokěrował, stajśo blokěrowanje wopśimjeśa na “Striktny”.">
 
 <!ENTITY contentBlocking.cookies.label "Cookieje">
 <!ENTITY contentBlocking.cookiesView.label "Cookieje a sedłowe daty">
+
+<!ENTITY contentBlocking.trackingProtection4.label "Slědujuce wopśimjeśe">
+
+<!ENTITY contentBlocking.manageSettings2.label "Šćitowe nastajenja zastojaś">
+<!ENTITY contentBlocking.manageSettings2.accesskey "n">
 
 <!ENTITY contentBlocking.socialblock.label "Pśeslědowaki socialnych medijow">
 
@@ -981,6 +1017,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView.label "Problemy k wěsći daś">
 <!ENTITY contentBlocking.breakageReportView2.description "Blokěrowanje wopśimjeśa móžo problemy z někotarymi websedłami zawinowaś. Gaž problemy k wěsći dajośo, pomagaśo &brandShortName; za kuždego pólěpšyś. (Pósćelo se Mozilla URL a informacije wó wašych nastajenjach wobglědowaka.)">
 <!ENTITY contentBlocking.breakageReportView.learnMore "Dalšne informacije">
+
 <!ENTITY contentBlocking.breakageReportView.title "Wobškóźone sedło k wěsći daś">
 <!ENTITY contentBlocking.breakageReportView3.description "Blokěrowanje wěstych pśeslědowakow móžo problemy z někotarymi websedłami zawinowaś. Gaž problemy k wěsći dajośo, pomagaśo &brandShortName; za kuždego pólěpšyś. Pósćelo se Mozilla URL a informacije wó wašych nastajenjach wobglědowaka.">
 <!ENTITY contentBlocking.breakageReportView2.learnMore "Dalšne informacije">
@@ -1036,6 +1073,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY newTabControlled.disableButton.accesskey "R">
 
 <!ENTITY homepageControlled.message "Rozšyrjenje jo změniło, což ako swój startowy bok wiźiśo. Móžośo swóje nastajenja wótnowiś, jolic toś tu změnu njocośo.">
+
 <!ENTITY homepageControlled.header.message "Waš startowy bok jo se změnił.">
 <!ENTITY homepageControlled.keepButton.label "Změny wobchowaś">
 <!ENTITY homepageControlled.keepButton.accesskey "Z">

@@ -5,7 +5,7 @@
 <!ENTITY minimizeWindow.key       "m">
 <!ENTITY minimizeWindow.label     "Smanji">
 <!ENTITY bringAllToFront.label    "Postavi sve na vrh">
-<!ENTITY zoomWindow.label         "Uvećanje">
+<!ENTITY zoomWindow.label         "Zumiraj">
 <!ENTITY windowMenu.label         "Prozor">
 
 <!ENTITY helpMenu.label           "Pomoć"> 
@@ -14,13 +14,14 @@
                        for the help button in the menubar but Gnome does not.   -->
 <!ENTITY helpMenuWin.label        "Pomoć"> 
 <!ENTITY helpMenuWin.accesskey    "P">
+
 <!ENTITY aboutProduct2.label      "O &brandShorterName;">
 <!ENTITY aboutProduct2.accesskey  "O">
 <!ENTITY productHelp2.label       "&brandShorterName; pomoć">
 <!ENTITY productHelp2.accesskey   "p">
 <!ENTITY helpMac.commandkey       "?">
 
-<!ENTITY helpKeyboardShortcuts.label     "Tipkovničke kratice">
+<!ENTITY helpKeyboardShortcuts.label     "Tipkovnički prečaci">
 <!ENTITY helpKeyboardShortcuts.accesskey "k">
 
 <!ENTITY helpSafeMode.label       "Ponovno pokreni s isključenim dodacima…">
@@ -31,7 +32,7 @@
 <!ENTITY helpTroubleshootingInfo.label      "Rješavanje problema">
 <!ENTITY helpTroubleshootingInfo.accesskey  "R">
 
-<!ENTITY helpFeedbackPage.label      "Pošalji povratne informacije…">
+<!ENTITY helpFeedbackPage.label      "Pošalji povratne informacije …">
 <!ENTITY helpFeedbackPage.accesskey  "e">
 
 <!ENTITY helpShowTour2.label            "&brandShorterName; Vodič">
@@ -40,7 +41,7 @@
 <!ENTITY preferencesCmdMac.label        "Postavke...">
 <!ENTITY preferencesCmdMac.commandkey   ",">
 
-<!ENTITY servicesMenuMac.label          "Servisi">
+<!ENTITY servicesMenuMac.label          "Usluge">
 
 <!ENTITY hideThisAppCmdMac2.label       "Sakrij &brandShorterName;">
 <!ENTITY hideThisAppCmdMac2.commandkey  "H">

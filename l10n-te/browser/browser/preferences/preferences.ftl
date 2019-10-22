@@ -229,6 +229,62 @@ applications-type-column =
 applications-action-column =
     .label = చర్య
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } ఫైలు
+applications-action-save =
+    .label = ఫైల్‌ను భద్రపరచు
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = { $app-name }ను వాడు
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = { $app-name }ను వాడు (అప్రమేయం)
+applications-use-other =
+    .label = వేరే వాటిని వాడు…
+applications-select-helper = సహాయక అనువర్తనాన్ని ఎన్నుకోండి
+applications-manage-app =
+    .label = అనువర్తన వివరాలు…
+applications-always-ask =
+    .label = ఎల్లప్పుడు అడుగు
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = { $plugin-name } వాడు ({ -brand-short-name }లో)
+applications-preview-inapp =
+    .label = { -brand-short-name }లో మునుజూపు
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 drm-content-header = డిజిటల్ హక్కుల నిర్వహణ (DRM) విషయం
 play-drm-content =
     .label = DRM-నియంత్రిత విషయాన్ని ఆడించు
@@ -298,6 +354,7 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = మీరు టైపుచేయడం ప్రారంభించినప్పటి నుంచి పాఠ్యము‍ కొరకు శోధించు
     .accesskey = x
+browsing-picture-in-picture-learn-more = ఇంకా తెలుసుకోండి
 browsing-cfr-recommendations-learn-more = ఇంకా తెలుసుకోండి
 
 ## General Section - Proxy
@@ -545,6 +602,7 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = మినహాయింపులు…
     .accesskey = x
+forms-breach-alerts-learn-more-link = ఇంకా తెలుసుకోండి
 forms-saved-logins =
     .label = భద్రపరచిన ప్రవేశాలు…
     .accesskey = L
@@ -554,6 +612,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = ప్రధాన సంకేతపదాన్ని మార్చు…
     .accesskey = M
+forms-master-pw-fips-title = మీరు ప్రస్తుతం FIPS రీతిలో ఉన్నారు. FIPS కు ఒక ఖాళీ-కాని ముఖ్య సంకేతపదం అవసరము.
+forms-master-pw-fips-desc = సంకేతపదం మార్పు విఫలమైంది
 
 ## Privacy Section - History
 
@@ -658,12 +718,30 @@ content-blocking-setting-custom =
 content-blocking-custom-desc = వేటిని నిరోధించాలో ఎంచుకోండి.
 content-blocking-private-trackers = తెలిసిన ట్రాకర్లు, అంతరంగిక కిటికీల్లో మాత్రమే
 content-blocking-third-party-cookies = మూడవ-పక్ష ట్రాకింగు కుకీలు
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = ప్రామాణికం
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = కఠినం
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = అభిమతం
+    .accesskey = C
+
+##
+
 content-blocking-all-cookies = అన్ని కుకీలు
 content-blocking-all-windows-trackers = తెలిసిన ట్రాకర్లు, అన్ని కిటికీల్లోనూ
 content-blocking-all-third-party-cookies = మూడవ-పక్ష కుకీలన్నీ
 content-blocking-cryptominers = క్రిప్టోమైనర్లు
 content-blocking-warning-title = గమనిక!
 content-blocking-learn-how = ఎలానో తెలుసుకోండి
+content-blocking-warning-learn-how = ఎలానో తెలుసుకోండి
 content-blocking-trackers-label =
     .label = ట్రాకర్లు
     .accesskey = T

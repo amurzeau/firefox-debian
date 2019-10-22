@@ -24,13 +24,18 @@
 <!ENTITY updatednewfirstrun_sync_title "Сметка">
 <!ENTITY firstrun_sync_message2 "Продължете откъдето сте спрели.">
 <!ENTITY firstrun_sync_subtext2 "Използвайте Sync, за да намерите отметките, паролите и другите неща, които запазвате в &brandShortName; на всички ваши устройства.">
+<!ENTITY updatednewfirstrun_sync_subtext "Влезте в сметката си, за да получите максимума от &brandShortName;">
 <!ENTITY firstrun_signin_message "Свържете се, започнете">
+<!ENTITY firstrun_sendtab_title "Изпращане на раздел">
+<!ENTITY firstrun_sendtab_message "Споделяйте раздели от мобилния до настолния – незабавно.">
 <!ENTITY firstrun_signin_button "Вписване в Sync">
 <!ENTITY newfirstrun_signin_button "Включване на Sync">
 <!ENTITY updatednewfirstrun_signin_button "Вписване в &brandShortName;">
-<!ENTITY  onboard_start_button_browser "Започнете да разглеждате">
+<!ENTITY onboard_start_button_browser "Започнете да разглеждате">
 <!ENTITY firstrun_button_notnow "Не сега">
 <!ENTITY firstrun_button_next "Напред">
+
+<!ENTITY firstrun_signin_button2 "Вписване">
 
 <!ENTITY firstrun_tabqueue_title "Препратки">
 
@@ -42,6 +47,8 @@
 <!-- Localization note (firstrun_devices_title): This is a casual way of addressing the user, somewhat referring to their online identity (which would include other devices, Firefox usage, accounts, etc). -->
 <!ENTITY firstrun_account_title "Вие">
 <!ENTITY firstrun_account_message "Имате &brandShortName; на друго устройство?">
+
+<!ENTITY firstrun_signup_button "Регистриране">
 
 <!ENTITY  onboard_start_restricted1 "Бъдете в безопасност и дръжте контрола с тази олекотена версия на &brandShortName;.">
 
@@ -55,7 +62,7 @@
 <!-- Localization note: Shown in a snackbar when tab is loaded from cache while device was offline. -->
 <!ENTITY  tab_offline_version "Показване на версия извън мрежа">
 
-<!ENTITY  crash_reporter_title "&brandShortName; доклад за срив">
+<!ENTITY  crash_reporter_title "Доклад за срив на &brandShortName;">
 <!ENTITY  crash_message2 "&brandShortName; се срина. След рестарта отворените раздели трябва да бъдат изброени на началната страница на &brandShortName;.">
 <!ENTITY  crash_send_report_message3 "Разкажете на &vendorShortName; за срива, така че нещата да бъдат поправени">
 <!ENTITY  crash_include_url2 "Включително адреса на посетената страница">
@@ -275,7 +282,8 @@
 
 <!ENTITY pref_cookies_menu "Бисквитки">
 <!ENTITY pref_cookies_accept_all "Разрешени">
-<!ENTITY pref_cookies_not_accept_foreign "Разрешени, без 3-ти страни">
+<!ENTITY pref_cookies_not_accept_foreign "Разрешени, без страничните">
+<!ENTITY pref_cookies_not_accept_trackers "Разрешени, без проследяващите">
 <!ENTITY pref_cookies_disabled "Забранени">
 
 <!-- Localization note (pref_category_data_saver): “data saver” in this
@@ -591,7 +599,6 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY bookmark_edit_location "Адрес">
 <!ENTITY bookmark_edit_keyword "Ключова дума">
 <!ENTITY bookmark_select_folder "Избиране на папка">
-
 <!ENTITY bookmark_edit_undo "Отменяне">
 
 <!-- Localization note (site_settings_*) : These strings are used in the "Site Settings"
@@ -684,6 +691,7 @@ shown from Android O while a tab is being queued.-->
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "Свързани сте към">
+
 <!-- Localization note (identity_run_by) : This string appears between a
 domain name (above) and an organization name (below). E.g.
 
@@ -874,6 +882,18 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_message "Отметнете статии в прегледа за четене, за да ги имате извън мрежа.">
 <!ENTITY helper_triple_readerview_open_button "Добавяне към отметките">
 
+<!-- LOCALIZATION NOTE (activity_stream_signin_title, activity_stream_signin_description, activity_stream_signup_button,
+activity_stream_signin_prompt, activity_stream_signin_prompt_button):
+- These labels are shown in the Activity Stream recommending the user to sign in. -->
+<!ENTITY activity_stream_signin_title "Добре дошли при &brandShortName;">
+<!ENTITY activity_stream_signin_description "Синхронизирайте отметки, пароли и други с вашия Firefox Account.">
+<!ENTITY activity_stream_signin_button "Вписване">
+
+<!ENTITY activity_stream_signup_button "Регистриране">
+<!ENTITY activity_stream_signin_prompt "Вече имате профил?">
+<!-- LOCALIZATION NOTE (activity_stream_signin_prompt_button): To be used in continuation of activity_stream_signin_prompt. -->
+<!ENTITY activity_stream_signin_prompt_button "Вписване.">
+
 <!ENTITY activity_stream_topsites "Често посещавани">
 <!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->
 <!ENTITY activity_stream_topstories "Препоръчани от &brandPocket;">
@@ -899,9 +919,9 @@ is simply hidden from the Activity Stream panel. -->
 <!ENTITY activity_stream_remove "Премахване">
 <!ENTITY activity_stream_delete_history "Премахване от историята">
 
-<!ENTITY private_tab_panel_title "Поверително разглеждане + Защита от проследяване">
+<!ENTITY private_tab_panel_title "Поверително разглеждане + защита от проследяване">
 <!ENTITY private_tab_panel_description "&brandShortName; блокира части от страницата, които биха могли да ви следят докато разглеждате в Мрежата.">
-<!ENTITY private_tab_panel_description2 "История няма да бъде съхранена, но изтеглените файлове и отметките ще бъдат запазени на вашето устройство.">
+<!ENTITY private_tab_panel_description2 "Историята няма да бъде запазена, но изтеглените файлове и отметките ще останат на устройството.">
 <!ENTITY private_tab_learn_more "Искате ли да научите повече?">
 
 <!ENTITY fullscreen_warning "Режим на цял екран">

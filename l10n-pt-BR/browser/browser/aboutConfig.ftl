@@ -7,10 +7,24 @@ about-config-warning-title = Audaciosamente indo, onde ninguém jamais esteve!
 about-config-warning-text = Alterar essas configurações avançadas pode prejudicar a estabilidade, segurança e desempenho desta aplicação. Você só deve continuar se estiver seguro do que está fazendo.
 about-config-warning-checkbox = Sempre mostrar este aviso
 about-config-warning-button = Eu aceito o risco
-about-config-title = about:config
 about-config2-title = Configurações avançadas
 about-config-search-input =
     .placeholder = Pesquisar
+
+## These strings appear on the warning you see when first visiting about:config.
+
+about-config-intro-warning-title = Prossiga com cautela
+about-config-intro-warning-text = Alterar preferências de configuração avançadas pode afetar o desempenho ou a segurança do { -brand-short-name }.
+about-config-intro-warning-checkbox = Mostrar este aviso quando eu for acessar essas preferências
+about-config-intro-warning-button = Aceitar o risco e continuar
+
+
+
+# This is shown on the page before searching but after the warning is accepted.
+about-config-caution-text = Alterar essas preferências pode afetar o desempenho ou a segurança do { -brand-short-name }.
+about-config-page-title = Preferências avançadas
+about-config-search-input1 =
+    .placeholder = Pesquisar nome de preferências
 about-config-show-all = Mostrar tudo
 about-config-pref-add = Adicionar
 about-config-pref-toggle = Alternar
@@ -18,12 +32,24 @@ about-config-pref-edit = Editar
 about-config-pref-save = Salvar
 about-config-pref-reset = Redefinir
 about-config-pref-delete = Excluir
+about-config-pref-add-button =
+    .title = Adicionar
+about-config-pref-toggle-button =
+    .title = Alternar
+about-config-pref-edit-button =
+    .title = Editar
+about-config-pref-save-button =
+    .title = Salvar
+about-config-pref-reset-button =
+    .title = Redefinir
+about-config-pref-delete-button =
+    .title = Excluir
 
 ## Labels for the type selection radio buttons shown when adding preferences.
 
 about-config-pref-add-type-boolean = Booleano
 about-config-pref-add-type-number = Número
-about-config-pref-add-type-string = String
+about-config-pref-add-type-string = Texto
 
 ## Preferences with a non-default value are differentiated visually, and at the
 ## same time the state is made accessible to screen readers using an aria-label

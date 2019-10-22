@@ -84,6 +84,31 @@ cfr-whatsnew-button =
     .label = Что нового
     .tooltiptext = Что нового
 cfr-whatsnew-panel-header = Что нового
+cfr-whatsnew-release-notes-link-text = Прочитать примечания к выпуску
+cfr-whatsnew-fx70-title = { -brand-short-name } теперь ещё сильнее борется за вашу приватность
+cfr-whatsnew-fx70-body = Последняя версия вносит улучшения в защиту от отслеживания и делает создание надёжных паролей для каждого сайта ещё более простым.
+cfr-whatsnew-tracking-protect-title = Защитите себя от трекеров
+cfr-whatsnew-tracking-protect-body =
+    { -brand-short-name } блокирует многие социальные и межсайтовые трекеры, которые
+    отслеживают вас в Интернете.
+cfr-whatsnew-tracking-protect-link-text = Посмотреть мой отчёт
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+        [one] Трекер заблокирован
+        [few] Трекера заблокировано
+       *[many] Трекеров заблокировано
+    }
+cfr-whatsnew-tracking-blocked-subtitle = С { DATETIME($earliestDate, month: "long", year: "numeric") }
+cfr-whatsnew-tracking-blocked-link-text = Посмотреть отчёт
+cfr-whatsnew-lockwise-backup-title = Сделайте резервную копию паролей
+cfr-whatsnew-lockwise-backup-body = Теперь можно генерировать надежные пароли и получать к ним доступ в любом месте.
+cfr-whatsnew-lockwise-backup-link-text = Включить резервные копии
+cfr-whatsnew-lockwise-take-title = Возьмите свои пароли с собой
+cfr-whatsnew-lockwise-take-body = Приложение { -lockwise-brand-short-name } предоставляет вам безопасный доступ к резервным копиям паролей из любой точки мира.
+cfr-whatsnew-lockwise-take-link-text = Загрузить приложение
 
 ## Bookmark Sync
 
@@ -91,6 +116,13 @@ cfr-doorhanger-sync-bookmarks-header = Перенесите эту заклад�
 cfr-doorhanger-sync-bookmarks-body = Получайте доступ к закладкам, паролям, истории и другой информации на всех устройствах, где бы вы ни вошли в { -brand-product-name }.
 cfr-doorhanger-sync-bookmarks-ok-button = Включить { -sync-brand-short-name(case: "accusative") }…
     .accesskey = ю
+
+## Login Sync
+
+cfr-doorhanger-sync-logins-header = Никогда больше не забывайте пароли
+cfr-doorhanger-sync-logins-body = Надёжно храните и синхронизируйте свои пароли со всеми вашими устройствами.
+cfr-doorhanger-sync-logins-ok-button = Включить { -sync-brand-short-name(case: "accusative") }
+    .accesskey = В
 
 ## Send Tab
 
@@ -106,3 +138,14 @@ cfr-doorhanger-firefox-send-header = Безопасно поделитесь э�
 cfr-doorhanger-firefox-send-body = Защитите свои важные документы от посторонних глаз благодаря сквозному шифрованию и ссылке, которая исчезнет, когда это потребуется.
 cfr-doorhanger-firefox-send-ok-button = Попробуйте { -send-brand-name }
     .accesskey = й
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-close-button = Закрыть
+    .accesskey = к
+cfr-doorhanger-socialtracking-heading = { -brand-short-name } не позволил социальной сети отслеживать вас здесь
+cfr-doorhanger-socialtracking-description = Ваша приватность имеет значение. { -brand-short-name } теперь блокирует трекеры социальных сетей, ограничивая количество собираемых ими данных о вашей деятельности в Интернете.
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name } заблокировал сборщик цифровых отпечатков на этой странице
+cfr-doorhanger-fingerprinters-description = Ваша приватность имеет значение. { -brand-short-name } теперь блокирует сборщики цифровых отпечатков, которые собирают уникальную информацию, используемую для идентификации устройства и слежения за вами.
+cfr-doorhanger-cryptominers-heading = { -brand-short-name } заблокировал криптомайнер на этой странице
+cfr-doorhanger-cryptominers-description = Ваша приватность имеет значение. { -brand-short-name } теперь блокирует криптомайнеры, которые используют вычислительные мощности вашей системы для добычи цифровых валют.

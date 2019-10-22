@@ -244,6 +244,62 @@ applications-type-column =
 applications-action-column =
     .label = क्रिया
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } फाइल
+applications-action-save =
+    .label = फाइल सहेजें
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = { $app-name } का प्रयोग करें
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = { $app-name } (तयशुदा) का प्रयोग करें
+applications-use-other =
+    .label = दूसरा प्रयोग करें…
+applications-select-helper = मददगार अनुप्रयोग चुनें
+applications-manage-app =
+    .label = अनुप्रयोग विवरण…
+applications-always-ask =
+    .label = हमेशा पूछें
+applications-type-pdf = पोर्टेबल दस्तावेज़ फॉर्मेट (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = { $plugin-name } ({ -brand-short-name } में) का प्रयोग करें
+applications-preview-inapp =
+    .label = { -brand-short-name } में पूर्वावलोकन
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 drm-content-header = डिजिटल राइट्स मैनेजमेंट (DRM) सामग्री
 play-drm-content =
     .label = DRM-नियंत्रित सामग्री चलाएं
@@ -581,6 +637,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = मुख्य कूटशब्द बदलें…
     .accesskey = M
+forms-master-pw-fips-title = आप अभी FIPS मोड में हैं. FIPS के लिये गैर रिक्त मुख्य कूटशब्द चाहिए.
+forms-master-pw-fips-desc = कूटशब्द बदलाव विफल
 
 ## Privacy Section - History
 
@@ -681,6 +739,23 @@ content-blocking-setting-custom =
 content-blocking-custom-desc = अवरोधित करने के लिए चुनें।
 content-blocking-private-trackers = निजी विंडो में केवल ज्ञात ट्रैकर्स
 content-blocking-third-party-cookies = तीसरे-पक्ष की ट्रैकिंग कुकीज़
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = मानक
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = सख़्त
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = मनपसंद
+    .accesskey = त
+
+##
+
 content-blocking-all-cookies = सारे कुकीज़
 content-blocking-all-windows-trackers = सभी विंडो में ज्ञात ट्रैकर्स
 content-blocking-all-third-party-cookies = सभी तृतीय-पक्ष कुकीज़

@@ -86,6 +86,36 @@ cfr-whatsnew-button =
     .label = Novosti
     .tooltiptext = Novosti
 cfr-whatsnew-panel-header = Novosti
+cfr-whatsnew-release-notes-link-text = Preberite opombe ob izdaji
+cfr-whatsnew-fx70-title = { -brand-short-name } se zdaj še močneje bori za vašo zasebnost
+cfr-whatsnew-fx70-body =
+    Najnovejša posodobitev izboljšuje možnost zaščite pred sledenjem in omogoča
+    lažje ustvarjanje varnih gesel za vse strani, kot kdajkoli prej.
+cfr-whatsnew-tracking-protect-title = Zaščitite se pred sledilci
+cfr-whatsnew-tracking-protect-body =
+    { -brand-short-name } zavrača številne sledilce družbenih omrežij in spletne sledilce, 
+    ki sledijo vaši spletni dejavnosti.
+cfr-whatsnew-tracking-protect-link-text = Oglejte si svoje poročilo
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+        [one] Zavrnjen sledilec
+        [two] Zavrnjena sledilca
+        [few] Zavrnjeni sledilci
+       *[other] Zavrnjenih sledilcev
+    }
+cfr-whatsnew-tracking-blocked-subtitle = Od { DATETIME($earliestDate, month: "long", year: "numeric") }
+cfr-whatsnew-tracking-blocked-link-text = Prikaži poročilo
+cfr-whatsnew-lockwise-backup-title = Varnostno kopirajte gesla
+cfr-whatsnew-lockwise-backup-body = Ustvarite varna gesla, do katerih lahko dostopate kjerkoli se prijavite.
+cfr-whatsnew-lockwise-backup-link-text = Vklopite varnostne kopije
+cfr-whatsnew-lockwise-take-title = Vzemite gesla s seboj
+cfr-whatsnew-lockwise-take-body =
+    Mobilna aplikacija { -lockwise-brand-short-name } vam omogoča varen dostop do 
+    varnostno kopiranih gesel kjerkoli.
+cfr-whatsnew-lockwise-take-link-text = Prenesite aplikacijo
 
 ## Bookmark Sync
 
@@ -115,3 +145,16 @@ cfr-doorhanger-firefox-send-header = Varno delite ta PDF
 cfr-doorhanger-firefox-send-body = Ohranite svoje zaupne dokumente varne pred radovednimi očmi s šifriranjem od konca do konca in povezavo, ki izgine, ko končate.
 cfr-doorhanger-firefox-send-ok-button = Preizkusite { -send-brand-name }
     .accesskey = P
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-ok-button = Oglejte si zaščite
+    .accesskey = g
+cfr-doorhanger-socialtracking-close-button = Zapri
+    .accesskey = Z
+cfr-doorhanger-socialtracking-heading = { -brand-short-name } je preprečil družbenemu omrežju, da bi vam tukaj sledilo
+cfr-doorhanger-socialtracking-description = Vaša zasebnost je pomembna. { -brand-short-name } zdaj zavrača običajne sledilce družbenih omrežij in omejuje, koliko podatkov lahko zberejo o tem, kar počnete na spletu.
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name } je na tej strani zavrnil sledilca prstnega odtisa brskalnika
+cfr-doorhanger-fingerprinters-description = Vaša zasebnost je pomembna. { -brand-short-name } sedaj zavrača sledilce prstnih odtisov, ki zbirajo edinstvene podatke o vaši napravi za vašo prepoznavo in sledenje.
+cfr-doorhanger-cryptominers-heading = { -brand-short-name } je na tej strani zavrnil kriptorudarja
+cfr-doorhanger-cryptominers-description = Vaša zasebnost je pomembna. { -brand-short-name } sedaj zavrača kriptorudarje, ki izkoriščajo zmogljivost vašega računalnika za rudarjenje digitalnega denarja.

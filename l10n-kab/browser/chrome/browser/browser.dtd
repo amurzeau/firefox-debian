@@ -76,12 +76,21 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY menubarCmd.label "Afeggag n wumuɣ">
 <!ENTITY menubarCmd.accesskey "A">
 <!ENTITY navbarCmd.label "Afeggag n tunigin">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY navbar.accessibleLabel "Tunigin">
 <!ENTITY personalbarCmd.label "Afeggag n tecraḍ">
 <!ENTITY personalbarCmd.accesskey "d">
+<!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
+include the word "toolbar" or such, because screen readers already know that
+this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY personalbar.accessibleLabel "Ticraḍ n isebtar">
 <!ENTITY bookmarksToolbarItem.label "Iferdisen n ufeggag n tecraḍ">
 
 <!ENTITY pageSourceCmd.label "Tangalt taɣbalut n usebter">
 <!ENTITY pageSourceCmd.accesskey "T">
+
 <!ENTITY pageSourceCmd.commandkey "u">
 <!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
 Option+Command keyboard shortcut letter that Safari and Chrome use for "View
@@ -92,6 +101,7 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 
 <!ENTITY pageInfoCmd.label "Talɣut ɣef usebter">
 <!ENTITY pageInfoCmd.accesskey "T">
+
 <!ENTITY pageInfoCmd.commandkey "i">
 <!ENTITY ldbCmd.label "Amseγti n tneγruft">
 <!ENTITY ldbCmd.accesskey "L">
@@ -117,6 +127,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaUnverified.label "Senqed amiḍan-ik">
 
 
+<!ENTITY togglePictureInPicture.key2 "}">
+<!ENTITY togglePictureInPicture.key "]"> <!-- } is above this key on many keyboards -->
+
 <!ENTITY fullScreenMinimize.tooltip "Semẓi">
 <!ENTITY fullScreenRestore.tooltip "Err-d">
 <!ENTITY fullScreenClose.tooltip "Mdel">
@@ -137,6 +150,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.unverified.description.label "Ilaq-ak ad tesfeqdeḍ amiḍan-ik uqbel ad tizmireḍ ad temtawiḍ.">
 <!ENTITY fxa.unverified.button.label "Ldi iɣewwaṛen n &syncBrand.shortName.label;…">
 
+<!ENTITY pictureInPictureHideToggle.accesskey "H">
 
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
      for the Firefox Account toolbar menu screen. The `Signed in as` text is
@@ -144,12 +158,21 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.menu.signedInAs.label "Tkecmeḍ s yisem">
 <!ENTITY fxa.menu.manageAccount.label "Sefrek imiḍanen…">
 <!ENTITY fxa.menu.syncSettings.label "Iɣewwaṛen n &syncBrand.shortName.label;…">
+
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbar menu screen. The `Signed in as` text is
+     followed by the user's email. -->
 <!ENTITY fxa.menu.connectAnotherDevice2.label "Qqen ibenk-nniḍen...">
 <!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
 <!ENTITY fxa.menu.signin.label "Qqen ɣer &brandProductName;">
 <!ENTITY fxa.menu.turnOnSync.label "Rmed &syncBrand.shortName.label;">
+
 <!ENTITY fxa.menu.account.label "Amiḍan">
+<!ENTITY fxa.menu.settings.label "Iɣewwaṛen">
+<!ENTITY fxa.menu.accountSettings.label "Iɣewwaṛen n umiḍan">
+<!ENTITY fxa.menu.signOut.label "Ffeɣ…">
+<!ENTITY fxa.menu.deviceSettings.label "Iɣewwaṛen n yibenk">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
      for the Firefox Account toolbar menu screen.  -->
@@ -191,6 +214,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY bookmarksMenu.label "Ticraḍ n yisebtar">
 <!ENTITY bookmarksMenu.accesskey "r">
+
 <!ENTITY bookmarkThisPageCmd.label "Creḍ asebter-a">
 <!ENTITY editThisBookmarkCmd.label "Ẓreg tacreḍṭ n usebter-a">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
@@ -232,6 +256,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Sefrek aseqdec n yizegrar">
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "Beddel ma yella tebɣiḍ ad d-tremseḍ ilɣa seg usmel">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Err-d isefka deg uselkim">
+
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Iminig yettwaṭṭef s wudem anmeggag">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Ldi afeggag n usentem Web">
 <!ENTITY urlbar.storageAccessAnchor.tooltip               "Ldi agalis n tsirag n tunigin">
@@ -245,6 +270,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Sefrek tasuqilt n usebter">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Sefrek aseqdec n useɣẓan DRM">
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "Ldi agalis MIDI">
+
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Tesweḥleḍ asawaḍ-ik i usmelweb-a.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Tesweḥleḍ asawaḍ-inek i usmelweb-a.">
@@ -417,6 +443,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Qqen akken ad d-tsekneḍ tabdart n waccaren seg yibenkan-ik-nniḍen.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Amiḍan-ik yeḥwaǧ ad ittusenqed.">
 <!ENTITY appMenuRemoteTabs.signin.label "Qqen ɣer Sync">
+<!ENTITY appMenuRemoteTabs.turnonsync.label "Rmed &syncBrand.shortName.label;…">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Sefrek ibenkan…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Sken agalis adisan n waccaren yemtawin">
 <!ENTITY appMenuRemoteTabs.hidesidebar.label "Ffer agalis adisan n waccaren yemtawin">
@@ -504,6 +531,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      This is set as the aria-label attribute for the search input box in the
      in-content search UI, to be used by screen readers. -->
 <!ENTITY contentSearchInput.label     "Nadi tuttra">
+
 <!ENTITY contentSearchSubmit.tooltip  "Azen anadi">
 
 <!-- LOCALIZATION NOTE (searchInput.placeholder):
@@ -535,6 +563,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (searchWithDesc.label):
      This string prompts the user to use the list of one-click search engines in
      the Urlbar and searchbar. -->
+<!ENTITY searchWithDesc.label         "Tikkelt-agi, nadi s:">
 
 <!-- LOCALIZATION NOTE (changeSearchSettings.button):
      This string won't wrap, so if the translated string is longer,
@@ -807,12 +836,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.connection "Tuqqna">
 <!ENTITY identity.connectionSecure "Tuqqna taɣelsant">
-
-<!-- LOCALIZATION NOTE (identity.securityView.label2)
-     This is the header of the security subview in the Site Identity panel. -->
-<!ENTITY identity.securityView.label2 "Taɣellist n tuqqna">
-
 <!ENTITY identity.connectionNotSecure "Tuqqna-a mačči d taɣelsant">
+
+<!ENTITY identity.connectionSecure3 "Taɣellist n tuqqna">
+<!ENTITY identity.connectionNotSecure2 "Tuqqna taraɣelsant">
 <!ENTITY identity.connectionFile "Asebter-a yettwakles deg uselkim-inek.">
 <!ENTITY identity.connectionVerified2 "Aqli-k tura teqqneḍ s tɣellist ɣeṛ usmel-a, bab-is d:">
 <!ENTITY identity.connectionInternal "Wa d asebter &brandShortName; aɣelsan.">
@@ -820,6 +847,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.insecureLoginForms2 "Isem n useqdac d wawal uffir i tesqedceḍ deg usmel-a zemren ad ttwakren.">
 <!ENTITY identity.customRoot "Tuqqna tettwasntem sɣur amazan n uselkin ur tessin ara Mozilla.">
 
+<!ENTITY identity.evOwnerLabel2 "Aselkin yeffeɣ-d i:">
 
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "&brandShortName; issewḥel kra n tazunin ur nelli ara d iɣelsanen deg usebter-a.">
@@ -855,7 +883,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.permissions "Tisirag">
 
-<!-- LOCALIZATION NOTE (identity.permissions2): "set" as in "configured for this website" -->
+<!ENTITY identity.permissions3 "Tisirag">
 <!ENTITY identity.permissionsEmpty "Ur tefkiḍ ara kra n tsiregt i usmel-a.">
 <!ENTITY identity.permissionsReloadHint "Ahat tesriḍ ad d-tessaliḍ tikelt-nniḍen asebter akken ad yemmed wayen i tbeddleḍ.">
 <!ENTITY identity.permissionsPreferences.tooltip "Ldi ismenyifen n tsirag">
@@ -864,9 +892,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!-- LOCALIZATION NOTE:
      protections.etpMoreInfo.label: The text a screen reader speaks when focused on the info button. -->
+<!ENTITY protections.settings.label "Iɣewwaṛen n tɣellist">
+<!ENTITY protections.showreport.label "Sken aneqqis">
 <!-- LOCALIZATION NOTE:
      protections.siteNotWorking.label: The link to be clicked to open the sub-panel view
      protections.siteNotWorkingView.title: The heading/title of the sub-panel view -->
+<!ENTITY protections.siteNotWorking.label "Ur iteddu ara usmel?">
+<!ENTITY protections.siteNotWorkingView.title "Ur iteddu ara usmel?">
 <!-- LOCALIZATION NOTE:
      In the Site Not Working? view, we suggest turning off protections if
      the user is experiencing issues with any of a variety of functionality.
@@ -875,9 +907,22 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY protections.siteNotWorkingView.issueList.payments "Asellek">
 <!ENTITY protections.siteNotWorkingView.issueList.comments "Iwenniten">
 <!ENTITY protections.siteNotWorkingView.issueList.videos "Tividyutin">
+<!ENTITY protections.siteNotWorkingView.sendReport.label "Azen aneqqis">
 
-<!ENTITY protections.blocking.label "Asewḥel">
+<!-- LOCALIZATION NOTE (protections.blocking2.label, protections.notBlocking2.label, protections.notFound.label):
+     In the protections panel, Content Blocking category items are in three sections:
+     "Blocked" for categories being blocked in the current page,
+     "Allowed" for categories detected but not blocked in the current page, and
+     "None Detected" for categories not detected in the current page.
+     These strings are used in the header labels of each of these sections. -->
+<!ENTITY protections.blocking2.label "Iwḥel">
+<!ENTITY protections.notBlocking2.label "Ittusireg">
+<!-- LOCALIZATION NOTE (protections.notBlocking.why.label, protections.notBlocking.why.etp*.tooltip):
+     The "Allowed" header also includes a "Why?" link that, when hovered, shows
+     a tooltip explaining why these items were not blocked in the page. -->
 <!ENTITY protections.notBlocking.why.label "Ayɣer?">
+<!ENTITY protections.trackingContent.label "Agbur n uḍfaṛ">
+<!ENTITY protections.fingerprinters.label "Idsilen umḍinen">
 <!ENTITY protections.cryptominers.label "Ikripṭuminaren">
 
 
@@ -918,16 +963,16 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection3.label "Ineḍfaren">
 
 <!ENTITY contentBlocking.manageSettings.label "Sefrek Asewḥel n Ugbur">
-
-
 <!ENTITY contentBlocking.manageSettings.accesskey "S">
 
 <!ENTITY contentBlocking.trackersView.label "Ineḍfaren">
-
 <!ENTITY contentBlocking.trackersView.strictInfo.label "Akken ad tesweḥleḍ akk ineḍfaren, sbadu asewḥel n ugbur ɣer “Uḥris”.">
 
 <!ENTITY contentBlocking.cookies.label "Inagan n tuqqna">
 <!ENTITY contentBlocking.cookiesView.label "Inagan n tuqna akked isefka n usmel">
+
+<!ENTITY contentBlocking.trackingProtection4.label "Agbur n uḍfaṛ">
+
 
 <!ENTITY contentBlocking.socialblock.label "Ineḍfaṛen n iẓeḍwa imettanen">
 
@@ -942,6 +987,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView.label "Azen-d uguren">
 <!ENTITY contentBlocking.breakageReportView2.description "Asewḥel n ugbur izmer ad d-yawi uguren deg kra n ismal. Mi ara ad aɣ-tazneḍ uguren, ad d-fkeḍ tallelt akken ad yili &brandShortName; igerrez i yal yiwen. ( aya ad yazen URL d  talɣut ɣef iɣewwaṛen , iminig-inek ɣer Mozilla.)">
 <!ENTITY contentBlocking.breakageReportView.learnMore "Issin ugar">
+
 <!ENTITY contentBlocking.breakageReportView2.learnMore "Issin ugar">
 <!ENTITY contentBlocking.breakageReportView.collection.url.label "URL">
 <!ENTITY contentBlocking.breakageReportView.collection.comments.label "D acu n wuguren i tesɛiḍ? (afrayan)">
@@ -994,6 +1040,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY newTabControlled.disableButton.accesskey "D">
 
 <!ENTITY homepageControlled.message "Asiɣzef ibeddel asebter-ik agejdan. Tzemreḍ ad tbeddleḍ iɣewwaṛen ma yella ur teqbileḍ ara ibeddilen-agi.">
+
 <!ENTITY homepageControlled.header.message "Asebter-inek agejdan ibeddel.">
 <!ENTITY homepageControlled.keepButton.label "Ḥrez abeddel">
 <!ENTITY homepageControlled.keepButton.accesskey "K">

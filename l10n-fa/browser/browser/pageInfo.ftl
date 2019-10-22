@@ -14,8 +14,8 @@ select-all =
 menu-select-all =
     .label = انتخاب همه
     .accesskey = ه
-close-window =
-    .key = A
+close-dialog =
+    .key = w
 general-tab =
     .label = عمومی
     .accesskey = ع
@@ -119,6 +119,8 @@ security-site-data-cookies-only = بله، کوکی‌ها
 security-site-data-no = خیر
 image-size-unknown = نامعلوم
 not-set-verified-by = نامشخص
+page-info-not-specified =
+    .value = نامشخص
 not-set-alternative-text = نامشخص
 not-set-date = نامشخص
 media-img = تصویر
@@ -141,12 +143,34 @@ general-quirks-mode =
 general-strict-mode =
     .value = حالت پیروی از استاندارد
 security-no-owner = این پایگاه وبی اطلاعی در مورد مالک خود ارائه نمی‌دهد.
+page-info-security-no-owner =
+    .value = این پایگاه وبی اطلاعی در مورد مالک خود ارائه نمی‌دهد.
 media-select-folder = پوشه‌ای برای ذخیرهٔ تصویر انتخاب کنید
 media-unknown-not-cached =
     .value = نامعلوم (در حافظهٔ نهان نیست)‏
 permissions-use-default =
     .label = استفاده از مقدار پیش‌فرض
 security-no-visits = خیر
+# This string is used to display the number of times
+# the user has visited the website prior
+# Variables:
+#   $visits (number) - The number of previous visits
+security-visits-number =
+    { $visits ->
+        [0] نه
+        [one] بله، یک بار
+       *[other] بله، { $visits } بار
+    }
+# This string is used to display the size of a media file
+# Variables:
+#   $kb (number) - The size of an image in Kilobytes
+#   $bytes (number) - The size of an image in Bytes
+properties-general-size =
+    .value =
+        { $bytes ->
+            [one] { $kb } KB ({ $bytes } byte)
+           *[other] { $kb } KB ({ $bytes } bytes)
+        }
 # This string is used to display the type of
 # an image
 # Variables:

@@ -39,10 +39,10 @@ profiles-rename-profile-title = שינוי שם פרופיל
 # Variables:
 #   $name (String) - Name of the profile
 profiles-rename-profile = שינוי שם הפרופיל { $name }
-profiles-invalid-profile-name-title = שם פרופיל שגוי
+profiles-invalid-profile-name-title = שם פרופיל לא חוקי
 # Variables:
 #   $name (String) - Name of the profile
-profiles-invalid-profile-name = לא ניתן להשתמש בשם "{ $name }" כשם לפרופיל.
+profiles-invalid-profile-name = לא ניתן להשתמש בשם ״{ $name }״ כשם לפרופיל.
 profiles-delete-profile-title = מחיקת פרופיל
 # Variables:
 #   $dir (String) - Path to be displayed
@@ -57,6 +57,6 @@ profiles-delete-profile-failed-message = אירעה שגיאה בעת ניסיו
 profiles-opendir =
     { PLATFORM() ->
         [macos] הצגה ב־Finder
-        [windows] פתיחת תיקיה
-       *[other] פתיחת תיקיה
+        [windows] פתיחת תיקייה
+       *[other] פתיחת ספרייה
     }

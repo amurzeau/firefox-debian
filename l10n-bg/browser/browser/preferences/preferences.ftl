@@ -88,7 +88,7 @@ extension-controlled-default-search = Разширението „<img data-l10n
 extension-controlled-privacy-containers = Разширението „<img data-l10n-name="icon"/> { $name }“ има изискване за изолирани раздели.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = Разширението „<img data-l10n-name="icon"/> { $name }“ управлява тази настройка.
+extension-controlled-websites-content-blocking-all-trackers = Разширението „<img data-l10n-name="icon"/> { $name }“ управлява настройката.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Разширението „<img data-l10n-name="icon"/> { $name }“ управлява как { -brand-short-name } се свързва с интернет.
@@ -253,6 +253,62 @@ applications-type-column =
 applications-action-column =
     .label = Действие
     .accesskey = Д
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = файл { $extension }
+applications-action-save =
+    .label = Запазване на файла
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = Използване на { $app-name }
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = Използване на { $app-name } (по подразбиране)
+applications-use-other =
+    .label = Използване на друго…
+applications-select-helper = Избиране на помощно приложение
+applications-manage-app =
+    .label = Подробности за приложение…
+applications-always-ask =
+    .label = Винаги да пита
+applications-type-pdf = Преносим формат за документи (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = Използване на { $plugin-name } (в { -brand-short-name })
+applications-preview-inapp =
+    .label = Преглед с { -brand-short-name }
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+
+
 drm-content-header = Съдържание с цифрови права (DRM)
 play-drm-content =
     .label = Изпълняване на съдържание под DRM
@@ -293,8 +349,8 @@ update-setting-write-failure-title = Грешка при запазване на
 update-setting-write-failure-message =
     Поради възникнала грешка { -brand-short-name } не запази промяната.
     
-    Обърнете внимание, че задаването на тази настройка за обновяване изисква права за запис във файла по-долу. Вие или системен администратор може да успеете да разрешите проблема, като предоставите на групата потребители пълни права над този файл.¶
-    ¶
+    Обърнете внимание, че задаването на тази настройка за обновяване изисква права за запис във файла по-долу. Вие или системен администратор може да успеете да разрешите проблема, като предоставите на групата потребители пълни права над файла.
+    
     Във файлa „{ $path }“ не може да бъде записвано.
 update-in-progress-title = Обновяване е в процес на изпълнение
 update-in-progress-message = Желаете ли { -brand-short-name } да продължи с обновяването?
@@ -341,6 +397,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Търсене на текст при започване на въвеждане
     .accesskey = Т
+browsing-picture-in-picture-toggle-enabled =
+    .label = Включване на видео картина в картината
+    .accesskey = к
+browsing-picture-in-picture-learn-more = Научете повече
 browsing-cfr-recommendations =
     .label = Препоръчване на разширения
     .accesskey = П
@@ -447,11 +507,13 @@ search-bar-shown =
     .label = Добавяне на лента за търсене в лентата с инструменти
 search-engine-default-header = Стандартна търсеща машина
 search-engine-default-desc = Изберете търсеща машина, която да използвате от адресната лента и лентата за търсене.
+search-suggestions-header = Предложения при търсене
+search-suggestions-desc = Изберете как да се показват предложенията от търсещи машини.
 search-suggestions-option =
     .label = Показване на предложения при търсене
     .accesskey = П
 search-show-suggestions-url-bar-option =
-    .label = Показване на предложения при търсене в резултатите на адресната лента
+    .label = Показване на предложения при търсене в резултатите от адресната лента
     .accesskey = р
 # This string describes what the user will observe when the system
 # prioritizes search suggestions over browsing history in the results
@@ -460,6 +522,7 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Показване на подсказките преди резултатите от историята при търсене от адресната лента
+suggestions-addressbar-settings = Променете настройките за история на разглеждане, отметки и предлагане на раздели
 search-suggestions-cant-show = Предложения при търсене в резултатите на адресната лента няма да бъдат показвани, защото { -brand-short-name } е настроен да не запазва историята на разглеждане.
 search-one-click-header = Търсене с едно щракване
 search-one-click-desc = Изберете допълнителни търсещи машини, които да се показват под адресната лента и лентата за търсене при въвеждане на текст.
@@ -496,6 +559,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Вземете Мрежата със себе си
 sync-signedout-description = Синхронизирайте вашите отметки, история, раздели, добавки и настройки с всички ваши устройства.
 sync-signedout-account-title = Свържете ги с { -fxaccount-brand-name }
@@ -516,11 +583,17 @@ sync-mobile-promo = Изтеглете Firefox за <img data-l10n-name="android
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = Промяна снимката на профила
 sync-disconnect =
     .label = Изключване…
     .accesskey = И
+sync-sign-out =
+    .label = Излизане…
+    .accesskey = з
 sync-manage-account = Управление на сметката
     .accesskey = У
 sync-signedin-unverified = { $email } не е проверен.
@@ -536,6 +609,45 @@ sync-sign-in =
     .accesskey = В
 sync-signedin-settings-header = Настройки за синхронизиране
 sync-signedin-settings-desc = Изберете какво да бъде синхронизирано на вашите устройства, използващи { -brand-short-name }.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Синхронизиране: ВКЛЮЧЕНО
+prefs-syncing-off = Синхронизиране: ИЗКЛЮЧЕНО
+prefs-sync-setup =
+    .label = Настройка на { -sync-brand-short-name }…
+    .accesskey = н
+prefs-sync-offer-setup-label = Синхронизирайте вашите отметки, история, раздели, добавки и настройки с всички ваши устройства.
+prefs-sync-now =
+    .labelnotsyncing = Синхронизиране
+    .accesskeynotsyncing = с
+    .labelsyncing = Синхронизиране…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = В момента се синхронизир тези елементи:
+sync-currently-syncing-bookmarks = Отметки
+sync-currently-syncing-history = История
+sync-currently-syncing-tabs = Отворени раздели
+sync-currently-syncing-logins-passwords = Регистрации и пароли
+sync-currently-syncing-addresses = Адреси
+sync-currently-syncing-creditcards = Банкови карти
+sync-currently-syncing-addons = Добавки
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Настройки
+       *[other] Настройки
+    }
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = Изберете какво да бъде синхронизирано
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Запазване
+    .buttonaccesskeyaccept = з
+    .buttonlabelextra2 = Изключване…
+    .buttonaccesskeyextra2 = и
 sync-engine-bookmarks =
     .label = Отметки
     .accesskey = О
@@ -550,6 +662,10 @@ sync-engine-logins =
     .label = Регистрации
     .tooltiptext = Запазени потребителски имена и пароли
     .accesskey = Р
+sync-engine-logins-passwords =
+    .label = Регистрации и пароли
+    .tooltiptext = Запазени потребителски имена и пароли
+    .accesskey = е
 sync-engine-addresses =
     .label = Адреси
     .tooltiptext = Запазени адреси (само от настолния)
@@ -570,6 +686,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Променени настройки
     .accesskey = Н
+
+## The device name controls.
+
 sync-device-name-header = Име на текущото устройство
 sync-device-name-change =
     .label = Преименуване…
@@ -581,7 +700,7 @@ sync-device-name-save =
     .label = Запазване
     .accesskey = З
 sync-connect-another-device = Добавяне на устройство
-sync-manage-devices = Управление на устройства
+sync-manage-devices = Управление на устройствата
 sync-fxa-begin-pairing = Сдвояване на устройство
 sync-tos-link = Условия на услугата
 sync-fxa-privacy-notice = Политика на поверителност
@@ -602,6 +721,13 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Предлагане и създаване на силни пароли
     .accesskey = р
+forms-breach-alerts =
+    .label = Показване на известия за изтекли пароли от разбити страници
+    .accesskey = и
+forms-breach-alerts-learn-more-link = Научете повече
+forms-fill-logins-and-passwords =
+    .label = Автоматично попълване на регистрации и пароли
+    .accesskey = р
 forms-saved-logins =
     .label = Запазени регистрации…
     .accesskey = р
@@ -609,8 +735,10 @@ forms-master-pw-use =
     .label = Използване на главна парола
     .accesskey = г
 forms-master-pw-change =
-    .label = Промяна на главна парола
+    .label = Промяна на главна парола…
     .accesskey = л
+forms-master-pw-fips-title = В момента е активен режим FIPS. Той изисква попълнена главна парола.
+forms-master-pw-fips-desc = Грешка при промяна на паролата
 
 ## Privacy Section - History
 
@@ -678,6 +806,10 @@ sitedata-block-desc = Вид на ограничения ресурс
     .accesskey = в
 sitedata-option-block-trackers =
     .label = Проследяващи трети страни
+sitedata-option-block-cross-site-trackers =
+    .label = Проследяване в различни сайтове
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Проследяване в различни сайтове и социални сайтове
 sitedata-option-block-unvisited =
     .label = Бисквитки от непосетени страници
 sitedata-option-block-all-third-party =
@@ -713,6 +845,7 @@ addressbar-suggestions-settings = Настройки на предложения
 
 content-blocking-header = Ограничаване на съдържание
 content-blocking-section-description = Защитете личните си данни, докато разглеждате. Ограничете невидимото съдържание, което следи посещаваните от вас страници и ви профилира. Спирането на част от това съдържание може да подобри зареждането на страниците.
+content-blocking-enhanced-tracking-protection = Разширена защита от проследяване
 content-blocking-learn-more = Научете повече
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -725,32 +858,61 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = По избор
     .accesskey = и
-content-blocking-standard-desc = Баланс между защита и бързодействие. За да работят напълно страниците, разрешава някои проследявания.
+content-blocking-standard-desc = Баланс между защита и бързодействие. За да работят напълно страниците, разрешава частично проследяване.
 content-blocking-strict-description = Високото ниво на защита може да наруши работата на някои страници.
 content-blocking-custom-desc = Изберете какво да бъде ограничавано.
 content-blocking-private-trackers = Известните проследявания само в поверителни прозорци
 content-blocking-third-party-cookies = Странични бисквитки за проследяване
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = Стандартна
+    .accesskey = с
+enhanced-tracking-protection-setting-strict =
+    .label = Строга
+    .accesskey = т
+enhanced-tracking-protection-setting-custom =
+    .label = По избор
+    .accesskey = и
+
+
+
+content-blocking-etp-standard-desc = Баланс между защита и бързодействие. Страниците ще се зареждат нормално.
+content-blocking-etp-strict-desc = По-високо ниво на защита, но някои страници може да не работят.
+content-blocking-etp-custom-desc = Изберете какво проследяване и кои скриптове да спрете.
+content-blocking-private-windows = Проследяващо съдържание в поверителните прозорци
+content-blocking-cross-site-tracking-cookies = Бисквитки за следене в различни сайтове
+content-blocking-social-media-trackers = Проследяване от социални мрежи
 content-blocking-all-cookies = Всички бисквитки
 content-blocking-unvisited-cookies = Бисквитки от непосетени страници
-content-blocking-all-windows-trackers = Проследявания във всички прозорци
+content-blocking-all-windows-trackers = Проследяване във всички прозорци
+content-blocking-all-windows-tracking-content = Проследяващо съдържание във всички прозорци
 content-blocking-all-third-party-cookies = Всички странични бисквитки
 content-blocking-cryptominers = Добиване на криптовалути
 content-blocking-fingerprinters = Снемане на цифров отпечатък
 content-blocking-warning-title = Внимание!
 content-blocking-warning-description = Ограничаването на съдържание може да наруши работата на някои страници. Лесно е да го изключите за страниците, на които вярвате.
 content-blocking-learn-how = Научете как
+content-blocking-etp-warning-description = Спирането на проследяване може да се повлияе на възможностите на някои страници. Презаредете страница с проследяване, за да зареди цялото съдържание.
+content-blocking-warning-learn-how = Научете как
 content-blocking-reload-description = За да бъдат приложени промените, разделите трябва да бъдат презаредени.
 content-blocking-reload-tabs-button =
     .label = Презареждане на всички раздели
     .accesskey = р
 content-blocking-trackers-label =
-    .label = Проследявания
+    .label = Проследяванe
     .accesskey = П
+content-blocking-tracking-content-label =
+    .label = Проследяващо съдържание
+    .accesskey = п
 content-blocking-tracking-protection-option-all-windows =
     .label = Във всички прозорци
     .accesskey = в
 content-blocking-option-private =
-    .label = Само в поверителни прозорци
+    .label = Само в поверителните прозорци
     .accesskey = о
 content-blocking-tracking-protection-change-block-list = Промяна списъка за блокиране
 content-blocking-cookies-label =
@@ -771,7 +933,7 @@ content-blocking-fingerprinters-label =
 ## Privacy Section - Tracking
 
 tracking-manage-exceptions =
-    .label = Управление на изключенията…
+    .label = Изключения…
     .accesskey = и
 
 ## Privacy Section - Permissions

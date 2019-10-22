@@ -31,7 +31,7 @@
 <!ENTITY minimizeButton.tooltip       "Minimizar">
 <!ENTITY restoreButton.tooltip        "Restaurar">
 
-<!ENTITY feedsMenu.label "Se inscrever para esta página">
+<!ENTITY feedsMenu.label "Se inscrever nesta página">
 <!ENTITY feedsMenu.accesskey "S">
 
 <!ENTITY menuBar.tooltip                  "Menu (clique para exibir)">
@@ -59,6 +59,8 @@
 <!ENTITY printButton.tooltip          "Imprimir a página">
 
 <!ENTITY throbber.tooltip             "Abrir o site do &vendorShortName;">
+
+<!ENTITY throbber.tooltip2            "Ir para a página inicial do &brandShortName;">
 
 <!ENTITY locationBar.tooltip          "Digite o termo pesquisado, palavra-chave ou o endereço web">
 <!ENTITY locationBar.accesskey        "d">

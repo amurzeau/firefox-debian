@@ -24,6 +24,7 @@
 
 <!ENTITY  generalTab            "ძირითადი">
 <!ENTITY  generalTab.accesskey  "რ">
+<!ENTITY  generalTitle          "სათაური:">
 <!ENTITY  generalURL            "მისამართი:">
 <!ENTITY  generalType           "სახეობა:">
 <!ENTITY  generalMode           "ასახვის რეჟიმი:">
@@ -62,6 +63,8 @@
 <!ENTITY  mediaTab.accesskey    "მ">
 <!ENTITY  mediaURL              "მისამართი:">
 <!ENTITY  mediaAlt              "ალტერნატული ტექსტი:">
+<!ENTITY  mediaLocation         "მდებარეობა:">
+<!ENTITY  mediaText             "დართული ტექსტი:">
 <!ENTITY  mediaAltHeader        "ალტერნატული ტექსტი">
 <!ENTITY  mediaAddress          "მისამართი">
 <!ENTITY  mediaType             "სახეობა">
@@ -70,6 +73,7 @@
 <!ENTITY  mediaDimensions       "მითითებული ზომები:">
 <!ENTITY  mediaPhysDimensions   "არსებული ზომები:">
 <!ENTITY  mediaTitle            "სათაური:">
+<!ENTITY  mediaDimension        "ზომები:">
 <!ENTITY  mediaLongdesc         "დეტალური აღწერა:">
 <!ENTITY  mediaBlockImage.accesskey "B">
 <!ENTITY  mediaSaveAs           "შენახვა როგორც…">
@@ -109,6 +113,8 @@
 <!ENTITY  securityView.identity.owner    "მფლობელი: ">
 <!ENTITY  securityView.identity.domain   "ვებ საიტი: ">
 <!ENTITY  securityView.identity.verifier "შეამოწმა: ">
+
+<!ENTITY  securityView.identity.validity "ვადის გასვლის დრო:">
 
 <!ENTITY  securityView.privacy.header                   "პირადულობა და ისტორია">
 <!ENTITY  securityView.privacy.history                  "ეს საიტი დღემდე გამიხსნია?">

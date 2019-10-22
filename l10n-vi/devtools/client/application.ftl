@@ -69,5 +69,43 @@ serviceworker-empty-suggestions-debugger = Bước qua đăng ký Service Worker
 # Suggestion to go to about:debugging in order to see Service Workers for all domains.
 # Clicking on the link will open about:debugging in a new tab.
 serviceworker-empty-suggestions-aboutdebugging = Kiểm tra Service Worker từ các lĩnh vực khác. <a>Mở about:debugging</a>
-# Text displayed when no manifest was found for the current page.
-manifest-empty-intro = Không tìm thấy bảng kê khai để kiểm tra.
+# Header for the Manifest page when we have an actual manifest
+manifest-view-header = Bản kê khai ứng dụng
+# Header for the Manifest page when there's no manifest to inspect
+# The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
+manifest-empty-intro = Bạn cần thêm một ứng dụng web kê khai để kiểm tra nó ở đây. <a>Tìm hiểu thêm</a>
+# Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
+manifest-item-warnings = Lỗi và cảnh báo
+# Header for the Identity section of Manifest inspection displayed in the application panel.
+manifest-item-identity = Nhận dạng
+# Header for the Presentation section of Manifest inspection displayed in the application panel.
+manifest-item-presentation = Trình bày
+# Header for the Icon section of Manifest inspection displayed in the application panel.
+manifest-item-icons = Biểu tượng
+# Text displayed while we are loading the manifest file
+manifest-loading = Đang tải bản kê khai…
+# Text displayed when the manifest has been successfully loaded
+manifest-loaded-ok = Đã tải manifest.
+# Text displayed when there has been an error while trying to load the manifest
+manifest-loaded-error = Có lỗi trong khi tải tập tin kê khai:
+# Text displayed when the page has no manifest available
+manifest-non-existing = Không tìm thấy bảng kê khai để kiểm tra.
+# Text displayed when the page has a manifest embedded in a Data URL and
+# thus we cannot link to it.
+manifest-json-link-data-url = Tập tin kê khai được nhúng trong URL dữ liệu.
+# Sidebar navigation item for Manifest sidebar item section
+sidebar-item-manifest = Kê khai
+    .alt = Biểu tượng kê khai
+    .title = Kê khai
+# Sidebar navigation item for Service Workers sidebar item section
+sidebar-item-service-workers = Service Workers
+    .alt = Biểu tượng Service Workers
+    .title = Service Workers
+# Text for the ALT and TITLE attributes of the warning icon
+icon-warning =
+    .alt = Biểu tượng cảnh báo
+    .title = Cảnh báo
+# Text for the ALT and TITLE attributes of the error icon
+icon-error =
+    .alt = Biểu tượng lỗi
+    .title = Lỗi

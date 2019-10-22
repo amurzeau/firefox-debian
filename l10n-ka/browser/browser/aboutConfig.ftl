@@ -7,10 +7,24 @@ about-config-warning-title = ფრთხილად, ეს იარაღი
 about-config-warning-text = ამ დამატებითი პარამეტრების ცვლილებამ შესაძლოა პროგრამის მდგრადობა, უსაფრთხოება და წარმადობა დააზიანოს. მხოლოდ იმ შემთხვევაში განაგრძეთ, თუ დარწმუნებული ხართ რომ იცით, რასაც აკეთებთ.
 about-config-warning-checkbox = გაფრთხილება, ყოველ ჯერზე!
 about-config-warning-button = ვაცნობიერებ საფრთხეებს!
-about-config-title = about:config
 about-config2-title = დამატებით გამართვა
 about-config-search-input =
     .placeholder = ძიება
+
+## These strings appear on the warning you see when first visiting about:config.
+
+about-config-intro-warning-title = გაგრძელება სიფრთხილით
+about-config-intro-warning-text = გაფართოებული პარამეტრების შეცვლით, შესაძლოა დაზიანდეს { -brand-short-name } წარმადობის ან უსაფრთხოების კუთხით.
+about-config-intro-warning-checkbox = გაფრთხილება, ამგვარ პარამეტრებთან წვდომისას
+about-config-intro-warning-button = საფრთხის გაცნობიერება და გაგრძელება
+
+
+
+# This is shown on the page before searching but after the warning is accepted.
+about-config-caution-text = ამ პარამეტრების შეცვლით, შესაძლოა დაზიანდეს { -brand-short-name } წარმადობის ან უსაფრთხოების კუთხით.
+about-config-page-title = გაფართოებული პარამეტრები
+about-config-search-input1 =
+    .placeholder = პარამეტრის დასახელების მოძიება
 about-config-show-all = ყველას ჩვენება
 about-config-pref-add = დამატება
 about-config-pref-toggle = გადართვა
@@ -18,10 +32,22 @@ about-config-pref-edit = ჩასწორება
 about-config-pref-save = შენახვა
 about-config-pref-reset = აღდგენა
 about-config-pref-delete = წაშლა
+about-config-pref-add-button =
+    .title = დამატება
+about-config-pref-toggle-button =
+    .title = გადართვა
+about-config-pref-edit-button =
+    .title = ჩასწორება
+about-config-pref-save-button =
+    .title = შენახვა
+about-config-pref-reset-button =
+    .title = აღდგენა
+about-config-pref-delete-button =
+    .title = წაშლა
 
 ## Labels for the type selection radio buttons shown when adding preferences.
 
-about-config-pref-add-type-boolean = ლოგიკური ცვლადი
+about-config-pref-add-type-boolean = ლოგიკური
 about-config-pref-add-type-number = რიცხვი
 about-config-pref-add-type-string = ტექსტი
 

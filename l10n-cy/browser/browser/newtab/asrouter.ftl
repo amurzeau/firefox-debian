@@ -71,7 +71,7 @@ cfr-doorhanger-pintab-animation-resume = Ailgychwyn
 
 ## Firefox Accounts Message
 
-cfr-doorhanger-bookmark-fxa-header = Cydweddu eich nodau tudalen ym mhobman
+cfr-doorhanger-bookmark-fxa-header = Cydweddu eich nodau tudalen ym mhob man
 cfr-doorhanger-bookmark-fxa-body = Mae hwn yn dda! Peidiwch bod heb y nod tudalen hon ar eich dyfeisiau symudol. Dechrau arni gyda { -fxaccount-brand-name }.
 cfr-doorhanger-bookmark-fxa-link-text = Cydweddu nodau tudalen nawr…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
@@ -90,11 +90,43 @@ cfr-whatsnew-button =
     .label = Beth sy'n Newydd
     .tooltiptext = Beth sy'n Newydd
 cfr-whatsnew-panel-header = Beth sy'n Newydd
+cfr-whatsnew-release-notes-link-text = Darllenwch y nodiadau rhyddhau
+cfr-whatsnew-fx70-title = Mae { -brand-short-name } nawr yn ymladd yn galetach dros eich preifatrwydd
+cfr-whatsnew-fx70-body =
+    Mae'r diweddariad diweddaraf yn gwella'r nodwedd Diogelu rhag Tracio ac yn ei wneud
+    haws nag erioed i greu cyfrineiriau diogel ar gyfer pob gwefan.
+cfr-whatsnew-tracking-protect-title = Diogelwch eich hun rhag tracwyr
+cfr-whatsnew-tracking-protect-body =
+    Mae { -brand-short-name } yn rhwystro llawer o dracwyr cymdeithasol a thraws-gwefan cyffredin sy'n 
+    dilyn yr hyn rydych chi'n ei wneud ar-lein.
+cfr-whatsnew-tracking-protect-link-text = Gweld Eich Adroddiad
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+        [zero] Tracwyr wedi'u rhwystro
+        [one] Traciwr wedi'i rwystro
+        [two] Draciwr wedi'u rhwystro
+        [few] Traciwr wedi'u rhwystro
+        [many] Thraciwr wedi'u rhwystro
+       *[other] Traciwr wedi'u rhwystro
+    }
+cfr-whatsnew-tracking-blocked-subtitle = Ers { DATETIME($earliestDate, month: "long", year: "numeric") }
+cfr-whatsnew-tracking-blocked-link-text = Gweld yr Adroddiad
+cfr-whatsnew-lockwise-backup-title = Gwnewch gopi wrth gefn o'ch cyfrineiriau
+cfr-whatsnew-lockwise-backup-body = Nawr cynhyrchwch gyfrineiriau diogel y gallwch gael mynediad atyn nhw lle bynnag fyddwch yn mewngofnodi.
+cfr-whatsnew-lockwise-backup-link-text = Cychwyn creu copïau wrth gefn
+cfr-whatsnew-lockwise-take-title = Ewch â'ch cyfrineiriau gyda chi
+cfr-whatsnew-lockwise-take-body =
+    Mae'r ap symudol { -lockwise-brand-short-name } yn caniatáu i chi gael mynediad diogel i'ch
+    cyfrineiriau wrth gefn o unrhyw le.
+cfr-whatsnew-lockwise-take-link-text = Estyn yr ap
 
 ## Bookmark Sync
 
 cfr-doorhanger-sync-bookmarks-header = Defnyddiwch y nod tudalen hwn ar eich ffôn
-cfr-doorhanger-sync-bookmarks-body = Cymerwch eich nodau tudalen, cyfrineiriau, hanes a mwy ym mhobman rydych chi wedi mewngofnodi iddo { -brand-product-name }.
+cfr-doorhanger-sync-bookmarks-body = Cymerwch eich nodau tudalen, cyfrineiriau, hanes a mwy ym mhob man rydych chi wedi mewngofnodi iddo { -brand-product-name }.
 cfr-doorhanger-sync-bookmarks-ok-button = Troi { -sync-brand-short-name } ymlaen
     .accesskey = T
 
@@ -119,3 +151,16 @@ cfr-doorhanger-firefox-send-header = Rhannwch y PDF hwn yn ddiogel
 cfr-doorhanger-firefox-send-body = Cadwch eich dogfennau sensitif yn ddiogel rhag llygaid busneslyd gydag amgryptio o'r dechrau i'r diwedd a dolen sy'n diflannu pan fyddwch chi wedi gorffen.
 cfr-doorhanger-firefox-send-ok-button = Rhowch gynnig ar { -send-brand-name }
     .accesskey = R
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-ok-button = Gweld y Diogelwch
+    .accesskey = D
+cfr-doorhanger-socialtracking-close-button = Cau
+    .accesskey = C
+cfr-doorhanger-socialtracking-heading = Mae { -brand-short-name } wedi atal rhwydwaith cymdeithasol rhag eich tracio chi yma
+cfr-doorhanger-socialtracking-description = Mae eich preifatrwydd yn bwysig. Mae { -brand-short-name } nawr yn rhwystro tracwyr cyfryngau cymdeithasol cyffredin, gan gyfyngu ar faint o ddata y mae nhw'n gallu ei gasglu am yr hyn rydych chi'n ei wneud ar-lein.
+cfr-doorhanger-fingerprinters-heading = Fe wnaeth { -brand-short-name } rwystro bys brintiwr ar y dudalen hon
+cfr-doorhanger-fingerprinters-description = Mae eich preifatrwydd yn bwysig. Mae { -brand-short-name } nawr yn rhwystro bysbrintwyr, sy'n casglu manylion unigryw y mae modd eu hadnabod am eich dyfais i'ch tracio.
+cfr-doorhanger-cryptominers-heading = Fe wnaeth { -brand-short-name } rwystro cryptogloddwyr ar y dudalen hon
+cfr-doorhanger-cryptominers-description = Mae eich preifatrwydd yn bwysig. Mae { -brand-short-name } nawr yn rhwystro cryptogloddwyr, sy'n defnyddio pŵer cyfrifiadurol eich system i gloddio arian digidol.

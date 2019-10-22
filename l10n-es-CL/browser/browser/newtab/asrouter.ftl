@@ -73,6 +73,7 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
 ## Protections panel
 
 cfr-protections-panel-header = Navega sin ser seguido
+cfr-protections-panel-body = Mantén tus datos privados. { -brand-short-name } te protege de la mayoría de los rastreadores comunes que siguen lo que haces en línea.
 cfr-protections-panel-link-text = Aprender más
 
 ## What's New toolbar button and panel
@@ -81,12 +82,36 @@ cfr-whatsnew-button =
     .label = Qué hay de nuevo
     .tooltiptext = Qué hay de nuevo
 cfr-whatsnew-panel-header = Qué hay de nuevo
+cfr-whatsnew-release-notes-link-text = Lee las notas de la versión
+cfr-whatsnew-tracking-protect-title = Protégete de los rastreadores
+cfr-whatsnew-tracking-protect-link-text = Mira tu reporte
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+        [one] Rastreador bloqueado
+       *[other] Rastreadores bloqueados
+    }
+cfr-whatsnew-tracking-blocked-subtitle = Desde { DATETIME($earliestDate, month: "long", year: "numeric") }
+cfr-whatsnew-tracking-blocked-link-text = Ver reporte
+cfr-whatsnew-lockwise-backup-title = Respalda tus contraseñas
+cfr-whatsnew-lockwise-backup-link-text = Activar respaldos
+cfr-whatsnew-lockwise-take-title = Lleva tus contraseñas contigo
+cfr-whatsnew-lockwise-take-link-text = Obtener la aplicación
 
 ## Bookmark Sync
 
 cfr-doorhanger-sync-bookmarks-header = Lleva este marcador a tu teléfono
 cfr-doorhanger-sync-bookmarks-body = Lleva tus marcadores, contraseñas, historial y más a todas partes en que te conectes con tu { -brand-product-name }.
 cfr-doorhanger-sync-bookmarks-ok-button = Activa { -sync-brand-short-name }
+    .accesskey = T
+
+## Login Sync
+
+cfr-doorhanger-sync-logins-header = Nunca pierdas una contraseña nuevamente
+cfr-doorhanger-sync-logins-body = Guarda de forma segura y sincroniza tus contraseñas en todos tus dispositivos
+cfr-doorhanger-sync-logins-ok-button = Activar { -sync-brand-short-name }
     .accesskey = T
 
 ## Send Tab
@@ -103,3 +128,10 @@ cfr-doorhanger-firefox-send-header = Comparte este PDF de forma segura
 cfr-doorhanger-firefox-send-body = Mantén tus documentos sensibles lejos de miradas intrusas con cifrado de extremo a extremo y un enlace que desaparece cuando estés listo.
 cfr-doorhanger-firefox-send-ok-button = Prueba { -send-brand-name }
     .accesskey = T
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-ok-button = Ver protecciones
+    .accesskey = P
+cfr-doorhanger-socialtracking-close-button = Cerrar
+    .accesskey = C

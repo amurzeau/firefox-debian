@@ -252,6 +252,62 @@ applications-type-column =
 applications-action-column =
     .label = ક્રિયા
     .accesskey = A
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+applications-file-ending = { $extension } ફાઈલ
+applications-action-save =
+    .label = ફાઈલ સંગ્રહો
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app =
+    .label = { $app-name } વાપરો
+# Variables:
+#   $app-name (String) - Name of an application (e.g Adobe Acrobat)
+applications-use-app-default =
+    .label = { $app-name } વાપરો (મૂળભૂત)
+applications-use-other =
+    .label = અન્ય વાપરો…
+applications-select-helper = મદદગાર કાર્યક્રમ પસંદ કરો
+applications-manage-app =
+    .label = કાર્યક્રમ વિગતો…
+applications-always-ask =
+    .label = હંમેશા પૂછો
+applications-type-pdf = Portable Document Format (PDF)
+# Variables:
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
+# Variables:
+#   $type-description (String) - Description of the type (e.g "Portable Document Format")
+#   $type (String) - the MIME type (e.g application/binary)
+applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+applications-use-plugin-in =
+    .label = { $plugin-name } વાપરો ({ -brand-short-name } માં)
+applications-preview-inapp =
+    .label = { -brand-short-name } માં પૂર્વદર્શન
+
+## The strings in this group are used to populate
+## selected label element based on the string from
+## the selected menu item.
+
+applications-use-plugin-in-label =
+    .value = { applications-use-plugin-in.label }
+applications-action-save-label =
+    .value = { applications-action-save.label }
+applications-use-app-label =
+    .value = { applications-use-app.label }
+applications-preview-inapp-label =
+    .value = { applications-preview-inapp.label }
+applications-always-ask-label =
+    .value = { applications-always-ask.label }
+applications-use-app-default-label =
+    .value = { applications-use-app-default.label }
+applications-use-other-label =
+    .value = { applications-use-other.label }
+
+##
+
 drm-content-header = ડિજિટલ અધિકાર સંચાલન (DRM) કન્ટેન્ટ
 play-drm-content =
     .label = DRM-નિયંત્રિત સામગ્રીને ચાલુ કરો
@@ -585,6 +641,8 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = મુખ્ય પાસવર્ડ બદલો...
     .accesskey = M
+forms-master-pw-fips-title = તમે હાલમાં FIPS સ્થિતિમાં છો. FIPS માટે ખાલી-નહિં એવો મુખ્ય પાસવર્ડ જરૂરી છે.
+forms-master-pw-fips-desc = પાસવર્ડ બદલવાનું નિષ્ફળ
 
 ## Privacy Section - History
 
@@ -701,6 +759,23 @@ content-blocking-standard-desc = સુરક્ષા અને પ્રદર
 content-blocking-custom-desc = શું અવરોધિત છે તે પસંદ કરો
 content-blocking-private-trackers = ખાનગી વિન્ડોઝમાં ફક્ત જાણીતા ટ્રૅકર્સ
 content-blocking-third-party-cookies = તૃતીય પક્ષ ટ્રેકિંગ કૂકીઝ
+
+## These strings are used to define the different levels of
+## Enhanced Tracking Protection.
+
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+enhanced-tracking-protection-setting-standard =
+    .label = પ્રમાણભૂત
+    .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = સખત
+    .accesskey = r
+enhanced-tracking-protection-setting-custom =
+    .label = વૈવિધ્યપૂર્ણ
+    .accesskey = C
+
+##
+
 content-blocking-all-cookies = બધી કૂકીઝ
 content-blocking-all-windows-trackers = બધા વિન્ડોઝમાં જાણીતા ટ્રેકર્સ
 content-blocking-all-third-party-cookies = બધા તૃતીય પક્ષ કૂકીઝ

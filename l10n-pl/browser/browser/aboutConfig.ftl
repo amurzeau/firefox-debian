@@ -7,10 +7,24 @@ about-config-warning-title = Uwaga, niebezpieczeństwo!
 about-config-warning-text = Modyfikacja tych ustawień może spowodować problemy, takie jak utrata stabilności i wydajności programu oraz zagrożenie bezpieczeństwa. Kontynuuj tylko wtedy, gdy masz pewność tego, co robisz.
 about-config-warning-checkbox = Wyświetlanie tego ostrzeżenia za każdym razem
 about-config-warning-button = Akceptuję ryzyko
-about-config-title = about:config
 about-config2-title = Konfiguracja zaawansowana
 about-config-search-input =
     .placeholder = Szukaj
+
+## These strings appear on the warning you see when first visiting about:config.
+
+about-config-intro-warning-title = Zachowaj ostrożność
+about-config-intro-warning-text = Modyfikacja zaawansowanych preferencji może wpłynąć na wydajność lub bezpieczeństwo przeglądarki { -brand-short-name }.
+about-config-intro-warning-checkbox = Wyświetlanie tego ostrzeżenia za każdym razem
+about-config-intro-warning-button = Akceptuję ryzyko, kontynuuj
+
+
+
+# This is shown on the page before searching but after the warning is accepted.
+about-config-caution-text = Modyfikacja tych preferencji może wpłynąć na wydajność lub bezpieczeństwo przeglądarki { -brand-short-name }.
+about-config-page-title = Preferencje zaawansowane
+about-config-search-input1 =
+    .placeholder = Szukaj preferencji
 about-config-show-all = Wyświetl wszystko
 about-config-pref-add = Dodaj
 about-config-pref-toggle = Przełącz
@@ -18,6 +32,18 @@ about-config-pref-edit = Edytuj
 about-config-pref-save = Zapisz
 about-config-pref-reset = Resetuj
 about-config-pref-delete = Usuń
+about-config-pref-add-button =
+    .title = Dodaj
+about-config-pref-toggle-button =
+    .title = Przełącz
+about-config-pref-edit-button =
+    .title = Edytuj
+about-config-pref-save-button =
+    .title = Zapisz
+about-config-pref-reset-button =
+    .title = Resetuj
+about-config-pref-delete-button =
+    .title = Usuń
 
 ## Labels for the type selection radio buttons shown when adding preferences.
 

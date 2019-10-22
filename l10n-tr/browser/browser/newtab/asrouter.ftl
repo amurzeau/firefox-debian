@@ -82,6 +82,28 @@ cfr-whatsnew-button =
     .label = Yeni neler var?
     .tooltiptext = Yeni neler var?
 cfr-whatsnew-panel-header = Yeni neler var?
+cfr-whatsnew-release-notes-link-text = Sürüm notlarını okuyun
+cfr-whatsnew-fx70-title = { -brand-short-name } artık gizliliğiniz için daha sıkı çalışıyor
+cfr-whatsnew-fx70-body = Bu güncellemede İzlenme Koruması özelliğini geliştirdik ve sitelere kaydolurken güvenli parola üretmeyi daha da kolaylaştırdık.
+cfr-whatsnew-tracking-protect-title = Kendinizi takipçilerden koruyun
+cfr-whatsnew-tracking-protect-body = { -brand-short-name }, internette yaptıklarınızı izleyen çoğu sosyal medya takipçisini ve siteler arası takipçiyi engeller.
+cfr-whatsnew-tracking-protect-link-text = Raporunuzu görün
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+        [one] Engellediğimiz takipçi sayısı
+       *[other] Engellediğimiz takipçi sayısı
+    }
+cfr-whatsnew-tracking-blocked-subtitle = { DATETIME($earliestDate, month: "long", year: "numeric") } tarihinden beri
+cfr-whatsnew-tracking-blocked-link-text = Raporu görüntüle
+cfr-whatsnew-lockwise-backup-title = Parolalarınızı yedekleyin
+cfr-whatsnew-lockwise-backup-body = Giriş yaptığınız her yerden ulaşabileceğiniz, güvenli parolalar oluşturun.
+cfr-whatsnew-lockwise-backup-link-text = Yedeklemeyi aç
+cfr-whatsnew-lockwise-take-title = Parolalarınızı yanınızda taşıyın
+cfr-whatsnew-lockwise-take-body = { -lockwise-brand-short-name } mobil uygulaması, yedeklediğiniz parolalara her yerden güvenle ulaşmanızı sağlar.
+cfr-whatsnew-lockwise-take-link-text = Uygulamayı indir
 
 ## Bookmark Sync
 
@@ -111,3 +133,16 @@ cfr-doorhanger-firefox-send-header = Bu PDF’i güvenle paylaşın
 cfr-doorhanger-firefox-send-body = Uçtan uca şifreleme ve işiniz bittiğinde kaybolan bir bağlantıyla hassas belgelerinizi meraklı gözlerden koruyun.
 cfr-doorhanger-firefox-send-ok-button = { -send-brand-name }’i deneyin
     .accesskey = d
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-ok-button = Korumalara bak
+    .accesskey = K
+cfr-doorhanger-socialtracking-close-button = Kapat
+    .accesskey = a
+cfr-doorhanger-socialtracking-heading = { -brand-short-name } bir sosyal ağın sizi izlemesini engelledi
+cfr-doorhanger-socialtracking-description = Gizliliğiniz bizim için önemli. { -brand-short-name } artık yaygın sosya medya takipçilerini engelliyor, böylece internette yaptıklarınız hakkında daha az veri toplayabilmelerini sağlıyor.
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name } bu sayfadaki bir parmak izi toplayıcıyı engelledi
+cfr-doorhanger-fingerprinters-description = Gizliliğiniz bizim için önemli. { -brand-short-name }, sizi izlemek için cihazınızı tanımlayabilecek bilgileri toplayan parmak izi toplayıcılarını kendiliğinden engelliyor.
+cfr-doorhanger-cryptominers-heading = { -brand-short-name } bu sayfadaki bir kripto madencisini engelledi
+cfr-doorhanger-cryptominers-description = Gizliliğiniz bizim için önemli. { -brand-short-name }, bilgisayarınızın işlemcisini dijital para üretmek için kullanan kripto madencilerini kendiliğinden engelliyor.

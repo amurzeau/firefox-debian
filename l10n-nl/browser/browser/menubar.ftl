@@ -147,13 +147,13 @@ menu-view-enter-full-screen =
     .label = Schermvullende weergave
     .accesskey = S
 menu-view-exit-full-screen =
-    .label = Schermvullende weergave verlaten
-    .accesskey = S
+    .label = Volledig scherm verlaten
+    .accesskey = V
 menu-view-full-screen =
     .label = Volledig scherm
     .accesskey = d
 
-##
+
 
 menu-view-show-all-tabs =
     .label = Alle tabbladen tonen
@@ -212,11 +212,20 @@ menu-tools-addons =
 menu-tools-sync-sign-in =
     .label = Aanmelden bij { -sync-brand-short-name }…
     .accesskey = y
+menu-tools-fxa-sign-in =
+    .label = Aanmelden bij { -brand-product-name }…
+    .accesskey = m
+menu-tools-turn-on-sync =
+    .label = { -sync-brand-short-name } inschakelen…
+    .accesskey = n
 menu-tools-sync-now =
     .label = Nu synchroniseren
     .accesskey = N
 menu-tools-sync-re-auth =
     .label = Opnieuw verbinden met { -sync-brand-short-name }…
+    .accesskey = O
+menu-tools-fxa-re-auth =
+    .label = Opnieuw verbinden met { -brand-product-name }…
     .accesskey = O
 menu-tools-web-developer =
     .label = Webontwikkelaar
