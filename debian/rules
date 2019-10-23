@@ -86,6 +86,7 @@ export CARGO_HOME=$(CURDIR)/debian/.cargo
 
 ifneq (,$(filter jessie stretch,$(DIST)))
 export NODEJS=/usr/lib/nodejs-mozilla/bin/node
+export NASM=/usr/lib/nasm-mozilla/bin/nasm
 endif
 
 LDFLAGS += -Wl,--as-needed
