@@ -50,7 +50,11 @@ Build-Depends: autotools-dev,
                libpulse-dev,
                libasound2-dev,
                yasm,
+%if DIST == jessie || DIST == stretch
+               nasm-mozilla (>= 2.13) [amd64 i386],
+%else
                nasm (>= 2.13) [amd64 i386],
+%endif
                rustc (>= 1.36),
                cargo (>= 0.37),
 %if DIST == jessie || DIST == stretch
