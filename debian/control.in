@@ -64,7 +64,11 @@ Build-Depends: autotools-dev,
                clang,
 %endif
                cbindgen (>= 0.8.7),
+%if DIST == jessie || DIST == stretch
+               nodejs-mozilla (>= 8.11),
+%else
                nodejs (>= 8.11),
+%endif
                zip,
                unzip,
                locales,
