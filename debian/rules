@@ -84,6 +84,10 @@ SHARE_DIR := /usr/share/$($(PRODUCT))
 # Work around https://github.com/rust-lang/cargo/issues/7147
 export CARGO_HOME=$(CURDIR)/debian/.cargo
 
+ifneq (,$(filter jessie stretch,$(DIST)))
+export NODEJS=/usr/lib/nodejs-mozilla/bin/node
+endif
+
 LDFLAGS += -Wl,--as-needed
 # Make the linker generate compressed debug sections. dh_strip would do
 # the same anyways, but it allows elfhack to work in combination with
