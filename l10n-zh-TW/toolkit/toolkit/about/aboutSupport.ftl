@@ -51,15 +51,15 @@ app-basics-profile-dir =
         [linux] 設定檔目錄
        *[other] 設定檔目錄
     }
-app-basics-enabled-plugins = 已啟用的外掛程式
+app-basics-enabled-plugins = 啟用的外掛程式
 app-basics-build-config = 編譯組態
 app-basics-user-agent = 使用者代理字串（User Agent）
 app-basics-os = 作業系統
 app-basics-memory-use = 記憶體使用量
 app-basics-performance = 效能
-app-basics-service-workers = 已註冊的 Service Workers
+app-basics-service-workers = 註冊的 Service Worker
 app-basics-profiles = 設定檔
-app-basics-launcher-process-status = 啟動器 Process
+app-basics-launcher-process-status = 啟動器處理程序
 app-basics-multi-process-support = 多程序視窗
 app-basics-remote-processes-count = 遠端處理程序
 app-basics-enterprise-policies = 企業政策
@@ -73,7 +73,7 @@ show-dir-label =
         [windows] 開啟資料夾
        *[other] 開啟資料夾
     }
-modified-key-prefs-title = 已修改的重要偏好設定
+modified-key-prefs-title = 修改過的重要偏好設定
 modified-prefs-name = 名稱
 modified-prefs-value = 值
 user-js-title = user.js 偏好設定
@@ -134,7 +134,7 @@ media-device-preferred = 偏好使用
 media-device-format = 格式
 media-device-channels = 頻道
 media-device-rate = 取樣率
-media-device-latency = Latency
+media-device-latency = 延滯
 media-capabilities-title = 媒體能力
 # List all the entries of the database.
 media-capabilities-enumerate = 列舉資料庫
@@ -150,6 +150,22 @@ intl-locales-default = 預設語系
 intl-os-title = 作業系統
 intl-os-prefs-system-locales = 系統語系
 intl-regional-prefs = 區域偏好設定
+
+## Remote Debugging
+##
+## The Firefox remote protocol provides low-level debugging interfaces
+## used to inspect state and control execution of documents,
+## browser instrumentation, user interaction simulation,
+## and for subscribing to browser-internal events.
+##
+## See also https://firefox-source-docs.mozilla.org/remote/
+
+remote-debugging-title = 遠端除錯（Chromium 通訊協定）
+remote-debugging-accepting-connections = 接受連線
+remote-debugging-url = 網址
+
+
+
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days = 最近 { $days } 天內的錯誤資訊報表
@@ -226,6 +242,7 @@ unknown-failure = 已封鎖，錯誤代碼 { $failureCode }
 d3d11layers-crash-guard = D3D11 合成器
 d3d11video-crash-guard = D3D11 視訊解碼器
 d3d9video-crash-buard = D3D9 視訊解碼器
+d3d9video-crash-guard = D3D9 視訊解碼器
 glcontext-crash-guard = OpenGL
 reset-on-next-restart = 下次重新啟動時重設
 gpu-process-kill-button = 結束 GPU 處理程序

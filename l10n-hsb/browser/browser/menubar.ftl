@@ -53,13 +53,13 @@ menu-file-import-from-another-browser =
     .label = Z druheho wobhladowaka importować…
     .accesskey = i
 menu-file-go-offline =
-    .label = Offline dźełać
+    .label = Offline dźěłać
     .accesskey = O
 
 ## Edit Menu
 
 menu-edit =
-    .label = Wobdźełać
+    .label = Wobdźěłać
     .accesskey = b
 menu-edit-undo =
     .label = Cofnyć
@@ -213,7 +213,7 @@ menu-tools-sync-sign-in =
     .label = Pola { -sync-brand-short-name } přizjewić…
     .accesskey = P
 menu-tools-fxa-sign-in =
-    .label = Přizjewće so pola { -brand-product-name }…
+    .label = Pola { -brand-product-name } přizjewić…
     .accesskey = e
 menu-tools-turn-on-sync =
     .label = { -sync-brand-short-name } zmóžnić
@@ -285,8 +285,10 @@ menu-help-safe-mode-with-addons =
     .label = Ze zmóžnjenymi přidatkami znowa startować
     .accesskey = Z
 # Label of the Help menu item. Either this or
-# safeb.palm.notdeceptive.label from
-# phishing-afterload-warning-message.dtd is shown.
+# menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =
     .label = Wobšudne sydło zdźělić…
     .accesskey = b
+menu-help-not-deceptive =
+    .label = To wobšudne sydło njeje…
+    .accesskey = d

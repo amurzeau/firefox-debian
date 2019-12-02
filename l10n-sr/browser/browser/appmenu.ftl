@@ -6,3 +6,15 @@
 ## App Menu
 
 appmenuitem-protection-report-title = Заштите приватности
+
+## Zoom Controls
+
+appmenuitem-zoom-enlarge =
+    .label = Увећајте
+appmenuitem-zoom-reduce =
+    .label = Смањите
+
+## Firefox Account toolbar button and Sync panel in App menu.
+
+fxa-toolbar-sync-now =
+    .label = Синхронизуј сада

@@ -17,22 +17,23 @@ policy-BlockAboutAddons = Blocar accesso al Gestor de additivos (circa:additivos
 policy-BlockAboutConfig = Blocar accesso al pagina about:config.
 policy-BlockAboutProfiles = Blocar accesso al pagina about:profiles.
 policy-BlockAboutSupport = Blocar accesso al pagina about:support.
-policy-Bookmarks = Crear marcapaginas in le barra del instrumentos de marcapaginas, menu de marcapaginas o un plica specificate intra illos
+policy-Bookmarks = Crear marcapaginas in le barra de marcapaginas, in le menu de marcapaginas o in un dossier specific intra illos.
 policy-CaptivePortal = Activar o disactivar supporto pro portal captive.
 policy-CertificatesDescription = Adde certificatos o usa certificatos integrate.
 policy-Cookies = Consentir o negar al sitos web de definir cookies.
 policy-DefaultDownloadDirectory = Configura le directorio de discarga predefinite.
 policy-DisableAppUpdate = Impedir le actualisation del navigator.
-policy-DisableBuiltinPDFViewer = Inactivar PDF.js, le visor de PDF integrate in { -brand-short-name }.
-policy-DisableDeveloperTools = Blocar le accesso al instrumentos del developpatores.
-policy-DisableFeedbackCommands = Inactivar le commandos pro submitter tu commentarios in le menu Adjuta (Submitter tu opinion e Denunciar sito fraudulente).
+policy-DisableBuiltinPDFViewer = Disactivar PDF.js, le visor de PDF integrate in { -brand-short-name }.
+policy-DisableDeveloperTools = Blocar le accesso al instrumentos del disveloppamento.
+policy-DisableFeedbackCommands = Disactivar le commandos pro submitter tu commentarios in le menu Adjuta (Submitter tu opinion e Denunciar sito fraudulente).
 policy-DisableFirefoxAccounts = Disactivar le servicios basate sur { -fxaccount-brand-name }, comprendite Sync.
 # Firefox Screenshots is the name of the feature, and should not be translated.
 policy-DisableFirefoxScreenshots = Disactivar le functionalitate Firefox Screenshots.
 policy-DisableFirefoxStudies = Impedir a { -brand-short-name } de exequer studios.
 policy-DisableForgetButton = Impedir accesso al button Oblidar.
 policy-DisableFormHistory = Non rememorar le chronologia de recercas e formularios.
-policy-DisableMasterPasswordCreation = Si ver, non pote esser create un contrasigno principal.
+policy-DisableMasterPasswordCreation = Si ver, non pote esser create un contrasigno maestro.
+policy-DisablePasswordReveal = Non permitter de monstrar le contrasignos in le credentiales salvate.
 policy-DisablePocket = Disactivar le functionalitate pro salvar paginas web in Pocket.
 policy-DisablePrivateBrowsing = Disactivar le Navigation private.
 policy-DisableProfileImport = Disactivar le commando del menu pro importar datos ab un altere navigator.
@@ -42,13 +43,13 @@ policy-DisableSecurityBypass = Impedir al usator de ignorar certe avisos de secu
 policy-DisableSetAsDesktopBackground = Disactivar le commando de menu Definir como Fundo del scriptorio pro le imagines.
 policy-DisableSystemAddonUpdate = Impedir al navigator de installar e actualisar additivos de systema.
 policy-DisableTelemetry = Disactivar le telemetria.
-policy-DisplayBookmarksToolbar = Monstrar le Barra del marcapaginas de ordinario
+policy-DisplayBookmarksToolbar = Monstrar le barra de marcapaginas per configuration predefinite.
 policy-DisplayMenuBar = Monstrar le Barra del menu de ordinario.
 policy-DNSOverHTTPS = Configura DNS sur HTTPS.
 policy-DontCheckDefaultBrowser = Disactivar le controlo Navigator predefinite al lanceamento initial.
 policy-DownloadDirectory = Configura e bloca le plica del discargas.
 # “lock” means that the user won’t be able to change this setting
-policy-EnableTrackingProtection = Activar o disactivar le Blocada de contentos e optionalmente serrar lo.
+policy-EnableTrackingProtection = Activar o disactivar le blocage de contento e optionalmente serrar lo.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -61,6 +62,7 @@ policy-HardwareAcceleration = Si false, disactivar le acceleration hardware.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Definir e optionalmente blocar le pagina principal.
 policy-InstallAddonsPermission = Consentir a certe sitos web de installar additivos.
+policy-LegacyProfiles = Disactivar le function que fortia le creation de un profilo separate pro cata installation
 policy-LocalFileLinks = Consentir a specific sitos web de usar ligamines a files local.
 policy-NetworkPrediction = Activar o disactivar prediction del rete (prelectura del DNS).
 policy-NewTabPage = Activar o disactivar le pagina Nove scheda.
@@ -70,7 +72,7 @@ policy-OfferToSaveLoginsDefault = Definir le valor ordinari pro consentir a { -b
 policy-OverrideFirstRunPage = Supplantar le pagina del lanceamento initial.
 policy-OverridePostUpdatePage = Supplantar le pagina de “Novas” post-actualisation. Defini iste criterio a blanc si tu desira disactivar le pagina de post-actualisation.
 policy-PasswordManagerEnabled = Activar salvamento de contrasignos al gestor de contrasignos.
-policy-Permissions = Configurar le permissos de camera, microphono, position e notificationes.
+policy-Permissions = Configurar le permissiones pro le camera, microphono, position e notificationes.
 policy-PopupBlocking = Consentir a certe sitos web de monstrar de ordinario messages emergente.
 policy-Preferences = Defini e bloca le valor de un sub-ensemble de preferentias.
 policy-PromptForDownloadLocation = Demandar ubi salvar le files quando on discarga.

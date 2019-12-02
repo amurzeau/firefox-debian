@@ -66,16 +66,19 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = Etsitkö tallennettuja kirjautumistietojasi? Ota { -sync-brand-short-name } käyttöön.
+about-logins-login-intro-heading-logged-in = Synkronoituja kirjautumistietoja ei löytynyt.
 login-intro-description = Jos tallensit kirjautumistietosi { -brand-product-name }-selaimeen toisella laitteella, saat ne käyttöön seuraavasti:
 login-intro-instruction-fxa = Luo tili tai kirjaudu { -fxaccount-brand-name(case: "allative") } laitteella, jolle kirjautumistietosi on tallennettu
 login-intro-instruction-fxa-settings = Varmista, että Kirjautumistiedot-valinta on rastitettu { -sync-brand-short-name }-asetuksissa
 about-logins-intro-instruction-help = Siirry <a data-l10n-name="help-link">{ -lockwise-brand-short-name }-tukeen</a> saadaksesi ohjeita
+about-logins-intro-import = Jos kirjautumistietosi on tallennettu toiseen selaimeen, voit <a data-l10n-name="import-link">tuoda ne { -lockwise-brand-short-name }en</a>
 
 ## Login
 
 login-item-new-login-title = Luo uusi kirjautumistieto
 login-item-edit-button = Muokkaa
 login-item-delete-button = Poista
+about-logins-login-item-remove-button = Poista
 login-item-origin-label = Verkkosivuston osoite
 login-item-origin =
     .placeholder = https://www.example.com
@@ -105,11 +108,8 @@ master-password-reload-button =
     .label = Kirjaudu
     .accesskey = K
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = Peruuta
-confirmation-dialog-dismiss-button =
-    .title = Peruuta
 enable-password-sync-notification-message =
     { PLATFORM() ->
         [windows] Haluatko kirjautumistietosi mukaasi minne tahansa, kun käytät { -brand-product-name }ia? Siirry { -sync-brand-short-name }-asetuksiin ja rastita Kirjautumistiedot-valinta.
@@ -119,8 +119,19 @@ enable-password-sync-preferences-button =
     .label = Siirry { -sync-brand-short-name }-asetuksiin
     .accesskey = S
 confirm-delete-dialog-title = Poistetaanko tämä kirjautumistieto?
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = Älä kysy uudelleen
+    .accesskey = Ä
+
+## Dialogs
+
+confirmation-dialog-cancel-button = Peruuta
+confirmation-dialog-dismiss-button =
+    .title = Peruuta
+about-logins-confirm-remove-dialog-title = Poistetaanko tämä kirjautumistieto?
 confirm-delete-dialog-message = Tätä toimintoa ei voi perua.
 confirm-delete-dialog-confirm-button = Poista
+about-logins-confirm-remove-dialog-confirm-button = Poista
 confirm-discard-changes-dialog-title = Hylätäänkö tallentamattomat muutokset?
 confirm-discard-changes-dialog-message = Kaikki tallentamattomat muutokset menetetään.
 confirm-discard-changes-dialog-confirm-button = Hylkää
@@ -139,5 +150,10 @@ breach-alert-dismiss =
 # Variables:
 #   $loginTitle (String) - The title of the website associated with the login.
 about-logins-error-message-duplicate-login = Tietue sivustolle { $loginTitle } kyseisellä käyttäjätunnuksella on jo olemassa.
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = Kirjautumistieto sivulle { $loginTitle } tällä käyttäjätunnuksella on jo olemassa. <a data-l10n-name="duplicate-link">Siirrytäänkö olemassa olevaan kirjautumistietoon?</a>
 # This is a generic error message.
 about-logins-error-message-default = Tätä salasanaa tallentaessa ilmeni virhe.

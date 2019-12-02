@@ -70,6 +70,7 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = ¿Eheka ne ñe’ẽñemi ñongatupyre? Emboheko { -sync-brand-short-name }.
+about-logins-login-intro-heading-logged-in = Ndaipóri tembiapo ñepyrũ mbojuehepyre.
 login-intro-description = Eñongatúvo nde jeike { -brand-product-name }-pe ambue mba’e’okápe.
 login-intro-instruction-fxa = Emoheñói térã eike nde { -fxaccount-brand-name }-pe mba’e’oka eñongatuhápe eikehague
 login-intro-instruction-fxa-settings = Eiporavokuaáke nde jeike { -sync-brand-short-name } ñemoĩporãme
@@ -80,6 +81,7 @@ about-logins-intro-instruction-help = Eho <a data-l10n-name="help-link">-pe { -l
 login-item-new-login-title = Tembiapo ñepyrũ pyahu moheñói
 login-item-edit-button = Mbosako'i
 login-item-delete-button = Mboguete
+about-logins-login-item-remove-button = Mboguete
 login-item-origin-label = Ñanduti kundaharape
 login-item-origin =
     .placeholder = https://www.example.com
@@ -109,11 +111,8 @@ master-password-reload-button =
     .label = Tembiapo ñepyrũ
     .accesskey = L
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = Heja
-confirmation-dialog-dismiss-button =
-    .title = Heja
 enable-password-sync-notification-message =
     { PLATFORM() ->
         [windows] ¿Eipotápa tembiapo ñepyrũ opaite eipuruhápe { -brand-product-name }? Tereho { -sync-brand-short-name } Jeporavorãme ha embosa’y pe tembiapo ñepyrũ kora jehechajey.
@@ -127,8 +126,19 @@ enable-password-sync-preferences-button =
         }
     .accesskey = V
 confirm-delete-dialog-title = ¿Embogue ko tembiapo ñepyrũ?
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = Anive eporandujey
+    .accesskey = D
+
+## Dialogs
+
+confirmation-dialog-cancel-button = Heja
+confirmation-dialog-dismiss-button =
+    .title = Heja
+about-logins-confirm-remove-dialog-title = ¿Emboguete ko tembiapo ñepyrũ?
 confirm-delete-dialog-message = Ko tembiapoite ndaikatúi emboguevi.
 confirm-delete-dialog-confirm-button = Mboguete
+about-logins-confirm-remove-dialog-confirm-button = Mboguete
 confirm-discard-changes-dialog-title = ¿Emboyke moambue eñongatu’ỹva?
 confirm-discard-changes-dialog-message = Opaite ñemoambue oñeñongatu’ỹva oguepáta.
 confirm-discard-changes-dialog-confirm-button = Hejarei

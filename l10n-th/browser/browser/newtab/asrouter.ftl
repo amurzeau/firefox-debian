@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = โดย { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = คำแนะนำ
+cfr-doorhanger-extension-notification2 = แนะนำ
+    .tooltiptext = ส่วนขยายที่แนะนำ
+    .a11y-announcement = ส่วนขยายแนะนำที่มีอยู่
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = แนะนำ
+    .tooltiptext = คุณลักษณะที่แนะนำ
+    .a11y-announcement = คุณลักษณะแนะนำที่มีอยู่
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -76,6 +84,9 @@ cfr-protections-panel-link-text = เรียนรู้เพิ่มเต�
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = คุณสมบัติใหม่:
 cfr-whatsnew-button =
     .label = มีอะไรใหม่
     .tooltiptext = มีอะไรใหม่
@@ -86,6 +97,9 @@ cfr-whatsnew-fx70-body =
     การอัปเดตล่าสุดเพิ่มคุณลักษณะการป้องกันการติดตามและทำให้
     สร้างรหัสผ่านที่ปลอดภัยสำหรับทุกไซต์ได้ง่ายขึ้นกว่าที่เคย
 cfr-whatsnew-tracking-protect-title = ป้องกันตัวคุณเองจากตัวติดตาม
+cfr-whatsnew-tracking-protect-body =
+    { -brand-short-name } บล็อกตัวติดตามสังคมออนไลน์และข้ามไซต์ทั่วไปจำนวนมากที่
+    ติดตามสิ่งที่คุณทำออนไลน์
 cfr-whatsnew-tracking-protect-link-text = ดูรายงานของคุณ
 # This string is displayed before a large numeral that indicates the total
 # number of tracking elements blocked. Don’t add $blockedCount to your
@@ -138,4 +152,12 @@ cfr-doorhanger-socialtracking-ok-button = ดูการป้องกัน
     .accesskey = ด
 cfr-doorhanger-socialtracking-close-button = ปิด
     .accesskey = ป
+cfr-doorhanger-socialtracking-dont-show-again = ไม่ต้องแสดงข้อความเช่นนี้ให้ฉันอีก
+    .accesskey = ม
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } ได้หยุดเครือข่ายสังคมไม่ให้ติดตามคุณที่นี่
+cfr-doorhanger-socialtracking-description = ความเป็นส่วนตัวของคุณสำคัญ { -brand-short-name } จะปิดกั้นตัวติดตามสื่อสังคมออนไลน์ทั่วไป โดยจำกัดจำนวนข้อมูลที่สามารถรวบรวมเกี่ยวกับสิ่งที่คุณทำทางออนไลน์
+
+## Enhanced Tracking Protection Milestones
+
+cfr-doorhanger-milestone-ok-button = ดูทั้งหมด
+    .accesskey = ด

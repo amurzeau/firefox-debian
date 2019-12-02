@@ -186,6 +186,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = 취소
     .tooltiptext = 부가 기능 업데이트 보안 확인 기능 사용
+extensions-warning-safe-mode = 안전 모드에서 부가 기능 전체를 사용할 수 없습니다.
+extensions-warning-check-compatibility = 부가 기능 호환성 확인 기능을 중단 합니다. 호환성이 맞지 않을 수 있습니다.
+extensions-warning-check-compatibility-button = 활성화
+    .title = 부가 기능 호환성 확인 기능 사용
+extensions-warning-update-security = 부가 기능 업데이트 보안 확인 기능을 중단 합니다. 업데이트가 보안 문제를 일으킬 수 있습니다.
+extensions-warning-update-security-button = 취소
+    .title = 부가 기능 업데이트 보안 확인 기능 사용
 
 ## Strings connected to add-on updates
 
@@ -195,12 +202,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = 최근 업데이트 보기
     .accesskey = V
+addon-updates-check-for-updates = 업데이트 확인하기
+    .accesskey = C
+addon-updates-view-updates = 최근 업데이트 보기
+    .accesskey = V
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = 자동 업데이트 하기
+    .accesskey = A
+addon-updates-update-addons-automatically = 자동 업데이트 하기
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -214,6 +227,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = R
 extensions-updates-reset-updates-to-manual =
     .label = 모든 부가기능을 수동 업데이트로 재설정
+    .accesskey = R
+addon-updates-reset-updates-to-automatic = 모든 부가기능을 자동 업데이트로 재설정
+    .accesskey = R
+addon-updates-reset-updates-to-manual = 모든 부가기능을 수동 업데이트로 재설정
     .accesskey = R
 
 ## Status messages displayed when updating add-ons
@@ -233,11 +250,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = 업데이트 설치
     .tooltiptext = 현재 목록 내 업데이트 설치하기
+addon-updates-updating = 업데이트 확인 중
+addon-updates-installed = 업데이트가 완료되었습니다.
+addon-updates-none-found = 업데이트 없음
+addon-updates-manual-updates-found = 업데이트 가능 항목 보기
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = 파일에서 부가 기능 설치…
+    .accesskey = I
+addon-install-from-file-dialog-title = 설치할 부가 기능 선택
+addon-install-from-file-filter-name = 부가 기능
+addon-open-about-debugging = 부가 기능 디버그
+    .accesskey = B
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = 확장기능 단축키 관리
+    .accesskey = S
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = 확장기능 단축키 관리
     .accesskey = S
 shortcuts-no-addons = 활성화된 확장기능이 없습니다.
 shortcuts-no-commands = 다음 확장기능에는 단축키가 없습니다:
@@ -301,6 +334,8 @@ addon-options-button =
 
 report-addon-button = 신고하기
 remove-addon-button = 제거
+# The link will always be shown after the other text.
+remove-addon-disabled-button = 제거할 수 없음. <a data-l10n-name="link">이유?</a>
 disable-addon-button = 사용 안 함
 enable-addon-button = 사용함
 expand-addon-button = 옵션 더보기
@@ -393,3 +428,17 @@ recommended-themes-heading = 추천 테마
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = 창의적인 느낌이 떠오르시나요? <a data-l10n-name="link">Firefox Color로 나만의 테마를 만들어 보십시오.</a>
+
+## Page headings
+
+extension-heading = 확장기능 관리
+theme-heading = 테마 관리
+plugin-heading = 플러그인 관리
+dictionary-heading = 사전 관리
+locale-heading = 언어 관리
+discover-heading = { -brand-short-name } 개인화
+shortcuts-heading = 확장기능 단축키 관리
+theme-heading-search-label = 더 많은 테마
+extension-heading-search-label = 더 많은 확장기능
+addons-heading-search-input =
+    .placeholder = addons.mozilla.org 검색

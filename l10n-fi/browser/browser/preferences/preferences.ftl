@@ -14,6 +14,11 @@ pref-page =
             [windows] Asetukset
            *[other] Asetukset
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Asetukset
+       *[other] Asetukset
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -282,6 +287,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Käytä liitännäistä { $plugin-name } (ohjelmassa { -brand-short-name })
@@ -457,7 +466,6 @@ choose-bookmark =
 
 home-prefs-content-header = Firefox-aloitussivun sisältö
 home-prefs-content-description = Valitse Firefox-aloitussivulle haluamasi sisältö.
-home-prefs-content-discovery-description = Firefox-aloitussivulla olevassa sisällön esittelyosiossa näytetään laadukkaita ja olennaisia artikkeleita ympäri verkkoa.
 home-prefs-search-header =
     .label = Verkkohaku
 home-prefs-topsites-header =
@@ -505,6 +513,11 @@ search-bar-shown =
     .label = Lisää hakupalkki työkalupalkkiin
 search-engine-default-header = Oletushakukone
 search-engine-default-desc = Valitse oletushakukone, jota käytetään osoite- ja hakupalkissa.
+search-engine-default-desc-2 = Tämä on oletushakukone, jota käytetään osoite- ja hakupalkeissa. Voit vaihtaa sen milloin hyvänsä.
+search-engine-default-private-desc-2 = Valitse eri oletushakukone vain yksityisiin ikkunoihin
+search-separate-default-engine =
+    .label = Käytä tätä hakukonetta yksityisissä ikkunoissa
+    .accesskey = K
 search-suggestions-header = Hakuehdotukset
 search-suggestions-desc = Valitse, millä tavalla hakukoneiden ehdotukset näkyvät.
 search-suggestions-option =
@@ -520,6 +533,9 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Näytä hakuehdotukset osoitepalkin tuloksissa ennen selaushistoriaa
+search-show-suggestions-private-windows =
+    .label = Näytä hakuehdotukset yksityisissä ikkunoissa
+suggestions-addressbar-settings = Muuta selaushistorian, kirjanmerkkien ja välilehtien ehdotusten asetuksia
 search-suggestions-cant-show = Hakuehdotuksia ei näytetä osoitepalkista tehtävistä hauista, koska olet valinnut, että { -brand-short-name } ei muista historiaa.
 search-one-click-header = Hakukoneet pikavalikossa
 search-one-click-desc = Valitse vaihtoehtoiset hakukoneet, jotka ilmestyvät osoite- ja hakupalkin alalaitaan, kun alat kirjoittaa hakusanoja.
@@ -568,6 +584,9 @@ sync-signedout-account-create = Eikö sinulla ole tiliä? Aloitetaan
 sync-signedout-account-signin =
     .label = Kirjaudu sisään…
     .accesskey = i
+sync-signedout-account-signin2 =
+    .label = Kirjaudu { -sync-brand-short-name }-palveluun…
+    .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -611,6 +630,9 @@ sync-signedin-settings-desc = Valitse tiedot, jotka synkronoidaan niiden laittei
 
 prefs-syncing-on = Synkronointi: PÄÄLLÄ
 prefs-syncing-off = Synkronointi: POIS PÄÄLTÄ
+prefs-sync-setup =
+    .label = Määritä { -sync-brand-short-name }…
+    .accesskey = M
 prefs-sync-offer-setup-label = Synkronoi kirjanmerkit, historia, välilehdet, salasanat, lisäosat ja asetukset kaikkien laitteidesi välillä.
 prefs-sync-now =
     .labelnotsyncing = Synkronoi nyt
@@ -708,7 +730,11 @@ privacy-header = Selaimen tietosuoja
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Käyttäjätunnukset ja salasanat
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Ehdota sivustojen käyttäjätunnusten ja salasanojen tallentamista
     .accesskey = v
@@ -722,6 +748,7 @@ forms-breach-alerts =
     .label = Näytä hälytykset salasanoista sivustoille, jotka ovat kokeneet tietomurron
     .accesskey = h
 forms-breach-alerts-learn-more-link = Lue lisää
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Täytä automaattisesti käyttäjätunnukset ja salasanat
     .accesskey = T

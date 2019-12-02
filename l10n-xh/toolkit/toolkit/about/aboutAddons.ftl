@@ -121,9 +121,6 @@ legacy-warning-show-legacy = Bonisa izongezelelo ezizizikhokelo
 legacy-extensions =
     .value = IZongezelelo zeziKhokelo
 legacy-extensions-description = Ezi zongezelelo azidibani nemilinganiselo ye{ -brand-short-name } ekhoyo ngoko iye yayekiswa. <label data-l10n-name="legacy-learn-more">Funda ngotshintsho kwizongezelelo</label>
-extensions-view-discover =
-    .name = Fumana izongezelelo
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-recent-updates =
     .name = Uhlaziyo lwakutshanje
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -151,6 +148,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Vumela
     .tooltiptext = Vumela uhlaziyo lwesongezelelo sokukhangela ukhuseleko
+extensions-warning-safe-mode = Zonke izongezelelo ziqhwalelisiwe ngemo ekhuselekileyo.
+extensions-warning-check-compatibility = Isongezelelo sokukhangela uhambelwanosiqhwalelisiwe. Usenokuba nezongezelelo ezingahambelaniyo.
+extensions-warning-check-compatibility-button = Vumela
+    .title = Vumela isongezelelo sokukhangela uhambelwano
+extensions-warning-update-security = Uhlaziyo lwesongezelelo sokukhangela ukhuseleko luqhwalelisiwe. Ungahlangatyezwa luhlaziyo.
+extensions-warning-update-security-button = Vumela
+    .title = Vumela uhlaziyo lwesongezelelo sokukhangela ukhuseleko
 
 ## Strings connected to add-on updates
 
@@ -160,12 +164,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Jonga uhlaziyo lwakutshanje
     .accesskey = J
+addon-updates-check-for-updates = Khangela iZihlaziyi
+    .accesskey = K
+addon-updates-view-updates = Jonga uhlaziyo lwakutshanje
+    .accesskey = J
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Uhlaziyo nezongezelelo ngokuzenzekelayo
+    .accesskey = n
+addon-updates-update-addons-automatically = Uhlaziyo nezongezelelo ngokuzenzekelayo
     .accesskey = n
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -179,6 +189,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = S
 extensions-updates-reset-updates-to-manual =
     .label = Seta kwakhona zonke izongezelelo zihlaziywe ngesandla
+    .accesskey = S
+addon-updates-reset-updates-to-automatic = Seta kwakhona zonke izongezelelo zihlaziye ngokuzenzekelayo
+    .accesskey = S
+addon-updates-reset-updates-to-manual = Seta kwakhona zonke izongezelelo zihlaziywe ngesandla
     .accesskey = S
 
 ## Status messages displayed when updating add-ons
@@ -198,3 +212,31 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Fakela iZihlaziyi
     .tooltiptext = Fakela uhlaziyo olufumanekayo kolu ludwe
+addon-updates-updating = Ihlaziya izongezelelo
+addon-updates-installed = Izongezelelo zakho zihlaziyiwe.
+addon-updates-none-found = Akukho zihlaziyi zifumanekayo
+addon-updates-manual-updates-found = Jonga uhlaziyo olufumanekayo
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Fakela izongezelelo ezisuka kule fayile…
+    .accesskey = F
+addon-install-from-file-dialog-title = Khetha isongezelelo ukufakela
+addon-install-from-file-filter-name = Izongezelelo
+addon-open-about-debugging = Khuphaibhagi Kwizongezelelo
+    .accesskey = i
+
+## Extension shortcut management
+
+
+## Recommended add-ons page
+
+
+## Add-on actions
+
+
+## Pending uninstall message bar
+
+
+## Page headings
+

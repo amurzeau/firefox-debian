@@ -7,7 +7,7 @@ restore-page-tab-title = Restaurar le session
 # and regret that we are unable to restore the session for the user
 restore-page-error-title = Nos lo regretta. Nos ha problemas a recuperar tu paginas.
 restore-page-problem-desc = Nos ha problemas a restaurar tu ultime session de navigation. Selige "Restaurar le session" pro retentar.
-restore-page-try-this = Ancora non succede restaurar tu session? Alcun vices, un scheda causa le problema. Examina le schedas precedente, retira le marcas de selection del schedas que tu non require, e postea restaura.
+restore-page-try-this = Ancora non succede a restaurar tu session? Alcun vices, un scheda causa le problema. Examina le schedas precedente, dismarca le schedas que tu non require, e postea restaura.
 restore-page-hide-tabs = Celar le schedas precedente
 restore-page-show-tabs = Vider le schedas precedente
 # When tabs are distributed across multiple windows, this message is used as a
@@ -33,8 +33,8 @@ welcome-back-tab-title = Successo!
 welcome-back-page-title = Successo!
 welcome-back-page-info = { -brand-short-name } es preste.
 welcome-back-restore-button =
-    .label = Que nos va!
-    .accesskey = Q
+    .label = Avante!
+    .accesskey = A
 welcome-back-restore-all-label = Restaurar tote le fenestras e schedas
 welcome-back-restore-some-label = Restaurar solmente illos que tu vole
 welcome-back-page-info-link = Tu additivos e personalisationes ha essite removite e le parametros de tu navigator ha essite restaurate a lor predefinitiones. Si isto non corrige tu problema, <a data-l10n-name="link-more">apprende lo que tu pote facer de plus.</a>

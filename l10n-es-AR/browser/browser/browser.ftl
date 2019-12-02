@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Datos guardados en almacenamiento persistente
 urlbar-addons-notification-anchor =
     .tooltiptext = Abrir panel de mensajes de instalación de complementos
+urlbar-tip-help-icon =
+    .title = Obtener ayuda
+urlbar-geolocation-blocked =
+    .tooltiptext = Bloqueó la información de ubicación para este sitio web.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Bloqueó las notificaciones para este sitio web.
+urlbar-camera-blocked =
+    .tooltiptext = Bloqueó la cámara para este sitio web.
+urlbar-microphone-blocked =
+    .tooltiptext = Bloqueó el micrófono para este sitio web.
+urlbar-screen-blocked =
+    .tooltiptext = Bloqueó este sitio web para que no comparta la pantalla.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Bloqueó el almacenamiento persistente para este sitio web.
+urlbar-popup-blocked =
+    .tooltiptext = Bloqueó las ventanas emergentes para este sitio web.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Bloqueó los medios de reproducción automática con sonido para este sitio web.
+urlbar-canvas-blocked =
+    .tooltiptext = Bloqueó la extracción de datos de canvas para este sitio web.
+urlbar-midi-blocked =
+    .tooltiptext = Bloqueó el acceso a MIDI para este sitio web.
+urlbar-install-blocked =
+    .tooltiptext = Bloqueó la instalación de complementos para este sitio web.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Salir de pantalla completa
     .accesskey = S
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Esta vez, buscar con:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Cambiar configuración de búsqueda
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Cambiar opciones de búsqueda
+search-one-offs-context-open-new-tab =
+    .label = Buscar en nueva pestaña
+    .accesskey = T
+search-one-offs-context-set-as-default =
+    .label = Configurar como buscador predeterminado
+    .accesskey = D
+search-one-offs-context-set-as-default-private =
+    .label = Establecer como motor de búsqueda predeterminado para ventanas privadas
+    .accesskey = P

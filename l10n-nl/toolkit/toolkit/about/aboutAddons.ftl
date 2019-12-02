@@ -115,7 +115,7 @@ detail-private-browsing-off =
     .label = Niet toestaan
     .tooltiptext = Uitschakelen in privénavigatie
 detail-home =
-    .label = Homepage
+    .label = Startpagina
 detail-home-value =
     .value = { detail-home.label }
 detail-repository =
@@ -196,6 +196,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Inschakelen
     .tooltiptext = Beveiligingscontrole voor add-on-updates inschakelen
+extensions-warning-safe-mode = Alle add-ons zijn uitgeschakeld door de veilige modus.
+extensions-warning-check-compatibility = Compatibiliteitscontrole voor add-ons is uitgeschakeld. Mogelijk hebt u incompatibele add-ons.
+extensions-warning-check-compatibility-button = Inschakelen
+    .title = Add-on-compatibiliteitscontrole inschakelen
+extensions-warning-update-security = Beveiligingscontrole voor add-on-updates is uitgeschakeld. Mogelijk loopt u een beveiligingsrisico door updates.
+extensions-warning-update-security-button = Inschakelen
+    .title = Beveiligingscontrole voor add-on-updates inschakelen
 
 ## Strings connected to add-on updates
 
@@ -205,12 +212,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Recente updates bekijken
     .accesskey = R
+addon-updates-check-for-updates = Controleren op updates
+    .accesskey = C
+addon-updates-view-updates = Recente updates bekijken
+    .accesskey = R
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Add-ons automatisch bijwerken
+    .accesskey = a
+addon-updates-update-addons-automatically = Add-ons automatisch bijwerken
     .accesskey = a
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -224,6 +237,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = t
 extensions-updates-reset-updates-to-manual =
     .label = Alle add-ons terugzetten naar handmatig bijwerken
+    .accesskey = t
+addon-updates-reset-updates-to-automatic = Alle add-ons terugzetten naar automatisch bijwerken
+    .accesskey = t
+addon-updates-reset-updates-to-manual = Alle add-ons terugzetten naar handmatig bijwerken
     .accesskey = t
 
 ## Status messages displayed when updating add-ons
@@ -243,11 +260,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Updates installeren
     .tooltiptext = Beschikbare updates in deze lijst installeren
+addon-updates-updating = Add-ons worden bijgewerkt
+addon-updates-installed = Uw add-ons zijn bijgewerkt.
+addon-updates-none-found = Geen updates gevonden
+addon-updates-manual-updates-found = Beschikbare updates bekijken
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Add-on installeren via bestand…
+    .accesskey = s
+addon-install-from-file-dialog-title = Add-on voor installatie selecteren
+addon-install-from-file-filter-name = Add-ons
+addon-open-about-debugging = Add-ons debuggen
+    .accesskey = b
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Extensiesneltoetsen beheren
+    .accesskey = E
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Extensiesneltoetsen beheren
     .accesskey = E
 shortcuts-no-addons = U hebt geen extensies ingeschakeld.
 shortcuts-no-commands = De volgende extensies hebben geen sneltoetsen:
@@ -319,6 +352,8 @@ addon-options-button =
 
 report-addon-button = Rapporteren
 remove-addon-button = Verwijderen
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Kan niet worden verwijderd <a data-l10n-name="link">Waarom?</a>
 disable-addon-button = Uitschakelen
 enable-addon-button = Inschakelen
 expand-addon-button = Meer opties
@@ -412,3 +447,18 @@ recommended-themes-heading = Aanbevolen thema’s
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Voelt u zich creatief? <a data-l10n-name="link"> Bouw uw eigen thema met Firefox Color.</a>
+
+## Page headings
+
+extension-heading = Uw extensies beheren
+theme-heading = Uw thema’s beheren
+plugin-heading = Uw plug-ins beheren
+dictionary-heading = Uw woordenboeken beheren
+locale-heading = Uw talen beheren
+updates-heading = Uw updates beheren
+discover-heading = Uw { -brand-short-name } personaliseren
+shortcuts-heading = Extensiesneltoetsen beheren
+theme-heading-search-label = Meer thema’s zoeken
+extension-heading-search-label = Meer extensies zoeken
+addons-heading-search-input =
+    .placeholder = addons.mozilla.org doorzoeken

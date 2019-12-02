@@ -138,9 +138,6 @@ legacy-extensions =
     .value = امتدادات عتيقة
 legacy-extensions-description = لا تحقق هذه الامتدادات معايير { -brand-short-name } الحالية، لذا عُطّلت. <label data-l10n-name="legacy-learn-more">تعرّف على التغييرات على الإضافات</label>
 private-browsing-description2 = بدأ { -brand-short-name } بتغيير كيفية عمل الامتدادات في التصفح الخاص. مبدئيًا، لن تعمل أي امتدادات جديدة تُضيفها إلى { -brand-short-name } في النوافذ الخاصة. إن لم تغيّر ذلك وتسمح به في الإعدادات فلن يعمل الامتداد وأنت في التصفح الخاص، ولن يملك حق الوصول إلى نشاطك على الوِب فيها. أجرينا هذا التغيير ليكون التصفح الخاص خاصًا بحق. <label data-l10n-name="private-browsing-learn-more">اطّلع على طريقة إدارة إعدادات الامتدادات</label>
-extensions-view-discover =
-    .name = احصل على الإضافات
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-recent-updates =
     .name = التحديثات الأخيرة
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -168,6 +165,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = فعّل
     .tooltiptext = فعّل التحقق من أمن تحديثات الإضافات
+extensions-warning-safe-mode = النمط الآمن عطّل جميع الإضافات.
+extensions-warning-check-compatibility = التحقق من توافقية الإضافات قد عُطّل. قد يكون لديك إضافات غير متوافقة.
+extensions-warning-check-compatibility-button = فعّل
+    .title = فعّل التحقق من توافقية الإضافات
+extensions-warning-update-security = التحقق من أمن التحديثات قد عُطّل. قد تشكل التهديدات عليك خطرًا.
+extensions-warning-update-security-button = فعّل
+    .title = فعّل التحقق من أمن تحديثات الإضافات
 
 ## Strings connected to add-on updates
 
@@ -177,12 +181,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = اعرض التحديثات الأخيرة
     .accesskey = ض
+addon-updates-check-for-updates = التمس التحديثات
+    .accesskey = ت
+addon-updates-view-updates = اعرض التحديثات الأخيرة
+    .accesskey = ض
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = حدّث الإضافات تلقائيًا
+    .accesskey = ق
+addon-updates-update-addons-automatically = حدّث الإضافات تلقائيًا
     .accesskey = ق
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -196,6 +206,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = ف
 extensions-updates-reset-updates-to-manual =
     .label = اجعل تحديث كل الإضافات يدويًا
+    .accesskey = ف
+addon-updates-reset-updates-to-automatic = اجعل تحديث كل الإضافات تلقائيًا
+    .accesskey = ف
+addon-updates-reset-updates-to-manual = اجعل تحديث كل الإضافات يدويًا
     .accesskey = ف
 
 ## Status messages displayed when updating add-ons
@@ -215,11 +229,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = نصّب التحديثات
     .tooltiptext = نصّب التحديثات المتاحة في هذه اللائحة
+addon-updates-updating = يحدّث الإضافات
+addon-updates-installed = حُدّثت إضافاتك.
+addon-updates-none-found = لا يوجد تحديثات
+addon-updates-manual-updates-found = اعرض التحديثات المتاحة
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = نصّب إضافة من ملف…
+    .accesskey = ن
+addon-install-from-file-dialog-title = اختر إضافة لتنصيبها
+addon-install-from-file-filter-name = الإضافات
+addon-open-about-debugging = نقّح الإضافات
+    .accesskey = ن
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = أدِر اختصارات الامتدادات
+    .accesskey = د
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = أدِر اختصارات الامتدادات
     .accesskey = د
 shortcuts-no-addons = ليس لديك أيّ امتدادات مفعّلة.
 shortcuts-no-commands = لا اختصارات للامتدادات الآتية:
@@ -237,3 +267,13 @@ shortcuts-input =
 addon-detail-private-browsing-help = إن سمحت به فسيملك هذا الامتداد تصريح الوصول إلى نشاطك على الإنترنت وأنت تتصفح تصفحا خاصا. <a data-l10n-name="learn-more">اطّلع على المزيد</label>
 addon-detail-private-browsing-allow = مسموح
 addon-detail-private-browsing-disallow = غير مسموح
+
+## Page headings
+
+extension-heading = أدِر الامتدادات لديك
+theme-heading = أدِر السمات لديك
+plugin-heading = أدِر الملحقات لديك
+dictionary-heading = أدِر القواميس لديك
+locale-heading = أدِر اللغات لديك
+shortcuts-heading = أدِر اختصارات الامتدادات
+extension-heading-search-label = ابحث عن امتدادات أكثر

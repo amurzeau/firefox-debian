@@ -14,6 +14,11 @@ pref-page =
             [windows] Options
            *[other] Preferences
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Options
+       *[other] Preferences
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -282,6 +287,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Use { $plugin-name } (in { -brand-short-name })
@@ -457,7 +466,6 @@ choose-bookmark =
 
 home-prefs-content-header = Firefox Home Content
 home-prefs-content-description = Choose what content you want on your Firefox Home screen.
-home-prefs-content-discovery-description = Content Discovery in Firefox Home allows you to discover high-quality, relevant articles from across the web.
 home-prefs-search-header =
     .label = Web Search
 home-prefs-topsites-header =
@@ -505,7 +513,8 @@ search-bar-shown =
     .label = Add search bar in toolbar
 search-engine-default-header = Default Search Engine
 search-engine-default-desc = Choose the default search engine to use in the address bar and search bar.
-search-engine-default-private-desc = Choose the default search engine to use in Private Windows.
+search-engine-default-desc-2 = This is your default search engine in the address bar and search bar. You can switch it at any time.
+search-engine-default-private-desc-2 = Choose a different default search engine for Private Windows only
 search-separate-default-engine =
     .label = Use this search engine in Private Windows
     .accesskey = U
@@ -524,6 +533,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Show search suggestions ahead of browsing history in address bar results
+search-show-suggestions-private-windows =
+    .label = Show search suggestions in Private Windows
 suggestions-addressbar-settings = Change preferences for browsing history, bookmarks, and tab suggestions
 search-suggestions-cant-show = Search suggestions will not be shown in location bar results because you have configured { -brand-short-name } to never remember history.
 search-one-click-header = One-Click Search Engines
@@ -549,7 +560,7 @@ search-keyword-warning-bookmark = You have chosen a keyword that is currently in
 
 ## Containers Section
 
-containers-back-link = « Go Backwards
+containers-back-link = « Go Back
 containers-header = Container Tabs
 containers-add-button =
     .label = Add New Container
@@ -573,6 +584,9 @@ sync-signedout-account-create = Don’t have an account? Get started
 sync-signedout-account-signin =
     .label = Sign In…
     .accesskey = I
+sync-signedout-account-signin2 =
+    .label = Sign in to { -sync-brand-short-name }…
+    .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -716,7 +730,11 @@ privacy-header = Browser Privacy
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Logins and Passwords
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Ask to save logins and passwords for websites
     .accesskey = r
@@ -730,6 +748,7 @@ forms-breach-alerts =
     .label = Show alerts about passwords for breached websites
     .accesskey = b
 forms-breach-alerts-learn-more-link = Learn more
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Autofill logins and passwords
     .accesskey = i

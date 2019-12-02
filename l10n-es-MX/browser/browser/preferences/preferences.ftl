@@ -14,6 +14,11 @@ pref-page =
             [windows] Opciones
            *[other] Preferencias
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Opciones
+       *[other] Preferencias
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -282,6 +287,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Usar { $plugin-name } (en { -brand-short-name })
@@ -307,7 +316,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Contenido DRM (Digital Rights Management - Administración de Derechos Digitales)
 play-drm-content =
@@ -457,7 +466,6 @@ choose-bookmark =
 
 home-prefs-content-header = Contenido de la página de inicio de Firefox
 home-prefs-content-description = Selecciona el contenido que desea en la pantalla de inicio de Firefox.
-home-prefs-content-discovery-description = El descubrimiento de contenido en la página de inicio de Firefox te muestra artículos relevantes y de alta calidad provenientes de toda la red.
 home-prefs-search-header =
     .label = Búsqueda web
 home-prefs-topsites-header =
@@ -505,7 +513,8 @@ search-bar-shown =
     .label = Agregar barra de búsqueda en la barra de herramientas
 search-engine-default-header = Buscador predeterminado
 search-engine-default-desc = Elegir el motor de búsqueda predeterminado para usar en la barra de direcciones y en la barra de búsqueda.
-search-engine-default-private-desc = Selecciona el motor de búsqueda predeterminado para usar en ventanas privadas.
+search-engine-default-desc-2 = Este es tu motor de búsqueda predeterminado en la barra de direcciones y en la barra de búsqueda. Puedes cambiarlo en cualquier momento.
+search-engine-default-private-desc-2 = Elige un diferente motor de búsqueda predeterminado solamente para ventanas privadas
 search-separate-default-engine =
     .label = Usar este motor de búsqueda en ventanas privadas
     .accesskey = U
@@ -524,6 +533,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Mostrar sugerencias de búsqueda antes del historial de navegación en los resultados de la barra de direcciones
+search-show-suggestions-private-windows =
+    .label = Mostrar sugerencias de búsqueda en ventanas privadas
 suggestions-addressbar-settings = Cambiar preferencias para el historial de navegación, marcadores y sugerencias de pestañas
 search-suggestions-cant-show = Las sugerencias de búsqueda no se mostrarán en los resultados de la barra de direcciones porque has configurado { -brand-short-name } para que nunca recuerde el historial.
 search-one-click-header = Buscadores con un clic
@@ -716,6 +727,9 @@ privacy-header = Navegación privada
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Inicios de sesión y contraseñas
 forms-ask-to-save-logins =
     .label = Preguntar para guardar inicios de sesión y contraseñas para los sitios web
@@ -884,7 +898,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Personalizar
     .accesskey = P
 
-
+##
 
 content-blocking-etp-standard-desc = Equilibrada entre protección y rendimiento. Las páginas se cargarán con normalidad.
 content-blocking-etp-strict-desc = Protección más elevada, pero puede causar que algunos sitios o contenidos fallen.

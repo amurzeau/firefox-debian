@@ -8,3 +8,15 @@
 appmenuitem-protection-report-title = Mesiras da protecziun
 appmenuitem-protection-report-tooltip =
     .tooltiptext = Avrir il rapport davart las mesiras per la protecziun da datas
+
+## Zoom Controls
+
+appmenuitem-zoom-enlarge =
+    .label = Engrondir
+appmenuitem-zoom-reduce =
+    .label = Empitschnir
+
+## Firefox Account toolbar button and Sync panel in App menu.
+
+fxa-toolbar-sync-now =
+    .label = Sincronisar ussa

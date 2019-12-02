@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = par { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Recommandation
+cfr-doorhanger-extension-notification2 = Recommandation
+    .tooltiptext = Recommandation d’extension
+    .a11y-announcement = Recommandation d’extension disponible
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Recommandation
+    .tooltiptext = Recommandation de fonctionnalité
+    .a11y-announcement = Recommandation de fonctionnalité disponible
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -78,6 +86,9 @@ cfr-protections-panel-link-text = En savoir plus
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Nouvelle fonctionnalité :
 cfr-whatsnew-button =
     .label = Nouveautés
     .tooltiptext = Nouveautés
@@ -139,12 +150,23 @@ cfr-doorhanger-firefox-send-ok-button = Essayer { -send-brand-name }
 ## Social Tracking Protection
 
 cfr-doorhanger-socialtracking-ok-button = Voir les protections
-    .accesskey = p
+    .accesskey = V
 cfr-doorhanger-socialtracking-close-button = Fermer
     .accesskey = F
+cfr-doorhanger-socialtracking-dont-show-again = Ne plus me montrer de messages comme celui-ci
+    .accesskey = N
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } a empêché un réseau social de vous pister ici
 cfr-doorhanger-socialtracking-description = Le respect de votre vie privée est important. { -brand-short-name } bloque désormais les traqueurs de réseaux sociaux courants, limitant ainsi la quantité de données qu’ils peuvent recueillir sur votre activité en ligne.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } a bloqué un traqueur d’empreinte numérique sur cette page
 cfr-doorhanger-fingerprinters-description = Le respect de votre vie privée est important. { -brand-short-name } bloque désormais les traqueurs d’empreintes numériques, qui collectent des informations uniques et identifiables sur votre appareil afin de vous pister.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } a bloqué un mineur de cryptomonnaie sur cette page
 cfr-doorhanger-cryptominers-description = Le respect de votre vie privée est important. { -brand-short-name } bloque désormais les mineurs de cryptomonnaies, qui utilisent la puissance de calcul de votre système pour extraire de la monnaie numérique.
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading = { -brand-short-name } a bloqué plus de <b>{ $blockedCount }</b> traqueurs depuis { $date }.
+cfr-doorhanger-milestone-ok-button = Tout afficher
+    .accesskey = T

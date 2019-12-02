@@ -62,7 +62,7 @@ about-logins-login-list-empty-search-title = Žedne pśizjawjenja namakane
 about-logins-login-list-empty-search-description = Njejsu žedne wuslědki, kótarež wašomu pytanjeju wótpowěduju.
 login-list-item-title-new-login = Nowe pśizjawjenje
 login-list-item-subtitle-new-login = Zapódajśo swóje pśizjawjeńske daty
-login-list-item-subtitle-missing-username = (žedno wužywarske mě)
+login-list-item-subtitle-missing-username = (žedno wužywaŕske mě)
 about-logins-list-item-warning-icon =
     .alt = Warnowański symbol
     .title = Zranjone websedło
@@ -72,10 +72,12 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = Pytaśo swóje skłaźone pśizjawjenja? Konfigurěrujśo { -sync-brand-short-name }.
+about-logins-login-intro-heading-logged-in = Žedne synchronizěrowane pśizjawjenja namakane.
 login-intro-description = Jolic sćo składł swóje pśizjawjenja { -brand-product-name } na drugem rěźe, tak móžośo je sem pśinjasć:
 login-intro-instruction-fxa = Załožćo abo pśizjawśo se pla swójogo { -fxaccount-brand-name } na rěźe, źož waše pśizjawjenja su skłaźone
 login-intro-instruction-fxa-settings = Pśeznańśo se, až sćo wubrał kontrolny kašćik pśizjawjenjow w nastajenjach { -sync-brand-short-name }
 about-logins-intro-instruction-help = Woglědajśo se k <a data-l10n-name="help-link">pomocy { -lockwise-brand-short-name }</a> za wěcej pomocy
+about-logins-intro-import = Jolic waše pśizjawjenja su skłaźone w drugem wobglědowaku, móžośo <a data-l10n-name="import-link">je do { -lockwise-brand-short-name } importěrowaś</a>
 
 ## Login
 
@@ -85,9 +87,9 @@ login-item-delete-button = Lašowaś
 login-item-origin-label = Adresa websedła
 login-item-origin =
     .placeholder = https://www.example.com
-login-item-username-label = Wužywarske mě
+login-item-username-label = Wužywaŕske mě
 about-logins-login-item-username =
-    .placeholder = (žedno wužywarske mě)
+    .placeholder = (žedno wužywaŕske mě)
 login-item-copy-username-button-text = Kopěrowaś
 login-item-copied-username-button-text = Kopěrowany!
 login-item-password-label = Gronidło
@@ -111,11 +113,8 @@ master-password-reload-button =
     .label = Pśizjawiś
     .accesskey = P
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = Pśetergnuś
-confirmation-dialog-dismiss-button =
-    .title = Pśetergnuś
 enable-password-sync-notification-message =
     { PLATFORM() ->
         [windows] Cośo swóje pśizjawjenja wšuźi wužywaś, źož { -brand-product-name } wužywaśo? Źiśo k swójim nastajenjam { -sync-brand-short-name } a wubjeŕśo kontrolny kašćik pśizjawjenjow.
@@ -128,6 +127,15 @@ enable-password-sync-preferences-button =
            *[other] Nastajenja { -sync-brand-short-name } se woglědaś
         }
     .accesskey = N
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = Wěcej se njepšašaś
+    .accesskey = W
+
+## Dialogs
+
+confirmation-dialog-cancel-button = Pśetergnuś
+confirmation-dialog-dismiss-button =
+    .title = Pśetergnuś
 confirm-delete-dialog-title = Toś to pśizjawjenje wulašowaś?
 confirm-delete-dialog-message = Toś ta akcija njedajo se anulěrowaś.
 confirm-delete-dialog-confirm-button = Lašowaś
@@ -148,11 +156,11 @@ breach-alert-dismiss =
 # a new login that is identical to an existing saved login.
 # Variables:
 #   $loginTitle (String) - The title of the website associated with the login.
-about-logins-error-message-duplicate-login = Zapisk za { $loginTitle } z tym wužywarskim mjenim južo eksistěrujo.
+about-logins-error-message-duplicate-login = Zapisk za { $loginTitle } z tym wužywaŕskim mjenim južo eksistěrujo.
 # This is an error message that appears when a user attempts to save
 # a new login that is identical to an existing saved login.
 # Variables:
 #   $loginTitle (String) - The title of the website associated with the login.
-about-logins-error-message-duplicate-login-with-link = Zapisk za { $loginTitle } z tym wužywarskim mjenim južo eksistěrujo. <a data-l10n-name="duplicate-link">K eksistěrujucemu zapiskoju?</a>
+about-logins-error-message-duplicate-login-with-link = Zapisk za { $loginTitle } z tym wužywaŕskim mjenim južo eksistěrujo. <a data-l10n-name="duplicate-link">K eksistěrujucemu zapiskoju?</a>
 # This is a generic error message.
 about-logins-error-message-default = Pśi wopyśe toś to gronidło składowaś, jo zmólka nastała.

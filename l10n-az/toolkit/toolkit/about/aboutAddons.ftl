@@ -138,9 +138,6 @@ legacy-warning-show-legacy = Köhnəlmiş qoşmaları göstər
 legacy-extensions =
     .value = Köhnəlmiş Qoşmalar
 legacy-extensions-description = Bu qoşmalar hazırkı { -brand-short-name } standartlarına cavab vermirlər və bu səbəbdən söndürüldülər. <label data-l10n-name="legacy-learn-more">Əlavələrə olan dəyişikliklər haqqında öyrən</label>
-extensions-view-discover =
-    .name = Əlavə Endirin
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-recent-updates =
     .name = Yaxın vaxtlardakı yeniləmələr
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -168,6 +165,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Aktiv et
     .tooltiptext = Əlavə yeniləmə təhlükəsizliyinə  nəzarəti aktivləşdir
+extensions-warning-safe-mode = Bütün əlavələr təhlükəsizlik rejimdə söndürüldü.
+extensions-warning-check-compatibility = Əlavə uyğunluq nəzarəti söndürülüb. Uyğun olmayan əlavələriniz ola bilər.
+extensions-warning-check-compatibility-button = Aktiv et
+    .title = Əlavə uyğunluq nəzarətini aktivləşdir
+extensions-warning-update-security = Əlavə yeniləmə təhlükəsizliyinə  nəzarəti söndürülüb. Yeniləmələr təhlükəli ola bilər.
+extensions-warning-update-security-button = Aktiv et
+    .title = Əlavə yeniləmə təhlükəsizliyinə  nəzarəti aktivləşdir
 
 ## Strings connected to add-on updates
 
@@ -177,12 +181,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Yaxın vaxtdakı yeniləmələrə bax
     .accesskey = b
+addon-updates-check-for-updates = Yeniləmələrə bax…
+    .accesskey = C
+addon-updates-view-updates = Yaxın vaxtdakı yeniləmələrə bax
+    .accesskey = b
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Əlavələri avtomatik yenilə
+    .accesskey = n
+addon-updates-update-addons-automatically = Əlavələri avtomatik yenilə
     .accesskey = n
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -196,6 +206,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = a
 extensions-updates-reset-updates-to-manual =
     .label = Bütün əlavələri əllə yeniləyəcək şəkildə nizamla
+    .accesskey = a
+addon-updates-reset-updates-to-automatic = Bütün əlavələri avtomatik yeniləyəcək şəkildə nizamla
+    .accesskey = a
+addon-updates-reset-updates-to-manual = Bütün əlavələri əllə yeniləyəcək şəkildə nizamla
     .accesskey = a
 
 ## Status messages displayed when updating add-ons
@@ -215,13 +229,28 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Yeniləmələri quraşdır
     .tooltiptext = Bu siyahıdakı yeniləmələri quraşdır
+addon-updates-updating = Əlavələr yenilənir
+addon-updates-installed = Əlavələriniz yenilənir.
+addon-updates-none-found = Yenilənmə tapılmadı
+addon-updates-manual-updates-found = Quraşdırıla biləcək yeniləmələrə bax
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Fayldan əlavə qur...
+    .accesskey = I
+addon-install-from-file-dialog-title = Quraşdırılacaq əlavəni seçin
+addon-install-from-file-filter-name = Əlavələr
+addon-open-about-debugging = Əlavələri Sazla
+    .accesskey = z
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Uzantı Qısa-yollarını İdarə et
     .accesskey = S
-shortcuts-empty-message = Bu uzantı üçün qısayol yoxdur.
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Uzantı Qısa-yollarını İdarə et
+    .accesskey = S
 shortcuts-no-addons = Aktiv uzantınız yoxdur.
 shortcuts-no-commands = Bu uzantıların qısa-yolları yoxdur:
 shortcuts-input =
@@ -243,6 +272,9 @@ shortcuts-card-collapse-button = Daha az göstər
 go-back-button =
     .tooltiptext = Geri get
 
+## Recommended add-ons page
+
+
 ## Add-on actions
 
 remove-addon-button = Sil
@@ -250,3 +282,20 @@ disable-addon-button = Söndür
 enable-addon-button = Aktiv et
 addons-enabled-heading = Aktivdir
 addons-disabled-heading = Söndürülüb
+
+## Pending uninstall message bar
+
+
+## Page headings
+
+extension-heading = Uzantılarını idarə et
+theme-heading = Mözvularını idarə et
+plugin-heading = Qoşmalarını idarə et
+dictionary-heading = Lüğətlərini idarə et
+locale-heading = Dillərini idarə et
+discover-heading = { -brand-short-name } səyyahınızı şəxsiləşdirin
+shortcuts-heading = Uzantı Qısa-yollarını İdarə et
+theme-heading-search-label = Daha çox mövzu tap
+extension-heading-search-label = Daha çox uzantı tap
+addons-heading-search-input =
+    .placeholder = addons.mozilla.org saytında axtar

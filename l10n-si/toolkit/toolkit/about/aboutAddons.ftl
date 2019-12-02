@@ -95,7 +95,6 @@ detail-update-manual =
     .tooltiptext = ස්වයංක්‍රීයව යාවත්කාලීන ස්ථාපනය නොකරන්න
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = පුද්ගලික කවුළු තුළ ක්‍රියාකරවන්න
-detail-private-browsing-description = දිගුවට පුද්ගලික කවුළු තුලද ක්‍රියා කරන අතර, එයට ඔබේ මාර්ගගත ක්‍රියාකාරකම් වෙත පිවිසිය හැක. <label data-l10n-name="detail-private-browsing-learn-more">තවත් දැනගන්න</label>
 detail-private-browsing-on =
     .label = ඉඩදෙන්න
     .tooltiptext = පුද්ගලික ගවේශණ තුළ සක්‍රීයයි
@@ -140,9 +139,6 @@ disabled-unsigned-description = පහත ඇඩෝන { -brand-short-name } හ
 disabled-unsigned-learn-more = ඔබව මාර්ගගතව ආරක්ෂිතව තැබීම සඳහා අපගේ උත්සාහයන් පිළිබඳ දැනගන්න.
 disabled-unsigned-devinfo = මෙය කියවීම මගින් තම ඇඩෝන තහවුරු කරගැනීමට කැමති සංවර්ධකයන් ඉදිරියට යන්න <label data-l10n-name="learn-more">ශ්‍රමික</label>.
 plugin-deprecation-description = යමක් අහිමිද? { -brand-short-name } විසින් ඇතැම් ප්ලගින වෙත තවදුරටත් සහය නොදක්වයි. <label data-l10n-name="learn-more"> තවත් දැනගන්න.</label>
-extensions-view-discover =
-    .name = ඇඩෝන ලබා ගන්න
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-recent-updates =
     .name = මෑතකාලීන යාවත්කාලීන
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -170,6 +166,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = බලැති (Enable) කරන්න
     .tooltiptext = ඇඩෝන යාවත්කාලීන කිරීමේ ආරක්ෂක සැකසුම් බලැතා (Enable) කරන්න
+extensions-warning-safe-mode = ආරක්ෂිත මාදිලිය (safe mode) විසින් සියළු ඇඩෝන කර ඇත.
+extensions-warning-check-compatibility = ඇඩෝන අනුකූලතා පරීක්ෂාව අබල (disable) කර ඇත. මෙහි අනුකූල නොවන ඇඩෝන තිබිය හැකිය.
+extensions-warning-check-compatibility-button = බලැති (Enable) කරන්න
+    .title = ඇඩෝන අනුකූලතා පරීක්ෂාව බලැති (Enable) කරන්න
+extensions-warning-update-security = Add-on update security checking is disabled. You may be compromised by updates.
+extensions-warning-update-security-button = බලැති (Enable) කරන්න
+    .title = ඇඩෝන යාවත්කාලීන කිරීමේ ආරක්ෂක සැකසුම් බලැතා (Enable) කරන්න
 
 ## Strings connected to add-on updates
 
@@ -179,12 +182,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = මෑතකාලීන යාවත්කාලීන පෙන්වන්න
     .accesskey = V
+addon-updates-check-for-updates = යාවත්කාලීන සඳහා පරීක්ෂා කරන්න
+    .accesskey = C
+addon-updates-view-updates = මෑතකාලීන යාවත්කාලීන පෙන්වන්න
+    .accesskey = V
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = ස්වයංක්‍රීයව ඇඩෝන යාවත්කාලීන කරන්න
+    .accesskey = A
+addon-updates-update-addons-automatically = ස්වයංක්‍රීයව ඇඩෝන යාවත්කාලීන කරන්න
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -198,6 +207,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = R
 extensions-updates-reset-updates-to-manual =
     .label = Reset All Add-ons to Update Manually
+    .accesskey = R
+addon-updates-reset-updates-to-automatic = ස්වයංක්‍රීයව යාවත්කාලීන කිරීමට සියළු ඇඩෝන ප්‍රත්‍යාරම්භ (Restart) කරන්න
+    .accesskey = R
+addon-updates-reset-updates-to-manual = Reset All Add-ons to Update Manually
     .accesskey = R
 
 ## Status messages displayed when updating add-ons
@@ -217,6 +230,19 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = යාවත්කාලීන ස්ථාපනය කරන්න
     .tooltiptext = මෙම ලැයිස්තුවේ පවතින යාවත්කාලීන ස්ථාපනය කරන්න
+addon-updates-updating = ඇඩෝන යාවත්කාලීන කිරීම
+addon-updates-installed = ඔබගේ ඇඩෝන යාවත්කාලීන නර ඇත.
+addon-updates-none-found = යාවත්කාලීන හමු නොවීය
+addon-updates-manual-updates-found = පවතින යාවත්කාලීන පෙන්වන්න
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = ඇඩෝන ගොනුවෙන් ස්ථාපනය කරන්න…
+    .accesskey = I
+addon-install-from-file-dialog-title = ස්ථාපනය සඳහා ඇඩෝන තෝරන්න
+addon-install-from-file-filter-name = ඇඩෝන
+addon-open-about-debugging = ඇඩෝන දෝශ නිරාකරණය
+    .accesskey = B
 
 ## Extension shortcut management
 
@@ -227,6 +253,9 @@ shortcuts-pageAction = පිටු ක්‍රියාව සක්‍රී�
 shortcuts-modifier-mac = Ctrl, Alt, හෝ ⌘ ඇතුලත් කරන්න
 shortcuts-modifier-other = Ctrl හෝ Alt ඇතුලත් කරන්න
 
+## Recommended add-ons page
+
+
 ## Add-on actions
 
 remove-addon-button = ඉවත් කරන්න
@@ -234,3 +263,11 @@ disable-addon-button = අක්‍රීය කරන්න
 enable-addon-button = සක්‍රීය
 addons-enabled-heading = සක්‍රීය කළ
 addons-disabled-heading = අක්‍රීය කළ
+
+## Pending uninstall message bar
+
+
+## Page headings
+
+addons-heading-search-input =
+    .placeholder = addons.mozilla.org සොයන්න

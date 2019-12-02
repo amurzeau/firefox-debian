@@ -184,6 +184,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Омогући
     .tooltiptext = Омогући проверавање безбедности додатка
+extensions-warning-safe-mode = Сви додаци су онемогућени у безбедном начину рада.
+extensions-warning-check-compatibility = Провера усклађености додатака је искључена. Можда имате некомпатибилне додатке.
+extensions-warning-check-compatibility-button = Укључи
+    .title = Омогући проверавање компатибилности додатка
+extensions-warning-update-security = Безбедносна провера додатака је искључена. Неисправни додаци могу да наруше безбедност система.
+extensions-warning-update-security-button = Омогући
+    .title = Омогући проверавање безбедности додатка
 
 ## Strings connected to add-on updates
 
@@ -193,12 +200,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Погледај недавна ажурирања
     .accesskey = н
+addon-updates-check-for-updates = Провери да ли постоје ажурирања
+    .accesskey = П
+addon-updates-view-updates = Погледај недавна ажурирања
+    .accesskey = н
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Аутоматски ажурирај додатке
+    .accesskey = А
+addon-updates-update-addons-automatically = Аутоматски ажурирај додатке
     .accesskey = А
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -212,6 +225,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = С
 extensions-updates-reset-updates-to-manual =
     .label = Све додатке мануелно надогради
+    .accesskey = м
+addon-updates-reset-updates-to-automatic = Све додатке аутоматски ажурирај
+    .accesskey = С
+addon-updates-reset-updates-to-manual = Све додатке мануелно надогради
     .accesskey = м
 
 ## Status messages displayed when updating add-ons
@@ -231,11 +248,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Инсталирај ажурирања
     .tooltiptext = Инсталирајте доступна ажурирања са овог списка
+addon-updates-updating = Ажурирам додатке
+addon-updates-installed = Ваши додаци су ажурирани.
+addon-updates-none-found = Нема ажурирања
+addon-updates-manual-updates-found = Погледај доступна ажурирања
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Инсталирај додатак из датотеке…
+    .accesskey = И
+addon-install-from-file-dialog-title = Изаберите додатке за инсталирање
+addon-install-from-file-filter-name = Додаци
+addon-open-about-debugging = Испитај додатке
+    .accesskey = д
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Управљај пречицама екстензија
+    .accesskey = с
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Управљај пречицама екстензија
     .accesskey = с
 shortcuts-no-addons = Немате омогућених проширења.
 shortcuts-browserAction = Активирај екстензију
@@ -332,3 +365,17 @@ recommended-themes-heading = Препоручене теме
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Креативни сте? <a data-l10n-name="link">Направите своју сопствену тему уз помоћ Firefox Color-а.</a>
+
+## Page headings
+
+extension-heading = Управљајте вашим екстензијама
+theme-heading = Управљајте вашим темама
+plugin-heading = Управљајте вашим прикључцима
+dictionary-heading = Управљајте вашим речницима
+locale-heading = Управљајте вашим језицима
+discover-heading = Персонализујте ваш { -brand-short-name }
+shortcuts-heading = Управљај пречицама екстензија
+theme-heading-search-label = Нађите више тема
+extension-heading-search-label = Нађите више екстензија
+addons-heading-search-input =
+    .placeholder = Претражи сајт addons.mozilla.org

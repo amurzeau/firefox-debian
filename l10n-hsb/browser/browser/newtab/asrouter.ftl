@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = wot { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Doporučenje
+cfr-doorhanger-extension-notification2 = Doporučenje
+    .tooltiptext = Doporučenje rozšěrjenja
+    .a11y-announcement = Doporučenje rozšěrjenja k dispoziciji
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Doporučenje
+    .tooltiptext = Doporučenje funkcije
+    .a11y-announcement = Doporučenje funkcije k dispoziciji
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -82,6 +90,9 @@ cfr-protections-panel-link-text = Dalše informacije
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Nowa funkcija:
 cfr-whatsnew-button =
     .label = Nowe funkcije a změny
     .tooltiptext = Nowe funkcije a změny
@@ -144,13 +155,30 @@ cfr-doorhanger-firefox-send-ok-button = { -send-brand-name } wupruwować
 
 ## Social Tracking Protection
 
-cfr-doorhanger-socialtracking-ok-button = Škity pokazać
+cfr-doorhanger-socialtracking-ok-button = Škit pokazać
     .accesskey = p
 cfr-doorhanger-socialtracking-close-button = Začinić
     .accesskey = Z
+cfr-doorhanger-socialtracking-dont-show-again = Powěsće kaž tutu hižo so njepokazać
+    .accesskey = P
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } je socialnu syć při tym haćił, wam tu slědować
 cfr-doorhanger-socialtracking-description = Waša priwatnosć je wažna. { -brand-short-name } nětko zwučene přesćěhowaki socialnych medijow blokuje, wobmjezuje mnóstwo datow, kotrež móža wo tym zběrać, štož wy online činiće.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } je porstowe wotćišće na tutej stronje zablokował
 cfr-doorhanger-fingerprinters-description = Waša priwatnosć je wažna. { -brand-short-name } nětko porstowe wotćišće blokuje, kotrež jasnje idenfikujomne informacije wo wašim graće hromadźa, zo bychu wam slědowali.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } je kryptokopak na tutej stronje zablokował
 cfr-doorhanger-cryptominers-description = Waša priwatnosć je wažna. { -brand-short-name } nětko kryptokopaki blokuje, kotrež ličenski wukon wašeho systema wužiwaja, zo bychu digitalne pjenjezy wudobyli.
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+        [one] { -brand-short-name } je přez <b>{ $blockedCount }</b> přesćěhowak wot { $date } zablokował!
+        [two] { -brand-short-name } je přez <b>{ $blockedCount }</b> přesćěhowakaj wot { $date } zablokował!
+        [few] { -brand-short-name } je přez <b>{ $blockedCount }</b> přesćěhowaki wot { $date } zablokował!
+       *[other] { -brand-short-name } je přez <b>{ $blockedCount }</b> přesćěhowakow wot { $date } zablokował!
+    }
+cfr-doorhanger-milestone-ok-button = Wšě pokazać
+    .accesskey = k

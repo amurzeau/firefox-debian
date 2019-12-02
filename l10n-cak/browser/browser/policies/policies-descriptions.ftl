@@ -33,6 +33,7 @@ policy-DisableFirefoxStudies = Man tiya' q'ij chi ri { -brand-short-name } tib'�
 policy-DisableForgetButton = Tiq'at okem pa ri rupitz'b'al Timestäx.
 policy-DisableFormHistory = Man tinatäx ri runatab'al kanob'äl chuqa' taq nojwuj
 policy-DisableMasterPasswordCreation = We nitzij, man nitikïr ta nitz'uk jun ajtij ewan tzij.
+policy-DisablePasswordReveal = Man tiya' q'ij chi kek'ut ri ewan taq tzij pa yakon taq tikirib'äl molojri'ïl.
 policy-DisablePocket = Tichup ri samaj richin yeyak taq ajk'amaya'l ruxaq pa Pocket.
 policy-DisablePrivateBrowsing = Tichup  ri Ichinan Okem pa K'amaya'l.
 policy-DisableProfileImport = Tichup ri runuk'uj k'utsamaj richin yejik' taq tzij pa ch'aqa' chik taq okik'amaya'l.
@@ -61,6 +62,7 @@ policy-HardwareAcceleration = We man qitzij ta, tichup ranin ch'akulkem.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Tiya' chuqa' ütz niq'at ri tikirib'äl ruxaq.
 policy-InstallAddonsPermission = Tiya' q'ij chi ke jujun taq ajk'amaya'l ruxaq yekiyäk taq tz'aqat.
+policy-LegacyProfiles = Tichup ri samaj nub'än chi nijach jun ruwäch b'i'aj kichin jujun yakoj
 policy-LocalFileLinks = Tiya' q'ij chi ri ajk'amaya'l ruxaq tikixima' ki' kik'in ri aj wawe' taq yakb'äl.
 policy-NetworkPrediction = Titzij o tichup ri nutz'et k'amab'ey (DNS nab'ey rukanoxik).
 policy-NewTabPage = Titzij o tichup ri ruxaq K'ak'a' Ruwi'.

@@ -19,3 +19,19 @@ open-location = Serĉu ion aŭ tajpu adreson
 share = Kundividi
 close-window = Fermi fenestron
 open-sidebar = Flankaj strioj
+# This string describes shortcuts for search.
+search-popover = Ŝparvojoj serĉaj
+# Describes searches limited to a specific scope
+# (e.g. searching only in history).
+search-search-in = Serĉi en:
+
+## Various categories of shortcuts for search.
+
+search-bookmarks = Legosignoj
+search-history = Historio
+search-opentabs = Malfermitaj langetoj
+search-tags = Etikedoj
+search-titles = Titoloj
+
+
+

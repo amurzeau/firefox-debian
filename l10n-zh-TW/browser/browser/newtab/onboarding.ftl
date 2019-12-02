@@ -33,10 +33,20 @@ onboarding-join-form-email =
 onboarding-join-form-email-error = 請輸入有效的電子郵件信箱
 onboarding-join-form-legal = 繼續使用，代表您同意我們的<a data-l10n-name="terms">使用條款</a>及<a data-l10n-name="privacy">隱私權公告</a>。
 onboarding-join-form-continue = 繼續
+# This message is followed by a link using onboarding-join-form-signin ("Sign In") as text.
+onboarding-join-form-signin-label = 已經有帳號了嗎？
+# Text for link to submit the sign in form
+onboarding-join-form-signin = 登入
 onboarding-start-browsing-button-label = 開始瀏覽
 onboarding-cards-dismiss =
     .title = 隱藏
     .aria-label = 隱藏
+
+## Welcome full page string
+
+onboarding-fullpage-welcome-subheader = 讓我們探索還能做哪些事。
+onboarding-fullpage-form-email =
+    .placeholder = 您的電子郵件地址…
 
 ## Firefox Sync modal dialog strings.
 
@@ -103,6 +113,7 @@ onboarding-data-sync-text2 = 在任何使用 { -brand-product-name } 的地方�
 onboarding-data-sync-button2 = 登入 { -sync-brand-short-name }
 onboarding-firefox-monitor-title = 小心資料外洩！
 onboarding-firefox-monitor-text = { -monitor-brand-name } 會監控您的 E-Mail 是否出現在資料外洩事故中，並且在有新事故時通知您。
+onboarding-firefox-monitor-text2 = { -monitor-brand-name } 會監控您的 E-Mail 是否出現在資料外洩事故中，並且在有新事故時通知您。
 onboarding-firefox-monitor-button = 訂閱帳號資料外洩警報
 onboarding-browse-privately-title = 私密上網
 onboarding-browse-privately-text = 隱私瀏覽模式會自動清除您的搜尋與上網紀錄，讓這台電腦的其他使用者無法得知您的上網紀錄。

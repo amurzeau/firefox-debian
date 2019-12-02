@@ -33,10 +33,20 @@ onboarding-join-form-email =
 onboarding-join-form-email-error = Giltig e-postadress krävs
 onboarding-join-form-legal = Genom att fortsätta godkänner du <a data-l10n-name="terms">användarvillkoren</a> och <a data-l10n-name="privacy">sekretesspolicy</a>.
 onboarding-join-form-continue = Fortsätt
+# This message is followed by a link using onboarding-join-form-signin ("Sign In") as text.
+onboarding-join-form-signin-label = Har du redan ett konto?
+# Text for link to submit the sign in form
+onboarding-join-form-signin = Logga in
 onboarding-start-browsing-button-label = Börja surfa
 onboarding-cards-dismiss =
     .title = Ignorera
     .aria-label = Ignorera
+
+## Welcome full page string
+
+onboarding-fullpage-welcome-subheader = Låt oss börja utforska allt du kan göra.
+onboarding-fullpage-form-email =
+    .placeholder = Din e-postadress…
 
 ## Firefox Sync modal dialog strings.
 
@@ -103,6 +113,7 @@ onboarding-data-sync-text2 = Synkronisera dina bokmärken, lösenord och mer öv
 onboarding-data-sync-button2 = Logga in på { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Var uppmärksam på dataintrång
 onboarding-firefox-monitor-text = { -monitor-brand-name } övervakar om din e-postadress har dykt upp i ett dataintrång och varnar dig om det visas i ett nytt intrång.
+onboarding-firefox-monitor-text2 = { -monitor-brand-name } övervakar om din e-postadress har förekommit i ett känt dataintrång och varnar dig om det dyker upp i ett nytt intrång.
 onboarding-firefox-monitor-button = Registrera dig för varningar
 onboarding-browse-privately-title = Surfa privat
 onboarding-browse-privately-text = Privat surfning rensar din sök- och surfhistorik för att hålla den hemlig från alla som använder din dator.

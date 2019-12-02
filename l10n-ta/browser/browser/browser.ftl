@@ -45,6 +45,26 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = நிரந்தர சேமிப்பகத்தில் தரவை வை
 urlbar-addons-notification-anchor =
     .tooltiptext = கூடுதல் இணைப்பு நிறுவல் செய்திப் பலகத்தை திற
+urlbar-geolocation-blocked =
+    .tooltiptext = உங்கள் இடத்தகவலை இந்த தளத்தில் முடக்கியுள்ளீர்கள்.
+urlbar-web-notifications-blocked =
+    .tooltiptext = அறிவிப்புகளை இந்த தளத்தில் முடக்கியுள்ளீர்கள்.
+urlbar-camera-blocked =
+    .tooltiptext = இந்த தளத்தில் நிழற்படக் கருவியை முடக்கியுள்ளீர்கள்.
+urlbar-microphone-blocked =
+    .tooltiptext = இத்தளத்தில் ஒலிவாங்கியை முடக்கியுள்ளீர்கள்.
+urlbar-screen-blocked =
+    .tooltiptext = இத்தளத்தில் திரைப் பகிர்வை முடக்கியுள்ளீர்கள்.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = நீங்கள் நிரந்தர சேமிப்பை இந்த தளத்தில் முடக்கியுள்ளீர்கள்.
+urlbar-popup-blocked =
+    .tooltiptext = இத்தளத்தில் பாப்பப் அறிவுறுத்தல்களை முடக்கியுள்ளீர்கள்.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = இத்தளத்தில் தானாக சத்தமாக இயங்கும் ஊடகத்தை நீங்கள் தடுத்துள்ளீர்கள்.
+urlbar-canvas-blocked =
+    .tooltiptext = திரை தரவு எடுப்பை இந்த தளத்தில் முடக்கியுள்ளீர்கள்.
+urlbar-midi-blocked =
+    .tooltiptext = இந்த தளத்தில் MIDI அணுகலை முடக்கியுள்ளீர்கள்.
 
 ## Page Action Context Menu
 
@@ -63,3 +83,18 @@ full-screen-autohide =
 full-screen-exit =
     .label = முழுத்திரை முறைமையை விட்டு வெளியேறு
     .accesskey = F
+
+## Search Engine selection buttons (one-offs)
+
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = தேடல் அமைவுகளை மாற்று
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = தேடல் அமைவுகளை மாற்று
+search-one-offs-context-open-new-tab =
+    .label = புதிய கீற்றில் தேடு
+    .accesskey = T
+search-one-offs-context-set-as-default =
+    .label = இயல்புநிலை தேடும் பொறியாக அமை
+    .accesskey = D

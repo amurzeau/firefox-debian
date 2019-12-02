@@ -21,6 +21,9 @@ onboarding-button-label-get-started = Bersiap
 onboarding-welcome-header = Selamat datang di { -brand-short-name }
 onboarding-welcome-body = Anda telah mendapatkan perambannya. <br/>Temui lini produk { -brand-product-name } lainnya.
 onboarding-welcome-learn-more = Pelajari lebih lanjut tentang manfaatnya.
+onboarding-welcome-modal-supercharge-body = Perkuat perlindungan privasi Anda.
+onboarding-welcome-modal-family-learn-more = Pelajari tentang rangkaian produk { -brand-product-name }.
+onboarding-welcome-form-header = Mulai di sini
 onboarding-join-form-header = Bergabunglah dengan { -brand-product-name }
 onboarding-join-form-body = Masukkan alamat surel Anda untuk memulai.
 onboarding-join-form-email =
@@ -28,10 +31,19 @@ onboarding-join-form-email =
 onboarding-join-form-email-error = Surel harus valid
 onboarding-join-form-legal = Dengan melanjutkan, berarti Anda setuju dengan <a data-l10n-name="terms">Ketentuan Layanan</a> dan <a data-l10n-name="privacy">Pernyataan Privasi</a>.
 onboarding-join-form-continue = Lanjut
+# This message is followed by a link using onboarding-join-form-signin ("Sign In") as text.
+onboarding-join-form-signin-label = Sudah memiliki akun?
+# Text for link to submit the sign in form
+onboarding-join-form-signin = Masuk
 onboarding-start-browsing-button-label = Mulai Menjelajah
 onboarding-cards-dismiss =
     .title = Tutup
     .aria-label = Tutup
+
+## Welcome full page string
+
+onboarding-fullpage-form-email =
+    .placeholder = Alamat surel Anda…
 
 ## Firefox Sync modal dialog strings.
 
@@ -64,6 +76,12 @@ onboarding-benefit-privacy-title = Privasi Sejati
 # make and do. We take less data. We keep it safe. And we make sure that we are
 # transparent about how we use it."
 onboarding-benefit-privacy-text = Segala yang kami lakukan menghormati Janji Data Pribadi kami: Ambil lebih sedikit. Jaga agar tetap aman. Tidak ada rahasia.
+onboarding-benefit-sync-title = { -sync-brand-short-name }
+onboarding-benefit-sync-text = Bawa markah, kata sandi, riwayat dan lainnya di mana pun Anda menggunakan { -brand-product-name }
+onboarding-benefit-monitor-title = { -monitor-brand-short-name }
+onboarding-benefit-monitor-text = Dapatkan pemberitahuan saat info pribadi Anda ada di dalam pembobolan data publik.
+onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
+onboarding-benefit-lockwise-text = Mengelola kata sandi yang dilindungi dan portabel.
 
 ## These strings belong to the individual onboarding messages.
 
@@ -92,6 +110,7 @@ onboarding-data-sync-text2 = Sinkronkan markah, kata sandi, dan lainnya di mana 
 onboarding-data-sync-button2 = Masuk ke { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Selalu Waspada akan Pembobolan Data
 onboarding-firefox-monitor-text = { -monitor-brand-name } memantau jika surel Anda telah muncul dalam pembobolan data dan memberitahu Anda jika muncul dalam pembobolan terbaru.
+onboarding-firefox-monitor-text2 = { -monitor-brand-name } memantau jika surel Anda telah muncul dalam pembobolan data publik dan memberitahu Anda jika muncul dalam pembobolan terbaru.
 onboarding-firefox-monitor-button = Daftar untuk Pemberitahuan
 onboarding-browse-privately-title = Menjelajah Secara Privat
 onboarding-browse-privately-text = Penjelajahan Pribadi menghapus pencarian dan riwayat penjelajahan Anda untuk merahasiakannya dari orang yang menggunakan komputer Anda.

@@ -150,9 +150,6 @@ legacy-extensions =
     .value = Askouezhioù diamzeret
 legacy-extensions-description = An askouezhioù-mañ ne glotont ket kenn gant skouerioù { -brand-short-name } ha diweredekaet int bet. <label data-l10n-name="legacy-learn-more">Gouzout hiroc'h a-zivout ar c'hemmoù en askouezhioù</label>
 private-browsing-description2 = { -brand-short-name } a cheñch an doare ma za an askouezhioù en-dro er merdeiñ prevez. An askouezhioù nevez a ouzhpennot da { -brand-short-name } na vezint ket lañset dre ziouer er prenestroù prevez. Ma ne aotreit ket anezho en arventennoù n'ez int ket en-dro er merdeiñ prevez, ha n'hallint ket haeziñ hoc'h oberiantizoù enlinenn aze. Graet hon eus kement-se evit derc'hel ho merdeiñ prevez evit gwir. <label data-l10n-name="private-browsing-learn-more">Deskit penaos merañ arventennoù an askouezhioù</label>
-extensions-view-discover =
-    .name = Kaout askouezhioù
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-recent-updates =
     .name = Hizivadurioù nevesañ
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -180,6 +177,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Gweredekaat
     .tooltiptext = Gweredekaat ar gwiriadur a-fet diogelroez hizivadur an askouezh
+extensions-warning-safe-mode = An holl askouezhioù zo bet diweredekaet gant ar mod diogelroez.
+extensions-warning-check-compatibility = Gwiriañ keverlec'hded an askouezhioù zo dizaotreet. Posupl eo deoc'h kaout askouezhioù nad int ket keverlec'h.
+extensions-warning-check-compatibility-button = Gweredekaat
+    .title = Gweredekaat ar gwiriadur evit keverlec'hded an askouezh
+extensions-warning-update-security = Diweredekaet eo ar gwiriañ evit hizivaat an askouezhioù. Marteze e viot lakaet en arvar gant hizivadurioù.
+extensions-warning-update-security-button = Gweredekaat
+    .title = Gweredekaat ar gwiriadur a-fet diogelroez hizivadur an askouezh
 
 ## Strings connected to add-on updates
 
@@ -189,12 +193,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Gwelout an hizivadurioù nevesañ
     .accesskey = v
+addon-updates-check-for-updates = Gwiriañ mar bez hizivadurioù d'ober
+    .accesskey = G
+addon-updates-view-updates = Gwelout an hizivadurioù nevesañ
+    .accesskey = v
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Hizivaat an askouezhioù gant un doare emgefreek
+    .accesskey = a
+addon-updates-update-addons-automatically = Hizivaat an askouezhioù gant un doare emgefreek
     .accesskey = a
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -208,6 +218,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = r
 extensions-updates-reset-updates-to-manual =
     .label = Adderaouekaat an holl askouezhioù a-benn ma vint hizivaet gant an dorn
+    .accesskey = r
+addon-updates-reset-updates-to-automatic = Adderaouekaat an holl askouezhioù a-benn ma vint hizivaet ent emgefreek
+    .accesskey = r
+addon-updates-reset-updates-to-manual = Adderaouekaat an holl askouezhioù a-benn ma vint hizivaet gant an dorn
     .accesskey = r
 
 ## Status messages displayed when updating add-ons
@@ -227,11 +241,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Staliañ Hizivadurioù
     .tooltiptext = Staliañ an hizivadennoù hegerz war ar roll-mañ
+addon-updates-updating = Hizivadur an askouezhioù
+addon-updates-installed = Hoc'h askouezhioù zo bet hizivaet.
+addon-updates-none-found = Hizivadenn ebet kavet
+addon-updates-manual-updates-found = Gwelout an hizivadurioù hegerz
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Staliañ askouezhioù diouzh ar restr...
+    .accesskey = i
+addon-install-from-file-dialog-title = Diuzit an askouezh da vezañ staliet
+addon-install-from-file-filter-name = Askouezhioù
+addon-open-about-debugging = Diveugañ an askouezhioù
+    .accesskey = v
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Merañ ar berradennoù askouezhioù
+    .accesskey = b
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Merañ ar berradennoù askouezhioù
     .accesskey = b
 shortcuts-no-addons = N'ho peus askouezh ebet gweredekaet.
 shortcuts-no-commands = An askouezhioù da-heul n'ho deus ket a verradenn:
@@ -295,3 +325,17 @@ addon-detail-reviews-link =
 
 ## Pending uninstall message bar
 
+
+## Page headings
+
+extension-heading = Merañ hoc'h askouezhioù
+theme-heading = Merañ ho neuzioù
+plugin-heading = Merañ hoc'h enlugelladoù
+dictionary-heading = Merañ ho keriaduioù
+locale-heading = Merañ ho yezhoù
+discover-heading = Personelait ho { -brand-short-name }
+shortcuts-heading = Merañ berradennoù an askouezhioù
+theme-heading-search-label = Kaout muioc'h a neuzioù
+extension-heading-search-label = Kavout muioc'h a askouezhioù
+addons-heading-search-input =
+    .placeholder = Klask war addons.mozilla.org

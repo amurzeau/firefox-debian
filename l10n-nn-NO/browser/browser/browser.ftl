@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Lagre data i vedvarande lagring
 urlbar-addons-notification-anchor =
     .tooltiptext = Opne meldingspanel for tileggsinstallasjon
+urlbar-tip-help-icon =
+    .title = Få hjelp
+urlbar-geolocation-blocked =
+    .tooltiptext = Du har blokkert plasseringsinformasjon for denne nettstaden.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Du har blokkert meldingar for denne nettstaden.
+urlbar-camera-blocked =
+    .tooltiptext = Du har blokkert kameraet for denne nettstaden.
+urlbar-microphone-blocked =
+    .tooltiptext = Du har blokkert mikrofonen for denne nettstaden.
+urlbar-screen-blocked =
+    .tooltiptext = Du har blokkert denne nettstaden frå å dele skjermen din.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Du har blokkert vedvarande lagring for denne nettsida.
+urlbar-popup-blocked =
+    .tooltiptext = Du har blokkert sprettoppvindauge for denne nettstaden.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Du har blokkert automatisk avspeling av media med lyd på denne nettsida.
+urlbar-canvas-blocked =
+    .tooltiptext = Du har blokkert canvas-datauthenting for denne nettstaden.
+urlbar-midi-blocked =
+    .tooltiptext = Du har blokkert MIDI-tilgang for denne nettsida.
+urlbar-install-blocked =
+    .tooltiptext = Du har blokkert installasjon av utvidingar for denne nettstaden.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Avslutt fullskjermmodus
     .accesskey = v
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Denne gongen, søk med:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Endre søkjeinnstillingar
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Endre søkjeinnstillingar
+search-one-offs-context-open-new-tab =
+    .label = Søk i ny fane
+    .accesskey = ø
+search-one-offs-context-set-as-default =
+    .label = Bruk som standard søkjemotor
+    .accesskey = B
+search-one-offs-context-set-as-default-private =
+    .label = Vel som standard søkjemotor for private vindauge
+    .accesskey = p

@@ -74,16 +74,19 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = Chwilio am eich mewngofnodi wedi'u cadw? Gosodwch { -sync-brand-short-name }.
+about-logins-login-intro-heading-logged-in = Heb ganfod mewngofnodion wedi'u cydweddu.
 login-intro-description = Os gwnaethoch gadw eich mewngofnodion i { -brand-product-name } ar ddyfais wahanol, dyma sut i'w cael yma:
 login-intro-instruction-fxa = Creu neu fewngofnodi i'ch { -fxaccount-brand-name } ar y ddyfais lle mae'ch mewngofnodion yn cael eu cadw
 login-intro-instruction-fxa-settings = Sicrhewch eich bod wedi dewis y blwch gwirio Mewngofnodion yng Ngosodiadau { -sync-brand-short-name }
 about-logins-intro-instruction-help = Ewch i <a data-l10n-name="help-link"> Cefnogaeth { -lockwise-brand-short-name }</a> i gael rhagor o gymorth
+about-logins-intro-import = Os yw eich mewngofnodion yn cael eu cadw mewn porwr arall, gallwch <a data-l10n-name="import-link">eu mewnforio i { -lockwise-brand-short-name }</a>
 
 ## Login
 
 login-item-new-login-title = Creu Mewngofnod Newydd
 login-item-edit-button = Golygu
 login-item-delete-button = Dileu
+about-logins-login-item-remove-button = Tynnu
 login-item-origin-label = Cyfeiriad Gwefan
 login-item-origin =
     .placeholder = https://www.example.com
@@ -113,11 +116,8 @@ master-password-reload-button =
     .label = Mewngofnodi
     .accesskey = M
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = Diddymu
-confirmation-dialog-dismiss-button =
-    .title = Diddymu
 enable-password-sync-notification-message =
     { PLATFORM() ->
         [windows] Eisiau eich mewngofnodion ym mhobman rydych chi'n defnyddio { -brand-product-name }? Ewch i Ddewisiadau { -sync-brand-short-name } a dewiswch y blwch gwirio Mewngofnodi.
@@ -131,8 +131,19 @@ enable-password-sync-preferences-button =
         }
     .accesskey = E
 confirm-delete-dialog-title = Dileu'r mewngofnod hwn?
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = Peidiwch gofyn i mi eto
+    .accesskey = g
+
+## Dialogs
+
+confirmation-dialog-cancel-button = Diddymu
+confirmation-dialog-dismiss-button =
+    .title = Diddymu
+about-logins-confirm-remove-dialog-title = Tynnu'r mewngofnod?
 confirm-delete-dialog-message = Nid oes modd dadwneud y weithred hon.
 confirm-delete-dialog-confirm-button = Dileu
+about-logins-confirm-remove-dialog-confirm-button = Tynnu
 confirm-discard-changes-dialog-title = Hepgor newidiadau heb eu cadw?
 confirm-discard-changes-dialog-message = Bydd yr holl newidiadau sydd heb eu cadw'n cael eu colli.
 confirm-discard-changes-dialog-confirm-button = Dileu

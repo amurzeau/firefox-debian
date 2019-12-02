@@ -38,7 +38,7 @@ menu-file-save-page =
     .label = Зберегти як…
     .accesskey = З
 menu-file-email-link =
-    .label = Переслати посилання…
+    .label = Надіслати посилання е-поштою…
     .accesskey = с
 menu-file-print-setup =
     .label = Параметри сторінки…
@@ -153,7 +153,7 @@ menu-view-full-screen =
     .label = На весь екран
     .accesskey = е
 
-
+##
 
 menu-view-show-all-tabs =
     .label = Показати всі вкладки
@@ -290,3 +290,6 @@ menu-help-safe-mode-with-addons =
 menu-help-report-deceptive-site =
     .label = Повідомити про шахрайський сайт…
     .accesskey = ш
+menu-help-not-deceptive =
+    .label = Це не шахрайський сайт…
+    .accesskey = н

@@ -83,6 +83,21 @@ newtab-menu-delete-history = Stizzar da la cronologia
 newtab-menu-save-to-pocket = Memorisar en { -pocket-brand-name }
 newtab-menu-delete-pocket = Stizzar da { -pocket-brand-name }
 newtab-menu-archive-pocket = Archivar en { -pocket-brand-name }
+newtab-menu-show-privacy-info = Noss sponsurs & tia sfera privata
+
+## Message displayed in a modal window to explain privacy and provide context for sponsored content.
+
+newtab-privacy-modal-button-done = Finì
+newtab-privacy-modal-header = Tia sfera privata è impurtanta.
+newtab-privacy-modal-paragraph =
+    Ultra dad istorgias captivantas, ta mussain nus era cuntegn relevant, 
+    curà cun premura da sponsurs distinguids. Nus garantin che tias datas
+    da navigaziun na bandunan mai tia copia persunala da { -brand-product-name }  —
+    nus n'avain betg access a questas datas e noss sponsurs n'era betg.
+newtab-privacy-modal-link = Ve a savair co la protecziun da datas funcziuna sin la pagina Nov tab
+
+
+
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = Allontanar il segnapagina
 # Bookmark is a verb here.

@@ -14,6 +14,11 @@ pref-page =
             [windows] Dibarzhioù
            *[other] Gwellvezioù
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Dibarzhioù
+       *[other] Gwellvezioù
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -316,7 +321,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Endalc'had Digital Rights Management (DRM)
 play-drm-content =
@@ -466,7 +471,6 @@ choose-bookmark =
 
 home-prefs-content-header = Endalc'had Degemer Firefox
 home-prefs-content-description = Dibabit peseurt endalc'had a fell deoc'h kaout war ho skramm Firefox Degemer.
-home-prefs-content-discovery-description = Gant ann dizoloadenn endalc'hadoù e Firefox Home e c'hallit dizoloiñ pennadoù a berzhded uhel eus pep lec'h er web.
 home-prefs-search-header =
     .label = Klask web
 home-prefs-topsites-header =
@@ -517,6 +521,7 @@ search-bar-shown =
     .label = Ouzhpennañ ar varrenn glask er varrenn ostilhoù
 search-engine-default-header = Keflusker enklask dre ziouer
 search-engine-default-desc = Dibab al lusker klask dre ziouer da arverañ er varrenn chomlec'hioù hag er varrenn glask.
+search-suggestions-header = Kaout alioù
 search-suggestions-option =
     .label = Kinnig alioù enklask
     .accesskey = a
@@ -655,7 +660,6 @@ sync-choose-what-to-sync-dialog =
     .buttonaccesskeyaccept = E
     .buttonlabelextra2 = Digennaskañ...
     .buttonaccesskeyextra2 = D
-sync-choose-heading = Dibabit petra goubredañ war ho kont evit an trevnadoù a ra gant { -sync-brand-short-name }:
 sync-engine-bookmarks =
     .label = Sinedoù
     .accesskey = S
@@ -718,6 +722,9 @@ sync-fxa-privacy-notice = Evezhiadennoù a-fet buhez prevez
 privacy-header = Prevezted ar merdeer
 
 ## Privacy Section - Forms
+
+
+## Privacy Section - Logins and Passwords
 
 logins-header = Titouroù kennaskañ
 forms-ask-to-save-logins =
@@ -887,7 +894,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Personelaet
     .accesskey = P
 
-
+##
 
 content-blocking-etp-standard-desc = Kempouez etre gwarez ha digonusted. Ar pajennoù a gargo en un doare ordinal.
 content-blocking-etp-strict-desc = Gwarez kreñvoc'h, met gallout a ra lakaat lec'hiennoù 'zo da derriñ.

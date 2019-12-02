@@ -33,6 +33,7 @@ policy-DisableFirefoxStudies = Sewḥel aselkem n tezrawin n { -brand-short-name
 policy-DisableForgetButton = Sewḥel anekcum ɣer tqeffalt n usfaḍ n isefka.
 policy-DisableFormHistory = Ur ḥerrez ara amazray n unadi d tferkit.
 policy-DisableMasterPasswordCreation = Ma irmed, awal uffir agejdan ur yezmir ara ad yettwarnu.
+policy-DisablePasswordReveal = Ur ttaǧǧa ara awalen uffiren ad d-banen deg yinekcam yettwaskelsen.
 policy-DisablePocket = Sens tamahilt n usekles n isebtar web di Pocket.
 policy-DisablePrivateBrowsing = Sens tunigin tusligt.
 policy-DisableProfileImport = Ad yessens taladna n wumuɣ yettaǧan akter n yisefka seg iminig-nniḍen.
@@ -61,6 +62,7 @@ policy-HardwareAcceleration = Ma ur yelli d ameɣtu, sens tasɣiwelt n warrum.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Sbadu akked sewḥel ma tebɣiḍ asebter agejdan.
 policy-InstallAddonsPermission = Sireg asebded n izegrar di kra n ismal web.
+policy-LegacyProfiles = Sens tamahilt i ihettmen aseqdec n umaɣnu yemgaraden i yal asebeddi.
 policy-LocalFileLinks = Sireg ismal usdiden i useqdec n yiseɣqan ɣer yifuyla idiganen.
 policy-NetworkPrediction = Ad yeǧǧ neɣ ad yegdel tifin n yiẓeḍwa (taɣuri tuzwirt DNS)
 policy-NewTabPage = Ad yermed neɣ ad yessens asebter agejdan n yiccer amaynut.

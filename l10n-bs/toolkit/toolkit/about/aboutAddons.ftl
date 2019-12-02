@@ -121,9 +121,6 @@ legacy-warning-show-legacy = Prikaže zastarjele ekstenzije
 legacy-extensions =
     .value = Zastarjele ekstenzije
 legacy-extensions-description = Ove ekstenzije ne zadovoljavaju trenutne { -brand-short-name } standarde i stoga su deaktivirane. <label data-l10n-name="legacy-learn-more">Saznajte više o promjenama na add-onima</label>
-extensions-view-discover =
-    .name = Dobavi Add-one
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-recent-updates =
     .name = Nedavne nadogradnje
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -151,6 +148,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Omogući
     .tooltiptext = Omogući provjeravanje sigurnosti nadogradnje add-ona
+extensions-warning-safe-mode = Svi add-oni su onemogućeni od strane sigurnog režima.
+extensions-warning-check-compatibility = Provjera kompatibilnosti add-ona je onemogućena. Možda imate nekompatibilnih add-ona.
+extensions-warning-check-compatibility-button = Omogući
+    .title = Omogući provjeravanje kompatibilnosti add-ona
+extensions-warning-update-security = Sigurnosna provjera nadogradnje za add-one je onemogućena. Možete biti kompromitovani putem nadogradnje.
+extensions-warning-update-security-button = Omogući
+    .title = Omogući provjeravanje sigurnosti nadogradnje add-ona
 
 ## Strings connected to add-on updates
 
@@ -160,12 +164,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Prikaži nedavne nadogradnje
     .accesskey = v
+addon-updates-check-for-updates = Provjeri za nadogradnje
+    .accesskey = P
+addon-updates-view-updates = Prikaži nedavne nadogradnje
+    .accesskey = v
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Automatski nadograđuj add-one
+    .accesskey = A
+addon-updates-update-addons-automatically = Automatski nadograđuj add-one
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -179,6 +189,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = r
 extensions-updates-reset-updates-to-manual =
     .label = Postavi sve add-one da se ručno nadograđuju
+    .accesskey = r
+addon-updates-reset-updates-to-automatic = Postavi sve add-one da se automatski nadograđuju
+    .accesskey = r
+addon-updates-reset-updates-to-manual = Postavi sve add-one da se ručno nadograđuju
     .accesskey = r
 
 ## Status messages displayed when updating add-ons
@@ -198,3 +212,31 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Nadogradi
     .tooltiptext = Instaliraj dostupne nadogradnje na ovoj listi
+addon-updates-updating = Nadograđujem add-one
+addon-updates-installed = Vaši add-oni su nadograđeni.
+addon-updates-none-found = Nijedna nadogradnja nije pronađena
+addon-updates-manual-updates-found = Prikaži dostupne nadogradnje
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Instaliraj Add-on iz fajla…
+    .accesskey = I
+addon-install-from-file-dialog-title = Izaberite add-on za instalaciju
+addon-install-from-file-filter-name = Add-oni
+addon-open-about-debugging = Debagiranje add-ona
+    .accesskey = b
+
+## Extension shortcut management
+
+
+## Recommended add-ons page
+
+
+## Add-on actions
+
+
+## Pending uninstall message bar
+
+
+## Page headings
+

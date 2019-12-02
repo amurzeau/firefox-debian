@@ -14,6 +14,11 @@ pref-page =
             [windows] 选项
            *[other] 首选项
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] 选项
+       *[other] 首选项
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -278,6 +283,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = 使用 { $plugin-name } （在 { -brand-short-name } 中）
@@ -453,7 +462,6 @@ choose-bookmark =
 
 home-prefs-content-header = Firefox 主页内容
 home-prefs-content-description = 选择要在您的 Firefox 主页上显示的版块。
-home-prefs-content-discovery-description = Firefox 主页中的“内容发现”可助您发现网络上的高品质、有价值的文章。
 home-prefs-search-header =
     .label = 网络搜索
 home-prefs-topsites-header =
@@ -497,7 +505,8 @@ search-bar-shown =
     .label = 添加搜索栏到工具栏
 search-engine-default-header = 默认搜索引擎
 search-engine-default-desc = 选择在地址栏和搜索栏中搜索时默认使用的搜索引擎。
-search-engine-default-private-desc = 选择在隐私窗口中默认使用的搜索引擎。
+search-engine-default-desc-2 = 这是地址栏和搜索栏中的默认搜索引擎，您可以随时切换。
+search-engine-default-private-desc-2 = 为隐私窗口选择不同的默认搜索引擎
 search-separate-default-engine =
     .label = 在隐私窗口中使用此搜索引擎
     .accesskey = U
@@ -516,6 +525,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = 在地址栏显示的结果中，将搜索建议显示在浏览历史上方
+search-show-suggestions-private-windows =
+    .label = 在隐私窗口中显示搜索建议
 suggestions-addressbar-settings = 更改浏览记录、书签、标签页建议的首选项
 search-suggestions-cant-show = 由于您已经设置 { -brand-short-name } 不要记住浏览历史，地址栏中将不会显示搜索建议。
 search-one-click-header = 快捷搜索引擎列表
@@ -565,6 +576,9 @@ sync-signedout-account-create = 没有账户吗？注册一个吧
 sync-signedout-account-signin =
     .label = 登录…
     .accesskey = I
+sync-signedout-account-signin2 =
+    .label = 登录{ -sync-brand-short-name }服务…
+    .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -583,7 +597,7 @@ sync-mobile-promo = 在 <img data-l10n-name="android-icon"/> <a data-l10n-name="
 sync-profile-picture =
     .tooltiptext = 更改头像
 sync-disconnect =
-    .label = 断开连接…
+    .label = 解绑…
     .accesskey = D
 sync-sign-out =
     .label = 退出登录…
@@ -591,7 +605,7 @@ sync-sign-out =
 sync-manage-account = 管理账户
     .accesskey = o
 sync-signedin-unverified = { $email } 未验证。
-sync-signedin-login-failure = 请登录以重新连接 { $email }
+sync-signedin-login-failure = 请登录以重新绑定 { $email }
 sync-resend-verification =
     .label = 重发验证邮件
     .accesskey = d
@@ -606,8 +620,8 @@ sync-signedin-settings-desc = 选择 { -brand-short-name } 要在您的设备间
 
 ## Sync section - enabling or disabling sync.
 
-prefs-syncing-on = 同步：开
-prefs-syncing-off = 同步：关
+prefs-syncing-on = 同步：开启
+prefs-syncing-off = 同步：关闭
 prefs-sync-setup =
     .label = 设置{ -sync-brand-short-name }
     .accesskey = S
@@ -643,7 +657,7 @@ sync-choose-what-to-sync-dialog =
     .style = width: 36em; min-height: 35em;
     .buttonlabelaccept = 保存更改
     .buttonaccesskeyaccept = S
-    .buttonlabelextra2 = 断开连接…
+    .buttonlabelextra2 = 解绑…
     .buttonaccesskeyextra2 = D
 sync-engine-bookmarks =
     .label = 书签
@@ -696,7 +710,7 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = 保存
     .accesskey = v
-sync-connect-another-device = 连接其他设备
+sync-connect-another-device = 绑定其他设备
 sync-manage-devices = 管理设备
 sync-fxa-begin-pairing = 配对设备
 sync-tos-link = 服务条款
@@ -708,7 +722,11 @@ privacy-header = 浏览器隐私
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = 登录信息与密码
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = 向您询问是否保存网站的登录名和密码
     .accesskey = r
@@ -722,6 +740,7 @@ forms-breach-alerts =
     .label = 显示有关网站密码外泄的提醒
     .accesskey = b
 forms-breach-alerts-learn-more-link = 详细了解
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = 自动填写登录名和密码
     .accesskey = i

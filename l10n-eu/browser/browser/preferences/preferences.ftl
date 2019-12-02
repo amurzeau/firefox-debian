@@ -14,6 +14,11 @@ pref-page =
             [windows] Aukerak
            *[other] Hobespenak
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Aukerak
+       *[other] Hobespenak
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -282,6 +287,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Erabili { $plugin-name } ({ -brand-short-name }(e)n)
@@ -307,7 +316,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = DRM edukia
 play-drm-content =
@@ -457,7 +466,6 @@ choose-bookmark =
 
 home-prefs-content-header = Firefoxen hasiera-orriko edukia
 home-prefs-content-description = Aukeratu zein eduki nahi duzun Firefoxen hasiera-orriko pantailan.
-home-prefs-content-discovery-description = Firefoxen hasierako edukien aurkikuntzaren bidez kalitate altuko artikulu esanguratsuak aurki ditzakezu webean.
 home-prefs-search-header =
     .label = Web bilaketa
 home-prefs-topsites-header =
@@ -505,6 +513,13 @@ search-bar-shown =
     .label = Gehitu bilaketa-barra tresna-barran
 search-engine-default-header = Bilaketa-motor lehenetsia
 search-engine-default-desc = Aukeratu helbide- eta bilaketa-barran erabili beharreko bilaketa-motor lehenetsia.
+search-engine-default-desc-2 = Zure bilaketa-motor lehenetsia da hau, bai helbide- nahiz bilaketa-barran. Edozein unetan alda dezakezu.
+search-engine-default-private-desc-2 = Aukeratu leiho pribatuetarako beste bilaketa-motor lehenetsi bat
+search-separate-default-engine =
+    .label = Erabili bilaketa-motor hau leiho pribatuetan
+    .accesskey = r
+search-suggestions-header = Bilaketa-iradokizunak
+search-suggestions-desc = Aukeratu nola agertzen diren bilaketa-motorren iradokizunak.
 search-suggestions-option =
     .label = Hornitu bilaketa-iradokizunak
     .accesskey = b
@@ -518,6 +533,9 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Helbide-barrako emaitzetan, erakutsi bilaketa-gomendioak nabigatze-historiaren aurretik
+search-show-suggestions-private-windows =
+    .label = Erakutsi bilaketa-iradokizunak leiho pribatuetan
+suggestions-addressbar-settings = Aldatu nabigatze-historia, laster-marka eta fitxen iradokizunen hobespenak
 search-suggestions-cant-show = Bilaketa-iradokizunak ez dira helbide-barran erakutsiko { -brand-short-name }(e)k historia inoiz ez gogoratzeko konfiguratu duzulako.
 search-one-click-header = Klik bakarreko bilaketa-motorrak
 search-one-click-desc = Aukeratu gako-hitz bat idazten hastean helbide- eta bilaketa-barren azpian agertzen diren ordezko bilaketa-motorrak.
@@ -586,6 +604,9 @@ sync-profile-picture =
 sync-disconnect =
     .label = Deskonektatu…
     .accesskey = D
+sync-sign-out =
+    .label = Amaitu saioa…
+    .accesskey = A
 sync-manage-account = Kudeatu kontua
     .accesskey = o
 sync-signedin-unverified = { $email } ez dago egiaztatuta.
@@ -604,6 +625,12 @@ sync-signedin-settings-desc = Aukeratu zer sinkronizatuko den { -brand-short-nam
 
 ## Sync section - enabling or disabling sync.
 
+prefs-syncing-on = Sinkronizazioa: aktibo
+prefs-syncing-off = Sinkronizazioa: inaktibo
+prefs-sync-setup =
+    .label = Konfiguratu { -sync-brand-short-name }…
+    .accesskey = K
+prefs-sync-offer-setup-label = Sinkronizatu laster-markak, historia, fitxak, pasahitzak, gehigarriak eta hobespenak zure gailu guztien artean.
 prefs-sync-now =
     .labelnotsyncing = Sinkronizatu orain
     .accesskeynotsyncing = S
@@ -611,6 +638,7 @@ prefs-sync-now =
 
 ## The list of things currently syncing.
 
+sync-currently-syncing-heading = Une honetan ondorengo elementuak sinkronizatzen dira:
 sync-currently-syncing-bookmarks = Laster-markak
 sync-currently-syncing-history = Historia
 sync-currently-syncing-tabs = Irekitako fitxak
@@ -629,6 +657,13 @@ sync-change-options =
 
 ## The "Choose what to sync" dialog.
 
+sync-choose-what-to-sync-dialog =
+    .title = Aukeratu zer sinkronizatu
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Gorde aldaketak
+    .buttonaccesskeyaccept = G
+    .buttonlabelextra2 = Deskonektatu…
+    .buttonaccesskeyextra2 = D
 sync-engine-bookmarks =
     .label = Laster-markak
     .accesskey = m
@@ -642,6 +677,10 @@ sync-engine-tabs =
 sync-engine-logins =
     .label = Saio-hasierak
     .tooltiptext = Gorde dituzun erabiltzaile-izen eta pasahitzak
+    .accesskey = S
+sync-engine-logins-passwords =
+    .label = Saio-hasierak eta pasahitzak
+    .tooltiptext = Gorde dituzun saio-hasiera eta pasahitzak
     .accesskey = S
 sync-engine-addresses =
     .label = Helbideak
@@ -688,6 +727,9 @@ privacy-header = Nabigatzailearen pribatutasuna
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Saio-hasierak eta pasahitzak
 forms-ask-to-save-logins =
     .label = Galdetu webguneetako saio-hasierak eta pasahitzak gordetzeko
@@ -698,6 +740,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Iradoki eta sortu pasahitz sendoak
     .accesskey = d
+forms-breach-alerts =
+    .label = Erakutsi datu-urratzeak izan dituzten webguneetako pasahitzei buruzko abisuak
+    .accesskey = E
 forms-breach-alerts-learn-more-link = Argibide gehiago
 forms-fill-logins-and-passwords =
     .label = Automatikoki bete erabiltzaile-izen eta pasahitzak
@@ -853,7 +898,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Pertsonalizatua
     .accesskey = s
 
-
+##
 
 content-blocking-etp-standard-desc = Babeserako eta errendimendurako orekatua. Orriak ohi bezala kargatuko dira.
 content-blocking-etp-strict-desc = Babes sendoagoa baina zenbait gune edo eduki apurtzea eragin lezake.

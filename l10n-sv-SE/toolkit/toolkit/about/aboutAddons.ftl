@@ -182,6 +182,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Aktivera
     .tooltiptext = Aktiverar säkerhetskontroll av tilläggsuppdateringar
+extensions-warning-safe-mode = Alla tillägg är inaktiverade i felsäkert läge.
+extensions-warning-check-compatibility = Kompatibilitetskontroll av tillägg är inaktiverat. Du kan ha inkompatibla tillägg.
+extensions-warning-check-compatibility-button = Aktivera
+    .title = Aktiverar kompatibilitetskontroll av tillägg
+extensions-warning-update-security = Säkerhetskontroll av tilläggsuppdateringar är inaktiverad. Du är sårbar för skadliga uppdateringar.
+extensions-warning-update-security-button = Aktivera
+    .title = Aktiverar säkerhetskontroll av tilläggsuppdateringar
 
 ## Strings connected to add-on updates
 
@@ -191,12 +198,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Visa nyligen uppdaterade
     .accesskey = V
+addon-updates-check-for-updates = Sök efter uppdateringar
+    .accesskey = u
+addon-updates-view-updates = Visa nyligen uppdaterade
+    .accesskey = V
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Installera uppdateringar automatiskt
+    .accesskey = t
+addon-updates-update-addons-automatically = Installera uppdateringar automatiskt
     .accesskey = t
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -211,6 +224,10 @@ extensions-updates-reset-updates-to-automatic =
 extensions-updates-reset-updates-to-manual =
     .label = Ställ om alla tillägg till manuell uppdatering
     .accesskey = S
+addon-updates-reset-updates-to-automatic = Återställ alla tillägg till automatisk uppdatering
+    .accesskey = t
+addon-updates-reset-updates-to-manual = Återställ alla tillägg till manuell uppdatering
+    .accesskey = t
 
 ## Status messages displayed when updating add-ons
 
@@ -229,11 +246,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Installera uppdateringar
     .tooltiptext = Installerar tillgängliga uppdateringar från listan
+addon-updates-updating = Uppdaterar tillägg
+addon-updates-installed = Dina tillägg har uppdaterats.
+addon-updates-none-found = Inga uppdateringar hittades
+addon-updates-manual-updates-found = Se tillgängliga uppdateringar
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Installera tillägg från fil…
+    .accesskey = n
+addon-install-from-file-dialog-title = Välj ett tillägg att installera
+addon-install-from-file-filter-name = Tillägg
+addon-open-about-debugging = Felsök tillägg
+    .accesskey = F
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Hantera genvägar för tillägg
+    .accesskey = g
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Hantera genvägar för tillägg
     .accesskey = g
 shortcuts-no-addons = Du har inga tillägg aktiverade.
 shortcuts-no-commands = Följande tillägg har inte genvägar:
@@ -306,6 +339,8 @@ addon-options-button =
 
 report-addon-button = Rapportera
 remove-addon-button = Ta bort
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Kan inte tas bort <a data-l10n-name="link">Varför?</a>
 disable-addon-button = Inaktivera
 enable-addon-button = Aktivera
 expand-addon-button = Fler alternativ
@@ -399,3 +434,18 @@ recommended-themes-heading = Rekommenderade teman
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Känner du dig kreativ? <a data-l10n-name="link">Skapa ditt egna tema med Firefox Color.</a>
+
+## Page headings
+
+extension-heading = Hantera dina tillägg
+theme-heading = Hantera dina teman
+plugin-heading = Hantera dina insticksmoduler
+dictionary-heading = Hantera dina ordlistor
+locale-heading = Hantera dina språk
+updates-heading = Hantera dina uppdateringar
+discover-heading = Anpassa { -brand-short-name }
+shortcuts-heading = Hantera genvägar för tillägg
+theme-heading-search-label = Hitta fler teman
+extension-heading-search-label = Hitta fler tillägg
+addons-heading-search-input =
+    .placeholder = Sök på addons.mozilla.org

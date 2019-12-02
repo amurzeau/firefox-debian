@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = nga { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Rekomandim
+cfr-doorhanger-extension-notification2 = Rekomandim
+    .tooltiptext = Rekomandim zgjerimi
+    .a11y-announcement = Ka gati një rekomandim zgjerimi
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Rekomandim
+    .tooltiptext = Rekomandim veçorie
+    .a11y-announcement = Ka gati një rekomandim veçorie
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -78,6 +86,9 @@ cfr-protections-panel-link-text = Mësoni më tepër
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Veçori e re:
 cfr-whatsnew-button =
     .label = Ç’ka të Re
     .tooltiptext = Ç’ka të Re
@@ -140,9 +151,24 @@ cfr-doorhanger-socialtracking-ok-button = Shihni Mbrojtje
     .accesskey = o
 cfr-doorhanger-socialtracking-close-button = Mbylle
     .accesskey = M
+cfr-doorhanger-socialtracking-dont-show-again = Mos më shfaq më mesazhe të tillë
+    .accesskey = M
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } ndali gjurmimin tuaj këtu prej një rrjeti shoqëror
 cfr-doorhanger-socialtracking-description = Privatësia juaj ka vlerë. { -brand-short-name } tanimë bllokon gjurmues prej rrjetesh të zakonshëm mediash shoqërore, duke kufizuar sa të dhëna mund të grumbullojnë rreth asaj çka bëni në internet.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } bllokoi në këtë faqe nëj krijuesh shenjash gishtash
 cfr-doorhanger-fingerprinters-description = Privatësia juaj ka vlerë. { -brand-short-name } tanimë bllokon krijues shenjash gishtash, të cilët grumbullojnë rreth pajisjes tuaj të dhëna të identifikueshme në mënyrë unike për t’ju gjurmuar.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } bllokoi në këtë faqe një nxjerrës kriptomonedhash
 cfr-doorhanger-cryptominers-description = Privatësia juaj ka vlerë. { -brand-short-name } tanimë bllokon nxjerrës kriptomonedhash, të cilët përdorin fuqinë e përllogaritjes së sistemit tuaj për të nxjerrë para dixhitale.
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+        [one] 	{ -brand-short-name } bllokoi mbi <b>{ $blockedCount }</b> gjurmues që prej { $date }!
+       *[other] 	{ -brand-short-name } bllokoi mbi <b>{ $blockedCount }</b> gjurmues që prej { $date }!
+    }
+cfr-doorhanger-milestone-ok-button = Shihini Krejt
+    .accesskey = S

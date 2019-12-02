@@ -86,13 +86,31 @@ manifest-item-icons = 图标
 manifest-loading = 正在载入清单文件…
 # Text displayed when the manifest has been successfully loaded
 manifest-loaded-ok = 清单文件加载完毕。
-# Text displayed when there has been an error while trying to load the manifest
+# Text displayed as a caption when there has been an error while trying to
+# load the manifest
 manifest-loaded-error = 载入清单文件时发生错误：
+# Text displayed as an error when there has been a Firefox DevTools error while
+# trying to load the manifest
+manifest-loaded-devtools-error = Firefox 开发者工具出错
 # Text displayed when the page has no manifest available
 manifest-non-existing = 未发现要查看的清单文件。
 # Text displayed when the page has a manifest embedded in a Data URL and
 # thus we cannot link to it.
 manifest-json-link-data-url = 清单文件嵌入在数据 URL 中。
+# Text displayed at manifest icons to label their purpose, as declared
+# in the manifest.
+manifest-icon-purpose = 目的：<code>{ $purpose }</code>
+# Text displayed as the alt attribute for <img> tags showing the icons in the
+# manifest.
+manifest-icon-img =
+    .alt = 图标
+# Text displayed as the title attribute for <img> tags showing the icons in the
+# manifest. `$sizes` is a user-dependent string that has been parsed as a
+# space-separated list of `<width>x<height>` sizes or the keyword `any`.
+manifest-icon-img-title = 图标尺寸：{ $sizes }
+# Text displayed as the title attribute for <img> tags showing the icons in the
+# manifest, in case there's no icon size specified by the user
+manifest-icon-img-title-no-sizes = 未指定图标大小
 # Sidebar navigation item for Manifest sidebar item section
 sidebar-item-manifest = 清单文件
     .alt = 清单文件图标

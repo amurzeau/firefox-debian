@@ -14,6 +14,11 @@ pref-page =
             [windows] Seçenekler
            *[other] Tercihler
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Seçenekler
+       *[other] Tercihler
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -282,6 +287,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } kullan ({ -brand-short-name } içinde)
@@ -307,7 +316,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Sayısal Hak Yönetimi (DRM) içerikleri
 play-drm-content =
@@ -457,7 +466,6 @@ choose-bookmark =
 
 home-prefs-content-header = Firefox giriş sayfası içeriği
 home-prefs-content-description = Firefox giriş sayfasında görmek istediğiniz içerikleri seçin.
-home-prefs-content-discovery-description = Firefox giriş sayfasındaki içerik keşfi özelliği, internetteki kaliteli ve ilginizi çekebilecek yazıları keşfetmenizi sağlar.
 home-prefs-search-header =
     .label = Web araması
 home-prefs-topsites-header =
@@ -505,7 +513,8 @@ search-bar-shown =
     .label = Araç çubuğuna arama çubuğunu ekle
 search-engine-default-header = Varsayılan arama motoru
 search-engine-default-desc = Adres çubuğunda ve arama çubuğunda kullanılacak varsayılan arama motorunu seçin.
-search-engine-default-private-desc = Gizli pencerelerde kullanılacak varsayılan arama motorunu seçin.
+search-engine-default-desc-2 = Bu, adres çubuğundaki ve arama çubuğundaki varsayılan arama motorunuzdur. İstediğiniz zaman değiştirebilirsiniz.
+search-engine-default-private-desc-2 = Yalnızca gizli pencerelerde kullanmak istediğiniz arama motorunu seçin
 search-separate-default-engine =
     .label = Gizli pencerelerde bu arama motorunu kullan
     .accesskey = G
@@ -524,6 +533,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Adres çubuğu sonuçlarında arama önerilerini gezinti geçmişinden önce göster
+search-show-suggestions-private-windows =
+    .label = Gizli pencerelerde arama önerilerini göster
 suggestions-addressbar-settings = Gezinti geçmişi, yer imleri ve sekme önerileri tercihlerini değiştirin
 search-suggestions-cant-show = { -brand-short-name } tarayıcısını geçmişi hatırlamayacak şekilde ayarladığınız için konum çubuğu sonuçlarında arama önerileri gösterilmeyecektir.
 search-one-click-header = Tek tıklamalı arama motorları
@@ -716,7 +727,11 @@ privacy-header = Tarayıcı gizliliği
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Hesaplar ve parolalar
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Sitelerdeki kullanıcı adı ve parolalarımı kaydetmeyi öner
     .accesskey = r
@@ -730,6 +745,7 @@ forms-breach-alerts =
     .label = Veri ihlaline uğrayan sitelerdeki parolalarla ilgili uyarı göster
     .accesskey = V
 forms-breach-alerts-learn-more-link = Daha fazla bilgi al
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Kullanıcı adı ve parolaları otomatik doldur
     .accesskey = ı
@@ -884,7 +900,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Özel
     .accesskey = Ö
 
-
+##
 
 content-blocking-etp-standard-desc = Dengeli koruma ve performans. Sayfalar normal şekilde yüklenir.
 content-blocking-etp-strict-desc = Daha güçlü koruma, ama bazı siteler ve içerikler düzgün çalışmayabilir.

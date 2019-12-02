@@ -45,6 +45,26 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Garda os datos en almacenamento persistente
 urlbar-addons-notification-anchor =
     .tooltiptext = Abre o panel da mensaxe de instalación do complemento
+urlbar-geolocation-blocked =
+    .tooltiptext = Bloqueou a información da localización para este sitio web.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Bloqueou as notificacións para este sitio web.
+urlbar-camera-blocked =
+    .tooltiptext = Bloqueou a cámara para este sitio web.
+urlbar-microphone-blocked =
+    .tooltiptext = Bloqueou o micrófono para este sitio web.
+urlbar-screen-blocked =
+    .tooltiptext = Impediu que este sitio web comparta a súa pantalla.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Bloqueou o almacenamento de datos persistentes para este sitio web.
+urlbar-popup-blocked =
+    .tooltiptext = Bloqueou as xanelas emerxentes para este sitio web.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Bloqueou a reprodución automática de medios con son para este sitio web.
+urlbar-canvas-blocked =
+    .tooltiptext = Bloqueou a extracción de datos de canvas para este sitio web.
+urlbar-midi-blocked =
+    .tooltiptext = Bloqueou o acceso MIDI para este sitio web.
 
 ## Page Action Context Menu
 
@@ -63,3 +83,18 @@ full-screen-autohide =
 full-screen-exit =
     .label = Saír do modo Pantalla completa
     .accesskey = c
+
+## Search Engine selection buttons (one-offs)
+
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Cambiar configuración da busca
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Cambiar configuración da busca
+search-one-offs-context-open-new-tab =
+    .label = Buscar nunha nova lapela
+    .accesskey = B
+search-one-offs-context-set-as-default =
+    .label = Estabelecer como buscador predeterminado
+    .accesskey = d

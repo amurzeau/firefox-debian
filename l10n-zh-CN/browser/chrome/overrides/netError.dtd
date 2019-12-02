@@ -146,6 +146,9 @@ was trying to connect. -->
 <!ENTITY cspBlocked.title "已依内容安全策略拦截">
 <!ENTITY cspBlocked.longDesc "<p>&brandShortName; 已依照该页面的内容安全策略阻止了它以这种方式载入。</p>">
 
+<!ENTITY xfoBlocked.title "因 X-Frame-Options 政策阻止">
+<!ENTITY xfoBlocked.longDesc "<p>&brandShortName; 已依照该页面的 X-Frame-Options 政策阻止了其在此上下文中的载入。</p>">
+
 <!ENTITY corruptedContentErrorv2.title "内容损坏错误">
 <!ENTITY corruptedContentErrorv2.longDesc "<p>由于检测到在数据传输过程中存在错误，无法显示您正要查看的页面。</p><ul><li>建议向此网站的管理员反馈这个问题。</li></ul>">
 
@@ -163,8 +166,8 @@ was trying to connect. -->
 <!ENTITY sslv3Used.longDesc2 "高级信息: SSL_ERROR_UNSUPPORTED_VERSION">
 
 <!ENTITY certerror.pagetitle2  "警告：面临潜在的安全风险">
-<!ENTITY certerror.sts.pagetitle  "未连接：潜在的安全问题">
-<!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'></span> 启用了被称为 HTTP 严格传输安全（HSTS）的安全策略，这意味着 &brandShortName; 只能安全地与其连接。您无法添加例外以访问此站点。">
+<!ENTITY certerror.sts.pagetitle  "未连接：有安全风险">
+<!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'></span> 启用了被称为 HTTP 严格传输安全（HSTS）的安全策略，&brandShortName; 只能与其建立安全连接。您无法为此网站添加例外，以访问此网站。">
 <!ENTITY certerror.copyToClipboard.label "复制文本到剪贴板">
 
 <!ENTITY inadequateSecurityError.title "您的连接不安全">

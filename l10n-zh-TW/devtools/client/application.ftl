@@ -50,7 +50,7 @@ serviceworker-worker-status = 狀態
 # be debugged and stopped.
 serviceworker-worker-status-running = 執行中
 # Service Worker status. A stopped service worker is registered but not currently active.
-serviceworker-worker-status-stopped = 已停止
+serviceworker-worker-status-stopped = 停止
 # Service Worker status. A registering service worker is not yet registered and cannot be
 # started or debugged.
 serviceworker-worker-status-registering = 註冊中
@@ -86,13 +86,31 @@ manifest-item-icons = 圖示
 manifest-loading = 正在載入 manifest…
 # Text displayed when the manifest has been successfully loaded
 manifest-loaded-ok = 已載入 manifest。
-# Text displayed when there has been an error while trying to load the manifest
+# Text displayed as a caption when there has been an error while trying to
+# load the manifest
 manifest-loaded-error = 載入 manifest 時發生錯誤:
+# Text displayed as an error when there has been a Firefox DevTools error while
+# trying to load the manifest
+manifest-loaded-devtools-error = Firefox DevTools 發生錯誤
 # Text displayed when the page has no manifest available
 manifest-non-existing = 沒有找到可以檢測的 manifest。
 # Text displayed when the page has a manifest embedded in a Data URL and
 # thus we cannot link to it.
 manifest-json-link-data-url = Manifest 嵌入於 Data URL 中。
+# Text displayed at manifest icons to label their purpose, as declared
+# in the manifest.
+manifest-icon-purpose = 目的: <code>{ $purpose }</code>
+# Text displayed as the alt attribute for <img> tags showing the icons in the
+# manifest.
+manifest-icon-img =
+    .alt = 圖示
+# Text displayed as the title attribute for <img> tags showing the icons in the
+# manifest. `$sizes` is a user-dependent string that has been parsed as a
+# space-separated list of `<width>x<height>` sizes or the keyword `any`.
+manifest-icon-img-title = 下列大小的圖示: { $sizes }
+# Text displayed as the title attribute for <img> tags showing the icons in the
+# manifest, in case there's no icon size specified by the user
+manifest-icon-img-title-no-sizes = 未指定大小的圖示
 # Sidebar navigation item for Manifest sidebar item section
 sidebar-item-manifest = Manifest
     .alt = Manifest 圖示

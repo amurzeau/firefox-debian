@@ -5,6 +5,18 @@
 
 ## App Menu
 
-appmenuitem-protection-report-title = Šćity priwatnosći
+appmenuitem-protection-report-title = Šćit priwatnosći
 appmenuitem-protection-report-tooltip =
     .tooltiptext = K wašej rozpšawje priwatnosći pśejś
+
+## Zoom Controls
+
+appmenuitem-zoom-enlarge =
+    .label = Pówětšyś
+appmenuitem-zoom-reduce =
+    .label = Pómjeńšyś
+
+## Firefox Account toolbar button and Sync panel in App menu.
+
+fxa-toolbar-sync-now =
+    .label = Něnto synchronizěrowaś

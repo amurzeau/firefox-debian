@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Захоўваць звесткі ў Сталым Сховішчы (Persistent Storage)
 urlbar-addons-notification-anchor =
     .tooltiptext = Адкрыць панэль паведамленняў аб усталяванні дадатка
+urlbar-tip-help-icon =
+    .title = Дапамога
+urlbar-geolocation-blocked =
+    .tooltiptext = Вы заблакавалі звесткі аб месцазнаходжанні для гэтага вэб-сайта.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Вы заблакавалі абвесткі з гэтага вэб-сайта.
+urlbar-camera-blocked =
+    .tooltiptext = Вы заблакавалі сваю камеру на гэтым вэб-сайце.
+urlbar-microphone-blocked =
+    .tooltiptext = Вы заблакавалі свой мікрафон на гэтым вэб-сайце.
+urlbar-screen-blocked =
+    .tooltiptext = Вы заблакавалі гэтаму вэб-сайту магчымасць бачыць ваш экран.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Вы заблакавалі захоўванне звестак для гэтага вэб-сайта.
+urlbar-popup-blocked =
+    .tooltiptext = Вы заблакавалі выплыўныя вокны для гэтага вэб-сайта.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Вы заблакавалі аўтапрайграванне медый з гукам на гэтым вэб-сайце.
+urlbar-canvas-blocked =
+    .tooltiptext = Вы заблакавалі выманне дадзеных canvas для гэтага вэб-сайта.
+urlbar-midi-blocked =
+    .tooltiptext = Вы заблакавалі MIDI доступ для гэтага вэб-сайта.
+urlbar-install-blocked =
+    .tooltiptext = Вы заблакавалі ўсталяванне дадаткаў з гэтага вэб-сайта.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Выйсці з поўнаэкраннага рэжыму
     .accesskey = В
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = На гэты раз шукайце ў:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Змяніць налады пошуку
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Змяніць налады пошуку
+search-one-offs-context-open-new-tab =
+    .label = Шукаць у новай картцы
+    .accesskey = к
+search-one-offs-context-set-as-default =
+    .label = Зрабіць прадвызначаным пашукавіком
+    .accesskey = п
+search-one-offs-context-set-as-default-private =
+    .label = Усталяваць як прадвызначаны пашукавік для прыватных акон
+    .accesskey = з

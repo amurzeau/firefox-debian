@@ -34,10 +34,22 @@ onboarding-join-form-email =
 onboarding-join-form-email-error = Inserisci un indirizzo email valido
 onboarding-join-form-legal = Proseguendo, accetti le <a data-l10n-name="terms">condizioni di utilizzo del servizio</a> e l’<a data-l10n-name="privacy">informativa sulla privacy</a>.
 onboarding-join-form-continue = Continua
+
+# This message is followed by a link using onboarding-join-form-signin ("Sign In") as text.
+onboarding-join-form-signin-label = Hai già un account?
+# Text for link to submit the sign in form
+onboarding-join-form-signin = Accedi
+
 onboarding-start-browsing-button-label = Inizia a navigare
 onboarding-cards-dismiss =
     .title = Rimuovi
     .aria-label = Rimuovi
+
+## Welcome full page string
+
+onboarding-fullpage-welcome-subheader = Esploriamo insieme tutto ciò che puoi fare.
+onboarding-fullpage-form-email =
+    .placeholder = Il tuo indirizzo email…
 
 ## Firefox Sync modal dialog strings.
 
@@ -100,6 +112,7 @@ onboarding-data-sync-text2 = Sincronizza segnalibri, password e molto altro in t
 onboarding-data-sync-button2 = Accedi a { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Tieni sotto controllo le violazioni di dati
 onboarding-firefox-monitor-text = { -monitor-brand-name } verifica se la tua email è stata coinvolta in una violazione di dati e ti avvisa se appare in una nuova violazione.
+onboarding-firefox-monitor-text2 = { -monitor-brand-name } verifica se la tua email è stata coinvolta in una violazione di dati conosciuta e ti avvisa se appare in una nuova violazione.
 onboarding-firefox-monitor-button = Iscriviti agli avvisi
 onboarding-browse-privately-title = Naviga in modo riservato
 onboarding-browse-privately-text = La navigazione anonima non conserva la cronologia di ricerca e navigazione, mantenendo le tue abitudini di navigazione al sicuro da chiunque altro utilizzi il tuo computer.
@@ -112,6 +125,7 @@ onboarding-mobile-phone-text = Scarica { -brand-product-name } per iOS e Android
 onboarding-mobile-phone-button = Scarica il browser mobile
 onboarding-send-tabs-title = Inviati una scheda
 onboarding-send-tabs-text = “Invia scheda” permette di condividere immediatamente pagine con altri dispositivi senza bisogno di usare copia e incolla, o lasciare il browser.
+onboarding-send-tabs-text2 = Condividi pagine in modo semplice con altri dispositivi senza bisogno di usare copia e incolla o lasciare il browser.
 onboarding-send-tabs-button = Inizia a utilizzare “Invia scheda”
 onboarding-pocket-anywhere-title = Leggi e ascolta ovunque ti trovi
 onboarding-pocket-anywhere-text2 = Salva i tuoi contenuti preferiti nell’app di { -pocket-brand-name }. Leggili, ascoltali o guardali quando ti fa più comodo, anche senza connessione a Internet.
@@ -119,9 +133,15 @@ onboarding-pocket-anywhere-button = Prova { -pocket-brand-name }
 onboarding-lockwise-passwords-title = Porta le tue password sempre con te
 onboarding-lockwise-passwords-text2 = Conserva al sicuro le password salvate e accedi facilmente ai tuoi account con { -lockwise-brand-name }.
 onboarding-lockwise-passwords-button2 = Scarica l’app
+onboarding-lockwise-strong-passwords-title = Genera e memorizza password complesse
+onboarding-lockwise-strong-passwords-text = Con { -lockwise-brand-name } puoi generare al volo password complesse e salvarle in un unico posto.
+onboarding-lockwise-strong-passwords-button = Gestisci le tue credenziali
 onboarding-facebook-container-title = Metti un limite a Facebook
 onboarding-facebook-container-text2 = { -facebook-container-brand-name } mantiene il tuo profilo separato da tutto il resto. In questo modo per Facebook diventerà più difficile mostrarti pubblicità mirate.
 onboarding-facebook-container-button = Aggiungi l’estensione
+onboarding-import-browser-settings-title = Importa segnalibri, password e altro ancora
+onboarding-import-browser-settings-text = Recupera facilmente i tuoi siti e le tue informazioni da Chrome e inizia subito a navigare.
+onboarding-import-browser-settings-button = Importa i dati da Chrome
 
 ## Message strings belonging to the Return to AMO flow
 

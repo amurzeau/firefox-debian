@@ -117,9 +117,6 @@ disabled-unsigned-description = { -brand-short-name } တွင် အသုံ�
 disabled-unsigned-learn-more = သင့်ကို အွန်လိုင်းတွင် အမြဲလုံခြုံစေရန် ကျွန်တော်တို့၏ အားထုတ်မှုများကို ပိုမို လေ့လာနိုင်ပါသည်။
 disabled-unsigned-devinfo = ဖန်တီးသူများသည် သူတို့၏ အတ်အွန်များ အတည်ပြုပြီးခြင်းကို လိုလားသည်။ ကျွန်တော်တို့၏<label data-l10n-name="learn-more">အသုံးပြုသူလက်စွဲကို ဖတ်ခြင်းဖြင့် ဆက်လက်ဆောင်ရွက်နိုင်သည်။</label>.
 plugin-deprecation-description = တစ်စုံတစ်ရာကို မတွေ့မိဘူးလား။ အချို့သောပလက်အင်များကို { -brand-short-name } က မထောက်ပံ့တော့ပါ။ <label data-l10n-name="learn-more">ပိုမိုလေ့လာရန်။</label>
-extensions-view-discover =
-    .name = အက်အွန်ရယူပါ
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-recent-updates =
     .name = လက်ရှိ အသစ်
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -147,6 +144,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = လုပ်ဆောင်နိုင်စေမည်။
     .tooltiptext = အက်အွန် အပ်ဒိပ် လုံခြုံရေး စစ်ဆေးခြင်းကို ဖွင့်ထားမယ်
+extensions-warning-safe-mode = လုံခြုံရေးအပြင်အဆင်အရအတ်အွန်အားလုံးအားပိတ်သိမ်းထားသည်။
+extensions-warning-check-compatibility = အတ်အွန် အဆင့်မှီမမှီ စစ်ဆေးသော လုပ်ဆောင်ချက် အား ပိတ်ထားသည်။ သင့်တွင် အသုံးမဝင်တော့သော မသစ်တော့သော အတ်အွန်များ ရှိနိုင်သည်။
+extensions-warning-check-compatibility-button = လုပ်ဆောင်နိုင်စေမည်။
+    .title = အက်အွန် ကိုက်ညီမှု စစ်ဆေးခြင်းကို ဖွင့်ထားမယ်
+extensions-warning-update-security = အတ်အွန် အဆင့်မြှင့်တင်ခြင်းလုံခြုံရေးစစ်ဆေးချက်အားပိတ်ထားသည်။သင်သည် အဆင့်မြှင့်တင်ခြင်းများနှင့်ပတ်သတ်ပြီးအံအားသင့်နိုင်သည်။
+extensions-warning-update-security-button = လုပ်ဆောင်နိုင်စေမည်။
+    .title = အက်အွန် အပ်ဒိပ် လုံခြုံရေး စစ်ဆေးခြင်းကို ဖွင့်ထားမယ်
 
 ## Strings connected to add-on updates
 
@@ -156,12 +160,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = လတ်တလော အပ်ဒိပ်များကို ကြည့်ပါ
     .accesskey = V
+addon-updates-check-for-updates = အဆင့်မြှင့်တင်ရန်လိုအပ်နေလားစစ်ကြည့်မည်။
+    .accesskey = အ
+addon-updates-view-updates = လတ်တလော အပ်ဒိပ်များကို ကြည့်ပါ
+    .accesskey = V
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = အက်အွန်အား အလိုအလျောက် အဆင့်မြင်တင်ပါ
+    .accesskey = A
+addon-updates-update-addons-automatically = အက်အွန်အား အလိုအလျောက် အဆင့်မြင်တင်ပါ
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -175,6 +185,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = R
 extensions-updates-reset-updates-to-manual =
     .label = အတ်အွန်အားလုံးအား ထိန်းချုပ်အဆင့်မြှင့်တင်ရန် ပြုလုပ်လိုက်မည်။
+    .accesskey = R
+addon-updates-reset-updates-to-automatic = အတ်အွန်အားလုံးအား အလိုအလျှောက် အဆင့်မြှင့်တင်ရန် ပြုလုပ်လိုက်မည်။
+    .accesskey = R
+addon-updates-reset-updates-to-manual = အတ်အွန်အားလုံးအား ထိန်းချုပ်အဆင့်မြှင့်တင်ရန် ပြုလုပ်လိုက်မည်။
     .accesskey = R
 
 ## Status messages displayed when updating add-ons
@@ -194,3 +208,31 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = လုပ်ဆောင်ချက် အသစ်ထည့်ခြင်း
     .tooltiptext = စာရင်းထဲတွင် ပြထားသော အဆင့်မြှင့်တင်မှူများ ကိုပြုလုပ်မည်။
+addon-updates-updating = အက်အွန်တွေကို အသစ်ပြန်တင်မယ်
+addon-updates-installed = သင့်၏အက်အွန်အား အဆင့်မြင့်တင်ပြီးပါပြီ
+addon-updates-none-found = အသစ်မတွေ့ပါ
+addon-updates-manual-updates-found = ရရှိနိုင်သော အဆင့်မြင်တင်မှုအား ကြည့်ရှုပါ
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = အက်အွန်တွေ ကို ဖိုင်မှတဆင့် သွင်းပါ
+    .accesskey = အ
+addon-install-from-file-dialog-title = တပ်ဆင်ရန်အတ်အွန်အားရွေးချယ်ပါ။
+addon-install-from-file-filter-name = ပေါင်းထည့် ဆော့ဗ်ဝဲများ
+addon-open-about-debugging = အတ်အွန်များကို အမှားရှာရန်
+    .accesskey = b
+
+## Extension shortcut management
+
+
+## Recommended add-ons page
+
+
+## Add-on actions
+
+
+## Pending uninstall message bar
+
+
+## Page headings
+

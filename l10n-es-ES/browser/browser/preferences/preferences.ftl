@@ -14,6 +14,11 @@ pref-page =
             [windows] Opciones
            *[other] Preferencias
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Opciones
+       *[other] Preferencias
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -282,6 +287,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Usar { $plugin-name } (en { -brand-short-name })
@@ -457,7 +466,6 @@ choose-bookmark =
 
 home-prefs-content-header = Contenido de la página de inicio de Firefox
 home-prefs-content-description = Seleccione el contenido que desea en la pantalla de inicio de Firefox.
-home-prefs-content-discovery-description = Content Discovery en la página de inicio de Firefox le permite descubrir artículos de alta calidad y relevantes de toda la web.
 home-prefs-search-header =
     .label = Búsqueda web
 home-prefs-topsites-header =
@@ -505,7 +513,8 @@ search-bar-shown =
     .label = Añadir barra de búsqueda en la barra de herramientas
 search-engine-default-header = Buscador predeterminado
 search-engine-default-desc = Elija el buscador por omisión que desea usar en las barras de direcciones y de búsqueda.
-search-engine-default-private-desc = Elija el buscador predeterminado para usar en ventanas privadas
+search-engine-default-desc-2 = Este es su buscador predeterminado en la barra de direcciones y la barra de búsqueda. Puede cambiarlo en cualquier momento.
+search-engine-default-private-desc-2 = Elija un buscador predeterminado diferente para usar solo en ventanas privadas
 search-separate-default-engine =
     .label = Usar este buscador en ventanas privadas
     .accesskey = U
@@ -524,6 +533,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Mostrar sugerencias de búsqueda antes del historial de navegación en los resultados de la barra de direcciones
+search-show-suggestions-private-windows =
+    .label = Mostrar sugerencias de búsqueda en ventanas privadas
 suggestions-addressbar-settings = Cambiar las preferencias para el historial de navegación, marcadores y sugerencias de pestañas
 search-suggestions-cant-show = Las sugerencias de búsqueda no se mostrarán en los resultados de la barra de direcciones porque ha configurado { -brand-short-name } para que nunca recuerde el historial.
 search-one-click-header = Buscadores con un clic
@@ -573,6 +584,9 @@ sync-signedout-account-create = ¿No tiene una cuenta? Comience ahora
 sync-signedout-account-signin =
     .label = Conectarse…
     .accesskey = C
+sync-signedout-account-signin2 =
+    .label = Iniciar sesión en{ -sync-brand-short-name }…
+    .accesskey = I
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -640,6 +654,9 @@ sync-currently-syncing-prefs =
         [windows] Opciones
        *[other] Preferencias
     }
+sync-change-options =
+    .label = Cambiar…
+    .accesskey = C
 
 ## The "Choose what to sync" dialog.
 
@@ -713,7 +730,11 @@ privacy-header = Privacidad del navegador
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Usuarios y contraseñas
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Preguntar para guardar contraseñas e inicios de sesión de sitios web
     .accesskey = r
@@ -727,6 +748,7 @@ forms-breach-alerts =
     .label = Mostrar alertas sobre contraseñas para sitios web comprometidos
     .accesskey = b
 forms-breach-alerts-learn-more-link = Saber más
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Autocompletar inicios de sesión y contraseñas
     .accesskey = i

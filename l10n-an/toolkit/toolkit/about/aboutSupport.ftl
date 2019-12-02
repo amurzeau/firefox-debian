@@ -45,9 +45,7 @@ app-basics-performance = Rendimiento
 app-basics-service-workers = Service Workers rechistraus
 app-basics-profiles = Perfils
 app-basics-multi-process-support = Finestras multiproceso
-app-basics-process-count = Procesos de conteniu web
 app-basics-enterprise-policies = Politicas d'interpresa
-app-basics-key-google = Google Key
 app-basics-key-mozilla = Clau d'o servicio de plazamiento de Mozilla
 app-basics-safe-mode = Modo seguro
 show-dir-label =
@@ -97,6 +95,13 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argumentos
 safe-mode-title = Intentar en Modo Seguro
 restart-in-safe-mode-label = Reiniciar con os complementos desactivaus…
+
+## Media titles
+
+audio-backend = Sistema de fondo d'audio
+max-audio-channels = Maximo numero de canals
+channel-layout = Esquema de canal preferiu
+sample-rate = Freqüencia de mostreyo preferida
 media-title = Multimedia
 media-output-devices-title = Dispositivos de salida
 media-input-devices-title = Dispositivos de dentrada
@@ -109,6 +114,9 @@ media-device-format = Formato
 media-device-channels = Canals
 media-device-rate = Freqüencia
 media-device-latency = Latencia
+
+##
+
 intl-title = Internacionalización & localización
 intl-app-title = Achustes d'aplicación
 intl-locales-requested = Locales demandadas
@@ -209,6 +217,7 @@ unknown-failure = En a lista de bloqueyo; codigo de fallo { $failureCode }
 d3d11layers-crash-guard = Compositor D3D11
 d3d11video-crash-guard = Decodificador de video D3D11
 d3d9video-crash-buard = Decodificador de video D3D9
+d3d9video-crash-guard = Decodificador de video D3D9
 glcontext-crash-guard = OpenGL
 reset-on-next-restart = Meter propiedatz por defecto en o siguient reinicio.
 gpu-process-kill-button = Rematar proceso GPU
@@ -217,10 +226,6 @@ uses-tiling = Fa servir mosaicos
 content-uses-tiling = Fa servir mosaicos (conteniu)
 off-main-thread-paint-enabled = S'ha activau lo Painting difuera d'o filo d'execución principal
 off-main-thread-paint-worker-count = Numero de workers de pintura defuera d'o filo principal
-audio-backend = Sistema de fondo d'audio
-max-audio-channels = Maximo numero de canals
-channel-layout = Esquema de canal preferiu
-sample-rate = Freqüencia de mostreyo preferida
 min-lib-versions = S'asperaba una versión minima
 loaded-lib-versions = Versión en uso
 has-seccomp-bpf = Seccomp-BPF (Filtrau de Clamadas a o Sistema)

@@ -71,16 +71,19 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = Ieškote įrašytų prisijungimų? Naudokite „{ -sync-brand-short-name }“.
+about-logins-login-intro-heading-logged-in = Nerasta sinchronizuotų prisijungimų.
 login-intro-description = Jeigu esate įrašę prisijungimus į „{ -brand-product-name }“ kitame įrenginyje, juos galite turėti čia:
 login-intro-instruction-fxa = Susikurkite arba prisijunkite prie savo „{ -fxaccount-brand-name }“ paskyros tame įrenginyje, kur yra prisijungimai.
 login-intro-instruction-fxa-settings = Įsitikinkite, kad „{ -sync-brand-short-name }“ nuostatose pažymėjote langelį „Prisijungimai“.
 about-logins-intro-instruction-help = Aplankę <a data-l10n-name="help-link">„{ -lockwise-brand-short-name }“ žinyną</a>, rasite daugiau informacijos
+about-logins-intro-import = Jeigu turite kitoje naršyklėje įrašytų prisijungimų, galite <a data-l10n-name="import-link">juos importuoti į „{ -lockwise-brand-short-name }“</a>
 
 ## Login
 
 login-item-new-login-title = Sukurti naują prisijungimą
 login-item-edit-button = Taisyti
 login-item-delete-button = Pašalinti
+about-logins-login-item-remove-button = Pašalinti
 login-item-origin-label = Svetainės adresas
 login-item-origin =
     .placeholder = https://www.example.com
@@ -110,11 +113,8 @@ master-password-reload-button =
     .label = Prisijungti
     .accesskey = P
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = Atsisakyti
-confirmation-dialog-dismiss-button =
-    .title = Atsisakyti
 enable-password-sync-notification-message =
     { PLATFORM() ->
         [windows] Norite turėti savo prisijungimus visur, kur naudojate { -brand-product-name }? Eikite į „{ -sync-brand-short-name }“ nuostatas ir pažymėkite langelį „Prisijungimai“.
@@ -128,8 +128,19 @@ enable-password-sync-preferences-button =
         }
     .accesskey = A
 confirm-delete-dialog-title = Pašalinti šį prisijungimą?
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = Daugiau neklausti
+    .accesskey = D
+
+## Dialogs
+
+confirmation-dialog-cancel-button = Atsisakyti
+confirmation-dialog-dismiss-button =
+    .title = Atsisakyti
+about-logins-confirm-remove-dialog-title = Pašalinti šį prisijungimą?
 confirm-delete-dialog-message = Atlikus šį veiksmą, jo atšaukti neįmanoma.
 confirm-delete-dialog-confirm-button = Šalinti
+about-logins-confirm-remove-dialog-confirm-button = Pašalinti
 confirm-discard-changes-dialog-title = Atsisakyti neįrašytų pakeitimų?
 confirm-discard-changes-dialog-message = Visi neįrašyti pakeitimai bus prarasti.
 confirm-discard-changes-dialog-confirm-button = Atsisakyti

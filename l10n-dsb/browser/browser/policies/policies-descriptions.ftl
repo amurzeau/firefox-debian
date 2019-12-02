@@ -24,7 +24,7 @@ policy-Cookies = Websedłam dowóliś abo zakazaś, cookieje składowaś.
 policy-DefaultDownloadDirectory = Nastajśo standardny ześěgnjeński zarědnik.
 policy-DisableAppUpdate = Wobglědowakoju aktualizěrowanje zakazaś.
 policy-DisableBuiltinPDFViewer = PDF.js znjemóžniś, zatwarjony PDF-wobglědowak w { -brand-short-name }.
-policy-DisableDeveloperTools = Pśistup k wuwijarskim rědam blokěrowaś.
+policy-DisableDeveloperTools = Pśistup k wuwijaŕskim rědam blokěrowaś.
 policy-DisableFeedbackCommands = Pśikaze znjemóžniś, kótarež komentary z menija Pomoc sćelu (Pósudk pósłaś a Wobšudnikojske sedło k wěsći daś)
 policy-DisableFirefoxAccounts = Słužby na zakłaźe { -fxaccount-brand-name } znjemóžniś, inkluziwnje Sync.
 # Firefox Screenshots is the name of the feature, and should not be translated.
@@ -33,6 +33,7 @@ policy-DisableFirefoxStudies = { -brand-short-name } zakazaś, studije wuwjasć.
 policy-DisableForgetButton = Pśistup k tłocaškoju Zabyś zakazaś.
 policy-DisableFormHistory = Pytańsku a formularnu historiju se njespomnjeś.
 policy-DisableMasterPasswordCreation = Jolic wěrno, njedajo se głowne gronidko napóraś.
+policy-DisablePasswordReveal = Njedowóliś, až se gronidła w skłaźonych pśizjawjenjach pokazuju
 policy-DisablePocket = Funkciju składowanja webbokow do Pocket znjemóžniś.
 policy-DisablePrivateBrowsing = Priwatny modus znjemóžniś.
 policy-DisableProfileImport = Menijowy pśikaz za importěrowanje datow z drugego wobglědowaka znjemóžniś.
@@ -61,6 +62,7 @@ policy-HardwareAcceleration = Jolic njewěrno, hardwarowe póspěšenje znjemó�
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Startowy bok nastajiś a na žycenje zastajiś.
 policy-InstallAddonsPermission = Wěstym websedłam dowóliś, dodanki instalěrowaś.
+policy-LegacyProfiles = Funkciju znjemóžniś, kótaraž separatny profil za kuždu instalaciju wunuźijo
 policy-LocalFileLinks = Wěstym websedłam dowóliś, na lokalne dataje wótkazaś.
 policy-NetworkPrediction = Seśowe pśedzacytanje (DNS-pśedzacytanje) zmóžniś abo znjemóžniś.
 policy-NewTabPage = Bok nowego rejtarka zmóžniś abo znjemóžniś.

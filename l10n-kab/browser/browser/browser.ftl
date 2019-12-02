@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Err-d isefka deg uselkim
 urlbar-addons-notification-anchor =
     .tooltiptext = Ldi agalis n yizen i usebded n uzegrir
+urlbar-tip-help-icon =
+    .title = Awi tallelt
+urlbar-geolocation-blocked =
+    .tooltiptext = Tesweḥleḍ talɣut ɣef wadeg i usmelweb-a.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Tesweḥleḍ ilɣa i usmelweb-a.
+urlbar-camera-blocked =
+    .tooltiptext = Tesweḥleḍ asawaḍ-ik i usmelweb-a.
+urlbar-microphone-blocked =
+    .tooltiptext = Tesweḥleḍ asawaḍ-inek i usmelweb-a.
+urlbar-screen-blocked =
+    .tooltiptext = Tesweḥleḍ asmelweb-a seg beṭṭu n ugdil-inek.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Tesweḥleḍ asekles n yisefka i usmelweb-a.
+urlbar-popup-blocked =
+    .tooltiptext = Tesweḥleḍ asfaylu udhim i usmel-agi.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Teswaḥleḍ urar awurman n teywalt s umeslaw i usmel-agi web.
+urlbar-canvas-blocked =
+    .tooltiptext = Tesweḥleḍ tussfa n yisefka n ubeckil i usmelweb-a.
+urlbar-midi-blocked =
+    .tooltiptext = Tesweḥleḍ anekcum i MIDI γer usmel-agi.
+urlbar-install-blocked =
+    .tooltiptext = Tesweḥleḍ asbeddi n yizegrar i usmel-a.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Ffeɣ seg uskar n ugdil ačaran
     .accesskey = F
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Tikkelt-agi, nadi s:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Iɣewwaren n unadi
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Beddel iɣewwaren n unadi
+search-one-offs-context-open-new-tab =
+    .label = Nadi deg yiccer amaynut
+    .accesskey = c
+search-one-offs-context-set-as-default =
+    .label = Sers-it d amsedday n unadi amezwer
+    .accesskey = D
+search-one-offs-context-set-as-default-private =
+    .label = Sbadu-t amsedday n unadi amezwer i Windows Private
+    .accesskey = P

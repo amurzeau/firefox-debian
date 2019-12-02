@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Използване на хранилището за постоянни данни
 urlbar-addons-notification-anchor =
     .tooltiptext = Отваряне на панел със съобщението за инсталиране на добавка
+urlbar-tip-help-icon =
+    .title = Получете помощ
+urlbar-geolocation-blocked =
+    .tooltiptext = Забранили сте на страницата достъп до вашето местоположение.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Забранили сте на страницата да ви изпраща известия.
+urlbar-camera-blocked =
+    .tooltiptext = Забранили сте на страницата достъп до вашата камера.
+urlbar-microphone-blocked =
+    .tooltiptext = Забранили сте на страницата достъп до вашия микрофон.
+urlbar-screen-blocked =
+    .tooltiptext = Забранили сте на страницата споделянето на вашия екран.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Забранили сте на страницата достъп до хранилището за постоянни данни.
+urlbar-popup-blocked =
+    .tooltiptext = Забранили сте на страницата да отваря изскачащи прозорци.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Забранили сте автоматичното възпроизвеждане на медия на страницата.
+urlbar-canvas-blocked =
+    .tooltiptext = Забранили сте достъпа до данните от canvas на тази страница.
+urlbar-midi-blocked =
+    .tooltiptext = Забранили сте на страницата достъп до MIDI.
+urlbar-install-blocked =
+    .tooltiptext = Забранили сте на страницата да инсталира добавки.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Излизане от цял екран
     .accesskey = ц
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Този път търсете с:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Настройки на търсене
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Настройки на търсене
+search-one-offs-context-open-new-tab =
+    .label = Търсене в нов раздел
+    .accesskey = р
+search-one-offs-context-set-as-default =
+    .label = Задаване като стандартна търсачка
+    .accesskey = с
+search-one-offs-context-set-as-default-private =
+    .label = Задаване като стандартна търсачка в поверителни прозорци
+    .accesskey = п

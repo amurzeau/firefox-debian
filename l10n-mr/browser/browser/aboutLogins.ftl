@@ -6,9 +6,21 @@ about-logins-page-title = लॉगिन व संकेतशब्द
 
 # "Google Play" and "App Store" are both branding and should not be translated
 
+login-app-promo-title = आपले पासवर्ड सर्वत्र न्या
+login-app-promo-subtitle = विनामूल्य { -lockwise-brand-name } अॅप मिळवा
+login-app-promo-android =
+    .alt = Google Play वर मिळवा
+login-app-promo-apple =
+    .alt = App Store वरुन डाउनलोड करा
 login-filter =
     .placeholder = लॉगिन शोधा
 create-login-button = नविन लॉगिन बनवा
+# This string is used as alternative text for favicon images.
+# Variables:
+#   $title (String) - The title of the website associated with the favicon.
+login-favicon =
+    .alt = { $title } साठी Favicon
+fxaccounts-sign-in-text = आपल्या इतर उपकरणांवर आपले पासवर्ड मिळवा
 fxaccounts-sign-in-button = { -sync-brand-short-name } मध्ये साइन इन करा
 fxaccounts-avatar-button =
     .title = खाते व्यवस्थापित करा
@@ -17,11 +29,14 @@ fxaccounts-avatar-button =
 
 menu =
     .title = मेनू उघडा
+# This menuitem is only visible on Windows
+menu-menuitem-import = पासवर्ड आयात करा…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] पर्याय
        *[other] प्राधान्ये
     }
+about-logins-menu-menuitem-help = मदत
 menu-menuitem-android-app = { -lockwise-brand-short-name } Android साठी
 menu-menuitem-iphone-app = { -lockwise-brand-short-name } iPhone and iPad साठी
 
@@ -39,6 +54,8 @@ login-list-name-option = नाव (A-Z)
 login-list-last-changed-option = शेवटचा बदल
 login-list-last-used-option = शेवटचा वापर
 login-list-intro-title = कुठलेही लॉगिन सापडले नाही
+about-logins-login-list-empty-search-title = कुठलेही लॉगिन सापडले नाही
+about-logins-login-list-empty-search-description = आपल्या शोधाशी जुळणारे कोणतेही परिणाम नाहीत.
 login-list-item-title-new-login = नविन लॉगीन
 login-list-item-subtitle-new-login = तुमचे लॉगीन संकेतशब्द टाका
 login-list-item-subtitle-missing-username = (कुठलेही वापरकर्तानाव नाही)
@@ -55,6 +72,8 @@ login-item-origin-label = संकेतस्थळ पत्ता
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = वापरकर्तानाव
+about-logins-login-item-username =
+    .placeholder = (वापरकर्तानाव नाही)
 login-item-copy-username-button-text = प्रत बनवा
 login-item-copied-username-button-text = प्रत बनवली!
 login-item-password-label = संकेतशब्द
@@ -78,6 +97,12 @@ master-password-reload-button =
     .label = लॉग इन
     .accesskey = L
 
+## Password Sync notification
+
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = मला पुन्हा विचारू नका
+    .accesskey = D
+
 ## Dialogs
 
 confirmation-dialog-cancel-button = रद्द करा
@@ -86,11 +111,22 @@ confirmation-dialog-dismiss-button =
 confirm-delete-dialog-title = लॉगिन मिटवायचे?
 confirm-delete-dialog-message = ही कृती बदलू शकत नाही
 confirm-delete-dialog-confirm-button = मिटवा
+confirm-discard-changes-dialog-title = जतन न केलेले बदल टाकून द्यायचे?
+confirm-discard-changes-dialog-message = सर्व जतन न केलेले बदल गमावले जातील.
 confirm-discard-changes-dialog-confirm-button = रद्द करा
 
 ## Breach Alert notification
 
 breach-alert-link = या उल्लंघनाबद्दल अधिक जाणून घ्या.
+breach-alert-dismiss =
+    .title = हा इशारा बंद करा
 
 ## Error Messages
 
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login = त्या वापरकर्त्यासह { $loginTitle } साठी नोंद आधीपासून आहे.
+# This is a generic error message.
+about-logins-error-message-default = हा पासवर्ड साठवताना त्रुटी आली.

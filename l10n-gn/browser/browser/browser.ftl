@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Mba'ekuaarã ñembyaty, ñembyaty hi'arekuaávape
 urlbar-addons-notification-anchor =
     .tooltiptext = Eike ñe'ẽmondo moĩmbaha ñemohenda ra'ãngarupápe
+urlbar-tip-help-icon =
+    .title = Eipota pytyvõ
+urlbar-geolocation-blocked =
+    .tooltiptext = Ejokóma marandu ejuhukuaa hag̃ua ko ñanduti renda.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Ejokóma ñemomarandu ko ñanduti rendápe g̃uarã.
+urlbar-camera-blocked =
+    .tooltiptext = Ejokóma ne ta'ãngamýi ko ñanduti rendápe g̃uarã.
+urlbar-microphone-blocked =
+    .tooltiptext = Ejokóma ne ñe'ẽatãha ko ñanduti rendápe g̃uarã.
+urlbar-screen-blocked =
+    .tooltiptext = Ejokóma ko ñanduti renda emoherakuã hag̃ua ne mba'erechaha.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Ejokóma mba'ekuaarã ñembyaty hi'aréva ko ñanduti renda pegua.
+urlbar-popup-blocked =
+    .tooltiptext = Ejokoukákuri ovetã apysẽva ko ñandutirendápe g̃uarã.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Ejokóma ñemboheta ijeheguíva mba’epu rehegua ko ñanduti rendápe g̃uarã.
+urlbar-canvas-blocked =
+    .tooltiptext = Ejokoukákuri kuaapy canvas rehegua ñeguenohẽ ko ñandutirendápe g̃uarã.
+urlbar-midi-blocked =
+    .tooltiptext = Ejokóma MIDI pe jeike ko ñanduti rendápe g̃uarã.
+urlbar-install-blocked =
+    .tooltiptext = Ejokóma tembipuru’i ñemohenda ko ñandutípe g̃uarã.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Mba'erechaha tuichavéva rekógui ñesẽ
     .accesskey = F
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Ko'ág̃a, eheka hendive:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Jeheka mba'epytyvõrã moambue
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Jeheka mba'epytyvõrã moambue
+search-one-offs-context-open-new-tab =
+    .label = Tendayke pyahúpe jeheka
+    .accesskey = T
+search-one-offs-context-set-as-default =
+    .label = Emopyenda ijypykuévaramo ha jehekaha mongu'eha
+    .accesskey = D
+search-one-offs-context-set-as-default-private =
+    .label = Emoĩ jehekaha mongu'eha ijypykuévaramo ovetã ñemíme
+    .accesskey = E

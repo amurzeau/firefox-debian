@@ -147,6 +147,20 @@ intl-locales-default = Tutlayt tamezwert
 intl-os-title = Anagraw n wammud
 intl-os-prefs-system-locales = Tutlayin n unagraw
 intl-regional-prefs = Ismenyifen n temnaḍt
+
+## Remote Debugging
+##
+## The Firefox remote protocol provides low-level debugging interfaces
+## used to inspect state and control execution of documents,
+## browser instrumentation, user interaction simulation,
+## and for subscribing to browser-internal events.
+##
+## See also https://firefox-source-docs.mozilla.org/remote/
+
+remote-debugging-url = URL
+
+
+
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
@@ -243,6 +257,7 @@ unknown-failure = Yettusewḥel; tangalt n tuccḍa { $failureCode }
 d3d11layers-crash-guard = Amsuddes D3D11
 d3d11video-crash-guard = D3D11 Video Decoder
 d3d9video-crash-buard = D3D9 Video Decoder
+d3d9video-crash-guard = D3D9 Video Decoder
 glcontext-crash-guard = OpenGL
 reset-on-next-restart = Ales awennez deg usenker d-itteddun
 gpu-process-kill-button = Seḥbes akala GPU

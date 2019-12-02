@@ -186,6 +186,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Zmóžniś
     .tooltiptext = Pśespytowanje wěstoty aktualizacije zmóžniś
+extensions-warning-safe-mode = Wšykne dodanki su se pśez wěsty modus znjemóžnili.
+extensions-warning-check-compatibility = Pśespytowanje dodankoweje kompatibelnosći jo znjemóžnjone. Jo móžno, až maśo njekompatibelne dodanki.
+extensions-warning-check-compatibility-button = Zmóžniś
+    .title = Pśespytowanje dodankeje kompatibelnosći zmóžniś
+extensions-warning-update-security = Pśespytowanje wěstoty aktualizacije jo znjemóžnjone. Jo móžno, až aktualizacije wam wobgrozuju.
+extensions-warning-update-security-button = Zmóžniś
+    .title = Pśespytowanje wěstoty aktualizacije zmóžniś
 
 ## Strings connected to add-on updates
 
@@ -195,12 +202,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Nowe aktualizacije se woglědaś
     .accesskey = N
+addon-updates-check-for-updates = Za aktualizacijami pytaś
+    .accesskey = a
+addon-updates-view-updates = Nowe aktualizacije se woglědaś
+    .accesskey = N
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Dodanki awtomatiski aktualizěrowaś
+    .accesskey = D
+addon-updates-update-addons-automatically = Dodanki awtomatiski aktualizěrowaś
     .accesskey = D
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -214,6 +227,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = z
 extensions-updates-reset-updates-to-manual =
     .label = Wšykne dodanki manuelnje aktualizěrowaś
+    .accesskey = m
+addon-updates-reset-updates-to-automatic = Wšykne dodanki zasej awtomatiski aktualizěrowaś
+    .accesskey = z
+addon-updates-reset-updates-to-manual = Wšykne dodanki manuelnje aktualizěrowaś
     .accesskey = m
 
 ## Status messages displayed when updating add-ons
@@ -233,11 +250,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Aktualizacije instalěrowaś
     .tooltiptext = K dispoziciji stojece aktualizacije z lisćiny instalěrowaś
+addon-updates-updating = Aktualizěrowanje dodankow
+addon-updates-installed = Waše dodanki su se zaktualizěrowali.
+addon-updates-none-found = Žedne aktualizacije namakane
+addon-updates-manual-updates-found = K dispoziciji stojece aktualizacije se woglědaś
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Dodank z dataje instalěrowaś…
+    .accesskey = D
+addon-install-from-file-dialog-title = Dodank za instalaciju wubraś
+addon-install-from-file-filter-name = Dodanki
+addon-open-about-debugging = Dodanki za zmólkami pśepytowaś
+    .accesskey = m
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Tastowe skrotconki rozšyrjenjow zastojaś
+    .accesskey = T
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Tastowe skrotconki rozšyrjenjow zastojaś
     .accesskey = T
 shortcuts-no-addons = Njejśco zmóžnił žedne rozšyrjenja.
 shortcuts-no-commands = Slědujuce rozšyrjenja njamaju  tastowe skrotconki:
@@ -304,6 +337,8 @@ addon-options-button =
 
 report-addon-button = K wěsći daś
 remove-addon-button = Wótwónoźeś
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Njedajo se wótwónoźeś <a data-l10n-name="link">Cogodla?</a>
 disable-addon-button = Znjemóžniś
 enable-addon-button = Zmóžniś
 expand-addon-button = Dalšne nastajenja
@@ -399,3 +434,18 @@ recommended-themes-heading = Dopórucone drastwy
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Cujośo se kreatiwny? <a data-l10n-name="link">Napórajśo swójsku drastwu z Firefox Color.</a>
+
+## Page headings
+
+extension-heading = Waše rozšyrjenja zastojaś
+theme-heading = Waše drastwy zastojaś
+plugin-heading = Waše tykace zastojaś
+dictionary-heading = Waše słowniki zastojaś
+locale-heading = Waše rěcy zastojaś
+updates-heading = Waše aktualizacije zastojaś
+discover-heading = Personalizěrujśo swój { -brand-short-name }
+shortcuts-heading = Tastowe skrotconki rozšyrjenjow zastojaś
+theme-heading-search-label = Dalšne drastwy pytaś
+extension-heading-search-label = Dalšne rozšyrjenja pytaś
+addons-heading-search-input =
+    .placeholder = Na addons.mozilla.org pytaś

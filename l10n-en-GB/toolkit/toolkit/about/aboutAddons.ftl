@@ -192,6 +192,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Enable
     .tooltiptext = Enable add-on update security checking
+extensions-warning-safe-mode = All add-ons have been disabled by safe mode.
+extensions-warning-check-compatibility = Add-on compatibility checking is disabled. You may have incompatible add-ons.
+extensions-warning-check-compatibility-button = Enable
+    .title = Enable add-on compatibility checking
+extensions-warning-update-security = Add-on update security checking is disabled. You may be compromised by updates.
+extensions-warning-update-security-button = Enable
+    .title = Enable add-on update security checking
 
 ## Strings connected to add-on updates
 
@@ -201,12 +208,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = View Recent Updates
     .accesskey = V
+addon-updates-check-for-updates = Check for Updates
+    .accesskey = C
+addon-updates-view-updates = View Recent Updates
+    .accesskey = V
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Update Add-ons Automatically
+    .accesskey = A
+addon-updates-update-addons-automatically = Update Add-ons Automatically
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -220,6 +233,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = R
 extensions-updates-reset-updates-to-manual =
     .label = Reset All Add-ons to Update Manually
+    .accesskey = R
+addon-updates-reset-updates-to-automatic = Reset All Add-ons to Update Automatically
+    .accesskey = R
+addon-updates-reset-updates-to-manual = Reset All Add-ons to Update Manually
     .accesskey = R
 
 ## Status messages displayed when updating add-ons
@@ -239,11 +256,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Install Updates
     .tooltiptext = Install available updates in this list
+addon-updates-updating = Updating add-ons
+addon-updates-installed = Your add-ons have been updated.
+addon-updates-none-found = No updates found
+addon-updates-manual-updates-found = View Available Updates
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Install Add-on From File…
+    .accesskey = I
+addon-install-from-file-dialog-title = Select add-on to install
+addon-install-from-file-filter-name = Add-ons
+addon-open-about-debugging = Debug Add-ons
+    .accesskey = b
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Manage Extension Shortcuts
+    .accesskey = S
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Manage Extension Shortcuts
     .accesskey = S
 shortcuts-no-addons = You don’t have any extensions enabled.
 shortcuts-no-commands = The following extensions do not have shortcuts:
@@ -315,6 +348,8 @@ addon-options-button =
 
 report-addon-button = Report
 remove-addon-button = Remove
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Can’t Be Removed <a data-l10n-name="link">Why?</a>
 disable-addon-button = Disable
 enable-addon-button = Enable
 expand-addon-button = More Options
@@ -408,3 +443,17 @@ recommended-themes-heading = Recommended Themes
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Feeling creative? <a data-l10n-name="link">Build your own theme with Firefox Colour.</a>
+
+## Page headings
+
+extension-heading = Manage Your Extensions
+theme-heading = Manage Your Themes
+plugin-heading = Manage Your Plugins
+dictionary-heading = Manage Your Dictionaries
+locale-heading = Manage Your Languages
+discover-heading = Personalise Your { -brand-short-name }
+shortcuts-heading = Manage Extension Shortcuts
+theme-heading-search-label = Find more themes
+extension-heading-search-label = Find more extensions
+addons-heading-search-input =
+    .placeholder = Search addons.mozilla.org

@@ -34,6 +34,16 @@ cfr-doorhanger-extension-author = di { $name }
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Suggerimento
 
+cfr-doorhanger-extension-notification2 = Suggerimento
+  .tooltiptext = Estensione suggerita
+  .a11y-announcement = È disponibile un suggerimento per un’estensione
+
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Suggerimento
+  .tooltiptext = Funzione suggerita
+  .a11y-announcement = È disponibile un suggerimento per una funzione
+
 ## Add-on statistics
 ## These strings are used to display the total number of
 ## users and rating for an add-on. They are shown next to each other.
@@ -72,6 +82,10 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
   .title = Chiudi
 
 ## What's New toolbar button and panel
+
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Nuova funzione:
 
 cfr-whatsnew-button =
   .label = Novità
@@ -141,6 +155,8 @@ cfr-doorhanger-socialtracking-ok-button = Visualizza protezioni
   .accesskey = V
 cfr-doorhanger-socialtracking-close-button = Chiudi
   .accesskey = C
+cfr-doorhanger-socialtracking-dont-show-again = Non mostrare di nuovo questo tipo di messaggi
+  .accesskey = N
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } ha impedito a un social network di tracciarti
 cfr-doorhanger-socialtracking-description = La tua privacy è importante. Adesso { -brand-short-name } blocca i traccianti dei social media più comuni, limitando la quantità di dati che sono in grado di raccogliere sulla tua attività online.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } ha bloccato un fingerprinter in questa pagina
@@ -153,3 +169,12 @@ cfr-doorhanger-cryptominers-description = La tua privacy è importante. Adesso {
 cfr-protections-panel-header = Naviga senza lasciarti seguire
 cfr-protections-panel-body = Mantieni i tuoi dati al riparo da occhi indiscreti. { -brand-short-name } ti protegge dagli elementi traccianti più comuni che cercano di seguire le tue attività online.
 cfr-protections-panel-link-text = Ulteriori informazioni
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading = { -brand-short-name } ha bloccato oltre <b>{ $blockedCount }</b> elementi traccianti dal { $date }.
+cfr-doorhanger-milestone-ok-button = Visualizza tutto
+  .accesskey = V

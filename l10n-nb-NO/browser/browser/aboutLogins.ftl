@@ -70,16 +70,19 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = Ser du etter lagrede innlogginger? Konfigurer { -sync-brand-short-name }
+about-logins-login-intro-heading-logged-in = Ingen synkroniserte innlogginger funnet.
 login-intro-description = Slik kan du få dine { -brand-product-name } innlogginger hit, om du har lagret de på en annen enhet
 login-intro-instruction-fxa = Lag eller logg inn på din { -fxaccount-brand-name } på enheten der dine innlogginger er lagret
 login-intro-instruction-fxa-settings = Forsikre deg om at du har markert avkryssingsboksen for innlogginger i { -sync-brand-short-name }-innstillingene
 about-logins-intro-instruction-help = Gå til <a data-l10n-name="help-link">{ -lockwise-brand-short-name } Support</a> for mer hjelp
+about-logins-intro-import = Hvis innloggingene dine er lagret i en annen nettleser, kan du <a data-l10n-name="import-link">importere dem til { -lockwise-brand-short-name }</a>
 
 ## Login
 
 login-item-new-login-title = Lag ny innlogging
 login-item-edit-button = Rediger
 login-item-delete-button = Slett
+about-logins-login-item-remove-button = Fjern
 login-item-origin-label = Nettadresse
 login-item-origin =
     .placeholder = https://www.example.com
@@ -109,11 +112,8 @@ master-password-reload-button =
     .label = Logg inn
     .accesskey = L
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = Avbryt
-confirmation-dialog-dismiss-button =
-    .title = Avbryt
 enable-password-sync-notification-message =
     { PLATFORM() ->
         [windows] Vil du ha innlogginger overalt hvor du bruker { -brand-product-name }? Gå til { -sync-brand-short-name }-innstillingene, og velg avkryssingsboks for Innlogginger.
@@ -127,8 +127,19 @@ enable-password-sync-preferences-button =
         }
     .accesskey = G
 confirm-delete-dialog-title = Slett denne innloggingen?
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = Ikke spør igjen
+    .accesskey = I
+
+## Dialogs
+
+confirmation-dialog-cancel-button = Avbryt
+confirmation-dialog-dismiss-button =
+    .title = Avbryt
+about-logins-confirm-remove-dialog-title = Fjerne denne innloggingen?
 confirm-delete-dialog-message = Denne handlingen kan ikke angres.
 confirm-delete-dialog-confirm-button = Slett
+about-logins-confirm-remove-dialog-confirm-button = Fjern
 confirm-discard-changes-dialog-title = Vil du forkaste endringer som ikke er lagret?
 confirm-discard-changes-dialog-message = Alle ikke-lagrede endringer vil gå tapt.
 confirm-discard-changes-dialog-confirm-button = Forkast

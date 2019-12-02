@@ -24,12 +24,36 @@ abuse-report-submit-button = ثبت
 ## Variables:
 ##   $addon-name (string) - Name of the add-on
 
+abuse-report-messagebar-submitted-noremove = با تشکر از شما برای ثبت گزارش.
 
 ## Message bars actions.
 
+abuse-report-messagebar-action-remove-extension = بله، حذف کنید
+abuse-report-messagebar-action-keep-extension = خیر، نگه دارید
+abuse-report-messagebar-action-remove-theme = بله، حذف کنید
+abuse-report-messagebar-action-keep-theme = خیر، نگه دارید
 abuse-report-messagebar-action-retry = تلاش مجدد
 abuse-report-messagebar-action-cancel = لغو
 
 ## Abuse report reasons (optionally paired with related examples and/or suggestions)
 
+abuse-report-damage-reason = به رایانه و داده‌های من آسیب می‌رساند
+abuse-report-damage-example = مثال: بدافزار تزریق کرده است یا داده‌ها را سرقت می‌کند
+abuse-report-spam-reason = اسپم یا تبلیغات ایجاد می‌کند
+abuse-report-spam-example = مثال: تبلیغات به صفحات وب اضافه می‌کند
+abuse-report-settings-reason = بدون اطلاع دادن یا سؤال از من، موتور جستجو، صفحه اصلی یا اطلاعات برگهٔ جدید را تغییر داد
+abuse-report-settings-suggestions = قبل از گزارش افزونه، می‌توانید تنظیمات خود را تغییر دهید:
+abuse-report-settings-suggestions-search = تنظیمات موتور جستجوی پیش فرض خود را تغییر دهید
+abuse-report-settings-suggestions-homepage = صفحه خانگی و برگهٔ جدید خود را تغییر دهید
+abuse-report-deceptive-reason = وانمود می‌کند چیز متفاوتی است
+abuse-report-deceptive-example = مثال: توضیحات یا تصاویر گمراه کننده
+abuse-report-broken-reason-extension = کار نمی کند، وب سایت‌ها را خراب می‌کند، یا سرعت { -brand-product-name } را کاهش می دهد
+abuse-report-broken-reason-theme = کار نمی‌کند یا چهرهٔ مرورگر را خراب می‌کند
+abuse-report-broken-example = مثال: امکانات کند، غیر قابل استفاده و یا کار نمی‌کنند. قسمت‌هایی از وب‌سایت‌ها بارگیری نمی‌شوند یا غیرعادی به نظر می‌رسند
+abuse-report-policy-reason = محتوای نفرت انگیز، خشونت آمیز یا غیرقانونی
+abuse-report-policy-suggestions =
+    توجه: مسائل مربوط به کپی رایت و مارک تجاری باید در یک فرآیند جداگانه گزارش شود.
+    برای گزارش مشکل از این<a data-l10n-name="report-infringement-link"> دستورالعمل‌ها </a>استفاده کنید
+abuse-report-unwanted-reason = هرگز این افزونه را نمی‌خواستید و نمی‌توانید از شر آن خلاص شوید
+abuse-report-unwanted-example = مثال: برنامه‌ای بدون اجازه من آن را نصب کرده است
 abuse-report-other-reason = موارد دیگر

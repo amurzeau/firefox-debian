@@ -14,6 +14,11 @@ pref-page =
             [windows] Inpostaçioin
            *[other] Preferense
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Inpostaçioin
+       *[other] Preferense
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -306,7 +311,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Contegnuo da Gestion di Diritti Digitali (DRM)
 play-drm-content =
@@ -533,6 +538,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = A teu Ræ, de longo con ti
 sync-signedout-description = Scincronizza segnalibbri, stöia, feuggi, paròlle segrete, conponenti azonti e inpostaçioin con tutti i teu dispoxitivi.
 sync-signedout-account-title = Conetti { -fxaccount-brand-name }
@@ -552,6 +561,9 @@ sync-signedout-account-signin =
 sync-mobile-promo = Descarega Firefox pe <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> ò <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> pe scincronizate con i dispoxitivi mòbili.
 
 ## Sync Section - Signed in
+
+
+## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Cangia l’inmagine do profî
@@ -573,6 +585,15 @@ sync-sign-in =
     .accesskey = t
 sync-signedin-settings-header = Inpostaçioin de Sync
 sync-signedin-settings-desc = Çerni cöse t'eu scincronizâ inti teu dispoxitivi deuviando { -brand-short-name }.
+
+## Sync section - enabling or disabling sync.
+
+
+## The list of things currently syncing.
+
+
+## The "Choose what to sync" dialog.
+
 sync-engine-bookmarks =
     .label = Segnalibbri
     .accesskey = S
@@ -607,6 +628,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Inpostaçioin genarali, de privaçy e seguessa che t'æ cangiou
     .accesskey = P
+
+## The device name controls.
+
 sync-device-name-header = Nomme dispoxitivo
 sync-device-name-change =
     .label = Cangia nomme dispoxitivo…
@@ -628,6 +652,9 @@ sync-fxa-privacy-notice = Informativa in sciâ privacy
 privacy-header = Privacy do navegatô
 
 ## Privacy Section - Forms
+
+
+## Privacy Section - Logins and Passwords
 
 logins-header = Login e Poule segrete
 forms-ask-to-save-logins =
@@ -744,6 +771,7 @@ addressbar-suggestions-settings = Cangia e inpostaçioin di conseggi di motoî d
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Blòcco di contegnui
+content-blocking-enhanced-tracking-protection = Proteçion anti traciamento avansâ
 content-blocking-learn-more = Atre informaçioin
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -775,7 +803,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Personalizzou
     .accesskey = P
 
-
+##
 
 content-blocking-all-cookies = Tutti i cookie
 content-blocking-all-windows-trackers = Elementi che tracian conosciui in tutti i barcoin

@@ -23,7 +23,7 @@ security-software-name = Nome
 security-software-antivirus = Antivírus
 security-software-antispyware = Antispyware
 security-software-firewall = Firewall
-features-title = Funcionalidades do { -brand-short-name }
+features-title = Recursos do { -brand-short-name }
 features-name = Nome
 features-version = Versão
 features-id = ID
@@ -39,8 +39,8 @@ app-basics-update-channel = Canal de atualização
 # as in "Folder for updates". "Update" is a noun, not a verb.
 app-basics-update-dir =
     { PLATFORM() ->
-        [linux] Diretório de atualizações
-       *[other] Pasta de atualizações
+        [linux] Diretório de atualização
+       *[other] Pasta de atualização
     }
 app-basics-update-history = Histórico de atualizações
 app-basics-show-update-history = Mostrar histórico de atualizações
@@ -71,7 +71,7 @@ show-dir-label =
     { PLATFORM() ->
         [macos] Mostrar no Finder
         [windows] Abrir pasta
-       *[other] Abrir pasta
+       *[other] Abrir diretório
     }
 modified-key-prefs-title = Preferências importantes modificadas
 modified-prefs-name = Nome
@@ -141,7 +141,7 @@ media-capabilities-enumerate = Enumeração de banco de dados
 
 
 
-intl-title = Internacionalização & Localização
+intl-title = Internacionalização e localização
 intl-app-title = Configurações do aplicativo
 intl-locales-requested = Idiomas solicitados
 intl-locales-available = Idiomas disponíveis
@@ -150,6 +150,22 @@ intl-locales-default = Idioma padrão
 intl-os-title = Sistema operacional
 intl-os-prefs-system-locales = Idiomas do sistema
 intl-regional-prefs = Preferências regionais
+
+## Remote Debugging
+##
+## The Firefox remote protocol provides low-level debugging interfaces
+## used to inspect state and control execution of documents,
+## browser instrumentation, user interaction simulation,
+## and for subscribing to browser-internal events.
+##
+## See also https://firefox-source-docs.mozilla.org/remote/
+
+remote-debugging-title = Depuração remota (protocolo Chromium)
+remote-debugging-accepting-connections = Aceitando conexões
+remote-debugging-url = URL
+
+
+
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
@@ -246,6 +262,7 @@ unknown-failure = Bloqueado; código de erro { $failureCode }
 d3d11layers-crash-guard = Compositor D3D11
 d3d11video-crash-guard = Decodificador de vídeo D3D11
 d3d9video-crash-buard = Decodificador de vídeo D3D9
+d3d9video-crash-guard = Decodificador de vídeo D3D9
 glcontext-crash-guard = OpenGL
 reset-on-next-restart = Redefinir na próxima reinicialização
 gpu-process-kill-button = Finalizar processo GPU

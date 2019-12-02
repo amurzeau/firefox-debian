@@ -39,7 +39,6 @@ app-basics-performance = လုပ်ဆောင်မှု
 app-basics-service-workers = စာရင်းပြုထားသည့် Service Workers
 app-basics-profiles = ပရိုဖိုင်များ
 app-basics-multi-process-support = တစ်ပြိုင်နက်လုပ်ဆောင်ချက် ဝင်းဒိုးများ
-app-basics-key-google = Google Key
 app-basics-key-mozilla = Mozilla Location Service Key
 app-basics-safe-mode = အန္တရာယ်ကင်း စနစ်
 show-dir-label =
@@ -87,6 +86,13 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Arguments
 safe-mode-title = လုံခြုံရေးသုံးပုံစံ အားသုံးကြည့်မည်
 restart-in-safe-mode-label = ထပ်ပေါင်းဆော့ဝဲများ ပိတ်ပြီး ပြန်စမည်...
+
+## Media titles
+
+audio-backend = အသံနောက်ကွယ်
+
+##
+
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days = လွန်ခဲ့သော { $days } ရက်အတွက် ပျက်စီးမှု အစီရင်ခံစာများ
@@ -158,10 +164,10 @@ unknown-failure = ပိတ်ပင်စာရင်းထဲ ထည့်ထ�
 d3d11layers-crash-guard = D3D11 Compositor
 d3d11video-crash-guard = D3D11 Video Decoder
 d3d9video-crash-buard = D3D9 Video Decoder
+d3d9video-crash-guard = D3D9 Video Decoder
 glcontext-crash-guard = OpenGL
 reset-on-next-restart = နောက်တစ်ကြိမ်ဖွင့်သည့်အချိန်တွင် တန်ဖိုးများကို မူလအတိုင်း ပြန်သတ်မှတ်ပါ
 gpu-process-kill-button = GPU လုပ်ဆောင်မှုကို ရပ်ဆိုင်းရန်
-audio-backend = အသံနောက်ကွယ်
 min-lib-versions = ရှိသင့်တဲ့ အနိမ့်ဆုံး ဗားရှင်း
 loaded-lib-versions = အသုံးပြုသည့် ဗားရှင်း
 has-seccomp-bpf = Seccomp-BPF (System Call Filtering)

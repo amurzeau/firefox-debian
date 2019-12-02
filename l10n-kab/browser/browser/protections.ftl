@@ -31,20 +31,34 @@ protection-report-page-title = Taɣellist n tbaḍnit
 protection-report-content-title = Ammesten n tbaḍnit
 etp-card-title = Ammesten mgal aḍfaṛ yettwaseǧhed
 etp-card-content = Inefḍfaṛen ad k-ḍefṛen srid akken ad leqḍen talɣut ɣef tnumi-ik n tunigin akked wayen tḥemmleḍ. { -brand-short-name } ad yessewḥel ddeqs n yineḍfaṛen-a akked yir iskripten.
+protection-report-manage-protections = Sefrek iɣewwaṛen
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
 # capitalization for this string should match the output for your locale.
 graph-today = Ass-a
 # This string is used to describe the graph for screenreader users.
 graph-legend-description = Udlif igebren amḍan amatu n yal anaw n uneḍfaṛ iweḥlen smana-a.
 social-tab-title = Ineḍfaṛen n iẓeḍwa imettanen
+social-tab-contant = Iẓeḍwa n tmetti srusun ineḍfaren deg yesmal web-nniḍen akken ad ḍefren ayen txedmeḍ, tettwaliḍ, akken d wayen tettnezziheḍ srid. Ayagi yettaǧǧa tikebbaniyin n yiẓeḍwa n tmetti ad issinen ugar n wayen tbeṭṭuḍ deg yimeɣna-k n yiẓeḍwa n tmetti. <a data-l10n-name="learn-more-link"> Issin ugar</a>
 cookie-tab-title = Inagan n tuqqna i uḍfaṛ gar yismal
 tracker-tab-title = Agbur n uḍfaṛ
 fingerprinter-tab-title = Idsilen umḍinen
 cryptominer-tab-title = Ikripṭuminaren
+cryptominer-tab-content = Ikripṭuminaren seqdacen tazmert n usiḍen n unagraw-ik akken ad kksen tadrimt tumḍint. Iskripten n yikripṭuminaren sseɣṣen aẓru-ik, saẓayen aselkim-ik, daɣen zemren ad salin tafaturt-ik n ṣṣehd. <a data-l10n-name="learn-more-link">Issin ugar</a>
 lockwise-title = Ur sṛuḥuy ara awalen-ik uffiren
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-header-content = { -lockwise-brand-name } iseklas awalen uffiren-ik deg iminig-ik s wudem aɣelsan.
+lockwise-header-content-logged-in = Sekles daɣen mtawi awalen-ik uffiren ɣef yibenkan-ik meṛṛa s wudem aɣelsan.
 protection-report-view-logins-button = Sken-d tuqniwin
     .title = Ddu ɣer inekcumen yettwakelse
+lockwise-no-logins-content = Zdem asnas <a data-l10n-name="lockwise-inline-link">{ -lockwise-brand-name }</a> akken ad tawiḍ awalen uffrien-ik anda teddiḍ.
+# This string is displayed after a large numeral that indicates the total number
+# of email addresses being monitored. Don’t add $count to
+# your localization, because it would result in the number showing twice.
+lockwise-passwords-stored =
+    { $count ->
+        [one] Awal uffir yettwakles s wudem aɣelsan <a data-l10n-name="lockwise-how-it-works"> Amek iteddu</a>
+       *[other] Awalen uffiren ttwakelsen s wudem aɣelsan <a data-l10n-name="lockwise-how-it-works"> Amek iteddu</a>
+    }
 turn-on-sync = Rmed { -sync-brand-short-name }...
     .title = Ldi ismenyifen n umtawi
 manage-devices = Sefrek ibenkan
@@ -93,6 +107,20 @@ full-report-link = Wali aneqqis ummid deg <a data-l10n-name="monitor-inline-link
 ##   $count (Number) - Number of specific trackers
 ##   $percentage (Number) - Percentage this type of tracker contributes to the whole graph
 
+bar-tooltip-social =
+    .title = Ineḍfaṛen n  yiẓeḍwa n tmetti
+    .aria-label =
+        { $count ->
+            [one] { $count } Ineḍfaṛen n  yiẓeḍwa n tmetti ({ $percentage } %)
+           *[other] { $count } Ineḍfaṛen n  yiẓeḍwa n tmetti ({ $percentage } %)
+        }
+bar-tooltip-cookie =
+    .title = Inagan n tuqqna i uḍfaṛ gar yismal
+    .aria-label =
+        { $count ->
+            [one] { $count } Inagan n tuqqna i uḍfaṛ gar yismal ({ $percentage }%)
+           *[other] { $count } Inagan n tuqqna i uḍfaṛ gar yismal({ $percentage }%)
+        }
 bar-tooltip-tracker =
     .title = Agbur n uḍfaṛ
     .aria-label =

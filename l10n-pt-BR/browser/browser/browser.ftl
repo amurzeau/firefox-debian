@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Armazenar dados no armazenamento persistente
 urlbar-addons-notification-anchor =
     .tooltiptext = Abrir painel de mensagem de instalação de extensões
+urlbar-tip-help-icon =
+    .title = Obter ajuda
+urlbar-geolocation-blocked =
+    .tooltiptext = Você bloqueou informações de localização neste site.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Você bloqueou notificações deste site.
+urlbar-camera-blocked =
+    .tooltiptext = Você bloqueou sua câmera neste site.
+urlbar-microphone-blocked =
+    .tooltiptext = Você bloqueou seu microfone neste site.
+urlbar-screen-blocked =
+    .tooltiptext = Você bloqueou o compartilhamento de tela neste site.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Você bloqueou o armazenamento persistente deste site.
+urlbar-popup-blocked =
+    .tooltiptext = Você bloqueou pop-ups desse site.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Você bloqueou a reprodução automática de mídia com som neste site.
+urlbar-canvas-blocked =
+    .tooltiptext = Você bloqueou a extração de dados da tela neste site.
+urlbar-midi-blocked =
+    .tooltiptext = Você bloqueou o acesso a MIDI neste site.
+urlbar-install-blocked =
+    .tooltiptext = Você bloqueou a instalação de extensões deste site.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Sair do modo de tela inteira
     .accesskey = S
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Desta vez, pesquisar com:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Alterar configurações de pesquisa
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Alterar configurações de pesquisa
+search-one-offs-context-open-new-tab =
+    .label = Pesquisar em uma nova aba
+    .accesskey = P
+search-one-offs-context-set-as-default =
+    .label = Definir como mecanismo de pesquisa padrão
+    .accesskey = D
+search-one-offs-context-set-as-default-private =
+    .label = Definir como mecanismo de pesquisa padrão em janelas privativas
+    .accesskey = p

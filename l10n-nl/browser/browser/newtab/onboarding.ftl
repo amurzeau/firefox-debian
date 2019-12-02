@@ -33,10 +33,20 @@ onboarding-join-form-email =
 onboarding-join-form-email-error = Geldig e-mailadres vereist
 onboarding-join-form-legal = Door verder te gaan, gaat u akkoord met de <a data-l10n-name="terms">Servicevoorwaarden</a> en <a data-l10n-name="privacy">Privacyverklaring</a>.
 onboarding-join-form-continue = Doorgaan
+# This message is followed by a link using onboarding-join-form-signin ("Sign In") as text.
+onboarding-join-form-signin-label = Hebt u al een account?
+# Text for link to submit the sign in form
+onboarding-join-form-signin = Aanmelden
 onboarding-start-browsing-button-label = Beginnen met browsen
 onboarding-cards-dismiss =
     .title = Verwijderen
     .aria-label = Verwijderen
+
+## Welcome full page string
+
+onboarding-fullpage-welcome-subheader = Laten we beginnen met verkennen van wat u allemaal kunt doen.
+onboarding-fullpage-form-email =
+    .placeholder = Uw e-mailadres…
 
 ## Firefox Sync modal dialog strings.
 
@@ -103,13 +113,14 @@ onboarding-data-sync-text2 = Synchroniseer uw bladwijzers, wachtwoorden en meer,
 onboarding-data-sync-button2 = Aanmelden bij { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Blijf alert op datalekken
 onboarding-firefox-monitor-text = { -monitor-brand-name } houdt in de gaten of uw e-mailadres voor komt in een datalek en waarschuwt u als dit in een nieuw lek verschijnt.
+onboarding-firefox-monitor-text2 = { -monitor-brand-name } houdt in de gaten of uw e-mailadres voor komt in een bekend datalek en waarschuwt u als dit in een nieuw lek verschijnt.
 onboarding-firefox-monitor-button = Inschrijven voor waarschuwingen
 onboarding-browse-privately-title = Privé browsen
 onboarding-browse-privately-text = Privénavigatie wist uw zoek- en navigatiegeschiedenis, om dit geheim te houden voor iedereen die uw computer gebruikt.
-onboarding-browse-privately-button = Open een privévenster
+onboarding-browse-privately-button = Een privévenster openen
 onboarding-firefox-send-title = Houd uw gedeelde bestanden privé
 onboarding-firefox-send-text2 = Upload uw bestanden naar { -send-brand-name } om ze te delen met end-to-endversleuteling en een koppeling die automatisch vervalt.
-onboarding-firefox-send-button = Probeer { -send-brand-name }
+onboarding-firefox-send-button = { -send-brand-name } proberen
 onboarding-mobile-phone-title = Download { -brand-product-name } naar uw telefoon
 onboarding-mobile-phone-text = Download { -brand-product-name } voor iOS of Android en synchroniseer uw gegevens op verschillende apparaten.
 # "Mobile" is short for mobile/cellular phone, "Browser" is short for web

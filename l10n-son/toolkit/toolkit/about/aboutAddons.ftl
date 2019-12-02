@@ -117,9 +117,6 @@ disabled-unsigned-description = Tontoney wey mana hin ka tabatandi ka goy nda { 
 disabled-unsigned-learn-more = Bay ka tonton kaŋ ir ga durkutu ka war saajaw interneti ra.
 disabled-unsigned-devinfo = Cinakey kaŋ ga boona ngi tontoney ma korosandi ma gaabandi ka caw ir <label data-l10n-name="learn-more">fahamandi tiira ra</label>.
 plugin-deprecation-description = Haya foo ga kuma? Sukari fooyaŋ ši kanbandi koyne { -brand-short-name } ga. <label data-l10n-name="learn-more">Bay ka tonton.</label>
-extensions-view-discover =
-    .name = Tontoney zaa
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-recent-updates =
     .name = Taagandiri kokorantey
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -147,6 +144,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Tunandi
     .tooltiptext = Tontoni saajaw taagandiri koroširoo tunandi
+extensions-warning-safe-mode = Saajaw alhaalooo na tontoney kul kayandi.
+extensions-warning-check-compatibility = Tontoni cerekanbeyan koroširoo kayandi. I ga hima tontoniyaŋ kaŋ ši cerekanbe.
+extensions-warning-check-compatibility-button = Tunandi
+    .title = Tontoni cerekanbeyan korošiyan tunandi
+extensions-warning-update-security = Tontoni saajaw taagandiri koroširoo kayandi. A ga hima taagandirey ga šendayyaŋ kate.
+extensions-warning-update-security-button = Tunandi
+    .title = Tontoni saajaw taagandiri koroširoo tunandi
 
 ## Strings connected to add-on updates
 
@@ -156,12 +160,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Taagandiri kokorantey guna
     .accesskey = g
+addon-updates-check-for-updates = Taagandirey ceeci
+    .accesskey = c
+addon-updates-view-updates = Taagandiri kokorantey guna
+    .accesskey = g
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Tontoni boŋ-taagandiri
+    .accesskey = T
+addon-updates-update-addons-automatically = Tontoni boŋ-taagandiri
     .accesskey = T
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -175,6 +185,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = w
 extensions-updates-reset-updates-to-manual =
     .label = Tontoney kul willi boŋ-taagandiri nda kanbe
+    .accesskey = w
+addon-updates-reset-updates-to-automatic = Tontoney kul willi boŋ-taagandiri bande
+    .accesskey = w
+addon-updates-reset-updates-to-manual = Tontoney kul willi boŋ-taagandiri nda kanbe
     .accesskey = w
 
 ## Status messages displayed when updating add-ons
@@ -194,3 +208,31 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Taagandirey sinji
     .tooltiptext = Taagandiri barantey sinji maašeedaa woo ra
+addon-updates-updating = Goo ma tontoney taagandi
+addon-updates-installed = War tontoney n' ka taagandi.
+addon-updates-none-found = Taagandiri kul mana duwandi
+addon-updates-manual-updates-found = Taagandiri barantey guna
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Sinji tontoni tuku boŋ…
+    .accesskey = i
+addon-install-from-file-dialog-title = Tontoni suuba k'a sinji
+addon-install-from-file-filter-name = Tontoney
+addon-open-about-debugging = Hanseyan tontoney
+    .accesskey = a
+
+## Extension shortcut management
+
+
+## Recommended add-ons page
+
+
+## Add-on actions
+
+
+## Pending uninstall message bar
+
+
+## Page headings
+

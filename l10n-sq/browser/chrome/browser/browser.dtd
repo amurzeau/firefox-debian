@@ -150,6 +150,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.unverified.description.label "Do t’ju duhet të verifikoni llogarinë tuaj, përpara se të bëni njëkohësim.">
 <!ENTITY fxa.unverified.button.label "Hapni Rregullime të &syncBrand.shortName.label;…">
 
+<!ENTITY pictureInPictureHideToggle.label "Fshih Buton Picture-in-Picture">
+<!ENTITY pictureInPictureHideToggle.accesskey "F">
 
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
      for the Firefox Account toolbar menu screen. The `Signed in as` text is
@@ -943,6 +945,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY protections.trackingContent.label "Lëndë Gjurmimi">
 <!ENTITY protections.fingerprinters.label "Krijues shenja gishtash">
 <!ENTITY protections.cryptominers.label "Nxjerrës kriptomonedhash">
+<!ENTITY protections.notBlocking.why.etpOff2.tooltip "Janë ngarkuar krejt gjurmuesit në këtë sajt, ngaqë mbrojtjet janë të çaktivizuara.">
 <!ENTITY protections.noTrackersFound.description "Në këtë faqe s’u pikasën gjurmues të ditur nga &brandShortName;.">
 
 <!ENTITY protections.crossSiteTrackingCookies.description "Këto <em>cookies</em> ju ndjekin nga sajti në sajt për të mbledhur të dhëna rreth çka bëni në internet. Ato depozitohen nga palë të treta, të tilla si shoqëri reklamash dhe analizash.">

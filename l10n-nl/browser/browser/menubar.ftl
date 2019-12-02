@@ -9,7 +9,7 @@ menu-file =
     .label = Bestand
     .accesskey = B
 menu-file-new-tab =
-    .label = ­Nieuw tabblad
+    .label = Nieuw tabblad
     .accesskey = t
 menu-file-new-container-tab =
     .label = Nieuw containertabblad
@@ -153,7 +153,7 @@ menu-view-full-screen =
     .label = Volledig scherm
     .accesskey = d
 
-
+##
 
 menu-view-show-all-tabs =
     .label = Alle tabbladen tonen
@@ -268,7 +268,7 @@ menu-help-product =
     .accesskey = H
 menu-help-show-tour =
     .label = { -brand-shorter-name }-rondleiding
-    .accesskey = o
+    .accesskey = d
 menu-help-keyboard-shortcuts =
     .label = Sneltoetsen
     .accesskey = S
@@ -290,3 +290,6 @@ menu-help-safe-mode-with-addons =
 menu-help-report-deceptive-site =
     .label = Misleidende website rapporteren…
     .accesskey = M
+menu-help-not-deceptive =
+    .label = Dit is geen misleidende website…
+    .accesskey = m

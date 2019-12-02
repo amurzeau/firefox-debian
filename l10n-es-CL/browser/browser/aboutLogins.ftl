@@ -70,16 +70,19 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = ¿Buscas tus contraseñas guardadas? Configura { -sync-brand-short-name }.
+about-logins-login-intro-heading-logged-in = No se encontraron conexiones sincronizadas.
 login-intro-description = Si guardaste tus conexiones en { -brand-product-name } en un dispositivo diferente, estas son las instrucciones para que las puedas tener también aquí:
 login-intro-instruction-fxa = Crea o conéctate a tu { -fxaccount-brand-name } en el dispositivo en que tienes guardadas tus conexiones
 login-intro-instruction-fxa-settings = Asegúrate de seleccionar la marca de conexiones en los ajustes de { -sync-brand-short-name }
 about-logins-intro-instruction-help = Visita el <a data-l10n-name="help-link">Soporte de { -lockwise-brand-short-name }</a> para más ayuda
+about-logins-intro-import = Si tus conexiones están guardadas en otro navegador, puedes <a data-l10n-name="import-link">importarlas a { -lockwise-brand-short-name }</a>
 
 ## Login
 
 login-item-new-login-title = crear una nueva conexión
 login-item-edit-button = Editar
 login-item-delete-button = Eliminar
+about-logins-login-item-remove-button = Eliminar
 login-item-origin-label = Dirección del sitio web
 login-item-origin =
     .placeholder = https://www.example.com
@@ -109,11 +112,8 @@ master-password-reload-button =
     .label = Conectarse
     .accesskey = L
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = Cancelar
-confirmation-dialog-dismiss-button =
-    .title = Cancelar
 enable-password-sync-notification-message =
     { PLATFORM() ->
         [windows] ¿Quieres tener tus conexiones en todas partes en que usas { -brand-product-name }? Ve a Opciones de { -sync-brand-short-name } y selecciona la casilla de verificación de Conexiones.
@@ -127,8 +127,19 @@ enable-password-sync-preferences-button =
         }
     .accesskey = V
 confirm-delete-dialog-title = ¿Eliminar esta conexión?
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = No volver a preguntar
+    .accesskey = D
+
+## Dialogs
+
+confirmation-dialog-cancel-button = Cancelar
+confirmation-dialog-dismiss-button =
+    .title = Cancelar
+about-logins-confirm-remove-dialog-title = ¿Eliminar esta conexión?
 confirm-delete-dialog-message = Esta acción no puede revertirse.
 confirm-delete-dialog-confirm-button = Eliminar
+about-logins-confirm-remove-dialog-confirm-button = Eliminar
 confirm-discard-changes-dialog-title = ¿Descartar cambios sin guardar?
 confirm-discard-changes-dialog-message = Todos los cambios sin guardar se perderán.
 confirm-discard-changes-dialog-confirm-button = Descartar
@@ -147,5 +158,10 @@ breach-alert-dismiss =
 # Variables:
 #   $loginTitle (String) - The title of the website associated with the login.
 about-logins-error-message-duplicate-login = Ya existe una entrada para { $loginTitle } con ese nombre de usuario.
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = Ya existe una entrada para { $loginTitle } con ese nombre de usuario. <a data-l10n-name="duplicate-link">¿Ir a la entrada existente?</a>
 # This is a generic error message.
 about-logins-error-message-default = Ocurrió un error mientras se intentaba guardar esta contraseña.

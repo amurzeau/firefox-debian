@@ -5,6 +5,18 @@
 
 ## App Menu
 
-appmenuitem-protection-report-title = Protectiones del confidentialitate
+appmenuitem-protection-report-title = Protectiones del vita private
 appmenuitem-protection-report-tooltip =
-    .tooltiptext = Va a tu reporto de confidentialitate
+    .tooltiptext = Visitar tu reporto de vita private
+
+## Zoom Controls
+
+appmenuitem-zoom-enlarge =
+    .label = Zoom avante
+appmenuitem-zoom-reduce =
+    .label = Zoom retro
+
+## Firefox Account toolbar button and Sync panel in App menu.
+
+fxa-toolbar-sync-now =
+    .label = Synchronisar ora

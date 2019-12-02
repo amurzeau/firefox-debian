@@ -70,16 +70,19 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = ¿Está buscando sus inicios de sesión guardados? Configure { -sync-brand-short-name }.
+about-logins-login-intro-heading-logged-in = No se encontraron inicios de sesión sincronizados.
 login-intro-description = Si guardó sus inicios de sesión en { -brand-product-name } en un dispositivo diferente, estos son los pasos a seguir para tenerlas aquí también:
 login-intro-instruction-fxa = Cree o inicie sesión en su { -fxaccount-brand-name } en el dispositivo donde guardó sus inicios de sesión
 login-intro-instruction-fxa-settings = Asegúrese de haber seleccionado la casilla de verificación Inicios de sesión en la Configuración de { -sync-brand-short-name }
 about-logins-intro-instruction-help = Vaya a <a data-l10n-name="help-link"> { -lockwise-brand-short-name } Ayuda</a> para obtener más ayuda
+about-logins-intro-import = Si sus inicios de sesión se guardan en otro navegador, puede <a data-l10n-name="import-link"> importarlos a { -lockwise-brand-short-name }</a>
 
 ## Login
 
 login-item-new-login-title = Crear nuevo inicio de sesión
 login-item-edit-button = Editar
 login-item-delete-button = Eliminar
+about-logins-login-item-remove-button = Eliminar
 login-item-origin-label = Dirección web
 login-item-origin =
     .placeholder = https://www.example.com
@@ -109,11 +112,8 @@ master-password-reload-button =
     .label = Ingresar
     .accesskey = L
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = Cancelar
-confirmation-dialog-dismiss-button =
-    .title = Cancelar
 enable-password-sync-notification-message =
     { PLATFORM() ->
         [windows] ¿Quiere ver sus inicios de sesión en todas partes donde usa { -brand-product-name }? Abra Opciones de { -sync-brand-short-name } y seleccione la casilla de verificación Inicios de sesión.
@@ -127,8 +127,19 @@ enable-password-sync-preferences-button =
         }
     .accesskey = V
 confirm-delete-dialog-title = ¿Borrar este inicio de sesión?
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = No preguntarme de nuevo
+    .accesskey = D
+
+## Dialogs
+
+confirmation-dialog-cancel-button = Cancelar
+confirmation-dialog-dismiss-button =
+    .title = Cancelar
+about-logins-confirm-remove-dialog-title = ¿Eliminar este inicio de sesión?
 confirm-delete-dialog-message = Esta acción no puede deshacerse.
 confirm-delete-dialog-confirm-button = Eliminar
+about-logins-confirm-remove-dialog-confirm-button = Eliminar
 confirm-discard-changes-dialog-title = ¿Descartar cambios no guardados?
 confirm-discard-changes-dialog-message = Se van a perder todos los cambios no guardados.
 confirm-discard-changes-dialog-confirm-button = Descartar

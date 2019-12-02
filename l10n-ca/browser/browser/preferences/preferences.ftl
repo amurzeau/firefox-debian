@@ -14,6 +14,11 @@ pref-page =
             [windows] Opcions
            *[other] Preferències
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Opcions
+       *[other] Preferències
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -282,6 +287,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Utilitza { $plugin-name } (en el { -brand-short-name })
@@ -307,7 +316,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-##
+
 
 drm-content-header = Contingut DRM (Digital Rights Management, Gestió de drets digitals)
 play-drm-content =
@@ -457,7 +466,6 @@ choose-bookmark =
 
 home-prefs-content-header = Contingut d'inici del Firefox
 home-prefs-content-description = Trieu el contingut que voleu a la pantalla d'inici del Firefox.
-home-prefs-content-discovery-description = El descobriment de contingut en la pàgina d'inici del Firefox us permet descobrir articles de gran qualitat i rellevants de tot el web.
 home-prefs-search-header =
     .label = Cerca web
 home-prefs-topsites-header =
@@ -505,6 +513,11 @@ search-bar-shown =
     .label = Afegeix la barra de cerca a la barra d'eines
 search-engine-default-header = Motor de cerca per defecte
 search-engine-default-desc = Trieu el motor de cerca per defecte que s'utilitzarà en la barra d'adreces i de cerca.
+search-engine-default-private-desc-2 = Trieu un altre motor de cerca per defecte només per a les finestres privades
+search-separate-default-engine =
+    .label = Utilitza aquest motor de cerca en les finestres privades
+    .accesskey = U
+search-suggestions-header = Suggeriments de cerca
 search-suggestions-option =
     .label = Mostra suggeriments de cerca
     .accesskey = s
@@ -554,6 +567,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = El vostre web a tot arreu
 sync-signedout-description = Sincronitzeu les vostres adreces d'interès, historial, pestanyes, contrasenyes, complements i preferències en tots els vostres dispositius.
 sync-signedout-account-title = Connecteu-vos amb un { -fxaccount-brand-name }
@@ -561,6 +578,9 @@ sync-signedout-account-create = No teniu un compte? Comencem
     .accesskey = C
 sync-signedout-account-signin =
     .label = Inicia la sessió…
+    .accesskey = I
+sync-signedout-account-signin2 =
+    .label = Inicia la sessió al { -sync-brand-short-name }…
     .accesskey = I
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -574,11 +594,17 @@ sync-mobile-promo = Baixeu el Firefox per a l'<img data-l10n-name="android-icon"
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = Canvia la imatge de perfil
 sync-disconnect =
     .label = Desconnecta…
     .accesskey = D
+sync-sign-out =
+    .label = Tanca la sessió…
+    .accesskey = T
 sync-manage-account = Gestiona el compte
     .accesskey = a
 sync-signedin-unverified = { $email } no està verificat.
@@ -594,6 +620,48 @@ sync-sign-in =
     .accesskey = I
 sync-signedin-settings-header = Paràmetres de sincronització
 sync-signedin-settings-desc = Trieu què voleu sincronitzar entre els vostres dispositius que utilitzen el { -brand-short-name }.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Sincronització: ACTIVADA
+prefs-syncing-off = Sincronització: DESACTIVADA
+prefs-sync-setup =
+    .label = Configura el { -sync-brand-short-name }…
+    .accesskey = C
+prefs-sync-offer-setup-label = Sincronitzeu les vostres adreces d'interès, historial, pestanyes, contrasenyes, complements i preferències en tots els vostres dispositius.
+prefs-sync-now =
+    .labelnotsyncing = Sincronitza ara
+    .accesskeynotsyncing = S
+    .labelsyncing = S'està sincronitzant…
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = Actualment se sincronitzen aquests elements:
+sync-currently-syncing-bookmarks = Adreces d'interès
+sync-currently-syncing-history = Historial
+sync-currently-syncing-tabs = Pestanyes obertes
+sync-currently-syncing-logins-passwords = Inicis de sessió i contrasenyes
+sync-currently-syncing-addresses = Adreces
+sync-currently-syncing-creditcards = Targetes de crèdit
+sync-currently-syncing-addons = Complements
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Opcions
+       *[other] Preferències
+    }
+sync-change-options =
+    .label = Canvia…
+    .accesskey = C
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = Trieu què voleu sincronitzar
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Desa els canvis
+    .buttonaccesskeyaccept = c
+    .buttonlabelextra2 = Desconnecta…
+    .buttonaccesskeyextra2 = D
 sync-engine-bookmarks =
     .label = Adreces d'interès
     .accesskey = d
@@ -606,6 +674,10 @@ sync-engine-tabs =
     .accesskey = T
 sync-engine-logins =
     .label = Inicis de sessió
+    .tooltiptext = Noms d'usuari i contrasenyes que heu desat
+    .accesskey = I
+sync-engine-logins-passwords =
+    .label = Inicis de sessió i contrasenyes
     .tooltiptext = Noms d'usuari i contrasenyes que heu desat
     .accesskey = I
 sync-engine-addresses =
@@ -628,6 +700,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Paràmetres generals, de privadesa i de seguretat que heu canviat
     .accesskey = s
+
+## The device name controls.
+
 sync-device-name-header = Nom del dispositiu
 sync-device-name-change =
     .label = Canvia el nom del dispositiu…
@@ -650,7 +725,11 @@ privacy-header = Privadesa del navegador
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Inicis de sessió i contrasenyes
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Demana si vull desar les dades d'inici de sessió i contrasenyes dels llocs web
     .accesskey = d
@@ -664,6 +743,7 @@ forms-breach-alerts =
     .label = Mostra alertes sobre contrasenyes per als llocs web relacionats amb filtracions de dades
     .accesskey = b
 forms-breach-alerts-learn-more-link = Més informació
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Emplena automàticament inicis de sessió i contrasenyes
     .accesskey = i
@@ -818,7 +898,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Personalitzada
     .accesskey = P
 
-##
+
 
 content-blocking-etp-standard-desc = Equilibri entre protecció i rendiment. Les pàgines es carregaran amb normalitat.
 content-blocking-etp-strict-desc = Més protecció, però pot fer que alguns llocs o algun contingut no funcionin correctament.

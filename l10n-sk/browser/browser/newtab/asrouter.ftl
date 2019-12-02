@@ -80,16 +80,23 @@ cfr-protections-panel-link-text = Ďalšie informácie
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Nová funkcia:
 cfr-whatsnew-button =
     .label = Čo je nové
     .tooltiptext = Čo je nové
 cfr-whatsnew-panel-header = Čo je nové
 cfr-whatsnew-release-notes-link-text = Prečítajte si poznámky k vydaniu
 cfr-whatsnew-fx70-title = { -brand-short-name } tvrdo bojuje za vaše súkromie
+cfr-whatsnew-fx70-body =
+    Najnovšia aktualizácia vylepšuje ochranu pred sledovaním a zjednodušuje 
+    tvorbu bezpečných hesiel pre akúkoľvek stránku.
 cfr-whatsnew-tracking-protect-title = Chráňte sa pred sledovacími prvkami
 cfr-whatsnew-tracking-protect-link-text = Podrobnosti
 cfr-whatsnew-tracking-blocked-subtitle = Od { DATETIME($earliestDate, month: "long", year: "numeric") }
 cfr-whatsnew-tracking-blocked-link-text = Podrobnosti
+cfr-whatsnew-lockwise-backup-body = Vygenerujte si bezpečné heslá ku ktorým budete mať prístup bez ohľadu na to, odkiaľ sa budete prihlasovať.
 cfr-whatsnew-lockwise-take-title = Vezmite si svoje heslá so sebou
 cfr-whatsnew-lockwise-take-body = S mobilnou aplikáciou { -lockwise-brand-short-name } získate bezpečný prístup k vašim zálohovaným prihlasovacím údajom - a to kdekoľvek.
 cfr-whatsnew-lockwise-take-link-text = Prevziať aplikáciu
@@ -129,3 +136,8 @@ cfr-doorhanger-socialtracking-ok-button = Podrobnosti
     .accesskey = P
 cfr-doorhanger-socialtracking-close-button = Zavrieť
     .accesskey = Z
+
+## Enhanced Tracking Protection Milestones
+
+cfr-doorhanger-milestone-ok-button = Zobraziť všetko
+    .accesskey = v

@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = da { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Recumandaziun
+cfr-doorhanger-extension-notification2 = Recumandaziun
+    .tooltiptext = Recumandaziun dad extensiun
+    .a11y-announcement = Ina recumandaziun per ina extensiun è disponibla
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Recumandaziun
+    .tooltiptext = Recumandaziun da funcziun
+    .a11y-announcement = Ina recumandaziun per ina funcziun è disponibla
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -78,6 +86,9 @@ cfr-protections-panel-link-text = Ulteriuras infurmaziuns
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Nova funcziunalitad:
 cfr-whatsnew-button =
     .label = Novaziuns
     .tooltiptext = Novaziuns
@@ -140,9 +151,24 @@ cfr-doorhanger-socialtracking-ok-button = Vesair las protecziuns
     .accesskey = p
 cfr-doorhanger-socialtracking-close-button = Serrar
     .accesskey = S
+cfr-doorhanger-socialtracking-dont-show-again = Betg pli ma mussar tals messadis
+    .accesskey = B
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } ha fermà qua ina rait sociala che fastizescha
 cfr-doorhanger-socialtracking-description = La protecziun da datas è impurtanta. { -brand-short-name } blochescha ussa fastizaders frequents da social media e limitescha la quantitad da datas che po vegnir rimnada davart tias activitads online.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } ha bloccà in improntader sin questa pagina
 cfr-doorhanger-fingerprinters-description = La protecziun da datas è impurtanta. { -brand-short-name } blochescha ussa improntaders che rimnan infurmaziuns univocas che permettan dad identifitgar tes apparat per ta fastizar.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } ha bloccà in criptominier sin questa pagina
 cfr-doorhanger-cryptominers-description = La protecziun da datas è impurtanta. { -brand-short-name } blochescha ussa criptominiers che maldovran las resursas da tes computer per generar daners digitals.
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+        [one] { -brand-short-name } ha bloccà passa <b>{ $blockedCount }</b> fastizader dapi { $date }!
+       *[other] { -brand-short-name } ha bloccà passa <b>{ $blockedCount }</b> fastizaders dapi { $date }!
+    }
+cfr-doorhanger-milestone-ok-button = Vesair tut
+    .accesskey = s

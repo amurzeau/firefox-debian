@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Daty w trajnym składowaku składować
 urlbar-addons-notification-anchor =
     .tooltiptext = Wobłuk zdźělenki přidatkoweje instalacije wočinić
+urlbar-tip-help-icon =
+    .title = Pomoc sej wobstarać
+urlbar-geolocation-blocked =
+    .tooltiptext = Sće tutomu websydłu informacijie wo stejnišću zapowědźił.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Sće zdźělenki za tute websydło zablokował.
+urlbar-camera-blocked =
+    .tooltiptext = Sće swoju kameru za tute websydło zablokował.
+urlbar-microphone-blocked =
+    .tooltiptext = Sće swój mikrofon za tute websydło zablokował.
+urlbar-screen-blocked =
+    .tooltiptext = Sće tutomu websydłu dźělenje swojeje wobrazowki zakazał.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Sće trajny składowak za tute websydło zablokował.
+urlbar-popup-blocked =
+    .tooltiptext = Sće wuskakowace wokna za tute websydło zablokował.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Sće awtomatiske wothraće medijow ze zynkom za tute websydło zablokował.
+urlbar-canvas-blocked =
+    .tooltiptext = Sće přistup ke canvasowym datam za tute websydło zablokował.
+urlbar-midi-blocked =
+    .tooltiptext = Sće přistup na MIDI za tute websydło zablokował.
+urlbar-install-blocked =
+    .tooltiptext = Sće instalowanje přidatkow za tute websydło zablokował.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Modus połneje wobrazowki wopušćić
     .accesskey = M
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Nětko pytać z:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Pytanske nastajenja
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Pytanske nastajenja změnić
+search-one-offs-context-open-new-tab =
+    .label = W nowym rajtarku pytać
+    .accesskey = r
+search-one-offs-context-set-as-default =
+    .label = Jako standardnu pytawu nastajić
+    .accesskey = d
+search-one-offs-context-set-as-default-private =
+    .label = Jako standardnu pytawu za priwatne wokna nastajić
+    .accesskey = J

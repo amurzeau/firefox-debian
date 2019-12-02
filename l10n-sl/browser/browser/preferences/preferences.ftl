@@ -14,6 +14,11 @@ pref-page =
             [windows] Možnosti
            *[other] Nastavitve
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Možnosti
+       *[other] Nastavitve
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -288,6 +293,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Uporabi { $plugin-name } (v { -brand-short-name })
@@ -463,7 +472,6 @@ choose-bookmark =
 
 home-prefs-content-header = Vsebina domače strani Firefoxa
 home-prefs-content-description = Izberite vsebino, ki jo želite prikazati na domači strani Firefoxa.
-home-prefs-content-discovery-description = Odkrivanje vsebine na Firefoxovi domači strani vam pomaga odkriti kakovostne članke na spletu, ki bi vas utegnili zanimati.
 home-prefs-search-header =
     .label = Iskanje po spletu
 home-prefs-topsites-header =
@@ -513,7 +521,8 @@ search-bar-shown =
     .label = Dodaj iskalno vrstico v orodno vrstico
 search-engine-default-header = Privzet iskalnik
 search-engine-default-desc = Izberite privzeti iskalnik, ki ga želite uporabiti v naslovni in iskalni vrstici.
-search-engine-default-private-desc = Izberite privzeti iskalnik v zasebnih oknih.
+search-engine-default-desc-2 = To je vaš privzeti iskalnik v naslovni vrstici in iskalni vrstici. Kadarkoli ga lahko zamenjate.
+search-engine-default-private-desc-2 = Izberite drug privzet iskalnik posebej za zasebna okna
 search-separate-default-engine =
     .label = Uporabi ta iskalnik v zasebnih oknih
     .accesskey = i
@@ -532,6 +541,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Med rezultati naslovne vrstice prikaži predloge iskanja pred zgodovino brskanja
+search-show-suggestions-private-windows =
+    .label = Prikazuj predloge iskanja v zasebnih oknih
 suggestions-addressbar-settings = Spremeni nastavitve za zgodovino brskanja, zaznamke in predloge zavihkov
 search-suggestions-cant-show = Predlogi iskanja v vrstici z naslovom ne bodo prikazani, ker ste { -brand-short-name } nastavili tako, da si nikoli ne zapomni zgodovine.
 search-one-click-header = Iskalniki, dostopni z enim klikom
@@ -581,6 +592,9 @@ sync-signedout-account-create = Še nimate računa? Začnite
 sync-signedout-account-signin =
     .label = Prijava …
     .accesskey = P
+sync-signedout-account-signin2 =
+    .label = Prijava v { -sync-brand-short-name } …
+    .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -724,7 +738,11 @@ privacy-header = Zasebnost brskalnika
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Prijave in gesla
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Ponujaj shranjevanje prijav in gesel za spletne strani
     .accesskey = g
@@ -738,6 +756,7 @@ forms-breach-alerts =
     .label = Prikaži opozorila o geslih za ogrožene spletne strani
     .accesskey = P
 forms-breach-alerts-learn-more-link = Več o tem
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Samodejno izpolni prijave in gesla
     .accesskey = S

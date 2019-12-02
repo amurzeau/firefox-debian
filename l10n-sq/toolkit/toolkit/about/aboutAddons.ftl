@@ -185,6 +185,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Aktivizoje
     .tooltiptext = Aktivizoni kontrollin e përditësimit të shtesave
+extensions-warning-safe-mode = Mënyra e Parrezik ka çaktivizuar krejt shtesat.
+extensions-warning-check-compatibility = Kontrolli i përputhshmërisë së shtesave është i çaktivizuar. Keni shtesa të papërputhshme.
+extensions-warning-check-compatibility-button = Aktivizoje
+    .title = Aktivizoni kontrollin e përputhshmërisë së shtesave
+extensions-warning-update-security = Kontrolli i përditësimit të shtesave është i çaktivizuar. Përditësimet mund t'ju hapin punë.
+extensions-warning-update-security-button = Aktivizoje
+    .title = Aktivizoni kontrollin e përditësimit të shtesave
 
 ## Strings connected to add-on updates
 
@@ -194,12 +201,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Shihni Përditësimet e Fundit
     .accesskey = S
+addon-updates-check-for-updates = Kontrollo për Përditësime
+    .accesskey = K
+addon-updates-view-updates = Shihni Përditësimet e Fundit
+    .accesskey = S
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Përditësoji Shtesat Vetvetiu
+    .accesskey = P
+addon-updates-update-addons-automatically = Përditësoji Shtesat Vetvetiu
     .accesskey = P
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -213,6 +226,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = V
 extensions-updates-reset-updates-to-manual =
     .label = Bëji Krejt Shtesat të Përditësohen Dorazi
+    .accesskey = D
+addon-updates-reset-updates-to-automatic = Bëji Krejt Shtesat të Përditësohen Vetvetiu
+    .accesskey = V
+addon-updates-reset-updates-to-manual = Bëji Krejt Shtesat të Përditësohen Dorazi
     .accesskey = D
 
 ## Status messages displayed when updating add-ons
@@ -232,11 +249,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Nuk u gjetën përditësime
     .tooltiptext = Instaloni përditësimet e mundshme prej kësaj liste
+addon-updates-updating = Shtesat po përditësohen
+addon-updates-installed = Shtesat tuaja u përditësuan.
+addon-updates-none-found = Nuk u gjetën përditësime
+addon-updates-manual-updates-found = Shihni Përditësimet e Gatshme
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Instaloni Shtesë Prej Kartele…
+    .accesskey = I
+addon-install-from-file-dialog-title = Përzgjidhni shtesë për instalim
+addon-install-from-file-filter-name = Shtesa
+addon-open-about-debugging = Diagnostikoni Shtesa
+    .accesskey = D
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Administroni Shkurtore Zgjerimesh
+    .accesskey = A
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Administroni Shkurtore Zgjerimesh
     .accesskey = A
 shortcuts-no-addons = S’keni të aktivizuar ndonjë zgjerim.
 shortcuts-no-commands = Zgjerimet vijuese nuk kanë shkurtore:
@@ -304,6 +337,8 @@ addon-options-button =
 
 report-addon-button = Raportoje
 remove-addon-button = Hiqe
+# The link will always be shown after the other text.
+remove-addon-disabled-button = S’mund të Hiqet <a data-l10n-name="link">Pse?</a>
 disable-addon-button = Çaktivizoje
 enable-addon-button = Aktivizoje
 expand-addon-button = Më tepër Mundësi
@@ -397,3 +432,18 @@ recommended-themes-heading = Tema të Këshilluara
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Ju ka kapluar fryma krijuese? <a data-l10n-name="link">Krijoni temën tuaj me  Firefox Color.</a>
+
+## Page headings
+
+extension-heading = Administroni zgjerimet tuaja
+theme-heading = Administroni temat tuaja
+plugin-heading = Administroni shtojcat tuaja
+dictionary-heading = Administroni fjalorët tuaj
+locale-heading = Administroni gjuhët tuaja
+updates-heading = Administroni Përditësimet Tuaja
+discover-heading = Personalizoni { -brand-short-name }-in Tuaj
+shortcuts-heading = Administroni Shkurtore Zgjerimesh
+theme-heading-search-label = Gjeni më tepër tema
+extension-heading-search-label = Gjeni më tepër zgjerime
+addons-heading-search-input =
+    .placeholder = Kërkoni te addons.mozilla.org

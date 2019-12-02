@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Tallenna tietoja pysyvään tallennustilaan
 urlbar-addons-notification-anchor =
     .tooltiptext = Avaa lisäosan asentamisen viestipaneeli
+urlbar-tip-help-icon =
+    .title = Apua ongelmiin
+urlbar-geolocation-blocked =
+    .tooltiptext = Olet estänyt sijaintitiedot tältä sivustolta.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Olet estänyt ilmoitukset tältä sivustolta.
+urlbar-camera-blocked =
+    .tooltiptext = Olet estänyt kameran tältä sivustolta.
+urlbar-microphone-blocked =
+    .tooltiptext = Olet estänyt mikrofonin tältä sivustolta.
+urlbar-screen-blocked =
+    .tooltiptext = Olet estänyt tämän sivuston jakamasta näyttöäsi.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Olet estänyt pysyvän tallennustilan käytön tältä sivustolta.
+urlbar-popup-blocked =
+    .tooltiptext = Olet estänyt ponnahdusikkunat tältä sivustolta.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Olet estänyt äänellisen median automaattisen toistamisen tältä sivustolta.
+urlbar-canvas-blocked =
+    .tooltiptext = Olet estänyt kanvaksen sisällön lukemisen tältä sivustolta.
+urlbar-midi-blocked =
+    .tooltiptext = Olet estänyt MIDI-käytön tältä sivustolta.
+urlbar-install-blocked =
+    .tooltiptext = Olet estänyt lisäosien asennuksen tältä sivustolta.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Poistu kokoruututilasta
     .accesskey = o
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Tällä kertaa käytä hakuun:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Muuta hakuasetuksia
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Muuta hakuasetuksia
+search-one-offs-context-open-new-tab =
+    .label = Etsi uudessa välilehdessä
+    .accesskey = E
+search-one-offs-context-set-as-default =
+    .label = Aseta oletushakukoneeksi
+    .accesskey = A
+search-one-offs-context-set-as-default-private =
+    .label = Aseta oletushakukoneeksi yksityisissä ikkunoissa
+    .accesskey = A

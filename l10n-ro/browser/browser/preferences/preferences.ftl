@@ -14,6 +14,11 @@ pref-page =
             [windows] Opțiuni
            *[other] Preferințe
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Opțiuni
+       *[other] Preferințe
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -210,7 +215,7 @@ choose-browser-language-description = Alege limbile folosite pentru afișarea me
 manage-browser-languages-button =
     .label = Setează alternative...
     .accesskey = l
-confirm-browser-language-change-description = Repornește { -brand-short-name } pentru aplicarea modificărilor
+confirm-browser-language-change-description = Repornește { -brand-short-name } pentru a aplica aceste modificări
 confirm-browser-language-change-button = Aplică și repornește
 translate-web-pages =
     .label = Tradu conținutul web
@@ -460,7 +465,6 @@ choose-bookmark =
 
 home-prefs-content-header = Conținutul paginii de start Firefox
 home-prefs-content-description = Alege ce conținut vrei pe ecranul de start Firefox.
-home-prefs-content-discovery-description = Descoperirea de conținut din pagina de start Firefox îți permite să descoperi articole relevante de calitate înaltă de pe web.
 home-prefs-search-header =
     .label = Căutare web
 home-prefs-topsites-header =
@@ -558,6 +562,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Ia webul cu tine
 sync-signedout-description = Sincronizează marcajele, istoricul, filele, parolele, suplimentele și preferințele pe toate dispozitivele.
 sync-signedout-account-title = Conectează-te cu un { -fxaccount-brand-name }
@@ -577,6 +585,9 @@ sync-signedout-account-signin =
 sync-mobile-promo = Descarcă Firefox pentru <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> sau <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> ca să sincronizezi datele cu dispozitivul mobil.
 
 ## Sync Section - Signed in
+
+
+## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Schimbă fotografia de profil
@@ -598,6 +609,15 @@ sync-sign-in =
     .accesskey = g
 sync-signedin-settings-header = Setări de sincronizare
 sync-signedin-settings-desc = Alege ce să sincronizezi pe dispozitive folosind { -brand-short-name }.
+
+## Sync section - enabling or disabling sync.
+
+
+## The list of things currently syncing.
+
+
+## The "Choose what to sync" dialog.
+
 sync-engine-bookmarks =
     .label = Marcaje
     .accesskey = M
@@ -632,6 +652,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Setările generale, de confidențialitate și securitate pe care le-ai schimbat
     .accesskey = s
+
+## The device name controls.
+
 sync-device-name-header = Numele dispozitivului
 sync-device-name-change =
     .label = Schimbă numele dispozitivului
@@ -654,6 +677,9 @@ privacy-header = Confidențialitate în browser
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Autentificări și parole
 forms-ask-to-save-logins =
     .label = Solicită salvarea autentificărilor și parolelor pentru site-urile web
@@ -665,7 +691,7 @@ forms-generate-passwords =
     .label = Sugerează și generează parole puternice
     .accesskey = u
 forms-breach-alerts =
-    .label = Afișează alerte despre parole pentru site-uri web sparte
+    .label = Afișează alerte despre parole pentru site-urile web a căror securitate a fost încălcată
     .accesskey = b
 forms-breach-alerts-learn-more-link = Află mai multe
 forms-fill-logins-and-passwords =

@@ -192,6 +192,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Ativar
     .tooltiptext = Ativar verificação de segurança da atualização de extensões
+extensions-warning-safe-mode = Todas as extensões foram desativadas pelo modo de segurança.
+extensions-warning-check-compatibility = A verificação de compatibilidade de extensões está desativada. Você pode ter extensões incompatíveis.
+extensions-warning-check-compatibility-button = Ativar
+    .title = Ativar verificação de compatibilidade de extensões
+extensions-warning-update-security = A verificação de segurança de atualizações de extensões está desativada. Atualizações de extensões podem comprometer seu computador.
+extensions-warning-update-security-button = Ativar
+    .title = Ativar verificação de segurança da atualização de extensões
 
 ## Strings connected to add-on updates
 
@@ -201,12 +208,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Ver atualizações recentes
     .accesskey = E
+addon-updates-check-for-updates = Verificar se há atualizações
+    .accesskey = V
+addon-updates-view-updates = Ver atualizações recentes
+    .accesskey = e
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Atualizar automaticamente
+    .accesskey = A
+addon-updates-update-addons-automatically = Atualizar automaticamente
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -220,6 +233,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = D
 extensions-updates-reset-updates-to-manual =
     .label = Definir atualização manual de tudo
+    .accesskey = D
+addon-updates-reset-updates-to-automatic = Definir atualização automática de tudo
+    .accesskey = D
+addon-updates-reset-updates-to-manual = Definir atualização manual de tudo
     .accesskey = D
 
 ## Status messages displayed when updating add-ons
@@ -239,11 +256,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Instalar atualizações
     .tooltiptext = Instalar as atualizações disponíveis desta lista
+addon-updates-updating = Atualizando extensões
+addon-updates-installed = Suas extensões foram atualizadas.
+addon-updates-none-found = Nenhuma atualização encontrada
+addon-updates-manual-updates-found = Ver atualizações disponíveis
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Instalar de um arquivo…
+    .accesskey = I
+addon-install-from-file-dialog-title = Selecionar extensão para instalar
+addon-install-from-file-filter-name = Extensões
+addon-open-about-debugging = Depurar extensões
+    .accesskey = x
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Gerenciar atalhos de extensões
+    .accesskey = h
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Gerenciar atalhos de extensões
     .accesskey = h
 shortcuts-no-addons = Você não tem nenhuma extensão ativada.
 shortcuts-no-commands = As seguintes extensões não têm atalhos de teclado:
@@ -315,6 +348,8 @@ addon-options-button =
 
 report-addon-button = Denunciar
 remove-addon-button = Remover
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Não pode ser removido <a data-l10n-name="link">Por quê?</a>
 disable-addon-button = Desativar
 enable-addon-button = Ativar
 expand-addon-button = Mais opções
@@ -408,3 +443,18 @@ recommended-themes-heading = Temas recomendados
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Sentindo criatividade? <a data-l10n-name="link">Crie seu próprio tema com o Firefox Color.</a>
+
+## Page headings
+
+extension-heading = Gerenciamento de extensões
+theme-heading = Gerenciamento de temas
+plugin-heading = Gerenciamento de plugins
+dictionary-heading = Gerenciamento de dicionários
+locale-heading = Gerenciamento de idiomas
+updates-heading = Gerencie suas atualizações
+discover-heading = Personalize o { -brand-short-name }
+shortcuts-heading = Gerenciar atalhos de extensões
+theme-heading-search-label = Encontrar mais temas
+extension-heading-search-label = Encontrar mais extensões
+addons-heading-search-input =
+    .placeholder = Pesquisar em addons.mozilla.org

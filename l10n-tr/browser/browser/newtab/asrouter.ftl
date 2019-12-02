@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = geliştiren: { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Öneri
+cfr-doorhanger-extension-notification2 = Öneri
+    .tooltiptext = Eklenti önerisi
+    .a11y-announcement = Eklenti öneriniz var
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Öneri
+    .tooltiptext = Özellik önerisi
+    .a11y-announcement = Özellik öneriniz var
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -78,6 +86,9 @@ cfr-protections-panel-link-text = Daha fazla bilgi alın
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Yeni özellik:
 cfr-whatsnew-button =
     .label = Yeni neler var?
     .tooltiptext = Yeni neler var?
@@ -140,9 +151,24 @@ cfr-doorhanger-socialtracking-ok-button = Korumalara bak
     .accesskey = K
 cfr-doorhanger-socialtracking-close-button = Kapat
     .accesskey = a
+cfr-doorhanger-socialtracking-dont-show-again = Bunun gibi mesajlar bir daha gösterme
+    .accesskey = B
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } bir sosyal ağın sizi izlemesini engelledi
 cfr-doorhanger-socialtracking-description = Gizliliğiniz bizim için önemli. { -brand-short-name } artık yaygın sosya medya takipçilerini engelliyor, böylece internette yaptıklarınız hakkında daha az veri toplayabilmelerini sağlıyor.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } bu sayfadaki bir parmak izi toplayıcıyı engelledi
-cfr-doorhanger-fingerprinters-description = Gizliliğiniz bizim için önemli. { -brand-short-name }, sizi izlemek için cihazınızı tanımlayabilecek bilgileri toplayan parmak izi toplayıcılarını kendiliğinden engelliyor.
+cfr-doorhanger-fingerprinters-description = Gizliliğiniz bizim için önemli. { -brand-short-name }, sizi izlemek için cihazınızı tanımlayabilecek bilgileri toplayan parmak izi toplayıcıları kendiliğinden engelliyor.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } bu sayfadaki bir kripto madencisini engelledi
 cfr-doorhanger-cryptominers-description = Gizliliğiniz bizim için önemli. { -brand-short-name }, bilgisayarınızın işlemcisini dijital para üretmek için kullanan kripto madencilerini kendiliğinden engelliyor.
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+        [one] { -brand-short-name } { $date } tarihinden beri <b>{ $blockedCount }</b> takipçiyi engelledi!
+       *[other] { -brand-short-name } { $date } tarihinden beri <b>{ $blockedCount }</b> takipçiyi engelledi!
+    }
+cfr-doorhanger-milestone-ok-button = Tümünü göster
+    .accesskey = T

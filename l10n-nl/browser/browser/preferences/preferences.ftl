@@ -14,6 +14,11 @@ pref-page =
             [windows] Opties
            *[other] Voorkeuren
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Opties
+       *[other] Voorkeuren
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -282,6 +287,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } gebruiken (in { -brand-short-name })
@@ -457,7 +466,6 @@ choose-bookmark =
 
 home-prefs-content-header = Inhoud van Firefox-startpagina
 home-prefs-content-description = Kies welke inhoud u op uw Firefox-startscherm wilt laten weergeven.
-home-prefs-content-discovery-description = Via Content Discovery op de Firefox-startpagina kunt u relevante artikelen op het hele web met hoge kwaliteit vinden.
 home-prefs-search-header =
     .label = Zoeken op het web
 home-prefs-topsites-header =
@@ -505,7 +513,8 @@ search-bar-shown =
     .label = Zoekbalk toevoegen in werkbalk
 search-engine-default-header = Standaardzoekmachine
 search-engine-default-desc = Kies de standaardzoekmachine die u in de adresbalk en zoekbalk wilt gebruiken.
-search-engine-default-private-desc = Kies de standaardzoekmachine die u in privévensters wilt gebruiken.
+search-engine-default-desc-2 = Dit is uw standaardzoekmachine in de adresbalk en de zoekbalk. U kunt deze op elk gewenst moment wijzigen.
+search-engine-default-private-desc-2 = Kies een andere standaardzoekmachine die u alleen in privévensters wilt gebruiken
 search-separate-default-engine =
     .label = Deze zoekmachine in privévensters gebruiken
     .accesskey = u
@@ -524,6 +533,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Zoeksuggesties boven browsergeschiedenis tonen in adresbalkresultaten
+search-show-suggestions-private-windows =
+    .label = Zoeksuggesties weergeven in privévensters
 suggestions-addressbar-settings = Voorkeuren voor navigatiegeschiedenis, bladwijzers en tabbladsuggesties wijzigen
 search-suggestions-cant-show = Zoeksuggesties worden niet in locatiebalkresultaten getoond, omdat u { -brand-short-name } hebt geconfigureerd om nooit geschiedenis te onthouden.
 search-one-click-header = Eén-klik-zoekmachines
@@ -572,6 +583,9 @@ sync-signedout-account-create = Hebt u geen account? Beginnen
     .accesskey = c
 sync-signedout-account-signin =
     .label = Aanmelden…
+    .accesskey = A
+sync-signedout-account-signin2 =
+    .label = Aanmelden bij { -sync-brand-short-name }…
     .accesskey = A
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -665,7 +679,7 @@ sync-engine-tabs =
     .accesskey = t
 sync-engine-logins =
     .label = Aanmeldingen
-    .tooltiptext = Gebruikersnamen en wachtwoorden die u hebt opgeslagen
+    .tooltiptext = Door u opgeslagen gebruikersnamen en wachtwoorden
     .accesskey = n
 sync-engine-logins-passwords =
     .label = Aanmeldingen en wachtwoorden
@@ -716,7 +730,11 @@ privacy-header = Browserprivacy
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Aanmeldingen en wachtwoorden
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Vragen voor opslaan van aanmeldingen en wachtwoorden voor websites
     .accesskey = r
@@ -730,6 +748,7 @@ forms-breach-alerts =
     .label = Waarschuwingen over wachtwoorden voor getroffen websites tonen
     .accesskey = f
 forms-breach-alerts-learn-more-link = Meer info
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Aanmeldingen en wachtwoorden automatisch invullen
     .accesskey = A

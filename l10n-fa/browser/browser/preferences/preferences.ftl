@@ -14,6 +14,11 @@ pref-page =
             [windows] گزینه‌ها
            *[other] ترجیحات
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] گزینه‌ها
+       *[other] ترجیحات
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -307,7 +312,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = محتوا مدیریت حقوق دیجیتال(DRM)
 play-drm-content =
@@ -390,6 +395,12 @@ browsing-picture-in-picture-toggle-enabled =
     .label = کنترل‌های ویدیویی تصویر در تصویر را فعال کنید
     .accesskey = E
 browsing-picture-in-picture-learn-more = بیشتر بدانید
+browsing-cfr-recommendations =
+    .label = پیشنهاد دادن افزونه‌ها همزمان با مرور
+    .accesskey = R
+browsing-cfr-features =
+    .label = پیشنهاد دادن ویژگی‌ها همزمان با مرور وب
+    .accesskey = f
 browsing-cfr-recommendations-learn-more = بیشتر بدانید
 
 ## General Section - Proxy
@@ -442,7 +453,6 @@ choose-bookmark =
 
 home-prefs-content-header = محتوای صفحه خانگی فایرفاکس
 home-prefs-content-description = انتخاب کنید که چه محتوایی می‌خواهید در صفحه خانگیِ فایرفاکس خود ببینید.
-home-prefs-content-discovery-description = سرویس کشف محتوا در فایرفاکس به شما قابلیت پیدا کردن مطالبِ با کیفیت و مرتبط را در سراسر وب می‌دهد.
 home-prefs-search-header =
     .label = جست‌وجو وب
 home-prefs-topsites-header =
@@ -490,6 +500,11 @@ search-bar-shown =
     .label = اضافه کردن نوار جست‌وجو به نوار ابزار
 search-engine-default-header = موتور جست‌وجو پیش‌فرض
 search-engine-default-desc = انتخاب یک موتور جست‌وجو پیش فرض برای استفاده در نوار ادرس و نوار جست‌وجو
+search-separate-default-engine =
+    .label = از این موتور جستجو در پنجره‌های ناشناس استفاده کنید
+    .accesskey = U
+search-suggestions-header = پیشنهادهای جستجو
+search-suggestions-desc = نحوه ارائه پیشنهادات از موتورهای جستجو را انتخاب کنید.
 search-suggestions-option =
     .label = عرضه پیشنهادهای جست‌وجو
     .accesskey = ج
@@ -503,6 +518,7 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = نمایش پیشنهادات جست‌وجو در بالا ی تاریخچه مرورگر در نوار آدرس
+suggestions-addressbar-settings = ترجیحات برای تاریخچهٔ مرور، نشانک‌ها و پیشنهادات زبانه را تغییر دهید
 search-suggestions-cant-show = پیشنهادهای جست‌وجو در نوار مکان نمایش داده نخواهد شده زیرا شما { -brand-short-name } را به گونه‌ای تنظیم کرده‌اید که هیچ تاریخچه‌ای را نگه ندارد.
 search-one-click-header = موتورهای جست‌وجوی تک-کلیکی
 search-one-click-desc = در هنگام وارد کردن کلید واژه‌ها جهت جست‌وجو، موتورهای جست‌وجو جایگزین را از قسمت پایینی نوار آدرس یا نوار جست‌وجو انتخاب کنید.
@@ -618,6 +634,9 @@ sync-currently-syncing-prefs =
         [windows] گزینه‌ها
        *[other] ترجیحات
     }
+sync-change-options =
+    .label = تغییر…
+    .accesskey = c
 
 ## The "Choose what to sync" dialog.
 
@@ -691,6 +710,9 @@ privacy-header = حریم خصوصی مرورگر
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = ورودها و گذرواژه‌ها
 forms-ask-to-save-logins =
     .label = در مورد ذخیره کردن نام‌کاربری و گذرواژه‌ها برای پایگاه‌ها سوال کن
@@ -701,6 +723,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = پیشنهاد و تولید گذرواژه‌های قوی
     .accesskey = u
+forms-breach-alerts =
+    .label = هشدارهای مربوط به گذرواژه‌ها در خصوص سایت‌های هک شده را نمایش بده
+    .accesskey = b
 forms-breach-alerts-learn-more-link = بیشتر بدانید
 forms-saved-logins =
     .label = ورودهای ذخیره شده
@@ -839,7 +864,7 @@ enhanced-tracking-protection-setting-custom =
     .label = سفارشی
     .accesskey = C
 
-
+##
 
 content-blocking-all-cookies = همه کوکی‌ها
 content-blocking-all-windows-trackers = ردیاب‌های شناخته شده در تمام پنجره‌ها
@@ -848,8 +873,14 @@ content-blocking-cryptominers = استخراج کننده‌های رمزارز�
 content-blocking-warning-title = هوشیار باشید!
 content-blocking-learn-how = بیشتر بدانید
 content-blocking-warning-learn-how = بیشتر بدانید
+content-blocking-reload-tabs-button =
+    .label = بارگذاری مجدد تمام زبانه‌ها
+    .accesskey = R
 content-blocking-trackers-label =
     .label = ردیاب‌ها
+    .accesskey = T
+content-blocking-tracking-content-label =
+    .label = محتوای ردیابی
     .accesskey = T
 content-blocking-tracking-protection-option-all-windows =
     .label = در همه پنجره‌ها
@@ -861,6 +892,8 @@ content-blocking-tracking-protection-change-block-list = تغییر لیست م�
 content-blocking-cookies-label =
     .label = کوکی‌ها
     .accesskey = C
+content-blocking-expand-section =
+    .tooltiptext = اطلاعات بیشتر
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
     .label = استخراج کننده‌های رمزارزها
@@ -901,6 +934,7 @@ permissions-block-autoplay-media2 =
 permissions-block-autoplay-media-exceptions =
     .label = استثاناها…
     .accesskey = E
+permissions-autoplay = پخش خودکار
 permissions-autoplay-settings =
     .label = تنظیمات...
     .accesskey = t

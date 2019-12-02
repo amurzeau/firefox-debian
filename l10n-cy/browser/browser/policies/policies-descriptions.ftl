@@ -33,6 +33,7 @@ policy-DisableFirefoxStudies = Rhwystro { -brand-short-name } rhag rhedeg astudi
 policy-DisableForgetButton = Rhwystro mynediad i'r botwm Anghofio.
 policy-DisableFormHistory = Peidio cofio chwilio a hanes ffurflenni.
 policy-DisableMasterPasswordCreation = Os gwir, nid oes modd creu prif gyfrinair.
+policy-DisablePasswordReveal = Peidiwch â gadael i gyfrineiriau gael eu datgelu mewn mewngofnodi sydd wedi'u cadw.
 policy-DisablePocket = Analluogi'r nodwedd i gadw tudalennau gwe i Pocket.
 policy-DisablePrivateBrowsing = Analluogi Pori Preifat.
 policy-DisableProfileImport = Analluogi'r gorchymyn dewislen i fewnforio data o borwr arall.
@@ -61,6 +62,7 @@ policy-HardwareAcceleration = Os gau, diffodd cyflymu caledwedd.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Gosod ac o ddewis cloi'r dudalen cartref.
 policy-InstallAddonsPermission = Caniatáu i rai gwefannau i osod ychwanegion
+policy-LegacyProfiles = Analluoga'r nodwedd gan orfodi proffil ar wahân ar gyfer pob gosodiad
 policy-LocalFileLinks = Caniatáu i wefannau penodol gysylltu i ffeiliau lleol.
 policy-NetworkPrediction = Galluogi neu analluoga rhagfynegiad rhwydwaith (rhagosod ymlaen DNS).
 policy-NewTabPage = Galluogi neu analluogi tudalen Tab Newydd.

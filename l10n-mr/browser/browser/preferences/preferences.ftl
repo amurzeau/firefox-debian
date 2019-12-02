@@ -12,6 +12,11 @@ pref-page =
             [windows] पर्याय
            *[other] प्राधान्यक्रम
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] पर्याय
+       *[other] प्राधान्यक्रम
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -274,6 +279,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } वापरा ({ -brand-short-name } अंतर्गत)
@@ -328,6 +337,12 @@ update-application-use-service =
 update-enable-search-update =
     .label = शोध इंजिन आपोआप अद्ययावत करा
     .accesskey = e
+update-setting-write-failure-title = अद्यतन प्राधान्ये जतन करताना त्रुटी
+update-in-progress-title = अद्यतन प्रगतीपथावर
+update-in-progress-ok-button = रद्द करा
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = पुढे चला
 
 ## General Section - Performance
 
@@ -367,6 +382,7 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = लिहीण्यास सुरूवात केल्यावर मजकुर शोधा
     .accesskey = x
+browsing-picture-in-picture-learn-more = अधिक जाणा
 browsing-cfr-recommendations =
     .label = आपण ब्राउझ करता तेव्हा विस्तारांची शिफारस करा
     .accesskey = R
@@ -472,6 +488,7 @@ search-bar-shown =
     .label = साधनपट्टीत शोध पट्टी जोडा
 search-engine-default-header = पूर्वनिर्धारित शोध इंजिन
 search-engine-default-desc = पत्ता पट्टी आणि शोध पट्टी मध्ये वापरण्यासाठी पूर्वनिर्धारित शोध इंजिन निवडा
+search-suggestions-header = शोध सूचना
 search-suggestions-option =
     .label = शोध सूचना पुरवा
     .accesskey = s
@@ -521,6 +538,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = आपला वेब आपल्याबरोबर घेऊन चला
 sync-signedout-description = आपल्या सर्व साधणांकरीता आपल्या वाचनखूणा, इतिहास, टॅब, पासवर्ड, ॲड-ऑन्स्, आणि प्राधान्ये समक्रमित करा.
 sync-signedout-account-title = { -fxaccount-brand-name } सह जोडा
@@ -541,11 +562,17 @@ sync-mobile-promo = साठी डाउनलोड करा <img data-l10n-
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = प्रोफाइल प्रतिमा बदला
 sync-disconnect =
     .label = जोडणी मोडा…
     .accesskey = D
+sync-sign-out =
+    .label = साइन आउट करा…
+    .accesskey = g
 sync-manage-account = खाते व्यवस्थापित करा
     .accesskey = o
 sync-signedin-unverified = { $email } चाचणी झाली नाही.
@@ -561,6 +588,34 @@ sync-sign-in =
     .accesskey = g
 sync-signedin-settings-header = ताळमेळ सेटिंग्ज
 sync-signedin-settings-desc = { -brand-short-name } वापरून आपल्या उपकरणांवर काय सिंक्रोनाईझ करायचे ते निवडा.
+
+## Sync section - enabling or disabling sync.
+
+prefs-sync-now =
+    .labelnotsyncing = आत्ता सिंक करा
+    .accesskeynotsyncing = N
+    .labelsyncing = सिंक करत आहे
+
+## The list of things currently syncing.
+
+sync-currently-syncing-bookmarks = वाचनखूणा
+sync-currently-syncing-history = इतिहास
+sync-currently-syncing-tabs = खुले टॅब
+sync-currently-syncing-logins-passwords = लॉगिन आणि पासवर्ड
+sync-currently-syncing-addresses = पत्ते
+sync-currently-syncing-creditcards = क्रेडिट कार्ड
+sync-currently-syncing-addons = ॲड-ऑन
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] पर्याय
+       *[other] प्राधान्यक्रम
+    }
+sync-change-options =
+    .label = बदला…
+    .accesskey = C
+
+## The "Choose what to sync" dialog.
+
 sync-engine-bookmarks =
     .label = वाचनखुणा
     .accesskey = m
@@ -574,6 +629,10 @@ sync-engine-tabs =
 sync-engine-logins =
     .label = लॉगिन्स
     .tooltiptext = आपण साठवलेली वापरकर्तानावे व पासवर्ड
+    .accesskey = L
+sync-engine-logins-passwords =
+    .label = लॉगिन आणि पासवर्ड
+    .tooltiptext = आपण जतन केलेली वापरकर्ता नावे आणि पासवर्ड
     .accesskey = L
 sync-engine-addresses =
     .label = पत्ते
@@ -595,6 +654,9 @@ sync-engine-prefs =
         }
     .tooltiptext = आपण बदललेले साधारण, सुरक्षा आणि गोपनीयता सेटिंग
     .accesskey = s
+
+## The device name controls.
+
 sync-device-name-header = साधनाचे नाव:
 sync-device-name-change =
     .label = साधनाचे नाव बदला…
@@ -617,6 +679,9 @@ privacy-header = ब्राऊजर गोपनीयता
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = लॉगिन आणि पासवर्ड
 forms-ask-to-save-logins =
     .label = संकेतस्थळासाठी लॉगिन आणि पासवर्ड साठवण्यासाठी विचारा
@@ -624,6 +689,10 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = अपवाद…
     .accesskey = x
+forms-generate-passwords =
+    .label = सशक्त पासवर्ड सुचवून तयार करा
+    .accesskey = u
+forms-breach-alerts-learn-more-link = अधिक जाणा
 forms-saved-logins =
     .label = साठवलेले लॉगइन्स…
     .accesskey = L
@@ -726,6 +795,7 @@ addressbar-suggestions-settings = शोध इंजिनसाठी सू�
 ## Privacy Section - Content Blocking
 
 content-blocking-header = मजकूर अडवणी
+content-blocking-enhanced-tracking-protection = वर्धित ट्रॅकिंग संरक्षण
 content-blocking-learn-more = अधिक जाणून घ्या
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -758,17 +828,28 @@ enhanced-tracking-protection-setting-custom =
 
 ##
 
+content-blocking-etp-custom-desc = कोणती ट्रॅकर्स आणि स्क्रिप्ट अवरोधित करायची ते निवडा.
+content-blocking-cross-site-tracking-cookies = क्रॉस-साईट ट्रॅकिंग कुकी
+content-blocking-social-media-trackers = सोशल मीडिया ट्रॅकर
 content-blocking-all-cookies = सर्व कुकीज
 content-blocking-unvisited-cookies = भेट न दिलेल्या साइटवरील कुकीज
 content-blocking-all-windows-trackers = सर्व विंडोमध्ये ज्ञात ट्रॅकर
+content-blocking-all-windows-tracking-content = सर्व विंडोमधील सामग्री ट्रॅक करणे
+content-blocking-all-third-party-cookies = सर्व तृतीय-पक्ष कुकीज
+content-blocking-cryptominers = क्रिप्टोमाइनर
+content-blocking-fingerprinters = फिंगरप्रिंटर
 content-blocking-warning-title = सावधान!
 content-blocking-learn-how = कसे ते जाणा
+content-blocking-warning-learn-how = कसे ते जाणा
 content-blocking-reload-description = हे बदल लागू करण्यासाठी आपले टॅब रीलोड करावे लागतील.
 content-blocking-reload-tabs-button =
     .label = सर्व टॅब्ज पुन्हा लोड करा
     .accesskey = R
 content-blocking-trackers-label =
     .label = ट्रॅकर
+    .accesskey = T
+content-blocking-tracking-content-label =
+    .label = ट्रॅकिंग मजकूर
     .accesskey = T
 content-blocking-tracking-protection-option-all-windows =
     .label = सर्व पटलामध्ये
@@ -782,6 +863,15 @@ content-blocking-cookies-label =
     .accesskey = C
 content-blocking-expand-section =
     .tooltiptext = अधिक माहिती
+# Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
+content-blocking-cryptominers-label =
+    .label = क्रिप्टोमाइनर
+    .accesskey = y
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+content-blocking-fingerprinters-label =
+    .label = फिंगरप्रिंटर
+    .accesskey = F
 
 ## Privacy Section - Tracking
 
@@ -812,6 +902,9 @@ permissions-notification-link = अधिक जाणा
 permissions-notification-pause =
     .label = सूचना { -brand-short-name } पुन्हा सुरु होईपर्यंत स्थगित करा
     .accesskey = n
+permissions-block-autoplay-media2 =
+    .label = संकेतस्थळांना स्वायत्ततेने ध्वनी चालवण्यापासून रोखा
+    .accesskey = B
 permissions-block-autoplay-media-exceptions =
     .label = अपवाद…
     .accesskey = E

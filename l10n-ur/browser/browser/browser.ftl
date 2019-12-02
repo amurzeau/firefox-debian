@@ -45,6 +45,26 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = مسلسل اسٹوریج میں کوائف اسٹور کرے
 urlbar-addons-notification-anchor =
     .tooltiptext = ایڈاون کا تنصیب شدہ پیغام کا پینل کھولیں
+urlbar-geolocation-blocked =
+    .tooltiptext = آپ نے اس ویب سائٹ کے لیئے محل وقوع کی معلومات کو بلاک کیا ہوا ہے
+urlbar-web-notifications-blocked =
+    .tooltiptext = آپ نے اس ویب سائٹ کے لیئے اطلاع کو بلاک کیا ہوا ہے
+urlbar-camera-blocked =
+    .tooltiptext = آپ نے اس ویب سائٹ کے لیئے کیمرہ بلاک کیا ہوا ہے
+urlbar-microphone-blocked =
+    .tooltiptext = آپ نے اس ویب سائٹ کے لیئے مائیکروفون بلاک کیا ہوا ہے۔
+urlbar-screen-blocked =
+    .tooltiptext = آپ نے اس ویب سائٹ کو سکرین کا اشتراک کرنے سے بلاک کیا ہے
+urlbar-persistent-storage-blocked =
+    .tooltiptext = آپ نے اس ویب سائٹ کے لیئے مسلسل اسٹوریج کو بلاک کیا ہوا ہے۔
+urlbar-popup-blocked =
+    .tooltiptext = آپ نے اس ویب سائٹ کے لیئے پوپ اپ بلاک کیا ہوا ہے۔
+urlbar-autoplay-media-blocked =
+    .tooltiptext = آپنے اس ویب سائٹ کے لئے خودکار چلنیں والی میڈیا مع آواز بلاک کر دی ہیں۔
+urlbar-canvas-blocked =
+    .tooltiptext = آپنے اس ویب سائٹ کے لئے کینوس کوائف ماحصل بلاک کر دی ہیں۔
+urlbar-midi-blocked =
+    .tooltiptext = آپنے اس ویب سائٹ کے لئے MIDI تک رسائی بلاک کر دی ہیں۔
 
 ## Page Action Context Menu
 
@@ -63,3 +83,18 @@ full-screen-autohide =
 full-screen-exit =
     .label = پوری اسکرین موڈ خروج کریں
     .accesskey = F
+
+## Search Engine selection buttons (one-offs)
+
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = تلاش ترتیبات تبدیل کریں
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = تلاش کی ترتیبات تبدیل کریں
+search-one-offs-context-open-new-tab =
+    .label = نئے ٹیب میں تلاش کرے
+    .accesskey = T
+search-one-offs-context-set-as-default =
+    .label = بطور طے شدہ تلاش انجن سیٹ کریں
+    .accesskey = D

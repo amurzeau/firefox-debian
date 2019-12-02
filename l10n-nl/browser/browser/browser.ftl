@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Gegevens in permanente opslag bewaren
 urlbar-addons-notification-anchor =
     .tooltiptext = Berichtpaneel voor add-on-installatie openen
+urlbar-tip-help-icon =
+    .title = Hulp verkrijgen
+urlbar-geolocation-blocked =
+    .tooltiptext = U hebt locatiegegevens voor deze website geblokkeerd.
+urlbar-web-notifications-blocked =
+    .tooltiptext = U hebt notificaties voor deze website geblokkeerd.
+urlbar-camera-blocked =
+    .tooltiptext = U hebt uw camera voor deze website geblokkeerd.
+urlbar-microphone-blocked =
+    .tooltiptext = U hebt uw microfoon voor deze website geblokkeerd.
+urlbar-screen-blocked =
+    .tooltiptext = U hebt het delen van uw scherm voor deze website geblokkeerd.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = U hebt permanente opslag voor deze website geblokkeerd.
+urlbar-popup-blocked =
+    .tooltiptext = U hebt pop-ups voor deze website geblokkeerd.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = U hebt het automatisch afspelen van media met geluid voor deze website geblokkeerd.
+urlbar-canvas-blocked =
+    .tooltiptext = U hebt canvas-gegevensextractie voor deze website geblokkeerd.
+urlbar-midi-blocked =
+    .tooltiptext = U hebt MIDI-toegang voor deze website geblokkeerd.
+urlbar-install-blocked =
+    .tooltiptext = U hebt installatie van add-ons voor deze website geblokkeerd.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Volledigschermmodus verlaten
     .accesskey = d
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Deze keer zoeken met:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Zoekinstellingen wijzigen
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Zoekinstellingen wijzigen
+search-one-offs-context-open-new-tab =
+    .label = Zoeken in Nieuw tabblad
+    .accesskey = t
+search-one-offs-context-set-as-default =
+    .label = Instellen als standaardzoekmachine
+    .accesskey = s
+search-one-offs-context-set-as-default-private =
+    .label = Als standaardzoekmachine voor privévensters instellen
+    .accesskey = p

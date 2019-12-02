@@ -39,8 +39,8 @@ app-basics-update-channel = Canal de actualisation
 # as in "Folder for updates". "Update" is a noun, not a verb.
 app-basics-update-dir =
     { PLATFORM() ->
-        [linux] Actualisar  directorio
-       *[other] Actualisar  plica
+        [linux] Actualisar directorio
+       *[other] Actualisar dossier
     }
 app-basics-update-history = Chronologia de actualisationes
 app-basics-show-update-history = Monstrar le chronologia del actualisationes
@@ -96,15 +96,15 @@ place-database-title = Base de datos de locos
 place-database-integrity = Integritate
 place-database-verify-integrity = Verificar le integritate
 js-title = JavaScript
-js-incremental-gc = Collecta de immunditias incremental
+js-incremental-gc = Recuperation incremental de memoria
 a11y-title = Accessibilitate
 a11y-activated = Activate
 a11y-force-disabled = Impedir le accessibilitate
 a11y-handler-used = Es usate le gestor accessibile
 a11y-instantiator = Generator de accessibilitate
 library-version-title = Versiones de bibliotheca
-copy-text-to-clipboard-label = Copiar le texto in le planchetta
-copy-raw-data-to-clipboard-label = Copiar le datos brute in le planchetta
+copy-text-to-clipboard-label = Copiar le texto al area de transferentia
+copy-raw-data-to-clipboard-label = Copiar le datos brute al area de transferentia
 sandbox-title = Cassa de arena
 sandbox-sys-call-log-title = Appellos de systema rejectate
 sandbox-sys-call-index = #
@@ -147,9 +147,25 @@ intl-locales-requested = Localisationes requirite
 intl-locales-available = Localisationes disponibile
 intl-locales-supported = Linguas del application
 intl-locales-default = Localisation predefinite
-intl-os-title = Systema operative
+intl-os-title = Systema de operation
 intl-os-prefs-system-locales = Localisationes del systema
 intl-regional-prefs = Preferentias regional
+
+## Remote Debugging
+##
+## The Firefox remote protocol provides low-level debugging interfaces
+## used to inspect state and control execution of documents,
+## browser instrumentation, user interaction simulation,
+## and for subscribing to browser-internal events.
+##
+## See also https://firefox-source-docs.mozilla.org/remote/
+
+remote-debugging-title = Depuration remote (protocollo de Chromium)
+remote-debugging-accepting-connections = Connexiones ora acceptate
+remote-debugging-url = Adresse URL
+
+
+
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
@@ -185,14 +201,14 @@ pending-reports =
         [one] Tote le reportos de collapso (includente { $reports } collapso pendente in le intervallo indicate)
        *[other] Tote le reportos de collapso (includente { $reports } collapsos pendente in le intervallo indicate)
     }
-raw-data-copied = Datos brute copiate in le planchetta
-text-copied = Texto copiate in le planchetta
+raw-data-copied = Datos brute copiate al area de transferentia
+text-copied = Texto copiate al area de transferentia
 
 ## The verb "blocked" here refers to a graphics feature such as "Direct2D" or "OpenGL layers".
 
 blocked-driver = Blocate per le version de tu driver graphic.
 blocked-gfx-card = Blocate per tu carta graphic per problemas del driver non resolvite.
-blocked-os-version = Blocate per le version de tu systema operative.
+blocked-os-version = Blocate pro le version de tu systema de operation.
 blocked-mismatched-version = Blocate perque le registro e le DLL ha un discordantia super le version de tu conductor graphic.
 # Variables
 # $driverVersion - The graphics driver version string
@@ -218,7 +234,7 @@ gpu-process-pid = GPUProcessPid
 gpu-process = GPUProcess
 gpu-description = Description
 gpu-vendor-id = ID del venditor
-gpu-device-id = ID del dispositivo
+gpu-device-id = ID del apparato
 gpu-subsys-id = ID de subsys
 gpu-drivers = Drivers
 gpu-ram = RAM
@@ -246,11 +262,12 @@ unknown-failure = Inserite in le lista del blocates: codice de error { $failureC
 d3d11layers-crash-guard = Compositor D3D11
 d3d11video-crash-guard = Decodificator de video D3D11
 d3d9video-crash-buard = Decodificator de video D3D9
+d3d9video-crash-guard = Decodificator de video D3D9
 glcontext-crash-guard = OpenGL
-reset-on-next-restart = Remontar al proxime reinitiar
+reset-on-next-restart = Reinitialisar post quitar e reaperir
 gpu-process-kill-button = Terminar le processo GPU
 gpu-device-reset = Restabilir le apparato
-gpu-device-reset-button = Actionar le remontage del apparato
+gpu-device-reset-button = Reinitialisar le apparato
 uses-tiling = Usa mosaicos
 content-uses-tiling = Usa mosaicos (contento)
 off-main-thread-paint-enabled = Pictura foras le filo de execution principal active
@@ -281,10 +298,10 @@ multi-process-windows = { $remoteWindows }/{ $totalWindows }
 multi-process-status-0 = Activate per le usator
 multi-process-status-1 = Activate per predefinition
 multi-process-status-2 = Inactive
-multi-process-status-4 = Inactivate per le instrumentos de accessibilitate
-multi-process-status-6 = Inactivate per un introduction de texto non admittite
-multi-process-status-7 = Inactivate per additivos
-multi-process-status-8 = Inactivate fortiatemente
+multi-process-status-4 = Disactivate per le instrumentos de accessibilitate
+multi-process-status-6 = Disactivate per entrata de texto non supportate
+multi-process-status-7 = Disactivate per additivos
+multi-process-status-8 = Disactivate fortiatemente
 multi-process-status-unknown = Stato incognite
 async-pan-zoom = Pan/Zoom asynchrone
 apz-none = nulle
@@ -297,8 +314,8 @@ autoscroll-enabled = auto-rolamento activate
 ## Variables
 ## $preferenceKey (string) - String ID of preference
 
-wheel-warning = entrata de rolamento asynchrone inactivate a causa de un preferentia non admittite: { $preferenceKey }
-touch-warning = entrata tactile async inactivate a causa de un preferentia non admittite: { $preferenceKey }
+wheel-warning = entrata asynchrone con rota de mus disactivate a causa de un preferentia non supportate: { $preferenceKey }
+touch-warning = entrata tactile asynchrone disactivate a causa de un preferentia non supportate: { $preferenceKey }
 
 ## Strings representing the status of the Enterprise Policies engine.
 

@@ -60,7 +60,7 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY openFileCmd.commandkey "o">
 <!ENTITY printSetupCmd.label "Bok zarědowaś…">
 <!ENTITY printSetupCmd.accesskey "B">
-<!ENTITY printPreviewCmd.label "Śišćarski pśeglěd">
+<!ENTITY printPreviewCmd.label "Śišćaŕski pśeglěd">
 <!ENTITY printPreviewCmd.accesskey "l">
 <!ENTITY printCmd.label "Śišćaś…">
 <!ENTITY printCmd.accesskey "i">
@@ -70,7 +70,7 @@ when there are no windows but Firefox is still running. -->
 
 <!ENTITY taskManagerCmd.label "Zastojnik nadawkow">
 
-<!ENTITY goOfflineCmd.label "Offline źełaś">
+<!ENTITY goOfflineCmd.label "Offline źěłaś">
 <!ENTITY goOfflineCmd.accesskey "O">
 
 <!ENTITY menubarCmd.label "Menijowa rědka">
@@ -291,6 +291,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.midiBlocked.tooltip              "Sćo blokěrował pśistup k MIDI za toś to websedło.">
 <!ENTITY urlbar.installBlocked.tooltip           "Sćo blokěrował instalěrowanje dodankow za toś to websedło.">
 
+
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Historiju pokazaś">
 
 <!ENTITY searchItem.title             "Pytaś">
@@ -362,7 +363,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY newPrivateWindow.label     "Nowe priwatne wokno">
 <!ENTITY newPrivateWindow.accesskey "r">
 
-<!ENTITY editMenu.label         "Wobźełaś">
+<!ENTITY editMenu.label         "Wobźěłaś">
 <!ENTITY editMenu.accesskey       "b">
 <!ENTITY undoCmd.label            "Anulěrowaś">
 <!ENTITY undoCmd.key            "Z">
@@ -807,8 +808,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- On Windows we use the term "Options" to describe settings, but
      on Linux and Mac OS X we use "Preferences" - carry that distinction
      over into this string, which is used in the "popup blocked" info bar . -->
-<!ENTITY editPopupSettingsUnix.label "Nastajenja za blokěrowanje wuskokujucych woknow wobźełaś…">
-<!ENTITY editPopupSettings.label "Nastajenja za blokěrowanje wuskokujucych woknow wobźełaś…">
+<!ENTITY editPopupSettingsUnix.label "Nastajenja za blokěrowanje wuskokujucych woknow wobźěłaś…">
+<!ENTITY editPopupSettings.label "Nastajenja za blokěrowanje wuskokujucych woknow wobźěłaś…">
 <!ENTITY editPopupSettings.accesskey "b">
 <!ENTITY dontShowMessage.accesskey "n">
 
@@ -939,12 +940,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      a tooltip explaining why these items were not blocked in the page. -->
 <!ENTITY protections.notBlocking.why.label "Cogodla?">
 <!ENTITY protections.notBlocking.why.etpOn.tooltip "Gaž toś te elementy blokěrujośo, snaź wěste websedła wěcej pšawje njefunkcioněruju. Někotare tłocaški, formulary a pśizjawjeńske póla njemógli bźez pśeslědowakow pčawje funkcioněrowaś.">
-<!ENTITY protections.notBlocking.why.etpOff.tooltip "Gaž šćity znjemóžnjaśo, se wšykne pśeslědowaki na toś tom sedle dowólujo. To móžo wěstu funkcionalnosć websedła pólěpšyś.">
+<!ENTITY protections.notBlocking.why.etpOff.tooltip "Gaž šćit znjemóžnjaśo, se wšykne pśeslědowaki na toś tom sedle dowólujo. To móžo wěstu funkcionalnosć websedła pólěpšyś.">
 <!ENTITY protections.socialMediaTrackers.label "Pśeslědowaki socialnych medijow">
 <!ENTITY protections.crossSiteTrackingCookies.label "Slědujuce cookieje mjazy sedłami">
 <!ENTITY protections.trackingContent.label "Slědujuce wopśimjeśe">
 <!ENTITY protections.fingerprinters.label "Palcowe wótśišće">
 <!ENTITY protections.cryptominers.label "Kryptokopanje">
+<!ENTITY protections.notBlocking.why.etpOff2.tooltip "Wšykne pśeslědowaki na toś tom sydle su se zacytali, dokulaž šćit jo znjemóžnjony.">
 <!ENTITY protections.noTrackersFound.description "Žedne pśeslědowaki, kótarež &brandShortName; znajo, njejsu se namakali na toś tom boku.">
 
 <!ENTITY protections.crossSiteTrackingCookies.description "Toś te cookieje wam wót sedła do sedła slěduju, aby daty wó tom zběrali, což online gótujośo. Stajaju se wót tśeśich póbitowarjow kaž na pśikład wabjarjow a analyzowych pśedewześćow.">

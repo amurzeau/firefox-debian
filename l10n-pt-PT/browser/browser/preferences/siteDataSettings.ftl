@@ -7,9 +7,9 @@
 
 site-data-settings-window =
     .title = Gerir cookies e dados de sites
-site-data-settings-description = Os seguintes websites armazenam cookies e dados de sites no seu computador. O { -brand-short-name } mantém dados de websites com armazenamento persistente até os apagar, e apaga dados de websites com armazenamento não-persistente quando é necessário espaço.
+site-data-settings-description = Os sites seguintes armazenam cookies e dados de sites no seu computador. O { -brand-short-name } mantém os dados de sites com armazenamento persistente até os remover e elimina os dados de sites com armazenamento não-persistente quando é necessário espaço.
 site-data-search-textbox =
-    .placeholder = Pesquisar websites
+    .placeholder = Pesquisar sites
     .accesskey = P
 site-data-column-host =
     .label = Site
@@ -19,6 +19,8 @@ site-data-column-storage =
     .label = Armazenamento
 site-data-column-last-used =
     .label = Última utilização
+# This label is used in the "Host" column for local files, which have no host.
+site-data-local-file-host = (ficheiro local)
 site-data-remove-selected =
     .label = Remover selecionados
     .accesskey = R
@@ -28,11 +30,6 @@ site-data-button-cancel =
 site-data-button-save =
     .label = Guardar alterações
     .accesskey = a
-# Variables:
-#   $value (Number) - Value of the unit (for example: 4.6, 500)
-#   $unit (String) - Name of the unit (for example: "bytes", "KB")
-site-usage-pattern = { $value }{ $unit }
-site-usage-persistent = { site-usage-pattern } (persistente)
 # Variables:
 #   $value (Number) - Value of the unit (for example: 4.6, 500)
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
@@ -53,5 +50,5 @@ site-data-removing-dialog =
     .title = { site-data-removing-header }
     .buttonlabelaccept = Remover
 site-data-removing-header = Remover cookies e dados de sites
-site-data-removing-desc = Remover cookies e dados de sites pode terminar sessões de websites. Tem a certeza de que pretende fazer as alterações?
-site-data-removing-table = Os cookies e dados de sites para os seguintes websites serão removidos
+site-data-removing-desc = Remover cookies e dados de sites pode terminar a sessão nos sites. Tem a certeza de que pretende fazer as alterações?
+site-data-removing-table = Serão removidas as cookies e os dados dos seguintes sites

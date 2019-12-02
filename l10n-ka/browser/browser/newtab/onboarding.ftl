@@ -21,6 +21,11 @@ onboarding-button-label-get-started = დაწყება
 onboarding-welcome-header = მოგესალმებათ { -brand-short-name }
 onboarding-welcome-body = ბრაუზერი უკვე თქვენია.<br/>გაიცანით უკეთ { -brand-product-name }.
 onboarding-welcome-learn-more = იხილეთ, უპირატესობების შესახებ.
+onboarding-welcome-modal-get-body = ბრაუზერი უკვე გაქვთ.<br/>ახლა კი იხილეთ, როგორ გამოიყენოთ უკეთ { -brand-product-name }.
+onboarding-welcome-modal-supercharge-body = გააძლიერეთ პირადულობის დაცვა.
+onboarding-welcome-modal-privacy-body = ბრაუზერი უკვე გაქვთ. ახლა კი გაუუმჯობესეთ პირადულობის უსაფრთხოება.
+onboarding-welcome-modal-family-learn-more = გაეცანით { -brand-product-name } პროდუქტების ოჯახს
+onboarding-welcome-form-header = დაიწყეთ აქედან
 onboarding-join-form-header = შეუერთდით { -brand-product-name }
 onboarding-join-form-body = შეიყვანეთ თქვენი ელფოსტა დასაწყებად.
 onboarding-join-form-email =
@@ -28,10 +33,20 @@ onboarding-join-form-email =
 onboarding-join-form-email-error = აუცილებელია მართებული ელფოსტა
 onboarding-join-form-legal = გაგრძელების შემთხვევაში, თქვენ ეთანხმებით <a data-l10n-name="terms">მომსახურების პირობებსა</a> და <a data-l10n-name="privacy">პირადი მონაცემების დაცვის განაცხადს</a>.
 onboarding-join-form-continue = გაგრძელება
+# This message is followed by a link using onboarding-join-form-signin ("Sign In") as text.
+onboarding-join-form-signin-label = უკვე გაქვთ ანგარიში?
+# Text for link to submit the sign in form
+onboarding-join-form-signin = შესვლა
 onboarding-start-browsing-button-label = დაიწყეთ მოგზაურობა ინტერნეტში
 onboarding-cards-dismiss =
     .title = დამალვა
     .aria-label = დამალვა
+
+## Welcome full page string
+
+onboarding-fullpage-welcome-subheader = იხილეთ ყველაფერი, რისი გაკეთება შეგიძლიათ.
+onboarding-fullpage-form-email =
+    .placeholder = თქვენი ელფოსტის მისამართი…
 
 ## Firefox Sync modal dialog strings.
 
@@ -64,6 +79,12 @@ onboarding-benefit-privacy-title = ჭეშმარიტი პირად�
 # make and do. We take less data. We keep it safe. And we make sure that we are
 # transparent about how we use it."
 onboarding-benefit-privacy-text = ყველაფერი რასაც ვსაქმიანობთ, ექვემდებარება პირადი მონაცემების დაცვის ჩვენს პირობას: ნაკლები აღრიცხვა. უსაფრთხო შენახვა. არანაირი საიდუმლოება.
+onboarding-benefit-sync-title = { -sync-brand-short-name }
+onboarding-benefit-sync-text = წაიყოლეთ თქვენი სანიშნები, პაროლები ისტორია და ა. შ. ყველგან, სადაც გიყენიათ { -brand-product-name }
+onboarding-benefit-monitor-title = { -monitor-brand-short-name }
+onboarding-benefit-monitor-text = შეიტყვეთ, თუ თქვენი ინფორმაცია ცნობილ მიტაცებულ მონაცემებში აღმოჩნდება.
+onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
+onboarding-benefit-lockwise-text = მართეთ და გადაიტანეთ პაროლები უსაფრთხოდ.
 
 ## These strings belong to the individual onboarding messages.
 
@@ -92,6 +113,7 @@ onboarding-data-sync-text2 = დაასინქრონეთ თქვე�
 onboarding-data-sync-button2 = { -sync-brand-short-name } – შესვლა
 onboarding-firefox-monitor-title = შეიტყვეთ, მონაცემების მიტაცების შესახებ
 onboarding-firefox-monitor-text = { -monitor-brand-name } მუდმივად გადაამოწმებს, არის თუ არა თქვენი ელფოსტა მიტაცებულ მონაცემებს შორის და გაცნობებთ აღმოჩენის შემთხვევაში.
+onboarding-firefox-monitor-text2 = { -monitor-brand-name } მუდმივად გადაამოწმებს, არის თუ არა თქვენი ელფოსტა ბოლოს მიტაცებულ მონაცემებს შორის და გაცნობებთ აღმოჩენის შემთხვევაში.
 onboarding-firefox-monitor-button = გამოიწერეთ ცნობები
 onboarding-browse-privately-title = მოინახულეთ გვერდები უსაფრთხოდ
 onboarding-browse-privately-text = პირადი თვალიერების რეჟიმი ასუფთავებს თქვენ მიერ მოძიებულ და მონახულებულ გვერდებს და არ უმხელს მათ შესახებ, თქვენი კომპიუტერის სხვა მომხმარებლებს

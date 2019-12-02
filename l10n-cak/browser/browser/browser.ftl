@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Keyak taq tzij pa Jutaqil Yakoj
 urlbar-addons-notification-anchor =
     .tooltiptext = Tijaq tz'aqat pa rupas tzijol richin niyak
+urlbar-tip-help-icon =
+    .title = Tak'ulu' ato'ik
+urlbar-geolocation-blocked =
+    .tooltiptext = Xq'at ri ruk'ojlem etamab'äl pa re ruxaq k'amaya'l re'.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Xeq'at ri taq rutzijol pa re ruxaq k'amaya'l re'.
+urlbar-camera-blocked =
+    .tooltiptext = Xq'at ri elesäy ruwachib'al re ruxaq k'amaya'l re'.
+urlbar-microphone-blocked =
+    .tooltiptext = Xq'at ri q'asäy ach'ab'äl pa re ruxaq k'amaya'l re'.
+urlbar-screen-blocked =
+    .tooltiptext = Xq'at re ruxaq k'amaya'l re' pa komonïk ruwäch.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Xaq'ät ri jutaqil ruyakoj re ruxaq k'amaya'l re'.
+urlbar-popup-blocked =
+    .tooltiptext = Xq'at ri elesäy pop-ups richin re ruxaq k'amaya'l re'.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Xaq'ät ri ruyonil rutzijonem taq tob'äl k'o kik'oxom pa re ruxaq k'amaya'l re'.
+urlbar-canvas-blocked =
+    .tooltiptext = Xe'aq'ät ri kelesaxik kitzij taq peraj pa re ruxaq k'amaya'l re'.
+urlbar-midi-blocked =
+    .tooltiptext = Xaq'ät ri MIDI rokem re ruxaq k'amaya'l re'.
+urlbar-install-blocked =
+    .tooltiptext = Xaq'ät kiyakik taq rutz'aqat ajk'amaya'l ruxaq re'.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Tel pa chijun ruwa kematz'ib'
     .accesskey = c
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Wakami tikanöx rik'in:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Kek'ëx ri taq rajowaxïk ri kanoxïk
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Tijal kinuk'ulem kanob'äl
+search-one-offs-context-open-new-tab =
+    .label = Tikanöx pa k'ak'a' ruwi'
+    .accesskey = r
+search-one-offs-context-set-as-default =
+    .label = Tiya' achi'el ruk'amon wi pe chi kanob'äl
+    .accesskey = r
+search-one-offs-context-set-as-default-private =
+    .label = Tiya' kan achi'el Okik'amaya'l ri K'o pa Ichinan taq Tzuwäch
+    .accesskey = I

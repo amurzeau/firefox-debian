@@ -182,6 +182,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Включване
     .tooltiptext = Включване на проверка за безопасност на обновяването на добавки
+extensions-warning-safe-mode = Всички добавки са изключени от Надеждния режим.
+extensions-warning-check-compatibility = Проверката за съвместимост на добавките е изключена. Възможно е да имате несъвместими добавки.
+extensions-warning-check-compatibility-button = Включване
+    .title = Включване на проверка за съвместимост на добавки
+extensions-warning-update-security = Проверката за безопасност на обновяването на добавки е изключена. Възможно е системата да се компрометира от добавки.
+extensions-warning-update-security-button = Включване
+    .title = Включване на проверка за безопасност на обновяването на добавки
 
 ## Strings connected to add-on updates
 
@@ -191,12 +198,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Последни обновявания
     .accesskey = о
+addon-updates-check-for-updates = Проверка за обновяване
+    .accesskey = П
+addon-updates-view-updates = Последни обновявания
+    .accesskey = о
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Автоматично обновяване на добавките
+    .accesskey = А
+addon-updates-update-addons-automatically = Автоматично обновяване на добавките
     .accesskey = А
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -210,6 +223,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = Н
 extensions-updates-reset-updates-to-manual =
     .label = Нулиране на всички добавки, за да бъдат ръчно обновявани
+    .accesskey = у
+addon-updates-reset-updates-to-automatic = Нулиране на всички добавки, за да бъдат автоматично обновявани
+    .accesskey = Н
+addon-updates-reset-updates-to-manual = Нулиране на всички добавки, за да бъдат ръчно обновявани
     .accesskey = у
 
 ## Status messages displayed when updating add-ons
@@ -229,11 +246,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Инсталиране на обновявания
     .tooltiptext = Инсталиране на наличните обновявания от този списък
+addon-updates-updating = Обновяване на добавките
+addon-updates-installed = Добавките са обновени.
+addon-updates-none-found = Не са открити обновявания
+addon-updates-manual-updates-found = Показване на наличните обновявания
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Инсталиране на добавка от файл…
+    .accesskey = И
+addon-install-from-file-dialog-title = Изберете добавка за инсталиране
+addon-install-from-file-filter-name = Добавки
+addon-open-about-debugging = Дебъгване на добавки
+    .accesskey = Д
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Управление на клавишните комбинации на разширението
+    .accesskey = к
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Управление на клавишните комбинации на разширението
     .accesskey = к
 shortcuts-no-addons = Нямате включени разширения.
 shortcuts-no-commands = Следните разширения нямат клавишни комбинации:
@@ -360,3 +393,16 @@ release-notes-error = За съжаление, зареждането на бе�
 addon-permissions-empty = Разширението не изисква никакви права
 recommended-extensions-heading = Препоръчани разширения
 recommended-themes-heading = Препоръчани теми
+
+## Page headings
+
+extension-heading = Управление на добавките
+theme-heading = Управление на теми
+plugin-heading = Управление на приставки
+dictionary-heading = Управление на речници
+locale-heading = Управление на езици
+shortcuts-heading = Управление на клавишните комбинации на разширението
+theme-heading-search-label = Още теми
+extension-heading-search-label = Още разширения
+addons-heading-search-input =
+    .placeholder = търсене в addons.mozilla.org

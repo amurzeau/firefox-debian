@@ -161,6 +161,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = చేతనపరచు
     .tooltiptext = పొడిగింత నవీకరణ రక్షణ పరిశీలనను చేతనముచేయి
+extensions-warning-safe-mode = అన్ని పొడిగింతలు సేఫ్ మోడ్ చేత అచేతనపరచబడినవి.
+extensions-warning-check-compatibility = పొడిగింత సారూప్యతా పరిశీలన అచేతనమైంది. మీరు సారూప్యతలేని పొడిగింతలు కలిగివుండవచ్చును.
+extensions-warning-check-compatibility-button = చేతనపరచు
+    .title = పొడిగింత సారూప్యతా పరిశీలనను చేతనపరచు
+extensions-warning-update-security = పొడిగింత నవీకరణ రక్షణ పరిశీలన అచేతనమైంది. మీ జోక్యం లేకుండా నవీకరణలు జరుగవచ్చు.
+extensions-warning-update-security-button = చేతనపరచు
+    .title = పొడిగింత నవీకరణ రక్షణ పరిశీలనను చేతనముచేయి
 
 ## Strings connected to add-on updates
 
@@ -170,12 +177,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = ఇటీవలి తాజాకరణలను చూడండి
     .accesskey = V
+addon-updates-check-for-updates = నవీకరణల కొరకు పరిశీలించు
+    .accesskey = C
+addon-updates-view-updates = ఇటీవలి తాజాకరణలను చూడండి
+    .accesskey = V
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = పొడిగింతలను స్వయంచాలకంగా నవీకరించు
+    .accesskey = A
+addon-updates-update-addons-automatically = పొడిగింతలను స్వయంచాలకంగా నవీకరించు
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -189,6 +202,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = R
 extensions-updates-reset-updates-to-manual =
     .label = పొడగింతలన్నీ మానవీయంగా తాజాపరచుకునేలా మార్చు
+    .accesskey = R
+addon-updates-reset-updates-to-automatic = స్వయంచాలకంగా నవీకరించుటకు అన్ని పొడిగింతలును రీసెట్ చేయు
+    .accesskey = R
+addon-updates-reset-updates-to-manual = పొడగింతలన్నీ మానవీయంగా తాజాపరచుకునేలా మార్చు
     .accesskey = R
 
 ## Status messages displayed when updating add-ons
@@ -208,6 +225,19 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = తాజాకరణలను స్థాపించు
     .tooltiptext = ఈ జాబితాలోని తాజాకరణలను స్థాపించు
+addon-updates-updating = పొడిగింతలను నవీకరిస్తున్నది
+addon-updates-installed = మీ పొడిగింతలు తాజాకరించబడ్డాయి.
+addon-updates-none-found = తాజాకరణలు ఏమీ లేవు
+addon-updates-manual-updates-found = అందుబాటులోని తాజాకరణలను చూడండి
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = ఫైలు నుండి పొడిగింతను స్థాపించు…
+    .accesskey = I
+addon-install-from-file-dialog-title = స్థాపించాల్సిన పొడిగింతను ఎంచుకోండి
+addon-install-from-file-filter-name = పొడిగింతలు
+addon-open-about-debugging = పొడిగింతలను డీబగ్ చేయుము
+    .accesskey = B
 
 ## Extension shortcut management
 
@@ -263,3 +293,7 @@ addon-detail-private-browsing-allow = అనుమతించు
 addon-detail-private-browsing-disallow = అనుమతించ వద్దు
 available-updates-heading = అందుబాటులో ఉన్న తాజాకరణలు
 recent-updates-heading = ఇటీవలి తాజాకరణలు
+
+## Page headings
+
+theme-heading-search-label = మరిన్ని అలంకారాలను కనుగొనండి

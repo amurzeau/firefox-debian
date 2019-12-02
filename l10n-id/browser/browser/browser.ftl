@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Simpan data di Penyimpanan Persisten
 urlbar-addons-notification-anchor =
     .tooltiptext = Buka panel pesan pemasangan pengaya
+urlbar-tip-help-icon =
+    .title = Dapatkan bantuan
+urlbar-geolocation-blocked =
+    .tooltiptext = Anda telah memblokir informasi lokasi untuk situs web ini.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Anda telah memblokir notifikasi untuk situs web ini.
+urlbar-camera-blocked =
+    .tooltiptext = Anda telah memblokir kamera Anda untuk situs web ini.
+urlbar-microphone-blocked =
+    .tooltiptext = Anda telah memblokir mikrofon Anda untuk situs web ini.
+urlbar-screen-blocked =
+    .tooltiptext = Anda telah memblokir situs ini untuk berbagi layar Anda.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Anda telah memblokir penyimpanan tetap untuk situs web ini.
+urlbar-popup-blocked =
+    .tooltiptext = Anda telah memblokir pop-up untuk situs web ini.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Anda telah memblokir media putar-otomatis dengan suara untuk situs web ini.
+urlbar-canvas-blocked =
+    .tooltiptext = Anda telah memblokir ekstraksi data canvas untuk situs web ini.
+urlbar-midi-blocked =
+    .tooltiptext = Anda telah memblokir akses MIDI untuk situs web ini.
+urlbar-install-blocked =
+    .tooltiptext = Anda telah memblokir pemasangan pengaya untuk situs Web ini.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,21 @@ full-screen-autohide =
 full-screen-exit =
     .label = Keluar dari Mode Layar Penuh
     .accesskey = P
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Kali ini, cari dengan:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Ubah Pengaturan Pencarian
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Ubah setelan pencarian
+search-one-offs-context-open-new-tab =
+    .label = Cari di Tab Baru
+    .accesskey = T
+search-one-offs-context-set-as-default =
+    .label = Setel sebagai Mesin Pencari Baku
+    .accesskey = B

@@ -2,10 +2,10 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-do-not-track-description = Enviar um sinal “Do Not Track” significando que não pretende ser monitorizado(a)
+do-not-track-description = Enviar um sinal “Do Not Track” aos sites com a indicação que não quer ser monitorizado(a)
 do-not-track-learn-more = Saber mais
 do-not-track-option-default-content-blocking-known =
-    .label = Apenas quando o { -brand-short-name } está definido para bloquear trackers conhecidos
+    .label = Apenas quando o { -brand-short-name } está definido para bloquear os rastreadores conhecidos
 do-not-track-option-always =
     .label = Sempre
 pref-page =
@@ -14,6 +14,11 @@ pref-page =
             [windows] Opções
            *[other] Preferências
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Opções
+       *[other] Preferências
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -88,7 +93,7 @@ extension-controlled-default-search = Uma extensão, <img data-l10n-name="icon"/
 extension-controlled-privacy-containers = Uma extensão, <img data-l10n-name="icon"/> { $name }, requer separadores contentores.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = Uma extensão,<img data-l10n-name="icon"/>{ $name }, está a controlar esta definição.
+extension-controlled-websites-content-blocking-all-trackers = Uma extensão, <img data-l10n-name="icon"/>{ $name }, está a controlar esta definição.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Uma extensão, <img data-l10n-name="icon"/> { $name }, está a controlar como o { -brand-short-name } se liga à internet.
@@ -116,7 +121,7 @@ startup-header = Arranque
 # { -brand-short-name } will be 'Firefox Developer Edition',
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
-    .label = Permitir que o { -brand-short-name } e o Firefox sejam utilizados em simultâneo
+    .label = Permitir que o { -brand-short-name } e o Firefox sejam executados ao mesmo tempo
 use-firefox-sync = Dica: Isto utiliza perfis separados. Utilize o { -sync-brand-short-name } para partilhar dados entre eles.
 get-started-not-logged-in = Iniciar sessão no { -sync-brand-short-name }…
 get-started-configured = Abrir preferências do { -sync-brand-short-name }
@@ -282,6 +287,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Utilizar { $plugin-name } (em { -brand-short-name })
@@ -307,7 +316,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-##
+
 
 drm-content-header = Conteúdo com Gestão de Direitos Digitais (DRM)
 play-drm-content =
@@ -395,6 +404,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Pesquisar texto quando começar a escrever
     .accesskey = x
+browsing-picture-in-picture-toggle-enabled =
+    .label = Ativar os controlos de vídeo imagem-sob-imagem
+    .accesskey = l
+browsing-picture-in-picture-learn-more = Saber mais
 browsing-cfr-recommendations =
     .label = Recomendar extensões enquanto navega
     .accesskey = R
@@ -453,7 +466,6 @@ choose-bookmark =
 
 home-prefs-content-header = Conteúdo do ecrã inicial do Firefox
 home-prefs-content-description = Escolha que conteúdo deseja no seu ecrã inicial do Firefox.
-home-prefs-content-discovery-description = A descoberta de conteúdo no Início do Firefox permite-lhe descobrir artigos relevantes e de alta qualidade de toda a web.
 home-prefs-search-header =
     .label = Pesquisa Web
 home-prefs-topsites-header =
@@ -501,6 +513,13 @@ search-bar-shown =
     .label = Adicionar barra de pesquisa à barra de ferramentas
 search-engine-default-header = Motor de pesquisa predefinido
 search-engine-default-desc = Escolha o motor de pesquisa predefinido a utilizar na barra de endereço e barra de pesquisa.
+search-engine-default-desc-2 = Este é o seu motor de pesquisa predefinido nas barras de endereço e de pesquisa. Pode mudar a qualquer momento.
+search-engine-default-private-desc-2 = Escolha um motor de pesquisa predefinido diferente apenas para as janelas privadas
+search-separate-default-engine =
+    .label = Utilizar este motor de pesquisa nas janelas privadas
+    .accesskey = U
+search-suggestions-header = Sugestões de pesquisa
+search-suggestions-desc = Escolha como as sugestões dos motores de pesquisa são apresentadas.
 search-suggestions-option =
     .label = Mostrar sugestões de pesquisa
     .accesskey = s
@@ -514,6 +533,9 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Mostrar sugestões de pesquisa à frente do histórico de navegação nos resultados da barra de endereço
+search-show-suggestions-private-windows =
+    .label = Mostrar sugestões de pesquisa em janelas privadas
+suggestions-addressbar-settings = Alterar as preferências para o histórico de navegação, marcadores, e sugestões de separadores
 search-suggestions-cant-show = Sugestões de pesquisa não serão apresentadas nos resultados da barra de localização porque configurou o { -brand-short-name } para nunca memorizar histórico.
 search-one-click-header = Motores de pesquisa de um clique
 search-one-click-desc = Escolha os motores de pesquisa alternativos que aparecem debaixo da barra de endereço e barra de pesquisa quando começa a introduzir uma palavra-chave.
@@ -550,6 +572,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Leve a sua Web consigo
 sync-signedout-description = Sincronize os seus marcadores, histórico, separadores, palavras-passe, extras e preferências entre todos os seus dispositivos.
 sync-signedout-account-title = Ligar com uma { -fxaccount-brand-name }
@@ -558,6 +584,9 @@ sync-signedout-account-create = Não tem uma conta? Comece aqui
 sync-signedout-account-signin =
     .label = Iniciar sessão…
     .accesskey = I
+sync-signedout-account-signin2 =
+    .label = Iniciar sessão no { -sync-brand-short-name }…
+    .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -570,11 +599,17 @@ sync-mobile-promo = Transfira o Firefox para <img data-l10n-name="android-icon"/
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = Alterar imagem de perfil
 sync-disconnect =
     .label = Desassociar…
     .accesskey = D
+sync-sign-out =
+    .label = Terminar sessão...
+    .accesskey = T
 sync-manage-account = Gerir conta
     .accesskey = o
 sync-signedin-unverified = { $email } não está verificado.
@@ -590,6 +625,48 @@ sync-sign-in =
     .accesskey = c
 sync-signedin-settings-header = Definições de sincronização
 sync-signedin-settings-desc = Escolha o que sincronizar nos seus dispositivos que utilizam o { -brand-short-name }.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Sincronização: ATIVADA
+prefs-syncing-off = Sincronização: DESATIVADA
+prefs-sync-setup =
+    .label = Configurar o { -sync-brand-short-name }…
+    .accesskey = g
+prefs-sync-offer-setup-label = Sincronize os marcadores, histórico, separadores, palavras-passe, extras, e as preferências em todos os seus dispositivos.
+prefs-sync-now =
+    .labelnotsyncing = Sincronizar agora
+    .accesskeynotsyncing = N
+    .labelsyncing = A sincronizar...
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = Atualmente, está a sincronizar estes itens:
+sync-currently-syncing-bookmarks = Marcadores
+sync-currently-syncing-history = Histórico
+sync-currently-syncing-tabs = Separadores abertos
+sync-currently-syncing-logins-passwords = Credenciais e palavras-passe
+sync-currently-syncing-addresses = Endereços
+sync-currently-syncing-creditcards = Cartões de crédito
+sync-currently-syncing-addons = Extras
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Opções
+       *[other] Preferências
+    }
+sync-change-options =
+    .label = Alterar...
+    .accesskey = A
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = Escolher o que sincronizar
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Guardar alterações
+    .buttonaccesskeyaccept = G
+    .buttonlabelextra2 = Desligar...
+    .buttonaccesskeyextra2 = D
 sync-engine-bookmarks =
     .label = Marcadores
     .accesskey = M
@@ -604,6 +681,10 @@ sync-engine-logins =
     .label = Credenciais
     .tooltiptext = Nomes de utilizador e palavras-passe que guardou
     .accesskey = i
+sync-engine-logins-passwords =
+    .label = Credenciais e palavras-passe
+    .tooltiptext = Nomes de utilizador e palavras-passe que guardou
+    .accesskey = C
 sync-engine-addresses =
     .label = Endereços
     .tooltiptext = Endereços postais que guardou (computador apenas)
@@ -624,6 +705,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Definições gerais, de privacidade, e segurança que alterou
     .accesskey = s
+
+## The device name controls.
+
 sync-device-name-header = Nome do dispositivo
 sync-device-name-change =
     .label = Alterar nome do dispositivo…
@@ -646,16 +730,25 @@ privacy-header = Privacidade do navegador
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Credenciais e palavras-passe
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
-    .label = Perguntar para guardar credenciais e palavras-passe para websites
-    .accesskey = r
+    .label = Pedir para guardar credenciais e palavras-passe para sites
+    .accesskey = P
 forms-exceptions =
     .label = Exceções…
     .accesskey = x
 forms-generate-passwords =
     .label = Sugerir e gerar palavras-passe fortes
     .accesskey = u
+forms-breach-alerts =
+    .label = Mostrar alertas sobre as palavras-passe para os sites violados
+    .accesskey = v
+forms-breach-alerts-learn-more-link = Saber mais
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Auto-preencher credenciais e palavras-passe
     .accesskey = i
@@ -722,9 +815,9 @@ sitedata-total-size-calculating = A calcular tamanho dos dados de sites e cache�
 sitedata-total-size = Os seus cookies, dados de sites e cache estão atualmente a utilizar { $value } { $unit } de espaço em disco.
 sitedata-learn-more = Saber mais
 sitedata-delete-on-close =
-    .label = Apagar cookies e dados de sites quando o { -brand-short-name } é fechado
+    .label = Eliminar cookies e os dados de sites quando o { -brand-short-name } é fechado
     .accesskey = c
-sitedata-delete-on-close-private-browsing = No modo de navegação privada permanente, os cookies e dados do site irão ser sempre limpos quando o { -brand-short-name } for fechado.
+sitedata-delete-on-close-private-browsing = No modo de navegação privada permanente, os cookies e os dados de sites irão ser sempre limpos quando o { -brand-short-name } é fechado.
 sitedata-allow-cookies-option =
     .label = Aceitar cookies e dados de sites
     .accesskey = A
@@ -736,13 +829,17 @@ sitedata-disallow-cookies-option =
 sitedata-block-desc = Tipo bloqueado
     .accesskey = T
 sitedata-option-block-trackers =
-    .label = Trackers de terceiros
+    .label = Rastreadores de terceiros
+sitedata-option-block-cross-site-trackers =
+    .label = Rastreadores inter-sites
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Rastreadores de redes sociais e inter-sites
 sitedata-option-block-unvisited =
     .label = Cookies de sites não visitados
 sitedata-option-block-all-third-party =
-    .label = Todos os cookies de terceiros (pode causar com que websites quebrem)
+    .label = Todos os cookies de terceiros (poderá resultar em falhas nos sites)
 sitedata-option-block-all =
-    .label = Todos os cookies (irá causar com que websites quebrem)
+    .label = Todos os cookies (irá resultar na falha de sites)
 sitedata-clear =
     .label = Limpar dados…
     .accesskey = L
@@ -772,6 +869,8 @@ addressbar-suggestions-settings = Alterar preferências para as sugestões dos m
 
 content-blocking-header = Bloqueio de conteúdo
 content-blocking-section-description = Proteja a sua privacidade enquanto navega. Bloqueie conteúdo invisível que monitoriza os sites que visita e lhe perfila. Bloquear parte deste conteúdo pode fazer com que as páginas carreguem mais rapidamente.
+content-blocking-enhanced-tracking-protection = Proteção melhorada contra a monitorização
+content-blocking-section-top-level-description = Os rastreadores seguem-no na Internet para recolher informação sobre os seus hábitos e interesses de navegação. O { -brand-short-name } bloqueia muitos destes rastreadores e outros scripts maliciosos.
 content-blocking-learn-more = Saber mais
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -779,15 +878,15 @@ content-blocking-setting-standard =
     .label = Padrão
     .accesskey = d
 content-blocking-setting-strict =
-    .label = Estrito
-    .accesskey = r
+    .label = Rigoroso
+    .accesskey = R
 content-blocking-setting-custom =
     .label = Personalizado
     .accesskey = e
-content-blocking-standard-desc = Equilibrado para proteção e desempenho. Permite alguns trackers para que os websites funcionem corretamente.
+content-blocking-standard-desc = Equilibrado para proteção e desempenho. Permite alguns rastreadores para que os sites funcionem corretamente.
 content-blocking-strict-description = Proteção mais forte, pode causar com que alguns sites quebrem.
 content-blocking-custom-desc = Escolha o que bloquear.
-content-blocking-private-trackers = Trackers conhecidos apenas em janelas privadas
+content-blocking-private-trackers = Rastreadores conhecidos apenas em janelas privadas
 content-blocking-third-party-cookies = Cookies de monitorização de terceiros
 
 ## These strings are used to define the different levels of
@@ -798,30 +897,42 @@ enhanced-tracking-protection-setting-standard =
     .label = Padrão
     .accesskey = d
 enhanced-tracking-protection-setting-strict =
-    .label = Estrito
-    .accesskey = r
+    .label = Rigoroso
+    .accesskey = R
 enhanced-tracking-protection-setting-custom =
-    .label = Personalizado
+    .label = Personalizada
     .accesskey = e
 
-##
 
+
+content-blocking-etp-standard-desc = Balanceado para proteção e desempenho. As páginas serão carregadas normalmente.
+content-blocking-etp-strict-desc = Proteção mais forte, mas pode causar problemas em alguns sites ou conteúdos.
+content-blocking-etp-custom-desc = Escolha quais os rastreadores e scripts a bloquear.
+content-blocking-private-windows = Conteúdo de monitorização nas janelas privadas
+content-blocking-cross-site-tracking-cookies = Cookies de monitorização inter-sites
+content-blocking-social-media-trackers = Rastreadores de redes sociais
 content-blocking-all-cookies = Todos os cookies
 content-blocking-unvisited-cookies = Cookies de sites não visitados
-content-blocking-all-windows-trackers = Trackers conhecidos em todas as janelas
+content-blocking-all-windows-trackers = Rastreadores conhecidos em todas as janelas
+content-blocking-all-windows-tracking-content = Conteúdo de monitorização em todas as janelas
 content-blocking-all-third-party-cookies = Todos os cookies de terceiros
-content-blocking-cryptominers = Cryptominers
-content-blocking-fingerprinters = Fingerprinters
+content-blocking-cryptominers = Cripto-mineradores
+content-blocking-fingerprinters = Identificadores
 content-blocking-warning-title = Atenção!
-content-blocking-warning-description = Bloquear conteúdo pode causar com que alguns websites quebrem. É fácil desativar o bloqueio para sites em que confia.
+content-blocking-warning-description = O bloqueio de conteúdo pode fazer com que alguns sites quebrem. É fácil desativar o bloqueio para sites em que confia.
 content-blocking-learn-how = Saber mais
+content-blocking-etp-warning-description = O bloqueio de rastreadores poderá afetar a funcionalidade de alguns sites. Recarregue uma página com rastreadores para carregar todo o conteúdo.
+content-blocking-warning-learn-how = Saiba como
 content-blocking-reload-description = Irá precisar de recarregar os seus separadores para aplicar estas alterações.
 content-blocking-reload-tabs-button =
     .label = Recarregar todos os separadores
     .accesskey = R
 content-blocking-trackers-label =
-    .label = Trackers
-    .accesskey = T
+    .label = Rastreadores
+    .accesskey = R
+content-blocking-tracking-content-label =
+    .label = Conteúdo de monitorização
+    .accesskey = t
 content-blocking-tracking-protection-option-all-windows =
     .label = Em todas as janelas
     .accesskey = a
@@ -836,13 +947,13 @@ content-blocking-expand-section =
     .tooltiptext = Mais informação
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
-    .label = Cryptominers
-    .accesskey = y
+    .label = Cripto-mineradores
+    .accesskey = C
 # Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
 # that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
 content-blocking-fingerprinters-label =
-    .label = Fingerprinters
-    .accesskey = F
+    .label = Identificadores
+    .accesskey = I
 
 ## Privacy Section - Tracking
 
@@ -874,8 +985,8 @@ permissions-notification-pause =
     .label = Pausar notificações até o { -brand-short-name } reiniciar
     .accesskey = n
 permissions-block-autoplay-media2 =
-    .label = Bloquear websites de reproduzir som automaticamente
-    .accesskey = B
+    .label = Impedir os sites de reproduzir som automaticamente
+    .accesskey = I
 permissions-block-autoplay-media-exceptions =
     .label = Exceções…
     .accesskey = E
@@ -890,7 +1001,7 @@ permissions-block-popups-exceptions =
     .label = Exceções…
     .accesskey = E
 permissions-addon-install-warning =
-    .label = Avisar-lhe quando os websites tentam instalar extras
+    .label = Avisar quando os sites tentam instalar extras
     .accesskey = A
 permissions-addon-exceptions =
     .label = Exceções…
@@ -976,13 +1087,13 @@ space-alert-over-5gb-pref-button =
         }
 space-alert-over-5gb-message =
     { PLATFORM() ->
-        [windows] O { -brand-short-name } está a ficar sem espaço em disco. Os conteúdos de websites podem não ser mostrados corretamente. Pode limpar os dados armazenados em Opções > Privacidade e Segurança > Cookies e dados de sites.
-       *[other] O { -brand-short-name } está a ficar sem espaço em disco. Os conteúdos de websites podem não ser mostrados corretamente. Pode limpar os dados armazenados em Preferências > Privacidade e Segurança > Cookies e dados de sites.
+        [windows] O { -brand-short-name } está a ficar sem espaço em disco. Os conteúdos de sites podem não ser apresentados corretamente. Pode limpar os dados armazenados em Opções > Privacidade e segurança > Cookies e dados de sites.
+       *[other] O { -brand-short-name } está a ficar sem espaço em disco. Os conteúdos de sites podem não ser apresentados corretamente. Pode limpar os dados armazenados em Preferências > Privacidade e segurança > Cookies e dados de sites.
     }
 space-alert-under-5gb-ok-button =
     .label = OK, entendi
     .accesskey = K
-space-alert-under-5gb-message = O { -brand-short-name } está a ficar sem espaço em disco. Os conteúdos de websites podem não ser mostrados devidamente. Visite “Saber mais” para otimizar a utilização do seu disco para melhor experiência de navegação.
+space-alert-under-5gb-message = O { -brand-short-name } está a ficar sem espaço em disco. Os conteúdos de sites podem não ser apresentados corretamente. Visite “Saber mais” para otimizar a utilização do seu disco e melhorar a experiência de navegação.
 
 ## The following strings are used in the Download section of settings
 

@@ -69,16 +69,19 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = Сақталған логиндерді іздеудесіз бе? { -sync-brand-short-name } баптаңыз.
+about-logins-login-intro-heading-logged-in = Синхрондалған логиндер табылмады.
 login-intro-description = Логиндерді басқа құрылғыдағы { -brand-product-name } ішіне сақтасаңыз, оларды осында келесідей алуға болады:
 login-intro-instruction-fxa = Логиндеріңіз сақталған құрылғыда { -fxaccount-brand-name } тіркелгісін жасаңыз немесе оған кіріңіз
 login-intro-instruction-fxa-settings = { -sync-brand-short-name } баптауларында Логиндер белгіленгеніне көз жеткізіңіз
 about-logins-intro-instruction-help = Көбірек білу үшін, <a data-l10n-name="help-link">{ -lockwise-brand-short-name } қолдау көрсету сайтын</a> шолыңыз
+about-logins-intro-import = Егер сіздің логиндеріңіз басқа браузерде сақталған болса, оларды <a data-l10n-name="import-link">{ -lockwise-brand-short-name } ішіне импорттай аласыз</a>
 
 ## Login
 
 login-item-new-login-title = Жаңа логинді жасау
 login-item-edit-button = Түзету
 login-item-delete-button = Өшіру
+about-logins-login-item-remove-button = Өшіру
 login-item-origin-label = Веб-сайт адресі
 login-item-origin =
     .placeholder = https://www.example.com
@@ -108,11 +111,8 @@ master-password-reload-button =
     .label = Кіру
     .accesskey = к
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = Бас тарту
-confirmation-dialog-dismiss-button =
-    .title = Бас тарту
 enable-password-sync-preferences-button =
     .label =
         { PLATFORM() ->
@@ -121,8 +121,19 @@ enable-password-sync-preferences-button =
         }
     .accesskey = п
 confirm-delete-dialog-title = Бұл логинді өшіру керек пе?
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = Келесіде осы сұрақты қоймау
+    .accesskey = д
+
+## Dialogs
+
+confirmation-dialog-cancel-button = Бас тарту
+confirmation-dialog-dismiss-button =
+    .title = Бас тарту
+about-logins-confirm-remove-dialog-title = Бұл логинді өшіру керек пе?
 confirm-delete-dialog-message = Бұл әрекетті болдырмау мүмкін емес болады.
 confirm-delete-dialog-confirm-button = Өшіру
+about-logins-confirm-remove-dialog-confirm-button = Өшіру
 confirm-discard-changes-dialog-title = Сақталмаған өзгерістерді тайдыру керек пе?
 confirm-discard-changes-dialog-message = Барлық сақталмаған өзгерістер жоғалады.
 confirm-discard-changes-dialog-confirm-button = Тайдыру

@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Lưu dữ liệu vào bộ nhớ lâu dài
 urlbar-addons-notification-anchor =
     .tooltiptext = Mở bảng thông báo cài đặt tiện ích
+urlbar-tip-help-icon =
+    .title = Trợ giúp
+urlbar-geolocation-blocked =
+    .tooltiptext = Bạn đã chặn thông tin địa điểm ở trang này.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Bạn đã chặn thông báo ở trang này.
+urlbar-camera-blocked =
+    .tooltiptext = Bạn đã chặn camera của mình ở trang này
+urlbar-microphone-blocked =
+    .tooltiptext = Bạn đã chặn micro của mình ở trang này
+urlbar-screen-blocked =
+    .tooltiptext = Bạn đã chặn việc chia sẻ màn hình của mình với trang web này.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Bạn đã chặn lưu dữ liệu lâu dài ở trang này.
+urlbar-popup-blocked =
+    .tooltiptext = Bạn đã chặn cửa sổ bật lên ở trang web này.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Bạn đã chặn phương tiện tự động phát có âm thanh cho trang web này.
+urlbar-canvas-blocked =
+    .tooltiptext = Bạn đã chặn khai thác dữ liệu canvas đối với trang web này.
+urlbar-midi-blocked =
+    .tooltiptext = Bạn đã chặn quyền truy cập MIDI của trang web này.
+urlbar-install-blocked =
+    .tooltiptext = Bạn đã chặn cài đặt tiện ích cho trang web này.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Thoát chế độ toàn màn hình
     .accesskey = F
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Lần này, tìm kiếm với:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Thay đổi thiết lập tìm kiếm
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Thay đổi cài đặt tìm kiếm
+search-one-offs-context-open-new-tab =
+    .label = Tìm trong thẻ mới
+    .accesskey = T
+search-one-offs-context-set-as-default =
+    .label = Đặt làm công cụ tìm kiếm mặc định
+    .accesskey = D
+search-one-offs-context-set-as-default-private =
+    .label = Đặt làm công cụ tìm kiếm mặc định cho cửa sổ riêng tư
+    .accesskey = P

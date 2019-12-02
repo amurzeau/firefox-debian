@@ -72,16 +72,19 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = Pytaće swoje składowane přizjewjenja? Konfigurujće { -sync-brand-short-name }.
+about-logins-login-intro-heading-logged-in = Žane synchronizowane přizjewjenja namakane.
 login-intro-description = Jeli sće swoje přizjewjenja { -brand-product-name } na druhim graće składował, tak móžeće je sem přinjesć:
 login-intro-instruction-fxa = Załožće abo přizjewće so pola swojeho { -fxaccount-brand-name } na graće, hdźež waše přizjewjenja su składowane
 login-intro-instruction-fxa-settings = Přeswědčće so, zo sće kontrolny kašćik přizjewjenjow w nastajenjach { -sync-brand-short-name } wubrał
 about-logins-intro-instruction-help = Wopytajće <a data-l10n-name="help-link">pomoc { -lockwise-brand-short-name }</a> za wjace pomocy
+about-logins-intro-import = Jeli waše přizjewjenja su składowane w druhim wobhladowaku, móžeće <a data-l10n-name="import-link">je do { -lockwise-brand-short-name } importować</a>
 
 ## Login
 
 login-item-new-login-title = Nowe přizjewjenje załožić
 login-item-edit-button = Wobdźěłać
 login-item-delete-button = Zhašeć
+about-logins-login-item-remove-button = Wotstronić
 login-item-origin-label = Adresa websydła
 login-item-origin =
     .placeholder = https://www.example.com
@@ -111,11 +114,8 @@ master-password-reload-button =
     .label = Přizjewić
     .accesskey = P
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = Přetorhnyć
-confirmation-dialog-dismiss-button =
-    .title = Přetorhnyć
 enable-password-sync-notification-message =
     { PLATFORM() ->
         [windows] Chceće swoje přizjewjenja wšudźe wužiwać, hdźež { -brand-product-name } wužiwaće? Dźiće k swojim nastajenjam { -sync-brand-short-name } a wubjerće kontrolny kašćik přizjewjenjow.
@@ -129,8 +129,19 @@ enable-password-sync-preferences-button =
         }
     .accesskey = N
 confirm-delete-dialog-title = Tute přizjewjenje zhašeć?
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = Hižo so njeprašeć
+    .accesskey = H
+
+## Dialogs
+
+confirmation-dialog-cancel-button = Přetorhnyć
+confirmation-dialog-dismiss-button =
+    .title = Přetorhnyć
+about-logins-confirm-remove-dialog-title = Tute přizjewjenje wotstronić?
 confirm-delete-dialog-message = Tuta akcija njeda so cofnyć.
 confirm-delete-dialog-confirm-button = Zhašeć
+about-logins-confirm-remove-dialog-confirm-button = Wotstronić
 confirm-discard-changes-dialog-title = Njeskładowane změny zaćisnyć?
 confirm-discard-changes-dialog-message = Wšě njeskładowane změny so zhubja.
 confirm-discard-changes-dialog-confirm-button = Zaćisnyć

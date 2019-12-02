@@ -47,6 +47,31 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = データを永続ストレージに格納します
 urlbar-addons-notification-anchor =
     .tooltiptext = アドオンのインストールのメッセージパネルを開きます
+urlbar-tip-help-icon =
+    .title = ヘルプを表示
+
+urlbar-geolocation-blocked =
+    .tooltiptext = このウェブサイトでの位置情報の共有をブロックしました。
+urlbar-web-notifications-blocked =
+    .tooltiptext = このウェブサイトからの通知をブロックしました。
+urlbar-camera-blocked =
+    .tooltiptext = このウェブサイトでのカメラの共有をブロックしました。
+urlbar-microphone-blocked =
+    .tooltiptext = このウェブサイトでのマイクの共有をブロックしました。
+urlbar-screen-blocked =
+    .tooltiptext = このウェブサイトでの画面の共有をブロックしました。
+urlbar-persistent-storage-blocked =
+    .tooltiptext = このウェブサイトの永続ストレージの使用をブロックしました。
+urlbar-popup-blocked =
+    .tooltiptext = このウェブサイトのポップアップをブロックしました。
+urlbar-autoplay-media-blocked =
+    .tooltiptext = このウェブサイトの音声付きメディアの自動再生をブロックしました。
+urlbar-canvas-blocked =
+    .tooltiptext = このウェブサイトの Canvas データの抽出をブロックしました。
+urlbar-midi-blocked =
+    .tooltiptext = このウェブサイトの MIDI へのアクセスをブロックしました。
+urlbar-install-blocked =
+    .tooltiptext = このウェブサイトのアドオンのインストールをブロックしました。
 
 ## Page Action Context Menu
 
@@ -65,3 +90,26 @@ full-screen-autohide =
 full-screen-exit =
     .label = 全画面表示モードを終了
     .accesskey = F
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = 今回だけ使う検索エンジン:
+
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = 検索設定を変更
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = 検索設定を変更します
+
+search-one-offs-context-open-new-tab =
+    .label = 新しいタブで検索
+    .accesskey = T
+search-one-offs-context-set-as-default =
+    .label = 既定の検索エンジンに設定
+    .accesskey = D
+search-one-offs-context-set-as-default-private =
+    .label = プライベートウィンドウの既定の検索エンジンに設定
+    .accesskey = P

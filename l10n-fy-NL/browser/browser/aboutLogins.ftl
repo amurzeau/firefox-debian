@@ -70,16 +70,19 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = Sykje jo bewarre oanmeldingen? Stel { -sync-brand-short-name } yn.
+about-logins-login-intro-heading-logged-in = Gjin syngronisearre oanmeldingen fûn.
 login-intro-description = As jo jo oanmeldgegevens by { -brand-product-name } op in oar apparaat bewarre hawwe, kinne jo se sa ophelje:
 login-intro-instruction-fxa = Meitsje op it apparaat wêrop jo oanmeldgegevens stean in { -fxaccount-brand-name } of meld jo oan
 login-intro-instruction-fxa-settings = Soargje derfoar dat jo it fjild Oanmeldingen yn de ynstellingen fan { -sync-brand-short-name } oanfinkt hawwe
 about-logins-intro-instruction-help = Besykje <a data-l10n-name="help-link">Stipe foar { -lockwise-brand-short-name }</a> foar mear help
+about-logins-intro-import = As jo oanmeldingen yn in oare browser bewarre wurde, kinne jo <a data-l10n-name="import-link">se ymportearje yn { -lockwise-brand-short-name }</a>
 
 ## Login
 
 login-item-new-login-title = Nij oanmelding meitsje
 login-item-edit-button = Bewurkje
 login-item-delete-button = Fuortsmite
+about-logins-login-item-remove-button = Fuortsmite
 login-item-origin-label = Websiteadres
 login-item-origin =
     .placeholder = https://www.example.com
@@ -109,11 +112,8 @@ master-password-reload-button =
     .label = Oanmelde
     .accesskey = O
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = Annulearje
-confirmation-dialog-dismiss-button =
-    .title = Annulearje
 enable-password-sync-notification-message =
     { PLATFORM() ->
         [windows] Wolle jo jo oanmeldingen oeral wêr't jo { -brand-product-name } brûke? Gean nei de opsjes fan { -sync-brand-short-name } en finkje it fjild Oanmeldingen oan.
@@ -127,8 +127,19 @@ enable-password-sync-preferences-button =
         }
     .accesskey = b
 confirm-delete-dialog-title = Dizze oanmelding fuortsmite?
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = Dit net mear freegje
+    .accesskey = D
+
+## Dialogs
+
+confirmation-dialog-cancel-button = Annulearje
+confirmation-dialog-dismiss-button =
+    .title = Annulearje
+about-logins-confirm-remove-dialog-title = Dizze oanmelding fuortsmite?
 confirm-delete-dialog-message = Dizze aksje kin net ûngedien makke wurde.
 confirm-delete-dialog-confirm-button = Fuortsmite
+about-logins-confirm-remove-dialog-confirm-button = Fuortsmite
 confirm-discard-changes-dialog-title = Dizze wizigingen ferwerpe?
 confirm-discard-changes-dialog-message = Alle net-bewarre wizigingen gean ferlern.
 confirm-discard-changes-dialog-confirm-button = Ferwerpe

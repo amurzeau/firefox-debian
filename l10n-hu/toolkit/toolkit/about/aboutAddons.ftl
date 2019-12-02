@@ -187,6 +187,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Engedélyezés
     .tooltiptext = Kiegészítők frissítésekor a biztonsági ellenőrzés engedélyezése
+extensions-warning-safe-mode = Minden kiegészítő tiltva van a csökkentett mód miatt.
+extensions-warning-check-compatibility = A kiegészítők kompatibilitásának vizsgálata tiltva van. Előfordulhat, hogy nem kompatibilis kiegészítői vannak.
+extensions-warning-check-compatibility-button = Engedélyezés
+    .title = Kiegészítők kompatibilitási ellenőrzésének engedélyezése
+extensions-warning-update-security = A kiegészítők biztonsági vizsgálata tiltva van. A frissítések biztonsági kockázatot hordoznak.
+extensions-warning-update-security-button = Engedélyezés
+    .title = Kiegészítők frissítésekor a biztonsági ellenőrzés engedélyezése
 
 ## Strings connected to add-on updates
 
@@ -196,12 +203,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = A legutóbbi frissítések megtekintése
     .accesskey = A
+addon-updates-check-for-updates = Frissítések keresése
+    .accesskey = F
+addon-updates-view-updates = A legutóbbi frissítések megtekintése
+    .accesskey = A
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Kiegészítők automatikus frissítése
+    .accesskey = K
+addon-updates-update-addons-automatically = Kiegészítők automatikus frissítése
     .accesskey = K
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -215,6 +228,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = M
 extensions-updates-reset-updates-to-manual =
     .label = Minden kiegészítő kézi frissítése
+    .accesskey = k
+addon-updates-reset-updates-to-automatic = Minden kiegészítő automatikus frissítése
+    .accesskey = M
+addon-updates-reset-updates-to-manual = Minden kiegészítő kézi frissítése
     .accesskey = k
 
 ## Status messages displayed when updating add-ons
@@ -234,11 +251,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Frissítések telepítése
     .tooltiptext = A listán szereplő frissítések telepítése
+addon-updates-updating = Kiegészítők frissítése
+addon-updates-installed = A kiegészítői frissítve lettek.
+addon-updates-none-found = Nem találhatók frissítések
+addon-updates-manual-updates-found = Az elérhető frissítések megtekintése
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Kiegészítő telepítése fájlból…
+    .accesskey = f
+addon-install-from-file-dialog-title = Válassza ki a telepíteni kívánt kiegészítőt
+addon-install-from-file-filter-name = Kiegészítők
+addon-open-about-debugging = Kiegészítők hibakeresése
+    .accesskey = h
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Kiegészítő-gyorsbillentyűk kezelése
+    .accesskey = o
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Kiegészítő-gyorsbillentyűk kezelése
     .accesskey = o
 shortcuts-no-addons = Egyetlen kiegészítő sincs engedélyezve.
 shortcuts-no-commands = A következő kiegészítők nem rendelkeznek gyorsbillentyűvel:
@@ -312,6 +345,8 @@ addon-options-button =
 
 report-addon-button = Jelentés
 remove-addon-button = Eltávolítás
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Nem távolítható el <a data-l10n-name="link">Miért?</a>
 disable-addon-button = Letiltás
 enable-addon-button = Engedélyezés
 expand-addon-button = További beállítások
@@ -405,3 +440,18 @@ recommended-themes-heading = Ajánlott témák
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Kreatívnak érzi magát? <a data-l10n-name="link">Állítsa össze a saját témáját a Firefox Color használatával.</a>
+
+## Page headings
+
+extension-heading = Kiegészítők kezelése
+theme-heading = Témák kezelése
+plugin-heading = Bővítmények kezelése
+dictionary-heading = Szótárak kezelése
+locale-heading = Nyelvek kezelése
+updates-heading = Frissítések kezelése
+discover-heading = A { -brand-short-name } testreszabása
+shortcuts-heading = Kiegészítő-gyorsbillentyűk kezelése
+theme-heading-search-label = További témák keresése
+extension-heading-search-label = További kiegészítők keresése
+addons-heading-search-input =
+    .placeholder = Keresés itt: addons.mozilla.org

@@ -189,6 +189,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Activer
     .tooltiptext = Activer la vérification de mises à jour de sécurité pour les modules complémentaires
+extensions-warning-safe-mode = Tous les modules complémentaires ont été désactivés par le mode sans échec.
+extensions-warning-check-compatibility = La vérification de compatibilité des modules complémentaires est désactivée. Vous avez peut-être des modules complémentaires incompatibles.
+extensions-warning-check-compatibility-button = Activer
+    .title = Activer la vérification de compatibilité
+extensions-warning-update-security = La vérification de mises à jour de sécurité pour les modules complémentaires est désactivée. Vous avez peut-être des modules complémentaires non sûrs.
+extensions-warning-update-security-button = Activer
+    .title = Activer la vérification de mises à jour de sécurité pour les modules complémentaires
 
 ## Strings connected to add-on updates
 
@@ -198,12 +205,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Afficher les mises à jour récentes
     .accesskey = A
+addon-updates-check-for-updates = Rechercher des mises à jour
+    .accesskey = R
+addon-updates-view-updates = Afficher les mises à jour récentes
+    .accesskey = A
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Mettre à jour les modules automatiquement
+    .accesskey = M
+addon-updates-update-addons-automatically = Mettre à jour les modules automatiquement
     .accesskey = M
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -217,6 +230,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = c
 extensions-updates-reset-updates-to-manual =
     .label = Désactiver la mise à jour automatique pour tous les modules
+    .accesskey = D
+addon-updates-reset-updates-to-automatic = Activer la mise à jour automatique pour tous les modules
+    .accesskey = c
+addon-updates-reset-updates-to-manual = Désactiver la mise à jour automatique pour tous les modules
     .accesskey = D
 
 ## Status messages displayed when updating add-ons
@@ -236,11 +253,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Installer les mises à jour
     .tooltiptext = Installer les mises à jour disponibles dans cette liste
+addon-updates-updating = Mise à jour des modules
+addon-updates-installed = Vos modules ont été mis à jour.
+addon-updates-none-found = Aucune mise à jour disponible
+addon-updates-manual-updates-found = Afficher les mises à jour disponibles
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Installer un module depuis un fichier…
+    .accesskey = I
+addon-install-from-file-dialog-title = Sélectionner un module à installer
+addon-install-from-file-filter-name = Modules complémentaires
+addon-open-about-debugging = Déboguer des modules
+    .accesskey = b
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Gérer les raccourcis d’extensions
+    .accesskey = G
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Gérer les raccourcis d’extensions
     .accesskey = G
 shortcuts-no-addons = Aucune extension n’est activée.
 shortcuts-no-commands = Les extensions suivantes ne disposent pas de raccourcis :
@@ -305,6 +338,8 @@ addon-options-button =
 
 report-addon-button = Signaler
 remove-addon-button = Supprimer
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Suppression impossible <a data-l10n-name="link">Pourquoi ?</a>
 disable-addon-button = Désactiver
 enable-addon-button = Activer
 expand-addon-button = Plus d’options
@@ -398,3 +433,18 @@ recommended-themes-heading = Thèmes recommandés
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Vous avez la fibre créative ? <a data-l10n-name="link">Créez votre propre thème avec Firefox Color.</a>
+
+## Page headings
+
+extension-heading = Gestion de vos extensions
+theme-heading = Gestion de vos thèmes
+plugin-heading = Gestion de vos plugins
+dictionary-heading = Gestion de vos dictionnaires
+locale-heading = Gestion des langues
+updates-heading = Gestion de vos mises à jour
+discover-heading = Personnalisez { -brand-short-name }
+shortcuts-heading = Gestion des raccourcis d’extensions
+theme-heading-search-label = Trouver d’autres thèmes
+extension-heading-search-label = Trouver d’autres extensions
+addons-heading-search-input =
+    .placeholder = Rechercher sur addons.mozilla.org

@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Stocker des données dans le stockage persistant
 urlbar-addons-notification-anchor =
     .tooltiptext = Afficher le message d’installation du module complémentaire
+urlbar-tip-help-icon =
+    .title = Obtenir de l’aide
+urlbar-geolocation-blocked =
+    .tooltiptext = Vous avez empêché ce site d’accéder à vos données de géolocalisation.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Vous avez empêché ce site d’envoyer des notifications.
+urlbar-camera-blocked =
+    .tooltiptext = Vous avez empêché ce site d’accéder à votre caméra.
+urlbar-microphone-blocked =
+    .tooltiptext = Vous avez empêché ce site d’accéder à votre microphone.
+urlbar-screen-blocked =
+    .tooltiptext = Vous avez empêché ce site de partager votre écran.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Vous avez empêché ce site d’utiliser le stockage persistant.
+urlbar-popup-blocked =
+    .tooltiptext = Vous avez bloqué des popups pour ce site web.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Vous avez empêché ce site de lire automatiquement du contenu multimédia comportant du son.
+urlbar-canvas-blocked =
+    .tooltiptext = Vous avez empêché ce site d’extraire des informations de canvas.
+urlbar-midi-blocked =
+    .tooltiptext = Vous avez bloqué l’accès MIDI pour ce site web.
+urlbar-install-blocked =
+    .tooltiptext = Vous avez bloqué l’installation de modules complémentaires pour ce site web.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Quitter le mode plein écran
     .accesskey = Q
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Pour cette fois-ci, rechercher avec :
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Paramètres de recherche
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Modifier les paramètres de recherche
+search-one-offs-context-open-new-tab =
+    .label = Rechercher dans un nouvel onglet
+    .accesskey = R
+search-one-offs-context-set-as-default =
+    .label = Définir comme moteur de recherche par défaut
+    .accesskey = D
+search-one-offs-context-set-as-default-private =
+    .label = Définir comme moteur de recherche par défaut pour les fenêtres de navigation privée
+    .accesskey = P

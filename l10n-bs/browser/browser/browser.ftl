@@ -39,6 +39,22 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Pohrani podatke u trajno spremište
 urlbar-addons-notification-anchor =
     .tooltiptext = Otvori panel s porukama instalacije add-ona
+urlbar-geolocation-blocked =
+    .tooltiptext = Blokirali ste lokacijske informacije za ovu web stranicu.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Blokirali ste notifikacije za ovu web stranicu.
+urlbar-camera-blocked =
+    .tooltiptext = Blokirali ste vašu kameru za ovu web stranicu.
+urlbar-microphone-blocked =
+    .tooltiptext = Blokirali ste vaš mikrofon za ovu web stranicu.
+urlbar-screen-blocked =
+    .tooltiptext = Blokirali ste dijeljenje vašeg ekrana ovoj web stranici.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Blokirali ste trajno spremište za ovu web stranicu.
+urlbar-popup-blocked =
+    .tooltiptext = Imate blokirane pop-up prozore za ovu web stranicu.
+urlbar-canvas-blocked =
+    .tooltiptext = Blokirali ste ekstrakciju canvas podataka za ovu web stranicu.
 
 ## Page Action Context Menu
 
@@ -57,3 +73,18 @@ full-screen-autohide =
 full-screen-exit =
     .label = Prekini prikaz preko cijelog ekrana
     .accesskey = P
+
+## Search Engine selection buttons (one-offs)
+
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Promijeni postavke pretraživača
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Promijeni postavke za pretragu
+search-one-offs-context-open-new-tab =
+    .label = Traži u novom tabu
+    .accesskey = t
+search-one-offs-context-set-as-default =
+    .label = Postavi kao glavni pretraživač
+    .accesskey = p

@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = ад { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Рэкамендацыя
+cfr-doorhanger-extension-notification2 = Рэкамендацыя
+    .tooltiptext = Рэкамендацыя пашырэння
+    .a11y-announcement = Даступна рэкамендацыя пашырэння
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Рэкамендацыя
+    .tooltiptext = Рэкамендацыя функцыі
+    .a11y-announcement = Даступна рэкамендацыя функцыі
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -80,6 +88,9 @@ cfr-protections-panel-link-text = Даведацца больш
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Новая функцыя:
 cfr-whatsnew-button =
     .label = Што новага
     .tooltiptext = Што новага
@@ -149,9 +160,25 @@ cfr-doorhanger-socialtracking-ok-button = Паглядзець меры ахов
     .accesskey = з
 cfr-doorhanger-socialtracking-close-button = Закрыць
     .accesskey = ц
+cfr-doorhanger-socialtracking-dont-show-again = Больш не паказваць такія паведамленні
+    .accesskey = в
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } не дазволіў сацыяльнай сетцы сачыць за вамі тут
 cfr-doorhanger-socialtracking-description = Ваша прыватнасць мае значэнне. Цяпер { -brand-short-name } блакуе звычайныя трэкеры сацыяльных сетак, абмяжоўваючы колькасць дадзеных, якія яны могуць сабраць пра тое, што вы робіце ў сеціве.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } заблакаваў збіральнік лічбавых адбіткаў на гэтай старонцы
 cfr-doorhanger-fingerprinters-description = Ваша прыватнасць мае значэнне. { -brand-short-name } цяпер блакуе збіральнікі лічбавых адбіткаў, якія збіраюць фрагменты адназначнай інфармацыі пра вашу прыладу, каб асочваць вас.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } заблакаваў майнер крыптавалют на гэтай старонцы
 cfr-doorhanger-cryptominers-description = Ваша прыватнасць мае значэнне. { -brand-short-name } цяпер блакуе майнеры крыптавалют, якія выкарыстоўваюць вылічальную магутнасць вашай сістэмы для здабычы лічбавых грошай.
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+        [one] { -brand-short-name } заблакаваў больш за  <b>{ $blockedCount }</b> трэкер з { $date }!
+        [few] { -brand-short-name } заблакаваў больш за  <b>{ $blockedCount }</b> трэкеры з { $date }!
+       *[many] { -brand-short-name } заблакаваў больш за  <b>{ $blockedCount }</b> трэкераў з { $date }!
+    }
+cfr-doorhanger-milestone-ok-button = Пабачыць усе
+    .accesskey = ы

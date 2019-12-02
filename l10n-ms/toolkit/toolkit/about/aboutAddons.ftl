@@ -133,9 +133,6 @@ legacy-warning-show-legacy = Pamerkan ekstensi legasi
 legacy-extensions =
     .value = Ekstensi Legasi
 legacy-extensions-description = Ekstensi berikut tidak memenuhi piawai { -brand-short-name } oleh itu dinyahaktifkan. <label data-l10n-name="legacy-learn-more">Ketahui lanjut perubahan add-ons</label>
-extensions-view-discover =
-    .name = Dapatkan Add-ons
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-recent-updates =
     .name = Kemaskini Terkini
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -163,6 +160,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Dayakan
     .tooltiptext = Dayakan semakan keselamatan kemaskini add-on
+extensions-warning-safe-mode = Semua add-ons telah dinyahdayakan oleh mod selamat.
+extensions-warning-check-compatibility = Pemeriksaan kesesuaian add-on telah dinyahdayakan. Anda mungkin mempunyai add-on yang tidak sesuai.
+extensions-warning-check-compatibility-button = Dayakan
+    .title = Dayakan semakan kesesuaian add-on
+extensions-warning-update-security = Semakan keselamatan kemaskini add-on telah dinyahdayakan. Anda mungkin terdedah kepada bahaya ketika mengemaskini.
+extensions-warning-update-security-button = Dayakan
+    .title = Dayakan semakan keselamatan kemaskini add-on
 
 ## Strings connected to add-on updates
 
@@ -172,12 +176,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Papar Kemaskini Terbaru
     .accesskey = P
+addon-updates-check-for-updates = Semak Kemaskini
+    .accesskey = e
+addon-updates-view-updates = Papar Kemaskini Terbaru
+    .accesskey = P
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Kemaskini Add-ons secara Automatik
+    .accesskey = A
+addon-updates-update-addons-automatically = Kemaskini Add-ons secara Automatik
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -191,6 +201,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = u
 extensions-updates-reset-updates-to-manual =
     .label = Set semula Semua Add-ons Untuk Kemaskini Manual
+    .accesskey = n
+addon-updates-reset-updates-to-automatic = Set semula Semua Add-ons untuk Kemaskini Automatik
+    .accesskey = u
+addon-updates-reset-updates-to-manual = Set semula Semua Add-ons Untuk Kemaskini Manual
     .accesskey = n
 
 ## Status messages displayed when updating add-ons
@@ -210,3 +224,40 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Pasang Kemaskini
     .tooltiptext = Pasang kemaskini yang tersedia di dalam senarai ini
+addon-updates-updating = Mengemaskini add-on
+addon-updates-installed = Add-ons anda telah dikemaskini.
+addon-updates-none-found = Tiada kemaskini ditemui
+addon-updates-manual-updates-found = Papar Kemaskini Tersedia
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Pasang Add-ons Dari Fail…
+    .accesskey = I
+addon-install-from-file-dialog-title = Pilih add-on untuk dipasang
+addon-install-from-file-filter-name = Add-ons
+addon-open-about-debugging = Add-ons Nyahpepijat
+    .accesskey = s
+
+## Extension shortcut management
+
+
+## Recommended add-ons page
+
+
+## Add-on actions
+
+
+## Pending uninstall message bar
+
+
+## Page headings
+
+extension-heading = Urus ekstensi anda
+theme-heading = Urus tema anda
+plugin-heading = Urus plugin anda
+dictionary-heading = Urus kamus anda
+locale-heading = Urus bahasa anda
+theme-heading-search-label = Cari tema selanjutnya
+extension-heading-search-label = Cari ekstensi selanjutnya
+addons-heading-search-input =
+    .placeholder = Cari di addons.mozilla.org

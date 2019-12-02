@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Adatok tárolása az állandó tárban
 urlbar-addons-notification-anchor =
     .tooltiptext = Kiegészítő telepítési üzenetpanel megnyitása
+urlbar-tip-help-icon =
+    .title = Segítség kérése
+urlbar-geolocation-blocked =
+    .tooltiptext = Blokkolta a helymeghatározási információkat ezen az oldalon.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Blokkolta az értesítéseket ezen az oldalon.
+urlbar-camera-blocked =
+    .tooltiptext = Blokkolta a kamerát ezen az oldalon.
+urlbar-microphone-blocked =
+    .tooltiptext = Blokkolta a mikrofont ezen az oldalon.
+urlbar-screen-blocked =
+    .tooltiptext = Blokkolta a képernyőmegosztást ezen az oldalon.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Blokkolta az állandó adattárolást ezen az oldalon.
+urlbar-popup-blocked =
+    .tooltiptext = Blokkolta a felugró ablakokat ezen az oldalon.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Blokkolta a média automatikus hangos lejátszását ezen az oldalon.
+urlbar-canvas-blocked =
+    .tooltiptext = Blokkolta a vászonadatok kinyerését ezen az oldalon.
+urlbar-midi-blocked =
+    .tooltiptext = Blokkolta a MIDI elérést ezen az oldalon.
+urlbar-install-blocked =
+    .tooltiptext = Blokkolta a kiegészítők telepítését erről az oldalról.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Kilépés a teljes képernyős módból
     .accesskey = K
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Ezúttal keressen a következővel:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Keresési beállítások módosítása
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Keresési beállítások módosítása
+search-one-offs-context-open-new-tab =
+    .label = Keresés új lapon
+    .accesskey = r
+search-one-offs-context-set-as-default =
+    .label = Legyen alapértelmezett keresőszolgáltatás
+    .accesskey = L
+search-one-offs-context-set-as-default-private =
+    .label = Beállítás alapértelmezett keresőszolgáltatásként a privát ablakokban
+    .accesskey = p

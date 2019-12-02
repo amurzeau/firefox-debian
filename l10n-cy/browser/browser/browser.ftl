@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Cadw data mewn Storfa Barhaus
 urlbar-addons-notification-anchor =
     .tooltiptext = Agor panel neges gosod yr ychwanegyn
+urlbar-tip-help-icon =
+    .title = Derbyn cymorth
+urlbar-geolocation-blocked =
+    .tooltiptext = Rydych wedi rhwystro'r manylion lleoliad ar gyfer y wefan hon.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Rydych wedi rhwystro hysbysiadau ar gyfer y wefan hon.
+urlbar-camera-blocked =
+    .tooltiptext = Rydych wedi diffodd eich camera ar gyfer y wefan hon.
+urlbar-microphone-blocked =
+    .tooltiptext = Rydych wedi diffodd eich meicroffon ar gyfer y wefan hon.
+urlbar-screen-blocked =
+    .tooltiptext = Rydych wedi rhwystro'r wefan rhag rhannu eich sgrin.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Rydych wedi rhwystro storio data parhaus ar gyfer y wefan hon.
+urlbar-popup-blocked =
+    .tooltiptext = Rydych wedi rhwystro llamlenni ar gyfer y wefan hon.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Rydych wedi rhwystro cyfrwng awtochwarae gyda seiniau ar gyfer y wefan hon.
+urlbar-canvas-blocked =
+    .tooltiptext = Rydych wedi rhwystro tynnu data canvas o'r wefan hon.
+urlbar-midi-blocked =
+    .tooltiptext = Rydych wedi rhwystro mynediad MIDI ar gyfer y wefan hon.
+urlbar-install-blocked =
+    .tooltiptext = Rydych wedi rhwystro gosod ychwanegion ar gyfer y wefan hon.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Gadael Modd Sgrin Lawn
     .accesskey = L
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Y tro hwn, chwilio gyda:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Gosodiadau Chwilio
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Newid y gosodiadau chwilio
+search-one-offs-context-open-new-tab =
+    .label = Chwilio mewn Tab Newydd
+    .accesskey = T
+search-one-offs-context-set-as-default =
+    .label = Gosod fel y Peiriant Chwilio Rhagosodedig
+    .accesskey = R
+search-one-offs-context-set-as-default-private =
+    .label = Gosod fel y Peiriant Chwilio Rhagosodedig ar gyfer Windows Preifat
+    .accesskey = G

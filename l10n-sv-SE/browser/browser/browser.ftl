@@ -24,7 +24,7 @@ urlbar-web-rtc-share-microphone-notification-anchor =
 urlbar-default-notification-anchor =
     .tooltiptext = Öppna meddelandepanel
 urlbar-geolocation-notification-anchor =
-    .tooltiptext = Öppna platsförfråganspanel
+    .tooltiptext = Öppna platsbegäranspanel
 urlbar-storage-access-anchor =
     .tooltiptext = Öppna behörighetspanelen för surfaktivitet
 urlbar-translate-notification-anchor =
@@ -36,7 +36,7 @@ urlbar-indexed-db-notification-anchor =
 urlbar-password-notification-anchor =
     .tooltiptext = Öppna meddelandepanel för sparade lösenord
 urlbar-translated-notification-anchor =
-    .tooltiptext = Hantera sidaöversättning
+    .tooltiptext = Hantera sidöversättning
 urlbar-plugins-notification-anchor =
     .tooltiptext = Hantera plugins som används
 urlbar-web-rtc-share-devices-notification-anchor =
@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Lagra data i beständig lagring
 urlbar-addons-notification-anchor =
     .tooltiptext = Öppna meddelandepanel för tilläggsinstallation
+urlbar-tip-help-icon =
+    .title = Få hjälp
+urlbar-geolocation-blocked =
+    .tooltiptext = Du har blockerat platsinformation för denna webbplats.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Du har blockerat notifieringar för denna webbsida.
+urlbar-camera-blocked =
+    .tooltiptext = Du har blockerat din kamera för denna webbsida.
+urlbar-microphone-blocked =
+    .tooltiptext = Du har blockerat din mikrofon för denna webbsida.
+urlbar-screen-blocked =
+    .tooltiptext = Du har blockerat denna webbsida från att få dela din skärm
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Du har blockerat beständig lagring för denna webbplats.
+urlbar-popup-blocked =
+    .tooltiptext = Du har blockerat popup-fönster för den här webbplatsen.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Du har blockerat automatisk uppspelning av media med ljud för den här webbplatsen.
+urlbar-canvas-blocked =
+    .tooltiptext = Du har blockerat canvas-extrahering för denna webbplats.
+urlbar-midi-blocked =
+    .tooltiptext = Du har blockerat MIDI-åtkomst för denna webbplats.
+urlbar-install-blocked =
+    .tooltiptext = Du har blockerat installation av tillägg från denna webbplats.
 
 ## Page Action Context Menu
 
@@ -64,4 +88,25 @@ full-screen-autohide =
     .accesskey = D
 full-screen-exit =
     .label = Avsluta helskärmsläget
+    .accesskey = A
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Denna gång, sök med:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Ändra sökinställningar
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Ändra sökinställningar
+search-one-offs-context-open-new-tab =
+    .label = Sök i ny flik
+    .accesskey = f
+search-one-offs-context-set-as-default =
+    .label = Ange som standardsökmotor
+    .accesskey = s
+search-one-offs-context-set-as-default-private =
+    .label = Ange som standardsökmotor för privata fönster
     .accesskey = A

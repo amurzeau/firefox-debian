@@ -45,7 +45,7 @@ newtab-topsites-save-button = सहेजें
 newtab-topsites-preview-button = पूर्वावलोकन
 newtab-topsites-add-button = जोड़ें
 
-## Top Sites - Delete history confirmation dialog. 
+## Top Sites - Delete history confirmation dialog.
 
 newtab-confirm-delete-history-p1 = क्या वाकई आप इस पृष्ठ का हर उदाहरण के अपने इतिहास से हटाना चाहते हैं?
 # "This action" refers to deleting a page from history.
@@ -80,12 +80,21 @@ newtab-menu-delete-history = इतिहास से मिटाएँ
 newtab-menu-save-to-pocket = { -pocket-brand-name } में सहेजें
 newtab-menu-delete-pocket = { -pocket-brand-name } से हटाएं
 newtab-menu-archive-pocket = { -pocket-brand-name } में संग्रहित करें
+newtab-menu-show-privacy-info = हमारे प्रायोजक और आपकी गोपनीयता
+
+## Message displayed in a modal window to explain privacy and provide context for sponsored content.
+
+newtab-privacy-modal-button-done = संपन्न
+newtab-privacy-modal-header = आपकी गोपनीयता मायने रखती है।
+
+
+
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = बुकमार्क हटाएँ
 # Bookmark is a verb here.
 newtab-menu-bookmark = बुकमार्क
 
-## Context Menu - Downloaded Menu. "Download" in these cases is not a verb, 
+## Context Menu - Downloaded Menu. "Download" in these cases is not a verb,
 ## it is a noun. As in, "Copy the link that belongs to this downloaded item".
 
 newtab-menu-copy-download-link = डाउनलोड लिंक कॉपी करें
@@ -113,7 +122,7 @@ newtab-label-recommended = लोकप्रिय
 newtab-label-saved = { -pocket-brand-name } में सहेजा
 newtab-label-download = डाउनलोड की गई
 
-## Section Menu: These strings are displayed in the section context menu and are 
+## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
 
 newtab-section-menu-remove-section = अनुभाग निकालें
@@ -126,6 +135,13 @@ newtab-section-menu-add-search-engine = खोज ईंजन जोड़े�
 newtab-section-menu-move-up = ऊपर जाएँ
 newtab-section-menu-move-down = नीचे जाएँ
 newtab-section-menu-privacy-notice = गोपनीयता नीति
+
+## Section aria-labels
+
+newtab-section-collapse-section-label =
+    .aria-label = अनुभाग संक्षिप्त करें
+newtab-section-expand-section-label =
+    .aria-label = अनुभाग विस्तृत करें
 
 ## Section Headers.
 

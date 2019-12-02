@@ -8,3 +8,15 @@
 appmenuitem-protection-report-title = Integritetsskydd
 appmenuitem-protection-report-tooltip =
     .tooltiptext = Gå till din integritetsrapport
+
+## Zoom Controls
+
+appmenuitem-zoom-enlarge =
+    .label = Zooma in
+appmenuitem-zoom-reduce =
+    .label = Zooma ut
+
+## Firefox Account toolbar button and Sync panel in App menu.
+
+fxa-toolbar-sync-now =
+    .label = Synka nu

@@ -14,6 +14,11 @@ pref-page =
             [windows] Iɣewwaṛen
            *[other] Ismenyifen
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Iɣewwaṛen
+       *[other] Ismenyifen
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -282,6 +287,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Seqdec { $plugin-name } (deg { -brand-short-name })
@@ -457,7 +466,6 @@ choose-bookmark =
 
 home-prefs-content-header = Agbur agejdan Firefox
 home-prefs-content-description = Fren agbur i tebɣiḍ deg ugdil agejdan Firefox.
-home-prefs-content-discovery-description = Agbur n usebter agejdan n Firefox yessumur imagraden usdiden n tɣara ifazen i d-yekkan seg kuẓ n tɣemmaṛ n Web.
 home-prefs-search-header =
     .label = Anadi Web
 home-prefs-topsites-header =
@@ -505,7 +513,8 @@ search-bar-shown =
     .label = Rnu afeggag n unadi deg ufeggag n ifecka
 search-engine-default-header = Amsedday n unadi amezwer
 search-engine-default-desc = Fren amsedday n unadi amezwer ad tesqedceḍ deg ufeggag n tansa akked deg ufeggag n unadi.
-search-engine-default-private-desc = Fren amsedday n unadi amezwer i useqdec deg yisfuyla n tunigin tusligt.
+search-engine-default-desc-2 = Wagi d amsedday-ik n unadi amezwer deg ufeggag n tensa akked ufeggag n unadi. Tzemreḍ ad t-tbeddleḍ melmi tebɣiḍ.
+search-engine-default-private-desc-2 = Fren amsedday-nniḍen n unadi amezwer i yisfuyla n tunigin tusligt.
 search-separate-default-engine =
     .label = Seqdec amsedday-a n unadi deg usfaylu n tunigin tusligt
     .accesskey = q
@@ -524,6 +533,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Sken-d asumer n unadi uqbel amazray n tunigin deg ugemmuḍ deg ufeggag n tansa
+search-show-suggestions-private-windows =
+    .label = Sken isumar n unadi deg isfuyla n tunigin tusligin
 suggestions-addressbar-settings = Beddel ismenyifen i uzray n tunigin, ticraḍ n yisebtar akked isumar n yiccaren
 search-suggestions-cant-show = Anadi n isumar ur d ittwaskan ara deg yigmaḍ n ufeggag n tansa acku tsewleḍ { -brand-short-name } akken ur iḥerrez ara amazray.
 search-one-click-header = Imseddayen n unadi ara tkecmeḍ s yiwen n usiti
@@ -573,6 +584,9 @@ sync-signedout-account-create = Ur tesεiḍ ara amiḍan? Bdu
 sync-signedout-account-signin =
     .label = Kcem…
     .accesskey = G
+sync-signedout-account-signin2 =
+    .label = Qqen ɣer { -sync-brand-short-name }…
+    .accesskey = Q
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -716,7 +730,11 @@ privacy-header = Tabaḍnit n iminig
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Inekcam & wawalen uffiren
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Suter akken ad teskelseḍ inekcam d wawalen uffiren i yismal web
     .accesskey = s
@@ -730,6 +748,7 @@ forms-breach-alerts =
     .label = Sken ilɣa i wawalen uffiren n yismal i teɛna trewla n yisefka
     .accesskey = k
 forms-breach-alerts-learn-more-link = Issin ugar
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Ččar inekcam d wawalen uffiren s wudem awurman
     .accesskey = i

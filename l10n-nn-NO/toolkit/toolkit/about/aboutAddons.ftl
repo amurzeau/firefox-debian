@@ -187,6 +187,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Slå på
     .tooltiptext = Slå på tryggingskontroll av tilleggsoppdateringar
+extensions-warning-safe-mode = Alle tillegg er avslegne av trygg-modus.
+extensions-warning-check-compatibility = Kompatiblitetskonroll er avslegen. Du har kanskje ikkje-kompatible tillegg.
+extensions-warning-check-compatibility-button = Slå på
+    .title = Slå på kompatibilitetskontroll
+extensions-warning-update-security = Tryggingskontroll av tilleggsoppdateringar er slått av. Du er sårbar for skadelege oppdateringar.
+extensions-warning-update-security-button = Slå på
+    .title = Slå på tryggingskontroll av tilleggsoppdateringar
 
 ## Strings connected to add-on updates
 
@@ -196,12 +203,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Vis nyleg oppdaterte
     .accesskey = V
+addon-updates-check-for-updates = Sjå etter oppdateringar no
+    .accesskey = S
+addon-updates-view-updates = Vis nyleg oppdaterte
+    .accesskey = V
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Oppdater tillegga automatisk
+    .accesskey = O
+addon-updates-update-addons-automatically = Oppdater tillegga automatisk
     .accesskey = O
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -215,6 +228,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = T
 extensions-updates-reset-updates-to-manual =
     .label = Tilbakestill alle tillegga til å oppdatere manuelt
+    .accesskey = T
+addon-updates-reset-updates-to-automatic = Tilbakestill alle tillegga til å oppdatere automatisk
+    .accesskey = T
+addon-updates-reset-updates-to-manual = Tilbakestill alle tillegga til å oppdatere manuelt
     .accesskey = T
 
 ## Status messages displayed when updating add-ons
@@ -234,11 +251,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Installer oppdateringane
     .tooltiptext = Installer tilgjengelege oppdateringar i denne lista
+addon-updates-updating = Oppdaterer tillegga
+addon-updates-installed = Tillegga dine er oppdaterte.
+addon-updates-none-found = Fann ingen oppdateringar
+addon-updates-manual-updates-found = Vis tilgjengelege oppdateringar
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Installer tillegg frå ei fil…
+    .accesskey = I
+addon-install-from-file-dialog-title = Vel eit tillegg å installere å installera
+addon-install-from-file-filter-name = Tillegg
+addon-open-about-debugging = Feilsøk tillegg
+    .accesskey = D
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Handter snarvegar for tillegg
+    .accesskey = H
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Handter snarvegar for tillegg
     .accesskey = H
 shortcuts-no-addons = Du har ingen utvidinga aktiverte.
 shortcuts-no-commands = Følgjande utvidingar har ikkje snarvegar:
@@ -310,6 +343,8 @@ addon-options-button =
 
 report-addon-button = Rapporter
 remove-addon-button = Fjern
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Kan ikkje fjernast <a data-l10n-name="link">Kvifor?</a>
 disable-addon-button = Slå av
 enable-addon-button = Slå på
 expand-addon-button = Fleire alternativ
@@ -403,3 +438,18 @@ recommended-themes-heading = Tilrådde tema
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Er du i det kreative hjørnet? <a data-l10n-name="link">Bygg ditt eige tema med Firefox Color.</a>
+
+## Page headings
+
+extension-heading = Handter utvidingane dine
+theme-heading = Handter temaa dine
+plugin-heading = Handter programtillegga dine
+dictionary-heading = Handter ordbøkene dine
+locale-heading = Handter språka dine
+updates-heading = Handter oppdateringar
+discover-heading = Tilpass { -brand-short-name }
+shortcuts-heading = Handter snarvegar for utvidingar
+theme-heading-search-label = Finn fleire tema
+extension-heading-search-label = Finn fleire utvidingar
+addons-heading-search-input =
+    .placeholder = Søk på addons.mozilla.org

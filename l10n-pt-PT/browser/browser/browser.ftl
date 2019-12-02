@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Armazenar dados em armazenamento persistente
 urlbar-addons-notification-anchor =
     .tooltiptext = Abrir painel de mensagem de instalação de extra
+urlbar-tip-help-icon =
+    .title = Obter ajuda
+urlbar-geolocation-blocked =
+    .tooltiptext = Bloqueou a informação de localização para este site.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Bloqueou as notificações para este site.
+urlbar-camera-blocked =
+    .tooltiptext = Bloqueou a sua câmara para este site.
+urlbar-microphone-blocked =
+    .tooltiptext = Bloqueou o seu microfone para este site.
+urlbar-screen-blocked =
+    .tooltiptext = Impediu este site de partilhar o seu ecrã.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Impediu o armazenamento de dados para este site.
+urlbar-popup-blocked =
+    .tooltiptext = Bloqueou pop-ups para este site.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Bloqueou a reprodução automática de multimédia para este site.
+urlbar-canvas-blocked =
+    .tooltiptext = Bloqueou a extração de dados do canvas para este site.
+urlbar-midi-blocked =
+    .tooltiptext = Bloqueou o acesso MIDI para este site.
+urlbar-install-blocked =
+    .tooltiptext = Bloqueou a instalação de extras para este site.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Sair do modo de ecrã completo
     .accesskey = e
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Desta vez, pesquisar com:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Alterar definições de pesquisa
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Alterar definições de pesquisa
+search-one-offs-context-open-new-tab =
+    .label = Pesquisar num novo separador
+    .accesskey = P
+search-one-offs-context-set-as-default =
+    .label = Definir como motor de pesquisa predefinido
+    .accesskey = d
+search-one-offs-context-set-as-default-private =
+    .label = Definir como motor de pesquisa predefinido para as janelas privadas
+    .accesskey = p

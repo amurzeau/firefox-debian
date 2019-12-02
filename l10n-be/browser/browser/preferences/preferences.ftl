@@ -14,6 +14,11 @@ pref-page =
             [windows] Налады
            *[other] Налады
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Налады
+       *[other] Налады
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -285,6 +290,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Ужываць { $plugin-name } (у { -brand-short-name })
@@ -460,7 +469,6 @@ choose-bookmark =
 
 home-prefs-content-header = Хатні экран Firefox
 home-prefs-content-description = Выберыце пажаданае змесціва для хатняга экрана Firefox.
-home-prefs-content-discovery-description = Выяўленне змесціва на хатняй старонцы Firefox дазволіць вам знаходзіць высакаякасныя рэлевантныя артыкулы з усяго сеціва.
 home-prefs-search-header =
     .label = Пошук у сеціве
 home-prefs-topsites-header =
@@ -509,7 +517,8 @@ search-bar-shown =
     .label = Дадаць радок пошуку на паліцу прылад
 search-engine-default-header = Прадвызначаны пашукавік
 search-engine-default-desc = Выберыце прадвызначаную пошукавую сістэму для выкарыстання ў адрасным радку і панэлі пошуку.
-search-engine-default-private-desc = Выберыце прадвызначаную пошукавую сістэму для выкарыстання ў прыватным рэжыме.
+search-engine-default-desc-2 = Гэта прадвызначаная пошукавая сістэма ў адрасным радку і радку пошуку. Вы можаце пераключыць яе ў любы час.
+search-engine-default-private-desc-2 = Выберыце іншую прадвызначаную пошукавую сістэму толькі для прыватных акон
 search-separate-default-engine =
     .label = Выкарыстоўваць гэту пошукавую сістэму ў прыватных вокнах
     .accesskey = В
@@ -528,6 +537,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Адлюстроўваць пошукавыя прапановы перад гісторыяй вэб-аглядання пры выкарыстанні адраснага радка
+search-show-suggestions-private-windows =
+    .label = Паказваць пошукавыя прапановы ў прыватных вокнах
 suggestions-addressbar-settings = Змяніць перавагі для гісторыі прагляду, закладак і прапаноў картак
 search-suggestions-cant-show = Пошукавыя прапановы у панэлі адрасу паказвацца не будуць, бо вы наладзілі { -brand-short-name } ніколі не запамінаць гісторыю.
 search-one-click-header = Пашукавікі ў адну пстрычку
@@ -577,6 +588,9 @@ sync-signedout-account-create = Няма ўліковага запісу? Дав
 sync-signedout-account-signin =
     .label = Увайсці…
     .accesskey = а
+sync-signedout-account-signin2 =
+    .label = Увайсці ў { -sync-brand-short-name }…
+    .accesskey = ў
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -720,7 +734,11 @@ privacy-header = Прыватнасць браўзера
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Лагіны & Паролі
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Прапаноўваць захаваць лагіны і паролі для вэб-сайтаў
     .accesskey = р
@@ -734,6 +752,7 @@ forms-breach-alerts =
     .label = Паказваць апавяшчэнні аб паролях для сайтаў, у якіх уцеклі дадзеныя
     .accesskey = і
 forms-breach-alerts-learn-more-link = Падрабязней
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Аўтаматычна запаўняць лагіны і паролі
     .accesskey = ў

@@ -14,6 +14,11 @@ pref-page =
             [windows] Настройки
            *[other] Настройки
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Настройки
+       *[other] Настройки
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -282,6 +287,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Използване на { $plugin-name } (в { -brand-short-name })
@@ -307,7 +316,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Съдържание с цифрови права (DRM)
 play-drm-content =
@@ -459,7 +468,6 @@ choose-bookmark =
 
 home-prefs-content-header = Начална страница на Firefox
 home-prefs-content-description = Изберете съдържанието, което искате да виждате на началната страница на Firefox.
-home-prefs-content-discovery-description = Откриването на съдържание от началната страница на Firefox ви позволява да откривате висококачествени и подходящи статии от мрежата.
 home-prefs-search-header =
     .label = Търсене в Мрежата
 home-prefs-topsites-header =
@@ -507,6 +515,11 @@ search-bar-shown =
     .label = Добавяне на лента за търсене в лентата с инструменти
 search-engine-default-header = Стандартна търсеща машина
 search-engine-default-desc = Изберете търсеща машина, която да използвате от адресната лента и лентата за търсене.
+search-engine-default-desc-2 = Това е вашата търсачка по подразбиране в адресната лента и в лентата за търсене. Можете да я променяте по всяко време.
+search-engine-default-private-desc-2 = Изберете друга търсачка по подразбиране само при поверително разглеждане
+search-separate-default-engine =
+    .label = Използвайте тази търсачка при поверително разглеждане
+    .accesskey = И
 search-suggestions-header = Предложения при търсене
 search-suggestions-desc = Изберете как да се показват предложенията от търсещи машини.
 search-suggestions-option =
@@ -522,6 +535,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Показване на подсказките преди резултатите от историята при търсене от адресната лента
+search-show-suggestions-private-windows =
+    .label = Показване на предложенията за търсене при поверително разглеждане
 suggestions-addressbar-settings = Променете настройките за история на разглеждане, отметки и предлагане на раздели
 search-suggestions-cant-show = Предложения при търсене в резултатите на адресната лента няма да бъдат показвани, защото { -brand-short-name } е настроен да не запазва историята на разглеждане.
 search-one-click-header = Търсене с едно щракване
@@ -625,7 +640,7 @@ prefs-sync-now =
 
 ## The list of things currently syncing.
 
-sync-currently-syncing-heading = В момента се синхронизир тези елементи:
+sync-currently-syncing-heading = В момента се синхронизират следните елементи:
 sync-currently-syncing-bookmarks = Отметки
 sync-currently-syncing-history = История
 sync-currently-syncing-tabs = Отворени раздели
@@ -638,6 +653,9 @@ sync-currently-syncing-prefs =
         [windows] Настройки
        *[other] Настройки
     }
+sync-change-options =
+    .label = Променяне…
+    .accesskey = П
 
 ## The "Choose what to sync" dialog.
 
@@ -711,7 +729,11 @@ privacy-header = Поверителност на четеца
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Регистрации и пароли
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Питане при запазване имена и пароли за вход в страниците
     .accesskey = т
@@ -725,6 +747,7 @@ forms-breach-alerts =
     .label = Показване на известия за изтекли пароли от разбити страници
     .accesskey = и
 forms-breach-alerts-learn-more-link = Научете повече
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Автоматично попълване на регистрации и пароли
     .accesskey = р
@@ -846,6 +869,7 @@ addressbar-suggestions-settings = Настройки на предложения
 content-blocking-header = Ограничаване на съдържание
 content-blocking-section-description = Защитете личните си данни, докато разглеждате. Ограничете невидимото съдържание, което следи посещаваните от вас страници и ви профилира. Спирането на част от това съдържание може да подобри зареждането на страниците.
 content-blocking-enhanced-tracking-protection = Разширена защита от проследяване
+content-blocking-section-top-level-description = Проследяванията ви следват онлайн, за да събират информация за навиците и интересите ви при разглеждане. { -brand-short-name } спира много от тях, както и други злонамерени скриптове.
 content-blocking-learn-more = Научете повече
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -878,7 +902,7 @@ enhanced-tracking-protection-setting-custom =
     .label = По избор
     .accesskey = и
 
-
+##
 
 content-blocking-etp-standard-desc = Баланс между защита и бързодействие. Страниците ще се зареждат нормално.
 content-blocking-etp-strict-desc = По-високо ниво на защита, но някои страници може да не работят.

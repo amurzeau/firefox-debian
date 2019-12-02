@@ -19,7 +19,7 @@ onboarding-button-label-get-started = Розпочнімо
 ## Welcome modal dialog strings
 
 onboarding-welcome-header = Вітаємо в { -brand-short-name }
-onboarding-welcome-body = Ви отримали браузер.<br/>Познайомтеся ближче з { -brand-product-name }.
+onboarding-welcome-body = Тепер у вас є браузер.<br/>Познайомтеся ближче з { -brand-product-name }.
 onboarding-welcome-learn-more = Дізнатися більше про переваги.
 onboarding-welcome-modal-get-body = Ви отримали браузер.<br/>Тепер отримайте максимум можливостей з { -brand-product-name }.
 onboarding-welcome-modal-supercharge-body = Посильте захист своєї приватності.
@@ -33,10 +33,20 @@ onboarding-join-form-email =
 onboarding-join-form-email-error = Необхідна дійсна адреса е-пошти
 onboarding-join-form-legal = Продовжуючи, ви приймаєте <a data-l10n-name="terms">Умови користування</a> і <a data-l10n-name="privacy">Політику приватності</a>.
 onboarding-join-form-continue = Продовжити
+# This message is followed by a link using onboarding-join-form-signin ("Sign In") as text.
+onboarding-join-form-signin-label = Вже маєте обліковий запис?
+# Text for link to submit the sign in form
+onboarding-join-form-signin = Увійти
 onboarding-start-browsing-button-label = Почати перегляд
 onboarding-cards-dismiss =
     .title = Сховати
     .aria-label = Сховати
+
+## Welcome full page string
+
+onboarding-fullpage-welcome-subheader = Розпочнімо знайомство з усіма можливостями.
+onboarding-fullpage-form-email =
+    .placeholder = Адреса вашої е-пошти…
 
 ## Firefox Sync modal dialog strings.
 
@@ -103,6 +113,7 @@ onboarding-data-sync-text2 = Синхронізуйте закладки, пар
 onboarding-data-sync-button2 = Увійти в { -sync-brand-short-name(case: "acc") }
 onboarding-firefox-monitor-title = Отримуйте попередження про витоки даних
 onboarding-firefox-monitor-text = { -monitor-brand-name } стежить, чи не з'явилася ваша адреса електронної пошти у витоках даних і одразу повідомляє вас про це.
+onboarding-firefox-monitor-text2 = { -monitor-brand-name } стежить, чи не з'явилася ваша адреса електронної пошти у відомих витоках даних і одразу повідомляє вас про це.
 onboarding-firefox-monitor-button = Підписатися на попередження
 onboarding-browse-privately-title = Користуйтесь інтернетом приватно
 onboarding-browse-privately-text = Приватний перегляд очищує вашу історію пошуку і перегляду, щоб не дозволити дізнатися про це іншим користувачам вашого комп'ютера.

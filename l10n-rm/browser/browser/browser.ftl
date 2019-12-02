@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Memorisar datas en la memoria durabla
 urlbar-addons-notification-anchor =
     .tooltiptext = Avrir la panela d'installaziun da supplements
+urlbar-tip-help-icon =
+    .title = Ir per agid
+urlbar-geolocation-blocked =
+    .tooltiptext = Ti has bloccà las infurmaziuns da geolocalisaziun per questa website.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Ti has bloccà ils messadis da questa website.
+urlbar-camera-blocked =
+    .tooltiptext = Ti has bloccà tia camera per questa website.
+urlbar-microphone-blocked =
+    .tooltiptext = Ti has bloccà tes microfon per questa website.
+urlbar-screen-blocked =
+    .tooltiptext = Ti has bloccà la pussaivladad da questa website da cundivider tes visur.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Ti has bloccà la memoria durabla per questa website.
+urlbar-popup-blocked =
+    .tooltiptext = Ti has bloccà pop-ups per questa website.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Ti has bloccà la reproducziun automatica dad elements da multimedia cun tun.
+urlbar-canvas-blocked =
+    .tooltiptext = Ti has bloccà l'extracziun da datas da canvas per questa website.
+urlbar-midi-blocked =
+    .tooltiptext = Ti has bloccà l'access a MIDI per questa pagina d'internet.
+urlbar-install-blocked =
+    .tooltiptext = Ti has bloccà l'installaziun da supplements per questa website.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Interrumper il modus da maletg entir
     .accesskey = I
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Per questa giada, tschertgar cun:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Midar parameters da tschertga
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Midar ils parameters per tschertgar
+search-one-offs-context-open-new-tab =
+    .label = Tschertgar en in nov tab
+    .accesskey = T
+search-one-offs-context-set-as-default =
+    .label = Definir sco maschina da tschertgar da standard
+    .accesskey = D
+search-one-offs-context-set-as-default-private =
+    .label = Definir sco maschina da tschertgar da standard per fanestras privatas
+    .accesskey = p

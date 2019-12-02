@@ -14,6 +14,11 @@ pref-page =
             [windows] Баптаулар
            *[other] Баптаулар
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Баптаулар
+       *[other] Баптаулар
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -307,7 +312,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Цифрлық құқықтарды басқару (DRM) құрамасы
 play-drm-content =
@@ -454,7 +459,6 @@ choose-bookmark =
 
 home-prefs-content-header = Firefox үй парағы құрамасы
 home-prefs-content-description = Firefox үй парағында қандай құраманы көргіңіз келетінді таңдаңыз.
-home-prefs-content-discovery-description = Firefox үй парағында құраманы табу сізге интернеттен жоғары сапалы, релевантты мақалаларды табуға көмектеседі.
 home-prefs-search-header =
     .label = Интернеттен іздеу
 home-prefs-topsites-header =
@@ -502,6 +506,8 @@ search-bar-shown =
     .label = Құралдар панеліне іздеу панелін қосу
 search-engine-default-header = Негізгі іздеу жүйесі
 search-engine-default-desc = Адрестік жолақ және іздеу өрісі үшін қолданылатын негізгі іздеу жүйесін таңдау.
+search-suggestions-header = Іздеу ұсыныстары
+search-suggestions-desc = Іздеу жүйелерінің ұсыныстары қайда көрсетілетінін таңдаңыз.
 search-suggestions-option =
     .label = Іздеу ұсыныстарын көрсету
     .accesskey = с
@@ -515,6 +521,9 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Адрестік жолақ нәтижелерінде іздеу ұсыныстарын шолу тарихының алдында көрсету
+search-show-suggestions-private-windows =
+    .label = Іздеу жүйелерінің ұсыныстарын жекелік терезелерінде көрсету
+suggestions-addressbar-settings = Шолу тарихы, бетбелгілер және беттер ұсыныстары үшін баптауларды өзгерту
 search-suggestions-cant-show = Орналасу жолағынан іздеу нәтижелерінде іздеу ұсыныстары көрсетілмейді, өйткені сіз { -brand-short-name } өнімін тарихты есте сақтамайтындай етіп баптадыңыз.
 search-one-click-header = Бірлік шертумен іздеу қызметтері
 search-one-click-desc = Сіз кілттік сөзді енгізген кезде адрестік жолағы және іздеу өрістерінің астында көрсетілетін қосымша іздеу жүйелерін таңдаңыз.
@@ -583,6 +592,9 @@ sync-profile-picture =
 sync-disconnect =
     .label = Байланысты үзу…
     .accesskey = з
+sync-sign-out =
+    .label = Шығу…
+    .accesskey = Ш
 sync-manage-account = Тіркелгіні басқару
     .accesskey = к
 sync-signedin-unverified = { $email } расталған жоқ
@@ -603,6 +615,10 @@ sync-signedin-settings-desc = { -brand-short-name } қолданатын құр�
 
 prefs-syncing-on = Синхрондау: ІСКЕ ҚОСЫЛҒАН
 prefs-syncing-off = Синхрондау: СӨНДІРІЛГЕН
+prefs-sync-setup =
+    .label = { -sync-brand-short-name } баптау…
+    .accesskey = п
+prefs-sync-offer-setup-label = Өзіңіздің бетбелгілер, тарих, беттер, парольдер және қосымшаларыңызды барлық құрылғыларыңыз арасында синхрондаңыз.
 prefs-sync-now =
     .labelnotsyncing = Қазір синхрондау
     .accesskeynotsyncing = н
@@ -623,9 +639,19 @@ sync-currently-syncing-prefs =
         [windows] Баптаулар
        *[other] Баптаулар
     }
+sync-change-options =
+    .label = Өзгерту…
+    .accesskey = з
 
 ## The "Choose what to sync" dialog.
 
+sync-choose-what-to-sync-dialog =
+    .title = Нені синхрондауды таңдаңыз
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Өзгерістерді сақтау
+    .buttonaccesskeyaccept = с
+    .buttonlabelextra2 = Байланысты үзу…
+    .buttonaccesskeyextra2 = з
 sync-engine-bookmarks =
     .label = Бетбелгілер
     .accesskey = т
@@ -640,6 +666,10 @@ sync-engine-logins =
     .label = Логиндер
     .tooltiptext = Сіз сақтаған пайдаланушы аттары және парольдер
     .accesskey = Л
+sync-engine-logins-passwords =
+    .label = Логиндер және парольдер
+    .tooltiptext = Сіз сақтаған пайдаланушы аттары және парольдер
+    .accesskey = л
 sync-engine-addresses =
     .label = Адрестер
     .tooltiptext = Сіз сақтаған пошта адрестері (тек жұмыс үстелі)
@@ -684,6 +714,9 @@ sync-fxa-privacy-notice = Жекелік ескертуі
 privacy-header = Браузер жекелігі
 
 ## Privacy Section - Forms
+
+
+## Privacy Section - Logins and Passwords
 
 logins-header = Логиндер және парольдер
 forms-ask-to-save-logins =
@@ -844,8 +877,9 @@ enhanced-tracking-protection-setting-custom =
     .label = Таңдауыңызша
     .accesskey = ы
 
+##
 
-
+content-blocking-social-media-trackers = Әлеуметтік желілер трекерлері
 content-blocking-all-cookies = Барлық cookie файлдары
 content-blocking-unvisited-cookies = Қаралмаған сайттардың cookies файлдары
 content-blocking-all-windows-trackers = Барлық терезелердегі белгілі трекерлер

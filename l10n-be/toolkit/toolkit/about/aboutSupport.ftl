@@ -150,6 +150,22 @@ intl-locales-default = Прадвызначаная лакалізацыя
 intl-os-title = Аперацыйная сістэма
 intl-os-prefs-system-locales = Сістэмныя лакалізацыі
 intl-regional-prefs = Рэгіянальныя налады
+
+## Remote Debugging
+##
+## The Firefox remote protocol provides low-level debugging interfaces
+## used to inspect state and control execution of documents,
+## browser instrumentation, user interaction simulation,
+## and for subscribing to browser-internal events.
+##
+## See also https://firefox-source-docs.mozilla.org/remote/
+
+remote-debugging-title = Адлеглая адладка (пратакол Chromium)
+remote-debugging-accepting-connections = Прыём злучэнняў
+remote-debugging-url = URL
+
+
+
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
@@ -251,6 +267,7 @@ unknown-failure = У спісе блакавання; код памылкі { $f
 d3d11layers-crash-guard = Кампазітар D3D11
 d3d11video-crash-guard = Відэадэкодэр D3D11
 d3d9video-crash-buard = Відэадэкодэр D3D9
+d3d9video-crash-guard = Відэадэкодэр D3D9
 glcontext-crash-guard = OpenGL
 reset-on-next-restart = Скінуць пры наступным перазапуску
 gpu-process-kill-button = Завяршыць GPU працэс

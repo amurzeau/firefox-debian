@@ -14,6 +14,11 @@ pref-page =
             [windows] Beállítások
            *[other] Beállítások
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Beállítások
+       *[other] Beállítások
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -282,6 +287,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } használata ({ -brand-short-name } böngészőben)
@@ -457,7 +466,6 @@ choose-bookmark =
 
 home-prefs-content-header = Firefox kezdőlap tartalma
 home-prefs-content-description = Válassza ki milyen tartalmat szeretne a Firefox kezdőlapon.
-home-prefs-content-discovery-description = A Firefox kezdőlapon lévő tartalomfelfedezéssel kiváló minőségű, releváns cikkeket találhat szerte a weben.
 home-prefs-search-header =
     .label = Webes keresés
 home-prefs-topsites-header =
@@ -505,7 +513,8 @@ search-bar-shown =
     .label = Keresősáv hozzáadása az eszköztárhoz
 search-engine-default-header = Alapértelmezett keresőszolgáltatás
 search-engine-default-desc = Válassza ki a címsávban és a keresősávban alapértelmezetten használandó keresőszolgáltatást.
-search-engine-default-private-desc = Válassza ki a privát ablakokban használandó alapértelmezett keresőszolgáltatást.
+search-engine-default-desc-2 = Ez az alapértelmezett keresőszolgáltatás a cím- és keresősávban. Bármikor átválthatja.
+search-engine-default-private-desc-2 = Válasszon egy másik keresőszolgáltatást kizárólag a privát ablakokhoz
 search-separate-default-engine =
     .label = E keresőszolgáltatás használata a privát ablakokban
     .accesskey = h
@@ -524,6 +533,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Keresési javaslatok megjelenítése a böngészési előzmények előtt a címsor találatai között
+search-show-suggestions-private-windows =
+    .label = Keresési javaslatok megjelenítése a privát ablakokban
 suggestions-addressbar-settings = Böngészési előzmények, könyvjelzők és lapjavaslatok beállításainak módosítása
 search-suggestions-cant-show = A keresési javaslatok nem jelennek meg a címsáv találatai között, mert a { -brand-short-name } nem jegyzi meg az előzményeket.
 search-one-click-header = Egy kattintásos keresőszolgáltatások
@@ -573,6 +584,9 @@ sync-signedout-account-create = Nincs felhasználóneve? Kezdjen neki
 sync-signedout-account-signin =
     .label = Bejelentkezés…
     .accesskey = B
+sync-signedout-account-signin2 =
+    .label = Bejelentkezés a { -sync-brand-short-name }be…
+    .accesskey = j
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -716,7 +730,11 @@ privacy-header = Böngésző adatvédelme
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Bejelentkezések és jelszavak
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Felhasználónevek és jelszavak megjegyzésének megkérdezése az oldalakhoz
     .accesskey = k
@@ -730,6 +748,7 @@ forms-breach-alerts =
     .label = Figyelmeztetések megjelenítése a feltört webhelyek jelszavaival kapcsolatban
     .accesskey = f
 forms-breach-alerts-learn-more-link = További tudnivalók
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Bejelentkezések és jelszavak automatikus kitöltése
     .accesskey = i

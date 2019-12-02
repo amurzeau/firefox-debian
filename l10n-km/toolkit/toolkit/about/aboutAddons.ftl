@@ -117,9 +117,6 @@ disabled-unsigned-description = កម្មវិធី​ផ្នែក​ប
 disabled-unsigned-learn-more = ស្វែងយល់​បន្ថែម​អំពី​ការ​ព្យាយាម​របស់​យើង​ដើម្បី​ជួយ​រក្សា​សុវត្ថិភាព​របស់​អ្នក​នៅ​លើ​អ៊ីនធឺណិត។
 disabled-unsigned-devinfo = អ្នក​អភិវឌ្ឍ​ដែល​ចាប់អារម្មណ៍​​ដើម្បី​​បញ្ជាក់​កម្មវិធី​​ផ្នែក​បន្ថែម​របស់​ពួកគេ​អាច​បន្ត​ដោយ​អាន <label data-l10n-name="learn-more">ដោយដៃ</label>.
 plugin-deprecation-description = មាន​បាត់​អ្វី​មែន​ទេ? ផ្នែក​បន្ថែម​មួយ​ចំនួន​មិន​គាំទ្រ​ដោយ { -brand-short-name } ទៀត​ទេ។ <label data-l10n-name="learn-more">ស្វែងយល់បន្ថែម</label>
-extensions-view-discover =
-    .name = យក​កម្មវិធី​បន្ថែម
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-recent-updates =
     .name = បច្ចុប្បន្នភាព​ថ្មី​ៗ
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -147,6 +144,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = បើក
     .tooltiptext = បើក​ការ​ត្រួតពិនិត្យមើល​សុវត្ថិភាព​នៃ​បច្ចុប្បន្នភាព​របស់​កម្មវិធី​បន្ថែម
+extensions-warning-safe-mode = កម្មវិធី​បន្ថែម​ទាំងអស់​ត្រូវ​បាន​បិទ​ដោយ​របៀប​សុវត្ថិភាព ។
+extensions-warning-check-compatibility = ការ​ត្រួតពិនិត្យ​ភាព​ឆបគ្នា​នៃ​កម្មវិធី​បន្ថែម​នេះ​ត្រូវ​បាន​បិទ ។ អ្នក​អាច​នឹង​មាន​កម្មវិធី​បន្ថែម​ដែល​មិន​ឆប​គ្នា ។
+extensions-warning-check-compatibility-button = បើក
+    .title = បើក​ការ​ត្រួតពិនិត្យ​មើល​ភាព​ឆបគ្នា​នៃ​កម្មវិធី​បន្ថែម
+extensions-warning-update-security = ការ​ត្រួតពិនិត្យ​សុវត្ថិភាព​នៃ​បច្ចុប្បន្នភាព​របស់​កម្មវិធី​បន្ថែម​ត្រូវ​បាន​បិទ ។ អ្នក​អាច​នឹង​ត្រូវ​បាន​សម្របសម្រួល​ទៅតាម​បច្ចុប្បន្នភាព ។
+extensions-warning-update-security-button = បើក
+    .title = បើក​ការ​ត្រួតពិនិត្យមើល​សុវត្ថិភាព​នៃ​បច្ចុប្បន្នភាព​របស់​កម្មវិធី​បន្ថែម
 
 ## Strings connected to add-on updates
 
@@ -156,12 +160,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = មើល​បច្ចុប្បន្នភាព​ថ្មីៗ
     .accesskey = V
+addon-updates-check-for-updates = ពិនិត្យមើល​បច្ចុប្បន្នភាព
+    .accesskey = ព
+addon-updates-view-updates = មើល​បច្ចុប្បន្នភាព​ថ្មីៗ
+    .accesskey = V
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = ធ្វើ​បច្ចុប្បន្នភាព​កម្មវិធី​បន្ថែម​ដោយ​ស្វ័យប្រវត្តិ
+    .accesskey = A
+addon-updates-update-addons-automatically = ធ្វើ​បច្ចុប្បន្នភាព​កម្មវិធី​បន្ថែម​ដោយ​ស្វ័យប្រវត្តិ
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -175,6 +185,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = R
 extensions-updates-reset-updates-to-manual =
     .label = កំណត់​កម្មវិធី​បន្ថែម​ទាំងអស់​ឡើង​វិញ ដើម្បី​ធ្វើ​បច្ចុប្បន្នភាព​ដោយ​ដៃ
+    .accesskey = R
+addon-updates-reset-updates-to-automatic = កំណត់​កម្មវិធី​បន្ថែម​ទាំងអស់​ឡើង​វិញ ដើម្បី​ធ្វើ​បច្ចុប្បន្នភាព​ដោយ​ស្វ័យប្រវត្តិ
+    .accesskey = R
+addon-updates-reset-updates-to-manual = កំណត់​កម្មវិធី​បន្ថែម​ទាំងអស់​ឡើង​វិញ ដើម្បី​ធ្វើ​បច្ចុប្បន្នភាព​ដោយ​ដៃ
     .accesskey = R
 
 ## Status messages displayed when updating add-ons
@@ -194,3 +208,31 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = ដំឡើង​បច្ចុប្បន្នភាព
     .tooltiptext = ដំឡើង​បច្ចុប្បន្នភាព​ដែល​មាន​នៅ​ក្នុង​បញ្ជី​នេះ
+addon-updates-updating = កំពុង​ធ្វើ​បច្ចុប្បន្នភាព​កម្មវិធី​បន្ថែម
+addon-updates-installed = កម្មវិធី​បន្ថែម​របស់​អ្នក​ត្រូវ​បាន​ធ្វើ​បច្ចុប្បន្នភាព ។
+addon-updates-none-found = រក​មិន​ឃើញ​បច្ចុប្បន្នភាព
+addon-updates-manual-updates-found = មើល​បច្ចុប្បន្នភាព​ដែល​មាន
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = ដំឡើង​កម្មវិធី​បន្ថែម​ពី​ឯកសារ…
+    .accesskey = I
+addon-install-from-file-dialog-title = ជ្រើស​កម្មវិធី​បន្ថែម​ដើម្បី​ដំឡើង
+addon-install-from-file-filter-name = កម្មវិធី​បន្ថែម
+addon-open-about-debugging = បំបាត់​កំហុស​ផ្នែក​បន្ថែម
+    .accesskey = B
+
+## Extension shortcut management
+
+
+## Recommended add-ons page
+
+
+## Add-on actions
+
+
+## Pending uninstall message bar
+
+
+## Page headings
+

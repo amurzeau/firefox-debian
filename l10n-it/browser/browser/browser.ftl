@@ -2,6 +2,37 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This is the default window title in case there is no content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+browser-main-window-title =
+    { $mode ->
+        [private] { -brand-full-name } (Navigazione anonima)
+       *[default] { -brand-full-name }
+    }
+# This is the default window title in case there is a content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Example Title - Mozilla Firefox"
+# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+#   $title (String) - Content title string.
+browser-main-window-content-title =
+    { $mode ->
+        [private] { $title } - { -brand-full-name } (Navigazione anonima)
+       *[default] { $title } - { -brand-full-name }
+    }
 urlbar-identity-button =
     .aria-label = Visualizza informazioni sul sito
 
@@ -47,6 +78,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Salvataggio dati nell’archivio permanente
 urlbar-addons-notification-anchor =
     .tooltiptext = Apri il pannello con il messaggio di installazione componente aggiuntivo
+urlbar-tip-help-icon =
+    .title = Ottieni assistenza
+urlbar-geolocation-blocked =
+    .tooltiptext = Il rilevamento della posizione è bloccato per questo sito web.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Le notifiche sono bloccate per questo sito web.
+urlbar-camera-blocked =
+    .tooltiptext = La fotocamera è bloccata per questo sito web.
+urlbar-microphone-blocked =
+    .tooltiptext = Il microfono è bloccato per questo sito web.
+urlbar-screen-blocked =
+    .tooltiptext = La condivisione dello schermo è bloccata per questo sito web.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Il salvataggio dati nell’archivio permanente è bloccato per questo sito web.
+urlbar-popup-blocked =
+    .tooltiptext = Sono state bloccate delle finestre pop-up per questo sito web web.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = È stata bloccata la riproduzione automatica di contenuti sonori per questo sito web.
+urlbar-canvas-blocked =
+    .tooltiptext = È stato bloccato l’accesso ai dati dei canvas per questo sito web.
+urlbar-midi-blocked =
+    .tooltiptext = È stato bloccato l’accesso alle funzioni MIDI per questo sito web.
+urlbar-install-blocked =
+    .tooltiptext = È stata bloccata l’installazione di componenti aggiuntivi per questo sito.
 
 ## Page Action Context Menu
 

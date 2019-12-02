@@ -14,6 +14,11 @@ pref-page =
             [windows] Taq cha'oj
            *[other] Taq ajowab'äl
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Taq cha'oj
+       *[other] Taq ajowab'äl
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -282,6 +287,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Tokisäx { $plugin-name } (pa { -brand-short-name })
@@ -457,7 +466,6 @@ choose-bookmark =
 
 home-prefs-content-header = Etamab'äl pa ri Rutikirib'al Firefox
 home-prefs-content-description = Tacha' achike etamab'äl nawajo' pa ri Rutikirib'al Firefox ruwäch.
-home-prefs-content-discovery-description = Content Discovery pa Rutikirib'al Firefox nuya' q'ij chawe richin ye'awïl nima'q taq cholna'oj ri nïm kejqalem pa ronojel ajk'amaya'l.
 home-prefs-search-header =
     .label = Ajk'amaya'l Kanoxïk
 home-prefs-topsites-header =
@@ -505,7 +513,8 @@ search-bar-shown =
     .label = Titz'aqatisäx ri rukajtz'ik kanoxïk pa molsamajib'äl
 search-engine-default-header = K'o wi chi kanonel
 search-engine-default-desc = Tacha' ri ruk'u'x kanob'äl kan k'o wi richin nawokisaj pa ri kikajtz'ik taq ochochib'äl chuqa' pa ri rukajtz'ik kanoxïk.
-search-engine-default-private-desc = Tacha' ri kanob'äl k'o wi richin nokisäx pa ri Ichinan Tzuwäch.
+search-engine-default-desc-2 = Re re' jun rokik'amaya'l kanoxïk ri k'o pa kikajtz'ik ochochib'äl chuqa' pa ri rukajtz'ik kanoxïk. Yatikïr najäl pa xab'achike ramaj.
+search-engine-default-private-desc-2 = Ticha achi'el ri rokik'amaya'l kanoxïk k'o kichin Ichinan taq Tzuwäch
 search-separate-default-engine =
     .label = Tokisäx re kanob'äl re pan Ichinan Tzuwäch
     .accesskey = o
@@ -524,6 +533,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Kek'ut pe taq chilab'enïk nab'ey chuwäch ri natab'äl pa ri xe'ilitäj pa ri kikajtz'ik taq ochochib'äl
+search-show-suggestions-private-windows =
+    .label = Kek'ut pe taq kichilab'exik kanoxik pa Ichinan taq Tzuwäch
 suggestions-addressbar-settings = Kejal taq rajowaxik runatab'al okem pa k'amaya'l, taq yaketal chuqa' kichilab'exik taq ruwi'
 search-suggestions-cant-show = Man xkeq'alajin ta pe ri taq chilab'exïk richin nikanöx pa rukajtz'ik ochochib'äl ruma chi anuk'un ri { -brand-short-name } richin majub'ey tunataj ri anatab'al.
 search-one-click-header = Samajel taq kanob'äl rik'in jupitz'oj
@@ -573,6 +584,9 @@ sync-signedout-account-create = ¿La man k'o ta jun ataqoya'l? Titikirisäx
 sync-signedout-account-signin =
     .label = Titikirisäx molojri'ïl…
     .accesskey = C
+sync-signedout-account-signin2 =
+    .label = Tatz'ib'aj ab'i' pa { -sync-brand-short-name }…
+    .accesskey = p
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -716,7 +730,11 @@ privacy-header = Richinanem Okik'amaya'l
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Kitikirisanïk Molojri'ïl & Ewan taq Tzij
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Tik'utüx chi rij ri kiyakik kitikirib'al taq molojri'ïl chuqa' ri ewan taq kitzij taq ruxaq ajk'amaya'l
     .accesskey = r
@@ -730,6 +748,7 @@ forms-breach-alerts =
     .label = Kek'ut pe rutzijol taq k'ayewal chi kij ewan taq tzij kichin tz'ilan ajk'amaya'l ruxaq.
     .accesskey = n
 forms-breach-alerts-learn-more-link = Tetamäx ch'aqa' chik
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Ruyonil ketz'aqatisäx ri tikirib'äl molojri'ïl chuqa' ewan taq tzij
     .accesskey = i

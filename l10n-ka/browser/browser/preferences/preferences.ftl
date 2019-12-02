@@ -14,6 +14,11 @@ pref-page =
             [windows] პარამეტრები
            *[other] პარამეტრები
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] პარამეტრები
+       *[other] პარამეტრები
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -282,6 +287,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } მოდული ({ -brand-short-name }-ში)
@@ -457,7 +466,6 @@ choose-bookmark =
 
 home-prefs-content-header = Firefox საწყისი გვერდი
 home-prefs-content-description = აირჩიეთ, თუ რისი გამოჩენა გსურთ Firefox-ის საწყის გვერდზე.
-home-prefs-content-discovery-description = შიგთავსის მოძიება Firefox-ის მთავარ გვერდზე, საშუალებას გაძლევთ აღმოაჩინოთ მაღალი ხარისხის, გამოსადეგი სტატიები მთელ ინტერნეტში.
 home-prefs-search-header =
     .label = საძიებო ველი
 home-prefs-topsites-header =
@@ -505,7 +513,8 @@ search-bar-shown =
     .label = ძიების ველის დამატება ხელსაწყოთა ზოლზე
 search-engine-default-header = ნაგულისხმევი საძიებო სისტემა
 search-engine-default-desc = მიუთითეთ ნაგულისხმევი საძიებო სისტემა, რომელსაც გამოიყენებთ მისამართებისა და ძიების ველებში.
-search-engine-default-private-desc = მიუთითეთ ნაგულისხმევი საძიებო სისტემა, პირადი ფანჯრებისთვის.
+search-engine-default-desc-2 = ეს თქვენი ნაგულისხმევი საძიებოა მისამართებისა და ძიების ველებისთვის. ნებისმიერ დროს შეგიძლიათ შეცვლა.
+search-engine-default-private-desc-2 = აირჩიეთ სხვა საძიებო, მხოლოდ პირადი ფანჯრებისთვის
 search-separate-default-engine =
     .label = ამ საძიებოს გამოყენება პირად ფანჯრებში
     .accesskey = პ
@@ -524,6 +533,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = ძიების შემოთავაზებების, მონახულებული გვერდების ისტორიაზე წინ გამოჩენა, მისამართების ველის შედეგებში
+search-show-suggestions-private-windows =
+    .label = ძიების შემოთავაზებების ჩვენება პირად ფანჯრებში
 suggestions-addressbar-settings = პარამეტრების შეცვლა ისტორიის, სანიშნებისა და ჩანართის შემოთავაზებებისთვის
 search-suggestions-cant-show = მისამართების ველში ძიების შემოთავაზებები არ გამოჩნდება, ვინაიდან მითითებული გაქვთ, რომ { -brand-short-name } არასოდეს დაიმახსოვრებს ისტორიას.
 search-one-click-header = ერთწკაპიანი საძიებო სისტემები
@@ -572,6 +583,9 @@ sync-signedout-account-create = არ გაქვთ ანგარიში?
     .accesskey = ქ
 sync-signedout-account-signin =
     .label = შესვლა
+    .accesskey = შ
+sync-signedout-account-signin2 =
+    .label = { -sync-brand-short-name } – შესვლა…
     .accesskey = შ
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -640,6 +654,9 @@ sync-currently-syncing-prefs =
         [windows] პარამეტრები
        *[other] პარამეტრები
     }
+sync-change-options =
+    .label = შეცვლა…
+    .accesskey = შ
 
 ## The "Choose what to sync" dialog.
 
@@ -713,7 +730,11 @@ privacy-header = ბრაუზერის პირადულობა
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = ანგარიშის სახელები და პაროლები
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = საიტებზე შესვლის მონაცემების დამახსოვრების მოთხოვნა
     .accesskey = შ
@@ -727,6 +748,7 @@ forms-breach-alerts =
     .label = შეტყობინება პაროლებზე, იერიშმიტანილი საიტებისთვის
     .accesskey = შ
 forms-breach-alerts-learn-more-link = იხილეთ ვრცლად
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = ანგარიშის მონაცემების თვითშევსება
     .accesskey = ა

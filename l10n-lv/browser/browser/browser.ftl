@@ -45,6 +45,26 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Glabāt datus pastāvīgajā krātuvē
 urlbar-addons-notification-anchor =
     .tooltiptext = Atvērt papildinājumu instalēšanas ziņojumu paneli
+urlbar-geolocation-blocked =
+    .tooltiptext = Atrašanās vietas informācijas koplietošana ar šo lapu ir bloķēta.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Paziņojumu saņemšana no šīs lapas ir bloķēta.
+urlbar-camera-blocked =
+    .tooltiptext = Kameras izmantošana šajā lapā ir bloķēta.
+urlbar-microphone-blocked =
+    .tooltiptext = Mikrofona izmantošana šajā lapā ir bloķēta.
+urlbar-screen-blocked =
+    .tooltiptext = Ekrāna koplietošana ar šo lapu ir bloķēta.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Datu glabāšana ir bloķēta šajā lapā.
+urlbar-popup-blocked =
+    .tooltiptext = Uzlecošo logu rādīšana no šīs lapas ir bloķēta.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Automātiskā multimēdiju ar skaņu atskaņošana šajā lapā ir bloķēta.
+urlbar-canvas-blocked =
+    .tooltiptext = Šīs lapas canvas datu ieguve ir bloķēta.
+urlbar-midi-blocked =
+    .tooltiptext = MIDI izmantošana šajā lapā ir bloķēta.
 
 ## Page Action Context Menu
 
@@ -63,3 +83,18 @@ full-screen-autohide =
 full-screen-exit =
     .label = Iziet no pilnekrāna režīma
     .accesskey = p
+
+## Search Engine selection buttons (one-offs)
+
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Mainīt meklēšanas iestatījumus
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Mainīt meklēšanas iestatījumus
+search-one-offs-context-open-new-tab =
+    .label = Meklēt jaunā cilnē
+    .accesskey = c
+search-one-offs-context-set-as-default =
+    .label = Iestatīt par noklusēto meklētāju
+    .accesskey = n

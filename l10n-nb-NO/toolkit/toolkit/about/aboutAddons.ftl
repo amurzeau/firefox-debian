@@ -187,6 +187,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Slå på
     .tooltiptext = Slå på sikkerhetskontroll av utvidelsesoppdateringer
+extensions-warning-safe-mode = Alle utvidelser er avslått av sikker modus.
+extensions-warning-check-compatibility = Kompatibilitetskontroll er avslått. Du har kanskje ukompatible utvidelser.
+extensions-warning-check-compatibility-button = Slå på
+    .title = Slå på kompatibilitetskontroll
+extensions-warning-update-security = Sikkerhetskontroll av utvidelsesoppdateringer er avslått. Sikkerheten din kan bli satt i fare av oppdateringer.
+extensions-warning-update-security-button = Slå på
+    .title = Slå på sikkerhetskontroll av utvidelsesoppdateringer
 
 ## Strings connected to add-on updates
 
@@ -196,12 +203,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Vis nylig oppdaterte
     .accesskey = V
+addon-updates-check-for-updates = Søk etter oppdateringer nå
+    .accesskey = S
+addon-updates-view-updates = Vis nylig oppdaterte
+    .accesskey = V
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Oppdater utvidelser automatisk
+    .accesskey = O
+addon-updates-update-addons-automatically = Oppdater utvidelser automatisk
     .accesskey = O
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -215,6 +228,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = T
 extensions-updates-reset-updates-to-manual =
     .label = Tilbakestill alle utvidelser til å oppdatere manuelt
+    .accesskey = T
+addon-updates-reset-updates-to-automatic = Tilbakestill alle utvidelser til å oppdatere automatisk
+    .accesskey = T
+addon-updates-reset-updates-to-manual = Tilbakestill alle utvidelser til å oppdatere manuelt
     .accesskey = T
 
 ## Status messages displayed when updating add-ons
@@ -234,11 +251,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Installer oppdateringer
     .tooltiptext = Installer tilgjengelige oppdateringer i denne listen
+addon-updates-updating = Oppdaterer utvidelser
+addon-updates-installed = Utvidelsene er oppdatert.
+addon-updates-none-found = Fant ingen oppdateringer
+addon-updates-manual-updates-found = Vis tilgjengelige oppdateringer
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Installer utvidelse fra fil …
+    .accesskey = I
+addon-install-from-file-dialog-title = Velg utvidelse å installere
+addon-install-from-file-filter-name = Utvidelser
+addon-open-about-debugging = Debug-utvidelser
+    .accesskey = D
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Håndter snarveier for utvidelser
+    .accesskey = s
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Håndter snarveier for utvidelser
     .accesskey = s
 shortcuts-no-addons = Du har ingen utvidelser aktivert.
 shortcuts-no-commands = Følgende utvidelser har ikke snarveier:
@@ -310,6 +343,8 @@ addon-options-button =
 
 report-addon-button = Rapporter
 remove-addon-button = Fjern
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Kan ikke fjernes <a data-l10n-name="link">Hvorfor?</a>
 disable-addon-button = Deaktiver
 enable-addon-button = Aktiver
 expand-addon-button = Flere innstillinger
@@ -403,3 +438,18 @@ recommended-themes-heading = Anbefalte temaer
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Er du i det kreative hjørnet? <a data-l10n-name="link">Bygg ditt eget tema med Firefox Color.</a>
+
+## Page headings
+
+extension-heading = Behandle utvidelsene dine
+theme-heading = Behandle temaene dine
+plugin-heading = Behandle programtilleggene dine
+dictionary-heading = Behandle ordbøkene dine
+locale-heading = Behandle språkene dine
+updates-heading = Behandle oppdateringene
+discover-heading = Tilpass din { -brand-short-name }
+shortcuts-heading = Håndter snarveier for utvidelser
+theme-heading-search-label = Finn flere tema
+extension-heading-search-label = Finn flere utvidelser
+addons-heading-search-input =
+    .placeholder = Søk på addons.mozilla.org

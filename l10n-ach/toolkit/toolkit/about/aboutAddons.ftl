@@ -144,9 +144,6 @@ private-browsing-description2 =
     { -brand-short-name } pe bitic pire kene i Dirica me Mung. Nikwanyo ka iyee i ter, lamed meno pe bitic ikare me yeny i mung, ki pe binongo tic mamegi me wiyamo
     kunu. Watimo alokaloka man me gwoko yeny me mung mamegi i mung.
     <label data-l10n-name="private-browsing-learn-more">Nong ngec ikit me loono ter pa lamed</label>
-extensions-view-discover =
-    .name = Gam med-ikome
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-recent-updates =
     .name = Ngec manyen ma cokki
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -174,6 +171,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Ye
     .tooltiptext = Ye ngiyo ber bedo pa ngec mayen
+extensions-warning-safe-mode = Kit maber ojuko woko med-ikome weng.
+extensions-warning-check-compatibility = Med ikome kityeko juko woko roto rwate ne. I romo bedo ki med ikome mape rwate.
+extensions-warning-check-compatibility-button = Ye
+    .title = Ye ngiyo rwate me tic pa med-ikome
+extensions-warning-update-security = Ngiyo ber bedo pa ngec manyen me med-ikome kijuko woko. Mogo nongo inongo peko ki bot ngec manyen.
+extensions-warning-update-security-button = Ye
+    .title = Ye ngiyo ber bedo pa ngec mayen
 
 ## Strings connected to add-on updates
 
@@ -183,12 +187,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Nen ngec manyen macocoki
     .accesskey = N
+addon-updates-check-for-updates = Rot pi ngec manyen
+    .accesskey = R
+addon-updates-view-updates = Nen ngec manyen macocoki
+    .accesskey = N
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Ket ngec manyen i med-ikome pire kene
+    .accesskey = m
+addon-updates-update-addons-automatically = Ket ngec manyen i med-ikome pire kene
     .accesskey = m
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -202,6 +212,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = N
 extensions-updates-reset-updates-to-manual =
     .label = Nwo tero med-ikome weng me keto ngec manyen ki cing
+    .accesskey = N
+addon-updates-reset-updates-to-automatic = Nwo tero med-ikome weng me keto ngec manyen pire kene
+    .accesskey = N
+addon-updates-reset-updates-to-manual = Nwo tero med-ikome weng me keto ngec manyen ki cing
     .accesskey = N
 
 ## Status messages displayed when updating add-ons
@@ -221,6 +235,19 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Ket ngec manyen
     .tooltiptext = Ket ngec manyen matye i nying jami man
+addon-updates-updating = Keto ngec manyen iye med-ikome
+addon-updates-installed = Ki tyeko keto ngec mayen iye med-ikome mamegi.
+addon-updates-none-found = Pe ki nongo ngec manyen
+addon-updates-manual-updates-found = Nen ngec manyen matye
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Ket med-ikome ki i pwail…
+    .accesskey = K
+addon-install-from-file-dialog-title = Yer lamed ikome ki i keti
+addon-install-from-file-filter-name = Lamed ikome
+addon-open-about-debugging = Nong bal i Med-ikome
+    .accesskey = o
 
 ## Extension shortcut management
 
@@ -235,5 +262,16 @@ shortcuts-modifier-other = Ket Ctrl onyo Alt
 #   $addon (string) - Name of the add-on
 shortcuts-exists = { $addon } dong tye katic kwede
 
+## Recommended add-ons page
+
+
 ## Add-on actions
 
+
+## Pending uninstall message bar
+
+
+## Page headings
+
+addons-heading-search-input =
+    .placeholder = Yeny addons.mozilla.org

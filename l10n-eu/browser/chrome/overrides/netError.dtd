@@ -133,6 +133,9 @@ was trying to connect. -->
 <!ENTITY cspBlocked.title "Edukien segurtasun-politikak blokeatuta">
 <!ENTITY cspBlocked.longDesc "<p>&brandShortName;(e)k orri hau modu honetan kargatzea eragotzi du edukien segurtasun-politikak baimentzen ez duelako.</p>">
 
+<!ENTITY xfoBlocked.title "X-Frame-Options politikak blokeatuta">
+<!ENTITY xfoBlocked.longDesc "<p>&brandShortName;(e)k orri hau testuinguru honetan kargatzea eragotzi du daukan X-Frame-Options politikak baimentzen ez duelako.</p>">
+
 <!ENTITY corruptedContentErrorv2.title "Hondatutako edukien errorea">
 <!ENTITY corruptedContentErrorv2.longDesc "<p>Ikusten saiatzen ari zaren orria ezin da erakutsi errore bat detektatu delako datu-transmisioan.</p><ul><li>Jar zaitez harremanetan webgunearen jabeekin arazo honen berri emateko.</li></ul>">
 
@@ -173,6 +176,10 @@ was trying to connect. -->
 
 <!ENTITY prefReset.longDesc "Badirudi zure sareko segurtasun-ezarpenek eragiten dutela hau. Ezarpen lehenetsiak berrezarri nahi dituzu?">
 <!ENTITY prefReset.label "Berrezarri ezarpen lehenetsiak">
+
+<!ENTITY enableTls10.longDesc "Baliteke webgune honek TLS 1.2 protokoloa ez onartzea, &brandShortName;(e)k onartzen duen gutxieneko bertsioa. TLS 1.0 eta TLS 1.1 gaituz gero, baliteke konexioa ondo burutzea.">
+<!ENTITY enableTls10.note "TLS 1.0 eta TLS 1.1 behin betiko desgaituko dira etorkizuneko bertsio batean.">
+<!ENTITY enableTls10.label "Gaitu TLS 1.0 eta 1.1">
 
 <!ENTITY networkProtocolError.title "Sare-protokoloaren errorea">
 <!ENTITY networkProtocolError.longDesc "<p>Ikusten saiatzen ari zaren orria ezin da erakutsi errore bat detektatu delako sareko protokoloan.</p><ul><li>Jar zaitez harremanetan webgunearen jabeekin arazo honen berri emateko.</li></ul>">

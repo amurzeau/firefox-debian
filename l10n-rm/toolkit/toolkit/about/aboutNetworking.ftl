@@ -9,6 +9,7 @@ ok = OK
 http = HTTP
 sockets = Sockets
 dns = DNS
+dnssuffix = Suffix DNS
 websockets = WebSockets
 refresh = Actualisar
 auto-refresh = Actualisar automaticamain mintga 3 secundas
@@ -57,3 +58,13 @@ rcwn-avg-long = Media lunga
 rcwn-std-dev-long = Deviaziun da standard lunga
 rcwn-cache-slow = Dumber da giadas ch'il cache è plaun
 rcwn-cache-not-slow = Dumber da giadas ch'il cache è svelt
+networkid = ID da la rait
+networkid-id = ID da la rait
+
+## Link is intended as "network link"
+
+networkid-isUp = La colliaziun è activa
+networkid-statusKnown = Il status da la colliaziun è enconuschent
+
+
+

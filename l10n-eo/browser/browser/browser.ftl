@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Konservi datumojn en daŭra konservejo
 urlbar-addons-notification-anchor =
     .tooltiptext = Malfermi panelon de mesaĝoj de instalo de aldonaĵo
+urlbar-tip-help-icon =
+    .title = Helpo
+urlbar-geolocation-blocked =
+    .tooltiptext = Vi blokis informon pri via pozicio por tiu ĉi retejo.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Vi blokis sciigojn por tiu ĉi retejo.
+urlbar-camera-blocked =
+    .tooltiptext = Vi blokis vian filmilon por tiu ĉi retejo.
+urlbar-microphone-blocked =
+    .tooltiptext = Vi blokis vian mikrofonon por tiu ĉi retejo.
+urlbar-screen-blocked =
+    .tooltiptext = Vi blokis dividon de la ekrano por tiu retejo.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Vi blokis la daŭran konservejon por ĉi tiu retejo.
+urlbar-popup-blocked =
+    .tooltiptext = Vi blokis ŝprucfenestrojn por tiu ĉi retejo.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Vi blokis aŭtomatan ludadon de sono por tiu ĉi retejo.
+urlbar-canvas-blocked =
+    .tooltiptext = Vi blokis la eltiron de datumoj el kanvaso por tiu ĉi retejo.
+urlbar-midi-blocked =
+    .tooltiptext = Vi blokis la aliron MIDI por tiu ĉi retejo.
+urlbar-install-blocked =
+    .tooltiptext = Vi blokis la instalon de aldonaĵoj por tiu ĉi retejo.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Eliri el plenekrana reĝimo
     .accesskey = P
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Ĉi foje serĉi per:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Ŝanĝi agordojn de serĉo
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Ŝanĝi agordojn de serĉo
+search-one-offs-context-open-new-tab =
+    .label = Serĉi en nova langeto
+    .accesskey = l
+search-one-offs-context-set-as-default =
+    .label = Igi serĉilon norma
+    .accesskey = n
+search-one-offs-context-set-as-default-private =
+    .label = Igi ĝin la norma serĉilo en privataj fenestroj
+    .accesskey = n

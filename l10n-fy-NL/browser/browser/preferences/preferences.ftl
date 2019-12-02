@@ -14,6 +14,11 @@ pref-page =
             [windows] Opsjes
            *[other] Opsjes
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Opsjes
+       *[other] Opsjes
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -282,6 +287,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } brûke (yn { -brand-short-name })
@@ -457,7 +466,6 @@ choose-bookmark =
 
 home-prefs-content-header = Ynhâld fan Firefox-startside
 home-prefs-content-description = Kies hokker ynhâld jo op jo Firefox-startside werjaan wolle.
-home-prefs-content-discovery-description = Fia Content Discovery op de Firefox-startside kinne jo relevante artikelen op it hiele web mei hege kwaliteit fine.
 home-prefs-search-header =
     .label = Sykje op it web
 home-prefs-topsites-header =
@@ -505,7 +513,8 @@ search-bar-shown =
     .label = Sykbalke yn arkbalke tafoegje
 search-engine-default-header = Standertsykmasine
 search-engine-default-desc = Kies de standert sykmasine foar gebrûk yn de adresbalke en sykbalke.
-search-engine-default-private-desc = Kies de standertsykmasine dy't jo yn priveefinsters brûke wolle.
+search-engine-default-desc-2 = Dit is jo standertsykmasine yn de adresbalke en de sykbalke. Jo kinne dizze op elk momint wizigje.
+search-engine-default-private-desc-2 = Kies in oare standertsykmasine dy't jo yn priveefinsters brûke wolle
 search-separate-default-engine =
     .label = Dizze sykmasine yn priveefinsters brûke
     .accesskey = s
@@ -524,6 +533,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Syksuggestjes boppe browserskiednis toane yn adresbalkeresultaten
+search-show-suggestions-private-windows =
+    .label = Syksuggestjes werjaan yn priveefinsters
 suggestions-addressbar-settings = Foarkarren foar navigaasjeskiednis, blêdwizers en ljepblêdfoarstellen wizigje
 search-suggestions-cant-show = Sykfoarstellen wurde net yn lokaasjebalkresultaten toand, omdat jo { -brand-short-name } konfigurearre hawwe om nea skiednis te ûnthâlden.
 search-one-click-header = Ien-klik-sykmasinen
@@ -572,6 +583,9 @@ sync-signedout-account-create = Hawwe jo gjin account? Registrearje
     .accesskey = o
 sync-signedout-account-signin =
     .label = Oanmelde…
+    .accesskey = O
+sync-signedout-account-signin2 =
+    .label = Oanmelde by { -sync-brand-short-name }…
     .accesskey = O
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -716,7 +730,11 @@ privacy-header = Browserprivacy
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Oanmeldingen & Wachtwurden
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Freegje om oanmeldingen en wachtwurden foar websites te ûnthâlden
     .accesskey = F
@@ -730,6 +748,7 @@ forms-breach-alerts =
     .label = Warskôgingen oer wachtwurden foar troffen websites toane
     .accesskey = f
 forms-breach-alerts-learn-more-link = Mear ynfo
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Oanmeldingen en wachtwurden automatysk ynfolje
     .accesskey = O

@@ -8,3 +8,15 @@
 appmenuitem-protection-report-title = Gizlilik korumaları
 appmenuitem-protection-report-tooltip =
     .tooltiptext = Gizlilik raporuna git
+
+## Zoom Controls
+
+appmenuitem-zoom-enlarge =
+    .label = Yakınlaştır
+appmenuitem-zoom-reduce =
+    .label = Uzaklaştır
+
+## Firefox Account toolbar button and Sync panel in App menu.
+
+fxa-toolbar-sync-now =
+    .label = Şimdi eşitle

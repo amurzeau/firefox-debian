@@ -16,7 +16,7 @@ list-empty-installed =
 list-empty-available-updates =
     .value = Nulle actualisationes trovate
 list-empty-recent-updates =
-    .value = Tu non ha actualisate ulle additivo recentemente
+    .value = Tu non ha actualisate alcun additivo recentemente
 list-empty-find-updates =
     .label = Cercar actualisationes
 list-empty-button =
@@ -68,7 +68,7 @@ cmd-install-addon =
 cmd-contribute =
     .label = Contribuer
     .accesskey = C
-    .tooltiptext = Contribuer al developpamento de iste additivo
+    .tooltiptext = Contribuer al disveloppamento de iste additivo
 discover-title = Que es additivos?
 discover-description =
     Le additivos es applicationes que te permitte de personalisar { -brand-short-name } con
@@ -81,7 +81,7 @@ detail-version =
     .label = Version
 detail-last-updated =
     .label = Ultime actualisation
-detail-contributions-description = Le developpator de iste additivo demanda que tu le adjuta assecurar su developpamento continue faciente un parve contribution.
+detail-contributions-description = Le disveloppator de iste additivo requesta que tu adjuta a assecurar su disveloppamento continue faciente un parve contribution.
 detail-contributions-button = Collaborar
     .title = Collabora al disveloppamento de iste additivo.
     .accesskey = C
@@ -105,7 +105,7 @@ detail-private-disallowed-label = Non permittite in fenestras private
 detail-private-disallowed-description = Iste extension non flue durante le navigation anonyme. <label data-l10n-name="detail-private-browsing-learn-more">Saper plus</label>.
 detail-private-disallowed-description2 = Iste extension non flue durante le navigation anonyme. <a data-l10n-name="learn-more">Saper plus</a>.
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
-detail-private-required-label = Require accesso a Fenestras private
+detail-private-required-label = Require accesso a fenestras private
 detail-private-required-description = Iste extension ha accesso a tu activitates online durante le navigation anonyme. <label data-l10n-name="detail-private-browsing-learn-more">Saper plus</label>.
 detail-private-required-description2 = Iste extension ha accesso a tu activitates in rete durante le navigation anonyme. <a data-l10n-name="learn-more">Saper plus</a>.
 detail-private-browsing-on =
@@ -147,15 +147,15 @@ detail-rating =
 addon-restart-now =
     .label = Reinitiar ora
 disabled-unsigned-heading =
-    .value = Alcun additivos ha essite inactivate
-disabled-unsigned-description = Le additivos sequente non ha essite verificate pro le utilisation in { -brand-short-name }. Tu pote <label data-l10n-name="find-addons">trovar le reimplaciamentos</label> o demandar al developpator de los verificar.
+    .value = Alcun additivos ha essite disactivate
+disabled-unsigned-description = Le additivos sequente non ha essite verificate pro uso in { -brand-short-name }. Tu pote <label data-l10n-name="find-addons">cercar alternativas</label> o demandar al disveloppator de facer los verificar.
 disabled-unsigned-learn-more = Saper plus super nostre effortios pro adjutar a guardar tu securitate in linea.
-disabled-unsigned-devinfo = Developpatores interessate in devenir lor additivos verificate pote continuar legente nostre <label data-l10n-name="learn-more">manual</label>.
+disabled-unsigned-devinfo = Le disveloppatores interessate in facer verificar lor additivos es invitate a leger nostre <label data-l10n-name="learn-more">manual</label>.
 plugin-deprecation-description = Alcun cosa manca? Alcun plugins non es plus admittite per { -brand-short-name }. <label data-l10n-name="learn-more">Saper plus.</label>
 legacy-warning-show-legacy = Monstrar le extensiones obsolete
 legacy-extensions =
     .value = Extensiones obsolete
-legacy-extensions-description = Iste extensiones non satisface le standards actual de { -brand-short-name } e ha essite disactivate. <label data-l10n-name="legacy-learn-more">Saper lo que cambiava al additivos</label>
+legacy-extensions-description = Iste extensiones non satisface le normas actual de { -brand-short-name } e ha essite disactivate. <label data-l10n-name="legacy-learn-more">Saper lo que cambiava al additivos</label>
 private-browsing-description2 = { -brand-short-name } cambia le functionamento del extensiones in Navigation private. Omne nove extensiones que tu adde a { -brand-short-name } normalmente non se executara in le Fenestras private. Si tu non lo permitte in le configuration, le extension non functionara in Navigation private e non habera accesso a tu activitates online illac. Nos ha facite iste cambio pro mantener private tu navigation private. <label data-l10n-name="private-browsing-learn-more">Discoperi como configurar le extensiones.</label>
 extensions-view-discopane =
     .name = Recommendationes
@@ -170,7 +170,7 @@ extensions-view-available-updates =
 ## These are global warnings
 
 extensions-warning-safe-mode-label =
-    .value = Tote le additivos ha essite inactivate per le modo secur.
+    .value = Tote le additivos ha essite disactivate per le modo secur.
 extensions-warning-safe-mode-container =
     .tooltiptext = { extensions-warning-safe-mode-label.value }
 extensions-warning-check-compatibility-label =
@@ -187,6 +187,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Activar
     .tooltiptext = Activar le verification de securitate pro le actualisation del additivos
+extensions-warning-safe-mode = Tote le additivos ha essite disactivate per le modo secur.
+extensions-warning-check-compatibility = Le verification de compatibilitate de additivos es inactive. Tu pote haber additivos incompatibile.
+extensions-warning-check-compatibility-button = Activar
+    .title = Activar le verification de compatibilitate de additivos
+extensions-warning-update-security = Le verification de securitate pro le actualisation del additivos es inactive. Le actualisationes poterea damnificar tu systema.
+extensions-warning-update-security-button = Activar
+    .title = Activar le verification de securitate pro le actualisation del additivos
 
 ## Strings connected to add-on updates
 
@@ -196,12 +203,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Vider le actualisationes recente
     .accesskey = V
+addon-updates-check-for-updates = Cercar actualisationes
+    .accesskey = C
+addon-updates-view-updates = Vider le actualisationes recente
+    .accesskey = V
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Actualisar le additivos automaticamente
+    .accesskey = A
+addon-updates-update-addons-automatically = Actualisar le additivos automaticamente
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -211,10 +224,14 @@ extensions-updates-update-addons-automatically =
 ## extensions-updates-update-addons-automatically.label menu item).
 
 extensions-updates-reset-updates-to-automatic =
-    .label = Redefinir tote le additivos faciente los actualisar automaticamente
+    .label = Restituer le actualisation automatic pro tote le additivos
     .accesskey = R
 extensions-updates-reset-updates-to-manual =
-    .label = Redefinir tote le additivos faciente los actualisar manualmente
+    .label = Restituer le actualisation manual pro tote le additivos
+    .accesskey = R
+addon-updates-reset-updates-to-automatic = Restituer le actualisation automatic pro tote le additivos
+    .accesskey = R
+addon-updates-reset-updates-to-manual = Restituer le actualisation manual pro tote le additivos
     .accesskey = R
 
 ## Status messages displayed when updating add-ons
@@ -234,16 +251,32 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Installar le actualisationes
     .tooltiptext = Installar le actualisationes disponibile de iste lista
+addon-updates-updating = Actualisante additivos
+addon-updates-installed = Tu additivos ha essite actualisate.
+addon-updates-none-found = Nulle actualisationes trovate
+addon-updates-manual-updates-found = Vider le actualisationes disponibile
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Installar additivo ab un file…
+    .accesskey = I
+addon-install-from-file-dialog-title = Selige le additivo a installar
+addon-install-from-file-filter-name = Additivos
+addon-open-about-debugging = Depurar le additivos
+    .accesskey = D
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
-    .label = Gerer le vias breve del extension
-    .accesskey = V
-shortcuts-no-addons = Tu non ha ulle extensiones activate
+    .label = Gerer le accessos directe al extensiones
+    .accesskey = a
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Gerer le accessos directe al extensiones
+    .accesskey = a
+shortcuts-no-addons = Tu non ha extensiones activate.
 shortcuts-no-commands = Le sequente extensiones non ha claves accelerator:
 shortcuts-input =
-    .placeholder = Scribe un via breve
+    .placeholder = Insere un accesso directe
 shortcuts-browserAction = Activar extension
 shortcuts-pageAction = Activar le action del pagina
 shortcuts-sidebarAction = Monstrar/celar le barra lateral
@@ -251,13 +284,13 @@ shortcuts-modifier-mac = Includer Ctrl, Alt, o ⌘
 shortcuts-modifier-other = Include Ctrl o Alt
 shortcuts-invalid = Combination non valide
 shortcuts-letter = Scribe un littera
-shortcuts-system = Impossibile supplantar un via breve de { -brand-short-name }
+shortcuts-system = Impossibile supplantar un accesso directe de { -brand-short-name }
 # String displayed in warning label when there is a duplicate shortcut
-shortcuts-duplicate = Via breve de claviero duplicate
+shortcuts-duplicate = Accesso directe duplicate
 # String displayed when a keyboard shortcut is already assigned to more than one add-on
 # Variables:
 #   $shortcut (string) - Shortcut string for the add-on
-shortcuts-duplicate-warning-message = { $shortcut } es usate como un via breve in plus de un caso. Le vias breve de claviero duplicate pote causar comportamento inaxpectate.
+shortcuts-duplicate-warning-message = { $shortcut } es usate como accesso directe in plus de un caso. Le accessos directe duplicate pote causar un comportamento inexpectate.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -303,6 +336,8 @@ addon-options-button =
 
 report-addon-button = Reportar
 remove-addon-button = Remover
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Impossibile remover. <a data-l10n-name="link">Proque?</a>
 disable-addon-button = Disactivar
 enable-addon-button = Activar
 expand-addon-button = Altere optiones
@@ -313,7 +348,7 @@ preferences-addon-button =
     }
 details-addon-button = Detalios
 release-notes-addon-button = Notas pro iste version
-permissions-addon-button = Permissos
+permissions-addon-button = Permissiones
 addons-enabled-heading = Activate
 addons-disabled-heading = Disactivate
 extension-enabled-heading = Activate
@@ -326,7 +361,7 @@ dictionary-enabled-heading = Activate
 dictionary-disabled-heading = Disactivate
 locale-enabled-heading = Activate
 locale-disabled-heading = Disactivate
-ask-to-activate-button = Demandar pro activar
+ask-to-activate-button = Demandar ante de activar
 always-activate-button = Sempre activar
 never-activate-button = Non activar jammais
 addon-detail-author-label = Autor
@@ -358,7 +393,7 @@ addon-detail-reviews-link =
 #   $addon (string) - Name of the add-on
 pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> ha essite eliminate.
 pending-uninstall-undo-button = Disfacer
-addon-detail-updates-label = Consentir actualisationes automatic
+addon-detail-updates-label = Actualisation automatic
 addon-detail-updates-radio-default = Predefinite
 addon-detail-updates-radio-on = Activar
 addon-detail-updates-radio-off = Disactivar
@@ -373,7 +408,7 @@ addon-badge-private-browsing-allowed =
 addon-badge-private-browsing-allowed2 =
     .title = Consentite in navigation anonyme
     .aria-label = { addon-badge-private-browsing-allowed2.title }
-addon-detail-private-browsing-help = Quando consentite, le extension habera accesso a tu activitates online durante le navigation reservate. <a data-l10n-name="learn-more">Saper plus</a>
+addon-detail-private-browsing-help = Quando permittite, le extension habera accesso a tu activitates in linea durante le navigation private. <a data-l10n-name="learn-more">Saper plus</a>
 addon-detail-private-browsing-allow = Consentir
 addon-detail-private-browsing-disallow = Non consentir
 # This is the tooltip text for the recommended badge for an extension in about:addons. The
@@ -384,15 +419,30 @@ addon-badge-recommended =
 # This is the tooltip text for the recommended badge for an extension in about:addons. The
 # badge is a small icon displayed next to an extension when it is recommended on AMO.
 addon-badge-recommended2 =
-    .title = { -brand-product-name } recommenda solo le extensiones que satisface nostre standardos pro securitate e prestation.
+    .title = { -brand-product-name } recommenda solmente le extensiones que satisface nostre normas de securitate e efficientia.
     .aria-label = { addon-badge-recommended2.title }
 available-updates-heading = Actualisationes disponibile
 recent-updates-heading = Actualisationes recente
 release-notes-loading = Cargamento…
-release-notes-error = Pardono, ma il habeva un error cargante le notas de revision
-addon-permissions-empty = Iste extension non require ulle permission
+release-notes-error = Un error ha occurrite durante le cargamento del notas de version.
+addon-permissions-empty = Iste extension non require alcun permission
 recommended-extensions-heading = Extensiones recommendate
 recommended-themes-heading = Themas recommendate
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
-recommended-theme-1 = Senti te creative? <a data-l10n-name="link">Crea tu proprie thema con Firefox Color.</a>
+recommended-theme-1 = Te senti creative? <a data-l10n-name="link">Crea tu proprie thema con Firefox Color.</a>
+
+## Page headings
+
+extension-heading = Gerer tu extensiones
+theme-heading = Gerer tu themas
+plugin-heading = Gerer tu plugins
+dictionary-heading = Gerer tu dictionarios
+locale-heading = Gerer tu linguas
+updates-heading = Gerer tu actualisationes
+discover-heading = Personalisa tu { -brand-short-name }
+shortcuts-heading = Gerer le accessos directe al extensiones
+theme-heading-search-label = Trova plus themas
+extension-heading-search-label = Trova plus extensiones
+addons-heading-search-input =
+    .placeholder = Cercar sur addons.mozilla.org

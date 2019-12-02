@@ -19,17 +19,22 @@ onboarding-button-label-get-started = شروع کنید
 ## Welcome modal dialog strings
 
 onboarding-welcome-header = به { -brand-short-name } خوش آمدید
+onboarding-welcome-body = شما مرورگر را به دست آوردید.<br/>سایر بخش‌های { -brand-product-name } را ببینید.
 onboarding-welcome-learn-more = در مورد مزایای آن بیشتر یاد بگیرید.
 onboarding-join-form-header = به { -brand-product-name } بپیوندید
 onboarding-join-form-body = برای شروع، آدرس ایمیل خود را وارد کنید.
 onboarding-join-form-email =
     .placeholder = ایمیل را وارد کنید
 onboarding-join-form-email-error = به ایمیل معتبر نیاز است
+onboarding-join-form-legal = با ادامه دادن، شما با <a data-l10n-name="terms">قوانین خدمات</a> و <a data-l10n-name="privacy">قواعد حفظ حریم شخصی</a>، موافقت می‌کنید.
 onboarding-join-form-continue = ادامه
 onboarding-start-browsing-button-label = شروع وب‌گردی
 onboarding-cards-dismiss =
     .title = رد کردن
     .aria-label = رد کردن
+
+## Welcome full page string
+
 
 ## Firefox Sync modal dialog strings.
 
@@ -54,7 +59,14 @@ onboarding-sync-form-sub-header = برای ادامه به { -sync-brand-name }.
 onboarding-benefit-products-title = محصولات مفید
 onboarding-benefit-products-text = به کمک گروهی از ابزارها که به حریم خصوصی شما بر روی دستگاه‌هایتان احترام می‌گذارند، کارها را انجام دهید.
 onboarding-benefit-knowledge-title = دانش کاربردی
+onboarding-benefit-knowledge-text = همه چیزهایی که لازم دارید تا به صورت امن‌تر و هوشمندتر آنلاین بمانید را یاد بگیرید.
 onboarding-benefit-privacy-title = حریم شخصی واقعی
+# "Personal Data Promise" is a concept that should be translated consistently
+# across the product. It refers to a concept shown elsewhere to the user: "The
+# Firefox Personal Data Promise is the way we honor your data in everything we
+# make and do. We take less data. We keep it safe. And we make sure that we are
+# transparent about how we use it."
+onboarding-benefit-privacy-text = هرکاری که ما انجام می‌دهیم به تعهد ما در مورد اطلاعات شخصی وفادار است: چیزهای کمتری بگیر، امن نگهداری کن، مخفی کاری وجود ندارد.
 
 ## These strings belong to the individual onboarding messages.
 
@@ -77,10 +89,29 @@ onboarding-fxa-text = برای { -fxaccount-brand-name } ثبت نام کنید 
 onboarding-tracking-protection-title2 = محافظت از ردگیری شدن
 onboarding-tracking-protection-text2 = { -brand-short-name } کمک می‌کند تا ردگیری آنلاین شما توسط وبسایت‌ها متوقف شود و آگهی‌ها نیز به سختی شما را در وب دنبال خواهند کرد.
 onboarding-tracking-protection-button2 = چطور کار می‌کند
+onboarding-data-sync-title = تنظیماتتان را با خود ببرید
+# "Sync" is short for synchronize.
+onboarding-data-sync-text2 = هرجا که از { -brand-product-name } استفاده می‌کنید، نشانک‌ها، گذرواژه‌ها و بسیاری چیزهای دیگر را همگام‌سازی کنید.
+onboarding-data-sync-button2 = وارد { -sync-brand-short-name } شوید
+onboarding-firefox-monitor-text = { -monitor-brand-name } مراقب است چنانچه ایمیل شما در یک نشت اطلاعات دیده شده باشد یا در یک نشت اطلاعات جدید ظاهر شود، به شما اطلاع‌رسانی می‌کند.
+onboarding-firefox-monitor-button = برای دریافت اخطارها عضو شوید
 onboarding-browse-privately-title = مرور ناشناس
 onboarding-browse-privately-text = مرور ناشناس، سابقه جستجو و مرور شما را پاک می‌کند تا آن را از دید کسانی که از کامپیوتر شما استفاده می‌کنند مخفی نگه دارد.
 onboarding-browse-privately-button = یک پنجره ناشناس باز کنید
+onboarding-firefox-send-title = فایل‌های به اشتراک گذاشته شده خود را خصوصی نگه دارید
+onboarding-firefox-send-text2 = برای به اشتراک گذاشتن فایل‌های خود با رمز گذاری نقطه به نقطه و لینک دارای تاریخ انقضا، آن‌ها را در { -send-brand-name } بارگذاری کنید.
 onboarding-firefox-send-button = { -send-brand-name } را امتحان کنید
+onboarding-mobile-phone-title = { -brand-product-name } را بر روی تلفن خود داشته باشید
+onboarding-mobile-phone-text = { -brand-product-name } را برای iOS یا Android دریافت کنید و اطلاعات خود را بین دستگاه‌های مختلف همگام‌سازی کنید.
+# "Mobile" is short for mobile/cellular phone, "Browser" is short for web
+# browser.
+onboarding-mobile-phone-button = مرورگر همراه را دریافت کنید
+onboarding-send-tabs-title = بلافاصله زبانه‌ها را برای خود بفرستید
+onboarding-send-tabs-button = استفاده از فرستادن زبانه‌ها را آغاز کنید
+onboarding-pocket-anywhere-title = هرجایی بخوانید و بشنوید
+onboarding-pocket-anywhere-text2 = محتوای مورد علاقه خود را با اپ { -pocket-brand-name } به صورت آفلاین ذخیره کنید و هر زمان که برایتان مناسب بود آن را بخوانید، بشنوید یا تماشا کنید.
+onboarding-pocket-anywhere-button = { -pocket-brand-name } را امتحان کنید
+onboarding-lockwise-passwords-title = گذرواژه‌هایتان را با خود به هرجایی ببرید
 onboarding-facebook-container-button = اضافه کردن افزونه
 
 ## Message strings belonging to the Return to AMO flow

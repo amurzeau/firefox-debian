@@ -14,6 +14,11 @@ pref-page =
             [windows] Možnosti
            *[other] Možnosti
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Možnosti
+       *[other] Možnosti
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -285,6 +290,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Použiť { $plugin-name } (v aplikácii { -brand-short-name })
@@ -310,7 +319,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Obsah chránený pomocou Digital Rights Management (DRM)
 play-drm-content =
@@ -460,7 +469,6 @@ choose-bookmark =
 
 home-prefs-content-header = Obsah domovskej stránky Firefoxu
 home-prefs-content-description = Vyberte si obsah, ktorý chcete mať na domovskej stránke svojho Firefoxu.
-home-prefs-content-discovery-description = Odporúčanie obsahu na domovskej stránke Firefoxu vám umožňuje objaviť vysokokvalitné a relevantné články z celého internetu.
 home-prefs-search-header =
     .label = Vyhľadávanie na webe
 home-prefs-topsites-header =
@@ -509,11 +517,13 @@ search-bar-shown =
     .label = Pridať na panel nástrojov vyhľadávací panel
 search-engine-default-header = Predvolený vyhľadávací modul
 search-engine-default-desc = Vyberte si predvolený vyhľadávací modul pre vyhľadávanie z panela s adresou a vyhľadávacieho panela.
-search-engine-default-private-desc = Vyberte si predvolený vyhľadávací modul pre vyhľadávanie v súkromných oknách.
+search-engine-default-desc-2 = Toto je váš predvolený vyhľadávací modul pre vyhľadávanie z panela s adresou a vyhľadávacieho panela. Kedykoľvek ho môžete zmeniť.
+search-engine-default-private-desc-2 = Vybrať iný vyhľadávací modul pre použitie v súkromnom prehliadaní
 search-separate-default-engine =
     .label = Použiť tento vyhľadávací modul v súkromných oknách
     .accesskey = P
 search-suggestions-header = Návrhy vyhľadávania
+search-suggestions-desc = Vyberte si, ako má prehliadač zobrazovať návrhy vyhľadávania z vyhľadávacieho modulu.
 search-suggestions-option =
     .label = Zobrazovať návrhy vyhľadávania
     .accesskey = Z
@@ -527,6 +537,9 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Zobrazovať návrhy vyhľadávania v paneli s adresou pred históriou prehliadania
+search-show-suggestions-private-windows =
+    .label = Zobrazovať návrhy vyhľadávania v súkromnom prehliadaní
+suggestions-addressbar-settings = Zmeniť nastavenia návrhov vyhľadávania z histórie prehliadania, záložiek a kariet
 search-suggestions-cant-show = Návrhy vyhľadávania nebudú zobrazené vo výsledkoch panela s adresou, pretože ste { -brand-short-name } nastavili tak, aby si nepamätal históriu.
 search-one-click-header = Vyhľadávacie moduly na jedno kliknutie
 search-one-click-desc = Vyberte ďalšie vyhľadávacie moduly, ktoré sa zobrazia v ponuke panela s adresou a vyhľadávacieho panela.
@@ -642,9 +655,19 @@ sync-currently-syncing-prefs =
         [windows] Možnosti
        *[other] Možnosti
     }
+sync-change-options =
+    .label = Zmeniť…
+    .accesskey = Z
 
 ## The "Choose what to sync" dialog.
 
+sync-choose-what-to-sync-dialog =
+    .title = Vyberte, čo chcete synchronizovať
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Uložiť zmeny
+    .buttonaccesskeyaccept = U
+    .buttonlabelextra2 = Odpojiť…
+    .buttonaccesskeyextra2 = O
 sync-engine-bookmarks =
     .label = Záložky
     .accesskey = Z
@@ -708,7 +731,11 @@ privacy-header = Súkromie
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Prihlasovacie údaje
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Ponúkať uloženie prihlasovacích údajov na webových stránkach
     .accesskey = r
@@ -722,6 +749,7 @@ forms-breach-alerts =
     .label = Zobrazovať upozornenia na stránky, na ktorých prišlo k úniku dát
     .accesskey = b
 forms-breach-alerts-learn-more-link = Ďalšie informácie
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Automaticky vypĺňať prihlasovacie údaje a heslá
     .accesskey = u
@@ -841,6 +869,7 @@ addressbar-suggestions-settings = Zmeniť nastavenia pre návrhy vyhľadávania
 content-blocking-header = Blokovanie obsahu a ochrana pred sledovaním
 content-blocking-section-description = Chráňte svoje súkromie pri surfovaní na internete. Zablokujte neviditeľný obsah, ktorý vás sleduje na navštívených stránkach a tvorí profil vášho správania. Blokovanie takéhoto obsahu môže zrýchliť načítavanie stránok.
 content-blocking-enhanced-tracking-protection = Rozšírená ochrana pred sledovaním
+content-blocking-section-top-level-description = Sledovacie prvky zbierajú informácie o tom, čo na internete robíte. { -brand-short-name } blokuje množstvo takýchto prvkov a ďalších škodlivých skriptov.
 content-blocking-learn-more = Ďalšie informácie
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -864,17 +893,23 @@ content-blocking-third-party-cookies = Blokované sú sledovacie cookies tretíc
 
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 enhanced-tracking-protection-setting-standard =
-    .label = Štandardné
+    .label = Štandardná
     .accesskey = t
 enhanced-tracking-protection-setting-strict =
-    .label = Prísne
+    .label = Prísna
     .accesskey = P
 enhanced-tracking-protection-setting-custom =
-    .label = Vlastné
+    .label = Vlastná
     .accesskey = V
 
+##
 
-
+content-blocking-etp-standard-desc = Vyvážená ochrana a výkon. Neovplyvní načítanie webových stránok.
+content-blocking-etp-strict-desc = Viac blokovaného obsahu zvyšuje pravdepodobnosť, že niektoré stránky nebudú správne fungovať.
+content-blocking-etp-custom-desc = Vyberte sledovacie prvky a skripty, ktoré chcete blokovať.
+content-blocking-private-windows = Sledovací obsah je blokovaní v súkromných oknách
+content-blocking-cross-site-tracking-cookies = Blokované sú sledovacie cookies
+content-blocking-social-media-trackers = Blokované sú sledovacie prvky sociálnych sietí
 content-blocking-all-cookies = Všetky cookies
 content-blocking-unvisited-cookies = Cookies z nenavštívených stránok
 content-blocking-all-windows-trackers = Známe sledovacie prvky sú blokované vždy

@@ -70,16 +70,19 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = Procurando suas contas salvas? Configure o { -sync-brand-short-name }.
+about-logins-login-intro-heading-logged-in = Nenhuma conta sincronizada foi encontrada.
 login-intro-description = Se você salvou suas contas no { -brand-product-name } em outro dispositivo, veja como tê-las aqui:
 login-intro-instruction-fxa = Crie ou entre na sua { -fxaccount-brand-name } no dispositivo onde suas contas estão salvas
 login-intro-instruction-fxa-settings = Selecione a opção 'Contas de acesso' nas configurações do { -sync-brand-short-name }
 about-logins-intro-instruction-help = Caso precise de mais ajuda, visite o <a data-l10n-name="help-link">suporte do { -lockwise-brand-short-name }</a>
+about-logins-intro-import = Se suas contas estão salvas em outro navegador, você pode <a data-l10n-name="import-link">importar para o { -lockwise-brand-short-name }</a>
 
 ## Login
 
 login-item-new-login-title = Criar nova conta
 login-item-edit-button = Editar
 login-item-delete-button = Excluir
+about-logins-login-item-remove-button = Remover
 login-item-origin-label = Endereço do site
 login-item-origin =
     .placeholder = https://www.example.com
@@ -109,11 +112,8 @@ master-password-reload-button =
     .label = Entrar
     .accesskey = E
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = Cancelar
-confirmation-dialog-dismiss-button =
-    .title = Cancelar
 enable-password-sync-notification-message =
     { PLATFORM() ->
         [windows] Quer ter suas contas em todo lugar onde usa o { -brand-product-name }? Vá nas opções do { -sync-brand-short-name } e selecione a opção Contas de acesso.
@@ -127,8 +127,19 @@ enable-password-sync-preferences-button =
         }
     .accesskey = V
 confirm-delete-dialog-title = Excluir esta conta?
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = Não perguntar novamente
+    .accesskey = N
+
+## Dialogs
+
+confirmation-dialog-cancel-button = Cancelar
+confirmation-dialog-dismiss-button =
+    .title = Cancelar
+about-logins-confirm-remove-dialog-title = Remover esta conta?
 confirm-delete-dialog-message = Esta ação não pode ser desfeita.
 confirm-delete-dialog-confirm-button = Excluir
+about-logins-confirm-remove-dialog-confirm-button = Remover
 confirm-discard-changes-dialog-title = Descartar alterações não salvas?
 confirm-discard-changes-dialog-message = Todas as alterações não salvas serão perdidas.
 confirm-discard-changes-dialog-confirm-button = Descartar

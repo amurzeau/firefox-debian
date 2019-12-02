@@ -69,16 +69,19 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = Đang tìm kiếm thông tin đăng nhập đã lưu của bạn? Thiết lập { -sync-brand-short-name }.
+about-logins-login-intro-heading-logged-in = Không tìm thấy thông tin đăng nhập được đồng bộ hóa.
 login-intro-description = Nếu bạn đã lưu thông tin đăng nhập của mình vào { -brand-product-name } trên một thiết bị khác, thì đây là cách để có được chúng ở đây:
 login-intro-instruction-fxa = Tạo hoặc đăng nhập vào { -fxaccount-brand-name } trên thiết bị nơi đăng nhập của bạn được lưu
 login-intro-instruction-fxa-settings = Đảm bảo rằng bạn đã chọn hộp kiểm Đăng nhập trong Cài đặt { -sync-brand-short-name }
 about-logins-intro-instruction-help = Truy cập <a data-l10n-name="help-link">hỗ trợ của { -lockwise-brand-short-name }</a> để được trợ giúp thêm
+about-logins-intro-import = Nếu thông tin đăng nhập của bạn được lưu trong một trình duyệt khác, bạn có thể <a data-l10n-name="import-link"> nhập chúng vào { -lockwise-brand-short-name }</a>
 
 ## Login
 
 login-item-new-login-title = Tạo đăng nhập mới
 login-item-edit-button = Chỉnh sửa
 login-item-delete-button = Xóa
+about-logins-login-item-remove-button = Xóa
 login-item-origin-label = Địa chỉ trang web
 login-item-origin =
     .placeholder = https://www.example.com
@@ -108,11 +111,8 @@ master-password-reload-button =
     .label = Đăng nhập
     .accesskey = L
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = Hủy bỏ
-confirmation-dialog-dismiss-button =
-    .title = Hủy bỏ
 enable-password-sync-notification-message =
     { PLATFORM() ->
         [windows] Muốn có thông tin đăng nhập của bạn ở mọi nơi bạn sử dụng { -brand-product-name }? Chuyển đến tùy chọn { -sync-brand-short-name } của bạn và chọn hộp kiểm Đăng nhập.
@@ -126,8 +126,19 @@ enable-password-sync-preferences-button =
         }
     .accesskey = V
 confirm-delete-dialog-title = Xoá thông tin đăng nhập này?
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = Đừng hỏi lại tôi nữa.
+    .accesskey = D
+
+## Dialogs
+
+confirmation-dialog-cancel-button = Hủy bỏ
+confirmation-dialog-dismiss-button =
+    .title = Hủy bỏ
+about-logins-confirm-remove-dialog-title = Xoá thông tin đăng nhập này?
 confirm-delete-dialog-message = Thao tác này không thể hoàn tác được.
 confirm-delete-dialog-confirm-button = Xóa
+about-logins-confirm-remove-dialog-confirm-button = Xóa
 confirm-discard-changes-dialog-title = Hủy bỏ những thay đổi chưa lưu?
 confirm-discard-changes-dialog-message = Tất cả các thay đổi chưa được lưu sẽ bị mất.
 confirm-discard-changes-dialog-confirm-button = Loại bỏ

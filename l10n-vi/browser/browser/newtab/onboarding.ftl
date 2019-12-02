@@ -21,6 +21,11 @@ onboarding-button-label-get-started = Bắt đầu
 onboarding-welcome-header = Chào mừng đến với { -brand-short-name }
 onboarding-welcome-body = Bạn đã có trình duyệt.<br/>Xem phần còn lại của { -brand-product-name }.
 onboarding-welcome-learn-more = Tìm hiểu thêm về các tiện ích.
+onboarding-welcome-modal-get-body = Bạn đã có trình duyệt.<br/>Bây giờ hãy tận dụng tối đa { -brand-product-name }.
+onboarding-welcome-modal-supercharge-body = Bảo vệ quyền riêng tư của bạn.
+onboarding-welcome-modal-privacy-body = Bạn đã có trình duyệt. Hãy để thêm bảo vệ quyền riêng tư.
+onboarding-welcome-modal-family-learn-more = Tìm hiểu về sản phẩm của gia đình { -brand-product-name }
+onboarding-welcome-form-header = Bắt đầu ở đây
 onboarding-join-form-header = Kết nối { -brand-product-name }
 onboarding-join-form-body = Nhập địa chỉ thư điện tử của bạn để bắt đầu.
 onboarding-join-form-email =
@@ -28,10 +33,20 @@ onboarding-join-form-email =
 onboarding-join-form-email-error = Yêu cầu thư điện tử hợp lệ
 onboarding-join-form-legal = Khi chọn tiếp tục, bạn đồng ý với <a data-l10n-name="terms">điều khoản dịch vụ</a> và <a data-l10n-name="privacy">thông báo bảo mật</a>.
 onboarding-join-form-continue = Tiếp tục
+# This message is followed by a link using onboarding-join-form-signin ("Sign In") as text.
+onboarding-join-form-signin-label = Đã có một tài khoản?
+# Text for link to submit the sign in form
+onboarding-join-form-signin = Đăng nhập
 onboarding-start-browsing-button-label = Bắt đầu duyệt web
 onboarding-cards-dismiss =
     .title = Bỏ qua
     .aria-label = Bỏ qua
+
+## Welcome full page string
+
+onboarding-fullpage-welcome-subheader = Hãy bắt đầu khám phá mọi thứ bạn có thể làm.
+onboarding-fullpage-form-email =
+    .placeholder = Địa chỉ email của bạn…
 
 ## Firefox Sync modal dialog strings.
 
@@ -64,6 +79,12 @@ onboarding-benefit-privacy-title = Quyền riêng tư thực sự
 # make and do. We take less data. We keep it safe. And we make sure that we are
 # transparent about how we use it."
 onboarding-benefit-privacy-text = Tất cả mọi thứ chúng tôi làm đều tôn vinh lời hứa dữ liệu cá nhân của chúng tôi: Lấy ít hơn. Giữ nó an toàn. Không có bí mật.
+onboarding-benefit-sync-title = { -sync-brand-short-name }
+onboarding-benefit-sync-text = Nhận dấu trang, mật khẩu, lịch sử của bạn và nhiều nơi khác mà bạn đã đăng nhập vào { -brand-product-name }.
+onboarding-benefit-monitor-title = { -monitor-brand-short-name }
+onboarding-benefit-monitor-text = Nhận thông báo khi thông tin cá nhân của bạn bị rò rỉ trong dữ liệu đã biết.
+onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
+onboarding-benefit-lockwise-text = Quản lý mật khẩu được bảo vệ và di động.
 
 ## These strings belong to the individual onboarding messages.
 
@@ -92,6 +113,7 @@ onboarding-data-sync-text2 = Đồng bộ hóa dấu trang, mật khẩu và hơ
 onboarding-data-sync-button2 = Đăng nhập vào { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Cảnh báo về vi phạm dữ liệu
 onboarding-firefox-monitor-text = { -monitor-brand-name } giám sát nếu email của bạn xuất hiện vi phạm dữ liệu và thông báo cho bạn nếu nó xuất hiện trong một vi phạm mới.
+onboarding-firefox-monitor-text2 = { -monitor-brand-name } giám sát nếu email của bạn xuất hiện trong vụ rò rỉ dữ liệu đã biết và thông báo cho bạn nếu nó xuất hiện trong vụ rò rỉ mới.
 onboarding-firefox-monitor-button = Đăng ký thông báo
 onboarding-browse-privately-title = Duyệt web riêng tư hơn
 onboarding-browse-privately-text = Duyệt web riêng tư sẽ xóa lịch sử tìm kiếm và duyệt web của bạn để giữ bí mật với bất kỳ ai sử dụng máy tính của bạn.

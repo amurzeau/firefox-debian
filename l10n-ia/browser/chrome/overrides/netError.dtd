@@ -85,7 +85,7 @@
 </ul>
 ">
 
-<!ENTITY netReset.title "Le connexion ha essite remontate">
+<!ENTITY netReset.title "Le connexion ha essite interrumpite">
 <!ENTITY netReset.longDesc "&sharedLongDesc;">
 
 <!ENTITY netTimeout.title "Le connexion ha expirate">
@@ -94,11 +94,11 @@
 <!ENTITY unknownProtocolFound.title "Le adresse non ha essite comprendite">
 <!ENTITY unknownProtocolFound.longDesc "
 <ul>
-  <li>Tu debe installar altere software pro aperir iste adresse.</li>
+  <li>Es possibile que tu debe installar altere software pro aperir iste adresse.</li>
 </ul>
 ">
 
-<!ENTITY proxyConnectFailure.title "Le servitor proxy recusa connexiones">
+<!ENTITY proxyConnectFailure.title "Le servitor proxy refusa connexiones">
 <!ENTITY proxyConnectFailure.longDesc "
 <ul>
   <li>Controla que le parametros del proxy es correcte.</li>
@@ -141,14 +141,14 @@
 ">
 
 <!ENTITY certerror.longpagetitle2 "Advertentia: Potential risco de securitate avante">
-<!ENTITY certerror.sts.longpagetitle  "Non connecter se: possibile problema de securitate">
+<!ENTITY certerror.sts.longpagetitle  "Non connectite: possibile problema de securitate">
 <!-- Localization note (certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 <!ENTITY certerror.introPara2 "&brandShortName; ha detegite un potential menacia de securitate e non ha continuate a <span class='hostname'/>. Si tu visita iste sito, attaccantes poterea tentar robar informationes como tu contrasignos, adresses de e-mail o detalios de carta de credito.">
 <!ENTITY certerror.sts.introPara "&brandShortName; ha detegite un menacia potential de securitate e non ha continuate a <span class='hostname'/> pois que iste sito web require un connexion secur.">
 
-<!ENTITY certerror.expiredCert.introPara "&brandShortName; ha detegite un problema e non ha continuate a <span class='hostname'/>. Le sito web o es mal configurate o le horologio de tu computator es definite a un tempore errate.">
+<!ENTITY certerror.expiredCert.introPara "&brandShortName; ha detegite un problema e non ha continuate a <span class='hostname'/>. O le sito web es mal configurate, o le horologio de tu computator ha un hora errate.">
 <!ENTITY certerror.expiredCert.secondPara2 "Il pare que le certificato del sito es expirate, isto impedi a &brandShortName; de connecter se in modo secur. Si tu visita iste sito, alicuno pote attaccar e tentar de robar informationes como tu contrasignos, emails, o detalios de cartas de credito.">
 <!ENTITY certerror.expiredCert.sts.secondPara "Il pare que le certificato del sito es expirate, isto impedi a &brandShortName; de connecter se in modo secur.">
 
@@ -180,6 +180,9 @@ was trying to connect. -->
 <!ENTITY cspBlocked.title "Blocate per le politica de securitate del contento">
 <!ENTITY cspBlocked.longDesc "<p>&brandShortName; impediva a iste pagina de cargar in iste maniera proque le pagina ha un regula de securitate de contento que non lo permitte.</p>">
 
+<!ENTITY xfoBlocked.title "Blocate per politica X-Frame-Options">
+<!ENTITY xfoBlocked.longDesc "<p>&brandShortName; ha blocate le cargamento de iste pagina in iste contexto perque le pagina ha un politica X-Frame-Options que non lo permitte.</p>">
+
 <!ENTITY corruptedContentErrorv2.title "Error de contento corrumpite">
 <!ENTITY corruptedContentErrorv2.longDesc "<p>Le pagina que tu tenta vider non pote ser monstrate a causa de un error revelate in le transmission del datos.</p><ul><li>Per favor contacta le proprietarios del sito web pro informar les de iste problema.</li></ul>">
 
@@ -197,9 +200,9 @@ was trying to connect. -->
 <!ENTITY sslv3Used.longDesc2 "Informationes avantiate: SSL_ERROR_UNSUPPORTED_VERSION">
 
 <!ENTITY certerror.pagetitle2  "Advertentia: Potential risco de securitate avante">
-<!ENTITY certerror.sts.pagetitle  "Non connecter se: possibile problema de securitate">
+<!ENTITY certerror.sts.pagetitle  "Non connectite: possibile problema de securitate">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'></span> ha un politica de securitate appellate HTTP Strict Transport Security (HSTS), le qual vole dicer que &brandShortName; solmente pote connecter se a illo de maniera secur. Tu pote adder un exception pro visitar iste sito.">
-<!ENTITY certerror.copyToClipboard.label "Copiar le texto in le planchetta">
+<!ENTITY certerror.copyToClipboard.label "Copiar le texto al area de transferentia">
 
 <!ENTITY inadequateSecurityError.title "Tu connexion non es secur">
 <!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
@@ -210,7 +213,7 @@ was trying to connect. -->
 
 <!ENTITY certerror.mitm.title "Un software impedi &brandShortName; de connecter se securmente a iste sito">
 <!ENTITY certerror.mitm.longDesc "<span class='hostname'></span> es probabilemente un sito secur, ma un connexion secur non poteva esser establite. Iste problema es causate per <span class='mitm-name'/>, que es o un software in tu computator o tu rete.">
-<!ENTITY certerror.mitm.whatCanYouDoAboutIt1 "Si le software de tu antivirus include un functionalitate que scande connexiones cifrate (generalmente appellate “scansion web” o “scansion http”) tu pote tentar inactivar ille functionalitate. SI illo non succede, tu pote tentar remover e reinstallar le software antivirus. ">
+<!ENTITY certerror.mitm.whatCanYouDoAboutIt1 "Si tu programma antivirus ha un function que scanna connexiones cryptate (generalmente appellate “scan web” o “scan https”), tenta disactivar iste function. Si isto non resolve le problema, tenta remover e reinstallar le software antivirus.">
 <!ENTITY certerror.mitm.whatCanYouDoAboutIt2 "Si tu es in un rete corporative, tu pote contactar tu assistentia technic.">
 <!ENTITY certerror.mitm.whatCanYouDoAboutIt3 "Si tu non cognosce <span class='mitm-name'/>, tunc isto pote esser un attacco e tu non deberea sequer al sito.">
 <!ENTITY certerror.mitm.sts.whatCanYouDoAboutIt3 "Si tu non cognosce <span class='mitm-name'/>, tunc isto pote esser un attacco, e il non ha qualcosa que tu pote facer pro acceder al sito.">
@@ -218,7 +221,7 @@ was trying to connect. -->
 <!ENTITY clockSkewError.title "Le horologio de tu computator es errate">
 <!ENTITY clockSkewError.longDesc "Tu computator signa que es <span id='wrongSystemTime_systemDate1'/>. isto impedi a &brandShortName; de connecter se con securitate. Pro visitar <span class='hostname'></span>, actualisa le horologio de tu computator al data, tempore e fuso horari currente. Pois refresca <span class='hostname'></span>.">
 
-<!ENTITY prefReset.longDesc "Pare que le parametros de tu rete pote causar isto. Desira tu restaurar le parametros predefinite?">
+<!ENTITY prefReset.longDesc "Pare que le configuration de securitate del rete pote esser le causa de isto. Vole tu restaurar le configuration predefinite?">
 <!ENTITY prefReset.label "Restaurar le parametros predefinite">
 
 <!ENTITY enableTls10.longDesc "Iste sito web non supporta le protocollo TLS 1.2, que es le minime version supportate per &brandShortName;. Le activation de TLS 1.0 e TLS 1.1 pote consentir de succeder a iste connexion.">
@@ -226,4 +229,4 @@ was trying to connect. -->
 <!ENTITY enableTls10.label "Activar TLS 1.0 e 1.1">
 
 <!ENTITY networkProtocolError.title "Error de protocollo de rete">
-<!ENTITY networkProtocolError.longDesc "<p>Le pagina que tu tenta vider non pote esser monstrate perque esseva detegite un error in le protocollo de rete.</p><ul><li>Per favor contacta le proprietarios del sito web.</li></ul>">
+<!ENTITY networkProtocolError.longDesc "<p>Le pagina que tu tenta vider non pote esser monstrate perque un error ha essite detegite in le protocollo de rete.</p><ul><li>Per favor contacta le proprietarios del sito web pro informar les de iste problema.</li></ul>">

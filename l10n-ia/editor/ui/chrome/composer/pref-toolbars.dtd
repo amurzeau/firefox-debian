@@ -4,10 +4,12 @@
 
 <!ENTITY pref.toolbars.title    "Barras de instrumentos">
 
+<!ENTITY composition.caption    "Monstra iste buttones in le Barra del instrumentos de composition:">
 
 <!ENTITY new.label              "Nove">
 <!ENTITY open.label             "Aperir">
 <!ENTITY save.label             "Salvar">
+<!ENTITY publish.label          "Publicar">
 <!ENTITY preview.label          "Navigar">
 <!ENTITY cut.label              "Taliar">
 <!ENTITY copy.label             "Copiar">
@@ -15,17 +17,23 @@
 <!ENTITY print.label            "Imprimer">
 <!ENTITY find.label             "Trovar">
 <!ENTITY image.label            "Imagine">
+<!ENTITY hline.label            "Linea horizontal">
 <!ENTITY table.label            "Tabella">
 <!ENTITY link.label             "Ligamine">
 <!ENTITY anchor.label           "Ancora">
 
+<!ENTITY formatting.caption     "Monstra iste buttones in le Barra del instrumentos de formattation:">
 
 <!ENTITY smaller.label          "Plus micre">
 <!ENTITY larger.label           "Plus grande">
 <!ENTITY bold.label             "Hardite">
+<!ENTITY bullets.label          "Lista punctate">
 <!ENTITY numbers.label          "Numeros">
 <!ENTITY italic.label           "Italico">
 <!ENTITY outdent.label          "Disindentar">
 <!ENTITY indent.label           "Indentar">
 <!ENTITY underline.label        "Sublinear">
 
+<!ENTITY absolutePosition.label "Positionamento absolute">
+<!ENTITY decreaseZIndex.label   "Inviar al fundo">
+<!ENTITY increaseZIndex.label   "Poner al prime plan">

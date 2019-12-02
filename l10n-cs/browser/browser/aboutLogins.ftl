@@ -52,9 +52,9 @@ login-list-count =
         [4] čtvery přihlašovací údaje
        *[other] { $count } přihlašovacích údajů
     }
-login-list-sort-label-text = Seřadit:
-login-list-name-option = podle názvu (A-Z)
-login-list-breached-option = Stránky, na kterých došlo k úniku dat
+login-list-sort-label-text = Seřadit podle:
+login-list-name-option = názvu (A-Z)
+login-list-breached-option = serveru, kde došlo k úniku dat
 login-list-last-changed-option = naposledy změněno
 login-list-last-used-option = naposledy použito
 login-list-intro-title = Nenalezeny žádné přihlašovací údaje
@@ -73,16 +73,19 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = Hledáte své uložené přihlašovací údaje? Přihlaste se ke službě { -sync-brand-short-name }.
+about-logins-login-intro-heading-logged-in = Nenalezeny žádné synchronizované přihlašovací údaje.
 login-intro-description = Pokud jste si uložili přihlašovací údaje do aplikace { -brand-product-name }, ale na jiném zařízení, můžete je zde získat takto:
 login-intro-instruction-fxa = Vytvořte nebo se přihlaste k účtu { -fxaccount-brand-name } na zařízení, kde máte přihlašovací údaje uložené
 login-intro-instruction-fxa-settings = V nastavení služby { -sync-brand-short-name } na daném zařízení se ujistěte, že máte vybranou synchronizaci přihlašovacích údajů
 about-logins-intro-instruction-help = Pro další pomoc navštivte <a data-l10n-name="help-link">nápovědu { -lockwise-brand-short-name }</a>
+about-logins-intro-import = Pokud máte přihlašovací údaje uložené v jiném prohlížeči, můžete je <a data-l10n-name="import-link">importovat do { -lockwise-brand-short-name }</a>
 
 ## Login
 
 login-item-new-login-title = Nové přihlašovací údaje
 login-item-edit-button = Upravit
 login-item-delete-button = Smazat
+about-logins-login-item-remove-button = Odstranit
 login-item-origin-label = Adresa serveru
 login-item-origin =
     .placeholder = https://www.example.com
@@ -112,11 +115,8 @@ master-password-reload-button =
     .label = Přihlásit se
     .accesskey = P
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = Zrušit
-confirmation-dialog-dismiss-button =
-    .title = Zrušit
 enable-password-sync-notification-message =
     Chcete svá hesla všude s sebou, kde používáte aplikaci { -brand-product-name }? Otevřete { PLATFORM() ->
         [windows] možnosti
@@ -130,8 +130,19 @@ enable-password-sync-preferences-button =
         } aplikace { -sync-brand-short-name }
     .accesskey = V
 confirm-delete-dialog-title = Smazat tyto přihlašovací údaje?
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = Příště se už neptat
+    .accesskey = n
+
+## Dialogs
+
+confirmation-dialog-cancel-button = Zrušit
+confirmation-dialog-dismiss-button =
+    .title = Zrušit
+about-logins-confirm-remove-dialog-title = Odstranit tyto přihlašovací údaje?
 confirm-delete-dialog-message = Tuto akci nelze vzít zpět.
 confirm-delete-dialog-confirm-button = Smazat
+about-logins-confirm-remove-dialog-confirm-button = Odstranit
 confirm-discard-changes-dialog-title = Zahodit neuložené změny?
 confirm-discard-changes-dialog-message = Všechny neuložené změny budou ztraceny.
 confirm-discard-changes-dialog-confirm-button = Zahodit
@@ -150,5 +161,10 @@ breach-alert-dismiss =
 # Variables:
 #   $loginTitle (String) - The title of the website associated with the login.
 about-logins-error-message-duplicate-login = Přihlašovací údaje pro { $loginTitle } se stejným uživatelským jménem už existují.
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = Přihlašovací údaje pro { $loginTitle } se stejným uživatelským jménem už existují. <a data-l10n-name="duplicate-link">Chcete zobrazit stávající údaje?</a>
 # This is a generic error message.
 about-logins-error-message-default = Při ukládání hesla nastala chyba.

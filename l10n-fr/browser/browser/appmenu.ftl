@@ -5,6 +5,18 @@
 
 ## App Menu
 
-appmenuitem-protection-report-title = Protections de la vie privée
+appmenuitem-protection-report-title = Protection de la vie privée
 appmenuitem-protection-report-tooltip =
     .tooltiptext = Voir le rapport sur la protection de votre vie privée
+
+## Zoom Controls
+
+appmenuitem-zoom-enlarge =
+    .label = Zoom avant
+appmenuitem-zoom-reduce =
+    .label = Zoom arrière
+
+## Firefox Account toolbar button and Sync panel in App menu.
+
+fxa-toolbar-sync-now =
+    .label = Synchroniser maintenant

@@ -52,7 +52,7 @@ login-list-count =
     }
 login-list-sort-label-text = Sortează după:
 login-list-name-option = Nume (A-Z)
-login-list-breached-option = Site-uri web care au suferit breșe
+login-list-breached-option = Site-uri web a căror securitate a fost încălcată
 login-list-last-changed-option = Ultima modificare
 login-list-last-used-option = Ultima utilizare
 login-list-intro-title = Nicio autentificare găsită
@@ -62,6 +62,11 @@ about-logins-login-list-empty-search-description = Nu există rezultate care să
 login-list-item-title-new-login = Date de autentificare noi
 login-list-item-subtitle-new-login = Introdu datele tale de autentificare
 login-list-item-subtitle-missing-username = (niciun nume de utilizator)
+about-logins-list-item-warning-icon =
+    .alt = Pictogramă de avertisment
+    .title = Site web a cărui securitate a fost încălcată
+about-logins-list-item-breach-icon =
+    .title = Site web a cărui securitate a fost încălcată
 
 ## Introduction screen
 
@@ -69,7 +74,7 @@ login-intro-heading = Îți cauți datele de autentificare salvate? Configureaz�
 login-intro-description = Dacă ți-ai salvat datele de autentificare în { -brand-product-name } pe un alt dispozitiv, iată cum le poți aduce aici:
 login-intro-instruction-fxa = Creează un cont sau autentifică-te în { -fxaccount-brand-name } pe dispozitivul pe care ai salvat datele de autentificare
 login-intro-instruction-fxa-settings = Asigură-te că ai bifat caseta de selectare Date de autentificare în Setările { -sync-brand-short-name }
-about-logins-intro-instruction-help = Intră pe <a data-l10n-name="help-link">{ -lockwise-brand-short-name } Asistență</a> pentru ajutor suplimentar
+about-logins-intro-instruction-help = Intră pe <a data-l10n-name="help-link">asistență { -lockwise-brand-short-name }</a> pentru ajutor suplimentar
 
 ## Login
 
@@ -126,8 +131,8 @@ confirm-discard-changes-dialog-confirm-button = Înlătură
 
 ## Breach Alert notification
 
-breach-alert-text = Parolele au fost divulgate sau furate de pe acest site web după ce ți-ai actualizat ultima oară datele de autentificare. Schimbă-ți parola ca să îți protejezi contul.
-breach-alert-link = Află mai multe despre această breșă.
+breach-alert-text = Parolele au fost divulgate sau furate de pe acest site web după ce ți-ai actualizat ultima oară detaliile de autentificare. Schimbă parola ca să îți protejezi contul.
+breach-alert-link = Află mai multe despre această încălcare a securității datelor.
 breach-alert-dismiss =
     .title = Închide această alertă
 

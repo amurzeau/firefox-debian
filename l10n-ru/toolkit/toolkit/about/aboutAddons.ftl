@@ -187,6 +187,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Включить
     .tooltiptext = Включить проверку безопасного обновления дополнений
+extensions-warning-safe-mode = В безопасном режиме все дополнения отключены.
+extensions-warning-check-compatibility = Проверка совместимости дополнений отключена. У вас могут иметься несовместимые дополнения.
+extensions-warning-check-compatibility-button = Включить
+    .title = Включить проверку совместимости дополнений
+extensions-warning-update-security = Проверка безопасного обновления дополнений отключена. Обновления могут поставить вас под угрозу.
+extensions-warning-update-security-button = Включить
+    .title = Включить проверку безопасного обновления дополнений
 
 ## Strings connected to add-on updates
 
@@ -196,12 +203,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Показать недавние обновления
     .accesskey = к
+addon-updates-check-for-updates = Проверить наличие обновлений
+    .accesskey = о
+addon-updates-view-updates = Показать недавние обновления
+    .accesskey = к
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Автоматически обновлять дополнения
+    .accesskey = в
+addon-updates-update-addons-automatically = Автоматически обновлять дополнения
     .accesskey = в
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -215,6 +228,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = с
 extensions-updates-reset-updates-to-manual =
     .label = Установить для всех дополнений режим ручного обновления
+    .accesskey = с
+addon-updates-reset-updates-to-automatic = Установить для всех дополнений режим автоматического обновления
+    .accesskey = с
+addon-updates-reset-updates-to-manual = Установить для всех дополнений режим ручного обновления
     .accesskey = с
 
 ## Status messages displayed when updating add-ons
@@ -234,11 +251,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Установить обновления
     .tooltiptext = Установить доступные обновления из этого списка
+addon-updates-updating = Обновление дополнений
+addon-updates-installed = Ваши дополнения были обновлены.
+addon-updates-none-found = Обновлений не найдено
+addon-updates-manual-updates-found = Показать доступные обновления
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Установить дополнение из файла…
+    .accesskey = а
+addon-install-from-file-dialog-title = Выберите дополнение для установки
+addon-install-from-file-filter-name = Дополнения
+addon-open-about-debugging = Отладка дополнений
+    .accesskey = л
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Управление горячими клавишами расширений
+    .accesskey = п
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Управление горячими клавишами расширений
     .accesskey = п
 shortcuts-no-addons = У вас не включено ни одного расширения.
 shortcuts-no-commands = У следующих расширений нет горячих клавиш:
@@ -311,6 +344,8 @@ addon-options-button =
 
 report-addon-button = Пожаловаться
 remove-addon-button = Удалить
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Нельзя удалить <a data-l10n-name="link">Почему?</a>
 disable-addon-button = Отключить
 enable-addon-button = Включить
 expand-addon-button = Другие настройки
@@ -405,3 +440,18 @@ recommended-themes-heading = Рекомендуемые темы
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Чувствуете прилив вдохновения? <a data-l10n-name="link">Создайте свою собственную тему с помощью Firefox Color.</a>
+
+## Page headings
+
+extension-heading = Управление моими расширениями
+theme-heading = Управление моими темами
+plugin-heading = Управление моими плагинами
+dictionary-heading = Управление моими словарями
+locale-heading = Управление моими языками
+updates-heading = Управление моими обновлениями
+discover-heading = Сделайте { -brand-short-name } своим
+shortcuts-heading = Управление горячими клавишами расширений
+theme-heading-search-label = Найти другие темы
+extension-heading-search-label = Найти больше расширений
+addons-heading-search-input =
+    .placeholder = Поиск на addons.mozilla.org

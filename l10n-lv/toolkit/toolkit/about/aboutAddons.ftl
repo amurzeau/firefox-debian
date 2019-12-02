@@ -121,9 +121,6 @@ legacy-warning-show-legacy = Rādīt vēsturiskos papildinājumus
 legacy-extensions =
     .value = Vēsturiskie papildinājumi
 legacy-extensions-description = Šie paplašinājumi neatbilst pašreizējiem { -brand-short-name } standartiem, tāpēc tie tika deaktivizēti. <label data-l10n-name="legacy-learn-more">Uzzināt vairāk par papildinājumu izmaiņām</label>
-extensions-view-discover =
-    .name = Iegūt papildinājumus
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-recent-updates =
     .name = Nesenie atjauninājumi
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -151,6 +148,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Aktivēt
     .tooltiptext = Aktivēt papildinājumu drošības pārbaudi
+extensions-warning-safe-mode = Drošais režīms ir deaktivējis visus papildinājumu.
+extensions-warning-check-compatibility = Papildinājumu savietojamības pārbaude ir deaktivēta. Iespējams jums ir nesavietojami papildinājumu.
+extensions-warning-check-compatibility-button = Aktivēt
+    .title = Aktivēt papildinājumu savietojamības pārbaudi
+extensions-warning-update-security = Papildinājumu drošības pārbaude ir deaktivēta. Iespējams jums ir nedroši papildinājumu.
+extensions-warning-update-security-button = Aktivēt
+    .title = Aktivēt papildinājumu drošības pārbaudi
 
 ## Strings connected to add-on updates
 
@@ -160,12 +164,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Aplūkot nesenos atjauninājumus
     .accesskey = n
+addon-updates-check-for-updates = Meklēt atjauninājumus
+    .accesskey = M
+addon-updates-view-updates = Aplūkot nesenos atjauninājumus
+    .accesskey = n
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Atjaunināt papildinājumus automātiski
+    .accesskey = A
+addon-updates-update-addons-automatically = Atjaunināt papildinājumus automātiski
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -179,6 +189,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = l
 extensions-updates-reset-updates-to-manual =
     .label = Atjaunināt visus papildinājumus manuāli
+    .accesskey = m
+addon-updates-reset-updates-to-automatic = Atjaunināt visus papildinājumus automātiski
+    .accesskey = l
+addon-updates-reset-updates-to-manual = Atjaunināt visus papildinājumus manuāli
     .accesskey = m
 
 ## Status messages displayed when updating add-ons
@@ -198,3 +212,31 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Instalēt atjauninājumus
     .tooltiptext = Instalēt visus šajā sarakstā pieejamos atjauninājumus
+addon-updates-updating = Atjaunina papildinājumus
+addon-updates-installed = Jūsu papildinājumi ir atjaunināti.
+addon-updates-none-found = Atjauninājumi nav atrasti
+addon-updates-manual-updates-found = Aplūkot pieejamos atjauninājumus
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Instalēt no faila…
+    .accesskey = I
+addon-install-from-file-dialog-title = Izvēlieties instalējamo papildinājumu
+addon-install-from-file-filter-name = Papildinājumi
+addon-open-about-debugging = Atkļūdot papildinājumus
+    .accesskey = d
+
+## Extension shortcut management
+
+
+## Recommended add-ons page
+
+
+## Add-on actions
+
+
+## Pending uninstall message bar
+
+
+## Page headings
+

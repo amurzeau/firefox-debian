@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Almacenar datos en el almacenamiento persistente
 urlbar-addons-notification-anchor =
     .tooltiptext = Abrir panel de mensajes de instalación de complementos
+urlbar-tip-help-icon =
+    .title = Obtener ayuda
+urlbar-geolocation-blocked =
+    .tooltiptext = Está bloqueada tu información de ubicación para este sitio web.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Están bloqueadas las notificaciones para este sitio web.
+urlbar-camera-blocked =
+    .tooltiptext = Tu cámara está bloqueada para este sitio web.
+urlbar-microphone-blocked =
+    .tooltiptext = Tu micrófono está bloqueado para este sitio web.
+urlbar-screen-blocked =
+    .tooltiptext = Este sitio web está bloqueado para compartir tu pantalla.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Has bloqueado el almacenamiento persistente para este sitio.
+urlbar-popup-blocked =
+    .tooltiptext = Tienes bloqueadas las pop-ups para este sitio web.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Bloqueaste la reproducción automática de sonidos multimedia para este sitio web.
+urlbar-canvas-blocked =
+    .tooltiptext = Has bloqueado la extracción de datos de canvas para este sitio.
+urlbar-midi-blocked =
+    .tooltiptext = Haz bloqueado el acceso al MIDI para este sitio web.
+urlbar-install-blocked =
+    .tooltiptext = Has bloqueado la instalación de complementos en este sitio web.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Salir del modo pantalla completa
     .accesskey = c
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Esta vez, buscar con:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Cambiar preferencias de búsqueda
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Cambiar preferencias de búsqueda
+search-one-offs-context-open-new-tab =
+    .label = Buscar en nueva pestaña
+    .accesskey = p
+search-one-offs-context-set-as-default =
+    .label = Establecer como motor de búsqueda predeterminado
+    .accesskey = p
+search-one-offs-context-set-as-default-private =
+    .label = Establecer como motor de búsqueda predeterminado en Ventanas Privadas
+    .accesskey = P

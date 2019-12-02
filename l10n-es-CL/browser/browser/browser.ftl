@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Almacenar datos en almacenamiento persistente
 urlbar-addons-notification-anchor =
     .tooltiptext = Abrir panel de mensaje de instalación de complemento
+urlbar-tip-help-icon =
+    .title = Obtener ayuda
+urlbar-geolocation-blocked =
+    .tooltiptext = Has bloqueado la información de ubicación para este sitio.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Has bloqueado las notificaciones para este sitio.
+urlbar-camera-blocked =
+    .tooltiptext = Has bloqueado tu cámara para este sitio.
+urlbar-microphone-blocked =
+    .tooltiptext = Has bloqueado tu micrófono para este sitio.
+urlbar-screen-blocked =
+    .tooltiptext = Has bloqueado a este sitio la posibilidad de compartir tu pantalla.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Has bloqueado el almacenamiento persistente para este sitio.
+urlbar-popup-blocked =
+    .tooltiptext = Bloqueaste las ventanas emergentes para este sitio web.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Has bloqueado la reproducción automática de medios con sonido para este sitio web.
+urlbar-canvas-blocked =
+    .tooltiptext = Has bloqueado la extracción de datos de canvas para este sitio.
+urlbar-midi-blocked =
+    .tooltiptext = Has bloqueado el acceso MIDI para este sitio.
+urlbar-install-blocked =
+    .tooltiptext = Has bloqueado la instalación de complementos para este sitio.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Salir del modo de pantalla completa
     .accesskey = S
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Esta vez, buscar con:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Cambiar ajustes de búsqueda
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Cambiar ajustes de búsqueda
+search-one-offs-context-open-new-tab =
+    .label = Buscar en nueva pestaña
+    .accesskey = T
+search-one-offs-context-set-as-default =
+    .label = Ajustar como motor de búsqueda predeterminado
+    .accesskey = D
+search-one-offs-context-set-as-default-private =
+    .label = Establecer como motor de búsqueda predeterminado para ventanas privadas
+    .accesskey = P

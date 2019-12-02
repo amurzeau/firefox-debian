@@ -47,6 +47,28 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = स्थायी संग्रहण में आँकड़े संचित करें
 urlbar-addons-notification-anchor =
     .tooltiptext = सहयुक्ति संस्थापन संदेश पटल खोलें
+urlbar-tip-help-icon =
+    .title = सहायता प्राप्त करें
+urlbar-geolocation-blocked =
+    .tooltiptext = आपने इस वेबसाइट के लिए स्थान की सूचना अवरुद्ध किये है.
+urlbar-web-notifications-blocked =
+    .tooltiptext = आपने इस वेबसाइट के लिए अधिसूचना अवरुद्ध किये है.
+urlbar-camera-blocked =
+    .tooltiptext = आप इस वेबसाइट के लिए अपने कैमरा को अवरूद्ध किये हैं.
+urlbar-microphone-blocked =
+    .tooltiptext = आपने इस वेबसाइट के लिए अपने माइक्रोफ़ोन को अवरूद्ध किया है.
+urlbar-screen-blocked =
+    .tooltiptext = आपने अपने स्क्रीन को साझा करने से इस वेबसाइट को अवरूद्ध किया हैं.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = आपने इस वेबसाइट के लिए सतत संग्रहण को अवरुद्ध किया है.
+urlbar-popup-blocked =
+    .tooltiptext = आपने इस वेबसाइट पर पॉप-अप अवरुद्ध किए हैं.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = आपने इस वेबसाइट के लिए धवनी के साथ ऑटोप्ले मीडिया को अवरुद्ध कर दिया है.
+urlbar-canvas-blocked =
+    .tooltiptext = आपने इस वेबसाइट के लिए कैनवास डेटा निष्कर्षण को अवरोधित किया है.
+urlbar-midi-blocked =
+    .tooltiptext = आपने इस वेबसाइट के लिए MIDI उपयोग अवरुद्ध कर दिया है.
 
 ## Page Action Context Menu
 
@@ -65,3 +87,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = पूर्ण स्क्रीन मोड से बाहर निकलें
     .accesskey = F
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = इस बार, इसके साथ खोजें:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = खोज सेटिंग बदलाव
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = खोज सेटिंग बदले
+search-one-offs-context-open-new-tab =
+    .label = नया टैब में खोजें
+    .accesskey = T
+search-one-offs-context-set-as-default =
+    .label = डिफ़ॉल्ट ख़ोज इंजिन की तरह स्थापित करें
+    .accesskey = D
+search-one-offs-context-set-as-default-private =
+    .label = निजी विंडो के लिए तयशुदा खोज इंजन के रूप में सेट करें
+    .accesskey = P

@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = por { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Recomendación
+cfr-doorhanger-extension-notification2 = Recomendación
+    .tooltiptext = Recomendación de extensión
+    .a11y-announcement = Recomendación de extensión disponible
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Recomendación
+    .tooltiptext = Recomendación de funcionalidad
+    .a11y-announcement = Recomendación de funcionalidad disponible
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -78,12 +86,20 @@ cfr-protections-panel-link-text = Aprender más
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Nueva funcionalidad:
 cfr-whatsnew-button =
     .label = Qué hay de nuevo
     .tooltiptext = Qué hay de nuevo
 cfr-whatsnew-panel-header = Qué hay de nuevo
 cfr-whatsnew-release-notes-link-text = Lee las notas de la versión
+cfr-whatsnew-fx70-title = { -brand-short-name } ahora lucha con más fuerza por tu privacidad
+cfr-whatsnew-fx70-body =
+    La última actualización mejora la función de protección contra seguimiento y hace
+    que sea más fácil que nunca el crear contraseñas seguras para cada sitio.
 cfr-whatsnew-tracking-protect-title = Protégete de los rastreadores
+cfr-whatsnew-tracking-protect-body = { -brand-short-name } bloquea muchos de los rastreadores sociales y de sitios cruzados comunes que siguen lo que haces en línea.
 cfr-whatsnew-tracking-protect-link-text = Mira tu reporte
 # This string is displayed before a large numeral that indicates the total
 # number of tracking elements blocked. Don’t add $blockedCount to your
@@ -96,8 +112,10 @@ cfr-whatsnew-tracking-blocked-title =
 cfr-whatsnew-tracking-blocked-subtitle = Desde { DATETIME($earliestDate, month: "long", year: "numeric") }
 cfr-whatsnew-tracking-blocked-link-text = Ver reporte
 cfr-whatsnew-lockwise-backup-title = Respalda tus contraseñas
+cfr-whatsnew-lockwise-backup-body = Ahora genera contraseñas seguras a las que puedes acceder donde sea que te conectes.
 cfr-whatsnew-lockwise-backup-link-text = Activar respaldos
 cfr-whatsnew-lockwise-take-title = Lleva tus contraseñas contigo
+cfr-whatsnew-lockwise-take-body = La app para móviles { -lockwise-brand-short-name } te permite acceder de forma segura a tus contraseñas respaldadas desde cualquier parte.
 cfr-whatsnew-lockwise-take-link-text = Obtener la aplicación
 
 ## Bookmark Sync
@@ -135,3 +153,23 @@ cfr-doorhanger-socialtracking-ok-button = Ver protecciones
     .accesskey = P
 cfr-doorhanger-socialtracking-close-button = Cerrar
     .accesskey = C
+cfr-doorhanger-socialtracking-dont-show-again = No volver a mostrar mensajes como este
+    .accesskey = D
+cfr-doorhanger-socialtracking-heading = { -brand-short-name } detuvo a una red social de rastrearte hasta aquí
+cfr-doorhanger-socialtracking-description = Tu privacidad importa. { -brand-short-name } ahora bloquea rastreadores de redes sociales comunes, limitando la cantidad de datos que recolectan sobre lo que haces en línea.
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name } bloqueó un creador de huellas digitales (fingerprinter) en esta página
+cfr-doorhanger-fingerprinters-description = Tu privacidad importa. { -brand-short-name } ahora bloquea creadores de huellas digitales (fingerprinters), los que recolectan piezas de información única e identificable sobre tu dispositivo para rastrearte.
+cfr-doorhanger-cryptominers-heading = { -brand-short-name } bloqueó un criptominero en esta página
+cfr-doorhanger-cryptominers-description = Tu privacidad importa. { -brand-short-name } ahora bloquea criptomineros, los que usan la potencia de cómputo de tu sistema para minar dinero digital.
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+       *[other] ¡{ -brand-short-name } bloqueó más de <b>{ $blockedCount }</b> rastreadores desde el { $date }!
+    }
+cfr-doorhanger-milestone-ok-button = Ver todos
+    .accesskey = S

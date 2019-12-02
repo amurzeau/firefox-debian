@@ -32,6 +32,8 @@ app-basics-name = Nomo
 app-basics-version = Versio
 app-basics-build-id = Identigilo de konstruo
 app-basics-update-channel = Kanalo de ĝisdatigo
+# This message refers to the folder used to store updates on the device,
+# as in "Folder for updates". "Update" is a noun, not a verb.
 app-basics-update-dir =
     { PLATFORM() ->
         [linux] Dosierujo de ĝisdatigoj
@@ -56,7 +58,6 @@ app-basics-service-workers = Registritaj Service Workers
 app-basics-profiles = Profiloj
 app-basics-launcher-process-status = Lanĉa procezo
 app-basics-multi-process-support = Plurprocezaj fenestroj
-app-basics-process-count = Teksaĵaj enhavaj taskoj
 app-basics-remote-processes-count = Foraj procezoj
 app-basics-enterprise-policies = Kompaniaj politikoj
 app-basics-location-service-key-google = Ŝlosilo de la pozicia servo de Google
@@ -112,6 +113,13 @@ sandbox-sys-call-number = Sistema voko
 sandbox-sys-call-args = Parametroj
 safe-mode-title = Provi la sekuran reĝimon
 restart-in-safe-mode-label = Restartigi kun ĉiuj aldonaĵoj malaktivaj…
+
+## Media titles
+
+audio-backend = Sonsistemo
+max-audio-channels = Maksimuma nombro de kanaloj
+channel-layout = Preferata aranĝo de kanaloj
+sample-rate = Preferata specimena frekvenco
 media-title = Aŭdvidaĵo
 media-output-devices-title = Eligaj aparatoj
 media-input-devices-title = Enigaj aparatoj
@@ -124,6 +132,12 @@ media-device-format = Formo
 media-device-channels = Kanaloj
 media-device-rate = Frekvenco
 media-device-latency = Prokrasto
+media-capabilities-title = Aŭdvidaĵaj kapabloj
+# List all the entries of the database.
+media-capabilities-enumerate = Listigi datumbazon
+
+
+
 intl-title = Lingvo kaj internacieco
 intl-app-title = Agordoj de programo
 intl-locales-requested = Petitaj lingvoj
@@ -133,6 +147,22 @@ intl-locales-default = Norma lingvo
 intl-os-title = Mastruma sistemo
 intl-os-prefs-system-locales = Lingvoj de la sistemo
 intl-regional-prefs = Regionaj preferoj
+
+## Remote Debugging
+##
+## The Firefox remote protocol provides low-level debugging interfaces
+## used to inspect state and control execution of documents,
+## browser instrumentation, user interaction simulation,
+## and for subscribing to browser-internal events.
+##
+## See also https://firefox-source-docs.mozilla.org/remote/
+
+remote-debugging-title = Fora senerarigo (protokolo Chromium)
+remote-debugging-accepting-connections = Konektoj akceptataj
+remote-debugging-url = Retadreso
+
+
+
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
@@ -229,6 +259,7 @@ unknown-failure = En bloklisto; kodo de malsukceso { $failureCode }
 d3d11layers-crash-guard = D3D11 Komponisto
 d3d11video-crash-guard = D3D11 Videa malkodilo
 d3d9video-crash-buard = D3D9 Videa malkodilo
+d3d9video-crash-guard = D3D9 Videa malkodilo
 glcontext-crash-guard = OpenGL
 reset-on-next-restart = Restarigi en la venonta restarto
 gpu-process-kill-button = Fini procezon de GPU
@@ -238,12 +269,7 @@ uses-tiling = Kaheloj uzataj
 content-uses-tiling = Kaheloj uzataj (enhavo)
 off-main-thread-paint-enabled = La farbado ekster la ĉefa fadeno estas aktiva
 off-main-thread-paint-worker-count = Nombro de workers, kiuj farbas ekster la ĉefa fadeno
-low-end-machine = Malpli pova maŝino trovita
 target-frame-rate = Celata frekvenco de kadroj
-audio-backend = Sonsistemo
-max-audio-channels = Maksimuma nombro de kanaloj
-channel-layout = Preferata aranĝo de kanaloj
-sample-rate = Preferata specimena frekvenco
 min-lib-versions = Minimuma atendita versio
 loaded-lib-versions = Uzata versio
 has-seccomp-bpf = Seccomp-BPF (Filtrado de sistemaj vokoj)

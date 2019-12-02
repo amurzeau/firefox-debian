@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = 將資料儲存於持續性儲存空間
 urlbar-addons-notification-anchor =
     .tooltiptext = 開啟附加元件安裝訊息面板
+urlbar-tip-help-icon =
+    .title = 取得幫助
+urlbar-geolocation-blocked =
+    .tooltiptext = 您已封鎖此網站取得您所在位置資訊的權限。
+urlbar-web-notifications-blocked =
+    .tooltiptext = 您已封鎖此網站推送通知的權限。
+urlbar-camera-blocked =
+    .tooltiptext = 您已封鎖此網站的攝影機存取權限。
+urlbar-microphone-blocked =
+    .tooltiptext = 您已封鎖此網站存取您麥克風的權限。
+urlbar-screen-blocked =
+    .tooltiptext = 您已封鎖此網站分享您螢幕畫面的權限。
+urlbar-persistent-storage-blocked =
+    .tooltiptext = 您已封鎖此網站儲存資料至持續性儲存空間。
+urlbar-popup-blocked =
+    .tooltiptext = 您封鎖了此網站的彈出視窗。
+urlbar-autoplay-media-blocked =
+    .tooltiptext = 您已封鎖此網站自動播放有聲音的媒體內容。
+urlbar-canvas-blocked =
+    .tooltiptext = 您已封鎖此網站讀取 canvas 資料的權限。
+urlbar-midi-blocked =
+    .tooltiptext = 您已封鎖此網站的 MIDI 存取權限。
+urlbar-install-blocked =
+    .tooltiptext = 您已封鎖此網站安裝附加元件。
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = 離開全螢幕模式
     .accesskey = F
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = 這次使用下列搜尋引擎搜尋:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = 變更搜尋設定
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = 修改搜尋設定
+search-one-offs-context-open-new-tab =
+    .label = 在新分頁中搜尋
+    .accesskey = T
+search-one-offs-context-set-as-default =
+    .label = 設為預設搜尋引擎
+    .accesskey = D
+search-one-offs-context-set-as-default-private =
+    .label = 設為隱私瀏覽模式中的預設搜尋引擎
+    .accesskey = P

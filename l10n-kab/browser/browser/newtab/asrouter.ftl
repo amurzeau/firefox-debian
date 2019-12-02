@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = S { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Awelleh
+cfr-doorhanger-extension-notification2 = Iwellihen
+    .tooltiptext = Iseɣzaf ihulen
+    .a11y-announcement = Iseɣzaf ihulen i yellan
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Iwellihen
+    .tooltiptext = Timahaltin ihulen
+    .a11y-announcement = Timahaltin ihulen i yellan
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -78,6 +86,9 @@ cfr-protections-panel-link-text = Issin ugar
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Timahilin timaynutin:
 cfr-whatsnew-button =
     .label = Amaynut
     .tooltiptext = Amaynut
@@ -140,9 +151,24 @@ cfr-doorhanger-socialtracking-ok-button = Wali tarrayin n ummesten
     .accesskey = W
 cfr-doorhanger-socialtracking-close-button = Mdel
     .accesskey = M
+cfr-doorhanger-socialtracking-dont-show-again = Ur d-skanay ara iznan am wi tikkelt-nniḍen
+    .accesskey = D
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } yessewḥel aẓeṭṭa inmetti akken ad k-yeḍfeṛ dagi
 cfr-doorhanger-socialtracking-description = Aqadeṛ n tudert-ik tabaḍnit yeɛna-aɣ. { -brand-short-name } yesseḥal akka tura ineḍfaṛen n yiẓeḍwa inmettiyen yettwassnen, ayen yettarran talast i tnecta n yisefka i zemren ad d-leqḍen armud-ik srid.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } yessewḥel aneḍfaṛ n udsil umḍin ɣef usebter-a.
 cfr-doorhanger-fingerprinters-description = Aqadeṛ n tbaḍnit-ik teɛna-aɣ. { -brand-short-name } yesseḥal akka tura ineḍfaṛen n udsil umḍin, i d-ileqḍen talɣut tasuft yettwassnen ɣef yibenk-ik akken ad k-yeḍfeṛ.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } yessewḥel akriptuminer ɣef usebter-a.
 cfr-doorhanger-cryptominers-description = Aqadeṛ n tudert-ik tusligt d ayen meqqṛen. { -brand-short-name } yessewḥal akka tura ikriptumniren i yesseqdacen tazmert n usiḍen n unagraw-ik n wammud akken ad d-kksen tadrimt tumḍint.
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+        [one] { -brand-short-name } iwḥel i { $blockedCount }</b> uneḍfar seg
+       *[other] { $date }!
+    }
+cfr-doorhanger-milestone-ok-button = Wali akk
+    .accesskey = W

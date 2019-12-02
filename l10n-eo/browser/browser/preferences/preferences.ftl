@@ -14,6 +14,11 @@ pref-page =
             [windows] Elektebloj
            *[other] Preferoj
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Elektebloj
+       *[other] Preferoj
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -282,6 +287,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Uzi { $plugin-name } (en { -brand-short-name })
@@ -307,7 +316,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-##
+
 
 drm-content-header = Enhavo kun cifereca administrado de rajtoj (DRM)
 play-drm-content =
@@ -395,6 +404,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Serĉi tekston kiam vi ektajpas
     .accesskey = t
+browsing-picture-in-picture-toggle-enabled =
+    .label = Permesi regilojn por bildo en bildo
+    .accesskey = P
+browsing-picture-in-picture-learn-more = Pli da informo
 browsing-cfr-recommendations =
     .label = Sugesti etendaĵojn dum retumo
     .accesskey = S
@@ -453,7 +466,6 @@ choose-bookmark =
 
 home-prefs-content-header = Enhavo de la hejmekrano de Firefox
 home-prefs-content-description = Elektu la enhavon, kiun vi volas en via hejmekrano de Firefox.
-home-prefs-content-discovery-description = Malkovro de enhavo en la eka paĝo de Firefox permesas al vi trovi altkvalitajn elstarajn artikolojn el la tuta teksaĵo.
 home-prefs-search-header =
     .label = Serĉo en la reto
 home-prefs-topsites-header =
@@ -501,6 +513,13 @@ search-bar-shown =
     .label = Aldoni serĉan strion al ilaro
 search-engine-default-header = Norma serĉilo
 search-engine-default-desc = Elekti la norman serĉilon por la adresa kaj serĉa strio.
+search-engine-default-desc-2 = Tiu ĉi estas via norma serĉilo en la adresa kaj serĉa strio. Vi povas ŝanĝi ĝin iam ajn.
+search-engine-default-private-desc-2 = Elektu alian normal serĉilon nur por privatajn fenestrojn
+search-separate-default-engine =
+    .label = Uzi tiun ĉi serĉilon en privataj fenestroj
+    .accesskey = U
+search-suggestions-header = Serĉaj sugestoj
+search-suggestions-desc = Elektu la manieron vidi sugestojn de serĉiloj.
 search-suggestions-option =
     .label = Montri serĉajn sugestojn
     .accesskey = s
@@ -514,6 +533,9 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Montri serĉajn sugestojn antaŭ ol retuman historion en la resultoj de la adresa strio
+search-show-suggestions-private-windows =
+    .label = Montri serĉajn sugestojn en privataj fenestroj
+suggestions-addressbar-settings = Ŝanĝi preferojn por retuma historio, legosignoj kaj langetaj sugestoj
 search-suggestions-cant-show = Sugestoj de serĉiloj ne aperos en la rezultoj de la adresa strio ĉar vi petis al { -brand-short-name } neniam memori la historion.
 search-one-click-header = Serĉiloj per unu alklako
 search-one-click-desc = Elekti la alternativajn serĉilojn, kiuj aperos sub la adresa kaj serĉa strio kiam vi ektajpas ŝlosilvorton.
@@ -550,6 +572,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Kunporti vian Teksaĵon kun vi
 sync-signedout-description = Speguli viajn legosignojn, historion, langetojn, pasvortojn, aldonaĵojn kaj preferojn en ĉiuj viaj aparatoj.
 sync-signedout-account-title = Konekti al { -fxaccount-brand-name }
@@ -557,6 +583,9 @@ sync-signedout-account-create = Ĉu vi ne havas konton? Enskribiĝu
     .accesskey = E
 sync-signedout-account-signin =
     .label = Komenci seancon…
+    .accesskey = K
+sync-signedout-account-signin2 =
+    .label = Komenci seancon en { -sync-brand-short-name }…
     .accesskey = K
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -570,11 +599,17 @@ sync-mobile-promo = Elŝuti Firefox por <img data-l10n-name="android-icon"/> <a 
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = Ŝanĝi bildon de profilo
 sync-disconnect =
     .label = Malkonekti…
     .accesskey = M
+sync-sign-out =
+    .label = Fini seancon…
+    .accesskey = F
 sync-manage-account = Administri konton
     .accesskey = A
 sync-signedin-unverified = { $email } ne estas konfirmita.
@@ -590,6 +625,48 @@ sync-sign-in =
     .accesskey = K
 sync-signedin-settings-header = Agordoj de Spegulado
 sync-signedin-settings-desc = Elekti tion, kion vi volas speguli en la aparatoj viaj, kiuj uzas { -brand-short-name }.
+
+## Sync section - enabling or disabling sync.
+
+prefs-syncing-on = Spegulado: ŝaltita
+prefs-syncing-off = Spegulado: malŝaltita
+prefs-sync-setup =
+    .label = Agordi { -sync-brand-short-name }…
+    .accesskey = A
+prefs-sync-offer-setup-label = Speguli viajn legosignojn, historion, langetojn, pasvortojn, aldonaĵojn kaj preferojn en ĉiuj viaj aparatoj.
+prefs-sync-now =
+    .labelnotsyncing = Speguli nun
+    .accesskeynotsyncing = n
+    .labelsyncing = Spegulado...
+
+## The list of things currently syncing.
+
+sync-currently-syncing-heading = Nuntempe vi spegulas la jenajn elementojn:
+sync-currently-syncing-bookmarks = legosignojn
+sync-currently-syncing-history = historion
+sync-currently-syncing-tabs = malfermitajn langetojn
+sync-currently-syncing-logins-passwords = legitimilojn
+sync-currently-syncing-addresses = adresojn
+sync-currently-syncing-creditcards = kreditkartojn
+sync-currently-syncing-addons = aldonaĵojn
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] preferojn
+       *[other] preferojn
+    }
+sync-change-options =
+    .label = Ŝanĝi…
+    .accesskey = a
+
+## The "Choose what to sync" dialog.
+
+sync-choose-what-to-sync-dialog =
+    .title = Elektu kion speguli
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Konservi ŝanĝojn
+    .buttonaccesskeyaccept = K
+    .buttonlabelextra2 = Malkonekti…
+    .buttonaccesskeyextra2 = M
 sync-engine-bookmarks =
     .label = legosignojn
     .accesskey = l
@@ -604,6 +681,10 @@ sync-engine-logins =
     .label = akreditilojn
     .tooltiptext = Nomoj de uzanto kaj pasvortoj konservitaj de vi
     .accesskey = A
+sync-engine-logins-passwords =
+    .label = legitimilojn
+    .tooltiptext = Nomoj de uzanto kaj pasvortoj, kiujn vi konservis
+    .accesskey = l
 sync-engine-addresses =
     .label = adresojn
     .tooltiptext = Poŝtaj adresoj konservitaj de vi (nur en komputilo)
@@ -624,6 +705,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Ĝeneralaj, privatecaj kaj sekurecaj agordoj ŝanĝitaj de vi
     .accesskey = p
+
+## The device name controls.
+
 sync-device-name-header = Nomo de aparato
 sync-device-name-change =
     .label = Ŝanĝi nomon de aparato…
@@ -646,7 +730,11 @@ privacy-header = Retumila privateco
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Akreditiloj kaj pasvortoj
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Demandi ĉu konservi akreditilojn kaj pasvortojn por retejoj
     .accesskey = D
@@ -656,6 +744,11 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Sugesti kaj krei fortikajn pasvortojn
     .accesskey = S
+forms-breach-alerts =
+    .label = Montri atentigojn pri pasvortoj por retejoj kun datumfuĝoj
+    .accesskey = d
+forms-breach-alerts-learn-more-link = Pli da informo
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Aŭtomate plenigi akreditilojn kaj pasvortojn
     .accesskey = A
@@ -777,6 +870,7 @@ addressbar-suggestions-settings = Ŝanĝi preferojn pri serĉilaj sugestoj
 content-blocking-header = Blokado de enhavo
 content-blocking-section-description = Protektu vian privatecon dum vi retumas. Bloku nevideblan enhavon, kiu registras la retejojn, kiujn vi vizitas por konstrui profilon pri vi. Bloki parton de tiu enhavo povas rapidigi la ŝargadon de paĝoj.
 content-blocking-enhanced-tracking-protection = Plibonigita protekto kontraŭ spurado
+content-blocking-section-top-level-description = Spuriloj sekvas vin en la reto por kolekti informon pri via kutima retumo kaj pri viaj interesoj. { -brand-short-name } blokas plurajn el tiuj spuriloj kaj aliajn malicajn skriptojn.
 content-blocking-learn-more = Pli da informo
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -809,7 +903,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Personecigita
     .accesskey = P
 
-##
+
 
 content-blocking-etp-standard-desc = Ekvilibrita por protekto kaj efikeco. Paĝoj ŝargiĝos normale.
 content-blocking-etp-strict-desc = Pli forta proteko, sed kelkaj retejoj aŭ enhavjo povus ne bone funkcii.

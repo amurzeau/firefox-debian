@@ -127,7 +127,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaUnverified.label "Vahvista tilisi">
 
 
- <!-- } is above this key on many keyboards -->
+<!ENTITY togglePictureInPicture.key2 "}">
+<!ENTITY togglePictureInPicture.key "]"> <!-- } is above this key on many keyboards -->
 
 <!ENTITY fullScreenMinimize.tooltip "Pienennä ikkuna">
 <!ENTITY fullScreenRestore.tooltip "Palauta">
@@ -175,6 +176,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.menu.accountSettings.label "Tilin asetukset">
 <!ENTITY fxa.menu.signOut.label "Kirjaudu ulos…">
 <!ENTITY fxa.menu.deviceSettings.label "Laiteasetukset">
+<!ENTITY fxa.menu.setupSync.label "Määritä &syncBrand.shortName.label;…">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
      for the Firefox Account toolbar menu screen.  -->
@@ -288,6 +290,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "Olet estänyt Adobe Flash -liitännäisen käytön tältä sivustolta.">
 <!ENTITY urlbar.midiBlocked.tooltip              "Olet estänyt MIDI-käytön tältä sivustolta.">
 <!ENTITY urlbar.installBlocked.tooltip           "Olet estänyt lisäosien asennuksen tältä sivustolta.">
+
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Avaa sivuhistoria">
 
@@ -943,6 +946,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY protections.trackingContent.label "Seurantaan tarkoitettu sisältö">
 <!ENTITY protections.fingerprinters.label "Yksilöijät">
 <!ENTITY protections.cryptominers.label "Kryptolouhijat">
+<!ENTITY protections.notBlocking.why.etpOff2.tooltip "Kaikki tämän sivuston seuraimet on ladattu, sillä suojaukset ovat pois päältä.">
 <!ENTITY protections.noTrackersFound.description "Tällä sivulla ei havaittu seuraimia, jotka &brandShortName; tuntee.">
 
 <!ENTITY protections.crossSiteTrackingCookies.description "Nämä evästeet seuraavat sinua sivustolta toiselle ja keräävät tietoja tekemisistäsi verkossa. Ne on asetettu kolmansien osapuolten, kuten mainostajien ja analytiikkayhtiöiden, toimesta.">

@@ -3,3 +3,4 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 accounts-outgoing-servers = Servitores in exito
+accounts-conn-security = Securitate de connexion

@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = gan { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Argymhelliad
+cfr-doorhanger-extension-notification2 = Argymhelliad
+    .tooltiptext = Argymhelliad Estyniad
+    .a11y-announcement = Mae argymhelliad estyniad ar gael
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Argymhelliad
+    .tooltiptext = Argymhelliad Nodwedd
+    .a11y-announcement = Mae argymhelliad nodwedd ar gael
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -86,6 +94,9 @@ cfr-protections-panel-link-text = Dysgu rhagor
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Nodwedd newydd:
 cfr-whatsnew-button =
     .label = Beth sy'n Newydd
     .tooltiptext = Beth sy'n Newydd
@@ -158,9 +169,28 @@ cfr-doorhanger-socialtracking-ok-button = Gweld y Diogelwch
     .accesskey = D
 cfr-doorhanger-socialtracking-close-button = Cau
     .accesskey = C
+cfr-doorhanger-socialtracking-dont-show-again = Peidiwch â dangos negeseuon fel hyn i mi eto
+    .accesskey = d
 cfr-doorhanger-socialtracking-heading = Mae { -brand-short-name } wedi atal rhwydwaith cymdeithasol rhag eich tracio chi yma
 cfr-doorhanger-socialtracking-description = Mae eich preifatrwydd yn bwysig. Mae { -brand-short-name } nawr yn rhwystro tracwyr cyfryngau cymdeithasol cyffredin, gan gyfyngu ar faint o ddata y mae nhw'n gallu ei gasglu am yr hyn rydych chi'n ei wneud ar-lein.
 cfr-doorhanger-fingerprinters-heading = Fe wnaeth { -brand-short-name } rwystro bys brintiwr ar y dudalen hon
 cfr-doorhanger-fingerprinters-description = Mae eich preifatrwydd yn bwysig. Mae { -brand-short-name } nawr yn rhwystro bysbrintwyr, sy'n casglu manylion unigryw y mae modd eu hadnabod am eich dyfais i'ch tracio.
 cfr-doorhanger-cryptominers-heading = Fe wnaeth { -brand-short-name } rwystro cryptogloddwyr ar y dudalen hon
 cfr-doorhanger-cryptominers-description = Mae eich preifatrwydd yn bwysig. Mae { -brand-short-name } nawr yn rhwystro cryptogloddwyr, sy'n defnyddio pŵer cyfrifiadurol eich system i gloddio arian digidol.
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+        [zero] Nid yw { -brand-short-name } wedi rhwystro <b>{ $blockedCount }</b> traciwr ers { $date }!
+        [one] Mae { -brand-short-name } wedi rhwystro <b>{ $blockedCount }</b> traciwr ers { $date }!
+        [two] Mae { -brand-short-name } wedi rhwystro <b>{ $blockedCount }</b> traciwr ers { $date }!
+        [few] Mae { -brand-short-name } wedi rhwystro <b>{ $blockedCount }</b> traciwr ers { $date }!
+        [many] Mae { -brand-short-name } wedi rhwystro dros <b>{ $blockedCount }</b> traciwr ers { $date }!
+       *[other] Mae { -brand-short-name } wedi rhwystro <b>{ $blockedCount }</b> traciwr ers { $date }!
+    }
+cfr-doorhanger-milestone-ok-button = Gweld y Cyfan
+    .accesskey = G

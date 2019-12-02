@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Daty w trajnem składowaku składowaś
 urlbar-addons-notification-anchor =
     .tooltiptext = Wobcerk powěźeńki dodankoweje instalacije wócyniś
+urlbar-tip-help-icon =
+    .title = Pomoc se wobstaraś
+urlbar-geolocation-blocked =
+    .tooltiptext = Sćo toś tomu websedłoju informacijie wó městnje zawoborał.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Sćo powěźeńki za toś to websedło zablokěrował.
+urlbar-camera-blocked =
+    .tooltiptext = Sćo swóju kameru za toś to websedło zablokěrował.
+urlbar-microphone-blocked =
+    .tooltiptext = Sćo swój mikrofon za toś to websedło zablokěrował.
+urlbar-screen-blocked =
+    .tooltiptext = Sćo toś tomu websedłoju źělenje swójeje wobrazowki zakazał.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Sćo trajny składowak za toś to websedło blokěrował.
+urlbar-popup-blocked =
+    .tooltiptext = Sćo wuskokujuce wokna za toś to websedło blokěrował.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Sćo zablokěrował awtomatiske wótgraśe medijow ze zukom za toś to websedło.
+urlbar-canvas-blocked =
+    .tooltiptext = Sćo blokěrował pśistup ku canvasowym datam za toś to websedło.
+urlbar-midi-blocked =
+    .tooltiptext = Sćo blokěrował pśistup k MIDI za toś to websedło.
+urlbar-install-blocked =
+    .tooltiptext = Sćo blokěrował instalěrowanje dodankow za toś to websedło.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Modus połneje wobrazowki spušćiś
     .accesskey = M
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Něnto pytaś z:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Pytańske nastajenja
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Pytańske nastajenja změniś
+search-one-offs-context-open-new-tab =
+    .label = W nowem rejtarku pytaś
+    .accesskey = r
+search-one-offs-context-set-as-default =
+    .label = Ako standardnu pytnicu nastajiś
+    .accesskey = d
+search-one-offs-context-set-as-default-private =
+    .label = Ako standardnu pytnicu za priwatne wokna nastajiś
+    .accesskey = A

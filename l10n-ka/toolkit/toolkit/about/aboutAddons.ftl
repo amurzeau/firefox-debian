@@ -190,6 +190,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = ჩართვა
     .tooltiptext = დამატებების განახლების უსაფრთხოების შემოწმების ჩართვა
+extensions-warning-safe-mode = ყველა დამატება გამორთულია უსაფრთხო რეჟიმის მიერ.
+extensions-warning-check-compatibility = დამატებების თავსებადობის შემოწმება გამორთულია. შესაძლოა არათავსებადი დამატებები გქონდეთ.
+extensions-warning-check-compatibility-button = ჩართვა
+    .title = დამატებების თავსებადობის შემოწმების ჩართვა
+extensions-warning-update-security = დამატების განახლების უსაფრთხოების შემოწმება გამორთულია. განახლებამ შესაძლოა ზიანი მოგაყენოთ.
+extensions-warning-update-security-button = ჩართვა
+    .title = დამატებების განახლების უსაფრთხოების შემოწმების ჩართვა
 
 ## Strings connected to add-on updates
 
@@ -199,12 +206,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = ბოლო განახლებების ნახვა
     .accesskey = ბ
+addon-updates-check-for-updates = განახლებების შემოწმება
+    .accesskey = შ
+addon-updates-view-updates = ბოლო განახლებების ნახვა
+    .accesskey = ბ
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = დამატებების თვითგანახლება
+    .accesskey = ვ
+addon-updates-update-addons-automatically = დამატებების თვითგანახლება
     .accesskey = ვ
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -218,6 +231,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = დ
 extensions-updates-reset-updates-to-manual =
     .label = ყველა დამატებაზე, ხელით განახლების მითითება
+    .accesskey = ხ
+addon-updates-reset-updates-to-automatic = ყველა დამატების, ავტომატურ განახლებაზე დაბრუნება
+    .accesskey = დ
+addon-updates-reset-updates-to-manual = ყველა დამატებაზე, ხელით განახლების მითითება
     .accesskey = ხ
 
 ## Status messages displayed when updating add-ons
@@ -237,11 +254,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = განახლებების დაყენება
     .tooltiptext = ხელმისაწვდომი განახლებების დაყენება ამ სიიდან
+addon-updates-updating = დამატებების განახლება
+addon-updates-installed = დამატებები განახლებულია.
+addon-updates-none-found = განახლებები ვერ მოიძებნა
+addon-updates-manual-updates-found = ხელმისაწვდომი განახლებების ნახვა
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = დამატების დაყენება ფაილის მეშვეობით…
+    .accesskey = ფ
+addon-install-from-file-dialog-title = დამატებების შერჩევა დასაყენებლად
+addon-install-from-file-filter-name = დამატებები
+addon-open-about-debugging = დამატებების გამართვა
+    .accesskey = გ
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = გაფართოებების ღილაკების მართვა
+    .accesskey = ღ
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = გაფართოებების ღილაკების მართვა
     .accesskey = ღ
 shortcuts-no-addons = არცერთი გაფართოება არ გაქვთ ჩართული.
 shortcuts-no-commands = სწრაფი ღილაკები არ აქვს შემდეგ გაფართოებებს:
@@ -297,7 +330,7 @@ created-by-author = შემქმნელი <a data-l10n-name="author">{ $au
 # Shows the number of daily users of the add-on.
 # Variables:
 #   $dailyUsers (number) - The number of daily users.
-user-count = მომხმარებლები: { $dailyUsers }
+user-count = მომხმარებელი: { $dailyUsers }
 install-extension-button = დაემატოს { -brand-product-name }
 install-theme-button = თემის ჩადგმა
 # The label of the button that appears after installing an add-on. Upon click,
@@ -313,6 +346,8 @@ addon-options-button =
 
 report-addon-button = საჩივარი
 remove-addon-button = მოცილება
+# The link will always be shown after the other text.
+remove-addon-disabled-button = ვერ მოცილდება <a data-l10n-name="link">რატომ?</a>
 disable-addon-button = ამორთვა
 enable-addon-button = ჩართვა
 expand-addon-button = დამატებითი პარამეტრები
@@ -406,3 +441,18 @@ recommended-themes-heading = შემოთავაზებული თე�
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = შემოქმედებით უნარებს ფლობთ? <a data-l10n-name="link">ააწყვეთ საკუთარი გაფორმება Firefox Color-ით.</a>
+
+## Page headings
+
+extension-heading = გაფართოებების მართვა
+theme-heading = თემების მართვა
+plugin-heading = მოდულების მართვა
+dictionary-heading = ლექსიკონების მართვა
+locale-heading = ენების მართვა
+updates-heading = განახლებების მართვა
+discover-heading = მოირგეთ თქვენი { -brand-short-name }
+shortcuts-heading = გაფართოებების ღილაკების მართვა
+theme-heading-search-label = სხვა თემების მოძიება
+extension-heading-search-label = სხვა გაფართოებების მოძიება
+addons-heading-search-input =
+    .placeholder = addons.mozilla.org საიტზე მოძიება

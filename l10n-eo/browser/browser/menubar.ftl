@@ -147,13 +147,13 @@ menu-view-enter-full-screen =
     .label = Eniri plenekranan reĝimon
     .accesskey = n
 menu-view-exit-full-screen =
-    .label = Eliri el ekranplena reĝimo
+    .label = Eliri el plenekrana reĝimo
     .accesskey = l
 menu-view-full-screen =
     .label = Plenekrane
     .accesskey = P
 
-##
+
 
 menu-view-show-all-tabs =
     .label = Montri ĉiujn langetojn
@@ -212,11 +212,20 @@ menu-tools-addons =
 menu-tools-sync-sign-in =
     .label = Komenci seancon en { -sync-brand-short-name }…
     .accesskey = K
+menu-tools-fxa-sign-in =
+    .label = Komenci seancon en { -brand-product-name }…
+    .accesskey = K
+menu-tools-turn-on-sync =
+    .label = Ŝalto de { -sync-brand-short-name }…
+    .accesskey = a
 menu-tools-sync-now =
     .label = Speguli nun
     .accesskey = S
 menu-tools-sync-re-auth =
     .label = Rekonekti al { -sync-brand-short-name }…
+    .accesskey = R
+menu-tools-fxa-re-auth =
+    .label = Rekonekti al { -brand-product-name }…
     .accesskey = R
 menu-tools-web-developer =
     .label = Teksaĵa programisto
@@ -276,8 +285,10 @@ menu-help-safe-mode-with-addons =
     .label = Restartigi kun aldonaĵoj aktivaj
     .accesskey = R
 # Label of the Help menu item. Either this or
-# safeb.palm.notdeceptive.label from
-# phishing-afterload-warning-message.dtd is shown.
+# menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =
     .label = Denunci trompan retejon…
     .accesskey = D
+menu-help-not-deceptive =
+    .label = Tiu ĉi ne estas trompa retejo…
+    .accesskey = t

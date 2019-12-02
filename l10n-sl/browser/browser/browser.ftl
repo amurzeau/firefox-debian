@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Shrani podatke v trajni shrambi
 urlbar-addons-notification-anchor =
     .tooltiptext = Odpri ploščo s sporočili o namestitvah dodatkov
+urlbar-tip-help-icon =
+    .title = Pomoč
+urlbar-geolocation-blocked =
+    .tooltiptext = Za to stran ste zavrnili uporabo podatkov o lokaciji.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Za to stran ste zavrnili prikaz obvestil.
+urlbar-camera-blocked =
+    .tooltiptext = Za to stran ste zavrnili uporabo kamere.
+urlbar-microphone-blocked =
+    .tooltiptext = Za to stran ste zavrnili uporabo mikrofona.
+urlbar-screen-blocked =
+    .tooltiptext = Za to stran ste zavrnili deljenje zaslona.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Za to spletno stran ste zavrnili trajno shrambo.
+urlbar-popup-blocked =
+    .tooltiptext = Za to stran ste zavrnili pojavna okna.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Za to stran ste zavrnili samodejno predvajanje večpredstavnosti z zvokom.
+urlbar-canvas-blocked =
+    .tooltiptext = Za to stran ste zavrnili izločanje podatkov platna.
+urlbar-midi-blocked =
+    .tooltiptext = Za to stran ste zavrnili uporabo MIDI.
+urlbar-install-blocked =
+    .tooltiptext = Za to stran ste zavrnili namestitev dodatkov.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Izhod iz celozaslonskega načina
     .accesskey = C
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Tokrat išči z iskalnikom:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Spremeni nastavitve iskanja
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Spremeni nastavitve iskanja
+search-one-offs-context-open-new-tab =
+    .label = Išči v novem zavihku
+    .accesskey = Z
+search-one-offs-context-set-as-default =
+    .label = Nastavi kot privzet iskalnik
+    .accesskey = P
+search-one-offs-context-set-as-default-private =
+    .label = Nastavi kot privzeti iskalnik za zasebna okna
+    .accesskey = z

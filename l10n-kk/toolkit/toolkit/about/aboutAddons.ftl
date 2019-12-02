@@ -180,6 +180,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Іске қосу
     .tooltiptext = Кеңейтулер жаңартуларын қауісіздікке тексеруді іске қосу
+extensions-warning-safe-mode = Барлық кеңейтулер қауіпсіз режимімен сөндірілген.
+extensions-warning-check-compatibility = Кеңейтулер үйлесімдігін тексеруді сөндіру. Сізде үйлесімсіз кеңейтулер бар болуы мүмкін.
+extensions-warning-check-compatibility-button = Іске қосу
+    .title = Кеңейтулер үйлесімдігін тексеруді іске қосу
+extensions-warning-update-security = Кеңейтулер жаңартуларын қауісіздікке тексеру сөндірулі. Жаңартулармен қор болуыңыз мүмкін.
+extensions-warning-update-security-button = Іске қосу
+    .title = Кеңейтулер жаңартуларын қауісіздікке тексеруді іске қосу
 
 ## Strings connected to add-on updates
 
@@ -189,12 +196,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Соңғы жаңартуларды қарау
     .accesskey = о
+addon-updates-check-for-updates = Жаңартуларды тексеру
+    .accesskey = к
+addon-updates-view-updates = Соңғы жаңартуларды қарау
+    .accesskey = о
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Кеңейтулерді автожаңарту
+    .accesskey = е
+addon-updates-update-addons-automatically = Кеңейтулерді автожаңарту
     .accesskey = е
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -208,6 +221,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = а
 extensions-updates-reset-updates-to-manual =
     .label = Барлық кеңейтулерді тек қолмен жаңартылатындай етіп қылу
+    .accesskey = о
+addon-updates-reset-updates-to-automatic = Барлық кеңейтулерді автожаңартылатындай етіп қылу
+    .accesskey = а
+addon-updates-reset-updates-to-manual = Барлық кеңейтулерді тек қолмен жаңартылатындай етіп қылу
     .accesskey = о
 
 ## Status messages displayed when updating add-ons
@@ -227,11 +244,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Жаңартуларды орнату
     .tooltiptext = Бұл тізімдегі қолжетерлік жаңартуларды орнату
+addon-updates-updating = Қосымшалар жаңартылуда
+addon-updates-installed = Қосымшаларыңыз жаңартылды.
+addon-updates-none-found = Жаңартулар табылмады
+addon-updates-manual-updates-found = Қолжетерлік жаңартуларды көрсету
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Файлдан қосымшаны орнату…
+    .accesskey = Ф
+addon-install-from-file-dialog-title = Орнату үшін кеңейтуді таңдаңыз
+addon-install-from-file-filter-name = Қосымшалар
+addon-open-about-debugging = Қосымшаларды жөндеу
+    .accesskey = д
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Кеңейтудің пернетақта жарлықтарын басқару
+    .accesskey = ж
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Кеңейтудің пернетақта жарлықтарын басқару
     .accesskey = ж
 shortcuts-no-addons = Сізде ешқандай кеңейтулер орнатылмаған.
 shortcuts-no-commands = Келесі кеңейтулерде жарлықтар жоқ:
@@ -375,3 +408,17 @@ recommended-themes-heading = Ұсынылатын темалар
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Шабытты сезіп тұрсыз ба? <a data-l10n-name="link">Firefox Color көмегімен өз темаңызды жасаңыз.</a>
+
+## Page headings
+
+extension-heading = Кеңейтулерді басқару
+theme-heading = Темаларды басқару
+plugin-heading = Плагиндерді басқару
+dictionary-heading = Сөздіктерді басқару
+locale-heading = Тілдерді басқару
+discover-heading = Өз { -brand-short-name } жеке қылыңыз
+shortcuts-heading = Кеңейтудің пернетақта жарлықтарын басқару
+theme-heading-search-label = Көбірек темаларды табу
+extension-heading-search-label = Көбірек кеңейтулерді табу
+addons-heading-search-input =
+    .placeholder = addons.mozilla.org-ға іздеу

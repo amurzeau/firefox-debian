@@ -47,6 +47,28 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Qalıcı Yaddaşda məlumat saxlama
 urlbar-addons-notification-anchor =
     .tooltiptext = Əlavə quraşdırma mesaj panelini aç
+urlbar-tip-help-icon =
+    .title = Köməl alın
+urlbar-geolocation-blocked =
+    .tooltiptext = Bu sayt üçün məkan məlumatlarını əngəllədiniz.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Bu sayt üçün bildirişləri əngəllədiniz.
+urlbar-camera-blocked =
+    .tooltiptext = Bu sayt üçün kameranızı əngəllədiniz.
+urlbar-microphone-blocked =
+    .tooltiptext = Bu sayt üçün mikrofonunuzu əngəllədiniz.
+urlbar-screen-blocked =
+    .tooltiptext = Bu saytı ekranınızı paylaşmaqdan əngəllədiniz.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Bu sayt üçün qalıcı yaddaşı əngəllədiniz.
+urlbar-popup-blocked =
+    .tooltiptext = Bu sayt üçün peyda olan pəncərələri əngəllədiniz.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Bu sayt üçün səsli medianın avto oxutmasını əngəlləmisiniz.
+urlbar-canvas-blocked =
+    .tooltiptext = Bu sayt üçün lövhə (canvas) məlumatı çıxartmanı əngəllədiniz.
+urlbar-midi-blocked =
+    .tooltiptext = Bu saytın MIDI işlətməsini əngəlləmisiniz.
 
 ## Page Action Context Menu
 
@@ -65,3 +87,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Tam ekran rejimdən çıx
     .accesskey = e
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Bu dəfə bununla axtarın:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Axtarış Tənzimləmələrini Dəyiş
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Axtarış tənzimləmələrinizi dəyişdir
+search-one-offs-context-open-new-tab =
+    .label = Yeni vərəqdə axtar
+    .accesskey = v
+search-one-offs-context-set-as-default =
+    .label = Əsas axtarış mühərriki et
+    .accesskey = m
+search-one-offs-context-set-as-default-private =
+    .label = Məxfi pəncərələr üçün əsas axtarış mühərriki olarak qur
+    .accesskey = M
