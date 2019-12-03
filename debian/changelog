@@ -1,3 +1,19 @@
+firefox-esr (68.3.0esr-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2019-37, also known as:
+    CVE-2019-17008, CVE-2019-11745, CVE-2019-17010, CVE-2019-17005,
+    CVE-2019-17011, CVE-2019-17012.
+
+  * debian/control*: Bump nss build dependencies.
+  * debian/rules, debian/control.in:
+    - Build with nodejs-mozilla on jessie and stretch.
+    - Build with nasm-mozilla on jessie and stretch.
+    - Don't build with system libvpx on stretch.
+    (Thanks Emilio Pozuelo Monfort)
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 04 Dec 2019 08:56:07 +0900
+
 firefox-esr (68.2.0esr-1) unstable; urgency=medium
 
   * New upstream release.
