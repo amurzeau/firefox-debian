@@ -26,11 +26,11 @@ Build-Depends: autotools-dev,
                python3,
                dpkg-dev,
 %if USE_SYSTEM_NSPR
-%define NSPR_VERSION 4.21
+%define NSPR_VERSION 4.23
                libnspr4-dev (>= 2:@NSPR_VERSION@~),
 %endif
 %if USE_SYSTEM_NSS
-%define NSS_VERSION 3.46.1
+%define NSS_VERSION 3.47.1
                libnss3-dev (>= 2:@NSS_VERSION@~),
 %endif
 %if USE_SYSTEM_SQLITE
@@ -55,8 +55,8 @@ Build-Depends: autotools-dev,
 %else
                nasm (>= 2.13) [amd64 i386],
 %endif
-               rustc (>= 1.36),
-               cargo (>= 0.37),
+               rustc (>= 1.37),
+               cargo (>= 0.38),
 %if DIST == jessie || DIST == stretch
                llvm-4.0-dev,
                libclang-4.0-dev,
