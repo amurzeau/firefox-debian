@@ -100,7 +100,13 @@ for code in sys.argv[1:]:
   else:
     str = m.group(1).strip()
   if country:
-    country = iso3166[country.lower()]
+    country_ = iso3166.get(country.lower())
+    if country_:
+        country = country_
+    else:
+        country = {
+            'valencia': 'Valencia',
+        }[country.lower()]
     if ',' in country:
       country = country[:country.index(',')]
     str += ' (' + country + ')'
