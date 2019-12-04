@@ -1,3 +1,21 @@
+firefox (71.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2019-36, also known as:
+    CVE-2019-11756, CVE-2019-17008, CVE-2019-11745, CVE-2019-17014,
+    CVE-2019-17010, CVE-2019-17005, CVE-2019-17011, CVE-2019-17012,
+    CVE-2019-17013.
+
+  * debian/l10n/gen: Add support for ca-valencia.
+  * debian/control*: Bump nspr, nss, rustc and cargo build dependencies.
+  * debian/rules, debian/control.in:
+    - Build with nodejs-mozilla on jessie and stretch.
+    - Build with nasm-mozilla on jessie and stretch.
+    - Don't build with system libvpx on stretch.
+    (Thanks Emilio Pozuelo Monfort)
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 04 Dec 2019 10:09:38 +0900
+
 firefox (70.0.1-1) unstable; urgency=medium
 
   * New upstream release.
@@ -7,7 +25,7 @@ firefox (70.0.1-1) unstable; urgency=medium
 firefox (70.0-1) unstable; urgency=medium
 
   * New upstream release.
-  * Fix for mfsa2019-34, also known as:
+  * Fixes for mfsa2019-34, also known as:
     CVE-2018-6156, CVE-2019-15903, CVE-2019-11757, CVE-2019-11759,
     CVE-2019-11760, CVE-2019-11761, CVE-2019-11762, CVE-2019-11763,
     CVE-2019-11765, CVE-2019-17000, CVE-2019-17001, CVE-2019-17002,
