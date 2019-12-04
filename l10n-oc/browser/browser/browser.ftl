@@ -45,6 +45,26 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Gardar las donadas dins un emmagazinatge permanent
 urlbar-addons-notification-anchor =
     .tooltiptext = Mostrar lo messatge d'installation del modul
+urlbar-geolocation-blocked =
+    .tooltiptext = Avètz blocat la geolocalizacion per aqueste site.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Avètz blocat las notificacions per aquel site.
+urlbar-camera-blocked =
+    .tooltiptext = Avètz blocat la camèra per aqueste site.
+urlbar-microphone-blocked =
+    .tooltiptext = Avètz blocat lo microfòn per aqueste site.
+urlbar-screen-blocked =
+    .tooltiptext = Avètz empachat aquel site de partejar vòstre ecran.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Avètz empachat aquel site de gardar de biais persistent de donadas.
+urlbar-popup-blocked =
+    .tooltiptext = Avètz blocat la fenèstras surgentas per aqueste site.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Avètz blocat la lectura automatica dels mèdias amb son per aqueste site.
+urlbar-canvas-blocked =
+    .tooltiptext = Avètz empachat aqueste site de traire d’informacions de canvas.
+urlbar-midi-blocked =
+    .tooltiptext = Avètz blocat l’accès MIDI per aqueste site web.
 
 ## Page Action Context Menu
 
@@ -63,3 +83,18 @@ full-screen-autohide =
 full-screen-exit =
     .label = Quitar lo mòde ecran complet
     .accesskey = Q
+
+## Search Engine selection buttons (one-offs)
+
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Paramètres de recèrca
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Cambiar los paramètres de recèrca
+search-one-offs-context-open-new-tab =
+    .label = Recercar dins un onglet novèl
+    .accesskey = T
+search-one-offs-context-set-as-default =
+    .label = Causir coma motor de cerca per defaut
+    .accesskey = D

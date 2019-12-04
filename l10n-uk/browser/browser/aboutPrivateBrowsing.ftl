@@ -24,5 +24,17 @@ about-private-browsing =
     .title = Пошук в Інтернеті
 about-private-browsing-not-private = Зараз ви не у приватному вікні.
 content-blocking-title = Блокування вмісту
-content-blocking-description = Деякі веб-сайти використовують елементи стеження, які можуть відстежувати вашу діяльність в Інтернеті. У приватних вікнах функція блокування вмісту { -brand-short-name } автоматично блокує багато таких елементів.
+content-blocking-description = Деякі веб-сайти використовують спеціальні елементи, які можуть відстежувати вашу діяльність в Інтернеті. У приватних вікнах функція блокування вмісту { -brand-short-name } автоматично блокує багато таких елементів.
 about-private-browsing-info-description = { -brand-short-name } очищає історію перегляду й пошуку при виході з програми або закритті всіх приватних вкладок та вікон. Це не робить вас анонімними для веб-сайтів чи вашого провайдера, але дозволяє приховати вашу діяльність в Інтернеті від будь-кого іншого, хто користується цим комп'ютером.
+# This string is the title for the banner for search engine selection
+# in a private window.
+# Variables:
+#   $engineName (String) - The engine name that will currently be used for the private window.
+about-private-browsing-search-banner-title = { $engineName } є вашим типовим пошуковим засобом у приватних вікнах
+about-private-browsing-search-banner-description =
+    { PLATFORM() ->
+        [windows] Щоб обрати інший пошуковий засіб, відкрийте <a data-l10n-name="link-options">Налаштування</a>
+       *[other] Щоб обрати інший пошуковий засіб, відкрийте <a data-l10n-name="link-options">Налаштування</a>
+    }
+about-private-browsing-search-banner-close-button =
+    .aria-label = Закрити

@@ -70,16 +70,19 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = Vous recherchez vos identifiants enregistrés ? Configurez { -sync-brand-short-name }.
+about-logins-login-intro-heading-logged-in = Aucun identifiant synchronisé trouvé.
 login-intro-description = Si vous avez enregistré vos identifiants dans { -brand-product-name } sur un autre appareil, voici comment y accéder ici :
 login-intro-instruction-fxa = Connectez-vous ou créez un { -fxaccount-brand-name } sur l’appareil où vos identifiants sont enregistrés.
 login-intro-instruction-fxa-settings = Assurez-vous d’avoir coché la case Identifiants dans les paramètres de { -sync-brand-short-name }.
 about-logins-intro-instruction-help = Pour obtenir de l’aide, visitez l’<a data-l10n-name="help-link">assistance de { -lockwise-brand-short-name }</a>.
+about-logins-intro-import = Si vos identifiants sont enregistrés dans un autre navigateur, vous pouvez <a data-l10n-name="import-link">les importer dans { -lockwise-brand-short-name }</a>
 
 ## Login
 
 login-item-new-login-title = Créer un nouvel identifiant
 login-item-edit-button = Modifier
 login-item-delete-button = Supprimer
+about-logins-login-item-remove-button = Supprimer
 login-item-origin-label = Adresse web
 login-item-origin =
     .placeholder = https://www.example.com
@@ -109,11 +112,8 @@ master-password-reload-button =
     .label = Connexion
     .accesskey = C
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = Annuler
-confirmation-dialog-dismiss-button =
-    .title = Annuler
 enable-password-sync-notification-message =
     { PLATFORM() ->
         [windows] Vous souhaitez accéder à vos identifiants partout où vous utilisez { -brand-product-name } ? Rendez-vous dans les options de { -sync-brand-short-name } et cochez la case Identifiants.
@@ -127,8 +127,19 @@ enable-password-sync-preferences-button =
         }
     .accesskey = C
 confirm-delete-dialog-title = Supprimer cet identifiant ?
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = Ne plus me demander
+    .accesskey = N
+
+## Dialogs
+
+confirmation-dialog-cancel-button = Annuler
+confirmation-dialog-dismiss-button =
+    .title = Annuler
+about-logins-confirm-remove-dialog-title = Supprimer cet identifiant ?
 confirm-delete-dialog-message = Cette action est irréversible.
 confirm-delete-dialog-confirm-button = Supprimer
+about-logins-confirm-remove-dialog-confirm-button = Supprimer
 confirm-discard-changes-dialog-title = Ignorer les modifications non enregistrées ?
 confirm-discard-changes-dialog-message = Toutes les modifications non enregistrées seront perdues.
 confirm-discard-changes-dialog-confirm-button = Ignorer
@@ -147,5 +158,10 @@ breach-alert-dismiss =
 # Variables:
 #   $loginTitle (String) - The title of the website associated with the login.
 about-logins-error-message-duplicate-login = Une entrée pour { $loginTitle } avec ce nom d’utilisateur existe déjà.
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = Un nom d’utilisateur ou d’utilisatrice pour { $loginTitle } existe déjà. <a data-l10n-name="duplicate-link">Accéder à l’entrée existante ?</a>
 # This is a generic error message.
 about-logins-error-message-default = Une erreur s’est produite en essayant d’enregistrer ce mot de passe.

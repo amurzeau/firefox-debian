@@ -59,6 +59,7 @@ login-list-intro-description = আপনি যখন { -brand-product-name } �
 about-logins-login-list-empty-search-title = কোনও লগইন পাওয়া যায়নি
 about-logins-login-list-empty-search-description = আপনার অনুসন্ধানের সাথে কোনও কিছু মিলছে না।
 login-list-item-title-new-login = নতুন লগইন
+login-list-item-subtitle-new-login = আপনার লগইন পরিচয়পত্র লিখুন
 login-list-item-subtitle-missing-username = (কোনও ব্যবহারকারীর নাম নেই)
 about-logins-list-item-warning-icon =
     .alt = সতর্কতা আইকন
@@ -69,8 +70,12 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = আপনার সংরক্ষিত লগইন সন্ধান করছেন? { -sync-brand-short-name } সেট আপ করুন।
+about-logins-login-intro-heading-logged-in = সিংক হওয়া কোনো লগইন পাওয়া যায়নি।
+login-intro-description = আপনি যদি ভিন্ন কোন ডিভাইসের { -brand-product-name } এ আপনার লগইন সমূহ সংরক্ষণ করে থাকেন, তাহলে সেগুলো এখানে কিভাবে পাবেন, সেটি রয়েছে এখানে:
+login-intro-instruction-fxa = আপনার লগইন সমূহ সংরক্ষিত রয়েছে এমন ডিভাইসে আপনার { -fxaccount-brand-name } সাইন ইন করুন বা তৈরী করুন।
 login-intro-instruction-fxa-settings = নিশ্চিত করুন যে আপনি { -sync-brand-short-name } সেটিং এ লগইন চেকবক্সটি নির্বাচন করেছেন
 about-logins-intro-instruction-help = আরও সহায়তার জন্য <a data-l10n-name="help-link">{ -lockwise-brand-short-name } দেখুন
+about-logins-intro-import = আপনার লগিন সমূহ যদি আরেকটি ব্রাউজারে সংরক্ষিত থাকে, আপনি  <a data-l10n-name="import-link"> সেইসব লগিন { -lockwise-brand-short-name } এ নিয়ে আসতে পারবেন </a>
 
 ## Login
 
@@ -106,11 +111,13 @@ master-password-reload-button =
     .label = লগ ইন
     .accesskey = L
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = বাতিল
-confirmation-dialog-dismiss-button =
-    .title = বাতিল
+enable-password-sync-notification-message =
+    { PLATFORM() ->
+        [windows] যেখানে আপনি { -brand-product-name } ব্যবহার করেন সেসব জায়গাগুলোতে আপনার লগইন ব্যবহার করতে চান ? আপনার { -sync-brand-short-name } অপশনে যান এবং লগইন চেকবক্স নির্বাচন করুন ।
+       *[other] যেখানে আপনি { -brand-product-name } ব্যবহার করেন সেসব জায়গাগুলোতে আপনার লগইন ব্যবহার করতে চান ? আপনার { -sync-brand-short-name } অপশনে যান এবং লগইন চেকবক্স নির্বাচন করুন ।
+    }
 enable-password-sync-preferences-button =
     .label =
         { PLATFORM() ->
@@ -118,6 +125,15 @@ enable-password-sync-preferences-button =
            *[other] পছন্দসমূহের জন্য { -sync-brand-short-name } দেখুন
         }
     .accesskey = v
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = আমাকে আবার জিজ্ঞেস করবেন না
+    .accesskey = D
+
+## Dialogs
+
+confirmation-dialog-cancel-button = বাতিল
+confirmation-dialog-dismiss-button =
+    .title = বাতিল
 confirm-delete-dialog-title = লগইন মুছে দেওয়া হবে?
 confirm-delete-dialog-message = এই পরিবর্তনটি অপরিবর্তনীয়!
 confirm-delete-dialog-confirm-button = মুছে ফেলুন
@@ -127,10 +143,22 @@ confirm-discard-changes-dialog-confirm-button = বাতিল
 
 ## Breach Alert notification
 
+breach-alert-text = আপনার সবশেষ পাসওয়ার্ড হালনাগাদ করার পরে এই ওয়েবসাইট থেকে পাসওয়ার্ড ফাঁস বা চুরি হয়েছে। আপনার অ্যাকাউন্ট সুরক্ষিত করতে পাসওয়ার্ড পরিবর্তন করুন।
+breach-alert-link = এই লঙ্ঘন সম্পর্কে আরও জানুন।
 breach-alert-dismiss =
     .title = সতর্ক করা বন্ধ করুন
 
 ## Error Messages
 
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login = { $loginTitle } নামের ইউজার পূর্বের থেকেই আছে।
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = { $loginTitle } নামের ইউজার পূর্বের থেকেই আছে। <a data-l10n-name="duplicate-link">পূর্বে থাকা ইউজারটিতে যেতে চান?</a>
 # This is a generic error message.
 about-logins-error-message-default = এই পাসওয়ার্ডটি সংরক্ষণ করার চেষ্টা করার সময় একটি ত্রুটি ঘটেছে।

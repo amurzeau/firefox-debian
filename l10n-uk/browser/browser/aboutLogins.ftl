@@ -7,7 +7,7 @@ about-logins-page-title = Паролі
 # "Google Play" and "App Store" are both branding and should not be translated
 
 login-app-promo-title = Майте доступ до своїх паролів всюди
-login-app-promo-subtitle = Отримайте додаток { -lockwise-brand-name }
+login-app-promo-subtitle = Отримайте безплатний додаток { -lockwise-brand-name }
 login-app-promo-android =
     .alt = Отримати на Google Play
 login-app-promo-apple =
@@ -71,16 +71,19 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = Шукаєте свої збережені паролі? Налаштуйте { -sync-brand-short-name(case: "acc") }.
+about-logins-login-intro-heading-logged-in = Не знайдено синхронізованих паролів.
 login-intro-description = Якщо ви зберегли паролі в { -brand-product-name } на іншому пристрої, ось як отримати їх тут:
 login-intro-instruction-fxa = Зареєструйтеся чи увійдіть до свого { -fxaccount-brand-name(case: "gen") } на пристрої, де збережено ваші паролі
 login-intro-instruction-fxa-settings = Переконайтеся, що встановлено прапорець на Паролі в Налаштуваннях { -sync-brand-short-name(case: "dat") }
 about-logins-intro-instruction-help = Відвідайте <a data-l10n-name="help-link">Підтримку { -lockwise-brand-short-name }</a> для отримання допомоги
+about-logins-intro-import = Якщо ваші паролі збережено в іншому браузері, ви можете <a data-l10n-name="import-link">імпортувати їх в { -lockwise-brand-short-name }</a>
 
 ## Login
 
 login-item-new-login-title = Створити новий запис
 login-item-edit-button = Змінити
 login-item-delete-button = Видалити
+about-logins-login-item-remove-button = Вилучити
 login-item-origin-label = Адреса веб-сайту
 login-item-origin =
     .placeholder = https://www.example.com
@@ -110,11 +113,8 @@ master-password-reload-button =
     .label = Увійти
     .accesskey = в
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = Скасувати
-confirmation-dialog-dismiss-button =
-    .title = Скасувати
 enable-password-sync-notification-message =
     { PLATFORM() ->
         [windows] Хочете, щоб усі ваші паролі були всюди, де ви користуєтесь { -brand-product-name }? Відкрийте налаштування { -sync-brand-short-name(case: "gen") } й встановіть прапорець на Паролі.
@@ -128,8 +128,19 @@ enable-password-sync-preferences-button =
         }
     .accesskey = В
 confirm-delete-dialog-title = Видалити цей запис?
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = Не питати знову
+    .accesskey = Н
+
+## Dialogs
+
+confirmation-dialog-cancel-button = Скасувати
+confirmation-dialog-dismiss-button =
+    .title = Скасувати
+about-logins-confirm-remove-dialog-title = Вилучити цей пароль?
 confirm-delete-dialog-message = Це незворотна дія.
 confirm-delete-dialog-confirm-button = Видалити
+about-logins-confirm-remove-dialog-confirm-button = Вилучити
 confirm-discard-changes-dialog-title = Відхилити незбережені зміни?
 confirm-discard-changes-dialog-message = Всі незбережені зміни будуть втрачені.
 confirm-discard-changes-dialog-confirm-button = Відхилити

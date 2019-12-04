@@ -14,6 +14,11 @@ pref-page =
             [windows] Jeporavorã
            *[other] Jerohoryvéva
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Jeporavorã
+       *[other] Jerohoryvéva
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -282,6 +287,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } jepuru ({ -brand-short-name }-pe)
@@ -457,7 +466,6 @@ choose-bookmark =
 
 home-prefs-content-header = Kuatiarogue retepy Firefox ñepyrũháme
 home-prefs-content-description = Eiporavo mba’e retepýpa eipota Firefox mba’erechaha ñepyrũháme.
-home-prefs-content-discovery-description = Content Discovery Firefox kuatiarogue ñepyrũme ohechaukakuaa tetepy oikóva ha iporãva ñandutípe g̃uarã.
 home-prefs-search-header =
     .label = Ñandutípe jeheka
 home-prefs-topsites-header =
@@ -505,6 +513,11 @@ search-bar-shown =
     .label = Toñembojoaju jeheka renda tembipuru rendápe
 search-engine-default-header = Hekaha ypykuéva
 search-engine-default-desc = Eiporavo hekaha mongu'eha ijypykuéva eipuru hag̃ua kundaharape ha jehekaha rendápe.
+search-engine-default-desc-2 = Kóva nde jeheka mongu’eha ypyguáva kundaharape renda ha jehekeha rendápe.
+search-engine-default-private-desc-2 = Emoĩ jeheka mongu’eha ypyguáramo ovetã ñemíme g̃uarã
+search-separate-default-engine =
+    .label = Eipuru ko jehekaha mongu'eha ovetã ñemíme.
+    .accesskey = E
 search-suggestions-header = Ñe'ẽporã jehekarã
 search-suggestions-desc = Eiporavo mba’éichapa osẽta ñe'ẽporã jehekaha mongu’eha.
 search-suggestions-option =
@@ -520,6 +533,9 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Tojechauka kundaharape rendápe ñe'ẽreka joguaha tembiasakue mboyve
+search-show-suggestions-private-windows =
+    .label = Ehechauka jehekaha Windows ñemiguávape
+suggestions-addressbar-settings = Emoambue jerohoryvéva kundaha rembiasakuépe g̃uarã, techaukaha ha tendayke jepururã.
 search-suggestions-cant-show = Jeheka je'epyréva ndojekuaamo'ãi kundaharape renda apopyrépe, oñembohekóma rupi { -brand-short-name } aníke nemandu'a tembiasakuére.
 search-one-click-header = Jehekaha mongu'eha jekutu peteĩva
 search-one-click-desc = Eiporavo hekaha mongu'eha mbojopyrukuaáva ojekuaáva kundaharape ha jehekaha renda guýpe eñepyrũvo emoinge peteĩ ñe'ẽ ñemigua.
@@ -568,6 +584,9 @@ sync-signedout-account-create = Nanemba'etéi gueteri piko? Ejapomi
 sync-signedout-account-signin =
     .label = Eike…
     .accesskey = I
+sync-signedout-account-signin2 =
+    .label = Eñepyrũ tembiapo { -sync-brand-short-name }-pe…
+    .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -711,7 +730,11 @@ privacy-header = Kundahára Ñemigua
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Tembiapo ñepyrũ ha ñe’ẽñemi
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Eporandu eñongatu hag̃ua tembiapo ñepyrũ ha ñe’ẽñemi ñandutípe
     .accesskey = E
@@ -725,6 +748,7 @@ forms-breach-alerts =
     .label = Ehechauka kyhyjerã ñe’ẽñemi rehegua tenda imarãvape
     .accesskey = b
 forms-breach-alerts-learn-more-link = Kuaave
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Tembiapo ñepyrũ ha ñe’ẽñemi myanyhẽjehegui
     .accesskey = i

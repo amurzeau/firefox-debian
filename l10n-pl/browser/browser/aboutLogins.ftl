@@ -71,16 +71,19 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = Szukasz swoich zachowanych haseł? Skonfiguruj { -sync-brand-short-name(case: "acc", capitalization: "lower") }.
+about-logins-login-intro-heading-logged-in = Brak synchronizowanych danych logowania.
 login-intro-description = Aby przenieść tutaj dane logowania zachowane w przeglądarce { -brand-product-name } na innym urządzeniu:
 login-intro-instruction-fxa = Zarejestruj się lub zaloguj na { -fxaccount-brand-name(case: "loc", capitalization: "lower") } na urządzeniu, w którym zachowano dane logowania
 login-intro-instruction-fxa-settings = Upewnij się, że opcja „Dane logowania” jest zaznaczona w ustawieniach { -sync-brand-short-name(case: "gen", capitalization: "lower") }
 about-logins-intro-instruction-help = <a data-l10n-name="help-link">Pomoc usługi { -lockwise-brand-short-name }</a> zawiera więcej informacji
+about-logins-intro-import = Jeśli dane logowania są zachowane w innej przeglądarce, możesz <a data-l10n-name="import-link">zaimportować je do usługi { -lockwise-brand-short-name }</a>
 
 ## Login
 
 login-item-new-login-title = Nowe dane logowania
 login-item-edit-button = Edytuj
 login-item-delete-button = Usuń
+about-logins-login-item-remove-button = Usuń
 login-item-origin-label = Adres witryny
 login-item-origin =
     .placeholder = https://www.example.com
@@ -110,11 +113,8 @@ master-password-reload-button =
     .label = Zaloguj się
     .accesskey = Z
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = Anuluj
-confirmation-dialog-dismiss-button =
-    .title = Anuluj
 enable-password-sync-notification-message =
     { PLATFORM() ->
         [windows] Chcesz mieć swoje hasła wszędzie, gdzie korzystasz z przeglądarki { -brand-product-name }? Przejdź do opcji { -sync-brand-short-name(case: "gen", capitalization: "lower") } i zaznacz opcję „Dane logowania”.
@@ -128,8 +128,19 @@ enable-password-sync-preferences-button =
         }
     .accesskey = O
 confirm-delete-dialog-title = Usunąć te dane logowania?
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = Nie pytaj ponownie
+    .accesskey = N
+
+## Dialogs
+
+confirmation-dialog-cancel-button = Anuluj
+confirmation-dialog-dismiss-button =
+    .title = Anuluj
+about-logins-confirm-remove-dialog-title = Usunąć te dane logowania?
 confirm-delete-dialog-message = Tej czynności nie można cofnąć.
 confirm-delete-dialog-confirm-button = Usuń
+about-logins-confirm-remove-dialog-confirm-button = Usuń
 confirm-discard-changes-dialog-title = Odrzucić niezachowane zmiany?
 confirm-discard-changes-dialog-message = Wszystkie niezachowane zmiany zostaną utracone.
 confirm-discard-changes-dialog-confirm-button = Odrzuć

@@ -33,10 +33,20 @@ onboarding-join-form-email =
 onboarding-join-form-email-error = Eikotevẽ ñandutiveve oikóva
 onboarding-join-form-legal = Eku’ejeývo, emoneĩma umi <a data-l10n-name="terms">Mba'epytyvõrã ñemboguata</a> ha <a data-l10n-name="privacy">Temiñemi purureko</a>.
 onboarding-join-form-continue = Eku'ejey
+# This message is followed by a link using onboarding-join-form-signin ("Sign In") as text.
+onboarding-join-form-signin-label = ¿Eguerekóma ne mba’ete?
+# Text for link to submit the sign in form
+onboarding-join-form-signin = Eñemboheraguapy
 onboarding-start-browsing-button-label = Eñepyrũ eikundaha
 onboarding-cards-dismiss =
     .title = Emboyke
     .aria-label = Emboyke
+
+## Welcome full page string
+
+onboarding-fullpage-welcome-subheader = Eñepyrũ ehapereka opaite ejapokuaáva.
+onboarding-fullpage-form-email =
+    .placeholder = Ne ñanduti veve…
 
 ## Firefox Sync modal dialog strings.
 
@@ -103,6 +113,7 @@ onboarding-data-sync-text2 = Embojuehe nde rechaukaha, ñe’ẽñemi ha hetave 
 onboarding-data-sync-button2 = Emoñepyrũ tembiapo { -sync-brand-short-name } ndive
 onboarding-firefox-monitor-title = Ema’ẽ tapiáke mba’ekuaarã ñembogua rehe
 onboarding-firefox-monitor-text = { -monitor-brand-name } ohechajey ne ñandutiveve kundaharape osẽpa peteĩ mba’ekuaarã ñemboguapyre ha he’i ndéve osẽjeýramo.
+onboarding-firefox-monitor-text2 = { -monitor-brand-name } ohecha ne ñanduti vevépa oĩ peteĩ mba’ekuaarã ojekuaáva ñembyaípe ha ohechauka oĩtaramo ñembyai ipyahúva.
 onboarding-firefox-monitor-button = Eñemboheraguapy og̃uahẽ hag̃ua ndéve kehyjerã
 onboarding-browse-privately-title = Eikundaha ñemi
 onboarding-browse-privately-text = Pe kundaha ñemi ombogue umi jehekaha ha kundaha rembiasakue emoñemi hag̃ua oimeraẽva oipurúvagui mohendaha.

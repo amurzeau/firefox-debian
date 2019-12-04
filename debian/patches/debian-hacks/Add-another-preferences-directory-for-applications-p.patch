@@ -13,21 +13,21 @@ to disable the "set as default browser" dialog.
  1 file changed, 2 insertions(+)
 
 diff --git a/toolkit/xre/nsXREDirProvider.cpp b/toolkit/xre/nsXREDirProvider.cpp
-index 2c9547826f26..87105bb977f0 100644
+index c3164f204ffd..6c742669dcc5 100644
 --- a/toolkit/xre/nsXREDirProvider.cpp
 +++ b/toolkit/xre/nsXREDirProvider.cpp
-@@ -850,6 +850,7 @@ static nsresult DeleteDirIfExists(nsIFile* dir) {
+@@ -831,6 +831,7 @@ static nsresult DeleteDirIfExists(nsIFile* dir) {
  
  static const char* const kAppendPrefDir[] = {"defaults", "preferences",
                                               nullptr};
 +static const char *const kAppendSysPrefDir[] = { "defaults", "syspref", nullptr };
  
- #ifdef DEBUG_bsmedberg
- static void DumpFileArray(const char* key, nsCOMArray<nsIFile> dirs) {
-@@ -881,6 +882,7 @@ nsresult nsXREDirProvider::GetFilesInternal(const char* aProperty,
+ nsresult nsXREDirProvider::GetFilesInternal(const char* aProperty,
+                                             nsISimpleEnumerator** aResult) {
+@@ -841,6 +842,7 @@ nsresult nsXREDirProvider::GetFilesInternal(const char* aProperty,
+     nsCOMArray<nsIFile> directories;
  
      LoadDirIntoArray(mXULAppDir, kAppendPrefDir, directories);
-     LoadDirsIntoArray(mAppBundleDirectories, kAppendPrefDir, directories);
 +    LoadDirIntoArray(mXULAppDir, kAppendSysPrefDir, directories);
  
      rv = NS_NewArrayEnumerator(aResult, directories, NS_GET_IID(nsIFile));

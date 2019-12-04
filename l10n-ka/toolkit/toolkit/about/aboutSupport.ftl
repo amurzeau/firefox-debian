@@ -147,6 +147,22 @@ intl-locales-default = ნაგულისხმევი ენა
 intl-os-title = საოპერაციო სისტემა
 intl-os-prefs-system-locales = სისტემის ენები
 intl-regional-prefs = რეგიონალური პარამეტრები
+
+## Remote Debugging
+##
+## The Firefox remote protocol provides low-level debugging interfaces
+## used to inspect state and control execution of documents,
+## browser instrumentation, user interaction simulation,
+## and for subscribing to browser-internal events.
+##
+## See also https://firefox-source-docs.mozilla.org/remote/
+
+remote-debugging-title = დისტანციური გამართვა (Chromium-ოქმი)
+remote-debugging-accepting-connections = კავშირების მიღება
+remote-debugging-url = URL-ბმული
+
+
+
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
@@ -243,6 +259,7 @@ unknown-failure = დამატებულია შეზღუდულთ�
 d3d11layers-crash-guard = ასოთამწყობი D3D11
 d3d11video-crash-guard = D3D11 ვიდეომშიფრავი
 d3d9video-crash-buard = D3D9 ვიდეომშიფრავი
+d3d9video-crash-guard = D3D9 ვიდეომშიფრავი
 glcontext-crash-guard = OpenGL
 reset-on-next-restart = ჩამოყრა მომდევნო ჩართვისას
 gpu-process-kill-button = GPU პროცესის შეწყვეტა

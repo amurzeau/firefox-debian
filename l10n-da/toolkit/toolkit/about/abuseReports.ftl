@@ -2,6 +2,14 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# Localized string used as the dialog window title (a new behavior locked
+# behind the "extensions.abuseReport.openDialog" preference).
+# "Report" is a noun in this case, "Report for AddonName".
+#
+# Variables:
+#   $addon-name (string) - Name of the add-on being reported
+abuse-report-dialog-title = Rapport for { $addon-name }
+
 abuse-report-title-extension = Rapporter denne udvidelse til { -vendor-short-name }
 abuse-report-title-theme = Rapporter dette tema til { -vendor-short-name }
 abuse-report-subtitle = Hvad er problemet?
@@ -53,21 +61,32 @@ abuse-report-messagebar-action-cancel = Fortryd
 ## Abuse report reasons (optionally paired with related examples and/or suggestions)
 
 abuse-report-damage-reason = Skader min computer og mine data
+
+abuse-report-damage-reason-v2 = Skadede min computer eller kompromitterede mine data
 abuse-report-damage-example = Eksempel: Medførte malware eller stjal data
 
 abuse-report-spam-reason = Viser spam eller reklamer
+
+abuse-report-spam-reason-v2 = Indeholder spam eller indsætter uønskede reklamer
 abuse-report-spam-example = Eksempel: Indsætter reklamer på websider
 
 abuse-report-settings-reason = Ændrede min søgetjeneste, startside eller siden nyt faneblad uden at informere eller spørge mig først.
+
+abuse-report-settings-reason-v2 = Ændrede min søgetjeneste, startside eller siden nyt faneblad ude at informere eller spørge mig først.
 abuse-report-settings-suggestions = Før du rapporterer udvidelsen, kan du prøve at ændre dine indstillinger:
 abuse-report-settings-suggestions-search = Skift dine standard-indstillinger for søgning
 abuse-report-settings-suggestions-homepage = Skift din startside og siden nyt faneblad
 
 abuse-report-deceptive-reason = Fejlagtig beskrivelse
+
+abuse-report-deceptive-reason-v2 = Den hævder at være noget, den ikke er
 abuse-report-deceptive-example = Eksempel: Vildledende beskrivelse eller billeder
 
 abuse-report-broken-reason-extension = Virker ikke, ødelægger websteder eller gør { -brand-product-name } langsom
 abuse-report-broken-reason-theme = Virker ikke eller ødelægger websiders udseende
+
+abuse-report-broken-reason-extension-v2 = Virker ikke, forhindrer websteder i at fungere eller gør { -brand-product-name } langsom
+abuse-report-broken-reason-theme-v2 = Virker ikke eller forhindrer websteder i at blive vist korrekt
 abuse-report-broken-example =
   Eksempel: Funktioner er langsomme, svære at bruge eller virker slet ikke; dele af websider indlæses ikke eller ser udsædvanlige ud
 abuse-report-broken-suggestions-extension =
@@ -80,12 +99,16 @@ abuse-report-broken-suggestions-theme =
   <a data-l10n-name="support-link">Besøg temaets websted</a> for at få information om udvikleren.
 
 abuse-report-policy-reason = Hadsk, voldeligt eller ulovligt indhold
+
+abuse-report-policy-reason-v2 = Indeholder hadsk, voldeligt eller ulovligt indhold
 abuse-report-policy-suggestions =
   Bemærk: Overtrædelser af ophavsrettigheder og varemærker rapporteres på en anden måde.
   <a data-l10n-name="report-infringement-link">Følg disse instruktioner</a> for at
   rapportere problemet.
 
 abuse-report-unwanted-reason = Ville ikke have udvidelsen og kan ikke slippe af med den igen
+
+abuse-report-unwanted-reason-v2 = Jeg ville ikke have udvidelsen og ved ikke, hvordan jeg skal slippe af med den igen
 abuse-report-unwanted-example = Eksempel: Et program installerede den uden min tilladelse
 
 abuse-report-other-reason = Andet

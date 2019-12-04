@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = от { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Препоръка
+cfr-doorhanger-extension-notification2 = Препоръка
+    .tooltiptext = Препоръка за разширение
+    .a11y-announcement = Налична е препоръка за разширение
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Препоръка
+    .tooltiptext = Препоръка за възможност
+    .a11y-announcement = Налична е препоръка за възможност
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -73,14 +81,24 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
 ## Protections panel
 
 cfr-protections-panel-header = Преглеждайте без да бъдете следени
+cfr-protections-panel-body = Пазете вашите данни само ваши. { -brand-short-name } ви предпазва от много от най-разпространените проследявания, които следват вашите действия онлайн.
 cfr-protections-panel-link-text = Научете повече
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Нова възможност:
 cfr-whatsnew-button =
     .label = Какво е новото
     .tooltiptext = Новото в това издание
 cfr-whatsnew-panel-header = Какво е новото
+cfr-whatsnew-release-notes-link-text = Прочетете бележките към изданието
+cfr-whatsnew-fx70-title = { -brand-short-name } вече се бори по-отдадено за вашата поверителност
+cfr-whatsnew-tracking-protect-title = Защитете се от проследяване
+cfr-whatsnew-tracking-protect-link-text = Вижте отчета
+cfr-whatsnew-tracking-blocked-subtitle = От { DATETIME($earliestDate, month: "long", year: "numeric") }
+cfr-whatsnew-lockwise-take-link-text = Вземете приложението
 
 ## Bookmark Sync
 
@@ -98,3 +116,7 @@ cfr-whatsnew-panel-header = Какво е новото
 
 cfr-doorhanger-socialtracking-close-button = Затваряне
     .accesskey = з
+cfr-doorhanger-socialtracking-description = Поверителността ви е от значение. { -brand-short-name } вече спира проследяванията от разпространените социални мрежи, ограничавайки събираните данни за действията ви в мрежата.
+
+## Enhanced Tracking Protection Milestones
+

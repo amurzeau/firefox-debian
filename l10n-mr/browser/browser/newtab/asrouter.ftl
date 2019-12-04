@@ -6,6 +6,7 @@
 ## These messages are used as headings in the recommendation doorhanger
 
 cfr-doorhanger-extension-heading = शिफारस केलेले विस्तार
+cfr-doorhanger-feature-heading = शिफारस केलेले वैशिष्ट्य
 cfr-doorhanger-pintab-heading = हे करून पहा: पिन टॅब
 
 
@@ -64,19 +65,69 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = बंद करा बटण
     .title = बंद करा
 
+## Protections panel
+
+cfr-protections-panel-link-text = अधिक जाणा
+
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = नवीन वैशिष्ट्य
 cfr-whatsnew-button =
     .label = नवीन काय आहे
     .tooltiptext = नवीन काय आहे
 cfr-whatsnew-panel-header = नवीन काय आहे
+cfr-whatsnew-release-notes-link-text = प्रकाशन नोट्स वाचा
+cfr-whatsnew-fx70-title = { -brand-short-name } आता आपल्या गोपनीयतेसाठी कठोर संघर्ष करते
+cfr-whatsnew-tracking-protect-title = ट्रॅकर्सपासून स्वतःचे रक्षण करा
+cfr-whatsnew-tracking-protect-link-text = आपला अहवाल पहा
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+        [one] ट्रॅकर अवरोधित
+       *[other] ट्रॅकर अवरोधित
+    }
+cfr-whatsnew-tracking-blocked-subtitle = { DATETIME($earliestDate, month: "long", year: "numeric") } पासून
+cfr-whatsnew-tracking-blocked-link-text = अहवाल पहा
+cfr-whatsnew-lockwise-backup-title = आपले पासवर्ड बॅक-अप करा
+cfr-whatsnew-lockwise-backup-link-text = बॅकअप चालू करा
+cfr-whatsnew-lockwise-take-title = आपले पासवर्ड आपल्या सोबत न्या
+cfr-whatsnew-lockwise-take-link-text = अॅप मिळवा
 
 ## Bookmark Sync
 
+cfr-doorhanger-sync-bookmarks-header = हा बुकमार्क आपल्या फोनवर मिळवा
+cfr-doorhanger-sync-bookmarks-ok-button = { -sync-brand-short-name } चालू करा
+    .accesskey = T
+
+## Login Sync
+
+cfr-doorhanger-sync-logins-ok-button = { -sync-brand-short-name } चालू करा
+    .accesskey = T
 
 ## Send Tab
 
 cfr-doorhanger-send-tab-header = जाता जाता हे वाचा
+cfr-doorhanger-send-tab-recipe-header = ही कृती स्वयंपाकघरात घ्या
+cfr-doorhanger-send-tab-ok-button = टॅब पाठवणे वापरून पहा
+    .accesskey = T
 
 ## Firefox Send
 
+cfr-doorhanger-firefox-send-ok-button = { -send-brand-name } वापरून पहा
+    .accesskey = T
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-ok-button = संरक्षण पहा
+    .accesskey = P
+cfr-doorhanger-socialtracking-close-button = बंद करा
+    .accesskey = C
+
+## Enhanced Tracking Protection Milestones
+
+cfr-doorhanger-milestone-ok-button = सर्व पाहा
+    .accesskey = S

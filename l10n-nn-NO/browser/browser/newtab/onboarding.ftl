@@ -33,10 +33,20 @@ onboarding-join-form-email =
 onboarding-join-form-email-error = Gyldig e-postadresse påkravd
 onboarding-join-form-legal = Ved å fortsetje godtek du <a data-l10n-name="terms">tenestevilkåra</a> våre og <a data-l10n-name="privacy">personvernerklæringa</a> vår.
 onboarding-join-form-continue = Fortset
+# This message is followed by a link using onboarding-join-form-signin ("Sign In") as text.
+onboarding-join-form-signin-label = Har du allereie ein konto?
+# Text for link to submit the sign in form
+onboarding-join-form-signin = Logg inn
 onboarding-start-browsing-button-label = Start nettlesing
 onboarding-cards-dismiss =
     .title = Avvis
     .aria-label = Avvis
+
+## Welcome full page string
+
+onboarding-fullpage-welcome-subheader = La oss starte å utforske alt du kan gjere.
+onboarding-fullpage-form-email =
+    .placeholder = Di e-postadresse…
 
 ## Firefox Sync modal dialog strings.
 
@@ -102,7 +112,8 @@ onboarding-data-sync-title = Ta med deg innstillingane dine
 onboarding-data-sync-text2 = Synkroniser bokmerka dine, passord og meir overalt der du brukar { -brand-product-name }.
 onboarding-data-sync-button2 = Logg inn på { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Hald auge med datalekkasjar
-onboarding-firefox-monitor-text = { -monitor-brand-name } overvakar om e-postenadressa di har dukka opp i datalekkasjar og varslar deg om det visest i ein ny lekkasje.
+onboarding-firefox-monitor-text = { -monitor-brand-name } overvakar om e-postenadressa di har vore med i ein datalekkasje og varslar deg om ho dukkar opp i nye lekkasjar.
+onboarding-firefox-monitor-text2 = { -monitor-brand-name } overvakar om e-postenadressa di har vore med i ein kjend datalekkasje og varslar deg om ho dukkar opp i nye lekkasjar.
 onboarding-firefox-monitor-button = Registrer deg for varslingar
 onboarding-browse-privately-title = Surf privat
 onboarding-browse-privately-text = Privat nettlesing fjernar søke- og nettlesingshistorikken din for å halde han hemmeleg frå andre som brukar datamaskina di.

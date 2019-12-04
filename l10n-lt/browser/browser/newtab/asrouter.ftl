@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = sukūrė { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Rekomendacija
+cfr-doorhanger-extension-notification2 = Rekomendacija
+    .tooltiptext = Priedo rekomendacija
+    .a11y-announcement = Siūloma priedo rekomendacija
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Rekomendacija
+    .tooltiptext = Funkcijos rekomendacija
+    .a11y-announcement = Siūloma funkcijos rekomendacija
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -80,6 +88,9 @@ cfr-protections-panel-link-text = Sužinoti daugiau
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Naujovė:
 cfr-whatsnew-button =
     .label = Kas naujo
     .tooltiptext = Kas naujo
@@ -149,9 +160,25 @@ cfr-doorhanger-socialtracking-ok-button = Peržiūrėti apsaugas
     .accesskey = p
 cfr-doorhanger-socialtracking-close-button = Užverti
     .accesskey = U
+cfr-doorhanger-socialtracking-dont-show-again = Daugiau tokių pranešimų nerodyti
+    .accesskey = D
 cfr-doorhanger-socialtracking-heading = „{ -brand-short-name }“ neleido socialiniam tinklui čia jūsų sekti
 cfr-doorhanger-socialtracking-description = Jūsų privatumas yra svarbus. „{ -brand-short-name }“ jau blokuoja dažniausius socialinių tinklų stebėjimo elementus, taip ribojant, kiek duomenų jie gali surinkti apie jūsų naršymo veiklą.
 cfr-doorhanger-fingerprinters-heading = „{ -brand-short-name }“ šioje svetainėje užblokavo skaitmeninių atspaudų stebėjimo elementą
 cfr-doorhanger-fingerprinters-description = Jūsų privatumas yra svarbus. „{ -brand-short-name }“ jau blokuoja skaitmeninių atspaudų stebėjimo elementus, kurie renka jūsų įrenginį identifikuoti leidžiančią informaciją, kad galėtų jus sekti.
 cfr-doorhanger-cryptominers-heading = „{ -brand-short-name }“ šioje svetainėje užblokavo kriptovaliutų kasėją
 cfr-doorhanger-cryptominers-description = Jūsų privatumas yra svarbus. „{ -brand-short-name }“ jau blokuoja kriptovaliutų kasėjus, kurie naudoja jūsų sistemos resursus skaitmeninių pinigų kasimui.
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+        [one] „{ -brand-short-name }“ užblokavo virš <b>{ $blockedCount }</b> stebėjimo elemento nuo { $date }!
+        [few] „{ -brand-short-name }“ užblokavo virš <b>{ $blockedCount }</b> stebėjimo elementų nuo { $date }!
+       *[other] „{ -brand-short-name }“ užblokavo virš <b>{ $blockedCount }</b> stebėjimo elementų nuo { $date }!
+    }
+cfr-doorhanger-milestone-ok-button = Rodyti viską
+    .accesskey = R

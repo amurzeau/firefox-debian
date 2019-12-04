@@ -41,7 +41,7 @@
 <!ENTITY notCached.longDesc "<p>Le documento requestate non es disponibile in le cache del navigator.</p><ul><li>Como precaution de securitate, le navigator non re-requesta automaticamente documentos sensibile.</li><li>Clicca sur Retentar pro re-requestar le documento del sito web.</li></ul>">
 
 <!ENTITY netOffline.title "Modo disconnectite">
-<!ENTITY netOffline.longDesc2 "<p>Le navigator opera in su modo disconnectite e non pote connecter se al elemento requestate.</p><ul><li>Es le computator connectite a un rete active?</li><li>Preme &quot;Retenta&quot; pro commutar al modo in linea e recarga le pagina.</li></ul>">
+<!ENTITY netOffline.longDesc2 "<p>Le navigator es in modo disconnectite e non pote connecter se al objecto requestate.</p><ul><li>Es le computator connectite a un rete active?</li><li>Preme &quot;Retentar&quot; pro cambiar al modo in linea e recargar le pagina.</li></ul>">
 
 <!ENTITY contentEncodingError.title "Error de codification del contento">
 <!ENTITY contentEncodingError.longDesc "<p>Le pagina que tu tenta vider non pote esser monstrate perque illo usa un forma de compression invalide o non admittite.</p><ul><li>Per favor contacta le proprietarios del sito web pro informar les de iste problema.</li></ul>">
@@ -69,7 +69,7 @@
 <!ENTITY proxyResolveFailure.longDesc "<p>Le navigator es configurate a usar un servitor proxy ma le proxy non pote ser trovate.</p><ul><li>Es le configuration del proxy del navigator correcte? Controla le predefinitiones e reproba</li><li>Es le computer connectite a un rete active?</li><li>Ancora problemas? Consulta tu administrator de rete o tu fornitor de Internet pro assistentia.</li></ul>">
 
 <!ENTITY redirectLoop.title "Cyclo de redirection">
-<!ENTITY redirectLoop.longDesc "<p>Le navigator ha cessate de tentar recuperar le elemento requestate. Le sito redirige le requesta de sorta que illo non jammais terminara.</p><ul><li>Ha tu inactivate o blocate cookies necessitate per iste sito?</li><li><em>NOTA</em>: Si acceptar le cookies del sito non resolve le problema, il ha probabilemente un problema de configuration del servitor e non de tu computator.</li></ul>">
+<!ENTITY redirectLoop.longDesc "<p>Le navigator ha cessate de tentar a obtener le elemento requestate. Le sito redirige le requesta de sorta que illo non terminara jammais.</p><ul><li>Ha tu disactivate o blocate cookies necessari pro iste sito?</li><li><em>NOTA</em>: Si acceptar le cookies del sito non resolve le problema, il ha probabilemente un problema de configuration del servitor e non de tu computator.</li></ul>">
 
 <!ENTITY unknownSocketType.title "Responsa non correcte">
 <!ENTITY unknownSocketType.longDesc "<p>Le sito respondeva al requesta de rete in un via inexpectate e le browser non pote continuar.</p>">
@@ -93,6 +93,9 @@
 <!ENTITY cspBlocked.title "Blocate per le politica de securitate del contento">
 <!ENTITY cspBlocked.longDesc "<p>Le navigator impedi de cargar iste pagina in iste maniera perque le pagina ha politica de securitate del contento que non lo permitte.</p>">
 
+<!ENTITY xfoBlocked.title "Blocate per politica X-Frame-Options">
+<!ENTITY xfoBlocked.longDesc "<p>Le navigator ha blocate le cargamento de iste pagina in iste contexto perque le pagina ha un politica X-Frame-Options que non lo permitte.</p>">
+
 <!ENTITY corruptedContentErrorv2.title "Error de contento corrumpite">
 <!ENTITY corruptedContentErrorv2.longDesc "<p>Le pagina que tu tenta vider non pote esser monstrate perque un error in le transmission de datos esseva detectate.</p><ul><li>Per favor contacta le proprietarios del sito web pro informar les de iste problema.</li></ul>">
 
@@ -107,4 +110,4 @@
 <!ENTITY blockedByPolicy.title "Pagina blocate">
 
 <!ENTITY networkProtocolError.title "Error de protocollo de rete">
-<!ENTITY networkProtocolError.longDesc "<p>Le pagina que tu tenta vider non pote esser monstrate perque un error in le protocollo de rete esseva detegite.</p><ul><li>Per favor contacta le proprietarios del sito web pro informar les de iste problema.</li></ul>">
+<!ENTITY networkProtocolError.longDesc "<p>Le pagina que tu tenta vider non pote esser monstrate perque un error ha essite detegite in le protocollo de rete.</p><ul><li>Per favor contacta le proprietarios del sito web pro informar les de iste problema.</li></ul>">

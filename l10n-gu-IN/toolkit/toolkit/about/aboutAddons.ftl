@@ -138,9 +138,6 @@ legacy-warning-show-legacy = જૂના એક્સ્ટેન્શન્�
 legacy-extensions =
     .value = જૂના એક્સ્ટેન્શન્સ
 legacy-extensions-description = આ એક્સ્ટેન્શન્સ વર્તમાન { -brand-short-name } ધોરણો મળતા નથી જેથી તેઓ નિષ્ક્રિય કરવામાં આવેલ છે. <label data-l10n-name="legacy-learn-more">ઍડ-ઑન્સમાં ફેરફારો વધુ શીખો</label>
-extensions-view-discover =
-    .name = ઍડ-ઓનને મેળવો
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-recent-updates =
     .name = તાજેતરનાં સુધારાઓ
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -168,6 +165,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = સક્રિય
     .tooltiptext = ઍડ-ઓન સુધારા સુરક્ષા ચકાસણીને સક્રિય કરો
+extensions-warning-safe-mode = બધા ઍડ-ઓન સલામત સ્થિતિ દ્દારા નિષ્ક્રિય કરી દેવામાં આવ્યા છે.
+extensions-warning-check-compatibility = ઍડ-ઓન સુસંગતતા ચકાસણી નિષ્ક્રિય થયેલ છે. તમારી પાસે અસુસંગત ઍડ-ઓન હોઇ શકે છે.
+extensions-warning-check-compatibility-button = સક્રિય
+    .title = ઍડ-ઓન સુસંગતતા ચકાસણીને સક્રિય કરો
+extensions-warning-update-security = ઍડ-ઓન સુધારા સુરક્ષા ચકાસણી નિષ્ક્રિય થયેલ છે. તમારે સુધારાઓ વડે સમાધાન કરી શકો છો.
+extensions-warning-update-security-button = સક્રિય
+    .title = ઍડ-ઓન સુધારા સુરક્ષા ચકાસણીને સક્રિય કરો
 
 ## Strings connected to add-on updates
 
@@ -177,12 +181,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = તાજેતરનાં સુધારાઓને દર્શાવો
     .accesskey = V
+addon-updates-check-for-updates = સુધારાઓ માટે ચકાસો
+    .accesskey = C
+addon-updates-view-updates = તાજેતરનાં સુધારાઓને દર્શાવો
+    .accesskey = V
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = આપમેળે ઍડ-ઓનને સુધારો
+    .accesskey = A
+addon-updates-update-addons-automatically = આપમેળે ઍડ-ઓનને સુધારો
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -196,6 +206,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = R
 extensions-updates-reset-updates-to-manual =
     .label = પોતાની જાતે સુધારવા માટે બધા ઍડ-ઓનને પુન:સુયોજિત કરો
+    .accesskey = R
+addon-updates-reset-updates-to-automatic = આપમેળે સુધારવા માટે બધા ઍડ-ઓનને પુન:સુયોજિત કરો
+    .accesskey = R
+addon-updates-reset-updates-to-manual = પોતાની જાતે સુધારવા માટે બધા ઍડ-ઓનને પુન:સુયોજિત કરો
     .accesskey = R
 
 ## Status messages displayed when updating add-ons
@@ -215,13 +229,28 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = સુધારાઓને સ્થાપિત કરો
     .tooltiptext = આ યાદીમાં ઉપલબ્ધ સુધારાઓને સ્થાપિત કરો
+addon-updates-updating = ઍડ-ઓનને સુધારી રહ્યા છે
+addon-updates-installed = તમારા ઍડ-ઓનને સુધારી દેવામાં આવ્યા છે.
+addon-updates-none-found = સુધારાઓ મળ્યા નથી
+addon-updates-manual-updates-found = ઉપલબ્ધ સુધારાઓને દર્શાવો
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = ફાઇલમાંથી ઍડ-ઓનને સ્થાપિત કરો…
+    .accesskey = I
+addon-install-from-file-dialog-title = સ્થાપિત કરવા માટે ઍડ-ઓનને પસંદ કરો
+addon-install-from-file-filter-name = ઍડ-ઓન
+addon-open-about-debugging = ઍડ-ઑન્સ ડીબગ કરો
+    .accesskey = B
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = એક્સ્ટેંશન શૉર્ટકટ્સ મેનેજ કરો
     .accesskey = S
-shortcuts-empty-message = આ એક્સ્ટેન્શન માટે કોઈ શૉર્ટકટ્સ નથી.
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = એક્સ્ટેંશન શૉર્ટકટ્સ મેનેજ કરો
+    .accesskey = S
 shortcuts-no-addons = તમારી પાસે કોઈ એક્સ્ટેન્શન સક્ષમ નથી.
 shortcuts-no-commands = નીચેના એક્સ્ટેન્શન્સમાં શૉર્ટકટ્સ નથી:
 shortcuts-input =
@@ -243,6 +272,9 @@ shortcuts-card-collapse-button = ઓછું બતાવો
 go-back-button =
     .tooltiptext = પાછળ જાવ
 
+## Recommended add-ons page
+
+
 ## Add-on actions
 
 remove-addon-button = દૂર કરો
@@ -250,3 +282,19 @@ disable-addon-button = નિષ્ક્રિય
 enable-addon-button = સક્રિય
 addons-enabled-heading = સક્રિય
 addons-disabled-heading = નિષ્ક્રિય
+
+## Pending uninstall message bar
+
+
+## Page headings
+
+extension-heading = તમારા એક્સ્ટેંશન્સ ને સંચાલિત કરો
+theme-heading = તમારી થીમ્સને સંચાલિત કરો
+plugin-heading = તમારા પ્લગઈન્સને સંચાલિત કરો
+dictionary-heading = તમારા શબ્દકોશોને સંચાલિત કરો
+locale-heading = તમારી ભાષાઓને સંચાલિત કરો
+shortcuts-heading = એક્સ્ટેંશન શૉર્ટકટ્સ મેનેજ કરો
+theme-heading-search-label = વધુ થીમ્સ શોધો
+extension-heading-search-label = વધુ એક્સ્ટેન્શન્સ શોધો
+addons-heading-search-input =
+    .placeholder = addons.mozilla.org શોધો

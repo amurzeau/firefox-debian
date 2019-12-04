@@ -45,6 +45,26 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = पर्सिस्टन्ट स्टोरेजमध्ये माहिती साठवा
 urlbar-addons-notification-anchor =
     .tooltiptext = अॅड-ऑन प्रतिष्ठापन संदेश फलक उघडा
+urlbar-tip-help-icon =
+    .title = मदत मिळवा
+urlbar-geolocation-blocked =
+    .tooltiptext = आपण ह्या वेबसाईटसाठी स्थळाची माहिती अवरोधित केली आहे.
+urlbar-web-notifications-blocked =
+    .tooltiptext = आपण ह्या वेबसाइटसाठी सूचना अवरोधित केल्या आहे.
+urlbar-camera-blocked =
+    .tooltiptext = आपण ह्या वेबसाईटसाठी आपला कॅमेरा अवरोधित केला आहे.
+urlbar-microphone-blocked =
+    .tooltiptext = आपण ह्या वेबसाईटसाठी आपला मायक्रोफोन अवरोधित केला आहे.
+urlbar-screen-blocked =
+    .tooltiptext = ह्या वेबसाईटला आपण आपली स्क्रीन शेअर करण्यापासून अवरोधित केले आहे.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = आपण दीर्घस्थायी स्टोरेज ह्या वेबसाईटसाठी अवरोधित केला आहे.
+urlbar-popup-blocked =
+    .tooltiptext = ह्या संकेतस्थळासाठी आपण पॉप-अप अडवले आहेत.
+urlbar-canvas-blocked =
+    .tooltiptext = आपण ह्या वेबसाइटसाठी कॅनव्हास डेटा उतारा अवरोधित केला आहे.
+urlbar-midi-blocked =
+    .tooltiptext = या संकेतस्थळासाठी MIDI वापर अवरोधित केला आहे.
 
 ## Page Action Context Menu
 
@@ -63,3 +83,21 @@ full-screen-autohide =
 full-screen-exit =
     .label = पडदाभर मोडपासून बाहेर पडा
     .accesskey = F
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = यावेळी, यासह शोधा:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = शोध सेटिंग बदला
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = शोध सेटिंगस बदला
+search-one-offs-context-open-new-tab =
+    .label = नवीन टॅबमध्ये शोधा
+    .accesskey = T
+search-one-offs-context-set-as-default =
+    .label = पूर्वनिर्धारित शोध इंजिन म्हणून ठरवा
+    .accesskey = D

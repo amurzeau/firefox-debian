@@ -21,14 +21,14 @@ create-login-button = Nieuwe aanmelding maken
 login-favicon =
     .alt = Favicon voor { $title }
 fxaccounts-sign-in-text = Breng uw wachtwoorden naar uw andere apparaten
-fxaccounts-sign-in-button = Meld u aan bij { -sync-brand-short-name }
+fxaccounts-sign-in-button = Aanmelden bij { -sync-brand-short-name }
 fxaccounts-avatar-button =
     .title = Account beheren
 
 ## The ⋯ menu that is in the top corner of the page
 
 menu =
-    .title = Open menu
+    .title = Menu openen
 # This menuitem is only visible on Windows
 menu-menuitem-import = Wachtwoorden importeren…
 menu-menuitem-preferences =
@@ -63,23 +63,26 @@ login-list-item-subtitle-new-login = Voer uw aanmeldgegevens in
 login-list-item-subtitle-missing-username = (geen gebruikersnaam)
 about-logins-list-item-warning-icon =
     .alt = Waarschuwingspictogram
-    .title = Getroffen website
+    .title = Website met datalek
 about-logins-list-item-breach-icon =
     .title = Website met datalek
 
 ## Introduction screen
 
 login-intro-heading = Op zoek naar uw opgeslagen aanmeldingen? Stel { -sync-brand-short-name } in.
+about-logins-login-intro-heading-logged-in = Geen gesynchroniseerde aanmeldingen gevonden.
 login-intro-description = Als u uw aanmeldgegevens bij { -brand-product-name } op een ander apparaat hebt opgeslagen, kunt u ze zo ophalen:
 login-intro-instruction-fxa = Maak op het apparaat waarop uw aanmeldgegevens staan een { -fxaccount-brand-name } of meld u aan
 login-intro-instruction-fxa-settings = Zorg ervoor dat u het veld Aanmeldingen in de instellingen van { -sync-brand-short-name } hebt aangevinkt
 about-logins-intro-instruction-help = Bezoek <a data-l10n-name="help-link">Ondersteuning voor { -lockwise-brand-short-name }</a> voor meer hulp
+about-logins-intro-import = Als uw aanmeldingen in een andere browser worden opgeslagen, kunt u <a data-l10n-name="import-link">ze importeren in { -lockwise-brand-short-name }</a>
 
 ## Login
 
 login-item-new-login-title = Nieuwe aanmelding maken
 login-item-edit-button = Bewerken
 login-item-delete-button = Verwijderen
+about-logins-login-item-remove-button = Verwijderen
 login-item-origin-label = Websiteadres
 login-item-origin =
     .placeholder = https://www.example.com
@@ -109,11 +112,8 @@ master-password-reload-button =
     .label = Aanmelden
     .accesskey = A
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = Annuleren
-confirmation-dialog-dismiss-button =
-    .title = Annuleren
 enable-password-sync-notification-message =
     { PLATFORM() ->
         [windows] Wilt u uw aanmeldingen overal waar u { -brand-product-name } gebruikt? Ga naar de opties van { -sync-brand-short-name } en vink het veld Aanmeldingen aan.
@@ -127,8 +127,19 @@ enable-password-sync-preferences-button =
         }
     .accesskey = b
 confirm-delete-dialog-title = Deze aanmelding verwijderen?
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = Dit niet meer vragen
+    .accesskey = D
+
+## Dialogs
+
+confirmation-dialog-cancel-button = Annuleren
+confirmation-dialog-dismiss-button =
+    .title = Annuleren
+about-logins-confirm-remove-dialog-title = Deze aanmelding verwijderen?
 confirm-delete-dialog-message = Deze actie kan niet ongedaan worden gemaakt.
 confirm-delete-dialog-confirm-button = Verwijderen
+about-logins-confirm-remove-dialog-confirm-button = Verwijderen
 confirm-discard-changes-dialog-title = Deze wijzigingen verwerpen?
 confirm-discard-changes-dialog-message = Alle niet-opgeslagen wijzigingen gaan verloren.
 confirm-discard-changes-dialog-confirm-button = Verwerpen

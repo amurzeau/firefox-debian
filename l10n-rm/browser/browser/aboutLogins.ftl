@@ -70,16 +70,19 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = Tschertgas ti tias infurmaziuns d'annunzia memorisadas? Configurescha { -sync-brand-short-name }.
+about-logins-login-intro-heading-logged-in = Chattà naginas infurmaziuns d'annunzia sincronisadas.
 login-intro-description = Sche ti has memorisà tias infurmaziuns d'annunzia en { -brand-product-name } sin in auter apparat, vegns ti a savair qua co acceder ad ellas:
 login-intro-instruction-fxa = Acceda al u creescha in { -fxaccount-brand-name } cun l'apparat nua che las infurmaziuns d'annunzia èn memorisadas
 login-intro-instruction-fxa-settings = Controllescha che la chaschetta da controlla «Infurmaziuns d'annunzia» saja activada en las preferenzas da { -sync-brand-short-name }
 about-logins-intro-instruction-help = Per agid, visitar <a data-l10n-name="help-link">il support da { -lockwise-brand-short-name }</a>
+about-logins-intro-import = En cas che las infurmaziuns d'annunzia èn memorisadas en in auter navigatur èsi pussaivel da las <a data-l10n-name="import-link">importar en { -lockwise-brand-short-name }</a>
 
 ## Login
 
 login-item-new-login-title = Creescha ina nova infurmaziun d'annunzia
 login-item-edit-button = Modifitgar
 login-item-delete-button = Stizzar
+about-logins-login-item-remove-button = Allontanar
 login-item-origin-label = Adressa da la website
 login-item-origin =
     .placeholder = https://www.example.com
@@ -109,11 +112,8 @@ master-password-reload-button =
     .label = Annunzia
     .accesskey = A
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = Interrumper
-confirmation-dialog-dismiss-button =
-    .title = Interrumper
 enable-password-sync-notification-message =
     { PLATFORM() ->
         [windows] Vuls ti avair a disposiziun tias infurmaziuns d'annunzia dapertut là nua che ti utiliseschas { -brand-product-name }? Acceda a las preferenzas da { -sync-brand-short-name } e tscherna la chaschetta da controlla «Infurmaziuns d'annunzia».
@@ -127,8 +127,19 @@ enable-password-sync-preferences-button =
         }
     .accesskey = A
 confirm-delete-dialog-title = Stizzar questas infurmaziuns d'annunzia?
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = Betg pli dumandar
+    .accesskey = B
+
+## Dialogs
+
+confirmation-dialog-cancel-button = Interrumper
+confirmation-dialog-dismiss-button =
+    .title = Interrumper
+about-logins-confirm-remove-dialog-title = Allontanar questas infurmaziuns d'annunzia?
 confirm-delete-dialog-message = Questa acziun na po betg vegnir revocada.
 confirm-delete-dialog-confirm-button = Stizzar
+about-logins-confirm-remove-dialog-confirm-button = Allontanar
 confirm-discard-changes-dialog-title = Ignorar las modificaziuns betg memorisadas?
 confirm-discard-changes-dialog-message = Tut las modificaziuns betg memorisadas van a perder.
 confirm-discard-changes-dialog-confirm-button = Ignorar
@@ -147,5 +158,10 @@ breach-alert-dismiss =
 # Variables:
 #   $loginTitle (String) - The title of the website associated with the login.
 about-logins-error-message-duplicate-login = Ina endataziun per { $loginTitle } cun quest num d'utilisader exista gia.
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = Igl exista gia ina endataziun per { $loginTitle } cun quest num d'utilisader. <a data-l10n-name="duplicate-link">Ir a l'endataziun existenta?</a>
 # This is a generic error message.
 about-logins-error-message-default = Ina errur è succedida durant l'emprova da memorisar quest pled-clav.

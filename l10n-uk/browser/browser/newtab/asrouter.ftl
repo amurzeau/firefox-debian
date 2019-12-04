@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = від { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Рекомендація
+cfr-doorhanger-extension-notification2 = Рекомендація
+    .tooltiptext = Рекомендація розширень
+    .a11y-announcement = Доступна рекомендація розширень
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Рекомендація
+    .tooltiptext = Рекомендація функцій
+    .a11y-announcement = Доступна рекомендація функцій
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -80,6 +88,9 @@ cfr-protections-panel-link-text = Докладніше
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Нова функція:
 cfr-whatsnew-button =
     .label = Що нового
     .tooltiptext = Що нового
@@ -103,7 +114,7 @@ cfr-whatsnew-tracking-blocked-title =
         [few] Заблоковані елементи стеження
        *[many] Заблокованих елементів стеження
     }
-cfr-whatsnew-tracking-blocked-subtitle = Створено { DATETIME($earliestDate, month: "long", year: "numeric") }
+cfr-whatsnew-tracking-blocked-subtitle = Починаючи з { DATETIME($earliestDate, month: "long", year: "numeric") }
 cfr-whatsnew-tracking-blocked-link-text = Переглянути звіт
 cfr-whatsnew-lockwise-backup-title = Резервне копіювання паролів
 cfr-whatsnew-lockwise-backup-body = Тепер генеруйте надійні паролі, до яких ви можете отримати доступ де завгодно.
@@ -149,9 +160,25 @@ cfr-doorhanger-socialtracking-ok-button = Дивитися захист
     .accesskey = с
 cfr-doorhanger-socialtracking-close-button = Закрити
     .accesskey = к
+cfr-doorhanger-socialtracking-dont-show-again = Не показувати такі повідомлення знову
+    .accesskey = е
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } зупинив стеження соціальної мережі
 cfr-doorhanger-socialtracking-description = Ваша приватність має значення. { -brand-short-name } тепер блокує загальні елементи стеження соціальних мереж, обмежуючи кількість зібраних даних про вашу діяльність в інтернеті.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } заблокував зчитування відбитку браузера на цій сторінці
 cfr-doorhanger-fingerprinters-description = Ваша приватність має значення. { -brand-short-name } тепер блокує зчитування відбитку браузера, що збирає частинки інформації, яка використовується для ідентифікації вашого пристрою і стеження за вами.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } заблокував криптомайнер на цій сторінці
 cfr-doorhanger-cryptominers-description = Ваша приватність має значення. { -brand-short-name } тепер блокує криптомайнери, які використовують ресурси вашої системи для видобутку цифрових грошей.
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+        [one] { -brand-short-name } заблокував <b>{ $blockedCount }</b> елемент стеження, починаючи з { $date }!
+        [few] { -brand-short-name } заблокував <b>{ $blockedCount }</b> елементи стеження, починаючи з { $date }!
+       *[many] { -brand-short-name } заблокував понад <b>{ $blockedCount }</b> елементів стеження, починаючи з { $date }!
+    }
+cfr-doorhanger-milestone-ok-button = Дивитись все
+    .accesskey = в

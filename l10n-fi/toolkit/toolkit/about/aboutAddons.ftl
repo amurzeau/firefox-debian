@@ -187,6 +187,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Ota käyttöön
     .tooltiptext = Ota lisäosien päivitysten turvallisuustarkistus käyttöön
+extensions-warning-safe-mode = Kaikki lisäosat on poistettu käytöstä vikasietotilassa.
+extensions-warning-check-compatibility = Lisäosien yhteensopivuuden tarkistus ei ole käytössä. Osa lisäosista voi olla epäyhteensopivia.
+extensions-warning-check-compatibility-button = Ota käyttöön
+    .title = Ota lisäosien yhteensopivuuden tarkistus käyttöön
+extensions-warning-update-security = Lisäosien päivitysten turvallisuustarkistus ei ole käytössä. Päivitykset voivat saastuttaa koneesi.
+extensions-warning-update-security-button = Ota käyttöön
+    .title = Ota lisäosien päivitysten turvallisuustarkistus käyttöön
 
 ## Strings connected to add-on updates
 
@@ -196,12 +203,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Näytä tuoreet päivitykset
     .accesskey = N
+addon-updates-check-for-updates = Hae päivityksiä
+    .accesskey = H
+addon-updates-view-updates = Näytä tuoreet päivitykset
+    .accesskey = N
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Päivitä lisäosat automaattisesti
+    .accesskey = u
+addon-updates-update-addons-automatically = Päivitä lisäosat automaattisesti
     .accesskey = u
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -215,6 +228,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = P
 extensions-updates-reset-updates-to-manual =
     .label = Aseta kaikki lisäosat päivittymään vain käsin
+    .accesskey = k
+addon-updates-reset-updates-to-automatic = Aseta kaikki lisäosat päivittymään automaattisesti
+    .accesskey = P
+addon-updates-reset-updates-to-manual = Aseta kaikki lisäosat päivittymään vain käsin
     .accesskey = k
 
 ## Status messages displayed when updating add-ons
@@ -234,11 +251,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Asenna päivitykset
     .tooltiptext = Asenna tämän listan saatavilla olevat päivitykset
+addon-updates-updating = Päivitetään lisäosia
+addon-updates-installed = Lisäosat on päivitetty.
+addon-updates-none-found = Päivityksiä ei löytynyt
+addon-updates-manual-updates-found = Näytä saatavilla olevat päivitykset
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Asenna lisäosa tiedostosta…
+    .accesskey = A
+addon-install-from-file-dialog-title = Valitse asennettava lisäosa
+addon-install-from-file-filter-name = Lisäosat
+addon-open-about-debugging = Jäljitä lisäosien virheitä
+    .accesskey = J
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Hallitse laajennusten pikanäppäimiä
+    .accesskey = t
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Hallitse laajennusten pikanäppäimiä
     .accesskey = t
 shortcuts-no-addons = Yhtäkään lisäosaa ei ole otettu käyttöön.
 shortcuts-no-commands = Seuraavilla laajennuksilla ei ole pikanäppäimiä:
@@ -311,6 +344,8 @@ addon-options-button =
 
 report-addon-button = Raportoi
 remove-addon-button = Poista
+# The link will always be shown after the other text.
+remove-addon-disabled-button = <a data-l10n-name="link">Miksi</a> tätä ei voi poistaa?
 disable-addon-button = Poista käytöstä
 enable-addon-button = Käytä
 expand-addon-button = Lisää valintoja
@@ -400,3 +435,18 @@ recommended-themes-heading = Suositellut teemat
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Haluatko kokeilla itse? <a data-l10n-name="link">Voit luoda oman teeman Firefox Color -ohjelmalla.</a>
+
+## Page headings
+
+extension-heading = Laajennusten hallinta
+theme-heading = Teemojen hallinta
+plugin-heading = Liitännäisten hallinta
+dictionary-heading = Sanastojen hallinta
+locale-heading = Kielten hallinta
+updates-heading = Päivitysten hallinta
+discover-heading = Tee { -brand-short-name }ista mieleisesi
+shortcuts-heading = Laajennusten pikanäppäinten hallinta
+theme-heading-search-label = Etsi lisää teemoja
+extension-heading-search-label = Etsi lisää laajennuksia
+addons-heading-search-input =
+    .placeholder = Etsi addons.mozilla.orgista

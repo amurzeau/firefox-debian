@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = Hese { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Je'ete
+cfr-doorhanger-extension-notification2 = Je'eporã
+    .tooltiptext = Jepysokue je'eporã
+    .a11y-announcement = Jepysokue je'eporã eipurukuaáva
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Je'eporã
+    .tooltiptext = Peteĩchagua je'eporã
+    .a11y-announcement = Peteĩchagua je'eporã eipurukuaáva
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -78,6 +86,9 @@ cfr-protections-panel-link-text = Eikuaave
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Peteĩchagua pyahu:
 cfr-whatsnew-button =
     .label = Oĩpa mba'e pyahu
     .tooltiptext = Oĩpa mba'e pyahu
@@ -142,9 +153,23 @@ cfr-doorhanger-socialtracking-ok-button = Ehecha ñemo’ã
     .accesskey = P
 cfr-doorhanger-socialtracking-close-button = Mboty
     .accesskey = C
+cfr-doorhanger-socialtracking-dont-show-again = Anive ehechaukajey ñe’ẽmondo koichagua
+    .accesskey = D
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } ojoko ani nde rapykueho ápe ava ñandutieta
 cfr-doorhanger-socialtracking-description = Ne ñemigua tuichamba’e. { -brand-short-name } ko’ág̃a ojoko umi ava ñandutieta rapykuehoha, omomichĩvo mba’ekuaarã retakue ñembyaty ejapóva guive ñandutípe.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } ojoko kuãhũ juhuha ko kuatiaroguépe
 cfr-doorhanger-fingerprinters-description = Ne ñemigua tuichamba’e. { -brand-short-name } ko’ág̃a ojoko umi Kuãhũ kuaaukaha, ombyatýva marandu kuaaukaha nde mba’e’oka rehegua ohapykueho hag̃ua.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name }  ojoko criptominero ko kuatiaroguépe
 cfr-doorhanger-cryptominers-description = Ne ñemigua tuichamba’e. { -brand-short-name } ko’ág̃a ojoko umi criptominero, oipurúva tembipurupyahu apopyvusu mbaretekue oguenohẽ hag̃ua viru ñandutigua.
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+       *[other] { -brand-short-name } ojoko hetave <b>{ $blockedCount }</b> tapykuehoha { $date } guive!
+    }
+cfr-doorhanger-milestone-ok-button = Hechapa
+    .accesskey = H

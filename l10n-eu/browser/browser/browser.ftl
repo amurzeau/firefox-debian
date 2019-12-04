@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Gorde datuak biltegiratze iraunkorrean
 urlbar-addons-notification-anchor =
     .tooltiptext = Ireki gehigarrien instalazio-mezuen panela
+urlbar-tip-help-icon =
+    .title = Lortu laguntza
+urlbar-geolocation-blocked =
+    .tooltiptext = Kokalekuaren informazioa blokeatuta daukazu webgune honetarako.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Jakinarazpenak blokeatuta dauzkazu webgune honetarako.
+urlbar-camera-blocked =
+    .tooltiptext = Kamera blokeatuta daukazu webgune honetarako.
+urlbar-microphone-blocked =
+    .tooltiptext = Mikrofonoa blokeatuta daukazu webgune honetarako.
+urlbar-screen-blocked =
+    .tooltiptext = Pantaila partekatzea blokeatuta daukazu webgune honetarako.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Datuen biltegiratze iraunkorra blokeatuta daukazu webgune honetarako.
+urlbar-popup-blocked =
+    .tooltiptext = Popup leihoak blokeatuta dauzkazu webgune honetarako.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Soinudun multimedia automatikoki erreproduzitzea blokeatuta daukazu gune honetarako.
+urlbar-canvas-blocked =
+    .tooltiptext = Canvas-eko datuen erauzketa blokeatuta daukazu webgune honetarako.
+urlbar-midi-blocked =
+    .tooltiptext = MIDI sarbidea blokeatuta daukazu webgune honetarako.
+urlbar-install-blocked =
+    .tooltiptext = Gehigarrien instalazioa blokeatuta daukazu webgune honetarako.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Irten pantaila osoko ikuspegitik
     .accesskey = p
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Oraingoan, bilatu honekin:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Aldatu bilaketa-ezarpenak
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Aldatu bilaketa-ezarpenak
+search-one-offs-context-open-new-tab =
+    .label = Bilatu fitxa berrian
+    .accesskey = f
+search-one-offs-context-set-as-default =
+    .label = Ezarri bilaketa-motor lehenetsi gisa
+    .accesskey = h
+search-one-offs-context-set-as-default-private =
+    .label = Ezarri leiho pribatuetarako bilaketa-motor lehenetsi gisa
+    .accesskey = E

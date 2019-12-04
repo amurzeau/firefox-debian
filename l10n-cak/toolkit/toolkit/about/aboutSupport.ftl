@@ -147,6 +147,22 @@ intl-locales-default = Tzalq'omanïk kan k'o wi
 intl-os-title = Samajel taq Q'inoj
 intl-os-prefs-system-locales = Kitzalq'omanik Q'inoj
 intl-regional-prefs = Aj wawe' taq Ajowab'äl
+
+## Remote Debugging
+##
+## The Firefox remote protocol provides low-level debugging interfaces
+## used to inspect state and control execution of documents,
+## browser instrumentation, user interaction simulation,
+## and for subscribing to browser-internal events.
+##
+## See also https://firefox-source-docs.mozilla.org/remote/
+
+remote-debugging-title = Näj Ruchojmirisanem (Chromium Rub'eyal Samaj)
+remote-debugging-accepting-connections = Kek'ul taq okem
+remote-debugging-url = URL
+
+
+
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
@@ -243,6 +259,7 @@ unknown-failure = Q'ëq cholb'äl: rub'itz'ib' sachoj { $failureCode }
 d3d11layers-crash-guard = D3D11 Chojmirisanel
 d3d11video-crash-guard = D3D11 Silowachib'äl ewanel rusik'ixik
 d3d9video-crash-buard = D3D9 Silowachib'äl Ewanel rusik'ixik
+d3d9video-crash-guard = D3D9 Silowachib'äl Ewanel rusik'ixik
 glcontext-crash-guard = OpenGL
 reset-on-next-restart = K'a xtitzolïx na ri Rutikirisaxik chik
 gpu-process-kill-button = Tik'isb'ëx ri GPU Tajin

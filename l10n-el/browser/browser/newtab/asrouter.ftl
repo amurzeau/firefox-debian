@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = από { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Πρόταση
+cfr-doorhanger-extension-notification2 = Πρόταση
+    .tooltiptext = Πρόταση επέκτασης
+    .a11y-announcement = Διαθέσιμη πρόταση επέκτασης
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Πρόταση
+    .tooltiptext = Πρόταση λειτουργίας
+    .a11y-announcement = Διαθέσιμη πρόταση λειτουργίας
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -77,11 +85,17 @@ cfr-protections-panel-link-text = Μάθετε περισσότερα
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Νέο χαρακτηριστικό:
 cfr-whatsnew-button =
     .label = Τι νέο υπάρχει
     .tooltiptext = Τι νέο υπάρχει
 cfr-whatsnew-panel-header = Τι νέο υπάρχει
+cfr-whatsnew-release-notes-link-text = Διαβάστε τις σημειώσεις έκδοσης
+cfr-whatsnew-tracking-protect-link-text = Προβολή της αναφοράς σας
 cfr-whatsnew-tracking-blocked-link-text = Προβολή αναφοράς
+cfr-whatsnew-lockwise-backup-link-text = Ενεργοποίηση των αντιγράφων ασφαλείας
 cfr-whatsnew-lockwise-take-link-text = Λήψη εφαρμογής
 
 ## Bookmark Sync
@@ -110,3 +124,6 @@ cfr-doorhanger-socialtracking-ok-button = Προβολή προστασίας
     .accesskey = Π
 cfr-doorhanger-socialtracking-close-button = Κλείσιμο
     .accesskey = Κ
+
+## Enhanced Tracking Protection Milestones
+

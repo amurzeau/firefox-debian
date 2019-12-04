@@ -70,16 +70,19 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = ანგარიშის შენახულ მონაცემებს ეძებთ? გამართეთ { -sync-brand-short-name }.
+about-logins-login-intro-heading-logged-in = დასინქრონებული ანგარიშები ვერ მოიძებნა.
 login-intro-description = თუ თქვენს მონაცემებს { -brand-product-name } სხვა მოწყობილობაზე ინახავს, ნახეთ როგორ უნდა გადმოიტანოთ აქ:
 login-intro-instruction-fxa = შედით ან შექმენით { -fxaccount-brand-name } იმ მოწყობილობიდან, რომელზეც თქვენი ანგარიშები ინახება
 login-intro-instruction-fxa-settings = დარწმუნდით, რომ მონიშნული გაქვთ ანგარიშების უჯრა { -sync-brand-short-name(case: "gen") } პარამეტრებში
 about-logins-intro-instruction-help = იხილეთ <a data-l10n-name="help-link">{ -lockwise-brand-short-name }-მხარდაჭერის</a> გვერდი, დახმარების მისაღებად
+about-logins-intro-import = თუ თქვენი ანგარიშების მონაცემებ, სხვა ბრაუზერში ინახება, შეგიძლიათ <a data-l10n-name="import-link">გადმოიტანოთ { -lockwise-brand-short-name }-ში</a>
 
 ## Login
 
 login-item-new-login-title = ანგარიშის ახალი მონაცემები
 login-item-edit-button = ჩასწორება
 login-item-delete-button = წაშლა
+about-logins-login-item-remove-button = მოცილება
 login-item-origin-label = საიტის მისამართი
 login-item-origin =
     .placeholder = https://www.example.com
@@ -109,11 +112,8 @@ master-password-reload-button =
     .label = შესვლა
     .accesskey = ლ
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = გაუქმება
-confirmation-dialog-dismiss-button =
-    .title = გაუქმება
 enable-password-sync-notification-message =
     { PLATFORM() ->
         [windows] გსურთ თქვენი ანგარიშები თან იქონიოთ ყველგან, სადაც { -brand-product-name } გიყენიათ? გადადით { -sync-brand-short-name(case: "gen") } პარამეტრებში და მონიშნეთ ანგარიშების უჯრა.
@@ -127,8 +127,19 @@ enable-password-sync-preferences-button =
         }
     .accesskey = ი
 confirm-delete-dialog-title = წაიშალოს ეს ანგარიში?
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = მომავალში შეკითხვის გარეშე
+    .accesskey = გ
+
+## Dialogs
+
+confirmation-dialog-cancel-button = გაუქმება
+confirmation-dialog-dismiss-button =
+    .title = გაუქმება
+about-logins-confirm-remove-dialog-title = მოცილდეს ეს მონაცემები?
 confirm-delete-dialog-message = ეს ქმედება შეუქცევადია.
 confirm-delete-dialog-confirm-button = წაშლა
+about-logins-confirm-remove-dialog-confirm-button = მოცილება
 confirm-discard-changes-dialog-title = გაუქმდეს შეუნახავი ცვლილებები?
 confirm-discard-changes-dialog-message = ყველა შეუნახავი ცვლილება დაიკარგება.
 confirm-discard-changes-dialog-confirm-button = გაუქმება

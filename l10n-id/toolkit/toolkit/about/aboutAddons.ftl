@@ -185,6 +185,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Aktifkan
     .tooltiptext = Aktifkan pemeriksaan keamanan pemutakhiran pengaya
+extensions-warning-safe-mode = Semua pengaya telah dinonaktifkan dalam mode aman.
+extensions-warning-check-compatibility = Pemeriksaan kompatibilitas pengaya telah dinonaktifkan. Anda mungkin menggunakan pengaya yang tidak kompatibel.
+extensions-warning-check-compatibility-button = Aktifkan
+    .title = Aktifkan pemeriksaan kompatibilitas pengaya
+extensions-warning-update-security = Pemeriksaan keamanan pemutakhiran pengaya telah dinonaktifkan. Pemutakhiran pengaya saat ini memiliki risiko keamanan.
+extensions-warning-update-security-button = Aktifkan
+    .title = Aktifkan pemeriksaan keamanan pemutakhiran pengaya
 
 ## Strings connected to add-on updates
 
@@ -194,12 +201,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Tampilkan Versi Baru
     .accesskey = V
+addon-updates-check-for-updates = Periksa Versi Baru
+    .accesskey = P
+addon-updates-view-updates = Tampilkan Versi Baru
+    .accesskey = V
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Otomatis Perbarui Pengaya
+    .accesskey = O
+addon-updates-update-addons-automatically = Otomatis Perbarui Pengaya
     .accesskey = O
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -213,6 +226,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = S
 extensions-updates-reset-updates-to-manual =
     .label = Setel Ulang Semua Pengaya agar Hanya Diperbarui Manual
+    .accesskey = M
+addon-updates-reset-updates-to-automatic = Setel Ulang Semua Pengaya agar Diperbarui Otomatis
+    .accesskey = S
+addon-updates-reset-updates-to-manual = Setel Ulang Semua Pengaya agar Hanya Diperbarui Manual
     .accesskey = M
 
 ## Status messages displayed when updating add-ons
@@ -232,11 +249,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Pasang Versi Baru
     .tooltiptext = Pasang versi baru yang ada pada daftar ini
+addon-updates-updating = Memperbarui pengaya
+addon-updates-installed = Pengaya Anda telah diperbarui.
+addon-updates-none-found = Tidak ada versi baru ditemukan
+addon-updates-manual-updates-found = Tampilkan Versi Baru yang Tersedia
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Pasang Pengaya dari Berkas…
+    .accesskey = B
+addon-install-from-file-dialog-title = Pilih berkas pengaya untuk dipasang
+addon-install-from-file-filter-name = Pengaya
+addon-open-about-debugging = Debug Pengaya
+    .accesskey = b
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Kelola Pintasan Ekstensi
+    .accesskey = K
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Kelola Pintasan Ekstensi
     .accesskey = K
 shortcuts-no-addons = Anda tidak memiliki ekstensi yang aktif.
 shortcuts-no-commands = Ekstensi berikut tidak memiliki pintasan:
@@ -360,3 +393,17 @@ recommended-themes-heading = Tema yang Disarankan
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Merasa kreatif? <a data-l10n-name="link">Buat tema Anda sendiri dengan Firefox Color.</a>
+
+## Page headings
+
+extension-heading = Kelola ekstensi Anda
+theme-heading = Kelola tema Anda
+plugin-heading = Kelola plugin Anda
+dictionary-heading = Kelola kamus Anda
+locale-heading = Kelola bahasa Anda
+discover-heading = Personalisasi { -brand-short-name } Anda
+shortcuts-heading = Kelola Pintasan Ekstensi
+theme-heading-search-label = Temukan lebih banyak tema
+extension-heading-search-label = Temukan lebih banyak ekstensi
+addons-heading-search-input =
+    .placeholder = Cari addons.mozilla.org

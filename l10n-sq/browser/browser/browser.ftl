@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Depozitoni të dhëna në Depozitë të Qëndrueshme
 urlbar-addons-notification-anchor =
     .tooltiptext = Hapni kuadratin e mesazhit të instalimit të shtesës
+urlbar-tip-help-icon =
+    .title = Merrni ndihmë
+urlbar-geolocation-blocked =
+    .tooltiptext = Ia keni bllokuar këtij sajti të dhënat mbi vendndodhjen tuaj.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Ia keni bllokuar këtij sajti njoftimet.
+urlbar-camera-blocked =
+    .tooltiptext = E keni bllokuar kamerën tuaj për këtë sajt.
+urlbar-microphone-blocked =
+    .tooltiptext = E keni bllokuar kamerën tuaj për këtë sajt.
+urlbar-screen-blocked =
+    .tooltiptext = Ia keni bllokuar këtij sajti përdorimin e ekranit tuaj.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = E keni bllokuar depozitimin e qëndrueshëm për këtë sajt.
+urlbar-popup-blocked =
+    .tooltiptext = I keni bllokuar flluskat për këtë sajt.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = E keni bllokuar vetëluajtje mediash me tinguj tuaj për këtë sajt.
+urlbar-canvas-blocked =
+    .tooltiptext = Për këtë sajt e keni bllokuar përftimin e të dhënave të kanavacës.
+urlbar-midi-blocked =
+    .tooltiptext = E keni bllokuar hyrjen MIDI për këtë sajt.
+urlbar-install-blocked =
+    .tooltiptext = Ia keni bllokuar këtij sajti instalimin e shtesave.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Dilni nga Sa Krejt Ekrani
     .accesskey = D
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Këtë herë kërko me:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Ndryshoji Rregullimet e Kërkimit
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Ndryshoni rregullime kërkimi
+search-one-offs-context-open-new-tab =
+    .label = Kërkoni në Skedë të Re
+    .accesskey = S
+search-one-offs-context-set-as-default =
+    .label = Caktojeni Si Motor Parazgjedhje Kërkimesh
+    .accesskey = P
+search-one-offs-context-set-as-default-private =
+    .label = Vëre si Motor Kërkimi Parazgjedhje për Dritare Private
+    .accesskey = V

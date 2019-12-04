@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-do-not-track-description = ウェブサイトに “Do Not Track” 信号を送り、追跡されたくないことを知らせます
+do-not-track-description = ウェブサイトに “Do Not Track” 信号を送り、追跡されたくないことを知らせます。
 do-not-track-learn-more = 詳細情報
 do-not-track-option-default-content-blocking-known =
     .label = 既知のトラッカーをブロックする設定時のみ
@@ -15,6 +15,12 @@ pref-page =
             [windows] オプション
            *[other] 設定
         }
+
+pref-page-title =
+    { PLATFORM() ->
+        [windows] オプション
+       *[other] 設定
+    }
 
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
@@ -342,6 +348,11 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 applications-type-description-with-type = { $type-description } ({ $type })
 
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } を使用 ({ -brand-short-name } 内で表示)
@@ -431,7 +442,7 @@ update-setting-write-failure-title = 変更した設定の保存エラー
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
     { -brand-short-name } がエラーに遭遇したため変更を保存できませんでした。この設定変更を保存するには、以下のファイルの書き込み権限が必要なことに注意してください。あなたかシステム管理者が、このファイルにユーザーグループのフルコントロール権限を与えると、エラーを解決できる可能性があります。
-
+    
     ファイルに書き込みできません: { $path }
 
 update-in-progress-title = 更新中
@@ -498,7 +509,7 @@ browsing-picture-in-picture-toggle-enabled =
     .label = ピクチャーインピクチャーの動画の操作を有効にする
     .accesskey = E
 
-browsing-picture-in-picture-learn-more = 詳細
+browsing-picture-in-picture-learn-more = 詳細情報
 
 browsing-cfr-recommendations =
     .label = おすすめの拡張機能を紹介する
@@ -507,7 +518,7 @@ browsing-cfr-features =
     .label = おすすめの機能を紹介する
     .accesskey = f
 
-browsing-cfr-recommendations-learn-more = 詳細
+browsing-cfr-recommendations-learn-more = 詳細情報
 
 ## General Section - Proxy
 
@@ -515,7 +526,7 @@ network-settings-title = ネットワーク設定
 
 network-proxy-connection-description = { -brand-short-name } のインターネットへの接続方法を設定します。
 
-network-proxy-connection-learn-more = 詳細
+network-proxy-connection-learn-more = 詳細情報
 
 network-proxy-connection-settings =
     .label = 接続設定...
@@ -571,7 +582,6 @@ choose-bookmark =
 
 home-prefs-content-header = Firefox Home コンテンツ
 home-prefs-content-description = Firefox Home に表示するコンテンツを選びましょう。
-home-prefs-content-discovery-description = Firefox Home のコンテンツディスカバリーは関連性の高い優れた記事をウェブ上から発見できます。
 
 home-prefs-search-header =
     .label = ウェブ検索
@@ -621,7 +631,8 @@ search-bar-shown =
 search-engine-default-header = 既定の検索エンジン
 search-engine-default-desc = アドレスバーと検索バーで使用される既定の検索エンジンを選択してください。
 
-search-engine-default-private-desc = プライベートウィンドウで使用する検索エンジンを選択してください。
+search-engine-default-desc-2 = アドレスバーと検索バーの既定の検索エンジンです。いつでも切り替えられます。
+search-engine-default-private-desc-2 = プライベートウィンドウでの既定の検索エンジンを選択してください
 search-separate-default-engine =
     .label = この検索エンジンをプライベートウィンドウで使用する
     .accesskey = U
@@ -644,6 +655,9 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = アドレスバーの入力候補は、検索候補を閲覧履歴より先に表示する
+
+search-show-suggestions-private-windows =
+    .label = プライベートウィンドウで検索候補を表示する
 
 suggestions-addressbar-settings = ブラウジング履歴、ブックマーク、タブの候補の設定を変更
 
@@ -704,6 +718,10 @@ sync-signedout-account-create = アカウントをお持ちでない方は作成
 sync-signedout-account-signin =
     .label = ログイン...
     .accesskey = I
+
+sync-signedout-account-signin2 =
+    .label = { -sync-brand-short-name } にログイン...
+    .accesskey = i
 
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -784,6 +802,10 @@ sync-currently-syncing-prefs =
         [windows] オプション
        *[other] 個人設定
     }
+
+sync-change-options =
+    .label = 変更...
+    .accesskey = C
 
 ## The "Choose what to sync" dialog.
 
@@ -874,7 +896,11 @@ privacy-header = ブラウザープライバシー
 
 ## Privacy Section - Forms
 
+## Privacy Section - Logins and Passwords
+
 logins-header = ログインとパスワード
+
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = ウェブサイトのログイン情報とパスワードを保存する
     .accesskey = r
@@ -887,7 +913,9 @@ forms-generate-passwords =
 forms-breach-alerts =
     .label = 漏洩したウェブサイトのパスワードの警告を表示する
     .accesskey = b
-forms-breach-alerts-learn-more-link = 詳細
+forms-breach-alerts-learn-more-link = 詳細情報
+
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = ログイン情報とパスワードを自動入力する
     .accesskey = i
@@ -1040,7 +1068,7 @@ content-blocking-enhanced-tracking-protection = 強化型トラッキング防�
 
 content-blocking-section-top-level-description = トラッカーはあなたの習慣や興味に関する情報を収集するために、オンラインであなたを追跡します。{ -brand-short-name } はこれらのトラッカーや悪意のあるスクリプトの多くをブロックします。
 
-content-blocking-learn-more = 詳細
+content-blocking-learn-more = 詳細情報
 
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -1093,10 +1121,10 @@ content-blocking-fingerprinters = フィンガープリント採取
 
 content-blocking-warning-title = 注意！
 content-blocking-warning-description = コンテンツをブロックすると、一部のウェブサイトが機能しなくなる可能性があります。信頼するサイトはブロッキングを無効にできます。
-content-blocking-learn-how = 詳細
+content-blocking-learn-how = 詳細情報
 
 content-blocking-etp-warning-description = トラッカーをブロックすると、一部のサイトの機能に影響がある可能性があります。すべてのコンテンツを読み込むには、トラッカーを許容してページを再読み込みします。
-content-blocking-warning-learn-how = 詳細
+content-blocking-warning-learn-how = 詳細情報
 
 content-blocking-reload-description = これらの変更を適用するには、タブを再読み込みする必要があります。
 content-blocking-reload-tabs-button =

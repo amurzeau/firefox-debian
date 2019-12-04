@@ -189,6 +189,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Уключыць
     .tooltiptext = Уключыць праверку бяспечнасці абнаўленняў дадаткаў
+extensions-warning-safe-mode = Усе дадаткі адключаны бяспечным рэжымам.
+extensions-warning-check-compatibility = Праверка сумяшчальнасці дадаткаў адключана. Вы можаце мець несумяшчальныя дадаткі.
+extensions-warning-check-compatibility-button = Уключыць
+    .title = Уключыць праверку сумяшчальнасці дадаткаў
+extensions-warning-update-security = Праверка бяспечнасці дадаткаў адключана. Вы можаце быць падведзены пад рызыку абнаўленнямі.
+extensions-warning-update-security-button = Уключыць
+    .title = Уключыць праверку бяспечнасці абнаўленняў дадаткаў
 
 ## Strings connected to add-on updates
 
@@ -198,12 +205,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Пабачыць нядаўнія абнаўленні
     .accesskey = б
+addon-updates-check-for-updates = Праверыць наяўнасць абнаўленняў
+    .accesskey = с
+addon-updates-view-updates = Пабачыць нядаўнія абнаўленні
+    .accesskey = б
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Аўтаматычна абнаўляць дадаткі
+    .accesskey = А
+addon-updates-update-addons-automatically = Аўтаматычна абнаўляць дадаткі
     .accesskey = А
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -217,6 +230,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = Н
 extensions-updates-reset-updates-to-manual =
     .label = Наладзіць усе дадаткі на ручное абнаўленне
+    .accesskey = Н
+addon-updates-reset-updates-to-automatic = Наладзіць усе дадаткі абнаўляцца самастойна
+    .accesskey = Н
+addon-updates-reset-updates-to-manual = Наладзіць усе дадаткі на ручное абнаўленне
     .accesskey = Н
 
 ## Status messages displayed when updating add-ons
@@ -236,11 +253,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Усталяваць абнаўленні
     .tooltiptext = Усталяваць даступныя абнаўленні з гэтага спісу
+addon-updates-updating = Абнаўленне дадаткаў
+addon-updates-installed = Вашы дадаткі абноўленыя.
+addon-updates-none-found = Абнаўленні не знойдзеныя
+addon-updates-manual-updates-found = Пабачыць даступныя абнаўленні
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Усталяваць дадатак з файла…
+    .accesskey = У
+addon-install-from-file-dialog-title = Выберыце дадатак для ўсталявання
+addon-install-from-file-filter-name = Дадаткі
+addon-open-about-debugging = Адладка дадаткаў
+    .accesskey = А
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Кіраваць спалучэннямі клавіш пашырэнняў
+    .accesskey = ы
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Кіраваць спалучэннямі клавіш пашырэнняў
     .accesskey = ы
 shortcuts-no-addons = У вас не ўключана ніводнага пашырэння.
 shortcuts-no-commands = Наступныя пашырэнні не маюць спалучэнняў клавіш:
@@ -314,6 +347,8 @@ addon-options-button =
 
 report-addon-button = Паведаміць
 remove-addon-button = Выдаліць
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Нельга выдаліць <a data-l10n-name="link">Чаму?</a>
 disable-addon-button = Адключыць
 enable-addon-button = Уключыць
 expand-addon-button = Дадатковыя параметры
@@ -408,3 +443,18 @@ recommended-themes-heading = Рэкамендаваныя тэмы
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Адчуваеце натхненне? <a data-l10n-name="link">Стварыце ўласную тэму з дапамогай Firefox Color.</a>
+
+## Page headings
+
+extension-heading = Кіруйце сваімі пашырэннямі
+theme-heading = Кіруйце сваімі тэмамі
+plugin-heading = Кіруйце сваімі плагінамі
+dictionary-heading = Кіруйце сваімі слоўнікамі
+locale-heading = Кіруйце сваімі мовамі
+updates-heading = Кіруйце сваімі абнаўленнямі
+discover-heading = Персаналізуйце свой { -brand-short-name }
+shortcuts-heading = Кіраваць спалучэннямі клавіш пашырэнняў
+theme-heading-search-label = Знайсці іншыя тэмы
+extension-heading-search-label = Знайсці іншыя пашырэнні
+addons-heading-search-input =
+    .placeholder = Пошук на addons.mozilla.org

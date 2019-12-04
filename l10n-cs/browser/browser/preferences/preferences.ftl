@@ -14,6 +14,11 @@ pref-page =
             [windows] Možnosti
            *[other] Předvolby
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Možnosti
+       *[other] Předvolby
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -73,13 +78,13 @@ restart-later = Restartovat později
 
 # This string is shown to notify the user that their home page
 # is being controlled by an extension.
-extension-controlled-homepage-override = Vaši domovskou stránku spravuje <img data-l10n-name="icon"/> { $name }.
+extension-controlled-homepage-override = Vaši domovskou stránku spravuje rozšíření <img data-l10n-name="icon"/> { $name }.
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
-extension-controlled-new-tab-url = Stránku v novém panelu spravuje <img data-l10n-name="icon"/> { $name }.
+extension-controlled-new-tab-url = Stránku v novém panelu spravuje rozšíření <img data-l10n-name="icon"/> { $name }.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
-extension-controlled-web-notifications = Toto nastavení spravuje <img data-l10n-name="icon"/> { $name }.
+extension-controlled-web-notifications = Toto nastavení spravuje rozšíření <img data-l10n-name="icon"/> { $name }.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Rozšíření <img data-l10n-name="icon"/> { $name } vám nastavilo nový výchozí vyhledávač.
@@ -88,10 +93,10 @@ extension-controlled-default-search = Rozšíření <img data-l10n-name="icon"/>
 extension-controlled-privacy-containers = <img data-l10n-name="icon"/> { $name } vyžaduje kontejnerové panely.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = Toto nastavení spravuje <img data-l10n-name="icon"/> { $name }.
+extension-controlled-websites-content-blocking-all-trackers = Toto nastavení spravuje rozšíření <img data-l10n-name="icon"/> { $name }.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
-extension-controlled-proxy-config = Připojení aplikace { -brand-short-name } k internetu spravuje <img data-l10n-name="icon"/> { $name }.
+extension-controlled-proxy-config = Připojení aplikace { -brand-short-name } k internetu spravuje rozšíření <img data-l10n-name="icon"/> { $name }.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -285,6 +290,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Použít { $plugin-name } (v aplikaci { -brand-short-name })
@@ -405,7 +414,7 @@ browsing-search-on-start-typing =
     .label = Psaním vyhledávat text na stránce
     .accesskey = x
 browsing-picture-in-picture-toggle-enabled =
-    .label = Povolit ovládání videa v režimu obraz v obraze
+    .label = Zobrazovat ovládací prvky videa v režimu obraz v obraze
     .accesskey = E
 browsing-picture-in-picture-learn-more = Zjistit více
 browsing-cfr-recommendations =
@@ -466,7 +475,6 @@ choose-bookmark =
 
 home-prefs-content-header = Obsah domovské stránky Firefoxu
 home-prefs-content-description = Vyberte obsah, který chcete mít na výchozí domovské stránce Firefoxu.
-home-prefs-content-discovery-description = Doporučování obsahu na domovské stránce obsahu vám nabídne kvalitní a relevantní články z celého internetu.
 home-prefs-search-header =
     .label = Vyhledávání na webu
 home-prefs-topsites-header =
@@ -515,9 +523,10 @@ search-bar-shown =
     .label = Přidat na lištu vyhledávací pole
 search-engine-default-header = Výchozí vyhledávač
 search-engine-default-desc = Vyberte výchozí vyhledávač pro hledání z adresního řádku nebo vyhledávacího pole.
-search-engine-default-private-desc = Vyberte výchozí vyhledávač pro použití v režimu anonymního prohlížení.
+search-engine-default-desc-2 = Vyberte si výchozí vyhledávač pro adresní řádek i vyhledávací pole.
+search-engine-default-private-desc-2 = Vyberte odlišný výchozí vyhledávač pro použití v režimu anonymního prohlížení.
 search-separate-default-engine =
-    .label = Použít tento vyhledávač v režimu anonymního prohlížení
+    .label = Použít tento vyhledávač jako výchozí také v režimu anonymního prohlížení
     .accesskey = u
 search-suggestions-header = Našeptávání
 search-suggestions-desc = Zvolte si, zda a jak má prohlížeč zobrazovat návrhy od vyhledávače.
@@ -534,6 +543,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Našeptávat vyhledávání v adresním řádku nad stránkami z historie prohlížení
+search-show-suggestions-private-windows =
+    .label = Našeptávat vyhledávání také v anonymním prohlížení
 suggestions-addressbar-settings = Nastavit našeptávání z historie prohlížení, záložek a otevřených panelů
 search-suggestions-cant-show = Návrhy vyhledávání se nebudou adresním řádku zobrazovat, protože jste aplikaci { -brand-short-name } nastavili, aby si nikdy nepamatovala historii.
 search-one-click-header = Vyhledávání jedním klepnutím
@@ -582,6 +593,9 @@ sync-signedout-account-create = Nemáte účet? Začněte tady
     .accesskey = t
 sync-signedout-account-signin =
     .label = Přihlásit se…
+    .accesskey = i
+sync-signedout-account-signin2 =
+    .label = Přihlášení k { -sync-brand-short-name(case: "dat") }…
     .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -730,7 +744,11 @@ privacy-header = Nastavení soukromí
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Přihlašovací údaje
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Ptát se na ukládání přihlašovacích údajů
     .accesskey = P
@@ -744,6 +762,7 @@ forms-breach-alerts =
     .label = Upozorňovat na hesla uložená pro servery, kde došlo k úniku dat
     .accesskey = ú
 forms-breach-alerts-learn-more-link = Zjistit více
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Automaticky vyplňovat přihlašovací údaje
     .accesskey = y

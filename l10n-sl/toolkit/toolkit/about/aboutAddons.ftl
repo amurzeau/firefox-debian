@@ -188,6 +188,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Omogoči
     .tooltiptext = Omogoči preverjanje, ali je posodobitev dodatka varna
+extensions-warning-safe-mode = Zaradi dela v varnem načinu so vsi dodatki onemogočeni.
+extensions-warning-check-compatibility = Preverjanje združljivosti dodatkov je onemogočeno. Mogoče imate nameščene dodatke, ki niso združljivi.
+extensions-warning-check-compatibility-button = Omogoči
+    .title = Omogoči preverjanje združljivosti dodatkov
+extensions-warning-update-security = Preverjanje, ali je posodobitev dodatkov varna, je onemogočeno. Posodobitve lahko ogrozijo vaš sistem.
+extensions-warning-update-security-button = Omogoči
+    .title = Omogoči preverjanje, ali je posodobitev dodatka varna
 
 ## Strings connected to add-on updates
 
@@ -197,12 +204,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Pokaži nedavne posodobitve
     .accesskey = n
+addon-updates-check-for-updates = Poišči posodobitve
+    .accesskey = P
+addon-updates-view-updates = Pokaži nedavne posodobitve
+    .accesskey = n
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Samodejno posodobi dodatke
+    .accesskey = d
+addon-updates-update-addons-automatically = Samodejno posodobi dodatke
     .accesskey = d
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -216,6 +229,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = S
 extensions-updates-reset-updates-to-manual =
     .label = Ponastavi vse dodatke na ročno posodabljanje
+    .accesskey = R
+addon-updates-reset-updates-to-automatic = Ponastavi vse dodatke na samodejno posodabljanje
+    .accesskey = S
+addon-updates-reset-updates-to-manual = Ponastavi vse dodatke na ročno posodabljanje
     .accesskey = R
 
 ## Status messages displayed when updating add-ons
@@ -235,11 +252,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Namesti posodobitve
     .tooltiptext = Namesti posodobitve, ki so na voljo v seznamu
+addon-updates-updating = Posodabljanje dodatkov
+addon-updates-installed = Vaši dodatki so posodobljeni.
+addon-updates-none-found = Ni novih posodobitev
+addon-updates-manual-updates-found = Preglej vse posodobitve
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Namesti dodatek iz datoteke …
+    .accesskey = I
+addon-install-from-file-dialog-title = Izberite dodatek za namestitev
+addon-install-from-file-filter-name = Dodatki
+addon-open-about-debugging = Dodatki za razhroščevanje
+    .accesskey = D
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Upravljanje bližnjic razširitev
+    .accesskey = b
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Upravljanje bližnjic razširitev
     .accesskey = b
 shortcuts-no-addons = Nimate omogočenih razširitev.
 shortcuts-no-commands = Naslednje razširitve nimajo dodeljenih bližnjic:
@@ -314,6 +347,8 @@ addon-options-button =
 
 report-addon-button = Prijavi
 remove-addon-button = Odstrani
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Ni mogoče odstraniti <a data-l10n-name="link">Zakaj?</a>
 disable-addon-button = Onemogoči
 enable-addon-button = Omogoči
 expand-addon-button = Več možnosti
@@ -409,3 +444,18 @@ recommended-themes-heading = Priporočene teme
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Ste ustvarjalno razpoloženi? <a data-l10n-name="link">Ustvarite lastno temo s Firefox Colorjem.</a>
+
+## Page headings
+
+extension-heading = Upravljanje razširitev
+theme-heading = Upravljanje tem
+plugin-heading = Upravljanje vtičnikov
+dictionary-heading = Upravljanje slovarjev
+locale-heading = Upravljanje jezikov
+updates-heading = Upravljanje posodobitev
+discover-heading = Prilagodite svoj { -brand-short-name }
+shortcuts-heading = Upravljanje bližnjic razširitev
+theme-heading-search-label = Poišči več tem
+extension-heading-search-label = Poišči več razširitev
+addons-heading-search-input =
+    .placeholder = Iskanje po addons.mozilla.org

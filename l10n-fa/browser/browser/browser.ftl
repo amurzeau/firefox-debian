@@ -25,6 +25,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = باز کردن تابلو پیام‌ها
 urlbar-geolocation-notification-anchor =
     .tooltiptext = باز کردن تابلوی درخواستِ مکان
+urlbar-storage-access-anchor =
+    .tooltiptext = باز کردن تابلوی مجوز فعالیت مرور
 urlbar-translate-notification-anchor =
     .tooltiptext = ترجمه این صفحه
 urlbar-web-rtc-share-screen-notification-anchor =
@@ -45,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = ذخیره اطلاعات به صورت ذخیره دائمی
 urlbar-addons-notification-anchor =
     .tooltiptext = باز کردن تابلو پیام‌های نصب افزودنی‌ها
+urlbar-tip-help-icon =
+    .title = کمک بگیرید
+urlbar-geolocation-blocked =
+    .tooltiptext = شما این پایگاه‌وب را برای دسترسی به اطلاعات مکانی مسدود کرده‌اید.
+urlbar-web-notifications-blocked =
+    .tooltiptext = شما این پایگاه‌وب را برای امکان ارسال اعلان مسدود کرده‌اید.
+urlbar-camera-blocked =
+    .tooltiptext = شما این پایگاه‌وب را برای دسترسی به دوربین مسدود کرده‌اید.
+urlbar-microphone-blocked =
+    .tooltiptext = شما این پایگاه‌وب را برای دسترسی به میکروفن مسدود کرده‌اید.
+urlbar-screen-blocked =
+    .tooltiptext = شما این پایگاه‌وب را برای اشتراک‌گذاری صفحهٔ خود مسدود کرده‌اید.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = شما این پایگاه‌وب را برای ذخیره اطلاعات مسدود کرده‌اید.
+urlbar-popup-blocked =
+    .tooltiptext = شما پنجره باز شو مسدود شده برای این پایگاه اینترنتی دارید.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = شما پخش خودکار رسانه صدا را برای این پایگاه اینترنتی مسدود کرده‌اید.
+urlbar-canvas-blocked =
+    .tooltiptext = شما بوم‌های استراخ شده‌ای از این وب سایت دادرید که مسدود شده‌‌اند.
+urlbar-midi-blocked =
+    .tooltiptext = شما دسترسی این وب‌سایت به MIDI را مسدود کرده‌اید.
+urlbar-install-blocked =
+    .tooltiptext = شما نصب افزونه‌ها از طریق این وب‌سایت را مسدود کرده‌اید.
 
 ## Page Action Context Menu
 
@@ -63,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = خروج از حالت مرور تمام‌صفحه
     .accesskey = ت
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = این بار، جست‌وجو با:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = تغییر تنظیمات جستجو
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = تغییر تنظیمات جستجو
+search-one-offs-context-open-new-tab =
+    .label = جست‌وجو در زبانه جدید
+    .accesskey = ز
+search-one-offs-context-set-as-default =
+    .label = تنظیم به عنوان موتور جست‌وجو پیش‌فرض
+    .accesskey = پ
+search-one-offs-context-set-as-default-private =
+    .label = تنظیم به عنوان موتور جست‌وجو پیش‌فرض در پنجره‌های ناشناس
+    .accesskey = P

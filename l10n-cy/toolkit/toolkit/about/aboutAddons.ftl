@@ -184,6 +184,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Galluogi
     .tooltiptext = Galluogi gwirio diogelwch diweddariad ychwanegyn
+extensions-warning-safe-mode = Mae pob ychwanegyn wedi eu hanalluogi gan y modd diogel.
+extensions-warning-check-compatibility = Mae gwirio cydnawsedd ychwanegion wedi ei analluogi. Efallai fod gennych ychwanegion anghydnaws.
+extensions-warning-check-compatibility-button = Galluogi
+    .title = Galluogi gwirio cydnawsedd ychwanegion
+extensions-warning-update-security = Mae gwirio diogelwch diweddariad wedi ei analluogi. Efallai eich bod o dan fygythiad gan ddiweddariad.
+extensions-warning-update-security-button = Galluogi
+    .title = Galluogi gwirio diogelwch diweddariad ychwanegyn
 
 ## Strings connected to add-on updates
 
@@ -193,12 +200,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Gweld Diweddariadau Diweddar
     .accesskey = D
+addon-updates-check-for-updates = Gwirio am Ddiweddariadau
+    .accesskey = G
+addon-updates-view-updates = Gweld Diweddariadau Diweddar
+    .accesskey = D
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Diweddaru Ychwanegion yn Awtomatig
+    .accesskey = A
+addon-updates-update-addons-automatically = Diweddaru Ychwanegion yn Awtomatig
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -212,6 +225,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = P
 extensions-updates-reset-updates-to-manual =
     .label = Ailosod Pob Ychwanegyn i Ddiweddaru gyda Llaw
+    .accesskey = L
+addon-updates-reset-updates-to-automatic = Ailosod Pob Ychwanegyn i'w Diweddaru'n Awtomatig
+    .accesskey = P
+addon-updates-reset-updates-to-manual = Ailosod Pob Ychwanegyn i Ddiweddaru gyda Llaw
     .accesskey = L
 
 ## Status messages displayed when updating add-ons
@@ -231,11 +248,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Gosod Diweddariadau
     .tooltiptext = Gosod diweddariadau sydd ar gael o'r rhestr
+addon-updates-updating = Diweddaru ychwanegion
+addon-updates-installed = Mae eich ychwanegion wedi eu diweddaru.
+addon-updates-none-found = Heb ganfod diweddariadau
+addon-updates-manual-updates-found = Gweld Diweddariadau ar Gael
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Gosod Ychwanegyn o Ffeil…
+    .accesskey = G
+addon-install-from-file-dialog-title = Dewis ategyn i'w osod
+addon-install-from-file-filter-name = Ychwanegion
+addon-open-about-debugging = Dadfygio Ychwanegion
+    .accesskey = Y
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Rheoli Estyniad Llwybrau Byr
+    .accesskey = R
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Rheoli Estyniad Llwybrau Byr
     .accesskey = R
 shortcuts-no-addons = Nid oes gennych unrhyw estyniadau wedi'u galluogi.
 shortcuts-no-commands = Nid oes gan yr estyniadau canlynol lwybrau byr:
@@ -283,7 +316,7 @@ discopane-intro =
     yn eu hargymell </a> am ddiogelwch, perfformiad, a swyddogaethau gwell.
 # Notice to make user aware that the recommendations are personalized.
 discopane-notice-recommendations =
-    Mae rhai o'r argymhellion hyn wedi'u personoli. Maen nhw'n seiliedig ar 
+    Mae rhai o'r argymhellion hyn wedi'u dewis yn benodol ar eich cyfer chi. Maen nhw'n seiliedig ar 
     estyniadau eraill rydych chi wedi'u gosod, eich proffil dewisiadau, a'ch ystadegau defnydd.
 discopane-notice-learn-more = Dysgu rhagor
 privacy-policy = Polisi Preifatrwydd
@@ -310,6 +343,8 @@ addon-options-button =
 
 report-addon-button = Adrodd
 remove-addon-button = Tynnu
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Methu ei Dynnu <a data-l10n-name="link"> Pam? </a>
 disable-addon-button = Analluogu
 enable-addon-button = Galluogi
 expand-addon-button = Rhagor o Opsiynau
@@ -407,3 +442,18 @@ recommended-themes-heading = Themâu Cymeradwy
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Teimlo'n greadigol? <a data-l10n-name="link">Adeiladwch eich thema eich hun gyda Firefox Color. </a>
+
+## Page headings
+
+extension-heading = Rheoli eich estyniadau
+theme-heading = Rheoli eich themâu
+plugin-heading = Rheoli eich ategion
+dictionary-heading = Rheoli eich geiriaduron
+locale-heading = Rheoli eich ieithoedd
+updates-heading = Rheoli Eich Diweddariadau
+discover-heading = Personoli Eich { -brand-short-name }
+shortcuts-heading = Rheoli Estyniad Llwybrau Byr
+theme-heading-search-label = Canfod themâu eraill
+extension-heading-search-label = Canfod estyniadau eraill
+addons-heading-search-input =
+    .placeholder = Search addons.mozilla.org

@@ -45,6 +45,26 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Mooftu keɓe e Ndesgu Duumiingu
 urlbar-addons-notification-anchor =
     .tooltiptext = Uddit ɗaldugal ɓatakuure aafirgal ɓeyditte
+urlbar-geolocation-blocked =
+    .tooltiptext = A daaƴii humpito nokkuure e ndee lowre.
+urlbar-web-notifications-blocked =
+    .tooltiptext = A daaƴii tintine e ndee lowre.
+urlbar-camera-blocked =
+    .tooltiptext = A daaƴii kameraa maa e ndee lowre.
+urlbar-microphone-blocked =
+    .tooltiptext = A daaƴii mikoroo maa e ndee lowre.
+urlbar-screen-blocked =
+    .tooltiptext = A daaƴii ndee lowre e lollingol yaynirde maa.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = A daaƴii ndesgu duumiingu e ndee lowre.
+urlbar-popup-blocked =
+    .tooltiptext = A faddiima kenorɗe pop-up nder ndee lowre.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = A faddiima mejaa janngol ɗoon e ɗoon hito wonande ndee lowre.
+urlbar-canvas-blocked =
+    .tooltiptext = A daaƴii aaftogol keɓe keertol wonande ndee lowre geese.
+urlbar-midi-blocked =
+    .tooltiptext = A daaƴii keɓgol MIDI wonande ndee lowre geese.
 
 ## Page Action Context Menu
 
@@ -63,3 +83,18 @@ full-screen-autohide =
 full-screen-exit =
     .label = Yaltu Mbaydi Njaajeendi Yaynirde
     .accesskey = N
+
+## Search Engine selection buttons (one-offs)
+
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Wayly Teelte Njiilaw
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Waylu teelte njiilaw
+search-one-offs-context-open-new-tab =
+    .label = Yiylo e Tabbere Hesere
+    .accesskey = T
+search-one-offs-context-set-as-default =
+    .label = Waɗtu Yiylorɗe Woowaanɗe
+    .accesskey = D

@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = av { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Rekommendation
+cfr-doorhanger-extension-notification2 = Rekommendation
+    .tooltiptext = Rekommendation av tillägg
+    .a11y-announcement = Rekommendation av tillägg tillgänglig
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Rekommendation
+    .tooltiptext = Funktionsrekommendation
+    .a11y-announcement = Funktionsrekommendation tillgänglig
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -78,6 +86,9 @@ cfr-protections-panel-link-text = Läs mer
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Ny funktion:
 cfr-whatsnew-button =
     .label = Vad är nytt
     .tooltiptext = Vad är nytt
@@ -146,9 +157,24 @@ cfr-doorhanger-socialtracking-ok-button = Se skydd
     .accesskey = S
 cfr-doorhanger-socialtracking-close-button = Stäng
     .accesskey = S
+cfr-doorhanger-socialtracking-dont-show-again = Visa mig inte meddelanden som dessa igen
+    .accesskey = V
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } hindrade ett socialt nätverk från att spåra dig här
 cfr-doorhanger-socialtracking-description = Din integritet är viktig. { -brand-short-name } blockerar nu vanliga trackers för sociala medier, vilket begränsar hur mycket data de kan samla in om vad du gör online.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } blockerade en fingerprinter på den här sidan
 cfr-doorhanger-fingerprinters-description = Din integritet är viktig. { -brand-short-name } blockerar nu fingerprinters, som samlar in delar av unik identifierbar information om din enhet för att spåra dig.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } blockerade en cryptominer på den här sidan
 cfr-doorhanger-cryptominers-description = Din integritet är viktig. { -brand-short-name } blockerar nu cryptominers, som använder ditt systems datakraft för att utvinna digitala pengar.
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+        [one] { -brand-short-name } blockerade <b>{ $blockedCount }</b> tracker sedan { $date }!
+       *[other] { -brand-short-name } blockerade över <b>{ $blockedCount }</b> trackers sedan { $date }!
+    }
+cfr-doorhanger-milestone-ok-button = Visa alla
+    .accesskey = V

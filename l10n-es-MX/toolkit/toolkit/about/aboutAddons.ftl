@@ -187,6 +187,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Habilitar
     .tooltiptext = Habilitar chequeo de seguridad para la actualización del complemento
+extensions-warning-safe-mode = Todos los complementos han sido deshabilitados en modo seguro.
+extensions-warning-check-compatibility = Chequeo de compatibilidad para complementos esta deshabilitada. Tu puedes tener complementos incompatibles.
+extensions-warning-check-compatibility-button = Habilitar
+    .title = Habilitar chequeo de compatibilidad para complementos.
+extensions-warning-update-security = El chequeo de seguridad para actualización del complemento esta deshabilitada. Tu navegador puede estar en peligro por las actualizaciones.
+extensions-warning-update-security-button = Habilitar
+    .title = Habilitar chequeo de seguridad para la actualización del complemento
 
 ## Strings connected to add-on updates
 
@@ -196,12 +203,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Ver actualizaciones recientes
     .accesskey = V
+addon-updates-check-for-updates = Buscar actualizaciones
+    .accesskey = c
+addon-updates-view-updates = Ver actualizaciones recientes
+    .accesskey = V
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Actualizar los complementos automáticamente
+    .accesskey = A
+addon-updates-update-addons-automatically = Actualizar los complementos automáticamente
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -215,6 +228,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = R
 extensions-updates-reset-updates-to-manual =
     .label = Restablecer todos los complementos para actualizar manualmente
+    .accesskey = R
+addon-updates-reset-updates-to-automatic = Restablecer todos los complementos para actualizar automáticamente
+    .accesskey = R
+addon-updates-reset-updates-to-manual = Restablecer todos los complementos para actualizar manualmente
     .accesskey = R
 
 ## Status messages displayed when updating add-ons
@@ -234,11 +251,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Instalar actualizaciones
     .tooltiptext = Instalar actualizaciones disponibles en esta lista
+addon-updates-updating = Actualizando complementos
+addon-updates-installed = Tus complementos han sido actualizados.
+addon-updates-none-found = No se encontraron actualizaciones
+addon-updates-manual-updates-found = Ver actualizaciones disponibles
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Instalar complemento desde archivo…
+    .accesskey = I
+addon-install-from-file-dialog-title = Seleccionar este complemento para instalar
+addon-install-from-file-filter-name = Complementos
+addon-open-about-debugging = Depurar complementos
+    .accesskey = p
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Administrar atajos de extensiones
+    .accesskey = s
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Administrar atajos de extensiones
     .accesskey = s
 shortcuts-no-addons = No tienes complementos habilitados.
 shortcuts-no-commands = Las siguientes extensiones no tienen atajos:
@@ -309,6 +342,8 @@ addon-options-button =
 
 report-addon-button = Denunciar
 remove-addon-button = Eliminar
+# The link will always be shown after the other text.
+remove-addon-disabled-button = No puede ser eliminado <a data-l10n-name="link">¿Por qué?</a>
 disable-addon-button = Deshabilitar
 enable-addon-button = Habilitar
 expand-addon-button = Más opciones
@@ -402,3 +437,18 @@ recommended-themes-heading = Temas recomendados
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = ¿Te sientes creativo? <a data-l10n-name="link"> Crea tu propio tema con Firefox Color. </a>
+
+## Page headings
+
+extension-heading = Administra tus complementos
+theme-heading = Administra tus temas
+plugin-heading = Administra tus plugins
+dictionary-heading = Administrar diccionarios
+locale-heading = Administra tus idiomas
+updates-heading = Administra tus actualizaciones
+discover-heading = Personaliza tu { -brand-short-name }
+shortcuts-heading = Administrar atajos de extensiones
+theme-heading-search-label = Buscar más temas
+extension-heading-search-label = Encontrar más extensiones
+addons-heading-search-input =
+    .placeholder = Buscar en addons.mozilla.org

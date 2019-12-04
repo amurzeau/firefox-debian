@@ -69,5 +69,61 @@ serviceworker-empty-suggestions-debugger = tralegi la registradon de via «Servi
 # Suggestion to go to about:debugging in order to see Service Workers for all domains.
 # Clicking on the link will open about:debugging in a new tab.
 serviceworker-empty-suggestions-aboutdebugging = inspekti «Service Workers» de aliaj nomregnoj. <a>Malfermi about:debugging</a>
-# Text displayed when no manifest was found for the current page.
+# Header for the Manifest page when we have an actual manifest
+manifest-view-header = Manifesto de programo
+# Header for the Manifest page when there's no manifest to inspect
+# The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
 manifest-empty-intro = Neniu manifesto por inspekti estis trovita.
+# Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
+manifest-item-warnings = Eraroj kaj avertoj
+# Header for the Identity section of Manifest inspection displayed in the application panel.
+manifest-item-identity = Identeco
+# Header for the Presentation section of Manifest inspection displayed in the application panel.
+manifest-item-presentation = Prezento
+# Header for the Icon section of Manifest inspection displayed in the application panel.
+manifest-item-icons = Emblemo
+# Text displayed while we are loading the manifest file
+manifest-loading = Manifesto ŝargata…
+# Text displayed when the manifest has been successfully loaded
+manifest-loaded-ok = Manifesto ŝargita.
+# Text displayed as a caption when there has been an error while trying to
+# load the manifest
+manifest-loaded-error = Okazis eraro dum ŝargado de manifesto:
+# Text displayed as an error when there has been a Firefox DevTools error while
+# trying to load the manifest
+manifest-loaded-devtools-error = Eraro en Iloj de Firefox por programistoj
+# Text displayed when the page has no manifest available
+manifest-non-existing = Neniu manifesto trovita por inspekti.
+# Text displayed when the page has a manifest embedded in a Data URL and
+# thus we cannot link to it.
+manifest-json-link-data-url = La manifesto estas enmetita en datuma retadreso.
+# Text displayed at manifest icons to label their purpose, as declared
+# in the manifest.
+manifest-icon-purpose = Celo: <code>{ $purpose }</code>
+# Text displayed as the alt attribute for <img> tags showing the icons in the
+# manifest.
+manifest-icon-img =
+    .alt = Emblemo
+# Text displayed as the title attribute for <img> tags showing the icons in the
+# manifest. `$sizes` is a user-dependent string that has been parsed as a
+# space-separated list of `<width>x<height>` sizes or the keyword `any`.
+manifest-icon-img-title = Emblemo kun grandoj: { $sizes }
+# Text displayed as the title attribute for <img> tags showing the icons in the
+# manifest, in case there's no icon size specified by the user
+manifest-icon-img-title-no-sizes = Nespecifita grando de emblemo
+# Sidebar navigation item for Manifest sidebar item section
+sidebar-item-manifest = Manifesto
+    .alt = Emblemo de manifesto
+    .title = Manifesto
+# Sidebar navigation item for Service Workers sidebar item section
+sidebar-item-service-workers = Service Workers
+    .alt = Emblemo de Service Workers
+    .title = Service Workers
+# Text for the ALT and TITLE attributes of the warning icon
+icon-warning =
+    .alt = Averta emblemo
+    .title = Averto
+# Text for the ALT and TITLE attributes of the error icon
+icon-error =
+    .alt = Emblemo de eraro
+    .title = Eraro

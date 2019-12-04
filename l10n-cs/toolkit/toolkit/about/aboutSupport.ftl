@@ -141,6 +141,22 @@ intl-locales-default = Výchozí jazyk
 intl-os-title = Operační systém
 intl-os-prefs-system-locales = Jazyky systému
 intl-regional-prefs = Předvolby regionu
+
+## Remote Debugging
+##
+## The Firefox remote protocol provides low-level debugging interfaces
+## used to inspect state and control execution of documents,
+## browser instrumentation, user interaction simulation,
+## and for subscribing to browser-internal events.
+##
+## See also https://firefox-source-docs.mozilla.org/remote/
+
+remote-debugging-title = Vzdálené ladění (protokol Chromia)
+remote-debugging-accepting-connections = Přijímá spojení
+remote-debugging-url = URL
+
+
+
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
@@ -242,6 +258,7 @@ unknown-failure = Zablokováno; chybový kód { $failureCode }
 d3d11layers-crash-guard = D3D11 Compositor
 d3d11video-crash-guard = D3D11 Video dekodér
 d3d9video-crash-buard = D3D9 Video dekodér
+d3d9video-crash-guard = D3D9 Video dekodér
 glcontext-crash-guard = OpenGL
 reset-on-next-restart = Obnovit po při příštím restartu
 gpu-process-kill-button = Ukončit GPU proces

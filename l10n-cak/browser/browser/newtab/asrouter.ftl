@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = ruma { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Chilab'enïk
+cfr-doorhanger-extension-notification2 = Chilab'enïk
+    .tooltiptext = Ruchilab'exik k'amal
+    .a11y-announcement = Ruchilab'exik k'amal k'o
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Chilab'enïk
+    .tooltiptext = Rub'anikil chilab'enïk
+    .a11y-announcement = Rub'anikil chilab'enïk k'o
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -78,12 +86,15 @@ cfr-protections-panel-link-text = Tetamäx ch'aqa' chik
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = K'ak'a' samaj:
 cfr-whatsnew-button =
     .label = K'ak'a' Rutzijol
     .tooltiptext = K'ak'a' Rutzijol
 cfr-whatsnew-panel-header = Achike natzijoj
 cfr-whatsnew-release-notes-link-text = Tasik'ij ri k'ak'a' rutzijol
-cfr-whatsnew-fx70-title = { -brand-short-name } wakami tato' ri awichinanem
+cfr-whatsnew-fx70-title = { -brand-short-name } wakami nuya' rejqalem ri awichinanem
 cfr-whatsnew-fx70-body =
     Ri ruk'isib'äl k'exoj nrutzilaj ri Chajinïk chuwäch Ojqanem chuqa' nub'än
     chi man k'ayew ta ye'atz'ük ütz ewan taq tzij kichin ri taq ruxaq.
@@ -146,9 +157,24 @@ cfr-doorhanger-socialtracking-ok-button = Ketz'et taq chajinem
     .accesskey = h
 cfr-doorhanger-socialtracking-close-button = Titz'apïx
     .accesskey = t
+cfr-doorhanger-socialtracking-dont-show-again = Man kek'ut chik pe taq rutzijol achi'el re'
+    .accesskey = M
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } xuq'ät chi jun aj winäq k'amab'ey yatrojqaj wawe'
 cfr-doorhanger-socialtracking-description = K'atzinel ri awichinanem. { -brand-short-name } wakami yeruq'ät ri kojqanela' aj winäq k'amab'ey, nuq'ät runimilem tzij yetikïr nikimöl chi rij ri nasamajij pa k'amab'ey.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } xuq'ät jun tz'etöy retal ruwi' q'ab'aj pa re ruxaq re'
 cfr-doorhanger-fingerprinters-description = Nïm ri awichinanem. { -brand-short-name } wakami yeruq'ät ri tz'etöy retal ruwi' q'ab'aj, ri yekimöl kich'akulal retamab'al retal winäq chi rij ri rokisab'al richin nrojqaj.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } xuq'ät jun ajkriptomin pa re ruxaq re'
 cfr-doorhanger-cryptominers-description = Nïm ri awichinanem. { -brand-short-name } wakami yeruq'ät ri ajkriptomin, nikokisaj ruchuqa' rukematz'ib'il aq'inoj richin nrelesaj kematz'ib'il pwäq.
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+        [one] ¡{ -brand-short-name } xeruq'ät k'ïy <b>{ $blockedCount }</b> taq ojqanela' pa { $date }!
+       *[other] ¡{ -brand-short-name } xeruq'ät k'ïy <b>{ $blockedCount }</b> taq ojqanela' pa { $date }!
+    }
+cfr-doorhanger-milestone-ok-button = Titzet Ronojel
+    .accesskey = t

@@ -47,6 +47,26 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Stòr dàta san stòras bhuan
 urlbar-addons-notification-anchor =
     .tooltiptext = Fosgail panail teachdaireachdan stàladh thuilleadan
+urlbar-geolocation-blocked =
+    .tooltiptext = Bhac thu fiosrachadh mun ionad agad air an làrach-lìn seo.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Bhac thu brathan air an làrach-lìn seo.
+urlbar-camera-blocked =
+    .tooltiptext = Bhac thu an camara agad air an làrach-lìn seo.
+urlbar-microphone-blocked =
+    .tooltiptext = Bhac thu am micreofon agad air an làrach-lìn seo.
+urlbar-screen-blocked =
+    .tooltiptext = Bhac thu an làrach-lìn seo o bhith a’ co-roinneadh na sgrìn agad.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Bhac thu stòras dàta buan mu choinneamh na làraich-lìn seo.
+urlbar-popup-blocked =
+    .tooltiptext = Bhac thu priob-uinneagan air an làrach-lìn seo.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Bhac thu fèin-chluich de mheadhanan aig a bheil fuaim air an làrach-lìn seo.
+urlbar-canvas-blocked =
+    .tooltiptext = Bhac thu às-tharraing dàta canabhais air an làrach-lìn seo.
+urlbar-midi-blocked =
+    .tooltiptext = Bhac thu inntrigeadh MIDI air an làrach-lìn seo.
 
 ## Page Action Context Menu
 
@@ -65,3 +85,18 @@ full-screen-autohide =
 full-screen-exit =
     .label = Fàg modh na làn-sgrìn
     .accesskey = l
+
+## Search Engine selection buttons (one-offs)
+
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Roghainnean luirg
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Atharraich na roghainnean luirg
+search-one-offs-context-open-new-tab =
+    .label = Lorg ann an taba ùr
+    .accesskey = t
+search-one-offs-context-set-as-default =
+    .label = Cleachd seo mar an t-einnsean-luirg bunaiteach
+    .accesskey = d

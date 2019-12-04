@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Uložit data natrvalo
 urlbar-addons-notification-anchor =
     .tooltiptext = Otevřít panel zpráv instalace doplňku
+urlbar-tip-help-icon =
+    .title = Získat pomoc
+urlbar-geolocation-blocked =
+    .tooltiptext = Tomuto serveru jste zablokovali zjišťovat vaši polohu.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Tomuto serveru jste zablokovali zobrazovat oznámení.
+urlbar-camera-blocked =
+    .tooltiptext = Tomuto serveru jste zablokovali přístup k vaší kameře.
+urlbar-microphone-blocked =
+    .tooltiptext = Tomuto serveru jste zablokovali přístup k vašemu mikrofonu.
+urlbar-screen-blocked =
+    .tooltiptext = Tomuto serveru jste zablokovali sdílení vaší obrazovky.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Tomuto serveru jste zablokovali ukládání dat natrvalo.
+urlbar-popup-blocked =
+    .tooltiptext = Tomuto serveru jste zablokovali otevírání vyskakovacích oken.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Pro tento server jste zablokovali automatické přehrávání médií se zvukem.
+urlbar-canvas-blocked =
+    .tooltiptext = Tomuto serveru jste zablokovali přístup k informacím canvasu.
+urlbar-midi-blocked =
+    .tooltiptext = Tomuto serveru jste zablokovali přístup k MIDI zařízením.
+urlbar-install-blocked =
+    .tooltiptext = Tomuto serveru jste zablokovali instalaci doplňků.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Ukončit režim celé obrazovky
     .accesskey = k
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Vyhledat pomocí
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Změnit nastavení vyhledávání
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Změnit nastavení vyhledávání
+search-one-offs-context-open-new-tab =
+    .label = Hledat v novém panelu
+    .accesskey = n
+search-one-offs-context-set-as-default =
+    .label = Nastavit jako výchozí vyhledávač
+    .accesskey = v
+search-one-offs-context-set-as-default-private =
+    .label = Nastavit jako výchozí vyhledávač pro anonymní prohlížení
+    .accesskey = p

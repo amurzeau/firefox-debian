@@ -33,6 +33,7 @@ policy-DisableFirefoxStudies = Forhindre { -brand-short-name } fra å kjøre und
 policy-DisableForgetButton = Forhindre tilgang til knappen Glem.
 policy-DisableFormHistory = Ikke lagre søke- og skjemahistorikk.
 policy-DisableMasterPasswordCreation = Om aktiv, kan ikke et hovedpassord lages.
+policy-DisablePasswordReveal = Ikke la passord bli avslørt for lagrede innlogginger.
 policy-DisablePocket = Deaktiver funksjonen for å lagre nettsider til Pocket.
 policy-DisablePrivateBrowsing = Slå av Privat nettlesing.
 policy-DisableProfileImport = Deaktiver meny-kommandoen for å importere data fra en annen nettleser.
@@ -61,6 +62,7 @@ policy-HardwareAcceleration = Hvis deaktivert, slå av maskinvareakselerasjon.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Sett og eventuelt lås startsiden.
 policy-InstallAddonsPermission = Tillat visse nettsteder å installere utvidelser.
+policy-LegacyProfiles = Slå av funksjonen som påtvinger en egen profil for hver installasjon
 policy-LocalFileLinks = Tillat at bestemte nettsteder kobler til lokale filer.
 policy-NetworkPrediction = Aktiver eller deaktiver nettverkspredikering (DNS-prefetch).
 policy-NewTabPage = Slå på eller av ny fane-siden.
@@ -77,7 +79,7 @@ policy-PromptForDownloadLocation = Spør hvor du skal lagre filer når du laster
 policy-Proxy = Konfigurer proxy-innstillinger.
 policy-RequestedLocales = Velg rekkefølgen av språk, som skal brukes i programmet.
 policy-SanitizeOnShutdown2 = Fjern nettlesingsdata ved avslutning.
-policy-SearchBar = Angi standardplassering for søkefeltet. Brukeren kan fortsatt tilpasse den.
+policy-SearchBar = Angi standardplassering for søkelinjen. Brukeren kan fortsatt tilpasse den.
 policy-SearchEngines = Konfigurer søkemotorinnstillinger. Denne policyen er kun tilgjengelig for Extended Support Release (ESR).
 policy-SearchSuggestEnabled = Slå av eller på søkeforslag.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation

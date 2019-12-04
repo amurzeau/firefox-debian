@@ -14,6 +14,11 @@ pref-page =
             [windows] Nastajenja
            *[other] Nastajenja
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Nastajenja
+       *[other] Nastajenja
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -288,6 +293,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } wužywaś (w { -brand-short-name })
@@ -313,7 +322,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Wopśimjeśe Digital Right Management (DRM)
 play-drm-content =
@@ -353,7 +362,7 @@ update-setting-write-failure-title = Zmólka pśi składowanju aktualizěrowańs
 # The newlines between the main text and the line containing the path is
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
-    { -brand-short-name } jo starcył na zmólku a njejo toś tu změnu składł. Źiwajśo na to, až se toś to aktualizěrowańske nastajenje pisańske pšawo za slědujucu dataju pomina. Wy abo systemowy administrator móžotej zmólku pórěźiś, gaž wužywarskej kupce połnu kontrolu nad toś teju dataju dajotej.
+    { -brand-short-name } jo starcył na zmólku a njejo toś tu změnu składł. Źiwajśo na to, až se toś to aktualizěrowańske nastajenje pisańske pšawo za slědujucu dataju pomina. Wy abo systemowy administrator móžotej zmólku pórěźiś, gaž wužywaŕskej kupce połnu kontrolu nad toś teju dataju dajotej.
     
     Njedajo se do dataje pisaś: { $path }
 update-in-progress-title = Aktualizacija běžy
@@ -463,7 +472,6 @@ choose-bookmark =
 
 home-prefs-content-header = Wopśimjeśe startowego boka Firefox
 home-prefs-content-description = Wubjeŕśo, kótare wopśimjeśe cośo na swójej startowej wobrazowce Firefox měś.
-home-prefs-content-discovery-description = Content Discovery na startowem boku Firefox wam zmóžnja, w interneśe relewantne nastawki wusokeje kwality namakaś.
 home-prefs-search-header =
     .label = Webpytanje
 home-prefs-topsites-header =
@@ -513,7 +521,8 @@ search-bar-shown =
     .label = Pytańske pólo symbolowej rědce pśidaś
 search-engine-default-header = Standardna pytnica
 search-engine-default-desc = Wubjeŕśo standardnu pytnicu, kótaraž ma se w adresowem pólu a pytańskem polu wužywaś.
-search-engine-default-private-desc = Wubjeŕśo standardnu pytnicu za wužywanje w priwatnych woknach.
+search-engine-default-desc-2 = To jo waša standardna pytnica w adresowej rědce a pytańskej rědce. Móžośo je kuždy raz pśešaltowaś.
+search-engine-default-private-desc-2 = Wubjeŕśo drugu standardnu pytnicu jano za priwatny modus
 search-separate-default-engine =
     .label = Toś tu pytnicu w priwatnych woknach wužywaś
     .accesskey = T
@@ -532,6 +541,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Pytańske naraźenja pśed pśeglědowańskeju historiju we wuslědkach adresowego póla pokazaś
+search-show-suggestions-private-windows =
+    .label = Pytańske naraźenja w priwatnych woknach pokazaś
 suggestions-addressbar-settings = Wubjeŕśo nastajenja za pśeglědowańsku historiju, cytańske znamjenja a rejtarkowe naraźenja
 search-suggestions-cant-show = Pytańske naraźenja njebudu se we wuslědkach adresowego póla pokazaś, dokulaž sćo { -brand-short-name } tak konfigurěrował, až njespomnjejo se nigda historiju.
 search-one-click-header = Pytnice z jadnym kliknjenim
@@ -673,11 +684,11 @@ sync-engine-tabs =
     .accesskey = r
 sync-engine-logins =
     .label = Pśizjawjenja
-    .tooltiptext = Wužywarske mjenja a gronidła, kótarež sćo składł
+    .tooltiptext = Wužywaŕske mjenja a gronidła, kótarež sćo składł
     .accesskey = P
 sync-engine-logins-passwords =
     .label = Pśizjawjenja a gronidła
-    .tooltiptext = Wužywarske mjenja a gronidła, kótarež sćo składł
+    .tooltiptext = Wužywaŕske mjenja a gronidła, kótarež sćo składł
     .accesskey = P
 sync-engine-addresses =
     .label = Adrese
@@ -723,6 +734,9 @@ sync-fxa-privacy-notice = Powěźeńka priwatnosći
 privacy-header = Priwatnosć wobglědowaka
 
 ## Privacy Section - Forms
+
+
+## Privacy Section - Logins and Passwords
 
 logins-header = Pśizjawjenja a gronidła
 forms-ask-to-save-logins =
@@ -892,7 +906,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Swójski
     .accesskey = S
 
-
+##
 
 content-blocking-etp-standard-desc = Wuwažony za šćit a wugbaśe. Boki se normalnje zacytaju.
 content-blocking-etp-strict-desc = Mócnjejšy šćit, ale móžo zawinowaś, až někotare sedła abo wopśimjeśe wěcej njefunkcioněruju.

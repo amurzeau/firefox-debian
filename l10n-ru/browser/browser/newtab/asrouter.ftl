@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = от { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Рекомендация
+cfr-doorhanger-extension-notification2 = Рекомендация
+    .tooltiptext = Рекомендация расширения
+    .a11y-announcement = Доступна рекомендация расширения
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Рекомендация
+    .tooltiptext = Рекомендация функции
+    .a11y-announcement = Доступна рекомендация функции
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -80,6 +88,9 @@ cfr-protections-panel-link-text = Подробнее
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Новая функция:
 cfr-whatsnew-button =
     .label = Что нового
     .tooltiptext = Что нового
@@ -129,8 +140,8 @@ cfr-doorhanger-sync-logins-ok-button = Включить { -sync-brand-short-name
 cfr-doorhanger-send-tab-header = Читайте на ходу
 cfr-doorhanger-send-tab-recipe-header = Возьмите этот рецепт на кухню
 cfr-doorhanger-send-tab-body = Отправка вкладок позволяет вам легко поделиться этой ссылкой со своим телефоном или везде, где бы вы ни вошли в { -brand-product-name }.
-cfr-doorhanger-send-tab-ok-button = Попробуйте отправить вкладку
-    .accesskey = е
+cfr-doorhanger-send-tab-ok-button = Испытайте отправку вкладки
+    .accesskey = ы
 
 ## Firefox Send
 
@@ -141,11 +152,29 @@ cfr-doorhanger-firefox-send-ok-button = Попробуйте { -send-brand-name 
 
 ## Social Tracking Protection
 
+cfr-doorhanger-socialtracking-ok-button = Посмотреть защиту
+    .accesskey = м
 cfr-doorhanger-socialtracking-close-button = Закрыть
     .accesskey = к
+cfr-doorhanger-socialtracking-dont-show-again = Больше не показывать мне подобные сообщения
+    .accesskey = ш
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } не позволил социальной сети отслеживать вас здесь
 cfr-doorhanger-socialtracking-description = Ваша приватность имеет значение. { -brand-short-name } теперь блокирует трекеры социальных сетей, ограничивая количество собираемых ими данных о вашей деятельности в Интернете.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } заблокировал сборщик цифровых отпечатков на этой странице
 cfr-doorhanger-fingerprinters-description = Ваша приватность имеет значение. { -brand-short-name } теперь блокирует сборщики цифровых отпечатков, которые собирают уникальную информацию, используемую для идентификации устройства и слежения за вами.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } заблокировал криптомайнер на этой странице
 cfr-doorhanger-cryptominers-description = Ваша приватность имеет значение. { -brand-short-name } теперь блокирует криптомайнеры, которые используют вычислительные мощности вашей системы для добычи цифровых валют.
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+        [one] { -brand-short-name } заблокировал более <b>{ $blockedCount }</b> трекера с { $date }!
+        [few] { -brand-short-name } заблокировал более <b>{ $blockedCount }</b> трекеров с { $date }!
+       *[many] { -brand-short-name } заблокировал более <b>{ $blockedCount }</b> трекеров с { $date }!
+    }
+cfr-doorhanger-milestone-ok-button = Посмотреть всё
+    .accesskey = о

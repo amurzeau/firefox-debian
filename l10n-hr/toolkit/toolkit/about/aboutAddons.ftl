@@ -57,11 +57,11 @@ cmd-preferences =
            *[other] O
         }
 cmd-enable-theme =
-    .label = Postavi temu
-    .accesskey = t
+    .label = Aktiviraj motiv
+    .accesskey = k
 cmd-disable-theme =
-    .label = Onemogući temu
-    .accesskey = t
+    .label = Deaktiviraj motiv
+    .accesskey = k
 cmd-install-addon =
     .label = Instaliraj
     .accesskey = I
@@ -70,7 +70,7 @@ cmd-contribute =
     .accesskey = D
     .tooltiptext = Doprinesite razvoju ovog dodatka
 discover-title = Što su dodaci?
-discover-description = Dodaci su aplikacije koje vam omogućavaju personalizaciju { -brand-short-name }a s dodatnim funkcionalnostima ili stilom. Isprobajte bočnu traku koja vam ušteđuje vrijeme, dodajte vremensku prognozu ili postavite drugu temu za { -brand-short-name }.
+discover-description = Dodaci su aplikacije koje omogućuju prilagođavanje { -brand-short-name }a s dodatnim funkcionalnostima ili stilom. Isprobajte bočnu traku koja vam ušteđuje vrijeme, dodajte vremensku prognozu ili postavite drugi motiv za { -brand-short-name }.
 discover-footer = Kada ste spojeni na Internet, u ovom će prozoru biti istaknute neke od najboljih i najpopularnijih dodataka koje možete isprobati.
 detail-version =
     .label = Inačica
@@ -182,6 +182,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Omogući
     .tooltiptext = Omogući provjeru dostupnosti sigurnosnih dopuna za dodatke
+extensions-warning-safe-mode = Sve je dodatke onemogućio sigurnosni način rada.
+extensions-warning-check-compatibility = Provjera kompatibilnosti dodataka je isključena. Možda imate nekompatibilne dodatke.
+extensions-warning-check-compatibility-button = Omogući
+    .title = Omogući provjeru kompatibilnosti dodataka
+extensions-warning-update-security = Provjera dostupnosti sigurnosnih dopuna za dodatke je onemogućena. Dodacima možda nedostaju sigurnosne dopune.
+extensions-warning-update-security-button = Omogući
+    .title = Omogući provjeru dostupnosti sigurnosnih dopuna za dodatke
 
 ## Strings connected to add-on updates
 
@@ -191,12 +198,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Prikaži nedavne dopune
     .accesskey = v
+addon-updates-check-for-updates = Provjeri dostupnost dopuna
+    .accesskey = d
+addon-updates-view-updates = Prikaži nedavne dopune
+    .accesskey = v
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Automatski ažuriraj dodatke
+    .accesskey = A
+addon-updates-update-addons-automatically = Automatski ažuriraj dodatke
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -210,6 +223,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = r
 extensions-updates-reset-updates-to-manual =
     .label = Postavi ručno ažuriranje za sve dodatke
+    .accesskey = r
+addon-updates-reset-updates-to-automatic = Postavi automatsko ažuriranje za sve dodatke
+    .accesskey = r
+addon-updates-reset-updates-to-manual = Postavi ručno ažuriranje za sve dodatke
     .accesskey = r
 
 ## Status messages displayed when updating add-ons
@@ -229,11 +246,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Instaliraj dopune
     .tooltiptext = Instaliraj dostupne dopune s ovog popisa
+addon-updates-updating = Ažuriranje dodataka
+addon-updates-installed = Vaši su dodaci ažurirani.
+addon-updates-none-found = Nisu pronađene dopune
+addon-updates-manual-updates-found = Prikaži dostupne dopune
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Instaliraj dodatak iz datoteke…
+    .accesskey = I
+addon-install-from-file-dialog-title = Odaberite dodatak za instalaciju
+addon-install-from-file-filter-name = Dodaci
+addon-open-about-debugging = Otklanjanje grešaka u dodacima
+    .accesskey = g
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Upravljanje tipkovničkim kraticama dodatka
+    .accesskey = U
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Upravljanje tipkovničkim kraticama dodatka
     .accesskey = U
 shortcuts-no-addons = Nemate omogućenih dodataka
 shortcuts-no-commands = Sljedeći dodaci nemaju prečice:
@@ -272,7 +305,7 @@ go-back-button =
 # Explanatory introduction to the list of recommended add-ons. The action word
 # ("recommends") in the final sentence is a link to external documentation.
 discopane-intro =
-    Dodaci i teme su kao aplikacije za vaš preglednik i oni vam omogućavaju
+    Dodaci i motivi su kao aplikacije za vaš preglednik i oni vam omogućavaju
     da zaštitite lozinke, preuzimate video na disk, pronađete akcije, blokirate
     naporne reklame, izmjenite kako vaš preglednik izgleda i puno više. Ovi mali
     programi su često razvijeni od treće strane. Ovdje možete pronaći
@@ -293,7 +326,7 @@ created-by-author = od <a data-l10n-name="author">{ $author }</a>
 #   $dailyUsers (number) - The number of daily users.
 user-count = Korisnici: { $dailyUsers }
 install-extension-button = Dodaj u { -brand-product-name }
-install-theme-button = Instaliraj temu
+install-theme-button = Instaliraj motiv
 # The label of the button that appears after installing an add-on. Upon click,
 # the detailed add-on view is opened, from where the add-on can be managed.
 manage-addon-button = Upravljanje
@@ -307,6 +340,8 @@ addon-options-button =
 
 report-addon-button = Prijavi
 remove-addon-button = Ukloni
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Ne može se ukloniti. <a data-l10n-name="link">Zašto?</a>
 disable-addon-button = Onemogući
 enable-addon-button = Omogući
 expand-addon-button = Više mogućnosti
@@ -397,7 +432,21 @@ release-notes-loading = Učitavanje…
 release-notes-error = Došlo je do greške pri učitavanju napomena o izdanju.
 addon-permissions-empty = Ovaj dodatak ne zahtjeva nikakve dozvole.
 recommended-extensions-heading = Preporučeni dodatci
-recommended-themes-heading = Preporučene teme
+recommended-themes-heading = Preporučeni motivi
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
-recommended-theme-1 = Osjećate li se kreativno? <a data-l10n-name="link">Izradite vlastitu temu s Firefox Color.</a>
+recommended-theme-1 = Osjećate li se kreativno? <a data-l10n-name="link">Izradite vlastiti motiv s Firefox Color.</a>
+
+## Page headings
+
+extension-heading = Upravljanje dodacima
+theme-heading = Upravljaj motivima
+plugin-heading = Upravljanje priključcima
+dictionary-heading = Upravljanje rječnicima
+locale-heading = Upravljanje jezicima
+discover-heading = Prilagodite svoj { -brand-short-name }
+shortcuts-heading = Upravljanje prečacima dodataka
+theme-heading-search-label = Pronađi daljnje motive
+extension-heading-search-label = Pronađite više dodataka
+addons-heading-search-input =
+    .placeholder = Pretraži addons.mozilla.org

@@ -70,42 +70,42 @@
   -  checkbox that toggles chrome debugging, i.e. devtools.chrome.enabled
   -  boolean preference in about:config, in the options panel. -->
 <!ENTITY options.enableChrome.label5    "Activar le cassas de depuration del chrome del browser e del additivos">
-<!ENTITY options.enableChrome.tooltip3  "Activar iste option te permittera usar plure instrumentos de developpator in le contexto del navigator (via Instrumentos > Developpator Web > Cassa de instrumentos del navigator) e depurar additivos ab le gestor de additivos">
+<!ENTITY options.enableChrome.tooltip3  "Activar iste option te permittera usar plure instrumentos de disveloppator in le contexto del navigator (via Instrumentos > Disveloppamento Web > Cassa de instrumentos del navigator) e depurar additivos ab le gestor de additivos">
 
 <!-- LOCALIZATION NOTE (options.enableRemote.label3): This is the label for the
   -  checkbox that toggles remote debugging, i.e. devtools.debugger.remote-enabled
   -  boolean preference in about:config, in the options panel. -->
 <!ENTITY options.enableRemote.label3    "Activar le depuration remote">
-<!ENTITY options.enableRemote.tooltip2  "Activar iste option consentira al instrumentos de disveloppamento de depurar un instantia remote como Firefox OS">
+<!ENTITY options.enableRemote.tooltip2  "Activar iste option permittera al instrumentos de disveloppamento de depurar un instantia remote como Firefox OS">
 
 <!-- LOCALIZATION NOTE (options.disableJavaScript.label,
   -  options.disableJavaScript.tooltip): This is the options panel label and
   -  tooltip for the checkbox that toggles JavaScript on or off. -->
-<!ENTITY options.disableJavaScript.label     "Inactivar JavaScript *">
-<!ENTITY options.disableJavaScript.tooltip   "Activar iste option inactivara JavaScript pro le scheda currente. Si le scheda o le cassa de instrumentos es claudite, iste definitiones essera oblidate.">
+<!ENTITY options.disableJavaScript.label     "Disactivar JavaScript *">
+<!ENTITY options.disableJavaScript.tooltip   "Activar iste option disactiva JavaScript pro le scheda currente. Si le scheda o le cassa de instrumentos es claudite, iste parametro essera oblidate.">
 
 <!-- LOCALIZATION NOTE (options.disableHTTPCache.label,
   -  options.disableHTTPCache.tooltip): This is the options panel label and
   -  tooltip for the checkbox that toggles the HTTP cache on or off. -->
-<!ENTITY options.disableHTTPCache.label     "Inactivar le cache HTTP (quando le cassa de instrumentos es aperite)">
-<!ENTITY options.disableHTTPCache.tooltip   "Activar iste option inactivata le cache HTTP pro tote le schedas que ha le cassa de instrumentos aperite. Le Service Workers non es affectate per iste option.">
+<!ENTITY options.disableHTTPCache.label     "Disactivar le cache HTTP (quando le cassa de instrumentos es aperte)">
+<!ENTITY options.disableHTTPCache.tooltip   "Activar iste option disactiva le cache HTTP pro tote le schedas que ha le cassa de instrumentos aperte. Iste option non ha effecto sur le Service Workers.">
 
 <!-- LOCALIZATION NOTE (options.enableServiceWorkersHTTP.label,
   -  options.enableServiceWorkersHTTP.tooltip): This is the options panel label and
   -  tooltip for the checkbox that toggles the service workers testing features on or off. This option enables service workers over HTTP. -->
 <!ENTITY options.enableServiceWorkersHTTP.label     "Activar le Service Workers via HTTP (quando le cassa de instrumentos es aperite)">
-<!ENTITY options.enableServiceWorkersHTTP.tooltip   "Activar iste option inactivara le service workers via HTTP pro tote le schedas que ha le cassa de instrumentos aperite.">
+<!ENTITY options.enableServiceWorkersHTTP.tooltip   "Activar iste option disactiva le service workers via HTTP pro tote le schedas que ha le cassa de instrumentos aperte.">
 
 <!-- LOCALIZATION NOTE (options.selectDefaultTools.label2): This is the label for
   -  the heading of group of checkboxes corresponding to the default developer
   -  tools. -->
-<!ENTITY options.selectDefaultTools.label2    "Instrumentos de developpator predefinite">
+<!ENTITY options.selectDefaultTools.label2    "Instrumentos de disveloppamento predefinite">
 
 <!-- LOCALIZATION NOTE (options.selectAdditionalTools.label): This is the label for
   -  the heading of group of checkboxes corresponding to the developer tools
   -  added by add-ons. This heading is hidden when there is no developer tool
   -  installed by add-ons. -->
-<!ENTITY options.selectAdditionalTools.label  "Instrumentos de developpator installate via additivos">
+<!ENTITY options.selectAdditionalTools.label  "Instrumentos de disveloppamento installate via additivos">
 
 <!-- LOCALIZATION NOTE (options.selectEnabledToolboxButtons.label): This is the label for
   -  the heading of group of checkboxes corresponding to the default developer
@@ -125,7 +125,7 @@
 <!-- LOCALIZATION NOTE (options.usedeveditiontheme.*) Options under the
   -  toolbox for enabling and disabling the Developer Edition browser theme. -->
 <!ENTITY options.usedeveditiontheme.label   "Usar le thema Developer Edition">
-<!ENTITY options.usedeveditiontheme.tooltip "Activa/inactiva le thema Developer Edition.">
+<!ENTITY options.usedeveditiontheme.tooltip "Activa/disactiva le thema Developer Edition.">
 
 <!-- LOCALIZATION NOTE (options.webconsole.label): This is the label for the
   -  heading of the group of Web Console preferences in the options panel. -->
@@ -167,8 +167,8 @@
 
 <!-- LOCALIZATION NOTE (options.screenshot.clipboard.label): This is the
    - label for the checkbox that toggles screenshot to clipboard feature. -->
-<!ENTITY options.screenshot.clipboard.label      "Capturar instantaneo del schermo e copiar lo in le planchetta">
-<!ENTITY options.screenshot.clipboard.tooltip    "Copiar le instantaneos de schermo directemente in le planchetta">
+<!ENTITY options.screenshot.clipboard.label      "Capturar schermo in area de transferentia">
+<!ENTITY options.screenshot.clipboard.tooltip    "Salva le captura del schermo directemente in le area de transferentia">
 
 <!-- LOCALIZATION NOTE (options.screenshot.audio.label): This is the
    - label for the checkbox that toggles the camera shutter audio for screenshot tool -->

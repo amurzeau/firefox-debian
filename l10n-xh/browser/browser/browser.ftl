@@ -37,6 +37,18 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Gcina idatha kuGcino oluQhubekayo
 urlbar-addons-notification-anchor =
     .tooltiptext = Vula iphanele yokongezelela umyalezo wokufakela
+urlbar-geolocation-blocked =
+    .tooltiptext = Uyibhlokile inkcazelo yendawo kule webhusayithi.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Uzibhlokile izaziso kule webhusayithi.
+urlbar-camera-blocked =
+    .tooltiptext = Uyibhlokile ikhamera yakho kule webhusayithi.
+urlbar-microphone-blocked =
+    .tooltiptext = Uyibhlokile imayikhrofoni yakho kule webhusayithi.
+urlbar-screen-blocked =
+    .tooltiptext = Uyibhlokile le webhusayithi ekwabelaneni ngesikrini sakho.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Ulubhlokile ugcino oluqhubekayo lwedatha kule webhusayithi.
 
 ## Page Action Context Menu
 
@@ -49,3 +61,18 @@ full-screen-autohide =
 full-screen-exit =
     .label = Phuma kwimo yesikrini esizeleyo
     .accesskey = e
+
+## Search Engine selection buttons (one-offs)
+
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Tshintsha iisethingi zokukhangela
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Tshintsha iisethingi zokukhangela
+search-one-offs-context-open-new-tab =
+    .label = Khangela KweNtsha Nethebhu
+    .accesskey = T
+search-one-offs-context-set-as-default =
+    .label = Seta Ibe Ziinjini Ezisisiseko Zokukhangela
+    .accesskey = Z

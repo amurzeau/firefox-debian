@@ -49,7 +49,6 @@ app-basics-service-workers = Skráðir Service Workers
 app-basics-profiles = Notendur
 app-basics-launcher-process-status = Ræsiferli
 app-basics-multi-process-support = Margþráða gluggi
-app-basics-process-count = Ferlar vefinnihalds
 app-basics-remote-processes-count = Fjarvinnslur
 app-basics-enterprise-policies = Stefna fyrirtækisins
 app-basics-location-service-key-google = Google staðsetningarlykill
@@ -103,6 +102,13 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Breytur
 safe-mode-title = Prófaðu öryggisham
 restart-in-safe-mode-label = Endurræsa með viðbætur óvirkar…
+
+## Media titles
+
+audio-backend = Hljóðkerfi
+max-audio-channels = Hámarksfjöldi rása
+channel-layout = Preferred Channel Layout
+sample-rate = Preferred Sample Rate
 media-title = Gögn
 media-output-devices-title = Útakstæki
 media-input-devices-title = Inntakstæki
@@ -115,6 +121,9 @@ media-device-format = Snið
 media-device-channels = Rásir
 media-device-rate = Hraði
 media-device-latency = Biðtími
+
+##
+
 intl-title = Alþjóðavæðing og þýðingar
 intl-app-title = Stillingar forrits
 intl-locales-requested = Umbeðin tungumál
@@ -219,6 +228,7 @@ unknown-failure = Á svörtum lista; villukóði { $failureCode }
 d3d11layers-crash-guard = D3D11 Compositor
 d3d11video-crash-guard = D3D11 Vídeó afkóðari
 d3d9video-crash-buard = D3D9 Vídeó afkóðari
+d3d9video-crash-guard = D3D9 Vídeó afkóðari
 glcontext-crash-guard = OpenGL
 reset-on-next-restart = Endurstilla í næstu endurræsingu
 gpu-process-kill-button = Stöðva GPU ferli
@@ -228,12 +238,7 @@ uses-tiling = Notar flísar
 content-uses-tiling = Notar flísar (innihald)
 off-main-thread-paint-enabled = Litun fyrir utan aðalþráð virkt
 off-main-thread-paint-worker-count = Fjöldi vinnsluþráða fyrir litun fyrir utan aðalþráð
-low-end-machine = Fann tæki sem gengur minna
 target-frame-rate = Markhraði ramma
-audio-backend = Hljóðkerfi
-max-audio-channels = Hámarksfjöldi rása
-channel-layout = Preferred Channel Layout
-sample-rate = Preferred Sample Rate
 min-lib-versions = Bjóst við lágmarksútgáfu
 loaded-lib-versions = Útgáfa í notkun
 has-seccomp-bpf = Seccomp-BPF (System Call sía)

@@ -45,8 +45,6 @@ app-basics-performance = Performanse
 app-basics-service-workers = Registrovani Service Workeri
 app-basics-profiles = Profili
 app-basics-multi-process-support = Multiprocesni prozori
-app-basics-process-count = Procesi web sadržaja
-app-basics-key-google = Google Key
 app-basics-key-mozilla = Mozilla Location Service Key
 app-basics-safe-mode = Sigurni režim
 show-dir-label =
@@ -96,6 +94,13 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argumenti
 safe-mode-title = Probaj sigurni režim
 restart-in-safe-mode-label = Restartuj sa onemogućenim add-onima…
+
+## Media titles
+
+audio-backend = Audio Backend
+max-audio-channels = Max kanala
+channel-layout = Željeni raspored kanala
+sample-rate = Željeni sample rate
 media-title = Medij
 media-output-devices-title = Izlazni uređaji
 media-input-devices-title = Ulazni uređaji
@@ -108,6 +113,9 @@ media-device-format = Format
 media-device-channels = Kanali
 media-device-rate = Brzina
 media-device-latency = Kašnjenje
+
+##
+
 intl-title = Internacionalizacija & lokalizacija
 intl-app-title = Postavke aplikacije
 intl-locales-requested = Zatraženi lokali
@@ -213,6 +221,7 @@ unknown-failure = Blokiran; kod neuspjeha { $failureCode }
 d3d11layers-crash-guard = D3D11 kompozitor
 d3d11video-crash-guard = D3D11 Video dekoder
 d3d9video-crash-buard = D3D9 Video dekoder
+d3d9video-crash-guard = D3D9 Video dekoder
 glcontext-crash-guard = OpenGL
 reset-on-next-restart = Resetuj vrijednosti kod sljedećeg restarta
 gpu-process-kill-button = Okončaj GPU procese
@@ -220,10 +229,6 @@ gpu-device-reset-button = Okini reset uređaja
 uses-tiling = Koristi mozaik
 off-main-thread-paint-enabled = Off Main Thread Painting omogućen
 off-main-thread-paint-worker-count = Off Main Thread Painting Worker brojač
-audio-backend = Audio Backend
-max-audio-channels = Max kanala
-channel-layout = Željeni raspored kanala
-sample-rate = Željeni sample rate
 min-lib-versions = Očekivana minimalna verzija
 loaded-lib-versions = Verzija u upotrebi
 has-seccomp-bpf = Seccomp-BPF (filtriranje sistemskih poziva)

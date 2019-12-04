@@ -21,6 +21,10 @@ onboarding-button-label-get-started = Aloita
 onboarding-welcome-header = Tervetuloa, { -brand-short-name } tässä
 onboarding-welcome-body = Sait selaimen.<br/>Tapaa muut { -brand-product-name }-palvelut.
 onboarding-welcome-learn-more = Lue lisää hyödyistä.
+onboarding-welcome-modal-get-body = Sait selaimen.<br/>Nyt tutustu loppuihin { -brand-product-name }-palveluihin.
+onboarding-welcome-modal-supercharge-body = Sähköistä yksityisyydensuojasi.
+onboarding-welcome-modal-privacy-body = Olet saanut selaimen. Lisätään siihen hieman yksityisyyden suojaa.
+onboarding-welcome-modal-family-learn-more = Tutustu { -brand-product-name }-tuoteperheeseen.
 onboarding-welcome-form-header = Aloita tästä
 onboarding-join-form-header = Liity { -brand-product-name }iin
 onboarding-join-form-body = Aloita kirjoittamalla sähköpostiosoitteesi.
@@ -29,10 +33,20 @@ onboarding-join-form-email =
 onboarding-join-form-email-error = Kelvollinen sähköposti vaaditaan
 onboarding-join-form-legal = Jatkamalla hyväksyt <a data-l10n-name="terms">käyttöehdot</a> ja <a data-l10n-name="privacy">tietosuojaselosteen</a>.
 onboarding-join-form-continue = Jatka
+# This message is followed by a link using onboarding-join-form-signin ("Sign In") as text.
+onboarding-join-form-signin-label = Onko sinulla jo tili?
+# Text for link to submit the sign in form
+onboarding-join-form-signin = Kirjaudu sisään
 onboarding-start-browsing-button-label = Aloita selaaminen
 onboarding-cards-dismiss =
     .title = Hylkää
     .aria-label = Hylkää
+
+## Welcome full page string
+
+onboarding-fullpage-welcome-subheader = Tutkitaanpa mitä kaikkea voit tehdä.
+onboarding-fullpage-form-email =
+    .placeholder = Sähköpostiosoitteesi…
 
 ## Firefox Sync modal dialog strings.
 
@@ -65,6 +79,12 @@ onboarding-benefit-privacy-title = Todellista yksityisyyttä
 # make and do. We take less data. We keep it safe. And we make sure that we are
 # transparent about how we use it."
 onboarding-benefit-privacy-text = Kaikki toimintamme kunnioittaa henkilötietolupaustamme: Kerää vähemmän. Pidä ne turvassa. Ei salaisuuksia.
+onboarding-benefit-sync-title = { -sync-brand-short-name }
+onboarding-benefit-sync-text = Ota kirjanmerkkisi, salasanasi ja selaushistoriasi mukaan kaikkialle, missä käytät { -brand-product-name }ia.
+onboarding-benefit-monitor-title = { -monitor-brand-short-name }
+onboarding-benefit-monitor-text = Saat ilmoituksen, kun tietovuodosta on löytynyt henkilökohtaisia tietojasi.
+onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
+onboarding-benefit-lockwise-text = Hallitse salasanoja, jotka ovat turvassa ja mukaan otettavissa.
 
 ## These strings belong to the individual onboarding messages.
 
@@ -89,10 +109,11 @@ onboarding-tracking-protection-text2 = { -brand-short-name } auttaa estämään 
 onboarding-tracking-protection-button2 = Kuinka se toimii
 onboarding-data-sync-title = Ota asetukset mukaasi
 # "Sync" is short for synchronize.
-onboarding-data-sync-text2 = Synkronoi kirjanmerkit, salasanat ja paljon muuta kaikkialla, missä käytät { -brand-product-name }ia.
+onboarding-data-sync-text2 = Synkronoi kirjanmerkit, salasanat jne. kaikkialle, missä käytät { -brand-product-name }ia.
 onboarding-data-sync-button2 = Kirjaudu sisään { -sync-brand-short-name }-palveluun
 onboarding-firefox-monitor-title = Pysy ajan tasalla tietovuodoista
 onboarding-firefox-monitor-text = { -monitor-brand-name } tarkkailee, onko sähköpostiosoitteesi ollut mukana tietovuodossa, ja ilmoittaa, jos se on mukana uudessa tietovuodossa.
+onboarding-firefox-monitor-text2 = { -monitor-brand-name } tarkkailee, onko sähköpostiosoitteesi ollut mukana tunnetuissa tietovuodoissa ja lähettää sinulle hälytyksen, jos joudut osalliseksi uuteen tietovuotoon.
 onboarding-firefox-monitor-button = Tilaa ilmoitukset
 onboarding-browse-privately-title = Selaa yksityisesti
 onboarding-browse-privately-text = Yksityinen selaus tyhjentää haku- ja selaushistorian, jotta se säilyy salassa kaikilta muilta, jotka käyttävät tietokonettasi.

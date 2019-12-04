@@ -98,9 +98,11 @@ detail-private-browsing-description2 = Al permitirse, la extensión tendrá acce
 # cannot be overridden by the user.
 detail-private-disallowed-label = No permitido en ventanas privadas
 detail-private-disallowed-description = Esta extensión no se ejecuta en navegación privada. <label data-l10n-name="detail-private-browsing-learn-more">Aprender más</label>
+detail-private-disallowed-description2 = Esta extensión no se ejecuta mientras estés en navegación privada. <a data-l10n-name="learn-more">Aprender más</a>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = Requiere acceso a ventanas privadas
 detail-private-required-description = Esta extensión tiene acceso a tus actividades en línea durante la navegación privada. <label data-l10n-name="detail-private-browsing-learn-more"> Aprender más</label>
+detail-private-required-description2 = Esta extensión tiene acceso a tu actividad en línea mientras navegas de forma privada. <a data-l10n-name="learn-more">Aprender más</a>
 detail-private-browsing-on =
     .label = Permitir
     .tooltiptext = Activar en navegación privada
@@ -180,6 +182,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Habilitar
     .tooltiptext = Habilitar la verificación de actualizaciones de seguridad
+extensions-warning-safe-mode = Todos los complementos fueron deshabilitados por el modo seguro.
+extensions-warning-check-compatibility = La verificación de compatibilidad de complementos está deshabilitada. Puedes tener complementos incompatibles.
+extensions-warning-check-compatibility-button = Habilitar
+    .title = Habilitar verificación de compatibilidad de complementos
+extensions-warning-update-security = La verificación de actualizaciones de seguridad de complementos está deshabilitada. Puedes estar en peligro por las actualizaciones.
+extensions-warning-update-security-button = Habilitar
+    .title = Habilitar la verificación de actualizaciones de seguridad
 
 ## Strings connected to add-on updates
 
@@ -189,12 +198,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Ver actualizaciones recientes
     .accesskey = V
+addon-updates-check-for-updates = Buscar actualizaciones
+    .accesskey = c
+addon-updates-view-updates = Ver actualizaciones recientes
+    .accesskey = V
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Actualizar complementos automáticamente
+    .accesskey = A
+addon-updates-update-addons-automatically = Actualizar complementos automáticamente
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -208,6 +223,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = R
 extensions-updates-reset-updates-to-manual =
     .label = Reiniciar todos los complementos a actualización manual
+    .accesskey = R
+addon-updates-reset-updates-to-automatic = Reiniciar todos los complementos a actualización automática
+    .accesskey = R
+addon-updates-reset-updates-to-manual = Reiniciar todos los complementos a actualización manual
     .accesskey = R
 
 ## Status messages displayed when updating add-ons
@@ -227,11 +246,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Instalar actualizaciones
     .tooltiptext = Instalar actualizaciones disponibles en esta lista
+addon-updates-updating = Actualizando complementos
+addon-updates-installed = Sus complementos han sido actualizados.
+addon-updates-none-found = No se encontraron actualizaciones
+addon-updates-manual-updates-found = Ver actualizaciones disponibles
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Instalar complemento desde archivo…
+    .accesskey = I
+addon-install-from-file-dialog-title = Selecionar complemento para instalar
+addon-install-from-file-filter-name = Complementos
+addon-open-about-debugging = Depurar complementos
+    .accesskey = B
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Gestionar atajos de extensiones
+    .accesskey = S
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Gestionar atajos de extensiones
     .accesskey = S
 shortcuts-no-addons = No tienes ninguna extensión habilitada.
 shortcuts-no-commands = Las siguientes extensiones no tienen atajos:
@@ -296,6 +331,8 @@ addon-options-button =
 
 report-addon-button = Reportar
 remove-addon-button = Remover
+# The link will always be shown after the other text.
+remove-addon-disabled-button = No puede ser eliminado <a data-l10n-name="link">¿Por qué?</a>
 disable-addon-button = Desactivar
 enable-addon-button = Activar
 expand-addon-button = Más opciones
@@ -389,3 +426,18 @@ recommended-themes-heading = Temas recomendados
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = ¿Te sientes creativo? <a data-l10n-name="link"> Crea tu propio tema con Firefox Color. </a>
+
+## Page headings
+
+extension-heading = Gestiona tus extensiones
+theme-heading = Gestiona tus temas
+plugin-heading = Gestiona tus complementos
+dictionary-heading = Gestiona tus diccionarios
+locale-heading = Gestiona tus idiomas
+updates-heading = Administra tus actualizaciones
+discover-heading = Personaliza tu { -brand-short-name }
+shortcuts-heading = Gestionar atajos de extensiones
+theme-heading-search-label = Buscar más temas
+extension-heading-search-label = Buscar más extensiones
+addons-heading-search-input =
+    .placeholder = Buscar en addons.mozilla.org

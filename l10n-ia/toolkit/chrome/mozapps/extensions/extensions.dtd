@@ -5,10 +5,10 @@
 <!-- addon actions -->
 <!ENTITY cmd.enableAddon.label                "Activar">
 <!ENTITY cmd.enableAddon.accesskey            "A">
-<!ENTITY cmd.disableAddon.label               "Inactivar">
+<!ENTITY cmd.disableAddon.label               "Disactivar">
 <!ENTITY cmd.disableAddon.accesskey           "I">
 
-<!ENTITY cmd.askToActivate.label              "Demandar pro activar">
+<!ENTITY cmd.askToActivate.label              "Demandar ante de activar">
 <!ENTITY cmd.askToActivate.tooltip            "Demandar cata vice si usar iste additivo">
 <!ENTITY cmd.alwaysActivate.label             "Sempre activar">
 <!ENTITY cmd.alwaysActivate.tooltip           "Sempre usar iste additivo">
@@ -63,7 +63,7 @@
 <!ENTITY addon.checkingForUpdates.label       "Cercante actualisationes…">
 <!ENTITY addon.releaseNotes.label             "Notas de revision:">
 <!ENTITY addon.loadingReleaseNotes.label      "Cargante…">
-<!ENTITY addon.errorLoadingReleaseNotes.label "Pardono, ma il habeva un error cargante le notas de revision">
+<!ENTITY addon.errorLoadingReleaseNotes.label "Un error ha occurrite durante le cargamento del notas de version.">
 
 <!ENTITY addon.createdBy.label                "Per ">
 

@@ -182,6 +182,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Gaitu
     .tooltiptext = Gaitu gehigarrien eguneraketa-segurtasuna egiaztatzea
+extensions-warning-safe-mode = Modu seguruak gehigarri guztiak desgaitu ditu.
+extensions-warning-check-compatibility = Gehigarrien bateragarritasuna egiaztatzea desgaituta dago. Gehigarri bateraezinak izan ditzakezu.
+extensions-warning-check-compatibility-button = Gaitu
+    .title = Gaitu gehigarrien bateragarritasuna egiaztatzea
+extensions-warning-update-security = Gehigarrien eguneraketa-segurtasuna egiaztatzea desgaituta dago. Eguneraketek arriskuan jar zaitzakete.
+extensions-warning-update-security-button = Gaitu
+    .title = Gaitu gehigarrien eguneraketa-segurtasuna egiaztatzea
 
 ## Strings connected to add-on updates
 
@@ -191,12 +198,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Ikusi azken eguneraketak
     .accesskey = I
+addon-updates-check-for-updates = Bilatu eguneraketak
+    .accesskey = B
+addon-updates-view-updates = Ikusi azken eguneraketak
+    .accesskey = I
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Eguneratu gehigarriak automatikoki
+    .accesskey = g
+addon-updates-update-addons-automatically = Eguneratu gehigarriak automatikoki
     .accesskey = g
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -210,6 +223,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = B
 extensions-updates-reset-updates-to-manual =
     .label = Berrezarri gehigarri guztiak eskuz egunera daitezen
+    .accesskey = B
+addon-updates-reset-updates-to-automatic = Berrezarri gehigarri guztiak automatikoki egunera daitezen
+    .accesskey = B
+addon-updates-reset-updates-to-manual = Berrezarri gehigarri guztiak eskuz egunera daitezen
     .accesskey = B
 
 ## Status messages displayed when updating add-ons
@@ -229,11 +246,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Instalatu eguneraketak
     .tooltiptext = Instalatu zerrenda honetan eskura dauden eguneraketak
+addon-updates-updating = Gehigarriak eguneratzen
+addon-updates-installed = Gehigarriak eguneratu egin dira.
+addon-updates-none-found = Ez da eguneraketarik aurkitu
+addon-updates-manual-updates-found = Ikusi eskura dauden eguneraketak
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Instalatu gehigarria fitxategitik…
+    .accesskey = I
+addon-install-from-file-dialog-title = Hautatu instalatzeko gehigarria
+addon-install-from-file-filter-name = Gehigarriak
+addon-open-about-debugging = Araztu gehigarriak
+    .accesskey = z
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Kudeatu hedapenen lasterbideak
+    .accesskey = K
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Kudeatu hedapenen lasterbideak
     .accesskey = K
 shortcuts-no-addons = Ez daukazu hedapenik gaituta.
 shortcuts-no-commands = Ondorengo hedapenek ez dute lasterbiderik:
@@ -298,6 +331,8 @@ addon-options-button =
 
 report-addon-button = Salatu
 remove-addon-button = Kendu
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Ezin da kendu <a data-l10n-name="link">Zergatik?</a>
 disable-addon-button = Desgaitu
 enable-addon-button = Gaitu
 expand-addon-button = Aukera gehiago
@@ -391,3 +426,18 @@ recommended-themes-heading = Gomendatutako itxurak
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Sortzaile izan nahi? <a data-l10n-name="link">Egizu zure itxura propioa Firefox Color erabiliz.</a>
+
+## Page headings
+
+extension-heading = Kudeatu zure hedapenak
+theme-heading = Kudeatu zure itxurak
+plugin-heading = Kudeatu zure pluginak
+dictionary-heading = Kudeatu zure hiztegiak
+locale-heading = Kudeatu zure hizkuntzak
+updates-heading = Kudeatu zure eguneraketak
+discover-heading = Pertsonalizatu zure { -brand-short-name }
+shortcuts-heading = Kudeatu hedapenen lasterbideak
+theme-heading-search-label = Bilatu itxura gehiago
+extension-heading-search-label = Bilatu hedapen gehiago
+addons-heading-search-input =
+    .placeholder = Bilatu addons.mozilla.org gunean

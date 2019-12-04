@@ -14,6 +14,11 @@ pref-page =
             [windows] Opcje
            *[other] Preferencje
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Opcje
+       *[other] Preferencje
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -285,6 +290,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Wtyczka { $plugin-name } (w programie { -brand-short-name })
@@ -460,7 +469,6 @@ choose-bookmark =
 
 home-prefs-content-header = Strona startowa Firefoksa
 home-prefs-content-description = Wybierz, co wyświetlać na stronie startowej Firefoksa.
-home-prefs-content-discovery-description = Funkcja odkrywania treści na stronie startowej Firefoksa umożliwia odkrywanie spersonalizowanych artykułów o wysokiej jakości z całego Internetu.
 home-prefs-search-header =
     .label = Pasek wyszukiwania
 home-prefs-topsites-header =
@@ -509,7 +517,8 @@ search-bar-shown =
     .label = Osobny pasek wyszukiwania
 search-engine-default-header = Domyślna wyszukiwarka
 search-engine-default-desc = Wybierz domyślną wyszukiwarkę paska adresu i paska wyszukiwania.
-search-engine-default-private-desc = Wybierz domyślną wyszukiwarkę w oknach prywatnych.
+search-engine-default-desc-2 = To domyślna wyszukiwarka paska adresu i paska wyszukiwania. Można ją zmienić w każdej chwili.
+search-engine-default-private-desc-2 = Wybierz inną domyślną wyszukiwarkę tylko w oknach prywatnych
 search-separate-default-engine =
     .label = Używaj tej wyszukiwarki w oknach prywatnych
     .accesskey = U
@@ -528,6 +537,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Podpowiedzi wyszukiwania nad historią przeglądania w wynikach paska adresu
+search-show-suggestions-private-windows =
+    .label = Podpowiedzi wyszukiwania w prywatnych oknach
 suggestions-addressbar-settings = Zmień ustawienia podpowiedzi z historii przeglądania, zakładek i kart
 search-suggestions-cant-show = Podpowiedzi wyszukiwania nie będą wyświetlane w wynikach paska adresu, ponieważ wyłączono zachowywanie historii przeglądania programu { -brand-short-name }.
 search-one-click-header = Dodatkowe wyszukiwarki
@@ -576,6 +587,9 @@ sync-signedout-account-create = Nie masz konta? Utwórz je…
     .accesskey = U
 sync-signedout-account-signin =
     .label = Zaloguj się…
+    .accesskey = Z
+sync-signedout-account-signin2 =
+    .label = Zaloguj się do { -sync-brand-short-name(case: "gen", capitalization: "lower") }…
     .accesskey = Z
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -644,6 +658,9 @@ sync-currently-syncing-prefs =
         [windows] opcje
        *[other] preferencje
     }
+sync-change-options =
+    .label = Zmień…
+    .accesskey = m
 
 ## The "Choose what to sync" dialog.
 
@@ -717,7 +734,11 @@ privacy-header = Prywatność
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Dane logowania i hasła
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Pytanie o zachowywanie danych logowania do witryn
     .accesskey = P
@@ -728,12 +749,13 @@ forms-generate-passwords =
     .label = Proponowanie i generowanie silnych haseł
     .accesskey = s
 forms-breach-alerts =
-    .label = Powiadomienia o hasłach do stron, z których wyciekły dane
+    .label = Powiadomienia o hasłach do stron, z których wyciekły dane.
     .accesskey = o
 forms-breach-alerts-learn-more-link = Więcej informacji
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
-    .label = Wypełnianie danych logowania i haseł
-    .accesskey = W
+    .label = Automatyczne wypełnianie formularzy logowania
+    .accesskey = A
 forms-saved-logins =
     .label = Zachowane dane logowania…
     .accesskey = d

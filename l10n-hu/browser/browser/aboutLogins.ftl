@@ -70,16 +70,19 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = A mentett bejelentkezéseit keresi? Állítsa be a { -sync-brand-short-name }-t.
+about-logins-login-intro-heading-logged-in = Nem található szinkronizált bejelentkezés.
 login-intro-description = Ha egy másik eszközön mentette a bejelentkezéseit a { -brand-product-name }ban, akkor így érheti el őket itt:
 login-intro-instruction-fxa = Hozzon létre egyet, vagy jelentkezzen be a { -fxaccount-brand-name }jába azon az eszközön, amelyen a bejelentkezéseit menti
 login-intro-instruction-fxa-settings = Győződjön meg róla, hogy bejelölte a Bejelentkezések választómezőt a { -sync-brand-short-name } beállításokban
 about-logins-intro-instruction-help = További segítéségért keresse fel a <a data-l10n-name="help-link">{ -lockwise-brand-short-name } támogatást</a>
+about-logins-intro-import = Ha bejelentkezéseit egy másik böngészőben mentette el, <a data-l10n-name="import-link">importálhatja azokat a { -lockwise-brand-short-name }-ba</a>
 
 ## Login
 
 login-item-new-login-title = Új bejelentkezés létrehozása
 login-item-edit-button = Szerkesztés
 login-item-delete-button = Törlés
+about-logins-login-item-remove-button = Eltávolítás
 login-item-origin-label = Honlap címe
 login-item-origin =
     .placeholder = https://www.example.com
@@ -109,11 +112,8 @@ master-password-reload-button =
     .label = Bejelentkezés
     .accesskey = B
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = Mégse
-confirmation-dialog-dismiss-button =
-    .title = Mégse
 enable-password-sync-notification-message =
     { PLATFORM() ->
         [windows] Mindenhol szeretne hozzáférni a bejelentkezéseihez, ahol a { -brand-product-name }ot használja? Ugorjon a { -sync-brand-short-name } beállításokhoz és jelölje be a Bejelentkezések választógombot.
@@ -127,8 +127,19 @@ enable-password-sync-preferences-button =
         }
     .accesskey = m
 confirm-delete-dialog-title = Törli a bejelentkezést?
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = Ne kérdezze meg többet
+    .accesskey = N
+
+## Dialogs
+
+confirmation-dialog-cancel-button = Mégse
+confirmation-dialog-dismiss-button =
+    .title = Mégse
+about-logins-confirm-remove-dialog-title = Eltávolítja ezt a bejelentkezést?
 confirm-delete-dialog-message = Ez a művelet nem vonható vissza.
 confirm-delete-dialog-confirm-button = Törlés
+about-logins-confirm-remove-dialog-confirm-button = Eltávolítás
 confirm-discard-changes-dialog-title = Elveti a mentetlen módosításokat?
 confirm-discard-changes-dialog-message = Minden nem mentett változás elvész.
 confirm-discard-changes-dialog-confirm-button = Elvetés

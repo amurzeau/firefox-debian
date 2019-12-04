@@ -153,7 +153,7 @@ menu-view-full-screen =
     .label = Բացել Լիաէկրան
     .accesskey = Բ
 
-
+##
 
 menu-view-show-all-tabs =
     .label = Ցուցադրել բոլոր ներդիրները
@@ -212,12 +212,21 @@ menu-tools-addons =
 menu-tools-sync-sign-in =
     .label = Մուտք գործել { -sync-brand-short-name }…
     .accesskey = Y
+menu-tools-fxa-sign-in =
+    .label = Մուտք գործել { -brand-product-name }․․․
+    .accesskey = g
+menu-tools-turn-on-sync =
+    .label = Միացնել{ -sync-brand-short-name }
+    .accesskey = n
 menu-tools-sync-now =
     .label = Սինք
     .accesskey = Ս
 menu-tools-sync-re-auth =
     .label = Վերակապակցվել { -sync-brand-short-name }ին
     .accesskey = Վ
+menu-tools-fxa-re-auth =
+    .label = Վերակապակցվել { -brand-product-name }․․․
+    .accesskey = R
 menu-tools-web-developer =
     .label = Վեբ ծրագրավորող
     .accesskey = Վ
@@ -280,4 +289,7 @@ menu-help-safe-mode-with-addons =
 # phishing-afterload-warning-message.dtd is shown.
 menu-help-report-deceptive-site =
     .label = Զեկուցել խաբուսիկ կայքի մասին...
+    .accesskey = խ
+menu-help-not-deceptive =
+    .label = Սա խաբուսիկ կայք չէ...
     .accesskey = խ

@@ -47,6 +47,28 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Salvesta andmeid püsivalt
 urlbar-addons-notification-anchor =
     .tooltiptext = Ava lisa paigaldamise teavituspaneel
+urlbar-geolocation-blocked =
+    .tooltiptext = Oled sellel lehel keelanud asukohateabe kasutamise.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Oled sellel lehel teavitused keelanud.
+urlbar-camera-blocked =
+    .tooltiptext = Oled sellel lehel keelanud kaamera kasutamise.
+urlbar-microphone-blocked =
+    .tooltiptext = Oled sellel lehel keelanud mikrofoni kasutamise.
+urlbar-screen-blocked =
+    .tooltiptext = Oled sellel lehel keelanud ekraanijagamise.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Oled sellel saidil keelanud andmete püsivalt salvestamise.
+urlbar-popup-blocked =
+    .tooltiptext = Oled sellel lehel hüpikaknad blokkinud.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Oled sellel lehel heliga meedia automaatse esitamise blokkinud.
+urlbar-canvas-blocked =
+    .tooltiptext = Oled sellel lehel keelanud kanvaa andmete ekstraktimise.
+urlbar-midi-blocked =
+    .tooltiptext = Oled sellel lehel keelanud ligipääsu MIDIle.
+urlbar-install-blocked =
+    .tooltiptext = Oled sellel lehel keelanud lisade paigaldamise.
 
 ## Page Action Context Menu
 
@@ -65,3 +87,21 @@ full-screen-autohide =
 full-screen-exit =
     .label = Välju täisekraanirežiimist
     .accesskey = V
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Seekord soorita otsing järgneva otsingumootoriga:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Muuda otsingu sätteid
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Otsingu sätete muutmine
+search-one-offs-context-open-new-tab =
+    .label = Soorita otsing uuel kaardil
+    .accesskey = S
+search-one-offs-context-set-as-default =
+    .label = Määra vaikeotsingumootoriks
+    .accesskey = M

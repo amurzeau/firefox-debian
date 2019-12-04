@@ -8,3 +8,15 @@
 appmenuitem-protection-report-title = Taɣellist n tbaḍnit
 appmenuitem-protection-report-tooltip =
     .tooltiptext = Ddu ɣer uneqqis ɣef ummesten n tudert-ik tabadnit.
+
+## Zoom Controls
+
+appmenuitem-zoom-enlarge =
+    .label = Semɣeṛ
+appmenuitem-zoom-reduce =
+    .label = Semẓi
+
+## Firefox Account toolbar button and Sync panel in App menu.
+
+fxa-toolbar-sync-now =
+    .label = Mtawi tura

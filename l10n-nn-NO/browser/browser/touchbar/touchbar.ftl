@@ -19,3 +19,19 @@ open-location = Søk eller skriv inn adresse
 share = Del
 close-window = Lat att vindauge
 open-sidebar = Sidestolpar
+# This string describes shortcuts for search.
+search-popover = Søkesnarvegar
+# Describes searches limited to a specific scope
+# (e.g. searching only in history).
+search-search-in = Søk i:
+
+## Various categories of shortcuts for search.
+
+search-bookmarks = Bokmerke
+search-history = Historikk
+search-opentabs = Opne faner
+search-tags = Etikettar
+search-titles = Titlar
+
+
+

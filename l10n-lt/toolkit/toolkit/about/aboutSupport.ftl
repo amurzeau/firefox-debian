@@ -147,6 +147,22 @@ intl-locales-default = Numatytoji lokalė
 intl-os-title = Operacinė sistema
 intl-os-prefs-system-locales = Sistemos lokalės
 intl-regional-prefs = Regionų nuostatos
+
+## Remote Debugging
+##
+## The Firefox remote protocol provides low-level debugging interfaces
+## used to inspect state and control execution of documents,
+## browser instrumentation, user interaction simulation,
+## and for subscribing to browser-internal events.
+##
+## See also https://firefox-source-docs.mozilla.org/remote/
+
+remote-debugging-title = Nuotolinis derinimas („Chromium“ protokolu)
+remote-debugging-accepting-connections = Galima prisijungti
+remote-debugging-url = URL
+
+
+
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
@@ -248,6 +264,7 @@ unknown-failure = Užblokuota; gedimo kodas { $failureCode }
 d3d11layers-crash-guard = D3D11 rinkėjo gija
 d3d11video-crash-guard = D3D11 vaizdo iškoduotuvas
 d3d9video-crash-buard = D3D9 vaizdo iškoduotuvas
+d3d9video-crash-guard = D3D9 vaizdo iškoduotuvas
 glcontext-crash-guard = OpenGL
 reset-on-next-restart = Atstatyti kito paleidimo metu
 gpu-process-kill-button = Sustabdyti GPU procesą

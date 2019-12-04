@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = gant { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Erbedadennoù
+cfr-doorhanger-extension-notification2 = Erbedadenn
+    .tooltiptext = Erbedadenn askouezh
+    .a11y-announcement = Erbedadenn askouezh egerzh
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Erbedadenn
+    .tooltiptext = Erbedadenn keweriuster
+    .a11y-announcement = Un erbedadenn keweriuster nevez a zo da lenn
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -84,6 +92,9 @@ cfr-protections-panel-link-text = Gouzout hiroc'h
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Keweriuster nevez:
 cfr-whatsnew-button =
     .label = Petra nevez
     .tooltiptext = Petra nevez
@@ -149,9 +160,27 @@ cfr-doorhanger-socialtracking-ok-button = Gwelout ar gwarezioù
     .accesskey = G
 cfr-doorhanger-socialtracking-close-button = Serriñ
     .accesskey = S
+cfr-doorhanger-socialtracking-dont-show-again = Na ziskouez din kemennadennoù evel-se en-dro
+    .accesskey = N
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } en deus harzhet ur rouedad kevredadel d'hoc'h heuliañ amañ
 cfr-doorhanger-socialtracking-description = Pouezus eo ho puhez prevez. { -brand-short-name } a stank an heulierien media kevredadel boutin evit bevenniñ ar c'hementad a roadennoù a c'hallont dastum diwar-benn ar pezh a rit enlinenn.
 cfr-doorhanger-fingerprinters-heading = Stanket eo bet un dinoerien roudoù niverel gant { -brand-short-name } war ar bajenn-mañ
 cfr-doorhanger-fingerprinters-description = Pouezus eo ho puhez prevez. { -brand-short-name } a stank an dinoerien roudoù niverel, a zastum titouroù a c'hall servij da adanavezout ac'hanoc'h hag heuliañ ac'hanoc'h.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } en deus stanket ur c'hriptogleuzier war ar bajenn-mañ
 cfr-doorhanger-cryptominers-description = Pouezus eo ho puhez prevez. { -brand-short-name } a stank kriptogleuzierien, a c'hall implij galloud jediñ ho reizhiad evit mengleuziañ arc'hant niverel.
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+        [one] Stanket ez eus bet ouzhpenn <b>{ $blockedCount }</b> heulier gant { -brand-short-name } abaoe { $date }!Stanket ez eus bet ouzhpenn <b>{ $blockedCount }</b> heulier gant { -brand-short-name } abaoe { $date }!
+        [two] Stanket ez eus bet ouzhpenn <b>{ $blockedCount }</b> heulier gant { -brand-short-name } abaoe { $date }!
+        [few] Stanket ez eus bet ouzhpenn <b>{ $blockedCount }</b> heulier gant { -brand-short-name } abaoe { $date }!
+        [many] Stanket ez eus bet ouzhpenn <b>{ $blockedCount }</b> a heulierien gant { -brand-short-name } abaoe { $date }!
+       *[other] Stanket ez eus bet ouzhpenn <b>{ $blockedCount }</b> heulier gant { -brand-short-name } abaoe { $date }!
+    }
+cfr-doorhanger-milestone-ok-button = Gwelet pep tra
+    .accesskey = G

@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = szerző: { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Javaslat
+cfr-doorhanger-extension-notification2 = Javaslat
+    .tooltiptext = Kiegészítőjavaslat
+    .a11y-announcement = Kiegészítőjavaslat érhető el
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Javaslat
+    .tooltiptext = Funkciójavaslat
+    .a11y-announcement = Funkciójavaslat érhető el
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -78,6 +86,9 @@ cfr-protections-panel-link-text = További tudnivalók
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Új funkciók:
 cfr-whatsnew-button =
     .label = Újdonságok
     .tooltiptext = Újdonságok
@@ -144,9 +155,24 @@ cfr-doorhanger-socialtracking-ok-button = Lásd: Adatvédelem
     .accesskey = A
 cfr-doorhanger-socialtracking-close-button = Bezárás
     .accesskey = B
+cfr-doorhanger-socialtracking-dont-show-again = Ne jelenítse meg ezeket az üzeneteket többet
+    .accesskey = N
 cfr-doorhanger-socialtracking-heading = A { -brand-short-name } megakadályozta, hogy egy közösségi hálózat kövesse itt
 cfr-doorhanger-socialtracking-description = Számít az adatvédelem. A { -brand-short-name } most már blokkolja a gyakori közösségimédia-követőket, korlátozva hogy mennyi adatot gyűjthessenek az Ön online tevékenységéről.
 cfr-doorhanger-fingerprinters-heading = A { -brand-short-name } blokkolt egy ujjlenyomat-készítőt ezen az oldalon
 cfr-doorhanger-fingerprinters-description = Számít az adatvédelem. A { -brand-short-name } most már blokkolja az ujjlenyomat-készítőket, melyek egyedileg azonosítható információkat gyűjtenek az eszközéről, hogy követhessék Önt.
 cfr-doorhanger-cryptominers-heading = A { -brand-short-name } blokkolt egy kriptobányászt ezen az oldalon
 cfr-doorhanger-cryptominers-description = Számít az adatvédelem. A { -brand-short-name } most már blokkolja a kriptobányászokat, melyek a rendszere számítási erőforrásait használják, hogy digitális pénzeket bányásszanak.
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+        [one] A { -brand-short-name } több mint <b>{ $blockedCount }</b> követőt blokkolt { $date } óta!
+       *[other] A { -brand-short-name } több mint <b>{ $blockedCount }</b> követőt blokkolt { $date } óta!
+    }
+cfr-doorhanger-milestone-ok-button = Összes megjelenítése
+    .accesskey = m

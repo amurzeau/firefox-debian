@@ -2,6 +2,13 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# Localized string used as the dialog window title (a new behavior locked
+# behind the "extensions.abuseReport.openDialog" preference).
+# "Report" is a noun in this case, "Report for AddonName".
+#
+# Variables:
+#   $addon-name (string) - Name of the add-on being reported
+abuse-report-dialog-title = Emomarandu { $addon-name }
 abuse-report-title-extension = Emomarandu ko jepysokue rehegua { -vendor-short-name }-pe
 abuse-report-title-theme = Emomarandu ko téma rehegua { -vendor-short-name }-pe
 abuse-report-subtitle = ¿Mba'ete pe apañuãi?
@@ -60,6 +67,7 @@ abuse-report-settings-suggestions = Emomarandu mboyve pe jepysokue, eñeha’ã 
 abuse-report-settings-suggestions-search = Emoambue ñemboheko jehekaha ijypykuévape
 abuse-report-settings-suggestions-homepage = Emoambue kuatiarogue ñepyrũha ha tendayke pyahúpe
 abuse-report-deceptive-reason = Ohechaukaséva mba’e ha’e’ ỹva
+abuse-report-deceptive-reason-v2 = Eha’ã umi ndaha’éiva
 abuse-report-deceptive-example = Techapyrã: Ñemoha’ãnga térã ta’ãnga jejavýva
 abuse-report-broken-reason-extension = Ndoikói, ombyai ñanduti renda térã omombegue { -brand-product-name }
 abuse-report-broken-reason-theme = Ndoikói térã ndojehechái pe kundaha

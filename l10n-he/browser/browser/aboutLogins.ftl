@@ -51,24 +51,35 @@ login-list-count =
     }
 login-list-sort-label-text = מיון לפי:
 login-list-name-option = שם (A-Z)
+login-list-breached-option = אתרים פרוצים
 login-list-last-changed-option = שינוי אחרון
 login-list-last-used-option = שימוש אחרון
 login-list-intro-title = לא נמצאו כניסות
+login-list-intro-description = ססמאות שיישמרו ב־{ -brand-product-name } יופיעו כאן.
 about-logins-login-list-empty-search-title = לא נמצאו כניסות
 about-logins-login-list-empty-search-description = אין תוצאות התואמות לחיפוש שלך.
 login-list-item-title-new-login = כניסה חדשה
 login-list-item-subtitle-new-login = נא להזין את פרטי הכניסה שלך
 login-list-item-subtitle-missing-username = (אין שם משתמש)
+about-logins-list-item-warning-icon =
+    .alt = סמל אזהרה
+    .title = אתר פרוץ
+about-logins-list-item-breach-icon =
+    .title = אתר פרוץ
 
 ## Introduction screen
 
+about-logins-login-intro-heading-logged-in = לא נמצאו כניסות מסונכרנות.
 login-intro-description = אם שמרת את הכניסות שלך ל־{ -brand-product-name } במכשיר אחר, כך ניתן לקבל אותן כאן:
+about-logins-intro-instruction-help = ניתן לבקר <a data-l10n-name="help-link">בתמיכה של { -lockwise-brand-short-name }</a> לעזרה נוספת
+about-logins-intro-import = אם הכניסות שלך שמורות בדפדפן אחר, באפשרותך <a data-l10n-name="import-link">לייבא אותם אל תוך { -lockwise-brand-short-name }</a>
 
 ## Login
 
 login-item-new-login-title = יצירת כניסה חדשה
 login-item-edit-button = עריכה
 login-item-delete-button = מחיקה
+about-logins-login-item-remove-button = הסרה
 login-item-origin-label = כתובת אתר
 login-item-origin =
     .placeholder = https://www.example.com
@@ -95,11 +106,8 @@ master-password-reload-button =
     .label = כניסה
     .accesskey = כ
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = ביטול
-confirmation-dialog-dismiss-button =
-    .title = ביטול
 enable-password-sync-preferences-button =
     .label =
         { PLATFORM() ->
@@ -108,8 +116,19 @@ enable-password-sync-preferences-button =
         }
     .accesskey = פ
 confirm-delete-dialog-title = האם למחוק כניסה זו?
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = לא לשאול אותי שוב
+    .accesskey = ל
+
+## Dialogs
+
+confirmation-dialog-cancel-button = ביטול
+confirmation-dialog-dismiss-button =
+    .title = ביטול
+about-logins-confirm-remove-dialog-title = להסיר כניסה זו?
 confirm-delete-dialog-message = לא ניתן לבטל פעולה זו.
 confirm-delete-dialog-confirm-button = מחיקה
+about-logins-confirm-remove-dialog-confirm-button = הסרה
 confirm-discard-changes-dialog-title = האם לבטל את השינויים שלא נשמרו?
 confirm-discard-changes-dialog-message = כל השינויים שלא נשמרו יאבדו.
 
@@ -126,5 +145,10 @@ breach-alert-dismiss =
 # Variables:
 #   $loginTitle (String) - The title of the website associated with the login.
 about-logins-error-message-duplicate-login = כבר קיימת רשומה עבור { $loginTitle } עם שם משתמש זה.
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = כבר קיימת רשומה עבור { $loginTitle } עם שם המשתמש הזה. <a data-l10n-name="duplicate-link">לעבור לרשומה הקיימת?</a>
 # This is a generic error message.
 about-logins-error-message-default = אירעה שגיאה במהלך הניסיון לשמור ססמה זו.

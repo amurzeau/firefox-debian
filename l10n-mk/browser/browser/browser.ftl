@@ -25,6 +25,16 @@ urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Менаџирајте го споделувањето на вашата камера и/или микрофон со ова место
 urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Складирани податоци во Трајно складиште
+urlbar-geolocation-blocked =
+    .tooltiptext = Го блокиравте пристапот до локациските информации за ова мрежно место.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Ги блокиравте известувањата за ова мрежно место.
+urlbar-camera-blocked =
+    .tooltiptext = Го блокиравте пристапот до камерата за ова мрежно место.
+urlbar-microphone-blocked =
+    .tooltiptext = Го блокиравте пристапот до микрофонот за ова мрежно место.
+urlbar-screen-blocked =
+    .tooltiptext = Го блокиравте споделувањето на екранот од страна на ова мрежно место.
 
 ## Page Action Context Menu
 
@@ -41,3 +51,18 @@ full-screen-autohide =
 full-screen-exit =
     .label = Излез од режим на цел екран
     .accesskey = ц
+
+## Search Engine selection buttons (one-offs)
+
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Промени поставки за пребарување
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Промени поставки за пребарување
+search-one-offs-context-open-new-tab =
+    .label = Пребарај во ново јазиче
+    .accesskey = П
+search-one-offs-context-set-as-default =
+    .label = Постави како основен пребарувач
+    .accesskey = П

@@ -176,6 +176,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Rmed
     .tooltiptext = Rmed asenqed n ileqman n tɣellist i yezgrar isemmadanen
+extensions-warning-safe-mode = Armad n izegrar yekkes-it uskar aɣalsan.
+extensions-warning-check-compatibility = Asenqed n umṣada n izegrar ur yermid ara. Yezmer ad tesɛuḍ izegrar ur yemṣadan ara.
+extensions-warning-check-compatibility-button = Rmed
+    .title = Rmed asenqed n tisiḍent
+extensions-warning-update-security = Asenqed n ileqman n tɣellist n izegrar ur yermid ara. Yezmer ad tesɛuḍ yir izegrar.
+extensions-warning-update-security-button = Rmed
+    .title = Rmed asenqed n ileqman n tɣellist i yezgrar isemmadanen
 
 ## Strings connected to add-on updates
 
@@ -185,12 +192,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Sken ileqman n melmi kan
     .accesskey = S
+addon-updates-check-for-updates = Nadi ileqman
+    .accesskey = N
+addon-updates-view-updates = Sken ileqman n melmi kan
+    .accesskey = S
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Leqqem s wudem awurman izegrar
+    .accesskey = L
+addon-updates-update-addons-automatically = Leqqem s wudem awurman izegrar
     .accesskey = L
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -204,6 +217,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = R
 extensions-updates-reset-updates-to-manual =
     .label = Tukksa n urmad n uleqqem awurman n izegrar meṛṛa
+    .accesskey = T
+addon-updates-reset-updates-to-automatic = Rmed aleqqem awurman i yizegrar meṛṛa
+    .accesskey = R
+addon-updates-reset-updates-to-manual = Tukksa n urmad n uleqqem awurman n izegrar meṛṛa
     .accesskey = T
 
 ## Status messages displayed when updating add-ons
@@ -223,11 +240,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Sebded ileqman
     .tooltiptext = Sebded ileqman yellan di tebdart-agi
+addon-updates-updating = Aleqqem n izegrar
+addon-updates-installed = Izegrar-inek ttwaleqqmen.
+addon-updates-none-found = ulac ileqman yettwafen
+addon-updates-manual-updates-found = Sken ileqman yellan
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Sebded azegrir seg ufaylu…
+    .accesskey = S
+addon-install-from-file-dialog-title = Fren azegrir ad tesbeddeḍ
+addon-install-from-file-filter-name = Izegrar
+addon-open-about-debugging = Izegrar n tseɣtit
+    .accesskey = I
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Sefrek inegzumen n isiɣzaf
+    .accesskey = i
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Sefrek inegzumen n isiɣzaf
     .accesskey = i
 shortcuts-no-addons = Ur ɣur-k ara ula d yiwen n usiɣzef iremden.
 shortcuts-no-commands = Isiɣzaf id-iteddun ur sɛin ara inegzumen:
@@ -336,6 +369,11 @@ install-update-button = Leqqem
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed =
     .title = Yettusireg def usfaylu uslig kan
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed2 =
+    .title = Yettusireg def usfaylu uslig kan
+    .aria-label = { addon-badge-private-browsing-allowed2.title }
 addon-detail-private-browsing-allow = Sireg
 addon-detail-private-browsing-disallow = Ur ttaǧǧa ara
 # This is the tooltip text for the recommended badge for an extension in about:addons. The
@@ -350,3 +388,18 @@ release-notes-error = Suref-aɣ, teḍṛa-d tuccḍa deg usali n iwenniten n lq
 addon-permissions-empty = Asiɣzef-agi ur yesra ara tisirag
 recommended-extensions-heading = Isiɣzaf ihulen
 recommended-themes-heading = Isental ihulen
+
+## Page headings
+
+extension-heading = Sefrek isiɣzaf-ik/im
+theme-heading = Sefrek isental-ik/im
+plugin-heading = Sefrek izegrar-ik/im
+dictionary-heading = Sefrek imawalen-ik/im
+locale-heading = Sefrekl tutlayin-ik/im
+updates-heading = Sefrek ileqman-ik
+discover-heading = Err { -brand-short-name }-ik d udmawan
+shortcuts-heading = Sefrek inegzumen n isiɣzaf
+theme-heading-search-label = Af-d ugar n isental
+extension-heading-search-label = Af-d ugar n isiɣzaf
+addons-heading-search-input =
+    .placeholder = Nadi addons.mozilla.org

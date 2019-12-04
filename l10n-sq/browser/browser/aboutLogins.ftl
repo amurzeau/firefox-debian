@@ -70,10 +70,12 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = Po shihni për kredenciale hyrjesh tuajat të ruajtura? Ujdisni { -sync-brand-short-name }.
+about-logins-login-intro-heading-logged-in = S’u gjetën kredenciale të njëkohësuar hyrjesh.
 login-intro-description = Nëse ruajtët kredenciale tuajat hyrjesh te { -brand-product-name } në një pajisje tjetër, ja se si t’i merrni këtu:
 login-intro-instruction-fxa = Krijoni ose hyni te  { -fxaccount-brand-name } e juaj te pajisja ku janë ruajtur kredencialet tuaja të hyrjeve
 login-intro-instruction-fxa-settings = Sigurohuni se keni përzgjedhur kutizën Kredenciale Hyrjeshte Rregullime { -sync-brand-short-name }
 about-logins-intro-instruction-help = Për më tepër ndihmë, vizitoni <a data-l10n-name="help-link">Asistencë { -lockwise-brand-short-name }</a>
+about-logins-intro-import = Nëse kredencialet tuaj për hyrje janë ruajtur në një shfletues tjetër, mund t’i <a data-l10n-name="import-link">importoni ata te { -lockwise-brand-short-name }</a>
 
 ## Login
 
@@ -109,11 +111,8 @@ master-password-reload-button =
     .label = Hyni
     .accesskey = H
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = Anuloje
-confirmation-dialog-dismiss-button =
-    .title = Anulim
 enable-password-sync-notification-message =
     { PLATFORM() ->
         [windows] I doni kredencialet tuaja të hyrjeve kudo që përdorni { -brand-product-name }? Kaloni te Mundësitë tuaja për { -sync-brand-short-name } dhe përzgjidhni kutizën Kredenciale Hyrjesh.
@@ -126,6 +125,15 @@ enable-password-sync-preferences-button =
            *[other] Vizitoni Parapëlqime { -sync-brand-short-name }
         }
     .accesskey = V
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = Mos më pyet më
+    .accesskey = M
+
+## Dialogs
+
+confirmation-dialog-cancel-button = Anuloje
+confirmation-dialog-dismiss-button =
+    .title = Anulim
 confirm-delete-dialog-title = Të fshihen këto kredenciale hyrjesh?
 confirm-delete-dialog-message = Ky veprim nuk mund të zhbëhet.
 confirm-delete-dialog-confirm-button = Fshije

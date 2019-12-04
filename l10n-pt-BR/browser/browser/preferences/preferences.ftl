@@ -14,6 +14,11 @@ pref-page =
             [windows] Opções
            *[other] Preferências
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Opções
+       *[other] Preferências
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -282,6 +287,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Usar { $plugin-name } (no { -brand-short-name })
@@ -457,7 +466,6 @@ choose-bookmark =
 
 home-prefs-content-header = Conteúdo inicial do Firefox
 home-prefs-content-description = Escolha que conteúdo você quer na tela inicial do Firefox.
-home-prefs-content-discovery-description = A descoberta de conteúdo na página inicial do Firefox permite descobrir artigos relevantes, de alta qualidade, pela web afora.
 home-prefs-search-header =
     .label = Pesquisar na web
 home-prefs-topsites-header =
@@ -488,7 +496,7 @@ home-prefs-highlights-option-saved-to-pocket =
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = Snippets
-home-prefs-snippets-description = Atualizações da { -vendor-short-name } e do { -brand-product-name }
+home-prefs-snippets-description = Novidades da { -vendor-short-name } e do { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -505,7 +513,8 @@ search-bar-shown =
     .label = Adicionar a barra de pesquisa na barra de ferramentas
 search-engine-default-header = Mecanismo de pesquisa padrão
 search-engine-default-desc = Escolha o mecanismo de pesquisa padrão usado na barra de endereços e na barra de pesquisa.
-search-engine-default-private-desc = Escolha o mecanismo de pesquisa padrão a ser usado em janelas privativas.
+search-engine-default-desc-2 = Este é seu mecanismo de pesquisa padrão na barra de endereços e na barra de pesquisa. Você pode trocar quando quiser.
+search-engine-default-private-desc-2 = Escolha outro mecanismo de pesquisa padrão a ser usado em janelas privativas.
 search-separate-default-engine =
     .label = Usar este mecanismo de pesquisa em janelas privativas
     .accesskey = U
@@ -524,6 +533,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Mostrar sugestões de pesquisa antes do histórico de navegação nos resultados da barra de endereços
+search-show-suggestions-private-windows =
+    .label = Mostrar sugestões de pesquisa em janelas privativas
 suggestions-addressbar-settings = Alterar preferências de sugestões de histórico de navegação, favoritos e abas
 search-suggestions-cant-show = As sugestões de pesquisa não serão mostradas nos resultados da barra de endereço, porque você configurou o { -brand-short-name } para nunca memorizar o histórico.
 search-one-click-header = Mecanismos de pesquisa em um clique
@@ -572,6 +583,9 @@ sync-signedout-account-create = Não tem uma conta? Crie agora
     .accesskey = C
 sync-signedout-account-signin =
     .label = Entrar…
+    .accesskey = E
+sync-signedout-account-signin2 =
+    .label = Entrar no { -sync-brand-short-name }…
     .accesskey = E
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -716,7 +730,11 @@ privacy-header = Privacidade do navegador
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Contas e senhas
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Perguntar se deve salvar contas e senhas de sites
     .accesskey = r
@@ -730,6 +748,7 @@ forms-breach-alerts =
     .label = Exibir alertas sobre senhas de sites vazados
     .accesskey = v
 forms-breach-alerts-learn-more-link = Saiba mais
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Preencher contas e senhas automaticamente
     .accesskey = P

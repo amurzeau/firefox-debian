@@ -192,6 +192,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Zapnúť
     .tooltiptext = Povoliť kontrolu bezpečnosti aktualizácií doplnkov
+extensions-warning-safe-mode = Všetky doplnky boli zakázané núdzovým režimom.
+extensions-warning-check-compatibility = Kontrola kompatibility doplnkov je vypnutá. Môžete mať nekompatibilné doplnky.
+extensions-warning-check-compatibility-button = Zapnúť
+    .title = Povoliť kontrolu kompatibility doplnkov
+extensions-warning-update-security = Kontrola bezpečnosti aktualizácií doplnkov je vypnutá. Aktualizácie vás môžu ohroziť.
+extensions-warning-update-security-button = Zapnúť
+    .title = Povoliť kontrolu bezpečnosti aktualizácií doplnkov
 
 ## Strings connected to add-on updates
 
@@ -201,12 +208,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Zobraziť nedávno aktualizované
     .accesskey = Z
+addon-updates-check-for-updates = Vyhľadať aktualizácie
+    .accesskey = V
+addon-updates-view-updates = Zobraziť nedávno aktualizované
+    .accesskey = Z
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Automaticky aktualizovať doplnky
+    .accesskey = A
+addon-updates-update-addons-automatically = Automaticky aktualizovať doplnky
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -220,6 +233,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = s
 extensions-updates-reset-updates-to-manual =
     .label = Nastaviť všetky doplnky na manuálne aktualizovanie
+    .accesskey = s
+addon-updates-reset-updates-to-automatic = Nastaviť všetky doplnky na automatické aktualizovanie
+    .accesskey = s
+addon-updates-reset-updates-to-manual = Nastaviť všetky doplnky na manuálne aktualizovanie
     .accesskey = s
 
 ## Status messages displayed when updating add-ons
@@ -239,11 +256,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Nainštalovať aktualizácie
     .tooltiptext = Nainštalovať aktualizácie dostupné v zozname
+addon-updates-updating = Aktualizujú sa doplnky
+addon-updates-installed = Vaše doplnky boli aktualizované.
+addon-updates-none-found = Neboli nájdené žiadne aktualizácie
+addon-updates-manual-updates-found = Zobraziť dostupné aktualizácie
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Nainštalovať doplnok zo súboru…
+    .accesskey = N
+addon-install-from-file-dialog-title = Zvoľte doplnok, ktorý chcete nainštalovať
+addon-install-from-file-filter-name = Doplnky
+addon-open-about-debugging = Ladiť doplnky
+    .accesskey = L
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Spravovať klávesové skratky pre rozšírenia
+    .accesskey = n
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Spravovať klávesové skratky pre rozšírenia
     .accesskey = n
 shortcuts-no-addons = Nemáte povolené žiadne rozšírenie.
 shortcuts-no-commands = Nasledujúce rozšírenia nemajú skratky:
@@ -316,6 +349,8 @@ addon-options-button =
 
 report-addon-button = Nahlásiť
 remove-addon-button = Odstrániť
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Nie je možné odstrániť. <a data-l10n-name="link">Prečo?</a>
 disable-addon-button = Zakázať
 enable-addon-button = Povoliť
 expand-addon-button = Ďalšie možnosti
@@ -410,3 +445,18 @@ recommended-themes-heading = Odporúčané témy vzhľadu
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Ste tvoriví? <a data-l10n-name="link">Vytvorte si svoju vlastnú tému vzhľadu pomocou Firefox Color.</a>
+
+## Page headings
+
+extension-heading = Spravujte svoje rozšírenia
+theme-heading = Spravujte svoje témy vzhľadu
+plugin-heading = Spravujte svoje zásuvné moduly
+dictionary-heading = Spravujte svoje slovníky
+locale-heading = Spravujte svoje jazyky
+updates-heading = Spravujte svoje aktualizácie
+discover-heading = Prispôsobte si { -brand-short-name }
+shortcuts-heading = Správa klávesových skratiek pre rozšírenia
+theme-heading-search-label = Nájdite ďalšie témy vzhľadu
+extension-heading-search-label = Nájdite ďalšie rozšírenia
+addons-heading-search-input =
+    .placeholder = Hľadať na addons.mozilla.org

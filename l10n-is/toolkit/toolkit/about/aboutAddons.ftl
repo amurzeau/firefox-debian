@@ -90,7 +90,6 @@ detail-update-manual =
     .tooltiptext = Ekki setja sjálfvirkt inn uppfærslur
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Keyra í huliðsgluggum
-detail-private-browsing-description = Viðbótin mun virka í huliðsgluggum og hafa aðgang að netvirkni þar. <label data-l10n-name="detail-private-browsing-learn-more">Fræðast meira</label>.
 detail-private-browsing-on =
     .label = Heimila
     .tooltiptext = Heimila í huliðsvöfrun
@@ -139,9 +138,6 @@ legacy-warning-show-legacy = Sýna allar gamlar viðbætur
 legacy-extensions =
     .value = Gamlar viðbætur
 legacy-extensions-description = Þessar viðbætur standast ekki núverandi staðla í { -brand-short-name } þannig að þær hafa verið gerðar óvirkar. <label data-l10n-name="legacy-learn-more">Fræðast um breytingar á viðbótum</label>
-extensions-view-discover =
-    .name = Ná í viðbætur
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-recent-updates =
     .name = Nýlegar uppfærslur
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -169,6 +165,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Virkja
     .tooltiptext = Virkja öryggisuppfærslur fyrir viðbætur
+extensions-warning-safe-mode = Allar viðbætur hafa verið gerðar óvirkar vegna öryggishams.
+extensions-warning-check-compatibility = Samhæfnisathugun viðbóta er óvirk. Hugsanlegt er að þú sért með ósamhæfðar viðbætur.
+extensions-warning-check-compatibility-button = Virkja
+    .title = Virkja samhæfnisathugun viðbóta
+extensions-warning-update-security = Öryggisuppfærslur fyrir viðbætur eru óvirkar. Þú gætir verið í hættu vegna uppfærslu.
+extensions-warning-update-security-button = Virkja
+    .title = Virkja öryggisuppfærslur fyrir viðbætur
 
 ## Strings connected to add-on updates
 
@@ -178,12 +181,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Skoða nýlegar uppfærslur
     .accesskey = S
+addon-updates-check-for-updates = Leita að uppfærslum
+    .accesskey = L
+addon-updates-view-updates = Skoða nýlegar uppfærslur
+    .accesskey = S
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Uppfæra viðbætur sjálfvirkt
+    .accesskey = a
+addon-updates-update-addons-automatically = Uppfæra viðbætur sjálfvirkt
     .accesskey = a
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -197,6 +206,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = r
 extensions-updates-reset-updates-to-manual =
     .label = Endurstilla allar viðbætur á handvirka uppfærslu
+    .accesskey = r
+addon-updates-reset-updates-to-automatic = Endurstilla allar viðbætur á sjálfvirka uppfærslu
+    .accesskey = r
+addon-updates-reset-updates-to-manual = Endurstilla allar viðbætur á handvirka uppfærslu
     .accesskey = r
 
 ## Status messages displayed when updating add-ons
@@ -216,6 +229,19 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Setja inn uppfærslur
     .tooltiptext = Setja inn allar uppfærslur í þessum lista
+addon-updates-updating = Uppfæri viðbætur
+addon-updates-installed = Búið er að uppfæra viðbætur.
+addon-updates-none-found = Engar uppfærslur fundust
+addon-updates-manual-updates-found = Skoða fáanlegar uppfærslur
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Setja inn viðbót frá skrá…
+    .accesskey = i
+addon-install-from-file-dialog-title = Veldu viðbót til að setja inn
+addon-install-from-file-filter-name = Viðbætur
+addon-open-about-debugging = Kemba viðbætur
+    .accesskey = b
 
 ## Extension shortcut management
 
@@ -238,6 +264,9 @@ shortcuts-card-collapse-button = Sýna minna
 go-back-button =
     .tooltiptext = Til baka
 
+## Recommended add-ons page
+
+
 ## Add-on actions
 
 remove-addon-button = Fjarlægja
@@ -245,3 +274,18 @@ disable-addon-button = Óvirkja
 enable-addon-button = Virkja
 addons-enabled-heading = Virkjað
 addons-disabled-heading = Óvirkt
+
+## Pending uninstall message bar
+
+
+## Page headings
+
+extension-heading = Stjórnborð viðbóta
+theme-heading = Stjórnborð þema
+plugin-heading = Stjórnborð tengiforrita
+dictionary-heading = Stjórnborð orðabóka
+locale-heading = Stjórnborð tungumála
+theme-heading-search-label = Finna fleiri þemu
+extension-heading-search-label = Finna fleiri viðbætur
+addons-heading-search-input =
+    .placeholder = Leita á addons.mozilla.org

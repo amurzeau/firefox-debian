@@ -80,10 +80,18 @@ about-debugging-refresh-usb-devices-button = ডিভাইস রিফ্র�
 
 # Title of the Setup page.
 about-debugging-setup-title = সেটআপ
+# Introduction text in the Setup page to explain how to configure remote debugging.
+about-debugging-setup-intro = আপনি যে সংযোগ পদ্ধতিতে ডিভাইসটি রিমোটলি ডিবাগ করতে চান তা কনফিগার করুন।
+# Explanatory text in the Setup page about what the 'This Firefox' page is for
+about-debugging-setup-this-firefox = ট্যাব, এক্সটেনশন এবং পরিষেবা কর্মীদের ডিবাগ করতে <a>{ about-debugging-this-firefox-runtime-name }</a> ব্যবহার করুন, { -brand-shorter-name }এই সংস্করণে।
+# Explanatory text in the Setup page about what the 'This Firefox' page is for
+about-debugging-setup-this-firefox2 = এক্সটেনশন এবং পরিষেবা কর্মীদের ডিবাগ করতে <a>{ about-debugging-this-firefox-runtime-name }</a>ব্যবহার করুন, { -brand-shorter-name }এই সংস্করণে।
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = একটি ডিভাইস সংযুক্ত করুন
 # USB section of the Setup page
 about-debugging-setup-usb-title = USB
+# Explanatory text displayed in the Setup page when USB debugging is disabled
+about-debugging-setup-usb-disabled = এটি সক্রিয় করার মাধ্যমে Andriod এর USB ডিবাগিং এর প্রয়োজনীয় কম্পোনেন্ট { -brand-shorter-name } ডাউনলোড হয়ে যুক্ত হবে।
 # Text of the button displayed in the USB section of the setup page when USB debugging is disabled.
 # Clicking on it will download components needed to debug USB Devices remotely.
 about-debugging-setup-usb-enable-button = USB ডিভাইস সক্রিয় করুন
@@ -155,6 +163,9 @@ about-debugging-runtime-other-workers =
 # Title of the processes category.
 about-debugging-runtime-processes =
     .name = প্রক্রিয়া
+# Label of the button opening the performance profiler panel in runtime pages for remote
+# runtimes.
+about-debugging-runtime-profile-button2 = প্রোফাইল কর্মক্ষমতা
 # Displayed for runtime info in runtime pages.
 # { $name } is brand name such as "Firefox Nightly"
 # { $version } is version such as "64.0a1"
@@ -225,6 +236,15 @@ about-debugging-extension-id =
 about-debugging-worker-action-push = পুশ করুন
 # This string is displayed as a label of the button that starts a service worker.
 about-debugging-worker-action-start = শুরু
+# This string is displayed as a label of the button that pushes a test payload
+# to a service worker.
+# Note this relates to the "Push" API, which is normally not localized so it is
+# probably better to not localize it.
+about-debugging-worker-action-push2 = পুশ করুন
+    .disabledTitle = { -brand-shorter-name } মাল্টিপ্রসেসের জন্য সার্ভিস ওয়ার্কার পুশ বর্তমানে নিষ্ক্রিয় রয়েছে
+# This string is displayed as a label of the button that starts a service worker.
+about-debugging-worker-action-start2 = শুরু করুন
+    .disabledTitle = { -brand-shorter-name } মাল্টিপ্রসেসের জন্য সার্ভিস ওয়ার্কারের শুরু বর্তমানে নিষ্ক্রিয়
 # This string is displayed as a label of the button that unregisters a service worker.
 about-debugging-worker-action-unregister = অনিবন্ধিত
 # Displayed for service workers in runtime pages that listen to Fetch events.
@@ -246,11 +266,18 @@ about-debugging-worker-status-registering = রেজিস্টার কর�
 # of a worker
 about-debugging-worker-push-service =
     .label = পুশ সার্ভিস
+# Displayed as title of the inspect button when service worker debugging is disabled.
+about-debugging-worker-inspect-action-disabled =
+    .title = Service Worker পরিদর্শন বর্তমানে { -brand-shorter-name } মাল্টিপ্রসেসের জন্য বন্ধ আছে
 # Displayed as name for the Main Process debug target in the Processes category. Only for
 # remote runtimes, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-main-process-name = প্রধান প্রক্রিয়া
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = বার্তা বন্ধ করুন
+# Label text used for the error details of message component.
+about-debugging-message-details-label-error = ত্রুটির বিস্তারিত
+# Label text used for the warning details of message component.
+about-debugging-message-details-label-warning = সতর্কবার্তার বিস্তারিত
 # Label text used for default state of details of message component.
 about-debugging-message-details-label = বিস্তারিত

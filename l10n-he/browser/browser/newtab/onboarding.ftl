@@ -21,6 +21,9 @@ onboarding-button-label-get-started = תחילת עבודה
 onboarding-welcome-header = ברוכים הבאים אל { -brand-short-name }
 onboarding-welcome-body = הדפדפן כבר בידיך.<br/>עכשיו נציג את שאר { -brand-product-name }.
 onboarding-welcome-learn-more = מידע נוסף על היתרונות.
+onboarding-welcome-modal-privacy-body = יש לך דפדפן. עכשיו נוסיף קצת חיזוקי פרטיות.
+onboarding-welcome-modal-family-learn-more = מידע נוסף על משפחת מוצרי { -brand-product-name }.
+onboarding-welcome-form-header = תחילת עבודה
 onboarding-join-form-header = הצטרפות אל { -brand-product-name }
 onboarding-join-form-body = נא להכניס את כתובת הדוא״ל שלך כדי להתחיל.
 onboarding-join-form-email =
@@ -28,10 +31,19 @@ onboarding-join-form-email =
 onboarding-join-form-email-error = נדרשת כתובת דוא״ל חוקית
 onboarding-join-form-legal = בחירה בהמשך התהליך מהווה הסכמה ל<a data-l10n-name="terms">תנאי השירות</a> ול<a data-l10n-name="privacy">הצהרת הפרטיות</a>.
 onboarding-join-form-continue = המשך
+# This message is followed by a link using onboarding-join-form-signin ("Sign In") as text.
+onboarding-join-form-signin-label = כבר יש לך חשבון?
+# Text for link to submit the sign in form
+onboarding-join-form-signin = כניסה
 onboarding-start-browsing-button-label = התחלת גלישה
 onboarding-cards-dismiss =
     .title = הסרה
     .aria-label = הסרה
+
+## Welcome full page string
+
+onboarding-fullpage-form-email =
+    .placeholder = כתובת הדוא״ל שלך…
 
 ## Firefox Sync modal dialog strings.
 
@@ -57,6 +69,9 @@ onboarding-benefit-products-title = מוצרים שימושיים
 onboarding-benefit-products-text = לבצע משימות עם משפחת כלים שמכבדת את הפרטיות שלך בכל המכשירים שלך.
 onboarding-benefit-knowledge-title = ידע מעשי
 onboarding-benefit-privacy-title = פרטיות אמיתית
+onboarding-benefit-sync-title = { -sync-brand-short-name }
+onboarding-benefit-monitor-title = { -monitor-brand-short-name }
+onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
 
 ## These strings belong to the individual onboarding messages.
 

@@ -37,6 +37,18 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Bayhayey jiši jišiyan duumante ra
 urlbar-addons-notification-anchor =
     .tooltiptext = Tontoni sinjiyan alhabar fasaldoo feeri
+urlbar-geolocation-blocked =
+    .tooltiptext = War na gorodoo alhabar gagay interneti nungoo woo se.
+urlbar-web-notifications-blocked =
+    .tooltiptext = War na bangandiyaney gagay interneti nungoo woo se.
+urlbar-camera-blocked =
+    .tooltiptext = War na war biizaahayaa gagay interneti nungoo woo se.
+urlbar-microphone-blocked =
+    .tooltiptext = War na war mikrowoo gagay interneti nungoo woo se.
+urlbar-screen-blocked =
+    .tooltiptext = War na interneti nungoo woo gagay nd'a ma war dijoo zemni.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = War na bayhaya jišiyan duumante gagay interneti nungoo woo se.
 
 ## Page Action Context Menu
 
@@ -49,3 +61,18 @@ full-screen-autohide =
 full-screen-exit =
     .label = Dijikul alhaali naŋ
     .accesskey = D
+
+## Search Engine selection buttons (one-offs)
+
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Ceeciyan kayandiyaney barmay
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Ceeciyan kayandiyaney barmay
+search-one-offs-context-open-new-tab =
+    .label = Ceeci kanji taaga ra
+    .accesskey = t
+search-one-offs-context-set-as-default =
+    .label = Kayandi sanda tilasu ceecijinay
+    .accesskey = t

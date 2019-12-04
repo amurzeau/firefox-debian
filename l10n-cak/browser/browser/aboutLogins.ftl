@@ -70,16 +70,19 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = ¿La ye'akanoj rutikirib'al taq amolojri'ïl e'ayakon kan? Tab'ana' runuk'ulem { -sync-brand-short-name }.
+about-logins-login-intro-heading-logged-in = Majun ximon taq tikirib'äl molojri'ïl xe'ilitäj.
 login-intro-description = We xe'ayäk ri rutikirib'al amolojri'ïl pa { -brand-product-name } pa jun chik wi okisab'äl, wawe' nik'ut pe richin nak'ul wawe' chuqa':
 login-intro-instruction-fxa = Tatz'uku' o tatikirisaj molojri'ïl pa { -fxaccount-brand-name } chupam ri okisab'äl, akuchi' e yakäl ri tikirib'äl amolojri'ïl
 login-intro-instruction-fxa-settings = Tatz'eta' chi xacha' ri k'ojlib'äl richin kitikitib'al molojri'ïl pa ri runuk'ulem { -sync-brand-short-name }.
 about-logins-intro-instruction-help = Tatz'eta' <a data-l10n-name="help-link">{ -lockwise-brand-short-name } Tob'äl</a> richin ch'aqa' chik to'ïk.
+about-logins-intro-import = We ri rutikirib'al amolojri'ïl yakon pa jun chik okik'amaya'l, yatikïr <a data-l10n-name="import-link">ye'ajïk' pa { -lockwise-brand-short-name }</a>
 
 ## Login
 
 login-item-new-login-title = Titz'uk K'ak'a' Tikirib'äl Molojri'ïl
 login-item-edit-button = Tinuk'
 login-item-delete-button = Tiyuj
+about-logins-login-item-remove-button = Tiyuj
 login-item-origin-label = Ajk'amaya'l Ochochib'äl
 login-item-origin =
     .placeholder = https://www.example.com
@@ -109,11 +112,8 @@ master-password-reload-button =
     .label = Titikirisäx molojri'ïl
     .accesskey = m
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = Tiq'at
-confirmation-dialog-dismiss-button =
-    .title = Tiq'at
 enable-password-sync-notification-message =
     { PLATFORM() ->
         [windows] ¿La nawajo' ye'atz'ët rutikirib'al taq amolojri'ïl xab'akuchi' nawokisaj { -brand-product-name } { -brand-product-name }? Tajaqa' Taq Rucha'oj { -sync-brand-short-name } richin nacha' ri peraj rujikib'axik rutikirib'al taq molojri'ïl.
@@ -127,8 +127,19 @@ enable-password-sync-preferences-button =
         }
     .accesskey = t
 confirm-delete-dialog-title = ¿La niyuj re rutikirib'al molojri'ïl?
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = Mani nab'än chik pe re k'utunïk re' chwe
+    .accesskey = M
+
+## Dialogs
+
+confirmation-dialog-cancel-button = Tiq'at
+confirmation-dialog-dismiss-button =
+    .title = Tiq'at
+about-logins-confirm-remove-dialog-title = ¿La niyuj el rutikirib'al re moloj re'?
 confirm-delete-dialog-message = Man nitzolin ta chik re samaj.
 confirm-delete-dialog-confirm-button = Tiyuj
+about-logins-confirm-remove-dialog-confirm-button = Tiyuj
 confirm-discard-changes-dialog-title = ¿La yech'aqïx ri taq jaloj man eyakon ta?
 confirm-discard-changes-dialog-message = Xkesach ronojel ri jaloj man eyakon ta.
 confirm-discard-changes-dialog-confirm-button = Tich'aqïx

@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Uloží údaje do trvalého úložiska
 urlbar-addons-notification-anchor =
     .tooltiptext = Otvorí panel správ inštalácie doplnkov
+urlbar-tip-help-icon =
+    .title = Získať pomoc
+urlbar-geolocation-blocked =
+    .tooltiptext = Tejto stránke ste zakázali zisťovať vašu polohu.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Tejto stránke ste zakázali zobrazovať upozornenia.
+urlbar-camera-blocked =
+    .tooltiptext = Tejto stránke ste zakázali prístup k vašej kamere.
+urlbar-microphone-blocked =
+    .tooltiptext = Tejto stránke ste zakázali prístup v vášmu mikrofónu.
+urlbar-screen-blocked =
+    .tooltiptext = Tejto stránke ste zakázali zdieľanie vašej obrazovky.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Tejto stránke ste zakázali ukladanie údajov do trvalého úložiska.
+urlbar-popup-blocked =
+    .tooltiptext = Tejto stránke ste zablokovali zobrazovanie vyskakovacích okien.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Tejto stránke ste zablokovali automatické prehrávania médií so zvukom.
+urlbar-canvas-blocked =
+    .tooltiptext = Tejto stránke ste zakázali prístup k údajom canvasu.
+urlbar-midi-blocked =
+    .tooltiptext = Tejto stránke ste zakázali prístup k MIDI.
+urlbar-install-blocked =
+    .tooltiptext = Tejto stránke ste zakázali inštaláciu doplnkov.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Ukončiť režim celej obrazovky
     .accesskey = U
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Vyhľadať pomocou:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Zmeniť nastavenia vyhľadávania
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Zmeniť nastavenia vyhľadávania
+search-one-offs-context-open-new-tab =
+    .label = Vyhľadať na novej karte
+    .accesskey = h
+search-one-offs-context-set-as-default =
+    .label = Nastaviť ako predvolený vyhľadávací modul
+    .accesskey = N
+search-one-offs-context-set-as-default-private =
+    .label = Nastaviť ako predvolený vyhľadávací modul pre súkromné prehliadanie
+    .accesskey = o

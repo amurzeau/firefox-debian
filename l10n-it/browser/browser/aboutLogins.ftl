@@ -66,16 +66,19 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = Stai cercando le credenziali che hai salvato? Configura { -sync-brand-short-name }.
+about-logins-login-intro-heading-logged-in = Credenziali sincronizzate non trovate.
 login-intro-description = Se le credenziali sono salvate in { -brand-product-name } su un altro dispositivo, ecco come renderle disponibili qui:
 login-intro-instruction-fxa = Accedi o crea un { -fxaccount-brand-name } sul dispositivo dove sono salvate le credenziali
 login-intro-instruction-fxa-settings = Assicurati che la casella “Credenziali” sia selezionata nelle impostazioni di { -sync-brand-short-name }
 about-logins-intro-instruction-help = Visita il <a data-l10n-name="help-link">supporto per { -lockwise-brand-short-name }</a> per ulteriori informazioni
+about-logins-intro-import = Se le credenziali sono salvate in un altro browser, è possibile <a data-l10n-name="import-link">importarle in { -lockwise-brand-short-name }</a>
 
 ## Login
 
 login-item-new-login-title = Inserisci nuove credenziali
 login-item-edit-button = Modifica
 login-item-delete-button = Elimina
+about-logins-login-item-remove-button = Rimuovi
 login-item-origin-label = Indirizzo web
 login-item-origin =
     .placeholder = https://www.example.com
@@ -105,11 +108,8 @@ master-password-reload-button =
     .label = Accedi
     .accesskey = A
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = Annulla
-confirmation-dialog-dismiss-button =
-    .title = Annulla
 enable-password-sync-notification-message =
     { PLATFORM() ->
         [windows] Vuoi avere a disposizione le tue credenziali ovunque utilizzi { -brand-product-name }? Apri le opzioni di { -sync-brand-short-name } e seleziona la voce “Credenziali”.
@@ -122,9 +122,21 @@ enable-password-sync-preferences-button =
            *[other] Apri le preferenze di { -sync-brand-short-name }
         }
     .accesskey = A
+about-logins-enable-password-sync-dont-ask-again-button =
+  .label = Non chiedere nuovamente
+  .accesskey = N
+
+## Dialogs
+
+confirmation-dialog-cancel-button = Annulla
+confirmation-dialog-dismiss-button =
+    .title = Annulla
+
 confirm-delete-dialog-title = Eliminare queste credenziali?
+about-logins-confirm-remove-dialog-title = Rimuovere queste credenziali?
 confirm-delete-dialog-message = Questa operazione non può essere annullata.
 confirm-delete-dialog-confirm-button = Elimina
+about-logins-confirm-remove-dialog-confirm-button = Rimuovi
 confirm-discard-changes-dialog-title = Ignorare le modifiche non salvate?
 confirm-discard-changes-dialog-message = Tutte le modifiche non salvate andranno perse.
 confirm-discard-changes-dialog-confirm-button = Ignora

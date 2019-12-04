@@ -41,6 +41,22 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = ផ្ទុក​ទិន្នន័យ​នៅ​ក្នុង​កន្លែង​ផ្ទុក​អចិន្ត្រៃយ៍
 urlbar-addons-notification-anchor =
     .tooltiptext = បើក​ផ្ទាំង​សារ​ដំឡើង​កម្មវិធី​ផ្នែក​បន្ថែម
+urlbar-geolocation-blocked =
+    .tooltiptext = អ្នក​បាន​បិទ​ព័ត៌មាន​អំពី​ទីតាំង​សម្រាប់​វិបសាយ​នេះ។
+urlbar-web-notifications-blocked =
+    .tooltiptext = អ្នក​បាន​បិទ​ការ​ជូនដំណឹង​សម្រាប់​វិបសាយ​នេះ។
+urlbar-camera-blocked =
+    .tooltiptext = អ្នក​បាន​បិទ​កាមេរ៉ា​របស់​អ្នក​សម្រាប់​វិបសាយ​នេះ។
+urlbar-microphone-blocked =
+    .tooltiptext = អ្នក​បាន​បិទ​មីក្រូហ្វូន​របស់​អ្នក​សម្រាប់​វិបសាយ​នេះ។
+urlbar-screen-blocked =
+    .tooltiptext = អ្នក​បាន​បិទ​វិបសាយ​នេះ​ពី​ការ​ចែករំលែក​អេក្រង់​របស់​អ្នក។
+urlbar-persistent-storage-blocked =
+    .tooltiptext = អ្នក​បាន​ទប់ស្កាត់​ការ​ផ្ទុក​រហូត​សម្រាប់​វេបសាយ​នេះ។
+urlbar-popup-blocked =
+    .tooltiptext = អ្នក​បាន​ទប់ស្កាត់​ផ្ទាំង​លេចឡើង​សម្រាប់​គេហទំព័រ​នេះ។
+urlbar-canvas-blocked =
+    .tooltiptext = អ្នក​បាន​ទប់ស្កាត់​ការដកទិន្នន័យ​កម្មវិធីកែ​រូបភាព​សម្រាប់​គេហទំព័រ​នេះ។
 
 ## Page Action Context Menu
 
@@ -59,3 +75,18 @@ full-screen-autohide =
 full-screen-exit =
     .label = ចេញពី​ទម្រង់​អេក្រង់​ពេញ
     .accesskey = F
+
+## Search Engine selection buttons (one-offs)
+
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = ផ្លាស់ប្ដូរ​ការ​កំណត់​ស្វែងរក
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = ផ្លាស់ប្ដូរ​ការ​កំណត់​ស្វែងរក
+search-one-offs-context-open-new-tab =
+    .label = ស្វែងរក​នៅ​ក្នុង​ផ្ទាំង​ថ្មី
+    .accesskey = T
+search-one-offs-context-set-as-default =
+    .label = កំណត់​ជា​ម៉ាស៊ីន​ស្វែងរក​លំនាំដើម
+    .accesskey = D

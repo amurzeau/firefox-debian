@@ -116,9 +116,6 @@ disabled-unsigned-heading =
 disabled-unsigned-description = ಈ ಕೆಳಗಿನ ಆಡ್-‌ಆನ್‌ಗಳನ್ನು { -brand-short-name } ನಲ್ಲಿನ ಬಳಕೆಗೆ ದೃಢಪಡಿಸಲಾಗಿಲ್ಲ. ನೀವು ಬೇಕಿದ್ದಲ್ಲಿ <label data-l10n-name="find-addons">ಬದಲಾವಣೆಗಳನ್ನು ಹುಡುಕು</label> ಅಥವಾ ಅವುಗಳನ್ನು ದೃಢಪಡಿಸಲು ಡೆವೆಲಪರ್ ಅನ್ನು ಕೇಳಿಕೊಳ್ಳಬಹುದು.
 disabled-unsigned-learn-more = ನಿಮ್ಮನ್ನು ಆನ್‌ಲೈನ್ ಸುರಕ್ಷಿತವಾಗಿರುವಲ್ಲಿ ಸಹಾಯ ಮಾಡುವ ನಮ್ಮ ಶ್ರಮದ ಬಗ್ಗೆ ಹೆಚ್ಚು ತಿಳಿಯಿರಿ.
 disabled-unsigned-devinfo = ತಮ್ಮ ಆಡ್-ಅನ್‌ಗಳನ್ನು ದೃಢಪಡಿಸಿಕೊಳ್ಳ ಬಯಸಲು ಇಚ್ಛಿಸುವ ಡೆವೆಲಪರ್‌ಗಳು ಮುದುವರೆಯಲು ಓದಿ ನಮ್ಮ <label data-l10n-name="learn-more">ಕೈಪಿಡಿ</label>.
-extensions-view-discover =
-    .name = ಆಡ್-ಆನ್‌ಗಳನ್ನು ಪಡೆದುಕೊಳ್ಳಿ
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-recent-updates =
     .name = ಇತ್ತೀಚಿನ ಅಪ್‌ಡೇಟ್‌ಗಳು
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -146,6 +143,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = ಶಕ್ತಗೊಳಿಸು
     .tooltiptext = ಆಡ್-ಆನ್ ಅಪ್‌ಡೇಟ್ ಸುರಕ್ಷತಾ ಪರಿಶೀಲನೆಯನ್ನು ಶಕ್ತಗೊಳಿಸು
+extensions-warning-safe-mode = ಎಲ್ಲಾ ಆಡ್-ಆನ್‌ಗಳನ್ನು ಸುರಕ್ಷತಾ ಕ್ರಮದಿಂದ ಅಶಕ್ತಗೊಳಿಸಲಾಗಿದೆ.
+extensions-warning-check-compatibility = ಆಡ್-ಆನ್‌ ಹೊಂದಾಣಿಕೆ ಪರಿಶೀಲನೆಯನ್ನು ಅಶಕ್ತಗೊಳಿಸಲಾಗಿದೆ. ನೀವು ಹೊಂದಾಣಿಕೆಯಾಗದ ಆಡ್-ಆನ್‌ಗಳನ್ನು ಹೊಂದಿರಬಹುದು.
+extensions-warning-check-compatibility-button = ಶಕ್ತಗೊಳಿಸು
+    .title = ಆಡ್-ಆನ್ ಹೊಂದಾಣಿಕೆ ಪರಿಶೀಲನೆಯನ್ನು ಶಕ್ತಗೊಳಿಸು
+extensions-warning-update-security = ಆಡ್-ಆನ್ ಅಪ್‌ಡೇಟ್ ಸುರಕ್ಷತಾ ಪರಿಶೀಲನೆಯನ್ನು ಅಶಕ್ತಗೊಳಿಸಲಾಗಿದೆ. ನೀವು ಅಪ್‌ಡೇಟ್‌ಗಳಿಂದ ರಾಜಿ ಮಾಡಿಕೊಂಡಂತಾಗಬಹುದು.
+extensions-warning-update-security-button = ಶಕ್ತಗೊಳಿಸು
+    .title = ಆಡ್-ಆನ್ ಅಪ್‌ಡೇಟ್ ಸುರಕ್ಷತಾ ಪರಿಶೀಲನೆಯನ್ನು ಶಕ್ತಗೊಳಿಸು
 
 ## Strings connected to add-on updates
 
@@ -155,12 +159,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = ಇತ್ತೀಚಿನ ಅಪ್‌ಡೇಟ್‌ಗಳನ್ನು View
     .accesskey = V
+addon-updates-check-for-updates = ಅಪ್‌ಡೇಟ್‌ಗಳಿಗಾಗಿ Check
+    .accesskey = C
+addon-updates-view-updates = ಇತ್ತೀಚಿನ ಅಪ್‌ಡೇಟ್‌ಗಳನ್ನು View
+    .accesskey = V
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Add-ons ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಅಪ್‌ಡೇಟ್‌ ಮಾಡು
+    .accesskey = A
+addon-updates-update-addons-automatically = Add-ons ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಅಪ್‌ಡೇಟ್‌ ಮಾಡು
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -174,6 +184,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = R
 extensions-updates-reset-updates-to-manual =
     .label = ಎಲ್ಲಾ ಆಡ್-ಆನ್‌ಗಳನ್ನು ಕೈಯಾರೆ ಅಪ್‌ಡೇಟ್‌ಗೆ Reset
+    .accesskey = R
+addon-updates-reset-updates-to-automatic = ಎಲ್ಲಾ ಆಡ್-ಆನ್‌ಗಳನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಅಪ್‌ಡೇಟ್‌ಗೆ Reset
+    .accesskey = R
+addon-updates-reset-updates-to-manual = ಎಲ್ಲಾ ಆಡ್-ಆನ್‌ಗಳನ್ನು ಕೈಯಾರೆ ಅಪ್‌ಡೇಟ್‌ಗೆ Reset
     .accesskey = R
 
 ## Status messages displayed when updating add-ons
@@ -193,3 +207,31 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = ಅಪ್‌ಡೇಟ್‌ಗಳನ್ನು ಅನುಸ್ಥಾಪಿಸು
     .tooltiptext = ಈ ಪಟ್ಟಿಯಲ್ಲಿ ಲಭ್ಯವಿರುವ ಅಪ್‌ಡೇಟ್‌ಗಳನ್ನು ಅನುಸ್ಥಾಪಿಸು
+addon-updates-updating = ಆಡ್‌-ಆನ್‌ಗಳನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲಾಗುತ್ತದೆ
+addon-updates-installed = ನಿಮ್ಮ ಆಡ್-ಆನ್‌ಗಳನ್ನು ಅಪ್‌ಡೇಟ್‌ ಮಾಡಲಾಗಿದೆ.
+addon-updates-none-found = ಯಾವುದೆ ಅಪ್‌ಡೇಟ್‌ಗಳು ಕಂಡುಬಂದಿಲ್ಲ
+addon-updates-manual-updates-found = ಲಭ್ಯವಿರುವ ಅಪ್‌ಡೇಟ್‌ಗಳನ್ನು ನೋಡಿ
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Install ಆಡ್-ಆನ್‌ಗಳನ್ನು ಕಡತದಿಂದ…
+    .accesskey = I
+addon-install-from-file-dialog-title = ಅನುಸ್ಥಾಪಿಸಲು ಆಡ್-ಆನ್‌ ಅನ್ನು ಆಯ್ಕೆ ಮಾಡಿ
+addon-install-from-file-filter-name = ಆಡ್-ಆನ್‌ಗಳು
+addon-open-about-debugging = ಆಡ್-ಆನ್‍ಗಳನ್ನು ಪರೀಕ್ಷಿಸಿ
+    .accesskey = b
+
+## Extension shortcut management
+
+
+## Recommended add-ons page
+
+
+## Add-on actions
+
+
+## Pending uninstall message bar
+
+
+## Page headings
+

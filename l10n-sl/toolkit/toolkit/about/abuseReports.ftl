@@ -2,6 +2,13 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# Localized string used as the dialog window title (a new behavior locked
+# behind the "extensions.abuseReport.openDialog" preference).
+# "Report" is a noun in this case, "Report for AddonName".
+#
+# Variables:
+#   $addon-name (string) - Name of the add-on being reported
+abuse-report-dialog-title = Prijava dodatka { $addon-name }
 abuse-report-title-extension = Prijavi to razširitev organizaciji { -vendor-short-name }
 abuse-report-title-theme = Prijavi to temo organizaciji { -vendor-short-name }
 abuse-report-subtitle = Kje je težava?
@@ -52,17 +59,23 @@ abuse-report-messagebar-action-cancel = Prekliči
 ## Abuse report reasons (optionally paired with related examples and/or suggestions)
 
 abuse-report-damage-reason = Škoduje mojemu računalniku in podatkom
+abuse-report-damage-reason-v2 = Poškodovala mi je računalnik ali ogrozila moje podatke
 abuse-report-damage-example = Na primer: namešča zlonamerne programe ali krade podatke
 abuse-report-spam-reason = Vsiljuje vsebino ali oglase
+abuse-report-spam-reason-v2 = Vsebuje neželeno vsebino ali vsiljuje oglase
 abuse-report-spam-example = Na primer: dodaja oglase na spletne strani
 abuse-report-settings-reason = Brez moje privolitve je zamenjala moj iskalnik, domačo stran ali stran novega zavihka
+abuse-report-settings-reason-v2 = Brez moje privolitve je zamenjala moj iskalnik, domačo stran ali stran novega zavihka
 abuse-report-settings-suggestions = Preden razširitev prijavite, lahko poskusite spremeniti nastavitve:
 abuse-report-settings-suggestions-search = Spremenite nastavitve privzetega iskalnika
 abuse-report-settings-suggestions-homepage = Spremenite domačo stran in nov zavihek
 abuse-report-deceptive-reason = Izdaja se za nekaj drugega
+abuse-report-deceptive-reason-v2 = Izdaja se za nekaj drugega
 abuse-report-deceptive-example = Na primer: zavajajoč opis ali slike
 abuse-report-broken-reason-extension = Ne deluje, kvari spletne strani ali upočasnjuje { -brand-product-name }
 abuse-report-broken-reason-theme = Ne deluje ali pokvari zaslon brskalnika
+abuse-report-broken-reason-extension-v2 = Ne deluje, kvari spletne strani ali upočasnjuje { -brand-product-name }
+abuse-report-broken-reason-theme-v2 = Ne deluje ali pokvari zaslon brskalnika
 abuse-report-broken-example = Primer: Zmogljivosti so počasne, težke za uporabo ali ne delujejo. Deli spletnih mest se ne naložijo ali izgledajo nenavadno
 abuse-report-broken-suggestions-extension =
     Zdi se, da ste odkrili napako. Za razrešitev težave vam poleg pošiljanja poročila priporočamo,
@@ -73,9 +86,11 @@ abuse-report-broken-suggestions-theme =
     da se obrnete na razvijalca teme. Podatke o razvijalcu lahko najdete na
     <a data-l10n-name="support-link"> spletnem mestu teme </a>.
 abuse-report-policy-reason = Sovražna, nasilna ali nezakonita vsebina
+abuse-report-policy-reason-v2 = Vsebuje sovražno, nasilno ali nezakonito vsebino
 abuse-report-policy-suggestions =
     Opomba: Kršitve avtorskih pravic in blagovnih znamk je potrebno prijaviti v ločenem postopku.
     Za prijavo težave <a data-l10n-name="report-infringement-link">sledite tem navodilom</a>.
 abuse-report-unwanted-reason = Te razširitve nisem hotel in se je ne morem znebiti
+abuse-report-unwanted-reason-v2 = Nikoli je nisem želel in se je ne znam znebiti
 abuse-report-unwanted-example = Na primer: namestil jo je drug program brez mojega dovoljenja
 abuse-report-other-reason = Nekaj drugega

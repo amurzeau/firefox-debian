@@ -14,6 +14,11 @@ pref-page =
             [windows] Preferenzas
            *[other] Preferenzas
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Preferenzas
+       *[other] Preferenzas
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -282,6 +287,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Utilisar { $plugin-name } (en { -brand-short-name })
@@ -457,7 +466,6 @@ choose-bookmark =
 
 home-prefs-content-header = Cuntegn da la pagina da partenza da Firefox
 home-prefs-content-description = Tscherna il cuntegn che ti vuls vesair sin la pagina da partenza da Firefox.
-home-prefs-content-discovery-description = La vitrina da cuntegn pussibilitescha da scuvrir artitgels relevants da gronda qualitad en il web.
 home-prefs-search-header =
     .label = Tschertga web
 home-prefs-topsites-header =
@@ -505,6 +513,13 @@ search-bar-shown =
     .label = Agiuntar la trav da tschertgar a la trav d'utensils
 search-engine-default-header = Maschina da tschertgar da standard
 search-engine-default-desc = Tscherna la maschina da tschertgar da standard per la trav d'adressas e la trav da tschertgar.
+search-engine-default-desc-2 = Quai è la maschina da tschertgar predefinida per la trav d'adressas e la trav da tschertga. Ti la pos midar da tut temp.
+search-engine-default-private-desc-2 = Tscherna in'autra maschina da tschertgar da standard mo per fanestras privatas
+search-separate-default-engine =
+    .label = Utilisar questa maschina da tschertgar en fanestras privatas
+    .accesskey = U
+search-suggestions-header = Propostas da tschertga
+search-suggestions-desc = Tscherna co las propostas da maschinas da tschertgar duain cumparair.
 search-suggestions-option =
     .label = Porscher propostas da tschertgar
     .accesskey = s
@@ -518,6 +533,9 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Mussar las propostas da tschertga avant la cronologia da navigaziun en ils resultats da la trav d'adressas
+search-show-suggestions-private-windows =
+    .label = Mussar propostas da tschertga en fanestras privatas
+suggestions-addressbar-settings = Modifitgar las preferenzas per las propostas da la cronologia da navigaziun, dals segnapaginas e dals tabs
 search-suggestions-cant-show = Propostas da tschertgar na vegnan betg mussadas en la trav d'adressas perquai che ti has configurà { -brand-short-name } uschia che la cronologia na vegn betg memorisada.
 search-one-click-header = Maschinas da tschertgar cun-in-clic
 search-one-click-desc = Tscherna las maschinas da tschertgar alternativas che cumparan sut la trav d'adressas e la trav da tschertgar sche ti cumenzas a tippar in pled.
@@ -566,6 +584,9 @@ sync-signedout-account-create = Ti n'has nagin conto? Ta registrescha
 sync-signedout-account-signin =
     .label = S'annunziar…
     .accesskey = a
+sync-signedout-account-signin2 =
+    .label = S'annunziar tar { -sync-brand-short-name }…
+    .accesskey = t
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -633,6 +654,9 @@ sync-currently-syncing-prefs =
         [windows] Preferenzas
        *[other] Preferenzas
     }
+sync-change-options =
+    .label = Modifitgar…
+    .accesskey = M
 
 ## The "Choose what to sync" dialog.
 
@@ -643,7 +667,6 @@ sync-choose-what-to-sync-dialog =
     .buttonaccesskeyaccept = M
     .buttonlabelextra2 = Deconnectar…
     .buttonaccesskeyextra2 = D
-sync-choose-heading = Tscherna tge che duai vegnir sincronisà cun tes conto per apparats che utiliseschan { -sync-brand-short-name }:
 sync-engine-bookmarks =
     .label = ils segnapaginas
     .accesskey = g
@@ -707,7 +730,11 @@ privacy-header = Protecziun da datas
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Infurmaziuns d'annunzia & pleds-clav
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Dumandar da memorisar las infurmaziuns d'annunzia ed ils pleds-clav per paginas d'internet
     .accesskey = r
@@ -721,6 +748,7 @@ forms-breach-alerts =
     .label = Mussar avertiments per ils pleds-clav da websites cun sperditas da datas
     .accesskey = b
 forms-breach-alerts-learn-more-link = Ulteriuras infurmaziuns
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Emplenir automaticamain infurmaziuns d'annunzia
     .accesskey = i

@@ -153,7 +153,7 @@ menu-view-full-screen =
     .label = 全屏
     .accesskey = F
 
-
+##
 
 menu-view-show-all-tabs =
     .label = 显示所有标签页
@@ -222,10 +222,10 @@ menu-tools-sync-now =
     .label = 立即同步
     .accesskey = S
 menu-tools-sync-re-auth =
-    .label = 重新连接至{ -sync-brand-short-name }…
+    .label = 重新绑定{ -sync-brand-short-name }…
     .accesskey = R
 menu-tools-fxa-re-auth =
-    .label = 重新连接到 { -brand-product-name }…
+    .label = 重新绑定 { -brand-product-name }…
     .accesskey = R
 menu-tools-web-developer =
     .label = Web 开发者
@@ -290,3 +290,6 @@ menu-help-safe-mode-with-addons =
 menu-help-report-deceptive-site =
     .label = 举报诈骗网站…
     .accesskey = D
+menu-help-not-deceptive =
+    .label = 这不是诈骗网站…
+    .accesskey = d

@@ -186,6 +186,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Attiva
     .tooltiptext = Attiva il controllo sulla sicurezza degli aggiornamenti dei componenti aggiuntivi
+extensions-warning-safe-mode = Tutti i componenti aggiuntivi sono stati disattivati dalla modalità provvisoria.
+extensions-warning-check-compatibility = Il controllo di compatibilità dei componenti aggiuntivi è disattivato. Potrebbero essere presenti dei componenti aggiuntivi non compatibili.
+extensions-warning-check-compatibility-button = Attiva
+    .title = Attiva il controllo di compatibilità dei componenti aggiuntivi
+extensions-warning-update-security = Il controllo sulla sicurezza degli aggiornamenti dei componenti aggiuntivi è disattivato. Il sistema potrebbe essere danneggiato da un aggiornamento.
+extensions-warning-update-security-button = Attiva
+    .title = Attiva il controllo sulla sicurezza degli aggiornamenti dei componenti aggiuntivi
 
 ## Strings connected to add-on updates
 
@@ -195,12 +202,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Visualizza aggiornamenti recenti
     .accesskey = V
+addon-updates-check-for-updates = Controlla aggiornamenti
+    .accesskey = C
+addon-updates-view-updates = Visualizza aggiornamenti recenti
+    .accesskey = V
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Aggiorna automaticamente i componenti aggiuntivi
+    .accesskey = A
+addon-updates-update-addons-automatically = Aggiorna automaticamente i componenti aggiuntivi
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -214,6 +227,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = R
 extensions-updates-reset-updates-to-manual =
     .label = Ripristina l’aggiornamento manuale per tutti i componenti aggiuntivi
+    .accesskey = R
+addon-updates-reset-updates-to-automatic = Ripristina l’aggiornamento automatico per tutti i componenti aggiuntivi
+    .accesskey = R
+addon-updates-reset-updates-to-manual = Ripristina l’aggiornamento manuale per tutti i componenti aggiuntivi
     .accesskey = R
 
 ## Status messages displayed when updating add-ons
@@ -233,35 +250,46 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Installa aggiornamenti
     .tooltiptext = Installa gli aggiornamenti disponibili in questo elenco
+addon-updates-updating = Aggiornamento dei componenti aggiuntivi in corso
+addon-updates-installed = I componenti aggiuntivi sono stati aggiornati.
+addon-updates-none-found = Nessun aggiornamento disponibile
+addon-updates-manual-updates-found = Visualizza aggiornamenti disponibili
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Installa componente aggiuntivo da file…
+    .accesskey = I
+addon-install-from-file-dialog-title = Selezionare i componenti aggiuntivi da installare
+addon-install-from-file-filter-name = Componenti aggiuntivi
+addon-open-about-debugging = Debug componenti aggiuntivi
+    .accesskey = D
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Gestisci scorciatoie da tastiera
     .accesskey = G
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Gestisci scorciatoie da tastiera
+    .accesskey = G
 shortcuts-no-addons = Non ci sono estensioni attive.
 shortcuts-no-commands = Le seguenti estensioni non hanno scorciatoie da tastiera:
 shortcuts-input =
-  .placeholder = Inserisci una scorciatoia
-
+    .placeholder = Inserisci una scorciatoia
 shortcuts-browserAction = Attiva estensione
 shortcuts-pageAction = Attiva azione pagina
 shortcuts-sidebarAction = Attiva/disattiva barra laterale
-
 shortcuts-modifier-mac = Includi Ctrl, Alt o ⌘
 shortcuts-modifier-other = Includi Ctrl o Alt
 shortcuts-invalid = Combinazione non valida
 shortcuts-letter = Inserisci una lettera
 shortcuts-system = Non è possibile sostituire una scorciatoia da tastiera di { -brand-short-name }
-
 # String displayed in warning label when there is a duplicate shortcut
 shortcuts-duplicate = Scorciatoia da tastiera duplicata
-
 # String displayed when a keyboard shortcut is already assigned to more than one add-on
 # Variables:
 #   $shortcut (string) - Shortcut string for the add-on
 shortcuts-duplicate-warning-message = La combinazione { $shortcut } è utilizzata come scorciatoia da tastiera per più comandi. Scorciatoie duplicate possono causare comportamenti imprevisti.
-
 shortcuts-exists = Già utilizzata da { $addon }
 shortcuts-card-expand-button = Visualizza altre { $numberToShow }
 shortcuts-card-collapse-button = Mostra meno scorciatoie
@@ -280,15 +308,12 @@ discopane-intro =
     terze parti. Ecco una selezione <a data-l10n-name="learn-more-trigger">
     consigliata</a> da { -brand-product-name }, con la garanzia di sicurezza,
     prestazioni e funzionalità al massimo livello.
-
 discopane-notice-recommendations =
     Alcuni consigli in questa pagina sono personalizzati. Sono basati sulle
     estensioni già installate, le impostazioni del profilo e statistiche
     d’utilizzo.
 discopane-notice-learn-more = Ulteriori informazioni
-
 privacy-policy = Informativa sulla privacy
-
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
 #   $author (string) - The name of the add-on developer.
@@ -306,11 +331,17 @@ addon-options-button =
     .aria-label = Altre opzioni
 
 ## Add-on actions
+
 report-addon-button = Segnala
 remove-addon-button = Rimuovi
+remove-addon-disabled-button = Impossibile rimuovere <a data-l10n-name="link">Perché?</a>
 disable-addon-button = Disattiva
 enable-addon-button = Attiva
 expand-addon-button = Altre opzioni
+disable-addon-button-label =
+    .aria-label = Disattiva
+enable-addon-button-label =
+    .aria-label = Attiva
 preferences-addon-button =
     { PLATFORM() ->
         [windows] Opzioni
@@ -321,44 +352,38 @@ release-notes-addon-button = Note di versione
 permissions-addon-button = Permessi
 addons-enabled-heading = Elementi attivi
 addons-disabled-heading = Elementi disattivati
-
 extension-enabled-heading = Attive
 extension-disabled-heading = Disattivate
-
 theme-enabled-heading = Attivi
 theme-disabled-heading = Disattivati
-
 plugin-enabled-heading = Attivi
 plugin-disabled-heading = Disattivati
-
 dictionary-enabled-heading = Attivi
 dictionary-disabled-heading = Disattivati
-
 locale-enabled-heading = Attive
 locale-disabled-heading = Disattivate
-
 ask-to-activate-button = Chiedi prima di attivare
 always-activate-button = Attiva sempre
 never-activate-button = Non attivare mai
-
 addon-detail-author-label = Autore
 addon-detail-version-label = Versione
 addon-detail-last-updated-label = Ultimo aggiornamento
 addon-detail-homepage-label = Sito web
 addon-detail-rating-label = Voto
-
 # The average rating that the add-on has received.
 # Variables:
 #   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
 five-star-rating =
-  .title = Voto: { NUMBER($rating, maximumFractionDigits: 1) } su 5
-
+    .title = Voto: { NUMBER($rating, maximumFractionDigits: 1) } su 5
 addon-name-disabled = { $name } (disattivato)
 addon-detail-reviews-link =
     { $numberOfReviews ->
         [one] { $numberOfReviews } recensione
        *[other] { $numberOfReviews } recensioni
-}
+    }
+
+## Pending uninstall message bar
+
 pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> è stato rimosso.
 pending-uninstall-undo-button = Annulla
 addon-detail-updates-label = Aggiornamento automatico
@@ -376,11 +401,11 @@ addon-detail-private-browsing-help = Se viene garantito il permesso, l’estensi
 addon-detail-private-browsing-allow = Consenti
 addon-detail-private-browsing-disallow = Non consentire
 addon-badge-recommended =
-  .title = Consigliata
-  .alt = Consigliata
+    .title = Consigliata
+    .alt = Consigliata
 addon-badge-recommended2 =
-  .title = Vengono consigliate solo estensioni che soddisfano i requisiti di sicurezza e prestazioni di { -brand-product-name }
-  .aria-label = { addon-badge-recommended2.title }
+    .title = Vengono consigliate solo estensioni che soddisfano i requisiti di sicurezza e prestazioni di { -brand-product-name }
+    .aria-label = { addon-badge-recommended2.title }
 available-updates-heading = Aggiornamenti disponibili
 recent-updates-heading = Aggiornamenti recenti
 release-notes-loading = Caricamento in corso…
@@ -389,3 +414,18 @@ addon-permissions-empty = Questa estensione non richiede alcun permesso
 recommended-extensions-heading = Estensioni consigliate
 recommended-themes-heading = Temi consigliati
 recommended-theme-1 = Ti senti creativo? <a data-l10n-name="link">Disegna il tuo tema con Firefox Color</a>.
+
+## Page headings
+
+extension-heading = Gestione estensioni
+theme-heading = Gestione temi
+plugin-heading = Gestione plugin
+dictionary-heading = Gestione dizionari
+locale-heading = Gestione lingue
+updates-heading = Gestione aggiornamenti
+discover-heading = Personalizza { -brand-short-name }
+shortcuts-heading = Gestione scorciatoie da tastiera
+theme-heading-search-label = Trova altri temi
+extension-heading-search-label = Trova altre estensioni
+addons-heading-search-input =
+    .placeholder = Cerca in addons.mozilla.org

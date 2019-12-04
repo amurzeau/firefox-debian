@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Gegevens yn permaninte opslach bewarje
 urlbar-addons-notification-anchor =
     .tooltiptext = Berjochtepaniel foar add-on-ynstallaasje iepenje
+urlbar-tip-help-icon =
+    .title = Help krije
+urlbar-geolocation-blocked =
+    .tooltiptext = Jo hawwe jo lokaasjeynformaasje foar dizze website blokkearre.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Jo hawwe notifikaasjes foar dizze website blokkearre.
+urlbar-camera-blocked =
+    .tooltiptext = Jo hawwe jo kamera foar dizze website blokkearre.
+urlbar-microphone-blocked =
+    .tooltiptext = Jo hawwe jo mikrofoan foar dizze website blokkearre.
+urlbar-screen-blocked =
+    .tooltiptext = Jo hawwe jo it dielen fan jo skerm foar dizze website blokkearre.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Jo hawwe permaninte opslach foar dizze website blokkearre.
+urlbar-popup-blocked =
+    .tooltiptext = Jo hawwe pop-ups foar dizze website blokkearre.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Jo hawwe automatysk ôfspylje foar dizze website blokkearre.
+urlbar-canvas-blocked =
+    .tooltiptext = Jo hawwe canvas-gegevensekstraksje foar dizze website blokkearre.
+urlbar-midi-blocked =
+    .tooltiptext = Jo hawwe MIDI foar dizze website blokkearre.
+urlbar-install-blocked =
+    .tooltiptext = Jo hawwe ynstallaasje fan add-ons foar dizze website blokkearre.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Folsleinskermmodus ôfslute
     .accesskey = F
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Diskear sykje mei:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Sykynstellingen wizigje
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Sykynstellingen wizigje
+search-one-offs-context-open-new-tab =
+    .label = Sykje yn Nij ljepblêd
+    .accesskey = N
+search-one-offs-context-set-as-default =
+    .label = Ynstelle as standertsykmasine
+    .accesskey = s
+search-one-offs-context-set-as-default-private =
+    .label = As standertsykmasine foar priveefinsters ynstelle
+    .accesskey = p

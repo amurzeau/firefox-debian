@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Деректерді тұрақты қоймада сақтау
 urlbar-addons-notification-anchor =
     .tooltiptext = Кеңейтулерді орнату хабарламалар панелін ашу
+urlbar-tip-help-icon =
+    .title = Көмек алу
+urlbar-geolocation-blocked =
+    .tooltiptext = Сіз орналасу ақпаратымен бөлісуді бұл вебсайтқа блоктадыңыз.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Сіз хабарламаларды бұл вебсайтқа блоктадыңыз.
+urlbar-camera-blocked =
+    .tooltiptext = Камераңызды қолдануды бұл веб-сайтқа бұғаттадыңыз.
+urlbar-microphone-blocked =
+    .tooltiptext = Сіз микрофоныңызды қолдануды бұл вебсайтқа блоктадыңыз.
+urlbar-screen-blocked =
+    .tooltiptext = Сіз экраныңызбен бөлісуді бұл вебсайтқа блоктадыңыз.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Сіз тұрақты деректер қоймасын қолдануды бұл вебсайтқа блоктадыңыз.
+urlbar-popup-blocked =
+    .tooltiptext = Бұл веб-сайт үшін атып шығатын терезелерді бұғаттадыңыз.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Бұл веб-сайт үшін дыбысы бар медианы автоойнатуды бұғаттағансыз.
+urlbar-canvas-blocked =
+    .tooltiptext = Сіз canvas деректерін тарқатуды бұл вебсайтқа блоктадыңыз.
+urlbar-midi-blocked =
+    .tooltiptext = Сіз MIDI қолдануды бұл вебсайтқа блоктадыңыз.
+urlbar-install-blocked =
+    .tooltiptext = Сіз қосымшаларды орнатуды бұл вебсайтқа блоктадыңыз.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Толық экран режимінен шығу
     .accesskey = Т
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Осы рет, келесімен іздеу:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Іздеу баптауларын өзгерту
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Іздеу баптауларын өзгерту
+search-one-offs-context-open-new-tab =
+    .label = Жаңа бетте іздеу
+    .accesskey = т
+search-one-offs-context-set-as-default =
+    .label = Негізгі іздеу жүйесі ретінде орнату
+    .accesskey = г
+search-one-offs-context-set-as-default-private =
+    .label = Жекелік терезелері үшін негізгі іздеу жүйесі ретінде орнату
+    .accesskey = р

@@ -45,6 +45,26 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Simpan data dalam Storan Kekal
 urlbar-addons-notification-anchor =
     .tooltiptext = Buka panel mesej pemasangan add-on
+urlbar-geolocation-blocked =
+    .tooltiptext = Anda telah menyekat maklumat lokasi untuk laman web ini.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Anda telah menyekat notifikasi untuk laman web ini.
+urlbar-camera-blocked =
+    .tooltiptext = Anda telah menyekat kamera anda untuk laman web ini.
+urlbar-microphone-blocked =
+    .tooltiptext = Anda telah menyekat mikrofon anda untuk laman web ini.
+urlbar-screen-blocked =
+    .tooltiptext = Anda telah menyekat laman web ini daripada berkongsi skrin anda.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Anda telah menghalang storan gigih untuk laman web ini.
+urlbar-popup-blocked =
+    .tooltiptext = Anda telah menyekat pop-up untuk laman web ini.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Anda telah menyekat media automain dengan suara untuk laman web ini.
+urlbar-canvas-blocked =
+    .tooltiptext = Anda telah menyekat ekstraksi data kanvas untuk laman web ini.
+urlbar-midi-blocked =
+    .tooltiptext = Anda telah menyekat akses MIDI untuk laman web ini.
 
 ## Page Action Context Menu
 
@@ -63,3 +83,18 @@ full-screen-autohide =
 full-screen-exit =
     .label = Keluar Mod Skrin Penuh
     .accesskey = K
+
+## Search Engine selection buttons (one-offs)
+
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Ubah Tetapan Carian
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Ubah tetapan carian
+search-one-offs-context-open-new-tab =
+    .label = Cari dalam Tab Baru
+    .accesskey = T
+search-one-offs-context-set-as-default =
+    .label = Tetapkan sebagai Enjin Carian Piawai
+    .accesskey = P

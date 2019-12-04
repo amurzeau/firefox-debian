@@ -184,6 +184,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Activează
     .tooltiptext = Activează verificarea securității actualizărilor suplimentelor
+extensions-warning-safe-mode = Toate suplimentele sunt dezactivate în modul Sigur.
+extensions-warning-check-compatibility = Verificarea compatibilității suplimentelor este dezactivată. Ai putea avea suplimente incompatibile.
+extensions-warning-check-compatibility-button = Activează
+    .title = Activează verificarea compatibilității suplimentelor
+extensions-warning-update-security = Verificarea securității actualizărilor de suplimente este dezactivată. Ai putea primi actualizări compromise.
+extensions-warning-update-security-button = Activează
+    .title = Activează verificarea securității actualizărilor suplimentelor
 
 ## Strings connected to add-on updates
 
@@ -193,12 +200,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Vezi actualizările recente
     .accesskey = V
+addon-updates-check-for-updates = Caută actualizări
+    .accesskey = C
+addon-updates-view-updates = Vezi actualizările recente
+    .accesskey = V
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Actualizează automat suplimentele
+    .accesskey = A
+addon-updates-update-addons-automatically = Actualizează automat suplimentele
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -212,6 +225,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = R
 extensions-updates-reset-updates-to-manual =
     .label = Resetează toate suplimentele să se actualizeze manual
+    .accesskey = R
+addon-updates-reset-updates-to-automatic = Resetează toate suplimentele să se actualizeze automat
+    .accesskey = R
+addon-updates-reset-updates-to-manual = Resetează toate suplimentele să se actualizeze manual
     .accesskey = R
 
 ## Status messages displayed when updating add-ons
@@ -231,11 +248,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Instalează actualizările
     .tooltiptext = Instalează actualizările disponibile în această listă
+addon-updates-updating = Se actualizează suplimentele
+addon-updates-installed = Suplimentele tale au fost actualizate.
+addon-updates-none-found = Nicio actualizare găsită
+addon-updates-manual-updates-found = Vezi actualizările disponibile
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Instalează un supliment dintr-un fișier…
+    .accesskey = I
+addon-install-from-file-dialog-title = Selectează suplimentul pentru instalare
+addon-install-from-file-filter-name = Suplimente
+addon-open-about-debugging = Depanează suplimente
+    .accesskey = b
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Gestionează comenzile rapide ale extensiilor
+    .accesskey = S
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Gestionează comenzile rapide ale extensiilor
     .accesskey = S
 shortcuts-no-addons = Nu ai activat nicio extensie.
 shortcuts-no-commands = Următoarele extensii nu au comenzi rapide:
@@ -390,3 +423,17 @@ recommended-themes-heading = Teme recomandate
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Te simți creativ? <a data-l10n-name="link">Construiește-ți propria temă cu Firefox Color.</a>
+
+## Page headings
+
+extension-heading = Gestionează extensiile
+theme-heading = Gestionează temele
+plugin-heading = Gestionează pluginurile
+dictionary-heading = Gestionează dicționarele
+locale-heading = Gestionează limbile
+discover-heading = Personalizează { -brand-short-name }
+shortcuts-heading = Gestionează comenzile rapide ale extensiilor
+theme-heading-search-label = Găsește mai multe teme
+extension-heading-search-label = Găsește mai multe extensii
+addons-heading-search-input =
+    .placeholder = Caută pe addons.mozilla.org

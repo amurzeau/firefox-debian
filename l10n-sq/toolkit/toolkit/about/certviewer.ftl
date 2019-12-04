@@ -15,14 +15,19 @@ certificate-viewer-algorithm = Algoritëm
 certificate-viewer-certificate-authority = Autoritet Dëshmish
 certificate-viewer-cipher-suite = Suitë Shifrimi
 certificate-viewer-common-name = Emër i Rëndomtë
+certificate-viewer-email-address = Adresë Email
+# Inc. means Incorporated, e.g GitHub is incorporated in Delaware
+certificate-viewer-inc-country = Vend Regjistrimi
 certificate-viewer-country = Vend
 certificate-viewer-curve = Lakore
+certificate-viewer-distribution-point = Pikë Shpërndarjeje
 certificate-viewer-dns-name = Emër DNS
 certificate-viewer-exponent = Eksponent
 certificate-viewer-id = ID
+certificate-viewer-key-exchange-group = Grup Shkëmbimi Kyçesh
 certificate-viewer-key-id = ID Kyçi
 certificate-viewer-key-size = Madhësia Kyçi
-certificate-viewer-location = Vendndodhja
+certificate-viewer-location = Vendndodhje
 certificate-viewer-logid = ID Regjistri
 certificate-viewer-method = Metodë
 certificate-viewer-modulus = Modul
@@ -36,6 +41,8 @@ certificate-viewer-protocol = Protokoll
 certificate-viewer-public-value = Vlerë Publike
 certificate-viewer-purposes = Qëllime
 certificate-viewer-required = E domosdoshme
+# Inc. means Incorporated, e.g GitHub is incorporated in Delaware
+certificate-viewer-inc-state-province = Shtet/Provincë Regjistrimi
 certificate-viewer-state-province = Shtet/Provincë
 certificate-viewer-sha-1 = SHA-1
 certificate-viewer-sha-256 = SHA-256
@@ -49,9 +56,14 @@ certificate-viewer-business-category = Kategori Biznesi
 certificate-viewer-subject-name = Emër Subjekti
 certificate-viewer-issuer-name = Emër Lëshuesi
 certificate-viewer-validity = Vlefshmëri
+certificate-viewer-public-key-info = Të dhëna Kyçi Publik
 certificate-viewer-miscellaneous = Të ndryshme
 certificate-viewer-fingerprints = Shenja gishtash
 certificate-viewer-key-usages = Përdorime Kyçe
+certificate-viewer-extended-key-usages = Përdorime të Zgjeruara Kyçi
+certificate-viewer-subject-key-id = ID Kyçi Subjekti
+certificate-viewer-authority-key-id = ID Kyçi Autoriteti
+certificate-viewer-authority-info-aia = Të dhëna Autoriteti (AIA)
 certificate-viewer-certificate-policies = Rregulla Dëshmish
 # This message is used as a row header in the Miscellaneous section. 
 # The associated data cell contains links to download the certificate.

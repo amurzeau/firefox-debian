@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = מאת { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = המלצה
+cfr-doorhanger-extension-notification2 = המלצה
+    .tooltiptext = המלצה על הרחבה
+    .a11y-announcement = זמינה המלצה על הרחבה
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = המלצה
+    .tooltiptext = המלצה על תכונה
+    .a11y-announcement = זמינה המלצה על תכונה
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -71,10 +79,15 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
 
 ## Protections panel
 
+cfr-protections-panel-header = לגלוש מבלי שעוקבים אחריך
+cfr-protections-panel-body = הנתונים שלך נשארים אצלך. { -brand-short-name } מגן עליך מפני רוב רכיבי הריגול שעוקבים אחר הפעילות המקוונת שלך.
 cfr-protections-panel-link-text = מידע נוסף
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = תכונה חדשה:
 cfr-whatsnew-button =
     .label = מה חדש
     .tooltiptext = מה חדש
@@ -115,10 +128,14 @@ cfr-doorhanger-sync-logins-ok-button = הפעלת { -sync-brand-short-name }
 
 ## Send Tab
 
+cfr-doorhanger-send-tab-ok-button = לנסות את Send Tab
+    .accesskey = ל
 
 ## Firefox Send
 
 cfr-doorhanger-firefox-send-header = שיתוף ה־PDF הזה באופן מאובטח
+cfr-doorhanger-firefox-send-ok-button = לנסות את { -send-brand-name }
+    .accesskey = ל
 
 ## Social Tracking Protection
 
@@ -126,7 +143,22 @@ cfr-doorhanger-socialtracking-ok-button = הצגת הגנות
     .accesskey = ג
 cfr-doorhanger-socialtracking-close-button = סגירה
     .accesskey = ס
+cfr-doorhanger-socialtracking-dont-show-again = לא להציג לי הודעות כאלו שוב
+    .accesskey = ל
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } מנע מעקב של רשת חברתית כאן
 cfr-doorhanger-socialtracking-description = הפרטיות שלך חשובה. { -brand-short-name } חוסם כעת רכיבי מעקב נפוצים של מדיה חברתית, ומגביל את כמות הנתונים שהם יכולים לאסוף על הפעילויות שלך ברשת.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } חסם כורה מטבעות דיגיטליים בדף זה
 cfr-doorhanger-cryptominers-description = הפרטיות שלך חשובה. { -brand-short-name } חוסם כעת כורי מטבעות דיגיטליים, המשתמשים בכוח העיבוד של המערכת שלך כדי לכרות כסף דיגיטלי.
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+        [one] ‏{ -brand-short-name } חסם יותר מרכיב מעקב אחד מאז { $date }!
+       *[other] ‏{ -brand-short-name } חסם למעלה מ־<b>{ $blockedCount }</b> רכיבי מעקב מאז { $date }!
+    }
+cfr-doorhanger-milestone-ok-button = צפייה בהכל
+    .accesskey = צ

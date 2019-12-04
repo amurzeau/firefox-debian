@@ -47,6 +47,28 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Geyma gögn í varanlegri gagnageymslu
 urlbar-addons-notification-anchor =
     .tooltiptext = Opna skilaboðaflipa fyrir viðbótauppsetningu
+urlbar-geolocation-blocked =
+    .tooltiptext = Þú hefur lokað fyrir staðsetningarupplýsingar á þessu vefsvæði.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Þú hefur lokað fyrir tilkynningar á þessu vefsvæði.
+urlbar-camera-blocked =
+    .tooltiptext = Þú hefur lokað fyrir myndavélina á þessu vefsvæði.
+urlbar-microphone-blocked =
+    .tooltiptext = Þú hefur lokað fyrir hljóðnema á þessu vefsvæði.
+urlbar-screen-blocked =
+    .tooltiptext = Þú hefur lokað fyrir að deila skjáum á þessu vefsvæði.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Þú hefur lokað fyrir gagna geymslu á þessu vefsvæði.
+urlbar-popup-blocked =
+    .tooltiptext = Þú hefur lokað á sprettiglugga fyrir þetta vefsvæði.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Þú hefur lokað fyrir sjálfkrafa afspilun á þessari vefsíðu.
+urlbar-canvas-blocked =
+    .tooltiptext = Þú hefur lokað á að nálgast gluggagögn fyrir þetta vefsvæði.
+urlbar-midi-blocked =
+    .tooltiptext = Þú hefur lokað fyrir MIDI aðgang á þessu vefsvæði.
+urlbar-install-blocked =
+    .tooltiptext = Þú hefur lokað fyrir staðsetningarupplýsingar á þessu vefsvæði.
 
 ## Page Action Context Menu
 
@@ -65,3 +87,18 @@ full-screen-autohide =
 full-screen-exit =
     .label = Ekki fylla skjá
     .accesskey = f
+
+## Search Engine selection buttons (one-offs)
+
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Breyta leitarstillingum
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Breyta leitarstillingum
+search-one-offs-context-open-new-tab =
+    .label = Leita og birta í nýjum flipa
+    .accesskey = f
+search-one-offs-context-set-as-default =
+    .label = Setja sem sjálfgefna leitarvél
+    .accesskey = l

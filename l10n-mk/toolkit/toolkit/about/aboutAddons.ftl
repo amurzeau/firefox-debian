@@ -124,9 +124,6 @@ legacy-warning-show-legacy = Прикажи застарени проширув�
 legacy-extensions =
     .value = Застарени проширувања
 legacy-extensions-description = Овие проширувања не се во согласност со сегашните стандарди на { -brand-short-name } па, беа исклучени. <label data-l10n-name="legacy-learn-more">Дознајте повеќе за измените на додатоците</label>
-extensions-view-discover =
-    .name = Земи додатоци
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-recent-updates =
     .name = Скорешни надградби
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -154,6 +151,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Овозможи
     .tooltiptext = Овозможи проверување на безбедноста при надградба на додаток
+extensions-warning-safe-mode = Сите додатоци се оневозможени од безбедниот режим.
+extensions-warning-check-compatibility = Проверката за компатибилност на додатоците е оневозможена. Можеби имате некомпатибилни додатоци.
+extensions-warning-check-compatibility-button = Овозможи
+    .title = Овозможи проверување на компатибилноста на додатоците
+extensions-warning-update-security = Проверката за безбедност при надградба на додатоци е оневозможена. Надградбите може да Ви наштетат.
+extensions-warning-update-security-button = Овозможи
+    .title = Овозможи проверување на безбедноста при надградба на додаток
 
 ## Strings connected to add-on updates
 
@@ -163,12 +167,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Прегледај неодамнешни надградби
     .accesskey = н
+addon-updates-check-for-updates = Провери за надградби
+    .accesskey = П
+addon-updates-view-updates = Прегледај неодамнешни надградби
+    .accesskey = н
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Автоматски надградувај ги додатоците
+    .accesskey = А
+addon-updates-update-addons-automatically = Автоматски надградувај ги додатоците
     .accesskey = А
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -182,6 +192,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = с
 extensions-updates-reset-updates-to-manual =
     .label = Постави сите додатоци да се надградуваат рачно
+    .accesskey = с
+addon-updates-reset-updates-to-automatic = Постави сите додатоци да се надградуваат автоматски
+    .accesskey = с
+addon-updates-reset-updates-to-manual = Постави сите додатоци да се надградуваат рачно
     .accesskey = с
 
 ## Status messages displayed when updating add-ons
@@ -201,3 +215,31 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Инсталирање на надградбите
     .tooltiptext = Инсталирај ги достапните надградби од оваа листа
+addon-updates-updating = Надградување на додатоци
+addon-updates-installed = Вашиот додаток е надграден
+addon-updates-none-found = Не се пронајдени надградби
+addon-updates-manual-updates-found = Прегледај достапни надградби
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Инсталирај додаток од датотека…
+    .accesskey = И
+addon-install-from-file-dialog-title = Изберете додаток за инсталација
+addon-install-from-file-filter-name = Додатоци
+addon-open-about-debugging = Дебагирање на додатоци
+    .accesskey = B
+
+## Extension shortcut management
+
+
+## Recommended add-ons page
+
+
+## Add-on actions
+
+
+## Pending uninstall message bar
+
+
+## Page headings
+

@@ -47,6 +47,28 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Stochează date în stocarea persistentă
 urlbar-addons-notification-anchor =
     .tooltiptext = Deschide panoul cu mesaje privind instalarea de suplimente
+urlbar-geolocation-blocked =
+    .tooltiptext = Ai blocat informațiile despre locație pentru acest site web.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Ai blocat notificările pentru acest site web.
+urlbar-camera-blocked =
+    .tooltiptext = Ai blocat camera pentru acest site web.
+urlbar-microphone-blocked =
+    .tooltiptext = Ai blocat microfonul pentru acest site web.
+urlbar-screen-blocked =
+    .tooltiptext = Ai blocat partajarea ecranului pe acest site web.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Ai blocat stocarea persistentă de date pentru acest site web.
+urlbar-popup-blocked =
+    .tooltiptext = Ai blocat ferestrele pop-up pe acest site.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Ai blocat redarea automată a conținutului media cu sunet pe acest site web.
+urlbar-canvas-blocked =
+    .tooltiptext = Ai blocat extragerea de date canvas pentru acest site.
+urlbar-midi-blocked =
+    .tooltiptext = Ai blocat accesul MIDI pentru acest site web.
+urlbar-install-blocked =
+    .tooltiptext = Ai blocat suplimentele instalate pentru acest site web.
 
 ## Page Action Context Menu
 
@@ -65,3 +87,21 @@ full-screen-autohide =
 full-screen-exit =
     .label = Ieși din modul de ecran complet
     .accesskey = F
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = De data aceasta, caută cu:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Schimbă setările de căutare
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Schimbă setările de căutare
+search-one-offs-context-open-new-tab =
+    .label = Caută într-o filă nouă
+    .accesskey = T
+search-one-offs-context-set-as-default =
+    .label = Setează ca motor de căutare implicit
+    .accesskey = D

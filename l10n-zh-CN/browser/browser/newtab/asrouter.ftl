@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = 由 { $name } 开发
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = 推荐
+cfr-doorhanger-extension-notification2 = 推荐
+    .tooltiptext = 推荐扩展
+    .a11y-announcement = 有推荐扩展可用
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = 推荐
+    .tooltiptext = 推荐功能
+    .a11y-announcement = 有推荐功能可用
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -76,6 +84,9 @@ cfr-protections-panel-link-text = 详细了解
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = 新功能
 cfr-whatsnew-button =
     .label = 新版变化
     .tooltiptext = 新版变化
@@ -137,9 +148,23 @@ cfr-doorhanger-socialtracking-ok-button = 看看有哪些保护
     .accesskey = P
 cfr-doorhanger-socialtracking-close-button = 关闭
     .accesskey = C
+cfr-doorhanger-socialtracking-dont-show-again = 不再显示此类消息
+    .accesskey = D
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } 正在防御社交网站对您的跟踪
 cfr-doorhanger-socialtracking-description = 隐私是公民的基本权利。现在起，{ -brand-short-name } 会拦截常见的社交媒体跟踪器，限制这些网站收集您的上网活动。
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } 正在拦截此页面上的数字指纹跟踪程序
 cfr-doorhanger-fingerprinters-description = 隐私是公民的基本权利。现在起 { -brand-short-name } 会拦截数字指纹跟踪程序，阻止其收集身边设备的唯一识别信息。
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } 正在拦截此页面上的加密货币挖矿程序
 cfr-doorhanger-cryptominers-description = 隐私是公民的基本权利。现在起 { -brand-short-name } 会拦截加密货币挖矿程序，不让其使用您的计算机算力来“挖”数字货币
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+       *[other] 自{ $date }起，{ -brand-short-name } 已拦截超过 <b>{ $blockedCount }</b> 个跟踪器！
+    }
+cfr-doorhanger-milestone-ok-button = 查看全部
+    .accesskey = S

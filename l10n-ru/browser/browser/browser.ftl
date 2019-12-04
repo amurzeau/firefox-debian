@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Хранить данные в постоянном хранилище
 urlbar-addons-notification-anchor =
     .tooltiptext = Открыть панель сообщения об установке дополнения
+urlbar-tip-help-icon =
+    .title = Получить помощь
+urlbar-geolocation-blocked =
+    .tooltiptext = Вы заблокировали доступ этого веб-сайта к информации о местоположении.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Вы заблокировали уведомления с этого веб-сайта.
+urlbar-camera-blocked =
+    .tooltiptext = Вы заблокировали доступ этого веб-сайта к вашей камере.
+urlbar-microphone-blocked =
+    .tooltiptext = Вы заблокировали доступ этого веб-сайта к вашему микрофону.
+urlbar-screen-blocked =
+    .tooltiptext = Вы заблокировали доступ этого веб-сайта к вашему экрану.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Вы заблокировали доступ этого веб-сайта к постоянному хранилищу.
+urlbar-popup-blocked =
+    .tooltiptext = Вы заблокировали всплывающие окна с этого веб-сайта.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Вы заблокировали автоматическое воспроизводение медиа со звуком с этого веб-сайта.
+urlbar-canvas-blocked =
+    .tooltiptext = Вы заблокировали извлечение данных canvas с этого веб-сайта.
+urlbar-midi-blocked =
+    .tooltiptext = Вы заблокировали доступ этого веб-сайта к MIDI.
+urlbar-install-blocked =
+    .tooltiptext = Вы заблокировали установку дополнений с этого веб-сайта.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Выйти из полноэкранного режима
     .accesskey = ы
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = В этот раз, искать с помощью:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Изменить настройки поиска
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Изменить параметры поиска
+search-one-offs-context-open-new-tab =
+    .label = Искать в новой вкладке
+    .accesskey = а
+search-one-offs-context-set-as-default =
+    .label = Установить как поисковую систему по умолчанию
+    .accesskey = о
+search-one-offs-context-set-as-default-private =
+    .label = Использовать данную поисковую систему по умолчанию в Приватных окнах
+    .accesskey = З

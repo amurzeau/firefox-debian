@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Αποθήκευση δεδομένων στην επίμονη αποθήκευση
 urlbar-addons-notification-anchor =
     .tooltiptext = Άνοιγμα πλαισίου μηνυμάτων εγκατάστασης προσθέτων
+urlbar-tip-help-icon =
+    .title = Λάβετε βοήθεια
+urlbar-geolocation-blocked =
+    .tooltiptext = Έχετε αποκλείσει τις πληροφορίες τοποθεσίας για αυτή την ιστοσελίδα.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Έχετε αποκλείσει τις ειδοποιήσεις για αυτή την ιστοσελίδα.
+urlbar-camera-blocked =
+    .tooltiptext = Έχετε αποκλείσει την κάμερά σας για αυτή την ιστοσελίδα.
+urlbar-microphone-blocked =
+    .tooltiptext = Έχετε αποκλείσει το μικρόφωνό σας για αυτή την ιστοσελίδα.
+urlbar-screen-blocked =
+    .tooltiptext = Έχετε αποκλείσει τον ιστοτόπο από το μοίρασμα της οθόνης σας.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Έχετε αποκλείσει την επίμονη αποθήκευση για αυτή την ιστοσελίδα.
+urlbar-popup-blocked =
+    .tooltiptext = Έχετε αποκλείσει τα αναδυόμενα παράθυρα για αυτή την ιστοσελίδα.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Έχετε αποκλείσει πολυμέσα αυτόματης αναπαραγωγής για αυτή την ιστοσελίδα.
+urlbar-canvas-blocked =
+    .tooltiptext = Έχετε αποκλείσει την εξαγωγή δεδομένων καμβά για αυτή την ιστοσελίδα.
+urlbar-midi-blocked =
+    .tooltiptext = Έχετε αποκλείσει την πρόσβαση MIDI για αυτή την ιστοσελίδα.
+urlbar-install-blocked =
+    .tooltiptext = Έχετε αποκλείσει την εγκατάσταση προσθέτων για αυτή την ιστοσελίδα.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,21 @@ full-screen-autohide =
 full-screen-exit =
     .label = Έξοδος από πλήρη οθόνη
     .accesskey = π
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Αυτή τη φορά, πραγματοποιήστε αναζήτηση με:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Αλλαγή ρυθμίσεων αναζήτησης
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Αλλαγή ρυθμίσεων αναζήτησης
+search-one-offs-context-open-new-tab =
+    .label = Αναζήτηση σε νέα καρτέλα
+    .accesskey = T
+search-one-offs-context-set-as-default =
+    .label = Ορισμός ως προκαθορισμένη μηχανή αναζήτησης
+    .accesskey = D

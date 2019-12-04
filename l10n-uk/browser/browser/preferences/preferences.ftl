@@ -14,6 +14,11 @@ pref-page =
             [windows] Налаштування
            *[other] Налаштування
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Налаштування
+       *[other] Налаштування
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -116,7 +121,7 @@ startup-header = Запуск
 # { -brand-short-name } will be 'Firefox Developer Edition',
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
-    .label = Дозволити { -brand-short-name } та Firefox виконуватись одночасно
+    .label = Дозволити одночасну роботу { -brand-short-name } і Firefox
 use-firefox-sync = Підказка: При цьому використовуються окремі профілі. Скористайтеся { -sync-brand-short-name(case: "abl", capitalization: "lower") } для обміну даними між ними.
 get-started-not-logged-in = Увійти в { -sync-brand-short-name(case: "acc") }…
 get-started-configured = Відкрити налаштування { -sync-brand-short-name(case: "dat") }
@@ -284,6 +289,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type-description (String) - Description of the type (e.g "Portable Document Format")
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
 # Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
@@ -460,7 +469,6 @@ choose-bookmark =
 
 home-prefs-content-header = Домівка Firefox
 home-prefs-content-description = Оберіть бажаний вміст для показу в домівці Firefox.
-home-prefs-content-discovery-description = Огляд вмісту в домівці Firefox дозволяє вам знаходити високоякісні, цікаві статті з усього інтернету.
 home-prefs-search-header =
     .label = Пошук в Інтернеті
 home-prefs-topsites-header =
@@ -509,7 +517,8 @@ search-bar-shown =
     .label = Додати панель пошуку на панель інструментів
 search-engine-default-header = Типовий засіб пошуку
 search-engine-default-desc = Оберіть типовий пошуковий засіб для використання в панелях адреси і пошуку.
-search-engine-default-private-desc = Оберіть типовий засіб пошуку для використання в приватному режимі.
+search-engine-default-desc-2 = Це ваш типовий засіб пошуку в панелі адреси та пошуку. Ви можете будь-коли змінити його.
+search-engine-default-private-desc-2 = Оберіть інший типовий засіб пошуку лише для приватних вікон
 search-separate-default-engine =
     .label = Використовувати цей засіб пошуку в приватному режимі
     .accesskey = з
@@ -528,6 +537,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Показувати пошукові пропозиції перед історією перегляду в результатах панелі адреси
+search-show-suggestions-private-windows =
+    .label = Показувати пошукові пропозиції у приватних вікнах
 suggestions-addressbar-settings = Змінити налаштування для історії перегляду, закладок та пропозицій для вкладок
 search-suggestions-cant-show = Пошукові пропозиції не будуть показуватись в панелі адреси, тому що ви налаштували { -brand-short-name } ніколи не запам'ятовувати історію.
 search-one-click-header = Засоби пошуку в один клік
@@ -577,6 +588,9 @@ sync-signedout-account-create = Не маєте облікового запис�
 sync-signedout-account-signin =
     .label = Увійти…
     .accesskey = У
+sync-signedout-account-signin2 =
+    .label = Увійти в { -sync-brand-short-name(case: "acc") }…
+    .accesskey = в
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -720,7 +734,11 @@ privacy-header = Приватність браузера
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Входи і паролі
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Запит збереження паролів для веб-сайтів
     .accesskey = п
@@ -734,6 +752,7 @@ forms-breach-alerts =
     .label = Показувати сповіщення про паролі для зламаних веб-сайтів
     .accesskey = з
 forms-breach-alerts-learn-more-link = Докладніше
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Автозаповнення паролів
     .accesskey = з
@@ -860,13 +879,13 @@ content-blocking-learn-more = Докладніше
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 content-blocking-setting-standard =
-    .label = Звичайне
+    .label = Звичайний
     .accesskey = ч
 content-blocking-setting-strict =
-    .label = Суворе
-    .accesskey = в
+    .label = Надійний
+    .accesskey = й
 content-blocking-setting-custom =
-    .label = Власне
+    .label = Власний
     .accesskey = л
 content-blocking-standard-desc = Збалансовано для захисту і швидкодії. Дозволяє деякі елементи стеження для належної роботи веб-сайтів.
 content-blocking-strict-description = Сильніший захист. Може пошкодити роботу деяких сайтів.
@@ -879,13 +898,13 @@ content-blocking-third-party-cookies = Сторонні куки стеженн�
 
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 enhanced-tracking-protection-setting-standard =
-    .label = Звичайне
+    .label = Звичайний
     .accesskey = ч
 enhanced-tracking-protection-setting-strict =
-    .label = Суворе
-    .accesskey = в
+    .label = Надійний
+    .accesskey = й
 enhanced-tracking-protection-setting-custom =
-    .label = Власне
+    .label = Власний
     .accesskey = л
 
 

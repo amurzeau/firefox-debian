@@ -10,6 +10,19 @@ about-config-warning-button = मी ही जोखीम पत्करत�
 about-config2-title = प्रगत संरचना
 about-config-search-input =
     .placeholder = शोधा
+
+## These strings appear on the warning you see when first visiting about:config.
+
+about-config-intro-warning-title = सावधानतापूर्वक पुढे जा
+about-config-intro-warning-button = जोखिम स्वीकारा आणि पुढे चला
+
+
+
+# This is shown on the page before searching but after the warning is accepted.
+about-config-caution-text = ही प्राधान्ये बदलल्यास { -brand-short-name } कार्यक्षमता किंवा सुरक्षिततेवर परिणाम होऊ शकतो.
+about-config-page-title = प्रगत प्राधान्यक्रम
+about-config-search-input1 =
+    .placeholder = प्राधान्य नाव शोधा
 about-config-show-all = सर्व दर्शवा
 about-config-pref-add = जोडा
 about-config-pref-toggle = बदला

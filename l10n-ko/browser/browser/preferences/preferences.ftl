@@ -14,6 +14,11 @@ pref-page =
             [windows] 설정
            *[other] 환경 설정
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] 설정
+       *[other] 환경 설정
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -54,10 +59,10 @@ close-button =
 
 ## Browser Restart Dialog
 
-feature-enable-requires-restart = 이 기능을 켜려면 { -brand-short-name }를 반드시 재시작해야 합니다.
-feature-disable-requires-restart = 이 기능을 끄려면 { -brand-short-name }를 반드시 재시작해야 힙니다.
-should-restart-title = { -brand-short-name } 재시작
-should-restart-ok = 지금 { -brand-short-name } 재시작
+feature-enable-requires-restart = 이 기능을 켜려면 { -brand-short-name }를 반드시 다시 시작해야 합니다.
+feature-disable-requires-restart = 이 기능을 끄려면 { -brand-short-name }를 반드시 다시 시작해야 합니다.
+should-restart-title = { -brand-short-name } 다시 시작
+should-restart-ok = 지금 { -brand-short-name } 다시 시작
 cancel-no-restart-button = 취소
 restart-later = 나중에 다시 시작
 
@@ -195,8 +200,8 @@ choose-browser-language-description = { -brand-short-name }가 메뉴나 메시�
 manage-browser-languages-button =
     .label = 대체 설정…
     .accesskey = I
-confirm-browser-language-change-description = 변경 내용 적용을 위해 { -brand-short-name } 재시작
-confirm-browser-language-change-button = 적용하고 재시작
+confirm-browser-language-change-description = 변경 내용 적용을 위해 { -brand-short-name } 다시 시작
+confirm-browser-language-change-button = 적용하고 다시 시작
 translate-web-pages =
     .label = 웹 콘텐츠 번역하기
     .accesskey = T
@@ -270,6 +275,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } 사용({ -brand-short-name })
@@ -295,7 +304,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = 디지털 권리 관리(DRM) 콘텐츠
 play-drm-content =
@@ -445,7 +454,6 @@ choose-bookmark =
 
 home-prefs-content-header = Firefox 홈 콘텐츠
 home-prefs-content-description = Firefox 홈 화면에 나올 콘텐츠를 선택하세요.
-home-prefs-content-discovery-description = Firefox 홈의 콘텐츠 탐색 기능을 사용하면 웹에 있는 고품질의 관련 문서를 탐색할 수 있습니다.
 home-prefs-search-header =
     .label = 웹 검색
 home-prefs-topsites-header =
@@ -489,7 +497,8 @@ search-bar-shown =
     .label = 도구 모음에 검색 표시줄 추가
 search-engine-default-header = 기본 검색 사이트
 search-engine-default-desc = 주소바와 검색바에서 사용할 기본 검색 엔진을 선택하세요.
-search-engine-default-private-desc = 사생활 보호 창에서 사용할 기본 검색 엔진을 선택하십시오.
+search-engine-default-desc-2 = 주소 표시줄과 검색 표시줄의 기본 검색 엔진입니다. 언제든지 바꿀 수 있습니다.
+search-engine-default-private-desc-2 = 사생활 보호 창에서만 사용할 다른 기본 검색 엔진을 선택하십시오
 search-separate-default-engine =
     .label = 이 검색 엔진을 사생활 보호 창에서 사용
     .accesskey = U
@@ -508,10 +517,12 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = 주소창 결과의 방문 기록 앞에 검색 제안 보이기
+search-show-suggestions-private-windows =
+    .label = 사생활 보호 창에 검색 제안 표시
 suggestions-addressbar-settings = 방문 기록, 북마크 및 탭 제안에 대한 설정 변경
 search-suggestions-cant-show = 방문 기록을 기억하지 않도록 { -brand-short-name }를 구성했기 때문에 검색 제안이 주소창 결과에 표시되지 않습니다.
 search-one-click-header = 원클릭 검색 사이트
-search-one-click-desc = 단어 입력을 시작했을 때 주소바와 검색바 아래에 나타날 대체 검색 엔진을 선택하세요.
+search-one-click-desc = 키워드 입력을 시작했을 때 주소 표시줄과 검색 표시줄 아래에 나타날 대체 검색 엔진을 선택하십시오.
 search-choose-engine-column =
     .label = 검색 사이트
 search-choose-keyword-column =
@@ -700,6 +711,9 @@ privacy-header = 브라우저 개인정보
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = 로그인과 비밀번호
 forms-ask-to-save-logins =
     .label = 웹사이트의 로그인과 비밀번호를 기억할지 묻기
@@ -868,7 +882,7 @@ enhanced-tracking-protection-setting-custom =
     .label = 사용자 지정
     .accesskey = C
 
-
+##
 
 content-blocking-etp-standard-desc = 보호와 성능사이의 균형이 잡혀 있습니다. 페이지가 정상적으로 로드됩니다.
 content-blocking-etp-strict-desc = 더 강력한 보호 기능을 제공하지만, 일부 사이트나 콘텐츠가 손상될 수 있습니다.
@@ -947,7 +961,7 @@ permissions-notification-settings =
     .accesskey = n
 permissions-notification-link = 더 알아보기
 permissions-notification-pause =
-    .label = { -brand-short-name }를 재시작 할 때 까지 알림을 멈춤
+    .label = { -brand-short-name }가 다시 시작될 때까지 알림을 일시 중지
     .accesskey = n
 permissions-block-autoplay-media2 =
     .label = 웹사이트가 자동으로 소리를 재생하는 것 차단

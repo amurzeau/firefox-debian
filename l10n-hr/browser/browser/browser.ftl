@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Trajno pohranjuj podatke
 urlbar-addons-notification-anchor =
     .tooltiptext = Otvori ploču s informacijama o instaliranim dodacima
+urlbar-tip-help-icon =
+    .title = Potražite pomoć
+urlbar-geolocation-blocked =
+    .tooltiptext = Ovoj stranici ste zabranili pristup informaciji o vašoj lokaciji.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Ovoj ste stranici zabranili slanje obavijesti.
+urlbar-camera-blocked =
+    .tooltiptext = Ovoj ste stranici zabranili korištenje kamere.
+urlbar-microphone-blocked =
+    .tooltiptext = Ovoj ste stranici zabranili korištenje mikrofona.
+urlbar-screen-blocked =
+    .tooltiptext = Ovoj ste stranici zabranili dijeljenje vaše radne površine.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Ovoj ste stranici zabranili mogućnost trajne pohrane podataka.
+urlbar-popup-blocked =
+    .tooltiptext = Blokirali ste pop-up prozore za ovu web stranicu.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Ovoj ste stranici zabranili automatsko reproduciranje medija sa zvukom.
+urlbar-canvas-blocked =
+    .tooltiptext = Blokirali ste izvoz canvas podataka za ovu web stranicu.
+urlbar-midi-blocked =
+    .tooltiptext = Blokirali ste MIDI pristup za ovu web stranicu.
+urlbar-install-blocked =
+    .tooltiptext = Ovoj stranici ste zabranili instalaciju dodataka.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Izađi iz prikaza potpunog ekrana
     .accesskey = p
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Ovaj put traži s:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Promjeni postavke pretraživača
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Promijeni postavke pretraživača
+search-one-offs-context-open-new-tab =
+    .label = Traži u novoj kartici
+    .accesskey = t
+search-one-offs-context-set-as-default =
+    .label = Podesi kao zadanu tražilicu
+    .accesskey = d
+search-one-offs-context-set-as-default-private =
+    .label = Postavite zadani pretraživač za Privatno pretraživanje
+    .accesskey = P

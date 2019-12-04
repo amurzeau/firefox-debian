@@ -39,8 +39,8 @@ app-basics-update-channel = Posodobitveni kanal
 # as in "Folder for updates". "Update" is a noun, not a verb.
 app-basics-update-dir =
     { PLATFORM() ->
-        [linux] Posodobi mapo
-       *[other] Posodobi mapo
+        [linux] Mapa za posodobitve
+       *[other] Mapa za posodobitve
     }
 app-basics-update-history = Zgodovina posodobitev
 app-basics-show-update-history = Prikaži zgodovino posodobitev
@@ -150,6 +150,22 @@ intl-locales-default = Privzeti jezik
 intl-os-title = Operacijski sistem
 intl-os-prefs-system-locales = Sistemski jeziki
 intl-regional-prefs = Območne nastavitve
+
+## Remote Debugging
+##
+## The Firefox remote protocol provides low-level debugging interfaces
+## used to inspect state and control execution of documents,
+## browser instrumentation, user interaction simulation,
+## and for subscribing to browser-internal events.
+##
+## See also https://firefox-source-docs.mozilla.org/remote/
+
+remote-debugging-title = Oddaljeno razhroščevanje (protokol Chromium)
+remote-debugging-accepting-connections = Sprejema povezave
+remote-debugging-url = URL
+
+
+
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
@@ -256,6 +272,7 @@ unknown-failure = Dodano na seznam zavrnjenih; koda napake { $failureCode }
 d3d11layers-crash-guard = Sestavljalnik D3D11
 d3d11video-crash-guard = Videodekodirnik D3D11
 d3d9video-crash-buard = Videodekodirnik D3D9
+d3d9video-crash-guard = Videodekodirnik D3D9
 glcontext-crash-guard = OpenGL
 reset-on-next-restart = Ponastavi ob naslednjem zagonu
 gpu-process-kill-button = Prekini proces GPE

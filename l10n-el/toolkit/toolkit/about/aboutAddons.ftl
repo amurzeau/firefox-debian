@@ -189,6 +189,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Ενεργοποίηση
     .tooltiptext = Ενεργοποίηση ελέγχου ασφαλείας ενημερώσεων προσθέτων
+extensions-warning-safe-mode = Όλα τα πρόσθετα έχουν απενεργοποιηθεί στην ασφαλή λειτουργία.
+extensions-warning-check-compatibility = Ο έλεγχος συμβατότητας προσθέτων είναι ανενεργός. Μπορεί να έχετε ασύμβατα πρόσθετα.
+extensions-warning-check-compatibility-button = Ενεργοποίηση
+    .title = Ενεργοποίηση ελέγχου συμβατότητας προσθέτων
+extensions-warning-update-security = Ο έλεγχος ασφαλείας ενημερώσεων  προσθέτων είναι ανενεργός. Μπορεί να κινδυνέψετε.
+extensions-warning-update-security-button = Ενεργοποίηση
+    .title = Ενεργοποίηση ελέγχου ασφαλείας ενημερώσεων προσθέτων
 
 ## Strings connected to add-on updates
 
@@ -198,12 +205,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Εμφάνιση πρόσφατων ενημερώσεων
     .accesskey = φ
+addon-updates-check-for-updates = Έλεγχος για ενημερώσεις
+    .accesskey = χ
+addon-updates-view-updates = Εμφάνιση πρόσφατων ενημερώσεων
+    .accesskey = φ
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Αυτόματη ενημέρωση προσθέτων
+    .accesskey = Α
+addon-updates-update-addons-automatically = Αυτόματη ενημέρωση προσθέτων
     .accesskey = Α
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -217,6 +230,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = Ρ
 extensions-updates-reset-updates-to-manual =
     .label = Ρύθμιση όλων των προσθέτων σε χειροκίνητη ενημέρωση
+    .accesskey = χ
+addon-updates-reset-updates-to-automatic = Ρύθμιση όλων των προσθέτων σε αυτόματη ενημέρωση
+    .accesskey = Ρ
+addon-updates-reset-updates-to-manual = Ρύθμιση όλων των προσθέτων σε χειροκίνητη ενημέρωση
     .accesskey = χ
 
 ## Status messages displayed when updating add-ons
@@ -236,11 +253,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Εγκατάσταση ενημερώσεων
     .tooltiptext = Εγκατάσταση των διαθέσιμων ενημερώσεων σε αυτή τη λίστα
+addon-updates-updating = Γίνεται ενημέρωση προσθέτων
+addon-updates-installed = Τα πρόσθετα σας ενημερώθηκαν.
+addon-updates-none-found = Δεν βρέθηκαν ενημερώσεις
+addon-updates-manual-updates-found = Εμφάνιση διαθέσιμων ενημερώσεων
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Εγκατάσταση πρόσθετου από αρχείο…
+    .accesskey = γ
+addon-install-from-file-dialog-title = Επιλέξτε πρόσθετο για εγκατάσταση
+addon-install-from-file-filter-name = Πρόσθετα
+addon-open-about-debugging = Αποσφαλμάτωση πρόσθετων
+    .accesskey = θ
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Διαχείριση συντομεύσεων επέκτασης
+    .accesskey = σ
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Διαχείριση συντομεύσεων επέκτασης
     .accesskey = σ
 shortcuts-no-addons = Δεν έχετε ενεργοποιήσει καμία επέκταση.
 shortcuts-no-commands = Οι εξής επεκτάσεις δεν έχουν συντομεύσεις:
@@ -401,3 +434,17 @@ recommended-themes-heading = Προτεινόμενα θέματα
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Αισθάνεστε δημιουργικοί; <a data-l10n-name="link">Δημιουργήστε το δικό σας θέμα με το Firefox Color.</a>
+
+## Page headings
+
+extension-heading = Διαχείριση των επεκτάσεών σας
+theme-heading = Διαχείριση των θεμάτων σας
+plugin-heading = Διαχείριση των αρθρωμάτων σας
+dictionary-heading = Διαχείριση των λεξικών σας
+locale-heading = Διαχείριση των γλωσσών σας
+discover-heading = Εξατομικεύστε το { -brand-short-name } σας
+shortcuts-heading = Διαχείριση συντομεύσεων επέκτασης
+theme-heading-search-label = Βρείτε περισσότερα θέματα
+extension-heading-search-label = Βρείτε περισσότερες επεκτάσεις
+addons-heading-search-input =
+    .placeholder = Αναζήτηση στο addons.mozilla.org

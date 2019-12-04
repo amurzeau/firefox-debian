@@ -187,6 +187,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Titzij
     .tooltiptext = Titzij ri ya'öl retal chajinïk richin nik'ex ri tz'aqat
+extensions-warning-safe-mode = Konojel ri taq tz'aqat xechup pa ri ütz rub'eyal.
+extensions-warning-check-compatibility = Chupül ri runuk'oxik richin we nikik'äm ki' ri taq tz'aqat. Rik'in jub'a' k'o jujun taq tz'aqat, ri man nikik'äm ta ki'.
+extensions-warning-check-compatibility-button = Titzij
+    .title = Titzij ri runik'oxik richin chi nikik'äm ki' ri taq tz'aqat.
+extensions-warning-update-security = Chupül ri runik'oxik chajinïk richin kik'exoj taq tz'aqat. Rik'in jub'a' k'o pa k'ayewal ri awokik'amaya'l kuma ri taq k'exoj.
+extensions-warning-update-security-button = Titzij
+    .title = Titzij ri ya'öl retal chajinïk richin nik'ex ri tz'aqat
 
 ## Strings connected to add-on updates
 
@@ -196,12 +203,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Ketz'et k'ak'a' taq k'exoj
     .accesskey = K
+addon-updates-check-for-updates = Kekanöx taq k'exoj
+    .accesskey = K
+addon-updates-view-updates = Ketz'et k'ak'a' taq k'exoj
+    .accesskey = K
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = kek'ex taq tz'aqat pa kiyonil
+    .accesskey = k
+addon-updates-update-addons-automatically = kek'ex taq tz'aqat pa kiyonil
     .accesskey = k
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -215,6 +228,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = T
 extensions-updates-reset-updates-to-manual =
     .label = Titzolïx chi kij konojel ri taq tz'aqat richin kek'ex pa chi q'ab'aj.
+    .accesskey = T
+addon-updates-reset-updates-to-automatic = Titzolïx chi kij konojel ri taq tz'aqat richin kek'ex pa kiyonil
+    .accesskey = T
+addon-updates-reset-updates-to-manual = Titzolïx chi kij konojel ri taq tz'aqat richin kek'ex pa chi q'ab'aj.
     .accesskey = T
 
 ## Status messages displayed when updating add-ons
@@ -234,11 +251,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Keyak taq k'exoj
     .tooltiptext = Keyak ri taq k'exoj e k'o pa re rucholajem re'
+addon-updates-updating = Tajin yek'ex ri taq tz'aqat
+addon-updates-installed = Xek'extäj re taq atz'aqat re'.
+addon-updates-none-found = Majun taq k'exoj ruwäch xe'ilitäj
+addon-updates-manual-updates-found = Ketz'et ri taq k'exoj e k'o
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Tiyak ri tz'aqat rik'in ri yakb'äl…
+    .accesskey = T
+addon-install-from-file-dialog-title = Ticha' re tz'aqat re' richin niyak qa
+addon-install-from-file-filter-name = Taq tz’aqat
+addon-open-about-debugging = Kechojmirisäx taq tz'aqat
+    .accesskey = c
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Kenuk'samajïx Kichojokem taq K'amal
+    .accesskey = i
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Kenuk'samajïx Kichojokem taq K'amal
     .accesskey = i
 shortcuts-no-addons = Majun ak'amal atzijon.
 shortcuts-no-commands = Re taq k'amal re' majun ruq'a' rokem pitz'b'äl:
@@ -308,6 +341,8 @@ addon-options-button =
 
 report-addon-button = Tiya' rutzijol
 remove-addon-button = Tiyuj
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Man Tikirel ta Niyuj el <a data-l10n-name="link">¿Aruma?</a>
 disable-addon-button = Tichup
 enable-addon-button = Titzij
 expand-addon-button = Ch'aqa' chik taq Cha'oj
@@ -401,3 +436,18 @@ recommended-themes-heading = Chilab'en taq Wachinel
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = ¿La at na'owinäq? <a data-l10n-name="link">Tatz'uku' awachinel rik'in ri Firefox Color.</a>
+
+## Page headings
+
+extension-heading = Ke'anuk'samajij ri taq ak'amal
+theme-heading = Ke'anuk'samajij ri taq awachinel
+plugin-heading = Ke'anuk'samajij ri taq anak'ab'al
+dictionary-heading = Ke'anuk'samajij ri taq asoltzij
+locale-heading = Ke'anuk'samajij ri taq ach'ab'äl
+updates-heading = Ke'anuk'samajij ri taq Ak'exoj
+discover-heading = Tawichinaj { -brand-short-name }
+shortcuts-heading = Kenuk'samajïx Kichojokem taq K'amal
+theme-heading-search-label = Ke'ilitäj ch'aqa' chik taq wachinel
+extension-heading-search-label = Ke'ilitäj ch'aqa' chik taq k'amal
+addons-heading-search-input =
+    .placeholder = Tikanöx addons.mozilla.org

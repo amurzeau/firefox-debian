@@ -14,6 +14,11 @@ pref-page =
             [windows] Mogućnosti
            *[other] Postavke
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Mogućnosti
+       *[other] Postavke
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -46,7 +51,7 @@ pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
 help-button-label = { -brand-short-name } podrška
-addons-button-label = Proširenja i Teme
+addons-button-label = Proširenja i motivi
 focus-search =
     .key = f
 close-button =
@@ -285,6 +290,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Koristi { $plugin-name } (u { -brand-short-name })
@@ -310,7 +319,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Digital Rights Management (DRM) sadržaj
 play-drm-content =
@@ -460,7 +469,6 @@ choose-bookmark =
 
 home-prefs-content-header = Firefox početni sadržaj
 home-prefs-content-description = Odaberite koji sadržaj želite na vašoj Firefox početnoj stranici.
-home-prefs-content-discovery-description = Otkrivanje sadržaja u Firefox početnoj stranici pomaže vam u otkrivanju visoko kvalitenih, relevantnih članaka diljem interneta.
 home-prefs-search-header =
     .label = Web pretraživanje
 home-prefs-topsites-header =
@@ -509,7 +517,8 @@ search-bar-shown =
     .label = Dodajte traku pretraživanja u alatnu traku
 search-engine-default-header = Zadana tražilica
 search-engine-default-desc = Odaberite zadani pretraživač koji ćete koristiti u adresnoj traci i traci pretraživanja.
-search-engine-default-private-desc = Odaberi standardnu tražilicu za upotrebu u privatnim prozorima.
+search-engine-default-desc-2 = Ovo je zadana tražilica u adresnoj traci i traci za pretraživanje. Možete je promijeniti u bilo koje vrijeme.
+search-engine-default-private-desc-2 = Odaberite drugi zadani pretraživač za Privatno pretraživanje
 search-separate-default-engine =
     .label = Koristi ovu tražilicu u privatnim prozorima
     .accesskey = K
@@ -528,6 +537,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Prikažite prijedloge za pretraživanje ispred povijesti pregledavanja u rezultatima adresne trake
+search-show-suggestions-private-windows =
+    .label = Prikaži prijedloge za pretraživanje u Privatnom pretraživanju
 suggestions-addressbar-settings = Promijeni postavke za povijest pregledavanja, zabilješke i prijedloge za kartice
 search-suggestions-cant-show = Sugestije pretraživanja neće biti prikazane u lokacijskoj traci jer ste podesili { -brand-short-name } da ne pamti povijest.
 search-one-click-header = Pretraživači na jedan klik
@@ -720,7 +731,11 @@ privacy-header = Privatnost preglednika
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Prijave i lozinke
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Pitaj za spremanje prijava i lozinka za web stranice
     .accesskey = r
@@ -734,6 +749,7 @@ forms-breach-alerts =
     .label = Prikaži upozorenja o lozinkama za zlonamjerne web stranice
     .accesskey = u
 forms-breach-alerts-learn-more-link = Saznaj više
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Automatski popuni prijave i lozinke
     .accesskey = i
@@ -888,7 +904,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Prilagođeno
     .accesskey = P
 
-
+##
 
 content-blocking-etp-standard-desc = Uravnoteženo za zaštitu i performansu. Stranice će se normalno učitavati.
 content-blocking-etp-strict-desc = Jača zaštita, ali može prouzročiti lom nekih web lokacija ili sadržaja.

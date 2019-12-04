@@ -8,3 +8,15 @@
 appmenuitem-protection-report-title = Pribatutasun-babesak
 appmenuitem-protection-report-tooltip =
     .tooltiptext = Joan zure pribatutasun-txostenera
+
+## Zoom Controls
+
+appmenuitem-zoom-enlarge =
+    .label = Gerturatu zooma
+appmenuitem-zoom-reduce =
+    .label = Urrundu zooma
+
+## Firefox Account toolbar button and Sync panel in App menu.
+
+fxa-toolbar-sync-now =
+    .label = Sinkronizatu orain

@@ -32,8 +32,14 @@ manifest-item-icons = Icone
 manifest-loading = Caricamento manifesto in corso…
 manifest-loaded-ok = Caricato manifesto.
 manifest-loaded-error = Si è verificato un errore durante il caricamento del manifesto:
+manifest-loaded-devtools-error = Errore in Firefox DevTools
 manifest-non-existing = Nessun manifesto trovato da analizzare.
 manifest-json-link-data-url = Il manifesto è incorporato in un Data URL.
+manifest-icon-purpose = Scopo: <code>{$purpose}</code>
+manifest-icon-img =
+  .alt = Icona
+manifest-icon-img-title = Icona con dimensioni: {$sizes}
+manifest-icon-img-title-no-sizes = Dimensioni icona non specificate
 # Sidebar navigation item for Manifest sidebar item section
 sidebar-item-manifest = Manifesto
   .alt = Icona manifesto

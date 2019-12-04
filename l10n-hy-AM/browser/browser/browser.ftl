@@ -25,6 +25,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = Բացել հաղորդագրության վահանակը
 urlbar-geolocation-notification-anchor =
     .tooltiptext = ԲԱցել տեղադրության հարցման վահանակը
+urlbar-storage-access-anchor =
+    .tooltiptext = Բացեք զննող գործունեության թույլտվության վահանակը
 urlbar-translate-notification-anchor =
     .tooltiptext = Թարգմանել այս էջը
 urlbar-web-rtc-share-screen-notification-anchor =
@@ -39,10 +41,32 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = Կառավարել բաղադրիչների օգտագործումը
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Կառավարել խցիկի և/կամ բարձրախոսի համօգտագործումը այս կայքի հետ
+urlbar-autoplay-notification-anchor =
+    .tooltiptext = Բացեք ինքնաշխատ վահանակը
 urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Պահել տվյալները Մշտական պահեստում
 urlbar-addons-notification-anchor =
     .tooltiptext = Բացել հավելման տեղադրման հաղորդագրության վահանակը
+urlbar-tip-help-icon =
+    .title = Ստանալ օգնություն
+urlbar-geolocation-blocked =
+    .tooltiptext = Դուք արգելափակել եք տեղադրության տեղեկությունը այս կայքի համար:
+urlbar-web-notifications-blocked =
+    .tooltiptext = Դուք արգելափակել եք ծանուցումները այս կայքի համար:
+urlbar-camera-blocked =
+    .tooltiptext = Դուք արգելափակել եք ձեր տեսախցիկը այս կայքի համար:
+urlbar-microphone-blocked =
+    .tooltiptext = Դուք արգելափակել եք բարձրախոսը այս կայքի համար:
+urlbar-screen-blocked =
+    .tooltiptext = Դուք արգելափակել եք այս կայքը՝ ձեր էկրանի համօգտագործելուց:
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Դուք արգելափակել եք մշտական պահեստը այս կայքի համար:
+urlbar-popup-blocked =
+    .tooltiptext = Դուք ունեք արգելափակված ելնող պատուհաններ այս կայքում:
+urlbar-canvas-blocked =
+    .tooltiptext = Դուք արգելափակել եք canvas տվյալների դուրս բերումը այս կայքի համար:
+urlbar-midi-blocked =
+    .tooltiptext = Դուք արգելափակել եք MIDI մատչումը այս կայքին:
 
 ## Page Action Context Menu
 
@@ -61,3 +85,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Դուրս գալ Լիաէկրան վիճակից
     .accesskey = Լ
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Այս անգամ որոնել հետևյալի հետ.
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Փոխել որոնման կարգավորումները
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Փոխել որոնման կարգավորումները
+search-one-offs-context-open-new-tab =
+    .label = Որոնել Նոր Ներդիրում
+    .accesskey = Ն
+search-one-offs-context-set-as-default =
+    .label = Հաստատել որպես հիմնական Որոնիչ
+    .accesskey = հ
+search-one-offs-context-set-as-default-private =
+    .label = Սահմանել որպես լռելյայն որոնման միջոց անձնական պատուհանների համար
+    .accesskey = P

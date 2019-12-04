@@ -14,6 +14,11 @@ pref-page =
             [windows] Indstillinger
            *[other] Indstillinger
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Indstillinger
+       *[other] Indstillinger
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -282,6 +287,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Brug { $plugin-name } (i { -brand-short-name })
@@ -457,7 +466,6 @@ choose-bookmark =
 
 home-prefs-content-header = Indhold på Firefox' startside
 home-prefs-content-description = Vælg det indhold, du vil have vist på din startside i Firefox.
-home-prefs-content-discovery-description = Funktionen Opdag indhold på Firefox' startside viser dig relevante artikler af høj kvalitet fra nettet.
 home-prefs-search-header =
     .label = Søgning på internettet
 home-prefs-topsites-header =
@@ -505,15 +513,13 @@ search-bar-shown =
     .label = Tilføj søgefeltet til værktøjslinjen
 search-engine-default-header = Standard-søgetjeneste
 search-engine-default-desc = Vælg den søgetjeneste, du vil bruge i adressefeltet og søgefeltet.
-
-search-engine-default-private-desc = Vælg den søgetjeneste, du vil bruge i private vinduer.
+search-engine-default-desc-2 = Dette er din standard-søgetjeneste i adressefeltet og søgefeltet. Du kan altid skifte den ud med en anden.
+search-engine-default-private-desc-2 = Vælg en anden søgetjeneste til brug i private vinduer.
 search-separate-default-engine =
     .label = Brug denne søgetjeneste i private vinduer.
     .accesskey = B
-
 search-suggestions-header = Søgeforslag
 search-suggestions-desc = Vælg hvordan søgeforslag fra søgetjenester skal vises.
-
 search-suggestions-option =
     .label = Vis søgeforslag
     .accesskey = s
@@ -527,9 +533,9 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Vis søgeforslag før resultater fra min browserhistorik i adressefeltet
-
+search-show-suggestions-private-windows =
+    .label = Vis søgeforslag i private vinduer
 suggestions-addressbar-settings = Skift indstillinger for søgeforslag fra browserhistorik, bogmærker og åbne faneblade.
-
 search-suggestions-cant-show = Søgeforslag vil ikke blive vist i adressefeltet, fordi du har sat { -brand-short-name } op til aldrig at gemme historik.
 search-one-click-header = Lyn-søgetjenester
 search-one-click-desc = Vælg de alternative søgetjenester, der vises under adressefeltet og søgefeltet, når du begynder at indtaste en søgeterm.
@@ -566,6 +572,10 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
+
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Tag dit net med dig
 sync-signedout-description = Synkroniser dine bogmærker, historik, faneblade, adgangskoder, tilføjelser og indstillinger mellem alle dine enheder.
 sync-signedout-account-title = Opret forbindelse med en { -fxaccount-brand-name }
@@ -586,16 +596,17 @@ sync-mobile-promo = Hent Firefox til <img data-l10n-name="android-icon"/> <a dat
 
 ## Sync Section - Signed in
 
+
+## Firefox Account - Signed in
+
 sync-profile-picture =
     .tooltiptext = Skift profilbillede
 sync-disconnect =
     .label = Afbryd…
     .accesskey = A
-
 sync-sign-out =
     .label = Log ud…
     .accesskey = u
-
 sync-manage-account = Håndter konto
     .accesskey = H
 sync-signedin-unverified = { $email } er ikke blevet bekræftet.
@@ -615,15 +626,11 @@ sync-signedin-settings-desc = Vælg, hvad der skal synkroniseres på dine enhede
 ## Sync section - enabling or disabling sync.
 
 prefs-syncing-on = Synkronisering: TIL
-
 prefs-syncing-off = Synkronisering: FRA
-
 prefs-sync-setup =
     .label = Indstil { -sync-brand-short-name }…
     .accesskey = I
-
 prefs-sync-offer-setup-label = Synkroniser bogmærker, historik, faneblade, adgangskoder, tilføjelser og indstillinger på tværs af alle dine enheder.
-
 prefs-sync-now =
     .labelnotsyncing = Synkroniser nu
     .accesskeynotsyncing = n
@@ -632,7 +639,6 @@ prefs-sync-now =
 ## The list of things currently syncing.
 
 sync-currently-syncing-heading = Du synkroniserer i øjeblikket:
-
 sync-currently-syncing-bookmarks = Bogmærker
 sync-currently-syncing-history = Historik
 sync-currently-syncing-tabs = Åbne faneblade
@@ -645,6 +651,9 @@ sync-currently-syncing-prefs =
         [windows] Indstillinger
        *[other] Indstillinger
     }
+sync-change-options =
+    .label = Skift…
+    .accesskey = S
 
 ## The "Choose what to sync" dialog.
 
@@ -655,7 +664,6 @@ sync-choose-what-to-sync-dialog =
     .buttonaccesskeyaccept = G
     .buttonlabelextra2 = Afbryd…
     .buttonaccesskeyextra2 = A
-
 sync-engine-bookmarks =
     .label = Bogmærker
     .accesskey = B
@@ -670,12 +678,10 @@ sync-engine-logins =
     .label = Logins
     .tooltiptext = Gemte brugernavne og adgangskoder
     .accesskey = L
-
 sync-engine-logins-passwords =
     .label = Logins og adgangskoder
     .tooltiptext = Gemte brugernavne og adgangskoder
     .accesskey = L
-
 sync-engine-addresses =
     .label = Adresser
     .tooltiptext = Gemte postadresser (kun til computer)
@@ -696,6 +702,9 @@ sync-engine-prefs =
         }
     .tooltiptext = Generelle indstillinger samt indstillinger for privatliv og sikkerhed
     .accesskey = I
+
+## The device name controls.
+
 sync-device-name-header = Enhedens navn
 sync-device-name-change =
     .label = Skift navn for enheden…
@@ -717,6 +726,9 @@ sync-fxa-privacy-notice = Privatlivspolitik
 privacy-header = Beskyttelse af privatliv
 
 ## Privacy Section - Forms
+
+
+## Privacy Section - Logins and Passwords
 
 logins-header = Logins og adgangskoder
 forms-ask-to-save-logins =

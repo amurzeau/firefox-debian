@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = მონაცემების შენახვა მუდმივ მეხსიერებაზე
 urlbar-addons-notification-anchor =
     .tooltiptext = დამატების ჩადგმის შეტყობინების არის გახსნა
+urlbar-tip-help-icon =
+    .title = დახმარების მიღება
+urlbar-geolocation-blocked =
+    .tooltiptext = ამ საიტისთვის თქვენს მდებარეობაზე წვდომა შეზღუდული გაქვთ.
+urlbar-web-notifications-blocked =
+    .tooltiptext = ამ საიტისთვის შეტყობინებების ჩვენების უფლება შეზღუდული გაქვთ.
+urlbar-camera-blocked =
+    .tooltiptext = ამ საიტისთვის თქვენი კამერის გამოყენების უფლება შეზღუდული გაქვთ.
+urlbar-microphone-blocked =
+    .tooltiptext = ამ საიტისთვის თქვენი მიკროფონის გამოყენების უფლება შეზღუდული გაქვთ.
+urlbar-screen-blocked =
+    .tooltiptext = ამ საიტისთვის თქვენი ეკრანის გაზიარების უფლება შეზღუდული გაქვთ.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = ამ საიტისთვის, მუდმივ მეხსიერებასთან წვდომა შეზღუდული გაქვთ.
+urlbar-popup-blocked =
+    .tooltiptext = ამ საიტზე, ამომხტომი ფანჯრები შეზღუდული გაქვთ.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = ამ საიტისთვის მედიაფაილების თვითგაშვების უფლება შეზღუდული გაქვთ.
+urlbar-canvas-blocked =
+    .tooltiptext = ამ საიტისთვის, გრაფიკის გამოსახვის მონაცემებზე წვდომის უფლება შეზღუდული გაქვთ.
+urlbar-midi-blocked =
+    .tooltiptext = ამ საიტისთვის MIDI წვდომის უფლება შეზღუდული გაქვთ.
+urlbar-install-blocked =
+    .tooltiptext = ამ საიტისთვის დამატების ჩადგმის უფლება შეზღუდული გაქვთ.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = სრულეკრანიანი რეჟიმიდან გამოსვლა
     .accesskey = ს
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = მოსაძიებლად, შეგიძლიათ გამოიყენოთ:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = ძიების პარამეტრების შეცვლა
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = ძიების პარამეტრების შეცვლა
+search-one-offs-context-open-new-tab =
+    .label = ძიება ახალ ჩანართში
+    .accesskey = ნ
+search-one-offs-context-set-as-default =
+    .label = ნაგულისხმევ საძიებოდ დაყენება
+    .accesskey = გ
+search-one-offs-context-set-as-default-private =
+    .label = ნაგულისხმევ საძიებოდ დაყენება პირად ფანჯრებში
+    .accesskey = პ

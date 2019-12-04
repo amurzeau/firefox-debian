@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = Autor: { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Polecenie
+cfr-doorhanger-extension-notification2 = Polecenie
+    .tooltiptext = Polecenie rozszerzenia
+    .a11y-announcement = Dostępne polecenie rozszerzenia
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Polecenie
+    .tooltiptext = Polecenie funkcji
+    .a11y-announcement = Dostępne polecenie funkcji
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -82,6 +90,9 @@ cfr-protections-panel-link-text = Więcej informacji
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Nowa funkcja:
 cfr-whatsnew-button =
     .label = Co nowego
     .tooltiptext = Co nowego
@@ -101,11 +112,11 @@ cfr-whatsnew-tracking-protect-link-text = Wyświetl raport
 # localization, because it would result in the number showing twice.
 cfr-whatsnew-tracking-blocked-title =
     { $blockedCount ->
-        [one] zablokowany element śledzący
-        [few] zablokowane elementy śledzące
-       *[many] zablokowanych elementów śledzących
+        [one] Zablokowany element śledzący
+        [few] Zablokowane elementy śledzące
+       *[many] Zablokowane elementy śledzące
     }
-cfr-whatsnew-tracking-blocked-subtitle = Od { DATETIME($earliestDate, month: "long", year: "numeric") }
+cfr-whatsnew-tracking-blocked-subtitle = Od { DATETIME($earliestDate, month: "short", year: "numeric") }
 cfr-whatsnew-tracking-blocked-link-text = Wyświetl raport
 cfr-whatsnew-lockwise-backup-title = Utwórz kopię zapasową haseł
 cfr-whatsnew-lockwise-backup-body = Teraz generuj bezpiecznie hasła, do których masz dostęp wszędzie, gdzie się zalogujesz.
@@ -151,9 +162,25 @@ cfr-doorhanger-socialtracking-ok-button = Wyświetl ochronę
     .accesskey = o
 cfr-doorhanger-socialtracking-close-button = Zamknij
     .accesskey = Z
+cfr-doorhanger-socialtracking-dont-show-again = Nie pokazuj więcej takich komunikatów
+    .accesskey = N
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } powstrzymał serwis społecznościowy przed śledzeniem Cię na tej witrynie
 cfr-doorhanger-socialtracking-description = Twoja prywatność jest ważna. { -brand-short-name } blokuje teraz najczęściej występujące elementy śledzące serwisów społecznościowych, ograniczając ilość danych, które mogą zebrać na temat Twoich działań w Internecie.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } zablokował na tej witrynie element śledzący przez zbieranie informacji o konfiguracji
 cfr-doorhanger-fingerprinters-description = Twoja prywatność jest ważna. { -brand-short-name } blokuje teraz elementy zbierające jednoznacznie identyfikowalne informacje o używanym urządzeniu, aby Cię śledzić.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } zablokował na tej witrynie element używający komputera użytkownika do generowania kryptowalut
 cfr-doorhanger-cryptominers-description = Twoja prywatność jest ważna. { -brand-short-name } blokuje teraz elementy wykorzystujące moc obliczeniową Twojego komputera do generowania cyfrowych walut.
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+        [one] { -brand-short-name } od { $date } zablokował <b>{ $blockedCount }</b> element śledzący!
+        [few] { -brand-short-name } od { $date } zablokował ponad <b>{ $blockedCount }</b> elementy śledzące!
+       *[many] { -brand-short-name } od { $date } zablokował ponad <b>{ $blockedCount }</b> elementów śledzących!
+    }
+cfr-doorhanger-milestone-ok-button = Wyświetl wszystkie
+    .accesskey = W

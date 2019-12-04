@@ -124,9 +124,6 @@ legacy-warning-show-legacy = बिरासत एक्सटेन्सन�
 legacy-extensions =
     .value = बिरासत एक्सटेन्सनहरू
 legacy-extensions-description = यी एक्सटेन्सनहरूले { -brand-short-name } को हालको मानकहरू पुरा गर्दैनन् त्यसैले तिनीहरु निष्क्रिय गरिएका छन् । <label data-l10n-name="legacy-learn-more">एड-अनहरू मा भएको परिवर्तनहरू बारे जान्नुहोस्</label>
-extensions-view-discover =
-    .name = एड-अनहरू प्राप्त गर्नुहोस्
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-recent-updates =
     .name = हालका अद्यावधिकहरू
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -154,6 +151,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = सक्षम पार्नुहोस्
     .tooltiptext = एड-अन अद्यावधिक सुरक्षा जाँच सक्षम पार्नुहोस्
+extensions-warning-safe-mode = सबै एडअनहरू सुरक्षित मोडद्वारा असक्षम गरिएको छ।
+extensions-warning-check-compatibility = एडअन अनुकूलता जाँच अक्षम पारिएको छ। तपाईँसँग अमिल्दो एडअनहरू हुन सक्छन्।
+extensions-warning-check-compatibility-button = सक्षम पार्नुहोस्
+    .title = एडअन समर्थन जाँच सक्षम पार्नुहोस्
+extensions-warning-update-security = एडअनमा अद्यावधिक सुरक्षा जाँच असक्षम छ। तपाईँ अद्यावधिकसँग सम्झौता गरिरहनुभएको छ।
+extensions-warning-update-security-button = सक्षम पार्नुहोस्
+    .title = एड-अन अद्यावधिक सुरक्षा जाँच सक्षम पार्नुहोस्
 
 ## Strings connected to add-on updates
 
@@ -163,12 +167,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = हालका अद्यावधिहरू हेर्नुहोस्
     .accesskey = V
+addon-updates-check-for-updates = अद्यावधिकहरूका लागि जाँच गर्नुहोस्
+    .accesskey = C
+addon-updates-view-updates = हालका अद्यावधिहरू हेर्नुहोस्
+    .accesskey = V
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = सबै एड-अनहरू स्वतः अद्यावधि गर्नुहोस्
+    .accesskey = A
+addon-updates-update-addons-automatically = सबै एड-अनहरू स्वतः अद्यावधि गर्नुहोस्
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -182,6 +192,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = R
 extensions-updates-reset-updates-to-manual =
     .label = सबै एड-अनहरू चाहेको बेला अद्यावधि हुन पूर्व निर्धारित गर्नुहोस्
+    .accesskey = R
+addon-updates-reset-updates-to-automatic = सबै एड-अनहरू स्वतः अद्यावधि हुन पूर्व निर्धारित गर्नुहोस्
+    .accesskey = R
+addon-updates-reset-updates-to-manual = सबै एड-अनहरू चाहेको बेला अद्यावधि हुन पूर्व निर्धारित गर्नुहोस्
     .accesskey = R
 
 ## Status messages displayed when updating add-ons
@@ -201,3 +215,31 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = अद्यावधिहरू स्थापना गर्नुहोस्
     .tooltiptext = यो सूचीमा रहेका सबै अद्यावधीहरू स्थापना गर्नुहोस्
+addon-updates-updating = एड-अनहरू अद्यावधि गर्दै
+addon-updates-installed = तपाईँका एड-अनहरू अद्यावधि गरिएका छन् ।
+addon-updates-none-found = कुनै अद्यावधि फेला परेन
+addon-updates-manual-updates-found = उपलब्ध अद्यावधिहरू हेर्नुहोस्
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = फाइलबाट एडअनहरू स्थापना गर्नुहोस्…
+    .accesskey = I
+addon-install-from-file-dialog-title = स्थापना गर्न एड-अन छान्नुहोस्
+addon-install-from-file-filter-name = एड-अनहरू
+addon-open-about-debugging = एडअनहरू डिबग गर्नुहोस्
+    .accesskey = b
+
+## Extension shortcut management
+
+
+## Recommended add-ons page
+
+
+## Add-on actions
+
+
+## Pending uninstall message bar
+
+
+## Page headings
+

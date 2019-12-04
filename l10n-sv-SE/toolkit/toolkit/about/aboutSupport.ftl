@@ -147,6 +147,22 @@ intl-locales-default = Standardspråk
 intl-os-title = Operativsystem
 intl-os-prefs-system-locales = Språkversioner system
 intl-regional-prefs = Regionala inställningar
+
+## Remote Debugging
+##
+## The Firefox remote protocol provides low-level debugging interfaces
+## used to inspect state and control execution of documents,
+## browser instrumentation, user interaction simulation,
+## and for subscribing to browser-internal events.
+##
+## See also https://firefox-source-docs.mozilla.org/remote/
+
+remote-debugging-title = Fjärrfelsökning (Chromium-protokollet)
+remote-debugging-accepting-connections = Accepterar anslutningar
+remote-debugging-url = URL
+
+
+
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
@@ -243,6 +259,7 @@ unknown-failure = Svartlistad; felkod { $failureCode }
 d3d11layers-crash-guard = D3D11 Kompositör
 d3d11video-crash-guard = D3D11 Videoavkodare
 d3d9video-crash-buard = D3D9 Videoavkodare
+d3d9video-crash-guard = D3D9 Videoavkodare
 glcontext-crash-guard = OpenGL
 reset-on-next-restart = Återställ vid nästa omstart
 gpu-process-kill-button = Avsluta GPU process

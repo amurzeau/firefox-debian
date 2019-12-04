@@ -14,6 +14,11 @@ pref-page =
             [windows] Optiones
            *[other] Preferentias
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Optiones
+       *[other] Preferentias
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -55,7 +60,7 @@ close-button =
 ## Browser Restart Dialog
 
 feature-enable-requires-restart = { -brand-short-name } tu debe reinitiar pro activar iste functionalitate.
-feature-disable-requires-restart = { -brand-short-name } tu debe reinitiar pro inactivar iste functionalitate.
+feature-disable-requires-restart = { -brand-short-name } debe reinitiar se pro disactivar iste function.
 should-restart-title = Reinitiar { -brand-short-name }
 should-restart-ok = Reinitiar { -brand-short-name } ora
 cancel-no-restart-button = Cancellar
@@ -108,7 +113,7 @@ search-results-empty-message =
         [windows] Pardono! Il ha nulle resultato in le optiones pro “<span data-l10n-name="query"></span>”.
        *[other] Pardono! Il ha nulle resultato in le preferentias pro “<span data-l10n-name="query"></span>”.
     }
-search-results-help-link = Besonia tu de adjuta? Visita <a data-l10n-name="url">Assistentia de { -brand-short-name }</a>
+search-results-help-link = Require adjuta? Visita <a data-l10n-name="url">Assistentia de { -brand-short-name }</a>
 
 ## General Section
 
@@ -118,7 +123,7 @@ startup-header = A initiar
 separate-profile-mode =
     .label = Permitter que { -brand-short-name } e Firefox exeque al mesme tempore
 use-firefox-sync = Consilio: Profilos distincte es utilisate. Usa { -sync-brand-short-name } pro compartir datos inter illos.
-get-started-not-logged-in = Connecter se a { -sync-brand-short-name }…
+get-started-not-logged-in = Aperir session a { -sync-brand-short-name }…
 get-started-configured = Aperir le preferentias de { -sync-brand-short-name }
 always-check-default =
     .label = Sempre verificar si { -brand-short-name } es tu navigator predefinite
@@ -134,7 +139,7 @@ startup-restore-previous-session =
 startup-restore-warn-on-quit =
     .label = Advertir te quando tu quita le navigator
 disable-extension =
-    .label = Inactivar le extension
+    .label = Disactivar le extension
 tabs-group-header = Schedas
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab percurre le schedas in le ordine usate recentemente
@@ -164,8 +169,8 @@ browser-containers-settings =
 containers-disable-alert-title = Clauder tote le schedas contextual?
 containers-disable-alert-desc =
     { $tabCount ->
-        [one] Si tu inactiva le schedas contextual ora, { $tabCount } scheda contextual essera claudite. Desira tu vermente inactivar le schedas contextual?
-       *[other] Si tu inactiva le schedas contextual ora, { $tabCount } schedas contextual essera claudite. Desira tu vermente inactivar le schedas contextual?
+        [one] Si tu disactiva le schedas contextual ora, { $tabCount } scheda contextual essera claudite. Desira tu vermente disactivar le schedas contextual?
+       *[other] Si tu disactiva le schedas contextual ora, { $tabCount } schedas contextual essera claudite. Desira tu vermente disactivar le schedas contextual?
     }
 containers-disable-alert-ok-button =
     { $tabCount ->
@@ -282,6 +287,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Usar { $plugin-name } (in { -brand-short-name })
@@ -363,7 +372,7 @@ performance-title = Rendimento
 performance-use-recommended-settings-checkbox =
     .label = Usar le parametros de rendimento recommendate
     .accesskey = U
-performance-use-recommended-settings-desc = Iste parametros es adaptate al hardware e al systema operative de tu computator.
+performance-use-recommended-settings-desc = Iste parametros es adaptate al hardware e al systema de operation de tu computator.
 performance-settings-learn-more = Saper plus
 performance-allow-hw-accel =
     .label = Usar le acceleration de hardware quando disponibile
@@ -457,12 +466,11 @@ choose-bookmark =
 
 home-prefs-content-header = Pagina initial de Firefox
 home-prefs-content-description = Elige qual contento tu desira pro tu pagina initial de Firefox.
-home-prefs-content-discovery-description = Content Discovery in Firefox Home te consenti de discoperir articulos pertinente, de alte qualitate, in le Web.
 home-prefs-search-header =
     .label = Recerca del Web
 home-prefs-topsites-header =
-    .label = Sitos popular
-home-prefs-topsites-description = Le sitos que tu visita plus
+    .label = Sitos preferite
+home-prefs-topsites-description = Le sitos que tu visita le plus
 # Variables:
 #  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 home-prefs-recommended-by-header =
@@ -505,12 +513,13 @@ search-bar-shown =
     .label = Adder le barra de recerca in le barra de instrumentos
 search-engine-default-header = Motor de recerca predefinite
 search-engine-default-desc = Elige le motor de recerca pro usar como predefinition pro le barra de adresse e le de recerca.
-search-engine-default-private-desc = Elige le motor de recerca predefinite a usar in Fenestras anonyme.
+search-engine-default-desc-2 = Isto es tu motor de recerca predefinite in le barras de adresse e de recerca. Tu pote cambiar lo in omne momento.
+search-engine-default-private-desc-2 = Selige un altere motor de recerca predefinite a usar solmente in fenestras private
 search-separate-default-engine =
-    .label = Usar iste motor de recerca in Fenestras anonyme
+    .label = Usar iste motor de recerca in fenestras private
     .accesskey = U
 search-suggestions-header = Suggestiones de recerca
-search-suggestions-desc = Elige como appare le suggestiones ex motores de recerca.
+search-suggestions-desc = Elige como appare le suggestiones de motores de recerca.
 search-suggestions-option =
     .label = Monstrar suggestiones de recerca
     .accesskey = s
@@ -524,7 +533,9 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Monstrar le suggestiones de recerca ante le chronologia de navigation in le resultatos del barra de adresse
-suggestions-addressbar-settings = Cambia preferentias pro chronologia de exploration, marcapaginas e scheda suggestiones
+search-show-suggestions-private-windows =
+    .label = Monstrar suggestiones de recerca in fenestras private
+suggestions-addressbar-settings = Cambiar preferentias pro suggestiones a base de chronologia, marcapaginas e schedas
 search-suggestions-cant-show = Le suggestiones de recerca non essera monstrate inter le resultatos del barra de adresse perque tu ha configurate { -brand-short-name } pro non memorisar jammais le chronologia.
 search-one-click-header = Motores de recerca a un sol clic
 search-one-click-desc = Elige le motores de recerca alternative que appare infra le barra de adresse o le de recerca quando tu comencia a scriber un parola clave.
@@ -568,11 +579,14 @@ containers-remove-button =
 sync-signedout-caption = Porta le web con te
 sync-signedout-description = Synchronisa tu marcapaginas, chronologia, contrasignos, additivos, e preferentias inter tote tu apparatos.
 sync-signedout-account-title = Connecter se con un { -fxaccount-brand-name }
-sync-signedout-account-create = Non ha tu un conto? Que nos comencia
+sync-signedout-account-create = Non ha un conto? Comencia hic
     .accesskey = C
 sync-signedout-account-signin =
-    .label = Authenticar se…
-    .accesskey = I
+    .label = Aperir session…
+    .accesskey = A
+sync-signedout-account-signin2 =
+    .label = Aperir session a { -sync-brand-short-name }…
+    .accesskey = A
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -594,8 +608,8 @@ sync-disconnect =
     .label = Disconnecter se…
     .accesskey = D
 sync-sign-out =
-    .label = Disconnecter se…
-    .accesskey = s
+    .label = Clauder session…
+    .accesskey = C
 sync-manage-account = Gerer le conto
     .accesskey = o
 sync-signedin-unverified = { $email } non es verificate.
@@ -607,7 +621,7 @@ sync-remove-account =
     .label = Remover le conto
     .accesskey = R
 sync-sign-in =
-    .label = Authenticar se
+    .label = Aperir session
     .accesskey = A
 sync-signedin-settings-header = Parametros de Sync
 sync-signedin-settings-desc = Elige lo que tu vole synchronisar in tu apparatos usante { -brand-short-name }.
@@ -641,8 +655,8 @@ sync-currently-syncing-prefs =
        *[other] Preferentias
     }
 sync-change-options =
-    .label = Modification...
-    .accesskey = M
+    .label = Cambiar…
+    .accesskey = C
 
 ## The "Choose what to sync" dialog.
 
@@ -716,7 +730,11 @@ privacy-header = Confidentialitate del navigator
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Authenticationes e contrasignos
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Demanda de salvar authenticationes e contrasignos de sito
     .accesskey = r
@@ -730,6 +748,7 @@ forms-breach-alerts =
     .label = Monstrar avisos pro contrasignos de sitos web violate
     .accesskey = v
 forms-breach-alerts-learn-more-link = Saper plus
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Auto-popular le authenticationes pro accessos e contrasignos
     .accesskey = A
@@ -765,7 +784,7 @@ history-remember-option-never =
     .label = Non memorisar jammais le chronologia
 history-remember-option-custom =
     .label = Usar parametros personalisate pro le chronologia
-history-remember-description = { -brand-short-name } rememorara tu exploration, discarga, forma e chronologia de recerca.
+history-remember-description = { -brand-short-name } recordara tu chronologia de navigation, discargamentos, formularios e recerca.
 history-dontremember-description = { -brand-short-name } usara le mesme parametros que pro le navigation private e non memorisara le chronologia durante que tu naviga le Web.
 history-private-browsing-permanent =
     .label = Sempre usar le modo de navigation private
@@ -789,11 +808,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cookies e datos de sitos
-sitedata-total-size-calculating = Calculo del dimension de datos de sito e de memoria tampon…
+sitedata-total-size-calculating = Calculo del dimension de datos de sito e de cache…
 # Variables:
 #   $value (Number) - Value of the unit (for example: 4.6, 500)
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
-sitedata-total-size = Tu cookies, datos de sito e memoria tampon immagazinate usa actualmente { $value } { $unit } de spatio de disco.
+sitedata-total-size = Tu cookies, datos de sito e cache occupa actualmente { $value } { $unit } de spatio de disco.
 sitedata-learn-more = Saper plus
 sitedata-delete-on-close =
     .label = Deler datos de cookies e sitos quando { -brand-short-name } es claudite
@@ -807,14 +826,14 @@ sitedata-disallow-cookies-option =
     .accesskey = B
 # This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
 # The list items are the strings named sitedata-block-*-option*.
-sitedata-block-desc = Typo de contentos blocate
+sitedata-block-desc = Typo de contento blocate
     .accesskey = T
 sitedata-option-block-trackers =
     .label = Traciatores de tertie partes
 sitedata-option-block-cross-site-trackers =
-    .label = Traciatores tra sitos e tra retes social
+    .label = Traciatores inter sitos
 sitedata-option-block-cross-site-and-social-media-trackers =
-    .label = Traciatores tra sitos e tra retes social
+    .label = Traciatores inter sitos e de retes social
 sitedata-option-block-unvisited =
     .label = Cookies de sitos web non visitate
 sitedata-option-block-all-third-party =
@@ -851,7 +870,7 @@ addressbar-suggestions-settings = Cambiar le preferentias pro le suggestiones de
 content-blocking-header = Blocage de contento
 content-blocking-section-description = Protege tu confidentialitate durante que tu naviga. Bloca le contento invisibile que tracia le sitos que tu visita e crea tu profilo. Blocar parte de iste contento pote render plus veloce cargar paginas.
 content-blocking-enhanced-tracking-protection = Protection de traciamento meliorate
-content-blocking-section-top-level-description = Le traciatores te seque circum le rete pro colliger informationes re tu habitos e interesses de exploration. { -brand-short-name } bloca multe de iste traciatores e altere scripts maligne.
+content-blocking-section-top-level-description = Le traciatores te seque circum le rete pro colliger informationes sur tu habitos e interesses de navigation. { -brand-short-name } bloca multes de iste traciatores e altere scripts maligne.
 content-blocking-learn-more = Saper plus
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -886,11 +905,11 @@ enhanced-tracking-protection-setting-custom =
 
 
 
-content-blocking-etp-standard-desc = Balanciate pro protection e performance. Paginas cargara normalmente.
-content-blocking-etp-strict-desc = Protection plus forte, ma pote causar alcun sitos o contento collaber.
+content-blocking-etp-standard-desc = Balanciate pro protection e efficientia. Le paginas se carga normalmente.
+content-blocking-etp-strict-desc = Protection reinfortiate, ma certe sitos o contento pote non functionar correctemente.
 content-blocking-etp-custom-desc = Elige qual traciatores e scripts blocar.
-content-blocking-private-windows = Contento traciator in Fenestras reservate
-content-blocking-cross-site-tracking-cookies = Cookies traciator tra sitos
+content-blocking-private-windows = Contento traciator in fenestras private
+content-blocking-cross-site-tracking-cookies = Cookies de traciamento inter sitos
 content-blocking-social-media-trackers = Traciatores de retes social
 content-blocking-all-cookies = Tote le cookies
 content-blocking-unvisited-cookies = Cookie ab sitos web non visitate
@@ -898,7 +917,7 @@ content-blocking-all-windows-trackers = Traciatores note in tote le fenestras
 content-blocking-all-windows-tracking-content = Contento traciator in tote le fenestras
 content-blocking-all-third-party-cookies = Tote le cookies de tertie partes
 content-blocking-cryptominers = Crypto-minatores
-content-blocking-fingerprinters = Dactylogrammatores
+content-blocking-fingerprinters = Traciatores de impression digital
 content-blocking-warning-title = Attention!
 content-blocking-warning-description = Alcun sitos web pote non functionar correctemente con le blocage de contento. Es facile disactivar le blocage pro sitos de confidentia.
 content-blocking-learn-how = Apprender como
@@ -933,8 +952,8 @@ content-blocking-cryptominers-label =
 # Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
 # that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
 content-blocking-fingerprinters-label =
-    .label = Dactylogrammatores
-    .accesskey = D
+    .label = Traciatores de impression digital
+    .accesskey = i
 
 ## Privacy Section - Tracking
 
@@ -994,7 +1013,7 @@ permissions-a11y-privacy-link = Saper plus
 
 ## Privacy Section - Data Collection
 
-collection-header = Colligimento de datos e utilisation de { -brand-short-name }
+collection-header = Collecta e uso de datos per { -brand-short-name }
 collection-description = Nos nos effortia pro lassar te in le commando e colliger solmente lo que nos ha necessitate pro provider e meliorar { -brand-short-name } a totes. Nos sempre demanda permission ante reciper informationes personal.
 collection-privacy-notice = Notification de confidentialitate
 collection-health-report =
@@ -1021,9 +1040,9 @@ collection-backlogged-crash-reports-link = Saper plus
 ## https://developers.google.com/safe-browsing/developers_guide_v2#AcceptableUsage
 
 security-header = Securitate
-security-browsing-protection = Protection contra contentos fraudulente e softwares periculose
+security-browsing-protection = Protection contra contento fraudulente e software periculose
 security-enable-safe-browsing =
-    .label = Blocar le contentos periculose o fraudulente
+    .label = Blocar le contento periculose e fraudulente
     .accesskey = B
 security-enable-safe-browsing-link = Saper plus
 security-block-downloads =
@@ -1080,7 +1099,7 @@ space-alert-under-5gb-message = { -brand-short-name } non ha bastante spatio de 
 
 desktop-folder-name = Scriptorio
 downloads-folder-name = Discargamentos
-choose-download-folder-title = Eliger le dossier de discarga:
+choose-download-folder-title = Elige le dossier de discargamentos:
 # Variables:
 #   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
 save-files-to-cloud-storage =

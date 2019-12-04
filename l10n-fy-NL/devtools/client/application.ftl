@@ -86,13 +86,31 @@ manifest-item-icons = Piktogrammen
 manifest-loading = Manifest lade…
 # Text displayed when the manifest has been successfully loaded
 manifest-loaded-ok = Manifest laden.
-# Text displayed when there has been an error while trying to load the manifest
+# Text displayed as a caption when there has been an error while trying to
+# load the manifest
 manifest-loaded-error = Der is in flater bard by it laden fan it manifest:
+# Text displayed as an error when there has been a Firefox DevTools error while
+# trying to load the manifest
+manifest-loaded-devtools-error = Firefox Devtools-flater
 # Text displayed when the page has no manifest available
 manifest-non-existing = Gjin manifest fûn om te ynspektearjen.
 # Text displayed when the page has a manifest embedded in a Data URL and
 # thus we cannot link to it.
 manifest-json-link-data-url = It manifest is ynbed yn in gegevens-URL.
+# Text displayed at manifest icons to label their purpose, as declared
+# in the manifest.
+manifest-icon-purpose = Doel: <code>{ $purpose }</code>
+# Text displayed as the alt attribute for <img> tags showing the icons in the
+# manifest.
+manifest-icon-img =
+    .alt = Piktogram
+# Text displayed as the title attribute for <img> tags showing the icons in the
+# manifest. `$sizes` is a user-dependent string that has been parsed as a
+# space-separated list of `<width>x<height>` sizes or the keyword `any`.
+manifest-icon-img-title = Piktogram mei ôfmjittingen: { $sizes }
+# Text displayed as the title attribute for <img> tags showing the icons in the
+# manifest, in case there's no icon size specified by the user
+manifest-icon-img-title-no-sizes = Piktogram fan net-spesifisearre ôfmjitting
 # Sidebar navigation item for Manifest sidebar item section
 sidebar-item-manifest = Manifest
     .alt = Piktogram Manifest

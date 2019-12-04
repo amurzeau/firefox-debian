@@ -22,6 +22,7 @@ onboarding-welcome-header = Vítá vás { -brand-short-name }
 onboarding-welcome-body = Prohlížeč teď už máte.<br/>Poznejte ještě zbytek aplikace { -brand-product-name }.
 onboarding-welcome-learn-more = Další výhody.
 onboarding-welcome-modal-get-body = Prohlížeč teď už máte.<br/>Využijte aplikaci { -brand-product-name } naplno.
+onboarding-welcome-modal-supercharge-body = Dopřejte si silnou ochranu soukromí.
 onboarding-welcome-modal-privacy-body = Prohlížeč už teď máte. Přidejme k němu ještě trochu ochrany soukromí.
 onboarding-welcome-modal-family-learn-more = Zjistěte více o celé rodině produktů { -brand-product-name }.
 onboarding-welcome-form-header = Začněme
@@ -30,16 +31,26 @@ onboarding-join-form-header =
         [masculine] Používejte { -brand-product-name }
        *[other] Používejte aplikaci { -brand-product-name }
     }
-onboarding-join-form-body = Zde vložte svou e-mailovou adresu.
+onboarding-join-form-body = Zde zadejte svou e-mailovou adresu.
 onboarding-join-form-email =
-    .placeholder = Vložte e-mail
+    .placeholder = Zadejte e-mail
 onboarding-join-form-email-error = Je požadován platný e-mail
 onboarding-join-form-legal = Pokračováním souhlasíte s <a data-l10n-name="terms">podmínkami poskytování služby</a> a <a data-l10n-name="privacy">zásadami ochrany osobních údajů</a>.
 onboarding-join-form-continue = Pokračovat
+# This message is followed by a link using onboarding-join-form-signin ("Sign In") as text.
+onboarding-join-form-signin-label = Už máte účet?
+# Text for link to submit the sign in form
+onboarding-join-form-signin = Přihlásit se
 onboarding-start-browsing-button-label = Začít prohlížet
 onboarding-cards-dismiss =
     .title = Skrýt
     .aria-label = Skrýt
+
+## Welcome full page string
+
+onboarding-fullpage-welcome-subheader = Teď vám ukážeme, jaké máte možnosti.
+onboarding-fullpage-form-email =
+    .placeholder = Vaše e-mailová adresa…
 
 ## Firefox Sync modal dialog strings.
 
@@ -75,6 +86,7 @@ onboarding-benefit-privacy-text = Slibujeme, že nezneužijeme vaše data. Mén�
 onboarding-benefit-sync-title = { -sync-brand-short-name }
 onboarding-benefit-sync-text = Vezměte si své záložky, hesla, historii a další data všude tam, kde používáte aplikaci { -brand-product-name }.
 onboarding-benefit-monitor-title = { -monitor-brand-short-name }
+onboarding-benefit-monitor-text = Nechte se upozornit, pokud se vaše údaje objeví ve známém úniku dat.
 onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
 onboarding-benefit-lockwise-text = Spravujte hesla bezpečně i na cestách.
 
@@ -109,6 +121,7 @@ onboarding-data-sync-text2 =
 onboarding-data-sync-button2 = Přihlásit ke službě { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Buďte informování o únicích dat
 onboarding-firefox-monitor-text = { -monitor-brand-name } hlídá, jestli vaše e-mailová adresa nebyla součástí nějakého úniku dat, a dá vám vědět, pokud ji v nějakém najde.
+onboarding-firefox-monitor-text2 = { -monitor-brand-name } hlídá, jestli vaše e-mailová adresa nebyla součástí nějakého známého úniku dat, a dá vám vědět, pokud ji v nějakém najde.
 onboarding-firefox-monitor-button = Nechte si posílat upozornění
 onboarding-browse-privately-title = Prohlížejte v soukromí
 onboarding-browse-privately-text = Funkce anonymního prohlížení smaže vaši historii vyhledávání a prohlížení a uchová vaše tajemství před ostatními uživateli vašeho počítače.

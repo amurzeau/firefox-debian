@@ -6,8 +6,20 @@
 
 <!ENTITY accountManagerTitle.label "Configurationes del conto">
 
+<!ENTITY accountActionsButton.label "Actiones del conto">
+<!ENTITY accountActionsButton.accesskey "A">
+<!ENTITY addMailAccountButton.label "Adder conto email…">
+<!ENTITY addMailAccountButton.accesskey "A">
+<!ENTITY addIMAccountButton.label "Adder conto chat…">
+<!ENTITY addIMAccountButton.accesskey "C">
+<!ENTITY addFeedAccountButton.label "Adder conto fluxo…">
+<!ENTITY addFeedAccountButton.accesskey "F">
+<!ENTITY addOtherAccountButton.label "Adder altere conto…">
+<!ENTITY addOtherAccountButton.accesskey "a">
 <!ENTITY setDefaultButton.label "Stabilir como predeterminate">
 <!ENTITY setDefaultButton.accesskey "P">
+<!ENTITY removeButton.label "Remover le conto">
+<!ENTITY removeButton.accesskey "R">
 
 <!-- AccountManager.xul -->
 <!-- LOCALIZATION NOTE : this is part of an inline-style attribute on the account

@@ -71,16 +71,19 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = Hľadáte svoje uložené prihlasovacie údaje? Nastavte si { -sync-brand-short-name }.
+about-logins-login-intro-heading-logged-in = Neboli nájdené žiadne synchronizované prihlasovacie údaje.
 login-intro-description = Ak ste si uložili prihlasovacie údaje do aplikácie { -brand-product-name } na inom zariadení, môžete ich získať takto:
 login-intro-instruction-fxa = Vytvorte si { -fxaccount-brand-name } alebo sa doň prihláste na zariadení, kde máte prihlasovacie údaje uložené
 login-intro-instruction-fxa-settings = Uistite sa, že máte v nastaveniach služby { -sync-brand-short-name } na danom zariadení zaškrtnutú možnosť synchronizácie prihlasovacích údajov
 about-logins-intro-instruction-help = Ak potrebujete ďalšiu pomoc, navštívte <a data-l10n-name="help-link">pomocníka { -lockwise-brand-short-name }</a>
+about-logins-intro-import = Ak máte prihlasovacie údaje uložené v inom prehliadači, môžete ich <a data-l10n-name="import-link">do { -lockwise-brand-short-name } importovať</a>
 
 ## Login
 
 login-item-new-login-title = Nové prihlasovacie údaje
 login-item-edit-button = Upraviť
 login-item-delete-button = Odstrániť
+about-logins-login-item-remove-button = Odstrániť
 login-item-origin-label = Adresa webovej stránky
 login-item-origin =
     .placeholder = https://www.example.com
@@ -110,11 +113,8 @@ master-password-reload-button =
     .label = Prihlásiť sa
     .accesskey = P
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = Zrušiť
-confirmation-dialog-dismiss-button =
-    .title = Zrušiť
 enable-password-sync-notification-message =
     { PLATFORM() ->
         [windows] Chcete mať svoje heslá všade so sebou? Otvorte nastavenia služby { -sync-brand-short-name } a zaškrtnite možnosť synchronizácie prihlasovacích údajov.
@@ -128,8 +128,19 @@ enable-password-sync-preferences-button =
         }
     .accesskey = m
 confirm-delete-dialog-title = Odstrániť tieto prihlasovacie údaje?
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = Nabudúce sa už nepýtať
+    .accesskey = N
+
+## Dialogs
+
+confirmation-dialog-cancel-button = Zrušiť
+confirmation-dialog-dismiss-button =
+    .title = Zrušiť
+about-logins-confirm-remove-dialog-title = Chcete odstrániť tento prihlasovací údaj?
 confirm-delete-dialog-message = Túto akciu nie je možné vrátiť späť.
 confirm-delete-dialog-confirm-button = Odstrániť
+about-logins-confirm-remove-dialog-confirm-button = Odstrániť
 confirm-discard-changes-dialog-title = Chcete zahodiť neuložené zmeny?
 confirm-discard-changes-dialog-message = Všetky neuložené zmeny budú stratené.
 confirm-discard-changes-dialog-confirm-button = Zahodiť

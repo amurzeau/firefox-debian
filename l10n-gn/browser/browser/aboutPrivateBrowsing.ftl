@@ -26,3 +26,15 @@ about-private-browsing-not-private = Ko'ag̃aite nereiméi peteĩ ovetã ñemím
 content-blocking-title = Tetepy jejoko
 content-blocking-description = Ndahetái ñanduti renda oipuru jehapykuehoha ikatúva ohecha ne rembiapo ñanduti rupive. Upe { -brand-short-name } rovetã ñemigua guive tetepy jejoko ijehegui ojoko heta jehapykuehoha ikatúva ombyaty marandu’i ne kundaha rehegua.
 about-private-browsing-info-description = { -brand-short-name } ombogue jeheka ha kundaha rembiasakue esẽvo tembipuru’ígui térã embotykuévo opaite ovetã ha tendayke kundaha ñemi rehegua. Kóva nandekuaukáiramo jepe ñanduti rendápe térã ne ñanduti me'ẽhárape g̃uarã, nombohasýi eime ñemi hag̃ua ñandutípe opaite tapicha oipurúva ko mohendaha renondépe.
+# This string is the title for the banner for search engine selection
+# in a private window.
+# Variables:
+#   $engineName (String) - The engine name that will currently be used for the private window.
+about-private-browsing-search-banner-title = { $engineName } ha’e jehekaha mongu'eha ijypykuéva ovetã ñemíme
+about-private-browsing-search-banner-description =
+    { PLATFORM() ->
+        [windows] Eiporavo hag̃ua jeheka mongu’eha ambuéva, tereho <a data-l10n-name="link-options">Jeporavorã</a>
+       *[other] Eiporavo hag̃ua jeheka mongu’eha ambuéva, tereho <a data-l10n-name="link-options">Jerohoryvéva</a>
+    }
+about-private-browsing-search-banner-close-button =
+    .aria-label = Mboty

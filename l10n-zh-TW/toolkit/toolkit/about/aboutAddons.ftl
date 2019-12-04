@@ -186,6 +186,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = 開啟
     .tooltiptext = 開啟附加元件更新安全性檢查
+extensions-warning-safe-mode = 所有附加元件於安全模式中都已停用。
+extensions-warning-check-compatibility = 已停止檢查附加元件相容性，您可能有不相容的附加元件。
+extensions-warning-check-compatibility-button = 開啟
+    .title = 開啟附加元件相容性檢查
+extensions-warning-update-security = 已停止檢查附加元件安全性，更新程式可能不安全。
+extensions-warning-update-security-button = 開啟
+    .title = 開啟附加元件更新安全性檢查
 
 ## Strings connected to add-on updates
 
@@ -195,12 +202,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = 檢視最近的更新
     .accesskey = V
+addon-updates-check-for-updates = 檢查更新
+    .accesskey = C
+addon-updates-view-updates = 檢視最近的更新
+    .accesskey = V
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = 自動更新附加元件
+    .accesskey = A
+addon-updates-update-addons-automatically = 自動更新附加元件
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -214,6 +227,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = R
 extensions-updates-reset-updates-to-manual =
     .label = 將所有附加元件設定成手動更新
+    .accesskey = R
+addon-updates-reset-updates-to-automatic = 重設所有附加元件的自動更新設定
+    .accesskey = R
+addon-updates-reset-updates-to-manual = 將所有附加元件設定成手動更新
     .accesskey = R
 
 ## Status messages displayed when updating add-ons
@@ -233,11 +250,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = 安裝更新
     .tooltiptext = 安裝此清單中可用的更新
+addon-updates-updating = 正在更新附加元件
+addon-updates-installed = 已更新您的附加元件。
+addon-updates-none-found = 找不到更新
+addon-updates-manual-updates-found = 檢視可用的更新
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = 從檔案安裝附加元件…
+    .accesskey = I
+addon-install-from-file-dialog-title = 請選擇要安裝的附加元件
+addon-install-from-file-filter-name = 附加元件
+addon-open-about-debugging = 對附加元件除錯
+    .accesskey = B
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = 管理擴充套件快速鍵
+    .accesskey = S
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = 管理擴充套件快速鍵
     .accesskey = S
 shortcuts-no-addons = 您並未啟用任何擴充套件。
 shortcuts-no-commands = 下列擴充套件沒有快速鍵:
@@ -301,6 +334,8 @@ addon-options-button =
 
 report-addon-button = 回報
 remove-addon-button = 移除
+# The link will always be shown after the other text.
+remove-addon-disabled-button = 無法移除，<a data-l10n-name="link">為什麼？</a>
 disable-addon-button = 停用
 enable-addon-button = 啟用
 expand-addon-button = 更多選項
@@ -393,3 +428,18 @@ recommended-themes-heading = 推薦的佈景主題
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = 突然有個靈感嗎？<a data-l10n-name="link">使用 Firefox Color 來打造自己的佈景主題。</a>
+
+## Page headings
+
+extension-heading = 管理您的擴充套件
+theme-heading = 管理您的佈景主題
+plugin-heading = 管理您的外掛程式
+dictionary-heading = 管理您的字典
+locale-heading = 管理您的語言套件
+updates-heading = 管理您的更新
+discover-heading = 個人化您的 { -brand-short-name }
+shortcuts-heading = 管理擴充套件快速鍵
+theme-heading-search-label = 尋找更多佈景主題
+extension-heading-search-label = 尋找更多擴充套件
+addons-heading-search-input =
+    .placeholder = 在 addons.mozilla.org 搜尋

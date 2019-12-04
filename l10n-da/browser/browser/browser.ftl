@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Gem data i vedvarende lager
 urlbar-addons-notification-anchor =
     .tooltiptext = Åbn panelet for beskeder om installering af tilføjelser
+urlbar-tip-help-icon =
+    .title = Få hjælp
+urlbar-geolocation-blocked =
+    .tooltiptext = Du har blokeret dette websteds mulighed for at se din position.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Du har blokeret beskeder fra dette websted.
+urlbar-camera-blocked =
+    .tooltiptext = Du har blokeret dit kamera for dette websted.
+urlbar-microphone-blocked =
+    .tooltiptext = Du har blokeret din mikrofon for dette websted.
+urlbar-screen-blocked =
+    .tooltiptext = Du har blokeret skærmdeling for dette websted.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Du har blokeret vedvarende lager for dette websted.
+urlbar-popup-blocked =
+    .tooltiptext = Du har blokeret pop op-vinduer for dette websted.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Du har blokeret automatisk afspilning af mediefiler med lyd for dette websted.
+urlbar-canvas-blocked =
+    .tooltiptext = Du har blokeret kanvas-ekstraktion for dette websted.
+urlbar-midi-blocked =
+    .tooltiptext = Du har blokeret MIDI-adgang for dette websted.
+urlbar-install-blocked =
+    .tooltiptext = Du har blokeret installering af tilføjelser for dette websted.
 
 ## Page Action Context Menu
 
@@ -56,3 +80,33 @@ page-action-manage-extension =
     .label = Håndter udvidelse…
 page-action-remove-from-urlbar =
     .label = Fjern fra adressefeltet
+
+## Auto-hide Context Menu
+
+full-screen-autohide =
+    .label = Skjul værktøjslinjer
+    .accesskey = S
+full-screen-exit =
+    .label = Afslut fuld skærm
+    .accesskey = A
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Søg denne gang med:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Skift søgeindstillinger
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Skift søgeindstillinger
+search-one-offs-context-open-new-tab =
+    .label = Søg i nyt faneblad
+    .accesskey = f
+search-one-offs-context-set-as-default =
+    .label = Sæt som standard-søgetjeneste
+    .accesskey = s
+search-one-offs-context-set-as-default-private =
+    .label = Sæt som standard-søgetjeneste i private vinduer
+    .accesskey = p

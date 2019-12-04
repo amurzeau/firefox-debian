@@ -178,6 +178,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = เปิดใช้งาน
     .tooltiptext = เปิดใช้งานการตรวจสอบความปลอดภัยของการอัปเดตส่วนเสริม
+extensions-warning-safe-mode = ส่วนเสริมทั้งหมดถูกปิดใช้งานโดยโหมดปลอดภัย
+extensions-warning-check-compatibility = การตรวจสอบความเข้ากันได้ของส่วนเสริมถูกปิดใช้งาน คุณอาจมีส่วนเสริมที่เข้ากันไม่ได้
+extensions-warning-check-compatibility-button = เปิดใช้งาน
+    .title = เปิดใช้งานการตรวจสอบความเข้ากันได้ของส่วนเสริม
+extensions-warning-update-security = การตรวจสอบความปลอดภัยของการอัปเดตส่วนเสริมถูกปิดใช้งาน คุณอาจถูกบุกรุกโดยการอัปเดต
+extensions-warning-update-security-button = เปิดใช้งาน
+    .title = เปิดใช้งานการตรวจสอบความปลอดภัยของการอัปเดตส่วนเสริม
 
 ## Strings connected to add-on updates
 
@@ -187,12 +194,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = ดูการอัปเดตล่าสุด
     .accesskey = ด
+addon-updates-check-for-updates = ตรวจสอบการอัปเดต
+    .accesskey = ต
+addon-updates-view-updates = ดูการอัปเดตล่าสุด
+    .accesskey = ด
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = อัปเดตส่วนเสริมโดยอัตโนมัติ
+    .accesskey = อ
+addon-updates-update-addons-automatically = อัปเดตส่วนเสริมโดยอัตโนมัติ
     .accesskey = อ
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -206,6 +219,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = ก
 extensions-updates-reset-updates-to-manual =
     .label = กลับค่าเดิมของส่วนเสริมทั้งหมดเป็นอัปเดตด้วยตนเอง
+    .accesskey = ก
+addon-updates-reset-updates-to-automatic = กลับค่าเดิมของส่วนเสริมทั้งหมดเป็นอัปเดตโดยอัตโนมัติ
+    .accesskey = ก
+addon-updates-reset-updates-to-manual = กลับค่าเดิมของส่วนเสริมทั้งหมดเป็นอัปเดตด้วยตนเอง
     .accesskey = ก
 
 ## Status messages displayed when updating add-ons
@@ -225,11 +242,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = ติดตั้งการอัปเดต
     .tooltiptext = ติดตั้งการอัปเดตที่มีในรายการนี้
+addon-updates-updating = กำลังอัปเดตส่วนเสริม
+addon-updates-installed = อัปเดตส่วนเสริมของคุณแล้ว
+addon-updates-none-found = ไม่พบการอัปเดต
+addon-updates-manual-updates-found = ดูการอัปเดตที่มี
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = ติดตั้งส่วนเสริมจากไฟล์…
+    .accesskey = ง
+addon-install-from-file-dialog-title = เลือกส่วนเสริมที่จะติดตั้ง
+addon-install-from-file-filter-name = ส่วนเสริม
+addon-open-about-debugging = ดีบั๊กส่วนเสริม
+    .accesskey = บ
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = จัดการทางลัดส่วนขยาย
+    .accesskey = จ
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = จัดการทางลัดส่วนขยาย
     .accesskey = จ
 shortcuts-no-addons = คุณไม่ได้เปิดใช้งานส่วนขยายใด ๆ
 shortcuts-no-commands = ส่วนขยายดังต่อไปนี้ไม่มีทางลัด:
@@ -365,3 +398,17 @@ recommended-themes-heading = ชุดตกแต่งที่แนะนำ
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = รู้สึกสร้างสรรค์ใช่ไหม? <a data-l10n-name="link">สร้างชุดตกแต่งในรูปแบบของคุณเองด้วย Firefox Color</a>
+
+## Page headings
+
+extension-heading = จัดการส่วนขยายของคุณ
+theme-heading = จัดการชุดตกแต่งของคุณ
+plugin-heading = จัดการปลั๊กอินของคุณ
+dictionary-heading = จัดการพจนานุกรมของคุณ
+locale-heading = จัดการภาษาของคุณ
+discover-heading = ปรับแต่ง { -brand-short-name } ของคุณ
+shortcuts-heading = จัดการทางลัดส่วนขยาย
+theme-heading-search-label = ค้นหาชุดตกแต่งเพิ่มเติม
+extension-heading-search-label = ค้นหาส่วนขยายเพิ่มเติม
+addons-heading-search-input =
+    .placeholder = ค้นหา addons.mozilla.org

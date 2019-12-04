@@ -14,6 +14,11 @@ pref-page =
             [windows] ตัวเลือก
            *[other] ค่ากำหนด
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] ตัวเลือก
+       *[other] ค่ากำหนด
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -270,6 +275,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = ใช้ { $plugin-name } (ใน { -brand-short-name })
@@ -295,7 +304,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = เนื้อหา Digital Rights Management (DRM)
 play-drm-content =
@@ -445,7 +454,6 @@ choose-bookmark =
 
 home-prefs-content-header = เนื้อหาหน้าแรก Firefox
 home-prefs-content-description = เลือกเนื้อหาที่คุณต้องการในหน้าจอหน้าแรก Firefox ของคุณ
-home-prefs-content-discovery-description = Content Discovery ใน Firefox Home ช่วยให้คุณค้นพบบทความที่มีคุณภาพและมีความเกี่ยวข้องสูงจากทั่วทั้งเว็บ
 home-prefs-search-header =
     .label = การค้นหาเว็บ
 home-prefs-topsites-header =
@@ -489,7 +497,8 @@ search-bar-shown =
     .label = เพิ่มแถบค้นหาในแถบเครื่องมือ
 search-engine-default-header = เครื่องมือค้นหาเริ่มต้น
 search-engine-default-desc = เลือกเครื่องมือค้นหาเริ่มต้นที่จะใช้ในแถบที่อยู่และแถบค้นหา
-search-engine-default-private-desc = เลือกเครื่องมือค้นหาเริ่มต้นเพื่อใช้ในหน้าต่างส่วนตัว
+search-engine-default-desc-2 = นี่คือเครื่องมือค้นหาเริ่มต้นของคุณในแถบที่อยู่และแถบค้นหา คุณสามารถเปลี่ยนได้ตลอดเวลา
+search-engine-default-private-desc-2 = เลือกเครื่องมือค้นหาเริ่มต้นอื่นสำหรับเฉพาะหน้าต่างส่วนตัว
 search-separate-default-engine =
     .label = ใช้เครื่องมือค้นหานี้ในหน้าต่างส่วนตัว
     .accesskey = U
@@ -508,6 +517,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = แสดงข้อเสนอแนะการค้นหานำหน้าประวัติการเรียกดูในผลลัพธ์ของแถบที่อยู่
+search-show-suggestions-private-windows =
+    .label = แสดงคำแนะนำการค้นหาในหน้าต่างส่วนตัว
 suggestions-addressbar-settings = เปลี่ยนค่ากำหนดสำหรับประวัติการท่องเว็บ ที่คั่นหน้า และแท็บแนะนำ
 search-suggestions-cant-show = ข้อเสนอแนะการค้นหาจะไม่แสดงในผลลัพธ์ของแถบตำแหน่งที่ตั้งเนื่องจากคุณได้กำหนดค่า { -brand-short-name } ให้ไม่จดจำประวัติเสมอ
 search-one-click-header = เครื่องมือค้นหาในคลิกเดียว
@@ -624,6 +635,9 @@ sync-currently-syncing-prefs =
         [windows] ตัวเลือก
        *[other] ค่ากำหนด
     }
+sync-change-options =
+    .label = เปลี่ยน…
+    .accesskey = ป
 
 ## The "Choose what to sync" dialog.
 
@@ -696,6 +710,9 @@ sync-fxa-privacy-notice = ประกาศความเป็นส่วน
 privacy-header = ความเป็นส่วนตัวเบราว์เซอร์
 
 ## Privacy Section - Forms
+
+
+## Privacy Section - Logins and Passwords
 
 logins-header = การเข้าสู่ระบบและรหัสผ่าน
 forms-ask-to-save-logins =
@@ -865,7 +882,7 @@ enhanced-tracking-protection-setting-custom =
     .label = กำหนดเอง
     .accesskey = ก
 
-
+##
 
 content-blocking-etp-standard-desc = การป้องกันและประสิทธิภาพแบบสมดุล หน้าเว็บจะโหลดเป็นปกติ
 content-blocking-etp-strict-desc = การป้องกันที่แกร่งขึ้น แต่อาจทำให้บางไซต์หรือเนื้อหาหยุดทำงานได้

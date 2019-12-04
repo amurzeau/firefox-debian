@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = egilea: { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Gomendioa
+cfr-doorhanger-extension-notification2 = Gomendioa
+    .tooltiptext = Hedapenaren gomendioa
+    .a11y-announcement = Hedapenaren gomendioa erabilgarri dago
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Gomendioa
+    .tooltiptext = Eginbidearen gomendioa
+    .a11y-announcement = Eginbidearen gomendioa erabilgarri dago
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -78,6 +86,9 @@ cfr-protections-panel-link-text = Argibide gehiago
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Eginbide berria:
 cfr-whatsnew-button =
     .label = Nobedadeak
     .tooltiptext = Nobedadeak
@@ -86,7 +97,17 @@ cfr-whatsnew-release-notes-link-text = Irakurri bertsio-oharrak
 cfr-whatsnew-fx70-title = { -brand-short-name }(e)k zure pribatutasunarengatik gogorrago egiten du borrokan orain
 cfr-whatsnew-fx70-body = Azken eguneraketak jarraipenaren babesaren eginbidea hobetzen du eta inoiz baino gehiago errazten du gune bakoitzerako pasahitzak sortzea.
 cfr-whatsnew-tracking-protect-title = Babestu zure burua jarraipen-elementuetatik
+cfr-whatsnew-tracking-protect-body = Zure jarraipena egiten duten sare sozialetako eta guneen arteko ohiko elementuak blokeatzen ditu orain { -brand-short-name }(e)k.
 cfr-whatsnew-tracking-protect-link-text = Ikusi zure txostena
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+        [one] Blokeatutako elementua
+       *[other] Blokeatutako elementuak
+    }
+cfr-whatsnew-tracking-blocked-subtitle = Data honetatik: { DATETIME($earliestDate, month: "long", year: "numeric") }
 cfr-whatsnew-tracking-blocked-link-text = Ikusi txostena
 cfr-whatsnew-lockwise-backup-title = Egin zure pasahitzen babeskopia
 cfr-whatsnew-lockwise-backup-body = Sortu saioa hasi behar duzun toki orotan atzi ditzakezun pasahitz seguruak.
@@ -123,3 +144,31 @@ cfr-doorhanger-firefox-send-header = Partekatu PDF hau modu seguruan
 cfr-doorhanger-firefox-send-body = Mantendu zure dokumentu sentikorrak kuxkuxeroengandik seguru muturretik muturrerako zifraketarekin eta erabili ondoren desagertzen den lotura batekin.
 cfr-doorhanger-firefox-send-ok-button = Probatu { -send-brand-name }
     .accesskey = P
+
+## Social Tracking Protection
+
+cfr-doorhanger-socialtracking-ok-button = Ikusi babesak
+    .accesskey = k
+cfr-doorhanger-socialtracking-close-button = Itxi
+    .accesskey = x
+cfr-doorhanger-socialtracking-dont-show-again = Ez erakutsi honelako mezu gehiago
+    .accesskey = z
+cfr-doorhanger-socialtracking-heading = Sare sozial batek zure jarraipena egitea eragotzi du { -brand-short-name }(e)k
+cfr-doorhanger-socialtracking-description = Garrantzitsua da zure pribatutasuna. Sare sozialetako ohiko jarraipen-elementuak blokeatzen ditu orain { -brand-short-name }(e)k, zure lineako jarduerari buruz bil ditzaketen datuak mugatuz.
+cfr-doorhanger-fingerprinters-heading = Hatz-marka bidezko jarraipena blokeatu du orri honetan { -brand-short-name }(e)k
+cfr-doorhanger-fingerprinters-description = Garrantzitsua da zure pribatutasuna. Hatz-marka bidezko jarraipena blokeatzen du orain { -brand-short-name }(e)k, zeinak zure gailuari buruzko identifikazio bakarreko datuak biltzen dituen zure jarraipena egiteko.
+cfr-doorhanger-cryptominers-heading = Kriptomeatzari bat blokeatu du orri honetan { -brand-short-name }(e)k
+cfr-doorhanger-cryptominers-description = Garrantzitsua da zure pribatutasuna. Kriptomeatzariak blokeatzen ditu orain { -brand-short-name }(e)k, zeinak zure sistemaren konputazio-ahalmena erabiltzen duten diru digitala ustiatzeko.
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+        [one] { -brand-short-name }(e)k <b>{ $blockedCount }</b> jarraipen-elementu baino gehiago blokeatu ditu data honetatik aurrera: { $date }
+       *[other] { -brand-short-name }(e)k <b>{ $blockedCount }</b> jarraipen-elementu baino gehiago blokeatu ditu data honetatik aurrera: { $date }
+    }
+cfr-doorhanger-milestone-ok-button = Ikusi guztiak
+    .accesskey = I

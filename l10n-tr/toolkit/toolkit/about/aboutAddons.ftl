@@ -187,6 +187,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Etkinleştir
     .tooltiptext = Eklenti güncelleme güvenliği denetimini devreye sok
+extensions-warning-safe-mode = Tüm eklentiler güvenli kipte devre dışı bırakıldı.
+extensions-warning-check-compatibility = Eklenti uyumluluk denetimi devre dışı. Uyumsuz eklentileriniz olabilir.
+extensions-warning-check-compatibility-button = Etkinleştir
+    .title = Eklenti uyumluluk denetimini devreye sok
+extensions-warning-update-security = Eklenti güncelleme güvenliği denetimi devre dışı. Güncellemelerle tehlikeye düşebilirsiniz.
+extensions-warning-update-security-button = Etkinleştir
+    .title = Eklenti güncelleme güvenliği denetimini devreye sok
 
 ## Strings connected to add-on updates
 
@@ -196,12 +203,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = En son güncellemelere bak
     .accesskey = b
+addon-updates-check-for-updates = Güncellemeleri denetle
+    .accesskey = G
+addon-updates-view-updates = En son güncellemelere bak
+    .accesskey = b
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Eklentileri kendiliğinden güncelle
+    .accesskey = n
+addon-updates-update-addons-automatically = Eklentileri kendiliğinden güncelle
     .accesskey = n
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -215,6 +228,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = a
 extensions-updates-reset-updates-to-manual =
     .label = Tüm eklentileri elle güncellenecek şekilde ayarla
+    .accesskey = a
+addon-updates-reset-updates-to-automatic = Tüm eklentileri kendiliğinden güncellenecek şekilde ayarla
+    .accesskey = a
+addon-updates-reset-updates-to-manual = Tüm eklentileri elle güncellenecek şekilde ayarla
     .accesskey = a
 
 ## Status messages displayed when updating add-ons
@@ -234,11 +251,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Güncellemeleri kur
     .tooltiptext = Bu listedeki mevcut güncellemeleri kur
+addon-updates-updating = Eklentiler güncelleniyor
+addon-updates-installed = Eklentileriniz güncellendi.
+addon-updates-none-found = Güncelleme bulunamadı
+addon-updates-manual-updates-found = Yüklenebilir güncellemelere bak
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Dosyadan eklenti kur...
+    .accesskey = k
+addon-install-from-file-dialog-title = Kurulacak eklentiyi seçin
+addon-install-from-file-filter-name = Eklentiler
+addon-open-about-debugging = Eklentilerde hata ayıkla
+    .accesskey = h
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Eklenti kısayollarını yönet
+    .accesskey = E
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Eklenti kısayollarını yönet
     .accesskey = E
 shortcuts-no-addons = Herhangi bir eklentiyi etkinleştirmediniz.
 shortcuts-no-commands = Aşağıdaki eklentilerin kısayolları yok:
@@ -305,6 +338,8 @@ addon-options-button =
 
 report-addon-button = Şikâyet et
 remove-addon-button = Kaldır
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Kaldırılamıyor <a data-l10n-name="link">Neden?</a>
 disable-addon-button = Etkisizleştir
 enable-addon-button = Etkinleştir
 expand-addon-button = Diğer seçenekler
@@ -398,3 +433,18 @@ recommended-themes-heading = Önerilen temalar
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Yaratıcı gününüzde misiniz? <a data-l10n-name="link">Firefox Color ile kendi temanızı oluşturun.</a>
+
+## Page headings
+
+extension-heading = Eklentilerinizi yönetin
+theme-heading = Temalarınızı yönetin
+plugin-heading = Yan uygulamalarınızı yönetin
+dictionary-heading = Sözlüklerinizi yönetin
+locale-heading = Dillerinizi yönetin
+updates-heading = Güncellemelerinizi yönetin
+discover-heading = { -brand-short-name } tarayıcınızı kişiselleştirin
+shortcuts-heading = Eklenti kısayollarını yönet
+theme-heading-search-label = Daha fazla tema bul
+extension-heading-search-label = Daha fazla eklenti bul
+addons-heading-search-input =
+    .placeholder = addons.mozilla.org’da ara

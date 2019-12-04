@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = bởi { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Đề xuất
+cfr-doorhanger-extension-notification2 = Đề xuất
+    .tooltiptext = Tiện ích được đề xuất
+    .a11y-announcement = Tiện ích được đề xuất có sẵn
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Đề xuất
+    .tooltiptext = Tính năng được đề xuất
+    .a11y-announcement = Tính năng được đề xuất có sẵn
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -76,6 +84,9 @@ cfr-protections-panel-link-text = Tìm hiểu thêm
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Tính năng mới:
 cfr-whatsnew-button =
     .label = Có gì mới
     .tooltiptext = Có gì mới
@@ -143,9 +154,23 @@ cfr-doorhanger-socialtracking-ok-button = Xem mục bảo vệ
     .accesskey = P
 cfr-doorhanger-socialtracking-close-button = Đóng
     .accesskey = C
+cfr-doorhanger-socialtracking-dont-show-again = Đừng hiện cho tôi những tin này nữa
+    .accesskey = D
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } đã dừng mạng xã hội mà nó theo dõi bạn tại đây
 cfr-doorhanger-socialtracking-description = Vấn đề riêng tư của bạn. { -brand-short-name } hiện chặn các trình theo dõi phương tiện truyền thông xã hội phổ biến, giới hạn số lượng dữ liệu họ có thể thu thập về những gì bạn làm trực tuyến.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } đã chặn một dấu vân tay trên trang này
 cfr-doorhanger-fingerprinters-description = Vấn đề riêng tư của bạn. { -brand-short-name } hiện chặn các dấu vân tay, mà nó thu thập các mẫu thông tin nhận dạng duy nhất về thiết bị của bạn để theo dõi bạn.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } đã chặn một loại tiền điện tử trên trang này
 cfr-doorhanger-cryptominers-description = Vấn đề riêng tư của bạn. { -brand-short-name } hiện chặn các loại tiền điện tử, mà nó sử dụng sức mạnh tính toán của hệ thống của bạn để khai thác tiền kỹ thuật số.
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+       *[other] { -brand-short-name } đã chặn hơn <b>{ $blockedCount }</b> trình theo dõi từ { $date }!
+    }
+cfr-doorhanger-milestone-ok-button = Xem tất cả
+    .accesskey = S

@@ -14,6 +14,11 @@ pref-page =
             [windows] Tùy chọn
            *[other] Tùy chỉnh
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Tùy chọn
+       *[other] Tùy chỉnh
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -270,6 +275,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Dùng { $plugin-name } (trong { -brand-short-name })
@@ -445,7 +454,6 @@ choose-bookmark =
 
 home-prefs-content-header = Nội dung trang chủ của Firefox
 home-prefs-content-description = Chọn nội dung mà bạn muốn thêm vào trang chủ của Firefox.
-home-prefs-content-discovery-description = Khám phá nội dung trong trang chủ Firefox cho phép bạn khám phá các bài viết chất lượng cao, có liên quan trên web.
 home-prefs-search-header =
     .label = Tìm kiếm web
 home-prefs-topsites-header =
@@ -489,6 +497,13 @@ search-bar-shown =
     .label = Thêm thanh tìm kiếm vào thanh công cụ
 search-engine-default-header = Dịch vụ tìm kiếm mặc định
 search-engine-default-desc = Chọn công cụ tìm kiếm mặc định để sử dụng trong thanh địa chỉ và thanh tìm kiếm.
+search-engine-default-desc-2 = Đây là công cụ tìm kiếm mặc định của bạn trong thanh địa chỉ và thanh tìm kiếm. Bạn có thể chuyển đổi bất cứ lúc nào.
+search-engine-default-private-desc-2 = Chọn một công cụ tìm kiếm mặc định khác chỉ dành cho cửa sổ riêng tư
+search-separate-default-engine =
+    .label = Sử dụng công cụ tìm kiếm này trong cửa sổ riêng tư
+    .accesskey = U
+search-suggestions-header = Đề xuất tìm kiếm
+search-suggestions-desc = Chọn cách đề xuất từ các công cụ tìm kiếm xuất hiện.
 search-suggestions-option =
     .label = Tự động đề nghị từ khóa tìm kiếm
     .accesskey = n
@@ -502,6 +517,9 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Hiện những gợi ý tìm kiếm phía trước lịch sử duyệt web trong kết quả thanh địa chỉ
+search-show-suggestions-private-windows =
+    .label = Hiển thị đề xuất tìm kiếm trong cửa sổ riêng tư
+suggestions-addressbar-settings = Thay đổi tùy chọn cho lịch sử duyệt web, dấu trang và đề xuất thẻ
 search-suggestions-cant-show = Gợi ý tìm kiếm sẽ không được hiện ở thanh địa chỉ vì bạn đã thiết lập { -brand-short-name } không bao giờ ghi nhớ lịch sử.
 search-one-click-header = Công cụ tìm kiếm với một lần nhấn
 search-one-click-desc = Chọn các công cụ tìm kiếm thay thế xuất hiện bên dưới thanh địa chỉ và thanh tìm kiếm khi bạn bắt đầu nhập một từ khoá.
@@ -550,6 +568,9 @@ sync-signedout-account-create = Bạn chưa có tài khoản? Bắt đầu
 sync-signedout-account-signin =
     .label = Đăng nhập…
     .accesskey = I
+sync-signedout-account-signin2 =
+    .label = Đăng nhập vào { -sync-brand-short-name }…
+    .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -617,6 +638,9 @@ sync-currently-syncing-prefs =
         [windows] Tùy chọn
        *[other] Tùy chỉnh
     }
+sync-change-options =
+    .label = Thay đổi…
+    .accesskey = C
 
 ## The "Choose what to sync" dialog.
 
@@ -690,7 +714,11 @@ privacy-header = Duyệt web riêng tư
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Đăng nhập & mật khẩu
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Hỏi để lưu lại thông tin đăng nhập và mật khẩu cho trang web
     .accesskey = r
@@ -704,6 +732,7 @@ forms-breach-alerts =
     .label = Hiển thị cảnh báo về mật khẩu cho các trang web bị rò rỉ
     .accesskey = b
 forms-breach-alerts-learn-more-link = Tìm hiểu thêm
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Tự động điền đăng nhập và mật khẩu
     .accesskey = i

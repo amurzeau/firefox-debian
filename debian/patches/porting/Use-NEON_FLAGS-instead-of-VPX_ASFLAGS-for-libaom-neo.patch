@@ -7,10 +7,10 @@ Subject: Use NEON_FLAGS instead of VPX_ASFLAGS for libaom neon code
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/media/libaom/moz.build b/media/libaom/moz.build
-index 5f169b39418d..8624607424ee 100644
+index 2dec3de4581c..509dbd0df2ce 100644
 --- a/media/libaom/moz.build
 +++ b/media/libaom/moz.build
-@@ -65,7 +65,7 @@ elif CONFIG['CPU_ARCH'] == 'arm':
+@@ -55,7 +55,7 @@ elif CONFIG['CPU_ARCH'] == 'arm':
  
      for f in SOURCES:
          if f.endswith('neon.c'):

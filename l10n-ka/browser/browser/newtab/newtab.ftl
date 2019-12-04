@@ -83,6 +83,21 @@ newtab-menu-delete-history = ისტორიიდან ამოშლა
 newtab-menu-save-to-pocket = { -pocket-brand-name }-ში შენახვა
 newtab-menu-delete-pocket = წაშლა { -pocket-brand-name }-იდან
 newtab-menu-archive-pocket = დაარქივება { -pocket-brand-name }-ში
+newtab-menu-show-privacy-info = ჩვენი დამფინანსებლები და თქვენი პირადულობა
+
+## Message displayed in a modal window to explain privacy and provide context for sponsored content.
+
+newtab-privacy-modal-button-done = მზადაა
+newtab-privacy-modal-header = თქვენი პირადულობა უმნიშვნელოვანესია.
+newtab-privacy-modal-paragraph =
+    გარდა საინტერესო ამბებისა, ჩვენ ასევე გიჩვენებთ მნიშვნელოვან, ღირებულ
+    მასალას შერჩეული მხარდამჭერებისგან. შეგიძლიათ მშვიდად იყოთ, თქვენ მიერ ნანახ
+    მონაცემებს, მხოლოდ ინახავს თქვენი კუთვნილი { -brand-product-name }  — ვერც ჩვენ და ვერც
+    ჩვენი მხარდამჭერები ვერ იხილავს მათ.
+newtab-privacy-modal-link = იხილეთ, როგორ მუშაობს პირადი მონაცემების უსაფრთხოება ახალ ჩანართზე
+
+
+
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = სანიშნებიდან ამოშლა
 # Bookmark is a verb here.

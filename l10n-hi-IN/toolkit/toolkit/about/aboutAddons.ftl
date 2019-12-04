@@ -130,9 +130,6 @@ legacy-warning-show-legacy = पुराने हो चुके एक्स
 legacy-extensions =
     .value = पुराने एक्सटेंशन
 legacy-extensions-description = ये एक्सटेंशन मौजूदा { -brand-short-name } मानकों को पूरा नहीं करते, सो उन्हें निष्क्रिय कर दिया गया हैं. <label data-l10n-name="legacy-learn-more">ऐड-ऑन में हुए बदलावों के बारे में जानें</label>
-extensions-view-discover =
-    .name = सहयुक्तियाँ पाएँ
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-recent-updates =
     .name = हालिया अद्यतन
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -160,6 +157,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = सक्रिय करें
     .tooltiptext = सहयुक्ति अद्यतन सुरक्षा जाँच सक्रिय करें
+extensions-warning-safe-mode = सभी सहयुक्तियाँ सुरक्षित विधि के द्वारा निष्क्रिय की गई हैं.
+extensions-warning-check-compatibility = सहयुक्ति सुसंगतता जाँच निष्क्रिय है. आपके पास असंगत सहयुक्तियाँ हो सकती हैं.
+extensions-warning-check-compatibility-button = सक्रिय करें
+    .title = सहयुक्ति सुसंगतता जाँच सक्रिय करें
+extensions-warning-update-security = सहयुक्ति अद्यतन सुरक्षा जाँच निष्क्रिय है. आपकी सुरक्षा अद्यतन के द्वारा संदिग्ध हो सकती है.
+extensions-warning-update-security-button = सक्रिय करें
+    .title = सहयुक्ति अद्यतन सुरक्षा जाँच सक्रिय करें
 
 ## Strings connected to add-on updates
 
@@ -169,12 +173,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = हालिया अद्यतन देखें
     .accesskey = V
+addon-updates-check-for-updates = अद्यतन की जाँच करें
+    .accesskey = C
+addon-updates-view-updates = हालिया अद्यतन देखें
+    .accesskey = V
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = सहयुक्तियाँ स्वतः अद्यतन करें
+    .accesskey = A
+addon-updates-update-addons-automatically = सहयुक्तियाँ स्वतः अद्यतन करें
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -188,6 +198,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = R
 extensions-updates-reset-updates-to-manual =
     .label = दस्ती रूप से अद्यतन करने के लिए सभी सहयुक्तियाँ फिर सेट करें
+    .accesskey = R
+addon-updates-reset-updates-to-automatic = अद्यतन स्वतः करने के लिए सभी सहयुक्तियाँ फिर सेट करें
+    .accesskey = R
+addon-updates-reset-updates-to-manual = दस्ती रूप से अद्यतन करने के लिए सभी सहयुक्तियाँ फिर सेट करें
     .accesskey = R
 
 ## Status messages displayed when updating add-ons
@@ -207,11 +221,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = अद्यतन संस्थापित करें
     .tooltiptext = इस सूची में उपलब्ध अद्यतन संस्थापित करें
+addon-updates-updating = सहयुक्तियाँ अद्यतन कर रहा है
+addon-updates-installed = आपकी सहयुक्तियाँ अद्यतन की जा चुकी हैं.
+addon-updates-none-found = कोई अद्यतन नहीं मिला
+addon-updates-manual-updates-found = उपलब्ध अद्यतन देखें
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = फ़ाइल से सहयुक्ति संस्थापित करें…
+    .accesskey = I
+addon-install-from-file-dialog-title = संस्थापित करने के लिए सहयुक्ति चुनें
+addon-install-from-file-filter-name = सहयुक्तियाँ
+addon-open-about-debugging = सहयुक्ति दोषसुधार
+    .accesskey = b
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = एक्सटेंशन शॉर्टकट प्रबंधित करें
+    .accesskey = S
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = एक्सटेंशन शॉर्टकट प्रबंधित करें
     .accesskey = S
 shortcuts-no-addons = आपके पास कोई एक्सटेंशन सक्रिय नहीं है।
 shortcuts-input =
@@ -249,3 +279,8 @@ addon-detail-rating-label = रेटिंग
 
 addon-detail-updates-radio-on = चालू
 addon-detail-updates-radio-off = बंद
+
+## Page headings
+
+addons-heading-search-input =
+    .placeholder = addons.mozilla.org खोजें

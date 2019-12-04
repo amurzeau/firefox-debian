@@ -15,6 +15,7 @@ certificate-viewer-algorithm = Algoritmo
 certificate-viewer-certificate-authority = Autorità di certificazione
 certificate-viewer-cipher-suite = Suite di cifratura
 certificate-viewer-common-name = Nome comune
+certificate-viewer-email-address = Indirizzo email
 # Inc. means Incorporated, e.g GitHub is incorporated in Delaware
 certificate-viewer-inc-country = Paese di costituzione
 certificate-viewer-country = Paese
@@ -27,7 +28,7 @@ certificate-viewer-key-exchange-group = Gruppo per scambio di chiavi
 certificate-viewer-key-id = ID chiave
 certificate-viewer-key-size = Dimensione chiave
 certificate-viewer-locality = Località
-certificate-viewer-location = Posizione
+certificate-viewer-location = Indirizzo
 certificate-viewer-logid = ID log
 certificate-viewer-method = Metodo
 certificate-viewer-modulus = Modulo

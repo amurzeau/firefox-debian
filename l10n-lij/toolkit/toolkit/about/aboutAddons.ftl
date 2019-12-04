@@ -137,9 +137,6 @@ legacy-warning-show-legacy = Amia estenscioin legacy
 legacy-extensions =
     .value = Estenscioin Legacy
 legacy-extensions-description = Ste estenscioin no va ben co-i corenti standard de { -brand-short-name } coscì en stæti dizativæ. <label data-l10n-name="legacy-learn-more">Pe saveine de ciù in sci conponenti azonti</label>
-extensions-view-discover =
-    .name = Scarega conponenti azonti
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-recent-updates =
     .name = Urtimi agiornamenti
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -167,6 +164,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Abilita
     .tooltiptext = Abilita o contròllo de seguessa in sci agiornamenti di conponenti azonti
+extensions-warning-safe-mode = Tutti i conponenti azonti son stæti dizabilitæ da o moddo seguo.
+extensions-warning-check-compatibility = O contròllo de conpatibilitæ di conponenti azonti l'é dizabilita. Ti peu avei di conponenti azonti no conpatibili.
+extensions-warning-check-compatibility-button = Abilita
+    .title = Abilita o contròllo a conpatibilitæ di conponenti azonti
+extensions-warning-update-security = O contròllo de seguessa in sci agiornamenti di conponenti azonti o l'é dizabilitou. Te peu capitâ de ese aroinou da i agiornamenti.
+extensions-warning-update-security-button = Abilita
+    .title = Abilita o contròllo de seguessa in sci agiornamenti di conponenti azonti
 
 ## Strings connected to add-on updates
 
@@ -176,12 +180,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Fanni vedde i urtimi agiornamenti
     .accesskey = v
+addon-updates-check-for-updates = Çerca agiornamenti
+    .accesskey = c
+addon-updates-view-updates = Fanni vedde i urtimi agiornamenti
+    .accesskey = v
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Agiorna i conponenti azonti in aotomatico
+    .accesskey = A
+addon-updates-update-addons-automatically = Agiorna i conponenti azonti in aotomatico
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -195,6 +205,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = R
 extensions-updates-reset-updates-to-manual =
     .label = Reinpòsta tutti i conponenti azonti pe agiornali a man
+    .accesskey = R
+addon-updates-reset-updates-to-automatic = Reinpòsta tutti i conponenti azonti pe agiornali in aotomatico
+    .accesskey = R
+addon-updates-reset-updates-to-manual = Reinpòsta tutti i conponenti azonti pe agiornali a man
     .accesskey = R
 
 ## Status messages displayed when updating add-ons
@@ -214,11 +228,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Installa Agiornamento
     .tooltiptext = Installa i Agiornamenti da lista
+addon-updates-updating = Agiorno i conponenti azonti
+addon-updates-installed = I teu conponenti azonti son stæti agiornæ.
+addon-updates-none-found = Nisciun agiornamento trovou
+addon-updates-manual-updates-found = Fanni vedde i agiornamenti disponibili
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Installa i conponenti azonti da 'n schedaio…
+    .accesskey = I
+addon-install-from-file-dialog-title = Seleçionn-a i conponenti da instalâ
+addon-install-from-file-filter-name = Conponenti azonti
+addon-open-about-debugging = Debug di conponenti azonti
+    .accesskey = B
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Gestisci scorsaeiu de estenscioin
+    .accesskey = G
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Gestisci scorsaeiu de estenscioin
     .accesskey = G
 shortcuts-input =
     .placeholder = Inserisci 'n scorsaieu
@@ -247,8 +277,22 @@ remove-addon-button = Scancella
 disable-addon-button = Dizabilita
 enable-addon-button = Abilita
 expand-addon-button = Ciù inpostaçioin
+permissions-addon-button = Permissi
 addons-enabled-heading = Ativou
 addons-disabled-heading = Dizativou
 
 ## Pending uninstall message bar
 
+
+## Page headings
+
+extension-heading = Gestisci estenscioin
+theme-heading = Gestisci i Temi
+plugin-heading = Gestisci i plugin
+dictionary-heading = Gestisci i diçionai
+locale-heading = Gestisci e lengoe
+shortcuts-heading = Gestisci scorsaeiu de estenscioin
+theme-heading-search-label = Treuva atri temi
+extension-heading-search-label = Treuva atre estenscioin
+addons-heading-search-input =
+    .placeholder = Çerca in addons.mozilla.org

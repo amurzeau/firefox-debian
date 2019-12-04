@@ -14,6 +14,11 @@ pref-page =
             [windows] Innstillingar
            *[other] Innstillingar
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Innstillingar
+       *[other] Innstillingar
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -282,6 +287,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Bruk { $plugin-name } (i { -brand-short-name })
@@ -457,7 +466,6 @@ choose-bookmark =
 
 home-prefs-content-header = Innhald på: Firefox-startside
 home-prefs-content-description = Vel kva for innhald du vil ha på Firefox-startsida di.
-home-prefs-content-discovery-description = Innhaldsoppdaging på Firefox startside lèt deg oppdage relevante artiklar av høg kvalitet frå nettet.
 home-prefs-search-header =
     .label = Nettsøk
 home-prefs-topsites-header =
@@ -505,7 +513,8 @@ search-bar-shown =
     .label = Legg til søkjelinje i verktøylinja
 search-engine-default-header = Standard søkjemotor
 search-engine-default-desc = Vel standardsøkjemotor som skal brukast i adresselinja og søkelinja.
-search-engine-default-private-desc = Vel kva for søkjemotor du vil bruke i private vindauge.
+search-engine-default-desc-2 = Dette er standardsøkemotoren din i adresselinja og søkelinja. Du kan byte når som helst.
+search-engine-default-private-desc-2 = Vel ein annan standardsøkjemotor berre for private vindauge
 search-separate-default-engine =
     .label = Bruk denne søkjemotoren i private vindauge
     .accesskey = u
@@ -524,6 +533,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Vis søkjeforslag før nettlesarhistorikk i adressefeltresultata
+search-show-suggestions-private-windows =
+    .label = Vel søkjeforslag i private vindauge
 suggestions-addressbar-settings = Endre innstillingar for nettlesarhistorikk, bokmerke og faneforslag
 search-suggestions-cant-show = Søkjeforslag vil ikkje visast i adresselinjeresultata fordi du har konfigurert { -brand-short-name } til å aldri hugse historikk.
 search-one-click-header = Eittklikks-søkjemotorar
@@ -572,6 +583,9 @@ sync-signedout-account-create = Har du ikkje ein konto? Kom i gang
     .accesskey = H
 sync-signedout-account-signin =
     .label = Logg inn…
+    .accesskey = i
+sync-signedout-account-signin2 =
+    .label = Logg inn på { -sync-brand-short-name }…
     .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -716,7 +730,11 @@ privacy-header = Nettlesarpersonvern
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Innloggingar og passord
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Spør om å lagre innloggingar og passord for nettsider
     .accesskey = i
@@ -730,6 +748,7 @@ forms-breach-alerts =
     .label = Vis varsel om passord for datalekkasjar på nettstadar
     .accesskey = p
 forms-breach-alerts-learn-more-link = Les meir
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Autoutfyll innloggingar og passord
     .accesskey = i

@@ -35,6 +35,16 @@ urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Bestuur die deel van die kamera en/of mikrofoon met die werf
 urlbar-addons-notification-anchor =
     .tooltiptext = Open paneel met boodskappe oor byvoeginginstallasie
+urlbar-geolocation-blocked =
+    .tooltiptext = U het ligginginligting geblok vir dié webwerf.
+urlbar-web-notifications-blocked =
+    .tooltiptext = U het kennisgewings geblok vir dié webwerf.
+urlbar-camera-blocked =
+    .tooltiptext = U het die kamera geblok vir dié webwerf.
+urlbar-microphone-blocked =
+    .tooltiptext = U het die mikrofoon geblok vir dié webwerf.
+urlbar-screen-blocked =
+    .tooltiptext = U het dié webwerf geblok om die skerm te deel.
 
 ## Page Action Context Menu
 
@@ -46,4 +56,19 @@ full-screen-autohide =
     .accesskey = V
 full-screen-exit =
     .label = Sluit volskermmodus af
+    .accesskey = v
+
+## Search Engine selection buttons (one-offs)
+
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Verander soekinstellings
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Verander soekinstellings
+search-one-offs-context-open-new-tab =
+    .label = Soek in nuwe oortjie
+    .accesskey = t
+search-one-offs-context-set-as-default =
+    .label = Stel as verstek-soekenjin
     .accesskey = v

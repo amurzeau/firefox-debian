@@ -41,6 +41,24 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = डाटालाई लगातार भण्डारणमा राख्नुहोस्
 urlbar-addons-notification-anchor =
     .tooltiptext = एडअन स्थापना सन्देश प्यानल खोल्नुहोस्
+urlbar-geolocation-blocked =
+    .tooltiptext = तपाईँले यो वेबसाइटको लागि स्थान जानकारी अवरुद्ध गर्नु भएको छ।
+urlbar-web-notifications-blocked =
+    .tooltiptext = तपाईँले यो वेबसाइटको लागि सूचनाहरू अवरुद्ध गर्नु भएको छ।
+urlbar-camera-blocked =
+    .tooltiptext = तपाईँले यो वेबसाइटको लागि आफ्नो क्यामेरा अवरुद्ध गर्नु भएको छ
+urlbar-microphone-blocked =
+    .tooltiptext = तपाईँले यो वेबसाइटको लागि आफ्नो माइक्रोफोन अवरुद्ध गर्नु भएको छ
+urlbar-screen-blocked =
+    .tooltiptext = तपाईँले यो वेबसाइटलाई आफ्नो स्क्रिन साझा गर्न अवरुद्ध गर्नु भएको छ।
+urlbar-persistent-storage-blocked =
+    .tooltiptext = तपाईँले यो वेबसाइटको लागि लगातार भण्डारण अवरुद्ध गर्नु भएको छ।
+urlbar-popup-blocked =
+    .tooltiptext = तपाईँले यो वेबसाइटको लागि पपअप अवरुद्ध गर्नु भएको छ|
+urlbar-canvas-blocked =
+    .tooltiptext = तपाईँले यो वेबसाइटको लागि क्यानभस डाटाको निकास अवरुद्ध गर्नु भएको छ।
+urlbar-midi-blocked =
+    .tooltiptext = तपाईँले यो वेबसाइटको लागि MIDI अवरुद्ध गर्नु भएको छ।
 
 ## Page Action Context Menu
 
@@ -59,3 +77,18 @@ full-screen-autohide =
 full-screen-exit =
     .label = पूरा पर्दा बन्द गर्नुहोस्
     .accesskey = F
+
+## Search Engine selection buttons (one-offs)
+
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = खोज सेटिङ परिवर्तन गर्नुहोस्
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = खोज सेटिङ परिवर्तन गर्नुहोस्
+search-one-offs-context-open-new-tab =
+    .label = नयाँ ट्याबमा खोज्नुहोस्
+    .accesskey = T
+search-one-offs-context-set-as-default =
+    .label = पूर्वनिर्धारित खोजी इन्जिन बनाउनुहोस्
+    .accesskey = D

@@ -41,6 +41,22 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = අනවරත ගබඩාවේ දත්ත ගබඩා කරන්න
 urlbar-addons-notification-anchor =
     .tooltiptext = ඇඩෝන ස්ථාපනය කිරීමේ පණිවිඩ පුවරුව විවෘත කරන්න
+urlbar-geolocation-blocked =
+    .tooltiptext = ඔබ මෙම අඩවිය සඳහා ස්ථානීය තොරතුරු අවහිර කර ඇත.
+urlbar-web-notifications-blocked =
+    .tooltiptext = ඔබ මෙම අඩවිය සඳහා දැනුම්දීම් අවහිර කර ඇත.
+urlbar-camera-blocked =
+    .tooltiptext = ඔබ මෙම අඩවියට ඔබගේ කැමරාව අවහිර කර ඇත.
+urlbar-microphone-blocked =
+    .tooltiptext = ඔබ මෙම අඩවියට ඔබගේ මයික්‍රෆෝනය අවහිර කර ඇත.
+urlbar-screen-blocked =
+    .tooltiptext = ඔබ මෙම අඩවිය ඔබගේ තිරය හවුල්කිරීම අවහිර කර ඇත.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = ඔබ මෙම අඩවිය සඳහා අනවරත ගබඩාව අවහිර කර ඇත.
+urlbar-popup-blocked =
+    .tooltiptext = ඔබ මෙම අඩවිය සඳහා පොප්-අප් වළක්වා ඇත.
+urlbar-midi-blocked =
+    .tooltiptext = ඔබ මෙම වෙබ්අඩවියට MIDI පිවිසුම අවහිර කර ඇත.
 
 ## Page Action Context Menu
 
@@ -59,3 +75,18 @@ full-screen-autohide =
 full-screen-exit =
     .label = පූර්ණතිර ආකාරයෙන් ඉවත් වන්න
     .accesskey = F
+
+## Search Engine selection buttons (one-offs)
+
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = සෙවුම් සැකසුම් වෙනස් කරන්න
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = සෙවුම් සිටුවම් වෙනස් කරන්න
+search-one-offs-context-open-new-tab =
+    .label = නව ටැබයක සොයන්න
+    .accesskey = T
+search-one-offs-context-set-as-default =
+    .label = පෙරනිමි සෙවුම් එළවුම ලෙස තබන්න
+    .accesskey = D

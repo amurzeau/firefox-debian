@@ -92,7 +92,7 @@ detail-update-manual =
     .label = wyłączone
     .tooltiptext = Nie instaluj aktualizacji automatycznie
 # Used as a description for the option to allow or block an add-on in private windows.
-detail-private-browsing-label = Działanie w oknach prywatnych
+detail-private-browsing-label = Działanie w oknach prywatnych:
 detail-private-browsing-description2 = Zezwolenie spowoduje, że rozszerzenie będzie miało dostęp do działań użytkownika w Internecie podczas przeglądania w trybie prywatnym. <label data-l10n-name="detail-private-browsing-learn-more">Więcej informacji</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
 # cannot be overridden by the user.
@@ -187,6 +187,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Włącz
     .tooltiptext = Włącz sprawdzanie bezpieczeństwa aktualizacji dodatków
+extensions-warning-safe-mode = Wszystkie dodatki zostały wyłączone przez tryb awaryjny
+extensions-warning-check-compatibility = Sprawdzanie zgodności dodatków jest wyłączone. Dodatki mogą być niezgodne.
+extensions-warning-check-compatibility-button = Włącz
+    .title = Włącz sprawdzanie zgodności dodatków
+extensions-warning-update-security = Sprawdzanie bezpieczeństwa aktualizacji jest wyłączone. Aktualizacje mogą powodować zagrożenie.
+extensions-warning-update-security-button = Włącz
+    .title = Włącz sprawdzanie bezpieczeństwa aktualizacji dodatków
 
 ## Strings connected to add-on updates
 
@@ -196,12 +203,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Wyświetl ostatnie aktualizacje
     .accesskey = W
+addon-updates-check-for-updates = Sprawdź dostępność aktualizacji
+    .accesskey = S
+addon-updates-view-updates = Wyświetl ostatnie aktualizacje
+    .accesskey = W
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Automatyczne aktualizacje dodatków
+    .accesskey = A
+addon-updates-update-addons-automatically = Automatyczne aktualizacje dodatków
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -215,6 +228,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = P
 extensions-updates-reset-updates-to-manual =
     .label = Przestaw wszystkie dodatki na ręczną aktualizację
+    .accesskey = P
+addon-updates-reset-updates-to-automatic = Przestaw wszystkie dodatki na automatyczną aktualizację
+    .accesskey = P
+addon-updates-reset-updates-to-manual = Przestaw wszystkie dodatki na ręczną aktualizację
     .accesskey = P
 
 ## Status messages displayed when updating add-ons
@@ -234,11 +251,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Zainstaluj aktualizacje
     .tooltiptext = Zainstaluj aktualizacje z tej listy
+addon-updates-updating = Aktualizowanie dodatków…
+addon-updates-installed = Dodatki zostały uaktualnione.
+addon-updates-none-found = Nie znaleziono aktualizacji.
+addon-updates-manual-updates-found = Wyświetl dostępne aktualizacje
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Zainstaluj dodatek z pliku…
+    .accesskey = Z
+addon-install-from-file-dialog-title = Wybierz dodatek do zainstalowania
+addon-install-from-file-filter-name = Dodatki
+addon-open-about-debugging = Debuguj dodatki
+    .accesskey = i
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Zarządzaj skrótami rozszerzeń
+    .accesskey = d
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Zarządzaj skrótami rozszerzeń
     .accesskey = d
 shortcuts-no-addons = Nie włączono żadnych rozszerzeń.
 shortcuts-no-commands = Te rozszerzenia nie mają skrótów:
@@ -310,6 +343,8 @@ addon-options-button =
 
 report-addon-button = Zgłoś
 remove-addon-button = Usuń
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Nie można usunąć <a data-l10n-name="link">Dlaczego?</a>
 disable-addon-button = Wyłącz
 enable-addon-button = Włącz
 expand-addon-button = Więcej opcji
@@ -375,11 +410,11 @@ install-update-button = Uaktualnij
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed =
-    .title = Dozwolone w oknach prywatnych:
+    .title = Dozwolone w oknach prywatnych
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
-    .title = Dozwolone w oknach prywatnych:
+    .title = Dozwolone w oknach prywatnych
     .aria-label = { addon-badge-private-browsing-allowed2.title }
 addon-detail-private-browsing-help = Zezwolenie spowoduje, że rozszerzenie będzie miało dostęp do działań użytkownika w Internecie podczas przeglądania w trybie prywatnym. <a data-l10n-name="learn-more">Więcej informacji</a>
 addon-detail-private-browsing-allow = zezwalaj
@@ -404,3 +439,18 @@ recommended-themes-heading = Polecane motywy
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Masz ochotę coś stworzyć? <a data-l10n-name="link">Utwórz własny motyw za pomocą Firefox Color.</a>
+
+## Page headings
+
+extension-heading = Zarządzanie rozszerzeniami
+theme-heading = Zarządzanie motywami
+plugin-heading = Zarządzanie wtyczkami
+dictionary-heading = Zarządzanie słownikami
+locale-heading = Zarządzanie pakietami językowymi
+updates-heading = Zarządzanie aktualizacjami
+discover-heading = Dostosuj przeglądarkę { -brand-short-name }
+shortcuts-heading = Zarządzanie skrótami rozszerzeń
+theme-heading-search-label = Wyszukaj więcej motywów
+extension-heading-search-label = Wyszukaj więcej rozszerzeń
+addons-heading-search-input =
+    .placeholder = Szukaj na stronie addons.mozilla.org

@@ -150,6 +150,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.unverified.description.label "Ilaq-ak ad tesfeqdeḍ amiḍan-ik uqbel ad tizmireḍ ad temtawiḍ.">
 <!ENTITY fxa.unverified.button.label "Ldi iɣewwaṛen n &syncBrand.shortName.label;…">
 
+<!ENTITY pictureInPictureHideToggle.label "Ffer asfaylu tugna deg tugna">
 <!ENTITY pictureInPictureHideToggle.accesskey "H">
 
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
@@ -162,20 +163,24 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
      for the Firefox Account toolbar menu screen. The `Signed in as` text is
      followed by the user's email. -->
+<!ENTITY fxa.menu.syncSettings2.label "&syncBrand.shortName.label; Iɣewwaṛen">
 <!ENTITY fxa.menu.connectAnotherDevice2.label "Qqen ibenk-nniḍen...">
 <!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
 <!ENTITY fxa.menu.signin.label "Qqen ɣer &brandProductName;">
 <!ENTITY fxa.menu.turnOnSync.label "Rmed &syncBrand.shortName.label;">
+<!ENTITY fxa.menu.firefoxServices.label "&brandProductName; Tanfiwin">
 
 <!ENTITY fxa.menu.account.label "Amiḍan">
 <!ENTITY fxa.menu.settings.label "Iɣewwaṛen">
 <!ENTITY fxa.menu.accountSettings.label "Iɣewwaṛen n umiḍan">
 <!ENTITY fxa.menu.signOut.label "Ffeɣ…">
 <!ENTITY fxa.menu.deviceSettings.label "Iɣewwaṛen n yibenk">
+<!ENTITY fxa.menu.setupSync.label "Swel &syncBrand.shortName.label;…">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
      for the Firefox Account toolbar menu screen.  -->
+<!ENTITY fxa.service.sendTab.description "Azen iccer imir imir i yal ibenk i ɣur teqqneḍ.">
 
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
@@ -271,6 +276,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Sefrek aseqdec n useɣẓan DRM">
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "Ldi agalis MIDI">
 
+<!ENTITY urlbar.permissionsGranted.tooltip       "Ɣur-k tisirag-nniḍen akken ad tkecmeḍ ɣeṛ usmel-a web.">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Tesweḥleḍ asawaḍ-ik i usmelweb-a.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Tesweḥleḍ asawaḍ-inek i usmelweb-a.">
@@ -441,8 +447,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Tebɣid ad twaliḍ da accaren-ik seg yibenkan-nniḍen?">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Ldi amtawi n Ismenyifen">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Qqen akken ad d-tsekneḍ tabdart n waccaren seg yibenkan-ik-nniḍen.">
+<!ENTITY appMenuRemoteTabs.welcome.label "Wali tabdart n waccaren seg yibenkan-ik-nniḍen.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Amiḍan-ik yeḥwaǧ ad ittusenqed.">
 <!ENTITY appMenuRemoteTabs.signin.label "Qqen ɣer Sync">
+<!ENTITY appMenuRemoteTabs.signintosync.label "Qqen ɣer &syncBrand.shortName.label;…">
 <!ENTITY appMenuRemoteTabs.turnonsync.label "Rmed &syncBrand.shortName.label;…">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Sefrek ibenkan…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Sken agalis adisan n waccaren yemtawin">
@@ -840,8 +848,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.connectionSecure3 "Taɣellist n tuqqna">
 <!ENTITY identity.connectionNotSecure2 "Tuqqna taraɣelsant">
+<!ENTITY identity.connectionNotSecureSecurityView "Aqli-k ur teqqineḍ ara s wudem aɣelsan ɣeṛ usmel-a.">
 <!ENTITY identity.connectionFile "Asebter-a yettwakles deg uselkim-inek.">
 <!ENTITY identity.connectionVerified2 "Aqli-k tura teqqneḍ s tɣellist ɣeṛ usmel-a, bab-is d:">
+<!ENTITY identity.connectionVerified3 "Aqli-k teqqneḍ s wudem aɣelsan ɣeṛ usmel-a.">
 <!ENTITY identity.connectionInternal "Wa d asebter &brandShortName; aɣelsan.">
 <!ENTITY identity.extensionPage "Asebter-a yuli-d seg usiɣzef.">
 <!ENTITY identity.insecureLoginForms2 "Isem n useqdac d wawal uffir i tesqedceḍ deg usmel-a zemren ad ttwakren.">
@@ -890,8 +900,11 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.contentBlockingPreferences.tooltip "Ldi ismenyifen n usewḥel n ugbur">
 
 
+<!ENTITY protections.etpON.header "Ammesten yettwaseǧehden mgal aḍfaṛ irmed i usmel-a">
+<!ENTITY protections.etpOFF.header "Ammesten yettwaseǧehden mgal aḍfaṛ irurmed i usmel-a">
 <!-- LOCALIZATION NOTE:
      protections.etpMoreInfo.label: The text a screen reader speaks when focused on the info button. -->
+<!ENTITY protections.etpMoreInfo.label "Ugar n talɣut ɣef Ammesten mgal aḍfaṛ yettwaseǧehden">
 <!ENTITY protections.settings.label "Iɣewwaṛen n tɣellist">
 <!ENTITY protections.showreport.label "Sken aneqqis">
 <!-- LOCALIZATION NOTE:
@@ -904,6 +917,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      the user is experiencing issues with any of a variety of functionality.
      protections.siteNotWorkingView.header: The header of the list
      protections.siteNotWorkingView.issueList.*: The list items, shown in a <ul> -->
+<!ENTITY protections.siteNotWorkingView.header "Sen ammesten ma tesɛiḍ uguren d:">
+<!ENTITY protections.siteNotWorkingView.issueList.logInFields "Urtiyen n unekcum">
+<!ENTITY protections.siteNotWorkingView.issueList.forms "Tiferkiyin">
 <!ENTITY protections.siteNotWorkingView.issueList.payments "Asellek">
 <!ENTITY protections.siteNotWorkingView.issueList.comments "Iwenniten">
 <!ENTITY protections.siteNotWorkingView.issueList.videos "Tividyutin">
@@ -917,14 +933,20 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      These strings are used in the header labels of each of these sections. -->
 <!ENTITY protections.blocking2.label "Iwḥel">
 <!ENTITY protections.notBlocking2.label "Ittusireg">
+<!ENTITY protections.notFound.label "Ur ittwaf ara">
 <!-- LOCALIZATION NOTE (protections.notBlocking.why.label, protections.notBlocking.why.etp*.tooltip):
      The "Allowed" header also includes a "Why?" link that, when hovered, shows
      a tooltip explaining why these items were not blocked in the page. -->
 <!ENTITY protections.notBlocking.why.label "Ayɣer?">
+<!ENTITY protections.socialMediaTrackers.label "Ineḍfaṛen n yiẓeḍwa n tmetti">
+<!ENTITY protections.crossSiteTrackingCookies.label "Inagan n tuqqna i uḍfaṛ gar yismal">
 <!ENTITY protections.trackingContent.label "Agbur n uḍfaṛ">
 <!ENTITY protections.fingerprinters.label "Idsilen umḍinen">
 <!ENTITY protections.cryptominers.label "Ikripṭuminaren">
+<!ENTITY protections.noTrackersFound.description "Ulac ineḍfaren i yessen &brandShortName; ittwafen deg usebter-a.">
 
+<!ENTITY protections.crossSiteTrackingCookies.description "Inagan-a n tuqqna ad k-ḍfṛen seg usmel ɣer wayeḍ akken ad d-leqḍen isefka fell-ak srid. Seddayen-ten-id wid ixeddmen adellel akked tkebbaniyin n tesleḍt.">
+<!ENTITY protections.cryptominers.description "Ikripṭuminaren seqdacen tazmert n usiḍen n unagraw-ik akken ad kksen tadrimt tumḍint. Iskripten n yikripṭuminaren sseɣṣen aẓru-ik, saẓayen aselkim-ik, daɣen zemren ad salin tafaturt-ik n ṣṣehd.">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
@@ -973,9 +995,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY contentBlocking.trackingProtection4.label "Agbur n uḍfaṛ">
 
+<!ENTITY contentBlocking.manageSettings2.label "Sefrek iɣewwaṛen n tɣellist">
+<!ENTITY contentBlocking.manageSettings2.accesskey "S">
 
 <!ENTITY contentBlocking.socialblock.label "Ineḍfaṛen n iẓeḍwa imettanen">
 
+<!ENTITY contentBlocking.cookies2.label "Inagan n tuqqna i uḍfaṛ gar yismal">
 
 <!ENTITY contentBlocking.cryptominers.label "Ikripṭuminaren">
 <!ENTITY contentBlocking.cryptominersView.label "Ikripṭuminaren">
@@ -988,9 +1013,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView2.description "Asewḥel n ugbur izmer ad d-yawi uguren deg kra n ismal. Mi ara ad aɣ-tazneḍ uguren, ad d-fkeḍ tallelt akken ad yili &brandShortName; igerrez i yal yiwen. ( aya ad yazen URL d  talɣut ɣef iɣewwaṛen , iminig-inek ɣer Mozilla.)">
 <!ENTITY contentBlocking.breakageReportView.learnMore "Issin ugar">
 
+<!ENTITY contentBlocking.breakageReportView.title "Cegger asmel yerẓen">
+<!ENTITY contentBlocking.breakageReportView3.description "Asewḥel n kra n ineḍfaṛen izmer ad d-yawi uguren deg kra n ismal. Mi ara ad aɣ-tazneḍ uguren, ad d-fkeḍ tallelt akken ad yili &brandShortName; igerrez i yal yiwen.  aya ad yazen URL d  talɣut ɣef iɣewwaṛen , iminig-inek ɣer Mozilla.)">
 <!ENTITY contentBlocking.breakageReportView2.learnMore "Issin ugar">
 <!ENTITY contentBlocking.breakageReportView.collection.url.label "URL">
 <!ENTITY contentBlocking.breakageReportView.collection.comments.label "D acu n wuguren i tesɛiḍ? (afrayan)">
+<!ENTITY contentBlocking.breakageReportView2.collection.comments.label "D afrayan: Seglem ugur">
 <!ENTITY contentBlocking.breakageReportView.sendReport.label "Azen aneqqis">
 <!ENTITY contentBlocking.breakageReportView.cancel.label "Sefsex">
 

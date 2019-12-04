@@ -14,6 +14,11 @@ pref-page =
             [windows] 選項
            *[other] 偏好設定
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] 選項
+       *[other] 偏好設定
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -270,6 +275,10 @@ applications-type-pdf-with-type = { applications-type-pdf }（{ $type }）
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description }（{ $type }）
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending }（{ $type }）
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = 使用 { $plugin-name } (在 { -brand-short-name } 開啟)
@@ -445,7 +454,6 @@ choose-bookmark =
 
 home-prefs-content-header = Firefox 首頁內容
 home-prefs-content-description = 選擇要在您的 Firefox 首頁顯示哪些內容。
-home-prefs-content-discovery-description = Firefox Home 的內容探索功能可隨您上網，為您尋找高品質而與您有關的文章。
 home-prefs-search-header =
     .label = 網頁搜尋
 home-prefs-topsites-header =
@@ -489,7 +497,8 @@ search-bar-shown =
     .label = 在工具列加入搜尋列
 search-engine-default-header = 預設搜尋引擎
 search-engine-default-desc = 請選擇在網址列或搜尋列進行搜尋時，預設要使用的搜尋引擎。
-search-engine-default-private-desc = 選擇於隱私瀏覽視窗使用的預設搜尋引擎。
+search-engine-default-desc-2 = 這是您在網址列與搜尋列進行搜尋時，預設會使用的搜尋引擎。可以隨時切換。
+search-engine-default-private-desc-2 = 針對隱私瀏覽視窗選擇不同的預設搜尋引擎
 search-separate-default-engine =
     .label = 於隱私瀏覽視窗使用此搜尋引擎
     .accesskey = U
@@ -508,6 +517,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = 在網址列顯示的結果中，將搜尋建議放在瀏覽紀錄前面
+search-show-suggestions-private-windows =
+    .label = 於隱私瀏覽視窗中顯示搜尋建議
 suggestions-addressbar-settings = 更改上網紀錄、書籤、分頁建議的相關偏好設定
 search-suggestions-cant-show = 由於您已經設定 { -brand-short-name } 不要記住瀏覽紀錄，網址列中將不會顯示建議搜尋結果。
 search-one-click-header = 快捷搜尋引擎清單
@@ -557,6 +568,9 @@ sync-signedout-account-create = 沒有帳號嗎？開始使用
 sync-signedout-account-signin =
     .label = 登入…
     .accesskey = I
+sync-signedout-account-signin2 =
+    .label = 登入 { -sync-brand-short-name }…
+    .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -700,7 +714,11 @@ privacy-header = 瀏覽器隱私權
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = 登入資訊與密碼
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = 向您詢問是否要記住網站的登入帳號與密碼
     .accesskey = r
@@ -714,6 +732,7 @@ forms-breach-alerts =
     .label = 針對發生過資料外洩的網站顯示密碼警告
     .accesskey = b
 forms-breach-alerts-learn-more-link = 了解更多
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = 自動填寫登入資訊與密碼
     .accesskey = i

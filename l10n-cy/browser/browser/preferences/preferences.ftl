@@ -14,6 +14,11 @@ pref-page =
             [windows] Dewisiadau
            *[other] Dewisiadau
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Dewisiadau
+       *[other] Dewisiadau
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -294,6 +299,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Defnyddio { $plugin-name } (yn { -brand-short-name })
@@ -469,7 +478,6 @@ choose-bookmark =
 
 home-prefs-content-header = Cynnwys Cartref Firefox
 home-prefs-content-description = Dewis pa gynnwys rydych eisiau ar eich sgrin Firefox Cartref.
-home-prefs-content-discovery-description = Mae Darganfod Cynnwys yng Nghartref Firefox yn caniatáu i chi ddarganfod erthyglau perthnasol o ansawdd uchel ar draws y we.
 home-prefs-search-header =
     .label = Chwilio'r We
 home-prefs-topsites-header =
@@ -521,7 +529,8 @@ search-bar-shown =
     .label = Ychwanegu'r bar chwilio i'r bar offer
 search-engine-default-header = Peiriant Chwilio Rhagosodedig
 search-engine-default-desc = Dewis y peiriant chwilio ragosodedig i'w ddefnyddio yn y bar cyfeiriad a'r bar chwilio.
-search-engine-default-private-desc = Dewis y peiriant chwilio rhagosodedig i'w ddefnyddio mewn Ffenestri Preifat.
+search-engine-default-desc-2 = Hwn yw'ch peiriant chwilio rhagosodedig yn y bar cyfeiriad a'r bar chwilio. Gallwch ei newid ar unrhyw adeg.
+search-engine-default-private-desc-2 = Dewiswch beiriant chwilio rhagosodedig i'w ddefnyddio yn y Ffenestr Breifat yn unig.
 search-separate-default-engine =
     .label = Defnyddio'r peiriant chwilio hwn mewn Ffenestri Preifat
     .accesskey = D
@@ -540,6 +549,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Dangos awgrymiadau chwilio o flaen hanes yng nghanlyniadau'r bar cyfeiriadau
+search-show-suggestions-private-windows =
+    .label = Dangos awgrymiadau chwilio mewn Ffenestri Preifat
 suggestions-addressbar-settings = Newid dewisiadau ar gyfer hanes pori, nodau tudalen ac awgrymiadau tabiau
 search-suggestions-cant-show = Ni fydd awgrymiadau chwilio'n cael eu dangos yn y bar lleoliad gan eich bod wedi ffurfweddu { -brand-short-name } i byth cofio hanes.
 search-one-click-header = Peiriannau Chwilio Un Clic
@@ -588,6 +599,9 @@ sync-signedout-account-create = Dim cyfrif? Cychwynnwch arni
     .accesskey = C
 sync-signedout-account-signin =
     .label = Mewngofnodi…
+    .accesskey = M
+sync-signedout-account-signin2 =
+    .label = Mewngofnodi i { -sync-brand-short-name }…
     .accesskey = M
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -656,6 +670,9 @@ sync-currently-syncing-prefs =
         [windows] Dewisiadau
        *[other] Dewisiadau
     }
+sync-change-options =
+    .label = Newid…
+    .accesskey = N
 
 ## The "Choose what to sync" dialog.
 
@@ -729,7 +746,11 @@ privacy-header = Preifatrwydd y Porwr
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Mewngofnodion a Chyfrineiriau
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Gofyn i gadw mewngofnodion a chyfrineiriau ar gyfer gwefannau
     .accesskey = G
@@ -743,6 +764,7 @@ forms-breach-alerts =
     .label = Dangos rhybuddion am gyfrineiriau ar gyfer gwefannau sydd wedi' cael tor-data
     .accesskey = r
 forms-breach-alerts-learn-more-link = Dysgu rhagor
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Awtolanw mewngofnodion a chyfrineiriau
     .accesskey = A

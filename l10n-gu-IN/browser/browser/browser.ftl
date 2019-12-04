@@ -47,6 +47,26 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = સ્થાયી સંગ્રહમાં ડેટા સંગ્રહ કરો
 urlbar-addons-notification-anchor =
     .tooltiptext = ઍડ-ઑન ઇન્સ્ટોલેશન મેસેજ પેનલ ખોલો
+urlbar-geolocation-blocked =
+    .tooltiptext = તમે આ વેબસાઇટ માટે સ્થાન માહિતી અવરોધિત કરી છે.
+urlbar-web-notifications-blocked =
+    .tooltiptext = તમે આ વેબસાઇટ માટે સૂચનાઓ અવરોધિત કર્યા છે.
+urlbar-camera-blocked =
+    .tooltiptext = તમે આ વેબસાઇટ માટે તમારો કૅમેરા અવરોધિત કર્યા છે.
+urlbar-microphone-blocked =
+    .tooltiptext = તમે આ વેબસાઇટ માટે તમારા ધ્વનિવર્ધક યંત્રને અવરોધિત કયૉ છે.
+urlbar-screen-blocked =
+    .tooltiptext = તમે તમારી સ્ક્રીન શેર આ વેબસાઇટ અવરોધિત કર્યા છે.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = તમે આ વેબસાઇટ માટે સતત સંગ્રહ અવરોધિત કર્યા છે.
+urlbar-popup-blocked =
+    .tooltiptext = તમે આ વેબસાઇટ માટે પોપ-અપ્સને અવરોધિત કર્યા છે.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = તમે આ વેબસાઇટ માટે અવાજ સાથે ઑટોપ્લે મીડિયા અવરોધિત કર્યા છે.
+urlbar-canvas-blocked =
+    .tooltiptext = તમે આ વેબસાઇટ માટે કેનવાસ ડેટા નિષ્કર્ષણને અવરોધિત કર્યો છે.
+urlbar-midi-blocked =
+    .tooltiptext = તમે આ વેબસાઇટ માટે MIDI ઍક્સેસને અવરોધિત કરી છે.
 
 ## Page Action Context Menu
 
@@ -65,3 +85,18 @@ full-screen-autohide =
 full-screen-exit =
     .label = સંપૂર્ણ સ્ક્રીન સ્થિતિમાંથી બહાર નીકળો
     .accesskey = F
+
+## Search Engine selection buttons (one-offs)
+
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = શોધ ના સેટિંગ્સ બદલો
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = શોધ ના સેટિંગ્સ બદલો
+search-one-offs-context-open-new-tab =
+    .label = નવી ટૅબમાં શોધો
+    .accesskey = T
+search-one-offs-context-set-as-default =
+    .label = મૂળભૂત શોધ એંજીન તરીકે સેટ કરો
+    .accesskey = D

@@ -71,9 +71,9 @@ cmd-contribute =
     .tooltiptext = Посприяти розвитку цього додатку
 discover-title = Що таке додатки?
 discover-description =
-    Додатки це програми, що дозволяють вам персоналізувати { -brand-short-name },
-    додавши функцій чи змінивши стиль. Спробуйте часозберігаючу бічну панель, прогноз погоди чи графічну тему —
-    зробіть { -brand-short-name } власне вашим.
+    Додатки це програми, що дозволяють персоналізувати { -brand-short-name } за допомогою
+    розширених функцій чи зовнішнього вигляду. Заощаджуйте свій час з бічною панеллю, отримуйте
+    сповіщення про погоду, або змініть графічну тему, щоб зробити { -brand-short-name } особливим.
 discover-footer =
     Коли ви підключитесь до інтернету, ця панель покаже деякі з найкращих
     та найбільш популярних додатків на пробу.
@@ -192,6 +192,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Увімкнути
     .tooltiptext = Увімкнути перевірку безпечного оновлення додатків
+extensions-warning-safe-mode = В безпечному режимі всі додатки вимкнено.
+extensions-warning-check-compatibility = Перевірка сумісності додатків вимкнена. У вас можуть бути несумісні додатки.
+extensions-warning-check-compatibility-button = Увімкнути
+    .title = Увімкнути перевірку сумісності додатків
+extensions-warning-update-security = Перевірка безпечного оновлення додатків вимкнена. У процесі оновлення зловмисник може спробувати підмінити їх.
+extensions-warning-update-security-button = Увімкнути
+    .title = Увімкнути перевірку безпечного оновлення додатків
 
 ## Strings connected to add-on updates
 
@@ -201,12 +208,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Показати недавні оновлення
     .accesskey = н
+addon-updates-check-for-updates = Перевірити оновлення
+    .accesskey = П
+addon-updates-view-updates = Показати недавні оновлення
+    .accesskey = н
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Оновлювати додатки автоматично
+    .accesskey = а
+addon-updates-update-addons-automatically = Оновлювати додатки автоматично
     .accesskey = а
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -220,6 +233,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = к
 extensions-updates-reset-updates-to-manual =
     .label = Перемкнути всі додатки на ручне оновлення
+    .accesskey = к
+addon-updates-reset-updates-to-automatic = Перемкнути всі додатки на автоматичне оновлення
+    .accesskey = к
+addon-updates-reset-updates-to-manual = Перемкнути всі додатки на ручне оновлення
     .accesskey = к
 
 ## Status messages displayed when updating add-ons
@@ -239,11 +256,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Встановити оновлення
     .tooltiptext = Встановити доступні у цьому списку оновлення
+addon-updates-updating = Оновлення додатків
+addon-updates-installed = Ваші додатки були оновлені.
+addon-updates-none-found = Оновлень не знайдено
+addon-updates-manual-updates-found = Переглянути доступні оновлення
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Встановити додаток з файлу…
+    .accesskey = В
+addon-install-from-file-dialog-title = Виберіть додаток для встановлення
+addon-install-from-file-filter-name = Додатки
+addon-open-about-debugging = Зневадження додатків
+    .accesskey = З
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Керувати комбінаціями клавіш розширень
+    .accesskey = б
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Керувати комбінаціями клавіш розширень
     .accesskey = б
 shortcuts-no-addons = У вас не увімкнено жодного розширення.
 shortcuts-no-commands = Такі розширення не мають комбінацій клавіш:
@@ -314,6 +347,8 @@ addon-options-button =
 
 report-addon-button = Скарга
 remove-addon-button = Вилучити
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Неможливо вилучити <a data-l10n-name="link">Чому?</a>
 disable-addon-button = Вимкнути
 enable-addon-button = Увімкнути
 expand-addon-button = Інші налаштування
@@ -408,3 +443,18 @@ recommended-themes-heading = Рекомендовані теми
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Відчуваєте творче натхнення? <a data-l10n-name="link">Створіть власну тему за допомогою Firefox Color.</a>
+
+## Page headings
+
+extension-heading = Керуйте своїми розширеннями
+theme-heading = Керуйте своїми темами
+plugin-heading = Керуйте своїми плагінами
+dictionary-heading = Керуйте своїми словниками
+locale-heading = Керуйте своїми мовами
+updates-heading = Керуйте своїми оновленнями
+discover-heading = Персоналізуйте свій { -brand-short-name }
+shortcuts-heading = Керувати комбінаціями клавіш розширень
+theme-heading-search-label = Знайти інші теми
+extension-heading-search-label = Знайти інші розширення
+addons-heading-search-input =
+    .placeholder = Пошук на addons.mozilla.org

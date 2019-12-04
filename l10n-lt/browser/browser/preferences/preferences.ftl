@@ -14,6 +14,11 @@ pref-page =
             [windows] Nuostatos
            *[other] Nuostatos
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Nuostatos
+       *[other] Nuostatos
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -285,6 +290,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Naudoti „{ $plugin-name }“ papildinį (programoje „{ -brand-short-name }“)
@@ -460,7 +469,6 @@ choose-bookmark =
 
 home-prefs-content-header = „Firefox“ pradžios turinys
 home-prefs-content-description = Pasirinkite, kokį turinį norite matyti „Firefox“ pradžios ekrane
-home-prefs-content-discovery-description = „Firefox“ turinio atradimas pradžios tinklalapyje leidžia atrasti aukštos kokybės ir jums galimai įdomius straipsnius iš interneto.
 home-prefs-search-header =
     .label = Paieška internete
 home-prefs-topsites-header =
@@ -509,7 +517,8 @@ search-bar-shown =
     .label = Pridėti paieškos lauką į priemonių juostą
 search-engine-default-header = Numatytoji ieškyklė
 search-engine-default-desc = Pasirinkite numatytąją ieškyklę, kuri bus naudojama adreso ir paieškos laukuose.
-search-engine-default-private-desc = Pasirinkite numatytąją ieškyklę, kuri bus naudojama privačiuose languose.
+search-engine-default-desc-2 = Tai yra jūsų numatytoji ieškyklė adreso ir paieškos laukuose. Ją galite bet kada pakeisti.
+search-engine-default-private-desc-2 = Pasirinkite kitą numatytąją ieškyklę, kuri bus skirta tik privačiojo naršymo langams
 search-separate-default-engine =
     .label = Naudoti šią ieškyklę privačiuose languose
     .accesskey = N
@@ -528,6 +537,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Rodyti paieškos žodžių siūlymus virš naršymo žurnalo, matomus adreso juostos rezultatuose
+search-show-suggestions-private-windows =
+    .label = Rodyti paieškos žodžių siūlymus privačiojo naršymo languose.
 suggestions-addressbar-settings = Keiskite naršymo žurnalo, adresyno, ir kortelių siūlymų nuostatas
 search-suggestions-cant-show = Paieškos žodžių siūlymai adreso lauke nebus rodomi, kadangi esate nustatę, jog „{ -brand-short-name }“ niekada nevestų žurnalo.
 search-one-click-header = Ieškyklės vienu spustelėjimu
@@ -577,6 +588,9 @@ sync-signedout-account-create = Neturite paskyros? Pradėkite naudotis
 sync-signedout-account-signin =
     .label = Prisijungti…
     .accesskey = J
+sync-signedout-account-signin2 =
+    .label = Jungtis prie „{ -sync-brand-short-name }“…
+    .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -644,6 +658,9 @@ sync-currently-syncing-prefs =
         [windows] Nuostatos
        *[other] Nuostatos
     }
+sync-change-options =
+    .label = Pakeisti…
+    .accesskey = C
 
 ## The "Choose what to sync" dialog.
 
@@ -717,7 +734,11 @@ privacy-header = Naršyklės privatumas
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Prisijungimai ir slaptažodžiai
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Klausti, ar norite įrašyti svetainių prisijungimus ir slaptažodžius
     .accesskey = r
@@ -731,6 +752,7 @@ forms-breach-alerts =
     .label = Rodyti įspėjimus apie slaptažodžius pažeistose svetainėse
     .accesskey = d
 forms-breach-alerts-learn-more-link = Sužinoti daugiau
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Automatiškai užpildyti prisijungimus ir slaptažodžius
     .accesskey = m

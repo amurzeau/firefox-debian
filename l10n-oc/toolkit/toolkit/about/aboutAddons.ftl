@@ -130,9 +130,6 @@ legacy-warning-show-legacy = Afichar las extensions obsolètas
 legacy-extensions =
     .value = Extensions obsolètas
 legacy-extensions-description = Aquestas extensions respèctan pas los estandards actuals de { -brand-short-name } e son estadas desactivadas. <label data-l10n-name="legacy-learn-more">Ne saber mai suls cambiaments dels moduls</label>
-extensions-view-discover =
-    .name = Obténer de moduls complementaris
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-recent-updates =
     .name = Mes a jorn
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -160,6 +157,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Activar
     .tooltiptext = Activar la verificacion de mesas a jorn de seguretat pels moduls complementaris
+extensions-warning-safe-mode = Totes los moduls complementaris son estats desactivats pel mòde sens fracàs.
+extensions-warning-check-compatibility = La verificacion de compatibilitat pels moduls complementaris es desactivada. Es possible que d'unes moduls sián incompatibles.
+extensions-warning-check-compatibility-button = Activar
+    .title = Activar la verificacion de compatibilitat
+extensions-warning-update-security = La verificacion de compatibilitat pels moduls complementaris es desactivada. Es possible que d'unas mesas a jorn sián problematicas.
+extensions-warning-update-security-button = Activar
+    .title = Activar la verificacion de mesas a jorn de seguretat pels moduls complementaris
 
 ## Strings connected to add-on updates
 
@@ -169,12 +173,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Afichar las mesas a jorn recentas
     .accesskey = A
+addon-updates-check-for-updates = Recercar de mesas a jorn
+    .accesskey = R
+addon-updates-view-updates = Afichar las mesas a jorn recentas
+    .accesskey = A
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Metre a jorn los moduls automaticament
+    .accesskey = M
+addon-updates-update-addons-automatically = Metre a jorn los moduls automaticament
     .accesskey = M
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -188,6 +198,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = c
 extensions-updates-reset-updates-to-manual =
     .label = Desactivar la mesa a jorn automatica per totes los moduls
+    .accesskey = D
+addon-updates-reset-updates-to-automatic = Activar la mesa a jorn automatica per totes los moduls
+    .accesskey = c
+addon-updates-reset-updates-to-manual = Desactivar la mesa a jorn automatica per totes los moduls
     .accesskey = D
 
 ## Status messages displayed when updating add-ons
@@ -207,3 +221,40 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Installar las mesas a jorn
     .tooltiptext = Installar las mesas a jorn disponiblas dins aquesta lista
+addon-updates-updating = Mesa a jorn dels moduls
+addon-updates-installed = Vòstres moduls son estats meses a jorn.
+addon-updates-none-found = Cap de mesa a jorn pas trobada
+addon-updates-manual-updates-found = Afichar las mesas a jorn disponiblas
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Installar un modul dins d’un fichièr…
+    .accesskey = I
+addon-install-from-file-dialog-title = Causissètz un modul d'installar
+addon-install-from-file-filter-name = Moduls complementaris
+addon-open-about-debugging = Desbugar los moduls
+    .accesskey = B
+
+## Extension shortcut management
+
+
+## Recommended add-ons page
+
+
+## Add-on actions
+
+
+## Pending uninstall message bar
+
+
+## Page headings
+
+extension-heading = Gestion de las extensions
+theme-heading = Gestion dels tèmas
+plugin-heading = Gestion dels plugins
+dictionary-heading = Gestion dels diccionaris
+locale-heading = Gestion de las lengas
+theme-heading-search-label = Trobar mai de tèmas
+extension-heading-search-label = Trobar mai d’extensions
+addons-heading-search-input =
+    .placeholder = Cercar sus addons.mozilla.org

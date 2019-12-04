@@ -147,6 +147,22 @@ intl-locales-default = Ngôn ngữ mặc định
 intl-os-title = Hệ điều hành
 intl-os-prefs-system-locales = Ngôn ngữ hệ thống
 intl-regional-prefs = Cài đặt khu vực
+
+## Remote Debugging
+##
+## The Firefox remote protocol provides low-level debugging interfaces
+## used to inspect state and control execution of documents,
+## browser instrumentation, user interaction simulation,
+## and for subscribing to browser-internal events.
+##
+## See also https://firefox-source-docs.mozilla.org/remote/
+
+remote-debugging-title = Gỡ lỗi từ xa (Giao thức Chromium)
+remote-debugging-accepting-connections = Đang cho phép kết nối
+remote-debugging-url = URL
+
+
+
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days = Báo cáo lỗi trong { $days } ngày gần đây
@@ -223,6 +239,7 @@ unknown-failure = Danh sách chặn; mã lỗi { $failureCode }
 d3d11layers-crash-guard = Bộ soạn nhạc D3D11
 d3d11video-crash-guard = Bộ giải mã video D3D11
 d3d9video-crash-buard = Bộ giải mã video D3D9
+d3d9video-crash-guard = Bộ giải mã video D3D9
 glcontext-crash-guard = OpenGL
 reset-on-next-restart = Đặt lại vào lần khởi động lại tiếp theo
 gpu-process-kill-button = Buộc dừng quá trình GPU

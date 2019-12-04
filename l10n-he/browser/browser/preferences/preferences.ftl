@@ -14,6 +14,11 @@ pref-page =
             [windows] אפשרויות
            *[other] העדפות
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] אפשרויות
+       *[other] העדפות
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -282,6 +287,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ‏({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = השתמש בתוסף { $plugin-name } (בתוך { -brand-short-name })
@@ -457,7 +466,6 @@ choose-bookmark =
 
 home-prefs-content-header = תוכן מסך הבית של Firefox
 home-prefs-content-description = בחירת תוכן שיוצג במסך הבית של Firefox.
-home-prefs-content-discovery-description = גילוי תוכן במסך הבית של Firefox מאפשר לך לגלות מאמרים רלוונטים ובאיכות גבוהה מכל רחבי הרשת.
 home-prefs-search-header =
     .label = חיפוש ברשת
 home-prefs-topsites-header =
@@ -504,8 +512,9 @@ search-bar-hidden =
 search-bar-shown =
     .label = הוספת שורת החיפוש לסרגל הכלים
 search-engine-default-header = מנוע חיפוש ברירת מחדל
-search-engine-default-desc = בחירת מנוע חיפוש ברירת המחדל לשימוש בסרגל הכתובת ובסרגל החיפוש.
-search-engine-default-private-desc = בחירת מנוע חיפוש ברירת המחדל לשימוש בחלונות פרטיים.
+search-engine-default-desc = בחירת מנוע חיפוש ברירת המחדל לשימוש בשורת הכתובת ובשורת החיפוש.
+search-engine-default-desc-2 = זהו מנוע החיפוש המוגדר כברירת מחדל בשורת הכתובת ובשורת החיפוש. ניתן להחליף אותו בכל עת.
+search-engine-default-private-desc-2 = בחירת מנוע חיפוש אחר עבור חלונות פרטיים בלבד
 search-separate-default-engine =
     .label = שימוש במנוע חיפוש זה בחלונות פרטיים
     .accesskey = ש
@@ -524,10 +533,12 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = הצגת הצעות חיפוש לפני היסטוריית הגלישה בתוצאות שורת הכתובת
+search-show-suggestions-private-windows =
+    .label = הצגת הצעות חיפוש בחלונות פרטיים
 suggestions-addressbar-settings = שינוי העדפות עבור היסטוריית גלישה, סימניות והצעות לשוניות
 search-suggestions-cant-show = הצעות חיפוש לא יופיעו בתוצאות סרגל המיקום מכיוון שהגדרת ש־{ -brand-short-name } לעולם לא לזכור היסטוריה.
 search-one-click-header = מנועי חיפוש בלחיצה אחת
-search-one-click-desc = בחירת מנועי חיפוש חלופיים שיופיעו מתחת לסרגל הכתובת וסרגל החיפוש עם תחילת ההקלדה של מילות מפתח.
+search-one-click-desc = בחירת מנועי חיפוש חלופיים שיופיעו מתחת לשורת הכתובת ושורת החיפוש עם תחילת ההקלדה של מילות מפתח.
 search-choose-engine-column =
     .label = מנוע חיפוש
 search-choose-keyword-column =
@@ -572,6 +583,9 @@ sync-signedout-account-create = אין ברשותך חשבון? תחילת עב�
     .accesskey = ח
 sync-signedout-account-signin =
     .label = התחברות…
+    .accesskey = ה
+sync-signedout-account-signin2 =
+    .label = התחברות אל { -sync-brand-short-name }…
     .accesskey = ה
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -716,7 +730,11 @@ privacy-header = פרטיות דפדפן
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = כניסות וססמאות
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = הצגת בקשה לשמירת פרטי כניסה וססמאות לאתרים
     .accesskey = צ
@@ -724,6 +742,7 @@ forms-exceptions =
     .label = חריגות…
     .accesskey = ר
 forms-breach-alerts-learn-more-link = מידע נוסף
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = מילוי אוטומטי של כניסות וססמאות
     .accesskey = מ

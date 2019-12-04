@@ -15,6 +15,7 @@ certificate-viewer-algorithm = Algoritme
 certificate-viewer-certificate-authority = Certificaatautoriteit
 certificate-viewer-cipher-suite = Coderingssuite
 certificate-viewer-common-name = Algemene naam
+certificate-viewer-email-address = E-mailadres
 # Inc. means Incorporated, e.g GitHub is incorporated in Delaware
 certificate-viewer-inc-country = Land van vestiging
 certificate-viewer-country = Land
@@ -61,7 +62,7 @@ certificate-viewer-validity = Geldigheid
 certificate-viewer-subject-alt-names = Alternatieve namen houder
 certificate-viewer-public-key-info = Informatie publieke sleutel
 certificate-viewer-miscellaneous = Diversen
-certificate-viewer-fingerprints = Fingerprints
+certificate-viewer-fingerprints = Vingerafdrukken
 certificate-viewer-basic-constraints = Basisbeperkingen
 certificate-viewer-key-usages = Belangrijkste gebruiksmogelijkheden
 certificate-viewer-extended-key-usages = Uitgebreide gebruiksmogelijkheden

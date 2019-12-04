@@ -8,7 +8,7 @@ enable-inspect-element-title = Ativar ferramentas de programador do Firefox para
 enable-inspect-element-message = Examine e edite HTML e CSS com o inspetor das ferramentas de programador.
 enable-about-debugging-message = Programe e depure WebExtensions, web workers, service workers e mais com as ferramentas de programador do Firefox.
 enable-key-shortcut-message = Ativou um atalho das ferramentas de programador. Se foi um engano, pode fechar este separador.
-enable-menu-message = Aperfeiçoe o HTML, CSS, e JavaScript do seu website com ferramentas como o Inspetor e Depurador.
+enable-menu-message = Melhore o HTML, CSS e JavaScript do seu site com ferramentas como o Inspetor e Depurador.
 enable-common-message = As ferramentas de programador do Firefox estão desativadas por predefinição para lhe dar mais controlo sobre o seu navegador.
 enable-learn-more-link = Saber mais acerca das ferramentas de programador
 enable-enable-button = Ativar ferramentas de programador
@@ -31,7 +31,7 @@ features-inspector-desc = Inspecione e melhore o código para construir layouts 
 features-console-title = Consola
 features-console-desc = Identifique problemas de CSS, JavaScript, segurança e de rede. <a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-debugger-title = Depurador
-features-debugger-desc = Um potente depurador de JavaScript com suporte para a sua framework. <a data-l10n-name="learn-more">{ features-learn-more }</a>
+features-debugger-desc = Um depurador de JavaScript poderoso com suporte para a sua framework. <a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-network-title = Rede
 features-network-desc = Monitorize pedidos de rede que possam tornar lento ou bloquear o seu site. <a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-storage-title = Armazenamento

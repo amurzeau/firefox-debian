@@ -33,10 +33,20 @@ onboarding-join-form-email =
 onboarding-join-form-email-error = É necessário um e-mail válido
 onboarding-join-form-legal = Ao continuar, você concorda com os <a data-l10n-name="terms">Termos do serviço</a> e o <a data-l10n-name="privacy">Aviso de privacidade</a>.
 onboarding-join-form-continue = Continuar
+# This message is followed by a link using onboarding-join-form-signin ("Sign In") as text.
+onboarding-join-form-signin-label = Já tem uma conta?
+# Text for link to submit the sign in form
+onboarding-join-form-signin = Entrar
 onboarding-start-browsing-button-label = Comece a navegar
 onboarding-cards-dismiss =
     .title = Dispensar
     .aria-label = Dispensar
+
+## Welcome full page string
+
+onboarding-fullpage-welcome-subheader = Vamos descobrir tudo o que você pode fazer.
+onboarding-fullpage-form-email =
+    .placeholder = Seu endereço de e-mail…
 
 ## Firefox Sync modal dialog strings.
 
@@ -103,6 +113,7 @@ onboarding-data-sync-text2 = Sincronize favoritos, senhas e outras coisas em tod
 onboarding-data-sync-button2 = Entre no { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Fique atento a vazamentos de dados
 onboarding-firefox-monitor-text = O { -monitor-brand-name } verifica se seu e-mail apareceu em um vazamento de dados e manda um alerta para você caso apareça em um novo vazamento.
+onboarding-firefox-monitor-text2 = O { -monitor-brand-name } verifica se seu e-mail apareceu em um vazamento de dados conhecido e envia um alerta caso apareça em um novo vazamento.
 onboarding-firefox-monitor-button = Cadastre-se para receber alertas
 onboarding-browse-privately-title = Navegue com privacidade
 onboarding-browse-privately-text = A navegação privativa limpa seu histórico de pesquisa e navegação para manter em segredo de qualquer um que use o computador.

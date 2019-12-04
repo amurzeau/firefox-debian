@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Kadavin roadennoù er c'hadaviñ diastal
 urlbar-addons-notification-anchor =
     .tooltiptext = Digeriñ penel kemennadenn staliadur an askouezh
+urlbar-tip-help-icon =
+    .title = Kaout skoazell
+urlbar-geolocation-blocked =
+    .tooltiptext = Stanket ho peus an titouroù lec'hiadur evit al lec'hienn-mañ.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Stanket ho peus ar rebuzadurioù evit al lec'hienn-mañ.
+urlbar-camera-blocked =
+    .tooltiptext = Stanket ho peus ho kamera evit al lec'hienn-mañ.
+urlbar-microphone-blocked =
+    .tooltiptext = Stanket ho peus ho mikrofon evit al lec'hienn-mañ.
+urlbar-screen-blocked =
+    .tooltiptext = Difennet ho peus al lec'hienn-mañ da rannañ ho skramm.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Stanket ho peus ar c'hadaviñ diastal evit al lec'hienn-mañ.
+urlbar-popup-blocked =
+    .tooltiptext = Stanket hoc'h eus an diflugelloù evit al lec'hienn-mañ.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Stanket ho peus al lenn emgefreek media gant ar son evit al lec'hienn-mañ.
+urlbar-canvas-blocked =
+    .tooltiptext = Stanket ho peus eztennadur ar roadennoù ar steuenn.
+urlbar-midi-blocked =
+    .tooltiptext = Stanket ho peus an haeziñ MIDI evit al lec'hienn-mañ.
+urlbar-install-blocked =
+    .tooltiptext = Stanket ho peus ar staliadurioù askouezhioù war al lec'hienn-mañ.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Kuitaat ar mod skramm a-bezh
     .accesskey = K
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Ar wech-mañ, klaskit gant:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Kemmañ an arventennoù klask
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Kemmañ an arventennoù klask
+search-one-offs-context-open-new-tab =
+    .label = Klask en ivinell nevez
+    .accesskey = n
+search-one-offs-context-set-as-default =
+    .label = Lakaat evel keflusker enklask dre ziouer
+    .accesskey = k
+search-one-offs-context-set-as-default-private =
+    .label = Lakaat da lusker enklask dre ziouer evit ar prenestroù prevez
+    .accesskey = P

@@ -100,9 +100,11 @@ detail-private-browsing-description2 = Quando permitido, a extensão irá ter ac
 # cannot be overridden by the user.
 detail-private-disallowed-label = Não permitido em janelas privadas
 detail-private-disallowed-description = Esta extensão não é executada durante a navegação privada. <label data-l10n-name="detail-private-browsing-learn-more">Saber mais</label>
+detail-private-disallowed-description2 = Esta extensão não é executada durante a navegação privada. <a data-l10n-name="learn-more">Saber mais</a>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = Requer acesso a janelas privadas
 detail-private-required-description = Esta extensão tem acesso às suas atividades online enquanto durante a navegação privada. <<label data-l10n-name="detail-private-browsing-learn-more">Saber mais</label>
+detail-private-required-description2 = Esta extensão tem acesso às suas atividades on-line durante a navegação privada. <a data-l10n-name="learn-more">Saber mais</a>
 detail-private-browsing-on =
     .label = Permitir
     .tooltiptext = Ativar em navegação privada
@@ -187,6 +189,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Ativar
     .tooltiptext = Ativar verificação de segurança de atualização do extra
+extensions-warning-safe-mode = Todos os extras foram desativados pelo modo de segurança.
+extensions-warning-check-compatibility = A verificação de compatibilidade de extras está desativada. Poderá ter extras incompatíveis.
+extensions-warning-check-compatibility-button = Ativar
+    .title = Ativar verificação de compatibilidade de extras
+extensions-warning-update-security = A verificação de compatibilidade de extras está desativada. Poderá estar comprometido com atualizações.
+extensions-warning-update-security-button = Ativar
+    .title = Ativar verificação de segurança de atualização do extra
 
 ## Strings connected to add-on updates
 
@@ -196,12 +205,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Ver atualizações recentes
     .accesskey = V
+addon-updates-check-for-updates = Procurar atualizações
+    .accesskey = c
+addon-updates-view-updates = Ver atualizações recentes
+    .accesskey = V
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Atualizar extras automaticamente
+    .accesskey = A
+addon-updates-update-addons-automatically = Atualizar extras automaticamente
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -215,6 +230,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = R
 extensions-updates-reset-updates-to-manual =
     .label = Repor atualização manual para todos os extras
+    .accesskey = R
+addon-updates-reset-updates-to-automatic = Repor atualização automática para todos os extras
+    .accesskey = R
+addon-updates-reset-updates-to-manual = Repor atualização manual para todos os extras
     .accesskey = R
 
 ## Status messages displayed when updating add-ons
@@ -234,11 +253,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Instalar atualizações
     .tooltiptext = Instalar atualizações disponíveis nesta lista
+addon-updates-updating = A atualizar extras
+addon-updates-installed = Os seus extras foram atualizados.
+addon-updates-none-found = Nenhuma atualização encontrada
+addon-updates-manual-updates-found = Ver atualizações disponíveis
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Instalar extra a partir de ficheiro…
+    .accesskey = I
+addon-install-from-file-dialog-title = Selecione o extra a instalar
+addon-install-from-file-filter-name = Extras
+addon-open-about-debugging = Depurar extras
+    .accesskey = p
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Gerir atalhos de extensões
+    .accesskey = s
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Gerir atalhos de extensões
     .accesskey = s
 shortcuts-no-addons = Não tem quaisquer extensões ativadas.
 shortcuts-no-commands = As seguintes extensões não possuem atalhos:
@@ -252,6 +287,12 @@ shortcuts-modifier-other = Incluir Ctrl ou Alt
 shortcuts-invalid = Combinação inválida
 shortcuts-letter = Escrever uma letra
 shortcuts-system = Não é possível sobrepor um atalho do { -brand-short-name }
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Atalho duplicado
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } está a ser utilizado como um atalho em mais do que um caso. Atalhos duplicados podem causar comportamentos inesperados.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -295,11 +336,17 @@ install-theme-button = Instalar tema
 # the detailed add-on view is opened, from where the add-on can be managed.
 manage-addon-button = Gerir
 find-more-addons = Encontrar mais extras
+# This is a label for the button to open the "more options" menu, it is only
+# used for screen readers.
+addon-options-button =
+    .aria-label = Mais opções
 
 ## Add-on actions
 
 report-addon-button = Reportar
 remove-addon-button = Remover
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Não pode ser removido <a data-l10n-name="link">Porquê?</a>
 disable-addon-button = Desativar
 enable-addon-button = Ativar
 expand-addon-button = Mais opções
@@ -365,6 +412,11 @@ install-update-button = Atualizar
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed =
     .title = Permitido em janelas privadas
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed2 =
+    .title = Permitido nas janelas privadas
+    .aria-label = { addon-badge-private-browsing-allowed2.title }
 addon-detail-private-browsing-help = Quando permitido, a extensão irá ter acesso às suas atividades online durante a navegação privada. <a data-l10n-name="learn-more">Saber mais</a>
 addon-detail-private-browsing-allow = Permitir
 addon-detail-private-browsing-disallow = Não permitir
@@ -373,6 +425,11 @@ addon-detail-private-browsing-disallow = Não permitir
 addon-badge-recommended =
     .title = Recomendada
     .alt = Recomendada
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended2 =
+    .title = O { -brand-product-name } recomenda apenas as extensões que cumpram aos nossos padrões para segurança e desempenho.
+    .aria-label = { addon-badge-recommended2.title }
 available-updates-heading = Atualizações disponíveis
 recent-updates-heading = Atualizações recentes
 release-notes-loading = A carregar…
@@ -383,3 +440,18 @@ recommended-themes-heading = Temas recomendados
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = A sentir-se criativo(a)? <a data-l10n-name="link">Crie o seu próprio tema com o Firefox Color.</a>
+
+## Page headings
+
+extension-heading = Gira as suas extensões
+theme-heading = Gira os seus temas
+plugin-heading = Gira os seus plugins
+dictionary-heading = Gira os seus dicionários
+locale-heading = Gira os seus idiomas
+updates-heading = Gerir as auas atualizações
+discover-heading = Personalize o seu { -brand-short-name }
+shortcuts-heading = Gira atalhos de extensões
+theme-heading-search-label = Encontre mais temas
+extension-heading-search-label = Encontre mais extensões
+addons-heading-search-input =
+    .placeholder = Pesquisar addons.mozilla.org

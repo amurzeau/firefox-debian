@@ -71,16 +71,19 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = Ищите сохранённые логины? Настройте { -sync-brand-short-name(case: "accusative") }.
+about-logins-login-intro-heading-logged-in = Синхронизированных логинов не найдено.
 login-intro-description = Если вы сохранили ваши логины в { -brand-product-name } на другом устройстве, то вот как получить к ним доступ здесь:
 login-intro-instruction-fxa = Создайте или войдите в ваш { -fxaccount-brand-name } на устройстве, где сохранены ваши логины
 login-intro-instruction-fxa-settings = Убедитесь, что вы установили флажок «Логины» в настройках { -sync-brand-short-name(case: "genitive") }
 about-logins-intro-instruction-help = Посетите <a data-l10n-name="help-link">Поддержку { -lockwise-brand-short-name }</a> для получения помощи
+about-logins-intro-import = Если ваши логины сохранены в другом браузере, вы можете <a data-l10n-name="import-link">импортировать их в { -lockwise-brand-short-name }</a>
 
 ## Login
 
 login-item-new-login-title = Создать новый логин
 login-item-edit-button = Изменить
 login-item-delete-button = Удалить
+about-logins-login-item-remove-button = Удалить
 login-item-origin-label = Адрес веб-сайта
 login-item-origin =
     .placeholder = https://www.example.com
@@ -110,11 +113,8 @@ master-password-reload-button =
     .label = Войти
     .accesskey = В
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = Отмена
-confirmation-dialog-dismiss-button =
-    .title = Отмена
 enable-password-sync-notification-message =
     { PLATFORM() ->
         [windows] Хотите получать доступ к вашим логинам везде, где бы вы ни использовали { -brand-product-name }? Перейдите в настройки { -sync-brand-short-name(case: "genitive") } и выберите «Логины».
@@ -128,8 +128,19 @@ enable-password-sync-preferences-button =
         }
     .accesskey = О
 confirm-delete-dialog-title = Удалить этот логин?
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = Не спрашивать в следующий раз
+    .accesskey = е
+
+## Dialogs
+
+confirmation-dialog-cancel-button = Отмена
+confirmation-dialog-dismiss-button =
+    .title = Отмена
+about-logins-confirm-remove-dialog-title = Удалить этот логин?
 confirm-delete-dialog-message = Это действие не может быть отменено.
 confirm-delete-dialog-confirm-button = Удалить
+about-logins-confirm-remove-dialog-confirm-button = Удалить
 confirm-discard-changes-dialog-title = Отменить несохранённые изменения?
 confirm-discard-changes-dialog-message = Все несохранённые изменения будут потеряны.
 confirm-discard-changes-dialog-confirm-button = Отменить

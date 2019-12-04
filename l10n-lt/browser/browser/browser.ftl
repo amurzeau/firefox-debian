@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Saugoti duomenis išliekančioje atmintyje
 urlbar-addons-notification-anchor =
     .tooltiptext = Atverti priedo diegimo pranešimo skydelį
+urlbar-tip-help-icon =
+    .title = Žinynas ir pagalba
+urlbar-geolocation-blocked =
+    .tooltiptext = Šioje svetainėje esate užblokavę buvimo vietos informaciją.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Šioje svetainėje esate užblokavę pranešimus.
+urlbar-camera-blocked =
+    .tooltiptext = Šioje svetainėje esate užblokavę savo kamerą.
+urlbar-microphone-blocked =
+    .tooltiptext = Šioje svetainėje esate užblokavę savo mikrofoną.
+urlbar-screen-blocked =
+    .tooltiptext = Šiai svetainei neleidžiate dalintis ekrano vaizdu.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Šioje svetainėje esate užblokavę išliekančių duomenų saugojimą.
+urlbar-popup-blocked =
+    .tooltiptext = Šioje svetainėje esate užblokavę iškylančiuosius langus.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Šioje svetainėje esate užblokavę automatinį medijos grojimą.
+urlbar-canvas-blocked =
+    .tooltiptext = Šioje svetainėje esate užblokavę drobės duomenų išgavimą.
+urlbar-midi-blocked =
+    .tooltiptext = Šioje svetainėje esate užblokavę MIDI naudojimą.
+urlbar-install-blocked =
+    .tooltiptext = Šioje svetainėje esate užblokavę priedų diegimą.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Grįžti iš viso ekrano veiksenos
     .accesskey = v
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Šįkart ieškokite su:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Keisti paieškos nuostatas
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Keisti paieškos nuostatas
+search-one-offs-context-open-new-tab =
+    .label = Ieškoti naujoje kortelėje
+    .accesskey = k
+search-one-offs-context-set-as-default =
+    .label = Laikyti numatytąja ieškykle
+    .accesskey = m
+search-one-offs-context-set-as-default-private =
+    .label = Skirti numatytąja ieškykle privačiojo naršymo langams
+    .accesskey = p

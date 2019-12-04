@@ -21,6 +21,7 @@ onboarding-button-label-get-started = Başlayalım
 onboarding-welcome-header = { -brand-short-name } tarayıcısına hoş geldiniz
 onboarding-welcome-body = Tarayıcınız hazır. Ama { -brand-product-name } yalnızca bir tarayıcı değil.
 onboarding-welcome-learn-more = Avantajlar hakkında daha fazla bilgi alın.
+onboarding-welcome-modal-get-body = Tarayıcınız hazır. Ama { -brand-product-name } yalnızca bir tarayıcı değil.
 onboarding-welcome-modal-supercharge-body = Gizlilik korumanızı güçlendirin.
 onboarding-welcome-modal-privacy-body = Tarayıcınız hazır. Şimdi biraz daha gizlilik koruması ekleyelim.
 onboarding-welcome-modal-family-learn-more = { -brand-product-name } ürün ailesi hakkında bilgi alın.
@@ -32,10 +33,20 @@ onboarding-join-form-email =
 onboarding-join-form-email-error = Geçerli bir e-posta gerekiyor
 onboarding-join-form-legal = Devam ederseniz <a data-l10n-name="terms">Hizmet Koşulları</a>’nı ve <a data-l10n-name="privacy">Gizlilik Bildirimi</a>’ni kabul etmiş olursunuz.
 onboarding-join-form-continue = Devam et
+# This message is followed by a link using onboarding-join-form-signin ("Sign In") as text.
+onboarding-join-form-signin-label = Zaten hesabınız var mı?
+# Text for link to submit the sign in form
+onboarding-join-form-signin = Giriş yap
 onboarding-start-browsing-button-label = Gezinmeye başla
 onboarding-cards-dismiss =
     .title = Kapat
     .aria-label = Kapat
+
+## Welcome full page string
+
+onboarding-fullpage-welcome-subheader = Yapabileceğiniz her şeyi keşfetmeye başlayalım.
+onboarding-fullpage-form-email =
+    .placeholder = E-posta adresiniz…
 
 ## Firefox Sync modal dialog strings.
 
@@ -71,6 +82,7 @@ onboarding-benefit-privacy-text = Yaptığımız her şeyde Kişisel Veri Sözü
 onboarding-benefit-sync-title = { -sync-brand-short-name }
 onboarding-benefit-sync-text = Yer imlerinizi, parolalarınızı, geçmişinizi ve daha fazlasını { -brand-product-name } kullandığınız her yere taşıyın.
 onboarding-benefit-monitor-title = { -monitor-brand-short-name }
+onboarding-benefit-monitor-text = Kişisel bilgileriniz yeni bir veri ihlalinde geçerilirse size haber verelim.
 onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
 onboarding-benefit-lockwise-text = Parolalarınızı güvenle saklayın ve yanınızda taşıyın.
 
@@ -101,6 +113,7 @@ onboarding-data-sync-text2 = Yer imlerinizi, parolalarınızı ve daha fazlasın
 onboarding-data-sync-button2 = { -sync-brand-short-name }’e giriş yap
 onboarding-firefox-monitor-title = Veri ihlallerinden haberiniz olsun
 onboarding-firefox-monitor-text = { -monitor-brand-name }, e-posta adresinizin veri ihlallerinde yer alıp almadığını takip eder, verileriniz ele geçirilirse sizi uyarır.
+onboarding-firefox-monitor-text2 = { -monitor-brand-name }, e-posta adresinizin veri ihlallerinde yer alıp almadığını takip eder ve verileriniz ele geçirilirse sizi uyarır.
 onboarding-firefox-monitor-button = Uyarılara kaydol
 onboarding-browse-privately-title = Gizlice dolaşın
 onboarding-browse-privately-text = Gizli Gezinti, arama ve gezinti geçmişinizi temizleyerek bilgisayarınızı kullanan başkalarının ne yaptığınızı öğrenmesini önler.

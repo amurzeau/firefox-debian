@@ -37,6 +37,18 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Sábháil sonraí sa Stóras Seasmhach
 urlbar-addons-notification-anchor =
     .tooltiptext = Oscail an painéal um theachtaireachtaí suiteála breiseáin
+urlbar-geolocation-blocked =
+    .tooltiptext = Chuir tú cosc ar an suíomh seo an áit ina bhfuil tú a fheiceáil.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Chuir tú cosc ar fhógraí ón suíomh seo.
+urlbar-camera-blocked =
+    .tooltiptext = Chuir tú cosc ar do cheamara ar an suíomh seo.
+urlbar-microphone-blocked =
+    .tooltiptext = Chuir tú cosc ar do mhicreafón ar an suíomh seo.
+urlbar-screen-blocked =
+    .tooltiptext = Chuir tú cosc ar an suíomh seo do scáileán a chomhroinnt.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Chuir tú cosc ar stóras seasmhach ar an suíomh seo.
 
 ## Page Action Context Menu
 
@@ -49,3 +61,18 @@ full-screen-autohide =
 full-screen-exit =
     .label = Fág Mód Lánscáileáin
     .accesskey = L
+
+## Search Engine selection buttons (one-offs)
+
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Socruithe Cuardaigh
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Athraigh na socruithe cuardaigh
+search-one-offs-context-open-new-tab =
+    .label = Cuardaigh i gCluaisín Nua
+    .accesskey = r
+search-one-offs-context-set-as-default =
+    .label = Socraigh mar Inneall Cuardaigh Réamhshocraithe
+    .accesskey = d

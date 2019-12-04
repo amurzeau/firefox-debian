@@ -15,8 +15,8 @@ graph-week-summary =
 # earliest date recorded in the database.
 graph-total-tracker-summary =
     { $count ->
-        [one] <b>{ $count }</b> tracciante bloccato dal { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
-       *[other] <b>{ $count }</b> traccianti bloccati dal { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
+        [one] <b>{ $count }</b> elemento tracciante bloccato dal { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
+       *[other] <b>{ $count }</b> elementi traccianti bloccati dal { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
     }
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -31,11 +31,13 @@ protection-report-page-title = Protezioni per la privacy
 protection-report-content-title = Protezioni per la privacy
 etp-card-title = Protezione antitracciamento avanzata
 etp-card-content = Gli elementi traccianti ti seguono online al fine di raccogliere informazioni sui tuoi interessi e le tue abitudini di navigazione. { -brand-short-name } blocca molti di questi traccianti e altri script dannosi.
+protection-report-etp-card-content-custom-not-blocking = Tutte le protezioni sono attualmente disattivate. Scegli quali elementi traccianti bloccare nelle impostazioni di { -brand-short-name }.
+protection-report-manage-protections = Gestisci impostazioni
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
 # capitalization for this string should match the output for your locale.
 graph-today = oggi
 # This string is used to describe the graph for screenreader users.
-graph-legend-description = Grafico contenente il numero totale di traccianti bloccati questa settimana, suddiviso per tipologia.
+graph-legend-description = Grafico contenente il numero totale di elementi traccianti bloccati questa settimana, suddiviso per tipologia.
 social-tab-title = Traccianti dei social media
 social-tab-contant = I social network impostano elementi traccianti in altri siti per scoprire cosa fai, leggi e guardi quando sei online. In questo modo sono in grado di raccogliere molte più informazioni rispetto a quello che condividi nei tuoi profili online. <a data-l10n-name="learn-more-link">Ulteriori informazioni</a>
 cookie-tab-title = Cookie traccianti intersito
@@ -60,12 +62,18 @@ lockwise-passwords-stored = Password salvate in modo sicuro <a data-l10n-name="l
 turn-on-sync = Attiva { -sync-brand-short-name }…
     .title = Apri le impostazioni di sincronizzazione
 manage-devices = Gestisci dispositivi
+manage-connected-devices = Gestisci dispositivi…
 # Variables:
 #   $count (Number) - Number of devices connected with sync.
 lockwise-sync-status =
     { $count ->
         [one] Sincronizzato con un altro dispositivo
        *[other] Sincronizzato con { $count } altri dispositivi
+    }
+lockwise-connected-device-status =
+    { $count ->
+        [one] Connesso con un dispositivo
+       *[other] Connesso con { $count } dispositivi
     }
 lockwise-sync-not-syncing-devices = Non sincronizzato con altri dispositivi
 monitor-title = Tieni sotto controllo le violazioni di dati

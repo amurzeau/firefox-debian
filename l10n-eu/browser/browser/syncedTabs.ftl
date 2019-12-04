@@ -5,6 +5,7 @@
 synced-tabs-sidebar-title = Sinkronizatutako fitxak
 synced-tabs-sidebar-noclients-subtitle = Beste gailuetako zure fitxak hemen ikusi nahi dituzu?
 synced-tabs-sidebar-notsignedin = Hasi saioa zure beste gailuetako fitxak ikusteko.
+synced-tabs-sidebar-intro = Ikusi zure beste gailuetako fitxen zerrenda.
 synced-tabs-sidebar-unverified = Zure kontua egiaztatu egin behar da.
 synced-tabs-sidebar-notabs = Irekitako fitxarik ez
 synced-tabs-sidebar-openprefs = Ireki { -sync-brand-short-name } hobespenak
@@ -36,4 +37,8 @@ synced-tabs-context-open-all-in-tabs =
 synced-tabs-context-manage-devices =
     .label = Kudeatu gailuak…
     .accesskey = g
+synced-tabs-context-sync-now =
+    .label = Sinkronizatu orain
+    .accesskey = S
 fxa-sign-in = Hasi saioa { -sync-brand-short-name }(e)n
+turn-on-sync = Aktibatu { -sync-brand-short-name }

@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = שמירת נתונים באחסון קבוע
 urlbar-addons-notification-anchor =
     .tooltiptext = פתיחת חלונית ההודעות של התקנת תוספות
+urlbar-tip-help-icon =
+    .title = קבלת עזרה
+urlbar-geolocation-blocked =
+    .tooltiptext = חסמת מפני האתר הזה לגשת לנתוני המיקום שלך.
+urlbar-web-notifications-blocked =
+    .tooltiptext = חסמת התרעות עבור אתר זה.
+urlbar-camera-blocked =
+    .tooltiptext = חסמת את המצלמה שלך עבור אתר זה.
+urlbar-microphone-blocked =
+    .tooltiptext = חסמת את המיקרופון שלך עבור אתר זה.
+urlbar-screen-blocked =
+    .tooltiptext = חסמת מפני האתר הזה את האפשרות לשתף את המסך שלך.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = חסמת את האתר הזה משמירת נתונים קבועים.
+urlbar-popup-blocked =
+    .tooltiptext = חסמת חלונות קופצים עבור אתר זה.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = חסמת ניגון אוטומטי של מדיה עם קול עבור אתר זה.
+urlbar-canvas-blocked =
+    .tooltiptext = חסמת חילוץ נתוני משטחי ציור עבור אתר זה.
+urlbar-midi-blocked =
+    .tooltiptext = חסמת גישת MIDI עבור אתר זה.
+urlbar-install-blocked =
+    .tooltiptext = חסמת התקנת תוספות עבור אתר זה.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = יציאה ממצב מסך מלא
     .accesskey = צ
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = הפעם, לחפש באמצעות:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = שינוי הגדרות החיפוש
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = שינוי הגדרות החיפוש
+search-one-offs-context-open-new-tab =
+    .label = חיפוש בלשונית חדשה
+    .accesskey = ל
+search-one-offs-context-set-as-default =
+    .label = הגדרה כמנוע חיפוש ברירת מחדל
+    .accesskey = ב
+search-one-offs-context-set-as-default-private =
+    .label = הגדרה כמנוע חיפוש ברירת המחדל עבור חלונות פרטיים
+    .accesskey = ג

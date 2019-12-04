@@ -69,6 +69,7 @@ about-logins-list-item-breach-icon =
 ## Introduction screen
 
 login-intro-heading = กำลังมองหาการเข้าสู่ระบบที่บันทึกไว้ของคุณ? ตั้งค่า { -sync-brand-short-name }
+about-logins-login-intro-heading-logged-in = ไม่พบการเข้าสู่ระบบที่ซิงค์
 login-intro-description = หากคุณบันทึกการเข้าสู่ระบบของคุณไว้ที่ { -brand-product-name } บนอุปกรณ์อื่น ๆ คุณสามารถนำมาใช้บนอุปกรณ์นี้ได้ด้วยวิธีนี้:
 login-intro-instruction-fxa = สร้างหรือลงชื่อเข้าใช้ { -fxaccount-brand-name } ของคุณบนอุปกรณ์ที่บันทึกการเข้าสู่ระบบของคุณ
 login-intro-instruction-fxa-settings = ตรวจสอบให้แน่ใจว่าคุณได้เลือกกล่องกาเครื่องหมายการเข้าสู่ระบบในการตั้งค่า { -sync-brand-short-name }
@@ -108,11 +109,13 @@ master-password-reload-button =
     .label = เข้าสู่ระบบ
     .accesskey = ข
 
-## Dialogs
+## Password Sync notification
 
-confirmation-dialog-cancel-button = ยกเลิก
-confirmation-dialog-dismiss-button =
-    .title = ยกเลิก
+enable-password-sync-notification-message =
+    { PLATFORM() ->
+        [windows] ต้องการเข้าสู่ระบบของคุณทุกที่ที่คุณใช้ { -brand-product-name } หรือไม่? ไปที่ตัวเลือก { -sync-brand-short-name } ของคุณแล้วเลือกกล่องกาเครื่องหมาย การเข้าสู่ระบบ
+       *[other] ต้องการเข้าสู่ระบบของคุณทุกที่ที่คุณใช้ { -brand-product-name } หรือไม่? ไปที่ค่ากำหนด { -sync-brand-short-name } ของคุณแล้วเลือกกล่องกาเครื่องหมาย การเข้าสู่ระบบ
+    }
 enable-password-sync-preferences-button =
     .label =
         { PLATFORM() ->
@@ -120,6 +123,15 @@ enable-password-sync-preferences-button =
            *[other] เยี่ยมชมค่ากำหนด { -sync-brand-short-name }
         }
     .accesskey = ย
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = ไม่ต้องถามฉันอีก
+    .accesskey = ม
+
+## Dialogs
+
+confirmation-dialog-cancel-button = ยกเลิก
+confirmation-dialog-dismiss-button =
+    .title = ยกเลิก
 confirm-delete-dialog-title = ลบการเข้าสู่ระบบนี้?
 confirm-delete-dialog-message = การกระทำนี้ไม่สามารถเลิกทำได้
 confirm-delete-dialog-confirm-button = ลบ
@@ -136,5 +148,15 @@ breach-alert-dismiss =
 
 ## Error Messages
 
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login = มีรายการสำหรับ { $loginTitle } พร้อมชื่อผู้ใช้นั้นแล้ว
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = มีรายการสำหรับ { $loginTitle } พร้อมชื่อผู้ใช้นั้นแล้ว <a data-l10n-name="duplicate-link">ต้องการไปยังรายการที่มีอยู่หรือไม่?</a>
 # This is a generic error message.
 about-logins-error-message-default = เกิดข้อผิดพลาดขณะพยายามบันทึกรหัสผ่านนี้

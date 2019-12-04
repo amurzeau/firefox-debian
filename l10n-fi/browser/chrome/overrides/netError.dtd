@@ -187,6 +187,9 @@ was trying to connect. -->
 <!ENTITY cspBlocked.title "Sisällön tietosuojakäytännön estämä">
 <!ENTITY cspBlocked.longDesc "<p>&brandShortName; esti tämän sivun latautumisen tässä yhteydessä, koska sivun sisällön tietosuojakäytäntö kieltää sen.</p>">
 
+<!ENTITY xfoBlocked.title "Estetty X-Frame-Options-käytännön perusteella">
+<!ENTITY xfoBlocked.longDesc "<p>&brandShortName; esti tätä sivua latautumasta tässä yhteydessä, koska sivun X-Frame-Options-käytäntö estää lataamisen.</p>">
+
 <!ENTITY corruptedContentErrorv2.title "Sisältö vioittunut -virhe">
 <!ENTITY corruptedContentErrorv2.longDesc "<p>Avattavaa sivua ei voida näyttää, koska tiedonsiirrossa tapahtui virhe.</p><ul><li>Ilmoitathan ongelmasta sivuston omistajalle.</li></ul>">
 
@@ -228,6 +231,7 @@ was trying to connect. -->
 <!ENTITY prefReset.longDesc "Vaikuttaa siltä, että verkon turvallisuusasetukset aiheuttavat tämän. Haluatko palauttaa oletusasetukset?">
 <!ENTITY prefReset.label "Palauta oletusasetukset">
 
+<!ENTITY enableTls10.longDesc "Sivusto ei välttämättä tue TLS 1.2 -yhteyskäytäntöä, joka on vanhin &brandShortName;in tukema versio. TLS 1.0:n ja TLS 1.1:n ottaminen käyttöön saattaa mahdollistaa yhteyden muodostamisen.">
 <!ENTITY enableTls10.note "TLS 1.0 ja TLS 1.1 poistetaan pysyvästi käytöstä tulevassa julkaisussa.">
 <!ENTITY enableTls10.label "Ota käyttöön TLS 1.0 ja 1.1">
 

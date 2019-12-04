@@ -186,6 +186,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Zmóžnić
     .tooltiptext = Přepruwowanje wěstoty aktualizacije zmóžnić
+extensions-warning-safe-mode = Wšě přidatki su so přez wěsty modus znjemóžnili.
+extensions-warning-check-compatibility = Přepruwowanje přidatkoweje kompatibelnosće je znjemóžnjene. Je móžno, zo maće njekompatibelne přidatki.
+extensions-warning-check-compatibility-button = Zmóžnić
+    .title = Přepruwowanje přidatkoweje kompatibelnosće zmóžnić
+extensions-warning-update-security = Přepruwowanje wěstoty aktualizacije je znjemóžnjene. Je móžno, zo aktualizacije wam wohrožuja.
+extensions-warning-update-security-button = Zmóžnić
+    .title = Přepruwowanje wěstoty aktualizacije zmóžnić
 
 ## Strings connected to add-on updates
 
@@ -195,12 +202,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Nowe aktualizacije sej wobhladać
     .accesskey = N
+addon-updates-check-for-updates = Za aktualizacijemi pytać
+    .accesskey = p
+addon-updates-view-updates = Nowe aktualizacije sej wobhladać
+    .accesskey = N
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Přidatki awtomatisce aktualizować
+    .accesskey = a
+addon-updates-update-addons-automatically = Přidatki awtomatisce aktualizować
     .accesskey = a
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -214,6 +227,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = z
 extensions-updates-reset-updates-to-manual =
     .label = Wšě přidatki manuelnje aktualizować
+    .accesskey = m
+addon-updates-reset-updates-to-automatic = Wšě přidatki zaso awtomatisce aktualizować
+    .accesskey = z
+addon-updates-reset-updates-to-manual = Wšě přidatki manuelnje aktualizować
     .accesskey = m
 
 ## Status messages displayed when updating add-ons
@@ -233,11 +250,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Aktualizacije instalować
     .tooltiptext = K dispoziciji stejace aktualizacije z lisćiny instalować
+addon-updates-updating = Aktualizowanje přidatkow
+addon-updates-installed = Waše přidatki su so zaktualizowali.
+addon-updates-none-found = Žane aktualizacije namakane
+addon-updates-manual-updates-found = K dispoziciji stejace aktualizacije sej wobhladać
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Přidatk z dataje instalować…
+    .accesskey = P
+addon-install-from-file-dialog-title = Přidatk za instalaciju wubrać
+addon-install-from-file-filter-name = Přidatki
+addon-open-about-debugging = Přidatki za zmylkami přepytować
+    .accesskey = d
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Tastowe skrótšenki rozšěrjenjow rjadować
+    .accesskey = T
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Tastowe skrótšenki rozšěrjenjow rjadować
     .accesskey = T
 shortcuts-no-addons = Njejśce žane rozšěrjenja zmóžnił.
 shortcuts-no-commands = Slědowace rozšěrjenja tastowe skrótšenki nimaja:
@@ -304,6 +337,8 @@ addon-options-button =
 
 report-addon-button = Zdźělić
 remove-addon-button = Wotstronić
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Njeda so wotstronić <a data-l10n-name="link">Čehodla?</a>
 disable-addon-button = Znjemóžnić
 enable-addon-button = Zmóžnić
 expand-addon-button = Dalše nastajenja
@@ -399,3 +434,18 @@ recommended-themes-heading = Doporučene drasty
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Čujeće so kreatiwny? <a data-l10n-name="link">Wutworće swójsku drastu z Firefox Color.</a>
+
+## Page headings
+
+extension-heading = Waše rozšěrjenja rjadować
+theme-heading = Waše drasty rjadować
+plugin-heading = Waše tykače rjadować
+dictionary-heading = Rjadujće swoje słowniki
+locale-heading = Rjadujće swoje rěče
+updates-heading = Waše aktualizacije rjadować
+discover-heading = Personalizujće swój { -brand-short-name }
+shortcuts-heading = Tastowe skrótšenki rozšěrjenjow rjadować
+theme-heading-search-label = Dalše drasty pytać
+extension-heading-search-label = Dalše rozšěrjenja pytać
+addons-heading-search-input =
+    .placeholder = Na addons.mozilla.org pytać

@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = পার্সিস্টেন্ট স্টোরেজে ডাটা স্টোর করুন
 urlbar-addons-notification-anchor =
     .tooltiptext = অ্যাড-অন ইনস্টলেশন বার্তা প্যানেল খুলুন
+urlbar-tip-help-icon =
+    .title = সাহায্য নিন
+urlbar-geolocation-blocked =
+    .tooltiptext = আপনি এই ওয়েবসাইটের জন্য অবস্থানগত তথ্য ব্লক করেছেন
+urlbar-web-notifications-blocked =
+    .tooltiptext = আপনি এই ওয়েব সাইটের জন্য ঘোষণা ব্লক করেছেন।
+urlbar-camera-blocked =
+    .tooltiptext = আপনি এই ওয়েব সাইটের জন্য আপনার ক্যামেরা ব্লক করেছেন।
+urlbar-microphone-blocked =
+    .tooltiptext = আপনি এই ওয়েব সাইটের জন্য আপনার মাইক্রোফোন ব্লক করেছেন
+urlbar-screen-blocked =
+    .tooltiptext = আপনি ওয়েবসাইটটিকে ব্লক করেছেন যেন আপনার স্ক্রিন শেয়ার না হয়
+urlbar-persistent-storage-blocked =
+    .tooltiptext = আপনি এই ওয়েব সাইটের জন্য পার্সিস্টেন্ট স্টোরেজ ব্লক করেছেন।
+urlbar-popup-blocked =
+    .tooltiptext = আপনি এই ওয়েবসাইটের জন্য পপ-আপ ব্লক করেছেন।
+urlbar-autoplay-media-blocked =
+    .tooltiptext = আপনি এই ওয়েবসাইটের সাউন্ড মিডিয়া অটোপ্লে ব্লক করেছেন।
+urlbar-canvas-blocked =
+    .tooltiptext = আপনি এই ওয়েবসাইটের জন্য ক্যানভাস ডেটা নিষ্কাশন অবরোধ করেছেন।
+urlbar-midi-blocked =
+    .tooltiptext = আপনি সাইটটির জন্য MIDI এর প্রবেশ ব্লক করেছেন।
+urlbar-install-blocked =
+    .tooltiptext = আপনি এই ওয়েবসাইটের জন্য অ্যাড-অন ইনস্টলেশন বন্ধ করেছেন।
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = পূর্ণ পর্দাজুড়ে প্রদর্শন মোড থেকে প্রস্থান
     .accesskey = F
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = এবার এর সাথে অনুসন্ধান করুন:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = অনুসন্ধান সেটিং বদল করুন
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = অনুসন্ধান সেটিংস পরিবর্তন করুন
+search-one-offs-context-open-new-tab =
+    .label = নতুন ট্যাবে অনুসন্ধান
+    .accesskey = T
+search-one-offs-context-set-as-default =
+    .label = ডিফল্ট অনুসন্ধান ইঞ্জিন হিসেবে সেট করুন
+    .accesskey = D
+search-one-offs-context-set-as-default-private =
+    .label = ব্যক্তিগত উইন্ডোর জন্য ডিফল্ট অনুসন্ধান ইঞ্জিন হিসেবে সেট করুন
+    .accesskey = P

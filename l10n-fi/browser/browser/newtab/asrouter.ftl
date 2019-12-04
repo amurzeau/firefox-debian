@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = tekijältä { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Suositus
+cfr-doorhanger-extension-notification2 = Suositus
+    .tooltiptext = Laajennussuositus
+    .a11y-announcement = Laajennussuositus saatavilla
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Suositus
+    .tooltiptext = Ominaisuussuositus
+    .a11y-announcement = Ominaisuussuositus saatavilla
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -73,11 +81,14 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
 ## Protections panel
 
 cfr-protections-panel-header = Selaa ilman seurantaa
-cfr-protections-panel-body = Pidä tietosi itselläsi. { -brand-short-name } suojaa sinua useimmilta yleisimmiltä tekemisiäsi verkossa jäljittäviltä seuraimilta.
+cfr-protections-panel-body = Pidä tietosi itselläsi. { -brand-short-name } suojaa sinua useilta yleisiltä seuraimilta, jotka seuraavat tekemisiäsi verkossa.
 cfr-protections-panel-link-text = Lue lisää
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Uusi ominaisuus:
 cfr-whatsnew-button =
     .label = Mitä uutta
     .tooltiptext = Mitä uutta
@@ -137,7 +148,7 @@ cfr-doorhanger-send-tab-ok-button = Kokeile välilehden lähettämistä
 
 cfr-doorhanger-firefox-send-header = Jaa tämä PDF turvallisesti
 cfr-doorhanger-firefox-send-body = Pidä arkaluonteiset asiakirjasi turvassa uteliailta silmiltä käyttämällä läpisalausta ja automaattisesti vanhenevaa linkkiä.
-cfr-doorhanger-firefox-send-ok-button = Kokeile { -send-brand-name }-palvelua
+cfr-doorhanger-firefox-send-ok-button = Kokeile { -send-brand-name }iä
     .accesskey = K
 
 ## Social Tracking Protection
@@ -146,5 +157,23 @@ cfr-doorhanger-socialtracking-ok-button = Näytä suojaukset
     .accesskey = N
 cfr-doorhanger-socialtracking-close-button = Sulje
     .accesskey = S
+cfr-doorhanger-socialtracking-dont-show-again = Älä näytä tämän kaltaisia viestejä jatkossa
+    .accesskey = Ä
+cfr-doorhanger-socialtracking-heading = { -brand-short-name } pysäytti sosiaalisen verkon seuraamasta sinua täällä
+cfr-doorhanger-socialtracking-description = Yksityisyytesi on tärkeää. { -brand-short-name } estää nyt yleiset sosiaalisen median seuraimet, ja siten rajoittaa mahdollisuuksia kerätä tietoja verkossa tekemistäsi asioista.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } esti yksilöijän tällä sivulla
+cfr-doorhanger-fingerprinters-description = Yksityisyytesi on tärkeää. { -brand-short-name } estää nyt yksilöijät, jotka keräävät yksilöitävissä olevia uniikkeja tietoja laitteestasi seurataksesi sinua.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } esti kryptolouhijan tällä sivulla
+cfr-doorhanger-cryptominers-description = Yksityisyytesi on tärkeää. { -brand-short-name } estää nyt kryptolouhijat, jotka käyttävät tietokoneen tehoa digitaalisen valuutan louhimiseen.
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+       *[other] { -brand-short-name } on estänyt yli <b>{ $blockedCount }</b> seurainta { $date } lähtien!
+    }
+cfr-doorhanger-milestone-ok-button = Näytä kaikki
+    .accesskey = N

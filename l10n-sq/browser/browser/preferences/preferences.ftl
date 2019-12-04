@@ -14,6 +14,11 @@ pref-page =
             [windows] Mundësi
            *[other] Parapëlqime
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Mundësi
+       *[other] Parapëlqime
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -282,6 +287,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Përdor { $plugin-name } (te { -brand-short-name })
@@ -307,7 +316,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Lëndën nën Digital Rights Management (DRM)
 play-drm-content =
@@ -457,7 +466,6 @@ choose-bookmark =
 
 home-prefs-content-header = Lëndë Firefox Home
 home-prefs-content-description = Zgjidhni ç’lëndë doni në skenën tuaj Firefox.
-home-prefs-content-discovery-description = Zbulimi i Lëndës në Kreun e Firefox-it ju lejon të zbuloni në internet artikuj të cilësisë së lartë, dhe afër interesave tuaja.
 home-prefs-search-header =
     .label = Kërkim Web
 home-prefs-topsites-header =
@@ -505,7 +513,8 @@ search-bar-shown =
     .label = Shtoni te paneli shtyllë kërkimesh
 search-engine-default-header = Motor Parazgjedhje Kërkimesh
 search-engine-default-desc = Zgjidhni motorin parazgjedhje të kërkimeve që do të përdoret te shtylla e adresave dhe shtylla e kërkimeve.
-search-engine-default-private-desc = Zgjidhni motorin parazgjedhje të kërkimeve për t’u përdorur në Dritare Private.
+search-engine-default-desc-2 = Ky është motori juaj parazgjedhje i kërkimeve te shtylla e adresave dhe shtylla e kërkimeve. Mund ta këmbeni me tjetër kur të doni.
+search-engine-default-private-desc-2 = Zgjidhni një motor të ndryshëm kërkimesh, vetëm për Dritare Private
 search-separate-default-engine =
     .label = Në Dritare Private përdor këtë motor kërkimesh
     .accesskey = p
@@ -524,6 +533,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Shfaq te përfundimet në shtyllën e adresave sugjerime kërkimi përpara se historik shfletimi
+search-show-suggestions-private-windows =
+    .label = Shfaq sugjerime kërkimesh në Dritare Private
 suggestions-addressbar-settings = Ndryshoni parapëlqime për historik shfletimesh, faqerojtës, dhe sugjerime skedash
 search-suggestions-cant-show = Këshillimet për kërkime nuk do të shfaqen te shtylla e vendndodhjeve, ngaqë { -brand-short-name }-in e keni formësuar të mos mbajë kurrë mend historikun e shfletimeve.
 search-one-click-header = Motorë kërkimesh me një klikim
@@ -640,6 +651,9 @@ sync-currently-syncing-prefs =
         [windows] Mundësi
        *[other] Parapëlqime
     }
+sync-change-options =
+    .label = Ndryshojeni…
+    .accesskey = N
 
 ## The "Choose what to sync" dialog.
 
@@ -712,6 +726,9 @@ sync-fxa-privacy-notice = Shënim Mbi Privatësinë
 privacy-header = Privatësi Shfletuesi
 
 ## Privacy Section - Forms
+
+
+## Privacy Section - Logins and Passwords
 
 logins-header = Kredenciale Hyrjesh & Fjalëkalime
 forms-ask-to-save-logins =
@@ -881,7 +898,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Vetjak
     .accesskey = V
 
-
+##
 
 content-blocking-etp-standard-desc = I baraspeshuar për mbrojtje dhe funksionim. Faqet do të ngarkohen normalisht.
 content-blocking-etp-strict-desc = Mbrojtje më e fortë, por mund të shkaktojë mosfunksionim për disa sajte apo lëndë.

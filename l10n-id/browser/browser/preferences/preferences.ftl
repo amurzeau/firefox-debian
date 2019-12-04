@@ -14,6 +14,11 @@ pref-page =
             [windows] Pengaturan
            *[other] Pengaturan
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Pengaturan
+       *[other] Pengaturan
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -295,7 +300,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Konten Digital Rights Management (DRM)
 play-drm-content =
@@ -442,7 +447,6 @@ choose-bookmark =
 
 home-prefs-content-header = Konten Beranda Firefox
 home-prefs-content-description = Pilih konten yang ingin Anda tampilkan dalam Beranda Firefox.
-home-prefs-content-discovery-description = Penemuan Konten dalam Firefox Home memungkinkan Anda untuk menemukan artikel bermutu tinggi dan relevan dari seluruh web.
 home-prefs-search-header =
     .label = Pencarian Web
 home-prefs-topsites-header =
@@ -681,6 +685,9 @@ privacy-header = Privasi Peramban
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Info Masuk & Sandi
 forms-ask-to-save-logins =
     .label = Minta untuk menyimpan info masuk dan kata sandi untuk situs web
@@ -843,7 +850,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Ubahsuai
     .accesskey = U
 
-
+##
 
 content-blocking-etp-strict-desc = Perlindungan yang lebih kuat, tetapi dapat menyebabkan beberapa situs atau konten rusak.
 content-blocking-cross-site-tracking-cookies = Kuki pelacakan lintas situs

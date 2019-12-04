@@ -21,6 +21,11 @@ onboarding-button-label-get-started = Pradėti
 onboarding-welcome-header = Sveiki, čia „{ -brand-short-name }“
 onboarding-welcome-body = Naršyklę jau turite.<br/>Dabar susipažinkite su likusia „{ -brand-product-name }“ šeima.
 onboarding-welcome-learn-more = Sužinokite apie privalumus daugiau.
+onboarding-welcome-modal-get-body = Naršyklę jau turite.<br/>Dabar išnaudokite visas „{ -brand-product-name }“ galimybes.
+onboarding-welcome-modal-supercharge-body = Pagerinkite savo privatumo apsaugą.
+onboarding-welcome-modal-privacy-body = Naršyklę jau turite. Pridėkime daugiau privatumo apsaugos.
+onboarding-welcome-modal-family-learn-more = Susipažinkite su „{ -brand-product-name }“ produktų grupe.
+onboarding-welcome-form-header = Pradėkite čia
 onboarding-join-form-header = Prisijungti prie „{ -brand-product-name }“
 onboarding-join-form-body = Įveskite savo el. pašto adresą.
 onboarding-join-form-email =
@@ -28,10 +33,20 @@ onboarding-join-form-email =
 onboarding-join-form-email-error = Reikalingas teisingas el. paštas
 onboarding-join-form-legal = Tęsdami, išreiškiate sutikimą su <a data-l10n-name="terms">Paslaugos teikimo nuostatais</a> ir <a data-l10n-name="privacy">Privatumo pranešimu</a>.
 onboarding-join-form-continue = Tęsti
+# This message is followed by a link using onboarding-join-form-signin ("Sign In") as text.
+onboarding-join-form-signin-label = Jau turite paskyrą?
+# Text for link to submit the sign in form
+onboarding-join-form-signin = Prisijungti
 onboarding-start-browsing-button-label = Pradėti naršymą
 onboarding-cards-dismiss =
     .title = Paslėpti
     .aria-label = Paslėpti
+
+## Welcome full page string
+
+onboarding-fullpage-welcome-subheader = Susipažinkite su viskuo, ką galite atlikti.
+onboarding-fullpage-form-email =
+    .placeholder = Jūsų el. pašto adresas…
 
 ## Firefox Sync modal dialog strings.
 
@@ -64,6 +79,12 @@ onboarding-benefit-privacy-title = Tikras privatumas
 # make and do. We take less data. We keep it safe. And we make sure that we are
 # transparent about how we use it."
 onboarding-benefit-privacy-text = Viskas, ką darome, atitinka mūsų Asmeninių duomenų pažadą: imti mažiau. Laikyti saugiai. Jokių paslapčių.
+onboarding-benefit-sync-title = { -sync-brand-short-name }
+onboarding-benefit-sync-text = Turėkite savo adresyną, slaptažodžius, žurnalą ir kitką visur, kur naudojate „{ -brand-product-name }“.
+onboarding-benefit-monitor-title = { -monitor-brand-short-name }
+onboarding-benefit-monitor-text = Gaukite pranešimą, kai jūsų asmeniniai duomenys pateks tarp nutekėjusių duomenų.
+onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
+onboarding-benefit-lockwise-text = Tvarkykite saugius ir patogiai pasiekiamus slaptažodžius.
 
 ## These strings belong to the individual onboarding messages.
 
@@ -92,6 +113,7 @@ onboarding-data-sync-text2 = Sinchronizuokite adresyną, slaptažodžius ir daug
 onboarding-data-sync-button2 = Prisijungti prie „{ -sync-brand-short-name }“
 onboarding-firefox-monitor-title = Būkite įspėti apie duomenų pažeidimus
 onboarding-firefox-monitor-text = „{ -monitor-brand-name }“ stebi, ar jūsų el. paštas pasirodo tarp nutekėjusių duomenų ir apie tai jums praneša.
+onboarding-firefox-monitor-text2 = „{ -monitor-brand-name }“ stebi, ar jūsų el. paštas pasirodo tarp žinomų nutekėjusių duomenų ir apie tai jums praneša.
 onboarding-firefox-monitor-button = Gauti pranešimus
 onboarding-browse-privately-title = Naršykite privačiai
 onboarding-browse-privately-text = Privatuiss naršymas išvalo jūsų paieškos ir naršymo žurnalą, kad jis nebūti matomas kitiems, besinaudojantiems šiuo kompiuteriu.

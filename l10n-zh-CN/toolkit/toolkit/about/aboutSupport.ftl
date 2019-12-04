@@ -150,6 +150,22 @@ intl-locales-default = 默认语言环境
 intl-os-title = 操作系统
 intl-os-prefs-system-locales = 系统语言环境
 intl-regional-prefs = 地区偏好
+
+## Remote Debugging
+##
+## The Firefox remote protocol provides low-level debugging interfaces
+## used to inspect state and control execution of documents,
+## browser instrumentation, user interaction simulation,
+## and for subscribing to browser-internal events.
+##
+## See also https://firefox-source-docs.mozilla.org/remote/
+
+remote-debugging-title = 远程调试（Chromium 协议）
+remote-debugging-accepting-connections = 接受连接
+remote-debugging-url = URL
+
+
+
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days = 近 { $days } 天的崩溃报告
@@ -226,6 +242,7 @@ unknown-failure = 已列入黑名单；故障代码 { $failureCode }
 d3d11layers-crash-guard = D3D11 合成器
 d3d11video-crash-guard = D3D11 视频解码器
 d3d9video-crash-buard = D3D9 视频解码器
+d3d9video-crash-guard = D3D9 视频解码器
 glcontext-crash-guard = OpenGL
 reset-on-next-restart = 下次开启时重置
 gpu-process-kill-button = 终止 GPU 进程

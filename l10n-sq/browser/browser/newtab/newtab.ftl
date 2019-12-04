@@ -83,6 +83,17 @@ newtab-menu-delete-history = Fshije prej Historiku
 newtab-menu-save-to-pocket = Ruaje te { -pocket-brand-name }
 newtab-menu-delete-pocket = Fshije nga { -pocket-brand-name }
 newtab-menu-archive-pocket = Arkivoje në { -pocket-brand-name }
+newtab-menu-show-privacy-info = Sponsorët tanë & privatësia jonë
+
+## Message displayed in a modal window to explain privacy and provide context for sponsored content.
+
+newtab-privacy-modal-button-done = Kaq qe
+newtab-privacy-modal-header = Privatësia juaj ka rëndësi.
+newtab-privacy-modal-paragraph = Jo vetëm ju shërbejmë histori tërheqëse, por ju shfaqim edhe lëndë me vlerë, të kontrolluar mirë, prej sponsorësh të përzgjedhur. Flijeni mendjen, të dhënat e shfletimit tuaj nuk ikin kurrë nga kopja juaj personale e { -brand-product-name }-it — as ne nuk i shohim dot, as sponsorët tanë.
+newtab-privacy-modal-link = Mësoni se si funksionon privatësia në skedën e re
+
+
+
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = Hiqe Faqerojtësin
 # Bookmark is a verb here.

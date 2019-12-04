@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = توسط { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = توصیه
+cfr-doorhanger-extension-notification2 = توصیه
+    .tooltiptext = افزونه‌های توصیه شده
+    .a11y-announcement = افزونه‌های توصیه شده موجود
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = توصیه
+    .tooltiptext = ویژگی‌های توصیه شده
+    .a11y-announcement = ویژگی‌های توصیه شده موجود
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -51,15 +59,20 @@ cfr-doorhanger-extension-total-users =
         [one] { $total } کاربر
        *[other] { $total } کاربر
     }
+cfr-doorhanger-pintab-description = به آسانی به وب‌سایت‌های پرکاربرد خود دسترسی داشته باشید. وب‌سایت‌ها در یک زبانه باز نگه دارید(حتی با راه‌اندازی دوباره نرم‌افزار).
 
 ## These messages are steps on how to use the feature and are shown together.
 
+cfr-doorhanger-pintab-step1 = بر زبانه‌ای که می‌خواهید آن را سنجاق کنید <b>راست-کلیک</b> کنید.
+cfr-doorhanger-pintab-step2 = گزینه <b>سنجاق کردن زبانه</b> را از این منو انتخاب کنید.
+cfr-doorhanger-pintab-step3 = اگر این وب‌سایت به روزرسانی داشته باشد، یک نقطه آبی در کنار زبانه سنجاق شده خواهید دید.
 cfr-doorhanger-pintab-animation-pause = توقف
 cfr-doorhanger-pintab-animation-resume = راه اندازی
 
 ## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = نشانک‌های خود را در هر جایی همگام کنید.
+cfr-doorhanger-bookmark-fxa-body = یک یافته فوق العاده! اکنون بدون این نشانک در دستگاه‌های تلفن همراه خود نماند. با یک { -fxaccount-brand-name } شروع کنید.
 cfr-doorhanger-bookmark-fxa-link-text = نشانک‌ها را همگام کن...
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = دکمه بستن
@@ -73,13 +86,20 @@ cfr-protections-panel-link-text = بیشتر بدانید
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = ویژگی‌های جدید:
 cfr-whatsnew-button =
     .label = تازه‌ها
     .tooltiptext = تازه‌ها
 cfr-whatsnew-panel-header = تازه‌ها
 cfr-whatsnew-release-notes-link-text = یادداشت‌های انتشار را بخوانید
 cfr-whatsnew-fx70-title = { -brand-short-name } برای حریم‌شخصی شما سخت‌تر می جنگد
+cfr-whatsnew-fx70-body = آخرین به روزرسانی، ویژگی محافظت در برابر ردیابی را ارتقا داده است و ساختن گذرواژه امن برای هر وب‌سایتی را از همیشه ساده‌تر کرده است.
 cfr-whatsnew-tracking-protect-title = خود را در مقابل ردیاب‌ها محافظت کنید
+cfr-whatsnew-tracking-protect-body =
+    { -brand-short-name } بسیاری از ردیاب‌های اجتماعی و بین وب‌سایتی را که
+    فعالیت آنلاین شما را دنبال می‌کنند، مسدود می‌کند.
 cfr-whatsnew-tracking-protect-link-text = گزارش خود را مشاهده کنید
 # This string is displayed before a large numeral that indicates the total
 # number of tracking elements blocked. Don’t add $blockedCount to your
@@ -101,6 +121,7 @@ cfr-whatsnew-lockwise-take-link-text = دریافت اپ
 ## Bookmark Sync
 
 cfr-doorhanger-sync-bookmarks-header = این نشانک را بر روی تلفن خود دریافت کنید
+cfr-doorhanger-sync-bookmarks-body = می‌توانید نشانک‌ها، گذرواژه‌ها و تاریخچه مرور خود را با خود به هر جایی که وارد حساب کاربریتان در { -brand-product-name } شده باشید، ببرید.
 cfr-doorhanger-sync-bookmarks-ok-button = روشن کردنِ { -sync-brand-short-name }
     .accesskey = T
 
@@ -131,5 +152,10 @@ cfr-doorhanger-socialtracking-close-button = بستن
     .accesskey = C
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } یک شبکه اجتماعی را در هنگام ردیابی شما متوقف کرد
 cfr-doorhanger-socialtracking-description = حریم‌خصوصی شما اهمیت دارد. { -brand-short-name } ردیاب‌های متداولِ رسانه‌های اجتماعی را مسدود، و میزان داده‌هایی که می‌توانند در مورد آنچه که برخط انجام می‌دهید جمع‌آوری کنند را محدود می‌کند.
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name }  یک برداشت کننده‌ی اثر انگشت را در این صفحه مسدود کرد.
+cfr-doorhanger-fingerprinters-description = حریم‌خصوصی شما اهمیت دارد. { -brand-short-name } اکنون برداشت کنندگان اثر انگشت را که برای ردیابی شما اطلاعات منحصر به فرد قابل شناسایی شما را جمع می‌کنند، مسدود می‌کند.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } یک استخراج کنندهٔ رمزارزها را در این صفحه مسدود کرد
 cfr-doorhanger-cryptominers-description = حریم‌خصوصی شما اهمیت دارد. { -brand-short-name } استخراج کننده‌های رمز‌ارزها را که از قدرت پردازش سیستم شما برای استخراج پول دیجیتالی استفاده می‌کنند، مسدود می‌کند.
+
+## Enhanced Tracking Protection Milestones
+

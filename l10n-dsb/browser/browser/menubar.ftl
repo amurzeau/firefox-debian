@@ -44,7 +44,7 @@ menu-file-print-setup =
     .label = Bok zarědowaś…
     .accesskey = B
 menu-file-print-preview =
-    .label = Śišćarski pśeglěd
+    .label = Śišćaŕski pśeglěd
     .accesskey = l
 menu-file-print =
     .label = Śišćaś…
@@ -53,13 +53,13 @@ menu-file-import-from-another-browser =
     .label = Z drugego wobglědowaka importěrowaś…
     .accesskey = i
 menu-file-go-offline =
-    .label = Offline źełaś
+    .label = Offline źěłaś
     .accesskey = O
 
 ## Edit Menu
 
 menu-edit =
-    .label = Wobźełaś
+    .label = Wobźěłaś
     .accesskey = b
 menu-edit-undo =
     .label = Anulěrowaś
@@ -213,7 +213,7 @@ menu-tools-sync-sign-in =
     .label = Pla { -sync-brand-short-name } pśizjawiś…
     .accesskey = P
 menu-tools-fxa-sign-in =
-    .label = Pśizjawśo se pla { -brand-product-name }…
+    .label = Pla { -brand-product-name } pśizjawiś…
     .accesskey = a
 menu-tools-turn-on-sync =
     .label = { -sync-brand-short-name } zmóžniś
@@ -285,8 +285,10 @@ menu-help-safe-mode-with-addons =
     .label = Ze zmóžnjonymi dodankami znowego startowaś
     .accesskey = Z
 # Label of the Help menu item. Either this or
-# safeb.palm.notdeceptive.label from
-# phishing-afterload-warning-message.dtd is shown.
+# menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =
     .label = Wobšudnikojske sedło k wěsći daś…
     .accesskey = b
+menu-help-not-deceptive =
+    .label = To njejo wobšudnikojske sedło…
+    .accesskey = d

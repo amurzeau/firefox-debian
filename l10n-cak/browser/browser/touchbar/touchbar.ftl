@@ -19,3 +19,19 @@ open-location = Tikanöx o titz'ib'äx ri ochochib'äl
 share = Tikomonïx
 close-window = Titz'apïx Tzuwäch
 open-sidebar = Ruchi' Cholab'äl
+# This string describes shortcuts for search.
+search-popover = Kekanöx ruq'a' okem
+# Describes searches limited to a specific scope
+# (e.g. searching only in history).
+search-search-in = Tikanöx pa:
+
+## Various categories of shortcuts for search.
+
+search-bookmarks = Taq yaketal
+search-history = Natab'äl
+search-opentabs = Kejaq taq ruwi'
+search-tags = Taq etal
+search-titles = Taq b'i'aj
+
+
+

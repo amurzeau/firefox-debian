@@ -14,6 +14,11 @@ pref-page =
             [windows] Nastajenja
            *[other] Nastajenja
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Nastajenja
+       *[other] Nastajenja
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -288,6 +293,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } wužiwać (w { -brand-short-name })
@@ -463,7 +472,6 @@ choose-bookmark =
 
 home-prefs-content-header = Wobsah startoweje strony Firefox
 home-prefs-content-description = Wubjerće, kotry wobsah chceće na swojej startowej wobrazowce Firefox měć.
-home-prefs-content-discovery-description = Content Discovery na startowej stronje Firefox wam zmóžnja, w interneće relewantne nastawki wysokeje kwality namakać.
 home-prefs-search-header =
     .label = Webpytanje
 home-prefs-topsites-header =
@@ -513,7 +521,8 @@ search-bar-shown =
     .label = Pytanske polo symbolowej lajsće přidać
 search-engine-default-header = Standardna pytawa
 search-engine-default-desc = Wubjerće standardnu pytawu, kotraž ma so w adresowym polu a pytanskim polu wužiwać.
-search-engine-default-private-desc = Wubjerće standardnu pytawu za wužiwanje w priwatnych woknach.
+search-engine-default-desc-2 = To je waša standardna pytawa w adresowej lajsće a pytanskej lajsće. Móžeće je kóždy raz přepinać.
+search-engine-default-private-desc-2 = Wubjerće druhu standardnu pytawu jenož za priwatny modus
 search-separate-default-engine =
     .label = Tutu pytawu w priwatnych woknach wužiwać
     .accesskey = T
@@ -532,6 +541,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Pytanske namjety před přehladowanskej historiju we wuslědkach adresoweho pola pokazać
+search-show-suggestions-private-windows =
+    .label = Pytanske namjety w priwatnych woknach pokazać
 suggestions-addressbar-settings = Wubjerće nastajenja za přehladowansku historiju, zapołožki a rajtarkowe namjety
 search-suggestions-cant-show = Pytanske namjety njebudu so we wuslědkach adresoweho pola pokazać, dokelž sće { -brand-short-name } tak konfigurował, zo sej ženje historiju njespomjatkuje.
 search-one-click-header = Pytawy z jednym kliknjenjom
@@ -581,6 +592,9 @@ sync-signedout-account-create = Nimaće konto? Započńće
 sync-signedout-account-signin =
     .label = Přizjewić…
     .accesskey = P
+sync-signedout-account-signin2 =
+    .label = So pola { -sync-brand-short-name } přizjewić…
+    .accesskey = S
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -724,7 +738,11 @@ privacy-header = Priwatnosć wobhladowaka
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Přizjewjenja a hesła
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Prašeć so, hač so maja přizjewjenja a hesła składować
     .accesskey = r
@@ -738,6 +756,7 @@ forms-breach-alerts =
     .label = Warnowanja za hesła zranjenych websydłow
     .accesskey = z
 forms-breach-alerts-learn-more-link = Dalše informacije
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Přizjewjenja a hesła awtomatisce zapisać
     .accesskey = z

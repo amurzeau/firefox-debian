@@ -179,6 +179,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = ਚਾਲੂ
     .tooltiptext = ਐਡ-ਆਨ ਉੱਤੇ ਸੁਰੱਖਿਆ ਚੈੱਕ ਕੀਤਾ ਜਾਂਦਾ ਹੈ
+extensions-warning-safe-mode = ਸੁਰੱਖਿਅਤ ਮੋਡ 'ਚ ਸਭ ਐਡ-ਆਨ ਬੰਦ ਕਰ ਦਿੱਤੀਆਂ ਗਈਆਂ ਹਨ।
+extensions-warning-check-compatibility = ਐਡ-ਆਨ ਅਨੁਕੂਲਤਾ ਚੈੱਕ ਕਰਨਾ ਬੰਦ ਕੀਤਾ ਹੋਇਆ ਹੈ। ਤੁਹਾਡੇ ਕੋਲ ਗ਼ੈਰ-ਅਨੁਕੂਲ ਐਡ-ਆਨ ਹੋ ਸਕਦੀਆਂ ਹਨ।
+extensions-warning-check-compatibility-button = ਸਮਰੱਥ
+    .title = ਐਡ-ਆਨ ਦੇ ਢੁੱਕਵੇਂਪਣ ਦੀ ਜਾਂਚ ਕਰਨ ਨੂੰ ਸਮਰੱਥ ਕਰੋ
+extensions-warning-update-security = ਐਡ-ਆਨ ਅੱਪਡੇਟ ਸੁਰੱਖਿਆ ਚੈੱਕ ਕਰਨਾ ਬੰਦ ਹੈ। ਤੁਹਾਨੂੰ ਅੱਪਡੇਟ ਰਾਹੀਂ ਖਤਰਾ ਹੋ ਸਕਦਾ ਹੈ।
+extensions-warning-update-security-button = ਚਾਲੂ
+    .title = ਐਡ-ਆਨ ਉੱਤੇ ਸੁਰੱਖਿਆ ਚੈੱਕ ਕੀਤਾ ਜਾਂਦਾ ਹੈ
 
 ## Strings connected to add-on updates
 
@@ -188,12 +195,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = ਤਾਜ਼ਾ ਅੱਪਡੇਟ ਵੇਖੋ
     .accesskey = V
+addon-updates-check-for-updates = ਅੱਪਡੇਟ ਲਈ ਚੈੱਕ ਕਰੋ
+    .accesskey = C
+addon-updates-view-updates = ਤਾਜ਼ਾ ਅੱਪਡੇਟ ਵੇਖੋ
+    .accesskey = V
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = ਐਡ-ਆਨ ਆਟੋਮੈਟਿਕ ਹੀ ਅੱਪਡੇਟ ਕਰੋ
+    .accesskey = A
+addon-updates-update-addons-automatically = ਐਡ-ਆਨ ਆਟੋਮੈਟਿਕ ਹੀ ਅੱਪਡੇਟ ਕਰੋ
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -207,6 +220,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = R
 extensions-updates-reset-updates-to-manual =
     .label = ਸਭ ਐਡ-ਆਨ ਖੁਦ ਅੱਪਡੇਟ ਕਰਨ ਕਰਨ ਲਈ ਮੁੜ-ਸੈੱਟ ਕਰੋ
+    .accesskey = R
+addon-updates-reset-updates-to-automatic = ਸਭ ਐਡ-ਆਨ ਆਟੋਮੈਟਿਕ ਅੱਪਡੇਟ ਲਈ ਮੁੜ-ਸੈੱਟ ਕਰੋ
+    .accesskey = R
+addon-updates-reset-updates-to-manual = ਸਭ ਐਡ-ਆਨ ਖੁਦ ਅੱਪਡੇਟ ਕਰਨ ਕਰਨ ਲਈ ਮੁੜ-ਸੈੱਟ ਕਰੋ
     .accesskey = R
 
 ## Status messages displayed when updating add-ons
@@ -226,11 +243,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = ਅੱਪਡੇਟ ਇੰਸਟਾਲ ਕਰੋ
     .tooltiptext = ਇਸ ਲਿਸਟ ਵਿੱਚ ਉਪਲੱਬਧ ਅੱਪਡੇਟ ਇੰਸਟਾਲ ਕਰੋ
+addon-updates-updating = ਐਡ-ਆਨ ਅੱਪਡੇਟ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ
+addon-updates-installed = ਤੁਹਾਡੀ ਐਡ-ਆਨ ਅੱਪਡੇਟ ਕੀਤੀ ਜਾ ਚੁੱਕੀ ਹੈ।
+addon-updates-none-found = ਕੋਈ ਅੱਪਡੇਟ ਨਹੀਂ ਮਿਲਿਆ
+addon-updates-manual-updates-found = ਉਪਲੱਬਧ ਅੱਪਡੇਟ ਵੇਖੋ
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = …ਐਡ-ਆਨ ਫਾਈਲ ਤੋਂ ਇੰਸਟਾਲ ਕਰੋ
+    .accesskey = I
+addon-install-from-file-dialog-title = ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਐਡ-ਆਨ ਚੁਣੋ
+addon-install-from-file-filter-name = ਐਡ-ਆਨ
+addon-open-about-debugging = ਐਡ-ਆਨ ਨੂੰ ਡੀਬੱਗ ਕਰੋ
+    .accesskey = B
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = ਇਕਸਟੈਨਸ਼ਨ ਸ਼ਾਰਟਕੱਟ ਦਾ ਬੰਦੋਬਸਤ ਕਰੋ
+    .accesskey = S
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = ਇਕਸਟੈਨਸ਼ਨ ਸ਼ਾਰਟਕੱਟ ਦਾ ਬੰਦੋਬਸਤ ਕਰੋ
     .accesskey = S
 shortcuts-no-addons = ਤੁਹਾਡੇ ਕੋਲ ਕੋਈ ਵੀ ਸਮਰੱਥ ਕੀਤੀ ਇਕਸਟੈਨਸ਼ਨ ਨਹੀਂ ਹੈ।
 shortcuts-no-commands = ਅੱਗੇ ਦਿੱਤੀਆਂ ਇਕਸਟੈਨਸ਼ਨਾਂ ਦੇ ਸ਼ਾਰਟਕੱਟ ਨਹੀਂ ਹਨ:
@@ -374,3 +407,17 @@ release-notes-error = ਅਫਸੋਸ, ਪਰ ਰੀਲਿਜ਼ ਨੋਟਿਸ
 addon-permissions-empty = ਇਸ ਇਕਸਟੈਨਸ਼ਨ ਲਈ ਕਿਸੇ ਇਜਾਜ਼ਤ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ
 recommended-extensions-heading = ਸਿਫਾਰਸ਼ੀ ਇਕਟੈਨਸ਼ਨਾਂ
 recommended-themes-heading = ਸਿਫਾਰਸ਼ੀ ਥੀਮ
+
+## Page headings
+
+extension-heading = ਆਪਣੀਆਂ ਇਕਸਟੈਨਸ਼ਨਾਂ ਦਾ ਬੰਦੋਬਸਤ ਕਰੋ
+theme-heading = ਆਪਣੇ ਥੀਮਾਂ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ
+plugin-heading = ਆਪਣੀਆਂ ਪਲੱਗਇਨ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ
+dictionary-heading = ਆਪਣੀਆਂ ਡਿਕਸ਼ਨਰੀਆਂ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ
+locale-heading = ਆਪਣੀਆਂ ਭਾਸ਼ਾਵਾਂ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ
+discover-heading = ਆਪਣੇ { -brand-short-name } ਨੂੰ ਆਪਣਾ ਬਣਾਓ
+shortcuts-heading = ਇਕਸਟੈਨਸ਼ਨ ਸ਼ਾਰਟਕੱਟਾਂ ਦਾ ਬੰਦੋਬਸਤ ਕਰੋ
+theme-heading-search-label = ਹੋਰ ਥੀਮ ਲੱਭੋ
+extension-heading-search-label = ਹੋਰ ਇਕਸਟੈਨਸ਼ਨਾਂ ਲੱਭੋ
+addons-heading-search-input =
+    .placeholder = addons.mozilla.org ਨੂੰ ਖੋਜੋ

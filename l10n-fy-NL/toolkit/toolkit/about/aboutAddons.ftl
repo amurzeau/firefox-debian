@@ -192,6 +192,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Ynskeakelje
     .tooltiptext = Skeakelje feilichheidskontrole foar add-onsfernijingen yn
+extensions-warning-safe-mode = Alle add-ons binne útskeakele troch feilige modus.
+extensions-warning-check-compatibility = Kontrole op kompatibileit foar add-ons is útskeakele. Jo kinne ynkompatibele add-ons hawwe.
+extensions-warning-check-compatibility-button = Ynskeakelje
+    .title = Skeakelje kontrole fan kompatibileit foar add-ons yn
+extensions-warning-update-security = Feilichheidskontrole foar add-onsfernijingen is útskeakele. Jo kinne efterrinne mei fernijingen.
+extensions-warning-update-security-button = Ynskeakelje
+    .title = Skeakelje feilichheidskontrole foar add-onsfernijingen yn
 
 ## Strings connected to add-on updates
 
@@ -201,12 +208,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Resinte fernijingen toane
     .accesskey = T
+addon-updates-check-for-updates = Kontrolearje op fernijingen
+    .accesskey = K
+addon-updates-view-updates = Resinte fernijingen toane
+    .accesskey = T
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Add-ons automatysk fernije
+    .accesskey = a
+addon-updates-update-addons-automatically = Add-ons automatysk fernije
     .accesskey = a
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -220,6 +233,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = S
 extensions-updates-reset-updates-to-manual =
     .label = Stel hânmjittich fernije yn foar alle add-ons
+    .accesskey = S
+addon-updates-reset-updates-to-automatic = Stel automatysk fernije yn foar alle add-ons
+    .accesskey = S
+addon-updates-reset-updates-to-manual = Stel hânmjittich fernije yn foar alle add-ons
     .accesskey = S
 
 ## Status messages displayed when updating add-ons
@@ -239,11 +256,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Ynstallearje fernijingen
     .tooltiptext = Ynstallearje beskikbere fernijingen op dize list
+addon-updates-updating = Add-ons oan it bywurkjen
+addon-updates-installed = Jo add-ons binne bywurke.
+addon-updates-none-found = Gjin fernijingen fûn
+addon-updates-manual-updates-found = Beskikbere fernijingen toane
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Ynstallearje add-on út bestân…
+    .accesskey = Y
+addon-install-from-file-dialog-title = Selektearje add-on om te ynstallearjen
+addon-install-from-file-filter-name = Add-ons
+addon-open-about-debugging = Add-ons debugge
+    .accesskey = b
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Utwreidingsfluchtoetsen beheare
+    .accesskey = U
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Utwreidingsfluchtoetsen beheare
     .accesskey = U
 shortcuts-no-addons = Jo hawwe gjin útwreidingen ynskeakele.
 shortcuts-no-commands = De folgjende útwreidingen hawwe gjin fluchtoetsen:
@@ -315,6 +348,8 @@ addon-options-button =
 
 report-addon-button = Rapportearje
 remove-addon-button = Fuortsmite
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Kin net fuortsmiten wurde <a data-l10n-name="link">Wêrom?</a>
 disable-addon-button = Utskeakelje
 enable-addon-button = Ynskeakelje
 expand-addon-button = Mear opsjes
@@ -408,3 +443,18 @@ recommended-themes-heading = Oanrekommandearre tema's
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Fiele jo jo kreätyf? <a data-l10n-name="link"> Bou jo eigen tema mei Firefox Color.</a>
+
+## Page headings
+
+extension-heading = Jo útwreidingen beheare
+theme-heading = Jo tema’s beheare
+plugin-heading = Jo ynstekkers beheare
+dictionary-heading = Jo wurdboeken beheare
+locale-heading = Jo talen beheare
+updates-heading = Jo fernijingen beheare
+discover-heading = Personalisearje jo { -brand-short-name }
+shortcuts-heading = Utwreidingsfluchtoetsen beheare
+theme-heading-search-label = Mear tema’s sykje
+extension-heading-search-label = Mear útwreidingen sykje
+addons-heading-search-input =
+    .placeholder = addons.mozilla.org trochsykje

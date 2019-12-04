@@ -187,6 +187,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Tikrinti
     .tooltiptext = Įjungti priedų naujinimų saugumo tikrinimą
+extensions-warning-safe-mode = Ribotojoje veiksenoje visi priedai išjungti.
+extensions-warning-check-compatibility = Priedų suderinamumas netikrinamas. Gali būti, kad turite nesuderinamų priedų.
+extensions-warning-check-compatibility-button = Tikrinti
+    .title = Įjungti priedų suderinamumo tikrinimą
+extensions-warning-update-security = Priedų naujinimų saugumas netikrinamas. Priedų naujinimai gali pakenkti jūsų saugumui.
+extensions-warning-update-security-button = Tikrinti
+    .title = Įjungti priedų naujinimų saugumo tikrinimą
 
 ## Strings connected to add-on updates
 
@@ -196,12 +203,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Rodyti paskiausiai atnaujintus priedus
     .accesskey = p
+addon-updates-check-for-updates = Tikrinti, ar yra naujinimų
+    .accesskey = T
+addon-updates-view-updates = Rodyti paskiausiai atnaujintus priedus
+    .accesskey = p
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Naujinti priedus automatiškai
+    .accesskey = N
+addon-updates-update-addons-automatically = Naujinti priedus automatiškai
     .accesskey = N
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -215,6 +228,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = V
 extensions-updates-reset-updates-to-manual =
     .label = Visus priedus naujinti rankiniu būdu
+    .accesskey = V
+addon-updates-reset-updates-to-automatic = Visus priedus naujinti automatiškai
+    .accesskey = V
+addon-updates-reset-updates-to-manual = Visus priedus naujinti rankiniu būdu
     .accesskey = V
 
 ## Status messages displayed when updating add-ons
@@ -234,11 +251,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Įdiegti naujinimus
     .tooltiptext = Įdiegti šiame sąraše esančių priedų naujinimus
+addon-updates-updating = Priedai naujinami
+addon-updates-installed = Turimi priedai atnaujinti.
+addon-updates-none-found = Naujinimų nerasta
+addon-updates-manual-updates-found = Rodyti galimus atnaujinti priedus
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Įdiegti priedą iš failo…
+    .accesskey = d
+addon-install-from-file-dialog-title = Parinkite norimą įdiegti priedą
+addon-install-from-file-filter-name = Add-ons
+addon-open-about-debugging = Derinti priedus
+    .accesskey = r
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = Tvarkyti sparčiuosius klavišus priedams
+    .accesskey = s
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Tvarkyti sparčiuosius klavišus priedams
     .accesskey = s
 shortcuts-no-addons = Neturite jokių įjungtų priedų.
 shortcuts-no-commands = Šie priedai neturi sparčiųjų klavišų komandų:
@@ -312,6 +345,8 @@ addon-options-button =
 
 report-addon-button = Pranešti
 remove-addon-button = Pašalinti
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Negalima pašalinti. <a data-l10n-name="link">Kodėl?</a>
 disable-addon-button = Išjungti
 enable-addon-button = Įjungti
 expand-addon-button = Daugiau veiksmų
@@ -406,3 +441,18 @@ recommended-themes-heading = Rekomenduojami grafiniai apvalkalai
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Jaučiatės kūrybiškai? <a data-l10n-name="link">Sukurkite savo grafinį apvalkalą su „Firefox Color“.</a>
+
+## Page headings
+
+extension-heading = Tvarkykite savo priedus
+theme-heading = Tvarkykite savo apvalkalus
+plugin-heading = Tvarkykite savo papildinius
+dictionary-heading = Tvarkykite savo žodynus
+locale-heading = Tvarkykite savo kalbas
+updates-heading = Tvarkykite savo naujinimus
+discover-heading = Individualizuokite savo „{ -brand-short-name }“
+shortcuts-heading = Tvarkyti sparčiuosius klavišus priedams
+theme-heading-search-label = Rasti daugiau apvalkalų
+extension-heading-search-label = Rasti daugiau priedų
+addons-heading-search-input =
+    .placeholder = Ieškoti per addons.mozilla.org

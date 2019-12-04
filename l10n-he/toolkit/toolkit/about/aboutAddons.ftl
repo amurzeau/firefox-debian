@@ -173,7 +173,7 @@ extensions-warning-safe-mode-label =
 extensions-warning-safe-mode-container =
     .tooltiptext = { extensions-warning-safe-mode-label.value }
 extensions-warning-check-compatibility-label =
-    .value = בדיקת תאימות תוספות מנוטלת. ייתכן וברשותך הרחבות לא תואמות.
+    .value = בדיקת תאימות תוספות מנוטלת. ייתכן שברשותך תוספות לא תואמות.
 extensions-warning-check-compatibility-container =
     .tooltiptext = { extensions-warning-check-compatibility-label.value }
 extensions-warning-check-compatibility-enable =
@@ -186,6 +186,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = הפעלה
     .tooltiptext = הפעלת בדיקות אבטחה לעדכוני תוספות
+extensions-warning-safe-mode = כל התוספות נוטרלו במצב בטוח.
+extensions-warning-check-compatibility = בדיקת תאימות תוספות מנוטלת. ייתכן שברשותך תוספות לא תואמות.
+extensions-warning-check-compatibility-button = הפעלה
+    .title = הפעלת בדיקת תאימות תוספות
+extensions-warning-update-security = בדיקת האבטחה של התוספות כרגע מנוטרלת. עדכונים לתוספות עלולים לסכן אותך.
+extensions-warning-update-security-button = הפעלה
+    .title = הפעלת בדיקות אבטחה לעדכוני תוספות
 
 ## Strings connected to add-on updates
 
@@ -195,12 +202,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = הצגת עדכונים אחרונים
     .accesskey = ה
+addon-updates-check-for-updates = בדיקה אחר עדכונים
+    .accesskey = ב
+addon-updates-view-updates = הצגת עדכונים אחרונים
+    .accesskey = ה
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = עדכון תוספות אוטומטי
+    .accesskey = ע
+addon-updates-update-addons-automatically = עדכון תוספות אוטומטי
     .accesskey = ע
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -214,6 +227,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = א
 extensions-updates-reset-updates-to-manual =
     .label = איפוס כל התוספות לעדכון ידני
+    .accesskey = א
+addon-updates-reset-updates-to-automatic = איפוס כל התוספות לעדכון אוטומטי
+    .accesskey = א
+addon-updates-reset-updates-to-manual = איפוס כל התוספות לעדכון ידני
     .accesskey = א
 
 ## Status messages displayed when updating add-ons
@@ -233,11 +250,27 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = התקנת עדכונים
     .tooltiptext = התקנת העדכונים הזמינים ברשימה זו
+addon-updates-updating = מעדכן תוספות
+addon-updates-installed = התוספות שלך עודכנו.
+addon-updates-none-found = לא נמצאו עדכונים
+addon-updates-manual-updates-found = הצגת עדכונים זמינים
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = התקנת תוספת מקובץ…
+    .accesskey = ה
+addon-install-from-file-dialog-title = בחירת תוספת להתקנה
+addon-install-from-file-filter-name = תוספות
+addon-open-about-debugging = ניפוי שגיאות של תוספות
+    .accesskey = נ
 
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
     .label = ניהול קיצורי דרך להרחבות
+    .accesskey = נ
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = ניהול קיצורי דרך להרחבות
     .accesskey = נ
 shortcuts-no-addons = אין לך הרחבות מופעלות.
 shortcuts-no-commands = להרחבות הבאות אין קיצורי דרך:
@@ -302,6 +335,8 @@ addon-options-button =
 
 report-addon-button = דיווח
 remove-addon-button = הסרה
+# The link will always be shown after the other text.
+remove-addon-disabled-button = לא ניתן להסרה <a data-l10n-name="link">למה?</a>
 disable-addon-button = השבתה
 enable-addon-button = הפעלה
 expand-addon-button = אפשרויות נוספות
@@ -385,3 +420,18 @@ recommended-themes-heading = ערכות נושא מומלצות
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = גל של יצירתיות שוטף אותך? <a data-l10n-name="link">ניתן ליצור ערכת נושא משלך בעזרת Firefox Color.</a>
+
+## Page headings
+
+extension-heading = ניהול ההרחבות שלך
+theme-heading = ניהול ערכות הנושא שלך
+plugin-heading = ניהול התוספים החיצוניים שלך
+dictionary-heading = ניהול המילונים שלך
+locale-heading = ניהול השפות שלך
+updates-heading = ניהול העדכונים שלך
+discover-heading = התאמה אישית של ה־{ -brand-short-name } שלך
+shortcuts-heading = ניהול קיצורי דרך להרחבות
+theme-heading-search-label = חיפוש ערכות נושא נוספות
+extension-heading-search-label = חיפוש הרחבות נוספות
+addons-heading-search-input =
+    .placeholder = חיפוש ב־addons.mozilla.org

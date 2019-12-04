@@ -8,3 +8,15 @@
 appmenuitem-protection-report-title = Yksityisyyden suojaukset
 appmenuitem-protection-report-tooltip =
     .tooltiptext = Siirry yksityisyysraporttiin
+
+## Zoom Controls
+
+appmenuitem-zoom-enlarge =
+    .label = Lähennä
+appmenuitem-zoom-reduce =
+    .label = Loitonna
+
+## Firefox Account toolbar button and Sync panel in App menu.
+
+fxa-toolbar-sync-now =
+    .label = Synkronoi

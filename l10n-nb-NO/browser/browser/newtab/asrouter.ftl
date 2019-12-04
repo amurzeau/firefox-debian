@@ -12,7 +12,7 @@ cfr-doorhanger-pintab-heading = Prøv dette: fest fanen
 
 
 cfr-doorhanger-extension-sumo-link =
-    .tooltiptext = Hvorfor ser jeg dette?
+    .tooltiptext = Hvorfor ser jeg dette
 cfr-doorhanger-extension-cancel-button = Ikke nå
     .accesskey = n
 cfr-doorhanger-extension-ok-button = Legg til nå
@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = av { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Anbefaling
+cfr-doorhanger-extension-notification2 = Anbefaling
+    .tooltiptext = Utvidelsesanbefaling
+    .a11y-announcement = Utvidelsesanbefaling tilgjengelig
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Anbefaling
+    .tooltiptext = Funksjonsanbefaling
+    .a11y-announcement = Funksjonsanbefaling tilgjengelig
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -78,6 +86,9 @@ cfr-protections-panel-link-text = Les mer
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Ny funksjon:
 cfr-whatsnew-button =
     .label = Hva er nytt
     .tooltiptext = Hva er nytt
@@ -146,9 +157,23 @@ cfr-doorhanger-socialtracking-ok-button = Se beskyttelser
     .accesskey = b
 cfr-doorhanger-socialtracking-close-button = Lukk
     .accesskey = L
+cfr-doorhanger-socialtracking-dont-show-again = Ikke vis meg meldinger som dette igjen
+    .accesskey = I
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } forhindret et sosialt nettverk fra å spore deg her
 cfr-doorhanger-socialtracking-description = Ditt personvern betyr noe. { -brand-short-name } blokkerer nå vanlige sporere fra sosiale medier, og begrenser hvor mye data de kan samle inn om hva du gjør på nettet.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } blokkerte en fingerprinter på denne siden
 cfr-doorhanger-fingerprinters-description = Ditt personvern betyr noe. { -brand-short-name } blokkerer nå fingerprinters, som samler deler av unikt identifiserbar informasjon om enheten din for å spore deg.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } blokkerte en kryptominer på denne siden
 cfr-doorhanger-cryptominers-description = Ditt personvern betyr noe. { -brand-short-name } blokkerer nå kryptominere, som bruker systemets datakraft til å utvinne digitale penger.
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+       *[other] { -brand-short-name } har blokkert over <b>{ $blockedCount }</b> sporere siden { $date }!
+    }
+cfr-doorhanger-milestone-ok-button = Vis alle
+    .accesskey = s

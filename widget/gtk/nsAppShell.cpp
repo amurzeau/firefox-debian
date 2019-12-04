@@ -45,6 +45,7 @@ LazyLogModule gWidgetFocusLog("WidgetFocus");
 LazyLogModule gWidgetDragLog("WidgetDrag");
 LazyLogModule gWidgetDrawLog("WidgetDraw");
 LazyLogModule gWidgetWaylandLog("WidgetWayland");
+LazyLogModule gClipboardLog("WidgetClipboard");
 
 static GPollFunc sPollFunc;
 

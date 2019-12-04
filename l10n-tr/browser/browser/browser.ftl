@@ -47,6 +47,30 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Kalıcı depolamada veri depola
 urlbar-addons-notification-anchor =
     .tooltiptext = Eklenti yükleme mesajı panelini aç
+urlbar-tip-help-icon =
+    .title = Yardım al
+urlbar-geolocation-blocked =
+    .tooltiptext = Bu sitenin konumunuzu öğrenmesini engellediniz.
+urlbar-web-notifications-blocked =
+    .tooltiptext = Bu sitenin bildirim göndermesini engellediniz.
+urlbar-camera-blocked =
+    .tooltiptext = Bu sitenin kameranızı kullanmasını engellediniz.
+urlbar-microphone-blocked =
+    .tooltiptext = Bu sitenin mikrofonunuzu kullanmasını engellediniz.
+urlbar-screen-blocked =
+    .tooltiptext = Bu sitenin ekranınızı paylaşmasını engellediniz.
+urlbar-persistent-storage-blocked =
+    .tooltiptext = Bu sitenin kalıcı veri depolamasını engellediniz.
+urlbar-popup-blocked =
+    .tooltiptext = Bu sitedeki açılır pencereleri engellediniz.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = Bu sitenin sesli medya dosyalarını otomatik oynatmasını engellediniz.
+urlbar-canvas-blocked =
+    .tooltiptext = Bu sitenin kanvastan veri ayıklamasını engellediniz.
+urlbar-midi-blocked =
+    .tooltiptext = Bu sitenin MIDI erişimini engellediniz.
+urlbar-install-blocked =
+    .tooltiptext = Bu sitenin eklenti yüklemesini engellediniz.
 
 ## Page Action Context Menu
 
@@ -65,3 +89,24 @@ full-screen-autohide =
 full-screen-exit =
     .label = Tam ekran kipinden çık
     .accesskey = T
+
+## Search Engine selection buttons (one-offs)
+
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Bir de bununla aramayı deneyin:
+# This string won't wrap, so if the translated string is longer,
+# consider translating it as if it said only "Search Settings".
+search-one-offs-change-settings-button =
+    .label = Arama ayarlarını değiştir
+search-one-offs-change-settings-compact-button =
+    .tooltiptext = Arama ayarlarını değiştir
+search-one-offs-context-open-new-tab =
+    .label = Yeni sekmede ara
+    .accesskey = s
+search-one-offs-context-set-as-default =
+    .label = Varsayılan arama motoru yap
+    .accesskey = m
+search-one-offs-context-set-as-default-private =
+    .label = Gizli pencerelerde varsayılan arama motoru olarak ayarla
+    .accesskey = G

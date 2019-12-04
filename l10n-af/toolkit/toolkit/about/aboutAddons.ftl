@@ -121,9 +121,6 @@ legacy-warning-show-legacy = Wys verouderde uitbreidings
 legacy-extensions =
     .value = Verouderde uitbreidings
 legacy-extensions-description = Dié uitbreidings voldoen nie aan { -brand-short-name } se huidige standaarde nie, en is dus gedeaktiveer. <label data-l10n-name="legacy-learn-more">Lees meer oor veranderinge aan byvoegings</label>
-extensions-view-discover =
-    .name = Kry byvoegings
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-recent-updates =
     .name = Onlangse bywerkings
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -151,6 +148,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = Aktiveer
     .tooltiptext = Aktiveer byvoegingsbywerking-beveiliging-kontrole
+extensions-warning-safe-mode = Alle byvoegings is deur veilige modus gedeaktiveer.
+extensions-warning-check-compatibility = Kontrolering of byvoegings versoenbaar is, is gedeaktiveer. U het moontlik onversoenbare byvoegings.
+extensions-warning-check-compatibility-button = Aktiveer
+    .title = Aktiveer byvoeging-versoenbaarheidkontrole
+extensions-warning-update-security = Kontrolering vir bywerkings vir byvoegings is gedeaktiveer. U kan dalk deur bywerkings gekompromitteer word.
+extensions-warning-update-security-button = Aktiveer
+    .title = Aktiveer byvoegingsbywerking-beveiliging-kontrole
 
 ## Strings connected to add-on updates
 
@@ -160,12 +164,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = Bekyk onlangse bywerkings
     .accesskey = B
+addon-updates-check-for-updates = Kontroleer vir bywerkings
+    .accesskey = K
+addon-updates-view-updates = Bekyk onlangse bywerkings
+    .accesskey = B
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = Werk byvoegings outomaties by
+    .accesskey = W
+addon-updates-update-addons-automatically = Werk byvoegings outomaties by
     .accesskey = W
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -179,6 +189,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = S
 extensions-updates-reset-updates-to-manual =
     .label = Stel alle byvoegings om handmatig by te werk
+    .accesskey = S
+addon-updates-reset-updates-to-automatic = Stel alle byvoegings om outomaties by te werk
+    .accesskey = S
+addon-updates-reset-updates-to-manual = Stel alle byvoegings om handmatig by te werk
     .accesskey = S
 
 ## Status messages displayed when updating add-ons
@@ -198,3 +212,31 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Installeer bywerkings
     .tooltiptext = Installeer beskikbare bywerkings in hierdie lys
+addon-updates-updating = Byvoegings word bygewerk
+addon-updates-installed = Die byvoegings is bygewerk.
+addon-updates-none-found = Geen bywerkings gevind nie
+addon-updates-manual-updates-found = Bekyk beskikbare bywerkings
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = Installeer byvoeging uit lêer…
+    .accesskey = I
+addon-install-from-file-dialog-title = Kies byvoeging om te installeer
+addon-install-from-file-filter-name = Byvoegings
+addon-open-about-debugging = Ontfout byvoegings
+    .accesskey = b
+
+## Extension shortcut management
+
+
+## Recommended add-ons page
+
+
+## Add-on actions
+
+
+## Pending uninstall message bar
+
+
+## Page headings
+

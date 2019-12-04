@@ -134,9 +134,6 @@ legacy-warning-show-legacy = सर्व वारसा विस्तार 
 legacy-extensions =
     .value = वारसा विस्तार
 legacy-extensions-description = हे विस्तार सध्याच्या { -brand-short-name } मानकांमध्ये बसत नाही म्हणून ते निष्क्रिय करण्यात आले आहेत. <label data-l10n-name="legacy-learn-more">ॲड-ऑन्सबद्दल बदल जाणा</label>
-extensions-view-discover =
-    .name = ॲड-ऑन्स् प्राप्त करा
-    .tooltiptext = { extensions-view-discover.name }
 extensions-view-recent-updates =
     .name = नुकतीच सुधारणा
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -164,6 +161,13 @@ extensions-warning-update-security-container =
 extensions-warning-update-security-enable =
     .label = सुरू करा
     .tooltiptext = ॲड-ऑन सुधारणा सुरक्षा तपासणी सुरू करा
+extensions-warning-safe-mode = सेफ मोडद्वारे सर्व ॲड-ऑन्स् बंद केले आहे.
+extensions-warning-check-compatibility = ॲड-ऑन सहत्वता तपासणी बंद केली आहे. आपल्याकडे असहत्व ॲड-ऑन्स् असू शकतात.
+extensions-warning-check-compatibility-button = सुरू करा
+    .title = ॲड-ऑन सहत्वता तपासणी सुरू करा
+extensions-warning-update-security = ॲड-ऑन सुधारणा सुरक्षा तपासणी बंद केले आहे. सुधारणा करतेवेळी सतर्क रहा.
+extensions-warning-update-security-button = सुरू करा
+    .title = ॲड-ऑन सुधारणा सुरक्षा तपासणी सुरू करा
 
 ## Strings connected to add-on updates
 
@@ -173,12 +177,18 @@ extensions-updates-check-for-updates =
 extensions-updates-view-updates =
     .label = नुकत्याच सुधारणांचे दृष्य
     .accesskey = V
+addon-updates-check-for-updates = सुधारणांकरीता तपासणी करा
+    .accesskey = C
+addon-updates-view-updates = नुकत्याच सुधारणांचे दृष्य
+    .accesskey = V
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
     .label = ॲड-ऑन्स् स्वयं सुधारित करा
+    .accesskey = A
+addon-updates-update-addons-automatically = ॲड-ऑन्स् स्वयं सुधारित करा
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -192,6 +202,10 @@ extensions-updates-reset-updates-to-automatic =
     .accesskey = R
 extensions-updates-reset-updates-to-manual =
     .label = सुधारणा स्वहस्ते करण्यासाठी सर्व ॲड-ऑन्स् मूळस्थितीत आणा
+    .accesskey = R
+addon-updates-reset-updates-to-automatic = स्वयं सुधारणा करण्यासाठी सर्व ॲड-ऑन्स् मूळस्थितीत आणा
+    .accesskey = R
+addon-updates-reset-updates-to-manual = सुधारणा स्वहस्ते करण्यासाठी सर्व ॲड-ऑन्स् मूळस्थितीत आणा
     .accesskey = R
 
 ## Status messages displayed when updating add-ons
@@ -211,6 +225,19 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = सुधारणा प्रतिष्ठापीत करा
     .tooltiptext = या सूचीतील उपलब्ध सुधारणा प्रतिष्ठापीत करा
+addon-updates-updating = ॲड-ऑन्स् सुधारीत करत आहे
+addon-updates-installed = आपले ॲड-ऑन्स् सुधारीत केले.
+addon-updates-none-found = सुधारणा आढळले नाही
+addon-updates-manual-updates-found = उपलब्ध सुधारणांचे दृष्य
+
+## Add-on install/debug strings for page options menu
+
+addon-install-from-file = फाइलपासून ॲड-ऑन इंस्टॉल करा…
+    .accesskey = I
+addon-install-from-file-dialog-title = प्रतिष्ठापनकरीता ॲड-ऑन नीवडा
+addon-install-from-file-filter-name = ॲड-ऑन्स्
+addon-open-about-debugging = अॅड-ऑनस डीबग करा
+    .accesskey = b
 
 ## Extension shortcut management
 
@@ -266,3 +293,14 @@ release-notes-loading = लोड करत आहे…
 release-notes-error = माफ करा, परंतु प्रकाशन टिपा लोड करतेवेळी त्रुटी आढळली.
 addon-permissions-empty = या विस्तारास कोणत्याही परवानगीची आवश्यकता नाही
 recommended-extensions-heading = शिफारस केलेले विस्तार
+
+## Page headings
+
+extension-heading = विस्तार व्यवस्थापित करा
+theme-heading = थीम व्यवस्थापित करा
+plugin-heading = प्लगइन व्यवस्थापित करा
+dictionary-heading = शब्दकोश व्यवस्थापित करा
+locale-heading = भाषा व्यवस्थापित करा
+shortcuts-heading = विस्तार शॉर्टकट व्यवस्थापित करा
+theme-heading-search-label = अधिक थीम शोधा
+extension-heading-search-label = अधिक विस्तार शोधा

@@ -14,6 +14,11 @@ pref-page =
             [windows] Inställningar
            *[other] Inställningar
         }
+pref-page-title =
+    { PLATFORM() ->
+        [windows] Inställningar
+       *[other] Inställningar
+    }
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -282,6 +287,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Använd { $plugin-name } (i { -brand-short-name })
@@ -457,7 +466,6 @@ choose-bookmark =
 
 home-prefs-content-header = Innehåll Firefox-startskärm
 home-prefs-content-description = Välj vilket innehåll du vill ha på din startskärm i Firefox.
-home-prefs-content-discovery-description = Content Discovery på Firefox startsida låter dig upptäcka högkvalitativa, relevanta artiklar från hela webben.
 home-prefs-search-header =
     .label = Webbsök
 home-prefs-topsites-header =
@@ -505,7 +513,8 @@ search-bar-shown =
     .label = Lägg till sökfältet i verktygsfältet
 search-engine-default-header = Standard sökmotor
 search-engine-default-desc = Välj standardsökmotor som ska användas i adressfältet och sökfältet.
-search-engine-default-private-desc = Välj standardsökmotor som ska användas i privata fönster.
+search-engine-default-desc-2 = Detta är din standardsökmotor i adressfältet och sökfältet. Du kan byta när som helst.
+search-engine-default-private-desc-2 = Välj en annan standardsökmotor endast för privata fönster
 search-separate-default-engine =
     .label = Använd den här sökmotorn i privata fönster
     .accesskey = A
@@ -524,6 +533,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Visa sökförslag före surfhistoriken i adressfältets resultat
+search-show-suggestions-private-windows =
+    .label = Visa sökförslag i privata fönster
 suggestions-addressbar-settings = Ändra inställningar för surfhistorik, bokmärken och flikförslag
 search-suggestions-cant-show = Sökförslag kommer inte att visas i adressfältet eftersom du har konfigurerat { -brand-short-name } att aldrig spara historik.
 search-one-click-header = Sökfältets sökmotorer
@@ -572,6 +583,9 @@ sync-signedout-account-create = Har du inte ett konto? Kom igång
     .accesskey = A
 sync-signedout-account-signin =
     .label = Logga in…
+    .accesskey = L
+sync-signedout-account-signin2 =
+    .label = Logga in på { -sync-brand-short-name }…
     .accesskey = L
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -716,7 +730,11 @@ privacy-header = Webbläsarintegritet
 
 ## Privacy Section - Forms
 
+
+## Privacy Section - Logins and Passwords
+
 logins-header = Inloggningar & lösenord
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Fråga för att spara inloggningar och lösenord för webbplatser
     .accesskey = F
@@ -730,6 +748,7 @@ forms-breach-alerts =
     .label = Visa varningar om lösenord för webbplatser med intrång
     .accesskey = V
 forms-breach-alerts-learn-more-link = Läs mer
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Autofyll inloggningar och lösenord
     .accesskey = A

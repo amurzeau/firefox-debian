@@ -8,3 +8,15 @@
 appmenuitem-protection-report-title = Protekto de privateco
 appmenuitem-protection-report-tooltip =
     .tooltiptext = Vidu vian raporton pri privateco
+
+## Zoom Controls
+
+appmenuitem-zoom-enlarge =
+    .label = Alproksimiĝi
+appmenuitem-zoom-reduce =
+    .label = Malproksimiĝi
+
+## Firefox Account toolbar button and Sync panel in App menu.
+
+fxa-toolbar-sync-now =
+    .label = Speguli nun
