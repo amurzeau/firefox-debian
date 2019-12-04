@@ -71,6 +71,12 @@
 %define L10N_TRANSITION 1
 %include @PRODUCT@-l10n.control.in
 
+%define L10N_LANG ca-valencia
+%define L10N_LANGUAGE Catalan (Valencia)
+%undef L10N_RECOMMENDS
+%undef L10N_TRANSITION
+%include @PRODUCT@-l10n.control.in
+
 %define L10N_LANG cak
 %define L10N_LANGUAGE Kaqchikel
 %undef L10N_RECOMMENDS
@@ -503,10 +509,22 @@
 %define L10N_TRANSITION 1
 %include @PRODUCT@-l10n.control.in
 
+%define L10N_LANG tl
+%define L10N_LANGUAGE Tagalog
+%undef L10N_RECOMMENDS
+%undef L10N_TRANSITION
+%include @PRODUCT@-l10n.control.in
+
 %define L10N_LANG tr
 %define L10N_LANGUAGE Turkish
 %undef L10N_RECOMMENDS
 %define L10N_TRANSITION 1
+%include @PRODUCT@-l10n.control.in
+
+%define L10N_LANG trs
+%define L10N_LANGUAGE Chicahuaxtla Triqui
+%undef L10N_RECOMMENDS
+%undef L10N_TRANSITION
 %include @PRODUCT@-l10n.control.in
 
 %define L10N_LANG uk
