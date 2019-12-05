@@ -89,11 +89,13 @@ export NODEJS=/usr/lib/nodejs-mozilla/bin/node
 export NASM=/usr/lib/nasm-mozilla/bin/nasm
 endif
 
+ifneq (jessie,$(DIST))
 LDFLAGS += -Wl,--as-needed
 # Make the linker generate compressed debug sections. dh_strip would do
 # the same anyways, but it allows elfhack to work in combination with
 # unstripped binaries when they would normally be larger than 2GiB.
 LDFLAGS += -Wl,--compress-debug-sections=zlib
+endif
 
 # Disable debug symbols when building on 32-bits machines, because
 # a) the rust compiler can't deal with it in the available address
