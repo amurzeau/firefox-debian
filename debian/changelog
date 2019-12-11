@@ -1,3 +1,13 @@
+firefox (71.0-2) unstable; urgency=medium
+
+  * dom/indexedDB/ActorsParent.cpp: Work around lack of support for
+    http://eel.is/c++draft/class.temporary#6.7 in compilers. bz#1601707
+    Closes: #946249, #946547.
+  * layout/generic/WritingModes.h, servo/ports/geckolib/cbindgen.toml:
+    Fix build with newer cbindgen. bz#1602358.
+
+ -- Mike Hommey <glandium@debian.org>  Thu, 12 Dec 2019 09:38:33 +0900
+
 firefox (71.0-1) unstable; urgency=medium
 
   * New upstream release.
