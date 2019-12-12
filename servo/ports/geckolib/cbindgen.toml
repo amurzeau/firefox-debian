@@ -616,13 +616,3 @@ renaming_overrides_prefixing = true
   // Get the layout rect, replacing auto right / bottom values for aAutoSize.
   inline nsRect ToLayoutRect(nscoord aAutoSize = NS_MAXSIZE) const;
 """
-
-"WritingMode" = """
-  StyleWritingMode operator^(const StyleWritingMode& other) const {
-    return {static_cast<decltype(bits)>(this->bits ^ other.bits)};
-  }
-  StyleWritingMode& operator^=(const StyleWritingMode& other) {
-    *this = (*this ^ other);
-    return *this;
-  }
-"""
