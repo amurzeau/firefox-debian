@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Gestô di conponenti azonti
+addons-page-title = Gestô di conponenti azonti
 search-header =
     .placeholder = Çerca in addons.mozilla.org
     .searchbuttonlabel = Çerca
@@ -296,3 +297,5 @@ theme-heading-search-label = Treuva atri temi
 extension-heading-search-label = Treuva atre estenscioin
 addons-heading-search-input =
     .placeholder = Çerca in addons.mozilla.org
+addon-page-options-button =
+    .title = Angæsi pe tutti i conponenti azonti

@@ -2,6 +2,37 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This is the default window title in case there is no content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+browser-main-window-title =
+    { $mode ->
+        [private] { -brand-full-name } (Zasebno brskanje)
+       *[default] { -brand-full-name }
+    }
+# This is the default window title in case there is a content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Example Title - Mozilla Firefox"
+# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+#   $title (String) - Content title string.
+browser-main-window-content-title =
+    { $mode ->
+        [private] { $title } - { -brand-full-name } (Zasebno brskanje)
+       *[default] { $title } - { -brand-full-name }
+    }
 urlbar-identity-button =
     .aria-label = Poglejte podatke o strani
 
@@ -25,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = Odpri ploščo s sporočili
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Odpri ploščo z zahtevami za lokacijo
+urlbar-xr-notification-anchor =
+    .tooltiptext = Odprite ploščo z dovoljenji za navidezno resničnost
 urlbar-storage-access-anchor =
     .tooltiptext = Odpri ploščo z dovoljenji za brskanje
 urlbar-translate-notification-anchor =
@@ -51,6 +84,8 @@ urlbar-tip-help-icon =
     .title = Pomoč
 urlbar-geolocation-blocked =
     .tooltiptext = Za to stran ste zavrnili uporabo podatkov o lokaciji.
+urlbar-xr-blocked =
+    .tooltiptext = Za to stran ste zavrnili dostop do naprav navidezne resničnosti.
 urlbar-web-notifications-blocked =
     .tooltiptext = Za to stran ste zavrnili prikaz obvestil.
 urlbar-camera-blocked =
@@ -110,3 +145,16 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Nastavi kot privzeti iskalnik za zasebna okna
     .accesskey = z
+
+## Bookmark Panel
+
+bookmark-panel-show-editor-checkbox =
+    .label = Pri shranjevanju prikaži urejevalnik
+    .accesskey = j
+bookmark-panel-done-button =
+    .label = Shrani
+# Width of the bookmark panel.
+# Should be large enough to fully display the Done and
+# Cancel/Remove Bookmark buttons.
+bookmark-panel =
+    .style = min-width: 23em

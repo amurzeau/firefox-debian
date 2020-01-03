@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Rheolwr Ychwanegion
+addons-page-title = Rheolwr Ychwanegion
 search-header =
     .placeholder = Search addons.mozilla.org
     .searchbuttonlabel = Chwilio
@@ -348,6 +349,10 @@ remove-addon-disabled-button = Methu ei Dynnu <a data-l10n-name="link"> Pam? </a
 disable-addon-button = Analluogu
 enable-addon-button = Galluogi
 expand-addon-button = Rhagor o Opsiynau
+# This is used for the toggle on the extension card, it's a checkbox and this
+# is always its label.
+extension-enable-addon-button-label =
+    .aria-label = Galluogi
 preferences-addon-button =
     { PLATFORM() ->
         [windows] Opsiynau
@@ -455,5 +460,8 @@ discover-heading = Personoli Eich { -brand-short-name }
 shortcuts-heading = Rheoli Estyniad Llwybrau Byr
 theme-heading-search-label = Canfod themâu eraill
 extension-heading-search-label = Canfod estyniadau eraill
+default-heading-search-label = Canfod rhagor o ychwanegion
 addons-heading-search-input =
     .placeholder = Search addons.mozilla.org
+addon-page-options-button =
+    .title = Offer ar gyfer pob ychwanegyn

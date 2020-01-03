@@ -12,9 +12,9 @@
 
 <!ENTITY newevent.status.label                    "Gjendje" >
 <!ENTITY newevent.status.accesskey                "G" >
-<!ENTITY newevent.eventStatus.none.label          "E papërcaktuar" >
+<!ENTITY newevent.eventStatus.none.label          "E pacaktuar" >
 <!ENTITY newevent.eventStatus.none.accesskey      "p" >
-<!ENTITY newevent.todoStatus.none.label           "E papërcaktuar" >
+<!ENTITY newevent.todoStatus.none.label           "E pacaktuar" >
 <!ENTITY newevent.eventStatus.cancelled.label     "E anuluar" >
 <!ENTITY newevent.eventStatus.cancelled.accesskey "a" >
 <!ENTITY newevent.todoStatus.cancelled.label      "E anuluar" >
@@ -130,7 +130,7 @@
 <!ENTITY  event.menu.options.timezone2.accesskey              "Z">
 <!ENTITY  event.menu.options.priority2.label                  "Përparësi">
 <!ENTITY  event.menu.options.priority2.accesskey              "P">
-<!ENTITY  event.menu.options.priority.notspecified.label      "E papërcaktuar">
+<!ENTITY  event.menu.options.priority.notspecified.label      "E pacaktuar">
 <!ENTITY  event.menu.options.priority.notspecified.accesskey  "c">
 <!ENTITY  event.menu.options.priority.low.label               "E ulët">
 <!ENTITY  event.menu.options.priority.low.accesskey           "u">
@@ -190,10 +190,10 @@
    - illustrates how it might look like: https://bugzilla.mozilla.org/attachment.cgi?id=8810121 -->
 <!ENTITY counter.button.proposal.label                    "Zbatoje propozimin">
 <!ENTITY counter.button.proposal.accesskey                "b">
-<!ENTITY counter.button.proposal.tooltip2                 "Fushat e veprimtarive do të plotësohen duke përdorur vlera prej kundëpropozimit, vetëm ruajtja me ose pa ndryshime shtesë do të shkaktojë njoftimin e pjesëmarrësve">
+<!ENTITY counter.button.proposal.tooltip2                 "Fushat e veprimtarive do të plotësohen duke përdorur vlera nga kundëpropozimi, vetëm ruajtja me ose pa ndryshime shtesë do të shkaktojë njoftimin e pjesëmarrësve">
 <!ENTITY counter.button.original.label                    "Zbato të dhënat origjinale">
 <!ENTITY counter.button.original.accesskey                "r">
-<!ENTITY counter.button.original.tooltip2                 "Fushat do të plotësohen me vlerat prej veprimtarisë origjinale, të kohës përpara se të bëhej kundërpropozimi origjinal">
+<!ENTITY counter.button.original.tooltip2                 "Fushat do të plotësohen me vlerat nga veprimtaria origjinale, të kohës përpara se të bëhej kundërpropozimi origjinal">
 
 <!-- Main page -->
 <!ENTITY event.title.textbox.label                        "Titull:" >
@@ -291,7 +291,7 @@
 
 <!ENTITY event.recurrence.pattern.monthly.every.label   "Çdo" >
 <!ENTITY repeat.units.months.both                       "Muaj" >
-<!ENTITY event.recurrence.monthly.every.label           "Më çdo" >
+<!ENTITY event.recurrence.monthly.every.label           "Çdo" >
 <!ENTITY event.recurrence.monthly.first.label           "E parë">
 <!ENTITY event.recurrence.monthly.second.label          "E dytë">
 <!ENTITY event.recurrence.monthly.third.label           "E tretë">
@@ -407,11 +407,6 @@
 <!ENTITY read.only.location.label        "Vendndodhje:">
 <!ENTITY read.only.category.label        "Kategori:">
 <!ENTITY read.only.organizer.label       "Organizues:">
-<!ENTITY read.only.reply.label           "Përgjigje:">
-<!ENTITY read.only.accept.label          "Do të marr pjesë">
-<!ENTITY read.only.decline.label         "Nuk do të marr pjesë">
-<!ENTITY read.only.tentative.label       "Ndoshta marr pjesë">
-<!ENTITY read.only.needs.action.label    "Do të vendos më vonë">
 <!ENTITY read.only.reminder.label        "Kujtues:">
 <!ENTITY read.only.attachments.label     "Bashkëngjitje:">
 <!ENTITY read.only.attendees.label       "Pjesëmarrës">

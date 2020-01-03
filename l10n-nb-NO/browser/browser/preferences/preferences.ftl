@@ -561,6 +561,12 @@ search-keyword-warning-bookmark = Du har valgt et nøkkelord som brukes av et an
 ## Containers Section
 
 containers-back-link = « Gå tilbake
+containers-back-button =
+    .aria-label =
+        { PLATFORM() ->
+            [windows] Tilbake til innstillinger
+           *[other] Tilbake til innstillinger
+        }
 containers-header = Innholdsfaner
 containers-add-button =
     .label = Legg til ny beholder
@@ -917,7 +923,7 @@ content-blocking-all-windows-trackers = Kjente sporere i alle vinduer
 content-blocking-all-windows-tracking-content = Sporingsinnhold i alle vinduer
 content-blocking-all-third-party-cookies = Alle tredjeparts infokapsler
 content-blocking-cryptominers = Kryptominere
-content-blocking-fingerprinters = Nettleseravtrykk
+content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Se opp!
 content-blocking-warning-description = Blokkering av innhold kan føre til at noen nettsteder slutter å fungere. Det er enkelt å deaktivere blokkering for nettsteder du stoler på.
 content-blocking-learn-how = Finn ut hvordan
@@ -968,6 +974,10 @@ permissions-location = Plassering
 permissions-location-settings =
     .label = Innstillinger…
     .accesskey = P
+permissions-xr = Virtuell virkelighet
+permissions-xr-settings =
+    .label = Innstillinger…
+    .accesskey = s
 permissions-camera = Kamera
 permissions-camera-settings =
     .label = Innstillinger…
@@ -1016,6 +1026,8 @@ permissions-a11y-privacy-link = Les mer
 collection-header = Datainnsamling og bruk for { -brand-short-name }
 collection-description = Vi prøver alltid å gi deg valg og samler bare det vi trenger for å levere og forbedre { -brand-short-name } for alle. Vi ber alltid om tillatelse før vi aksepterer personopplysninger.
 collection-privacy-notice = Personvernbestemmelser
+collection-health-report-telemetry-disabled = Du tillater ikke lenger { -vendor-short-name } å samle inn teknisk- og interaksjonsdata. Alle tidligere data vil bli slettet innen 30 dager.
+collection-health-report-telemetry-disabled-link = Les mer
 collection-health-report =
     .label = Tillat { -brand-short-name } å sende tekniske data og data for bruk til { -vendor-short-name }
     .accesskey = r

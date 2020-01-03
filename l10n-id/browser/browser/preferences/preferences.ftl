@@ -300,7 +300,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-##
+
 
 drm-content-header = Konten Digital Rights Management (DRM)
 play-drm-content =
@@ -490,6 +490,8 @@ search-bar-shown =
     .label = Tambahkan bilah pencarian di bilah alat
 search-engine-default-header = Mesin Pencari Baku
 search-engine-default-desc = Pilih mesin pencari baku yang akan digunakan di bilah alamat dan bilah pencarian.
+search-engine-default-private-desc-2 = Pilih mesin pencari bawaan yang berbeda hanya untuk Jendela Pribadi
+search-suggestions-header = Saran Pencarian
 search-suggestions-option =
     .label = Sertakan saran pencarian
     .accesskey = s
@@ -503,6 +505,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Tampilkan saran pencarian di atas riwayat penjelajahan dalam hasil bilah alamat
+search-show-suggestions-private-windows =
+    .label = Tampilkan saran pencarian di Jendela Pribadi
 search-suggestions-cant-show = Saran pencarian tidak akan ditampilkan di hasil bilah lokasi karena Anda telah mengatur { -brand-short-name } agar tidak mengingat riwayat.
 search-one-click-header = Mesin pencari sekali klik
 search-one-click-desc = Pilih mesin pencari alternatif yang muncul di bawah bilah alamat dan bilah pencarian ketika Anda mulai memasukkan kata kunci.
@@ -616,6 +620,9 @@ sync-currently-syncing-prefs =
         [windows] Pengaturan
        *[other] Preferensi
     }
+sync-change-options =
+    .label = Ubah
+    .accesskey = U
 
 ## The "Choose what to sync" dialog.
 
@@ -638,6 +645,10 @@ sync-engine-tabs =
     .accesskey = T
 sync-engine-logins =
     .label = Info masuk
+    .tooltiptext = Nama pengguna dan sandi yang Anda simpan
+    .accesskey = I
+sync-engine-logins-passwords =
+    .label = Info masuk dan sandi
     .tooltiptext = Nama pengguna dan sandi yang Anda simpan
     .accesskey = I
 sync-engine-addresses =
@@ -689,6 +700,7 @@ privacy-header = Privasi Peramban
 ## Privacy Section - Logins and Passwords
 
 logins-header = Info Masuk & Sandi
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Minta untuk menyimpan info masuk dan kata sandi untuk situs web
     .accesskey = M
@@ -699,6 +711,7 @@ forms-generate-passwords =
     .label = Sarankan dan hasilkan kata sandi yang kuat
     .accesskey = u
 forms-breach-alerts-learn-more-link = Pelajari lebih lanjut
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Isi info masuk dan kata sandi secara otomatis
     .accesskey = I
@@ -833,7 +846,7 @@ content-blocking-setting-custom =
 content-blocking-standard-desc = Imbang antara proteksi dan performa. Memungkinkan sejumlah pelacak agar situs berfungsi dengan baik.
 content-blocking-strict-description = Perlindungan yang lebih kuat, dapat menyebabkan beberapa situs rusak.
 content-blocking-custom-desc = Pilih yang diblokir.
-content-blocking-private-trackers = Hanya pelacak yang dikenal di Jendela Privat
+content-blocking-private-trackers = Hanya pelacak yang dikenal di Jendela Pribadi
 content-blocking-third-party-cookies = Kuki pelacak pihak ketiga
 
 ## These strings are used to define the different levels of
@@ -850,14 +863,16 @@ enhanced-tracking-protection-setting-custom =
     .label = Ubahsuai
     .accesskey = U
 
-##
+
 
 content-blocking-etp-strict-desc = Perlindungan yang lebih kuat, tetapi dapat menyebabkan beberapa situs atau konten rusak.
+content-blocking-private-windows = Melacak konten di Jendela Pribadi
 content-blocking-cross-site-tracking-cookies = Kuki pelacakan lintas situs
 content-blocking-social-media-trackers = Pelacak media sosial
 content-blocking-all-cookies = Semua kuki
 content-blocking-unvisited-cookies = Kuki dari situs yang belum dikunjungi
 content-blocking-all-windows-trackers = Pelacak yang dikenal di seluruh jendela
+content-blocking-all-windows-tracking-content = Melacak konten di seluruh jendela
 content-blocking-all-third-party-cookies = Semua kuki pihak ketiga
 content-blocking-cryptominers = Penambang Kripto
 content-blocking-fingerprinters = Pelacak Sidik
@@ -910,6 +925,7 @@ permissions-location = Lokasi
 permissions-location-settings =
     .label = Setelan…
     .accesskey = t
+permissions-xr = Realitas Virtual
 permissions-camera = Kamera
 permissions-camera-settings =
     .label = Setelan…

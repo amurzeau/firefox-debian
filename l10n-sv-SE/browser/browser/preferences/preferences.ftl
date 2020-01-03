@@ -5,7 +5,7 @@
 do-not-track-description = Skicka webbplatser en “Spåra inte”-signal att du inte vill bli spårad
 do-not-track-learn-more = Läs mer
 do-not-track-option-default-content-blocking-known =
-    .label = Endast när { -brand-short-name } är inställt för att blockera kända trackers
+    .label = Endast när { -brand-short-name } är inställt för att blockera kända spårare
 do-not-track-option-always =
     .label = Alltid
 pref-page =
@@ -128,8 +128,8 @@ get-started-configured = Öppna inställningar för { -sync-brand-short-name }
 always-check-default =
     .label = Kontrollera alltid om { -brand-short-name } är din standardwebbläsare
     .accesskey = a
-is-default = { -brand-short-name } är redan standardwebbläsare
-is-not-default = { -brand-short-name } är redan standardwebbläsare
+is-default = { -brand-short-name } är din standardwebbläsare
+is-not-default = { -brand-short-name } är inte din standardwebbläsare
 set-as-my-default-browser =
     .label = Ange som standard…
     .accesskey = s
@@ -561,6 +561,12 @@ search-keyword-warning-bookmark = Du har valt ett nyckelord som redan används a
 ## Containers Section
 
 containers-back-link = « Gå tillbaka
+containers-back-button =
+    .aria-label =
+        { PLATFORM() ->
+            [windows] Tillbaka till inställningar
+           *[other] Tillbaka till inställningar
+        }
 containers-header = Innehållsflikar
 containers-add-button =
     .label = Lägg till ny behållare
@@ -829,11 +835,11 @@ sitedata-disallow-cookies-option =
 sitedata-block-desc = Typ blockerad
     .accesskey = T
 sitedata-option-block-trackers =
-    .label = Tredjeparts trackers
+    .label = Tredjepartsspårare
 sitedata-option-block-cross-site-trackers =
-    .label = Globala trackers
+    .label = Globala spårare
 sitedata-option-block-cross-site-and-social-media-trackers =
-    .label = Globala och sociala medie-trackers
+    .label = Globala och sociala medie-spårare
 sitedata-option-block-unvisited =
     .label = Kakor från obesökta webbplatser
 sitedata-option-block-all-third-party =
@@ -870,7 +876,7 @@ addressbar-suggestions-settings = Ändra inställningar för förslag från sök
 content-blocking-header = Innehållsblockering
 content-blocking-section-description = Skydda din integritet medan du surfar. Blockera osynligt innehåll som spårar de webbplatser du besöker och profilerar dig. Att blockera något av detta innehåll kan göra att sidor laddas snabbare.
 content-blocking-enhanced-tracking-protection = Förbättrat spårningsskydd
-content-blocking-section-top-level-description = Trackers följer dig runt online för att samla in information om dina surfvanor och intressen. { -brand-short-name } blockerar många av dessa trackers och andra skadliga skript.
+content-blocking-section-top-level-description = Spårare följer dig runt online för att samla in information om dina surfvanor och intressen. { -brand-short-name } blockerar många av dessa spårare och andra skadliga skript.
 content-blocking-learn-more = Läs mer
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -883,10 +889,10 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Anpassad
     .accesskey = A
-content-blocking-standard-desc = Balanserad för skydd och prestanda. Tillåter vissa trackers så att webbplatser fungerar korrekt.
+content-blocking-standard-desc = Balanserad för skydd och prestanda. Tillåter vissa spårare så att webbplatser fungerar korrekt.
 content-blocking-strict-description = Starkare skydd, kan orsaka fel på vissa webbplatser.
 content-blocking-custom-desc = Välj vad du vill blockera.
-content-blocking-private-trackers = Kända trackers endast i privata fönster
+content-blocking-private-trackers = Kända spårare endast i privata fönster
 content-blocking-third-party-cookies = Spårningskakor från tredje part
 
 ## These strings are used to define the different levels of
@@ -907,29 +913,29 @@ enhanced-tracking-protection-setting-custom =
 
 content-blocking-etp-standard-desc = Balanserad för skydd och prestanda. Sidor laddas normalt.
 content-blocking-etp-strict-desc = Starkare skydd, men kan leda till att vissa webbplatser eller innehåll inte fungerar.
-content-blocking-etp-custom-desc = Välj vilka trackers och skript som ska blockeras.
+content-blocking-etp-custom-desc = Välj vilka spårare och skript som ska blockeras.
 content-blocking-private-windows = Spårningsinnehåll i privat fönster
 content-blocking-cross-site-tracking-cookies = Globala spårningskakor
-content-blocking-social-media-trackers = Sociala media-trackers
+content-blocking-social-media-trackers = Sociala media-spårare
 content-blocking-all-cookies = Alla kakor
 content-blocking-unvisited-cookies = Kakor från obesökta webbplatser
-content-blocking-all-windows-trackers = Kända trackers i alla fönster
+content-blocking-all-windows-trackers = Kända spårare i alla fönster
 content-blocking-all-windows-tracking-content = Spårningsinnehåll i alla fönster
 content-blocking-all-third-party-cookies = Alla kakor från tredje part
-content-blocking-cryptominers = Cryptominers
-content-blocking-fingerprinters = Fingerprinters
+content-blocking-cryptominers = Kryptogrävare
+content-blocking-fingerprinters = Fingeravtrycksspårare
 content-blocking-warning-title = Se upp!
 content-blocking-warning-description = Att blockera innehåll kan begränsa funktionaliteten hos vissa webbplatser. Det är enkelt att inaktivera blockering för webbplatser du litar på.
 content-blocking-learn-how = Lär dig hur
-content-blocking-etp-warning-description = Blockering av trackers kan påverka funktionaliteten på vissa webbplatser. Ladda om en sida med trackers för att ladda allt innehåll.
+content-blocking-etp-warning-description = Blockering av spårare kan påverka funktionaliteten på vissa webbplatser. Ladda om en sida med spårare för att ladda allt innehåll.
 content-blocking-warning-learn-how = Lär dig hur
 content-blocking-reload-description = Du måste ladda om dina flikar för att kunna tillämpa ändringarna.
 content-blocking-reload-tabs-button =
     .label = Ladda om alla flikar
     .accesskey = L
 content-blocking-trackers-label =
-    .label = Trackers
-    .accesskey = T
+    .label = Spårare
+    .accesskey = S
 content-blocking-tracking-content-label =
     .label = Spårningsinnehåll
     .accesskey = i
@@ -947,12 +953,12 @@ content-blocking-expand-section =
     .tooltiptext = Mer information
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
-    .label = Cryptominers
+    .label = Kryptogrävare
     .accesskey = y
 # Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
 # that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
 content-blocking-fingerprinters-label =
-    .label = Fingerprinters
+    .label = Fingeravtrycksspårare
     .accesskey = F
 
 ## Privacy Section - Tracking
@@ -966,6 +972,10 @@ tracking-manage-exceptions =
 permissions-header = Rättigheter
 permissions-location = Plats
 permissions-location-settings =
+    .label = Inställningar…
+    .accesskey = t
+permissions-xr = Virtuell verklighet
+permissions-xr-settings =
     .label = Inställningar…
     .accesskey = t
 permissions-camera = Kamera
@@ -1016,6 +1026,8 @@ permissions-a11y-privacy-link = Läs mer
 collection-header = Datainsamling och användning för { -brand-short-name }
 collection-description = Vi strävar alltid efter att ge dig val och samlar endast in vad vi behöver för tillhandahålla och förbättra { -brand-short-name } för alla. Vi ber alltid om tillåtelse innan vi tar emot personliga uppgifter.
 collection-privacy-notice = Sekretesspolicy
+collection-health-report-telemetry-disabled = Du tillåter inte längre { -vendor-short-name } att fånga in teknisk data och interaktionsdata. All tidigare data kommer att raderas inom 30 dagar.
+collection-health-report-telemetry-disabled-link = Läs mer
 collection-health-report =
     .label = Tillåt { -brand-short-name } att automatiskt skicka teknisk och interaktionsdata till { -vendor-short-name }
     .accesskey = r

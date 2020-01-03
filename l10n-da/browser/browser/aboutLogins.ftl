@@ -18,12 +18,6 @@ login-filter =
 
 create-login-button = Opret nyt login
 
-# This string is used as alternative text for favicon images.
-# Variables:
-#   $title (String) - The title of the website associated with the favicon.
-login-favicon =
-  .alt = Favicon for { $title }
-
 fxaccounts-sign-in-text = Få dine adgangkoder på alle dine enheder
 fxaccounts-sign-in-button = Log ind på { -sync-brand-short-name }
 fxaccounts-avatar-button =
@@ -65,11 +59,6 @@ about-logins-login-list-empty-search-description = Din søgning gav ingen result
 login-list-item-title-new-login = Nyt login
 login-list-item-subtitle-new-login = Indtast login-oplysninger
 login-list-item-subtitle-missing-username = (intet brugernavn)
-
-about-logins-list-item-warning-icon = 
-  .alt = Advarselsikon
-  .title = Websted med datalæk
-
 about-logins-list-item-breach-icon =
   .title = Websted med datalæk
 
@@ -89,6 +78,7 @@ about-logins-intro-import = Hvis dine logins er gemt i en anden browser, kan du 
 login-item-new-login-title = Opret nyt login
 login-item-edit-button = Rediger
 login-item-delete-button = Slet
+about-logins-login-item-remove-button = Fjern
 login-item-origin-label = Webstedets adresse
 login-item-origin =
   .placeholder = https://www.eksempel.dk
@@ -118,11 +108,7 @@ master-password-reload-button =
   .label = Log ind
   .accesskey = L
 
-## Dialogs
-
-confirmation-dialog-cancel-button = Annuller
-confirmation-dialog-dismiss-button =
-  .title = Annuller
+## Password Sync notification
 
 enable-password-sync-notification-message =
   { PLATFORM() ->
@@ -137,13 +123,22 @@ enable-password-sync-preferences-button =
     }
   .accesskey = G
 
+confirm-delete-dialog-title = Slet dette login?
 about-logins-enable-password-sync-dont-ask-again-button =
   .label = Spørg mig ikke igen
   .accesskey = S
 
-confirm-delete-dialog-title = Slet dette login?
+## Dialogs
+
+confirmation-dialog-cancel-button = Annuller
+confirmation-dialog-dismiss-button =
+  .title = Annuller
+
+about-logins-confirm-remove-dialog-title = Fjern dette login?
 confirm-delete-dialog-message = Denne handling kan ikke fortrydes.
 confirm-delete-dialog-confirm-button = Slet
+
+about-logins-confirm-remove-dialog-confirm-button = Fjern
 
 confirm-discard-changes-dialog-title = Annuller ikke-gemte ændringer?
 confirm-discard-changes-dialog-message = Alle ikke-gemte ændringer vil gå tabt.
@@ -157,12 +152,6 @@ breach-alert-dismiss =
     .title = Luk denne advarsel
 
 ## Error Messages
-
-# This is an error message that appears when a user attempts to save
-# a new login that is identical to an existing saved login.
-# Variables:
-#   $loginTitle (String) - The title of the website associated with the login.
-about-logins-error-message-duplicate-login = Der findes allerede et login for { $loginTitle } med samme brugernavn.
 
 # This is an error message that appears when a user attempts to save
 # a new login that is identical to an existing saved login.

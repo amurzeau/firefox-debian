@@ -67,7 +67,7 @@ lockwise-no-logins-content = Stáhněte si aplikaci <a data-l10n-name="lockwise-
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 lockwise-passwords-stored = Bezpečně uložené přihlašovací údaje <a data-l10n-name="lockwise-how-it-works">Jak to funguje</a>
-turn-on-sync = Zapnout { -sync-brand-short-name }…
+turn-on-sync = Zapnout { -sync-brand-short-name(case: "acc") }…
     .title = Otevře nastavení synchronizace
 manage-devices = Správa zařízení
 # Variables:
@@ -79,6 +79,15 @@ lockwise-sync-status =
        *[other] s { $count } dalšími zařízeními
     }
 lockwise-sync-not-syncing-devices = Není nastavena synchronizace s dalšími zařízeními
+manage-connected-devices = Správa zařízení…
+# Variables:
+#   $count (Number) - Number of devices connected with sync.
+lockwise-connected-device-status =
+    { $count ->
+        [one] Spojeno s jedním dalším zařízením.
+        [few] Spojeno se { $count } dalšími zařízeními.
+       *[other] Spojeno s { $count } dalšími zařízeními.
+    }
 monitor-title = Pozor na úniky dat
 monitor-link = Jak to funguje
 monitor-header-content-no-account = { -monitor-brand-name } zkotrolujte, zda byly vaše údaje součástí nějakého známého úniku dat, a může vás i upozornit, pokud se vyskytnou nějakém novém.
@@ -97,7 +106,7 @@ info-known-breaches-found = Počet známých úniků dat, které obsahují vaše
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 info-exposed-passwords-found = Počet vašich hesel vyzrazených ve všech únicích
-full-report-link = Zobrazit kompletní přehled ve službě <a data-l10n-name="monitor-inline-link">{ -monitor-brand-name }</a>
+full-report-link = Zobrazit kompletní přehled ve <a data-l10n-name="monitor-inline-link">{ -monitor-brand-name(case: "loc") }</a>
 # This string is displayed after a large numeral that indicates the total number
 # of saved logins which may have been exposed. Don’t add $count to
 # your localization, because it would result in the number showing twice.

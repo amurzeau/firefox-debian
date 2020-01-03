@@ -7,7 +7,7 @@
 
 site-data-settings-window =
     .title = Upravljanje kolačićima i podacima web stranice
-site-data-settings-description = Sljedeće stranice spremaju kolačiće i podatke web stranice na vašem računalu. { -brand-short-name } drži podatke s web stranica koje trajno pohranjivaju podatke sve dok ih ne izbrišete i briše podatke od stranica koje trajno ne pohranjivaju podatke ako je potrebno više prostora.
+site-data-settings-description = Sljedeće stranice spremaju kolačiće i podatke web stranice na tvom računalu. { -brand-short-name } čuva podatke s web stranica koje ih trajno spremaju, sve dok ih ne izbrišeš i briše podatke od stranica koje ne spremaju podatke trajno, ako je potrebno više prostora.
 site-data-search-textbox =
     .placeholder = Pretraži web stranice
     .accesskey = s
@@ -50,5 +50,5 @@ site-data-removing-dialog =
     .title = { site-data-removing-header }
     .buttonlabelaccept = Ukloni
 site-data-removing-header = Uklanjanje kolačića i podataka web stranice
-site-data-removing-desc = Uklanjanje kolačića i podataka web stranica bi vas moglo odjaviti s web stranica. Jeste li sigurni da želite napraviti promjene?
+site-data-removing-desc = Uklanjanje kolačića i podataka web stranica će te možda odjaviti s web stranica. Sigurno želiš napraviti promjene?
 site-data-removing-table = Kolačići i podaci web stranica će biti uklonjeni za sljedeće stranice

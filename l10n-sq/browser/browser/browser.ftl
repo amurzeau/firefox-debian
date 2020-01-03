@@ -2,6 +2,37 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This is the default window title in case there is no content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+browser-main-window-title =
+    { $mode ->
+        [private] { -brand-full-name } (Shfletim Privat)
+       *[default] { -brand-full-name }
+    }
+# This is the default window title in case there is a content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Example Title - Mozilla Firefox"
+# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+#   $title (String) - Content title string.
+browser-main-window-content-title =
+    { $mode ->
+        [private] { $title } - { -brand-full-name } (Shfletim Privat)
+       *[default] { $title } - { -brand-full-name }
+    }
 urlbar-identity-button =
     .aria-label = Shihni të dhëna sajti
 
@@ -10,7 +41,7 @@ urlbar-identity-button =
 urlbar-services-notification-anchor =
     .tooltiptext = Hapni panelin e mesazheve të instalimit
 urlbar-web-notification-anchor =
-    .tooltiptext = Ndryshoni zgjedhjen për nëse mund të merrni njoftime prej sajtit apo jo
+    .tooltiptext = Ndryshoni zgjedhjen për nëse mund të merrni njoftime nga sajti apo jo
 urlbar-midi-notification-anchor =
     .tooltiptext = Hapni panel MIDI
 urlbar-eme-notification-anchor =
@@ -25,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = Hapni panelin e mesazheve
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Hapni panel kërkesash vendndodhjesh
+urlbar-xr-notification-anchor =
+    .tooltiptext = Hapni panel lejesh për realitet virtual
 urlbar-storage-access-anchor =
     .tooltiptext = Hapni panelin e lejeve mbi veprimtari shfletimi
 urlbar-translate-notification-anchor =
@@ -51,6 +84,8 @@ urlbar-tip-help-icon =
     .title = Merrni ndihmë
 urlbar-geolocation-blocked =
     .tooltiptext = Ia keni bllokuar këtij sajti të dhënat mbi vendndodhjen tuaj.
+urlbar-xr-blocked =
+    .tooltiptext = E keni bllokuar hyrjen në pajisje realiteti virtual për këtë sajt.
 urlbar-web-notifications-blocked =
     .tooltiptext = Ia keni bllokuar këtij sajti njoftimet.
 urlbar-camera-blocked =
@@ -79,7 +114,7 @@ page-action-add-to-urlbar =
 page-action-manage-extension =
     .label = Administroni Zgjerime…
 page-action-remove-from-urlbar =
-    .label = Hiqe prej Shtylle Adresash
+    .label = Hiqe nga Shtyllë Adresash
 
 ## Auto-hide Context Menu
 
@@ -98,7 +133,7 @@ search-one-offs-with-title = Këtë herë kërko me:
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
-    .label = Ndryshoji Rregullimet e Kërkimit
+    .label = Ndryshoni Rregullime Kërkimi
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Ndryshoni rregullime kërkimi
 search-one-offs-context-open-new-tab =
@@ -110,3 +145,16 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Vëre si Motor Kërkimi Parazgjedhje për Dritare Private
     .accesskey = V
+
+## Bookmark Panel
+
+bookmark-panel-show-editor-checkbox =
+    .label = Shfaqe përpunuesin kur bëhen ruajtje
+    .accesskey = S
+bookmark-panel-done-button =
+    .label = U bë
+# Width of the bookmark panel.
+# Should be large enough to fully display the Done and
+# Cancel/Remove Bookmark buttons.
+bookmark-panel =
+    .style = min-width: 23em

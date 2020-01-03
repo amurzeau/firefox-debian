@@ -198,7 +198,7 @@ language-and-appearance-header = Limbă și aspect
 fonts-and-colors-header = Fonturi și culori
 default-font = Font implicit
     .accesskey = D
-default-font-size = Mărime
+default-font-size = Dimensiune
     .accesskey = S
 advanced-fonts =
     .label = Avansat…
@@ -315,7 +315,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-##
+
 
 drm-content-header = Conținut Digital Rights Management (DRM)
 play-drm-content =
@@ -513,6 +513,13 @@ search-bar-shown =
     .label = Adaugă bara de căutare în bara de unelte
 search-engine-default-header = Motor de căutare implicit
 search-engine-default-desc = Alege motorul de căutare implicit pentru a fi folosit în bara de adresă și în bara de căutare.
+search-engine-default-desc-2 = Acesta este motorul tău de căutare implicit din bara de adresă și bara de căutare. Îl poți comuta oricând.
+search-engine-default-private-desc-2 = Alege un alt motor de căutare implicit numai pentru ferestrele private
+search-separate-default-engine =
+    .label = Folosește acest motor de căutare în ferestrele private
+    .accesskey = U
+search-suggestions-header = Sugestii de căutare
+search-suggestions-desc = Alege felul în care apar sugestiile motoarelor de căutare.
 search-suggestions-option =
     .label = Furnizează sugestii de căutare
     .accesskey = s
@@ -526,6 +533,9 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Afișează sugestiile de căutare înaintea istoricului de navigare în rezultatele din bara de adresă
+search-show-suggestions-private-windows =
+    .label = Afișează sugestii de căutare în ferestrele private
+suggestions-addressbar-settings = Modifică preferințele pentru istoricul de navigare, marcaje și sugestii cu privire la file
 search-suggestions-cant-show = Sugestiile de căutare nu vor fi afișate în rezultatele din bara de adrese deoarece ai configurat { -brand-short-name } ca să nu țină minte niciodată istoricul.
 search-one-click-header = Motoare de căutare la un clic distanță
 search-one-click-desc = Alege motoarele de căutare alternative care apar sub bara de adresă și bara de căutare atunci când începi să introduci un cuvânt cheie.
@@ -612,12 +622,41 @@ sync-signedin-settings-desc = Alege ce să sincronizezi pe dispozitive folosind 
 
 ## Sync section - enabling or disabling sync.
 
+prefs-syncing-on = Sincronizare: ACTIVATĂ
+prefs-syncing-off = Sincronizare: DEZACTIVATĂ
+prefs-sync-now =
+    .labelnotsyncing = Sincronizează acum
+    .accesskeynotsyncing = N
+    .labelsyncing = Se sincronizează…
 
 ## The list of things currently syncing.
 
+sync-currently-syncing-heading = În prezent, sincronizezi aceste elemente:
+sync-currently-syncing-bookmarks = Marcaje
+sync-currently-syncing-history = Istoric
+sync-currently-syncing-tabs = File deschise
+sync-currently-syncing-logins-passwords = Date de autentificare și parole
+sync-currently-syncing-addresses = Adrese
+sync-currently-syncing-creditcards = Carduri de credit
+sync-currently-syncing-addons = Suplimente
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Opțiuni
+       *[other] Preferințe
+    }
+sync-change-options =
+    .label = Modifică…
+    .accesskey = C
 
 ## The "Choose what to sync" dialog.
 
+sync-choose-what-to-sync-dialog =
+    .title = Alege ce să sincronizezi
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Salvează modificările
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = Deconectează-te…
+    .buttonaccesskeyextra2 = D
 sync-engine-bookmarks =
     .label = Marcaje
     .accesskey = M
@@ -681,6 +720,7 @@ privacy-header = Confidențialitate în browser
 ## Privacy Section - Logins and Passwords
 
 logins-header = Autentificări și parole
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Solicită salvarea autentificărilor și parolelor pentru site-urile web
     .accesskey = r
@@ -694,6 +734,7 @@ forms-breach-alerts =
     .label = Afișează alerte despre parole pentru site-urile web a căror securitate a fost încălcată
     .accesskey = b
 forms-breach-alerts-learn-more-link = Află mai multe
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Completează automat autentificări și parole
     .accesskey = i
@@ -848,7 +889,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Personalizată
     .accesskey = C
 
-##
+
 
 content-blocking-etp-standard-desc = Echilibrat pentru protecție și performanță. Paginile se vor încărca normal.
 content-blocking-etp-strict-desc = O protecție mai puternică, dar poate provoca funcționarea necorespunzătoare a site-urilor sau a conținutului.

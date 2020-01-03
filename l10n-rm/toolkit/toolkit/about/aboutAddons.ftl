@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Administraziun dals supplements
+addons-page-title = Administraziun dals supplements
 search-header =
     .placeholder = Tschertgar sin addons.mozilla.org
     .searchbuttonlabel = Tschertgar
@@ -450,9 +451,12 @@ theme-heading = Administrar tes designs
 plugin-heading = Administrar tes plug-ins
 dictionary-heading = Administrar tes dicziunaris
 locale-heading = Administrar tias linguas
+updates-heading = Administrar las actualisaziuns
 discover-heading = Persunalisescha tes { -brand-short-name }
 shortcuts-heading = Administrar scursanidas dad extensiuns
 theme-heading-search-label = Chattar ulteriurs designs
 extension-heading-search-label = Chattar ulteriuras extensiuns
 addons-heading-search-input =
     .placeholder = Tschertgar sin addons.mozilla.org
+addon-page-options-button =
+    .title = Utensils per tut ils supplements

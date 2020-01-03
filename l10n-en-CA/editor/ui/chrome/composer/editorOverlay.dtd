@@ -9,7 +9,7 @@
 
 <!-- Edit menu items -->
 <!ENTITY pasteNoFormatting.label "Paste Without Formatting">
-<!ENTITY pasteNoFormatting.accesskey "o">
+<!ENTITY pasteNoFormatting.accesskey "n">
 <!ENTITY pasteNoFormatting.key "V">
 <!ENTITY pasteAs.label "Paste As">
 <!ENTITY pasteAs.accesskey "a">
@@ -40,7 +40,7 @@
 <!ENTITY insertTableCmd.accesskey "T">
 <!ENTITY insertHTMLCmd.label "HTML…">
 <!ENTITY insertHTMLCmd.accesskey "H">
-<!ENTITY insertMathCmd.label "Mathematical Formula…">
+<!ENTITY insertMathCmd.label "Math…">
 <!ENTITY insertMathCmd.accesskey "M">
 <!ENTITY insertCharsCmd.label "Characters and Symbols…">
 <!ENTITY insertCharsCmd.accesskey "C">
@@ -145,7 +145,7 @@
 
 <!ENTITY paragraphMenu.label "Paragraph">
 <!ENTITY paragraphMenu.accesskey "P">
-<!ENTITY paragraphParagraphCmd.label "Paragraph">  
+<!ENTITY paragraphParagraphCmd.label "Paragraph">
 <!ENTITY paragraphParagraphCmd.accesskey "P">
 <!ENTITY heading1Cmd.label "Heading 1">
 <!ENTITY heading1Cmd.accesskey "1">
@@ -268,7 +268,7 @@
 <!ENTITY tableDeleteMenu.label "Delete">
 <!ENTITY tableDeleteMenu.accesskey "D">
 
-<!-- text for "Join Cells" is in editor.properties 
+<!-- text for "Join Cells" is in editor.properties
      ("JoinSelectedCells" and "JoinCellToRight")
      the access key must exist in both of those strings
      But value must be set here for accesskey to draw properly
@@ -295,18 +295,19 @@
 <!ENTITY spellToolbarCmd.label "Spell">
 <!ENTITY spellToolbarCmd.tooltip "Check spelling of selection or entire page">
 <!ENTITY imageToolbarCmd.label "Image">
-<!ENTITY imageToolbarCmd.tooltip "Insert new image or edit selected image's properties">
+<!ENTITY imageToolbarCmd.tooltip "Insert new image or edit selected image’s properties">
 <!ENTITY hruleToolbarCmd.label "H.Line">
-<!ENTITY hruleToolbarCmd.tooltip "Insert horizontal line or edit selected line's properties">
+<!ENTITY hruleToolbarCmd.tooltip "Insert horizontal line or edit selected line’s properties">
 <!ENTITY tableToolbarCmd.label "Table">
-<!ENTITY tableToolbarCmd.tooltip "Insert new table or edit selected table's properties">
+<!ENTITY tableToolbarCmd.tooltip "Insert new table or edit selected table’s properties">
 <!ENTITY linkToolbarCmd.label "Link">
-<!ENTITY linkToolbarCmd.tooltip "Insert new link or edit selected link's properties">
+<!ENTITY linkToolbarCmd.tooltip "Insert new link or edit selected link’s properties">
 <!ENTITY anchorToolbarCmd.label "Anchor">
-<!ENTITY anchorToolbarCmd.tooltip "Insert new named anchor or edit selected anchor's properties">
+<!ENTITY anchorToolbarCmd.tooltip "Insert new named anchor or edit selected anchor’s properties">
 <!ENTITY TextColorButton.tooltip "Choose colour for text">
 <!ENTITY BackgroundColorButton.tooltip "Choose colour for background">
 <!ENTITY throbber.tooltip "Go to the &vendorShortName; home page">
+<!ENTITY throbber.tooltip2 "Go to the &brandShortName; home page">
 <!ENTITY HighlightColorButton.tooltip "Choose highlight colour for text">
 
 <!-- Editor toolbar -->

@@ -13,14 +13,51 @@
 ##
 ## Reference: https://www.mozilla.org/styleguide/communications/translation/
 
--brand-shorter-name = Firefox
+-brand-shorter-name =
+    { $case ->
+       *[nom] Firefox
+        [gen] Firefoxu
+        [dat] Firefoxu
+        [acc] Firefox
+        [voc] Firefoxe
+        [loc] Firefoxu
+        [ins] Firefoxem
+    }
     .gender = masculine
--brand-short-name = Firefox
+-brand-short-name =
+    { $case ->
+       *[nom] Firefox
+        [gen] Firefoxu
+        [dat] Firefoxu
+        [acc] Firefox
+        [voc] Firefoxe
+        [loc] Firefoxu
+        [ins] Firefoxem
+    }
     .gender = masculine
 -brand-full-name = Mozilla Firefox
 # This brand name can be used in messages where the product name needs to
 # remain unchanged across different versions (Nightly, Beta, etc.).
--brand-product-name = Firefox
+-brand-product-name =
+    { $case ->
+       *[nom] Firefox
+        [gen] Firefoxu
+        [dat] Firefoxu
+        [acc] Firefox
+        [voc] Firefoxe
+        [loc] Firefoxu
+        [ins] Firefoxem
+    }
     .gender = masculine
--vendor-short-name = Mozilla
+-vendor-short-name =
+    { $case ->
+       *[nom] Mozilla
+        [gen] Mozilly
+        [dat] Mozille
+        [acc] Mozillu
+        [voc] Mozillo
+        [loc] Mozille
+        [ins] Mozillou
+    }
+    .gender = feminine
 trademarkInfo = Firefox a jeho logo jsou ochrannými známkami organizace Mozilla Foundation.

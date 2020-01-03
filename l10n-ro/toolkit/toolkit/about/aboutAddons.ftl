@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Manager de suplimente
+addons-page-title = Manager de suplimente
 search-header =
     .placeholder = Caută pe addons.mozilla.org
     .searchbuttonlabel = Căutare
@@ -437,3 +438,5 @@ theme-heading-search-label = Găsește mai multe teme
 extension-heading-search-label = Găsește mai multe extensii
 addons-heading-search-input =
     .placeholder = Caută pe addons.mozilla.org
+addon-page-options-button =
+    .title = Instrumente pentru toate suplimentele

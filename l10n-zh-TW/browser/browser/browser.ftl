@@ -2,6 +2,37 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This is the default window title in case there is no content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+browser-main-window-title =
+    { $mode ->
+        [private] { -brand-full-name } (隱私瀏覽)
+       *[default] { -brand-full-name }
+    }
+# This is the default window title in case there is a content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Example Title - Mozilla Firefox"
+# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+#   $title (String) - Content title string.
+browser-main-window-content-title =
+    { $mode ->
+        [private] { $title } - { -brand-full-name } (隱私瀏覽)
+       *[default] { $title } - { -brand-full-name }
+    }
 urlbar-identity-button =
     .aria-label = 檢視網站資訊
 
@@ -25,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = 開啟訊息面板
 urlbar-geolocation-notification-anchor =
     .tooltiptext = 開啟位置請求面板
+urlbar-xr-notification-anchor =
+    .tooltiptext = 開啟虛擬實境權限面板
 urlbar-storage-access-anchor =
     .tooltiptext = 開啟瀏覽活動權限面板
 urlbar-translate-notification-anchor =
@@ -51,6 +84,8 @@ urlbar-tip-help-icon =
     .title = 取得幫助
 urlbar-geolocation-blocked =
     .tooltiptext = 您已封鎖此網站取得您所在位置資訊的權限。
+urlbar-xr-blocked =
+    .tooltiptext = 您已封鎖此網站的虛擬實境裝置存取權限。
 urlbar-web-notifications-blocked =
     .tooltiptext = 您已封鎖此網站推送通知的權限。
 urlbar-camera-blocked =
@@ -110,3 +145,16 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = 設為隱私瀏覽模式中的預設搜尋引擎
     .accesskey = P
+
+## Bookmark Panel
+
+bookmark-panel-show-editor-checkbox =
+    .label = 儲存時顯示編輯器
+    .accesskey = S
+bookmark-panel-done-button =
+    .label = 完成
+# Width of the bookmark panel.
+# Should be large enough to fully display the Done and
+# Cancel/Remove Bookmark buttons.
+bookmark-panel =
+    .style = min-width: 23em

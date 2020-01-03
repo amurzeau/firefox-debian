@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Administrador de complementos
+addons-page-title = Administrador de complementos
 search-header =
     .placeholder = Buscar en addons.mozilla.org
     .searchbuttonlabel = Buscar
@@ -452,3 +453,5 @@ theme-heading-search-label = Buscar más temas
 extension-heading-search-label = Encontrar más extensiones
 addons-heading-search-input =
     .placeholder = Buscar en addons.mozilla.org
+addon-page-options-button =
+    .title = Herramientas para todos los complementos

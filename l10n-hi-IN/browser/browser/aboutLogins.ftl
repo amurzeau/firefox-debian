@@ -6,6 +6,8 @@ about-logins-page-title = लॉगिन और पासवर्ड
 
 # "Google Play" and "App Store" are both branding and should not be translated
 
+login-app-promo-title = हर जगह अपना पासवर्ड लेकर चलें
+login-app-promo-subtitle = मुफ्त { -lockwise-brand-name } ऐप प्राप्त करें
 login-app-promo-android =
     .alt = इसे Google Play पर पायें
 login-app-promo-apple =
@@ -14,6 +16,7 @@ login-filter =
     .placeholder = लॉगिन खोजें
 create-login-button = नई लॉगिन बनाएँ
 fxaccounts-sign-in-text = अपने पासवर्ड को अपने अन्य उपकरणों पर प्राप्त करें
+fxaccounts-sign-in-button = { -sync-brand-short-name } में साइन इन करें
 fxaccounts-avatar-button =
     .title = खाता प्रबंधित करें
 
@@ -29,6 +32,8 @@ menu-menuitem-preferences =
        *[other] प्राथमिकताएँ
     }
 about-logins-menu-menuitem-help = सहायता
+menu-menuitem-android-app = Android के लिए { -lockwise-brand-short-name }
+menu-menuitem-iphone-app = iPhone और iPad के लिए { -lockwise-brand-short-name }
 
 ## Login List
 
@@ -41,6 +46,7 @@ login-list-count =
     }
 login-list-sort-label-text = इसके अनुसार:
 login-list-name-option = नाम (A-Z)
+login-list-breached-option = उलंघित वेबसाइटें
 login-list-last-changed-option = अंतिम परिवर्तन
 login-list-last-used-option = अंतिम प्रयुक्त
 login-list-intro-title = कोई लॉग इन नहीं मिला
@@ -50,9 +56,12 @@ about-logins-login-list-empty-search-description = आपकी खोज के
 login-list-item-title-new-login = नया लॉगिन
 login-list-item-subtitle-new-login = अपनी लॉगिन जानकारी दर्ज करें
 login-list-item-subtitle-missing-username = (कोई उपयोगकर्ता नाम नहीं)
+about-logins-list-item-breach-icon =
+    .title = उलंघित वेबसाइट
 
 ## Introduction screen
 
+login-intro-heading = अपने सहेजे गए लॉगिन की खोज़ है? { -sync-brand-short-name } सेट करें।
 about-logins-login-intro-heading-logged-in = कोई संकलित लॉगिन नहीं मिला।
 
 ## Login
@@ -92,7 +101,17 @@ master-password-reload-button =
 
 ## Password Sync notification
 
+enable-password-sync-preferences-button =
+    .label =
+        { PLATFORM() ->
+            [windows] { -sync-brand-short-name } विकल्प पर जाएँ
+           *[other] { -sync-brand-short-name } वरीयताएँ पर जाएँ
+        }
+    .accesskey = V
 confirm-delete-dialog-title = इस लॉगिन को मिटाएं?
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = मुझसे फिर न पूछें
+    .accesskey = न
 
 ## Dialogs
 
@@ -104,10 +123,12 @@ confirm-delete-dialog-message = इस क्रिया को पहले �
 confirm-delete-dialog-confirm-button = मिटाएं
 about-logins-confirm-remove-dialog-confirm-button = हटाएँ
 confirm-discard-changes-dialog-title = न सहेजे गए परिवर्तनों को छोड़ें?
+confirm-discard-changes-dialog-message = सभी सहेजे न गए परिवर्तन खो जाएंगे।
 confirm-discard-changes-dialog-confirm-button = छोड़ें
 
 ## Breach Alert notification
 
+breach-alert-text = आपके अंतिम बार अपना लॉगिन विवरण अपडेट करते समय पासवर्ड इस वेबसाइट से लीक या चोरी हो गए थे। अपने खाते की सुरक्षा के लिए अपना पासवर्ड बदलें।
 breach-alert-link = इस उल्लंघन के बारे में और जानें।
 breach-alert-dismiss =
     .title = इस अलर्ट को बंद करें

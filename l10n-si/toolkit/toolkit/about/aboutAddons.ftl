@@ -4,6 +4,7 @@
 
 addons-window =
     .title = ඇඩෝන කළමනාකරු
+addons-page-title = ඇඩෝන කළමනාකරු
 search-header =
     .placeholder = addons.mozilla.org සොයන්න
     .searchbuttonlabel = සොයන්න
@@ -271,3 +272,5 @@ addons-disabled-heading = අක්‍රීය කළ
 
 addons-heading-search-input =
     .placeholder = addons.mozilla.org සොයන්න
+addon-page-options-button =
+    .title = සියළු ඇඩෝන සඳහා මෙවලම්

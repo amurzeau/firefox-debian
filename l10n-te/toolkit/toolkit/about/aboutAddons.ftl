@@ -4,6 +4,7 @@
 
 addons-window =
     .title = పొడిగింతల నిర్వాహకి
+addons-page-title = పొడిగింతల నిర్వాహకి
 search-header-shortcut =
     .key = f
 loading-label =
@@ -297,3 +298,5 @@ recent-updates-heading = ఇటీవలి తాజాకరణలు
 ## Page headings
 
 theme-heading-search-label = మరిన్ని అలంకారాలను కనుగొనండి
+addon-page-options-button =
+    .title = అన్ని పొడిగింతలు కొరకు సాధనములు

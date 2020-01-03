@@ -67,6 +67,9 @@ permissions-exceptions-content-blocking-window =
     .title = Pengecualian - Pemblokiran Konten
     .style = { permissions-window.style }
 permissions-exceptions-content-blocking-desc = Anda telah menonaktifkan pemblokiran konten di situs berikut.
+permissions-exceptions-etp-window =
+    .title = Pengecualian untuk Perlindungan Pelacakan yang Ditingkatkan
+    .style = { permissions-window.style }
 
 ## Exceptions - Cookies
 
@@ -129,6 +132,15 @@ permissions-site-location-desc = Situs web berikut ini minta mengakses lokasi An
 permissions-site-location-disable-label =
     .label = Blokir permintaan baru untuk mengakses lokasi Anda
 permissions-site-location-disable-desc = Ini akan mencegah situs web apa pun yang tidak tercantum di atas minta mengakses lokasi Anda. Memblokir akses ke lokasi Anda dapat menghentikan beberapa fitur situs web.
+
+## Site Permissions - Virtual Reality
+
+permissions-site-xr-window =
+    .title = Setelan - Izin Realitas Virtual
+    .style = { permissions-window.style }
+permissions-site-xr-disable-label =
+    .label = Blokir permintaan baru untuk mengakses perangkat realitas virtual Anda
+permissions-site-xr-disable-desc = Ini akan mencegah situs web apa pun yang tidak tercantum di atas minta mengakses perangkat realitas virtual Anda. Memblokir akses ke perangkat realitas virtual Anda dapat menghentikan beberapa fitur situs web.
 
 ## Site Permissions - Camera
 

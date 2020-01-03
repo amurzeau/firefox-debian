@@ -553,6 +553,12 @@ search-keyword-warning-bookmark = 您选择的关键词已用于某个书签，�
 ## Containers Section
 
 containers-back-link = « 返回
+containers-back-button =
+    .aria-label =
+        { PLATFORM() ->
+            [windows] 返回“选项”
+           *[other] 返回“首选项”
+        }
 containers-header = 身份标签页
 containers-add-button =
     .label = 添加新身份
@@ -960,6 +966,10 @@ permissions-location = 位置
 permissions-location-settings =
     .label = 设置…
     .accesskey = l
+permissions-xr = 虚拟现实
+permissions-xr-settings =
+    .label = 设置…
+    .accesskey = t
 permissions-camera = 摄像头
 permissions-camera-settings =
     .label = 设置…
@@ -1008,6 +1018,8 @@ permissions-a11y-privacy-link = 详细了解
 collection-header = { -brand-short-name } 数据收集与使用
 collection-description = 我们力图为您提供选择权，并保证只收集我们为众人提供和改进 { -brand-short-name } 所需的信息。我们仅在征得您的同意后接收个人信息。
 collection-privacy-notice = 隐私声明
+collection-health-report-telemetry-disabled = 您不再允许 { -vendor-short-name } 收集技术和交互数据。过去所有的数据将在 30 天内删除。
+collection-health-report-telemetry-disabled-link = 详细了解
 collection-health-report =
     .label = 允许 { -brand-short-name } 向 { -vendor-short-name } 发送技术信息及交互数据
     .accesskey = r

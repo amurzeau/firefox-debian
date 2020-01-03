@@ -66,7 +66,7 @@ cfr-doorhanger-pintab-description = Hyni kollaj te sajtet tuaj më të përdorur
 cfr-doorhanger-pintab-step1 = <b>Djathtasklikoni</b> te skeda që doni të fiksohet.
 cfr-doorhanger-pintab-step2 = Përzgjidhni <b>Fiksoje Skedën</b> që nga menuja.
 cfr-doorhanger-pintab-step3 = Nëse sajti ka një përditësim, do të shihni një pikë blu te skeda juaj e fiksuar.
-cfr-doorhanger-pintab-animation-pause = Pushim
+cfr-doorhanger-pintab-animation-pause = Ndalesë
 cfr-doorhanger-pintab-animation-resume = Vazhdoje
 
 ## Firefox Accounts Message
@@ -116,6 +116,33 @@ cfr-whatsnew-lockwise-take-title = Merrini fjalëkalimet tuaj me vete
 cfr-whatsnew-lockwise-take-body = Aplikacioni { -lockwise-brand-short-name } për celular ju lejon të përdorni në mënyrë të parrezik prej ngado fjalëkalimet që keni kopjeruajtur.
 cfr-whatsnew-lockwise-take-link-text = Merrni aplikacionin
 
+## Picture-in-Picture
+
+cfr-whatsnew-pip-header = Shihni video teksa shfletoni
+cfr-whatsnew-pip-body = “Picture-in-picture” e hap videon në një dritare përsipër, kështu që mundeni ta shihni teksa punoni në skeda të tjera.
+cfr-whatsnew-pip-cta = Mësoni më tepër
+
+## Permission Prompt
+
+cfr-whatsnew-permission-prompt-header = Më pak flluska të bezdisshme nga sajte
+cfr-whatsnew-permission-prompt-body = { -brand-shorter-name }-i tani u bllokon sajteve të kërkojnë automatikisht t’ju dërgojnë mesazhe flluska.
+cfr-whatsnew-permission-prompt-cta = Mësoni më tepër
+
+## Fingerprinter Counter
+
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $fingerprinterCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-fingerprinter-counter-header =
+    { $fingerprinterCount ->
+        [one] Krijues shenjash gishtash i bllokuar
+       *[other] Krijues shenjash gishtash të bllokuar
+    }
+cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name }-i bllokon mjaft nga krijuesit e shenjave të gishtave që grumbullojnë fshehtas informacion mbi pajisjen dhe veprimet tuaja, për të krijuar një profil tuajin të synuar nga reklamuesit.
+# Message variation when fingerprinters count is less than 10
+cfr-whatsnew-fingerprinter-counter-header-alt = Krijues shenja gishtash
+cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name }-i mund të bllokojë krijues shenjash gishtash që grumbullojnë fshehtas informacion mbi pajisjen dhe veprimet tuaja, për të krijuar një profil tuajin të synuar nga reklamuesit.
+
 ## Bookmark Sync
 
 cfr-doorhanger-sync-bookmarks-header = Merreni këtë faqerojtës në telefonin tuaj
@@ -153,7 +180,7 @@ cfr-doorhanger-socialtracking-close-button = Mbylle
     .accesskey = M
 cfr-doorhanger-socialtracking-dont-show-again = Mos më shfaq më mesazhe të tillë
     .accesskey = M
-cfr-doorhanger-socialtracking-heading = { -brand-short-name } ndali gjurmimin tuaj këtu prej një rrjeti shoqëror
+cfr-doorhanger-socialtracking-heading = { -brand-short-name } ndali gjurmimin tuaj këtu nga një rrjet shoqëror
 cfr-doorhanger-socialtracking-description = Privatësia juaj ka vlerë. { -brand-short-name } tanimë bllokon gjurmues prej rrjetesh të zakonshëm mediash shoqërore, duke kufizuar sa të dhëna mund të grumbullojnë rreth asaj çka bëni në internet.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } bllokoi në këtë faqe nëj krijuesh shenjash gishtash
 cfr-doorhanger-fingerprinters-description = Privatësia juaj ka vlerë. { -brand-short-name } tanimë bllokon krijues shenjash gishtash, të cilët grumbullojnë rreth pajisjes tuaj të dhëna të identifikueshme në mënyrë unike për t’ju gjurmuar.

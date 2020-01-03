@@ -130,6 +130,9 @@ onboarding-send-tabs-title = 즉시 탭 보내기
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
 onboarding-send-tabs-text = 탭 보내기는 복사나 붙여넣기, 브라우저를 나가지 않고도 내 기기들로 페이지를 즉시 공유합니다.
+# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
+# tab's context menu.
+onboarding-send-tabs-text2 = 링크를 복사하거나 브라우저를 떠나지 않고도 다른 기기에 페이지를 쉽게 공유 할 수 있습니다.
 onboarding-send-tabs-button = 탭 보내기 사용 시작
 onboarding-pocket-anywhere-title = 어디서나 읽고 듣기
 onboarding-pocket-anywhere-text2 = { -pocket-brand-name } 앱으로 좋아하는 콘텐츠를 오프라인에 저장하고 편리할 때마다 읽고, 듣고, 시청할 수 있습니다.
@@ -137,9 +140,15 @@ onboarding-pocket-anywhere-button = { -pocket-brand-name }을 사용해보세요
 onboarding-lockwise-passwords-title = 어디서나 비밀번호를 사용
 onboarding-lockwise-passwords-text2 = { -lockwise-brand-name }로 저장한 비밀번호를 안전하게 유지하고 계정에 쉽게 로그인하십시오.
 onboarding-lockwise-passwords-button2 = 앱 다운로드
+onboarding-lockwise-strong-passwords-title = 강력한 비밀번호 생성 및 저장
+onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name }는 즉석에서 강력한 비밀번호를 만들고 모든 비밀번호를 한 곳에 저장합니다.
+onboarding-lockwise-strong-passwords-button = 로그인 관리
 onboarding-facebook-container-title = Facebook 경계 설정
 onboarding-facebook-container-text2 = { -facebook-container-brand-name }는 프로필을 다른 것과 구분하여 유지하므로 Facebook이 사용자를 구분하여 광고하는 것을 어렵게 만듭니다.
 onboarding-facebook-container-button = 확장 기능 추가
+onboarding-import-browser-settings-title = 북마크, 비밀번호 등을 가져오기
+onboarding-import-browser-settings-text = Chrome 사이트와 설정을 쉽게 가져올 수 있습니다.
+onboarding-import-browser-settings-button = Chrome 데이터 가져오기
 
 ## Message strings belonging to the Return to AMO flow
 

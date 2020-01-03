@@ -49,7 +49,7 @@ tracker-tab-description = Web stranice mogu učitati vanjske reklame, video mate
 fingerprinter-tab-title = Čitači digitalnog otiska
 fingerprinter-tab-content = Čitači digitalnog otiska prikupljaju postavke tvog preglednika i računala kako bi stvorili tvoj profil. Pomoću ovog digitalnog otiska mogu te pratiti na različitim web stranicama. <a data-l10n-name="learn-more-link">Saznaj više</a>
 cryptominer-tab-title = Kripto rudari
-cryptominer-tab-content = Krupto rudari koriste računalnu snagu vašeg sustava kako bi rudarili digitalni novac. Skripte za kripto rudarenje troše bateriju, usporavaju računalo i povećavaju račun za struju. <a data-l10n-name="learn-more-link">Saznajte više</a>
+cryptominer-tab-content = Krupto rudari koriste računalnu snagu tvog sustava kako bi rudarili digitalni novac. Skripte za kripto rudarenje troše bateriju, usporavaju računalo i povećavaju račun za struju. <a data-l10n-name="learn-more-link">Saznaj više</a>
 lockwise-title = Nikad više ne zaboravi lozinku
 lockwise-title-logged-in = { -lockwise-brand-name }
 lockwise-header-content = { -lockwise-brand-name } sigurno sprema tvoje lozinke u pregledniku.
@@ -78,10 +78,19 @@ lockwise-sync-status =
        *[other] Sinkronizacija s { $count } drugih uređaja
     }
 lockwise-sync-not-syncing-devices = Ne sinkronizira se na druge uređaje
+manage-connected-devices = Upravljanje uređajima…
+# Variables:
+#   $count (Number) - Number of devices connected with sync.
+lockwise-connected-device-status =
+    { $count ->
+        [one] Povezano s { $count } uređajem
+        [few] Povezano s { $count } uređaja
+       *[other] Povezano s { $count } uređaja
+    }
 monitor-title = Pazi na hakirane podatke
 monitor-link = Kako funkcionira
 monitor-header-content-no-account = Provjerite { -monitor-brand-name } kako biste vidjeli da li ste bili sudionik poznatog curenja podataka i dobivajte obavijesti ukoliko dođe do novog curenja podataka.
-monitor-header-content-signed-in = { -monitor-brand-name } vas upozorava ukoliko su se vaši podaci pojavili u krađi podataka.
+monitor-header-content-signed-in = { -monitor-brand-name } te upozorava ukoliko su se tvoji podaci pojavili u curenju podataka.
 monitor-sign-up = Prijavi se za upozorenja o hakiranju
 auto-scan = Danas automatski pretraženo
 # This string is displayed after a large numeral that indicates the total number
@@ -98,9 +107,9 @@ info-monitored-emails =
 # your localization, because it would result in the number showing twice.
 info-known-breaches-found =
     { $count ->
-        [one] Curenje podataka je izložilo vaše informacije
-        [few] Curenja podataka je izložilo vaše informacije
-       *[other] Curenja podataka je izložilo vaše informacije
+        [one] Curenje podataka je izložilo tvoje informacije
+        [few] Curenja podataka je izložilo tvoje informacije
+       *[other] Curenja podataka je izložilo tvoje informacije
     }
 # This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to

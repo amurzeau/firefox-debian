@@ -116,6 +116,33 @@ cfr-whatsnew-lockwise-take-title = Porta tu contrasignos con te
 cfr-whatsnew-lockwise-take-body = Le application mobile { -lockwise-brand-short-name } te permitte acceder con securitate al copia de reserva de tu contrasignos, non importa ubi tu te trova.
 cfr-whatsnew-lockwise-take-link-text = Obtener le application
 
+## Picture-in-Picture
+
+cfr-whatsnew-pip-header = Reguarda videos durante que tu naviga
+cfr-whatsnew-pip-body = Le function imagine-in-imagine mitte le video in un fenestra flottante de maniera que tu pote reguardar lo durante que tu travalia in altere schedas.
+cfr-whatsnew-pip-cta = Saper plus
+
+## Permission Prompt
+
+cfr-whatsnew-permission-prompt-header = Reduce le enoio de fenestras emergente
+cfr-whatsnew-permission-prompt-body = { -brand-shorter-name } ora impedi que sitos demanda automaticamente de inviar te messages emergente.
+cfr-whatsnew-permission-prompt-cta = Saper plus
+
+## Fingerprinter Counter
+
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $fingerprinterCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-fingerprinter-counter-header =
+    { $fingerprinterCount ->
+        [one] Dactylogrammator blocate
+       *[other] Dactylogrammatores blocate
+    }
+cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } bloca multe dactylogrammatores que collige secretemente informationes re tu apparato e tu actiones pro crear de te un profilo publicitari.
+# Message variation when fingerprinters count is less than 10
+cfr-whatsnew-fingerprinter-counter-header-alt = Dactylogrammatores
+cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } pote blocar dactylogrammatores que collige secretemente informationes re tu apparato e tu actiones pro crear de te un profilo publicitari.
+
 ## Bookmark Sync
 
 cfr-doorhanger-sync-bookmarks-header = Recipe iste marcapaginas sur tu telephono
@@ -155,8 +182,8 @@ cfr-doorhanger-socialtracking-dont-show-again = Non plus monstrar me messages co
     .accesskey = N
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } ha impedite que un rete social te tracia hic
 cfr-doorhanger-socialtracking-description = Tu vita private es importante. Ora { -brand-short-name } bloca traciatores de retes social commun, limitante le quantitate de datos que illos pote colliger sur tu activitates in linea.
-cfr-doorhanger-fingerprinters-heading = { -brand-short-name } ha blocate un traciator de impression digital in iste pagina
-cfr-doorhanger-fingerprinters-description = Tu vita private es importante. { -brand-short-name } bloca ora le traciatores de impression digital que collige pecias de information unic sur tu apparato pro traciar te.
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name } ha blocate un dactylogrammator in iste pagina
+cfr-doorhanger-fingerprinters-description = Tu vita private es importante. { -brand-short-name } bloca ora le dactylogrammatores que collige pecias de information unic sur tu apparato pro traciar te.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } ha blocate un cryptominator in iste pagina
 cfr-doorhanger-cryptominers-description = Tu vita private es importante. Ora { -brand-short-name } bloca cryptominatores, que usa le ressources computational de tu systemas pro excavar moneta digital.
 

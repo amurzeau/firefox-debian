@@ -2,6 +2,37 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This is the default window title in case there is no content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+browser-main-window-title =
+    { $mode ->
+        [private] { -brand-full-name } (نجی براوزنگ)
+       *[default] { -brand-full-name }
+    }
+# This is the default window title in case there is a content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Example Title - Mozilla Firefox"
+# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+#   $title (String) - Content title string.
+browser-main-window-content-title =
+    { $mode ->
+        [private] { $title } - { -brand-full-name } (نجی براوزنگ)
+       *[default] { $title } - { -brand-full-name }
+    }
 urlbar-identity-button =
     .aria-label = سائٹ کی معلومات کا نظارہ کریں
 
@@ -14,7 +45,7 @@ urlbar-web-notification-anchor =
 urlbar-midi-notification-anchor =
     .tooltiptext = MIDI پینل کھولیں
 urlbar-eme-notification-anchor =
-    .tooltiptext = DRM سافٹ ویئر کہ استعمال کو بندوبست کریں
+    .tooltiptext = DRM سافٹ ویئر کہ استعمال کو منظم کریں
 urlbar-web-authn-anchor =
     .tooltiptext = ویب توثیق پینل کھولیں
 urlbar-canvas-notification-anchor =
@@ -25,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = پیغام پینل کھولیں
 urlbar-geolocation-notification-anchor =
     .tooltiptext = محل وقوع درخواست پینل کھولیں
+urlbar-storage-access-anchor =
+    .tooltiptext = براؤزنگ سرگرمی کی اجازت والا پینل کھولیں
 urlbar-translate-notification-anchor =
     .tooltiptext = اس صفحہ کا ترجمہ کریں
 urlbar-web-rtc-share-screen-notification-anchor =
@@ -45,6 +78,8 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = مسلسل اسٹوریج میں کوائف اسٹور کرے
 urlbar-addons-notification-anchor =
     .tooltiptext = ایڈاون کا تنصیب شدہ پیغام کا پینل کھولیں
+urlbar-tip-help-icon =
+    .title = مدد حاصل کریں
 urlbar-geolocation-blocked =
     .tooltiptext = آپ نے اس ویب سائٹ کے لیئے محل وقوع کی معلومات کو بلاک کیا ہوا ہے
 urlbar-web-notifications-blocked =
@@ -81,7 +116,7 @@ full-screen-autohide =
     .label = ٹول بار چھپائیں
     .accesskey = H
 full-screen-exit =
-    .label = پوری اسکرین موڈ خروج کریں
+    .label = پوری اسکرین موڈ سے باہر نکلیں
     .accesskey = F
 
 ## Search Engine selection buttons (one-offs)
@@ -98,3 +133,16 @@ search-one-offs-context-open-new-tab =
 search-one-offs-context-set-as-default =
     .label = بطور طے شدہ تلاش انجن سیٹ کریں
     .accesskey = D
+
+## Bookmark Panel
+
+bookmark-panel-show-editor-checkbox =
+    .label = تدوین کار میں محفوظ کرتے وقت نمائش کریں
+    .accesskey = S
+bookmark-panel-done-button =
+    .label = ہوگیا
+# Width of the bookmark panel.
+# Should be large enough to fully display the Done and
+# Cancel/Remove Bookmark buttons.
+bookmark-panel =
+    .style = min-width: 23em

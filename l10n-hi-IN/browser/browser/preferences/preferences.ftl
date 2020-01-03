@@ -278,6 +278,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } ({ -brand-short-name } में) का प्रयोग करें
@@ -303,7 +307,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-##
+
 
 drm-content-header = डिजिटल राइट्स मैनेजमेंट (DRM) सामग्री
 play-drm-content =
@@ -332,7 +336,13 @@ update-application-use-service =
 update-enable-search-update =
     .label = स्वचालित रूप से खोज इंजन का अद्यतन करें
     .accesskey = e
+update-pref-write-failure-title = असफलता लिखे
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = वरीयता को सहेजने में असमर्थ। फ़ाइल में नहीं लिखा जाएगा: { $path }
+update-setting-write-failure-title = अद्यतन वरीयताओं को सहेजने में गलती
 update-in-progress-title = अद्यतन जारी है
+update-in-progress-message = क्या आप { -brand-short-name } के अपडेट को जारी रखना चाहते हैं?
 update-in-progress-ok-button = और छोड़े
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
@@ -479,6 +489,9 @@ search-bar-shown =
     .label = औज़ार पट्टी में खोज पट्टी जोड़े
 search-engine-default-header = तयशुदा खोज इंजिन
 search-engine-default-desc = पता पट्टी और खोज पट्टी में उपयोग करने के लिए डिफ़ॉल्ट खोज इंजन का चयन करें.
+search-separate-default-engine =
+    .label = इस खोज इंजन का उपयोग निजी विंडोज में करें
+    .accesskey = U
 search-suggestions-header = खोज सुझाव
 search-suggestions-option =
     .label = खोज सुझाव प्रदान करें
@@ -493,6 +506,9 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = पता पट्टी परिणामों में खोज सुझावों को ब्राउज़िंग इतिहास के आगे देखें
+search-show-suggestions-private-windows =
+    .label = निजी विंडोज में खोज सुझाव दिखाएं
+suggestions-addressbar-settings = ब्राउज़िंग इतिहास, बुकमार्क और टैब सुझावों के लिए प्राथमिकताएं बदलें
 search-suggestions-cant-show = खोज सुझाव स्थान पट्टी में दिखाएँ नहीं जायेंगे क्योंकी आपने { -brand-short-name } को कभी भी इतिहास याद न रखने क लिए कॉन्फ़िगर करा है
 search-one-click-header = एकल-क्लिक सर्च इंजन
 search-one-click-desc = खोजशब्द दर्ज करना प्रारंभ करते समय वैकल्पिक खोज इंजिन चुने जोकि पता पट्टी और खोज पट्टी के नीचे प्रकट होते हैं.
@@ -587,7 +603,16 @@ sync-signedin-settings-desc = चुने, { -brand-short-name } का उप�
 
 sync-currently-syncing-bookmarks = बुकमार्क्स
 sync-currently-syncing-history = इतिहास
+sync-currently-syncing-tabs = टैबों को खोलें
+sync-currently-syncing-logins-passwords = लॉगिन और पासवर्ड
+sync-currently-syncing-addresses = पते
 sync-currently-syncing-creditcards = क्रेडिट कार्ड्स
+sync-currently-syncing-addons = ऐड-ऑन
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] विकल्प
+       *[other] वरीयताएँ
+    }
 sync-change-options =
     .label = बदलें...
     .accesskey = C
@@ -607,6 +632,10 @@ sync-engine-tabs =
 sync-engine-logins =
     .label = लॉग इन
     .tooltiptext = आपके द्वारा सहेजे गए उपयोगकर्ता नाम तथा पासवर्ड
+    .accesskey = L
+sync-engine-logins-passwords =
+    .label = लॉगिन और पासवर्ड
+    .tooltiptext = आपके द्वारा सहेजे गए उपयोगकर्ता नाम और पासवर्ड
     .accesskey = L
 sync-engine-addresses =
     .label = पता
@@ -730,6 +759,9 @@ sitedata-total-size-calculating = साइट डेटा और कैश आ
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = आपकी संग्रहीत कुकीज़, साइट डेटा और कैश वर्तमान में डिस्क स्थान के { $value } { $unit } का उपयोग कर रहे हैं।
 sitedata-learn-more = अधिक जानें
+sitedata-delete-on-close =
+    .label = { -brand-short-name } बंद होने पर कुकीज़ और साइट डेटा हटा दें
+    .accesskey = c
 sitedata-allow-cookies-option =
     .label = कुकीज़ और साइट डेटा स्वीकार करें
     .accesskey = A
@@ -794,20 +826,31 @@ enhanced-tracking-protection-setting-custom =
     .label = मनपसंद
     .accesskey = त
 
-##
 
+
+content-blocking-private-windows = निजी विंडो में ट्रैकिंग सामग्री
+content-blocking-cross-site-tracking-cookies = क्रॉस-साइट ट्रैकिंग कुकी
+content-blocking-social-media-trackers = सोशल मीडिया ट्रैकर
 content-blocking-all-cookies = सारे कुकीज़
+content-blocking-unvisited-cookies = नहीं देखे वेबसाइटों से कुकी
 content-blocking-all-windows-trackers = सभी विंडो में ज्ञात ट्रैकर्स
+content-blocking-all-windows-tracking-content = सभी विंडो में ट्रैकिंग सामग्री
 content-blocking-all-third-party-cookies = सभी तृतीय-पक्ष कुकीज़
+content-blocking-cryptominers = क्रिप्टोमाइनर
+content-blocking-fingerprinters = फिंगरप्रिंटर
 content-blocking-warning-title = सावधान!
 content-blocking-learn-how = सीखें कि कैसे
 content-blocking-warning-learn-how = जानिए कैसे
+content-blocking-reload-description = आपको इन बदलाव को लागू करने के लिए अपने टैब को फिर से लोड करना होगा।
 content-blocking-reload-tabs-button =
     .label = सभी टैब फिर लोड करें
     .accesskey = R
 content-blocking-trackers-label =
     .label = ट्रैकर
     .accesskey = T
+content-blocking-tracking-content-label =
+    .label = ट्रैकिंग सामग्री
+    .accesskey = ट
 content-blocking-tracking-protection-option-all-windows =
     .label = सभी विंडो में
     .accesskey = A
@@ -820,6 +863,15 @@ content-blocking-cookies-label =
     .accesskey = C
 content-blocking-expand-section =
     .tooltiptext = अधिक जानकारी
+# Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
+content-blocking-cryptominers-label =
+    .label = क्रिप्टोमाइनर
+    .accesskey = क
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+content-blocking-fingerprinters-label =
+    .label = फिंगरप्रिंटर
+    .accesskey = फ
 
 ## Privacy Section - Tracking
 
@@ -850,6 +902,9 @@ permissions-notification-link = अधिक जानें
 permissions-notification-pause =
     .label = { -brand-short-name } के पुनः शुरू होने तक अधिसूचना रोकें
     .accesskey = n
+permissions-block-autoplay-media2 =
+    .label = स्वचालित रूप से आवाज़ चलाने से वेबसाइटों को अवरूद्ध करें
+    .accesskey = अ
 permissions-block-autoplay-media-exceptions =
     .label = अपवाद...
     .accesskey = E
@@ -958,3 +1013,7 @@ space-alert-under-5gb-message = { -brand-short-name } के लिए डिस
 desktop-folder-name = डेस्कटॉप
 downloads-folder-name = डाउनलोड
 choose-download-folder-title = डाउनलोड फोल्डर चुनें:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = { $service-name } में फ़ाइलें सहेजें

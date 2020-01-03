@@ -128,6 +128,35 @@ cfr-whatsnew-lockwise-take-body =
     varnostno kopiranih gesel kjerkoli.
 cfr-whatsnew-lockwise-take-link-text = Prenesite aplikacijo
 
+## Picture-in-Picture
+
+cfr-whatsnew-pip-header = Glejte videoposnetke med brskanjem
+cfr-whatsnew-pip-body = Slika v sliki pokaže video v plavajočem oknu, da si ga lahko ogledate, medtem ko brskate v drugih zavihkih.
+cfr-whatsnew-pip-cta = Več o tem
+
+## Permission Prompt
+
+cfr-whatsnew-permission-prompt-header = Manj nadležnih pojavnih oken na strani
+cfr-whatsnew-permission-prompt-body = { -brand-shorter-name } sedaj stranem preprečuje samodejne zahteve za pošiljanje pojavnih sporočil.
+cfr-whatsnew-permission-prompt-cta = Več o tem
+
+## Fingerprinter Counter
+
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $fingerprinterCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-fingerprinter-counter-header =
+    { $fingerprinterCount ->
+        [one] Sledilec prstnih odtisov zavrnjen
+        [two] Sledilca prstnih odtisov zavrnjena
+        [few] Sledilci prstnih odtisov zavrnjeni
+       *[other] Sledilcev prstnih odtisov zavrnjenih
+    }
+cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } zavrača številne sledilce prstnih odtisov, ki skrivaj zbirajo podatke o vaši napravi in dejanjih ter ustvarjajo vaš oglaševalski profil.
+# Message variation when fingerprinters count is less than 10
+cfr-whatsnew-fingerprinter-counter-header-alt = Sledilci prstnih odtisov
+cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } lahko zavrača sledilce prstnih odtisov, ki skrivaj zbirajo podatke o vaši napravi in dejanjih ter ustvarjajo vaš oglaševalski profil.
+
 ## Bookmark Sync
 
 cfr-doorhanger-sync-bookmarks-header = Pošljite si ta zaznamek na telefon

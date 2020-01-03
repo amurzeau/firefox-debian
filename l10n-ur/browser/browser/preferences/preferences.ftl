@@ -32,6 +32,7 @@ search-input-box =
             [windows] اختیارات میں تلاش کریں
            *[other] ترجیحات میں تلاش کریں
         }
+managed-notice = آپ کا براؤزر آپ کی تنظیم کے زیر انتظام ہے۔
 pane-general-title = عمومی
 category-general =
     .tooltiptext = { pane-general-title }
@@ -44,6 +45,9 @@ category-search =
 pane-privacy-title = رازداری اور سلامتی
 category-privacy =
     .tooltiptext = { pane-privacy-title }
+pane-sync-title2 = { -sync-brand-short-name }
+category-sync2 =
+    .tooltiptext = { pane-sync-title2 }
 help-button-label = { -brand-short-name } تعاون
 addons-button-label = ایکسٹینشن اور تھیم
 focus-search =
@@ -253,6 +257,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending }{ $type }
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } کو ({ -brand-short-name }) میں استعمال کریں
@@ -278,7 +286,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-##
+
 
 drm-content-header = عددی حقوق بندرستگی(DRM) مواد
 play-drm-content-learn-more = مزید سیکھیں
@@ -299,10 +307,17 @@ update-enable-search-update =
     .accesskey = e
 update-pref-write-failure-title = لکھیں مے ناکام
 update-in-progress-title = اپ ڈیٹ جاری ہے
+update-in-progress-ok-button = &رد کريں
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &جاری رکھیں
 
 ## General Section - Performance
 
 performance-title = کارکردگی
+performance-use-recommended-settings-checkbox =
+    .label = تجویز کردہ کارکردگی کی ترتیبات استعمال کریں
+    .accesskey = U
 performance-settings-learn-more = مزید سیکھیں
 performance-allow-hw-accel =
     .label = جب دستیاب ہو تو ہارڈ ویئر سرعت کاری استعمال کریں
@@ -332,6 +347,7 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = میرے ٹائپ کرنے پر متن کے لیے تلاش شروع کریں
     .accesskey = x
+browsing-picture-in-picture-learn-more = مزید سیکھیں
 browsing-cfr-recommendations-learn-more = مزید سیکھیں
 
 ## General Section - Proxy
@@ -417,6 +433,7 @@ search-bar-header = تلاش بار
 search-bar-shown =
     .label = سرچ بار کا ٹولبار مے ا ضافہ کریں۔
 search-engine-default-header = طےشدہ تلاش انجن
+search-suggestions-header = تلاش تجاویز
 search-suggestions-option =
     .label = تلاش تجاویز مہیا کریں
     .accesskey = s
@@ -467,6 +484,9 @@ sync-signedout-account-create = اکائونٹ نہیں ہے؟ شروع کریں
 sync-signedout-account-signin =
     .label = سائن ان…
     .accesskey = I
+sync-signedout-account-signin2 =
+    .label = { -sync-brand-short-name } میں سائن ان کریں
+    .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -487,7 +507,10 @@ sync-profile-picture =
 sync-disconnect =
     .label = منقطع کریں…
     .accesskey = D
-sync-manage-account = اکاؤنٹ کا بندوبست کریں
+sync-sign-out =
+    .label = سائن آؤٹ…
+    .accesskey = گ
+sync-manage-account = اکاؤنٹ کا منظم کریں
     .accesskey = o
 sync-signedin-unverified = { $email } توثیق شدہ نہیں ہے۔
 sync-signedin-login-failure = پھر جڑنے کے لیے سائن ان کریں { $email }
@@ -504,9 +527,28 @@ sync-signedin-settings-header = ہمہ وقت ساز ترتیبات
 
 ## Sync section - enabling or disabling sync.
 
+prefs-sync-now =
+    .labelnotsyncing = ابھی ہمہ وقت سازی کریں
+    .accesskeynotsyncing = ن
+    .labelsyncing = ہمہ وقت سازی کر رہا ہے…
 
 ## The list of things currently syncing.
 
+sync-currently-syncing-bookmarks = بک مارک
+sync-currently-syncing-history = سابقات
+sync-currently-syncing-tabs = ٹیب کھولیں
+sync-currently-syncing-logins-passwords = لاگ ان اور پاس ورڈ
+sync-currently-syncing-addresses = پتے
+sync-currently-syncing-creditcards = کریڈٹ کارڈز
+sync-currently-syncing-addons = ایڈ اون
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] اختیارات
+       *[other] ترجیحات
+    }
+sync-change-options =
+    .label = تبدیل…
+    .accesskey = چ
 
 ## The "Choose what to sync" dialog.
 
@@ -554,7 +596,8 @@ sync-device-name-save =
     .label = محفوظ کریں
     .accesskey = v
 sync-connect-another-device = اہک اور آلہ جوڑیں
-sync-manage-devices = آلات کو بندرست کریں
+sync-manage-devices = آلات کو منظم کریں
+sync-fxa-begin-pairing = ایک آلہ جوڑیں
 sync-tos-link = سروس کی ٹرمز
 sync-fxa-privacy-notice = اطلاع نامہ نجی نوعیت
 
@@ -571,6 +614,10 @@ logins-header = لاگ ان & پاس ورڈ
 forms-exceptions =
     .label = استثنیات…
     .accesskey = x
+forms-generate-passwords =
+    .label = تجویز کریں اور مضبوط پاس ورڈ تیار کریں
+    .accesskey = u
+forms-breach-alerts-learn-more-link = مزید سیکھیں
 forms-saved-logins =
     .label = محفوظ شدہ لاگ ان…
     .accesskey = L
@@ -633,7 +680,7 @@ sitedata-clear =
     .label = کوائف… خالی کریں
     .accesskey = l
 sitedata-settings =
-    .label = کوائف… بندرست کریں
+    .label = کوائف… منظم کریں
     .accesskey = M
 
 ## Privacy Section - Address Bar
@@ -682,7 +729,7 @@ enhanced-tracking-protection-setting-custom =
     .label = مخصوص
     .accesskey = C
 
-##
+
 
 content-blocking-all-cookies = تمام کوکیاں
 content-blocking-all-third-party-cookies = سارے تیسری تنظیم کے کوکیز

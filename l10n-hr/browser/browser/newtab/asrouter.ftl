@@ -61,7 +61,7 @@ cfr-doorhanger-extension-total-users =
         [few] { $total } korisnika
        *[other] { $total } korisnika
     }
-cfr-doorhanger-pintab-description = Jednostavan pristup vašim najkorištenijim stranicama. Držite stranice otvorene u kartici (čak i kada ponovno pokrenete preglednik).
+cfr-doorhanger-pintab-description = Jednostavan pristup tvojim najkorištenijim stranicama. Ostavi stranice otvorene u kartici (čak i kada ponovo pokreneš preglednika).
 
 ## These messages are steps on how to use the feature and are shown together.
 
@@ -74,7 +74,7 @@ cfr-doorhanger-pintab-animation-resume = Nastavi
 ## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = Sinkronizirajte svoje zabilješke svugdje.
-cfr-doorhanger-bookmark-fxa-body = Izvrsno! Nemojte ostati bez ove zabilješke na vašem mobilnom uređaju. Započnite s { -fxaccount-brand-name }.
+cfr-doorhanger-bookmark-fxa-body = Izvrsno! Nemoj ostati bez ove zabilješke na tvom mobilnom uređaju. Započni s { -fxaccount-brand-name }.
 cfr-doorhanger-bookmark-fxa-link-text = Sinkronizirajte zabilješke sada…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Tipka za zatvaranje
@@ -123,6 +123,34 @@ cfr-whatsnew-lockwise-take-body =
     tvojim lozinkama sigurnosnih kopija s bilo kojeg mjesta.
 cfr-whatsnew-lockwise-take-link-text = Preuzmi aplikaciju
 
+## Picture-in-Picture
+
+cfr-whatsnew-pip-header = Gledaj videozapise dok pregledavaš
+cfr-whatsnew-pip-body = Način rada Slika u slici izdvoji videozapis u plutajući prozor da biste ga mogli gledati tijekom rada u drugim karticama.
+cfr-whatsnew-pip-cta = Saznaj više
+
+## Permission Prompt
+
+cfr-whatsnew-permission-prompt-header = Manje dosadnih skočnih prozora stranica
+cfr-whatsnew-permission-prompt-body = { -brand-shorter-name } sada blokira web stranice od automatskog zahtijevanja da Vam šalju skočne poruke.
+cfr-whatsnew-permission-prompt-cta = Saznaj više
+
+## Fingerprinter Counter
+
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $fingerprinterCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-fingerprinter-counter-header =
+    { $fingerprinterCount ->
+        [one] Jedinstvenih otisaka blokirano
+        [few] Jedinstvenih otisaka blokirano
+       *[other] Jedinstvenih otisaka blokirano
+    }
+cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } blokira mnoge pratitelje jedinstvenih otisaka koji tajno skupljaju informacije o tvom uređaju i radnjama kako bi stvorili tvoj reklamni profil.
+# Message variation when fingerprinters count is less than 10
+cfr-whatsnew-fingerprinter-counter-header-alt = Jedinstveni otisci
+cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } može blokirati pratitelje jedinstvenih otisaka koji tajno skupljaju informacije o tvom uređaju i radnjama kako bi stvorili tvoj reklamni profil.
+
 ## Bookmark Sync
 
 cfr-doorhanger-sync-bookmarks-header = Preuzmi ovu oznaku na svoj mobitel
@@ -163,9 +191,9 @@ cfr-doorhanger-socialtracking-dont-show-again = Ne prikazuj mi više takve poruk
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } zaustavio društvenu mrežu da te ovdje prati
 cfr-doorhanger-socialtracking-description = Tvoja privatnost je važna. { -brand-short-name } sad blokira uobičajene programe za praćenje društvenih medija, ograničavajući količinu podataka koje mogu prikupiti o onome što radiš na internetu.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } je blokirao jedinstvene otiske na ovoj stranici
-cfr-doorhanger-fingerprinters-description = Vaša privatnost je bitna. { -brand-short-name } sada blokira jedinstvene otiske, koji skupljaju dijelove informacija koji su jedinstveni za vas i vaše uređaje kako bi vas mogli pratiti.
+cfr-doorhanger-fingerprinters-description = Tvoja privatnost je bitna. { -brand-short-name } sada blokira jedinstvene otiske, koji skupljaju dijelove informacija koji su jedinstveni za tebe i tvoje uređaje, kako bi te mogli pratiti.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } je blokirao kripto rudare na ovoj stranici
-cfr-doorhanger-cryptominers-description = Vaša privatnost je bitna. { -brand-short-name } sada blokira kripto rudare, koji koriste resurse vašeg sustava kako bi rudarili digitalni novac.
+cfr-doorhanger-cryptominers-description = Tvoja privatnost je bitna. { -brand-short-name } sada blokira kripto rudare, koji koriste resurse tvog sustava kako bi rudarili digitalni novac.
 
 ## Enhanced Tracking Protection Milestones
 

@@ -78,6 +78,15 @@ lockwise-sync-status =
        *[many] Синхронізується з { $count } іншими пристроями
     }
 lockwise-sync-not-syncing-devices = Не синхронізується з іншими пристроями
+manage-connected-devices = Керувати пристроями…
+# Variables:
+#   $count (Number) - Number of devices connected with sync.
+lockwise-connected-device-status =
+    { $count ->
+        [one] Під'єднано до { $count } пристрою
+        [few] Під'єднано до { $count } пристроїв
+       *[many] Під'єднано до { $count } пристроїв
+    }
 monitor-title = Стежте за витоками даних
 monitor-link = Як це працює
 monitor-header-content-no-account = Спробуйте { -monitor-brand-name }, щоб перевірити чи ви потрапили до відомого витоку даних, а також отримуйте попередження про нові витоки.
@@ -108,7 +117,7 @@ info-known-breaches-found =
 info-exposed-passwords-found =
     { $count ->
         [one] Викритий пароль серед усіх витоків даних
-        [few] Викриті пароліі серед усіх витоків даних
+        [few] Викриті паролі серед усіх витоків даних
        *[many] Викритих паролів серед усіх витоків даних
     }
 full-report-link = Переглянути повний звіт на <a data-l10n-name="monitor-inline-link">{ -monitor-brand-name }</a>

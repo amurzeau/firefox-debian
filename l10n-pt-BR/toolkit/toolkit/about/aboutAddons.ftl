@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Gerenciador de extensões
+addons-page-title = Gerenciador de extensões
 search-header =
     .placeholder = Pesquisar em addons.mozilla.org
     .searchbuttonlabel = Pesquisar
@@ -353,6 +354,10 @@ remove-addon-disabled-button = Não pode ser removido <a data-l10n-name="link">P
 disable-addon-button = Desativar
 enable-addon-button = Ativar
 expand-addon-button = Mais opções
+# This is used for the toggle on the extension card, it's a checkbox and this
+# is always its label.
+extension-enable-addon-button-label =
+    .aria-label = Ativar
 preferences-addon-button =
     { PLATFORM() ->
         [windows] Opções
@@ -456,5 +461,8 @@ discover-heading = Personalize o { -brand-short-name }
 shortcuts-heading = Gerenciar atalhos de extensões
 theme-heading-search-label = Encontrar mais temas
 extension-heading-search-label = Encontrar mais extensões
+default-heading-search-label = Encontrar mais extensões
 addons-heading-search-input =
     .placeholder = Pesquisar em addons.mozilla.org
+addon-page-options-button =
+    .title = Ferramentas para todas as extensões

@@ -68,9 +68,9 @@ permissions-exceptions-content-blocking-window =
     .style = { permissions-window.style }
 permissions-exceptions-content-blocking-desc = Tu ha disactivate le blocage de contento pro iste sito web.
 permissions-exceptions-etp-window =
-    .title = Exceptiones del Protection meliorate contra le traciamento
+    .title = Exceptiones al protection antitraciamento reinfortiate
     .style = { permissions-window.style }
-permissions-exceptions-etp-desc = Tu ha arrestate le protectiones sur iste sitos web.
+permissions-exceptions-etp-desc = Tu ha disactivate le protectiones sur iste sitos web.
 
 ## Exceptions - Cookies
 
@@ -119,27 +119,37 @@ permissions-site-autoplay-desc = Specifica hic le sitos web que non seque tu con
 permissions-site-notification-window =
     .title = Parametros - Permissiones de notification
     .style = { permissions-window.style }
-permissions-site-notification-desc = Le sitos web sequente ha requirite de te mitter notificationes. Tu pote specificar a qual sitos web es consentite de te mitter notificationes. Tu pote alsi blocar nove requestas de consentir notificationes.
+permissions-site-notification-desc = Le sitos web sequente ha requestate de inviar te notificationes. Tu pote specificar qual sitos web pote inviar te notificationes. Tu pote etiam blocar nove requestas de permission pro notificationes.
 permissions-site-notification-disable-label =
-    .label = Blocar nove requestas de consentir notificationes
-permissions-site-notification-disable-desc = Isto impedira qualcunque sitos web non listate antea de demandar licentia a mitter notificationes. Le blocada del notificationes pote infringer le functionalitate de alcun sito web.
+    .label = Blocar nove requestas de permission pro notificationes
+permissions-site-notification-disable-desc = Isto impedi a omne sitos web non listate hic supra de demandar permission pro inviar notificationes. Blocar notificationes pote rumper alcun functiones de sitos web.
 
 ## Site Permissions - Location
 
 permissions-site-location-window =
     .title = Parametros - Permissiones de geolocalisation
     .style = { permissions-window.style }
-permissions-site-location-desc = Le sequente sitos web ha demandate de acceder tu position. Tu pote specificar le sitos web al qual es consentite de acceder a tu position. Tu pote alsi blocar nove requestas de acceder a tu position.
+permissions-site-location-desc = Le sitos web sequente ha requestate de acceder a tu position geographic. Tu pote specificar qual sitos web pote acceder a tu position. Tu pote etiam blocar nove requestas de accesso a tu position.
 permissions-site-location-disable-label =
     .label = Blocar nove requestas de acceder a tu position
 permissions-site-location-disable-desc = Isto impedira qualcunque sitos web non listate antea de demandar licentia a acceder tu position. Blocar le accesso a tu position pote infringer alcun functionalitate del sito web.
+
+## Site Permissions - Virtual Reality
+
+permissions-site-xr-window =
+    .title = Parametros - Permissiones de realitate virtual
+    .style = { permissions-window.style }
+permissions-site-xr-desc = Le sitos web sequente ha requestate de acceder a tu apparatos de realitate virtual. Tu pote specificar qual sitos web pote acceder a iste apparatos. Tu pote etiam blocar nove requestas de accesso a istes.
+permissions-site-xr-disable-label =
+    .label = Blocar nove requestas de acceder a tu apparatos de realitate virtual
+permissions-site-xr-disable-desc = Isto impedi a omne sitos web non listate hic supra de requestar le accesso a tu apparatos de realitate virtual. Blocar iste accesso pote rumper alcun functiones de sitos web.
 
 ## Site Permissions - Camera
 
 permissions-site-camera-window =
     .title = Parametros - Permissiones del camera
     .style = { permissions-window.style }
-permissions-site-camera-desc = Le sequente sitos web ha requirite de acceder a tu photo-camera. Tu pote specificar a qual sitos web es consentite de acceder a tu camera. Tu pote alsi blocar nove requestas de acceder a tu camera.
+permissions-site-camera-desc = Le sitos web sequente ha requestate de acceder a tu photocamera. Tu pote specificar qual sitos web pote acceder a tu camera. Tu pote etiam blocar nove requestas de accesso a tu camera.
 permissions-site-camera-disable-label =
     .label = Blocar nove requestas de acceder a tu camera
 permissions-site-camera-disable-desc = Isto impedira qualcunque sitos web non listate antea de demandar licentia a acceder a tu camera. Blocar le accesso a tu camera pote nocer alcun functionalitates del sito web.

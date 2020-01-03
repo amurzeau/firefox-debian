@@ -41,7 +41,7 @@
 <!ENTITY incomingColumn.label            "In entrata">
 <!ENTITY outgoing.label                  "In exito:">
 <!ENTITY outgoingColumn.label            "In exito">
-<!ENTITY username.label                  "Nomine del usator:">
+<!ENTITY username.label                  "Nomine de usator:">
 <!ENTITY hostname.label                  "Nomine de servitor">
 <!ENTITY port.label                      "Porta">
 <!ENTITY ssl.label                       "SSL">
@@ -70,13 +70,13 @@
 <!ENTITY cancel.accesskey                "a">
 <!ENTITY continue.label                  "Continuar">
 <!ENTITY continue.accesskey              "C">
-<!ENTITY stop.label                      "Cessar">
+<!ENTITY stop.label                      "Stoppar">
 <!ENTITY stop.accesskey                  "C">
 <!-- LOCALIZATION NOTE (half-manual-test.label): This is the text that is
      displayed on the button in manual config mode which will re-guess
      the account configuration, taking into account the settings that
      the user has manually changed. -->
-<!ENTITY half-manual-test.label          "Provar de novo">
+<!ENTITY half-manual-test.label          "Probar de novo">
 <!ENTITY half-manual-test.accesskey      "P">
 <!ENTITY manual-edit.label               "Configuration manual">
 <!ENTITY manual-edit.accesskey           "M">

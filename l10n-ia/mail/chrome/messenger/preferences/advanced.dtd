@@ -9,9 +9,16 @@
 <!ENTITY itemCertificates.label  "Certificatos">
 
 <!-- General Settings -->
+<!ENTITY enableGlodaSearch.label       "Activar le recerca e indexation global">
+<!ENTITY enableGlodaSearch.accesskey   "g">
+<!ENTITY dateTimeFormatting.label      "Formato de data e hora">
 <!ENTITY languageSelector.label        "Lingua">
 <!ENTITY allowHWAccel.label            "Usar le acceleration de hardware quando disponibile">
 <!ENTITY allowHWAccel.accesskey        "h">
+<!ENTITY storeType.label               "Typo de magazinage del message pro nove contos:">
+<!ENTITY storeType.accesskey           "T">
+<!ENTITY mboxStore2.label              "File per dossier (mbox)">
+<!ENTITY maildirStore.label            "File per message (maildir)">
 
 <!ENTITY scrolling.label               "Rolamento">
 <!ENTITY useAutoScroll.label           "Usar rolamento automatic">
@@ -20,6 +27,10 @@
 <!ENTITY useSmoothScrolling.accesskey  "s">
 
 <!ENTITY systemIntegration.label       "Integration de systema">
+<!ENTITY alwaysCheckDefault.label      "Verifica sempre si &brandShortName; es le cliente email predefinite al initiation">
+<!ENTITY alwaysCheckDefault.accesskey  "s">
+<!ENTITY searchIntegration.label       "Permitter a &searchIntegration.engineName; de cercar messages">
+<!ENTITY searchIntegration.accesskey   "P">
 <!ENTITY checkDefaultsNow.label        "Controlar ora…">
 <!ENTITY checkDefaultsNow.accesskey    "o">
 <!ENTITY configEditDesc.label          "Configuration avantiate">
@@ -31,11 +42,13 @@
 
 <!-- Data Choices -->
 <!ENTITY telemetrySection.label          "Telemetria">
+<!ENTITY telemetryDesc.label             "Comparti datos de performance, uso, hardware e personalisationes de tu cliente email con &vendorShortName; pro adjutar nos a meliorar &brandShortName;">
 <!ENTITY enableTelemetry.label           "Activar telemetria">
 <!ENTITY enableTelemetry.accesskey       "t">
 <!ENTITY telemetryLearnMore.label        "Saper plus">
 
 <!ENTITY crashReporterSection.label      "Reportator de crash">
+<!ENTITY crashReporterDesc.label         "&brandShortName; invia reportos de crash pro adjutar &vendorShortName; a render tu cliente email plus stabile e secur">
 <!ENTITY enableCrashReporter.label       "Activar reportator de crash">
 <!ENTITY enableCrashReporter.accesskey   "c">
 <!ENTITY crashReporterLearnMore.label    "Saper plus">
@@ -72,12 +85,12 @@
 <!ENTITY showSettings.accesskey        "S">
 <!ENTITY proxiesConfigure.label        "Configurar como &brandShortName; se connecte a Internet">
 <!ENTITY connectionsInfo.caption       "Connexion">
-<!ENTITY offlineInfo.caption           "Offline">
+<!ENTITY offlineInfo.caption           "Foras de linea">
 <!ENTITY offlineInfo.label             "Configurar le parametros offline">
 <!ENTITY showOffline.label             "Offline…">
 <!ENTITY showOffline.accesskey         "O">
 
-<!ENTITY Diskspace                       "Spatio de disco">
+<!ENTITY Diskspace                       "Spatio sur disco">
 <!ENTITY offlineCompactFolders.label     "Compactar tote le dossiers quando se recupera plus de">
 <!ENTITY offlineCompactFolders.accesskey "t">
 <!ENTITY offlineCompactFoldersMB.label   "MB total">
@@ -93,7 +106,7 @@
 <!ENTITY useCacheAfter.label             "MB de spatio pro le cache">
 <!ENTITY overrideSmartCacheSize.label    "Supplantar le gestion automatic del cache">
 <!ENTITY overrideSmartCacheSize.accesskey "u">
-<!ENTITY clearCacheNow.label             "Clarar ora">
+<!ENTITY clearCacheNow.label             "Rader ora">
 <!ENTITY clearCacheNow.accesskey         "C">
 
 <!-- Certificates -->

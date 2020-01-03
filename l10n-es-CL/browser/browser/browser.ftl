@@ -2,6 +2,37 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This is the default window title in case there is no content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+browser-main-window-title =
+    { $mode ->
+        [private] { -brand-full-name } (navegación privada)
+       *[default] { -brand-full-name }
+    }
+# This is the default window title in case there is a content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Example Title - Mozilla Firefox"
+# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+#   $title (String) - Content title string.
+browser-main-window-content-title =
+    { $mode ->
+        [private] { $title } - { -brand-full-name } (navegación privada)
+       *[default] { $title } - { -brand-full-name }
+    }
 urlbar-identity-button =
     .aria-label = Ver información del sitio
 
@@ -25,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = Abrir panel de mensajes
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Abrir panel de solicitud de ubicación
+urlbar-xr-notification-anchor =
+    .tooltiptext = Abrir el panel de permisos de realidad virtual
 urlbar-storage-access-anchor =
     .tooltiptext = Abrir panel de permisos de actividad de navegación
 urlbar-translate-notification-anchor =
@@ -51,6 +84,8 @@ urlbar-tip-help-icon =
     .title = Obtener ayuda
 urlbar-geolocation-blocked =
     .tooltiptext = Has bloqueado la información de ubicación para este sitio.
+urlbar-xr-blocked =
+    .tooltiptext = Has bloqueado el acceso de dispositivos de realidad virtual para este sitio.
 urlbar-web-notifications-blocked =
     .tooltiptext = Has bloqueado las notificaciones para este sitio.
 urlbar-camera-blocked =
@@ -110,3 +145,16 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Establecer como motor de búsqueda predeterminado para ventanas privadas
     .accesskey = P
+
+## Bookmark Panel
+
+bookmark-panel-show-editor-checkbox =
+    .label = Mostrar editor al guardar
+    .accesskey = S
+bookmark-panel-done-button =
+    .label = Listo
+# Width of the bookmark panel.
+# Should be large enough to fully display the Done and
+# Cancel/Remove Bookmark buttons.
+bookmark-panel =
+    .style = min-width: 23em

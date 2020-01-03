@@ -4,6 +4,7 @@
 
 addons-window =
     .title = सहयुक्तियाँ प्रबंधक
+addons-page-title = सहयुक्तियाँ प्रबंधक
 search-header =
     .placeholder = addons.mozilla.org खोजें
     .searchbuttonlabel = खोजें
@@ -258,6 +259,8 @@ go-back-button =
 
 ## Recommended add-ons page
 
+discopane-notice-learn-more = अधिक जानें
+privacy-policy = गोपनीयता नीति
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
 #   $author (string) - The name of the add-on developer.
@@ -271,16 +274,35 @@ disable-addon-button = निष्क्रिय करें
 enable-addon-button = सक्रिय करें
 expand-addon-button = अधिक विकल्प
 details-addon-button = विवरण
+addons-enabled-heading = सक्रिय किया गया
+addons-disabled-heading = निष्क्रिय किया गया
+extension-enabled-heading = सक्रिय किया गया
+extension-disabled-heading = निष्क्रिय किया गया
+theme-enabled-heading = सक्रिय किया गया
+theme-disabled-heading = निष्क्रिय किया गया
+plugin-enabled-heading = सक्रिय किया गया
+plugin-disabled-heading = निष्क्रिय किया गया
+dictionary-enabled-heading = सक्रिय किया गया
+dictionary-disabled-heading = निष्क्रिय किया गया
+locale-enabled-heading = सक्रिय किया गया
+locale-disabled-heading = निष्क्रिय किया गया
 addon-detail-author-label = लेखक
 addon-detail-version-label = संस्करण
 addon-detail-rating-label = रेटिंग
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (निष्क्रिय किया गया)
 
 ## Pending uninstall message bar
 
 addon-detail-updates-radio-on = चालू
 addon-detail-updates-radio-off = बंद
+release-notes-loading = लोड हो रहा है…
 
 ## Page headings
 
 addons-heading-search-input =
     .placeholder = addons.mozilla.org खोजें
+addon-page-options-button =
+    .title = सभी सहयुक्तियों के लिए औज़ार

@@ -561,6 +561,13 @@ search-keyword-warning-bookmark = Du har valgt en genvej som bruges af et bogmæ
 ## Containers Section
 
 containers-back-link = « Gå tilbage
+
+containers-back-button =
+    .aria-label =
+      { PLATFORM() ->
+          [windows] Gå tilbage til indstillinger
+         *[other] Gå tilbage til indstillinger
+      }
 containers-header = Kontekst-faneblade
 containers-add-button =
     .label = Tilføj ny kontekst
@@ -581,9 +588,15 @@ sync-signedout-description = Synkroniser dine bogmærker, historik, faneblade, a
 sync-signedout-account-title = Opret forbindelse med en { -fxaccount-brand-name }
 sync-signedout-account-create = Har du ingen konto? Opret én her
     .accesskey = O
+
 sync-signedout-account-signin =
     .label = Log ind…
     .accesskey = i
+
+sync-signedout-account-signin2 =
+    .label = Log ind på { -sync-brand-short-name }…
+    .accesskey = i
+
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -963,6 +976,10 @@ permissions-location = Position
 permissions-location-settings =
     .label = Indstillinger…
     .accesskey = I
+permissions-xr = Virtual reality
+permissions-xr-settings =
+    .label = Indstillinger…
+    .accesskey = I
 permissions-camera = Kamera
 permissions-camera-settings =
     .label = Indstillinger…
@@ -1011,6 +1028,8 @@ permissions-a11y-privacy-link = Læs mere
 collection-header = Indsamling og brug af data i { -brand-short-name }
 collection-description = Vi stræber efter at give dig mulighed for selv at vælge og indsamler kun, hvad vi har brug for til at forbedre { -brand-short-name } for alle. Vi spørger altid om din tilladelse, før vi modtager personlig information.
 collection-privacy-notice = Privatlivspolitik
+collection-health-report-telemetry-disabled = Du tillader ikke længere, at { -vendor-short-name } indsamler teknisk data og data om brug. Alle tidligere data vil blive slettet indenfor 30 dage.
+collection-health-report-telemetry-disabled-link = Læs mere
 collection-health-report =
     .label = Tillad at { -brand-short-name } indsender tekniske data og data om brug til { -vendor-short-name }
     .accesskey = d

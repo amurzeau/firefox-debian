@@ -19,17 +19,31 @@ onboarding-button-label-get-started = Začínáme
 ## Welcome modal dialog strings
 
 onboarding-welcome-header = Vítá vás { -brand-short-name }
-onboarding-welcome-body = Prohlížeč teď už máte.<br/>Poznejte ještě zbytek aplikace { -brand-product-name }.
+onboarding-welcome-body =
+    Prohlížeč teď už máte.<br/>Poznejte ještě zbytek { -brand-product-name.gender ->
+        [masculine] { -brand-product-name(case: "gen") }
+        [feminine] { -brand-product-name(case: "gen") }
+        [neuter] { -brand-product-name(case: "gen") }
+       *[other] aplikace { -brand-product-name }
+    }.
 onboarding-welcome-learn-more = Další výhody.
-onboarding-welcome-modal-get-body = Prohlížeč teď už máte.<br/>Využijte aplikaci { -brand-product-name } naplno.
+onboarding-welcome-modal-get-body =
+    Prohlížeč teď už máte.<br/>Využijte { -brand-product-name.gender ->
+        [masculine] { -brand-product-name(case: "acc") }
+        [feminine] { -brand-product-name(case: "acc") }
+        [neuter] { -brand-product-name(case: "acc") }
+       *[other] aplikaci { -brand-product-name }
+    } naplno.
 onboarding-welcome-modal-supercharge-body = Dopřejte si silnou ochranu soukromí.
 onboarding-welcome-modal-privacy-body = Prohlížeč už teď máte. Přidejme k němu ještě trochu ochrany soukromí.
 onboarding-welcome-modal-family-learn-more = Zjistěte více o celé rodině produktů { -brand-product-name }.
 onboarding-welcome-form-header = Začněme
 onboarding-join-form-header =
-    { -brand-product-name.gender ->
-        [masculine] Používejte { -brand-product-name }
-       *[other] Používejte aplikaci { -brand-product-name }
+    Používejte { -brand-product-name.gender ->
+        [masculine] { -brand-product-name(case: "acc") }
+        [feminine] { -brand-product-name(case: "acc") }
+        [neuter] { -brand-product-name(case: "acc") }
+       *[other] aplikaci { -brand-product-name }
     }
 onboarding-join-form-body = Zde zadejte svou e-mailovou adresu.
 onboarding-join-form-email =
@@ -54,11 +68,15 @@ onboarding-fullpage-form-email =
 
 ## Firefox Sync modal dialog strings.
 
-onboarding-sync-welcome-header = Vezměte si { -brand-product-name } s sebou
+onboarding-sync-welcome-header =
+    Vezměte si { -brand-product-name.gender ->
+        [masculine] { -brand-product-name(case: "acc") }
+        [feminine] { -brand-product-name(case: "acc") }
+        [neuter] { -brand-product-name(case: "acc") }
+       *[other] aplikaci { -brand-product-name }
+    } s sebou
 onboarding-sync-welcome-content = Mějte své záložky, historii i uložená hesla s sebou na všech svých zařízeních.
 onboarding-sync-welcome-learn-more-link = Zjistit více o účtech Firefoxu
-onboarding-sync-form-invalid-input = Je požadován platný e-mail
-onboarding-sync-legal-notice = Pokračováním souhlasíte s <a data-l10n-name="terms">podmínkami poskytování služby</a> a <a data-l10n-name="privacy">zásadami ochrany osobních údajů</a>.
 onboarding-sync-form-input =
     .placeholder = E-mail
 onboarding-sync-form-continue-button = Pokračovat
@@ -67,7 +85,7 @@ onboarding-sync-form-skip-login-button = Přeskočit tento krok
 ## This is part of the line "Enter your email to continue to Firefox Sync"
 
 onboarding-sync-form-header = Zadejte svoji e-mailovou adresu
-onboarding-sync-form-sub-header = a používejte službu { -sync-brand-name }.
+onboarding-sync-form-sub-header = a používejte { -sync-brand-name(case: "acc") }.
 
 ## These are individual benefit messages shown with an image, title and
 ## description.
@@ -84,7 +102,13 @@ onboarding-benefit-privacy-title = Skutečné soukromí
 # transparent about how we use it."
 onboarding-benefit-privacy-text = Slibujeme, že nezneužijeme vaše data. Méně dat je vždy více, udržíme je v bezpečí a nemáme před vámi žádná tajemství.
 onboarding-benefit-sync-title = { -sync-brand-short-name }
-onboarding-benefit-sync-text = Vezměte si své záložky, hesla, historii a další data všude tam, kde používáte aplikaci { -brand-product-name }.
+onboarding-benefit-sync-text =
+    Vezměte si své záložky, hesla, historii a další data všude tam, kde používáte { -brand-product-name.gender ->
+        [masculine] { -brand-product-name(case: "acc") }
+        [feminine] { -brand-product-name(case: "acc") }
+        [neuter] { -brand-product-name(case: "acc") }
+       *[other] aplikaci { -brand-product-name }
+    }.
 onboarding-benefit-monitor-title = { -monitor-brand-short-name }
 onboarding-benefit-monitor-text = Nechte se upozornit, pokud se vaše údaje objeví ve známém úniku dat.
 onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
@@ -107,18 +131,20 @@ onboarding-ghostery-title = Ghostery
 onboarding-ghostery-text = Ještě rychlejší, chytřejší a bezpečnější prohlížení vám umožní např. rozšíření Ghostery, které blokuje otravné reklamy.
 # Note: "Sync" in this case is a generic verb, as in "to synchronize"
 onboarding-fxa-title = Synchronizace
-onboarding-fxa-text = Přihlaste se k účtu Firefoxu a synchronizuje své záložky, hesla a otevřené panely kdekoliv používáte aplikaci { -brand-short-name }.
+onboarding-fxa-text = Přihlaste se k { -fxaccount-brand-name(case: "dat", capitalization: "lower") } a synchronizuje své záložky, hesla a otevřené panely kdekoliv používáte aplikaci { -brand-short-name }.
 onboarding-tracking-protection-title2 = Ochrana před sledováním
 onboarding-tracking-protection-text2 = { -brand-short-name } vám pomůže zastavit sledování webovými stránkami a znesnadní reklamám, aby vás následovaly na další weby.
 onboarding-tracking-protection-button2 = Jak to funguje
 onboarding-data-sync-title = Mějte svá nastavení všude s sebou
 # "Sync" is short for synchronize.
 onboarding-data-sync-text2 =
-    { -brand-product-name.gender ->
-        [masculine] Synchronizujte své záložky, hesla a další data všude, kde používáte { -brand-product-name }.
-       *[other] Synchronizujte své záložky, hesla a další data všude, kde používáte aplikaci { -brand-product-name }.
-    }
-onboarding-data-sync-button2 = Přihlásit ke službě { -sync-brand-short-name }
+    Synchronizujte své záložky, hesla a další data všude, kde používáte { -brand-product-name.gender ->
+        [masculine] { -brand-product-name(case: "acc") }
+        [feminine] { -brand-product-name(case: "acc") }
+        [neuter] { -brand-product-name(case: "acc") }
+       *[other] aplikaci { -brand-product-name }
+    }.
+onboarding-data-sync-button2 = Přihlásit k { -sync-brand-short-name(case: "dat") }
 onboarding-firefox-monitor-title = Buďte informování o únicích dat
 onboarding-firefox-monitor-text = { -monitor-brand-name } hlídá, jestli vaše e-mailová adresa nebyla součástí nějakého úniku dat, a dá vám vědět, pokud ji v nějakém najde.
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } hlídá, jestli vaše e-mailová adresa nebyla součástí nějakého známého úniku dat, a dá vám vědět, pokud ji v nějakém najde.
@@ -127,18 +153,22 @@ onboarding-browse-privately-title = Prohlížejte v soukromí
 onboarding-browse-privately-text = Funkce anonymního prohlížení smaže vaši historii vyhledávání a prohlížení a uchová vaše tajemství před ostatními uživateli vašeho počítače.
 onboarding-browse-privately-button = Otevřít anonymní okno
 onboarding-firefox-send-title = Sdílejte své soubory soukromě a bezpečně
-onboarding-firefox-send-text2 = Sdílejte své soubory se službou { -send-brand-name }, která je chrání pomocí end-to-end šifrování a odkazů s omezenou platností.
-onboarding-firefox-send-button = Vyzkoušet { -send-brand-name }
+onboarding-firefox-send-text2 = Sdílejte své soubory s { -send-brand-name(case: "ins") }, která je chrání pomocí end-to-end šifrování a odkazů s omezenou platností.
+onboarding-firefox-send-button = Vyzkoušet { -send-brand-name(case: "acc") }
 onboarding-mobile-phone-title =
-    { -brand-product-name.gender ->
-        [masculine] Nainstalujte si { -brand-product-name } do telefonu
-       *[other] Nainstalujte si aplikaci { -brand-product-name } do telefonu
-    }
+    Nainstalujte si { -brand-product-name.gender ->
+        [masculine] { -brand-product-name(case: "acc") }
+        [feminine] { -brand-product-name(case: "acc") }
+        [neuter] { -brand-product-name(case: "acc") }
+       *[other] aplikaci { -brand-product-name }
+    } do telefonu
 onboarding-mobile-phone-text =
-    { -brand-product-name.gender ->
-        [masculine] Stáhněte si { -brand-product-name } pro iOS nebo Android a synchronizujte svá data mezi zařízeními.
-       *[other] Stáhněte si aplikaci { -brand-product-name } pro iOS nebo Android a synchronizujte svá data mezi zařízeními.
-    }
+    Stáhněte si { -brand-product-name.gender ->
+        [masculine] { -brand-product-name(case: "acc") }
+        [feminine] { -brand-product-name(case: "acc") }
+        [neuter] { -brand-product-name(case: "acc") }
+       *[other] aplikaci { -brand-product-name }
+    } do telefonu pro iOS nebo Android a synchronizujte svá data mezi zařízeními.
 # "Mobile" is short for mobile/cellular phone, "Browser" is short for web
 # browser.
 onboarding-mobile-phone-button = Stáhnout mobilní prohlížeč
@@ -146,16 +176,25 @@ onboarding-send-tabs-title = Posílejte si panely mezi zařízeními
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
 onboarding-send-tabs-text = Posílání panelů funguje jako okamžité sdílení stránek mezi vašimi zařízeními. Nemusíte nic kopírovat ani opouštět prohlížeč.
+# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
+# tab's context menu.
+onboarding-send-tabs-text2 = Sdílejte a posílejte stránky mezi svými zařízeními. Nemusíte kopírovat žádné odkazy ani opouštět prohlížeč.
 onboarding-send-tabs-button = Začít posílat panely
 onboarding-pocket-anywhere-title = Čtěte a nechte si číst
-onboarding-pocket-anywhere-text2 = Uložte si svůj oblíbený obsah offline s aplikací { -pocket-brand-name } pro přečtení nebo poslech ve chvíli, kdy se vám to opravdu hodí.
-onboarding-pocket-anywhere-button = Vyzkoušet { -pocket-brand-name }
+onboarding-pocket-anywhere-text2 = Uložte si svůj oblíbený obsah offline s { -pocket-brand-name(case: "ins") } pro přečtení nebo poslech ve chvíli, kdy se vám to opravdu hodí.
+onboarding-pocket-anywhere-button = Vyzkoušet { -pocket-brand-name(case: "acc") }
 onboarding-lockwise-passwords-title = Mějte svá hesla všude s sebou
-onboarding-lockwise-passwords-text2 = Ukládejte svá hesla bezpečně pomocí { -lockwise-brand-name }, který vám usnadní rychlé přihlašování do vašich účtů.
+onboarding-lockwise-passwords-text2 = Ukládejte svá hesla bezpečně pomocí { -lockwise-brand-name(case: "gen") }, který vám usnadní rychlé přihlašování do vašich účtů.
 onboarding-lockwise-passwords-button2 = Stáhnout aplikaci
+onboarding-lockwise-strong-passwords-title = Vytváření silných hesel
+onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } vám na místě vygeneruje silná hesla a uloží je bezpečně na jednom místě.
+onboarding-lockwise-strong-passwords-button = Správa přihlašovacích údajů
 onboarding-facebook-container-title = Nastavte hranice pro Facebook
 onboarding-facebook-container-text2 = Doplněk { -facebook-container-brand-name } oddělí váš účet od zbytku internetu, takže pro Facebook a jeho reklamy nebude tak snadné vás na internetu vysledovat.
 onboarding-facebook-container-button = Nainstalovat rozšíření
+onboarding-import-browser-settings-title = Importujte své záložky, hesla a další data
+onboarding-import-browser-settings-text = Pojďme na to — přenos oblíbených stránek a nastavení z Chromu je velmi jednoduchý.
+onboarding-import-browser-settings-button = Import dat z prohlížeče Chrome
 
 ## Message strings belonging to the Return to AMO flow
 

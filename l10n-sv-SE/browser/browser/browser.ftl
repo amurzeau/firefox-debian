@@ -2,6 +2,37 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This is the default window title in case there is no content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+browser-main-window-title =
+    { $mode ->
+        [private] { -brand-full-name } (privat surfning)
+       *[default] { -brand-full-name }
+    }
+# This is the default window title in case there is a content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Example Title - Mozilla Firefox"
+# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+#   $title (String) - Content title string.
+browser-main-window-content-title =
+    { $mode ->
+        [private] { $title } - { -brand-full-name } (privat surfning)
+       *[default] { $title } - { -brand-full-name }
+    }
 urlbar-identity-button =
     .aria-label = Visa webbplatsinformation
 
@@ -25,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = Öppna meddelandepanel
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Öppna platsbegäranspanel
+urlbar-xr-notification-anchor =
+    .tooltiptext = Öppna behörighetspanelen för virtuell verklighet
 urlbar-storage-access-anchor =
     .tooltiptext = Öppna behörighetspanelen för surfaktivitet
 urlbar-translate-notification-anchor =
@@ -51,6 +84,8 @@ urlbar-tip-help-icon =
     .title = Få hjälp
 urlbar-geolocation-blocked =
     .tooltiptext = Du har blockerat platsinformation för denna webbplats.
+urlbar-xr-blocked =
+    .tooltiptext = Du har blockerat enheter för virtuell verklighet att få åtkomst till den här webbplatsen.
 urlbar-web-notifications-blocked =
     .tooltiptext = Du har blockerat notifieringar för denna webbsida.
 urlbar-camera-blocked =
@@ -110,3 +145,16 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Ange som standardsökmotor för privata fönster
     .accesskey = A
+
+## Bookmark Panel
+
+bookmark-panel-show-editor-checkbox =
+    .label = Visa redigeraren när du sparar
+    .accesskey = V
+bookmark-panel-done-button =
+    .label = Klar
+# Width of the bookmark panel.
+# Should be large enough to fully display the Done and
+# Cancel/Remove Bookmark buttons.
+bookmark-panel =
+    .style = min-width: 23em

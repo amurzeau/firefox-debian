@@ -94,7 +94,7 @@ onboarding-benefit-lockwise-text = Hantera lösenord som är skyddade och flyttb
 ## The string for the button is found above, in the UI strings section
 
 onboarding-private-browsing-title = Privat surfning
-onboarding-private-browsing-text = Surfa själv. Privat surfning med innehållsblockning blockerar trackers på internet som följer dig på webben.
+onboarding-private-browsing-text = Surfa själv. Privat surfning med innehållsblockning blockerar spårare på internet som följer dig på webben.
 onboarding-screenshots-title = Skärmbilder
 onboarding-screenshots-text = Ta, spara och dela skärmbilder - utan att lämna { -brand-short-name }. Fånga ett område eller en hel sida när du surfar. Spara sedan på webben för enkel åtkomst och delning.
 onboarding-addons-title = Tillägg
@@ -130,6 +130,9 @@ onboarding-send-tabs-title = Skicka snabb flikar till dig själv
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
 onboarding-send-tabs-text = Send Tabs delar direkt sidor mellan dina enheter utan att behöva kopiera, klistra in eller lämna webbläsaren.
+# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
+# tab's context menu.
+onboarding-send-tabs-text2 = Dela enkelt sidor mellan dina enheter utan att behöva kopiera länkar eller lämna webbläsaren.
 onboarding-send-tabs-button = Börja använda Send Tabs
 onboarding-pocket-anywhere-title = Läs och lyssna var som helst
 onboarding-pocket-anywhere-text2 = Spara ditt favoritinnehåll offline med appen { -pocket-brand-name } och läs, lyssna och kolla när det är bekvämt för dig.
@@ -137,9 +140,15 @@ onboarding-pocket-anywhere-button = Prova { -pocket-brand-name }
 onboarding-lockwise-passwords-title = Ta med dina lösenord överallt
 onboarding-lockwise-passwords-text2 = Håll lösenordet du sparar säkert och logga enkelt in på dina konton med { -lockwise-brand-name }
 onboarding-lockwise-passwords-button2 = Hämta appen
+onboarding-lockwise-strong-passwords-title = Skapa och lagra starka lösenord
+onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } skapar starka lösenord på plats och sparar dem alla på ett ställe.
+onboarding-lockwise-strong-passwords-button = Hantera dina inloggningar
 onboarding-facebook-container-title = Ange gränser för Facebook
 onboarding-facebook-container-text2 = { -facebook-container-brand-name } håller din profil skild från allt annat, vilket gör det svårare för Facebook att rikta annonser.
 onboarding-facebook-container-button = Lägg till tillägget
+onboarding-import-browser-settings-title = Importera dina bokmärken, lösenord och mer
+onboarding-import-browser-settings-text = Dyk direkt in—ta enkelt med dig dina webbplatser och inställningar från Chrome.
+onboarding-import-browser-settings-button = Importera Chrome-data
 
 ## Message strings belonging to the Return to AMO flow
 

@@ -6,6 +6,7 @@
 ## These messages are used as headings in the recommendation doorhanger
 
 cfr-doorhanger-extension-heading = الامتدادات المقترحة
+cfr-doorhanger-feature-heading = ميّزة موصى بها
 cfr-doorhanger-pintab-heading = هيا جرّب: ثبّت اللسان
 
 
@@ -85,6 +86,9 @@ cfr-protections-panel-link-text = اطّلع على المزيد
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = ميزة جديدة:
 cfr-whatsnew-button =
     .label = ما الجديد
     .tooltiptext = ما الجديد
@@ -98,6 +102,19 @@ cfr-whatsnew-tracking-protect-title = احمِ نفسك من خطر المتعق
 cfr-whatsnew-tracking-protect-body =
     يحجب { -brand-short-name } عددًا من المتعقّبات الاجتماعية والمتعقّبات بين المواقع،
     متعقّبات هدفها معرفة ما تفعله في المواقع.
+cfr-whatsnew-tracking-protect-link-text = اعرض تقرير الحماية
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+        [zero] المتعقّبات المحجوبة
+        [one] المتعقّبات المحجوبة
+        [two] المتعقّبات المحجوبة
+        [few] المتعقّبات المحجوبة
+        [many] المتعقّبات المحجوبة
+       *[other] المتعقّبات المحجوبة
+    }
 cfr-whatsnew-tracking-blocked-subtitle = منذ { DATETIME($earliestDate, month: "long", year: "numeric") }
 cfr-whatsnew-tracking-blocked-link-text = اعرض التقرير
 cfr-whatsnew-lockwise-backup-title = انسخ كلمات السر احتياطيًا
@@ -108,6 +125,31 @@ cfr-whatsnew-lockwise-take-body =
     يتيح لك تطبيق { -lockwise-brand-short-name } للمحمول الوصول بأمان إلى
     كلمات السر التي نسختها احتياطيًا أينما كنت.
 cfr-whatsnew-lockwise-take-link-text = نزّل التطبيق
+
+## Picture-in-Picture
+
+cfr-whatsnew-pip-header = شاهِد الڤِديوهات بينما تتصفّح
+cfr-whatsnew-pip-cta = اطّلع على المزيد
+
+## Permission Prompt
+
+cfr-whatsnew-permission-prompt-body = بات { -brand-shorter-name } يحجب طلبات المواقع بإرسال الرسائل المنبثقة تلقائيًا.
+cfr-whatsnew-permission-prompt-cta = اطّلع على المزيد
+
+## Fingerprinter Counter
+
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $fingerprinterCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-fingerprinter-counter-header =
+    { $fingerprinterCount ->
+        [zero] مسجّلات البصمات المحجوبة
+        [one] مسجّلات البصمات المحجوبة
+        [two] مسجّلات البصمات المحجوبة
+        [few] مسجّلات البصمات المحجوبة
+        [many] مسجّلات البصمات المحجوبة
+       *[other] مسجّلات البصمات المحجوبة
+    }
 
 ## Bookmark Sync
 
@@ -134,6 +176,7 @@ cfr-doorhanger-send-tab-ok-button = جرّب ميزة إرسال الألسنة
 ## Firefox Send
 
 cfr-doorhanger-firefox-send-header = شارِك بأمان ملف PDF هذا
+cfr-doorhanger-firefox-send-body = أخفِ مستنداتك الخاصة من أعين المتربصين مستغلًا الحماية من الطرفين التي تقدّم رابطًا يختفي حين تنتهي منه.
 cfr-doorhanger-firefox-send-ok-button = جرّب { -send-brand-name }
     .accesskey = ج
 
@@ -141,5 +184,25 @@ cfr-doorhanger-firefox-send-ok-button = جرّب { -send-brand-name }
 
 cfr-doorhanger-socialtracking-close-button = أغلِق
     .accesskey = غ
+cfr-doorhanger-socialtracking-dont-show-again = لا تعرض هذه الرسائل ثانيةً
+    .accesskey = ع
 cfr-doorhanger-socialtracking-heading = منع { -brand-short-name } إحدى الشبكات الاجتماعية من تعقّبك إلى هنا
 cfr-doorhanger-socialtracking-description = خصوصيتك فوق كل شيء. بات { -brand-short-name } يحجب أكثر متعقّبات الشبكات الاجتماعية شيوعًا فيحدّ من بياناتك وأنت تتصفّح الإنترنت التي تجمعها.
+cfr-doorhanger-fingerprinters-heading = حجب { -brand-short-name } مسجّل بصمات في هذه الصفحة
+cfr-doorhanger-fingerprinters-description = خصوصيتك فوق كل شيء. بات { -brand-short-name } يحجب مسجّلات البصمات التي تجمع المعلومات الفريدة التي تحدّد جهازك عن غيرك، كلّه لتتعقّبك.
+cfr-doorhanger-cryptominers-description = خصوصيتك فوق كل شيء. بات { -brand-short-name } يحجب المُعدّنات المعمّاة التي تستعمل قوّة الحساب لنظامك لتُعدّن النقود الرقمية.
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+        [zero] لم يحجب { -brand-short-name } أيّ متعقّب منذ { $date }!
+        [one] حجب { -brand-short-name } ما يزيد على <b>متعقّب واحد</b> منذ { $date }!
+        [two] حجب { -brand-short-name } ما يزيد على <b>متعقّبين اثنين</b> منذ { $date }!
+        [few] حجب { -brand-short-name } ما يزيد على <b>{ $blockedCount }</b> متعقّبات منذ { $date }!
+        [many] حجب { -brand-short-name } ما يزيد على <b>{ $blockedCount }</b> متعقّبًا منذ { $date }!
+       *[other] حجب { -brand-short-name } ما يزيد على <b>{ $blockedCount }</b> متعقّب منذ { $date }!
+    }

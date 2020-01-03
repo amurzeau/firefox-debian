@@ -134,6 +134,16 @@ permissions-site-location-disable-label =
     .label = Blockera nya förfrågningar om att få tillgång till din position
 permissions-site-location-disable-desc = Detta kommer att förhindra att webbplatser som inte listas ovan från att begära tillstånd att komma åt din position. Om du blockerar åtkomst till din position kan det störa vissa webbplatsfunktioner.
 
+## Site Permissions - Virtual Reality
+
+permissions-site-xr-window =
+    .title = Inställningar - Rättigheter för virtuell verklighet
+    .style = { permissions-window.style }
+permissions-site-xr-desc = Följande webbplatser har begärt att få tillgång till dina enheter för virtuell verklighet. Du kan ange vilka webbplatser som får åtkomst till dina enheter för virtuell verklighet. Du kan också blockera nya förfrågningar som ber om åtkomst till dina enheter för virtuell verklighet.
+permissions-site-xr-disable-label =
+    .label = Blockera nya förfrågningar som ber om åtkomst till dina enheter för virtuell verklighet
+permissions-site-xr-disable-desc = Detta förhindrar alla webbplatser som inte listas ovan från att begära tillåtelse att få tillgång till dina enheter för virtuell verklighet. Om du blockerar åtkomst till dina enheter för virtuell verklighet kan vissa webbplatsfunktioner sluta att fungera.
+
 ## Site Permissions - Camera
 
 permissions-site-camera-window =

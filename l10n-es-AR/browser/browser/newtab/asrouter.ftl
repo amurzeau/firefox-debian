@@ -122,6 +122,33 @@ cfr-whatsnew-lockwise-take-body =
     copias de seguridad de las contraseñas desde cualquier lugar.
 cfr-whatsnew-lockwise-take-link-text = Obtenga la aplicación
 
+## Picture-in-Picture
+
+cfr-whatsnew-pip-header = Vea videos mientras navega
+cfr-whatsnew-pip-body = Picture-in-picture muestra el video en una ventana flotante para que pueda verlo mientras trabaja en otras pestañas.
+cfr-whatsnew-pip-cta = Conocer más
+
+## Permission Prompt
+
+cfr-whatsnew-permission-prompt-header = Menos ventanas emergentes de sitios molestos
+cfr-whatsnew-permission-prompt-body = { -brand-shorter-name } ahora bloquea los sitios para que no soliciten automáticamente que le envíen mensajes emergentes.
+cfr-whatsnew-permission-prompt-cta = Conocer más
+
+## Fingerprinter Counter
+
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $fingerprinterCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-fingerprinter-counter-header =
+    { $fingerprinterCount ->
+        [one] Detector de huellas digitales bloqueado
+       *[other] Detectores de huellas digitales bloqueados
+    }
+cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } bloquea muchos detectores de huellas digitales que recopilan secretamente información sobre su dispositivo y accionan para crear un perfil publicitario suyo.
+# Message variation when fingerprinters count is less than 10
+cfr-whatsnew-fingerprinter-counter-header-alt = Detectores de huellas digitales
+cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } puede bloquear muchos detectores de huellas digitales que recopilan secretamente información sobre su dispositivo y accionan para crear un perfil publicitario suyo.
+
 ## Bookmark Sync
 
 cfr-doorhanger-sync-bookmarks-header = Ponga este marcador en su teléfono

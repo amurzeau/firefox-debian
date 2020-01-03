@@ -5,6 +5,16 @@
 
 ## App Menu
 
+appmenuitem-protection-report-title = تقرير حماية الخصوصية
+appmenuitem-protection-report-tooltip =
+    .tooltiptext = انتقل إلى تقرير الخصوصية
+
+## Zoom Controls
+
+appmenuitem-zoom-enlarge =
+    .label = قرّب
+appmenuitem-zoom-reduce =
+    .label = بعّد
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 

@@ -5,12 +5,12 @@
 <!-- Window title -->
 <!ENTITY windowTitle.label "Page Colours and Background">
 <!ENTITY pageColors.label "Page Colours">
-<!ENTITY defaultColorsRadio.label "Reader's default colours (Don't set colours in page)">
+<!ENTITY defaultColorsRadio.label "Reader’s default colours (Don’t set colours in page)">
 <!ENTITY defaultColorsRadio.accessKey "D">
-<!ENTITY defaultColorsRadio.tooltip "Use the colour settings from the viewer (reader's) browser only">
+<!ENTITY defaultColorsRadio.tooltip "Use the colour settings from the viewer (reader’s) browser only">
 <!ENTITY customColorsRadio.label "Use custom colours:">
 <!ENTITY customColorsRadio.accessKey "C">
-<!ENTITY customColorsRadio.tooltip "These colour settings override the viewer's browser settings">
+<!ENTITY customColorsRadio.tooltip "These colour settings override the viewer’s browser settings">
 
 <!ENTITY normalText.label "Normal text">
 <!ENTITY normalText.accessKey "N">

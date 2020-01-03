@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Manaidsear nan tuilleadan
+addons-page-title = Manaidsear nan tuilleadan
 search-header =
     .placeholder = Lorg air addons.mozilla.org
     .searchbuttonlabel = Lorg
@@ -338,3 +339,5 @@ theme-heading-search-label = Lorg barrachd ùrlaran
 extension-heading-search-label = Lorg barrachd leudachan
 addons-heading-search-input =
     .placeholder = Lorg air addons.mozilla.org
+addon-page-options-button =
+    .title = Innealan airson a h-uile tuilleadan

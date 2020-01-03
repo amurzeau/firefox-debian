@@ -118,6 +118,33 @@ cfr-whatsnew-lockwise-take-title = Llévese siempre sus contraseñas consigo
 cfr-whatsnew-lockwise-take-body = La aplicación para móviles { -lockwise-brand-short-name } le permite acceder a sus contraseñas de forma segura  desde cualquier parte.
 cfr-whatsnew-lockwise-take-link-text = Obtener la aplicación
 
+## Picture-in-Picture
+
+cfr-whatsnew-pip-header = Vea sus vídeos mientras navega
+cfr-whatsnew-pip-body = La función picture-in-picture muestra el vídeo en una ventana flotante para que pueda verlo mientras trabaja en otras pestañas.
+cfr-whatsnew-pip-cta = Saber más
+
+## Permission Prompt
+
+cfr-whatsnew-permission-prompt-header = Reduce molestas ventanas emergentes
+cfr-whatsnew-permission-prompt-body = { -brand-shorter-name } ahora bloquea los sitios para que no soliciten automáticamente el envío de mensajes emergentes.
+cfr-whatsnew-permission-prompt-cta = Saber más
+
+## Fingerprinter Counter
+
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $fingerprinterCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-fingerprinter-counter-header =
+    { $fingerprinterCount ->
+        [one] Detector de huellas digitales bloqueado
+       *[other] Detectores de huellas digitales bloqueados
+    }
+cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } bloquea muchos detectores de huellas digitales (fingerprinters) que recopilan en secreto información sobre su dispositivo y acciones, para crear un perfil suyo con fines publicitarios.
+# Message variation when fingerprinters count is less than 10
+cfr-whatsnew-fingerprinter-counter-header-alt = Fingerprinters
+cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } puede bloquear muchos detectores de huellas digitales (fingerprinters) que recopilan en secreto información sobre su dispositivo y acciones, para crear un perfil suyo con fines publicitarios.
+
 ## Bookmark Sync
 
 cfr-doorhanger-sync-bookmarks-header = Obtener este marcador en su teléfono

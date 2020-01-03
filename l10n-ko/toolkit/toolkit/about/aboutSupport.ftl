@@ -14,7 +14,7 @@ crashes-all-reports = 모든 충돌 보고서
 crashes-no-config = 이 애플리케이션은 충돌 보고서를 표시하도록 설정되어 있지 않습니다.
 extensions-title = 확장 기능
 extensions-name = 이름
-extensions-enabled = 사용함
+extensions-enabled = 사용
 extensions-version = 버전
 extensions-id = ID
 security-software-title = 보안 소프트웨어
@@ -87,9 +87,9 @@ graphics-diagnostics-title = 진단
 graphics-failure-log-title = 실패 로그
 graphics-gpu1-title = GPU #1
 graphics-gpu2-title = GPU #2
-graphics-decision-log-title = 의사결정 로그
+graphics-decision-log-title = 판단 로그
 graphics-crash-guards-title = 크래시 보호 비활성화 기능
-graphics-workarounds-title = 회피방법
+graphics-workarounds-title = 임시방편
 # Windowing system in use on Linux (e.g. X11, Wayland).
 graphics-window-protocol = 윈도우 프로토콜
 place-database-title = 위치 데이터베이스
@@ -121,16 +121,16 @@ restart-in-safe-mode-label = 부가기능을 비활성화하고 다시 시작…
 
 audio-backend = 오디오 백엔드
 max-audio-channels = 최대 채널
-channel-layout = 선호하는 채널 레이아웃
-sample-rate = 선호하는 샘플 비율
+channel-layout = 기본 채널 레이아웃
+sample-rate = 기본 샘플 비율
 media-title = 미디어
 media-output-devices-title = 출력 기기
 media-input-devices-title = 입력 기기
 media-device-name = 이름
 media-device-group = 그룹
 media-device-vendor = 벤더
-media-device-state = 주
-media-device-preferred = 선호
+media-device-state = 상태
+media-device-preferred = 기본
 media-device-format = 형식
 media-device-channels = 채널
 media-device-rate = 비율
@@ -150,6 +150,22 @@ intl-locales-default = 기본 언어
 intl-os-title = 운영 체제
 intl-os-prefs-system-locales = 시스템 언어
 intl-regional-prefs = 지역 설정
+
+## Remote Debugging
+##
+## The Firefox remote protocol provides low-level debugging interfaces
+## used to inspect state and control execution of documents,
+## browser instrumentation, user interaction simulation,
+## and for subscribing to browser-internal events.
+##
+## See also https://firefox-source-docs.mozilla.org/remote/
+
+remote-debugging-title = 원격 디버깅 (Chromium 프로토콜)
+remote-debugging-accepting-connections = 연결 수락
+remote-debugging-url = URL
+
+
+
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days = 지난 { $days }일간의 충돌 보고서

@@ -89,13 +89,25 @@ about-debugging-setup-title = Nastavení
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Nastavte si způsob připojení pro vzdálení ladění vašeho zařízení.
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
-about-debugging-setup-this-firefox = Použijte <a>{ about-debugging-this-firefox-runtime-name }</a> pro ladění panelů, rozšíření a service workerů v této verzi aplikace { -brand-shorter-name }.
+about-debugging-setup-this-firefox =
+    Použijte <a>{ about-debugging-this-firefox-runtime-name }</a> pro ladění panelů, rozšíření a service workerů v této verzi { -brand-shorter-name.gender ->
+        [masculine] { -brand-shorter-name(case: "gen") }
+        [feminine] { -brand-shorter-name(case: "gen") }
+        [neuter] { -brand-shorter-name(case: "gen") }
+       *[other] aplikace { -brand-shorter-name }
+    }.
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Připojit zařízení
 # USB section of the Setup page
 about-debugging-setup-usb-title = USB
 # Explanatory text displayed in the Setup page when USB debugging is disabled
-about-debugging-setup-usb-disabled = Povolením této možnosti stáhne do aplikace { -brand-shorter-name } komponenty potřebné pro ladění pomocí Andoird USB.
+about-debugging-setup-usb-disabled =
+    Povolení této možnosti stáhne do { -brand-shorter-name.gender ->
+        [masculine] { -brand-shorter-name(case: "gen") }
+        [feminine] { -brand-shorter-name(case: "gen") }
+        [neuter] { -brand-shorter-name(case: "gen") }
+       *[other] aplikace { -brand-shorter-name }
+    } komponenty potřebné pro ladění pomocí Andoird USB.
 # Text of the button displayed in the USB section of the setup page when USB debugging is disabled.
 # Clicking on it will download components needed to debug USB Devices remotely.
 about-debugging-setup-usb-enable-button = Povolit USB zařízení
@@ -175,7 +187,7 @@ about-debugging-runtime-profile-button2 = Profilování výkonu
 # https://developer.mozilla.org/en-US/docs/Tools/about%3Adebugging#Service_workers_not_compatible
 about-debugging-runtime-service-workers-not-compatible = Konfigurace vašeho prohlížeče není kompatibilní se Service Workers. <a>Zjistit více</a>
 # This string is displayed in the runtime page if the remote browser version is too old.
-# "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/WebIDE/Troubleshooting
+# "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
 # { $minVersion } is the minimum version that is compatible with the current Firefox instance (same format)
 about-debugging-browser-version-too-old = Připojený prohlížeč má starou verzi ({ $runtimeVersion }). Minimální podporovaná verze je ({ $minVersion }). Toto je nepodporovaná konfigurace a může způsobit nefunkčnost nástrojů pro vývojáře. Prosím aktualizujte připojený prohlížeč. <a> Poradce při potížích</a>
@@ -220,7 +232,7 @@ about-debugging-tmp-extension-install-button = Načíst dočasný doplněk…
 about-debugging-tmp-extension-install-error = Při instalaci dočasného doplňku došlo k chybě.
 # Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will reload the extension.
-about-debugging-tmp-extension-reload-button = Obnovit
+about-debugging-tmp-extension-reload-button = Znovu načíst
 # Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will uninstall the extension and remove it from the page.
 about-debugging-tmp-extension-remove-button = Odebrat

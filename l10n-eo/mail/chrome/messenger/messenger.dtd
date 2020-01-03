@@ -3,69 +3,77 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY titledefault.label "&brandFullName;">
-<!ENTITY titleSeparator.label " - ">
+<!ENTITY titleSeparator.label " – ">
 
 <!-- File Menu -->
-<!ENTITY newFolderCmd.label "Folder…">
-<!ENTITY newFolderCmd.accesskey "F">
-<!ENTITY closeTabCmd2.label "Close Tab">
-<!ENTITY closeTabCmd2.accesskey "C">
-<!ENTITY closeOtherTabsCmd2.label "Close Other Tabs">
-<!ENTITY closeOtherTabsCmd2.accesskey "o">
-<!ENTITY recentlyClosedTabsCmd.label "Recently Closed Tabs">
-<!ENTITY recentlyClosedTabsCmd.accesskey "R">
+<!ENTITY newFolderCmd.label "Mesaĝujo…">
+<!ENTITY newFolderCmd.accesskey "u">
+<!ENTITY closeTabCmd2.label "Fermi langeton">
+<!ENTITY closeTabCmd2.accesskey "F">
+<!ENTITY closeOtherTabsCmd2.label "Fermi aliajn langetojn">
+<!ENTITY closeOtherTabsCmd2.accesskey "a">
+<!ENTITY recentlyClosedTabsCmd.label "Antaŭnelonge fermitaj langetoj">
+<!ENTITY recentlyClosedTabsCmd.accesskey "n">
 
 <!ENTITY undoCloseTabCmd.commandkey "T">
 <!-- LOCALIZATION NOTE (moveToNewWindow.label):
      Menu option to cause the current tab to be migrated to a new Thunderbird
      window.
      -->
-<!ENTITY moveToNewWindow.label "Move to New Window">
-<!ENTITY moveToNewWindow.accesskey "W">
-<!ENTITY newVirtualFolderCmd.label "Saved Search…">
-<!ENTITY newVirtualFolderCmd.accesskey "S">
-<!ENTITY newOtherAccountsCmd.label "Other Accounts…">
-<!ENTITY newOtherAccountsCmd.accesskey "O">
-<!ENTITY newCreateEmailAccountCmd.label "Get a New Mail Account…">
-<!ENTITY newCreateEmailAccountCmd.accesskey "G">
-<!ENTITY newExistingEmailAccountCmd.label "Existing Mail Account…">
-<!ENTITY newExistingEmailAccountCmd.accesskey "E">
-<!ENTITY newIMAccountCmd.label "Chat Account…">
-<!ENTITY newIMAccountCmd.accesskey "C">
-<!ENTITY newFeedAccountCmd.label "Feed Account…">
-<!ENTITY newFeedAccountCmd.accesskey "d">
-<!ENTITY newIMContactCmd.label "Chat Contact…">
-<!ENTITY newIMContactCmd.accesskey "h">
-<!ENTITY openMessageFileCmd.label "Open Saved Message…">
-<!ENTITY openMessageFileCmd.accesskey "O">
-<!ENTITY saveAsMenu.label "Save As">
-<!ENTITY saveAsMenu.accesskey "S">
-<!ENTITY saveAsFileCmd.label "File">
-<!ENTITY saveAsFileCmd.accesskey "F">
+<!ENTITY moveToNewWindow.label "Movi al nova fenestro">
+<!ENTITY moveToNewWindow.accesskey "M">
+<!ENTITY newVirtualFolderCmd.label "Mesaĝujo de serĉo…">
+<!ENTITY newVirtualFolderCmd.accesskey "s">
+<!ENTITY newOtherAccountsCmd.label "Agordaro de alia konto…">
+<!ENTITY newOtherAccountsCmd.accesskey "l">
+<!ENTITY newCreateEmailAccountCmd.label "Tute nova retpoŝta konto…">
+<!ENTITY newCreateEmailAccountCmd.accesskey "n">
+<!ENTITY newExistingEmailAccountCmd.label "Agordaro de ekzista retpoŝta konto…">
+<!ENTITY newExistingEmailAccountCmd.accesskey "e">
+<!ENTITY newIMAccountCmd.label "Agordaro de konto de tujmesaĝilo…">
+<!ENTITY newIMAccountCmd.accesskey "t">
+<!ENTITY newFeedAccountCmd.label "Agordaro de konto de novaĵoj…">
+<!ENTITY newFeedAccountCmd.accesskey "v">
+<!ENTITY newIMContactCmd.label "Kontakto tujemesaĝila…">
+<!ENTITY newIMContactCmd.accesskey "o">
+<!ENTITY  newMessageCmd2.key "N">
+<!ENTITY  newMessageCmd.key "M">
+<!ENTITY  newMessageCmd.label "Mesaĝo">
+<!ENTITY  newMessageCmd.accesskey "M">
+<!ENTITY  newContactCmd.label "Kontakto…">
+<!ENTITY  newContactCmd.accesskey "K">
+<!ENTITY openMessageFileCmd.label "Malfermi konservitan mesaĝon…">
+<!ENTITY openMessageFileCmd.accesskey "M">
+<!ENTITY saveAsMenu.label "Konservi kiel">
+<!ENTITY saveAsMenu.accesskey "K">
+<!ENTITY saveAsFileCmd.label "dosieron">
+<!ENTITY saveAsFileCmd.accesskey "d">
 <!ENTITY saveAsFileCmd.key "s">
-<!ENTITY saveAsTemplateCmd.label "Template">
-<!ENTITY saveAsTemplateCmd.accesskey "T">
-<!ENTITY getNewMsgForCmd.label "Get New Messages for">
-<!ENTITY getNewMsgForCmd.accesskey "w">
-<!ENTITY getAllNewMsgCmdPopupMenu.label "All Accounts">
-<!ENTITY getAllNewMsgCmdPopupMenu.accesskey "A">
-<!ENTITY getNewMsgCurrentAccountCmdPopupMenu.label "Current Account">
-<!ENTITY getNewMsgCurrentAccountCmdPopupMenu.accesskey "C">
-<!ENTITY sendUnsentCmd.label "Send Unsent Messages">
-<!ENTITY sendUnsentCmd.accesskey "d">
-<!ENTITY subscribeCmd.label "Subscribe…">
-<!ENTITY subscribeCmd.accesskey "b">
-<!ENTITY deleteFolder.label "Delete Folder">
-<!ENTITY deleteFolder.accesskey "e">
-<!ENTITY renameFolder.label "Rename Folder…">
+<!ENTITY saveAsTemplateCmd.label "ŝablonon">
+<!ENTITY saveAsTemplateCmd.accesskey "a">
+<!ENTITY getNewMsgForCmd.label "Elŝuti novajn mesaĝojn el">
+<!ENTITY getNewMsgForCmd.accesskey "E">
+<!ENTITY getAllNewMsgCmdPopupMenu.label "ĉiuj kontoj">
+<!ENTITY getAllNewMsgCmdPopupMenu.accesskey "j">
+<!ENTITY getNewMsgCurrentAccountCmdPopupMenu.label "nuna konto">
+<!ENTITY getNewMsgCurrentAccountCmdPopupMenu.accesskey "n">
+<!ENTITY getNextNMsgCmd2.label "Elŝuti pliajn mesaĝojn">
+<!ENTITY getNextNMsgCmd2.accesskey "p">
+<!ENTITY sendUnsentCmd.label "Sendi sendotajn mesaĝojn">
+<!ENTITY sendUnsentCmd.accesskey "S">
+<!ENTITY subscribeCmd.label "Abonfluoj…">
+<!ENTITY subscribeCmd.accesskey "A">
+<!ENTITY deleteFolder.label "Forigi mesaĝujon">
+<!ENTITY deleteFolder.accesskey "i">
+<!ENTITY renameFolder.label "Renomi mesaĝujon…">
 <!ENTITY renameFolder.accesskey "R">
 <!ENTITY renameFolder.key "VK_F2">
-<!ENTITY compactFolders.label "Compact Folders">
-<!ENTITY compactFolders.accesskey "F">
-<!ENTITY emptyTrashCmd.label "Empty Trash">
-<!ENTITY emptyTrashCmd.accesskey "y">
-<!ENTITY offlineMenu.label "Offline">
-<!ENTITY offlineMenu.accesskey "l">
+<!ENTITY compactFolders.label "Reorganizi mesaĝujojn">
+<!ENTITY compactFolders.accesskey "o">
+<!ENTITY emptyTrashCmd.label "Malplenigi rubujon">
+<!ENTITY emptyTrashCmd.accesskey "l">
+<!ENTITY offlineMenu.label "Malkonekta reĝimo">
+<!ENTITY offlineMenu.accesskey "t">
 <!ENTITY offlineGoOfflineCmd.label "Work Offline">
 <!ENTITY offlineGoOfflineCmd.accesskey "w">
 <!ENTITY synchronizeOfflineCmd.label "Download/Sync Now…">
@@ -164,7 +172,6 @@
 <!ENTITY compactVersion.accesskey "C">
 <!ENTITY folderPaneBar.label "Folder Pane Toolbar">
 <!ENTITY folderPaneBar.accesskey "F">
-<!ENTITY folderModeSelector.label "Folder Views">
 
 <!-- Sort Menu -->
 <!ENTITY sortMenu.label "Sort by">
@@ -584,7 +591,6 @@
 <!ENTITY compactButton.tooltip "Remove deleted messages from selected folder">
 <!ENTITY appmenuButton1.tooltip "Display the &brandShortName; Menu">
 
-
 <!-- Toolbar Button Popup -->
 <!ENTITY buttonMenuForwardAsInline.label "Forward Inline">
 <!ENTITY buttonMenuForwardAsAttachment.label "Forward As Attachment">
@@ -939,3 +945,5 @@
 
 <!-- Mac OS X Dock Icon pop-up menu -->
 <!ENTITY dockOptions.label              "App Icon Options…">
+
+<!-- Content tab Navigation buttons -->

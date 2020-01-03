@@ -17,7 +17,7 @@ profiles-flush-restart-button = Reinitiar { -brand-short-name }
 #   $name (String) - Name of the profile
 profiles-name = Profilo: { $name }
 profiles-is-default = Profilo predefinite
-profiles-rootdir = Directorio de radice
+profiles-rootdir = Directorio radice
 # localDir is used to show the directory corresponding to
 # the main profile directory that exists for the purpose of storing data on the
 # local filesystem, including cache files or other data files that may not
@@ -25,11 +25,11 @@ profiles-rootdir = Directorio de radice
 # part of a backup scheme.)
 # In case localDir and rootDir are equal, localDir is not shown.
 profiles-localdir = Directorio local
-profiles-current-profile = Iste profilo es in uso e illo non pote ser delite.
-profiles-in-use-profile = Iste profilo es in uso in un altere application e illo non pote ser delite.
+profiles-current-profile = Iste profilo es in uso e non pote esser delite.
+profiles-in-use-profile = Iste profilo es in uso in un altere application e non pote esser delite.
 profiles-rename = Renominar
 profiles-remove = Remover
-profiles-set-as-default = Definir un profilo predefinite
+profiles-set-as-default = Marcar como profilo predefinite
 profiles-launch-profile = Lancear le profilo in un nove navigator
 profiles-cannot-set-as-default-title = Impossibile configurar le parametros
 profiles-cannot-set-as-default-message = Le profilo predefinite non pote ser cambiate pro { -brand-short-name }.
@@ -42,14 +42,14 @@ profiles-rename-profile = Renominar le profilo { $name }
 profiles-invalid-profile-name-title = Nomine de profilo invalide
 # Variables:
 #   $name (String) - Name of the profile
-profiles-invalid-profile-name = Le nomine de profilo “{ $name }” non es consentite.
+profiles-invalid-profile-name = Le nomine de profilo “{ $name }” non es permittite.
 profiles-delete-profile-title = Deler le profilo
 # Variables:
 #   $dir (String) - Path to be displayed
 profiles-delete-profile-confirm =
-    Le deler del profilo lo removera del lista de profilos disponibile e es irreversibile.
-    Tu pote optar pro deler tamben le files de datos del profilo, includente tu parametros, certificatos e altere datos personal. Iste option delera le dossier “{ $dir }” e es irreversibile.
-    Desira tu deler le files de datos del profilo?
+    Deler un profilo lo removera del lista de profilos e es irreversibile.
+    Tu pote etiam optar pro deler le files del profilo, incluse tu parametros, certificatos e altere datos personal. Iste option destruera le dossier “{ $dir }” e es irreversibile.
+    Vole tu deler le files de datos del profilo?
 profiles-delete-files = Deler files
 profiles-dont-delete-files = Non deler le files
 profiles-delete-profile-failed-title = Error

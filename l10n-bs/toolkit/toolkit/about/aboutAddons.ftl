@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Upravnik add-onima
+addons-page-title = Upravnik add-onima
 search-header-shortcut =
     .key = f
 loading-label =
@@ -240,3 +241,5 @@ addon-open-about-debugging = Debagiranje add-ona
 
 ## Page headings
 
+addon-page-options-button =
+    .title = Alati za sve add-one

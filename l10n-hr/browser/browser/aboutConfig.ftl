@@ -4,8 +4,8 @@
 
 # An old map warning, see https://en.wikipedia.org/wiki/Here_be_dragons
 about-config-warning-title = Ovdje su zmajevi!
-about-config-warning-text = Mijenjanje ovih naprednih postavki može biti štetno za stabilnost, sigurnost i učinak ovog programa. Nastavite samo ako znate što radite.
-about-config-warning-checkbox = Ponovno mi dosađujte s ovom porukom, molim vas!
+about-config-warning-text = Mijenjanje ovih naprednih postavki može biti štetno za stabilnost, sigurnost i učinak ovog programa. Nastavi samo ako znaš što radiš.
+about-config-warning-checkbox = Upozoravaj me ponovo!
 about-config-warning-button = Prihvaćam rizik
 about-config2-title = Napredne postavke
 about-config-search-input =
@@ -14,14 +14,14 @@ about-config-search-input =
 ## These strings appear on the warning you see when first visiting about:config.
 
 about-config-intro-warning-title = Nastavi oprezno
-about-config-intro-warning-text = Mijenjanje naprednih postavki konfiguracije može utjecati na perfomancu ili sigurnost od { -brand-short-name }.
+about-config-intro-warning-text = Mijenjanje naprednih postavki konfiguracije može utjecati na { -brand-short-name } perfomancu ili sigurnost.
 about-config-intro-warning-checkbox = Upozori me pri pokušaju pristupanja ovim postavkama
 about-config-intro-warning-button = Prihvati rizik i nastavi
 
 
 
 # This is shown on the page before searching but after the warning is accepted.
-about-config-caution-text = Mijenjanje ovih postavki može utjecati na perfomancu ili sigurnost od { -brand-short-name }.
+about-config-caution-text = Mijenjanje ovih postavki može utjecati na perfomanse ili sigurnost programa { -brand-short-name }.
 about-config-page-title = Napredne postavke
 about-config-search-input1 =
     .placeholder = Traži naziv postavke

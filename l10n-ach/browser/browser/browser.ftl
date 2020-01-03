@@ -2,6 +2,37 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This is the default window title in case there is no content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+browser-main-window-title =
+    { $mode ->
+        [private] { -brand-full-name } (Yeny i mung)
+       *[default] { -brand-full-name }
+    }
+# This is the default window title in case there is a content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Example Title - Mozilla Firefox"
+# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+#   $title (String) - Content title string.
+browser-main-window-content-title =
+    { $mode ->
+        [private] { $title } - { -brand-full-name } (Yeny i mung)
+       *[default] { $title } - { -brand-full-name }
+    }
 urlbar-identity-button =
     .aria-label = Nen ngec ikom kakube
 
@@ -39,6 +70,8 @@ urlbar-autoplay-notification-anchor =
     .tooltiptext = Yab dirica me tuko pire kene
 urlbar-addons-notification-anchor =
     .tooltiptext = Yab dirica me kwena pi keto med-ikome
+urlbar-tip-help-icon =
+    .title = Nong kony
 urlbar-geolocation-blocked =
     .tooltiptext = Igengo woko ngec me kabedo pi kakube man.
 urlbar-web-notifications-blocked =
@@ -89,3 +122,13 @@ search-one-offs-context-open-new-tab =
 search-one-offs-context-set-as-default =
     .label = Ter calo Ingin me yeny makwongo
     .accesskey = m
+
+## Bookmark Panel
+
+bookmark-panel-done-button =
+    .label = Otum
+# Width of the bookmark panel.
+# Should be large enough to fully display the Done and
+# Cancel/Remove Bookmark buttons.
+bookmark-panel =
+    .style = min-width: 23em

@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Handter tillegg
+addons-page-title = Handter tillegg
 search-header =
     .placeholder = Søk på addons.mozilla.org
     .searchbuttonlabel = Søk
@@ -348,6 +349,10 @@ remove-addon-disabled-button = Kan ikkje fjernast <a data-l10n-name="link">Kvifo
 disable-addon-button = Slå av
 enable-addon-button = Slå på
 expand-addon-button = Fleire alternativ
+# This is used for the toggle on the extension card, it's a checkbox and this
+# is always its label.
+extension-enable-addon-button-label =
+    .aria-label = Aktiver
 preferences-addon-button =
     { PLATFORM() ->
         [windows] Innstillingar
@@ -451,5 +456,8 @@ discover-heading = Tilpass { -brand-short-name }
 shortcuts-heading = Handter snarvegar for utvidingar
 theme-heading-search-label = Finn fleire tema
 extension-heading-search-label = Finn fleire utvidingar
+default-heading-search-label = Finn fleire tillegg
 addons-heading-search-input =
     .placeholder = Søk på addons.mozilla.org
+addon-page-options-button =
+    .title = Verktøy for alle tillegg

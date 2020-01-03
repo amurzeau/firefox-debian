@@ -13,24 +13,24 @@ about-private-browsing-info-title = Nalazite se u privatnom prozoru
 about-private-browsing-info-searches = pretraživanja
 about-private-browsing-info-downloads = preuzimanja
 private-browsing-title = Privatno pregledavanje
-about-private-browsing-info-saved = { -brand-short-name } <strong>će spremiti</strong> vaša:
+about-private-browsing-info-saved = { -brand-short-name } <strong>će spremiti</strong> tvoja:
 about-private-browsing-info-myths = Česti mitovi o privatnom pregledavanju
 about-private-browsing-info-clipboard = kopirani tekst
 about-private-browsing-info-temporary-files = privremene datoteke
 about-private-browsing-info-cookies = kolačiće
 tracking-protection-start-tour = Pogledajte kako ovo funkcionira
-about-private-browsing-note = Privatno pregledavanje <strong>vas ne čini anonimnim</strong> na Internetu. Vaš poslodavac ili pružatelj Internet usluga svejedno može pratiti koje stranice posjećujete.
+about-private-browsing-note = Privatno pregledavanje <strong>te ne čini anonimnim</strong> na Internetu. Tvoj poslodavac ili pružatelj Internet usluga svejedno može pratiti koje stranice posjećuješ.
 about-private-browsing =
     .title = Pretraži web
 about-private-browsing-not-private = Trenutno niste u privatnom prozoru.
 content-blocking-title = Blokiranje sadržaja
-content-blocking-description = Neke web stranice koriste skripte za praćenje koje nadgledaju vašu aktivnost diljem Interneta. U privatnom načinu, { -brand-short-name } blokiranje sadržaja automatski blokira mnoge skripte za praćenje koje bi mogle prikupljati informacije o vašem pregledavanju.
-about-private-browsing-info-description = { -brand-short-name } čisti vašu povijest pretraživanja i pregledavanja kada izađete iz aplikacije ili zatvorite sve kartice i prozore privatnog pregledavanja. Ovo vas ne čini anonimnim prema web stranicama ili vašem pružatelju internet usluga, ali znatno smanjuje mogućnost praćenja i olakšava da zadržite privatnim što radite na internetu od ostalih osoba koje koriste ovo računalo.
+content-blocking-description = Neke web stranice koriste skripte za praćenje koje nadgledaju tvoju aktivnost diljem Interneta. U privatnom načinu, { -brand-short-name } blokiranje sadržaja automatski blokira mnoge skripte za praćenje koje bi mogle prikupljati informacije o tvom pregledavanju.
+about-private-browsing-info-description = { -brand-short-name } čisti tvoju kronologiju pretraživanja i pregledavanja kad izađeš iz aplikacije ili kad zatvoriš sve kartice i prozore privatnog pregledavanja. Ovo te ne čini anonimnim prema web stranicama ili tvom pružatelju internet usluga, ali znatno smanjuje mogućnost praćenja i olakšava da zadržiš privatnim ono što radiš na internetu od ostalih osoba koje koriste ovo računalo.
 # This string is the title for the banner for search engine selection
 # in a private window.
 # Variables:
 #   $engineName (String) - The engine name that will currently be used for the private window.
-about-private-browsing-search-banner-title = { $engineName } je vaš zadani pretraživač u Privatnom pretraživanju
+about-private-browsing-search-banner-title = { $engineName } je tvoj standardni pretraživač u privatnim prozorima
 about-private-browsing-search-banner-description =
     { PLATFORM() ->
         [windows] Za odabira drugog pretraživača idite na <a data-l10n-name="link-options">Mogućnosti</a>

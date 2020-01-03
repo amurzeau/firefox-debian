@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Add-ons Manager
+addons-page-title = Add-ons Manager
 search-header-shortcut =
     .key = f
 loading-label =
@@ -236,3 +237,5 @@ addon-open-about-debugging = အတ်အွန်များကို အမ�
 
 ## Page headings
 
+addon-page-options-button =
+    .title = အတ်အွန်အားလုံးအတွက် အသုံးချပစ္စည်းများ

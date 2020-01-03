@@ -75,16 +75,32 @@
 <!ENTITY unknownProtocolFound.longDesc "<ul> <li>Možda ćete trebali instalirati drugi program da biste mogli otvoriti ovu adresu.</li> </ul>">
 
 <!ENTITY proxyConnectFailure.title "Proxy poslužitelj odbio vezu">
-<!ENTITY proxyConnectFailure.longDesc "<ul> <li>Provjerite proxy postavke i potvrdite da su ispravne.</li> <li>Kontaktirajte vašeg administratora mreže i provjerite da je proxy poslužitelj funkcionalan.</li> </ul>">
+<!ENTITY proxyConnectFailure.longDesc "
+<ul>
+  <li>Provjeri proxy postavke i potvrdi da su ispravne.</li>
+  <li>Kontaktiraj administratora mreže i provjeri da je proxy poslužitelj radi.</li>
+</ul>
+">
 
 <!ENTITY proxyResolveFailure.title "Proxy poslužitelj nije pronađen">
-<!ENTITY proxyResolveFailure.longDesc "<ul> <li>Provjerite postavke za proxy.</li> <li>Provjerite ima li vaše računalo ispravnu vezu prema mreži.</li> <li>Ako je vaše računalo zaštićeno vatrozidom ili proxyem, provjerite ima li &brandShortName; dozvolu za pristupanje Webu.</li> </ul>">
+<!ENTITY proxyResolveFailure.longDesc "
+<ul>
+  <li>Provjeri postavke za proxy.</li>
+  <li>Provjeri ima li tvoje računalo ispravnu vezu s mrežom.</li>
+  <li>Ako je tvoje računalo zaštićeno vatrozidom ili proxyem, provjeri ima li &brandShortName; dozvolu za pristupanje webu.</li>
+</ul>
+">
 
 <!ENTITY redirectLoop.title "Petlja preusmjeravanja">
 <!ENTITY redirectLoop.longDesc "<ul> <li>Ovaj problem ponekad može biti uzrokovan isključivanjem ili odbijanjemprimanja kolačića.</li> </ul>">
 
 <!ENTITY unknownSocketType.title "Neočekivani odgovor od poslužitelja">
-<!ENTITY unknownSocketType.longDesc "<ul> <li>Provjerite  ima li vaše računalo instaliran &quot;Personal Security Manager&quot; </li> <li>Moguće da je greška povezana s neuobičajenim postavkama servera.</li> </ul>">
+<!ENTITY unknownSocketType.longDesc "
+<ul>
+  <li>Provjeri ima li tvoje računalo instaliran Personal Security Manager.</li>
+  <li>Moguće da je greška povezana s neuobičajenim postavkama servera.</li>
+</ul>
+">
 
 <!ENTITY nssFailure2.title "Neuspjeh otvaranja sigurne veze">
 <!ENTITY nssFailure2.longDesc2 "<ul> <li>Stranica koju pokušavate otvoriti ne može biti prikazana jer autentičnost primljenih podataka nije moguće provjeriti.</li> <li>Kontaktirajte vlasnike stranice, te ih obavijestite o ovom problemu.</li> </ul>">
@@ -94,11 +110,11 @@
 <!-- Localization note (certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
-<!ENTITY certerror.introPara2 "&brandShortName; je otkrio potencijalnu prijetnju sigurnosti i nije nastavio na <span class='hostname'/>. Ukoliko posjetite ovu web stranicu, napadači mogu pokušati ukrasti informacije kao što su vaše lozinke, e-poruke ili podatke kreditne kartice.">
+<!ENTITY certerror.introPara2 "&brandShortName; je otkrio potencijalnu prijetnju sigurnosti i nije nastavio na <span class='hostname'/>. Ukoliko posjetiš ovu web stranicu, napadači mogu pokušati ukrasti informacije kao što su tvoje lozinke, e-poruke ili podatke kreditne kartice.">
 <!ENTITY certerror.sts.introPara "&brandShortName; je otkrio potencijalnu prijetnju sigurnosti i nije nastavio na <span class='hostname'/> iz razloga što ova stranica zahtjeva sigurnu vezu.">
 
-<!ENTITY certerror.expiredCert.introPara "&brandShortName; je otkrio potencijalnu prijetnju sigurnosti i nije nastavio na <span class='hostname'/>. Ova web stranica je pogrešno konfigurirana ili je sat vašeg računala postavljen na pogrešno vrijeme.">
-<!ENTITY certerror.expiredCert.secondPara2 "Vjerojatno je certifikat web stranice istekao, što sprječava &brandShortName; da se sigurno poveže. Ukoliko posjetite ovu web stranicu, napadači mogu pokušati ukrasti informacije kao što su vaše lozinke, e-poruke ili podatke kreditne kartice.">
+<!ENTITY certerror.expiredCert.introPara "&brandShortName; je otkrio potencijalnu prijetnju sigurnosti i nije nastavio na <span class='hostname'/>. Ova web stranica je pogrešno konfigurirana ili je sat tvog računala postavljen na pogrešno vrijeme.">
+<!ENTITY certerror.expiredCert.secondPara2 "Vjerojatno je certifikat web stranice istekao, što sprečava &brandShortName; da se sigurno poveže. Ukoliko posjetiš ovu web stranicu, napadači mogu pokušati ukrasti informacije kao što su tvoje lozinke, e-poruke ili podatke kreditne kartice.">
 <!ENTITY certerror.expiredCert.sts.secondPara "Vjerojatno je certifikat web stranice istekao, što sprječava &brandShortName; da se sigurno poveže.">
 
 <!ENTITY certerror.whatCanYouDoAboutItTitle "Što možete učiniti?">
@@ -109,15 +125,15 @@ was trying to connect. -->
 ">
 
 <!ENTITY certerror.expiredCert.whatCanYouDoAboutIt2 "
-<p>Sat vašeg računala je postavljen na <span id='wrongSystemTime_systemDate2'/>. Provjerite da li je vaše računalo postavljeno na ispravan datum, vrijeme i vremensku zonu u postavkama sustava i onda osvježite <span class='hostname'/>.</p>
-<p>Ukoliko je vaš sat već postavljen na ispravno vrijeme, web stranica je vjerojatno pogrešno konfigurirana i ne možete ništa učiniti kako biste riješili ovaj problem. Možete obavijestiti administratora web stranice o ovom problemu.</p>
+<p>Sat tvog računala je postavljen na <span id='wrongSystemTime_systemDate2'/>. Provjeri da li je tvoje računalo postavljeno na ispravan datum, vrijeme i vremensku zonu u postavkama sustava i onda osvježi <span class='hostname'/>.</p>
+<p>Ukoliko je tvoj sat već postavljen na ispravno vrijeme, web stranica je vjerojatno pogrešno konfigurirana i ne možeš ništa učiniti kako bi se riješio ovaj problem. Možeš obavijestiti administratora web stranice o ovom problemu.</p>
 ">
 
 <!ENTITY certerror.badCertDomain.whatCanYouDoAboutIt "
 <p>Problem je najvjerojatnije povezan s web stranicom i ne možete ništa učiniti da biste ga riješili. Možete obavijestiti administratora web stranice o ovom problemu.</p>
 ">
 
-<!ENTITY sharedLongDesc "<ul> <li>Ova je stranica privremeno nedostupna ili prezauzeta. Pokušajte ponovno za nekoliko trenutaka.</li> <li>Ako ne možete učitati niti jednu stranicu, provjerite mrežne postavke vašeg računala.</li> <li>Ako je vaše računalo ili mreža zaštićena vatrozidom ili proxyem, provjerite ima li &brandShortName; dozvolu pristupiti Internetu.</li> </ul>">
+<!ENTITY sharedLongDesc "<ul> <li>Ova je stranica privremeno nedostupna ili prezauzeta. Pokušaj ponovo za nekoliko trenutaka.</li> <li>Ako ne možeš učitati niti jednu stranicu, provjeri mrežne postavke tvog računala.</li> <li>Ako je tvoje računalo ili mreža zaštićena vatrozidom ili proxyem, provjeri ima li &brandShortName; dozvolu pristupiti Internetu.</li> </ul>">
 
 <!ENTITY cspBlocked.title "Blokirala sigurnosna politika sadržaja">
 <!ENTITY cspBlocked.longDesc "<p>&brandShortName; je sprječio učitavanje stranice na ovaj način jer stranica ima sigurnosnu politiku sadržaja koja to zabranjuje..</p>">
@@ -146,7 +162,7 @@ was trying to connect. -->
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'></span> provodi sigurnosnu politiku koja se zove HTTP Strict Transport Security (HSTS), što znači da se &brandShortName; može s njom samo sigurno povezati. Ne možete dodati sigurnosnu iznimku kako biste posjetili ovu web stranicu.">
 <!ENTITY certerror.copyToClipboard.label "Kopiraj tekst u međuspremnik">
 
-<!ENTITY inadequateSecurityError.title "Vaša veza nije sigurna">
+<!ENTITY inadequateSecurityError.title "Tvoja veza nije sigurna">
 <!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
      "NS_ERROR_NET_INADEQUATE_SECURITY". -->
 <!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> koristi sigurnosne tehnologije koje su zastarjele i podložne napadima. Napadač može jednostavno otkriti informacije za koje ste smatrali da su sigurne. Administrator web stranice će trebati popraviti poslužitelj prije nego možete posjetiti stranicu.</p><p>Kod greške: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
@@ -154,19 +170,19 @@ was trying to connect. -->
 <!ENTITY blockedByPolicy.title "Blokirana stranica">
 
 <!ENTITY certerror.mitm.title "Program spriječava &brandShortName; da se sigurno poveže s ovom stranicom">
-<!ENTITY certerror.mitm.longDesc "<span class='hostname'></span> je vjerojatno sigurna stranica, ali se ne može uspostaviti sigurna veza s njom. Ovaj problem je uzrokovan od strane <span class='mitm-name'/>, koji je ili program na vašem računalu ili vašoj mreži.">
-<!ENTITY certerror.mitm.whatCanYouDoAboutIt1 "Ukoliko vaš antivirusni program uključuje mogućnost skeniranja sigurnih veza (koje se često zove “web skeniranje” ili “https skeniranje”), možete isključiti ovu mogućnost. Ukoliko to ne riješi problem, možete ukloniti i ponovno instalirati antivirusni program.">
+<!ENTITY certerror.mitm.longDesc "<span class='hostname'></span> je vjerojatno sigurna stranica, ali se ne može uspostaviti sigurna veza s njom. Ovaj problem je uzrokovan od strane <span class='mitm-name'/>, koji je ili program na tvom računalu ili tvojoj mreži.">
+<!ENTITY certerror.mitm.whatCanYouDoAboutIt1 "Ukoliko tvoj antivirusni program uključuje mogućnost skeniranja sigurnih veza (koje se često zove “web skeniranje” ili “https skeniranje”), možeš isključiti ovu mogućnost. Ukoliko to ne riješi problem, možeš ukloniti i ponovo instalirati antivirusni program.">
 <!ENTITY certerror.mitm.whatCanYouDoAboutIt2 "Ukoliko se nalazite u korporativnoj mreži, možete kontaktirati svoj IT odjel.">
 <!ENTITY certerror.mitm.whatCanYouDoAboutIt3 "Ukoliko vam <span class='mitm-name'/> nije poznata, ovo bi možda mogao biti napad i ne biste trebali nastaviti na tu stranicu.">
 <!ENTITY certerror.mitm.sts.whatCanYouDoAboutIt3 "Ukoliko vam <span class='mitm-name'/> nije poznata, ovo bi možda mogao biti napad i ne možete ništa učiniti kako biste pristupili stranici.">
 
 <!ENTITY clockSkewError.title "Sat na računalu je pogrešan">
-<!ENTITY clockSkewError.longDesc "Vaše računalo misli da je <span id='wrongSystemTime_systemDate1'/>, što spriječava &brandShortName; da se sigurno poveže. Kako biste posjetili <span class='hostname'></span>, ažurirajte sat vašeg računala na trenutni datum, vrijeme i vremensku zonu, te onda osvježite <span class='hostname'></span>.">
+<!ENTITY clockSkewError.longDesc "Tvoje računalo misli da je <span id='wrongSystemTime_systemDate1'/>, što sprečava &brandShortName; da se sigurno poveže. Za posjećivanje poslužitelja <span class='hostname'></span>, ažuriraj sat tvog računala na trenutačni datum, vrijeme i vremensku zonu te onda osvježi <span class='hostname'></span>.">
 
-<!ENTITY prefReset.longDesc "Izgleda da vaše postavke sigurnosti mreže možda uzrokuju ovo. Želite li vratiti na početne postavke?">
+<!ENTITY prefReset.longDesc "Izgleda da tvoje postavke sigurnosti mreže možda ovo uzrokuju. Želiš li vratiti standardne postavke?">
 <!ENTITY prefReset.label "Vrati početne postavke">
 
-<!ENTITY enableTls10.longDesc "Ova web stranica ne podržava TLS 1.2 protokol, koji je minimalni podržani protokol od strane &brandShortName;. Omogućavanje TLS 1.0 i TLS 1.1 protokola će možda omogućiti povezivanje, ali će ugroziti vašu sigurnost.">
+<!ENTITY enableTls10.longDesc "Ova web stranica ne podržava TLS 1.2 protokol, koji je minimalni podržani protokol od strane &brandShortName;. Omogućavanje TLS 1.0 i TLS 1.1 protokola će možda omogućiti povezivanje, ali će ugroziti tvoju sigurnost.">
 <!ENTITY enableTls10.note "TLS 1.0 i TLS 1.1 će biti trajno onemogućeni u budućim izdanjima.">
 <!ENTITY enableTls10.label "Omogući TLS 1.0 i 1.1">
 

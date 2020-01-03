@@ -56,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = Apri il pannello dei messaggi
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Apri il pannello con l’indirizzo della richiesta
+urlbar-xr-notification-anchor =
+    .tooltiptext = Apri il pannello dei permessi per la realtà virtuale
 urlbar-storage-access-anchor =
     .tooltiptext = Apri il pannello relativo ai permessi per la navigazione
 urlbar-translate-notification-anchor =
@@ -82,6 +84,8 @@ urlbar-tip-help-icon =
     .title = Ottieni assistenza
 urlbar-geolocation-blocked =
     .tooltiptext = Il rilevamento della posizione è bloccato per questo sito web.
+urlbar-xr-blocked =
+    .tooltiptext = L’accesso ai dispositivi per realtà virtuale è bloccato per questo sito web.
 urlbar-web-notifications-blocked =
     .tooltiptext = Le notifiche sono bloccate per questo sito web.
 urlbar-camera-blocked =
@@ -141,3 +145,16 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Imposta come motore di ricerca predefinito in finestre anonime
     .accesskey = a
+
+## Bookmark Panel
+
+bookmark-panel-show-editor-checkbox =
+    .label = Visualizza editor quando si salva
+    .accesskey = V
+bookmark-panel-done-button =
+    .label = Fatto
+# Width of the bookmark panel.
+# Should be large enough to fully display the Done and
+# Cancel/Remove Bookmark buttons.
+bookmark-panel =
+    .style = min-width: 28em

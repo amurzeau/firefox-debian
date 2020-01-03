@@ -134,6 +134,16 @@ permissions-site-location-disable-label =
     .label = Blokker nye førespurnadar som ber om tilgang til plasseringa di
 permissions-site-location-disable-desc = Dette hindrar nettstadar som ikkje er førte opp ovanfor, og ber om løyve til å få tilgang til posisjonen din. Viss du blokkerer tilgang til posisjonen din, kan det hende at nokre nettstadfunksjonar ikkje vil fungere.
 
+## Site Permissions - Virtual Reality
+
+permissions-site-xr-window =
+    .title = Innstillingar - Løyve for virtuell røyndom
+    .style = { permissions-window.style }
+permissions-site-xr-desc = Følgjande nettstadar har bedt om tilgang til den virtuelle røyndomseininga di. Du kan spesifisere kva for nettstadar som får tilgang til den virtuelle røyndomseininga di. Du kan også blokkere nye førespurnadar som ber om tilgang til den virtuelle røyndomseininga di.
+permissions-site-xr-disable-label =
+    .label = Blokker nye førespurnadar som ber om tilgang til den virtuelle røyndomseininga di.
+permissions-site-xr-disable-desc = Dette findrar nettstadar som ikkje er oppførte ovanfor, og ber om løyve til å få tilgang til den virtuelle røyndomseininga di. Dersom du blokkerer tilgang til den virtuelle røyndomseininga di, kan det hende at nokre nettstadfunksjonar ikkje vil fungere.
+
 ## Site Permissions - Camera
 
 permissions-site-camera-window =

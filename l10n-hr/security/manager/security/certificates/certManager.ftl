@@ -5,14 +5,14 @@
 certmgr-title =
     .title = Upravljač certifikata
 certmgr-tab-mine =
-    .label = Vaši certifikati
+    .label = Tvoji certifikati
 certmgr-tab-people =
     .label = Osobe
 certmgr-tab-servers =
     .label = Poslužitelji
 certmgr-tab-ca =
     .label = Agencije
-certmgr-mine = Imate certifikate sljedećih organizacija koje vas identificiraju
+certmgr-mine = Imaš certifikate sljedećih organizacija koje te identificiraju
 certmgr-people = Imate certifikate na datoteci koji identificiraju sljedeće osobe
 certmgr-servers = Imate certifikate na datoteci koji identificiraju sljedeće poslužitelje
 certmgr-ca = Imate certifikate na datoteci koji identificiraju sljedeće nadležne agencije
@@ -108,7 +108,7 @@ exception-mgr =
 exception-mgr-extra-button =
     .label = Potvrdi sigurnosnu iznimku
     .accesskey = r
-exception-mgr-supplemental-warning = Legitimne banke, trgovine i ostale javne stranice vas neće tražiti da ovo učinite.
+exception-mgr-supplemental-warning = Legitimne banke, trgovine i ostale javne stranice te neće tražiti da ovo učiniš.
 exception-mgr-cert-location-url =
     .value = Lokacija:
 exception-mgr-cert-location-download =
@@ -149,7 +149,7 @@ edit-trust-ca = Certifikat "{ $certName }" predstavlja agenciju certifikata.
 ## For Deleting Certificates
 
 delete-user-cert-title =
-    .title = Obrišite vaše certifikate
+    .title = Izbriši svoje certifikate
 delete-user-cert-confirm = Jeste li sigurni da želite obrisati ove certifikate?
 delete-user-cert-impact = Ako obrišete jedan od vlastitih certifikata, više ga nećete moći koristiti za identifikaciju.
 delete-ssl-cert-title =

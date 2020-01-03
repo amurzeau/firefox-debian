@@ -21,6 +21,8 @@
 <!ENTITY attachFileCmd.label "File(s)…">
 <!ENTITY attachFileCmd.accesskey "F">
 <!ENTITY attachFileCmd.key "A">
+<!ENTITY attachCloudCmd.label "Filelink">
+<!ENTITY attachCloudCmd.accesskey "i">
 <!ENTITY attachPageCmd.label "Pagina web…">
 <!ENTITY attachPageCmd.accesskey "w">
 <!--LOCALIZATION NOTE attachVCardCmd.label Don't translate the term 'vCard' -->
@@ -38,8 +40,8 @@
 <!ENTITY saveAsCmd.accesskey "c">
 <!ENTITY saveAsFileCmd.label "File…">
 <!ENTITY saveAsFileCmd.accesskey "F">
-<!ENTITY saveAsDraftCmd.label "Minuta">
-<!ENTITY saveAsDraftCmd.accesskey "M">
+<!ENTITY saveAsDraftCmd.label "Esbosso">
+<!ENTITY saveAsDraftCmd.accesskey "E">
 <!ENTITY saveAsTemplateCmd.label "Modello">
 <!ENTITY saveAsTemplateCmd.accesskey "M">
 <!ENTITY sendNowCmd.label "Inviar ora">
@@ -86,7 +88,7 @@
 <!ENTITY reorderAttachmentsCmd.label "Reordinar annexos…">
 <!ENTITY reorderAttachmentsCmd.accesskey "x">
 <!ENTITY reorderAttachmentsCmd.key "x">
-<!ENTITY toggleAttachmentPaneCmd.label "Quadro de annexos">
+<!ENTITY toggleAttachmentPaneCmd.label "Pannello de annexos">
 <!-- LOCALIZATION NOTE (toggleAttachmentPaneCmd.accesskey):
      For better mnemonics, toggleAttachmentPaneCmd.accesskey should be the same
      as attachments.accesskey. -->
@@ -166,11 +168,27 @@
 <!ENTITY checkSpellingCmd2.accesskey "h">
 <!ENTITY enableInlineSpellChecker.label "Corrector orthographic durante que tu scribe">
 <!ENTITY enableInlineSpellChecker.accesskey "C">
+<!ENTITY quoteCmd.label "Citar le message">
+<!ENTITY quoteCmd.accesskey "C">
 
 <!--LOCALIZATION NOTE attachVCard.label Don't translate the term 'vCard' -->
+<!ENTITY attachVCard.label "Annexar vCard">
+<!ENTITY attachVCard.accesskey "v">
 
 <!ENTITY returnReceiptMenu.label "Recepta de retorno">
 <!ENTITY returnReceiptMenu.accesskey "t">
+<!ENTITY dsnMenu.label "Aviso de stato de consignation">
+<!ENTITY dsnMenu.accesskey "c">
+<!ENTITY deliveryFormatMenu.label "Formato de consignation">
+<!ENTITY deliveryFormatMenu.accesskey "F">
+<!ENTITY autoFormatCmd.label "Detectar automaticamente">
+<!ENTITY autoFormatCmd.accesskey "a">
+<!ENTITY plainTextFormatCmd.label "Solo texto">
+<!ENTITY plainTextFormatCmd.accesskey "t">
+<!ENTITY htmlFormatCmd.label "Solo Rich Text (HTML)">
+<!ENTITY htmlFormatCmd.accesskey "s">
+<!ENTITY bothFormatCmd.label "Texto ambe formatos (simple e HTML)">
+<!ENTITY bothFormatCmd.accesskey "a">
 <!ENTITY priorityMenu.label "Prioritate">
 <!ENTITY priorityMenu.accesskey "p">
 <!ENTITY priorityButton.title "Prioritate">
@@ -186,8 +204,22 @@
 <!ENTITY highPriorityCmd.accesskey "i">
 <!ENTITY highestPriorityCmd.label "Plus alte">
 <!ENTITY highestPriorityCmd.accesskey "H">
+<!ENTITY fileCarbonCopyCmd.label "Inviar un copia a">
+<!ENTITY fileCarbonCopyCmd.accesskey "v">
+<!ENTITY fileHereMenu.label "Archivar ci">
 
 <!-- Tools Menu -->
+<!ENTITY tasksMenu.label "Utensiles">
+<!ENTITY tasksMenu.accesskey "U">
+<!ENTITY messengerCmd.label "Posta e gruppos">
+<!ENTITY messengerCmd.accesskey "p">
+<!ENTITY messengerCmd.commandkey "1">
+<!ENTITY addressBookCmd.label "Libro del adresses">
+<!ENTITY addressBookCmd.accesskey "a">
+<!ENTITY addressBookCmd.key "L">
+<!ENTITY accountManagerCmd2.label "Parametros del conto">
+<!ENTITY accountManagerCmd2.accesskey "P">
+<!ENTITY accountManagerCmdUnix2.accesskey "P">
 <!ENTITY preferencesCmd2.label "Optiones">
 <!ENTITY preferencesCmd2.accesskey "O">
 <!ENTITY preferencesCmdUnix.label "Preferentias">
@@ -205,6 +237,7 @@
 <!ENTITY quoteButton.label "Citar">
 <!ENTITY addressButton.label "Contactos">
 <!ENTITY attachButton.label "Annexar">
+<!ENTITY spellingButton.label "Orthographia">
 <!ENTITY saveButton.label "Salvar">
 <!ENTITY printButton.label "Imprimer">
 
@@ -212,6 +245,7 @@
 <!ENTITY sendButton.tooltip "Inviar iste message ora">
 <!ENTITY sendlaterButton.tooltip "Inviar iste message plus tarde">
 <!ENTITY quoteButton.tooltip "Citar le previe message">
+<!ENTITY addressButton.tooltip "Sectionar un destinatario ex le libro de adresses">
 <!ENTITY attachButton.tooltip2 "Adder annexo">
 <!ENTITY spellingButton.tooltip "Verificar orthographia del selection o del message">
 <!ENTITY saveButton.tooltip "Salvar iste message">
@@ -225,11 +259,25 @@
     Subject: rows. It should be larger than the largest Header label  -->
 <!ENTITY headersSpace.style "width: 9em;">
 <!ENTITY fromAddr.label "De:">
+<!--LOCALIZATION NOTE headersSpaces.style is for aligning  the From:, To: and
+    Subject: rows. It should be larger than the largest Header label  -->
+<!ENTITY headersSpace2.style "width: 8em;">
+<!ENTITY fromAddr2.label "De">
 <!ENTITY fromAddr.accesskey "e">
 <!ENTITY toAddr.label "A:">
 <!ENTITY ccAddr.label "Cc:">
+<!ENTITY bccAddr.label "Ccn:">
 <!ENTITY replyAddr.label "Responder a:">
+<!ENTITY newsgroupsAddr.label "Gruppo:">
+<!ENTITY followupAddr.label "Facer sequer a:">
 <!ENTITY subject.label "Subjecto:">
+<!ENTITY toAddr2.label "A">
+<!ENTITY ccAddr2.label "CC">
+<!ENTITY bccAddr2.label "Ccn">
+<!ENTITY replyAddr2.label "Responder a">
+<!ENTITY newsgroupsAddr2.label "Gruppo de discussion">
+<!ENTITY followupAddr2.label "Facer sequer a">
+<!ENTITY subject2.label "Subjecto">
 <!ENTITY subject.accesskey "S">
 <!-- LOCALIZATION NOTE (attachments.accesskey) This access key character should
      be taken from the strings of attachmentCount in composeMsgs.properties.
@@ -237,15 +285,39 @@
      first-level access keys of the compose window, e.g. those of main menu,
      buttons, or labels (message headers, contacts side bar, attachment reminder
      bar). -->
+<!ENTITY attachments.accesskey "x">
+<!ENTITY attachmentBucketHeader.tooltip "Pannello de annexos">
+<!ENTITY attachmentBucketCloseButton.tooltip "Celar le pannello de annexos">
 
 <!-- Format Toolbar, imported from editorAppShell.xul -->
+<!ENTITY SmileButton.tooltip "Inserer un facie surridente">
+<!ENTITY smiley1Cmd.label "Surriso">
+<!ENTITY smiley2Cmd.label "Corrugation del fronte">
 <!ENTITY smiley3Cmd.label "Palpebration">
+<!ENTITY smiley4Cmd.label "Lingua de foras">
+<!ENTITY smiley5Cmd.label "Ridente">
+<!ENTITY smiley6Cmd.label "Embarassate">
+<!ENTITY smiley7Cmd.label "Indecise">
+<!ENTITY smiley8Cmd.label "Surprisa">
+<!ENTITY smiley9Cmd.label "Basio">
+<!ENTITY smiley10Cmd.label "Crito">
+<!ENTITY smiley11Cmd.label "Sympathic">
+<!ENTITY smiley12Cmd.label "Moneta in bucca">
+<!ENTITY smiley13Cmd.label "Scarpa in bucca">
 <!ENTITY smiley14Cmd.label "Innocente">
+<!ENTITY smiley15Cmd.label "Plancto">
 <!ENTITY smiley16Cmd.label "Bucca sigillate">
 
 <!-- Message Pane Context Menu -->
+<!ENTITY spellCheckNoSuggestions.label "Nulle suggestiones trovate">
+<!ENTITY spellCheckIgnoreWord.label "Ignorar parola">
+<!ENTITY spellCheckIgnoreWord.accesskey "I">
 <!ENTITY spellCheckAddToDictionary.label "Adder al dictionario">
 <!ENTITY spellCheckAddToDictionary.accesskey "n">
+<!ENTITY undo.label "Disfacer">
+<!ENTITY undo.accesskey "D">
+<!ENTITY cut.label "Taliar">
+<!ENTITY cut.accesskey "l">
 <!ENTITY copy.label "Copiar">
 <!ENTITY copy.accesskey "C">
 <!ENTITY paste.label "Collar">
@@ -268,20 +340,40 @@
 <!ENTITY removeAllAttachments.accesskey "v">
 <!ENTITY selectAll.label "Seliger toto">
 <!ENTITY selectAll.accesskey "t">
+<!ENTITY attachFile.label "Annexar file(s)…">
+<!ENTITY attachFile.accesskey "f">
+<!ENTITY attachCloud.label "Filelink…">
+<!ENTITY attachCloud.accesskey "i">
+<!ENTITY convertCloud.label "Converter in…">
+<!ENTITY convertCloud.accesskey "C">
+<!ENTITY cancelUpload.label "Cancellar incargamento">
+<!ENTITY cancelUpload.accesskey "n">
+<!ENTITY convertRegularAttachment.label "Annexo normal">
+<!ENTITY convertRegularAttachment.accesskey "A">
+<!ENTITY attachPage.label "Annexar pagina web…">
+<!ENTITY attachPage.accesskey "w">
 
 <!-- Attachment Pane Header Bar Context Menu -->
 <!-- LOCALIZATION NOTE (initiallyShowAttachmentPane.label):
      Should use the same wording as startExpandedCmd.label
      in msgHdrViewOverlay.dtd. -->
+<!ENTITY initiallyShowAttachmentPane.label "Monstrar initialmente le pannello de annexos">
+<!ENTITY initiallyShowAttachmentPane.accesskey "M">
 
 <!-- Spell checker context menu items -->
+<!ENTITY spellAddDictionaries.label "Adder dictionarios…">
+<!ENTITY spellAddDictionaries.accesskey "A">
 
 <!-- Title for the address picker panel -->
 <!ENTITY addressesSidebarTitle.label "Contactos">
 
 <!-- Identity popup customize menuitem -->
+<!ENTITY customizeFromAddress.label "Personalisar ab adresse…">
+<!ENTITY customizeFromAddress.accesskey "a">
 
 <!-- Accessibility name for the document -->
+<!ENTITY aria.message.bodyName "Corpore del message">
 
 <!-- Status Bar -->
+<!ENTITY languageStatusButton.tooltip "Lingua per controlo orthographic">
 <!ENTITY encodingStatusPanel.tooltip "Codification del texto">

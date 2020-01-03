@@ -2,6 +2,37 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This is the default window title in case there is no content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+browser-main-window-title =
+    { $mode ->
+        [private] { -brand-full-name } (Navigation privée)
+       *[default] { -brand-full-name }
+    }
+# This is the default window title in case there is a content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Example Title - Mozilla Firefox"
+# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+#   $title (String) - Content title string.
+browser-main-window-content-title =
+    { $mode ->
+        [private] { $title } - { -brand-full-name } (Navigation privée)
+       *[default] { $title } - { -brand-full-name }
+    }
 urlbar-identity-button =
     .aria-label = Afficher les informations du site
 
@@ -25,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = Afficher une notification
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Afficher la demande de géolocalisation
+urlbar-xr-notification-anchor =
+    .tooltiptext = Ouvrir le panneau d’autorisations pour la réalité virtuelle
 urlbar-storage-access-anchor =
     .tooltiptext = Ouvrir le panneau des permissions relatives à la navigation
 urlbar-translate-notification-anchor =
@@ -51,6 +84,8 @@ urlbar-tip-help-icon =
     .title = Obtenir de l’aide
 urlbar-geolocation-blocked =
     .tooltiptext = Vous avez empêché ce site d’accéder à vos données de géolocalisation.
+urlbar-xr-blocked =
+    .tooltiptext = Vous avez bloqué l’accès aux appareils de réalité virtuelle pour ce site web.
 urlbar-web-notifications-blocked =
     .tooltiptext = Vous avez empêché ce site d’envoyer des notifications.
 urlbar-camera-blocked =
@@ -110,3 +145,16 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Définir comme moteur de recherche par défaut pour les fenêtres de navigation privée
     .accesskey = P
+
+## Bookmark Panel
+
+bookmark-panel-show-editor-checkbox =
+    .label = Afficher l’éditeur lors de l’enregistrement
+    .accesskey = A
+bookmark-panel-done-button =
+    .label = Terminer
+# Width of the bookmark panel.
+# Should be large enough to fully display the Done and
+# Cancel/Remove Bookmark buttons.
+bookmark-panel =
+    .style = min-width: 34em

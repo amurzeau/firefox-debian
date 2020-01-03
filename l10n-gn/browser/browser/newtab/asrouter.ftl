@@ -118,6 +118,33 @@ cfr-whatsnew-lockwise-take-title = Egueraha ne ñe’ẽñemi nendive
 cfr-whatsnew-lockwise-take-body = Pe tembipuru’i oku’éva { -lockwise-brand-short-name } omoneĩ eikévo tekorosãme nde ñe’ẽñemi ñongatupyrépe oimeraẽva tenda guive.
 cfr-whatsnew-lockwise-take-link-text = Eguereko tembipuru'i
 
+## Picture-in-Picture
+
+cfr-whatsnew-pip-header = Ehecha ta’ãngamýi eikundaha aja
+cfr-whatsnew-pip-body = Picture-in-picture ohechauka ta’ãngamýi ovetã ovevýiva ehecha hag̃ua emba’apo aja ambue tendayképe.
+cfr-whatsnew-pip-cta = Kuaave
+
+## Permission Prompt
+
+cfr-whatsnew-permission-prompt-header = Sa’ive ovetã apysẽ tenda ivaívagui
+cfr-whatsnew-permission-prompt-body = { -brand-shorter-name } ojokóma umi tenda ani hag̃ua ojerure ijehegui oñembou hag̃ua ñe’ẽmondo apysẽva.
+cfr-whatsnew-permission-prompt-cta = Kuaave
+
+## Fingerprinter Counter
+
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $fingerprinterCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-fingerprinter-counter-header =
+    { $fingerprinterCount ->
+        [one] Ojejokóma kuãhũ
+       *[other] Ojejokóma kuãhũnguéra
+    }
+cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } ojokóma heta kuãhũ kuaaukaha ombyatýva kañyháme marandu ne mba’e’oka rehegua omoheñói hag̃ua imba’ete ñemurãva.
+# Message variation when fingerprinters count is less than 10
+cfr-whatsnew-fingerprinter-counter-header-alt = Ñemokuãhũ
+cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } ikatu ojoko heta kuãhũ kuaaukaha ombyatýva kañyháme marandu ne mba’e’oka rehegua ha omyandy omoheñói hag̃ua imba’ete ñemurãva.
+
 ## Bookmark Sync
 
 cfr-doorhanger-sync-bookmarks-header = Emoĩ pe techaukaha ne pumbyrýpe

@@ -2,6 +2,37 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This is the default window title in case there is no content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+browser-main-window-title =
+    { $mode ->
+        [private] { -brand-full-name } (Pori Preifat)
+       *[default] { -brand-full-name }
+    }
+# This is the default window title in case there is a content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Example Title - Mozilla Firefox"
+# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+#   $title (String) - Content title string.
+browser-main-window-content-title =
+    { $mode ->
+        [private] { $title } - { -brand-full-name } (Pori Preifat)
+       *[default] { $title } - { -brand-full-name }
+    }
 urlbar-identity-button =
     .aria-label = Gweld manylion y wefan
 
@@ -25,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = Agor y panel negesu
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Agor panel cais y lleoliad
+urlbar-xr-notification-anchor =
+    .tooltiptext = Agor panel caniatâd rhithrealaeth
 urlbar-storage-access-anchor =
     .tooltiptext = Agor panel caniatâd gweithgaredd pori
 urlbar-translate-notification-anchor =
@@ -51,6 +84,8 @@ urlbar-tip-help-icon =
     .title = Derbyn cymorth
 urlbar-geolocation-blocked =
     .tooltiptext = Rydych wedi rhwystro'r manylion lleoliad ar gyfer y wefan hon.
+urlbar-xr-blocked =
+    .tooltiptext = Rydych wedi rhwystro mynediad dyfais rhithrealaeth ar gyfer y wefan hon.
 urlbar-web-notifications-blocked =
     .tooltiptext = Rydych wedi rhwystro hysbysiadau ar gyfer y wefan hon.
 urlbar-camera-blocked =
@@ -110,3 +145,16 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Gosod fel y Peiriant Chwilio Rhagosodedig ar gyfer Windows Preifat
     .accesskey = G
+
+## Bookmark Panel
+
+bookmark-panel-show-editor-checkbox =
+    .label = Dangos y golygydd wrth gadw
+    .accesskey = D
+bookmark-panel-done-button =
+    .label = Gorffen
+# Width of the bookmark panel.
+# Should be large enough to fully display the Done and
+# Cancel/Remove Bookmark buttons.
+bookmark-panel =
+    .style = min-width: 23em

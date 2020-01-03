@@ -2,6 +2,37 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This is the default window title in case there is no content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+browser-main-window-title =
+    { $mode ->
+        [private] { -brand-full-name } (사생활 보호 모드)
+       *[default] { -brand-full-name }
+    }
+# This is the default window title in case there is a content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Example Title - Mozilla Firefox"
+# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+#   $title (String) - Content title string.
+browser-main-window-content-title =
+    { $mode ->
+        [private] { $title } - { -brand-full-name } (사생활 보호 모드)
+       *[default] { $title } - { -brand-full-name }
+    }
 urlbar-identity-button =
     .aria-label = 사이트 정보 보기
 
@@ -25,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = 메시지 패널 열기
 urlbar-geolocation-notification-anchor =
     .tooltiptext = 위치 요청 패널 열기
+urlbar-xr-notification-anchor =
+    .tooltiptext = 가상 현실 권한 패널 열기
 urlbar-storage-access-anchor =
     .tooltiptext = 브라우징 활동 권한 패널 열기
 urlbar-translate-notification-anchor =
@@ -51,6 +84,8 @@ urlbar-tip-help-icon =
     .title = 도움 받기
 urlbar-geolocation-blocked =
     .tooltiptext = 이 사이트의 위치 정보 사용을 차단하였습니다.
+urlbar-xr-blocked =
+    .tooltiptext = 이 웹 사이트에 대한 가상 현실 기기 접근을 차단했습니다.
 urlbar-web-notifications-blocked =
     .tooltiptext = 이 사이트의 알림 사용을 차단하였습니다.
 urlbar-camera-blocked =
@@ -110,3 +145,16 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = 사생활 보호 창의 기본 검색 엔진으로 설정
     .accesskey = P
+
+## Bookmark Panel
+
+bookmark-panel-show-editor-checkbox =
+    .label = 저장할 때 편집기 보이기
+    .accesskey = S
+bookmark-panel-done-button =
+    .label = 완료
+# Width of the bookmark panel.
+# Should be large enough to fully display the Done and
+# Cancel/Remove Bookmark buttons.
+bookmark-panel =
+    .style = min-width: 23em

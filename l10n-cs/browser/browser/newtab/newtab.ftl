@@ -77,16 +77,22 @@ newtab-menu-dismiss = Skrýt
 newtab-menu-pin = Připnout
 newtab-menu-unpin = Odepnout
 newtab-menu-delete-history = Smazat z historie
-newtab-menu-save-to-pocket = Uložit do služby { -pocket-brand-name }
-newtab-menu-delete-pocket = Smazat ze služby { -pocket-brand-name }
-newtab-menu-archive-pocket = Archivovat do služby { -pocket-brand-name }
+newtab-menu-save-to-pocket = Uložit do { -pocket-brand-name(case: "gen") }
+newtab-menu-delete-pocket = Smazat z { -pocket-brand-name(case: "gen") }
+newtab-menu-archive-pocket = Archivovat do { -pocket-brand-name(case: "gen") }
 newtab-menu-show-privacy-info = Naši sponzoři a vaše soukromí
 
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
 newtab-privacy-modal-button-done = Hotovo
 newtab-privacy-modal-header = Na vašem soukromí záleží.
-newtab-privacy-modal-paragraph = Kromě zajímavých článků zobrazujeme také relevantní a prověřený obsah od vybraných sponzorů. Nemusíte se ale bát, vaše údaje nikdy neopustí váš { -brand-product-name } - neodesílají se nám ani našim sponzorům.
+newtab-privacy-modal-paragraph =
+    Kromě zajímavých článků zobrazujeme také relevantní a prověřený obsah od vybraných sponzorů. Nemusíte se ale bát, vaše údaje nikdy neopustí { -brand-product-name.gender ->
+        [masculine] váš { -brand-product-name(case: "acc") }
+        [feminine] vaši { -brand-product-name(case: "acc") }
+        [neuter] vaše { -brand-product-name(case: "acc") }
+       *[other] vaši aplikaci { -brand-product-name }
+    } - neodesílají se nám ani našim sponzorům.
 newtab-privacy-modal-link = Zjistěte, jak chráníme vaše soukromí na stránce nového panelu.
 
 
@@ -122,7 +128,7 @@ newtab-label-visited = Navštívené
 newtab-label-bookmarked = V záložkách
 newtab-label-removed-bookmark = Záložka odebrána
 newtab-label-recommended = Populární
-newtab-label-saved = Uloženo do služby { -pocket-brand-name }
+newtab-label-saved = Uloženo do { -pocket-brand-name(case: "gen") }
 newtab-label-download = Staženo
 
 ## Section Menu: These strings are displayed in the section context menu and are
@@ -177,8 +183,9 @@ newtab-discovery-empty-section-topstories-timed-out = Jejda, při načítání o
 newtab-pocket-read-more = Populární témata:
 newtab-pocket-more-recommendations = Další doporučení
 newtab-pocket-how-it-works = Jak to funguje
-newtab-pocket-cta-button = Získejte { -pocket-brand-name }
-newtab-pocket-cta-text = Ukládejte si články do služby { -pocket-brand-name } a užívejte si skvělé čtení.
+newtab-pocket-whats-pocket = Co je { -pocket-brand-name }?
+newtab-pocket-cta-button = Získejte { -pocket-brand-name(case: "acc") }
+newtab-pocket-cta-text = Ukládejte si články do { -pocket-brand-name(case: "gen") } a užívejte si skvělé čtení.
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.

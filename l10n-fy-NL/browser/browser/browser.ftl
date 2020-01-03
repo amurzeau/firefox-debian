@@ -2,6 +2,37 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This is the default window title in case there is no content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+browser-main-window-title =
+    { $mode ->
+        [private] { -brand-full-name } (Priveesneupe)
+       *[default] { -brand-full-name }
+    }
+# This is the default window title in case there is a content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Example Title - Mozilla Firefox"
+# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+#   $title (String) - Content title string.
+browser-main-window-content-title =
+    { $mode ->
+        [private] { $title } - { -brand-full-name } (Priveesneupe)
+       *[default] { $title } - { -brand-full-name }
+    }
 urlbar-identity-button =
     .aria-label = Website-ynformaasje werjaan
 
@@ -25,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = Berjochtpaniel iepenje
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Lokaasjefersyk-paniel iepenje
+urlbar-xr-notification-anchor =
+    .tooltiptext = Machtigingsfinster foar virtual reality iepenje
 urlbar-storage-access-anchor =
     .tooltiptext = Tastimmingspaniel foar sneupaktiviteit iepenje
 urlbar-translate-notification-anchor =
@@ -51,6 +84,8 @@ urlbar-tip-help-icon =
     .title = Help krije
 urlbar-geolocation-blocked =
     .tooltiptext = Jo hawwe jo lokaasjeynformaasje foar dizze website blokkearre.
+urlbar-xr-blocked =
+    .tooltiptext = Jo hawwe tagong ta virtual-reality-apparaten foar dizze website blokkearre.
 urlbar-web-notifications-blocked =
     .tooltiptext = Jo hawwe notifikaasjes foar dizze website blokkearre.
 urlbar-camera-blocked =
@@ -110,3 +145,16 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = As standertsykmasine foar priveefinsters ynstelle
     .accesskey = p
+
+## Bookmark Panel
+
+bookmark-panel-show-editor-checkbox =
+    .label = By bewarjen editor toane
+    .accesskey = e
+bookmark-panel-done-button =
+    .label = Klear
+# Width of the bookmark panel.
+# Should be large enough to fully display the Done and
+# Cancel/Remove Bookmark buttons.
+bookmark-panel =
+    .style = min-width: 23em

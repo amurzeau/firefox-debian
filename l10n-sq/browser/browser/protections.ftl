@@ -40,12 +40,12 @@ graph-today = Sot
 graph-legend-description = Një grafik që përmban numrin gjithsej sa herë është bllokuar çdo lloj gjurmuesi këtë javë.
 social-tab-title = Gjurmues Prej Mediash Shoqërore
 social-tab-contant = Gjurmuesit prej rrjete shoqërore vendosin gjurmues në sajte të tjerë për të ndjekur ç’bëni, ç’shihni dhe vëzhgoni kur jeni në internet. Kjo u lejon shoqërive të rrjeteve shoqërore të mësojnë më tepër rreth jush, tej asaj çka ndani me të tjerët në profilet tuaj në media shoqërore. <a data-l10n-name="learn-more-link">Mësoni më tepër</a>
-cookie-tab-title = <em>Cookies</em> Gjurmimi Nga Sajte Në Sajte
-cookie-tab-content = Këto <em>cookies</e> ju ndjekin nga sajti në sajt për të grumbulluar të dhëna rreth çka bëni në internet. Ato depozitohen nga palë të treta, të tilla si reklamues dhe shoqëri analizash. Bllokimi i cookie-ve që ju ndjekin nga sajti në sajt ul numrin e reklamave që ju ndjekin ngado. <a data-l10n-name="learn-more-link">Mësoni më tepër</a>
+cookie-tab-title = Cookies Gjurmimi Nga Sajte Në Sajte
+cookie-tab-content = Këto cookies ju ndjekin nga sajti në sajt për të grumbulluar të dhëna rreth çka bëni në internet. Ato depozitohen nga palë të treta, të tilla si reklamues dhe shoqëri analizash. Bllokimi i cookie-ve që ju ndjekin nga sajti në sajt ul numrin e reklamave që ju ndjekin ngado. <a data-l10n-name="learn-more-link">Mësoni më tepër</a>
 tracker-tab-title = Lëndë Gjurmimi
 tracker-tab-description = Sajtet mund të ngarkojnë reklama, video dhe tjetër lëndë të jashtme me kod gjurmimi. Bllokimi i lëndës gjurmuese mund të ndihmojë për ngarkimin më të shpejtë të sajteve, por disa butona, formularë dhe fusha kredenciale hyrjesh mund të mos punojnë. <a data-l10n-name="learn-more-link">Mësoni më tepër</a>
-fingerprinter-tab-title = <em>Fingerprinters</em>
-fingerprinter-tab-content = Krijuesit e shenjave të gishtave (<em>Fingerprinters</em>) grumbullojnë rregullime nga shfletuesi dhe kompjuteri juaj për të krijuar një profil rreth jush. Duke përdorur këto shenja gishtash dixhitale, ata mund t’ju ndjekin nëpër sajte të ndryshme. <a data-l10n-name="learn-more-link">Mësoni më tepër</a>
+fingerprinter-tab-title = Krijues shenja gishtash
+fingerprinter-tab-content = Krijuesit e shenjave të gishtave (<em>Fingerprinters</em>) grumbullojnë rregullime nga shfletuesi dhe kompjuteri juaj për të krijuar një profil rreth jush. Duke përdorur këto shenja dixhitale gishtash, ata mund t’ju ndjekin nëpër sajte të ndryshme. <a data-l10n-name="learn-more-link">Mësoni më tepër</a>
 cryptominer-tab-title = Nxjerrës kriptomonedhash
 cryptominer-tab-content = Nxjerrësit e kriptomonedhave e përdorin fuqinë përllogaritëse të sistemit tuaj për të nxjerrë para dixhitale. Programthet për nxjerrje kriptomonedhash konsumojnë energjinë e baterisë tuaj, ngadalësojnë kompjuterin tuaj dhe mund të sjellin shtim të faturës tuaj për energjinë. <a data-l10n-name="learn-more-link">Mësoni më tepër</a>
 lockwise-title = Mos harroni kurrë më një fjalëkalim
@@ -74,6 +74,14 @@ lockwise-sync-status =
        *[other] Po njëkohësohet te { $count } pajisje të tjera
     }
 lockwise-sync-not-syncing-devices = S’po njëkohësohet te pajisje të tjera
+manage-connected-devices = Administroni pajisje…
+# Variables:
+#   $count (Number) - Number of devices connected with sync.
+lockwise-connected-device-status =
+    { $count ->
+        [one] I lidhur me { $count } pajisje
+       *[other] I lidhur me { $count } pajisje
+    }
 monitor-title = Shihni për cenime të dhënash
 monitor-link = Si funksionon
 monitor-header-content-no-account = Kontrolloni me { -monitor-brand-name } që të shihni nëse keni qenë prekur nga një cenim i ditur të dhënash, dhe merrni sinjalizime mbi cenime të reja.
@@ -110,7 +118,7 @@ full-report-link = Shihni raportin e plotë te <a data-l10n-name="monitor-inline
 # your localization, because it would result in the number showing twice.
 password-warning =
     { $count ->
-        [one] Palë kredenciale të ruajtur hyrjesh mund të jetë ekspozuar në një cenim të dhënash.Për siguri më të mirë në internet, ndryshojeni këtë fjalëkalim. <a data-l10n-name="lockwise-link">Shihni Kredenciale Hyrjesh të Ruajtur</a>
+        [one] Palë kredenciale të ruajtur hyrjesh mund të jenë ekspozuar në një cenim të dhënash.Për siguri më të mirë në internet, ndryshojeni këtë fjalëkalim. <a data-l10n-name="lockwise-link">Shihni Kredenciale Hyrjesh të Ruajtur</a>
        *[other] Palë kredenciale të ruajtur hyrjesh mund të jenë ekspozuar në një cenim të dhënash.Për siguri më të mirë në internet, ndryshojeni këtë fjalëkalim. <a data-l10n-name="lockwise-link">Shihni Kredenciale Hyrjesh të Ruajtur</a>
     }
 
@@ -122,18 +130,18 @@ password-warning =
 ##   $percentage (Number) - Percentage this type of tracker contributes to the whole graph
 
 bar-tooltip-social =
-    .title = Gjurmues Mediash Shoqërore
+    .title = Gjurmues prej Mediash Shoqërore
     .aria-label =
         { $count ->
-            [one] { $count } gjurmues mediash shoqërore ({ $percentage }%)
-           *[other] { $count } gjurmues mediash shoqërore ({ $percentage }%)
+            [one] { $count } gjurmues prej mediash shoqërore ({ $percentage }%)
+           *[other] { $count } gjurmues prej mediash shoqërore ({ $percentage }%)
         }
 bar-tooltip-cookie =
-    .title = <em>Cookies</em> Gjurmimi Nga Sajte Në Sajte
+    .title = Cookies Gjurmimi Nga Sajte Në Sajte
     .aria-label =
         { $count ->
-            [one] { $count } <em>cookie</em> gjurmimi nga sajte në sajte ({ $percentage }%)
-           *[other] { $count } <em>cookies</em> gjurmimi nga sajte në sajte ({ $percentage }%)
+            [one] { $count } cookie gjurmimi nga sajte në sajte ({ $percentage }%)
+           *[other] { $count } cookies gjurmimi nga sajte në sajte ({ $percentage }%)
         }
 bar-tooltip-tracker =
     .title = Lëndë Gjurmimi

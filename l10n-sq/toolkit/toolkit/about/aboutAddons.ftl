@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Përgjegjësi i Shtesave
+addons-page-title = Përgjegjësi i Shtesave
 search-header =
     .placeholder = Kërkoni te addons.mozilla.org
     .searchbuttonlabel = Kërko
@@ -93,7 +94,7 @@ detail-update-manual =
     .tooltiptext = Mos i instaloni vetvetiu përditësimet
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Xhiroje në Dritare Private
-detail-private-browsing-description2 = Po u lejua, zgjerimi do të mund të hyjë në veprimtaritë tuaja <em>online</em> gjatë shfletimit privat. <label data-l10n-name="detail-private-browsing-learn-more">Mësoni më tepër</label>
+detail-private-browsing-description2 = Po u lejua, zgjerimi do të mund të hyjë në të dhëna veprimtarish tuajat internetore, teksa shfletoni privatisht. <label data-l10n-name="detail-private-browsing-learn-more">Mësoni më tepër</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
 # cannot be overridden by the user.
 detail-private-disallowed-label = Nuk Lejohet në Dritare Private
@@ -101,7 +102,7 @@ detail-private-disallowed-description = Ky zgjerim nuk punon nën shfletim priva
 detail-private-disallowed-description2 = Ky zgjerim nuk punon nën shfletim privat. <a data-l10n-name="learn-more">Mësoni më tepër</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = Lyp Hyrje në Dritare Private
-detail-private-required-description = Ky zgjerim ka hyrje te veprimtaritë tuaja <em>online</em> gjatë shfletimi privat. <label data-l10n-name="detail-private-browsing-learn-more">Mësoni më tepër</label>
+detail-private-required-description = Ky zgjerim ka hyrje te të dhëna veprimtarish tuajat internetore, teksa shfletoni privatisht. <label data-l10n-name="detail-private-browsing-learn-more">Mësoni më tepër</label>
 detail-private-required-description2 = Ky zgjerim ka hyrje te veprimtaritë tuaja internetore, teksa gjendeni nën shfletim privat. <a data-l10n-name="learn-more">Mësoni më tepër</a>
 detail-private-browsing-on =
     .label = Lejoje
@@ -162,7 +163,7 @@ extensions-view-recent-updates =
     .name = Përditësime Së Fundi
     .tooltiptext = { extensions-view-recent-updates.name }
 extensions-view-available-updates =
-    .name = Përditësime të Passhme
+    .name = Përditësime të Gatshme
     .tooltiptext = { extensions-view-available-updates.name }
 
 ## These are global warnings
@@ -300,16 +301,20 @@ shortcuts-card-expand-button =
     }
 shortcuts-card-collapse-button = Shfaq Më Pak
 go-back-button =
-    .tooltiptext = Shkoni mbrapsht
+    .tooltiptext = Kthehuni mbrapsht
 
 ## Recommended add-ons page
 
 # Explanatory introduction to the list of recommended add-ons. The action word
 # ("recommends") in the final sentence is a link to external documentation.
 discopane-intro =
-    Zgjerimet dhe temat janë si aplikacione për shfletuesin tuaj, dhe ju lejojnë të mbroni fjalëkalimet, të shkarkoni video, të gjeni pazare me leverdi, të bllokoni reklama bezdisëse, të ndryshoni pamjen e shfletuesit tuaj, etj. Këta programe të vegjël software shpesh krijohen nga një palë e tretë. Ja një përzgjedhje { -brand-product-name }
-    <a data-l10n-name="learn-more-trigger">rekomandimesh</a> për siguri, punim dhe funksione të veçanta. 
-    security, performance, and functionality.
+    Zgjerimet dhe temat janë si aplikacione për shfletuesin tuaj, dhe ju lejojnë
+    të mbroni fjalëkalimet, të shkarkoni video, të gjeni pazare me leverdi,
+    të bllokoni reklama bezdisëse, të ndryshoni pamjen e shfletuesit tuaj, etj.
+    Këta programe të vegjël software shpesh krijohen nga një palë e tretë.
+    Ja një përzgjedhje që { -brand-product-name }
+    <a data-l10n-name="learn-more-trigger">rekomandon</a>, për siguri, punim dhe
+    funksione të jashtëzakonshme.
 # Notice to make user aware that the recommendations are personalized.
 discopane-notice-recommendations = Disa nga këto rekomandime janë të personalizuara. Ato bazohen në zgjerime të tjera që keni instaluar, në parapëlqime profili dhe statistika përdorimi.
 discopane-notice-learn-more = Mësoni më tepër
@@ -342,6 +347,10 @@ remove-addon-disabled-button = S’mund të Hiqet <a data-l10n-name="link">Pse?<
 disable-addon-button = Çaktivizoje
 enable-addon-button = Aktivizoje
 expand-addon-button = Më tepër Mundësi
+# This is used for the toggle on the extension card, it's a checkbox and this
+# is always its label.
+extension-enable-addon-button-label =
+    .aria-label = Aktivizoje
 preferences-addon-button =
     { PLATFORM() ->
         [windows] Mundësi
@@ -367,7 +376,7 @@ always-activate-button = Aktivizoje Përherë
 never-activate-button = Mos e Aktivizo Kurrë
 addon-detail-author-label = Autor
 addon-detail-version-label = Version
-addon-detail-last-updated-label = Përditësuar Së Fundi
+addon-detail-last-updated-label = Përditësuar Së Fundi Më
 addon-detail-homepage-label = Kreu
 addon-detail-rating-label = Vlerësim
 # The average rating that the add-on has received.
@@ -407,7 +416,7 @@ addon-badge-private-browsing-allowed =
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
-    .title = Lejuar në dritare private
+    .title = E lejuar në dritare private
     .aria-label = { addon-badge-private-browsing-allowed2.title }
 addon-detail-private-browsing-help = Nën lejim, zgjerimi do të mund të shohë veprimtaritë tuaja në linjë, teksa shfletoni privatisht. <a data-l10n-name="learn-more">Mësoni më tepër</a>
 addon-detail-private-browsing-allow = Lejoje
@@ -445,5 +454,8 @@ discover-heading = Personalizoni { -brand-short-name }-in Tuaj
 shortcuts-heading = Administroni Shkurtore Zgjerimesh
 theme-heading-search-label = Gjeni më tepër tema
 extension-heading-search-label = Gjeni më tepër zgjerime
+default-heading-search-label = Gjeni më tepër shtesa
 addons-heading-search-input =
     .placeholder = Kërkoni te addons.mozilla.org
+addon-page-options-button =
+    .title = Mjete për krejt shtesat

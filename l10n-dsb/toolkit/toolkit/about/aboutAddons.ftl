@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Zastojnik dodankow
+addons-page-title = Zastojnik dodankow
 search-header =
     .placeholder = Na addons.mozilla.org pytaś
     .searchbuttonlabel = Pytaś
@@ -342,6 +343,10 @@ remove-addon-disabled-button = Njedajo se wótwónoźeś <a data-l10n-name="link
 disable-addon-button = Znjemóžniś
 enable-addon-button = Zmóžniś
 expand-addon-button = Dalšne nastajenja
+# This is used for the toggle on the extension card, it's a checkbox and this
+# is always its label.
+extension-enable-addon-button-label =
+    .aria-label = Zmóžniś
 preferences-addon-button =
     { PLATFORM() ->
         [windows] Nastajenja
@@ -447,5 +452,8 @@ discover-heading = Personalizěrujśo swój { -brand-short-name }
 shortcuts-heading = Tastowe skrotconki rozšyrjenjow zastojaś
 theme-heading-search-label = Dalšne drastwy pytaś
 extension-heading-search-label = Dalšne rozšyrjenja pytaś
+default-heading-search-label = Woglědajśo se dalšne dodanki
 addons-heading-search-input =
     .placeholder = Na addons.mozilla.org pytaś
+addon-page-options-button =
+    .title = Rědy za wšykne dodanki

@@ -5,7 +5,7 @@
 do-not-track-description = Šalji “Ne prati me” signal web stranicama (stranice ga ne moraju poštivati)
 do-not-track-learn-more = Saznajte više
 do-not-track-option-default-content-blocking-known =
-    .label = Samo kada je { -brand-short-name } postavljen da blokira poznate pratitelje
+    .label = Samo kad je { -brand-short-name } postavljen da blokira poznate programe za praćenje
 do-not-track-option-always =
     .label = Uvijek
 pref-page =
@@ -34,7 +34,7 @@ search-input-box =
             [windows] Pronađi u Mogućnostima
            *[other] Pronađi u Postavkama
         }
-managed-notice = Vašim preglednikom upravlja vaša organizacija.
+managed-notice = Tvojim preglednikom upravlja tvoja organizacija.
 pane-general-title = Osnovno
 category-general =
     .tooltiptext = { pane-general-title }
@@ -78,16 +78,16 @@ restart-later = Ponovno pokreni poslije
 
 # This string is shown to notify the user that their home page
 # is being controlled by an extension.
-extension-controlled-homepage-override = Dodatak, <img data-l10n-name="icon"/> { $name }, kontrolira vašu početnu stranicu.
+extension-controlled-homepage-override = Dodatak, <img data-l10n-name="icon"/> { $name }, kontrolira tvoju početnu stranicu.
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
-extension-controlled-new-tab-url = Dodatak, <img data-l10n-name="icon"/> { $name }, kontrolira vašu početnu stranicu nove kartice.
+extension-controlled-new-tab-url = Dodatak, <img data-l10n-name="icon"/> { $name }, kontrolira tvoju stranicu za novu karticu.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Dodatak, <img data-l10n-name="icon"/> { $name }, kontrolira ovu postavku.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
-extension-controlled-default-search = Dodatak, <img data-l10n-name="icon"/> { $name }, je postavio vašu zadanu tražilicu.
+extension-controlled-default-search = Dodatak <img data-l10n-name="icon"/> { $name } je postavio tvoju standardnu tražilicu.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = Dodatak, <img data-l10n-name="icon"/> { $name }, zahtijeva sadržajne kartice.
@@ -128,8 +128,8 @@ get-started-configured = Otvori { -sync-brand-short-name } postavke
 always-check-default =
     .label = Uvijek provjeri je li { -brand-short-name } zadani preglednik
     .accesskey = z
-is-default = { -brand-short-name } je trenutno vaš zadani preglednik
-is-not-default = { -brand-short-name } trenutno nije vaš zadani preglednik
+is-default = { -brand-short-name } je trenutačno tvoj standardni preglednik
+is-not-default = { -brand-short-name } trenutačno nije tvoj standardni preglednik
 set-as-my-default-browser =
     .label = Postavi kao zadano…
     .accesskey = d
@@ -137,7 +137,7 @@ startup-restore-previous-session =
     .label = Vrati prijašnju sesiju
     .accesskey = s
 startup-restore-warn-on-quit =
-    .label = Upozorava vas prilikom izlaska iz preglednika
+    .label = Upozorava te prilikom izlaska iz preglednika
 disable-extension =
     .label = Onemogući dodatak
 tabs-group-header = Kartice
@@ -148,10 +148,10 @@ open-new-link-as-tabs =
     .label = Otvori poveznice u karticama umjesto novih prozora
     .accesskey = p
 warn-on-close-multiple-tabs =
-    .label = Upozorava vas pri zatvaranju više kartica
+    .label = Upozorava te pri zatvaranju višestrukih kartica
     .accesskey = v
 warn-on-open-many-tabs =
-    .label = Upozorava vas kod višestrukog otvaranja kartica koje može usporiti { -brand-short-name }
+    .label = Upozorava te pri otvaranju višestrukih kartica koje može usporiti { -brand-short-name }
     .accesskey = u
 switch-links-to-new-tabs =
     .label = Kada otvorite poveznicu u novoj kartici, odmah prijeđi na nju
@@ -252,7 +252,7 @@ download-always-ask-where =
     .label = Uvijek pitaj gdje želim spremiti datoteke
     .accesskey = a
 applications-header = Aplikacije
-applications-description = Odaberite kako će { -brand-short-name } upravljati datotekama koje preuzmete s interneta ili aplikacijama koje koristite prilikom pretraživanja.
+applications-description = Odaberite kako će { -brand-short-name } upravljati datotekama koje preuzmete s interneta ili aplikacijama koje koristite prilikom pregledavanja.
 applications-filter =
     .placeholder = Traži tipove datoteka ili aplikacija
 applications-type-column =
@@ -319,7 +319,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-##
+
 
 drm-content-header = Digital Rights Management (DRM) sadržaj
 play-drm-content =
@@ -337,7 +337,7 @@ update-application-auto =
     .label = Automatski instalira dopune (preporučeno)
     .accesskey = A
 update-application-check-choose =
-    .label = Provjeri dostupnost dopuna, ali vas upita prije instalacije
+    .label = Provjeri dostupnost dopuna, ali odluči o njihovom instaliranju
     .accesskey = c
 update-application-manual =
     .label = Nikada ne provjerava dostupnost dopuna (nije preporučeno)
@@ -359,7 +359,7 @@ update-setting-write-failure-title = Greška prilikom spremanju postavki ažurir
 # The newlines between the main text and the line containing the path is
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
-    { -brand-short-name } je naišao na pogrešku i nije spremio ovu promjenu. Uzmite u obzir da postavljanje postavki za ovo ažuriranje zahtjeva dozvole za pisanje u niže navedenu datoteku. Vi ili vaš administrator sustava možda ste u mogućnosti otkloniti ovu grešku tako da dozvolite grupi korisnika potpunu kontrolu nad ovom datotekom.
+    { -brand-short-name } je naišao na pogrešku i nije spremio ovu promjenu. Uzmi u obzir da postavljanje postavki za ovo ažuriranje zahtjeva dozvole za pisanje u niže navedenu datoteku. Ti ili tvoj administrator sustava možda možete otkloniti ovu grešku, tako da dozvolite grupi korisnika potpunu kontrolu nad ovom datotekom.
     
     Nije moguće pisati u datoteku: { $path }
 update-in-progress-title = Ažuriranje u tijeku
@@ -431,7 +431,7 @@ network-proxy-connection-settings =
 ## Home Section
 
 home-new-windows-tabs-header = Novi prozori i kartice
-home-new-windows-tabs-description2 = Odaberite što vidite kada otvorite vašu početnu stranicu, nove prozore i nove kartice.
+home-new-windows-tabs-description2 = Odaberi što vidiš kad otvoriš svoju početnu stranicu, nove prozore i nove kartice.
 
 ## Home Section - Home Page Customization
 
@@ -468,7 +468,7 @@ choose-bookmark =
 ## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header = Firefox početni sadržaj
-home-prefs-content-description = Odaberite koji sadržaj želite na vašoj Firefox početnoj stranici.
+home-prefs-content-description = Odaberi sadržaj koji želitš na svojoj Firefox početnoj stranici.
 home-prefs-search-header =
     .label = Web pretraživanje
 home-prefs-topsites-header =
@@ -478,7 +478,7 @@ home-prefs-topsites-description = Stranice koje najviše posjećujete
 #  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 home-prefs-recommended-by-header =
     .label = Preporučeno od { $provider }
-home-prefs-recommended-by-description = Vrhunski sadržaj iz svih krajeva interneta, presonaliziran za vas
+home-prefs-recommended-by-description = Vrhunski sadržaj iz svih krajeva interneta, presonaliziran za tebe
 home-prefs-recommended-by-learn-more = Kako ovo funkcionira
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponzorirane priče
@@ -565,6 +565,12 @@ search-keyword-warning-bookmark = Odabrali ste ključnu riječ koju koristi zabi
 ## Containers Section
 
 containers-back-link = « Idi natrag
+containers-back-button =
+    .aria-label =
+        { PLATFORM() ->
+            [windows] Nazad na Mogućnosti
+           *[other] Nazad na Mogućnosti
+        }
 containers-header = Sadržajne kartice
 containers-add-button =
     .label = Dodaj novi spremnik
@@ -580,13 +586,16 @@ containers-remove-button =
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
-sync-signedout-caption = Ponesite vaš Web sa sobom
-sync-signedout-description = Sinkronizirajte vaše zabilješke, povijest, kartice, lozinke, dodatke i postavke na sve vaše uređaje.
+sync-signedout-caption = Ponesi svoj web sa sobom
+sync-signedout-description = Sinkroniziraj tvoje zabilješke, povijest, kartice, lozinke, dodatke i postavke na sve svoje uređaje.
 sync-signedout-account-title = Povežite se sa { -fxaccount-brand-name }
 sync-signedout-account-create = Nemate račun? Započnite
     .accesskey = r
 sync-signedout-account-signin =
     .label = Prijavite se…
+    .accesskey = i
+sync-signedout-account-signin2 =
+    .label = Prijavite se u { -sync-brand-short-name }…
     .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -596,7 +605,7 @@ sync-signedout-account-signin =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = Preuzmite Firefox za <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> ili <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> da biste sinkronizirali s vašim mobilnim uređajem.
+sync-mobile-promo = Preuzmi Firefox za <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> ili <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> za sinkroniziranje s tvojim mobilnim uređajem.
 
 ## Sync Section - Signed in
 
@@ -609,7 +618,7 @@ sync-disconnect =
     .label = Prekini vezu...
     .accesskey = k
 sync-sign-out =
-    .label = Odjavi se…
+    .label = Odjavi se …
     .accesskey = O
 sync-manage-account = Upravljanje računom
     .accesskey = u
@@ -624,8 +633,8 @@ sync-remove-account =
 sync-sign-in =
     .label = Prijava
     .accesskey = P
-sync-signedin-settings-header = Sync postavke
-sync-signedin-settings-desc = Odaberite što sinkronizirati na vašim uređajima koji koriste { -brand-short-name }.
+sync-signedin-settings-header = Postavke sinkronizacije
+sync-signedin-settings-desc = Odaberi što želiš sinkronizirati na tvojim uređajima koji koriste { -brand-short-name }.
 
 ## Sync section - enabling or disabling sync.
 
@@ -634,7 +643,7 @@ prefs-syncing-off = Sinkroniziranje: ISKLJUČENO
 prefs-sync-setup =
     .label = Postavi { -sync-brand-short-name }…
     .accesskey = P
-prefs-sync-offer-setup-label = Sinkronizirajte vaše zabilješke, povijest, kartice, lozinke, dodatke i postavke na sve vaše uređaje.
+prefs-sync-offer-setup-label = Sinkroniziraj tvoje zabilješke, povijest, kartice, lozinke, dodatke i postavke na sve svoje uređaje.
 prefs-sync-now =
     .labelnotsyncing = Sinkroniziraj sada
     .accesskeynotsyncing = n
@@ -785,7 +794,7 @@ history-remember-option-never =
     .label = neće nikada zapamtiti povijest
 history-remember-option-custom =
     .label = koristiti prilagođene postavke za povijest
-history-remember-description = { -brand-short-name } će zapamtiti vašu povijest pregledavanja, preuzimanja, obrazaca i pretraživanja.
+history-remember-description = { -brand-short-name } će zapamtiti tvoju povijest pregledavanja, preuzimanja, obrazaca i pretraživanja.
 history-dontremember-description = { -brand-short-name } će koristiti iste postavke kao i za privatno pretraživanje, te neće pamtiti povijest pretraživanja.
 history-private-browsing-permanent =
     .label = Uvijek koristi privatno pregledavanje
@@ -813,7 +822,7 @@ sitedata-total-size-calculating = Izračunavanje veličine podataka web stranice
 # Variables:
 #   $value (Number) - Value of the unit (for example: 4.6, 500)
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
-sitedata-total-size = Vaši spremljeni kolačići, podaci web stranica i privremena memorija trenutno zauzimaju { $value } { $unit } prostora na disku.
+sitedata-total-size = Tvoji spremljeni kolačići, podaci web stranica i privremena memorija trenutačno zauzimaju { $value } { $unit } prostora na disku.
 sitedata-learn-more = Saznajte više
 sitedata-delete-on-close =
     .label = Obriši kolačiće i podatke stranica kada je { -brand-short-name } zatvoren
@@ -869,7 +878,7 @@ addressbar-suggestions-settings = Promijenite postavke za prijedloge tražilica
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Blokiranje sadržaja
-content-blocking-section-description = Zaštitite svoju privatnost dok pregledavate. Blokirajte nevidljivi sadržaj koji prati koje stranice posjećujete i profilira vas. Blokiranje dijela ovog sadržaja može ubrzati učitavanje stranica.
+content-blocking-section-description = Zaštiti svoju privatnost dok pregledavaš. Blokiraj nevidljivi sadržaj koji prati koje stranice posjećuješ i koji te profilira. Blokiranje dijela ovog sadržaja može ubrzati učitavanje stranica.
 content-blocking-enhanced-tracking-protection = Poboljšana zaštita od praćenja
 content-blocking-section-top-level-description = Programi za praćenje te prate po internetu i prikupljaju podatke o tvojim navikama i interesima. { -brand-short-name } blokira mnoge takve programe i druge zlonamjerne skripte.
 content-blocking-learn-more = Saznajte više
@@ -904,7 +913,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Prilagođeno
     .accesskey = P
 
-##
+
 
 content-blocking-etp-standard-desc = Uravnoteženo za zaštitu i performansu. Stranice će se normalno učitavati.
 content-blocking-etp-strict-desc = Jača zaštita, ali može prouzročiti lom nekih web lokacija ili sadržaja.
@@ -969,6 +978,10 @@ permissions-location = Lokacija
 permissions-location-settings =
     .label = Postavke…
     .accesskey = l
+permissions-xr = Virtualna stvarnost
+permissions-xr-settings =
+    .label = Postavke…
+    .accesskey = t
 permissions-camera = Kamera
 permissions-camera-settings =
     .label = Postavke…
@@ -1002,13 +1015,13 @@ permissions-block-popups-exceptions =
     .label = Iznimke...
     .accesskey = e
 permissions-addon-install-warning =
-    .label = Upozorava vas kad stranice pokušaju instalirati dodatke
+    .label = Upozorava te kad stranice pokušaju instalirati dodatke
     .accesskey = d
 permissions-addon-exceptions =
     .label = Iznimke...
     .accesskey = e
 permissions-a11y-privacy-checkbox =
-    .label = Spriječite servise pristupačnosti da pristupaju vašem pregledniku
+    .label = Spriječi usluge pristupačnosti da pristupe tvom pregledniku
     .accesskey = a
 permissions-a11y-privacy-link = Saznajte više
 
@@ -1017,6 +1030,8 @@ permissions-a11y-privacy-link = Saznajte više
 collection-header = { -brand-short-name } korištenje i skupljanje podataka
 collection-description = Težimo da vam omogućimo izbor i prikupljamo samo onoliko koliko nam treba da omogućimo i unaprijedimo { -brand-short-name } za sve. Uvijek pitamo za dozvolu prije nego li počmemo primati osobne informacije.
 collection-privacy-notice = Politika privatnosti
+collection-health-report-telemetry-disabled = Više ne dopuštaš { -vendor-short-name } snimanje tehničkih podataka i podataka o interakciji. Svi stari podaci biti će izbrisani u roku od 30 dana.
+collection-health-report-telemetry-disabled-link = Saznajte više
 collection-health-report =
     .label = Dozvolite da { -brand-short-name } šalje tehničke podatke i podatke interakcije { -vendor-short-name }
     .accesskey = r
@@ -1031,7 +1046,7 @@ addon-recommendations-link = Saznajte više
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Izvještaji s podacima su onemogućeni za konfiguraciju
 collection-backlogged-crash-reports =
-    .label = Dozvolite { -brand-short-name } da šalje zapise o rušenju u vaše ime
+    .label = Dozvoli { -brand-short-name } da šalje zapise o rušenju u tvoje ime
     .accesskey = o
 collection-backlogged-crash-reports-link = Saznajte više
 
@@ -1050,21 +1065,21 @@ security-block-downloads =
     .label = Blokiraj opasna preuzimanja
     .accesskey = o
 security-block-uncommon-software =
-    .label = Upozorava vas na neželjene ili neobične programe
+    .label = Upozorava te o neželjenim ili neobičnim programima
     .accesskey = g
 
 ## Privacy Section - Certificates
 
 certs-header = Certifikati
-certs-personal-label = Kad poslužitelj zatraži vaš osobni certifikat
+certs-personal-label = Kad poslužitelj zatraži tvoj osobni certifikat
 certs-select-auto-option =
     .label = Automatski označi jednoga
     .accesskey = s
 certs-select-ask-option =
-    .label = Traži vas svaki put
+    .label = Traži te svaki put
     .accesskey = a
 certs-enable-ocsp =
-    .label = Upitajte OCSP poslužitelje da biste potvrdili valjanost certifikata
+    .label = Upitaj OCSP poslužitelje za potvrđivanje valjanosti certifikata
     .accesskey = U
 certs-view =
     .label = Prikaz certifikata…
@@ -1073,7 +1088,7 @@ certs-devices =
     .label = Sigurnosni uređaji…
     .accesskey = S
 space-alert-learn-more-button =
-    .label = Saznajte više
+    .label = Saznaj više
     .accesskey = S
 space-alert-over-5gb-pref-button =
     .label =

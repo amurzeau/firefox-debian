@@ -81,7 +81,7 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
 ## Protections panel
 
 cfr-protections-panel-header = Surfa utan att bli följd
-cfr-protections-panel-body = Behåll dina data för dig själv. { -brand-short-name } skyddar dig från många av de vanligaste trackers som följer vad du gör online.
+cfr-protections-panel-body = Behåll dina data för dig själv. { -brand-short-name } skyddar dig från många av de vanligaste spårare som följer vad du gör online.
 cfr-protections-panel-link-text = Läs mer
 
 ## What's New toolbar button and panel
@@ -98,9 +98,9 @@ cfr-whatsnew-fx70-title = { -brand-short-name } kämpar ännu mer för din integ
 cfr-whatsnew-fx70-body =
     Den senaste uppdateringen förbättrar funktionen Spårningsskydd och gör det
     lättare än någonsin att skapa säkra lösenord för varje webbplats.
-cfr-whatsnew-tracking-protect-title = Skydda dig från trackers
+cfr-whatsnew-tracking-protect-title = Skydda dig från spårare
 cfr-whatsnew-tracking-protect-body =
-    { -brand-short-name } blockerar många vanliga sociala och cross-site trackers som
+    { -brand-short-name } blockerar många vanliga sociala och globala spårare som
     följer vad du gör online.
 cfr-whatsnew-tracking-protect-link-text = Visa din rapport
 # This string is displayed before a large numeral that indicates the total
@@ -108,8 +108,8 @@ cfr-whatsnew-tracking-protect-link-text = Visa din rapport
 # localization, because it would result in the number showing twice.
 cfr-whatsnew-tracking-blocked-title =
     { $blockedCount ->
-        [one] Tracker blockerad
-       *[other] Trackers blockerade
+        [one] Spårare blockerad
+       *[other] Spårare blockerade
     }
 cfr-whatsnew-tracking-blocked-subtitle = Sedan { DATETIME($earliestDate, month: "long", year: "numeric") }
 cfr-whatsnew-tracking-blocked-link-text = Visa rapport
@@ -121,6 +121,33 @@ cfr-whatsnew-lockwise-take-body =
     Mobilappen { -lockwise-brand-short-name } låter dig säkert komma åt din
     säkerhetskopierade lösenord var som helst.
 cfr-whatsnew-lockwise-take-link-text = Hämta appen
+
+## Picture-in-Picture
+
+cfr-whatsnew-pip-header = Titta på videor medans du surfar
+cfr-whatsnew-pip-body = Bild-i-bild visar upp en video i ett flytande fönster så att du kan titta medans du arbetar i andra flikar.
+cfr-whatsnew-pip-cta = Läs mer
+
+## Permission Prompt
+
+cfr-whatsnew-permission-prompt-header = Färre irriterande popup-fönster
+cfr-whatsnew-permission-prompt-body = { -brand-shorter-name } blockerar nu webbplatser från att automatiskt fråga dig om att skicka popup-meddelanden.
+cfr-whatsnew-permission-prompt-cta = Läs mer
+
+## Fingerprinter Counter
+
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $fingerprinterCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-fingerprinter-counter-header =
+    { $fingerprinterCount ->
+        [one] Fingeravtrycksspårare blockerade
+       *[other] Fingeravtrycksspårare blockerade
+    }
+cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } blockerar många fingeravtrycksspårare som i hemlighet samlar in information om din enhet och åtgärder för att skapa en reklamprofil av dig.
+# Message variation when fingerprinters count is less than 10
+cfr-whatsnew-fingerprinter-counter-header-alt = Fingeravtrycksspårare
+cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } kan blockera många fingeravtrycksspårare som i hemlighet samlar in information om din enhet och åtgärder för att skapa en reklamprofil av dig.
 
 ## Bookmark Sync
 
@@ -160,11 +187,11 @@ cfr-doorhanger-socialtracking-close-button = Stäng
 cfr-doorhanger-socialtracking-dont-show-again = Visa mig inte meddelanden som dessa igen
     .accesskey = V
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } hindrade ett socialt nätverk från att spåra dig här
-cfr-doorhanger-socialtracking-description = Din integritet är viktig. { -brand-short-name } blockerar nu vanliga trackers för sociala medier, vilket begränsar hur mycket data de kan samla in om vad du gör online.
-cfr-doorhanger-fingerprinters-heading = { -brand-short-name } blockerade en fingerprinter på den här sidan
-cfr-doorhanger-fingerprinters-description = Din integritet är viktig. { -brand-short-name } blockerar nu fingerprinters, som samlar in delar av unik identifierbar information om din enhet för att spåra dig.
-cfr-doorhanger-cryptominers-heading = { -brand-short-name } blockerade en cryptominer på den här sidan
-cfr-doorhanger-cryptominers-description = Din integritet är viktig. { -brand-short-name } blockerar nu cryptominers, som använder ditt systems datakraft för att utvinna digitala pengar.
+cfr-doorhanger-socialtracking-description = Din integritet är viktig. { -brand-short-name } blockerar nu vanliga spårare för sociala medier, vilket begränsar hur mycket data de kan samla in om vad du gör online.
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name } blockerade en fingeravtrycksspårare på den här sidan
+cfr-doorhanger-fingerprinters-description = Din integritet är viktig. { -brand-short-name } blockerar nu fingeravtrycksspårare, som samlar in delar av unik identifierbar information om din enhet för att spåra dig.
+cfr-doorhanger-cryptominers-heading = { -brand-short-name } blockerade en kryptogrävare på den här sidan
+cfr-doorhanger-cryptominers-description = Din integritet är viktig. { -brand-short-name } blockerar nu kryptogrävare, som använder ditt systems datakraft för att utvinna digitala pengar.
 
 ## Enhanced Tracking Protection Milestones
 
@@ -173,8 +200,8 @@ cfr-doorhanger-cryptominers-description = Din integritet är viktig. { -brand-sh
 #   $date (String) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading =
     { $blockedCount ->
-        [one] { -brand-short-name } blockerade <b>{ $blockedCount }</b> tracker sedan { $date }!
-       *[other] { -brand-short-name } blockerade över <b>{ $blockedCount }</b> trackers sedan { $date }!
+        [one] { -brand-short-name } blockerade <b>{ $blockedCount }</b> spårare sedan { $date }!
+       *[other] { -brand-short-name } blockerade över <b>{ $blockedCount }</b> spårare sedan { $date }!
     }
 cfr-doorhanger-milestone-ok-button = Visa alla
     .accesskey = V

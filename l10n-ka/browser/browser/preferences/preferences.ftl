@@ -254,7 +254,7 @@ applications-filter =
     .placeholder = ფაილის სახეობების ან პროგრამების ძიება
 applications-type-column =
     .label = შიგთავსის სახეობა
-    .accesskey = ტ
+    .accesskey = გ
 applications-action-column =
     .label = ქმედება
     .accesskey = ქ
@@ -561,6 +561,12 @@ search-keyword-warning-bookmark = თქვენ მიერ შერჩე�
 ## Containers Section
 
 containers-back-link = « უკან
+containers-back-button =
+    .aria-label =
+        { PLATFORM() ->
+            [windows] პარამეტრებზე დაბრუნება
+           *[other] პარამეტრებზე დაბრუნება
+        }
 containers-header = სათავსი ჩანართები
 containers-add-button =
     .label = ახალი სათავსის დამატება
@@ -968,6 +974,10 @@ permissions-location = მდებარეობა
 permissions-location-settings =
     .label = პარამეტრები…
     .accesskey = პ
+permissions-xr = წარმოსახვითი სინამდვილე
+permissions-xr-settings =
+    .label = პარამეტრები…
+    .accesskey = ტ
 permissions-camera = კამერა
 permissions-camera-settings =
     .label = პარამეტრები…
@@ -1016,6 +1026,8 @@ permissions-a11y-privacy-link = იხილეთ ვრცლად
 collection-header = { -brand-short-name } – მონაცემთა აღრიცხვა და გამოყენება
 collection-description = ჩვენ ვცდილობთ მოგცეთ არჩევანის უფლება და აღვრიცხოთ მხოლოდ ის მონაცემები, რომლებიც დაგვეხმარება, გავაუმჯობესოთ { -brand-short-name }. ჩვენ ყოველთვის დაგეკითხებით, პირადი ინფორმაციის მიღებამდე.
 collection-privacy-notice = პირადი მონაცემების დაცვის განაცხადი
+collection-health-report-telemetry-disabled = თქვენ გააუქმეთ ნებართვა და შედეგად, { -vendor-short-name } ვეღარ შეძლებს ტექნიკური და გამოყენების მონაცემების აღრიცხვას. აქამდე შეგროვებული ყველა მონაცემი, წაიშლება 30 დღეში.
+collection-health-report-telemetry-disabled-link = იხილეთ ვრცლად
 collection-health-report =
     .label = ნებართვა, რომ { -brand-short-name } შეძლებს, გადაუგზავნოს ტექნიკური და გამოყენების მონაცემები { -vendor-short-name }-ს
     .accesskey = რ

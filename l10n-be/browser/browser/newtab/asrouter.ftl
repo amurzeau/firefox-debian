@@ -125,6 +125,34 @@ cfr-whatsnew-lockwise-take-body =
     атрымліваць доступ до захаваных пароляў з любога месца.
 cfr-whatsnew-lockwise-take-link-text = Атрымаць праграму
 
+## Picture-in-Picture
+
+cfr-whatsnew-pip-header = Глядзіце відэа падчас аглядання
+cfr-whatsnew-pip-body = Функцыя выява-ў-выяве змяшчае відэа ў перасоўнае акно, каб вы маглі глядзець, працуючы ў іншых картках.
+cfr-whatsnew-pip-cta = Даведацца больш
+
+## Permission Prompt
+
+cfr-whatsnew-permission-prompt-header = Менш раздражняльных усплыўных акон
+cfr-whatsnew-permission-prompt-body = { -brand-shorter-name } цяпер блакуе аўтаматычныя запыты на адпраўку вам усплыўных паведамленняў.
+cfr-whatsnew-permission-prompt-cta = Даведацца больш
+
+## Fingerprinter Counter
+
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $fingerprinterCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-fingerprinter-counter-header =
+    { $fingerprinterCount ->
+        [one] Збіральнік лічбавых адбіткаў заблакаваны
+        [few] Збіральнікі лічбавых адбіткаў заблакавана
+       *[many] Збіральнікаў лічбавых адбіткаў заблакавана
+    }
+cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } блакуе мноства збіральнікаў лічбавых адбіткаў, якія таемна збіраюць інфармацыю пра вашу прыладу і дзеянні для стварэння вашага рэкламнага профілю.
+# Message variation when fingerprinters count is less than 10
+cfr-whatsnew-fingerprinter-counter-header-alt = Збіральнікі лічбавых адбіткаў
+cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } можа блакаваць збіральнікаў лічбавых адбіткаў, якія таемна збіраюць інфармацыю пра вашу прыладу і дзеянні для стварэння вашага рэкламнага профілю.
+
 ## Bookmark Sync
 
 cfr-doorhanger-sync-bookmarks-header = Атрымаць гэтую закладку на свой тэлефон

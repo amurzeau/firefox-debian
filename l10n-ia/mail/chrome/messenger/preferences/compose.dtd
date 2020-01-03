@@ -6,7 +6,11 @@
 <!ENTITY itemAutoComplete.label              "Adresses">
 
 
+<!ENTITY forwardMsg.label                     "Reinviar messages:">
+<!ENTITY forwardMsg.accesskey                 "R">
+<!ENTITY asAttachment.label                   "Como annexo">
 
+<!ENTITY font.label                           "Typo de litteras:">
 <!ENTITY fontSize.label                       "Dimension:">
 <!ENTITY fontSize.accesskey                   "d">
 <!ENTITY bgColor.label                        "Color de fundo:">
@@ -20,5 +24,7 @@
 
 
 
+<!ENTITY attachmentReminder.label              "Deteger omission de annexos">
+<!ENTITY attachmentReminder.accesskey          "o">
 <!ENTITY attachmentReminderOptions.label       "Parolas clave…">
-<!ENTITY attachmentReminderOptions.accesskey   "k">
+<!ENTITY attachmentReminderOptions.accesskey   "P">
