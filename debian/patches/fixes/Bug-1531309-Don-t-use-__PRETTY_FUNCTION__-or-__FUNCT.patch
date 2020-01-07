@@ -15,7 +15,7 @@ literal, and only string literals should be used as format strings. GCC
  5 files changed, 53 insertions(+), 53 deletions(-)
 
 diff --git a/dom/media/systemservices/CamerasChild.cpp b/dom/media/systemservices/CamerasChild.cpp
-index e661eff0d609..605a16a315e3 100644
+index e661eff0d60..605a16a315e 100644
 --- a/dom/media/systemservices/CamerasChild.cpp
 +++ b/dom/media/systemservices/CamerasChild.cpp
 @@ -158,7 +158,7 @@ int CamerasChild::AddDeviceChangeCallback(DeviceChangeCallback* aCallback) {
@@ -163,7 +163,7 @@ index e661eff0d609..605a16a315e3 100644
        mozilla::NewRunnableMethod<CaptureEngine, int>(
            "camera::PCamerasChild::SendStopCapture", this,
 diff --git a/dom/media/systemservices/CamerasParent.cpp b/dom/media/systemservices/CamerasParent.cpp
-index e3b2603d0565..385c50f6bfac 100644
+index e3b2603d056..385c50f6bfa 100644
 --- a/dom/media/systemservices/CamerasParent.cpp
 +++ b/dom/media/systemservices/CamerasParent.cpp
 @@ -102,7 +102,7 @@ StaticMutex CamerasParent::sMutex;
@@ -326,7 +326,7 @@ index e3b2603d0565..385c50f6bfac 100644
    // Shut down WebRTC (if we're not in full shutdown, else this
    // will already have happened)
 diff --git a/dom/media/systemservices/MediaParent.cpp b/dom/media/systemservices/MediaParent.cpp
-index bf293b28b960..f85665f6d58b 100644
+index bf293b28b96..f85665f6d58 100644
 --- a/dom/media/systemservices/MediaParent.cpp
 +++ b/dom/media/systemservices/MediaParent.cpp
 @@ -378,7 +378,7 @@ class OriginKeyStore : public nsISupports {
@@ -348,7 +348,7 @@ index bf293b28b960..f85665f6d58b 100644
  
  template <class Super>
 diff --git a/dom/media/systemservices/VideoEngine.cpp b/dom/media/systemservices/VideoEngine.cpp
-index b7ce5ce879f3..08fd6c441132 100644
+index b7ce5ce879f..08fd6c44113 100644
 --- a/dom/media/systemservices/VideoEngine.cpp
 +++ b/dom/media/systemservices/VideoEngine.cpp
 @@ -28,7 +28,7 @@ mozilla::LazyLogModule gVideoEngineLog("VideoEngine");
@@ -397,7 +397,7 @@ index b7ce5ce879f3..08fd6c441132 100644
  
  }  // namespace camera
 diff --git a/dom/media/webrtc/MediaEngineRemoteVideoSource.cpp b/dom/media/webrtc/MediaEngineRemoteVideoSource.cpp
-index 3589146d47db..17aa118726e5 100644
+index 3589146d47d..17aa118726e 100644
 --- a/dom/media/webrtc/MediaEngineRemoteVideoSource.cpp
 +++ b/dom/media/webrtc/MediaEngineRemoteVideoSource.cpp
 @@ -68,7 +68,7 @@ dom::MediaSourceEnum MediaEngineRemoteVideoSource::GetMediaSource() const {

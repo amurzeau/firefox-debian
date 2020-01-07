@@ -9,7 +9,7 @@ Subject: Build against system libjsoncpp
  3 files changed, 6 insertions(+), 48 deletions(-)
 
 diff --git a/config/system-headers.mozbuild b/config/system-headers.mozbuild
-index bcf5c4925564..5950b4e87ac1 100644
+index bcf5c492556..5950b4e87ac 100644
 --- a/config/system-headers.mozbuild
 +++ b/config/system-headers.mozbuild
 @@ -1351,3 +1351,7 @@ if CONFIG['OS_TARGET'] == 'Linux' and CONFIG['CPU_ARCH'].startswith('mips'):
@@ -21,7 +21,7 @@ index bcf5c4925564..5950b4e87ac1 100644
 +    'json/json.h',
 +]
 diff --git a/toolkit/components/jsoncpp/src/lib_json/moz.build b/toolkit/components/jsoncpp/src/lib_json/moz.build
-index ca40df60b712..5e20a3d42fd9 100644
+index ca40df60b71..5e20a3d42fd 100644
 --- a/toolkit/components/jsoncpp/src/lib_json/moz.build
 +++ b/toolkit/components/jsoncpp/src/lib_json/moz.build
 @@ -4,52 +4,6 @@
@@ -79,7 +79,7 @@ index ca40df60b712..5e20a3d42fd9 100644
 -    AllowCompilerWarnings()  # workaround for bug 1090497
 +OS_LIBS += ['jsoncpp']
 diff --git a/toolkit/crashreporter/minidump-analyzer/moz.build b/toolkit/crashreporter/minidump-analyzer/moz.build
-index 59022733ce0d..20b9733957d2 100644
+index 59022733ce0..20b9733957d 100644
 --- a/toolkit/crashreporter/minidump-analyzer/moz.build
 +++ b/toolkit/crashreporter/minidump-analyzer/moz.build
 @@ -48,7 +48,7 @@ USE_LIBS += [

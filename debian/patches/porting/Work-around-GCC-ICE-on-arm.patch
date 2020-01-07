@@ -1,0 +1,25 @@
+From: Mike Hommey <mh@glandium.org>
+Date: Sat, 7 Dec 2019 08:30:58 +0900
+Subject: Work around GCC ICE on arm
+
+from https://skia.googlesource.com/skcms.git/+/180042c5461086b6868fa6b40c73473b1f1baf1c%5E%21/
+---
+ gfx/skia/skia/third_party/skcms/src/Transform_inl.h | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/gfx/skia/skia/third_party/skcms/src/Transform_inl.h b/gfx/skia/skia/third_party/skcms/src/Transform_inl.h
+index 735852075ee..568270a71d1 100644
+--- a/gfx/skia/skia/third_party/skcms/src/Transform_inl.h
++++ b/gfx/skia/skia/third_party/skcms/src/Transform_inl.h
+@@ -499,8 +499,9 @@ SI F F_from_U8(U8 v) {
+ SI F F_from_U16_BE(U16 v) {
+     // All 16-bit ICC values are big-endian, so we byte swap before converting to float.
+     // MSVC catches the "loss" of data here in the portable path, so we also make sure to mask.
+-    v = (U16)( ((v<<8)|(v>>8)) & 0xffff );
+-    return cast<F>(v) * (1/65535.0f);
++    U16 lo = (v >> 8),
++        hi = (v << 8) & 0xffff;
++    return cast<F>(lo|hi) * (1/65535.0f);
+ }
+ 
+ SI F minus_1_ulp(F v) {

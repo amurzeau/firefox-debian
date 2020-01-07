@@ -7,7 +7,7 @@ Subject: Bug 1556197 - amend Bug-1544631 for fixing mips32.
  1 file changed, 7 insertions(+), 3 deletions(-)
 
 diff --git a/js/src/jit/mips32/MacroAssembler-mips32-inl.h b/js/src/jit/mips32/MacroAssembler-mips32-inl.h
-index 1f7f4d1cf319..06d8773e92a1 100644
+index 1f7f4d1cf31..06d8773e92a 100644
 --- a/js/src/jit/mips32/MacroAssembler-mips32-inl.h
 +++ b/js/src/jit/mips32/MacroAssembler-mips32-inl.h
 @@ -820,19 +820,23 @@ void MacroAssembler::branchTestSymbol(Condition cond, const ValueOperand& value,

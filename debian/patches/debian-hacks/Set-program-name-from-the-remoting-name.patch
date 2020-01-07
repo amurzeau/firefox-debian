@@ -7,7 +7,7 @@ Subject: Set program name from the remoting name
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/toolkit/xre/nsAppRunner.cpp b/toolkit/xre/nsAppRunner.cpp
-index d3d2d66d5de4..3dddf5cdd0d3 100644
+index d3d2d66d5de..3dddf5cdd0d 100644
 --- a/toolkit/xre/nsAppRunner.cpp
 +++ b/toolkit/xre/nsAppRunner.cpp
 @@ -3763,7 +3763,7 @@ int XREMain::XRE_mainStartup(bool* aExitFlag) {

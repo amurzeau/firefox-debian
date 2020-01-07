@@ -9,7 +9,7 @@ Differential Revision: https://phabricator.services.mozilla.com/D35447
  1 file changed, 7 insertions(+), 5 deletions(-)
 
 diff --git a/moz.configure b/moz.configure
-index 2484ad553645..8cbc4f28a3ac 100755
+index 2484ad55364..8cbc4f28a3a 100755
 --- a/moz.configure
 +++ b/moz.configure
 @@ -640,20 +640,22 @@ include('js/sub.configure', when=compile_environment & toolkit)

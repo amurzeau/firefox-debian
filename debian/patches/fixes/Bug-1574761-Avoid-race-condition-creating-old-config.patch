@@ -15,7 +15,7 @@ Differential Revision: https://phabricator.services.mozilla.com/D42428
  1 file changed, 16 insertions(+), 1 deletion(-)
 
 diff --git a/build/moz.configure/old.configure b/build/moz.configure/old.configure
-index 7286b23ce86a..e8d4be4c2cd3 100644
+index 7286b23ce86..e8d4be4c2cd 100644
 --- a/build/moz.configure/old.configure
 +++ b/build/moz.configure/old.configure
 @@ -88,6 +88,10 @@ def prepare_mozconfig(mozconfig):
