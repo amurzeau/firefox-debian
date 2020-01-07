@@ -1,0 +1,16 @@
+From: Mike Hommey <mh@glandium.org>
+Date: Wed, 8 Jan 2020 08:53:11 +0900
+Subject: Fill sourcestamp.txt with the missing info
+
+---
+ sourcestamp.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/sourcestamp.txt b/sourcestamp.txt
+index 8b137891791..5d0c61f64f9 100644
+--- a/sourcestamp.txt
++++ b/sourcestamp.txt
+@@ -1 +1,2 @@
+-
++20191230131429
++https://hg.mozilla.org/releases/mozilla-esr68/rev/b9ced0dd1026bf43339ecd41b942d19f63ea72c6
